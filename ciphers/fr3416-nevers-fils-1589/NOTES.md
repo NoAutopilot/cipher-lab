@@ -566,3 +566,26 @@ both `--check` OK; f35r_codewords.tsv: xiiij = Seigneur H. Grades on f.35r: H 75
 decode and scores unchanged. Propagated (rule 10): AUDIT.md safe sentence 74 -> 75 + propagation line (N4 unchanged);
 second-opinions/PROMPT-chatgpt-NV02.md (SO-NV02-F35, queued) code-word sentence. Gap closed.
 Grades this job: 1 token M -> H (the code word). Not found in print: nothing searched.
+
+## A1B-FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 18:19 UTC before any blind read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-upper.md`. Targets: every M token (`{w}`) and U token (`[...]`,
+`{A / B}`) of rows U01-U26, B11, M1-M4 in `clear_f35r.tsv`: 62 tokens (38 M tokens = the 44 M words, some tokens being
+multi-word; 24 U tokens = the 23 U words, the `{[...] / midi}` token counted as U). Crops: word positions were never
+recorded, so each crop is a 1100-px word window centred on the token's proportional character offset inside the line's
+own ink extent (ruled margin line masked), on the on-disk FILS-UPPER strips (`f43u_Lnn_s1` + right half of `_s2`;
+`f43b_L03`; `f43m_L0n`), cut with ImageMagick because PIL is not installed here (`tools/iiif_lines.py --image` needs
+PIL): `LINES_DIR=<scratch> python3 ciphers/fr3416-nevers-fils-1589/verify/upper_mu/cut_mu.py` -> `verify/upper_mu/crops/w01-w62.jpg`,
+`verify/upper_mu/targets.tsv`. Placement eye-checked on 11 of 62 crops (every 6th): target word inside the window each time.
+Blind reader: one Sonnet subagent, 2 calls (w01-w31, w32-w62), sees only the crops and "transcribe every word in this
+strip of a 16th-century French letter, left to right; [?] for a letter you cannot read, [...] for an illegible word" --
+no row text, no candidates, no grades. I then locate the target word in each window's read by its neighbours.
+Rules, fixed now:
+1. M token -> H when the blind read of the target word(s) equals the reconciled reading exactly, modulo u/v, i/j,
+   accents and case (apostrophe/abbreviation marks as written count: `q'` = `q'`, but `q'` != `que`).
+2. U token -> M when the blind read equals one of the prior readers' candidates (pass A, pass B in
+   `verify/fils_upper_pass{A,B}.tsv`, or the two halves of `{A / B}`), same normalisation. A U token whose blind read
+   equals neither stays U; the read is listed.
+3. Mismatch, or the reader gives [...]/[?] at the target, or the target cannot be located in the window read: grade
+   unchanged, listed. No promotion beyond one step (M never to H from a U; nothing to H without an exact match).
+4. Counts reported H/M/U before and after, words and tokens.

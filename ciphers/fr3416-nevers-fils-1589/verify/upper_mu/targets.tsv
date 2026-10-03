@@ -1,0 +1,63 @@
+crop	row	tok_idx	token	grade	x0	line_w
+w01	U03	5	{cognoistre}	M	1883	3600
+w02	U03	6	{q'}	M	2192	3600
+w03	U03	8	{ce}	M	2500	3600
+w04	U04	2	{leur}	M	886	3600
+w05	U04	9	{memoire}	M	2500	3600
+w06	U05	2	{sorte}	M	729	3600
+w07	U06	9	[...]	U	2500	3600
+w08	U07	1	{lieu / bien}	U	570	3600
+w09	U07	7	{laisse / lequel}	U	2067	3600
+w10	U07	8	{fait}	M	2339	3600
+w11	U09	2	{Crapon}	M	898	3600
+w12	U09	9	{Buzy}	M	2386	3600
+w13	U09	11	{par}	M	2500	3600
+w14	U10	4	{cognoistra}	M	1118	3600
+w15	U10	10	{d'esfatere / d'esfa[...]}	U	2398	3600
+w16	U11	3	[...]	U	886	3600
+w17	U11	4	<del>[...] amitie</del>	U	1276	3600
+w18	U11	6	{a}	M	1872	3600
+w19	U11	8	[...]	U	2242	3600
+w20	U11	11	[...]	U	2500	3600
+w21	U12	6	{au}	M	1305	3600
+w22	U12	7	{adressez}	M	1577	3600
+w23	U12	12	[...]	U	2500	3600
+w24	U13	1	{<del>Tremolett</del>}	M	589	3600
+w25	U13	2	[...]	U	918	3600
+w26	U13	6	{faire}	M	1784	3600
+w27	U13	9	{les}	M	2319	3600
+w28	U14	10	[...]	U	2500	3600
+w29	U15	9	{[...] / midi}	U	2500	3600
+w30	U16	0	[...]	U	338	3600
+w31	U16	10	{ne}	M	2204	3600
+w32	U17	6	{estoit}	M	1834	3600
+w33	U17	7	{selon}	M	2099	3600
+w34	U17	8	[...]	U	2343	3600
+w35	U18	0	[...]	U	420	3600
+w36	U18	4	{ce}	M	1411	3600
+w37	U18	6	[...]	U	1918	3600
+w38	U18	7	[...]	U	2208	3600
+w39	U19	7	{11}	M	2088	3600
+w40	U20	4	{ultime}	M	1157	3600
+w41	U20	7	{desquelz}	M	2288	3600
+w42	U20	8	{si 7}	M	2500	3600
+w43	U21	0	{perdre}	M	457	3600
+w44	U22	5	[...]	U	823	3600
+w45	U23	9	[...]	U	2500	3600
+w46	U24	7	{que de tout}	M	2128	3600
+w47	U24	8	{q' le-}	M	2500	3600
+w48	U25	0	{estime}	M	105	3600
+w49	U25	5	{servitu-}	M	1500	3600
+w50	U25	8	{de}	M	2288	3600
+w51	U25	9	[...]	U	2500	3600
+w52	U26	4	{depuis}	M	728	3600
+w53	B11	0	[...]	U	114	3600
+w54	B11	5	{ce a la}	M	1421	3600
+w55	M2	0	{et}	M	0	2050
+w56	M2	2	{vous}	M	221	2050
+w57	M2	3	[...]	U	499	2050
+w58	M3	0	[...]	U	0	2050
+w59	M3	2	{assure}	M	191	2050
+w60	M3	4	{la}	M	528	2050
+w61	M3	5	{louange / eslogne}	U	759	2050
+w62	M4	0	{asseta}	M	0	2050
