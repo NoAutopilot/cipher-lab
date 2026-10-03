@@ -18,3 +18,9 @@ kept: see NOTES.md GAPS163, where 2 of 7 letter-glossed groups disagree with the
 date: the letter is Lyncker (Hamburg) to Chancellor Vultejus (Kassel), 4/14 May 1672 (M, siblings lookup). Key 255 is
 dated 1666 and names the same secretary. Neither witness is an H-grade period decipherment of this letter's codes,
 except the gloss itself.
+
+## Nomenclator list identification (GAPS176, 3 Oct 2026, account-4)
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| a key table on disk carries the 1672 nomenclator (18 gloss-pinned codes) | positive control, 3/4/6/9 planted values in a decoy key: real 3/4/5/8 vs shuffle p99 2/2/2/3, all flagged | 224 key tables: 0 hits in total, 0 candidates (shuffle p99 0 for every key) | no list on disk; DECODE 1650-1690 Marburg/Danish keys = 4687-4692, all opened, none matching; list needs the archive (keys/nomen_list_match.py) |
