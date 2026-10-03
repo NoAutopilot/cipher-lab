@@ -1,0 +1,42 @@
+{
+ "fetched": "2026-10-03, one DECODE browser login (GAPS-riksarkivet-r4282-1628, account-4)",
+ "note": "PDFs not committed; jpg renders at 80 dpi beside this file; sign column crop at 300 dpi from R4327 p1",
+ "pdfs": [
+  {
+   "file": "IMG_R4307_I25835_P.pdf",
+   "bytes": 2144979,
+   "sha1": "6f161385c6f1e259e207502da6ea62d051c9d304",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4307_I25835_P.pdf"
+  },
+  {
+   "file": "IMG_R4307_I25836_P.pdf",
+   "bytes": 627600,
+   "sha1": "87d48fddcf5a0459e1af2ce45c5bb7db85a3354d",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4307_I25836_P.pdf"
+  },
+  {
+   "file": "IMG_R4307_I25837_P.pdf",
+   "bytes": 1284398,
+   "sha1": "f19021329210013769ffde5049d7215a3451e84a",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4307_I25837_P.pdf"
+  },
+  {
+   "file": "IMG_R4327_I25950_P.pdf",
+   "bytes": 1146310,
+   "sha1": "bedb6ae42aa3e7432702974e6ec9316c322b93c4",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4327_I25950_P.pdf"
+  },
+  {
+   "file": "IMG_R4327_I25951_P.pdf",
+   "bytes": 1023678,
+   "sha1": "d524dda11bb8261bdd002e4a0e57d474c18b379d",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4327_I25951_P.pdf"
+  },
+  {
+   "file": "IMG_R4327_I25952_P.pdf",
+   "bytes": 2133076,
+   "sha1": "30e4341790897204c082ed361ddccf58b83022d5",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4327_I25952_P.pdf"
+  }
+ ]
+}

@@ -75,3 +75,9 @@ transcription noisier than that would make the 22-letter rows a non-test, not a 
 No row: both keys are numeric-only (2-, 3- and 4-digit codes) and share no sign with R4282's letter-shape
 alphabet, so a decode would cover 0 of 1,094 signs and a shuffled-key control could not differ from it (rule 3).
 Stopped at the overlap check per the brief; see NOTES.md "## FT4".
+
+## GAPS (3 Oct 2026, account-4): DECODE key 4327 (II:154, Oxenstierna-Sadler, 1620s) on the shared signs
+| family | control | control number | target number | verdict |
+|---|---|---|---|---|
+| known key 4327, third-column signs (7 shared: E L x A M T o), Latin unigram mean logp over 214/1110 tokens | (a) same letters permuted among the 7 signs, 2000; (b) 7 random Latin letters, 2000 | (a) mean -4.399, p95 -3.716; (b) mean -3.744, p95 -2.904 | real -4.357; frac(a)>=real 0.50, frac(b)>=real 0.84 | no fit on the shared signs (key at the permutation median); conditional on Bourdeau's one-pass transcription and an M-grade eye read of the key's sign column |
+Script: scripts/key4327_overlap.py (--check exits 0); numbers in key4327_overlap.json.

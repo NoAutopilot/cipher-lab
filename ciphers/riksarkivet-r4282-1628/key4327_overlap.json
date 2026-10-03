@@ -1,0 +1,20 @@
+{
+ "tokens": 1110,
+ "covered": 214,
+ "real_mean_logp": -4.3566,
+ "perm_mean": -4.3992,
+ "perm_p95": -3.7157,
+ "perm_frac_ge_real": 0.5025,
+ "rand_mean": -3.7441,
+ "rand_p95": -2.9038,
+ "rand_frac_ge_real": 0.8425,
+ "mapped_letter_counts": {
+  "y": 36,
+  "l": 66,
+  "k": 20,
+  "a": 13,
+  "d": 47,
+  "h": 22,
+  "m": 10
+ }
+}

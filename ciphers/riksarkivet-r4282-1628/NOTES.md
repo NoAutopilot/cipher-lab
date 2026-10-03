@@ -385,17 +385,69 @@ shuffled-key control, ~$3. That is a different target folder's test; the parent 
 Status word unchanged (`open`). Requests: de-crypt.org 14 (login page + submit, RecordsView/4280, RecordsView/4281,
 11 PDFs), 1.6 s apart, one login; no other host.
 
-## Remaining gaps (FT4, 3 Oct 2026)
-Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4)
-- R4282 whole letter - blocker: not-attempted; 66 Chifferklaver key records untried, none yet shown to use letter-shape signs; next: filter the 66 by DECODE Symbol Sets (login-free) for a letter-shape key, ~$1
+## GAPS-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
+
+Verdict step run: "filter the 66 key records by Symbol Sets, ~$1". Intake gate first:
+`riksarkivet-r4282-1628: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Filter (login-free).** DECODE's RecordsView page carries Symbol Sets and Cipher Type without a login (the FT4
+section read them after login; not needed). The Riksarkivet Chifferklaver key records in the R4259-R4329 range on
+disk (`sources/decode/keys-all-2026-09-28-merged.tsv`) are 56, not 66 (the "70" of the Premise check counted
+Bourdeau's fetched range, which includes cipher records); 54 after R4280/R4281. Fetched all 54 RecordsView pages
+(scratchpad, not committed). Symbol Sets: 38 Numerical only; 16 carry Alphabet and/or Graphic signs --
+4263 (II:100, 1650-), 4275 (II:108, 1634-), 4293 (II:120), 4295 (II:122), 4297 (II:124), 4298 (II:125, 1630-39),
+4299 (II:126, 1630-39), 4305 (II:132, 1630-), 4307 (II:134), 4308 (II:135), 4309 (II:136), 4312 (II:139, 1630-99),
+4322 (II:149), 4323 (II:150), 4327 (II:154, **1620-1629**), 4329 (II:156). Only 4307 and 4327 carry all three sets
+(Graphic signs + Alphabet + Numerical), R4282's own profile (letter shapes, special signs, single digits); 4327 is
+the only one dated to R4282's decade. The "notes" fields are empty on all 54.
+
+**Candidate check (one login, two vision calls).** One `tools/decode_browser_login.js` run (after the container's
+certutil fix; the first try failed at page load with ERR_CERT_AUTHORITY_INVALID, before any login) served
+full-size PDFs for 4327 (3 pp.) and 4307 (3 of 4 pp., --max-files cap). 80 dpi renders and a 300 dpi crop of the
+4327 sign column in `keys_r4327_r4307/` (manifest.json). Vision call 1: the 4327 sheet -- p.1 is a name nomenclator
+1-40 / 101-140 (Polen, Commissarier, Wrangel, ...) and a letter table a-z, each letter two 2-digit numbers and one
+sign; p.4 a modern docket "Kriget med Polen under senare hälften av 1620-talet. Axel Oxenstierna - Filip Sadler"
+(reading M). Vision call 2: the sign column at 300 dpi, read (all M): a ε, b barred ω, c δ, d λ, e "6.5", f V,
+g β, h x, i ς, k α, l μ, m T, n 1, o Q-like, p X, q γ/r, r Z, s ό, t stacked curl, u H, w crossed loop, x θ, y o,
+z ω. 4307 was not examined by eye (vision budget spent on 4327's column).
+
+**Overlap: real, partial.** Seven of the key's signs match R4282 sign classes in Bourdeau's notation: E=ε->a,
+L=λ->d, x->h, A=α->k, M=μ->l, T->m (Bourdeau's T is Δ; the key's m-sign is T-shaped and its c-sign δ-shaped, so
+this pairing is itself M), o->y. They cover 214 of R4282's 1,110 transcribed signs. Ambiguous pairs (5, r/Z, 1, 8)
+left out.
+
+**Test (rule 3).** `scripts/key4327_overlap.py` (--check exits 0; `key4327_overlap.json`). Statistic: mean la18
+Latin unigram log-probability of the letters the real key gives those 214 tokens. Controls that can differ from the
+target on this statistic: (a) the same seven letters permuted among the seven signs, 2000 draws; (b) seven distinct
+random Latin letters, 2000 draws.
+
+| | mean logp | control mean | control p95 | share of control >= real |
+|---|---|---|---|---|
+| real key 4327 | -4.357 | | | |
+| (a) permuted values | | -4.399 | -3.716 | 0.50 |
+| (b) random letters | | -3.744 | -2.904 | 0.84 |
+
+The real assignment sits at the permutation median and below most random keys: μ (66 tokens) -> l and λ (47) -> d
+are plausible, but α (20) -> k and o (36) -> y give Latin's two rarest letters to frequent R4282 signs. Read: the
+4327 sign column does not decode R4282's shared signs; any common sign shapes are the period's stock of
+Greek-letter cipher signs, not a shared key. Grades: none claimed (rule 4; no reading). Conditional on Bourdeau's
+single-pass transcription and on an M-grade eye read of the key column (rule 2). Not a negative on the other 15
+candidates.
+
+Requests: de-crypt.org 54 RecordsView (login-free, 1.6 s apart) + 2 ImagesList (login-free, empty answer) + 1 login
+run (login page, submit, RecordsView/4327, RecordsView/4307, 12 attachments; 1.7 s apart) = about 72; no other host.
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, 3 Oct 2026)
+Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs, 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 (II:134, all three symbol sets, images already fetched) next by eye, then the 14 others; next: one vision call on keys_r4327_r4307/IMG_R4307_* for sign overlap with R4282, ~$1
 - transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
 
-## Escalation (FT4, 3 Oct 2026)
+## Escalation (FT4, 3 Oct 2026; updated GAPS, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
-- [ ] known-keys: R4284 crib leaf (bRIK) and R4280/R4281 (FT4, no sign overlap) done; 66 records left, filter by Symbol Sets next
+- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control) done; 15 letter/graphic-sign key records left, 4307 first
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
 - [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
 - [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: filter the 66 key records by Symbol Sets, ~$1
+Verdict: keep going: 2 internal gaps; cheapest next: one vision call on key 4307's fetched pages for sign overlap with R4282, ~$1
