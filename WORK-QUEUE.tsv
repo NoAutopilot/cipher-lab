@@ -155,3 +155,8 @@ RETRO-2026-10-03-ACCT3	other	.claude/briefs/runs/2026-10-03-acct3-retro.md	Opus 
 TOOL-BRIEF-PRICE	other	.claude/briefs/runs/2026-10-03-acct3-tool-brief-price.md	Opus 5.5	3	35	claimed by LANE-A2PUSH 02:37	2026-10-03 02:26	RETRO P2: tools/brief_price_check.py gate + test + README/SYSTEM rows
 SORTER-FLORENCE	other	.claude/briefs/runs/2026-10-03-acct3-sorter-florence.md	Opus 5.5	2	25	claimed by LANE-A2PUSH 02:56	2026-10-03 02:46	sorter inputs for Florence c.127 (owner review, never blocking)
 NV-INTAKE	other	.claude/briefs/runs/2026-10-03-acct3-nv-intake.md	Opus 5.5	5	45	claimed session_0158vgozqMa1dgKmbFkV2zyv 2026-10-03 03:11	2026-10-03 03:08	Nevers vein intake: NV-01/02/03/09 folders + check-solved (Cabinet Noir grep) + gate; NV-09 key test on disk
+LANE-A2PUSH2	other	.claude/briefs/runs/2026-10-03-acct3-lane-a2push2.md	Opus 5.5	60	1200	queued	2026-10-03 03:27	lane orchestrator on account 2, second incarnation: spawns rows below + handoff next steps, refills every 15 min
+NV01-READ	other	.claude/briefs/runs/2026-10-03-acct3-nv01-read.md	Opus 5.5	13	70	queued	2026-10-03 03:27	Nevers vein NV-01 fr.3993 f.71-72 under key no.70, sibling control first
+NV02-READ	other	.claude/briefs/runs/2026-10-03-acct3-nv02-read.md	Opus 5.5	13	70	queued	2026-10-03 03:27	Nevers vein NV-02 fr.3416 f.35 + NV-03 fr.4715 f.38 under key no.25, sibling control first
+F36R-REREAD	other	.claude/briefs/runs/2026-10-03-acct3-f36r-reread.md	Opus 5.5	5	40	queued	2026-10-03 03:27	Birago f.36r rows 9-14 recut and re-read
+BIRAGO-NUM4	other	.claude/briefs/runs/2026-10-03-acct3-birago-num4.md	Opus 5.5	3	35	queued	2026-10-03 03:27	Birago numerical: decoy-null joint crib test (new instrument)
