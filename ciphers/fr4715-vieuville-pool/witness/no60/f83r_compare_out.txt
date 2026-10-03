@@ -1,0 +1,3 @@
+len(B)=173 readable=171 no60=755 no27=186 no58=956
+LCS first250=75 last250=162 -> LCS=162 R=0.936 | shuffle mean 79.1 p99 85 max 87 (>= real: 0/1000) | no27 68 no58 81
+PASS

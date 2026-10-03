@@ -1,6 +1,6 @@
 # PREREG7 -- no.60 f.83r: blind read of the top block vs Tomokiyo's no.60 DUMP (GAPS96, account-4)
 
-Written 3 Oct 2026, about 11:55 UTC (clock read), BEFORE the native fetch and before the vision call; pushed first.
+Written 3 Oct 2026 and pushed in commit 6c6df9d9 (11:47 UTC by the push; the worker typed "about 11:55" here without reading the clock -- corrected after the fact, rule 6), BEFORE the native fetch and before the vision call; pushed first.
 
 Question: the data conflict logged in NOTES.md (GAPS-12 called f.83r "a symbol alphabet" at 1000 px; Tomokiyo,
 bnf4715.htm#no60, prints a digit-group DUMP and a clear reading for "no.60 (f.83)"). The 1000-px re-look this
@@ -31,7 +31,7 @@ What FAIL would mean: the conflict stands (either the read is too noisy at this 
 different leaf); logged as a FAIL of this comparison, not as a negative on the leaf, with the next step named.
 No grade change in this folder either way (no.60 has no reading of ours).
 
-## Amendment A (3 Oct 2026, about 12:03 UTC, before the vision call; pushed before it)
+## Amendment A (3 Oct 2026, commit c9bb2b90 at 11:49 UTC by the push -- the typed "12:03" was not a clock read, corrected after the fact; before the vision call)
 
 Seen after the native fetch, before any read: the slip's shapes (L, Σ, b, s, o) look like digits turned 180°, and the
 short line sits at the slip's top right, where a letter's last line would sit if the slip were pasted upside down

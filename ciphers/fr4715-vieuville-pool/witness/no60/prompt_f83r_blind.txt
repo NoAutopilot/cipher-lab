@@ -1,0 +1,14 @@
+You are transcribing a short passage of a 16th-century French cipher letter from image crops. You get no key and no expected text; read only what is on the images.
+
+Files (all in /tmp/claude-0/-home-user-cipher-lab/0b2bdb64-c50e-5f59-a942-4ff6e0bb4595/scratchpad/f83/): four text lines of one slip, each cut into three segments s1 (left), s2 (middle), s3 (right) as the slip was photographed. Each crop exists twice: *_asis.jpg as photographed and *_rot180.jpg turned 180 degrees. Line L02 is short (it sits at the right end). Lines L03, L04, L05 are full lines.
+
+Step 1 - orientation. Look at a few crops in both versions (for example f83r_L03_s1_asis.jpg and f83r_L03_s3_rot180.jpg). The signs may be cursive Arabic numerals in groups, possibly written on a slip pasted upside down. Decide in which orientation the signs read as numerals (or, if neither, say so). State it.
+
+Step 2 - reading order in the chosen orientation:
+- asis: L02 s1,s2,s3; L03 s1,s2,s3; L04 s1,s2,s3; L05 s1,s2,s3.
+- rot180: L05 s3,s2,s1; L04 s3,s2,s1; L03 s3,s2,s1; L02 s3,s2,s1 (turned 180 degrees the right-hand segment becomes the left one and the bottom line becomes the top one); use the _rot180 files.
+Segments overlap slightly at their edges; do not read a group twice across a seam.
+
+Step 3 - transcribe every group in that order: the digits as you see them (groups are usually 1-2 digits, sometimes with a dot or bar above or before them; write a dot as ' before the number and a bar as ~ before it). Write ? for a group you cannot read, and keep a group you are unsure of with a trailing * (e.g. 63*). If the signs are not numerals, give each distinct shape a label (S1, S2, ...) and transcribe the labels instead, saying so.
+
+Write the result to /tmp/claude-0/-home-user-cipher-lab/0b2bdb64-c50e-5f59-a942-4ff6e0bb4595/scratchpad/f83_blind.tsv with a header line "line<TAB>pos<TAB>group" and one group per row (line = L02..L05 as in the file names, pos = 1,2,3 within the line in your reading order). Then reply in at most six lines: orientation chosen and why, number of groups, how many ?, and any line that was hard. Do not look for or use any other file; do not try to decipher.

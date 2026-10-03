@@ -1019,7 +1019,7 @@ from nos. 28, 39, 54 and 55 as evidence ("ce sont des indices, pas des résultat
 | no.37 f.60r (Tours, 12 Dec 1589) | 16 clear lines transcribed; both dense blocks letter-decoded (604 + 308 letters); 177 word-codes U; 5 glossed codes | **read**, about 1,230 groups (result no.9) | Tomokiyo + their complements | about 86 pct (block 1 about 88, block 2 about 85); blind re-read of about 205 groups agrees about 96 pct; '12, '81, '92, '17 open or HYP; groups omitted at pass 11 in L.g/L.h; L.a weak | **covered**: our block decodes are N0-type; the open word-code and 8-glyph gaps on this leaf close as moot |
 | no.39 f.62r | glosses read (GAPS-11); clears its control; .13/.14/.52 keyed | **not published**; fragments cited as evidence (L13 "a Fontenay" = period gloss; L17 period gloss "Navarre" over a barred 13; L19-L20 "'93 de Beaulieu", "du seau") | -- | "indices, pas des résultats" | not covered; those few words are already in print (N1-type for those words only) |
 | no.44 f.67r (Tours, 15 Apr 1590) | the pool's working leaf: 8 of 27 groups H; 7 of 14 word-code slots at M | **not published**; one clear-text fragment cited ("discouru 6 7", for name 6 = "Monsieur le?", HYP) | -- | -- | not covered |
-| no.60 f.83r | seen at 1000 px: a symbol alphabet, no glosses (GAPS-12) | **not published**; their notes say Tomokiyo applied the key to his "no.60" (= f.83) and read its beginning, and they quote it ("dans deux '84", "'93 de Sainct Germain") | Tomokiyo | -- | not covered; **data conflict**: a digit-code passage in Tomokiyo's no.60 vs our 1000 px look at f.83r as a symbol alphabet (POOL.md already flags the no.60 DUMP). An image check settles it; no reading here |
+| no.60 f.83r | seen at 1000 px: a symbol alphabet, no glosses (GAPS-12) | **not published**; their notes say Tomokiyo applied the key to his "no.60" (= f.83) and read its beginning, and they quote it ("dans deux '84", "'93 de Sainct Germain") | Tomokiyo | -- | not covered; conflict **closed** 3 Oct 2026 (GAPS96): the slip is pasted upside down; turned 180 degrees its top block matches Tomokiyo's no.60 DUMP (LCS 162/173 vs shuffled p99 85); no reading here |
 
 Out of the pool but in the same release: no.47 f.70r (result no.12, about 88 pct of the unglossed parts), no.48 f.71r
 (result no.10, about 75 pct, "lecture partielle"), no.58 f.81r L18-L40 (result no.5; `ciphers/fr4715-montholon-1589`,
@@ -1301,20 +1301,69 @@ confirmed by f.7r's gloss (disclosed in PREREG3). That is an outside reading com
 instrument retired under rule 3 at GAPS-15, so it is logged as data, not as a gate result. Under PREREG3's clause key
 no.71 is not re-gated again with this match rule on any material. Offline, disk only; no vision; no requests.
 
+## GAPS96-fr4715-vieuville-pool (3 Oct 2026, account-4): the Verdict step -- no.60 f.83r native top block vs Tomokiyo's no.60 DUMP
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the step as GAPS91's Verdict named it. Clock read 11:45 UTC
+at start, 11:53 UTC at scoring. No account-3 claim on f.83 (its Nevers vein is fr3416, fr4715-evesque-nevers, fr3621). Requests:
+gallica.bnf.fr 2 (f181 at 1000 px, then the native region); cryptiana fc2 0 (local mirror `sources/cryptiana/web/bnf4715.htm`).
+Vision calls: 1 blind Opus 5.5 subagent call (crops only, prompt `witness/no60/prompt_f83r_blind.txt`, grepped clean of
+placeholders) plus the worker's own 1000-px look and one crop view used to set up the crops.
+
+**Pre-registered first:** `witness/no60/PREREG7_f83r.md` with `scripts/f83r_compare.py`, pushed in 6c6df9d9 before the
+fetch. Amendment A (c9bb2b90), pushed before the vision call and before any group was read: at native size the slip's
+shapes looked like digits turned 180 degrees, with a short line at the slip's top right where a letter's last line would sit
+if the slip were pasted upside down. So the reader got each band as cut and turned 180 degrees, and the statistic took the
+better of Tomokiyo's first-250 and last-250 DUMP windows, with the shuffle and cross-letter controls scored the same way.
+Thresholds unchanged.
+
+**Crops:**
+```
+$ python3 tools/iiif_lines.py --ark btv1b52509819x --canvas 181 --region 420,1990,3260,340 --out ciphers/fr4715-vieuville-pool/images --prefix f83r --max-width 1400 --debug
+ciphers/fr4715-vieuville-pool/images/src_ark_12148_btv1b52509819x_f181_420_1990_3260_340.jpg (fetched): region 3260x340, 5 lines, 5 bands x 3 segments; pitch 66 distance 46 prominence 207.6
+  centres (region y): 52 108 185 251 311
+  wrote 15 crops and ciphers/fr4715-vieuville-pool/images/manifest.json
+```
+L01 is blank margin; L02 (short line) and L03-L05 were read.
+
+**Blind read** (`witness/no60/f83r_blind_opus.tsv`): the reader chose rot180 ("turned 180 degrees the slip reads as cursive
+Arabic numerals; as photographed it does not"). 173 groups (L05 53, L04 54, L03 55, L02 11), 2 `?`. It flagged one loop
+shape it read as 8 and the struck-through L02 as the hardest part.
+
+**Comparison** (`witness/no60/f83r_compare_out.txt`, exit 0):
+```
+len(B)=173 readable=171 no60=755 no27=186 no58=956
+LCS first250=75 last250=162 -> LCS=162 R=0.936 | shuffle mean 79.1 p99 85 max 87 (>= real: 0/1000) | no27 68 no58 81
+PASS
+```
+
+| statistic | real | control | gate |
+|---|---|---|---|
+| LCS vs Tomokiyo no.60 (last 250 window) | 162 of 173, R 0.936 | shuffled windows mean 79.1, p99 85, max 87, 0/1000 reach it | R >= 0.40 and > p99: PASS |
+| cross-letter, same key | -- | no.27 68, no.58 81 | real > both: PASS |
+
+**Verdict of the step, as registered: PASS.** f.83r carries the digit cipher Tomokiyo dumps as no.60. The slip is pasted
+upside down on the leaf, so the physical top block is the end of the letter, read turned 180 degrees (the top window gives
+75, chance level; the bottom window gives 162). GAPS-12's "symbol alphabet" was this hand's cursive digits seen upside down at
+1000 px. The data conflict is closed. no.60 is covered by Tomokiyo's published partial reading (bnf4715.htm#no60, a reading
+under his printed Vieuville-Nevers key; ~13, ~7, ~15, ~19, ~50, ''41, ''93, '84, '29, '97, '14 unread there). No reading of
+ours is claimed, nothing is graded and no grade changes in this folder; any reading of no.60 here would be N0-type for its
+letter text. Seen after scoring, not used for the verdict: Tomokiyo's no.60 runs the full slip in one orientation, so his
+image (BnFfr4715f83.png, not mirrored here) was presumably turned before he read it -- not checked.
+
 ## Remaining gaps (CABNOIR, 3 Oct 2026; replaces the LIKELY-1 ... GAPS-13 list above, which stays as history)
 Read so far: no.44 8 of 27 cipher groups at H and 7 of 14 word-code occurrences at M (.7 x4, .71, .27, .25), plus .13 = Narre at M from f.62r; no.37 (604 + 308 letters decoded) is now covered by Cabinet Noir result no.9, so it is not counted as an open piece; 3 of 8 pool leaves covered in public (no.27, 35, 37)
 - no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. 3 Oct 2026 (GAPS-15): re-gated on 8 unseen Cabinet Noir sure values (PREREG2.md, 0c411223, before scoring): 4 match, 3 conflict, 1 absent, SHARE 4/7 = 0.571 < 0.80 (perm p95 2, random p95 0): FAIL as registered; 2 of the 3 conflicts are notation misses seen after scoring (l'on, vendosme), 1 real (~37 Mayenne vs Langres); not re-scored. [retired] instrument: reconciled key71 transcription + token-subset match against a printed answer list (rule 3, second attempt; no third). 3 Oct 2026 (GAPS-16): f.7r imaged (20 crops), read by two blind passes and mechanically reconciled; its own control G1 FAILs (5/32 vs p99 5), so nothing merged and G2 did not run. 3 Oct 2026 (GAPS-17): the image reconciliation was pre-registered (PREREG3_recon.md, 445beed3) and stopped by the parent at 3.1x cap before its one subagent wrote any output; no file, no gate run. 3 Oct 2026 (GAPS82): the image reconciliation ran as two Opus calls (witness/f4712_7r_pairs_img.tsv, bb494740, committed before the gates); G1 FAILs as registered, A 8/30 = 0.267 < 0.70 though A > p99 5 and > control max 7; leaf held, G2 not run, no slot read. Second G1 attempt with the same aligner; no third reconciliation. 3 Oct 2026 (GAPS83): known-answer power check (PREREG4_g1power.md): the same aligner reaches A/S 1.000 clean and 0.970 / 0.969 median with word-codes and 10 / 20 pct substitution, G1 PASS 20/20 in every condition, so the two G1 FAILs are real FAILs of the f.7r pairing as transcribed (502 gloss letters vs 374 unmarked tokens), not a non-test. 3 Oct 2026 (GAPS88): fixed-key scoring (PREREG5_fixedkey.md, c27e21b8): pooled LCS T 235 vs permuted-key p99 137 (mean 116.1), R 0.644 vs 0.318, D 0.326 >= 0.283; positive control 20/20; 16 of 19 runs p < 0.01 -- PASS: f.7r follows Tomokiyo's letter table, so the leaf is a letter witness and the G1 FAILs were aligner misfit. 3 Oct 2026 (GAPS91): G2 with LCS-anchored gloss words (PREREG6_g2anchor.md, a19bbf6a): 4 of 11 items located, 2 match / 2 conflict, scorable 4 < 8 -- NON-TEST as registered; no slot read. Key no.71 re-gating is closed by PREREG3's clause (no further re-gate with this match rule). The six slots stay open-codes until new material arrives: a key-71 leaf (or a no.44 sibling) whose period gloss sits over .03, .07, .49, .57 or .6.
 Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, the four L glosses, the no.35 native read). These leaves are read in public as Cabinet Noir results no.13, no.11 and no.9, so a reading of ours would be N0-type. No native read or decode job is run on them, and the queued no.35 f.58r step (~$10) is retired.
-- no.60 f.83r: Tomokiyo's "no.60" digit-code passages vs our 1000 px view of f.83r as a symbol alphabet - blocker: not-attempted; a data conflict, not a reading; next: one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2
+Not a gap any more: no.60 f.83r. 3 Oct 2026 (GAPS96, PREREG7): the native top block, read blind turned 180 degrees (the slip is pasted upside down), matches the end of Tomokiyo's no.60 DUMP: LCS 162 of 173 groups (R 0.936) vs shuffled p99 85, no.27 68, no.58 81 -- PASS. The conflict is closed; no.60 is covered by Tomokiyo's published partial reading, so a reading of ours would be N0-type. No grade change.
 - the clear-French frame of no.44 (165 L words) - blocker: not-attempted; unchanged from GAPS-9; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
 - Boltanski 2006 (cites the 12 Dec 1589 letter, no.37) - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026); no.37 is now covered by Cabinet Noir, so the row matters only for the print check, not for any reading
 
 ## Escalation (CABNOIR, 3 Oct 2026)
-- [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 and no.60 seen at 1000 px; Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
+- [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 seen at 1000 px; no.60 f.83r top block fetched native and matched to Tomokiyo's no.60 DUMP (GAPS96, R 0.936, PASS); Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
 - [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
 - [retired] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Registered gate 1 FAILs on letter coverage (0.758 vs 0.80, 0 conflicts) with glosses 5/5; gate 2 on 8 unseen Cabinet Noir values (GAPS-15) FAILs 4/7 = 0.571 (2 of 3 conflicts notation misses, 1 real). The current instrument is [retired] under rule 3. f.7r new material imaged and read twice (GAPS-16); its G1 leaf control FAILed on the mechanical reconciliation; image reconciliation done 3 Oct 2026 (GAPS82): G1 FAIL 8/30 = 0.267 (A > p99 5); known-answer power check done (GAPS83): the aligner reaches the gate on leaf-like synthetic input 20/20, so the FAILs stand; fixed-key scoring done (GAPS88): PASS, T 235 vs p99 137, 16/19 runs p < 0.01; G2 on f.7r with LCS-anchored gloss words done (GAPS91): NON-TEST, 4 of 11 located, scorable 4 < 8. Instrument retired: key no.71 gated against glosses or printed answer lists with the token-subset match (PREREG, PREREG2, PREREG3/6), closed by PREREG3's clause; only new material (a period gloss over one of the six slot codes) reopens it
 - [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
 - [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
 - [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
 - [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
-Verdict: keep going: 3 internal gaps; cheapest next: no.60 f.83r -- one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2 (GAPS91, 3 Oct 2026: G2 key no.71 on f.7r NON-TEST, 4 of 11 located, scorable 4 < 8; key no.71 re-gating closed)
+Verdict: keep going: 2 internal gaps; cheapest next: the clear-French frame of no.44 -- build the word sheet from witness/f67r_lpass_slots.tsv for a person's read of the remaining L slots, ~$2 (GAPS96, 3 Oct 2026: no.60 f.83r matched to Tomokiyo's no.60 DUMP, LCS 162/173 vs shuffled p99 85, PASS; the slip is pasted upside down; conflict closed, no grade change)
