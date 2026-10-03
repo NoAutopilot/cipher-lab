@@ -451,3 +451,53 @@ crops) + 3 own reads (page overview, debug overlay, one crop). Requests: none (a
 `nl20` (Gutenberg, 1880s-1900s novels) and `nl_repo` (1624-25 Breda print), neither of the letter's 1800 date and
 government-letter register (rule 3, era lesson): build or pick an era-matched c.1780-1820 Dutch corpus first (~$2,
 V6-PTCORP took ~12 min), then run control and target. Leaf 3 (faint bleed-through, same cipher) stays untranscribed.
+
+## 3 Oct 2026 -- A2-RAA3: masc family_run on the 370 leaf-2 cells (matched control first, rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Input.** `data/masc/cells_370.txt`, built from `ciphertext_209_leaf2_full.tsv` kind `c` rows only (struck `x`
+columns, commas, clear words dropped), one manuscript line per text line, each cell written top*10+bottom ("61").
+370 signs; K=25 because the one blotted-top M column (L13 col 18) stays its own sign `?2` rather than being guessed.
+
+**Corpus.** No era-matched c.1780-1820 Dutch corpus exists in `tools/data` (nl20 = Gutenberg 1880s-1900s novels;
+nl_dev = Statenvertaling 1637; nl_repo = 17th-century prints totalling about 8 KB, too small to train on). Per this
+job's brief none was built; `nl20` used as is. Rule 3 era lesson: a FAIL or PASS here is conditional on that.
+
+**Command** (`data/masc/run.log`):
+`python3 tools/family_run.py specs/na-raad-azie-1800.json --family masc --cipher ciphers/na-raad-azie-1800/data/masc/cells_370.txt --tokens space --corpus tools/data/nl20 --seeds 3 --gate 0.6`
+
+| run | N | K | recovery | best score |
+|---|---|---|---|---|
+| control seed 1 (nl20 window, held out) | 370 | 21 | 0.892 | -877.8 |
+| control seed 2 | 370 | 21 | 0.922 | -811.7 |
+| control seed 3 | 370 | 21 | 1.000 | -832.0 |
+| **target** (seed 1, 8 restarts; top 3 restarts converge -866.0/-866.0/-866.8) | 370 | 25 | n/a | **-866.0** |
+| target shuffled, seed 11 (`--shuffle-target`, same N/K/line lengths) | 370 | 25 | n/a | -1046.3 |
+| target shuffled, seed 12 | 370 | 25 | n/a | -1053.7 |
+| target shuffled, seed 13 | 370 | 25 | n/a | -1059.3 |
+
+Control mean 0.938 (0.892-1.000) meets the 0.6 gate, so the target ran. Can the control differ from the target on
+the statistic? Yes: the score is an n-gram log-likelihood of the best decode, which depends on sign order, and the
+shuffled-target runs (order destroyed, counts kept) land about 180-190 points lower, so the statistic separates.
+Caveat: the control window drew only K=21 distinct letters against the target's 25 signs.
+
+**What it shows.** The cell sequence carries order structure that a letter-substitution model with an 1880s Dutch
+n-gram scores like real Dutch prose: the target's -866.0 sits inside the control's true-key band (-811.7 to -877.8)
+and well clear of its own shuffle floor (3 of 3). **The decode itself does not read** (`families/masc-1-nl20.txt`,
+e.g. line L02 "deuroiekteerdeuermendindueneenkorus"); the solver's key sends three cells to e (61, 24, 44) and two
+each to n, u, d, l, i.e. it used many-to-one freedom. So: a reproducible structural signal consistent with a
+substitution of Dutch (homophones or a near-letter syllabary not excluded), not a reading. Grade counts: H 0, C 0,
+S 0, M 0, I 0 -- no token is claimed. Not a negative either.
+
+Not checked by this step: whether 6/1 (23.0% of cells) is a letter, a word divider or a null; homophonic family
+with `--param profile=target`; any crib from the clear words interleaved in the lines ("is de Asiatische", "Raad").
+
+Vision: 0. Requests: none (all local).
+
+**Next step** (~$3, breadth cap): `tools/family_run.py --family homophonic --param profile=target` on the same
+`data/masc/cells_370.txt` with nl20, control first, plus the same 3-seed `--shuffle-target` floor, and a 6/1-as-
+divider variant (6/1 tokens rewritten as `.`). If either reads, a c.1800 Dutch corpus (~$2, V6-PTCORP's method) is
+the next gate before any judge. Leaf 3 (faint, same cipher) stays untranscribed.

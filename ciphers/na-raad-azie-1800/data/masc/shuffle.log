@@ -1,0 +1,6 @@
+CONTROL seed 1: N=370 K=21 recovery 0.892 score -877.83
+TARGET best score -1046.278; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle11-nl20.txt; judge: no judge block
+CONTROL seed 1: N=370 K=21 recovery 0.892 score -877.83
+TARGET best score -1053.668; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle12-nl20.txt; judge: no judge block
+CONTROL seed 1: N=370 K=21 recovery 0.892 score -877.83
+TARGET best score -1059.320; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle13-nl20.txt; judge: no judge block

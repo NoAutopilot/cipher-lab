@@ -1,0 +1,12 @@
+# na-raad-azie-1800 -- hypothesis families
+
+Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 00:02 | masc | N=370 K=25 restarts=8 corpus=pg10819_De_kleine_Johannes.txt.gz+pg10820_Een_liefde.txt.gz+pg12003_Extaze_Een_Boek_van_Geluk.txt.gz+pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz+pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz+pg19563_Eline_Vere.txt.gz+pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz | 1 | 0.938 (0.892-1.000) | -865.990 | no judge block | yes (gate 0.6) | A2-RAA3 (account 2, LANE-A2PUSH): masc on leaf-2 cells top*10+bottom, nl20 corpus (no era-matched c.1800 Dutch in tools/data) |
+| 3 Oct 2026 00:03 | masc | N=370 K=25 restarts=8 corpus=pg10819_De_kleine_Johannes.txt.gz+pg10820_Een_liefde.txt.gz+pg12003_Extaze_Een_Boek_van_Geluk.txt.gz+pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz+pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz+pg19563_Eline_Vere.txt.gz+pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz shuffle_target=11 | 1 | 0.892 (0.892-0.892) | -1046.278 | no judge block | yes (gate 0.6) | A2-RAA3 shuffle floor 11 |
+| 3 Oct 2026 00:03 | masc | N=370 K=25 restarts=8 corpus=pg10819_De_kleine_Johannes.txt.gz+pg10820_Een_liefde.txt.gz+pg12003_Extaze_Een_Boek_van_Geluk.txt.gz+pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz+pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz+pg19563_Eline_Vere.txt.gz+pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz shuffle_target=12 | 1 | 0.892 (0.892-0.892) | -1053.668 | no judge block | yes (gate 0.6) | A2-RAA3 shuffle floor 12 |
+| 3 Oct 2026 00:03 | masc | N=370 K=25 restarts=8 corpus=pg10819_De_kleine_Johannes.txt.gz+pg10820_Een_liefde.txt.gz+pg12003_Extaze_Een_Boek_van_Geluk.txt.gz+pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz+pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz+pg19563_Eline_Vere.txt.gz+pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz shuffle_target=13 | 1 | 0.892 (0.892-0.892) | -1059.320 | no judge block | yes (gate 0.6) | A2-RAA3 shuffle floor 13 |

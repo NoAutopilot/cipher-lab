@@ -1,0 +1,11 @@
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=370 signs, K=25 distinct, tokens=space
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/masc-1-nl20.txt
+CONTROL seed 1: N=370 K=21 recovery 0.892 score -877.83
+CONTROL seed 2: N=370 K=21 recovery 0.922 score -811.73
+CONTROL seed 3: N=370 K=21 recovery 1.000 score -832.02
+TARGET best score -865.990; decode -> ciphers/na-raad-azie-1800/families/masc-1-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
