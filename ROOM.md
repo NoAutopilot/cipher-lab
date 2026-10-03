@@ -6756,3 +6756,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-HAR8 harley-287-1587 -- last commit none; unfinished: run_nexthar.py with 8 = c/d on f.80r-81r, f.92r, f.96v
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-COL18 colbert26-lathuillerie-1644 -- last commit none; unfinished: anchor_split.py with canvases 54-56 as cleared units
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-GRA7 fr2980-gramont -- last commit none; unfinished: locate fr.3038 no.19 + cipher original, align as known plaintext
+2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-RAA12 na-raad-azie-1800 -- last commit none; unfinished: NA 2.01.27.03 invnr 207/144 item-page and scan check
