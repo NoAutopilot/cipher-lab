@@ -107,6 +107,12 @@ No plausible hit for this item, so no comment thread was relevant to open. Reque
 
 ## While waiting
 
-Waiting on an image (REQUEST.md copy order). The one action that depends on nobody: read Lambeth CalmView's records for
-MS 647 ff. 210-230 (the neighbours of f.218, `/CalmView/` GET route in CLAUDE.md's access playbook) for a
-neighbouring item catalogued as a decipherment, a key or a clear copy of this letter.
+Waiting on an image (REQUEST.md copy order).
+
+- [done 3 Oct 2026, CS-BATCH2: ff. 216, 217, 219, 220 are empty CalmView records, only f.218 is catalogued] read Lambeth CalmView neighbours of f.218.
+- S: IA full-text (be-api, no login) search of Birch, *Memoirs of the Reign of Queen Elizabeth* (1754) and Bruce/Nares-type Bacon-papers calendars for "Casenove" and "Cazenove" spellings not yet tried (earlier passes used Casenowe/Casenove/Dufau/Dufauk), ~$0.2.
+
+## Second pass (CS-BATCH2 (account-2 worker), 3 Oct 2026)
+
+Status unchanged: open. The "While waiting" action (Lambeth CalmView neighbours of f.218) was run: `Record.aspx?src=CalmView.Catalog&id=MSS-647-662/647/NNN` for ff. 216, 217, 219, 220 each returns an empty record page (HTTP 200, no title or description; the volume is catalogued for selected folios only, the search for "MS 647" lists ff. 28, 34, 37, 48 ... as separate items), while f.218 returns Title CASENOWE (A. Dufauk de), Date [1586], Description "Letter to HENRI IV, King of France", Language "French and cipher", Level Item; no note, no key, no decipherment field. Text search "Casenowe" returns that one record only. Fresh WebSearch (Casenowe Dufauk Henri de Navarre 1586 lettre chiffrée MS 647): Adam Matthew *Early Modern England* LPL MS 647 page (subscription), Archives Hub Bacon entry, Lambeth Elizabeth I research guide; no decipherment or edition named. Premise (c): neighbours catalogued as nothing, images subscription-only. Requests: archives.lambethpalacelibrary.org.uk 9, WebSearch 1.
+Verdict: open. Next step (costed): copy order or access to the Adam Matthew images via a subscribing library (REQUEST.md); nothing free remains.

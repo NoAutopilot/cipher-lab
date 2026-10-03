@@ -269,3 +269,8 @@ Read so far: 0 of 13 items (no ciphertext on disk; all 13 `digitised: false`)
 - [n/a] image-check: all thirteen items digitised false
 - [n/a] retry: no prior test exists to retry
 Verdict: parked: every gap has an outside blocker
+
+## Second pass (CS-BATCH2 (account-2 worker), 3 Oct 2026)
+
+Status unchanged: open (parked: every gap has an outside blocker). Fresh WebSearch for Hyndford/Stair 1742 and Namur 1712 intercepts with Blencowe/Malknecht: TNA catalogue records only (C9232913-C9233028 area, C8951001, C9188938); nothing names a decipherment, key or edition. The earlier passes' editions, DECODE key-record candidates and solver-repository greps (3 Oct 2026) were not repeated; nothing found today changes them. No Discovery notes sweep run on the eight pieces (about 2,000 items; would exceed the host budget). Requests: WebSearch 1.
+Verdict: open, parked on ASKS row 57 (TNA page copies); next step (costed): `--notes` listing of SP 87/4 and SP 87/32 only (~$0.2, ~150 requests) to catch note-field decipherments, on a free request-budget slot.
