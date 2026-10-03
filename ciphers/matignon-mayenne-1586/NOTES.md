@@ -1217,7 +1217,7 @@ Read so far: 1,406 of 12,994 transcribed Cipher-1 tokens (10.8%) sit in a sense 
 - untranscribed remainder of the 13 Cipher-1 leaves (extent unmeasured) - blocker: not-attempted; the spec and NEAR.md both say Bourdeau transcribed these leaves "only in part", and NOTES.md bMAT2 cites his separate read_of_transcribed and read_of_leaf figures, but no line or sign count of the full leaves is on file. Tomokiyo's opening for f.150 ("il estoit me besoins car je tourvai quil auoit") does not align with our f150-1 (scratch DP -14 vs shuffle median -15; confirmed with the committed `align_openings.py` 2 Oct 2026: -50 vs shuffle max -19 over 200 draws), unlike f110/f143r/f154, so our f150 may start elsewhere on the leaf. GAPS2 2 Oct 2026: his HEAD extent recorded from his "Coverage, measured" table -- f110 37/54 lines, f196 26/31, fr.15571 f.177 24/29, the other ten leaves complete; +2,648 tokens estimated untranscribed over the whole target incl. Cipher-3 (section "GAPS2" (d)); next: count lines per leaf on Gallica canvases of btv1b9061879d against `ciphertext.txt`'s line counts and list the untranscribed lines, ~$2
 - Nomenclator number codes on key.tsv '+' rows (62 x10, 33 x8, 49 x5, 44 x4, star/15/36 x3, 46/53/27/68 x2, 54/hash/88/104/79 x1 = 49 tokens) plus singleton absent labels (121, 102, Bi, u, f3, 73, 18, 101, O) - blocker: open-codes; each occurs 1-10 times in the proper-name range. Tomokiyo's list gives 76/82/84/98 as roi de Navarre/Condé/Turenne/Montauban, and 49 appears unread in his f.143 opening. MAT-CCE's cross-office lookup has no power (4.2% vs 2.85% chance). bMATBEAM's values for these signs had margins of 0.5-8.1 bits. The f.78v/79r crib is retired (rule 3(b)), so only a period gloss on a different leaf would narrow them SPLIT-matignon-mayenne-1586 (2 Oct 2026, 0 of 31 split-check rows reachable, no leaf image on disk): 37 x2 and 73 cut into 3|7 / 7|3 (e o / o e) against the key, but sit in the word-code range and 37 closes both parallel lines f196-3/f201-5, so they are held as unkeyed word codes, not glued letters, pending the image; `split_worklist.tsv` ranks all 31 labels (7 cut fully into key codes: fe x6, de x5, me x5, 37 x2, 73, Bi, f3); next: locate and crop the f.91-92 Cipher-1 letter ("deciphered in the margin", henryiii.htm l.638, never opened) or the f.18-21/f.19 pair (cipher page plus a full clear page, of which Bourdeau's repo holds only 3+2 lines, bMAT1D) on btv1b9061879d (f.78v/79r = canvas 85). Transcribe cipher lines and clear text in two passes plus a reconciliation, and run `tools/interlinear_align.py` behind a known-answer control on H codes, ~$12
 - fr.15571 f.179 (Matignon Cipher-3, whole leaf, sign count unmeasured) - blocker: not-attempted; a native, overlay-free image is on disk (`images/f179_gallica_native.jpg`, bMAT3). The magenta labels are Tomokiyo's modern overlay (grade M at most). Tomokiyo's reconstructed table `henryiii_Matignon3.png` (built from the period decipherments f.189/190, f.277-278/279-280, f.282 margin, henryiii.htm l.689) is referenced but not on disk and has never been applied; next: fetch `henryiii_Matignon3.png` from cryptiana.web.fc2.com (1 request), cut line crops with `tools/iiif_lines.py --image images/f179_gallica_native.jpg`, run two blind passes against the table plus a reconciliation, then decode (key: published, Tomokiyo), ~$9
-- fr.15572 f.276 (Matignon Cipher-3) - blocker: not-attempted; never fetched at any resolution, because bMAT3 used its whole Gallica allowance on f.179. Tomokiyo gives only an opening paraphrase ("La Guiolle est en doubte du pu pour les amis de la Roussiere...", l.692), which can serve as a crib check; next: after the f.179 table step, locate the canvas on btv1b9061879d with `tools/gallica_folio.py --anchor` (f.78v/79r = canvas 85), cut crops, run two passes plus a reconciliation against the Cipher-3 table, decode, and check the opening against Tomokiyo's paraphrase, ~$7
+- fr.15572 f.276 (Matignon Cipher-3) - blocker: not-attempted; never fetched at any resolution, because bMAT3 used its whole Gallica allowance on f.179. Tomokiyo gives only an opening paraphrase ("La Guiolle est en doubte du pu pour les amis de la Roussiere...", l.692), which can serve as a crib check; next: after the f.179 table step, locate the canvas on btv1b9061879d with `tools/gallica_folio.py --anchor` (f.78v/79r = canvas 85), cut crops, run two passes plus a reconciliation against the Cipher-3 table, decode, and check the opening against Tomokiyo's paraphrase, ~$7 (A2P4-MATIG 3 Oct 2026: the period clear text ff.279r-280r was compared against Tomokiyo's f.276 opening under prereg a357a7a3 -- NO MATCH, 2/5 vs gate 4, controls 1-2/5 / 0/5 / 5/5; ff.279-280 do not decipher f.276, so this leaf has no period decipherment on ff.279-280 and the table step is still the route; section "A2P4-MATIG")
 
 ## Escalation (1 Oct 2026)
 - [ ] siblings: Opened so far: fr.3974 f.24 (MAT-3974: plain prose, no cipher, retired), the DECODE 24 Sept cache (0 hits, bCSMAT d), and the 27 Sept key_crossmatch fr7129 "hit", which scored the same on all three shuffled controls (ROOM.md 27 Sept 02:51-02:52), so it is not a lead. Not opened: the f.91-92 Cipher-1 letter (deciphered in the margin, Tomokiyo l.638), the fr.15573 Forget/Mayenne/Matignon folios ff.7, 20, 31, 62, 131, 299 (SO-MATIGNON-LEADS, unchecked), and fr.3354 f.91 and fr.16092 f.5 (weaker SO leads). Planned: locate and crop f.91-92.
@@ -1427,7 +1427,7 @@ readings are now cited. Status unchanged (`partial`).
     *Lettres* run in the opposite direction and are still unchecked.
 
 **Named next steps (not run, outside this brief).**
-1. Compare ff.279-280's clear text against f.276. Read f.279r-280 at native resolution and test Tomokiyo's f.276
+1. [run 3 Oct 2026, A2P4-MATIG: NO MATCH, see section below] Compare ff.279-280's clear text against f.276. Read f.279r-280 at native resolution and test Tomokiyo's f.276
    opening and the "La Guiolle"/Aiguillon question. A match makes f.276 found-solved through a period decipherment.
    About $2, one native fetch and one read.
 2. The verifier for any future reading diffs it against Bourdeau's per-leaf reading files listed in (b).
@@ -1443,3 +1443,59 @@ novelty claim.
 matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## A2P4-MATIG (3 Oct 2026, account-2 worker, LANE-A2PUSH4): ff.279-280 clear text vs f.276 -- NO MATCH
+
+Named next step 1 of the Premise check. Pre-registration `premise/prereg_f279.md` (commit a357a7a3, pushed before
+any read); scorer `premise/match_f279.py` (rule fixed by the prereg). Intake gate (run first):
+```
+matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
+Crops (pasted before the first vision call; Gallica btv1b9061879d has no folio labels, canvases from the Premise
+check: 289 = f.278v blank + f.279r, 290 = f.279v + f.280r):
+```
+python3 tools/iiif_lines.py --ark btv1b9061879d --canvas 289 --region 5100,1060,2950,4560 --out ciphers/matignon-mayenne-1586/images/f279 --prefix f279r --distance 100 --lines-per-crop 2 --debug
+python3 tools/iiif_lines.py --ark btv1b9061879d --canvas 290 --region 1450,1100,2850,4700 --out ciphers/matignon-mayenne-1586/images/f279 --prefix f279v --distance 100 --lines-per-crop 2 --debug
+python3 tools/iiif_lines.py --ark btv1b9061879d --canvas 290 --region 4900,820,2980,3050 --out ciphers/matignon-mayenne-1586/images/f279 --prefix f280r --distance 100 --lines-per-crop 2 --debug
+```
+(A first canvas-289 cut at region 4080,1230,4000,4900 clipped line 1 and was discarded before any vision call.)
+
+Vision calls (4, the brief's maximum; Sonnet subagents, one crop batch each): f.279r blind pass A and pass B
+(30 crops each), one reconciliation against the crops (`premise/f279r_reconciled.tsv`, 30 lines, 392 tokens,
+39 wildcards, about 106 words settled from the image), and the spare on f.279v + f.280r as a single pass
+(`premise/f279v_passA.tsv` 27 lines / 332 words / 166 [?]; `premise/f280r_passA.tsv` 17 lines / 219 words /
+144 [?]). The hand is a fast secretary hand; all three readers called it poor. About 950 words transcribed in
+all; cost per 100 words is the orchestrator's figure (get_session), not given here.
+
+Result (`python3 premise/match_f279.py premise/f279r_reconciled.tsv premise/f279v_passA.tsv premise/f280r_passA.tsv`):
+
+| text | tokens (wildcards) | f.276 crib (gate >= 4/5) | C1 f.143 | C1 f.111 | C1 f.260 | C2 f.282 margin | C3 planted |
+|---|---|---|---|---|---|---|---|
+| f.279r pass A | 388 (84) | 2 | 1 | 1 | 0 | 0 | 5 |
+| f.279r pass B | 384 (55) | 2 | 1 | 2 | 1 | 0 | 5 |
+| f.279r reconciled | 392 (39) | 2 | 1 | 1 | 1 | 0 | 5 |
+| f.279v + f.280r (one pass) | 558 (91) | 2 | 1 | 2 | 0 | 0 | 5 |
+| ff.279r-280r together | 950 (130) | **2 -- NO MATCH** | 1 | 2 | 1 | 0 | 5 |
+
+Controls valid on every row (C1 and C2 below the gate, C3 = 5). The target's 2/5 is itself spurious: on f.279r
+it is "riviere" within edit distance 2 of "roussiere" plus one "grand" ("fort grand", l.4); "amis", "nombre" and
+any "doubte" in order do not occur. So **ff.279r-280r do not carry Tomokiyo's f.276 opening**; f.276 is not
+found-solved through this period decipherment. Conditional: f.279v/f.280r rest on one weak pass (about half the
+words [?] or doubtful), and f.280v (canvas 291 left) was not read; a Tomokiyo opening is a modern paraphrase (M).
+
+What the clear text is about (interpretation, from the passes, names at the readers' firmness): Forget reports to
+Monsieur du Mayne [Mayenne] at Bourdeaulx; crossing the Dordongne and Garonne, powder left at "[E]guillon"
+(f.279r l.11), Verdun, Thoulouse (f.279r); Saint Be[at]?, Comminges, Montauban, Turenne, the Roy de Navarre,
+Bourdeaux (f.279v); Bellisle at Bourdeaux, Mayne (f.280r). That is a Guyenne campaign despatch consistent with
+Tomokiyo's statement that ff.279-280 decipher ff.277-278. Secondary question ("La Guiolle" = Aiguillon?): f.279r
+l.11 does name Aiguillon (spelled with a doubtful initial, "[E]guillon"), but no token near "Guiolle" or
+"Roussiere" occurs anywhere in ff.279r-280r; whether Tomokiyo's "La Guiolle" on f.276 is Aiguillon is not decided
+by this text (interpretation only, no grade).
+
+Grades (rule 4): 0 cipher tokens read; this is a transcription of period clear text, not a decipherment, so no
+H/C/S/M/I counts apply; the transcribed words are reading-grade only (firm vs [?] as counted above).
+Hosts: gallica.bnf.fr 5 requests (IIIF: canvas 289 region twice, canvas 290 at 1200 px once, canvas 290 two
+regions; at least 2 s apart, no 429/challenge). Report: found -- ff.279-280 read as the
+ff.277-278 despatch; not found -- any f.276 text in ff.279r-280r.
+
