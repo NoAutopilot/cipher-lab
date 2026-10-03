@@ -1,0 +1,148 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "t_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    280,
+    1180,
+    700,
+    1280
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "a_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    590,
+    738,
+    1010,
+    838
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     88
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "b_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    1910,
+    2020,
+    2330,
+    2120
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "c_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    510,
+    3092,
+    930,
+    3192
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "d_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    1450,
+    3086,
+    1870,
+    3186
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "e_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+   "box": [
+    2050,
+    670,
+    2470,
+    770
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100
+    ]
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}
