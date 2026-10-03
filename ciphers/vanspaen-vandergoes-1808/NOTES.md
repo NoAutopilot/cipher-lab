@@ -183,7 +183,7 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 
 Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
 - Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public; list in
-  images/na_2.01.08_281_scans.tsv, 25 sampled 3 Oct by FT4, not found) at thumbnail size to locate
+  images/na_2.01.08_281_scans.tsv, 50 sampled 3 Oct by FT4 and FT4b, not found; next 161-179) at thumbnail size to locate
   the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
   or a ministry gloss (premise (c)); then one logged-in DECODE pass listing R1941's documents (premise (a)). S.
 
@@ -224,11 +224,35 @@ Step: premise (c) / While waiting, the action that depends on nobody. Locate the
 - Requests: www.nationaalarchief.nl 1; service.archief.nl 25 images (the cap), 1.6 s apart, no 4xx/5xx. Vision 3.
   Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026)
+## FT4b-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): second sampling of NA 2.01.08 inv. 281
+
+Step: the gap "location of the target leaves in inv. 281". Locate only; nothing transcribed. Status unchanged (`open`).
+- 25 IIIF views at 450 px wide (`full/450,/0`), 1.6 s apart, all HTTP 200 image/jpeg: scans 185-187, 189-191, 193-195,
+  217-219 and 221-233 (the gaps either side of the articles bundle that FT4 sampled every 4th). Two vision calls, one
+  contact sheet each (12 and 13 scans).
+- What they show (dates read only where large on the page, so treat them as approximate):
+  - 185, 187, 189: letters headed "DE COMMISSARIS GENERAAL ... van Gelderland" (printed letterhead), signed by the
+    commissaris-generaal, not Van Spaen; 187 and 191 carry a filing note "No 3 / 17 Feb 1808".
+  - 193: a Dutch letter with a red wax seal; 194-195 and 217-219: numbered articles (Art. 1-11), the cession articles
+    already seen by FT4 at 196-216.
+  - 221: a French letter, foot "Wesel le .. Mars 1808 ... de Spaen et ...". 223 and 225: letters headed with a filing
+    note "N. 1 [?] Mars 1808" and "Wesel ... Maart 1808"; 224 is signed by the commissioners at Wesel. 226-231: a long
+    French memoir, 231 ending "Wesel le 28 Mars 1808". 232-233: inserted smaller slips of Dutch prose on a larger leaf.
+  - 186, 190, 222 blank or nearly blank versos.
+- None of the 25 carries a page of figure groups, a decipherment slip or a key sheet.
+- File order, revised: 180 (3 Feb 1808), 187/191 (17 Feb), 221-231 (March 1808, Wesel) run forward in date. So scans
+  180-233 are one bundle in rising date order covering Feb-Mar 1808, with the March articles inside it; FT4's 160
+  (8 March 1808) belongs to a different bundle. If the 14-15 Jan 1808 Düsseldorf letter is filed in date order in
+  this bundle, it sits before scan 180: the unviewed scans 161-179 (15 scans) and 141-159 are the next place to look.
+- Total now sampled: 50 of 360 scans (14%). Not located is a search result, not an absence.
+- Requests: service.archief.nl 25 (the cap for this session), 1.6 s apart, no 4xx/5xx; www.nationaalarchief.nl 0.
+  Vision 2. Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, 3 Oct 2026)
 Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 25 of 360 inv. 281 scans
 - annex 15 Jan 1808 (75 groups) - blocker: not-attempted; DECODE says it "is solved" but no document has been seen; next: one logged-in DECODE pass listing R1941's DocumentsList, ~$1
-- location of the target leaves in inv. 281 - blocker: not-attempted; 25 of 360 scans sampled (this pass), leaves not located; next: thumbnails via the archive's own `api/file/v1/thumb/<id>` endpoint in batches of <=25 per session (scans 1-39, 41-119, 221-359 unsampled), cipher pages show as dense figure blocks even at thumbnail size, ~$2 per 25-scan batch
+- location of the target leaves in inv. 281 - blocker: not-attempted; 50 of 360 scans sampled (FT4 25, FT4b 25, 3 Oct 2026), leaves not located; scans 180-233 are a Feb-Mar 1808 bundle in rising date order, so Jan 1808 should precede 180; next: IIIF 450 px views of scans 161-179 then 141-159 (25 per session, host rule), contact sheets, ~$2 per 25-scan batch
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no sibling letter in this code is identified anywhere
@@ -238,4 +262,4 @@ Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); 
 - [ ] key-rebuild: needs a crib or a period decipherment first; the annex decipherment DECODE claims would be the crib
 - [ ] image-check: native-resolution view of the target leaves once they are located in inv. 281
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 2 internal gaps; cheapest next: logged-in DECODE DocumentsList for R1941, ~$1
+Verdict: keep going: 2 internal gaps; cheapest next: logged-in DECODE DocumentsList for R1941, ~$1; then inv. 281 scans 161-179 + 141-149 (25 views), ~$2
