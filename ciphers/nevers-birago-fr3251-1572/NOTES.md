@@ -816,6 +816,50 @@ a verifier (about $2): re-read value-blind the 8 T50 tiles and 3 T46 tiles from 
 whether any "Ce" tile in nos.71/86/90 sits under a T50 or T92 label there. Next for the owner's sorter: the T98/T18 tiles, added
 to `sorter/focus.tsv`.
 
+## NO87-LABELS: the ruled no.87 labels applied after a second value-blind re-read (3 Oct 2026, for the account-3 orchestrator)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-no87-labels.md`. Disk only: 0 requests, 1 subagent vision call (Sonnet, no repo
+context). No class, no novelty wording, no firm count changed. Status stays `partial`.
+
+**Blind re-read.** All 42 no.87 tiles labelled T50/T46/T98/T52 (`harvest/lookalike_87/tiles.tsv`) were cut as context windows
+and shuffled (seed 1003) into panels P01-P42 with ids only (`harvest/lookalike_87/no87_labels/mk.py`, regenerates `blind_*.jpg`,
+`candidates.png`, `key.tsv`, `neighbours.tsv`). The reader saw the panels, the target's neighbour ids (target as `[?]`), the
+blind sheet, and a candidate-only sheet of 14 cells (T50 T92 T96 T46 T11 T15 T98 T18 T36 T45 T52 T13 T64 T38), and never a
+label, value or sheet word for any tile; it was a fresh subagent that had read nothing else, so unlike VERIFY-BIRAGO-SMALL it did
+not know the class counts to expect. Its read is `blind_read.tsv`; it was joined to `key.tsv` only afterwards.
+
+| tiles | ruling (AUDIT.md, VERIFY-BIRAGO-SMALL) | blind re-read | applied |
+|---|---|---|---|
+| f178v L01.23 L03.4 L04.4 L05.25 L07.29 L08.10 L10.5 (T50, sheet s) | X_CE, s at C | 7/7 OFF "omega with c-hook lead, no tall tail" | **yes**: exceptions_f178v.tsv, value s |
+| f178v L20.7 (T50, sheet c) | stays T50 = c | T50 "omega with tall S-like tail" | nothing to apply |
+| f178r L03.22 (T46) | stays 86 | T46 "86" | nothing to apply |
+| f178v L19.22 (T46, sheet re) | X_8, U | OFF "single 8" | **yes**: value ?, U |
+| f178v L15.24-25 (T46 T46, sheet c / atholici) | one token X_88 | two panels, each OFF "single 8" | **no**: the ruling (one group) and the read (two separate 8s) disagree on the token count; left as T46 for the owner's sorter or a verifier |
+| T98 (19 tiles) | not ruled | all 19 read T18, the 11 sheet-s tiles as well as the 7 sheet-d | no: no ruling, and the read does not separate s from d tiles, so it is non-discriminating for this pair at these crops (the bMAT2 shape) |
+| T52 (11 tiles) | not ruled (key conflict) | 9 T52 (o and i tiles alike), L13.27 OFF "m-like with descending tail" (as BIRAGO-SMALL's ?), f178r L03.28 unseen | no |
+
+The 8 applied rows went in by `exceptions` (basis named in each row); `ciphertext_f178v.tsv` and the keys are unchanged. Because
+these tiles carry conf M, decode_key grades the 7 s values M (not C); the X_8 is U. `decode_key.py --check`: reading up to date.
+
+**True error on no.87 against the clerk sheet** (`lookalike_87/no87_labels/true_error.py`: decoded token value vs
+`align87/align_real.tsv` plain_chunk, 843 aligned tokens; the sheet is the known answer):
+
+| | wrong | unvalued (U) | true error | wrong + U |
+|---|---|---|---|---|
+| before (committed 5517fc38) | 72 | 19 | 0.0854 | 0.1079 |
+| after the 8 rows | 64 | 20 | 0.0759 | 0.0996 |
+
+The 7 X_CE tiles move wrong -> right (the value comes from the sheet itself, so this part is circular for the value and not for
+the label split); L19.22 moves wrong -> U. Judge (`specs/nevers-birago-fr3251-1572.json`, letters of f.178r+v+f.179r): before FAIL
+-1.046 (real_p05 -0.902, null_p99 -1.781, N 926), after FAIL -1.044 (real_p05 -0.904, null_p99 -1.790, N 920): unmoved.
+`reading_no87_letters.txt` regenerated.
+
+**Follow-up (true error dropped).** The same shapes can hide under the same labels in the other letters: 26 tiles in
+`lookalike_87/no87_labels/followup_71_86_90.tsv` -- no.71 f.139v T50 x3; no.86 T50 x8 and T46 x1 (f174r L04.1, already the
+'85' fix in AUDIT.md); no.90 T50 x10 and T46 x4. Second tier, not listed: T92 (no.86 x13, no.90 x41), since the earlier note
+named T92 as the other label a "Ce" could sit under. Next: the same value-blind panel read on those 26 tiles (one vision call,
+~$1, disk only); a tile read as the curled Ce gets value s by exception, a tall-tailed one stays c.
+
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
 - f.184 no.90 -- all its cipher now read (966 signs; NEVBIR-185B, 2 Oct 2026, section at the end): rank 1/201 at 3 seeds, z 4.49-4.59, power 20/20 at err 0.12; judge FAIL -1.069 (shuffled 0/20 PASS); remaining: 19 tiles NEVBIR-185 coded X_NEW that match the sheet's T83 (r) - blocker: open-codes; fit-aware control gain rank 6-9/201 only, grade M; next: confirm the 19 tiles are T83 by a value-blind look-alike pass or the owner's sign sorter (f185r/passC_rest90_ae.tsv), then relabel and re-run decode_key, disk + 1 vision call, ~$1; and a separate verifier pass on the f.184v-f.185v portion (rule 10), ~$3
@@ -835,7 +879,7 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
 - [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
 - [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
-Verdict: keep going: 4 internal gaps (no.86: all its cipher now read, f.174r + f.174v + f.175r/v, 759 signs rank 1/201 (NEVBIR-174V-A/B); its next step is the verifier pass) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); the value-fit of the off-sheet signs ran (NEVBIR-OFFSHEET, 2 Oct 2026: untested-by-this-tool, it failed its no.87 known-answer check); the clerk-sheet alignment ran (NEVBIR-87ALIGN, 2 Oct 2026: C-grade key keys/key_1572_clerk.tsv, control-backed; the transfer variant improves no other letter); the look-alike shape read on no.87 ran (BIRAGO-SMALL: T50 = s is a reader-label error, a "Ce" sign; labels proposed, not applied); cheapest next: a value-blind verifier re-read of harvest/lookalike_87/reread.tsv (~$2), then f.144
+Verdict: keep going: 4 internal gaps (no.86: all its cipher now read, f.174r + f.174v + f.175r/v, 759 signs rank 1/201 (NEVBIR-174V-A/B); its next step is the verifier pass) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); the value-fit of the off-sheet signs ran (NEVBIR-OFFSHEET, 2 Oct 2026: untested-by-this-tool, it failed its no.87 known-answer check); the clerk-sheet alignment ran (NEVBIR-87ALIGN, 2 Oct 2026: C-grade key keys/key_1572_clerk.tsv, control-backed; the transfer variant improves no other letter); the look-alike shape read on no.87 ran (BIRAGO-SMALL: T50 = s is a reader-label error, a "Ce" sign; labels proposed, not applied); the value-blind re-read and the agreed relabels on no.87 ran (NO87-LABELS, 3 Oct 2026: 8 exceptions rows, true error 0.0854 -> 0.0759); cheapest next: the same read on the 26 T50/T46 tiles of nos.71/86/90 (harvest/lookalike_87/no87_labels/followup_71_86_90.tsv, ~$1), then f.144
 
 ## VERIFY-NEVBIR-1572 (2 Oct 2026, account 2): audit 1 -- see AUDIT.md
 

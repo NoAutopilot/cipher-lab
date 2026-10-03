@@ -1,0 +1,27 @@
+letter	line	pos	label	why
+f139v	f139v_L02	27	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+f139v	f139v_L03	33	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+f139v	f139v_L04	7	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174r_L01	20	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174r_L04	1	T46	T46 tile: check 86 vs a single 8 / 88 / 85
+no86	no86_f174v_L05	7	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174v_L08	23	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174v_L11	8	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174v_L12	3	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174v_L12	6	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f174v_L21	6	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no86	no86_f175v_V02	29	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184r_L02	11	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184r_L03	25	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184r_L08	32	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184r_L12	19	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184v_L02	26	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f184v_L03	26	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f185r_L06	22	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f185r_L10	2	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f185r_L10	22	T46	T46 tile: check 86 vs a single 8 / 88 / 85
+no90	no90_f185r_L16.2	14	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f185r_L18	1	T50	T50 tile: check for the off-sheet curled Ce (X_CE, s) vs the tall-tailed T50 (c)
+no90	no90_f185r_L19	23	T46	T46 tile: check 86 vs a single 8 / 88 / 85
+no90	no90_f185r_L20	22	T46	T46 tile: check 86 vs a single 8 / 88 / 85
+no90	no90_f185r_L22	7	T46	T46 tile: check 86 vs a single 8 / 88 / 85
