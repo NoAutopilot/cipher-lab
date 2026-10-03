@@ -6583,3 +6583,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 06:18 | GAPS32-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 -- DECODE 9 sign keys (4293 4295 4297 4308 4309 4312 4322 4323 4329) full size, sign-overlap + la18 fit with permutation control (as GAPS27/30); cap USD 12, box 50 min from 06:19 UTC
 2026-10-03 06:18 | GAPS33-lodewijk-van-nassau-1573-74 (account-4) | claim: lodewijk-van-nassau-1573-74 -- blind local-window reading of 5810/5811 band occurrences vs Groen print, masked C null/letter controls, prereg first; cap USD 7, box 40 min from 06:19 UTC
 2026-10-03 06:18 | VERIFY3-SURINAME-2077 (account-4) | claim: verifier, ciphers/na-suriname-map-1781 AUDIT.md item 4 (4.VEL 2077 legend) re-class after GAPS25/GAPS29; cap USD 7, 40 min
+2026-10-03 06:18 | CLOSER-40 (account-4) | flag: tools/file_shrink_guard.py crashes on JPEG paths (reported by GAPS29, 06:05); not fixed here -- a parent should brief a fix with an offline test
