@@ -393,18 +393,73 @@ item 43's own leaves on this evidence.
 Requests: gallica.bnf.fr 3 (IIIF native regions, descriptive UA, >=1.5 s apart, no error). Vision: 0 subagent
 calls; worker's own reads of 3 overlays + 2 date crops + 4 500px survey views already on disk. Folder 24 MB.
 
-## Remaining gaps (GAPS102, 3 Oct 2026)
-Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-reader drafted at 42.9% agreement, diagnostic only.
+## SEURE-KP: item 44's clear opening as known plaintext for item 43's cipher (3 Oct 2026, account 2)
+
+Worker SEURE-KP (LANE-A2PUSH3, account 2, Opus 5.5, cap USD 6, box 14:38-15:23 UTC), brief
+`.claude/briefs/runs/2026-10-03-acct2-seure-kp.md`. Intake gate, pasted: `fr3151-seure-1558: blocked (line 1) --
+already terminal, nothing to gate`, exit 0. Pre-registration `kp/PREREG.md` (5c5c30b3; amendment A1 d5ccb88d before
+any read, A2 acabc850 after the reads and before any score; all three were committed before the score they govern).
+
+**Crops** (one native region each, gallica.bnf.fr 2 requests, descriptive UA, no error):
+`python3 tools/iiif_lines.py --ark btv1b9059865k --canvas 85 --region 4100,200,3500,2300 --out images/kp --prefix f85R_clear --debug`
+(23 lines) and `python3 tools/iiif_lines.py --ark btv1b9059865k --canvas 81 --region 4100,200,3500,4500 --out images/kp --prefix f81R --debug`
+(39 lines). Overlays checked. Only the crops used are committed (f85R L01-08, f81R L01-20); the native sources are
+gitignored and can be fetched again from `images/kp/manifest.json`.
+
+**Reads** (one Opus subagent call each, line crops only): `kp/f85R_clear_read.tsv` covers f85R L01-08 in clear,
+about 407 letters from "(que je donnay ..." (self-rated confidence 0.6). `kp/f81R_cipher_read.tsv` covers f81R
+L01-20 in cipher, 461 signs and about 80 distinct labels in the first 407 (self-rated 0.55). There was one reader
+per side and no reconciliation unit was run (A2). **Observation (M):** the clear opener on f81R line 1, "Sire, Je
+vous escrivis par mes dernieres ... doctobre", matches f85R line 1 word for word, including the October date. Both
+letters are answers to the same earlier dispatch, so the start anchor of the span hypothesis has a basis. f85R
+continues in clear with "(que je donnay a ung courrier portugais nomme Anthoine Galuan) le {decez} de la Royne
+Marie ... la flotte quilz attendoient du {peru} ... don {Aluaro} de bassan ... arrivee a Seville". The words in
+braces are uncertain (M).
+
+**Test** (`kp/kp_test.py P.txt f81R_cipher_read.tsv result.json --draws 200 --ctl-seeds 3 --ctl-draws 30`). The
+script imports `tools/interlinear_align.run_align` in `--code-prefix` mode (each sign takes 0 or 1 letters) with
+the default null cost. S is the share of code tokens whose status is `agrees`; S* is the maximum over cipher
+spans r = 0.70, 0.85 and 1.00 signs per plain letter. The control ran first.
+
+| run | S* | null p95 / max (shuffled gloss) | null p95 / max (rotated gloss) | pass |
+|---|---|---|---|---|
+| control, P enciphered homophonically, K=80, 0% error (3 keys) | 0.993-0.995 | 0.266-0.287 / 0.280-0.297 (30 draws each) | -- | 3/3 |
+| control, 15% sign error | 0.830-0.850 | 0.270-0.284 / 0.273-0.285 | -- | 3/3 |
+| control, 40% sign error | 0.568-0.609 | 0.263-0.277 / 0.265-0.295 | -- | 3/3 |
+| **target**, f85R P (407 letters) vs f81R C (461 signs) | **0.239** (S_r 0.239 / 0.225 / 0.226) | 0.257 / 0.272 (mean 0.235, 200 draws) | 0.253 / 0.270 (mean 0.234, 200 draws) | **no** |
+
+**Result: gate FAIL.** The target's consistency equals the null mean, and its alignment is no better than a gloss
+whose letters are shuffled or rotated. The matched control clears its nulls by a wide margin at 0%, 15% and 40%
+sign error. This is therefore a real test of the stated model at this N and at reader errors up to about 40%.
+No key fragment was drafted, and key.tsv, decode.json and decode_key.py were not run (the gate governs them).
+
+**What the negative is conditional on** (it is not a design-family negative):
+(1) the span hypothesis: 43's cipher after the opener enciphers the same words as 44's clear text, in the same
+order. The two letters could share only the opener, with 44 abridging or reordering the body.
+(2) the alignment model: one sign takes at most one letter. The control enciphered letters only. A nomenclator
+with word or syllable codes, or with nulls at a density that shifts the sign:letter ratio outside 0.70-1.00, is
+not covered. This folder's f75L and the GAPS102 postscripts show numerals 12-100 and recurring groups (`40 n R`)
+inline, which is consistent with a nomenclator. The control could not fail on that axis, so this test does not
+exclude it.
+(3) the two single-reader reads (unreconciled).
+Rule 3's third-attempt clause does not apply: this is the first attempt with this instrument.
+
+Not found: any alignment of f85R's clear prose to f81R's cipher above the shuffled or rotated null. Reads: 461 cipher
+signs + 407 clear letters in two Opus calls. Cost per 100 signs comes from the orchestrator's get_session, which this
+worker cannot read.
+
+## Remaining gaps (SEURE-KP, 3 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-reader drafted at 42.9% agreement, diagnostic only; f81R L01-20 (461 signs) and f85R L01-08 clear (407 letters) single-reader reads in kp/, diagnostic only.
 - f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%, NOTES sections above), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
-- items 43/44 cipher body (f81R-f83L, f85R-f87R) - blocker: not-attempted; 43/44 not sign-identical (this pass), 44's clear passages untested as plaintext of 43's cipher; next: one Opus line-read of f85R's clear lines + sign count of f81R's cipher, then tools/interlinear_align.py with its shuffled-gloss control first, ~$5
+- items 43/44 cipher body (f81R-f83L, f85R-f87R) - blocker: not-attempted; letter-substitution known-plaintext alignment of f85R clear L01-08 vs f81R L01-20 FAILed its gate (S* 0.239 vs shuffled null p95 0.257, control 3/3 at 40% error; SEURE-KP section), conditional on span and one-sign-one-letter; next: same pair with word/name codes allowed (interlinear_align numeral floor for the 12-100 numerals, --max-chunk/--len-prior) plus a matched nomenclator control, and a second reader of f81R L01-10, ~$4
 - key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located (six-source log above; Bourdeau: known keys not tried)
 
-## Escalation (GAPS102, 3 Oct 2026)
-- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102): not sign-identical
-- [ ] clear-pages: 44's clear passages vs 43's enciphered body as known plaintext (gap 2), not yet run
+## Escalation (SEURE-KP, 3 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102): not sign-identical; f81R/f85R openers identical in clear (SEURE-KP)
+- [ ] clear-pages: 44's clear opening vs 43's cipher, letter-substitution model FAILed with control (SEURE-KP); nomenclator-model alignment untried
 - [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
 - [n/a] print: Ribier and Francisque-Michel read in full, neither prints these letters
 - [n/a] key-rebuild: no decipherment, key sheet or deciphered copy found to rebuild from
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85, no material quality gain on item 43's leaves
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
-Verdict: keep going: 1 internal gaps; cheapest next: 44-clear vs 43-cipher known-plaintext test (Opus line-read of f85R clear lines + f81R sign count), ~$5
+Verdict: keep going: 1 internal gaps; cheapest next: 44-clear vs 43-cipher alignment with word/name codes allowed plus matched nomenclator control and a second f81R reader, ~$4
