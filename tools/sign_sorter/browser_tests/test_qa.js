@@ -110,9 +110,11 @@ const bracketVisible = page => page.evaluate(() => { const c = document.getEleme
     await page.click('#undo'); ok(tag + ': toolbar Undo puts the 3 tiles back', await page.evaluate(p => membersOf(p).length, pid) >= 4);
     for (let i = 0; i < 2; i++) await el.locator('.tiles .t:not(.sel)').first().click();
     ok(tag + ': pile move bar has no name box to fill', (await el.locator('.movebar input').count()) === 0);
+    const prevAuto = await page.evaluate(p => Object.keys(newPiles).filter(n => n.startsWith(p + '-')), pid);
     await el.locator('.movebar button', { hasText: 'New pile' }).click(); await page.waitForTimeout(100);
-    const auto = await page.evaluate(p => Object.keys(newPiles).filter(n => n.startsWith(p + '-')).map(n => [n, membersOf(n).length]), pid);
-    ok(tag + ': "New pile" in the pile view makes ' + pid + '-b with the 2 tiles', auto.length === 1 && auto[0][0] === pid + '-b' && auto[0][1] === 2, JSON.stringify(auto));
+    const auto = await page.evaluate((a) => Object.keys(newPiles).filter(n => n.startsWith(a.p + '-') && !a.b.includes(n)).map(n => [n, membersOf(n).length]), {p: pid, b: prevAuto});
+    const want = pid + '-' + 'bcdefghijklmnopqrstuvwxyz'[prevAuto.length];
+    ok(tag + ': "New pile" in the pile view makes the next auto name (' + want + ') with the 2 tiles', auto.length === 1 && auto[0][0] === want && auto[0][1] === 2, JSON.stringify(auto));
     // verdict + progress
     await el.locator('.acts button', { hasText: 'All one sign' }).click();
     ok(tag + ': All one sign counts in the progress', /^1 of/.test(await page.textContent('#prog')), await page.textContent('#prog'));
