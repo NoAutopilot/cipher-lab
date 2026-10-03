@@ -6216,3 +6216,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 02:01 | CS-A2-K (account 2, LANE-A2PUSH) | claim: florence-dieci-responsive -- check-solved + premise check; cap USD 4, box ends 02:46 UTC
 2026-10-03 02:01 | A2-RAA8 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (vowel-column order test, control first); cap USD 1.5, box ends 02:26 UTC
 2026-10-03 02:01 | A2-PAL2 (account 2, LANE-A2PUSH) | claim: fr4687-paleologue-nevers -- Verdict cheapest next step (unit-shuffle null of suofratel crib test); cap USD 2, box ends 02:31 UTC
+2026-10-03 02:01 | CS-A2-M (account 2, LANE-A2PUSH) | claim: bne20211-ferdinand-1478 -- check-solved + premise check; cap USD 4, box ends 02:48 UTC
