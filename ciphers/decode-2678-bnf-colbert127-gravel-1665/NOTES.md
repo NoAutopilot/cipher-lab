@@ -1,6 +1,7 @@
 # [The abbé de Gravel] to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350
 
 **Status: open** (not attacked; already someone else's active work-in-progress — see below).
+Clément, *Lettres, instructions et mémoires de Colbert* (IA items colbert-lettres-instructions-et-memoires-de-colbert-v-1 to v-7), full-text search (be-api) for "Gravel", "Frichmann", "rixdales" and "Ratisbonne" run by this worker (GF-A2B-1, 3 Oct 2026): Gravel hits only Colbert's own letters to the abbé de Gravel at Mainz (1669-70, t. II pt 2, t. V) and editorial notes; no Gravel letter of 29 Jan 1665 and none of the enciphered pension names.
 
 ## Item
 
@@ -167,3 +168,56 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 16 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2B-1, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `"abbé de Gravel" Colbert Ratisbonne 29 janvier 1665 lettre de change rixdales pension` -- franco.wiki Robert de
+   Gravel biography, isidore.science and Heidelberg HÜB records (Diet of Regensburg material), Zunz archive. Nothing on
+   this letter or its enciphered names.
+2. `"Mélanges de Colbert" 127 chiffre Gravel 1665` (shelfmark + cipher) -- BnF comité d'histoire notes on the Mélanges
+   de Colbert collection, a Europeana Gallica record for another volume, generic Colbert pages. No hit.
+3. `"Frichmann" 1665 Ratisbonne pension Gravel` (the one clear-text name in the cipher passage) -- no page naming
+   Frichmann with Gravel; Wikipedia disambiguation, franco.wiki again.
+4. `Gravel to Colbert Ratisbon 1665 cipher DECODE 2678 Tomokiyo unsolved Colbert correspondence` (descriptive title) --
+   warhistory.org "Intelligence in the Era of the Sun King Part I" (general), TNA blog on a 350-year-old deciphered
+   message (a different item), Cipherbrain 2020-06-14 "a king's encrypted letter on Satoshi Tomokiyo's list" -- opened
+   with its 14 comments: a Charles I letter of 1648; no comment mentions Colbert, Gravel or Ratisbon.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Colbert Gravel Mélanges cipher`): only author/archive
+   index pages, no post on the Colbert/Gravel items.
+6. Cryptiana (`site:cryptiana.blogspot.com Colbert Gravel`): no cryptiana.blogspot.com page returned. Tomokiyo's
+   unsolved-list entry (the source of DECODE R2678's upload) is on disk under sources/cryptiana/ and was grepped on
+   24 Sept with no decipherment.
+7. Cipher Mysteries (`site:ciphermysteries.com Colbert cipher 1665 Gravel`): ciphermysteries.com/?p=7357 and
+   "17th century cipher mystery meme" (2015-11-14) -- about the 1676 "Devil's letter" meme, not Colbert or Gravel.
+No decipherment or plaintext of R2678 found in any post or comment thread. Requests: WebSearch 7, scienceblogs.de 1
+(WebFetch), archive.org 1 (advancedsearch) + be-api.us.archive.org 13 (>=1.6 s apart).
+
+## Premise check (GF-A2B-1, 3 Oct 2026)
+
+(a) Folder's own mentions -- not found: no decipherment, gloss or clear copy is mentioned for item a; DocumentsList
+"No records found" (LANE N audit above). The only clear text in the passage is the amounts and "Mr Frichmann".
+(b) Other solvers' working files -- found (context, no rendering): dbourdeau/cyphersolver (shallow clone, HEAD e8b4287,
+2 Oct 2026) `targets/colbert/NOTES.md` row a: R2678 transcribed and identified, "Not attacked (three names)";
+item 6 repeats "Not attacked". No key file, rendering or apply-key script for item a in `targets/colbert/`
+(files: control.py, solve_mono.py, solve_regions.py, ct_shared.txt work items b-c only). Correction to this file's own
+"Solver-repo check (bourdeau, 2 Oct 2026)" section: Bourdeau's "the Charost and Gravel passages are one key" refers to
+his item c (R2733, the abbé de Gravel's 1674 Mainz letter copied to Maulevrier), not to this record; his NOTES call
+item a "a different, smaller cipher". aaymeloglu/unsolved-ciphers (HEAD d2800bb, 27 Sept): R2678 only in the
+catalogue harvest (cited, not copied).
+(c) Physical neighbours -- partly found: this folder's 24 Sept capture viewed canvas f356 (the cipher recto, Gallica
+btv1b10035540v) and its address panel; Bourdeau names canvases 355-356 for ff. 349-350. A docket note read once as
+"M. Guibert" is still unresolved. The facing page and canvas 355 were not re-viewed at native resolution this pass
+(no Gallica requests in this gate-fix); no clear copy or decipherment is recorded beside it by either reader.
+(d) Recipient-side editions -- searched, not found: Colbert is the recipient; Clément's edition (status-line citation
+above) carries no Gravel letter of January 1665. The sender-side series (Gravel's dispatches from the Diet,
+Archives des Affaires étrangères, Correspondance politique Allemagne; Auerbach's *La diplomatie française et la cour
+de Saxe*/Recueil des instructions for the Diet) was not searched in this pass.
+
+## While waiting
+
+Next action that depends on nobody: re-view canvases 355-356 of btv1b10035540v at native resolution (facing page,
+docket, any slip) through `tools/gallica_folio.py`/`tools/iiif_lines.py`, then a crib test of the three enciphered
+names against the Diet of Regensburg pensioners of 1664-65 (Fürstenberg circle, Rhine League envoys) named in
+Gravel's printed dispatches.
