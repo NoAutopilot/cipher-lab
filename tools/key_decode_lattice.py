@@ -365,7 +365,7 @@ def cmd_decode(args):
     if args.shuffles:
         out["control"] = control(lat, key, lm, model, args.shuffles, args.seed, args.lam, args.beam)
     if args.power_err is not None:
-        out["power"] = power(len(lat), key, lm, model, read_confusion(args.confusion), args.power_err,
+        out["power"] = power(args.power_len or len(lat), key, lm, model, read_confusion(args.confusion), args.power_err,
                              args.power_windows, args.power_shuffles, args.seed, args.lam, args.beam)
     if args.out_prefix:
         with open(args.out_prefix + ".decode.tsv", "w", encoding="utf-8") as f:
@@ -399,6 +399,7 @@ def main(argv=None):
     d.add_argument("--shuffles", type=int, default=0); d.add_argument("--seed", type=int, default=1)
     d.add_argument("--power-err", type=float, default=None); d.add_argument("--confusion")
     d.add_argument("--power-windows", type=int, default=20); d.add_argument("--power-shuffles", type=int, default=50)
+    d.add_argument("--power-len", type=int, default=0, help="synthetic window length in signs (default: the lattice's)")
     d.add_argument("--out-prefix")
     a = ap.parse_args(argv)
     (cmd_decode if a.cmd == "decode" else cmd_from_passes)(a)
