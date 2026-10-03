@@ -1,0 +1,32 @@
+# Noailles (bishop of Acqs/Dax) Constantinople cipher, BnF fr.16142 ff.109-253 (Dec 1571-July 1574) and ff.254-275 (Gilles de Noailles 1574-76).
+# Source: S. Tomokiyo, Cryptiana, "Henry III's ciphers" page (https://cryptiana.web.fc2.com/code/henryiii.htm), table image
+# CharlesIX_Acqs2.png (fetched 3 Oct 2026, kept outside the repository; reconstructed key, Tomokiyo's own, marked "?" where he is unsure).
+# Key source class: published (Tomokiyo's modern reconstruction, credited). Glyph descriptions below are this worker's verbal
+# rendering of his drawn glyphs (FT-D, 3 Oct 2026), for reference only; the image is the authority.
+# value	homophones	glyph descriptions (Tomokiyo column order, top to bottom)
+a	3	caret ^ ; inverted T (perp) ; alpha-loop
+b	1	theta-like oval with bar
+c	3	9-like ; 9-like variant ; h-like
+d	2	theta with tail ; x
+e	4	6/delta-like ; # ; double-S ; long-s variant
+f	2	7 ; open square (U)
+g	3	|- (tee right) ; rectangle ; dotted rectangle
+h	1	tilde-hook
+i	4	T ; mirrored-tau cross ; reversed 3 ; omega
+l	2	infinity ; triangle
+m	2	s-hook ; 4-mirrored ; plus H? (uncertain)
+n	3	z-crossed ; A-crossed ; Y? (uncertain)
+o	5	# hash ; pi-like II ; phi ; lambda ; b-cross
+p	2	4 ; E/epsilon
+q	1	circled-n
+r	2	triple-bar (iii crossed) ; e-loop ; e-loop variant
+s	3	Y ; phi-stem ; b-crossed
+t	1	alpha-like (fish)
+u	5	omega-hook ; r-hook ; g-hook ; ld ; E-H? ; &-like
+x	2	X-cross ; v? (uncertain)
+y	1	f-cross
+z	1	10
+double	3	I-bar ; double-o ; E-cross (doubling mark)
+null	14	tu ; to ; o ; 6 ; ff ; l ; J ; lambda ; tie ; balloon ; 4-flag ; up arrow ; d-loop ; J-hook ; m-box ; X-bowtie
+# Nomenclator (Tomokiyo): armee aux bassa bien catholique? con de dict ent et les-Espagnols? faict faire grand-seigneur le les
+# magestez ont par que qui roy sieur tous vaisseau Venetiens vos vous pour/est/obtenu? -- 33 code glyphs, see the image.
