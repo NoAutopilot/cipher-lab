@@ -1,4 +1,5 @@
 open
+*The Nicholas Papers* vol. 4 (Camden 3rd ser. 31, IA `publications31royauoft`), CSP Domestic 1659-60 (Green, IA `sim_great-britain-public-record-papers-domestic-commonwealth_1659-1660`) and *Calendar of the Clarendon State Papers* vol. 4 (IA `calendarofclaren04bodluoft`), each grepped whole by this worker 3 Oct 2026 for Sebastian/Fuentarabia, 'L. R.' and 6/16 Aug 1659 and read at the August 1659 entries (Nicholas Papers iv pp. 175-181; CSPD 1659-60 pp. 78-82; Cal. Clar. iv pp. 309-322): no Nicholas letter to St Sebastian of 6/16 Aug 1659 is printed or calendared; the nearest is CSPD's '[Sec. Nicholas] to M. de Marces' of [6-7 Aug.], a different addressee (an earlier CSPD 1659-60 entry addresses him '[Sec. Nicholas] to M. de Marces, Palais Royal, Paris').
 
 # Secretary of State Nicholas to Sir L.R. at San Sebastián, in cipher — TNA SP 77/32/289
 
@@ -115,3 +116,38 @@ consolidated TNA batch, ASKS row 73).
 - S: search BL's catalogue (searcharchives.bl.uk?format=json, live per the playbook even though BL's IIIF images are dead) for Egerton MS 2550's full contents list, for a key entry under 'Sir L.R.'/'San Sebastian'.
 - S: re-search Nicholas Papers vol. 4 (already fetched) for 'Flanders' or another correspondent term, beyond only 'Sebastian'/'L.R.'/'cipher' tried so far.
 - S: re-verify sp105-paget-1693's 'no Interregnum cipher table in SP 106' finding against SP 77/32's own siblings for a companion key filed elsewhere, not independently re-checked this pass.
+
+## Web and blog check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): `Edward Nicholas 1659 cipher Flanders`, domain-restricted to the three blogs --
+**Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne): no hit; **Cipher Mysteries** (ciphermysteries.com): only the
+fifteenth-century-cryptography and Dorabella pages; **Cryptiana blog** (cryptiana.blogspot.com and Tomokiyo's
+cryptiana.web.fc2.com): no hit. A combined query naming the blogs (`site:cryptiana.blogspot.com Lockhart OR Roe OR
+Nicholas OR Thurloe cipher 1638 1657 1659`) returned Wikipedia (Sealed Knot, Thurloe), a Camden Third Series preface on
+Cambridge Core and TNA catalogue pages, none naming SP 77/32/289. Earlier sweep (24 Sept 2026): `Nicholas "San Sebastian"
+cipher 1659 "SP 77/32"`, `"Nicholas cipher" "Sir L.R."`, `"St. Sebastian" cipher Nicholas 1659 Flanders` -- Bourdeau's
+Boswell 1643 page (a different letter) and nothing on this item. No comment thread found that discusses it. Solver
+repositories re-cloned shallow 3 Oct 2026 and grepped (`SP ?77/3[0-9]`, `Nicholas`): Bourdeau's `targets/ormonde/NOTES.md`
+cites a Nicholas-to-Ormond 1644 letter with interlinear decipherment (different letter, different year), Aymeloglu's
+`royalist-1646/README.md` cites the King's 1646 letters to Nicholas -- neither is this item.
+
+## Premise check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment or key: **found, not this item** -- Warner's note (Nicholas Papers iv
+introduction) that keys survive in BL Egerton MS 2550 (ff. 24, 78) for other correspondents; no decipherment of f.289 is
+mentioned anywhere in the folder. (b) Other solvers' working files: **not found** (the Ormond 1644 and royalist 1646
+folders above concern other letters; no key run on this text). (c) Physical neighbours: **unreachable** -- SP 77/32/289
+is `digitised: false` (Discovery C7970624); the piece's term-sweep (24 Sept) found no other cipher or decipher item in
+SP 77/32. (d) Recipient side: **not found** -- the St Sebastian end (Bennet at Fuentarabia, Holder at St Sebastian,
+writing to Hyde) is calendared in Cal. Clar. iv pp. 309-322 for Aug 1659 with no Nicholas letter of 6/16 Aug and no "L.R.";
+the intercepted royalist "French correspondence" in CSPD 1659-60 (SP 18/204) carries Nicholas's and Hyde's letters to
+Marces for the same week (pp. 80-82; Hyde's has "Italics in cypher, undecyphered"), not this one. Status unchanged: open.
+
+## While waiting (3 Oct 2026, GF4-BATCH7)
+
+Waits on: the TNA page copy of SP 77/32/289 (REQUEST.md; consolidated TNA batch, ASKS row 73).
+
+- S: grep CSPD 1659-60's index and Cal. Clar. iv's index (both already fetchable from IA) for royalist aliases and agents at St Sebastian in Aug 1659 (Holder, Bennet, Peter Wilson's house) to identify "Sir L.R.", ~$1.
+
+Requests this pass (shared with the sibling targets where noted): archive.org 5 (advancedsearch 2, djvu.txt 3),
+github.com 2 shallow clones (shared), WebSearch 2 for this target.
