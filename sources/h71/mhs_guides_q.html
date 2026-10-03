@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Collection Guides - Massachusetts Historical Society</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<script type="text/javascript" language="javascript" src="/incl/js/mootools-core-1.4.5.js"></script>
+	<script type="text/javascript" language="javascript" src="/incl/js/mootools-more-1.4.0.1.js"></script>
+
+	<!--mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- miller font-->
+	<link href="//cloud.webtype.com/css/78d7da92-c465-4bed-9138-252f993e9c89.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/2012/bbcms_templates/summer/surrogate/header-nav.css" />
+	<link href="/collection-guides/css/collection-guides.css?v=147" rel="stylesheet" type="text/css" />
+	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,700' rel='stylesheet' type='text/css' />
+	<script>
+		var BROWSER_CACHE_BREAKER = "147";
+	</script>
+	<script src="/incl/js/viv-v00.js"></script>
+	<script src="/incl/js/dialogbox.js"></script>
+	<script src="/collection-guides/crowd-whitelist.js?v=147"></script>
+
+	<script>
+
+		function prepPrint(){
+
+
+			//check if we on the findingaid display page and need to prep
+			var fa = document.querySelector('.findingAid');
+			if(fa) {
+				//remove all collapsed class
+				var set = document.querySelectorAll('.collapsed');
+				for(var i =0; i<set.length; i++){
+					set[i].removeClass('collapsed');
+				}
+
+				//message preparing print
+				diab.title.innerHTML = "Print";
+				diab.addString('<p>Preparing this collection guide for printing, please wait...</p>');
+				diab.open();
+
+
+				//after a delay, measure height, and continue
+				setTimeout(function(){
+					var footy = $("MHSfooter").getPosition().y;
+
+					//calc no of pages
+					var p = (footy * .001333); //based on graphing the relationship of our print css to the page pixel height
+
+					//if more than, say, 20, alert user
+					if(p > 20) {
+						diab.addString("<p><b>Note:</b> this collection guide will be approximately <b>" + Math.floor(p) + "</b> pages long. Click print if you wish to continue.</p><p>Your browser is capable of creating a preview of the print output, with which you might choose to print only some of the pages. To see the preview, cancel this box and use the browser's print menu.</p><button onclick='javascript: window.print(); diab.close();'>Print</button> &nbsp; <button onclick='javascript: diab.close();'>Cancel</button>");
+					}
+
+					//otherwise, just close dialog and print
+					else {
+
+						diab.addString("");
+						diab.close();
+
+						window.print();
+					}
+				}, 500);
+			}
+
+			//normal page, just print
+			else window.print();
+		}
+
+
+		window.addEventListener('DOMContentLoaded', function(){
+			$("printButton").addEventListener("mouseup", function(){prepPrint();});
+		}, false);
+	</script>
+<script src="/collection-guides/js/btt.js"></script>
+
+<style type="text/css">
+	
+	.gutter {
+		float: right;
+		padding-top: 78px;
+		width: 280px;
+	}
+
+
+	article {
+		min-height: 90vh;
+	}
+
+	#titleSearch {
+		padding: 5px 10px;
+		font-size: 18px;
+		width: 17em;
+		display: inline-block;
+	}
+
+	.row {
+		margin: 1rem 0;
+	}
+
+	.row.buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.row label {
+		vertical-align: middle;
+		line-height: 1.5;
+		font-size: 16px;
+		display: inline-block;
+		//padding: 0 0 10px 10px;
+		margin-right: 1rem;
+	}
+
+	.row input[type="radio"] {
+		vertical-align: baseline;
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		padding: 0;
+	}
+	.row input[type="radio"] + label {
+		padding-left: 2px;
+		padding-bottom: 0;
+	}
+
+	.choices button {
+		font-size: 18px;
+		padding: 8px 16px;
+		border-radius: 4px;
+		border: none;
+		margin-right: 1rem;
+	}
+
+
+	.radioButtons {
+		display: inline-block;
+		padding: 6px 10px;
+		border-radius: 10px;
+		background: #e8e8e8;
+		border: 1px solid #808080;
+	}
+
+
+	.selectedall .all,
+	.selectedfa .fa,
+	.selectedfap .fap,
+	.selectedfas .fas,
+	.selectedfao .fao {
+		border: 2px solid #b90000;
+		background: #b90000;
+		color: white;
+		font-weight: bold;
+	}
+
+
+	
+	.legend {
+		background: #e7e7e7;
+		padding: 1rem;
+	}
+	
+	.legend h4{
+		text-transform: uppercase;
+		color: black;
+		display: block;
+		font-weight: bold;
+		padding-bottom: 1rem;
+	}
+	
+	.legend label {
+		float: left;
+		clear: left;
+		width: 80px;
+		border-top: 1px solid #666666;
+	}
+	
+	.legend label + p {
+		margin-left: 88px;
+		font-size: 13px;
+	}
+	
+	.legend label.digital {
+		background: url(/collection-guides/images/digitized.png) 0 4px no-repeat;
+		padding-left: 14px;
+		font-size: 12px;
+		color: #0044ff;
+	}
+	
+	
+	article {
+		padding-right: 350px;
+	}
+	
+
+	.letterList a {
+		display: inline-block;
+		padding: 0.25rem 0.5rem;
+		margin: 0.15rem;
+		border: 1px solid #a0a0a0;
+	}
+
+
+	article li a:link {
+		margin-top: 1rem;
+		font-size: 18px;
+	}
+
+
+	article section h4 {
+		display: block;
+	}
+
+	article ul {
+		margin-left: 2rem;
+		margin-top: 3rem;
+	}
+	
+	.letterJump li {
+		margin-bottom: 4px;
+	}
+	
+	article li.digital a:link {
+		padding-right: 15px;
+	}
+	
+	article li.digital a:after,
+	article li a.digital:after {
+		content: "Digital content";
+		text-transform: uppercase;
+		color: #0044ff;
+		font-size: 12px;
+		padding-left: 24px;
+		background: url(/collection-guides/images/digitized.png) 12px 50% no-repeat;
+	}
+
+	.digitalOnly {
+		width: 25px;
+		height: 25px;
+		padding: 0;
+		margin-right: 5px;
+	}
+
+	.digitalOnly.off svg {
+		display: none;
+	}
+	
+</style>
+
+</head>
+<body class="browse">
+	<div id="masterc">
+			<h1><a id="mhslogo" href="/"><img src="/collection-guides/images/masshisttitle.png" width="310" height="24" alt="Massachusetts Historical Society"/></a>COLLECTION GUIDES<img src="/collection-guides/images/cgicon-14px.png" width="14" height="14"/></h1>
+<nav class="local">
+	<div class="extras">
+		<a href="/collection-guides/help">Help</a>
+		<a id="printButton" href="#"><img src="/collection-guides/images/print.png" width="16" height="14"/> Print</a>
+		<a href="/abigail">Library Catalog</a>
+	</div>
+
+	<a href="/collection-guides/">Search</a>
+	<a href="/collection-guides/browse/manuscript-guides">Browse Collection Guides</a>
+
+</nav>
+		
+	
+		<div class="gutter">
+			<div id="legend" class="legend">
+				<h4>Legend</h4>
+				<label class="digital">Digital Content</label>
+				<p>This guide links to digital content that is viewable on our website. Collections may be partially or completely digitized.</p>
+			</div>
+		</div>
+	
+		<article>
+			
+			<div id="browseApp">
+				<h2>Browse Collection Guides</h2>
+			
+				<div class="form">
+					<div :class="'selected' + set" class="row choices">
+						<button @click="chooseSet('all')" class="all">All Guides</button>
+						<button @click="chooseSet('fa')" class="fa">Manuscript Guides</button>
+						<button @click="chooseSet('fap')" class="fap">Photograph Guides</button>
+						<button @click="chooseSet('fas')" class="fas">Subject Guides</button>
+						<button @click="chooseSet('fao')" class="fao">Other Guides</button>
+					</div>
+
+					<div class="row buttons">
+						<button type="checkbox" name="digital" class="digitalOnly" 
+							:class="digital == 'digital' ? 'on' : 'off'"
+							@click="digital = digital == 'digital' ? '' : 'digital'; search()"
+							>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+							</svg></button>
+							<label for="digital" @click="digital = digital == 'digital' ? '' : 'digital'; search()">Limit to guides with  digital content</label>
+
+						<span class="radioButtons">
+							<input type="radio" id="sortAlpha" value="false" name="sort" @click="resort(false)"/><label for="sortAlpha">sort alphabetically</label>
+							<input type="radio" id="sortDate" value="true" name="sort" @click="resort(true)"/><label for="sortDate">sort by collection start date</label>
+						</span>
+					</div>
+
+
+					<div class="row">
+						<label>Find a guide by title</label>
+						<input v-model="title" id="titleSearch" @keyup="titleSearch" placeholder="Type the first few letters of the title"/>
+					</div>
+
+
+				</div>
+
+
+				<ul class="guideList">
+					<li v-for="guide of guides" :class="guide.digital_content">
+						<span v-if="sortDate && !guide.date_when">[undated]</span>
+						<a :href="guide.resource_uri">{{guide.title[0]}}</a>
+					</li>
+				</ul>
+
+			</div>	
+
+
+
+		</article>
+
+<script>
+	var type = "";
+</script>
+<!-- <script src="/solr/paginator.js?v=1"></script> -->
+<script src="/solr/solr-direct.js?v=1"></script>
+<script>
+	let Searcher = new SolrDirect();
+
+	addBTT();
+</script>
+<script type="module">
+
+	import App from "/collection-guides/js/browse-app.js?v=";
+	import { createApp } from '/lib/vue3.2.41-dev.js?v=';
+
+	const BrowseApp = createApp(App);
+	BrowseApp.mount("#browseApp");
+</script>
+
+<div id="MHSfooter"></div>
+<script>
+ function mhsASSetup(){
+  var mhsass = new AntiSocial();
+  mhsass.findButtons("sharing-icons");
+ }
+</script>
+<script src="/lib/ui-library/antisocial-v2.js" async="true" onload="mhsASSetup();"></script>
+<script>
+	var cc_localStorageKey = "TRACKINGCONSENT";
+	var cc_siteUsesGA = true; // to load GA
+	var cc_gaAccountID ='G-1174Q9G3RC';
+</script>
+<script src="/lib/cookie-consent.js?v=2f" async="true"></script>
+<script data-goatcounter="https://www.masshist.org/analytics"
+        async src="/lib/count.js"></script>
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://masshist.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/masshist.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+</div>
+</body>
+</html>

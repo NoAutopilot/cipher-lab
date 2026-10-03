@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<style>
+				[v-cloak]{
+					display: none;
+				}
+		</style>
+
+		<title>Search the MHS Website</title>
+		<script src="/mhsfront/js/common.js?v=6"></script>
+		<script src="/mhsfront/js/strapicaller.js?v=6"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/search/css/style.css?v=6"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700,500italic,300italic,600italic,600&subset=latin" media="all" />
+<link rel="stylesheet" href="/mhsfront/style/css/global_header.css?bcbv=58"/>
+<script src="/mhsfront/js/theLatest.js?bcbv=58"></script>
+<script src="/mhsfront/js/mainNav.js?bcbv=58"></script>
+	</head>
+	<body class="wide">
+	<header id="mhsGlobalHeader" class="mhsGlobalHeader">
+	<div class="innerBG">
+		<div id="mhsGlobalBG"></div>
+		<nav class="mhsSecondary">
+			<a class="abigail" href="http://balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First">Library Catalog</a><a href="https://aeon.masshist.org/">Portal 1791</a><a class="theLatest" href="/#the_latest">The Latest</a> 
+			<a href="/search/index.php" aria-label="Search" class="mhsSearch"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></a>
+		</nav>
+		<button id="mhsGlobalHamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+		<a id="mhsLogo" href="/"></a>
+		<nav class="mhsPrimary" id="mhsGlobalPrimary">
+			<button id="mhsPrimaryClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+
+			<div class="topButtons">
+				<a href="/" aria-label="Home" class="mhsHome"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
+				<a class="portal" href="https://aeon.masshist.org/">Portal 1791</a>
+				<a href="/search" aria-label="Search" class="mhsSearch"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></a>
+			</div><button class="mainItem" >Visit Us<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemVisitUs">
+<div class="menuContent"><div class='col'><p><a href="/visit">Visit Overview</a></p><p><a href="/visit/hours-and-admission">Hours and Admission</a></p><p><a href="/visit/directions-and-parking">Directions and Parking</a></p><p><a href="/about">About the MHS</a></p><p><a href="/COVID-protocols">COVID-19 Protocols</a></p></div><div class='col'><p><a href="/allevents#">Calendar of Events</a></p><p><a href="/library">Library</a></p><p><a href="/exhibitions">Exhibitions</a></p><p><a href="/visit/frequently-asked-questions">FAQ</a>&nbsp;</p><p><a href="/contact">Contact Us</a></p></div><div class='col'><h3>Who We Are</h3><p><iframe width="320" height="180" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/LhfcwZ-w_kU?autoplay=0&amp;start=0&amp;rel=0"></iframe></p></div></div></div>
+<button class="mainItem" >Events<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemEvents">
+<div class="menuContent"><div class='col'><h3><a href="/events">Calendar of Events</a></h3><p class="loadContent">[[latest_events]]</p><p class="loadContent"><a href="/allevents#">View Full Calendar</a></p></div><div class='col'><h3>Types of Events&nbsp;</h3><p><a href="/gala" target="_blank" rel="noopener noreferrer">Making History Gala</a></p><p><a href="/events/series/250" target="_blank" rel="noopener noreferrer">American Revolution 250</a></p><p><a href="/allevents?category=Author%20Talk">Author Talks</a></p><p><a href="/allevents?category=Building%20Closed">Building Closures</a></p><p><a href="/events/series/donor-member">Donors and Member Events</a></p><p><a target="_blank" rel="noopener noreferrer" href="https://www.masshist.org/member-week">Member Week</a></p><p><a href="/events/series/seminars">Seminars</a></p><p><a href="/events/series">Series</a></p><p><a href="/allevents?category=Teacher%20Workshop">Workshops</a></p></div><div class='col'><h3>Videos</h3><p><a class="loadContent" href="#">[[videos]]</a></p><p><a href="/video">See more videos</a></p></div></div></div>
+<button class="mainItem" >Collections<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemCollections">
+<div class="menuContent"><div class='col'><p><a href="/collections">Collections Overview</a></p><p><a href="/highlights">Collection Highlights</a></p><p><a href="/digital-collections">Digital Collections</a></p><p><a href="/collections/donate-collection">Donate to the Collection</a></p><p><a href="/collections/our-collections">Our Collections</a></p><p><a href="/library/permissions">Permissions and Licensing</a></p><p><a href="/library">Use the Library</a></p></div><div class='col'><h3>PRESIDENTIAL PAPERS</h3><p><a href="/adams/adams-family-papers">Adams Family Papers</a></p><p><a href="/collections/jefferson">Thomas Jefferson Papers</a></p><p><a href="/collections/other-presidential-papers">Other Presidents</a></p></div></div></div>
+<button class="mainItem" >Research<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemResearch">
+<div class="menuContent"><div class='col'><h3>Scholarly Community</h3><p><a href="/research">Research Overview</a></p><p><a href="/research/seminars">Seminars</a></p><p><a href="/gomesprize">Peter J. Gomes Memorial Book Prize</a></p><p><a href="/research/conferences">Conferences</a></p><p><a href="/research/fellowships">Fellowships</a></p><p><a href="/research/research-fellows-alumni-network">Research Fellows Alumni Network</a></p></div><div class='col'><h3>The Collections</h3><p><a href="/collection-guides">Collection Guides</a></p><p><a href="/research/library-catalogs">Library Catalogs</a></p><p><a href="/features/underrepresented">Underrepresented Communities</a></p><p><a href="/research/collection-guides">Subject Guides</a></p></div><div class='col'><h3>The Library</h3><p><a href="/research/contact-librarian">Contact a Librarian</a></p><p><a href="/visit/hours-and-admission">Hours</a></p><p><a target="_blank" rel="noopener noreferrer" href="https://libanswers.masshist.org/">Library FAQ</a></p><p><a target="_blank" rel="noopener noreferrer" href="https://aeon.masshist.org">Portal 1791</a></p><p><a href="/research/reference-services">Reference Services</a></p><p><a href="/research/reproduction-services">Reproduction Services</a></p><p><a href="/library">Use the Library</a></p><p><a href="/library/residency">Residency</a></p></div></div></div>
+<button class="mainItem" >Education<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemEducation">
+<div class="menuContent"><div class='col'><h3>History and Civic Learning</h3><p><a href="/education">Our Impact</a></p><p><a href="/education">Contact Us</a></p></div><div class='col'><h3>Massachusetts History Day</h3><p><a href="/masshistoryday">Learn More</a></p><p><a href="/masshistoryday/contestinfo">Contest Information</a></p><p><a target="_blank" rel="noopener noreferrer" href="https://www.masshist.org/masshistoryday/themepage">MHS Resources: 2026 Theme</a></p><p><a href="/masshistoryday/researchlinks">Research Links</a></p><p><a href="/masshistoryday/updates">Updates &amp; Events</a></p></div><div class='col'><h3>Classroom Resources</h3><p><a target="_blank" rel="noopener noreferrer" href="http://www.historysource.org">History Source</a></p><p><a href="/digital-collections">Digital Collections</a></p><p><a href="/research/contact-librarian">Ask a Librarian</a></p></div><div class='col'><h3>Teacher and Student Programs</h3><p><a href="/education/student-programs-and-class-visits">Student Programs &amp; Class Visits</a></p><p><a href="/teacher-and-student-fellowships">Student &amp; Teacher Fellowships</a></p><p><a href="/allevents?category=Teacher Workshop">Teacher Workshops</a></p></div></div></div>
+<button class="mainItem" >Publications<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemPublications">
+<div class="menuContent"><div class='col'><p><a href="/publications">Publications Home</a></p><p><a href="/adams_editorial">Adams Papers Editorial Project</a></p><p><a href="/publications/digital-editions">Digital Editions</a></p><p><a href="/publications/mhs-newsletters">MHS Newsletters</a></p><p><a href="/publications/mhs-publishes">The MHS Publishes</a></p></div></div></div>
+<button class="mainItem" >Digital MHS<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemDigitalMHS">
+<div class="menuContent"><div class='col'><h3>Object of the Month</h3><p><a class="loadContent" href="#">[[oom]]</a></p></div><div class='col'><p><a href="/digital-mhs">Digital Content Overview</a></p><p><a href="/beehiveblog">Blog</a></p><p><a href="/highlights">Collection Highlights</a></p><p><a href="/digital-collections">Digital Collections</a></p><p><a href="/collections/digital-initiatives">Digitial Initiatives</a></p><p><a href="/podcast">Podcast</a></p><p><a href="/video">Videos&nbsp;</a></p></div><div class='col'><h3>Videos</h3><p><a class="loadContent" href="#">[[videos]]</a></p></div></div></div>
+<button class="mainItem" >Support the MHS<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+</button>
+<div class="menuSet navItemSupporttheMHS">
+<div class="menuContent"><div class='col'><h3><a href="/support">SUPPORT THE MHS</a></h3><p><a href="/support/mhsfund">Give to the MHS and Become a Member</a></p><p><a href="/support/visionary-circle-mhs-planned-giving-program">Become a Visionary Circle Member</a></p><p><a href="/collections/donate-collection">Donate an Item to the Collection</a></p><p><a href="/gala" target="_blank" rel="noopener noreferrer">Buy Tickets for the Making History Gala</a></p></div></div></div>
+</nav></div></header>
+	<div class="content">
+		<div class="iwrapper searchApp" id="searchApp" v-cloak>
+
+			<h1>Search the MHS Website <span class="options"><a href="http://balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First">Search the Library Catalog</a></span></h1>
+
+			<div class="searchChoices">
+				<div class="formRow">
+					<input v-model="params.terms" class="searchTerms" type="text" placeholder="Keyword or phrase in quotes..."
+						@keyup.enter="search()"
+					/>
+					<button @click="search()" class="searchGo">Search</button>
+				</div>
+			</div>	
+			
+			<div v-if="errorMessage.length">{{errorMessage}}</div>
+
+
+			<div v-if="searched" class="hits">{{hitCount}} {{hitCount > 1 ? "results" : "result"}}
+				<span tabindex="0" class="tip"
+					@click="contextHidden = !contextHidden"
+					@keyup.enter="contextHidden = !contextHidden"
+				>about these results</span>
+			</div>
+
+			<div :class="searched && contextHidden ? 'collapsed' : ''" class="context">
+				<div class="inner">
+					<h3>What am I searching?</h3>
+					<p><strong>This tool searches almost everything on our website</strong>, including: individual items that have been digitized along with descriptive metadata; all digital publications; our events calendar; our blog; informational web pages; our online exhibitions; our collection guides.</p>
+					<p><strong>Most of the Society's collections have not been digitized</strong>, and so will not be found with the tool on this page. You can search all our collections with our <a href="http://balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First">Library Catalog</a>.</p>
+				</div>
+			</div>
+
+			<div class="results">
+
+				<div class="tools">
+					<div v-if="showFacets" class="facets">
+						<div v-if="selectedFacets.length" class="limits">
+							<h4>Limiting to</h4>
+							<span v-for="facet of selectedFacets">
+								<b>{{facetName(facet.name)}}</b>
+								<a tabindex="0" 
+									@click="removeFacet(facet.name, facet.type)"
+									@keyup.enter="removeFacet(facet.name, facet.type)"
+									class="clickable material-symbols-outlined">cancel
+								</a>
+							</span>
+						</div>
+
+												<div v-if="facets.features.length">
+							<h4>Refine by category</h4>
+							<span v-for="facet of facets.features">
+								<template v-if="facet.count < hitCount">
+									<b	@click="refine('f', facet.name)" 
+										@keyup.enter="refine('f', facet.name)"
+										tabindex="0" class="clickable"
+									>{{facetName(facet.name)}}</b> <u>{{facet.count}}</u>
+									<i @click="placeInfoBox" @keyup.enter="placeInfoBox" :data-name="facet.name" tabindex="0">?</i>
+								</template>
+							</span>
+						</div>
+
+						<div v-if="facets.group_name.length">
+							<h4>Refine by group</h4>
+							<span v-for="facet of facets.group_name">
+								<template v-if="facet.count < hitCount">
+									<b	@click="refine('g', facet.name)" 
+										@keyup.enter="refine('g', facet.name)" 
+										tabindex="0" class="clickable"
+									>{{facetName(facet.name)}}</b> <u>{{facet.count}}</u>
+									<i @click="placeInfoBox" @keyup.enter="placeInfoBox" :data-name="facet.name" tabindex="0">?</i>
+								</template>
+							</span>
+						</div>
+
+						<button @click="resetAll" @keyup.enter="resetAll" tabindex="0">reset all</button>
+					</div>
+
+					<div class="discovery">
+						<h4>More discovery tools</h4>
+						<a href="http://balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First">Search the Library Catalog</a>
+						<a href="/collection-guides">Search Collection Guides</a>
+					</div>
+
+					<div class="infoBox " :class="showInfoBox ? 'show': ''" id="infoBox">
+						<div><p>This is the info box</p></div>
+					</div>
+				</div>
+
+				<div class="docsList">
+
+					<div id="loadingAni" v-if="showLoading">
+						<div class="sk-cube-grid">
+							<div class="sk-cube-grid-col">
+								<div class="sk-cube sk-cube1"></div>
+								<div class="sk-cube sk-cube2"></div>
+								<div class="sk-cube sk-cube3"></div>
+							</div>
+							<div class="sk-cube-grid-col">
+								<div class="sk-cube sk-cube4"></div>
+								<div class="sk-cube sk-cube5"></div>
+								<div class="sk-cube sk-cube6"></div>
+							</div>
+							<div class="sk-cube-grid-col">
+								<div class="sk-cube sk-cube7"></div>
+								<div class="sk-cube sk-cube8"></div>
+								<div class="sk-cube sk-cube9"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<template  v-if="!showLoading">
+
+						<div v-for="doc in documents" class="document" :class="doc.resource_group_name">
+							<!-- image -->
+							<a class="image" v-if="doc.resource_uri.includes('youtube.')" @click="openModalViewer(doc.resource_uri)" @keyup.enter="openModalViewer(doc.resource_uri)"><img v-if="doc.ref_image_url.length" :src="formRefUrl(doc.ref_image_url)"/></a>
+							<a class="image" v-else :href="doc.resource_uri" ><img v-if="doc.ref_image_url.length" :src="formRefUrl(doc.ref_image_url)"/></a>
+
+							<!-- body -->
+							<div v-if="doc.featureTokens.length > 0" class="docFacets">
+								<template v-for="t in doc.featureTokens">
+									<span v-if="t.length" :class="t" class="feature">{{facetName(t)}}</span>
+								</template>
+							</div>
+							<p v-if="doc.resource_group_name == 'events' && doc.date_when">{{formatDate(doc.date_when)}}</p>
+
+
+							<a tabindex="0" class="mainLink" v-if="doc.resource_uri.includes('youtube.')" @click="openModalViewer(doc.resource_uri)" @keyup.enter="openModalViewer(doc.resource_uri)">
+								<h3>{{doc.title[0]}}</h3>
+								<p>Watch video</p>
+							</a>
+							<a tabindex="0" class="mainLink" v-else :href="doc.resource_uri">
+								<h3>{{doc.title[0]}}</h3>
+								<p v-if="doc.highlighting[0].length && doc.resource_group_name != 'search-card'" v-html="formatBody(doc.highlighting[0])"></p>
+								<p v-else v-html="formatBody(doc.doc_beginning, doc.resource_group_name)"></p>
+							</a>
+
+							<p class="source" v-if="doc.resource_group_name.length && doc.resource_group_name != 'search-card'">From: <a :href="linkFromResourceGroup(doc.resource_group_name)">{{formatResourceGroupname(doc.resource_group_name)}}</a></p>
+						</div>
+					</template>
+				</div>
+			</div>
+
+
+			<div id="modalMask" @click="hideViewer()"></div>
+			<div id="modalViewer">
+				<a tabindex="0" @click="hideViewer()" @keyup.enter="hideViewer()" class="closer">×</a>
+				<div id="modalContent"></div>
+			</div>
+
+
+		</div>
+
+
+		<div class="pagination" id="pagination"></div>
+
+
+
+	</div><!--// .content -->
+	<div id="MHSfooter"></div>
+<script>
+ function mhsASSetup(){
+  var mhsass = new AntiSocial();
+  mhsass.findButtons("sharing-icons");
+ }
+</script>
+<script src="/lib/ui-library/antisocial-v2.js" async="true" onload="mhsASSetup();"></script>
+<script>
+	var cc_localStorageKey = "TRACKINGCONSENT";
+	var cc_siteUsesGA = true; // to load GA
+	var cc_gaAccountID ='G-1174Q9G3RC';
+</script>
+<script src="/lib/cookie-consent.js?v=2f" async="true"></script>
+<script data-goatcounter="https://www.masshist.org/analytics"
+        async src="/lib/count.js"></script>
+	<script src="/solr/solr.js?v=6"></script>
+	<script src="/mhsfront/js/marked.js"></script>
+	<script type="module">
+		import { createApp } from '/lib/vue3.2.41-dev.js';
+		import searchApp from "./js/search-app.js?v=6";
+
+		const App = createApp(searchApp);
+		App.mount("#searchApp");
+
+	</script>
+
+	<div style="display: none">
+		<!-- the little info boxes for the facets-->
+		<div id="transcription">
+			<div>
+				<h3>Transcription</h3>
+				<p>Digitized text representing the text of the physical item is available.</p>
+			</div>
+		</div>
+
+		<div id="image">
+			<div>
+				<h3>Image</h3>
+				<p>The web resource includes an image representing the physical item; the item is digitized.</p>
+			</div>
+		</div>
+
+		<div id="manuscript">
+			<div>
+				<h3>Manuscript</h3>
+				<p>An original item in the collection that is a handwritten letter, map, diary, or volume.</p>
+			</div>
+		</div>
+
+		<div id="photograph">
+			<div>
+				<h3>Photograph</h3>
+				<p>An original item in the collection that is a photograph, daguerreotype, or other visual material involving a photographic process.</p>
+			</div>
+		</div>
+
+		<div id="artwork">
+			<div>
+				<h3>Work of Art</h3>
+				<p>A sculpture, painting, drawing, silhouette, or other visual artwork. Note: does not include photographs.</p>
+			</div>
+		</div>
+
+		<div id="printed">
+			<div>
+				<h3>Printed</h3>
+				<p>An original item in the collection that is a book, pamphlet, newspaper, broadside, or other form of printed material.</p>
+			</div>
+		</div>
+
+		<div id="map">
+			<div>
+				<h3>Map</h3>
+				<p>An original item in the collection that is a map (either printed or handwritten) or an architectural plan.</p>
+			</div>
+		</div>
+
+		<div id="digitized">
+			<div>
+				<h3>Digitized Items</h3>
+				<p>Individual items that have been digitized and described and are included in topical online presentations.</p>
+			</div>
+		</div>
+
+
+		<div id="artifact">
+			<div>
+				<h3>Artifact</h3>
+				<p>An original item in the collection that is an object, a coin, a medal, furniture, or paper currency.</p>
+			</div>
+		</div>
+
+
+		<div id="nuview">
+			<div>
+				<h3>Featured Items</h3>
+				<p>Items from a database of individual manuscripts, paintings, artifacts, works of art, and other types that have been digitized and are included in topical online presentations.</p>
+			</div>
+		</div>
+
+
+		<div id="publications">
+			<div>
+				<h3>Publications</h3>
+				<p>A full-text publication or authoritative transcription of a manuscript collection.</p>
+			</div>
+		</div>
+
+
+		<div id="events">
+			<div>
+				<h3>Events &amp; Programs</h3>
+				<p>Past and future MHS events and programs, including author talks, seminars, exhibition tours, teacher workshops, and more.</p>
+			</div>
+		</div>
+
+
+		<div id="video">
+			<div>
+				<h3>Videos</h3>
+				<p>Our videos include recordings of past events and programs, interviews with historians and authors, and explorations of our collections with our knowledgeable staff.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		var cc_localStorageKey = "TRACKINGCONSENT";
+		var cc_siteUsesGA = true; // to load GA
+		var cc_gaAccountID ='G-1174Q9G3RC';
+	</script>
+	<script src="/lib/cookie-consent.js?v=2f" async="true"></script>
+<script data-goatcounter="https://www.masshist.org/analytics"
+        async src="/lib/count.js"></script>
+
+</body>
+</html>

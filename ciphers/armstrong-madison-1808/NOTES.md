@@ -3734,3 +3734,54 @@ P(null>=obs) 0.207. Maximal set (every 17xx reading, 9 values): overlap 1, null 
 chance; H68 fails its gate (p99).** H69 (align the glosses as known plaintext onto the target) is not licensed and is dropped. A
 by-product for whoever extends THE=972: f.0390 carries period glosses over 17xx groups (1716 'Aranjuez'?, 1717 in "and I wait",
 "and abandoned"), i.e. THE=972 entries above the tables' current ceiling -- out of this target's scope.
+
+## H71 catalogue retry (ARM-A-H71)
+
+3 Oct 2026, 19:22-19:28 UTC (clock read). Worker ARM-A-H71 (account 1, LANE-ARM-A). H64's five catalogue reads (28 Sept)
+retried once each, per host in order: plain curl with the descriptive UA; `tools/browser_fetch.js`; Wayback CDX + `if_`.
+Saved pages: `sources/h71/` (HTML only).
+
+| catalogue | curl | browser_fetch.js | Wayback | result |
+|---|---|---|---|---|
+| archives.nypl.org/mss/6743 (MssCol 6743) | 403 | Akamai "Access Denied" (301 B) | CDX reset (curl 35), twice; availability API on archive.org (200) says a capture exists: `web.archive.org/web/20260607012625/https://archives.nypl.org/mss/6743` | not opened |
+| discover.hsp.org, 'Armstrong, John, 1758-1843' | 403 | Cloudflare "Just a moment..." | no capture of a search URL (availability API) | not opened |
+| corsair.themorgan.org, same heading | 403 | Cloudflare "Attention Required!" | only the home page captured (2025-07-13) | not opened |
+| researchworks.oclc.org/archivegrid/collection/data/81461497 (Livingston microfilm) | 403 | Cloudflare "Just a moment..." | no capture (availability API) | not opened |
+| MHS ABIGAIL (balthazaar.masshist.org Voyager) | **200, opens** | -- | -- | **read** |
+
+**MHS (new route).** The library catalogue (ABIGAIL) is the Voyager OPAC at `http://balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi`
+(linked from masshist.org; `abigail.masshist.org` gives a proxy 502). A plain keyword GET works without a session:
+`?DB=local&Search_Arg=Armstrong+John+1758-1843&Search_Code=GKEY%5E*&CNT=50` (the name-heading browse works too, but its
+title links are session-bound). Heading 'Armstrong, John, 1758-1843' carries 18 titles; the keyword search 26
+(`sources/h71/mhs_abigail_titles.html`). Manuscripts among them:
+- **James Bowdoin papers, 1804-1806, Ms. N-2059 (XT)**, 1 extra-tall vol.: copies of Bowdoin's correspondence as minister to
+  Spain "and letters between other diplomats copied for his information", correspondents including Jefferson, Madison,
+  Monroe, Dearborn, "John Armstrong, Charles Pinckney, and George William Erving"; written mostly from London and Paris
+  (`sources/h71/mhs_abigail_bowdoin_search.html`). Not 1807-1808; a possible place for a copied Armstrong cipher letter or
+  key 1804-1806 (the catalogue names no cipher). Not digitised per the record (no viewer link). Earlier work read
+  Bowdoin's own letters at LOC/M31 (all clear, H-row table); this letterbook of copies was not on file.
+- Henry Dearborn papers 1779-1838 and Jacob Brown papers 1812-1884 (multiple holdings, Armstrong as correspondent; war
+  years, outside 1807-1808 as catalogued); three 1778 letters to Armstrong and one from him (Misc. Bd. 1778).
+- Printed 1808 items (microform, Shaw/Shoemaker 16392 'Mr. Madison's letters to General Armstrong'; 'Papers relative to
+  French affairs communicated by General Armstrong'; 'Further and still more important suppressed documents') -- printed
+  State Department documents of 1808, already the target's crib-source family, not new material.
+- The masshist.org collection-guide list (H64) still shows no Armstrong guide; ABIGAIL shows no 1807-1808 Armstrong
+  manuscript, no retained copy or letterbook, and no cipher or key item 1804-1810 beyond the Bowdoin copy volume.
+
+**Result.** One of five catalogues opened (MHS, through a different host than H64 used). No 1807-1808 Armstrong item,
+retained copy or key located; one 1804-1806 copy volume naming Armstrong as correspondent (Bowdoin, Ms. N-2059). NYPL, HSP,
+Morgan and ArchiveGrid stay on the owner's desk (L27 narrowed to those four plus the NYPL Wayback capture URL). No
+challenge bypassed. No reading, no grade change. Search result, not a negative.
+
+Host facts (for the parent to port to the CLAUDE.md host table):
+- archives.nypl.org: 403 to curl, Akamai "Access Denied" to browser_fetch.js (3 Oct 2026, unchanged from 28 Sept); a Wayback capture exists but web.archive.org resets from the container.
+- discover.hsp.org: 403 to curl, Cloudflare "Just a moment..." to browser_fetch.js (3 Oct 2026).
+- corsair.themorgan.org: 403 to curl, Cloudflare "Attention Required!" to browser_fetch.js (3 Oct 2026).
+- researchworks.oclc.org (ArchiveGrid): 403 to curl, Cloudflare "Just a moment..." to browser_fetch.js (3 Oct 2026).
+- MHS ABIGAIL: `balthazaar.masshist.org/cgi-bin/Pwebrecon.cgi` Voyager keyword GET works by plain curl, descriptive UA (3 Oct 2026); `abigail.masshist.org` 502 through the proxy.
+- web.archive.org: still TLS-reset from this container (curl 35, proxy logs "tunnel closed mid-exchange", 3 Oct 2026, 2 tries); `archive.org/wayback/available` answers 200 and names the capture URL, which a desk browser can open.
+
+Requests: archives.nypl.org 2, discover.hsp.org 2, corsair.themorgan.org 2, researchworks.oclc.org 2, www.masshist.org 3,
+balthazaar.masshist.org 5 (one a 403 from an empty URL of mine), abigail.masshist.org 1 (502), web.archive.org 2 (reset),
+archive.org 4. Verdict unchanged: `open`; next step for this row: the owner's desk browser for L27 (four catalogues + Bowdoin
+N-2059 contents at MHS reference if wanted).
