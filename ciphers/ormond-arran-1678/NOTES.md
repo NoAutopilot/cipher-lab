@@ -461,23 +461,54 @@ Requests: archive.org 10 (1 OCR file, 1 advancedsearch, 8 metadata); be-api.us.a
 api.openalex.org 3; digital.bodleian.ox.ac.uk 7 (2 HTML search/developer pages, 1 data-API doc, 4 JSON searches).
 Every request ran one at a time, at least 1.6 s apart.
 
-## Remaining gaps (FT4b-ormond-arran-1678, 3 Oct 2026)
+## FT4c-ormond-arran-1678 (3 Oct 2026, account-4): ninth group 57/58 on the 1906 page image
+
+Run 3 Oct 2026 02:56-03:05 UTC (`date -u`). No cryptanalysis, no reading.
+
+**Page image.** IA `calendarofmanusc04greauoft_page_numbers.json` maps printed p.93 of vol. IV to leaf 123 (leafNum,
+confidence 99; the vol. V half of the item has its own p.93 at leaf 875, not used). Fetched the page image once:
+`https://archive.org/download/calendarofmanusc04greauoft/page/n122.jpg` (0-based index n122 = leaf 123; 2592x4374,
+HTTP 200 image/jpeg), kept as `images/hmc4_p93_n122.jpg` (1.2 MB). The page carries the running number "93" and the
+Ormond-to-Arran letter of 24 Jan 1677/8; the item's own OCR (`_djvu.txt`, line 6632) reads the passage on this page.
+
+**Crop (command run).**
+`python3 tools/iiif_lines.py --image ciphers/ormond-arran-1678/images/hmc4_p93_n122.jpg --region 0,3160,2400,220 --lines-per-crop 4 --max-width 2400 --out ciphers/ormond-arran-1678/images/crops_p93 --prefix p93`
+-> 3 lines, 1 crop, `images/crops_p93/p93_L01.jpg` (manifest beside it). A first cut at `--region 200,3350,2300,380`
+fell one line too low (it showed "..., 54, 700, 720 but it seems ..." onward) and was discarded. **2 vision calls**
+(brief named one; the extra one was the mis-placed crop, read by the worker itself, no subagent).
+
+**What the print shows.** The crop's third line reads, clearly: "what he says of 445 and 342, be true 726, 91, 33,
+425, 93, 58," -- the ninth group is printed **58**. The final digit's closed upper and lower bowls are those of an 8,
+unlike the open-left 3s of "33" in the same line. So the 1906 page image agrees with its own OCR and with the 1877 Sixth
+Report and Google Books' OCR (GF4-BATCH1 Premise check): all print witnesses read 58; only Tomokiyo's typed
+transcription, from which `ciphertext.txt` was taken, has 57.
+
+**ciphertext.txt not changed** (CLAUDE.md layout rule: as transcribed, never silently repaired). Finding logged here: the
+ninth group should be taken as **58** on the print evidence (the 1906 image, plus two independent editorial texts); the
+file keeps Tomokiyo's 57 as its transcription source. The NLI original has not been checked (needs physical access or
+an NLI reproduction); the key-coverage tests are unaffected in substance (YX-ORM/ZX2-ORM: a single group among 20,
+neither 57 nor 58 recurs in the passage).
+
+Requests: archive.org 5 (page_numbers.json x2, one a 500 retried once after a pause; files metadata 1; page image 1;
+`_djvu.txt` 1), all one at a time, >=2 s apart. No logins.
+
+## Remaining gaps (FT4c-ormond-arran-1678, 3 Oct 2026)
 Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status open, not partial)
 - key sheet MS. Carte 50 fols. 439-440 (Ormond-Arran cypher, Jan 1678) - blocker: waiting-on LOCAL-QUEUE L39; the catalogue flag is unreachable from the cloud (archives.bodleian.ox.ac.uk Anubis challenge, FT4), Digital Bodleian has no Carte 50 images (FT4b, positive control returned Carte 3/55/91), and no printed transcription was found (FT4b section above), so the leaves need a reproduction order or a person's reading
-- ninth group 57 vs 58 (both prints read 58) - blocker: not-attempted; the 1906 HMC print is public-domain on IA (calendarofmanusc04greauoft, p.93) and its page image can be read directly; only the NLI original needs physical access; next: fetch the IA page image of vol. IV p.93 and read the ninth group, ~$0.5
+- ninth group 57 vs 58 - resolved for the print 3 Oct 2026 (FT4c): the 1906 page image reads 58, like the 1877 print; ciphertext.txt keeps Tomokiyo's 57 as transcribed; only the NLI original is unchecked - blocker: needs-physical-access; the Kilkenny original is in the NLI Ormond papers, no online image located, and every print witness already agrees on 58
 
-## Escalation (3 Oct 2026, FT4b)
+## Escalation (3 Oct 2026, FT4c)
 - [x] siblings: 1680 Ormond-Longford sibling passages and keys tested (YX-ORM, ZX2-ORM), no fit
 - [x] clear-pages: Arran's reply of 5 Feb and Ormond's clear letter of 29 Jan read (Premise check c)
 - [ ] known-keys: MS. Carte 50 fols. 439-440 key sheet located 3 Oct 2026; read it once L39 or a reproduction order returns images
 - [x] print: no printed Carte 50 fols. 439-440 table found in HMC Ormonde N.S. IV-V, IA full text, Google Books or OpenAlex (FT4b, 3 Oct 2026)
 - [n/a] key-rebuild: twenty groups are far too short for cryptanalytic key rebuilding
-- [ ] image-check: ninth group 57/58 against the IA page image of the 1906 print, vol. IV p.93
+- [x] image-check: ninth group read as 58 on the IA page image of the 1906 print, vol. IV p.93 (FT4c, 3 Oct 2026)
 - [n/a] retry: no earlier route failed that a retry would change
-Verdict: keep going: 1 internal gaps; cheapest next: IA page-image check of HMC Ormonde N.S. IV p.93 for the ninth group (57/58), ~$0.5
+Verdict: keep going: 0 internal gaps; cheapest next: read the MS. Carte 50 fols. 439-440 key sheet and apply it to the 20 groups once LOCAL-QUEUE L39 returns images or a reproduction is ordered (blocked on LOCAL-QUEUE L39), ~$1
 
 ## While waiting
 
-While L39 is pending, read the ninth group (57 or 58) on the IA page image of HMC Ormonde N.S. vol. IV p.93
-(`calendarofmanusc04greauoft`). This depends on nobody. The prior-print search for the Carte 50 key was done on
-3 Oct 2026 (FT4b): none found.
+- While L39 is pending, read the 1871 Russell and Prendergast report (*The Carte Manuscripts in the Bodleian Library*,
+also DKPR 32nd Report) entry for MS. Carte 50 in a public-domain scan, for any description of fols. 439-440 or the
+f.472 key Kenyon used. This depends on nobody. The 57/58 image check was done on 3 Oct 2026 (FT4c): the print reads 58.
