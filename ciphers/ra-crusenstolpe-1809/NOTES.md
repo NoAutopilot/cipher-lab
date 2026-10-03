@@ -311,3 +311,48 @@ Runeberg or archive.org copy exists; not searched further this pass.
 
 Requests this pass: runeberg.org 3 (txtzip, all 200), data.riksarkivet.se 2 (1 TLS reset, 1 x 200), googleapis 5,
 github.com 2 shallow clones (shared with the hellen pass). No 403/429/challenge. Nothing read, graded or tested.
+
+## FT4: Adlersparre, *1809 och 1810. Tidstaflor*, Del I p.207 (3 Oct 2026, account-4)
+
+Run 3 Oct 2026 01:06-01:10 UTC (clock read), lead (d) of the Premise check. Intake gate `exit=0`; key_livecheck
+01:07 UTC: "Google Books (googleapis.com/books/v1) | yes | yes | HTTP 200". Status word unchanged: **open**.
+Result in one line: **Adlersparre prints no cipher text, key or plaintext of any 1809 cipher document; p.207 is a
+clear letter, and the one cipher item he mentions (Del 3 p.127) is described, not printed** -- a search result,
+rule 10. Nothing to test, so no matched control was run (rule 3 needs a key or ciphertext; neither exists).
+
+**Route.** Google Books API (keyed, `country=US`): volume `jspAAAAAcAAJ` = *1809 och 1810. Tidstaflor*, 1850, 267
+pp., `ALL_PAGES`, public domain; 6 snippet queries (`Pollier chiffer Carl XIII`; `Adlersparre "1809 och 1810"
+chiffer`; `Pollier handbref schweitzare`; `"befallte" "brefvets egare" Adlersparre`; `"afhöres han ej vidare"
+chiffer`; `Adlersparre 1809 tidstaflor "i chiffer"`; plus 2 with 0 hits). The API's PDF download link
+(books.google.com) answered HTTP 429 (captcha page), once, not retried. A web search then found the full OCR on
+Project Runeberg, work `acatidstav` (all five Delar); Del 1-3 fetched with the `mode=txtzip` route, snapshot in
+`sources/runeberg/acatidstav/` (manifest.tsv). No LOCAL-QUEUE row needed.
+
+**What Del I p.207 says.** Letters of Carl XIII to Georg Adlersparre, ending on p.207 and continuing to p.208:
+(i) the tail of a letter about the Augustenburg succession, with a warning that "statsrådet Platen sagt mig i dag,
+att en viss landt-råd Manderfelt skulle utgifva sig för ett hemligt sändebud från mig till Norge, hvilket är en
+stor osanning ... som han varit dömd här för uppenbar tjufnad"; (ii) "Stockholm den 15 Augusti" [1809], thanking
+Adlersparre for Prince Christian August's answer and planning the Danish peace talks at Jönköping. All clear text,
+no cipher, no key. The 1864 *Biographiskt lexikon* entry citing "Del. I s. 207" for a man "afhöres han ej vidare"
+in a cipher matter is about this Manderfelt affair (Carl Manderfelt, called Ingman; also Del 1 p.189, Del 3 p.17);
+the cipher side of that affair is not printed on p.207 or anywhere in Del 1 (`chif` 0 pages).
+
+**The "chiffer ... Pollier" snippet** is Del 3 pp.126-127, not Del I: after Crown Prince Carl August's death (May
+1810), police in a Scanian port took from a former court lackey, just over from Lübeck, a packet addressed to a
+Stockholm official containing a German proclamation to the Swedish army, "en pro memoria skrifven med chiffer" and a
+letter from Pollier, governor of Prince Gustaf; Carl XIII confronted the addressee (unnamed) and buried the matter.
+Described only; no cipher text, key or decipherment printed. It is 1810 and Gustavian, so not obviously the
+"revolutionen 1809" material of `~/2,5`, though it could be among Crusenstolpe's papers.
+
+**Greps** (OCR pages matching, Del 1/2/3; 239/290/267 pages): `chif` 0/1/3 (Del 2 p.104 and Del 3 pp.190, 192 are
+"namnchiffer", monograms; Del 3 p.127 above), `spion` 2/2/2 (all narrative; Del 3 p.61 "Spionrapporter" about
+Saumarez's fleet provisioning in western ports, 1810, no report text), `nyckel` 0/1/3 (door/ammunition keys),
+`Crusenstolpe` 0/0/1 (Del 3 p.116, "Vice landssekreteraren C--e (Crusenstolpe?)", 1810 narrative). Del 4-5 not
+fetched (2 requests, about USD 0.2, if a later pass wants the whole work closed).
+
+**Lead for the copy order:** two items to name alongside `~/2,5` when REQUEST.md is sent: the 1810 Pollier packet
+(the cipher pro memoria) and the Manderfelt cipher matter of Aug 1809. The bundle's own leaves decide whether
+either is in it.
+
+Requests: googleapis.com 9 (all 200), books.google.com 1 (429, stopped), archive.org 1 (advancedsearch, no copy of
+this title), runeberg.org 3 (200), WebSearch 1. No vision. Nothing read, graded or tested.
