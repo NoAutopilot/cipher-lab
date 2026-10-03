@@ -1,0 +1,10 @@
+text	role	digits	bigrams	bigram_IC	repeats	null_p50	null_p95	null_tail	power
+ad2-1871	target	114	57	0.0138	17	0.0100	0.0144	0.085	
+ad2-1871	control-A	114	57	0.0104		0.0100	0.0144		power20=0.05;power1000=0.053;holmes=0.07 huckfinn=0.06 pride=0.03 gatsby=0.05
+ad2-1871	control-B	114	57	0.0206		0.0100	0.0144		power20=0.70;power1000=0.869;holmes=0.90 huckfinn=0.86 pride=0.86 gatsby=0.85
+sib-1864	target	50	25	0.0267	5	0.0100	0.0200	0.010	
+sib-1864	control-A	50	25	0.0098		0.0100	0.0200		power20=0.00;power1000=0.030;holmes=0.03 huckfinn=0.04 pride=0.02 gatsby=0.03
+sib-1864	control-B	50	25	0.0196		0.0100	0.0200		power20=0.20;power1000=0.345;holmes=0.38 huckfinn=0.30 pride=0.33 gatsby=0.36
+sib-1865	target	56	28	0.0185	6	0.0106	0.0185	0.125	
+sib-1865	control-A	56	28	0.0101		0.0106	0.0185		power20=0.05;power1000=0.048;holmes=0.05 huckfinn=0.06 pride=0.04 gatsby=0.04
+sib-1865	control-B	56	28	0.0202		0.0106	0.0185		power20=0.50;power1000=0.440;holmes=0.37 huckfinn=0.52 pride=0.44 gatsby=0.42
