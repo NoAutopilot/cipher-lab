@@ -459,18 +459,54 @@ Step: the Verdict's cheapest step (scans 73/74 and 67 at native size, read for a
 - Requests: service.archief.nl 7 (5 native, 2 at 900 px), 1.6 s apart, all 200. Vision: 2 blind passes + 1
   reconciliation (plus this worker's own small overview views of 67, 72-76).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41 and GAPS44, 3 Oct 2026)
+## GAPS48-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): crib placement under a one-part code hypothesis
+
+Step: the Verdict's cheapest step. Disk only, no vision calls, no requests. Pre-registered in `gaps48/PREREG.md`
+(commit d0e47f7f, pushed before the target was scored); script `gaps48/crib_place.py` (`--check` and `--kmatch --check`
+exit 0); results `gaps48/results.tsv`, `gaps48/results_kmatch.tsv`; row in HYPOTHESES.md. Ciphertext: the GAPS36 image
+reading, No 4 letter 229 + No 6 annex 75 = 304 groups, 216 distinct.
+- **design_prior.py** first (`gaps48/design_prior.txt`): multi-sign d=1.12 nearest, not above null; mixed 1.62; letter
+  2.23; code(numbers) 2.72 excluded; false-positive rate 0.05; nearest keys hellen-frederick-1752 sibling (mixed),
+  huntington-luzerne-1781 (syllabary), vanbeuningen-dewitt-1657 (nomenclator). A large nomenclator table, in line
+  with GAPS44. One-part vs two-part cannot be told apart by these label-free statistics.
+- **Test.** For each GAPS44 crib (FR: agar grand duc empereur roi sevenaar traite ratifications paris utrecht note
+  limites; NL: agar groot hertog keizer koning zevenaar tractaat ratificatie parijs utrecht nota grenzen), predicted value
+  = alphabetical rank in a 1325-entry corpus vocabulary (fr1810 or nl18) scaled to 15-1339; S1 = AUC of the crib's
+  distance to the nearest group in the text against 300 random content-word decoys.
+- **Control (rule 3).** Synthetic one-part codes built from the other half of the corpus files, 20 seeds per language,
+  304 groups each; a two-part (random order) control on the same passages, which can and does read differently.
+  - One-part S1: 0.638 FR, 0.636 NL, against the pre-registered gate of 0.75. **CONTROL BELOW GATE.**
+  - Two-part S1: 0.496 FR, 0.509 NL (G0 ok, the statistic does measure order).
+  - The pre-registered control was not K-matched (synthetic K 89 FR / 72 NL vs the target's 216), because spelled-out
+    out-of-vocabulary words repeat letter groups. A post-hoc K-matched variant (`--kmatch`, not pre-registered,
+    out-of-vocabulary word -> one group at its alphabetical place, K 163 / 184) reads one-part 0.745 FR / 0.690 NL,
+    two-part 0.460 / 0.433: still below the gate. Decoy distance <= 3 rate 0.57-0.62 at K-matched density; that is
+    the reason. With 216 of 1325 values occupied, almost any predicted value has a group within a few units.
+  - Ceiling check: the control is not at ceiling (0.64-0.75), so the gate failure is lack of power, not saturation.
+- **Target:** S1 0.401 FR, 0.466 NL (S2 0.509 / 0.487). Both are at or below the two-part null mean, and both are below
+  the two-part p95 (0.575 FR, 0.611 NL), so they would not have passed even if the gate had held. Logged as **non-test,
+  untestable by crib placement at N 304** (rule 3), not as a negative against a one-part code.
+- Per-crib predicted value / distance (FR): agar 31/13, grand 606/2, duc 423/1, empereur 446/1, roi 1136/2,
+  sevenaar 1180/10, traite 1257/47, ratifications 1077/1, paris 907/6, utrecht 1282/57, note 849/2, limites 724/1.
+  The values 1257-1339 are sparse in the text (traite and utrecht both d 47-57). These are not candidates: no PASS.
+- Not found: any sign that the GAPS44 cribs sit at their alphabetical places. Not tested: names in a separate section
+  (common in period nomenclators), or a vocabulary that is not uniform over the alphabet.
+- Grades: H 0, C 0, S 0, M 0, I 0 (no reading). Vision 0; subagents 0; requests 0.
+- `python3 tools/gaps_check.py vanspaen-vandergoes-1808`: "OK keep-going vanspaen-vandergoes-1808: keep going: 1 internal
+  gap(s), 1 step(s) untried", exit 0.
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44 and GAPS48, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 221 of 360 scans (GAPS41: none in 1-74)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); next: crib-placement test of the top candidates against No 4 under a one-part (alphabetical) code hypothesis, with a matched synthetic one-part code control at N 229, ~$5
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; next: one-part frequency-position test (the text's commonest groups against the alphabetical places of FR/NL function words: de, het, van, en, le, la, que, et), same synthetic one-part and two-part controls, ~$3
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74
 - [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: crib candidates now listed (GAPS44); next: crib-placement test under a one-part code hypothesis with a matched control, ~$5
+- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement under a one-part code was a non-test at N 304, control below gate (GAPS48, 3 Oct 2026); next: one-part frequency-position test with the same controls, ~$3
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: crib-placement test of the GAPS44 candidates (Agar, Grand Duc, Empereur, Roi, Sevenaar) against No 4 under a one-part alphabetical code hypothesis, matched synthetic control first, ~$5
+Verdict: keep going: 1 internal gap; cheapest next: one-part frequency-position test (commonest groups vs the alphabetical places of FR/NL function words), matched synthetic one-part and two-part controls first, ~$3 (GAPS48's crib placement was a non-test: control 0.64-0.75 below gate 0.75)

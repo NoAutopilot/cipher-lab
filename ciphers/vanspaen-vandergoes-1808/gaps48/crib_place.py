@@ -5,6 +5,7 @@ Pre-registration: gaps48/PREREG.md (pushed before this script scored the target)
 
   python3 crib_place.py              controls (20 seeds x fr/nl, one-part + two-part) then the target; writes results.tsv
   python3 crib_place.py --check      exit 1 if the committed results.tsv is stale
+  python3 crib_place.py --kmatch     post-hoc K-matched sensitivity (results_kmatch.tsv; --kmatch --check likewise)
 Disk only: corpora from tools/data/fr1810 and tools/data/nl18."""
 import gzip, os, random, re, sys, unicodedata, bisect
 from collections import Counter
@@ -72,11 +73,19 @@ def auc(a, b):
     return s / (len(a) * len(b)) if a and b else float('nan')
 
 
+KMATCH = '--kmatch' in sys.argv   # post-hoc sensitivity (not pre-registered): OOV word -> one group at its
+                                  # alphabetical place (a prefix/syllable entry), which raises K toward the target's
+
+
 def encipher(passage_words, code):
     groups, plain = [], []
+    keys = sorted(k for k in code if len(k) > 1) if KMATCH else None
     for w in passage_words:
         if w in code:
             groups.append(code[w]); plain.append(w)
+        elif KMATCH:
+            i = min(bisect.bisect_left(keys, w), len(keys) - 1)
+            groups.append(code[keys[i]]); plain.append('#' + w)
         else:
             for ch in w:
                 groups.append(code[ch]); plain.append(ch)
@@ -153,7 +162,7 @@ def main():
                    f"synthetic K mean {mean(r['K'] for r in one):.0f}; decoy d<=3 rate {mean(r['hit3'] for r in one):.3f}; "
                    f"G0 {'ok' if g0 else 'FAIL'} G1 {'ok' if g1 else 'FAIL'}; target S1 {t1:.3f} S2 {t2:.3f} -> {verdict}")
     txt = '\n'.join(out + rows) + '\n'
-    p = os.path.join(H, 'results.tsv')
+    p = os.path.join(H, 'results_kmatch.tsv' if KMATCH else 'results.tsv')
     if '--check' in sys.argv:
         sys.exit(0 if os.path.exists(p) and open(p).read() == txt else 1)
     open(p, 'w').write(txt)
