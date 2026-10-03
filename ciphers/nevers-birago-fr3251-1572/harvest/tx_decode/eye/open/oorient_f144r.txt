@@ -1,0 +1,5 @@
+L03: [of144r-63] X_NEW X_NEW [of144r-28] [of144r-25] [of144r-54] [of144r-31] [of144r-30] [of144r-24] X_NEW [of144r-65]
+L04.1: [of144r-01] [of144r-71] [of144r-56] [of144r-40] [of144r-34] T53 [of144r-17] [of144r-55] X_NEW X_NEW [of144r-06] [of144r-33]
+L04.2: [of144r-50] [of144r-51] [of144r-35] [of144r-12] [of144r-43] X_NEW X_NEW [of144r-58] [of144r-16] [of144r-11] [of144r-03] X_NEW
+L05: [of144r-29] [of144r-39] [of144r-64] X_NEW [of144r-72] [of144r-27] [of144r-19] [of144r-37] [of144r-49] [of144r-59] [of144r-26] [of144r-38] X_NEW X_NEW T37 [of144r-67] [of144r-44] [of144r-23] [of144r-68] [of144r-41] [of144r-45] [of144r-05] [of144r-04] [of144r-46] [of144r-47] [of144r-13] [of144r-22] [of144r-09] X_NEW [of144r-10] [of144r-08] [of144r-53] [of144r-61] [of144r-66] [of144r-32]
+L06: [of144r-48] [of144r-07] T25 [of144r-70] [of144r-62] [of144r-60] [of144r-02] [of144r-18] [of144r-69] T80 X_NEW [of144r-36] [of144r-52] [of144r-14] [of144r-21] [of144r-42] [of144r-15] [of144r-20] [of144r-57] X_NEW
