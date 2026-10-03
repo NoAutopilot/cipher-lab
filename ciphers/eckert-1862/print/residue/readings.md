@@ -6,9 +6,9 @@ image; code words in [brackets] read by key.md's dated rule, grade per pages.tsv
 The Huntington Library, San Marino, California. Telegrams in these pages were not found in OR ser. I vols. 7, 9-12 by
 print/or_match.py (GAPS113); that is a search result, not a novelty verdict (rule 10).
 
-Pages 58, entries 124; key.md tokens C 146, I 38, M 86; oov 863.
+Pages 58, entries 124; key.md tokens C 155, I 36, M 82; oov 860.
 
-Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 vs real_p05 -0.83, null_p99 -2.14 -> FAIL (N 36206); shuffled_key_full score -1.031 vs real_p05 -0.83, null_p99 -2.138 -> FAIL (N 34279); real_windows score -1.129 vs real_p05 -0.84, null_p99 -2.121 -> FAIL (N 6847); shuffled_key_windows score -1.101 vs real_p05 -0.842, null_p99 -2.115 -> FAIL (N 5879)
+Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 vs real_p05 -0.829, null_p99 -2.141 -> FAIL (N 36233); shuffled_key_full score -1.037 vs real_p05 -0.829, null_p99 -2.138 -> FAIL (N 34491); real_windows score -1.126 vs real_p05 -0.838, null_p99 -2.117 -> FAIL (N 6975); shuffled_key_windows score -1.128 vs real_p05 -0.838, null_p99 -2.119 -> FAIL (N 6153)
 
 ## 4960 Page_
 
@@ -100,7 +100,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 *15 Feb*  Genl Hooker February 15th 1862 Two Steamers with eight Barges leave Baltimore for Liverpool Point this morning and two Steamers with Six Barges leave here this morning for Budds Ferry Stewart Van Vliet B. G.
 
-*15 Feb*  Feb 15 " 62 [Halleck] the President desires your opinion whether the building of the railroad from [division] to Roland would not effectually keep luna quiet signed John G Nicolay private secretary snowing hard
+*15 Feb*  Feb 15 " 62 [Halleck] the President desires your opinion whether the building of the railroad from [division] to Roland would not effectually keep [Missouri] quiet signed John G Nicolay private secretary snowing hard
 
 *02 Mar*  March 2d 1862 For [Rosecrans] I have just recd a Telegram from Surgeon Suckley saying that [Lander] was seriously ill does not expect him to live . I want you to keep a close watch of affairs at New Creek signed [McClellan] hope wait lose [Lander]
 
@@ -344,7 +344,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 ## 5056 Page_
 
-*22 Mar*  LC Weir Washington Mch 26th [Halleck] Some days ago Senators Pomeroy and Lane presented to the President a protest against General Denver having command of the Kansas troops It was referred to the Secretary of War I endorsed upon it that General Halleck should do as he thought best for the service and transmitted it to you by mail I think the President would rather the troops should not be under Genl Denvers Command But on a question of that nature it is my opinion the matter should be left to the Commander of the Department who is responsible for the service and with him I leave it signed [Fredericksburg] . bully for us .
+*22 Mar*  LC Weir Washington Mch 26th [Halleck] Some days ago Senators Pomeroy and Lane presented to the President a protest against General Denver having command of the Kansas troops It was referred to the Secretary of War I endorsed upon it that General Halleck should do as he thought best for the service and transmitted it to you by mail I think the President would rather the troops should not be under Genl Denvers Command But on a question of that nature it is my opinion the matter should be left to the Commander of the Department who is responsible for the service and with him I leave it signed [Stanton (signature or address slot)] . bully for us .
 
 *27 Mar*  F. Stuart , Seminary Washington March 27 . 62 [McClellan] I am informed that there is an excellent turnpike from Culpepper Court House to Lurey and thence over the Blue Ridge into the Shenandoah Valley about forty five miles If Jackson and Longstreet have concentrated their forces at Lurey would it not be well for Banks to remain at Strasburgh until he learns their intentions signed R B. Marcy
 
@@ -352,7 +352,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 *29 Apr*  Apl 29 1863 [McClellan] Would it damage or embarrass your operations if I were to appoint Capt Chas Griffin a Brigadier General of weigh Please answer Berlin
 
-*01 May*  May 1 1862 [Banks] I am pressed by the Luna members of Congress to give Genl Schofield independent command in Luna They insist that for want of this their local troubles gradually grow worse I have forborne so far for fear of interfering with and embarrassing your operations Please answer telling me whether anything and what I can do for them without injuriously interfering with you signed [Lincoln] noon
+*01 May*  May 1 1862 [Banks] I am pressed by the [Missouri] members of Congress to give Genl Schofield independent command in [Missouri] They insist that for want of this their local troubles gradually grow worse I have forborne so far for fear of interfering with and embarrassing your operations Please answer telling me whether anything and what I can do for them without injuriously interfering with you signed [Lincoln] noon
 
 *01 May*  May 1 1862 [McClellan] Your call for Parrott guns from [Washington] alarms me chiefly because it argues indefinite procrastination is any thing to be done signed Berlin
 

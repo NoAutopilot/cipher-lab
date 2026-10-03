@@ -114,7 +114,7 @@ def run(res_dir, recv_dir):
     # positive control (a): synthetic coded twins
     inv = {}
     for code, vals in key.items():
-        for meaning, grade, _ in vals:
+        for meaning, grade, *_ in vals:
             m = meaning.lower()
             if re.fullmatch(r"[a-z]+", m) and "time" not in m:
                 inv.setdefault(m, code)

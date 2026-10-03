@@ -832,10 +832,30 @@ Verdict: keep going: 3 internal gaps; cheapest next: sent-side second witness fo
 - `print/key_dates.py --check` 0, `decode.py --check` 0; `print/residue_decode.py --check` 1 (stale, expected after the key change; the dmQuery `transc` field was not hash-matched to pages_manifest.tsv, 0 of 58 sha256 equal, so the regeneration step should use the per-item API text as before). Requests: hdl.huntington.org 1, archive.org 7, be-api 3.
   No vision, no subagents.
 
-## Remaining gaps (finish-or-blocker pass, GAPS191, 3 Oct 2026)
-Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 146, I 38, M 86 (print/residue, before GAPS191's key change)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses for Koran/Lamb/Luna/Indus folded into key.md (GAPS191); next: regenerate print/residue with the GAPS191 key (`print/residue_decode.py PAGES --write`, pages from the one dmQuery call) and re-list the no-M candidates, ~$0.5
-- residue code words not fixed by any known plaintext - blocker: open-codes; about 863 oov tokens remain; conflicts Lamb (Kansas/York River), Luna (Missouri/Shenandoah) are date-separated, Indus split by slot; the table-change dates stay unwitnessed between 21 Mar and 25 May
+## GAPS197-eckert-1862 (3 Oct 2026, account-4): residue regenerated with the GAPS191 key
+
+- Input: the 58 residue page texts re-fetched one per item from the CONTENTdm item API (58 requests + 1 retry for 5016,
+  1.6 s apart), all 58 sha256-equal to print/residue/pages_manifest.tsv; the three received-ledger dmQuery files
+  re-fetched, sha256-equal to received_manifest.tsv. Not committed (their credit; re-fetch as in the manifests).
+- `print/residue_decode.py --write`: key.md tokens C 146 -> 155, I 38 -> 36, M 86 -> 82; oov 863 -> 860 (pages 58,
+  entries 124). Pages changed: 4973, 4979, 4982, 4984, 5056, 5059. Judge unchanged: real_full -1.037 vs real_p05 -0.829
+  FAIL, shuffled_key_full -1.037 FAIL (en corpus, fold caveat); no page reaches 'ready'.
+- Rule 4 on the new values: Luna = Missouri reads C only on 01 May (5059, twice; the witness itself); 15 Feb 4984 "keep
+  luna quiet" now shows [Missouri] but is graded M (outside the 06 Apr-02 May row range; unprinted). Lamb: two tokens,
+  12 Feb, Kansas at C; no Lamb token after 27 Mar in the residue, so York River (26 Jun) never applies. Indus: one token,
+  5056 (26 Mar) "signed Indus" -- signature slot, inside 13 Mar-11 Jul, reads Stanton at C, matching the witness slot;
+  no body-slot Indus in the residue. Koran -> Ohio: 2 Feb tokens stay M (before 05 Feb).
+- No-M candidates (`print/residue_candidates.py --write`): 31 entries, byte-identical to the committed candidates.tsv --
+  every changed entry still carries another M token. No VERIFY-ECK item changes.
+- `print/received_match.py` crashed on key.md's fourth (scope) field added by GAPS181; fixed (`*_` unpack) and
+  regenerated: 124 sent entries (was 122, page 4979 added by GAPS181), twins 2 (unchanged), null p99 0, control (a) 60/60.
+- Checks: decode.py 0, key_dates.py 0, residue_decode.py 0, residue_candidates.py 0, received_match.py 0,
+  received_twin_check.py 0 (8/8 vs shuffled p99 1). No vision, no subagents. Requests: hdl.huntington.org 62.
+
+## Remaining gaps (finish-or-blocker pass, GAPS191 + GAPS197, 3 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses for Koran/Lamb/Luna/Indus folded into key.md (GAPS191); residue regenerated with that key 3 Oct 2026 (GAPS197: C 155, I 36, M 82, oov 860; candidates unchanged at 31); next: the 1864 sent-ledger pilot (gap 3) is the cheapest route to more readable entries, ~$6
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb (Kansas/York River), Luna (Missouri/Shenandoah) are date-separated, Indus split by slot; the table-change dates stay unwitnessed between 21 Mar and 25 May
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
 ## Escalation (GAPS191, 3 Oct 2026)
@@ -843,7 +863,7 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3, ~$6)
 - [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; page 4979 done (GAPS187)
-- [ ] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191, held-out 20/23 vs p99 10); next: regenerate the residue readings with this key (gap 1), ~$0.5
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191, held-out 20/23 vs p99 10); residue regenerated with it 3 Oct 2026 (GAPS197, M 86 -> 82, candidates unchanged)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: regenerate print/residue with the GAPS191 key and re-list the no-M candidates, ~$0.5; then the 1864 sent-ledger pilot against Cipher No. 1 (mssEC 41-46), ~$6
+Verdict: keep going: 3 internal gaps; cheapest next: pilot one 1864 sent ledger (mssEC 18 or 19) against Cipher No. 1 (mssEC 41-46) at grade H, ~$6
