@@ -1,4 +1,5 @@
-open
+blocked
+Blocked: Prestage 1925 (the standard edition) could not be opened as text by this worker (Google Books ALL_PAGES/public-domain in the US but page text 302->429 captcha; HathiTrust babel Cloudflare-blocked; not on archive.org), so only HTRC page token counts were read (mdp.39015013259075, 278 pages: 'cipher' on seq 122, 192 and 259 only); Corpo diplomatico portuguez tomo IX and tomo XI (supplement) read in full via archive.org djvu text and grepped, no hit for Sande/Castello Melhor/Sousa de Macedo/Bombay/cifra (they cover the 16th century, not the 1660s).
 
 # Portuguese royal despatches, Afonso VI's ministers to the ambassador in England/France — BL Add MS 38038
 
@@ -83,3 +84,25 @@ well under the shared 60-request cap; >=3s apart). `github.com`: shared shallow 
 batch. No `searcharchives.bl.uk` direct calls (BL catalogue confirmed offline by a WebSearch crawl result, not
 independently re-tested this pass). No TNA Discovery calls (n/a, this is a BL item). No Google Books calls
 (queries logged above as pending).
+
+
+## Web and blog check (CS-A2-D, 3 Oct 2026)
+
+Queries (WebSearch, standard): (1) `Marquês de Sande Castelo Melhor Afonso VI despatches cipher "Add MS 38038"`; (2) `Francisco de Melo Marquês de Sande embaixador Inglaterra 1662 cifra cartas decifradas`; (3) `Portuguese ambassador Sande London 1662 cipher letters Castelo Melhor deciphered Prestage`; (4) `Cipherbrain OR "Cipher Mysteries" OR cryptiana Portuguese 17th century cipher Afonso VI Bombay`; (5) site-restricted to ciphermysteries.com, cryptiana.blogspot.com, cryptiana.web.fc2.com, scienceblogs.de with sender/recipient/Prestage terms; (6) `Sande embassy 1662-1666 despatches ... edição`. Hits: only the BL record (searcharchives.bl.uk/catalog/032-002054525) and TNA SP 89 Portugal catalogue entries; no post or comment thread on Cipherbrain, Cryptiana or Cipher Mysteries names this volume, Sande, Castelo Melhor or Add MS 38038 (hit lists were generic cipher posts; their comment threads were not opened because no hit named the item). Local greps: sources/cryptiana, sources/ciphermysteries, sources/decode (24 Sept 2026 Decrypted and Non-decrypted listings; no fresh decode_list.py crawl run this pass), sources/solver-diffs: no entry beyond our own N45/PP-01/PP-10 rows. Fresh shallow clones 3 Oct 2026 of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers grepped for 38038, Castelo/Castello Melhor, Marques de Sande, Afonso/Alfonso VI, Bombay: only unrelated noise (a UUID, an Indus tablet number); no target folder or planning line. Aymeloglu: cited, nothing copied.
+
+## Holding record (3 Oct 2026)
+
+searcharchives.bl.uk/catalog/032-002054525 (interim catalogue, MDARK ark:/81055/vdc_100000000039.0x00000c) is reachable again; "Digitised Content:" field is blank, Access: "Please request the physical items you need using the online collection item request form". Quoted from the record: "Many letters are in cipher; some of these are deciphered in the margin by a contemporary hand, and others are followed by modern decipherments, which, however, are not always to be trusted, as a comparison with the older decipherments will show." Also "At the end (ff. ii.-ix.) is bound up a modern description of the contents"; ff. ix + 125, 1662-1666.
+
+## Premise check (CS-A2-D, 3 Oct 2026)
+
+(a) Folder's own files: FOUND (new this pass). The BL record itself states that many cipher letters carry a contemporary marginal decipherment and others a modern decipherment. The earlier NOTES text did not use this; the volume is therefore a known-plaintext calibration candidate (grade C material once images exist), not a ciphertext-only target. Not read: no image exists (REQUEST.md only).
+(b) Other solvers' working files: not found (Bourdeau and Aymeloglu clones, 3 Oct 2026; our sources/solver-diffs).
+(c) Physical neighbours: unreachable (no image). Related: ANTT PT/TT/LMP/0001 (Sande's embassy, 592 images, PP-01, 8.4% sampled, no cipher leaf isolated) and ANTT PT/TT/MMCG/3L (PP-10, not digitised) are the same embassy's other copies; a Portuguese-side copy with decipherment is plausible, not checked further.
+(d) Recipient/printed side: Prestage 1925 not readable as text (see line 2); HTRC EF shows 'cipher' only on seq 122 (also 'deciphered', 'Macedo'), seq 192 ('Sande') and seq 259, so Prestage mentions ciphers in at most three pages and prints no cipher groups (EF counts words, not digits; numerals not checked). Page text of those three seqs is the named next step (local runner / owner browser, Google Books id TfCPAAAAMAAJ or HathiTrust mdp.39015013259075; printed page = seq minus an unknown front-matter offset). Calendar of State Papers Foreign Portugal/SP 89: catalogue entries only seen, not opened.
+
+Found: contemporary and modern decipherments recorded in the holding catalogue. Not found: any published decipherment of this volume's cipher letters in the sources named above. Not classified for novelty.
+
+## Request counts (CS-A2-D)
+
+archive.org 5 (2 advancedsearch, 2 djvu downloads, 1 search), googleapis books 4 + books.google.com 2 (302 then 429, stopped), catalog.hathitrust.org 1, data.htrc.illinois.edu 1, openlibrary.org 1, searcharchives.bl.uk 1, github.com 2 clones, WebSearch 7.
