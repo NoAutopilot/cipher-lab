@@ -385,6 +385,17 @@ silent account, when it comes back, reads the newer TAKEOVER line and stays stan
 private repository (Debosnys) is never taken over: it waits for the account that holds it. An orchestrator keeps its
 STATUS.md handoff section current enough that a standby can continue from it without the session transcript.
 
+## Standby dispatch (owner, 3 Oct 2026 16:3x UTC: "why do I have to manually post to account 1?")
+A session can create sessions only on its own account, so the orchestrator cannot start work on another account itself. Every
+standing session on an account that does not hold the orchestrator role -- the account-2 dispatcher, the owner-account (account 1)
+standby/watchdog, any account-4 parent -- therefore also acts as that account's dispatcher at every firing: after its standby check,
+it reads WORK-QUEUE.tsv for rows `queued` and tagged for its own account (`other`/`account-2` on account 2; `owner`/`account-1` on
+account 1; `account-4` on account 4), claims each with tools/work_queue.py, spawns it with create_session on its own account
+(source_url https://github.com/NoAutopilot/cipher-lab, the row's model, never below Opus 5.5; prompt: "Read CLAUDE.md, then follow
+<brief> exactly as job <job_id>; claim in ROOM.md first"), and posts one ROOM line naming the session. A standby whose firing interval
+is over an hour moves it to hourly while any row for its account is queued. The owner then never has to paste a lane prompt into an
+account that already has a standing session; a paste is needed only to bootstrap the first standing session on an account.
+
 ## Model floor (owner, 28 Sept 2026 20:3x UTC)
 The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; nothing below Opus 5.5 for the orchestrator, runners or workers on any account (no Sonnet or Haiku rows in WORK-QUEUE.tsv from now on). With neither model available on any account, all work pauses until a reset; that is acceptable, a downgrade is not. The orchestrator cannot switch its own session's model: when this account has Fable again, ask the owner to switch this session with /model, or move the role per hub-seed/STANDBY-3.md.
 
