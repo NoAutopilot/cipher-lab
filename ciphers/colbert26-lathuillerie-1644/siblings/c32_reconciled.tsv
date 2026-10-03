@@ -1,0 +1,23 @@
+line	tokens	gloss	note
+L01	16 29 28 51 12 15 23 39 66 89 29 18 46	Serue de nep[?] et luy nuis beaucoup	A=B; 'nep' doubtful in both
+L02	79 41 15 81 11 17 46 23 54 75 80 52 17 84 76 15 56 22 81 54 83 28 ?	[Po. Mad. la P. Dor.] sa mere Sy ce nest la plus dissimulee femme du monde	A=B tokens; last group cut at edge, skipped; 'Po. Mad. la P. Dor.' is a left-margin heading, not over numerals, dropped from scoring
+L03	15 21 76 10 12 63 23 61 13 69 81 32 29	elle a change dhumeur	A=B
+L04	12 13 20 11 96 78 46 96 21 76 81 52 31 71 86 16 13 20 30 90 30 23 32 ?	croire que par ce quelle me dest Je ne ferois pas tout a fait	A=B; numerals fill the row, so the text above is gloss (letter reads 'invite a le [croire...]'); last group cut, skipped
+L05	10 58 91 29 19 10 51	persuade	A=B
+L06	51 81 30 85 61 29 18 23 15 30 25 12 12 31	de mesnager son Esprit	A=B
+L07	96 79 75 60 17 86 29	que pour la gagner	A=B
+L08	23 32 31 10 58 20 21 16 13 20 31 41 18 20 23 17 96 75 15 32 30 17 ?	tout a fait Il feroit besoin que nous eussions	A=B tokens, last '2A' unsettled, skipped; A took 'tout a fait' as clear, but the numerals start at the margin under it: kept (B)
+L09	23 30 79 15 21 76 96 21 96 76 31 31 11 51 75 48 32 29 50 54 10 23 31	pour elle quelque lettre de la Cour car estant	A=B tokens; 'pour elle quelque' over the first numerals: kept (B)
+L10	49 15 21 76 21 54 17 78 12 15 32 16 46 75 37 15 22 30 56 13 20 31	comme elle lest glorieuse cela la satisferoit	A=B tokens; 'comme elle lest' kept (B), same reason
+L11	15 33 31 11 81 70	extremement	A=B
+L12	39 75 52 21	et la dit[e]	A=B
+L13	50 81 25 12 23 46 30 16 81 23 10 43 ? 13 26 29 22 85 76 30 52 30	Dame Princesse men a aussy aduerty font les	pass A omitted this crop; pass B + reconciler's eye; 13th group 20 (B) vs 10 (eye), skipped
+L14	48 32 29 30 51 13 20 23 31 35 40 29 31	discours de st ybart	pass A omitted this crop; pass B + reconciler's eye agree
+R01	96 32 56 13 20 31 51 75 32	que M de Longueuille de	A=B; two numeral runs split by clear text; 'de' sits over the second run
+R02	23 12 21 97 21 10 19 29 46 31 63	lauthorite quil a sur cet homme	A=B
+R03	20 47 44 76 30 54 10 31 36	[Jey] auec les Estats	A=B; first word doubtful in both, dropped
+R04	44 15 32 33 10 43 20 11	auec eux a boire	second group A 13, B 15; eye 15
+R05	78 41	par Mad la P Dor	A=B; gloss sits right of and above 78 41 inside clear text; placement uncertain
+R06	48 22 25 77 70 76 52 31 17 15 32 29 25 12 23 46 18 23 57 21 36	compliment ledit s Prince son filz	A=B
+R07	12 65 29 61 20 15 20 23 31	charge a st ybart	A=B
+R08	35 40 29 31 51 52 11 98 35 96 46 18 20 31 51 15 78 31 10 32 69	de dire quoy que ce soit de sa part a M de Longueuille [Mais]	A=B; 'Mais' is clear text (letter continues 'Mais quil creut'), dropped
