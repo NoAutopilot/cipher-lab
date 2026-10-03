@@ -1,0 +1,728 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 9,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "czM_sSwpqNsC",
+      "etag": "VJoPmXQvVac",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/czM_sSwpqNsC",
+      "volumeInfo": {
+        "title": "Genealogies in the Library of Congress",
+        "subtitle": "A Bibliography. Second Supplement, 1976-1986",
+        "authors": [
+          "Marion J. Kaminkow"
+        ],
+        "publisher": "Genealogical Publishing Com",
+        "publishedDate": "2012-09",
+        "description": "\"A complement to genealogies in the Library of Congress\" -t.p. of fifth v.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0806316675"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780806316673"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 882,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.13.16.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=czM_sSwpqNsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=czM_sSwpqNsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=czM_sSwpqNsC&pg=PA419&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=czM_sSwpqNsC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=czM_sSwpqNsC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 84,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 67.2,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=czM_sSwpqNsC&rdid=book-czM_sSwpqNsC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 84000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 67200000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Genealogies_in_the_Library_of_Congress-sample-pdf.acsm?id=czM_sSwpqNsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=czM_sSwpqNsC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eMicroform\u003c/b\u003e catalogs . Ericson , Jack T. The \u003cb\u003eRobert R. Livingston papers\u003c/b\u003e , 1658-1888 : a \u003cb\u003eguide\u003c/b\u003e to the \u003cb\u003emicrofilm\u003c/b\u003e edition / edited by Jack T. Ericson and Donald L. Haggerty . Sanford , N.C. : \u003cb\u003eMicrofilming\u003c/b\u003e Corp. of America , 1980 . ix , 53 p&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "29-lmhdkIS8C",
+      "etag": "ynYG2UP2Ziw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/29-lmhdkIS8C",
+      "volumeInfo": {
+        "title": "National Union Catalog, 1981",
+        "publishedDate": "1982",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "CUB:P106191707003"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1036,
+        "printType": "BOOK",
+        "categories": [
+          "American literature"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=29-lmhdkIS8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=29-lmhdkIS8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=29-lmhdkIS8C&pg=PA86&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=29-lmhdkIS8C&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/National_Union_Catalog_1981.html?hl=&id=29-lmhdkIS8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=29-lmhdkIS8C&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "axt2r5BLpP4C",
+      "etag": "fzMN4X2O+8M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/axt2r5BLpP4C",
+      "volumeInfo": {
+        "title": "Subject Catalog, 1981",
+        "authors": [
+          "Library of Congress"
+        ],
+        "publishedDate": "1981",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "CUB:P106191610006"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1020,
+        "printType": "BOOK",
+        "categories": [
+          "Library catalogs"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=axt2r5BLpP4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=axt2r5BLpP4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=axt2r5BLpP4C&pg=PA209&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=axt2r5BLpP4C&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Subject_Catalog_1981.html?hl=&id=axt2r5BLpP4C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=axt2r5BLpP4C&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "cM4qAQAAIAAJ",
+      "etag": "aia/bmoCoPQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/cM4qAQAAIAAJ",
+      "volumeInfo": {
+        "title": "National Union Catalog",
+        "subtitle": "A Cumulative Author List Representing Library of Congress Printed Cards and Titles Reported by Other American Libraries",
+        "publishedDate": "1982",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105117240775"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1032,
+        "printType": "BOOK",
+        "categories": [
+          "Union catalogs"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.9.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=cM4qAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=cM4qAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=cM4qAQAAIAAJ&pg=PA86&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=cM4qAQAAIAAJ&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/National_Union_Catalog.html?hl=&id=cM4qAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=cM4qAQAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "016fUagplucC",
+      "etag": "Ggihe+1TeGE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/016fUagplucC",
+      "volumeInfo": {
+        "title": "Genealogies Cataloged by the Library of Congress Since 1986",
+        "subtitle": "With a List of Established Forms of Family Names and a List of Genealogies Converted to Microform Since 1983",
+        "authors": [
+          "Library of Congress"
+        ],
+        "publisher": "Washington, D.C. : Library of Congress, Cataloging Distribution Service",
+        "publishedDate": "1991",
+        "description": "The bibliographic holdings of family histories at the Library of Congress. Entries are arranged alphabetically of the works of those involved in Genealogy and also items available through the Library of Congress.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "MINN:31951D002916482"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1368,
+        "printType": "BOOK",
+        "categories": [
+          "Genealogy"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.10.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=016fUagplucC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=016fUagplucC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=016fUagplucC&q=%22Robert+R.+Livingston+papers%22+microfilm+guide&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=016fUagplucC&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Genealogies_Cataloged_by_the_Library_of.html?hl=&id=016fUagplucC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=016fUagplucC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eMICROFORM\u003c/b\u003e CATALOGS Ericson , Jack T. The \u003cb\u003eRobert R. Livingston papers\u003c/b\u003e , 1658-1888 : a \u003cb\u003eguide\u003c/b\u003e to the \u003cb\u003emicrofilm\u003c/b\u003e edition / edited by Jack T. Ericson and Donald L. Haggerty . - Sanford , N.C. : \u003cb\u003eMicrofilming\u003c/b\u003e Corp. of America , 1980 . ix , 53 p&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "jTQINBsbnJoC",
+      "etag": "NEbghD7stBA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/jTQINBsbnJoC",
+      "volumeInfo": {
+        "title": "Subject Catalog",
+        "authors": [
+          "Library of Congress"
+        ],
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "WISC:89126008911"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1020,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=jTQINBsbnJoC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=jTQINBsbnJoC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=jTQINBsbnJoC&pg=PA209&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=jTQINBsbnJoC&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Subject_Catalog.html?hl=&id=jTQINBsbnJoC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=jTQINBsbnJoC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "06UOpwKdKTYC",
+      "etag": "a+ZpKPgINe8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/06UOpwKdKTYC",
+      "volumeInfo": {
+        "title": "Constituting Empire",
+        "subtitle": "New York and the Transformation of Constitutionalism in the Atlantic World, 1664-1830",
+        "authors": [
+          "Daniel J. Hulsebosch"
+        ],
+        "publisher": "Univ of North Carolina Press",
+        "publishedDate": "2006-05-18",
+        "description": "According to the traditional understanding of American constitutional law, the Revolution produced a new conception of the constitution as a set of restrictions on the power of the state rather than a mere description of governmental roles. Daniel J. Hulsebosch complicates this viewpoint by arguing that American ideas of constitutions were based on British ones and that, in New York, those ideas evolved over the long eighteenth century as New York moved from the periphery of the British Atlantic empire to the center of a new continental empire. Hulsebosch explains how colonists and administrators reconfigured British legal sources to suit their needs in an expanding empire. In this story, familiar characters such as Alexander Hamilton and James Kent appear in a new light as among the nation’s most important framers, and forgotten loyalists such as Superintendent of Indian Affairs Sir William Johnson and lawyer William Smith Jr. are rightly returned to places of prominence. In his paradigm-shifting analysis, Hulsebosch captures the essential paradox at the heart of American constitutional history: the Revolution, which brought political independence and substituted the people for the British crown as the source of legitimate authority, also led to the establishment of a newly powerful constitution and a new postcolonial genre of constitutional law that would have been the envy of the British imperial agents who had struggled to govern the colonies before the Revolution.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780807876879"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0807876879"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 505,
+        "printType": "BOOK",
+        "categories": [
+          "Law"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.6.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=06UOpwKdKTYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=06UOpwKdKTYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=06UOpwKdKTYC&pg=PA370&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=06UOpwKdKTYC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=06UOpwKdKTYC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 29.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 16.19,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=06UOpwKdKTYC&rdid=book-06UOpwKdKTYC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 29990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 16190000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Constituting_Empire-sample-epub.acsm?id=06UOpwKdKTYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=06UOpwKdKTYC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eInstructions\u003c/b\u003e to British Colonial Governors , 2 : 494 . 51. Journals of the Provincial Congress , 1 : 844 . On Jay&#39;s ... \u003cb\u003emicrofilm\u003c/b\u003e reel 1 , \u003cb\u003eRobert R. Livingston Papers\u003c/b\u003e , NYHS ; Smith , Historical Memoirs , 2 : 18-20 , 26 . 55. One&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "1UkOAQAAMAAJ",
+      "etag": "7p8GNxFNm9w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/1UkOAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Genealogies in the Library of Congress",
+        "subtitle": "A Bibliography. Second Supplement, 1976-1986",
+        "authors": [
+          "Library of Congress"
+        ],
+        "publisher": "Baltimore, Md., U.S.A. : Magna Carta Book Company",
+        "publishedDate": "1987",
+        "description": "Second supplement to original 2 vol. set.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015078266080"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 880,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=1UkOAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=1UkOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=1UkOAQAAMAAJ&pg=PA419&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=1UkOAQAAMAAJ&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Genealogies_in_the_Library_of_Congress.html?hl=&id=1UkOAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=1UkOAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "4O0uAQAAIAAJ",
+      "etag": "tO2Tkd+0+gg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4O0uAQAAIAAJ",
+      "volumeInfo": {
+        "title": "American Book Publishing Record",
+        "subtitle": "BPR annual cumulative",
+        "publisher": "R. R. Bowker",
+        "publishedDate": "1982-04",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105210122383"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1360,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.9.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4O0uAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4O0uAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=4O0uAQAAIAAJ&q=%22Robert+R.+Livingston+papers%22+microfilm+guide&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=4O0uAQAAIAAJ&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/American_Book_Publishing_Record.html?hl=&id=4O0uAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4O0uAQAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eRobert R. Livingston papers\u003c/b\u003e , 1658- 1888 a \u003cb\u003eguide\u003c/b\u003e to the \u003cb\u003emicrofilm\u003c/b\u003e edition / edited by Jack T. Ericson and Donald L. Haggerty . Sanford , N.C .: \u003cb\u003eMicrofilming\u003c/b\u003e Corp. of America , 1980. ix , 53 p .: geneal . tables ; 29 cm . [ CD3029.5&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "K41-GZOWEZIC",
+      "etag": "Iabm54/WLc8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/K41-GZOWEZIC",
+      "volumeInfo": {
+        "title": "Traders and Gentlefolk",
+        "subtitle": "The Livingstons of New York, 1675-1790",
+        "authors": [
+          "Cynthia A. Kierner"
+        ],
+        "publisher": "Cornell University Press",
+        "publishedDate": "1992",
+        "description": "Descendants reside primarily in New York.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0801426383"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780801426384"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 312,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.6.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=K41-GZOWEZIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=K41-GZOWEZIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=K41-GZOWEZIC&printsec=frontcover&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=K41-GZOWEZIC&dq=%22Robert+R.+Livingston+papers%22+microfilm+guide&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Traders_and_Gentlefolk.html?hl=&id=K41-GZOWEZIC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=K41-GZOWEZIC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Descendants reside primarily in New York."
+      }
+    }
+  ]
+}

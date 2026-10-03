@@ -3814,3 +3814,29 @@ alphabet by sorting tiles instead of typing a TSV. Offline build, no model read 
   signs.tsv) stand in for h59/person_labels.tsv as H60's known answer. ASKS row 92 updated in place.
 - Not done: no reading, no statistic, no class change. Suggestion (not run): a lighter page with numeral tiles pre-piled
   if the owner finds the digits in the way, by excluding the numeral-group x-spans read from ciphertext_ms.txt.
+
+## H72 finding-aid retry (ARM-A-H72)
+
+3 Oct 2026, 19:22-19:36 UTC, ARM-A-H72 (account-1 worker for LANE-ARM-A, session_011LsfWjmjanzg358BoQzfKe). Brief
+`.claude/briefs/runs/2026-10-03-acct1-arma-h72-cat.md`; retries H65/H66 and the cloud parts of H34 (ASKS 83-86). Search
+result only: no reading, no class change, nothing graded. Saved pages under `sources/h72/`.
+
+| Item | Routes tried (3 Oct 2026) | Result |
+|---|---|---|
+| (1) LOC George William Erving papers finding aid (ASKS 83) | findingaids.loc.gov/search?q=Erving via `tools/browser_fetch.js` (default, then `--wait 25000 --profile`); www.loc.gov JSON by curl (403 Cloudflare, one retry 403); loc.gov JSON via the browser: `q="Erving, George William"` (14 results) and `q=Erving` in the manuscripts facet (249 hits, first 100 read); ArchiveGrid via the browser; web.archive.org CDX | findingaids.loc.gov and ArchiveGrid: Cloudflare "Performing security verification" both times; web.archive.org: connection reset. loc.gov index: item-level Erving letters only (Jefferson, Madison, Jackson Papers; Erving to Madison 24 Mar 1807 "Partly in cipher", mjm014714, already used in H38) plus the Monroe and Cathcart EADs -- no collection or EAD record for the Erving papers. **Not reached; no container numbers; ASKS 83 stays as written.** New since H65: www.loc.gov itself now challenges plain curl (the host table says "yes, reliable" -- it answered the browser tool). |
+| (2) NYHS John Armstrong papers (ASKS 84) | nyhistory.org/library/finding-aids, digitalcollections.nyhistory.org search (curl); findingaids.library.nyu.edu/nyhs/ plus four guessed slugs and `/livingston/` (curl); specialcollections.library.nyu.edu search (curl, then browser with 12 s wait) | nyhistory.org hosts 403; the NYU S3 host answers AccessDenied to every path including the root, so a real slug cannot be told from a missing one; specialcollections: CAPTCHA "Human Verification" to curl and browser. **Not reached; no box/folder; ASKS 84 stays as drafted (outreach/armstrong-keyhunt-nyhs.md).** |
+| (3) FDR Library Rokeby / Aldrich family papers roll (ASKS 85) | fdrlibrary.org/finding-aids (200); the Hudson River manuscripts PDF re-fetched; NARA catalog via browser: "Aldrich Family Papers", "Rokeby Armstrong" | The finding-aids page lists no separate Aldrich/Rokeby aid, only the Hudson River Valley and Dutchess County manuscripts PDF -- byte-identical to H34's `h34/fdr_hudson.pdf` (sha256 700f74d4...e633), whose Appendix I pp.17-18 H34 already read. NARA catalog: 1 unrelated hit (Clinton speechwriting file) for the first, NRHP house files for the second. **No item list online; ASKS 85 stays as drafted.** |
+| (4) Ericson and Haggerty 1980 Livingston reel guide, OCLC 7776177 (ASKS 86) | IA advancedsearch; be-api fts quoted phrase; HathiTrust bib API by OCLC; Google Books API (key, country=US) twice | IA 0; fts 116 hits, all citations of the guide in other books (e.g. `guidestoarchives0000dewi`), not the guide; HathiTrust `{"records": {}}`; Google Books 9 unrelated / 0 for intitle:Livingston inauthor:Ericson. **Still not online.** |
+
+What this changes: nothing about the target; the four desk rows keep their text, each now carrying a dated 3 Oct line
+naming exactly which route failed and how. The person's step is unchanged (a browser at the desk for ASKS 83, the two
+drafted letters for 84/85, an ILL or the NYHS reading room for 86).
+
+Requests per host: findingaids.loc.gov 2 (browser), www.loc.gov 2 curl (403) + 2 browser, researchworks.oclc.org 1
+(browser), web.archive.org 1, findingaids.library.nyu.edu 6, specialcollections.library.nyu.edu 2, www.nyhistory.org 1,
+digitalcollections.nyhistory.org 1, www.fdrlibrary.org 4, catalog.archives.gov 2 (browser), archive.org 1,
+be-api.us.archive.org 1, catalog.hathitrust.org 1, www.googleapis.com 2. Vision calls 0.
+
+Verdict (target stays `open`, 0/369 read): keep going on the lane's other rows; H72's own next step is the owner's
+(ASKS 83-86), not a further cloud retry of the same hosts (rule 3's third-attempt clause: H34/H64-H66/H72 are the
+third pass at these catalogues from the cloud; retired for the cloud routes, browser_fetch/curl/Wayback named).
