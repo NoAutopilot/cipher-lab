@@ -22,6 +22,11 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 MAP = HERE.parents[2] / "ceppo-nevers-fr3251-1570s/harvest/sign_id_map.json"
 EXTRA = {"X_THETA2": "r"}
+# The blind readers could not read the clerk's letters (1,686 of 1,715 gloss cells '?'; the rest do not spell Italian), so
+# the gloss columns are kept as raw data only. The only gloss used for grading is HARVEST-D's eye read of f.36v line 1
+# (alignment_pairs.tsv, idx 1-18, "parlandone il signor"), mapped to v36top_L01 pos 1-18 (both readers start at the same
+# triangle sign there).
+KNOWN = {("v36top_L01", i + 1): c for i, c in enumerate("parlandoneilsignor")}
 
 
 def load(p):
@@ -76,6 +81,7 @@ def main(check=False):
             elif gb in ("", "?", "-"): g = ga; stats["gloss_one"] += 1
             else: g = "?"; stats["gloss_split"] += 1
             v = m.get(s, "?") if s not in ("?", "") else "?"
+            g = KNOWN.get((line, pos), "-")
             if v == "null":
                 grade = "null"
             elif v != "?" and g not in ("?", "-", "") and v == g:

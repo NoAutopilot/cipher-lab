@@ -187,7 +187,7 @@ v36mid_L06	18	S67		M	?	L
 v36mid_L06	19	S87		M	?	L	
 v36mid_L06	20	S35		L	?	L	bar through; cut at s2 edge
 v36mid_L06	21	S75		M	-	L	dot after
-v36mid_L06	22	X_NEW		L	?	L	7-like
+v36mid_L06	22	S17	X_NEW	L	?	L	7-like
 v36mid_L06	23	X_NEW	S73	L	?	L	4-like
 v36mid_L06	24	S40	S84	L	?	L	bar through
 v36mid_L06	25	S80		M	?	L	
@@ -233,9 +233,9 @@ v36top_L01	32	S88	S24	M	?	L
 v36top_L01	33	S74	S54	M	?	L	
 v36top_L01	34	S75	S24	M	?	L	
 v36top_L01	35	S74		M	?	L	
-v36top_L01	36	S87		M	d	L	
+v36top_L01	36	S94	S55	M	?	L	
 v36top_L01	37	S52		H	?	L	
-v36top_L01	38	S95	S13	M	?	L	page edge; line end
+v36top_L01	38	S37	S65	M	?	L	page edge; line end
 v36top_L02	1	S80		M	?	L	line start
 v36top_L02	2	S24		M	t	M	
 v36top_L02	3	S88		M	o	M	
@@ -266,10 +266,143 @@ v36top_L02	27	S30	S49	L	z	L	slash with dot
 v36top_L02	28	S62		M	?	L	
 v36top_L02	29	S47		M	l	L	
 v36top_L02	30	S80		M	?	L	
-v36top_L02	31	S84	S42	L	?	L	
-v36top_L02	32	S22	S25	L	?	L	
-v36top_L02	33	S75		M	?	L	
-v36top_L02	34	S74		M	?	L	
-v36top_L02	35	S94	S55	H	?	L	
-v36top_L02	36	S52		H	?	L	
-v36top_L02	37	S37	S65	M	?	L	page edge; line end
+v36top_L02	31	S76	S58	M	?	L	
+v36top_L02	32	S88		M	?	L	
+v36top_L02	33	S57	S95	L	?	L	
+v36top_L02	34	S45		M	?	L	
+v36top_L02	35	S56		M	?	L	
+v36top_L02	36	S24	S88	M	?	L	page edge; line end
+v36top_L03	1	S53	S87	M	o	L	line start
+v36top_L03	2	S88		M	?	L	
+v36top_L03	3	S26		H	?	L	
+v36top_L03	4	S93		M	?	L	
+v36top_L03	5	S89		H	?	L	
+v36top_L03	6	S80		M	?	L	
+v36top_L03	7	S70		M	o	M	
+v36top_L03	8	S69		M	?	L	
+v36top_L03	9	S42		M	?	L	
+v36top_L03	10	S88		M	?	L	
+v36top_L03	11	S80		M	?	L	
+v36top_L03	12	S84		L	?	L	cut at s1/s2 edge
+v36top_L03	13	S87		M	-	L	
+v36top_L03	14	X_NEW	S57	L	?	L	small i-like stroke
+v36top_L03	15	S52		H	?	L	
+v36top_L03	16	S67		M	?	L	
+v36top_L03	17	S35	S25	L	?	L	
+v36top_L03	18	S65	S80	M	?	L	
+v36top_L03	19	S84		M	?	L	
+v36top_L03	20	S62		M	?	L	
+v36top_L03	21	S56		M	?	L	
+v36top_L03	22	S93		M	?	L	
+v36top_L03	23	S62		L	?	L	cut at s2/s3 edge
+v36top_L03	24	S71	S62	L	?	L	
+v36top_L03	25	S17	S66	M	?	L	
+v36top_L03	26	S94		M	?	L	
+v36top_L03	27	S47		M	?	L	
+v36top_L03	28	S80		M	?	L	
+v36top_L03	29	S30	S49	L	n	M	slash with dot
+v36top_L03	30	S88		M	?	L	
+v36top_L03	31	S65	S37	L	o	L	tall stacked 8
+v36top_L03	32	S17	S66	M	i	M	
+v36top_L03	33	S74		M	?	L	
+v36top_L03	34	S57		L	?	L	
+v36top_L03	35	S52		M	?	L	
+v36top_L03	36	S26		M	?	L	cut at bottom of crop
+v36top_L03	37	S45		M	?	L	
+v36top_L03	38	S94		M	?	L	
+v36top_L03	39	S17		M	?	L	page edge; line end
+v36top_L04	1	S17	X_NEW	L	i	L	line start; 7-like
+v36top_L04	2	S62	S74	L	n	M	
+v36top_L04	3	S89		M	?	L	
+v36top_L04	4	S54	S74	L	?	L	
+v36top_L04	5	S93		M	?	L	
+v36top_L04	6	S62		M	?	L	
+v36top_L04	7	S74		M	?	L	
+v36top_L04	8	S23		M	n	L	
+v36top_L04	9	S70		M	o	M	
+v36top_L04	10	S13	S95	L	n	L	
+v36top_L04	11	S66	S17	M	i	L	
+v36top_L04	12	S74		M	?	L	
+v36top_L04	13	S93		M	?	L	
+v36top_L04	14	S62		M	?	L	
+v36top_L04	15	S88		L	?	L	cut at s1/s2 edge
+v36top_L04	16	S74		M	n	L	dot after
+v36top_L04	17	S52		H	?	L	
+v36top_L04	18	S95	S13	M	-	L	
+v36top_L04	19	S62		M	?	L	
+v36top_L04	20	S69		M	?	L	
+v36top_L04	21	S88		M	o	L	
+v36top_L04	22	S84		M	?	L	
+v36top_L04	23	S80		M	?	L	
+v36top_L04	24	S65		M	n	L	
+v36top_L04	25	S70		M	o	M	
+v36top_L04	26	S37	S65	L	?	L	
+v36top_L04	27	S74		L	?	L	
+v36top_L04	28	S80		M	?	L	
+v36top_L04	29	S69		M	?	L	
+v36top_L04	30	S75		H	?	L	
+v36top_L04	31	X_NEW	S57	L	?	L	small i-like stroke
+v36top_L04	32	S35	S25	M	?	L	
+v36top_L04	33	S74		L	n	L	
+v36top_L04	34	S75		M	?	L	
+v36top_L04	35	S37	S13	L	?	L	
+v36top_L04	36	S16		M	?	L	
+v36top_L04	37	S17	X_NEW	L	?	L	7-like with long bar
+v36top_L04	38	S88		L	?	L	cut at bottom of crop
+v36top_L04	39	S84	S62	L	?	L	cut at bottom of crop
+v36top_L04	40	S89		L	?	L	cut at bottom of crop; line end
+v36top_L05	1	S35		M	?	L	line start
+v36top_L05	2	S26		H	?	L	
+v36top_L05	3	S70		M	?	L	
+v36top_L05	4	S69		M	n	L	
+v36top_L05	5	S89		H	?	L	
+v36top_L05	6	S52		H	?	L	
+v36top_L05	7	S30	S49	L	?	L	slash with dot
+v36top_L05	8	S17		M	?	L	
+v36top_L05	9	S75		H	?	L	
+v36top_L05	10	S20		M	?	L	
+v36top_L05	11	S47		L	?	L	cut at s1/s2 edge
+v36top_L05	12	S80		M	?	L	
+v36top_L05	13	S35		M	?	L	
+v36top_L05	14	S45		M	?	L	
+v36top_L05	15	S84		M	?	L	
+v36top_L05	16	S24		M	?	L	
+v36top_L05	17	S69		M	?	L	
+v36top_L05	18	S70		M	o	M	
+v36top_L05	19	S47		H	?	L	
+v36top_L05	20	S75		H	?	L	
+v36top_L05	21	S75		H	?	L	
+v36top_L05	22	S53		L	?	L	cut at s2/s3 edge
+v36top_L05	23	S42		M	b	L	
+v36top_L05	24	S17		M	i	M	
+v36top_L05	25	S74		M	?	L	
+v36top_L05	26	S70		M	o	M	
+v36top_L05	27	S13	S95	M	?	L	
+v36top_L05	28	S30	S49	L	n	M	slash with dot
+v36top_L05	29	S45		M	?	L	
+v36top_L05	30	S65		M	?	L	
+v36top_L05	31	S26		H	?	L	
+v36top_L05	32	S17		M	i	M	
+v36top_L05	33	X_NEW	S62	M	?	L	closed-loop Q-like with descender
+v36top_L05	34	S16		L	n	L	cut at s3/s4 edge
+v36top_L05	35	S80		M	?	L	
+v36top_L05	36	S69		M	?	L	
+v36top_L05	37	S94	S55	H	?	L	page edge; line end
+v36top_L06	1	S66	S17	L	?	L	prose before: ulne; row cut at bottom of crop, only tops of signs visible
+v36top_L06	2	S17	X_NEW	L	?	L	7-like; cut at bottom of crop
+v36top_L06	3	S67		L	?	L	cut at bottom of crop
+v36top_L06	4	S52		L	?	L	cut at bottom of crop
+v36top_L06	5	S88		L	?	L	cut at bottom of crop
+v36top_L06	6	S95	S13	L	?	L	cut at bottom of crop
+v36top_L06	7	S23		L	?	L	cut at bottom of crop
+v36top_L06	8	S17	X_NEW	L	?	L	7-like; cut at bottom of crop
+v36top_L06	9	S67		L	?	L	cut at bottom of crop
+v36top_L06	10	S25		L	?	L	cut at bottom of crop
+v36top_L06	11	S20		L	?	L	cut at bottom of crop
+v36top_L06	12	S62		L	?	L	cut at bottom of crop
+v36top_L06	13	S75		M	?	L	cut at bottom of crop
+v36top_L06	14	S30	S49	L	?	L	slash with dot; cut at bottom of crop
+v36top_L06	15	S88	S24	L	o	L	cut at bottom of crop
+v36top_L06	16	S34		L	?	L	cut at bottom of crop
+v36top_L06	17	S13	S95	L	?	L	cut at bottom of crop
+v36top_L06	18	S54	S74	L	?	L	prose after: Loro chi ke termine (s3 lower row); cut at bottom of crop

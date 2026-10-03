@@ -1,0 +1,407 @@
+passage	pos	sign_id	alt	conf	gloss	gconf	note
+r37_L01	1	S26		M	?	L	prose before: Addio
+r37_L01	2	S75		H	?	L	
+r37_L01	3	S37	S13	M	?	L	
+r37_L01	4	S70		M	o	M	
+r37_L01	5	S74	S59	M	?	L	
+r37_L01	6	S73	S30	M	?	L	
+r37_L01	7	S47		H	n	M	
+r37_L01	8	S93		M	?	L	
+r37_L01	9	X_THETA2		M	?	L	
+r37_L01	10	S16	S42	M	?	L	
+r37_L01	11	S26		M	?	L	
+r37_L01	12	S95	S13	M	?	L	
+r37_L01	13	S66		M	?	L	
+r37_L01	14	S58?	S76	M	?	L	
+r37_L01	15	S52		H	?	L	
+r37_L01	16	S65		M	?	L	
+r37_L01	17	S89		M	?	L	
+r37_L01	18	S93		M	?	L	
+r37_L01	19	S74		M	?	L	
+r37_L01	20	S47		H	n	L	
+r37_L01	21	S84		L	?	L	
+r37_L01	22	S34		M	?	L	
+r37_L01	23	S53		M	?	L	
+r37_L01	24	S70		M	?	L	
+r37_L01	25	S74		M	?	L	
+r37_L01	26	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+r37_L01	27	S56		M	?	L	
+r37_L01	28	S35		M	?	L	
+r37_L01	29	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+r37_L01	30	S52		H	?	L	
+r37_L01	31	S73		M	?	L	
+r37_L01	32	S47		H	?	L	
+r37_L01	33	S84		L	?	L	
+r37_L01	34	S62		M	?	L	
+r37_L01	35	S66		M	?	L	
+r37_L01	36	S40		M	?	L	prose after: line end
+r37_L02	1	S70		M	?	L	prose before: line start
+r37_L02	2	S73		M	?	L	
+r37_L02	3	S74		M	?	L	
+r37_L02	4	S66		M	?	L	
+r37_L02	5	S74		M	?	L	
+r37_L02	6	S93		M	?	L	
+r37_L02	7	S70		M	?	L	
+r37_L02	8	S94		H	?	L	
+r37_L02	9	S66		M	?	L	
+r37_L02	10	S84		L	?	L	
+r37_L02	11	S75		H	?	L	
+r37_L02	12	S74		M	?	L	
+r37_L02	13	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+r37_L02	14	S76?	S58	M	?	L	
+r37_L02	15	S45		M	?	L	
+r37_L02	16	S56		M	?	L	
+r37_L02	17	S89		H	?	L	
+r37_L02	18	S97		M	?	L	prose after: Che
+v36mid_L01	1	S75		H	?	L	prose before: to
+v36mid_L01	2	S58		M	?	L	
+v36mid_L01	3	S62		M	?	L	
+v36mid_L01	4	S74		M	?	L	
+v36mid_L01	5	S66		M	?	L	
+v36mid_L01	6	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L01	7	S73		M	?	L	
+v36mid_L01	8	S70		M	?	L	
+v36mid_L01	9	X_THETA2		H	?	L	
+v36mid_L01	10	S74		M	?	L	
+v36mid_L01	11	S66		L	?	L	prose after: line end
+v36mid_L02	1	S13		M	?	L	prose before: line start
+v36mid_L02	2	S93		M	?	L	
+v36mid_L02	3	S88		M	?	L	
+v36mid_L02	4	S54	S74	M	?	L	
+v36mid_L02	5	S93		M	?	L	
+v36mid_L02	6	S53	S62	M	?	L	
+v36mid_L02	7	S45		M	?	L	
+v36mid_L02	8	S89		H	?	L	
+v36mid_L02	9	S75		H	?	L	
+v36mid_L02	10	S58		M	?	L	
+v36mid_L02	11	S88		M	?	L	
+v36mid_L02	12	S65		M	?	L	
+v36mid_L02	13	S74		M	?	L	
+v36mid_L02	14	S93		M	?	L	
+v36mid_L02	15	S42	S16	L	?	L	
+v36mid_L02	16	S52		H	?	L	
+v36mid_L02	17	S97		M	?	L	
+v36mid_L02	18	S26		M	?	L	
+v36mid_L02	19	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L02	20	S47		H	?	L	
+v36mid_L02	21	S45		M	?	L	
+v36mid_L02	22	S94		H	?	L	
+v36mid_L02	23	S66		L	?	L	
+v36mid_L02	24	S74	S54	M	?	L	
+v36mid_L02	25	S45		M	?	L	
+v36mid_L02	26	S97		M	?	L	
+v36mid_L02	27	S89		H	?	L	
+v36mid_L02	28	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L02	29	X_THETA2		H	?	L	
+v36mid_L02	30	S52		H	?	L	
+v36mid_L02	31	S66		M	?	L	
+v36mid_L02	32	S40		M	?	L	
+v36mid_L02	33	S37		M	?	L	
+v36mid_L02	34	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L02	35	S57		M	?	L	
+v36mid_L02	36	S62		L	?	L	
+v36mid_L02	37	S88		M	?	L	
+v36mid_L02	38	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L02	39	S73		L	?	L	prose after: line end
+v36mid_L03	1	S25		M	?	L	prose before: line start
+v36mid_L03	2	S67		M	?	L	
+v36mid_L03	3	S54		M	?	L	
+v36mid_L03	4	S55	S94	M	?	L	
+v36mid_L03	5	S84		M	?	L	
+v36mid_L03	6	S45		M	?	L	
+v36mid_L03	7	S56		M	?	L	
+v36mid_L03	8	S89		H	?	L	
+v36mid_L03	9	S16	S42	M	?	L	
+v36mid_L03	10	S26		M	?	L	
+v36mid_L03	11	S74		L	?	L	
+v36mid_L03	12	S62		L	?	L	
+v36mid_L03	13	S75		M	?	L	
+v36mid_L03	14	X_THETA2		H	?	L	
+v36mid_L03	15	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L03	16	S45		M	?	L	
+v36mid_L03	17	S54		M	?	L	
+v36mid_L03	18	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L03	19	S55	S94	L	?	L	
+v36mid_L03	20	S32	S76	L	?	L	
+v36mid_L03	21	S34		M	?	L	
+v36mid_L03	22	X_THETA2		H	?	L	
+v36mid_L03	23	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L03	24	S73		M	?	L	
+v36mid_L03	25	S94		H	?	L	
+v36mid_L03	26	S70		M	?	L	
+v36mid_L03	27	S84		M	?	L	
+v36mid_L03	28	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L03	29	S55	S94	M	?	L	
+v36mid_L03	30	S22		L	?	L	
+v36mid_L03	31	S88		M	?	L	
+v36mid_L03	32	S73		M	?	L	
+v36mid_L03	33	S89		H	?	L	
+v36mid_L03	34	S47		H	?	L	
+v36mid_L03	35	S37		M	?	L	
+v36mid_L03	36	S75		H	?	L	
+v36mid_L03	37	S73		M	?	L	
+v36mid_L03	38	S53		M	?	L	
+v36mid_L03	39	?		L	?	L	prose after: line end
+v36mid_L04	1	S67		M	?	L	prose before: line start
+v36mid_L04	2	S59?	S74	M	?	L	
+v36mid_L04	3	S70		M	o	M	
+v36mid_L04	4	S84		M	?	L	
+v36mid_L04	5	S89		H	?	L	
+v36mid_L04	6	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L04	7	S88		M	?	L	
+v36mid_L04	8	S93		M	?	L	
+v36mid_L04	9	S55	S94	M	?	L	prose after: la
+v36mid_L05	1	S25		M	?	L	prose before: line start
+v36mid_L05	2	S40		M	?	L	
+v36mid_L05	3	S45		M	?	L	
+v36mid_L05	4	S94		M	?	L	
+v36mid_L05	5	S93		M	?	L	
+v36mid_L05	6	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L05	7	S34		M	?	L	
+v36mid_L05	8	S22		L	?	L	
+v36mid_L05	9	S32		M	?	L	
+v36mid_L05	10	S40		M	?	L	
+v36mid_L05	11	S88		M	?	L	
+v36mid_L05	12	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L05	13	S65		M	?	L	
+v36mid_L05	14	S74		M	?	L	
+v36mid_L05	15	S23?	S45	M	?	L	prose after: line end
+v36mid_L06	1	S45		M	?	L	prose before: line start
+v36mid_L06	2	S66		M	?	L	
+v36mid_L06	3	S97		M	?	L	
+v36mid_L06	4	S73		M	?	L	
+v36mid_L06	5	S52		H	?	L	
+v36mid_L06	6	S84		M	?	L	
+v36mid_L06	7	S40		M	?	L	
+v36mid_L06	8	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L06	9	S58		M	?	L	
+v36mid_L06	10	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L06	11	X_THETA2		H	?	L	
+v36mid_L06	12	S75		H	?	L	
+v36mid_L06	13	S57		M	?	L	
+v36mid_L06	14	S47		M	?	L	
+v36mid_L06	15	S58		M	?	L	
+v36mid_L06	16	S97		M	?	L	
+v36mid_L06	17	S56		M	?	L	
+v36mid_L06	18	S67		M	?	L	
+v36mid_L06	19	S55		M	?	L	
+v36mid_L06	20	S35		M	?	L	
+v36mid_L06	21	S75		M	?	L	
+v36mid_L06	22	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L06	23	S25?	S84	M	?	L	
+v36mid_L06	24	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36mid_L06	25	S84		M	?	L	
+v36mid_L06	26	S45		M	?	L	
+v36mid_L06	27	S58		M	?	L	
+v36mid_L06	28	S88		M	?	L	
+v36mid_L06	29	S25		M	?	L	
+v36mid_L06	30	S67		M	?	L	
+v36mid_L06	31	S55		M	?	L	prose after: line end
+v36top_L01	1	S42	S16	L	?	L	prose before: line start
+v36top_L01	2	S45		M	?	L	
+v36top_L01	3	X_THETA2		H	?	L	
+v36top_L01	4	S84		M	?	L	
+v36top_L01	5	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L01	6	S73		M	x	L	
+v36top_L01	7	S89		H	d	L	
+v36top_L01	8	S62		M	o	M	
+v36top_L01	9	S73		M	?	L	
+v36top_L01	10	S75		H	?	L	
+v36top_L01	11	S66		L	?	L	
+v36top_L01	12	S40		M	?	L	
+v36top_L01	13	S26		M	?	L	
+v36top_L01	14	S66		M	?	L	
+v36top_L01	15	S13		M	g	L	
+v36top_L01	16	S73		M	n	L	
+v36top_L01	17	S70		M	o	L	
+v36top_L01	18	X_THETA2		M	z	L	
+v36top_L01	19	S55		M	?	L	
+v36top_L01	20	S67		M	?	L	
+v36top_L01	21	S25		M	?	L	
+v36top_L01	22	S74		M	?	L	
+v36top_L01	23	S71		L	?	L	
+v36top_L01	24	S55		M	?	L	
+v36top_L01	25	S54		M	?	L	
+v36top_L01	26	S25		M	?	L	
+v36top_L01	27	S47		M	?	L	
+v36top_L01	28	S45		M	?	L	
+v36top_L01	29	S74		M	?	L	
+v36top_L01	30	S93		M	?	L	
+v36top_L01	31	S37		M	?	L	
+v36top_L01	32	S88		M	?	L	
+v36top_L01	33	S54		M	?	L	
+v36top_L01	34	S75		M	?	L	
+v36top_L01	35	S74		M	?	L	
+v36top_L01	36	S94		M	?	L	
+v36top_L01	37	S52		H	?	L	
+v36top_L01	38	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family; prose after: line end
+v36top_L02	1	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family; prose before: line start
+v36top_L02	2	S88		M	?	L	
+v36top_L02	3	S24	S88	M	?	L	
+v36top_L02	4	S89		H	?	L	
+v36top_L02	5	S66		M	?	L	
+v36top_L02	6	S58		M	?	L	
+v36top_L02	7	S35		M	?	L	
+v36top_L02	8	S20		M	?	L	
+v36top_L02	9	S47		M	?	L	
+v36top_L02	10	S75		M	?	L	
+v36top_L02	11	S74		L	?	L	
+v36top_L02	12	S53		M	?	L	
+v36top_L02	13	S34		M	?	L	
+v36top_L02	14	S22		M	?	L	
+v36top_L02	15	S24	S88	M	?	L	
+v36top_L02	16	S74		M	?	L	
+v36top_L02	17	S93		M	?	L	
+v36top_L02	18	S62		M	?	L	
+v36top_L02	19	S73		M	?	L	
+v36top_L02	20	S66		M	?	L	
+v36top_L02	21	S55		M	?	L	
+v36top_L02	22	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L02	23	S74		M	?	L	
+v36top_L02	24	S25		M	?	L	
+v36top_L02	25	S61?	S45	M	?	L	
+v36top_L02	26	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L02	27	S73		M	?	L	
+v36top_L02	28	S62		M	?	L	
+v36top_L02	29	S47		M	?	L	
+v36top_L02	30	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L02	31	S58		M	?	L	
+v36top_L02	32	S88		M	?	L	
+v36top_L02	33	S57		M	?	L	
+v36top_L02	34	S45		M	?	L	
+v36top_L02	35	S56		M	?	L	
+v36top_L02	36	S88		M	?	L	prose after: line end
+v36top_L03	1	S53		M	?	L	prose before: line start
+v36top_L03	2	S24	S88	M	?	L	
+v36top_L03	3	S26		M	?	L	
+v36top_L03	4	S93		M	?	L	
+v36top_L03	5	S89		H	?	L	
+v36top_L03	6	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L03	7	S70		M	?	L	
+v36top_L03	8	X_THETA2		M	?	L	
+v36top_L03	9	S84		M	?	L	
+v36top_L03	10	S88		M	?	L	
+v36top_L03	11	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L03	12	S84		M	?	L	
+v36top_L03	13	S55		M	?	L	
+v36top_L03	14	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L03	15	S52		H	?	L	
+v36top_L03	16	S67		M	?	L	
+v36top_L03	17	S25		M	?	L	
+v36top_L03	18	S65		M	?	L	
+v36top_L03	19	S84		M	?	L	
+v36top_L03	20	S62		M	?	L	
+v36top_L03	21	S56		M	?	L	
+v36top_L03	22	S93		M	?	L	
+v36top_L03	23	S71		L	?	L	
+v36top_L03	24	S66		L	?	L	
+v36top_L03	25	S75	S94	M	?	L	
+v36top_L03	26	S47		M	?	L	
+v36top_L03	27	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L03	28	S73		L	?	L	
+v36top_L03	29	S88		M	?	L	
+v36top_L03	30	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L03	31	S66		M	?	L	
+v36top_L03	32	S74		M	?	L	
+v36top_L03	33	S57		M	?	L	
+v36top_L03	34	S52		H	?	L	
+v36top_L03	35	S26		M	?	L	
+v36top_L03	36	S45		M	?	L	
+v36top_L03	37	S94		M	?	L	
+v36top_L03	38	S66		L	?	L	prose after: line end
+v36top_L04	1	S17	S66	M	?	L	prose before: line start
+v36top_L04	2	S47		M	?	L	
+v36top_L04	3	S89		H	?	L	
+v36top_L04	4	S93		M	?	L	
+v36top_L04	5	S47		M	?	L	
+v36top_L04	6	S97		M	?	L	
+v36top_L04	7	S70		M	?	L	
+v36top_L04	8	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L04	9	S66		M	?	L	
+v36top_L04	10	S74		M	?	L	
+v36top_L04	11	S93		M	?	L	
+v36top_L04	12	S88		M	?	L	
+v36top_L04	13	S73		M	?	L	
+v36top_L04	14	S52		H	?	L	
+v36top_L04	15	S94		M	?	L	
+v36top_L04	16	S62		M	?	L	
+v36top_L04	17	X_THETA2		M	?	L	
+v36top_L04	18	S88		M	?	L	
+v36top_L04	19	S84		M	?	L	
+v36top_L04	20	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L04	21	S65		M	?	L	
+v36top_L04	22	S70		M	?	L	
+v36top_L04	23	S65		M	?	L	
+v36top_L04	24	S74		M	?	L	
+v36top_L04	25	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L04	26	X_THETA2		M	?	L	
+v36top_L04	27	S75		H	?	L	
+v36top_L04	28	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L04	29	S35		M	?	L	
+v36top_L04	30	S54		M	?	L	
+v36top_L04	31	S75		H	?	L	
+v36top_L04	32	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L04	33	S42		M	?	L	
+v36top_L04	34	S66		M	?	L	
+v36top_L04	35	S88		M	?	L	
+v36top_L04	36	S62		M	?	L	
+v36top_L04	37	S89		H	?	L	prose after: line end
+v36top_L05	1	S35		M	?	L	prose before: line start
+v36top_L05	2	S26		M	?	L	
+v36top_L05	3	S70		M	?	L	
+v36top_L05	4	X_THETA2		M	?	L	
+v36top_L05	5	S89		H	?	L	
+v36top_L05	6	S52		H	?	L	
+v36top_L05	7	S73		M	?	L	
+v36top_L05	8	S66		M	?	L	
+v36top_L05	9	S75		H	?	L	
+v36top_L05	10	S20		M	?	L	
+v36top_L05	11	S47		L	?	L	
+v36top_L05	12	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L05	13	S35		M	?	L	
+v36top_L05	14	S45		M	?	L	
+v36top_L05	15	S84		M	?	L	
+v36top_L05	16	S88		M	?	L	
+v36top_L05	17	X_THETA2		M	?	L	
+v36top_L05	18	S70		M	?	L	
+v36top_L05	19	S47		M	?	L	
+v36top_L05	20	S75		H	?	L	
+v36top_L05	21	S75		H	?	L	
+v36top_L05	22	S53		L	?	L	
+v36top_L05	23	S62?	S71	M	?	L	
+v36top_L05	24	S40	S84	M	?	L	
+v36top_L05	25	S17		M	?	L	
+v36top_L05	26	S54		M	?	L	
+v36top_L05	27	S70		M	?	L	
+v36top_L05	28	S13		M	?	L	
+v36top_L05	29	S73		M	?	L	
+v36top_L05	30	S45		M	?	L	
+v36top_L05	31	S65		M	?	L	
+v36top_L05	32	S26		M	?	L	
+v36top_L05	33	S66		M	?	L	
+v36top_L05	34	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L05	35	S42		M	?	L	
+v36top_L05	36	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L05	37	X_THETA2		M	?	L	
+v36top_L05	38	S94		M	?	L	prose after: line end
+v36top_L06	1	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family; prose before: line start
+v36top_L06	2	S25		M	?	L	
+v36top_L06	3	S66		L	?	L	
+v36top_L06	4	S17		L	?	L	
+v36top_L06	5	S67		M	?	L	
+v36top_L06	6	S52		M	?	L	
+v36top_L06	7	S88		M	?	L	
+v36top_L06	8	S95		L	?	L	
+v36top_L06	9	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L06	10	X_NEW		L	?	L	8 with bar, i, 4/7 or oval-hook shape; see sign family
+v36top_L06	11	S54		M	?	L	
+v36top_L06	12	S25		M	?	L	
+v36top_L06	13	S20		M	?	L	
+v36top_L06	14	S62		M	?	L	
+v36top_L06	15	S95		M	?	L	
+v36top_L06	16	S75		M	?	L	
+v36top_L06	17	S73		M	?	L	
+v36top_L06	18	S70		M	?	L	
+v36top_L06	19	S34		M	?	L	
+v36top_L06	20	S57		M	?	L	
+v36top_L06	21	S54		M	?	L	prose after: prose follows

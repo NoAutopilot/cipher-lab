@@ -742,3 +742,80 @@ legible glossed instance, so no rule.
   "...l o delfin et le..." (the Dauphin?), unresolved. The rest is as NEVBIR-47C.
 
 f.87 (fr.3251) results are in `../ceppo-nevers-fr3251-1570s/NOTES.md`, section CEPPO-WITNESS-PAIRS.
+
+## F36-READ (3 Oct 2026, account-3 orchestrator's worker): f.36-37 (5 Apr 1571) whole letter under the printed Ceppo-Nevers key
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-f36-read.md`. Disk only, 0 network requests. No class, no novelty wording.
+Files: `harvest/f36/` (prompts, four raw passes, `compare_f36.py` [`--check` exits 1 if stale], `recon.tsv`, `passD.tsv`,
+`reading_key.txt`, `control_s{1,2,3}.txt`). Crops: `../ceppo-nevers-fr3251-1570s/harvest/witness_f36/cut_lines.py`'s `cut()` re-run
+with no overlap: `cut('../../../birago-fr3252-1571-72/harvest/f36/crops', 850, 0, 120, 65, 2)` -> 108 crops at 2x (not committed,
+`.gitignore`). Passages: f.36r foot (r36 L01-L15), f.36v top 6 lines, f.36v middle 6, f.37r 2.
+
+**Passes.** Two blind Sonnet readers x two pages (4 calls; the sheet `sign_sheet_blind.png` with ids only, glosses visible), each
+asked for sign id + the clerk's letter above it. Rows: A r36 521, A v36 275, B r36 563, B v36 406.
+- **The readers could not read the interlinear gloss.** 1,686 of 1,765 gloss cells came back '?'; the few letters they gave
+  do not spell Italian (A v36 L01 "zxdozlgnozud" where the gloss reads "parlandone il signor"). This is the second failure of Sonnet
+  gloss reading on this leaf (HARVEST-D, 28 Sept, at 1x; this job at 2x). The gloss is legible to an Opus eye at 2x (HARVEST-D read
+  line 1; this worker confirmed "parlandone il signor" on `v36top_L01` and "...signor Sau[oia]" running into s2), so the instrument
+  that failed is the Sonnet reader, not the image.
+- **f.36r line geometry is off.** From about L10 the r36 crop centres (HARVEST-D's eye-set grid) sit between two manuscript lines;
+  reader A took L15 as prose, reader B made L14 and L15 the same row (reading_key.txt rows r36_L14/L15 are near-duplicates). The
+  r36 lower lines are therefore double-counted or shifted by one; the count below includes that duplication.
+- Reconciliation (mechanical, `compare_f36.py`): ids aligned per line (difflib); agree 627, one-sided 144, split 222 -> '?'.
+  **Two-reader error E = (222 + 144) / 993 = 0.37** (used for the control; one-sided rows counted as error).
+
+**Control (rule 3)** (`decode_control.py passD.tsv --shuffles 200 --windows 20 --err 0.37 --extra X_THETA2=r --seed N`):
+
+| seed | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at 0.37 |
+|---|---|---|---|---|---|---|---|
+| 1 | 993 / 731 | -1.4850 | -2.0613 (0.119) | -1.6801 | 4.84 | 1/201 | 20/20, z median 5.03 (min 3.47) |
+| 2 | 993 / 731 | -1.4850 | -2.0732 (0.116) | -1.7481 | 5.09 | 1/201 | 20/20, z median 5.20 (min 3.70) |
+| 3 | 993 / 731 | -1.4850 | -2.0769 (0.105) | -1.8083 | 5.66 | 1/201 | 19/20, z median 4.75 (min 3.68) |
+
+The printed Ceppo-Nevers key (with X_THETA2 = r) is control-backed for the whole letter: rank 1 of 201 on every seed, margin over
+the best shuffle 0.20-0.32, power 19-20/20 at the same error.
+
+**Known-answer check against the period gloss** (HARVEST-D's eye read of f.36v line 1, 18 signs "parlandone il signor",
+`../ceppo-nevers-fr3251-1570s/harvest/witness_f36/alignment_pairs.tsv`, mapped to `v36top_L01` pos 1-18): of the 11 positions both
+readers agree on, 10 decode to the gloss letter (a r l d o e l s g o; pos 12 via S40 = l where HARVEST-D had S84 = l, same value),
+1 does not (pos 11, both readers S66 = c where the gloss has i and HARVEST-D saw S17: a shared shape slip). 7 positions split.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ciphers/birago-fr3252-1571-72/harvest/f36/reading_key_letters.txt`, pasted):
+```
+FAIL language: score=-1.55, null_p99=-1.781, real_p05=-0.917, real_median=-0.831, mode=both, N=731
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Above null p99, below real p05: what about a third of signs misread produces (same shape as f.47r, NEVBIR-47/47C).
+
+**Grades (rule 4).** 993 sign positions: 23 null; 254 unsettled (U); 716 decoded: **10 C** (v36top_L01, key value = period gloss),
+**706 M**; 0 H, 0 S. Not a reading. Fragments (M, gist only): r36_L01 "...[v]ostra ten..."; v36top_L01 "[p]arl[an]do[n]e ... s[i]g[n]o[r]",
+then "...qua..."; v36top_L04/05 "...esordece qu..." "altro"; r37_L02 "...arda". Not sentences.
+
+**Is the letter a period decipherment?** Every cipher passage carries the clerk's letter-by-letter gloss (HARVEST-D, confirmed on
+the crops this job). So yes: the plaintext of this letter exists on the leaf, in the clerk's hand, and the job of "reading" it
+is reading that gloss, not breaking anything. That is not done yet: 18 of about 990 glossed signs have been read.
+
+Subagent use: 4 Sonnet calls (~780k subagent tokens). Own session read `rate_limit allowed_warning` at 01:20 UTC after launch
+(ROOM flag); no further subagent started.
+
+## Remaining gaps (F36-READ, 3 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs; the key is control-backed (z 4.84-5.66, rank 1/201, power 19-20/20 at 0.37). f.47r: 0 S of about 770 (unchanged). f.117r: 276 signs, all M/U.
+- f.36-37 period gloss (about 970 glossed signs unread) - blocker: not-attempted; Sonnet gloss reading [retired] for this leaf (two attempts, 1x and 2x, both all-'?'); a different instrument is untried: Opus eye read of the gloss band, one line per call on 3x crops, transcribed as running Italian then aligned to the sign passes; next: Opus gloss read, 29 lines, ~$4 (wait until rate limit reads allowed)
+- f.36r lines L10-L15 crop geometry - blocker: not-attempted; HARVEST-D's eye-set centres drift between rows; next: re-centre with tools/iiif_lines.py --image c37_f36r_cipher.jpg (row ink profile), re-cut, ~$0.5
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read (CEPPO-WITNESS-PAIRS has a pre-registered f.36v-top tally, 3 Oct), disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
+
+## Escalation (F36-READ, 3 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ), the fr.3251 1572 group's sheet, maps, clerk key and controls used
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 whole letter (control-backed, F36-READ) and f.47r (NEVBIR-47); 1572 key on f.117r (z 3.2, judge FAIL); Nov 1571 system has no key
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss read by Opus eye (gives the true member of each look-alike pair); f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 decoy-null crib test
+- [x] image-check: f.36-37 2x crops all 29 lines (F36-READ); f.117r native crops; f.47r native re-cut
+- [ ] retry: f.36r L10-L15 re-centre and re-cut; f.117r power at a measured post-look-alike error
+Verdict: keep going: 9 internal gaps; cheapest next: re-centre the f.36r lower lines (~$0.5), then an Opus eye read of the f.36-37 period gloss (~$4) once the rate limit reads allowed

@@ -6,5 +6,9 @@ v36mid_L03	mlu
 v36mid_L04	ol
 v36mid_L05	
 v36mid_L06	n
-v36top_L01	zxdozlgnozud
+v36top_L01	zxdozlgnozu
 v36top_L02	toduoiozzl
+v36top_L03	oonoi
+v36top_L04	innoninonon
+v36top_L05	nobionin
+v36top_L06	o
