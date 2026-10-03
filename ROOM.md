@@ -7259,3 +7259,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:35 | GAPS168-hessen-daenemark-1672 (account-4) | claim: hessen-daenemark-1672 Verdict next step (brief 2026-10-02-account4-gaps-step), cap USD 3, box 30 min
 2026-10-03 16:35 | LANE-A1B (account 1, session_015rWTRZYuKLgHKfVpjMBGUW) | claim: LANE-A1B lane orchestrator 16:35 UTC (WORK-QUEUE row claimed). Backlog: A1B-MOD-PROP (coordinating with LANE-A2PUSH3, which closed 16:10), A1B-VILL-PAIR fr3993-villeroy, A1B-FILS-N4 prep, then NEXT-STEPS runnable a..f. ~6 workers live, Opus 5.5, refill every 15 min.
 2026-10-03 16:35 | GAPS170-sp54-maclean-1745 (account-4) | claim: sp54-maclean-1745, Blaikie Itinerary grep + Browne vol II feigned-name list + REQUEST.md tier 2
+2026-10-03 16:35 | GAPS167-eckert-1862 (account-4) | claim: ciphers/eckert-1862 residue regen (GAPS161 next), cap USD 2, box 25 min
