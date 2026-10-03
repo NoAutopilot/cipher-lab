@@ -30,7 +30,7 @@ the word's RANK within that column, counting down from the top. A subscript numb
 letters to trim from the end of the word so located. Any group whose first digit is 4-9 is a NULL (the dictionary's
 pages run only 1-3 digits, so no real page can start that high); the key's own prose says a null at the START of a
 message signals a switch to an English-Portuguese dictionary for that stretch, but does not say what a null found
-MID-MESSAGE means (we have one, see below). A proper noun or inflected form missing from the dictionary is spelled
+MID-MESSAGE means (the one we had, 829011, was re-read 3 Oct 2026 as 329011, see below). A proper noun or inflected form missing from the dictionary is spelled
 by concatenating trimmed fragments of several dictionary words (the key's own worked example spells "Russia" as
 "Rus"+"si"+"a" from three separate lookups).
 
@@ -47,7 +47,7 @@ open question -- either a dictionary-column count that could be off by one, or, 
 itself ambiguous between three shapes)
 
   [p.2] para[H] supprir[H] o[H] seu[H] lugar[H] junto[H] com[H] man[H] o[H]
-  d[H] justa[H] he[H] segredo[H] ate[H] {[null]} o[H] ministerio[H]
+  d[H] justa[H] he[H] segredo[H] ate[H] para[M] o[H] ministerio[H] (revised 3 Oct 2026: formerly the null 829011, re-read 329011; NOTES.md A1B-LIN-M0002b)
   [p.3] pela[H] memoria[H] do[H] cagar[M] lhe[H] pauperr[H] ven[H] ha[H]
   logo[H]
 

@@ -8,7 +8,7 @@ CLAUDE.md rule 10.
 Claim under audit (NOTES.md "Reading (LX-DEC, 25 Sept 2026)", updated by "Fix pass (LX-FIX, 25 Sept 2026)"): pages 2
 and 3 of a Portuguese letter in the Linhares papers (ANTT PT/TT/CLNH/0086/11, DigitArq docId
 `a03cef08d3c04758aa148f5be56d3401`, m0002) decode against Vieyra's 1809 Portuguese-English pocket dictionary to
-"para supprir o seu lugar junto com man o d justa he segredo ate [null] o ministerio / pela memoria do cagar lhe
+"para supprir o seu lugar junto com man o d justa he segredo ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section] / pela memoria do cagar lhe
 pauperr ven ha logo" (H 25, M 1); and the key sheet (m0003-m0004) names that dictionary only as "o Diccionario".
 
 ## 1. Executive verdict
@@ -59,7 +59,7 @@ open sources).
   no narrower date than the two-century span. m0002 carries pages "2" and "3" of a longer letter; pages 1 and 4
   are not part of this 6-image item (established by LX-TR, NOTES.md).
 - Reading as decoded (rule-10-safe quotation, LX-DEC/LX-FIX): "para supprir o seu lugar junto com man o d justa he
-  segredo ate [null] o ministerio / pela memoria do cagar lhe pauperr ven ha logo". About a quarter of the
+  segredo ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section] / pela memoria do cagar lhe pauperr ven ha logo". About a quarter of the
   26 tokens are single-letter or short dictionary-trim fragments (the key's own fragment-concatenation mechanic
   for proper nouns, e.g. "man", "d", "pauperr", "ven"), not free-standing words, so the fragment does not read as
   connected prose -- a real constraint on how findable it would be by an ordinary phrase search even if printed
@@ -454,3 +454,13 @@ directly, OpenAlex full-text filter). This session closed the Semantic Scholar g
 **Verdict: gate 2 closed** on the JSTOR and open-index side. Class unchanged: **N3** (key `ours`). Outreach is still blocked for
 a different reason: check-solved is `blocked` until the sender-family edition (*Textos Políticos*, 1993; LOCAL-QUEUE L10) is
 read (intake gate), which gate 2 does not cover. No reply bears on this item.
+
+## Reading revised after this audit (A1B-LIN-M0002b, 3 Oct 2026; propagated per rule 10)
+
+One token changed: p.2 line 2 pos 6, read as `829011` (a mid-letter null) by LX-TR, was re-read blind from a
+`tools/iiif_lines.py` crop by two independent passes as `329011` (first glyph 3, each pass at 55%). It decodes as
+p290 col1 rank 1 "Paralisía", trim 5 -> "para", graded **M**. Wherever this file quotes "ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section]",
+the current reading is "ate **para** o ministerio" (26 tokens, H 23 / M 3 / U 0; judge PASS -1.024 vs real_p05
+-1.122). A cancelled, looped group after it is illegible under its strike (`cancelled.tsv`) and is not part of the
+reading. No N-class change is made here: this is the solver side's propagation note, and any class change is a
+verifier's. Details: NOTES.md "m0002 p.2 line 2: cancelled group and first glyph of 829011".
