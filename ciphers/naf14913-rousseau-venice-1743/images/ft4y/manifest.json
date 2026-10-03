@@ -1,0 +1,340 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p252_00_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    645,
+    1160,
+    870,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_01_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    895,
+    1160,
+    1105,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_02_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    1105,
+    1160,
+    1350,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_03_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    1362,
+    1160,
+    1554,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_04_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    1570,
+    1160,
+    1770,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_05_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    1795,
+    1160,
+    1995,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_06_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    2055,
+    1160,
+    2230,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p252_07_L01.jpg",
+   "source_url": "",
+   "source_file": "src_f517_698_2951_3956_2620.jpg",
+   "box": [
+    2260,
+    1160,
+    2470,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_35_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L05_s1.jpg",
+   "box": [
+    805,
+    0,
+    985,
+    227
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     113
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_39_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L05_s2.jpg",
+   "box": [
+    110,
+    0,
+    310,
+    227
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     113
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_40_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L05_s2.jpg",
+   "box": [
+    320,
+    0,
+    550,
+    227
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     113
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_42_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L05_s2.jpg",
+   "box": [
+    800,
+    0,
+    955,
+    227
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     113
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_46_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L06_s1.jpg",
+   "box": [
+    395,
+    0,
+    610,
+    220
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p266_48_L01.jpg",
+   "source_url": "",
+   "source_file": "f266r_L06_s1.jpg",
+   "box": [
+    882,
+    0,
+    1054,
+    220
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}
