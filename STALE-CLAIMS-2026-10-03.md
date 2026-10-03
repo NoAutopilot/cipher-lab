@@ -229,4 +229,4 @@ except the live dispatcher; record-only (private) and out-of-scope rows were not
 | T83 | session_01MfUCoGEp3JXMbVTkFHKbdq | GitHub connection | 2026-09-21 23:19 | out-of-scope | GitHub connection test, 21 Sept, no job (same treatment as account 3 S8); not archived | - |
 
 Counts, account 2: landed 74, superseded 3 (T15 A2-HAR5; T78, T79 the two DECODE curl-login sessions of 24 Sept), lost 0, never-started 0;
-record-only private 2, out-of-scope 3, live dispatcher excluded 1. Archived: the 77 landed/superseded sessions.
+record-only private 2, out-of-scope 3, live dispatcher excluded 1. Archived 76 of the 77 landed/superseded sessions; the archive call for session_015DaE5rVM1789AY8g52Kg3w (NEVBIR-POOL, landed) was refused by this session's permission classifier and was not retried -- left idle for the owner or orchestrator to archive.
