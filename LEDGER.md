@@ -1700,3 +1700,5 @@ the end of every wake.
 | 2 Oct 2026 | A2-LAG2 | session_012qqHLKhbKyRdG1C2fVdSGy | account 2 (LANE-A2PUSH) | Opus 5.5 | 1.86 | D | done 23:44: run-2 margin note reads 'N. c. f.' |
 | 2 Oct 2026 | A2-SHA2 | session_012kzn1v2Dm1QrRu75iK5kPA | account 2 (LANE-A2PUSH) | Opus 5.5 | 1.08 | N | done 23:46: Forster Original Letters 1830 and 1847 OCR: 0 hits; next a TNA page-copy order |
 | 2 Oct 2026 | A2-CAS8 | session_01Btih1t3bjaPKJ4HHjpE6NN | account 2 (LANE-A2PUSH) | Opus 5.5 | 3.18 | N | done 23:53: family_run seeded_code added; matched control 0.070 vs 0.6 gate, CONTROL BELOW GATE, target not run |
+| 3 Oct 2026 | NEVBIR-47 | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | fr.3252 f.47r whole letter 771 signs: Ceppo-Nevers key rank 1/201 z 3.4-4.2 power 19-20/20 -> partial + NEAR row; text word islands only |
+| 3 Oct 2026 | BIRAGO-NUM-SCOUT | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | N | 15 more Birago/Nevers letters Sept 1571-Mar 1572 viewed: no third letter in the numerical key |
