@@ -1,0 +1,58 @@
+{
+ "T1": {
+  "crop": "images/crops_gaps49/g49_b_L01.jpg",
+  "id": "b",
+  "what": "left N first sign",
+  "class": "query",
+  "scale": 2
+ },
+ "T2": {
+  "crop": "images/crops_gaps55/g55_u2_L01.jpg",
+  "id": "u2",
+  "what": "2077 L08:3 [u-dots]",
+  "class": "control-dots",
+  "scale": 2
+ },
+ "T3": {
+  "crop": "images/crops_gaps55/g55_u1_L01.jpg",
+  "id": "u1",
+  "what": "2077 L15:0 [u-dots]",
+  "class": "control-dots",
+  "scale": 2
+ },
+ "T4": {
+  "crop": "images/crops_gaps49/g49_f_L01.jpg",
+  "id": "f",
+  "what": "left K b",
+  "class": "control-none",
+  "scale": 1
+ },
+ "T5": {
+  "crop": "images/crops_gaps49/g49_d_L01.jpg",
+  "id": "d",
+  "what": "right N middle sign",
+  "class": "query",
+  "scale": 1
+ },
+ "T6": {
+  "crop": "images/crops_gaps49/g49_c_L01.jpg",
+  "id": "c",
+  "what": "right M sign",
+  "class": "query",
+  "scale": 1
+ },
+ "T7": {
+  "crop": "images/crops_gaps49/g49_g_L01.jpg",
+  "id": "g",
+  "what": "right O k",
+  "class": "control-none",
+  "scale": 1
+ },
+ "T8": {
+  "crop": "images/crops_gaps49/g49_a_L01.jpg",
+  "id": "a",
+  "what": "left M first sign",
+  "class": "query",
+  "scale": 2
+ }
+}
