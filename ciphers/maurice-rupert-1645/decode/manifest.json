@@ -1,0 +1,8 @@
+{"source":"DECODE record 8627 (BL Add MS 72438 ff.25-26, author 'L. Digby', type Key), fetched 3 Oct 2026 00:12 UTC by FT4-maurice-rupert-1645 via tools/decode_browser_login.js 8627 . --guess-fullsize (one login)",
+ "files":{
+  "TH_IMG_R8627_I39836_P{1,2,3}.jpg":"DECODE thumbnails as served",
+  "p1_2000.jpg":"f.25r, full-size IMG_R8627_I39836_P1.jpg (6333x9460, 14,052,313 bytes) shrunk to 2000px long side",
+  "p2_2000.jpg":"f.25v endorsement, from IMG_R8627_I39836_P2.jpg (6188x9369, 12,811,060 bytes)",
+  "p3_2000.jpg":"f.26r blank (watermark DURAND), from IMG_R8627_I39836_P3.jpg (6263x9345, 12,997,792 bytes)",
+  "record_8627.html":"RecordsView page, account name scrubbed (4 occurrences -> [account])",
+  "fullsize_sha1.txt":"sha1 of the deleted full-size files (deleted to keep the folder under 30 MB); re-fetch: https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8627_I39836_P<n>.jpg after a DECODE login"}}

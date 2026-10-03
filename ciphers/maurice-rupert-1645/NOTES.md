@@ -124,3 +124,39 @@ printed neighbourhood, hold no other ciphertext.
 
 Requests this pass: archive.org be-api 11 (>=2 s apart) + 1 metadata, googleapis.com 2 (keyed, country=US), github.com 0
 (clones shared with this batch). No logins, no DECODE call.
+
+## First cheap test: DECODE 8627, the Digby-cabinet key index (FT4-maurice-rupert-1645, account-4, 3 Oct 2026)
+
+Run 3 Oct 2026, 00:11-00:16 UTC (`date -u`). The test named by GF4-BATCH1: does the contemporary index of keys taken in
+Lord Digby's cabinet (BL Add MS 72438 ff.25-26, DECODE record 8627) list a Maurice-Rupert key?
+**Result: no. No key was applied, so there are no target or control numbers.** Status stays `open`.
+
+- **Route.** One DECODE browser login (`tools/decode_browser_login.js 8627 . --guess-fullsize`). The first attempt
+  failed with `ERR_CERT_AUTHORITY_INVALID` before the login form loaded, so no login was spent on it. This container's
+  NSS database did not hold the proxy CA, which goes against the 20 Sept note that the setup script adds it. After
+  the playbook's `certutil` fix, the second run logged in and **served all three full-size images** (6188-6333 x
+  9345-9460 px, 12.8-14.1 MB each, real JPEGs). So 72438 full-size images are reachable for this record too, as
+  A2-HDK found for record 4692. Files are in `decode/`: 2000 px copies, thumbnails, the scrubbed RecordsView page and
+  `manifest.json`. The full-size originals were deleted to keep the folder under the 30 MB limit; their sha1s are in
+  `fullsize_sha1.txt` and the re-fetch URL is in the manifest.
+- **What the index says** (f.25r, transcribed in `decode/index_f25r.tsv`, one vision read at 2000 px). The heading is
+  "Cyphers taken in the Ld Digbys". Keys are numbered 80-90, then 100-139, about 52 entries. Correspondents include
+  the Countess of Cork, Lady Goring, Culpeper, Antrim, Killigrew, Vavasour, Ogle, Inchiquin, Secretary Nicholas,
+  "His Maties Cypher with the Queene" (123), Lord Goring, Kenelm Digby, Newport and "many sheets De Vics hand" (138).
+  **No entry names Maurice or Worcester.** The only Rupert entry is **118, "Ormond & Pr: Rupert"**. f.25v carries
+  only the endorsement "List of L. Digbys Cyphers &c". f.26r is blank apart from a DURAND watermark. The index is
+  complete at 80-139.
+- **Why this is a real negative for the index, and why it does not close the key.** These are keys captured from
+  Digby's papers (Sherburn, Oct 1645). A key held only by Maurice and Rupert would sit in Rupert's or Maurice's own
+  papers (Add MS 18980-82, the source Warburton printed from), not in Digby's cabinet. So the index's silence fits
+  the premise and rules out only the 72438 keys listed here. Key 118 is the one Rupert key in the set. Bourdeau
+  tested a "Charles I-Rupert-Digby-Ormonde 1644-45" key against this letter by ranges and rejected it; whether that
+  key is the same table as index 118 has not been checked.
+- **Next step** (keep going; not blocked): find which 72438 Key record holds index no. 118 (the Ormond-Rupert
+  cipher) and check its number range against this letter (max 398; two-digit groups never consecutive). Only if
+  the ranges fit, apply it with a shuffled-key control (rule 3). Estimate: one DECODE login, reading thumbnails of
+  records 8628-8745 for a "118" heading, at most ~15 requests, about $2. After that comes the Add MS 18982 ff.95-96
+  Osborne decipherment (REQUEST.md), which needs BL images, not DECODE.
+
+Requests: de-crypt.org 8 (1 failed TLS navigation before login, then login + RecordsView + 6 filesrv, 1.6 s apart),
+one login. Vision calls: 2 (f.25r; f.25v+f.26r together).
