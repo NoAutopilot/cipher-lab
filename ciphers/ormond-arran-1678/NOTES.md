@@ -385,7 +385,7 @@ googleapis.com 3 (keyed, country=US), github.com 2 (shallow clones, shared with 
 
 ## FT4-ormond-arran-1678 (3 Oct 2026, account-4): Carte calendar route
 
-Run 3 Oct 2026 02:21-02:40 UTC (`date -u`). No cryptanalysis, no reading, no test.
+Run 3 Oct 2026 02:21-02:29 UTC (`date -u`). No cryptanalysis, no reading, no test.
 
 **Route that worked.** The Bodleian's own online Carte Calendar pages (`bodley.ox.ac.uk/dept/scwmss/projects/carte/carte54.html`)
 now 301 to `archives.bodleian.ox.ac.uk/...`, which serves an Anubis "Making sure you're not a bot!" page to curl (1 request);
