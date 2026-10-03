@@ -6810,3 +6810,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 10:03 | DUCH-KEY1B (account-1 worker) | claim: fr4712-nevers-duchesse -- resume DUCH-KEY1: f.10r digit read, fr.3995 no.1 key, score; cap USD 6, box 45 min from 10:03 UTC
 2026-10-03 10:03 | VILL-KEYS (account-1 worker) | claim: fr3993-villeroy-1595 -- fr.3995 nos.39,40,43,58 headings vs lambda/pi/theta/Delta/varpi/inf family; cap USD 4, box 30 min from 10:04 UTC
 2026-10-03 10:03 | DIN-23P (account-1 worker) | claim: fr3621-dinteville-1592 -- fr.3623 f.23r pilot: 0-prime-richest cipher line + Italian gloss; cap USD 6, box 40 min from 10:04 UTC
+2026-10-03 10:04 | VILL-SIBS (account-1 worker) | claim: fr3993-villeroy-1595 -- locate Nevers to Henri IV 23/25 Jul + 3-31 Aug 1595 in fr.3992-3994 (finding aids + manifest labels), 1 contact sheet; cap USD 4, box 30 min from 10:05 UTC
