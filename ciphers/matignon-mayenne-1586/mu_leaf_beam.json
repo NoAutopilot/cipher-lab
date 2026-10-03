@@ -1,0 +1,403 @@
+{
+ "job": "GAPS-matignon-mayenne-1586 gap 1",
+ "leaves": [
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.1222,
+      "null_max": 0.1407,
+      "null_mean": 0.079,
+      "passed": false
+     },
+     "m_acc": 0.9123,
+     "m_first_base": 0.7193,
+     "m_freq_base": 0.5614,
+     "m_n": 114,
+     "m_oracle_majority": 0.7456,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.1095,
+      "null_max": 0.1074,
+      "null_mean": 0.0639,
+      "passed": true
+     },
+     "m_acc": 0.8467,
+     "m_first_base": 0.6467,
+     "m_freq_base": 0.5667,
+     "m_n": 150,
+     "m_oracle_majority": 0.74,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.1179,
+      "null_max": 0.1408,
+      "null_mean": 0.0734,
+      "passed": false
+     },
+     "m_acc": 0.907,
+     "m_first_base": 0.5426,
+     "m_freq_base": 0.5039,
+     "m_n": 129,
+     "m_oracle_majority": 0.6434,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.6362,
+   "ctl_freq_base": 0.544,
+   "ctl_m_acc": 0.8887,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f143r",
+   "n_tokens": 724,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.0499,
+      "null_max": 0.0585,
+      "null_mean": 0.0347,
+      "passed": false
+     },
+     "m_acc": 0.8413,
+     "m_first_base": 0.7933,
+     "m_freq_base": 0.6587,
+     "m_n": 208,
+     "m_oracle_majority": 0.8365,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.0442,
+      "null_max": 0.0831,
+      "null_mean": 0.0546,
+      "passed": false
+     },
+     "m_acc": 0.8864,
+     "m_first_base": 0.6761,
+     "m_freq_base": 0.5739,
+     "m_n": 176,
+     "m_oracle_majority": 0.6875,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.0516,
+      "null_max": 0.0803,
+      "null_mean": 0.0529,
+      "passed": false
+     },
+     "m_acc": 0.8122,
+     "m_first_base": 0.6022,
+     "m_freq_base": 0.4862,
+     "m_n": 181,
+     "m_oracle_majority": 0.7127,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.6905,
+   "ctl_freq_base": 0.5729,
+   "ctl_m_acc": 0.8466,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f143v",
+   "n_tokens": 1182,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.1026,
+      "null_max": 0.1085,
+      "null_mean": 0.048,
+      "passed": false
+     },
+     "m_acc": 0.75,
+     "m_first_base": 0.6912,
+     "m_freq_base": 0.6029,
+     "m_n": 68,
+     "m_oracle_majority": 0.6912,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.0491,
+      "null_max": 0.0843,
+      "null_mean": 0.037,
+      "passed": false
+     },
+     "m_acc": 0.8281,
+     "m_first_base": 0.5469,
+     "m_freq_base": 0.4219,
+     "m_n": 64,
+     "m_oracle_majority": 0.6094,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.0142,
+      "null_max": 0.1059,
+      "null_mean": 0.0554,
+      "passed": false
+     },
+     "m_acc": 0.8254,
+     "m_first_base": 0.5873,
+     "m_freq_base": 0.4127,
+     "m_n": 63,
+     "m_oracle_majority": 0.6984,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.6085,
+   "ctl_freq_base": 0.4792,
+   "ctl_m_acc": 0.8012,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f150",
+   "n_tokens": 445,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.0539,
+      "null_max": 0.0809,
+      "null_mean": 0.0487,
+      "passed": false
+     },
+     "m_acc": 0.7273,
+     "m_first_base": 0.7468,
+     "m_freq_base": 0.487,
+     "m_n": 154,
+     "m_oracle_majority": 0.7727,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.0802,
+      "null_max": 0.087,
+      "null_mean": 0.0628,
+      "passed": false
+     },
+     "m_acc": 0.8052,
+     "m_first_base": 0.6494,
+     "m_freq_base": 0.4221,
+     "m_n": 154,
+     "m_oracle_majority": 0.6818,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.0477,
+      "null_max": 0.096,
+      "null_mean": 0.0564,
+      "passed": false
+     },
+     "m_acc": 0.8829,
+     "m_first_base": 0.6306,
+     "m_freq_base": 0.4324,
+     "m_n": 111,
+     "m_oracle_majority": 0.6937,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.6756,
+   "ctl_freq_base": 0.4472,
+   "ctl_m_acc": 0.8051,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f154",
+   "n_tokens": 1061,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.0344,
+      "null_max": 0.0744,
+      "null_mean": 0.0421,
+      "passed": false
+     },
+     "m_acc": 0.7358,
+     "m_first_base": 0.7799,
+     "m_freq_base": 0.5283,
+     "m_n": 159,
+     "m_oracle_majority": 0.7987,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.0399,
+      "null_max": 0.0862,
+      "null_mean": 0.0384,
+      "passed": false
+     },
+     "m_acc": 0.8333,
+     "m_first_base": 0.7222,
+     "m_freq_base": 0.4722,
+     "m_n": 144,
+     "m_oracle_majority": 0.7222,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.0434,
+      "null_max": 0.0665,
+      "null_mean": 0.0324,
+      "passed": false
+     },
+     "m_acc": 0.8667,
+     "m_first_base": 0.6952,
+     "m_freq_base": 0.4762,
+     "m_n": 105,
+     "m_oracle_majority": 0.6952,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.7324,
+   "ctl_freq_base": 0.4922,
+   "ctl_m_acc": 0.8119,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f173",
+   "n_tokens": 1082,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.0338,
+      "null_max": 0.0661,
+      "null_mean": 0.0338,
+      "passed": false
+     },
+     "m_acc": 0.7413,
+     "m_first_base": 0.6993,
+     "m_freq_base": 0.6224,
+     "m_n": 143,
+     "m_oracle_majority": 0.7063,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.0769,
+      "null_max": 0.0826,
+      "null_mean": 0.0481,
+      "passed": false
+     },
+     "m_acc": 0.7547,
+     "m_first_base": 0.4906,
+     "m_freq_base": 0.3962,
+     "m_n": 106,
+     "m_oracle_majority": 0.5189,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.1438,
+      "null_max": 0.1074,
+      "null_mean": 0.0678,
+      "passed": true
+     },
+     "m_acc": 0.7734,
+     "m_first_base": 0.4453,
+     "m_freq_base": 0.375,
+     "m_n": 128,
+     "m_oracle_majority": 0.5703,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.5451,
+   "ctl_freq_base": 0.4645,
+   "ctl_m_acc": 0.7565,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": false,
+   "leaf": "f196",
+   "n_tokens": 840,
+   "testable": false
+  },
+  {
+   "control": [
+    {
+     "gain": {
+      "gain": 0.1386,
+      "null_max": 0.1078,
+      "null_mean": 0.0591,
+      "passed": true
+     },
+     "m_acc": 0.8261,
+     "m_first_base": 0.528,
+     "m_freq_base": 0.3789,
+     "m_n": 161,
+     "m_oracle_majority": 0.5652,
+     "seed": 1
+    },
+    {
+     "gain": {
+      "gain": 0.1269,
+      "null_max": 0.1047,
+      "null_mean": 0.0675,
+      "passed": true
+     },
+     "m_acc": 0.7566,
+     "m_first_base": 0.5132,
+     "m_freq_base": 0.4408,
+     "m_n": 152,
+     "m_oracle_majority": 0.5461,
+     "seed": 2
+    },
+    {
+     "gain": {
+      "gain": 0.1219,
+      "null_max": 0.1099,
+      "null_mean": 0.0665,
+      "passed": true
+     },
+     "m_acc": 0.8707,
+     "m_first_base": 0.4966,
+     "m_freq_base": 0.3605,
+     "m_n": 147,
+     "m_oracle_majority": 0.5578,
+     "seed": 3
+    }
+   ],
+   "ctl_first_base": 0.5126,
+   "ctl_freq_base": 0.3934,
+   "ctl_m_acc": 0.8178,
+   "gate_a": true,
+   "gate_b": true,
+   "gate_c": true,
+   "leaf": "f201",
+   "n_tokens": 987,
+   "target": {
+    "beam_score": -1.2155,
+    "first_score": -1.2449,
+    "gain": 0.0294,
+    "m_changed": 58,
+    "null_max": 0.0781,
+    "null_mean": 0.0481,
+    "passed": false
+   },
+   "testable": true
+  }
+ ],
+ "passed": 0,
+ "prereg": "mu_leaf_beam_prereg.md",
+ "testable": 1,
+ "verdict": "NON-TEST AT THIS N (fewer than 4 of 7 leaves testable)"
+}
