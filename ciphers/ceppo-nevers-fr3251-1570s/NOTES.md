@@ -1033,7 +1033,7 @@ HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short p
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
 - f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; verifier (VERIFY-CEPPO-WP, AUDIT.md): 7 accepted and applied (endorsed 113 -> 120), L04.41/L05.42 contested (t at M), L02.35 rejected; next: passC L04.39 (D reads a barred 8) and a glossed S76/S31 instance on f.36r/f.37r, ~$3
-- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
+- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; ff.27/39/82 searched for the sign by A1B-CEPPO-POUND (3 Oct 2026): 0 occurrences of the pre-registered form (f.27's two upright L's are the plain corner sign, key row 42 = s; f.82 none; f.39 has no gloss); next: scan the unread lines of the fr.3252 f.36r/f.36v/f.37r native regions and the slip already on disk (`harvest/witness_f36/c37_f36r_cipher.jpg`, `c38_*`) for the pound form and read its gloss with two blind readers under the same pre-registration, ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
 ## Escalation (2 Oct 2026)
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 3 internal gaps; cheapest next: look for the pound sign on ff.27, 39, 82 and read its interlinear value, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: scan the unread fr.3252 f.36r/f.36v/f.37r lines on disk for the pound sign and read its gloss, ~$3
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1104,7 +1104,7 @@ L03 "...avendo..." ("having"), L05 "secre[t]amente" ("secretly", unchanged).
 
 ## Premise check (A1B-CEPPO-POUND, 3 Oct 2026)
 
-Adversarial pass per `.claude/briefs/check-solved.md` "## Premise check", run 16:5x UTC, disk and two read-only clones.
+Adversarial pass per `.claude/briefs/check-solved.md` "## Premise check", run 16:4x UTC, disk and two read-only clones.
 - **(a) Decipherments the folder already mentions -- found, none of the four targets.** Tomokiyo's printed Ceppo-Nevers key
   (fr.4702 ff.36-37, `nevers_add1.png`) is a key, not a reading of fr.3251; his own note says it reads the fr.4702 letter
   "but not quite". The three "(with decipherment)" witnesses ff.27, 39, 82 were opened (NEV-C2/C3, `images/manifest.json`):
@@ -1124,7 +1124,7 @@ Adversarial pass per `.claude/briefs/check-solved.md` "## Premise check", run 16
 - **(d) Recipient side -- not found.** Nevers' papers are the recipient's own archive (fr.3251 is in the Nevers collection);
   no printed edition of Birago-Nevers letters exists (birago-nevers-1571 check-solved, two web searches); the recipient-side
   print found so far is Pascal 1960 (clear text only) and Boltanski 2006 (unread in full, AUDIT.md). Nothing new located.
-Verdict: no find on (a)-(d); the item is not calibration or found-solved. The f.11r pound sign's value is not published
+Premise result: no find on (a)-(d); the item is not calibration or found-solved. The f.11r pound sign's value is not published
 in any source above.
 
 ## A1B-CEPPO-POUND: pre-registration (3 Oct 2026, written before any gloss is read)
@@ -1146,3 +1146,30 @@ left panel) on the witnesses ff.27, 39, 82.
   support. Readers split, or occurrences disagree = stays I, logged as a split. Zero located occurrences = stays I; the
   gap's next step moves to a different witness (fr.3252 f.36r/37r unscanned lines) or f.11v.
 - **Stop rule:** no vision call would cross 80 pct of the USD 4 cap.
+
+## A1B-CEPPO-POUND: result -- the pound sign does not occur on ff.27, 39 or 82 (3 Oct 2026)
+
+Pre-registration above (commit c5412f90, pushed before any band was viewed). Disk only, 0 requests, 0 subagents,
+0 blind vision calls (the pre-registered rule runs readers only on located occurrences, and there were none).
+- **Script locate.** No witness sign table (`witness/witness_f27_signs*.tsv`, `witness_f82_signs.tsv`,
+  `witness_f82_blind_line1.tsv`) describes a pound form. The one witness sign labelled m row 2 (f.82 line2 pos23) is
+  described as S31's own printed shape (flourished g), not the pound.
+- **Eye scan, this worker, one eye.** Bands cut in scratchpad from `images/f82/src_f82r_band.jpg` (3 strips) and
+  `images/f27/src_ark_12148_btv1b9060248g_f28_4717_3412_3285_463.jpg` (3 strips), viewed at native size; local PIL crops
+  of regions of the iiif_lines.py source bands (the tool's own output, NEV-C2/C3), no new fetch.
+  f.82: no upright pound form in the three cipher lines; the crossed-loop forms present are the leaning S84 type (closed
+  loops at both ends of a horizontal stroke). f.27: two upright L-shaped signs, at x 330-640 ("+ L D +", the same run
+  shape as f.11r P1 "z / pound / triangle / +") and x 880-1150 ("b b L . 2 9"); kept as
+  `images/f27/f27_plainL_x330_1x2.jpg` and `f27_plainL_x880_1x2.jpg`. Both are a plain right-angle L in the crisp
+  ruled-stroke style of the triangle beside it -- no lower loop, no upper loop, no crossbar -- so they fail the shape
+  rule. They match key row 42 (s, "crisp (ruled-line) angular corner-bracket"), and the gloss letter under the first looks
+  like s (one eye, M; not read by blind readers, not used for any grade). f.39: no interlinear gloss on f.39r, f.39v or the
+  facing f.40r (NEV-C2), so it cannot give a value whatever signs it carries; its 1000 px images were not re-scanned.
+- **Outcome under the pre-registration:** zero located occurrences -> the 7 pound positions on f.11r stay I (the other
+  5 f.11r I tokens untouched). No decode re-run, no AUDIT.md or SECOND-OPINIONS-QUEUE.tsv change (nothing promoted).
+  One side note for the next reader: f.27's "+ L D +" run parallels f.11r's "z pound D +" run, but the f.27 L reads s
+  and f.11r's context reads l there (s gives "sa restitucione", "aschuni", "sochi"), so the parallel does not transfer
+  a value; the two forms are distinct signs.
+- **Where not found:** fr.3251 ff.27r (both cipher lines), 82r (three cipher lines) on the native bands; f.39r-v by
+  NEV-C2's record. Not searched: fr.3252 f.36r lines 4-8, f.36v lines 6 on, f.37r after line 1, the f.37r slip
+  (the named next step), and f.11v (never fetched).
