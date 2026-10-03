@@ -1,6 +1,7 @@
 # Eckert Papers, 1862 "Ciphers Sent" ledger (Huntington mssEC 15)
 
 status: partial
+War of the Rebellion ser. I vol. 7 (IA warofrebellionco0007vari, `_djvu.txt` full text) grepped by this worker (GF-A2-10, 3 Oct 2026): p. 624 prints T8, Lincoln to Halleck 16 Feb 1862, in clear ("In the midst of a bombardment at Fort Donelson, why could not a gunboat run up"); the ledger's other entries stay coded in every source checked below.
 checked: 19 Sept 2026
 target: QUEUE.md rank 1, "Thomas T. Eckert Papers, US Military Telegraph: ledgers of telegrams sent 'still in
 code', 1862-67 (Huntington mssEC 1-76)". This folder is the pilot on one ledger, mssEC 15 (1 Feb-21 July 1862).
@@ -136,3 +137,50 @@ table, the hour of T7 (16 Feb, 1 PM; OR "[February 16 (?)]") and the T10 variant
   (30 Mar 2017) and "Bickering Generals" (Olga Tsapina, 18 May 2017), decodingthecivilwar.wordpress.com.
 - Follow-up suggestion (verifier, 24 Sept 2026, not done): the reading.md summary sentence "the only variants are
   clerical" should be corrected by the solver lane to name the T10 variants (AUDIT.md section 3).
+
+## Web and blog check (GF-A2-10, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Eckert telegrams 1862 "ciphers sent" ledger decoded code words McClellan Halleck` -- OAC finding aid
+   (ark:/13030/c86m3964), Huntington collection pages, Seth Kaller sale page (482). Finding aid: "the sent messages
+   are ciphered; the received telegrams are mostly decoded". No decoded edition of the sent ledgers.
+2. `"mssEC 15" Huntington Eckert cipher telegram ledger` -- the same finding-aid and Huntington item pages, a
+   wcgs.org 2016 announcement. Nothing decoding mssEC 15.
+3. `"Decoding the Civil War" Eckert telegrams decoded 2025 OR 2026 Claude OR GPT solves` (model-solve family) --
+   Huntington Verso/Frontiers posts, Smithsonian 2016, Zooniverse project, openhistoryhub.com thread 63889 (opened:
+   2016 announcement and one reply "This is such a neat project", nothing decoded). No model-solve announcement.
+4. Descriptive title: covered by 1-2 (folder title "Eckert Papers, 1862 Ciphers Sent ledger").
+Blog site searches:
+- Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Civil War telegram Eckert Union cipher`): returned the
+  blog's tag page /tag/civil-war/ (opened 3 Oct 2026: posts on a Pitman letter 2018/03/17, a cipher tool 2018/04/15,
+  "who can decipher this civil-war-era code" 2018/04/17, a Confederate cipher cover 2018/12/20; zero mentions of
+  Eckert, Huntington or ledger on the tag page). The 2018/04/17 post and its comments opened: no mention of Eckert,
+  Huntington, ledger, telegraph or Stager.
+- Cryptiana blog (`site:cryptiana.blogspot.com Eckert OR Stager telegram cipher Civil War`): no blog page returned.
+  Tomokiyo's site pages (civilwar0/1/1b, local snapshot) were read for section 1 above: they cover the cipher books
+  and the Milroy (No. 7) telegrams, not the 1862 sent ledgers.
+- Cipher Mysteries (`site:ciphermysteries.com Eckert telegrams Civil War ledgers`): no ciphermysteries.com page
+  returned.
+No comment thread found that decodes an mssEC 15 entry. The project's own blog (decodingthecivilwar.wordpress.com)
+did read single 1862 entries in 2017 (section 3 "Prior art" and AUDIT.md); that is already logged.
+
+## Premise check (GF-A2-10, 3 Oct 2026)
+
+(a) Folder's own mentions -- found, already handled: the Decoding the Civil War blog's 2017 single-entry readings
+(Andes, Alden, Alvord, Anthon, Palate; section 3 and AUDIT.md); the received ledgers mssEC 01-03 "where incoming
+telegrams sometimes appear with the code words resolved" (section 5) -- a source of resolved code words, not a
+decipherment of the sent entries. Nothing in the folder names a decipherment of the mssEC 15 residue.
+(b) Other solvers' working files -- not found. Shallow clones 3 Oct 2026: dbourdeau/cyphersolver (HEAD 2341682)
+mentions Eckert only in its copies of Tomokiyo's unsolved list (`unsolved.htm`, `targets/napoleon/unsolved.txt`:
+"In 2016, the project 'Decoding the Civil War' started to transcribe and decipher about 16,000 telegrams"); its
+`milroy` work is Cipher No. 7 telegrams, not the ledgers. aaymeloglu/unsolved-ciphers (HEAD d2800bb): no Eckert,
+mssEC or Civil War telegraph file (cited, not copied).
+(c) Physical neighbours -- not found as a decipherment: mssEC 01 (received, Feb-July 1862) was harvested on
+19 Sept and used only for address conventions; it is the received side, decoded, of other telegrams. No clear copy of
+the sent entries is bound in mssEC 15 (172 page texts harvested 19 Sept). Pages not re-viewed this pass.
+(d) Recipient's side -- found for the ten, as already logged: OR ser. I vols. 7-8 print the ten entries (p. 624
+re-checked this pass), and the AUDIT.md verifier lists the Lincoln Collected Works, Sears' McClellan and
+Nicolay-Hay. Recipient-side papers for the unprinted residue (Halleck's, Buell's received telegrams; Papers of U. S.
+Grant vol. 4 for Feb 1862) were not searched this pass; next: grep Papers of U. S. Grant vol. 4 and OR vols. 9-12
+for the residue's dates, ~USD 1.5.
+Not found-solved: the residue (about 296 entries) is not decoded in any source checked.
