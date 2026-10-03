@@ -27,3 +27,10 @@ Gate: system test PASS if real agreement >= 0.60 AND above the p95 of both nulls
 gloss at that position is H-read, and every aligned occurrence of the sign in 175 gives the same value (n >= 1); a split stays M and is
 logged as a data conflict (rule 4). If the gate fails, nothing is regraded.
 If fewer than 3 glossed runs are readable at native resolution, stop and log "too-short".
+
+## Addendum 15:05 UTC (before any blind read or alignment; after one scoping look at three p1 crops, logged in NOTES.md "AVS175")
+Scope reduced to fit the box: runs = WVO 175 p1 cipher lines c1 (y~920-975, gloss 'Den Graffe verdacht ...'), c2 (y~1045-1100, gloss
+'Leibs und gutes gefahr wir ...') and c3 (y~1415-1470, gloss 'wir uns allzeit besorget haben'). Everything else in the prereg stands
+(statistic, nulls >= 200 draws each, gate real >= 0.60 and > p95 of both nulls; the "fewer than 3 runs" stop rule is met at exactly 3).
+The two blind reads are Sonnet subagents given cipher-only crops and a 98-system reference sheet cut from f.66 with align_98.txt's codes;
+the gloss read is a third subagent given gloss-only crops. With n this small a PASS licenses only the sign values seen at those positions.
