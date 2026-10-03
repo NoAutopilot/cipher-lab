@@ -434,6 +434,29 @@ prints in clear) sits inside the control bulk. Verdict: untestable by this stati
 1867 date and Mulliss's objection (#6) stand as they were. This tokenisation counts 73 words, not Boyouk's 74. No token
 read (H 0, C 0, S 0, M 0, I 0 for ad 2). Rule-10 wording: a consistency test of a community candidate, not a decipherment.
 
+## GAPS169-pollaky-1865-1875 (3 Oct 2026, account-4): gap 2 (c), Baertl's digit-sum rule on ad 2
+
+Pre-registration (written before any scoring, 3 Oct 2026). Rule under test (Max Baertl, Schmeh post 29 comment #1,
+16 June 2017; sources/schmeh/posts/29-pollaky.txt lines 256-273): replace each digit group by the sum of its digits,
+change the one 27 to 26, then read the sums as a simple substitution (one sum value = one letter) by frequency.
+Baertl's reading: NAMIM PLEARY FUND US TO THE WAS TO THE BATTSREINGASSILB (46 letters).
+Facts checked before scoring (no statistic): our 36 groups give the sums
+11 15 20 18 26 5 15 9 22 12 4 11 2 4 14 10 17 10 8 5 7 15 10 10 14 9 5 19 11 16 15 14 14 19 27 6.
+Baertl's 46 values are these plus 10 more: "19 20" after the third value, and the run "14 10 17 10 8 5 7 15"
+repeated (his values 25-32 copy 17-24). His second "TO THE" comes from that duplicated run, and his own letters give
+sum 7 two letters (B, W), so the reading does not follow his stated rule exactly.
+Statistic T: the best mean add-one letter-trigram log10 prob (English, the corpus in scripts/laura_rule.py) that a fixed
+hill-climbing simple-substitution solver (value -> letter, many-to-one allowed; 8 restarts x 1500 swaps, the same
+budget for every sequence) reaches on a sum sequence. Sequences scored: S1 our 36 sums with 27->26; S2 Baertl's 46.
+Null control: 200 synthetic same-shape strings (uniform random digits, same group lengths; for S2 the same 46-group
+shape including the duplicated run) -> digit sums -> same solver. T varies with the sequence's repeat pattern and value
+spread, so the null can differ from the target on this axis. Positive control (power): 100 English windows of the same N
+from the corpus, each letter sent to a random distinct sum value drawn from the target's own range, scored the same way;
+power = share above the null p95. Ceiling check: if the null median is within 0.05 of the positive median, the test is a
+non-test. Second statistic B: Baertl's own reading's mean trigram score against 200 same-length English windows (p05)
+and against the solver outputs on the null. Pass: target above null p95 with power >= 0.5. Otherwise untestable (power
+< 0.5) or not supported (power >= 0.5, target inside the null). Seed 169; script scripts/baertl_digitsum.py.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 0 of 4 ads read in this repo. Ad 1 is 0/10 signs, ad 2 is 0/36 digit groups (36 counts "9:77314" as two groups; 35 if it is one), and ads 3-4 are 0/72 letter-words re-derived here (NOTES.md Test 1 table, Test 2 diff). There is no key, decode script, AUDIT.md or HYPOTHESES.md here, and nothing is graded. The ads 3-4 ciphertext is corroborated: two passes agree on 78/80 tokens, and the text matches Ernst's BNA-checked text 72/72. Their community readings are tracked in ciphers/catokwacopa-1875, which has its own gaps section (1 Oct 2026). Pollaky's authorship of ads 3-4 is Schmeh's attribution (post 29; 2 Oct 2026: the W. ads are not among the twelve ads "signed by Pollaky" in his 2014-15 list, only in the 2016 post's sentence, GAPS section above). The ads are signed "W.", not Pollaky, and this repo has not established the attribution.
 - Ad 1 (16 May 1865): 10 invented signs inside a plaintext sentence - blocker: not-attempted; statistics cannot help at N=10 (K=9, SIGN-01 repeats at positions 1 and 6; IC 0.0222 falls inside both N=10 control scatters, NOTES.md Test 1). Two cheap internal steps are still untried. First, the signs are built from a few parts (dots, dashes, bars, one bracket pair; ciphertext.txt sign table), so a compositional design (part counts or positions to letters or numbers) can be tested directly. Second, the clear frame "...fortunately in time to [10 signs] shall return to England..." is a crib. Also, the on-disk image is a modern redrawing (clean vector signs, modern serif type, no paper texture; viewed 1 Oct 2026), not the newspaper page (rule 2), so sign details are conditional on the redrawer; next: run a component-decomposition plus frame-crib test with Laura's bars-x-dots rule (part 1 comment #4, 25 Aug 2016, reads B E N D A B U C H P; recorded 2 Oct 2026) as the pre-registered candidate, scoring the same rules on shuffled-sign and random-sign controls of N=10 and reporting both numbers; find the original newspaper and date through the print step, ~$2; 3 Oct 2026 (GAPS160 section above): the component test ran -- Laura's rule gives "bencabuchp" (our sign 04) / "bendabuchp" (hers); frame-bigram T -1.14 beats shuffled-sign p95 -1.29 (tail 0.002) and random-sign p95 -1.20 (tail 0.019), rank 1 of 104 sibling rules, positive-control power 0.98: supported as a design candidate on T; word coverage W 0.6 = random p95 0.6, so no word reading clears its control; 10 letters M, none read. Next for gap 1: settle sign 04 (3 vs 4 dots) and find the newspaper page (print step), then a word-level crib with v-z/other signs tested against the frame, ~$2
