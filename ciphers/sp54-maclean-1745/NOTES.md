@@ -166,3 +166,88 @@ Requests this pass (3 Oct 2026): archive.org 1 (Lyon vol. 1 djvu, HTTP 500; Murr
 sp36 pass). WebSearch 4.
 
 Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp54-maclean-1745: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp54-maclean`: no line.
+
+## FT4-sp54-maclean-1745 (3 Oct 2026, account-4): Lyon vol. 1 retry, crib list, planned crib test
+
+No cryptanalysis was run in this job. The ciphertext of SP 54/25/5 and 8B is **not on disk**: SP 54/25 is not digitised,
+and the TNA page copy is still awaited (REQUEST.md, ASKS row 57). So `tools/design_prior.py` was **not run**, because it
+has no input. The design statement below comes from the period sources, not from sign statistics.
+
+**(1) Lyon in Mourning vol. 1, by a different route.** The djvu.txt download failed (HTTP 500) on 25 Sept and again on
+3 Oct. This time Internet Archive's full-text API answered: `be-api.us.archive.org/fts/v1/search?identifier=lyoninmourningor01forbuoft`,
+10 calls, 9 at HTTP 200 and 1 at 502 ("Burnet"; not retried). Hits: "Hector", "Mac Lean" and "Castlehill" all return the
+same passage: "...loyalty did upon the fifth of June last cause apprehend Sir Hector Mac Lean and George Blair [sic] of
+Castlehill, by three o'clock in the morning, being informed they were to set out...". This is a third independent
+confirmation of the 5 June 1745 arrest. "Barclay" returns only unrelated hits (James Barclay in a list of Elcho's men; R.
+Barclay of Dorking, an 1892 manuscript owner). "cipher", "cypher" and "Linlithgow" return 0 hits. The API returns one
+snippet per item and no real page number (CLAUDE.md access playbook), so this is not a whole-volume read. The
+volume is **not** cleared for print risk. It is now reachable but unread, not unreachable.
+
+**(2) Crib list.** Sources: Murray of Broughton's *Memorials* (SHS 1898, `memorialsofjohnm00murr`, refetched and grepped
+3 Oct 2026) and Blaikie's *Origins* (`originsoffortyfi00blaiuoft`, refetched 3 Oct 2026). Grades follow rule 4: H/C for
+what a source states, I for what we infer about the seized papers.
+
+| crib | where stated | grade for "in the seized papers" |
+|---|---|---|
+| Linlithgow; "Wednesday" (the meeting day, 6 June 1745) | Memorials p.136 (Barclay letter: "go with him to Linlithgow on the Wednesday"), p.157 ("an appointment ... att Linlithgow with the D.") | C for the Barclay letter's clear content; I for the cipher letters |
+| "the D." / Duke of Perth | p.157 (as the Justice Clerk read "the D."); p.135 (packet "not to be opened till the Duke of Perth was present") | C (Barclay letter), I (8B) |
+| ague, vomit, the bark (the writer's illness) | p.136 | C, Barclay letter only |
+| signatures "J. Barclay" and "Barclay" (Murray) | p.136 and p.101 note (Bell: aliases used by Murray) | C for the 5/8B group *only if* the Barclay letters are among SP 54/25/5's three (not checked; TNA item description next) |
+| the Prince's "intended voyage, and the signals he was to make" | p.135 (what Maclean told Murray orally) | I (plausible content of the Burnet packet; not stated as written) |
+| addressee Murray, under a cant name; the Prince signing "Burnet" | catalogue text of 8B; *Origins* glossary and pp.60-62 (Burnet = the Prince, Fisher = the King of France, Cuming, Moore, Martin, Morris as cant names in clear) | H for "Burnet" (catalogue); I for the rest |
+| Lord John Drummond's regiment; recruiting; George/John Blaw of Castlehill | catalogue text of SP 54/25/5 (QUEUE N37); Memorials pp.126, 135 | H for the catalogue wording |
+| people near the packet: Duke of Perth, Lochiel, Elcho, Traquair, Sir James Steuart, Macleod of Macleod, Sheridan, Balhaldy | Memorials pp.126-137, 396-397; *Origins* pp.60-66 | I |
+
+**Design these cribs would fit.** In 1744 Murray wrote to "Mr. Burnet" in a mixed system: plain English with cant names in
+clear, and names and places in numeric groups up to about 1950. Blaikie prints these groups with meanings on pp. 60-66 of
+*Origins*. His note says they were "deciphered partly by comparison with other ciphers; partly from information given by
+Murray in his Memorials; occasionally by conjecture". Examples:
+
+- 636 616 1614 12 30 1392 = probably Captain Clephan
+- 425 1876 1614 = Rotterdam
+- 434 1054 1730 = Captain Anderson
+- 598 1614 = probably officers of his regiment
+- 1389 1051 C13 = Lord Elcho
+- Sir 1293 43C 1055 1744 1045 1948 1679 1778 = Sir James Steuart (printed with 948 instead of 1948 on p.66)
+
+Footnotes on pp. 64-66 also gloss the Duke of Perth, Lochiel, Traquair and Macleod. One name takes several groups, and
+1614 recurs as a final group across different names. That looks like a numeric syllabary or letter-group nomenclator,
+not a one-code-per-name list. "Letters, partly in cipher, from Burnet" fits this design: the Prince's side of the same
+correspondence, a year later. This is inferred, not checked against the image.
+
+**(3) Planned crib test, pre-registered here, to run only once the TNA copy is transcribed:**
+1. *Known-code overlap.* Statistic: the number of distinct numeric groups in 5/8B that also appear in Blaikie's printed
+   1744 Murray-Burnet groups, about 40 distinct groups on pp. 60-66. List the groups mechanically from the djvu text, then
+   check them against the page image. Matched control: 10,000 draws of the same number of distinct groups, uniform over the
+   target's own observed range, and separately a digit-permuted copy of the target's groups. Each control's overlap can
+   differ from the target's on this statistic, so it is not a non-test (rule 3, the "control that cannot vary" paragraph).
+   PASS needs the target's overlap above the 99th percentile of the uniform draws AND above the digit-permuted copy.
+   Also needed: at least 3 shared groups whose Blaikie meaning fits the plain-text slot around them (a name slot gets a
+   name). A PASS means "same code family, worth a key rebuild", not a reading.
+2. *Crib placement (only after 1 passes).* Place the multi-group name cribs from the table (Perth, Linlithgow, Murray's
+   cant name, Lord John Drummond, Blaw) at every slot whose plain-text context says "name". Count the slots where a
+   placement agrees with a code already fixed by Blaikie or by another placement. Matched control: the same count on a
+   synthetic letter of the target's N, built from a random relabelling of a 1,950-group syllabary over the same cribs.
+   Gate: rule 3's headline control-first order. Do not read a target count until the synthetic control shows the count
+   recovers a planted crib at that N. N is unknown until transcription; the control's N is set from the transcription, never guessed.
+3. Graded output: per-token H/C/S/M/I counts; `tools/judge_plaintext.py` with an era-matched English corpus before any
+   PASS is reported (rule 3, the pt18 paragraph; en18 is the nearest corpus).
+
+Requests this job: be-api.us.archive.org 10 (fts, 1.6 s apart; one 502, not retried), archive.org 2 (Memorials djvu,
+Origins djvu; refetches, since the earlier session's copies were not on this container's disk). No WebSearch.
+
+## Remaining gaps (FT4-sp54-maclean-1745, 3 Oct 2026)
+Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk)
+- SP 54/25/5 and 8B ciphertext - blocker: waiting-on ASKS row 57 (TNA page copy, REQUEST.md); not digitised on Discovery
+- print risk: Lyon in Mourning vol. 1 read only by fts snippets - blocker: not-attempted; vol. 1 reachable by be-api fts but the djvu file 500s; next: be-api fts for "Burnet" (502 today), "Drummond", "Perth" plus a person's read in the IA reader if a hit lands, ~$1
+- item-level description of SP 54/25/5 (are the "Barclay" letters among the three?) - blocker: not-attempted; the While waiting step of 3 Oct names it and nobody has run it; next: tools/discovery_items.py "SP 54" "SP 54/25", ~$0.5
+
+## Escalation (FT4-sp54-maclean-1745, 3 Oct 2026)
+- [n/a] siblings: no sibling cipher letter on disk; the 1744 Murray-Burnet letters are in print only (Origins pp.60-66), used as known keys below
+- [x] clear-pages: Memorials pp.134-137, 157 give the Barclay letters' clear content (crib table above)
+- [ ] known-keys: Blaikie's printed 1744 Murray-Burnet numeric groups (Origins pp.60-66) are the planned overlap test, waiting on the transcription
+- [ ] print: Lyon vol. 1 fts for "Burnet", "Drummond", "Perth"; Browne's History vol. ii appendix (prints a "J. Barclay" letter, Memorials p.101 note) unread
+- [n/a] key-rebuild: no ciphertext on disk to rebuild a key against
+- [n/a] image-check: no image of SP 54/25 is available; waiting on TNA copy
+- [ ] retry: Lyon vol. 1 "Burnet" fts query (502 on 3 Oct), once, on a later day
+Verdict: keep going: 2 internal gaps; cheapest next: tools/discovery_items.py "SP 54" "SP 54/25" for the item description, ~$0.5
