@@ -1128,3 +1128,65 @@ Gachard, Correspondance de Guillaume le Taciturne.
 Requests: none (no network). Vision: 0 reads, 0 subagent calls. New files: `families/ic_design_check.py`,
 `families/ic_design_check.tsv`.
 
+
+## GAPS149: periodicity test on the base codes (3 Oct 2026, account-4)
+
+**Job:** GAPS145's named next step. Is the flat base-code profile (IC 0.0420) a periodic polyalphabetic, or an
+aperiodic design such as running key or homophonic? The work is scripts only: no network, no vision, no subagents.
+Intake gate exit 0 (same line as GAPS145).
+
+**Pre-registration.** The decision rule was committed before any run: `families/periodicity_prereg.md`, commit
+e33a96cd. For p = 1..20 the script takes IC_p, the mean unbiased column IC with token i in column i mod p, and the
+excess E_p = IC_p - IC_1. Each E_p is z-scored against a pooled aperiodic null: masc, running key and homophonic K=26,
+40 seeds each. The family-wise statistic is Z = max z_p over p = 2..20. The target counts as "periodic at p0" only
+if three things hold:
+1. Z is above the null's p95.
+2. At least half of the multiples of p0 up to 20 have z > 2.
+3. The periodic-Vigenere control at p0 detects its own period in at least 50% of seeds.
+
+A miss excludes Vigenere only at periods whose own control detects at least 80% of the time. Script:
+`families/periodicity_check.py`, output `families/periodicity_check.tsv`, seeded, `--check`.
+
+**Controls.** All controls use fr16 at N=229, K=26 and noise 0.23. The aperiodic null uses the `homophonic.py`
+profile-redraw noise recipe. Periodic Vigenere runs with a random key at p = 2..12, under both profile and uniform
+noise. This statistic depends on token order, and a periodic control can differ from an aperiodic one on it, so this
+is a real test (rule 3).
+
+| | Target | Aperiodic null (120) | Vigenere controls (40 per period) |
+|---|---|---|---|
+| Max z, p = 2..20 | **1.93** (at p=7) | p95 3.13, max 4.68 | mean 3.9-8.4; target's percentile in them 0.000-0.050 |
+| Friedman L_F | **10.6** | masc median 0.97; running key 9.0 (p05-p95 3.8-301); homophonic 4.8 (2.9-13.2) | 2.0-19.7 (median, by period and noise) |
+
+Per-design rank of the target's Z: masc 0.43, running key 0.80, homophonic 0.63. The target's largest per-period z
+are p7 +1.93, p18 +1.40, p9 +1.23 and p16 +1.22. None reaches 2, so the multiples rule never fires.
+
+Vigenere detection rate by period (profile / uniform noise): p2 0.70/0.78; p3 0.93/0.88; p4 0.83/0.70; p5 0.98/0.95;
+p6 0.58/0.43; p7 0.80/0.88; p8 0.73/0.70; p9 0.40/0.60; p10 0.70/0.68; p11 0.80/0.70; p12 0.60/0.43.
+
+**Result.** Under the pre-registered rule there is no periodic signal (rule 1 fails: 1.93 < 3.13). A periodic
+Vigenere on the base codes is **excluded, control-backed, at periods 3, 5 and 7**, where the control detects at least
+80% of the time under both noise models. Periods 4 and 11 are excluded under profile noise only. Periods 2, 6, 8-10
+and 12, and 13-20, are **untested** at this N and error, because their power is below 80%. Descriptively, the
+target's Z falls below the 5th percentile of every Vigenere control at every period from 2 to 12.
+
+Friedman L_F 10.6 does not discriminate. It sits at the running-key median and in the upper tail of homophonic (92nd
+percentile), and it reflects the flat IC that GAPS145 already found. Caveat (pre-registered): the 11 dropped MARK^
+flourishes, and any sign dropped or doubled in transcription, shift column phase. The controls model substitution
+error only, so the exclusion holds conditional on no phase slips. 0 tokens read (H 0, C 0, S 0, M 0, I 0). Status
+unchanged (`open`).
+
+**Ladder now.** masc is excluded by IC (GAPS145). Periodic Vigenere is excluded at p3, p5 and p7, and untested at the
+other periods. The surviving aperiodic designs, homophonic and running key, are not separated by IC, IC-by-period or
+Friedman. Nomenclator and syllabary/wordcode stay open (controls below gate, WC-LAGARDE2).
+
+**Next cheapest step.** None of the remaining statistics can separate homophonic from running key at N=229 and 23%
+error. The next step needs new material:
+- a sharper image of KHA A 11/XIV C/M-12, to lower the error and raise power at the untested periods; or
+- more same-system ciphertext, for example Gachard, *Correspondance de Guillaume le Taciturne*, which would pool N.
+
+A cheap scripted option is a contact/digram test (homophonic spreads a letter's bigram partners across signs; running
+key gives near-independent bigrams), with matched controls at N=229, about USD 1. Its power at this N is unknown and
+must be checked on the control first.
+
+Requests: none. Vision: 0 calls. New files: `families/periodicity_prereg.md`, `families/periodicity_check.py`,
+`families/periodicity_check.tsv`.
