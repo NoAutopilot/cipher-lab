@@ -1,0 +1,35 @@
+You are a reader of Arabic-script manuscripts (Arabic, Persian, Ottoman, Malay Jawi and other Southeast-Asian Jawi
+orthographies). Use no tools other than reading the 7 image files named below; read no other file.
+
+The 7 images are one-line crops, top to bottom, of a modern hand copy (pen on paper) of a short inscription in an
+Arabic-type script from an object of unknown origin. The copy carries a few English pencil/pen annotations by the
+copyist (arrows, "?", "hard to read", brackets, a crosshatched patch); ignore them as text, but note where they mark a
+letter as doubtful. The script is read right to left. Short-vowel marks may be absent.
+
+FILES (line 1 to line 7):
+%%FILES%%
+
+GROUPS. A separate transcription counted the visible gaps in each line and numbered the resulting groups FROM THE RIGHT
+(group 1 = rightmost). Its group counts are: L01 6, L02 15, L03 4 (one illegible stretch inside), L04 15 (one illegible
+stretch inside), L05 6, L06 15, L07 4. Use the same convention (count gaps from the right edge of the writing) to say
+where each of your readings sits. In Arabic script a gap can be a word break OR the normal break after a non-joining
+letter (ا د ذ ر ز و), so a word may span two or more groups. If your own count of groups in a line differs, say so in
+"group_count_seen" and still number from the right as best you can; also give the horizontal position of the reading
+as a fraction of the crop width from the RIGHT edge (0.0 = right edge, 1.0 = left edge).
+
+The language is not known. Candidates people have proposed include Arabic, Persian, Malay (Jawi), Tausug, Maranao,
+Kurdish; consider any of them and others.
+
+TASK
+Read whole words from the hand, not sign by sign: whatever words or short phrases you can, allowing for the copyist's
+errors. For each reading give: the line (L01..L07), group_from and group_to, x_from and x_to (fractions from the right),
+the word as you would restore it in Arabic script, a romanisation, the language, an English gloss, and your confidence:
+H = I would defend this reading to a colleague; M = plausible; L = a guess. Say which letters you assumed were miscopied.
+Do not force readings: an empty list or a few low-confidence items is an acceptable answer. Also give one or two
+sentences on what kind of text this looks like (if anything) and which language seems most likely, with confidence.
+
+Answer with JSON only, in this shape:
+{"group_count_seen": {"L01": 6, "L02": 15, "L03": 4, "L04": 15, "L05": 6, "L06": 15, "L07": 4},
+ "items": [{"line": "L05", "group_from": 1, "group_to": 1, "x_from": 0.0, "x_to": 0.1, "arabic": "...", "roman": "...",
+  "language": "...", "gloss": "...", "confidence": "M", "assumed_misreads": "..."}],
+ "overall": "...", "language_guess": "...", "language_confidence": "L"}
