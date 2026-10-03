@@ -236,3 +236,35 @@ disputes.
 **Verdict:** status stays `open`; all three spec cheap tests are now run, none moved it. Next step: a distinct-code
 statistic preregistered with a second, blind coder (one coder's codes decide both sides here), about USD 1, and for the
 family question, S5 (N=180) with a by-eye K and a matched control at N=180, K=145 first, about USD 2.
+
+## S5 matched control, homophonic family (A2P4-SCORP3, 3 Oct 2026, 18:13-18:18 UTC)
+
+Intake gate: `python3 tools/intake_gate_check.py scorpion-1991` -> `scorpion-1991: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Script only; no vision call, no host.
+
+Question: once S5 (cryptogram 2) is transcribed, can the `homophonic` family read anything at its size? Control only,
+**no target run** (S5 has no settled transcription). Prereg in `HYPOTHESES.md` (commit 9fad4b05) before any run. N and K
+come from a shape-only placeholder, `scripts/s5_shape_placeholder.py` (flattest profile: as many hapax as possible, the
+rest doubletons), never a transcription: `scripts/s5_shape_N180_K155.txt`, `scripts/s5_shape_N180_K145.txt`.
+`python3 tools/family_run.py specs/scorpion-1991.json --family homophonic --control-only --cipher ciphers/scorpion-1991/scripts/s5_shape_N180_K155.txt --tokens space --param profile=target --seeds 3 --restarts 8`
+(spec judge corpora pg1661_holmes + pg2701_mobydick, seeds 1-3, restarts 8, gate 0.6, as A2P4-SCORP).
+
+| run | control recovery mean (range), seeds 1-3 | realized control K | target |
+|---|---|---|---|
+| primary: N=180, K=155 (spec/Schmeh), profile=target | 0.037 (0.011-0.067) | 95-110 | not run (no transcription) |
+| sensitivity: N=180, K=145 (Bourdeau), profile=target | 0.131 (0.061-0.228) | 94-106 | not run |
+| sensitivity: N=180, K=155, default profile | 0.081 (0.050-0.100) | 107-113 | not run |
+| for reference, S1 (A2P4-SCORP): N=70, K=53, profile=target | 0.038 (0.000-0.071) | 35-39 | not run (CONTROL BELOW GATE) |
+
+All three are far below the 0.6 gate. The controls realize fewer distinct signs (94-113) than the nominal 145-155 (English
+text of 180 letters cannot fill that many homophones under the generator), so they are *easier* than S5 would be and still
+read 4-13 percent. Per the prereg: the `homophonic` family is **untestable at N=180, K=145-155**, and with A2P4-SCORP's
+N=70 result, untestable by this family on both published cryptograms (rule 3: not a negative on either). It agrees with
+Bourdeau's unicity analysis (S5 below the unicity distance for a homophonic key). Grades: no reading, so no tokens graded.
+
+**Verdict:** status stays `open`. A full S5 transcription is **not** worth costing for a homophonic-family attempt: the
+control shows the family cannot read a text of this shape even when the transcription is perfect. What would move it:
+new material (the three unpublished Scorpion messages Schmeh mentions, held by police, would pool the sign count), or a
+constrained design hypothesis (a cycling/sequential homophonic, per Pelling 2020, as a family with its own control at
+N=180) -- no such family is on the shelf (tools/families/, checked 3 Oct 2026); next: a cycling-homophonic family module plus
+its control at N=180, a tool job, ~$3-4, worth briefing only if the lane wants a design hypothesis on a hoax-risk target.

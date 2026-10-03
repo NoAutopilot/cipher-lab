@@ -67,6 +67,15 @@
    "target": "primary statistic (S1 non-letter sign types with an identical-code counterpart, of 41): Zodiac 14, control 12 (difference 2); split: shape/stroke codes Zodiac 11 vs control 12 of 38, mirrored letters (RL:E, RL:F, RL:L) Zodiac 3 vs control 0 by construction; S1 letter types 12 of 12 in Zodiac and in plain A-Z",
    "moved": "no -- preregistered rule (Zodiac - control >= 5 and one Zodiac-only match) gives NO SUPPORT for 'draws on published Zodiac material'; descriptive only, codes one coder's judgement (M). Post-hoc, not preregistered: by distinct codes Zodiac 13 vs control 6 (S1's circle-wedge and dome families inflate the control's per-type count); Zodiac-only matches are mirrored E/F/L, circle-with-cross, pi/sideways-K, dotted triangle, square-dot, caret, slash, dash",
    "script": "python3 ciphers/scorpion-1991/shape/score.py [--check]"
+  },
+  {
+   "test": "2 continued (homophonic anneal matched control at cryptogram 2's size, control only, no target)",
+   "date": "3 Oct 2026",
+   "worker": "A2P4-SCORP3 (account 2, LANE-A2PUSH4), brief .claude/briefs/runs/2026-10-03-acct2-a2p4-scorp3.md",
+   "prereg": "ciphers/scorpion-1991/HYPOTHESES.md PREREG A2P4-SCORP3 (commit 9fad4b05, before any run)",
+   "control": "N=180 English homophonic, spec judge corpora, seeds 1-3, restarts 8, shape-only placeholder (scripts/s5_shape_placeholder.py, flattest profile). Primary K=155 profile=target: mean 0.037 (0.011-0.067), realized K 95-110. Sensitivity K=145 profile=target: 0.131 (0.061-0.228); K=155 default profile: 0.081 (0.050-0.100)",
+   "target": "not run (S5 has no settled transcription; control-only by brief)",
+   "moved": "no -- homophonic family untestable at N=180, K=145-155 (controls easier than the target still read 4-13 percent); with A2P4-SCORP's N=70 result, untestable by this family on both published cryptograms (rule 3, not a negative). An S5 transcription is not worth costing for this family; next needs new material (the unpublished messages) or a constrained design (cycling homophonic) with its own control"
   }
  ],
  "judge": {

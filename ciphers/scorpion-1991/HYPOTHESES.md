@@ -33,3 +33,6 @@ before any transcription spend.
 |---|---|---|---|---|---|---|---|---|
 | 3 Oct 2026 17:40 | homophonic | N=70 K=53 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt profile=target | 1-3 | 0.038 (0.000-0.071) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | A2P4-SCORP S1 ours |
 | 3 Oct 2026 17:40 | homophonic | N=70 K=53 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.133 (0.086-0.171) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | A2P4-SCORP S1 ours, sensitivity (not preregistered): default profile |
+| 3 Oct 2026 18:15 | homophonic | N=180 K=155 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt profile=target | 1-3 | 0.037 (0.011-0.067) | not run (control-only) | - | no | A2P4-SCORP3 S5 shape placeholder, primary |
+| 3 Oct 2026 18:16 | homophonic | N=180 K=145 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt profile=target | 1-3 | 0.131 (0.061-0.228) | not run (control-only) | - | no | sens_K145_profile |
+| 3 Oct 2026 18:16 | homophonic | N=180 K=155 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.081 (0.050-0.100) | not run (control-only) | - | no | sens_K155_default_profile |
