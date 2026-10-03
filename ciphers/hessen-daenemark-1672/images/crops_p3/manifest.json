@@ -1,0 +1,298 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p3_L01.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    623,
+    2500,
+    809
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L02.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    809,
+    2500,
+    1008
+   ],
+   "lines_in_crop": 2,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L03.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1008,
+    2500,
+    1198
+   ],
+   "lines_in_crop": 2,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L04.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1198,
+    2500,
+    1383
+   ],
+   "lines_in_crop": 2,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L05.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1383,
+    2500,
+    1566
+   ],
+   "lines_in_crop": 2,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L06.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1566,
+    2500,
+    1755
+   ],
+   "lines_in_crop": 2,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L07.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1755,
+    2500,
+    1943
+   ],
+   "lines_in_crop": 2,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L08.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    1943,
+    2500,
+    2175
+   ],
+   "lines_in_crop": 2,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L09.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    2175,
+    2500,
+    2398
+   ],
+   "lines_in_crop": 2,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L10.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    2398,
+    2500,
+    2578
+   ],
+   "lines_in_crop": 2,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L11.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    2578,
+    2500,
+    2744
+   ],
+   "lines_in_crop": 2,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L12.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    2744,
+    2500,
+    2960
+   ],
+   "lines_in_crop": 2,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L13.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    2960,
+    2500,
+    3135
+   ],
+   "lines_in_crop": 2,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "p3_L14.jpg",
+   "source_url": "",
+   "source_file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+   "box": [
+    120,
+    3135,
+    2500,
+    3335
+   ],
+   "lines_in_crop": 2,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 89,
+    "distance": 62,
+    "prominence": 105.6
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}

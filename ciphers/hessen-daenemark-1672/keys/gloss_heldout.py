@@ -3,11 +3,18 @@
 For each occurrence of a code seen at least twice, predict its gloss from the other occurrences (majority) and score a hit
 when the first min(8, len) folded letters agree ('?' matches any letter). Control (rule 3): the same statistic after
 permuting glosses among all occurrences (codes and counts fixed, so the control can vary on the statistic), 10000 draws.
-Usage: python3 keys/gloss_heldout.py [--seed N]"""
+GAPS159 (3 Oct 2026): `--set CIPHER_LINE=CODE` (repeatable) overrides one row's code before scoring, e.g.
+`--set p2:25.2=650` scores the page-2 row as both passes read it, without the reconciler's 690 override.
+Usage: python3 keys/gloss_heldout.py [--seed N] [--set CIPHER_LINE=CODE ...]"""
 import csv, os, random, re, sys
 P = os.path.join(os.path.dirname(__file__), '..', 'transcription', 'gloss_pairs.tsv')
 seed = int(sys.argv[sys.argv.index('--seed') + 1]) if '--seed' in sys.argv else 1
 rows = list(csv.DictReader(open(P, encoding='utf-8'), delimiter='\t'))
+sets = dict(a.split('=', 1) for i, a in enumerate(sys.argv) if i and sys.argv[i - 1] == '--set')
+for r in rows:
+    r['cipher_raw'] = sets.pop(r['cipher_line'], r['cipher_raw'])
+if sets:
+    sys.exit(f"--set rows not found: {sorted(sets)}")
 codes = [r['cipher_raw'] for r in rows]
 gl = [re.sub(r'[^a-z?]', '', r['plain_raw'].lower()) for r in rows]
 def same(a, b):
