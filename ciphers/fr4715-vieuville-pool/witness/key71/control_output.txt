@@ -1,0 +1,5 @@
+A known answer (C): 7=Roy 71=montolon 93=Mr 14=Card de bourbon 22=Soissons
+A REAL 5/5 | permutation (120, exact) mean 1.000 p95 3 max 5 | random-code (10000) mean 0.088 p95 1 max 2 | layer rule: mark-selected
+B REAL 25/33 = 0.758 | label permutation (10000) mean 0.043 p95 0.121 | disagreements (Tomokiyo/key71): 5:a/- 11:r/- 16:r/- 19:r/- 48:e/- 49:s/- 52:t/- 59:o/-
+M pairs (data, not gating): 13=Narre 27!=nauarre? 27=Neuers 52=Normandie 44!=Roy 99!=bours 49!=Champagne
+GATE FAIL

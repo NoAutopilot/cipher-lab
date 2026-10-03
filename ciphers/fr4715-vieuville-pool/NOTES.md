@@ -1058,9 +1058,50 @@ instrument that would give these codes period values.
 Rule 10: nothing here is called new or first. A leaf whose plaintext Cabinet Noir publishes is N0-type for any later
 reading of ours. Nothing was decoded in this job.
 
+## GAPS-fr4715-vieuville-pool-14 (3 Oct 2026, account-4): the Verdict step -- key no.71 (fr.3995 f.133r) behind a known-answer gate
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, the CABNOIR Verdict step. Clock read 03:14-03:2x UTC.
+Gallica: 1 request (canvas f256 native, 4100x6157, label '133r' from the cached manifest via `tools/gallica_folio.py
+btv1b525085665 --folio 133`; the leaf is written sideways, rotated 90 deg clockwise to `images/key71/f256_rot.jpg`).
+Crops: `python3 tools/iiif_lines.py --image images/key71/f256_rot.jpg --out images/key71 --region X,640,W,3300
+--prefix k71cN --lines-per-crop 10` for the eight column groups (X,W = 780,520 1250,700 1890,660 2490,660 3090,660
+3690,640 4270,860 5070,1080) and `--region 760,320,5400,320 --prefix k71hdr --lines-per-crop 3 --max-width 1400` for
+the header: 35 crops, `images/key71/manifest.json`; images not committed (regenerable from the one native fetch).
+Vision calls 1 of 2: one blind Opus pass over the 35 crops (`witness/key71/pass_a.tsv`, 309 rows, 3 table entries at L;
+not told our glosses). Reconciliation: the worker's own look at one header crop (the letter row is half-hidden under a
+paper strip; pass A had the 22 numbers in order without letters), `scripts/key71_reconcile.py` ->
+`witness/key71/key71_reconciled.tsv` (22 letter slots at M, 253 word-code rows in three layers). Two Motz rows (50-51)
+and one (91) fall between crops and are not in the file.
+
+**What the key is.** A full nomenclator. Mark convention, read by pass A: **Motz 11-99, one dot over the tens digit**
+(13 car, 22 Je, 27 les, 44 pas, 49 sa, 52 si, 57 auec, 71 Elle, 93 quil, 99 vous); **Villes 11-48, Prouinces 49-66, Noms
+generaulx 67-72 and an unheaded box 73-100 (troops, Cardinal ... Monsieur 93 ... habitans), a dot over each digit**
+(Provinces 60-66 and 67-69 carry an extra dot); **Noms propres 1-80 and Dames 81-89, a bar** (Roy 6/7/8 braced, Royne
+de nauarre 13, C. de Bourbon 14, Comte de Soissons 22, Duc de Neuers 25/26/27 braced, Mr de Retz 44, Montholon 71).
+Letter header: a 25, b 10, c 65, d 75, e 23/24, f 20, g 30, h 40, i 63/64, l 50, m 60, n 73/74, o 85, p 70, q 80, r 1,
+s 83/84, t 95, u 93/94, x a triangle, y 90, z a crossed o.
+
+**Gate, as pre-registered in `witness/key71/PREREG.md` (commit 7778b15d, before any score).**
+`python3 scripts/key71_control.py` (output `witness/key71/control_output.txt`), exit 3:
+```
+A known answer (C): 7=Roy 71=montolon 93=Mr 14=Card de bourbon 22=Soissons
+A REAL 5/5 | permutation (120, exact) mean 1.000 p95 3 max 5 | random-code (10000) mean 0.088 p95 1 max 2 | layer rule: mark-selected
+B REAL 25/33 = 0.758 | label permutation (10000) mean 0.043 p95 0.121 | disagreements (Tomokiyo/key71): 5:a/- 11:r/- 16:r/- 19:r/- 48:e/- 49:s/- 52:t/- 59:o/-
+M pairs (data, not gating): 13=Narre 27!=nauarre? 27=Neuers 52=Normandie 44!=Roy 99!=bours 49!=Champagne
+GATE FAIL
+```
+Part A passes clearly: all five C-graded glosses meet their number in the layer their mark selects (5/5 against
+permutation p95 3 and random-code p95 1). Part B misses its registered 0.80 threshold: 25/33 = 0.758. **All 25 shared
+letter codes agree; there are 0 conflicts.** The 8 misses are Tomokiyo homophones (5 a, 48 e, 59 o, 11/16/19 r, 49 s,
+52 t) that key no.71's header does not print. The registered statistic counted absence as failure. That was a design
+error in the pre-registration, and it is not repaired here after seeing the number (rule 3). **As registered, the gate
+FAILs, so the job stops.** No no.44 slot was read from the key, and no grade was changed. `decode --check` was not
+needed (no reading changed). The M-pair line is data: `49!=Champagne` is the normalizer missing the spelling
+Champaigne, and by eye the two-dot 49 is Champaigne. The real conflicts are logged in HYPOTHESES.md.
+
 ## Remaining gaps (CABNOIR, 3 Oct 2026; replaces the LIKELY-1 ... GAPS-13 list above, which stays as history)
 Read so far: no.44 8 of 27 cipher groups at H and 7 of 14 word-code occurrences at M (.7 x4, .71, .27, .25), plus .13 = Narre at M from f.62r; no.37 (604 + 308 letters decoded) is now covered by Cabinet Noir result no.9, so it is not counted as an open piece; 3 of 8 pool leaves covered in public (no.27, 35, 37)
-- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13); Cabinet Noir names the period key Nevers no.71 (BnF fr.3995 f.133r, Gallica btv1b525085665 view 256), which carries dotted codes and two-point places but is not reproduced in their release; next: fetch view 256 once via tools/iiif_lines.py, two blind passes over its code columns + 1 reconciliation, test it on our C-graded glossed codes (.7, .71, .93, .14, legat span) as the known answer with a shuffled-label control, and only then read .03/.07/.49/.57/.6 from it, ~$6
+- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. next: a fresh pre-registration with the conflict-count letter statistic plus an unseen known answer (Cabinet Noir's published sure values, or the fr.4712 f.7r interlinear pair), scored on the reconciled file already on disk, then the six slots, no new image, ~$3
 Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, the four L glosses, the no.35 native read). These leaves are read in public as Cabinet Noir results no.13, no.11 and no.9, so a reading of ours would be N0-type. No native read or decode job is run on them, and the queued no.35 f.58r step (~$10) is retired.
 - no.60 f.83r: Tomokiyo's "no.60" digit-code passages vs our 1000 px view of f.83r as a symbol alphabet - blocker: not-attempted; a data conflict, not a reading; next: one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2
 - the clear-French frame of no.44 (165 L words) - blocker: not-attempted; unchanged from GAPS-9; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
@@ -1069,9 +1110,9 @@ Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, 
 ## Escalation (CABNOIR, 3 Oct 2026)
 - [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 and no.60 seen at 1000 px; Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
 - [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
-- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r), named by Cabinet Noir, is not yet read here; planned: the view-256 read behind its known-answer control (gap 1)
+- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Its registered gate FAILs on letter coverage (0.758 vs 0.80, 0 conflicts), and its glosses pass 5/5. Planned: re-gate on an unseen known answer (gap 1)
 - [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
 - [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
 - [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
 - [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
-Verdict: keep going: 3 internal gaps; cheapest next: the fr.3995 f.133r key no.71 read (view 256) behind a known-answer control on our C-graded codes, then no.44's six open slots from it, ~$6
+Verdict: keep going: 3 internal gaps; cheapest next: re-gate key no.71 (already transcribed, witness/key71/key71_reconciled.tsv) under a fresh pre-registration: letter conflicts on the shared codes plus an unseen known answer (Cabinet Noir's published sure values or the fr.4712 f.7r pair), then no.44's six open slots from it, ~$3 (GAPS-14, 3 Oct 2026: the first gate FAILed on letter coverage 25/33, 0 conflicts; the glosses passed 5/5)

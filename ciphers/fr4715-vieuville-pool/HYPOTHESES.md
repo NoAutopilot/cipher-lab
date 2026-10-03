@@ -29,3 +29,15 @@ Not resolved by majority (rule 4): both period glosses are M, the leaves have di
 - This agrees with our f.44r reading (Neuers, M, two sites). It conflicts with our f.60r reading of the same gloss.
 - Not resolved by majority (rule 4). Their reading of the same ink is an outside witness, so our f.60r reading is the one to re-check. The next eye on the f.60r L01/L20 crops settles it, and key no.71 (fr.3995 f.133r) gives a period value for barred 27. Until then, .27 on no.44 stays M with both candidates.
 - Also logged as data, not merged: 99 (ours "bours" M, read as a person; theirs '99 = vous, dotted). 52 with two strokes (ours Normandie M; theirs '52 = si with one dot; their key no.71 description puts places in a two-point layer, so this is compatible). 49 with two dots (ours: Champagne held; their no.27 transcription has ''49? at L21 and a clear gloss "Champagne?" at L22, with no value given).
+
+## GAPS-fr4715-vieuville-pool-14 (3 Oct 2026, account-4): key no.71 (BnF fr.3995 f.133r) vs our glosses
+| Leaf | Family | CONTROL | TARGET | Status | Reason |
+|---|---|---|---|---|---|
+| pool word-codes | period key no.71 read blind (1 Opus pass, 35 iiif_lines crops) and reconciled; gate pre-registered in witness/key71/PREREG.md (7778b15d); scripts/key71_control.py | A: gloss permutation p95 3 (mean 1.0), random code p95 1 (mean 0.088); B: letter-label permutation p95 0.121 | A 5/5 C glosses match; B 25/33 = 0.758 Tomokiyo letter rows printed (0 conflicts, 8 homophones absent) | FAIL as registered (B < 0.80) | the B statistic counted absent homophones as misses, a pre-registration design error. It was not re-scored after the result. The next step is a fresh registration on an unseen known answer |
+Data conflicts, rule 4 (not merged, not settled by majority):
+- barred 27: key no.71 prints Duc de Neuers 25/26/27 (braced). This agrees with f.44r "Neuers" (M) and Cabinet Noir ~27 = Nevers. It conflicts with our f.60r L01/L20 reading "nauarre?" (M). This is a third witness against that reading, which stays to be re-checked on the crops.
+- barred 44: key no.71 prints Mr de Retz. f.51r S06 glossed Roy (M, pass B H, pass A L). Unconfirmed; the key's Roy is 6/7/8.
+- 99: key no.71 prints dotted-tens 99 = vous and dot-each-digit 99 = Maire de ville, with no barred 99. Our f.60r "bours" (M) reads a person, so the code or the gloss there is in doubt.
+- two-dot 49: key no.71 Prouinces 49 = Champaigne. This supports the f.50r Champagne lead (held, its leaf tied its control). The f.51r "Roy" (L) is not supported.
+- 52 with two marks: key no.71 Prouinces 52 = Normandye. Agrees with f.62r Normandie (M).
+- barred 13: Royne de nauarre (key), against f.62r "Narre" (M) and Cabinet Noir's Henri de Navarre on usage. The gloss and the key agree on "Navarre", and the person is disputed.

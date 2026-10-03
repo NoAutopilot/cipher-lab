@@ -1,0 +1,310 @@
+crop	column_heading	entry_as_written	number	mark	conf
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 1)	25	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 2)	10	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 3)	65	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 4)	75	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 5)	23/24	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 6)	20	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 7)	30	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 8)	40	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 9)	63/64	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 10)	50	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 11)	60	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 12)	73/74	none	L
+k71hdr_L01_s1	ALPHABET	?(letter above not in crop; position 13)	85	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 14)	70	vertical stroke above (may be descender from line above)	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 15)	80	vertical stroke above (may be descender from line above)	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 16)	1	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 17)	83/8?	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 18)	95	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 19)	93	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 20)	[symbol: v with bar, like inverted triangle]	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 21)	90	none	L
+k71hdr_L01_s2	ALPHABET	?(letter above not in crop; position 22)	[symbol: o with cross/plus above]	none	L
+k71hdr_L01_s3	ALPHABET(right block, no numbers under)	6		dot after each character	M
+k71hdr_L01_s3	ALPHABET(right block, no numbers under)	7		dot after each character	M
+k71hdr_L01_s3	ALPHABET(right block, no numbers under)	8		dot after each character	M
+k71hdr_L01_s3	ALPHABET(right block, no numbers under)	9		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	a		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	b		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	c		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	d		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	e		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	f		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	g		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	h		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	i		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	l		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	m		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	n		dot after each character	M
+k71hdr_L01_s4	ALPHABET(right block, no numbers under)	o		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	p		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	q		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	r		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	s		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	t		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	u		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	x		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	y		dot after each character	M
+k71hdr_L01_s5	ALPHABET(right block, no numbers under)	z		dot after each character	M
+k71c1_L01	Motz	Au	11	dot above 1 (written as i)	H
+k71c1_L01	Motz	bon	12	dot above 1 (written as i)	H
+k71c1_L01	Motz	Car	13	dot above 1 (written as i)	H
+k71c1_L01	Motz	ce	14	dot above 1 (written as i)	H
+k71c1_L01	Motz	ces	15	dot above 1 (written as i)	H
+k71c1_L01	Motz	de	16	dot above 1 (written as i)	H
+k71c1_L01	Motz	dit	17	dot above 1 (written as i)	H
+k71c1_L01	Motz	en	18	dot above 1 (written as i)	H
+k71c1_L01	Motz	et	19	dot above 1 (written as i)	H
+k71c1_L02	Motz	est	20	none	H
+k71c1_L02	Motz	fort	21	dot above tens digit	H
+k71c1_L02	Motz	Je	22	dot above tens digit	H
+k71c1_L02	Motz	Jay	23	dot above tens digit	H
+k71c1_L02	Motz	Il	24	dot above tens digit	M
+k71c1_L02	Motz	la	25	dot above tens digit	H
+k71c1_L02	Motz	le	26	dot above tens digit	H
+k71c1_L02	Motz	les	27	dot above tens digit	H
+k71c1_L02	Motz	luy	28	dot above tens digit	M
+k71c1_L02	Motz	lon	29	dot above tens digit	M
+k71c1_L03	Motz	ma	30	dot above tens digit (faint)	M
+k71c1_L03	Motz	me	31	dot above tens digit	H
+k71c1_L03	Motz	moy	32	dot above tens digit	H
+k71c1_L03	Motz	mon	33	dot above tens digit	H
+k71c1_L03	Motz	mort	34	dot above tens digit	H
+k71c1_L03	Motz	ne	35	dot above tens digit	H
+k71c1_L03	Motz	na	36	dot above tens digit	M
+k71c1_L03	Motz	nay	37	dot above tens digit	M
+k71c1_L03	Motz	non	38	dot above tens digit	H
+k71c1_L03	Motz	nous	39	dot above tens digit	H
+k71c1_L04	Motz	ou	40	none	H
+k71c1_L04	Motz	par	41	dot above tens digit	H
+k71c1_L04	Motz	pour	42	dot above tens digit	H
+k71c1_L04	Motz	plus	43	dot above tens digit	H
+k71c1_L04	Motz	pas	44	dot above tens digit	H
+k71c1_L04	Motz	paix	45	dot above tens digit	H
+k71c1_L04	Motz	que	46	dot above tens digit	H
+k71c1_L04	Motz	qui	47	dot above tens digit	H
+k71c1_L04	Motz	quil	48	dot above tens digit	H
+k71c1_L04	Motz	sa	49	dot above tens digit	H
+(gap between c1_L04 and c2_L01)	Motz	[rows for 50-51 not seen in any crop]			L
+k71c2_L01	Motz	si	52	dot above and dot below tens digit	M
+k71c2_L01	Motz	trop	53	dot above tens; dot below/over units	M
+k71c2_L01	Motz	temps	54	dot above tens digit	H
+k71c2_L01	Motz (second heading, after horizontal rule)	[heading]		heading 'Motz' with trailing mark/flourish; none	M
+k71c2_L01	Motz	Ayme	55	dot above tens digit	H
+k71c2_L01	Motz	amis	56	dot above tens digit	H
+k71c2_L01	Motz	auec	57	dot above tens digit	H
+k71c2_L01	Motz	argent	58	dot above tens digit	H
+k71c2_L01	Motz	armee	59	dot above tens digit	H
+k71c2_L02	Motz	artillerye	60	none	H
+k71c2_L02	Motz	afin	61	dot above tens digit	H
+k71c2_L02	Motz	alle	62	dot above tens digit	H
+k71c2_L02	Motz	bien	63	dot above tens digit	H
+k71c2_L02	Motz	Catholicques	64	dot above tens digit	H
+k71c2_L02	Motz	Comme	65	dot above tens digit	H
+k71c2_L02	Motz	deffiance	66	dot above tens digit	H
+k71c2_L02	Motz	desespoir	67	dot above tens digit	H
+k71c2_L02	Motz	dire	68	dot above tens digit	H
+k71c2_L02	Motz	dissimule	69	dot above tens digit	H
+k71c2_L03	Motz	Ennemis	70	none	H
+k71c2_L03	Motz	Elle	71	dot above tens digit (BnF stamp over 74-78)	H
+k71c2_L03	Motz	Escrit	72	dot above tens digit (BnF stamp over 74-78)	H
+k71c2_L03	Motz	Espoir	73	dot above tens digit (BnF stamp over 74-78)	H
+k71c2_L03	Motz	faict	74	dot above tens digit (BnF stamp over 74-78)	M
+k71c2_L03	Motz	faire	75	dot above tens digit (BnF stamp over 74-78)	M
+k71c2_L03	Motz	filz	76	dot above tens digit (BnF stamp over 74-78)	M
+k71c2_L03	Motz	frere	77	dot above tens digit (BnF stamp over 74-78)	M
+k71c2_L03	Motz	femme	78	dot above tens digit (BnF stamp over 74-78)	M
+k71c2_L03	Motz	fault	79	dot above tens digit (BnF stamp over 74-78)	H
+k71c2_L04	Motz	guerre	80	none	H
+k71c2_L04	Motz	garnison	81	dot above tens digit	H
+k71c2_L04	Motz	Huguenotz	82	dot above tens digit	H
+k71c2_L04	Motz	Intelligence	83	dot above tens digit	H
+k71c2_L04	Motz	Jour	84	dot above tens digit	H
+k71c2_L04	Motz	Lettre	85	dot above tens digit	H
+k71c2_L04	Motz	Leuee	86	dot above tens digit	M
+k71c2_L04	Motz	Ligue	87	dot above tens digit	H
+k71c2_L04	Motz	Mary	88	dot above tens digit	H
+k71c2_L04	Motz	Mois	89	dot above tens digit	H
+k71c2_L05	Motz	Menaces	90	dot below tens digit	M
+(gap between c2_L05 and c3_L01)	Motz	[row for 91 not seen in any crop]			L
+k71c3_L01	Motz	quant	92	dot above tens digit	H
+k71c3_L01	Motz	quil	93	dot above tens digit	H
+k71c3_L01	Motz	quoy	94	dot above tens digit	H
+k71c3_L01	Motz	recherche	95	dot above tens digit	H
+k71c3_L01	Motz	ruyne	96	dot above tens digit	H
+k71c3_L01	Motz	rien	97	dot above tens digit	H
+k71c3_L01	Motz	suis	98	dot above tens digit	H
+k71c3_L01	Motz	vous	99	dot above tens digit	H
+k71c3_L01	Villes	[heading]		none	H
+k71c3_L01	Villes	ville	11	dots above both digits (written ii)	H
+k71c3_L02	Villes	Chasteau	12	dot above tens only visible	M
+k71c3_L02	Villes	villaige	13	dot above each digit (two dots)	H
+k71c3_L02	Villes	Rethel	14	dot above each digit (two dots)	H
+k71c3_L02	Villes	Mezieres	15	dot above each digit (two dots)	H
+k71c3_L02	Villes	Donchery	16	dot above each digit (two dots)	H
+k71c3_L02	Villes	Omont	17	dot above each digit (two dots)	H
+k71c3_L02	Villes	La Cassine	18	dot above each digit (two dots)	M
+k71c3_L02	Villes	Mouzon	19	dot above each digit (two dots)	H
+k71c3_L02	Villes	Rocroy	20	dot above each digit (two dots)	H
+k71c3_L02	Villes	Maubert fontaine	21	dot above each digit (two dots)	H
+k71c3_L03	Villes	Laon	22	none visible	M
+k71c3_L03	Villes	Sedan	23	dot above each digit (two dots)	H
+k71c3_L03	Villes	Jamais	24	dot above each digit (two dots)	M
+k71c3_L03	Villes	bouillon	25	dot above each digit (two dots)	H
+k71c3_L03	Villes	Namur	26	dot above each digit (two dots)	H
+k71c3_L03	Villes	Chaurregnault	27	dot above each digit (two dots)	M
+k71c3_L03	Villes	Liege	28	dot above each digit (two dots)	H
+k71c3_L03	Villes	Reims	29	dot above each digit (two dots)	H
+k71c3_L03	Villes	Chaallons	30	dot above each digit (two dots)	H
+k71c3_L03	Villes	vitry	31	dot above each digit (two dots)	H
+k71c3_L04	Villes	Chasteau thierry	32	dot above each digit (two dots)	M
+k71c3_L04	Villes	Soissons	33	dot above each digit (two dots)	H
+k71c3_L04	Villes	Meaulx	34	dot above each digit (two dots)	H
+k71c3_L04	Villes	Paris	35	dot above each digit (two dots)	H
+k71c3_L04	Villes	Troyes	36	dot above each digit (two dots)	H
+k71c3_L04	Villes	Langres	37	dot above each digit (two dots)	H
+k71c3_L04	Villes	Montereau faut yonne	38	dot above each digit (two dots)	M
+k71c3_L04	Villes	Sens	39	dot above each digit (two dots)	H
+k71c4_L01	Villes	Auxerre	40	dot above each digit (two dots)	H
+k71c4_L01	Villes	Orleans	41	dot above each digit (two dots)	H
+k71c4_L01	Villes	bourges	42	dot above each digit (two dots)	H
+k71c4_L01	Villes	Lyon	43	dot above each digit (two dots)	H
+k71c4_L01	Villes	Dijon	44	dot above each digit (two dots)	H
+k71c4_L01	Villes	Neuers	45	dot above each digit (two dots)	H
+k71c4_L01	Villes	Desise	46	dot above each digit (two dots)	M
+k71c4_L01	Villes	La Charite	47	dot above each digit (two dots)	H
+k71c4_L01	Villes	Gien	48	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	[heading]		none	H
+k71c4_L02	Prouinces	Champaigne	49	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	bourgongne	50	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	Picardye	51	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	Normandye	52	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	berry	53	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	bretaigne	54	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	Poictou	55	dot above each digit (two dots)	H
+k71c4_L02	Prouinces	Auuergne	56	dot above each digit (two dots)	H
+k71c4_L03	Prouinces	Guyenne	57	dot above each digit (two dots)	H
+k71c4_L03	Prouinces	Languedoc	58	dot above each digit (two dots)	H
+k71c4_L03	Prouinces	Prouence	59	dot above each digit (two dots)	H
+k71c4_L03	Prouinces	Daulphine	60	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Lorraine	61	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Allemaigne	62	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Sauoye	63	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Bourgongne	64	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Paisbas	65	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L03	Prouinces	Angleterre	66	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L04	Noms generaulx	[heading]		none	H
+k71c4_L04	Noms generaulx	Gouuerneur	67	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L04	Noms generaulx	lieuten[ant] g[e]n[er]al	68	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L04	Noms generaulx	Capp[itai]ne	69	two dots/diaeresis above tens digit + dot above units	M
+k71c4_L04	Noms generaulx	Lieutenant	70	dot above each digit (two dots)	H
+k71c4_L04	Noms generaulx	Enseigne	71	dot above each digit (two dots)	H
+k71c4_L04	Noms generaulx	Soldatz	72	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Cauallerye	73	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	homedarmes	74	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Cheuaulx legers	75	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	gens de pied	76	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Compagnye	77	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Reistres	78	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Suisses	79	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	Allemans	80	dot above each digit (two dots)	H
+k71c5_L01	Noms generaulx (cont., no new heading)	francois	81	dot above each digit (two dots)	H
+k71c5_L02	Noms generaulx (cont.)	albanois	82	dot above each digit (two dots)	H
+k71c5_L02	Noms generaulx (cont.)	Italiens	83	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Cardinal	84	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Euesque	85	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Abbe	86	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Prieur	87	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Duc	88	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Marquis	89	dot above each digit (two dots)	H
+k71c5_L02	(no heading; new box after horizontal rule)	Comte	90	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	baron	91	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Seigneur	92	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Monsieur	93	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Madame	94	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	officiers	95	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Juge	96	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Procureur	97	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	Escheuins	98	dot above each digit (two dots)	M
+k71c5_L03	(no heading; same box)	Maire de ville	99	dot above each digit (two dots)	H
+k71c5_L03	(no heading; same box)	habitans	100	dot above each digit (three)	H
+k71c5_L04	Noms propres	[heading]		none	H
+k71c5_L04	Noms propres	Pape	1	bar above number	H
+k71c5_L04	Noms propres	Roy d'espaigne	2	bar above number	H
+k71c5_L04	Noms propres	Royne d'angleterre	3	bar above number	H
+k71c5_L04	Noms propres	Duc de Parme	4	bar above number	H
+k71c5_L04	Noms propres	Duc de Sauoye	5	bar above number	H
+k71c6_L01	Noms propres (cont.)	Roy	6/7/8	bar above number on each; dotted curly brace joining 6,7,8 to the name	H
+k71c6_L01	Noms propres (cont.)	Royne	9	bar above number	H
+k71c6_L01	Noms propres (cont.)	Royne mere	10/11/12	bar above number on each; dotted curly brace joining 10,11,12	H
+k71c6_L01	Noms propres (cont.)	Royne de nauarre	13	bar above number	H
+k71c6_L01	Noms propres (cont.)	C. de Bourbon	14	bar above number	H
+k71c6_L01	Noms propres (cont.)	C. de vendosme	15	bar above number	M
+k71c6_L01	Noms propres (cont.)	C. de Guyse	16/17/18	bar above number on each; dotted curly brace joining 16,17,18	H
+k71c6_L01	Noms propres (cont.)	C. de Lenoncourt	19	bar above number	H
+k71c6_L02	Noms propres (cont.)	C. de Gondy	20	bar above number	H
+k71c6_L02	Noms propres (cont.)	Prince de Conty	21	bar above number	H
+k71c6_L02	Noms propres (cont.)	Comte de Soissons	22	bar above number	H
+k71c6_L02	Noms propres (cont.)	Mr de montpensier	23	bar above number	H
+k71c6_L02	Noms propres (cont.)	Mr de Corteyne	24	bar above number	M
+k71c6_L02	Noms propres (cont.)	Duc de Neuers	25/26/27	bar above number on each; dotted curly brace joining 25,26,27 (small mark '1'/dot above name at left)	H
+k71c6_L02	Noms propres (cont.)	D. de Longueuille	28	bar above number	H
+k71c6_L02	Noms propres (cont.)	D. de Mercure	29	bar above number	H
+k71c6_L03	Noms propres (cont.)	Comte de St Pol	30	bar above number	H
+k71c6_L03	Noms propres (cont.)	D. de Guyse [then 'Duc' struck through on next line]	31/32/33	bar above number on each; dotted curly brace joining 31,32,33 (ink blot under brace)	M
+k71c6_L03	Noms propres (cont.)	Duc de Nemours	34	bar above number	H
+k71c6_L03	Noms propres (cont.)	D. de Mayenne	35/36/37	bar above number on each; dotted curly brace joining 35,36,37	H
+k71c6_L03	Noms propres (cont.)	D. d'Aumalle	38	bar above number	H
+k71c6_L03	Noms propres (cont.)	D. d'Elbeuf	39	bar above number	H
+k71c6_L03	Noms propres (cont.)	Prince de Jeinuille	40	bar above number	M
+k71c7_L01	Noms propres (cont.)	Cheuallier d'Aumalle	41	bar above number (ink blot/cross over 4)	M
+k71c7_L01	Noms propres (cont.)	Mr d'Espernon	42	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de Montmorency	43	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de Retz	44	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de biron	45	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de Joyeuse	46	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de Matignon	47	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr d'Aumont	48	bar above number	H
+k71c7_L01	Noms propres (cont.)	Mr de villequier	49	bar above number	H
+k71c7_L02	Noms propres (cont.)	Mr le Chancellier	50	bar above number	H
+k71c7_L02	Noms propres (cont.)	Mr de bellieure	51	bar above number	H
+k71c7_L02	Noms propres (cont.)	Mr de villeroy	52	bar above number	H
+k71c7_L02	Noms propres (cont.)	Mr brulart	53	bar above number	H
+k71c7_L02	Noms propres (cont.)	Mr Pinart	54	bar above number	M
+k71c7_L02	Noms propres (cont.)	Mr de Chenailles	55	bar above number	M
+k71c7_L02	Noms propres (cont.)	Mr de brosses	56	bar above number	M
+k71c7_L02	Noms propres (cont.)	Mr d'Inteville	57	bar above number	M
+k71c7_L02	Noms propres (cont.)	Mr de la vieuville	58	bar above number	H
+k71c7_L02	Noms propres (cont.)	Comte de grand pre	59	bar above number	H
+k71c7_L03	Noms propres (cont.)	Rosne	60	bar above, drawn low so it crosses the top of the tens digit	H
+k71c7_L03	Noms propres (cont.)	Baron de Senessoy	61	bar above, drawn low so it crosses the top of the tens digit	M
+k71c7_L03	Noms propres (cont.)	St Pol	62	bar above, drawn low so it crosses the top of the tens digit	H
+k71c7_L03	Noms propres (cont.)	Meneville	63	bar above, drawn low so it crosses the top of the tens digit	M
+k71c7_L03	Noms propres (cont.)	Entraguet	64	bar above, drawn low so it crosses the top of the tens digit	M
+k71c7_L03	Noms propres (cont.)	Mr de la follye	65	bar above, drawn low so it crosses the top of the tens digit	M
+k71c7_L03	Noms propres (cont.)	Mr de villelongue	66	bar above, drawn low so it crosses the top of the tens digit	H
+k71c7_L03	Noms propres (cont.)	Mr d'Ambly	67	bar above, drawn low so it crosses the top of the tens digit	M
+k71c7_L03	Noms propres (cont.)	Mr Duboys	68	bar above, drawn low so it crosses the top of the tens digit	H
+k71c8_L01	Noms propres (cont.)	Mr de launay	69	bar above number	M
+k71c8_L01	Noms propres (cont.)	Tresorier	70	bar above number	H
+k71c8_L01	Noms propres (cont.)	Montholon	71	bar above number	H
+k71c8_L01	Noms propres (cont.)	Messagier	72	bar above number	H
+k71c8_L01	Noms propres (cont.)	La Morgne	73	bar above number	L
+k71c8_L01	Noms propres (cont.)	Arson	74	bar above number	M
+k71c8_L01	Noms propres (cont.)	Nue	75	bar above number	M
+k71c8_L01	Noms propres (cont.)	La [Chastre struck through; 'Sendrem?' / 'Sandricourt?' written above in different ink]	76	bar above number	L
+k71c8_L01	Noms propres (cont.)	[blank name]	77	bar above number	H
+k71c8_L01	Noms propres (cont.)	la Chastre [different, browner ink]	78	bar above number	M
+k71c8_L01	Noms propres (cont.)	[?]antragues? [browner ink]	79	bar above number	L
+k71c8_L01	Noms propres (cont.)	[blank name]	80	bar above number	M
+k71c8_L02	Dames	[heading]		none	H
+k71c8_L02	Dames	Princesse de Conde	81	bar above number	M
+k71c8_L02	Dames	Me de montpensier	82	bar above number	H
+k71c8_L02	Dames	Me de Neuers	83	bar above number	H
+k71c8_L02	Dames	Me de Nemours	84	bar above number	H
+k71c8_L02	Dames	Me de Guyse	85	bar above number	H
+k71c8_L02	Dames	Me de Retz	86	bar above number	H
+k71c8_L02	Dames	Me de Soissons	87	bar above number	H
+k71c8_L02	Dames	Me de Longueuille	88	bar above number	H
+k71c8_L02	Dames	Mlle de bouillon	89	bar above number	M
