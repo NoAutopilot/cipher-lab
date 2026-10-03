@@ -1,6 +1,7 @@
 # Letters in cypher to Anthony Bacon — Lambeth Palace Library MS 649, ff. 490-495
 
 Status: open
+Birch, *Memoirs of the Reign of Queen Elizabeth* (1754; IA b30531469_0001, b30531469_0002), be-api full-text search for "cypher", "decypher", "decyphered", "490" and "fol. 490" run by this worker (GF-A2B-1, 3 Oct 2026): cipher letters to Bacon and his own decipherments are discussed (vol. 1 "as Mr. Bacon decyphered it"; vol. 2 Foulis "containing in cypher the advertisements"), but no passage cites MS 649 or ff. 490-495.
 
 ## Description
 
@@ -80,3 +81,51 @@ OR-of-words; an exact phrase like "Letters in cypher to Bacon" narrows to the si
 Cipher's shelfmark/description in a search engine; sender's/subject's printed edition (Birch 1754, by full-text
 search); the holding archive's own catalogue (CalmView, item and fonds level); community lists (Cryptiana local
 + live search); DECODE (cache only, login broken); both solver repositories (shallow clone, grep).
+
+## Web and blog check (GF-A2B-1, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Lambeth Palace Library MS 649 "cypher" Anthony Bacon letters deciphered Essex 1590s` (holder + recipient + period;
+   the senders are unknown) -- Adam Matthew "Papers of Anthony Bacon MS 649 Volume 3 [1]" (LPL_MS_649_h) and "[2]"
+   (LPL_MS_649_2) public detail pages, CRL microfilm record, Archives Hub fonds record, Lambeth's "Research Guide
+   Elizabeth I" PDF, Tosh's QMRO thesis record. Nothing describing ff. 490-495 as read.
+2. `"MS 649" Lambeth Bacon cipher letters ff. 490-495` (shelfmark + cipher) -- TNA Discovery records-creator pages,
+   Archives Hub, and generic Bacon-cipher (Francis Bacon's biliteral) pages. No hit.
+3. `Tosh "Testimonies of Affection and Dispatches of Intelligence" Letters of Anthony Bacon thesis Queen Mary pdf` --
+   QMRO handle 123456789/9075 (thesis) and its book form, *Male Friendship and Testimonies of Love in Shakespeare's
+   England* (Palgrave 2016). The QMRO page answered a JavaScript bot challenge to curl (one request, not retried); the
+   thesis was not read.
+4. `Anthony Bacon intelligence network cipher letters Lambeth Palace unsolved decipherment Standen Essex` (descriptive)
+   -- Tosh again, Francis Bacon Society "Age of Secrecy", Tudor Society, shaksper.net 1994 thread, AMD MS 655. No
+   decipherment of this item.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Anthony Bacon Lambeth cipher letters`): one post,
+   2016-11-12 "who can find the hidden messages in these 16th century texts" -- opened with its 8 comments: Francis
+   Bacon's biliteral cipher ("PERDITA"); no mention of Anthony Bacon, Lambeth or MS 649.
+6. Cryptiana (`site:cryptiana.blogspot.com Anthony Bacon cipher Essex`): no cryptiana.blogspot.com page; BL
+   searcharchives record 040-002109574, Gutenberg's Gallup biliteral book, DNB "Bacon, Anthony". No hit.
+7. Cipher Mysteries (`site:ciphermysteries.com Anthony Bacon Lambeth cipher Essex`): no ciphermysteries.com page; AMD
+   MS 649/654/657/658/662 records and Tosh again.
+No decipherment or plaintext of MS 649 ff. 490-495 found in any post or comment thread. Requests: WebSearch 8,
+scienceblogs.de 1 (WebFetch), qmro.qmul.ac.uk 1 (challenge, stopped), be-api.us.archive.org 10 (>=1.6 s apart).
+
+## Premise check (GF-A2B-1, 3 Oct 2026)
+
+(a) Folder's own mentions -- not found: NOTES.md and REQUEST.md mention no decipherment, gloss or clear copy of
+ff. 490-495; Birch's passages (status-line citation) are general to the Bacon papers, with no folio.
+(b) Other solvers' working files -- not found: fresh shallow clones 3 Oct 2026, dbourdeau/cyphersolver (HEAD
+e8b4287) and aaymeloglu/unsolved-ciphers (HEAD d2800bb), `grep -rIliE "anthony bacon|lambeth.*bacon|bacon.*essex|MS\.? ?649"`:
+zero files in either. No DECODE row for the Bacon papers in Aymeloglu's catalogue harvest (24 Sept check).
+(c) Physical neighbours -- unreachable: no image of MS 649 is free online (REQUEST.md); ff. 489 and 496 and any
+facing decipherment cannot be viewed. Adam Matthew splits MS 649 into "Volume 3 [1]" and "[2]" (subscription).
+(d) Recipient-side editions -- partly: Bacon is the recipient, and Birch 1754 is the printed edition built from his
+papers (searched, status line); it reports Bacon deciphering incoming letters himself, so a period decipherment may
+sit elsewhere in MSS 647-662. Tosh 2014 (QMRO, bot-challenged) and Bill's 1974 *Index* (LPL open shelves) not read;
+Spedding's *Letters and Life of Francis Bacon* not searched this pass.
+
+## While waiting
+
+Next action that depends on nobody: read the Adam Matthew public detail pages for LPL_MS_649_h and LPL_MS_649_2
+(metadata only, no login) to learn which part holds ff. 490-495 and its date range, then run a be-api search of
+Birch 1754 and of Spedding's *Letters and Life* for that window's cipher correspondents (Standen, Foulis, the
+St Sebastian writer of Sept 1592) to find a clear copy or Bacon's own decipherment before any copy order.
