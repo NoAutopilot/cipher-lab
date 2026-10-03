@@ -1,0 +1,44 @@
+{
+ "reconciled": {
+  "known_good": 95,
+  "known_n": 99,
+  "known_agree": 0.96,
+  "known_null_mean": 0.17,
+  "known_null_p95": 0.265,
+  "known_null_max": 0.327,
+  "target_letters": 121,
+  "target_cover": 0.983,
+  "target_null_mean": 0.919,
+  "target_null_p95": 0.971,
+  "target_null_max": 0.993,
+  "target_rank": 6
+ },
+ "passA": {
+  "known_good": 75,
+  "known_n": 82,
+  "known_agree": 0.915,
+  "known_null_mean": 0.183,
+  "known_null_p95": 0.293,
+  "known_null_max": 0.341,
+  "target_letters": 112,
+  "target_cover": 0.982,
+  "target_null_mean": 0.9,
+  "target_null_p95": 0.959,
+  "target_null_max": 0.983,
+  "target_rank": 2
+ },
+ "passB": {
+  "known_good": 75,
+  "known_n": 83,
+  "known_agree": 0.904,
+  "known_null_mean": 0.182,
+  "known_null_p95": 0.277,
+  "known_null_max": 0.325,
+  "target_letters": 112,
+  "target_cover": 0.982,
+  "target_null_mean": 0.905,
+  "target_null_p95": 0.966,
+  "target_null_max": 0.991,
+  "target_rank": 4
+ }
+}

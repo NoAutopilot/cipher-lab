@@ -1,0 +1,22 @@
+# BnF Espagnol 132 f.119v (Gallica btv1b10032556x canvas 117, left page, region 1050,2700,2300,2150), lower 12 lines.
+# Philip II to Juan de Vargas Mexia, Madrid, 15 Oct 1578 (Tomokiyo TOC no.55), Cp.30. Transcribed 3 Oct 2026 (LANE-POOLS FT-B):
+# two blind Sonnet passes (passes/passA.tsv, passB.tsv) + reconciliation by this worker from the crops.
+# Reconciler caveat: the reconciler had read Teulet's printed text before reconciling; the blind passes had not.
+# Reconciliation changes vs agreement of A/B: '21'/'21@n' read as 2⊣ where the crop shows f-hook + u-bar (L02, L10, L13);
+# '256'/'316' -> 25σ/31σ; 18σ->8σ (L10, pass A); 35+ underlined -> 35_+ (L11); L12 is this worker's single read of the re-cut
+# crop (both passes saw a duplicate of L11). Notation: base, vowel mark (+ . σ ρ ⊣), above-marks @l @m @n @r @s @c, _ underline,
+# {word} cursive word-code, ? doubt, # unreadable. L02-L06: paragraph NOT printed by Teulet (target). L07-L13: Teulet's
+# "Déchiffr. officiel" paragraph (known answer). L01 of the crops (tail of the previous paragraph, cut) is not transcribed.
+line	tokens
+L02	4@n 79+ {nel} 2⊣ 3 22ρ 15+ 91@s 21. 4@l 66@c 4@s 31σ 25σ 18 10 15ρ 7+@n
+L03	17.@s y 10 8+ y 15σ 18 6. 25.@r 16+@n 6ρ 13@s 23ρ 30 15+ {dom} 6.
+L04	76@s 7ρ 6. 15+ 16+ 7+ y 65+ 22. 13@s 6. 100@c y 23σ 17ρ 12 25?
+L05	22. 23σ 6ρ {de} 23. 35. 24. 6. 24ρ@r 17+ 22. 13@s 10 12+ 29.@r
+L06	{bim} {rum}+ {Val} 21. 7ρ@n {bel} 23. 58.@c /
+L07	10 15ρ 21. 20+ 23+@s 24.@s 7ρ@n 4@l {Bul} 6. {Dul} 17ρ 10 y 21.
+L08	29σ@r {Val} 21. 16. 22.@s 20ρ@n 6+ 13@s 10 15ρ 21. 18@s 4@s 31σ 25σ #
+L09	16+ {sim} 20 4@s 17ρ 7ρ 25σ 3 17. 6. 24.@r 16σ 17+@r 17ρ 23σ@n
+L10	2⊣@n 6+ 16. 24ρ 10 6+@r {ril} 17σ 7ρ@s 6@c 23. 22+ 8σ 4@n 21. {de}
+L11	144@c 35_+ 24σ 21. 13@s 7ρ@n 4@l {Bul} 23σ 15ρ 21+ 36ρ 16σ@l 12@m
+L12	21. 6σ 29. 23. 22+@n 16. 17. 24.@r 12+@n 6. 23.@r 6.@l 20+ 13@s 18
+L13	2⊣ 3 22+ y 21σ 4.@n 12+ 37σ 10 6. 23.@r 4@l 7ρ@n 6⊣ c 24ρ@r y 7+

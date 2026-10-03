@@ -1,0 +1,67 @@
+# Cp.30 = "Vargas Mexia's Cipher 3" letter/syllable table, as used in BnF Espagnol 132 (1578-80).
+# Source: S. Tomokiyo, Cryptiana, spanish3.htm image "cp30.png" (Spanish Cipher Cp.30), fetched 3 Oct 2026 from
+#   cryptiana.web.fc2.com/code/cp30.png; Tomokiyo cites Devos (1950) Cp.30 and Alcocer (1921) pp.628-640.
+# One correction from el-descifrador/cabinet-noir es132-vargas-mexia/cle/cp30_complements.tsv (CC BY 4.0, 2 Oct 2026):
+#   35 = pr (PROUVE-CTX there; Tomokiyo's table prints 35 under pl); 35_ (underlined) = pl. Credit: cabinet-noir.
+# The nomenclature (word codes, numbers >= 38, cursive {words}) is NOT in this file: not on disk. Those tokens decode to [code].
+# Vowel indicators after the base: + a, . e, σ i, ρ o, ⊣ u. Marks above the base: @l l, @m m, @n n, @r r, @s s.
+# columns: symbol <TAB> value
+10	a
+9	a
+a	a
+8	b
+b	b
+7	c
+c	c
+6	d
+d	d
+4	e
+3	e
+e	e
+2	f
+f	f
+11	g
+g	g
+12	h
+h	h
+13	i
+14	i
+i	i
+15	l
+L	l
+16	m
+m	m
+17	n
+n	n
+18	o
+19	o
+o	o
+20	p
+p	p
+21	q
+q	q
+22	r
+r	r
+v	r
+23	s
+s	s
+24	t
+t	t
+25	u
+26	u
+u	u
+27	x
+x	x
+28	y
+y	y
+29	z
+z	z
+30	br
+T	ch
+31	cr
+32	dr
+33	fr
+34	gr
+35	pr
+36	tr
+37	vr

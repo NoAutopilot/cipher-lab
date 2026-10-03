@@ -1,0 +1,52 @@
+{
+ "slug": "es132-vargas-mexia-1578",
+ "name": "BnF Espagnol 132, Philip II / Antonio Perez to Juan de Vargas Mexia, Paris embassy 1577-80 (Cp.30 = Vargas Mexia's Cipher 3 pool)",
+ "date": "1577-1580 (test page: f.119v, Madrid 15 Oct 1578)",
+ "language_candidates": [
+  "es"
+ ],
+ "ciphertext": "see ciphers/es132-vargas-mexia-1578/ciphertext.tsv (12 lines of f.119v as transcribed: 2 blind Sonnet passes + reconciliation, 3 Oct 2026); the pool's other ~30 open Cipher 3 letters are untranscribed here",
+ "ciphertext_source": "Gallica ark:/12148/btv1b10032556x canvas 117 (f.119v), IIIF region 1050,2700,2300,2150, fetched 3 Oct 2026; crops ciphers/es132-vargas-mexia-1578/images/",
+ "alphabet": "Cp.30 syllabic: numeric/letter base (key.tsv) + vowel indicator after (+ a, . e, σ i, ρ o, ⊣ u) + consonant marks above (/ l, \\ m, ^ n, v r, bar s); cursive word codes and numbers >= 38 are nomenclature (not on disk)",
+ "constraints": [
+  "key published: Tomokiyo cp30.png (Devos 1950 Cp.30; Alcocer 1921 pp.628-640); 35 = pr per cabinet-noir cle/cp30_complements.tsv (CC BY 4.0)",
+  "Teulet 1862 vol.5 pp.167-168 prints the Simancas official decipherment of the 15 Oct 1578 letter's Scotland paragraph (f.119v lower paragraph) and of 19 Sept 1578 (f.89 letter, paragraph not located in this job)",
+  "el-descifrador/cabinet-noir read 30 letters of this pool (git log checked 3 Oct 2026, last commit 47b6db9 2 Oct 2026); f.89 and f.119 not among them"
+ ],
+ "cheap_tests_in_order": [
+  {
+   "test": 0,
+   "what": "Cp.30 decode of f.119v lower 12 lines: known-answer token agreement vs Teulet's printed official decipherment (L07-L13) + Spanish word-cover of the unprinted paragraph (L02-L06), both vs 200 permuted keys",
+   "tool": "ciphers/es132-vargas-mexia-1578/test0.py (tool_shelf: no shared tool fits a syllabic vowel-indicator key; tools/decode_key.py is per-token value lookup without diacritic composition)"
+  },
+  {
+   "test": 1,
+   "what": "same decode on the rest of f.119 (119r, 120r) and on f.89-92, locate Teulet's 19 Sept paragraph; judge the unprinted remainder with an LM statistic that is not at ceiling for syllabic decodes"
+  },
+  {
+   "test": 2,
+   "what": "nomenclature: rebuild the codes needed (Alcocer 1921 facsimile via LOCAL-QUEUE, or cabinet-noir's attested values, cited)"
+  }
+ ],
+ "matched_control": "known-answer half: same page, same hand, same transcription pipeline, scored against Teulet's period decipherment; null: 200 keys with letter values permuted among numeric base symbols (seed 1578) -- changes decoded letters, so it can move both statistics",
+ "cheap_test_done": [
+  {
+   "test": 0,
+   "date": "3 Oct 2026",
+   "worker": "LANE-POOLS FT-B (account 1)",
+   "method": "python3 ciphers/es132-vargas-mexia-1578/test0.py (Cp.30 decode, key.tsv; null = 200 keys permuting letter values among numeric bases, seed 1578)",
+   "known_answer": "L07-L13 (Teulet vol.5 pp.167-168 official decipherment, same paragraph confirmed: 'a lo que pasastes con el [code] de [code] no ay que ...'): blind pass A 75/82 = 0.915, blind pass B 75/83 = 0.904, reconciled 95/99 = 0.960 (reconciler had seen Teulet); shuffled-key null mean 0.170, p95 0.265, max 0.327 -- gate (>=0.80 on a blind pass) met",
+   "target": "L02-L06 (paragraph not printed by Teulet), 121 key-decoded letters + 14 code tokens: Spanish word-cover 0.983 vs null mean 0.919, p95 0.971, max 0.993, rank 6 of 201 -- statistic AT CEILING for syllabic decodes (null mean already 0.92): non-discriminating, not a pass or a negative",
+   "judge": "es17: target FAIL -1.149; known-answer decode FAIL -1.077; Teulet's own printed text FAIL -0.956 (span) / -0.962; shuffled-key target decode -1.814; real_p05 about -0.90..-0.94 -> judge cannot decide at this era/register (real 1578 prose false-negatives); the target sits with the known-answer decode, far from the shuffled-key floor",
+   "verdict": "key Cp.30 opens f.119v: known-answer half passes decisively on blind transcriptions; target paragraph reads as Spanish by eye but test 0 has no non-ceiling statistic for it; next: test 1",
+   "cost": "see the lane ledger"
+  }
+ ],
+ "judge": {
+  "language": "es",
+  "min_word_cover": 0.5,
+  "note": "es = tools/data/es17 (Cervantes/Quevedo, c.1605-26): about 30-50 years later than 1578 and literary, not chancery register; no 16th-c. Spanish corpus exists in tools/data. A FAIL or PASS here is not decisive. Candidate files carry key-decoded letters only, codes dropped, so word joins across a dropped code are artefacts."
+ },
+ "value": "pool of ~30 open Cipher 3 letters (~16,000 groups est., CS-1) with a published key; recovery-kind",
+ "written": "3 Oct 2026, LANE-POOLS FT-B (account 1)"
+}
