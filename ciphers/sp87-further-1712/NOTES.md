@@ -154,3 +154,61 @@ Not "new"; not "unpublished" — a search result, not a discovery (rule 10). QUE
 to fold this into N6's campaign rather than open separately; this folder exists per this run's brief
 (slug `sp87-further-1712`), and a future orchestrator pass may want to merge it into N6's when N6 is
 re-scored as a multi-session campaign.
+
+## Check-solved addendum (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+Standard edition and pages actually read: line 2 stands for the SP 87/8 Stair items (Graham, *Annals and Correspondence of
+the Earls of Stair*, 1875, vols 1-2 read and grepped in full, LANE CX2 25 Sept 2026). Added this pass, for the recipient's
+side of **SP 87/32/115** (Holdernesse to Granby, 26 Aug 1760): HMC *The Manuscripts of His Grace the Duke of Rutland,
+preserved at Belvoir Castle*, vol. 2 (1889; archive.org `manuscriptshisg00unkngoog`, djvu.txt fetched and grepped
+3 Oct 2026, 54,445 lines), p. 225 (OCR line 17739, between the p. 224 and p. 226 markers), calendars Granby's own received
+copy: "The EARL OF HOLDERNESSE to the MARQUESS OF GRANBY. 1760, August 26. Whitehall.--Despatch, chiefly in cypher,
+concluding with mention of the joyful news that the King of Prussia had gained a signal victory over General Landohn.
+Signed. Refers to Prince Ferdinand's message requesting reinforcements to recomplete the British troops in Germany by the
+month of September; and showing the impossibility of complying with the request. **Copy deciphered.**" So a period
+clear-text copy of this despatch is at Belvoir (Rutland MSS), and its gist is in print -- a calendar summary, not the full
+text, so the item is not found-solved; it is **calibration material** (a period decipherment exists) rather than an
+unsolved target. The volume's other three "cypher" hits (lines 20053, 20190, 28328) are other letters, not checked against
+this cluster. Also from Google Books full-text API (3 Oct 2026): Skrine, *Fontenoy and Great Britain's Share in the War of
+the Austrian Succession* (1906, Q6FnAAAAMAAJ, full view) cites Harrington-to-Fawkener letters of 1745 from SP 87 by date
+(Sept 20; the 4 Aug 1745 item SP 87/17/122 not seen in snippets) -- a print lead for the 1745 items, not opened. Status
+unchanged: **open** for the cluster.
+
+## Web and blog check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `"intercepted letters from Namur" 1712 cipher French plenipotentiaries Utrecht` -- Wikipedia
+(Blencowe, Jaupain, Prior, Peace of Utrecht), an archive.org d'Estrades letters volume (Nijmegen, 1710), unrelated cipher news;
+the Jaupain/Blencowe pages say Jaupain copied 1712 intercepts of the Bavarian Elector's secretary (Malknecht) for d'Alonne and
+Blencowe, who both decrypted them -- context, not this item. (2) `Hyndford Stair 1742 cipher letters Villiers Prussia
+deciphered "SP 87/8"` -- TNA item pages (C9232935, C9232936, C9232958, C9233009: SP 87/8/51-52), the Bodleian archives blog's
+cryptography tag (a 1746 letter to Villiers in Berlin revealing a British diplomatic cipher -- a different, later letter), a
+Walpole-Mann 1742 letter (Yale); no decipherment of an SP 87/8 item. (3) site-restricted to **Cipherbrain** (scienceblogs.de),
+**Cipher Mysteries** and **Cryptiana** (blogspot and web.fc2), `Utrecht 1712 intercepted cipher Namur OR Cumberland 1745 cipher
+letters` -- only TNA catalogue pages (SP 87/4/234's fuller TNA text: "concerning the French plenipotentiaries to the
+Netherlands, the choice of Utrecht for the negotiations, and the interests of the electors of Bavaria and Cologne"); no blog
+post on any of the 13 items, so no comment thread to read. Not found on the open web.
+
+## Premise check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md and REQUEST.md name no decipherment of any of the 13
+items (the Jaupain/d'Alonne/Blencowe milieu is context). (b) Other solvers' working files: **not found** -- fresh clones
+3 Oct 2026, Aymeloglu d2800bb and Bourdeau 4aedb40, grepped for hyndford/stair/namur/cumberland/granby/"SP 87": Bourdeau's
+only SP 87 item is SP 87/24/33 (del Puerto 1748, not in this cluster), Aymeloglu none. (c) Physical neighbours: **unreachable
+as images** (digitised=false, LANE CX2); not re-searched by catalogue. (d) Recipient's side: **found for one item** --
+SP 87/32/115's recipient copy "Copy deciphered" at Belvoir, calendared in HMC Rutland II p. 225 (above). For SP 87/4/234 the
+TNA wording (Bavarian and Cologne electors' interests, 1712) matches the Malknecht intercepts that d'Alonne and Blencowe are
+recorded as decrypting -- a possible period decipherment elsewhere (Blencowe's papers / BL Add MSS), **inferred, not checked**.
+Other items' recipients (Stair, Cumberland, Fawkener, Ligonier, Granby, Clavering) not opened. Cluster stays **open**; SP
+87/32/115 is calibration.
+
+## While waiting (3 Oct 2026, GF4-BATCH12)
+
+Waits on: TNA page copies (REQUEST.md, ASKS row 57).
+
+- S: read the full text of Skrine's *Fontenoy* (1906, Google Books Q6FnAAAAMAAJ full view, or its archive.org copy) for
+  quoted Harrington-Fawkener/Harrington-Cumberland letters of June-August 1745, to see whether SP 87/17/58 or 17/122 is
+  quoted from its deciphered text -- no login, no person.
+
+Requests this pass (3 Oct 2026): googleapis.com/books 5, archive.org 2 (advancedsearch 1, djvu 1), github.com 0 (clones
+shared with sp87-brunswick-1759 above). WebSearch 3.
+Gate re-run (GF4-BATCH12, 3 Oct 2026): `sp87-further-1712: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp87-further`: no line.
