@@ -1,0 +1,8 @@
+corpus=la17 held_out=hugonisgrotiiepi00grot.txt.gz N=300 samples=200 real_p05=-1.009 false_negatives=56/200 (28.0%)
+corpus=la17 held_out=hugonisgrotiiad00oxengoog.txt.gz N=300 samples=200 real_p05=-1.020 false_negatives=35/200 (17.5%)
+corpus=la17 held_out=bub_gb_WTkBFjX6G_UC.txt.gz N=300 samples=200 real_p05=-1.014 false_negatives=97/200 (48.5%)
+corpus=la17 held_out=bub_gb_FK3cWikzFwsC.txt.gz N=300 samples=200 real_p05=-0.990 false_negatives=172/200 (86.0%)
+corpus=la17 held_out=bub_gb_mBpUAAAAcAAJ.txt.gz N=300 samples=200 real_p05=-1.006 false_negatives=82/200 (41.0%)
+corpus=la17 held_out=epistolaecelebe00grotgoog.txt.gz N=300 samples=200 real_p05=-1.020 false_negatives=90/200 (45.0%)
+corpus=la17 TOTAL false-negative rate: 532/1200 (44.3%)
+corpus=la17 per-fold spread: 17.5-86.0% (4.9x)

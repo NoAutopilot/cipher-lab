@@ -1,0 +1,11 @@
+corpus	decode	letters	verdict	score	real_p05	null_p99	score_minus_p05
+la17	GAPS42 target	1090	FAIL	-1.252	-0.989	-1.716	-0.263
+la17	GAPS42 shuffle 1	1090	FAIL	-1.340	-0.989	-1.716	-0.351
+la17	GAPS42 shuffle 2	1090	FAIL	-1.356	-0.989	-1.716	-0.367
+la17	GAPS50 target (nulls 0.1)	1090	FAIL	-1.252	-0.989	-1.716	-0.263
+la17	GAPS50 shuffle 1 (nulls 0.1)	1090	FAIL	-1.340	-0.989	-1.716	-0.351
+la18	GAPS42 target	1090	FAIL	-1.262	-0.978	-1.674	-0.284
+la18	GAPS42 shuffle 1	1090	FAIL	-1.338	-0.978	-1.674	-0.360
+la18	GAPS42 shuffle 2	1090	FAIL	-1.338	-0.978	-1.674	-0.360
+la18	GAPS50 target (nulls 0.1)	1090	FAIL	-1.262	-0.978	-1.674	-0.284
+la18	GAPS50 shuffle 1 (nulls 0.1)	1090	FAIL	-1.338	-0.978	-1.674	-0.360

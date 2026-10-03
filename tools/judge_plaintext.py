@@ -166,6 +166,14 @@ LANG_CORPORA = {
            DATA / "la18" / "zaluski_epistolae_t3.txt.gz"],
     "la18": [DATA / "la18" / "zaluski_epistolae_t1.txt.gz", DATA / "la18" / "zaluski_epistolae_t2.txt.gz",
              DATA / "la18" / "zaluski_epistolae_t3.txt.gz"],
+    # la17 (3 Oct 2026, GAPS57, account-4): Latin letters of about 1590-1649 -- Grotius to the Oxenstiernas and the Swedish
+    # crown (1806 and 1829 editions), Vossius's correspondence (1693), Casaubon's letters (1638), the Epistolae
+    # celeberrimorum virorum (1715: Grotius, Vossius and circle) and Bongars-Lingelsheim (1660), each capped at 650k folded
+    # letters, register and OCR filtered -- for riksarkivet-r4282-1628 (a 1628 Swedish-court letter), which la18 (1709-11)
+    # does not match by about 80 years. "la" stays la18; a spec opts in with "judge": {"language": "la17", ...}.
+    # See tools/data/la17/README.md (per-fold false-negative rates and spread).
+    "la17": [DATA / "la17" / f"{i}.txt.gz" for i in ("hugonisgrotiiepi00grot", "hugonisgrotiiad00oxengoog",
+             "bub_gb_WTkBFjX6G_UC", "bub_gb_FK3cWikzFwsC", "bub_gb_mBpUAAAAcAAJ", "epistolaecelebe00grotgoog")],
     # es (25 Sept 2026, LANE R6 Y8): tools/data/es17/ -- early-17th-c. Spanish prose (Cervantes, Quevedo),
     # ~1.92M letters folded, built for espagnol142-mercy-1648 (a 1648 letter). See tools/data/es17/README.md.
     # es17c (25 Sept 2026, LANE R6 MJ): tools/data/es17c/ -- 1643-1647 Spanish court-newsletter prose
