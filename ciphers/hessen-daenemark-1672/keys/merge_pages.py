@@ -25,6 +25,7 @@ GLOSS = {
     '651': ('[Cur_Brandenburg]', 'C', 'glossed Cur Brandenburg p2:3, p2:25 (2/2 agree)'),
     '653': ('[Cur_Brand.]', 'C', 'glossed Cur Brand. p2:9; a second code for Kurbrandenburg (variant, not merged)'),
     '681': ('[Cur_Brandenb.]', 'C', 'glossed Cur Brandenb p3:6; a third code for Kurbrandenburg (variant, or 651 misread; sign M)'),
+    '625': ('[?_Ahlefeldt]', 'M', 'margin gloss beside p2:7 (repeated 625, then two words in the bold hand): word 2 Ahlefeldt (pass B + GAPS168 zoom), word 1 unread (Stathalter? one eye); context "und hat 625. hierbey signalirte dienste gethan": a person; p3:4 unglossed'),
     '634': ('[Holstein]', 'I', 'unglossed in-line; the marginal gloss "disgustirt / unvertanin / Holstein" beside run 1 (p3:15-17) aligns its third word with the run\'s only nomenclator group before 601: inferred, not read'),
     '690': ('[Bleinenk?l]', 'M', 'glossed Bleinenk?l p1:21 and p2:25 (p2 sign a reconciler override from 650); person, name unidentified'),
     '768': ('[?ueco]', 'M', 'glossed ?ueco / s?cco p3:20 (Sueco?), unsettled'),
