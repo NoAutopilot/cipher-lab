@@ -1,0 +1,42 @@
+sign	clerk	n	agree	others	printed	grade	note
+S13	o	4	4		g	C	CONFLICT with printed
+S17	r	12	3	t:3,i:2,n:2,e:1,l:1	i	M	CONFLICT with printed
+S20	s	2	2		q	C	CONFLICT with printed
+S22	e	1	1		c	M	CONFLICT with printed
+S23	a	7	6	l:1	n	C	CONFLICT with printed
+S25	n	2	1	o:1	q	M	CONFLICT with printed
+S26	d	9	4	i:3,r:2	s	M	CONFLICT with printed
+S30	d	3	1	p:1,s:1	r	M	CONFLICT with printed
+S32	t	2	2		r	C	CONFLICT with printed
+S34	a	9	7	c:1,l:1	i	C	CONFLICT with printed
+S35	a	7	5	l:2	e	C	CONFLICT with printed
+S37	t	3	2	n:1	c	C	CONFLICT with printed
+S40	l	9	8	e:1	l	C	agrees with printed
+S42	n	1	1		u	M	CONFLICT with printed
+S45	d	7	7		a	C	CONFLICT with printed
+S47	n	16	6	l:5,c:2,i:2,a:1	u	M	CONFLICT with printed
+S52	a	18	9	o:6,e:2,z:1	e	M	CONFLICT with printed
+S53	o	9	9		t	C	CONFLICT with printed
+S54	i	3	3		null	C	fills a sign the printed table lacks
+S56	n	2	2		r	C	CONFLICT with printed
+S57	o	2	1	r:1	p	M	CONFLICT with printed
+S61	h	3	1	i:1,s:1	h	M	agrees with printed
+S62	r	11	9	n:2	o	C	CONFLICT with printed
+S65	d	5	3	c:2	et	C	CONFLICT with printed
+S66	c	3	2	l:1	c	C	agrees with printed
+S67	g	2	1	m:1	null	M	fills a sign the printed table lacks
+S70	i	17	9	r:4,c:2,o:2	o	M	CONFLICT with printed
+S73	i	3	3		null	C	fills a sign the printed table lacks
+S74	o	17	7	c:5,a:2,d:1,r:1,u:1	m	M	CONFLICT with printed
+S75	a	19	5	c:4,l:4,r:2,s:2,o:1,z:1	e	M	CONFLICT with printed
+S80	n	8	8		a	C	CONFLICT with printed
+S84	r	14	7	o:4,a:3	l	M	CONFLICT with printed
+S87	a	1	1		null	M	fills a sign the printed table lacks
+S88	i	20	7	n:5,a:3,o:2,t:2,c:1	t	M	CONFLICT with printed
+S89	l	6	4	u:2	d	C	CONFLICT with printed
+S93	n	10	9	t:1	i	C	CONFLICT with printed
+S94	n	11	5	o:5,r:1	s	M	CONFLICT with printed
+S95	l	5	3	e:2	f	C	CONFLICT with printed
+S97	t	3	2	a:1	a	C	CONFLICT with printed
+X_NEW	r	9	4	l:3,a:2	-	M	fills a sign the printed table lacks
+X_THETA2	u	9	4	r:2,h:1,l:1,n:1	r	M	CONFLICT with printed

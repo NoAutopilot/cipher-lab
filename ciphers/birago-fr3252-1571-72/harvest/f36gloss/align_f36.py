@@ -14,7 +14,8 @@ it (difflib ratio), and the chosen map is written to pairs.tsv. The printed key 
 sign's value; the control uses the same pairing.
 Unsettled signs ('?' in passD) become unique codes @U<n> (each takes 0-1 gloss letter, never counted). '?' in the gloss is
 the wildcard. Statistic per leaf: share of aligned settled-sign tokens whose letter equals the sign's majority letter over
-the whole letter (status 'agrees'); control: the same with gloss lines shuffled among that leaf's cipher lines (200 seeds).
+the whole letter (status 'agrees'), and share whose letter equals the printed Ceppo-Nevers value (a known-answer check:
+the printed key is control-backed on this letter, F36-READ); control: the same with gloss lines shuffled among that leaf's cipher lines (200 seeds).
 """
 import csv, difflib, json, random, subprocess, sys
 from collections import Counter, defaultdict
@@ -68,6 +69,9 @@ def build_pairs():
     return pairs
 
 
+PRINTED = None
+
+
 def stat(pairs):
     prepared, results, counts, shown = IA.run_align(pairs, **KW)
     rows = IA.token_rows(prepared, results, counts, shown)
@@ -77,10 +81,16 @@ def stat(pairs):
             continue
         per[leaf(r[0])]['n'] += 1
         per[leaf(r[0])]['agree'] += r[7] == 'agrees'
+        pv = PRINTED.get(r[4])
+        if pv and pv not in ('null', 'et'):
+            per[leaf(r[0])]['pn'] += 1
+            per[leaf(r[0])]['pagree'] += IA.fold(pv) == IA.fold(r[6])
     return rows, counts, shown, per
 
 
 def main(check=False):
+    global PRINTED
+    PRINTED = printed()
     pairs = build_pairs()
     rows, counts, shown, per = stat(pairs)
     m = printed()
@@ -99,7 +109,7 @@ def main(check=False):
         if pv not in ('-',) and IA.fold(pv) != top and grade == 'C':
             conf.append(f'{v}\t{top}\t{n}\t{topn}\t{pv}\t' + ('printed null' if pv == 'null' else 'value'))
     # control: shuffle gloss lines among the same leaf's cipher lines
-    ctl = ['leaf\treal_n\treal_agree\treal_share\tshuf_mean\tshuf_p95\tshuf_max\tgate']
+    ctl = ['leaf\tstatistic\treal_n\treal_k\treal_share\tshuf_mean\tshuf_p95\tshuf_max\tgate']
     by = defaultdict(list)
     for i, p in enumerate(pairs):
         by[leaf(p['cipher_line'])].append(i)
@@ -115,11 +125,13 @@ def main(check=False):
                 sp[i]['plain_raw'] = t
         _, _, _, ps = stat(sp)
         for lf in by:
-            shuf[lf].append(ps[lf]['agree'] / max(1, ps[lf]['n']))
+            shuf[(lf, 'self')].append(ps[lf]['agree'] / max(1, ps[lf]['n']))
+            shuf[(lf, 'printed')].append(ps[lf]['pagree'] / max(1, ps[lf]['pn']))
     for lf in sorted(by):
-        s = sorted(shuf[lf]); real = per[lf]['agree'] / max(1, per[lf]['n'])
-        p95 = s[int(0.95 * len(s)) - 1]
-        ctl.append(f"{lf}\t{per[lf]['n']}\t{per[lf]['agree']}\t{real:.3f}\t{sum(s)/len(s):.3f}\t{p95:.3f}\t{s[-1]:.3f}\t{'PASS' if real > s[-1] else ('above p95' if real > p95 else 'TIE/FAIL')}")
+        for stn, k, n in (('self', 'agree', 'n'), ('printed', 'pagree', 'pn')):
+            s = sorted(shuf[(lf, stn)]); real = per[lf][k] / max(1, per[lf][n])
+            p95 = s[int(0.95 * len(s)) - 1]
+            ctl.append(f"{lf}\t{stn}\t{per[lf][n]}\t{per[lf][k]}\t{real:.3f}\t{sum(s)/len(s):.3f}\t{p95:.3f}\t{s[-1]:.3f}\t{'PASS' if real > s[-1] else ('above p95' if real > p95 else 'TIE/FAIL')}")
     out['control.tsv'] = ctl
     out['conflicts.tsv'] = conf
     files = {HERE / k: v for k, v in out.items()}

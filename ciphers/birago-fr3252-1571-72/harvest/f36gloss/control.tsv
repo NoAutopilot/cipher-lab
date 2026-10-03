@@ -1,0 +1,7 @@
+leaf	statistic	real_n	real_k	real_share	shuf_mean	shuf_p95	shuf_max	gate
+f36r	self	178	97	0.545	0.592	0.651	0.681	TIE/FAIL
+f36r	printed	172	14	0.081	0.070	0.131	0.171	TIE/FAIL
+f36v	self	103	60	0.583	0.642	0.740	0.785	TIE/FAIL
+f36v	printed	89	5	0.056	0.055	0.119	0.205	TIE/FAIL
+f37r	self	23	13	0.565	0.667	0.842	0.938	TIE/FAIL
+f37r	printed	20	3	0.150	0.077	0.176	0.278	TIE/FAIL

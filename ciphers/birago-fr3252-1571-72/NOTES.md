@@ -823,3 +823,72 @@ Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs; the key is control-ba
 - [x] image-check: f.36-37 2x crops all 29 lines (F36-READ); f.117r native crops; f.47r native re-cut
 - [ ] retry: f.36r L10-L15 re-centre and re-cut; f.117r power at a measured post-look-alike error
 Verdict: keep going: 9 internal gaps; cheapest next: re-centre the f.36r lower lines (~$0.5), then an Opus eye read of the f.36-37 period gloss (~$4) once the rate limit reads allowed
+
+## F36-GLOSS (3 Oct 2026, account-3 orchestrator's worker): Opus eye read of the f.36-37 clerk gloss -- gate FAIL, no key
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-f36-gloss.md`. Disk only, 0 network requests. f.36-37 is itself a letter the period
+clerk deciphered on the leaf: whatever its gloss says is the period reading (N0-type), not a find of this project.
+Files: `harvest/f36gloss/` -- `cut_gloss.py` (crops, gitignored), `prompt*.md`, `pass{A,B}_{r36,v36}.tsv`, `recon_gloss.py`
+(`--check`) -> `gloss_recon.tsv`, `align_f36.py` (`--check`) -> `pairs.tsv`, `align.tsv`, `control.tsv`, `conflicts.tsv`,
+`../../keys/key_ceppo_f36_clerk.tsv`; `variant_decode.py` written, **not run** (step 4 is gated on step 3, which failed).
+
+1. **Re-centre (step 1).** `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/witness_f36/c37_f36r_cipher.jpg
+   --out <scratch> --prefix r36 --debug` -> centres 44 158 252 353 438 558 678 780 861 966 1068 1164 1271 1390 1490 1571 1682
+   (44, 558, 678 are prose rows). f.36r carries **14** cipher lines (4 at the top, 10 after "delle cose di francia"), not
+   HARVEST-D's 15: its grid drifts from L08 (1045 vs 1068) to L14 (1630 vs 1682), so passD's r36_L09-L15 straddle rows and one row
+   is counted twice. Gloss crops re-cut on the profile centres as r36n_L01-L14; f.36v/f.37r on their own profile centres
+   (within 10-45 px of HARVEST-D's). The sign passes (passD) were not re-read: r36n gloss lines pair with passD r36_L(i or i+1) by
+   the closer printed-key decode (line pairing only, never a value).
+2. **Gloss read (step 2).** Round 1 (3x, 700-px segments, 64 images per call) failed mechanically: the reader's earliest images
+   were dropped from its context ("media removed: request limit") before it wrote, and 700 px held only ~7 signs; stopped, discarded.
+   Round 2: 102 crops (1000 native px x1.5, the whole cipher row as anchor), two blind Opus passes x two pages (4 calls, written
+   line by line). '?' share A 39% / 33%, B 26% / 26%; every reader called its own pass low-confidence. Reconciled per line
+   (difflib): agree 338, one '?' 32, split 19, one-sided 536, both '?' 170; **two-pass gloss error (split+one-sided)/total = 0.51**.
+3. **Alignment and gates (step 3).** `tools/interlinear_align.py` (`--code-prefix @`, floor 0, null-cost 0, wildcard '?'), unsettled
+   signs as unique codes. Two statistics per leaf against 200 gloss-line shuffles within the leaf (the control can differ: shuffling
+   changes which gloss letters sit on which signs): self-consistency (share of aligned tokens equal to the sign's majority letter) and
+   a known-answer check (share equal to the printed Ceppo-Nevers value, control-backed on this letter by F36-READ, z 4.6-5.1):
+```
+leaf	statistic	real_n	real_k	real_share	shuf_mean	shuf_p95	shuf_max	gate
+f36r	self	178	97	0.545	0.592	0.651	0.681	TIE/FAIL
+f36r	printed	172	14	0.081	0.070	0.131	0.171	TIE/FAIL
+f36v	self	103	60	0.583	0.642	0.740	0.785	TIE/FAIL
+f36v	printed	89	5	0.056	0.055	0.119	0.205	TIE/FAIL
+f37r	self	23	13	0.565	0.667	0.842	0.938	TIE/FAIL
+f37r	printed	20	3	0.150	0.077	0.176	0.278	TIE/FAIL
+```
+   **Every leaf ties or fails both gates.** The known-answer share (5.6-15%) sits at the shuffle mean (5.5-7.7%), i.e. at chance: the
+   reconciled gloss does not register with the sign row. Per CLAUDE.md rule 3 (merge paragraph) no leaf's values may enter a shared
+   key: `keys/key_ceppo_f36_clerk.tsv` (41 signs, 19 "conflicts" with the printed table) is the alignment's raw output, kept for
+   rule 7 only, **all rows unusable** -- not C, not merged, and its "conflicts" are alignment noise, not data conflicts under rule 4.
+   Step 4 not run: there is no passing C value to fill a sign the printed table lacks (X_NEW, b/x/y homophones).
+4. **Grades (rule 4).** Unchanged from F36-READ: 10 C (HARVEST-D's f.36v line-1 eye read), 697 M, 268 U, 18 null of 993; 0 H, 0 S.
+   One spot agreement: both Opus passes give "...il s?gnor..." on v36top_L01, matching HARVEST-D's "parlandone il signor"; the rest of
+   that line diverges from the printed-key decode.
+
+Lesson: an interlinear gloss of ~15-px letters at Gallica's native resolution is not read by a model fed running-line segments, Sonnet
+(F36-READ, HARVEST-D) or Opus (this job); the failure is registration and legibility, and a gate on the known-answer key catches it.
+Cost: session read USD 16.94 at the stop (2.8x the USD 6 cap; round 1's discarded 3x calls plus round 2's four ~125k-token calls); rate
+limit `allowed_warning` at the same read; stopped there.
+
+## Remaining gaps (F36-GLOSS, 3 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs (the clerk gloss unread beyond f.36v line 1); f.47r: 0 S of about 770; f.117r: 276 signs, all M/U.
+- f.36-37 period gloss (about 970 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once here, known-answer gate at chance on all three leaves); a different instrument is untried: per-sign tiles (each sign box with the band above it, from passD positions, 40 per grid image, the sign id printed under each) so the gloss letter is registered to its sign by construction, two blind passes, known-answer gate first on v36top_L01 and on signs whose printed value is control-backed; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36r passD sign rows r36_L09-L15 - blocker: not-attempted; they straddle the 14 real rows found by the row-ink profile (F36-GLOSS step 1); next: re-read the signs of r36n_L09-L14 on the re-centred crops (cut_gloss.py centres), one Sonnet pass x2, ~$2
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
+
+## Escalation (F36-GLOSS, 3 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ), the fr.3251 1572 group's sheet, maps, clerk key and controls used
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 whole letter (control-backed, F36-READ) and f.47r (NEVBIR-47); 1572 key on f.117r (z 3.2, judge FAIL); Nov 1571 system has no key
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles (running-line reads retired, F36-GLOSS); f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 decoy-null crib test
+- [x] image-check: f.36-37 gloss crops re-cut on row-ink centres (F36-GLOSS); regions are already Gallica native resolution; f.117r native crops; f.47r native re-cut
+- [ ] retry: f.36r r36n_L09-L14 sign re-read on the re-centred rows; f.117r power at a measured post-look-alike error
+Verdict: keep going: 9 internal gaps; cheapest next: re-read the f.36r r36n_L09-L14 sign rows (~$2), then the per-sign tile gloss read (~$8) once the rate limit reads allowed
