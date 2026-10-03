@@ -1,0 +1,48 @@
+{
+ "fetched": "2026-10-03, one DECODE browser login (GAPS30-riksarkivet-r4282-1628, account-4): explicit --fetch of 4305 pp.2-4, then --listen get of 4263's four _P.pdf names read from record_4263.html thumbnails; 8 requests after login, 1.7 s apart",
+ "note": "PDFs and record page not committed (record page carries the logged-in account name); jpg renders at 80 dpi beside this file.",
+ "pdfs": [
+  {
+   "file": "IMG_R4263_I25581_P.pdf",
+   "bytes": 1135084,
+   "sha1": "2a40f6225a2cb4cf7f94e8dbcafcb6b737c8baf7",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4263_I25581_P.pdf"
+  },
+  {
+   "file": "IMG_R4263_I25582_P.pdf",
+   "bytes": 2376099,
+   "sha1": "7038e69ac465ae1da9c34ae50c5ea21522bfedb5",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4263_I25582_P.pdf"
+  },
+  {
+   "file": "IMG_R4263_I25583_P.pdf",
+   "bytes": 939955,
+   "sha1": "7d13786654485bcb3d98fa82a64204b6cd0fe25d",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4263_I25583_P.pdf"
+  },
+  {
+   "file": "IMG_R4263_I25584_P.pdf",
+   "bytes": 2076136,
+   "sha1": "4c8be15b9773e90feaee74eaf3d4c21fa10ba95d",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4263_I25584_P.pdf"
+  },
+  {
+   "file": "IMG_R4305_I25827_P.pdf",
+   "bytes": 712968,
+   "sha1": "6a7588143f8a750359fadf10f09bbfa901797575",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4305_I25827_P.pdf"
+  },
+  {
+   "file": "IMG_R4305_I25828_P.pdf",
+   "bytes": 641570,
+   "sha1": "0ecdc0e9781bde81e971c9f1923dba250e687a23",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4305_I25828_P.pdf"
+  },
+  {
+   "file": "IMG_R4305_I25829_P.pdf",
+   "bytes": 1410378,
+   "sha1": "e04a5724ae71038c533493bfcdf3c62df4cd1ea6",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4305_I25829_P.pdf"
+  }
+ ]
+}
