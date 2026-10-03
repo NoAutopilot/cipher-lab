@@ -162,6 +162,8 @@ single month, since no single month can be justified as *the* date.
 
 ## Verdict: `open` (same key/corpus as CS2-01 -- see above; do not double-book the board)
 
+**3 Oct 2026 (RANZO-NB):** still `open`. fr.3019 no.27 neighbours and no.36 (f.94) carry no clear copy, gloss or key; f.74r is marked "dupp^ta". Next: compare no.27 with fr.2988 f.2r-v ("dup.a") for a second copy (section "fr.3019 no.27 neighbours" below).
+
 Image confirmed online (full resolution, folios pinned exactly, ark discrepancy flagged above). CSP Venice
 (both volumes covering the full 1520-1533 range) and Sanudo vol. XLIII (bracketing the one hard date available)
 read in full text: no hit. DECODE's own hard filter (an attached "Transcription" document) checked and cleared --
@@ -246,9 +248,39 @@ Verdict after both checks: **`open`** (unchanged). Not found-solved: no printed 
 Requests this pass: scienceblogs.de 1 (curl) + 2 (fetch tool); gallica.bnf.fr 10 (1 manifest, 9 IIIF images); archive.org 6
 (1 advancedsearch, 2 metadata, 3 djvu.txt); github.com 2 shallow clones; WebSearch 8. All >=1.5 s apart per host.
 
+## fr.3019 no.27 neighbours and f.94 view (RANZO-NB, LANE-A1 account 1, 3 Oct 2026)
+
+Gallica btv1b9059994n (labels all "NP"; foliation from the leaf numbers), overviews at 808 px, crops by
+`tools/iiif_lines.py --ark btv1b9059994n --canvas N --region x,y,w,h --out ciphers/fr2988-ranzo-1520s/images/fr3019`
+(views 112, 114, 116, 118; manifest in that folder). Per view:
+
+| view | folio | content | date / writer |
+|---|---|---|---|
+| 112 | f.71v (dorse, landscape) | endorsement of the preceding item, French, "...[me]moire p[ou]r le fait des / ligues(?)" (grade I) | not Ranzo |
+| 113 | f.72 | blank | -- |
+| 114 | f.73r | cipher, Ranzo's letter+superscript-number code, opening "f5 g1 p149 h4 [47 a154 s116 s9 h158 h57 f5 ..." (no interlinear) | -- |
+| 115 | f.73v | cipher, same code, no interlinear | -- |
+| 116 | f.74r | cipher: 3 lines with numbers above letters, a "/." break, then about 20 lines in the same code written letter-then-number inline (same tokens, e.g. [47, p149, m170; a layout change, not a second system); signature "Hieronimo Ranzo"; at lower left **"dupp^ta"** (duplicata) | Ranzo (signature) |
+| 117 | f.75 | blank | -- |
+| 118 | dorse, landscape | docket "Des garnisons de picardie / Pour les mois de Mars / et Avril 1559" -- belongs to another item | 1559, not Ranzo |
+| 144 | f.92v | blank | -- |
+| 145 | f.93r | clear Italian letter to the King ("Sire ... de Lyone al p° de Novembre M.D.XXVI"), signed Theodoro [Trivulzio] (grade M on name and date) | 1526 |
+| 146 | f.94r (no.36) | clear Italian "Reporto de homo novamente venuto da Genova" (Andrea Doria, Savona, Cremona, Asti) -- an intelligence report, plausibly the "avisi" enclosed in f.93 | c. 1526 |
+| 147 | f.94v | continuation of the report, clear Italian | -- |
+| 153-157 | ff.98r-100v | clear French letters | not Ranzo |
+
+**Result: no clear copy, gloss, interlinear or key for Ranzo's code in fr.3019 ff.71v-75 or ff.92v-94v (no.36 is a
+clear Genoa report, not a decipherment of no.27).** One new fact: f.74r is marked **"dupp^ta"**, so no.27 is a
+duplicate -- an original (or another duplicate) of the same letter existed. It is **not** fr.2988 f.9r: the opening
+of f.9r (btv1b9059908w view 17, overview) is "b5 f3 c27 g72 p246 ...", against f.73r's "f5 g1 p149 h4 [47 ...";
+fr.2988 f.2v's "dup.a" (Bourdeau) remains the other duplicate mark in the corpus and was not compared here.
+Requests: gallica.bnf.fr 23 (1 manifest, 17 overviews, 5 native regions), >=1.5 s apart. Vision: 4 contact sheets
++ 7 crops read by this worker.
+
 ## While waiting
 
-Next step that depends on nobody: view Bourdeau's fr.3019 no.27 neighbours (Gallica btv1b9059994n views 112-118, ff.72-74)
-and no.36 (f.94) at native resolution for a clear copy or gloss of Ranzo's code; free Gallica image check, about $0.5.
-
-Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py fr2988-ranzo-1520s` -> "fr2988-ranzo-1520s: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no Web and blog check). `python3 tools/next_steps.py --wait-only | grep fr2988-ranzo-1520s` -> no line.
+Next step that depends on nobody: compare fr.3019 no.27 (f.73r-74r, duplicata) token-for-token against fr.2988
+f.2r-v ("dup.a", btv1b9059908w views 6-7) and Bourdeau's other Ranzo transcriptions (`n20/ranzo_c0*.txt`): if one is
+the same letter, two copies give a free transcription check and pool length without new ciphertext; one-page overview
+compare of the opening 10 tokens, about $1.5. Otherwise the target needs a key-bearing source (Garbino's papers,
+not located) or the pooled cryptanalysis already run by Bourdeau (function-word skeleton only).
