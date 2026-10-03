@@ -1,0 +1,6 @@
+crib 'gouvernement' -> gouuernement (12 letters); N=370 tokens in 6 group(s), K=24; wild [] (0 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones allowed; corpora 7 file(s)
+REAL: 6 consistent placements at 6 distinct start positions; best score -2.377 (coverage 238 of 370)
+  start   33 skips 0 errs 0 score -2.377 cov 238 agree-with-compare 0/11 key 23=g 31=n 32=o 33=u 41=t 51=n 53=r 61=e 62=u 64=m 71=e
+  start   86 skips 0 errs 0 score -2.414 cov 207 agree-with-compare 0/9 key 12=n 14=g 24=u 34=m 51=n 52=t 53=r 61=e 71=o
+CONTROL (600 shuffled-order sequences): placements mean 3.7 p95 9 max 16; distinct starts mean 3.7 p95 9 max 16; best score mean -2.501 p95 -2.291 max -2.141
+RANK: real placements 6 vs shuffles -- 134/600 shuffles at or above; real best score -2.377 -- 130/600 shuffles at or above

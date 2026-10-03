@@ -1,0 +1,7 @@
+crib 'grasveld' -> grasueld (8 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 20 consistent placements at 20 distinct start positions; best score -2.505 (coverage 219 of 370)
+  start  263 skips 0 errs 0 score -2.505 cov 219 agree-with-compare 0/8 key 12=l 22=d 23=r 42=g 52=s 61=e 62=u 71=a
+  start  293 skips 0 errs 0 score -2.584 cov 235 agree-with-compare 0/8 key 12=s 14=g 44=d 53=a 61=e 62=u 63=r 71=l
+  start  260 skips 0 errs 0 score -2.751 cov 226 agree-with-compare 0/8 key 12=a 21=g 23=u 42=s 52=l 61=r 62=d 71=e
+CONTROL (600 shuffled-order sequences): placements mean 22.8 p95 34 max 52; distinct starts mean 22.8 p95 34 max 52; best score mean -2.495 p95 -2.341 max -2.117
+RANK: real placements 20 vs shuffles -- 401/600 shuffles at or above; real best score -2.505 -- 360/600 shuffles at or above

@@ -1,4 +1,4 @@
-# A2-RAA7 crib pre-registration (written 3 Oct 2026 ~01:52 UTC, committed before any crib was scored)
+# A2-RAA7 crib pre-registration (written 3 Oct 2026, pushed 01:43 UTC (time read from date -u at push), committed before any crib was scored)
 
 Instrument: tools/crib_pattern.py (shared tool, H28) on the 370 leaf-2 cells (code = top digit + bottom digit,
 ciphertext_209_leaf2_full.tsv kind c; struck columns kind x dropped; the one uncertain cell "?2" made --wild).

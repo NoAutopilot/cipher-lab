@@ -1,0 +1,5 @@
+crib 'asiatische' -> asiatische (10 letters); N=370 tokens in 6 group(s), K=27; wild [] (0 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones allowed; corpora 7 file(s)
+REAL: 1 consistent placements at 1 distinct start positions; best score -2.405 (coverage 181 of 370)
+  start   58 skips 0 errs 0 score -2.405 cov 181 agree-with-compare 0/8 key 11=c 14=s 44=i 52=t 61=e 62=h 64=s 71=a
+CONTROL (600 shuffled-order sequences): placements mean 16.6 p95 28 max 40; distinct starts mean 16.6 p95 28 max 40; best score mean -2.571 p95 -2.413 max -2.304
+RANK: real placements 1 vs shuffles -- 600/600 shuffles at or above; real best score -2.405 -- 25/600 shuffles at or above

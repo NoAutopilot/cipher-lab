@@ -1,0 +1,6 @@
+crib 'bataafsche' -> bataafsche (10 letters); N=370 tokens in 6 group(s), K=25; wild [] (0 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones allowed; corpora 7 file(s)
+REAL: 15 consistent placements at 15 distinct start positions; best score -2.708 (coverage 180 of 370)
+  start   69 skips 0 errs 0 score -2.708 cov 180 agree-with-compare 0/8 key 11=f 14=c 22=b 24=s 41=t 53=h 61=e 71=a
+  start   33 skips 0 errs 0 score -2.826 cov 239 agree-with-compare 0/10 key 12=s 14=b 32=c 41=h 44=a 51=f 53=a 61=e 64=a 71=t
+CONTROL (600 shuffled-order sequences): placements mean 17.2 p95 28 max 38; distinct starts mean 17.2 p95 28 max 38; best score mean -2.853 p95 -2.672 max -2.486
+RANK: real placements 15 vs shuffles -- 383/600 shuffles at or above; real best score -2.708 -- 61/600 shuffles at or above

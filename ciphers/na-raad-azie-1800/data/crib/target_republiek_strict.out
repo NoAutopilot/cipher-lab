@@ -1,0 +1,4 @@
+crib 'republiek' -> republiek (9 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 0 consistent placements
+CONTROL (600 shuffled-order sequences): placements mean 1.6 p95 4 max 7; distinct starts mean 1.6 p95 4 max 7; best score mean -2.943 p95 -2.592 max -2.262
+RANK: real placements 0 vs shuffles -- 600/600 shuffles at or above; real best score -inf -- 600/600 shuffles at or above

@@ -1,0 +1,7 @@
+crib 'batavia' -> batauia (7 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 6 consistent placements at 6 distinct start positions; best score -2.745 (coverage 141 of 370)
+  start  347 skips 0 errs 0 score -2.745 cov 141 agree-with-compare 0/5 key 14=u 23=i 42=b 52=t 61=a
+  start  201 skips 0 errs 0 score -2.778 cov  89 agree-with-compare 0/5 key 21=u 23=i 41=t 44=a 51=b
+  start  270 skips 0 errs 0 score -2.839 cov  88 agree-with-compare 0/5 key 14=t 22=b 23=a 41=u 44=i
+CONTROL (600 shuffled-order sequences): placements mean 1.4 p95 4 max 7; distinct starts mean 1.4 p95 4 max 7; best score mean -2.873 p95 -2.686 max -2.593
+RANK: real placements 6 vs shuffles -- 4/600 shuffles at or above; real best score -2.745 -- 99/600 shuffles at or above

@@ -1,0 +1,7 @@
+crib 'vrede' -> urede (5 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 21 consistent placements at 21 distinct start positions; best score -1.945 (coverage 109 of 370)
+  start  257 skips 0 errs 0 score -1.945 cov 109 agree-with-compare 0/4 key 21=d 31=u 42=r 61=e
+  start   98 skips 0 errs 0 score -1.986 cov 112 agree-with-compare 0/4 key 43=u 52=r 61=e 63=d
+  start   48 skips 0 errs 0 score -2.076 cov 122 agree-with-compare 0/4 key 23=r 61=e 62=u 63=d
+CONTROL (600 shuffled-order sequences): placements mean 16.4 p95 22 max 33; distinct starts mean 16.4 p95 22 max 33; best score mean -2.061 p95 -1.906 max -1.803
+RANK: real placements 21 vs shuffles -- 83/600 shuffles at or above; real best score -1.945 -- 67/600 shuffles at or above

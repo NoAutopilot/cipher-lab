@@ -1,0 +1,5 @@
+crib 'prediger' -> prediger (8 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 1 consistent placements at 1 distinct start positions; best score -2.661 (coverage 106 of 370)
+  start   30 skips 0 errs 0 score -2.661 cov 106 agree-with-compare 0/6 key 12=e 33=p 34=d 41=g 43=i 53=r
+CONTROL (600 shuffled-order sequences): placements mean 0.4 p95 2 max 3; distinct starts mean 0.4 p95 2 max 3; best score mean -2.771 p95 -2.488 max -2.183
+RANK: real placements 1 vs shuffles -- 208/600 shuffles at or above; real best score -2.661 -- 81/600 shuffles at or above

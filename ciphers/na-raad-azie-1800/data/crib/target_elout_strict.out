@@ -1,0 +1,7 @@
+crib 'elout' -> elout (5 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 124 consistent placements at 124 distinct start positions; best score -2.154 (coverage 138 of 370)
+  start   90 skips 0 errs 0 score -2.154 cov 138 agree-with-compare 0/5 key 11=l 24=u 53=o 61=e 62=t
+  start  254 skips 0 errs 0 score -2.239 cov 141 agree-with-compare 0/5 key 14=o 31=u 42=t 61=e 71=l
+  start  304 skips 0 errs 0 score -2.264 cov 152 agree-with-compare 0/4 key 12=o 44=u 51=l 61=e
+CONTROL (600 shuffled-order sequences): placements mean 132.6 p95 152 max 177; distinct starts mean 132.6 p95 152 max 177; best score mean -2.122 p95 -2.007 max -1.887
+RANK: real placements 124 vs shuffles -- 476/600 shuffles at or above; real best score -2.154 -- 392/600 shuffles at or above

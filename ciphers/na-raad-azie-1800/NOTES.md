@@ -678,3 +678,65 @@ Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. 
 3. *Leaf 3* (same cipher, faint, untranscribed): ~$4-6 for `tools/iiif_lines.py` crops + 2 blind passes + 1
    reconciliation (Usage 6 per-pass pricing) -- more text is what every family here needs at N=370.
 4. *c.1800 Dutch corpus* (~$2, V6-PTCORP's method) before any judge, whichever family first reads.
+
+## 3 Oct 2026 -- A2-RAA7: crib drag from the clear words, matched control first (rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Instrument (Usage 8, no new solver code).** `tools/crib_pattern.py` (shared, H28): drags a crib along the cell stream;
+a placement is consistent when every cell maps to one letter (strict: and no two cells to one letter); its score is the
+implied partial key applied to the whole stream, mean log unigram probability under the corpus; control = the same drag on
+shuffled cell order (N and cell counts fixed, only the order the constraints depend on varies, so the control can differ
+from the target on both statistics). Inputs from `scripts/crib_inputs.py` (deterministic): `data/crib/target_codes.tsv`
+(370 cells, code = top+bottom; struck columns dropped; "?2" wild) split into 6 groups at every clear-text insertion
+(106/18/13/99/74/60), and six matched synthetic Dutch cell-ciphers (370 nl20 letters in the same group lengths, one crib
+planted in the longest group; strict = one-to-one map onto two-digit cells, K 20-22; homo = homophonic map onto the
+target's own cell-count profile, K 24-27). Corpus nl20 (1880s-1900s; no c.1800 Dutch on disk -- rule 3 era caveat).
+
+**Pre-registration.** Crib list, modes and pass criteria pushed before any scoring (`data/crib/PREREG.md`, commit
+"A2-RAA7 crib pre-registration", 01:43 UTC): asiatische bataafsche republiek engelschen gouvernement commissarissen
+nederlandsche bezittingen onderhandelingen staatsbewind batavia prediger grasveld elout vrede; target hit = real best score
+with 0/600 shuffles at or above (Bonferroni over 30 tests).
+
+| run | planted / crib | real placements | best-score rank vs 600 shuffles | verdict |
+|---|---|---|---|---|
+| control strict | asiatische | 1 (planted start 58) | 0/600 | pass |
+| control strict | bataafsche | 1 (planted 69) | 0/600 | pass |
+| control strict | gouvernement | 1 (planted 86) | 0/600 | pass |
+| control homo | asiatische | 1 (planted 58) | 25/600 | pass |
+| control homo | bataafsche | 15 (planted 69 top) | 61/600 | **fail** |
+| control homo | gouvernement | 6 (planted 86 ranked 2nd) | 130/600 | **fail** |
+| target strict | 10 cribs of 9-16 letters | 0 each (shuffles also ~0) | -- | no anchor |
+| target strict | batavia / prediger / vrede | 6 / 1 / 21 | 99 / 81 / 67 of 600 | no hit |
+| target strict | grasveld / elout | 20 / 124 | 360 / 392 of 600 | no hit |
+
+Outputs: `data/crib/control_*.out`, `data/crib/target_*_strict.out`; rows in HYPOTHESES.md.
+
+**Result.** Strict (one-to-one) mode: the control recovers all three planted cribs at the planted start with 0/600 shuffles
+at or above, and the target gives **0/15 hits** -- no crib from the pre-registered list anchors a one-to-one cell key on
+leaf 2. This agrees with A2-RAA3's control-backed masc negative by a different instrument; conditional on nl20 and on the
+crib list (a word absent from the letter cannot place). Homophonic mode: the matched control fails (2 of 3 planted cribs
+miss the gate), so the crib drag is **untestable by this tool at N=370 for a homophonic cell design** -- not a negative.
+Since A2-RAA4/5/6's homophonic and syllable-table variants also read nothing, the open design question is homophonic,
+and every instrument tried at N=370 has either failed its control or found nothing; more text is the lever.
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
+(all local).
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-RAA7)
+Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a reading; HYPOTHESES.md)
+- leaf 2 cipher body (370 cells) - blocker: not-attempted; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); next: transcribe leaf 3 (same cipher, faint) to raise N, then re-run homophonic with control, ~$5
+- leaf 3 cipher body (untranscribed, faint bleed-through) - blocker: not-attempted; images on disk (images/209_leaf3*.jpg); next: tools/iiif_lines.py crops + 2 blind passes + 1 reconciliation, ~$5
+- bottom-digit order (vowel-column hypothesis, A2-RAA6 descriptive note) - blocker: not-attempted; never tested; next: vowel-sequence bigram test with nl20-window control, ~$0.5
+
+## Escalation (3 Oct 2026, A2-RAA7)
+- [n/a] siblings: no sibling cipher letter of this system found in 2.01.27.02 (VX-N03 sweep, 25 Sept 2026)
+- [x] clear-pages: clear words around the grid used as cribs, strict mode no anchor, homophonic mode control fails (A2-RAA7)
+- [x] known-keys: invnr 317 Grasveld 1799 code tested against 209, negative by design mismatch (VX-CS06, A2-RAA)
+- [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
+- [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
+- [ ] image-check: leaf 3 transcription from line crops to raise N (planned step)
+- [ ] retry: homophonic family and homophonic crib drag on leaf 2+3 once leaf 3 is in, control first
+Verdict: keep going: 3 internal gaps; cheapest next: vowel-column order test on the bottom digits with nl20-window control, ~$0.5 (then leaf 3 transcription, ~$5)

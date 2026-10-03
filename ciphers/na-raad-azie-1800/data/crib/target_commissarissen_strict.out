@@ -1,0 +1,4 @@
+crib 'commissarissen' -> commissarissen (14 letters); N=370 tokens in 6 group(s), K=25; wild ['?2'] (1 tokens), skip [] (0 tokens), max-skip 6, max-err 0, homophones not allowed; corpora 7 file(s)
+REAL: 0 consistent placements
+CONTROL (600 shuffled-order sequences): placements mean 0.0 p95 0 max 0; distinct starts mean 0.0 p95 0 max 0; best score mean 0.000 p95 -inf max -inf
+RANK: real placements 0 vs shuffles -- 600/600 shuffles at or above; real best score -inf -- 600/600 shuffles at or above
