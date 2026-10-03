@@ -318,3 +318,67 @@ $ python3 tools/intake_gate_check.py ormond-arran-1678
 ormond-arran-1678: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit code: 0
 ```
+
+## Premise check (GF4-BATCH1, account-4, 2 Oct 2026)
+
+**Result: not found solved.** No decipherment, plaintext or applied key for the p.93 passage was found under (a)-(d).
+Status stays `open`. This is the adversarial pass of `.claude/briefs/check-solved.md` "Premise check", run 3 Oct 2026
+00:05-00:20 UTC (`date -u`). No test or reading was run. One transcription flag (the ninth group, below) goes to the
+image check and is not repaired here.
+
+**(a) Decipherments the folder mentions, opened. Not found.**
+- Tomokiyo's HTML-comment note in `sources/cryptiana/web/charlesii2.htm` (on disk, read in the check-solved pass above).
+  It records a *failed* application of the Ormond-Longford Cipher 1 to this passage, not a reading.
+- The calendar's two printed glosses near this letter, opened in vol.4's djvu text (fetched fresh this pass). One is
+  p.105-6, Arran to Ormond, 9 Feb 1677-8: a two-letter code with bracketed equivalents. The other is the p.107 footnote
+  ("The equivalents for the words in cipher in the original are interpolated in Ormond's handwriting"). Both are
+  different systems from the 3-digit groups on p.93, and neither glosses p.93. The volume index lists only 93 and
+  105-6 as cipher passages.
+- Cipher 1-3 keys and the sibling passages of 1680 (`keys/`, `siblings.tsv`): these carry their own printed
+  decipherments, are a different system (YX-ORM, ZX2-ORM negatives), and none covers this passage.
+
+**(b) Other solvers' working files. Not found.**
+- **Bourdeau**: fresh shallow clone, HEAD 2341682 (2 Oct 2026 15:12 -0500). `TARGETS.md:190` still reads "too short;
+  not attempted". `targets/ormonde/` (analyze.py, cipher_runs.txt, knowler_excerpts.txt, NOTES.md) is the 1634-35
+  Maltravers item only. Its `445`-like hits are index page numbers in his harvested text, not this passage.
+- **Aymeloglu**: fresh shallow clone, HEAD d2800bb (27 Sept 2026). No `ormond` or `arran` file, folder or row.
+
+**(c) Physical neighbours (the letters on either side in the same Kilkenny series, HMC vol.4 pp.90-110). Not found, but a
+reply bears on it.**
+- **Arran's reply, 5 Feb 1677-8 (London, vol.4 pp.101-102):** "three packets were sent me ... with yours of the 24th,
+  26th and 29th of last month ... Since you tell me what you wrote in cipher is not of great importance, I will not
+  venture the post's going away by endeavouring to decipher it to-night, but you may depend upon me so far as this
+  cipher goes which is betwixt us, if the copies are true." So the recipient had not deciphered it on 5 Feb. A full
+  grep of vol.4 for cipher/decipher (about 30 hits) found no later letter in which Arran reports the decipherment.
+  The nearest later cipher in the run is Arran's 9 Feb two-letter code, a different system.
+- Ormond to Arran, 29 Jan 1677-8 (pp.99-100), in clear, on the same subject (Douglas, "a notorious cheat", Maunsell,
+  Granard). It is context for the passage's topic, not a decipherment. No crib test was run (out of brief).
+- The originals: the preface (vol.4 pp.v-vi) says the 1677-85 Kilkenny correspondence survives largely intact, and
+  that Bodleian Carte MSS 38-40, 45, 47, 50, 52-54, 216-217 hold "duplicate drafts or contemporary office copies" of
+  it. A Carte copy of this letter, with or without a gloss, was not checked: the Bodleian catalogue and images were
+  not reached this pass. **Unreachable**; a cheap next step is the Bodleian online Carte calendar for Ormond to Arran,
+  24 Jan 1677/8.
+
+**(d) Recipient's side and other prints. Not found.**
+- **HMC Sixth Report, Appendix (1877), pp.720-721** (Gilbert's report on the Kilkenny Ormonde MSS, 1665-79;
+  archive.org `sixthreportroyal00manu`, full text grepped). This is a second, earlier print of the same letter in the
+  original spelling ("This is a tryall whether you are skilfull in decyphering, els it might have been written in
+  plaine letters"). The cipher groups are printed undeciphered. There is no gloss or footnote, the same as in 1906. The
+  same text is reprinted in `reportofroyalcom06grea` and `reportsfromcommi0047unse_47` (Parliamentary Papers).
+- Interior-phrase searches. IA full text (be-api): "too nice a modesty" (10 hits), "still a greater mystery to me"
+  (7), "what he says of 445" (4). Google Books (country=US, keyed): "445 and 342" (7), "too nice a modesty can be of no
+  use" (8), "skilfull in decyphering" (118, all unrelated). Every hit is one of the HMC prints or one of two modern
+  books that quote the clear opening ("sloth and too nice a modesty", on Arran's court duties): *After the Civil
+  Wars* (2014) and *Lord Churchill's Coup* (Webb). Neither prints the cipher groups or a reading of them.
+- Arran's own papers: no separate edition was found. Carte's *Life of Ormond* book VIII was not searched this pass
+  (the HMC preface says it gives this period little space).
+
+**Transcription flag (not repaired, rule 2/ciphertext as transcribed).** `ciphertext.txt` gives the ninth group as
+**57**. Both independent editorial transcriptions of the manuscript give **58**: the 1877 Sixth Report (Gilbert), and
+the 1906 calendar, where Google Books' separate OCR also shows 58. The check-solved note at point 1 above took 58 for
+an OCR slip and 57 from Tomokiyo's typed transcription. Two editors against one later typed copy favours 58. The file
+stays as transcribed until the manuscript (NLI Ormond papers or a Carte copy) or a page image of the 1877/1906 print
+is checked. The earlier key-coverage tests are unaffected in substance: 57 and 58 are both single groups among 20.
+
+Requests this pass: archive.org 3 (vol.4 djvu, Sixth Report djvu, plus 4+5 be-api fts calls, >=2 s apart),
+googleapis.com 3 (keyed, country=US), github.com 2 (shallow clones, shared with this batch). No logins.
