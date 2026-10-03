@@ -816,23 +816,71 @@ owner settles the f.23r alphabet in the sign sorter (the 0/0'/o and v/v'/D/4 spl
 After that, two passes against the settled labels, then the alignment. Session cost could not be read here: get_session
 returned no cost figure. Requests: none (local native region reused).
 
-## Remaining gaps (DIN-23P, 3 Oct 2026; supersedes DIN-3623's list)
-Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4; conflict rows sq, m, 0 and a all checked per occurrence, none promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line read, 4 July 1592
-- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t), m (u/t) and 0 (e/s/p/c, DIN-LEFT) read more than one letter; next: a word-division pass with #, v, m and 0 read in context and graded I, ~$4
+## f.130 word division, polyphones read in context (DIN-WORDS, account 1, 3 Oct 2026, 10:22-10:30 UTC)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-din-words.md`. Pre-registration `f130/words/PREREG.md` (commit 5cefabfe, pushed
+before any score). Script `f130/words/divide_f130.py [--check]`. Tool shelf: no segmenter on the shelf (judge_plaintext.py's
+`min_word_cover` is a greedy cover, not a polyphone-aware division), so a target-local Viterbi was written. No key value changed.
+
+**Method.** fr16 word list (24,078 words, count >= 2, norm as verify_din2.py), Viterbi over each cipher run (clear spans and
+`.` are breaks, line ends are not). Polyphone rows `#` {c,d}, `v` {a,t}, `m` {u,t}, `0` {e,s,p,c} and the U tokens
+(wildcards) are resolved by the best path. Statistic D = cipher tokens in dictionary words of >= 3 letters / 527.
+
+**Result (rule 3, side by side):**
+
+| decode | D | n | mean | p95 | max | >= real |
+|---|---|---|---|---|---|---|
+| real (job-4 key, polyphones + wildcards) | **0.687** (362/527) | | | | | |
+| shuffled key (rows + candidate sets permuted, seed 20261003) | | 200 | 0.479 | 0.594 | 0.636 | 0/200 |
+| wrong-text keys (VERIFY-DIN2's 20, regenerated; n-gram max -1.4399 reproduced exactly) | | 20 | 0.427 | | 0.520 | 0/20 |
+
+**Pre-registered gate: FAIL.** Real D beats every control draw (0/200, 0/20), but the "markedly fewer" margin (p95 + 0.10 =
+0.694) is missed by 0.007. The division is a layout aid, not a reading; the file header says so.
+Sensitivity, NOT pre-registered (scratch run, not committed as a result): with wildcards off (U tokens never in words),
+real D 0.564 vs shuffle mean 0.341, p95 0.450, max 0.478 (0/200), a margin of 0.114 over p95; with wildcards and polyphones
+both off, 0.535 vs p95 0.421, max 0.461. The wildcard freedom helps the shuffled decodes more than the real one. A
+re-run after v'/0' are keyed would test this without a post-hoc choice.
+
+**Judge** (`python3 tools/judge_plaintext.py ciphers/fr3621-dinteville-1592/f130/words/judge_spec.json --file
+ciphers/fr3621-dinteville-1592/f130/words/judge_input.txt`; local spec, language fr = fr16, cipher-part letters only):
+```
+FAIL language: score=-1.181, null_p99=-1.852, real_p05=-0.88, real_median=-0.786, mode=both, N=527
+ok   words: cover=0.867, min=0.6, real_text_median_cover=0.947
+FAIL - fr3621-dinteville-1592-f130-words (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The judge input carries the segmenter's own polyphone and wildcard choices, which favours word-like letters, so even
+this distance from real_p05 overstates the fit. FAIL stands as is.
+
+**Output** `f130/reading_f130_words.txt` (lower = C, UPPER = M, x' = I, {..} = undivided) and `f130/words/words_tokens.tsv`.
+Grades over 527 tokens: **C 177, M 158, I 192** (153 polyphone tokens, all I, 37 of them read off the key value; 39 U tokens
+placed in words as wildcards, I). 172 dictionary words; every division is graded I. Grades of job 4 are unchanged (C 177 /
+M 311 / U 39); this file is an interpretation layer on top of it.
+Word-level gist, graded I throughout (what the path reads, not a claim): L02 "seroit ... s'il n'estoit pourueu qui m'a ...
+renuoier auec cela", L03 "demeure seul ici auec les habitans", L04 "retournant ... conseruer", L05 "... en l'obeissance ...
+telle", L07 "blasme ... la ueille il ne se leuer ...", L08 "d'aultre coste ... dedans de bien bas ... plus ... tendre", L09
+"dehors les ... seruiront", L10 "la uille le rois ... mes ... sera ... pas ... mot", L11 "pourvoir de m'en retirer d'aultant
+qu'il i a a perdre ... l'honneur". L01, L06 and parts of L04/L09/L10 remain unresolved.
+
+Rule 7: `divide_f130.py --check` prints "check: committed outputs match"; `tools/decode_key.py ... --check` "reading up to
+date". Requests: none (disk only). Vision calls: none. Not touched: AUDIT.md, key files. Rule 10: no novelty claim.
+
+## Remaining gaps (DIN-WORDS, 3 Oct 2026; supersedes DIN-23P's list)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4); word division drafted on top (f130/reading_f130_words.txt, C 177 / M 158 / I 192, D 0.687 vs shuffled-key max 0.636, pre-registered margin missed by 0.007, judge FAIL -1.181 vs real_p05 -0.880); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358; date line read, 4 July 1592
+- f.130 word-level reading - blocker: not-attempted; division drafted, gate FAIL by margin (DIN-WORDS, f130/words/result.json); the 39 U tokens enter as wildcards and help the shuffled control more than the real decode (sensitivity, not pre-registered); next: re-run f130/words/divide_f130.py with v'/0' keyed once f.23r settles them (the third gap), no new instrument, ~$2
 - `0` on f.128: one sign or two merged - blocker: not-attempted; DIN-3623's look was undecided (3 of 7 conflicting zeros have f.130's stemmed 0' shape, 4 look plain at line-crop resolution; look/PREREG.md); next: native-resolution sub-crops of the 7 positions (tools/iiif_lines.py --ark btv1b52524472n --canvas 265), one look, same rule, ~$5
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; fr.3623 f.23r is a Dinteville cipher slip with an interlinear Italian decipherment. The one-line pilot (DIN-23P, row R4) was a non-test: two Sonnet passes agree on only 63%, and G1 0.762 is below the rotated-gloss max 0.818. Its single consensus 0' sits on p (grade I); next: the owner settles f.23r's sign alphabet in tools/sign_sorter.py (0/0'/o, v/v'/D/4), then 2 passes against settled labels + the 6-line alignment, ~$30-48
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; fr.3623 f.23r is a Dinteville cipher slip with an interlinear Italian decipherment. The one-line pilot (DIN-23P, row R4) was a non-test: two Sonnet passes agree on only 63%, and G1 0.762 is below the rotated-gloss max 0.818; next: the owner settles f.23r's sign alphabet in tools/sign_sorter.py (0/0'/o, v/v'/D/4), then 2 passes against settled labels + the 6-line alignment, ~$30-48
 - fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; catalogue ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch; fr.4718 to be added by the parent); not on Gallica
 - "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed; Gallica fr.4075 is a 1613-41 Coeuvres volume) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read (ASKS row to be filed by the parent if wanted)
 
-## Escalation (DIN-23P, 3 Oct 2026; supersedes DIN-3623's list)
+## Escalation (DIN-WORDS, 3 Oct 2026; supersedes DIN-23P's list)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2); fr.4718 catalogue read, three more Dinteville cipher-with-decipherment items found at fols. 17, 21, 40 (DIN-LEFT)
 - [ ] clear-pages: fr.3623 f.23r is a cipher slip with an interlinear Italian decipherment, same sign family (DIN-3623). The one-line pilot was a non-test: pass agreement 63%, G1 0.762 vs null max 0.818 (DIN-23P). It needs a settled alphabet (sign sorter) before the 6-line alignment (~$30-48). fr.4718 fols. 17/21/40 are not online (reproduction order)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
-- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence, none promoted
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence, none promoted; polyphones #, v, m, 0 read in context by a word-division pass, D 0.687 vs shuffled-key max 0.636 and wrong-text max 0.520, pre-registered margin missed by 0.007 (DIN-WORDS)
 - [ ] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, A2-DIN2); date line read 4 July (orchestrator); f.128's 7 conflicting `0`s looked at once at line-crop resolution, undecided 3 stemmed / 4 plain (DIN-3623); native sub-crops next
-- [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps. Cheapest next: native sub-crops of f.128's 7 conflicting `0`s, one look (~$5). Then a sign-sorter pass on fr.3623 f.23r for the owner, then the 6-line alignment (~$30-48, the key source for 0'/v'; DIN-23P's machine-only pilot was a non-test). fr.4718 fols. 17/21/40 go to the BnF reproduction batch (ASKS row 78)
+- [n/a] retry: no failed instrument on this target to retry yet; DIN-WORDS is a first attempt, its re-run waits on v'/0' keys
+Verdict: keep going: 3 internal gaps; cheapest next: native sub-crops of f.128's 7 conflicting `0`s, one look, ~$5. Then the f.23r sign-sorter pass for the owner and the 6-line alignment (~$30-48), then re-run divide_f130.py with v'/0' keyed (~$2). fr.4718 fols. 17/21/40 go to the BnF reproduction batch (ASKS row 78)
 
 ## While waiting
 
