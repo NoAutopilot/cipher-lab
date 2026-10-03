@@ -31,7 +31,7 @@ Gate (decided now):
   - Otherwise inconclusive.
 No reading is attempted; nothing is graded (no plaintext tokens, rule 4 n/a).
 
-## Addendum A (19:07 UTC, written after the T run above and before variant T' was computed)
+## Addendum A (19:04 UTC, clock read, written after the T run above and before variant T' was computed)
 
 Result of T as registered: target p 0.00045, P-coin/P-half power 1.0/1.0, but U-half FPR 0.75 (> 0.15): **non-test**
 by the gate above. Cause: the best-merge score grows with the number of interleavings C(n+m, n), which depends on the

@@ -265,6 +265,32 @@ Intake gate, pasted before the work (`python3 tools/intake_gate_check.py catokwa
 
 Requests: scienceblogs.de 5 (post 1, images 4), >=2 s apart, all 200. Vision: 4 image reads by this session, no subagents.
 
+## GAPS205 (3 Oct 2026, account-4): content-axis pairing test on Ernst's line pairs
+
+Worker GAPS205-pollaky-1865-1875 (account-4), Opus 5.5, 19:01-19:07 UTC, script only, 0 vision, 0 subagents, 0 external
+requests. Step: pollaky-1865-1875's gap 3 Verdict (copy the ads 3-4 text, Ernst's pair segmentation, pairing permutation
+test with a synthetic-line control). The copy, the segmentation and the length test were already on disk from step NEXT-CAT
+(2 Oct 2026); `python3 pairs.py --check` reproduces them (exit 0: 29 pairs, 0 mismatches vs Bourdeau's ads.py, S 33,
+0/100,000). So this step adds the same permutation test on a second axis, the letter content, which S cannot see.
+It was pre-registered in PREREG-GAPS205.md (f7730438, and addendum A 70fa6dae, each committed before its run).
+Credit: the line division is Thomas Ernst's (Cipherbrain, 2018, comment #29 via Bourdeau's ads.py). The length test is
+David Bourdeau's (cyphersolver catokwacopa, MIT). The design reading is the published community one.
+
+- T = sum over the 24 letter lines of the best order-preserving merge of the two halves under an English letter-bigram model
+  (tools/data/en Huck Finn + Gatsby). Target p 0.00045 and control power 1.0/1.0, but the unpaired control U-half is flagged
+  at p < 0.05 in 15 of 20 texts (FPR 0.75 > gate 0.15): **non-test**. The merge score grows with C(n+m, n), so T leaks
+  the length pairing that S already measures.
+- T' (addendum A, one run) subtracts E[n][m], the mean merge score of independent corpus halves of the same lengths.
+  **T' (length-corrected merge score) is a valid test and does not detect W.'s pairing**: target p 0.254 (T' -35.05, 20,000 re-pairings) vs positive controls P-coin/P-half power 0.95/1.00 at p < 0.001 and unpaired control U-half false-positive rate 0.05 at p < 0.05. Verdict by the registered gate: **not detected**, control-backed for this statistic only.
+- Reading the result: synthetic English phrases split across two halves are re-paired by letter content almost every time.
+  W.'s pairs are not, once length is taken out. The halves do not merge into English-like bigram text better than mismatched
+  halves do. **Caveat (rule 3, SALV-DIAG shape):** the controls drop 0-3 letters per line, as in pairs.py, but the published
+  design drops 3-12. The controls therefore do not bracket the target's omission level, so this is not a design negative.
+  If T' power holds at 3-12 omissions, the result says that W.'s halves are not plain-English splits at the bigram level
+  (heavy omission, abbreviation or another design). If power collapses there, T' is untestable at this N.
+- No reading attempted, nothing graded (rule 4 n/a). Reproduce: `python3 gaps205_content.py --check` (writes and checks
+  content_test.json, about 15 s).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured, because this repo holds no reading of its own (no key or plaintext, only the segmented ciphertext and the pairing test of step NEXT-CAT, 2 Oct 2026). The line structure is now measured. pairs.tsv has 29 pairs, 24 of them letter lines, and Bourdeau line k = Ernst [k] (k <= 10), [10a] (k = 11), [k-1] (k >= 12). Bourdeau's catokwacopa/NOTES.md (snapshot sources/cyphersolver/2026-10-02/catokwacopa/, sections 4-5) gives 7 lines decided by ordinary vocabulary, 5 name-frame lines that admit a unique name, and 5 lines not decided by the letters (his 9, 12, 23, 26, 29 = Ernst [9], [11], [22], [25], [28]).
 - Bourdeau's lines 9, 12, 23, 26, 29 (Ernst [9], [11], [22], [25], [28], measured in pairs.tsv, step NEXT-CAT), both ad halves of each - blocker: not-attempted; no published reading is forced on these lines. Bourdeau's line-29 Latin search had only a positive control (line 17 -> QUI FIT) and no matched uniqueness control. Spec cheap test 3 never ran (specs/catokwacopa-1875.json). So "the omission rule fits almost anything" is untested here and cannot yet be graded too-short; next: run spec test 3 on our own copy (pairs.tsv, now on disk). Do an exact-fit search of the five lines against an enlarged period vocabulary under the 3-12-letter omission budget, with a matched control of synthetic English lines of the same length and budget, reporting both rates. As a second instrument, run QUEUE.md row 18's phrase-level LM search on line 23 with Bourdeau's positional prior (cyphersolver catokwacopa/search.py, MIT, cited), ~$5
@@ -277,7 +303,7 @@ Read so far: unmeasured, because this repo holds no reading of its own (no key o
 - [x] clear-pages: the only clear text is the tail of ad 4 ("This will be intelligible if read in connection with my communication published in this column on the 8th inst.", ciphers/pollaky-1865-1875/ciphertext.txt AD 4). It is the pairing instruction, which every reading already uses. No clear copy or period decipherment of the plaintext is known.
 - [n/a] known-keys: the design has no key. Each phrase is split into order-preserving halves across the two ads, with 3-12 letters dropped per line, so there is no key or nomenclator to try. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no row for this target, and design_prior.py's code and nomenclator families do not fit this design.
 - [x] print: read Cipherbrain's Top-50 post 8 with its 48 comments (on disk, sources/schmeh/posts/08-catokwakopa.txt), Bourdeau's catokwacopa/NOTES.md (commit 24 Sept 2026), Aymeloglu's SHORTLIST.md lines 81 and 148, and a web search for model-solve announcements (23 and 25 Sept 2026). None gives a unique plaintext. Not read: the newspaper issues (L13) and the 2015/2018 thread comments (folded into siblings).
-- [ ] key-rebuild: the segmented line pairs are now on disk (pairs.tsv, step NEXT-CAT, 2 Oct 2026; pairing test 0/100,000 vs a control with power 0.80-1.00). We have run no forced-fit, vocabulary or LM search, and none appears in NOTES.md, ROOM.md or LEDGER.md. Bourdeau's exact-fit name search and his line-29 Latin search are his work, not re-derived, and neither has a matched uniqueness control. Planned: spec tests 2-3 with a synthetic-line control, plus the line-23 LM search from QUEUE.md row 18 (gaps 1-2).
+- [ ] key-rebuild: the segmented line pairs are now on disk (pairs.tsv, step NEXT-CAT, 2 Oct 2026; pairing test 0/100,000 vs a control with power 0.80-1.00). We have run no forced-fit, vocabulary or LM search, and none appears in NOTES.md, ROOM.md or LEDGER.md. Bourdeau's exact-fit name search and his line-29 Latin search are his work, not re-derived, and neither has a matched uniqueness control. Planned: spec tests 2-3 with a synthetic-line control, plus the line-23 LM search from QUEUE.md row 18 (gaps 1-2). 3 Oct 2026 (GAPS205): content-axis pairing test T' run: target p 0.254 vs control power 0.95-1.00 and FPR 0.05, so pairs are not detected by letter content at 0-3 control omissions; the controls do not yet bracket the 3-12 budget.
 - [x] image-check: ciphers/pollaky-1865-1875/NOTES.md Test 2. Two blind passes over the scienceblogs/Gaffney-Gluecklich scans agree 78/80, and both disagreements were settled from the image (caselcluchozamot S; Ngtndusdcndo M, low-resolution scan). The result matches Ernst's BNA-checked ads.py 72/72 letter-words with digits and dashes stripped; Hrsclam and 138 match Ernst, against Schmeh's printed Hfsclam and 139.
 - [ ] retry: nothing to rerun yet, because key-rebuild has not run. Planned: after spec tests 2-3, re-score every line pair (the five unread lines and the unforced lines) with the extended vocabulary and regrade S/M per rule 4.
-Verdict: keep going: 3 internal gaps; cheapest next: file a LOCAL-QUEUE.tsv bna-search row beside L13 for The Standard p. 1 col. 2 (May-Dec 1875, 1879) and page images of the five filed sibling ads (gap 3), ~$0.5
+Verdict: keep going: 3 internal gaps; cheapest next: file a LOCAL-QUEUE.tsv bna-search row beside L13 for The Standard p. 1 col. 2 (May-Dec 1875, 1879) and page images of the five filed sibling ads (gap 3), ~$0.5; then re-run T' (gaps205_content.py) with its controls at the published 3-12-letter omission budget, so the GAPS205 'not detected' (p 0.254, power 0.95-1.00 at 0-3 omissions) brackets the design, ~$1 (GAPS205, 3 Oct 2026)
