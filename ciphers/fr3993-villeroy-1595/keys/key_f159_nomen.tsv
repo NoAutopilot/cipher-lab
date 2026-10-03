@@ -1,0 +1,65 @@
+# fr.3995 canvas f159 nomenclator + Nulles box (VILL-NOMEN, 3 Oct 2026). Codes are overlined two-figure groups.
+# Reader A = worker (Opus), reader B = blind Sonnet subagent; native crops (iiif_lines, canvas 159, rotated 90 CCW).
+# Grade M = both readers agree on code and meaning (one table read, a key value, not a target reading); I = disagree/uncertain.
+# No codes 20, 30, 40, 70 written. N1-N6 = Nulles box symbols left to right.
+# code<TAB>meaning<TAB>grade<TAB>basis
+12	Abbeville	M	Abeuille; both
+13	Rue	M	both
+14	Amiens	M	both
+15	Corbie	M	both
+16	Saint-Quentin	M	st quantin; both
+17	Moreuil	M	both
+18	Compiegne	M	both (B: code smudged)
+19	M. de Longueville	M	Mons.r de Long.lle; both
+21	M. de Humieres	I	A 'de Humiere', B 'de Sumiere'; code agreed
+22	M. de la Boissiere	M	both
+23	M. de Vitermont	M	both (B unsure)
+24	M. de Crevecoeur	M	both (B unsure)
+25	M. de Saume (?)	I	A 'de Saume', B 'de eSaume/Saulme'; name uncertain
+26	M. de Mailly	M	both (B unsure)
+27	le Roy	M	both
+28	M. de Nevers (?)	I	A 'Mr de Nevers' (code 28, o-like 8), B 'de Terrouers', 28 by sequence
+29	Mme de Nevers (?)	I	A 'Me de Nevers', B 'Mr de Tenenors'
+31	Mme de Longueville	I	A 'Me de Long.le', B 'Mr de long(ue)'
+32	Mlle de Longueville	M	both
+33	M. le comte de Saint-Pol	M	'A Mr le conte s Pol'; both
+34	M. du Maine (?)	I	A 'Mr du Maine' (Mayenne), B 'd'Vmame' read as Aumale (37 is Aumale)
+35	M. de Guise	M	both
+36	Mme de Guise (?)	I	A 'Mt/Me de Guise', B 'Mr de Gunse'
+37	M. d'Aumale	M	both
+38	M. de Seurente (?)	I	both read 'de (e)Seurente', name not identified
+39	Rosne	M	both
+41	La Chastre (?)	I	A 'la Cashe' = La Chastre?, B 'la Sache'
+42	Saint-Pol	M	both
+43	Villeroy	M	both
+44	Mayeur (?)	I	A 'Mayeur', B 'Madeur' unclear
+45	Evesque	M	both
+46	Lieutenant	M	both
+47	Nyvern(ois) (?)	I	both 'Nyuern', expansion uncertain
+48	Rethelois	M	both 'Retsellois'
+49	Gouverneur	M	both
+50/51	Capitaine	I	A code 50, B 51 (likely): code disputed
+52	soldat	M	both
+53	Monsieur	M	both
+54	Madame	M	both
+55	cardinal	M	both
+56	Abbe	M	both
+57	habitant	M	both
+58	ville	M	both
+59	eau (?)	I	both 'eSau', meaning uncertain
+60/61	village	I	A code 60, B 61: code disputed
+62	cheval (?)	I	A 'cheval', B 'eSenal' unclear
+63	charrette	M	both
+64	bateau	M	both
+65	filz	M	both
+66	fille	M	both
+67	femme	M	both
+68	messager	M	both
+69	gentilhomme	M	both
+71	argent	M	both
+N1	null (downward triangle)	M	both; target Delta D LIKE only (upright)
+N2	null (circle with cross above)	M	both; NO in target
+N3	null (double-barred cross)	M	both; target K SAME (both readers)
+N4	null (square on cross stem)	M	both; NO in target (B LIKE weak)
+N5	null (epsilon)	M	both; target e/reversed-c LIKE only
+N6	null (lozenge on curved stem)	M	both; NO in target

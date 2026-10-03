@@ -539,5 +539,57 @@ Verdict after VILL-SIGNS: `open`. Next steps, cheapest first: (f) read the f159 
 rest of canvas f159, one blind read + check) and match codes 20-80 and the Nulles signs against the target's two-figure groups and
 its pi/varpi/theta/infinity/T/reversed-c signs (~$3); if the Nulles box carries those signs, the target's symbol share is nulls and
 the figure stream alone is the text -- but the 41% 'o' share already argues against the f159 figure values; (d) the as-sent packet
-on Villeroy's side (~$3); (g) Nevers's letters to Henri IV of 23/25 July and 3/6/13/31 Aug 1595 as same-cipher siblings for pooling
-(~$3 locate). All depend on nobody.
+on Villeroy's side (~$3); (g) [done, VILL-SIBS above: the Nevers-to-King letters of 23 Jul - 31 Aug 1595
+are located and none is in cipher -- no pool]. Corrected by VILL-NOMEN, 3 Oct 2026.
+
+## f159 nomenclator and Nulles box vs the target (VILL-NOMEN, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-nomen.md`. Intake gate 11:17 UTC: "open (line 1) -- edition/page or
+full-text-search citation found within 6 lines", exit 0. Pre-registered before any crop was viewed: `fr3995/PREREG-VILL-NOMEN.md`
+(commit 657d9a39). Crops (pasted; the nomenclator is written sideways, read with the four bands rotated 90 deg CCW):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 159 --region 1650,250,2300,3310 --out <scratch>/nom \
+        --prefix f159_nom --centres 379,1147,1938,2776 --lines-per-crop 1 --max-width 2400 --overlap 100 --debug   # 4 bands
+    # committed: images/fr3995/f159_nomen_rotated_sheet.jpg (4 bands side by side), images/fr3995/f159_nulles.jpg (Nulles box, 2x)
+
+Reads: reader A (worker, Opus) one read of the sheet and one of the Nulles box stacked over `images/f148r_ct_stack.jpg`; reader B
+(blind Sonnet subagent, the same two images, no answers given). Key `keys/key_f159_nomen.tsv`: 52 two-figure codes agreed by both
+readers (12-19 places of Picardy, 19-38 persons -- Longueville, la Boissiere, Vitermont, Crevecoeur, Mailly, le Roy, Guise, Aumale,
+the comte de Saint-Pol --, 39-49 Rosne, Saint-Pol, Villeroy, Evesque, Lieutenant, Gouverneur, ..., 52-71 common nouns soldat,
+Monsieur, Madame, cardinal, ville, village, charrette, bateau, filz, fille, femme, messager, gentilhomme, argent); no 20, 30, 40 or 70
+is written; two codes disputed (capitaine 50/51, village 60/61) and left out. Grades as key values: 45 M (code and meaning agreed,
+incl. the six Nulles), 15 I (meaning or code disputed). The table carries no code 72 (cf. "72 ne puissent" in the target's clear text).
+
+**Nulles box: six symbols** -- N1 downward triangle, N2 circle with a cross above, N3 double-barred cross, N4 square on a cross stem,
+N5 epsilon, N6 lozenge on a curved stem.
+
+| target sign (Bourdeau code, count) | reader A | reader B | status |
+|---|---|---|---|
+| K double-crossed dagger (13) | SAME N3 | SAME N3 (~8 seen on f.148r) | **certified null** (not in the pre-registered list) |
+| D Delta (1) | LIKE N1 (upright vs inverted) | LIKE N1 | not certified |
+| R reversed c (25) | NO (N5 is epsilon, opens right, barred) | LIKE N5 | not certified |
+| P pi, V varpi, Q theta, W infinity, T tau | NO | NO | not in the Nulles box |
+
+**Pre-registered decision: none of P V Q W T R is a certified null**, so the power re-run was not done: **f159 nomenclator/nulles do
+not explain the target's symbols** (pi 12, varpi 11, theta 14, infinity 13, T 23, reversed c 25 stay unexplained by this table).
+One observation outside the pre-registered list: the target's K (13 tokens) is the table's null N3 by both readers -- a fourth shared
+design element after L = r, w = m, + = x (VILL-SIGNS); removing 13 tokens would not lift the power control (5/20) because the decode
+alphabet is unchanged, so no re-run was made.
+
+**Nomenclator codes vs the target's figure pairs** (`nomen_match.py` -> `nomen_match.tsv`, `--check` exits 0; an observation, no
+reading): of the target's 324 adjacent figure pairs, 199 form one of the 52 agreed codes, against 87 for random code sets disjoint
+from it (200 draws, mean 87.0, p95 87). The null is confounded and says nothing: 52 of the 90 values 10-99 are codes, the disjoint
+remainder is forced to the same 38 values each draw (10, 11, 20, 30, 40, ...72-99), and the target's figures are mostly 1 and 2, so any
+code set rich in the teens and twenties wins. The target shows no overline on its figures in Bourdeau's transcription or on the
+f.148r crops seen here; nothing on disk separates nomenclator codes from letter figures. Grade counts in the cipher: H 0, C 0, S 0,
+M 0, I 0 (nothing read).
+
+Requests: gallica.bnf.fr 1 info.json + 1 thumbnail (1000 px) + 1 native region, about 2 s apart. Vision reads: 2 by the worker,
+1 subagent call (2 images). Rule 10: no novelty claim.
+
+Verdict after VILL-NOMEN: `open`. Next steps, cheapest first: (h) a key-family check: four sign designs shared with f159 (L, w, +, K)
+but the commonest target symbols (pi, varpi, theta, infinity, T, reversed c) absent from both the f159 alphabet and its Nulles, and
+f159's figure values give 41% 'o' -- look in fr.3995 for a later (1592-95) Nevers table of the same family carrying pi/theta/infinity
+(thumbnail sheet of the remaining canvases, ~$3); (i) homophonic cryptanalysis treating all target signs and figures as unknown
+codes with K as a null, matched control first (tools/family_run.py homophonic at the target's N, ~$3; at 753 tokens expect a weak
+control); (d) the as-sent packet on Villeroy's side (~$3). All depend on nobody.

@@ -408,6 +408,16 @@
    },
    "date": "03 Oct 2026",
    "note": "VILL-7280; rotated 90 deg CCW and stacked as fr3995/f159_strip_rotated_stack.jpg for reading"
+  },
+  {
+   "crop": "fr3995/f159_nomen_rotated_sheet.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/1650,250,2300,3310/full/0/native.jpg",
+   "note": "VILL-NOMEN; iiif_lines --centres 379,1147,1938,2776, 4 bands rotated 90 deg CCW, side by side, 75% scale"
+  },
+  {
+   "crop": "fr3995/f159_nulles.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/1650,250,2300,3310/full/0/native.jpg",
+   "note": "VILL-NOMEN; Nulles box cut from band 4 (rotated), 2x enlarged"
   }
  ]
 }
