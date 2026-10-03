@@ -1,0 +1,28 @@
+seg	band	before	cipher	after	gloss	conf
+1	L01.1	Personne na peu entrer	P x 3 o r P z|r ll P x tt ll g a p E3 Φ	ou il y a	au chasteau de final	M; dots after both 'x' read as punctuation, not tokens; 'au chasteau' sits over P..ll, 'de final' over P x tt..Φ; 'p' before E3 is a plain-looking p, the other P are the looped p with dot(s)
+2	L01.2	ou il y a	u l n a h 3 o ll p u h q^|P n b C nn i	La ville est	trois cent hommes	M; q^ = dark retraced q/p-like sign with a cross below; first sign u|ii
+3	L02.2	-	b x L nn ll m n|u z g n a m E3 nn	, et si on estoit loge	muree et fortifiee	M; run opens the line; second 'm' has an initial curl
+4	L03.1	il ne faut craindre	h ll 3 o n x l h	dailleurs	secours	H
+5	L03.2	le bourg est ouvert et vers	E3 P b|6 ll L	et il y a un	la mer	H
+6	L03.3	Nommé	x P L a 4|f n u d	, ou	Varigoti	M; dot after x read as punctuation
+7	L04.1	Nommé x.. , ou	b o^	et	les galeres	M; mark (apostrophe) over o
+8	L04.1	ou bo et	o^ i|l	peuuent aler et	vaisseaux	M; gloss written 'les galeres et vaisseaux' over runs 7-8
+9	L04.2	debarquer ... desandre	P x tt L h x i t ll E3 P x a Φ ll	vers ponant et	Audesus . de la ville	M; 'Audesus' over P..i, 'de la ville' over t..ll; 't ll' could be 'tt l'
+10	L05.1	En meme temps	P x P ll a 4|f n u d	au dessous a fin	quarigot	M; 'll' faint
+11	L05.2	la retraite vers	Φ ll 3 o r P z nn P y|7	et lon	Le Chasteau	M
+12	L06.1	vers lestat de	p l o f|s e ll e	, et pourueus	bonet|bonec	M; first sign a long looped p (like f); 'l o' could be 'b'
+13	L07.1	soit a couuert	tt x 3 o r P z ll P x i	il nen faut pas craindre	du chasteau	M; final i (with dot) could be punctuation
+14	L07.2	-	E3 P 4 P L p a h n P	, et crois que	la garnison	H; run opens the line
+15	L07.2	et crois que	Φ ll t nn z P L z	ne sera pas mal	le petard	H
+16	L08.2	Quand a	x 8|θ E3 n x P 7|y	il ny aura rien	Louan|Lonan	M; dot after x read as punctuation
+17	L09.1	en lun et lautre Il y a	t ll x tt P s x ll h u	-	peu da[struck] dacquest	M; 'Il y a' read as plain; s = small s/3-like sign with dot
+18	L09.2	Mais ce sera faire	x 8|θ t^ ll x L P p l o f|s e ll e	, et faut en	peur a bonec	M; mark over t; dot after P read as punctuation; 'peur a' over x..x, 'bonec' over L P p..e
+19	L10.1	et faut en toute facon	P ll Φ 7 P z n x 3 o r u n L t n a p u	q a bon	nosa toucher point	L; gloss 'nosa' (uncertain reading, perhaps uola) over P ll, 'toucher' over n x 3 o r, 'point' over L t n a; boundary uncertain: 'n a p u' may be plain (n'a pu)
+20	L10.2	et si on	tt P p tt	-	prand	M; run ends the line
+21	L11.1	-	Φ n x P v	on pourroit	louan	M; run opens the line
+22	L11.1	se doner loisir de le	t a Φ a nn t	-	[struck/overwritten word, pince?]	M; run ends the line; gloss heavily overwritten
+23	L11.2	et si	o i i o n	semployoit a sa consideration	biner	M; last two signs 'o n' may be plain 'on'
+24	L12.1	en toutte facon	o i i o n	-	La teyrie	M; same shape as seg 23; gloss sits between lines; run ends the line
+# unglossed
+25	L11.1	on pourroit	Φ	se doner loisir	-	M; Φ struck through with a horizontal stroke (deletion?)
+# note: band L12 line 2 (next line of text, gloss 'de les deux'? partly visible) is cut off at the bottom of the crop and not transcribed
