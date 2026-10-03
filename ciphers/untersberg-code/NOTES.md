@@ -348,3 +348,19 @@ Gate after this pass (3 Oct 2026, GF4-BATCH21):
 untersberg-code: open (line 3) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## Kneissl's interpretation read (GAPS77-untersberg-code (account-4), 3 Oct 2026, 10:13-10:2x UTC)
+
+The next fetch GF4-BATCH21 named above has been run. Live site: `http://www.kollektiv.org/` answered 301 to https, and the https host served an **expired TLS certificate** (curl error 60). That was the one retry allowed, and verification was not bypassed. Wayback CDX (`web.archive.org/cdx/search/cdx?url=kollektiv.org&matchType=domain&filter=original:.*ntersberg.*`) returned HTTP 200 and listed both pages. Both were fetched with `id_`:
+- `web.archive.org/web/20171016014654/http://kollektiv.org/der-untersberg-code-entschluesselt/` ("Der Untersberg – Code – entschlüsselt?", 14 Sept 2017). This is a video post: a three-sentence teaser and an embedded YouTube talk (`_dIoL-J3w7g`, not watched, no vision/audio). The teaser itself calls Kneissl's result "eine erstaunliche und auch nachvollziehbare **Interpretation** dieser antiken Symbolschrift".
+- `web.archive.org/web/20190818071500/https://kollektiv.org/der-untersberg-code-die-inschrift-am-goldenen-dachl-zwei-oder-doch-eins/` ("Der Untersberg-Code & die Inschrift am Goldenen Dachl – Zwei oder doch Eins?", 15 Nov 2018, "Ein Artikel von Dr. Peter Kneissl"). This is the source of the search-summary quote. It gives:
+  - a first "Übersetzung" that only glosses four symbols, for example a sign "aus den Rechnungsbüchern der Salzburger Erzbischöfe" meaning a third payment reminder;
+  - a second "Übersetzung", a free German paraphrase of all six lines. Line 1 reads "… das Heilige Siegel bewahrt alles Occulte aus heutiger Zeit"; line 6 reads "Erinnere Dich nicht zu lesen sondern triff Vorsorge in Dir selbst zu lesen …". There is no token-to-word mapping;
+  - a third "Interpretation", which he calls "am stimmigsten" (the most coherent): single letters are glossed ad hoc from mixed languages, for example x = the Indian name "Xenia", y = Ymir, mic = Hebrew "who is like God", 519 = the death year of Maximilian I. His conclusion is a prophecy of Maximilian I and Mary of Burgundy returning. This reading contradicts the second one line by line. The page also reports a 2016 "Vision" of the content and dates the manuscript to "um 1630"; the museum dates it 1690-1710 (bUNT3).
+  - His own closing sentence: "Wer von mir eine vollständige Übersetzung erwartet ist freilich herb enttäuscht!"
+
+Finding: an **interpretation, not a decipherment**. There are three mutually inconsistent readings, none states a method that maps the text token by token, and none can be applied to the text and checked. It is not a published plaintext of this item, so it gives no ground for `found-solved` (rule 5). Status stays `open`. The comparison flag in the Web check above ("a later reading of line 1 must be compared against Kneissl's") is met: the line-1 text is now on file as quoted.
+
+Print copies (search only, not read): OpenAlex `search=Kneissl Untersberg` returned 0 works. Google Books (`q=Kneissl Untersberg`, keyed, `country=US`) returned 43 hits. Three books by or including Kneissl may reprint these interpretations: Peter Kneissl, *Mein Untersberg* (2017-08-28); Peter Kneissl, *Was mir der Untersberg mitzuteilen hatte* (2018-03-07); and Betz, Wolf, Habeck, Kneissl et al., *Der Untersberg ruft* (2018-09-10). None was opened. Given the web text, a printed copy is a bibliographic lead for a verifier, not a step that could change the status.
+
+Requests: kollektiv.org 2 (301, then expired-certificate refusal; stopped); web.archive.org 3 (CDX 1, captures 2); api.openalex.org 1; www.googleapis.com 1. Spaced at least 3 s per host. No vision. NEAR.md is unchanged, because its named next step (symA / Cappelli, Lang via L26) does not depend on this fetch.
