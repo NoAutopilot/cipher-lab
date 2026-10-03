@@ -128,3 +128,49 @@ attribution; every citation below is a claim to verify, never a fact ("unchecked
 
 No printed decipherment, edition, or companion ciphertext of this target was named in the PR; nothing
 here is a check-solved candidate.
+
+## Web and blog check (CS-A2-G, 3 Oct 2026)
+
+No printed edition or calendar exists for this item (a 2015 find, not a document series); the sources read by
+this worker on 3 Oct 2026 were the web and blog threads below, and Cipherbrain post 44 with its 9 comments
+(sources/schmeh/posts/44-bullet.txt, re-read by this worker). Searches (WebSearch, standard mode, 1 each):
+1. `WW2 bullet cipher Tuscany 1944 "CBFUK YYEVO ZILOO"` -- hits: Cipherbrain post 44; Cipherbrain "Unsolved
+   ciphertexts from World War II (1)"; gizmodo.com/tag/secrets; boingboing.net 2015/08/13; warhistoryonline.com.
+   Every hit repeats only the forum "THEY THROW GRENADES..." reading, which Cipherbrain post 44 comment #3
+   (Bernhard Gruber, 6 Mar 2017) says its author called a joke on 1 Feb 2015 (metaldetectingforum.com
+   showthread.php?t=207067 p.2, cited there, not opened by this worker). Not a decipherment (already excluded
+   mechanically, spec `cheap_test_done`).
+2. `encrypted message found inside WW2 bullet casing Italy metal detectorist solved decoded` -- same set, plus
+   unrelated Italian naval-cipher pages; no new decipherment.
+3. `"bullet" cryptogram 1944 "605YZ" OR "QM" cipher solves Claude OR GPT` -- no model-solve announcement for this
+   item (a "ChatGPT Astra Enigma" page, letemsvetemapplem.eu 28 Sept 2026, concerns an Enigma message, not this).
+4. `Cipherbrain Schmeh bullet cryptogram WW2 Tuscany solution` -- Schmeh: "To my knowledge, this encrypted
+   message is still unsolved" ("Unsolved ciphertexts from World War II (1)", read by this worker via WebFetch).
+Blog site searches: Cipherbrain (scienceblogs.de/klausis-krypto-kolumne): post 44 comment thread read in full
+(readers' guesses at the header only, comments #1, #3-#5, no key); WWII list (1) read. Cipher Mysteries
+(`ciphermysteries.com WW2 bullet cipher note 1944 Italy`): no post on this item; the one ciphermysteries.com
+hit (?p=11759) opened and is the 1918 Palermo postcard, unrelated. Cryptiana (cryptiana.blogspot.com /
+Tomokiyo, one query): no hit. DECODE: this item is not in sources/decode/records-non-decrypted-2026-09-24.tsv
+(grep "bullet|tuscany", 0 rows matching this find) and not in aaymeloglu's decode-catalog.csv (0); live
+decode_list.py crawl not re-run. Solver repositories, shallow clones 3 Oct 2026: dbourdeau/cyphersolver
+(810a777) mentions it only in research/top50/NOTES.md line 99 ("bullet 1944 ... 44 letters. All far too short",
+low priority) and the pasted list text; no working files, key or reading. aaymeloglu/unsolved-ciphers
+(d2800bb): grep for bullet/605YZ/CBFUK/tuscany finds nothing about this item (hits are other targets).
+Request count: WebSearch 7 (4 verdict, 3 blog or list) plus WebFetch 2: scienceblogs.de 1,
+ciphermysteries.com 1; github.com 2 clones; archive/Google Books/OpenAlex not used (item is not in print).
+No 403/429 seen. Result: no decipherment, key or plaintext found in any source read; not found != unsolved
+proof (rule 10: no novelty claim).
+
+## Premise check (CS-A2-G, 3 Oct 2026)
+
+- (a) folder's own mentions: the forum "solution" (SPLOID, Jan 2015) -- found, already excluded and
+  retracted as a joke by its poster (comment #3 above); the Cipherbrain readers' header guesses (605th
+  Ordnance Ammunition Co., QM = Quartermaster) -- found, readings of metadata, no key, no decipherment of the
+  body. Nothing else in NOTES.md, the spec or second-opinions/ names a decipherment, gloss or clear copy.
+- (b) other solvers' working files: not found. Bourdeau lists it as low priority/too short, with no files;
+  Aymeloglu has none (3 Oct diff files agree).
+- (c) physical neighbours: unreachable/not applicable -- a single slip in a cartridge case; the only image is
+  the press photo (Cipherbrain files/2015/02/Bullet-Cipher.png, gizmodo/kinja image), not opened at native
+  resolution by this worker. No companion slip reported anywhere read (second-opinions lead 3).
+- (d) recipient side: not applicable; no addressee or edition series exists (QM is a reader's guess).
+Verdict: nothing found that makes the item calibration or found-solved; status stays `partial` (NEAR.md row).
