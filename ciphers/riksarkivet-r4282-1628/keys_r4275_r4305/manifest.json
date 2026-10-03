@@ -1,0 +1,54 @@
+{
+ "fetched": "2026-10-03, one DECODE browser login (GAPS27-riksarkivet-r4282-1628, account-4), --guess-fullsize --max-files 24",
+ "note": "PDFs not committed; jpg renders at 80 dpi beside this file. 4305 pp.2-4 (I25827-I25829) not fetched: the file cap was spent before them (the --guess-fullsize .png guesses are 5,244-byte placeholders, one sha1 for all 8).",
+ "pdfs": [
+  {
+   "file": "IMG_R4275_I25666_P.pdf",
+   "bytes": 1505759,
+   "sha1": "0a752d3ed618a12e7a5f7fcb864759a8b9970cbe",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25666_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25667_P.pdf",
+   "bytes": 1067061,
+   "sha1": "7956acbe856b3ef6cb7f6f58c88a90e205d2ec29",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25667_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25668_P.pdf",
+   "bytes": 1070887,
+   "sha1": "d50d52fb31fb804aea31086851891e2560c20270",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25668_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25669_P.pdf",
+   "bytes": 2472694,
+   "sha1": "0926eca597579747cedd8d26690d37822a35a834",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25669_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25670_P.pdf",
+   "bytes": 2404172,
+   "sha1": "f4396cf403fe847f5eb7477d5d54a67109cf4201",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25670_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25671_P.pdf",
+   "bytes": 2669884,
+   "sha1": "cd9634c19cd251d6005e1ca4097fda154b4b5d13",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25671_P.pdf"
+  },
+  {
+   "file": "IMG_R4275_I25672_P.pdf",
+   "bytes": 2969851,
+   "sha1": "b5d8ac23f40eb20f45dc55f3a223e83daffd241b",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4275_I25672_P.pdf"
+  },
+  {
+   "file": "IMG_R4305_I25826_P.pdf",
+   "bytes": 2176484,
+   "sha1": "50e757f42e538e1d16b6699f3f0c3382f890992d",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4305_I25826_P.pdf"
+  }
+ ]
+}
