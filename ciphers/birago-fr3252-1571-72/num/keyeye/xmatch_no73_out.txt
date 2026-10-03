@@ -1,0 +1,17 @@
+gate stat_min 3.292
+TARGET f119 key=as-written n=240 cov=0.85 z_ng=1.10 z_vf=-0.30915325322293113 stat=1.10 below gate | quodefugicuzepedihuchecuhutaditizrabasiquahichechuuorehilalelugeretahu
+TARGET f119 key=0d=d alias n=240 cov=1.00 z_ng=0.85 z_vf=0.5029500468080784 stat=0.85 below gate | quodefugicuzepedihuchecuhutaditizrabasiquahichechuuoarehilalelugeretah
+TARGET f100r key=as-written n=274 cov=0.89 z_ng=-0.44 z_vf=-1.0853251064142178 stat=-0.44 below gate | quozeitagifeuezequazerauelemepfnitizuotatihezquamefgutaludzrazeticzera
+TARGET f100r key=0d=d alias n=274 cov=1.00 z_ng=-0.39 z_vf=-1.1908903735435172 stat=-0.39 below gate | quozefaitaagifeuezequalazerauelemepfcanitizuotatihezquaamefgutamaludla
+CONTROL err=0.00 seed=1 n=240 stat=14.24 hit
+CONTROL err=0.00 seed=2 n=240 stat=10.48 hit
+CONTROL err=0.00 seed=3 n=240 stat=14.58 hit
+CONTROL err=0.10 seed=1 n=240 stat=11.22 hit
+CONTROL err=0.10 seed=2 n=240 stat=9.99 hit
+CONTROL err=0.10 seed=3 n=240 stat=11.99 hit
+CONTROL err=0.20 seed=1 n=240 stat=8.42 hit
+CONTROL err=0.20 seed=2 n=240 stat=8.12 hit
+CONTROL err=0.20 seed=3 n=240 stat=8.43 hit
+CONTROL err=0.30 seed=1 n=240 stat=7.29 hit
+CONTROL err=0.30 seed=2 n=240 stat=7.49 hit
+CONTROL err=0.30 seed=3 n=240 stat=7.22 hit

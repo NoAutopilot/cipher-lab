@@ -1,0 +1,104 @@
+# BnF fr.3995 f.136r (Gallica btv1b525085665 canvas f261), Tomokiyo nevers.htm no.73 (undated, Italian): two-figure syllabary.
+# Transcribed by eye from the native-resolution crop (region 0,0,4066,4100) by BIRAGO-NUM-KEYEYE, 3 Oct 2026. Letter codes a-z for names (Imperatore, Re di Francia ...) not included.
+# Grade H = read from the period key table itself; M = number uncertain on the leaf.
+code	value	grade	note
+1	a	H	
+2	ba	H	
+3	ca	H	
+4	da	H	
+5	fa	H	
+6	ga	H	
+7	ha	H	
+8	la	H	
+9	ma	H	
+10	na	H	
+11	pa	H	
+12	qua	H	
+13	ra	H	
+14	sa	H	
+15	ta	H	
+16	ua	H	
+17	za	H	
+21	e	H	
+22	be	H	
+23	ce	H	
+24	che	H	
+25	de	H	
+26	fe	H	
+27	ge	H	
+28	he	H	
+29	le	H	
+30	me	H	
+31	ne	H	
+32	pe	H	
+33	que	H	
+36	re	M	number overwritten on the leaf (34->36? 35->37?); 34/35 are reused for tu/zu, so read as 36-40
+37	se	M	number overwritten on the leaf (34->36? 35->37?); 34/35 are reused for tu/zu, so read as 36-40
+38	te	M	number overwritten on the leaf (34->36? 35->37?); 34/35 are reused for tu/zu, so read as 36-40
+39	ue	M	number overwritten on the leaf (34->36? 35->37?); 34/35 are reused for tu/zu, so read as 36-40
+40	ze	M	number overwritten on the leaf (34->36? 35->37?); 34/35 are reused for tu/zu, so read as 36-40
+44	i	H	
+45	bi	H	
+46	ci	H	
+47	chi	H	
+48	di	H	
+49	fi	H	
+50	gi	H	
+51	hi	H	
+52	li	H	
+53	mi	H	
+54	ni	H	
+55	pi	H	
+56	qui	H	
+57	ri	H	
+58	si	H	
+59	ti	H	
+60	ui	H	
+61	zi	H	
+65	o	H	
+66	bo	H	
+67	co	H	
+68	do	H	
+69	fo	H	
+70	go	H	
+71	ho	H	
+72	lo	H	
+73	mo	H	
+74	no	H	
+75	po	H	
+76	quo	H	
+77	ro	H	
+78	so	H	
+79	to	H	
+80	uo	H	
+81	zo	H	
+87	u	H	
+88	bu	H	
+89	cu	H	
+90	du	H	
+91	fu	H	
+92	gu	H	
+93	hu	H	
+94	lu	H	
+95	mu	H	
+96	nu	H	
+97	pu	H	
+98	ru	H	
+99	su	H	
+34	tu	M	foot of the u column, below 99
+35	zu	M	foot of the u column
+18	b	H	
+19	c	H	
+20	d	H	
+41	f	H	
+42	g	H	
+43	h	H	
+62	l	H	
+63	m	H	
+64	n	H	
+82	p	H	
+83	qu	H	
+84	r	H	
+85	s	H	
+86	t	H	
+00	z	M	last row of the single-letter column, read on the overview sheet only
