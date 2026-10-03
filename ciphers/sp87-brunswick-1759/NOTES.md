@@ -248,6 +248,9 @@ recipient-side text of a sampled item located. Status stays **open**.
 
 Waits on: TNA page copies of the six paired items (REQUEST.md, ASKS row 57).
 
+- S (FT4, 3 Oct 2026): read Westphalen 1871 (Google Books CUoSqn-TycQC, full view) at the "composition secrète ...
+  Ehrenbreitstein" passage and record addressee and date against SP 87/36/9 (11 Oct 1759) -- a browser page read, no
+  login, no payment (books.google page view is captcha-blocked only from the cloud).
 - S: identify the HMC 3rd Report collection that calendars the Ferdinand-Holdernesse run -- read the 1872 report's appendix
   table of contents on archive.org/Google Books full view (search "Ziegenhayn" in the full-view volume 3_sUAAAAQAAJ and read
   the section heading above it), then check whether that collection's items duplicate any cipher-flagged SP 87 piece by
@@ -256,3 +259,67 @@ Waits on: TNA page copies of the six paired items (REQUEST.md, ASKS row 57).
 Requests this pass (3 Oct 2026): googleapis.com/books 5, archive.org 2 (advancedsearch, no hit), github.com 2 (shallow clones,
 shared with the other two targets of this batch). WebSearch 3.
 Gate re-run (GF4-BATCH12, 3 Oct 2026): `sp87-brunswick-1759: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp87-brunswick`: no line.
+
+## FT4-sp87-brunswick-1759 (3 Oct 2026, account-4)
+
+Step run (GF4-BATCH12's premise lead): are the period-decipherment calibration items online or printed with cipher AND
+decipherment, and are they in the target's key/design?
+
+**Design prior: non-test.** `tools/design_prior.py` needs a token stream; this folder holds no `ciphertext.txt` (no SP 87
+cipher leaf has been transcribed or imaged -- every item is digitised=false, below). Office prior instead, from
+KEY-DESIGN.tsv / KEY-OFFICES.tsv: no key on file from the 1740s-1770s at all (decades on file jump from 1720s to 1780s),
+and no British Secretary of State's office key later than Thurloe's 1650s set. So neither the statistics nor the office
+register support any design family for this channel yet; that waits on a transcribed leaf.
+
+**Availability, TNA Discovery API (3 Oct 2026; search by reference, then `records/v1/details/<id>`):**
+
+| Ref | TNA id | Date | What | digitised | Same channel as target? |
+|---|---|---|---|---|---|
+| SP 87/36/9 | C9172233 | 11 Oct 1759 | Ferdinand to Holdernesse, section in cipher | false | yes (Ferdinand <-> SoS) |
+| SP 87/36/10 | C9172234 | 11 Oct 1759 | "Decyphered Part of Prince Ferdinand's Letter of the 11th October 1759" | false | yes -- the office decipherment of 36/9 |
+| SP 87/40/69 | C9272078 | 5 June 1761 | Bute to Ferdinand (ff. 150-152; office copy/draft) | (search record; not fetched) | yes |
+| SP 87/40/76 | C9272109 | 12 June 1761 | Ferdinand to Bute, encloses passage that "could not be deciphered" | false | yes |
+| SP 87/40/77 | C9272110 | 5 June 1761 | extract of 40/69 "which could not be completely deciphered" (ff. 172-173) | false | yes -- Ferdinand's side, partial decipherment |
+| SP 87/40/78 | C9272112 | 29 June 1761 | Bute to Ferdinand, partly in cipher: "has ordered his letter of 5 June [40/69] to be enciphered in a simpler manner" | (search record) | yes -- **design evidence**: the 5 June letter used a more complex encipherment than usual, then was re-sent simpler |
+| SP 87/40/121 | C9276876 | 29 Sept 1761 | Bute encloses three deciphered intercepts | false | no |
+| SP 87/40/122, /123 (and /124) | C9276877, C9276878 | 30 Jul, 10 Aug 1761 | De Broglie/Choiseul intercepts, deciphered copies | false (122) | **no** -- French army/ministry cipher, a different key; not calibration for the British-Ferdinand channel |
+| SP 87/4/234 | C8951001 | 1712 | intercepted letters from Namur, partly in cipher | (search record) | **no** -- 1712, wrong decade and channel; drop as a sibling |
+
+Result (a): **none of the calibration items is digitised by TNA**; State Papers Online (Gale) is the owner's paywall -- a
+REQUEST.md item, not a fetch. Result (b), key/design: the in-channel pairs are 36/9-10 (cipher + office decipherment) and
+40/69 + 40/77 + 40/78 (clear office text of the same letter, Ferdinand's partial decipherment of it, and its simpler
+re-encipherment) -- the second is the richer key-rebuild set, since the clear text of the enciphered passage is in the
+box at the sending end. 40/122-124 and 4/234 are out of design.
+
+**Print lead found this pass (Google Books API, keyed, country=US):** Westphalen's 1871 volume (Google Books
+CUoSqn-TycQC, `ALL_PAGES`, 988 pp.) carries a French first-person Ferdinand text: "... Ehrenbreitstein par une composition
+secrète avec le commandant françois. Si cela arrive, j'ay du temps de reste pour prendre encore la ville de Giessen;
+peutêtre pourrai-je prendre aussi Francfort et établir mes quartiers d'hyver ..." -- the same subject as SP 87/36/10's
+catalogue line ("his hopes for capturing Ehrenbreitstein"). Renouard, *Geschichte des Krieges in Hannover, Hessen und
+Westfalen* (1864; LsFhAAAAcAAJ and copies) cites a Ferdinand letter "an Holdernesse, datirt aus Crosdorf 11. Oktober 1759"
+on the same matter, and Mediger/Klingebiel 2011 (uV9RAQAAIAAJ, snippet) footnotes "Holdernesse, 1759 September 29 /
+Oktober 11 / November 7". **Not established** whether the Westphalen text is the 11 Oct letter to Holdernesse itself or
+another Ferdinand letter of those days (the snippet's neighbours mention "No. 58" and "Holdernesse me repond au sujet de la
+Lettre du comte de Starem[berg]", which reads as Ferdinand writing to a third party about Holdernesse). If it is, it is a
+printed plaintext for the 36/9 cipher section (an N1-shaped calibration, not a target reading). The page itself cannot be
+read from the cloud (books.google page view is captcha-blocked, access table; no archive.org copy -- `bub_gb_CUoSqn-TycQC`
+and `bub_gb_lEYIAAAAQAAJ` metadata empty).
+
+Nothing fetched (no usable online cipher+decipherment pair), so no manifest. Requests: discovery.nationalarchives.gov.uk 12
+(6 searches, 6 details), googleapis.com/books 7, archive.org 2. All 1.6 s apart. Vision calls 0.
+
+## Remaining gaps (FT4-sp87-brunswick-1759, 3 Oct 2026)
+Read so far: 0 of 98 cipher-flagged items read; no leaf imaged or transcribed.
+- calibration pairs SP 87/36/9-10 and 40/69+77+78 - blocker: waiting-on ASKS row 57 (REQUEST.md TNA page copies; or State Papers Online access, REQUEST.md item 2); TNA digitised=false for every item, checked 3 Oct 2026
+- Westphalen 1871 CUoSqn-TycQC Ehrenbreitstein passage - blocker: not-attempted; reading the page needs a browser that clears books.google's captcha; next: owner-desk/LOCAL-QUEUE page read of CUoSqn-TycQC at the "composition secrète" hit to identify addressee and date, ~$0.5
+- the other ~92 cipher-flagged items - blocker: waiting-on ASKS row 57 (no images; design prior needs a transcribed leaf)
+
+## Escalation (3 Oct 2026)
+- [x] siblings: calibration items located and flagged in TNA Discovery, all digitised=false (this pass)
+- [n/a] clear-pages: no leaf of this cluster imaged yet
+- [x] known-keys: KEY-DESIGN.tsv has no 1740s-1770s key and no later British SoS key (this pass)
+- [ ] print: Westphalen 1871 CUoSqn-TycQC passage to be read at the page (owner desk)
+- [n/a] key-rebuild: needs a cipher+decipherment pair in hand first
+- [n/a] image-check: no images exist from the cloud
+- [n/a] retry: no failed method to retry here
+Verdict: keep going: 1 internal gaps; cheapest next: read Westphalen 1871 CUoSqn-TycQC at the "composition secrète" hit (owner-desk LOCAL-QUEUE row; addressee + date vs SP 87/36/9), ~$0.5

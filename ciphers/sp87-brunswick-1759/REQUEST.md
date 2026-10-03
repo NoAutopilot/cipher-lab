@@ -34,4 +34,15 @@ copy" link at the bottom of the catalogue page (page-check £9.92, effective 2 F
 six items, likely one combined order). General route:
 nationalarchives.gov.uk/help-with-your-research/record-copying/.
 
+**Update, 3 Oct 2026 (FT4-sp87-brunswick-1759, account-4).** Digitised flag now checked item by item through the TNA
+Discovery details API: SP 87/36/9, 36/10, 40/76, 40/77, 40/121, 40/122 all `digitised: false`. Two items to add to the
+order, ahead of 40/121-124: **SP 87/40/69** (Bute to Ferdinand, 5 June 1761, ff. 150-152, the sending office's text of
+the letter whose cipher passage Ferdinand could not read) and **SP 87/40/78** (29 June 1761, partly in cipher: the letter
+of 5 June "ordered ... to be enciphered in a simpler manner"). With 40/76-77 these four are the best key-rebuild set in
+the box. SP 87/40/122-124 are French intercepts in an enemy cipher -- a different key; lowest priority.
+
+**Item 2 -- State Papers Online (Gale), owner's paywall.** If a library login gives access to State Papers Online's
+18th-century SP 87 module, the same items (SP 87/36/9-10, SP 87/40/69, 76-78) may be readable there without a copy
+order; check whether SP 87/36 and SP 87/40 are in its coverage before paying TNA.
+
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.
