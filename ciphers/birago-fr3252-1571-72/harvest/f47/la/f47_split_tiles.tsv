@@ -1,0 +1,198 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+f47	L01	1	?	S73	S49	split	split	S73,S49,?		S74 S84 S93		
+f47	L01	5	?	S60	S24	split	split	S60,S24,?	S74 S84 S93	? S62 ?		
+f47	L01	6	?	S76	S91	split	split	S76,S91,?	S84 S93 ?	S62 ? S65		
+f47	L01	8	?	S74	S54	split	split	S74,S54,?	? ? S62	S65 S97 S70		
+f47	L01	16	?	S76	S91	split	split	S76,S91,?	S17 S47 S75	S62 ? ?		
+f47	L01	18	?	S97	S23	split	split	S97,S23,?	S75 ? S62	? S49 S53		
+f47	L01	19	?	S34	S50	split	split	S34,S50,?	? S62 ?	S49 S53 S52		
+f47	L01	23	?	S42	S40	split	split	S42,S40,?	S49 S53 S52	S45 ? S69		
+f47	L01	25	?	S80	S65	split	split	S80,S65,?	S52 ? S45	S69 S17 S45		
+f47	L01	34	?	S80	S65	split	split	S80,S65,?	S23 S20 S47	S97 S88 S70		
+f47	L01	38	?	S74	S77	split	split	S74,S77,?	S97 S88 S70	S75 S93 ?		
+f47	L01	41	?	X_DOTS	S49	split	split	X_DOTS,S49,?	? S75 S93	S53 S75 S23		
+f47	L01	47	?	S66	S26	split	split	S66,S26,?	S23 S89 S75	S62 S23 S62		
+f47	L01	54	?	S75	S88	split	split	S75,S88,?	X_TRI S70 S69	S65		
+f47	L02	4	?	S80	S65	split	split	S80,S65,?	S53 S17 S94	S49 S17 ?		
+f47	L02	7	?	S76	S91	split	split	S76,S91,?	? S49 S17	? S93 S70		
+f47	L02	8	?	S80	S65	split	split	S80,S65,?	S49 S17 ?	S93 S70 S74		
+f47	L02	13	?	S42	S40	split	split	S42,S40,?	S70 S74 S62	S52 ? S75		
+f47	L02	15	?	S23	S97	split	split	S23,S97,?	S62 ? S52	S75 S65 S84		
+f47	L02	19	?	S25	S93	split	split	S25,S93,?	S75 S65 S84	S35 ? S88		
+f47	L02	21	?	S56	S52	split	split	S56,S52,?	S84 ? S35	S88 S75 S65		
+f47	L02	29	?	S76	S91	split	split	S76,S91,?	S65 S23 S70	S75 S94 S17		
+f47	L02	39	?	S74	S54	split	split	S74,S54,?	S93 S69 S47	S70 S49 S89		
+f47	L02	44	?	S76	S91	split	split	S76,S91,?	S49 S89 S70	S70 S65 S89		
+f47	L03	6	?	S88	S75	split	split	S88,S75,?	S17 S65 S49	S47 S97 S65		
+f47	L03	10	?	S69	S13	split	split	S69,S13,?	S47 S97 S65	? S65 S49		
+f47	L03	11	?	S56	S52	split	split	S56,S52,?	S97 S65 ?	S65 S49 ?		
+f47	L03	14	?	S74	S54	split	split	S74,S54,?	? S65 S49	? ? S52		
+f47	L03	15	?	S80	S65	split	split	S80,S65,?	S65 S49 ?	? S52 ?		
+f47	L03	16	?	S42	S40	split	split	S42,S40,?	S49 ? ?	S52 ? ?		
+f47	L03	18	?	S76	S91	split	split	S76,S91,?	? ? S52	? S88 X_TRI		
+f47	L03	19	?	S80	S65	split	split	S80,S65,?	? S52 ?	S88 X_TRI ?		
+f47	L03	22	?	S76	S91	split	split	S76,S91,?	? S88 X_TRI	S45 X_TRI S17		
+f47	L03	31	?	S80	S65	split	split	S80,S65,?	S65 S94 S93	? ? S62		
+f47	L03	32	?	S69	S54	split	split	S69,S54,?	S94 S93 ?	? S62 ?		
+f47	L03	33	?	S74	S62	split	split	S74,S62,?	S93 ? ?	S62 ? S52		
+f47	L03	35	?	S42	S40	split	split	S42,S40,?	? ? S62	S52 S94 S93		
+f47	L03	39	?	S84	S88	split	split	S84,S88,?	S52 S94 S93	S70 S49 ?		
+f47	L03	42	?	S69	S13	split	split	S69,S13,?	? S70 S49	? S93 ?		
+f47	L03	43	?	S53	S76	split	split	S53,S76,?	S70 S49 ?	S93 ? ?		
+f47	L03	45	?	S76	S91	split	split	S76,S91,?	? ? S93	? S93 ?		
+f47	L03	46	?	S74	S54	split	split	S74,S54,?	? S93 ?	S93 ? S65		
+f47	L03	48	?	S40	S47	split	split	S40,S47,?	? ? S93	S65		
+f47	L04	1	?	S76	S91	split	split	S76,S91,?		S93 S65 ?		
+f47	L04	4	?	S95	S45	split	split	S95,S45,?	? S93 S65	? ? S53		
+f47	L04	5	?	S70	S75	split	split	S70,S75,?	S93 S65 ?	? S53 S65		
+f47	L04	6	?	S66	S26	split	split	S66,S26,?	S65 ? ?	S53 S65 ?		
+f47	L04	9	?	S25	S35	split	split	S25,S35,?	? S53 S65	S47 ? S84		
+f47	L04	11	?	S80	S65	split	split	S80,S65,?	S65 ? S47	S84 S93 S65		
+f47	L04	17	?	S74	S62	split	split	S74,S62,?	S65 S40 S93	S62 ? S89		
+f47	L04	19	?	S97	S23	split	split	S97,S23,?	S93 ? S62	S89 S47 ?		
+f47	L04	22	?	S74	S54	split	split	S74,S54,?	? S89 S47	S75 ? ?		
+f47	L04	24	?	S42	X_TRI	split	split	S42,X_TRI,?	S47 ? S75	? ? S88		
+f47	L04	25	?	S80	S69	split	split	S80,S69,?	? S75 ?	? S88 S65		
+f47	L04	26	?	S97	S23	split	split	S97,S23,?	S75 ? ?	S88 S65 S69		
+f47	L04	31	?	S97	S23	split	split	S97,S23,?	S65 S69 S65	? S57 S52		
+f47	L04	32	?	S60	S88	split	split	S60,S88,?	S69 S65 ?	S57 S52 S74		
+f47	L04	36	?	S75	S70	split	split	S75,S70,?	S57 S52 S74	S52 ? S93		
+f47	L04	38	?	S76	S91	split	split	S76,S91,?	S74 ? S52	S93 S94 S75		
+f47	L05	2	?	S69	S13	split	split	S69,S13,?	S74	S47 ? S70		
+f47	L05	4	?	S56	S52	split	split	S56,S52,?	S74 ? S47	S70 S49 S62		
+f47	L05	11	?	S80	S69	split	split	S80,S69,?	X_TRI S62 S93	S65 ? S17		
+f47	L05	13	?	S76	S91	split	split	S76,S91,?	S93 ? S65	S17 ? S70		
+f47	L05	15	?	S74	S54	split	split	S74,S54,?	S65 ? S17	S70 S89 S47		
+f47	L05	31	?	S69	S13	split	split	S69,S13,?	S40 S49 S75	S69 S70 ?		
+f47	L05	34	?	S97	S23	split	split	S97,S23,?	? S69 S70	S75 ? S74		
+f47	L05	36	?	S67	S53	split	split	S67,S53,?	S70 ? S75	S74 S75 S88		
+f47	L05	50	?	S80	S65	split	split	S80,S65,?	S84 S52 S52			
+f47	L06	1	?	X_DOTS	S49	split	split	X_DOTS,S49,?		? S89 ?		
+f47	L06	2	?	S88	S24	split	split	S88,S24,?	?	S89 ? S69		
+f47	L06	4	?	S80	S65	split	split	S80,S65,?	? ? S89	S69 S75 S45		
+f47	L06	9	?	S56	S52	split	split	S56,S52,?	S75 S45 S84	S75 S89 S35		
+f47	L06	19	?	S76	S91	split	split	S76,S91,?	S52 S49 S75	S35 S69 S70		
+f47	L06	25	?	S73	S49	split	split	S73,S49,?	S70 S94 S65	? S61 ?		
+f47	L06	26	?	S71	S50	split	split	S71,S50,?	S94 S65 ?	S61 ? S35		
+f47	L06	28	?	S58	S40	split	split	S58,S40,?	? ? S61	S35 S88 S65		
+f47	L06	35	?	S76	S91	split	split	S76,S91,?	S23 S94 S65	S75 S69 S70		
+f47	L07	14	?	S69	S88	split	split	S69,S88,?	S49 S62 S45	? S62 ?		
+f47	L07	15	?	S74	S54	split	split	S74,S54,?	S62 S45 ?	S62 ? S47		
+f47	L07	17	?	S42	S40	split	split	S42,S40,?	? ? S62	S47 ? S93		
+f47	L07	19	?	S69	S13	split	split	S69,S13,?	S62 ? S47	S93 S69 S65		
+f47	L07	23	?	S76	S91	split	split	S76,S91,?	S93 S69 S65	S93 S88 X_TRI		
+f47	L07	27	?	S76	S91	split	split	S76,S91,?	S93 S88 X_TRI	S17 S75 S74		
+f47	L07	32	?	S56	S52	split	split	S56,S52,?	S75 S74 S57	S35 ? S88		
+f47	L07	34	?	S76	S91	split	split	S76,S91,?	S57 ? S35	S88 X_TRI S70		
+f47	L07	38	?	S56	S52	split	split	S56,S52,?	S88 X_TRI S70	S53 ? ?		
+f47	L07	40	?	S80	S65	split	split	S80,S65,?	S70 ? S53	? S75 S93		
+f47	L07	41	?	S56	S52	split	split	S56,S52,?	? S53 ?	S75 S93 S23		
+f47	L07	45	?	S74	S54	split	split	S74,S54,?	S75 S93 S23	S93		
+f47	L08	1	?	S74	S54	split	split	S74,S54,?		? S89 ?		
+f47	L08	2	?	S80	S65	split	split	S80,S65,?	?	S89 ? S40		
+f47	L08	4	?	S80	S65	split	split	S80,S65,?	? ? S89	S40 ? S61		
+f47	L08	6	?	S74	S54	split	split	S74,S54,?	S89 ? S40	S61 S47 S97		
+f47	L08	13	?	S66	S17	split	split	S66,S17,?	S75 S69 S70	S53 S35 ?		
+f47	L08	16	?	X_NEW	S52	split	split	X_NEW,S52,?	? S53 S35	? ? ?		
+f47	L08	17	?	S69	S47	split	split	S69,S47,?	S53 S35 ?	? ? S88		
+f47	L08	18	?	S62	S75	split	split	S62,S75,?	S35 ? ?	? S88 S65		
+f47	L08	19	?	S49	S54	split	split	S49,S54,?	? ? ?	S88 S65 S54		
+f47	L08	23	?	S80	S65	split	split	S80,S65,?	S88 S65 S54	S47 ? ?		
+f47	L08	25	?	S80	S65	split	split	S80,S65,?	S54 ? S47	? S75 S69		
+f47	L08	26	?	S74	S54	split	split	S74,S54,?	? S47 ?	S75 S69 S70		
+f47	L08	33	?	S74	S54	split	split	S74,S54,?	S89 S93 S40	? S88 S75		
+f47	L08	34	?	S80	S65	split	split	S80,S65,?	S93 S40 ?	S88 S75 S84		
+f47	L08	38	?	S60	S88	split	split	S60,S88,?	S88 S75 S84	S89 S35 S84		
+f47	L09	5	?	S42	X_TRI	split	split	S42,X_TRI,?	S26 S52 S69	S93 ? S74		
+f47	L09	7	?	S56	S52	split	split	S56,S52,?	S69 ? S93	S74 S75 S97		
+f47	L09	12	?	S80	S65	split	split	S80,S65,?	S75 S97 S75	S53 S93 S40		
+f47	L09	16	?	S80	S65	split	split	S80,S65,?	S53 S93 S40	S69 S75 S94		
+f47	L09	30	?	S76	S91	split	split	S76,S91,?	S93 S49 S75	? S75 ?		
+f47	L09	31	?	S80	S65	split	split	S80,S65,?	S49 S75 ?	S75 ? S97		
+f47	L09	33	?	S56	S52	split	split	S56,S52,?	? ? S75	S97 ? S62		
+f47	L09	35	?	S74	S54	split	split	S74,S54,?	S75 ? S97	S62 S74 ?		
+f47	L09	38	?	S80	S65	split	split	S80,S65,?	? S62 S74	X_TRI S52 S23		
+f47	L09	42	?	S66	S26	split	split	S66,S26,?	X_TRI S52 S23	? S88 S45		
+f47	L09	43	?	S80	S65	split	split	S80,S65,?	S52 S23 ?	S88 S45 ?		
+f47	L09	46	?	S95	S54	split	split	S95,S54,?	? S88 S45	S93		
+f47	L10	1	?	S31	S61	split	split	S31,S61,?		S70 S84 S88		
+f47	L10	8	?	S74	S54	split	split	S74,S54,?	S62 S88 S75	S57 ? S35		
+f47	L10	10	?	S60	S88	split	split	S60,S88,?	S75 ? S57	S35 S88 S84		
+f47	L10	17	?	S76	S84	split	split	S76,S84,?	S65 S49 S70	S75 S93 ?		
+f47	L10	20	?	S66	S40	split	split	S66,S40,?	? S75 S93	? S93 ?		
+f47	L10	21	?	S65	S75	split	split	S65,S75,?	S75 S93 ?	S93 ? ?		
+f47	L10	23	?	S47	S65	split	split	S47,S65,?	? ? S93	? S69 S65		
+f47	L10	24	?	S75		gapB	split	S75,?	? S93 ?	S69 S65 S57		
+f47	L10	29	?	S76	S84	split	split	S76,S84,?	S65 S57 S65	S45 S53 S70		
+f47	L10	34	?	S74	S54	split	split	S74,S54,?	S53 S70 S74	? S49 S70		
+f47	L10	35	?	S60	S88	split	split	S60,S88,?	S70 S74 ?	S49 S70 S26		
+f47	L10	39	?	S74	S54	split	split	S74,S54,?	S49 S70 S26	S93 S47 S88		
+f47	L11	1	?	S80	S65	split	split	S80,S65,?		X_TRI S93 S53		
+f47	L11	8	?	S69	S13	split	split	S69,S13,?	S65 S23 S70	S47 S93 S89		
+f47	L11	28	?	S56	S52	split	split	S56,S52,?	S88 S65 S57	S65 ? S93		
+f47	L11	30	?	S76	S91	split	split	S76,S91,?	S57 ? S65	S93 ? ?		
+f47	L11	32	?	S74	S54	split	split	S74,S54,?	S65 ? S93	? ? S93		
+f47	L11	33	?	S80	S65	split	split	S80,S65,?	? S93 ?	? S93 S84		
+f47	L11	34	?	X_NEW	S65	split	split	X_NEW,S65,?	S93 ? ?	S93 S84 S74		
+f47	L11	38	?	S73	S75	split	split	S73,S75,?	S93 S84 S74	? S84 ?		
+f47	L11	39	?	S53	S54	split	split	S53,S54,?	S84 S74 ?	S84 ? S93		
+f47	L11	41	?	S74	S54	split	split	S74,S54,?	? ? S84	S93 ? ?		
+f47	L11	43	?	S74	S54	split	split	S74,S54,?	S84 ? S93	? S47 S70		
+f47	L11	44	?	S74	S54	split	split	S74,S54,?	? S93 ?	S47 S70		
+f47	L12	10	?	S74	S54	split	split	S74,S54,?	S75 S26 S52	S52 ? S88		
+f47	L12	12	?	S97	S23	split	split	S97,S23,?	S52 ? S52	S88 S75 S35		
+f47	L12	16	?	S69	S13	split	split	S69,S13,?	S88 S75 S35	S65 ? S45		
+f47	L12	18	?	S76	S91	split	split	S76,S91,?	S35 ? S65	S45 S89 S93		
+f47	L12	22	?	S74	S54	split	split	S74,S54,?	S45 S89 S93	S70 ? S47		
+f47	L12	24	?	S31	S17	split	split	S31,S17,?	S93 ? S70	S47 ? S52		
+f47	L12	26	?	S97	S23	split	split	S97,S23,?	S70 ? S47	S52 ? ?		
+f47	L12	28	?	S74	S54	split	split	S74,S54,?	S47 ? S52	? S23 ?		
+f47	L12	29	?	S60	S88	split	split	S60,S88,?	? S52 ?	S23 ? S75		
+f47	L12	31	?	S74	S54	split	split	S74,S54,?	? ? S23	S75 S49 ?		
+f47	L12	34	?	S74	S54	split	split	S74,S54,?	? S75 S49	S70 S75 S88		
+f47	L12	41	?	S80	S65	split	split	S80,S65,?	S23 S25 X_TRI	S49 S53 S75		
+f47	L12	45	?	S31	S61	split	split	S31,S61,?	S49 S53 S75	S93 S52		
+f47	L13	5	?	S74	S54	split	split	S74,S54,?	S75 S49 S52	S93 S13 ?		
+f47	L13	8	?	X_DOTS	S49	split	split	X_DOTS,S49,?	? S93 S13	? S88 S70		
+f47	L13	9	?	S80	S65	split	split	S80,S65,?	S93 S13 ?	S88 S70 S84		
+f47	L13	20	?	S95	S13	split	split	S95,S13,?	S26 S75 S23	S65 ? S65		
+f47	L13	22	?	S53	X_NEW	split	split	S53,X_NEW,?	S23 ? S65	S65 S47 S52		
+f47	L13	26	?	S56	S52	split	split	S56,S52,?	S65 S47 S52	S35 S20 S47		
+f47	L13	30	?	S80	S65	split	split	S80,S65,?	S35 S20 S47	S84 S25 S61		
+f47	L13	39	?	S45	S94	split	split	S45,S94,?	S93 S74 S75	S23 S70 S74		
+f47	L13	46	?	S56	S52	split	split	S56,S52,?	S70 S75 X_TRI	S45 S93		
+f47	L14	2	?	S74	S54	split	split	S74,S54,?	S84	S70 S23 S69		
+f47	L14	9	?	S61	S53	split	split	S61,S53,?	S75 S40 S65	S70 S74 ?		
+f47	L14	12	?	S74	S54	split	split	S74,S54,?	? S70 S74	S69 S93 ?		
+f47	L14	15	?	S76	S40	split	split	S76,S40,?	? S69 S93	S75 S47 S84		
+f47	L14	21	?	S31	S94	split	split	S31,S94,?	S84 S88 S93	S65 ? S52		
+f47	L14	23	?	S74	S54	split	split	S74,S54,?	S93 ? S65	S52 S23 S53		
+f47	L14	32	?	S53	S88	split	split	S53,S88,?	X_TRI S74 S88	? S52 S52		
+f47	L14	33	?	S80	S65	split	split	S80,S65,?	S74 S88 ?	S52 S52 S47		
+f47	L14	40	?	S76	S91	split	split	S76,S91,?	S65 S94 S35	S88 S84 S65		
+f47	L15	1	?	S42	S40	split	split	S42,S40,?		S65 S49 S52		
+f47	L15	8	?	S74	S54	split	split	S74,S54,?	S26 S75 S45	S65 ? S93		
+f47	L15	10	?	S74	S54	split	split	S74,S54,?	S45 ? S65	S93 ? S70		
+f47	L15	12	?	S74	S54	split	split	S74,S54,?	S65 ? S93	S70 S93 S88		
+f47	L15	17	?	S74	S54	split	split	S74,S54,?	S93 S88 S40	S70 S74 S75		
+f47	L15	22	?	S74	S54	split	split	S74,S54,?	S74 S75 S23	S70 ? S88		
+f47	L15	24	?	S56	S52	split	split	S56,S52,?	S23 ? S70	S88 S35 S61		
+f47	L15	31	?	S74	S54	split	split	S74,S54,?	S70 S69 S65	? S93 S45		
+f47	L15	32	?	S74	S54	split	split	S74,S54,?	S69 S65 ?	S93 S45 ?		
+f47	L15	35	?	S76	S91	split	split	S76,S91,?	? S93 S45	S75 ? S62		
+f47	L15	37	?	S56	S52	split	split	S56,S52,?	S45 ? S75	S62 S88 ?		
+f47	L15	40	?	S61	S53	split	split	S61,S53,?	? S62 S88	S75 S49 S93		
+f47	L16	6	?	S97	S23	split	split	S97,S23,?	S35 S74 S52	S89 S70 S74		
+f47	L16	11	?	S74	S54	split	split	S74,S54,?	S70 S74 S52	S57 S69 S75		
+f47	L16	25	?	S25	S35	split	split	S25,S35,?	S62 S93 S23	? S52 S74		
+f47	L16	26	?	S16	S42	split	split	S16,S42,?	S93 S23 ?	S52 S74 S52		
+f47	L16	32	?	S56	S57	split	split	S56,S57,?	S52 S57 S65	S53 S93 X_NEW		
+f47	L16	36	?	S84	S40	split	split	S84,S40,?	S53 S93 X_NEW	? S93 S74		
+f47	L16	37	?	S84	S40	split	split	S84,S40,?	S93 X_NEW ?	S93 S74 S75		
+f47	L16	40	S75	S75	S70	split_H_A	split	S75,S70,S88	? S93 S74	S94 S97 S45		
+f47	L16	44	?	S74	S54	split	split	S74,S54,?	S94 S97 S45			
+f47	L17	1	?	S80	S65	split	split	S80,S65,?		? ? S65		
+f47	L17	2	?	S23	S97	split	split	S23,S97,?	?	? S65 S69		
+f47	L17	3	?	S74	S54	split	split	S74,S54,?	? ?	S65 S69 S52		
+f47	L17	16	?	S56	S94	split	split	S56,S94,?	S52 S94 S75	S35 S74 ?		
+f47	L17	19	?	S73	S49	split	split	S73,S49,?	? S35 S74	S40		
