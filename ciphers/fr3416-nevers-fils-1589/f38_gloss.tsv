@@ -1,0 +1,24 @@
+# fr.3416 f.38 (canvas f46) interlinear gloss, pass G: one blind Opus read of images/f38g_L01-L04_s1/s2.jpg, crops only, no key (FILS-F38, 3 Oct 2026). Verbatim; '#' = crossed out.
+band	segment	x_fraction	word	confidence	alternatives
+1	s1	0.14	Lecq.	M	Lecq~ / Letq.
+1	s1	0.26	..	L	two dots, possibly a gloss mark
+1	s1	0.30	7	L	figure 7 in the gloss band
+1	s1	0.31	dabz	L	Pdabz / dabe
+1	s1	0.52	97.	M	figure 97. in the gloss band
+1	s1	0.65	aminitie	M	amintie / amitie
+1	s1	0.92	asseurement	L	aspermect / assrmect (continues to s2 0.10)
+1	s2	0.62	seruira	M	seruiron / feruira
+1	s2	0.80	lou	L	lon / son / ou
+2	s1	0.15	laultre	H	lautre~
+2	s1	0.57	Cas	L	Ceo / Ces
+2	s2	0.37	#abbeuille	L	#nabbeuille / #nobleuille (over interlinear 54 in clear text)
+3	s1	0.86	#..aroyt	L	#sauroit / #paroyt (same word as s2 0.05)
+3	s2	0.35	garde	L	gaud~ / guerre (smudged)
+3	s2	0.47	rupture	L	reppellee / ruptur~ (smudged)
+3	s2	0.58	#Bou...	L	#Boule~ / #Bourg~ (crossed out)
+4	s1	0.15	#.....	L	crossed-out word(s), illegible
+4	s1	0.33	le	M	li / ti
+4	s1	0.38	duc	M	dud~
+4	s1	0.43	de	M	d~
+4	s1	0.47	Kefalluna	L	Retelluna / Rethellois / Rotsellana
+# NOTES (reader): band 1 top row "uni negras 97 et 24 qu..." is the previous clear line, not gloss; band 2 s2 is clear text with interlinear 54; band 3 s2 0.35-0.55 grey-smudged, "garde rupture" a guess; band 4 s2 no gloss over digits; a low "Sur"/"Sir" near s2 0.87 not placed.
