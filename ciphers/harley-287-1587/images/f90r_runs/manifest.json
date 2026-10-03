@@ -1,0 +1,508 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f90r_R01_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    4553,
+    813,
+    6008,
+    1036
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     111
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R02_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    5295,
+    1012,
+    6364,
+    1220
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     104
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R03_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2282,
+    1081,
+    4732,
+    1357
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     138
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R03_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2845,
+    1081,
+    5295,
+    1357
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     138
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R04_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    4909,
+    1244,
+    6393,
+    1517
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     136
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R05_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2252,
+    1327,
+    3692,
+    1565
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     119
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R06_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2594,
+    1541,
+    5044,
+    1808
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     133
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R06_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2727,
+    1541,
+    5177,
+    1808
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     133
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R07_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    5444,
+    1446,
+    6216,
+    1743
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     148
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R08_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2594,
+    1802,
+    3099,
+    2022
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R09_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    3930,
+    2150,
+    6097,
+    2426
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     138
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R10_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2297,
+    2468,
+    3722,
+    2735
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     133
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R11_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    4939,
+    2379,
+    6156,
+    2634
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     127
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R12_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    3870,
+    2634,
+    6156,
+    2896
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     131
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R13_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2297,
+    2765,
+    2802,
+    3002
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     118
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R14_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    4405,
+    2893,
+    6424,
+    3139
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     123
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R15_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2267,
+    3020,
+    3039,
+    3240
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R16_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    4256,
+    3139,
+    6156,
+    3377
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     119
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R17_L01.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2267,
+    3240,
+    3009,
+    3496
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     128
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R18_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    2267,
+    3442,
+    4717,
+    3650
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     104
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f90r_R18_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f90r band crops (images/f90r/*.jpg) pasted back at their manifest boxes into a 6750x3650 page-coordinate canvas (A2-HAR7, 3 Oct 2026); boxes are native IMG_R8494_I39202_P1.jpg coordinates",
+   "box": [
+    3409,
+    3442,
+    5859,
+    3650
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     104
+    ]
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}
