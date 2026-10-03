@@ -644,6 +644,7 @@ Next steps from this pass, cheapest first: (j) view no.57's table, presumably ca
 candidate whose description (symbol homophones, figures 1-72 for two-letter syllables) fits a figure+symbol letter, one overview
 plus, if it carries pi/theta/infinity, the two blind row reads PREREG-VILL-TABLE.md sets out (~$5); (k) a native crop of no.44's right-hand
 symbol column on f.82v (canvas f162) to settle whether any of its few symbols is a target sign (~$3). Both depend on nobody.
+
 ## Homophonic family_run with K as null (A1-VILL-HOMO, account 1, 3 Oct 2026)
 
 Pre-registered in `fr3995/PREREG-VILL-HOMO.md` (commit 5b97baef, pushed before any run). Every sign and figure in
