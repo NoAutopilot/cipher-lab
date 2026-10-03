@@ -6076,3 +6076,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:46 | A2-COS (account 2, LANE-A2PUSH) | halfway (01:00 UTC): one DECODE login served R1168 full-size images 1-8 of 9; f.12 cipher leaf carries period interlinear glosses and ends Strig. 20 martij 1492 as Berzeviczy CLV; f.13 is a period clear Exemplum incl. the 23 March PS. Writing verdict.
 2026-10-03 00:47 | A2-COS (account 2, LANE-A2PUSH) | correction to my halfway line: it was posted at 00:46 UTC by the clock, not 01:00 (time typed before reading date -u; rule 6)
 2026-10-03 00:47 | FT4c-maurice-rupert-1645 (account-4) | claim: ciphers/maurice-rupert-1645 -- design_prior + locate Add MS 18982 ff.95-96 (Osborne decipherment); no cryptanalysis; cap USD 5, box 30 min
+2026-10-03 00:47 | GF4d-berthier-napoleon-1812 (account-4) | claim: berthier-napoleon-1812, fetch+transcribe SHD 1812 grand chiffre table from jfbouch.fr, known-key value test vs control; cap 12.5, box 50 min
