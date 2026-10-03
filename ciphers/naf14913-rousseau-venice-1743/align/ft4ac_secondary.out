@@ -1,0 +1,6 @@
+SECONDARY arm T: free 581 occurrence at group 22 alone -> nofit
+SECONDARY arm T: free 581 occurrence at group 32 alone -> nofit
+SECONDARY arm T: free 581 occurrence at group 36 alone -> fit
+SECONDARY arm C: free 581 occurrence at group 22 alone -> fit
+SECONDARY arm C: free 581 occurrence at group 32 alone -> nofit
+SECONDARY arm C: free 581 occurrence at group 36 alone -> nofit

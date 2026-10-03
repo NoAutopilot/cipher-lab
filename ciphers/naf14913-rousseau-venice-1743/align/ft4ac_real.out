@@ -1,0 +1,4 @@
+REAL arm T (338=tou): base nofit release-all fit restoring ['581'] unresolved []
+  descriptor 581: unpin-only (repetition kept) nofit
+REAL arm C (534=che): base nofit release-all fit restoring ['581'] unresolved []
+  descriptor 581: unpin-only (repetition kept) nofit

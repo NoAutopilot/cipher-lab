@@ -1,0 +1,41 @@
+  draw 0: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 1: base nofit release-all fit restoring ['66'] unresolved [] planted 66
+  draw 2: base nofit release-all fit restoring ['22', '581', '279', '722'] unresolved [] planted 722
+  draw 3: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 4: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 5: base nofit release-all fit restoring ['66'] unresolved [] planted 66
+  draw 6: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 7: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 8: base nofit release-all fit restoring ['22', '501'] unresolved [] planted 501
+  draw 9: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 10: base nofit release-all fit restoring ['581', '279'] unresolved [] planted 279
+  draw 11: base nofit release-all fit restoring ['22', '581', '279'] unresolved [] planted 279
+  draw 12: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 13: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 14: base nofit release-all fit restoring ['22', '66', '581', '501'] unresolved [] planted 66
+  draw 15: base nofit release-all fit restoring ['121'] unresolved [] planted 121
+  draw 16: base nofit release-all fit restoring ['581', '279'] unresolved [] planted 279
+  draw 17: base nofit release-all fit restoring ['22', '722'] unresolved [] planted 722
+  draw 18: base nofit release-all fit restoring ['22', '66', '336'] unresolved [] planted 336
+  draw 19: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 20: base nofit release-all fit restoring ['22', '66'] unresolved [] planted 66
+  draw 21: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 22: base nofit release-all fit restoring ['581', '279', '336', '722'] unresolved [] planted 336
+  draw 23: base nofit release-all fit restoring ['581', '279'] unresolved [] planted 279
+  draw 24: base nofit release-all fit restoring ['66'] unresolved [] planted 66
+  draw 25: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 26: base nofit release-all fit restoring ['22', '581', '279', '501'] unresolved [] planted 501
+  draw 27: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+  draw 28: base nofit release-all fit restoring ['22', '581', '336', '501'] unresolved [] planted 336
+  draw 29: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 30: base nofit release-all fit restoring ['22', '581', '279', '501'] unresolved [] planted 501
+  draw 31: base nofit release-all fit restoring ['66'] unresolved [] planted 66
+  draw 32: base nofit release-all fit restoring ['22', '279'] unresolved [] planted 279
+  draw 33: base nofit release-all fit restoring ['22', '581', '279'] unresolved [] planted 279
+  draw 34: base nofit release-all fit restoring ['501'] unresolved [] planted 501
+  draw 35: base nofit release-all fit restoring ['581'] unresolved [] planted 581
+  draw 36: base nofit release-all fit restoring ['279'] unresolved [] planted 279
+  draw 37: base nofit release-all fit restoring ['22', '722'] unresolved [] planted 722
+  draw 38: base nofit release-all fit restoring ['581', '279'] unresolved [] planted 279
+  draw 39: base nofit release-all fit restoring ['22'] unresolved [] planted 22
+CONTROL (p) planted: contains-X 40/40 share 1.000; unique-located 22/40 share 0.550; redrawn (planted still fit) 37
