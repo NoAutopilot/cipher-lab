@@ -1,0 +1,522 @@
+passage	pos	sign_id	alt	conf	gloss	gconf	note
+r36_L01	1	S54	S74	L	?	L	line start
+r36_L01	2	S40		L	?	L	
+r36_L01	3	S74		M	?	L	
+r36_L01	4	S13	S45	M	?	L	
+r36_L01	5	S40		M	?	L	
+r36_L01	6	S80		M	?	L	
+r36_L01	7	S75		H	?	L	
+r36_L01	8	S66	S26	L	?	L	
+r36_L01	9	S47		M	?	L	
+r36_L01	10	S62		M	?	L	
+r36_L01	11	S26		M	?	L	
+r36_L01	12	S88		M	?	L	
+r36_L01	13	X_THETA2		H	?	L	
+r36_L01	14	S97		M	?	L	
+r36_L01	15	S53		M	?	L	
+r36_L01	16	S75		H	?	L	
+r36_L01	17	S23		H	?	L	line end
+r36_L02	1	S47		L	?	L	line start
+r36_L02	2	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L02	3	S22		L	?	L	
+r36_L02	4	S37		L	?	L	
+r36_L02	5	S52		M	?	L	
+r36_L02	6	S56		M	?	L	
+r36_L02	7	S88		M	?	L	
+r36_L02	8	S88	S73	L	?	L	
+r36_L02	9	S22		L	?	L	
+r36_L02	10	S61		M	?	L	
+r36_L02	11	S75		H	?	L	
+r36_L02	12	S22		L	?	L	
+r36_L02	13	S74		M	?	L	
+r36_L02	14	S53		L	?	L	
+r36_L02	15	S45		M	?	L	
+r36_L02	16	S88		M	?	L	
+r36_L02	17	S70		M	?	L	
+r36_L02	18	S94		M	?	L	
+r36_L02	19	S17		M	?	L	
+r36_L02	20	S84		M	?	L	
+r36_L02	21	S42	S16	L	?	L	
+r36_L02	22	S52		M	?	L	
+r36_L02	23	S30		M	?	L	
+r36_L02	24	S26		M	?	L	
+r36_L02	25	S22		L	?	L	
+r36_L02	26	S75		H	?	L	
+r36_L02	27	X_THETA2		H	?	L	
+r36_L02	28	S62		M	?	L	
+r36_L02	29	S52		M	?	L	
+r36_L02	30	S53		M	?	L	
+r36_L02	31	S94		M	?	L	
+r36_L02	32	S75		H	?	L	
+r36_L02	33	S74		L	?	L	
+r36_L02	34	S35		M	?	L	
+r36_L02	35	S57		M	?	L	
+r36_L02	36	X_THETA2		H	?	L	
+r36_L02	37	S80		M	?	L	
+r36_L02	38	S47		L	?	L	
+r36_L02	39	S22		L	?	L	
+r36_L02	40	S17		M	?	L	
+r36_L02	41	S95		L	?	L	
+r36_L02	42	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L02	43	S52		M	?	L	
+r36_L02	44	S13		M	?	L	
+r36_L02	45	S56		M	?	L	line end
+r36_L03	1	S45		M	?	L	line start
+r36_L03	2	S23		M	?	L	
+r36_L03	3	S89		M	?	L	
+r36_L03	4	S75		H	?	L	
+r36_L03	5	S52		M	?	L	
+r36_L03	6	S53		M	?	L	
+r36_L03	7	S42	S16	L	?	L	
+r36_L03	8	S93		M	?	L	
+r36_L03	9	S74		M	?	L	
+r36_L03	10	S70		M	?	L	
+r36_L03	11	S23		M	?	L	
+r36_L03	12	S88		M	?	L	
+r36_L03	13	S23		M	?	L	
+r36_L03	14	S30		M	?	L	
+r36_L03	15	S22		L	?	L	
+r36_L03	16	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L03	17	S88		M	?	L	
+r36_L03	18	X_THETA2		M	?	L	
+r36_L03	19	S65		M	?	L	
+r36_L03	20	S57		M	?	L	
+r36_L03	21	S75		H	?	L	
+r36_L03	22	S56		M	?	L	
+r36_L03	23	S40		M	?	L	
+r36_L03	24	S75		H	?	L	
+r36_L03	25	S47		M	?	L	
+r36_L03	26	S97		M	?	L	
+r36_L03	27	X_THETA2		M	?	L	
+r36_L03	28	S75		H	?	L	
+r36_L03	29	S17		M	?	L	
+r36_L03	30	S84		M	?	L	
+r36_L03	31	S25		M	?	L	
+r36_L03	32	X_THETA2		M	?	L	
+r36_L03	33	S35		M	?	L	
+r36_L03	34	S73	S75	L	?	L	
+r36_L03	35	S89		M	?	L	
+r36_L03	36	S80		M	?	L	
+r36_L03	37	S20		M	?	L	
+r36_L03	38	S42	S16	L	?	L	
+r36_L03	39	S52		M	?	L	
+r36_L03	40	S26		M	?	L	line end
+r36_L04	1	S88		M	?	L	line start
+r36_L04	2	S88		M	?	L	
+r36_L04	3	S42	S16	L	?	L	
+r36_L04	4	S23		M	?	L	
+r36_L04	5	S35		M	?	L	
+r36_L04	6	S26		M	?	L	
+r36_L04	7	S52		M	?	L	
+r36_L04	8	S73	S88	L	?	L	
+r36_L04	9	X_THETA2		M	?	L	
+r36_L04	10	S70		M	?	L	
+r36_L04	11	X_THETA2		L	?	L	
+r36_L04	12	S74		M	?	L	
+r36_L04	13	S93		M	?	L	
+r36_L04	14	S65		M	?	L	
+r36_L04	15	S30		M	?	L	
+r36_L04	16	S95		M	?	L	
+r36_L04	17	S61		M	?	L	
+r36_L04	18	S75		H	?	L	
+r36_L04	19	S57		M	?	L	
+r36_L04	20	S17		M	?	L	
+r36_L04	21	S47		M	?	L	
+r36_L04	22	S35		M	?	L	
+r36_L04	23	S94		L	?	L	
+r36_L04	24	S45		M	?	L	
+r36_L04	25	S42	S16	L	?	L	
+r36_L04	26	S80		M	?	L	
+r36_L04	27	S23		M	?	L	
+r36_L04	28	S53		M	?	L	
+r36_L04	29	S34		M	?	L	
+r36_L04	30	S74		M	?	L	
+r36_L04	31	S94		M	?	L	Et in guer[ra] (prose; s4 has prose only)
+r36_L05	1	S75		H	?	L	za (prose before run)
+r36_L05	2	S88		M	?	L	
+r36_L05	3	S89		H	?	L	
+r36_L05	4	S62		M	?	L	
+r36_L05	5	S74		M	?	L	
+r36_L05	6	S80		M	?	L	
+r36_L05	7	S23		M	?	L	
+r36_L05	8	S94		M	?	L	
+r36_L05	9	S45		M	?	L	
+r36_L05	10	S88		M	?	L	
+r36_L05	11	S70		M	?	L	
+r36_L05	12	S23		M	?	L	line end
+r36_L06	1	S52		M	?	L	line start
+r36_L06	2	S22		L	?	L	
+r36_L06	3	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L06	4	S35		M	?	L	
+r36_L06	5	S42	S16	L	?	L	
+r36_L06	6	X_THETA2		M	?	L	
+r36_L06	7	S62		M	?	L	
+r36_L06	8	S47		M	?	L	
+r36_L06	9	S93		M	?	L	
+r36_L06	10	S62		M	?	L	
+r36_L06	11	S26		M	?	L	
+r36_L06	12	S17		M	?	L	
+r36_L06	13	S62		M	?	L	
+r36_L06	14	S75		H	?	L	
+r36_L06	15	S74		M	?	L	
+r36_L06	16	S34		M	?	L	
+r36_L06	17	X_THETA2		M	?	L	
+r36_L06	18	S80		M	?	L	
+r36_L06	19	S95		M	?	L	
+r36_L06	20	S75		H	?	L	
+r36_L06	21	S42	S16	L	?	L	
+r36_L06	22	S23		M	?	L	
+r36_L06	23	S45		M	?	L	
+r36_L06	24	S20		M	?	L	
+r36_L06	25	S32		L	?	L	
+r36_L06	26	S52		M	?	L	
+r36_L06	27	S75		H	?	L	
+r36_L06	28	S74		L	?	L	
+r36_L06	29	S53		M	?	L	
+r36_L06	30	S88		M	?	L	
+r36_L06	31	S57		M	?	L	
+r36_L06	32	S45		M	?	L	
+r36_L06	33	S75		H	?	L	
+r36_L06	34	S26		M	?	L	
+r36_L06	35	S35		M	?	L	
+r36_L06	36	S13		M	?	L	
+r36_L06	37	S84		M	?	L	
+r36_L06	38	S93		M	?	L	
+r36_L06	39	S94		M	?	L	
+r36_L06	40	S93		M	?	L	
+r36_L06	41	S75		H	?	L	
+r36_L06	42	S74		M	?	L	
+r36_L06	43	S17		M	?	L	
+r36_L06	44	S22		L	?	L	
+r36_L06	45	S23		M	?	L	line end
+r36_L07	1	S62		M	?	L	line start
+r36_L07	2	X_THETA2		M	?	L	
+r36_L07	3	S45		L	?	L	
+r36_L07	4	S34		M	?	L	
+r36_L07	5	S80		M	?	L	
+r36_L07	6	S13		M	?	L	
+r36_L07	7	S93		M	?	L	
+r36_L07	8	S70		M	?	L	
+r36_L07	9	S34		M	?	L	
+r36_L07	10	S70		M	?	L	
+r36_L07	11	S47		M	?	L	
+r36_L07	12	S17		M	?	L	
+r36_L07	13	S80		M	?	L	
+r36_L07	14	S47		L	?	L	
+r36_L07	15	S17		M	?	L	
+r36_L07	16	S95		L	?	L	
+r36_L07	17	S42	S16	L	?	L	
+r36_L07	18	X_THETA2		M	?	L	
+r36_L07	19	S88		M	?	L	
+r36_L07	20	S22		L	?	L	
+r36_L07	21	S61		M	?	L	
+r36_L07	22	S52		M	?	L	
+r36_L07	23	S74		M	?	L	
+r36_L07	24	S35		M	?	L	
+r36_L07	25	S84		M	?	L	
+r36_L07	26	X_THETA2		M	?	L	
+r36_L07	27	S52		M	?	L	
+r36_L07	28	S30		M	?	L	
+r36_L07	29	S70		M	?	L	
+r36_L07	30	S23		M	?	L	
+r36_L07	31	S42	S16	L	?	L	
+r36_L07	32	X_THETA2		M	?	L	
+r36_L07	33	S88		M	?	L	
+r36_L07	34	S47		M	?	L	
+r36_L07	35	S52		M	?	L	
+r36_L07	36	S94		M	?	L	
+r36_L07	37	S75		H	?	L	
+r36_L07	38	S89		M	?	L	
+r36_L07	39	S17		M	?	L	
+r36_L07	40	S45		M	?	L	
+r36_L07	41	S30		L	?	L	
+r36_L07	42	S88		M	?	L	
+r36_L07	43	X_THETA2		L	?	L	line end
+r36_L08	1	S80		M	?	L	line start
+r36_L08	2	S31		L	?	L	
+r36_L08	3	S45		M	?	L	
+r36_L08	4	S23		M	?	L	
+r36_L08	5	S93		M	?	L	
+r36_L08	6	S52		M	?	L	
+r36_L08	7	X_THETA2		M	?	L	
+r36_L08	8	S80		M	?	L	
+r36_L08	9	S45		M	?	L	
+r36_L08	10	S25		M	?	L	
+r36_L08	11	S42	S16	L	?	L	
+r36_L08	12	S75		H	?	L	
+r36_L08	13	S26		M	?	L	
+r36_L08	14	S88		M	?	L	
+r36_L08	15	S88		M	?	L	
+r36_L08	16	S42	S16	L	?	L	
+r36_L08	17	S45		M	?	L	
+r36_L08	18	S75		H	?	L	
+r36_L08	19	S74		M	?	L	
+r36_L08	20	S35		M	?	L	
+r36_L08	21	S65		M	?	L	
+r36_L08	22	S40		L	?	L	
+r36_L08	23	S52		M	?	L	
+r36_L08	24	S57		M	?	L	
+r36_L08	25	X_THETA2		M	?	L	
+r36_L08	26	S35		M	?	L	
+r36_L08	27	S26		M	?	L	
+r36_L08	28	S53		M	?	L	
+r36_L08	29	S88		M	?	L	
+r36_L08	30	S23		M	?	L	
+r36_L08	31	S75		H	?	L	
+r36_L08	32	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L08	33	X_THETA2		M	?	L	
+r36_L08	34	S47		M	?	L	
+r36_L08	35	S74		M	?	L	
+r36_L08	36	S65		M	?	L	
+r36_L08	37	S34		M	?	L	
+r36_L08	38	S56		M	?	L	line end
+r36_L09	1	S45		M	?	L	line start
+r36_L09	2	S94		M	?	L	
+r36_L09	3	S47		M	?	L	
+r36_L09	4	S47		M	?	L	
+r36_L09	5	S70		M	?	L	
+r36_L09	6	S56		M	?	L	
+r36_L09	7	S17		M	?	L	
+r36_L09	8	S52		M	?	L	
+r36_L09	9	S88		M	?	L	
+r36_L09	10	S84		M	?	L	
+r36_L09	11	S70		M	?	L	
+r36_L09	12	S57		M	?	L	
+r36_L09	13	S35		M	?	L	
+r36_L09	14	X_THETA2		M	?	L	
+r36_L09	15	S94		M	?	L	
+r36_L09	16	S52		M	?	L	
+r36_L09	17	X_THETA2		M	?	L	
+r36_L09	18	S80		M	?	L	
+r36_L09	19	S94		M	?	L	
+r36_L09	20	S69		M	?	L	
+r36_L09	21	S62		M	?	L	
+r36_L09	22	X_THETA2		M	?	L	
+r36_L09	23	S26		M	?	L	
+r36_L09	24	S17		M	?	L	
+r36_L09	25	S37		L	?	L	
+r36_L09	26	S70		M	?	L	
+r36_L09	27	S30		M	?	L	
+r36_L09	28	S20		M	?	L	
+r36_L09	29	S32		L	?	L	
+r36_L09	30	S52		M	?	L	
+r36_L09	31	S45		M	?	L	
+r36_L09	32	S84		M	?	L	
+r36_L09	33	S37		L	?	L	
+r36_L09	34	S53		M	?	L	
+r36_L09	35	S75		H	?	L	
+r36_L09	36	S80		M	?	L	
+r36_L09	37	S40		M	?	L	
+r36_L09	38	S88		M	?	L	
+r36_L09	39	X_THETA2		M	?	L	
+r36_L09	40	S45		M	?	L	
+r36_L09	41	S22		L	?	L	
+r36_L09	42	S70		M	?	L	
+r36_L09	43	S26		M	?	L	
+r36_L09	44	S80		M	?	L	line end
+r36_L10	1	S94		M	?	L	line start
+r36_L10	2	S45		M	?	L	
+r36_L10	3	S42	S16	L	?	L	
+r36_L10	4	S80		M	?	L	
+r36_L10	5	S30		M	?	L	
+r36_L10	6	S53		M	?	L	
+r36_L10	7	S45		M	?	L	
+r36_L10	8	S71		L	?	L	
+r36_L10	9	S17		M	?	L	
+r36_L10	10	S70		M	?	L	
+r36_L10	11	S52		M	?	L	
+r36_L10	12	S88		M	?	L	
+r36_L10	13	X_THETA2		L	?	L	
+r36_L10	14	S80		M	?	L	
+r36_L10	15	S31		L	?	L	
+r36_L10	16	S73	S88	L	?	L	
+r36_L10	17	X_THETA2		M	?	L	
+r36_L10	18	S95		M	?	L	
+r36_L10	19	S45		M	?	L	
+r36_L10	20	S88		M	?	L	
+r36_L10	21	S75		H	?	L	
+r36_L10	22	S47		M	?	L	
+r36_L10	23	S17		M	?	L	
+r36_L10	24	S89		M	?	L	
+r36_L10	25	S17		L	?	L	
+r36_L10	26	S40		M	?	L	
+r36_L10	27	S84		M	?	L	
+r36_L10	28	S70		M	?	L	
+r36_L10	29	S37		L	?	L	
+r36_L10	30	S62		M	?	L	
+r36_L10	31	S89		M	?	L	
+r36_L10	32	S88		M	?	L	
+r36_L10	33	S42	S16	L	?	L	
+r36_L10	34	S52		M	?	L	
+r36_L10	35	S74		M	?	L	
+r36_L10	36	S17		M	?	L	
+r36_L10	37	S80		M	?	L	
+r36_L10	38	S74		L	?	L	
+r36_L10	39	S88		M	?	L	
+r36_L10	40	S75		H	?	L	
+r36_L10	41	S53		M	?	L	
+r36_L10	42	S94		M	?	L	
+r36_L10	43	S34		M	?	L	
+r36_L10	44	S84		M	?	L	line end
+r36_L11	1	S88		M	?	L	line start
+r36_L11	2	S75		H	?	L	
+r36_L11	3	S95	S31	L	?	L	
+r36_L11	4	S57		M	?	L	
+r36_L11	5	S88		M	?	L	
+r36_L11	6	S22		L	?	L	
+r36_L11	7	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L11	8	S75		H	?	L	
+r36_L11	9	S17		M	?	L	
+r36_L11	10	S70		M	?	L	
+r36_L11	11	S47		M	?	L	
+r36_L11	12	S34		M	?	L	
+r36_L11	13	S94		M	?	L	
+r36_L11	14	S17		M	?	L	
+r36_L11	15	S37		L	?	L	
+r36_L11	16	S70		M	?	L	
+r36_L11	17	S20		M	?	L	
+r36_L11	18	S32		L	?	L	
+r36_L11	19	S52		M	?	L	
+r36_L11	20	S75		H	?	L	
+r36_L11	21	S74		M	?	L	
+r36_L11	22	S53		M	?	L	
+r36_L11	23	S88		M	?	L	
+r36_L11	24	S93		M	?	L	
+r36_L11	25	S62		M	?	L	
+r36_L11	26	S40		M	?	L	
+r36_L11	27	S65		M	?	L	
+r36_L11	28	S61		M	?	L	
+r36_L11	29	S80		M	?	L	
+r36_L11	30	S47		M	?	L	
+r36_L11	31	S75		H	?	L	
+r36_L11	32	S30		M	?	L	
+r36_L11	33	S89		M	?	L	
+r36_L11	34	S88		M	?	L	
+r36_L11	35	S31		L	?	L	
+r36_L11	36	S34		M	?	L	
+r36_L11	37	X_THETA2		M	?	L	
+r36_L11	38	S17		M	?	L	
+r36_L11	39	S42	S16	L	?	L	
+r36_L11	40	S52		M	?	L	
+r36_L11	41	X_THETA2		M	?	L	
+r36_L11	42	S88		M	?	L	
+r36_L11	43	S70		L	?	L	line end
+r36_L12	1	S84		M	?	L	line start
+r36_L12	2	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L12	3	S70		M	?	L	
+r36_L12	4	S56		M	?	L	
+r36_L12	5	S17		M	?	L	
+r36_L12	6	S74		M	?	L	
+r36_L12	7	S45		M	?	L	
+r36_L12	8	S23		M	?	L	
+r36_L12	9	S94		M	?	L	
+r36_L12	10	S65		M	?	L	
+r36_L12	11	S88		M	?	L	
+r36_L12	12	S70		M	?	L	
+r36_L12	13	S23		M	?	L	
+r36_L12	14	S88		M	?	L	
+r36_L12	15	S47		M	?	L	
+r36_L12	16	S84		M	?	L	
+r36_L12	17	S93		M	?	L	
+r36_L12	18	S30		M	?	L	
+r36_L12	19	S88		M	?	L	
+r36_L12	20	S57		M	?	L	
+r36_L12	21	S75		H	?	L	
+r36_L12	22	S56		M	?	L	
+r36_L12	23	S47		M	?	L	
+r36_L12	24	S75		H	?	L	
+r36_L12	25	S94		M	?	L	
+r36_L12	26	S52		M	?	L	
+r36_L12	27	X_THETA2		M	?	L	
+r36_L12	28	S75		H	?	L	
+r36_L12	29	S26		M	?	L	
+r36_L12	30	S52		M	?	L	
+r36_L12	31	S84		M	?	L	
+r36_L12	32	S17		M	?	L	
+r36_L12	33	S75		H	?	L	
+r36_L12	34	S42	S16	L	?	L	
+r36_L12	35	S62		M	?	L	
+r36_L12	36	S37		L	?	L	
+r36_L12	37	S57		L	?	L	
+r36_L12	38	S34		M	?	L	
+r36_L12	39	S84		M	?	L	
+r36_L12	40	S40		L	?	L	
+r36_L12	41	S75		H	?	L	line end
+r36_L13	1	S94		M	?	L	line start
+r36_L13	2	S93		M	?	L	
+r36_L13	3	S37		L	?	L	
+r36_L13	4	S65		M	?	L	
+r36_L13	5	S32		L	?	L	
+r36_L13	6	S52		M	?	L	
+r36_L13	7	S45		M	?	L	
+r36_L13	8	S56		M	?	L	
+r36_L13	9	S30		M	?	L	
+r36_L13	10	S52		M	?	L	
+r36_L13	11	S20		M	?	L	
+r36_L13	12	S42	S16	L	?	L	
+r36_L13	13	S45		M	?	L	
+r36_L13	14	S84		M	?	L	
+r36_L13	15	S37		L	?	L	
+r36_L13	16	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position)
+r36_L13	17	S75		H	?	L	
+r36_L13	18	S57		M	?	L	
+r36_L13	19	S65		M	?	L	
+r36_L13	20	X_THETA2		M	?	L	
+r36_L13	21	S88		M	?	L	
+r36_L13	22	S17		M	?	L	
+r36_L13	23	S22		L	?	L	
+r36_L13	24	S70		M	?	L	
+r36_L13	25	S40		M	?	L	
+r36_L13	26	S45		M	?	L	
+r36_L13	27	X_THETA2		M	?	L	
+r36_L13	28	S34		M	?	L	
+r36_L13	29	S88		M	?	L	
+r36_L13	30	S65		M	?	L	
+r36_L13	31	S31		L	?	L	
+r36_L13	32	S45		M	?	L	
+r36_L13	33	S40		M	?	L	
+r36_L13	34	S80		M	?	L	
+r36_L13	35	S75		H	?	L	
+r36_L13	36	S26		M	?	L	
+r36_L13	37	S80		M	?	L	
+r36_L13	38	S42	S16	L	?	L	
+r36_L13	39	S70		M	?	L	
+r36_L13	40	S74		M	?	L	line end
+r36_L14	1	S53		M	?	L	line start
+r36_L14	2	X_THETA2		M	?	L	
+r36_L14	3	S97		M	?	L	
+r36_L14	4	S95		M	?	L	
+r36_L14	5	S56		M	?	L	
+r36_L14	6	S35		M	?	L	
+r36_L14	7	S89		M	?	L	
+r36_L14	8	S80		M	?	L	
+r36_L14	9	S45		M	?	L	
+r36_L14	10	S74		M	?	L	
+r36_L14	11	S75		H	?	L	
+r36_L14	12	S26		M	?	L	
+r36_L14	13	S52		M	?	L	
+r36_L14	14	S20		M	?	L	
+r36_L14	15	S47		M	?	L	
+r36_L14	16	S52		M	?	L	
+r36_L14	17	S74		M	?	L	
+r36_L14	18	S88		M	?	L	
+r36_L14	19	S45		M	?	L	
+r36_L14	20	S40		M	?	L	
+r36_L14	21	S52		M	?	L	
+r36_L14	22	S47	S58	L	?	L	
+r36_L14	23	S80		M	?	L	
+r36_L14	24	S30		M	?	L	
+r36_L14	25	S62		M	?	L	
+r36_L14	26	S23		M	?	L	
+r36_L14	27	S26		M	?	L	
+r36_L14	28	S75		H	?	L	
+r36_L14	29	S95	S13	L	?	L	
+r36_L14	30	S42	S16	L	?	L	
+r36_L14	31	S17		M	?	L	
+r36_L14	32	S47		M	?	L	
+r36_L14	33	S45		M	?	L	
+r36_L14	34	S37		L	?	L	
+r36_L14	35	S75		H	?	L	
+r36_L14	36	S74		M	?	L	
+r36_L14	37	S80		M	?	L	
+r36_L14	38	X_NEW		L	?	L	shape not on sheet (P-like, 6 with crossing strokes, or parallelogram; see position); line end; below it prose 'gula-'
