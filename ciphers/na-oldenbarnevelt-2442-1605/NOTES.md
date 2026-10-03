@@ -830,3 +830,14 @@ pre-verifier steps pass; a ROOM.md `flag VERIFIER WANTED` line was posted for bl
 **Next steps, cheapest first (after A2-OLD2):** verifier session on B/C1 (rule 10, separate session); (a'') second full
 blind pass over B/C1 crops, ~$2; (d) era-matched early-17th-century Spanish judge corpus, ~$2; (a') crop-and-read pass on
 blocks A and C2, ~$4.
+
+## 10. VERIFY-OLD, 3 Oct 2026: verifier on blocks B/C1 -- N3, key ours; status stays open
+
+Separate verifier session (account 2, LANE-A2PUSH); full log, safe and unsafe sentences in `AUDIT.md`. Class **N3**
+for blocks B and C1 (no prior plaintext or decipherment located), key source **ours**; not N4 because the Spanish side
+(sender identity, a surviving original or other copy; PARES unreachable) was not covered and Semantic Scholar partly
+answered 429. Added beyond the solvers' search: the full EAD of 3.01.14 (2442 carries "Merendeels in cijferschrift" and
+no "gedecodeerd"/"sleutel" note, unlike other entries) and the Resolutiën der Staten-Generaal 1604-1606 (no hit).
+Precision note (postmortem): grade S in `reading_meta.txt` rests on the VX-CT03 control for the **key**; the B/C1
+per-token S grades are one reader's image confidence, so outward wording says "candidate reading" until (a'') and (d)
+are run. JSTOR rows (4, families i and ii) and `SECOND-OPINIONS-QUEUE.tsv` row SO-OLDEN-2442-BC1 queued.
