@@ -1,5 +1,5 @@
 open
-Vochezer, Geschichte des fürstlichen Hauses Waldburg in Schwaben vol. 3 (archive.org djvu full text, 67,235 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Walburga, Pröpstin, Essen, Christoph Karl: no cipher term, neither correspondent, letters absent. GAPS116 (3 Oct 2026): Regesten/regional-journal full-text search (IA fts, Google Books, Hohenzollern Mitteilungen 1887-91 djvu) found no mention of Nr. 702, its cipher or a decipherment; Friedberg-Scheer leads for the recipient logged.
+Vochezer, Geschichte des fürstlichen Hauses Waldburg in Schwaben vol. 3 (archive.org djvu full text, 67,235 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Walburga, Pröpstin, Essen, Christoph Karl: no cipher term, neither correspondent, letters absent. GAPS116 (3 Oct 2026): Regesten/regional-journal full-text search (IA fts, Google Books, Hohenzollern Mitteilungen 1887-91 djvu) found no mention of Nr. 702, its cipher or a decipherment; Friedberg-Scheer leads for the recipient logged. GAPS121 (3 Oct 2026): LABW record of Nr. 702 (plink/?f=6-24180) reads Bemerkung "mit Auflösung der Geheimschrift", 8 Schr., no digitisation link; recipient = brother Christoph Karl (1613-1672), son of Wilhelm Heinrich (Dep. 30/1 T 1 Nr. 882); copy is the blocker.
 
 # Maria Walburga Eusebia von Waldburg to Christoph Karl von Waldburg, partly ciphered — StA Sigmaringen
 
@@ -178,3 +178,69 @@ snippet-only from the cloud; a LOCAL-QUEUE row (owner's browser, Google Books sn
 CORE/OpenAlex check for an open-access Küppers-Braun text, ~USD 1. Then (3), the LABW viewer re-test for Nr. 702; the
 copy (REQUEST.md) is still what any reading needs. Also worth a ~USD 1 check: the Trippen-Festgabe essay built on
 Dep. 30/1 T 3 (GB 3SP8fxb7CfoC, PARTIAL) for a citation of Nr. 702.
+
+## GAPS121-stas-waldburg-1653 (3 Oct 2026, account-4): step 2, sibling group and LABW finding-aid re-check
+
+Clock read 13:17 UTC. Intake gate exit 0 (status `open`, edition citation found). Scripts only; no vision, no subagents.
+
+**(b) LABW online finding aid, done first because it answered (a) too.** Route: OFS21 simple search
+(`www2.landesarchiv-bw.de/ofs21/suche/ergebnis1.php`, POST, QUEUE.md "LABW, OFS21" recipe), then the unit's print view
+(`olf/druckansicht.php?id_titlaufn=9008`) and the Findbuch structure view (`olf/struktur.php?bestand=2242`). Positive
+control for the search: `Walburga Eusebia` -> 4 hits, Nr. 702 among them. Positive control for the digitisation flag: the
+same search engine's result list shows "Digitalisate einsehen" on HStA Stuttgart A 2 Bü 10 and Bü 11 (digitised), so its
+absence on a record is a real signal for this view.
+
+Nr. 702's own record, quoted (permalink as the record gives it: `http://www.landesarchiv-bw.de/plink/?f=6-24180`):
+Titel "Korrespondenz der Truchsessin Maria Walburga Eusebia von Waldburg, Pröpstin zu Essen, an ihren Bruder Truchseß
+Christoph Karl (?) z.T. in Geheimschrift"; Laufzeit 1653-1654; **Umfang "8 Schr."**; **Bemerkung "mit Auflösung der
+Geheimschrift"**; Vorsignaturen "Rep. I Erg. Pk. 20; K. XIII, L. 1 Nr. 1"; Provenienz Friedberg-Scheer; Stichworte
+"Waldburg-Trauchburg, Christoph Karl von; Reichserbtruchsess, Graf, 1613-1672" and "Waldburg-Trauchburg, Maria Walburga
+Eusebia von; Reicherbtruchsessin, Gräfin, Pröpstin zu Essen, 1630-1668". Section "1.5. Interne Beziehungen der
+Mitglieder des truchsessischen Hauses untereinander: Korrespondenz" of Dep. 30/1 T 3 (Friedberg-Scheer: Akten).
+**Digitisation flag: none** -- no "Digitalisate einsehen" link in the result list, the print view or the structure view;
+the record offers only the order basket. Copy still needed (REQUEST.md).
+
+So the unit itself is catalogued as carrying a decipherment ("Auflösung") of its cipher passages -- a period clear
+text or key beside the ciphertext, which would make this a recovery (grade H/C from the unit's own decipherment), not a
+cryptanalysis. Whether the "Auflösung" is contemporary or a later archivist's is not stated; the copy decides.
+
+**Sibling units (structure view, section 1.5, read in full):** none other carries Geheimschrift/Chiffre/Schlüssel wording.
+Nearest neighbours: Nr. 721 "Korrespondenz der Truchsessen Leopold Friedrich und Wilhelm Wunibald von Waldburg, Domherrn
+zu Köln und Straßburg und Wilhelm Eusebius aus Rom, später Jesuit, mit ihrem Bruder Truchseß Christoph Karl von Waldburg
+v.a. wegen Deputatsgeldern", 1 Bü, 1652-1653 (same recipient, same years, no cipher wording; a candidate plain-text
+neighbour, possibly same hands/couriers). Nr. 29 (Testament und Verlassenschaft der Maria Walburga Eusebia, gest. 1668,
+1667-1669). Fonds-wide cipher searches: `Geheimschrift Friedberg-Scheer` 1 hit (Nr. 702), `Geheimschrift Waldburg` 3
+(Nr. 702; HStAS A 2 Bü 10/11, 1534, unrelated), `Auflösung Geheimschrift` 3 (Nr. 702; HStAS M 77/1, a 19th-20th c.
+military fonds), `Chiffre Truchseß` 3 (1525-1566, unrelated Bauernkrieg/Bamberg units), `chiffriert Truchseß` 0.
+
+**Family settled from the archive's own record (grade H for the identification, from the catalogue):** Dep. 30/1 T 1
+Nr. 882 (1652 Januar 13): Reichserbtruchseß Wilhelm Heinrich hands the government to his two eldest sons Christoph Karl
+and Otto; the three other brothers Leopold Friedrich, Wilhelm Wunibald and Wilhelm Heinrich Eusebius; "Den beiden
+Schwestern Maria Walburga Eusebia und Maria Anna Eusebia ...". So the recipient is her brother Christoph Karl (1613-1672),
+son of Wilhelm Heinrich; the catalogue's "(?)" is supported by its own index and by Nr. 882. The 24 Sept "Waldburg-
+Trauchburg" styling is the archive's index heading; "Friedberg-Scheer" is the same man's county.
+
+**(a) Württembergische Archivinventare 1947** (GB bzhmAAAAMAAJ, 974 pp., NO_PAGES; no IA copy; Open Library 0 records, so
+no OCLC for the HathiTrust EF route). Snippets only, via keyed Books API (`&country=US`): the GAPS116 group is letters
+of the Trauchburg-line Gräfin **Maria Veronika Preysing** to her siblings ("Walburga Eusebia von Königsegg geb. Gräfin zu
+Trauchburg, Christoph Carl Graf zu Friedberg-Scheer, Maria Franziska von Wolkenstein geb. Gräfin zu Trauchburg von ihrer
+Schwester Maria Veronika Gräfin Preysing, Maria Monika von Königsegg geb. Gräfin zu Friedberg von dem Domherrn Johann
+...", then "d) seinem Vetter, dem Domherrn Friedrich Wilhelm Wunibald Grafen zu Friedberg-Scheer, e) von Maria Veronika
+Khuen, Johann Ludwig Grafen zu Sulz ..."), and another entry "Nr. 1010" region names "Hans Ernst und Christoph Carl zu
+Friedberg 1666/73". This is a *different* sibling set (the Königsegg-married Walburga Eusebia, not the Essen Pröpstin),
+the name collision GAPS116 flagged; it is not Nr. 702's sibling group. In-volume probes for cipher wording
+(`intitle:Archivinventare` + Geheimschrift / chiffriert / Chiffre Friedberg / Ziffern Truchsess / "Walburga Eusebia" /
+Pröpstin Essen) all 0. Snippet-limited: not found, not excluded.
+
+**(c) Küppers-Braun 1997** (GB X-f5rjgmscwC, snippet): "... Wilhelm Heinrich Truchseß von Waldburg-Trauchburg und Anna
+Maria Gräfin von Waldburg-Wolfegg, Schwester: Maria Walburga Eusebia (031), geb. 21. Juli 1633, gest. Apr. 1656 ..." --
+an entry (apparently the sister Maria Anna Eusebia's) naming the same parents; to which sister the dates belong is not
+legible from the snippet (grade M). Agrees with Nr. 882.
+
+**Requests per host:** www2.landesarchiv-bw.de 13 (2 route probes, 7 searches, 1 print view, 1 structure view, plus the 2
+first probes 302/404); www.googleapis.com (Books) 22 (one 503, not retried); openlibrary.org 1. No 429 or challenge.
+
+**Next step:** the copy (REQUEST.md) -- now with the reason that the unit is catalogued "mit Auflösung der Geheimschrift",
+8 letters, undigitised, orderable through LABW's order basket (permalink above). One while-waiting action that depends on
+nobody: none cheap remains online; the copy is the blocker. Status unchanged (`open`): a catalogued decipherment inside
+the unit is not a printed decipherment, so this is not found-solved; any reading from it would be key source `period`.

@@ -1,7 +1,7 @@
 # Copy request — StA Sigmaringen Dep. 30/1 T 3 Nr. 702
 
 **Status:** waiting on you (a person needs to place/confirm this; not an archive-request draft an agent can
-send) — pending a re-check of LABW's viewer for a possible copy-free route first (see NOTES.md).
+send) — LABW re-checked 3 Oct 2026 (GAPS121, NOTES.md): no digitisation link, order basket only (permalink http://www.landesarchiv-bw.de/plink/?f=6-24180); the record notes "mit Auflösung der Geheimschrift", 8 Schr., so the copy should include every leaf of the unit, the decipherment sheet(s) included.
 
 **What to request:** page copies (photographs or scans) of **Staatsarchiv Sigmaringen** (Landesarchiv
 Baden-Württemberg), **Dep. 30/1 T 3 Nr. 702** — the correspondence of Truchsessin Maria Walburga Eusebia von
