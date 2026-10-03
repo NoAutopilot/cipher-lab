@@ -381,18 +381,50 @@ Bourdeau's file, then a reconciliation by this worker from the crops. Files: `ga
 - Vision calls: 2 blind passes + 1 reconciliation (the worker's own views of three composites). Requests: github.com 1
   sparse clone (Bourdeau's files were not on disk); no archive host contacted.
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26 and GAPS34, 3 Oct 2026)
+## GAPS41-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): inv. 281 scans 1-74 viewed for dispatches No 1-3 and 5
+
+Step: the Verdict's cheapest step. Locate only; nothing transcribed or decoded. Status unchanged.
+- The 450 px views of scans 1-74 fetched by GAPS34 were not on disk (not committed; that container is gone), so they were
+  fetched again once: 74 IIIF views at `full/450,/0`, 1.6 s apart, all HTTP 200 image/jpeg. Viewed as three labelled
+  contact sheets (1-25, 26-50, 51-74).
+- **No figure page, decipherment slip or key sheet in scans 1-74.** Every leaf is clear French or Dutch prose, blank, or
+  a cover: 1 is the dossier cover (Van Spaen, commissaris ...), 52 is a printed German "Publicandum" of the
+  Grossherzogthum Berg, 65-66 a long Dutch text, 46 and 48 short covering notes. No leaf shows the spaced rows of 2-4
+  digit groups that scans 81, 82 and 85 show at the same size.
+- One header-crop sheet (9 requests, IIIF `pct:48,0,52,22/1000,`, right-hand page tops of 58, 60, 64, 67, 68, 69, 71,
+  73, 74). Header readings (grade M, for locating only):
+  - **67: "No 2. Dusseldorf, ce 5 Janvier 1808", docket "44 Ontv. 7 January 1808", "Monsieur", French, in clear.**
+    So No 2 of the numbered Dusseldorf series exists and is not in figures.
+  - 73/74 (the same leaf, two captures): "104 Ontv. 14 January 1808" / "Dusseldorf ce 12 Janvier 1808" / "Le soussigné
+    Commissaire du Roi de Hollande pour la mise en possession des Territoires de Huessen, Malburg et Zevenaar ..."
+    -- a clear French note of the same date as No 4 and docketed one number before it (No 4 is "105 Ontv. 14 January
+    1808"). The nearest crib candidate seen so far.
+  - 64: "13. Ontv. 7 January 1808", "Le premier Commissaire de Sa Majesté le Roi de Hollande pour la mise en possession
+    des Districts de Huessen et Zevenaar à ..."; 71: "65 Ontv. 10 January 1808", same heading; 68: "(Copie)", "44 bis
+    Ontv. 7 Jan. 1808", "Sa Majesté le Roi de Hollande a donné ordre au Soussigné de se rendre à Dusseldorf ...";
+    69: continuation of 68. All clear.
+  - 58: "No 8 Ontv. 16(?) Dec 1807"; 60: "No 2 Ontv. 28 Dec 1807" -- clear letters received in December 1807; whether
+    these numbers belong to the same Dusseldorf series (60 would then be a second "No 2") or to another writer's was
+    not settled at this size.
+- **Not found in scans 1-74:** No 1, No 3 and No 5 of the Dusseldorf series. Only the nine headers above were read at a
+  legible size; the other leaves' headers are illegible at 450 px, so a numbered letter elsewhere in 1-74 is not
+  excluded, but none of them is in figures.
+- Total inv. 281 viewed now 221 of 360 scans (147 before + 74).
+- Requests: service.archief.nl 83 (74 at 450 px + 9 header regions), 1.6 s apart, no 4xx/5xx; no other host. Vision 4
+  (three contact sheets, one header sheet). Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read as plaintext of the target).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36 and GAPS41, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
-- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 147 of 360 scans
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 221 of 360 scans (GAPS41: none in 1-74)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
-- numbered sibling series - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36: 283/303 groups agree, 20 corrections from the image incl. one omitted group, no gloss on 81/82/85; image reading in gaps36/reconciled.tsv); dispatches No 1-3 and 5 (siblings, possibly in the same figures) and scans 1-74 (fetched, not viewed) are unread; next: view scans 1-74 at 450 px for No 1-3/5, ~$6
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36: 283/303 groups agree, 20 corrections, image reading in gaps36/reconciled.tsv); scans 1-74 viewed 3 Oct 2026 (GAPS41): no figure page there, No 2 (Dusseldorf 5 Jan 1808, scan 67) is in clear, No 1/3/5 not found, and a clear French note of 12 Jan 1808 docketed "104 Ontv. 14 January" (scans 73/74, one number before No 4) is the nearest crib candidate; next: fetch scans 73/74 and 67 at native size, cut crops and read the 12 Jan note and No 2 for the news No 4 should carry, ~$5
 
 ## Escalation (3 Oct 2026)
-- [ ] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; locate No 1-3 and 5 in inv. 281 (scans 1-74 unviewed) and check which are in figures
-- [ ] clear-pages: leaves 75-99 next to the target are clear January 1808 letters (83, 87, 89-94); read them for the same news as a crib, after the identity check
+- [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74
+- [ ] clear-pages: the 12 Jan 1808 note docketed 104 (scans 73/74, same day as No 4), No 2 of 5 Jan (scan 67) and the clear January letters 83, 87, 89-94 next to the target; read them for the same news as a crib (identity check done, GAPS36)
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
 - [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: view inv. 281 scans 1-74 at 450 px for dispatches No 1-3 and 5, ~$6, then read the clear January 1808 letters (83, 87, 89-94) for a crib
+Verdict: keep going: 1 internal gap; cheapest next: fetch inv. 281 scans 73/74 (12 Jan 1808 note, docket 104) and 67 (No 2, 5 Jan) at native size and read them for a crib to No 4, ~$5
