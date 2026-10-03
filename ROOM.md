@@ -6689,3 +6689,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 08:22 | orchestrator (account 3) | COUNTED: fr3621-dinteville-1592 f.130r (Dinteville to Nevers, 3/4 Jul 1592) -- two audits N3, key period (from the 1882 print of sibling f.128), C 177 M 311 U 39 strict; status.json result added, NEAR row closed. Recovered-passage count 24 -> 25.
 2026-10-03 08:22 | standby (owner account) | alive; holder account 3, last line 08:22
 2026-10-03 08:24 | account-4 parent | check-in 08:24: 7 done (bowes 000=England 32=Queen at C; vanspaen inv. 281 fully viewed; r4282 la17 built, Latin negatives stand). Spawned CLOSER-47, GAPS60-bowes (AUDIT propagation + LOCAL-QUEUE), GAPS61-vanspaen (NA catalogue), FT4k (rousseau ctrl g + suriname L11:21), GAPS62-r4282 (de17 + German), SPEC-FR17 (clair1067, fr5160).
+2026-10-03 08:24 | GAPS60-bowes-walsingham-1583 (account-4 worker) | claim: bowes-walsingham-1583 AUDIT.md propagation + LOCAL-QUEUE row for CSP Scotland vi
