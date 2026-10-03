@@ -67,7 +67,7 @@ correspondents.
 **Copy-order.** See REQUEST.md.
 
 **Recommended next steps (not run this pass):** (1) a full page-by-page read of CSP Domestic William and Mary
-vol. 1 (rather than a name-string grep alone) to rule out an OCR-garbled entry; [Done, GAPS111, 3 Oct 2026: the entry is found at p. 387 and the OCR-fuzzy sweep adds nothing; see the GAPS111 section below.] (2) identify the specific
+vol. 1 (rather than a name-string grep alone) to rule out an OCR-garbled entry; [Done, GAPS111, 3 Oct 2026: the entry is found at p. 387 and the OCR-fuzzy sweep adds nothing; see the GAPS111 section below.] (2) [Done as probable identifications, GAPS114, 3 Oct 2026; see the GAPS114 section.] identify the specific
 "d'Ehrenstein," "de Bernsdorff," and "de Guldenstolp" via Scandinavian/Hanoverian prosopography (SSNE database,
 per LESSONS.md precedent) before any solve attempt, since a firm identification would open a proper printed-
 correspondence search for any of the three; (3) check whether SP 8's neighbouring volumes/pieces (SP 8/1-5,
@@ -139,3 +139,44 @@ Requests: archive.org 3 (metadata x1, djvu.txt x2, >= 1.6 s apart). No vision, n
 
 Next cheapest step: recommended step (2), identification of the three parties (SSNE / Bernstorff-Celle
 prosopography), web-only, about USD 2; the letter itself stays copy-order (REQUEST.md, `digitised: false`).
+
+## GAPS114 (3 Oct 2026, account-4): party identification, web-only
+
+Step run: "Recommended next steps" (2), web and API only, no vision, no subagents. Identifications below are
+probable, not confirmed; nothing here is a reading or a novelty verdict (rule 10).
+
+| Party (TNA / CSP spelling) | Best candidate | Evidence | Confidence |
+|---|---|---|---|
+| Mons. de Guldenstolp | Nils Gyldenstolpe (1642-1709), Swedish envoy at The Hague 1679-1687; in 1689 lantmarskalk of the Riksdag and royal councillor (riksråd), count 1690 | sv/en Wikipedia, SBL art. 13339, NE (WebSearch 3 Oct 2026); the only Gyldenstolpe of diplomatic weight in 1689 | probable |
+| Major d'Ehrenstein | an Ehrenstéen (Swedish noble family nr 33), Gyldenstolpe's brothers-in-law: Nils Gyldenstolpe married Margareta Ehrenstéen (b. 1659) at The Hague, 22 Oct 1676. Her brother **Lars Filip Ehrenstéen (1662-1700)**: "Kapten vid blå regementet i Lüneburg 1688 ... Major 1694 ... Major vid garnisonsregementet i Bremen 1697" (Adelsvapen-Wiki, Ehrenstéen nr 33, fetched 3 Oct 2026). Brother Edvard (1664-1711) was in the Swedish life guards (lieutenant 1688), and Carolus Ehrenstein (b. Thorn 1656, son of riksråd Edvard Ehrenstéen) travelled with Gyldenstolpe as his embassy secretary at The Hague (Thornische Chronica 1727, Google Books snippet). | possible-to-probable: Lars Filip fits the Lüneburg (Celle) service and the Gyldenstolpe link, but the genealogy gives him "kapten" in 1688 and "major" only from 1694, so either the TNA date "[1689]" is a cataloguer's bracket or the rank is a courtesy/foreign-service rank. Not confirmed. |
+| Mons. de Bernsdorff | Andreas Gottlieb von Bernstorff (1649-1726), leading minister of Duke Georg Wilhelm of Brunswick-Lüneburg at Celle (Hanover prime minister from 1709) | ADB / de-Wikipedia / Deutsche Biographie (WebSearch 3 Oct 2026); the Celle "blue regiment" link above | probable |
+
+Context consistent with a cipher letter between these parties in 1689 (not evidence for its content): Celle troops
+served William III in 1688-89, and from September 1689 Georg Wilhelm of Celle occupied Lauenburg against Denmark,
+a dispute in which Sweden's stance (Gyldenstolpe sat in the Council) mattered to Celle. The letter's presence in
+King William's Chest suggests it was intercepted, forwarded to William, or handed over by Bernstorff -- not settled.
+
+Where a sibling letter, key or decipherment would sit (named, not searched this pass):
+1. **Bernstorff side:** Niedersächsisches Landesarchiv, Abt. Hannover -- Bernstorff's Nachlass (Wikidata Q442108
+   records an NLA Nachlass) and the Celle ministry series (Celle Br. / Calenberg Br. foreign-affairs files for 1689,
+   Lauenburg succession). Searchable in Arcinsys Niedersachsen (www.arcinsys.niedersachsen.de) for "Ehrenstein" /
+   "Ehrensteen" / "Gyldenstolpe" 1689.
+2. **Ehrenstéen / Gyldenstolpe side:** Riksarkivet Stockholm -- Gyldenstolpe family archive (EMLO catalogue
+   "The Correspondence of the Gyldenstolpe family", emlo-portal.bodleian.ox.ac.uk, catalogue=gyldenstolpe-family)
+   and the Ehrenstéen papers; NAD search for "Ehrenstéen" brev 1689. The EMLO Solr endpoint answers plain GET
+   (CLAUDE.md host table) and is the cheapest next probe.
+3. **William's side:** the rest of SP 8/6 (Discovery queried 3 Oct 2026 for Bernsdorff, Guldenstolp, Lunenburg,
+   Zell: only SP 8/6/65 itself and an unrelated Schomberg letter, SP 8/6/40) -- no sibling in the piece under those
+   terms.
+
+Positive control for the Google Books route: the query `"Ehrenstein" "Bernsdorff"` returns the CSP Dom W&M vol. 1
+p. 387 entry itself (18 hits, all editions of that calendar); `"Ehrenstein" Bernstorff Gyldenstolpe` returned 0, and
+no printed source tying the three names to a 1689 letter, key or decipherment was found. Search result, not a
+novelty verdict (rule 10).
+
+Requests: WebSearch 6; adelsvapen.com 2 (one 404); www.googleapis.com/books 6; discovery.nationalarchives.gov.uk 4
+(via tools/discovery_items.py, one per term). No vision, no subagents.
+
+Next cheapest step: EMLO Solr query (gyldenstolpe-family catalogue, plain GET) for Ehrenstéen / Bernstorff letters
+of 1688-1690, about USD 1; then Arcinsys Niedersachsen search for the Bernstorff/Celle side (browser tool, about
+USD 2). The letter itself stays copy-order (REQUEST.md, `digitised: false`).
