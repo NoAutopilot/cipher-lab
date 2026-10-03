@@ -1,4 +1,5 @@
-open
+found-solved
+Read elsewhere: Descifrado, *Cabinet Noir* v1.0 (29 Sept 2026; github.com/el-descifrador/cabinet-noir, `montholon-1589/fr4715-n58-f81/lecture.md`, result no.5; Zenodo DOI 10.5281/zenodo.23039566, CC BY 4.0) prints a reading of f.81r L18-L40 with Tomokiyo's Vieuville-Nevers key. Its verifier rates L18-28 at about 85-90 % and L29-40 at about 90-95 %. Tomokiyo's bnf4715.htm no.58 prints L01-L17. This worker opened and read both on 3 Oct 2026, and searched Gomberville 1665 (Google Books ztkvMWA_yO0C and H2eV4wAmIr0C) for Montholon: no 1589 letter.
 
 INTAKE-4715 unit B, 27 Sept 2026: solver-ready intake only (Layout, no reading, no decoding, no class), on the
 `ciphers/nevers-birago-fr3251-1572` pattern. Built from KEY-ADJACENT.tsv row 19 and
@@ -1040,3 +1041,76 @@ recrop attempts, call C and call D, at the current capture).
 - Merge call C's digit/letter reads (met G0/G1) with call D's dot flags (met G2) on the same four lines -- both already on disk, each cleared a different gate. M.
 - Eye-check call D's 47 abstained `?` positions against the following digit (36 of 47 sit before a 5 or 3) to see if positional context resolves the 8-vs-0 ambiguity from the crops already on disk. S.
 - Price and stage MONT-READ-ALL's per-line Opus cost (about 125k tokens/4 lines from call D) now, so the full-letter run is budgeted correctly the moment ASKS 79's capture lands. S.
+
+## Web and blog check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Montholon Tours 8 novembre 1589 lettre chiffre Nevers` returned BnF finding aids for fr.4715 (cc577658), fr.4716,
+   fr.3974-3995, fr.3413, fr.3616, fr.3624, fr.3633 and fr.3634, plus the Wikipedia page for Nevers.
+2. `"fr.4715" OR "français 4715" Montholon chiffre déchiffré` returned the fr.4715 record (cd0e531) and
+   **github.com/el-descifrador/cabinet-noir**, with the snippet "Montholon to Nevers (BnF fr 4715 n°48 f.71) ... 75 %".
+3. `Montholon cipher 1589 Vieuville Nevers decipherment Tomokiyo` returned cabinet-noir again. It also returned the
+   aryasn2026/cyphersolver and setsunaatto/cyphersolver forks (not opened; the cyphersolver checks are below),
+   cyphersolver PRs 5, 7 and 9, the aaymeloglu repository, and Bourdeau's site index.
+4. For the BnF record, see the folder's own line "Chiffre non déchiffré. Tours, 8 nov. 1589" (cd0e811). The same line
+   is in Bourdeau's snapshot `research/gallica_sweep/notice_4715.txt` l.78.
+Blogs:
+- `Montholon cipher site:scienceblogs.de OR site:ciphermysteries.com OR site:cryptiana.blogspot.com` gave no Montholon
+  post. The Cipherbrain hits (pigeon cipher, Henry II device) and the Cipher Mysteries hits (15th-c. cryptography,
+  van Heeck, the homophonic challenge) are unrelated.
+- Cryptiana blog 2018 archive (cryptiana.blogspot.com/2018), opened: the post "Unsolved ciphers in the French archives
+  (ca.1586-1593)" points to bnf4715.htm. No comment text there names Montholon.
+
+**Hit opened and read: el-descifrador/cabinet-noir.** Shallow clone, HEAD 47b6db9 (v1.2.1, 2 Oct 2026). Its README
+history dates result no.5 to v1.0 of 29 Sept 2026, and the DOI is in CITATION.cff.
+- `montholon-1589/fr4715-n58-f81/` holds `chiffre.txt` (a ciphertext transcription of L18-L40, 1,477 groups) and
+  `lecture.md` (a continuous French reading of L17-L40, verdict "CONFIRMÉ AVEC RÉSERVES").
+- That reading uses Tomokiyo's table plus about 1-3 % added word codes (`cle/montholon1589_complements.tsv`). Its
+  verifier made a blind re-read of about 330 groups and agreed at about 95 %; 97.6 % of groups read directly from the
+  published table.
+- Unresolved in their reading: name codes ~25, ~50, ~85 and ~19, plus '87 and '74 (hypotheses). The L40 clear-text
+  line reads "J'ay dit au porteur que [vous] luy feriez bailler ung escu."
+- The same reading names the recipient as Louis de Gonzague, duc de Nevers, and the signer as François (II) de
+  Montholon, former Keeper of the Seals.
+- Their verifier noted "course avec cipher-lab" (a race with this repository) and that the *Mémoires de Nevers* were
+  not checked. This worker searched Gomberville (line 2): Montholon does not appear in the Première partie, and the
+  seconde partie hits are Guillaume de Montholon's boundary commission (pp.790-816), not this letter.
+- Licence: CC BY 4.0 (texts) and MIT (code). Credit: Descifrado, Cabinet Noir.
+
+**Consequence.** Tomokiyo's opening (L01-L17) and Cabinet Noir's continuation (L18-L40) together give a public
+decipherment of the whole letter, at the rates and with the unresolved name codes stated above. Per check-solved.md,
+a decipherment in a public place counts like one in print, so the status is `found-solved`. Any later reading of ours
+would class N0 (rule 10, for a verifier to assign). The folder's MONT-* work stays as method and controls; it never
+claimed a validated reading. This worker did not compare the Cabinet Noir reading against our `reading.txt` or
+transcription (no decoding in this brief).
+For the parent: Cabinet Noir also reads fr.4715 n°27 (f.50, L04-L22), n°35 (f.58), n°37 (f.60), n°47 (f.70) and n°48
+(f.71, about 75 %, which they call partial), and fr.3414 p.78 (ff.126-127). It identifies BnF fr.3995 f.133r (Nevers
+no.71) as the period key. Several of these overlap `ciphers/fr4715-vieuville-pool` (account-4's, not touched here)
+and POOL.md's list of open fr.4715 letters, so they need the same check-solved pass before any further money is spent.
+
+## Premise check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+(a) **Decipherments the folder mentions: found, partial.** Tomokiyo's printed opening (`known_plaintext.txt`,
+`aligned_dump.txt`) is already on disk and graded H. It covers only the beginning (L01-L17).
+(b) **Other solvers' working files: found.** el-descifrador/cabinet-noir `montholon-1589/fr4715-n58-f81/` reads the
+rest (see above).
+- dbourdeau/cyphersolver (HEAD 4aedb40): no Montholon target. Only `research/gallica_sweep` has catalogue snapshots
+  (notice_4715.txt l.78, "Chiffre non déchiffré").
+- aaymeloglu/unsolved-ciphers (HEAD d2800bb): no Montholon file.
+(c) **Physical neighbours: no period decipherment.** Per the BnF record (snapshot l.75-79):
+- f.77-78 nos.54-55 are Montholon letters "Chiffre et déchiffrement";
+- f.79 no.56 is a Nevers minute;
+- f.80 no.57 is Vieuville, "Chiffre et déchiffrement";
+- f.81 no.58 is this letter, "Chiffre non déchiffré";
+- ff.82-86 nos.59-63 are "Chiffres non déchiffrés".
+The decipherments on ff.77-80 belong to other letters and are a calibration source, not this item. This worker did not
+view f.80v/f.81v at native resolution; INTAKE-4715 fetched f.81v (canvas 178).
+(d) **Recipient side: not found in print.** Gomberville 1665 (Nevers's printed papers), both parts, was searched for
+Montholon (line 2). The recipient-side find is the online Cabinet Noir reading, logged under (b).
+
+Status moved `open` -> `found-solved` by this pass. The NEAR.md row and the status.json `near` entry for this target
+are the parent's to retire. The "While waiting" steps above are superseded: ASKS 79's BnF capture is no longer needed
+to read this letter, only to check or improve a reading that already exists.
+Requests this pass: books.google.com 5, github.com 3 (shallow clones), api.github.com 1 (refused: not enabled for
+this session), cryptiana.blogspot.com 1 (shared with fr3993's pass). Rule 10: no novelty claim; these are search
+results.
