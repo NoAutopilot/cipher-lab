@@ -175,11 +175,43 @@ Passes: two blind Opus calls over the 7 crops only (`fig1-tx/prompt_pass.txt`, g
 Result: `ciphertext_fig1.txt` (176 signs, 7 lines, 2 OBSCURED spans; `ciphertext.txt` left as transcribed, rule 1). Against bSUF's 166-sign pooled read the new read has 10 more signs and resolves the pooled dot clusters except 5 `tooth`. **L5 group 4: both blind passes read `mim ha2 mim dal`** (agreed, M) -- the FT4 dispute is settled against bSUF's `mim ha ya dal`; the shape matches the name Muhammad that Bulliet reports, a script reading graded I here (no reading claimed). Commonest signs: lam 20, waw 17, dal 14, kaf 14, sin 13, mim 13, ta 12. Splits concentrate on dot counts (tooth vs nun/ba/tha, nga vs ghayn x3) and lam/dal/alif strokes.
 Vision calls: 2 passes + 1 look-alike re-read (3 of 3). Requests: mizanproject.org 1. No decipherment attempted.
 
+## GAPS90-sufi-fiddle (3 Oct 2026, account-4): Tausug word-list match on ciphertext_fig1.txt
+
+Step (GAPS87 Verdict): match the 7 lines against a Tausug word list with a control. Pre-registered and pushed before scoring
+(`tausug/PREREG.md`, commit 220d26e7); script `tausug/match.py`, output `tausug/results.json` (seed 1); sources in
+`tausug/manifest.json`, none committed. Lists: L_PD = Cowie, *English-Sulu-Malay Vocabulary* (1893, public domain, archive.org
+OCR; Sulu and Malay columns not separable, so Malay rides along), 5,575 skeletons; L_NT = Tausug New Testament word types
+(Wycliffe 1998/2018, eBible tsg, all rights reserved -- local statistics only), Revelation held out, 4,772 skeletons.
+Wiktionary's Tausug lemmas (CC BY-SA) were tried first: HTTP 429 twice, left alone.
+Statistic: consonant-skeleton coverage C3 by a tiling of 1-3 consecutive visible groups (word boundaries only at gaps),
+spans of skeleton length >= 3; 128 target consonants. Null: 1000 random permutations of the 13 consonant classes over
+the cipher signs (identities scrambled, structure kept -- a null that can move the statistic, unlike group-order
+shuffling). Positive control: 20 held-out Revelation chunks rendered as Jawi-like groups at the target's consonant count,
+0/10/20 pct class substitution (brackets the 18.5 pct err_2reader), each against its own 200-permutation null.
+
+| list | target C3 | null mean / p95 | p (seed 1; seed 2) | C2 p | control C3 at 0/10/20 pct | control power at 0/10/20 pct | gate |
+|---|---|---|---|---|---|---|---|
+| L_NT (Tausug NT) | 0.398 | 0.295 / 0.422 | 0.092; 0.103 | 0.071; 0.075 | 0.70 / 0.60 / 0.51 | 1.0 / 1.0 / 1.0 | **FAIL** |
+| L_PD (Cowie, Sulu+Malay) | 0.594 | 0.429 / 0.547 | 0.015; 0.004 | 0.010; 0.004 | 0.58 / 0.53 / 0.52 | 0.75-0.9 / 0.60-0.65 / 0.35-0.55 | NON-TEST (power < 0.8 at 20 pct) |
+
+Per-length breakdown (spans chosen in the tiling, L=2/3/4+): L_NT C3 0/14/2, C2 18/15/0; L_PD C3 0/24/1, C2 14/25/0.
+Singleton-group matches (L=2/3/4+): L_NT 25/7/0; L_PD 25/13/0. No span of skeleton length >= 5 matched in either list.
+Reading of the numbers: against the clean Tausug list, which reads real held-out Tausug at full power even at 20 pct
+noise, the inscription's coverage (0.398) is inside its own null (p 0.09-0.10) and below the noisy control's mean (0.51):
+a control-backed FAIL for Tausug *under this rendering convention* (vowel letters dropped, g=k, fa=p, nga/ghayn=N, tooth
+as wildcard; the true Sulu Jawi spelling of 1968 or earlier is not known and may differ). Against the Sulu+Malay list the
+inscription sits above its null (p 0.004-0.015) and above real Tausug's own coverage of that list (0.594 vs 0.52-0.58),
+but that list's power is under the pre-registered 0.8, so it is not a pass -- the gap between the two lists points at the
+Malay (or Arabic-loan) part of Cowie's vocabulary, not at Tausug; a lead for the next test, not a finding. No token is
+read or graded by this test (0 H, 0 C, 0 S, 0 M, 0 I); no decipherment attempted.
+Requests: ebible.org 3, en.wiktionary.org 2 (both 429), archive.org 3 (advancedsearch 1, one 500 on the first Cowie
+identifier, Cowie djvu 1); all >= 2 s apart. Vision calls: 0.
+
 ## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026)
 Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet, now matched by both blind passes at L5 g4; graded I).
 - independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (its holder never identified, Bulliet 2021) and Figure 1 is the same sheet as the folder image, so every image on record is one hand copy
 - language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
-- script reading of the Figure 1 transcription as Jawi-script Tausug - blocker: not-attempted; ciphertext_fig1.txt (GAPS87) is the first dot-resolved sign read, its 6 unsettled signs marked '?' (fig1-tx/focus.tsv for the sign sorter, non-blocking); next: build a small Tausug word list from archive.org texts and match the 7 lines' groups against it with a shuffled-group control, ~$4
+- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; the Tausug script-reading gap ran in GAPS90 (3 Oct 2026): Tausug NT list FAIL (C3 0.398, null p 0.09-0.10, control power 1.0 at 20 pct noise), Cowie 1893 Sulu+Malay list p 0.004-0.015 but control power 0.35-0.55 at 20 pct = non-test (tausug/results.json); the Sulu+Malay list beat its null where the Tausug list did not; next: same match.py design against an openly licensed Malay word list and an Arabic word list (separately), same null and control, ~$3
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
@@ -189,11 +221,11 @@ Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet, now mat
 - [n/a] key-rebuild: no key involved in a script reading
 - [x] image-check: Figure 1 re-transcribed from 2500 px line crops (GAPS87, 3 Oct 2026): err_2reader 18.5 pct, look-alike residual 3.3 pct
 - [n/a] retry: no failed attempt with a changed knob to retry
-Verdict: keep going: 1 internal gaps; cheapest next: script reading of ciphertext_fig1.txt as Jawi-script Tausug against a Tausug word list with a shuffled-group control, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: match.py on ciphertext_fig1.txt against an openly licensed Malay word list and an Arabic word list (separately), same permutation null and held-out positive control, ~$3
 
 ## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026)
 
-Nothing here waits on a person for the next step: the zero-dependency action is the Tausug word-list match on ciphertext_fig1.txt (Verdict above). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
+Nothing here waits on a person for the next step: the zero-dependency action is the Malay/Arabic word-list match on ciphertext_fig1.txt (Verdict above; the Tausug match ran in GAPS90 and FAILed). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 
