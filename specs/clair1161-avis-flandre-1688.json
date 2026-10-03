@@ -1,0 +1,42 @@
+{
+ "slug": "clair1161-avis-flandre-1688",
+ "name": "BnF Clairambault 1161, 'Avis de Flandre, chiffres' (Gallica btv1b90010063 c185-c188), mounted leaves beside a clear letter of Francois de Noailles, eveque de Dax, 20 Dec 1570",
+ "date": "c. 1570 (by the neighbouring clear letter; the item itself is undated)",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "3 s iib qb a wb z y + th e y w th 4 d S wb + y th s z th + y 4 S z rc p qb 9 th + 7 7 y + S 4 S a + wb tz ls phi 7 6 th qb p y w l x w iib S 7 o s s wb s s z + o e dia 7 7 wb qb w th 9 + e qb y 7 p qb z 4 S th + l x q th 7 + qb S p 4 a e z w + S d 3 d z box S 9 K q 7 o qb th 9 + S y 7 s s S p 4 y + th s s wb + a y th 8 4 + th 3 9 o 4 z w 4 S th iii 3 d z y + e y w S th + rot qb q + d z e qb y p ee 7 7 eloop S z rc iii z 4 a th 6 7 dia 6r q 7 7 th p 4 S a + y z q 9 qb a eloop S z 7 6 rc z + o e th f s s S + qb a z o 4 w S phi th 7 o eloop + S l + y 4 S z s s wb tri S S ls iib S S ls th 4 y z ls 3 7 box S wb z y ls s z th 4 y z w y qb + l x + p z qb wb + a y p 4 d z box S z + ls 3 d z to qb wb box p 4 S c S th w 4 d 7 7 p + 8 4 y 4 ee iii psi 3 q S q iii L l a e ls tz x z iii iii box p 8 4 y 7 7 iib qb psi y + th z ls e qb y wb + th 8 4 eloop p 4 S th + z wb tz th + y th 3 d z y + eloop a wb z y + th p 8 4 th + 9 7 7 z 4 wb qb w th 9 + phi wb + th qb 3 o + 9 box z 4 a th wb + 9 rc box d phi wb 4 q th 7 o 6r y + e 4 y z + ls th qb wb box z 4 a y p + s z S + th 3 y qb + sqc 3 p S z ls p 4 ls o ls 7 o 6r qb p y 4 q y 3 7 o 7 6 iib qb d phi w + y iii x e qb eloop box y iib 4 4 q qb S y 4 ee z 7 7 e wb S th + th o 4 S a 4 q y 7 6 e + S e wb q iii x x z eloop p 6r + y 4 ee S q qb 7 7 o box d vdash ls S w S phi z o w wb tz dia S y + th th z + phi wb w S th qb a sqc o qb y p Sorn qb S z eloop iib p w z qb iib dia S th 7 7 p 6r q S w wb tz q 7 7 wb 4 S vdash y + 9 s z blot S q 4 + S z 6r q iii phi + e S 9 + eloop spiralG rc wb qb 8 4 + iib qb o q qb e qb th 9 + p 3 wb box ls d iib w th 9 th o S wb qb z w 4 S rot qb S th 9 + S z 4 qb p y 4 ee y ls p 4 o ls + 3 wb tz 8 ls qb 4 8 7 7 z 4 S z + 9 iii iii qb e box y 7 7 a wb sqc c 4 q th + th p y w e z iii o qb d 7 7 L 8 6r q y 4 ee S q s s wb tz q wb qb w th 9 box K z rc e qb th 9 q psi + d K w wb tz q d 8 3 to iib w th 9 th o S wb qb z w 4 d 7 + qb S p 4 a e 7 7 + rot 4 th + 9 3 o qb S 4 8 7 7 wb qb iii f rc y + wb w phi dia 4 d q d p + y 4 ee qb a wb ls q iii qb c x w S 7 7 psi + phi qb w sd S + psi th qb S 4 7 wb + th 9 q iii e + S e wb + to s s th 4 S l w wb eloop iii + wb tz q q 6 o th 3 S z psi + phi S + y iii + 4 ls o qb S 7 7 psi + d e wb S th phi y qb S z psi + e 4 2 rc iii f",
+ "ciphertext_source": "READ2-C1161, 3 Oct 2026: c185R (24 lines) and the c186R 8-line block, two blind Sonnet passes each + reconciliation from native IIIF regions (ciphers/clair1161-avis-flandre-1688/ciphertext.tsv); labels tx/labels_v2.md; clear words and '/' dropped; 909 tokens, 44 types. c186L, c187L/R, c188L not yet transcribed.",
+ "alphabet": "pen signs mixed with digit-shaped signs (4, 7, 3, 8, 9, 6), about 44-49 types in this window; labels in tx/labels_v2.md",
+ "constraints": {
+  "gloss": "c186R carries a contemporary marginal note beside the 8-line block, read as clear French ('...seigneurs a par... escript et mander a la royne quelle... quant au fet de la Religion en ce Royaulme... de Espaigne... en grand Repoz'); it may be the block's decipherment; not aligned (see cheap_test_done)",
+  "clear_words": "clear French words inside the cipher: 'faire' (c185R L05, L11, L15, L22), 'Et faut pre(n)sa puis' (c185R L22); clear opening 'Les seigneurs' on the c186R block",
+  "transcription_error": "err_2reader 0.10 (c185R) and 0.09 (c186R) pass-vs-pass, but each single pass disagrees with the reconciled c186R block on ~0.27 of signs; err_true not measurable"
+ },
+ "cheap_tests": [
+  "homophonic family_run with matched control (fr16, N=909, K=44, noise bracketing 0.10-0.27)",
+  "gloss alignment of the c186R block with an instrument that has power on a 45-sign homophonic design (interlinear_align.py has none, see cheap_test_done)",
+  "transcribe c186L, c187L/R, c188L and re-run"
+ ],
+ "judge": {
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresindites00marg_djvu.txt.gz"
+  ],
+  "min_word_cover": 0.5,
+  "note": "fr16 corpus files listed directly (the code 'fr16' is not in judge_plaintext.py's LANG_CORPORA); 16th-c. letters (Catherine de Medicis, Marguerite), era-matched to c.1570; fold spread not measured here"
+ },
+ "cheap_test_done": [
+  {
+   "date": "2026-10-03",
+   "worker": "READ2-C1161 (account 2, for LANE-READ2)",
+   "test": "homophonic family_run.py, fr16, N=924 K=49, noise=0.10 profile=target, restarts 32, seeds 3 (restarts 8 first: control 0.387, below gate)",
+   "control": "0.749 mean recovery (0.594-0.864), scores -2140 to -2347",
+   "target": "best score -2281.4; judge FAIL language -1.151 (null_p99 -1.72, real_p05 -0.924), words ok 0.912; shuffled target -2539.2/-2546.6, judge -1.31/-1.328",
+   "gloss_check": "anneal key on the c186R block matches 0.593 of the marginal gloss letters in order vs 200 shuffled keys mean 0.187, p95 0.279, max 0.314",
+   "gloss_align_tool": "interlinear_align.py flat start: target 34 agree vs shuffled order 32-44; positive control (45-sign homophonic, N=218) also at chance -> non-test for this tool",
+   "verdict": "MOVED: blind homophonic anneal reads above its matched control and is confirmed by the leaf's own period gloss; reading grade S (reading.txt); next: gloss-seeded key repair, sibling leaves"
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-open
+partial
 Rousset, *Histoire de Louvois et de son administration politique et militaire* (tome IV, archive.org
 histoiredelouvoi04rousuoft, read in full via djvu text and grepped by this worker), control "Boufflers" 23
 hits confirming readable OCR; no hit for "Avis de Flandre" and the volume's several "Noailles" hits are all
@@ -463,3 +463,103 @@ Fetch the remaining cipher leaves (regions above) with `tools/iiif_lines.py`, ke
 7 MB per leaf, and the tool shrinks its src copies past 30 MB. Then two blind transcription passes per
 TRANSCRIPTION.md. Run the intake gate first: the target is `open` and has had a check-solved pass and a Premise
 check, and the marginal note on c186R should be read as a possible key source before any cryptanalysis.
+
+## READ2-C1161 (3 Oct 2026, account 2 worker for LANE-READ2)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-read2-c1161.md`. Clock 23:16 UTC at claim. Status moved `open` -> `partial`:
+a cryptanalytic reading (grade S, no H) of c185R and the c186R block, checked against the leaf's own contemporary gloss.
+
+**Route.** c186R: the native region already on disk (IMG-GALLICA1) re-cut locally with `tools/iiif_lines.py --image`:
+margin note `--region 60,2580,640,1020 --prefix c186Rmarg` (13 crops), cipher block `--region 540,2540,2860,1180
+--max-width 1500 --overlap 100 --prefix c186Rblk` (16 crops). c185R: `tools/iiif_lines.py --ark btv1b90010063 --canvas 186
+--region 4450,100,3150,4650` (one native fetch), lines cut with `--centres` read by eye from the overlay (autocorrelation
+found 7 of 24 lines) and `--top-margin 15 --bottom-margin 75 --max-width 1300 --overlap 100 --prefix c185R` (72 crops).
+Requests: gallica.bnf.fr 1 (one native region, descriptive UA, no challenge). Folder 20 MB.
+
+**Subagent calls (Sonnet): 5.** Gloss read 1; c186R block passes A, B; c185R passes A, B. Reconciliation of both leaves
+by this worker from native half-leaf views (not a subagent call). Labels: `tx/labels_provisional.md` (c186R passes),
+`tx/labels_v2.md` (settled from the c186R reconciliation, used for c185R).
+
+**Per-leaf signs and error.**
+
+| leaf | lines | cipher signs | err_2reader (pass A vs B) | single pass vs reconciled |
+|---|---|---|---|---|
+| c185R | 24 | 704 | 72/716 = 0.101 | not computed |
+| c186R block | 8 | 220 | 22/239 = 0.092 | A 0.277, B 0.268 (67/242, 64/239) |
+
+err_true not measurable: no benchmark item of this hand. The c186R pass-vs-pass figure is misleading: both passes shared a
+crop-height bias (descenders cut, so crossed q read as '9' and line-initial signs dropped), which is why the c185R crops
+were re-cut with a bottom margin. Look-alike pairs still unsettled: the hooked-top long-descender q vs `ls`
+(passes split them, reconciled as q where they split); `S` in the c186R block merges two shapes (looped g-like and
+open 5-like), split in neither leaf yet; `ss` in the c186R passes = two small s. A sorter focus list was not written
+(the reading below now constrains these pairs better than a person's shape sort would; see Remaining gaps).
+
+**The marginal gloss on c186R is the block's decipherment.** Read as clear text (one Sonnet pass + this worker's check):
+`[le]s seigneurs a par[ticulier?] / ?x foys escript et mander / [a l]a royne quelle / n'est pas[se]... / ...beaucoup /
+[de] chose quant au fet / [de l]a Religion en ce Royaulme / [ro]m de Espaigne sa / ...e ce peuple et gens / filz et
+celle ... / ...nt commandee luy / [e]n grand Repoz.` Left letters are lost under the mount; lines 2, 4, 5, 9-11 are M.
+Alignment with `tools/interlinear_align.py align --code-prefix @ --wildcard ?` (flat start): target 34 tokens agree,
+shuffled-order controls 32-44 (8 seeds); its positive control, a synthetic 45-sign homophonic encipherment of the same
+gloss at N=218, also reads at chance (32-39 at 0 error; 35-45 at 0.10/0.27), while a monoalphabetic control at 0 error
+reads 167/196 -- so the tool has no power on this design at this N: a non-test, not a negative.
+
+**design_prior** (`python3 tools/design_prior.py tx/stream_all.txt --no-write`, 909 tokens, 44 types): multi-sign
+(homophonic/nomenclator/syllabary) d=0.13 plausible (envelope 0.39, null p05 0.19); letter-for-letter d=0.30 plausible;
+mixed plausible; code d=1.64 excluded; shuffled-input false-positive rate 0.045; nearest keys willem-van-hessen-1567
+key_1069 (homophonic), colbert26 f23 (nomenclator).
+
+**First cheap test: homophonic family, fr16, N=924, K=49 (`tools/family_run.py ... --family homophonic --tokens space
+--corpus tools/data/fr16 --param noise=0.10 --param profile=target`).** Rows in HYPOTHESES.md.
+
+| run | control (3 seeds, mean) | target | judge |
+|---|---|---|---|
+| restarts 8 | 0.387 (0.141-0.787), below gate 0.6 | not run | - |
+| restarts 32 | 0.749 (0.594-0.864), control scores -2140 to -2347 | best score -2281.4 | FAIL language -1.151 (null_p99 -1.72, real_p05 -0.924, median -0.816); words ok, cover 0.912 |
+| restarts 32, target shuffled (seed 1) | same control | -2539.2 | FAIL -1.31 |
+| restarts 32, target shuffled (seed 2) | same control | -2546.6 | FAIL -1.328 |
+
+Judge output, pasted (`python3 tools/judge_plaintext.py specs/clair1161-avis-flandre-1688.json --file <decode>`):
+```
+FAIL language: score=-1.151, null_p99=-1.72, real_p05=-0.924, real_median=-0.816, mode=both, N=924
+ok   words: cover=0.912, min=0.5, real_text_median_cover=0.958
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The target's anneal score sits inside its matched control's range and ~260 points above the shuffled target; the shuffled
+decodes do not pass the judge either, so the judge is not voided for this family at this N. The language FAIL is at a
+blind anneal over a 0.10-0.27 error transcription, not a key-read text.
+
+**Gloss check of the key (order-sensitive, can differ from its control).** The anneal key applied to the c186R block
+reads `...a par?icul?? / fois / escript / ...royn? quelle laiss... passer en ... dissimulation ... beaucoup ... choses
+... religion en ce royaul[me] ... [d]e Espaigne sauoi... ce peuple ... en plus grand repo...`. Letters of the gloss
+matched in order by the decode (difflib matching blocks / 172 gloss letters): **0.593**; the same with 200 shuffled
+keys: mean 0.187, p95 0.279, max 0.314. So the gloss is a period decipherment of this block, and the blind key agrees
+with it far above chance.
+
+**Reading (grade S, cryptanalytic; no H, no C tokens).** `key.tsv` (anneal seed 1, every value S) + `ciphertext.tsv` ->
+`reading.txt`, `reading_tokens.tsv` by `python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688` (`--check` exit 0;
+tokens 939: S 772, M 152, U 15 = the '/' marks). Gist of c185R, uncorrected anneal output read by eye (interpretation,
+not a reading): news of "aultres prisonniers", "nouvelles", "laisse par ... tous", "beaucoup", "ennemis ... asseure",
+"encore ... leurs", "entreprinse seraient par ... executee", "descouvertes", "confusion", "arreste par les",
+"reportees a la cour", "ce qui sera execute", "a croire", "au roy", "le peuple", "justice", "dissimulation". Clear words
+inside the cipher: "faire" (L05, L11, L15, L22) and "Et faut pre(n)sa puis" (L22). Per CLAUDE.md rule 7, a fresh
+session must re-derive this from the spec and key before the orchestrator moves the target on.
+
+Report what was found and where it was not found: no decipherment of these leaves was found in the sources checked
+earlier in this file (check-solved, Premise check); this pass searched nothing new. Novelty is not classified here.
+
+## Remaining gaps (READ2-C1161, 3 Oct 2026)
+Read so far: 924 of an estimated ~2,500 cipher signs transcribed (c185R 704, c186R block 220; IMG-GALLICA1's line counts for the other four leaves), all decoded at grade S under an annealed key; 0 H, 0 C.
+- c186L, c187L, c187R, c188L (about 100 lines) - blocker: not-attempted; regions in "IMG-GALLICA1" above, cut with --bottom-margin 75; next: fetch + 2 blind passes + reconciliation per leaf, then re-run the anneal on the pooled text, ~$6 per leaf
+- the key itself (S only) - blocker: not-attempted; the c186R gloss now gives a period plaintext for 220 signs; next: a gloss-seeded key repair (fix the block's signs to the gloss letters, grade C, then re-anneal the rest with those fixed) with a shuffled-gloss control, ~$4
+- look-alike pairs q/ls and the two S shapes - blocker: not-attempted; passes split them, reconciled by eye only; next: split them in the ciphertext and test which split raises the anneal score and the gloss match, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (READ2-C1161, 3 Oct 2026)
+- [ ] siblings: the four other cipher leaves of the same "Avis" (c186L, c187L/R, c188L) untranscribed; next: transcribe and pool
+- [x] clear-pages: the c186R marginal gloss is the block's decipherment (gloss match 0.593 vs shuffled-key p95 0.279)
+- [ ] known-keys: no key on file matched yet; next: run tools/key_crossmatch.py against KEY-OFFICES.tsv for 1570 French chancery keys once the alphabet is settled
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: anneal key only; next: gloss-seeded repair as in Remaining gaps
+- [ ] image-check: q/ls and S splits unsettled; next: split test as in Remaining gaps
+- [n/a] retry: first anneal already read above its matched control
+Verdict: keep going: 3 internal gaps; cheapest next: split test of q/ls and S, ~$3

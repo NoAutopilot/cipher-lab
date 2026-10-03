@@ -1,0 +1,717 @@
+line	position	sign	confidence	alt	why
+L01	1	3	H		agree
+L01	2	ss	M	B:S	differ
+L01	3	iib	M	B:+	differ
+L01	4	qb	H		agree
+L01	5	a	H		agree
+L01	6	wb	H		agree
+L01	7	z	H		agree
+L01	8	y	H		agree
+L01	9	+	H		agree
+L01	10	th	H		agree
+L01	11	e	H		agree
+L01	12	y	H		agree
+L01	13	w	H		agree
+L01	14	th	H		agree
+L01	15	4	H		agree
+L01	16	d	H		agree
+L01	17	S	H		agree
+L01	18	wb	H		agree
+L01	19	+	H		agree
+L01	20	y	H		agree
+L01	21	th	H		agree
+L01	22	ss	M	B:S	differ
+L01	23	z	H		agree
+L01	24	th	H		agree
+L01	25	+	H		agree
+L01	26	y	H		agree
+L01	27	4	H		agree
+L01	28	S	H		agree
+L01	29	z	H		agree
+L01	30	rc	H		agree
+L02	1	p	H		agree
+L02	2	qb	H		agree
+L02	3	9	H		agree
+L02	4	th	H		agree
+L02	5	+	H		agree
+L02	6	7	H		agree
+L02	7	7	H		agree
+L02	8	y	H		agree
+L02	9	+	H		agree
+L02	10	S	H		agree
+L02	11	4	H		agree
+L02	12	S	H		agree
+L02	13	a	H		agree
+L02	14	+	H		agree
+L02	15	wb	H		agree
+L02	16	tz	H		agree
+L02	17	ls	H		agree
+L02	18	phi	H		agree
+L02	19	7	H		agree
+L02	20	6	H		agree
+L02	21	th	H		agree
+L02	22	qb	H		agree
+L02	23	p	H		agree
+L02	24	y	H		agree
+L02	25	w	H		agree
+L02	26	l	H		agree
+L02	27	x	H		agree
+L02	28	w	H		agree
+L02	29	+	M	B:iib	differ
+L02	30	S	M	B:ls	differ
+L03	1	7	H		agree
+L03	2	0	H		agree
+L03	3	ss	M	B:S	differ
+L03	4	ss	M	B:S	differ
+L03	5	wb	H		agree
+L03	6	ss	M	B:S	differ
+L03	7	ss	M	B:S	differ
+L03	8	z	H		agree
+L03	9	+	H		agree
+L03	10	0	H		agree
+L03	11	e	M	B:c	differ
+L03	12	dia	H		agree
+L03	13	7	H		agree
+L03	14	7	H		agree
+L03	15	wb	H		agree
+L03	16	qb	H		agree
+L03	17	w	H		agree
+L03	18	th	H		agree
+L03	19	9	H		agree
+L03	20	+	H		agree
+L03	21	e	H		agree
+L03	22	qb	H		agree
+L03	23	y	H		agree
+L03	24	7	H		agree
+L03	25	p	H		agree
+L03	26	qb	H		agree
+L03	27	z	H		agree
+L03	28	4	H		agree
+L03	29	S	H		agree
+L03	30	th	H		agree
+L03	31	+	H		agree
+L03	32	l	H		agree
+L03	33	x	H		agree
+L04	1	q	H		agree
+L04	2	th	H		agree
+L04	3	7	H		agree
+L04	4	+	H		agree
+L04	5	qb	H		agree
+L04	6	S	H		agree
+L04	7	p	H		agree
+L04	8	4	H		agree
+L04	9	a	H		agree
+L04	10	e	H		agree
+L04	11	z	H		agree
+L04	12	w	H		agree
+L04	13	+	H		agree
+L04	14	S	H		agree
+L04	15	d	H		agree
+L04	16	3	H		agree
+L04	17	d	H		agree
+L04	18	z	H		agree
+L04	19	box	H		agree
+L04	20	S	H		agree
+L04	21	9	H		agree
+L04	22	rot	M	B:K	differ
+L04	23	q	H		agree
+L04	24	7	H		agree
+L04	25	0	H		agree
+L04	26	qb	H		agree
+L04	27	th	H		agree
+L04	28	9	H		agree
+L04	29	+	H		agree
+L04	30	S	H		agree
+L04	31	y	H		agree
+L04	32	7	H		agree
+L05	1	S	M	A:-	gap
+L05	2	ss	M	B:S	differ
+L05	3	S	H		agree
+L05	4	p	H		agree
+L05	5	4	H		agree
+L05	6	y	H		agree
+L05	7	+	H		agree
+L05	8	th	H		agree
+L05	9	S	M	A:-	gap
+L05	10	ss	M	B:S	differ
+L05	11	wb	H		agree
+L05	12	+	H		agree
+L05	13	a	H		agree
+L05	14	y	H		agree
+L05	15	th	H		agree
+L05	16	8	H		agree
+L05	17	4	H		agree
+L05	18	+	H		agree
+L05	19	th	H		agree
+L05	20	3	H		agree
+L05	21	9	H		agree
+L05	22	0	H		agree
+L05	23	4	H		agree
+L05	24	z	H		agree
+L05	25	w	H		agree
+L05	26	4	H		agree
+L05	27	S	H		agree
+L05	28	th	H		agree
+L05	29	iii	H		agree
+L05	30	PLAIN:faire	H		agree
+L06	1	3	H		agree
+L06	2	d	H		agree
+L06	3	z	H		agree
+L06	4	y	H		agree
+L06	5	+	H		agree
+L06	6	e	H		agree
+L06	7	y	H		agree
+L06	8	w	H		agree
+L06	9	S	H		agree
+L06	10	th	H		agree
+L06	11	+	H		agree
+L06	12	rot	H		agree
+L06	13	qb	H		agree
+L06	14	q	H		agree
+L06	15	+	H		agree
+L06	16	d	H		agree
+L06	17	z	H		agree
+L06	18	e	H		agree
+L06	19	qb	H		agree
+L06	20	y	H		agree
+L06	21	p	H		agree
+L06	22	ee	H		agree
+L06	23	7	H		agree
+L06	24	7	H		agree
+L06	25	eloop	H		agree
+L06	26	S	H		agree
+L06	27	z	H		agree
+L06	28	rc	M	B:rot	differ
+L06	29	iii	H		agree
+L07	1	z	H		agree
+L07	2	4	H		agree
+L07	3	a	H		agree
+L07	4	th	H		agree
+L07	5	6	H		agree
+L07	6	7	H		agree
+L07	7	dia	H		agree
+L07	8	6r	H		agree
+L07	9	S	M	B:ls	differ
+L07	10	7	H		agree
+L07	11	7	H		agree
+L07	12	th	H		agree
+L07	13	p	H		agree
+L07	14	4	H		agree
+L07	15	S	H		agree
+L07	16	a	H		agree
+L07	17	+	H		agree
+L07	18	y	H		agree
+L07	19	z	H		agree
+L07	20	q	M	B:ls	differ
+L07	21	9	H		agree
+L07	22	qb	H		agree
+L07	23	a	H		agree
+L07	24	eloop	H		agree
+L07	25	S	H		agree
+L07	26	z	H		agree
+L07	27	7	H		agree
+L07	28	6	H		agree
+L07	29	rc	M	B:rot	differ
+L08	1	z	H		agree
+L08	2	+	H		agree
+L08	3	0	H		agree
+L08	4	e	M	B:c	differ
+L08	5	th	H		agree
+L08	6	f	H		agree
+L08	7	S	M	A:-	gap
+L08	8	ss	M	B:S	differ
+L08	9	S	H		agree
+L08	10	+	H		agree
+L08	11	qb	H		agree
+L08	12	a	H		agree
+L08	13	z	H		agree
+L08	14	0	H		agree
+L08	15	4	H		agree
+L08	16	w	H		agree
+L08	17	S	H		agree
+L08	18	phi	H		agree
+L08	19	th	H		agree
+L08	20	7	H		agree
+L08	21	0	H		agree
+L08	22	eloop	H		agree
+L08	23	+	H		agree
+L08	24	S	H		agree
+L08	25	l	H		agree
+L08	26	+	H		agree
+L08	27	y	H		agree
+L08	28	4	H		agree
+L08	29	S	H		agree
+L08	30	z	H		agree
+L09	1	S	M	A:-	gap
+L09	2	ss	M	B:S	differ
+L09	3	wb	H		agree
+L09	4	tri	H		agree
+L09	5	S	H		agree
+L09	6	S	H		agree
+L09	7	ls	H		agree
+L09	8	iib	H		agree
+L09	9	S	H		agree
+L09	10	S	H		agree
+L09	11	ls	H		agree
+L09	12	th	H		agree
+L09	13	4	H		agree
+L09	14	y	H		agree
+L09	15	z	H		agree
+L09	16	ls	H		agree
+L09	17	3	H		agree
+L09	18	7	H		agree
+L09	19	box	H		agree
+L09	20	S	H		agree
+L09	21	wb	H		agree
+L09	22	z	H		agree
+L09	23	y	H		agree
+L09	24	ls	H		agree
+L09	25	ss	M	B:S	differ
+L09	26	z	H		agree
+L09	27	th	H		agree
+L09	28	4	H		agree
+L09	29	y	H		agree
+L09	30	z	H		agree
+L10	1	w	H		agree
+L10	2	y	H		agree
+L10	3	q	M	B:qb	differ
+L10	4	+	H		agree
+L10	5	l	H		agree
+L10	6	x	H		agree
+L10	7	+	H		agree
+L10	8	p	H		agree
+L10	9	z	H		agree
+L10	10	qb	H		agree
+L10	11	wb	H		agree
+L10	12	+	H		agree
+L10	13	a	H		agree
+L10	14	y	H		agree
+L10	15	p	H		agree
+L10	16	4	H		agree
+L10	17	d	H		agree
+L10	18	z	H		agree
+L10	19	box	H		agree
+L10	20	S	H		agree
+L10	21	z	H		agree
+L10	22	+	H		agree
+L10	23	eloop	M	A:-	gap
+L10	24	L	M	B:3	differ
+L10	25	d	H		agree
+L10	26	z	H		agree
+L10	27	to	H		agree
+L10	28	0	M	B:-	gap
+L10	29	qb	H		agree
+L10	30	wb	H		agree
+L10	31	box	H		agree
+L11	1	p	H		agree
+L11	2	4	H		agree
+L11	3	sd	M	B:S	differ
+L11	4	c	H		agree
+L11	5	S	H		agree
+L11	6	th	H		agree
+L11	7	w	H		agree
+L11	8	4	H		agree
+L11	9	d	H		agree
+L11	10	7	H		agree
+L11	11	7	H		agree
+L11	12	p	H		agree
+L11	13	+	H		agree
+L11	14	8	H		agree
+L11	15	4	H		agree
+L11	16	y	H		agree
+L11	17	4	H		agree
+L11	18	ee	M	B:e	differ
+L11	19	iii	M	B:iib	differ
+L11	20	psi	H		agree
+L11	21	3	M	B:z	differ
+L11	22	q	H		agree
+L11	23	S	H		agree
+L11	24	q	M	B:ls	differ
+L11	25	iii	H		agree
+L11	26	PLAIN:faire	H		agree
+L12	1	L	H		agree
+L12	2	l	H		agree
+L12	3	a	H		agree
+L12	4	e	H		agree
+L12	5	ls	H		agree
+L12	6	tz	M	B:-	gap
+L12	7	S	M	B:th	differ
+L12	8	z	H		agree
+L12	9	x	M	A:-	gap
+L12	10	iii	H		agree
+L12	11	box	H		agree
+L12	12	p	H		agree
+L12	13	8	H		agree
+L12	14	4	H		agree
+L12	15	y	H		agree
+L12	16	7	H		agree
+L12	17	7	H		agree
+L12	18	iib	H		agree
+L12	19	qb	H		agree
+L12	20	psi	H		agree
+L12	21	y	H		agree
+L12	22	+	H		agree
+L12	23	th	H		agree
+L12	24	z	H		agree
+L12	25	ls	H		agree
+L12	26	c	M	B:e	differ
+L12	27	qb	H		agree
+L12	28	y	H		agree
+L12	29	wb	H		agree
+L12	30	+	H		agree
+L12	31	th	H		agree
+L12	32	8	H		agree
+L12	33	4	H		agree
+L12	34	eloop	H		agree
+L13	1	p	H		agree
+L13	2	4	H		agree
+L13	3	S	H		agree
+L13	4	th	H		agree
+L13	5	+	H		agree
+L13	6	z	H		agree
+L13	7	wb	H		agree
+L13	8	tz	H		agree
+L13	9	th	H		agree
+L13	10	+	H		agree
+L13	11	y	H		agree
+L13	12	th	H		agree
+L13	13	3	H		agree
+L13	14	d	H		agree
+L13	15	z	H		agree
+L13	16	y	H		agree
+L13	17	+	H		agree
+L13	18	eloop	H		agree
+L13	19	a	H		agree
+L13	20	wb	H		agree
+L13	21	z	H		agree
+L13	22	y	H		agree
+L13	23	+	H		agree
+L13	24	th	H		agree
+L13	25	p	H		agree
+L13	26	8	H		agree
+L13	27	4	H		agree
+L13	28	th	H		agree
+L13	29	+	H		agree
+L13	30	q	M	B:9	differ
+L14	1	7	H		agree
+L14	2	7	H		agree
+L14	3	z	H		agree
+L14	4	4	H		agree
+L14	5	wb	H		agree
+L14	6	qb	H		agree
+L14	7	w	H		agree
+L14	8	th	H		agree
+L14	9	9	H		agree
+L14	10	+	H		agree
+L14	11	phi	H		agree
+L14	12	wb	H		agree
+L14	13	+	H		agree
+L14	14	th	H		agree
+L14	15	qb	H		agree
+L14	16	3	H		agree
+L14	17	0	H		agree
+L14	18	+	H		agree
+L14	19	9	H		agree
+L14	20	box	H		agree
+L14	21	z	H		agree
+L14	22	4	H		agree
+L14	23	a	H		agree
+L14	24	th	H		agree
+L14	25	wb	H		agree
+L14	26	+	H		agree
+L14	27	9	H		agree
+L14	28	rc	H		agree
+L15	1	box	H		agree
+L15	2	d	H		agree
+L15	3	phi	H		agree
+L15	4	wb	H		agree
+L15	5	4	H		agree
+L15	6	q	H		agree
+L15	7	th	H		agree
+L15	8	7	H		agree
+L15	9	0	H		agree
+L15	10	6r	H		agree
+L15	11	y	H		agree
+L15	12	+	H		agree
+L15	13	c	M	B:e	differ
+L15	14	4	H		agree
+L15	15	y	H		agree
+L15	16	z	H		agree
+L15	17	+	H		agree
+L15	18	ls	H		agree
+L15	19	th	H		agree
+L15	20	qb	H		agree
+L15	21	wb	H		agree
+L15	22	box	H		agree
+L15	23	z	H		agree
+L15	24	4	H		agree
+L15	25	a	H		agree
+L15	26	y	H		agree
+L15	27	PLAIN:faire	H		agree
+L16	1	p	H		agree
+L16	2	+	H		agree
+L16	3	ss	M	B:S	differ
+L16	4	z	H		agree
+L16	5	S	H		agree
+L16	6	+	H		agree
+L16	7	th	H		agree
+L16	8	3	H		agree
+L16	9	y	H		agree
+L16	10	qb	H		agree
+L16	11	+	H		agree
+L16	12	sqc	M	B:e	differ
+L16	13	3	H		agree
+L16	14	p	H		agree
+L16	15	S	H		agree
+L16	16	z	H		agree
+L16	17	ls	H		agree
+L16	18	p	H		agree
+L16	19	4	H		agree
+L16	20	ls	H		agree
+L16	21	0	H		agree
+L16	22	ls	H		agree
+L16	23	7	H		agree
+L16	24	0	H		agree
+L16	25	6r	H		agree
+L16	26	qb	H		agree
+L16	27	p	H		agree
+L16	28	y	H		agree
+L16	29	4	H		agree
+L16	30	q	M	B:ls	differ
+L16	31	y	H		agree
+L16	32	3	H		agree
+L17	1	7	H		agree
+L17	2	0	H		agree
+L17	3	7	H		agree
+L17	4	6	H		agree
+L17	5	iib	H		agree
+L17	6	qb	H		agree
+L17	7	d	H		agree
+L17	8	phi	H		agree
+L17	9	w	H		agree
+L17	10	+	H		agree
+L17	11	y	H		agree
+L17	12	iib	M	A:-	gap
+L17	13	iii	M	B:z	differ
+L17	14	rot	M	B:e	differ
+L17	15	qb	H		agree
+L17	16	eloop	M	B:Sorn	differ
+L17	17	a	M	B:box	differ
+L17	18	y	H		agree
+L17	19	iib	H		agree
+L17	20	4	H		agree
+L17	21	4	H		agree
+L17	22	q	H		agree
+L17	23	qb	H		agree
+L17	24	S	H		agree
+L17	25	y	H		agree
+L17	26	4	H		agree
+L17	27	ee	M	B:e	differ
+L17	28	z	H		agree
+L18	1	7	H		agree
+L18	2	7	H		agree
+L18	3	e	H		agree
+L18	4	wb	H		agree
+L18	5	S	H		agree
+L18	6	th	H		agree
+L18	7	+	H		agree
+L18	8	th	H		agree
+L18	9	0	H		agree
+L18	10	4	H		agree
+L18	11	S	H		agree
+L18	12	a	H		agree
+L18	13	4	H		agree
+L18	14	q	H		agree
+L18	15	y	H		agree
+L18	16	7	H		agree
+L18	17	6	H		agree
+L18	18	e	H		agree
+L18	19	+	H		agree
+L18	20	S	H		agree
+L18	21	e	H		agree
+L18	22	wb	H		agree
+L18	23	q	M	B:ls	differ
+L18	24	iii	H		agree
+L18	25	x	H		agree
+L18	26	x	H		agree
+L18	27	z	M	B:tz	differ
+L18	28	/	H		agree
+L19	1	eloop	H		agree
+L19	2	p	H		agree
+L19	3	6r	H		agree
+L19	4	+	H		agree
+L19	5	y	H		agree
+L19	6	4	H		agree
+L19	7	ee	H		agree
+L19	8	S	H		agree
+L19	9	q	M	B:ls	differ
+L19	10	qb	H		agree
+L19	11	7	H		agree
+L19	12	7	H		agree
+L19	13	0	H		agree
+L19	14	box	H		agree
+L19	15	d	H		agree
+L19	16	wb	M	B:vdash	differ
+L19	17	ls	H		agree
+L19	18	S	H		agree
+L19	19	w	H		agree
+L19	20	S	H		agree
+L19	21	phi	H		agree
+L19	22	z	H		agree
+L19	23	0	H		agree
+L19	24	w	H		agree
+L19	25	wb	H		agree
+L19	26	tz	H		agree
+L19	27	dia	H		agree
+L19	28	S	H		agree
+L19	29	y	H		agree
+L19	30	+	H		agree
+L19	31	th	H		agree
+L20	1	th	H		agree
+L20	2	z	H		agree
+L20	3	+	H		agree
+L20	4	psi	M	B:phi	differ
+L20	5	wb	H		agree
+L20	6	w	H		agree
+L20	7	S	H		agree
+L20	8	th	H		agree
+L20	9	qb	H		agree
+L20	10	a	H		agree
+L20	11	sqc	H		agree
+L20	12	0	H		agree
+L20	13	qb	H		agree
+L20	14	y	H		agree
+L20	15	p	H		agree
+L20	16	8	M	B:Sorn	differ
+L20	17	qb	H		agree
+L20	18	S	H		agree
+L20	19	z	H		agree
+L20	20	eloop	H		agree
+L20	21	iib	H		agree
+L20	22	p	H		agree
+L20	23	w	H		agree
+L20	24	z	H		agree
+L20	25	qb	H		agree
+L20	26	iib	H		agree
+L20	27	dia	H		agree
+L20	28	S	H		agree
+L20	29	th	H		agree
+L21	1	7	H		agree
+L21	2	7	H		agree
+L21	3	p	H		agree
+L21	4	6r	H		agree
+L21	5	q	H		agree
+L21	6	S	H		agree
+L21	7	w	H		agree
+L21	8	wb	H		agree
+L21	9	tz	H		agree
+L21	10	8	M	B:-	gap
+L21	11	q	M	B:ls	differ
+L21	12	7	H		agree
+L21	13	7	H		agree
+L21	14	wb	H		agree
+L21	15	4	H		agree
+L21	16	S	H		agree
+L21	17	wb	M	B:vdash	differ
+L21	18	y	H		agree
+L21	19	+	H		agree
+L21	20	9	H		agree
+L21	21	ss	M	B:S	differ
+L21	22	z	H		agree
+L21	23	blot	H		agree
+L21	24	S	H		agree
+L21	25	q	H		agree
+L21	26	4	H		agree
+L21	27	+	H		agree
+L21	28	S	H		agree
+L21	29	z	H		agree
+L21	30	6r	H		agree
+L21	31	p	M	B:ls	differ
+L21	32	iii	H		agree
+L22	1	psi	M	B:phi	differ
+L22	2	+	H		agree
+L22	3	c	M	B:l	differ
+L22	4	S	H		agree
+L22	5	9	H		agree
+L22	6	+	H		agree
+L22	7	rot	M	B:tz	differ
+L22	8	/	H		agree
+L22	9	PLAIN:Et	H		agree
+L22	10	PLAIN:faut	H		agree
+L22	11	PLAIN:prensa	M	B:PLAIN:pensa	differ
+L22	12	PLAIN:puis	M	B:PLAIN:puni	differ
+L22	13	spiralG	H		agree
+L22	14	PLAIN:est	M	B:tz	differ
+L22	15	wb	H		agree
+L22	16	qb	H		agree
+L22	17	8	H		agree
+L22	18	4	H		agree
+L22	19	+	H		agree
+L22	20	PLAIN:faire	H		agree
+L22	21	iib	H		agree
+L22	22	qb	H		agree
+L22	23	0	H		agree
+L22	24	q	M	B:ls	differ
+L23	1	qb	H		agree
+L23	2	c	M	B:e	differ
+L23	3	qb	H		agree
+L23	4	th	H		agree
+L23	5	9	H		agree
+L23	6	+	H		agree
+L23	7	p	H		agree
+L23	8	3	H		agree
+L23	9	wb	H		agree
+L23	10	box	H		agree
+L23	11	ls	H		agree
+L23	12	d	H		agree
+L23	13	iib	H		agree
+L23	14	w	H		agree
+L23	15	th	H		agree
+L23	16	9	H		agree
+L23	17	th	H		agree
+L23	18	0	H		agree
+L23	19	S	H		agree
+L23	20	wb	H		agree
+L23	21	qb	H		agree
+L23	22	z	H		agree
+L23	23	w	H		agree
+L23	24	4	H		agree
+L23	25	S	H		agree
+L23	26	rot	H		agree
+L23	27	qb	H		agree
+L23	28	S	H		agree
+L23	29	th	H		agree
+L23	30	9	H		agree
+L23	31	+	H		agree
+L23	32	S	H		agree
+L24	1	7	M	B:z	differ
+L24	2	4	H		agree
+L24	3	qb	H		agree
+L24	4	p	H		agree
+L24	5	3	M	B:y	differ
+L24	6	4	H		agree
+L24	7	ee	M	B:e	differ
+L24	8	y	H		agree
+L24	9	ls	H		agree
+L24	10	p	H		agree
+L24	11	4	H		agree
+L24	12	0	H		agree
+L24	13	ls	H		agree
+L24	14	+	H		agree
+L24	15	3	H		agree
+L24	16	wb	H		agree
+L24	17	tz	M	B:th	differ
+L24	18	8	H		agree
+L24	19	ls	H		agree
+L24	20	qb	H		agree
+L24	21	4	H		agree
+L24	22	8	H		agree
+L24	23	7	H		agree
+L24	24	7	H		agree
+L24	25	z	H		agree
+L24	26	4	H		agree
+L24	27	S	H		agree
+L24	28	z	H		agree
+L24	29	+	H		agree
+L24	30	9	H		agree
+L24	31	iii	H		agree
