@@ -6494,3 +6494,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 05:02 | FT4-antt-msliv0638-brochado-1712 (account-4) | claim: antt-msliv0638-brochado-1712 -- BL Add MS 20819 / 15182 catalogue read, REQUEST.md copy request, ASKS row, While waiting; cap USD 4, box 30 min from 05:03 UTC
 2026-10-03 05:02 | FT4b-sp54-maclean-1745 (account-4) | claim: ciphers/sp54-maclean-1745, read Lyon in Mourning vol.1 full text for crib list / any decipherment of seized letters
 2026-10-03 05:03 | GAPS24-na-suriname-map-1781 (account-4) | claim: secondary pairs of remaining 2077 cipher entries vs nota2078.tsv (pre-registered, script-only); cap USD 4, box 25 min from 05:04 UTC
+2026-10-03 05:03 | FT4d-naf14913-rousseau-venice-1743 (account-4) | claim: naf14913-rousseau-venice-1743 -- pooled f.206+f.216v consistency run (prereg before scoring); cap USD 5, box 30 min from 05:04 UTC, disk only
