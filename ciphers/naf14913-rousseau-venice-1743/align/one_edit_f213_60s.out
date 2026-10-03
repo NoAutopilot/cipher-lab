@@ -1,0 +1,11 @@
+07:32:33
+pair f213: groups 84, distinct 58, slip letters 262, words 57, maxlen 12
+REAL E0 (no edit) = False (0.8 s)  (True fit / False proved none / None timed out)
+REAL E (<= 1 edit) = 1; timed out False (40.1 s)
+single edits giving a fit: 1 of 169 (timed out 0)
+  W at group 73 (368)
+CONTROL (s wrong slip (words shuffled), n=40): E=1 in 0 (0.000); timeouts counted high 0; among resolved draws E=1 in 0 of 40 (descriptive)
+CONTROL (g group shuffle, n=40): E=1 in 16 (0.400); timeouts counted high 16; among resolved draws E=1 in 0 of 24 (descriptive)
+GATE NON-INFORMATIVE (one-edit fit not discriminating) (E_real=1, control shares {'s wrong slip (words shuffled)': 0.0, 'g group shuffle': 0.4})
+exit 1
+07:44:36
