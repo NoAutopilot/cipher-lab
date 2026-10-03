@@ -1,0 +1,19 @@
+crop	run	gloss	before	after	notes
+R_L01	877	Wratislau?	chez	qui	gloss cut at top edge of crop, only '...tislau' fully visible
+R_L01	107	Schonborn	que	et
+R_L02	864	le Roy de Prusse	que	aussi
+R_L02	754	le Roy de Pol:	que	s'en	gloss abbreviated 'Pol:'
+R_L03	73	Ugen	de	Ensuite	gloss seen at bottom edge of R_L02 (cut in R_L03)
+R_L03	98	Ugen	chez	et
+R_L03	82	Schonborn	avec	il
+R_L04	240.451.560.235	du nord	affaires	et	gloss 'du nord' sits over 240.451 only; written 'de nord'? or 'du nord'
+R_L04	98	Ugen	informé	aiant	run at start of next line (seen in R_L05 as '98:'); gloss at bottom of R_L04
+R_L07	864	le Roy de Prusse	par	de	gloss in left margin
+RB_L01	107	Schonborn	a?	dit	gloss in left margin above; preceding line end only partly visible
+RB_L01	737.864.285.879.313.560.434.714.163?.237.724.733	l'Empereur le Roy de Prusse et Hannovre, forment une armée de vingt mille	que	(line end)	run continues on next line with no clear word (353...); 163 could be 103; 879 could be 874
+RB_L02	353.107.551.82.237.203.562.102.83	hommes qu'il declarent	(line start)	ensuite	continuation of RB_L01 run; mark after 107 looks like a comma
+RB_L02	155.102.542.197?.593?.240.451.560	aux Puissances du nord	ensuite	(line end)	197 could be 192; 593 could be 583; run continues on next line with no clear word (610...)
+RB_L03	610.552.444?.644.109?.610.539?.237.341.272.898	qu'on ne voye? plus de guerre dans l'Empire	(line start)	voila	continuation of RB_L02 run; 444 could be 449; 109 could be 107; 539 could be 534
+RB_L04	107	Schonborn	de	mais	gloss in left margin; 'le but de' ends previous line
+RB_L05	662?.341.240.561.447.610.100.356	vo?e guerre du nord et , pirer?	a	et	gloss partly illegible; 662 could be 602; 561 could be 560
+RB_L06	714.645?.332.654.287.585.219.136.94.229.901	une vigoureuse campagne contre la France	cela	mais	'une' written above start; 645 could be 648

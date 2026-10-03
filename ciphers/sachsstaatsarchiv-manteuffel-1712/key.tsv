@@ -156,3 +156,9 @@ code	value	grade	source	note
 401	o	C	Krauske 1893, Loc. 694/10 f.5	passes agree
 700	et	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: brace joins 700 and 1000
 1000	et	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: brace joins 700 and 1000
+98	Ilgen	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	3 glossed occurrences, all Ilgen; table may differ from Krauske's (73, 82 conflict, HYPOTHESES.md)
+107	Schonborn	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	6 single-code glosses Schonborn (+1 inside 402.975.107 'le C Schonborn'); table may differ from Krauske's
+754	le Roi de Pologne	C	period interlinear gloss, Loc. 694/08 f.423 (frame 0528), GAPS195 3 Oct 2026	gloss 'le Roy de Pol:', 1 occurrence; Krauske 150 is also le Roi de Pologne (homophone or second table)
+864	le Roi de Prusse	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	4 single-code glosses; Krauske 230/252/257 also le Roi de Prusse
+877	Bartholdi	M	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	2 occurrences; gloss partly cut / letters doubtful in the passes (Bartholdi, Rattolti?, Wratislau?)
+879	Hannovre	C	period interlinear gloss, Loc. 694/08 f.422v (frame 0528), GAPS195 3 Oct 2026	1 single-code gloss; also inside the f.423 run glossed '... et Hannovre'

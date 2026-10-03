@@ -1,0 +1,29 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	f.423	R_L01	877	Bartholdi	M	gloss cut at crop top; A Bartholdi?, B Wratislau?; left page 877 B reads Bartholdi
+2	f.423	R_L01	107	Schonborn	C	both passes
+3	f.423	R_L02	864	le Roy de Prusse	C	both
+4	f.423	R_L02	754	le Roy de Pol	C	both; written "Pol:"
+5	f.423	R_L03	73	Ilgen	C	A Ilgen, B Ugen; same letter shapes as 98's gloss
+6	f.423	R_L03	98	Ilgen	C	A Ilgen, B Ugen
+7	f.423	R_L03	82	Schonborn	C	written Schonbofn
+8	f.423	R_L04	240.451.560.235	du nord	C	gloss over 240.451 only
+9	f.423	R_L05	98	Ilgen	C	
+10	f.423	R_L07	864	le Roy de Prusse	C	gloss in margin
+11	f.423	RB_L01	107	Schonborn	C	gloss in margin
+12	f.423	RB_L01	737.864.285.879.313.560.434.714.163.237.724.733	l'Empereur le Roy de Prusse et Hannovre forment une armée de vint mille	C	run continues on next line; A notes "l'Empereur et Roy"
+13	f.423	RB_L02	353.107.551.82.237.203.562.102.83	hommes qu'il declarent	C	comma after 107; 562 doubtful (567) both passes
+14	f.423	RB_L02	155.102.542.197.593.240.451.560	aux Puissances du nord	C	593 doubtful (583) both passes
+15	f.423	RB_L03	610.552.449.644.109.610.579.237.341.272.898	qu'on ne veut plus de guerre dans l'Empire	C	449 (A) vs 444 (B), 579 (A) vs 539 (B): reconciled 449, 579 from zoomed crop (hand's 9 = y-form, 7 = J-form); gloss 'veut' (A) / 'voye' (B)
+16	f.423	RB_L04	107	Schonborn	C	
+17	f.423	RB_L05	662.341.240.561.447.610.100.356	voye guerre du nord cet hiver	M	first gloss word doubtful (voye/vo?e); A 'cet hiver', B 'et , pirer?'
+18	f.423	RB_L06	714.645.332.654.287.585.219.136.94.229.901	une vigoureuse campagne contre la France	C	645 doubtful (648) both
+19	f.422v	L_L01	98	Ilgen	C	A Hjen?, B Hgen; same shape as f.423 'Ilgen'
+20	f.422v	L_L02	107	Schonborn	C	
+21	f.422v	L_L02	879	Hannovre	C	
+22	f.422v	L_L02	115.643.447.197.106.585.583.636	avancer les troupes	M	partial gloss: avancer over 643.447, les troupes over 585.583; 106 may be 10.6 (both passes)
+23	f.422v	L_L03	864	le Roy de Prusse	C	
+24	f.422v	L_L04	107	Schonborn	C	
+25	f.422v	L_L04	864	le Roy de Prusse	C	
+26	f.422v	L_L07	877	Bartholdi	M	A Rattolti?, B Bartholdi
+27	f.422v	L_L07	98		-	unglossed (B placed 'le C. Stenborn' here; reconciled to run 28 from zoom: gloss sits above the next line's 402.975)
+28	f.422v	L_L07	402.975.107	le C Schonborn	M	gloss read 'le C. Stanborn/Stenborn' by both passes; placement A

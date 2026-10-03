@@ -22,7 +22,7 @@ contradicts an existing key.tsv value (Krauske 1893) is not overwritten: logged 
 (rule 4), with both witnesses.
 Also reported, not a gate: single-code glosses vs key.tsv where the code is in Krauske's table (agree / disagree).
 
-## Addendum (3 Oct 2026, ~19:00 UTC), before any alignment or statistic was run
+## Addendum (3 Oct 2026, 18:50 UTC by the clock), before any alignment or statistic was run
 --max-chunk 8 cannot hold a name glossed over one code (Schonborn, Bartholdi, le Roy de Prusse: 9-13 letters), so it
 would force a misalignment on every single-code gloss. Changed to --max-chunk 14 (the tool's own default); nothing else
 changed. Also reported beside S (not a second gate): S restricted to codes occurring inside multi-code runs only, since

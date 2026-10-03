@@ -1,0 +1,12 @@
+crop	run	gloss	before	after	notes
+L_L01	98	Hjen?	concert.	se vojant	line-initial, sits in margin position; small gloss above reads Hjen/Hyen/Ayen (doubtful); could be a paragraph number, but 98 recurs in-text in L_L07; also visible at top of L_L02 (same token, not counted twice)
+L_L02	107	Schonborn	que	écrivit	gloss spelled Schonborn
+L_L02	879	Hannovre	à	de faire
+L_L02	115.643.447.197.10?6.585.583.636	avancer | Les troupes	incessament	mais	gloss 'avancer' sits over ~643/447; 'Les troupes' over ~585/583; visible gap inside '10 6', read as 106? (could be 10.6); continues partly cut at top of L_L03
+L_L03	864	le Roy de Prusse	avec	il a été
+L_L04	107	Schonborn	cela	luy a fait	gloss looks Schonbo(r)n
+L_L04	864	le Roy de Prusse	que si	vouloit	line-initial
+L_L07	877	Rattolti?	de	et de ses deux confreres	gloss reads Rattolti/Battolti, doubtful first letter
+L_L07	98		posté	de cons[entir]	no gloss
+L_L07	402.975.107	le C. Stanborn?	rapport que	m'a fait	gloss reads 'le C. Stanborn' (or Stanhorn), sits slightly left over 402-975
+TOTAL code tokens: 19
