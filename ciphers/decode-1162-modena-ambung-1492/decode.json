@@ -1,0 +1,28 @@
+{
+ "target": "ciphers/decode-1162-modena-ambung-1492",
+ "note": "MOD1162, 3 Oct 2026: R1162 p.1 cipher groups (1168 sign labels, reconciled from two blind passes) decoded with decode-1168's key.tsv; grades per PREREG-MOD1162.md via votes.tsv (score_g.py): C = 1168 C-sign agreeing with 1162's own period gloss, S = key-transferred (gate passed), M = disagrees with the gloss or uncertain sign; code groups (T o, t, s, e) are nomenclator codes: exceptions.tsv gives their value from the period gloss above them (C) or by repeat of a glossed code (I).",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "../decode-1168-modena-costabili-1492/key.tsv",
+   "format": "tsv",
+   "line_column": "line",
+   "style": "concat",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "votes": {
+    "file": "votes.tsv",
+    "value_column": "value"
+   },
+   "voted_grade": "C",
+   "unvoted_grade": "S",
+   "disagree_grade": "M",
+   "header": [
+    "# decode-1162-modena-ambung-1492 p.1 cipher groups, decode-1168 key (MOD1162, 3 Oct 2026); gloss in gloss.tsv",
+    "# tokens {total}: {HCSMIU}"
+   ],
+   "exceptions": "exceptions.tsv",
+   "exception_grade_overrides_conf": true
+  }
+ ]
+}

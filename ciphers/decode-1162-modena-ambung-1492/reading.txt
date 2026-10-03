@@ -1,0 +1,17 @@
+# decode-1162-modena-ambung-1492 p.1 cipher groups, decode-1168 key (MOD1162, 3 Oct 2026); gloss in gloss.tsv
+# tokens 77: H 0, C 32, S 10, M 27, I 5, U 3
+p1L01_1 | ilpolernt
+p1L01_2 | [[del arciuescouato d Strigonio?]]
+p1L02_1 | [[la Regina]]
+p1L03_1 | [[sua Mta]]
+p1L04_1 | [[sua Mta]]
+p1L05_1 | poea
+p1L05_2 | lstima
+p1L05_3 | [[d arciuescouo]]
+p1L06_1 | loserliri·no
+p1L06_2 | [[?]]
+p1L06_3 | inpreeipttio
+p1L07_1 | [[sua Mta]]
+p1L08_1 | aamil·i·
+p1L08_2 | [[d arciuescouo]]
+p1L08_3 | nieomperino

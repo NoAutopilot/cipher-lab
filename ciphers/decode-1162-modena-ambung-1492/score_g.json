@@ -1,0 +1,51 @@
+{
+ "G_real": 0.7288,
+ "G_ctrl_mean": 0.4186,
+ "G_ctrl_p99": 0.5254,
+ "G_ctrl_max": 0.5593,
+ "p_emp": 0.0,
+ "gate": "PASS",
+ "coverage": 0.9516,
+ "letter_signs": 62,
+ "J_real": -1.34,
+ "J_ctrl_median": -1.838,
+ "J_ctrl_p95": -1.512,
+ "J_gloss": -1.134,
+ "groups": {
+  "p1L01_1": {
+   "decoded": "ilpolernt",
+   "gloss": "il gouerno del arciuescouato d Strigonio",
+   "lcs": 7
+  },
+  "p1L05_1": {
+   "decoded": "poea",
+   "gloss": "pocha estima",
+   "lcs": 4
+  },
+  "p1L05_2": {
+   "decoded": "lstima",
+   "gloss": "pocha estima",
+   "lcs": 5
+  },
+  "p1L06_1": {
+   "decoded": "loserlirino",
+   "gloss": "Seruipiana et lo arciuescouo",
+   "lcs": 7
+  },
+  "p1L06_3": {
+   "decoded": "inpreeipttio",
+   "gloss": "in preprefino",
+   "lcs": 8
+  },
+  "p1L08_1": {
+   "decoded": "aamili",
+   "gloss": "famiglia d arciuescouo",
+   "lcs": 5
+  },
+  "p1L08_3": {
+   "decoded": "nieomperino",
+   "gloss": "ne comping",
+   "lcs": 7
+  }
+ }
+}

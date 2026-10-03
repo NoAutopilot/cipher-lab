@@ -1,0 +1,13 @@
+{
+ "slug": "decode-1162-modena-ambung-1492",
+ "name": "DECODE R1162, Beltrame Costabili (Esztergom) to Eleonora d'Aragona, 27 Feb 1491/2, ASMo Amb. Ung. b.2/20 no.6: cipher groups inside a clear Italian letter",
+ "language_candidates": ["it"],
+ "ciphertext": "ag cbgqdyz | To | .t. | .s. | .s. | cbq+ | gTTza8+ | Tozo | gbTTodgadatyb | .e. | aycdoqac1zab | .s. | 7+8agvat | Tozo | yaqb8codayb",
+ "ciphertext_source": "ciphers/decode-1162-modena-ambung-1492/ciphertext.tsv (MOD1162, 3 Oct 2026: two blind Sonnet passes over 9 iiif_lines crops of DECODE IMG_R1162_I5837_P1.png, reconciled; labels in decode-1168's sign set)",
+ "alphabet": "decode-1168 sign labels (+ T TT a b c d e f g o p q r s x y z ~ 1 4 6 7 8 ? nd); letter signs plus dotted nomenclator codes",
+ "constraints": ["same envoy, posting and month as decode-1168 (key.tsv there)", "period interlinear gloss over most groups (gloss.tsv)"],
+ "cheap_tests_in_order": ["decode-1168 key on the groups, gloss-agreement G vs band-shuffled key (PREREG-MOD1162.md)"],
+ "judge": {"language": "it16dip", "control_samples": 200},
+ "written": "3 Oct 2026, MOD1162 (account-2 worker)",
+ "cheap_test_done": "3 Oct 2026 MOD1162: G 0.729 vs band-shuffle control p99 0.525 (max 0.559, 1000 draws) PASS; raw pass A 0.705 vs 0.508, raw pass B 0.645 vs 0.484; judge it16dip on 62 decoded letters -1.340 vs shuffled-key median -1.838 (descriptive)"
+}

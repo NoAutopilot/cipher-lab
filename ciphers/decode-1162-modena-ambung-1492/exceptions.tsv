@@ -1,0 +1,16 @@
+line	pos	value	grade	reason
+p1L01_2	1	[del arciuescouato d Strigonio?]	M	code group; gloss over L01 spans ag+cbgqdyz+T o, share of it not separable
+p1L01_2	2		M	code group; gloss over L01 spans ag+cbgqdyz+T o, share of it not separable
+p1L02_1	1	[la Regina]	C	dotted code; period gloss directly above
+p1L03_1	1	[sua Mta]	C	dotted code; period gloss directly above
+p1L04_1	1	[sua Mta]	I	dotted code, no gloss; value by repeat of the same sign glossed on L03/L07; pass A missed it
+p1L05_3	1	[d arciuescouo]	C	code group; period gloss directly above
+p1L05_3	2		C	code group; period gloss directly above
+p1L05_3	3		C	code group; period gloss directly above
+p1L05_3	4		C	code group; period gloss directly above
+p1L06_2	1	[?]	M	dotted sign read by pass B only; no gloss
+p1L07_1	1	[sua Mta]	C	dotted code; period gloss directly above
+p1L08_2	1	[d arciuescouo]	I	code group, gloss written as one with L08_1 'famiglia d arciuescouo'; same code as L05_3
+p1L08_2	2		I	code group, gloss written as one with L08_1 'famiglia d arciuescouo'; same code as L05_3
+p1L08_2	3		I	code group, gloss written as one with L08_1 'famiglia d arciuescouo'; same code as L05_3
+p1L08_2	4		I	code group, gloss written as one with L08_1 'famiglia d arciuescouo'; same code as L05_3

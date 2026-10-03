@@ -1,6 +1,7 @@
 # decode-1162-modena-ambung-1492
 
-Status: open
+Status: partial
+(MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
 ## What this is
@@ -308,3 +309,101 @@ Next step (not run): rebuild Costabili's key from Vestigia 3016 (cipher original
 Berzeviczy CLV (clear), then the DECODE logged-in fetch for 1162 (LIKELY-4's command) and apply; ~$4.
 
 Gate re-run (GF4-BATCH19, 3 Oct 2026): `decode-1162-modena-ambung-1492: open (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1).
+
+## MOD1162: decode-1168's key applied to R1162 (account-2 worker, LANE-A2PUSH3, 3 Oct 2026, 14:20-14:3x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-03-acct2-mod1162.md`. Intake gate, 14:20 UTC:
+```
+$ python3 tools/intake_gate_check.py decode-1162-modena-ambung-1492
+decode-1162-modena-ambung-1492: open (line 3) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+
+**Fetch (the LIKELY-4 step, now run).** One DECODE browser login, 14:21 UTC: `NODE_PATH=$(npm root -g) node
+tools/decode_browser_login.js 1162 <scratch> --fetch-page ImagesList,DocumentsList --fetch
+'https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt' --guess-fullsize --max-files 6 --delay 1800`.
+After the 28 Sept access extension everything came through, nothing was the forbidden.png placeholder: both full-size
+images (2592x3888 PNG, sha1s in `images/manifest.json`, committed as 1400-px JPEGs `images/s_IMG_R1162_*.jpg`) and
+**document 3593**, DECODE's own transcription (transcriber "RP", 11 Nov 2020, 98 min, manual), committed unmodified as
+`decode/DOC_R1162_D3593_3593.txt`. So the 24 Sept "blocked on image resolution" and "document unreachable" findings
+above are superseded. Requests: de-crypt.org 1 login, 3 pages, 6 files, 1.8 s apart.
+
+**What the leaf is.** It is a letter in clear Italian with short runs of cipher signs, and a **period interlinear gloss
+over most runs** ("la Regina", "sua M.ta", "pocha estima", "famiglia d arciuescouo", "in pre...", "ne comp...",
+"il gouerno del arciuescouato d Strigonio"); DECODE's document tags these glosses as PLAINTEXT. Verso (image 2) is clear
+text, signature and address only ("Steig. 27 fibr 1491 ... Bel. Cost..."; "Helyonore de Aragonia Duchesse Ferrarie").
+The date is written **1491** on the letter and on the archive's target strip ("1491 év 02 hó 27 nap"); DECODE's record says
+1492. Recorded, not settled here: if the year starts 25 March (Ferrara), 27 Feb 1491 is 27 Feb 1492 in modern reckoning,
+three weeks before decode-1168's 20 Mar 1492.
+
+**Pre-registration** `PREREG-MOD1162.md`, commit 53c61136, pushed before any decode or score. Statistic G = pooled
+LCS(decoded, gloss) / keyed signs over the letter groups; control = 1168's key with values shuffled within its grade
+bands (C among C, M among M), 1000 seeded draws; gate G > control p99 and G >= 0.50. The second named control (1168's key
+on a different-envoy Modena cipher) was not run: there is none on disk (only 1162 and 1168 here).
+
+**Transcription** (TRANSCRIPTION.md; crops before any vision call):
+`python3 tools/iiif_lines.py --image IMG_R1162_I5837_P1.png --out <scratch>/crops --region 370,650,1963,2250 --centres
+128,509,594,691,1049,1146,1554,2013,2110 --prefix p1 --lines-per-crop 1 --top-margin 75 --bottom-margin 35 --debug`,
+which gave 9 line crops (1963x~360, each with the gloss above it). Two blind Sonnet passes (A in order, B in reverse), each one call
+over the 9 crops, labels from 1168's sign list and no values shown: A has 13 runs and 82 signs, B 15 runs and 84 signs.
+**err_2reader 0.146** (12 sign edits / 82, crop-pooled; part of it is naming, since A wrote "2"/"3" where B wrote "z"); err_true not
+measurable (no benchmark item). The reconciliation was done by this worker from 2 crop views (L01, L08) plus agreement. Its choices:
+drop the three "~" that both passes flagged as possible dashes (DECODE's transcription has no sign there); "2" -> z (B; "2"
+is not in the label set); keep A's "a g" at the head of L01 (the gloss "il" sits over it); include "y a" in L08_3 (the
+gloss "ne" sits over it). **This reconciler had seen the key and DECODE's transcription**, so the result is also given on
+each raw pass below. `ciphertext.tsv` has 77 signs in 15 runs: 7 letter groups of 62 signs, and 8 dotted or short code
+groups. Of the 77 signs, 25 carry conf '?' where the passes split. `gloss.tsv` gives pass A's gloss reading verbatim, as
+pre-registered. Signs read: 166 over the two passes, for 3 subagent and worker units. Cost per 100 signs is the
+orchestrator's figure to read.
+
+**Result (rule 3, both numbers side by side; `score_g.py`, `--check` exits 0, `score_g.json`):**
+
+| ciphertext | G target | control mean | control p99 | control max (1000) | gate |
+|---|---|---|---|---|---|
+| reconciled | **0.729** | 0.419 | 0.525 | 0.559 | PASS |
+| raw pass A (scratch re-run) | 0.705 | -- | 0.508 | 0.541 | PASS |
+| raw pass B (scratch re-run) | 0.645 | -- | 0.484 | 0.516 | PASS |
+
+No control draw reached the target in any of the three (empirical p < 0.001). Coverage 95% of letter signs are in the key.
+That figure is descriptive: a value shuffle cannot change coverage. Per group, decoded vs gloss: "ilpolernt" / il gouerno;
+"poea" + "lstima" / pocha estima (TT=s, z=t, a=i, 8=m, +=a match); "loserlirino" / [lo] Seruipiana; "inpreeipttio" / in
+pre...; "aamili" / famiglia; "nieomperino" / ne comp[e]rino. The misses fall on signs 1168 already grades M or where
+the label set collides (g read as l, v and e; c read as p and g; q read as e and c), the same look-alike collisions that A2-COS2 named on f.12r.
+
+**Judge** (rule 7, pasted; spec `specs/decode-1162-modena-ambung-1492.json`, it16dip, the nearest era/register corpus on
+disk, on the 59 decoded letters of the letter groups):
+```
+FAIL language: score=-1.34, null_p99=-1.504, real_p05=-0.989, real_median=-0.808, mode=both, N=59
+FAIL - decode-1162-modena-ambung-1492 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Shuffled-key decodes through the same model have a median of -1.838 and a p95 of -1.512 (500 draws). The leaf's own period
+gloss scores **-1.134**, also below real_p05. So by rule 3's gloss paragraph this judge cannot decide at this length and
+register: it is not a negative. The gate is G, as pre-registered.
+
+**Reading** (`decode.json`, `python3 tools/decode_key.py ciphers/decode-1162-modena-ambung-1492 --check`: "reading up to
+date"): tokens 77: **H 0, C 32, S 10, M 27, I 5, U 3**. Grades, per the pre-registration through `votes.tsv`: C is a 1168
+C-sign whose value agrees with this leaf's gloss, or a code group read from the gloss directly above it. S is a key-transferred
+sign that was not contradicted. M is a sign that disagrees with the gloss or was read uncertainly. I is a code group valued by
+repeat of a glossed code (`exceptions.tsv`). The plaintext of the cipher runs comes from the period gloss (C), not from
+cryptanalysis. What this step adds is a control-backed check that **Costabili used the same sign key on 27 Feb as on
+20 Mar**, plus the nomenclator codes it shows: `.t.` = la Regina, `.s.` = sua M.ta (3x), `T o 3/z o` = d[el]
+arcivescovo (2x).
+
+Key source: `period` (decode-1168's key, rebuilt from that leaf's period gloss) and this leaf's own period gloss. Not
+classified for novelty (rule 10). VERIFIER WANTED flagged in ROOM.md.
+
+## Remaining gaps (MOD1162, 3 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 32, S 10, M 27, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2)
+- sign-label collisions (g, c, q, z; 25 conf-'?' signs) - blocker: not-attempted; err_2reader 0.146 and the M-graded misses above; next: one reconciliation unit by eye over crops L01/L05/L06/L08 against 1168's crops, or the owner's sign sorter for the joint 1162+1168 inventory, then re-run score_g.py and decode_key.py, ~$1.5
+- the clear text of the letter (about 35 lines, DECODE doc 3593 is a rough transcription with many '?') - blocker: not-attempted; not needed for the cipher test, needed for a full edition of the letter; next: one transcription pass of the clear lines from the 9 crops plus re-cut full-line crops, ~$3
+- code groups `T o` (L01) and `.e.` (L06, pass B only) - blocker: open-codes; one occurrence each, the L01 gloss not separable from the letter group's, the L06 sign unglossed and read by one pass
+
+## Escalation (MOD1162, 3 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525), MOD1162 3 Oct 2026
+- [x] clear-pages: verso and the clear lines read by DECODE doc 3593 (rough), fetched MOD1162 3 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: joint 1162+1168 alignment with tools/interlinear_align.py (1162's own 7 glossed groups as extra pairs, --prior 1168 key) to settle the collided labels; planned
+- [x] image-check: full-size DECODE images on hand, MOD1162 3 Oct 2026
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: reconcile the collided labels by eye over crops L01/L05/L06/L08 and re-run score_g.py, ~$1.5

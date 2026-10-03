@@ -33,6 +33,43 @@ def lcs(a, b):
     return prev[-1]
 
 
+def lcs_pairs(a, b):
+    """index pairs (i in a, j in b) of one longest common subsequence."""
+    n, m = len(a), len(b)
+    L = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            L[i][j] = L[i + 1][j + 1] + 1 if a[i] == b[j] else max(L[i + 1][j], L[i][j + 1])
+    i = j = 0; out = []
+    while i < n and j < m:
+        if a[i] == b[j]:
+            out.append((i, j)); i += 1; j += 1
+        elif L[i + 1][j] >= L[i][j + 1]:
+            i += 1
+        else:
+            j += 1
+    return out
+
+
+def votes(key, groups, gloss):
+    """votes.tsv rows reproducing PREREG grades through tools/decode_key.py: a C-key sign gets a vote (agree -> C,
+    disagree -> M); an M-key sign gets a vote only when it disagrees with the gloss (-> M), else none (-> S)."""
+    rows = []
+    for ln, signs in groups.items():
+        if gloss.get(ln, ("", ""))[1] != "letters":
+            continue
+        g = fold(gloss[ln][0])
+        keyed = [(p, key[s][0]) for p, s in enumerate(signs, 1) if s in key]
+        al = dict(lcs_pairs([fold(v) or "#" for p, v in keyed], list(g)))
+        for k, (p, v) in enumerate(keyed):
+            grade = key[signs[p - 1]][1]
+            if k in al and grade == "C":
+                rows.append((ln, p, v))
+            elif k not in al:
+                rows.append((ln, p, "#disagree"))
+    return rows
+
+
 def load():
     key = {r["sign"]: (r["value"], r["grade"]) for r in csv.DictReader(open(KEY), delimiter="\t")}
     groups = {}
@@ -84,10 +121,15 @@ def main():
            "J_gloss": round(gloss_j, 3),
            "groups": {ln: {"decoded": d, "gloss": gloss[ln][0], "lcs": m} for ln, (d, m) in per.items()}}
     out = json.dumps(res, indent=1, ensure_ascii=False) + "\n"
+    vt = "line\tpos\tvalue\n" + "".join(f"{a}\t{b}\t{c}\n" for a, b, c in votes(key, groups, gloss))
     if "--check" in sys.argv:
+        ok = ok2 = True
+        ok2 = (HERE / "votes.tsv").read_text() == vt
         ok = (HERE / "score_g.json").read_text() == out
-        print("score_g.json up to date" if ok else "STALE score_g.json"); sys.exit(0 if ok else 1)
+        print("score_g.json, votes.tsv up to date" if ok and ok2 else "STALE score_g.json or votes.tsv")
+        sys.exit(0 if ok and ok2 else 1)
     (HERE / "score_g.json").write_text(out)
+    (HERE / "votes.tsv").write_text(vt)
     print(out)
 
 
