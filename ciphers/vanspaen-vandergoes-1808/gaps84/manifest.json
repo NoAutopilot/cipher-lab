@@ -1,0 +1,4 @@
+{"source": "Nationaal Archief 2.01.08 inv. 261, service.archief.nl IIIF, /full/450,/0/default.jpg, fetched 3 Oct 2026 (GAPS84)",
+ "scan_list": "na_2.01.08_261_scans.tsv",
+ "sampled_scans_450px": "1,15,29,...,785 (every 14th from 1, 57 scans) and 8,22,...,386 (every 14th from 8, 28 scans); only these two committed, the rest scratch",
+ "files": {"inv261_s001_450.jpg": "scan 1, wrapper 'Pruisen' 1 Jan - 20 Feb 1808", "inv261_s218_450.jpg": "scan 218, wrapper 'Pruisen, Extraordinair Envoijé J. Goldberg, 1809'"}}
