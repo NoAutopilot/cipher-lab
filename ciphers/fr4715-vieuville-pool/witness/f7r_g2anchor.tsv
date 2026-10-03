@@ -1,0 +1,12 @@
+run	token	layer	code	located	key71	verdict
+L01.1.1	d18	mots	18		en	not-located:shared
+L01.3.2	d41	mots	41		par	not-located:empty
+L02.1.1	d16	mots	16		de	not-located:shared
+L03.1.1	d11	mots	11		Au	not-located:empty
+L03.2.1	t11	places	11	de	ville	conflict
+L03.3.1	b65	persons	65	la folie	Mr de la follye	match
+L05.2.1	d12	mots	12	bon	bon	match
+L05.3.1	d42	mots	42		pour	not-located:shared
+L05.3.1	d99	mots	99		vous	not-located:shared
+L07.1.1	d33	mots	33	d. ma	mon	conflict
+L09.1.1	b7	persons	7		Roy	not-located:empty

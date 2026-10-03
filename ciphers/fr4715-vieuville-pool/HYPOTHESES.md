@@ -65,3 +65,13 @@ material for this instrument, not a re-tune.
 | instrument | control | target | verdict |
 |---|---|---|---|
 | Tomokiyo's letter table applied to each f.7r run (nothing learned), pooled LCS vs own gloss (scripts/f7r_fixedkey.py) | permuted key, 10,000: T mean 116.1, p99 137, max 152, meanR 0.318; positive control K2 synthetic: D_K2 0.566, PASS 20/20 | T 235, R 0.644, D 0.326 (gate 0.283); 16 of 19 runs p < 0.01 | PASS: f.7r follows Tomokiyo's letters; G1 FAILs were aligner misfit, not a different key; letters only, no slot read |
+
+## G2 key no.71 on f.7r, LCS-anchored (GAPS91, 3 Oct 2026, account-4; PREREG6_g2anchor.md, a19bbf6a)
+| family | control | control number | target number | result |
+|---|---|---|---|---|
+| key no.71 cell in the mark's layer vs the f.7r gloss words located by fixed-key LCS anchors (scripts/f7r_g2anchor.py), PREREG3 match rule | label permutation (exact 24) and random code (10,000, seed 71) | p95 1 (max 2) and p95 0 (max 2) | 11 items, 4 located: 2 match, 2 conflict; SHARE 0.500; all 18 tokens: 5 located, 3/2, 0.600 | NON-TEST (scorable 4 < 8): no slot read, no grade change |
+Key no.71 re-gating is closed by PREREG3's clause: [retired] instrument = key no.71 against glosses or printed answer lists
+with the token-subset match. Only a period gloss over one of no.44's slot codes (.03, .07, .49, .57, .6) reopens the slots.
+Logged as data, not a gate (seen after scoring): the key no.71 cells of the unlocated f.7r codes equal Cabinet Noir's
+f.7r gloss values for dotted 20, 16, 42, 99, 47, 11, two-dot 12 and barred 7. Conflicts by the locator (two-dot 11 "de"
+vs "ville", dotted 33 "d. ma" vs "mon") are the locator's split of a longer gloss, not readings; not merged.
