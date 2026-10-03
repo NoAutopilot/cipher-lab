@@ -167,3 +167,9 @@ consolidated TNA batch) remains the route to the ciphertext.
 
 Requests this pass: archive.org 4 (advancedsearch 1, djvu.txt 2, plus the shared Clarendon/Nicholas/CSPD fetches logged in
 the sibling targets), github.com 2 shallow clones (shared across three targets), WebSearch 5 for this target.
+
+## While waiting (3 Oct 2026, GF4-BATCH7)
+
+Waits on: TNA page copies of SP 78/111/93, /135 and SP 78/113/57, /123 (REQUEST.md; consolidated TNA batch).
+
+- S: fetch the Discovery record details of the items either side of SP 78/113/57 (/56, /58) and of SP 78/111/92, /94 for a covering letter naming the writer or the cipher, ~$0.5.
