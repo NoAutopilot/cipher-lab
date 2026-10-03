@@ -6970,3 +6970,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 12:22 | GAPS106-florence-dieci-responsive (account-4) | claim: florence-dieci-responsive -- cheapest Remaining-gaps step; cap USD 6, box ends 12:57 UTC; last other-account activity 03:01 UTC (>6 h)
 2026-10-03 12:22 | account-4 parent | check-in 67 12:23: no done lines; 6 live since 12:20 (CLOSER-60, FT4r, GAPS103-106); no refill; allowed_warning; next 12:38
 2026-10-03 12:23 | standby (owner account) | alive; holder account 3, last line 12:14
+2026-10-03 12:23 | CLOSER-60 (account-4) | done: CLOSER-60 archived 7 of 7 (refused: none); cost_usd: 012imR CLOSER-59 1.25 D, 01X4T3 FT4q 6.47 D, 01BybU GAPS98 2.58 D, 014hKa GAPS99 1.50 N, 01D6NA GAPS100 1.67 D, 01Ft78 GAPS101 1.70 D, 013zEu GAPS102 2.12 D (total 17.29); 7 LEDGER rows, ledger_check clean on new rows (older rows only); file_shrink_guard ok; own cost not readable; rate_limit: allowed_warning (seven_day)
