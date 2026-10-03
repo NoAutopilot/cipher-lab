@@ -1,0 +1,68 @@
+{
+ "lines_rasm": {
+  "L01": "OWLDOASLDWH",
+  "L02": "OHBWLKFBWOBBBALKWEBBSKBDKBDBBSABESFRELBA",
+  "L03": "SBBWSDAWBBKBALKA",
+  "L04": "FBEKWFBEMWDBBSBRKMWSRLMBBAKFRMMWBDBSRBFBEMWLBBD",
+  "L05": "KSSBMWMHMDKSBR",
+  "L06": "SRKWMMWBDBRBBEBRKDWELDELKLELLLLAMHLM",
+  "L07": "SLLLDSWLLD"
+ },
+ "seed": 2,
+ "results": {
+  "F1": {
+   "rasm": "ELBKLSBFDBR",
+   "len": 11,
+   "LINE": {
+    "d": 0.6364,
+    "null_mean": 0.6363,
+    "null_p05": 0.5454545454545454,
+    "p": 0.747
+   },
+   "ALL": {
+    "d": 0.6364,
+    "null_mean": 0.5444,
+    "null_p05": 0.45454545454545453,
+    "p": 0.9935
+   },
+   "power_LINE": 0.994,
+   "verdict": "control-backed negative"
+  },
+  "F2": {
+   "rasm": "MHMDRSWLALLO",
+   "len": 12,
+   "LINE": {
+    "d": 0.6667,
+    "null_mean": 0.6442,
+    "null_p05": 0.5,
+    "p": 0.8535
+   },
+   "ALL": {
+    "d": 0.5833,
+    "null_mean": 0.558,
+    "null_p05": 0.4166666666666667,
+    "p": 0.8725
+   },
+   "power_LINE": 0.984,
+   "verdict": "control-backed negative"
+  },
+  "F2b": {
+   "rasm": "LAALOALAALLOMHMDRSWLALLO",
+   "len": 24,
+   "LINE": {
+    "d": 0.6667,
+    "null_mean": 0.6954,
+    "null_p05": 0.625,
+    "p": 0.3925
+   },
+   "ALL": {
+    "d": 0.6667,
+    "null_mean": 0.6243,
+    "null_p05": 0.5416666666666666,
+    "p": 0.948
+   },
+   "power_LINE": 1.0,
+   "verdict": "control-backed negative"
+  }
+ }
+}

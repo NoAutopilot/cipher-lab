@@ -319,25 +319,51 @@ running reading.
 Calls: 1 vision subagent (Opus). Requests: mizanproject.org 1, downloads.wortschatz-leipzig.de 1, tanzil.net 1 (sha1 matches the
 GAPS93 manifest), all >= 3 s apart. No decipherment attempted.
 
-## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93, GAPS94, GAPS98)
+## GAPS104-sufi-fiddle (3 Oct 2026, account-4): formula candidates vs ciphertext_fig1.txt, rasm edit distance with a Quran null
+
+Step (GAPS98 Verdict). Pre-registered and pushed before any result (`formula/PREREG.md`, `formula/formula_test.py`, commit
+aa6a41d3). Both sides reduced to rasm (dotless) classes so dot misreads do not count; statistic = minimum Levenshtein distance of
+the candidate against any substring of the sign string / candidate length; null = 2000 random Tanzil Quran spans of equal rasm
+length scored identically (it varies on the same axis); positive control = the candidate planted in L06 at 18.5 pct sign noise
+(GAPS87's two-reader split), 500 trials. Output `formula/results.json` (seed 1), `formula/results_seed2.json` (seed 2).
+
+| candidate (rasm) | L06 d | null mean | p (L06) | p (all lines) | power (L06) | verdict |
+|---|---|---|---|---|---|---|
+| F1 'ala kulli shay'in qadir (ELBKLSBFDBR, 11) | 0.636 | 0.635 | 0.752 / 0.747 | 0.995 / 0.994 | 0.998 / 0.994 | control-backed negative |
+| F2 muhammad rasul allah (MHMDRSWLALLO, 12) | 0.667 | 0.647 | 0.837 / 0.854 | 0.882 / 0.873 | 0.998 / 0.984 | control-backed negative |
+| F2b full shahada (24) | 0.667 | 0.694 | 0.407 / 0.393 | 0.953 / 0.948 | 1.000 / 1.000 | control-backed negative |
+
+(seed 1 / seed 2.) Neither formula fits the copy better than a random Quran span of the same length, and the planted control
+is found at p < 0.05 in 98-100 pct of trials, so at this copy's noise level the test could have seen either formula had it been
+written there in full. What remains is fragmentary: L06 g11-12 reads ain-lam | kaf-lam (rasm EL KL, 'al kul), the first four
+signs of F1, and L06 g15 lamalif mim ha2 lam? mim sits near mim-ha-mim-dal; a 4-sign agreement is inside the null (the full
+candidates, which contain them, score at the null mean). Grades unchanged (rule 4): 0 H, 0 C, 0 S, 4 M (muhammad, huwa, kamu,
+barakat; GAPS94/98), the rest I; no running reading. This is the fourth instrument on one hand copy (word-list match GAPS90/93,
+text reader GAPS94, vision reader GAPS98, formula fit GAPS104); a further model reading of the same copy is excluded (rule 3,
+third-attempt clause). Calls: 0 subagents, 0 vision. Requests: tanzil.net 1 (sha1 979b7902, = GAPS93 manifest). No
+decipherment attempted.
+
+## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93, GAPS94, GAPS98, GAPS104)
 Read so far: 4 words at M (muhammad L5 g4 and barakat L6 -- both readers; huwa L1 g1, kamu L4 g7 -- text reader GAPS94), the rest I, 0 H/C/S; no running reading.
 - independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (its holder never identified, Bulliet 2021) and Figure 1 is the same sheet as the folder image, so every image on record is one hand copy
 - language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
-- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; text-only reader (GAPS94) and blind vision reader (GAPS98, 3 Oct 2026) done: vision 6 scored items, S1 5/6 vs 5.12 (p 0.79), S3 vs text reader 5/6 vs 1.88 (p 0.010), S4 3/5 same skeleton vs 0.21 expected; 4 words at M, no running reading; next: script test of the two formula candidates the vision reader raised (L06 g13-15 'ala kulli shay'in qadir; L06 tail shahada) against ciphertext_fig1.txt's sign sequence with an edit-distance null over random Quran/formula spans, ~$1
+- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: waiting-on ASKS row 115 (a specialist reader of Malay-world Jawi, and the owner's sign sorter on fig1-tx/focus.tsv's 6 unsettled signs); four machine instruments are spent on the one copy: word lists (GAPS90 Tausug FAIL, GAPS93 Malay/Arabic PASS), text reader (GAPS94), vision reader (GAPS98, S3 p 0.010 convergence only), formula fit (GAPS104: F1 p 0.75, F2 p 0.84, F2b p 0.41 at power >= 0.98, control-backed negatives); a third model reading of the same copy is excluded by rule 3
 
-## Escalation (3 Oct 2026)
+## Escalation (3 Oct 2026; updated GAPS104)
 - [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
 - [n/a] clear-pages: an inscription, no clear text beside it
 - [n/a] known-keys: not a cipher on present evidence; script reading, no key
 - [x] print: Bulliet's own 2021 essay read in full (GF4-BATCH18); its Figure 1 diffed here (FT4)
 - [n/a] key-rebuild: no key involved in a script reading
 - [x] image-check: Figure 1 re-transcribed from 2500 px line crops (GAPS87, 3 Oct 2026): err_2reader 18.5 pct, look-alike residual 3.3 pct
-- [n/a] retry: no failed attempt with a changed knob to retry
-Verdict: keep going: 1 internal gaps; cheapest next: script test of the vision reader's formula candidates (L06 g13-15 'ala kulli shay'in qadir; L06 tail shahada) against ciphertext_fig1.txt's signs, edit distance vs a null of random formula/Quran spans of equal length, no vision call, ~$1
+- [x] retry: formula candidates from the GAPS98 reader tested by a script with a null and a planted control (GAPS104, 3 Oct 2026), both negative
+Verdict: parked: every gap has an outside blocker (the unlocated violin or a higher-resolution image of the object; Trimillos's reply on Tausug; ASKS row 115, a specialist Jawi reader and the owner's sorter on fig1-tx/focus.tsv)
 
-## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026)
+## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS104)
 
-Nothing here waits on a person for the next step: the zero-dependency action is the formula script test (Verdict above; GAPS98's vision reader converged with the text reader, S3 p 0.010; Tausug NT FAILed in GAPS90, Malay and Arabic passed the gate in GAPS93, the text-only reader of GAPS94 read 3 words at M). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
+The one action that depends on nobody: re-run `formula/formula_test.py` (and `malay-arabic/match2.py`) on any new candidate a
+specialist or the sorter yields; it takes seconds and needs no vision call. No further machine reading of the same copy is
+queued (rule 3). Outside waits: Trimillos's reply on Tausug, ASKS row 115, and any second copy or image of the violin.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 
