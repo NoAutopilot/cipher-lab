@@ -1,0 +1,13 @@
+crop	number	confidence	marks	alternative
+eye_01	664	high	none (trailing separator dot)	
+eye_02	268	high	none (trailing separator dot)	
+eye_03	329	medium	none	379 (middle digit looped 2 or hooked 7)
+eye_04	444	high	none	
+eye_05	347	medium	none; right edge tight	341 (last digit hooked 7 or 1)
+eye_06	63	high	none (trailing separator dot)	
+eye_07	664	high	none (trailing separator dot)	
+eye_08	306	high	none	
+eye_09	834	high	none (trailing separator dot)	
+eye_10	444	high	none (trailing separator dot)	
+eye_11	63	high	none; the 3 sits slightly lower and wider than the 6	
+eye_12	746	high	none (trailing separator dot)	
