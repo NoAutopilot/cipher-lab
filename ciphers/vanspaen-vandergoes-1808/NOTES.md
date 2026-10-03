@@ -543,18 +543,72 @@ nothing transcribed or decoded. Status word unchanged.
 - Requests: service.archief.nl 139 (cap 220), 1.6 s apart, no 4xx/5xx; no other host. Vision 4 (four contact
   sheets); subagents 0. Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54 and GAPS58, 3 Oct 2026)
+## GAPS61-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): NA catalogue pass for a Van Spaen key or ministry decipherment
+
+Step: the Verdict's cheapest step (new material in another inventory). Catalogue only; nothing transcribed or decoded.
+Clock read 08:25-08:32 UTC, 3 Oct 2026. Status word unchanged.
+- **NA 2.01.08 finding aid, whole EAD** (`www.nationaalarchief.nl/onderzoeken/archief/2.01.08/download/xml`, 545
+  described units, parsed to TSV, 1 request): **no unit anywhere in 2.01.08 carries "cijfer", "chiffre", "sleutel",
+  "ontcijfer", "dechiffr" or "code"** in its title or note (grep of the raw XML, archdesc text included). The ministry
+  archive 1796-1810 has no key or cipher-book series. Units near the target, all with availability DIGITALIZED read
+  from each item page's `drupal-settings-json` `viewer.response` (6 requests):
+  | inv. | what (EAD title) | scans | why it matters |
+  |---|---|---|---|
+  | 20 | Minuut verbaal van ingekomen stukken, 1808 1e halfjaar | 600 | the minister's daily register of incoming pieces (one header view, scan 25: printed form "Verbaal van den Minister van Buitenlandsche Zaken", columns No / Ingekomen stukken / Gerenvoyeerd aan den / Aanteekeningen; that spread blank). No 4 (exh. 14 Jan) and No 6 (exh. 18 Jan) should each have an entry; whether the entry summarises the deciphered content is not seen |
+  | 88 | Gewone en geheime minuten van uitgaande missiven, jan-mrt 1808 | 714 | Van der Goes's replies; one header view, scan 25: minute "No 2 ... à Son Excellence Monsieur Brantsen ... Paris, 5 Janv. 1808", French, clear. The reply to No 4/No 6 would follow shortly after |
+  | 99 | Verbalen van uitgaande stukken, 1808 | 656 | register of outgoing pieces |
+  | 115 | Brievenboek gewone uitgaande brieven, 2 jan - 30 jun 1808 | 580 | letter-book copies (ordinary letters only) |
+  | 273 | Westphalen: incl. D. van Hogendorp, minister-plenipotentiary to the King of Westphalia, 26 dec 1807 - 16 jan 1808 | 547 | the Van Hogendorp whose cipher underlies inv. 226 below; same weeks as No 4 |
+  | 282 | Varia Duitsland: incl. "Missiven van ministers van de Groothertog Van Berg, commissarissen tot de grensregeling der gecedeerde districten, 1806-1810" | 646 | the Berg (Düsseldorf) counterpart side of the same cession |
+  Also in the EAD and already known: inv. 244-248 (G.C. van Spaen, envoy at Vienna, 1802-1807) and 281 (the target).
+  No secret-register series ("Geheim") continues past 1805 (inv. 47-64 stop at apr 1805).
+- **Van der Goes family papers**: NA 3.20.16 (Van der Goes, ca. 1650-1811; 35 units) and 3.20.17 (Van der Goes van
+  Dirxland, 1419-1928; 242 units), both EADs fetched (2 requests) and grepped: personal, family and seigneurial papers
+  only (Maarten van der Goes's diplomas, a 1806 letter from Louis Napoleon, Dirksland papers); **no ministerial
+  correspondence, no cipher, key or Van Spaen item**.
+- **NA cross-inventory search** ("Spaen", `onderzoeken/zoeken`): the result list is rendered client-side from
+  zvt.nationaalarchief.nl (page plus its main.js fetched, 2 requests; no plain endpoint found in the bundle); the headless
+  browser could not be used (Chromium lacks the proxy CA in this container and the one-off certutil install hung, so it
+  was stopped). **Not searched: a Van Spaen family archive or any other NA toegang by name** -- a person or a browser
+  session can run that query.
+- **Key-material lead found in the repository, not new to it** (`ciphers/roell-vandedem-1809/NOTES.md`, LIKELY-7, 2
+  Oct 2026, from the NA 1.02.13 EAD): NA 1.02.13 (Legatie in Rusland) **inv. 226**, Six van Oterleek's minutes 1808-1809
+  "In cijfercode op basis van het cijfer van Van Hogendorp", and **inv. 228** "Cijfer, 1803 aug. 5", both not digitised
+  (no dao). On DECODE these are **R1033** (Decrypted, Cipher, "legatie Rusland, inv.nr. 226", 1808-1810, Dutch, 16
+  pages) and **R1035** (the Croiset 1803 codebook, inv. 228, which Bourdeau ruled out: marked three-digit groups to
+  999, word salad on the annex). R1033 is a *decrypted 1808-1810 ministry code derived from* the 1803 book; whether it
+  is the same design as R1941 (unmarked groups 15-1339) is unknown from the listing. Bourdeau's check (sources/
+  cyphersolver/2026-10-03/spaen1808/NOTES.md) names only key records ("DECODE key records dated 1780-1815 at Dutch
+  holders"); R1033 is a cipher record, so it was not in that set. Also seen: the Tartu repository item "The Codebook of
+  Willem Six van Oterleek: Dutch Diplomatic Intelligence from Saint Petersburg between 1806-1810" (cited by title in
+  `ciphers/na-raad-azie-1800/NOTES.md`; not opened here).
+- **DECODE login-free listing** (on disk, `sources/decode/keys-all-2026-09-28-merged.tsv`, 6,324 key records, and the
+  24 Sept records-decrypted / non-decrypted listings; 0 new requests): Dutch-holder or Dutch-language **keys** 1780-1815
+  are R1035 (NA, 1803), R1024 (KHA, 1782), R1891 (Museum voor Communicatie, 1798), R2233 (KHA, 1801), R2235/R2240
+  (KHA Willem V, 1795-99) -- all Orange-court or pre-1804, none after 1803 from the Kingdom of Holland ministry.
+  Dutch-holder **cipher** records 1800-1812: decrypted R1033 (above), R1926 (Schimmelpenninck 1803, 2.01.08 inv. 344),
+  R1945/R1946 (Bourdeaux 1801, inv. 257); non-decrypted R1942 (D. van Hogendorp to Van der Goes, 1803, inv. 318),
+  R1944 (inv. 257), R2034 (legatie Rusland 1803), R1469/R1470 (legatie Turkije 1809, the roell-vandedem target).
+- **Not found:** a Van Spaen key, a key sheet for the 1806-1809 commissioners, or a ministry decipherment of No 4/No 6
+  in any finding aid read (2.01.08, 3.20.16, 3.20.17); not found in the DECODE key listing. Candidates for the
+  ministry's reading of the content (not a key): inv. 20 (incoming register) and inv. 88 (outgoing minutes), both
+  digitised. Candidate for key material: R1033 / 1.02.13 inv. 226.
+- Requests: www.nationaalarchief.nl 12 (2.01.08 page, 3 EADs, search page, zvt main.js, 6 item pages); service.archief.nl
+  2 (IIIF 1000 px, inv. 20 and 88 scan 25), 1.6 s apart, no 4xx/5xx; de-crypt.org 0. Vision 2. Subagents 0. Grade
+  counts H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54, GAPS58 and GAPS61, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet in any of the 360 scans of inv. 281 (GAPS41: none in 1-74; GAPS58, 3 Oct 2026: none in the last 139)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99, nor anywhere in inv. 281 (all 360 viewed, GAPS58)
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; next: new material -- a Van Spaen key or the ministry decipherment in another inventory (NA catalogue search of 2.01.08 and the Düsseldorf/Berg legation papers for cijfer/chiffre/sleutel/Spaen 1807-1808), ~$3 catalogue pass
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; NA catalogue pass run 3 Oct 2026 (GAPS61): no key or cipher unit in 2.01.08, 3.20.16 or 3.20.17, none in the DECODE key listing; candidates found: DECODE R1033 (decrypted 1808-10 code "op basis van het cijfer van Van Hogendorp", NA 1.02.13 inv. 226, not digitised) and the ministry's own registers 2.01.08 inv. 20 (incoming verbaal 1808, 600 scans) and inv. 88 (outgoing minutes Jan-Mar 1808, 714 scans), both digitised; next: one DECODE login to view R1033's record and images and compare its group range and marks with R1941's (15-1339, unmarked), ~$2; then the inv. 20 entries for exh. 14 and 18 Jan 1808 and the inv. 88 reply, ~$5
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74; GAPS58 (3 Oct 2026) viewed the last 139 scans: no No 1/No 5, no figure page, inv. 281 complete
 - [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
-- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
+- [ ] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026); GAPS61 (3 Oct 2026): the cipher record R1033 (decrypted, 1808-10, code based on Van Hogendorp's cipher) was not in Bourdeau's key-record set -- next: view it, one DECODE login, ~$2
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- next: new material (a Van Spaen key or ministry decipherment in another NA inventory), ~$3 catalogue pass
+- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- NA catalogue pass done (GAPS61, 3 Oct 2026): no key unit in 2.01.08/3.20.16/3.20.17; next: compare DECODE R1033 (1808-10, Van Hogendorp-based, decrypted) with R1941, one login, ~$2; then the ministry's verbaal (inv. 20) and reply minutes (inv. 88), ~$5
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: search the NA catalogue for a Van Spaen key or the ministry's decipherment of No 4/No 6 in another inventory (2.01.08 inventory list and the Düsseldorf/Berg legation papers, terms cijfer/chiffre/sleutel/ontcijfering/Spaen 1807-1808), ~$3 catalogue pass (inv. 281 is now fully viewed, GAPS58: no further ciphertext or key in it; both one-part statistics are untestable at N 304)
+Verdict: keep going: 1 internal gap; cheapest next: one DECODE browser login to view R1033 (NA 1.02.13 inv. 226, Six van Oterleek 1808-10, decrypted, "op basis van het cijfer van Van Hogendorp") and compare its group range and marks with R1941 (15-1339, unmarked), ~$2; then read the ministry's own entries for No 4/No 6 in 2.01.08 inv. 20 (incoming verbaal, exh. 14 and 18 Jan 1808) and the reply in inv. 88, ~$5 (GAPS61, 3 Oct 2026: no key or decipherment unit in the 2.01.08, 3.20.16 or 3.20.17 finding aids)
