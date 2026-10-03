@@ -39,8 +39,8 @@ code	value	grade	source	note
 746	des	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 40	pro	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 360	vi	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
-363	si	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
-121	ons	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+363	sion	I	compensating re-split of the f.206r stretch pro|vi|?|s after 121 = s (FT4z)	was M si; f.206 alone exact-fits with 121 s + 363 sion (align/ft4z_diag.out); not separately tested
+121	s	C	pooled exact pin run f.216v + f.266r S1 (align/ft4z_pool.py, PREREG-FT4z gate PASS: J fit, controls (s) 0/40 (g) 0/40)	FT4z PASS, pending VERIFY: sole feasible chunk of 306 tried (was M ons, f.206 split); also tied s in FT4d; f.206 alone and f.206(338 released)+f.216v fit with s, not with ons; rule-4 dispute vs f.252r gloss (FT4v, 121 absent) stands
 10	a	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 188	lar	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 344	mee	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
