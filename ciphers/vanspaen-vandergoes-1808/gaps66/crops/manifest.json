@@ -1,0 +1,343 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "i20s34_L01.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/46d6417f-b1f1-44a4-8b82-c9715ab487c1.jp2/2600,1900,2300,2300/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_46d6417f_b1f1_44a4_8b82_c9715ab487c1_jp2_2600_1900_2300_2300.jpg",
+   "box": [
+    2750,
+    1923,
+    3700,
+    2488
+   ],
+   "lines_in_crop": 4,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 216,
+    "distance": 90,
+    "prominence": 142.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s34_L02.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/46d6417f-b1f1-44a4-8b82-c9715ab487c1.jp2/2600,1900,2300,2300/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_46d6417f_b1f1_44a4_8b82_c9715ab487c1_jp2_2600_1900_2300_2300.jpg",
+   "box": [
+    2750,
+    2488,
+    3700,
+    3484
+   ],
+   "lines_in_crop": 4,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 216,
+    "distance": 90,
+    "prominence": 142.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s34_L03.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/46d6417f-b1f1-44a4-8b82-c9715ab487c1.jp2/2600,1900,2300,2300/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_46d6417f_b1f1_44a4_8b82_c9715ab487c1_jp2_2600_1900_2300_2300.jpg",
+   "box": [
+    2750,
+    3484,
+    3700,
+    4028
+   ],
+   "lines_in_crop": 4,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 216,
+    "distance": 90,
+    "prominence": 142.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35_L01.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/450,600,2200,3600/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_450_600_2200_3600.jpg",
+   "box": [
+    600,
+    699,
+    1600,
+    1497
+   ],
+   "lines_in_crop": 5,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 318,
+    "distance": 90,
+    "prominence": 150.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35_L02.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/450,600,2200,3600/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_450_600_2200_3600.jpg",
+   "box": [
+    600,
+    1497,
+    1600,
+    2192
+   ],
+   "lines_in_crop": 5,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 318,
+    "distance": 90,
+    "prominence": 150.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35_L03.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/450,600,2200,3600/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_450_600_2200_3600.jpg",
+   "box": [
+    600,
+    2192,
+    1600,
+    2804
+   ],
+   "lines_in_crop": 5,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 318,
+    "distance": 90,
+    "prominence": 150.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35_L04.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/450,600,2200,3600/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_450_600_2200_3600.jpg",
+   "box": [
+    600,
+    2804,
+    1600,
+    3483
+   ],
+   "lines_in_crop": 5,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 318,
+    "distance": 90,
+    "prominence": 150.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35_L05.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/450,600,2200,3600/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_450_600_2200_3600.jpg",
+   "box": [
+    600,
+    3483,
+    1600,
+    3817
+   ],
+   "lines_in_crop": 2,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 318,
+    "distance": 90,
+    "prominence": 150.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s35r_L01.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/db09e317-9ada-4b4a-8bd4-0ce11a0b218b.jp2/2750,2000,2300,1500/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_db09e317_9ada_4b4a_8bd4_0ce11a0b218b_jp2_2750_2000_2300_1500.jpg",
+   "box": [
+    2750,
+    2700,
+    5050,
+    2800
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     750
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s48_L01.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/9a2d5879-2780-4ac2-9571-86f7679f37ba.jp2/550,1000,2000,2900/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_9a2d5879_2780_4ac2_9571_86f7679f37ba_jp2_550_1000_2000_2900.jpg",
+   "box": [
+    600,
+    1000,
+    1550,
+    1860
+   ],
+   "lines_in_crop": 6,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 92,
+    "distance": 90,
+    "prominence": 87.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s48_L02.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/9a2d5879-2780-4ac2-9571-86f7679f37ba.jp2/550,1000,2000,2900/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_9a2d5879_2780_4ac2_9571_86f7679f37ba_jp2_550_1000_2000_2900.jpg",
+   "box": [
+    600,
+    1860,
+    1550,
+    2913
+   ],
+   "lines_in_crop": 6,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 92,
+    "distance": 90,
+    "prominence": 87.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s48_L03.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/9a2d5879-2780-4ac2-9571-86f7679f37ba.jp2/550,1000,2000,2900/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_9a2d5879_2780_4ac2_9571_86f7679f37ba_jp2_550_1000_2000_2900.jpg",
+   "box": [
+    600,
+    2913,
+    1550,
+    3666
+   ],
+   "lines_in_crop": 6,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 92,
+    "distance": 90,
+    "prominence": 87.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s48_L04.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/9a2d5879-2780-4ac2-9571-86f7679f37ba.jp2/550,1000,2000,2900/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_9a2d5879_2780_4ac2_9571_86f7679f37ba_jp2_550_1000_2000_2900.jpg",
+   "box": [
+    600,
+    3666,
+    1550,
+    3805
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 92,
+    "distance": 90,
+    "prominence": 87.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s47r_L01.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/41602411-d749-478c-a532-e3eb421ac6c8.jp2/2800,1000,1100,3200/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_41602411_d749_478c_a532_e3eb421ac6c8_jp2_2800_1000_1100_3200.jpg",
+   "box": [
+    2800,
+    1000,
+    3900,
+    2112
+   ],
+   "lines_in_crop": 6,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 205,
+    "distance": 90,
+    "prominence": 165.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s47r_L02.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/41602411-d749-478c-a532-e3eb421ac6c8.jp2/2800,1000,1100,3200/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_41602411_d749_478c_a532_e3eb421ac6c8_jp2_2800_1000_1100_3200.jpg",
+   "box": [
+    2800,
+    2112,
+    3900,
+    2783
+   ],
+   "lines_in_crop": 6,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 205,
+    "distance": 90,
+    "prominence": 165.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "i20s47r_L03.jpg",
+   "source_url": "https://service.archief.nl/iip/iipsrv?IIIF=2d/29/b8/a9/4b/64/45/34/82/25/61/e7/7e/23/d1/0d/41602411-d749-478c-a532-e3eb421ac6c8.jp2/2800,1000,1100,3200/full/0/default.jpg",
+   "source_file": "src_5_61_e7_7e_23_d1_0d_41602411_d749_478c_a532_e3eb421ac6c8_jp2_2800_1000_1100_3200.jpg",
+   "box": [
+    2800,
+    2783,
+    3900,
+    3949
+   ],
+   "lines_in_crop": 5,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 205,
+    "distance": 90,
+    "prominence": 165.0
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+# GAPS66, 3 Oct 2026: NA 2.01.08 inv. 20 (Minuut verbaal van ingekomen stukken, 1808 1e halfjaar, 600 scans) and inv. 88 (Gewone en geheime minuten van uitgaande missiven, jan-mrt 1808, 714 scans); scan = 'order' in each item page's drupal-settings-json viewer.response
+inv	scan	page date (printed form, filled in)	content located
+20	31	Woensdag 13 Jan 1808	entries 90-93b
+20	32-33	Donderdag 14 Jan 1808	entries 94-100
+20	34	Donderdag 14 Jan 1808 (right page)	entries 101 (Dedel), 102 (Van Spaen, Dusseldorp 12 Jan, No 3: thanks, bedommagement, former envoy at Vienna; Leg. Weenen; Notif.), 103 (Commissaris van Spaen van Voorstonde, 12 Jan, acknowledges the minister's missive of 6 Jan on his pay; gewone respecten [M]; Notif.)
+20	35	Donderdag 14 Jan 1808	end of 103; 104 (Commissaris [van] Spaen van Biljoen [M], 12 Dec [M], Wesel act, Berg ministry; Zie U.S. No 126 [M]); 105 = No 4 'in Cyffer'; 106 (Gronovius, Carlsruhe 29 Dec No 26, 'in Cyffer')
+20	38-44	Vrijdag 15 - Zondag 17 Jan 1808	(headers only)
+20	46	Maandag 18 Jan 1808	entries 132-133
+20	47	Maandag 18 Jan 1808	entries 134 (commissarissen Van Spaen en Van Reinesdyk [M], Wesel 14 Jan; Zie U.S. No 86 & 121), 135 = No 5 (summary, begins)
+20	48	Maandag 18 Jan 1808	end of 135; 136 = No 6 'in Cijffer'; 137 (Appelius); 138 (Six van Oterleek, Utrecht 18 Jan)
+88	110	(Utrecht, 1x Janvier 1808)	French minute
+88	116, 119, 122, 131	17-18 Jan 1808	U.S. 74, 76, 79, 80
+88	134	Utrecht 18 Jan 1808	U.S. 81: to Ambassador Verhuell, Paris, No 9 (English parlementaire, Dutch prisoners) -- the reply to verbaal 137, not to Van Spaen
+88	135-137	18 Jan 1808	U.S. 82 (Verhuell No 10), 83, 84 (list of pensions)
+88	139	Utrecht 19 Jan 1808	U.S. 85: to Bourdeaux, St Petersburg
+88	140	Utrecht 23 Jan 1808	U.S. 87: to Brantsen, No 6
+88	141-145	23-25 Jan 1808	U.S. 88, 89, 90, 91, 93
+88	-	-	U.S. 86 (the reply the verbaal cites for entries 134, 135 and 136) NOT in sequence between scans 139 and 140, nor in 138 or 141-145

@@ -639,18 +639,70 @@ which is the hang GAPS61 hit; kill it, the database files are already written, a
 - Requests: de-crypt.org 7 (login page + login submit + RecordsView/1033 + 4 documents), 1.7 s apart, no 4xx/5xx;
   example.com 1 (browser TLS test). Vision 0. Subagents 0.
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54, GAPS58, GAPS61 and GAPS63, 3 Oct 2026)
+## GAPS66-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): the ministry's verbaal (inv. 20) and outgoing minutes (inv. 88)
+
+Step: the Verdict's cheapest step. Clock 09:01-09:15 UTC, 3 Oct 2026. Status word unchanged. Read clear register text
+only; nothing in figures was decoded. Locator table: `gaps66/scans_located.tsv`; native line crops in `gaps66/crops/`
+(cut with `python3 tools/iiif_lines.py "<inv. 20 scan 34/35/47/48 info.json>" --region x,y,w,h --out
+ciphers/vanspaen-vandergoes-1808/gaps66/crops --prefix i20s34|i20s35|i20s47r|i20s48 --columns ... --distance 90`;
+two margin views cut from the tool's cached native source with `convert -crop`).
+Route: scan lists from each item page's `drupal-settings-json` (www.nationaalarchief.nl, 2 requests); date bisection on
+IIIF header strips and 450-1200 px views (inv. 20: scan 40 = 16 Jan, 60 = 22 Jan; 32-35 = Thursday 14 Jan; 46-48 = Monday
+18 Jan); native regions only for the found entries.
+Reading of the verbaal (inv. 20; [M] = word uncertain, abbreviations kept):
+- **Entry 105** (scan 35, right page, Donderdag 14 Jan 1808): "Eene miss. van den Commissaris van Spaen van Voorstonde,
+  geschreven te Dusseldorp den 12 January No 4. houdende Advertentie in Cyffer". Gerenvoyeerd: "gewone respecten" [M].
+  Aanteekeningen: a mark [M] and a brace against 105 with "Zie Uitgaande" [M, may be struck through]; the brace against
+  106 (Gronovius, Carlsruhe 29 Dec No 26, also "in Cyffer") reads [struck word] "aan den Koning gecommuniceerd".
+  **No summary of No 4's content is entered** -- the clerk logged it only as an advice in cipher.
+- **Entry 136** (scan 48, left page, Maandag 18 Jan 1808): "Eene miss. van den voornoemden Commissaris van Spaen
+  v[an] Voorstonde gedateerd 15 January No 6. in Cijffer houdende advertentie rakende den inhoud zyner depeche hier voor
+  sub No 135 breeder geextendeerd". Gerenvoyeerd: "gew. respecten" [M]. Aanteekeningen: "Zie U.S. No 86".
+  So **No 6 (the 75-group annex) is an advice "touching the content of" No 5**, whose summary the clerk wrote at entry 135.
+- **Entry 135 = No 5** (scans 47-48; not in inv. 281, GAPS58): "Eene miss. van den Commissaris Van Spaen van Voorstonde
+  geschreven te Dusseldorp den 15 Jan[uary] No 5. houdende de rapport van eene Communicatie die hem door den Heer Agar
+  gedaan was, zoo nopens de bevelen, welke hy van Z. Keiz. en Kon. Hoogheid ontvangen had om met den Hollandschen
+  Commiss[aris] in onderhandeling te treden over het aangaan van schikkingen wegens eenen afstand van terrein op de
+  Frontieren, als wel opzigt tot het nog niet ratificeren van zeker Tractaat tusschen den Franschen Keizer en den
+  Grootshertog, waarin de Cessie van Huissen etc. mede gestipuleerd was. En behelzende voorts Advertentie van eenige aan
+  hem gesuppediteerde informatien aangaande de intentie van het Ministerie van Berg om de Domeinen in de gecedeerde
+  Landen te verkoopen of te verpachten, de pachtpenningen te ontvangen, de conscriptie door te zetten en in het algemeen
+  om uit gezegde Districten zoo veel geld en manschappen te trekken als maar mogelyk zyn zoude -- mitsgaders informatie
+  dat hy van den Heer Agar den 16 January zoude overhandigen de brieven van Notificatie [M] van den Koning, wegens
+  hoogstderzelfs komst tot den troon." Gerenvoyeerd: "gewone respecten" [M] and "brieven van notif." Aanteekeningen:
+  "Zie U.S. No 86".
+- Neighbours: 102 (scan 34) is No 3 (Leg. Weenen, "Notif."), matching GAPS44's clear No 3; 103 (scan 34-35) is a clear
+  12 Jan letter acknowledging the minister's missive of 6 Jan about his pay; 104 (scan 35) is from "Commissaris [van]
+  Spaen van Biljoen" [M] (a Wesel act, the Berg ministry pressed "without effect"; "Zie U.S. No 126" [M]); 134 (scan 47)
+  is from the commissioners Van Spaen and Van Reinesdyk [M] at Wesel, 14 Jan, on the Berg orders for Huissen, Malburg and
+  Sevenaar ("Zie U.S. No 86 & 121").
+Outgoing minutes (inv. 88): the minutes carry the U.S. number top right. Scans 116-145 hold U.S. 74-93 in order (81 at
+scan 134 = to Ambassador Verhuell, Paris, 18 Jan, No 9, the English parlementaire -- the reply to verbaal 137; 84 at 137 =
+list of pensions; 85 at 139 = to Bourdeaux, 19 Jan; 87 at 140 = to Brantsen, 23 Jan; 88-91 and 93 at 141-145). **U.S.
+86, the reply the verbaal cites for No 5, No 6 and entry 134, is not in sequence** (not between scans 139 and 140, nor in
+138 or 141-145); nor is 92. It may be filed with the secret minutes elsewhere in inv. 88, or registered in inv. 99
+(Verbalen van uitgaande stukken 1808). The reply to No 4 has no U.S. number in the verbaal and was not looked for.
+- What this gives the cipher (rule 4: none of it is a decoded token): the topic of No 6 is the topic of No 5, now known
+  in summary; crib terms added to the ranked list in prose here, not yet tested: Agar, Grootshertog / Groothertog, Keizer,
+  Tractaat, ratificeren/ratification, Huissen, afstand van terrein, frontieren, Domeinen, verkoopen/verpachten,
+  conscriptie, geld en manschappen, notificatie, troon. No 4's content is not summarised anywhere seen.
+- Not found: a decipherment, a plain-text copy or a content summary of No 4; a decipherment of No 6; U.S. 86 in inv. 88's
+  sequence. Grades: H 0, C 0, S 0, M 0, I 0 (no cipher token read).
+- Requests: www.nationaalarchief.nl 2; service.archief.nl 58 (IIIF views and native regions, 1.6 s apart, no 4xx/5xx).
+  Vision: in-session image reads only, no subagents.
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54, GAPS58, GAPS61, GAPS63 and GAPS66, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet in any of the 360 scans of inv. 281 (GAPS41: none in 1-74; GAPS58, 3 Oct 2026: none in the last 139)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99, nor anywhere in inv. 281 (all 360 viewed, GAPS58)
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; NA catalogue pass run 3 Oct 2026 (GAPS61): no key or cipher unit in 2.01.08, 3.20.16 or 3.20.17, none in the DECODE key listing; candidates found: DECODE R1033 (decrypted 1808-10 code "op basis van het cijfer van Van Hogendorp", NA 1.02.13 inv. 226, not digitised) and the ministry's own registers 2.01.08 inv. 20 (incoming verbaal 1808, 600 scans) and inv. 88 (outgoing minutes Jan-Mar 1808, 714 scans), both digitised; R1033 compared 3 Oct 2026 (GAPS63): different design (code+mark, 1-999, 89.5% marked, 1,766 decoded values; R1941 unmarked 15-1339), group overlap at chance (<=999: 0.858 vs same-range random 0.871, 771/1000 >= target), not R1941's key; next: the inv. 20 entries for exh. 14 and 18 Jan 1808 and the inv. 88 reply, ~$5
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; NA catalogue pass run 3 Oct 2026 (GAPS61): no key or cipher unit in 2.01.08, 3.20.16 or 3.20.17, none in the DECODE key listing; candidates found: DECODE R1033 (decrypted 1808-10 code "op basis van het cijfer van Van Hogendorp", NA 1.02.13 inv. 226, not digitised) and the ministry's own registers 2.01.08 inv. 20 (incoming verbaal 1808, 600 scans) and inv. 88 (outgoing minutes Jan-Mar 1808, 714 scans), both digitised; R1033 compared 3 Oct 2026 (GAPS63): different design (code+mark, 1-999, 89.5% marked, 1,766 decoded values; R1941 unmarked 15-1339), group overlap at chance (<=999: 0.858 vs same-range random 0.871, 771/1000 >= target), not R1941's key; ministry registers read 3 Oct 2026 (GAPS66): verbaal inv. 20 entry 105 logs No 4 only as "Advertentie in Cyffer" (no content summary), entry 136 says No 6 "in Cijffer" concerns the content of No 5 (entry 135, summary read: Agar, frontier terrain exchange, unratified Emperor-Grand Duke treaty on Huissen, Berg domains, conscription, money and men, the King's notification letters), both cross-referenced to reply U.S. 86, which is not in inv. 88's sequence (U.S. 74-93 at scans 116-145, 86 and 92 absent); next: find U.S. 86 (inv. 99 verbaal of outgoing pieces 1808, then the secret minutes in inv. 88) for the minister's reading of No 6, ~$4
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74; GAPS58 (3 Oct 2026) viewed the last 139 scans: no No 1/No 5, no figure page, inv. 281 complete
 - [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026); GAPS61 (3 Oct 2026) found the decrypted cipher record R1033 outside Bourdeau's key-record set; GAPS63 (3 Oct 2026) viewed it: code+mark 1-999, a different design from R1941, overlap at chance against a same-range random control -- not this letter's key
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- NA catalogue pass done (GAPS61, 3 Oct 2026): no key unit in 2.01.08/3.20.16/3.20.17; R1033 compared (GAPS63, 3 Oct 2026): different design, overlap at chance; next: the ministry's verbaal (inv. 20) and reply minutes (inv. 88), ~$5
+- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- NA catalogue pass done (GAPS61, 3 Oct 2026): no key unit in 2.01.08/3.20.16/3.20.17; R1033 compared (GAPS63, 3 Oct 2026): different design, overlap at chance; verbaal read (GAPS66, 3 Oct 2026): No 6 concerns No 5's content (summary in hand, crib terms in the GAPS66 section), No 4 unsummarised, reply U.S. 86 not in inv. 88's sequence; next: U.S. 86 via inv. 99 or the secret minutes, ~$4
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: read the ministry's own entries for No 4/No 6 in NA 2.01.08 inv. 20 (incoming verbaal 1808, exh. 14 and 18 Jan 1808) and the reply minute in inv. 88 (Jan-Mar 1808), both digitised, ~$5 (GAPS63, 3 Oct 2026: DECODE R1033 viewed, code+mark 1-999, not R1941's key, overlap at chance)
+Verdict: keep going: 1 internal gap; cheapest next: find the minister's reply U.S. 86 (cited in verbaal inv. 20 for No 5 and No 6, not in sequence in inv. 88) through NA 2.01.08 inv. 99 (Verbalen van uitgaande stukken 1808, 656 scans, its entry 86 near 19-23 Jan) and then the secret minutes in inv. 88, and read it for the minister's reading of No 6, ~$4 (GAPS66, 3 Oct 2026: No 6 = advice on No 5's content; No 4 logged only as "in Cyffer")
