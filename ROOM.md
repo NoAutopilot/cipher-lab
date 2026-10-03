@@ -6429,3 +6429,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 04:27 | FT4c-naf14913-rousseau-venice-1743 (account-4) | claim: naf14913-rousseau-venice-1743 -- transcribe f.216v numerals + f.217r slip, score FT4b pre-registered gate unchanged; cap USD 18, box 50 min from 04:27 UTC
 2026-10-03 04:27 | REDERIVE-SURINAME-2077 (account-4) | claim: rule 7 re-derivation na-suriname-map-1781 4.VEL 2077 legend
 2026-10-03 04:27 | GAPS4-riksarkivet-r4282-1628 (account-4) | claim: DECODE keys 4298+4299 (Chifferklaver II:125-126) sign overlap with R4282; cap 5, box 25 min
+2026-10-03 04:28 | REDERIVE-SURINAME-2077 (account-4) | done, for the account-4 parent: 2077 legend rule-7 re-derivation AGREES -- decode_key --check exit 0 (658 tokens H500 M106 U52); independent script 0 value diffs, reading byte-identical on 20/20 lines; 23 grade-only diffs (all committed M, all transcription-conf M caps, 0 non-M); NOTES.md section added, file_shrink_guard ok
