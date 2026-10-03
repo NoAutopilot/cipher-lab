@@ -1,0 +1,61 @@
+# fr.3995 no.57 (Feb 1593), canvas f200, nomenclator entries for the 57 target 3-figure codes (A1B-VILL-M, 3 Oct 2026).
+# grade M = both blind Sonnet readers give the same normalised first variant (fr3995/vill_m_readerA.tsv, vill_m_readerB.tsv);
+# I = disagreeing, not scored (decodes to nothing). value = normalised first variant.
+# code	value	grade	readerA	readerB
+103	aussy	M	aussy	aussy
+104	art	M	art	art
+112	ambassadeur	M	Ambassadeur	ambassadeur
+113	ambition	M	Ambition	ambition
+114	advertissement	M	Advertissement ou advertir	advertissement ou advertir
+116	?	I	Abandonné	abandonner
+120	aimer	M	Aimer ou amour	aimer ou amour
+121	afflige	M	Afflige ou affliction	afflige ou affliction
+122	bien	M	Bien	bien
+125	but	M	But	but
+126	boire	M	Boire	boire
+129	blasme	M	Blasme	blasme
+133	bonte	M	Bonté	bonte
+135	bienfaict	M	bienfaict	bienfaict
+143	changer	M	Changer ou changement	changer ou changement
+145	?	I	conserver ou conservation	considere ou consideration
+148	exaulte	M	exaulte	exaulte
+151	conspirer	M	conspirer	conspirer
+152	confession	M	confession ou confesser	confession ou confesse
+153	cause	M	cause	cause
+162	despit	M	Despit	despit
+170	dont	M	Dont	dont
+171	douleur	M	Douleur ou douloir	douleur ou douloir
+172	?	I	Deffenx ou deffendre	deffens ou deffendre
+173	donc	M	Donc	donc
+175	?	I	Escrire ou escrit	asseure ou asseuit
+176	?	I	Envoyer ou envoir	envoye ou envoir
+190	esmeu	M	Esmeu ou esmouvoir	esmeu ou esmouvoir
+191	entendre	M	Entendre	entendre
+192	?	I	Escoute	escouter
+194	?	I	Effacer	affaire
+196	force	M	Force	force
+197	faire	M	Faire	faire
+200	fruit	M	Fruit	fruit
+201	fondz	M	Fondz	fondz
+202	font	M	Font	font
+203	fauct	M	Fauct ou fait	fauct ou fait
+204	faulte	M	Faulte	faulte
+207	forme	M	Forme	forme
+208	fasche	M	Fasche	fasche
+212	?	I	Femme ou femelle	ferme ou fermete
+213	forfaict	M	Forfaict	forfaict
+217	formalite	M	Formalité ou formalisé	formalite ou formalise
+220	gaing	M	Gaing ou gaigner	gaing ou gaigne
+221	garde	M	Garde	garde
+241	insolent	M	Insolent ou insolence	insolent ou insolence
+254	lardeur	M	Lardeur	lardeur
+262	luy	M	Luy	luy
+268	malade	M	Malade ou maladie	malade ou maladie
+271	malice	M	Malice	malice
+283	nuire	M	Nuire	nuire
+312	quon	M	quon	quon
+314	quel	M	quel	quel
+315	resolution	M	Resolution ou resoudre	resolution ou resouldre
+316	rendre	M	Rendre	rendre
+320	religion	M	Religion	religion
+322	?	I	Retraicte	receuante

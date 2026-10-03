@@ -1017,3 +1017,52 @@ read, not a clustering job). Rule 10: no novelty claim.
 
 Verdict after A1B-VILL-L: `open`. Next, cheapest first: (m) a parse model with no.57's 3-figure nomenclator codes 100-353 (read the nomenclator
 columns twice blind, ~$5, then the same scoring); (e'') stands (owner's sorter, ASKS 124); (d) stands.
+
+## fr.3995 no.57 nomenclator 100-353 under a 3-figure parse (A1B-VILL-M)
+
+Worker A1B-VILL-M, LANE-A1B, account 1, 3 Oct 2026, 18:16-18:27 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-m.md`, step (m).
+
+**Step 1, script first** (`no57_nomen_count.py` -> `no57_nomen_count.tsv`, `--check` exits 0): greedy 3-figure groups reading 100-353
+consume 0.343 of Bourdeau's 753 tokens (86 codes) and 0.333 of pass B's 757 (84); digit runs of exactly three reading 100-353 are 18 / 15
+(0.072 / 0.059 of tokens). Both above the ~5 pct stop line, so the read went ahead. 57 distinct codes across both transcriptions.
+
+**Pre-registration** `fr3995/PREREG-VILL-TABLE.md` addendum A1B-VILL-M (commit 398436ff, pushed before any native nomenclator crop was
+viewed; one 900-px locate look at f199/f200 preceded it, layout only). The nomenclator is an alphabetical word list 99-353 in eight
+columns on f200 (A: aux, art ... B: bien, but ... to S/T 327-353), with Provinces/Villes 1-68 at the right (not used).
+Crops from the native f200 file already on disk (no network for crops):
+
+    for col in 990,420 1350,520 1790,470 2180,470 2570,500 2990,410 3320,390; do for y in 900 2450 4000 5550; do
+      python3 tools/iiif_lines.py --image <scratch>/ov/src_ark_12148_btv1b525085665_f200_full.jpg --region ${col%,*},$y,${col#*,},1650 \
+        --out <scratch>/nm --prefix colN_y$y --lines-per-crop 200 --max-width 2400; done; done
+    # 28 strips -> images/fr3995/f200_nomen/ (re-saved quality 80); native file from iiif_lines --ark btv1b525085665 --canvas 200 --debug
+
+Reader A (Sonnet subagent, 57 codes) committed 5707dbd9 before reader B (separate Sonnet subagent, blind to A) was spawned.
+Agreed (same normalised first variant): **48 of 57**, grade M, `keys/key_f200_no57_nomen.tsv`. Disagreed (I, decode to nothing): 116
+abandonne/abandonner, 145 conserver/considere, 172 deffenx/deffens, 175 escrire/asseure, 176 envoyer/envoye, 192 escoute/escouter,
+194 effacer/affaire, 212 femme/ferme, 322 retraicte/receuante. Examples agreed: 103 aussy, 112 ambassadeur, 121 afflige, 170 dont,
+173 donc, 191 entendre, 197 faire, 201 fondz, 203 fauct (ou fait), 221 garde, 262 luy, 312 quon, 314 quel, 316 rendre, 320 religion.
+
+**Score** (`no57_nomen_score.py`, `no57_nomen_score.tsv`, `--check` exits 0):
+
+| transcription | tokens | coverage | codes (nomen / decoded) | power (rank 1 of 20, clean) | score | rank | z | verdict |
+|---|---|---|---|---|---|---|---|---|
+| Bourdeau (bourdeau/) | 753 | 0.596 | 273 (76 / 61) | **15/20** | -- | -- | -- | non-test (below 16/20) |
+| TX2 pass B | 757 | 0.592 | 272 (74 / 59) | 17/20 | -1.565 | 103/201 | -0.09 | FAIL |
+
+Rule 3 error bracket (disclosed secondary, `--errsweep`, seed 7): with 10/17/25 pct of codes randomised, power is 11/10/12 of 20 (mean z
+2.96/2.81/2.98, min z 1.68/2.02/2.17) -- **below the 16/20 gate at every error level that brackets TX2's measured 16.8 pct disagreement**.
+So under the registered rule pass B's FAIL is powered only at zero transcription error, and Bourdeau's row is a non-test even clean.
+Under the SALV-DIAG lesson this is **not a design exclusion**: the combined parse cannot be told apart at the target's measured error.
+What the numbers do say (an observation, not a licensed verdict): pass B's z -0.09 sits below every synthetic run's z at up to 25 pct
+error (min 2.17), and rank 103/201 is the middle of the null. Decode (pass B): "agesissagardeleesmeumaxatacalexssitconfessionsivuluy
+vuvufascheagardegamudoncentendre..." -- word codes fall among syllable strings with no French between them.
+Grades in the target: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Vision: 1 own locate look (f199/f200 at 900 px), 1 own crop-alignment check sheet (28 strips at 1400 px, no entry read), 2 Sonnet
+subagent calls (readers A and B). Requests: gallica.bnf.fr about 6 (info.json + 2 full native canvases through iiif_lines). Tool shelf:
+no clustering tool fits a 57-entry word read. Rule 10: no novelty claim.
+
+Verdict after A1B-VILL-M: `open`. No.57 under the combined 1-2/3-figure parse: pass B FAIL at clean power (rank 103/201, z -0.09),
+Bourdeau non-test (power 15/20); at the measured transcription error the power drops to 10-12/20, so no.57 is **not closed** for this
+letter. Next, cheapest first: (e'') the owner's sign-sorter settlement (ASKS 124) and a reconciled ciphertext, then re-run
+`no57_score.py` and `no57_nomen_score.py` (both scripts take the transcription as input; ~$1); (d) stands.
