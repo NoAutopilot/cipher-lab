@@ -44,7 +44,9 @@ when the value is ambiguous ('a|b'), or when the key row's source is in m_source
 entry; U (or unkeyed_grade) when the sign is not keyed. Optional 'votes' (per-position plaintext evidence such as an
 interlinear gloss): voted_grade (H) where the vote matches the key value, unvoted_grade (S) elsewhere, word_glossed_grade (M) for a
 word sign whose own gloss disagrees; disagree_grade, when set, for a sign that has a vote which does not match (unvoted_grade
-then covers only signs with no vote at all).
+then covers only signs with no vote at all). s_words (3 Oct 2026, READ2-PAG): a key row whose note contains an s_words
+entry grades S (cryptanalytic with a control: the value was chosen by a test) where its vote agrees or it has none, and
+disagree_grade (or M) where its vote disagrees; checked before m_words.
 
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
@@ -71,7 +73,7 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
                 (clairambault1225-paget-1714: kind_column 'kind', sign_kinds ['cipher', 'cipher/insertion-clear'])
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
-  defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade, disagree_grade
+  defaults (object merged under every job), m_sources, m_words, s_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade, disagree_grade
 
 --split-check (1 Oct 2026, the espagnol142-mercy-1648 lesson): against a key of values 2-34, four tokens (65, 52,
 48, 72) were each two digits written together (D. Bourdeau, dbourdeau/cyphersolver issue 16; snapshot
@@ -347,6 +349,7 @@ def grade_tokens(recs, key, exc, votes, job):
         unknown_values.discard(''); null_values.add('')
     uncertain = set(job.get('uncertain_conf', DEFAULT_UNCERTAIN))
     m_sources, m_words = set(job.get('m_sources', [])), job.get('m_words', [])
+    s_words = job.get('s_words', [])
     ug, uv, dg = job.get('unkeyed_grade', 'U'), job.get('unkeyed_value', '?'), job.get('default_grade', 'H')
     for r in recs:
         if r['kind'] == 'clear':
@@ -362,6 +365,9 @@ def grade_tokens(recs, key, exc, votes, job):
             exc_kept = bool(job.get('exception_grade_overrides_conf')) and k in exc
         elif v is None or v in unknown_values or (job.get('unknown_if_q') and '?' in v):
             v, g = uv, ug
+        elif s_words and any(w in row['note'] for w in s_words):
+            vote = votes.get((r['line'], r['pos'])) if votes is not None else None
+            g = 'S' if vote is None or vote == v else job.get('disagree_grade', 'M')
         elif row['source'] in m_sources or any(w in row['note'] for w in m_words):
             g = 'M'
         elif votes is not None:

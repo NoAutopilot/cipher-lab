@@ -1,0 +1,8 @@
+config	code	value	L1_agree	L1_n	L2_agree	L2_n
+C1	87	de	2	3	10	16
+C1	146	le	4	4	3	16
+C1	196	po	1	1	2	2
+C1	240	ion	2	2	1	1
+C2	87	de	3	3	10	16
+C2	147	li	4	4	2	2
+C2	240	ion	2	2	1	1

@@ -9,6 +9,10 @@ value comes from the code's other occurrences; M where its own chunk disagrees):
   C  top chunk agrees in exactly 2 aligned occurrences and is >=50% of them
   M  'single attestation' (one aligned occurrence) or 'unsettled' (top chunk under 50% or under 2); decode.json's
      m_words grades every token of these M, whatever its own chunk says
+READ2-PAG (3 Oct 2026): a row graded M here whose code homophone_pass.py supports in both directions, under a
+configuration that PASSed its pre-registered gate with its code count above the shuffle p95 (homophone_pass.txt,
+homophone_codes.tsv, PREREG_homophone.md), and whose value is the same, becomes S with 'homophone pass S' in its note
+(decode.json s_words: S where the token's own chunk agrees or is absent, M where it disagrees). Never H.
 The note gives agreeing occurrences per letter (L1 = 8 Apr 1714, f60R-f65L; L2 = 28 Aug 1714, f65R-f66R).
     python3 make_key.py [--check]     (--check: exit 1 if ../key.tsv differs from a regeneration)
 """
@@ -29,12 +33,26 @@ def per_letter():
     return agree
 
 
+def promoted():
+    txt = os.path.join(HERE, 'homophone_pass.txt')
+    if not os.path.exists(txt):
+        return {}
+    ok = {l.split()[0] for l in open(txt, encoding='utf-8') if '-> PASS' in l and '-> above' in l}
+    rows = csv.DictReader(open(os.path.join(HERE, 'homophone_codes.tsv'), encoding='utf-8'), delimiter='\t')
+    vals = {}
+    for r in rows:
+        if r['config'] in ok:
+            vals.setdefault(r['code'], set()).add(r['value'])
+    return {c: v.pop() for c, v in vals.items() if len(v) == 1}
+
+
 def build():
     out = io.StringIO()
     w = csv.writer(out, delimiter='\t', lineterminator='\n')
     w.writerow(['code', 'value', 'grade', 'source', 'note'])
     rows = list(csv.DictReader(open(os.path.join(HERE, 'key_all.tsv'), encoding='utf-8'), delimiter='\t'))
     pl = per_letter()
+    pro = promoted()
     for r in sorted(rows, key=lambda r: int(r['value'])):
         n, ag = int(r['n']), int(r['agree'])
         a1, a2 = pl.get(r['value'], [0, 0])
@@ -44,9 +62,10 @@ def build():
             g, tag = 'M', 'single attestation: '
         else:
             g, tag = 'M', 'unsettled: '
-        w.writerow([r['value'], r['meaning'], g, SRC,
-                    '%s%d/%d aligned occurrences agree (L1 %d, L2 %d); others %s'
-                    % (tag, ag, n, a1, a2, r['others'] or '-')])
+        note = '%s%d/%d aligned occurrences agree (L1 %d, L2 %d); others %s' % (tag, ag, n, a1, a2, r['others'] or '-')
+        if g == 'M' and pro.get(r['value']) == r['meaning']:
+            g, note = 'S', note + '; homophone pass S (READ2-PAG, 3 Oct 2026): same value as each letter\'s own top chunk, C1 PASS'
+        w.writerow([r['value'], r['meaning'], g, SRC, note])
     return out.getvalue()
 
 

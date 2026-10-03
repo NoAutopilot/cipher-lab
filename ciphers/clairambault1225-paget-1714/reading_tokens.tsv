@@ -11,7 +11,7 @@ f60R	45	176	H	en	M
 f60R	46	221	H	se	M
 f60R	69	147	H	li	H
 f60R	70	46	H	s	M
-f60R	71	146	H	le	M
+f60R	71	146	H	le	S
 f60R	72	87	H	de	H
 f60R	75	232	H	il	M
 f60R	76	66	H	ba	M
@@ -52,7 +52,7 @@ f61L	88	46	H	s	M
 f61L	89	87	H	de	M
 f61L	90	147	H	li	M
 f61L	91	46	H	s	M
-f61L	92	146	H	le	M
+f61L	92	146	H	le	S
 f61L	104	145	H	la	M
 f61L	105	31	H	ab	M
 f61L	106	67	H	be	H
@@ -67,7 +67,7 @@ f61L	148	67	H	be	H
 f61L	165	34	H	de	M
 f61L	166	147	H	li	M
 f61L	167	46	H	s	M
-f61L	168	146	H	le	M
+f61L	168	146	H	le	S
 f61L	199	56	H	l	M
 f61L	200	31	H	ab	M
 f61L	201	67	H	be	H
@@ -79,7 +79,7 @@ f61R	33	87	H	de	H
 f61R	34	84	H	ce	H
 f61R	35	38	H	a	M
 f61R	36	46	H	s	M
-f61R	37	146	H	le	M
+f61R	37	146	H	le	S
 f65L	38	190	H	d	M
 f65L	39	175	H	ne	M
 f65L	40	47	H	t	M
@@ -266,7 +266,7 @@ f66L	257	84	H	ce	H
 f66L	258	156	H	me	M
 f66L	259	212	H	re	M
 f66L	266	161	H	m	M
-f66L	267	146	H	le	M
+f66L	267	146	H	le	S
 f66L	268	90	H	du	H
 f66L	269	32	H	c	M
 f66L	270	87	H	de	H
@@ -293,7 +293,7 @@ f66L	298	105	H	di	M
 f66L	299	45	H	ar	M
 f66L	300	175	H	ne	M
 f66L	301	221	M	se	M
-f66L	311	146	H	le	M
+f66L	311	146	H	le	S
 f66L	312	90	H	du	H
 f66L	313	32	H	c	M
 f66L	314	87	H	de	H
@@ -347,7 +347,7 @@ f66R	20	38	H	a	M
 f66R	21	47	H	t	M
 f66R	22	204	H	ue	M
 f66R	23	36	H	36	I
-f66R	33	146	H	le	M
+f66R	33	146	H	le	S
 f66R	34	198	H	in	M
 f66R	35	56	H	l	M
 f66R	36	41	H	ce	M
@@ -497,7 +497,7 @@ f66R	319	221	H	se	M
 f66R	320	46	H	s	M
 f66R	321	185	H	on	H
 f66R	322	32	H	c	M
-f66R	326	146	H	le	M
+f66R	326	146	H	le	S
 f66R	327	46	H	s	M
 f66R	337	155	H	ma	H
 f66R	338	86	H	da	M

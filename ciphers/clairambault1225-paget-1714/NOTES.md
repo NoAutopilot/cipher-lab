@@ -935,6 +935,37 @@ Result: no prior modern decipherment or print of these letters located; the item
 ## Next step (READ2-RELABEL, 3 Oct 2026)
 Images are on disk and read: the Gallica leaves f55-f66 (Clairambault 1225, ark btv1b9001034d) are in images/ (f60-f66 L/R halves, gutter strip and bracket crops, manifest.json with folio_pinning), and two blind line-crop passes plus the f66L gutter pass re-read all 505 cipher tokens against them (A2-PAG2, A2-PAG3). The next step is therefore the open-codes homophone pass on the 428 M tokens, run on align/ alone (group the codes by agreeing aligned chunks across both letters, per-letter shuffle control first), ~$2; it needs nothing further from an archive. The only unread pieces are 4 tokens (f66L 169-172, no gloss) and one solid-inked group (f61L), both waiting on the Marine B7 originals (LOCAL-QUEUE L11), unchanged.
 
+## READ2-PAG (3 Oct 2026)
+
+Intake gate (pasted by LANE-READ2): `clairambault1225-paget-1714: partial (line 1) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0. Disk only: no network request, no vision call, no subagent. Tool shelf (`tools/tool_shelf.py "assign values
+to homophone/null cipher codes from an interlinear gloss alignment"`) offered tools/interlinear_align.py [controlled-only]; used as the
+aligner through align/evaluate.py (no private aligner).
+- **Pre-registration** `align/PREREG_homophone.md`, pushed as 0cfc96eb before the first run: classes one-unit / homophones (read off
+  the key, codes per value) / nulls (configuration C2, null-cost 0, empty chunk a value); statistic held-out agreement, each letter
+  aligned alone, key_A = unique top chunk, scored on the other letter, both directions; control the gloss texts permuted within each
+  letter, 200 seeds; gate above shuffle p95 both directions; per-code promotion only if the both-direction code count also clears
+  its shuffle p95 and the value equals key.tsv's.
+- **Result** (`align/homophone_pass.py` -> `align/homophone_pass.txt`, `align/homophone_codes.tsv`):
+
+| configuration | L1 -> L2 real / shuffle mean / p95 | L2 -> L1 real / shuffle mean / p95 | gate | codes both directions real / mean / p95 |
+|---|---|---|---|---|
+| C1 null-cost -3 | 24/134 = 0.179 / 0.032 / 0.074 | 9/47 = 0.191 / 0.046 / 0.111 | PASS | 4 / 0.4 / 1 |
+| C2 null-cost 0 | 22/166 = 0.133 / 0.359 / 0.466 | 14/55 = 0.255 / 0.440 / 0.574 | FAIL | 3 / 0.0 / 0 |
+
+  C1's four codes: 87 de, 146 le, 196 po, 240 ion (four values, no homophone set shown; four codes is too few to argue against
+  homophones). C2 fails: free nulls raise chance agreement on empty chunks above the real figure, so nulls get no support here.
+- **Key and grades.** align/make_key.py now reads the passing configuration's codes: 146 'le' (the only M row among the four) becomes
+  S, note "homophone pass S"; decode.json gains `s_words` (Usage 8: tools/decode_key.py option `s_words`, S where the token's own
+  chunk agrees or is absent, disagree_grade where it disagrees; offline case in tools/tests/test_decode_key.py passes; the antt-linhares-chave
+  and rah-canada-1869 failures there are the drift NEXT2-PAG logged). `tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`:
+  `ciphertext.tsv: tokens 505: H 64, I 7, M 420, S 8, U 6` / `reading up to date`. Per token (rule 4): **H 64, C 0, S 8, M 420, I 7, U 6**
+  of 505; firm (H+C+S) 72. The 8 S are code 146 tokens whose own aligned chunk is 'le'; its other 12 stay M.
+- Judge: not run -- no specs/clairambault1225-paget-1714.json. HYPOTHESES.md opened with this row and the instrument count (one aligner,
+  four tests; the 420 M stay "untested-by-this-tool", the next step needs a different instrument or new material).
+Rule 10: values described only as read from the period interlinear decipherment, or chosen by this test (S).
+`tools/gaps_check.py clairambault1225-paget-1714` (pasted): `OK keep-going clairambault1225-paget-1714: keep going: 1 internal gap(s), 1 step(s) untried`.
+
 ## Remaining gaps (READ2-RELABEL, 3 Oct 2026; restates the 2 Oct 2026 section, nothing re-run)
 Read so far: token level H 64, M 428, I 7, U 6 of 505 (firm 64), decode.json run 2 Oct 2026 (A2-PAG2); 99.2% of tokens lie under a period interlinear gloss read off the images on disk
 - Code-level values for the 428 M tokens (single-attestation or unsettled codes; frequent codes 46, 146, 145, 175) - blocker: open-codes; alignment self-agreement 0.276 vs shuffle p95 0.121 does not hold one value for them, which fits homophones, nulls or a paraphrasing gloss; next: the homophone pass on align/, per-letter shuffle control first, ~$2
@@ -950,3 +981,20 @@ Read so far: token level H 64, M 428, I 7, U 6 of 505 (firm 64), decode.json run
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
 - [x] retry: decode --check exit 0 at the 2 Oct 2026 regrade; re-run it after the homophone pass
 Verdict: keep going: 1 internal gaps; cheapest next: the open-codes homophone pass on the 428 M tokens (align/ only; the page images are on disk and already re-read), ~$2
+
+## Remaining gaps (READ2-PAG, 3 Oct 2026)
+Read so far: token level H 64, S 8, M 420, I 7, U 6 of 505 (firm 72), tools/decode_key.py --check 3 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 420 M tokens (single-attestation or unsettled codes; frequent codes 46, 145, 175; 12 tokens of 146 whose own chunk disagrees) - blocker: open-codes; tools/interlinear_align.py has now run four tests on these codes (NEXT-PAG defaults and syllabic options, PAGET-KEY per-letter gates, READ2-PAG held-out homophone/null pass: C1 PASS 0.179/0.191 vs p95 0.074/0.111, 4 codes vs p95 1; C2 FAIL), and only 146 'le' moved; rule 3's third-attempt clause retires a fifth configuration of the same aligner; next: a different segmentation instrument that does not draw chunk boundaries from hard-EM on the same 56 pairs, or the Marine B7 originals (LOCAL-QUEUE L11)
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (READ2-PAG, 3 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [ ] key-rebuild: per-letter controls both PASS (PAGET-KEY, A2-PAG2); READ2-PAG held-out homophone/null pass C1 PASS, C2 FAIL, 146 'le' to S; key.tsv 111 codes. tools/interlinear_align.py has run four tests on these 56 pairs (NEXT-PAG x2, PAGET-KEY, READ2-PAG) and a fifth configuration of it is closed by rule 3's third-attempt clause; planned: a different segmentation instrument not drawn from hard-EM on the same pairs (tool_shelf candidates first, with their known-answer check), per-letter held-out control as in align/PREREG_homophone.md, ~$6
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: tools/decode_key.py --check exit 0 after the homophone pass (READ2-PAG): H 64 S 8 M 420 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: a different segmentation instrument for the 420 M tokens (tool_shelf first, per-letter held-out control as in align/PREREG_homophone.md), ~$6
+

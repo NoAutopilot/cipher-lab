@@ -1,0 +1,6 @@
+READ2-PAG homophone/null pass (PREREG_homophone.md); settings {'max_chunk': 4, 'seg_bonus': 0.5, 'len_prior': 0.5}; per-letter gloss shuffle, 200 seeds
+C1 null-cost -3: L1->L2 24/134 = 0.179 vs shuffle mean 0.032 p95 0.074; L2->L1 9/47 = 0.191 vs shuffle mean 0.046 p95 0.111 -> PASS; codes supported both directions 4 vs shuffle mean 0.4 p95 1 -> above
+C1 homophony read-off: 4 codes -> 4 distinct values; values with >1 code: none
+C2 null-cost 0: L1->L2 22/166 = 0.133 vs shuffle mean 0.359 p95 0.466; L2->L1 14/55 = 0.255 vs shuffle mean 0.440 p95 0.574 -> FAIL; codes supported both directions 3 vs shuffle mean 0.0 p95 0 -> above
+C2 null codes (empty top chunk in both letters): 56
+C2 homophony read-off: 3 codes -> 3 distinct values; values with >1 code: none

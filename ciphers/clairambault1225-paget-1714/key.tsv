@@ -55,7 +55,7 @@ code	value	grade	source	note
 126	ch	C	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	2/3 aligned occurrences agree (L1 0, L2 2); others e:1
 135	je	C	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	2/2 aligned occurrences agree (L1 0, L2 2); others -
 145	la	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 5/12 aligned occurrences agree (L1 1, L2 4); others l:3,me:2,e:1,ta:1
-146	le	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 8/20 aligned occurrences agree (L1 4, L2 4); others a:1,age:1,b:1,ce:1,en:1,les:1,ma:1,me:1,pri:1,qui:1,ur:1,ut:1
+146	le	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 8/20 aligned occurrences agree (L1 4, L2 4); others a:1,age:1,b:1,ce:1,en:1,les:1,ma:1,me:1,pri:1,qui:1,ur:1,ut:1; homophone pass S (READ2-PAG, 3 Oct 2026): same value as each letter's own top chunk, C1 PASS
 147	li	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	4/6 aligned occurrences agree (L1 2, L2 2); others i:2
 148	le	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others lo:1
 155	ma	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	4/7 aligned occurrences agree (L1 0, L2 4); others le:1,n:1,pas:1

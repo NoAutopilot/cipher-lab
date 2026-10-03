@@ -131,5 +131,27 @@ try:
 finally:
     shutil.rmtree(tmp4)
 
+# s_words (READ2-PAG, 3 Oct 2026): a key row whose note names a passed test grades S where its vote agrees or is
+# absent, disagree_grade where it disagrees; checked before m_words (the same note may still say 'unsettled')
+tmp5 = tempfile.mkdtemp()
+try:
+    open(os.path.join(tmp5, 'key.tsv'), 'w').write(
+        'code\tvalue\tgrade\tsource\tnote\n146\tle\tS\tgloss\tunsettled; homophone pass S\n'
+        '30\ta\tM\tgloss\tunsettled\n52\tet\tH\tgloss\t3/5 agree\n')
+    open(os.path.join(tmp5, 'ciphertext.tsv'), 'w').write(
+        'line\tposition\tsign\tconfidence\n' + ''.join(f'r01\t{i}\t{t}\tH\n' for i, t in
+                                                     enumerate(['146', '146', '146', '30', '52'], 1)))
+    open(os.path.join(tmp5, 'votes.tsv'), 'w').write(
+        'line\tposition\tvalue\nr01\t1\tle\nr01\t2\tla\nr01\t4\ta\nr01\t5\tet\n')
+    job = {'format': 'tsv', 'votes': {'file': 'votes.tsv', 'value_column': 'value'}, 'voted_grade': 'H',
+           'disagree_grade': 'M', 'm_words': ['unsettled'], 's_words': ['homophone pass S']}
+    outputs, cnt, ct = decode_key.run_job(tmp5, job)
+    g = [l.split('\t')[-1] for l in outputs['reading_tokens.tsv'].splitlines() if l.startswith('r01')]
+    ok = g == ['S', 'M', 'S', 'M', 'H']
+    fails += not ok
+    print('PASS' if ok else 'FAIL', 's_words: agreeing/absent vote S, disagreeing M, m_words and votes unchanged', g)
+finally:
+    shutil.rmtree(tmp5)
+
 print('decode_key:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)
