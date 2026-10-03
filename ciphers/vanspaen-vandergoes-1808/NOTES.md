@@ -183,7 +183,7 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 
 Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
 - Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public; list in
-  images/na_2.01.08_281_scans.tsv, 65 viewed 3 Oct by FT4, FT4b, FT4c, not found; next 141-159) at thumbnail size to locate
+  images/na_2.01.08_281_scans.tsv, 119 viewed 3 Oct by FT4, FT4b, FT4c, GAPS26, not found; next 1-99 and 137-139) at thumbnail size to locate
   the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
   or a ministry gloss (premise (c)); (DECODE DocumentsList done 3 Oct, FT4c: 0 documents). S.
 
@@ -278,11 +278,38 @@ Step: the Verdict's two named steps (FT4b). Nothing transcribed or decoded. Stat
   service.archief.nl 19 (of the 25 cap), no 4xx/5xx; www.nationaalarchief.nl 0. Vision 2.
   Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b and FT4c, 3 Oct 2026)
+## GAPS26-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): inv. 281 scans 141-159, then 100-136
+
+Step: the Verdict's cheapest step. Locate only; nothing transcribed or decoded. Status unchanged.
+- **Scans 141-159**, IIIF `full/450,/0`, 19 views (18 new; 150 re-viewed), 1.6 s apart, all HTTP 200 image/jpeg; one
+  contact sheet. Then four header crops (`pct:50,3,50,14/700,`) of 141, 151, 153, 159 on one sheet to read dates.
+  - All clear prose: Dutch letters "Hoog Edel Gestrenge Heer" and French letters "Monsieur", several signed van Spaen
+    (142, 150, 151, 153), 146 and 156 signed by another hand ("Le Baron de ...", not read), 154-155 a French
+    formal act with a calligraphic initial. 147, 157, 158 blank.
+  - Headers read from the crops: 141 "Wezel, [1]8 Mars 1808"; 151 "Wezel den 15 Maart 1808 des avonds", docket
+    "718 / Ontv. 17 Maart 1808"; 153 "Wezel den 15 Maart 1808", docket "717 / Ontv. 17 Maart 1808"; 159 "Wezel den
+    16 Maart 1808", docket "730 / Ontv. 18 Maart 1808". So 141-159 is the Wesel commissioners' correspondence of
+    mid-March 1808, with ministry receipt numbers 717-730.
+- **Scans 100-136**, same size, 37 views (36 new; 120 re-viewed), all HTTP 200; one contact sheet (7 columns,
+  330 px per spread, so headers are read only approximately).
+  - Clear letters in Dutch and French, many signed van Spaen beside a second commissioner's signature (105-109,
+    118-121, 128, 133-134); headers that look like "Wezel ... Januarij/Janvier 1808" at 100, 105, 107, 109, 127 and
+    "... Feb 1808" at 114, 117 (approximate at this size, not read). Ruled tables in words and sums at 102-103 and
+    123 (a statistical return), not figure cipher. Blank or near-blank: 110, 116, 122, 126, 129.
+  - None of the 37 carries a page of figure groups, a decipherment slip or a key sheet.
+- So 100-159 is the Wesel commissioners' bundle, January to mid-March 1808, in clear. January 1808 material is
+  filed around 100-109, but it is Wesel, not Düsseldorf, and none of it is in figures. The target (G.C. van Spaen,
+  Düsseldorf, 14-15 Jan 1808) was not seen in 100-136 or 141-159.
+- Total inv. 281 viewed now 119 of 360 scans (33%): FT4 25, FT4b 25, FT4c 19, GAPS26 54 new. Not located is a
+  search result, not an absence.
+- Requests: service.archief.nl 60 (19 + 4 header crops + 37), the session cap, 1.6 s apart, no 4xx/5xx;
+  www.nationaalarchief.nl 0. Vision 3 (two contact sheets, one header sheet). Grade counts H 0, C 0, S 0, M 0, I 0.
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c and GAPS26, 3 Oct 2026)
 Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
-- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 65 of 360 inv. 281 scans
-- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; DECODE DocumentsList read 3 Oct 2026 (FT4c): 0 documents, 0 associated records, the "is solved" claim is an unsourced catalogue note; no decipherment seen in 65 of 360 inv. 281 scans
-- location of the target leaves in inv. 281 - blocker: not-attempted; 65 of 360 scans viewed (FT4 25, FT4b 25, FT4c 19, 3 Oct 2026), leaves not located; 161-233 is ministry-to-King and commissioners' material Feb-Mar 1808 in clear; next: IIIF 450 px views of the unviewed scans 141-159 then 100-139, contact sheets, ~$2 per 25-scan batch
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 119 of 360 inv. 281 scans
+- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; DECODE DocumentsList read 3 Oct 2026 (FT4c): 0 documents, 0 associated records, the "is solved" claim is an unsourced catalogue note; no decipherment seen in 119 of 360 inv. 281 scans
+- location of the target leaves in inv. 281 - blocker: not-attempted; 119 of 360 scans viewed (FT4 25, FT4b 25, FT4c 19, GAPS26 54, 3 Oct 2026), leaves not located; 100-159 is the Wesel commissioners' bundle Jan-mid-Mar 1808 in clear (GAPS26), 161-233 ministry-to-King and commissioners' material Feb-Mar 1808 in clear; next: IIIF 450 px views of the unviewed scans 1-99 and 137-139, contact sheets, ~$2 per 25-scan batch (~$8 for 102 scans), then 234-360
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no sibling letter in this code is identified anywhere
@@ -292,4 +319,4 @@ Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); 
 - [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
 - [ ] image-check: native-resolution view of the target leaves once they are located in inv. 281
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: inv. 281 IIIF 450 px views of scans 141-159 (17 unviewed), then 100-139, contact sheets, ~$2 per 25-scan batch
+Verdict: keep going: 1 internal gap; cheapest next: inv. 281 IIIF 450 px views of scans 1-99 and 137-139 (102 unviewed), contact sheets, ~$2 per 25-scan batch, then 234-360
