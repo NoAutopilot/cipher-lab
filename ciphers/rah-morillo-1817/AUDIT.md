@@ -148,3 +148,5 @@ the letter was deciphered on the leaf in 1820 and its text has been in print sin
 **Status recommendation for the parent:** item 3 is N0 with `text: known`; per the folder's per-item line it can read
 `found-solved` for item 3 (as item 1 does), with key `period`. The folder's first-line status is the lane's to set (this
 verifier does not touch status.json).
+
+Pointer (3 Oct 2026, GAPS2-rah-morillo-1817, NOTES.md section of that name): the two print-vs-eye disagreements handed to the solver lane above were image-checked on native crops with a fresh blind read: the leaf reads "no se mueben" (not "reciben"), and the r2g2 gloss reads bari-nit-?-s, with no "Caimital". No reading token changed (C 90 / M 7 / U 0); class N0 and key `period` unchanged.
