@@ -238,6 +238,14 @@
    "control": "0.991/0.991/0.416/0.997/0.984, mean 0.876 at 5 seeds; + seed 6 1.000, mean 0.896 at 6 seeds (NOT met)",
    "target": "not run (CONTROL BELOW GATE)",
    "verdict": "CONTROL BELOW GATE; untested, not excluded. One collapsed seed (seed 3, 0.416) holds the mean 0.004 under gate; same anneal local-optimum shape as 2-ru-s1s-A and 2-lt-A."
+  },
+  {
+   "test": "transposition-de20-unigram",
+   "date": "3 Oct 2026",
+   "method": "A2-KAL2: ciphers/kaliningrad-2015/scripts/transposition_unigram.py. L1 of the convention-B folded letter distribution (N 977, K 21) vs tools/data/de20 unigrams; control T = transposed de20 windows at N 977, null S = the same windows under a random substitution; variants ident and free1 (best single relabel, same freedom for every text); seeds 42 (300 windows) and 7 (1000).",
+   "control": "T p99 0.195/0.192 (ident), 0.182/0.181 (free1); S p01 0.697/0.631 (ident), 0.507/0.495 (free1); gate T p99 < S p01 met on both seeds",
+   "target": "ident 0.374, free1 0.238 (x->r); 0 of 1300 T windows at or above either",
+   "verdict": "control-backed negative for transposition of German (de20 register) at N 977, with or without one free glyph label; plus 88 apostrophes vs 0.58 expected. Conditional on Ernst's transcript."
   }
  ]
 }

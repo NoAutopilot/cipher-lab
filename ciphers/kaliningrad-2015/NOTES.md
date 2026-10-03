@@ -376,3 +376,29 @@ e n r i s): test whether the convention-B letters read as plain German letters i
 the target's own letter counts against tools/data/de20, with a matched control of transposed de20 text at N=1066
 and a shuffled-alphabet null (the control can fail differently: a substitution of German changes the unigram fit,
 a transposition does not); ~$2, one worker, no hosts.
+
+## A2-KAL2, transposition-of-German unigram test, 3 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal2.md` (LANE-A2PUSH, account 2). Intake gate before deep work:
+`python3 tools/intake_gate_check.py kaliningrad-2015` -> `kaliningrad-2015: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0.
+
+Ran the step A2-KAL named above: `scripts/transposition_unigram.py` (disk and CPU only, no hosts). The convention-B
+letters (N 977 folded, K 21) against tools/data/de20 unigrams, L1, with a matched control of transposed de20 windows at
+N 977 (T) and a substituted-de20 null (S) on the same windows; the statistic separates T from S (gate T p99 < S p01 met
+on both seeds), so the control could have failed differently from the target (rule 3).
+- **As transcribed:** target L1 0.374 vs T p99 0.195/0.192 (seeds 42/7; T max 0.225 over 1,300 windows). Outside.
+- **One free glyph label** (Ernst's "x" is a stand-in for an unidentified glyph; every text given the same one-relabel
+  freedom): target 0.238 (x -> r) vs T p99 0.182/0.181, T max 0.211. Outside.
+- Apostrophes: 88 in-word vs 0.58 expected for de20 at N 977 (cycle-4 exclusion, unchanged).
+**Control-backed negative for transposition of German (de20 register)**, conditional on Ernst's transcript (rule 2).
+Tables and per-letter gaps: HYPOTHESES.md "A2-KAL2"; both numbers also in specs/kaliningrad-2015.json `cheap_test_done`.
+Status stays `open`; no "Remaining gaps"/"Escalation" sections exist for an `open` target (`tools/gaps_check.py`:
+SKIP), so none were edited. Rule 10: nothing here is a reading.
+
+**Next steps.** Cheapest still-untried unit on record: German homophonic at convention B (K 28), the one Latin language
+the convention-B sweep skipped (German was run at convention A only, GOLD-KAL1): `tools/family_run.py --family
+homophonic --param profile=target --corpus tools/data/de20`, restarts 20, seeds 5, gate 0.9, control first; ~$1, one
+worker, no hosts. After that, the remaining structural lead is cycle 4's rank 6 (Russian with each softened consonant its
+own plaintext letter, K 36-37, which needs an alphabet parameter in `homophonic_anneal.py` and the judge's fold; ~$12 tool
+job + 2 units).

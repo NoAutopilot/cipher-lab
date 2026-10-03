@@ -500,6 +500,39 @@ python3 tools/family_run.py <scratch>/kaliningrad-2015.json --family homophonic 
 ```
 No judge PASS; no reading described. Status stays `open`. Rule 10: nothing here is a reading.
 
+## A2-KAL2, transposition-of-German unigram test (3 Oct 2026)
+
+Worker A2-KAL2 (LANE-A2PUSH, account 2), brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal2.md`. Script
+`scripts/transposition_unigram.py` (disk and CPU only). Hypothesis (2016 thread, Thomas #7: "e n r i s order suggests a
+transposition of German"): the convention-B letters are German letters in another order, so their own counts must fit
+German unigrams as they stand. Statistic: L1 between a text's letter distribution and all of tools/data/de20 (2,448,693
+letters), both through `homophonic_anneal.fold` (24 letters). `free1` gives every text, target and controls alike, its
+best single relabel (one sign type merged into any letter) -- the allowance for Ernst's "x", a label for an unidentified
+glyph (rule 2). Controls at the target's own N 977 (convention B folded, apostrophes dropped): T = de20 windows with their
+letters randomly permuted (what a transposition of German gives); S = the same windows under a random 24-letter
+substitution. The control can differ from the target on this statistic (substitution moves it, transposition does not),
+so it is not orthogonal (rule 3).
+
+| variant | seed, windows | CONTROL T (transposed de20) median / p99 / max | NULL S (substituted) p01 / median | gate T p99 < S p01 | TARGET | read |
+|---|---|---|---|---|---|---|
+| ident | 42, 300 | 0.120 / 0.195 / 0.205 | 0.697 / 0.962 | met | 0.374 | outside T (0 of 300 windows >= target) |
+| free1 | 42, 300 | 0.114 / 0.182 / 0.195 | 0.507 / 0.747 | met | 0.238 | outside T (0 of 300) |
+| ident | 7, 1000 | 0.121 / 0.192 / 0.225 | 0.631 / 0.958 | met | 0.374 | outside T (0 of 1000) |
+| free1 | 7, 1000 | 0.116 / 0.181 / 0.211 | 0.495 / 0.753 | met | 0.238 | outside T (0 of 1000) |
+
+Largest per-letter gaps (target pct / de20 pct): x 7.9/0.0, r 0.0/6.8, n 13.7/10.5, f 4.7/1.5, a 4.1/6.2, w 3.8/1.8,
+c 1.7/3.5, b 0.5/1.9. The best single relabel is x -> r (0.374 -> 0.238, the 0.239 the cycle-4 summary gave); even then
+the target sits about 0.06 above the transposition control's p99 and above its maximum over 1,300 windows, with f, w,
+n in excess and a, c, b short. Apostrophes: 88 in-word against 0.58 expected for de20 at N 977, which a transposition
+would also have to carry (cycle-4 exclusion, unchanged).
+
+**Read: control-backed negative for transposition of German (de20 register) at N 977**, with or without one free glyph
+label; the control met its gate on both seeds. The cycle-4 summary's window null p99 0.368 was a different (wider)
+statistic; this section's T band is the transposition-specific control and supersedes it for this hypothesis.
+Conditional on Ernst's transcript (rule 2) and on de20's register (1880-1940 novels); a different German register moves
+unigrams by far less than the gap (T's own spread across seven novels is inside 0.23). No reading; rule 10.
+Command: `python3 ciphers/kaliningrad-2015/scripts/transposition_unigram.py [--windows 1000 --seed 7]`.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
