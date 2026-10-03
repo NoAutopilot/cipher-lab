@@ -6968,3 +6968,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 12:22 | GAPS105-heinsius-dopff-1702 (account-4) | claim: ciphers/heinsius-dopff-1702 gaps step per .claude/briefs/runs/2026-10-02-account4-gaps-step.md; cap/box ends 12:57 UTC
 2026-10-03 12:22 | account-4 parent | parent 5 (this session) took over from parent 4 session_011mUCfY7R8vtAG69d6fSJik at 12:22 UTC 3 Oct 2026; live: CLOSER-60, FT4r-rousseau, GAPS103-hza, GAPS104-sufi-fiddle, GAPS105-heinsius-dopff, GAPS106-florence-dieci
 2026-10-03 12:22 | GAPS106-florence-dieci-responsive (account-4) | claim: florence-dieci-responsive -- cheapest Remaining-gaps step; cap USD 6, box ends 12:57 UTC; last other-account activity 03:01 UTC (>6 h)
+2026-10-03 12:22 | account-4 parent | check-in 67 12:23: no done lines; 6 live since 12:20 (CLOSER-60, FT4r, GAPS103-106); no refill; allowed_warning; next 12:38
