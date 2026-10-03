@@ -308,7 +308,7 @@ half of the step is blocked from outside the session (host down), not negative.
 
 ### Next
 
-ONE next step: re-run the archive.org half when the host is back -- `advancedsearch` for HMC Portland vol. IV and
+ONE next step (DONE 3 Oct 2026 by A2P4-RABY04, see the section at the end: HMC Bath III / Portland IV 0 hits, Riezler Bd. 7 not on archive.org): re-run the archive.org half when the host is back -- `advancedsearch` for HMC Portland vol. IV and
 HMC Bath (Prior papers) plus Riezler *Geschichte Baierns* Bd. 7, then `be-api fts` with `identifier=` on each hit for
 Raby / Berlepsch / Reichart / Berlin 1704, and `_djvu.txt` grep where the item is open -- about USD 2, 20 minutes, 20
 requests. Suggestion only (Usage 7, not run): a LOCAL-QUEUE row for the owner's browser to download the Preuss 1897
@@ -362,3 +362,22 @@ copies), as the OPEN section records; no print of the enclosure text located.
 
 Requests this pass: discovery.nationalarchives.gov.uk 6, archive.org 6 (3 advancedsearch, 1 metadata,
 2 download: a 302, then the followed djvu fetch), github.com shared clones; no 403/429/challenge (archive.org back up). Nothing read, graded or tested.
+
+
+## A2P4-RABY04 (account-2 worker, LANE-A2PUSH4, 3 Oct 2026 18:33-18:4x UTC): archive.org half re-run
+
+Intake gate: `intake_gate_check.py` passed ("open (line 1) -- edition/page or full-text-search citation found"). Script only, 0 vision.
+Search result for the log (rule 10: not a verdict). Status stays `open`.
+
+| Source (archive.org id) | Method | Positive control | Target terms (Raby 1704 / Berlepsch / Reichar[d/t]) |
+|---|---|---|---|
+| HMC *Bath* vol. III, Prior Papers (1904), `calendarofmanusc03grea` | `_djvu.txt` 1.96 MB, grep; be-api fts with `identifier=` | Raby: 3 djvu lines, index "Raby, Lord, 232, 269", be-api 1 hit -- reproduces | Raby lines are 1697-98 (Ryswick/Calais passage, William III's suite); Berlepsch 0, Reichar 0 both routes; no 1704 Raby letter. Hedges 5 lines (1698 and 1690s admiralty matters) |
+| HMC *Portland* IV (1897), `11789985bsb` (a second copy of `dukeportlandmanu04greauoft`) | be-api fts `identifier=` | Raby: 1 hit (the 1704 remittance of GBP 6000 to "Lord Raby ambassador at Berlin" -- same passage as the Premise check) -- reproduces | Berlepsch 0 |
+| Riezler *Geschichte Baierns*, only `RiezlerGeschichteBaiernsBd3` (1889) on archive.org | advancedsearch (title); be-api fts | none possible: Bd. 3 covers an earlier century, so its Raby 0 / Berlepsch 0 is not a test of the 1704 question | Bd. 7 (the volume with pp.602-603) **not on archive.org** under that title (1 item returned); the Riezler step stays unread |
+
+Other Bath identifiers returned (`calendarofmanusc01grea`, `02`, `calendarofmanus1v2grea`, `calmanumarquisbath13greauoft`, `calendarmanuscr00blatgoog`) are other volumes of the same calendar, not opened (Prior Papers is the 1704-relevant one; a bad copy `calendarofmanus03grea` answered HTTP 500 on download, one fetch, not retried).
+Hits: none for the target letters. Misses: as above. The 1978 "HMC report" citation (OPEN section, query 5) still unplaced; it reads as a BL-foliated reference, not Portland IV or Bath III.
+Requests this pass: archive.org 5 (3 advancedsearch, 2 download), be-api.us.archive.org 6; no 403/429/challenge.
+
+### Remaining gaps / Next (after this pass)
+Riezler Bd. 7 and Preuss 1897 page text need a reader (HathiTrust / Google Books page view) -- blocked from the cloud; a LOCAL-QUEUE row is the only route and is a suggestion here (Usage 7), not filed.
