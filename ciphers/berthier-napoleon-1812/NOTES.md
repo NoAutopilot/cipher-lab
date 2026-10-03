@@ -1,4 +1,5 @@
-partial
+found-solved
+Plaintext of this very letter is in print (GAPS-berthier-napoleon-1812, 3 Oct 2026, Google Books API full-text search, volume MdBnAAAAMAAJ): V. Haegele (ed.), *Napoléon et Joseph Bonaparte: correspondance intégrale, 1784-1818* (Tallandier, 2007; ISBN 9782847344653), prints it as King Joseph to Napoleon, "Madrid, 22 décembre 1812", from "les archives du roi Joseph", opening "Je n'ai aucune nouvelle de V. M. depuis son départ de Paris"; page number not yet read (snippet view only, NO_PAGES). Vilcoq's date is right; his sender (Berthier) is not. Any later reading of the plate is N0-type (rule 10). Earlier premise line kept below.
 Vilcoq 1969 (Persée, pages read in full incl. page images, not just search hits) reproduces the Berthier cryptogram itself as a plate (p.24, "Correspondance datée du 22 décembre 1812 du maréchal Berthier, Prince de Neufchâtel, à l'Empereur, (Archives Nationales.)" -- the image's opening number groups match ciphertext.txt exactly) with NO accompanying plaintext reconstitution, unlike the Rapp/Dantzig 1813 letter in the same article which Vilcoq does reconstruct in full (pp.25-27); Chuquet 1912 p.440 (letters XIX/XXIII, both 22 Dec 1812) read by this worker for cipher markers and carries none, while Chuquet's own edition elsewhere explicitly flags a different Berthier letter (VIII, 16 Dec, p.186) "En chiffres" -- so the XIX/XXIII pairing with this cryptogram is unconfirmed, not a match.
 
 ## Y9: full ciphertext and crib test (25 Sept 2026, LANE R6)
@@ -906,18 +907,76 @@ and "aucune nouvelle directe de France" (5 hits, none about this letter), 3 Oct 
 
 Request count: jfbouch.fr 6, be-api.us.archive.org 3. Cost: get_session exposes no cost figure for this session.
 
-## Remaining gaps (GF4d, 3 Oct 2026)
-Read so far: 324 of 325 tokens have a table entry (H 193, M 131; shd1812/reading_shd1812.tsv); not yet rendered as running French.
-- token 165 (code 851) - blocker: illegible; the table entry is under a fold in the photographed sheet (shd1812/crops/h08b_L01.jpg); next: context from the running text, or the SHD sheet itself
-- running-French rendering (endings, joins, punctuation codes) of the 324 entries - blocker: not-attempted; outside the GF4d brief; next: a Sonnet/Opus rendering pass over reading_shd1812.tsv with the 16 M-reconciled entries re-checked against their crops, ~$3
-- sender and date (Vilcoq's "Berthier, 22 Dec 1812" against Spanish-front content) - blocker: not-attempted; outside the GF4d brief; next: check-solved pass on the corrected premise (Du Casse, Mémoires du roi Joseph VIII-IX; Spanish-front correspondence, late 1812), ~$3
+## Premise check (GAPS-berthier-napoleon-1812, 3 Oct 2026)
 
-## Escalation (GF4d, 3 Oct 2026)
+Job: the GF4d Verdict step ("check-solved on the corrected premise"). Searched interior phrases of the GF4d first-form
+reading (`shd1812/reading_shd1812.tsv`), modernised into ordinary French, not only the opening. No vision calls.
+
+**Result: the plaintext of this very item is in print.** Google Books API (`GOOGLE_BOOKS_KEY`, `&country=US`), quoted
+phrase search, 3 Oct 2026. Four independent phrase queries each returned the same one volume,
+**MdBnAAAAMAAJ = Vincent Haegele (ed.), *Napoléon et Joseph Bonaparte: correspondance intégrale, 1784-1818*, Tallandier,
+2007, 895 pp., ISBN 9782847344653** (viewability NO_PAGES: snippets only, so the **page is not yet cited**). Snippets as
+returned (Google's text, not our decode):
+
+| query (quoted) | snippet from MdBnAAAAMAAJ | our plate (GF4d first forms) |
+|---|---|---|
+| Reille dépêche Valladolid courrier enlevé décembre 1812 (unquoted) | "... lettre conservée dans les archives du roi Joseph. Madrid, 22 décembre 1812. Je n'ai aucune nouvelle de V. M. depuis son départ de Paris. Je n'ai aucune nouvelle directe de France depuis les lettres du ministre de la Guerre du 5 ..." | lines 1-3 |
+| "aucune nouvelle directe de France" | "... depuis les lettres du ministre de la Guerre du 5 octobre. Je n'ai jamais reçu ni compte, ni rapport, ni état de situation de l'armée du Nord, ..." | lines 2-4 |
+| "Je n'ai jamais reçu ni compte" | "... quelles qu'aient été mes demandes réitérées à cet égard. J'adresse à V. M. I et au Ministre de la guerre à Paris des quadruplicatas de mes dépêches ..." | lines 4-7 |
+| "enlevé avec toute la correspondance" | "... près de Valladolid. V. M. trouvera ci-joint copie d'une dépêche de M. le général Reille qui m'a paru de nature à être mise sous ses yeux. C'..." | lines 8-11 |
+| "le général Reille qui m'a paru" | "... C'est la première prière de ce genre que je reçois : elle m'éclaire sur la position des provinces du Nord. Je savais bien qu'elle n'était pas bonne mais je ne la ..." | lines 11-14 |
+| "comte Reille et à la droiture" | "... de ses intentions. Je conçois qu'il faut trouver un remède et voici ce que je propose à V. M. dans l'hypothèse où la guerre avec la Russie continuerait ..." | lines 18-22 |
+
+So: sender **King Joseph** (not Berthier), recipient Napoleon, **Madrid, 22 December 1812** (Vilcoq's date stands), and
+the printed clear text runs through to the plate's last line. The edition's source is Joseph's own archive copy, not the
+Archives nationales cipher dispatch Vilcoq photographed; it is the same letter (same date, same sequence of sentences
+across the whole plate). One wording difference seen so far: the print's "première prière de ce genre" where the
+plate's table entry reads "lettre" (GF4d first form); not settled here (a snippet, possibly an OCR or editorial
+reading). The SHD 1812 key test (GF4d) is independently confirmed by this: the key-read words match the printed letter.
+
+**Not found (search results only, rule 10):**
+- Du Casse, *Mémoires et correspondance politique et militaire du roi Joseph*, t. VIII and IX (archive.org
+  `mmoiresetcorre08joseuoft`, `mmoiresetcorre09joseuoft`, `_djvu.txt` downloaded, grep for quadruplicata, déplorable,
+  droiture, hypothèse, concentration, "départ de Paris", "5 octobre", Reille, Valladolid): this letter to the Emperor
+  is **not** printed there. T. IX pp. 121-125 prints Joseph's companion letter to Clarke (duc de Feltre), Madrid,
+  December 1812 (margin date garbled in the OCR), which encloses the same Reille letter and says the same thing in other
+  words ("Je savais bien que les affaires dans le nord n'étaient pas en très-bonne situation, mais je ne les croyais pas
+  en si mauvais état ... je n'ai même pas encore reçu d'états de situation de son armée").
+- IA full text (be-api fts) for ten phrases: no hit on this letter (5 unrelated hits for "aucune nouvelle directe de
+  France", others unrelated or 0).
+- Google Books for the other phrases tried ("depuis son départ de Paris", "mes dépêches de Salamanque", "Sacrifices
+  aussi grands", "concentration dont il est question", ...): no further hit beyond MdBnAAAAMAAJ.
+- Bouchaudy, jfbouch.fr `crypto/napoleon/index.html` (snapshot `sources/jfbouch/2026-10-03/`, re-read, plus one live
+  GET): the plate is not discussed; his 1812 material is the SHD table and a Clarke-Caffarelli letter.
+- Correspondance de Napoléon Ier: not searched, since it prints Napoleon's outgoing letters and this is an incoming one.
+
+Not a decipherment in print: nothing found that maps this ciphertext to the text (that question is the verifier's).
+Requests: archive.org 3 (1 advancedsearch, 2 djvu.txt), be-api.us.archive.org 10, www.googleapis.com 23,
+jfbouch.fr 1; at least 1.6 s apart.
+
+Gate outputs (3 Oct 2026):
+
+```
+$ python3 tools/gaps_check.py berthier-napoleon-1812
+OK keep-going berthier-napoleon-1812: keep going: 2 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+$ python3 tools/intake_gate_check.py berthier-napoleon-1812
+berthier-napoleon-1812: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+
+## Remaining gaps (GF4d, 3 Oct 2026; updated GAPS-berthier-napoleon-1812, 3 Oct 2026)
+Read so far: 324 of 325 tokens have a table entry (H 193, M 131; shd1812/reading_shd1812.tsv); the plaintext is in print (Haegele 2007, Joseph to Napoleon, Madrid, 22 Dec 1812), so the page is found-solved.
+- token 165 (code 851) - blocker: illegible; the table entry is under a fold in the photographed sheet (shd1812/crops/h08b_L01.jpg); next: read it off the printed text once the page is in hand (no new instrument needed)
+- running-French rendering of the 324 entries - blocker: not-attempted; superseded in purpose, since the clear text is printed (Haegele 2007), so this is now a grade-C alignment of the GF4d first forms against the print; next: align once the printed page is in hand, ~$2
+- printed page number for Haegele 2007 - blocker: not-attempted; Google Books gives snippets only (NO_PAGES) and its page view is captcha-blocked from the cloud; next: a LOCAL-QUEUE row for an owner-side look at the volume, or the verifier's own search, ~$1
+Sender and date, settled 3 Oct 2026 (GAPS-berthier-napoleon-1812): King Joseph to Napoleon, Madrid, 22 Dec 1812, printed in Haegele 2007 (Google Books MdBnAAAAMAAJ).
+
+## Escalation (GF4d, 3 Oct 2026; updated 3 Oct 2026)
 - [n/a] siblings: the plate is a single page and no sibling cipher letter in this key is identified yet
 - [n/a] clear-pages: no clear text accompanies the plate in Vilcoq's article
 - [x] known-keys: SHD 1812 Spanish-campaign table (Bouchaudy's images) reads the page, p 0.005 vs 200 shuffled keys (GF4d)
-- [ ] print: check-solved on the corrected premise (Joseph's Mémoires VIII-IX, Spanish-front series) to find the plaintext in print
+- [x] print: the plaintext is printed in Haegele 2007 (Joseph to Napoleon, Madrid, 22 Dec 1812), found 3 Oct 2026 by Google Books phrase search
 - [n/a] key-rebuild: a period key is in hand, so no rebuild is needed
-- [ ] image-check: re-read the 16 reconciled M entries and token 851 at native resolution, and re-check the plate's 3-vs-8 digits where a decode looks wrong
+- [ ] image-check: re-read the 16 reconciled M entries and token 851 against the printed text, not only the crops
 - [n/a] retry: the first known-key test succeeded, so there is nothing to retry
-Verdict: keep going: 2 internal gaps; cheapest next: check-solved on the corrected premise, ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: the Haegele 2007 page number (LOCAL-QUEUE row or the verifier's search), ~$1
