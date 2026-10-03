@@ -1,0 +1,35 @@
+{
+ "source": "Nationaal Archief 2.01.08 inv. 204A, service.archief.nl IIIF full/full, fetched 3 Oct 2026 (GAPS72); 450-px thumbnails of all 274 scans viewed from scratch, not committed",
+ "files": [
+  {
+   "file": "native/NL-HaNA_2.01.08_204A_0017.jpg",
+   "scan": 17,
+   "bytes": 1027674,
+   "sha256": "ec0dfc4b821fbdf8b8d722a475a3d34bd4f75fa5cee9434cd78c9d8b0ecc8eeb"
+  },
+  {
+   "file": "native/NL-HaNA_2.01.08_204A_0020.jpg",
+   "scan": 20,
+   "bytes": 913980,
+   "sha256": "6f636d754331ee48da75022c3c4fce2a9b6a0cdf22bfcf39de3c38ef531e2020"
+  },
+  {
+   "file": "native/NL-HaNA_2.01.08_204A_0021.jpg",
+   "scan": 21,
+   "bytes": 835730,
+   "sha256": "376108afd165d74e987f6438f0edd2b03d2f06602f0d0e62ed0161ddcb5623be"
+  },
+  {
+   "file": "native/NL-HaNA_2.01.08_204A_0065.jpg",
+   "scan": 65,
+   "bytes": 1047102,
+   "sha256": "70af9f741f92e729bda7863e449f6c859c77ec030a075629ac9bd283512eb049"
+  },
+  {
+   "file": "native/NL-HaNA_2.01.08_204A_0260.jpg",
+   "scan": 260,
+   "bytes": 1124724,
+   "sha256": "81dda53cf6db200280b1ff7a0a94fdc1dce0369836c9dd98fa23faa7d5d80bf4"
+  }
+ ]
+}

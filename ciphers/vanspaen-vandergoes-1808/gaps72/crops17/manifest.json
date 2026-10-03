@@ -1,0 +1,130 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "s17_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2400,
+    735,
+    4800,
+    1809
+   ],
+   "lines_in_crop": 6,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s17_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2500,
+    735,
+    4900,
+    1809
+   ],
+   "lines_in_crop": 6,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s17_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2400,
+    1809,
+    4800,
+    3056
+   ],
+   "lines_in_crop": 6,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s17_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2500,
+    1809,
+    4900,
+    3056
+   ],
+   "lines_in_crop": 6,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s17_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2400,
+    3056,
+    4800,
+    3661
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s17_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_204A_0017.jpg",
+   "box": [
+    2500,
+    3056,
+    4900,
+    3661
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 173,
+    "distance": 121,
+    "prominence": 60.0
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}
