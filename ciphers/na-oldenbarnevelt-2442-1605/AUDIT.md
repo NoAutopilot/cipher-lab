@@ -5,7 +5,7 @@ below). Key source: **ours** (the a=4, e=8, i=3, o=7, u=2 vowel-digit key was re
 VX-CT03, 25 Sept 2026; no period key, gloss or published key exists for it as far as searched). Text: not known in print.
 Blocks A and C2 are out of scope (not re-read from the image yet) and are not classified here.
 
-Verifier VERIFY-OLD (account 2, LANE-A2PUSH), 3 Oct 2026, 00:02-00:20 UTC. This session did not solve the target, did
+Verifier VERIFY-OLD (account 2, LANE-A2PUSH), 3 Oct 2026, 00:02-00:10 UTC. This session did not solve the target, did
 not decode and did not re-read the image. Claim under audit (NOTES.md sections 8-9; brief
 `.claude/briefs/runs/2026-10-03-acct2-verify-old.md`): "blocks B and C1 of NA 3.01.14 inv. 2442 (1605) read from the
 image (transcription/passD_image_A2OLD.tsv, reading.txt); A2-OLD2 re-derivation byte-identical (apply_key.py --check);
