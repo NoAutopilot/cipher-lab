@@ -1,0 +1,7 @@
+stage0 S1: groups 75 letters 251 exact True 1.2s
+stage0 S2: groups 63 letters 163 exact False 0.0s
+stage0 F249: groups 62 letters 193 exact True 0.1s
+stage0 f252r alone exact True
+shared f252r/S1: ['10', '121', '213', '248', '253', '369', '807']
+shared f252r/S2: ['121', '188', '253', '369', '660']
+shared f252r/F249: ['10', '121', '369', '807']

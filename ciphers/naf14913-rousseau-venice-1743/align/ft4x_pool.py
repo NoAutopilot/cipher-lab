@@ -65,10 +65,11 @@ def main():
     ap.add_argument('--stage0', action='store_true')
     ap.add_argument('--real', action='store_true')
     ap.add_argument('--ctrl', choices=['s', 'g'])
-    ap.add_argument('--with249', action='store_true', help='include F249 (only if stage0 shows it fits exactly)')
+    ap.add_argument('--blocks', default='S1,F249', help='comma list of S1,S2,F249 (addendum: only blocks that fit exactly alone)')
+    ap.add_argument('--stage0b', action='store_true', help='the chosen blocks jointly, without f252r')
     a = ap.parse_args()
     B, (gt, gw) = blocks()
-    use = ['S1', 'S2'] + (['F249'] if a.with249 else [])
+    use = a.blocks.split(',')
     if a.stage0:
         for k, (t, x) in B.items():
             t0 = time.time()
@@ -78,6 +79,14 @@ def main():
             print(f'shared f252r/{k}: {sorted(set(gt) & set(t))}')
         return
     blks = [B[k] for k in use]
+    if a.stage0b:
+        toks, text = [], ''
+        for t, x in blks:
+            if toks:
+                toks.append('#SEP'); text += '|'
+            toks += t; text += x
+        print(f'stage0b {use} jointly (no f252r): exact {solve_exact(toks, text, PINS, LIMIT)}')
+        return
     if a.real:
         toks, text = pooled(blks, gt, ''.join(gw))
         t0 = time.time(); r = J((toks, text, None))

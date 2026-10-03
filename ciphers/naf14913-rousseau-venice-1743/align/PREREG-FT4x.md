@@ -31,3 +31,11 @@ Gate (only when both shares <= 2/40):
     secondary readout only.
   - J_real unresolved -> NOT SCORED.
 Box 16:00-16:30 UTC, stop line 16:24. Cap USD 3. Script only, no vision, no subagents.
+
+## Addendum (16:0x UTC, after stage 0 only; no control or real J run yet)
+Stage 0 (`align/ft4x_stage0.out`): S1 exact fit True (1.2 s); **S2 exact fit False** (needs its one edit); F249 segment exact fit
+True; f.252r alone True. Shared f.252r codes: with S1 10/121/213/248/253/369/807; with S2 121/188/253/369/660; with F249
+10/121/369/807. A block that has no exact fit alone makes J nofit for the real and every control draw by construction (a control
+that cannot differ, rule 3), so S2 is dropped by the same rule already registered for f.249. Blocks: S1 + F249 + f.252r.
+Stage 0b: S1 + F249 jointly without f.252r; if nofit, F249 is dropped too (blocks S1 + f.252r) and that is reported. Everything else
+as registered above. 527 (S3/tail only) and 188/660 (S2 only) are therefore not tested here.
