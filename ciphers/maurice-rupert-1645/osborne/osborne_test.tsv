@@ -1,0 +1,6 @@
+stat	target	control_mean	control_p95	rank
+pair_consistency_8443p4	0.958	0.376	0.403	1_of_1001 (repeated-code occurrences 119 of 141)
+target_coverage	17/93 tokens keyed	-	-	13 distinct codes of 63
+4gram	-2.012	-1.778	-1.442	175_of_201
+word_cover	0.606	0.583	0.788	87_of_201
+judge	score -2.012	real_p05 -0.638	null_p99 -1.631	FAIL N=33

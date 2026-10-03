@@ -265,3 +265,55 @@ Rupert's own papers (Add MS 18980-82) on BL images, where the 7 July leaf is not
 
 Requests: de-crypt.org 1 (RecordsView/8444, no login); searcharchives.bl.uk 1. Vision calls 0. Rule 10: nothing here
 says new or unread.
+
+## Osborne-Rupert siblings, DECODE 8443 and 8444 (FT4d-maurice-rupert-1645, account-4, 3 Oct 2026)
+
+Run 3 Oct 2026, 01:06-01:15 UTC (`date -u`). FT4c named this step. **Result: the Osborne key does not read this letter.
+Its pairs are genuine (they beat their own shuffle control), but they cover only 17 of the target's 93 tokens, and
+those 17 score worse than shuffled keys.** Status stays `open`.
+
+- **Fetch.** One DECODE browser login (`tools/decode_browser_login.js 8443 --guess-fullsize --fetch-page
+  RecordsView/8444`), after the NSS proxy-CA fix (missing again in this container). All 6 full-size images were served
+  (4 for 8443, 2 for 8444; 13-14 MB each). Neither record has a document or transcription attached ("Documents 0").
+  The metadata reads 8443 Author "P. R. (Prince Rupert?)", Receiver "Osborne"; 8444 Receiver "Hen?Osborne". The DECODE
+  author/receiver fields look reversed against the BL catalogue (Osborne to Rupert); the leaves end "Your Highness's
+  most faithful ... servant, Hen. Osborne", dated Dover? (place unread). Committed: thumbnails, two 2400 px crops of
+  8443 P4 and `osborne/fullsize_sha1.txt`. The originals and the scrubbed-of-nothing HTML pages were not committed (the
+  account name is on them).
+- **What they hold.** Letters in clear with numbered cipher passages, each with a **period interlinear decipherment**
+  above the numbers. 8443 P4 (the second leaf's recto) carries most of it (about 20 cipher lines); 8443 P1 and 8444 P2
+  carry a few more lines. Only 8443 P4 was read (vision cap 3: one overview, two crops). 8443 P1/P2 and 8444 P2 cipher
+  lines are unread.
+- **Pairs** (`osborne/pairs_8443p4.tsv`, 141 occurrences, one eye read). Design: letters 2-66 (homophones, e.g. e = 40?,
+  45, 46, 52; s = 21, 22; o = 49, 50, 55, 66), nulls about 283-291, words about 75-226 in near-alphabetical order (all 75,
+  be 80, but 81, best 84, done 95, expect 103, is 120, it 130, in 131, may 139, me 143, not 153, of 159, or 164,
+  quarell 177, rather 181, that 193, this 194, they 201, unto 203, under 204), then King 226. Per-leaf control
+  (rule 3; `osborne/osborne_test.py`): repeated codes agree with their modal gloss 0.958 of the time against a shuffle
+  mean of 0.376 (p95 0.403, rank 1 of 1001). The pairs pass. The key is `osborne/osborne_key.tsv`: 60 codes, 5 with
+  conflicting glosses (4 d/g, 10 y/t, 40 e/c, 107 part/from, 193 that/the), graded M; the rest S.
+- **Range overlap with the target.** Partial. Both are letters-plus-words nomenclators with low two-digit letters. The
+  target's words run to 398, and its most frequent codes (148, 212, 229, 293, 323, 351, 355) are not in the Osborne
+  pairs; 293 would be a null in the Osborne table. Only 13 of the target's 63 distinct codes are keyed.
+- **Target test vs control** (`osborne/osborne_test.tsv`; en16_repo 4-gram, the judge block of `judge_key118.json`;
+  200 keys with values shuffled among the key's rows, seed 1):
+
+  | stat | Osborne key | shuffled-key mean | p95 | rank of 201 |
+  |---|---|---|---|---|
+  | 4-gram/letter | -2.012 | -1.778 | -1.442 | 175 |
+  | word cover | 0.606 | 0.583 | 0.788 | 87 |
+
+  Judge: **FAIL**, -2.012 vs real_p05 -0.638, null_p99 -1.631, N=33. The decode (`osborne/osborne_reading.txt`) begins
+  "[15] [26] [342] [148] [136] w [325] [162] best ...": isolated letters and stray words. N=33 is short, so this is a weak
+  negative. But the decode is no better than random keys, and 80% of the target's tokens fall on codes the sibling
+  table, as read, does not cover.
+- **Grades:** none claimed for the target. The sibling values are S at best (rule 4), and none read the target.
+- **Rule 7:** `python3 osborne/osborne_test.py --check` passes ("osborne outputs up to date"); `tools/decode_key.py
+  . --check` on the key-118 reading still passes.
+- **Next step** (keep going, about $1.5): read the unread Osborne cipher lines (8443 P1/P2, 8444 P2) from the full-size
+  images (re-fetch, one login; sha1s in `osborne/fullsize_sha1.txt`). That adds pairs, mostly in the 100-226 word band.
+  This is only worth doing if a fuller Osborne table might reach the target's 290-398 band. The 280s-290s are nulls
+  here, so the prior is low. Otherwise the remaining unread piece is blocked from outside the session: Rupert's own
+  papers (Add MS 18980-82) on BL images, where the 7 July leaf is not itemised.
+
+Requests: de-crypt.org about 15 (login, RecordsView/8443, RecordsView/8444, 6 thumbnails, 6 full-size; 1.6 s apart), one
+login. Vision calls: 3 (overview sheet, two 8443 P4 crops). Rule 10: nothing here says new or unread.
