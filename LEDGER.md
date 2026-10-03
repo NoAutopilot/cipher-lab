@@ -1717,3 +1717,5 @@ the end of every wake.
 | 3 Oct 2026 | A2-LAG3 | session_014qA6ujMq6LReZs65aWARfA | account 2 | Opus 5.5 | 2.21 | D | done 00:08 (03246d21): la-garde masc clean control 0.969 but 0.34-0.57 at measured 20-26% error: non-test, not negative; masc.py --param noise added + test. Lesson: rule 3 error-bracket clause caught it. |
 | 3 Oct 2026 | A2-GRA3 | session_01TnqekTdWtW4oPibQBNN7Xy | account 2 | Opus 5.5 | 3.51 | D | done 00:08 (a888c33f): gramont f.30 ehx = T grade S (152 bits, p 0.010), crosses too-short; VERIFIER WANTED (AUDIT/SO propagation). |
 | 3 Oct 2026 | A2-CAS9 | session_011EkfNBLrfaZR9XaoHEG34p | account 2 | Opus 5.5 | 2.29 | D | done 00:08 (c6eb3d8a): seeded_code lm=entry control 0.230 vs gate 0.6, target not run; seeded_code retired-for-tuning (third-attempt clause); next owner-side BL Add MS 41525 crib. |
+| 3 Oct 2026 | SORTER-BIRAGO2 | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | f.117 sorter inputs (277 tiles, 12 focus); published by acct-3 orchestrator |
+| 3 Oct 2026 | VERIFY-BIRAGO-SMALL | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | f.21v L11.17 endorsed (156); no.87 label rulings recorded |
