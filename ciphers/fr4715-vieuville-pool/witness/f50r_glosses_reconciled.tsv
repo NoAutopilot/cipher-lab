@@ -1,0 +1,17 @@
+# fr4715-vieuville-pool no.27 f.50r interlinear glosses, reconciled (GAPS-fr4715-vieuville-pool-12, 3 Oct 2026). Passes A (forward, witness/f50r_gloss_pass_a.tsv) and B (reverse, witness/f50r_gloss_pass_b.tsv), Opus 5.5 blind; 8 disputed sites settled by R (witness/f50r_gloss_recon_sites.tsv -> witness/f50r_gloss_recon.tsv).
+# gloss = as read (not normalised). grade (rule 4): C = A and B agree on code and gloss at H/M; M = settled by R or legible in part; L = code or gloss a few strokes only. kind: word = gloss beside a marked or plain word-code (adjacency); unglossed = marked group with no gloss.
+# R: the glosser draws a dark left-pointing dash into the code, which A or B took for a bar at three sites (7, 27, 59); marks below are R's where R ruled.
+site	code	mark	gloss	grade	kind	note
+G01	20	bar	c.g?ndi	L	word	A c.gondi L, B c.gbndi L; after 'pourra faire quelque entreprise'
+G02	35	none	pavia	C	word	A and B H; B's two dots are long-s feet from the line above (R, H)
+G03	35	bar	maine	M	word	A Dumaine, B vmaine (first letters unsure); bar in light ink under the gloss dash (R, H); 35 plain and barred carry different glosses
+G04	7	superscript d/o	lancaster	M	word	A lacaster (code 70), B lacgaster (barred 7); R: 7 + raised small d/o, no bar, L for the code
+G05	49	two dots	Champagne	M	word	gloss H both; A 49, B 479; R 49 two dots M (doubled 4 stem, a correction); context 'este deffaicte a [49] et que'
+G06	50	none?	Rendan	M	word	A london, B Rendan; R Rendan (R/K, -dan) M; after 'J'ay dit (6-like sign)'
+G07	59	bar?	grand prieur	M	word	A gracedpir L, B gra[n]dprieur; R 'grad pr' abbreviation M; bar vs gloss dash unsettled
+G08	27	none	Neuers	M	word	A neubo L, B Neuers M; code 27 both; R no mark of its own (the stroke is the glosser's dash), M
+G09	45	two dots	Neuers	L	word	A neuers M over 41, B Neuers? L over '4 l'; R 45 two dots L
+G10	37	dots	langier	C	word	A M (3 dots), B H; 'par le messager de [37] par qui il vous plaist me escripre'
+U01	13	bar	-	M	unglossed	'je nay aucune nouvelle de [13] sinon quil est'; A bar? L, B bar H
+U02	47	dots	-	M	unglossed	'ce quil pretend de [47]'; B only, R: 4 . 7 with a middle stroke unresolved (47 or 457), no gloss
+U03	7	bar	-	C	unglossed	'lequel na peu bailler a [7] lres de'; A and B H

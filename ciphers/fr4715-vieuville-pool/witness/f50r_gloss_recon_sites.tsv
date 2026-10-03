@@ -1,0 +1,10 @@
+# GAPS-fr4715-vieuville-pool-12 (3 Oct 2026): sites where f50r passes A and B disagree, given to the reconciler as X/Y (order randomised by hand: X is A at S1,S3,S6,S8; X is B at S2,S4,S5,S7)
+site	crops	question	X	Y
+S1	f50r_g03_s1,f50r_g04_s1	digits and mark of the cipher group under the gloss 'Champagne' (context 'deffaicte a [group] et que')	49, two dots	479, dots
+S2	f50r_g02_s1,f50r_g02_s2,f50r_g03_s1,f50r_g03_s2	digits and mark of the group under the gloss read lacaster/lacgaster	7, bar, superscript d	70, no mark
+S3	f50r_g04_s3,f50r_g05_s3	digits and mark of the group under the second 'neuers' gloss (context 'a [group] ne pourroit/pourront que')	41, two dots	4 l, dots
+S4	f50r_g04_s2	mark over 27 under the gloss neubo/Neuers (context '& y / sy [27] auroient')	bar	none
+S5	f50r_g02_s3,f50r_g03_s3	the gloss over 50 (context 'J'ay dit (6-like sign) [50] a fait')	Rendan (R or K first)	london
+S6	f50r_g03_s3,f50r_g04_s3	the gloss over barred 59 (context 'dit que le p.. de [59] le dire')	gracedpir	grand prieur (abbreviated)
+S7	f50r_g01_s1	the dotted group after 'ce quil pretend de' (line 2): digits, and whether a gloss stands over it	4 7 (or 9 7), dots, no gloss	no marked group noted
+S8	f50r_g01_s2,f50r_g01_s3,f50r_g02_s2,f50r_g02_s3	digits and marks of the two groups under 'pavia' and under '(Du/v)maine': are both 35?	pavia over 35 no mark; maine over 35 bar	pavia over 35 dots; maine over 35 bar

@@ -1,0 +1,18 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+A01	f50r_g01_s3	Dumaine	M	35	bar	M	... pavia de (circled 6-like sign)	est ...	first digit 3 or 7 (flat-topped); glossator's dark pointer stroke runs left to the code; a circled 6/G-like sign stands just before the code
+A02	f50r_g01_s1;f50r_g02_s1	c.gondi	L	20	bar	H	pourra faire quelque entreprise,	aura volonte de retourner	letters as seen: c . g b/o n/u d i (lit. 'c.gbudi'); maybe 'C. Gondi'; glossator's pointer dash to the left over the code
+A03	f50r_g02_s2	pavia	H	35	none	M	volonte de retourner a	Bergamy(?) a vaine escripte	first digit 3 (could be 7); no own mark seen on the code
+A04	f50r_g03_s1;f50r_g03_s2	lacaster	H	70	none	M	et qu'il seroit bien commode	lui sera Pesne(?) qui a pris Estampes	read 'lacaster' (Lancaster, n likely by tilde); second digit o/0; a dot follows the code; glossator's pointer dash left
+A05	f50r_g03_s1;f50r_g04_s1	Champagne	H	49	dots(2)	M	... deffaicte a	et que ... tiene obtenu	two dots above the start of the group, written left of the gloss; first digit partly blotted (4 read)
+A06	f50r_g03_s3	london	M	50	none	M	J'ay dit (circled 6-like sign)	a fait	first letters partly obscured by a blot ('Londan'/'london'); pointer dash left over the code; circled sign before code again as in A01
+A07	f50r_g03_s3;f50r_g04_s3	gracedpir	L	59	bar	L	J'ay ma dit que le pde de	le dire ...	gloss letters uncertain (gra ce d pir); code 5 + looped digit read 9; dark bar may be glossator's pointer, own bar uncertain
+A08	f50r_g04_s2	neubo	L	27	none	H	... & y	auroient le ... faire de prendre	letters: N e r/u u b o; perhaps a variant of 'Neuers'; pointer dash left over the code
+A09	f50r_g04_s3;f50r_g05_s3	neuers	M	41	dots(2)	M	... a	... ne pourroit que	two dots above the group; gloss could be 'Nevers'
+A10	f50r_g06_s1;f50r_g07_s1	langier	M	37	dots(3)	H	porte messager de	par qui Il vous plaist me escripre	gloss could be 'laugier'/'langior'; dots stand above-left of the 3
+U01	f50r_g01_s1	-	-	36	underline/bar	M	(cipher line) 25 93	93 73 23 60	all-cipher line 1; mark is a stroke below (possibly bar of next line)
+U02	f50r_g01_s2	-	-	13	bar	H	(cipher line) 73 95	23 95 15	all-cipher line 1
+U03	f50r_g01_s2	-	-	23	underline	M	(cipher line) 13	95 15 65	stroke beneath, may belong to clear line below
+U04	f50r_g01_s2	-	-	15	dot	L	(cipher line) 23 95	65 85 73	dot over the 1 may just be an i-like 1
+U05	f50r_g01_s2;f50r_g01_s3	-	-	27	dot	H	(cipher line) 23 73 95	23 77 02	all-cipher line 2
+U06	f50r_g01_s1	-	-	13	bar?	L	n'avons nouvelles de	sinon qu'il est ledit bailly	clear-text line; small stroke above, may be none
+U07	f50r_g06_s2;f50r_g07_s2	-	-	7	bar	H	lequel n'a peu bailler a	lres de G...	single digit 7 with bar; superscript above 'lres' is the abbreviation of the main hand, not a gloss

@@ -1,0 +1,14 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+U01	f50r_g01_s1	-	-	13	bar	H	je nay aucune nouvelle de	sinon quil est	barred group in clear line, no gloss above
+U02	f50r_g01_s1	-	-	4 7	dots	L	ce quil pretend de	m. de la Tr..	first digit uncertain (4 or 9); one or two dots above/left of it; no gloss
+B01	f50r_g01_s1;f50r_g02_s1;f50r_g02_s2	c.gbndi	L	20	bar	H	pourra en quelque entreprise,	aura volonte de retourner	gloss starts with a long stroke over the bar; letters read c.g.b.n.d.i, word unclear; 'di' tail visible at left edge of g02_s2
+B02	f50r_g01_s2;f50r_g02_s2	pavia	H	35	dots	M	volonte de retourner a	lequel ayant escript	two small dots at upper left of 35, may be ink specks rather than a mark
+B03	f50r_g01_s3;f50r_g02_s3	vmaine	M	35	bar	H	la pavia de (6)	est ende..	gloss could be 'du maine'/'umaine'; a circled 6-like sign with short bar stands just left of 35; gloss stroke runs left over 35
+B04	f50r_g02_s1;f50r_g02_s2;f50r_g03_s1;f50r_g03_s2	lacgaster	M	7	bar	M	bien donnee	bon fera	7 followed by superscript 'd' and a dot; probably 'lancaster' (nasal unwritten); gloss lead-in stroke sits over the 7
+B05	f50r_g02_s3;f50r_g03_s3	Rendan	M	50	bar	M	jay dit (6)	a fait	first letter R/K uncertain (possibly Randan); bar/stroke before gloss over 50; circled 6-like sign precedes 50
+B06	f50r_g03_s1;f50r_g04_s1	Champagne	H	479	dots	M	este defaite a	et qui	two dots above-left of group; digits as written 4 7 9 (first may be blotted)
+B07	f50r_g03_s3	gra[n]dprieur	M	59	bar	H	luy a dit que le p.le de	le dire	written approx. 'gracadprir' with abbreviation; reading 'grand prieur' probable
+B08	f50r_g04_s2	Neuers	M	27	bar	H	...repasse sy	auroient le faire de grande	bar is a long stroke immediately left of gloss above 27
+B09	f50r_g04_s3	Neuers	L	4 l	dots	M	faz eh mieux a	ne pourront que	second figure looks like 'l' (1?); one dot over each figure; gloss letters 'nivudr' close to B08's Neuers
+B10	f50r_g06_s1;f50r_g07_s1	langier	H	37	dots	H	par le messager de	par qui il vous plaist me escripre	two-three dots above-left of 37
+U03	f50r_g06_s2;f50r_g07_s2	-	-	7	bar	H	lequel na pas baillee a	lres de	barred 7, no gloss; small superscript above following 'lres' is main hand abbreviation, not a gloss

@@ -826,21 +826,100 @@ Rule 10: nothing here is called new or first. This records what was found and wh
 
 `python3 tools/gaps_check.py fr4715-vieuville-pool`: `OK keep-going fr4715-vieuville-pool: keep going: 5 internal gap(s), 0 step(s) untried` (exit 0).
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7, -8 and -9, 2 Oct 2026, and -10 and -11, 3 Oct 2026)
+## GAPS-fr4715-vieuville-pool-12 (3 Oct 2026, account-4): the Verdict step -- no.27 f.50r, no.28 f.51r, no.60 f.83r at 1000 px, then f.50r's glosses read
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. Clock read 01:27 to 01:4x UTC 3 Oct 2026. Intake gate exit 0.
+Vision calls 6 of 6 (Opus 5.5): the three 1000-px looks (worker), two blind gloss passes, one reconciliation. Requests:
+gallica.bnf.fr 4 (f115, f117 and f181 at 1000 px, then the f115 native region); no other host.
+
+**The three leaves at 1000 px.** `tools/gallica_folio.py btv1b52509819x --folio 50/51/83` (cached manifest, 0 requests) gave
+no.27 = canvas f115 '50r', no.28 = f117 '51r' and no.60 = f181 '83r'. **no.60 f.83r** is written entirely in a symbol alphabet
+(Tomokiyo, bnf4715.htm#no60, reads it with the Vieuville-Nevers key) and shows no interlinear gloss. **no.28 f.51r** is mixed
+clear text and digits, with a few small glosses near its middle that are not legible at this size. **no.27 f.50r** is a dense
+digit block above 11 clear-text lines carrying about ten visible glosses (pavia, ...maine, Neuers, Champagne and others). It
+has the most glosses, so it was the leaf taken.
+
+**On disk before the fetch (0 requests).** Tomokiyo's bnf4715.htm#no27 prints a partial reading and a group dump of f.50r's
+opening digit block. It writes dotted groups as `'` and barred groups as `~`. Among the six codes: `'57(avec)` is read once
+(dotted), and `~7` is unread. No.44's .57 is **barred**, in a person slot, so the dotted '57 = avec is a different
+mark and is not carried. This is a published modern reading (Tomokiyo), not a period gloss. The bnf4715.htm#no60 reading is
+clear prose with `~13`, `~7` and others unread.
+
+**Crops.**
+```
+$ python3 tools/iiif_lines.py --ark btv1b52509819x --canvas 115 --region 440,2640,3120,800 --out ciphers/fr4715-vieuville-pool/images --prefix f50r --max-width 1400 --dry-run
+ciphers/fr4715-vieuville-pool/images/src_ark_12148_btv1b52509819x_f115_440_2640_3120_800.jpg (fetched): region 3120x800, 11 lines, 11 bands x 3 segments; pitch 59 distance 41 prominence 138.8
+  centres (region y): 14 71 135 182 237 297 360 421 486 555 629
+```
+`scripts/cut_f50r_gloss_bands.py` cuts 7 overlapping bands (170 px every 110 px, 3 segments, 1.5x, 21 crops), the same shape as
+f.62r. The crops are regenerable and not committed.
+
+**Passes.** A (forward, `witness/f50r_gloss_pass_a.tsv`, 10 glosses + 7 unglossed marked groups) and B (reverse,
+`witness/f50r_gloss_pass_b.tsv`, 10 + 3). The passes split on 8 sites. The reconciler saw them as X/Y in randomised order
+(`witness/f50r_gloss_recon_sites.tsv` -> `witness/f50r_gloss_recon.tsv`: X 4, Y 2, neither 2; 1 site H). R found that the glossing
+hand draws a dark left-pointing dash into the code, which A or B read as a bar at three sites (7, 27, 59). Reconciled in
+`witness/f50r_glosses_reconciled.tsv`:
+
+| code | mark | gloss (as read) | grade |
+|---|---|---|---|
+| 20 | bar | c.g?ndi | L |
+| 35 | none | pavia | C |
+| 35 | bar | ...maine (Dumaine / vmaine) | M |
+| 7 | raised small d/o | lancaster | M (code L) |
+| 49 | two dots | Champagne | M (gloss H both; code A 49, B 479, R 49 with a doubled 4 stem) |
+| 50 | none? | Rendan | M |
+| 59 | bar? | grand prieur ('grad pr') | M |
+| 27 | none (the stroke is the glosser's dash) | Neuers | M |
+| 45 | two dots | Neuers | L (A 41, B '4 l', R 45) |
+| 37 | dots | langier | C |
+| 13 | bar | (unglossed: 'aucune nouvelle de [13]') | M |
+| 47 | dots | (unglossed: 'ce quil pretend de [47]', or 457) | M |
+| 7 | bar | (unglossed: 'bailler a [7] lres de') | C |
+
+**Rule 3 per unit.** f62r_gloss_control.py's statistic (glosses over letter-cipher spans scored against the printed key) cannot
+vary here. Every f.50r gloss sits on a word-code and none on a letter-cipher span (n = 0, a non-test). `scripts/f50r_gloss_control.py
+witness/f50r_glosses_reconciled.tsv --shuffles 1000` (`witness/f50r_gloss_control.out`) scores two statistics that can vary, on
+8 C/M glosses over 7 codes:
+- Within the leaf: REAL 1/2 = 0.500 (35 = pavia plain vs ...maine barred), against a shuffle mean of 0.500 and p95 0.500. A tie, so non-discriminating at this N.
+- Across leaves: f.50r's glosses permuted among f.50r's own sites, scored against sibling glosses of the same code. REAL agrees on
+1 of 2 shared codes (27 Neuers = f.44r Neuers; f.60r has nauarre?), and 7 lancaster does not match f.60r's Roy (a different mark).
+Shuffle mean 0.10, p95 1, max 1, 102 of 1000 shuffles at or above REAL (p 0.103).
+
+**The leaf does not clear its own control**, the shape of f.44r in GAPS-10. Under rule 3's Szembek paragraph, no f.50r code is
+keyed. No key_wordcodes_f50r.tsv is written, and decode.json is unchanged.
+
+**For no.44.** Of the six still-unglossed no.44 occurrences (.03 x2, .07, .49, .57, .6), **one has a sibling gloss, held
+pending:** **.49**, one or two dots on no.44 L28, in a place slot ("Que sy [.25] peult aller [.49]"). f.50r glosses a
+two-dot 49 as **Champagne** (gloss H by both passes, code M). The mark matches, and a province fits the slot "aller [en] ...".
+Plain 49 is s in the printed key, so the dotted 49 is a distinct word-code. It is carried only as a lead, in a new column
+`f50r_gloss` of `witness/f67r_wordcodes_context.tsv` marked "held". Its rule-4 grade on no.44 stays I: the leaf did not clear,
+so the value is not M, and the slot grade counts are unchanged at M 8 / I 6. .03, .07, .57 and .6 are not glossed on f.50r, so
+5 of no.44's 7 GAPS-10 occurrences remain unread. `tools/decode_key.py ciphers/fr4715-vieuville-pool --check` exits 0
+("reading up to date"; f67r 27 tokens AB 8 / U 19, unchanged).
+
+Cross-leaf, logged only: f.50r's 27 = Neuers agrees with f.44r's 27 Neuers x2. f.60r's 27 nauarre? may be the same word misread,
+or a conflict (HYPOTHESES.md). f.50r's 45 is also glossed Neuers, at L. f.50r's barred 13 is unglossed, so it neither confirms
+nor contradicts f.62r's 13 Narre. What would clear f.50r is more shared codes: no.28 f.51r's glosses, or the four codes glossed
+once here (pavia, Champagne, Rendan, langier) glossed again on another leaf.
+Rule 10: nothing here is called new or first. This records what was found and where it was not found.
+
+`python3 tools/gaps_check.py fr4715-vieuville-pool`: `OK keep-going fr4715-vieuville-pool: keep going: 5 internal gap(s), 0 step(s) untried` (exit 0).
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7, -8 and -9, 2 Oct 2026, and -10, -11 and -12, 3 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
 - the 8-glyph rule on no.37 (43 L06-L14 tokens at I, 23 at S since GAPS-7) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; 2 Oct 2026 (GAPS-7): the key-side word-cover test ran (scripts/eight_cover_test.py): 8x wins 23/66 sites vs 9x 6, 6x 1, 0x/3x 0, 36 ties; control 20 seeds mean 0.105 max 0.167 vs target 0.348 (rank 1 of 21); known answer: true 8 wins 17/46 (0.370), 8x on settled non-8 sites 0.061; 23 sites I -> S, 43 stay I (36 ties, 7 won by 9x/6x); what remains for the 43 is new material (the same letter run elsewhere, or a sibling leaf in the same hand), not a further pass at these glyphs
 - the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
-- no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37. 3 Oct 2026 (GAPS-10): no.21 f.44r was imaged native and its glosses read (2 blind passes + 1 reconciliation, 8 sites: 27 Neuers x2, 1 pag?, 56 Abbr, 53 aubligna, 38 vin?eur, 7 pyz L, 7?/21 L). None is over these six codes: 0 of 7 read. The leaf ties its own shuffle control (2/2 vs p95 1.000, p 0.060), so none of its codes was keyed. 27 Neuers here vs nauarre? on f.60r is logged as a conflict. 3 Oct 2026 (GAPS-11): no.35 f.58r and no.39 f.62r looked at 1000 px. f.58r showed no gloss at that size. f.62r was imaged native and its glosses read (2 blind passes + 1 reconciliation, 10 sites). The leaf clears its own control (letter-cipher gloss spans vs the printed key, REAL 0.796 vs permuted p95 0.389, 0/1000). Keyed in key_wordcodes_f62r.tsv: .14 Card de bourbon C, .13 Narre M, .52 Normandie M. no.44 L07 .13 = Narre at M: 1 of 7 read, 6 remain (.03 x2, .07, .49, .57, .6). next: no.35 f.58r read at native for glosses, since 1000 px could not exclude small ones (as f.62r was read, ~$10); or the remaining pool leaves no.27 f.50 / no.28 f.51 / no.60 f.83 at 1000 px first, ~$1
+- no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37. 3 Oct 2026 (GAPS-10): no.21 f.44r was imaged native and its glosses read (2 blind passes + 1 reconciliation, 8 sites: 27 Neuers x2, 1 pag?, 56 Abbr, 53 aubligna, 38 vin?eur, 7 pyz L, 7?/21 L). None is over these six codes: 0 of 7 read. The leaf ties its own shuffle control (2/2 vs p95 1.000, p 0.060), so none of its codes was keyed. 27 Neuers here vs nauarre? on f.60r is logged as a conflict. 3 Oct 2026 (GAPS-11): no.35 f.58r and no.39 f.62r looked at 1000 px. f.58r showed no gloss at that size. f.62r was imaged native and its glosses read (2 blind passes + 1 reconciliation, 10 sites). The leaf clears its own control (letter-cipher gloss spans vs the printed key, REAL 0.796 vs permuted p95 0.389, 0/1000). Keyed in key_wordcodes_f62r.tsv: .14 Card de bourbon C, .13 Narre M, .52 Normandie M. no.44 L07 .13 = Narre at M: 1 of 7 read, 6 remain (.03 x2, .07, .49, .57, .6). 3 Oct 2026 (GAPS-12): no.27 f.50r, no.28 f.51r and no.60 f.83r seen at 1000 px. f.83r is a symbol alphabet with no glosses, f.51r has a few small glosses, and f.50r has about ten. f.50r was imaged native and its glosses read (2 blind passes + 1 reconciliation, 10 glosses + 3 unglossed marked groups). The leaf does not clear its control: within-leaf 1/2 vs shuffle p95 0.500 (tie); cross-leaf 1 of 2 vs p95 1 (p 0.103). Nothing keyed. no.44 .49 = Champagne (two dots, place slot) is held as a lead, not graded M; 5 of the 7 remain unglossed (.03 x2, .07, .57, .6). next: no.28 f.51r read at native for glosses, which would add sibling codes for f.50r's held values (~$10); or no.35 f.58r at native (~$10)
 - the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; 2 Oct 2026 (GAPS-9): L-word pass, two blind Opus readers on 123 masked slots + 1 reconciliation: 42 L -> H, 14 replaced at M, frame H 325/M 86/L 221 -> H 367/M 100/L 165, slot agreement 41/123; 165 L words remain (mostly L20-L32 and the slots the readers split); a further model pass at the same crops is not the next instrument; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
 - Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026, GAPS-9: edition-read in the desk browser, the footnote citing 12 décembre 1589 copied word for word, and whether she quotes the text); the cloud cannot open the page (books.google.com page view bot-blocked)
 
 ## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
-- [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21 f.44r imaged and its glosses read 3 Oct 2026 (GAPS-10: 8 sites, the leaf ties its control, nothing keyed, 0 of no.44's 7 unglossed occurrences); no.39 f.62r imaged and read 3 Oct 2026 (GAPS-11: clears its control, .13/.14/.52 keyed, 1 of 7); no.35 f.58r seen at 1000 px only
+- [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21 f.44r imaged and its glosses read 3 Oct 2026 (GAPS-10: 8 sites, the leaf ties its control, nothing keyed, 0 of no.44's 7 unglossed occurrences); no.39 f.62r imaged and read 3 Oct 2026 (GAPS-11: clears its control, .13/.14/.52 keyed, 1 of 7); no.35 f.58r seen at 1000 px only; no.27 f.50r imaged and read 3 Oct 2026 (GAPS-12: ties its control, nothing keyed, .49 = Champagne held); no.28 f.51r and no.60 f.83r seen at 1000 px only (f.83r symbol alphabet, no glosses)
 - [x] clear-pages: no.44 is 95 pct clear French (two Sonnet passes + one Fable pass); no.37's 16 clear lines transcribed by one Opus pass at 5 M / 11 L after two Sonnet passes failed at 2x
 - [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py on both leaves (--check exit 0); key_wordcodes_f60r.tsv built from the period glosses
 - [x] print: (GAPS-8, 2 Oct 2026) tools/print_check.py on 9 interior phrases per letter + 1 positive control (phrases.txt, print-check.tsv): control found by 4 of 5 instruments (Ligue v.4 cached, IA 15 items, Google Books 10, Gallica 3; OpenAlex a non-test); no.44 0 specific hits, no.37 0 specific hits; 49 requests; Boltanski 2006 still unread (gap above)
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 5 internal gaps; cheapest next: a 1000-px look at the pool's remaining leaves no.27 f.50, no.28 f.51 and no.60 f.83 (3 Gallica requests) for glosses near a barred 03, 07, 49, 57 or 6, ~$1, then the best leaf read native as no.39 f.62r was (GAPS-11, 3 Oct 2026: f.62r cleared its control, .13 = Narre M, 1 of 7), ~$10; no.35 f.58r showed no gloss at 1000 px (Boltanski filed as LOCAL-QUEUE L37, waiting on the desk)
+Verdict: keep going: 5 internal gaps; cheapest next: no.28 f.51r read at native for its glosses (crops via tools/iiif_lines.py, 2 blind passes + 1 reconciliation, then f50r_gloss_control.py re-run with the new sibling codes, so f.50r's held .49 = Champagne may clear), ~$10 (GAPS-12, 3 Oct 2026: f.50r tied its control, nothing keyed; f.83r has no glosses); no.35 f.58r at native is the alternative (~$10) (Boltanski filed as LOCAL-QUEUE L37, waiting on the desk)
