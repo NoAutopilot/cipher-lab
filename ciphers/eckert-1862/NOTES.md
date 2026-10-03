@@ -319,10 +319,39 @@ Inputs re-fetched, not committed.
 - Requests: hdl.huntington.org 36 (page texts); archive.org 3 (two `_djvu.txt`, one connection reset retried once).
   No vision, no subagents.
 
+## GAPS127-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: GAPS122's Verdict -- a dated key column. `print/key_dates.py` (new) gives every key.md row its witness date
+range (first and last ledger date of the telegrams supporting it: the ten entries, cited ledger pages and pointers, OR 7
+page matches through `print/or_matches.tsv`, and the OR 11-12 alignments in `print/align*/align_pairs.tsv`; a pointer
+is dated from its own ledger head, an undated one by the dated pointers on either side) and writes it into a new fourth
+column; `--check` exits 1 when stale. key.md: 84 rows dated plus 13 rows for the later values of conflicting words
+(97 rows). decode.py now reads each word by the row whose range covers the entry's ledger date (header date), grades
+it M outside every range or where two values cover the date (rule 4), and has `--at DATE WORD...` for a lookup.
+`python3 decode.py --check` exits 0 and the ten Feb readings are unchanged (C 86, I 3, M 2): every Feb row's range
+covers its own entries. Disk only; no requests, no vision, no subagents.
+- Conflicting words: 10 (Anthon, Alden, Arno, Lather, Camden, Virtue, Palate, wedding, Stanhope, Vulcan).
+- Separate cleanly by date, 8: Anthon Banks 6 Feb / McDowell 6 Apr-17 Jul (C, 3 telegrams); Alden Halleck 5-21 Feb /
+  Banks 17-20 Jul (C, 2); Arno Banks 9-16 Jun (M, 1 telegram, Fremont line) / Halleck 3-20 Jul (C, 3), the Feb value
+  Rosecrans (M) undated (received ledger mssEC 01 p.14, no date on disk); Lather Michigan 7 Feb / James River 26 Jun-21
+  Jul (C, 5); Camden Thomas 16-21 Feb / Banks 2 May-4 Jul (C, 2); Virtue Frederick 1-7 Feb / artillery 4-11 Jul (M, 1
+  telegram); Palate Cairo 20 Feb / bridges 6 Apr-21 Jul (C, 2); Vulcan headquarters 27 Mar / railroad 21 Jul (both M,
+  one telegram each).
+- True conflicts, 2: wedding = battle 9-16 Jun (5079, Lincoln to Fremont) lies inside wedding = transportation 6-26 Jun
+  (McClellan's line) -- a line difference, not a date one; Stanhope = the Shenandoah 4-11 Jul (5100) lies inside
+  Stanhope = flank 1 Jun-21 Jul. decode.py reads both as "a | b", grade M.
+- Caveat: the ranges come from the witnesses on disk, so they bound where a value is attested, not where a table was in
+  force; a Feb value read on, say, 20 Mar is M by construction (no witness), which is the rule-4 behaviour asked for.
+  The split points (between 21 Feb and 6 Apr for Anthon/Palate, 21 Feb and 2 May for Camden, 7 Feb and 26 Jun for
+  Lather) are not fixed by any witness yet. Two Feb rows already noted as two-key words (Devon, Humboldt) carry only
+  their Feb witness; their contrary pages are marked "on p.[n]" in the evidence and are excluded.
+- Rule 10: N1 shape -- every witness is a telegram already printed in the OR (1882-85); this is key bookkeeping, not new
+  plaintext.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C, held-out 30/31 and 26/26 vs controls 0.05 and 0.15 hits); next: decode the unmatched spring-summer entries with the enlarged table once key.md carries a dated column (gap 2), and align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
-- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values (Anthon, Alden, Arno, Lather, Camden, Virtue, Palate; wedding has two values in June on two lines) -- next: add a dated key column (period/line) to key.md and decode.py so a word is read by the table of its date, ~$2
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C, held-out 30/31 and 26/26 vs controls 0.05 and 0.15 hits); key.md dated 3 Oct 2026 (GAPS127); next: decode the unmatched spring-summer entries (60 of 161 text pages) with the dated table (decode.py --at), and align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
+- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M) -- next: fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
 ## Escalation (3 Oct 2026)
@@ -330,7 +359,7 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
 - [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vols. 8 and 51 pt 1 not fetched
-- [ ] key-rebuild: vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); vols. 9, 10, 11 pt 1 alignments and a dated key column next (gaps 1-2)
+- [ ] key-rebuild: vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 alignments next (gap 1)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: add a dated (period/line) key column to key.md and decode.py so the spring-summer values (Camden, Arno, Alden, Lather, wedding ...) do not collide with Feb, then decode the unmatched spring-summer entries, ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: decode the unmatched spring-summer entries of mssEC 15 (60 of 161 text pages, page texts re-fetched from hdl.huntington.org) with the dated key (decode.py --at), grading per date, ~$3

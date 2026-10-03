@@ -9,9 +9,14 @@ words not in the table are left as written.
 Usage:  python3 decode.py            # print the readings and the grade counts
         python3 decode.py --check    # exit 1 if the block in reading.md differs from what is derived now
         python3 decode.py --write    # rewrite the derived block inside reading.md
+        python3 decode.py --at "18 Jun" WORD...   # the value and grade key.md gives each word on that date
+
+key.md rows carry a "witness dates" column (print/key_dates.py computes it); a word is read by the row whose range
+covers the entry's ledger date, and graded M outside every range or where two values cover the date (rule 4).
 
 Exit status is non-zero when --check finds reading.md stale.
 """
+import datetime as dt
 import re
 import sys
 from pathlib import Path
@@ -20,8 +25,34 @@ HERE = Path(__file__).resolve().parent
 START = "<!-- decode.py: derived block starts -->"
 END = "<!-- decode.py: derived block ends -->"
 
+MONTHS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7, "aug": 8}
+
+
+def parse_day(text):
+    """Return a 1862 date from 'February 5th 1862', "Feb 7 '62", '05 Feb', or None."""
+    m = re.search(r"^\s*(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug)\b", text)
+    if m:
+        return dt.date(1862, MONTHS[m.group(2).lower()], int(m.group(1)))
+    m = re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug)[a-z]*\.?\s*(\d{1,2})(?!\d)", text, re.I)
+    if m:
+        return dt.date(1862, MONTHS[m.group(1)[:3].lower()], int(m.group(2)))
+    return None
+
+
+def parse_range(cell):
+    """'05 Feb-21 Feb 1862' or '06 Feb 1862' -> (first, last); 'undated' -> None."""
+    days = [parse_day(part) for part in cell.split("-")]
+    if not days or None in days:
+        return None
+    return days[0], days[-1]
+
+
 def load_key(path=HERE / "key.md"):
-    """Return {code word (lower): (meaning, grade)} from the markdown table in key.md."""
+    """Return {code word (lower): [(meaning, grade, witness range or None), ...]} from the table in key.md.
+
+    A word may have several rows, one per value, each with the witness date range that print/key_dates.py computes
+    (GAPS127, 3 Oct 2026): spring-summer 1862 tables reuse Feb words for other names.
+    """
     table = {}
     in_table = False
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -34,13 +65,43 @@ def load_key(path=HERE / "key.md"):
                     break
                 continue
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if len(cells) < 4 or set(cells[0]) <= {"-"}:
+            if len(cells) < 5 or set(cells[0]) <= {"-"}:
                 continue
-            word, meaning, grade = cells[0], cells[1], cells[2]
-            table[word.lower()] = (meaning, grade)
+            word, meaning, grade, dates = cells[0], cells[1], cells[2], cells[3]
+            table.setdefault(word.lower(), []).append((meaning, grade, parse_range(dates)))
     if not table:
         sys.exit("no vocabulary table found in key.md")
     return table
+
+
+def pick(rows, day):
+    """Return (meaning, grade) for an entry dated `day` (rule 4, dated values).
+
+    The rows whose witness range covers the day decide; one meaning keeps its row's grade, two or more meanings are a
+    true conflict (meanings joined by ' | ', grade M). No covering row: the nearest dated row by date, graded M (a
+    value outside its supporting range); an undated row is used only when no dated row exists or covers, at its grade
+    if it is the word's only row, else M.
+    """
+    if day is None:
+        dated = []
+    else:
+        dated = [r for r in rows if r[2]]
+    cover = [r for r in dated if r[2][0] <= day <= r[2][1]]
+    meanings = list(dict.fromkeys(r[0] for r in cover))
+    if len(meanings) == 1:
+        return cover[0][0], cover[0][1]
+    if len(meanings) > 1:
+        return " | ".join(meanings), "M"
+    if len(rows) == 1:
+        r = rows[0]
+        return r[0], (r[1] if (r[2] is None or day is None) else "M")
+    undated = [r for r in rows if r[2] is None]
+    if undated:
+        return undated[0][0], "M"
+    if not dated:
+        return rows[0][0], "M"
+    near = min(dated, key=lambda r: min(abs((r[2][0] - day).days), abs((r[2][1] - day).days)))
+    return near[0], "M"
 
 
 def load_ciphertext(path=HERE / "ciphertext.txt"):
@@ -89,7 +150,7 @@ def lookup(core, key):
     return core, flag, None
 
 
-def decode_entry(text, key):
+def decode_entry(text, key, day=None):
     """Return (reading, counts) where counts is a dict of grades over code-word tokens.
 
     The operator's tail (time word and filler) begins at the first time word; a time word is a table row whose
@@ -108,7 +169,7 @@ def decode_entry(text, key):
         if row is None:
             out.append(w)
             continue
-        meaning, grade = row
+        meaning, grade = pick(row, day)
         counts[grade[0]] = counts.get(grade[0], 0) + 1
         if "time word" in meaning:
             hour = meaning.split("(")[0].strip()
@@ -126,7 +187,7 @@ def derive(key, blocks):
     total = {"C": 0, "I": 0, "M": 0}
     for header, lines in blocks:
         text = entry_text(lines)
-        reading, counts = decode_entry(text, key)
+        reading, counts = decode_entry(text, key, parse_day(header.split("|")[3]))
         for k, v in counts.items():
             total[k] = total.get(k, 0) + v
         grade_line = ", ".join(f"{k} {v}" for k, v in sorted(counts.items()) if v)
@@ -137,6 +198,13 @@ def derive(key, blocks):
 
 def main(argv):
     key = load_key()
+    if "--at" in argv:
+        i = argv.index("--at")
+        day = parse_day(argv[i + 1])
+        for w in argv[i + 2:]:
+            rows = key.get(w.lower())
+            print(f"{w}\t{day}\t" + ("not in key.md" if not rows else "\t".join(pick(rows, day))))
+        return 0
     blocks = load_ciphertext()
     derived = derive(key, blocks)
     reading_path = HERE / "reading.md"
