@@ -1,6 +1,7 @@
 # Casenowe (A. Dufauk de) to Henri IV, [1586] — Lambeth Palace Library MS 647, f.218
 
 Status: open
+Recueil des lettres missives de Henri IV vols. 1-2 (IA recueildeslettre01henr, recueildeslettr02henr) be-api full-text search by this worker (GF-A2B-2, 3 Oct 2026) for Casenowe, Casenove, Cazenove, Dufau, Dufauk: 0 hits each; controls Navarre (vols. 1, 2) and Bacon (vol. 2) hit, so the search was live.
 
 ## Description
 
@@ -61,3 +62,51 @@ Cipher's description/shelfmark in a search engine; sender's and recipient's prin
 Lettres missives de Henri IV, both by phrase/name search); the holding archive's own catalogue (CalmView);
 community lists (Cryptiana local + live search, including a followed-up but ruled-out lead); DECODE (cache
 only, login broken); both solver repositories (shallow clone, grep).
+
+## Web and blog check (GF-A2B-2, 3 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Casenowe Dufauk Henri IV 1586 letter cipher` (sender + recipient + date): hits are the Tartu DSpace paper on Henri IV's
+   1592 digit cipher to Nevers, a HistoCrypt paper, KU archives -- none names Casenowe, Dufauk or Lambeth MS 647.
+2. `Lambeth Palace Library MS 647 f.218 cipher chiffre` (shelfmark + cipher): TNA Discovery pointer records for
+   MSS 647-662, the Lambeth printed catalogues (James/Jenkins; Bill) -- no folio-level text about f.218, no reading.
+3. `"Casenowe" Lambeth Bacon papers letter to Henri IV French and cipher` (folder title; no clear-text or decoded phrase
+   exists to quote): Archives Hub "Bacon, Anthony (1558-1601)", TNA beta catalogue, BL searcharchives -- only the
+   collection-level note that Henri IV's letters to Bacon (1586-97) are in MSS 647-62; Casenowe not named.
+4. `Anthony Bacon papers 1586 cipher letter King of Navarre Lambeth deciphered`: Adam Matthew *Early Modern England*
+   pages for LPL MS 648 and 652, Tosh's QMUL thesis on Bacon's intelligence network, Francis Bacon Society pages -- no
+   decipherment of this letter. Opened the Adam Matthew detail page for MS 647 itself
+   (earlymodernengland.amdigital.co.uk/Documents/Details/Papers-of-Anthony-Bacon-MS-647-Volume-1/LPL_MS_647, HTTP 200):
+   the volume is digitised there behind a subscription login; no comment thread.
+
+Blog site searches:
+- Cipher Mysteries (`site ciphermysteries.com`, "Lambeth Henri IV cipher Bacon manuscripts"): only Roger Bacon /
+  Voynich posts; nothing on Lambeth MS 647 or Casenowe.
+- Cryptiana (`cryptiana.blogspot.com`, `cryptiana.web.fc2.com`, "Lambeth Palace cipher letter 1586 Henri Navarre"):
+  blog index pages (2018, Sept 2025) only; the one Henri IV post already opened on 24 Sept 2026 (Maisse 1590/92, above)
+  is a different cipher. No post or comment names Casenowe or MS 647.
+- Cipherbrain (`scienceblogs.de/klausis-krypto-kolumne`, "Henri IV Navarre 1586 cipher letter Lambeth"): posts on
+  Henry II's cipher device, Tomokiyo's list (2020/06/14, "A king's encrypted letter", a different king's letter),
+  16th-c. crypto books -- none about this item; no comment thread to read for it.
+
+No plausible hit for this item, so no comment thread was relevant to open. Requests: WebSearch 7, Adam Matthew 1.
+
+## Premise check (GF-A2B-2, 3 Oct 2026)
+
+- (a) Folder's own mentions: NOTES.md and REQUEST.md name no decipherment, gloss, interlinear or clear copy (REQUEST.md
+  line 13: "no noted decipherment"); no spec exists. Not found.
+- (b) Other solvers' working files: fresh shallow clones on 3 Oct 2026, dbourdeau/cyphersolver (e8b4287, 2 Oct 2026)
+  and aaymeloglu/unsolved-ciphers (d2800bb, 27 Sept 2026), `grep -rliE "casenowe|dufauk|MS ?647"`: zero files in
+  either. "lambeth" hits only unrelated targets (cobham1588, matignon1586, harley1582r8499 word lists; Aymeloglu's
+  forster-1644 README, cited, not copied). Bourdeau's Maisse (f.370) work is a different correspondent. Not found.
+- (c) Physical neighbours (ff. 217, 219, the facing page, any slip): unreachable from the cloud for free -- MS 647 is
+  digitised only in Adam Matthew's subscription *Early Modern England* (see above), and Lambeth's LUNA has no Bacon
+  images. Unreachable.
+- (d) Recipient side: the recipient is Henri (then King of Navarre); his Lettres missives vols. 1-2 searched (status
+  line above), 0 hits. Bacon's English-side edition, Birch 1754, phrase-searched 24 Sept 2026 (above). Not found.
+
+## While waiting
+
+Waiting on an image (REQUEST.md copy order). The one action that depends on nobody: read Lambeth CalmView's records for
+MS 647 ff. 210-230 (the neighbours of f.218, `/CalmView/` GET route in CLAUDE.md's access playbook) for a
+neighbouring item catalogued as a decipherment, a key or a clear copy of this letter.
