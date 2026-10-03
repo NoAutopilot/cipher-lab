@@ -1,7 +1,7 @@
 # Louis de Geer papers with cipher key, 1644-1646
 
 **Status: blocked**
-The standard edition could not be opened: Dahlgren, *Louis De Geer 1587-1652* (1923) is not on archive.org (advancedsearch `title:(Dahlgren) AND title:(Geer)` 2 Oct 2026 returned no Dahlgren item) and no edition of the Leufsta letters or of Axel Oxenstiernas skrifter och brev (0 hits on IA `title:(Axel Oxenstiernas skrifter och brev)`) was reachable, so no page was read; blocked pending a copy or a digitised edition (the folder itself, SE/ULA/13506/1/I/45, `onlyDigitisedMaterials: False` on its Riksarkivet record, is also not online).
+No ciphertext is reachable: the folder SE/ULA/13506/1/I/45 (`onlyDigitisedMaterials: False` on its Riksarkivet record) is not online and holds the only known key (needs-physical-access; REQUEST.md copy order). Editions (corrected 3 Oct 2026, GAPS124): the earlier reason "no edition of Axel Oxenstiernas skrifter och brev reachable" came from a wrong-title search; AOSB II:11 (1905, De Geer's letters to Oxenstierna 1621-1645, pp. 653-) was read in full OCR by A2-ULA on 2 Oct (one code group, "171" = Haag, p. 673 footnote) and Dahlgren's edition *Louis De Geers brev och affärshandlingar 1614-1652* (Historiska handlingar 29, 1934; Google Books 0-gOAAAAQAAJ, snippet-only) was searched for chiffer/chiffre/ziffer/cijfer with positive controls on 3 Oct, no hit. Dahlgren, *Louis De Geer 1587-1652: hans lif och verk* (1923, 2 vols) is not digitised on IA, HathiTrust or Google Books and was not read.
 
 ## Item
 
@@ -130,3 +130,23 @@ volumes on IA (no cipher word near De Geer), or runeberg (one path tried).
 
 Next cheapest step: check whether the folder's key matches code 171 = Haag. This needs the folder, so it stays with REQUEST.md (copy order). In parallel, a worker could
 look up the Riksarkivet Oxenstierna collection record for "Louis de Geer" letters 1644-45 (Sök API, about $0.5) to see whether that series is digitised. Not done here, because it is outside this step's brief.
+
+## GAPS124-ula-degeer-1644 (3 Oct 2026, account-4): edition step
+
+Clock read 13:35 UTC 3 Oct 2026. Stale-check first: A2-ULA (2 Oct, above) had already found and grepped the Oxenstierna edition (8 IA volumes, II:11 p. 673), so this job covered what was left: Dahlgren 1923, Dahlgren's own edition of De Geer's letters, runeberg, and the stale status-line reason. Intake gate before work: `ula-degeer-1644: blocked (line 3) -- already terminal, nothing to gate` (exit 0). No vision, no subagents, no reading.
+
+| Source | Route | Control | Result |
+|---|---|---|---|
+| Dahlgren, *Louis De Geer 1587-1652: hans lif och verk*, 2 vols, Uppsala 1923 | Open Library search -> OCLC 5198616, 54394464 -> HathiTrust bib API `volumes/brief/oclc/N.json` | same API returned a record for an unrelated 1923 OCLC (1563468) | 0 records for both OCLCs: not in HathiTrust; no EF test possible (no htid) |
+| same | IA advancedsearch `"Louis De Geer" AND (Dahlgren OR date:1923)` | -- | 0 items (agrees with 24 Sept and 2 Oct searches) |
+| same | Google Books API `intitle:"Louis De Geer" inauthor:Dahlgren`; author/title queries | -- | catalogue-only records (5LZp0AEACAAJ, c84OogEACAAJ), no text; not read |
+| Dahlgren (ed.), *Louis De Geers brev och affärshandlingar 1614-1652*, Stockholm 1934 (Historiska handlingar 29), 707 pp. -- the sender's printed letters, not named in this folder before today | Google Books 0-gOAAAAQAAJ (Oxford copy, NO_PAGES, snippet search); queries `<term> "Louis De Geers brev och affärshandlingar"` | in-volume positives: `Oxenstierna 1644`, `Haag`, `Göteborg 1644`, `Amsterdam 1645`, `Leufsta Finspång` all return snippets from this volume (contents: no. 371-392, 1644-45 letters incl. to Axel Oxenstierna); cross-volume positive: `Haag 171 chiffer "De Geer"` finds AOSB II:11 p. 673 (also NO_PAGES) | `chiffer`, `chiffre`, `ziffer`, `cijfer`, `chifferbrev`, `chiffernyckel`: 1934 volume absent from every result. Caveat: two body-text controls (`1644 Danmark`, `Torstensson`) also missed, so the snippet index does not cover all body text; this is a search result on a partial index, not a read of the book (IA advancedsearch `title:(Geers) AND title:(brev)` 0, Open Library 0 -- not on IA) |
+| runeberg.org | `/authors/dahlgew.html` (200, page not parsed: write error in the pipe, not retried), `/aosb/` (404) | -- | untested beyond two paths |
+
+**Lead noted, not followed (outside this step):** *Riksarkivets beståndsöversikt: Särskilda bestånd* (1993, Google Books NK0mX6pUjJwC, snippet) indexes "Chifferklaver 205" and "De Geer, Louis 106" -- Riksarkivet keeps a collection of period cipher keys (the AOSB editors' footnote identified 171 = Haag from "several cipher keys of this period"). Whether De Geer's key or a copy is in that collection is unknown.
+
+What this settles: the sender's two printed editions (AOSB II:11 in full OCR; Dahlgren 1934 by snippet search with controls) show one printed code group and no other cipher mention found; the cipher material itself is only in the undigitised ULA folder. Status stays `blocked` (needs-physical-access), with the line-3 reason corrected. Rule 10: nothing here is a novelty claim.
+
+Requests: openlibrary.org 2, archive.org 2, catalog.hathitrust.org 3, www.googleapis.com 22, runeberg.org 3. Vision calls 0.
+
+Next cheapest step: Riksarkivet Sök API (`data.riksarkivet.se/api/records`) for the "Chifferklaver" collection and for Louis de Geer letters 1644-45 in the Oxenstierna collection (digitisation flag), about USD 0.5; otherwise the REQUEST.md copy order.
