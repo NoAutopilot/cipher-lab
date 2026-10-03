@@ -111,9 +111,7 @@ interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions
 
 ## While waiting
 
-Next action that depends on nobody: harvest the period interlinear letters already on R1411's pages (GAPS137 below) into
-(number, letter) pairs with a line-crop transcription pass, and test the homophone table they give for consistency
-across pages (a known-plaintext key, grade C/H, no cryptanalysis). The images are in hand (images/manifest.json).
+Next action that depends on nobody: transcribe the unglossed numerals of p.1 (lower block) and test the frozen mod-24 residue rule found by GAPS141 against them (see the GAPS141 section); the glossed pairs are harvested (gloss/pairs.tsv).
 
 ## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
 
@@ -188,3 +186,50 @@ tools/iiif_lines.py --image on the full-size file, two blind passes; build the (
 with tools/interlinear_align.py or a direct pair count, and check each number's letter is consistent across its
 occurrences (a shuffled-pairing control can vary here). ~$4-6 at the current per-pass rate (2 passes + 1 reconcile).
 Status unchanged: open.
+
+## GAPS141 step: p.1 interlinear gloss -> numeral/letter table, held-out gate (3 Oct 2026, account-4)
+
+Step run: GAPS137's next step. One DECODE browser login re-fetched only p.1 (IMG_R1411_I6595_P1.png, sha1 126a2f4c...
+matches images/manifest.json; the first attempt failed at Chromium's certificate check before the login form, fixed with
+the CLAUDE.md certutil step, so one login in all). Pre-registration committed before either pass was read:
+`gloss/PREREG.md` (b05312da).
+
+Crops (pasted command): `python3 tools/iiif_lines.py --image IMG_R1411_I6595_P1.png --out <dir> --region 380,660,3076,760
+--prefix p1g --centres 70,195,310,405,645 --top-margin 45 --bottom-margin 35 --max-width 1600 --overlap 200 --debug`
+-> 15 crops (5 glossed numeral lines x 3 segments), committed in `images/p1g_crops/` with their manifest.
+Two blind Opus passes (one call each, crops only): `gloss/passA.tsv`, `gloss/passB.tsv`. `tools/reconcile_passes.py`:
+numbers 62/62 agree (100%), glosses 60/62 (96.8%); the two gloss splits (L01 pos 8 u-with-ring vs u; L05 pos 9 "a?" vs
+"a") settled from the crops by the worker. Reconciled pairs: `gloss/pairs.tsv` (62 numbers, all glossed; 54 grade C, 8
+grade M where a pass marked the number or letter doubtful). Table and gate: `gloss/gloss_table.py` (`--check` exits 0),
+writing `gloss/table.tsv` and `gloss/heldout.txt`.
+
+**Table (grade C, period gloss; 54 clean pairs, 39 distinct numbers, 14 letters).** Homophones: a=4 (5 29 53 77),
+d=3 (8 32 80), e=3 (9 33 81), g=5 (11 35 59 68 92), i=3 (13 61 85), m=3 (16 64 88), n=4 (17 41 56 65), s=5 (12 36 50
+70 94), t=3 (22 23 95), z=2 (21 93), o=1 (42), p=1 (19), u=1 (48), ů=1 (66). Conflicts on the page, both passes agreeing
+on number and letter: 56 = n (L02) and d (L03); 66 = ů (L01) and o (L03). 22 = t at L01 pos 6 (under a heavy, possibly
+corrected "t") against 22 = s at L01 pos 16 (that number marked doubtful by pass B, so excluded). These are logged as data
+conflicts (rule 4), not settled by majority.
+
+**Held-out gate (pre-registered): NON-TEST at this N.** Fit on the first 27 clean pairs (23 numbers), test on the last
+27: coverage 7/27 = 0.259, accuracy 5/7 = 0.714; value-shuffled fit table (10,000 draws, seed 1411): mean 0.079, p99
+0.429, max 0.714, 1 draw >= real. Covered test pairs 7 < the pre-registered 8, so the gate reads NON-TEST (too few
+repeats across 5 lines), not a negative and not a PASS. No "reading ready" flag. Secondary (descriptive, no gate):
+self-consistency 24/26 = 0.923 over repeated numbers vs position-shuffled glosses mean 0.478, p99 0.577.
+
+**Post-hoc observation (seen after the score, not a tested result; hypothesis for the next step).** Numbers congruent
+mod 24 carry the same gloss letter in almost every case: residue 5 = a (7/7), 9 = e (7/7), 13 = i (5/5), 17 = n (6/6),
+23 = t (4/4), 8 = d (4 of 5), 11 = g (4/4), 16 = m (3 of 4, the odd one the doubtful "40?" which looks like 70 on the
+crop), 15 = l (2/2), 21 = z (2/2). Read as residue -> letter, most values sit on a 24-letter alphabet starting a = 5 (c 7,
+d 8, e 9, g 11, i 13, l 15, m 16, n 17, p 19, t 23), with exceptions (12/36 = s, 20 = g, 21 = z, 1 = p, 2 = s). Under
+that rule 56 (res 8) is d and 22 (res 22) is s, matching one side of each logged conflict. A mod-24 rule would cover all
+of 1-99 from this one page. Because it was found on these same 62 pairs, testing it on them is contaminated; it needs
+fresh material.
+
+Token grades (rule 4): no reading claimed; 54 C, 8 M (the gloss pairs themselves). Vision: 2 subagent calls (Opus 5.5,
+crops only) + 2 worker image reads for the reconciliation, plus 3 worker reads to place the crops. Requests: de-crypt.org
+3 (1 login, record page, 1 image).
+
+Next step: pre-register the mod-24 residue rule (table from these 62 pairs, frozen), then transcribe the unglossed
+numerals of p.1's lower block (y 2300-3600, about 9 lines, one blind Opus pass + one check pass on line crops, ~$4)
+and score the rule's decode with tools/judge_plaintext.py against a German corpus of the period (check tools/data for an
+era-matched de17 corpus first, rule 3) with the shuffled-target decode beside it. Status unchanged: open.

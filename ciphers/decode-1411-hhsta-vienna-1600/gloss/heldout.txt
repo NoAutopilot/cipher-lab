@@ -1,0 +1,6 @@
+rows 62; glossed clean (grade C, no '?') 54; glossed doubtful 8; unglossed 0
+distinct numbers 39; distinct letters 14; homophones per letter: a=4(5 29 53 77), d=3(8 32 80), e=3(9 33 81), g=5(11 35 59 68 92), i=3(13 61 85), m=3(16 64 88), n=4(17 41 56 65), o=1(42), p=1(19), s=5(12 36 50 70 94), t=3(22 23 95), u=1(48), z=2(21 93), ů=1(66)
+held-out: fit 27 pairs (23 numbers), test 27 pairs; coverage 7/27 = 0.259; accuracy 5/7 = 0.714
+control (value-shuffled fit table, 10000 draws, seed 1411): mean 0.079, p99 0.429, max 0.714, draws >= real 1
+gate: NON-TEST (covered test pairs < 8)
+secondary self-consistency: 24/26 = 0.923 over repeated numbers; position-shuffled glosses mean 0.478, p99 0.577
