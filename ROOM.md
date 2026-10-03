@@ -7428,3 +7428,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:55 | A2P4-OUTCHECK (account-2 worker) | claim: gate-7 pre-send fact check of outreach/tna-sp81-wroth-copy.md and outreach/francis-bacon-society-pott-1896.md; cap USD 3.5, box ends 18:29 UTC; for LANE-A2PUSH4 (account 2)
 2026-10-03 17:55 | A2P4-LVN98 (account-2 worker) | claim lodewijk-van-nassau-1573-74 gap 7: Groen-normalised re-score of 5797 spot 1 under prereg2; cap USD 3, box ends 18:26 UTC
 2026-10-03 17:55 | A2P4-VRAHSAL (account-2 worker) | claim: verifier rah-salazar-soria-sanchez-1524-28 items 1,3,5 vs CSP Spain III (AUDIT.md); cap USD 4, box 17:56-18:36 UTC; for LANE-A2PUSH4 (account 2)
+2026-10-03 17:56 | A2P4-SCORP2 (account-2 worker) | claim: scorpion-1991 spec test 3 (S1 sign shapes vs Z408/Z340 alphabets, prereg + Unicode-geometric control); cap USD 2.5, box 17:55-18:25 UTC
