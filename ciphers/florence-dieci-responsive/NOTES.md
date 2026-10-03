@@ -208,10 +208,69 @@ pasted before the step: `florence-dieci-responsive: blocked (line 1) -- already 
   (reading uncertain), naming Neri Capponi, subscribed "Tomaso ...", with a period decipherment filed at filza 8 c. 111.
 - Requests: none (images on disk). Vision: 4 image reads, 0 subagents.
 
+## Step of 3 Oct 2026: Bourdeau check, date line, c.127 block-1/2 pilot alignment (A2-FLO3, account 2, LANE-A2PUSH)
+
+Runs the Verdict's three-part step. Intake gate output, pasted before the step: `florence-dieci-responsive: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+1. **Bourdeau's working files** (github.com/dbourdeau/cyphersolver, shallow clone of head 4d32ec9, 2 Oct 2026 21:07 -05:00,
+   grepped, deleted after; MIT, cited). R3765/R3766 occur only in `targets/medici1425/NOTES.md` (lines 47-49, the DECODE table
+   CS-A2-K already quoted), `targets/medici1425/profile.json` and `decode_updates/queue.json`, where his proposed DECODE
+   update calls R3765 "the decipherment of R3766" (suggest record type key/decipherment) and R3766 "dated at 'il Guasto'
+   30 Aug 1430", proposed status Decrypted, `reading: null`, `transcription: []`. No key, transcription or reading of c.127
+   in his repository; nothing to align against, so this step did not duplicate any of his work.
+2. **Date settled at native resolution: 26 December 1430.** c.127 last line (native crop x 150-1900, y 4060-4200, read at
+   2x): "al guasto aymone a dì xxvj di dicẽb(re) 1430" -- the month word has no g descender and ends in an ascender b with an
+   abbreviation stroke, so not "agosto". c.111's date line (native crop x 2300-3900, y 3410-3540) reads plainly "adì xxvj
+   dicembre 1430". The two leaves agree; Bourdeau's preview-size "xxx d'agosto" does not fit either leaf. Grade M for the
+   place word "aymone", the day and month as read from two independent leaves.
+3. **Pilot transcription and alignment, two cipher blocks only** (c.127 lines 6-7 and 8-9: the stretch after "chomunita"
+   to the clear "E di qu-", and the stretch after "di potrebbe" to the clear "che credo voi"), not the whole leaf: the full
+   leaf (~24 cipher lines) is about 6x this unit and would cross this brief's cap. Files:
+   - `c127_signs.md`: provisional ASCII sign labels (27 forms) so two blind passes write the same token; **not a settled
+     alphabet** (Usage 6: the owner's sign sorter settles it).
+   - Crops: `images/c127/` (tools/iiif_lines.py --image images/IMG_R3766_I23025_P.jpg --region 150,540,3860,500
+     --max-width 1980 --overlap 100; 4 lines x 2 segments) and `images/c111/` (--image images/IMG_R3765_I23024_P.jpg
+     --region 500,1060,3460,400 --max-width 1780 --overlap 100; 3 lines x 2 segments). Pasted output:
+     `region 3860x500, 4 lines, 4 bands x 2 segments; pitch 112 ... centres (region y): 74 173 286 408; wrote 8 crops` and
+     `centres (region y): 45 157 285; wrote 6 crops`.
+   - `passes/c127b1_passA.tsv`, `passes/c127b1_passB.tsv`: two blind Sonnet passes (B read the crops in reverse order).
+     Sign agreement 111 of 134 positions (82.8%), i.e. a 17% split -- above Usage 6's one-tenth line, so a third machine
+     pass is not the next step.
+   - `passes/c127b1_recon.tsv`: reconciliation by this worker from the same crops (each disagreement settled, with a note
+     per crop; `o` + division mark merged as one sign `o/`, always written together here; a c-shaped tailed form `s`
+     added; line 2 ends in clear "E d(i) qu"). 120 cipher tokens, 27 sign types (q 16, 4 13, p 11, t 11, a 9, ...).
+   - Clear text of c.111 for the same two stretches, read by this worker from the c.111 crops (grade M throughout; the
+     first word is the weakest): "amspendomi(?) come in italia non a piu bella compagnia ne meglio in punto che questa non
+     mancandone niuna" and "provare(?) seicento lanze e quattro[cento](?) fanti" (c.111 strikes a word after "equa" and
+     writes "rento" above the line).
+   - **Length fit:** 81 signs against 85 plain letters, and 39 against 38 -- close to one sign per letter.
+   - `align/c127b1_pairs.tsv` -> `tools/interlinear_align.py align --code-prefix @ --keep-fs` -> `align/c127b1_align.tsv`,
+     `align/c127b1_key.tsv`: **28 of 120 tokens agree** with their code's majority meaning (75 conflict, 15 single).
+   - **Controls (rule 3), both able to differ from the target on the same 'agrees' statistic:**
+     `align/c127b1_control.py` (plain letters shuffled within each line, 20 seeds): agrees min 19, median 25, p95 28,
+     max 31. **The target (28) sits inside the shuffle band: no consistent key emerges at this N.**
+     `align/c127b1_known.py` (the same plain spans enciphered with a random substitution, two signs each for a e i o, run
+     through the identical tool, 10 seeds): exact wording, no noise: agrees 118 of 120 every seed (ceiling, licenses
+     little on its own); with 4 plain letters dropped and 17% of signs replaced at random (the target's own length gap and
+     pass split): agrees 38-99, recovery 0.38-1.00, mean 0.74. **The target (28) is below that control's floor (38).**
+   - **Reading of the numbers:** the pair behaves neither like a two-homophone letter substitution of c.111's exact wording
+     at the measured noise, nor distinguishably from shuffled text. Not a negative on the pair (c.111 is labelled the
+     decipherment of c.127 and opens, dates and signs the same way): the test cannot tell apart (a) heavier homophony than
+     the control models (more signs per letter means fewer repeats at N=120), (b) nulls or word/syllable codes, (c) c.127's
+     cipher wording differing from c.111's clear copy (abbreviation, word order), (d) errors in this worker's c.111 reading,
+     the first word above all. One hint, unverified: the 4-sign run `q 4 2 z` occurs twice (tokens 5-8 and 69-72), which
+     fits "-ndom-" in the first word and "-ndon-" in "mancandone" in position but not in its fourth sign (m vs n).
+   - No reading is claimed; no key.tsv, no decode_key.py run (nothing to regenerate). Grade counts: none (no plaintext
+     tokens assigned from the cipher).
+4. Requests: github.com 1 shallow clone (grep only). No other host. Vision: 18 image reads by this worker (4 date-line
+   crops and overviews, 3 iiif_lines debug overlays, 5 c.111 line crops, 6 c.127 crops for the reconciliation) and 2 Sonnet
+   subagent passes over 8 crops each; no full page sent to a subagent.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - filza 7/9/22 premise coverage - blocker: not-attempted; check-solved for the filza 8 pair is done (3 Oct 2026, CS-A2-K: Guasti vols 2-3 read, web and blog check, premise check; status open) but clear copies like c.111 were not looked for among filze 7/9/22; next: contact-sheet look for clear copies, ~$1
-- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing of c. 111 (clear, stamped N° 102) with c. 127 (cipher, N° 115) confirmed from the images on disk (same opening, same 26 Dec 1430 date and place, the c. 111 subscription writes out the cipher signature of c. 127; step of 3 Oct 2026, A2-FLO2), transcription not begun because the intake gate needs the check-solved verdict first; next: after check-solved, line crops of c. 127 and c. 111 (tools/iiif_lines.py --image), 2 blind cipher passes + 1 reconciliation + 1 clear-text pass of c. 111, then tools/interlinear_align.py with a gloss-shuffle control, ~$8
+- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); next: owner settles the c.127 sign set in tools/sign_sorter.py (passes split >1/10), then a full-leaf transcription of c.127 against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
 - filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
@@ -220,10 +279,10 @@ Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster h
 - [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
 - [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved
 - [x] print: Guasti *Commissioni* vols 2-3 full-text read 3 Oct 2026 (CS-A2-K), letter absent; no edition or calendar of the Responsive exists; Gabbrielli vol. II and Cavalcanti not read
-- [ ] key-rebuild: from the c. 111 / c. 127 pair once aligned
+- [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 3 internal gaps; cheapest next: re-read the c.127 date at crop scale (Bourdeau reads 'xxx d'agosto 1430', we read 'xxvi dicembre 1430'), then the filza 8 transcription and alignment (c.127 cipher passes, c.111 clear-text pass, interlinear_align with gloss-shuffle control), ~$8
+Verdict: keep going: 3 internal gaps; cheapest next: owner settles the c.127 sign set in tools/sign_sorter.py (two machine passes split 17%, Usage 6) -- the sorter job itself (crops of c.127's ~24 cipher lines + focus.tsv from passes/c127b1_*.tsv), ~$2; then full-leaf c.127 transcription against the settled labels, a full clear-text pass of c.111, and align/c127b1_control.py + align/c127b1_known.py re-run at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)
