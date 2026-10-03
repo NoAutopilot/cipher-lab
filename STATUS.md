@@ -3737,3 +3737,25 @@ No live workers, no check-in armed. WORK-QUEUE LANE-ARM-B done; SWEEP-OWN-2 done
 - H60 (cluster purity against person labels) waits on the owner's sort; H56 (proper-name pattern words) stays blocked on the same labels
   (H54 inventory gate not met).
 - Next for whoever reopens this half: run tools/sign_sorter_apply.py on the owner's sorter result, then H60, then H56 if its gate is met.
+
+## LANE IMAGES handoff (session_01WnkjAxKcueTF2Q73yLhdSf, account 2), 3 October 2026 (closed 22:1x UTC: backlog spent)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md` (LANE-IMAGES). 5 workers, USD 13.86 (5 D), orchestrator ~4.8; lane
+~18.7 of 60. All archived, no check-in armed.
+- Triage: of 48 NEXT-STEPS `needs-image` rows, most were already catalogue-confirmed undigitised (TNA, BL, NA, Clairambault 571-582,
+  LABW). IMG-AUDIT wrote `IMAGES-AUDIT-2026-10-03.tsv` (44 targets: flag quoted 36, fetched 4, 0 digitised found; ASKS 129-135 by
+  archive). Mislabelled `needs-image` (images already on disk; the label is next_steps.py's keyword guess -- fix the folders' last
+  next-step paragraph, not NEXT-STEPS.tsv): clairambault1225-paget-1714, fr5160-letellier-1653, fr7129-villeroy-bongars-1604,
+  vanspaen-vandergoes-1808; partly moray-wood-1568, roell-vandedem-1809.
+- IMG-GLA: gla-claudiamedici-1633 GLA 81 Nr. 442/813 undigitised, no key in neighbours or Bestand 48; ASKS 136.
+- IMG-GALLICA1: clair1161-avis-flandre-1688 cipher leaves located, Gallica btv1b90010063 c185-c188 (f186-189), c186R native + 46 line
+  crops; ASKS 54 / BnF quote-batch item 6 (ASKS 78) can drop the leaf question. fr3151-noailles-1558: fr.10773 all 226 canvases classed,
+  no key table or cipher seen at thumbnail size.
+- IMG-DECODE1/2 (one login each, full size served on every record; images NOT committed -- DECODE not public domain -- manifests + sha1):
+  decode-9970-simancas-1527 R9970 is a clear Spanish minute, no cipher (catalogue-correction case); hellen-frederick-1752 R4369 is a 1751
+  key "Hellen avec le Roy de Prusse" with French meanings, R4370/4373/4377 meaning tables; sp87-further-1712 R8957 a 1710 French code
+  table naming no plenipotentiary; siena-concistoro-2308 11 records / 24 images with RecordsView fields; Clair keys 9430-9432 (12 PNG)
+  recorded under ciphers/clair571-estrades-1645/keys_decode/.
+- Next for solving lanes (not image work): hellen R4369 transcription + known-key test on R1953 (matched control); clair1161 c185-188
+  transcription (TRANSCRIPTION.md); fr3151 fr.10773 date-locating pass for a clear copy of the Nov 1558 letters; siena open pieces now
+  have images in reach (re-fetch per manifest).
