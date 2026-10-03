@@ -58,7 +58,7 @@ system	sign	value	grade	n	units
 98	Ma	st	C	5	st:5
 98	Mf	und	M	1	und~:1
 98	N	n	C	84	n:83,n~:1
-98	NW	wir	M	1	wir~:1
+98	NW	wir	C	3	wir:2,wir~:1
 98	OM	landtsknechten	M	1	landtsknechten~:1
 98	Or	r	C	57	r:56,r~:1
 98	PAPE	hertzogen_zu_Sachssen	C	3	hertzogen_zu_Sachssen:3

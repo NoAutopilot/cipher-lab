@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Derive key_74.tsv, key_98.tsv, key.tsv (both systems) and key_conflicts.tsv from pairs_74/98.tsv (R21);
-System B also takes pairs_124.tsv (WVO 124 f.134 against its decipherment f.135, A2-AVS4, 2 Oct 2026).
+System B also takes pairs_124.tsv (WVO 124 f.134 against its decipherment f.135, A2-AVS4, 2 Oct 2026) and pairs_175.tsv
+(WVO 175 p1: only the NW positions licensed by prereg_avs175.md addendum AVS175B, 3 Oct 2026).
 A sign whose sure aligned units all agree gets that unit at grade C (known plaintext); pairings marked '~' (or on
 a sign read with '?') do not set the value when sure pairings exist, but are listed in key_conflicts.tsv;
 disagreeing sure units give grade M and 'a|b'. u and v are merged. '?' units are ignored. --check: exit 1 if stale."""
@@ -10,7 +11,7 @@ out = {}
 allrows, conf = ["system\tsign\tvalue\tgrade\tn\tunits"], ["system\tsign\tunits"]
 for sysn in ("74", "98"):
     m = collections.defaultdict(collections.Counter)
-    srcs = {"74": ["74"], "98": ["98", "124"]}[sysn]
+    srcs = {"74": ["74"], "98": ["98", "124", "175"]}[sysn]
     for r in (r for n in srcs for r in csv.DictReader(open(f"{D}/pairs_{n}.tsv", encoding="utf-8"), delimiter="\t")):
         u = r["unit"]
         if r["sign"].endswith("?") and not u.endswith("~"): u += "~"   # doubtful sign: pairing counts as uncertain
