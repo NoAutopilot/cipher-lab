@@ -164,6 +164,8 @@ single month, since no single month can be justified as *the* date.
 
 **3 Oct 2026 (RANZO-NB):** still `open`. fr.3019 no.27 neighbours and no.36 (f.94) carry no clear copy, gloss or key; f.74r is marked "dupp^ta". Next: compare no.27 with fr.2988 f.2r-v ("dup.a") for a second copy (section "fr.3019 no.27 neighbours" below).
 
+**3 Oct 2026 (A1B-RANZO-2WIT):** still `open`. Full fr.3019 no.27 transcribed (813 tokens) and settled against fr.2988 f.2r-v: our read 0.011 settled error (N 813, lower bound), Bourdeau's 0.035 (21 of 29 are a systematic s->g labelling flip on f.2v); r41/t41 is a recurring copy variant. Next: re-label Bourdeau's c007 g->s before any pooled-corpus attack (script, ~USD 0.5), then the target still needs a key-bearing source (section "Two-witness transcription" below).
+
 **3 Oct 2026 (RANZO-DUP):** still `open`. fr.3019 no.27 (f.73r-74r) and fr.2988 f.2r-v are two copies of the same letter (41/44 and 57/66 tokens agree on the lines compared); both wholly cipher, so no crib. Next: full no.27 transcription diffed against Bourdeau c006/c007 for a measured reader error, about USD 13.5 (section "Duplicate check" below).
 
 Image confirmed online (full resolution, folios pinned exactly, ark discrepancy flagged above). CSP Venice
@@ -309,9 +311,68 @@ Requests this pass: github.com 1 sparse clone. Vision: 1 batch (4 existing crops
 
 ## While waiting
 
-Next step that depends on nobody: transcribe fr.3019 no.27 in full (ff.73r-74r, about 830 tokens, line crops by
+Done 3 Oct 2026 (A1B-RANZO-2WIT, section "Two-witness transcription"). Next step that depends on nobody: relabel the
+compact-8 tokens of Bourdeau's c007 (and the open-g tokens of c006) from the settled pairs in `twowit_diff.tsv`, check the
+other Ranzo pages c017-c020 for the same flip on their own images, and re-run his pooled-corpus annealer control with the
+corrected labels (~USD 2). Earlier step, kept for the record: transcribe fr.3019 no.27 in full (ff.73r-74r, about 830 tokens, line crops by
 `tools/iiif_lines.py --ark btv1b9059994n --canvas 114/115/116`) and diff it token-for-token against Bourdeau's
 c006/c007, settling each disagreement on native crops of both copies (fr.2988 btv1b9059908w views 6-7); the s/g split
 above is the first item. Price: about 8 Sonnet line-crop passes x USD 1.5 + 1 reconciliation = about USD 13.5. The
 result is a measured transcription error for the pooled Ranzo/no.20 corpus, not a crib. Beyond that the target needs
 a key-bearing source (Garbino's papers, not located) -- no clear copy of either Ranzo letter has been found.
+
+**Passes (step 2).** Seven Sonnet subagent calls, blind, Bourdeau's sign labels as inventory, no Bourdeau tokens shown:
+A f.73r/f.73v/f.74r and B f.73v on the 2-line band crops above; then, after pass A f.73v reported ~25 superscripts clipped
+at band tops (2-line bands cannot keep both the descenders and the next line's superscripts), single-line crops 280 px tall
+were cut from the cached native regions (`tools/iiif_lines.py --image <src> --region 0,<centre-180>,<w>,280 --centres 70,210
+--lines-per-crop 2 --overlap 200`, prefixes f73rlNN / f73vlNN / f74rlNN, NN = line; f.74r lines 6-16 not re-cut: the tool
+had downscaled its cached source once the folder passed 30 MB, a refetch got Gallica HTTP 500 and was not retried, and those
+inline-layout lines read cleanly on the band crops), and B f.73r, B f.74r and C f.73v ran on them. A first B f.73r was
+discarded unread-for-scoring: parallel subagents wrote helper files with the same names into one shared folder and its line 3
+held f.73v text (lesson: give each transcription subagent a private work folder). Files: `passes/`.
+Two-reader agreement (`tools/reconcile_passes.py`, token level): f.73r A/B 289/320 = 0.903; f.73v A/B 283/301 = 0.940,
+A/B/C 240/307 = 0.782; f.74r A/B 183/193 = 0.948. Reconciled read (`build_fr3019_tokens.py`, my settlements in `settle.tsv`;
+on a split the single-line-crop pass is taken: B f.73r, C f.73v, A f.74r): **813 tokens + 4 "/"** ->
+`fr3019_no27_tokens.tsv`.
+
+**Two-witness diff (steps 3-4).** `twowit_diff.py` aligns the reconciled read with Bourdeau's c006+c007 (copies in
+`bourdeau/`, github.com/dbourdeau/cyphersolver a439937, MIT / CC BY 4.0, D. Bourdeau): 813 vs 817 tokens, **750 equal,
+raw agreement 0.918**, 70 disagreement rows (+1 notation-only row, class N, our "?" uncertainty mark, removed by the script).
+Each row was settled on paired native tiles of both copies (fr.3019 btv1b9059994n views 114-116; fr.2988 btv1b9059908w
+views 6-7, native regions 1080,250,2900,4550 and 1330,200,2700,4450, fetched once, not committed; 12 contact sheets of 6
+pairs, read by this worker) and classed per the pre-registration -> `twowit_diff.tsv` (class + note per row):
+
+| class | n | what |
+|---|---|---|
+| R3019 (our reader error) | 9 | f5/t, q17/g17, d78/D78, z7/Q, h29/h129, Q21/c21, t222/r222, h32/h3, m170/m, r296/r (bare) -- `fr3019_no27_settled.tsv` carries the fixes |
+| RB (Bourdeau reader error) | 8 | folio number "2" read as a token, b30->h30, q12->g12, y18->y8, b147->h147, t137->r137, b26->h26, g1->s1 |
+| RB-sg (Bourdeau s/g label) | 21 | see s/g below |
+| V (copy variant) | 13 | numbers: 286/266, 196/296, 297/247, 159/153, 20/10, 16/6; sign: **r41 (fr.3019) / t41 (fr.2988) four times**, m/n once; fr.3019 has two extra tokens at a line break (p149 r4 / p97 r41 vs p149 r41) and one cancelled sign (ink-struck) absent from fr.2988 |
+| U (unsettled) | 19 | 13 in the fr.3019 gutter (f.73v line ends), 5 at f.73v line starts left of this job's crop region (x<1550; the native page has them), 1 fr.2988 line end beyond my fetched region; plus fr.2988's own ink blot (1) and a z-tail crossing a digit (1) |
+
+**s/g settled first (pre-registration item 4).** fr.2988's hand has two forms, a compact closed "8" and an open-bowled g
+(both in one line, e.g. 8^113 beside g^140 on f.2v), matching fr.3019's plain S and its g. So the 21 s/g rows are
+Bourdeau labelling errors, and they are systematic: **his c007 (f.2v) labels the compact 8 (= s) as "g" in every disagreement checked (21 of 21),
+while his c006 (f.2r) labels the compact 8 as "s" and at least once the open g as "s" too (g1 -> s1, an RB row)**. In his pooled Ranzo corpus the fr.2988 f.2v
+s tokens are therefore filed under g, inconsistently with f.2r and with the other Ranzo files -- worth telling him with the
+evidence (his annealer's type counts are affected); not posted, a parent's call (Outreach gates).
+
+**Result (step 5, pre-registered measures; `twowit_stats.py` prints all of these):**
+- raw two-copy token agreement 750/817 = **0.918** (this is agreement, not accuracy);
+- reconciled fr.3019 read, settled per-token error **9/813 = 0.011 (95% 0.006-0.021)**; 0.034 if all 19 U were ours;
+- Bourdeau's fr.2988 read **29/817 = 0.035 (0.025-0.051)**, of which 21 are the s/g labels; 8/817 = 0.010 (0.005-0.019) without
+  them; 0.059 if all U were his;
+- copy variants 13/813 = 0.016 per token (genuine scribal differences between the two copies, not reader error);
+- single blind passes vs the settled read: A 94/800 = 0.117, B 66/800 = 0.083, C (f.73v only) 3/292 = 0.010. These favour
+  the passes (the settled read inherits every token the passes agreed on, and C is the preferred f.73v pass), and A/B include
+  the band-crop clipping losses; the line-crop passes are the fair single-pass figure.
+All error figures are lower bounds: a sign both readers misread the same way in both copies is invisible. TRANSCRIPTION.md
+terms: **err_2reader** 0.05-0.10 per page (above); **err_true not measurable** (no benchmark item of this hand); the
+two-witness settled figure 0.011 stands in for it with that caveat, N = 813.
+BENCHMARK-TX: no row added -- the settled read was built from these same passes, so it cannot score them; a future pipeline
+on the Ranzo hand could use the positions where `fr3019_no27_settled.tsv` and Bourdeau agree (two copies, two readers) as a
+dev item (suggestion).
+Grades: no reading, no key; H 0, C 0. Cost units: 7 Sonnet transcription calls + 12 tile sheets read by this worker (1
+reconciliation unit beyond plan, as two calls were redone).
+Requests: gallica.bnf.fr 15 (3+2 overviews, 2 info.json, 5 native regions, 1 HTTP 500 not retried, 2 resets on first try
+re-sent once each), github.com 1 sparse clone.

@@ -1,0 +1,12 @@
+line	pos	token	note
+f73r_01	1	f5	native crop: tall f with 5, same form as f5 f17 later in the line (both passes read t)
+f73r_01	11	f5	native crop: f5, not f95
+f74r_01	1	q48	overview/crop: 48 above q (pass A lost it to the band edge)
+f74r_01	3	p150	overview: p150
+f74r_02	5	X	ink blot over the sign; not readable on fr.3019 (passes e?/Q?)
+f74r_03	1	c227	overview: c227, not e227
+f74r_03	7	o3	overview: o with 3
+f74r_05	1	m170	overview: m170 (number lost to band edge in pass A)
+f73r_02	7	t30	native crop: t30 (ink crosses the 3), not t70
+f73r_07	8	y6	native crop: y6
+f73r_07	13	c170 o8	native crop: line ends c170 o8 (pass B stopped at c170)

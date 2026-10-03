@@ -8,7 +8,8 @@ Reads fr3019_no27_tokens.tsv (line, pos, token, conf, why) and Bourdeau's ranzo_
 token streams with difflib on whole tokens (bare '/' and '|' dropped, pre-registration item 1), and writes twowit_diff.tsv:
 one row per disagreement (op, fr3019 line/pos/token, Bourdeau index/token) with the settle columns (class, note) carried
 over from the existing file when the same (op, fr3019 positions, Bourdeau positions) row is already there. Prints the
-agreement figure. --check exits 1 if the committed twowit_diff.tsv rows (ignoring settle columns) differ from a fresh run.
+agreement figure, and writes fr3019_no27_settled.tsv (the reconciled read with the R3019/R2 rows replaced
+by the settled sign). --check exits 1 if the committed twowit_diff.tsv rows (ignoring settle columns) differ from a fresh run.
 """
 import argparse, csv, difflib, os, sys
 
@@ -28,6 +29,8 @@ def bourdeau(d):
 
 def ours(path):
     rows = [r for r in csv.DictReader(open(path), delimiter='\t') if r['token'] not in SKIP]
+    for r in rows:  # a trailing/inner '?' is our reader's uncertainty mark, not part of the sign (row class N)
+        r['token'] = r['token'].replace('?', '') or '?'
     return rows
 
 
@@ -75,6 +78,13 @@ def main():
         w = csv.DictWriter(f, cols, delimiter='\t', lineterminator='\n')
         w.writeheader()
         w.writerows(rows)
+    # settled fr.3019 read: our reconciled tokens with every R3019/R2 row replaced by the settled sign
+    fix = {(r['line'], r['pos']): r['bourdeau'] for r in rows if r['class'] in ('R3019', 'R2') and r['line']}
+    with open(os.path.join(HERE, 'fr3019_no27_settled.tsv'), 'w') as f:
+        f.write('line\tpos\ttoken\tsource\n')
+        for r in A:
+            k = (r['line'], r['pos'])
+            f.write(f"{r['line']}\t{r['pos']}\t{fix.get(k, r['token'])}\t{'settled R3019' if k in fix else 'reconciled'}\n")
 
 
 if __name__ == '__main__':
