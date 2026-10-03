@@ -1024,7 +1024,46 @@ model charges whether or not the T is right. Nothing here argues against ehx = T
 published key H 1468, S 16, M 229, U 256; f.29r H 532, S 1, M 30, U 5). No C, so a cryptanalytic result. No verifier flag:
 no reading changed. Requests this pass: none to any host. Vision calls: 3 image views by this worker, no subagents.
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3 and A2-GRA4, 3 Oct 2026)
+## Clear-pages crib alignment of LP iv(3) 6244/6245 against f.30: non-test (A2-GRA5, account 2, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-gra5.md` (the Verdict's cheapest next step; disk only, no images). Intake gate
+before work (`python3 tools/intake_gate_check.py fr2980-gramont`): `fr2980-gramont: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0.
+
+**Pre-registration (04:56 UTC), and why it could not be run as briefed.** The planned step was: take the LP iv(3) 6244 (Gramont to
+Brion, Bologna 25 Feb 1530) and 6245 (Gramont to Villandry, Bologna 27 Feb 1530) calendar summaries, list their names, places and
+dates, align them against `reading_f30_extended.txt`, and raise a token to C only where a summary phrase matches a decoded span
+beyond the p95 of a control (the same phrases against f.29r `reading.txt`, and against line-shuffled f.30). Two findings stop it
+before any alignment:
+1. **The crib text is not on disk.** The LP iv(3) OCR (IA `11332111bsb`) and Le Grand III (MDZ `bsb10280117`) were read by the
+   print-check M8 and the second audit but never committed (`find` for `11332111`, `bsb10280117`, `*djvu*` in this folder and
+   `sources/`; `grep -rIl "Bishop of Tarbe"` finds only this NOTES.md and the cached Cryptiana pages). What the repo holds of 6244/6245
+   is their headers only (sender, recipient, place, date, LP's endorsement and "The original was in cipher", print-check section above).
+   Fetching it would break the brief's disk-only rule, so this worker did not.
+2. **By construction it cannot give C.** C means read from known plaintext *of this item* (rule 4). 6244 and 6245 are two other letters,
+   three months earlier and from Bologna, and LP's summaries are English paraphrases, so no summary phrase is plaintext of the 20 May
+   Rome letter; an aligned match could at most suggest a value for a nomenclator code, which is the open-codes question the hidden-sign
+   test already tried and was retired on (A2-GRA4). A control on the same summaries would not change that: the step is a non-test
+   for C-grading, whatever its numbers, not a negative on the reading.
+
+**Header check (disk only, done before this section was written, so not pre-registered; reported as a search result).** The names,
+places and months the 6244/6245 headers carry, spelled as words in the decoded text (spaces and line breaks removed): ADMIRAL/AMIRAL,
+BRION, BOVLOGN/BOLOGN, VILLANDRY, FEVRIER/FEBVRIER, plus EMPEREVR, PAPE, ANGLETERRE -- 0 hits each in the f.30 extended reading and in
+f.29r (ROY: 0 in f.30, 1 in f.29r). Names and titles in this cipher go to nomenclator codes (the [COM], [ET] brackets; HASH tested as
+EMPEREVR in round 3 and rejected), so header words have nothing spelled out to align with; this is consistent with point 2.
+
+**Result.** No token grade changed; key.tsv, key_extension_f30.tsv and the readings untouched. `decode.py --check`: "reading up to date", exit 0. Grades
+as in the A2-GRA4 section (f.30 extended H 1468, C 0, S 199, M 239, I 0, U 63; f.29r H 532, S 1, M 30, U 5). No C, so still a
+cryptanalytic result. No VERIFIER WANTED (no reading changed).
+**What would give C instead (different material, not run):** (a) fr.3019 no.31, Gramont to the grand maitre, "A Rome, le XVe jour de
+may" [1530], in clear by its BnF description (second audit, AUDIT.md) -- same sender, same place, five days earlier, the nearest
+topic and name source; one Gallica leaf read, ~$3. (b) fr.3038 no.19, the period decipherment of the 27 Feb Villandry letter (printed
+Le Grand III pp.391-393): if its cipher original is located, the pair is known plaintext in the same key family and would give C to the
+codes they share (key values, not this letter's tokens). Neither was opened; (a) is the cheaper.
+**Where not searched:** LP iv(3) and Le Grand III texts not re-fetched (disk-only brief). Novelty not classified (rule 10).
+Requests this pass: none to any host. Vision calls: 0.
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4 and A2-GRA5, 3 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
 - f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base
@@ -1032,10 +1071,10 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 19
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
-- [ ] clear-pages: no clear text of these letters known; neighbouring LP iv(3) 6244/6245 summaries not yet aligned as cribs
+- [ ] clear-pages: no clear text of these letters known; the LP iv(3) 6244/6245 summaries are other letters (Bologna, Feb 1530, English paraphrase), cannot give C by construction and are not on disk (A2-GRA5, 3 Oct 2026, non-test); planned step: read fr.3019 no.31 (Gramont, Rome 15 May 1530, in clear) from Gallica as name and topic source, ~$3
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: clear-pages, align the LP iv(3) 6244/6245 summaries of the neighbouring letters as cribs against the f.30 extended reading (disk only, C-grade if it holds), ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: clear-pages, read the clear companion letter fr.3019 no.31 (Gramont, Rome 15 May 1530) from Gallica as a name and topic source for the f.30 open codes (one leaf, line crops), ~$3
