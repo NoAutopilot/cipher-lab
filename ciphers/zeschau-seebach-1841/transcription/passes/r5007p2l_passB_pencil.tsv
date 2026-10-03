@@ -1,0 +1,11 @@
+line	from_pos	to_pos	trace	conf
+r5007p2l_L01	21	22	ink dot/blot under 6 before 5 (comma-like), probably ink not pencil	M
+r5007p2l_L02	6	69	small faint ticks/dots below baseline at intervals, possibly pencil group marks	M
+r5007p2l_L03	34	63	small faint ticks below baseline at intervals, possibly pencil group marks	M
+r5007p2l_L04	44	52	faint pencil marks below digits, letter-like (R/B shapes) and ticks	M
+r5007p2l_L04	57	63	faint ticks below baseline	M
+r5007p2l_L05	51	61	several slanted pencil strokes crossing the digits	H
+r5007p2l_L07	3	4	thin diagonal stroke crossing digits (pencil tick?)	M
+r5007p2l_L07	67	67	thin vertical stroke after last digit (pencil tick?)	M
+r5007p2l_L08	26	27	thin vertical stroke above digits (pencil tick?)	M
+r5007p2l_L08	30	31	thin vertical stroke above digits (pencil tick?)	M

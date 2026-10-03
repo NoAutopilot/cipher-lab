@@ -256,21 +256,65 @@ right. T2's non-result means the pins do not stand out in R5006 beyond digit fre
 single global phase is wrong wherever an odd-length line shifts the pairing, so the test is conservative there.
 Rule 10: no novelty claim.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, 3 Oct 2026)
-Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2,500-3,000 on R5006-R5008 (2 of 6 pages); 0 tokens read
-- R5007 p.1-2, R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179); next: one page per worker as GAPS179 (1 login, overview, iiif_lines crops, 2 blind Opus passes + 1 reconcile; a 3-line page ran 3 units, a full page 5 units at about USD 1.3 each), ~$4-7 a page, ~$22 for the four
+## GAPS190-zeschau-seebach-1841 (3 Oct 2026, account-4)
+
+Step run: the Verdict line's "transcribe R5007 p.1". **R5007 p.1 carries no cipher**, so the job transcribed R5007's
+first cipher page instead, the left page of the p.2 spread.
+
+- Image: one DECODE browser login (`tools/decode_browser_login.js 5007 <scratch> --guess-fullsize --delay 2000`;
+  the container first needed the playbook's `certutil` line, since the first attempt failed at `page.goto` with
+  ERR_CERT_AUTHORITY_INVALID before any credential was sent). It returned 2 thumbnails and 2 full-size images.
+  `IMG_R5007_I28868_P1.jpg` sha1 b5ec8e9e93cd and `IMG_R5007_I28868_P2.jpg` sha1 c081766ef775, both 7214x5412, both
+  matching the GAPS173 table. The full scans stay in the session scratchpad, out of git.
+- Layout (downscaled overviews, 2 vision calls). **p.1 is clear German only**: "No. 18", "Dresden, am 13. Juni 1842",
+  the salutation, then about 20 lines of clear text down to the foot (not transcribed). DECODE's 1846 year is confirmed
+  as a typo. **The cipher is all on the p.2 spread.** The left page has 7 clear lines (continuing p.1), then **9 cipher
+  lines** and a catchword "53386" at the foot. The right page has **5 cipher lines** at the top (starting "53386..."),
+  then clear German, the closing, the signature and the address to Seebach at St Petersburg.
+- Crops: `python3 tools/iiif_lines.py --image <scratch>/IMG_R5007_I28868_P2.jpg --region 1580,2340,2040,1800 --out
+  ciphers/zeschau-seebach-1841/images --prefix r5007p2l --debug` gave "region 2040x1800, 9 lines, 9 bands x 1
+  segments; pitch 184". The overlay was checked (`images/r5007p2l_lines_debug.jpg`, 1 vision call). The catchword was
+  cut with `--region 3330,3960,330,160 --prefix r5007p2lcatch`. The crops were committed before any pass ran (067851fa).
+- Two blind Opus passes per half-page (L01-L05, and L06-L09 with the catchword): 4 subagent calls. Pass A read whole
+  lines by eye. Pass B cut each line into overlapping thirds at 2x and joined them itself. Neither prompt named the
+  other pass's output folder. `tools/reconcile_passes.py passA passB --split-chars`: **agreement 604/610 = 99.0%**
+  (err_2reader 1.0%), with 6 disagreements, settled on 2x and 4x zooms (2 vision calls). The settled readings:
+  - L01 col 2: `5` (flat top), M, alt 3.
+  - L03 col 13: A's `2` (three signs between 77 and 1 at 4x), M.
+  - L05 col 22: A's extra `1` dropped; it is the tick after the 8, not a digit. M.
+  - L06 col 58: A's `3` dropped (`7778566283` is clear).
+  - L08 col 28: `4` (an r-shaped 4), M, alt 7.
+  - L08 col 54: B's extra `4`, M.
+
+  err_true is not measurable: BENCHMARK-TX.tsv has no item for this hand.
+- Result: **603 digits** in the body (lines 64/69/68/68/64/63/67/69/71), H 572 / M 31, in
+  `transcription/r5007p2l_ciphertext.txt` and `.tsv` (same columns as R5006). The catchword is the `r5007p2l_catch`
+  row in the tsv and is not counted. Raw passes, agreement and disagreements are in `transcription/passes/r5007p2l_*`.
+  The total is odd. If the cipher runs in pairs, a pair crosses to the right page, which the catchword supports: the
+  page break falls inside the stream. This is not checked, and no pairing is committed.
+- Pencil: no letters. Pass A logged nothing. Pass B logged faint ticks and strokes on L02-L05 and L07-L08 (130 digits
+  under a span), including "letter-like R/B shapes" below L04 pos 44-52 at M. Graded M at most, and unread.
+- No reading and no crib test.
+
+Requests: de-crypt.org 1 login + 1 RecordsView + 2 thumbnails + 2 full-size = about 6, 2 s apart (plus 1 failed
+navigation before the cert fix). No other host. Vision: 5 by this session (2 overviews, overlay, 2 reconcile zooms),
+4 subagent passes.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, 3 Oct 2026)
+Read so far: 1,295 digits transcribed (R5006 p.1-2, the whole of R5006, 692; R5007 left cipher page, 603) of about 2,500-3,000 on R5006-R5008; R5007 p.1 holds no cipher (GAPS190); 0 tokens read
+- R5007 right cipher page (5 lines, ~330 digits, starts with the catchword 53386), R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179/190); next: one cipher page per worker as GAPS190 (1 login, overview, iiif_lines crops, 2 blind Opus passes per half-page + 1 reconcile; a 9-line page ran 4 passes + reconcile, a 3-5-line page 2 passes + reconcile), ~$4-6 a page, about $15 for what is left; check each R5008 page for cipher on the overview first (R5007 p.1 had none)
 - Crib test of Bourdeau's 7 R5005 values on R5007-R5008 - blocker: not-attempted; done for R5006 by GAPS185 (3 Oct 2026: pair profile T1 cosine 0.886 vs shuffled-digit control mean 0.760, p 0.0005, power 200/200; pin coverage 0.099 vs 0.080, p 0.106 n.s.); next: rerun `crib_test.py` on each new page once transcribed, then a syllabary annealer seeded with the 7 pins on the pooled R5005+R5006 pairs with its matched synthetic-syllabary control, ~$3
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
-- [ ] siblings: R5005 is on disk (Bourdeau), R5006 done (GAPS175/179); R5007 and R5008 still to transcribe, one page per worker
+- [ ] siblings: R5005 is on disk (Bourdeau), R5006 done (GAPS175/179), R5007 left cipher page done (GAPS190); R5007 right page (5 lines) and R5008 still to transcribe, one page per worker
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
 - [ ] key-rebuild: R5006 shares R5005's pair profile (GAPS185, p 0.0005), so the pools can be merged; next a seeded syllabary annealer on R5005+R5006 with a matched control, then R5007-R5008
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps (crib test on R5006 done by GAPS185: same pair profile as R5005, p 0.0005, pins applicable at grade M, no token read); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: transcribe R5007 p.1 as GAPS179, ~$5 (then the seeded syllabary annealer on pooled R5005+R5006 with its control, ~$3)
+Verdict: keep going: 2 internal gaps (R5007 left cipher page transcribed by GAPS190, 603 digits, 99.0% two-pass agreement; crib test on R5006 done by GAPS185, same pair profile as R5005, p 0.0005); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: transcribe R5007's right cipher page (5 lines) as GAPS190, ~$3, then rerun `crib_test.py` on the whole of R5007, ~$1
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 
