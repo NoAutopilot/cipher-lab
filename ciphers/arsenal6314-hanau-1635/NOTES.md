@@ -116,3 +116,55 @@ it, Fol. 182 (a second, unexamined chiffré/déchiffré item in the same volume)
 (fr.20506 f.136 and fr.2988 f.9 arks/canvases for LANE R2; clair1108-duvergier canvas 251 native) are both
 done and reported above/in ROOM. Well under the $6 cap (no subagents spawned, ~10 host requests total). Not
 classifying novelty (none read).
+
+## Web and blog check (GF-A2-13, 3 Oct 2026)
+
+Worker GF-A2-13 (account 2, LANE-A2PUSH), 01:29-01:3x UTC. Gate-fix only (gate already exit 0: status `blocked`,
+terminal). No image, no transcription.
+(a) Plain web searches (WebSearch, standard):
+1. `"comte de Hanau" instruction 1635 Richelieu Avenel` -- Avenel catalogue records (swisscollections, Heidelberg,
+   NLI), a defense.gouv.fr digital-library page, OUP "Richelieu and his Age". No text of the instruction.
+2. `"Arsenal" "Ms-6314" OR "ms 6314" chiffre déchiffrée Hanau` -- firearms and auction noise only.
+3. `Jakob Johann Hanau-Münzenberg 1635 Frankreich Instruktion Chiffre Richelieu` -- Wikipedia (Philipp Moritz,
+   Johann Ernst, Johanna of Hanau-Münzenberg); Jakob Johann left as regent of Hanau after 1634. No instruction.
+4. `"instruction donnée au sieur comte Jacob de Hanau"` (the finding aid's own wording, quoted) -- CCFr records
+   for other Hanau items (a 1504 note, a 1707 lettres patentes for Hanau-Lichtenberg), Deutsche Biographie (Jakob
+   von Ramsay). No hit on this item.
+(b) Site searches: `site:scienceblogs.de/klausis-krypto-kolumne Hanau 1635` -- no Cipherbrain page;
+`site:cryptiana.blogspot.com Hanau OR Arsenal 6314 OR "La Valette" chiffre` -- no Cryptiana page;
+`site:ciphermysteries.com Hanau 1635 OR Arsenal Richelieu cipher` -- no Cipher Mysteries page, but two Cipherbrain
+posts surfaced: "Who can decipher this letter from Louis XIII?" (English version opened: Louis XIII, 6 April 1635,
+recipient unknown, two pages; no mention of Hanau, Arsenal 6314, an instruction or La Valette; comments only on the
+German version, 21 Nov 2022 -- not this item, by date and author, so its thread was not read) and the Rabenhaupt to
+Amalie Elisabeth (née Hanau-Münzenberg) letter, already excluded on 24 Sept as a different item.
+Result: no decipherment, plaintext or discussion of Arsenal Ms-6314 fol.177 on the open web or the three blogs.
+Requests: WebSearch 7; WebFetch 1 (scienceblogs.de).
+
+## Premise check (GF-A2-13, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions: **found (catalogued, not viewed).** The finding aid (ark cc86280s,
+read 24 Sept) names item 44, Fol. 177, as "Coppie (chiffrée et déchiffrée)": the period decipherment is in the same
+item, beside the cipher. Item 45, Fol. 182 (La Valette mémoire), is also "chiffré et déchiffré". Neither leaf is
+digitised (MICROFILM ARS R-242218 only; ASKS rows 35 and 78), so the decipherment could not be opened. If the
+leaves arrive, the item is a calibration/recovery read (cipher against its own clerk decipherment), not an
+unread cipher.
+(b) Other solvers' working files: **not found.** Fresh shallow clones (3 Oct 2026): dbourdeau/cyphersolver hits for
+`hanau` are a word list in targets/malsburg1637/extra.txt (Hesse 1637 place names), targets/swieten1757 (Hanau in
+French hands, 1757-58) and the README's Swieten row; none touches Ms-6314. `6314` hits are numerals in JSON/TSV
+files. aaymeloglu/unsolved-ciphers: no `hanau`/`6314` working file. Cited, not copied.
+(c) Physical neighbours: **unreachable.** No images of Ms-6314 at all; the catalogue neighbour after it is item 45
+(Fol. 182, chiffré et déchiffré); the item before it was not re-read this pass.
+(d) Recipient / sender-side edition: **found, mention only, not printed.** Avenel, *Lettres, instructions
+diplomatiques et papiers d'État du cardinal de Richelieu*, t. V (1863; archive.org `bub_gb_YcCURbuwqiwC`,
+`_djvu.txt` grepped for `hanau`, 5 hits, all read): no. CXCVI, Richelieu to the maréchal de Brézé, 30 Jan 1636
+(pp. 410-411): "J'ay veu l'instruction donnée au comte Jacob de Hanau, que vous m'avez envoyée; je ne l'avois pas
+veue auparavant. ... les CL mil [livres] qui estoient destinées par l'instruction du comte Jacob de Hanau pour les
+trouppes du Langrave de Hesse". A memorandum of July 1635 in the same volume records "120,000 [livres] au comte de
+Hanau" for 1,500 horse and 4,000 lansquenets of the landgrave of Hesse, and "le fonds de Coblentz par le comte de
+Hanau". So the instruction concerned French subsidies for Hesse-Kassel's troops; Avenel describes it but does not
+print it, and no other hit in t. V is the instruction. The 1636 letter shows a copy travelled to Brézé, so a clear
+copy may also sit in the Affaires étrangères Correspondance politique (France 1635-36, or Allemagne/Hesse) --
+not checked (not online). Not a decipherment of the item.
+Result: no plaintext of the instruction found in print or online; status line unchanged (`blocked`, waiting on the
+microfilm order).
+Requests: archive.org 1 advancedsearch + 2 `_djvu.txt` (one 500, not retried); github.com shared clones.
