@@ -1,0 +1,16 @@
+pass	code	n	null_calls	letter_calls	calls	names_tsv_at_occ
+passA.tsv	139	1	0	1	n	-
+passA.tsv	142	1	1	0	NULL	-
+passA.tsv	149	1	1	0	NULL	-
+passA.tsv	150	2	0	2	e e	- -
+passA.tsv	GATE	G1 6/6	G2 5/6	G3 1/6		PASS
+passB.tsv	139	1	0	1	n	-
+passB.tsv	142	1	1	0	NULL	-
+passB.tsv	149	1	1	0	NULL	-
+passB.tsv	150	2	0	2	i i	- -
+passB.tsv	GATE	G1 6/6	G2 5/6	G3 1/6		PASS
+recon.tsv	139	1	0	1	n	-
+recon.tsv	142	1	1	0	NULL	-
+recon.tsv	149	1	1	0	NULL	-
+recon.tsv	150	2	0	0	SPLIT SPLIT	- -
+recon.tsv	GATE	G1 6/6	G2 4/6	G3 1/6		FAIL

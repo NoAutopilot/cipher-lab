@@ -1,0 +1,23 @@
+passA.tsv: G1 null 6/6 | G2 letter 5/6 | G3 false-NULL 1/6 | gate PASS
+   band 139: n
+   band 142: NULL
+   band 149: NULL
+   band 150: e, e
+passB.tsv: G1 null 6/6 | G2 letter 5/6 | G3 false-NULL 1/6 | gate PASS
+   band 139: n
+   band 142: NULL
+   band 149: NULL
+   band 150: i, i
+recon.tsv: G1 null 6/6 | G2 letter 4/6 | G3 false-NULL 1/6 | gate FAIL
+   band 139: n
+   band 142: NULL
+   band 149: NULL
+   band 150: SPLIT, SPLIT
+pooled control (reported): null 27/31, letter 28/31, false-NULL 1/31
+   pooled 125: NULL 1, letter 0, SPLIT 0 :: NULL
+   pooled 139: NULL 3, letter 1, SPLIT 0 :: NULL NULL NULL n
+   pooled 140: NULL 2, letter 2, SPLIT 0 :: y NULL NULL t
+   pooled 142: NULL 4, letter 1, SPLIT 0 :: e NULL NULL NULL NULL
+   pooled 147: NULL 0, letter 2, SPLIT 0 :: u u
+   pooled 149: NULL 4, letter 0, SPLIT 0 :: NULL NULL NULL NULL
+   pooled 150: NULL 0, letter 0, SPLIT 2 :: SPLIT SPLIT
