@@ -1,0 +1,22 @@
+# Names read on BnF fr.3019 f.84 (Gramont, Rome 15 May 1530), A2-GRA6 3 Oct 2026: kept only where BOTH blind Sonnet passes (A, B) read the name on the same line.
+# conf: worst of the two passes (h/m/l). Cipher spelling: upper case, U->V, J->I.
+form	line	as_read_A	as_read_B	type	conf
+CLAVDE	B04,B13	conte Claude Rangon	conte Claude Rangon	person	m
+RANGON	B04	Rangon	Rangon	person	m
+PLAISANCE	B05	plaisance	plaisance	place	m
+TREBYA	B05	Trebya?	Trebya	place	l
+LONGRES	B06	Longres?	Longres?	place	l
+DIAVOLLARA	B07	Diauuollara?	Dianwellara?	person	l
+MARQVIS	B09,P02	marquis le[d]?	marquis lev[e]	title	l
+BRANDON	B13	Bvandon? (Brandon?)	Brandon?	person	l
+HAVSER	B14	Hauser?	Hauser?	person	l
+GAYACE	B16	de Gayace?	conte de Gayace?	person	l
+EMPIRE	B16	l'empire	l'empire	group	m
+PAPE	B17	pape	pape	title	m
+VIGESME	P02	Vigesme?/Vigeuano?	Vigesme?	place	l
+IEHAN	P02	conte Jehan?	conte Jehan	person	l
+CONTE	B04,B16,P02	conte	conte	title	m
+PAVLE	P01/P04	paule?	paule	person	l
+ROME	P05	Rome	Rome	place	m
+ROY	B22/P06	du Roy	Roy	title	m
+FRANCE	B22	de France?	de France	place	l

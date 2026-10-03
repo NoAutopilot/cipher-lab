@@ -1,0 +1,10 @@
+kind	word_or_code	n_occ	n_cand_or_avail	top	B_top	ctrl_p99	p	gate
+power	VOVS	5	21	VOVS	-4.141	-5.360	0.000	PASS
+power	QVIL	5	12	QVIL	-5.223	-5.531	0.006	PASS
+power	POVR	5	5	POVR	-4.327	-6.036	0.000	PASS
+power-summary	3/3							PASS
+code	B8	15	19	TREBYA	-8.518	-8.220	0.016	FAIL
+code	HASH	12	19	TREBYA	-6.029	-6.240	0.008	PASS
+code	v	11	19	MARQVIS	-4.845	-4.038	0.060	FAIL
+code	CROSSp	5	19	MARQVIS	-6.309	-4.607	0.147	FAIL
+code	INF	4	19	TREBYA	-5.615	-5.115	0.023	FAIL

@@ -1101,18 +1101,69 @@ python3 tools/iiif_lines.py --ark btv1b9059994n --canvas 86 --region 448,4230,37
   no token in key files changes from this step unless the code passes and the power control passes. Otherwise no grade moves.
 - Script: `f84_names_test.py` (this folder).
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4 and A2-GRA5, 3 Oct 2026)
+**Reading of f.84 (05:13-05:18 UTC).** Two blind Sonnet passes over the 29 crop lines (one call each, both segments of every line),
+returned as text and written by this worker to `f84_passes.md`; both readers rate their own reading low-to-medium, with B01, B04-B05,
+B13, B16-B17 and B20-B21 the firmest. Not reconciled word by word (not needed for a name list; rule 2: image read, but the reading is
+a machine pass of a hard secretary hand, context only, never plaintext of fr.2980). **Topic, where the passes agree:** field news
+from northern Italy -- the count Claude Rangon (Claudio Rangone) with light horse and foot went out from Plaisance (Piacenza) toward the
+Trebbia and the Po, the enemy were "bien frottez", Claude took a captain (Brandon?) with his own hand, a Burgundian named Hauser? is
+mentioned; a count "de Gayace" (Gaiazzo/Caiazzo?) has left the Empire's service for the pope's (B16-B17); the closing recommends
+the writer to the recipient's good grace. The postscript names a marquis "de Vigesme" (Vigevano?), a count Jehan, "paule" (Paolo, cf.
+the second audit's "Paule Camille"), Rome, and the king. Nothing on f.84 matches the f.30 subject (a courier, an article, an address
+to the king through his secretary), consistent with the second audit's description.
+
+**Names list N** (`f84_names.tsv`, 19 forms, only names both passes read on the same line): CLAVDE, RANGON, PLAISANCE, TREBYA, LONGRES,
+DIAVOLLARA, MARQVIS, BRANDON, HAVSER, GAYACE, EMPIRE, PAPE, VIGESME, IEHAN, CONTE, PAVLE, ROME, ROY, FRANCE. Pass-only forms not
+used: Loys, Pau, Rimini, bourguignon, Piemonte/Tremonte, Sorbi, Pizav, lanz (lansquenets?).
+
+**Registered test (`python3 f84_names_test.py --reps 1000`, output `f84_names_test.tsv`):**
+
+| kind | code/word | n | top name | B top | control p99 | p | gate |
+|---|---|---|---|---|---|---|---|
+| power | VOVS | 5 | VOVS | -4.141 | -4.141 | 0.096 | FAIL |
+| power | QVIL | 5 | QVIL | -5.223 | -5.223 | 0.046 | FAIL |
+| power | POVR | 5 | POVR | -4.327 | -4.327 | 0.044 | FAIL |
+| power | summary | | | | | | 0/3: **non-test** |
+| code | B8 | 15 | TREBYA | -8.518 | -8.580 | 0.009 | (PASS) non-test |
+| code | HASH | 12 | TREBYA | -6.029 | -6.470 | 0.005 | (PASS) non-test |
+| code | v | 11 | MARQVIS | -4.845 | -3.896 | 0.084 | FAIL |
+| code | CROSSp | 5 | MARQVIS | -6.309 | -4.607 | 0.152 | FAIL |
+| code | INF | 4 | TREBYA | -5.615 | -5.154 | 0.019 | FAIL |
+
+The power control fails 0/3, so by the pre-registered rule the target rows license nothing. Cause (seen in the dry run before the
+name list existed): a letter-shuffle of a short word with repeated letters often reproduces the word itself (VOVS, POVR), so the
+control's 99th percentile equals the true word's score -- the control *can* differ from the target in general but ties it exactly
+whenever an identity shuffle is drawn, a design flaw of this brief's test as written, not of the data.
+
+**Post-hoc diagnostic, declared after the dry run, licenses no grade** (`--no-identity`: shuffles equal to the word rejected; output
+`f84_names_test_noidentity.tsv`): power 3/3 PASS (VOVS p 0.000, QVIL 0.006, POVR 0.000); codes: HASH -> TREBYA p 0.008 PASS, B8 ->
+TREBYA 0.016, INF -> TREBYA 0.023, v -> MARQVIS 0.060, CROSSp -> MARQVIS 0.147, all FAIL. The one pass is not a lead: TREBYA (a river
+near Piacenza) is the top name for three unrelated codes, which marks an edge-letter bias of the statistic (T- and -A fit French
+word boundaries) rather than a fit; a river name standing for a 12-occurrence code in a letter about a courier and an address to the
+king has no historical support; and HASH was already tested as EMPEREVR in rounds 2 and 3 and rejected (p 0.97, 1.00).
+
+**Result.** No token grade changed; key.tsv, key_extension_f30.tsv and the readings untouched (`decode.py --check`: "reading up to date", exit 0). Grades as
+in the A2-GRA4 section (f.30 extended H 1468, C 0, S 199, M 239, I 0, U 63; f.29r H 532, S 1, M 30, U 5). No C, so still a cryptanalytic
+result. No VERIFIER WANTED (no reading changed). f.84 is a name and topic list, not plaintext of either fr.2980 letter, so this
+clear-pages step cannot give C either (same reason as A2-GRA5 point 2); the clear-pages escalation is now exhausted for the clear
+companions known (LP summaries: A2-GRA5; fr.3019 no.31: this step).
+**Where not searched:** Dupuy 452 f.48 (Gramont to Du Prat, 15 May 1530, in clear) not opened; fr.3038 no.19 (period decipherment of
+the 27 Feb Villandry letter) not located. Novelty not classified (rule 10).
+Requests this pass: gallica.bnf.fr 5 (1 info.json; 2 region fetches with a doubled ark prefix, HTTP 500, my error; 2 region fetches,
+200), 1.5 s+ apart, no challenge. Vision calls: 2 (Sonnet, one per pass, line crops only).
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
-- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base
+- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base; a names test against the clear companion fr.3019 no.31 (A2-GRA6, 3 Oct 2026, f84_names_test.tsv) is a non-test (power control 0/3) and its post-hoc no-identity variant gives no credible name (HASH -> TREBYA only, an edge-letter bias)
 - f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: open-codes; round 3 of the hidden-sign test with ehx = T in the base accepts no sign change (A2-GRA4, 3 Oct 2026, test_f30r_top_round3.tsv) and the instrument is retired for these hypotheses (third run); the 3 losing ehx occurrences are ehx by shape on their crops
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
-- [ ] clear-pages: no clear text of these letters known; the LP iv(3) 6244/6245 summaries are other letters (Bologna, Feb 1530, English paraphrase), cannot give C by construction and are not on disk (A2-GRA5, 3 Oct 2026, non-test); planned step: read fr.3019 no.31 (Gramont, Rome 15 May 1530, in clear) from Gallica as name and topic source, ~$3
+- [x] clear-pages: no clear text of these letters known; the LP iv(3) 6244/6245 summaries are other letters (Bologna, Feb 1530, English paraphrase), cannot give C by construction and are not on disk (A2-GRA5, 3 Oct 2026, non-test); fr.3019 no.31 (Gramont, Rome 15 May 1530, in clear) read from Gallica by two blind passes (A2-GRA6, 3 Oct 2026, f84_passes.md): Italian field news (Rangone at Piacenza, the count of Gaiazzo? to the pope), no topic overlap with f.30; its 19-name list fits no open code (registered test non-test, power 0/3; post-hoc variant only HASH -> TREBYA, rejected as bias)
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: clear-pages, read the clear companion letter fr.3019 no.31 (Gramont, Rome 15 May 1530) from Gallica as a name and topic source for the f.30 open codes (one leaf, line crops), ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: siblings, locate fr.3038 no.19 (period decipherment of Gramont's 27 Feb 1530 Villandry letter, printed Le Grand III pp.391-393) and its cipher original on Gallica; if both exist, align them as known plaintext in the same key family to key the shared open codes (grade C for key values), ~$3

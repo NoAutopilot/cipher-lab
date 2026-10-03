@@ -1,0 +1,10 @@
+kind	word_or_code	n_occ	n_cand_or_avail	top	B_top	ctrl_p99	p	gate
+power	VOVS	5	21	VOVS	-4.141	-4.141	0.096	FAIL
+power	QVIL	5	12	QVIL	-5.223	-5.223	0.046	FAIL
+power	POVR	5	5	POVR	-4.327	-4.327	0.044	FAIL
+power-summary	0/3							FAIL (non-test)
+code	B8	15	19	TREBYA	-8.518	-8.580	0.009	PASS (non-test: power control failed)
+code	HASH	12	19	TREBYA	-6.029	-6.470	0.005	PASS (non-test: power control failed)
+code	v	11	19	MARQVIS	-4.845	-3.896	0.084	FAIL (non-test: power control failed)
+code	CROSSp	5	19	MARQVIS	-6.309	-4.607	0.152	FAIL (non-test: power control failed)
+code	INF	4	19	TREBYA	-5.615	-5.154	0.019	FAIL (non-test: power control failed)
