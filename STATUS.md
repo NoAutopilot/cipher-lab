@@ -500,6 +500,46 @@ code of another decade, not the key (non-test). Parent handed over at about 735k
 (created via create_session, depth 1) from hub-seed/SUCCESSOR-PROMPT-account4.md; this session is archived. Open next
 steps are listed in that file.
 
+## LANE A2PUSH handoff (session_01LpiQYZ6ALkasXqnfsrufvm, account 2), 2-3 October 2026 (closed: backlog spent)
+
+Lane orchestrator on account 2 for the account-3 orchestrator, 20:50 UTC 2 Oct to 03:16 UTC 3 Oct 2026, 19 waves of
+cloud workers (Opus 5.5, Sonnet 5.5 for check-solved only). 144 worker rows ledgered by this lane (USD 455 of worker
+usage: 109 D, 15 D-, 2 X, 18 N), plus about USD 37 of orchestrator usage. The five-hour window never warned; seven-day
+read allowed_warning throughout (not a stop, BUDGETS amendment). No live workers; no check-in armed.
+
+**Results (all on origin/main, NOTES.md per target):**
+- decode-1168-modena-costabili-1492: found-solved (A2-COS e7eade5f: R1168 = Berzeviczy 1914 no. CLV; the record carries a
+  period interlinear decipherment and a clear Exemplum); period sign key rebuilt by alignment, 12 letter signs C (A2-COS2).
+- colbert26-lathuillerie-1644: interlinear keys f.24/f.23 (21 C codes); siblings sorted; the f.23 key is supported by
+  per-unit length-matched controls on canvas 32 (May 1646), 33, 35-36, 39-40, 47, 48, 49 (Jan 1648) -- attestation only,
+  key unchanged; joint line-grain refit [retired] (A2-COL8/A2-COL12). Next: canvases 50-51, ~4.
+- fr2980-gramont f.30: ehx = T grade S, verifier VERIFY-GRA endorsed (p 0.001), no.22 stays N4; status.json refreshed by acct-3.
+- na-oldenbarnevelt-2442-1605 B/C1: re-transcribed, rule 7 passes; VERIFY-OLD N3, key ours (not N4: Spanish side unsearched).
+- august-van-saksen 126: C 229 of 240; fr4715-f61: L02 merged, f.61r clear text verified (VERIFY-F61R).
+- florence-dieci-responsive: now open (Guasti read); 39 full-size DECODE images on disk; c.111/c.127 plain/cipher pair of
+  26 Dec 1430 confirmed; alignment pilot at chance with 17% reader split -> owner sign-sorter (ASKS 107, sorter built,
+  image-terms check before publishing).
+- sachsstaatsarchiv-manteuffel-1712: Loc. 694/10 digitised (Krauske key table on disk), 694/08-09 indexed (894 frames);
+  blocked premise gone; acct-3 rates low value (Krauske 1893 printed).
+- Control-backed negatives: na-raad-azie-1800 leaf 2 cell-per-letter (masc, homophonic, divider, syllabary; nl20 era-
+  conditional) -- next new material (leaf 3, ~5); kaliningrad-2015 convention-B Latin homophonic sweep complete incl.
+  German, transposition-of-German -- next a Russian soft-consonant tool (~12); la-garde masc non-test at measured error.
+- castelcicala-1816: seeded_code retired for tuning (third attempt); next owner-side BL Add MS 41525 crib.
+- fr4687-paleologue-nevers: suofratel crib passed repeat control and unit-shuffle null but FAILED the other-window null
+  (rank 3/16) -> crib test retired for this hypothesis, stays M.
+- Gate fixes: about 50 targets moved intake gate 1 -> 0 (GF-A2-1..13); check-solved verdicts on 14 triage targets.
+- Account-3 rows run here: Birago/Ceppo verifiers, sorters, NEVBIR-NAMES, CEPPO-WITNESS-PAIRS, F36-GLOSS, NO87-*,
+  VERIFY-MALSBURG-BOURDEAU (found-solved N0), TOOL-BRIEF-PRICE (tools/brief_price_check.py).
+
+**Lessons (ledgered):** verify a worker's commit on origin/main before archiving (A2-HAR3 lost a step; A2-HAR5 X, left
+unarchived, session_01S3oNgVLh7vdgCgtgyPVk7U); run the intake gate before every brief, including on blocked targets
+(A2-FLO2 refused correctly); verify a flag's premise before briefing (A2-WVH); gate-fix workers read 260-520k uncached
+tokens from whole PDFs -- say "grep, never read whole" in the brief; price vision per crop batch, not per canvas
+(A2-COL14 1.10x); F36-GLOSS 3.05x (X) -> TOOL-BRIEF-PRICE.
+
+**Open next steps (cheap, unblocked):** colbert26 canvases 50-51 (~4); na-raad-azie leaf 3 (~5); kaliningrad Russian
+soft-consonant tool (~12, campaign size); florence c.127 after the owner's sorter; manteuffel key-table -> key.tsv (~7).
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
