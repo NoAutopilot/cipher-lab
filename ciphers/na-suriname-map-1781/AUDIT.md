@@ -229,7 +229,7 @@ brief template, steps 1-5. It did no decoding and touched no other target.
 
 | item | claim under audit | class | key source | prior plaintext | prior decipherment / key in print |
 |---|---|---|---|---|---|
-| 4 | 2077 title cartouche, heading and "Explicatie der Signatuuren" legend a-z (+ alpha-eta), reading_2077_legend_nieuw.txt: 658 cipher tokens H 500 M 106 U 52, plus 98 plain words. [VERIFY2-SURINAME-2077, 3 Oct 2026: revised by GAPS23/GAPS24 to H 500 C 7 M 101 U 50; class re-checked and unchanged, see the section at the end of item 4.] GAPS22: the rate-matched nl18 gate PASSes 7/7 folds and 0/400 target shuffles pass; the non-gating half-M-right sensitivity check FAILs 4/7 | **N1 (provisional)**, held there until LOCAL-QUEUE L36/L41 are answered. **Ceiling N2** even if they come back empty (see below) | **period** (NA 1.05.03 inv. 86 scan 0003, Nieuw Secreet Alphabet + code groups; image exceptions from GAPS21) | **Content, yes, in a period plain sister plan.** NA 4.VEL 2078, Wollant's own July 1782 plan of the same fort "not in cipher" (Pl. E / E.E.), carries a plain "Nota" A-C, a-z that lists the same buildings. It is printed in facsimile on the same page as 2077 (den Heijer 2012, p. 329). The 2077 legend's own text was not located in print: AMH 2123 says "partly encrypted, not transcribed". | **Key: yes.** den Heijer 2012 p. 471 prints the Nieuw Secrett Alphabeth in facsimile (inv. 86 fols 1v-2), and so does de Leeuw 1997. **Decipherment of 2077: none located.** den Heijer's caption on p. 329 does not transcribe it. de Leeuw 1997 lists 2077 (no. 740 e) and is unread (L36). *Suriname en zijn historie* (1972) reproduces 2077 (plate 120/121) and is unread (L41) |
+| 4 | 2077 title cartouche, heading and "Explicatie der Signatuuren" legend a-z (+ alpha-eta), reading_2077_legend_nieuw.txt: 658 cipher tokens H 500 M 106 U 52, plus 98 plain words. [VERIFY2-SURINAME-2077, 3 Oct 2026: revised by GAPS23/GAPS24 to H 500 C 7 M 101 U 50; class re-checked and unchanged, see the section at the end of item 4.] [VERIFY3-SURINAME-2077, 3 Oct 2026: revised by GAPS25 to H 499 C 7 M 102 U 50 (GAPS29 changed nothing); class re-checked and unchanged, N1 (provisional), ceiling N2; see the last section of item 4.] GAPS22: the rate-matched nl18 gate PASSes 7/7 folds and 0/400 target shuffles pass; the non-gating half-M-right sensitivity check FAILs 4/7 | **N1 (provisional)**, held there until LOCAL-QUEUE L36/L41 are answered. **Ceiling N2** even if they come back empty (see below) | **period** (NA 1.05.03 inv. 86 scan 0003, Nieuw Secreet Alphabet + code groups; image exceptions from GAPS21) | **Content, yes, in a period plain sister plan.** NA 4.VEL 2078, Wollant's own July 1782 plan of the same fort "not in cipher" (Pl. E / E.E.), carries a plain "Nota" A-C, a-z that lists the same buildings. It is printed in facsimile on the same page as 2077 (den Heijer 2012, p. 329). The 2077 legend's own text was not located in print: AMH 2123 says "partly encrypted, not transcribed". | **Key: yes.** den Heijer 2012 p. 471 prints the Nieuw Secrett Alphabeth in facsimile (inv. 86 fols 1v-2), and so does de Leeuw 1997. **Decipherment of 2077: none located.** den Heijer's caption on p. 329 does not transcribe it. de Leeuw 1997 lists 2077 (no. 740 e) and is unread (L36). *Suriname en zijn historie* (1972) reproduces 2077 (plate 120/121) and is unread (L41) |
 
 Safe sentence (2077): "Under the period key in NA 1.05.03 inv. 86 (printed in facsimile by de Leeuw 1997 and den Heijer 2012, p. 471),
 we read the 2077 (fort Zeelandia) legend at 500 of 658 cipher signs from the key sheet, with 106 uncertain and 52 unkeyed. Its content
@@ -326,7 +326,7 @@ Reading revised by GAPS23/GAPS24 (3 Oct 2026, solver, rule 10 propagation, not a
 A session separate from every solver on this target (GAPS19-GAPS24, NL18-CORPUS), from REDERIVE-SURINAME-2077 and from
 VERIFY-SURINAME-2077. Rule 10 propagation of GAPS23 (51d9794e) and GAPS24 (2d92f06b). No decoding; no other target touched.
 
-[GAPS25, 3 Oct 2026: reading revised by GAPS25 (blind d/n/q sign call, prereg 12845ab7: x -> a 13 tokens, [v-tall] -> c 9 tokens, 22 values changed; 2077 H 499 C 7 M 102 U 50; GAPS23 gate re-run unchanged 0.696 -> 0.768); re-class pending.]
+[GAPS25, 3 Oct 2026: reading revised by GAPS25 (blind d/n/q sign call, prereg 12845ab7: x -> a 13 tokens, [v-tall] -> c 9 tokens, 22 values changed; 2077 H 499 C 7 M 102 U 50; GAPS23 gate re-run unchanged 0.696 -> 0.768); re-class pending.] [VERIFY3-SURINAME-2077: re-classed, see the next section.]
 
 **Verdict: item 4 stays N1 (provisional), key source period, ceiling N2.** The revision makes the reading better supported. It
 adds no print of this legend and removes none of the reasons for the hold.
@@ -393,3 +393,76 @@ straight to the g|l call. That pattern is direct evidence about H-graded tokens,
 g|l call. Added to the stage-9 list above, not to NOTES.md's gaps (a solver's job).
 
 No SECOND-OPINIONS-QUEUE.tsv row: the class is N1 (provisional), below N3. No CONTRIBUTIONS or outreach.
+
+### Re-class on the GAPS25 reading (VERIFY3-SURINAME-2077, account-4, verifier, 3 Oct 2026, 06:18-06:3x UTC)
+
+A session separate from every solver on this target (GAPS19-GAPS29, NL18-CORPUS), from REDERIVE-SURINAME-2077 and from
+VERIFY-SURINAME-2077 and VERIFY2-SURINAME-2077. Rule 10 propagation of GAPS25 (12845ab7, a10d58e3, ebe2ab1d) and GAPS29
+(e8726900, ce9f68a4). No decoding, no vision call; no other target touched.
+
+**Verdict: item 4 stays N1 (provisional), key source period, ceiling N2. Stage 9 ("Novelty verified") cannot be set yet.**
+
+| | VERIFY2 (05:2x UTC) | now |
+|---|---|---|
+| 2077 cipher tokens (658) | H 500 C 7 M 101 U 50 | **H 499 C 7 M 102 U 50**, M+U 0.231 (22 values changed by GAPS25: q->a 13, d->c 9; one d->c instance at L19:29 went H->M) |
+| `decode_key.py --check` | exit 0 | **exit 0** (06:2x UTC, this session): "ciphertext_2077_legend.tsv: tokens 658: C 7, H 499, M 102, U 50", "reading up to date" |
+| GAPS23 registered gate (5 pairs vs 2078 Nota) | 0.696 (78/112), N1 p99 0.438 | **0.768 (86/112)**, N1 p99 0.455, N2 p99 0.277, 0/2000 each, PASS. Re-run here on a scratch copy with the committed passes/nota2078_gaps23/score.py: result.tsv byte-identical to passes/nota2078_gaps25/result.tsv and passes/nota2078_gaps29/result.tsv |
+| GAPS29 g|l call | -- | non-test by its own prereg (partner gate 5/22), no value change; sheet-tile g|l method [retired] under rule 3 (GAPS21 + GAPS29) |
+
+**Pre-registration order (git).** 12845ab7 (GAPS25 prereg, brief, blind refs, queries; 05:44:06 UTC) precedes a10d58e3 (apply
+script and the gate baseline re-run, 05:47:12) and ebe2ab1d (decisions, exceptions, reading; 05:53:14). e8726900 (GAPS29 prereg,
+06:01:21) precedes ce9f68a4 (06:04:56). The GAPS25 class rule (settled >= 0.6, >= 3 settled, >= 2/3 on one value) is written in
+the prereg before the call, and the deviation from sign-level boxes is stated there too. Order holds.
+
+**One caveat on the 0.768 (not a failure, a limit on what it shows).** GAPS25 chose which sign classes to re-examine (d, n, q) from
+GAPS23's confusion table, which is computed on the same five gating pairs; 8 of the 22 changed tokens sit inside those pairs. The
+call itself was blind to 2078 (sheet tiles under shuffled labels, masked targets), so the agreement it bought is real, but the gain
+from 0.696 to 0.768 is not a held-out test of the fix: the gate is no longer independent for the d/n/q classes. The out-of-gate check
+is the 14 changes outside the five pairs (this session, diff a10d58e3..ebe2ab1d): they turn "sedretarye" into "secretarye",
+"paqrdesta[g|l]en" into "paardesta[g|l]en", "waqter" into "waater" (twice), "nq[g|l]asyn"/"na[g|l]qsyn" into "na[g|l]asyn"
+(magazyn) three times, "arsenqe[g|l]" into "arsenae[g|l]", "[g|l]eweernaq[k|i]ers" into "...naa[k|i]ers" (geweermakers),
+"brandspvyten ... nasdines" into "nascines" (machines). Every one is a period Dutch word or nearer to one, none of them scored by
+any gate. That is the stronger evidence for GAPS25, and it is what the safe sentence below leans on. Future gates on this legend
+should use pairs (or the GAPS24 secondary pairs) that did not select the fix.
+
+**What still blocks stage 9.**
+1. **Novelty, not reading:** LOCAL-QUEUE L36 (de Leeuw 1997) and L41 (*Suriname en zijn historie* 1972; Temminck Groll 1973) are
+   both still `queued` on origin/main at 06:2x UTC. Either may print a transcription of the 2077 legend. Until they are answered the
+   class is N1 (provisional); if both come back empty it is N2 (the 2078 Nota gives the content in plain period Dutch), never N3.
+   Stage 9 needs a class that the next verifier can confirm on a settled reading with those two answered.
+2. **Reading, still patterned:** n->m 3 (GAPS23/25 confusion: "nonteerings", "laboratorivn", "[k|i]aner"), all on the [u-dots]
+   code, which the GAPS25 call kept on N ij 17/17 at its own threshold; GAPS29's partner gate then put [u-dots] at N ij only 0.55
+   (runner-up M y 0.35). These are H-graded letters that the only known-plaintext check says are wrong in 3 of 3 aligned places. A
+   verifier cannot settle a sign, but it can say that until they are settled (or downgraded to M), the H count overstates letters
+   read right by about the size of that class (17 tokens).
+3. **g|l, 46 tokens M:** the sheet-tile method is retired (rule 3, two attempts). The next instrument GAPS29 names, a same-hand
+   leave-one-out call with the 4 C-known 2077 g tokens as references (~$4), is a genuinely different instrument and is open.
+4. The half-M-right sensitivity FAIL (GAPS22, 4/7) has still not been re-run at M+U 0.231; M+U moved 0.240 -> 0.231 in two
+   revisions, so it is unlikely to flip, but it is not re-tested.
+Items 2-4 are solver jobs; item 1 is the owner's desk runner. Stage 9 is set only after (1) is answered and a verifier confirms the
+class on the reading as it then stands.
+
+**Search log (this session, 3 Oct 2026), phrase searches on the words GAPS25 made readable:**
+
+| family | searched | result |
+|---|---|---|
+| (e) Google Books (key, country=US, 1.8 s apart) | "paardestallen" Zeelandia Suriname; "geweermakers" "fort Zeelandia"; "secretarye" Zeelandia Wollant; "magasyn" "brandspuiten" Suriname; "arsenael" Zeelandia 1781 Suriname; "water noodige" Zeelandia | 0 / 7 / 503 (not retried) / 0 / 0 / 77. "geweermakers" hits: a 1760 VOC Naamboekje and *Beschrijving van Suriname, historisch-geographisch ...* (1854, several copies; author not checked): 19th-century prose on the fort's workshops, not a transcription of 2077. "water noodige" hits are the Taiwan Zeelandia dagregisters (different fort) |
+| (e) IA full text (be-api) | "paardestallen" AND Zeelandia AND Suriname; "geweermakers" AND Zeelandia AND Suriname; Wollant AND secretarye | 0 / 0 / 0 |
+| (a)-(d), (f), (g), JSTOR | not re-run: GAPS25/29 add no identifier, sender, recipient, date or new source. JSTOR rows 175-176 stand | -- |
+
+Requests by host: www.googleapis.com 6; be-api.us.archive.org 3.
+
+Safe sentence (2077, replaces VERIFY2's): "Under the period key in NA 1.05.03 inv. 86 (printed in facsimile by de Leeuw 1997 and den
+Heijer 2012, p. 471), we read the 2077 (fort Zeelandia) legend at 499 of 658 cipher signs from the key sheet and 7 more from Wollant's
+own plain 1782 plan of the same fort (NA 4.VEL 2078), with 102 uncertain and 50 unkeyed. Where the two plans name the same building,
+our reading agrees with the 2078 Nota well beyond chance (pre-registered check). No printed transcription of the 2077 legend was found
+in the sources searched; de Leeuw 1997 and *Suriname en zijn historie* (1972), which both treat or reproduce the sheet, have not been
+read."
+Unsafe (unchanged): "first decipherment of the Zeelandia map"; "previously unknown contents of fort Zeelandia"; "we recovered
+Wollant's key"; "read in full"; "confirmed against known plaintext" or "verified by 2078" for the whole legend; and, new, any use of
+the 0.768 as an independent measure of the GAPS25 fix (see the caveat above).
+
+Postmortem: no over-claim in GAPS25 or GAPS29 (NOTES.md additions checked for first/new/ready/verified wording; none). GAPS25 wrote
+"re-class pending" as rule 10 asks. One methodological point recorded above, not an over-claim: the gate that motivated the fix was
+re-run as the fix's evidence. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 06:2x UTC) and none is added: the class
+is N1 (provisional), below N3. No CONTRIBUTIONS or outreach.
