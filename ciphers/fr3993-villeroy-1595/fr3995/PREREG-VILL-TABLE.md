@@ -42,3 +42,32 @@ and the resulting key covers >= 0.5 of the target; otherwise no score is compute
 Vision budget for this job: at most 5 calls total; stop before any call that would cross 80 pct of USD 8 or of the 50-min box.
 Tool shelf: glyph_atlas.py (proven) not used -- a dozen table symbols against ten target signs is one visual comparison, not a
 segmentation/clustering job.
+
+## Addendum A1B-VILL-L (3 Oct 2026, ~18:05 UTC, committed before any crop of the f200 Sillabes/doubles grid is viewed)
+
+Brief .claude/briefs/runs/2026-10-03-acct1-a1b-vill-l.md, step (l). Region: canvas f200 left block below the header (Sillabes
+1-72, Lettres doubles 73-96); crops only via iiif_lines (never the full page to a reader).
+
+Reading. Reader A (worker or a subagent) transcribes every legible cell as `code<TAB>value` (value = the syllable/double as
+written, lower case, '?' if unreadable) and A's file is committed to the scratch/target folder BEFORE reader B (a separate Sonnet
+subagent, not told A's answers) is spawned on the same crops. A cell is AGREED when both readers give the same code and the
+same value; agreed cells go to keys/key_f200_no57_syll.tsv at grade M (period key sheet read twice, not yet shown to be the
+target's key); a cell read by one reader only, or read differently, is listed with grade I and is NOT used in scoring.
+
+Coverage. The scoring key = agreed grid cells + the 9 certified header signs (keys/key_f200_no57_signs.tsv). Coverage = target
+tokens that are a figure (any figure can begin a 1- or 2-figure code) or a certified sign, over all target tokens, but only if
+the agreed grid covers >= 60 of codes 1-96; otherwise the figure tokens whose single- and two-figure parses fall outside the
+agreed codes are counted uncovered. Coverage < 0.5 -> "not testable", no score.
+
+Scoring (only if coverage >= 0.5): segmentation as signs_score.py (two-figure code when it is in the key, else one-figure;
+'o' = 0; certified signs as codes; other signs dropped). Decode -> fr16 4-gram model of tools/judge_plaintext.py ('fr'
+corpora, as VILL-STRIPS). Rank the real key against 200 value-shuffled keys (values permuted among the key's codes). Power
+control FIRST: 20 synthetic French texts at the target's decoded length and coverage, enciphered with the same key (plaintext
+parsed greedily into the key's units, longest first: doubles/syllables before letters; units absent from the key become a
+dropped sign token), reader error = share of codes on I cells (0 if none used). Power below 16/20 rank-1 -> "non-test", target
+not scored. Target PASS = rank 1 of 201 and z >= 3; else FAIL (a control-backed negative only if the power gate passed).
+Transcriptions: Bourdeau's pass (bourdeau/) is scored; A1B-VILL-TX2's pass B (tx2/passB.tsv) is scored as a second row with the
+same key and the same power gate re-run at its own length/coverage; the report says which is which and that both are conditional
+on a transcription with 16.8 pct pass-to-pass disagreement and two omitted lines (ASKS 124).
+Vision budget: 4 subagent/look calls for the reads + 1 reconciliation look; stop before any call crossing 80 pct of USD 5.5 or of
+the 45-min box (18:44 UTC).
