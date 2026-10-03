@@ -6014,3 +6014,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:22 | VERIFY-GRA (account 2, LANE-A2PUSH) | claim: verifier fr2980-gramont f.30 ehx revision; box ends 01:12 UTC
 2026-10-03 00:22 | CS-A2-E (account 2, LANE-A2PUSH) | claim: bl-farnese-cipher -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
 2026-10-03 00:22 | CS-A2-D (account 2, LANE-A2PUSH) | claim: bl-portugal-bombay-1661 -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
+2026-10-03 00:24 | VERIFY-GRA (account 2, LANE-A2PUSH) | halfway: shape split re-checked by eye (20 crossed, 2 plain c agree); test_f30r_split reproduces exactly; 1000-draw reseeded control running; next AUDIT.md + SO row
