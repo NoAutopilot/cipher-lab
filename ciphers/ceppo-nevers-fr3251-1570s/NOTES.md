@@ -1032,7 +1032,7 @@ Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
-- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; verifier (VERIFY-CEPPO-WP, AUDIT.md): 7 accepted and applied (endorsed 113 -> 120), L04.41/L05.42 contested (t at M), L02.35 rejected; next: passC L04.39 (D reads a barred 8) and a glossed S76/S31 instance on f.36r/f.37r, ~$3
+- f.87, 62 M + 4 U tokens of 204 (S 138) - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, VERIFY-CEPPO-WP, 3 Oct 2026: 7 applied, L04.41/L05.42 t at M contested, L02.35 rejected); L04.39 read barred by both blind readers but gate (iii) fails, S65 kept at M (A1B-CEPPO-87); S31/S32/S76 still have no witness rule (no legible gloss on the f.36r S31 x2 or f.37r S76 tiles, 2 blind reads each); next: tight tiles + 2 blind reads of the f.36v S76 instances (v36top_L02 x2, v36mid_L01, L02, L06 x3) and f.36v/f.37r S32, ~$2.5
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: no-key-material; every witness on disk or one fetch away is now searched: ff.27/39/82 (A1B-CEPPO-POUND), fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36: one occurrence, gloss not legible blind), fr.3252 f.47r (A1B-CEPPO-11V, 3 Oct 2026: 0 X_POUND labels in passA/passB/recon, and the leaf carries no interlinear gloss, so no glossed occurrence is possible), f.11v (A1B-CEPPO-11V: show-through of f.11r and a docket only, no cipher, no decipherment); stays I under PREREG c5412f90. f.117r is not a gloss source either (no slip or clear copy, birago Premise check (c)) and waits on the owner's sorter; reopens only with a new glossed Birago/Ceppo leaf.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.87 passC L04.39 and a glossed S76/S31 instance on f.36r/f.37r, ~$3; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.87 S76/S32 gloss tiles on fr.3252 f.36v, ~$2.5; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1282,3 +1282,39 @@ what cipher is for). **No token changes grade; no reading, AUDIT.md or SECOND-OP
 Not done: f.89v (the letter continues: "quale due partite con-") not fetched; its names could enter a second crib list
 under the same rule, ~USD 2 (one region + 2 passes). Requests: gallica.bnf.fr 3 (1 overview to scratchpad, 2 regions).
 Vision: 2 Sonnet subagent passes (70 crops each), 2 own looks (overview, debug overlay).
+
+## A1B-CEPPO-87: f.87 L04.39 and glossed S31/S76 on fr.3252 f.36r/f.37r (3 Oct 2026, account 1)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-ceppo-87.md`. Pre-registration `harvest/a1b87/PREREG.md` (6334b236), pushed before
+any read. Crops: `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/f87/c88_cipher_wt.jpg --out <scratch> --debug`
+(7 bands; cipher line 4 located by its passC neighbours "...ℒ 8 ∴ ≠ ꝯij 3 6 +"), fr.3252 bands from birago `cut_f36r.py` /
+`cut_gloss.py`; tight tiles `harvest/a1b87/cut_tiles.py` (T1-T4, 3x). Two blind Sonnet passes, one batch each, tiles only,
+no candidate values (`harvest/a1b87/blind_reads.tsv`). 0 network requests.
+
+**Unit 1, f.87 L04.39 (passC S65 H).** Both readers: a single stroke crosses the waist of the 8 and runs out past both sides,
+so R-8 reads S80 (a), agreeing with blind reconciler D. Gates (`harvest/a1b87/controls.txt`, decode_control.py, err 0.28,
+seeds 1-3, side by side):
+| sequence | real key | z (seeds 1/2/3) | rank | power |
+|---|---|---|---|---|
+| current (S65) | -1.6516 | 3.15 / 3.48 / 3.47 | 1/201 x3 | 20, 20, 19 /20 |
+| L04.39 = S80 | -1.6536 | 3.07 / 3.44 / 3.37 | 1/201 x3 | 20, 20, 19 /20 |
+Judge (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ...`):
+```
+current:      FAIL language: score=-1.655, null_p99=-1.623, real_p05=-0.947, real_median=-0.833, mode=both, N=194
+L04.39 = a:   FAIL language: score=-1.657, null_p99=-1.699, real_p05=-0.944, real_median=-0.828, mode=both, N=193
+```
+Gate (ii) passes, gate (iii) fails (both scores drop slightly: "...auantieimetntzeme" -> "...auantieimantzeme"). Per the prereg,
+and as VERIFY-CEPPO-WP did for L04.41/L05.42, the value stays S65 (et) and the token drops H -> M; the shape reading S80 is
+recorded here. Data conflict noted: the shape rule and the language score point opposite ways on this tile. decode_key
+--check exit 0; f.87 now S 138 / M 62 / U 4 (was 139 / 61 / 4). The letters are unchanged, so the SO-CEPPO-F87 prompt and
+AUDIT.md's reading text need no edit; AUDIT.md f.87 gets a one-line grade note.
+
+**Unit 2, glossed S31/S76.** Located by script: S31 at f.36r r36n_L11 pos 3 and r36n_L13 pos 30 (`ciphertext_f36_v2.tsv`), S76
+at f.37r r37_L01 pos 14 (`f36/recon.tsv`); no S32 on f.36r. Each target was matched by its neighbours in both readers' sign
+lists. No gloss letter met the both-agree rule: T2 (L11 S31) "m-like, unreadable" / "m-like or in, uncertain"; T3 (L13 S31)
+"?" / none; T4 (S76) "ff or tt" / "ff or ss", both uncertain. So no witness count and no shape rule for S31/S32/S76; f.87's
+S31/S32/S76 tokens (e.g. L04.38, L04.42) keep their grades. The f.36r S31 L11 gloss "m" read by HARVEST-D (alignment_pairs.tsv,
+one eye, M) is not confirmed by blind readers at 3x. Not looked at: f.36v S76 instances (outside this brief), f.117r/f.144r/f.168.
+
+Grades: no H or C change; 1 token H -> M on f.87. Report: what was found and where it was not found; no novelty class.
+

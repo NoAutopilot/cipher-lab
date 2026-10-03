@@ -1,0 +1,5 @@
+tile	target	reader_A	reader_B	verdict_by_prereg
+T1	f.87 L04.39 (8-family; passC S65 H)	bar yes: single stroke through the waist, past left and right	bar yes: horizontal stroke through the waist, past both sides	both see bar -> S80 proposed; gate ii pass, gate iii fail -> S65 kept at M
+T2 k3	fr.3252 f.36r r36n_L11 pos3 S31 (loop with long tail)	gloss cannot tell ("m-like or a flourish", unreadable)	gloss "m-like small cursive mark (maybe m or in; uncertain)"	no agreed letter -> not counted
+T3 k2/k3	fr.3252 f.36r r36n_L13 pos30 S31 (tall loop with tail)	gloss "?" (unreadable scribble)	gloss none ("faint m-like marks between k3 and k4, unclear")	no agreed letter -> not counted
+T4 k5	fr.3252 f.37r r37_L01 pos14 S76 (C/Q loop with hooked tail)	gloss "? ff or tt, unreadable"	gloss "ff or ss, uncertain"	no agreed letter -> not counted

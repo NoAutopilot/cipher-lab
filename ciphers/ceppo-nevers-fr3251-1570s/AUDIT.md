@@ -1100,3 +1100,9 @@ candidate, "DOCUMENTI", Archivio Storico Italiano 122 (1964), https://www.jstor.
 viewer: Medici envoys' letters from the Council of Trent, Oct 1561-1563, so it cannot print the 1572 letters. Result: nothing on
 JSTOR prints or discusses Birago's 1572 cipher letters or their decipherment. Class unchanged (N4 stands; outreach gate 2's JSTOR
 condition is now met for this target).
+
+## f.87 grade note (A1B-CEPPO-87, 3 Oct 2026; solver-side propagation per rule 10, no class change)
+passC L04.39 (the open item in "For the orchestrator (VERIFY-CEPPO-WP, f.87)"): two blind readers both see a bar through the
+waist (R-8 -> S80 a, as blind reconciler D read); key control still rank 1/201, power 19-20/20, but the judge drops
+-1.655 -> -1.657, so gate (iii) fails and S65 (et) stays, graded M (was H). Reading text unchanged; f.87 S 138 / M 62 / U 4.
+SO-CEPPO-F87 prompt unaffected (letters identical). Details: NOTES.md "A1B-CEPPO-87".
