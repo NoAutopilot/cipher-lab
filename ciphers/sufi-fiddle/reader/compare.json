@@ -1,0 +1,230 @@
+{
+ "items": [
+  {
+   "line": "L05",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "محمد",
+   "roman": "Muhammad",
+   "language": "Arabic (loan, any Islamic language)",
+   "gloss": "Muhammad (the Prophet, or a personal name)",
+   "confidence": "H",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.8333,
+   "S2_word_match": [
+    "AR"
+   ]
+  },
+  {
+   "line": "L01",
+   "groups": [
+    1,
+    1
+   ],
+   "arabic": "هو",
+   "roman": "huwa",
+   "language": "Arabic",
+   "gloss": "He (God), a common invocation at the head of a text",
+   "confidence": "M",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.5,
+   "S2_word_match": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    7,
+    7
+   ],
+   "arabic": "كامو",
+   "roman": "kamu",
+   "language": "Malay / Tausug",
+   "gloss": "you",
+   "confidence": "M",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": [
+    "MS"
+   ]
+  },
+  {
+   "line": "L04",
+   "groups": [
+    13,
+    13
+   ],
+   "arabic": "بسرتا",
+   "roman": "beserta",
+   "language": "Malay",
+   "gloss": "together with, along with",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": [
+    "MS"
+   ]
+  },
+  {
+   "line": "L06",
+   "groups": [
+    7,
+    7
+   ],
+   "arabic": "بركة",
+   "roman": "baraka(t)",
+   "language": "Arabic (loan)",
+   "gloss": "blessing",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.8,
+   "S2_word_match": []
+  },
+  {
+   "line": "L02",
+   "groups": [
+    13,
+    13
+   ],
+   "arabic": "سابع",
+   "roman": "sabi'",
+   "language": "Arabic",
+   "gloss": "seventh",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": false,
+   "S1_p_expected": 0.6,
+   "S2_word_match": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    10,
+    10
+   ],
+   "arabic": "كفر",
+   "roman": "kufr / kafir",
+   "language": "Arabic (loan)",
+   "gloss": "unbelief / unbeliever",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": [
+    "AR"
+   ]
+  },
+  {
+   "line": "L04",
+   "groups": [
+    1,
+    2
+   ],
+   "arabic": "ڤڠكو",
+   "roman": "pangku / pangkau",
+   "language": "Malay / Tausug",
+   "gloss": "lap, to hold (Malay pangku); unsure",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.9231,
+   "S2_word_match": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "مو",
+   "roman": "-mu",
+   "language": "Malay / Tausug",
+   "gloss": "your (enclitic); repeats in L04 g11, g15, L05 g3, L06 g3",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": []
+  },
+  {
+   "line": "L06",
+   "groups": [
+    6,
+    6
+   ],
+   "arabic": "تڠ",
+   "roman": "tang",
+   "language": "Tausug / Malay",
+   "gloss": "particle or word ending in -ng; meaning unclear",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": false,
+   "S1_p_expected": 0.8,
+   "S2_word_match": [
+    "MS"
+   ]
+  },
+  {
+   "line": "L06",
+   "groups": [
+    8,
+    8
+   ],
+   "arabic": "دوا",
+   "roman": "dua",
+   "language": "Malay / Tausug",
+   "gloss": "two",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.8,
+   "S2_word_match": []
+  },
+  {
+   "line": "L06",
+   "groups": [
+    15,
+    15
+   ],
+   "arabic": "لا محالة",
+   "roman": "la mahala",
+   "language": "Arabic",
+   "gloss": "inevitably, without doubt",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": false,
+   "S1_p_expected": 0.8,
+   "S2_word_match": []
+  }
+ ],
+ "S1_all": {
+  "N": 12,
+  "observed": 9,
+  "expected": 8.914,
+  "p_one_sided": 0.6283
+ },
+ "S2_all": {
+  "N": 12,
+  "W": 5
+ },
+ "S1_HM": {
+  "N": 3,
+  "observed": 3,
+  "expected": 2.048,
+  "p_one_sided": 0.2976
+ },
+ "S2_HM": {
+  "N": 3,
+  "W": 2
+ },
+ "grades": {
+  "M": 3,
+  "I": 9
+ }
+}

@@ -1,0 +1,137 @@
+list	line	group_from	group_to	signs	skeleton	skel_len	chosen_C3	chosen_C2	list_tokens	words
+MS	L01	1	2	ha waw | lam dal	hld	3	y	y	5	hilda:4 haled:1
+MS	L01	2	2	lam dal	ld	2			47	lady:13 lada:8 old:5 led:4 laude:2 lidi:1
+MS	L01	2	3	lam dal | ha alif hamza	ldh	3			11	lidah:10 walidah:1
+MS	L01	4	4	sin lam dal	sld	3	y	y	10	solid:3 salad:2 soleidae:1 salida:1 slaid:1 shield:1
+MS	L01	4	5	sin lam dal | waw	sld	3			10	solid:3 salad:2 soleidae:1 salida:1 slaid:1 shield:1
+MS	L02	1	1	ha ha2	hh	2		y	9	yahweh:2 yahyawiah:2 yhwh:1 heihō:1 ahh:1 wahah:1
+MS	L02	4	4	ha tooth ya?	ht	2			186	hati:105 hayat:28 hit:20 white:13 hot:4 hayate:2
+MS	L02	4	5	ha tooth ya? | tha	hts	3	y	y	6	hits:4 hiatus:1 hoyts:1
+MS	L02	5	6	tha | alif lam kaf waw	slk	3			35	selaku:19 selagi:3 zoologi:2 silk:2 suluk:2 silika:1
+MS	L02	5	7	tha | alif lam kaf waw | ain tha	slks	4			1	salix:1
+MS	L02	6	6	alif lam kaf waw	lk	2			1163	lagi:429 lagu:380 liga:107 layak:41 logo:31 laku:23
+MS	L02	6	7	alif lam kaf waw | ain tha	lks	3	y	y	93	lokasi:69 legasi:5 alex:5 laksa:4 likas:3 lukis:2
+MS	L02	7	8	ain tha | ba shin	sbs	3			6	sbs:4 subways:1 zabuza:1
+MS	L02	8	8	ba shin	bs	2		y	390	biasa:187 besi:38 bas:36 beza:20 bisa:18 bos:9
+MS	L02	9	9	kaf ta dal	ktd	3	y	y	1	katod:1
+MS	L02	10	10	kaf ta dal	ktd	3	y	y	1	katod:1
+MS	L02	10	11	kaf ta dal | hamza	ktd	3			1	katod:1
+MS	L02	11	12	hamza | ba ta	bt	2			505	batu:249 buat:100 ubat:35 bot:19 buta:14 bata:13
+MS	L02	12	12	ba ta	bt	2		y	505	batu:249 buat:100 ubat:35 bot:19 buta:14 bata:13
+MS	L02	13	13	sin alif ba ain	sb	2		y	58	sub:13 shiva:7 sibu:6 sebaya:3 siva:2 azab:2
+MS	L02	14	14	shin fa ra ghayn	sprN	4	y	y	5	spring:5
+MS	L02	15	15	lam ba alif	lb	2		y	84	love:26 live:10 labu:7 libya:6 lava:5 lobi:4
+MS	L03	2	2	ta nun	tn	2			278	tuan:79 tan:58 tun:23 taiwan:17 tunai:17 utan:11
+MS	L03	2	3	ta nun | kaf ya alif	tnk	3	y	y	148	tenaga:84 etnik:30 tunku:16 tuanku:13 watanuki:2 tianqi:1
+MS	L03	3	4	kaf ya alif | lam kaf alif	klk	3			40	kelak:9 geologi:7 klik:4 keluk:4 ekologi:3 gelek:2
+MS	L03	4	4	lam kaf alif	lk	2		y	1163	lagi:429 lagu:380 liga:107 layak:41 logo:31 laku:23
+MS	L04	1	1	fa nun nga	pnN	3			54	pinang:38 penaung:6 penang:6 pening:2 poyning:1 penyayang:1
+MS	L04	1	2	fa nun nga | kaf waw	pnNk	4	y	y	1	penyangga:1
+MS	L04	1	3	fa nun nga | kaf waw | fa nun ain	pnNkpn	6			9	penangkapan:8 penyungkupan:1
+MS	L04	2	3	kaf waw | fa nun ain	kpn	3			42	keupayaan:34 gapena:3 kafan:1 keupayaaan:1 kepiawaian:1 kapan:1
+MS	L04	3	3	fa nun ain	pn	2		y	303	pun:92 puan:29 punya:15 pin:15 pn:14 penyu:12
+MS	L04	3	4	fa nun ain | mim waw	pnm	3	y		7	panama:4 pnm:1 panem:1 penemu:1
+MS	L04	4	5	mim waw | dal hamza	md	2		y	303	muda:138 media:88 mod:17 madu:10 mode:8 mad:7
+MS	L04	5	6	dal hamza | tooth? tooth sin ya? ra	dssr	4			1	disusur:1
+MS	L04	6	6	tooth? tooth sin ya? ra	btsr	4	y	y	1	batusari:1
+MS	L04	6	7	tooth? tooth sin ya? ra | kaf mim waw	srkm	4			10	seragam:10
+MS	L04	7	7	kaf mim waw	km	2		y	651	agama:169 kaum:91 km:89 kami:62 kimia:42 kamu:34
+MS	L04	8	8	sin ra	sr	2		y	620	siri:176 seri:81 suara:64 sri:58 surya:16 surau:16
+MS	L04	9	9	lam mim ba ya alif	lmb	3	y	y	39	lembu:27 lumba:6 lomba:3 lumb:2 lamb:1
+MS	L04	10	10	kaf fa ra	kpr	3	y	y	24	kapur:10 kafir:5 kapoor:4 kupro:1 gafar:1 kapar:1
+MS	L04	11	11	mim mim waw	mm	2		y	229	umum:120 mm:54 imam:21 emma:5 imām:4 mimi:3
+MS	L04	12	12	ta dal	td	2		y	126	tiada:111 tadi:7 td:3 today:2 tod:2 tid:1
+MS	L04	13	13	ba sin ra ta	bsrt	4	y	y	5	beserta:5
+MS	L04	14	14	fa nun nga	pnN	3	y	y	54	pinang:38 penaung:6 penang:6 pening:2 poyning:1 penyayang:1
+MS	L05	1	1	kaf sin	ks	2		y	879	kuasa:233 ogos:190 kes:117 kos:72 x:72 gas:48
+MS	L05	1	2	kaf sin | sin tooth?	ksss	4			1	eksesais:1
+MS	L05	1	3	kaf sin | sin tooth? | mim waw	kssnm	5	y		1	xšāyaθiyānām:1
+MS	L05	2	2	sin tooth?	sn	2			569	seni:149 sana:72 sini:55 zon:31 san:31 yayasan:26
+MS	L05	2	3	sin tooth? | mim waw	stm	3		y	43	istimewa:24 setem:4 stim:2 stem:2 showtime:2 satem:1
+MS	L05	4	4	mim ha2 mim dal	mhmd	4	y	y	65	mohamad:22 mahmud:16 mohamed:14 muhamad:6 mahmoud:2 mehmed:2
+MS	L05	5	5	kaf sin nun	ksn	3	y	y	715	kawasan:576 kesan:95 kuasanya:11 kiasan:5 kasino:4 aksinya:3
+MS	L06	1	1	sin ra	sr	2			620	siri:176 seri:81 suara:64 sri:58 surya:16 surau:16
+MS	L06	1	2	sin ra | kaf waw	srk	3	y	y	103	sarawak:61 syurga:15 srk:5 sarikei:4 surga:2 sorak:2
+MS	L06	2	3	kaf waw | mim mim waw	kmm	3			1	gamma:1
+MS	L06	3	3	mim mim waw	mm	2		y	229	umum:120 mm:54 imam:21 emma:5 imām:4 mimi:3
+MS	L06	4	4	ta dal	td	2		y	126	tiada:111 tadi:7 td:3 today:2 tod:2 tid:1
+MS	L06	4	5	ta dal | tooth ra nun	tdbrn	5	y		1	tadbirnya:1
+MS	L06	5	5	tooth ra nun	srn	3		y	98	siaran:27 sayuran:16 suaranya:7 seruan:4 siren:3 sarana:3
+MS	L06	5	6	tooth ra nun | ta nga	trntN	5			1	terentang:1
+MS	L06	6	6	ta nga	tN	2		y	67	tiang:32 tong:14 tang:5 tayang:4 tiong:2 ting:2
+MS	L06	7	7	ba ra kaf	brk	3	y		87	buruk:43 bergaya:10 brek:8 brooke:6 beregu:3 barak:2
+MS	L06	7	8	ba ra kaf | dal waw	brkd	4		y	35	briged:20 berkuda:9 brigade:4 barakuda:1 brigid:1
+MS	L06	7	9	ba ra kaf | dal waw | ain	brkd	4			35	briged:20 berkuda:9 brigade:4 barakuda:1 brigid:1
+MS	L06	8	10	dal waw | ain | lam dal	dld	3	y		8	adelaide:7 dildo:1
+MS	L06	9	10	ain | lam dal	ld	2			47	lady:13 lada:8 old:5 led:4 laude:2 lidi:1
+MS	L06	10	10	lam dal	ld	2		y	47	lady:13 lada:8 old:5 led:4 laude:2 lidi:1
+MS	L06	11	12	ain lam | kaf lam	lkl	3	y	y	7	legal:3 alkali:2 lokal:2
+MS	L06	12	12	kaf lam	kl	2			828	kali:293 kuala:132 gol:118 kuil:45 wakil:38 kala:37
+MS	L06	12	13	kaf lam | ain lam	kll	3			27	keluli:13 galileo:2 kulal:2 gaulle:2 killi:1 galilea:1
+MS	L06	13	14	ain lam | lam lam	lll	3	y	y	4	lille:2 lilly:1 lully:1
+MS	L06	14	14	lam lam	ll	2			268	lalu:180 all:12 laila:7 lela:7 alel:5 ella:4
+MS	L07	1	1	sin lam lam	sll	3	y	y	68	selalu:47 shell:6 silla:3 salle:2 wasilla:2 shelley:1
+MS	L07	2	2	lam dal	ld	2			47	lady:13 lada:8 old:5 led:4 laude:2 lidi:1
+MS	L07	2	3	lam dal | sin waw	lds	3	y	y	5	leeds:3 leads:1 ladas:1
+MS	L07	3	4	sin waw | lam lam dal	slld	4			1	seluloid:1
+MS	L07	4	4	lam lam dal	lld	3	y	y	1	lloyd:1
+AR	L01	1	2	ha waw | lam dal	hld	3	y	y	6	خالدا:3 أخلد:1 ويخلد:1 خالد:1
+AR	L01	2	2	lam dal	ld	2			355	الذي:251 ولد:16 ولدا:13 والذي:13 الوعد:9 لذو:8
+AR	L01	2	3	lam dal | ha alif hamza	ldh	3			14	العداوة:4 العدة:2 لديه:2 لذة:2 والدة:1 ولده:1
+AR	L01	4	4	sin lam dal	sld	3	y	y	1	صلدا:1
+AR	L01	4	5	sin lam dal | waw	sld	3			1	صلدا:1
+AR	L02	1	1	ha ha2	hh	2			46	أخيه:9 هواه:6 خاوية:5 حياة:4 إخوة:4 وأخيه:4
+AR	L02	1	2	ha ha2 | ta waw	hht	3	y	y	2	هيهات:2
+AR	L02	4	4	ha tooth ya?	ht	2			161	حتى:139 هاتوا:4 أحاط:4 أخت:3 خطأ:2 أوحيت:1
+AR	L02	4	5	ha tooth ya? | tha	hss	3	y	y	1	حثيثا:1
+AR	L02	5	6	tha | alif lam kaf waw	slk	3			10	يسألك:2 سألك:1 سألقي:1 أسألك:1 زلقا:1 سؤلك:1
+AR	L02	6	6	alif lam kaf waw	lk	2			423	أولئك:128 إليك:77 لك:67 عليك:56 وأولئك:25 لقاء:8
+AR	L02	6	7	alif lam kaf waw | ain tha	lks	3	y	y	2	القصوى:1 الأقصى:1
+AR	L02	8	8	ba shin	bs	2		y	71	وبئس:15 بأس:7 يبعث:7 بشيء:6 بئس:5 بعث:4
+AR	L02	11	12	hamza | ba ta	bt	2			78	بآيات:34 بيوت:10 بيوتا:9 أبت:8 بيت:5 بآياتي:4
+AR	L02	12	12	ba ta	bt	2		y	78	بآيات:34 بيوت:10 بيوتا:9 أبت:8 بيت:5 بآياتي:4
+AR	L02	13	13	sin alif ba ain	sb	2		y	64	سبع:14 ثواب:7 شعيبا:7 أصاب:5 ثوابا:4 شعيب:4
+AR	L02	15	15	lam ba alif	lb	2		y	15	البيع:3 ولعبا:3 لعب:3 ويلعبوا:2 لعبا:1 ويلعب:1
+AR	L03	2	2	ta nun	tn	2			154	آياتنا:33 آتينا:19 وأطيعون:11 طين:8 وآتينا:7 وأطعنا:6
+AR	L03	2	3	ta nun | kaf ya alif	tnk	3	y	y	5	آتيناك:2 يأتينك:1 وأتيناك:1 يأتونك:1
+AR	L03	3	4	kaf ya alif | lam kaf alif	klk	3			1	قولك:1
+AR	L03	4	4	lam kaf alif	lk	2		y	423	أولئك:128 إليك:77 لك:67 عليك:56 وأولئك:25 لقاء:8
+AR	L04	2	3	kaf waw | fa nun ain	kpn	3	y	y	10	وقفينا:3 عاكفون:2 عاكفين:2 يعكفون:1 يكفون:1 قفينا:1
+AR	L04	3	3	fa nun ain	pn	2			208	فإن:165 فأنى:11 فإنا:10 فإني:6 فينا:5 أفإن:2
+AR	L04	3	4	fa nun ain | mim waw	pnm	3			36	فإنما:29 فنعم:5 فأينما:1 فنعما:1
+AR	L04	4	5	mim waw | dal hamza	md	2		y	98	يومئذ:50 ماذا:22 موعدا:4 أمدا:3 معاذ:2 عمد:2
+AR	L04	5	6	dal hamza | tooth? tooth sin ya? ra	dsr	3			1	ودسر:1
+AR	L04	6	6	tooth? tooth sin ya? ra	bnsr	4		y	1	بنصر:1
+AR	L04	6	7	tooth? tooth sin ya? ra | kaf mim waw	nsrkm	5	y		8	ينصركم:4 نصركم:3 وينصركم:1
+AR	L04	7	7	kaf mim waw	km	2		y	344	قوم:126 كما:59 قوما:40 كم:12 وأقيموا:11 وكم:9
+AR	L04	8	8	sin ra	sr	2		y	162	سريع:9 شر:9 يسير:8 يسيروا:7 سرا:6 سعيرا:6
+AR	L04	9	9	lam mim ba ya alif	lmb	3	y	y	1	المآب:1
+AR	L04	10	10	kaf fa ra	kpr	3	y	y	266	كفروا:184 كفر:20 يكفر:15 كفار:8 كفورا:7 كفور:5
+AR	L04	11	11	mim mim waw	mm	2		y	139	مما:111 ومما:11 أمم:9 إماما:4 أمما:2 وأمم:1
+AR	L04	12	12	ta dal	td	2		y	34	اعتدى:4 تدع:4 تعدوا:3 تدعوا:3 تضع:3 يتعد:2
+AR	L04	13	13	ba sin ra ta	bsrt	4	y	y	1	بصرت:1
+AR	L05	1	1	kaf sin	ks	2		y	10	يقص:2 أقصى:2 كأسا:2 قصيا:1 وقص:1 وكأس:1
+AR	L05	1	2	kaf sin | sin tooth?	kssn	4	y		3	قصصنا:2 قسيسين:1
+AR	L05	2	2	sin tooth?	sn	2			79	زين:11 شئنا:5 يشاءون:5 وزين:4 زينا:4 صنعوا:4
+AR	L05	2	3	sin tooth? | mim waw	snm	3		y	4	أصناما:2 أصنام:1 زنيم:1
+AR	L05	4	4	mim ha2 mim dal	mhmd	4	y	y	5	محمد:4 محمودا:1
+AR	L05	5	5	kaf sin nun	ksn	3	y	y	3	يقصون:2 قوسين:1
+AR	L06	1	1	sin ra	sr	2			162	سريع:9 شر:9 يسير:8 يسيروا:7 سرا:6 سعيرا:6
+AR	L06	1	2	sin ra | kaf waw	srk	3	y	y	57	شركاء:13 أشركوا:12 يشرك:9 أشرك:5 شركائي:5 شريك:3
+AR	L06	3	3	mim mim waw	mm	2		y	139	مما:111 ومما:11 أمم:9 إماما:4 أمما:2 وأمم:1
+AR	L06	4	4	ta dal	td	2		y	34	اعتدى:4 تدع:4 تعدوا:3 تدعوا:3 تضع:3 يتعد:2
+AR	L06	4	5	ta dal | tooth ra nun	tdbrn	5	y		2	يتدبرون:2
+AR	L06	5	5	tooth ra nun	srn	3		y	45	يشعرون:21 يسارعون:6 يسرون:4 يسرنا:4 يزرون:2 ويسارعون:1
+AR	L06	6	6	ta nga	tN	2		y	6	طغى:4 يطغى:1 وأطغى:1
+AR	L06	7	7	ba ra kaf	brk	3	y	y	5	وبرق:1 بورك:1 وبارك:1 وأباريق:1 برق:1
+AR	L06	9	10	ain | lam dal	ld	2			355	الذي:251 ولد:16 ولدا:13 والذي:13 الوعد:9 لذو:8
+AR	L06	9	11	ain | lam dal | ain lam	ldl	3			16	ليضل:5 الذل:3 الظل:3 ليضلوا:2 لظلوا:1 لأعدل:1
+AR	L06	10	10	lam dal	ld	2			355	الذي:251 ولد:16 ولدا:13 والذي:13 الوعد:9 لذو:8
+AR	L06	10	11	lam dal | ain lam	ldl	3	y	y	16	ليضل:5 الذل:3 الظل:3 ليضلوا:2 لظلوا:1 لأعدل:1
+AR	L06	11	12	ain lam | kaf lam	lkl	3			86	القول:28 لكل:25 ولكل:8 الكيل:7 لكيلا:4 لقالوا:3
+AR	L06	12	12	kaf lam	kl	2			1635	قال:415 قل:290 قالوا:248 كل:241 وقال:83 وقالوا:61
+AR	L06	12	13	kaf lam | ain lam	kll	3	y	y	68	قليلا:55 قليل:10 وقليل:3
+AR	L06	13	14	ain lam | lam lam	lll	3			61	الليل:58 اللؤلؤ:2 والليل:1
+AR	L06	14	14	lam lam	ll	2		y	143	لولا:38 ولولا:24 الأولى:12 لأولي:9 لعلي:7 العلي:6
+AR	L07	2	2	lam dal	ld	2		y	355	الذي:251 ولد:16 ولدا:13 والذي:13 الوعد:9 لذو:8
+AR	L07	4	4	lam lam dal	lld	3	y	y	8	للذي:4 ولوالدي:2 والأولاد:2

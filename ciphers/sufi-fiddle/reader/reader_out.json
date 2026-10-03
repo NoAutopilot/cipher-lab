@@ -1,0 +1,17 @@
+{"items": [
+{"line": "L05", "group_from": 4, "group_to": 4, "arabic": "محمد", "roman": "Muhammad", "language": "Arabic (loan, any Islamic language)", "gloss": "Muhammad (the Prophet, or a personal name)", "confidence": "H", "assumed_misreads": "none"},
+{"line": "L01", "group_from": 1, "group_to": 1, "arabic": "هو", "roman": "huwa", "language": "Arabic", "gloss": "He (God), a common invocation at the head of a text", "confidence": "M", "assumed_misreads": "none; reading depends on it standing alone at the line head"},
+{"line": "L04", "group_from": 7, "group_to": 7, "arabic": "كامو", "roman": "kamu", "language": "Malay / Tausug", "gloss": "you", "confidence": "M", "assumed_misreads": "alif missing or merged; defective spelling is common in Jawi"},
+{"line": "L04", "group_from": 13, "group_to": 13, "arabic": "بسرتا", "roman": "beserta", "language": "Malay", "gloss": "together with, along with", "confidence": "L", "assumed_misreads": "final alif lost or read as the following gap"},
+{"line": "L06", "group_from": 7, "group_to": 7, "arabic": "بركة", "roman": "baraka(t)", "language": "Arabic (loan)", "gloss": "blessing", "confidence": "L", "assumed_misreads": "final ta marbuta/ha not seen, or it sits in the next group"},
+{"line": "L02", "group_from": 13, "group_to": 13, "arabic": "سابع", "roman": "sabi'", "language": "Arabic", "gloss": "seventh", "confidence": "L", "assumed_misreads": "none, but the context does not confirm it"},
+{"line": "L04", "group_from": 10, "group_to": 10, "arabic": "كفر", "roman": "kufr / kafir", "language": "Arabic (loan)", "gloss": "unbelief / unbeliever", "confidence": "L", "assumed_misreads": "possibly an alif missing (كافر)"},
+{"line": "L04", "group_from": 1, "group_to": 2, "arabic": "ڤڠكو", "roman": "pangku / pangkau", "language": "Malay / Tausug", "gloss": "lap, to hold (Malay pangku); unsure", "confidence": "L", "assumed_misreads": "ف read for ڤ (three dots above as one); the gap before كو treated as a transcription split"},
+{"line": "L04", "group_from": 4, "group_to": 4, "arabic": "مو", "roman": "-mu", "language": "Malay / Tausug", "gloss": "your (enclitic); repeats in L04 g11, g15, L05 g3, L06 g3", "confidence": "L", "assumed_misreads": "none"},
+{"line": "L06", "group_from": 6, "group_to": 6, "arabic": "تڠ", "roman": "tang", "language": "Tausug / Malay", "gloss": "particle or word ending in -ng; meaning unclear", "confidence": "L", "assumed_misreads": "none"},
+{"line": "L06", "group_from": 8, "group_to": 8, "arabic": "دوا", "roman": "dua", "language": "Malay / Tausug", "gloss": "two", "confidence": "L", "assumed_misreads": "final alif missing"},
+{"line": "L06", "group_from": 15, "group_to": 15, "arabic": "لا محالة", "roman": "la mahala", "language": "Arabic", "gloss": "inevitably, without doubt", "confidence": "L", "assumed_misreads": "ل read for ا, final م for ة; this is a guess"}
+],
+"overall": "The letter ڠ (nga) appears several times, and ف may stand for ڤ. That points to a Southeast Asian Jawi-type spelling rather than Arabic, Persian or Kurdish. A few Arabic religious words (huwa, Muhammad, baraka, kufr) sit inside short groups that look like Malay or Tausug pronouns (kamu, -mu, kaw). The text could be an amulet or charm formula, or a short devotional or personal inscription. I could not get a running reading, and many of the groups are probably noise or broken words.",
+"language_guess": "A Malay-world language in Jawi script (Malay, or a Philippine Jawi such as Tausug or Maranao), with Arabic religious words mixed in",
+"language_confidence": "L"}

@@ -240,11 +240,50 @@ removed).
 Requests: downloads.wortschatz-leipzig.de 2 (1 HEAD, 1 GET), tanzil.net 2 (1 HEAD, 1 GET), gutendex.com 1 HEAD (not used),
 all >= 3 s apart. Vision calls: 0.
 
-## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93)
-Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet, now matched by both blind passes at L5 g4; graded I).
+## GAPS94-sufi-fiddle (3 Oct 2026, account-4): matched-span dump and one blind Opus Jawi/Arabic reading pass
+
+Step (GAPS93 Verdict). Pre-registered and pushed before the reader call (`reader/PREREG.md`, commit 1015a6a4, with the prompt,
+the render script and the comparison script). (1) `malay-arabic/dump_spans.py` -> `malay-arabic/spans.tsv`: 136 rows (every
+1-3-group span whose skeleton is in the Malay or Arabic list at length >= 2, words with counts, tiling marks); the chosen C3
+tiling reproduces GAPS93 exactly (Malay 27 spans, 90/128 consonants = 0.703; Arabic 20 spans, 67/128 = 0.523). (2) One blind
+Opus 5.5 call, text only, no tools, no image, no word-list results (`reader/prompt_reader.txt`; input `reader/fig1_arabic.txt`,
+the sign names rendered in Arabic/Jawi letters by `reader/render_arabic.py`). Output `reader/reader_out.json`: 12 items
+(1 H, 2 M, 9 L). The reader's own overall view: Jawi-type spelling (nga, possibly fa for pa), Malay-world language (Malay, or
+a Philippine Jawi such as Tausug or Maranao) with Arabic religious words, perhaps an amulet or devotional formula; "I could not
+get a running reading" (language confidence L).
+
+| line, groups | reader's word (gloss) | reader conf | grade | S1: in a chosen C3 span | S2: same word in a list at that span |
+|---|---|---|---|---|---|
+| L05 g4 | muhammad (name) | H | M | yes | AR |
+| L01 g1 | huwa (He, invocation) | M | M | yes | no (skeleton h, under length 2) |
+| L04 g7 | kamu (you) | M | M | yes | MS |
+| L04 g13 | beserta (together with) | L | I | yes | MS |
+| L06 g7 | barakat (blessing) | L | I | yes | no |
+| L02 g13 | sabi' (seventh) | L | I | no | no |
+| L04 g10 | kufr/kafir | L | I | yes | AR |
+| L04 g1-2 | pangku (lap) | L | I | yes | no |
+| L04 g4 | -mu (your) | L | I | yes | no |
+| L06 g6 | tang (unclear) | L | I | no | MS |
+| L06 g8 | dua (two) | L | I | yes | no |
+| L06 g15 | la mahala (inevitably) | L | I | no | no |
+
+Pre-registered statistics (`reader/compare.py`, `reader/compare.json`): **S1 all items 9 of 12 overlap a chosen C3 span, expected
+8.91 under uniform placement, p 0.63; H/M items 3 of 3, expected 2.05, p 0.30** -- no agreement beyond chance, because the
+tiling already covers about three quarters of the visible groups (the statistic has little room to move at this coverage;
+reported, not read as a negative). **S2: 5 of 12 reader words (2 of 3 at H/M) are the very word a list holds at that span**
+(muhammad and kufr in the Arabic list; kamu, beserta, tang in the Malay list); descriptive only, no gate.
+Grades (rule 4): 0 H, 0 C, 0 S, 3 M (muhammad, huwa, kamu), 9 I. The only reading at the reader's own H, Muhammad at L5 g4,
+is the name Bulliet already reported; nothing else reaches a running text. Worth noting, not a finding: the reader's
+independent language view (Malay-world Jawi with Arabic loans) points the same way as GAPS93's word-list result, which the
+reader never saw; both rest on the same transcription (err_2reader 18.5 pct), so this is consistency, not confirmation.
+Calls: 1 text-only subagent call (no vision). Requests: downloads.wortschatz-leipzig.de 1, tanzil.net 1 (refetch of the GAPS93
+sources, sha1 match), both >= 3 s apart.
+
+## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93, GAPS94)
+Read so far: 3 words at M (muhammad L5 g4, huwa L1 g1, kamu L4 g7; GAPS94 text-only reader), 9 at I, 0 H/C/S; no running reading.
 - independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (its holder never identified, Bulliet 2021) and Figure 1 is the same sheet as the folder image, so every image on record is one hand copy
 - language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
-- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; word-list match ran in GAPS90 (Tausug NT FAIL, p 0.09-0.10) and GAPS93 (3 Oct 2026): Malay (Leipzig wiki) C3 0.703 p 0.047, Arabic (Quran 1-77) C3 0.523 p 0.019-0.025, both with control power >= 0.85 at 20 pct noise = pre-registered PASS (Malay marginal, not Bonferroni-robust; malay-arabic/results.json); next: dump the matched spans for both lists and give them with the 7 lines to one blind Opus Jawi/Arabic reading pass (no vision, transcription only), graded per token, ~$3
+- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; text-only blind Opus reader pass done (GAPS94, 3 Oct 2026): 12 items, 3 at M (muhammad L5 g4, huwa L1 g1, kamu L4 g7), 9 at I, no running reading; S1 9/12 vs 8.91 expected (p 0.63), S2 5/12 word-list agreement (reader/compare.json); next: one blind Opus vision reading pass on the 7 Figure 1 line crops (read words from the hand, not signs) compared with reader/reader_out.json by the same S1/S2, ~$4
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
@@ -254,11 +293,11 @@ Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet, now mat
 - [n/a] key-rebuild: no key involved in a script reading
 - [x] image-check: Figure 1 re-transcribed from 2500 px line crops (GAPS87, 3 Oct 2026): err_2reader 18.5 pct, look-alike residual 3.3 pct
 - [n/a] retry: no failed attempt with a changed knob to retry
-Verdict: keep going: 1 internal gaps; cheapest next: dump the GAPS93 matched spans (Malay and Arabic lists) and run one blind Opus Jawi/Arabic reading pass of the 7 transcribed lines against them, every token graded, no vision, ~$3
+Verdict: keep going: 1 internal gaps; cheapest next: one blind Opus vision reading pass of the 7 Figure 1 line crops (words from the hand, not signs), compared with reader/reader_out.json by the GAPS94 S1/S2 statistics, every token graded, ~$4
 
 ## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026)
 
-Nothing here waits on a person for the next step: the zero-dependency action is the blind Jawi/Arabic reading pass against the GAPS93 matched spans (Verdict above; Tausug NT FAILed in GAPS90, Malay and Arabic passed the gate in GAPS93). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
+Nothing here waits on a person for the next step: the zero-dependency action is the blind vision reading pass of the Figure 1 crops (Verdict above; Tausug NT FAILed in GAPS90, Malay and Arabic passed the gate in GAPS93, the text-only reader of GAPS94 read 3 words at M). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 
