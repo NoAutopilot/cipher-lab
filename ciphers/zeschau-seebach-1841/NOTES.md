@@ -168,18 +168,65 @@ Step run: transcribe R5006 p.1 only (the first page of Next step 1).
 Requests: de-crypt.org 2 logins (plus 1 failed navigation before login), 2 RecordsView, 1 thumbnail, 1 full-size =
 about 6, 1.5 s apart. No other host.
 
-## Remaining gaps (GAPS175, 3 Oct 2026)
-Read so far: 501 digits transcribed of about 3,000-3,600 on R5006-R5008 (1 of 6 pages); 0 tokens read
-- R5006 p.2, R5007 p.1-2, R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173, GAPS175); next: one page per worker as GAPS175 (1 login, iiif_lines crops, 2 blind Opus passes x 2 half-pages + 1 reconcile = 5 units at about USD 1.3), ~$7 a page, ~$33 for the five
-- Crib test of Bourdeau's 7 R5005 values on the R5006-R5008 digits - blocker: not-attempted; needs the transcription above first; next: crib + coverage and order-scrambled controls as the bZES brief specified, ~$3
-- Erased pencil decipherment on R5006 p.1 - blocker: illegible; both passes saw only vertical strokes, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
+## GAPS179-zeschau-seebach-1841 (3 Oct 2026, account-4)
 
-## Escalation (3 Oct 2026)
-- [ ] siblings: R5005 is on disk (Bourdeau); R5006 p.2, R5007 and R5008 still to transcribe, one page per worker
-- [n/a] clear-pages: only the clear opening line of each letter is in clear text, so no clear sibling of the cipher body is known
+Step run: transcribe R5006 p.2 (the Verdict line's cheapest step).
+
+- Image: one DECODE browser login (`tools/decode_browser_login.js 5006 <scratch> --guess-fullsize --delay 2000`),
+  4 files: 2 thumbnails, 2 full-size. `IMG_R5006_I28865_P2.jpg`, 7214x5412, sha1 27186d7b5d48, matching the GAPS173
+  table. The full scan stays in the session scratchpad, out of git.
+- Layout (downscaled overview, 1 vision call): p.2 is an open spread. **Only 3 cipher lines**, at the top of the left
+  page. The rest of the left page is clear French (a passage on the estate of a deceased councillor at Moscow,
+  then "Eu égard à la demande de Madame ..."). The right page is clear French, the closing formula, the signature and the
+  address to Seebach at St Petersburg. The clear text is not transcribed here; it is the letter's own clear text,
+  not a gloss of the cipher. GAPS175's "about 600 digits a page" estimate therefore does not hold for p.2.
+- Crops: `python3 tools/iiif_lines.py --image <scratch>/IMG_R5006_I28865_P2.jpg --region 1330,1380,2340,660 --out
+  ciphers/zeschau-seebach-1841/images --prefix r5006p2 --debug` -> "region 2340x660, 3 lines, 3 bands x 1 segments;
+  pitch 214", 3 crops of 2340 px. Overlay checked (`images/r5006p2_lines_debug.jpg`, 1 vision call).
+- Two blind Opus passes, one call each, since all 3 lines fit in one call: A read whole lines; B read overlapping thirds at 2x
+  and joined them itself (overlaps reported, 5-6 digits each). Neither prompt named the other pass's folder.
+  `tools/reconcile_passes.py passA passB --split-chars`: **agreement 191/192 = 99.5%** (err_2reader 0.5%), 1
+  disagreement. L03 col 55: A read `...411216...` and B `...41216...`. On a 6x crop the reconciler sees one downstroke
+  after the 4, with a wide head and an ink blot beside it. Settled to B's single `1`, graded M, alt `11`.
+  Agreed signs read H by both passes: 176 (the reconciler's 177, less the settled sign). Agreed signs where at least one pass read M: 14.
+  The M signs are mostly retouched digits (heavier ink over a first digit: L01 48/54/55/57, L02 30/54), so the
+  writer corrected the cipher on the page. L03 18 (`9`, or `0`+tail) is the main doubtful sign. err_true is not measurable:
+  BENCHMARK-TX.tsv has no item for this hand.
+- Result: **191 digits** (lines 64/63/64) in `transcription/r5006p2_ciphertext.txt` and `transcription/r5006p2_ciphertext.tsv`
+  (H 176 / M 15; same columns as p.1). Raw passes, agreement and disagreements are in `transcription/passes/`. R5006 now has 692 digits
+  (501 + 191), an even total. If p.1's odd count is real, the pairs run across the page break. This is not
+  checked, and no pairing is committed.
+- Pencil: no letters again. Both passes saw only faint grey ticks. Pass B places them *below* the digits (between
+  the digits and the underline flourishes), not above. It saw no show-through on p.2. Pass A logged each whole line as `strokes` (L).
+  The column is still named `pencil_above` for format parity with p.1. Graded M at most.
+- A marginal mark right of L02 ("Sy"/"Sp" with a flourish, both passes) is not a digit and not counted. It sits beside
+  the red marginal note between the two pages (not read).
+- No reading and no crib test.
+
+Requests: de-crypt.org 1 login + 1 RecordsView + 2 thumbnails + 2 full-size = about 6, 2 s apart. No other host.
+Vision calls: 3 by this session (overview, overlay, the reconcile crops), 2 subagent passes.
+
+## Status word (GAPS179, 3 Oct 2026)
+Line 1 stays `blocked`, although the outside blocker it named (no images reachable) is gone since GAPS173.
+`tools/intake_gate_check.py` treats `blocked` as terminal (exit 0, "nothing to gate"). A scratch copy with line 1 set to
+`partial` exits 1. In turn it lacks: (1) a standard-edition citation or full-text phrase on the status line (none exists:
+no printed edition found, bZES); (2) a `## Web and blog check` section; (3) a `## Premise check` section. A check-solved
+worker writing those three is what moves the word to `partial` (~$4.5). Deep transcription has gone ahead under the
+parent's GAPS briefs.
+
+## Remaining gaps (GAPS179, 3 Oct 2026)
+Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2,500-3,000 on R5006-R5008 (2 of 6 pages); 0 tokens read
+- R5007 p.1-2, R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179); next: one page per worker as GAPS179 (1 login, overview, iiif_lines crops, 2 blind Opus passes + 1 reconcile; a 3-line page ran 3 units, a full page 5 units at about USD 1.3 each), ~$4-7 a page, ~$22 for the four
+- Status word - blocker: not-attempted; intake gate needs an edition/full-text line, a Web and blog check and a Premise check (GAPS179 "Status word"); next: check-solved worker, ~$4.5
+- Crib test of Bourdeau's 7 R5005 values on the R5006-R5008 digits - blocker: not-attempted; can run on R5006's 692 digits now, or wait for all six pages; next: crib + coverage and order-scrambled controls as the bZES brief specified, ~$3
+- Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
+
+## Escalation (3 Oct 2026, refreshed GAPS179)
+- [ ] siblings: R5005 is on disk (Bourdeau), R5006 done (GAPS175/179); R5007 and R5008 still to transcribe, one page per worker
+- [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: syllabary crib from the 7 values once R5006-R5008 are transcribed
-- [x] image-check: R5006 p.1 pencil traces checked at native resolution by two passes plus the reconciler, strokes only (GAPS175)
+- [ ] key-rebuild: syllabary crib from the 7 values on the R5006 digits, then R5007-R5008
+- [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: transcribe R5006 p.2 as GAPS175 did p.1, ~$7
+Verdict: keep going: 3 internal gaps; cheapest next: crib test of Bourdeau's 7 values on R5006's 692 digits with both controls, ~$3 (then R5007 p.1 as GAPS179, ~$5)
