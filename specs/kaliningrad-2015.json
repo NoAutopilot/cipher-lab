@@ -254,6 +254,30 @@
    "control": "0.998/0.997/0.995/0.998/0.999, mean 0.997 (gate 0.9 met at 5 seeds)",
    "target": "judge FAIL: score -1.572, real_p05 -0.807, null_p99 -2.075 (position 0.40 between null_p99 and real_p05)",
    "verdict": "control-backed negative for light homophonic German (de20, 1880-1940 register) at convention B, N 1066 K 28; with GOLD-KAL1 (convention A) German homophonic is negative at both conventions. Conditional on Ernst's transcript."
+  },
+  {
+   "test": "5-ru-soft-s3p-A homophonic (convention A, Russian S3' with each softened consonant its own letter, 35 letters)",
+   "date": "3 Oct 2026",
+   "method": "A2P4-KAL4: tools/family_run.py --family homophonic --param profile=target --param alphabet=ru-s3p-soft --cipher ciphertext_signs.tsv --corpus tools/data/ru19_soft/s3p_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9, control before target; judge block alphabet ru-s3p-soft, corpora the same file (restored to de20 afterwards).",
+   "control": "0.936/0.808/0.772/0.994/0.105, mean 0.723 (gate 0.9 not met; not the four-high/one-collapse pattern, no 6th seed)",
+   "target": "not run (CONTROL BELOW GATE)",
+   "verdict": "untested, not excluded: an anneal-control limit at N 978 K 36 over a 35-letter alphabet with 2.97 pct soft letters."
+  },
+  {
+   "test": "5-ru-soft-s3p-B homophonic (convention B, same alphabet; the brief's literal unit, design-mismatched)",
+   "date": "3 Oct 2026",
+   "method": "A2P4-KAL4: tools/family_run.py --family homophonic --param profile=target --param alphabet=ru-s3p-soft --cipher ciphertext_signs_B.tsv --corpus tools/data/ru19_soft/s3p_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9, control before target; judge block alphabet ru-s3p-soft, corpora the same file (restored to de20 afterwards).",
+   "control": "0.999/0.998/0.909/0.999/0.306, mean 0.842 (gate 0.9 not met; a 6th seed cannot clear it: (4.211+1.0)/6 = 0.869)",
+   "target": "not run (CONTROL BELOW GATE)",
+   "verdict": "untested, not excluded. At convention B the apostrophe is its own sign, so a soft letter cannot be one sign; a weaker match than convention A in any case."
+  },
+  {
+   "test": "5-ru-soft-s3-A homophonic (convention A, Russian S3 with each softened consonant its own letter, 37 letters)",
+   "date": "3 Oct 2026",
+   "method": "A2P4-KAL4: tools/family_run.py --family homophonic --param profile=target --param alphabet=ru-s3-soft --cipher ciphertext_signs.tsv --corpus tools/data/ru19_soft/s3_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9, control before target; judge block alphabet ru-s3-soft, corpora the same file (restored to de20 afterwards).",
+   "control": "0.995/0.997/0.988/0.997/0.999, mean 0.995 (gate 0.9 met at 5 seeds)",
+   "target": "judge FAIL: score -1.992, real_p05 -0.859, null_p99 -2.242 (position 0.18 between null_p99 and real_p05)",
+   "verdict": "control-backed negative for light homophonic Russian with each S3-softened consonant its own letter (13.2 pct soft letters), convention A, N 978 K 36. Judge corpus has no fold-count calibration (tools/data/ru19_soft/README.md). Conditional on Ernst's transcript."
   }
  ]
 }

@@ -425,3 +425,38 @@ limit on the Bible corpus, not chased further). The next untried instrument on r
 each softened consonant its own plaintext letter (K 36-37), which first needs an alphabet parameter in
 `tools/homophonic_anneal.py` and the judge's fold (a tool job with an offline test, ~$12) and then two family_run units
 (~$1 each); one worker, no hosts.
+
+## A2P4-KAL4, Russian with each softened consonant its own letter, 3 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2p4-kal4.md` (LANE-A2PUSH4, account 2). Intake gate before deep work:
+`python3 tools/intake_gate_check.py kaliningrad-2015` -> `kaliningrad-2015: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0.
+
+Tool step (commit fbda87f4): a plaintext alphabet option -- `tools/homophonic_anneal.py --alphabet NAME|CHARS`,
+`--param alphabet=` in `tools/families/homophonic.py` (passed through `tools/family_run.py`), a judge-block `"alphabet"`
+in `tools/judge_plaintext.py`, and `tools/translit_ru.py --soft-letters`, which built `tools/data/ru19_soft` (S3'/S3
+Latin with every q merged into the letter before it as one upper-case letter: 35 and 37 letters; rule in its README).
+Offline test `tools/tests/test_homophonic_alphabet.py`: default-alphabet outputs byte-identical to the pre-option code
+(fixture from commit 85a7db4e), a synthetic K-36 cipher over the 35-letter alphabet read back at 0.978, judge PASS on a
+real window and FAIL on it shuffled. Existing homophonic, translit, judge and family_run tests still pass.
+
+Then three pre-registered units (HYPOTHESES.md "A2P4-KAL4", pre-registration commit adb71590 before any run), homophonic
+profile=target, restarts 20, seeds 5, gate 0.9, control before target. Disk and CPU only, no hosts:
+- **5-ru-soft-s3p-A** (convention A, K 36, 35 letters): control mean 0.723, **CONTROL BELOW GATE**, untested.
+- **5-ru-soft-s3p-B** (convention B, K 28, the brief's literal unit; design-mismatched, since at B the apostrophe is its
+  own sign): control mean 0.842, **CONTROL BELOW GATE**, untested (a 6th seed cannot reach 0.9).
+- **5-ru-soft-s3-A** (convention A, K 36, 37 letters): control mean 0.995; target judge **FAIL** (-1.992, real_p05
+  -0.859, null_p99 -2.242; position 0.18). **Control-backed negative**, conditional on Ernst's transcript and on an
+  uncalibrated judge corpus.
+Both numbers per unit also in specs/kaliningrad-2015.json `cheap_test_done`. Status stays `open` (no judge PASS); no
+"Remaining gaps"/"Escalation" sections for an `open` target. Rule 10: nothing here is a reading.
+
+**Next steps.** Cycle-4 rank 6 is now half spent: the S3 softness rule is a control-backed negative; the S3' rule (the one
+whose K matches the target's 36 best) is untested because the anneal's own control does not converge at 35 letters with
+3 pct soft letters (0.723) -- the same kind of control limit restarts alone fixed for 2-ru-s1s-A (GOLD-KAL4). A third
+turn of restarts is not the next step (rule 3's third-attempt clause; this is the second family at this design). The
+genuinely different instrument would be an anneal move set that proposes soft/hard pairs together (swap n<->N as one
+move) or a two-stage solve (base 22 letters first, then the softness split), built with its own offline test, ~$6; or
+a measured judge calibration for ru19_soft (leave-one-book-out FN rate) before trusting any further Russian FAIL, ~$2.
+Verdict: keep going (no outside blocker), but the homophonic family on this target is near exhausted.
+
