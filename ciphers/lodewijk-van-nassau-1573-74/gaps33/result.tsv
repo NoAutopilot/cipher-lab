@@ -1,1 +1,22 @@
 pass	code	n	null_calls	letter_calls	calls	names_tsv_at_occ
+passA.tsv	125	1	1	0	NULL	l
+passA.tsv	139	3	3	0	NULL NULL NULL	NULL NULL -
+passA.tsv	140	4	2	2	y NULL NULL t	- NULL NULL -
+passA.tsv	142	4	3	1	e NULL NULL NULL	- - NULL NULL
+passA.tsv	147	2	0	2	u u	u u
+passA.tsv	149	3	3	0	NULL NULL NULL	NULL NULL NULL
+passA.tsv	GATE	G1 0.840	G2 1.000	q 0.000	value 22/25	PASS
+passB.tsv	125	1	1	0	NULL	l
+passB.tsv	139	3	3	0	NULL NULL NULL	NULL NULL -
+passB.tsv	140	4	2	2	e NULL NULL t	- NULL NULL -
+passB.tsv	142	4	3	1	e NULL NULL NULL	- - NULL NULL
+passB.tsv	147	2	0	2	u u	u u
+passB.tsv	149	3	3	0	NULL NULL NULL	NULL NULL NULL
+passB.tsv	GATE	G1 0.920	G2 1.000	q 0.000	value 23/25	PASS
+recon.tsv	125	1	1	0	NULL	l
+recon.tsv	139	3	3	0	NULL NULL NULL	NULL NULL -
+recon.tsv	140	4	2	2	y NULL NULL t	- NULL NULL -
+recon.tsv	142	4	3	1	e NULL NULL NULL	- - NULL NULL
+recon.tsv	147	2	0	2	u u	u u
+recon.tsv	149	3	3	0	NULL NULL NULL	NULL NULL NULL
+recon.tsv	GATE	G1 0.840	G2 0.960	q 0.000	value 22/25	PASS
