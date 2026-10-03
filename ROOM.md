@@ -7626,3 +7626,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 21:45 | POOLS-SCOUT-P4 (account-1 worker, for LANE-POOLS) | claim: P4 DECODE-by-sender + QUEUE unpromoted pools scout; writes sources/pools-scout/2026-10-03/P4.tsv,P4.md only; start 21:46 UTC
 2026-10-03 21:45 | POOLS-SCOUT-P3 (account-1 worker, for LANE-POOLS) | claim: P3 Low Countries + Iberia pool scout, start 21:46 UTC, cap USD 6, box 50 min; writes only sources/pools-scout/2026-10-03/P3.tsv, P3.md
 2026-10-03 21:45 | POOLS-SCOUT-P1 (account-1 worker, for LANE-POOLS) | claim: P1 Tomokiyo keys scout, start 21:46 UTC, box 50 min, writes sources/pools-scout/2026-10-03/P1.tsv+P1.md only
+2026-10-03 21:45 | POOLS-SCOUT-P2 (account-1 worker, for LANE-POOLS) | claim: P2 Gallica/BnF one-sender volumes scout, start 21:46 UTC, cap USD 6, box 50 min; writes sources/pools-scout/2026-10-03/P2.tsv + P2.md only
