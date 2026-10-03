@@ -1,10 +1,10 @@
 code	value	grade	source	note
-22	de	C	repetition-consistent (align/consistency_search.py), f.206r slip	6 occurrences, each at a "de" of the slip
-66	r	C	repetition-consistent (align/consistency_search.py), f.206r slip	faveu-r, au-r-oient
+22	de	C	repetition-consistent (align/consistency_search.py), f.206r slip	6 occurrences, each at a "de" of the slip; 2nd witness f.216v/f.217r (FT4c gate PASS, 3 occurrences pinned)
+66	r	C	repetition-consistent (align/consistency_search.py), f.206r slip	faveu-r, au-r-oient; 2nd witness f.216v/f.217r (FT4c gate PASS)
 279	plus	C	repetition-consistent (align/consistency_search.py), f.206r slip	2 occurrences, both "plus"
 581	au	C	repetition-consistent (align/consistency_search.py), f.206r slip	3 occurrences: au(x), au(roient), (tout) au
 722	ti	C	repetition-consistent (align/consistency_search.py), f.206r slip	veni-ti-ens, con-ti-nue
-501	et	C	repetition-consistent (align/consistency_search.py), f.206r slip	2 occurrences, both before/after "et"; max-letter statistic prefers "eet" (hongri|eet), word boundary gives et
+501	et	C	repetition-consistent (align/consistency_search.py), f.206r slip	2 occurrences, both before/after "et"; max-letter statistic prefers "eet" (hongri|eet), word boundary gives et; 2nd witness f.216v/f.217r (FT4c gate PASS, before que)
 31	la reine	C	single group between two repetition-fixed groups, f.206r slip	between 22 de and 22 de
 628	hongrie	C	single group between two repetition-fixed groups, f.206r slip	between 22 de and 501 et
 172	quils	C	single group between two repetition-fixed groups, f.206r slip	between 501 et and 581 au: qu'ils

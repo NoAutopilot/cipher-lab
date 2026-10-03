@@ -396,11 +396,48 @@ f.206 key against it. Fixed now so the threshold cannot be chosen after the numb
 - **Order.** First pair to score: f.216v <-> f.217r (largest). Transcription per TRANSCRIPTION.md: line crops with
   `tools/iiif_lines.py`, two blind passes per crop set, reconciliation as a priced unit.
 
-## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, 3 Oct 2026)
-Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b)
-- f.216v <-> f.217r slip pair (about 90 groups) - blocker: not-attempted; located FT4b 3 Oct 2026, same key at grade M by sight; next: transcribe (iiif_lines crops, 2 blind passes + reconciliation) and score the f.206 key against the pre-registered gate above, ~$4
+## FT4c-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (FT4b's Verdict): transcribe f.216v + f.217r and score the f.206 key against FT4b's pre-registered gate, unchanged.
+
+- **Crops** (commands run 04:28-04:29 UTC; canvases 446/447 from FT4b's offset):
+  `python3 tools/iiif_lines.py --ark btv1b525174513 --canvas 446 --region 1700,3330,3034,1870 --out ciphers/naf14913-rousseau-venice-1743/images --prefix f216v --debug`
+  (8 lines, 16 crops; a first cut at width 2950 clipped line 1's last group and was deleted and re-cut) and
+  `... --canvas 447 --region 1100,250,3000,1950 ... --prefix f217r --debug` (9 bands, 18 crops; L01 is the "Lorenzi" header).
+- **Transcription.** `ciphertext_f216v.txt`: 79 groups, 62 distinct (one blind Opus pass on the 16 numeral crops; it
+  agrees with the worker's view of the debug overlay; three unsettled groups kept as a|b: 240|24v, 521|321, 369|569 --
+  none is a C code and none repeats, so none can move H). `slip_f217r.txt`: one blind Opus pass on the 16 slip crops,
+  "...Vienne, porte que la Rép.e de Venise, considerant ... sans rien conclurre avec personne./." (Rép.e expanded to
+  Republique for alignment; 245 letters). The cipher's clear lead "Ma derniere lettre de" is followed by the slip's
+  first word "Vienne". 2 of 3 vision calls used; the reconciliation call was not needed (no unsettled group can affect
+  the statistic).
+- **Pre-registration kept.** `align/gate_pair.py` (the registered statistic, controls and threshold; MAXLEN fixed at 12
+  because the slip has an 11-letter word) and both transcriptions were committed and pushed (36dc751d) before the first
+  score. Nothing in the gate was changed after.
+- **Score** (`align/gate_f216v.out`, `python3 align/gate_pair.py --cipher ciphertext_f216v.txt --slip slip_f217r.txt --n 200 --limit 10`):
+  C-code occurrences in the passage: 22 x3, 66 x1, 501 x1 = **5** (exactly the power floor, so a test, not a non-test).
+  **Real H = 5**, all three codes pinned (22 de, 66 r, 501 et) in a fully consistent exact-coverage segmentation (found,
+  no timeout). Control (a) value permutation, 200 derangements: mean 0.92, **p95 3**, max 4, all 200 hit the time limit
+  and were counted at their highest relaxed-feasible pin set (conservative, high); >= real 0/200. Control (b) pairing
+  shuffle, 200: mean 0.54, **p95 2**, max 4, 50 timeouts counted high; >= real 0/200. **GATE PASS** (H 5 >= 5, > 3, > 2).
+  Thin: the passage carries the floor number of pinned occurrences, and only three of the ten C codes occur.
+- **Key.** 22, 66 and 501 gain a second witness (key.tsv note column; grades unchanged, already C). New codes: none enter
+  key.tsv. `align/forced_f216v.py` (`align/forced_f216v.out`) lists, with the three pins fixed, every chunk each of the
+  12 repeated free codes can take: no code is forced to one value (63 x2 narrows to q/qu/que, "porte que" / "et que";
+  232 to five; the rest 8-29). So the pair passes the key's gate but fixes no new value by itself; the pooled
+  f.206 + f.216v run named in FT4b ("Per-leaf before merging") is the step that can.
+- **Decode.** No reading changed: `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` ->
+  "tokens 62: C 21, M 41 / reading up to date", exit 0 (H 0, C 21, S 0, M 41, I 0). The f.216v passage is not decoded
+  into reading.txt (its codes are not in key.tsv beyond the three).
+- Requests: gallica.bnf.fr 5 (info.json f446, f447; region fetches 446 twice, 447 once; 1.6 s+ apart, all HTTP 200).
+
+Not found in: no print or phrase search was run this step (transcription and scoring only). Rule 10: no novelty class here.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, 3 Oct 2026)
+Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced)
 - f.249v(+249r?) <-> f.250r-v and f.213v(+213r?) <-> f.214r pairs (about 50 and 30+ groups) - blocker: not-attempted; located FT4b, 249r and 213r not yet viewed; next: same as above after the f.216v pair, ~$3 each
 - f.274 slip's cipher passage - blocker: not-attempted; not on 273v/274r/274v/275r at 1000 px (FT4b); next: view 273r and 274r at native resolution for a pasted slip, ~$0.5
+- pooled f.206 + f.216v consistency run - blocker: not-attempted; FT4b "Per-leaf before merging": both pairs now PASS and align/forced_f216v.out shows no code fixed by f.216v alone (FT4c); next: extend align/consistency_search.py to two pairs and run its pairing-shuffle control, ~$2
 - M-graded splits of multi-group stretches (40 codes) and 336 - blocker: open-codes; each occurs once in this passage, a second passage under the same key (now located) can fix them
 - Hatzenberger 2015 read - blocker: waiting-on ASKS row 76; Cairn is DataDome-blocked from the cloud, JSTOR reread stable/24719303 queued (CHECK-NAF)
 
@@ -411,8 +448,8 @@ Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
-- [ ] retry: score the f.206 key on f.216v<->f.217r under the pre-registered gate (FT4b), then pool to lift M codes
-Verdict: keep going: 4 internal gaps; cheapest next: transcribe f.216v cipher (about 90 groups) + f.217r slip and score the f.206 key against the pre-registered gate, ~$4
+- [ ] retry: f.206 key scored on f.216v<->f.217r under the pre-registered gate (FT4c): PASS, H 5; still to run: f.206 + f.216v pooled consistency run to lift M codes (script only)
+Verdict: keep going: 4 internal gaps; cheapest next: pooled f.206 + f.216v consistency run with its pairing-shuffle control (script only), ~$2
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
@@ -422,3 +459,8 @@ ciphers/naf14913-rousseau-venice-1743 --check` -> "reading up to date", exit 0. 
 Checks (FT4b, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 4 internal gap(s), 1 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
 "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. Status stays partial; no reading changed.
+
+Checks (FT4c, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
+keep going: 4 internal gap(s), 1 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
+"partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. `python3 tools/decode_key.py
+ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 21, M 41 / reading up to date", exit 0. Status stays partial.
