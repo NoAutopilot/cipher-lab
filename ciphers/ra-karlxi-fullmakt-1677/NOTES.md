@@ -270,3 +270,29 @@ its inserted full powers is the next step, about 6 be-api/reader requests. The B
 other recipient-side lead.
 Requests: be-api.us.archive.org 15, archive.org metadata 1, scienceblogs.de 1, cryptiana.blogspot.com 1, theses.cz 1,
 github.com clones shared with the other three GF-A2-8 targets, WebSearch 7.
+
+## Page read, Emperor-Sweden instrument (A2P4-KARL, 3 Oct 2026)
+
+Step named in the Premise check: be-api full-text search inside *The Consolidated Treaty Series* vol. 15
+(`consolidatedtrea0015cliv`, Parry, Oceana 1969), by script; no page images, no vision. be-api returns snippets with
+`page_num` equal to the item's imagecount (518), so no printed-page citation is possible (CLAUDE.md IA note).
+- **Positive control (reproduces):** the Emperor-Sweden instrument is in this volume: "Peace between the Emperor,
+  Empire and Sweden, signed at Nimeguen, 5 February 1679 ... Latin original" (3 snippets); a Latin dated
+  "Neomagi septimo Feb. 1679"; "Plenipotentiarios" 5 snippets with "constituimus nostros Legatos Extraordinarios &
+  Plenipotentiarios" (full-power wording inside the 1679 instruments); "Vandalorumque" 4 snippets, among them
+  "Carolus Dei gratia Suecorum, Gothorum, Vandalorumque Rex" and "Domini Caroli XI ... Legatis". So the volume does
+  print Karl XI-named instruments of this congress; the search can see them.
+- **Target phrases, 0 hits:** "Naes", "Nesae/Nesiae/Nesa", "Maii/Maji 1677", "Oxenstierna" (OCR long-s variants not
+  all tried). Earlier pass: "Benedictum Oxenstierna", "Sacram Caesaream Majestatem" also 0.
+- Reading: nothing in CTS 15 matches the 6 May 1677 Nääs full power or a cipher passage by these searches. Not found
+  in CTS 15 by snippet search, conditional on its OCR (long-s) and on the full power possibly sitting under other
+  wording. Whether the Swedish instruments inside CTS 15 carry a different full power (the 1679 one) was not read
+  page by page; that needs a loan reader (person) -- loan pages are obfuscated for scripts.
+- Not done: *Actes et mémoires ... Nimègue* (1680) and Dumont, *Corps diplomatique* vol. 7 (not searched: be-api
+  502 x3 and one timeout after the 17th request; stopped per the one-retry rule). Bakeš thesis still unread.
+- Requests: be-api.us.archive.org 21 (4 failed: 3x HTTP 502, 1 timeout; one 20 s pause retry), no other host.
+  Vision 0, subagents 0. No hit is a printed text or decipherment of the target: status stays `open`.
+
+Next step: retry be-api (Actes de Nimègue 1680, Dumont *Corps diplomatique* t.VII pt.1) in a later session; ~6 requests.
+While waiting: grep the Bakeš thesis full text (theses.cz file download) for "1677"/"Nääs"/"fullmakt".
+Verdict: open unchanged; keep going on the recipient-side print check (CTS 15 negative by snippets, two editions unsearched).
