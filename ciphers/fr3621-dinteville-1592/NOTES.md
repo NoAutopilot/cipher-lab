@@ -723,28 +723,80 @@ transcribed. Manifest snapshot `sources/gallica-manifests/btv1b525245007.json`.
 Requests: archivesetmanuscrits.bnf.fr 4 (home, search, Cote facet, item page), gallica.bnf.fr 10 (9 SRU, 1 manifest),
 catalogue.bnf.fr 1; >= 2 s apart, no block. Vision calls 0. Rule 10: no novelty claim.
 
-## Remaining gaps (DIN-LEFT, 3 Oct 2026; supersedes DIN-FIRM's list)
+## f.128 `0` image look; fr.3623 f.23r sign set (DIN-3623, account 1, 3 Oct 2026, 09:44-09:55 UTC)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-din-3623.md`. Both decision rules were committed before the images they
+govern were viewed: `look/PREREG.md` (69996695 unit 1; a91639dc units 2-3, written after the 808 px overview and before
+any line crop was read). Vision calls 3: (1) this worker's one look at `look/f128_0look_sheet.jpg` (the six existing
+f.128 line crops L03-L05 s1/s2 stacked over f.130's `images/zoom/f130_L02_s1_z.jpg`, which holds two 0' read H);
+(2) this worker's look at `f3623/f23rv_overview.jpg` (f55 and f56 at 808 px); (3) one blind Sonnet subagent pass on the
+16 f.23r line crops (`f3623/inventory_passA.md`).
+
+**1. f.128 `0`: undecided under the pre-registered rule; nothing changes.** On f.130 the 0' is a zero with a stem
+rising from it and curling over (it can look like a d or a ∂). On f.128 three of the seven conflicting `0`s have
+that shape: L05.1:7 (prendre p, the zero after v in "w 0 0 v 0 w"), L05.1:28 (uesoul s, "m o 0 y a", reads like
+"mo∂ya") and L05.1:55 (descorte s, "3 1 . 0 # y c"). The other four look like plain round zeros at this crop
+resolution: L03.1:13 (descendre c, "sq 0 0 f"), L03.1:45 (despaigne p, "# 0 sq 0 v"), L04.1:2 (besancon s,
+"div 0 0 D") and L05.1:4 (iours s). The e-reading zeros seen in the same crops (for example L05 "f 3 c 0 4") are plain.
+The rule needs at least 4 marked for "merged", so the result is **undecided**: 3 marked, 4 plain. Grade I, not used:
+the stemmed zero does occur on f.128 (passA had already written one `0'` in L03, which the reconciliation folded into
+`0`), and every marked occurrence reads s or p. So 0' may be a sign for s/p that the f.128 transcription merged into
+`0`, while the four plain non-e zeros would still be unexplained. Strict grades unchanged (C 177 / M 311 / U 39);
+no file under firm/ or f130/ touched. Settling this needs native-resolution sub-crops of each of the 7 positions
+(in particular the four "plain" ones in L03/L04, whose tops may carry a faint stroke this resolution misses).
+
+**2. fr.3623 f.23r: a Dinteville cipher slip with an interlinear Italian decipherment; same sign family on a
+low-confidence pass.** f.23r (canvas f55) carries a slip pasted on the leaf, numbered 214: about six cipher lines,
+each with a small-hand Italian decipherment written above it ("dopo il dispaccio fatto li ... receuuto ... di monsiur
+... quali li mando ... de la leuata de suizzeri non e pronta ... partir sabato prossimo ... caualli et denari ... la
+supplico mandar bona scorta ... su la strada ..."), the closing "... humble et obeissant serviteur", the
+signature "Dinteville" and a line under the signature dated at Langres ("del angres il 2 ottobre", read at 808 px; the
+day and year are not settled). f.23v (canvas f56) is blank apart from an endorsement or address strip.
+This was read from the overview only; the gloss was not transcribed.
+Crops: `python3 tools/iiif_lines.py --ark btv1b525245007 --canvas 55 --region 560,1780,2950,1560 --out
+ciphers/fr3621-dinteville-1592/f3623 --prefix f23r` (one native fetch), re-cut from the local file with `--image ...
+--distance 70 --prominence 30 --lines-per-crop 2 --max-width 1600` -> `f3623/f23r_L01..L08_s1/s2.jpg` and the debug overlay.
+One blind pass (the reader itself called it low-confidence) gave about 300 tokens. About 270 of them took an
+f.128/f.130 label. About 25 took two labels the reader coined, u (a cup sign, perhaps v) and q (loop and tail, perhaps
+p or y), and about 5 were unreadable. That puts about 90% of tokens on existing labels. **All 20 of f.130's 20 commonest
+types occur** (v' only once, and as a guess); 0' occurs about 10 times; II, T, 9, r, h and B were not seen.
+Pre-registered rule: **same family** (>= 85% of tokens on existing labels, >= 70% of the top-20 types). Caveat,
+recorded here: the reader was handed the f.128/f.130 label list, which biases any reading toward those labels. The
+counts are rough (+-15%), so this is a family resemblance at grade I, not a shown key identity. The text is Italian
+while f.128/f.130 are French. A shared key would still have to be shown by alignment.
+
+**Next step (written, not run): f.23r alignment job.** Do two blind sign passes on the 6 cipher lines, using
+per-line crops from the files above. Transcribe the interlinear Italian gloss once per line. Then reconcile, and align
+with `tools/interlinear_align.py`, using a rotated-gloss null as in A2-DIN. After that, test f.128/f.130's
+key_print values on the aligned pairs, and read off 0' (about 10 tokens) and v'. Price: 6 lines x 2 passes = 12
+vision calls, plus 1 gloss pass and 1 reconciliation, so 14 calls x ~USD 1.5 = ~21, plus a ~USD 5 floor: **cap ~USD
+26, box 75 min**. A cheaper first step (~USD 6): one native-resolution look at the cipher line holding the most 0'
+together with its gloss, to see whether 0' sits under s/p letters.
+
+Requests: gallica.bnf.fr 3 (two 808 px images, one native region), >= 2 s apart, no block. Rule 10: no novelty claim.
+
+## Remaining gaps (DIN-3623, 3 Oct 2026; supersedes DIN-LEFT's list)
 Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4; conflict rows sq, m, 0 and a all checked per occurrence, none promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line read, 4 July 1592
 - f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t), m (u/t) and 0 (e/s/p/c, DIN-LEFT) read more than one letter; next: a word-division pass with #, v, m and 0 read in context and graded I, ~$4
-- `0` on f.128: one sign or two merged (DIN-LEFT: non-e readings sit in doubled 0 and after sq) - blocker: not-attempted; the alignment cannot tell a merged sign from a polyphone; next: one image look at the 7 conflicting 0 occurrences on f.128 crops (L03.1, L04.1, L05.1) against f.130's 0', disk only, ~$3
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (canvas f55/f56 located, DIN-LEFT), ~$4
+- `0` on f.128: one sign or two merged - blocker: not-attempted; DIN-3623's look was undecided (3 of 7 conflicting zeros have f.130's stemmed 0' shape, 4 look plain at line-crop resolution; look/PREREG.md); next: native-resolution sub-crops of the 7 positions (tools/iiif_lines.py --ark btv1b52524472n --canvas 265), one look, same rule, ~$5
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; fr.3623 f.23r is a Dinteville cipher slip with an interlinear Italian decipherment, same sign family on a low-confidence pass, 0' about 10 times (DIN-3623, f3623/inventory_passA.md); next: f.23r alignment job (2 blind passes + gloss + reconciliation + interlinear_align, rotated-gloss null), ~$26
 - fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; catalogue ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch; fr.4718 to be added by the parent); not on Gallica
 - "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed; Gallica fr.4075 is a 1613-41 Coeuvres volume) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read (ASKS row to be filed by the parent if wanted)
 
-## Escalation (DIN-LEFT, 3 Oct 2026; supersedes DIN-FIRM's list)
+## Escalation (DIN-3623, 3 Oct 2026; supersedes DIN-LEFT's list)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2); fr.4718 catalogue read, three more Dinteville cipher-with-decipherment items found at fols. 17, 21, 40 (DIN-LEFT)
-- [ ] clear-pages: fr.3623 f.23 located (canvas f55/f56), sign set not yet compared; fr.4718 fols. 17/21/40 not online (reproduction order)
+- [ ] clear-pages: fr.3623 f.23r is a cipher slip with an interlinear Italian decipherment, same sign family on one low-confidence pass (DIN-3623); alignment not yet run (~$26); fr.4718 fols. 17/21/40 not online (reproduction order)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
 - [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence, none promoted
-- [ ] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, A2-DIN2); date line read 4 July (orchestrator); f.128's `0` occurrences not yet re-looked at for a merged sign
+- [ ] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, A2-DIN2); date line read 4 July (orchestrator); f.128's 7 conflicting `0`s looked at once at line-crop resolution, undecided 3 stemmed / 4 plain (DIN-3623); native sub-crops next
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps; cheapest next: one image look at f.128's seven conflicting `0` occurrences (~$3, disk only), then fr.3623 f.23's sign set at canvas f55/f56 (~$4); fr.4718 fols. 17/21/40 to the BnF reproduction batch (ASKS row 78)
+Verdict: keep going: 3 internal gaps; cheapest next: native sub-crops of f.128's 7 conflicting `0`s, one look (~$5), then the fr.3623 f.23r alignment job (~$26, the key source for 0'/v'); fr.4718 fols. 17/21/40 to the BnF reproduction batch (ASKS row 78)
 
 ## While waiting
 
-- fr.3623 f.23 sign-set comparison at Gallica btv1b525245007 canvas f55/f56 against f128/gloss_pairs.tsv and f.130's v', 0' and NEW signs (~$4); fr.4718 fols. 17/21/40 wait on the BnF reproduction order
-- f.128 `0` image look at the seven conflicting occurrences (disk only, ~$3)
+- fr.3623 f.23r alignment job (Gallica btv1b525245007 f55, crops in f3623/; ~$26) -- depends on nobody; fr.4718 fols. 17/21/40 wait on the BnF reproduction order
+- f.128 `0` native sub-crop look at the seven conflicting occurrences (~$5)
 
 ## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
 
