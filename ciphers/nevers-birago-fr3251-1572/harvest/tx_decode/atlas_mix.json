@@ -1,0 +1,68 @@
+{
+ "two_pass": {
+  "top1": {
+   "n": 388,
+   "err": 0.0722,
+   "err_U": 0.1031,
+   "truth_in_lattice": 0.933
+  },
+  "lattice_lam4": {
+   "n": 388,
+   "err": 0.067,
+   "err_U": 0.0979,
+   "truth_in_lattice": 0.933
+  },
+  "rank_z_lattice": [
+   1,
+   4.09
+  ],
+  "rank_z_top1": [
+   1,
+   4.57
+  ]
+ },
+ "atlas": {
+  "top1": {
+   "n": 388,
+   "err": 0.3918,
+   "err_U": 0.3918,
+   "truth_in_lattice": 0.7036
+  },
+  "lattice_lam4": {
+   "n": 388,
+   "err": 0.3814,
+   "err_U": 0.3814,
+   "truth_in_lattice": 0.7036
+  },
+  "rank_z_lattice": [
+   1,
+   3.03
+  ],
+  "rank_z_top1": [
+   1,
+   3.06
+  ]
+ },
+ "mix_0.8_0.2": {
+  "top1": {
+   "n": 388,
+   "err": 0.067,
+   "err_U": 0.0979,
+   "truth_in_lattice": 0.9459
+  },
+  "lattice_lam4": {
+   "n": 388,
+   "err": 0.067,
+   "err_U": 0.0954,
+   "truth_in_lattice": 0.9459
+  },
+  "rank_z_lattice": [
+   1,
+   3.88
+  ],
+  "rank_z_top1": [
+   1,
+   4.55
+  ]
+ }
+}

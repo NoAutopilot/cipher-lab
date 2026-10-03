@@ -2138,7 +2138,19 @@ pre-registered lam 1 failed there. Candidates for a verifier, not results:
 - f.168: `cheisisafacuanuatomoltoconlorialtehesopraquellopaftisolechenguantoilprocederesisiitantoastidiisaamemadatosaelfefoiiilifoquellom...`
 - f.117r: `mguilamulguenpsenuaardesannintentiondeconueniraunspoursuoisngouerneentdepirceguisestpersoreguiserendroitsusfacile...`
 
-Next: (1) re-run the no.87 known answer and these three letters on TX-ATLAS-B72's top-k when it lands, since that is the
-test of whether the candidate set, not the decoder, limits the gain (~$1, disk only); (2) a verifier pass on the
+**With TX-ATLAS-B72's top-k (landed during this job; `harvest/tx_decode/atlas_mix.py`, `atlas_mix.json`).** Scored on the
+atlas's 388 held-out no.87 signs (`atlas/no87_box_token.tsv` split heldout; the atlas vote excluded them; lam 4; NB those
+lines overlap the f178v L01-L11 lines lam was tuned on, so this is not held out from the lam choice):
+
+| lattice | top-1 err / +U | lattice err / +U | truth in lattice | key rank / z (lattice; top-1) |
+|---|---|---|---|---|
+| two-pass | 0.0722 / 0.1031 | 0.0670 / 0.0979 | 0.933 | 1 / 4.09; 1 / 4.57 |
+| atlas only (k1-k3, vote share) | 0.3918 / 0.3918 | 0.3814 / 0.3814 | 0.704 | 1 / 3.03; 1 / 3.06 |
+| two-pass 0.8 + atlas 0.2 (weight fixed before the run) | 0.0670 / 0.0979 | 0.0670 / 0.0954 | 0.946 | 1 / 3.88; 1 / 4.55 |
+
+On this hand the atlas adds about 1 point of coverage and about 1 sign in 400 of accuracy. The decoder then recovers about
+half a point. Neither is near the 5% target. The rest of the error is signs that neither reader nor atlas offers. Next:
+(1) the three re-tests above with the 0.8/0.2 atlas mix (atlas/topk/no73.tsv, no85.tsv, fr3252-no77.tsv; ~$1, disk only),
+recording whether rank 1 holds; (2) a verifier pass on the
 changed positions of f.144r against the image crops, each graded S or rejected (~$2, one vision call per letter on the
 changed tiles only).
