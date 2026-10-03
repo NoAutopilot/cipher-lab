@@ -691,3 +691,8 @@ Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; 
 - [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2); foot of f269 viewed for the date (DIN-FIRM); whole leaf at 808 px, date line located at y 4060-4160 and cut, not yet read (TWO-LOOKS)
 - [n/a] retry: no failed instrument on this target to retry yet
 Verdict: keep going: 5 internal gaps; cheapest next: one look at the cut date-line crops images/f130_dateline2_L01_s1/s2 (~$1.5, disk only), then fr.3623 f.23's sign set for v' and 0' (~$4)
+
+
+## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
+
+One look at TWO-LOOKS' crop images/f130_dateline2_L01_s1.jpg (Gallica f269, y ~4060-4160), zoomed: "... De Langres le iiij^e Juillet 15[92]". After a long lead-in stroke the day numeral has four minims, the last with a j descender, and a superscript e: iiij, i.e. **4 July 1592**. This agrees with the BnF Catalogue (1868) and the 1882 Revue de Champagne; Bourdeau's iij appears to drop one minim. Confidence: fairly high, not certain (minims in a cursive hand). Headings that say 3 July should read 4 July; the status.json result is updated.

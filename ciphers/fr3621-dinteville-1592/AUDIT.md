@@ -357,3 +357,8 @@ date stays iij (Bourdeau) / iiij (prints), unread on the leaf. **Correction to t
 cites fr.4718 f.76 (Dinteville to Nevers, 8 July 1592) without calling it deciphered. The "lettre déchiffrée" is fr.4075
 f.37, on the 1589 Chaumont intrigue, writer unnamed. Gallica's Français 4075 (btv1b9060550k) is a 1613-41 Coeuvres copy
 volume, so that shelfmark does not fit as printed. See NOTES.md "DIN-FIRM".
+
+
+## Date note (orchestrator, 3 Oct 2026)
+
+The date line (images/f130_dateline2_L01_s1.jpg) reads "le iiij^e Juillet": 4 July 1592, as the 1868 BnF catalogue and the 1882 print give. No change to the class or grades.
