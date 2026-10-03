@@ -114,3 +114,24 @@ interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions
 Next action that depends on nobody: one DECODE browser login (`tools/decode_browser_login.js 1411 ...`) to fetch
 R1411's images, check the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (same fascicle,
 ff. 174-212), and confirm whether R1411 is one of their letters' copies or drafts before any transcription.
+
+## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
+
+Step run: NEXT-STEPS.tsv row 42 ("27 Ferdinand III letters and the 2017-10-07 Thomas Ernst follow-up"). That row is a
+parse artefact: `tools/next_steps.py`'s next-step regex (line 79) matched the word "follow-up" in the Web and blog
+check above, whose own sentence already says these are Ferdinand III's own letters, not this fascicle. Run anyway as
+a cheap check, since the comment threads had not been read for this item.
+- Top 50 no. 27 (scienceblogs.de/klausis-krypto-kolumne/2017/07/07/...-27-ferdinand-iiis-encrypted-letters/): a
+  1640-07-20 letter from Ferdinand III to his brother Leopold Wilhelm (supplied by Leopold Auer) and a second of
+  1641; numbers plus geometric-symbol pairs. No archive shelfmark given in the post.
+- Follow-up 2017-10-07 (.../top-50-crypto-mystery-solved-thomas-ernst-deciphers-fredinand-iiis-encrypted-letters/):
+  Ernst's solution (symbol = count of its strokes, AEIOU vowel pattern, "PICCOLOMINEA"). No shelfmark.
+- Post body and comment threads of both, searched for Kt. 14 / Fasz. 20 / f. 182-192 / R1411 / Chodkiewicz /
+  Maximilian II / Poland 1574-75: **not found**. The letters are 1640-41 private Habsburg correspondence in a
+  numbers+symbols design; this record sits inside a run of 1574-75 Polish-election letters (Premise check (c)).
+  Not found to be the same item; R1411's images were not seen this pass, so the design comparison is not made.
+No decipherment of R1411 found. Requests: WebSearch 1, scienceblogs.de 2. Vision calls 0. No DECODE login.
+
+Next step: one DECODE browser login (`tools/decode_browser_login.js 1411 <dir>`) to fetch R1411's images and check
+the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (ff. 174-212), per "While waiting" above;
+~$2, one login per session.
