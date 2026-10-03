@@ -1,0 +1,23 @@
+# fr4715-vieuville-pool no.28 f.51r interlinear glosses, A/B agreement only (GAPS-fr4715-vieuville-pool-13, 3 Oct 2026). Passes A (forward, witness/f51r_gloss_pass_a.tsv) and B (reverse, witness/f51r_gloss_pass_b.tsv), Opus 5.5 blind, 57 band crops (scripts/cut_f51r_gloss_bands.py).
+# NO reconciliation call was run (the box would have crossed 80 pct): disputed sites are NOT settled, they stay L. grade (rule 4): C = A and B agree on code and gloss; M = A and B agree on the gloss and share the code, but one reads the code, mark or span differently, or one pass reads the gloss only in part; L = the passes disagree on the gloss or the code, or only one pass sees it.
+# gloss = as read (B's spelling where B is H, else A's); not normalised to any decode. kind: span = gloss over a letter-cipher run; word = gloss beside a word-code; insert = over clear text.
+site	code	mark	gloss	grade	kind	witnesses
+S01	22	bar?	Soissons	C	word	A08 Soissons H, 22 bar H / B09 Soissons H, 22 none H (bracket line to 22)
+S02	50 23 30	none	legat	C	span	A05 legat H over 50 23 30 / B14 legat H over 50 23 30 25 95; letter key: leg
+S03	50 23 30	none	du legat	M	span	A06 du legat H over 50 23 3(3?) / B15 du legat H over 16 50 23 30 25 95 16; letter key: leg
+S04	34	bar	Amyens	M	word	A09 Amyens H below the barred pair 34 70 / B10 Amyens M below barred 34 (circled 8 before)
+S05	34	bar	Libourn	M	word	A15 Liberu L, 34 alt 39 / B03 Libourn M, 34 (written 3q); gloss left/above, adjacency
+S06	44	bar	Roy	M	word	B06 Roy H directly over barred 44, B07 ?roy L over a second 44 / A13 R..y L over barred 44, A12 vass? L (flourish?) over 44
+S07	20 05 93 30	dot	fongasse	M	span	A04 fongasse H over 05 93 30 (20 may be included) / B13 Fougasse H over 20 05 93 30 25 03 30 49 23; letter key f?ug (05 not in the key)
+S08	26	-	cardinale	L	word	A02 Cardinale M over dotted 44 of 93 26 44 / B16 cardinale M right of 26; code disputed
+S09	50	-	Fossi	L	word	A16 Fosai c L over 30 (alt 50) / B02 Fossi L over 5o (50?)
+S10	27	bar	n?lis	L	word	A14 nalism L / B04 nerlis? L
+S11	37	bar	V....	L	word	A07 V?izaure L / B12 Vnegneu L
+S12	3299	-	-	L	word	A01 & vous H / B18 Rouen M: gloss disputed
+S13	45	two dots	-	L	word	A03 Novembre M over 45 / B17 en Nrruve L over 25 45
+S14	7 or 70	bar	-	L	word	A10 Noyon et la F?asthe L from 70 / B11 n?anc? ou ce Larsastre L from 7
+S15	49	dot	Roy	L	word	B05 only (Roy H, assignment M; a long bar over the clear 'sagui' before it); A has no gloss here
+S16	run L41-42	dots	del 5r faict de la ligue	L	span	A18 / B01 (..2 sel sr faict reliqu.); per-group alignment not recoverable
+S17	26 44	bar	Sol	L	word	A17 only, written on the main line
+S18	35	bar	47 ch?	L	word	A20 only
+S19	-	-	-	L	insert	A19 ?ernaba; A21 Espa.. Bourg.. aupres probez (bottom margin); B08 its ebrosu (underlined clear text?)

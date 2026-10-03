@@ -18,3 +18,8 @@ HYPOTHESES.md.
 - no.37 f.60r (Montholon, Tours, 12 Dec 1589): "nauarre?" over a barred 27 at two sites (L01, L20), grade M (key_wordcodes_f60r.tsv; nemours not excluded there).
 - no.58 (Tomokiyo's alignment): '27 = les (dot-marked).
 Not resolved by majority (rule 4): both period glosses are M, the leaves have different senders (Jerome de Montholon vs the Sr de Montholon) and different dates, and f.44r's glosses tie their own per-leaf shuffle control (2/2 vs p95 1.000). On no.44, .27 stays M "nauarre?" from f.60r, with Neuers as the f.44r alternative; no key row changed.
+
+## GAPS-fr4715-vieuville-pool-13 (3 Oct 2026, account-4): no.28 f.51r gloss conflicts, logged only
+- 44 = Roy (f.51r, M) vs 7 = Roy (f.60r, C): two codes for one gloss; a nomenclator may give the king two codes, or one gloss is misplaced. Not merged.
+- 34 glossed twice on f.51r with two different words (Amyens S04, Libourn S05): a within-leaf conflict (the f50r_gloss_control.py within-leaf statistic 1/2, a tie with its shuffle p95 0.500). 34 not keyed.
+- dotted 49: f.50r Champagne (two dots, gloss H both passes, leaf did not clear) vs f.51r Roy (pass B only, L, gloss placed between 'agui' and 49). Neither is keyed; no.44 .49 stays I.

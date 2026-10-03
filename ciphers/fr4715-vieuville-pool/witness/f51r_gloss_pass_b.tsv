@@ -1,0 +1,52 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+B01	f51r_g17_s2;f51r_g18_s2;f51r_g17_s1	..2 sel sr faict reliqu.	L	24 23 73 ?5 12 13 60 70 23 12 2?	dots	M	Mais leur armee est	Dieu veulle	writing between run and line above; partly heavier hand; may be partly main-text insertion, not a clean gloss; spans whole numeric run
+B02	f51r_g16_s1;f51r_g17_s1	Fossi	L	5o (50?)	none	L	jeunesse (:)	a Pele	gloss over oddly written group after a circled sign; group may be 50 or letters 'Fo'
+B03	f51r_g14_s1;f51r_g13_s1	Libourn	M	34	bar	M	assemblee	a venir a 7	gloss sits left/above the barred group (written '3q'); assignment by proximity
+B04	f51r_g11_s2;f51r_g10_s2	nerlis?	L	27	bar	H	fevrier	Mais de	gloss starts right after bar over 27; last letters unclear
+B05	f51r_g10_s3;f51r_g11_s3	Roy	H	49	dot	M	st agui	ira a c..	gloss preceded by long bar over 'sagui'; Roy sits between agui and 49; assignment M
+B06	f51r_g10_s3;f51r_g10_s2	Roy	H	44	bar	H	naigement	quil	bar crosses gloss and code; Roy written directly over 44
+B07	f51r_g10_s2;f51r_g10_s1	?roy	L	44	bar	H	et aussi	par lettres	long bar then faint gloss ending 'oz'/'oy'; second occurrence of 44
+B08	f51r_g10_s1;f51r_g09_s1	its ebrosu	L	26	none	H	(line above) ...	a cestuy Mr	underlined word above-left of 26; may be underlined clear text rather than a gloss
+B09	f51r_g08_s2;f51r_g07_s2	Soissons	H	22	none	H	glaber	que je	gloss with bracket line running to 22
+B10	f51r_g07_s2;f51r_g08_s2	Amyens	M	34	bar (circled 8 before)	M	assemect	7 y decouvrir	gloss written BELOW the group (between lines, above '22 que je'); circled 8 precedes 34
+B11	f51r_g07_s2;f51r_g07_s3	n?anc? ou ce Larsastre	L	7	bar	H	(8) 34	y decouvrir aud.	heavy gloss starts over 7 and runs on over clear text; may cover more than one item
+B12	f51r_g07_s2	Vnegneu (Verneu..?)	L	37	bar (circled 8 before)	H	espouvante	a donne	heavy gloss right of bar; first letter V certain, rest uncertain
+B13	f51r_g02_s2;f51r_g01_s2	Fougasse	H	20 05 93 30 25 03 30 49 23	none	M	sest parti	p.d	gloss spans several groups of a numeric run
+B14	f51r_g02_s3;f51r_g02_s2;f51r_g01_s3	legat	H	50 23 30 25 95	none	H	au retz s.y Le	qui ne quil	gloss over run after 'Le'/'Leba'
+B15	f51r_g01_s3	du legat	H	16 50 23 30 25 95 16	none	M	paluau	quatre	gloss over start of run; same run 50 23 30 25 95 as B14
+B16	f51r_g01_s1	cardinale	M	26	none	H	93	parle	gloss written just right of 26 over clear text; assignment by proximity
+B17	f51r_g01_s1;f51r_g02_s1	en Nrruve	L	25 45	none	H	passe 6	ch	gloss (small 'en' + heavy word) above 45 and following clear text
+B18	f51r_g01_s1	Rouen	M	32 99	none	H	depasse	a ce	heavy gloss above '32 99' (may be one group 3299); nearby heavy 'alle' on line below looks like an insertion over clear text, not a gloss
+B19	f51r_g19_s1	-	-	25	bar	M	de S	(next word)	unglossed
+B20	f51r_g18_s3;f51r_g18_s2	-	-	2	strokes	M	fai,	as 50 afain	stroke from 2 over 'as'
+B21	f51r_g17_s1;f51r_g18_s1	-	-	19 52 50 50 74 64 24	dots	M	pour	23 73 (run)	dots over 19, 50, 74, 64, 24 in a numeric run; no gloss
+B22	f51r_g16_s3;f51r_g17_s3	-	-	26 44	bar	H	considerer de	Belz	bar over both
+B23	f51r_g15_s1;f51r_g14_s1	-	-	7	bar	H	(line start)	Francois	barred 7 at left margin
+B24	f51r_g14_s2;f51r_g14_s3	-	-	35	two dots	H	Cuy de	desmonstrer	unglossed
+B25	f51r_g13_s1;f51r_g14_s1	-	-	99	bar (underline)	H	33 09 23	23 65 50	underlined in run
+B26	f51r_g13_s2	-	-	13	bar + dot	H	25	1 1 1 23	unglossed
+B27	f51r_g13_s2;f51r_g14_s2	-	-	1	bar (circled 9 before)	M	trouve de	escripuant	circled 9 sign + barred 1
+B28	f51r_g12_s1	-	-	99 202	bar (underline arrow)	M	(run)	63 95 23	underline with arrowhead below
+B29	f51r_g08_s1	-	-	7	bar (circled 9 before)	H	par la	a armee	unglossed
+B30	f51r_g08_s2	-	-	7	bar (circled D before)	H	cambre..	a de	unglossed
+B31	f51r_g05_s3	-	-	64	bar	M	23 63	35 (run)	crossed/barred
+B32	f51r_g05_s3;f51r_g04_s3	-	-	19	bar	H	11	25 65	unglossed
+B33	f51r_g05_s3;f51r_g04_s3	-	-	19	bar (arrow)	M	16	(line end)	unglossed
+B34	f51r_g05_s3;f51r_g04_s3	-	-	13	bar	H	30 23 25	24 73	unglossed
+B35	f51r_g05_s2;f51r_g04_s2	-	-	25	bar	H	95	74 14	unglossed
+B36	f51r_g05_s1	-	-	25	bar	H	30 63	75 63	unglossed
+B37	f51r_g05_s1	-	-	13	bar	H	25	29 35	unglossed
+B38	f51r_g04_s1	-	-	14	bar	H	65 25	16 25	unglossed
+B39	f51r_g04_s1;f51r_g03_s1	-	-	15	bar	M	46	1 ...	unglossed
+B40	f51r_g04_s2	-	-	24	bar (heavy underline)	M	23	20 65	unglossed
+B41	f51r_g04_s2;f51r_g03_s2	-	-	12	bar	M	30	57 31	unglossed
+B42	f51r_g03_s3;f51r_g02_s3;f51r_g03_s2	-	-	13	bar	H	90 25	14 46	unglossed
+B43	f51r_g03_s3;f51r_g02_s3	-	-	25	bar (underline)	M	13	63 73	underlined
+B44	f51r_g03_s2;f51r_g03_s1	-	-	25	bar	H	95	23 93	bar between 75 above and 25
+B45	f51r_g03_s2	-	-	13	bar	H	95	23	unglossed
+B46	f51r_g03_s1	-	-	13	bar	H	16	19 20	unglossed
+B47	f51r_g03_s1	-	-	73	bar (underline)	M	23	95	unglossed
+B48	f51r_g03_s1	-	-	23	strokes (cross)	L	73	26 75	cross stroke above
+B49	f51r_g02_s2	-	-	13	bar	H	46	50 75	unglossed
+B50	f51r_g02_s3	-	-	13	bar	H	95	(line end)	unglossed
+B51	f51r_g06_s1;f51r_g06_s2;f51r_g05_s1;f51r_g05_s2;f51r_g05_s3;f51r_g04_s1;f51r_g04_s2;f51r_g04_s3;f51r_g03_s1;f51r_g03_s2;f51r_g03_s3;f51r_g02_s1;f51r_g02_s2;f51r_g02_s3	-	-	(many)	dot	M	-	-	summary row: dozens of single dotted digits/groups (esp. 4, 1, 2, 9 forms) inside long numeric runs on bands 02-06 and 12-14; not itemised individually; none glossed

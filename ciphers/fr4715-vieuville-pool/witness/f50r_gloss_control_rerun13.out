@@ -1,0 +1,6 @@
+leaf under test: f50r; siblings: f44r, f51r, f60r, f62r
+f50r C/M glossed sites: 8 on 7 codes; shared with a sibling leaf: 2
+  7: f50r lanc vs siblings [('f60r', 'roi')]
+  27: f50r neue vs siblings [('f44r', 'neue'), ('f60r', 'naua')]
+within-leaf: REAL 1/2 = 0.500; shuffle mean 0.500 p95 0.500; shuffles >= REAL 1000/1000 (p 1.0000)
+cross-leaf: REAL agree 1 of 2; shuffle mean 0.10 p95 1 max 1; shuffles >= REAL 102/1000 (p 0.1029)

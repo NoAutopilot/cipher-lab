@@ -1,0 +1,6 @@
+# Word-code values read from the period interlinear glosses on no.28 f.51r (GAPS-fr4715-vieuville-pool-13, 3 Oct 2026).
+# The leaf clears its own rule-3 control narrowly (scripts/f62r_gloss_control.py: letter-cipher gloss spans vs the printed letter key, REAL 0.675 vs permuted-key p95 0.450, 4/1000, p 0.005), but on ONE distinct span (50 23 30 = leg, glossed legat and du legat) whose REAL equals the permuted maximum; the word-code statistics are a tie (within-leaf 1/2 vs p95 0.500) and a non-test (cross-leaf 0 shared codes). Values below are therefore at their own reading grade and no higher.
+# grade C = A and B agree on code and gloss; M = A and B agree on the gloss and share the code, one reading it in part (witness/f51r_glosses_reconciled.tsv; no reconciliation call was run). 34 is NOT keyed: the leaf glosses it twice with two different words (Amyens, Libourn), a within-leaf conflict. Not used by decode.json.
+sign	value	grade	class	count	source	note
+22	Soissons	C	place	1	f51r S01	bar seen by A only
+44	Roy	M	person	1	f51r S06	B Roy H over barred 44 (and ?roy L over a second 44); A R..y L. f.60r glosses barred 7 as Roy: two codes, one gloss, logged in HYPOTHESES.md, not merged

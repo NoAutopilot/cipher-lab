@@ -1,0 +1,7 @@
+  span 50 23 30 -> leg | gloss legat
+  span 50 23 30 -> leg | gloss dulegat
+letter spans used (C/M): 2; REAL mean ratio 0.675; permuted-key mean 0.164 p95 0.450 max 0.675; shuffles >= REAL 4/1000 (p 0.0050)
+leaf under test: f51r; siblings: f44r, f50r, f60r, f62r
+f51r C/M glossed sites: 4 on 3 codes; shared with a sibling leaf: 0
+within-leaf: REAL 1/2 = 0.500; shuffle mean 0.500 p95 0.500; shuffles >= REAL 1000/1000 (p 1.0000)
+cross-leaf: REAL agree 0 of 0; shuffle mean 0.00 p95 0 max 0; shuffles >= REAL 1000/1000 (p 1.0000)
