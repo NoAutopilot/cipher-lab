@@ -80,6 +80,16 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
 .hint{font-size:.78rem;color:var(--muted)}
+#rank{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:10px 12px}
+.rk{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);text-align:center}
+#rankTiles > div{width:max(var(--sz),84px);justify-items:center} #rankTiles .fcap{max-width:100%}
+#rankTiles .t,#offer .t{overflow:hidden} #rankTiles .t img,#offer .t img{width:calc(var(--sz) - 4px);height:calc(var(--sz) - 4px);max-width:none;max-height:none;object-fit:contain}
+.t.done{opacity:.45}
+#offer[hidden]{display:none}
+#offer{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:640px;margin:0 auto;background:var(--surface);color:var(--ink);
+  border:2px solid var(--accent);border-radius:8px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+#offer .tiles{margin:0}
+#offer .t{--sz:40px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -101,9 +111,13 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <button type="button" id="undo" disabled>Undo last move</button>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
+  <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
   <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
   <div id="list"></div>
   <p class="hint" id="foot"></p>
+  <div id="offer" hidden role="region" aria-live="polite" aria-label="Apply to the whole cluster">
+    <span id="offerT"></span><div class="tiles" id="offerTiles"></div>
+    <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
     <div class="row"><strong id="ctxT"></strong><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
@@ -125,6 +139,10 @@ const byBase = Object.fromEntries(basePiles.map(p => [p.id, p]));
 const state = {};        // pile id -> {verdict, merge_into, outliers:[], note}
 const moves = {};        // sid -> destination pile id ('ASIDE' = set aside, no pile yet)
 const newPiles = {};     // new pile id -> {family, from}
+const clusterOf = {}, clusterMembers = {};   // atlas (or provisional) cluster id per tile, and its tiles
+basePiles.forEach(p => p.items.forEach(it => { if (it.c){ clusterOf[it.sid] = it.c; (clusterMembers[it.c] = clusterMembers[it.c] || []).push(it.sid); } }));
+const clusterDec = {};   // cluster id -> {to, from_sid, n}   (saved in db collection 'clusters')
+let ccol = null;
 const selected = {};     // pile id -> Set(sid)   (not saved)
 let col = null, mcol = null, ncol = null;
 const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
@@ -182,7 +200,7 @@ function tileEl(sid, pid, cls){
   const s = sel(pid), it = itemBySid[sid];
   const b = document.createElement('button'); b.type = 'button';
   b.className = 't' + cls + (s.has(sid) ? ' sel' : '');
-  b.title = sid + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '');
+  b.title = sid + (clusterOf[sid] ? ' [cluster ' + clusterOf[sid] + ']' : '') + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '');
   b.setAttribute('aria-pressed', s.has(sid));
   const im = document.createElement('img'); im.alt = sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
   b.append(im);
@@ -246,12 +264,14 @@ function pileEl(p, piles){
 }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
-const history = [];   // each entry: [[sid, previous destination or null], ...]
-function remember(sids){ history.push(sids.map(sid => [sid, moves[sid] || null])); if (history.length > 200) history.shift();
-  document.getElementById('undo').disabled = false; }
+const history = [];   // each entry: [[sid, previous destination or null], ...] (+ .cluster/.prevDec for a cluster decision)
+function remember(sids){ const e = sids.map(sid => [sid, moves[sid] || null]); history.push(e); if (history.length > 200) history.shift();
+  document.getElementById('undo').disabled = false; return e; }
 function undo(){
   const last = history.pop(); if (!last) return;
+  hideOffer();
   last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; saveMove(sid); });
+  if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
   document.getElementById('undo').disabled = !history.length;
   saveEl().textContent = 'Undid the last move (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'); render();
   return last;
@@ -265,8 +285,49 @@ function moveSel(from, to){
     if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
     saveMove(sid);
   });
+  const moved = [...chosen];
   chosen.clear(); render();
+  offerCluster(moved, to);
 }
+
+// Cluster-level decision: after a move, offer to send the rest of the moved tiles' cluster (same shape, every letter of
+// the family on this page) to the same pile. Saved as per-tile moves (old apply works unchanged) plus one 'clusters'
+// doc, which sign_sorter_apply.py --atlas-labels writes into the family atlas.
+let offerState = null;
+function hideOffer(){ document.getElementById('offer').hidden = true; offerState = null; }
+function offerCluster(sids, to){
+  hideOffer();
+  if (to === 'ASIDE' || to === 'BAD-CUT' || !sids.length) return;
+  const cs = [...new Set(sids.map(s => clusterOf[s]).filter(Boolean))];
+  if (cs.length !== 1 || sids.some(s => !clusterOf[s])) return;
+  const c = cs[0];
+  const rest = (clusterMembers[c] || []).filter(s => !sids.includes(s) && (moves[s] || homeOf[s]) !== to && moves[s] !== 'BAD-CUT');
+  if (!rest.length) return;
+  offerState = {c, to, sids, rest};
+  const prov = DATA.clusterSource === 'provisional';
+  document.getElementById('offerT').textContent = 'Apply to all ' + (clusterMembers[c].length) + ' in this ' + (prov ? 'provisional shape group' : 'atlas cluster') +
+    ' (' + c + ')? ' + rest.length + ' more tile' + (rest.length > 1 ? 's' : '') + ' would move to ' + to + '.';
+  const w = document.getElementById('offerTiles'); w.textContent = '';
+  rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = 'data:image/png;base64,' + itemBySid[s].img; b.append(im); w.append(b); });
+  if (rest.length > 12) w.append('+' + (rest.length - 12));
+  document.getElementById('offer').hidden = false;
+}
+function applyCluster(){
+  const o = offerState; if (!o) return; hideOffer();
+  const e = remember(o.rest); e.cluster = o.c; e.prevDec = clusterDec[o.c] ? {...clusterDec[o.c]} : null;
+  o.rest.forEach(sid => {
+    if (o.to === homeOf[sid]) delete moves[sid]; else moves[sid] = o.to;
+    const hs = state[homeOf[sid]];
+    if (hs && hs.outliers.includes(sid)){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
+    saveMove(sid); });
+  clusterDec[o.c] = {to: o.to, from_sid: o.sids[0], n: clusterMembers[o.c].length};
+  saveCluster(o.c);
+  saveEl().textContent = 'Moved ' + o.rest.length + ' more tiles of cluster ' + o.c + ' to ' + o.to;
+  render();
+  if (!document.getElementById('ctx').hidden) showCtx(ctxSid, ctxPid, true);
+}
+document.getElementById('offerYes').onclick = applyCluster;
+document.getElementById('offerNo').onclick = hideOffer;
 
 let open_ = 0, failed = false;
 const inflight = {};   // doc path -> writes not yet confirmed; snapshots for these are ignored
@@ -289,7 +350,12 @@ function saveMove(sid){
   else track('m/' + sid, () => mcol.doc(key(sid)).delete());
 }
 function saveNew(id){ track('n/' + id, () => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles})); } catch(e){} }
+function saveCluster(c){
+  const d = clusterDec[c];
+  if (d) track('c/' + c, () => ccol.doc(key(c)).set({cluster: c, to: d.to, from_sid: d.from_sid, n: d.n, source: DATA.clusterSource || '', atlas: DATA.atlas || '', updated: new Date().toISOString()}));
+  else track('c/' + c, () => ccol.doc(key(c)).delete());
+}
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec})); } catch(e){} }
 
 let clickMode = 'sel', ctxSid = null, ctxPid = null;
 const pageImgs = {};
@@ -323,7 +389,7 @@ function showCtx(sid, pid, keepList){
   allPiles().filter(q => q.id !== cur).sort((a, b) => (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
     .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + '  (' + q.family + ')'; dest.append(o); });
   document.getElementById('ctxT').textContent = 'Tile ' + sid + ' in pile ' + pid;
-  document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + '. The brackets mark this tile; its neighbours on the line are shown either side.';
+  document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.';
   document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
   document.getElementById('ctx').hidden = false; drawCtx();
 }
@@ -339,6 +405,7 @@ function ctxMove(to){
   render();
   const i = ctxList.indexOf(sid);
   if (i < ctxList.length - 1) showCtx(ctxList[i + 1], ctxPid, true); else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, ctxPid, true); }
+  offerCluster([sid], to);
 }
 document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
 document.getElementById('undo').onclick = undo;
@@ -364,7 +431,7 @@ document.addEventListener('keydown', e => { if (document.getElementById('ctx').h
 const closeCtx = () => { document.getElementById('ctx').hidden = true; };
 document.getElementById('ctxClose').onclick = closeCtx;
 document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCtx(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!document.getElementById('offer').hidden) hideOffer(); else closeCtx(); } });
 document.getElementById('ctxZ').oninput = drawCtx;
 document.getElementById('ctxSel').onclick = () => { const s = sel(ctxPid); if (s.has(ctxSid)) s.delete(ctxSid); else s.add(ctxSid); closeCtx(); render(); };
 const setMode = m => { clickMode = m; document.getElementById('modeSel').classList.toggle('on', m === 'sel'); document.getElementById('modeCtx').classList.toggle('on', m === 'ctx');
@@ -392,6 +459,22 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.q;
     d.append(b, c); wrap.append(d); });
 })();
+(function(){ const R = DATA.rank || []; if (!R.length) return;
+  const box = document.getElementById('rank'); box.hidden = false;
+  document.getElementById('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
+  const wrap = document.getElementById('rankTiles');
+  R.forEach((f, n) => { const it = itemBySid[f.sid]; if (!it) return;
+    const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
+    const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
+    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid]);
+    const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' \u00b7 ' + (+f.score).toFixed(1);
+    const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
+    d.append(b, k, c); wrap.append(d); });
+})();
+function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid;
+  const done = !!moves[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
+const render0 = render; render = function(){ render0(); markRankDone(); };
 render();
 
 (async () => {
@@ -399,9 +482,9 @@ render();
   try { db = await window.claude?.use?.('db'); } catch(e) { db = null; }
   const el = saveEl();
   if (!db){
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); } } catch(e){}
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); } } catch(e){}
     el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; render(); return; }
-  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles');
+  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters');
   el.textContent = 'Connected. Choices save as you go.';
   const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; };
   col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile || inflight['p/' + d.pile]) return;
@@ -414,5 +497,7 @@ render();
   ncol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.id || inflight['n/' + d.id]) return;
       if (ch.type === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
     render(); }, fail);
+  ccol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.cluster || inflight['c/' + d.cluster]) return;
+      if (ch.type === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; }); }, fail);
 })();
 </script>

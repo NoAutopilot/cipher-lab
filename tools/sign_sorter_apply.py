@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Turn a person's sign-sorter decisions into a settled inventory.
 
-  python3 tools/sign_sorter_apply.py --labels labels.tsv --db DIR --out settled_labels.tsv [--summary summary.json]
+  python3 tools/sign_sorter_apply.py (--labels labels.tsv | --atlas-topk T.tsv ...) --db DIR --out settled_labels.tsv [--summary summary.json]
+      [--clusters clusters.tsv --atlas-labels ATLAS/labels.json [--atlas-out labels.json] [--source TEXT]]
 
 --db is the folder the ArtifactData tool writes with out_dir (DIR/piles/*.json, DIR/moves/*.json,
 DIR/newpiles/*.json; each file is one document as saved by tools/sign_sorter/template.html). The output has one
@@ -12,8 +13,24 @@ row per sign: sid, old_sign, new_sign, status, where status is one of
   not-letter  its final pile was marked "Not a letter"
   aside       set aside without a pile (needs a second look)
   bad-cut     the tile's box was cut in the wrong place (recut it before reading)
+  cluster-moved  the person made a cluster decision (DIR/clusters/*.json, TX-SORTER 3 Oct 2026) and this tile, of
+              that cluster, had no move of its own: it follows the decision (a sibling letter's tile, or a save from a
+              page built before the per-tile moves landed)
 A pile's verdict "same" (all one sign) is recorded in the summary as confirmed. Nothing is guessed: a tile the
-person did not touch keeps its old label."""
+person did not touch keeps its old label. A save with no clusters collection (every sorter published before 3 Oct
+2026, Birago and Florence included) applies exactly as before.
+
+Family atlas (TRANSCRIPTION.md step 7). With --atlas-labels (a tools/glyph_atlas.py labels.json) and --clusters (the
+atlas's clusters.tsv, or sid<TAB>cluster), the decisions are written into the atlas so every sibling letter's next
+glyph_atlas atlas/classify run picks them up:
+  - a cluster decision sets signs[<cluster>] = the destination pile's final code;
+  - a merge A -> B rewrites every signs[] and override[] value A to B; a "Not a letter" pile becomes '_';
+  - a single tile moved on its own (no cluster decision covers it) becomes override[<sid>] = its new code, but only
+    when that differs from what its cluster already reads;
+  - aside and bad-cut tiles are listed under "sorter_review" (not relabelled), and each run appends one
+    "sorter_log" entry (UTC time, --source, counts). Provisional clusters ("<pile>~<n>", from sign_sorter.py
+    --auto-clusters) are page-local and are never written to an atlas.
+Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
 
@@ -25,11 +42,13 @@ def load(dirp, coll):
     return out
 
 
-def apply(labels, piles, moves, newpiles):
+def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None):
     merge = {p['pile']: p['merge_into'] for p in piles if p.get('merge_into')}
     verdict = {p['pile']: p.get('verdict') for p in piles}
     outliers = {sid for p in piles if not p.get('merge_into') for sid in (p.get('outliers') or [])}
     mv = {m['sid']: m['to'] for m in moves if m.get('sid') and m.get('to')}
+    cdec = {c['cluster']: c['to'] for c in cluster_docs if c.get('cluster') and c.get('to')}
+    cluster_of = dict(cluster_of or {})
 
     def final(pile):
         seen = set()
@@ -40,42 +59,121 @@ def apply(labels, piles, moves, newpiles):
     for r in labels:
         sid, old = r['sid'], r['sign']
         dest = mv.get(sid)
+        via_cluster = False
         if dest is None and sid in outliers:
             dest = 'ASIDE'
+        c = cluster_of.get(sid) or r.get('cluster')
+        if dest is None and c in cdec and cdec[c] != old:
+            dest, via_cluster = cdec[c], True
         if dest == 'ASIDE':
             rows.append((sid, old, '', 'aside')); continue
         if dest == 'BAD-CUT':
             rows.append((sid, old, '', 'bad-cut')); continue
         pile = dest or old
         fin = final(pile)
-        status = 'moved' if dest else ('merged' if fin != old else 'kept')
+        status = ('cluster-moved' if via_cluster else 'moved') if dest else ('merged' if fin != old else 'kept')
         if verdict.get(fin) == 'mark':
             status = 'not-letter'
         rows.append((sid, old, fin, status))
     summary = {
         'tiles': len(rows),
-        'by_status': {s: sum(1 for r in rows if r[3] == s) for s in ('kept', 'moved', 'merged', 'not-letter', 'aside', 'bad-cut')},
+        'by_status': {s: sum(1 for r in rows if r[3] == s) for s in ('kept', 'moved', 'merged', 'not-letter', 'aside', 'bad-cut')
+                      + (('cluster-moved',) if cdec else ())},
         'signs_before': len({r[1] for r in rows}),
         'signs_after': len({r[2] for r in rows if r[2] and r[3] != 'not-letter'}),
         'confirmed_piles': sorted(p for p, v in verdict.items() if v == 'same'),
         'not_letter_piles': sorted(p for p, v in verdict.items() if v == 'mark'),
         'merges': merge, 'new_piles': sorted(n['id'] for n in newpiles if n.get('id')),
     }
+    if cdec:
+        summary['cluster_decisions'] = {c: final(t) for c, t in cdec.items()}
     return rows, summary
+
+
+def write_atlas(L, rows, piles, moves, cluster_docs, cluster_of, source=''):
+    """Fold the decisions into a glyph_atlas labels.json dict (in place); returns the counts logged."""
+    import datetime
+    merge = {p['pile']: p['merge_into'] for p in piles if p.get('merge_into')}
+    mark = {p['pile'] for p in piles if p.get('verdict') == 'mark'}
+
+    def final(x):
+        seen = set()
+        while x in merge and x not in seen:
+            seen.add(x); x = merge[x]
+        return '_' if x in mark else x
+    signs, over = L.setdefault('signs', {}), L.setdefault('override', {})
+    n_clu = n_rel = n_over = 0
+    for code_map in (signs, over):          # merges and not-letter piles relabel what the atlas already says
+        for k, v in list(code_map.items()):
+            f = final(v)
+            if v != '_' and f != v:
+                code_map[k] = f; n_rel += 1
+    covered = set()
+    for c in cluster_docs:
+        cid, to = c.get('cluster'), c.get('to')
+        if not cid or not to or '~' in cid or to in ('ASIDE', 'BAD-CUT'):
+            continue                        # provisional page-local groups are never atlas clusters
+        signs[cid] = final(to); n_clu += 1; covered.add(cid)
+    own = {m['sid'] for m in moves if m.get('sid') and m.get('to')}
+    review = L.setdefault('sorter_review', {})
+    for sid, old, new, status in rows:
+        if status in ('aside', 'bad-cut'):
+            review[sid] = status; continue
+        if sid not in own or status not in ('moved', 'not-letter') or sid not in cluster_of:
+            continue
+        c = cluster_of[sid]
+        code = '_' if status == 'not-letter' else new
+        if c in covered and signs.get(c) == code:
+            continue
+        if signs.get(c, '_') != code:
+            over[sid] = code; n_over += 1
+        elif over.get(sid) not in (None, code):
+            over[sid] = code; n_over += 1
+    if not review:
+        L.pop('sorter_review')
+    entry = {'utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M'), 'source': source,
+             'cluster_decisions': n_clu, 'overrides': n_over, 'relabelled_by_merge': n_rel}
+    L.setdefault('sorter_log', []).append(entry)
+    return entry
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
-    ap.add_argument('--labels', required=True); ap.add_argument('--db', required=True)
+    ap.add_argument('--labels'); ap.add_argument('--db', required=True)
+    ap.add_argument('--atlas-topk', nargs='+', help='the glyph_atlas topk files the page was built from (sign_sorter.py --atlas-topk)')
     ap.add_argument('--out', required=True); ap.add_argument('--summary')
+    ap.add_argument('--clusters', help="the atlas's clusters.tsv (id, kind, cluster) or sid<TAB>cluster")
+    ap.add_argument('--atlas-labels', help='family atlas labels.json to write the decisions into (needs --clusters)')
+    ap.add_argument('--atlas-out', help='write the updated atlas labels here instead of in place')
+    ap.add_argument('--source', default='', help='one line for the atlas sorter_log (which page, which letter)')
     a = ap.parse_args(argv)
-    labels = list(csv.DictReader(open(a.labels, newline=''), delimiter='\t'))
-    rows, summary = apply(labels, load(a.db, 'piles'), load(a.db, 'moves'), load(a.db, 'newpiles'))
+    if a.atlas_labels and not a.clusters:
+        ap.error('--atlas-labels needs --clusters (which tile is in which atlas cluster)')
+    if a.atlas_topk:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from sign_sorter import atlas_topk_rows
+        labels = [{'sid': r['box'], 'sign': r['k1']} for r in atlas_topk_rows(a.atlas_topk)]
+    elif a.labels:
+        labels = list(csv.DictReader(open(a.labels, newline=''), delimiter='\t'))
+    else:
+        ap.error('give --labels or --atlas-topk')
+    cluster_of = {}
+    if a.clusters:
+        for r in csv.DictReader(open(a.clusters, newline=''), delimiter='\t'):
+            sid = r.get('sid') or r.get('id')
+            if r.get('kind', 'sign') == 'sign' and sid and r.get('cluster'):
+                cluster_of[sid] = r['cluster']
+    piles, moves, cdocs = load(a.db, 'piles'), load(a.db, 'moves'), load(a.db, 'clusters')
+    rows, summary = apply(labels, piles, moves, load(a.db, 'newpiles'), cdocs, cluster_of)
+    if a.atlas_labels:
+        L = json.load(open(a.atlas_labels))
+        summary['atlas'] = write_atlas(L, rows, piles, moves, cdocs, cluster_of, a.source)
+        json.dump(L, open(a.atlas_out or a.atlas_labels, 'w'), indent=1, ensure_ascii=False)
     with open(a.out, 'w', newline='') as f:
         w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status']); w.writerows(rows)
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'by_status', 'signs_before', 'signs_after')}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'by_status', 'signs_before', 'signs_after', 'atlas') if k in summary}))
 
 
 if __name__ == '__main__':
