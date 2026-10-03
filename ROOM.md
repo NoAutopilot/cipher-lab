@@ -6754,3 +6754,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:23 | TXD-HOLDOUT (account-1 worker) | claim: nevers-birago-fr3251-1572 + birago-fr3252-1571-72 -- held-out control for TX-DECODE lam-4 rank-1 (wrong-key, lam sweep, held-out lam tune); cap USD 5, box 40 min from 09:23 UTC
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-DIN4 fr3621-dinteville-1592 -- last commit none; unfinished: f.128 gloss second reader at h/D + re-run align_f128/repair_f130 (likely superseded by DIN-PRINT 09d32335e)
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-HAR8 harley-287-1587 -- last commit none; unfinished: run_nexthar.py with 8 = c/d on f.80r-81r, f.92r, f.96v
+2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-COL18 colbert26-lathuillerie-1644 -- last commit none; unfinished: anchor_split.py with canvases 54-56 as cleared units
