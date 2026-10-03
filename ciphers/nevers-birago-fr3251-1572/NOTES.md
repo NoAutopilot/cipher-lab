@@ -2071,3 +2071,73 @@ committed reading or transcription was changed; the atlas is an input for TX-DEC
   only where the line reads split (the lattice is useful as a candidate source, not a reader); a better tile needs
   the line-read box positions (cut per token) rather than connected components; err_true here is on one hand's
   held-out lines only.
+## TX-DECODE (3 Oct 2026, account 2 for the account-3 orchestrator): key-constrained lattice decode -- no.87 known answer, then f.144r, f.168 and f.117r re-tested
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-tx-decode.md`. New shared tool `tools/key_decode_lattice.py` (TRANSCRIPTION.md
+step 6; test `tools/tests/test_key_decode_lattice.py`). Disk only: 0 requests, 0 vision calls. No reading committed, no
+class, status unchanged (`partial`). TX-ATLAS-B72's top-k had not landed, so the brief's fallback ran: the top-k lattice
+was built from the two blind line passes (A, B) plus `harvest/confusion_1572.tsv` by the tool's fixed `from-passes` rule
+(reader weight H 1 / M 0.6 / L 0.3, alt 0.3x, 0.15x spread over the top-3 confusion neighbours, top 4 kept). The rule
+and lam = 1 were committed (0b855b99) before the known-answer run. Printed key `harvest/key_1572_sheet.tsv` throughout (not
+the clerk variant). Everything regenerates: `sh tx_decode/run.sh` (from harvest/), `sh .../tx_decode/retest.sh` and
+`python3 .../tx_decode/shuffled_target.py` (from ciphers/).
+
+**Known answer, no.87 (853 signs; truth = `align87/align_real.tsv` clerk-sheet value per committed position, 843 aligned).**
+The committed ciphertext gives the position skeleton only; its signs are not candidates (8 f178r positions had no reader).
+
+| decode | err_true (wrong) | wrong + U | changed vs top-1 | key rank /201 | z | shuffles mean / max |
+|---|---|---|---|---|---|---|
+| top-1 of the two passes | 0.0807 | 0.1151 | -- | 1 | 4.57 | -1.635 / -1.275 |
+| lattice, lam 1 (pre-registered) | **0.0996** | 0.1507 | 82 | 1 | 2.46 | -1.099 / -0.847 |
+| lattice, lam 4 (picked on f178v L01-L11) | 0.0712 | 0.1103 | 29 | 1 | 4.09 | -1.423 / -1.122 |
+
+**The pre-registered setting failed the known-answer gate.** At lam 1 the language model overrides the readers: true error
+goes up and z goes down, because the value-shuffled keys gain more from the freedom than the real key does. lam was then
+swept on a tune split (f178v L01-L11) and the best value checked on the rest of no.87 (held out): top-1 0.0729 / 0.1267 ->
+lam 4 0.0691 / 0.1228 (wrong / wrong+U), about 2 tokens. That is a small gain, chosen after the pre-registered run. **Limit:**
+only 27 of the 97 top-1 errors or U positions have the clerk's value anywhere in the two-pass lattice (2.4 candidates per
+sign), so 0.0807 -> about 0.08 with U is the most this lattice can give on no.87. The candidate set is the bottleneck; the
+atlas top-k (TX-ATLAS-B72) is what can raise it. no.87's two readers disagree on 0.097 of signs (f178r + f179r).
+
+**Synthetic power** (`--power-err`, 20 windows x 50 shuffles, two simulated readers each wrong with probability err, errors
+drawn 80% from the confusion table; lam 4 unless stated):
+
+| length, err | top-1 rank 1 (z median) | lattice rank 1 (z median) |
+|---|---|---|
+| 280, 0.08 | 20/20 (5.19) | 20/20 (5.75); lam 1: 17/20 (3.02) |
+| 853, 0.08 | 20/20 (5.58) | 20/20 (6.38); lam 1: 19/20 (3.03) |
+| 280, 0.25 | 6/20 (1.66) | **20/20 (4.24)**; lam 1: 8/20 (2.07) |
+
+At err 0.08 top-1 is already at ceiling, so that row has no room to show a gain (rule 3). The gain is at the error level of
+the unread letters. The simulation is generous to the lattice: its readers err independently, so the truth is usually in
+the lattice. On no.87 the real readers' errors overlap (27/97 recoverable).
+
+**Re-tests at lam 4** (fixed before these runs; printed key; f.144r and f.168 it16dip, f.117r fr16 as in NEVBIR-3252-B;
+lattices from each letter's own passA/passB; 200 value-shuffled keys, seed 1; power at the letter's own length):
+
+| letter | signs | A/B agreement (this tool's alignment) | top-1 rank / z | lattice lam 4 rank / z (changed) | lattice lam 1 rank / z | power lam 4, err 0.08 / 0.25 (top-1) | shuffled target, 5 seeds: lattice rank / z | judge (lam 4 text) |
+|---|---|---|---|---|---|---|---|---|
+| no.73 f.144r | 90 | 0.78 (70/90) | 22 / 1.28 | **1 / 3.10** (12) | 2 / 2.16 | 19/20, 20/20 (19/20, 5/20) | 17-58 / max 1.35 | PASS -0.945 (real_p05 -0.979, N 101) |
+| no.85 f.168 | 122 | 0.90 (109/121) | 20 / 1.43 | **1 / 2.77** (11) | 1 / 2.55 | 20/20, 20/20 (19/20, 6/20) | 36-101 / max 0.92 | FAIL -1.019 (real_p05 -0.958) |
+| no.77 f.117r (fr.3252) | 279 | 0.77 (210/272) | 10 / 1.63 | **1 / 3.66** (32) | 1 / 3.28 | 20/20, 20/20 (20/20, 16/20) | 4-64 / max 1.91 | FAIL -1.081 (real_p05 -0.903) |
+
+On a position-shuffled lattice the real key never ranks 1 (best rank 4 of 201, z at most 1.91, against 2.77-3.66 on the
+real order), so this control could fail and did. f.168's readers agree on 0.90 of signs, yet its top-1 ranked only 20 where the
+err-0.08 simulation gives top-1 19/20. Either its reading errors overlap more than the simulation assumes, or the fit is
+weaker there. Its rank 1 is the least secure of the three. The judge on the lattice decode of one shuffled target FAILs for all three
+(-1.213, -1.301, -1.382), so the ARM-C1 voiding condition is not met at seed 100. The f.144r PASS is a lattice-chosen text:
+12 of its 90 signs were chosen by the language model, so the PASS is partly the model's own preference.
+
+**What this licenses.** Three letters that sat at rank 10-22 as reconciled single reads rank 1 of 201 when the decoder may
+choose between the two readers' candidates. All keys, real and shuffled, have the same freedom, and the position-shuffled
+control fails. That is evidence the printed 1572 key fits f.144r, f.168 and f.117r. It is **not** a reading. Every changed
+position (`tx_decode/<letter>_lam4.decode.tsv`, column `changed`) is grade S at best. lam 4 was tuned on no.87, and the
+pre-registered lam 1 failed there. Candidates for a verifier, not results:
+- f.144r: `quellomprimagiortatenperqualdiquellollrosatheirperbodiaqualcolmezodileurperatopiudicediragineroquello`
+- f.168: `cheisisafacuanuatomoltoconlorialtehesopraquellopaftisolechenguantoilprocederesisiitantoastidiisaamemadatosaelfefoiiilifoquellom...`
+- f.117r: `mguilamulguenpsenuaardesannintentiondeconueniraunspoursuoisngouerneentdepirceguisestpersoreguiserendroitsusfacile...`
+
+Next: (1) re-run the no.87 known answer and these three letters on TX-ATLAS-B72's top-k when it lands, since that is the
+test of whether the candidate set, not the decoder, limits the gain (~$1, disk only); (2) a verifier pass on the
+changed positions of f.144r against the image crops, each graded S or rejected (~$2, one vision call per letter on the
+changed tiles only).

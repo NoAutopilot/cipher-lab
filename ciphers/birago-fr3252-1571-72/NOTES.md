@@ -969,3 +969,12 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs (two-reader E 0.286, key con
 - [x] image-check: f.36r rows r36n_L09-L14 recut on the row-ink profile and re-read (F36R-REREAD); f.36-37 gloss crops re-cut (F36-GLOSS); f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
 Verdict: keep going: 9 internal gaps; cheapest next: one reconciliation call on the kept f.36-37 rows' splits (~$1.5), then the per-sign tile gloss read (~$8) once the rate limit reads allowed
+
+## TX-DECODE (3 Oct 2026, account 2 for the account-3 orchestrator): f.117r re-tested by key-constrained lattice decode
+
+Full section with controls in `../nevers-birago-fr3251-1572/NOTES.md` "TX-DECODE". f.117r (279 signs, passA/passB of
+`harvest/f117/`, printed 1572 key, fr16): top-1 of the two passes rank 10/201 z 1.63. Lattice decode at lam 4 (tuned on
+no.87; the pre-registered lam 1 failed the no.87 known-answer gate): **rank 1/201, z 3.66**, 32 signs changed from top-1,
+each grade S at best. Position-shuffled lattice control: rank 4-64, z at most 1.91 over 5 seeds. Synthetic power at 279
+signs, err 0.25: 20/20 (top-1 16/20). Judge FAIL -1.081 (real_p05 -0.903). No reading committed; status unchanged.
+Outputs `../nevers-birago-fr3251-1572/harvest/tx_decode/f117_*`.

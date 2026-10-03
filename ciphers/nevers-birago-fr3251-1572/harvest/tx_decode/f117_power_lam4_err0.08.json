@@ -1,0 +1,19 @@
+{
+ "positions": 279,
+ "lam": 4.0,
+ "beam": 64,
+ "bonus": 0.7973039220688829,
+ "unk_cost": -0.5,
+ "changed": 32,
+ "score_top1": -1.5884923017136126,
+ "score_lattice": -1.080804162372667,
+ "power": {
+  "err": 0.08,
+  "windows": 20,
+  "n_shuffles": 50,
+  "lattice_rank1": 20,
+  "top1_rank1": 20,
+  "lattice_z_median": 6.652868222456086,
+  "top1_z_median": 5.820607828318519
+ }
+}

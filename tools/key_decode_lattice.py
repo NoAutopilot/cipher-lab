@@ -156,7 +156,7 @@ def from_passes(pa, pb, ref, nb):
         skel_of = {ln: R[ln] for ln in order}
         key_of = {ln: short(ln) for ln in order}
     else:
-        order = sorted(A, key=lambda s: (len(s), s))
+        order = list(A)  # pass A file order
         skel_of = {ln: [r["sign_id"] for r in A[ln]] for ln in order}
         key_of = {ln: ln for ln in order}
     stats = {"positions": 0, "no_reader": 0, "one_reader": 0}
