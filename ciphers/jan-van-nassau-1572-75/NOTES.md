@@ -1456,3 +1456,44 @@ Status stays `open` (the body is unread; the postscript was already read, N1). N
 Requests: 0 (resources.huygens.knaw.nl 0, disk only). Vision calls 0. Subagents 0.
 
 `python3 tools/intake_gate_check.py jan-van-nassau-1572-75` after the web/blog section (03:42 UTC): `jan-van-nassau-1572-75: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1 on the missing check alone before it).
+
+## Premise check (GF-A2-11, 3 Oct 2026)
+
+Adversarial pass (check-solved.md "Premise check"), run 00:30-00:40 UTC 3 Oct 2026 for LANE-A2PUSH (account 2), on the
+one unread item in this folder: the 5549 body (runs 1-61, 537 numerals; Jan van Nassau to Willem van Oranje, Dillenburg,
+21 Nov 1573, KHA A11/XIV A/5-18). The other six letters are printed in clear (csWV3/J1) and 5549's postscript stretch is
+N1 (AUDIT.md V1). Asked to prove the body is already read; it is not, on this pass.
+
+- **(a) Decipherments the folder already mentions: not found for the body.** Every mention was re-read: Groen's Suppl.
+  p.140 note ("chiffre des trois Comtes de Nassau ... autre chiffre du Comte Jean") prints the body's numerals raw;
+  the "silent decipherment" J5I found (Groen printed the p4/p5 stretch in clear) covers the postscript only, which
+  the folder already holds as N1; the p4 marginal note ("...minor est ad singula sensus") quotes the postscript's
+  Latin tag, not a body decipherment; the WVO record (read by J5I, 24 Sept 2026) names only the original and Groen,
+  "no second copy, no separately deciphered copy, no minute"; the three "met oplossing" items in REQUEST.md
+  (4502, 5808, 7205) are other letters (sibling cribs, their cipher originals not imaged), not a decipherment of
+  5549; 5550/5552/5557 carry glosses but read under Lodewijk's 1574 table, which LIKELY-8's control-backed
+  negative (2 Oct 2026) shows is not the body's key.
+- **(b) Other solvers' working files: not found.** Shallow clones this pass, dbourdeau/cyphersolver HEAD 2341682
+  (2 Oct 2026) and aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026), grepped (md/txt/tsv/py) for
+  `verendert`, `Jan van Nassau`, `Johann von Nassau`, `Jean de Nassau`, `Jan VI`, `5549`, `briefnr`: the only
+  hit is an unrelated line in Bourdeau's pallotto1629 OCR ("Oheime des Grafen Johann von Nassau"). No target
+  folder, output, rendering or key run on this letter in either repository. (The Bourdeau index page cites our
+  circle's work, LIKELY-8's web check.)
+- **(c) Physical neighbours: not found.** The WVO scan is the whole letter, p1-p6 (C1 capture, all six pages
+  viewed by J5I at 150 dpi, zoomed 8-14x on p4-p5): p1-p5 text, p6 the address leaf ("A Monseigneur / Monseigneur
+  le Prince D'Oranges", seal remnant) with no endorsement or decipherment recorded; no slip, interlinear gloss or
+  facing-page clear copy on any page of the body (csWV2: "no interlinear gloss, no bracketed word" for the body
+  runs). The KHA file's neighbouring leaves outside A/5-18 are not imaged in WVO: not checked, needs the archive.
+- **(d) Recipient's side: not found.** The recipient is Willem van Oranje; his own archive (KHA) is the source of
+  Groen's edition, which prints the body raw. Internet Archive full text, this pass: `"verendertte"` (the letter's
+  opening word) returns only the three IA copies of Groen's Supplement (bub_gb_BojohG8zXkQC,
+  dutch_nederlandse_boeken_archive, archivesouco01sup00groe) and unrelated uses -- no other edition prints the
+  letter; Gachard, Correspondance de Guillaume le Taciturne t.3 (bub_gb_zbf2KQn5XnoC), `"comte Jean" chiffre`: 0
+  hits. Japikse's Correspondentie and Gachard were also phrase-searched by csWV2 (24 Sept 2026), no hit. The
+  Hessian side (Landgrave Wilhelm IV, HStAM) is logged under "Marburg reply": no file names this letter.
+
+Verdict of this pass: no decipherment, plaintext or prior key run of the 5549 body found; status stays `open`.
+Requests: archive.org 1 (advancedsearch), be-api.us.archive.org 2; github.com 2 shallow clones (shared with
+siena-concistoro-2308, bl-gualterio-1700, cylob-c1995 this job).
+
+`python3 tools/intake_gate_check.py jan-van-nassau-1572-75` after this section (3 Oct 2026, GF-A2-11): `jan-van-nassau-1572-75: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
