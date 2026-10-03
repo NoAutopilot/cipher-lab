@@ -362,3 +362,27 @@ What was not done: no search for this reading in print (no print check, no novel
 verifier's job). No leave-one-run-out holdout. No third transcription pass of the glosses. Suggestions: (1) a
 holdout of each of the 7 runs, like fr5160's holdout_f86; (2) a verifier (rule 10); (3) the key tells us which
 signs are nulls and homophones, which may help read other Brienne-to-Warsaw letters of 1646 if any are found.
+
+## Judge under fr17 and fr (SPEC-FR17, account-4, 3 Oct 2026 08:30 UTC)
+
+Rule 7's judge step had never run here (no spec; REJUDGE-FR17, ROOM.md 07:51 UTC). Wrote `specs/clair1067-brienne-poland-1646.json`
+(3a form; judge block `language: fr17`, `language_also: fr`, per tools/data/fr17/README.md "Use"). `judge_input.py [--check]`
+regenerates the judge inputs from the committed files: `judge_1646.txt` = the letters of `reading_1646.txt` (labels and header
+dropped, group brackets removed, 531 letters); `judge_gloss_1646.txt` = the leaf's own interlinear decipherment
+(`dechiffre.tsv` words, 546 letters), scored as the rule-3 period-gloss control. The fr run uses a copy of the spec with
+`language` set to `fr` (one run reads one language). Outputs of `tools/judge_plaintext.py <spec> --file <file>`:
+
+```
+fr17  judge_1646.txt:       FAIL language: score=-0.97,  null_p99=-1.879, real_p05=-0.88,  real_median=-0.776, mode=both, N=531
+fr    judge_1646.txt:       FAIL language: score=-0.989, null_p99=-1.859, real_p05=-0.893, real_median=-0.785, mode=both, N=531
+fr17  judge_gloss_1646.txt: FAIL language: score=-0.886, null_p99=-1.864, real_p05=-0.878, real_median=-0.782, mode=both, N=546
+fr    judge_gloss_1646.txt: FAIL language: score=-0.953, null_p99=-1.866, real_p05=-0.886, real_median=-0.779, mode=both, N=546
+```
+
+Verdict: the reading FAILs under both fr17 and fr -- no split, so not "judge cannot decide" by the README's split test -- but
+it sits far above the shuffle null (-0.97 against null_p99 -1.88) and only 0.09 below real_p05. The control matters more:
+the leaf's own contemporary decipherment, known-genuine French of this very passage, also FAILs under both corpora
+(-0.886 against -0.878 under fr17). The judge cannot pass the true plaintext of this leaf at this length and register
+(cipher passages are fragments cut at clear words, with names and titles), so the reading's FAIL is not evidence against
+it; it is "judge cannot decide" by rule 3's gloss paragraph (ZX-DEC349 precedent), not a negative. The reading is N0 (AUDIT.md),
+grade C from that same gloss. Status, AUDIT.md and the reading unchanged.

@@ -1,0 +1,47 @@
+{
+ "slug": "fr5160-letellier-1653",
+ "name": "Lomenie de Brienne to (Ennemond) Servien at Turin, 1659: BnF fr.5160 f.67 (10 Oct 1659), f.86 and f.88 (21 Nov 1659, deciphered on f.87)",
+ "date": "10 Oct and 21 Nov 1659",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": [
+  {
+   "id": "f67",
+   "source": "ciphers/fr5160-letellier-1653/ciphertext_f67.tsv",
+   "tokens": 566,
+   "groups": "f129_L01: [PLAIN:en diburez parler a leurs Altesses Royalles] 7 24 7 , 3 21 / f129_L02: 2 10 _76 _6 56 _28 7 20 37 2 _8 18 _4 5 62 2 36 20 73 7 / f129_L03: _26 16 61 20 36 _24 _12 18 36 60 _26 _12 _21 36 . 20 _6 16 61 20 — / f129_L04: 15 16 15 17 _7 21 _21 _13 15 19 43 21 19 36 20 19 _11 2 20 4 60 / f129_L05: 15 20 4 9 20 70 _28 15 21 _6 60 1 41 4 _22 24 18 39 42 16 10 / f129_L06: 6 61 18 3 _17 15 19 36 60 66 _11 18 2 20 19 23 64 20 _17 13 _10 / f129_L07: 18 36 _5 7 _0 20 _16 , 2 19 _6 115 _16 _13 15 19 2 18 154 _1 18 _16 2 — / f129_L08: 36 _16 _11 _22 _11 21 39 65 72 2 66 18 19 36 20 61 40 15 _11 20 — / f129_L09: [PLAIN:parceque Sil pouvoit estre] 4 _10 15 18 19 _7 16 6 21 _12 25 20 19 / f129_L10: 7 18 16 17 5 60 5 61 4 , 50 18 46 66 18 19 73 7 20 6 7 _12 24 / f129_L11: 18 20 36 20 66 _19 _11 20 6 23 _11 18 3 _11 70 61 80 , 2 19 _6 16 _18 15 18 / f129_L12: _6 61 42 16 10 , 2 19 60 66 _11 X 66 20 66 61 7 21 20 23 _12 18 32 _0 / f129_L13: 7 8 67 72 20 19 _11 20 23 _12 20 _16 18 19 36 30 4 51 21 31 19 / f129_L14: _21 66 20 15 18 _21 16 62 46 18 31 15 16 71 _16 _13 15 19 _0 20 — / f129_L15: _7 20 _17 5 61 _6 _28 7 20 71 18 2 7 20 _17 2 10 33 18 73 15 20 / f129_L16: 15 18 31 , _7 6 _26 10 6 7 20 20 9 6 6 23 23 62 _6 21 _23 7 20 / f130a_L01: _28 10 _18 15 18 20 6 _1 71 19 _11 21 _6 16 61 _1 7 19 2 20 / f130a_L02: 62 18 42 62 70 _22 24 18 79 80 _3 7 21 _16 65 _12 2 21 / f130a_L03: 7 20 60 _1 2 _18 18 71 , 2 19 _7 7 21 61 _21 17 23 20 , 2 / f130a_L04: 31 20 19 _70 154 43 18 36 66 18 19 _6 63 18 _4 5 62 2 / f130a_L05: 65 35 68 15 _16 16 61 6 _11 18 39 19 _11 20 65 7 _25 15 / f130a_L06: 24 1 42 31 6 65 35 68 15 _16 16 61 78 21 61 6 18 / f130a_L07: 15 _18 2 7 21 ; [PLAIN:Desja ie vous ay mandé ce qui s'est] / f130b_L01: [PLAIN:presupposé] _6 31 _7 16 37 19 36 60 66 20 15 18 _11 / f130b_L02: 62 46 18 31 36 18 19 _11 61 42 16 10 2 19 60 66 _11 / f130b_L03: 15 19 _26 _12 _20 5 61 _17 61 65 21 _7 20 36 _2 6 71 10 / f130b_L04: 36 66 7 _11 _10 4 51 2 36 20 61 1 40 15 _11 20 24 7 / f130b_L05: 2 18 _19 21 _7 61 80 _16 10 _7 7 21 _16 18 36 4 50 21 / f130b_L06: 21 _8 18 59 46 2 18 _1 18 _16 2 23 64 20 _23 20 19 / f130b_L07: 37 _26 21 _22 21 _6 36 20 9 6 23 23 62 _6 21 ,"
+  },
+  {
+   "id": "f86",
+   "source": "ciphers/fr5160-letellier-1653/ciphertext_f86.tsv",
+   "tokens": 280,
+   "groups": "L01: _18 15 19 _3 7 21 61 64 9 m _28 15 21 2 20 _21 m 15 / L02: 18 _30 9 37 19 _0 _34 M. 35 17 5 _14 17 _37 7 _3 7 21 / L03: 60 _28 15 21 33 18 19 _13 7 _26 _3 7 21 61 _14 15 71 21 / L04: 35 18 20 61 20 23 _12 19 36 M. _18 18 42 16 10 56 / L05: 71 20 30 7 _13 15 20 40 15 _11 71 _23 21 19 m 115 36 60 4 _13 / L06: 15 _11 30 _0 5 61 39 71 m 4 _22 24 18 _17 73 15 _11 / L07: 6 _16 _13 15 19 31 16 61 60 [mais] [aussy] 55 9 _0 9 71 36 / L08: 4 _13 15 _11 6 M. 35 17 5 _14 18 _16 _18 15 19 _20 18 / L09: 24 7 9 62 2 [et] [c'est] [ce] [qui] [donne] [lieu] [de] 36 _17 _11 21 / L10: 20 30 _28 15 21 18 6 16 10 _11 21 66 20 115 _1 7 19 / L11: m _28 15 21 _0 21 61 m 31 7 8 _7 24 18 19 _0 21 19 71 / L12: 20 61 20 m 1 40 15 _11 20 m 42 18 5 20 _16 17 9 60 / L13: 61 20 37 _26 21 20 37 20 33 7 21 20 6 16 61 m _21 / L14: 24 18 59 46 _17 30 2 20 _21 7 18 2 1 41 4 19 36 / L15: 59 20 _22 31 24 7 36 _15 50 9 71 _7 m 9 19 78 18 / L16: 62 2 7 m 31 7 8 _7 24 18 19 2 20 21 _4 9 62 21"
+  },
+  {
+   "id": "f88",
+   "source": "ciphers/fr5160-letellier-1653/ciphertext_f88.tsv",
+   "tokens": 284,
+   "groups": "L01: [peut] [estre] [que] M.r 36 _15 _28 9 2 m 16 60 18 19 m 4 33 17 _0 13 71 21 115 / L02: _15 _18 2 7 21 59 20 _6 m _0 21 66 _3 7 21 _13 15 19 23 / L03: _11 18 3 _11 _11 _18 64 _22 24 18 36 20 9 65 _12 2 21 9 m / L04: 9 m 18 19 36 20 23 _12 18 71 20 _16 20 36 20 6 16 61 20 / L05: 24 18 37 19 26 m 7 33 7 23 36 27 2 18 [mais] 60 16 62 / L06: m 18 71 2 20 19 _17 37 20 27 _13 _3 21 _22 24 18 71 2 m 31 16 / L07: 61 20 _7 16 _3 7 21 _13 15 19 40 15 _11 2 18 19 _7 16 16 _13 15 / L08: 19 _19 21 23 _11 70 18 19 _7 16 23 _11 41 _10 31 16 61 60 / L09: 2 19 15 16 _16 _13 15 19 28 18 [.] _6 _28 7 20 2 ? 20 15 / L10: 20 _17 2 10 36 _1 71 19 _11 21 _7 64 9 2 18 m 40 15 / L11: 70 15 20 19 _11 60 40 18 _20 15 _17 2 [car] [ce] [ne] [peut] / L12: _5 _26 4 36 20 _16 15 18 36 60 62 2 71 21 36 60 ? / L13: 31 20 19 7 71 4 53 _16 _7 16 40 7 19 _26 15 16 61 ? / L14: 36 23 _11 10 _16 45 21 35 18 19 _3 7 21 _20 18 19 27 / L15: 36 78 18 71 21 m 33 18 73 15 20 19 _11 _8 18 9 _1 18 / L16: [je] [suis] [,]"
+  }
+ ],
+ "ciphertext_source": "ciphers/fr5160-letellier-1653/ciphertext_f67.tsv, ciphertext_f86.tsv, ciphertext_f88.tsv (two blind passes reconciled from Gallica ark:/12148/btv1b9060495t, LANE G2, 24 Sept 2026); groups as transcribed, '[...]' = clear French in the manuscript, lines joined by ' / '",
+ "alphabet": "numeral nomenclator, numerals with and without a mark (_18 = marked 18); key_1659.tsv / key_1659_ext.tsv (74+ groups)",
+ "design": "French nomenclator, Brienne's office 1659 (letters, syllables, a few names), cipher passages interleaved with clear French",
+ "constraints": [
+  "f.86/f.88: contemporary decipherment on f.87 (AUDIT.md N0); f.67: clear text written out on f.68r (AUDIT.md V5b re-class N0)",
+  "readings: reading_f67_C.txt (C 454, M 92 of 546), reading_f86.txt (C 68, M 200, P 12), reading_f88.txt (C 101, M 167, P 13, U 3)",
+  "the 1653 band of this volume (f.1, f.9) has no committed reading and is not judged here"
+ ],
+ "cheap_tests_in_order": [
+  "1. judge the three committed readings under fr17 and fr (SPEC-FR17, 3 Oct 2026): judge_input.py -> judge_f67_C.txt, judge_f86.txt, judge_f88.txt"
+ ],
+ "cheap_test_done": null,
+ "reading": "ciphers/fr5160-letellier-1653/reading_f67_C.txt, reading_f86.txt, reading_f88.txt (judge inputs from judge_input.py: clear words and labels dropped)",
+ "judge": {
+  "language": "fr17",
+  "language_also": "fr",
+  "era_note": "fr17 (tools/data/fr17, 1617-1644 Richelieu/Peiresc/Chapelain/Mazarin letters, period spelling) is the era-matched corpus; tools/data/fr17/README.md 'Use' says run both fr17 and the fr default (fr16, Catherine de Medicis letters) for a 1615-1665 French target and report both; a PASS under one and FAIL under the other is 'judge cannot decide'. Expected real-prose false negatives under fr17 alone about 14% (N=138) to 17% (N=300). judge_plaintext.py reads one language per run, so the fr run uses a copy of this spec with language set to 'fr'."
+ },
+ "written": "3 Oct 2026, SPEC-FR17 (account-4)"
+}

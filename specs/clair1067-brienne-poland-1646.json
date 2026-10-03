@@ -1,0 +1,59 @@
+{
+ "slug": "clair1067-brienne-poland-1646",
+ "name": "Lomenie de Brienne to the Queen of Poland (Marie-Louise de Gonzague), 19 May 1646, BnF Clairambault 1067 fol.226r-227r",
+ "date": "19 May 1646",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": [
+  "f226r_C1: 55 18 _84 > 35",
+  "f226r_C2: 40 54 Z 65 64 _88 48 Z d 13 w _27",
+  "f226v_C01: _94 9_ y_ 68 ~ v 70 55 18 28 _99 Z 65",
+  "f226v_C02: 2# _81 77 ~ v X 65 Z ~ y_ 70 p 82 Z",
+  "f226v_C03: w Z 65 9 72 Z v 60 Z 50 y",
+  "f226v_C04: L 60 _71 9+ 33 40 Z v 60 Z _88 36 _88",
+  "f226v_C05: 31 y_ 72 rr 9_ 54 y_ L 22 9 60 41 rr 75",
+  "f226v_C06: ff 24 62 ~ 9_ y_ v 29 Z ~ y_ Z",
+  "f226v_C07: 69 y_ _82 Z",
+  "f226v_C08: 69 rr y 25 9_ X _88 _82 ff 24",
+  "f226v_C09: 23 _94 w ~ y_ 66 24 71 v 60 103",
+  "f226v_C10: _91 9 rr 75 X 39 81 _88 40 75 X 41",
+  "f226v_C11: ~ Z 65 v 62 rr 75 59 _100 X 71 m",
+  "f226v_C12: _99 9_ _91 39 50 Z 65 2# 66 q y_ 102",
+  "f226v_C13: 31 ~ y_ 70 42 9_ _88 51 ~ Z",
+  "f226v_C14: 67 y_ w y 65 y_ _82 _91 62 h_ _71 32",
+  "f227r_C01: 54 y_ v _71 L 62 ~ d v",
+  "f227r_C02: 9_ y_ _91 75 rr X _92 _91 d 9 _88",
+  "f227r_C03: 40 75 X 41 ~ Z 56 ff 65 62 ~ v",
+  "f227r_C04: ~ y 50 Z 66 y 24 _88 24 32 v x 60",
+  "f227r_C05: 9_ y_ _90 rr y 70 _94 w ~ y_ 66 9_ y_",
+  "f227r_C06: 23 48 y_ 65 9_ _88 24 75 y_ L 60",
+  "f227r_C07: 80 31 18 Z 70 v 62 rr 75 62 ~ v",
+  "f227r_C08: _88 23 89 w _99 85 ff 70 31 ~ Z",
+  "f227r_C09: 52 65 24 _86 65 X 75 X 22 h_ w",
+  "f227r_C10: rr y_ 9_ m+ 9_ > oo 24 56 5 52 103",
+  "f227r_C11: 9_ ff 24 9_ y_ _82 55 26 h_ w h_ o",
+  "f227r_C12: y_ v _71 v 60 _100 ~ Z 52 75 rr",
+  "f227r_C13: _71 _91 d _88 39 75 X Z 103 102",
+  "f227r_C14: _88 28 oo 62 32 v x 60 24 60 oo 60 Z"
+ ],
+ "ciphertext_source": "ciphers/clair1067-brienne-poland-1646/ciphertext.txt (two passes passA/passB reconciled from Gallica ark:/12148/btv1b9000856f, LANE G2, 24 Sept 2026); one line per cipher line, label then tokens; 338 tokens",
+ "alphabet": "nomenclator: numerals 1-99 with and without an underscore mark (_84 = marked 84), letters (Z, d, v), and signs (> hook); each whitespace token is one group; 84 codes in key_1646.tsv",
+ "design": "French nomenclator of letters, syllables and a few words (key_1646.tsv), Brienne's office; cf. key_brienne_1647.tsv / key_brienne_1651.tsv",
+ "constraints": [
+  "interlinear contemporary decipherment on the leaf over all 30 cipher lines (dechiffre.tsv); AUDIT.md N0",
+  "committed reading reading_1646.txt: C 307, M 31 of 338 tokens; no H, no S",
+  "cipher passages only, interleaved with clear French"
+ ],
+ "cheap_tests_in_order": [
+  "1. judge the committed reading under fr17 and fr (SPEC-FR17, 3 Oct 2026): judge_input.py -> judge_1646.txt"
+ ],
+ "cheap_test_done": null,
+ "reading": "ciphers/clair1067-brienne-poland-1646/reading_1646.txt (judge input: judge_1646.txt from judge_input.py, letters of the deciphered groups only)",
+ "judge": {
+  "language": "fr17",
+  "language_also": "fr",
+  "era_note": "fr17 (tools/data/fr17, 1617-1644 Richelieu/Peiresc/Chapelain/Mazarin letters, period spelling) is the era-matched corpus; tools/data/fr17/README.md 'Use' says run both fr17 and the fr default (fr16, Catherine de Medicis letters) for a 1615-1665 French target and report both; a PASS under one and FAIL under the other is 'judge cannot decide'. Expected real-prose false negatives under fr17 alone about 14% (N=138) to 17% (N=300). judge_plaintext.py reads one language per run, so the fr run uses a copy of this spec with language set to 'fr'."
+ },
+ "written": "3 Oct 2026, SPEC-FR17 (account-4)"
+}

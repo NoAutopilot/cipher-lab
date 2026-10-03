@@ -2021,3 +2021,35 @@ no Turin (Archivio di Stato) edition was searched. **Not found / not searched** 
 full-text passes logged here.
 Requests: be-api.us.archive.org 3, www.googleapis.com 3, ecp.ep.liu.se 1, scienceblogs.de 1, github.com clones shared
 with the other three GF-A2-8 targets, WebSearch 7.
+
+## Judge under fr17 and fr (SPEC-FR17, account-4, 3 Oct 2026 08:30 UTC)
+
+Rule 7's judge step had never run on this folder's readings (no spec; REJUDGE-FR17, ROOM.md 07:51 UTC). Wrote
+`specs/fr5160-letellier-1653.json` (3a form; f.67, f.86, f.88 ciphertexts as transcribed; judge block `language: fr17`,
+`language_also: fr`, per tools/data/fr17/README.md "Use"). `judge_input.py [--check]` regenerates the judge inputs: the
+three committed readings with line labels, header lines, '?' and the manuscript's own clear words dropped
+(`judge_f67_C.txt` 812 letters from `reading_f67_C.txt`; `judge_f86.txt` 387, `judge_f88.txt` 387), and as rule-3
+period-gloss controls `judge_gloss_f87.txt` (the f.87 contemporary decipherment of f.86+f.88, heading dropped, 908 letters)
+and `judge_gloss_f68.txt` (the f.68r clear copy of f.67's cipher passages, 916 letters). The fr run uses a copy of the spec
+with `language` set to `fr`. Circularity: fr17 stops at June 1644, nothing of 1659; Mazarin tome I has no "Dambrun"/"Reyne de
+Pologne" hit. Outputs of `tools/judge_plaintext.py <spec> --file <file>`:
+
+```
+fr17  judge_f67_C.txt:     FAIL language: score=-0.891, null_p99=-1.882, real_p05=-0.874, real_median=-0.784, mode=both, N=812
+fr    judge_f67_C.txt:     FAIL language: score=-0.902, null_p99=-1.88,  real_p05=-0.873, real_median=-0.78,  mode=both, N=812
+fr17  judge_f86.txt:       FAIL language: score=-1.181, null_p99=-1.847, real_p05=-0.878, real_median=-0.785, mode=both, N=387
+fr    judge_f86.txt:       FAIL language: score=-1.219, null_p99=-1.821, real_p05=-0.895, real_median=-0.778, mode=both, N=387
+fr17  judge_f88.txt:       FAIL language: score=-1.267, null_p99=-1.847, real_p05=-0.878, real_median=-0.785, mode=both, N=387
+fr    judge_f88.txt:       FAIL language: score=-1.253, null_p99=-1.821, real_p05=-0.895, real_median=-0.778, mode=both, N=387
+fr17  judge_gloss_f68.txt: ok   language: score=-0.752, null_p99=-1.909, real_p05=-0.87,  real_median=-0.785, mode=both, N=916
+fr    judge_gloss_f68.txt: ok   language: score=-0.779, null_p99=-1.902, real_p05=-0.892, real_median=-0.784, mode=both, N=916
+fr17  judge_gloss_f87.txt: ok   language: score=-0.792, null_p99=-1.907, real_p05=-0.873, real_median=-0.782, mode=both, N=908
+fr    judge_gloss_f87.txt: ok   language: score=-0.859, null_p99=-1.893, real_p05=-0.884, real_median=-0.782, mode=both, N=908
+```
+
+Verdict: all three readings FAIL under both fr17 and fr (no split; not "judge cannot decide" by the README's split test), all
+far above the shuffle null. Unlike clair1067, the period controls PASS under both corpora, so the judge can pass the true text
+of these leaves: the FAILs measure the readings' own letter-level noise. f.67 (C 454, M 92) misses real_p05 by 0.017 (fr17);
+f.86 (C 68, M 200) and f.88 (C 101, M 167, U 3) miss by 0.3-0.4, matching their M shares. Not a key negative (the plaintext of
+every passage is on f.87/f.68r, AUDIT.md N0), but the f.86/f.88 readings as committed are not verbatim text, and the f.87 /
+f.68r decipherments, not these readings, are what any quotation should use. Status, AUDIT.md and the readings unchanged.
