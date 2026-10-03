@@ -79,6 +79,14 @@ LANG_CORPORA = {
     "sco16": [DATA / "sco16" / f"{i}.txt.gz" for i in ("worksofjohnkn01knox", "worksofjohnkn02knox",
               "adiurnalremarka00thomgoog", "historielifeofki00colvuoft", "registerofprivyc0002jjoh")],
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
+    # nl18 (3 Oct 2026, NL18-CORPUS, account-4): 1770-1799 Dutch prose, colonial/official register -- Hartsinck's
+    # Beschryving van Guiana (1770, 2 vols), Stedman's Reize naar Surinamen (Dutch tr. 1799), Batavia (1799), Marsden's
+    # Sumatra (Dutch 1789), Reizen naa Ceilon (1796), Verzameling van stukken ... Noord-America (1781) -- for
+    # na-suriname-map-1781 (1781 Suriname fortification legends). OCR long-s repaired at build (build_nl18.py).
+    # Read tools/data/nl18/README.md for the leave-one-file-out false-negative rate and per-fold spread first.
+    "nl18": [DATA / "nl18" / f for f in ("beschryvingvangu01hart.txt.gz", "beschryvingvangu02hart.txt.gz",
+             "bub_gb_mGdCAAAAcAAJ.txt.gz", "bataviaindeszelf02amst.txt.gz", "beschryvingvanh00esch.txt.gz",
+             "reizennaaceilon00roosgoog.txt.gz", "verzamelingvanst01vand.txt.gz")],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
     # fr18 (25 Sept 2026, LANE ZX2 ZX2-FR18): French diplomatic/official prose c.1680-1790 -- Torcy's and

@@ -1,0 +1,60 @@
+legend	mode	N	err	score	real_p05	real_median	null_p99	verdict	shuf_max	shuf_pass
+2039_legend	first	468	0.398	-1.578	-0.946	-0.804	-1.718	FAIL	-1.856	0/200
+2039_legend	second	468	0.398	-1.597	-0.946	-0.804	-1.718	FAIL	-1.8	0/200
+2039_legend	drop	433	0.398	-1.512	-0.948	-0.806	-1.714	FAIL	-1.702	0/200
+2039_remarque	first	277	0.349	-1.407	-0.97	-0.799	-1.666	FAIL	-1.722	0/200
+2039_remarque	second	277	0.349	-1.472	-0.97	-0.799	-1.666	FAIL	-1.708	0/200
+2039_remarque	drop	264	0.349	-1.398	-0.941	-0.803	-1.709	FAIL	-1.636	0/200
+2046_legend	first	323	0.356	-1.451	-0.944	-0.807	-1.7	FAIL	-1.77	0/200
+2046_legend	second	323	0.356	-1.411	-0.944	-0.807	-1.7	FAIL	-1.724	0/200
+2046_legend	drop	290	0.356	-1.416	-0.975	-0.807	-1.692	FAIL	-1.627	0/200
+2061_battery	first	249	0.34	-1.591	-0.97	-0.816	-1.684	FAIL	-1.847	0/200
+2061_battery	second	249	0.34	-1.637	-0.97	-0.816	-1.684	FAIL	-1.824	0/200
+2061_battery	drop	228	0.34	-1.581	-0.93	-0.802	-1.674	FAIL	-1.779	0/200
+2077_legend	first	605	0.307	-1.484	-0.937	-0.816	-1.741	FAIL	-1.8	0/200
+2077_legend	second	605	0.307	-1.542	-0.937	-0.816	-1.741	FAIL	-1.764	0/200
+2077_legend	drop	551	0.307	-1.453	-0.94	-0.812	-1.733	FAIL	-1.693	0/200
+
+held_out	legend	N	err	clean_FN	corrupt_FN	of
+beschryvingvangu01hart.txt.gz	2039_legend	468	0.3983402489626556	21	200	200
+beschryvingvangu01hart.txt.gz	2039_remarque	277	0.3493150684931507	19	200	200
+beschryvingvangu01hart.txt.gz	2046_legend	323	0.356353591160221	3	200	200
+beschryvingvangu01hart.txt.gz	2061_battery	249	0.33955223880597013	18	200	200
+beschryvingvangu01hart.txt.gz	2077_legend	605	0.3069908814589666	11	200	200
+beschryvingvangu02hart.txt.gz	2039_legend	468	0.3983402489626556	32	200	200
+beschryvingvangu02hart.txt.gz	2039_remarque	277	0.3493150684931507	31	200	200
+beschryvingvangu02hart.txt.gz	2046_legend	323	0.356353591160221	43	200	200
+beschryvingvangu02hart.txt.gz	2061_battery	249	0.33955223880597013	40	200	200
+beschryvingvangu02hart.txt.gz	2077_legend	605	0.3069908814589666	39	200	200
+bub_gb_mGdCAAAAcAAJ.txt.gz	2039_legend	468	0.3983402489626556	143	200	200
+bub_gb_mGdCAAAAcAAJ.txt.gz	2039_remarque	277	0.3493150684931507	152	200	200
+bub_gb_mGdCAAAAcAAJ.txt.gz	2046_legend	323	0.356353591160221	138	200	200
+bub_gb_mGdCAAAAcAAJ.txt.gz	2061_battery	249	0.33955223880597013	120	200	200
+bub_gb_mGdCAAAAcAAJ.txt.gz	2077_legend	605	0.3069908814589666	179	200	200
+bataviaindeszelf02amst.txt.gz	2039_legend	468	0.3983402489626556	18	200	200
+bataviaindeszelf02amst.txt.gz	2039_remarque	277	0.3493150684931507	12	200	200
+bataviaindeszelf02amst.txt.gz	2046_legend	323	0.356353591160221	21	200	200
+bataviaindeszelf02amst.txt.gz	2061_battery	249	0.33955223880597013	22	200	200
+bataviaindeszelf02amst.txt.gz	2077_legend	605	0.3069908814589666	12	200	200
+beschryvingvanh00esch.txt.gz	2039_legend	468	0.3983402489626556	32	200	200
+beschryvingvanh00esch.txt.gz	2039_remarque	277	0.3493150684931507	33	200	200
+beschryvingvanh00esch.txt.gz	2046_legend	323	0.356353591160221	36	200	200
+beschryvingvanh00esch.txt.gz	2061_battery	249	0.33955223880597013	34	200	200
+beschryvingvanh00esch.txt.gz	2077_legend	605	0.3069908814589666	35	200	200
+reizennaaceilon00roosgoog.txt.gz	2039_legend	468	0.3983402489626556	86	200	200
+reizennaaceilon00roosgoog.txt.gz	2039_remarque	277	0.3493150684931507	71	200	200
+reizennaaceilon00roosgoog.txt.gz	2046_legend	323	0.356353591160221	74	200	200
+reizennaaceilon00roosgoog.txt.gz	2061_battery	249	0.33955223880597013	71	200	200
+reizennaaceilon00roosgoog.txt.gz	2077_legend	605	0.3069908814589666	83	200	200
+verzamelingvanst01vand.txt.gz	2039_legend	468	0.3983402489626556	96	200	200
+verzamelingvanst01vand.txt.gz	2039_remarque	277	0.3493150684931507	76	200	200
+verzamelingvanst01vand.txt.gz	2046_legend	323	0.356353591160221	93	200	200
+verzamelingvanst01vand.txt.gz	2061_battery	249	0.33955223880597013	70	200	200
+verzamelingvanst01vand.txt.gz	2077_legend	605	0.3069908814589666	71	200	200
+
+legend	N	clean_FN_blended	clean_FN_per_fold	corrupt_FN_blended	corrupt_FN_per_fold
+2039_legend	468	0.306	0.090-0.715	1.000	1.000-1.000
+2039_remarque	277	0.281	0.060-0.760	1.000	1.000-1.000
+2046_legend	323	0.291	0.015-0.690	1.000	1.000-1.000
+2061_battery	249	0.268	0.090-0.600	1.000	1.000-1.000
+2077_legend	605	0.307	0.055-0.895	1.000	1.000-1.000

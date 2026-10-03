@@ -17,8 +17,9 @@
     "transcribe 2039/2046/2077's ciphered legend/cartouche lines and decode with the key -- NOT DONE (insufficient coverage to be worth the transcription cost)"
   ],
   "judge": {
-    "language": "nl",
-    "min_word_cover": 0.4
+    "language": "nl18",
+    "min_word_cover": 0.4,
+    "note": "3 Oct 2026 NL18-CORPUS: language nl -> nl18 (1770-1799 colonial/official Dutch, tools/data/nl18). Judge of unknown reliability (LOFO FN 27-31%, folds 1.5-89.5%) and without power above ~5% letter error; see tools/data/nl18/README.md and ciphers/na-suriname-map-1781/judge/."
   },
   "written": "25 Sept 2026, RD03 (LANE VX), for .claude/briefs/runs/2026-09-25-lane-vx-rd03.md. Judge not yet run against a target reading: no target sheet has enough decoded signs to test. The judge block above is set for whichever follow-on worker completes the key and decodes 2039/2046/2077's legend text. RD03D 25 Sept 2026 (final LANE VX worker on this target): key extended to 17 signs, transfers out of sample -- 'Plan' confirmed unforced on 2077's cartouche, 'van'(2039)/'PAN'(2039) an unresolved single-glyph disagreement. Sign-coverage sampling on target sheets: 2077 33% high-confidence (2 legend entries + cartouche, cross-checked), 2039/2046 ~64% (single uncorroborated pass, M-grade). Still no target-sheet ciphertext.tsv/reading/judge run -- coverage and reliability both short of the bar. Status stays partial; see NOTES.md 'State at close' for the next step.",
   "cheap_test_done": {
