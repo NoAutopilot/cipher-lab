@@ -1,4 +1,5 @@
 open
+CSP Domestic Charles I 1637-38 (Bruce, IA `sim_great-britain-public-record-1625-1649-domestic-series_1637-1638`), *Calendar of the Clarendon State Papers* vol. 1 (IA `calendarofclaren01bodluoft`, Windebank's papers) and HMC Cowper vol. 2 (IA `manuscriptsofear02grea_1`, Coke's papers), each grepped whole by this worker 3 Oct 2026 for Roe, Hamburg and 15/25 July 1638 and read at the July 1638 entries (CSPD pp. 559-575; Cal. Clar. pp. 157-174; HMC Cowper ii pp. 187-190): no Roe-to-Secretary letter of 15/25 July 1638 is calendared; Cal. Clar. vol. 1 p. 215, no. 1486 item 14, lists 'Sir Thos. Roe's cypher. End. by Windebank.' (a period key, not a reading of this letter).
 
 # Sir Thomas Roe to the Secretary of State, postscript in cipher — TNA SP 81/44/225
 
@@ -89,3 +90,41 @@ Waits on: a TNA page-copy order for SP 81/44/225 alongside the candidate key sib
 - S: search SP 81/44's already-listed June-August 1638 items (Oxenstierna, Palatine, Scudamore, Boswell, Windebank, Leicester) for a decipher/key description closer in date to f.225 than f.88's 30 May.
 - S: fetch f.88's full record detail (note field) individually -- only its description text has been checked so far.
 - S: search OpenAlex/CORE_API_KEY (now set) for a free green-OA copy of the EHR article 'Mission of Sir Thomas Roe to the Conference at Hamburg, 1638-40', not tried with the newer keys.
+
+## Web and blog check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `"Swyfte" Lockhart 1657 ...` and (3) `1642 1644 English cipher letter France State
+Papers Foreign deciphered` (run for the sibling SP batch; no Roe hit); (2) site-restricted to the three blogs, `Thomas Roe
+1638 cipher letter Hamburg` -- **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne: Louis XIV letter, Ferdinand III
+posts, a 1783 letter, a WWII item), **Cipher Mysteries** (ciphermysteries.com page 8, Beale, fifteenth-century
+cryptography), **Cryptiana blog** (cryptiana.blogspot.com / Tomokiyo's cryptiana.web.fc2.com: no Roe hit); (3) an earlier
+query with the three blogs named in `site:` form returned general Roe biography (Wikipedia "Thomas Roe") and nothing on
+this item; (4) `Sir Thomas Roe 1638 "Secretary of State" postscript cipher SP 81/44 Germany` (24 Sept 2026, item 3 above).
+No hit names SP 81/44/225 or a reading of Roe's 1638 cipher, so no comment thread to read. Solver repositories re-cloned
+shallow 3 Oct 2026 and grepped (`SP ?81/4[0-9]`, `Thomas Roe`): no Roe target in either; the only `Roe` hits are unrelated
+words in other targets' source texts.
+
+## Premise check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **found, not this item** -- SP 81/44/88 (30 May 1638) "Coke to Roe, with
+decipher and copy" is a decipherment of a different letter six weeks earlier, same channel; Discovery `digitised: false`,
+so not opened. New this pass, a period key for the channel: *Calendar of the Clarendon State Papers* vol. 1 p. 215,
+no. 1486, "Keys to various Cyphers, principally those used by the Ambassadors resident abroad", item 14 "Sir Thos.
+Roe's cypher. End. by Windebank." (Bodleian, Clarendon State Papers; the calendar gives no folio). If f.225's addressee
+is Windebank, this is the key family to apply; it is a key source, not a reading -- the item stays `open`. (b) Other
+solvers' working files: **not found** (no Roe folder in Bourdeau's or Aymeloglu's repository). (c) Physical neighbours:
+**unreachable** -- f.225 and its neighbours are `digitised: false` (Discovery C7775394); the piece's term-sweep (24 Sept)
+found no decipher item adjacent to f.225. (d) Recipient side: **not found** -- both possible recipients' papers were read
+in print: Windebank's (Cal. Clar. vol. 1, July-Aug 1638 entries pp. 157-174, Roe appears only in third-party newsletters
+and the agents' address list no. 1165) and Coke's (HMC Cowper vol. 2 pp. 187-190, July 1638, no Roe letter); CSP Domestic
+1637-38 likewise (Roe in 19 entries, none this letter).
+
+## While waiting (3 Oct 2026, GF4-BATCH7)
+
+Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md; consolidated TNA batch).
+
+- S: find the Bodleian catalogue record for the Clarendon State Papers volume holding Cal. Clar. no. 1486 (keys, item 14 "Sir Thos. Roe's cypher") and quote its availability flag (tools/data/catalogue_ladders.tsv), ~$1.
+- S: fetch SP 81/44/88's full Discovery record detail (note field) to see whether its "decipher" names the cipher used.
+
+Requests this pass (shared with the sibling targets where noted): archive.org 6 (advancedsearch 3, djvu.txt 3), github.com
+2 shallow clones (shared), WebSearch 2 for this target.
