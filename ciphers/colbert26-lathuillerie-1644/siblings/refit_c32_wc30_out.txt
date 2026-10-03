@@ -1,0 +1,9 @@
+pairs	f23 116	c32 24	c30 11	tokens 742
+stat	real	ctrl	mean	p95	max	P(ctrl>=real)	gate
+agrees_total	194	A-derange-within-unit	104.6	116	129	0.00	PASS
+agrees_total	194	B-f23-window	180.8	192	195	0.04	-
+agrees_sibling	81	A-derange-within-unit	67.1	78	80	0.00	-
+agrees_sibling	81	B-f23-window	68.7	81	86	0.06	FAIL
+agrees_c32	61	A-derange-within-unit	46.7	56	65	0.02	-
+agrees_c32	61	B-f23-window	44.5	53	61	0.02	-
+gates	G1 PASS G2 FAIL
