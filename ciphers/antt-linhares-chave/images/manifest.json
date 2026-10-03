@@ -125,6 +125,45 @@
     "prominence": 8.0
    },
    "date": "02 Oct 2026"
+  },
+  {
+   "crop": "m0002_p2L2z_L01.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-CLNH-0086-11_m0002.jpg.jpg",
+   "box": [
+    610,
+    100,
+    960,
+    175
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     37
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "m0002_p2L2z_L01_g01.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-CLNH-0086-11_m0002.jpg.jpg",
+   "box": [
+    624,
+    100,
+    960,
+    175
+   ],
+   "band": 1,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 40 column ink profile",
+   "date": "03 Oct 2026"
   }
  ],
  "next_lin_2026_10_02": {

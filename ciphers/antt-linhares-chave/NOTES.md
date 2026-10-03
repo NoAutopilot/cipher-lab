@@ -1079,3 +1079,32 @@ shared convention. Both counters fail on word identity or on single rows, never 
 (tuning-leaf edges are cleanly bimodal at 0 and ~20 px), so the next instrument keeps the pixel rows as units and has
 each row crop read (flush or indent, first word) rather than counted or OCR-matched.
 Requests: archive.org 1 (the hOCR file, re-fetched to the scratchpad). Vision calls 0, subagents 0.
+
+## m0002 p.2 line 2: cancelled group and first glyph of 829011 (A1B-LIN-M0002b, 3 Oct 2026) -- PRE-REGISTRATION (pushed before any read)
+
+Crop command (run 3 Oct 2026; the 1182 x 774 file is DigitArq's full-size dissemination image, no larger source exists, no fetch made):
+
+```
+python3 tools/iiif_lines.py --image ciphers/antt-linhares-chave/images/full_PT-TT-CLNH-0086-11_m0002.jpg.jpg \
+  --out ciphers/antt-linhares-chave/images --region 610,100,350,75 --centres 37 --prefix m0002_p2L2z \
+  --groups 40 --group-upscale 4 --debug
+# region 350x75, 1 lines, 1 bands x 1 segments; band L01: 1 pieces at gap >= 40; wrote 2 crops
+```
+
+Crops: `images/m0002_p2L2z_L01.jpg` (native 350x75) and `images/m0002_p2L2z_L01_g01.jpg` (the same, 4x, 1392x300).
+The debug overlays (`m0002_p2L2z_lines_debug.jpg`, `..._groups_debug.jpg`) were checked by eye: the band holds
+829011 with its subscript, the whole looped cancelled group with its interlinear mark, and 328131 with its
+subscript; one piece, nothing cut. Only the 4x crop goes to the readers (no full page, no candidate values, no
+existing transcription).
+
+Tokens in question and what settles each (two blind Sonnet subagent reads, then one reconciliation by this worker):
+
+| # | token | settled when | grade if settled | split | what changes if settled |
+|---|---|---|---|---|---|
+| T1 | first glyph of the group recorded as 829011 (p2 l2 pos6) | both reads give the same digit for glyph 1 | H (NOTES convention: read off the image, two blind passes agree) | stays as recorded, grade drops H -> M, gap stays open | **3**: the group is 329011, parses as p290 c1 r1 ("Paralisia", trim 5 -> "para", grade I until the headword is re-counted on the page image); ciphertext.tsv row edited, is_null false, decode `--check` re-run, AUDIT.md and SECOND-OPINIONS-QUEUE.tsv propagated (rule 10). **8**: 829011 confirmed at H as written; the null question passes to the Part II test (Escalation key-rebuild (4)) |
+| T2 | the remaining digits of that group (positions 2-6) and its subscript | both reads agree digit for digit | H | M on the split digit only | a change at any position is logged and the parse re-run as above |
+| T3 | the cancelled, looped group: is any digit legible under the strike? | both reads give the same digit string (or both say illegible) | digits both read: M (struck text is never H here); both "illegible": recorded as illegible | recorded as illegible, M | a cancelled row is added to ciphertext.tsv (is_null "cancelled", no book_page/col/rank), never decoded or counted in the reading |
+| T4 | the interlinear mark above the cancelled group | both reads give the same characters | M (a correction or note, not a cipher group) | recorded as "mark, unread" | recorded in the cancelled row's note; if it reads as a cipher group or digits it is logged, not decoded, and named as a next step |
+
+No threshold beyond "both reads agree" is used. A reconciliation by this worker may break a split only by naming a
+visible feature of the crop; a split it cannot so break stays M.
