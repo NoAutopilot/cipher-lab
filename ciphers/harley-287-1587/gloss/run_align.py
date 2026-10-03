@@ -2,6 +2,7 @@
 """A2-HAR5 (2 Oct 2026): align the R8491 f.84r / R8494 f.90r interlinear glosses to their cipher signs with
 tools/interlinear_align.py (--code-prefix mode: every sign takes 0 or 1 gloss letters), then a shuffled-alignment
 control (rule 3): the same run with each cipher line paired to another line's gloss (derangement, 20 seeds).
+A2-HAR6 added a second, length-preserving control: each pair keeps its own gloss with the letters shuffled (20 seeds).
 
 Input: gloss_pairs.tsv (reconciled two-pass transcription; committed before this script was run).
 Statistic: key consistency = sum over signs with n>=2 of (count of its majority letter) / sum of n.
@@ -19,10 +20,12 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 TOOL = os.path.join(ROOT, 'tools', 'interlinear_align.py')
 PAIRS = os.path.join(HERE, 'gloss_pairs.tsv')
 SEEDS = 20
-# shape code -> letters Bourdeau's signs.tsv gives that shape (cobham1588/signs.tsv, cyphersolver HEAD 2341682)
-SIGNS_TSV = {'U': 'a', 'T': 'ast', 'c': 'a', '+': 'b', '8': 'c', 'D': 'd', 'H': 'f', 'X': 'g', 'P': 'h',
-             'I': 'i', 'W': 'k', 'O': 'lt', 'S': 'm', '#': 'm', 'N': 'n', 'Z': 'o', 'd': 'o', 'Q': 'p',
-             'V': 'r', 'G': 'ry', '7': 'e', 'u': 'uv', ':': 'u', 'w': 'w'}
+# shape code -> letters Bourdeau gives that shape (cobham1588 runs.txt legend / signs.tsv, cyphersolver)
+# A2-HAR6 (3 Oct 2026): replaced A2-HAR5's undocumented shape code with Bourdeau's documented ASCII code (the legend of
+# solver/runs_bourdeau.txt, l.3-10), the code PASS_PROMPT.md gives the transcription passes.
+SIGNS_TSV = {'U': 'a', 'A': 'sta', '+': 'b', '8': 'c', 'D': 'd', 'T': 'dt', '7': 'e', 'H': 'f', 'G': 'g', 'h': 'h',
+             'I': 'iay', 'k': 'k', 'l': 'lt', 'm': 'm', '#': 'mn', 'n': 'n', 'z': 'o', 'd': 'o', 'c': 'oae', 'p': 'p',
+             'V': 'r', 'y': 'ry', ':': 'uv', 'w': 'w', 'X': 'i', 'Q': 'ar', 'L': 'e'}
 ALIGN_ARGS = ['--code-prefix', '@', '--wildcard', '?', '--null-cost', '-1.5', '--keep-fs']
 
 
@@ -97,6 +100,18 @@ def main():
         c2 = stats(k2)
         ctl.append(c2)
         out.append('shuffled\t%d\t%.3f\t%.3f\t%d' % (s, c2[0], c2[1], c2[2]))
+    ctl2 = []  # A2-HAR6: length-preserving null -- each pair keeps its own gloss, letters shuffled within it
+    for s in range(SEEDS):
+        rng = random.Random(1000 + s)
+        g2 = []
+        for r in rows:
+            letters = [ch for ch in r['gloss'] if ch != ' ']
+            rng.shuffle(letters)
+            g2.append(''.join(letters))
+        k3, _ = run(rows, g2, 'lshuf')
+        c3 = stats(k3)
+        ctl2.append(c3)
+        out.append('letter_shuffled\t%d\t%.3f\t%.3f\t%d' % (s, c3[0], c3[1], c3[2]))
     keylines = ['value\tmeaning\tn\tagree\tothers\tsigns_tsv'] + [
         '\t'.join([r['value'], r['meaning'], r['n'], r['agree'], r['others'], SIGNS_TSV.get(r['value'], '-')])
         for r in key]
@@ -115,6 +130,10 @@ def main():
     print('real consistency %.3f concordance %.3f (%d signs n>=3)' % (cons, conc, nka))
     print('shuffled consistency mean %.3f p95 %.3f; concordance mean %.3f p95 %.3f' % (
         sum(cs) / len(cs), cs[int(0.95 * len(cs)) - 1], sum(cc) / len(cc), cc[int(0.95 * len(cc)) - 1]))
+    ls = sorted(c[0] for c in ctl2); lc = sorted(c[1] for c in ctl2)
+    print('letter-shuffled consistency mean %.3f max %.3f; concordance mean %.3f max %.3f' % (
+        sum(ls) / len(ls), ls[-1], sum(lc) / len(lc), lc[-1]))
+    print('pair-shuffled max consistency %.3f concordance %.3f' % (cs[-1], cc[-1]))
 
 
 if __name__ == '__main__':
