@@ -2025,3 +2025,49 @@ gaps are not, on this evidence, hidden names spelt out letter by letter.
 Not done: (b) beyond the logged ContentSearch hits; fr.3252 f.47r (live NEVBIR-47C claim, 0.66 two-reader agreement). Next (not
 started): once the sorter settles which off-sheet shapes are one sign, test "this sign = one name" by collecting each recurring
 sign's contexts across nos.71/86/87/90 against the gazetteer, ~$1 disk only.
+
+## TX-ATLAS-B72 (3 Oct 2026, account 2 for the account-3 orchestrator): one sign atlas for the 1572 key family
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-tx-atlas-b72.md`; folder `atlas/` (README there has every command). Scored
+two ways: the clerk sheet directly (`atlas/score_no87.py`, written before TX-BENCH landed) and `tools/tx_bench.py`
+once it landed mid-job (`atlas/tx_bench_atlas.txt`). No
+committed reading or transcription was changed; the atlas is an input for TX-DECODE.
+
+- **Segment** (`tools/glyph_atlas.py segment --debug`, 18 native region pages of nos.71-90 + fr.3252 f.117r, disk only):
+  4,209 sign boxes, 474 marks. Overlays checked by eye: f.178v is cut cleanly into its 23 lines (675 boxes for 667
+  read signs); f.178r's three sloping lines are mixed by the row-profile line split, and pages with prose (f.179r L4,
+  f.139v, f.162r) carry prose boxes, which the naming reads as `_`.
+- **Cluster** k=140 (over-split). **Naming:** no.87's boxes were mapped to the line-read tokens by a label-blind
+  width DP (`atlas/no87_map.py`: 714 one-to-one, 26 two-boxes-to-one, 8 one-box-to-two); a tune tile (f.178v L01-L12)
+  whose line-read sign decodes to the clerk's letter is a known answer (309 tiles), and names its cluster by majority
+  (76 clusters). The other 64 clusters were named from exemplar sheets, one Sonnet call per sheet (4 calls):
+  21 given a code, 9 MIXED, 34 prose/noise.
+- **Classify** (`glyph_atlas.py classify`, extended: `--topk 3` writes k1-k3 with distance and vote share, `--holdout`
+  keeps boxes out of the vote, `--page all`; test in `tools/tests/test_glyph_atlas.py`). Per-letter lattices in
+  `atlas/topk/`.
+- **err_true on no.87, held out** (f.178v L13-L23 + f.179r L01-L03, never used to name a cluster or vote; one value
+  map `keys/key_1572_clerk.tsv` else the printed sheet, no exceptions; 376 of 398 held-out tokens mapped 1:1 and
+  aligned to a clerk letter):
+
+  | reader | err_true | wrong+unvalued |
+  |---|---|---|
+  | line-read reconciliation (committed ciphertext_*.tsv) | 0.056 | 0.080 |
+  | atlas top-1 | 0.322 | 0.348 |
+  | atlas top-3 (truth's value not among the three codes) | 0.261 | -- |
+
+  Both wrong on 0.061; atlas top-1 = line-read label on 0.609.
+  **tx_bench.py** (item birago1572-no87, eval split, the same 15 held-out lines; atlas boxes in x order, `_` boxes
+  dropped, `atlas/topk/no87_heldout_bench.tsv`): **atlas top-1 err_true 0.162 (61/376, 95% 0.128-0.203)** against the
+  committed line reads on the same lines **0.040 (15/376, 0.024-0.065)**. tx_bench is kinder to the atlas than the
+  label-blind scorer because it aligns by edit distance on the labels and accepts any homophone in the truth set; its
+  top atlas confusion is s <- T50 x15. **The atlas is far worse than the line reads on this
+  hand**, and its top-3 misses a quarter of signs, so as built it cannot be the lattice that lowers err_true.
+- **Why (measured, not tuned further):** leave-one-out kNN accuracy on the 309 known-answer tiles themselves is 0.754;
+  nine HOG/size variants (cell 6/8/12, 9/12 orientations, size weight 0-3, PCA unit/shared) all land 0.728-0.754, so
+  the limit is the tiles (48 px bitmaps of connected components: touching signs merged, broken strokes split, ~45
+  classes from ~7 examples each), not the feature setting. Mapping shifts are a minor part (held-out kNN label matches
+  the token's own label 225x, a neighbour's 77x).
+- **Next (for TX-DECODE / TX-SORTER, not done here):** use the line-read label as k1 and the atlas k2/k3 as alternates
+  only where the line reads split (the lattice is useful as a candidate source, not a reader); a better tile needs
+  the line-read box positions (cut per token) rather than connected components; err_true here is on one hand's
+  held-out lines only.

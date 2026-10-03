@@ -55,6 +55,21 @@ def main():
     assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
     assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
 
+    # --topk 3 (TX-ATLAS-B72): k1 is the kNN code, k2 the other shape (only two codes + nothing else), d1 <= d2,
+    # shares sum to 1 over the voters; --page all adds a page column; --holdout keeps line-1 boxes out of the vote.
+    bk = os.path.join(d, 'topk.tsv')
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--page', 'all', '--tsv', bk,
+        '--knn', '3', '--pca-scale', 'shared', '--topk', '3', '--holdout', 'p1_01_')
+    K = list(csv.DictReader(open(bk), delimiter='\t'))
+    assert len(K) == 36 and all(r['page'] == 'p1' for r in K)
+    for r in K:
+        want = 'X' if r['box'] in marked else 'B'
+        assert r['k1'] == r['code'] == want and r['k2'] == ('B' if want == 'X' else 'X') and r['k3'] == '', r
+        assert float(r['d1']) <= float(r['d2']) and float(r['s1']) == 1.0 and float(r['s2']) == 0.0, r
+    held = [r for r in K if r['box'].startswith('p1_01_')]
+    assert len(held) == 12 and all(r['cluster_code'] == '_held' for r in held)
+    assert all(r['cluster_code'] != '_held' for r in K if r not in held)
+
     # --exclude-page: a second, UNLABELLED copy of the page (page p9) classified against p1's labels.
     # Default kNN lets p9's own boxes (all '_' since unlabelled) vote for each other; --exclude-page must not.
     import shutil

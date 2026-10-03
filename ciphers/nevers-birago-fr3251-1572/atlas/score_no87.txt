@@ -1,0 +1,5 @@
+no.87 held-out: 376 signs scored (of 398 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.056  (wrong+U 0.080)
+  atlas top-1:              err_true 0.322  (wrong+U 0.348)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.261
+  both wrong 0.061; atlas label = line-read label on 0.609

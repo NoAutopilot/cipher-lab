@@ -43,6 +43,12 @@ classify Every box of one page against the labelled boxes of ALL pages (the atla
          A script-counted box list removes the "one pass has a sign the other lacks" disagreements (fr.2933, 24 Sept).
          --exclude-page: a NEW, unlabelled page must not vote with its own boxes (they are each other's nearest
          neighbours and all vote '_'); with the flag only other pages' boxes are candidates (debosnys c4, 25 Sept 2026).
+         --topk 3 (TRANSCRIPTION.md step 5, TX-ATLAS-B72 3 Oct 2026) adds k1 d1 s1 .. k3 d3 s3: the three best codes, each
+         with the distance to its nearest labelled box and its vote share among the --knn voters; codes outside the
+         voters are ranked after them by nearest distance in a wider pool (--pool 40), share 0. This is the lattice a
+         key-constrained decode reads. --holdout PREFIX (repeatable): boxes whose id starts with PREFIX never vote and
+         their cluster code is not used for them (a held-out known-answer line scored against an atlas named without it).
+         --page all classifies every page into one TSV (a 'page' column is added).
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
 import argparse, collections, csv, json, os, sys
@@ -377,35 +383,56 @@ def cmd_classify(a):
     X = feats(bm, rows, pca_scale=a.pca_scale)
     lab = np.array([over.get(r['sid'], L['signs'].get(cl.get(('sign', r['sid'])), '_')) for r in rows], dtype=object)
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
-    tgt = [i for i, r in enumerate(rows) if r['page'] == a.page]
+    hold = tuple(a.holdout or ())
+    held = np.array([bool(hold) and r['sid'].startswith(hold) for r in rows])
+    lab[held] = '_held'                     # never a vote, never a cluster code
+    allp = a.page == 'all'
+    tgt = [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
+    if allp and a.exclude_page:
+        sys.exit('--exclude-page needs one --page, not all')
     # --exclude-page: the target page's own boxes never vote. Without it, an unlabelled new page's boxes are each
     # other's nearest neighbours and vote '_' for one another (debosnys c4a/c4b, 25 Sept 2026: 33%/45% noise, 6.5%/26%
     # with the page excluded). Only boxes of OTHER pages (the labelled set) remain candidates.
+    ok = ~held
     if a.exclude_page:
-        cand = np.array([i for i, r in enumerate(rows) if r['page'] != a.page])
-        if len(cand) == 0:
+        ok &= np.array([r['page'] != a.page for r in rows])
+        if not ok.any():
             sys.exit('--exclude-page: no boxes of any other page to vote with')
-        nn = NearestNeighbors(n_neighbors=min(a.knn, len(cand))).fit(X[cand])
-        d, ix = nn.kneighbors(X[tgt])
-        ix = cand[ix]
-    else:
-        cand = None
-        nn = NearestNeighbors(n_neighbors=a.knn + 1).fit(X)
-        d, ix = nn.kneighbors(X[tgt])
+    cand = np.where(ok)[0]
+    pool = min(len(cand), max(a.knn + 1, a.pool if a.topk > 1 else 0))
+    nn = NearestNeighbors(n_neighbors=pool).fit(X[cand])
+    d, ix = nn.kneighbors(X[tgt])
+    ix = cand[ix]
     out = []
     for n, i in enumerate(tgt):
-        dd, ii = zip(*[(x, j) for x, j in zip(d[n], ix[n]) if j != i][:a.knn])
+        pairs = [(x, j) for x, j in zip(d[n], ix[n]) if j != i]
+        dd, ii = zip(*pairs[:a.knn])
         votes = collections.Counter()
         for x, j in zip(dd, ii):
             votes[lab[j]] += 1 / (x + 1e-6)
         best = max(votes, key=votes.get)
         r = rows[i]
         mk = '|'.join(('?' if mlab.get(m, '_') == '_' else mlab[m]) for m in r['marks'].split('|') if m)
-        out.append(dict(line=int(r['line']), box=r['sid'], pos=int(r['pos']), x=int(r['x']), y=int(r['y']),
-                        w=int(r['w']), h=int(r['h']), code=best, dist=f'{dd[0]:.3f}',
-                        share=f'{votes[best] / sum(votes.values()):.2f}', cluster_code=lab[i], marks=mk))
-    out.sort(key=lambda r: (r['line'], r['pos']))
-    cols = ['line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share', 'cluster_code', 'marks']
+        row = dict(page=r['page'], line=int(r['line']), box=r['sid'], pos=int(r['pos']), x=int(r['x']), y=int(r['y']),
+                   w=int(r['w']), h=int(r['h']), code=best, dist=f'{dd[0]:.3f}',
+                   share=f'{votes[best] / sum(votes.values()):.2f}', cluster_code='_held' if held[i] else lab[i], marks=mk)
+        if a.topk > 1:
+            near = {}
+            for x, j in pairs:
+                near.setdefault(lab[j], x)
+            tot = sum(votes.values())
+            rank = sorted(votes, key=lambda c: -votes[c]) + sorted((c for c in near if c not in votes), key=near.get)
+            for k in range(a.topk):
+                c = rank[k] if k < len(rank) else ''
+                row[f'k{k + 1}'] = c
+                row[f'd{k + 1}'] = f'{near[c]:.3f}' if c else ''
+                row[f's{k + 1}'] = f'{votes.get(c, 0) / tot:.2f}' if c else ''
+        out.append(row)
+    out.sort(key=lambda r: (r['page'], r['line'], r['pos']))
+    cols = (['page'] if allp else []) + ['line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share',
+                                        'cluster_code', 'marks']
+    if a.topk > 1:
+        cols += [f'{v}{k + 1}' for k in range(a.topk) for v in 'kds']
     with open(a.tsv, 'w') as f:
         f.write('\t'.join(cols) + '\n')
         for r in out:
@@ -413,7 +440,7 @@ def cmd_classify(a):
     agree = sum(r['code'] == r['cluster_code'] for r in out)
     print(f'{a.page}: {len(out)} boxes classified; kNN code = cluster code for {agree}; '
           f'{sum(r["code"] != "_" for r in out)} cipher codes')
-    if a.strips:
+    if a.strips and not allp:
         strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
 
 
@@ -484,7 +511,7 @@ def main(argv=None):
     k = sp.add_parser('classify')
     k.add_argument('--out', required=True)
     k.add_argument('--labels', required=True)
-    k.add_argument('--page', required=True, help='the page whose boxes are classified')
+    k.add_argument('--page', required=True, help="the page whose boxes are classified, or 'all'")
     k.add_argument('--tsv', required=True, help='output box list')
     k.add_argument('--knn', type=int, default=5)
     k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
@@ -492,6 +519,9 @@ def main(argv=None):
                    help="never let the target page's own boxes vote (kNN over other pages' boxes only); use it when the "
                         "page is new and unlabelled, otherwise its boxes vote '_' for each other (debosnys c4, 25 Sept 2026)")
     k.add_argument('--strips', help='directory for per-line strips with box numbers')
+    k.add_argument('--topk', type=int, default=1, help='also write the k best codes with distance and vote share (3)')
+    k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
+    k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
     r = sp.add_parser('crop')
     r.add_argument('--image', help='a plain image file to cut pixel --box crops from directly')

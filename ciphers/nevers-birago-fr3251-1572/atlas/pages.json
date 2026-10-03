@@ -1,0 +1,92 @@
+{
+ "f139v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f139v/src_ark_12148_btv1b9060248g_f141_1850_3560_2550_700.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f144r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f144r/src_ark_12148_btv1b9060248g_f146_4350_800_3650_760.jpg",
+  "box": null,
+  "median_h": 47.0
+ },
+ "f152r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+  "box": null,
+  "median_h": 51.0
+ },
+ "f162r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f162r/src_ark_12148_btv1b9060248g_f164_4700_2200_3050_450.jpg",
+  "box": null,
+  "median_h": 44.0
+ },
+ "f168r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f168r/src_ark_12148_btv1b9060248g_f171_4600_2560_3500_480.jpg",
+  "box": null,
+  "median_h": 51.0
+ },
+ "f168v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f168v/src_ark_12148_btv1b9060248g_f172_1650_700_2750_650.jpg",
+  "box": null,
+  "median_h": 26.5
+ },
+ "f174r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f170/src_ark_12148_btv1b9060248g_f177_4950_3380_2700_900.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f174v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f174v/src_ark_12148_btv1b9060248g_f178_1950_860_2470_1585.jpg",
+  "box": null,
+  "median_h": 71.0
+ },
+ "f174vB": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f174vB/src_ark_12148_btv1b9060248g_f178_1950_2330_2500_1680.jpg",
+  "box": null,
+  "median_h": 67.0
+ },
+ "f175r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f175r/src_ark_12148_btv1b9060248g_f178_4950_960_2550_200.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f175v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f175v/src_ark_12148_btv1b9060248g_f179_1950_2830_2650_460.jpg",
+  "box": null,
+  "median_h": 52.0
+ },
+ "f178r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f178r/src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f178v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f178v/src_ark_12148_btv1b9060248g_f182_1703_848_2900_3452.jpg",
+  "box": null,
+  "median_h": 68.0
+ },
+ "f179r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f179r/src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+  "box": null,
+  "median_h": 56.0
+ },
+ "f184r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/harvest/f184r/src_ark_12148_btv1b9060248g_f188_4600_2550_2850_1380.jpg",
+  "box": null,
+  "median_h": 60.0
+ },
+ "f184v": {
+  "image": "ciphers/nevers-birago-fr3251-1572/atlas/pages/f184v.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f185r": {
+  "image": "ciphers/nevers-birago-fr3251-1572/atlas/pages/f185r.jpg",
+  "box": null,
+  "median_h": 66.0
+ },
+ "f117r": {
+  "image": "ciphers/birago-fr3252-1571-72/images/f117/src_ark_12148_btv1b9060232m_f118_4380_1400_3150_1300.jpg",
+  "box": null,
+  "median_h": 65.0
+ }
+}

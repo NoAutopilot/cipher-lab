@@ -1,0 +1,5 @@
+crops/
+pages/
+__pycache__/
+debug_*.jpg
+sheet_*.png
