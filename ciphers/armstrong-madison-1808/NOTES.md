@@ -3842,3 +3842,30 @@ be-api.us.archive.org 1, catalog.hathitrust.org 1, www.googleapis.com 2. Vision 
 Verdict (target stays `open`, 0/369 read): keep going on the lane's other rows; H72's own next step is the owner's
 (ASKS 83-86), not a further cloud retry of the same hosts (rule 3's third-attempt clause: H34/H64-H66/H72 are the
 third pass at these catalogues from the cloud; retired for the cloud routes, browser_fetch/curl/Wayback named).
+
+## H76 French side (ARM-A-H76)
+
+3 Oct 2026, 19:40-19:5x UTC, ARM-A-H76 (account-1 worker, LANE-ARM-A). Question: did Napoleon's ministry or the
+cabinet noir intercept, copy or decipher Armstrong's 1808 dispatches? Scripts read, the worker read only the hits.
+No decoding, no scoring, 0 vision. Texts fetched once to `sources/h76/` (IA djvu.txt).
+
+**Answer: not found.** No printed source read this pass says Armstrong's dispatches (or any American legation
+mail) were opened, copied or deciphered by the French. One nearby fact: the Paris police opened and examined
+*inbound* private letters from the United States in April 1808 (below) -- mail to France, not Armstrong's outbound
+dispatches.
+
+| Family | Source and route | Queries | Result |
+|---|---|---|---|
+| (1) Napoleon's printed correspondence | *Correspondance de Napoleon Ier* vol. 16 (1 Sept 1807-mid Apr 1808; IA `correspondancede16napouoft`) and vol. 17 (Apr-Sept 1808; `correspondancede17napouoft`), djvu.txt grep | Armstrong; americ*; ministre d'Amerique / americain / des Etats-Unis; Etats-Unis; Floride(s); embargo; chiffr*; intercept*; decachet*; cabinet noir | Found: 4 instructions bearing on Armstrong Jan-Mar 1808 (No. 13446, 12 Jan; No. 13516, 2 Feb; No. 13545, 11 Feb; 31 Mar), copied to crib_sources.md "## H76". All of Napoleon's chiffre/intercept hits concern French army ciphers or intercepted Spanish/British mail -- none Armstrong or American. Not found: any order to open, copy or decipher American legation mail. Caveat: this 1858-69 edition is selective; the complete *Correspondance generale* (Fondation Napoleon, vol. 8, 1808) was not reachable this pass. |
+| (1b) Fouche's police bulletins | Hauterive, *La police secrete du premier Empire* vols 3 (1806-07) and 4 (1808), IA `lapolicesecrte03hautuoft`, `...04hautuoft` | same set | Found (vol. 4): bulletin of 14 Apr 1808, item 294 "Lettres d'Amerique", with footnote "Examen de 4000 lettres expediees des Etats-Unis sur L'Osage": the police read the letters the *Osage* brought, noting all had been "decachetees, sans doute en Amerique, et recachetees". 31 Mar 1808: arrival of the *Osage* at Lorient "qui apporte des depeches a l'ambassadeur des Etats-Unis" (bearer named). 29 Apr: Armstrong forbids Lewis, commanding the *Osage*, to take passengers for England. 19 Jul / 27 Aug: Pinckney's dispatches to Armstrong by the *Saint-Michel*. 9 and 25 Feb 1808: Paris rumours on US-British relations. No bulletin says Armstrong's own dispatches were opened. |
+| (2) Cabinet noir literature | Vaille, *Le Cabinet noir* (1950): not on IA (advancedsearch title/creator), no Google Books record (keyed, country=US). Herisson, *Le cabinet noir* (1887), IA `lecabinetnoirloi00hruoft`, grep | Armstrong; americ*; Etats-Unis | Vaille: unreachable (not a negative). Herisson: 0 hits for Armstrong or America. |
+| (2b) Scholarship | OpenAlex (key), 4 queries (cabinet noir interception; Armstrong intercepted dispatches; Napoleonic postal espionage Lavalette; American diplomatic correspondence intercepted France 1808); Semantic Scholar 1 query; Google Books 9 queries incl. Hill, *Napoleon's Troublesome Americans* (2005) searched for intercepted / cabinet noir / decipher / cipher / opened | as listed | Nothing on French interception of US dispatches. One context item: *Bulletin de l'Institut francais de Washington* (1951, snippet, on David Bailie Warden): when Armstrong toured France in Aug 1808 the legation was left in Warden's care "except the opening of secret dispatches from the State Department" -- Armstrong kept the cipher work himself. Hill cites the AAE series as "AECP-EU" (snippet). |
+| (3) Archive finding aids | archives.diplomatie.gouv.fr: proxy CONNECT 502 (000). francearchives.gouv.fr: HTTP 200 but a JavaScript redirect stub (`sources/h76/fa_*.html`), as the host table says -- logged, not retried. Archives nationales SIV: answers 200, app shell, not searched. Gallica SRU ("correspondance politique" + Etats-Unis + 1808): 30,220 noisy records, no AAE volume. Google Books: Bonnel, *La France, les Etats-Unis et la guerre de course* (1961) cites **AN AF IV 1192 (Secretairerie d'Etat)** for 1808 American shipping. | -- | Digitisation status: AAE Correspondance politique, Etats-Unis, the 1808 volume -- volume number not established this pass (Hill 2005 cites the series as AECP-EU); no online images found. AF IV 1192: no online images found. ASKS row appended for both. |
+
+Requests this pass: archive.org 7 (2 advancedsearch, 5 djvu.txt), googleapis.com/books 13, api.openalex.org 4,
+api.semanticscholar.org 1, francearchives.gouv.fr 3, archives.diplomatie.gouv.fr 1 (blocked), siv.archives-nationales 1,
+gallica.bnf.fr 1. One at a time, >=1.5 s apart.
+
+Next step (one line): the complete *Correspondance generale* vol. 8 (1808), and AAE CP Etats-Unis 1808 plus AN AF IV
+1192 read on site or by copy order (ASKS row) for any copy of an American legation dispatch; until then the French-side
+route has produced context cribs only, no intercept.

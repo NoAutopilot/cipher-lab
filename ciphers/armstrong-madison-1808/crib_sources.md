@@ -544,3 +544,24 @@ From `h70/formulas.tsv` (32 letters, Nov 1807-June 1808; the target excluded), v
 Requests this pass: founders.archives.gov 40 (38 document pages + 1 curl API 202 + 1 browser API 403, headless,
 one at a time, 2 s apart); archive.org 7 (2 advancedsearch, 4 metadata, 1 djvu.txt); be-api.us.archive.org 4. Log in
 `h70/requests.log`. No subagents, no vision calls.
+
+## H76 French-side context (ARM-A-H76, 3 Oct 2026)
+
+What Napoleon told Champagny to tell Armstrong in the weeks around the 20 Feb 1808 letter, and what the Paris police
+noted. Sources in `sources/h76/`. Nothing scored here; quotes are short, translations ours.
+
+| Date | Item | Source |
+|---|---|---|
+| 12 Jan 1808 | Napoleon to Champagny (No. 13446): "Repondez a M. Armstrong" that the US will surely declare war on England over its decree of 11 November; Napoleon regards war between England and America as declared from the day England published its decrees; American vessels stay under sequestration. | *Corresp. Napoleon* XVI 244 |
+| 2 Feb 1808 | Napoleon to Champagny (No. 13516): tell the American minister **verbally** that if war comes between America and England and Americans send troops into the Floridas to help the Spaniards against the English, he would approve; and let him glimpse that if America made a treaty of alliance and "cause commune", Napoleon would intervene with the court of Spain to obtain the cession of the Floridas to the Americans. | XVI 301 |
+| 9 Feb 1808 | Police bulletin, Paris rumours: H.M. has ordered the American government to send away the English minister; the Emperor is to cede colonies to the Americans. | Hauterive IV, bulletin 9 Feb, item 101 |
+| 11 Feb 1808 | Napoleon to Champagny (No. 13545): write to the American minister, answering his letters of the **4th and 8th**, that France's treaty with America rests on "free ships, free goods" ("le pavillon couvre la marchandise"); "Sa Majeste a traite avec l'Amerique independante et non avec l'Amerique asservie"; submitting to the English decree of 11 Nov gives up the flag's protection; if Americans treat it as an act of hostility, H.M. "est prete a faire droit a tout". | XVI 319-320 |
+| 25 Feb 1808 | Police bulletin: Marseille report of 17 Feb, colonial prices up on rumour of an American-British rapprochement. | Hauterive IV, item 158 |
+| 31 Mar 1808 | Napoleon to Champagny: note to the American minister that American ships carrying colonial goods really come from London; the US embargo proves they do not come from America; confiscate. Same day the *Osage* arrives at Lorient with dispatches for Armstrong. | XVI 459; Hauterive IV, bulletin 31 Mar |
+| 14 Apr 1808 | Police read ~4000 letters from the US brought by the *Osage*; letters of "20 fevrier et jours suivants" (US side) say the US-British negotiation (Rose) is broken off. | Hauterive IV, item 294 and note |
+
+Crib relevance (for LANE-ARM-B, unscored): the 2 Feb verbal message (Floridas for an alliance) is exactly the kind of
+offer a minister would put in cipher; if Champagny delivered it promptly it falls before 20 Feb (inferred, not established); Armstrong's own notes of
+4 and 8 Feb and the reply ordered on 11 Feb fall in the same window. Candidate words: Floridas, alliance, Spain, cession,
+treaty, flag, decree(s), England, war, sequestration/sequester, verbally. This duplicates H70's ranked list for Floridas,
+Spain, decrees and England and adds alliance/cession/treaty/flag.
