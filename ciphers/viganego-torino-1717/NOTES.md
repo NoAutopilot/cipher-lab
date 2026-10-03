@@ -63,10 +63,19 @@ Hosts this pass: de-crypt.org 17 (no login, shared run), github.com 2 clones (sh
 
 WebSearch (standard) `Viganego abate inviato Genova Torino 1717 cifrario Archivio segreto Materie politiche`: hits were the ASGe inventory PDFs (31_Trattati_202008.pdf, 34_ArchivioSegreto202003.pdf, listed only, not opened: ASGe host reset twice on 2 Oct and not retried here), memoriedigitaliliguri.it (an extract PDF, not opened) and unrelated cipher papers; none names Viganego, the mission or a cipher. No printed edition of these dispatches was located or opened by this worker, so the status stays `blocked`. Premise check (a)-(d) as of CS-A2-B (2 Oct 2026) still stands; nothing new in (a)-(c); (d) recipient-side (Savoy/Turin) edition: not located.
 
+## Retry and extract read (A2P4-VIG, 3 Oct 2026, 17:37-17:50 UTC)
+
+Hosts: archiviodistatogenova.cultura.gov.it 1 request (the single retry of 31_Trattati_202008.pdf: HTTP 200, 826,146 bytes, opened and read with pdftotext, 647,549 characters; the 2 Oct connection resets did not recur); memoriedigitaliliguri.it 6 requests (the six PDFs the 3 Oct search returned, one fetch each, 2 s apart, pdftotext); WebSearch 1. No vision calls, no login, no email.
+
+- **ASGe inventory n. 31 (Piscioneri regesti, Archivio segreto, Materie politiche bb. 2748-2757), read:** item 249 "Cifrario e nomi dati a Gio. Batta Viganego, inviato a Torino, per servirsene nella corrispondenza da inviare a Genova", Apr 1717 (day blank); 246 "Notizie trasmesse da Torino dall'abate Gio. Battista Viganego", 7 Apr 1717; 254 "Notizie da Torino trasmesse dal Viganego", 14 Apr 1717. The regesti name no script, no cipher on 246/254 and no folio count, and the busta number for these items did not print in the text. More Viganego items in the same series (not in the brief, listed only): 242 (22 Mar 1717, from Cherasco, "Giovanni Viganego", corte di Torino), 273 (21 Apr, troop movements), 307 (26 May), 312 (9 Jun), 320 (16 Jul, "Rapporto di quanto ha potuto fare e sapere Gio. Battista Viganego durante la permanenza in Torino"). Whether any is ciphered is not stated. Other cipher items in the inventory (229, 237, 294, 299) are different persons and years.
+- **memoriedigitaliliguri.it, 6 PDFs, grepped viganego|cifr|1717:** the first (Giornale Ligustico, "A. N.") mentions a Viganego writing in 1756, a different man and year. The other five (Atti SLSP n.s. vol. I; an introduction; Quaderni SLSP 2, "Genova e Torino", whose one "decifrati" is a figure of speech; Giornale storico e letterario della Liguria; Radiose giornate genovesi 1746) have no Viganego, no cipher of 1717 and no reference to this mission. None of the six names the 1717 envoy, key or a printed edition of these dispatches. Not found in these six (search result, not a novelty verdict).
+- **Effect:** the "ASGe PDF did not open" blocker is lifted; the gap that remains is the images or a copy of 246/249/254, which no source here provides. Status stays `blocked` (no image or print of the items exists to read), reason now only needs-physical-access / copy order.
+
 ## Next step (costed)
 
-Send the existing REQUEST.md (ASGe items 246, 249, 254) to ASGe; ~USD 0 agent cost, owner-side email, then ~USD 3 for a first transcription batch if the images come. Cheaper in the meantime: one retry of the ASGe PDF fetch from a fresh container, ~USD 0.2.
+Send the existing REQUEST.md (ASGe items 246, 249, 254; the regesti above confirm the item numbers and titles) to ASGe; ~USD 0 agent cost, owner-side email, then ~USD 3 for a first transcription batch if the images come. The cheaper PDF retry is spent. Verdict: parked (blocked on the copy order, ASGe reply).
 
 ## While waiting
 
-- Open `memoriedigitaliliguri.it` extract PDF from the 3 Oct search and read it for a Viganego mention (one request, ~USD 0.3); depends on nobody.
+- Ask ASGe (in the same message) whether Viganego's later reports (items 242, 273, 307, 312, 320) are in clear or in the 249 cipher; depends on nobody to draft, needs the reply to act.
+- The memoriedigitaliliguri.it extract read is done (above, nothing found).
