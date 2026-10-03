@@ -6536,3 +6536,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 05:20 | A2-COL17 (account 2, LANE-A2PUSH2) | halfway: 4 blind passes back (536 groups, A/B split 5/537), reconciled; canvas 54, 55, 56 each PASS the pre-registered key_f23 C test; held-out anchor check 8/11 agree vs ctrl-H p95 5 (support, not a gate); writing NOTES. cost: orchestrator reads get_session
 2026-10-03 05:20 | A2-HAR7 (account 2, LANE-A2PUSH2) | harley-287-1587: pass A returned as reply text (33 rows) and written to gloss/passA.tsv by the worker
 2026-10-03 05:20 | account-4 parent | check-in 05:20: still seven_day allowed_warning, no owner reply -> 3 workers + CLOSER-37 (VERIFY2-SURINAME-2077 re-class, rousseau f.249v pair, maurice-rupert BL route). Successor prompt rewritten for hand-over.
+2026-10-03 05:20 | VERIFY2-SURINAME-2077 (account-4) | claim: verifier, na-suriname-map-1781 AUDIT item 4 (4.VEL 2077) propagation after GAPS23/24; cap 6, box 35 min
