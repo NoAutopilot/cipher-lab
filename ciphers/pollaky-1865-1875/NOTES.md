@@ -390,6 +390,31 @@ Grades (rule 4): 10 letters, all M (H 0, C 0, S 0, M 10, I 0) -- the letter valu
 its control, so no S. Rule-10 wording: this is a statistical support for a component-count design under one candidate
 rule, not a decipherment; the sense of the 10 letters is unread.
 
+## GAPS164-pollaky-1865-1875 (3 Oct 2026, account-4): gap 2 (b), Boyouk's clear ad against ad 2's groups
+
+**Pre-registration (written and committed before any scoring, 3 Oct 2026, about 16:3x UTC).**
+Candidate (Hassan Boyouk, part 1 comment #3, 18 Mar 2022, sources/schmeh/posts/29-pollaky.txt line 309): ad 2's digit
+groups encode the 1867-06-03 "ELOPED ... YOUNG LADY" clear ad (text from sources/schmeh/posts/29a-pollaky-2014-12-27.txt
+line 175), about two words per group (his #5). Boyouk himself dates the clear ad 1867, four years before the cipher.
+Design tested: any deterministic code that gives one digit group per chunk of 1-3 consecutive plaintext words (same
+chunk -> same group), which is the only design his 74/36 ratio implies; no claim is tested for other designs.
+Texts: ad 2 parsed into groups on spaces, '.', '=', '-' (primary: "9:77314" split at the colon, 36 groups; variant:
+joined, 35). Plaintext, lower-cased, words = runs of letters/digits ("T....." -> t): (P1) the whole ad; (P2) the ad
+minus its address tail from "Mr." on, since ad 2 prints "Pollaky, Private Inquiry Office, 13 Paddington Green" in clear.
+Statistic S (design-free within the design above): the one repeated group in ad 2 is "91" (positions found by the
+script); S = log10 of the fraction of monotone alignments (every group covers 1-3 consecutive words, all words covered)
+in which the two "91" groups cover identical word chunks; floor -12 when no alignment does.
+Matched control (rule 3): 2000 windows of the same word count from period English prose on disk (tools/data/pg1661_holmes
+1892, en/pg76_huckfinn 1884, en/pg1342_pride 1813), same statistic at the same group positions -- unrelated text of the
+same length, so S can differ from the target by construction (it depends on which words repeat where). No unrelated
+period Agony Column ad of 74 words is on disk; corpus windows stand in for it. Positive control (power): 200 synthetic
+codes made from fresh windows by a random 1-3-word chunking into the same group count, keeping one pair of identical
+chunks (the pair whose gap is nearest the target's); S of the true window at that pair vs the p95 of 200 unrelated
+windows at the same pair; power = share above p95. Seed 164. Script: scripts/boyouk_align.py, output boyouk_align.tsv.
+Decision rule: target S above control p95 with power >= 0.5 -> "consistent beyond chance" (no reading); S at or below
+p95 with power >= 0.5 -> control-backed negative for Boyouk's text under this design; power < 0.5 -> untestable by this
+statistic at this N (one repeat), not refuted.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 0 of 4 ads read in this repo. Ad 1 is 0/10 signs, ad 2 is 0/36 digit groups (36 counts "9:77314" as two groups; 35 if it is one), and ads 3-4 are 0/72 letter-words re-derived here (NOTES.md Test 1 table, Test 2 diff). There is no key, decode script, AUDIT.md or HYPOTHESES.md here, and nothing is graded. The ads 3-4 ciphertext is corroborated: two passes agree on 78/80 tokens, and the text matches Ernst's BNA-checked text 72/72. Their community readings are tracked in ciphers/catokwacopa-1875, which has its own gaps section (1 Oct 2026). Pollaky's authorship of ads 3-4 is Schmeh's attribution (post 29; 2 Oct 2026: the W. ads are not among the twelve ads "signed by Pollaky" in his 2014-15 list, only in the 2016 post's sentence, GAPS section above). The ads are signed "W.", not Pollaky, and this repo has not established the attribution.
 - Ad 1 (16 May 1865): 10 invented signs inside a plaintext sentence - blocker: not-attempted; statistics cannot help at N=10 (K=9, SIGN-01 repeats at positions 1 and 6; IC 0.0222 falls inside both N=10 control scatters, NOTES.md Test 1). Two cheap internal steps are still untried. First, the signs are built from a few parts (dots, dashes, bars, one bracket pair; ciphertext.txt sign table), so a compositional design (part counts or positions to letters or numbers) can be tested directly. Second, the clear frame "...fortunately in time to [10 signs] shall return to England..." is a crib. Also, the on-disk image is a modern redrawing (clean vector signs, modern serif type, no paper texture; viewed 1 Oct 2026), not the newspaper page (rule 2), so sign details are conditional on the redrawer; next: run a component-decomposition plus frame-crib test with Laura's bars-x-dots rule (part 1 comment #4, 25 Aug 2016, reads B E N D A B U C H P; recorded 2 Oct 2026) as the pre-registered candidate, scoring the same rules on shuffled-sign and random-sign controls of N=10 and reporting both numbers; find the original newspaper and date through the print step, ~$2; 3 Oct 2026 (GAPS160 section above): the component test ran -- Laura's rule gives "bencabuchp" (our sign 04) / "bendabuchp" (hers); frame-bigram T -1.14 beats shuffled-sign p95 -1.29 (tail 0.002) and random-sign p95 -1.20 (tail 0.019), rank 1 of 104 sibling rules, positive-control power 0.98: supported as a design candidate on T; word coverage W 0.6 = random p95 0.6, so no word reading clears its control; 10 letters M, none read. Next for gap 1: settle sign 04 (3 vs 4 dots) and find the newspaper page (print step), then a word-level crib with v-z/other signs tested against the frame, ~$2
