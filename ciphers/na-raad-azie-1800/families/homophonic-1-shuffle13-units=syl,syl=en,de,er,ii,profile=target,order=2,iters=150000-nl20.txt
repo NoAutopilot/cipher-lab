@@ -1,0 +1,16 @@
+# na-raad-azie-1800 homophonic seed 1 restarts 8 3 Oct 2026 01:13 UTC; control mean 0.889 (0.889-0.889); score -1163.930; TARGET LETTERS SHUFFLED (seed 13, false-positive floor)
+# {"restart_scores": [-1163.9, -1164.7, -1164.8, -1164.9, -1171.2, -1176.2, -1178.7, -1179.1], "key": {"11": "i", "12": "e", "14": "m", "21": "u", "22": "i", "23": "s", "24": "n", "31": "de", "32": "k", "33": "z", "34": "h", "41": "en", "42": "i", "43": "a", "44": "o", "51": "w", "52": "g", "53": "t", "54": "b", "61": "e", "62": "t", "63": "er", "64": "d", "71": "l", "?2": "r"}}
+etoweneeentoelosetleeetteoleansglosst
+tlegetnenhensieeuioeueleelzeeeot
+enkigegeieglenlenerieuertmesdeeoteieuaur
+moeenete
+eeeeteeemiseisulgs
+tesesoeseieteze
+eemtoouetheeloeeenletoehettenoenoote
+elegetsheilitttetekomerenmngeeb
+eeelgonneeendesweeenllenoimesoenltonhee
+lelteelaehengeeenatenek
+lelsmentitenalnislstewageteenesgeetill
+eoektgugouwalteoleo
+entitieeeenueleulengedullmeeogoe
+enshteetiezeeeeeemeezekezineeela

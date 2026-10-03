@@ -619,3 +619,62 @@ Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. 
 3. *Leaf 3* (same cipher, faint bleed-through, untranscribed): ~$4-6 for `tools/iiif_lines.py` crops + 2 blind passes
    + 1 reconciliation (Usage 6 per-pass pricing); more text is what any family needs at N=370.
 4. *c.1800 Dutch corpus* (~$2, V6-PTCORP's method) before any judge, whichever family first reads.
+
+## 3 Oct 2026 -- A2-RAA6: grid syllabary (letters + syllable units over the 7x4 table), matched control first (rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Tool fit (Usage 8; no new code).** `tools/families/syllabary.py` is a base+superscript-mark design (bare token =
+letter, mark = following vowel); written as top^bottom every cell would carry a mark and only 7 bases would have to cover
+about 20 letters, which its own allotment refuses (`alloc`: fewer bases than letters). `nomenclator.py`,
+`seeded_code.py` and `wordcode.py` are word or two-part codes over large numeric groups or sign runs, not a 28-cell table.
+A *pure* consonant-row x vowel-column grid (cell = C_r + V_c) cannot write Dutch at all (7 consonants, no clusters such as
+"cht", "str"), so no Dutch control of that design can be built; it is excluded on design grounds, not by a run. The
+period-plausible grid syllabary is a 28-cell table holding the letters plus a few frequent syllables, which is exactly
+`tools/families/homophonic.py --param units=syl` (bMALN, 26 Sept 2026; offline test `tools/tests/test_homophonic_units.py`
+re-run this step: ok, clean control 0.971). Units chosen from the nl20 corpus's own commonest folded bigrams: en, de, er,
+ii (= ij after the j->i fold), i.e. ~20 letters + 4 units, the size of a 24-of-28-cell table.
+
+**Command** (log `data/gridsyl/run.log`, rows in HYPOTHESES.md):
+`python3 tools/family_run.py specs/na-raad-azie-1800.json --family homophonic --param units=syl --param syl=en,de,er,ii
+--param profile=target --param order=2 --param iters=150000 --cipher ciphers/na-raad-azie-1800/data/masc/cells_370.txt
+--tokens space --corpus tools/data/nl20 --seeds 3 --gate 0.6` (8 restarts), then `--shuffle-target 11/12/13 --seeds 1`
+(logs `data/gridsyl/shuffle1{1,2,3}.log`). Corpus nl20 (1880s-1900s); no c.1800 Dutch in tools/data, so every number is
+conditional on that era mismatch (rule 3).
+
+| run | N | K | recovery (unit positions) | best score |
+|---|---|---|---|---|
+| control seed 1 (units=syl, profile=target) | 370 | 25 | 0.889 | -960.1 |
+| control seed 2 | 370 | 25 | 0.970 | -982.4 |
+| control seed 3 | 370 | 25 | 0.827 | -981.6 |
+| **target** (8 restarts: -1093.9 / -1099.0 / -1099.9 ...) | 370 | 25 | n/a | **-1093.9** |
+| target shuffled, seeds 11 / 12 / 13 | 370 | 25 | n/a | -1136.7 / -1154.7 / -1163.9 |
+
+Control mean 0.895 meets the 0.6 gate, so the target ran. Can the control differ from the target on the statistic? Yes:
+the score is a unit-bigram log-likelihood of the best decode (order-dependent; the shuffles land 43-70 lower), and
+recovery is per-position against a known plaintext.
+
+**Result.** The decode does not read (`families/homophonic-1-units=syl,syl=en,de,er,ii,profile=target,order=2,iters=150000-nl20.txt`,
+L02 "hemlanegueelieielretinthienteetgalmo"); the key spends cells on e, en, er (twice: 54 and 64), de and o twice.
+The target's -1093.9 sits about 110 points below the control's true-key band (-960 to -982) and only 43-70 above its own
+shuffle floor. **Control-backed negative for a letter+syllable table (letters + en/de/er/ij) substitution of Dutch at
+N=370, conditional on nl20.** With A2-RAA3/4/5 this is the fourth cell-wise substitution variant on the same 370 cells
+(rule 3 third-attempt clause, shape (a)): the cell-wise substitution approach at this length is logged
+untested-by-this-family beyond it, not refuted for the target; the next attempt needs new material (leaf 3) or a crib.
+
+Descriptive observation only (not a reading, not tested): the bottom-digit counts 166:86:62:56 (45/23/17/15%) are close to
+the nl20 shares of e:i:a:o among those four (45.3/21.5/18.8/14.4%, counted this step; i includes the folded j); a
+vowel-column table would show this, and so would many other layouts. A cheap order test of it (bottom-digit sequence against the Dutch vowel sequence of nl20 windows, with
+shuffles) is written below, not run.
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. Requests: none (all local).
+
+**Next steps, written, not run** (cost order):
+1. *Crib from the interleaved clear words* (~$1, local): spans after "de", "is de Asiatische", "Raad" constrain any key.
+2. *Vowel-column order test* (~$0.5, local): if bottoms 1-4 are vowels e/a/i/o, the bottom-digit sequence should match
+   Dutch vowel-sequence bigram statistics better than shuffles do; control = the same statistic on nl20 windows.
+3. *Leaf 3* (same cipher, faint, untranscribed): ~$4-6 for `tools/iiif_lines.py` crops + 2 blind passes + 1
+   reconciliation (Usage 6 per-pass pricing) -- more text is what every family here needs at N=370.
+4. *c.1800 Dutch corpus* (~$2, V6-PTCORP's method) before any judge, whichever family first reads.
