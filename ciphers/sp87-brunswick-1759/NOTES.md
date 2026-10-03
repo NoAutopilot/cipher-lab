@@ -195,3 +195,64 @@ Ferdinand-to-Holdernesse letter) is worth identifying and reading in full — it
 of this correspondence than TNA SP 87 alone. Given the true size (818 items, 98 cipher-flagged, likely more
 once every piece and every volume 1759-62 is scanned), this is a multi-session campaign, not a single
 check-solved sweep — score and budget it accordingly before promoting to the board.
+
+## Check-solved addendum (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+Standard edition and pages actually read: the verdict on line 2 stands -- Westphalen's *Geschichte der Feldzüge des Herzogs
+Ferdinand von Braunschweig-Lüneburg* (Google Books lEYIAAAAQAAJ 1871 and WtIFAAAAQAAJ 1872, full-text searched for three
+sample items, LANE CX2 25 Sept 2026). Added this pass: the HMC lead from round 2 re-run by Google Books full-text API
+(`"Krosdorff" Holdernesse Ferdinand`, `"Prince Ferdinand to Lord Holdernesse"`, `"commander of the allied forces in Germany,
+Lord Holdernesse"`; key + country=US, 3 Oct 2026): the 3rd Report of the HMC (1872; 3_sUAAAAQAAJ, 9sULAQAAIAAJ and five other
+scans of the same appendix) calendars a run "between Prince Ferdinand of Brunswick, as commander of the allied forces in
+Germany, Lord Holdernesse, Secretary of State, and the King, relating to the military operations" (entries for Windeken 14
+Apr 1759, Ziegenhayn 27 Apr 1759, Krosdorff 7 Nov 1759, and a 24 June 1756 King of Prussia paper); the owning collection's
+heading did not appear in any snippet, so it is still unidentified. One-line calendar entries, no cipher text, no
+decipherment. And a sibling lead from the same searches: HMC *Rutland* vol. 2 (1889; euULAQAAIAAJ and five other scans)
+calendars Granby's received despatches of 1760 with their contents ("Holdernesse to the Marquess of Granby. 1760, August 26.
+Whitehall. Despatch, chiefly in cypher ... Prince Ferdinand's message requesting reinforcements ..."), so the Granby side of
+the 1759-62 correspondence is calendared from the recipients' deciphered copies. None of this cluster's 98 cipher-flagged
+items was matched to a printed full text. Status unchanged: **open**.
+
+## Web and blog check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Prince Ferdinand of Brunswick Holdernesse cipher letters 1759 1760 deciphered` -- TNA Discovery
+item pages (C9164991 Korbitz 29 Sept 1759, C9205728, C9187983), a QRH museum Warburg page, a BL Untold Lives post on ciphers in
+BL manuscripts (2016, general), BL Add MS 32708 (Newcastle Papers catalogue); no decipherment or transcription of an SP 87
+item. The hit "Ferdinand reading page ... aaymeloglu/unsolved-ciphers PR #6" is **Emperor Ferdinand III, 1634-40**, not this
+Ferdinand -- checked in a fresh clone (d2800bb, 27 Sept 2026): folders `ferdinand-1634`, `ferdinand-1635-1640` only. (2)
+`"SP 87" Ferdinand Brunswick cipher decipher Granby 1760` -- TNA item pages (SP 87/37/12, SP 87/32/104, SP 87/32/115), an
+academia.edu PDF "Volume 2: 1759-1760: The Operations of the Allied Army under the command of Prince Ferdinand of Brunswick"
+(a modern translation/study; academia.edu is 403 from the cloud, not opened -- see While waiting), allthingsliberty's 1780-81
+cipher article (unrelated). (3) site-restricted to **Cipherbrain** (scienceblogs.de), **Cipher Mysteries** and **Cryptiana**
+(blogspot and web.fc2), `Ferdinand Brunswick Seven Years War cipher` -- only Klausis Krypto Kolumne's 2017 post on Thomas
+Ernst's Ferdinand III decipherment (a different Ferdinand); no post on this cluster, so no comment thread to read. Not found
+on the open web.
+
+## Premise check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **found, unreachable as images** -- the round-1 sweep already lists period
+clear-text decipherments filed as companion pieces: SP 87/36/10 ("Decyphered Part of Prince Ferdinand's Letter of the 11th
+October 1759", companion of 36/9), SP 87/40/77 (an incomplete period decipherment of Bute's 5 June letter, 40/69), SP
+87/40/122-124 (deciphered intercepted enemy letters, with 40/121). Those items are calibration material (period plaintext
+exists beside them), not unsolved targets; TNA digitised=false for all, so not opened. The other ~92 flagged items are not
+yet paired. (b) Other solvers' working files: **not found** -- fresh clones 3 Oct 2026, Aymeloglu d2800bb and Bourdeau
+4aedb40, grepped for brunswick/holdernesse/granby/"SP 87": Aymeloglu has only DECODE catalogue rows for BL Add MS 32270
+(Brunswick-Wolfenbüttel keys, 1719-1763, R8011-R8020, a different holding and series) and Bourdeau only SP 87/24/33 (del
+Puerto, 1748, outside this cluster). (c) Physical neighbours: **unreachable** (not digitised); catalogue neighbours are the
+companion pieces in (a). (d) Recipient's side: **partly found** -- Westphalen prints from Ferdinand's own archive (the
+recipient of Holdernesse's and Bute's letters; three samples absent, LANE CX2); HMC 3rd Report calendars a second
+Ferdinand-Holdernesse run (collection unidentified); HMC Rutland vol. 2 calendars Granby's deciphered copies. No full
+recipient-side text of a sampled item located. Status stays **open**.
+
+## While waiting (3 Oct 2026, GF4-BATCH12)
+
+Waits on: TNA page copies of the six paired items (REQUEST.md, ASKS row 57).
+
+- S: identify the HMC 3rd Report collection that calendars the Ferdinand-Holdernesse run -- read the 1872 report's appendix
+  table of contents on archive.org/Google Books full view (search "Ziegenhayn" in the full-view volume 3_sUAAAAQAAJ and read
+  the section heading above it), then check whether that collection's items duplicate any cipher-flagged SP 87 piece by
+  date -- no login, no person.
+
+Requests this pass (3 Oct 2026): googleapis.com/books 5, archive.org 2 (advancedsearch, no hit), github.com 2 (shallow clones,
+shared with the other two targets of this batch). WebSearch 3.
+Gate re-run (GF4-BATCH12, 3 Oct 2026): `sp87-brunswick-1759: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp87-brunswick`: no line.
