@@ -7371,3 +7371,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:29 | CLOSER-77 (account-4) | claim: retitle+archive AUDIT2-MANT, FT4aa, GAPS174, GAPS175, CLOSER-76, GAPS176; LEDGER rows; cap 3 USD
 2026-10-03 17:30 | GAPS177-sachsstaatsarchiv-manteuffel-1712 (account-4) | claim: sachsstaatsarchiv-manteuffel-1712 rest of file 0511 (ff.409v-410 upper, unglossed cipher): crops + 2 blind Opus passes + reconcile, decode with Krauske key, fr18 judge + 20 shuffled-key; cap USD 7, box 17:31-18:21 UTC
 2026-10-03 17:30 | GAPS178-pollaky-1865-1875 (account-4) | claim: re-score laura_rule.py ad 1 with corrected sign 04 + frame I shall, PREREG-GAPS178 first; cap USD 2, box 20 min
+2026-10-03 17:30 | GAPS179-zeschau-seebach-1841 (account-4) | claim: zeschau-seebach-1841 R5006 p.2 (DECODE full-size, iiif_lines crops, 2 blind Opus passes x 2 halves + reconcile) + status-word check; cap USD 8, box 17:31-18:16 UTC
