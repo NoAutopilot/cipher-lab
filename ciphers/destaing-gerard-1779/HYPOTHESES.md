@@ -34,3 +34,8 @@ The same control also stands for the two-part null (position uninformative), sin
 control's band is "no support for one-part at this N", not a negative on the code's design -- the test does
 not distinguish one-part from two-part at N=12 against 26 letter-bands. See NOTES.md "DES-PART (27 Sept
 2026)" for the full run and next-step discussion.
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (5-95pct) | TARGET hits | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 | known_key (hand-run via `known_key_test.py`) | La Luzerne-Destouches 1781 key.tsv (281 codes, 1-1199) on N=216; fr18 4-gram of keyed runs vs 1000 value-shuffled keys | 1 | -1.003 (p95 -0.732, p99 -0.658) | -0.842 (coverage 44/216) | n/a | no -- and positive control 1/5 windows at matched coverage: NON-TEST | for FT4 (account-4) |
+| 3 Oct 2026 | known_key overlap | same key, distinct-code overlap vs uniform draws 2-597 | 1 (1000 draws) | 22.7 (17-29) | 25 | n/a | no -- inside band; no out-of-sample positive control | for FT4 (account-4) |

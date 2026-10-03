@@ -289,6 +289,51 @@ the brief's fallback (design prior, period-key registers, Doniol p.774 as crib) 
   Crib: Doniol p.774's paraphrase ("fin de mai ... croisière de la Caroline Méridionale") is checked only if the gate
   passes (a key that fails the gate gives no reading to compare).
 
+**Result (run 3 Oct 2026 04:4x UTC, `known_key_test.py`, seed 1, no network).** Grade S throughout; no token read.
+
+| statistic | TARGET | CONTROL | gate |
+|---|---|---|---|
+| coverage (reported only; value-shuffle cannot move it) | 44/216 tokens (0.204), 25/104 distinct | -- | -- |
+| distinct-code overlap vs uniform draws from 2-597 (1000 draws; key has 130 codes in that range) | 25 | mean 22.7, 5-95pct [17,29] | inside band |
+| fr18 4-gram score of runs >=2 keyed tokens (37 letters: "duans / avecdu / etatcen / ordrespasetatordres") | -0.842 (word cover 0.946) | value-shuffled mean -1.003, p95 -0.732, p99 -0.658 | **FAIL** (below p99 and p95) |
+| positive control: same key on its own ciphertext, 5 windows of 216 tokens masked to 44 keyed | 1/5 windows clear their own p99 (scores -0.656 to -1.074) | -- | **NON-TEST at this coverage** (needs 4/5) |
+
+Reading: the 4-gram statistic cannot recognise even the right key at 20% coverage, so the FAIL is a non-test (rule 3),
+not a negative. The overlap and coverage numbers carry the weight instead. The Luzerne key covers 75-85% of its own
+letters' tokens (163-184 of 216 per window, in-sample), but only 20% of d'Estaing's, and that is the share chance
+predicts for an unrelated code with numbers in 2-597. d'Estaing's three most frequent groups (401 x13, 382 x10, 152 x8;
+31 tokens) are all absent from the key. No out-of-sample positive control exists for the overlap test (the only second
+key on file, Tomokiyo's from the 8 Jan 1781 Beinecke letter, shares 56 codes with key.tsv but agrees on none of them,
+so it is not a clean same-code sibling). Conclusion, grade S: no support for d'Estaing writing in the Luzerne 1781 code.
+Its overlap with that code is at chance level. Because the overlap test has no positive control, this is logged as "no
+support", not as a design-family negative. The Doniol p.774 crib was not run because the gate failed and no reading
+exists to compare.
+
+**Archives nationales lookup (the While-waiting step).** francearchives.gouv.fr answered both curl requests with a
+JS/cookie redirect page. The siv.archives-nationales host answered 302. The browser tool could not run because
+installing libnss3-tools for the proxy-CA fix hung in this container and was killed. Per the CLAUDE.md host note
+(archivesnationales/francearchives do not load from the cloud), this step is now LOCAL-QUEUE row **L42** (Marine B4 168
+inventory record, availability flag, and whether the register holds the 30 April 1779 letter in clear).
+
+Requests: francearchives.gouv.fr 2 (curl, JS redirect), siv.archives-nationales.culture.gouv.fr 1 (302); browser 0;
+DECODE 0 (not needed: KEY-OFFICES/KEY-DESIGN gave the one period candidate). Vision calls 0.
+
+## Remaining gaps (FT4-destaing-gerard-1779, 3 Oct 2026)
+Read so far: 0 of 216 code tokens (no key, no reading)
+- whole code text (216 tokens) - blocker: no-key-material; no French navy/AE key of 1778-80 on file, and the Luzerne 1781 key has chance-level overlap (FT4 above); the decipherment copy (AAE Corr. pol. Etats-Unis Supt.1) and the sender's register (AN Marine B4 168) are offline
+- sender's register copy in clear - blocker: waiting-on LOCAL-QUEUE L42 (AN Marine B4 168 catalogue record); francearchives JS-redirects the cloud, FT4 above
+- Clements image and 64:15 neighbour - blocker: waiting-on SEND-QUEUE S1 (Clements Library copy, REQUEST.md); clements.umich.edu 403s the cloud, ZX2-EST
+
+## Escalation (3 Oct 2026)
+- [x] siblings: Meng and Clements finding aid swept (ZX2-EST, 25 Sept); none found; Doniol iv numeral sweep blocked by IA HTTP 500
+- [ ] clear-pages: sender's register copy may be in clear; planned step LOCAL-QUEUE L42 then a page read
+- [x] known-keys: Marbois codes A-D (ZX2-EST) and Luzerne 1781 key (FT4) both at chance overlap
+- [x] print: Doniol iv, Meng, HMC American MSS i-ii, Stopford-Sackville ii, Continental Congress index (GF4-BATCH13)
+- [n/a] key-rebuild: 216 tokens of a ~600-entry code with no crib that reaches any code
+- [ ] image-check: no image on disk; planned step the Clements copy (REQUEST.md, SEND-QUEUE S1)
+- [n/a] retry: no earlier step failed on transport other than the Doniol djvu download
+Verdict: keep going: 0 internal gaps; cheapest next: page read of AN Marine B4 168 once LOCAL-QUEUE L42 answers, ~$2
+
 ## While waiting (GF4-BATCH13, account-4, 3 Oct 2026)
 
 Waits on: the Clements image (REQUEST.md / SEND-QUEUE S1). The one action that depends on nobody:
@@ -298,3 +343,11 @@ salle des inventaires virtuelle (FranceArchives / siv.archives-nationales.cultur
 (d'Estaing's 1779 campaign registers) to see whether the register itself, with a clear copy of the 30 April 1779 letter, is
 digitised -- a catalogue lookup, no person needed (S; FranceArchives may not load from the cloud, in which case it becomes a
 LOCAL-QUEUE row, logged with the probe line).
+
+## While waiting (FT4-destaing-gerard-1779, 3 Oct 2026)
+
+Waits on: LOCAL-QUEUE L42 (AN Marine B4 168 record) and the Clements image (REQUEST.md / SEND-QUEUE S1). The one action
+that depends on nobody:
+
+- S: build a period French dictionary headword list in tools/data (named by DES-PART U4), so the one-part band test in
+  `tools/freq.py --onepart-dict` can run at headword resolution rather than fr18 word types. Script work, no person needed.
