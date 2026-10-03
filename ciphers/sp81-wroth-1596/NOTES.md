@@ -151,3 +151,13 @@ Requests: books.google.com search-within ~38 (2 s apart); Google Books API 4; no
 ## Verdict (3 Oct 2026, SP81-WROTH)
 
 **open.** Next step, ~USD 1.5: order or request a copy of SP 81/7/239 (REQUEST.md already drafted, not sent) to see whether fo. 226/239 holds only the key; and pair it with Wroth's SP 81/8 letters (29, 31, Jan 1598, and the 1596-97 embassy dispatches) as the cipher texts it may read (check-solved/premise step on those folios first, none digitised per TNA). Outside blocker: no image (`digitised: false`), so waiting on the owner's copy order via ASKS/REQUEST.md.
+
+## Wroth items in SP 81 and copy-order draft (A2P4-WROTH2, 3 Oct 2026, 17:18-17:3x UTC)
+
+TNA Discovery API (12 requests, 1.6 s apart): search `sps.recordSeries=SP 81` for "Wrothe" and "Wroth" (4 hits each, the same four items), details records for each, and "cipher"/"cypher" in SP 81 (7 hits / 0; in SP 81/7-8 only 7/239). Written to `wroth_items.tsv`: SP 81/7/234 (8 Aug 1596), 7/239 (7 Sept 1596, "with cipher key"), 8/29 (12 Jan 1598), 8/31 (17 Jan 1598); all `digitised: false`, no `note` field on any. Only 7/239 mentions cipher. Not found by this search: any Wroth letter in SP 81/8 described as in cipher, or any 1596-97 embassy dispatch beyond 7/234 and 7/239 under Wroth's name (Wernham's index also lists H126, a Holland-series item, not checked). The key could only read letters written after 7 Sept 1596, so 8/29 and 8/31 are the candidates (I: no evidence they carry cipher).
+
+Copy-order draft: `outreach/tna-sp81-wroth-copy.md` (TNA "Order a copy" route and fees read on TNA's own pages 3 Oct 2026: page check £9.92/record, digital copy £1.52; about £38.88 for 239 + 8/29 + 8/31), status drafted, pending OUT-CHECK; CONTRIBUTIONS.md row; ASKS row 121. Not sent, not paid, not queued. Requests: discovery.nationalarchives.gov.uk 12, www.nationalarchives.gov.uk 3, Gmail search 1. No vision call.
+
+## Verdict (3 Oct 2026, A2P4-WROTH2)
+
+**open.** Outside blocker: no image (`digitised: false`); waiting on the owner's TNA copy order, ASKS row 121 (draft `outreach/tna-sp81-wroth-copy.md`, after its gate-7 check). Next step once images arrive, ~USD 1.5: read whether fo. 239 is a key only, then check 8/29 and 8/31 for cipher passages and apply the key (intake gate first).
