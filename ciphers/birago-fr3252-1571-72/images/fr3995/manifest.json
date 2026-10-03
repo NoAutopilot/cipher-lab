@@ -1,0 +1,18 @@
+{
+ "iiif_lines": [
+  {
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f274/90,150,1750,5250/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f274_90_150_1750_5250.jpg",
+   "crop": "f274h_alpha_rot_s1.jpg (rotated x 0-2700)",
+   "note": "source rotated 90 deg clockwise, autocontrast, top 560 px (alphabet heading), resized to 2400 wide",
+   "date": "2026-10-03"
+  },
+  {
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f274/90,150,1750,5250/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f274_90_150_1750_5250.jpg",
+   "crop": "f274h_alpha_rot_s2.jpg (rotated x 2550-5250)",
+   "note": "source rotated 90 deg clockwise, autocontrast, top 560 px (alphabet heading), resized to 2400 wide",
+   "date": "2026-10-03"
+  }
+ ]
+}
