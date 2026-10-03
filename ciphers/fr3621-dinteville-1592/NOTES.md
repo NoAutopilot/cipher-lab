@@ -1,4 +1,5 @@
 open
+Gomberville, *Mémoires du duc de Nevers* (1665) seconde partie (Google Books H2eV4wAmIr0C) full-text searched by this worker (GF4-BATCH9, 3 Oct 2026) for Dinteville, Dinteuille, Dintevile (0 hits), Langres (10, pp.256-390, none this letter), "deux millions", Strasbourg, "armee lorraine" -- letter absent.
 
 **Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
 page confirmed, distinct from the two Gallica arks which are both Première partie); full-text searched for
@@ -204,3 +205,55 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Dinteville Langres Nevers 3 juillet 1592 lettre chiffre` -- BnF catalogue records for fr.3621, fr.3623, fr.3625,
+   fr.3631, fr.3617, fr.4718, fr.3974-3995; Wikipedia "Joachim de Dinteville"; OpenEdition, *Noblesse seconde et pouvoir
+   en Champagne* ch. IV. No decipherment of f.130.
+2. `"fr. 3621" OR "français 3621" Dinteville chiffre` -- BnF fr.3621 record and number-spelling noise only.
+3. `"Dinteville" Nevers cipher letter 1592 decipherment` -- Desenclos and Lasry, "An early French digit cipher" (Henri IV
+   to Nevers 1592, a different letter); Bourdeau's site index, which lists this letter as not deciphered; cyphersolver
+   PR 4 (Lorraine to Vaudemont, fr.3621 no.97), PR 7, PR 9 and issue 13 (Laurière). None of them reads f.130.
+4. Folder title / BnF record: the fr.3621 finding aid (archivesetmanuscrits.bnf.fr/ark:/12148/cc50071b), fetched by curl
+   and read in full -- see Premise check (a).
+Blogs: `Dinteville cipher site:scienceblogs.de OR site:ciphermysteries.com OR site:cryptiana.blogspot.com` -- the 6
+Cipher Mysteries hits are unrelated posts (Oak Island, Gentlemen's cipher, van Heeck, Cysquare, La Buse, Beale), with
+nothing about Dinteville. There were no Cipherbrain (Klausis Krypto Kolumne) or Cryptiana blog hits. Tomokiyo's pages: the
+local mirror `sources/cryptiana/web/` has no "3621"/"Dinteville" (earlier pass, re-confirmed by Bourdeau's own
+"Tomokiyo's Nevers catalogue (no Dinteville key)"). No comment thread to open; nothing found.
+
+## Premise check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+(a) **Decipherments the folder mentions: not this item.** The only decipherment named is f.128 (no.114, DECODE R9450
+"Decrypted"). The BnF finding aid for fr.3621 (fetched 3 Oct 2026) describes f.128 as "Lettre, avec chiffre et
+déchiffrement, du Sr DE DINTEVILLE ... De Langres, ce 1er juillet 1592", a different letter. It describes f.130 (no.116)
+as "Lettre chiffrée du Sr DE DINTEVILLE ... De Langres, le IIIIe juillet 1592", with no decipherment. Note: the catalogue
+dates the letter 4 July, while Bourdeau read "iij^e" (3 July) on the leaf. The image settles which; the folder keeps
+3 July as read. The catalogue also confirms the signer is "JOACHIM DE DINTEVILLE" (f.27, no.19). The bishop of Langres
+in the same volume is Charles d'Escars (f.126, no.112), which supports csED2's flag above that "Bishop of Langres" is a
+misidentification. Not found.
+(b) **Other solvers' working files: not found.** In dbourdeau/cyphersolver (shallow clone, HEAD 4aedb40, 2 Oct 2026),
+`targets/dinteville1592/` holds NOTES.md, align.py and profile.json. align.py aligns only f.128's second cipher line
+with its interlinear gloss, and no key is applied to f.130. In aaymeloglu/unsolved-ciphers (shallow clone, HEAD d2800bb,
+27 Sept 2026), the only matches are catalogue rows (`catalogue/decode-catalog.csv`: R9451 Non-decrypted, R9450 and
+R9452 Decrypted). There is no working folder.
+(c) **Physical neighbours: no clear copy found.** The finding aid lists ff.127-131 as follows: f.127 (no.113, Dinteville,
+1 July 1592, no cipher mentioned); f.128 (the sibling with decipherment); f.129 (Potier de Blancmesnil, 2 July); f.130
+(this letter); f.131 (Vergy to Dinteville, 4 July, copy). Bourdeau viewed Gallica views 263-272 (ff.127-131) and f.130v
+(address only) at full resolution on 21 Sept 2026, and found no decipherment on or facing f.130. This worker did not
+re-view those images; this item rests on Bourdeau's view plus the catalogue.
+(d) **Recipient side: not found.** Nevers's printed papers are Gomberville 1665, seconde partie. This worker searched it
+(see line 2): no Dinteville letter. Henri IV, *Lettres missives* t.3 (csED2 above) holds only the king's letters to
+Dinteville.
+New lead for a later recovery, not a find: fr.3623 no.15 (f.23) is a second Dinteville to Nevers letter "avec chiffre
+et déchiffrement", from Langres, "il 25 ottobre", in Italian (BnF fr.3623 finding aid, ark:/12148/cc50073t, fetched
+3 Oct 2026; DECODE R9452 Decrypted). It is a further crib if it uses the same sign set. The fr.3623 finding aid lists no
+Dinteville letters of 5 or 13 July 1592, so the csED2 lead above is not borne out by the catalogue.
+
+Verdict after this pass: `open` stands. The next step, a sign-by-sign transcription of f.128 against its interlinear
+(plus fr.3623 f.23), depends on nobody, so no "While waiting" section is needed.
+Requests this pass: archivesetmanuscrits.bnf.fr 2, books.google.com 9 (SearchWithinVolume, 2 s apart),
+archive.org 1, be-api.us.archive.org 1 (the generic Dinteville full-text query returned only noise), raw.githubusercontent.com 1,
+github.com 2 (shallow clones). Rule 10: no novelty claim; these are search results.
