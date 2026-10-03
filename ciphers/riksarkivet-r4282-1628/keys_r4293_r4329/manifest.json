@@ -1,0 +1,192 @@
+{
+ "fetched": "2026-10-03, one DECODE browser login (GAPS32-riksarkivet-r4282-1628, account-4): --fetch-page of the 9 RecordsView pages, then --listen get of the 31 _P.pdf names read from their thumbnails; 40 requests after login, 1.7 s apart",
+ "note": "PDFs and record pages not committed (record pages carry the logged-in account name); 80 dpi jpg renders of the 8 letter-table pages beside this file.",
+ "pdfs": [
+  {
+   "file": "IMG_R4293_I25784_P.pdf",
+   "bytes": 755316,
+   "sha1": "8395d0dc9464abb62d506fe647187c442fa96ca8",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4293_I25784_P.pdf"
+  },
+  {
+   "file": "IMG_R4295_I25788_P.pdf",
+   "bytes": 956886,
+   "sha1": "2f7082639f82a46ee22cc7ac271624e8228d19d1",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4295_I25788_P.pdf"
+  },
+  {
+   "file": "IMG_R4297_I25790_P.pdf",
+   "bytes": 1697448,
+   "sha1": "1adca7f1e75bb9f7d3e4805321d38cf5c1859ca8",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4297_I25790_P.pdf"
+  },
+  {
+   "file": "IMG_R4308_I25840_P.pdf",
+   "bytes": 475144,
+   "sha1": "0786ac8bd9076801050bce05e6f4550e08bb3453",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4308_I25840_P.pdf"
+  },
+  {
+   "file": "IMG_R4308_I25841_P.pdf",
+   "bytes": 2119153,
+   "sha1": "c2d2766d3d2a874b252f90f721827f0f62130a44",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4308_I25841_P.pdf"
+  },
+  {
+   "file": "IMG_R4308_I25842_P.pdf",
+   "bytes": 454055,
+   "sha1": "d2281a5f914b53ef73190894498069eafc98095a",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4308_I25842_P.pdf"
+  },
+  {
+   "file": "IMG_R4309_I25844_P.pdf",
+   "bytes": 1031780,
+   "sha1": "4815e8462fc5d538d1df13078b2eb7475d1deb98",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4309_I25844_P.pdf"
+  },
+  {
+   "file": "IMG_R4309_I25845_P.pdf",
+   "bytes": 974044,
+   "sha1": "9ed947bacc327f02e5b1fc8e46b57d4d89ce4211",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4309_I25845_P.pdf"
+  },
+  {
+   "file": "IMG_R4312_I25855_P.pdf",
+   "bytes": 556328,
+   "sha1": "6e5f39617a8e344ab56eeedadbefe8ad91f0d4a4",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4312_I25855_P.pdf"
+  },
+  {
+   "file": "IMG_R4312_I25856_P.pdf",
+   "bytes": 419863,
+   "sha1": "00ba4c7f5d1cc73b1ae68b0f027c446e651e3ef7",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4312_I25856_P.pdf"
+  },
+  {
+   "file": "IMG_R4312_I25857_P.pdf",
+   "bytes": 2230978,
+   "sha1": "42365d31b4e86a1cb1706007990ceb7845c8f261",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4312_I25857_P.pdf"
+  },
+  {
+   "file": "IMG_R4322_I25918_P.pdf",
+   "bytes": 2079499,
+   "sha1": "552ca8e55495a46591689379fe05ce16a24ad763",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4322_I25918_P.pdf"
+  },
+  {
+   "file": "IMG_R4322_I25919_P.pdf",
+   "bytes": 1388184,
+   "sha1": "40f224dec8fa2379f728a4dd5106224c6530059c",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4322_I25919_P.pdf"
+  },
+  {
+   "file": "IMG_R4322_I25920_P.pdf",
+   "bytes": 1183221,
+   "sha1": "b865e73d3a3bafafb066e4051038d6a7c3fa2ad8",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4322_I25920_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25921_P.pdf",
+   "bytes": 987164,
+   "sha1": "c1ea8cebe033e75bc8a7a0f0fc89379c1ccbccce",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25921_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25922_P.pdf",
+   "bytes": 2044773,
+   "sha1": "af893570b1a87725dd2dc8f0fc68b6fbd263784e",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25922_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25923_P.pdf",
+   "bytes": 1779908,
+   "sha1": "50005eb4e5d2fa0615fb43072b4b6ad32ccb6671",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25923_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25924_P.pdf",
+   "bytes": 2137240,
+   "sha1": "53f2b76e7a85fffe145849d2da2b35986ef3c63e",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25924_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25925_P.pdf",
+   "bytes": 2225985,
+   "sha1": "e5dc56dd10a93062c10649af4a42b674466383d0",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25925_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25926_P.pdf",
+   "bytes": 2070257,
+   "sha1": "916edbc83631497ec25c80cee0d456aaa0f12e2d",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25926_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25927_P.pdf",
+   "bytes": 1980246,
+   "sha1": "7bc2a3b2090d1cd0350dce6a503f09aead746801",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25927_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25928_P.pdf",
+   "bytes": 1971653,
+   "sha1": "7510486b5ba3a180c010564611e57586656987c5",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25928_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25929_P.pdf",
+   "bytes": 2023545,
+   "sha1": "bba307b60d18a3bfc9e7c3ae3c978572c21fe99b",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25929_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25930_P.pdf",
+   "bytes": 882119,
+   "sha1": "e4c972e0d45953e4e03f7ba6fbb1cd2adefa0f0f",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25930_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25931_P.pdf",
+   "bytes": 1919911,
+   "sha1": "62dd3abd4a959bcd4ec3686284b7e94ef9476eb6",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25931_P.pdf"
+  },
+  {
+   "file": "IMG_R4323_I25932_P.pdf",
+   "bytes": 1751427,
+   "sha1": "75081119d851214e2d748ca453a4882a5067ff43",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4323_I25932_P.pdf"
+  },
+  {
+   "file": "IMG_R4329_I25960_P.pdf",
+   "bytes": 1040530,
+   "sha1": "da84868dfa1002999d38e351d25b5b3fd4dd116b",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4329_I25960_P.pdf"
+  },
+  {
+   "file": "IMG_R4329_I25961_P.pdf",
+   "bytes": 3254671,
+   "sha1": "7668b90f9f3af66269baeda6b759ae3c60af8600",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4329_I25961_P.pdf"
+  },
+  {
+   "file": "IMG_R4329_I25962_P.pdf",
+   "bytes": 2429670,
+   "sha1": "ca3468528c7d6abd389b1e7f5539e15fabba592b",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4329_I25962_P.pdf"
+  },
+  {
+   "file": "IMG_R4329_I25963_P.pdf",
+   "bytes": 2185797,
+   "sha1": "44e450f6a35199a0cdca729ea8227a0c0c185ff6",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4329_I25963_P.pdf"
+  },
+  {
+   "file": "IMG_R4329_I25964_P.pdf",
+   "bytes": 3198501,
+   "sha1": "0243dd5b7c660bf9c85760210a419dd0bbf713bf",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4329_I25964_P.pdf"
+  }
+ ]
+}

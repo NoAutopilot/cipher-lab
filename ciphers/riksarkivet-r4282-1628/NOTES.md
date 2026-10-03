@@ -647,17 +647,79 @@ M-grade eye read of the table (rule 2).
 Requests: de-crypt.org 9 (login page, submit, RecordsView/4263, 3 + 4 PDFs; 1.7 s apart), one login; no other host.
 Vision calls: 2 image reads (contact sheet, one table crop).
 
-## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, 3 Oct 2026)
+## GAPS32-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
+
+Verdict step run: "one DECODE login fetching the 9 remaining sign keys (4293 4295 4297 4308 4309 4312 4322 4323 4329) +
+same test". Intake gate: `riksarkivet-r4282-1628: open (line 1) -- edition/page or full-text-search citation found within
+6 lines` (exit 0).
+
+**Fetch.** Proxy CA added to a fresh NSS database (libnss3-tools installed first), then one
+`tools/decode_browser_login.js 4293 ... --fetch-page RecordsView/<other 8> --listen` login; the 31 `_P.pdf` names were
+read from the nine record pages' thumbnails and fetched through the listener in the same login. All 31 are real PDFs
+(sha1s in `keys_r4293_r4329/manifest.json`; 80 dpi renders of the 8 letter-table pages beside it; PDFs and record pages
+not committed). Symbol Sets on the record pages: 4293 Graphic+Numerical, 4295 Graphic, 4297 Graphic+Alphabet, 4308
+Graphic+Alphabet, 4309 Alphabet+Numerical, 4312 Alphabet, 4322 Graphic+Numerical, 4323 Alphabet+Numerical, 4329 Graphic.
+
+**What they are (two contact sheets of all 31 pages at 80 dpi, three stacks of 170 dpi table crops; all reading M).**
+- 4293 (1 p.): one graphic-sign alphabet written three times (runic/bar shapes); v = lambda, z = 3, y = E-shape; the
+  o/p/q column has an 8.
+- 4295 (1 p.): numeric homophones a 3/4/5, b 6, c 7, d 8, e 9/10/11 ... z 40; graphic signs for names only
+  (Schweden, Venedig, Italie ...); below, a keyword alphabet "erlach..." with digits, and a struck reciprocal
+  alphabet "erlacbdfgik / mnopqstuwxyz".
+- 4297 (1 slip, "4.3"): a graphic alphabet; g = lambda, n = x, o = open square, c = a 7-like hook, x = S.
+- 4308 (3 pp.: cover "Bröms..."; modern wrapper; table): a = lambda, b = crossed 4, c 9-like, d gamma, ... k looped
+  delta, l x, m x with ring, n i-shape, o H, ... u B, w 6, y L.
+- 4309 (2 pp.): "Alphabet" leaf whose cipher row is the 4275 Mainz alphabet (W, 8/theta, inverted V, 0, ... boxed
+  square h, # i, ... Delta, barred Z, 9, 8, infinity): same key, already tested (GAPS27), not re-tested.
+- 4312 (3 pp.): numeric homophonic table (1-1000) with 13 name letters (Z Oxenstierna, N Fürst Ludwig von Anhalt, Y
+  Magdeburg, ...); single-digit values D 9, K 7, L 8, O 1, P 5, Q 4, S 3, V 6, W 2.
+- 4322 (3 pp.): a German/Latin word list (Schweden, Kaiser, ... with Latin glosses) with no alphabet or sign column
+  seen at 80 dpi: skipped and logged, test inapplicable.
+- 4323 (12 pp.): a numbered name nomenclator 1-383 (Dutch: "Namen van ... steden", "Poolen", ...) and a letter table
+  384-407 of astrological/planet signs; its only sign shared with R4282 is a lambda-like z: one shared sign, where a
+  permutation control cannot vary (rule 3 non-test); not tested.
+- 4329 (5 pp.): letters A-Z = two-digit numbers 20-43 plus name lists: no single digit or graphic cell, test
+  inapplicable.
+
+**Test (rule 3).** `scripts/keys9_overlap.py` (--check exits 0; `keys9_overlap.json`), same statistic and controls as
+GAPS/GAPS3/GAPS27/GAPS30: mean la18 Latin unigram log-probability of the letters the key gives the covered tokens; (a)
+the same values permuted among the signs, (b) distinct random Latin letters, 2000 draws each; both controls vary on
+this statistic. 4295's struck reciprocal alphabet is applied to R4282's Latin-letter shapes as letters.
+
+| key / set | signs | covered tokens | real mean logp | (a) perm mean / p95 / share >= real | (b) random mean / p95 / share >= real |
+|---|---|---|---|---|---|
+| 4293 strict | 3 | 74 | -4.079 | -5.394 / -4.079 / 0.166 | -3.737 / -2.593 / 0.723 |
+| 4293 wide | 5 | 113 | -3.831 | -4.464 / -3.477 / 0.248 | -3.742 / -2.767 / 0.605 |
+| 4295 numeric digits | 5 | 213 | -2.834 | -2.814 / -2.654 / 0.651 | -3.756 / -2.801 / 0.058 |
+| 4295 reciprocal Latin (struck) | 22 | 660 | -3.542 | -3.576 / -3.248 / 0.442 | -3.753 / -3.393 / 0.178 |
+| 4297 strict | 3 | 72 | -3.855 | -3.303 / -2.775 / 0.854 | -3.780 / -2.555 / 0.615 |
+| 4297 wide | 5 | 147 | -3.651 | -3.602 / -3.062 / 0.524 | -3.764 / -2.748 / 0.518 |
+| 4308 strict | 5 | 136 | -3.195 | -2.895 / -2.528 / 0.886 | -3.752 / -2.745 / 0.262 |
+| 4308 wide | 8 | 252 | -3.486 | -3.409 / -2.928 / 0.560 | -3.752 / -3.012 / 0.329 |
+| 4312 numeric digits | 5 | 213 | -4.672 | -4.274 / -3.756 / 0.970 | -3.753 / -2.815 / 0.909 |
+
+No set reaches its own permutation p95 (closest: 4293 strict at 0.166 of permutations >= real, but 3 signs give only
+6 distinct permutations). 4295's digits beat most random draws (0.058) only because three of the five digits carry
+the frequent letter a; their own permutation, which keeps those values, does as well (0.651). Read: none of the nine
+decodes R4282's shared signs; with 4327, 4307, 4298/4299, 4275, 4305 and 4263, all 16 letter/graphic-sign key records
+of the Chifferklaver II set are now checked, and the overlaps are the period's stock of lambda/square/digit signs,
+not a shared key. Grades: none claimed (rule 4; no reading). Conditional on Bourdeau's single-pass transcription and
+M-grade eye reads of the tables (rule 2).
+
+Requests: de-crypt.org 42 (login page, submit, 9 RecordsView pages, 31 PDFs; 1.7 s apart), one login; no other host.
+Vision calls: 5 image reads (two contact sheets, three crop stacks).
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, 3 Oct 2026)
 Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
-- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); next: one DECODE login (--listen, ids read from each record page) fetching the other 9 (4293, 4295, 4297, 4308, 4309, 4312, 4322, 4323, 4329) full size, contact sheets plus one crop per letter table, the same overlap test, ~$4
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); the last 9 (GAPS32, 3 Oct 2026): 4293, 4295 (digits and struck reciprocal alphabet), 4297, 4308, 4312 tested, no set reaches its permutation p95 (shares of permutations >= real 0.17-0.97); 4309 = the 4275 alphabet; 4322 word list, 4329 two-digit table: inapplicable; 4323 one shared sign (non-test); all 16 sign key records now checked, none fits; next: a second blind transcription pass (see next gap), then homophonic annealing on the measured transcription, ~$5
 - transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
 
-## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, 3 Oct 2026)
+## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, GAPS32, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
-- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control), 4307 pp. 1-3 (GAPS2, name nomenclator, one shared sign), 4307 p.4 (GAPS3, reversed Latin-letter alphabet, 16 shared signs, no fit vs control), 4298/4299 (GAPS4, Polish keyword key, no digit or Greek cell, test inapplicable), 4275 (GAPS27, Mainz 1634 graphic-sign key, 4-7 shared signs, no fit vs control), 4305 (GAPS30, name nomenclator, test inapplicable), 4263 (GAPS30, 1650 graphic-sign key, 5-9 shared signs, no fit vs control) done; 9 other letter/graphic-sign key records left
+- [x] known-keys: all 16 letter/graphic-sign key records of the Chifferklaver II set checked (GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, 3 Oct 2026), plus R4284 crib leaf (bRIK) and R4280/R4281 (FT4): partial sign overlaps only, no fit vs permutation control on any
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
 - [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
 - [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: one DECODE login (--listen, image ids read from each record page) fetching the 9 remaining letter/graphic-sign key records (4293, 4295, 4297, 4308, 4309, 4312, 4322, 4323, 4329) full size, contact sheets plus one crop per letter table, the same overlap test with its permutation control, ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: second blind transcription pass on R4282's two pages (tools/iiif_lines.py --image on the DECODE full-size images, two passes + reconciliation, measured error vs Bourdeau), ~$5
