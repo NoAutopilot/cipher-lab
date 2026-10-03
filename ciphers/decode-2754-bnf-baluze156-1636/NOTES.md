@@ -386,3 +386,52 @@ Intake gate re-run after this section (`python3 tools/intake_gate_check.py decod
 decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## Premise check (GF4-BATCH3, account-4, 3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` (try to prove the item already done), before any first test.
+**Result: not found on (a)-(d); status stays `open`.** One false lead found and explained under (b).
+
+- **(a) Decipherments the folder mentions -- not found.** The only decipherments named here are Lasry's for
+  Baluze 155 f.79 and Baluze 156 f.40 (different leaves; both already tried on f.157r above, negative with matched
+  controls). DECODE R2754 re-opened live (`RecordsView/2754`, plain GET, 3 Oct 2026): Status *Non-decrypted*,
+  "Available Documents" empty, Additional Information only Tomokiyo's pointer to louisxiii.htm, created by
+  tomokiyo 2021-05-30. The leaf heads itself "Coppie du 9e febvr 1636"; the two blind passes record no
+  interlinear or marginal gloss over the cipher groups.
+- **(b) Other solvers' working files -- not found, one false lead.** Fresh shallow clones, 3 Oct 2026:
+  dbourdeau/cyphersolver main 2341682 (plus branches `work/open-problem-progress-20260917`, `lorraine-author`) and
+  aaymeloglu/unsolved-ciphers main d2800bb, grepped for `Baluze 156`, `2754`, `Isabran`, `Rocca Bert`, `Levanto`,
+  `Mr de ch`. Aymeloglu: R2754 only in the raw DECODE harvest. Bourdeau: no target folder, no rendering, no
+  apply-key script for this leaf -- **but** his DECODE harvest *excludes* R2754 as already solved:
+  `research/catalogue_harvest/decode/overrides.json` and `excluded.json`: "Melchior de Sabran 1636: Tomokiyo's
+  DECODE note records Daniel Bourdeau's solution of 15 Sept 2026", and `CATALOGUE.md` l.16 lists "Sabran 1636
+  here" among groups "already solved". Checked against the source it cites: Tomokiyo's live
+  `cryptiana.web.fc2.com/code/unsolved.htm` (fetched 3 Oct 2026) puts "Daniel Bourdeau notified me of his
+  solution on 15 September 2026" under the entry immediately *above*, "Richelieu (1629)" (BnF fr.3829 f.87/89,
+  DECODE R9461/R9462), and the Sabran entry that follows ends "Short passages in cipher in a letter to 'Mr de
+  ch.gr' appears to be in a different cipher, yet unsolved." The live louisxiii.htm (same date) still says
+  f.157 "has some passages in cipher, undeciphered", and the live DECODE record carries no such note. So the
+  exclusion is a misattribution of the adjacent Richelieu entry, not a solution; no Bourdeau reading of f.157
+  exists in his repository. (Worth a one-line courtesy note to Bourdeau in a future outreach issue; not posted.)
+- **(c) Physical neighbours -- not found.** Gallica btv1b9001409q, IIIF at 1600 px, 3 Oct 2026: canvas f161 left
+  half (f.156v, the facing page of the cipher) is the address cover of a *different* letter, "A Monsieur
+  Monsieur de Sabran cons[eiller] de S.M., gentilhomme ord[inaire] de la chambre ... a Gennes", with a docket,
+  no decipherment; canvas f160 (f.155v/156r) is another letter's close and a blank leaf with show-through;
+  canvas f163 left (f.158v) carries the docket "Copie de lettre a M. de Ch g^r" and faint writing that is
+  show-through of f.157v (compared line for line with `images/dc8_f157v.jpg`: "Il reste encore ... allemans
+  sur le Milanois", "Modenois", "S.A. de Savoye"), not a clear copy; f.159r is a new letter ("Monsieur, J'ay
+  receu la vostre du xxj ..." on Mantua/Savoy). No slip laid in. 4 Gallica requests, >=2 s apart.
+- **(d) Recipient's side -- not found.** The recipient "M. de Ch. g^r" is unidentified (the letter is a copy
+  sent on by Sabran's deputy after Sabran left Turin); no recipient-side edition can be named. Interior-phrase
+  searches, not the opening: Google Books API (`country=US`, key) `"party de Turin par la voye de Casal"`
+  (26 hits, all unrelated Salignac/Gascogne texts), `"Levanto" "Morgues" 1636 Marseille` (0),
+  `"Rocca" "Marseille" 1636 "Vitry" Sabran` (0), `"Sabran" 1636 Gennes "Isles de Marguerite"` (1: the 1921
+  Baluze catalogue), `"nomme Levanto"` (11, all Garcilaso/Pérou); Internet Archive advancedsearch
+  `"Rocca Berti" Marseille` (0), `"Sabran" "Levanto"` (0). Avenel's Richelieu *Lettres* t.V (1635-37) not
+  page-read for this letter (the plot on Marseille and the Lérins galleys is the likeliest place a summary
+  would surface): a gap, not a block.
+
+Requests this pass: de-crypt.org 1, cryptiana.web.fc2.com 2, gallica.bnf.fr 4, googleapis.com 5, archive.org 3,
+github.com 2 clones. Next cheap test (not yet run on this leaf): the Servien-Sabran 1632 cipher
+(Tomokiyo's own break, cryptiana) applied to f.157r's transcription with a matched control, since the two Lasry
+keys are already negative; Tomokiyo's "different cipher" sentence lowers but does not exclude it.
