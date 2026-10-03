@@ -1,0 +1,86 @@
+# key_servien_1632_letters.tsv -- S. Tomokiyo's recovered key "Servien-Sabran Cipher (1632)" (Abel Servien to Melchior de
+# Sabran, Oct-Dec 1632, BnF Baluze 155 f.105/123/127/131/139; solved by Tomokiyo from two independently enciphered copies,
+# f.123 and f.127, Cryptiana servien.htm, first posted 29 May 2021). Key table image fetched 3 Oct 2026 from
+# https://cryptiana.web.fc2.com/code/servien.png (468x188 px; copy in images/servien/, x3 crops key_left.png/key_right.png).
+# Credit: key recovered by Satoshi Tomokiyo; transcribed here by FT4 (account-4), 3 Oct 2026, one reading of the table
+# (three views of the same small digital image), self-reconciled; Tomokiyo's own "?" marks and struck-through entries
+# kept in the note column, struck entries NOT used as values.
+# glyph: a plain-ASCII description of the key symbol ("bar" = overbar). dc8_token: the DC8 transcription token class
+# (ciphertext_draft.tsv) whose base shape the glyph matches; DC8's transcription does not record overbars, so a barred
+# and an unbarred key glyph of the same base shape both map to the same DC8 token (the ambiguity servien_trial.py
+# resolves by search, with the same search applied to every control). "-" = no DC8 token class of that shape.
+letter	glyph	dc8_token	conf	note
+a	9 bar	9	M	row 1
+a	9	9	H	row 2
+a	long-s / script l	-	M	row 3
+a	triangle up	-	H	row 4
+a	triangle down	-	H	row 5
+a	22	-	H	number row
+b	m bar	m	M	row 1
+c	m	m	H	row 1
+c	o bar	o	M	row 2
+c	square	-	H	row 3
+d	h	h	H	row 1
+d	f bar	f	M	row 2
+d	phi	Φ	M	row 3; DC8 Φ is "circle with a bar through it" (passA L22.6, conf L)
+d	12	12	M	number row, Tomokiyo "12?"
+e	theta	-	H	row 1
+e	script l	-	M	row 2
+e	rho / p	p	M	row 3
+e	n bar	n	M	row 4
+e	24	-	H	number row
+f	a	a	H	row 1
+f	e bar	e	M	row 2
+g	n	n	H	row 1
+g	u bar	u	M	row 2
+g	tt (struck)	-	L	row 3, struck through by Tomokiyo: not used
+h	o	o	H	row 2
+h	14	-	L	number row, Tomokiyo "14?"
+i	x	x	H	row 1
+i	3 bar	-	M	row 2
+i	6 (struck)	-	L	row 3, struck: not used
+i	44 (struck)	-	L	row 4, struck: not used
+i	+ (circled)	+	M	row 5, circled, linked by a drawn line to the circled t under n
+i	26	-	H	number row
+i	4	4	L	number row below 26, Tomokiyo "4?"
+l	6	6	H	row 1
+l	x (struck?)	-	L	row 2, a crossed x: not used
+l	c bar	c̃	M	row 3; DC8 c-tilde/bar
+l	15	-	H	number row
+m	8	8	H	row 1
+m	1	-	M	row 2
+m	P bar	p	M	row 3
+n	6 bar / b bar	b	M	row 1
+n	X	-	M	row 2
+n	t (circled)	t	M	row 3, circled, linked to + under i
+n	t bar / b	-	L	row 4
+n	16	-	L	number row, Tomokiyo "16?"
+o	c	c	H	row 1
+o	x bar	x	M	row 2
+o	lambda	-	H	row 3
+p	s	-	H	row 1
+p	a bar	a	M	row 2
+q	u	u	H	row 1
+r	d (round)	d	H	row 1
+r	h bar	h	M	row 2
+r	ff (crossed)	ff	L	row 3
+r	16	-	H	number row
+r	18	-	L	number row, Tomokiyo "18?"
+s	4 (looped)	4	M	row 1
+s	9	9	M	row 2
+s	t bar	t	M	row 3
+s	g	g	M	row 4
+s	31	-	H	number row
+t	e	e	H	row 1
+t	epsilon	E	M	row 2; DC8 "E"
+t	I bar	-	M	row 3
+t	///	-	H	row 4
+t	xx (ligature)	-	L	row 5
+t	17	-	L	number row, Tomokiyo "17?"
+u	k	-	H	row 1
+u	9 bar	9	M	row 2
+u	circled 9/o	-	M	row 3
+x	f	f	H	row 1
+null	10	10	H	nulls column
+null	20	-	H	nulls column
+null	30	-	H	nulls column

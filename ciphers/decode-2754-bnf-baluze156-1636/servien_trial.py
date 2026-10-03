@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""Trial of S. Tomokiyo's Servien-Sabran (1632) key (Cryptiana servien.htm; key_servien_1632_letters.tsv) on the
+letter-symbol tokens of Baluze 156 f.157r (DC8), with matched controls. FT4 (account-4), 3 Oct 2026.
+
+Same scoring as letters_trial.py (period French 5-gram, tools/french16_ngram.py, mean bits/char over mapped runs; an
+unmapped token breaks the run, a null token (10) is dropped). Difference: DC8's transcription records no overbars, so
+several DC8 token classes match two or three key letters (e.g. 9 = a, a-bar, s, u-bar). The statistic is therefore
+the BEST bits/char over those choices, found by the same deterministic coordinate-ascent search (per token class,
+5 restarts) for the target and for every control, so the search's own optimism is matched:
+  real      Tomokiyo's key, best choice per ambiguous class
+  shuffle   200 draws: the key's column letters permuted (homophone structure and DC8 shape matches kept), same search
+  positive  held-out period French of the real mapped-letter count, enciphered with the key (each letter -> a random
+            DC8 class whose candidate set contains it; letters with none -> a break), decoded with the same search
+  pos_shuf  the positive text under 200 shuffled keys (detection margin at this length)
+
+  python3 servien_trial.py           # print and rewrite servien_trial.tsv
+  python3 servien_trial.py --check   # exit 1 if servien_trial.tsv is stale
+"""
+import csv, os, sys, random, itertools
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, '..', '..', 'tools'))
+from french16_ngram import load
+
+def read_tsv(fn):
+    with open(os.path.join(HERE, fn), encoding='utf-8') as f:
+        return list(csv.DictReader((l for l in f if not l.startswith('#')), delimiter='\t'))
+
+KEY_FN, OUT_FN, N_SHUF = 'key_servien_1632_letters.tsv', 'servien_trial.tsv', 200
+LETTERS = 'abcdefghilmnopqrstux'          # key columns that carry glyphs (y, z empty in Tomokiyo's table)
+key = [r for r in read_tsv(KEY_FN) if r['dc8_token'] not in ('', '-')]
+NULLS = {r['dc8_token'] for r in key if r['letter'] == 'null'}
+key = [r for r in key if r['letter'] != 'null']
+
+def cand_sets(colmap):
+    c = {}
+    for r in key:
+        c.setdefault(r['dc8_token'], set()).add(colmap[r['letter']].upper().replace('U', 'V'))
+    return {t: sorted(v) for t, v in c.items()}
+
+rows = read_tsv('ciphertext_draft.tsv')
+lines = [[r['sign'] for r in g if r['sign'] not in NULLS] for _, g in itertools.groupby(rows, key=lambda r: r['line'])]
+M = load()
+_cache = {}
+def lp(s):
+    if s not in _cache: _cache[s] = M.logp(s)
+    return _cache[s]
+
+def runs(tl, mp):
+    out = []
+    for toks in tl:
+        cur = ''
+        for t in toks:
+            if t in mp: cur += mp[t]
+            else:
+                if cur: out.append(cur)
+                cur = ''
+        if cur: out.append(cur)
+    return out
+
+def bpc(rs):
+    n = sum(len(r) for r in rs)
+    return -sum(lp(r) for r in rs) / n if n else float('nan')
+
+def best(tl, cands, seed):
+    rng = random.Random(seed)
+    toks = sorted(cands)
+    top = (float('inf'), None)
+    for rs in range(5):
+        mp = {t: (cands[t][0] if rs == 0 else rng.choice(cands[t])) for t in toks}
+        cur = bpc(runs(tl, mp)); improved = True
+        while improved:
+            improved = False
+            for t in toks:
+                for v in cands[t]:
+                    if v == mp[t]: continue
+                    old = mp[t]; mp[t] = v; s = bpc(runs(tl, mp))
+                    if s < cur - 1e-12: cur, improved = s, True
+                    else: mp[t] = old
+        if cur < top[0]: top = (cur, dict(mp))
+    return top
+
+ident = {l: l for l in LETTERS}
+C = cand_sets(ident)
+real, real_map = best(lines, C, 1)
+real_runs = runs(lines, real_map)
+n_letters = sum(len(r) for r in real_runs)
+n_tokens = sum(len(l) for l in lines)
+rng = random.Random(1632)
+def shuf_map():
+    vs = list(LETTERS); rng.shuffle(vs); return dict(zip(LETTERS, vs))
+shuf = sorted(best(lines, cand_sets(shuf_map()), 100 + i)[0] for i in range(N_SHUF))
+pct = sum(s <= real for s in shuf) / len(shuf)
+
+inv = {}
+for t, vs in C.items():
+    for v in vs: inv.setdefault(v, []).append(t)
+text = ''.join(M._held)
+lens = [len(r) for r in real_runs]
+i = rng.randrange(0, len(text) - 5 * n_letters)
+segs = []
+for L in lens: segs.append(text[i:i + L]); i += L + 7
+syn = [[rng.choice(inv[ch]) if ch in inv else '?' + ch for ch in seg] for seg in segs]
+plain = ''.join(segs)
+pos, pos_map = best(syn, C, 2)
+pos_shuf = sorted(best(syn, cand_sets(shuf_map()), 500 + i)[0] for i in range(N_SHUF))
+pos_pct = sum(s <= pos for s in pos_shuf) / len(pos_shuf)
+pos_runs = runs(syn, pos_map)
+pos_acc = sum(a == b for a, b in zip(''.join(pos_runs), plain.replace('U', 'V'))) / max(1, len(plain))
+
+long_words = sorted({w for r in real_runs for a in range(len(r)) for b in range(a + 4, len(r) + 1)
+                     if (w := r[a:b]) in M.words and M.words[w] >= 20})
+out = [(f'# {OUT_FN} -- regenerated by servien_trial.py (3 Oct 2026); French 5-gram bits/char, lower = more French; best over the overbar-ambiguous choices, same search for every row', ''),
+       ('key', 'Tomokiyo, Servien-Sabran (1632), cryptiana servien.htm'),
+       ('dc8_token_classes_mapped', len(C)), ('ambiguous_classes', sum(len(v) > 1 for v in C.values())),
+       ('dc8_tokens_after_nulls', n_tokens), ('dc8_letters_mapped', n_letters),
+       ('real_bpc', f'{real:.3f}'), ('shuffle_draws', N_SHUF), ('shuffle_median_bpc', f'{shuf[N_SHUF // 2]:.3f}'),
+       ('shuffle_best_bpc', f'{shuf[0]:.3f}'), ('real_share_of_shuffles_as_good_or_better', f'{pct:.3f}'),
+       ('positive_control_letters', len(plain)), ('positive_control_bpc', f'{pos:.3f}'),
+       ('positive_control_letter_accuracy', f'{pos_acc:.3f}'),
+       ('positive_shuffle_median_bpc', f'{pos_shuf[N_SHUF // 2]:.3f}'),
+       ('positive_share_of_shuffles_as_good_or_better', f'{pos_pct:.3f}'),
+       ('real_best_choice', ' '.join(f'{t}={real_map[t]}' for t in sorted(real_map))),
+       ('real_words_ge4_in_decode', ' '.join(long_words) or '(none)'),
+       ('real_decode_runs', ' '.join(real_runs)),
+       ('verdict', 'reads' if pct < 0.01 and real < pos + 0.5 else 'does not read (negative, matched)')]
+body = '\n'.join(f'{k}\t{v}' if v != '' else k for k, v in out) + '\n'
+fn = os.path.join(HERE, OUT_FN)
+if '--check' in sys.argv:
+    old = open(fn, encoding='utf-8').read() if os.path.exists(fn) else ''
+    if old != body: print(f'{OUT_FN} is stale'); sys.exit(1)
+    print(f'{OUT_FN} up to date'); sys.exit(0)
+open(fn, 'w', encoding='utf-8').write(body)
+print(body)

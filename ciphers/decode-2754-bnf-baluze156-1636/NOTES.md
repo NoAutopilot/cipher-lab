@@ -435,3 +435,65 @@ Requests this pass: de-crypt.org 1, cryptiana.web.fc2.com 2, gallica.bnf.fr 4, g
 github.com 2 clones. Next cheap test (not yet run on this leaf): the Servien-Sabran 1632 cipher
 (Tomokiyo's own break, cryptiana) applied to f.157r's transcription with a matched control, since the two Lasry
 keys are already negative; Tomokiyo's "different cipher" sentence lowers but does not exclude it.
+
+## Servien-Sabran (1632) key -- negative at the 1% gate, matched control (FT4, account-4, 3 Oct 2026)
+
+First cheap test named by GF4-BATCH3. Intake gate pasted before work:
+
+```
+decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT=0
+```
+
+**Key source.** Not on disk as a table: `sources/cryptiana/web/servien.htm` (Tomokiyo, first posted 29 May 2021) gives
+the method and plaintexts but the key only as an image. Fetched once, 3 Oct 2026:
+`https://cryptiana.web.fc2.com/code/servien.png` (468x188, "Servien-Sabran Cipher (1632)") and `servien1.png` (first
+parallel-text strip, kept for reference), both in `images/servien/` with x3 crops (`key_left.png`, `key_right.png`).
+Key recovered by **Satoshi Tomokiyo** (from the two independently enciphered copies Baluze 155 f.123/f.127); credit his.
+Transcribed to `key_servien_1632_letters.tsv` (letter, glyph, matched DC8 token, confidence, Tomokiyo's own "?" and
+struck entries kept in the note, struck entries not used). The key image is a clean, small digital table, so this was
+one reading by the worker (three views of the same image), self-reconciled, not two blind subagent passes; the
+uncertain glyphs carry M/L in the `conf` column.
+
+**Overlap first.** Same design family as f.157r: Latin letters, digits and a few signs as homophones, overbars as
+distinguishers, plus numbers (12-31) and nulls 10/20/30. 25 of DC8's token classes match a key glyph by base shape
+(100 of 135 non-null tokens); code overlap on numbers: 10 (null) and 12 (d), none of 94/36/7. Unmatched: ll, Z, tt, y,
+nn, 7, r, 94, ✳, ttu, do, Sr, 36. DC8's two passes recorded no overbars, so 13 of the 25 classes match two or three
+key letters (9 = a / a-bar / s / u-bar, n = g / e-bar, o = h / c-bar, ...).
+
+**Test.** `servien_trial.py` (same French 5-gram scorer as `letters_trial.py`; nulls dropped, unmatched tokens break
+runs) takes the best bits/char over the overbar choices by one fixed coordinate-ascent search, and applies the same
+search to every control, so the search's freedom is matched. `tools/decode_key.py` was not used: its key.tsv needs one
+value per code and the overbar ambiguity has none until a transcription records bars.
+
+| row | bits/char | share of 200 shuffled keys as good |
+|---|---|---|
+| DC8 under Tomokiyo's key (100 letters) | **4.421** | **0.040** (0.048 of 1000 at another seed, not committed) |
+| shuffled keys (column letters permuted, homophone structure kept), median / best | 5.101 / 4.212 | |
+| positive control: 100 letters held-out French enciphered with the key, same search | **3.938** | 0.000 (74% of letters recovered) |
+
+Decode runs: `IDEDNN GC IST E E S INCT EDLRDIES G T R IEVRITE VVGR COCR EFS E MI E G RV VN IG EVDOL V INCE SE LV SE
+IVEGIC E ETE SRC NEO TDC SE SOSO I` -- no French word of four letters or more. fr16 judge (`tools/judge_plaintext.py`,
+throwaway spec `{"judge":{"language":"fr"}}`, N=100): `FAIL language: score=-1.755, null_p99=-1.711, real_p05=-0.948,
+real_median=-0.775` -- below the letter-shuffled null; the decode's own letter shuffle scored -2.016. Corpus era: no
+fr17 corpus in tools/data (fr16 and fr18 only); fr16 is the nearer and was used, and at a score this far below real_p05
+an era mismatch cannot be what fails it.
+
+**Verdict: does not read; negative at the 1% gate with matched control** (`servien_trial.py --check` exits 0). It is a
+weaker negative than the two Lasry keys (whose real score sat at the shuffle median): the real mapping sits near the
+shuffles' 5th percentile, consistent with a shared design family (letters/digits as homophones) giving some French-
+like letter frequencies, not with the same key. Tomokiyo's own sentence ("appears to be in a different cipher") stands.
+Grades (rule 4): no reading claimed; 0 H, 0 C, 0 S, 100 M (mechanical decode, unconfirmed), 0 I. HYPOTHESES.md opened
+with all four key trials side by side. Status word unchanged: **open**.
+
+**Conditional on the transcription** (rule 2): DC8's passes did not record overbars; a pass that records them would
+remove the ambiguity search and sharpen this test, but at p ~0.04-0.05 with no word emerging it would have to shift a
+lot to read.
+
+**Next key family** (not run): the 1636 Sabran letter-book Français 4140-4141 carries several 1636 letters "avec
+chiffre et déchiffrement" (finding aid cc50537t: f.161/163, f.195 ff., f.247, f.355); a period decipherment there in the
+same year as f.157 is the next key source -- fetch those leaves (Gallica), compare the cipher's symbol set with DC8 by
+shape, and rebuild the key from cipher+decipherment pairs if it matches; ~$6, one worker. Then Avenel t.V for a plain
+summary of the Marseille/Lérins plot (crib source).
+
+Requests this pass: cryptiana.web.fc2.com 2 (servien.png, servien1.png; 2 s apart, descriptive UA). No subagents.
