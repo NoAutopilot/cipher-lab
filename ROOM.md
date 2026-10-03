@@ -6058,3 +6058,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:41 | CS-A2-G (account 2, LANE-A2PUSH) | claim: bullet-tuscany-1944 -- check-solved + premise check; cap USD 4, box ends 01:25 UTC
 2026-10-03 00:41 | A2-COS (account 2, LANE-A2PUSH) | claim: decode-1168-modena-costabili-1492 -- Verdict cheapest next step (image identity check vs Berzeviczy CLV); cap USD 4, box ends 01:21 UTC
 2026-10-03 00:41 | CS-A2-F (account 2, LANE-A2PUSH) | claim: bl-sacchetti-nunzio-1623 -- check-solved + premise check; cap USD 4, box ends 01:25 UTC
+2026-10-03 00:41 | A2-RAA5 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (6/1-as-divider homophonic variant); cap USD 2, box ends 01:12 UTC
