@@ -376,7 +376,7 @@ scripts above are the rule-7 checks for the numbers reported.
 
 ## Remaining gaps (FT4-esp318-sicilia-1503, 3 Oct 2026)
 Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) agreed by two blind passes.
-- Sign alphabet of no. 94 - blocker: not-attempted; two machine passes split 63% because the inventory is unsettled (passes/agreement.tsv), so the next pass is a person's (CLAUDE.md Usage 6); next: build a tools/sign_sorter.py packet from the f.120r line crops and file the ASKS row for the owner's sort, ~$2
+- Sign alphabet of no. 94 - blocker: waiting-on ASKS 104 (owner's sign sort, page https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL, built FT4b 3 Oct 2026); two machine passes split 63% because the inventory is unsettled (passes/agreement.tsv), so the next pass is a person's (CLAUDE.md Usage 6)
 - ff.120v-121v - blocker: not-attempted; never transcribed, held until the alphabet is settled; next: crops via tools/iiif_lines.py --image from Bourdeau's full/ pages, after the alphabet is settled, ~$3/page for two passes
 - Nomenclator of no. 94 - blocker: open-codes; commonest groups otto/rah/mal/mys/ml are not in Bergenroth's partial list (code_overlap.json)
 
@@ -388,4 +388,22 @@ Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) 
 - [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish) not built; needs a settled transcription first
 - [ ] image-check: re-cut the key sheet with overlap so row m is visible; read crops zoomed
 - [ ] retry: none yet
-Verdict: keep going: 3 internal gaps; cheapest next: owner's sign-sorter pass on f.120r, then the Cifra del visorrey fetch, ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: the Cifra del visorrey fetch (alphabet waiting on ASKS 104, sorter built), ~$4
+
+## Sign sorter (FT4b-esp318-sicilia-1503, account-4, 3 Oct 2026)
+
+Built the owner's sign-sorter page for f.120r: https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL (private; ASKS row 104).
+`sorter/build_tiles.py` re-cuts the 33 lines at full width from the committed source image (the s1/s2 half crops overlap
+by 659 px and would double signs), boxes every ink piece with `tools/iiif_lines.py --groups 4` (gap from L04's blank-run
+histogram), and piles the 1,937 pieces into 40 provisional k-means clusters (c01-c40, 1 `wide`); `tools/sign_sorter.py`
+built the page (10.2 MB). No pass label is attached to a tile: the passes carry no x coordinate (README.md).
+"Check these first": 40 tiles, one per commonest (A, B) split pair from passes/disagreements.tsv, placed by proportional
+position along the line. No reading, no vision call; requests 0. Gaps step "Sign alphabet" now waiting-on ASKS 104.
+Rebuild and apply-after-sort: sorter/README.md.
+
+## While waiting
+
+- Depends on nobody: fetch the "Cifra del visorrey", BRAH 9/15 ff.1-6 (RAH OAI-PMH didl route, then `tools/browser_fetch.js
+  --binary` for the images; CLAUDE.md host notes), the second named key candidate for a viceroy's letter, ~$4. Its code
+  list can be tested against the 38 agreed code groups with `code_overlap.py`'s random-list control without a settled alphabet.
+- Depends on nobody, disk only: re-cut the Gran-cifra key sheet with overlap so row m is visible (key/), ~$0.5.
