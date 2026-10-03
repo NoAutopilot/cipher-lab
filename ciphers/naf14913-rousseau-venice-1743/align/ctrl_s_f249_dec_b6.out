@@ -1,0 +1,6 @@
+draw s 25 E 1 timedout True 156.2
+draw s 26 E 1 timedout True 205.7
+draw s 27 E 0 timedout False 123.7
+draw s 28 E 1 timedout True 163.5
+draw s 29 E 1 timedout True 137.0
+f249 s dec 25-29: E=1 in 4 of 5; unresolved 4; resolved fits 0 of 1; 786 s
