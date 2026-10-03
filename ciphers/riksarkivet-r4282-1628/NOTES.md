@@ -751,17 +751,68 @@ Grades: none claimed (rule 4; transcription only, no reading). Vision calls: 2 b
 (plus 3 preview/debug image views by the worker). Requests: de-crypt.org 9 (login page, submit, RecordsView/4282,
 3 thumbnails, 3 full-size PDFs; 1.5 s apart), one login; no other host.
 
-## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, GAPS38, 3 Oct 2026)
+## GAPS42-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
+
+Verdict step run: "homophonic annealing on tx2/ciphertext_reconciled.tsv via family_run.py, matched control first".
+Stream: `tx2/ciphertext_reconciled.tsv` as committed by GAPS38 (1,090 signs, K 34, clear phrases incl. "expensas"
+already out), read by `tools/family_run.py --cipher` (32 line-messages). Spec copy with a `judge` block
+(`"language": "la"`): `gaps42/spec_gaps42.json` (the shared `specs/` file is untouched).
+
+**Design prior** (`python3 tools/design_prior.py gaps42/stream_space.txt --no-write`): 1090 tokens, 34 distinct;
+multi-sign (homophonic/nomenclator/syllabary) d=0.06 (envelope 0.36) plausible; letter-for-letter d=0.31 plausible;
+mixed d=1.04 plausible; code d=1.78 excluded; shuffled-input false-positive rate 0.060; advisory ranking
+homophonic 0.06 < nomenclator 0.18 < alphabet substitution 0.31 < syllabary 0.56; nearest keys the fr4715 Mayenne
+homophonic reconstructions (d=0.05-0.08). So the homophonic family is the design prior's first pick.
+
+**Corpus (rule 3).** `tools/data/la18` (LANG_CORPORA "la"): Zaluski, *Epistolae historico-familiares*, Brunsberg
+1709-1711, Polish crown-chancery Latin letters. Right language and genre (chancery letter Latin), about 80 years
+later than the target (1628); no earlier Latin corpus is on disk. The control's numbers below show the corpus is
+not what limits the solver on a control cut from the same corpus; it cannot show whether 1628 Swedish/German
+chancery Latin differs enough to matter.
+
+**Matched control** (homophonic, N 1,090, K 34, `--param profile=target` = the target's own sign-count profile,
+`--measured-error 0.034`, gate 0.6; all rows in HYPOTHESES.md):
+
+| injected error | seeds x restarts | control recovery mean (range) | best control scores |
+|---|---|---|---|
+| 0 (blind baseline) | 5 x 16 | 0.992 (0.981-0.998) | -2436 to -2476 |
+| 0.034 (= measured two-reader rate) | 3 x 8 | 0.725 (0.261-0.960) | -2535 to -2908 |
+| 0.034 | 5 x 16 (target run) | 0.948 (0.935-0.960) | -2535 to -2580 |
+| 0.06 | 5 x 16 | 0.834 (0.518-0.924) | -2616 to -2836 |
+| 0.10 | 5 x 16 | 0.620 (0.502-0.866) | -2768 to -2946 |
+
+The control clears the gate at every level up to 10% injected error, three times the measured 3.4% (rule 3's
+error-bracketing clause met). The 8-restart run's one stuck seed (0.261) recovers at 16 restarts.
+
+**Target** (5 control seeds, then 16 restarts on the target): best score **-2950.3** (restarts -2950 to -3069);
+decode `families/homophonic-1-profile=target,noise=0.034-gaps42targetla18.txt` reads no Latin (e.g.
+"tstgnimideiuidarafiiuditstidacenpafi"); judge `FAIL language: score=-1.262, null_p99=-1.674, real_p05=-0.978,
+real_median=-0.894, N=1090`. **Shuffled target** (same solver, sign order destroyed, `--shuffle-target 1/2`): best
+scores -3156.5 and -3143.2, judge FAIL -1.338 both.
+
+**Reading of the numbers.** The real stream scores about 200 points better than its own shuffles (it carries
+sequential structure), but about 400 points worse than the control at the measured error and worse than every
+control seed even at 10% injected error. A homophonic letter substitution of Latin at this N and this
+transcription error would have been read (control 0.948 at 3.4%); the target was not. Control-backed negative for
+**plain homophonic letter substitution into Latin (la18 corpus)** at N 1,090, K 34, conditional on the GAPS38
+transcription and on the 1709-11 corpus standing in for 1628 Latin. Not a negative for the letter as a whole: a
+homophonic design with nulls, letter+syllable signs, or a nomenclator layer (design prior's second pick, d=0.18),
+or a non-Latin plaintext, is untested. Observation for the next step: line-initial "b" (12 of 32 lines) and the
+repeated groups "5t4", "7t4", "t5" are the kind of signals a nulls or syllable design would explain.
+
+Grades: none (no sign read; rule 4). Vision calls: 0. Requests: none (disk only). CPU runs serialized.
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, GAPS38, GAPS42, 3 Oct 2026)
 Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
-- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); the last 9 (GAPS32, 3 Oct 2026): 4293, 4295 (digits and struck reciprocal alphabet), 4297, 4308, 4312 tested, no set reaches its permutation p95 (shares of permutations >= real 0.17-0.97); 4309 = the 4275 alphabet; 4322 word list, 4329 two-digit table: inapplicable; 4323 one shared sign (non-test); all 16 sign key records now checked, none fits; second blind pass done (GAPS38, 3 Oct 2026: tx2/ciphertext_reconciled.tsv, 1,090 signs, err_2reader 3.4%); next: homophonic annealing on tx2/ciphertext_reconciled.tsv with a matched control (same N 1,090, K 34, Latin la18, homophonic design) first, ~$5
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); the last 9 (GAPS32, 3 Oct 2026): 4293, 4295 (digits and struck reciprocal alphabet), 4297, 4308, 4312 tested, no set reaches its permutation p95 (shares of permutations >= real 0.17-0.97); 4309 = the 4275 alphabet; 4322 word list, 4329 two-digit table: inapplicable; 4323 one shared sign (non-test); all 16 sign key records now checked, none fits; second blind pass done (GAPS38, 3 Oct 2026: tx2/ciphertext_reconciled.tsv, 1,090 signs, err_2reader 3.4%); homophonic annealing done (GAPS42, 3 Oct 2026): control 0.948 at the measured 3.4% error (0.992 clean, 0.620 at 10%), target best score -2950 vs control -2535 to -2580 and shuffled target -3143/-3157, judge FAIL -1.262 (real_p05 -0.978): control-backed negative for plain homophonic letter substitution into Latin (la18); next: homophonic with nulls (family_run.py --family homophonic --param nulls=0.1, control first, la18), ~$3
 - transcription reliability - blocker: open-codes; second blind pass on R4282 done (GAPS38, 3 Oct 2026): 96.6% two-reader agreement (37 of 1,102 columns), reconciled from the crops to 1,090 signs (H 1049 / M 36 / L 5), Bourdeau differs from it by 2.1% (8 of those signs are the clear word "expensas"); err_2reader only, no benchmark item for this hand; 3 positions (two interlined corrections, one possible extra n) left for the owner sorter if a decode ever turns on them; the R4284 key-test leaf still has only Bourdeau's single pass
 
-## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, GAPS32, GAPS38, 3 Oct 2026)
+## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, GAPS32, GAPS38, GAPS42, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
 - [x] known-keys: all 16 letter/graphic-sign key records of the Chifferklaver II set checked (GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, 3 Oct 2026), plus R4284 crib leaf (bRIK) and R4280/R4281 (FT4): partial sign overlaps only, no fit vs permutation control on any
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
-- [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing on tx2/ciphertext_reconciled.tsv (GAPS38) with matched control, ~$5
+- [ ] key-rebuild: no partial key exists to rebuild from; plain homophonic annealing into Latin done (GAPS42, 3 Oct 2026): control 0.948 at 3.4% error, target not read (score -2950 vs control -2535/-2580, judge FAIL); next instrument: homophonic with nulls (--param nulls=0.1), control first, ~$3
 - [ ] image-check: R4282 two pages done (GAPS38, 3 Oct 2026, 3.4% two-reader disagreement, reconciled); the R4284 key-test leaf still single-pass
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: homophonic annealing on tx2/ciphertext_reconciled.tsv (1,090 signs, K 34) via tools/family_run.py --family homophonic, matched control (N 1,090, K 34, la18) first, ~$5
+Verdict: keep going: 2 internal gaps; cheapest next: homophonic-with-nulls annealing on tx2/ciphertext_reconciled.tsv via tools/family_run.py --family homophonic --param nulls=0.1 (matched control at N 1,090, K 34, la18, noise 0.034, first), ~$3

@@ -81,3 +81,15 @@ Stopped at the overlap check per the brief; see NOTES.md "## FT4".
 |---|---|---|---|---|
 | known key 4327, third-column signs (7 shared: E L x A M T o), Latin unigram mean logp over 214/1110 tokens | (a) same letters permuted among the 7 signs, 2000; (b) 7 random Latin letters, 2000 | (a) mean -4.399, p95 -3.716; (b) mean -3.744, p95 -2.904 | real -4.357; frac(a)>=real 0.50, frac(b)>=real 0.84 | no fit on the shared signs (key at the permutation median); conditional on Bourdeau's one-pass transcription and an M-grade eye read of the key's sign column |
 Script: scripts/key4327_overlap.py (--check exits 0); numbers in key4327_overlap.json.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 06:56 | homophonic | N=1090 K=34 restarts=8 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.034 | 1-3 | 0.725 (0.261-0.960) | not run (control-only) | - | yes | GAPS42 control, la18, noise 3.4pct |
+| 3 Oct 2026 06:58 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0 | 1-5 | 0.992 (0.981-0.998) | not run (control-only) | - | yes | GAPS42 control, la18, noise 0 |
+| 3 Oct 2026 07:01 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.06 | 1-5 | 0.834 (0.518-0.924) | not run (control-only) | - | yes | GAPS42 control, la18, noise 0.06 |
+| 3 Oct 2026 07:04 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.10 | 1-5 | 0.620 (0.502-0.866) | not run (control-only) | - | yes | GAPS42 control, la18, noise 0.10 |
+| 3 Oct 2026 07:07 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.034 | 1 | 0.948 (0.935-0.960) | -2950.256 | FAIL language: score=-1.262, null_p99=-1.674, real_p05=-0.978, real_median=-0.894, mode=both, N=1090 | yes (gate 0.6) | GAPS42 target, la18 |
+| 3 Oct 2026 07:09 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.034,shuffle_target=1 | 1 | 0.960 (0.960-0.960) | -3156.528 | FAIL language: score=-1.338, null_p99=-1.674, real_p05=-0.978, real_median=-0.894, mode=both, N=1090 | yes (gate 0.6) | GAPS42 shuffled target 1, la18 |
+| 3 Oct 2026 07:10 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz profile=target,noise=0.034,shuffle_target=2 | 1 | 0.960 (0.960-0.960) | -3143.202 | FAIL language: score=-1.338, null_p99=-1.674, real_p05=-0.978, real_median=-0.894, mode=both, N=1090 | yes (gate 0.6) | GAPS42 shuffled target 2, la18 |
