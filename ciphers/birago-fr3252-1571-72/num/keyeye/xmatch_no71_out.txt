@@ -1,0 +1,35 @@
+gate stat_min 3.292 | coverage floor 0.5
+CONTROL it err=0.00 seed=1 n=240 stat=12.52 hit
+CONTROL it err=0.00 seed=2 n=240 stat=14.95 hit
+CONTROL it err=0.00 seed=3 n=240 stat=15.60 hit
+CONTROL it err=0.10 seed=1 n=240 stat=9.12 hit
+CONTROL it err=0.10 seed=2 n=240 stat=12.18 hit
+CONTROL it err=0.10 seed=3 n=240 stat=15.41 hit
+CONTROL it err=0.20 seed=1 n=240 stat=6.84 hit
+CONTROL it err=0.20 seed=2 n=240 stat=12.85 hit
+CONTROL it err=0.20 seed=3 n=240 stat=12.02 hit
+CONTROL it err=0.30 seed=1 n=240 stat=5.85 hit
+CONTROL it err=0.30 seed=2 n=240 stat=4.54 hit
+CONTROL it err=0.30 seed=3 n=240 stat=7.84 hit
+CONTROL it total 12/12
+TARGET it f119 key=as-written n=240 cov=0.26 stat=-1.09 below gate (under coverage floor) | alhueueuquuouuehqzzuhuuguetoqouuhbquebhqelfblezuhzouquhnuusq
+TARGET it f119 key=0d=d alias n=240 cov=0.30 stat=-0.30 below gate (under coverage floor) | alhueueuqruuouuerhqzzuhuuguetroqouuhbquebhqerlfbrrrlezuhzouq
+TARGET it f100r key=as-written n=274 cov=0.27 stat=1.65 below gate (under coverage floor) | hlhhgqgufhhauaguseugzhbgzouhshlzgubtuloqztgluzqubhbhzuefqtzu
+TARGET it f100r key=0d=d alias n=274 cov=0.31 stat=0.82 below gate (under coverage floor) | hrlhhgqrgufhhauarguserrugzrhbgzouhsrhlzrgubtuloqztgluzqurbhb
+CONTROL fr err=0.00 seed=1 n=240 stat=17.77 hit
+CONTROL fr err=0.00 seed=2 n=240 stat=3.57 hit
+CONTROL fr err=0.00 seed=3 n=240 stat=19.14 hit
+CONTROL fr err=0.10 seed=1 n=240 stat=11.13 hit
+CONTROL fr err=0.10 seed=2 n=240 stat=3.26 miss
+CONTROL fr err=0.10 seed=3 n=240 stat=15.45 hit
+CONTROL fr err=0.20 seed=1 n=240 stat=10.68 hit
+CONTROL fr err=0.20 seed=2 n=240 stat=2.22 miss
+CONTROL fr err=0.20 seed=3 n=240 stat=12.00 hit
+CONTROL fr err=0.30 seed=1 n=240 stat=6.25 hit
+CONTROL fr err=0.30 seed=2 n=240 stat=3.09 miss
+CONTROL fr err=0.30 seed=3 n=240 stat=9.04 hit
+CONTROL fr total 9/12
+TARGET fr f119 key=as-written n=240 cov=0.26 stat=-0.44 below gate (under coverage floor) | alhueueuquuouuehqzzuhuuguetoqouuhbquebhqelfblezuhzouquhnuusq
+TARGET fr f119 key=0d=d alias n=240 cov=0.30 stat=0.04 below gate (under coverage floor) | alhueueuqruuouuerhqzzuhuuguetroqouuhbquebhqerlfbrrrlezuhzouq
+TARGET fr f100r key=as-written n=274 cov=0.27 stat=-0.71 below gate (under coverage floor) | hlhhgqgufhhauaguseugzhbgzouhshlzgubtuloqztgluzqubhbhzuefqtzu
+TARGET fr f100r key=0d=d alias n=274 cov=0.31 stat=-1.08 below gate (under coverage floor) | hrlhhgqrgufhhauarguserrugzrhbgzouhsrhlzrgubtuloqztgluzqurbhb

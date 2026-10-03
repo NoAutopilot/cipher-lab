@@ -1,0 +1,32 @@
+# BnF fr.3995 f.133r (Gallica btv1b525085665 canvas f256), Tomokiyo nevers.htm no.71 (French, figures): letter alphabet strip only.
+# Transcribed by eye by BIRAGO-NUM-KEYEYE3, 3 Oct 2026, from ONE vision call on images/fr3995/read_f133r.jpg (native region 200,300,1150,5800 via tools/iiif_lines.py, rotated 90 deg, autocontrast, split in two halves, 0.85x).
+# Design: code + mark. Letters carry plain two-figure codes (below); the Mots columns reuse 11-99 with a DOT above each code (11 au, 12 bon, 13 car ... 52 si, 53 trop, 54 temps, 55 ayme ... 92 quant ... 99 vous; towns Auxerre, Orleans, Bourges, Lyon, Dijon, Nevers, Decize, La Charite ...); persons/offices carry an OVERLINE (6|7|8 Roy, 9 Royne, 10|11|12 Royne mere, 13 Royne de Navarre, 41 Chevalier d'Aumale, 42 Mr d'Espernon, 43 Mr de Montmorency, 44 Mr de Retz, 45 Mr de Biron, 46 Mr de Joyeuse ...). A second strip "6 7 8 9 a b c ... x" with no figures legible under it at this crop was not read.
+# Dating (from the table itself): Mr d'Espernon and Mr de Joyeuse are the ducal favourites of 1581-87; the table is of the 1580s, not of Nov 1571.
+# Grades: H read clearly; M partly cut at the half join or a symbol (x, y, z, &).
+code	value	grade
+25	a	H
+10	b	H
+65	c	H
+75	d	H
+23	e	H
+24	e	H
+20	f	H
+30	g	H
+40	h	H
+63	i	H
+64	i	H
+50	l	H
+60	m	H
+73	n	H
+74	n	H
+85	o	H
+70	p	H
+80	q	H
+1	r	H
+83	s	H
+84	s	H
+95	t	H
+93	u	H
+94	u	H
+97	y	M
+90	z	M

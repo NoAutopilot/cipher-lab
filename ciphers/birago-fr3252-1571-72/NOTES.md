@@ -1249,3 +1249,73 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
 Verdict: keep going: 11 internal gaps; cheapest next: the f.100r + f.119 nomenclator-code reading against the clear text (~$1), then the fr.3995 French versos overview (~$2)
+
+## fr.3995 French tables nos.71, 75, 76 viewed; no.71 alphabet transcribed and scored (BIRAGO-NUM-KEYEYE3, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-birago-num-keyeye3.md`. Canvases from the cached manifest labels: 132v f255,
+133r f256, 133v f257, 140v f270, 142v-143r f274 (one opening), 143v f275. Overview: six 800 px images on one contact sheet
+(`images/fr3995/sheet_versos_71_75_76.jpg`, 1 vision call). Native crop: `tools/iiif_lines.py --ark btv1b525085665 --canvas
+256 --region 200,300,1150,5800` (the alphabet strip and the first word columns), rotated 90 degrees, autocontrast, split in
+two halves at 0.85x into `images/fr3995/read_f133r.jpg` (1 vision call). Vision calls 2.
+
+What each table is:
+- f.132v (f255): the wrapper of no.71, blank but for an endorsement. f.133v (f257) and f.143v (f275): offset/blank.
+- **no.71, f.133r (f256): French nomenclator, code + mark.** Letter alphabet with plain two-figure codes (a 25, b 10, c 65,
+  d 75, e 23/24, f 20, g 30, h 40, i 63/64, l 50, m 60, n 73/74, o 85, p 70, q 80, r 1, s 83/84, t 95, u 93/94, x a triangle
+  sign, y 97?, z 90?); word columns ("Motz": 11 au, 12 bon, 13 car, 14 ce, 15 ces, 16 de, 17 dit ... 52 si, 53 trop, 54 temps,
+  55 ayme, 56 amis, 57 avec, 58 argent ... 92 quant, 93 quil, 94 quoy, 95 recherche, 96 ruyne, 97 rien, 98 suis, 99 vous), towns
+  (Auxerre, Orleans, Bourges, Lyon, Dijon, Nevers, Decize, La Charite, Gien ...), military words (73 cavallerie ... 80 Allemans)
+  reuse the same figures with a DOT above; persons and offices carry an OVERLINE (6/7/8 Roy, 9 Royne, 10/11/12 Royne mere, 13
+  Royne de Navarre, 41 Chevalier d'Aumale, 42 Mr d'Espernon, 43 Mr de Montmorency, 44 Mr de Retz, 45 Mr de Biron, 46 Mr de
+  Joyeuse ...). Epernon and Joyeuse as "Mr" with the favourites' rank put the table in the 1580s (about 1581-87), not Nov 1571.
+  A second strip "6 7 8 9 a b c ... x" with no legible figures beneath was not read. Key: `keys/key_fr3995_no71_f133r.tsv`
+  (24 letter codes H, 2 M).
+- **no.75, f.140v (f270):** letter alphabet in display capitals with several homophones per letter running to three figures
+  (about 100-129), then "Noms" (M. de Mayenne, Prince de Conde ...), "Villes", "Provinces", "Nulles", "Doubles". Mayenne
+  (duke from 1573) and three-figure codes: not a candidate for the two-figure Nov 1571 tokens; not transcribed.
+- **no.76, f.142v-143r (f274):** a two-page repertory (alphabet headings A, B, C ... over word columns), too faint at 800 px to
+  read its code range; not transcribed (the brief's one native crop went to no.71).
+
+**Score** (`num/keyeye/xmatch_no71.py`, output `num/keyeye/xmatch_no71_out.txt`; same pair_stats and gate stat_min 3.292 as
+KEYEYE/KEYEYE2; matched control first, in Italian (it16dip, as before) and in French (fr16, the table's language)). The pair
+tokens carry no marks, so only the plain letter codes are scored.
+
+| text | model | key | coverage | stat | verdict |
+|---|---|---|---|---|---|
+| f.119 pairs (240) | it / fr | as written | 0.26 | -1.09 / -0.44 | below gate, under coverage floor |
+| f.119 pairs | it / fr | 0d=d alias | 0.30 | -0.30 / 0.04 | below gate, under coverage floor |
+| f.100r pairs (274) | it / fr | as written | 0.27 | 1.65 / -0.71 | below gate, under coverage floor |
+| f.100r pairs | it / fr | 0d=d alias | 0.31 | 0.82 / -1.08 | below gate, under coverage floor |
+| matched control it16dip, 240 tokens, 0/10/20/30% replaced, 3 seeds | it | | 1.00 | 12.5-15.6 / 9.1-15.4 / 6.8-12.9 / 4.5-7.8 | 12/12 hit |
+| matched control fr16, same | fr | | 1.00 | 3.6-19.1 / 3.3-15.5 / 2.2-12.0 / 3.1-9.0 | 9/12 hit (seed 2 weak at every level) |
+
+Structural fact behind the coverage: the f.119 and f.100r token sets have no code in 60-73 at all (they use 00-59 and
+74-99), while no.71 puts m, i, c, p and n there; the letters could not be enciphered with this alphabet. no.71 is not the
+Nov 1571 key (coverage, and the table dates from the 1580s). Not found in: fr.3995 nos.71 (letter alphabet), 73, 74, 32 (and
+nos.33, 75 by range/coverage); no.76 not read. No token graded; no reading claimed. Novelty not classified (rule 10).
+
+Requests: gallica.bnf.fr 7 (6 x 800 px overview, 1 native region), >=1.7 s apart, no block; manifest from cache.
+
+## Remaining gaps (BIRAGO-NUM-KEYEYE3, 3 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 276 signs, all M/U; f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; r36_L01-L08, v36top, v36mid and r37 were read on HARVEST-D's eye grid, which the row-ink profile matched within 10-45 px there; next: one reconciliation call on their splits, disk only, ~$1.5
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); next: the dotted groups and the 1x/5x/8x units read as nomenclator codes against the clear text around each run, disk only, ~$1
+- Nov 1571 key table - blocker: not-attempted; fr.3995 undated tables all viewed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also dated 1580s by Epernon/Joyeuse), no.75 three-figure codes with League-era names, no.48-51 symbol keys; no.76 (f.142v-143r) a faint two-page repertory not read; no key table in fr.3995 fits; next: native crop of no.76's alphabet heading only to check its code range against the 00-59/74-99 token set (gap 60-73), ~$1.5
+- fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
+
+## Escalation (BIRAGO-NUM-KEYEYE3, 3 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 dotted groups and 1x/5x/8x units as nomenclator codes against the clear text; fr.3995 no.76 (f.142v-143r) alphabet heading for the code range
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
+Verdict: keep going: 11 internal gaps; cheapest next: the f.100r + f.119 nomenclator-code reading against the clear text (~$1), then the fr.3995 no.76 heading crop (~$1.5)
