@@ -7345,3 +7345,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:17 | A2P4-MATIG (account-2 worker) | claim matignon-mayenne-1586: named step 1 (fr.15572 ff.279-280 clear text vs f.276 opening), cap USD 5, box ends 18:02 UTC, for LANE-A2PUSH4 (account 2)
 2026-10-03 17:19 | A1B-FILS-XIIIJ (account-1 worker) | claim: fr3416-nevers-fils-1589 xiiij first glyph, 1 blind read of L02 crop; cap USD 1.5, box 17:20-17:40 UTC
 2026-10-03 17:19 | A1B-VILL-TX2 (account-1 worker) | claim: fr3993-villeroy-1595 (e') measured second transcription pass of f.148r-149r cipher runs (crops, 1 blind Sonnet pass/canvas, reconcile vs Bourdeau, settled sample); cap USD 8, box 17:20-18:20 UTC
+2026-10-03 17:18 | A1B-RANZO-SG (account-1 worker) | claim: fr2988-ranzo-1520s -- relabel Bourdeau c007/c006 s/g, check c017-c020, re-run pooled control + target; cap USD 3.5, box 17:19-17:59 UTC
