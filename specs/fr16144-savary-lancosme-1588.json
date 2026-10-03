@@ -1,0 +1,39 @@
+{
+ "slug": "fr16144-savary-lancosme-1588",
+ "name": "BnF fr.16144 ff.75-206, Savary de Lancosme (and secretary Berthier) to Henri III, Constantinople/Pera, Nov 1585 - mid 1588 -- open sub-pool: one letter, the 29 April 1587 duplicata (ff.182-184)",
+ "date": "29 April 1587 (open letter, dated in the leaf's own margin, 'Pera'); the volume's run is 27 Nov 1585 (f.82) to 1588",
+ "language_candidates": ["fr"],
+ "ciphertext": "not yet transcribed: Gallica ark:/12148/btv1b9060974c canvases f370-f375 (ff.182-184 + f.185?), est ~5,000 symbol signs mixed with clear French phrases; no transcription exists on disk as of 3 Oct 2026",
+ "ciphertext_source": "Gallica IIIF btv1b9060974c, viewed by LANE-POOLS FT-C on 3 Oct 2026 at 300 px (c150-c422) and 1000 px (c370, c372); ciphers/fr16144-savary-lancosme-1588/survey.tsv",
+ "alphabet": "symbol cipher, unsettled inventory (digits 2/6/9/26-like forms, #, crossed T, looped and hooked signs, a doubling sign per Tomokiyo henryiii.htm); same visual family on the margin-glossed pages c378-c413 and the full-symbol pages c279-c291, c311-c318 -- whether one table or two (1586 vs 1588) is not established",
+ "constraints": [
+  "period decipherments in the same volume for at least 15 cipher letters: left-margin decipherment columns (c185-194, c257-258, c266, c273-274, c378-413) and 'Deschiffre de la precedente' leaves (c176-178, c209-211, c241, c295-300, c323-324, c335-336, c358-362) -- grade-C known plaintext for key recovery",
+  "Charriere, Negociations dans le Levant IV (1860) prints 10 Lancosme letters in clear from 'Corr. de Turquie, Harlay' (Pera/Constantinople 16 Apr, 30 Apr, 14+28 May, 11+20 June, 25 July 1586; 20 Jan, 3 Feb, 19 Feb, 2 Mar, 20 Apr 1588) and no Lancosme letter of 1587; the decipherment leaf c295 (dated 20 juin 1586) matches his 'Pera, 11 et 20 juin 1586'",
+  "Tomokiyo henryiii.htm: 'He used the following cipher in letters of 1588 preserved in BnF fr.16144, ff.75-206 ... a symbol to double the preceding letter' (table as an image on his page, not on disk)",
+  "the open letter is a 'Duplicata': an original may exist elsewhere (another Harlay volume, the recipient's papers) -- not searched"
+ ],
+ "cheap_tests_in_order": [
+  "test 0: recover the table (grade C) from one margin-glossed page (c380, f.187) via tools/interlinear_align.py or a direct sign->letter table; held-out known-answer on a 'Deschiffre de la precedente' pair (c316 cipher vs c324 leaf, or c332 vs c335-336) token agreement vs 200 shuffled tables; needs a settled sign inventory first (TRANSCRIPTION.md: owner's sign sorter, tools/sign_sorter.py, then two blind passes per page on tools/iiif_lines.py crops)",
+  "test 1: apply the recovered table to the open duplicata c370-c375, French word-cover vs 200 shuffled tables (tools/data/fr16 is era-matched, Catherine de Medicis letters), judge_plaintext"
+ ],
+ "matched_control": "held-out glossed pair from the same volume and same cipher family (c316/c324 or c332/c335-336), same transcription protocol, same scorer; null = 200 shuffled sign->letter tables (a shuffle changes token agreement, so it can fail differently from the real table)",
+ "cheap_test_done": [
+  {
+   "test": "0 (step 0 only: open-letter count)",
+   "date": "3 Oct 2026",
+   "worker": "LANE-POOLS FT-C (account-1)",
+   "method": "Charriere IV whole-volume grep of the IA djvu text (ngociationsdel04charuoft) for every Lancosme letter and date line; 273-canvas thumbnail survey of c150-c422 (6 contact sheets read by eye) plus 6 canvases at 1000 px; survey.tsv",
+   "target": "31 units in ff.75-206: 12 clear, 18 cipher letters of which 17 carry a period decipherment in the volume (10 margin column, 7 following leaf; L14's two cipher lines unsure), 1 open: the 29 Apr 1587 duplicata c370-c375, est ~5,000 signs (c372 counted at 1000 px, ~45 x ~25), not printed by Charriere (no 1587 Lancosme letter in t.IV)",
+   "control": "n/a for a count; the thumbnail classification was spot-checked at 1000 px on c169/c176 (Berthier 27 Nov 1585 + its clerk decipherment), c295 ('Dechifre de la precedente', 20 juin 1586) and c370/c372 (the open duplicata)",
+   "verdict": "pool clears the ~2,000-sign bar only through one letter (est ~5,000 signs, estimate from one page counted); test 0 NOT run: one unit (2 blind passes + reconciliation, ~USD 4.5) plus the fixed reading cost would cross 80% of the USD 8 cap (Usage 6), and the sign inventory is unsettled (TRANSCRIPTION.md: settle it in the sign sorter before machine passes)",
+   "cost": "see the lane ledger"
+  }
+ ],
+ "judge": {
+  "language": "fr",
+  "min_word_cover": 0.5,
+  "note": "fr16 = Catherine de Medicis letters, 16th-century French diplomatic register: era-matched for 1587"
+ },
+ "value": "one ~5,000-sign open letter (29 Apr 1587) in a volume where 17 sibling cipher letters carry period decipherments -- a recovery-kind target: the key is on the leaves, the cost is transcription",
+ "written": "3 Oct 2026, LANE-POOLS FT-C (account-1), brief .claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md"
+}

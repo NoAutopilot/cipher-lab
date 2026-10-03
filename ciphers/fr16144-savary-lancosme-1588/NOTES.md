@@ -60,3 +60,69 @@ Read so far: 5 letters of 1588 matched to print (Charrière IV pp.638-660); unme
 - [ ] image-check: sampled at thumbnail/1300 px only; per-letter pass not done
 - [ ] retry: Cipher Mysteries search 406 once, PUR Anubis; not retried
 Verdict: keep going: 2 internal gaps; cheapest next: grep Charrière IV for the remaining Lancosme letters, ~$1
+
+## Step 0 and first-test pass (LANE-POOLS FT-C, account-1 worker, 3 Oct 2026 22:25-22:45 UTC by the container clock)
+Brief: .claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md (target C). Spec: specs/fr16144-savary-lancosme-1588.json.
+
+Intake gate (pasted): `fr16144-savary-lancosme-1588: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+Tool shelf: `tools/tool_shelf.py "survey a Gallica volume's canvases at low resolution to count cipher pages ..."` named
+gallica_folio.py (labels here are all 'NP', so no use), cipher_page_detector.py ([weak]: recall 0.69, FP 0.21, never swept)
+and htrc tools (HathiTrust only). None fits a page-class survey with gloss detection; used plain IIIF thumbnails +
+contact sheets read by eye (`survey_fetch.sh` regenerates them; images not committed).
+
+**Charrière IV (IA ngociationsdel04charuoft djvu text, whole volume, 142 "Lancosme" hits).** Letters printed in full
+from "Corr. de Turquie, Harlay": Constantinople 16 Apr 1586, 30 Apr 1586, 14 et 28 May 1586; Péra 11 et 20 June 1586,
+25 July 1586; Constantinople 20 Jan, 3 Feb, 19 Feb, 2 Mar 1588; Péra 20 Apr 1588 (ten letters; the five 1588 ones are
+CS-2's). Excerpts of other 1586 letters sit in his commentary (lines ~42262-44868 of the djvu text: Sept-Dec 1586); he
+notes November 1586 "n'en offre aucune dans la correspondance de M. de Lancosme" and prints **no Lancosme letter of
+1587**. His intro (p.~484) says the Harlay ms. supplies the ambassador's correspondence -- fr.16144 is a Harlay volume
+(BnF Saint-Germain Harlay), so the printed 1586/1588 letters are most likely set from these very decipherments; the
+c295 leaf "Dechifré de la precedente", dated 20 juin 1586, matches his "Péra, 11 et 20 juin 1586" (date match only;
+text not collated).
+
+**Volume survey (c150-c422 at 300 px, 273 IIIF requests; c169, c176, c295, c370, c372, c376/c377 at 1000 px).**
+`survey.tsv` has one row per unit. ff.75-206 = c156-c418 (folio = (canvas-6)/2 on rectos). The title leaf c155 reads
+"Lettres du Sr de Lancosme Amb. à Constantinople au Roy et à Mr de Villeroy ... Depuis Novembre 1585 jusques en Juin
+1588" (thumbnail reading), so the run is Nov 1585 - Jun 1588, not 1588 only, and includes letters of the secretary
+Berthier (c169 "Du Sr Berthier au Roy", Péra 27 Nov 1585, f.82; c197). 31 units: 12 clear; 18 with cipher, of which
+**17 carry a period decipherment inside the volume** (10 with a left-margin decipherment column; 7 followed by a
+"Deschiffré de la précédente" leaf: c176-178, c209-211, c241, c295-300, c323-324, c335-336, c358-362), one unsure (L14,
+two cipher lines on c251-252, no gloss seen at thumbnail size), and **one open: L25, c370-c375 (ff.182-184),
+"DUPLICATA / Du Sr de Lancosme au Roy", dated in the margin "29 Avril 1587 / Pera"**. It opens in clear ("Sire, du
+[..] du present j'ay advisé V. Majesté de tout ce qui se passoit pour son service ...") and runs into cipher with clear
+phrases interspersed ("le jour suivant", "le xxv. jour d'après"); c372 is dense cipher (~45 signs x ~25 lines);
+c376 blank, c377 the address leaf, c378 the next letter: no decipherment column or leaf was seen for it. Est ~5,000
+cipher signs (one page counted at 1000 px, the other four by eye at 300 px: an estimate, not a measurement).
+Charrière prints no 1587 letter, so it is not in print there.
+
+**Pool bar.** About 5,000 open signs, all in one letter: above the ~2,000 bar, so per the brief test 0 is next.
+**Test 0 not run.** Reasons, both from the rules: (1) Usage 6 per-unit pricing -- one unit is two blind passes + a
+reconciliation (~USD 4.5) on top of the fixed ~USD 3 of reading, already spent here on the survey; starting it would
+cross 80% of the USD 8 cap. (2) TRANSCRIPTION.md / Usage 6: the sign inventory of this cipher is not settled (no
+alphabet on disk; Tomokiyo's table is an image on henryiii.htm), and machine passes on an unsettled symbol inventory are
+the Debosnys failure shape; the next transcription step is a settled alphabet (owner's sign sorter) first. No number
+to report for target vs control: nothing was scored, so this is not a negative.
+
+Requests: archive.org 1 (djvu text), gallica.bnf.fr 280 (273 thumbnails + 7 at 1000 px, 2 s apart, all HTTP 200).
+
+## While waiting
+Nothing is waiting on anyone yet. The next step depends on nobody: cut line crops of c380 (margin-glossed) and c370-c375
+(open) with `tools/iiif_lines.py --ark ark:/12148/btv1b9060974c --canvas 380 --out ciphers/fr16144-savary-lancosme-1588/images --debug`
+and build a sign-sorter sheet (tools/sign_sorter.py) from them.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
+Read so far: 0 of ~5,000 open signs (1 open letter of 31 units; 17 cipher letters carry period decipherments, survey.tsv).
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: not-attempted; test 0 (table recovery from c380 margin + held-out c316/c324 vs 200 shuffled tables) did not fit this job's cap under the Usage 6 per-unit rule, and the sign inventory is unsettled; next: sign-sorter sheet from c380 + c370-375 crops then test 0, ~$9
+- the duplicata's original (another Harlay volume or the recipient's papers) - blocker: not-attempted; not searched; next: BnF archivesetmanuscrits search "Lancosme 1587" + Harlay Turquie volumes fr.16141-16147 index, ~$1
+- L14 cipher lines c251-252 - blocker: not-attempted; gloss presence unsure at thumbnail size; next: one 1000 px look, ~$0.2
+
+## Escalation (3 Oct 2026)
+- [x] siblings: whole run ff.75-206 surveyed; 17 sibling cipher letters with decipherments located (survey.tsv)
+- [x] clear-pages: decipherment leaves and margin columns located, not transcribed
+- [ ] known-keys: Tomokiyo's table (henryiii.htm, image) not applied; next: fetch the table image and compare with c380, ~$1
+- [x] print: Charrière IV whole volume grepped (10 letters 1586/1588, none of 1587); Boucher's Lettres de Henri III for 1587-88 not read
+- [ ] key-rebuild: table recovery from margin glosses = test 0, not run (cap); next: as in Remaining gaps, ~$9
+- [ ] image-check: survey at 300 px; only 6 canvases at 1000 px
+- [n/a] retry: no host failed this pass
+Verdict: keep going: 3 internal gaps; cheapest next: one 1000 px look at c251-252, ~$0.2; the real next step is the sign-sorter + test 0 job, ~$9
+gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 3 internal gap(s), 3 step(s) untried`

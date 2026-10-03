@@ -1,0 +1,35 @@
+# fr.16144 ff.75-206 page survey, LANE-POOLS FT-C, 3 Oct 2026. Gallica btv1b9060974c canvases f150-f422 at 300 px (contact sheets), six canvases at 1000 px (f169 f176 f295 f370 f372 and f376/f377).
+# Folio = (canvas-6)/2 on recto canvases (c370=f.182, c372=f.183, c380=f.187, c420=f.207 Breves title). Classes are read by eye at thumbnail size: an interpretation, not a transcription.
+# class: clear | cipher+margin (decipherment column beside the cipher) | cipher+leaf (followed by a "Deschiffre de la precedente" leaf) | cipher+interlinear | cipher-open (no decipherment seen in the volume)
+unit	canvases	folios	heading_seen	date_seen	class	decipherment_at	print	est_cipher_signs	confidence
+L01	c157-158	75-76	Du Sr de Lancosme au Roy	Nov 1585	clear	-	-	0	thumb
+L02	c161	78	Du Sr de Lancosme au Roy	-	clear	-	-	0	thumb
+L03	c165	80	Du Sr de Lancosme au Roy	-	clear	-	-	0	thumb
+L04	c169-175	82-85	Du Sr Berthier au Roy	Pera 27 Nov 1585 (1000px)	cipher+interlinear	c176-178 clerk decipherment (1000px c176)	-	~4000	1000px head
+L05	c181-182	88-89	(Lancosme) au Roy	-	clear	-	-	0	thumb
+L06	c185-186	90	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	-	~1500	thumb
+L07	c189-194	92-94	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	-	~4000	thumb
+L08	c197-203	95-98	Du Sr Berthier au Roy	-	cipher (mixed)	c209-211 "Deschiffre de la precedente"	-	~3000	thumb
+L09	c213	104	Du Sr de Lancosme a M. de Villeroy	-	clear	-	-	0	thumb
+L10	c217-220	106-107	Du Sr de Lancosme Ambassadeur au Roy	-	clear (few cipher lines?)	-	-	unknown	thumb
+L11	c225	110	Du Sr Berthier au Roy et Lancosme	-	clear	-	-	0	thumb
+L12	c233-236	114-115	Du Sr de Lancosme au Roy	-	cipher (mixed)	c241 "Deschiffre de la precedente"	-	~2000	thumb
+L13	c243-244	119	Du Sr de Lancosme a M. de Villeroy	-	clear	-	-	0	thumb
+L14	c247-252	121-123	Du Sr de Lancosme au Roy	-	clear + cipher lines (c251-252)	not seen for c251-252	-	~600	thumb, unsure
+L15	c255-258	125-126	Du Sr de Lancosme au Roy	-	cipher+margin (c257-258)	margin column	-	~1500	thumb
+L16	c263-266	129-130	Du Sr de Lancosme au Roy	-	cipher+margin (c266)	margin column	-	~800	thumb
+L17	c271-275	133-134	Du Sr de Lancosme au Roy	-	cipher+margin (c273-274)	margin column	-	~1500	thumb
+L18	c279-291	137-142	Du Sr de Lancosme au Roy	June 1586	cipher+leaf (full symbol)	c295-300 "Dechifre de la precedente", dated 20 juin 1586 (1000px)	Charriere IV "Pera, 11 et 20 juin 1586"	~8000	1000px c295
+L19	c303-306	148-150	Du Sr de Lancosme au Roy	July 1586?	clear	-	Charriere IV "Pera 25 juillet 1586" (match not checked)	0	thumb
+L20	c311-318	152-156	Du Sr de Lancosme au Roy	-	cipher+leaf (full symbol)	c323-324 "Deschiffre de la precedente"	-	~5000	thumb (CS-2 c324 at 1300px)
+L21	c327-334	160-164	Du Sr de Lancosme au Roy	-	cipher+leaf (full symbol)	c335-336 "Deschiffre de la precedente"	-	~5000	thumb (CS-2 c340 at 1300px)
+L22	c339-341	166-167	Du Roy au Sr de Lancosme	Oct 1586?	clear	-	-	0	thumb
+L23	c343-355	168-174	Du Sr de Lancosme au Roy	Oct 1586?	cipher+leaf	c358-362 "Deschiffre de la precedente"	-	~6000	thumb
+L24	c366-367	180	(avis)	Oct 1586?	clear	-	-	0	thumb
+L25	c370-375	182-184	DUPLICATA Du Sr de Lancosme au Roy	Pera 29 Avril 1587 (1000px)	cipher-open (mixed: opening clear lines, then cipher with clear phrases)	none seen: c376 blank, c377 address leaf, c378 next letter	not in Charriere IV (no 1587 Lancosme letter printed)	~5000 (c370 ~350, c371-374 ~1100 each, c375 ~180; c372 counted at 1000px ~45 signs x ~25 lines)	1000px c370 c372
+L26	c378-382	186-188	Du Sr de Lancosme au Roy	-	cipher+margin	margin column (CS-2 c380 at 1300px)	-	~5000	thumb
+L27	c386-387	190	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	Charriere IV 1588 letters (match not checked)	~1500	thumb
+L28	c390-396	192-195	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	same	~6000	thumb
+L29	c402-408	198-201	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	same	~6000	thumb
+L30	c410-413	202-203	Du Sr de Lancosme au Roy	-	cipher+margin	margin column	same	~3000	thumb
+L31	c416-418	205-206	(extrait/avis)	-	clear	-	-	0	thumb
