@@ -25,6 +25,9 @@ Usage:
       DIR/images/, writes DIR/images/manifest.json (fetch record) and
       DIR/scores.tsv (canvas, label, score, features...). Stops on HTTP
       403/429 or a challenge page; no retry loop (good-citizen rule).
+      [--manifest-file JSON] reads an already-fetched manifest from disk;
+      [--canvas-range A-B] scans only canvases A..B (1-based) -- both added
+      3 Oct 2026 (BIRAGO-NUM-TOOLS) to fit a folio window under a host cap.
 
 Controls, 24 Sept 2026 (worker detIMG; sources/detector-img/labels.tsv, 41 cipher-page
 images from 10 hands -- Gramont, Danzay, Salviati, Seure, Lodewijk van Nassau, August
@@ -546,26 +549,44 @@ def iiif_canvases(manifest):
         yield canvas_id, label or "", service_id
 
 
+def parse_canvas_range(spec):
+    """'A-B' (1-based, inclusive, manifest order) -> (A, B); None/'' -> every canvas. BIRAGO-NUM-TOOLS, 3 Oct 2026:
+    lets a scan cover a folio window of a long volume under a per-host request cap."""
+    if not spec:
+        return 1, 10 ** 9
+    a, _, b = spec.partition("-")
+    lo, hi = int(a), int(b) if b else int(a)
+    if lo < 1 or hi < lo:
+        raise ValueError(f"bad --canvas-range {spec!r}")
+    return lo, hi
+
+
 def cmd_scan(args):
     weights_obj = load_weights(args.weights)
     os.makedirs(os.path.join(args.out, "images"), exist_ok=True)
 
-    print(f"fetching manifest {args.scan}", file=sys.stderr)
-    try:
-        resp = http_get(args.scan)
-    except urllib.error.HTTPError as e:
-        print(f"manifest fetch failed: HTTP {e.code}", file=sys.stderr)
-        return 2
-    if resp.status in (403, 429):
-        print(f"manifest fetch blocked: HTTP {resp.status}, stopping (no retry)", file=sys.stderr)
-        return 2
-    manifest = json.loads(resp.read())
-    time.sleep(args.delay)
+    if args.manifest_file:  # fetched once already (Usage 4): read from disk, no request
+        manifest = json.load(open(args.manifest_file))
+    else:
+        print(f"fetching manifest {args.scan}", file=sys.stderr)
+        try:
+            resp = http_get(args.scan)
+        except urllib.error.HTTPError as e:
+            print(f"manifest fetch failed: HTTP {e.code}", file=sys.stderr)
+            return 2
+        if resp.status in (403, 429):
+            print(f"manifest fetch blocked: HTTP {resp.status}, stopping (no retry)", file=sys.stderr)
+            return 2
+        manifest = json.loads(resp.read())
+        time.sleep(args.delay)
+    lo, hi = parse_canvas_range(args.canvas_range)
 
     fetch_log = []
     scored_rows = []
     n_fetched = 0
-    for canvas_id, label, service_id in iiif_canvases(manifest):
+    for idx, (canvas_id, label, service_id) in enumerate(iiif_canvases(manifest), start=1):
+        if not (lo <= idx <= hi):
+            continue
         if n_fetched >= args.max_canvases:
             print(f"reached --max-canvases {args.max_canvases}, stopping", file=sys.stderr)
             break
@@ -590,7 +611,7 @@ def cmd_scan(args):
         with open(out_path, "wb") as f:
             f.write(data)
         n_fetched += 1
-        fetch_log.append({"canvas": canvas_id, "label": label, "url": thumb_url, "file": out_path})
+        fetch_log.append({"canvas": canvas_id, "index": idx, "label": label, "url": thumb_url, "file": out_path})
 
         gray = (load_gray_autocrop if args.autocrop else load_gray)(out_path)
         feats = extract_features(gray)
@@ -626,6 +647,10 @@ def main():
     p.add_argument("--weights", default=DEFAULT_WEIGHTS_PATH)
     p.add_argument("--max-canvases", type=int, default=300)
     p.add_argument("--delay", type=float, default=1.5)
+    p.add_argument("--manifest-file", metavar="JSON",
+                   help="read the IIIF manifest from disk instead of fetching --scan (saves one request)")
+    p.add_argument("--canvas-range", metavar="A-B",
+                   help="scan only canvases A..B (1-based, inclusive, manifest order)")
     p.add_argument("--date", default="")
     p.add_argument("--verbose", action="store_true")
     p.add_argument("--autocrop", action="store_true",

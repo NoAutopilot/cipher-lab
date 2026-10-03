@@ -1,0 +1,16 @@
+seed 0: signs=1285 units=742 types=40 exc=3 acc=0.924
+  truth telittereconcesseperlaprefatasignoriauostramaleinforfnataadciocheepsisubditiuostrietnostri
+  read  telittereconcesseperlaprefptasignousauostramaleinforutnataadciorcheepsisuuditiuostrietnost
+seed 1: signs=1275 units=739 types=40 exc=4 acc=0.199
+  truth reputamocomefiglioequasinostrocittadinoenonmenoconfidiamoinsuaumanitachedequalsiuoglianost
+  read  tesiaedacedoligniaediouoreuatecessorclaolardolacellearedailuieideleaachemeditenuiiigniariu
+seed 2: signs=1321 units=743 types=39 exc=1 acc=0.932
+  truth iiipercheuoisieterisolutoanonfarloaltramenteetiononuiuogliomancareaniunmodoliconcludopoich
+  read  iiipercheuoisieterisoltoanonuarloaltramenteetiononuihogloomancareaniunmodlicononedopoiches
+seed 3: signs=1274 units=745 types=40 exc=3 acc=0.932
+  truth ualihannolaprotezionediquestidalsilicononuoglionochelpretedicachequestogiuglianouifosseetp
+  read  ualihannhelaprotezionediquestidalsilicontenuogcsionochelpretedicacioequestontiglianouifoss
+seed 4: signs=1327 units=741 types=40 exc=2 acc=0.924
+  truth efacihnentesarebbeperdarombraedispiacereassecomodilaagliauuersariidicalunniarlaeperseguita
+  read  echcihnentesarebbeperdaroibraedispiacereassecomodilaagliauuercriidicalunniarreperseguitarl
+CONTROL design=158:letter solved_as=158:letter noise=0.05 units=734: mean acc 0.782, per seed 0.92 0.20 0.93 0.93 0.92

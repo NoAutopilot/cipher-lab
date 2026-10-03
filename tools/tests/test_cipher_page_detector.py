@@ -95,11 +95,42 @@ def test_help():
     check("numpy+PIL only" in r.stdout, "--help shows the tool docstring")
 
 
+def test_canvas_range_and_manifest_file():
+    """BIRAGO-NUM-TOOLS, 3 Oct 2026: --manifest-file reads a local manifest (no request) and --canvas-range
+    fetches only the named canvases; offline via file:// image services."""
+    import importlib.util, json, shutil, tempfile
+    spec = importlib.util.spec_from_file_location("cpd", TOOL)
+    cpd = importlib.util.module_from_spec(spec); spec.loader.exec_module(cpd)
+    check(cpd.parse_canvas_range(None) == (1, 10 ** 9), "no --canvas-range means every canvas")
+    check(cpd.parse_canvas_range("3-5") == (3, 5), "--canvas-range 3-5 parses")
+    try:
+        cpd.parse_canvas_range("5-3"); check(False, "--canvas-range 5-3 must be refused")
+    except ValueError:
+        check(True, "--canvas-range 5-3 refused")
+    tmp = tempfile.mkdtemp()
+    try:
+        canvases = []
+        for i in range(1, 5):
+            d = os.path.join(tmp, f"svc{i}", "full", "400,", "0"); os.makedirs(d)
+            shutil.copy(os.path.join(FIXTURES, "cipher_dense.jpg"), os.path.join(d, "default.jpg"))
+            canvases.append({"@id": f"c{i}", "label": str(i), "images": [{"resource": {"service": {"@id": "file://" + os.path.join(tmp, f"svc{i}")}}}]})
+        mf = os.path.join(tmp, "m.json"); json.dump({"sequences": [{"canvases": canvases}]}, open(mf, "w"))
+        out = os.path.join(tmp, "out")
+        r = subprocess.run([sys.executable, TOOL, "--scan", "http://unused.invalid/manifest.json", "--manifest-file", mf,
+                            "--canvas-range", "2-3", "--delay", "0", "--out", out], capture_output=True, text=True)
+        check(r.returncode == 0, f"--scan with --manifest-file exits 0 (stderr: {r.stderr[-400:]})")
+        rows = open(os.path.join(out, "scores.tsv")).read().splitlines()[1:] if r.returncode == 0 else []
+        check([x.split("\t")[0] for x in rows] == ["c2", "c3"], f"--canvas-range 2-3 scores exactly canvases 2 and 3 (got {rows!r})")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def main():
     test_fixtures_present()
     test_feature_separation()
     test_help()
     test_fit_and_score_roundtrip()
+    test_canvas_range_and_manifest_file()
     if failures:
         print(f"\n{len(failures)} failure(s)")
         return 1

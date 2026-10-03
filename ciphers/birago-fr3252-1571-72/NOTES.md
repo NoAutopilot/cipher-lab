@@ -1012,3 +1012,97 @@ dotted two-figure groups read as nomenclator codes against the clear text around
 key) would also help. Novelty is not classified (rule 10).
 
 Cost and requests: disk only, no network, no subagents, 0 vision calls.
+
+## f.119 + f.100r: three built-but-unused tools (BIRAGO-NUM-TOOLS, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-birago-num-tools.md`. Files in `num/tools/` and `num/seg/`. Prior work cited as
+in BIRAGO-NUM (Bourdeau's f.119 transcription, cyphersolver `targets/birago`, MIT / CC BY 4.0).
+
+**1. Key crossmatch.** The stale entry was real. KEY-CROSSMATCH.tsv had scored `../birago-nevers-1571/ciphertext.txt`, which is
+Tomokiyo's transcription with its marks run into the digits, as **8 whitespace "signs"** against every key (45 rows, all
+meaningless). That file is kept as transcribed. `num/tools/make_ct_pairs.py` now writes each letter as two-digit code tokens:
+plain runs are cut by phase.py's pooled phase with strays dropped, and the marked groups stay in place. The outputs are
+`../birago-nevers-1571/ciphertext_f119_pairs.txt` (240 tokens) and `num/ciphertext_f100_pairs.txt` (274 tokens).
+`tools/key_crossmatch.py` gained `CT_SKIP_FILES`, which drops the untokenisable file and names its replacement (test in
+`tools/tests/test_key_crossmatch.py`). In KEY-CROSSMATCH.tsv the 45 stale rows were replaced by the 132 new ones.
+Result (`num/tools/out/crossmatch_pairs.tsv`): 66 keys reach coverage >= 0.5 on each letter (35 `none`, 28 `unusable-key`,
+3 `no_corpus`). The **best stat is 2.54** (f.100r under lodewijk-van-nassau `axmerge3/key_full_v2.tsv`), against the gate of
+3.292. **No pair is at or above the gate.**
+Matched positive control (`num/tools/xmatch_control.py`, `out/xmatch_control.txt`): synthetic it16dip text of 255 pairs (one
+letter's length), one homophonic key, 5% strays, scored with the *true* key. At the true phase the control hits 6 of 6; at
+phase.em's recovered phase (accuracy 0.675-0.969) it also hits 6 of 6, with stats 7.2-16.7 at 40 and 55 cells. So a key on
+disk that was the Nov 1571 key would have cleared the gate even at this phase error. **Control-backed negative:** none of the
+66 digit keys on disk is this key. This holds for keys whose language has a corpus. The 3 `no_corpus` keys (colbert155
+croissy 1668, intercepted-royalist 1646, maurice-rupert 1645) are other offices and decades and were not scored.
+
+**2. seg_homophonic (joint segmentation + homophonic).** *Is it a different instrument?* For the pairs-plus-strays
+hypothesis, **no**. With every digit a prefix it cuts each run in pairs from the run start, which is weaker than the retired
+phased_homophonic, and that hypothesis stays retired. For a **different hypothesis, a prefix code**, it is: a deterministic
+parse has no phase to flip. The design was chosen from structure before any solve (`num/seg/PREREG.md`, pushed 429bef29).
+Of 46 runs longer than one digit, only **2 end in 1, 5 or 8**, against a within-run shuffle null of mean 13.6 (p01 7,
+minimum 3 in 10,000 draws). The candidate is `158:letter`: 1x/5x/8x are two-digit units and the other digits single. It
+gives 734 units, 29 types and 1 parse exception.
+Control first: held-out it16 Italian, 734 units, the target's line lengths. **Noise 0.05: mean 0.782** (0.92 0.20 0.93 0.93
+0.92), gate 0.6 met. Noise 0.02: 0.97 on the 4 seeds that finished. Noise 0.05 brackets the measured error (1.4% two-reader
+disagreement plus 1 parse exception). Caveat on the match: in the control, single units carry about 25% of the text. In the
+target they carry 483 of 734 units (66%), so the target's unit-frequency profile is not reproduced.
+Target, model it16 all, score per unit with nulls:
+
+| design | units | types | score/unit | null | z |
+|---|---|---|---|---|---|
+| 158 (pre-registered) | 734 | 29 | -3.604 | -4.051 ± 0.014 (signs) | 32.4 |
+| 158 | 734 | 29 | -3.604 | -4.229 ± 0.024 (units) | 25.7 |
+| 15 (neighbour) | 790 | 23 | -3.717 | -4.225 ± 0.016 (signs) | 32.3 |
+| 1589 (neighbour) | 665 | 39 | -3.647 | -3.809 ± 0.018 (signs) | 9.2 |
+| control 158, noise 0.05 | 746 | 39 | **-2.457** | -3.894 ± 0.061 (units) | 23.5 |
+
+Pre-registered criterion (a) is met: the target's unit-null z (25.7) exceeds the control's (23.5). It means little,
+because the target's null sd is 2.5 times smaller. Criterion (b) **FAILs**: judge it16 gives -1.357 against real_p05 -0.985
+(null_p99 -1.806) on `num/seg/runs/target_unitnull_reading.txt`, which begins `dinsegoeiaogiaognisorne...` with no run of
+words. The control's own decode, which reads by eye ("dochesochefaraperaimormiocacconoscendo..."), *also* FAILs the judge,
+narrowly: -1.018 against real_p05 -1.007. So at noise 0.05 the judge sits at the edge of the control's ceiling. The
+informative gap is the score per unit: -3.60 for the target against -2.46 for the control. The target sits where the fr4687
+calibration put a 10%+ noise control or a non-letter design.
+**Verdict: no reading. This is a control-backed negative for a 158 prefix code with a letter-homophonic table in it16
+Italian**, conditional on the transcription and on the unit-profile caveat above. The run-end structure (1/5/8 open units)
+stays unexplained by any design tried. A nomenclator reading of the 1x/5x/8x units (as with the dotted groups) is a
+different design and was not tested. No token is graded.
+
+**3. cipher_page_detector.** The tool gained `--manifest-file` and `--canvas-range` (offline test added). The three volumes
+have 676 canvases and the cap is 400 requests, so the scan covered **fr.3995 whole (285)**, **fr.3251 canvases 96-155
+(f.95-f.154)** and **fr.3252 canvases 70-121 (f.69-f.120)**, at 400 px. Requests: gallica.bnf.fr 3 manifests + 397
+thumbnails = 400, 1.5 s apart, no block. Scores: `num/tools/out/scan_{fr3995,fr3251,fr3252}_scores.tsv`.
+**In-volume positive control FAILs.** The six known cipher leaves in those windows score 0.26-0.35, all predicted "plain" and
+all in the lower half: fr.3251 f.119 rank 51/60, f.138 42/60, f.144 33/60, f.152 53/60; fr.3252 f.100r 46/52, f.117r 42/52.
+The detector cannot see these hands' cipher at 400 px. Its 16 "cipher" calls in fr.3252 and 51 in fr.3995 (covers and
+flyleaves among the top 10) license nothing, and no canvas is reported as an uncovered cipher or key page. In fr.3995 every
+leaf is a key table anyway. Pointer from Tomokiyo's list, not from the detector (`sources/cryptiana/web/nevers.htm`): the
+earliest dated fr.3995 key is June 1580 (no.1). A Nov 1571 table, if the volume holds one, would be among the undated
+entries: nos.32-34 (f.62v-63r), 48-51 (f.90-91v) and 71-76 (f.132-142). One eye pass at overview size over those ~25
+canvases, looking for a digits-only Italian table with two-figure groups, is the next job (not read here).
+
+Cost and requests: gallica.bnf.fr 400 (3 manifests fetched once for the canvas counts, then read from disk; 397
+thumbnails); no subagents; 0 vision calls. Novelty not classified (rule 10).
+
+## Remaining gaps (BIRAGO-NUM-TOOLS, 3 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 276 signs, all M/U; f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; r36_L01-L08, v36top, v36mid and r37 were read on HARVEST-D's eye grid, which the row-ink profile matched within 10-45 px there; next: one reconciliation call on their splits, disk only, ~$1.5
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); next: the dotted groups and the 1x/5x/8x units read as nomenclator codes against the clear text around each run, disk only, ~$1
+- Nov 1571 key table - blocker: not-attempted; page detector failed its in-volume control (BIRAGO-NUM-TOOLS); next: eye pass over fr.3995 undated entries nos.32-34, 48-51, 71-76 (~25 canvases at overview size, 2 vision calls), ~$3
+
+## Escalation (BIRAGO-NUM-TOOLS, 3 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 dotted groups and 1x/5x/8x units as nomenclator codes against the clear text; fr.3995 undated key tables for a Nov 1571 table
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
+Verdict: keep going: 10 internal gaps; cheapest next: the f.100r + f.119 nomenclator-code reading against the clear text (~$1), then the fr.3995 undated-table eye pass (~$3)
