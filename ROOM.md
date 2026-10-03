@@ -7289,3 +7289,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:52 | account-4 parent | check-in 82 16:52: 7 done; reading ready on manteuffel f.410 (judge-limited, calibrated on period gloss) and hessen-daenemark (gloss key); rousseau exact gate PASS 121=s. Spawned verifiers VERIFY-MANT, VERIFY-HDK, VERIFY-ROU121 + CLOSER-75, GAPS171-eckert, GAPS172-pollaky, GAPS173-zeschau
 2026-10-03 16:52 | GAPS171-eckert-1862 (account-4) | claim: ciphers/eckert-1862 received ledgers mssEC 01-03 vs 13 no-print-match candidates + residue (5-gram, positive control), cap USD 3, box 30 min
 2026-10-03 16:52 | GAPS172-pollaky-1865-1875 (account-4) | claim: gap 1 print step on pollaky-1865-1875, cap USD 3, box 30 min
+2026-10-03 16:53 | GAPS173-zeschau-seebach-1841 (account-4) | claim: ciphers/zeschau-seebach-1841 Next step; files NOTES.md, REQUEST.md
