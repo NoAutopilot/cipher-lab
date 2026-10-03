@@ -8,7 +8,7 @@ import json
 K = json.load(open(D + 'blind_key.json')); VAL = {r: v[1] for r, v in K.items()}
 Q = {r['query']: r for r in csv.DictReader(open(D + 'queries_key.tsv'), delimiter='\t')}
 R = {}
-for r in csv.DictReader((l for l in open(D + 'result.tsv') if l.strip() and not l.startswith('#')), delimiter='\t'):
+for r in csv.DictReader((l for l in open(D + 'result.tsv') if l.strip()), delimiter='\t'):
     R[r['query'].strip()] = r
 def f(x):
     try: return float(x)

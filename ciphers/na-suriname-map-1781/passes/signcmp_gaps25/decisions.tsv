@@ -1,0 +1,172 @@
+query	line	pos	reader_code	key_value	best	best_conf	best_value	status	action
+#1	2077_L01	2	[delta]	a	R26	0.95	a	settled	none
+#2	2077_L01	3	[h-loop]	n	R19	0.85	n	unsettled	none
+#3	2077_L01	5	l	n	R1	0.85	n	unsettled	none
+#4	2077_L01	10	p	a	R10	0.9	a	settled	none
+#5	2077_L01	13	[delta]	a	R26	0.95	a	settled	none
+#6	2077_L01	14	[h-loop]	n	R19	0.85	n	unsettled	none
+#7	2077_L01	15	w	d	R11	0.85	d	unsettled	none
+#8	2077_L01	19	l	n	R1	0.85	n	unsettled	none
+#9	2077_L01	23	w	d	R11	0.85	d	unsettled	none
+#10	2077_L01	24	p	a	R10	0.9	a	settled	none
+#11	2077_L01	25	[h-loop]	n	R19	0.85	n	unsettled	none
+#12	2077_L02	3	x	q	R9	0.65	a	settled	a H
+#13	2077_L02	16	v	d	R12	0.85	d	unsettled	none
+#14	2077_L02	27	l	n	R1	0.85	n	unsettled	none
+#15	2077_L02	30	l	n	R1	0.85	n	unsettled	none
+#16	2077_L02	31	v	d	R12	0.85	d	unsettled	none
+#17	2077_L02	33	l	n	R1	0.85	n	unsettled	none
+#18	2077_L02	37	[h-loop]	n	R19	0.85	n	unsettled	none
+#19	2077_L03	10	[h-loop]	n	R19	0.85	n	unsettled	none
+#20	2077_L03	16	[delta]	a	R26	0.95	a	settled	none
+#21	2077_L03	17	l	n	R1	0.85	n	unsettled	none
+#22	2077_L03	23	l	n	R1	0.85	n	unsettled	none
+#23	2077_L03	24	v	d	R12	0.85	d	unsettled	none
+#24	2077_L03	26	[h-loop]	n	R19	0.85	n	unsettled	none
+#25	2077_L03	27	v	d	R12	0.85	d	unsettled	none
+#26	2077_L05	8	l	n	R1	0.85	n	unsettled	none
+#27	2077_L05	10	[u-dots]	n	R4	0.6	n	settled	none
+#28	2077_L05	12	[h-loop]	n	R19	0.85	n	unsettled	none
+#29	2077_L05	15	[u-dots]	n	R4	0.6	n	settled	none
+#30	2077_L05	16	[delta]	a	R26	0.95	a	settled	none
+#31	2077_L05	20	[delta]	a	R26	0.95	a	settled	none
+#32	2077_L05	21	[v-tall]	d	R7	0.85	c	settled	c H
+#33	2077_L05	23	l	n	R1	0.85	n	unsettled	none
+#34	2077_L05	25	[delta]	a	R26	0.95	a	settled	none
+#35	2077_L05	26	[h-loop]	n	R19	0.85	n	unsettled	none
+#36	2077_L05	37	[v-tall]	d	R7	0.85	c	settled	c H
+#37	2077_L05	41	[delta]	a	R26	0.95	a	settled	none
+#38	2077_L05	47	[delta]	a	R26	0.95	a	settled	none
+#39	2077_L05	48	x	q	R9	0.65	a	settled	a H
+#40	2077_L05	50	y	d	R12	0.85	d	unsettled	none
+#41	2077_L05	54	[delta]	a	R26	0.95	a	settled	none
+#42	2077_L05	57	l	n	R1	0.85	n	unsettled	none
+#43	2077_L06	1	[h-loop]	n	R19	0.85	n	unsettled	none
+#44	2077_L06	13	l	n	R1	0.85	n	unsettled	none
+#45	2077_L06	20	v	d	R12	0.85	d	unsettled	none
+#46	2077_L06	23	[h-loop]	n	R19	0.85	n	unsettled	none
+#47	2077_L06	28	[delta]	a	R26	0.95	a	settled	none
+#48	2077_L06	32	l	n	R1	0.85	n	unsettled	none
+#49	2077_L06	33	[h-loop]	n	R19	0.85	n	unsettled	none
+#50	2077_L06	44	l	n	R1	0.85	n	unsettled	none
+#51	2077_L08	3	[u-dots]	n	R4	0.6	n	settled	none
+#52	2077_L08	4	[delta]	a	R26	0.95	a	settled	none
+#53	2077_L08	9	[h-loop]	n	R19	0.85	n	unsettled	none
+#54	2077_L08	11	l	n	R1	0.85	n	unsettled	none
+#55	2077_L08	13	[delta]	a	R26	0.95	a	settled	none
+#56	2077_L08	14	l	n	R1	0.85	n	unsettled	none
+#57	2077_L08	22	v	d	R12	0.85	d	unsettled	none
+#58	2077_L08	27	[delta]	a	R26	0.95	a	settled	none
+#59	2077_L08	28	l	n	R1	0.85	n	unsettled	none
+#60	2077_L08	29	[u-dots]	n	R4	0.6	n	settled	none
+#61	2077_L08	30	[delta]	a	R26	0.95	a	settled	none
+#62	2077_L08	36	[delta]	a	R26	0.95	a	settled	none
+#63	2077_L08	40	[h-loop]	n	R19	0.85	n	unsettled	none
+#64	2077_L08	43	[delta]	a	R26	0.95	a	settled	none
+#65	2077_L08	44	x	q	R9	0.65	a	settled	a H
+#66	2077_L08	48	[u-dots]	n	R4	0.6	n	settled	none
+#67	2077_L09	0	l	n	R1	0.85	n	unsettled	none
+#68	2077_L09	2	[h-loop]	n	R19	0.85	n	unsettled	none
+#69	2077_L09	5	[delta]	a	R26	0.95	a	settled	none
+#70	2077_L09	6	[h-loop]	n	R19	0.85	n	unsettled	none
+#71	2077_L09	7	v	d	R12	0.85	d	unsettled	none
+#72	2077_L09	9	[v-tall]	d	R7	0.85	c	settled	c H
+#73	2077_L09	11	[u-dots]	n	R4	0.6	n	settled	none
+#74	2077_L09	16	[delta]	a	R26	0.95	a	settled	none
+#75	2077_L09	17	l	n	R1	0.85	n	unsettled	none
+#76	2077_L10	3	[h-loop]	n	R19	0.85	n	unsettled	none
+#77	2077_L10	4	l	n	R1	0.85	n	unsettled	none
+#78	2077_L10	7	[u-dots]	n	R4	0.6	n	settled	none
+#79	2077_L10	9	l	n	R1	0.85	n	unsettled	none
+#80	2077_L10	11	[delta]	a	R26	0.95	a	settled	none
+#81	2077_L10	12	[h-loop]	n	R19	0.85	n	unsettled	none
+#82	2077_L10	14	[delta]	a	R26	0.95	a	settled	none
+#83	2077_L10	15	x	q	R9	0.65	a	settled	a H
+#84	2077_L10	24	x	q	R9	0.65	a	settled	a H
+#85	2077_L10	25	p	a	R10	0.9	a	settled	none
+#86	2077_L10	27	[u-dots]	n	R4	0.6	n	settled	none
+#87	2077_L10	33	[v-tall]	d	R7	0.85	c	settled	c H
+#88	2077_L10	34	[delta]	a	R26	0.95	a	settled	none
+#89	2077_L10	39	l	n	R1	0.85	n	unsettled	none
+#90	2077_L10	42	v	d	R12	0.85	d	unsettled	none
+#91	2077_L10	46	[v-tall]	d	R7	0.85	c	settled	c H
+#92	2077_L10	55	l	n	R1	0.85	n	unsettled	none
+#93	2077_L10	57	[delta]	a	R26	0.95	a	settled	none
+#94	2077_L11	0	[v-tall]	d	R7	0.85	c	settled	c H
+#95	2077_L11	1	x	q	R9	0.65	a	settled	a H
+#96	2077_L11	6	l	n	R1	0.85	n	unsettled	none
+#97	2077_L11	8	[h-loop]	n	R19	0.85	n	unsettled	none
+#98	2077_L11	10	[u-dots]	n	R4	0.6	n	settled	none
+#99	2077_L11	12	[h-loop]	n	R19	0.85	n	unsettled	none
+#100	2077_L11	18	[h-loop]	n	R19	0.85	n	unsettled	none
+#101	2077_L11	22	[delta]	a	R26	0.95	a	settled	none
+#102	2077_L11	23	[u-dots]	n	R4	0.6	n	settled	none
+#103	2077_L11	36	v	d	R12	0.85	d	unsettled	none
+#104	2077_L11	38	[delta]	a	R26	0.95	a	settled	none
+#105	2077_L11	39	w	d	R11	0.85	d	unsettled	none
+#106	2077_L11	42	v	d	R12	0.85	d	unsettled	none
+#107	2077_L11	43	x	q	R9	0.65	a	settled	a H
+#108	2077_L11	44	[h-loop]	n	R19	0.85	n	unsettled	none
+#109	2077_L11	47	v	d	R12	0.85	d	unsettled	none
+#110	2077_L11	50	[delta]	a	R26	0.95	a	settled	none
+#111	2077_L11	52	l	n	R1	0.85	n	unsettled	none
+#112	2077_L11	56	l	n	R1	0.85	n	unsettled	none
+#113	2077_L11	59	[v-tall]	d	R7	0.85	c	settled	c H
+#114	2077_L11	70	[h-loop]	n	R19	0.85	n	unsettled	none
+#115	2077_L12	9	[delta]	a	R26	0.95	a	settled	none
+#116	2077_L12	19	v	d	R12	0.85	d	unsettled	none
+#117	2077_L12	23	[v-tall]	d	R7	0.85	c	settled	c H
+#118	2077_L12	27	[delta]	a	R26	0.95	a	settled	none
+#119	2077_L12	31	x	q	R9	0.65	a	settled	a H
+#120	2077_L12	37	[u-dots]	n	R4	0.6	n	settled	none
+#121	2077_L12	42	v	d	R12	0.85	d	unsettled	none
+#122	2077_L12	44	[delta]	a	R26	0.95	a	settled	none
+#123	2077_L14	6	[u-dots]	n	R4	0.6	n	settled	none
+#124	2077_L14	7	[delta]	a	R26	0.95	a	settled	none
+#125	2077_L14	12	l	n	R1	0.85	n	unsettled	none
+#126	2077_L14	23	l	n	R1	0.85	n	unsettled	none
+#127	2077_L14	26	[delta]	a	R26	0.95	a	settled	none
+#128	2077_L14	27	l	n	R1	0.85	n	unsettled	none
+#129	2077_L14	28	v	d	R12	0.85	d	unsettled	none
+#130	2077_L14	37	v	d	R12	0.85	d	unsettled	none
+#131	2077_L14	41	[h-loop]	n	R19	0.85	n	unsettled	none
+#132	2077_L14	43	[delta]	a	R26	0.95	a	settled	none
+#133	2077_L14	44	[h-loop]	n	R19	0.85	n	unsettled	none
+#134	2077_L15	0	[u-dots]	n	R4	0.6	n	settled	none
+#135	2077_L15	1	x	q	R9	0.65	a	settled	a H
+#136	2077_L15	3	[delta]	a	R26	0.95	a	settled	none
+#137	2077_L15	6	[h-loop]	n	R19	0.85	n	unsettled	none
+#138	2077_L15	8	p	a	R10	0.9	a	settled	none
+#139	2077_L15	9	l	n	R1	0.85	n	unsettled	none
+#140	2077_L15	17	[delta]	a	R26	0.95	a	settled	none
+#141	2077_L15	21	l	n	R1	0.85	n	unsettled	none
+#142	2077_L15	22	x	q	R9	0.65	a	settled	a H
+#143	2077_L15	33	[h-loop]	n	R19	0.85	n	unsettled	none
+#144	2077_L15	47	[u-dots]	n	R4	0.6	n	settled	none
+#145	2077_L15	48	[delta]	a	R26	0.95	a	settled	none
+#146	2077_L15	49	x	q	R9	0.65	a	settled	a H
+#147	2077_L16	3	[h-loop]	n	R19	0.85	n	unsettled	none
+#148	2077_L18	3	[u-dots]	n	R4	0.6	n	settled	none
+#149	2077_L18	4	[delta]	a	R26	0.95	a	settled	none
+#150	2077_L18	6	x	q	R9	0.65	a	settled	a H
+#151	2077_L18	9	[h-loop]	n	R19	0.85	n	unsettled	none
+#152	2077_L18	14	[u-dots]	n	R4	0.6	n	settled	none
+#153	2077_L18	15	[delta]	a	R26	0.95	a	settled	none
+#154	2077_L18	17	x	q	R9	0.65	a	settled	a H
+#155	2077_L18	20	[h-loop]	n	R19	0.85	n	unsettled	none
+#156	2077_L18	30	[h-loop]	n	R19	0.85	n	unsettled	none
+#157	2077_L18	33	[delta]	a	R26	0.95	a	settled	none
+#158	2077_L18	34	l	n	R1	0.85	n	unsettled	none
+#159	2077_L19	3	l	n	R1	0.85	n	unsettled	none
+#160	2077_L19	11	l	n	R1	0.85	n	unsettled	none
+#161	2077_L19	16	v	d	R12	0.85	d	unsettled	none
+#162	2077_L19	23	[delta]	a	R19	0.85	n	unsettled	none
+#163	2077_L19	24	[h-loop]	n	NONE	0.0	NONE	unsettled	none
+#164	2077_L19	26	[u-dots]	n	R4	0.6	n	settled	none
+#165	2077_L19	27	[delta]	a	R26	0.95	a	settled	none
+#166	2077_L19	29	[v-tall]	d	R7	0.85	c	unsettled	c M
+#167	2077_L19	31	l	n	R1	0.85	n	unsettled	none
+#168	2077_L20	0	v	d	R12	0.85	d	unsettled	none
+#169	2077_L20	10	v	d	R12	0.85	d	unsettled	none
+#170	2077_L20	14	[delta]	a	R26	0.95	a	settled	none
+#171	2077_L20	22	l	n	R1	0.85	n	unsettled	none

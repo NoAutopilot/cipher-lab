@@ -31,7 +31,7 @@ line	pos	sign	value	grade
 2077_L02	0	6	s	H
 2077_L02	1	[hash]	o	H
 2077_L02	2	[kappa]	?	U
-2077_L02	3	x	q	H
+2077_L02	3	x	a	H
 2077_L02	4	g	g|l	M
 2077_L02	5	[sigma]	?	U
 2077_L02	6	[dot]	?	U
@@ -118,7 +118,7 @@ line	pos	sign	value	grade
 2077_L05	18	[x-dots]	?	U
 2077_L05	19	g	g|l	M
 2077_L05	20	[delta]	a	M
-2077_L05	21	[v-tall]	d	M
+2077_L05	21	[v-tall]	c	M
 2077_L05	22	t	y	H
 2077_L05	23	l	n	H
 2077_L05	24	5	v	M
@@ -133,7 +133,7 @@ line	pos	sign	value	grade
 2077_L05	33	7	e	H
 2077_L05	35	[psi]	s	H
 2077_L05	36	3	e	H
-2077_L05	37	[v-tall]	d	H
+2077_L05	37	[v-tall]	c	H
 2077_L05	38	o	r	H
 2077_L05	39	a	e	H
 2077_L05	40	[lambda]	t	H
@@ -143,7 +143,7 @@ line	pos	sign	value	grade
 2077_L05	44	3	e	H
 2077_L05	46	s	p	M
 2077_L05	47	[delta]	a	H
-2077_L05	48	x	q	H
+2077_L05	48	x	a	H
 2077_L05	49	o	r	H
 2077_L05	50	y	d	M
 2077_L05	51	7	e	H
@@ -242,7 +242,7 @@ line	pos	sign	value	grade
 2077_L08	40	[h-loop]	n	H
 2077_L08	42	4	w	H
 2077_L08	43	[delta]	a	H
-2077_L08	44	x	q	H
+2077_L08	44	x	a	H
 2077_L08	45	[lambda]	t	H
 2077_L08	46	3	e	H
 2077_L08	47	o	r	H
@@ -263,7 +263,7 @@ line	pos	sign	value	grade
 2077_L09	6	[h-loop]	n	H
 2077_L09	7	v	d	H
 2077_L09	8	3	e	H
-2077_L09	9	[v-tall]	d	H
+2077_L09	9	[v-tall]	c	H
 2077_L09	10	[hash]	o	H
 2077_L09	11	[u-dots]	n	H
 2077_L09	12	[f-loop]	i	M
@@ -301,7 +301,7 @@ line	pos	sign	value	grade
 2077_L10	12	[h-loop]	n	H
 2077_L10	13	4	w	H
 2077_L10	14	[delta]	a	H
-2077_L10	15	x	q	H
+2077_L10	15	x	a	H
 2077_L10	16	[lambda]	t	H
 2077_L10	17	3	e	H
 2077_L10	18	o	r	H
@@ -310,7 +310,7 @@ line	pos	sign	value	grade
 2077_L10	21	[kappa]	?	U
 2077_L10	22	o	r	H
 2077_L10	23	4	w	H
-2077_L10	24	x	q	H
+2077_L10	24	x	a	H
 2077_L10	25	p	a	H
 2077_L10	26	r	t	H
 2077_L10	27	[u-dots]	n	H
@@ -318,7 +318,7 @@ line	pos	sign	value	grade
 2077_L10	29	[pi]	o	M
 2077_L10	30	g	g|l	M
 2077_L10	31	7	e	H
-2077_L10	33	[v-tall]	d	H
+2077_L10	33	[v-tall]	c	H
 2077_L10	34	[delta]	a	H
 2077_L10	35	6	s	H
 2077_L10	36	[psi]	s	H
@@ -331,7 +331,7 @@ line	pos	sign	value	grade
 2077_L10	43	7	e	H
 2077_L10	44	[w-tilde]	f	M
 2077_L10	45	3	e	M
-2077_L10	46	[v-tall]	d	M
+2077_L10	46	[v-tall]	c	M
 2077_L10	47	[lambda]	t	H
 2077_L10	48	a	e	H
 2077_L10	49	g	g|l	M
@@ -351,8 +351,8 @@ line	pos	sign	value	grade
 2077_L10	64	o	r	H
 2077_L10	65	m	i	H
 2077_L10	66	[sigma]	?	U
-2077_L11	0	[v-tall]	d	H
-2077_L11	1	x	q	H
+2077_L11	0	[v-tall]	c	H
+2077_L11	1	x	a	H
 2077_L11	2	6	s	H
 2077_L11	3	[psi]	s	H
 2077_L11	4	7	e	H
@@ -393,7 +393,7 @@ line	pos	sign	value	grade
 2077_L11	40	[f-loop]	i	M
 2077_L11	41	[sigma]	?	U
 2077_L11	42	v	d	H
-2077_L11	43	x	q	H
+2077_L11	43	x	a	H
 2077_L11	44	[h-loop]	n	H
 2077_L11	45	[lambda]	t	H
 2077_L11	46	[amp]	?	U
@@ -409,7 +409,7 @@ line	pos	sign	value	grade
 2077_L11	56	l	n	H
 2077_L11	57	6	s	H
 2077_L11	58	[psi]	s	H
-2077_L11	59	[v-tall]	d	H
+2077_L11	59	[v-tall]	c	H
 2077_L11	60	s	p	M
 2077_L11	61	[f-loop]	i	M
 2077_L11	62	o	r	H
@@ -436,14 +436,14 @@ line	pos	sign	value	grade
 2077_L12	20	3	e	H
 2077_L12	21	[Q-bar]	?	U
 2077_L12	22	r	t	H
-2077_L12	23	[v-tall]	d	H
+2077_L12	23	[v-tall]	c	H
 2077_L12	24	[lambda]	t	H
 2077_L12	26	g	l	C
 2077_L12	27	[delta]	a	H
 2077_L12	28	[d-loop]	b	H
 2077_L12	29	[hash]	o	H
 2077_L12	30	o	r	H
-2077_L12	31	x	q	H
+2077_L12	31	x	a	H
 2077_L12	32	[lambda]	t	H
 2077_L12	33	[pi]	o	H
 2077_L12	34	o	r	H
@@ -510,7 +510,7 @@ line	pos	sign	value	grade
 2077_L14	44	[h-loop]	n	H
 2077_L14	45	[lambda]	t	H
 2077_L15	0	[u-dots]	n	H
-2077_L15	1	x	q	H
+2077_L15	1	x	a	H
 2077_L15	2	g	g|l	M
 2077_L15	3	[delta]	a	H
 2077_L15	4	[psi]	s	H
@@ -530,7 +530,7 @@ line	pos	sign	value	grade
 2077_L15	19	[psi]	s	H
 2077_L15	20	3	e	H
 2077_L15	21	l	n	H
-2077_L15	22	x	q	H
+2077_L15	22	x	a	H
 2077_L15	23	7	e	H
 2077_L15	24	g	g|l	M
 2077_L15	25	5	v	H
@@ -557,7 +557,7 @@ line	pos	sign	value	grade
 2077_L15	46	o	r	H
 2077_L15	47	[u-dots]	n	H
 2077_L15	48	[delta]	a	H
-2077_L15	49	x	q	H
+2077_L15	49	x	a	H
 2077_L15	50	b	k|i	M
 2077_L15	51	7	e	H
 2077_L15	52	o	r	H
@@ -572,7 +572,7 @@ line	pos	sign	value	grade
 2077_L18	3	[u-dots]	n	H
 2077_L18	4	[delta]	a	H
 2077_L18	5	g	g|l	M
-2077_L18	6	x	q	H
+2077_L18	6	x	a	H
 2077_L18	7	[psi]	s	H
 2077_L18	8	t	y	H
 2077_L18	9	[h-loop]	n	H
@@ -582,7 +582,7 @@ line	pos	sign	value	grade
 2077_L18	14	[u-dots]	n	H
 2077_L18	15	[delta]	a	H
 2077_L18	16	g	g|l	M
-2077_L18	17	x	q	H
+2077_L18	17	x	a	H
 2077_L18	18	[psi]	s	H
 2077_L18	19	t	y	H
 2077_L18	20	[h-loop]	n	H
@@ -629,7 +629,7 @@ line	pos	sign	value	grade
 2077_L19	26	[u-dots]	n	H
 2077_L19	27	[delta]	a	H
 2077_L19	28	[psi]	s	M
-2077_L19	29	[v-tall]	d	H
+2077_L19	29	[v-tall]	c	M
 2077_L19	30	m	i	H
 2077_L19	31	l	n	H
 2077_L19	32	7	e	H

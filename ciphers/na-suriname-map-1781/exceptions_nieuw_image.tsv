@@ -62,3 +62,25 @@ line	pos	value	grade	reason
 2077_L12	10	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n 'Bakkerÿ, defect', k|i aligned to k with H neighbours matching
 2077_L12	11	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n, k|i aligned to k with H neighbours matching
 2077_L06	4	g	C	GAPS24 2078 Nota secondary pair (passes/nota2078_gaps24, prereg 7c2e235b): 2077 e ~ 2078 h (Neeger gevangenhuysen), pair A 1.000 vs N1 p99 0.778 / N2 p99 0.667; g|l aligned to g with H neighbours matching
+2077_L02	3	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #12 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L05	21	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #32 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L05	37	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #36 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L05	48	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #39 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L08	44	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #65 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L09	9	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #72 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L10	15	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #83 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L10	24	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #84 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L10	33	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #87 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L10	46	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #91 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L11	0	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #94 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L11	1	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #95 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L11	43	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #107 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L11	59	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #113 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L12	23	c	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #117 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L12	31	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #119 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L15	1	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #135 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L15	22	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #142 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L15	49	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #146 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L18	6	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #150 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L18	17	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #154 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
+2077_L19	29	c	M	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #166 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule

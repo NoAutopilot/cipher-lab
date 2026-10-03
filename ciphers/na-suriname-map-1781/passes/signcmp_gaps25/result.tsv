@@ -1,0 +1,172 @@
+query	line	best	best_conf	second	second_conf	located	note
+#1	L01	R26	0.95	NONE	0.0	sure	triangle
+#2	L01	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#3	L01	R1	0.85	R19	0.1	sure	tall looped l
+#4	L01	R10	0.9	R6	0.05	sure	p with descender
+#5	L01	R26	0.95	NONE	0.0	sure	triangle
+#6	L01	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#7	L01	R11	0.85	R12	0.1	sure	script w
+#8	L01	R1	0.85	R19	0.1	sure	tall looped l
+#9	L01	R11	0.85	R12	0.1	sure	script w
+#10	L01	R10	0.9	R6	0.05	sure	p with descender
+#11	L01	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#12	L02	R9	0.65	R5	0.3	sure	x with dot(s)
+#13	L02	R12	0.85	R11	0.1	sure	v with hooked right arm
+#14	L02	R1	0.85	R19	0.1	sure	tall looped l
+#15	L02	R1	0.85	R19	0.1	sure	tall looped l
+#16	L02	R12	0.85	R11	0.1	sure	v with hooked right arm
+#17	L02	R1	0.85	R19	0.1	sure	tall looped l
+#18	L02	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#19	L03	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#20	L03	R26	0.95	NONE	0.0	sure	triangle
+#21	L03	R1	0.85	R19	0.1	sure	tall looped l
+#22	L03	R1	0.85	R19	0.1	sure	tall looped l
+#23	L03	R12	0.85	R11	0.1	sure	v with hooked right arm
+#24	L03	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#25	L03	R12	0.85	R11	0.1	sure	v with hooked right arm
+#26	L05	R1	0.85	R19	0.1	sure	tall looped l
+#27	L05	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#28	L05	R19	0.85	R1	0.1	approx	h with tall stem and arch
+#29	L05	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#30	L05	R26	0.95	NONE	0.0	sure	triangle
+#31	L05	R26	0.95	NONE	0.0	sure	triangle
+#32	L05	R7	0.85	R8	0.05	sure	script C swirl
+#33	L05	R1	0.85	R19	0.1	sure	tall looped l
+#34	L05	R26	0.95	NONE	0.0	sure	triangle
+#35	L05	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#36	L05	R7	0.85	R8	0.05	sure	script C swirl
+#37	L05	R26	0.95	NONE	0.0	sure	triangle
+#38	L05	R26	0.95	NONE	0.0	sure	triangle
+#39	L05	R9	0.65	R5	0.3	sure	x with dot(s)
+#40	L05	R12	0.85	R11	0.1	sure	v with hooked right arm
+#41	L05	R26	0.95	NONE	0.0	sure	triangle
+#42	L05	R1	0.85	R19	0.1	sure	tall looped l
+#43	L06	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#44	L06	R1	0.85	R19	0.1	sure	tall looped l
+#45	L06	R12	0.85	R11	0.1	sure	v with hooked right arm
+#46	L06	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#47	L06	R26	0.95	NONE	0.0	sure	triangle
+#48	L06	R1	0.85	R19	0.1	sure	tall looped l
+#49	L06	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#50	L06	R1	0.85	R19	0.1	sure	tall looped l
+#51	L08	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#52	L08	R26	0.95	NONE	0.0	sure	triangle
+#53	L08	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#54	L08	R1	0.85	R19	0.1	sure	tall looped l
+#55	L08	R26	0.95	NONE	0.0	sure	triangle
+#56	L08	R1	0.85	R19	0.1	sure	tall looped l
+#57	L08	R12	0.85	R11	0.1	sure	v with hooked right arm
+#58	L08	R26	0.95	NONE	0.0	sure	triangle
+#59	L08	R1	0.85	R19	0.1	sure	tall looped l
+#60	L08	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#61	L08	R26	0.95	NONE	0.0	sure	triangle
+#62	L08	R26	0.95	NONE	0.0	sure	triangle
+#63	L08	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#64	L08	R26	0.95	NONE	0.0	sure	triangle
+#65	L08	R9	0.65	R5	0.3	sure	x with dot(s)
+#66	L08	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#67	L09	R1	0.85	R19	0.1	approx	tall looped l
+#68	L09	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#69	L09	R26	0.95	NONE	0.0	sure	triangle
+#70	L09	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#71	L09	R12	0.85	R11	0.1	sure	v with hooked right arm
+#72	L09	R7	0.85	R8	0.05	sure	script C swirl
+#73	L09	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#74	L09	R26	0.95	NONE	0.0	sure	triangle
+#75	L09	R1	0.85	R19	0.1	sure	tall looped l
+#76	L10	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#77	L10	R1	0.85	R19	0.1	sure	tall looped l
+#78	L10	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#79	L10	R1	0.85	R19	0.1	sure	tall looped l
+#80	L10	R26	0.95	NONE	0.0	sure	triangle
+#81	L10	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#82	L10	R26	0.95	NONE	0.0	sure	triangle
+#83	L10	R9	0.65	R5	0.3	sure	x with dot(s)
+#84	L10	R9	0.65	R5	0.3	sure	x with dot(s)
+#85	L10	R10	0.9	R6	0.05	sure	p with descender
+#86	L10	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#87	L10	R7	0.85	R8	0.05	sure	script C swirl
+#88	L10	R26	0.95	NONE	0.0	sure	triangle
+#89	L10	R1	0.85	R19	0.1	sure	tall looped l
+#90	L10	R12	0.85	R11	0.1	sure	v with hooked right arm
+#91	L10	R7	0.85	R8	0.05	sure	script C swirl
+#92	L10	R1	0.85	R19	0.1	sure	tall looped l
+#93	L10	R26	0.95	NONE	0.0	sure	triangle
+#94	L11	R7	0.85	R8	0.05	sure	script C swirl
+#95	L11	R9	0.65	R5	0.3	sure	x with dot(s)
+#96	L11	R1	0.85	R19	0.1	sure	tall looped l
+#97	L11	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#98	L11	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#99	L11	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#100	L11	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#101	L11	R26	0.95	NONE	0.0	sure	triangle
+#102	L11	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#103	L11	R12	0.85	R11	0.1	sure	v with hooked right arm
+#104	L11	R26	0.95	NONE	0.0	sure	triangle
+#105	L11	R11	0.85	R12	0.1	sure	script w
+#106	L11	R12	0.85	R11	0.1	sure	v with hooked right arm
+#107	L11	R9	0.65	R5	0.3	sure	x with dot(s)
+#108	L11	R19	0.85	R1	0.1	approx	h with tall stem and arch
+#109	L11	R12	0.85	R11	0.1	sure	v with hooked right arm
+#110	L11	R26	0.95	NONE	0.0	sure	triangle
+#111	L11	R1	0.85	R19	0.1	sure	tall looped l
+#112	L11	R1	0.85	R19	0.1	sure	tall looped l
+#113	L11	R7	0.85	R8	0.05	sure	script C swirl
+#114	L11	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#115	L12	R26	0.95	NONE	0.0	sure	triangle
+#116	L12	R12	0.85	R11	0.1	sure	v with hooked right arm
+#117	L12	R7	0.85	R8	0.05	sure	script C swirl
+#118	L12	R26	0.95	NONE	0.0	sure	triangle
+#119	L12	R9	0.65	R5	0.3	sure	x with dot(s)
+#120	L12	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#121	L12	R12	0.85	R11	0.1	sure	v with hooked right arm
+#122	L12	R26	0.95	NONE	0.0	sure	triangle
+#123	L14	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#124	L14	R26	0.95	NONE	0.0	sure	triangle
+#125	L14	R1	0.85	R19	0.1	sure	tall looped l
+#126	L14	R1	0.85	R19	0.1	sure	tall looped l
+#127	L14	R26	0.95	NONE	0.0	sure	triangle
+#128	L14	R1	0.85	R19	0.1	sure	tall looped l
+#129	L14	R12	0.85	R11	0.1	sure	v with hooked right arm
+#130	L14	R12	0.85	R11	0.1	sure	v with hooked right arm
+#131	L14	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#132	L14	R26	0.95	NONE	0.0	sure	triangle
+#133	L14	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#134	L15	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#135	L15	R9	0.65	R5	0.3	sure	x with dot(s)
+#136	L15	R26	0.95	NONE	0.0	sure	triangle
+#137	L15	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#138	L15	R10	0.9	R6	0.05	sure	p with descender
+#139	L15	R1	0.85	R19	0.1	sure	tall looped l
+#140	L15	R26	0.95	NONE	0.0	sure	triangle
+#141	L15	R1	0.85	R19	0.1	sure	tall looped l
+#142	L15	R9	0.65	R5	0.3	sure	x with dot(s)
+#143	L15	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#144	L15	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#145	L15	R26	0.95	NONE	0.0	sure	triangle
+#146	L15	R9	0.65	R5	0.3	sure	x with dot(s)
+#147	L16	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#148	L18	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#149	L18	R26	0.95	NONE	0.0	sure	triangle
+#150	L18	R9	0.65	R5	0.3	sure	x with dot(s)
+#151	L18	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#152	L18	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#153	L18	R26	0.95	NONE	0.0	sure	triangle
+#154	L18	R9	0.65	R5	0.3	sure	x with dot(s)
+#155	L18	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#156	L18	R19	0.85	R1	0.1	sure	h with tall stem and arch
+#157	L18	R26	0.95	NONE	0.0	sure	triangle
+#158	L18	R1	0.85	R19	0.1	sure	tall looped l
+#159	L19	R1	0.85	R19	0.1	sure	tall looped l
+#160	L19	R1	0.85	R19	0.1	sure	tall looped l
+#161	L19	R12	0.85	R11	0.1	sure	v with hooked right arm
+#162	L19	R19	0.85	R1	0.1	approx	h with tall stem and arch
+#163	L19	NONE	0.0	R19	0.15	approx	no separate sign found between h and lambda
+#164	L19	R4	0.6	R21	0.35	sure	y with two dots above, descender curls left
+#165	L19	R26	0.95	NONE	0.0	sure	triangle
+#166	L19	R7	0.85	R8	0.05	approx	script C swirl
+#167	L19	R1	0.85	R19	0.1	sure	tall looped l
+#168	L20	R12	0.85	R11	0.1	sure	v with hooked right arm
+#169	L20	R12	0.85	R11	0.1	sure	v with hooked right arm
+#170	L20	R26	0.95	NONE	0.0	sure	triangle
+#171	L20	R1	0.85	R19	0.1	sure	tall looped l

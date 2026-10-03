@@ -326,6 +326,8 @@ Reading revised by GAPS23/GAPS24 (3 Oct 2026, solver, rule 10 propagation, not a
 A session separate from every solver on this target (GAPS19-GAPS24, NL18-CORPUS), from REDERIVE-SURINAME-2077 and from
 VERIFY-SURINAME-2077. Rule 10 propagation of GAPS23 (51d9794e) and GAPS24 (2d92f06b). No decoding; no other target touched.
 
+[GAPS25, 3 Oct 2026: reading revised by GAPS25 (blind d/n/q sign call, prereg 12845ab7: x -> a 13 tokens, [v-tall] -> c 9 tokens, 22 values changed; 2077 H 499 C 7 M 102 U 50; GAPS23 gate re-run unchanged 0.696 -> 0.768); re-class pending.]
+
 **Verdict: item 4 stays N1 (provisional), key source period, ceiling N2.** The revision makes the reading better supported. It
 adds no print of this legend and removes none of the reasons for the hold.
 
