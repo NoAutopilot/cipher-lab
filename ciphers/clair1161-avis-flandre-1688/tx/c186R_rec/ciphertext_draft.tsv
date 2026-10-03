@@ -1,0 +1,240 @@
+line	position	sign	confidence	alt	why
+L01	1	iii	H		agree
+L01	2	9	H		agree
+L01	3	e	H		agree
+L01	4	sq	H		agree
+L01	5	a	M	B:ahook	differ
+L01	6	7	H		agree
+L01	7	7	H		agree
+L01	8	a	H		agree
+L01	9	wb	H		agree
+L01	10	sq	H		agree
+L01	11	/	H		agree
+L01	12	S	H		agree
+L01	13	4	H		agree
+L01	14	q	H		agree
+L01	15	th	H		agree
+L01	16	/	H		agree
+L01	17	+	H		agree
+L01	18	th	H		agree
+L01	19	p	H		agree
+L01	20	y	H		agree
+L01	21	w	H		agree
+L01	22	e	H		agree
+L01	23	z	H		agree
+L01	24	/	H		agree
+L01	25	iii	H		agree
+L02	1	+	H		agree
+L02	2	dash	M	A:-	gap
+L02	3	l	H		agree
+L02	4	/	H		agree
+L02	5	tilde	H		agree
+L02	6	/	H		agree
+L02	7	8	H		agree
+L02	8	6	H		agree
+L02	9	r	H		agree
+L02	10	9	H		agree
+L02	11	/	H		agree
+L02	12	a	H		agree
+L02	13	4	H		agree
+L02	14	p	M	B:-	gap
+L02	15	e	H		agree
+L02	16	S	M	A:-	gap
+L02	17	q	H		agree
+L02	18	/	H		agree
+L02	19	ss	H		agree
+L02	20	wb	H		agree
+L02	21	Kish	H		agree
+L02	22	9	H		agree
+L02	23	wb	H		agree
+L02	24	qb	H		agree
+L02	25	w	H		agree
+L02	26	th	H		agree
+L02	27	9	H		agree
+L02	28	sq	H		agree
+L02	29	Rcl	M	B:amp	differ
+L02	30	z	H		agree
+L02	31	rfl	H		agree
+L02	32	c	H		agree
+L03	1	+	M	A:-	gap
+L03	2	a	H		agree
+L03	3	e	M	B:-	gap
+L03	4	a	M	B:c	differ
+L03	5	w	H		agree
+L03	6	/	H		agree
+L03	7	+	H		agree
+L03	8	d	H		agree
+L03	9	/	H		agree
+L03	10	Rcl	M	B:Kish	differ
+L03	11	w	H		agree
+L03	12	wb	H		agree
+L03	13	Kish	M	B:-	gap
+L03	14	9	M	B:Hish	differ
+L03	15	d	H		agree
+L03	16	8	H		agree
+L03	17	3	H		agree
+L03	18	/	H		agree
+L03	19	+	H		agree
+L03	20	th	M	A:-	gap
+L03	21	o	H		agree
+L03	22	/	H		agree
+L03	23	iii	H		agree
+L03	24	w	H		agree
+L03	25	th	H		agree
+L03	26	9	H		agree
+L03	27	th	H		agree
+L03	28	o	H		agree
+L03	29	S	H		agree
+L03	30	wb	H		agree
+L03	31	qb	H		agree
+L03	32	z	H		agree
+L03	33	w	H		agree
+L03	34	4	H		agree
+L03	35	z	H		agree
+L04	1	+	H		agree
+L04	2	a	H		agree
+L04	3	S	H		agree
+L04	4	bstem	H		agree
+L04	5	4	H		agree
+L04	6	a	H		agree
+L04	7	e	H		agree
+L04	8	/	H		agree
+L04	9	7	H		agree
+L04	10	7	H		agree
+L04	11	+	H		agree
+L04	12	S	M	B:8S	differ
+L04	13	4	H		agree
+L04	14	th	H		agree
+L04	15	+	H		agree
+L04	16	9	H		agree
+L04	17	/	H		agree
+L04	18	3	H		agree
+L04	19	o	H		agree
+L04	20	qb	H		agree
+L04	21	S	H		agree
+L04	22	4	H		agree
+L04	23	8	H		agree
+L04	24	7	H		agree
+L04	25	7	H		agree
+L04	26	wb	H		agree
+L04	27	qb	H		agree
+L04	28	iii	H		agree
+L04	29	f	H		agree
+L04	30	e	H		agree
+L04	31	r	H		agree
+L05	1	ahook	M	B:Kish	differ
+L05	2	+	H		agree
+L05	3	a	M	B:-	gap
+L05	4	wb	H		agree
+L05	5	w	H		agree
+L05	6	phi	H		agree
+L05	7	+	H		agree
+L05	8	4	H		agree
+L05	9	d	H		agree
+L05	10	q	H		agree
+L05	11	d	H		agree
+L05	12	p	H		agree
+L05	13	+	H		agree
+L05	14	y	H		agree
+L05	15	4	H		agree
+L05	16	e	H		agree
+L05	17	q	H		agree
+L05	18	qb	M	B:-	gap
+L05	19	a	H		agree
+L05	20	wb	H		agree
+L05	21	ls	H		agree
+L05	22	9	H		agree
+L05	23	iii	H		agree
+L05	24	qb	H		agree
+L05	25	e	H		agree
+L05	26	x	H		agree
+L05	27	w	H		agree
+L05	28	S	H		agree
+L05	29	7	H		agree
+L05	30	7	H		agree
+L06	1	psi	H		agree
+L06	2	+	H		agree
+L06	3	phi	H		agree
+L06	4	9	H		agree
+L06	5	w	H		agree
+L06	6	Sdots	H		agree
+L06	7	+	H		agree
+L06	8	psi	H		agree
+L06	9	th	H		agree
+L06	10	9	H		agree
+L06	11	S	H		agree
+L06	12	4	H		agree
+L06	13	7	H		agree
+L06	14	wb	H		agree
+L06	15	+	H		agree
+L06	16	th	H		agree
+L06	17	9	H		agree
+L06	18	q	H		agree
+L06	19	/	H		agree
+L06	20	iii	H		agree
+L06	21	e	H		agree
+L06	22	+	H		agree
+L06	23	S	H		agree
+L06	24	e	H		agree
+L06	25	wb	H		agree
+L06	26	+	H		agree
+L06	27	+	H		agree
+L06	28	o	H		agree
+L06	29	ss	H		agree
+L07	1	th	H		agree
+L07	2	4	H		agree
+L07	3	q	H		agree
+L07	4	l	H		agree
+L07	5	w	H		agree
+L07	6	wb	H		agree
+L07	7	Rloop	M	B:S	differ
+L07	8	iii	H		agree
+L07	9	+	H		agree
+L07	10	wb	H		agree
+L07	11	Hish	M	A:-	gap
+L07	12	Kbox	M	B:q	differ
+L07	13	9	H		agree
+L07	14	q	M	B:-	gap
+L07	15	6	H		agree
+L07	16	0	H		agree
+L07	17	+	M	B:-	gap
+L07	18	th	H		agree
+L07	19	3	H		agree
+L07	20	S	H		agree
+L07	21	z	H		agree
+L07	22	psi	H		agree
+L07	23	+	H		agree
+L07	24	phi	H		agree
+L07	25	S	H		agree
+L07	26	+	H		agree
+L07	27	y	H		agree
+L07	28	iii	H		agree
+L08	1	+	H		agree
+L08	2	4	H		agree
+L08	3	ls	H		agree
+L08	4	o	H		agree
+L08	5	q	M	B:qb	differ
+L08	6	S	H		agree
+L08	7	7	H		agree
+L08	8	7	H		agree
+L08	9	phi	H		agree
+L08	10	+	H		agree
+L08	11	d	H		agree
+L08	12	e	H		agree
+L08	13	wb	H		agree
+L08	14	S	H		agree
+L08	15	th	H		agree
+L08	16	phi	H		agree
+L08	17	y	H		agree
+L08	18	qb	H		agree
+L08	19	S	H		agree
+L08	20	z	H		agree
+L08	21	phi	H		agree
+L08	22	+	H		agree
+L08	23	e	H		agree
+L08	24	4	H		agree
+L08	25	z	H		agree
+L08	26	rfl	H		agree
+L08	27	r	H		agree
+L08	28	iii	H		agree
+L08	29	f	H		agree
