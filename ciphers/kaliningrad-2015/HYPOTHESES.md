@@ -558,6 +558,37 @@ python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
 ```
 Decode (not a reading): families/homophonic-1-profile=target-de20.txt. No judge PASS. Rule 10: nothing here is a reading.
 
+## A2P4-KAL4, Russian with each softened consonant its own letter (3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2p4-kal4.md` (LANE-A2PUSH4, account 2): cycle-4 rank 6. Tool step done first
+(commit fbda87f4): `homophonic_anneal.py --alphabet`, `--param alphabet=` in families/homophonic.py, a judge-block
+`"alphabet"`, corpus `tools/data/ru19_soft` (softening rule in its README: S3'/S3 transliteration, every q merged into
+the letter before it as one upper-case letter -- the cipher's convention A applied to the plaintext), offline test
+`tools/tests/test_homophonic_alphabet.py` (default alphabet byte-identical to the pre-option outputs; K-36 round trip
+0.978). Disk and CPU only, no hosts.
+
+**Pre-registration (written and committed before any run below).**
+- Family and settings, every unit: `tools/family_run.py specs/kaliningrad-2015.json --family homophonic --param
+  profile=target --param alphabet=<A> --corpus <C> --seeds 5 --restarts 20 --gate 0.9`, control before target (A2-KAL3's
+  seeds and restarts). Gate: control mean recovery >= 0.9 over seeds 1-5; a 6th seed only on A2-KAL's pattern (four
+  seeds >= 0.9 and one < 0.5), never a 7th; gate never lowered. Below gate = CONTROL BELOW GATE, untested, not a negative.
+- Judge for every unit: the spec's judge block set to `"alphabet": <A>` and `"corpora": [<C>]` before the run (restored
+  to de20 without an alphabet as this job's last spec edit), language_pass both, control_samples 100 (the spec's own).
+  A PASS stops the job: the family's decode of the shuffled target is scored next (rule 3, ARM-C1) and nothing is called
+  a reading (rule 7 re-derivation owed). A FAIL with the control met = control-backed negative for that unit.
+- Units, in this order:
+  1. **5-ru-soft-s3p-A** (the design rank 6 names): convention A `ciphertext_signs.tsv` (N 978, K 36: an
+     apostrophe-bearing sign is one sign), A = ru-s3p-soft (35 letters), C = tools/data/ru19_soft/s3p_soft.txt.gz.
+  2. **5-ru-soft-s3p-B** (the brief's literal unit, convention B as A2-KAL3): `ciphertext_signs_B.tsv` (N 1066, K 28),
+     same A and C. Design caveat stated before the run: at convention B the apostrophe is its own cipher sign, so a soft
+     letter cannot be one sign; the control is built as a 28-sign homophonic over the 35-letter alphabet (a window of at
+     most 28 distinct letters), so this unit tests "B-view signs read as soft-letter Russian", a weaker match than unit 1.
+     If no 1066-letter window with <= 28 distinct letters is found, the unit is logged as not runnable at this design.
+  3. **5-ru-soft-s3-A** (optional, only if units 1-2 leave the job under 80 pct of cap and box): convention A, A =
+     ru-s3-soft (37 letters), C = s3_soft.txt.gz.
+- Judge calibration caveat (registered now): no leave-one-file-out false-negative rate exists for ru19_soft; a FAIL
+  is reported with the judge's own real_p05/null_p99 and the position between them, as the earlier sweep did.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
