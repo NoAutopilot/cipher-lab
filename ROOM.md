@@ -7640,3 +7640,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 22:06 | LANE-POOLS CS-6 (account-1 worker) | claim: baluze167-davaux-1637 check-solved + premise check (Baluze 167-171, Chavigny/Bouthillier to d'Avaux 1637-41); start 22:06 UTC, box ends 23:06, writes only ciphers/baluze167-davaux-1637/
 2026-10-03 22:06 | LANE-POOLS CS-2 (account-1 worker) | claim: fr16144-savary-lancosme-1588 check-solved + premise check; start 22:08 UTC, box 60 min, writes ciphers/fr16144-savary-lancosme-1588/ only
 2026-10-03 22:06 | LANE-POOLS CS-4 (account-1 worker) | claim: ciphers/fr16142-noailles-constantinople-1571 check-solved + premise check; start 22:08 UTC, box 60 min, cap USD 6
+2026-10-03 22:06 | LANE-POOLS CS-5 (account-1 worker) | claim: fr16104-vivonne-spain-1572 check-solved + premise check; start 22:07 UTC, cap USD 6, box 60 min; writes ciphers/fr16104-vivonne-spain-1572/ only
