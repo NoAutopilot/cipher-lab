@@ -1,0 +1,54 @@
+sign	code	tier	zodiac	control	zodiac_near	control_near
+PI	ST:pi	primary	sidek			
+K	L:K	letter	k			
+A	L:A	letter	a			
+BOWL	dome/solid	primary		25D6,25D7		
+SQNOTCH	square/notch	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+GAMMA	ST:gamma	primary				
+O	circle/outline	primary	o	25CB		
+HOOK	RL:F	primary	bf			
+DROP	teardrop/solid	primary				
+HCIRCL	circle/halfL	primary	n3	25D0		
+HEADPHONE	ST:headphone	primary				
+VENUS	ST:venus	primary				
+CFLAG	circle/wedge	primary		25D4,25D5	n1,n2,n3,n4,n5,n6,o,phi,theta,zodiac	
+DASH2	ST:dash	primary	dash			
+Y	L:Y	letter	y			
+Q	L:Q	letter	q			
+BRACKET1	RL:L	primary	bl			
+BRACKET2	dome/solid	primary		25D6,25D7		
+TFILL	ST:T	primary				
+TARGET	circle/cross	primary	zodiac			25C9,25CB,25CD,25CE,25CF,25D0,25D1,25D2,25D3,25D4,25D5
+S	L:S	letter	s			
+LAMBDA	ST:caret	primary	caret			
+OWEDGE	circle/wedge	primary		25D4,25D5	n1,n2,n3,n4,n5,n6,o,phi,theta,zodiac	
+TABLE	ST:T	primary				
+SQDOT	square/dot	primary	sqd			25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+SQDIAG	square/diag	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+N	L:N	letter	n			
+FLAG2	square/notch	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+ARCH	dome/solid	primary		25D6,25D7		
+B	L:B	letter	b			
+SQSTRIPE	square/hline	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+M	L:M	letter	m			
+CIRCBLACK	circle/wedge	primary		25D4,25D5	n1,n2,n3,n4,n5,n6,o,phi,theta,zodiac	
+CROSS	ST:tack	primary				
+R	L:R	letter	r			
+TARGET2	circle/cross	primary	zodiac			25C9,25CB,25CD,25CE,25CF,25D0,25D1,25D2,25D3,25D4,25D5
+RECTNOTCH	rect/notch	primary				25AC,25AE,25AD,25AF
+U	L:U	letter	u			
+SQTRI	square/inner-triangle	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+RECTCORNER	square/halfB	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+CIRCPIE	circle/wedge	primary		25D4,25D5	n1,n2,n3,n4,n5,n6,o,phi,theta,zodiac	
+SLASH	ST:slash	primary	slash			
+HALFCIRCB	circle/halfB	primary	n2	25D2		
+CIRCPIE2	circle/wedge	primary		25D4,25D5	n1,n2,n3,n4,n5,n6,o,phi,theta,zodiac	
+SQFLAG	square/diag	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+RECTBLACK	rect/solid	primary		25AC,25AE		
+I	L:I	letter	bar,funnyi,i,idl,idr			
+DBLBAR	ST:dblbar	primary				
+CUPDOT	ST:cupdot	primary				
+TRIDOT	triangle/dot	primary	n7			25B2,25B4,25B6,25B8,25BA,25BC,25BE,25C0,25C2,25C4,25E2,25E3,25E4,25E5,25B3,25B5,25B7,25B9,25BB,25BD,25BF,25C1,25C3,25C5
+Z	L:Z	letter	z			
+SQHALF	square/halfB	primary			sq,sqd,sqe,sql,sqr	25A0,25AA,25A1,25A2,25AB,25A3,25A4,25A5,25A6,25A7,25A8,25A9
+REVE	RL:E	primary	be			

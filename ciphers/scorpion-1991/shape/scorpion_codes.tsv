@@ -1,0 +1,54 @@
+sign	code	note
+PI	ST:pi	bar with two legs, one kinked (crop r1c1)
+K	L:K	
+A	L:A	
+BOWL	dome/solid	half disc, flat side up
+SQNOTCH	square/notch	
+GAMMA	ST:gamma	
+O	circle/outline	plain circle; coded as shape, the same way as Zodiac o
+HOOK	RL:F	crop r1c8/r4c2: top bar and middle bar to the left of a right-hand stem = mirrored F (bSCO "mirrored 7")
+DROP	teardrop/solid	
+HCIRCL	circle/halfL	
+HEADPHONE	ST:headphone	
+VENUS	ST:venus	
+CFLAG	circle/wedge	
+DASH2	ST:dash	crop r2c4 shows one stroke at 2x; bSCO read two parallel dashes
+Y	L:Y	
+Q	L:Q	
+BRACKET1	RL:L	crops r2c7/r5c9/r7c7: stem with foot to the left = mirrored L
+BRACKET2	dome/solid	crop r2c8: solid half-ellipse, not a bracket
+TFILL	ST:T	thick solid T
+TARGET	circle/cross	cross extends beyond the circle
+S	L:S	
+LAMBDA	ST:caret	
+OWEDGE	circle/wedge	
+TABLE	ST:T	
+SQDOT	square/dot	
+SQDIAG	square/diag	
+N	L:N	
+FLAG2	square/notch	
+ARCH	dome/solid	
+B	L:B	
+SQSTRIPE	square/hline	
+M	L:M	
+CIRCBLACK	circle/wedge	
+CROSS	ST:tack	bar with a stem at its right end (-|); near ST:perp, not identical
+R	L:R	
+TARGET2	circle/cross	
+RECTNOTCH	rect/notch	
+U	L:U	
+SQTRI	square/inner-triangle	
+RECTCORNER	square/halfB	
+CIRCPIE	circle/wedge	
+SLASH	ST:slash	
+HALFCIRCB	circle/halfB	
+CIRCPIE2	circle/wedge	
+SQFLAG	square/diag	
+RECTBLACK	rect/solid	
+I	L:I	
+DBLBAR	ST:dblbar	
+CUPDOT	ST:cupdot	
+TRIDOT	triangle/dot	
+Z	L:Z	
+SQHALF	square/halfB	
+REVE	RL:E	

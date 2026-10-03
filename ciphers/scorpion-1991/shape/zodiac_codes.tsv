@@ -1,0 +1,71 @@
+glyph	in408	in340	code	note
+a	1	1	L:A	
+b	1	1	L:B	
+bar	0	1	L:I	plain vertical stroke
+bb	0	1	RL:B	
+bc	1	1	RL:C	
+bd	1	1	RL:D	
+be	1	0	RL:E	
+bf	1	1	RL:F	
+bj	1	1	RL:J	
+bk	1	1	RL:K	
+bl	1	1	RL:L	
+bp	1	1	RL:P	
+bq	1	1	RL:Q	
+br	1	0	RL:R	
+by	0	1	ROT:Y	inverted Y
+c	0	1	L:C	
+caret	1	1	ST:caret	Lambda shape
+d	1	1	L:D	
+dash	0	1	ST:dash	
+dot	0	1	ST:dot	
+e	1	1	L:E	
+f	1	1	L:F	
+funnyi	1	0	L:I	I variant
+g	1	1	L:G	
+gt	0	1	ST:gt	
+h	1	1	L:H	
+i	1	0	L:I	
+idl	0	1	L:I	I variant
+idr	0	1	L:I	I variant
+j	1	1	L:J	
+k	1	1	L:K	
+l	1	1	L:L	
+lt	0	1	ST:lt	
+m	1	1	L:M	
+n	1	1	L:N	
+n1	0	1	circle/halfT	
+n2	0	1	circle/halfB	
+n3	0	1	circle/halfL	
+n4	0	1	circle/halfR	
+n5	1	1	circle/solid	
+n6	1	1	circle/dot	
+n7	1	1	triangle/dot	
+n8	1	1	triangle/solid	
+n9	1	1	triangle/outline	
+o	1	1	circle/outline	plain circle (webtoy o)
+p	1	1	L:P	
+perp	1	1	ST:perp	
+pf	0	1	RL:Pfilled	P with solid bowl (Zodiac-only)
+phi	1	1	circle/hline	
+plus	1	1	ST:plus	
+q	1	0	L:Q	
+r	1	1	L:R	
+s	1	1	L:S	
+sidek	1	0	ST:pi	sideways K, pi-like
+slash	1	1	ST:slash	
+sq	1	1	square/solid	
+sqd	1	1	square/dot	
+sqe	1	1	square/outline	
+sql	0	1	square/halfL	
+sqr	1	1	square/halfR	
+t	1	1	L:T	
+theta	1	1	circle/vline	
+u	1	1	L:U	
+v	1	1	L:V	
+w	1	1	L:W	
+x	1	1	L:X	
+y	1	1	L:Y	
+z	1	1	L:Z	
+zodiac	1	1	circle/cross	
+backslash	1	0	ST:backslash	

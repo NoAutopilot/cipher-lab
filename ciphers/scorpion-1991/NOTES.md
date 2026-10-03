@@ -181,3 +181,58 @@ Bourdeau's unicity estimate (S1 key 249 bits vs about 224 bits of text). Grades:
 homophone alphabets, about USD 1); cryptogram 2 (S5, N=180) is the only published text long enough to be worth a family
 run, and needs a by-eye K before that (Bourdeau finds 145 distinct; a matched control at N=180, K=145 should be run before any
 target attempt, about USD 2).
+
+## Cheap test 3: S1 sign shapes vs the Zodiac Z408/Z340 alphabet (A2P4-SCORP2, 3 Oct 2026, 17:55-18:06 UTC)
+
+Intake gate re-run first: `python3 tools/intake_gate_check.py scorpion-1991` -> `scorpion-1991: open (line 1) -- edition/page
+or full-text-search citation found within 6 lines`, exit 0.
+
+**Pre-registration** `shape_prereg.md` (commit 4745c5b9) before any scoring: feature-code list, statistic, control,
+decision rule.
+
+**Zodiac reference.** Z408 (54 symbols) and Z340 (63) as typed in D. Oranchak's webtoy (zodiackillerciphers.com/webtoy:
+`zodiac.js` alphabet strings and char-to-glyph map, one image per glyph under `webtoy/alphabet2/`), 70 glyph types in the
+union, fetched 3 Oct 2026 (73 requests to that host, 1.5 s apart; credit Oranchak). Wikimedia Commons/Wikipedia answered 429
+(shared egress) and was not retried. Glyph images stay in the scratchpad (not committed); `shape/zodiac_codes.tsv` gives
+each glyph's webtoy name, Z408/Z340 membership and code.
+
+**Control.** Unicode Geometric Shapes U+25A0..U+25E5 (70 code points), coded from their Unicode names
+(`shape/control_unicode_geometric.tsv`): not Zodiac-derived, built from the same primitives (filled/half-filled circles,
+squares, triangles), so it can score above or below the Zodiac set on the statistic. Letters are excluded from the
+primary statistic because the control has none by construction.
+
+**Crops and vision calls.** S1 row crops cut with the shared tool (default line finding merged rows; re-cut with centres
+read off the row ink profile):
+`python3 tools/iiif_lines.py --image ciphers/scorpion-1991/images/Scorpion-Letter-2.jpg --out <scratchpad>/scrop --prefix s1 --debug --centres 54,89,126,167,210,253,293`
+-> 7 crops, 454 px wide. Two vision calls: (1) a 70-cell labelled sheet of the Zodiac glyphs, (2) a sheet of the 7 S1 row
+crops at 2x. 123 glyphs viewed (70 Zodiac + 53 S1 types).
+
+**Result** (`python3 ciphers/scorpion-1991/shape/score.py`, `--check` exits non-zero when `shape/result.tsv` is stale):
+
+| statistic (S1 sign types with an identical-code counterpart) | Zodiac Z408+Z340 (70) | control, Unicode geometric (70) |
+|---|---|---|
+| primary: non-letter types (41) | **14** | **12** |
+| of which shape/stroke codes (38) | 11 | 12 |
+| of which mirrored letters RL:E, RL:F, RL:L (3) | 3 | 0 (by construction) |
+| letter types (12), descriptive | 12 | n/a (plain A-Z also 12) |
+
+Preregistered decision (Zodiac minus control >= 5 and at least one Zodiac-only match): difference 2 -> **no support** for
+"draws on published Zodiac material" from this test. Codes are one coder's eye judgement (grade M for every code); no
+reading, so no tokens graded.
+
+Descriptive, not preregistered, cannot license support: counted by distinct codes rather than S1 types the picture is
+Zodiac 13 vs control 6, because the control's matches pile onto two S1 families (five circle-with-wedge types, three
+solid dome/half-disc types), while the Zodiac-only matches are spread: mirrored E (REVE = Zodiac `be`), mirrored F (HOOK,
+read here as a mirrored F, = `bf`), mirrored L (BRACKET1 = `bl`), circle with extended cross (TARGET, TARGET2 = `zodiac`),
+pi-shape (PI = `sidek`), triangle with dot (TRIDOT = `n7`), square with dot (`sqd`), caret, slash, dash. Several S1
+families have no counterpart in either set (notched black squares and rectangles, circle-with-wedge, headphone, Venus,
+gamma, cup-with-dot).
+
+**Transcription notes from crop view 2 (flagged, `ciphertext.txt` unchanged):** r2c4 DASH2 shows one stroke at 2x, not two;
+r2c8 BRACKET2 is a solid half-ellipse, not a bracket; r1c8/r4c2 HOOK reads as a mirrored F; r6c4 (table: I) looks like a
+right-angle bracket and r6c5 (table: O) like a dark half-oval -- both among the 9 positions the Bourdeau diff already
+disputes.
+
+**Verdict:** status stays `open`; all three spec cheap tests are now run, none moved it. Next step: a distinct-code
+statistic preregistered with a second, blind coder (one coder's codes decide both sides here), about USD 1, and for the
+family question, S5 (N=180) with a by-eye K and a matched control at N=180, K=145 first, about USD 2.
