@@ -533,6 +533,31 @@ Conditional on Ernst's transcript (rule 2) and on de20's register (1880-1940 nov
 unigrams by far less than the gap (T's own spread across seven novels is inside 0.23). No reading; rule 10.
 Command: `python3 ciphers/kaliningrad-2015/scripts/transposition_unigram.py [--windows 1000 --seed 7]`.
 
+## A2-KAL3, German homophonic at convention B (3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal3.md` (LANE-A2PUSH, account 2): the one convention-B Latin language the
+sweep skipped (German was run at convention A only, GOLD-KAL1). Committed spec unchanged in its judge block (already de20).
+Disk and CPU only, no hosts, no subagents; one unit, 6 min 11 s wall.
+
+| unit | corpus | K | per-seed control (restarts 20) | mean | gate | target judge |
+|---|---|---|---|---|---|---|
+| 2-de-B | de20 (7 files, 1880-1940) | 28 | 0.998 / 0.997 / 0.995 / 0.998 / 0.999 | 0.997 | met at 5 | FAIL: -1.572 (real_p05 -0.807, null_p99 -2.075) |
+
+- **2-de-B: control-backed negative.** Rule 3 check: control recovery comes from the anneal on a design-matched synthetic
+  de20 text at the target's N and sign profile and can fail (it did for pt/lt at other settings), so it can differ from the
+  target. Target position between null_p99 and real_p05: (-1.572 + 2.075)/(-0.807 + 2.075) = 0.40, inside the band of the
+  sweep's other negatives (nl 0.54, it 0.42, pt 0.56). With GOLD-KAL1 (convention A, K 36, control 0.982, FAIL -1.605),
+  light homophonic German is negative at both conventions. Conditional on Ernst's transcript (rule 2).
+
+Command:
+```
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/de20 \
+  --param profile=target --seeds 5 --restarts 20 --gate 0.9 \
+  --label "A2-KAL3 2-de-B, restarts 20 seeds 5, control before target"
+```
+Decode (not a reading): families/homophonic-1-profile=target-de20.txt. No judge PASS. Rule 10: nothing here is a reading.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -561,3 +586,4 @@ Command: `python3 ciphers/kaliningrad-2015/scripts/transposition_unigram.py [--w
 | 3 Oct 2026 00:25 | homophonic | N=1066 K=28 restarts=20 corpus=correiobrazilie00unkngoog.txt.gz+correiobrazilie02unkngoog.txt.gz+oinvestigadorpo03unkngoog.txt.gz+oinvestigadorpo05unkngoog.txt.gz profile=target | 1 | 0.989 (0.977-0.998) | -3046.256 | FAIL language: score=-1.316, null_p99=-1.613, real_p05=-1.078, real_median=-0.847, mode=both, N=1066 | yes (gate 0.9) | A2-KAL 2-pt-B, restarts 20 seeds 5, control before target |
 | 3 Oct 2026 00:28 | homophonic | N=1066 K=28 restarts=20 corpus=01_pradzia.txt.gz+02_isejimas.txt.gz+03_levitas.txt.gz+04_skaiciai.txt.gz+05_pakartotine_istatymo.txt.gz+06_jozue.txt.gz+07_teisejai.txt.gz+08_ruta.txt.gz+09_1_samuelis.txt.gz+10_2_samuelis.txt.gz+11_1_karaliai.txt.gz+12_2_karaliai.txt.gz+13_1_kronikos.txt.gz+14_2_kronikos.txt.gz+15_ezdras.txt.gz+16_nehemijas.txt.gz+17_ester.txt.gz+18_jobas.txt.gz+19_psalmynas.txt.gz+20_patarles.txt.gz+21_ekleziastas.txt.gz+22_giesmiu_giesme.txt.gz+23_izaijas.txt.gz+24_jeremijas.txt.gz+25_raudos.txt.gz+26_ezechielis.txt.gz+27_danielius.txt.gz+28_ozejas.txt.gz+29_joelis.txt.gz+30_amosas.txt.gz+31_abdijas.txt.gz+32_jonas.txt.gz+33_michejas.txt.gz+34_nahumas.txt.gz+35_habakukas.txt.gz+36_sofonijas.txt.gz+37_agejas.txt.gz+38_zacharijas.txt.gz+39_malachijas.txt.gz+40_matai.txt.gz+41_markas.txt.gz+42_lukas.txt.gz+43_jonas.txt.gz+44_apastalu_darbai.txt.gz+45_romieciams.txt.gz+46_1_korintieciams.txt.gz+47_2_korintieciams.txt.gz+48_galatams.txt.gz+49_efezieciams.txt.gz+50_filipieciams.txt.gz+51_kolosieciams.txt.gz+52_1_tesalonikieciams.txt.gz+53_2_tesalonikieciams.txt.gz+54_1_timotiejui.txt.gz+55_2_timotiejui.txt.gz+56_titui.txt.gz+57_filemonui.txt.gz+58_zydams.txt.gz+59_jokubas.txt.gz+60_1_petras.txt.gz+61_2_petras.txt.gz+62_1_jonas.txt.gz+63_2_jonas.txt.gz+64_3_jonas.txt.gz+65_judai.txt.gz+66_apreiskimas.txt.gz profile=target | 1-5 | 0.876 (0.416-0.997) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2-KAL 2-lt-B, restarts 20 seeds 5, control before target |
 | 3 Oct 2026 00:32 | homophonic | N=1066 K=28 restarts=20 corpus=01_pradzia.txt.gz+02_isejimas.txt.gz+03_levitas.txt.gz+04_skaiciai.txt.gz+05_pakartotine_istatymo.txt.gz+06_jozue.txt.gz+07_teisejai.txt.gz+08_ruta.txt.gz+09_1_samuelis.txt.gz+10_2_samuelis.txt.gz+11_1_karaliai.txt.gz+12_2_karaliai.txt.gz+13_1_kronikos.txt.gz+14_2_kronikos.txt.gz+15_ezdras.txt.gz+16_nehemijas.txt.gz+17_ester.txt.gz+18_jobas.txt.gz+19_psalmynas.txt.gz+20_patarles.txt.gz+21_ekleziastas.txt.gz+22_giesmiu_giesme.txt.gz+23_izaijas.txt.gz+24_jeremijas.txt.gz+25_raudos.txt.gz+26_ezechielis.txt.gz+27_danielius.txt.gz+28_ozejas.txt.gz+29_joelis.txt.gz+30_amosas.txt.gz+31_abdijas.txt.gz+32_jonas.txt.gz+33_michejas.txt.gz+34_nahumas.txt.gz+35_habakukas.txt.gz+36_sofonijas.txt.gz+37_agejas.txt.gz+38_zacharijas.txt.gz+39_malachijas.txt.gz+40_matai.txt.gz+41_markas.txt.gz+42_lukas.txt.gz+43_jonas.txt.gz+44_apastalu_darbai.txt.gz+45_romieciams.txt.gz+46_1_korintieciams.txt.gz+47_2_korintieciams.txt.gz+48_galatams.txt.gz+49_efezieciams.txt.gz+50_filipieciams.txt.gz+51_kolosieciams.txt.gz+52_1_tesalonikieciams.txt.gz+53_2_tesalonikieciams.txt.gz+54_1_timotiejui.txt.gz+55_2_timotiejui.txt.gz+56_titui.txt.gz+57_filemonui.txt.gz+58_zydams.txt.gz+59_jokubas.txt.gz+60_1_petras.txt.gz+61_2_petras.txt.gz+62_1_jonas.txt.gz+63_2_jonas.txt.gz+64_3_jonas.txt.gz+65_judai.txt.gz+66_apreiskimas.txt.gz profile=target | 1-6 | 0.896 (0.416-1.000) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2-KAL 2-lt-B, restarts 20 seeds 6 (seed 3 collapsed at seeds 5), control before target |
+| 3 Oct 2026 01:07 | homophonic | N=1066 K=28 restarts=20 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz profile=target | 1 | 0.998 (0.995-0.999) | -3386.829 | FAIL language: score=-1.572, null_p99=-2.075, real_p05=-0.807, real_median=-0.782, mode=both, N=1066 | yes (gate 0.9) | A2-KAL3 2-de-B, restarts 20 seeds 5, control before target |

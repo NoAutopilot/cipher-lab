@@ -402,3 +402,26 @@ homophonic --param profile=target --corpus tools/data/de20`, restarts 20, seeds 
 worker, no hosts. After that, the remaining structural lead is cycle 4's rank 6 (Russian with each softened consonant its
 own plaintext letter, K 36-37, which needs an alphabet parameter in `homophonic_anneal.py` and the judge's fold; ~$12 tool
 job + 2 units).
+
+## A2-KAL3, German homophonic at convention B, 3 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal3.md` (LANE-A2PUSH, account 2). Intake gate before deep work:
+`python3 tools/intake_gate_check.py kaliningrad-2015` -> `kaliningrad-2015: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0.
+
+Ran the step A2-KAL2 named: `tools/family_run.py --family homophonic --param profile=target --corpus tools/data/de20`,
+convention B (ciphertext_signs_B.tsv, N 1066, K 28), restarts 20, seeds 5, gate 0.9, control before target. Disk and CPU only.
+- **2-de-B (de20):** control 0.998/0.997/0.995/0.998/0.999, mean 0.997 (met). Target judge **FAIL** (score -1.572,
+  real_p05 -0.807, null_p99 -2.075; position 0.40 between null and real, in the band of the sweep's other negatives).
+  **Control-backed negative** for light homophonic German at convention B; with GOLD-KAL1 (convention A, FAIL -1.605)
+  German homophonic is now negative at both conventions. Conditional on Ernst's transcript (rule 2). No reading.
+Table and command: HYPOTHESES.md "A2-KAL3"; both numbers also in specs/kaliningrad-2015.json `cheap_test_done`.
+Status stays `open` (no "Remaining gaps"/"Escalation" sections for an `open` target; `tools/gaps_check.py`: SKIP).
+Rule 10: nothing here is a reading.
+
+**Next steps.** The convention-B homophonic sweep is now complete for every Latin-alphabet language on disk
+(de/nl/da/en/fr/it/es/pt/pl/ru-s3 control-backed negatives; lt below its own control gate at both conventions, an anneal
+limit on the Bible corpus, not chased further). The next untried instrument on record is cycle 4's rank 6: Russian with
+each softened consonant its own plaintext letter (K 36-37), which first needs an alphabet parameter in
+`tools/homophonic_anneal.py` and the judge's fold (a tool job with an offline test, ~$12) and then two family_run units
+(~$1 each); one worker, no hosts.

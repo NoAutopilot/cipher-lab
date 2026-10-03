@@ -246,6 +246,14 @@
    "control": "T p99 0.195/0.192 (ident), 0.182/0.181 (free1); S p01 0.697/0.631 (ident), 0.507/0.495 (free1); gate T p99 < S p01 met on both seeds",
    "target": "ident 0.374, free1 0.238 (x->r); 0 of 1300 T windows at or above either",
    "verdict": "control-backed negative for transposition of German (de20 register) at N 977, with or without one free glyph label; plus 88 apostrophes vs 0.58 expected. Conditional on Ernst's transcript."
+  },
+  {
+   "test": "2-de-B homophonic (convention B, de20)",
+   "date": "3 Oct 2026",
+   "method": "A2-KAL3: tools/family_run.py --family homophonic --param profile=target --cipher ciphertext_signs_B.tsv --corpus tools/data/de20 --seeds 5 --restarts 20 --gate 0.9, control before target.",
+   "control": "0.998/0.997/0.995/0.998/0.999, mean 0.997 (gate 0.9 met at 5 seeds)",
+   "target": "judge FAIL: score -1.572, real_p05 -0.807, null_p99 -2.075 (position 0.40 between null_p99 and real_p05)",
+   "verdict": "control-backed negative for light homophonic German (de20, 1880-1940 register) at convention B, N 1066 K 28; with GOLD-KAL1 (convention A) German homophonic is negative at both conventions. Conditional on Ernst's transcript."
   }
  ]
 }
