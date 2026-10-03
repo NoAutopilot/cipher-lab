@@ -71,6 +71,7 @@ key among the unexamined portions of fr. 3995 beyond nos. 60/65/66/68–76.
 fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 nos.39/40/43/58; Nevers to Henri IV, July-Aug 1595, as siblings.
 **Update, A1B-VILL-PAIR, 3 Oct 2026:** figure-pair homophone design (Bourdeau 1x/2x, K null) is a control-backed negative (control 0.733, target judge FAIL -1.263 = shuffle -1.261). Next: no.57's table (j), no.44 symbol column (k), as-sent packet (d), second transcription pass (e').
 **Update, A1B-VILL-57-44, 3 Oct 2026:** (k) no.44's symbols (f162) carry no registered target sign (Delta SAME-class only, 5 tokens). (j) no.57's table is canvas f200: 22-letter symbol-homophone header + figure syllables 1-72, doubles 73-96, nomenclator 100-353; two blind readers agree on 9 target sign designs (keys/key_f200_no57_signs.tsv, M) but they cover 0.116 of the target (< 0.5, not testable, no score). Next: (l) read no.57's Sillabes/Lettres doubles grid (two blind reads, ~$5), then the coverage test; (d), (e') stand.
+**Update, A1B-VILL-ASSENT, 3 Oct 2026:** (d) as-sent search: no 16 Aug 1595 original was found on Villeroy's side. The closest is Bibliothèque de l'Institut, Godefroy 262 (Villeroy's secretariat file), nos.144-145: Nevers to Villeroy and to the King, "16 septembre" 1595, "Lettre en partie en chiffres" (SHF Annuaire-bulletin 1865 inventory, p.116). This is either a sibling cipher letter or our letter misdated (unsettled, M). It is not digitised (ASKS 123). Next: fr.3994 f.131 (Nevers's copy of Godefroy 145) on Gallica, to check whether it is in clear, which would give a plaintext pair, ~$1; then (l), (e').
 
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (catalogue item 277; `nevers1595/`
 working folder — full transcription, matched-control solver ladder across six unit models, Gomberville tome-2
@@ -777,3 +778,102 @@ the job.
 Next (l): no.57's Sillabes 1-72 and Lettres doubles 73-96 grid (canvas f200, left block), read with native crops and two
 blind reads. With figures covered, the key's coverage could pass 0.5, and the scoring (rank 1 of 201 power check) becomes
 possible (~$5). Both (d) and (e') stand. None of these depends on anyone else.
+
+## As-sent search (A1B-VILL-ASSENT)
+
+Worker A1B-VILL-ASSENT, LANE-A1B, account 1, 3 Oct 2026, 17:19-17:40 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-assent.md`,
+step (d). Search only: no vision call, no transcription, no reading.
+
+**Result: a received-side candidate was found, but its date does not match.** The Godefroy collection at the
+Bibliothèque de l'Institut, portefeuille **CCLXII (Godefroy 262)**, "Lettres. -- Règne de Henri IV", holds (inventory,
+*Annuaire-bulletin de la Société de l'histoire de France* 1865, 2e partie, "Inventaire de la collection Godefroy",
+pp. 116-117; archive.org `annuaire-bulletin-de-la-societe-de-lhistoire-de-france_1865`, djvu.txt lines 22677-23215):
+- "143. -- Duc de Nevers au Roi, 1595, 11 septembre. Sur le secours de Cambrai."
+- "**144. -- Duc de Nevers à Villeroy, 1595, 16 septembre. Siége de Cambrai. Lettre en partie en chiffres.**"
+- "**145. -- Duc de Nevers au Roi, 1595, 16 septembre. Siége de Cambrai. Lettre en partie en chiffres.**"
+- In the same portefeuille: 131 (Henri IV to Nevers, 17 June 1595, "Minute de Villeroy") and 142 (Henri IV to Balagny,
+  Rethelois and Bussy, 8 Sept 1595, "Minute de Villeroy"). So this is Villeroy's secretariat file: minutes and the
+  letters he received. Items 144-145 are therefore as-sent letters on the recipient's side. The inventory does not say
+  "original" item by item, so that reading is M.
+- No item in CCLXII is dated 16 August 1595, and no Nevers letter is dated in August at all (133-141 run 11 Aug-6 Sept:
+  Henri IV, the Swiss cantons, Comminges, Mariani, Fréjus, Langres). CCLXIII (tome II) begins after item 145's
+  neighbours. A grep of the whole 1865 volume for an August 1595 Nevers item finds nothing.
+
+**How 144 relates to no.102 (unsettled, M).** Possibility (i): 144 is a separate letter of 16 Sept, a month after ours.
+Nevers's own file for September is fr.3994. Its live finding aid (archivesetmanuscrits.bnf.fr cc504266/cd0e37708,
+fetched this pass) lists:
+- no.99, f.131: Nevers "au roy ... De St Quentin, le XVIe septembre 1595". Copie, not marked "avec chiffre". This is
+  the file copy of Godefroy 145.
+- no.85, f.111: Nevers to Villeroy, 11 Sept, copie.
+- **No Nevers-to-Villeroy copy dated 16 Sept** (nos.95-102 checked one by one).
+Possibility (ii): Godefroy 144 is our 16 Aug letter, misdated in the original or in the 1865 inventory. Both letters
+concern the siege of Cambrai. The f.149v docket (VILL-147 above) says the 16 Aug original went in a packet that carried
+copies of Nevers's letters up to "dernier Aoust", so the original was not dispatched before 31 Aug at the earliest.
+Possibility (ii) is weaker than (i) but is not excluded. Only the leaf can settle which of the two holds.
+
+Either way, Godefroy 144 and 145 are cipher letters from Nevers to the court in this exact campaign. As received
+letters, they are where a secretariat decipherment, interlined or on a separate sheet, would sit. A second lead, not yet
+tested: fr.3994 no.99 (f.131, on Gallica in the same series) is Nevers's own copy of Godefroy 145. If that copy carries
+the cipher passages in clear (the catalogue's lack of "avec chiffre" suggests it, but does not establish it, M), then
+fr.3994 f.131 plus Godefroy 145 is a ready plaintext/ciphertext pair in Nevers's 1595 cipher. Next cheap step, about
+$1: view fr.3994 f.131 on Gallica (btv1b... of fr.3994, canvas from the finding aid) and confirm whether it is in clear
+or in cipher, with one heading crop through `tools/iiif_lines.py`.
+
+**Digitisation of Godefroy 262: not found.**
+- bibnum.institutdefrance.fr: the query "Godefroy 262" returns 3 unrelated items (Heures; Korecki 1617; Perron
+  genealogy). "Godefroy" alone returns 5 items, none of them portefeuille 262.
+- Calames (calames.abes.fr): its search is client-side. One request to a guessed JSON path got a 404, and the route was
+  not reverse-engineered. Not a negative.
+- ASKS row 123 asks the owner to request images of Godefroy 262 items 144-145 (no payment or email made here).
+
+**Families searched, with exact queries:**
+1. **archivesetmanuscrits.bnf.fr**: POST `resultatRechercheSimple.html`, `TEXTE_LIBRE_INPUT`, page 1, with three cookie
+   jars over two independent rounds.
+   - Queries: "Nevers Villeroy 1595" (314); "Nevers Villeroy 16 aoust 1595" (6); "Nevers Villeroy Quentin" (40);
+     "lettres originales adressées à Villeroy" (111); "Nevers à Villeroy 1595" (227); "Villeroy 1595 lettres
+     originales" (457); "Nevers Villeroy Cambrai" (13); "Nevers Villeroy Doullens" (0); "Nivernois Villeroy 1595" (28);
+     "Lodovico Villeroy" (16); "Lodovico Gonzaga 1595" (6); "Nevers aoust 1595" (145).
+   - Hits served were mostly Nevers's own fr.3974-3995. The others:
+     - Dupuy 88 f.262: Nevers to the Conseil d'État, 7 Sept 1595.
+     - fr.15576 (Harlay 337(1), 1595-1599): an index-only hit. The record page gives no item-level description, so it
+       was not opened further.
+     - fr.16046 and fr.16092-16093: the Maisse and Rome series.
+     - Clairambault 358: no 1595 Nevers item.
+     - fr.4552-4557: munitions.
+     - Cinq Cents de Colbert 18 and 32: not opened.
+   - **No BnF item found that is a Nevers-to-Villeroy original of 16 Aug 1595.**
+2. **Gallica SRU** (searchRetrieve):
+   - `dc.title all "Villeroy" and dc.title all "1595"`: 0 records.
+   - `gallica all "Nevers" and gallica all "Villeroy" and dc.type all "manuscrit"`: 79 records, the first 50 read. These
+     are the Mémoires de la Ligue volumes, Maisse, Bellièvre (fr.15890-15911), Dupuy 88, Colbert. No received-side
+     Villeroy series for 1595.
+   - `dc.title all "lettres" and dc.title all "Villeroy" and dc.type all "manuscrit"`: 19 records. These are Buzenval
+     1602-05, Luxembourg-Piney, Béthune at Rome, and Labouchère autographs. None for 1595 from Nevers.
+   - `text all "Nevers à Villeroy" and text all "Lettre en partie en chiffres"`: 9581 records. The phrase was not held
+     together, so this query is useless.
+3. **Google Books API** (key, `country=US`): 15 queries. These include "Nevers" "Villeroy" "16 août 1595"; "Nevers"
+   "Villeroy" "16 aoust 1595"; "lettre du duc de Nevers à Villeroy" 1595; "Minute de Villeroy" Nevers 1595 chiffres;
+   "en partie en chiffres" "Duc de Nevers" 1595; "Duc de Nevers à Villeroy" 1595 [août]; "Les treize cantons à
+   Villeroy"; "Inventaire des pièces manuscrites" variants. These snippets led to the SHF 1865 inventory above
+   (volumes OZifMcPXUK0C, bmgPAAAAYAAJ, MgaoDpxNeSAC, 0DhAAAAAcAAJ). Apart from it, there were two other leads:
+   - A Parison sale catalogue (1856, FpuMsat5UWcC): a letter "en partie en chiffres, mais avec la traduction" to
+     Villeroy, Strasbourg, 1 Nov 1595. That is a different sender and place; noted only.
+   - No printed calendar entry for a 16 Aug 1595 Nevers-to-Villeroy original.
+4. **Internet Archive**: advancedsearch (3 calls), the SHF 1865 file listing and its djvu.txt.
+   - The earlier GF4-BATCH9 pass had already searched Villeroy's *Mémoires d'Estat* (1622), vols 1-3, for this letter.
+     It was not re-run here.
+5. **Tomokiyo, League page** (local snapshot `sources/cryptiana/web/league.htm`): the fr.3993 no.102 entry says
+   "Portions in cipher. Undeciphered". It names no as-sent copy and no Godefroy item. The Godefroy collection is
+   mentioned once on the site, in henryiii.htm, which is unrelated.
+6. **Bourdeau** `bourdeau/SOURCE.md` and the folder's earlier Bourdeau notes: no as-sent lead beyond "the as-sent letter
+   to Villeroy" itself.
+7. **bibnum.institutdefrance.fr**: 2 searches (above). **calames.abes.fr**: 3 requests (2 redirects, 1 404).
+
+**Not done:**
+- Cinq Cents de Colbert 18 (Tome III, 1573-1595, Gallica btv1b10033955b) and 32 were not opened.
+- fr.15576 was not opened item by item.
+- Calames was not queried through its real search.
+- The *Lettres missives de Henri IV* vol. 4 footnotes were not searched for a "Godefroy 262" citation.
+
+Requests this pass: archivesetmanuscrits.bnf.fr 22, gallica.bnf.fr 4, www.googleapis.com 16, archive.org 5,
+bibnum.institutdefrance.fr 2, calames.abes.fr 3. Rule 10: a search result, not a novelty claim.
