@@ -1,0 +1,277 @@
+{
+ "f168": {
+  "n_changed": 11,
+  "c": 7,
+  "r_c": 0.6363636363636364,
+  "n_decoy": 11,
+  "d": 1,
+  "r_d": 0.09090909090909091,
+  "p0": 0.15384615384615385,
+  "p_binom": 0.0003784207006563268,
+  "p_fisher": 0.011867905056759546,
+  "gate": "PASS",
+  "s_candidates": [
+   "V01:10 T24->T83",
+   "V03:1 X_NEW->T17",
+   "R03:4 T24->T83",
+   "R02:17 X_NEW->T17",
+   "V03:10 T49->T51"
+  ],
+  "rows": [
+   {
+    "qid": "f168-01",
+    "kind": "decoy",
+    "passage": "R02",
+    "pos": "7",
+    "original": "T24",
+    "other": "T83",
+    "pick": "T83",
+    "conf": "H",
+    "note": "two joined back-to-back curves, T83 shape"
+   },
+   {
+    "qid": "f168-02",
+    "kind": "changed",
+    "passage": "V01",
+    "pos": "10",
+    "original": "T24",
+    "other": "T83",
+    "pick": "T83",
+    "conf": "H",
+    "note": "two joined curves, T83 not T24"
+   },
+   {
+    "qid": "f168-03",
+    "kind": "decoy",
+    "passage": "V01",
+    "pos": "9",
+    "original": "T90",
+    "other": "X_NEW",
+    "pick": "T90",
+    "conf": "H",
+    "note": "cross over small circle, T90"
+   },
+   {
+    "qid": "f168-04",
+    "kind": "changed",
+    "passage": "R03",
+    "pos": "17",
+    "original": "T56",
+    "other": "T89",
+    "pick": "T56",
+    "conf": "L",
+    "note": "looped ampersand-like curl; neither close, curls nearer T56"
+   },
+   {
+    "qid": "f168-05",
+    "kind": "decoy",
+    "passage": "R02",
+    "pos": "1",
+    "original": "T89",
+    "other": "T45",
+    "pick": "T89",
+    "conf": "M",
+    "note": "q/b looped form like T89, not T45 cross+loop"
+   },
+   {
+    "qid": "f168-06",
+    "kind": "changed",
+    "passage": "V02",
+    "pos": "30",
+    "original": "T60",
+    "other": "T86",
+    "pick": "T60",
+    "conf": "L",
+    "note": "final hash appears with two crossbars"
+   },
+   {
+    "qid": "f168-07",
+    "kind": "decoy",
+    "passage": "R02",
+    "pos": "20",
+    "original": "T65",
+    "other": "T95",
+    "pick": "T65",
+    "conf": "M",
+    "note": "double loop over cross, T65"
+   },
+   {
+    "qid": "f168-08",
+    "kind": "changed",
+    "passage": "V03",
+    "pos": "1",
+    "original": "X_NEW",
+    "other": "T17",
+    "pick": "T17",
+    "conf": "M",
+    "note": "c/t form with top stroke, T17"
+   },
+   {
+    "qid": "f168-09",
+    "kind": "decoy",
+    "passage": "R03",
+    "pos": "18",
+    "original": "T76",
+    "other": "T26",
+    "pick": "T76",
+    "conf": "M",
+    "note": "plain 9 shape, T76"
+   },
+   {
+    "qid": "f168-10",
+    "kind": "decoy",
+    "passage": "V03",
+    "pos": "2",
+    "original": "T85",
+    "other": "X_NEW",
+    "pick": "T85",
+    "conf": "H",
+    "note": "plain cross, T85"
+   },
+   {
+    "qid": "f168-11",
+    "kind": "changed",
+    "passage": "V03",
+    "pos": "5",
+    "original": "X_NEW",
+    "other": "T27",
+    "pick": "T27",
+    "conf": "L",
+    "note": "tall s-stroke with small circle on top, close to T27"
+   },
+   {
+    "qid": "f168-12",
+    "kind": "decoy",
+    "passage": "V03",
+    "pos": "18",
+    "original": "T52",
+    "other": "T64",
+    "pick": "T52",
+    "conf": "H",
+    "note": "n with descending tail, T52"
+   },
+   {
+    "qid": "f168-13",
+    "kind": "changed",
+    "passage": "R03",
+    "pos": "4",
+    "original": "T24",
+    "other": "T83",
+    "pick": "T83",
+    "conf": "H",
+    "note": "two joined curves, T83"
+   },
+   {
+    "qid": "f168-14",
+    "kind": "decoy",
+    "passage": "V02",
+    "pos": "3",
+    "original": "T97",
+    "other": "T56",
+    "pick": "T97",
+    "conf": "H",
+    "note": "S/8 ampersand form, T97"
+   },
+   {
+    "qid": "f168-15",
+    "kind": "changed",
+    "passage": "V03",
+    "pos": "23",
+    "original": "T70",
+    "other": "T84",
+    "pick": "T84",
+    "conf": "L",
+    "note": "triangle with cross attached (below), cross element favours T84"
+   },
+   {
+    "qid": "f168-16",
+    "kind": "changed",
+    "passage": "R03",
+    "pos": "6",
+    "original": "T70",
+    "other": "T84",
+    "pick": "T70",
+    "conf": "H",
+    "note": "plain triangle, T70"
+   },
+   {
+    "qid": "f168-17",
+    "kind": "decoy",
+    "passage": "V03",
+    "pos": "16",
+    "original": "X_NEW",
+    "other": "T83",
+    "pick": "X_NEW",
+    "conf": "H",
+    "note": "numeral 4 form, matches no cell"
+   },
+   {
+    "qid": "f168-18",
+    "kind": "decoy",
+    "passage": "R02",
+    "pos": "26",
+    "original": "T19",
+    "other": "T86",
+    "pick": "T19",
+    "conf": "H",
+    "note": "pi form, T19"
+   },
+   {
+    "qid": "f168-19",
+    "kind": "changed",
+    "passage": "R02",
+    "pos": "17",
+    "original": "X_NEW",
+    "other": "T17",
+    "pick": "T17",
+    "conf": "M",
+    "note": "c/t form, T17"
+   },
+   {
+    "qid": "f168-20",
+    "kind": "changed",
+    "passage": "R02",
+    "pos": "34",
+    "original": "T60",
+    "other": "T86",
+    "pick": "T60",
+    "conf": "L",
+    "note": "final hash looks double-barred"
+   },
+   {
+    "qid": "f168-21",
+    "kind": "changed",
+    "passage": "V03",
+    "pos": "10",
+    "original": "T49",
+    "other": "T51",
+    "pick": "T51",
+    "conf": "M",
+    "note": "p-loop with crossbar on stem, T51"
+   },
+   {
+    "qid": "f168-22",
+    "kind": "decoy",
+    "passage": "V02",
+    "pos": "25",
+    "original": "T52",
+    "other": "T64",
+    "pick": "T52",
+    "conf": "H",
+    "note": "n with descending tail, T52"
+   }
+  ]
+ },
+ "pooled": {
+  "n_changed": 11,
+  "c": 7,
+  "r_c": 0.6363636363636364,
+  "n_decoy": 11,
+  "d": 1,
+  "r_d": 0.09090909090909091,
+  "p0": 0.15384615384615385,
+  "p_binom": 0.0003784207006563268,
+  "p_fisher": 0.011867905056759546,
+  "gate": "PASS"
+ }
+}

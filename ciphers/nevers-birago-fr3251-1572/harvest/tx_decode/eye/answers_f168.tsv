@@ -1,0 +1,23 @@
+qid	answer	conf	note
+f168-01	A	H	two joined back-to-back curves, T83 shape
+f168-02	B	H	two joined curves, T83 not T24
+f168-03	B	H	cross over small circle, T90
+f168-04	B	L	looped ampersand-like curl; neither close, curls nearer T56
+f168-05	A	M	q/b looped form like T89, not T45 cross+loop
+f168-06	A	L	final hash appears with two crossbars
+f168-07	A	M	double loop over cross, T65
+f168-08	A	M	c/t form with top stroke, T17
+f168-09	B	M	plain 9 shape, T76
+f168-10	B	H	plain cross, T85
+f168-11	B	L	tall s-stroke with small circle on top, close to T27
+f168-12	A	H	n with descending tail, T52
+f168-13	B	H	two joined curves, T83
+f168-14	A	H	S/8 ampersand form, T97
+f168-15	A	L	triangle with cross attached (below), cross element favours T84
+f168-16	B	H	plain triangle, T70
+f168-17	A	H	numeral 4 form, matches no cell
+f168-18	A	H	pi form, T19
+f168-19	A	M	c/t form, T17
+f168-20	A	L	final hash looks double-barred
+f168-21	A	M	p-loop with crossbar on stem, T51
+f168-22	A	H	n with descending tail, T52
