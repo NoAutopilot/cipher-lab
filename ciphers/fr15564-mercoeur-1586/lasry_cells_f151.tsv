@@ -1,0 +1,31 @@
+# MERC151B, 3 Oct 2026: f.151 sign labels (MERC151 legend) -> candidate letter SETS from Lasry's fr.15564 key
+# (key_lasry_gl.tsv), matched by the key file's own glyph descriptions only (grade M, no shared sign atlas).
+# Letters only; nomenclator values and 'ff' groups excluded. Pre-registered before any score (PREREG-MERC151B.md).
+class	letters
+2	f/o/d/y
+3	a/d/i/g/t
+4	c/v/n
+6	e/i
+7	n/o
+8	m/s
+y	d
+v	y
+#	v
+P	d
+L	s
+s	s
+e	a/l/r/s
+n	e
+x	n/y
+d	d
+m	m/s
+w	h
+i	a/v
+g	l
+a	l/g
+q	i
+r	q/t
+o	s
+R	p
+E	v
+f	b/c/v
