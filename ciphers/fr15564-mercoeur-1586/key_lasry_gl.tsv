@@ -1,0 +1,46 @@
+# Lasry's key for BnF fr.15564 ff.27/78/119/142 and fr.15565 ff.105/122 ("BNF Francais 15564 & 15565, George Lasry 29/05/2022"),
+# printed as an image on Tomokiyo's Cryptiana page GL.htm: sources/cryptiana/web/GL/GL_BnFfr15564.png (fetched 3 Oct 2026,
+# https://cryptiana.web.fc2.com/code/GL/GL_BnFfr15564.png, 72915 bytes). Credit: G. Lasry (key), S. Tomokiyo (publication).
+# Values are grade H as printed. Glyph descriptions are MERC151's own words for a 600 px image, grade M; the image decides.
+# Homophone counts per letter are read off the image's columns at that resolution and may be off by one in the long columns.
+# value	kind	n_glyphs	glyph_descriptions (M)
+A	letter	4	short stroke 'i'; looped 'l'; 'e'-like loop; '3'
+B	letter	2	'I' with serifs; curled 'f'-like stroke
+C	letter	2	'4'; 'f'-like stroke
+D	letter	6	'3'; 'y'-like; 'pi'; '2'-like hook; '2'-like hook; 'd'-like
+E	letter	3	'u' with hook; 'n'; '6'
+F	letter	2	'c'-like with tail; '2'
+G	letter	2	'z'-tail; blot loop ('a'-like filled)
+H	letter	3	'h' with crossbar; 'w'-like; 'h'-like
+I	letter	4	'6' with bar; 'S'-like; '3'; looped 'q'/'2' (lower)
+L	letter	3	'e'-like with curl; 'g'-like; 'a'-like
+M	letter	3	looped 'm'; 'h'-like; '8'
+N	letter	3	'z'/'4'; 'x'-like; '7'
+O	letter	3	'2'-like loop; 'Z' with bar; '7'-like
+P	letter	3	cross '+' with flag; 'S'-like; 'R'-like
+Q	letter	2	'A'-like with bar; curl 'r'
+R	letter	2	'D' with tail; 'e'-like curl
+S	letter	7	'8' with loop; 'e'-like; 'm' with stroke; long-s variants; 'B'-like; 'o' tail
+T	letter	2	'ʒ'-like; long 'r'/'2'
+U	letter	1	cross-flag ('t' with flag)
+V	letter	5	'4'; '#'; 'E'-like; 'f'-like; 'i' with dot
+X	letter	2	'z' with descender; double-'u' scribble
+Y	letter	2	'v'; '2'/'x'-like
+DE	nomenclator	1	'7' with flag (Roman-numeral-like group)
+AU	nomenclator	1	'y'-like with stroke
+LA	nomenclator	1	'yb' group
+ET	nomenclator	1	'yn'/'ym' group
+DES	nomenclator	1	'ym' group
+QUE	nomenclator	1	'ff' + 'm' with superscripts
+LES	nomenclator	1	'ff' + 'b' with stroke
+MON	nomenclator	1	'ff' + 'm'
+LE	nomenclator	1	'ff' + 'y'
+QUI	nomenclator	1	'ff' + 'bi'
+POUR	nomenclator	1	'ff' + 'm' (barred)
+PAR	nomenclator	1	'ff' + 'y'
+VOUS	nomenclator	1	'ff' + 'm' variant
+ILS/NOUS	nomenclator	1	'ff' + 'b' variant
+NOUS	nomenclator	2	'ff b' + 'ff m' (two forms printed)
+LEUR	nomenclator	1	'fff'/'iii' group
+SON	nomenclator	1	'ffi'/'iii' group
+?	unknown	13	Lasry's "Unknown" row: cross; dot; 'N'-like; '21'; '71'; '73'; 'y1'; '89'; 'd'-like; 'ff'-groups x4

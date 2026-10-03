@@ -175,3 +175,10 @@ See `sources/cryptiana/web/manifest_2026-09-27-spinelli.tsv` for the manifest ro
 | File | URL | Fetched | Bytes | For |
 |---|---|---|---|---|
 | `web/charlesi4.jpg` | https://cryptiana.web.fc2.com/code/charlesi4.jpg | 3 Oct 2026, 07:34 UTC | 25765 | Tomokiyo's letter table (codes 2-79), captioned "Cipher between Charles I and Henrietta-Maria (and Ministers) after Naseby (June 1645-)", embedded in charlesi.htm under "Cipher with Ministers in Oxford after Naseby". Letters only, no word codes. Tested on maurice-rupert-1645 (non-test, see its NOTES.md GAPS51) |
+
+## Added 3 October 2026 (ciphers/fr15564-mercoeur-1586, MERC151)
+
+| File | URL | Fetched | Bytes | For |
+|---|---|---|---|---|
+| `web/GL/GL_BnFfr15564.png` | https://cryptiana.web.fc2.com/code/GL/GL_BnFfr15564.png | 3 Oct 2026, 14:59 UTC | 72915 | Lasry's key for fr.15564/15565 (29/05/2022), embedded in GL.htm |
+| `web/GL/GL_BnFfr15564f27decipher.png` | https://cryptiana.web.fc2.com/code/GL/GL_BnFfr15564f27decipher.png | 3 Oct 2026, 14:59 UTC | 245217 | Lasry's decipherment of fr.15564 f.27, embedded in GL.htm |

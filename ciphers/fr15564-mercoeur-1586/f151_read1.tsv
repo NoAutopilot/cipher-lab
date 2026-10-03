@@ -1,0 +1,14 @@
+# MERC151, 3 Oct 2026: one Opus read of crops images/f151_L0{1,2,3}_s{1,2}.jpg (tools/iiif_lines.py, 3 lines per crop).
+# Single pass, no second read, no reconcile: every sign grade M (rule 4). Labels are this reader's ad-hoc ASCII names
+# for the shapes (D=delta, Q=open square, b=beta, w=omega, f=phi, L=lambda/long-s-like, u=mu, E=epsilon, 3=yogh/z-tail,
+# #=double-barred cross, P=p-with-stroke, ff=doubled long-s, or=o+r ligature-like pair counted as 2), NOT Lasry's glyphs.
+# span	line	clear_before	clear_after	signs_space_separated	n
+S1	1	Tout a esté	ne ie vous ay advertys par ma derniere du ee(?) de ce mois Et voy bien que	2 P = # 6 L 7 D Q y v s s	13
+S2	2	(line start)	Toutes choses y estans disposées et preparées ainsi que i'estime que vous aurez esté advertys	N e v 4 o r T x w e 8 ff 7 d E 3 b L E g y 2 o r G y b L v 7 a 8 6 o r y 8 y x 3 r ff w	43
+S3	3	advertys	va au pays	= G # m o Q T 3 X i R ff f w 4 x n n # 9 v R 7 E o r Q 7 L o r b ff 3 3	35
+S4	4	(line start)	assister Je regrette infiniment nre malheur	P v 4 b y D o L y L L o b s 4 9 8 # 4 i 9 3 y # y 6 9 p L	29
+S5	4	malheur	(line end) sans vre grace afin que nous eussions cest heur que d'estre	L i q x 3 7 4 b v y 4 w n a E 3 y G	18
+S6	5	d'estre	(n circled) Je ne faudray de vous tenir advertys de tout plus tost [par] homme exprès	x 8 Q g 9 f 6 L s	9
+S7	6	homme exprès	Cest roy duquel nous nous pensé(?)	P b 6 4 E v y 3 T u # # 8 y L f s Q w g r v x y o r p a g	29
+S8	6-7	pensé(?)	Mais nous avons depuis estimé qu'il viendra plus à propos d'attendre encores un peu par ce [?] le tout ensemble	m f = w # 8 o v b 3 6 7 5 E f g g o r d y n M E u # Q v 4	29
+S9	8	ensemble.	en q[ui] nous esperons beaucoup pour sa valeur. Ce xxvj(e) Juin	# f 6 e n v 4 o r 3 y # # e f	15

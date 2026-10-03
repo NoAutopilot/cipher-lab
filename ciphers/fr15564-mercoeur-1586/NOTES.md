@@ -90,3 +90,59 @@ Open point: the earlier note that the catalogue lists no f.151 is answered by To
 ## While waiting
 
 The one action that depends on nobody: count the f.151 cipher signs from the Gallica canvas (one native crop, one vision call, ~USD 2.5) to see whether it is long enough for any test, and list its sign inventory against the Lasry fr.15564 key's inventory (GL.htm). Status stays `blocked` (no printed edition exists for an anonymous letter; Tomokiyo is the nearest index).
+
+## f.151 sign count and inventory against Lasry's key (MERC151, 3 Oct 2026)
+
+Intake gate (3 Oct 2026, 14:58 UTC): `python3 tools/intake_gate_check.py fr15564-mercoeur-1586` ->
+`fr15564-mercoeur-1586: blocked (line 1) -- already terminal, nothing to gate`, exit 0. Status stays `blocked`; this
+is an image check (sign count and inventory), no decoding was attempted.
+
+**Leaf located.** f.151 is canvas **f164** of ark `btv1b9064027v` (each canvas is an opening; the leaf is a narrow
+slip pasted on the right page, ink foliation "151" at its top right, a later number "226" below the text, monogram
+"MR" under it). Anchors read by eye this pass: canvas f157 = f.144 (right page, foliation "144"/"222"), f163 = f.150
+("150"/"224"). The earlier guess "canvas index 150 / f151" in this file and Tomokiyo's HTML comment "p.166" both miss
+it in the current manifest. Region and crops:
+
+    python3 tools/iiif_lines.py --ark btv1b9064027v --canvas 164 --region 4800,2950,4135,1100 \
+      --out ciphers/fr15564-mercoeur-1586/images --prefix f151 \
+      --centres 225,307,389,471,553,635,717,799,881 --lines-per-crop 3 --top-margin 50 --bottom-margin 60 --debug
+
+(6 crops, 3 lines each; the autocorrelation centres missed lines, so centres were set by eye from the row profile.)
+
+**What the leaf is.** Not a wholly enciphered letter: nine short cipher spans set inside clear French ("Tout a esté
+[cipher] ... Toutes choses y estans disposées et preparées ainsi que i'estime que vous aurez esté advertys [cipher]
+... Je regrette infiniment nre malheur [cipher] ... Je ne faudray de vous tenir advertys de tout plus tost [par]
+homme exprès [cipher] ... Mais nous avons depuis estimé qu'il viendra plus à propos d'attendre encores un peu ...
+Ce xxvj(e) Juin"). The clear words are a reading of one pass, grade M, recorded only as context for the spans.
+
+**Count (one Opus read, grade M, no second pass).** `f151_read1.tsv`: **220 cipher signs in 9 spans (9-43 signs
+each), 41 distinct sign labels, 5 singletons**; commonest y 16, '#' (double-barred cross) 12, o 12, L 11, v 11,
+3 (z-tail) 11, 4 10, r 10. Read once: the count is +/- about 10%, and labels are this reader's ad-hoc names.
+Cost per 100 signs: the orchestrator's `get_session` figure / 2.2.
+
+**Lasry's key on disk.** `sources/cryptiana/web/GL/GL_BnFfr15564.png` (fetched 3 Oct 2026, the image GL.htm embeds;
+README row added) transcribed to `key_lasry_gl.tsv`: 22 letters with 66 homophones, 17 nomenclator values (18 glyphs,
+DE AU LA ET DES QUE LES MON LE QUI POUR PAR VOUS ILS/NOUS NOUS LEUR SON, most of them 'ff'/'7'-headed groups, the
+"Roman numerals" Tomokiyo mentions), 13 "Unknown" signs. Values H as printed (Lasry 29 May 2022, published by Tomokiyo);
+glyph descriptions M (600 px image).
+
+**Inventory comparison (by eye, not by a shared sign atlas).** About 12 of f.151's 41 types have a look-alike in the
+key (digit and letter shapes 2 3 4 6 7 8, y, v, '#', 'ff', a 'pi'/'P'-like sign, an 'S'-like sign). About 15 have no
+evident counterpart in the key image: Greek-letter shapes (delta, open square, beta, omega, phi, lambda, mu, epsilon),
+capitals T R X M N G, '=', dotted 'i' separators. 'ff' occurs 4 times on f.151 (S2, S3), and 'ff'-headed groups are the
+key's nomenclator form -- the one shared feature of design visible at this resolution. Taken with Lasry's report that
+f.151 does not read under this key, the inventory looks partly or wholly different; a same-scale glyph sheet is what
+would settle the overlap, not this description.
+
+**Long enough for a test?** N = 220, K about 41, French, mixed clear/cipher with a probable small nomenclator. Rule 3:
+any solver run needs first a matched control -- `tools/family_run.py` homophonic at N=220, K=41, fr16 corpus, signs
+split into 9 spans of the same lengths, injected error bracketing a one-pass read (10-15%, rule 3 SALV-DIAG clause).
+Prior curves (CLAUDE.md rule 3: simple substitution reads 99.7% at N=720; code+mark 22-67% at N=720) make a pass at
+N=220/K=41 unlikely; the clear frame is the better lever (cribs at known positions: e.g. S5 follows "nre malheur",
+S9 precedes "en qui nous esperons beaucoup"), but a crib loop needs its own matched control too.
+
+## While waiting (updated MERC151, 3 Oct 2026)
+
+Next step that depends on nobody: a second blind read of the six f.151 crops and a reconcile against
+`f151_read1.tsv` (2 Opus calls, ~USD 3), then the rule-3 control above (`family_run.py` homophonic, N=220, K=41,
+fr16, offline, ~USD 1) before any target run; a control below gate logs f.151 as too-short for that family.
