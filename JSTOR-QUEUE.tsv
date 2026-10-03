@@ -134,25 +134,25 @@ ciphers/fr4715-f61-mayenne-1592	"Diou" AND "Jeannin" AND 1592 AND chiffre	2026-0
 ciphers/fr4715-f61-mayenne-1592	"pas paresseux si"	2026-09-28	queued	
 ciphers/fr4715-f61-mayenne-1592	"satisfaire ung seul au prejudice de plusieurs"	2026-09-28	queued	
 ciphers/fr4715-f61-mayenne-1592	"jalousie au beau-pere"	2026-09-28	queued	
-ciphers/ceppo-nevers-fr3251-1570s	"Birago" AND "Nevers" AND "Saluzzo" AND (cipher OR cifra OR chiffre)	2026-09-28	queued	
-ciphers/ceppo-nevers-fr3251-1570s	"Lodovico Birago" AND 1570 AND (Savoia OR Savoie) AND restitu*	2026-09-28	queued	
+ciphers/ceppo-nevers-fr3251-1570s	"Birago" AND "Nevers" AND "Saluzzo" AND (cipher OR cifra OR chiffre)	2026-09-28	done 2026-10-03	1 result: DOCUMENTI | (no author) | Archivio Storico Italiano 122 no.1/2 | 1964 | https://www.jstor.org/stable/26252393 -- read in viewer: Medici envoys' letters from the Council of Trent, Oct 1561-1563; cannot contain the 1572 letters; not about Birago's ciphers
+ciphers/ceppo-nevers-fr3251-1570s	"Lodovico Birago" AND 1570 AND (Savoia OR Savoie) AND restitu*	2026-09-28	done 2026-10-03	no relevant hit (0 results)
 ciphers/intercepted-royalist-1646	("intercepted" OR "intercepted letter") AND "1646" AND ("Weckherlin" OR "Digby") AND (cipher OR cypher OR decipher*)	2026-10-02	queued	
 ciphers/intercepted-royalist-1646	"resolved to expect your Majesty"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"Birago" AND 1572 AND (Nevers OR Saluzzo OR Saluces) AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"lettere inhibitorie al gran Comendatore"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"Birago" AND "Nevers" AND 1572 AND (cipher OR chiffre OR cifra)	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"procedere ordinario di chi"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("febbraio 1572" OR "février 1572" OR "Coconato") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"andarsi a consultare"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("agosto 1572" OR "août 1572" OR "Sadres") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"baron de Sadres"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("ottobre 1572" OR "octobre 1572") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"il capitano Scipione" AND Saluzzo	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"Birago" AND 1572 AND (Nevers OR Saluzzo OR Saluces) AND (cipher OR cifra OR chiffre)	2026-10-02	done 2026-10-03	no relevant hit (6 results: indexes/bibliographies -- Annuaire-Bulletin SHF 28.2 1891 back matter index 'Nevers (duc de), 237' stable/23410594; Bibliographie litt. fr. 2015 stable/24890607 Nevers as place of publication; Arato, Bibliographia Historiae Pontificiae 1969 stable/23563722 Saluzzo diocese)
+ciphers/nevers-birago-fr3251-1572	"lettere inhibitorie al gran Comendatore"	2026-10-02	done 2026-10-03	no relevant hit (0 results)
+ciphers/nevers-birago-fr3251-1572	"Birago" AND "Nevers" AND 1572 AND (cipher OR chiffre OR cifra)	2026-10-02	done 2026-10-03	no relevant hit (5 results: same index/bibliography items as row 141)
+ciphers/nevers-birago-fr3251-1572	"procedere ordinario di chi"	2026-10-02	done 2026-10-03	no relevant hit (0 results)
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("febbraio 1572" OR "février 1572" OR "Coconato") AND (cipher OR cifra OR chiffre)	2026-10-02	done 2026-10-03	no relevant hit (0 results)
+ciphers/nevers-birago-fr3251-1572	"andarsi a consultare"	2026-10-02	done 2026-10-03	no relevant hit (0 results)
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("agosto 1572" OR "août 1572" OR "Sadres") AND (cipher OR cifra OR chiffre)	2026-10-02	done 2026-10-03	no relevant hit (9 results; only one names Birague: Bernus 1888, Antoine de Chandieu journal, BSHPF 37.4, stable/24284324 -- 'president de Birague' = René de Birague, not Lodovico)
+ciphers/nevers-birago-fr3251-1572	"baron de Sadres"	2026-10-02	done 2026-10-03	no relevant hit (0 results)
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("ottobre 1572" OR "octobre 1572") AND (cipher OR cifra OR chiffre)	2026-10-02	done 2026-10-03	no relevant hit (5 results; Bernus 1888 Chandieu article again, René de Birague)
+ciphers/nevers-birago-fr3251-1572	"il capitano Scipione" AND Saluzzo	2026-10-02	done 2026-10-03	no relevant hit (0 results)
 ciphers/pro3055-clinton-1779	"Clinton" AND "Haldimand" AND ("1779" OR "October 1779") AND (cipher OR cypher)	2026-10-02	queued	
 ciphers/pro3055-clinton-1779	"still the clamours of their own officers"	2026-10-02	queued	
 ciphers/pro3055-clinton-1779	"Clinton" AND "Haldimand" AND ("November 1781" OR "1781") AND (cipher OR cypher) AND Vermont	2026-10-02	queued	
 ciphers/pro3055-clinton-1779	"jealousies of the inhabitants of Vermont"	2026-10-02	queued	
-ciphers/nevers-birago-fr3251-1572	"casa di Momoransi" AND Birago	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"casa di Momoransi" AND Birago	2026-10-02	done 2026-10-03	no relevant hit (0 results)
 ciphers/na-suriname-map-1781	Wollant AND Suriname AND (geheimschrift OR cijferschrift OR cipher)	2026-10-02	queued	
 ciphers/na-suriname-map-1781	("Redout Leyden" OR "redoute Leiden") AND 1781	2026-10-02	queued	
 ciphers/na-suriname-map-1781	"met een of meer vaste substituten"	2026-10-02	queued	

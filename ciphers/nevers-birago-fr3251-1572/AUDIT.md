@@ -976,3 +976,15 @@ owner's sorter).
 then `tools/decode_key.py --check`, the decode_control at fresh seeds and the judge, before any firm count moves. Open next
 step (the solver's, unchanged, ~$2): look for the "Ce" shape under T50 or T92 labels in nos.71/86/90, where T50 = c is
 needed by "per conto", "domestico", "confusion".
+
+
+## JSTOR (owner's machine, 3 Oct 2026)
+
+All 13 queued JSTOR-QUEUE.tsv rows for Birago (137-138, 141-150, 155; both families: name/date/place + cipher keyword, and
+bare quoted phrases from the readings) run by the owner's desktop session in a browser signed in to JSTOR, about 05:2x UTC,
+no captcha or block page. The six quoted-phrase rows (142, 144, 146, 148, 150, 155) returned 0 results each. Name/date rows
+returned only indexes, bibliographies and a different Birague (René, in Bernus 1888 on Antoine de Chandieu). The one full-text
+candidate, "DOCUMENTI", Archivio Storico Italiano 122 (1964), https://www.jstor.org/stable/26252393, was read in the online
+viewer: Medici envoys' letters from the Council of Trent, Oct 1561-1563, so it cannot print the 1572 letters. Result: nothing on
+JSTOR prints or discusses Birago's 1572 cipher letters or their decipherment. Class unchanged (N4 stands; outreach gate 2's JSTOR
+condition is now met for this target).

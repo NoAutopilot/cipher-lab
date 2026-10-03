@@ -1088,3 +1088,15 @@ tokens were already M in D, so the count does not change for them. Class unchang
   (o stands, S). PROGRESS.tsv "Birago f.87" set from this section. status.json is yours.
 - Open: passC L04.39 (D reads a barred 8, S80); L05.28 is undecided. A legible f.36r/f.37r gloss over an upright hash at
   a line end would bear on L05.42.
+
+
+## JSTOR (owner's machine, 3 Oct 2026)
+
+All 13 queued JSTOR-QUEUE.tsv rows for Birago (137-138, 141-150, 155; both families: name/date/place + cipher keyword, and
+bare quoted phrases from the readings) run by the owner's desktop session in a browser signed in to JSTOR, about 05:2x UTC,
+no captcha or block page. The six quoted-phrase rows (142, 144, 146, 148, 150, 155) returned 0 results each. Name/date rows
+returned only indexes, bibliographies and a different Birague (René, in Bernus 1888 on Antoine de Chandieu). The one full-text
+candidate, "DOCUMENTI", Archivio Storico Italiano 122 (1964), https://www.jstor.org/stable/26252393, was read in the online
+viewer: Medici envoys' letters from the Council of Trent, Oct 1561-1563, so it cannot print the 1572 letters. Result: nothing on
+JSTOR prints or discusses Birago's 1572 cipher letters or their decipherment. Class unchanged (N4 stands; outreach gate 2's JSTOR
+condition is now met for this target).
