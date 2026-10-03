@@ -1,0 +1,153 @@
+{
+ "record": 1411,
+ "fetched": "2026-10-03 (GAPS137, account-4, one browser login, tools/decode_browser_login.js --guess-fullsize)",
+ "pages_on_record": 18,
+ "images_served": 12,
+ "images": [
+  {
+   "file": "IMG_R1411_I6595_P1.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6595_P1.png",
+   "login_required": true,
+   "width": 3456,
+   "height": 4608,
+   "bytes": 13059192,
+   "sha1": "126a2f4cb7c8a1aa90520d4317ed0e07de582e89",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6595_P1.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6596_P2.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6596_P2.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 13286928,
+   "sha1": "2e022ab8dccbc82c88aefea73634d60008093b7d",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6596_P2.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6597_P3.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6597_P3.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 14889935,
+   "sha1": "509fe691aa0669c8eab9ece24ee053e9fb3e3c1d",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6597_P3.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6598_P4.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6598_P4.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 15357228,
+   "sha1": "7bbfba3c146299de555a58e05d0a6b33729c6550",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6598_P4.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6599_P5.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6599_P5.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 15383968,
+   "sha1": "0a102250107a809a3ac27eebe9ad5e15b7bf151d",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6599_P5.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6600_P6.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6600_P6.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 14950204,
+   "sha1": "0f59762883d7d6947b012c01b1d508b76cc52192",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6600_P6.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6601_P7.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6601_P7.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 15014488,
+   "sha1": "e002c35076c06d96454737eebc4e89e6fc50b71a",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6601_P7.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6602_P8.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6602_P8.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 15616560,
+   "sha1": "f19b4726ef4e5f037d7dfbdb44c35fc3247cabdc",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6602_P8.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6603_P9.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6603_P9.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 13601472,
+   "sha1": "a0dc3f69cd2b2f8c4e21cebfe6fd5089c534a3d9",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6603_P9.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6604_P10.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6604_P10.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 12411406,
+   "sha1": "f8a84d951d8e5dabde223bd639efe7ef0e37825a",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6604_P10.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6605_P11.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6605_P11.png",
+   "login_required": true,
+   "width": 4608,
+   "height": 3456,
+   "bytes": 11434275,
+   "sha1": "f1d05106879198e9707257eeac20c815f5e07194",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6605_P11.png committed in decode/"
+  },
+  {
+   "file": "IMG_R1411_I6606_P12.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6606_P12.png",
+   "login_required": true,
+   "width": 3456,
+   "height": 4608,
+   "bytes": 11612944,
+   "sha1": "3cc7d129e9ea8f609ffef6e982e77e7007749939",
+   "committed": false,
+   "note": "full size not committed (12 files, ~160 MB); thumbnail TH_IMG_R1411_I6606_P12.png committed in decode/"
+  }
+ ],
+ "crops": [
+  {
+   "file": "p1_top_gloss.jpg",
+   "from": "IMG_R1411_I6595_P1.png",
+   "region_frac": "x0.10-0.95,y0.05-0.50",
+   "note": "interlinear period letters over numeral groups"
+  },
+  {
+   "file": "p1_mid.jpg",
+   "from": "IMG_R1411_I6595_P1.png",
+   "region_frac": "x0.10-0.95,y0.50-0.75"
+  }
+ ]
+}

@@ -111,9 +111,9 @@ interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions
 
 ## While waiting
 
-Next action that depends on nobody: one DECODE browser login (`tools/decode_browser_login.js 1411 ...`) to fetch
-R1411's images, check the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (same fascicle,
-ff. 174-212), and confirm whether R1411 is one of their letters' copies or drafts before any transcription.
+Next action that depends on nobody: harvest the period interlinear letters already on R1411's pages (GAPS137 below) into
+(number, letter) pairs with a line-crop transcription pass, and test the homophone table they give for consistency
+across pages (a known-plaintext key, grade C/H, no cryptanalysis). The images are in hand (images/manifest.json).
 
 ## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
 
@@ -135,3 +135,56 @@ No decipherment of R1411 found. Requests: WebSearch 1, scienceblogs.de 2. Vision
 Next step: one DECODE browser login (`tools/decode_browser_login.js 1411 <dir>`) to fetch R1411's images and check
 the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (ff. 174-212), per "While waiting" above;
 ~$2, one login per session.
+
+## GAPS137 step: DECODE images and the "Cyffra nova ad Poloniam" test (3 Oct 2026, account-4)
+
+One DECODE browser login (tools/decode_browser_login.js 1411, --guess-fullsize; account name scrubbed from the saved
+record page, 4 occurrences). DECODE served 12 full-size images (3456x4608 PNG, I6595-I6606) of the record's 18 pages;
+sha1, size and URL of each are in images/manifest.json. The full-size files (~160 MB) are not committed (30 MB folder
+rule); the 200 px thumbnails, the scrubbed record page and two reduced crops of p.1 are. The first browser attempt failed
+before reaching the login form (Chromium ERR_CERT_AUTHORITY_INVALID; NSS store lacked the proxy CA in this container,
+fixed with the CLAUDE.md certutil step), so only one login was made.
+
+**Pre-registered gate (written before any decode was attempted).** Step 1, inventory: R1411's cipher signs must be of
+the same class as the key's -- Kopal 2023 (HistoCrypt art. 160, pp. 2-3, read this session) describes "Cyffra nova ad
+Poloniam" (1572) as a homophonic substitution of about 80 graphic signs ("astrological signs, Greek letters, and
+esoteric symbols") with Latin clear-word code names ("Benigni", "Ater"). If R1411's cipher is not in graphic signs of
+that kind, the key is inconsistent and no transcription, decode or judge is run.
+
+**Result: inconsistent; gate stops at step 1.** R1411 (images/p1_top_gloss.jpg, p1_mid.jpg; contact sheet of all 12
+seen) is German cursive with inserted numeral groups separated by commas or dots, values seen on p.1 from 4 to 96
+(e.g. "80, 57, 41, 89, 9, 04, 77, 09 ..."), plus a few isolated graphic marks (a circled cross and two other single
+signs used like word or name codes). The cipher alphabet is Arabic numerals, not the Kopal graphic-sign set. No decode
+was attempted.
+
+**Control.** The brief named a shuffled-key control. For this statistic (sign class: numerals vs graphic signs) a
+shuffled key cannot differ from the real one -- permuting the key's plaintext values does not change which sign class
+it uses -- so that control is a non-test by construction (rule 3) and was not run. Not needed either: the mismatch is
+in the key's own sign set, not in a score.
+
+**What the images show instead (the main finding of the step).**
+- Page 1 carries interlinear letters written above many numeral groups, in the same or a near hand: a period
+  decipherment of part of the cipher. Read off the crop (unverified, grade M until a transcription pass): over
+  "5, 17, 63, 77, 65, 11, 57, 95" the letters "a n l a n g e t" (anlanget); over "35, 81, 73, 13, 70, 22, 9" the letters
+  "g e p i s t e"; over "29 41 61 ... 65" a longer run beginning "a n ...". Letter e appears over 81 and 9 and
+  n over 41 and 65, so the system is homophonic on about 1-99. This is most plausibly what DECODE's "Partially
+  decrypted" refers to.
+- Clear words around the cipher: "Herr Reichs Canceler", "mein gnädiger Herr", "Rath und Bürger deputirten",
+  "fortification", "Kön. Maij.", "Erb. Rath", "lit. A B C D E F G" (labels of enclosures, "Beylage lit. A ... G"; not a
+  key), "Expeditionibus". A Reichskanzler addressed together with a royal Majesty and a town council points to a
+  17th-century Swedish or Polish-Prussian context rather than the 1574-75 Maximilian II letters (inference, grade I;
+  the date line was not read this pass).
+- Several leaves (pp. 4-9) are drafts with heavy corrections and crossings-out; pp. 10-12 include a mostly blank leaf,
+  the folio number 192 and an endorsement.
+
+Token grades: no reading claimed. The interlinear letters quoted above are M (read from a reduced crop by this worker,
+no second pass). Vision: 3 image reads by the worker itself (contact sheet, two crops of p.1), 0 subagent calls.
+Requests: de-crypt.org 26 (1 login, record page, 24 image files), ecp.ep.liu.se 2 (Kopal article page and PDF),
+github.com 1 (shallow clone of dbourdeau/cyphersolver to read targets/warsaw/NOTES.md, R1392-R1406 descriptions; cited,
+not copied).
+
+Next step: transcribe p.1 (and any other glossed page) as numeral groups with their interlinear letters, using
+tools/iiif_lines.py --image on the full-size file, two blind passes; build the (number -> letter) table from the pairs
+with tools/interlinear_align.py or a direct pair count, and check each number's letter is consistent across its
+occurrences (a shuffled-pairing control can vary here). ~$4-6 at the current per-pass rate (2 passes + 1 reconcile).
+Status unchanged: open.
