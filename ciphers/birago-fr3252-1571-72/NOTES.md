@@ -648,3 +648,12 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. The Ceppo-
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut, all 17 lines read twice
 - [ ] retry: f.47r third reader on 257 split tiles; f.117r power at a measured post-look-alike error
 Verdict: keep going: 7 internal gaps; cheapest next: f.47r blind third reader on the split tiles, ~$3
+
+## NEVBIR-NAMES (3 Oct 2026, account 2 for the account-3 orchestrator): whole-name gap fill, f.117r exploratory only
+
+Main section and pre-registered gazetteer: `../nevers-birago-fr3251-1572/NOTES.md` "NEVBIR-NAMES" and `harvest/names/` there.
+f.117r has no S tokens (all 251 keyed signs M), so the pre-registered rule (fixed = S/C) has nothing to fit; an exploratory run
+(`match_names.py --f117`, M letters of `la/recon_f117_3r.tsv` under `map_printed.json` taken as fixed, flagged not pre-registered)
+finds one U run >= 3 on the leaf (L01 start, before "mguila") and no admissible name; both controls p95 0.0. The leaf's names are
+already given by word signs (turino L01, carmagnola L03). f.47r not run: 0.66 two-reader agreement and a live NEVBIR-47C third-reader
+claim at 00:13 UTC. HYPOTHESES.md row (created this job). No reading changed; disk only, 0 requests.

@@ -1,0 +1,2 @@
+f117_explore: gaps 1; gaps with any admissible gazetteer fill (>=3 fixed) 0; surviving both controls 0
+bonus (U sign ids, letters from surviving fills): none

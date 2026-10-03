@@ -1,0 +1,2 @@
+prereg: gaps 22; gaps with any admissible gazetteer fill (>=3 fixed) 3; surviving both controls 0
+bonus (U sign ids, letters from surviving fills): none

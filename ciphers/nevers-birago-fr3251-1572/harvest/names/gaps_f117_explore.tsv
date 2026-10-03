@@ -1,0 +1,2 @@
+letter	line	pos	gap_len	context(fixed lower, M UPPER, U .)	best_form	score	fixed_matched	ctrl_randgaz_p95	ctrl_randgaz_max	ctrl_flankshuf_p95	ctrl_flankshuf_max	survives
+f117r	L01	1	3	...mguila		0.0	0	0.0	0.0	0.0	3.0	no

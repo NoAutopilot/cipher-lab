@@ -1912,3 +1912,43 @@ T50, T98, T52 and T46 against the crops with this map as crib (`tools/lookalike_
 whether T50-as-s is a reader label; T95 = l is applied in other letters only after that.
 
 Cost: disk only, ~6 min CPU (control 3m52s). Requests 0.
+
+## NEVBIR-NAMES (3 Oct 2026, account 2 for the account-3 orchestrator): whole-name gap fill -- no fill beats its controls
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-nevbir-names.md`. Disk only: 0 vision calls, 0 requests to any host. No class, no
+novelty wording (rule 10). Status stays `partial`. Box 00:22-01:22 UTC.
+
+**Idea tested (owner's, 3 Oct 2026).** Unread spans in nos.71/86/90 may sit where proper nouns belong; fit WHOLE names against the
+letters fixed around and inside each gap (distinct from NEVBIR-OFFSHEET, which fitted single signs by n-gram score).
+
+**Gazetteer, pre-registered** (`harvest/names/gazetteer.tsv`, 239 forms of 88 names/offices/places/groups, with
+`gazetteer_src.txt` and the rule in `harvest/names/PREREG.md`, pushed in f38910be before any gap was listed). Sources per row:
+(a) the no.87 clerk's clear sheet and the names previous workers took from the Birago/Ceppo letters' clear prose (AUDIT.md search
+logs); (b) the Mémoires de Nevers 1665 pts 1-2 **only through the Gallica ContentSearch logs already in AUDIT.md** (Hautefort,
+Sacremore, Pinerolo, Carmagnolle) -- the full text was not re-fetched; (c) the brief's context list, Italian and French spellings.
+
+**Rule.** Gap = run of U/M tokens >= 3 (word signs and nulls are barriers). A form fits a window overlapping the gap by >= 3
+tokens iff every S/C sign in the window agrees; >= 3 fixed letters matched; score = fixed matched + 0.5 x agreeing M. Controls
+(rule 3; both change the letters the statistic reads, so both can fail): (i) 200 random gazetteers of it16dip/fr16 words, same
+size and length distribution; (ii) 200 shuffles of the fixed letters among the fixed positions. A fill counts only above both
+p95. `harvest/names/match_names.py` (seed 1), output `gaps_prereg.tsv`, `fills_prereg.tsv`, `summary_prereg.txt`.
+
+**Result.** 22 gaps in the three letters (no.71 2, no.86 6, no.90 14). A gazetteer name is admissible at only 3 of them --
+"gouerno" (no.86 f174v L19, 3.5), "sanfre" (no.90 f185r L17, 3.0), "danuilla" (no.90 f185r L21, 3.0) -- and none clears either
+control (per-gap p95 of the random gazetteers 0-3.5, max up to 6.0; flank-shuffle p95 0-3.5). At 19 gaps no name fits at all,
+while random words of the same lengths fit most of them. **No surviving fill; nothing graded; bonus check empty (no off-sheet sign
+gets a value from a fill).** The three admissible fills read as chance on inspection too: the "danuilla" window is
+"tuTo dEPEnDEA la casa" -- ordinary words already readable at M, echoing no.87's own clear "dependendo ... dalla casa de memoransi".
+
+**Why the idea has little room here.** The unread signs are mostly isolated: U runs in the three letters are 125 of length 1, 16 of
+length 2, 8 of length 3, 1 of 5+. Where names occur they are already read (Sanfrè, Carego, Geneura, baron des Adrets, Turino and
+Carmagnola by word sign). A single off-sheet sign standing for a whole name would admit every name and cannot be tested by pattern;
+it needs the sign's identity settled first (owner's sign sorter, NEVBIR-OFFSHEET's verdict) and then its contexts read together.
+
+**English summary.** We fitted a pre-registered list of the people, places and offices Birago could have named into every unread
+span of three or more signs in letters 71, 86 and 90; no name fits better than random words of the same lengths, so the
+gaps are not, on this evidence, hidden names spelt out letter by letter.
+
+Not done: (b) beyond the logged ContentSearch hits; fr.3252 f.47r (live NEVBIR-47C claim, 0.66 two-reader agreement). Next (not
+started): once the sorter settles which off-sheet shapes are one sign, test "this sign = one name" by collecting each recurring
+sign's contexts across nos.71/86/87/90 against the gazetteer, ~$1 disk only.
