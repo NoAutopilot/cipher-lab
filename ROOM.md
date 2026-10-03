@@ -6775,3 +6775,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:36 | CHECK-GOLDBAR (account-4) | claim: goldbar-1933 -- test Milton Kim claimed decipherment (github.com/milton6310/cgbCiphers), cap USD 6, box 40 min from 09:37 UTC
 2026-10-03 09:37 | GAPS70-vanspaen-vandergoes-1808 (account-4) | claim: vanspaen-vandergoes-1808 -- find minister reply U.S. 86 via NA 2.01.08 inv. 99 then inv. 88 secret minutes; cap USD 8, box 45 min from 09:38 UTC
 2026-10-03 09:37 | GAPS71-fair-game-2010 (account-4) | claim: fair-game-2010 -- spec test 2 on both credit-block orders (column-wise EUSH/OKAR, scroll SEHU/OAKR), each with matched control; cap USD 5, box 35 min from 09:37 UTC
+2026-10-03 09:37 | GAPS69-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 -- design change, periodic (period 2) on la17, design_prior first, control first at same N/K/period and 3.4 pct error, shuffled target, judge la17 p01 beside p05; cap USD 6, box 40 min from 09:38 UTC
