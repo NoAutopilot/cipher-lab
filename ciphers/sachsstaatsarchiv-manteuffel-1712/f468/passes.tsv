@@ -1,0 +1,22 @@
+# 694/08 f.468 (frame 0580): two blind Opus passes (GAPS154, 3 Oct 2026, crops images/f468_crops via tools/iiif_lines.py, 2x upscaled +45 px margin copies given to the passes) and reconciliation.
+# id	crop	codeA	codeB	code	glossA	glossB	gloss	settled
+g01	f468L_L01	191	191	191	Stenbock	Stenbock	Stenbock	agree
+g02	f468L_L01	187	187	187	Roy de Suede	Roy de Suede	Roy de Suede	agree
+g03	f468L_L02	26	26	26				agree (margin "R." beside the line, not counted as a gloss)
+g04	f468L_L02	39	39	39	Ilg.	Ilg.	Ilg.	agree (digits low/med: y-shaped glyph read 9; 4/9 ambiguity noted by both)
+g05	f468L_L03	44	44	44	Lol.	Lol:	Lol.	agree
+g06	f468L_L03	177	177	177	Czar	Czar	Czar	agree (B: could be 171)
+g07	f468L_L04	257	257	257	le Roy de Prusse	le Roy de Prusse	le Roy de Prusse	agree
+g08	f468L_L04	257	257	257	le Roy de Prusse	le Roy de Prusse	le Roy de Prusse	agree
+g09	f468L_L05	168	168	168	l'Empereur	l'Empereur	l'Empereur	agree
+g10	f468L_L05	298	298	298	la France	la France	la France	agree
+g11	f468L_L06	26	26	26				agree
+g12	f468L_L06	66	66	66	Arni:	Arni:	Arni:	agree (gloss offset right; assigned to 66 by both)
+g13	f468L_L06	3.35.44.12.34.21.7	3.38.44.R.34.21.7	3.35.44.12.34.21.7	Welling	Welling	Welling	split on elements 2 (35/38) and 4 (12/R); reconciler image read: 35, and "12" written joined (R-like); both M
+g14	f468L_L07	191	191	191	Stenbock	Stenbock	Stenbock	agree
+g15	f468L_L07	9	9	9	Ilgen	Ilgen	Ilgen	agree (low: 4/9/y)
+g16	f468L_L07	187	187	187	le Roy de Suede	le Roy de Suede	le Roy de Suede	agree
+g17	f468L_L07	191	191	191	Stenb.	Stenb.	Stenb.	agree
+g18	f468L_L07	198	198	198	Stanis.	Stanis.	Stanis.	agree
+g19	f468L_L07	66	66	66	Arn	Arn	Arn	agree
+g20	f468R_L01	257	257	257	le Roy de Prusse	le Roy de Prusse	le Roy de Prusse	agree

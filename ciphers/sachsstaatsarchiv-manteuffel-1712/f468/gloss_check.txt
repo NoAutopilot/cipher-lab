@@ -1,0 +1,5 @@
+glossed single-code instances: 17; key agrees: 17/17
+distinct glossed codes: 11; agree on all instances: 11/11
+shuffled-key control (10000 draws, seed 154): mean 0.67, p95 3, p99 5, max 8; real >= p99: True
+spelled group g13 (gloss Welling): key spells 'wellpng'; letters matching "welling" by position: 6/7; control mean 0.14, p99 1
+misses: none

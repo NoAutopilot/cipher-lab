@@ -238,18 +238,73 @@ The judge cannot decide here: 29 letters, almost all nomenclator names, no prose
 
 Vision: 4 blind subagent passes (Opus) + 1 reconciler read + 5 layout reads by this worker. Requests: none (all images on disk).
 
+## GAPS154-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): 694/08 f.468 transcribed, decoded, checked against its glosses
+
+Intake gate before work: `sachsstaatsarchiv-manteuffel-1712: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
+
+**Crops.** `python3 tools/iiif_lines.py --image ciphers/sachsstaatsarchiv-manteuffel-1712/images/loc694-08-09/694-08_0580.jpg
+--out ciphers/sachsstaatsarchiv-manteuffel-1712/images/f468_crops --region 870,1180,1270,1660 --prefix f468L --lines-per-crop 3
+--overlap 0 --debug` -> "region 1270x1660, 24 lines, 8 bands x 1 segments; pitch 63"; same with `--region 2110,1180,1250,880
+--prefix f468R` -> "9 lines, 3 bands". The leaf fills only ~1240 px of the 4345 px frame, so the passes were given copies of the
+11 band boxes with 45 px added above and below (the tool's band 1 edge cut the "Stenbock" gloss) and scaled to 2400 px wide
+(scratch, not committed; boxes in images/f468_crops/manifest.json).
+
+**Two blind Opus passes** (one subagent call each, 11 crops per call) + reconciliation -> `f468/passes.tsv`. 20 code groups on
+the leaf (19 single codes + one 7-number spelled group), all on the left page and R01; R02-R03 (the close and a P.S. "ma fille
+est fort malade") carry none. **Agreement: 19/20 groups identical, glosses identical on all 17 glossed groups.** Split: the
+spelled group, element 2 (35/38) and 4 (12/"R"); reconciler image read 35 and 12, both M. The 1/7 (177/171) and 4/9 (39, 9:
+a y-shaped glyph) doubts were raised by the passes and left as read. `ciphertext.tsv`: the five A2-SAX2 eye-read 0580 rows are
+replaced by these 26 tokens (0510 fragments kept).
+
+**Decode** (`python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`: "reading up to date", exit 0).
+f.468: **26/26 tokens covered by Krauske's table; grades H 0, C 18, S 0, M 8, I 0, U 0** (M: 191 x3, the table's own M grade;
+298 two values; 39 and 9 low digit confidence; two split elements of the spelled group). Whole file (with 0510 fragments):
+C 18, M 10, U 17. Reading of the groups: Stenbock, Roi de Suède, R[.], I[lgen], L[ol.], le czar, Le roi de Prusse (x3),
+l'Empereur, la France, R[.], A[rn], W-E-L-L-P-N-G, Stenbock, I[lgen], Roi de Suède, Stenbock, Stanislas, A[rn].
+The leaf uses single-letter codes standing alone as a person's initial (39/9 glossed Ilg./Ilgen, 44 Lol., 66 Arni/Arn, 26 with
+"R." in the margin); Krauske's table notes "Ilgen" beside 9 and 39 and "Angleterre" beside 66.
+
+**Gloss vs key** (`python3 f468/gloss_check.py --check` -> f468/gloss_check.txt; match rule written in its docstring before
+scoring): **17/17 glossed instances agree (11/11 distinct codes)**; shuffled-key control (key values permuted over codes, 10,000
+draws) **mean 0.67, p95 3, p99 5, max 8**. Spelled group (gloss Welling): the key spells w-e-l-l-**p**-n-g, 6/7 letters by
+position (control mean 0.14, p99 1); the miss is 34 = p where the gloss wants i -- 39 = i in the same table, and both passes
+flagged the writer's 4/9 glyph, so a 9 read as 4 is the likely cause (M, not settled). **Caveat on independence:** the glosses'
+hand was not judged. If they are Krauske's own 1893 working notes, this agreement shows his table matches his own annotations,
+not that either is right; if they are a period (1712) decipherer's, it is an independent check. Judging the hand against f.1-5
+of Loc. 694/10 is the cheap way to settle it.
+
+**Judge** (fr18, ad hoc spec with `corpora` = the six tools/data/fr18 files, era-matched for 1712; fold caveat: six files,
+leave-one-file-out false-negative rate 0.18-0.19, tools/data/fr18/README.md): decode (group values joined, N=129)
+**FAIL, score -1.252, null_p99 -1.654, real_p05 -1.012**; shuffled-key decode (seed 1, N=49) **FAIL, -1.656, null_p99 -1.385,
+real_p05 -1.101**. The decode clears the shuffled-letter null and the shuffled-key decode does not, but neither reaches real
+prose: the input is a list of names and initials, not prose (the clear text around the groups is not transcribed), so the
+judge cannot decide here. Not a negative on the key (rule 3). No 'reading ready' flag: the gloss check is the stronger signal and
+it already depends on the hand question above.
+
+**Status word.** Line 1 stays `blocked`. A2-SAX's "stale" flag is right that access is no longer the blocker (images and key
+are online and on disk), but `tools/intake_gate_check.py` refuses `partial` here: "partial (line 1) with no standard-edition
+citation ... within 6 lines -- ... must read `blocked` instead" (exit 1, tried and reverted). It moves to `partial` when a
+check-solved verdict naming the edition read and a Premise check are written.
+
+Vision: 2 blind subagent passes (Opus, one call each) + 2 reconciler crop reads + 2 layout reads by this worker. Requests: none
+(image on disk). Credit: the key is Dr. (Otto) Krauske's 1893 table, Loc. 694/10 (rule 8).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX)
-Read so far: 0 of the 1712-13 reports read; Krauske's key table imaged (7 frames, ff.1-5), untranscribed; 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent); applied only to 24 eye-read tokens (M 6, U 18; gloss check 191 Stenbock 1/1); the letters' own codes on 694/08 f.409 run past the table, so the table does not cover that letter; next: line crops of 694/08 frame 0580 (f.468, codes under 200 with glosses), 2 blind passes + reconcile into ciphertext.tsv, decode_key.py with the glosses as votes, ~$4
+Read so far: 1 leaf of the 1712-13 reports decoded (694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed); Krauske's key table imaged (7 frames, ff.1-5), untranscribed; 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5; spelled 'Welling' 6/7, 34=p vs i); 694/08 f.409 (frame 0510) codes run 213-1056, past the table; open: whose hand wrote the f.468 glosses (Krauske 1893 or period) -- next: compare the gloss hand with Loc. 694/10 ff.1-5 on disk, one reader call, ~$1
 - Loc. 694/08 and /09 ciphered reports, 877 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 17 sampled (A2-SAX2: 2 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; NOTES 24 Sept steps (2)-(3); next: IA/Google Books fts for Haake + read the paper, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
-- [ ] clear-pages: 694/08 frame 0580 carries interlinear glosses above code groups (Stenbock over 191, A2-SAX2) -- a known-answer check for Krauske's table; 191 agrees with key.tsv (GAPS151); the full leaf is not yet transcribed
+- [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); independence of the glosses from Krauske not yet judged
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [ ] print: NASG 1893-98 done, no print found; Haake and the Wackerbarth paper still to read
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 17 sampled (2 cipher, 1 possible, A2-SAX2 3 Oct 2026), 877 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: transcribe the code groups and glosses of 694/08 frame 0580 (f.468) into ciphertext.tsv (line crops, 2 blind passes + reconcile) and decode it with key.tsv, the leaf's glosses as votes, ~$4
+Verdict: keep going: 3 internal gaps; cheapest next: judge the f.468 gloss hand against Krauske's own hand on Loc. 694/10 ff.1-5 (images on disk, one reader call, ~$1), which decides whether the 17/17 gloss agreement is an independent check; then the check-solved + Premise check that would let line 1 read partial (Haake, the Wackerbarth paper), ~$3
+
+## While waiting (GAPS154, 3 Oct 2026)
+
+- Judge the f.468 interlinear gloss hand against Krauske's own hand on Loc. 694/10 ff.1-5 (images/0003-0007.jpg on disk): one reader call, ~$1, depends on nobody; it decides whether the 17/17 gloss agreement is an independent check of the key.
