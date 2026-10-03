@@ -78,18 +78,18 @@ refetched once), googleapis.com 6, archive.org 1, dspace.ut.ee 2.
 Read so far: 0 of 3 leaves (no transcription). Leaves located NV05B 3 Oct 2026 (f.228 = canvas 235, f.233 = canvas 240, fr.15576 f.2 = canvas 8); key no.54 syllabary on disk (key_no54.tsv).
 - edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
 - key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; NV05B transcribed only the syllabary and header signs (key_no54.tsv, H 94 / M 16 / I 5) within its cap; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
-- known-answer control (fr.3641 letters with interlined decipherment in this cipher) - blocker: not-attempted; syllabary now on disk; next: locate one fr.3641 letter (phelippes.htm list), crop + 2 passes + reconcile of its cipher runs, pre-register a token-agreement gate vs the period interline (normalised to one convention), decode with key_no54.tsv, ~$6-8
+- target decode (fr.15576 f.2 first, ~350 groups; then fr.15575 f.228, f.233 cipher runs) - blocker: not-attempted; next: iiif_lines.py crops of canvas 8 (btv1b9063777v), 2 blind passes + reconcile, decode_key with key_no54 syllabary, ~$6; nomenclator groups stay unread until the no.54 nomenclator is transcribed
 
 ## Escalation (NV05-CS, 3 Oct 2026)
 
 - [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
 - [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the edition entry names the liasse
-- [ ] known-keys: fr.3995 no.54 located (canvas f188, f.96v-97r), syllabary transcribed; nomenclator and no.31 (canvas f126) still to transcribe
+- [ ] known-keys: fr.3995 no.54 located (canvas f188, f.96v-97r), syllabary transcribed and control-checked on fr.3641 f.111r (NV05C, gate PASS); nomenclator and no.31 (canvas f126) still to transcribe
 - [ ] print: Lefèvre IV and van Durme entries to read in full
 - [n/a] key-rebuild: the period key sheet exists, rebuild not needed yet
 - [x] image-check: native corner crops of the five candidate openings read (NV05B): canvases 235, 240, 8 carry the leaves
 - [n/a] retry: nothing has been attempted yet to retry
-Verdict: keep going: 2 internal gaps (nomenclator/no.31, known-answer control); cheapest next: fr.3641 known-answer control on the syllabary, ~$6-8
+Verdict: keep going: 2 internal gaps; cheapest next: decode fr.15576 f.2 (~350 groups) with the key no.54 syllabary, ~$6 (crops + 2 blind passes + reconcile); then the no.54 nomenclator (~$6) for the code-word groups
 
 ## While waiting
 
@@ -175,3 +175,59 @@ of fr.15575/15576 + 1 native region of f188).
 Next (Verdict): known-answer control first (rule 3): one fr.3641 letter in this cipher with a period interlined
 decipherment, crops + 2 passes + reconcile of its cipher runs, a pre-registered token-agreement gate (normalised
 convention), decode with key_no54.tsv -- ~$6-8; only if it passes, transcribe fr.15576 f.2 (~350 groups, ~$6) and decode.
+
+## Known-answer control (NV05C, account-2 worker, LANE-A2PUSH3, 3 Oct 2026 14:59-15:2x UTC)
+
+Rule 3 control before any target decode: key no.54 (key_no54.tsv, NV05B, unedited) applied to a letter in the same
+cipher that carries a period interlined decipherment. Folder: `control_fr3641/`.
+
+**Letter.** BnF fr.3641 f.111r (Gallica btv1b52508089f canvas f239, manifest label '111r', `tools/gallica_folio.py
+btv1b52508089f --folio 111`), don Diego de Ibarra to Philip II, Paris, 1 Dec 1592 (Tomokiyo phelippes.htm no.51, "In the
+1592 syllabic numerical cipher. Interlined deciphering."; a cleaned decipherment of the same letter is league.htm no.80).
+Fully interlined on the recto. Scope: 12 line pairs of the body, fixed before reading.
+
+**Pre-registration** (`control_fr3641/PREREG.md`, commit 3d334551, pushed before any pass was read): statistic S = share
+of 2-digit tokens with a key no.54 syllable code whose every letter is in the per-line LCS alignment with the clerk's
+gloss (both normalised: lower case, accents off, letters only, j->i, v->u, y->i; gloss abbreviations expanded by a fixed
+table only); control = the same S with values shuffled among the 95 coded syllable rows, 1000 draws, seed 1 (a per-code
+value permutation changes every scored token's decode, so the control can differ); gate = S > control p99 AND S >= 0.60.
+Disclosed in the prereg: the worker saw line L01 once while checking a crop before committing.
+
+**Crops** (TRANSCRIPTION.md; command run before any vision call):
+
+    $ python3 tools/iiif_lines.py --ark btv1b52508089f --canvas 239 --region 400,1800,3500,1900 \
+        --out ciphers/fr15575-syllabic-1592-95/control_fr3641/images --prefix f111r \
+        --centres 130,300,530,660,830,950,1100,1220,1345,1510,1650,1786 --lines-per-crop 1 --max-width 1800 \
+        --overlap 150 --top-margin 90 --bottom-margin 60 --debug
+    ... region 3500x1900, 12 lines, 12 bands x 3 segments ... wrote 36 crops
+
+**Reads.** Two blind Sonnet passes of the cipher line (passA.tsv, passB.tsv), one Sonnet read of the gloss
+(passG_gloss_raw.tsv -> gloss.tsv), each one call on the 36 crops. The page lines slope, so 12 crops cover 15 physical
+cipher lines and three are skipped (not read). Pass A and the gloss read took the same physical line for all 12 crops;
+pass B took the neighbouring line for L10 only, so L10 is pass A alone (conf S, 35 tokens). Over L01-L09, L11-L12:
+err_2reader = 53 / 421 aligned tokens = 0.126 (agreement between two runs of the same model, not accuracy), almost all on
+non-code signs (hook/cross/tail conventions, letter groups); on 2-digit tokens four spots differed and were settled by the
+worker from the crop image only, without the gloss: L01 '93.' (not 97), L04 hook + '83 65 :' (pass B), L05 '91' (pass A),
+L08 '23' (both, B unsure). Signs read: 419 tokens (266 scored 2-digit codes). Cost per 100 signs: the orchestrator's
+get_session figure / 4.19.
+
+**Decode** (`python3 tools/decode_key.py ciphers/fr15575-syllabic-1592-95/control_fr3641`, decode.json, key_syllabary.tsv =
+the 95 coded syllable rows of key_no54.tsv unedited; `--check` exit 0): tokens 419: H 223, C 0, S 0, M 41, I 0, U 155
+(U = letter signs and code-word groups, which this key file does not cover). Cryptanalytic grades are not used: the
+values come from the period key sheet.
+
+**Score** (`python3 control_fr3641/score_control.py`, score.tsv; `--check` regenerates):
+
+| statistic | real key | shuffled control (1000, seed 1) |
+|---|---|---|
+| S (scored codes matching the gloss) | **0.891** (237 / 266) | mean 0.197, p99 0.263, max 0.316; 0 / 1000 >= real |
+| letter agreement (secondary, not gated) | 0.545 | -- |
+
+**Gate: PASS** (0.891 > 0.263 and >= 0.60). Per line 8/8 to 28/30; lowest L07 19/25. Key rows: the h column (M on the key
+sheet for the S-like head) matches the gloss for 40 ha 6/6, 41 he 1/1, 43 ho 1/1 -- support for reading h; misses are
+single tokens except 97 xi 0/2, 58 mo 0/2, 70 quu 0/2 (M), which the target decode should treat as M until seen again.
+Letter agreement is low because the code-word groups (pal, xel, vom, gim ...) and letter signs are not keyed: the
+nomenclator is the remaining half of the key, not a fault of the syllabary.
+
+Not done here: no target leaf was read or decoded. Requests: gallica.bnf.fr 3 (2 overviews, 1 native region).
+Next (Verdict above): fr.15576 f.2 decode with this syllabary, ~$6.

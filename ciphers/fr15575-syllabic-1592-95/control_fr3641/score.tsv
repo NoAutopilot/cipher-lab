@@ -1,0 +1,24 @@
+metric	value
+S_real	0.8910
+matched	237
+scored_tokens	266
+letter_agreement_real	0.5451
+control_draws	1000
+control_seed	1
+control_mean	0.1966
+control_p99	0.2632
+control_max	0.3158
+control_ge_real	0
+gate	PASS
+line_L01	23/27 tokens; 50/99 gloss letters
+line_L02	21/22 tokens; 45/101 gloss letters
+line_L03	8/8 tokens; 16/26 gloss letters
+line_L04	22/24 tokens; 47/92 gloss letters
+line_L05	16/19 tokens; 36/96 gloss letters
+line_L06	18/19 tokens; 39/70 gloss letters
+line_L07	19/25 tokens; 44/64 gloss letters
+line_L08	21/23 tokens; 46/88 gloss letters
+line_L09	24/27 tokens; 52/76 gloss letters
+line_L10	21/23 tokens; 43/75 gloss letters
+line_L11	28/30 tokens; 60/80 gloss letters
+line_L12	16/19 tokens; 36/76 gloss letters

@@ -1,0 +1,3 @@
+{"note": "NV05C: key no.54 syllabary (key_syllabary.tsv = the 95 coded syllable rows of ../key_no54.tsv, unedited) applied to fr.3641 f.111r L01-L12. Non-code signs (letter signs, nomenclator groups) are unkeyed.",
+ "jobs": [{"ciphertext": "ciphertext.tsv", "key": "key_syllabary.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+   "format": "tsv", "style": "spaced", "uncertain_conf": ["M", "S"]}]}

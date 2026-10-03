@@ -1,0 +1,91 @@
+code	value	grade	note
+10	ba	H	
+11	be	H	
+12	bi	H	
+13	bo	H	
+14	bu	H	
+19	ca	H	
+18	ce	H	
+17	ci	H	
+16	co	H	
+15	cu	H	
+24	da	H	
+23	de	H	
+22	di	H	
+21	do	H	
+20	du	H	
+25	fa	H	
+26	fe	H	
+27	fi	H	
+28	fo	H	8 written open, like 'o'
+29	fu	H	
+34	ga	H	
+33	ge	H	
+32	gi	H	
+31	go	H	
+30	gu	H	
+40	ha	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+41	he	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+42	hi	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+43	ho	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+44	hu	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+50	ia	H	
+51	ie	H	
+52	iy	H	syllable written 'iy'
+53	io	H	
+54	iu	H	
+45	la	H	
+46	le	H	
+47	li	H	
+48	lo	M	8 overwritten
+49	lu	H	
+55	ma	H	
+56	me	H	
+57	mi	H	
+58	mo	H	
+59	mu	H	
+64	na	H	
+63	ne	H	
+62	ni	H	
+61	no	H	
+60	nu	H	
+65	pa	H	
+66	pe	H	
+67	pi	H	
+68	po	H	
+69	pu	H	
+74	qua	H	
+73	que	H	
+72	qui	H	
+71	quo	M	code blotted/overwritten
+70	quu	M	code blotted/overwritten; cell written 'quu'
+75	ra	H	
+76	re	H	
+77	ri	H	
+78	ro	H	8 written open, like 'o' (70 is quu)
+79	ru	H	
+90	sa	H	
+91	se	H	
+92	si	H	
+93	so	H	
+94	su	H	
+80	ta	H	
+81	te	H	
+82	ti	H	
+83	to	H	
+84	tu	H	
+89	ua	H	
+88	ue	H	syllable written like 'uei'
+87	ui	H	
+86	uo	H	
+85	uu	H	
+95	xa	H	
+96	xe	H	
+97	xi	H	
+98	xo	H	
+99	xu	H	
+39	ya	M	overwritten (3o->39?)
+38	ye	M	overwritten
+37	yi	M	overwritten (34->37?)
+36	yo	M	overwritten
+35	yu	H	
