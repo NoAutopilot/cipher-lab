@@ -1,4 +1,5 @@
 open
+Thurloe, *State Papers* (Birch 1742) vol. 6, IA `collectionofstat06thur` _djvu.txt, whole volume grepped by this worker 3 Oct 2026 (GF4-BATCH7) for Swyft/Swyfte/Swift, the dates 23-25 Feb and 5-7 March 1656/7 and Paris datelines: Lockhart's printed Paris/Dieppe/St Denis letters fall at pp. 55-56, 65-66, 85-86, 103-104 and 109-110 and none is dated 24 Feb o.s./6 March n.s.; Swyft appears only incidentally (Lockhart asks places for 'two brothers of mr. Swyft's', pp. 159-161; 'Mr. Marchamont Needham to mr. Swyft, secretary to Lockhart', p. 735) -- SP 78/113/57 not printed there; vol. 1 (IA `collectionofstat01thur`) grepped for 1642-44: its pp. 17-50 section for those years is Scottish/parliamentary, no France letter of 20/30 Sept 1642 or 1644, so SP 78/111/93 and /135 not printed there.
 
 # France despatches, sibling folio catalogued "deciphered" in the same piece-run — TNA SP 78/111, SP 78/113
 
@@ -130,3 +131,39 @@ digitised: false on Discovery — no image route exists without a copy order. RE
 no email sent. Also unresolved: whether the Cobham/Bourbourg negotiations overlap flagged in the original
 QUEUE N8 row (BL Harley 287) is real — not reconciled this sweep either, since it depended on the same
 wrong 1580s date.
+
+## Web and blog check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `"Swyfte" Lockhart 1657 cipher despatch Paris` -- Wikipedia (Lockhart of Lee), the
+Cryptiana blog front page, robertpitt/le-tellier-1657 (a different 1657 letter), nothing on this item; (2) `"SP 78/111" OR
+"SP 78/113" cipher` -- no relevant hit (NIST/number pages); (3) `1642 1644 English cipher letter France State Papers Foreign
+deciphered` -- Atlas Obscura on Wallis, Bourdeau's Forster 1644 page (a different letter, Val-d'Oise), the TNA Perwich blog
+(SP 78/129, 1670), none naming SP 78/111 or /113; (4) `France despatches 1642 1657 cipher "State Papers" France sibling
+deciphered TNA` -- TNA research guides, the TNA "undeciphered letter from Louis XIV's France" blog (a different item), the
+*Seventeenth Century* "Wilmot's blots" article (June 1644 royalist letters, already noted above as a different catalogue
+context), github.com/aryasn2026/cyphersolver (front page, no SP 78 item in the snippet). Blog searches with the domain
+restricted to scienceblogs.de (**Cipherbrain**, klausis-krypto-kolumne), cryptiana.blogspot.com / cryptiana.web.fc2.com
+(**Cryptiana blog** and Tomokiyo's pages) and ciphermysteries.com (**Cipher Mysteries**): `Lockhart Thurloe 1657 cipher` --
+Cipherbrain's Ferdinand III posts, Cipher Mysteries' British Library cipher manuscript post and front pages, the Cryptiana
+blog front page; none names Lockhart, Swyfte or SP 78. No comment thread found that discusses these items, so none to read.
+Solver repositories re-cloned shallow 3 Oct 2026 and grepped (`SP ?78/11[13]`, `Swyft|Swift`): Bourdeau's
+`research/oldest/scan_2026-09-23/hard_targets.md` line 125 lists this very item -- "SP 78/111/93 (f. 212), a French letter
+'entirely in cipher', 20/30 Sep 1642" -- with "Prior art: TNA catalogue says undeciphered; nothing in print found"
+(a target note, no reading); Aymeloglu: no hit.
+
+## Premise check (GF4-BATCH7 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **found, not this item** -- SP 78/113/123 (1657 May 18/28, f.189, "mostly in
+cipher - deciphered") is the only one; it is a different letter three months after /57, and its decipherment's nature
+cannot be seen (Discovery `digitised: false`). No gloss, clear copy or "attached" decipherment is mentioned for /93, /135
+or /57. (b) Other solvers' working files: **not found** -- Bourdeau's hard_targets.md lists /93 as undeciphered with no
+working files, no key run; no Aymeloglu file. (c) Physical neighbours: **unreachable** -- all four items are `digitised:
+false` in TNA Discovery (record details fetched 23 Sept 2026, ids C7327886, C7327928, C7328029), so the leaves either side
+and any laid-in slip cannot be viewed; the catalogue term-sweep of both pieces found no decipher item adjacent to
+f.212, f.300 or f.106. (d) Recipient side: **not found** -- the recipient is the English Secretary of State (Thurloe in
+1657); his own printed papers (Thurloe vol. 6, grepped whole as on line 2) do not print /57; for 1642-44 the Secretary's
+side (Nicholas) is not printed for these dates in Thurloe vol. 1, and *The Nicholas Papers* vol. 1 (Camden n.s. 40, IA `nicholaspapersco240nich` _djvu.txt, grepped whole 3 Oct 2026) carries only a handful of 1642-44 datelines and no letter of 20/30 Sept 1642 or from France in 1644. Status unchanged: open; the copy order (REQUEST.md,
+consolidated TNA batch) remains the route to the ciphertext.
+
+Requests this pass: archive.org 4 (advancedsearch 1, djvu.txt 2, plus the shared Clarendon/Nicholas/CSPD fetches logged in
+the sibling targets), github.com 2 shallow clones (shared across three targets), WebSearch 5 for this target.
