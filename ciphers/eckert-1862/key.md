@@ -85,11 +85,22 @@ token is graded M (rule 4). `python3 decode.py --at "18 Jun" WORD...` prints the
 at the end of the table marked "dated split" are the later values of a Feb word; "true conflict" rows overlap a rival
 value in date and stay M.
 
+Key source (GAPS181, 3 Oct 2026, rule 8 and rule 10's key field): the Decoding the Civil War blog (the Huntington's
+DCW team) published eight of these arbitraries before us -- Andes = McClellan and Alden = Halleck (30 Mar 2017), Alvord
+= Buell (18 May 2017), and from Lincoln's 21 Apr 1862 telegram ("Reverse Engineering Lost Codebooks", 21 Apr 2017,
+https://decodingthecivilwar.wordpress.com/2017/04/21/reverse-engineering-lost-codebooks/) Andes, Palate = bridge,
+Rampant = enemy, Anthon = McDowell, Label [the ledger's Sabel] = Rappahannock River, Berlin = Lincoln. The six of them
+that have rows below carry "key source: published" in their evidence cell; Sabel and Berlin have no row in this table.
+Every other row's key source is ours (print alignment, grade C) unless its evidence says otherwise.
+Line scope (GAPS181, from VERIFY-ECK): a row whose evidence opens "line: <name> --" applies only to entries addressed on
+that line (decode.py LINE_MARKS), and the word's other rows do not apply there; Andes on the Fort Monroe line is the
+commander there, not McClellan.
+
 | code word | meaning | grade | witness dates | evidence |
 |---|---|---|---|---|
-| Alden | Halleck | C | 05 Feb-10 Mar 1862 | OR 7 p.584, 591, 624, 628; ledger addressee "St Louis" |
-| Alvord | Buell | C | 05 Feb-02 Mar 1862 | OR 7 p.593, 609, 626, 646 |
-| Andes | McClellan | C | 01 Feb-04 Jul 1862 | ledger p.[9] deletion; OR 7 passim |
+| Alden | Halleck | C | 05 Feb-10 Mar 1862 | OR 7 p.584, 591, 624, 628; ledger addressee "St Louis"; key source: published, Decoding the Civil War blog, 30 Mar 2017 (DCW team, Huntington; credited per rule 8, GAPS181) |
+| Alvord | Buell | C | 05 Feb-02 Mar 1862 | OR 7 p.593, 609, 626, 646; key source: published, Decoding the Civil War blog, 18 May 2017 (DCW team, Huntington; credited per rule 8, GAPS181) |
+| Andes | McClellan | C | 01 Feb-04 Jul 1862 | ledger p.[9] deletion; OR 7 passim; key source: published, Decoding the Civil War blog, 30 Mar 2017, and 'Reverse Engineering Lost Codebooks', 21 Apr 2017 (DCW team, Huntington; credited per rule 8, GAPS181) |
 | Anthon | Rosecrans | C | 06 Feb-15 Feb 1862 | ledger p.[10], p.[12] (4965, 4967; GAPS161): OR 51 pt1 [6 Feb] prints the page [12] entry to "General W. S. Rosecrans, Wheeling, Va." and the page [10] "Have teleghd Anthon & Arno" as "Have telegraphed Rosecrans and Banks"; also 4961, 4969, 4982 (GAPS153). The plain telegram to Banks on page [11] is a parallel message (different wording), not a twin, so the earlier Anthon = Banks inference is withdrawn |
 | Arno | Banks | C | 06 Feb-16 Jun 1862 | ledger p.[10] (4965; GAPS161): "Have teleghd Anthon & Arno of your movement" printed OR 51 pt1 [6 Feb] "Have telegraphed Rosecrans and Banks of your movements"; the plain telegram to Banks at Frederick the same day stands on page [11]. Replaces the undated M inference Arno = Rosecrans (received ledger mssEC 01 p.14, Wheeling telegram signed "Arthur", a different word) |
 | Bagdad | Cullum | I | 20 Feb 1862 | ledger p.[49] coded and p.[51] plain versions of the same order |
@@ -150,7 +161,7 @@ value in date and stay M.
 | Juno | Gordonsville | C | 18 Jun-21 Jul 1862 | OR 11 pt3 p.232, 234, 327 (ledger 5085, 5086, 5111, June-July 1862; GAPS118) |
 | panther | advance | C | 29 May-20 Jul 1862 | OR 11 pt3 p.205, 221 (ledger 5070, 5076, June 1862; GAPS118); Feb entries use whig |
 | princess | artillery | C | 06 Jun-21 Jul 1862 | OR 11 pt3 p.217, 260 (ledger 5073-5074, 5090, June 1862; GAPS118); Feb entries use whack (I) |
-| rampant | (the) enemy | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, 205, 269, 278, 325 (ledger 5058-5110, Apr-July 1862; GAPS118); Feb entries use whistle (I) |
+| rampant | (the) enemy | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, 205, 269, 278, 325 (ledger 5058-5110, Apr-July 1862; GAPS118); Feb entries use whistle (I); key source: published, Decoding the Civil War blog, 'Reverse Engineering Lost Codebooks', 21 Apr 2017 (DCW team, Huntington; credited per rule 8, GAPS181) |
 | rampants | (the) enemy | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.199, 202, 205, 269 (ledger 5064-5092, May-June 1862; GAPS118) |
 | robin | division | C | 08 Jun-17 Jul 1862 | OR 11 pt3 p.260, 326 (ledger 5090, 5110, June-July 1862; GAPS118) |
 | wedding | transportation | C | 06 Apr-26 Jun 1862 | OR 11 pt3 p.217, 260 (ledger 5073, 5090, June 1862; GAPS118) |
@@ -171,14 +182,14 @@ value in date and stay M.
 | Dorothy | (time word, morning) | M | 17 Feb 1862 | ledger: 6, 16, 17 Feb, no hour given |
 | Hannah | (time word) | M | 21 Feb 1862 | ledger: 21 Feb, OR gives 9.30 PM for the Buell telegram |
 | Martha | (time word, about 10 PM) | M | 15 Feb 1862 | ledger: 15 Feb between the 8 PM and 11 PM entries |
-| Anthon | McDowell | C | 06 Apr-17 Jul 1862 | OR 11 pt3 p.117, 202, 326 (ledger 5058, 5069, 5110; GAPS118); the Feb value is Rosecrans (OR 51 pt1, GAPS161); dated split GAPS127 |
+| Anthon | McDowell | C | 06 Apr-17 Jul 1862 | OR 11 pt3 p.117, 202, 326 (ledger 5058, 5069, 5110; GAPS118); the Feb value is Rosecrans (OR 51 pt1, GAPS161); dated split GAPS127; key source: published, Decoding the Civil War blog, 'Reverse Engineering Lost Codebooks', 21 Apr 2017 (DCW team, Huntington; credited per rule 8, GAPS181) |
 | Alden | Banks | C | 25 May-20 Jul 1862 | OR 11 pt3 p.326, OR 12 pt3 p.486-487 (ledger 5110, 5112; GAPS118, GAPS122); the Feb value is Halleck; dated split GAPS127 |
 | Arno | Banks | M | 09 Jun-16 Jun 1862 | OR 12 pt1 p.659 (ledger 5079-5080, one telegram, Lincoln to Fremont 12-13 June 1862; GAPS122); dated split GAPS127 |
 | Arno | Halleck | C | 03 Jul-20 Jul 1862 | OR 11 pt3 p.291, 294, OR 12 pt3 p.487 (ledger 5096, 5099, 5112; GAPS118, GAPS122); dated split GAPS127 |
 | Lather | James River | C | 26 Jun-21 Jul 1862 | OR 11 pt3 p.269, 270, 326, OR 12 pt3 p.476, 491 (ledger 5091, 5093, 5109, 5110, 5116; GAPS118, GAPS122); the Feb value is Michigan; dated split GAPS127 |
 | Camden | Banks | C | 02 May-04 Jul 1862 | OR 12 pt3 p.125, 453 (ledger 5060, 5097; GAPS122); the Feb value is Thomas; dated split GAPS127 |
 | Virtue | artillery | M | 04 Jul-11 Jul 1862 | OR 12 pt3 p.453-454 (ledger 5099-5100, one telegram; GAPS122); the Feb value is Grafton (GAPS161); dated split GAPS127 |
-| Palate | bridges | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, OR 12 pt3 p.491 (ledger 5058, 5116-5117, two telegrams; GAPS118, GAPS122); the Feb value is Cairo; dated split GAPS127 |
+| Palate | bridges | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, OR 12 pt3 p.491 (ledger 5058, 5116-5117, two telegrams; GAPS118, GAPS122); the Feb value is Cairo; dated split GAPS127; key source: published, Decoding the Civil War blog, 'Reverse Engineering Lost Codebooks', 21 Apr 2017 (as 'bridge') (DCW team, Huntington; credited per rule 8, GAPS181) |
 | wedding | battle | M | 09 Jun-16 Jun 1862 | OR 12 pt1 p.34, 659 (ledger 5079, one telegram, Lincoln to Fremont 12-13 June 1862; GAPS122); overlaps transportation (McClellan's line, same month): a true conflict, read M |
 | Vulcan | headquarters | M | 27 Mar 1862 | OR 12 pt3 p.23 (ledger 5057, one telegram, 27 Mar 1862; GAPS122 held); dated split GAPS127 |
 | Vulcan | railroad | M | 21 Jul 1862 | OR 12 pt3 p.490-491 (ledger 5116-5117, one telegram; GAPS122 held); dated split GAPS127 |
@@ -189,6 +200,8 @@ value in date and stay M.
 | tarquin | movements | C | 25 May-26 Jun 1862 | OR 11 pt1 p.32, OR 11 pt3 p.260 (ledger 5063, 5090, two telegrams, 25 May and 26 Jun 1862; plural tarquins 5062; GAPS147 pooled held-out) |
 | Pastor | battle | C | 25 May-28 Jun 1862 | OR 11 pt1 p.31, OR 11 pt3 p.269 (ledger 5061, 5092, two telegrams, 25 May and 28 Jun 1862; GAPS147 pooled held-out); the Feb value is St Louis; dated split GAPS147 |
 | damon | batteries | C | 13 Feb-10 Mar 1862 | OR 51 pt1 (ledger 4985, 15 Feb, Marcy to Hooker, "upon all the batteries") and OR 5 p.524 (ledger 5044, 9 Mar), two telegrams, GAPS153 pooled held-out |
+| Andes | commander at Fort Monroe (Wool, inferred) | I | 10 Feb-27 Mar 1862 | line: Fort Monroe -- ledger 5051, 4978, 5054 (5051.1 "For Andes commanding Fort Monroe", signed G B McClellan, so Andes is not McClellan on this line; its coded twin 5051.2 "For Andes Dawn"; 4978.2, 12 Feb, "For Andes Dawn"; 5054, 22 Mar, "Andes Dawn I am directed by Gen McClellan to inform you"; VERIFY-ECK AUDIT.md C, scoped by GAPS181); the commander's name (Wool, Feb-Mar 1862) is an inference; decode.py reads this row only for an entry addressed addressed "Andes Dawn" or "Andes [commanding] Fort Monroe"; inside its witness range only, else M |
+| Dawn | Fort Monroe | C | 15 Mar-27 Mar 1862 | ledger 5051 (5051.1 "leave tomorrow evening for Fort Monroe" and its coded twin 5051.2 "leave tomorrow evening for Dawn", same time, sender and text; GAPS181); also 4978.2 "For Andes Dawn" (12 Feb) |
 
 Not code: "finis", "etc", "signed", and the chatty tails ("whats news", "cold day", "Im for the union",
 "hurry") are the operator's check or filler words; decode.py drops them from the reading.

@@ -68,7 +68,8 @@ def load_key(path=HERE / "key.md"):
             if len(cells) < 5 or set(cells[0]) <= {"-"}:
                 continue
             word, meaning, grade, dates = cells[0], cells[1], cells[2], cells[3]
-            table.setdefault(word.lower(), []).append((meaning, grade, parse_range(dates)))
+            scope = re.match(r"line: ([A-Za-z ]+?) --", cells[-1])
+            table.setdefault(word.lower(), []).append((meaning, grade, parse_range(dates), scope.group(1) if scope else None))
     if not table:
         sys.exit("no vocabulary table found in key.md")
     return table
@@ -102,6 +103,31 @@ def pick(rows, day):
         return rows[0][0], "M"
     near = min(dated, key=lambda r: min(abs((r[2][0] - day).days), abs((r[2][1] - day).days)))
     return near[0], "M"
+
+
+# Line scope (GAPS181, 3 Oct 2026, from VERIFY-ECK's audit): a row whose evidence opens "line: <name> --" applies only
+# to entries addressed on that line, and the word's unscoped rows do not apply there. The line is read from the
+# entry's own address. Fort Monroe: "For Andes commanding Fort Monroe" (5051.1, signed by McClellan) and its coded twin
+# "For Andes Dawn" (5051.2); 4978.2 "For Andes Dawn"; 5054 "Andes Dawn I am directed by Gen McClellan to inform you".
+LINE_MARKS = {"Fort Monroe": re.compile(r"\bAndes\s+(?:commanding\s+)?(?:Fort\s+Monroe|Dawn)\b")}
+
+
+def entry_line(text):
+    """Return the line name an entry's address puts it on, or None."""
+    for name, rx in LINE_MARKS.items():
+        if rx.search(text):
+            return name
+    return None
+
+
+def scoped(rows, line):
+    """Rows that apply on `line`: the rows scoped to it if any, else the unscoped rows; a word with only rows scoped
+    to other lines keeps them, graded M (rule 4: a value outside its supporting line)."""
+    hit = [r for r in rows if r[3] is not None and r[3] == line]
+    if hit:
+        return hit, False
+    free = [r for r in rows if r[3] is None]
+    return (free, False) if free else (rows, True)
 
 
 def load_ciphertext(path=HERE / "ciphertext.txt"):
@@ -157,6 +183,7 @@ def decode_entry(text, key, day=None):
     meaning mentions "time word". Everything before it is rendered, code words in brackets.
     """
     words = text.split(" ")
+    line = entry_line(text)
     out = []
     counts = {"C": 0, "I": 0, "M": 0}
     tail = []
@@ -169,7 +196,9 @@ def decode_entry(text, key, day=None):
         if row is None:
             out.append(w)
             continue
+        row, off_line = scoped(row, line)
         meaning, grade = pick(row, day)
+        grade = "M" if off_line else grade
         counts[grade[0]] = counts.get(grade[0], 0) + 1
         if "time word" in meaning:
             hour = meaning.split("(")[0].strip()
@@ -203,7 +232,7 @@ def main(argv):
         day = parse_day(argv[i + 1])
         for w in argv[i + 2:]:
             rows = key.get(w.lower())
-            print(f"{w}\t{day}\t" + ("not in key.md" if not rows else "\t".join(pick(rows, day))))
+            print(f"{w}\t{day}\t" + ("not in key.md" if not rows else "\t".join(pick(scoped(rows, None)[0], day))))
         return 0
     blocks = load_ciphertext()
     derived = derive(key, blocks)

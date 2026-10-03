@@ -105,7 +105,7 @@ def key_rows(path=TARGET / "key.md"):
 def witnesses(word, meaning, evidence, pdates, or7, entries, pairs):
     w = word.lower()
     found = []  # (earliest, latest, label)
-    alt = "dated split" in evidence or "true conflict" in evidence
+    alt = "dated split" in evidence or "true conflict" in evidence or evidence.startswith("line: ")
     for header, lines in ([] if alt else entries):
         text = " ".join(lines).lower()
         text = re.sub(r"<del>.*?</del>", " ", text)

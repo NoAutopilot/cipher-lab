@@ -230,6 +230,15 @@ C, and the held-out test cannot catch this: every pooled telegram is on the west
 **Lesson:** a dated key also needs a line or recipient scope before its C grade transfers to a telegram on a line no
 witness covers.
 
+**Propagated after this audit (GAPS181, 3 Oct 2026, rule 10).** key.md now scopes Andes by line: on an entry
+addressed "Andes Dawn" or "Andes [commanding] Fort Monroe" it reads the commander at Fort Monroe (grade I; Wool is an
+inference), and Dawn = Fort Monroe (C, from the 5051.1/5051.2 twin). Regenerated: 5051.1 and 5051.2 read [commander at
+Fort Monroe]; 4978.2 reads the same with Dawn graded M (12 Feb is outside Dawn's witness range) and leaves
+candidates.tsv; 5054.3 (22 Mar, in OR 51 pt1, one of the 19 print-matched) had the same misreading and now reads
+[commander at Fort Monroe] [Fort Monroe]. Classes unchanged: the three in the table above stay without a class; 5054.3
+stays N1 provisional. Residue page 4979 was added (two entries, 12-13 Feb; not print-checked, no class). The SO-ECK-4992
+row is unaffected (4992.3 is McClellan to Buell, not on the Fort Monroe line; its reading is unchanged).
+
 ## D. Prior art on the key (correction to section 1 of this file)
 
 Section 1 above credits the Decoding the Civil War blog with three arbitraries. It printed more. "Reverse Engineering

@@ -6,9 +6,9 @@ image; code words in [brackets] read by key.md's dated rule, grade per pages.tsv
 The Huntington Library, San Marino, California. Telegrams in these pages were not found in OR ser. I vols. 7, 9-12 by
 print/or_match.py (GAPS113); that is a search result, not a novelty verdict (rule 10).
 
-Pages 57, entries 122; key.md tokens C 144, I 31, M 83; oov 856.
+Pages 58, entries 124; key.md tokens C 146, I 38, M 86; oov 863.
 
-Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 vs real_p05 -0.831, null_p99 -2.141 -> FAIL (N 35573); shuffled_key_full score -1.03 vs real_p05 -0.831, null_p99 -2.139 -> FAIL (N 33930); real_windows score -1.128 vs real_p05 -0.844, null_p99 -2.127 -> FAIL (N 6524); shuffled_key_windows score -1.095 vs real_p05 -0.84, null_p99 -2.115 -> FAIL (N 5835)
+Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 vs real_p05 -0.83, null_p99 -2.14 -> FAIL (N 36206); shuffled_key_full score -1.031 vs real_p05 -0.83, null_p99 -2.138 -> FAIL (N 34279); real_windows score -1.129 vs real_p05 -0.84, null_p99 -2.121 -> FAIL (N 6847); shuffled_key_windows score -1.101 vs real_p05 -0.842, null_p99 -2.115 -> FAIL (N 5879)
 
 ## 4960 Page_
 
@@ -72,7 +72,13 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *11 Feb*  Feb 11th 62 . 2 PM [Buell] Thirty five hundred Harpers Ferry Rifles caliber fifty eight with sword bayonet in first rate order are this day sent to you the regulars at Indianapolis and Captain Macfeely are ordered to you signed A V Colburn A A G  {time Sarah: 2 PM}
 
-*12 Feb*  Sent Feby 12th 1862 For [McClellan] Dawn General Jin will please detail a swift light draught Steamer for the Express purpose of carrying any information that may reach Davis concerning military operations across to Darby to be Telegraphed thence direct to the Secty of War at Washington communication in three hours will thus be established between Jin and the Department Jin will send a Telegram across speedily as possible to signify that this order has been executed Signed E M Stanton Secty of War
+*12 Feb*  Sent Feby 12th 1862 For [commander at Fort Monroe (Wool, inferred)] [Fort Monroe] General Jin will please detail a swift light draught Steamer for the Express purpose of carrying any information that may reach Davis concerning military operations across to Darby to be Telegraphed thence direct to the Secty of War at Washington communication in three hours will thus be established between Jin and the Department Jin will send a Telegram across speedily as possible to signify that this order has been executed Signed E M Stanton Secty of War
+
+## 4979 Page_
+
+*12 Feb*  6 PM Feb 12 ' 62 [Halleck] Retain the [Ohio] battery also the other troops for [Kansas] if absolutely necessary I would rather not hold back the [Kansas] [infantry] if you can you can help it [McClellan]  {time Nancy: 6 PM}
+
+*13 Feb*  Feb 13 62 To - Gen J Hooker - Budds Ferry Six barges capable of carrying Three thousand men will be sent you from here & ten barges capable of carrying five thousand men will be sent around from Baltimore The former to land at your landing & the latter to land below you Gen Van Vliet will telegraph you as to the time the boats will arrive If you desire it you can use the tug which takes the barges around from Baltimore finis etc R B Marcy Chief of Staff
 
 ## 4982 Page_
 
@@ -322,9 +328,9 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 ## 5051 Page_
 
-*16 Mar*  March 16th 1862. 2-10 PM For [McClellan] commanding Fort Monroe A Division of the Army of the Potomac will leave tomorrow evening for Fort Monroe where it is to await further orders from me Signed G B McClellan Maj Genl
+*16 Mar*  March 16th 1862. 2-10 PM For [commander at Fort Monroe (Wool, inferred)] commanding Fort Monroe A Division of the Army of the Potomac will leave tomorrow evening for Fort Monroe where it is to await further orders from me Signed G B McClellan Maj Genl
 
-*16 Mar*  March 16th 1862 - 2-10 PM For [McClellan] Dawn A Division of the Army of the Potomac will leave tomorrow evening for Dawn where it is to await further orders from me G B McClellan Maj Genl Commanding seventy three Adams
+*16 Mar*  March 16th 1862 - 2-10 PM For [commander at Fort Monroe (Wool, inferred)] [Fort Monroe] A Division of the Army of the Potomac will leave tomorrow evening for [Fort Monroe] where it is to await further orders from me G B McClellan Maj Genl Commanding seventy three Adams
 
 *16 Mar*  Maj Gen John A Dix Mch 16 " 62 415 PM Baltimore Your proposal to visit for the purpose specified in your telegram is approved etc etc Edwin M Stanton Secy of War
 
@@ -334,7 +340,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *21 Mar*  March 21st 62 For [Halleck] Please suspend the Order sending Genl Denver to <deletion>Magnet</deletion> <insertion>Lamb</insertion> till you hear from Secty of War or myself Sig [Lincoln] What news
 
-*22 Mar*  March 22nd 1862 Head quarters army Potomac Alexandria [McClellan] Dawn I am directed by Gen McClellan to inform you that Gen Fitz John Porters division left Alexandria this Morning for Dawn Gen S. P. Heintzleman accompanies the command S. Williams A A G
+*22 Mar*  March 22nd 1862 Head quarters army Potomac Alexandria [commander at Fort Monroe (Wool, inferred)] [Fort Monroe] I am directed by Gen McClellan to inform you that Gen Fitz John Porters division left Alexandria this Morning for [Fort Monroe] Gen S. P. Heintzleman accompanies the command S. Williams A A G
 
 ## 5056 Page_
 
