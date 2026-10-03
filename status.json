@@ -3356,8 +3356,8 @@
     },
     {
       "target": "fr3621-dinteville-1592",
-      "title": "BnF fr.3621 f.130r (Dinteville to Nevers, Langres 3/4 July 1592): key rebuilt from sibling f.128 clerk gloss reads f.130r far above chance (0/3000 free and 0/2000 frequency-banded shuffles, power 5/5 at 11% error; VERIFY-DIN N3, 3 Oct 2026); C 263 M 264, fragments only.",
-      "next": "rebuild the key against the 1882 printed plaintext of f.128 (Revue de Champagne XII p.340), regrade f.130 (~3)"
+      "title": "BnF fr.3621 f.130r (Dinteville to Nevers, Langres 3/4 July 1592): key rebuilt from the 1882 printed plaintext of sibling f.128 (print alignment 0.831 vs p95 0.33) reads f.130r at fr16 -1.271, 0/1000 free and frequency-banded shuffles (DIN-PRINT, 3 Oct 2026); C 291 M 197 U 39 (conservative); VERIFY-DIN N3.",
+      "next": "second verifier on f130/print/reading.txt (VERIFY-DIN2), then fr.3623 f.23 sign set for v' and 0'"
     }
   ]
 }
