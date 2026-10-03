@@ -1,4 +1,4 @@
-partial
+found-solved
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C, 2KtPOA-povUC, ACt7vZ791gAC, YHd_rHN1YXUC) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "aoust 1595" 0 hits, "Cambray 1595 fils" 0, "Gonzague Cleves 1595" 0 in the Mémoires (1 hit in *Archives de Nevers* 1842, a genealogy line), "chiffre Rethelois" 0; positive control "Rethelois" 3 hits in the Mémoires -- letter not printed there.
 
 # BnF fr.3993 ff.71r-72r, Charles de Gonzague-Clèves to the duc de Nevers, 2 August 1595 (key no.70) -- NV-01
@@ -203,3 +203,8 @@ Read so far: 180 of 189 tokens keyed (H 180, M 1, U 8); key agreement with the p
 - [x] image-check: native image viewed for every reconciled line; facing page and laid-in slip checked
 - [ ] retry: gloss-only pass and nomenclator transcription (the gaps above)
 Verdict: keep going: 2 internal gaps; cheapest next: gloss-only pass on the 72r crop, ~$1.5
+
+
+## Status (account-3 orchestrator, 3 Oct 2026 04:4x UTC)
+
+`found-solved`: NV01-READ (c0fd6127) found a period interlinear decipherment above every cipher line (f.72r, f.71v foot), as with decode-1168-modena-costabili-1492. Our key-no.70 decode (H 180 M 1 U 8, z 14.4 vs 200 shuffled keys) agrees with it; it stands as a known-answer control for key no.70, not a new reading.
