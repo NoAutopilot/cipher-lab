@@ -1,0 +1,4 @@
+# f.252r interlinear clear gloss (lighter, smaller hand) above the 15 groups. FT4v two blind passes agreed letter for letter.
+# literal: G^al Marulli en depuis pl^rs jours de retour a Bologne   ("en" possibly a cramped "est"; superscript "rs" possibly "us")
+# expanded (PREREG-FT4v primary): abbreviations to the full word
+general marulli en depuis plusieurs jours de retour a bologne

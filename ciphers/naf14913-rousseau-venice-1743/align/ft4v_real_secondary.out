@@ -1,0 +1,6 @@
+real P188 text literal E 0 0.6s nochunk ['188']
+real P188 text est E 0 0.6s nochunk ['188']
+real P121 text literal E 0 0.6s nochunk ['121']
+real P121 text est E 0 0.6s nochunk ['121']
+real P10 text literal E 1 0.5s
+real P10 text est E 1 0.5s

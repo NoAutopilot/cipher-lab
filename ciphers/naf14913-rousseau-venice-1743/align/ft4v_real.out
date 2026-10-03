@@ -1,0 +1,4 @@
+real P188 text primary E 0 0.7s nochunk ['188']
+real P121 text primary E 0 0.6s nochunk ['121']
+real P10 text primary E 1 0.5s
+real PALL text primary E 0 0.6s nochunk ['188', '121']

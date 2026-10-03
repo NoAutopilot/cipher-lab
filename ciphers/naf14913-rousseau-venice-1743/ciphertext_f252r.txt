@@ -1,0 +1,5 @@
+# f.252r (BnF NAF 14913, Gallica btv1b525174513 canvas f517), foot of Lorenzi to Montaigu, Florence, 6 June 1744, after "vous saurez, Monsieur, que le"
+# FT4v (account-4, 3 Oct 2026): two blind Opus passes on images/f252r/f252r_L0*.jpg, agreed 15/15; reconciled by eye on the crops.
+# doubtful: 253 (alt 233, both passes; 5 kept, matches the 5 of 527), 419 (alt 417, both passes; 9 kept, matches the 9 of 369)
+527 253 447 188 767 369 213 248 660 419 807 121
+230 10 56
