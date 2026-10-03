@@ -1987,5 +1987,34 @@
  "ft4q_shrink": {
   "date": "3 Oct 2026",
   "deleted_native_regions": "images_manifest_full.tsv (sha256, source URL); regen_images.sh re-derives them; regen of the f514 region tested byte-identical before deletion"
+ },
+ "ft4u_sweep_251v_259v": {
+  "date": "2026-10-03",
+  "by": "FT4u (account-4)",
+  "route": "Gallica IIIF f{canvas}/full/300,/0/native.jpg, canvases 516-532 (labels 251v..259v via tools/gallica_folio.py)",
+  "files": [
+   "lowres/s300/v516_251v_300.jpg",
+   "lowres/s300/v517_252r_300.jpg",
+   "lowres/s300/v518_252v_300.jpg",
+   "lowres/s300/v519_253r_300.jpg",
+   "lowres/s300/v520_253v_300.jpg",
+   "lowres/s300/v521_254r_300.jpg",
+   "lowres/s300/v522_254v_300.jpg",
+   "lowres/s300/v523_255r_300.jpg",
+   "lowres/s300/v524_255v_300.jpg",
+   "lowres/s300/v525_256r_300.jpg",
+   "lowres/s300/v526_256v_300.jpg",
+   "lowres/s300/v527_257r_300.jpg",
+   "lowres/s300/v528_257v_300.jpg",
+   "lowres/s300/v529_258r_300.jpg",
+   "lowres/s300/v530_258v_300.jpg",
+   "lowres/s300/v531_259r_300.jpg",
+   "lowres/s300/v532_259v_300.jpg"
+  ],
+  "sheet": "lowres/sheet_251_259.jpg",
+  "zoom": [
+   "lowres/v517_252r_1000.jpg (f517/full/1000,/0/native.jpg)",
+   "lowres/v517_252r_band.jpg (crop 15-100% x, 45-85% y)"
+  ]
  }
 }
