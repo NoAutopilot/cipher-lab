@@ -156,6 +156,7 @@ carries its own interlinear plain-Dutch gloss over its title and battery-list he
 of the sheet not yet checked). 2039, 2046 and 2077 have **no** key or gloss found on the sheet or elsewhere
 in this pass -- they fail this lane's own gate (recovery via a beside-it key) and are cryptanalysis-lane
 candidates instead, unless a key turns up elsewhere (e.g. in Wollant's own papers, not searched this pass).
+[VERIFY-SURINAME-2077, 3 Oct 2026: for 2077 this no longer holds: NA 4.VEL 2078, Wollant's plain July 1782 plan of the same fort, carries a plain Nota listing the same buildings. It is a content parallel and crib for 2077's legend, printed in facsimile with 2077 on den Heijer 2012 p. 329. AUDIT.md item 4.]
 
 **Undeciphered copy-free material it could read:** all five sheets are undeciphered (no transcription or
 decipherment published anywhere found) and all are copy-free (digitised, no login):
@@ -1761,6 +1762,7 @@ advancedsearch (1 query) 1 unrelated item (an Aruba plan) -- **unreachable from 
 its text is indirect (AMH credits den Heijer as its source and itself says not transcribed). This job's own native
 legend region (`images/2039_legend_native.jpg`, fetched below) was located by ink profile, not looked at, before the
 blind passes; the reconciliation look below is the first eye on it.
+[VERIFY-SURINAME-2077, 3 Oct 2026: den Heijer 2012 is reachable from the cloud through the Nationaal Archief digital edition, 2.14.97 inv. 24.2, service.archief.nl IIIF. p. 342 (2039) and p. 329 (2077) print the sheets in facsimile with no legend transcription. sources/gawic/; AUDIT.md item 4.]
 (b) **Other solvers' working files -- not found.** On-disk snapshots grepped for suriname / wollant / 4.VEL / zeelandia
 / nieuw amsterdam / purmerent / paramaribo: `sources/cyphersolver/2026-10-01` and `2026-10-02` (Bourdeau's current
 tree: CLAUDE.md, mercy1648, matignon1586, catokwacopa only), `sources/bourdeau/`, `sources/solver-diffs/` including
@@ -1790,5 +1792,6 @@ van Suriname papers) printing Wollant's legend text was located by any of them.
 Premise-check result (GAPS5, 2 Oct 2026): CLEAR TO TEST -- no decipherment, gloss, clear copy or print of 2039's legend found by (a)-(d); den Heijer
 2012 p. 342 is the one named source not opened (unreachable from the cloud; a desk/LOCAL-QUEUE read of that page is
 the cheap way to close it, not this job's). Status word unchanged (`partial`); rule 10 wording: a search result.
+[VERIFY-SURINAME-2077, 3 Oct 2026: den Heijer 2012 is reachable from the cloud through the Nationaal Archief digital edition, 2.14.97 inv. 24.2, service.archief.nl IIIF. p. 342 (2039) and p. 329 (2077) print the sheets in facsimile with no legend transcription. sources/gawic/; AUDIT.md item 4.]
 Requests this check: www.googleapis.com 3, archive.org 1, be-api.us.archive.org 1, all HTTP 200, 1.6 s apart.
 [VERIFY-SURINAME-2061, 2 Oct 2026: this pass missed K.M.M. de Leeuw, Tijdschrift voor Zeegeschiedenis 16 (1997) 160-177, which treats 4.VEL 2007A, 2039, 2046 and 2061 and reproduces the period key from NA 1.05.03 inv. 86 (the recipient's own fonds -- family (d)); whether it transcribes 2039's legend is not known (article not read, LOCAL-QUEUE L36). See AUDIT.md.]

@@ -219,3 +219,102 @@ passes/signcmp_gaps16/result.tsv): item 3's 2061 count is now H 177 M 81 U 10; t
 The 2039 Remarque rows of ciphertext_2039_remarque.tsv were replaced by a native-resolution re-pass (2 blind passes 247/261,
 1 blind reconciliation): the title/Remarque job now reads H 190 M 87 U 15 (was H 188 M 101 U 6), still unclassified by any
 verifier. The classes above are not changed by this. No SECOND-OPINIONS-QUEUE.tsv row exists for this target.
+
+## Item 4: the 4.VEL 2077 legend under the Nieuw period key (VERIFY-SURINAME-2077, account-4, verifier, 3 Oct 2026, 04:26-05:0x UTC)
+
+This session is separate from the solvers (GAPS19-GAPS22, NL18-CORPUS) and from REDERIVE-SURINAME-2077. It follows the verifier
+brief template, steps 1-5. It did no decoding and touched no other target.
+
+### Verdict
+
+| item | claim under audit | class | key source | prior plaintext | prior decipherment / key in print |
+|---|---|---|---|---|---|
+| 4 | 2077 title cartouche, heading and "Explicatie der Signatuuren" legend a-z (+ alpha-eta), reading_2077_legend_nieuw.txt: 658 cipher tokens H 500 M 106 U 52, plus 98 plain words. GAPS22: the rate-matched nl18 gate PASSes 7/7 folds and 0/400 target shuffles pass; the non-gating half-M-right sensitivity check FAILs 4/7 | **N1 (provisional)**, held there until LOCAL-QUEUE L36/L41 are answered. **Ceiling N2** even if they come back empty (see below) | **period** (NA 1.05.03 inv. 86 scan 0003, Nieuw Secreet Alphabet + code groups; image exceptions from GAPS21) | **Content, yes, in a period plain sister plan.** NA 4.VEL 2078, Wollant's own July 1782 plan of the same fort "not in cipher" (Pl. E / E.E.), carries a plain "Nota" A-C, a-z that lists the same buildings. It is printed in facsimile on the same page as 2077 (den Heijer 2012, p. 329). The 2077 legend's own text was not located in print: AMH 2123 says "partly encrypted, not transcribed". | **Key: yes.** den Heijer 2012 p. 471 prints the Nieuw Secrett Alphabeth in facsimile (inv. 86 fols 1v-2), and so does de Leeuw 1997. **Decipherment of 2077: none located.** den Heijer's caption on p. 329 does not transcribe it. de Leeuw 1997 lists 2077 (no. 740 e) and is unread (L36). *Suriname en zijn historie* (1972) reproduces 2077 (plate 120/121) and is unread (L41) |
+
+Safe sentence (2077): "Under the period key in NA 1.05.03 inv. 86 (printed in facsimile by de Leeuw 1997 and den Heijer 2012, p. 471),
+we read the 2077 (fort Zeelandia) legend at 500 of 658 cipher signs from the key sheet, with 106 uncertain and 52 unkeyed. Its content
+matches the plain Nota of Wollant's 1782 plan of the same fort (NA 4.VEL 2078). No printed transcription of the 2077 legend was found
+in the sources searched. de Leeuw 1997 and *Suriname en zijn historie* (1972), which both treat or reproduce the sheet, have not been
+read."
+Unsafe: "first decipherment of the Zeelandia map", "previously unknown contents of fort Zeelandia", "we recovered Wollant's key", "read
+in full", or any sentence that implies the legend's content was unknown (4.VEL 2078 gives it in plain Dutch).
+
+### Step 1: extract
+
+- Item: NA 4.VEL 2077, "Plan van de fortress Zelandia", 1781, J.F.F. Wollant for Governor Texier. The catalogue (vel_2030-2090_catalogue.tsv)
+  says "In cyferschrift en gedeeltelijke verklaring" and "Gefacsimileerd in Grote Atlas van de West-Indische Compagnie deel II p. 329".
+  The legend is mixed: plain entries such as f Menagerie, Neegerhuijsen voor d' Edl. Directie Slaaven, g huÿs voor den Opsigter,
+  n bootehuÿs, s Cöps de garde, w gevangenhuÿsen, z Cipiers=wooning and alpha Smeederÿ heel defect, with ciphered entries between them.
+- Reading (word level M, as GAPS20 segmented it): c "secretarye", p "cassernes ...", q "artilleri[e] cassernen [m]onteer[i]ngs [k]a[m]er",
+  r "logis voor d[e] adjudant de[r] garnisoens ...", t "bakkery", u "laboratorium voor de art[i]llerie", x "... magazyn ... berging van droog
+  goederen", "magasyn ... voor kleine geweer", delta "magasyne tot berging van brandspuiten", L20 "dispositie der batteryen". The title
+  lines read only in fragments.
+- What the solvers searched (GAPS19 premise check): Google Books (~22 calls: "4.VEL 2077", "fortress Zelandia" cyferschrift, "Explicatie
+  der Signatuuren", "Ambagts Slaaven", "Monteerings Kamer"), IA be-api 1, NA item page. They found de Leeuw 1997's list and *Suriname en
+  zijn historie* (1972). Not found: den Heijer's digital edition, AMH 2123, and the plain sister plan 2078 as a content parallel.
+  VX-CS04 eye-checked 2078 on 25 Sept 2026 and recorded it only as "entirely plain Dutch".
+
+### Step 2: independent search log (3 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical catalogue | on-disk 4.VEL catalogue rows 2070-2082 re-read | 2077 and 2078 are both facsimiled in den Heijer II. 2078 is "Plan van de teegenswoordigen staat der fortress Zeelandia met de daerby ontworpene noodige verandering", ca. 1784, "Met nota", made by Wollant |
+| (b) sender/recipient editions | Google Books: "Suriname en zijn historie" + Zeelandia/Wollant/geheimschrift/cijferschrift/legenda; Temminck Groll, *De Architektuur van Suriname 1667-1930* (1973) + Wollant + secretarie/laboratorium/kazernes/geheimschrift | *Suriname en zijn historie* (1972, Pg9sAAAAMAAJ, NO_PAGES): picture list "120/121 Kaart van Wollant, 1781. Algemeen Rijksarchief ... nr. Leupe 2077". Its OCR of "Ambagts Slaaven ... Mon tecringe Kamer, 1. jagiotist sal einsday ..." is cipher noise from the plate, not a transcription. Temminck Groll 1973 (YQI3AQAAIAAJ, NO_PAGES) describes Zeelandia's buildings and Wollant's July 1782 memorie ("gebouw dient nu tot artillerie-laboratorium", "secretarie"). It is a content source of the 2078 kind, and nothing shows it deciphers 2077. Both unread beyond snippets |
+| (c) documentary editions, atlases | **den Heijer 2012, now reachable**: the Nationaal Archief's digital edition (2.14.97 inv. 24.2, 475 page scans, IIIF). The route was found through Caert-Thresoor 41-2 (2022, archive.org ct-41-2). Read: p. 329 (2077 + 2078 + caption), p. 471 (key), p. 342 (2039) | p. 329: 2077 in facsimile, no transcription. The caption says "Most or in some cases even all of the annotation on these plans is in cipher ... The key to the decipherment is given in Chapter VII (sheet 471)". Below 2077 is 2078, Wollant's July 1782 plan "not in cipher", with a plain Nota. p. 471: the Nieuw Secrett Alphabeth in facsimile and its caption. p. 342: 2039 in facsimile, no legend text. Snapshots in sources/gawic/2026-10-03/. AMH 2123 (VEL2077) fetched: "partly encrypted, not transcribed" (sources/amh/2026-10-03/) |
+| (d) holding archive | NA 4.VEL catalogue (on disk); NA 1.05.03 inv. 86 was covered by earlier passes | the catalogue names no decipherment |
+| (e) full text | Google Books, about 33 calls, with the key and country=US, 1.8 s apart (three 503s, not retried in a loop): the phrases "Ambagts Slaaven", "Explicatie der Signatuuren", "Cipiers wooning", "Neegerhuijsen voor", "bootehuys voor" Directie, "Smeederij heel defect", "magazyn voor kleine geweer", "berging van brandspuiten", "Monteerings Kamer" Paramaribo, "Leupe 2077", "4.VEL 2077", "fortress Zelandia" Wollant, Wollant + Zeelandia + geheimschrift/plattegrond/1781. IA be-api: Wollant AND Zeelandia, "Ambagts Slaaven", "Cipiers wooning" AND Suriname, Zelandia AND cyferschrift, Wollant AND geheimschrift (0 each); "Wollant" "Zeelandia" (12) | no transcription of the 2077 legend. Hits: the Leupe 1867 inventory, Caert-Thresoor 41-2 (the den Heijer route), and the volumes in (b). Every phrase hit outside these is an unrelated period text (Amsterdam town hall, placaat books) |
+| (f) solver repos, cipher blogs | covered 2 Oct 2026 (GAPS web and blog check, on-disk snapshots); not repeated | none |
+| (g) scholarship | OpenAlex (key): "Wollant Zeelandia", "Wollant Suriname 1781" -> only de Leeuw 1997 (W7165290719); "fort Zeelandia 1781 plan" -> 15, none relevant. CORE (key): the same three queries, no relevant hit in the top 5. Semantic Scholar: 3 queries returned no data (logged as unanswered this pass) | de Leeuw 1997 is the only scholarly work on the cipher sheets |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv, one each in families (i) and (ii) | queued; they never block |
+
+Requests by host: www.googleapis.com ~33; be-api.us.archive.org 9; archive.org 2; atlasofmutualheritage.nl 1; www.nationaalarchief.nl 2;
+service.archief.nl 6; api.openalex.org 3; api.core.ac.uk 3; api.semanticscholar.org 3; web search 3; historischecartografie.nl 2.
+
+### Step 3: classification reasoning
+
+- No printed transcription or decipherment of the 2077 legend was located. den Heijer, the one source that reproduces the sheet and also
+  prints the key, leaves it untranscribed, and AMH 2123, which follows him, says so. That alone would support N3.
+- Two unread sources treat the sheet: de Leeuw 1997, which lists 2077 as no. 740 e and is the study of these ciphers, and *Suriname
+  en zijn historie* (1972), which reproduces 2077 as plate 120/121. Item 3 holds 2039 at N1 (provisional) for the same reason, so 2077
+  is held there too.
+- **Ceiling N2.** The *content* of the legend is already in period plain Dutch, by the same author, about the same buildings: the Nota
+  of 4.VEL 2078 (July 1782), printed in facsimile on the same page, den Heijer p. 329. Examples: 2078 b "Artillerie Casserne en
+  Monteerings Kamer" ~ 2077 q; 2078 d "Laboratorium van d'Artillerie" ~ 2077 u; 2078 k "Adjudant Wooning & Garnisoen Schryvery" ~ 2077 r;
+  2078 n "Bakkery, defect" ~ 2077 t; 2078 c "Casserne, oud en defect" ~ 2077 p; 2078 "Wooning van d'Ambagts Slaaven de Monteerings
+  Kaemer, w. Wooning van den Opsigter der Directie Slaaven" ~ 2077 g/h (plain). The 2078 Nota is a different text, with different
+  letters, order and wording, so it is not this plaintext, and nobody has mapped 2077's ciphertext to it. That fits N2, "plaintext
+  known elsewhere", only loosely. Even if L36 and L41 are empty, the class is N2 and not N3: a reader would rightly say the contents of
+  the 1781 Zeelandia legend were knowable from 2078 since 1782, and in print since 2012.
+- Confidence: medium. The ceiling is high confidence, because the 2078 Nota was read on the page image (sources/gawic/2026-10-03/p329_nota1782.jpg).
+
+### Grade mix and stage 9 (the brief's question)
+
+**The reading is not ready for a stage-9 move. Run the per-instance g|l check first, together with a cheaper and stronger step that
+did not exist before this audit.**
+- M is 106 of 658 (16.1%) and U is 52 (7.9%), so 24% of the cipher tokens are not read from the key. The PASS holds only when every M
+  letter is assumed wrong. With half of the M letters right, the same score FAILs 4 of 7 folds. That is a reading whose letters carry
+  more error than the grade mask counts, not a cleanly gated reading. The g|l class alone is 46 tokens, a third of the M+U.
+- New instrument: the 2078 plain Nota is a period known-plaintext parallel for about ten 2077 entries. A pre-registered comparison of
+  the cipher entries that have a 2078 counterpart would show how many letters the reading gets right where an answer exists. Examples
+  are 2077 r against "Adjudant Wooning & Garnisoen Schryvery", and q and u (above). The [g|l] tokens inside "garnisoen", "magazyn" or
+  "Monteerings" would be settled there by the known text, which is a grade C source. This is a solver job, not done here (no
+  decoding). Under rule 3 it is a matched control on this very sheet. The judge gate cannot be that.
+- A class assigned now on a reading that the g|l check and the 2078 comparison will change would have to be re-propagated (rule 10).
+  The class above stands for the reading as committed (`tools/decode_key.py ... --check` exit 0, 3 Oct 2026 04:32 UTC). The board
+  moves to "Novelty verified" only after the next verifier confirms the class on the settled reading.
+
+### Step 4: postmortem
+
+- Failure: the folder had the plain sister plan on disk since 25 Sept 2026 (images/2078_overview.jpg, VX-CS04: "entirely plain Dutch,
+  signed Wellant"). Eight days later it was still filed only as "ruled out, plain". Nobody used it as the content parallel or crib for
+  2077, though den Heijer prints the two sheets one above the other. "Ruled out" answered "is it a cipher?" and not "is it the same
+  legend in clear?". Lesson for the premise check's (c) physical neighbours: a plain neighbour by the same author, of the same place and
+  year, is a candidate plain twin, and its legend must be read before the cipher sheet is called unglossed.
+- den Heijer 2012 was logged as "unreachable from the cloud" (GAPS5, VERIFY-SURINAME-2061, VERIFY-SURINAME-PERIOD). It is open on the
+  Nationaal Archief site, 2.14.97 inv. 24.2, through service.archief.nl IIIF. The second half of L36 can now be answered from the
+  cloud: p. 342 (2039) prints no legend text, and neither does p. 329 (2077). The 2061 page was not checked in this pass.
+- Over-claims corrected in NOTES.md (bracketed notes, original text kept): the "Key beside the letter" sentence, "2039, 2046 and 2077
+  have **no** key or gloss found on the sheet or elsewhere"; and the GAPS5 and GAPS19 sentences logging den Heijer as unreachable.
+  The GAPS22 ROOM.md line "reading ready" is a solver's gate statement and not a novelty claim; it is left as is.
+
+No SECOND-OPINIONS-QUEUE.tsv row: 2077 is below N3. No CONTRIBUTIONS or outreach.
