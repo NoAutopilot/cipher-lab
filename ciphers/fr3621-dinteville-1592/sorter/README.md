@@ -43,3 +43,6 @@ by eye (the brief allowed no vision call).
 Export and apply, as for Birago: `ArtifactData list` for piles/moves/newpiles, then
 `tools/sign_sorter_apply.py --labels sorter/labels.tsv --db DIR --out sorter/settled_labels.tsv --summary sorter/summary.json`.
 Then the f.23r passes run against the settled labels and the 6-line (7-row) alignment follows (NOTES.md Remaining gaps).
+
+
+Published 3 Oct 2026 ~10:47 UTC by the account-3 orchestrator (private Artifact, capabilities {"db": {}}): https://claude.ai/artifact/RxURcDEas5VU11B95kVoJo (ASKS 112).
