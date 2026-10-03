@@ -1,0 +1,16 @@
+# Reconciled cipher runs of BnF fr.4140 f.146r (9 Aug 1636) with the period clear copy f.151r. FT4b (account-4), 3 Oct 2026.
+# Passes: passA_f146.tsv, passB_f146.tsv (blind Opus); settled by the reconciler from src crops: seg1 sign 1 = long s (ſ), sign 5 = 6, sign 7 = 3;
+# A's 'a+' (crossed-tail a) kept distinct from '4' (both passes read 4 where the clear letter is g; B read 4 where A read a+, clear letter i);
+# A's 'ʒ|y' = y; A's 'b' = B's '6'; seg12 A 'Z|2' B '2' -> Z. Word codes 60 = galleres, 61 = vaisseaux are not in this file (word codes, not letters).
+plain_line	plain_raw	cipher_line	cipher_raw
+s1	Responce Claire	1	@ſ @ll @h @f @6 @p @3 @nn @30 @Φ @y @a+ @m @nn
+s2	lintention	2	@C @d @a @u @ll @p @z @a+ @n @p
+s3	passages	3	@t @P @h @i @y @4 @nn @i
+s4	esports	4	@nn @o @f @n @l @z @g
+s5	la seigneurie	5	@Φ @P @h @nn @d @ff @a @ll @x @m @a+ @ll
+s6	les espaignols	6	@C @ll @h @nn @i @t @y @a+ @ff @a @6 @Φ @o
+s7	sept mille hommes	7	@h @nn @t @u @6 @d @C @Φ @ll @m_ @n @c @6 @nn @i
+s10	esloignee	10	@nn @h @Φ @n @d @4 @p @ll @nn
+s11	mal	11	@6 @P @C
+s12	peut faire	12	@t @nn @x @Z @c @y @a+ @m @ll
+s13	passage	13	@t @P @h @i @y @4 @nn

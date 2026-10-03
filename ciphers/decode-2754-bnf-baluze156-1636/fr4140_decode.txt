@@ -1,0 +1,14 @@
+L12	✳=? x=V 12=? p=N f=P b=? t=P r=? tt=? u=T o=S 7=? 4=G 10=? g=S e=?
+L23	n=O Z=T y=A 10=? p=N ll=E g=S 7=? 4=G t=P o=S e=?
+L24	n=O f=P 6=? h=S Φ=L 4=G p=N g=S y=A u=T nn=E E=? tt=? ll=E
+L25	d=I do=? 4=G n=O 9=? ff=G 4=G E=? p=N C=L 9=? 9=? u=T ff=G ll=E r=? m=R c=? o=S h=S Z=T p=N a=N g=S
+L26	94=?
+L27	n=O tt=? 8=? 4=G Z=T p=N
+L28	u=T nn=E ll=E ff=G 9=? 94=? 9=? b=? nn=E 4=G u=T Sr=? p=N 9=? f=P c=? c̃=?
+L32	9=? 7=? 4=G t=P o=S p=N
+L33	g=S n=O 36=?
+L34	6=? 9=? tt=? g=S n=O ttu=?
+L35	x=V 9=? p=N u=T 4=G m=R
+L36	n=O Z=T p=N E=? p=N ll=E g=S h=S o=S q=? t=P p=N c=? y=A E=? 12=? m=R
+L41	g=S n=O ll=E Z=T g=S c=? g=S c=?
+L01	+=?

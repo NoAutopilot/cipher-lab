@@ -497,3 +497,81 @@ shape, and rebuild the key from cipher+decipherment pairs if it matches; ~$6, on
 summary of the Marseille/Lérins plot (crib source).
 
 Requests this pass: cryptiana.web.fc2.com 2 (servien.png, servien1.png; 2 s apart, descriptive UA). No subagents.
+
+## fr.4140 f.146r period key (Sabran, 9 Aug 1636) -- negative, matched controls (FT4b, account-4, 3 Oct 2026)
+
+Next key family named by FT4. Intake gate pasted before work:
+
+```
+decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+(run by FT4 the same morning; no change to line 1 since.)
+
+**Locating.** Gallica SRU `dc.source all "Français 4140"` -> **ark btv1b90601914** (481 canvases, every label `NP`;
+fr.4141 gave no SRU hit). Canvases are openings; by the folio stamps: canvas 200 = f.109r, **266 = f.146r**, 272 = an
+address cover ("Mr de Sabran ... 1636"), **273 = f.151r**, **274 = f.151v / f.152r**, 288 = f.161r (Paris 21 Aug 1636, a
+clear copy whose margin glosses numerals: 80 = Espagnols, 75 = Morgues; Final). Offset is not constant (blank versos are
+imaged): 200->109, 266->146, 288->161. Finding aid `cc50537t`: "Fol. 146 et 151 ... Mémoire du Sr DE SABRAN ... pour Mgr
+l'archevesque de Bordeaux. Avec chiffre et déchiffrement"; the leaf itself is stamped "146 ... et 151", and f.151r is
+stamped "151 ... et 146".
+
+**What the leaf is.** f.146r ("9e Aoust 1636. Le sieur de Sabran depuis son retour n'a peu auoir aulcune ...") is the
+same mixed design as DC8: plain French with cipher runs of single and doubled letters (ll, nn, ff), digits and signs
+(Φ, a looped P, a crossed-tail a), plus plain-spelled cover names (Orion = la republique de Gennes, Polidor = le Roy,
+"baldesche" = Sabran) and word codes 60 = galleres, 61 = vaisseaux. The decipherment is **not interlinear**: it is a
+separate period clear copy on f.151r (both passes: no gloss on f.146r). One sign = one letter, homophones for s
+(h, i, o, g) and e (ll, nn), no nulls seen in the 107 aligned signs.
+
+**Transcription.** Crops: `tools/iiif_lines.py --ark btv1b90601914 --canvas 266 --region 4150,450,3300,4700 --out
+images/fr4140 --prefix f146r` (and canvas 273 region 3850,250,3700,6100 for f151r, canvas 274 region 200,350,3450,5150
+for f151v), then re-cut locally `--image <src> --lines-per-crop 4` (18 crops per page). Two blind Opus passes
+(`images/fr4140/passA_f146.tsv`, `passB_f146.tsv`): both found 13 runs and 109 signs with identical run boundaries;
+they split on five shapes (ſ/S, 6/b, 3/z, y/ʒ, and B's '4' where A read a crossed-tail a). Reconciled by the worker
+from the source crops (third vision step): ſ, 6, 3, y; the crossed-tail a (clear letter i) kept distinct from 4
+(clear letter g), as the clear copy demands. `images/fr4140/pairs_f146.tsv` = 11 letter runs with their f.151r clear
+words.
+
+**Key and leaf control (rule 3).** `fr4140_trial.py` aligns the runs with `tools/interlinear_align.py`'s `run_align`
+(`--code-prefix @ --clear-consumes` mode, imported). Agreement share (sign occurrences matching their sign's majority
+letter, n >= 2): **0.897** vs **0.196** median and **0.327** 99th percentile over 200 permutations of the clear spans
+across runs: the leaf pairing beats its own control decisively. Key `images/fr4140/key_f146.tsv`: 29 signs kept, 2
+dropped ('6' = m 3 / o 2, probably two shapes -- b and 6 -- that both readers merged; 'c' = m/f). Grade C (from the
+period clear copy).
+
+**Target test.** Same scorer as `letters_trial.py`/`servien_trial.py` (French 5-gram, unmapped token breaks a run).
+
+| row | bits/char | share of 200 shuffled keys as good |
+|---|---|---|
+| DC8 f.157r under the f.146r key (89 of 137 tokens covered) | **5.232** | **0.815** |
+| variant: DC8 '4' read as the crossed-tail a (= i) | 4.682 | 0.455 |
+| shuffled keys (letters permuted over the 29 signs), median / best | 4.898 / 4.050 | |
+| positive control: held-out French, same run lengths, enciphered with the key | **3.366** | 0.000 |
+
+Decode: `V NP P TS G S OTA NES GPS OP SLGNSATE E I GO GG NL TGE R SSTNNS ...` -- no French word of 4+ letters. fr16
+judge (throwaway spec `{"judge":{"language":"fr"}}`, N=89): `FAIL language: score=-2.235, null_p99=-1.63,
+real_p05=-0.97`. No fr17 corpus exists in tools/data; fr16 is the nearer era, and a score below the letter-shuffle null
+is not an era effect. `tools/decode_key.py` was not used for the target: a non-reading needs no committed reading, and
+the shuffled-key control lives in the trial script; `python3 fr4140_trial.py --check` exits 0 (rule 7 for the key, the
+trial table and `fr4140_decode.txt`).
+
+**Verdict: the f.146r key does not read f.157r; clean negative with matched controls** (the target sits at the shuffle
+median, the positive control is cleanly separated). Same design family as DC8 (doubled letters, digits, Φ), different
+values -- consistent with Tomokiyo's "appears to be in a different cipher". Grades (rule 4): no reading of the target
+claimed (0 H, 0 C, 0 S, 89 M mechanical, 0 I); the key itself is 29 signs at grade C. Status word unchanged: **open**.
+
+**Conditional on the transcription** (rule 2): DC8's own passes (24 Sept, Sonnet) may have merged shapes that this
+leaf distinguishes (4 vs crossed-tail a, 6 vs b); the variant row covers the first. A re-read of f.157r against
+f.146r's sign shapes would sharpen this, but a key that scores worse than random permutations of itself is not one
+merged pair away from reading.
+
+**Next steps (not run, rule 7 of Usage).** (1) fr.4140 carries 17 more Sabran Genoa letters "avec chiffre et
+déchiffrement" (Sept-Dec 1636, ff.197-591, the later ones in fr.4141, which SRU did not find on Gallica) and the
+Paris 21 Aug letter f.161 (a numeric code with marginal glosses): if Sabran changed keys between correspondents, the
+key for "Mr de ch. g^r" may be among his other 1636 tables -- a sweep of the cipher signs per letter (shape inventory
+only, no alignment) against DC8's would say which, ~$4. (2) Avenel t.V for a plain summary of the Marseille/Lérins
+plot (crib source). (3) The 107-sign key from f.146r is itself a period key for the 17 Sourdis letters (a contribution
+row once a verifier has looked).
+
+Requests this pass: gallica.bnf.fr 13 (2 SRU, 1 manifest, 7 probe images at 1000-1400 px, 3 native regions; >= 1.5 s
+apart, browser UA, no 403/429), archivesetmanuscrits.bnf.fr 1. Subagents: 2 blind Opus passes. Cost: the
+orchestrator's get_session figure.
