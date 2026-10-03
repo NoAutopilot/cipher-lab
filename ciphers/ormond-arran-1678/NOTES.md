@@ -322,8 +322,8 @@ exit code: 0
 ## Premise check (GF4-BATCH1, account-4, 2 Oct 2026)
 
 **Result: not found solved.** No decipherment, plaintext or applied key for the p.93 passage was found under (a)-(d).
-Status stays `open`. This is the adversarial pass of `.claude/briefs/check-solved.md` "Premise check", run 3 Oct 2026
-00:05-00:20 UTC (`date -u`). No test or reading was run. One transcription flag (the ninth group, below) goes to the
+Status stays `open`. This is the adversarial pass of `.claude/briefs/check-solved.md` "Premise check", run 2 Oct 2026
+23:53 to 3 Oct 00:00 UTC (`date -u`). No test or reading was run. One transcription flag (the ninth group, below) goes to the
 image check and is not repaired here.
 
 **(a) Decipherments the folder mentions, opened. Not found.**

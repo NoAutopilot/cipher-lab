@@ -75,3 +75,52 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Premise check (GF4-BATCH1, account-4, 3 Oct 2026)
+
+**Result: not found solved.** No decipherment or applied key for this letter was found under (a)-(d). Status stays `open`.
+This is the adversarial pass of `.claude/briefs/check-solved.md` "Premise check", run 3 Oct 2026 00:00-00:06 UTC
+(`date -u`). No test or reading was run. One finding changes the blocker: Add MS 72438 is reachable through DECODE
+(see (b)).
+
+**(a) Decipherments the folder mentions. Not found / unreachable.**
+- Warburton iii.131-137 (the source print): no gloss or footnote (check-solved pass above, re-confirmed by the phrase
+  hits below). Every one of the 12 IA digitisations of Warburton prints the groups without a reading.
+- Add MS 18982 ff.95r-96v, Osborne to Rupert, 10 Nov 1645, "Partially ciphered (with deciphering)" (REQUEST.md):
+  **unreachable**. It is a BL image, and there is no DECODE record for 18982 ff.95-96 in the on-disk harvest. Not opened.
+
+**(b) Other solvers' working files. Not found, but one finding moves the blocker.**
+- **Bourdeau**: fresh shallow clone, HEAD 2341682 (2 Oct 2026 15:12 -0500). `targets/rupert/` (NOTES.md,
+  maurice1645.py, profile.json, find_letter.py, get_warburton.py, thumbsize.py) read: a structure profile only
+  (93 groups, 63 distinct, max 398). The keys were tried "ranges only" (Charles I-Rupert-Digby-Ormonde 1644-45;
+  Nicholas-Rupert July 1645), with no rendering. `targets/rupert1645/` (Charles I to Rupert, 29 Apr 1645, Lasry's
+  King-Queen key SP106-5) is a different letter. Its NOTES do not record that key being applied to Maurice's groups.
+- **Aymeloglu**: fresh shallow clone, HEAD d2800bb (27 Sept 2026). `royalist-1646/README.md` covers BL Add MS 72438
+  ff.9-10. It names no Maurice-Rupert key, and its key 129 (names 559-580, one of them "Prince Maurice") sits far
+  above this letter's max of 398. **But** the README says its 72438 images "were obtained through the DECODE"
+  login, and our own DECODE harvest (`sources/decode/keys-all-2026-09-28-merged.tsv`) lists about 70 Key records for
+  72438, ids 8627-8745. Among them is **8627 = f.25-26, the contemporary index "Cyphers taken in the Lord Digby's
+  cabinet" (keys 80-139)**. So the Verdict's "72438 offline since 2023" is out of date for the keys: they sit behind
+  the DECODE login, and A2-HDK (2 Oct 2026) got a full-size image from a record this way. **Next step: read
+  DECODE record 8627 (the f.25 index) for a key naming Maurice, Rupert or Worcester. After that, if one exists,
+  that key page. One browser login, about $1-2.**
+
+**(c) Physical neighbours. Unreachable.** The 7 July letter is not itemised in the Add MS 18982 contents list (check-solved
+pass). Its leaf and the leaves on either side cannot be reached until BL images return. Warburton pp.131-137, the
+printed neighbourhood, hold no other ciphertext.
+
+**(d) Recipient's side and other prints. Not found.**
+- Rupert, the recipient, is the source of Warburton's print (the Rupert papers, now BL Add MS 18980-82). No other
+  edition of his received letters was found.
+- Interior-phrase searches. IA full text: "By your cipher, you may observe" gave 12 hits, all Warburton digitisations
+  (including `memoirsofprincer0000elio`, `in.ernet.dli.2015.190974`, `india.history.resource.70653`,
+  `baclac_896580987_003`), plus two copies of Jane Lane, *Sir Devil-May-Care* (London: Muller, 1971;
+  `sirdevilmaycare0000lane`). "342, 148, 136" gave the same books plus number-table noise. "you may observe, that 15"
+  gave the same. Google Books (country=US, keyed): "By your cipher, you may observe" gave 3 hits, all Warburton 1849;
+  the clear words plus names gave 1, Warburton.
+- **Lane 1971 is a novel.** Its Maurice composes the letter "in laborious cipher: 'God damn those Scots! The rebels
+  rail on us for calling in the Irish to assist us, but sure ...'" (be-api snippets). That is an invented plaintext,
+  not a decipherment. Logged here so that no later search mistakes it for a reading of the groups.
+
+Requests this pass: archive.org be-api 11 (>=2 s apart) + 1 metadata, googleapis.com 2 (keyed, country=US), github.com 0
+(clones shared with this batch). No logins, no DECODE call.
