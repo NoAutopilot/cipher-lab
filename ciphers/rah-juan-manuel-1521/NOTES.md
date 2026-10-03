@@ -37,22 +37,22 @@ Not done / unreachable: Kolosova 2017 thesis and 2024 book (Teseo/Dialnet and Go
 (d) Recipient's side: CSP Spain II (Bergenroth) read as above: calendared abstracts, not texts; the Spanish state series (Simancas Estado, CODOIN) not searched; Gachard, Mignet not searched. **Not found, not exhaustive.**
 Conclusion: this pool is a sibling-key calibration target rather than blind: the grade is C (period gloss) for the first page and S/M beyond. Not found-solved, because no full reading of any letter was found.
 
-## Remaining gaps (check-solved pass, 3 Oct 2026)
-Read so far: 0 of 28 letters read in full by anyone found; first-page period gloss visible for 26 of 28 (Tomokiyo's list), first lines only
-- Kolosova 2017/2024: does it print any of these 28? - blocker: not-attempted; Dialnet/Teseo not opened in this box; next: try Dialnet thesis 177430 PDF and Google Books preview of the 2024 book, ~$2
-- CSP Spain II entries mapped to R-records by date - blocker: not-attempted; OCR dates too noisy in this box; next: one script over BHO pp.384-470, ~$1
-- Native image of R9528 confirming first-page-only decipherment - blocker: not-attempted; no image fetched in this check-solved box; next: one DECODE browser login, ~$1
-- R9501 and R9515 have no decipherment page - blocker: no-key-material; Tomokiyo reconstructs the table from R9528 only and says the archives may hold them
+## Remaining gaps (after first test, 3 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer of R9501 f.34 lines 1-14 decoded (100 code words, grade S); alphabet layer (about half the signs) unread everywhere
+- Letter alphabet not on disk (Tomokiyo gives the nomenclator only) - blocker: not-attempted; outside this brief (test 1 only); next: test 1 in specs/rah-juan-manuel-1521.json, recover it grade C from R9528 f.194 vs f.197 (second blind cipher pass + reconciliation first), held out on R9529 f.199/f.201, ~$6
+- Cipher transcription is one rough Sonnet pass per page, symbols unsegmented - blocker: not-attempted; cap allowed one pass; next: second blind pass + reconciliation per TRANSCRIPTION.md on f.194 and f.34, ~$4.5
+- Kolosova 2017/2024: does it print any of these 28? - blocker: not-attempted; not in this brief; next: Dialnet thesis 177430 PDF and Google Books preview of the 2024 book, ~$2
+- CSP Spain II entries mapped to R-records by date - blocker: not-attempted; not in this brief; next: one script over BHO pp.384-470, ~$1
 
-## Escalation (3 Oct 2026)
+## Escalation (3 Oct 2026, after first test)
 - [ ] siblings: planned step: compare with Sanchez records of equal length (ciphers/rah-salazar-soria-sanchez-1524-28, Bourdeau sanchez1522) for table fit
-- [ ] clear-pages: planned step: view the first-page decipherment images of R9499-R9529 at native size (one DECODE login)
-- [x] known-keys: Tomokiyo 2025 Juan Manuel table on disk (AlonsoSanchez_2.tsv); not yet run on these letters by anyone found
+- [x] clear-pages: R9528 decipherment f.197 viewed at native size and lines 1-15 transcribed (gloss_f197.tsv); no period decipherment in R9501 (3 images seen)
+- [x] known-keys: Tomokiyo table run (test 0): known-answer 0.525 vs permuted p95 0.170; R9501 bigram 0.725 vs p95 0.200
 - [x] print: CSP Spain II read whole (abstracts only); Kolosova and the Supplement unopened, see gaps
-- [n/a] key-rebuild: table already published; rebuild only after known-keys test fails
-- [ ] image-check: planned step: native-resolution view of R9528 and R9501
-- [ ] retry: planned step: after the first test, per rule 3 controls
-Verdict: keep going: 3 internal gaps; cheapest next: apply Tomokiyo's table to R9528's visible first page with matched controls, ~$3
+- [ ] key-rebuild: planned step: alphabet layer from R9528 f.194/f.197 (test 1)
+- [x] image-check: DECODE full-size R9528 (4 images) and R9501 (3 images) fetched 3 Oct 2026, kept outside the repo
+- [ ] retry: planned step: second transcription pass before test 1
+Verdict: keep going: 4 internal gaps; cheapest next: CSP date map ~$1, then alphabet recovery (test 1) ~$6
 
 ## Gate check
 ```
@@ -65,3 +65,75 @@ $ python3 tools/next_steps.py --wait-only | grep rah-juan-manuel  -> no line
 
 ## While waiting
 The one action that depends on nobody: map the CSP Spain II 1522 Juan Manuel entries to the 28 records using BHO pages pp.384-470 (no key, no image, no owner).
+
+## First cheap test (LANE-POOLS FT-A, 3 Oct 2026, 22:25-22:4x UTC)
+Brief: .claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md, target A. Spec: specs/rah-juan-manuel-1521.json.
+
+Intake gate (re-run at start):
+```
+$ python3 tools/intake_gate_check.py rah-juan-manuel-1521
+rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
+Tool shelf (`tools/tool_shelf.py "transcribe cipher page line crops ... score against period decipherment and shuffled tables"`): iiif_lines.py
+(used, `--image` on local DECODE files, debug overlays checked) and decode_witness.py (calibrates a key against a clerk's
+decipherment). decode_witness was not used: it scores at letter level and needs a letter layer, and this key has none
+(word codes only), so scripts/test0.py does the same global alignment at word level with 200 permuted tables.
+
+Material: one DECODE browser login (tools/decode_browser_login.js), 15 requests to de-crypt.org: RecordsView 9528 and
+9501, 7 thumbnails, 7 full-size images (R9528 P1-P4 = ff.195v-196 / 194 / 196v-197 / 194v-195; R9501 P1-P3). Images kept
+in the session scratchpad, not committed (DECODE material); crop manifests in images/. R9528's period decipherment is a
+separate page (f.197, heading "Al Rey / De don Joan manuel de Roma a xviij de Junio 1522"), not interlinear. R9501 P1 =
+f.34 is cipher; no decipherment page in its 3 images, which agrees with Tomokiyo.
+
+Transcription: one blind Sonnet pass per page on 2-line (cipher) / 3-line (gloss) crops: ciphertext_f194.tsv (R9528 f.194
+lines 1-14), ciphertext_f34.tsv (R9501 f.34 lines 1-14), gloss_f197.tsv (f.197 lines 1-15, "v. md" expanded). The cipher
+reader flagged its own pass as rough: symbol runs unsegmented, letter groups not re-checked. Spot check by this worker on
+f194 L01: the image reads "... bas nur ... mus bo gap le kon per ..." where the pass has "sof bas mur y # cf mus bo gap le
+kon per", so the frequent codes come through and the errors are mostly in the symbols and the rare groups. Single pass, not
+the two-pass standard: the known-answer gate below is what licenses scoring the target at this error.
+
+Test 0 (scripts/test0.py --shuffles 200; results.json; `--check` exits 1 when stale):
+
+| statistic | page | real | 200 permuted tables: mean / sd / p95 / max | rank | N |
+|---|---|---|---|---|---|
+| known answer: LCS precision of decoded code words vs clerk's text | R9528 f.194 vs f.197 | 0.525 | 0.118 / 0.026 / 0.170 / 0.226 | 1 of 201 | 118 decoded words, 202 gloss words |
+| attested Spanish bigram share of adjacent decoded code words (es17c) | R9501 f.34 (target, no gloss) | 0.725 | 0.091 / 0.061 / 0.200 / 0.325 | 1 of 201 | 40 pairs |
+| same | R9528 f.194 (reference) | 0.545 | 0.091 / 0.052 / 0.182 / 0.291 | 1 of 201 | 55 pairs |
+| code coverage (descriptive only: a value shuffle cannot change it) | f.34 / f.194 | 0.654 / 0.703 | -- | -- | 153 / 155 plain-letter groups |
+
+Orthogonality check (rule 3): both statistics depend on the values the table gives each code, so a permutation of values can
+move them; the permuted tables do move (null sd 0.026 and 0.061). Coverage cannot move under a permutation, so it is reported
+as description, not as a test.
+
+Reading: the known-answer half passes at this transcription error (0.525 against a permuted p95 of 0.170): the calibration
+gate holds, so the target was scored. R9501 f.34 decodes in the same table at least as well as the glossed page does, and
+above every permuted table: R9501 is in Juan Manuel's nomenclator. Caveats: (1) the known answer is in-sample for
+Tomokiyo, so it calibrates the transcription, not the table; (2) the null is a uniform permutation, and a table that just
+mapped frequent codes to frequent function words would beat it too. A frequency-matched null was not run. (3) es17c is a
+1643-47 newsletter corpus, not era-matched to 1522; (4) the alphabet layer, about half the signs, is unread, so no running
+plaintext exists. Decoded code words on f.34, in order with alphabet stretches dropped (reading_f34_codewords.txt, 100
+words), include "que vuestra magestad esta de ... da", "io creo que vuestra magestad ... nueua", "cardenal de medins" x2
+(Tomokiyo marks that value '?'). Interpretation only, not a reading.
+
+Grades (rule 4): R9501 f.34: 100 code tokens decoded at S (Tomokiyo's table is cryptanalytic, and the control above
+backs it), 0 H, 0 C, about 130 alphabet signs unread. R9528 f.194: 62 of 118 decoded words matched by the clerk's f.197
+text (C), 56 M. No H or C on the target, so this is a cryptanalytic result.
+
+Judge (rule 7), candidate = the 100 decoded code words strung together (not prose):
+```
+$ python3 tools/judge_plaintext.py specs/rah-juan-manuel-1521.json --file ciphers/rah-juan-manuel-1521/reading_f34_codewords.txt
+FAIL language: score=-0.958, null_p99=-1.924, real_p05=-0.874, real_median=-0.79, mode=both, N=356
+FAIL - rah-juan-manuel-1521 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Corpus era: es17c (1640s) is not matched to 1522, and no 16th-century Spanish corpus exists on disk. The candidate is a
+word list with gaps, not running prose. The score sits far above the shuffled null and just under real_p05. Not decisive
+either way.
+
+Not found / not done: no period decipherment of R9501 in DECODE; no frequency-matched null; no second transcription pass;
+no letter alphabet. R9515 not fetched.
+
+```
+$ python3 tools/gaps_check.py rah-juan-manuel-1521
+OK keep-going rah-juan-manuel-1521: keep going: 4 internal gap(s), 3 step(s) untried
+```

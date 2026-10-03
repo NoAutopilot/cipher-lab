@@ -1,0 +1,46 @@
+{
+ "KA_f194_vs_f197": {
+  "real": 0.5254,
+  "null_mean": 0.1177,
+  "null_sd": 0.0262,
+  "null_p95": 0.1696,
+  "null_max": 0.2261,
+  "rank": 1,
+  "of": 201,
+  "N_decoded_words": 118,
+  "N_gloss_words": 202
+ },
+ "BG_f34_target": {
+  "real": 0.725,
+  "null_mean": 0.0908,
+  "null_sd": 0.0612,
+  "null_p95": 0.2,
+  "null_max": 0.325,
+  "rank": 1,
+  "of": 201,
+  "N_pairs": 40
+ },
+ "BG_f194_reference": {
+  "real": 0.5455,
+  "null_mean": 0.0908,
+  "null_sd": 0.0518,
+  "null_p95": 0.1818,
+  "null_max": 0.2909,
+  "rank": 1,
+  "of": 201,
+  "N_pairs": 55
+ },
+ "coverage_f194": {
+  "in_key": 109,
+  "plain_groups": 155,
+  "share": 0.7032,
+  "note": "descriptive only (shuffle-invariant)"
+ },
+ "coverage_f34": {
+  "in_key": 100,
+  "plain_groups": 153,
+  "share": 0.6536,
+  "note": "descriptive only (shuffle-invariant)"
+ },
+ "f34_decoded_words": "_ _ _ _ _ _ _ aqui _ _ _ _ _ _ _ _ de _ _ _ en que _ _ _ _ _ _ _ que uuestra/magestad esta de _ _ da _ _ _ _ _ _ _ _ _ _ es _ _ _ _ _ uuestra/magestad _ aleman se _ _ _ _ lo de _ io no se _ ua de _ _ que uuestra/magestad _ se _ _ _ se _ _ _ _ _ _ de se _ _ se _ _ _ io en _ de _ _ _ _ _ _ _ _ _ da _ _ _ _ _ _ aquell _ _ es _ _ io en aquel _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ de _ _ del _ que _ _ es _ _ _ _ _ _ en _ _ otra _ cosa _ que _ _ _ _ de ui _ _ _ _ _ _ no _ de que _ _ _ es _ _ _ _ _ uuestra/magestad como lo a _ _ _ _ en _ que por lo _ que este quierra es _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ io creo que uuestra/magestad _ _ nueua _ _ _ que lo _ _ _ que _ _ cardenal/de/medins _ un poco _ _ _ _ _ es _ _ cardenal/de/medins _ _ _ con _ _ _ fue _ _ _ _ ui en do _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ porque _ _ _ _ _ _ _ _ io _ esto _ que _ _ _ _ ui _ _ _ ua ali en _ como por el mi _ do que _ _ de u _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ que se _ ua bien _"
+}

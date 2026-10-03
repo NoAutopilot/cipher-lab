@@ -1,0 +1,37 @@
+{
+ "slug": "rah-juan-manuel-1521",
+ "name": "Juan Manuel (imperial ambassador, Rome) to Charles V, 1522 -- BRAH Salazar 9/23-9/24, DECODE R9499-R9529 (28 letters); first test on R9501 (7 Mar 1522, no period decipherment in the record) with R9528 (18 Jun 1522) as known answer",
+ "date": "1 March - 19 June 1522 (Tomokiyo's list; DECODE date field 1521-1522)",
+ "language_candidates": ["es"],
+ "ciphertext": "see ciphers/rah-juan-manuel-1521/ciphertext_f34.tsv (R9501 f.34 lines 1-14) and ciphertext_f194.tsv (R9528 f.194 lines 1-14); 3-letter Latin code groups (nomenclator) mixed with non-Latin alphabet symbols, written '#'",
+ "ciphertext_source": "one blind Sonnet pass per page on tools/iiif_lines.py crops of DECODE full-size images IMG_R9501_I44762_P1 and IMG_R9528_I44887_P2 (fetched 3 Oct 2026 22:26 UTC, one browser login; images not committed, DECODE material not public domain); single pass, rough by the reader's own caveat, symbols not segmented",
+ "alphabet": "nomenclator codes: lowercase Latin groups of 2-3 letters (Tomokiyo table, ~196 rows); letter alphabet: non-Latin symbols plus some letters, NOT on disk (Tomokiyo's page gives no letter table)",
+ "constraints": [
+  "key on file: sources/cryptiana/keys/AlonsoSanchez_2.tsv (Tomokiyo 2025, Juan Manuel's table, reconstructed mainly from R9528's decipherment page f.197); word codes only",
+  "26 of 28 records carry a contemporary decipherment of their first page (Tomokiyo); R9501 and R9515 carry none",
+  "same family as Alonso Sanchez's cipher (AlonsoSanchez_1.tsv) and Lope Hurtado's (ciphers/lope-hurtado-1522)"
+ ],
+ "cheap_tests_in_order": [
+  "test 0: Tomokiyo's nomenclator on R9528 f.194 vs the clerk's decipherment f.197 (word LCS precision, known answer, in-sample for the table) and on R9501 f.34 (no gloss: share of adjacent decoded code-word pairs that are attested Spanish bigrams in tools/data/es17c), each vs 200 value-permuted tables (scripts/test0.py)",
+  "test 1: recover the letter alphabet (grade C) from R9528 f.194/f.197 by alignment (tools/interlinear_align.py or tools/decode_witness.py with a letter layer), held-out on a second glossed record (e.g. R9529 f.199/f.201) vs shuffled alphabets; needs a second blind cipher pass + reconciliation per page first"
+ ],
+ "matched_control": "same scorer, same transcriber, same design: R9528 f.194 (the page Tomokiyo's table was built from) against its own period decipherment, N=118 decoded words; plus 200 value-permuted tables on every statistic (the permutation changes both statistics: rule 3 orthogonality checked)",
+ "cheap_test_done": [
+  {
+   "test": 0,
+   "date": "3 Oct 2026",
+   "worker": "LANE-POOLS FT-A (account-1 worker)",
+   "method": "ciphers/rah-juan-manuel-1521/scripts/test0.py --shuffles 200; transcription one blind Sonnet pass per page (3 subagent calls incl. the f.197 gloss); DECODE 1 login, 15 file requests",
+   "target": "R9501 f.34 lines 1-14: 100 of 153 plain-letter groups are table codes (0.654; f.194 0.703 -- descriptive, shuffle-invariant); attested-bigram share of adjacent decoded code words 0.725 (29/40 pairs) vs 200 permuted tables mean 0.091 sd 0.061 p95 0.200 max 0.325, rank 1 of 201",
+   "control": "known answer R9528 f.194 vs f.197 gloss: LCS precision 0.525 (N 118 decoded words, 202 gloss words) vs permuted mean 0.118 sd 0.026 p95 0.170 max 0.226, rank 1 of 201; same bigram statistic on f.194 0.545 (N 55 pairs) vs p95 0.182",
+   "verdict": "the table passes: it reads the known page well above every permuted table at this rough transcription, and the unglossed R9501 page scores as high on the bigram statistic as the glossed page (0.725 vs 0.545) and above every permuted table, so R9501 is in the same nomenclator. Caveats: the null is a uniform value permutation, so a table that merely maps frequent codes to function words would also beat it (a frequency-matched null is not run); es17c is a 1640s corpus (no 16th-c. Spanish corpus); the alphabet layer (about half the signs) is unread, so no running plaintext exists. Next: test 1.",
+   "status_after": "partial"
+  }
+ ],
+ "judge": {
+  "language": "es17c",
+  "note": "es17c = 1643-47 court newsletters, not era-matched to 1522 (no 16th-c. Spanish corpus on disk; es is Cervantes-era). The only candidate text is the decoded nomenclator words strung together with the unread alphabet stretches removed -- not prose -- so a FAIL/PASS here is not decisive either way."
+ },
+ "value": "28-letter pool (~19,000 signs est.) on a published key; a working alphabet would open the two letters without any period decipherment (R9501, R9515) and the unglossed later pages of the other 26",
+ "written": "3 Oct 2026, LANE-POOLS FT-A (account-1 worker), brief .claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md"
+}
