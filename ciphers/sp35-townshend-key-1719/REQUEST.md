@@ -1,6 +1,6 @@
 # Copy request — TNA SP 35/71/61-62
 
-**Status:** waiting on you. Open, stage 2 verified unsolved — see NOTES.md's Check-solved section, 25 Sept
+**Status (3 Oct 2026, GF4-BATCH12): withdrawn -- not needed.** Both items are printed in *Reports from Committees of the House of Commons* vol. 1 (1803), pp. 341-343 (NOTES.md, Check-solved addendum); order only if the page image contradicts that. Earlier status: waiting on you. Open, stage 2 verified unsolved — see NOTES.md's Check-solved section, 25 Sept
 2026 (LANE CX2): a real, on-topic, control-confirmed full-text read of the 1723 *Report from the Lords
 committees ... to examine Christopher Layer* found "Kelly", "Plunket" and period-spelling "cypher" all present
 but zero occurrences of "Townshend"/"Townsend" anywhere in the volume.

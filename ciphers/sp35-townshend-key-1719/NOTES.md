@@ -1,5 +1,7 @@
-open
-A report from the Lords committees ... to examine Christopher Layer ... Together with the appendix (1723, archive.org bim_eighteenth-century_a-report-from-the-lords-_great-britain-parliamen_1723, 7086-line djvu.txt) read and grepped in full by this worker: control terms Kelly (14 hits), Plunket (13 hits) and period-spelling cypher (11 hits, incl. "the Ellis Cypher", "writ originally in Cypher") all hit, confirming the volume is genuinely on point and the search functions, but Townshend/Townsend get 0 hits anywhere in the report or its appendix.
+found-solved
+*Reports from Committees of the House of Commons ... not inserted in the Journals*, vol. 1 (1803; HathiTrust uc1.c109355640, full view, Extracted Features read 3 Oct 2026 by GF4-BATCH12) prints SP 35/71/61 in full at p. 341 (seq 353: "Dutch Mail, June 15. Letter to Lord Townshend. My Lord, VOICY Copie d'un Piece ... addressé à M. Maule, au Caffé de Gregoire ... A l'egard de la Clef incluse ...", the same text Google Books full-text search returns in the 1723 printing 4dNeAAAAcAAJ and two 1803 copies mo9IAQAAMAAJ, a_EaKUvOC0EC) and the enclosed alias key (SP 35/71/62) on the next two pages, pp. 342-343 (seq 354-355, 286 lines each, 145 and 131 "Mr." alias entries); TNA's former references J13/J14 match the report's Appendix J numbering.
+
+Previous line 2 (LANE CX2, 25 Sept 2026, kept): A report from the Lords committees ... to examine Christopher Layer ... Together with the appendix (1723, archive.org bim_eighteenth-century_a-report-from-the-lords-_great-britain-parliamen_1723, 7086-line djvu.txt) read and grepped in full by this worker: control terms Kelly (14 hits), Plunket (13 hits) and period-spelling cypher (11 hits, incl. "the Ellis Cypher", "writ originally in Cypher") all hit, confirming the volume is genuinely on point and the search functions, but Townshend/Townsend get 0 hits anywhere in the report or its appendix.
 
 ## Check-solved (LANE CX2, 25 Sept 2026)
 
@@ -124,3 +126,64 @@ topic sections — the "papers relating to the Bishop of Rochester" and "foreign
 the most likely home for an anonymous letter to Townshend — before any copy order. If the appendix does not
 cover SP 35/71/61-62 or the twelve singles, TNA page-copy order is the next route (not digitised, per QUEUE
 row N20; none of these fourteen items is known to be online as an image).
+
+## Check-solved addendum (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+**Verdict: found-solved for the named pair SP 35/71/61-62.** The "Next" step above (find the 1723 Commons-committee
+appendix itself) is now done. TNA Discovery (API, C15389503 and C15389504, 3 Oct 2026) gives SP 35/71/61 as "1722 June 23 ...
+Former Reference J13. Anonymous letter to Lord Townsend, enclosing cipher key, received by the Dutch mail ... French", and
+SP 35/71/62 as "Undated [1719-1722] ... Former Reference J14. Cipher key enclosed in SP 35/71/61". The **J13/J14** former
+references are the Commons Committee of Secrecy's Appendix J marks (same convention as H.34-H.37, which Cryptiana
+cites to Appendix H, pp. 329-330 of the same volume).
+
+- Google Books full-text API (key + country=US; 3 Oct 2026) phrases `"Caffe de Gregoire"`, `"dans la Rue de Comedie"`,
+  `"Dundas à Rotterdam"`, `"Clef incluse" Rotterdam`, `"Letter to Lord Townshend" "Dutch Mail"`: every hit on this
+  letter is in *Reports from Committees of the House of Commons* (4dNeAAAAcAAJ, the 1723 printing bound in a collected
+  volume, metadata "1715"; mo9IAQAAMAAJ and a_EaKUvOC0EC, the 1803 reprint). Snippet: "Dutch Mail, June 15. Letter to Lord
+  Townshend. My Lord, VOICY Copie d'un Piece qui a été envoyé cejourd'huy à Paris, addressé à M. Maule, au Caffé de
+  Gregoire, dans la Rue de Comedie, à Paris. Il n'y avoit aucun Mot de Lettre auprés ... Dundas à Rotterdam, n'en
+  recoivent la moindre Nouvelle. A l'egard de la Clef incluse, votre Exce remarquera que les Personnes de qui ils auront
+  Occasion de nommer le plus, ils y ont Deux Noms, Alias comme par Exemple le Pretendant ...".
+- HathiTrust record 100654891 (bibliographic API) -> vol. 1 = uc1.c109355640 (full view, University of California). HTRC
+  Extracted Features (1 request) per-page token counts: seq 353 (printed p. 341) carries Maule 6, Clef 2, Gregoire 2,
+  Dundas 2, Rotterdam, Floyd, Noms, Cypher 3 -- the letter. Seq 354 and 355 (pp. 342-343) are each 286 lines of a
+  two-column alias list: "Mr." 145 and 131 times, with Earl, Duke, King, Holland, Muscovy, Ormond-era peers (Ilay,
+  Northesk, Tullibardin, Seaforth, Stormont, Southesk, Mar, Marlborough, Portmore, Carnwath, Ashburnham, Pelham) and
+  commodity cant (Barrel, Oats, Butter, Cyder, Pieces, Transports, Invasion) -- the key the letter describes, printed in
+  full. Seq 356 returns to ordinary letters (Barter/Malcolm/Collins). Printed page numbers read from the EF tokens
+  (seq 349-357 = pp. 337-345).
+- Not done: the page image itself (babel.hathitrust.org is Cloudflare-blocked from the cloud; books.google.com page view
+  likewise). The identification of pp. 342-343 as J.14 rests on its position directly after J.13, its form (a name/alias
+  list, as the letter says) and the J13/J14 references -- strong, but from a bag of words. A person opening
+  https://babel.hathitrust.org/cgi/pt?id=uc1.c109355640&seq=354 confirms it in one look.
+
+**Premise correction.** The slug's "1719" is TNA's bracketed range for the undated key only; the letter is 23 June 1722
+(N.S.; "Dutch Mail, June 15" O.S.), inside the Atterbury/Layer investigation. The twelve SP 35 singles in "Source" are not
+covered by this verdict and were not checked here.
+
+## Web and blog check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `"SP 35/71" Townshend cipher key anonymous letter` -- TNA catalogue pages (beta.nationalarchives
+C15389503 and neighbours) and unrelated Culper code pages; no transcription or decipherment post. (2) `Townshend 1719
+anonymous letter enclosing cipher key Jacobite deciphered` -- Lyon & Turnbull 1715 key lot, Fritz's Cambridge 1715
+anti-Jacobite intelligence article, the Ascanius "Jacobite Ciphers" PDF, the 1724 Brougham letter decipherment (kopaldev.de,
+Tartu) -- none on this item. (3) site-restricted to **Cryptiana** (cryptiana.web.fc2.com, blogspot), **Cipherbrain**
+(scienceblogs.de) and **Cipher Mysteries**, `Atterbury cipher key Townshend` -- no post on this item, so no comment thread
+to read; the local Cryptiana snapshot `sources/cryptiana/web/atterbury.htm` covers Appendix H (H.34-H.37) only, with no J
+item, no Maule, no Townshend. Not found on the open web beyond the 1723/1803 print itself.
+
+## Premise check (GF4-BATCH12 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **found** -- Source and Edition risk already named the 1803 *Reports from
+Committees* vol. 1 as the likely home, never opened; opened now, it prints both items (above). (b) Other solvers' working
+files: **not found** -- Bourdeau and Aymeloglu clones of 25 Sept 2026 hold nothing on SP 35/71/61-62 (Source section);
+not re-cloned. (c) Physical neighbours: **found printed** -- SP 35/71/60 (22 May 1722 extract to Maule, "a cipher",
+Former Reference J12) is printed on the same pages (Google Books snippet "A Mons. Maule, au Caffé de Gregoire ... Edinburgh,
+May 22, 1722"), and SP 35/71/6 (R W, partly in cipher, 12 Feb 1722) is a further Atterbury-unit neighbour not checked
+here. (d) Recipient's side: Townshend's own papers (HMC 11th Report App. IV) not opened; unnecessary once the item is in
+print. Verdict: found-solved.
+
+Requests this pass (3 Oct 2026): discovery.nationalarchives.gov.uk 2 (API), googleapis.com/books 17, archive.org 2
+(advancedsearch), catalog.hathitrust.org 1, data.htrc.illinois.edu 1, openlibrary.org 1 (connection reset, not retried).
+WebSearch 4.
+Gate re-run (GF4-BATCH12, 3 Oct 2026): `sp35-townshend-key-1719: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section).
