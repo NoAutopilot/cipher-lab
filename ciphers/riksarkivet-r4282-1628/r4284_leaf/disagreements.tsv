@@ -1,0 +1,17 @@
+line	col	A	B	flagged	crop
+kt1	11	b	s		
+kt1	19	3	s		
+kt2	3	s	5		
+kt2	6	o	b		
+kt3	1	l	c		
+kt3	9	p	g		
+kt3	13	p	-		
+kt3	14	p	z		
+kt4	3	s	5		
+kt4	6	g	z		
+kt4	7	g	9		
+kt4	10	a	d		
+kt4	19	g	w		
+kt4	21	g	-		
+kt4	23	i	-		
+kt4	24	e	c		

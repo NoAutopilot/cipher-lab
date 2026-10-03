@@ -1,0 +1,76 @@
+line	position	sign	confidence	alt	why
+kt1	1	t	H		agree
+kt1	2	b	H		agree
+kt1	3	b	H		agree
+kt1	4	k	H		agree
+kt1	5	3	H		agree
+kt1	6	d	H		agree
+kt1	7	g	H		agree
+kt1	8	t	H		agree
+kt1	9	b	H		agree
+kt1	10	/	H		agree
+kt1	11	b	M	B:s	differ
+kt1	12	p	H		agree
+kt1	13	c	H		agree
+kt1	14	w	H		agree
+kt1	15	k	H		agree
+kt1	16	y	H		agree
+kt1	17	e	H		agree
+kt1	18	y	H		agree
+kt1	19	3	M	B:s	differ
+kt2	1	l	H		agree
+kt2	2	t	H		agree
+kt2	3	s	M	B:5	differ
+kt2	4	i	H		agree
+kt2	5	c	H		agree
+kt2	6	o	M	B:b	differ
+kt2	7	/	H		agree
+kt2	8	i	H		agree
+kt2	9	p	H		agree
+kt2	10	i	H		agree
+kt2	11	g	H		agree
+kt2	12	y	H		agree
+kt2	13	t	H		agree
+kt3	1	l	M	B:c	differ
+kt3	2	g	H		agree
+kt3	3	t	H		agree
+kt3	4	i	H		agree
+kt3	5	t	H		agree
+kt3	6	y	H		agree
+kt3	7	/	H		agree
+kt3	8	c	H		agree
+kt3	9	p	M	B:g	differ
+kt3	10	i	H		agree
+kt3	11	k	H		agree
+kt3	12	y	H		agree
+kt3	13	p	M	B:-	gap
+kt3	14	p	M	B:z	differ
+kt3	15	a	H		agree
+kt3	16	t	H		agree
+kt3	17	b	H		agree
+kt4	1	s	H		agree
+kt4	2	y	H		agree
+kt4	3	s	M	B:5	differ
+kt4	4	i	H		agree
+kt4	5	k	H		agree
+kt4	6	g	M	B:z	differ
+kt4	7	g	M	B:9	differ
+kt4	8	p	H		agree
+kt4	9	i	H		agree
+kt4	10	a	M	B:d	differ
+kt4	11	g	H		agree
+kt4	12	t	H		agree
+kt4	13	b	H		agree
+kt4	14	/	H		agree
+kt4	15	g	H		agree
+kt4	16	t	H		agree
+kt4	17	a	H		agree
+kt4	18	y	H		agree
+kt4	19	g	M	B:w	differ
+kt4	20	y	H		agree
+kt4	21	g	M	B:-	gap
+kt4	22	d	H		agree
+kt4	23	i	M	B:-	gap
+kt4	24	e	M	B:c	differ
+kt4	25	y	H		agree
+kt4	26	s	H		agree

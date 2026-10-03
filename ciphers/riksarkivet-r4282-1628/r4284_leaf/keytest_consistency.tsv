@@ -1,0 +1,12 @@
+bourdeau	words_len_match	6/8
+bourdeau	pairs_in_matched_words	49
+bourdeau	pairs_on_letter_majority_sign	40/49
+bourdeau	letter_to_signs	a:p3 b:g1 d:s1 e:t7,c1 f:b2 g:w1 i:y4 m:b2,o1 n:c1,e1 o:d1,a1 p:l2,i1 r:g5,y1 s:32,b1,s2 t:i5 u:k3
+gaps79	words_len_match	7/8
+gaps79	pairs_in_matched_words	59
+gaps79	pairs_on_letter_majority_sign	50/59
+gaps79	letter_to_signs	a:p3 b:g1 d:s1 e:t8,c1 f:b2 g:w2 i:y7 l:a1 m:b3 n:c2,e1 o:d2,a1 p:l1,i1,c1 r:g5,y1,z1 s:32,s4 t:i5 u:k3
+gaps79_kt3_onesign	words_len_match	8/8
+gaps79_kt3_onesign	pairs_in_matched_words	68
+gaps79_kt3_onesign	pairs_on_letter_majority_sign	58/68
+gaps79_kt3_onesign	letter_to_signs	a:p5 b:g1 d:s1 e:t9,c1 f:b2 g:w2 i:y7 l:a2 m:b4 n:c3,e1 o:d2,a1 p:l1,i1,c1 r:g5,y2,z1 s:32,s4 t:i6 u:k4
