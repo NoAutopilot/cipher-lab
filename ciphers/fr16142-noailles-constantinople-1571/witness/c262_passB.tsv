@@ -1,0 +1,13 @@
+# c262 cipher block, Sonnet blind pass B (independent of A), FT-D 3 Oct 2026, glyph ids per key.tsv. Pass B also found the crops to be 93 px slices and read 11 true rows from a stitched page.
+# Conventions it chose: box-with-stem = W:le; narrow hash = e2, wide slanted hash = o1; 2e-curl = n1; CURS = a cursive clear word (dropped). 12 bare ?.
+L01	? u1 e2 u1 p1 l1 l2 e2 n1 t2? W:le a1 l1? l2? ? r1? ? r1?
+L02	o1? t2 e2 r1 r2 b1? m2 n1 e2 u1 o1 u1 l2 d2 r1 ? z1 e1 m1 p2 e2 W:le c2 h1 e2 r2 l2 a1 n1 t2 p1 e2 n1 D1 e4 l2 p1 d1? e2 r1 e1? e4?
+L03	d2 e2 W:le g2 e2 n1 s2 d2 e2 g2 ? e2? e2 r1 r2 e4 d2 p1 n1 a1 t2 p1 o1 n1 s2 l1
+L04	p2? e2 m2 d2 e2 n1 t2 l2 e2 t2 e2 m2 r2 ? g2 l2 a2 f2 a1 r1 c2 e4 W:le e2 p1 o1 u1 e2 r1 a1 d2 q1 c2 o1 q1 W:le t2 e2 d2 e2 d2 e4 a2
+L05	p1 l2 n1 e1 f2 a1 q1 l2 d2 r1 a2 p1 a1 W:le W:qui? l2 W:le e2 n1 d2 o1 r1 m1 c2 d2 e2 d2 e2 c2 a1 o2 l2 a2 W:par t2 i3 e2 W:faict? f2 o1 r1 e1 e4
+L06	p1 l2 W:faict? q1 r1 a1 y1 W:que p1 l2 y1 t2 r1 o1 u1 q1 e2 c2 e2 f2? p1 m1 p1 c2 p1 W:le i1? c2 o1 ? m1 d1 l2 e2 W:le d2 e2 d1 p1 e2 n1
+L07	s1? d2 e2 m2 a1 l2 c2 W:faict? a1 d2 p1 r1 e4 d2 c2 o1 p1 c2 h1 e2 W:le D1 e2 W:le s1 d2 e2 p1 o1 l2 e2 p1 e1 e2 e1 n1 e1 r1 u1 e1 e2 W:le
+L08	s1 o1 r1 a3 e2 s2 W:qui? n2 W:le e2 m2 b1? l2 e2 W:armee? q1 o1 n1 l2 e2 q1 r1 f2 e4 r1 o1 p1 t2 p2 l2 a1 p1 s2 p1 r1 d2 e2 l2 e2 W:le
+L09	e2 n1 l2 a2 p1 W:le D1 e2 r1 p1 o1 p1 r1 W:que l2 W:que W:le a1 n1 D3 e2 e4 s2 s1? W:le p1 n2 e2 s2 a3 p1 m1 e2 r1 o1 p1 e2 n1 t2
+L10	i2? a1 W:le a3 a2 n2 t2 l2 a2 r1 e4 p1 q1 t2 a1 t2 p1 o1 n1 W:qui? n2 z1 n1 e2 W:le e4 r1 e4 t2 p1 r1 a1 W:le s2 e4 n1 t2 W:le
+L11	? ? ? ? W:le? ? r1 l2 a2 p1 e2 r1 t2 e2 d2 e2 W:le? q1? r1

@@ -1,0 +1,39 @@
+{
+ "slug": "fr16142-noailles-constantinople-1571",
+ "name": "BnF fr.16142 ff.104-278 -- Francois de Noailles, bishop of Acqs (Dax), then Gilles de Noailles, Constantinople to Charles IX / Catherine de Medicis / Anjou / Henry III, Dec 1571 - May 1577 (one cipher, Tomokiyo)",
+ "date": "Dec 1571 - May 1577",
+ "language_candidates": ["fr"],
+ "ciphertext": "c262 block (11 rows, 391 glyph tokens, pass B): see ciphers/fr16142-noailles-constantinople-1571/witness/c262_passB.tsv; pass A in witness/c262_passA.tsv",
+ "ciphertext_source": "Gallica ark:/12148/btv1b9060927q canvas f262 (fr.16142, leaf of the Acqs letter to the King of April 1572), native image cut with tools/iiif_lines.py (images/c262ci_*), two blind Sonnet passes naming each sign by its row in Tomokiyo's published table, 3 Oct 2026 (FT-D); unreconciled",
+ "alphabet": "drawn symbols: about 60 letter homophones (a-z, 1-5 per letter), 3 doublers, ~16 nulls, ~33 nomenclator word signs (Tomokiyo, cryptiana henryiii.htm, CharlesIX_Acqs2.png)",
+ "constraints": [
+  "published key: Tomokiyo's reconstruction (key.tsv records it verbally; the image is the authority; key source class 'published')",
+  "most letters carry a period decipherment on the leaves: running margin gloss (1572), 'Dechiffre de la precedente' sheets (1572-76), or are enciphered duplicates of a glossed original (survey.tsv, letters_coverage.tsv)",
+  "open block: c510-516, Noailles to the King, July 1574 (about 6.5 full cipher pages, no decipherment on the leaves); Charriere III prints clear excerpts of Acqs's letters of 7 and 16 July 1574 from other copies (Mortemart/Brienne), not yet matched to it; smaller open letters c409-410 (Sept 1572), c464 and c472-473 (March 1573)",
+  "two '#'-like glyphs (o and e) are the main transcription ambiguity; the box-on-stem nomenclator sign was read as 'roy' by one pass and 'le' by the other"
+ ],
+ "cheap_tests_in_order": [
+  "test 0: the published key on a glossed leaf (c262) against its own period margin gloss: letter similarity (difflib ratio) of decode vs gloss, against 200 key shuffles and 200 gloss word-order shuffles (scripts/test0.py); gate pre-registered in witness/gate_passB.txt",
+  "test 1: a transcription pass that lowers sign error first (reconciled A/B pass with the '#' pair and the box-on-stem sign settled against the gloss, i.e. alignment-assisted, or line crops cut with --follow-slope), then re-run test 0; only after a PASS decode the July 1574 letter (c510-516) and score it by fr16 word-cover vs 200 shuffled keys"
+ ],
+ "matched_control": "known-answer: the same leaf's period margin gloss (13 margin lines beside the 11 cipher rows, gloss.tsv, reconciled from one Sonnet pass + worker read); nulls: 200 letter-value shuffles of the key among the letter glyphs, and 200 word-order shuffles of the gloss with the decode fixed",
+ "cheap_test_done": [
+  {
+   "test": 0,
+   "date": "3 Oct 2026",
+   "worker": "LANE-POOLS FT-D (account 1)",
+   "method": "scripts/test0.py --ct witness/c262_pass{A,B}.tsv --hash {e,o}; decode = letter part of each glyph id, nomenclator signs as their words; statistic = difflib ratio, letters only, against gloss.tsv",
+   "target": "not run: the known-answer gate failed, so no unglossed leaf was scored",
+   "control": "pass B (gate pass): real 0.2799 (both '#' resolutions identical); key-shuffle null mean 0.1244, p95 0.1696, max 0.2180, rank 1/201; gloss-order null mean 0.2016, p95 0.2665, max 0.2988, rank 6/201 -> FAILS the pre-registered gate (must beat both maxima). Pass A (exploratory, gate not pre-registered): real 0.3177 (e) / 0.3307 (o); key-shuffle max 0.2161 / 0.2083, rank 1; gloss-order max 0.3021 / 0.2526, rank 1. N = 391-392 cipher tokens, 315 gloss letters, 11 rows",
+   "verdict": "non-test at this transcription error (rule 3 calibration paragraph), not a negative on the key: both passes beat every key shuffle and sit above the gloss-order p95, and pass B's decode carries gloss runs word for word in places (interpretation: 'endorm.. de ca .. la partie faict fore' vs gloss 's'endormir de ca. Car la partie est forte'), but the crops were 93 px slices of sloping lines and the two passes disagree on the '#' pair and the box-on-stem sign. Next: test 1.",
+   "status_after": "partial"
+  }
+ ],
+ "judge": {
+  "language": "fr",
+  "min_word_cover": 0.5,
+  "note": "fr = tools/data/fr16 (Catherine de Medicis letters, era-matched to 1571-77 diplomatic French). Run on pass B's c262 decode only as rule 7 requires; that decode is a calibration read of a glossed leaf, not a candidate reading of an open one."
+ },
+ "value": "pool of ~36 cipher letters 1571-77 on a published key with period decipherments on most leaves: a key-checking and transcription-calibration bed; the open part is ~14,000 estimated signs (c510-516 July 1574 the bulk), conditional on Dupuy 521 and Charriere not covering it",
+ "written": "3 Oct 2026, LANE-POOLS FT-D (account 1), brief .claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md"
+}
