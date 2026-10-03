@@ -1058,10 +1058,73 @@ its control will face the same N=229 and 20-25% error. The step that changes the
 error (a better image, KHA A 11/XIV C/M-12, owner-side request) or more same-system ciphertext (Gachard, Correspondance
 de Guillaume le Taciturne, unreachable 25 Sept).
 
-**Next cheapest step:** `running_key` through `tools/family_run.py` on `families/basecode_cipher.txt` with
+**Next cheapest step:** ~~`running_key` through `tools/family_run.py` on `families/basecode_cipher.txt` with
 `--measured-error 0.23` and a third 1570s French corpus text added to `tools/data/fr16`, control first, about $3;
 expect the control to fall below its gate at this N and error, in which case the target waits for new material
-(a better image to lower the error, or same-system siblings).
+(a better image to lower the error, or same-system siblings).~~ Superseded 3 Oct 2026 by GAPS145 (section below): `tools/data/fr16` already has three texts, but `running_key` cannot take this cipher (it joins numeric tokens into one digit string), so GAPS145 ran a design statistic instead.
 
 Requests: none (no network). Vision: 0 reads, 0 subagent calls. New files: `build_basecode.py`,
 `families/basecode_cipher.txt`, `families/masc-1-a2lag3masconbase.txt`, `tools/tests/test_masc_family.py`.
+
+## GAPS145: index of coincidence against matched design controls (3 Oct 2026, account-4)
+
+**Job:** the cheapest open follow-up after Y1 (1). Y1's (2), the unread clauses, has no key material. A2-LAG3 named
+`running_key` through `tools/family_run.py` as the next step. A design check came first. `tools/families/running_key.py`
+`solve()` joins each message's tokens with `"".join(m)`, so the base codes `15 16 22 ...` would become the digit string
+`151622...`. It is a 26-letter Vigenere decoder, and it needs letter tokens in a known alphabet order. Feeding it this
+cipher would test a guessed number-to-letter map, not the family. Instead this step asks a cheaper question that no
+earlier pass asked: is the ciphertext's unigram profile the peaked profile of a one-sign-per-letter substitution, or a
+flat one? The question is scripts only, uses no network and no vision, and does not depend on the solver's power.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines` (exit 0).
+
+**Method** (`families/ic_design_check.py`, output `families/ic_design_check.tsv`, `--check` exits 0, seeded). The
+target is `families/basecode_cipher.txt` (N=229, K=26; marks stripped). The controls are at the same N and in French
+from `tools/data/fr16`, all three books:
+(a) masc, 300 windows. IC does not change under substitution, so this is the window's own IC.
+(b) running key (Vigenere, a plain window plus a key window from a different book), 300 windows.
+(c) `tools/families/homophonic.py`'s own `make_control` at K=26, 40 seeds, clean.
+(a) and (b) are each also run at the measured error 0.23, under two noise models. `profile` redraws from the
+sequence's own unigram profile, the `homophonic.py` recipe. `uniform` replaces with a random other type, which is the
+worst case for this statistic because it flattens toward 1/K.
+The control can differ from the target on this statistic, because the designs separate. Under every noise model the
+masc p05 lies above the running-key p95: the lowest masc p05 is 0.0565 and the highest running-key p95 is 0.0467. Only
+the extreme tails touch (masc uniform min 0.0507, running-key profile max 0.0556). No shuffled-target control was run, because IC ignores token order and a shuffle would match by
+construction.
+
+| Design | Noise 0.23 | Mean IC | p05-p95 | Target IC 0.0420: share of controls below it |
+|---|---|---|---|---|
+| masc | clean | 0.0779 | 0.0689-0.0881 | 0.000 (min 0.0639) |
+| masc | profile | 0.0795 | 0.0691-0.0929 | 0.000 |
+| masc | uniform (worst case) | 0.0643 | 0.0565-0.0746 | 0.000 (min 0.0507) |
+| running key | clean | 0.0409 | 0.0382-0.0445 | 0.740 |
+| running key | profile | 0.0425 | 0.0390-0.0467 | 0.447 |
+| running key | uniform | 0.0399 | 0.0376-0.0429 | 0.900 |
+| homophonic K=26 | clean | 0.0464 | 0.0412-0.0518 | 0.075 |
+
+**Result.** The target's base-code profile is flat. Its IC is 0.0420, below all 300 masc controls, including the
+worst-case uniform-noise ones (lowest 0.0507). Stripping the marks merges signs, and merging can only raise IC, so the
+true marked-sign profile is flatter still. **On this statistic a one-sign-per-letter substitution of French on the base
+codes is excluded at this N and the measured error.** This is a design exclusion by a statistic that does not depend on
+solver power, with its matched control beside it. It is not a solver negative. It also explains A2-LAG3's result: the
+masc anneal gave five signs to `e` because a flat profile forces that. The profile fits running key (target at the
+45-90th percentile) and is at the low edge of homophonic K=26 (7.5th percentile). It does not separate those two, and
+it says nothing for or against a nomenclator or syllabary, whose IC depends on the code list. 0 tokens read
+(H 0, C 0, S 0, M 0, I 0). The status line is unchanged (`open`).
+
+**What this changes in the ladder.** masc on base codes moves from "untestable at this error (A2-LAG3)" to "excluded by
+IC, control-backed". A better image no longer needs to re-test masc. Families still live: homophonic (only score-based
+negatives so far, at `solve_l2.py`), running key or another polyalphabetic, nomenclator, and syllabary/wordcode (controls
+below gate, WC-LAGARDE2). A running key in a 1577 Orange-party field letter would be unusual for the period. The numeric
+sign set 1-24 looks like letter positions, but this is not tested here.
+
+**Next cheapest step:** a periodicity test (IC by period 1-12 and the Kasiski / Friedman statistic on the base codes,
+with running-key, periodic-Vigenere and homophonic K=26 controls at N=229 and error 0.23), scripts only, about USD 1.
+It separates a periodic polyalphabetic from homophonic or running key. If nothing separates, the target waits for new
+material: a sharper image of KHA A 11/XIV C/M-12 to lower the 20-25 % error, or more same-system ciphertext such as
+Gachard, Correspondance de Guillaume le Taciturne.
+
+Requests: none (no network). Vision: 0 reads, 0 subagent calls. New files: `families/ic_design_check.py`,
+`families/ic_design_check.tsv`.
+
