@@ -1,0 +1,95 @@
+You are reconciling two blind transcriptions of a 1589 French cipher letter (BnF fr.4712 f.7r) from the images.
+Use the Read tool on each crop below (and only these). You get no key and no expected values; settle everything from the ink.
+
+The page is clear French with short runs of cipher digit groups in the line; small interlinear writing (a period decipherment
+"gloss") stands above some runs. Each band crop shows about three text lines; segment s1 covers region x 0-2400, s2 covers
+x 1100-3500 (they overlap, x 1100-2400 appears in both). Coordinates in the readings below are REGION x.
+
+Crops (bands L06, L07, L08, L09, L10):
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L06_s1.jpg  (region x 0-2400, y 1710-2088; crop pixel x + 0 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L06_s2.jpg  (region x 1100-3500, y 1710-2088; crop pixel x + 1100 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L07_s1.jpg  (region x 0-2400, y 2028-2404; crop pixel x + 0 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L07_s2.jpg  (region x 1100-3500, y 2028-2404; crop pixel x + 1100 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L08_s1.jpg  (region x 0-2400, y 2344-2720; crop pixel x + 0 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L08_s2.jpg  (region x 1100-3500, y 2344-2720; crop pixel x + 1100 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L09_s1.jpg  (region x 0-2400, y 2660-3010; crop pixel x + 0 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L09_s2.jpg  (region x 1100-3500, y 2660-3010; crop pixel x + 1100 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L10_s1.jpg  (region x 0-2400, y 2950-3318; crop pixel x + 0 = region x)
+- /home/user/cipher-lab/ciphers/fr4715-vieuville-pool/images/f4712_7r/f7r_L10_s2.jpg  (region x 1100-3500, y 2950-3318; crop pixel x + 1100 = region x)
+
+Pass A readings for these bands (TSV: band, line_in_band, run, x_start, x_end, cipher, gloss[x-range], conf, note).
+Pass A conventions: [lo] = looped glyph; ' before a group = dot above; '' = two dots; [vbar] = bar; [...] = letter-like glyph.
+L06	3	1	430	790	6[a][.] 21 '16 '29 '[lo]7	fort[450-540]|de[575-645]|ligue-[685-810]	M	preceded by clear 'orux'; dots above 1 of 16 (~590), 2 of 29 (~665), [lo] (~745); dot below 9 (~685); followed by faint large 'Al' flourish (820-940) and 'ſixruze' (965-1190), taken as clear, no gloss
+L06	3	2	1210	2445	4[lo]3 5 70 23 93 50 95 30 93 25 17 52 31 [lo]3 [lo]5 73 ''12	quel[1165-1265]|me[1330-1390]|ſeulz[1415-1640]|Tuaede[1755-2110]|ſon[2160-2240]|ſhau:[2275-2440]	M	the two dots over 12 (~2405, ~2435) may be the colon of gloss 'ſhau:'; a large circle is drawn round part of the gloss at 2010-2110; '5 0' at 1600-1630 slightly spaced; followed by clear '(Par ce quil'
+L07	1	1	2440	3300	[f-like glyph] [crossed S/g-like glyph] [m] [P with cross-stroke] [.]6 1 6 '33 23 [vbar] 95 12 4 60 63	d.-[2665-2740]|mez[2770-2860]|ex[2880-2950]|tremite—[2950-3240]	M	preceded by clear 'mest-'; dot at mid height left of first 6 (~2690); dot above first 3 of 33 (~2810); no gloss over 2440-2660
+L07	2	1	270	540	95 23 5[f-like glyph]		L	short group at line start, no gloss; next glyph is a circled '5:' (590-660) then clear 'privement'; last glyph may be 7 or a letter
+L07	3	1	260	1160	22 20 23 12 41 44 62 2 2 70 [lo]5 94 ~11 23	fere[265-435]|en[495-535]|dui:[585-700]|d-[730-790]|pourray[830-1095]	M	dots at ~220 and ~270 near gloss start; stroke above first 1 of 11 (~1055-1080) may be the tail of gloss 'y'; a gap after '62 2'; followed by clear 'mest faut'
+L08	3	1	2115	3220	[d] [f-like glyph] [a][.] 67 [h] [m] 19 '46 22 60 [lo]5 93 12 3 67 '16	a[2390-2430]|qui[2475-2525]|de[2600-2640]|mon[2690-2780]|u[2800-2820]|re[2850-2880]|e[2905-2935]|Gramont[2975-3180]|d.[3180-3240]|-[3260-3295]	L	preceded by clear 'parolle'; leading [d] may be clear text (d'); no gloss over 2115-2385; dots above 4 (~2565), 3 of 93 (~2950), 1 of 16 (~3195); gloss 'mon..re' and 'Gramont' poorly legible; 12 3 written close
+L09	1	1	270	795	'15 '42 '26 ~7 '19 '42 '99	Maist-[155-345]|pr[355-410]|le[455-510]|Roy[545-625]|ce[655-685]|pr[720-755]|Sod[790-860]	M	line is fully visible in L09 band; gloss visible at bottom of L08 band; a dot sits over each pair (~315, 370, 455, 595, 677, 752) at the gloss baseline -- may be gloss i-dots/abbreviation dots rather than cipher marks; clear bar above 7 (525-570)
+L09	1	2	1470	3325	[P-like glyph] 9 [k-like glyph][.] 67 95 24 73 95 24 1 5 0 23 75 23 1 73 63 24 1 1 24 60 23 75 23 '47 '20	tenter[1670-1940]|re[1860-1930]|le[1975-2040]|derniere[2075-2370]|e[2340-2370]|une[2440-2520]|nemie[2530-2660]|de[2690-2740]|qui[2770-2850]|c[2945-2960]|r~[2975-3000]|[bar][3010-3080]	M	preceded by clear 'Je suis apprez pour'; 2 in '24 1 1 24' at ~2780 may be 3; a large flourish below 4 1 (~2680-2720) belongs to the gloss of line 2; dots above 4 of 47 (~3195) and 2 of 20 (~3277); gloss 'tenter' overlaps 're le'; 'une nemie' uncertain
+L09	2	1	265	680	2[.]5 20 [lo]5 1 65 23	Lu[180-235]|f.or[255-370]|a[395-430]|-[455-480]	M	mid dot between 2 and 5; spacing '1 65 23' could also be '16 52 3'; followed by clear 'Lus fiece se qui Je pourrez plus'
+L09	2	2	1760	3380	16 30 0 0 72 75 93 1 24 30 64 60 23 74 95 46 23 74 50 23 93 23 1	de[1720-1760]|[D-cross sign][1815-1855]|r[1920-1950]|gemma..[1980-2140]|[bar]Duce[2170-2380]|e[2340-2370]|gemmar[2400-2550]|[circled 6-like sign][2650-2700]|Jay[2770-2850]|Lciuu..[2905-3055]	L	gloss mostly illegible; dots above 2 of 23 (~2928) and 7 of 74 (~3018) may be gloss dots; final '231' written close
+L09	3	1	265	3330	[lo]5 74 95 [lo]0 64 95 24 25 70 1 23 [lo]3 1 5 95 23 7 [5 with flourish] 23 20 25 64 95 23 19 27 65 93 1 24 5 2 70 24 17 46 3 65 64 24 94 [vbar]	ont[255-385]|qui[450-560]|te[580-650]|e[625-640]|a[690-710]|pres[780-900]|ſæ[970-1045]|t[1110-1125]|ende[1170-1295]|de[1240-1300]|faite[1330-1520]|re[1920-1970]|fo.[2050-2140]|cure[2190-2380]|ſi[2425-2460]|pre[2490-2560]|venu[2580-2690]|daue[2715-2850]|-[2880]	M	whole line is cipher, no clear text; short dash before 95 at ~1870; possible dots above 1 of 19 (~2060) and 2 of 27 (~2140) -- uncertain, not coded; 3 and 1 at ~2340/2380 written close; no gloss over 2900-3330
+L10	1	1	265	3295	4 [lo]5 [5 with hook/stroke above] 70 94 10 50 64[.] 24 74 95 11 [vbar] 70 1 [lo]5 [lo]4 74 23 22 [vbar] 65 [lo]5 68 94 73 63 65 25 95 63 [lo]5 73 65 [lo]5	Puzcienz—[415-830]|aux.[1105-1230]|fus[1365-1420]|ſh[1490-1540]|na[1575-1635]|Somunicat.[1985-2400]|et[2345-2400]|on[2400-2490]|contre.[2510-2850]	M	whole line cipher; gloss visible at bottom of L09 band; third glyph is a 5 with a hook/stroke above (~370-395); dot after 64 (~875, baseline); 6 of 68 has a flourish above (~2265); no gloss over 265-415, 880-1100, 1640-1985, 2850-3295
+L10	2	1	265	3155	73 95 12 4 65 24 93 [vbar] [-] 47 70 12 4 7[.]4 75 1[lo]5 73 95 27 25 1 60 23 [lo]3 [lo]5 42 26 ~[lo] 19 4[lo] 27 79 25 [lo]4 [lo]5 60 24 1	ceux[475-650]|qui[780-870]|.[895]|prendront[950-1360]|Lii[1500-1555]|aumd[1590-1795]|io[1910-1960]|b.[2105-2140]|Aug[2215-2300]|~[2310-2360]|la[2405-2440]|fe[2490-2530]|Su[2600-2650]|.faute[2690-2880]|a[2890-2920]|fon[2930-3050]|uers[2985-3090]	M	dash after [vbar] at ~875; dot at baseline between 7 and 4 (~1170); bar above [lo] at ~2310-2360 is drawn with the gloss and may be the gloss's own stroke; 4 of 24 at end crossed by a gloss stroke; '26 [lo] 19 4[lo]' spacing uncertain; followed by clear 'Le'
+L06	1	no cipher: 'sut autre fois ... porter a moy par' ... 'maromaris'
+L06	2	no cipher: 'Antrotiqui ...' ... 'y adueztissau—'
+L06	3	'orux' | run 1 | 'Al ſixruze' | run 2 | '(Par ce quil ne .. Sault Le—'
+L07	1	'Vous advertir par ce porteur ... par deux porteurs ... mest-' | run 1 | (end of line)
+L07	2	(line start) | run 1 | '[circled 5:] privement par la desfaicte ... par st pol'
+L07	3	(line start) | run 1 | 'mest faut a propos ... datandre de Sod aucune aide ... sy longue—'
+L08	1	no cipher: 'est ne Sod sy reussi ...' ... 'La faisant aussy'
+L08	2	no cipher: 'de Sod [struck word] offenser ...' ... 'extremitez est (Personnes ..'
+L08	3	'quil courut arriuer (Je ne Sous ... parolle' | run 1 | (end of line)
+L09	1	(line start) | run 1 | 'Je suis apprez pour' | run 2 | (end of line)
+L09	2	(line start) | run 1 | 'Lus fiece se qui Je pourrez plus' | run 2 | (end of line)
+L09	3	(whole line cipher)
+L10	1	(whole line cipher)
+L10	2	(line start) | run 1 | 'Le'
+L10	3	no cipher: 'ne Sod Importunez ... plus auant de vos maux ... me Fistera a Sous dire ... qui Sod ayezsentz (da.'
+
+Pass B readings for the same bands (same columns). Pass B conventions: 8 = the looped glyph; ' before a group = dot above.
+L06	3	1	245	790	[o] [r] [u] [x] [b] [a] '21 16 29 '87	fort[440-560]|de[570-620]|ligue[640-800]	M	letter-like run 'oruxba' ([b] could be 6); dots above the 2 of 21 and the 8 of 87 sit just under the gloss baseline - may be gloss dots; 9 could be 5/g (dot below it)
+L06	3	2	1210	2445	48 35 70 23 93 10 95 30 93 25 17 52 31 83 85 73 12	qu'il[1170-1280]|ne[1310-1350]|peult[1400-1600]|guarder[1755-2100]|son[2150-2225]|Garni:[2280-2440]	H	small stroke over the 0 of 70 (looks like ŏ), not recorded as a mark; dots over 23 (~1500) and over 31 (~2400) taken as gloss punctuation (the '.' before 'ne' and the colon after 'Garni'), not recorded
+L07	1	1	2445	3300	[f] [S] [m] [P] 61 6 '33 23 [V] 95 1 24 60 63	d.[2665-2690]|ma[2765-2860]|extremite[2880-3225]	M	[S] is a ʒ/ꝗ-like glyph; [m] [P] letter-like; dot above the first 3 of 33 (~2812), below the gloss baseline; gloss ends with a long stroke to ~3320
+L07	2	1	270	405	95 23		H	no gloss above; followed by clear 'et principallement'
+L07	3	1	265	1160	22 20 23 12 41 44 62 27 08 59 ~41 12 3	D.[190-225]|.fere[260-440]|en[495-530]|qui[580-645]|je[720-765]|pourray[835-1095]	M	bar above the 1 that follows 4 in '...594 1 123' (~1050), i.e. the 2nd digit of the pair as grouped; 08 = 0 followed by the looped glyph; first gloss word maybe 'De fere'/'J. fere'
+L08	3	1	2265	3240	67 [h] [m] 19 46 22 60 85 '93 1 23 67 16	a[2385-2420]|qui[2475-2540]|de[2600-2640]|moneure,[2708-2924]|Commissio[2936-3230]|d.[3230-3250]	M	preceding 'd fa.' read as clear (could be cipher letters); dots near 46 and 22 taken as the gloss colon/period after 'qui' and 'de', not recorded; isolated dot above the 9 of 93 (~2950); short underline below 23
+L09	1	1	270	830	15 42 26 ~7 19 42 99	Magistr[150-330]|le[450-500]|Roy[550-620]|a[660-700]|p?[760-820]|vo?[800-880]	M	bar above the single 7 (~545); gloss 'Magistr' starts in the margin left of the run; last two gloss words illegible
+L09	1	2	1470	3330	[P] [q] [x] 67 95 24 73 95 24 1 50 23 75 23 1 73 63 24 1 1 34 60 23 75 23 '47 '20	tentar[1670-1950]|le[1985-2030]|dernier[2080-2365]|nomme?[2440-2700]|qui[2770-2845]|est[2940-3000]	M	[P][q][x] letter-like after clear 'pour'; underline stroke under '41' (~2690) and struck gloss stroke under 23 (~2180); dots above the 4 of 47 (~3195) and the 2 of 20 (~3275) isolated at gloss level; heavy bar after gloss 'est'
+L09	2	1	270	680	25 20 85 16 5 23	En[180-230]|fora[250-430]	M	low dot between 2 and 5; gloss followed by a ~ stroke at ~470
+L09	2	2	1785	3380	16 30 07 2 75 93 12 43 06 4 60 23 74 95 46 '23 '74 50 23 93 23 1	de[1720-1765]|P̄[1820-1855]|regiment[1935-2135]|(struck)du[2170-2260]|regiment[2290-2620]|de[2650-2700]|Day[2775-2860]|Lieux[2905-3060]	M	dots above 23 (~2930) and 7 of 74 (~3020) sit just under gloss 'Lieux' - may be gloss dots; final 31 small; 'P̄' = P with bar (abbreviation)
+L09	3	1	270	3330	85 74 95 80 64 95 24 25 70 12 38 31 5 95 23 75 23 20 25 64 95 23 '19 '27 65 93 12 45 27 02 41 74 63 65 64 24 94 [V]	ont[255-380]|quite[450-650]|apres[675-900]|les[965-1040]|trouppe[1110-1300]|faite[1325-1540]|a[1920-1970]|les.[2050-2120]|Cure[2190-2380]|si[2425-2460]|pernicieuse[2475-2900]	M	this line is also cut at the top of L10, reported here only; dots above the 1 of 19 (~2060) and the 2 of 27 (~2145) under gloss 'les.' - may be gloss dots or dotted-1; 75 has a heavy stroke below the 5; tick above 45 is a gloss descender; 'trouppe' read 't riupe', 'Cure' verbatim (maybe 'ceux')
+L10	1	1	265	3295	4 ~85 70 94 10 50 64 .24 74 95 11 [V] 70 18 5 84 74 23 22 [V] 65 85 62 94 73 63 65 25 95 63 85 73 65 85	purcionz[415-780]|aux.[1100-1230]|prestin[1365-1640]|comunicat~on[1985-2450]|contr..[2475-2850]	M	bar above the 5 of the first 85 (~340); low dot between 4 and 2 of '64.24'; heavy hook under the second 2 of 22 and heavy ink on the 2 of 62; 63 with a hook on the 6; gloss words partly illegible
+L10	2	1	265	3165	73 95 12 46 52 49 3 [V] 47 70 12 47 47 51 85 73 95 27 25 1 60 23 85 42 26 ~8 19 48 27 79 25 84 85 60 24 1	ceux[470-665]|qui.[775-900]|prendront[950-1365]|les[1495-1540]|aximed[1585-1795]|id[1915-1970]|le.[2105-2135]|dagd[2210-2315]|a[2395-2440]|pre[2490-2545]|su.[2600-2650]|faulte[2700-2830]|a[2835-2860]|somer[2875-3090]	M	bar above the lone looped 8 after 26 (~2330) may be the underline of gloss 'dagd' rather than a mark; dash between 4 and 2 in 42; large curved stroke above final 241; ticks above 47 and 23 are gloss descenders; gloss 'aximed' and 'dagd' illegible
+L06	1	ont autrefois porte a moy ... mamans (all clear)
+L06	2	Autentique ... que les Roy advertissent (all clear)
+L06	3	[RUN1] Il s'excuse [RUN2] Par ce quil ne fault ...
+L07	1	Vous advertir ... par d'aux precedans [RUN1]
+L07	2	[RUN1] et principallement ... par St Pol
+L07	3	[RUN1] instant apres ... si eslongues
+L08	1	et ne vo² en ... le faisant aussy (all clear)
+L08	2	de vo² ... et Ansonnuisseur (all clear)
+L08	3	quil pourroit arriver Je ne vous faisire ma foy et parolle d fa. [RUN1]
+L09	1	[RUN1] Je suis apres pour [RUN2]
+L09	2	[RUN1] Je fus si que je pourrois plus [RUN2]
+L09	3	[RUN1]
+L10	1	[RUN1]
+L10	2	[RUN1] Le
+L10	3	mes vo² Importunero plus avant de vez maux ... que vo² ayessiez a (all clear)
+
+For every cipher run that has gloss writing above it, settle from the image:
+1. the digit groups as the scribe spaces them (one- or two-digit groups; write the looped glyph as 8);
+2. the mark above each group: one dot, two dots, a bar, or none. A dot that belongs to a gloss letter (an i-dot, a period
+   of the gloss) is NOT a mark;
+3. the gloss words over the run, as written (drop words that are struck through).
+Leave out non-digit glyphs from the cipher. Leave out runs with no gloss above them.
+
+Output ONLY TSV rows, no header, no commentary, one row per glossed run, columns separated by a single TAB:
+plain_line<TAB>plain_raw<TAB>cipher_line<TAB>cipher_raw
+- plain_line and cipher_line: the same id, BAND.line_in_band.run as in the readings (e.g. L01.3.2); use the pass A id where
+  the passes number a run differently, and a new id BAND.line.9N if neither pass had the run.
+- plain_raw: the gloss words separated by spaces.
+- cipher_raw: groups separated by spaces, each written N (no mark), dN (one dot), tN (two dots) or bN (bar), N being 1-2
+  digits, e.g. "67 d40 99 t12 b3 8".
+After the rows, write one last line starting with "#NOTE" giving, in under 60 words, the runs where you could not decide.
