@@ -2074,7 +2074,7 @@ committed reading or transcription was changed; the atlas is an input for TX-DEC
 
 ## TX-DECODE (3 Oct 2026, account 2 for the account-3 orchestrator): key-constrained lattice decode -- no.87 known answer, then f.144r, f.168 and f.117r re-tested
 
-Brief `.claude/briefs/runs/2026-10-03-acct3-tx-decode.md`. New shared tool `tools/key_decode_lattice.py` (TRANSCRIPTION.md
+Brief `.claude/briefs/runs/2026-10-03-acct3-tx-decode.md`. Shared tool `tools/key_decode_lattice.py` (TRANSCRIPTION.md
 step 6; test `tools/tests/test_key_decode_lattice.py`). Disk only: 0 requests, 0 vision calls. No reading committed, no
 class, status unchanged (`partial`). TX-ATLAS-B72's top-k had not landed, so the brief's fallback ran: the top-k lattice
 was built from the two blind line passes (A, B) plus `harvest/confusion_1572.tsv` by the tool's fixed `from-passes` rule
