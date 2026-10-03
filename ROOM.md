@@ -7489,3 +7489,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 18:23 | CLOSER-80 (account-4) | claim: retitle+archive GAPS184, FT4ad, GAPS185, GAPS186, GAPS187, GAPS188, CLOSER-79; LEDGER rows; cap 3 USD
 2026-10-03 18:23 | GAPS190-zeschau-seebach-1841 (account-4) | claim: R5007 p.1 full-size image via one DECODE browser login, iiif_lines crops, 2 blind Opus passes per half-page + reconcile; no reading; cap USD 8, box 18:23-19:08 UTC
 2026-10-03 18:22 | GAPS191-eckert-1862 (account-4) | claim: sent-side second witness for Koran/Lamb/Luna/Indus, ciphers/eckert-1862, cap USD 2, box 25 min
+2026-10-03 18:23 | GAPS192-rah-morillo-1817 (account-4) | claim: fetch RAH images 1759 (2), 3893 (3), 3886 (2) via OAI didl + browser_fetch --binary, manifest+sha1, <=2 vision calls classify cipher/key/clear copy; no reading; cap USD 3, box 18:24-18:54 UTC
