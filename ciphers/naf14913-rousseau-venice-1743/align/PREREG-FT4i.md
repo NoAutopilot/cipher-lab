@@ -28,3 +28,25 @@ Timeout change only: the controls are re-run with `--limit 60` (60 s per draw in
 (same script, n 40, seed 3, same gate and rule). Side effect of the script's own scaling, stated here: the real E0/E
 calls get 3 x limit = 180 s and the single-edit enumeration 60 s per edit; both resolved under 36 s at 15 s, so their
 results cannot change. Run order f213 then f249, serialized (one run at a time on the 4-CPU container).
+
+## Amendment FT4l (account-4, 3 Oct 2026, ~09:31 UTC by the clock, pushed before any registered draw is re-scored)
+Third instrument on these gates; it changes HOW a draw is solved, not the statistic, the draws or the gate.
+- Solver: `align/one_edit_seg.py --dec`. (i) An equivalent smaller CP-SAT model: variables only for repeated-code
+  occurrences; each run of f free groups is one gap constraint [f - wf + dd, 12(f + dd)]. (ii) E by decomposition: one
+  exact subproblem per edit class (wildcard in a free run, drop in a free run, each repeated occurrence released; the
+  position inside a free run does not change feasibility), 10 s each, single worker, Pool(4), early exit on the first fit.
+  Draw E = 1 if any class fits, 0 if every class is proved infeasible, unresolved if none fits and any class timed out.
+- Validation (run before this commit, no registered draw scored): f216v real E = 1 (2 s); f213 real E = 1 (11 s) with
+  exactly one of 107 classes fitting, W at group 73 (the second 368), as FT4i/FT4j; 0 timeouts (`align/real_f213_dec_classes.out`).
+  Sizing on UNREGISTERED draws (seed 99, f249): two draws that timed out at 60 s under one_edit.py resolved here
+  (129 and 132 classes, 0 fits, 0 timeouts, 131 s and 90 s wall). No seed-3 draw was run with this solver before the push.
+- Draws: the registered ones (seed 3, n 40, (s) then (g) as one_edit.main()). Every draw of a control being re-scored is
+  re-solved (per-draw identities of the old timeouts were not stored). f213 (s) stands as FT4j (0/40, all resolved).
+- Gate: unchanged (PREREG-FT4i): per pair PASS iff E_real = 1 AND each control's E=1 share <= 0.05, unresolved draws
+  counted E = 1. Share > 0.05 with any RESOLVED fits > 2 of 40: NON-INFORMATIVE in the real sense (one edit fits wrong
+  pairings). Share > 0.05 from unresolved draws only: NON-INFORMATIVE (power), and by rule 3 (third instrument) the
+  one-edit gate is then logged [retired] for this solver on that pair; next would be new material, not a fourth solver.
+- Run order and box: f213 (g) draws 0-19 then 20-39 (foreground, commit and push after each half), then f249 if the box
+  allows (s, g, halves). Stop before a half that would cross 80 pct of the 45-min box (09:20-10:05 UTC; line 09:56).
+  A pair not completed is reported as not scored, with its draw count, never as a partial gate.
+- Key rule: nothing enters or moves in key.tsv this step whatever the result.
