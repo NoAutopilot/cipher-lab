@@ -300,22 +300,55 @@ No other account's claim or commit on this folder in the 6 h before 12:22 UTC (l
 - Vision: 3 image reads by this worker (debug overlays and line-end check, downscaled), 0 subagents. Requests: none
   (images on disk).
 
+## GAPS108-florence-dieci-responsive: contact-sheet look at filze 7, 9, 22 for clear copies (3 Oct 2026, account-4)
+
+Runs the first "Remaining gaps" line (filza 7/9/22 premise coverage). All observations grade M (contact-sheet scale,
+about 600-900 px per leaf; nothing transcribed).
+
+- **Route.** One DECODE real-browser login (`tools/decode_browser_login.js 3758 <scratchpad> --max-files 0 --delay 1600
+  --listen <cmd>`), then `get` for the 30 filza 7/9/22 URLs in `images/manifest.json`; all 30 served HTTP 200 and all 30
+  sha1s match the manifest. (The first run died at `page.goto` with ERR_CERT_AUTHORITY_INVALID before the login form, so
+  no login was spent; the CLAUDE.md certutil fix was applied and the single login then succeeded.) Images kept in the
+  session scratchpad only, not committed (30 MB rule; re-fetchable from the manifest). Three contact sheets built
+  locally with PIL (filze 7+22, 9 leaves at 900 px tiles; filza 9 in two sheets of 11/10 at 700 px tiles; c. 243 rotated
+  180 degrees).
+- **Result: no clear copy (decipherment) of a cipher letter seen in filze 7, 9 or 22.** No archival "Decifrato ..." note
+  like c. 111's, and no clear leaf whose layout, date or subscription mirrors a cipher leaf, at this scale.
+  - Filza 7: cc. 61 and 70 (stamps N° 60?, N° 68) open with a clear Latin address of the Duke of Milan ("Dux Mediolani
+    etc. Papie Angleri[que] Comes ac Janue dominus") and run in symbol cipher; c. 70 has a clear Latin opening, cipher body,
+    clear dating line ending "1424"(?) and a subscription reading "Zaninus"(?); c. 59 (strip, N° 58) has the same ducal
+    heading and a subscription reading "Conradinus"(?); c. 66 (strip) mixes cipher and clear. **These subscriptions match
+    the name of Gabbrielli's key 4, "Zaninus et Conradinus", 1424, filza 7 (sources/florence/keys/58-6.pdf)**: a
+    candidate key for the filza 7 cipher letters, read only at contact-sheet scale (M), not tested. c. 71 is mostly
+    cipher-like script mixed with clear lines (not a clear copy); c. 102 (N° 100/101) is an Italian letter mostly in
+    clear with some cipher lines, dated "...1424"(?) -- not a decipherment of another leaf.
+  - Filza 9 (cc. 172-194, 21 leaves): all in clear Italian, no symbol-cipher passage and no decipherment note visible.
+    cc. 172-174 one hand, dated 1431(?); cc. 181-194 (except 193) subscribed by the same two names, read as "Laurentius
+    de Ridolfis(?) miles / Laurentius de Medicis(?)"; c. 193 in a larger hand, subscribed "Lorenzo ... / Lorenzo ...".
+    These look like original clear despatches, not copies of cipher letters; any cipher in them would be single words or
+    short groups invisible at this scale (a line-level look is the only way to rule that out).
+  - Filza 22: c. 243 is the wholly-cipher slip (Latin-looking plain words such as "et", "solet" visible between cipher
+    groups after rotation); c. 244/244v is a clear Italian letter with an address panel and the name "Nicholaus
+    Soderinus orator"(?) near the foot of 244v. c. 244 may be the covering letter of the c. 243 slip; it is not visibly
+    a decipherment of it.
+- Vision: 3 contact-sheet reads by this worker, 0 subagents. Requests: de-crypt.org 1 failed page.goto (cert, before any
+  login), then 1 login + RecordsView/3758 + 30 image gets; no other host.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
-- filza 7/9/22 premise coverage - blocker: not-attempted; check-solved for the filza 8 pair is done (3 Oct 2026, CS-A2-K: Guasti vols 2-3 read, web and blog check, premise check; status open) but clear copies like c.111 were not looked for among filze 7/9/22; next: contact-sheet look for clear copies, ~$1
 - filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf (GAPS106); next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
-- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
+- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 cc. 59/70 subscriptions read (M) "Conradinus"/"Zaninus", matching Gabbrielli key 4 "Zaninus et Conradinus" 1424; gated on a check-solved verdict covering filza 7; next: check-solved for filza 7, then a test of cc. 61/70 against Gabbrielli key 4 (then 3), and a line-level look at filza 9 for short cipher groups, ~$6
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
 ## Escalation (3 Oct 2026, A2-FLO)
 - [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
-- [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
-- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved
+- [x] clear-pages: filze 7/9/22 contact-sheet look found no clear copy (GAPS108, 3 Oct 2026); c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
+- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved; key 4 ("Zaninus et Conradinus") first, since cc. 59/70 subscriptions read (M) Conradinus/Zaninus (GAPS108)
 - [x] print: Guasti *Commissioni* vols 2-3 full-text read 3 Oct 2026 (CS-A2-K), letter absent; no edition or calendar of the Responsive exists; Gabbrielli vol. II and Cavalcanti not read
 - [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 3 internal gaps; cheapest next: contact-sheet look at filze 7/9/22 for clear copies like c.111 (one DECODE login, refetch from images/manifest.json), ~$1; then glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking; c.127 main-block crops complete, images/c127b2, GAPS106 3 Oct 2026), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
+Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking; c.127 main-block crops complete, images/c127b2, GAPS106 3 Oct 2026), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)
