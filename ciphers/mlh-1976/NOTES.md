@@ -117,3 +117,23 @@ pair -- Δ is literally ALGOL's own "quad"/delta character); S16 (double-bar ste
 letter or a mathematical ∓); the letter-shaped D/O ambiguity noted above. Left as a suggestion per rule 8
 of Usage (a worker does not start a test its brief did not name).
 
+
+## Web and blog check (GF-A2-12, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `MLH cryptogram solved son Israel parents 1974 Cryptogram ACA` (sender/recipient/date) -- Cipherbrain post 31 (23 May 2017) and Cipherbrain archive/category pages; nothing reports a reading.
+2. `"MLH" cryptogram "Milestone" Israel encrypted note parents California` (distinctive phrase, the envelope's return-address word) -- same post; also returns Cipherbrain "California cryptogram largely solved", opened: a basement-wall cryptogram in a California house (Gelotti, c.2016), a different item, not this note.
+3. `Wer löst dieses verschlüsselte Schreiben eines Sohns an seine Eltern Klausis Krypto Kolumne` (the German first post's title, 8 Apr 2016) -- search did not return it; opened directly from the URL in the 2017 post (below).
+4. `ciphermysteries MLH cryptogram` (descriptive title + Cipher Mysteries site query) -- no Cipher Mysteries post on this item; Wikipedia "List of ciphertexts" and Cipherbrain's top-50 list only.
+Site searches: Cipherbrain (queries 1-3, all hits on scienceblogs.de/klausis-krypto-kolumne); Cipher Mysteries (query 4: no post on MLH found); `cryptiana MLH cryptogram 1976 Israel` (Cryptiana: no cryptiana.blogspot.com or Tomokiyo page returned; one geocaching.com hit, GC6FNDV "Oded", opened -- an unrelated substitution-cipher puzzle cache, not this note).
+Hits opened and threads read:
+- Cipherbrain 8 Apr 2016 "Wer löst dieses verschlüsselte Schreiben eines Sohns an seine Eltern?" and its 12 comments (8-17 Apr 2016: SantaColoma x2, McCarthy x2, Schmeh x3, Schrödel x3, Mac-FD, Jane Smith): rebus, right-to-left, programming-language-symbol and astrology ideas; Schrödel reports the ACA's answer that Cryptogram's "MA 1978" issue still calls it unsolved. No plaintext offered or accepted.
+- Cipherbrain 23 May 2017 post 31 and its 15 comments: already on disk (sources/schmeh/posts/31-mlh.txt), read in full by bMLH (25 Sept 2026); the post itself re-checked by this worker (no reading; "has never been deciphered").
+Result: no decipherment or plaintext found on the open web or in these comment threads. Requests: WebSearch 5; WebFetch scienceblogs.de 2, geocaching.com 1.
+
+## Premise check (GF-A2-12, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions -- none: NOTES.md, spec and the two Cipherbrain threads mention only hypotheses (rebus, APL/ALGOL symbols, astrology, right-to-left, meaningless symbols): not found.
+(b) Other solvers' working files -- shallow clones 3 Oct 2026, dbourdeau/cyphersolver HEAD 810a777 (only research/top50 NOTES.md row "7, 31, 44 ... MLH 1974 ... low ... All far too short"; no targets folder, no rendering) and aaymeloglu/unsolved-ciphers HEAD d2800bb (no file names MLH; "mlh" matches only unrelated substrings): not found.
+(c) Physical neighbours -- the only witness is the single image printed by the ACA and reposted by Schmeh (images/MLH-Cryptogram.jpg); the envelope ("Milestone" in place of a return address) is described, not reproduced. No second sheet or clear copy is known: not found; the family's original letter is unreachable.
+(d) Recipient's side -- the receiving "office" is the ACA, which printed it in The Cryptogram Jan-Feb 1976 and, per Schrödel's 16 Apr 2016 comment relaying the ACA, again in an MA 1978 issue still calling it unsolved. The ACA issues themselves were not opened (members' archive; not found online this pass): not found in what was reachable; the ACA back issues are unreachable from here.
