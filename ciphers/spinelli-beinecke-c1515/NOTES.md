@@ -1,5 +1,5 @@
-partial
-
+found-solved
+Source of the prior decipherment: Klaus Schmeh, "Who can solve this encrypted text from the 16th century?", Cipherbrain, 24 Mar 2017, comments #7-#13 (Norbert, Thomas), https://scienceblogs.de/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/ -- both cipher passages of this leaf read with Domnina's key (snapshot verify2/cipherbrain_2017-03-24_tommaso.txt; AUDIT.md section 1, N0). Status set found-solved by GF4-BATCH6, 3 Oct 2026 (premise check below); was partial. Any later reading of this leaf is N0-type.
 INTAKE-SPINELLI, 27 Sept 2026: solver-ready intake (Layout, no cryptanalysis, no new reading, no class).
 Built from KEY-ADJACENT.tsv row 5 (rank 6) and `sources/cryptiana/web/henryvii.htm`, read in full this job
 (cp932-decoded per the file's own declared charset, not re-fetched -- already on disk).
@@ -2236,3 +2236,53 @@ comments #7-#13, with Domnina's 2016 key); no other decipherment or plaintext of
 `partial` for the transcription gaps above -- so the status word is left as the orchestrator set it; by the letter of
 `.claude/briefs/runs/2026-10-01-account4-webcheck.md` a thread carrying the plaintext reads `found-solved`, and that choice is
 flagged to the orchestrator in the ROOM.md done line rather than made here. Any later reading of this leaf is N0.
+
+## Premise check (GF4-BATCH6, 3 Oct 2026)
+
+Worker GF4-BATCH6 (account-4), 01:46-02:0x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
+"## Premise check": try to prove the item is already done, from material that exists before any reading. No cryptanalysis, no
+transcription, no vision call.
+
+- **(a) Decipherments the folder already mentions -- FOUND (this very item).** Every mention opened: (1) Cipherbrain, 24 Mar 2017
+  (Schmeh's post of this leaf's three pages), comments #7 (Norbert, p.1 passage in full: "et li dite che madama / Marg[h]erita non
+  vole arrettare la gu- / bernatione di Spagnia ... di quelo el Papa domandava.") and #8-#10 (Thomas, p.1 and the p.2 passage "SE E
+  BISOGNIO EL GUBERNATORE DI BRESSA ANDARAI SUI ??ERI"), #11-#13 on arrettare/accettare -- the snapshot
+  `verify2/cipherbrain_2017-03-24_tommaso.txt` read on disk; the live thread was re-read on 2 Oct 2026 (17 comments, last 29 Mar
+  2017, unchanged). Re-confirmed today by a WebSearch on two interior phrases ("arrettare la gubernatione" OR "conte Palatino che ad
+  altri"): the one relevant result is the same Cipherbrain post. (2) Tomokiyo, `sources/cryptiana/web/henryvii.htm` (Jan 2024
+  note): one phrase only, "la gubernation d'ispagnia". (3) Domnina 2015/2016 (`sources/domnina-2015-2016/`): key plus Leonardo's
+  period decipherment of the **2 July 1520** Antwerp letter (box 126 f.2583 / box 127 f.2611) -- a different item (AUDIT.md
+  section 1), not this leaf. Grade: the 2017 reading covers both cipher passages except two p.2 signs ('??'), so the plaintext of
+  this item is in print (a blog comment thread) -- the premise check's "find".
+- **(b) Other solvers' working files -- not found.** Fresh shallow clones 3 Oct 2026 (dbourdeau/cyphersolver at a4292cb, 2 Oct
+  2026; aaymeloglu/unsolved-ciphers at d2800bb, 27 Sept 2026), `grep -ril` for spinell / beinecke / "GEN MSS 109" over every file:
+  Bourdeau has `targets/spinelly1516/` (the BL Cotton Galba B V ff.40-41 despatch to Henry VIII, a different item) and a
+  SOLVED_CATALOGUE.md line "Spinelli family private cipher letters (Beinecke Library, GEN MSS 109; catalogue 306): Read in part"
+  with no working files, rendering or apply-key script for this leaf; Aymeloglu has only the DECODE catalogue rows (R8416, the
+  1516 Cotton item). `sources/solver-diffs/2026-10-03-bourdeau.tsv`: "no match".
+- **(c) Physical neighbours -- not found.** All three digitised canvases of OID 10844890 are on disk (H1: p.[1] and p.[2] carry
+  the cipher, p.[3] is the address leaf with a later archival summary, no cipher, no gloss, viewed at 1500 px); p.[1]/p.[2]
+  cipher lines were cut at native resolution for the H-step passes and carry no interlinear gloss. No slip or clear copy is in the
+  manifest (3 canvases; the record's "4pp." is the blank side of the address leaf, H1). Neighbouring letters in Filza 163 (H18,
+  H19, H19b: 24 Jan, 29 May 1519 and the other Barcelona letters) are plain, no decipherment of this letter among them. Native
+  resolution was not re-fetched for p.[3] today.
+- **(d) Recipient's side -- not found.** The recipient is Leonardo Spinelli (canon, Florence/Rome), a private person: no
+  documentary edition of his in-letters exists to my search. WebSearch "Leonardo Spinelli" canonico lettere Tommaso Spinelli 1519
+  edizione cifra: Treccani DBI "Spinelli" family entry and Beinecke Archivio Spinelli descriptions, no edition of the 1519 letters.
+  The Archives at Yale item record for this letter (`sources/archives-yale/2787659_spinelli_1519-09-07.txt`) and the GEN MSS 109
+  finding aid (`sources/archives-yale/11076_spinelli_archive_finding_aid.txt`, on disk) name no transcription or decipherment.
+
+**Verdict:** (a) found -- the plaintext of both cipher passages of this very leaf is in print (Cipherbrain, 24 Mar 2017), already
+classed N0 in AUDIT.md. Status word set to `found-solved` with that source on line 2, per this job's brief (the 2 Oct web check had
+flagged the same choice to the orchestrator). The sections "Remaining gaps" and "Escalation" above stay as the record of the
+transcription-quality questions (the 39 non-agreeing signs, p.2 signs 17-18), which are calibration of our transcription against a
+known reading, not an unread target. Rule 10: nothing here is new, first or unpublished.
+
+Requests this job: WebSearch 2 (this target); github.com 2 shallow clones (shared by all three targets of the batch);
+scienceblogs.de 0 (snapshot on disk, live thread re-read 2 Oct). No credentials.
+
+```
+$ python3 tools/intake_gate_check.py spinelli-beinecke-c1515   # before: exit 1, no Premise check section
+spinelli-beinecke-c1515: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
