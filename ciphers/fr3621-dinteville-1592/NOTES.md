@@ -428,6 +428,41 @@ Requests: gallica.bnf.fr 3 (manifest via gallica_folio.py, 1 overview at 1000 px
 read the cached file). Vision calls: 2 blind Sonnet passes plus 1 Opus reconciliation (2 contact sheets, 3 zooms, 1
 f.128 reference crop, 4 check crops). Rule 10: no novelty claim.
 
+## f.130r key repair: PRE-REGISTRATION (A2-DIN3, account 2, 3 Oct 2026, written 05:15 UTC before any repair is scored)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-din3.md` (LANE-A2PUSH2). Intake gate pasted:
+```
+$ python3 tools/intake_gate_check.py fr3621-dinteville-1592
+fr3621-dinteville-1592: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+Fixed before any repaired key is scored (script `f130/repair_f130.py`, outputs under `f130/repair/`):
+- **Rows that may change (free rows, 17):** the unkeyed f.130 signs v' (23), 0' (14), NEW:e-hook (1), NEW:N-like (1),
+  and every key_syl row with agree < 3 (graded M): zh, D, o, 1, c, 9, r, plus, div, T, h, B, n. Every other key_syl row
+  (z, v, y, a, p, 3, L, al, w, m, #, ., sq, 0, f, 4) is held at its key_syl value. II (f.128 only, unkeyed) stays unkeyed.
+- **Text scored:** f.130 ciphertext.tsv plus the f.128 cipher signs (f128/gloss_pairs.tsv `signs` column), in runs
+  broken by CLEAR words and by unkeyed signs, exactly as score_f130.py does. Free rows take one of the 26 letters (no
+  null option), so the run structure is the same for every key tried.
+- **Statistic:** the same fr16 4-gram mean log10 P/letter (NgramModel, n=4, k=0.01) over all 4-letter windows inside runs.
+- **Repair method:** constrained hill-climb (coordinate ascent): sweep the free rows in fixed order, for each try all 26
+  letters and keep the best, until a sweep makes no change (max 8 sweeps). Primary run seeded from key_syl (free
+  unkeyed rows start at 'e').
+- **Held-out check (f.128 period gloss):** for each free row whose sign has at least one aligned gloss letter in
+  `f128/align_syl.tsv` (multi-letter chunks contribute their letters), the repaired value must be one of those letters;
+  a value that contradicts the gloss is rejected and the row reverts to its key_syl value. v', 0' and the NEW signs have
+  no f.128 alignment and are unconstrained. Which rejections rest on a single gloss occurrence is reported, not used.
+- **Control:** the same climb + the same held-out rejection run from 1000 shuffled seed keys (key_syl's letter values
+  permuted among its keyed signs, seed 20261003, the A2-DIN2 shuffle), free rows climbed, fixed rows left at their
+  shuffled values. Gate: repaired-key score > repaired-shuffle p95 (one-sided); report real, mean, p95, max, rank. The
+  control can differ from the target on this statistic (its fixed rows carry different letters).
+- **Stability:** 20 further climbs of the real key from random free-row starts (seed 20261004); a repaired value counts
+  as stable if the primary value is reached in >= 14 of 20.
+- **Grades per token:** sign conf M -> M; held key_syl row meeting the A2-DIN2 C rule (agree >= 3, agree/n >= 0.5) -> C;
+  free row whose final value is aligned to that sign >= 2 times in f128/align_syl.tsv -> C (gloss-confirmed); free row
+  whose value comes from the repair, passes the held-out check, is stable, with the gate PASS -> S; otherwise M; unkeyed U.
+- A word-level reading is written from the final key with every token graded; decode.json gets the repaired key as a
+  second job and `tools/decode_key.py ... --check` must pass.
+
 ## Remaining gaps (A2-DIN, 3 Oct 2026)
 Read so far: f.130 530 of 530 signs transcribed and decoded at C 263 / M 225 / U 39 (f130/reading.txt, not yet a word-level reading); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
 - f.130 word-level reading (530 signs transcribed, key_syl decode beats 1000 shuffled keys 0/1000; C 263 M 225 U 39) - blocker: not-attempted; 39 signs unkeyed (v' 23, 0' 14, 2 NEW) and the weak key rows drift (f130/reading.txt); next: key repair (v', 0', weak rows) by a constrained hill-climb seeded with key_syl on f.130 + f.128 together, scored on fr16 with the same shuffled-key control, then a word-level reading for a verifier, ~$5
