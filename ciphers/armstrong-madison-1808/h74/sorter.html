@@ -688,7 +688,7 @@ function drawLine(sid, c, z, alive){
     if (!alive()) return;
     // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
     // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
-    const halfW = Math.round(w / 2 + 1800 / (z + 1)), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
+    const halfW = Math.round(w / 2 + Math.max(w * 0.6, 2400 / Math.pow(1.8, z - 1))), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
     const y0 = Math.max(0, y - padY), y1 = Math.min(im.naturalHeight, y + h + padY);
