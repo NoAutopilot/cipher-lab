@@ -1,7 +1,7 @@
 # Sign sorter, Florence Dieci c.127 (SORTER-FLORENCE, 3 Oct 2026)
 
-For the owner, whenever there is time; nothing waits on it. Not yet published: the account-3 orchestrator publishes it, with capabilities
-{"db": {}}, as for `../birago-fr3252-1571-72/sorter/README.md` (same build pattern).
+For the owner, whenever there is time; nothing waits on it. Published 3 Oct 2026 03:08 UTC by the account-3 orchestrator (private Artifact, capabilities {"db": {}}):
+https://claude.ai/artifact/U2VPJbNVAm5S5u4ThNTbU1 (ASKS row 107). Same build pattern as `../birago-fr3252-1571-72/sorter/README.md`.
 
 It covers ASFi, Dieci di Balìa, Responsive filza 8 c.127 (DECODE R3766, 26 Dec 1430), the A2-FLO3 pilot stretch only:
 the leaf's cipher lines 6-9 (crops `images/c127/c127b1_L01..L04_s1/s2`, here pages `c127_L01..L04`), 120 tiles cut from
