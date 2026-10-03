@@ -3817,6 +3817,37 @@ alphabet by sorting tiles instead of typing a TSV. Offline build, no model read 
 - Not done: no reading, no statistic, no class change. Suggestion (not run): a lighter page with numeral tiles pre-piled
   if the owner finds the digits in the way, by excluding the numeral-group x-spans read from ciphertext_ms.txt.
 
+## Step H74b (3 Oct 2026, 19:44-19:5x UTC, ARM-H74b for LANE-ARM-B)
+
+The account-3 orchestrator returned H74 (ROOM 19:39 UTC): with all 997 tiles in one pile '?', the two-step page had
+nothing to compare against and tools/sign_sorter/browser_tests/test_qa.js fails on a single-pile page. Rebuilt with
+provisional piles. Offline, no model read of any sign; these piles are starting labels for the owner to correct, not
+readings (the page lede says so).
+
+- Rule: `h74/piles.py` (docstring). Each tile re-cut with cut_tiles.py's ink rule, its own largest component kept,
+  48x48 aspect-kept bitmap; features as tools/glyph_atlas.py `feats()` (HOG 9/8x8/2x2, StandardScaler + PCA(40) +
+  unit scaling, plus log height/width relative to the median tile height, weight 3); k-means K = 36, n_init 10,
+  random_state 20260924 (glyph_atlas SEED). Pile naming: the pile medoid against every exemplar cut from Tomokiyo's
+  sheet (h59/person_pack/tomokiyo_38_types.png; 298 exemplars of 37 types -- type 02's dots fall under the 5 px area
+  floor that drops the grey "Total" captions) through the same scaler and PCA; named T<type> when the nearest
+  exemplar lies within the pile's own 75th-percentile member-to-centroid distance, else s<NN>. Family = stroke class
+  of the pile's median box (dot / flat / upright / compact).
+- Result: 36 piles, 21 named after a Tomokiyo type (T10, T14, T16a-b, T18, T20a-c, T29, T34, T35a-b, T36, T38a-d,
+  T60, T65a-b, T66), 15 neutral (s01-s36); sizes 4-80; table in `h74/piles.tsv`. Families: compact, dot, flat,
+  upright. A T-name is a shape-distance nearest neighbour on a 12-20 px sheet, nothing more.
+- Build: as H74 with the new labels.tsv and no `--auto-clusters` (`python3 tools/sign_sorter.py --signs h74/signs.tsv
+  --labels h74/labels.tsv --pages h74/pages.json --title "Armstrong 1808 shorthand" --focus h74/focus.tsv --lede ...
+  --out h74/sorter.html --data-out h74/data.json`): "36 piles, 997 tiles, 0 skipped". focus.tsv unchanged (page 3
+  line 13, 22 tiles). sorter.html 4.0 MB; h74/ about 8 MB.
+- Test: `PW_EXE=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node tools/sign_sorter/browser_tests/test_qa.js
+  ciphers/armstrong-madison-1808/h74/sorter.html` -> 133 PASS, 0 FAIL, "ALL PASS", exit 0 (phone and desk: layout,
+  focus box, larger view, take-out/undo, step 2 placing onto 37 pile cards, reload persistence, race, refused save).
+- Hand-off unchanged from H74: the account-3 orchestrator publishes h74/sorter.html with capabilities {"db": {}} and
+  h59/person_pack/tomokiyo_38_types.png as a supporting file. ASKS 92 left as it was (path and steps unchanged).
+- Not done: no reading, no statistic, no class change; the piles were not eye-checked by a model (H54/H55 retired
+  model readers here). Suggestion (not run): a contact sheet per pile (glyph_atlas sheet()) for the lane to glance
+  at before the owner starts.
+
 ## H72 finding-aid retry (ARM-A-H72)
 
 3 Oct 2026, 19:22-19:35 UTC, ARM-A-H72 (account-1 worker for LANE-ARM-A, session_011LsfWjmjanzg358BoQzfKe). Brief
