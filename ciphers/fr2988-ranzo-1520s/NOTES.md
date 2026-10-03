@@ -164,6 +164,8 @@ single month, since no single month can be justified as *the* date.
 
 **3 Oct 2026 (RANZO-NB):** still `open`. fr.3019 no.27 neighbours and no.36 (f.94) carry no clear copy, gloss or key; f.74r is marked "dupp^ta". Next: compare no.27 with fr.2988 f.2r-v ("dup.a") for a second copy (section "fr.3019 no.27 neighbours" below).
 
+**3 Oct 2026 (RANZO-DUP):** still `open`. fr.3019 no.27 (f.73r-74r) and fr.2988 f.2r-v are two copies of the same letter (41/44 and 57/66 tokens agree on the lines compared); both wholly cipher, so no crib. Next: full no.27 transcription diffed against Bourdeau c006/c007 for a measured reader error, about USD 13.5 (section "Duplicate check" below).
+
 Image confirmed online (full resolution, folios pinned exactly, ark discrepancy flagged above). CSP Venice
 (both volumes covering the full 1520-1533 range) and Sanudo vol. XLIII (bracketing the one hard date available)
 read in full text: no hit. DECODE's own hard filter (an attached "Transcription" document) checked and cleared --
@@ -277,10 +279,39 @@ fr.2988 f.2v's "dup.a" (Bourdeau) remains the other duplicate mark in the corpus
 Requests: gallica.bnf.fr 23 (1 manifest, 17 overviews, 5 native regions), >=1.5 s apart. Vision: 4 contact sheets
 + 7 crops read by this worker.
 
+## Duplicate check: fr.3019 no.27 vs fr.2988 f.2r-v (RANZO-DUP, LANE-A1 account 1, 3 Oct 2026)
+
+Method: Bourdeau's transcriptions (github.com/dbourdeau/cyphersolver HEAD a439937, 3 Oct 2026, sparse clone of
+`targets/vasto1527/n20/`, MIT; `ranzo_c006.txt`/`c007.txt` = fr.2988 views 6-7 = f.2r-v; `c017`-`c020` = ff.9r-10v)
+against 9 lines of fr.3019 read by this worker from the crops already in `images/fr3019/` (v114top_L01_s1/s2 =
+f.73r lines 1-3; v116break_L01_s1/s2 = f.74r around the "/." break). My tokens: `fr3019_no27_sample_tokens.txt`.
+Compared by exact trigram search over all six Bourdeau files, then difflib alignment. fr.2988's own images were
+**not** viewed this pass: the fr.2988 side is Bourdeau's transcription (rule 2: conditional on it).
+
+**Result: fr.3019 no.27 (f.73r-74r, "dupp^ta") and fr.2988 f.2r-v ("dup.a") are two copies of the same letter.**
+- f.73r lines 1-3 (44 tokens) align with c006 tokens 0-44: 41 of 44 agree; differences g1/s1 (pos 1), h158/h58
+  (pos 8), r41/t41 (pos 27), plus Bourdeau's "?2" at the end of his line 1 (not on f.73r line 1).
+- f.74r 6 lines around the break (66 tokens) align with c007 tokens 203-268: 57 of 66 agree. The "/." break on
+  f.74r falls exactly at Bourdeau's "/ |" in c007 (after "c227 L131 h10 r64 d10 t89 o3 h5"), so the layout change
+  to inline letter-number writing is in both copies. Differences: s113/g113, s77/g77, b147/h147, s6/g6, s116/g116,
+  "89"/g9, t137/r137, and an ink blot on f.74r (one token unreadable, X) that Bourdeau's copy reads cleanly.
+  Five of nine are fr.3019 "s" vs fr.2988 "g": either a copy difference or one reader's s/g confusion in this hand
+  -- **unsettled until the fr.2988 views 6-7 crops are read for those positions** (grade M on both sides).
+- ff.9r-10v (c017-c020) are a **different** letter: 10 shared trigrams of 821 (common function groups), 1 shared
+  4-gram, 0 shared 5-grams with c006+c007.
+- **No crib.** Both copies are wholly in cipher where compared (openings, the break, the inline section's start);
+  neither carries clear text, interlinear or gloss where the other is cipher. The signature "Hieronimo Ranzo" on
+  f.74r is clear in fr.3019; Bourdeau's c007 ends "... t10 /" with no signature transcribed (not checked on image).
+- What the pair gives: a two-witness transcription check of about 830 tokens (c006 428 + c007 396 Bourdeau tokens)
+  -- a measured reader error for the Ranzo corpus, and the readings to fix where copies disagree. It adds **no** pool
+  length (same plaintext), so Bourdeau's pooled-annealer negative is unchanged.
+Requests this pass: github.com 1 sparse clone. Vision: 1 batch (4 existing crops) read by this worker, 0 subagents.
+
 ## While waiting
 
-Next step that depends on nobody: compare fr.3019 no.27 (f.73r-74r, duplicata) token-for-token against fr.2988
-f.2r-v ("dup.a", btv1b9059908w views 6-7) and Bourdeau's other Ranzo transcriptions (`n20/ranzo_c0*.txt`): if one is
-the same letter, two copies give a free transcription check and pool length without new ciphertext; one-page overview
-compare of the opening 10 tokens, about $1.5. Otherwise the target needs a key-bearing source (Garbino's papers,
-not located) or the pooled cryptanalysis already run by Bourdeau (function-word skeleton only).
+Next step that depends on nobody: transcribe fr.3019 no.27 in full (ff.73r-74r, about 830 tokens, line crops by
+`tools/iiif_lines.py --ark btv1b9059994n --canvas 114/115/116`) and diff it token-for-token against Bourdeau's
+c006/c007, settling each disagreement on native crops of both copies (fr.2988 btv1b9059908w views 6-7); the s/g split
+above is the first item. Price: about 8 Sonnet line-crop passes x USD 1.5 + 1 reconciliation = about USD 13.5. The
+result is a measured transcription error for the pooled Ranzo/no.20 corpus, not a crib. Beyond that the target needs
+a key-bearing source (Garbino's papers, not located) -- no clear copy of either Ranzo letter has been found.
