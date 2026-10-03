@@ -1,0 +1,16 @@
+control seed 1: 936 signs, 555 units, 31 types; planted crib 'ichiorest' on units 23.20.26.10.22.y.21.8.13 found at [332, 444]
+CONTROL: 13 cribs, 6 restarts x 150000 iters each
+  ichiorest (TRUE)	-2.729	essariitalessecutiondellauolontadisuaefatlttmdintecomelargamentenellaettenderats
+  cardinale	-3.928	pllincdoimelleauscitoereiuaraneiodluiphiseserodtoeaararinoireueanemeiaoeetoaniol
+  francesco	-4.452	occiefnuiolcclroafctalidioeieuoiancoiohiadaoaantulreasiieoialtosumodisuoltaseiuc
+  guglielmo	-4.457	pmmieglaicnmmnueegiaanarietatooialmeipriereooalaanutolaiedionuoloscrilaonaaleiam
+  monsignor	-4.211	sooigmspiuloolocamiaelauictatariesocissiauareesaplotenaigdielernaruuinprlaengipo
+  suamaesta	-4.073	nttiesmoianttnueisaconorieloldaiomteingiiriaeomconulesoiepienuasdrarisoancoseiot
+  ilducadis	-4.114	riieaiuueaniinloeicannireotitosenuioerheeresanuaunltadieaoeanisdomaredusnandaeui
+  monferrat	-4.288	laairmfuideaaeocumenaelaicolottiafacilgiuautsafnueoosrliraisentrtedairutenarriua
+  lacorteet	-3.979	aeeitlosipieeianelrecinoinunuoticoeniamieoetdcoesiaudenitmidisteoapoiestiecetise
+  cheilrede	-4.113	iddarcitaiiddihuoclsminuauonoseamiduaigaouoetmistihotenaroatineeseiuaeteismeratd
+  nostrofra	-4.226	lrriontciedrrdoeenrsedemieueuaaietreilgiemeaaetscdouafeioaiadiafalemifcadsefoicr
+  ostrofrat	-4.229	paaefornesiaaisucooueioseuaoanteerauephecsctlerunisalroefmeliitrnisserntiuerfena
+  suofratel	-4.197	eeenasfinaceecuiosrieciunididilnefeinegnouoloefiicudotinainocaltimauntilcietanie
+CONTROL seed 1: ichiorest rank 1/13, margin +1.199 over best other (cardinale) -> PASS (gate: rank 1, margin >= 0.30)

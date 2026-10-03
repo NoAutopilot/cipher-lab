@@ -1,0 +1,16 @@
+control seed 2: 902 signs, 553 units, 29 types; planted crib 'cheauanti' on units 29.13.19.22.16.26.25.7.14 found at [136, 250]
+CONTROL: 13 cribs, 6 restarts x 150000 iters each
+  cheauanti (TRUE)	-3.124	enteanuntomoccorreiluimeneraeoroeutraciollemaniancoriuncoieoermareapuntoilsospet
+  cardinale	-3.978	ualuhaialsisccseermipeiuanaduraruiiaiceriininaeiacsemiacrmuoreinannopaiseiorooni
+  francesco	-4.076	escepicicenefferraotionesaineeieecuiafoettaneioaiferocifeoelarneiaedisueotleldau
+  guglielmo	-4.314	elmeprirmeneggeiigunionelorlearaeiaragoannoneroargeiuirgaueigineroetilaeonsastoa
+  monsignor	-3.996	inoihaiaooaommoeenteorainiesiueuiicedmrueeiagardamoetiamutiineageigloncoreaualic
+  suamaesta	-3.818	ostotrartinissiiiaclianosermoorooaeresaolleneraersiicarsocouainereediseialnondee
+  ilducadis	-3.981	rdirhocoinpniineedaiusprdleurtetrcoemistiilpaosmoineacoitaridepaelaaudonsietealo
+  monferrat	-4.290	lralpoeoaiaimmieenieatalrsifluiulecirmtueesarotromieieomuilunearisroarciteauaosc
+  lacorteet	-4.036	neenparaeauallaeecioetunedionsisnrrimltsoodutatmalaeiralsinoceutidteeeratoisiedr
+  cheilrede	-3.804	oedomuludoloccorreinueloeeiioaiaolaiaceannelrueaucorilucaioperlriertueaoensastea
+  nostrofra	-4.076	efrenereramannaiisltoamefaiteeieeriipnaettamoeapenailrenelessimoiaocofiaatueucai
+  ostrofrat	-4.003	srasdioianonooneetuiutosrcarslalsoiamotliicofitmioneuoiolusiteofacfeurintieleeci
+  suofratel	-4.223	ateauereeeuessennoiaeluatoifatitardicsltaaouaelcesenirestiaronuaioametdelaitimod
+CONTROL seed 2: cheauanti rank 1/13, margin +0.680 over best other (cheilrede) -> PASS (gate: rank 1, margin >= 0.30)
