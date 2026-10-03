@@ -990,18 +990,52 @@ base only if it clears that rule; nothing else changes the key. Output to `test_
 `test_f30r_top.tsv` is kept as is), and the per-occurrence T-minus-D scores for ehx to `ehx_occ_round3.tsv`, whose three
 outside occurrences losing > 3 bits are then checked by eye on their committed crops (`crops/f30_split/`).
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, 3 Oct 2026)
-Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split), from the eh/CROSS split section above; f.29r reading.txt per its own section.
+**Result (run 04:37 UTC, 45 s, `test_f30r_top_round3.tsv`).** Nothing is accepted, so the key is unchanged (key.tsv and
+key_extension_f30.tsv untouched; no reading regenerated). CROSS has no occurrences left after the split and was skipped.
+
+| sign | n | current | best | margin | p | recovery | outside delta / lose>3 | decision (round 2 for comparison) |
+|---|---|---|---|---|---|---|---|---|
+| E | 27 | B | I | 61.5 | 0.010 | 1.00 | +43.6 / 8 of 26 | reject by the breakage rule (round 2: I by 70.2, 7 of 26) |
+| eh (f.29r only) | 10 | D | D | 0.0 | 1.000 | 0.94 | 0 / 0 of 10 | D kept; T -57.1 |
+| ehx | 20 | T | T | 0.0 | 1.000 | 1.00 | 0 / 0 of 19 | T kept; D -152.1 |
+| B8 | 15 | -- | NULL | 79.8 | 0.614 | -- | -25.2 / 7 of 13 | reject (round 2: 81.9, p 0.634) |
+| HASH | 12 | -- | EMPEREVR | 3.3 | 1.000 | -- | -75.7 / 7 of 11 | reject (round 2: 10.8, p 0.970) |
+| q@L07 | 1 | B | P | 7.5 | 0.059 | 0.70 | +7.5 / 0 of 1 | reject, n = 1 (round 2: p 0.099) |
+| ss2, zb, Af, Tb, A2, q | 47, 43, 39, 22, 17, 9 | NULL, NULL, M, O, E, B | current | 0.0 | 1.000 | -- | -- | current kept |
+| INF, TRI, ev, nn | 4, 2, 2, 1 | -- | NULL, I, EMPEREVR, V | <= 8.3 | >= 0.465 | -- | -- | reject (n < 5, p) |
+
+Putting ehx = T in the base moved no other sign across the gate: the round-2 numbers shift by a few bits only (E 70.2 -> 61.5,
+HASH 10.8 -> 3.3) and every decision is the same. This is the third run of this instrument on the default sign list (round 1,
+round 2, round 3) with only the base changed between runs; the non-words in L01, L02, L11, L12 and L05, L10, L17, L26 are not
+reached by a single-sign value change it can detect (rule 3, third-attempt clause: retired for these hypotheses, not refuted).
+
+**The three losing ehx occurrences, by eye** (`ehx_occ_round3.tsv`; this worker, 3 image views of the committed strips, no subagent):
+
+| occurrence | conf | T - D (bits) | crop | shape | why T loses |
+|---|---|---|---|---|---|
+| f30r L26 pos 34 | h | -19.3 | `crops/f30_split/f30r_L26_34_eh.jpg` | c-bowl with crossed stroke, left of the HASH sign: ehx (m: the strip's red marker falls on blank paper right of the line end, so the glyph is identified by its neighbour order 5, ehx, HASH) | line end, right window empty, left neighbour unkeyed (·CT·) |
+| f30v L17 pos 18 | l | -18.1 | `crops/f30_split/f30v_L17_18_eh.jpg` | flat T-bar over a c-bowl: ehx (h) | follows m = T, so T gives TT |
+| f30r L06 pos 32 | h | -10.2 | `crops/f30_split/f30r_L06_32_eh.jpg` | small c-bowl with crossed stroke after the long-s ss2: ehx (h) | follows ...CT + null ss2, so T gives FAICT T OSS CES (cf. "faict tous ces"); D gives FAICT DOSS |
+
+All three are the ehx shape, not misread D signs; the losses come from T-T adjacency and a truncated window, which the n-gram
+model charges whether or not the T is right. Nothing here argues against ehx = T, and the key is not changed (grade S as before).
+
+`decode.py --check`: "reading up to date", exit 0. Grades unchanged from the A2-GRA3 section (f.30 extended H 1468, C 0, S 199, M 239, I 0, U 63;
+published key H 1468, S 16, M 229, U 256; f.29r H 532, S 1, M 30, U 5). No C, so a cryptanalytic result. No verifier flag:
+no reading changed. Requests this pass: none to any host. Vision calls: 3 image views by this worker, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3 and A2-GRA4, 3 Oct 2026)
+Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
 - f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base
-- f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: not-attempted; the hidden-sign tests for neighbouring signs were run before ehx = T entered the base (eh/CROSS split section); next: rerun the default test_f30r_top.py (round 3, ehx = T and the c recodes in the base) and check the 3 losing ehx occurrences against their crops, ~$1
+- f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: open-codes; round 3 of the hidden-sign test with ehx = T in the base accepts no sign change (A2-GRA4, 3 Oct 2026, test_f30r_top_round3.tsv) and the instrument is retired for these hypotheses (third run); the 3 losing ehx occurrences are ehx by shape on their crops
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
 - [ ] clear-pages: no clear text of these letters known; neighbouring LP iv(3) 6244/6245 summaries not yet aligned as cribs
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
-- [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed
+- [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: rerun the default test_f30r_top.py with ehx = T in the base (round 3) and check the 3 losing ehx occurrences on their crops, ~$1
+Verdict: keep going: 2 internal gaps; cheapest next: clear-pages, align the LP iv(3) 6244/6245 summaries of the neighbouring letters as cribs against the f.30 extended reading (disk only, C-grade if it holds), ~$3
