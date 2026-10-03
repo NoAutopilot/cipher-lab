@@ -318,3 +318,88 @@ pair with line crops (`tools/iiif_lines.py --image`).
 Requests: de-crypt.org 52 for the whole job (login flow 2; RecordsView 14 = 11 Siena + 3 Clairambault; full size 36 = 24 Siena
 + 12 Clairambault), 1.7 s apart, no challenge, one login. Thumbnails and ImagesList pages were not fetched. Vision calls: 2 in the
 job, 1 for this target.
+
+## READ2-SIENA (3 Oct 2026)
+
+Account 2 worker for LANE-READ2, brief `.claude/briefs/runs/2026-10-03-acct2-read2-siena.md`, 23:16-23:3x UTC (container clock).
+
+**Route.** One headless-browser login, `tools/decode_browser_login.js 4795 <scratch> --fetch <24 absolute filesrv URLs> --max-files 30
+--listen` (listener closed with `quit`, unused). All 24 full-size images came back HTTP 200, and **24 of 24 sha1s match
+`images/manifest.json`**. Images stay in the worker scratchpad, not committed; the one saved RecordsView page was deleted (it carried the
+account name). Requests: de-crypt.org about 29 (login flow 2, RecordsView 1, 24 full-size, 2 thumbnails auto-discovered), 1.5 s apart,
+no challenge. github.com 1 sparse shallow clone (dbourdeau/cyphersolver `targets/siena1421`, HEAD a439937, read/grep only, not copied).
+
+**Vision looks: 12** (one per record at <=1500 px long side; no. 15's eight pages in two 2x2 sheets), by the worker itself, no subagents.
+
+**Records table: `records.tsv`** (19 rows, one per page or page group). Summary:
+- Every page matches Bourdeau's piece table in content class. **None of the eleven records carries a key table**, and **no interlinear or
+  marginal decipherment is visible at 1500 px on any of them** (no. 7's faint letter glosses, reported by Bourdeau, are below that size,
+  so not contradicted). Dorses and address panels: nos. 6 P1, 7 P2 (address part), 9 P2, 11 P1, 17 P2, 24 P1 (lower part).
+- Open cipher, estimated from the transcripts' token counts and checked against the image for extent: nos. 6 (1,056), 24 P2 (2,638),
+  **24 P1 (637)**, 20 (1,230), 23 (3,702), 7 (363), 9 (46), 11 (409), 15 (229, pp. 2 and 6), 17 (282), 19 (118), 21 (107), about
+  10,800 signs in all.
+- **Two corrections to the folder's reading of the material, from the images:**
+  1. **No. 24 P1 is not excluded material.** Its top eight lines are the letter's own cipher running over onto the dorse (Bourdeau's
+     agent E transcribed them: 637 tokens, one pass, `transcripts/no24.txt` in his repository, in a different sign-naming convention).
+     bSIE2 read Bourdeau's "no. 24 P1 = dorse, not decipherment" as a reason to leave P1 out. That sentence only says P1 is not a
+     decipherment of anything. So the 6+24 pool on disk (3,689 tokens) lacks about 637 open tokens of the same system.
+  2. **No. 17's signature reads as the sender.** "Deditissimo Bart.o Tantucci" is written at the foot of P1, and the P2 address
+     is to a "magnifico et generoso cavaliere ... oratore". Bourdeau's table has "to Bartolomeo Tantucci?". This was read at 1500 px
+     only and is uncertain. It matters for which key ("quella di Balìa") applies only in the sense of who held it.
+- At a glance, the on-disk tokens fit the images. The no06/no24p2 legend (W, t, p, THETA, BOX, d+, m+) is the Latin-letter-like family
+  on nos. 6 and 24, and the no20/no23 legend (o, f, o^n, DIV, digits) is the fo/fö + ÷ family on nos. 20 and 23. This is a class
+  check, not a reader-error figure.
+- Observation only, not tested: no. 19's run signs (∇, F, 3, digits) look like the family of no. 13's alignment with no. 16
+  (Bourdeau: bologna = ∇ E 3 E 17 φ).
+
+**Known-key test (step 3).** No image carries a key table. The one untested pairing on file is Bourdeau's filed keys 25/14/4 against the
+two pooled systems: bSIE tested those keys on the seven short pieces only, and bSIE2 ran ciphertext-only on the pools. Script
+`specs/cheap-tests/siena-concistoro-2308/run_test_pools.py`, output `results_pools.json`, uses the same by-name sign matching as
+`run_test.py`. The statistic is the it-corpus 4-gram per-letter score of the decoded stream in order. Control (a) is 200
+value-shuffled keys in real order (it keeps coverage and the value multiset, so a degenerate key cannot win). Control (b) is 20
+order-shuffled cipher streams (coverage identical, asserted). Both can differ from the target for an order-sensitive score. The positive
+control is a real it passage of the pool's length, thinned at the key's coverage, with the correct map vs 200 shuffled maps; its power
+is the share of 20 passages where the correct map beats all 200.
+
+| pool | key | covered/tokens | real score | value-shuffled mean (max) | shuffled >= real | order-shuffled mean (max) | pos-control power |
+|---|---|---|---|---|---|---|---|
+| 6+24 | no25 | 749/3689 | -2.240 | -2.162 (-1.742) | 151/200 | -2.220 (-2.138) | 0.60 |
+| 6+24 | no14 | 1634/3689 | -2.106 | -1.962 (-1.580) | 171/200 | -2.072 (-2.013) | 1.00 |
+| 6+24 | no04 | 1158/3689 | -1.945 | -2.115 (-1.878) | 11/200 | -1.973 (-1.922) | 1.00 |
+| 20+23 | no25 | 1814/4932 | -2.132 | -2.170 (-1.763) | 58/200 | -2.112 (-2.058) | 1.00 |
+| 20+23 | no14 | 3182/4932 | -2.073 | -1.957 (-1.591) | 157/200 | -2.129 (-2.096) | 1.00 |
+| 20+23 | no04 | 1276/4932 | -2.098 | -2.130 (-1.728) | 67/200 | -2.113 (-2.087) | 0.75 |
+
+Result: **negative, matched controls.** At five of six cells the positive control has power 0.75-1.00 at the cell's own covered count. No
+real key beats all 200 value-shuffled keys at any cell, which is what the positive control does at those powers. The closest cell (6+24 /
+no04, 11 of 200 shuffled at or above) sits inside its own order-shuffled range (-1.945 vs order-shuffled max -1.922), and its decode
+("nmeangoohoogmeoooaupned...") is not Italian. Judge on that cell (rule 7, a FAIL reported as a FAIL):
+
+    $ python3 tools/judge_plaintext.py specs/siena-concistoro-2308.json --file <6+24/no04 decode>
+    FAIL language: score=-1.945, null_p99=-1.815, real_p05=-0.947, real_median=-0.82, mode=both, N=1158
+    ok   words: cover=0.647, min=0.6, real_text_median_cover=0.945
+    FAIL - siena-concistoro-2308 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Caveats:
+- By-name matching across different transcribers' sign names (agents B, E, H/I) is the test's weak point, as in bSIE. A shape-level sign
+  concordance between no. 14 or no. 25's legend and the pools is not excluded by this test.
+- Era gap of the it16 corpus, as flagged above.
+- The 6+24 pool lacks no. 24 P1's 637 tokens.
+
+Grade S (cryptanalytic negative with controls), no H or C token. Rows are in HYPOTHESES.md (prose, above the family_run table). Status
+unchanged: `open`.
+
+**Next steps per open piece (suggestions, not run):**
+- 6+24: bring no. 24 P1's 637 tokens into the pool. This needs a sign-name concordance between agent E's P1 names (SQ, SIX, FO, Z3 ...)
+  and the no06/no24p2 legend, done from crops of both faces. Then a line-crop reread of no06/no24p2 against the images for a
+  reader-error figure (about USD 3-4 per pair, `tools/iiif_lines.py --image`), so bSIE2's negative is bracketed (rule 3, error band).
+- 20+23: line-crop reread of no20/no23 for the reader-error figure (about USD 3-4); then the fo/fö groups as syllabic units (Bourdeau's
+  own note), as a family with its own matched control.
+- 7: crop the cipher block at native size to read the faint glosses Bourdeau used (nine values) and look for more (about USD 1-2).
+- 17: settle sender/recipient from a native crop of the foot of P1 and the P2 address (about USD 0.5). This names whose "cifra di Balìa"
+  to look for among R4773-style 16th-century Balìa keys.
+- 19: compare its run signs with the no. 13/16 alignment (Bourdeau's) as a known-key fit with value-shuffled and order-shuffled controls
+  (about USD 2). This is disk plus one crop.
+- 15: Bourdeau's candidate key R4764 (Buoninsegni, oratore a S. M.tà) has not been tested in this folder. A shape concordance from the
+  R4764 key image plus pp. 2 and 6 crops is needed first (one more DECODE record, about USD 3).
+- 9, 11, 21: no step on disk beyond these. 11 needs a Florentine key (Acciaiuoli 1478, none located); 9 and 21 are too short alone.

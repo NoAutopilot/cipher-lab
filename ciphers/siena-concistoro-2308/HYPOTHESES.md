@@ -2,6 +2,23 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+## READ2-SIENA, 3 Oct 2026: known-key transfer, Bourdeau keys 25/14/4 onto the pooled systems (prose row)
+
+Script `specs/cheap-tests/siena-concistoro-2308/run_test_pools.py`. The statistic is the it 4-gram per-letter score in order. The CONTROL
+numbers are the value-shuffled mean over 200 keys and the order-shuffled mean over 20 seeds, written beside the TARGET (the real key).
+Positive-control power is given at the covered count.
+
+| pool | key | TARGET | CONTROL value-shuffled mean (max), n>=target | CONTROL order-shuffled mean (max) | power | verdict |
+|---|---|---|---|---|---|---|
+| 6+24 | no25 | -2.240 | -2.162 (-1.742), 151/200 | -2.220 (-2.138) | 0.60 | negative |
+| 6+24 | no14 | -2.106 | -1.962 (-1.580), 171/200 | -2.072 (-2.013) | 1.00 | negative |
+| 6+24 | no04 | -1.945 | -2.115 (-1.878), 11/200 | -1.973 (-1.922) | 1.00 | negative (judge FAIL) |
+| 20+23 | no25 | -2.132 | -2.170 (-1.763), 58/200 | -2.112 (-2.058) | 1.00 | negative |
+| 20+23 | no14 | -2.073 | -1.957 (-1.591), 157/200 | -2.129 (-2.096) | 1.00 | negative |
+| 20+23 | no04 | -2.098 | -2.130 (-1.728), 67/200 | -2.113 (-2.087) | 0.75 | negative |
+
+The sign matching is by name across transcribers, so a shape-level concordance is not excluded (see NOTES.md READ2-SIENA).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
