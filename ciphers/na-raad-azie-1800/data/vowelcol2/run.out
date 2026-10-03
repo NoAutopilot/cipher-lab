@@ -1,0 +1,4 @@
+T: POS power 18/20; ALT pass 3/20
+X: POS power 20/20; ALT pass 19/20
+TARGET T 0.0095 p(adj) 0.4179 -> against H_rv
+TARGET X 0.0979 p(adj) 0.0100 -> cannot decide

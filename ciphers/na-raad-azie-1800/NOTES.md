@@ -811,17 +811,62 @@ cell-substitution gaps become too-short for this item. Outside the item: a sibli
 Smissaert/Prediger missive in 2.01.27.02 or the Batavia side, 1.04.17) is the only route to more ciphertext; VX-N03's
 25 Sept sweep found none in 2.01.27.02.
 
+## 3 Oct 2026 -- A2-RAA10: stronger bottom-digit statistics at N=370, power check first (rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Pre-registration** (`data/vowelcol2/PREREG.md`, commit 62043cad, pushed about 04:55 UTC before any scoring). Hypothesis
+H_rv: top = row (consonant before the vowel), bottom = vowel column over {e,i,a,o}. Two order-dependent statistics:
+**T** = max over 24 bijections of the per-token vowel-*trigram* minus unigram log-likelihood (nl20, pg10820 held out;
+bottom digit only); **X** = I(b_{i-1}; t_i) + I(b_{i-1}; b_i), label-free plug-in MI using both digits (the "bottom
+conditioned on top" form). Null: 200 whole-cell permutations (counts of both digits fixed, so each statistic can
+differ only through order; the control can differ from the target). POS = held-out windows, bottom = vowel, top = row of
+the preceding consonant in the word under a random 6-row partition (row 7 = none); ALT = random one-cell-per-letter 7x4
+table, as A2-RAA8. Lane gate: a statistic is used on the target only if POS gives p<0.05 in >=18/20.
+
+**Run.** `python3 ciphers/na-raad-azie-1800/scripts/vowelcol2_test.py` (seed 20261003, 17 s; `data/vowelcol2/result.tsv`,
+`run.out`). Implementation fix before the counted run: v1 folded each POS window with `judge_plaintext.fold`, which
+drops spaces, so the registered "same word" rule was not applied (consonants carried across word breaks); v2 folds per
+word as registered. v1 output kept (`data/vowelcol2/*_v1_wordbreak_bug.*`, POS T 16/20, X 20/20, ALT T 3/20, X 19/20,
+target X p(adj) 0.005 "cannot decide"). The fix also moved the window starts, which is what changed T (T does not use
+word breaks).
+
+| stat | POS power (gate 18/20) | ALT pass (false-positive rate) | target | registered verdict |
+|---|---|---|---|---|
+| T (vowel trigram) | **18/20** (v1 windows: 16/20) | 3/20 | T 0.0095 (POS 0.0094-0.0636), raw p 0.209, x2 = 0.418 | against H_rv |
+| X (cross-cell MI) | 20/20 | **19/20** | X 0.0979 (POS 0.062-0.141, ALT p90 0.127), p(adj) 0.010 | cannot decide |
+
+**Post-hoc power check (not pre-registered;** `scripts/vowelcol2_power.py`, seed 20261004, `data/vowelcol2/power_posthoc.out`):
+T's POS power on 40 fresh held-out windows at N=370 is **27/40 (0.68)**; pooled over all three window sets, 61/80 (0.76).
+The registered run met the 18/20 gate by sampling luck; T's true power at N=370 is about 0.7-0.8, below the lane's 0.9.
+
+**Result.** (1) X does not separate the designs: 19/20 non-vowel letter tables also pass, so the target's significant X
+(p 0.010) only shows that the 370 cells are ordered like *a* language under *some* cell design, not a vowel column (this
+does exclude a random-order or padded-noise body). (2) T, the only discriminating statistic (ALT 3/20), gives the target
+no vowel-trigram order (p 0.209, at the bottom edge of the POS range), but with power about 0.7 that is a weak negative:
+a true vowel column would be missed about one time in three or four at this length. Logged as **weak negative,
+under-powered at N=370** (not a design exclusion; rule 5, the target stays open). This is the second statistic tried
+against the vowel-column hypothesis at this N (A2-RAA8 bigram 9/20, A2-RAA10 trigram about 0.7): both are under-powered,
+so the bottom-digit order test is too-short at N=370 from this item, and only more ciphertext (a sibling letter)
+can turn it into a test. Rule 3's third-attempt clause is not yet triggered (two statistics), but a third vowel-order
+statistic at the same N is not the cheapest next step.
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
+(all local).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-RAA7)
 Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a reading; HYPOTHESES.md)
-- leaf 2 cipher body (370 cells) - blocker: not-attempted; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); leaf 3 adds no ciphertext (A2-RAA9: mirror bleed-through of leaf 2, r 0.541 vs controls <=0.162), so N stays 370 from this item; next: stronger bottom-digit statistic at N=370 with POS/ALT controls (see bottom-digit gap), and if that control fails, this gap becomes too-short pending a sibling letter, ~$1
-- bottom-digit order (vowel-column hypothesis) - blocker: not-attempted; A2-RAA8 vowel-bigram order test is a non-test (POS power 9/20 at N=370, post-hoc 15/20 even at N=1110); next: a stronger statistic (e.g. bottom digit conditioned on top digit, or consonant-row x vowel-column decode with a syllable model) with the same POS/ALT controls, at N=370 (leaf 3 cannot raise N, A2-RAA9), ~$1
+- leaf 2 cipher body (370 cells) - blocker: too-short; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); leaf 3 adds no ciphertext (A2-RAA9); the bottom-digit order statistics are under-powered at N=370 (A2-RAA8 9/20, A2-RAA10 trigram about 0.7 post-hoc), so N=370 is too short for the remaining tests; reopens with a sibling letter in the same system
+- bottom-digit order (vowel-column hypothesis) - blocker: too-short; A2-RAA8 vowel-bigram a non-test (POS 9/20); A2-RAA10 vowel-trigram met the registered 18/20 gate but post-hoc power is 27/40 on fresh windows (pooled 61/80), target p 0.209 = weak negative only; the label-free cross-cell MI passes 19/20 ALT and does not discriminate; reopens with a sibling letter (pooled N)
 
 ## Escalation (3 Oct 2026, A2-RAA7)
-- [n/a] siblings: no sibling cipher letter of this system found in 2.01.27.02 (VX-N03 sweep, 25 Sept 2026)
+- [ ] siblings: none found in the 2.01.27.02, 2.01.27.01 and 1.04.17 finding aids (VX-N03, 25 Sept 2026); the other 2.01.27.xx sub-series and the VOC-successor family were flagged unswept by VX-N03 (Established section)
 - [x] clear-pages: clear words around the grid used as cribs, strict mode no anchor, homophonic mode control fails (A2-RAA7)
 - [x] known-keys: invnr 317 Grasveld 1799 code tested against 209, negative by design mismatch (VX-CS06, A2-RAA)
 - [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
-- [ ] retry: the vowel-column order test (A2-RAA8, non-test at N=370, POS power 9/20 vs gate 16/20) with a stronger statistic at N=370, POS/ALT controls first; homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
-Verdict: keep going: 2 internal gaps; cheapest next: stronger bottom-digit statistic (bottom conditioned on top, or row x vowel-column syllable decode) at N=370 with A2-RAA8's POS/ALT controls, ~$1 (A2-RAA9: leaf 3 is bleed-through of leaf 2, N cannot rise from invnr 209)
+- [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
+Verdict: keep going: 0 internal gaps; cheapest next: sibling-letter sweep (same full-finding-aid-PDF search for cijfer/geheimschrift/chiffre) of the other 2.01.27.xx sub-series and the VOC-successor toegangen VX-N03 left unswept, ~$1 (A2-RAA10: N=370 is too short for the remaining statistics)
