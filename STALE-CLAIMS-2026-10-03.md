@@ -113,3 +113,22 @@ This table closes all 92 claims; ROOM.md history is not rewritten.
 | 90 | 2026-10-02 23:04 | A2-HAR5 (account 2, LANE-A2PUSH) | harley-287-1587 | superseded | already closed orchestrator 16:45: closed-interrupted by CLOSEOUT-A2 09:27 | - |
 | 91 | 2026-10-03 01:39 | VERIFY-CEPPO-WP: verifier (acct-3 queue, via LANE-A2PUSH) | birago-fr3252-1571-72,ceppo-nevers-fr3251-1570s | landed | already closed orchestrator 16:45: relabels accepted, PROGRESS f.47/f.87 3 Oct | - |
 | 92 | 2026-10-03 07:31 | FT4j-naf14913 (account-4) | naf14913-rousseau-venice-1743 | superseded | already closed orchestrator 16:45: by FT4k..FT4y, account 4 | - |
+
+## Sessions, account 3
+
+STALE-SWEEP-2 (account-3 worker, session_01JFJjJrt9VFcEh5FhvUZRYh), brief Part 2. The eight non-archived account-3 sessions the brief
+names, read with get_session at about 17:40 UTC on 3 Oct 2026 and judged from repository evidence. Archived after the row was written,
+except S1 (private, record only) and S7/S8 (out of scope, not archived). No row is `lost`, so no NOTES.md "## Remaining gaps" line was added.
+
+| # | session | title / role | last activity (UTC) | state | verdict | evidence | redo step |
+|---|---|---|---|---|---|---|---|
+| S1 | session_0113PwRRnYY4NLTGoND6ebFm | Debosnys R6 MAGCIPHER2 (private repo cipher-lab-private) | 2026-10-01 16:48 | idle, blocked (need input) | record only (private) | works in the private repository; its last summary names a periodical sweep blocked by HTTP 500s and asks to skip to the next RESULT.md step. Not read into this repository, not archived, per the brief | - (owner/private side) |
+| S2 | session_01Vtwc6CEJD2BSnYdzzY4f8W | F61 campaign runner 16, fr4715-f61-mayenne-1592 | 2026-09-29 20:52 | idle, review_ready | landed | ROOM 29 Sept 20:50 stop line: H423-H434 done, written under ciphers/fr4715-f61-mayenne-1592/family (h430_ctx_heldout.py, V9_PAGE.md); its open row H435 done by F61-FAMILY-14 (ROOM 22:18, meter of record 12/59/1/27 of 99); H436 waits on ASKS 89. Trigger trig_01Arb3N2BUqQijvuD5T31uv9 already disabled | - |
+| S3 | session_016uAW8YgYrVGtYiXdHpR1Rq | OUT-CHECK-TM3 (gate-7 re-check, Tomokiyo Birago note) | 2026-09-29 02:59 | idle, blocked (owner send) | superseded | ROOM 29 Sept 02:58 done line (3 fixes, links 7/7); the draft outreach/tomokiyo-birago-nevers.md was re-checked by OUT-CHECK-TOMO-BIRAGO2 (checked: 3 Oct 04:47) and sent by the owner 3 Oct ~05:15 (header status: SENT) | - |
+| S4 | session_01YRxhvLZems8u4Y34NV2jdX | VERIFY-CEPPO-D2-1 (audit of Birago f.21v, f.35, f.87) | 2026-09-29 00:28 | idle, blocked (asked for status.json) | landed | ciphers/ceppo-nevers-fr3251-1570s/AUDIT.md section "AUDIT: f.21v, f.35, f.87 (VERIFY-CEPPO-D2-1, 29 Sept 2026)"; the status.json step it asked for was done by the orchestrator after VERIFY-CEPPO-D2-2 (ROOM 29 Sept 02:09, status.json fields_source names both audits) | - |
+| S5 | session_019cJYkajEQyd7wXeaDJjfZF | Armstrong line B (standing), armstrong-madison-1808 | 2026-09-29 12:26 | failed (Fable seven-day limit) | landed | ciphers/armstrong-madison-1808/line-b/PLAN.md: every row B1-B41 done or dropped with its result written (B20, B31 reply-chain searches done; B10 is a placeholder covered by ASKS 80/77 and campaign rows H8/H9). Not restarted by orchestrator decision (ROOM 29 Sept 12:32); trigger trig_01Vt6e9NYCarWr6PqsxStwcd disabled 12:37 | - |
+| S6 | session_01Noix4JTUhtvS6M6LYxDmwg | cipher-lab dispatcher bootstrap (account 3) | 2026-09-29 23:13 | idle, review_ready | landed | dispatcher work is WORK-QUEUE.tsv claims and ROOM spawn lines (last 29 Sept); its trigger trig_01XVmPYQgC2Q6oHMGLbbvjMW disabled by the owner's stop 29 Sept 23:55 (ROOM). Not live; no unlanded job of its own | - |
+| S7 | session_01FjVZSWMkiqRej2VVuV4Ru4 | Gecko transfer features (repository leopard-gecko-mix) | 2026-10-03 16:03 | idle, completed | out-of-scope | not a cipher-lab session; it still has an enabled weekday trigger. Not archived, per the brief | - |
+| S8 | session_0184aEYLcRsRq1umMaZVciUW | GitHub connection (cipher-lab, side branch claude/github-connection-qhqufh, 21-22 Sept) | 2026-09-22 04:40 | idle, need input | out-of-scope | a connection test with no job (named non-job by the 28 Sept 16:28 dispatcher line); recorded as out-of-scope and not archived, per the brief | - |
+
+Counts, account 3: landed 4 (S2, S4, S5, S6), superseded 1 (S3), lost 0, never-started 0; record-only private 1 (S1), out-of-scope 2 (S7, S8). Archived 5 (S2-S6).
