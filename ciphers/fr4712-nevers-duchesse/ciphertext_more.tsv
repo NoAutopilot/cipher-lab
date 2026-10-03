@@ -1,0 +1,15 @@
+# DUCH-LEAVES (account-1 worker, 3 Oct 2026): census of fr.4712 ff.9, 11, 12 for further cipher (figure runs) in the f.10r hand.
+# Source: Gallica ark:/12148/btv1b9058289m, canvases f16-f22 viewed at 808 px (contact sheets images/contact_c16-21_808.jpg,
+# images/contact_c22_808.jpg) plus four regional looks at 1000-1400 px (f.9r, f.9v foot, f.11r, f.13r top). Canvases are
+# two-page openings; folio numbers read from the top-right foliation. No figure runs found on ff.9-12, so no native crop
+# batch and no blind digit read were made (brief: crops only "for any leaf with figure runs").
+# Columns: leaf	canvas	side_of_opening	content	figure_runs	new_tokens	grade
+leaf	canvas	side	content	figure_runs	new_tokens	grade
+f.9r	f17	right	memorandum of questions with answers (clear, French/Spanish), marginal notes; no figure runs	0	0	-
+f.9v	f18	left	blank leaf with address panel and four seal blots; foot carries arithmetic (100 x 24 = 2400; 96 + 24 = 120; 396 - 22), partly mirror show-through	0	0	-
+f.10v	f19 (dup f20)	left	address "A Madame la duchesse de Nevers" (M), otherwise blank	0	0	-
+f.11r	f19 (dup f20)	right	letter in clear, 23 lines; only date-like numerals in the last lines; no runs	0	0	-
+f.11v	f21	left	blank	0	0	-
+f.12r	f21	right	blank	0	0	-
+f.12v	f22	left	address "A Ma Duchesse de Nevers, Ma Dame" (M)	0	0	-
+f.13r	f22	right	OUTSIDE the brief's leaves (catalogue unit ff.9-12 ends at f.12): letter in clear with about 40 single code numbers (6-93) set in the text between dots, most with an interlinear gloss above (e.g. 25 "Paris", 82 "D. n.", 58 "R", M); a different layout and hand from f.10r's runs; not transcribed	n/a	not counted	-

@@ -1,5 +1,5 @@
 open
-Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 (fr.3995 f.9v) cannot cover f.10r (DUCH-KEY4, 3 Oct 2026: no no.4 code contains a 0, every f.10r line does) -- design mismatch, no power control or score run; next: view fr.4712 ff.9, 11, 12 (the other letters to the duchess) for more cipher in the same hand, ~USD 2, then key no.2 (fr.3995 f.3) figures only if more text turns up.
+Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4, design mismatch); ff.9, 11, 12 carry no further cipher (DUCH-LEAVES, 3 Oct 2026: 0 new tokens, pooled total stays 37, so no power control can pass and no key no.1 re-run is named); next: f.13r (canvas f22 right, just outside the ff.9-12 unit) is a letter with about 40 code numbers in clear text, most glossed interlinearly; transcribe its (code, gloss) pairs from native crops, two blind passes + 1 reconciliation, ~USD 6 at the Opus rate (3 vision calls x ~1.5 + floor), then test whether its codes (8 of f.10r's 29 code values recur there, M) give f.10r a crib.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -240,3 +240,27 @@ Next (Verdict line):
   duchess keys whose code set includes 0-numbers (10, 60).
 - Next step: view fr.4712 ff.9, 11 and 12 (Gallica btv1b9058289m, canvases near 17-21) for further cipher passages.
 - Key no.2 (f.3, mostly symbols) only if figures appear there.
+
+## Leaf census ff.9-12 (DUCH-LEAVES, account-1 worker for LANE-A1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-duch-leaves.md`. Gallica btv1b9058289m canvases f16-f22 viewed at 808 px as one
+contact sheet (`images/contact_c16-21_808.jpg`, `images/contact_c22_808.jpg`), then four regional looks at 1000-1400 px
+(f.9r; f.9v foot; f.11r; f.13r top, kept as `images/f13r_top_c22_4300_200_3500_2900_1400.jpg`). Per-leaf table in
+`ciphertext_more.tsv`. Requests: 11 to gallica.bnf.fr, 1.6 s apart.
+
+- Map: canvases are two-page openings. f17 right = f.9r; f18 left = f.9v, right = f.10r; f19 = f.10v | f.11r, and **f20 is a
+  duplicate image of f19**; f21 = f.11v | f.12r (both blank); f22 = f.12v (address "A Ma Duchesse de Nevers", M) | f.13r.
+- **No figure runs on ff.9, 11 or 12.** f.9r is a memorandum of questions and answers in clear; f.9v carries only seal blots
+  and arithmetic sums at the foot (100 x 24 = 2400, 96 + 24 = 120; partly mirror show-through); f.11r is a 23-line clear
+  letter with date numerals only. So no native crop batch and no blind digit read were made (brief: crops only for a leaf
+  with figure runs). New tokens: **0**; pooled total stays **37** (f.10r only). The loop-with-cross sign was not seen on any
+  of these leaves. Key no.1's re-run is not named: 37 tokens is the length DUCH-KEY1B already measured at power 0/20.
+- **Where more material is (not read, outside the brief's leaves).** f.13r, the right page of canvas f22, is a letter in
+  clear with about 40 single code numbers set between dots in the text (6 to 93 as glimpsed at 1400 px), most with an
+  interlinear gloss above in a second hand (e.g. 25 "Paris", 82 "D. n.", 58 "R" -- all M, one look, not transcribed).
+  Its layout differs from f.10r (single dotted codes in prose, not unbroken runs), so the hand and key may differ, and the
+  BnF unit "ff.9-12" ends before it. Codes seen there that also occur on f.10r: 10, 12, 21, 25, 56, 82, 92, 93 (8 of
+  f.10r's 29 distinct values; M, single glimpse). If the glosses read cleanly, they are period decipherment pairs (grade C
+  material for those codes) and the only route this target has found to f.10r: a known-plaintext crib rather than more
+  ciphertext for a power control.
+- Not done (outside the brief): transcription of f.13r and any leaf after f.13 (f.13v onward, canvas f23+).
