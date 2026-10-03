@@ -3,6 +3,7 @@
 
   python3 tools/homophonic_anneal.py CIPHER.tsv --corpus A.txt [--corpus B.txt ...] [--order 3]
           [--restarts 8] [--iters 40000] [--skip DOT,COL] [--seed 1] [--out result.json] [--fix 70=q,33=u]
+          [--alphabet ru-s3p-soft]  a plaintext alphabet other than the 24 folded Latin letters (A2P4-KAL4, 3 Oct 2026)
           [--noise 0.1]   error-tolerant solve: see anneal_noisy (LANE R6 CM2, 25 Sept 2026)
           [--robust 0.1]  bounded-loss n-gram scoring: see RobustModel (LANE R6 CM2)
           [--backoff]     interpolated absolute-discount n-gram of --order with recursive backoff: see BackoffModel
@@ -38,12 +39,40 @@ import argparse, json, math, random, re, sys, unicodedata
 from collections import Counter
 
 ALPHA = "abcdefghiklmnopqrstuwxyz"  # j->i, v->u
+DEFAULT_ALPHA = ALPHA
+CUSTOM_ALPHA = None  # set_alphabet(): a plaintext alphabet other than the 24 folded Latin letters (A2P4-KAL4)
+
+# Named plaintext alphabets for --alphabet (A2P4-KAL4, 3 Oct 2026). Case-sensitive: an upper-case letter is a letter
+# of its own, not a capital. The ru-*-soft alphabets are tools/data/ru19_soft's (README there: the softening rule).
+ALPHABETS = {
+    "ru-s3p-soft": "BDFHLMNPRSTWZabcdefghiklmnoprstuwyz",    # 35: S3' Latin, consonant+q merged into one letter
+    "ru-s3-soft": "BDFGHKLMNPRSTWZabcdefghiklmnoprstuwyz",   # 37: S3 Latin, consonant+q merged into one letter
+}
+
+
+def set_alphabet(alpha=None):
+    """Switch the plaintext alphabet for every later fold()/Model/anneal in this process. None, "" or "default"
+    restores the 24-letter default exactly (folding rules unchanged). Otherwise a name from ALPHABETS or a literal
+    string of distinct characters; fold() then keeps only those characters, case-sensitive, with no lower-casing,
+    accent folding or j/v merging -- the corpus is expected to be written in that alphabet already."""
+    global ALPHA, CUSTOM_ALPHA
+    if not alpha or alpha == "default":
+        ALPHA, CUSTOM_ALPHA = DEFAULT_ALPHA, None
+        return ALPHA
+    a = ALPHABETS.get(alpha, alpha)
+    if len(set(a)) != len(a):
+        raise SystemExit(f"--alphabet {alpha!r}: characters must be distinct")
+    ALPHA = CUSTOM_ALPHA = a
+    return a
 
 
 W_AS_UU = False
 
 
 def fold(text):
+    if CUSTOM_ALPHA is not None:
+        keep = set(CUSTOM_ALPHA)
+        return "".join(c for c in unicodedata.normalize("NFC", text) if c in keep)
     t = unicodedata.normalize("NFKD", text.lower())
     t = "".join(c for c in t if not unicodedata.combining(c))
     t = t.replace("ß", "ss").replace("j", "i").replace("v", "u")
@@ -62,6 +91,8 @@ class Model:
         tot = sum(self.uni.values())
         self.freq = {a: (self.uni[a] + 0.5) / (tot + 0.5 * len(ALPHA)) for a in ALPHA}
         self.k, self.V = k, len(ALPHA)
+        if CUSTOM_ALPHA is not None:  # anneal() reads model.alpha; the default path never sets it (unchanged)
+            self.alpha = ALPHA
         self.cache = {}
 
     def logp(self, g):
@@ -78,6 +109,8 @@ class RobustModel:
     anneal() and score() take it unchanged. Use for a stream believed to carry a share q of misread signs."""
     def __init__(self, model, q):
         self.m, self.q, self.order, self.freq, self.V = model, q, model.order, model.freq, model.V
+        if hasattr(model, "alpha"):
+            self.alpha = model.alpha
         self.floor, self.cache = q / model.V, {}
 
     def logp(self, g):
@@ -110,6 +143,8 @@ class BackoffModel:
         self.uni = self.n[1]
         tot = sum(self.uni.values())
         self.freq = {a: (self.uni[a] + 0.5) / (tot + 0.5 * self.V) for a in ALPHA}
+        if CUSTOM_ALPHA is not None:
+            self.alpha = ALPHA
         self.cache = {}
 
     def prob(self, g):
@@ -447,6 +482,12 @@ def main():
     ap.add_argument("--uni-weight", type=float, default=1.0)
     ap.add_argument("--out")
     ap.add_argument("--w-as-uu", action="store_true", help="fold w to uu in corpus and control (ciphers writing w as a doubled u sign)")
+    ap.add_argument("--alphabet", default="default",
+                    help="plaintext alphabet: 'default' (24 folded Latin letters a-z minus j, v; unchanged), a name "
+                         "from ALPHABETS (" + ", ".join(ALPHABETS) + "; case-sensitive, an upper-case letter is its "
+                         "own letter -- tools/data/ru19_soft/README.md gives the softening rule), or a literal string "
+                         "of distinct characters. With a non-default alphabet the corpus must already be written in "
+                         "it: fold() keeps only its characters and does no lower-casing or accent folding.")
     ap.add_argument("--control")
     ap.add_argument("--signs", type=int)
     ap.add_argument("--profile", help="control mode: replicate this CIPHER.tsv's sign occurrence multiset exactly "
@@ -473,6 +514,7 @@ def main():
     a = ap.parse_args()
     global W_AS_UU
     W_AS_UU = a.w_as_uu
+    set_alphabet(a.alphabet)
     texts = [open(f, encoding="utf-8").read() for f in a.corpus]
     model = BackoffModel(texts, a.order) if a.backoff else Model(texts, a.order)
     if a.robust:

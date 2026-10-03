@@ -52,7 +52,14 @@ a wild sign is annealed as its own pseudo-sign, i.e. a per-position free letter 
 unigram KL term keeping the letter distribution honest, so a family sign standing for several letters (Spinelli's HOOK)
 has a recovery ceiling of 1.0 instead of the merge= control's 1 - (merged - top)/M. The same param reaches the control
 and the target, so name both signs: --param wild=sM,HOOK (sM is the merge= control's merged sign). The info dict's
-`wild_letters` gives the letters each wild sign was read as, with counts. Test: tools/tests/test_homophonic_wild.py."""
+`wild_letters` gives the letters each wild sign was read as, with counts. Test: tools/tests/test_homophonic_wild.py.
+
+alphabet=NAME|CHARS (A2P4-KAL4, 3 Oct 2026, kaliningrad-2015): the plaintext alphabet, passed to
+homophonic_anneal.set_alphabet before the control and the solve -- a name from homophonic_anneal.ALPHABETS
+(ru-s3p-soft 35 letters, ru-s3-soft 37: Russian with each softened consonant its own letter) or a literal string.
+The corpus must already be written in that alphabet (tools/data/ru19_soft); fold keeps only its characters,
+case-sensitive. Absent (or "default") is byte-for-byte the old 24-letter behaviour. The judge needs the same
+alphabet in the spec's judge block ("alphabet": the same NAME or CHARS). Test: tools/tests/test_homophonic_alphabet.py."""
 import math
 import random
 import re
@@ -64,7 +71,8 @@ DESCRIPTION = ("homophonic substitution (homophonic_anneal.py, control = make_co
                "--param profile=target matches the target's own sign-count profile; --param noise=p redraws a "
                "share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses "
                "k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... "
-               "anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)")
+               "anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026; --param alphabet=NAME|CHARS sets the "
+               "plaintext alphabet, A2P4-KAL4 3 Oct 2026)")
 
 
 SYL_DE = "und,der,die,das,sch,ein,ch,en,er,ei,ie,st,ge,be,in,an,te,de,nd,ss,ck,au,ng,re"
@@ -193,6 +201,7 @@ def _inject_noise(seq, noise, target_counts, seed):
 
 def make_control(spec, seed, corpora, params):
     N, K = params["N"], params["K"]
+    ha.set_alphabet(params.get("alphabet"))  # A2P4-KAL4: default (absent) restores the 24-letter fold exactly
     if _is_units(params):
         return _make_control_units(corpora, N, K, seed, params)
     text = ha.fold("\n".join(corpora))
@@ -347,6 +356,7 @@ _LAST_UNITS = None
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     global _LAST_UNITS
     _LAST_UNITS = None
+    ha.set_alphabet(params.get("alphabet"))
     if _is_units(params):
         # corpora arrive as raw text for the target and as unit strings (the control's held-out rest) for a control
         # a unit string has no whitespace or punctuation; raw corpus text always has spaces

@@ -29,7 +29,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      matches the target's own sign-count profile; --param noise=p redraws a share p of control
                      tokens at the target's own type frequencies, GOLD-D1 25 Sept 2026; --param merge=k nulls=p
                      collapses k letters' signs into one symbol and makes a share p of tokens nulls, H22 28 Sept 2026;
-                     --param wild=sM,HOOK anneals each occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+                     --param wild=sM,HOOK anneals each occurrence of a wild sign as its own letter, H25 28 Sept 2026;
+                     --param alphabet=ru-s3p-soft sets the plaintext alphabet, A2P4-KAL4 3 Oct 2026 -- give the
+                     spec's judge block the same "alphabet")
   periodic_vigenere  Vigenere/Beaufort/variant-Beaufort, short repeating key (own solver; --param tabula=beau period=7)
   periodic_masc      period-P general substitution: P independent monoalphabetic alphabets in rotation, not a shift
                      (HES-PHASE 27 Sept 2026, hessen-1824): homophonic_anneal.py over composite (token, coset) signs,

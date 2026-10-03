@@ -24,6 +24,11 @@ Checks, all read from the spec's "judge" block (missing keys are skipped):
                 string across all lines) must match; for initialism targets such as the Somerton code
   words         "min_word_cover": 0.6  fraction of the candidate's letters covered by a greedy segmentation into corpus words
                 (>= 3 letters, plus a/i and common 2-letter words); compared with the same statistic on real text.
+  alphabet      "alphabet": a plaintext alphabet other than a-z (A2P4-KAL4, 3 Oct 2026): a name from
+                homophonic_anneal.ALPHABETS (ru-s3p-soft, ru-s3-soft) or a literal string of distinct characters. Every
+                check then folds by keeping only those characters, case-sensitive (an upper-case letter is its own
+                letter), and the 4-gram's add-k runs over len(alphabet) letters instead of 26; the corpora must be
+                written in that alphabet already (tools/data/ru19_soft). Absent: the a-z fold, unchanged.
 Verdict: PASS if every present check passes; exit 0. Otherwise FAIL, exit 1, with the failing checks named.
 The language model is a plain add-k 4-gram over letters; it is a gate, not a proof.
 """
@@ -220,7 +225,26 @@ FOLD = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "é": "e",
                       "á": "a", "ã": "a", "â": "a", "í": "i", "ó": "o", "õ": "o", "ú": "u", "ñ": "n"})
 
 
+_ALPHA = None  # judge block "alphabet" (A2P4-KAL4): set for the duration of one judge() call, else the a-z fold
+
+
+def _resolve_alphabet(a):
+    if not a or a == "default":
+        return None
+    try:
+        import homophonic_anneal as ha
+        a = ha.ALPHABETS.get(a, a)
+    except ImportError:
+        pass
+    if len(set(a)) != len(a):
+        raise SystemExit(f"judge alphabet {a!r}: characters must be distinct")
+    return a
+
+
 def fold(s):
+    if _ALPHA is not None:
+        keep = set(_ALPHA)
+        return "".join(c for c in s if c in keep)
     s = s.lower().translate(FOLD)
     return re.sub(r"[^a-z]", "", s)
 
@@ -240,6 +264,7 @@ def read_corpus(p):
 class NgramModel:
     def __init__(self, texts, n=4, k=0.01):
         self.n, self.k = n, k
+        self.V = len(_ALPHA) if _ALPHA is not None else 26
         self.c = Counter(); self.ctx = Counter()
         words = Counter()
         self.raw = ""
@@ -247,7 +272,10 @@ class NgramModel:
             L = fold(t); self.raw += L
             for i in range(len(L) - n + 1):
                 g = L[i:i + n]; self.c[g] += 1; self.ctx[g[:-1]] += 1
-            words.update(w.lower().translate(FOLD) for w in re.findall(r"[A-Za-zäöüßéèêàçùûîôâëï]+", t))
+            if _ALPHA is not None:
+                words.update(re.findall("[" + re.escape(_ALPHA) + "]+", t))
+            else:
+                words.update(w.lower().translate(FOLD) for w in re.findall(r"[A-Za-zäöüßéèêàçùûîôâëï]+", t))
         two = {"is", "it", "in", "to", "of", "on", "at", "be", "by", "he", "we", "me", "my", "no", "so", "up", "us", "an",
                "as", "am", "do", "go", "if", "or", "er", "es", "zu", "im", "du", "le", "la", "de", "et", "un", "il", "je"}
         self.words = {w for w, n_ in words.items() if n_ >= 2 and (len(w) >= 3 or w in ("a", "i") or w in two)}
@@ -261,7 +289,7 @@ class NgramModel:
         tot = 0.0
         for i in range(self.n - 1, len(s)):
             g = s[i - self.n + 1:i + 1]
-            tot += math.log10((self.c.get(g, 0) + self.k) / (self.ctx.get(g[:-1], 0) + 26 * self.k))
+            tot += math.log10((self.c.get(g, 0) + self.k) / (self.ctx.get(g[:-1], 0) + self.V * self.k))
         return tot / (len(s) - self.n + 1)
 
     def cover(self, s):
@@ -296,6 +324,16 @@ def pct(xs, q):
 
 
 def judge(spec, text):
+    global _ALPHA
+    prev = _ALPHA
+    _ALPHA = _resolve_alphabet((spec.get("judge") or {}).get("alphabet"))
+    try:
+        return _judge(spec, text)
+    finally:
+        _ALPHA = prev
+
+
+def _judge(spec, text):
     j = spec.get("judge", {})
     out = {"checks": {}, "pass": True}
     lines = [ln for ln in text.splitlines() if fold(ln)]

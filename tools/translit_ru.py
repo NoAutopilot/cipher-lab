@@ -26,6 +26,14 @@ letter-by-letter table this implements verbatim):
   s3   phonemic full: s3p, and also q before е and и after a paired consonant (vowel then e, i).
        q is then about 12.6 pct of letters.
 
+--soft-letters (A2P4-KAL4, 3 Oct 2026; kaliningrad-2015 cycle-4 rank 6): after the scheme, every q is merged into
+the Latin letter immediately before it, which is written upper-case and counts as a letter of its own (nq -> N,
+tq -> T, khq -> kH). This is the cipher's own convention A applied to the plaintext: there an apostrophe attaches
+to the sign before it and the pair is one sign. A word-initial q (none occur in s3p/s3 output) is dropped. The
+output alphabet is then wider than ALPHA (s3p -> 35 letters, s3 -> 37 on ru19) and is read with
+homophonic_anneal.py --alphabet ru-s3p-soft / ru-s3-soft. Note that H pools every soft letter written with a
+final h (kh, and zh/ch/sh/shch before a soft sign), exactly as the cipher's convention A would.
+
 Test: python3 tools/tests/test_translit_ru.py
 """
 import argparse
@@ -112,6 +120,11 @@ def transliterate_text(text, scheme):
     return "\n".join(lines)
 
 
+def merge_soft(text):
+    """--soft-letters: q joins the letter before it as one upper-case letter; a q with no letter before it is dropped."""
+    return re.sub(r"q", "", re.sub(r"([a-z])q", lambda m: m.group(1).upper(), text))
+
+
 def read_text_file(path):
     if str(path).endswith(".gz"):
         with gzip.open(path, "rt", encoding="utf-8") as f:
@@ -122,6 +135,8 @@ def read_text_file(path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--scheme", required=True, choices=SCHEMES)
+    ap.add_argument("--soft-letters", action="store_true",
+                    help="merge each q into the letter before it as one upper-case letter (see module docstring)")
     ap.add_argument("in_dir")
     ap.add_argument("out_file")
     args = ap.parse_args()
@@ -138,8 +153,11 @@ def main():
     out_text = "\n".join(l for l in out_lines if l)
 
     letters = re.sub(r"[^a-z]", "", out_text)
+    if args.soft_letters:
+        out_text = merge_soft(out_text)
+        letters = re.sub(r"[^A-Za-z]", "", out_text)
     for bad in ("j", "v"):
-        if bad in letters:
+        if bad in letters.lower():
             sys.exit(f"BUG: scheme {args.scheme} produced forbidden letter {bad!r}")
 
     out_path = Path(args.out_file)
@@ -150,7 +168,8 @@ def main():
     else:
         out_path.write_text(out_text, encoding="utf-8")
 
-    print(f"wrote {out_path} ({len(files)} source files, {len(letters)} letters, scheme={args.scheme})")
+    print(f"wrote {out_path} ({len(files)} source files, {len(letters)} letters, {len(set(letters))} distinct, "
+          f"scheme={args.scheme}{', soft letters merged' if args.soft_letters else ''})")
 
 
 if __name__ == "__main__":
