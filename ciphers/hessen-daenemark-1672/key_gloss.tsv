@@ -1,0 +1,19 @@
+code	value	grade	source	note
+229	[Berlin]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Berlin p2:17, p3:5 (2/2 agree); key 255 (1666) reads 229 = Frankreich: different list, HYPOTHESES.md
+303	[alliance]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed allian?e p3:26 (one letter unsettled); key 255 reads 303 = Munster (preview read, M): different list
+437	[Hertzog]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	pair 437 641 under one gloss "Hertzog von Ploen" p3:25 (C as a pair); split between the two codes inferred
+641	[von_Ploen]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	second code of the pair 437 641, see 437
+447	[Kayser]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Kayser p3:26 after a struck word
+601	[Dennemarck]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Dennemarck p3:3, p3:17 (2/2 agree)
+602	[Konig_in_Dennemarck]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	gloss "Der Konig in Dennemarck" p3:1 read by the reconciler only (crop edge); p3:26.3 unglossed
+605	[K.Dennemarck]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed K. Dennemarck p2:2
+651	[Cur_Brandenburg]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Cur Brandenburg p2:3, p2:25 (2/2 agree)
+653	[Cur_Brand.]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Cur Brand. p2:9; a second code for Kurbrandenburg (variant, not merged)
+681	[Cur_Brandenb.]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Cur Brandenb p3:6; a third code for Kurbrandenburg (variant, or 651 misread; sign M)
+634	[Holstein]	I	letter gloss (bold hand), transcription/pN_ciphertext.tsv	unglossed in-line; the marginal gloss "disgustirt / unvertanin / Holstein" beside run 1 (p3:15-17) aligns its third word with the run's only nomenclator group before 601: inferred, not read
+690	[Bleinenk?l]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Bleinenk?l p1:21 and p2:25 (p2 sign a reconciler override from 650); person, name unidentified
+768	[?ueco]	M	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed ?ueco / s?cco p3:20 (Sueco?), unsettled
+774	[Holland]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Holland p2:28
+775	[Gen._Staaten]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Gen. Staden p2:28
+834	[Rex_Daniae]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Rex Daniae p3:26
+5756	[Franckreich]	C	letter gloss (bold hand), transcription/pN_ciphertext.tsv	glossed Franckreich p3:2; 4-digit group (sign M: 575+6 or 57+56 possible)

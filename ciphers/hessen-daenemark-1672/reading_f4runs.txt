@@ -1,4 +1,0 @@
-hessen-daenemark-1672, f.4 (image 0004) two 2-digit runs only, single-eye native-crop reading (A2-HDK, M), not a reconciled transcription; key: HCPortal key 255 letter table (1666), key.tsv grade S. Tokens 36: M 31, U 5
-f4_run1	d i s g u [6d] i t u n d e r t a [bb] i n [634]
-f4_run2a	g e b d a s a [I]
-f4_run2b	w o l a b l [0] u
