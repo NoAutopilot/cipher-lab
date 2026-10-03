@@ -124,3 +124,36 @@ touched (orchestrator's, per LANE B3 common rules).
 
 Hosts: none (no network this test). Subagents: 0.
 
+
+## Web and blog check (GF4-BATCH17 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `Paul Rubin 1953 cryptogram Dulles Conant solved` -- history.com "When Killers Leave Ciphers", Cipher Mysteries (2015, 2018), Futility Closet (8 Jan 2019), Cipher Foundation page, Grunge listicle, Wikipedia "Unsolved!"; every one says unsolved, none gives a reading; (2) `"fodroscolmn" OR "frodoscolmn" OR "astereantol" Rubin cipher` (the most distinctive pseudo-words) -- Cipherbrain Top 50 no. 9, Cipher Mysteries 2018 posts, Cipher Foundation; no reading; (3) `Rubin cryptogram Philadelphia 1953 Bauer "Unsolved!" decipherment claim 2026` -- Bauer's book pages and the same posts; no 2026 claim found; model-solve family covered by (3) and by klausschmeh.net (the Sept 2026 AI-solve announcements are posted there) below.
+Google Books API (`country=US`, keyed, 1 call, `"Rubin" "Conant" "Dulles" cipher`): Bauer, *Unsolved!* (l8iXDwAAQBAJ, 2019 pbk) snippet "...Rubin cipher as the greatest challenge he faced..." with the cipher's DULLES/CONANT lines (FBI cryptanalyst's account, Bauer's chapter); LIFE, 2 Feb 1953 (KUIEAAAAMBAJ), the contemporary report ("Dulles" and "Conant", "apparently a reference to the new Secretary..."). Neither prints a solution in the snippet; Bauer's chapter is the standard modern account and calls it unsolved (Cipherbrain no. 9 quotes it so).
+Blog site searches: Cipherbrain (Top 50 no. 9, 16 May 2018, live re-fetch: 7 comments, 16 May 2018 - 31 May 2021): Thomas (Manhattan Project / Astounding Science Fiction idea), Davidsch and farmerjohn ("I saw ... Ulley-Dulles ... met Elli", "today at 2pm fly east") -- fragment guesses, no method, no response from Schmeh; klausschmeh.net `?s=Rubin`: Nothing Found (no 2026 solve post); Cryptiana blog `?q=Rubin`: no posts; Cipher Mysteries `?s=Rubin` (one 406 with a browser UA, one 200 with the descriptive UA): 4 Rubin posts -- "The cipher on Paul Emanuel Rubin's abdomen" (15 Feb 2015), "The Secret History of Paul Rubin, perhaps?" (22 Feb 2015), "Paul Rubin's cipher, revisited" (3 Jan 2018: 160-page FBI FOIA file obtained by Craig Bauer, FBI linguists' languages and methods tried; 2 comments, no reading), "Cracking the Paul Rubin Cipher" (5 Jan 2018: Pelling reads "aliacaui" as a word from Poul Anderson's 1950 story "The Helping Hand", the signature as "aliacaui PER" = Paul Emanuel Rubin, and 7469921 / R-QR6 as codebook-style indices -- a partial interpretation, explicitly not a decipherment; 12 comments 6 Jan 2018 - 23 Jul 2023: Rafal (invented language, "saw thing"), Charlotte and Hassan Boyouk ("aliacaui" as element symbols Al-I-Ac-Au-I), Amos G. -- none accepted by Pelling). Reddit r/codes (OAuth search `Rubin`): one thread, "The Cipher of Paul Emanuel Rubin, 18." (7 Jun 2022, flair Unsolved, 2 comments: a transcription from the linked PDF, nothing else).
+Solver repos (fresh shallow clones, 3 Oct 2026): dbourdeau/cyphersolver HEAD 841111b (2 Oct 2026) -- research/top50/NOTES.md row 9 "low ... No claimed solution of any standing", hcportal index entry only, no targets/ folder; aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026) -- no "rubin" anywhere. DECODE: no hit in the on-disk listings (sources/decode/*.tsv, 0 for "rubin"); a 1953 typewritten item is outside DECODE's usual scope.
+Requests: klausschmeh.net 1, cryptiana.blogspot.com 1, ciphermysteries.com 4 (incl. the 406) + 2 WebFetch, scienceblogs.de 1 WebFetch, oauth.reddit.com 1 (thread), googleapis.com 1, github.com 2 (clones, shared with yogtze-1984); all >=1.5 s apart.
+
+## Premise check (GF4-BATCH17 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment or clear copy: not found -- NOTES.md and the spec mention only the clear words Dulles/Conant and pseudo-words; nothing called a decipherment.
+(b) Other solvers' working files: not found -- Bourdeau has only a list row ("no claimed solution of any standing"), no working folder; Aymeloglu nothing; Pelling's 2018 partial interpretation ("aliacaui" from Poul Anderson, PER signature, codebook-index-like strings) is the nearest thing to working files and is not a reading.
+(c) Physical neighbours: the slip is a single typewritten sheet; its "neighbours" are the 2013 photo and Bauer's 2017 reproduction (images/rubin-cryptogram-2018.png on disk). No clear copy or decipherment is reported beside it in any source read.
+(d) Recipient/investigator side: found but not a decipherment -- the FBI FOIA file (~160 pp., obtained by Craig Bauer, described by Pelling 3 Jan 2018) records the FBI's own failed attempts (languages tried, frequency counts); LIFE 2 Feb 1953 reports the case. The file itself was not located online in this pass (Pelling's post links only the Cipher Foundation page); reading it is the next zero-dependency step.
+Result: no premise find; status stays open.
+
+## Verdict (GF4-BATCH17 (account-4), 3 Oct 2026)
+
+**open (unchanged).** No published or accepted decipherment located in Bauer's *Unsolved!* (Google Books snippet, chapter on the Rubin cipher), Cipherbrain no. 9 and its full 7-comment thread, klausschmeh.net, Cryptiana, Cipher Mysteries' four Rubin posts and their threads, Reddit r/codes, DECODE listings, or either solver repository, searched 3 Oct 2026. Claimed-but-unaccepted interpretations: Pelling 2018 (partial: "aliacaui", PER signature); comment-thread guesses 2018-2023 (Davidsch, farmerjohn, Rafal, Charlotte, Boyouk) -- recorded as claimed, none accepted.
+
+## While waiting (GF4-BATCH17, 3 Oct 2026)
+
+Nothing here waits on a person; the one zero-dependency step is to locate and read the FBI FOIA file on Rubin (Bauer's ~160 pp.; try the FBI Vault search for "Rubin", Cipher Foundation's page, and Bauer's *Unsolved!* notes for its citation) for the FBI's transcription of the original slip, which would settle the 2013-photo vs 2018-reproduction letter disagreements before any second transcription pass.
+
+## Intake gate (GF4-BATCH17, 3 Oct 2026)
+
+$ python3 tools/intake_gate_check.py rubin-1953
+rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+
+$ python3 tools/next_steps.py --wait-only | grep rubin-1953
+(no line)
