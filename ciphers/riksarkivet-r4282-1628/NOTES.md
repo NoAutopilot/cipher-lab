@@ -470,17 +470,63 @@ read; this may be 4307's letter alphabet. No second login was made (one login pe
 Grades: none claimed (rule 4; no reading). Requests: de-crypt.org about 11 (one login run: login page, submit,
 RecordsView/4307, 6 files, 1.7 s apart; then 2 login-free filesrv requests, 2 s apart); no other host.
 
-## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, 3 Oct 2026; GAPS2, 3 Oct 2026)
+## GAPS3-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
+
+Verdict step run: "one DECODE login fetching key 4307's fourth page (IMG_R4307_I25838_P) full size and one vision
+call on its letter table for sign overlap with R4282, ~$1". Intake gate:
+`riksarkivet-r4282-1628: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Fetch.** One `tools/decode_browser_login.js 4307 --fetch .../filesrv/?file=IMG_R4307_I25838_P.pdf --max-files 1`
+run (first attempt died at page load on ERR_CERT_AUTHORITY_INVALID before any login; certutil fix applied, then the
+one login). Served a real one-page PDF (1,905,112 bytes, sha1 f5ed54b9..., not the forbidden.png placeholder):
+the full-size page is available to this account with an explicit --fetch. 80 dpi render in `keys_r4327_r4307/`.
+
+**What p.4 is (vision call 1, 200 dpi, all reading M).** Left strip: name codes 20-24 continuing p.3 (Statt ...,
+Reichstag(?), ... "Rottenburg an der Tauber"), then the heading "Dis verkehrte Alphabet kann auch nach aller
+notdurfft gebraucht werden", a three-row table (plain letter above, one cipher letter-shape below, ten columns per
+row), a docket "Cathalogg so Hartman Drach den 13. ... uberschickt" and "Correspondentz mit Drach". Right leaf: a
+second name list 18-32 (Reichstag, Catholische Union, Eps Herbipolensis, Bambergensis, Nuncius Apostolicus
+Caesareus, Nuncius Coloniensis, Summus Pontifex, Rex Hispaniae, Orator Hispanicus, Rex Franciae, R. Angliae,
+Poloniae, Daniae, Sueciae, Magdeburgisch Administrator). So record 4307's letter key is a monoalphabetic
+"reversed alphabet" whose cipher signs are ordinary Latin letter shapes (read: a q, b e, d x, f c and A, g f,
+i g, m h, n i, o r, p k, q t, r u, s 3/Z, x n, z D; first-row and third-row alignment uncertain, conflicting
+cells s and d dropped). No digits and no Greek signs.
+
+**Overlap: real, larger than 4327's.** 16 cipher shapes with a single value in that read occur in R4282, covering
+456 of 1,110 tokens (4327: 7 signs, 214 tokens). Of R4282's commonest eight (b 80, M 66, 7 63, k 61, q 53, 5 53,
+4 51, L 47) only k and q are covered; R4282's digits 4 5 7 8 and its Greek signs (L M F E T) have no cell in this
+table, so a 23-cell simple alphabet cannot be R4282's whole key (38 sign classes).
+
+**Test (rule 3).** `scripts/key4307p4_overlap.py` (--check exits 0; `key4307p4_overlap.json`), same statistic and
+controls as the 4327 test: mean la18 Latin unigram log-probability of the letters the key gives the covered tokens;
+(a) the same 16 values permuted among the 16 signs, (b) 16 distinct random Latin letters, 2000 draws each.
+
+| | mean logp | control mean | control p95 | share of control >= real |
+|---|---|---|---|---|
+| real key 4307 p.4 | -3.617 | | | |
+| (a) permuted values | | -3.553 | -3.298 | 0.65 |
+| (b) random letters | | -3.747 | -3.287 | 0.33 |
+
+The real assignment is below the permutation mean: k (61) -> p, t (44) -> q and n (39) -> x give rare Latin letters
+to frequent R4282 signs. Read: key 4307's reversed alphabet does not decode R4282's shared letter shapes; the
+overlap is the shared stock of Latin letter shapes, not a shared key. Grades: none claimed (rule 4; no reading).
+Conditional on Bourdeau's single-pass transcription and on an M-grade eye read of a German-hand table whose row
+alignment is itself uncertain (rule 2). Not a negative on the other 14 letter/graphic-sign key records.
+
+Requests: de-crypt.org 3 (login page, submit + RecordsView/4307, one filesrv PDF; 1.7 s apart), one login; no other
+host. Vision calls: 1.
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, 3 Oct 2026)
 Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
-- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2, 3 Oct 2026) are a German name nomenclator sharing one sign class (Δ, 10 tokens) with R4282, test not applicable; 4307 p.4 (I25838) shows a possible letter table in its thumbnail, full size not fetched; next: one DECODE login fetching IMG_R4307_I25838_P full size and one vision call on its letter table for sign overlap with R4282, ~$1
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); next: fetch and eye-check the remaining 14 letter/graphic-sign key records (4263, 4275, 4293, 4295, 4297, 4298, 4299, 4305, 4308, 4309, 4312, 4322, 4323, 4329), 1630s-dated first (4298, 4299, 4275, 4305), one login and one vision call per two records, ~$1 each
 - transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
 
 ## Escalation (FT4, 3 Oct 2026; updated GAPS, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
-- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control), 4307 pp. 1-3 (GAPS2, name nomenclator, one shared sign) done; 4307 p.4 (possible letter table) and 14 other letter/graphic-sign key records left
+- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control), 4307 pp. 1-3 (GAPS2, name nomenclator, one shared sign), 4307 p.4 (GAPS3, reversed Latin-letter alphabet, 16 shared signs, no fit vs control) done; 14 other letter/graphic-sign key records left
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
 - [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
 - [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: one DECODE login fetching key 4307's fourth page (IMG_R4307_I25838_P) full size and one vision call on its letter table for sign overlap with R4282, ~$1
+Verdict: keep going: 2 internal gaps; cheapest next: fetch the 1630s-dated letter/graphic-sign key records 4298 and 4299 (Chifferklaver II:125-126) full size in one DECODE login and one vision call for sign overlap with R4282, ~$1

@@ -37,6 +37,13 @@
    "bytes": 2133076,
    "sha1": "30e4341790897204c082ed361ddccf58b83022d5",
    "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4327_I25952_P.pdf"
+  },
+  {
+   "file": "IMG_R4307_I25838_P.pdf",
+   "bytes": 1905112,
+   "sha1": "f5ed54b93f2e2878d9624552816c8cf2c2821a35",
+   "url_reconstructed_from_filename": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4307_I25838_P.pdf",
+   "fetched": "2026-10-03, one DECODE browser login (GAPS3-riksarkivet-r4282-1628, account-4); 80 dpi render beside this file"
   }
  ]
 }

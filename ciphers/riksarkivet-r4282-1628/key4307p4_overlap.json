@@ -1,0 +1,29 @@
+{
+ "tokens": 1110,
+ "covered": 456,
+ "signs": 16,
+ "real_mean_logp": -3.617,
+ "perm_mean": -3.5533,
+ "perm_p95": -3.2983,
+ "perm_frac_ge_real": 0.6515,
+ "rand_mean": -3.7472,
+ "rand_p95": -3.2873,
+ "rand_frac_ge_real": 0.3315,
+ "mapped_letter_counts": {
+  "m": 7,
+  "n": 9,
+  "f": 46,
+  "a": 53,
+  "s": 14,
+  "p": 61,
+  "g": 36,
+  "x": 39,
+  "i": 30,
+  "z": 27,
+  "r": 16,
+  "b": 8,
+  "d": 22,
+  "o": 44,
+  "q": 44
+ }
+}
