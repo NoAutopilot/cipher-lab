@@ -182,3 +182,6 @@ catalogue host did not resolve from this container (getaddrinfo ENOTFOUND), so t
 printed Lexington Papers (1851) start Sept 1694 and print Paget's letters *to* Lexington only (see line 2). Next:
 read SOAS PP MS 4.02.27.01/.28.01 item lists for Stepney 1693-94 letters (catalogue, owner-side or a host that resolves).
 
+
+## Discovery availability flag (IMG-AUDIT, 3 Oct 2026)
+TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), C6822030 (SP 105/60/135v), C6822068 (SP 105/60/168): `digitised` = False for all three. Requests: discovery.nationalarchives.gov.uk 3.

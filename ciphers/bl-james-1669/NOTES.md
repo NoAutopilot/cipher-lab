@@ -244,3 +244,6 @@ f.36 was added to REQUEST.md's folio list (GAPS97, done). The Carte/EMLO search 
 MS. Carte 50 and 47). The one remaining action that depends on nobody: grep the archive.org full text of Thomas Carte's
 *Collection of Original Letters and Papers* (1739) and *Life of Ormonde* (1735-36) for a 1669 Duke of York cipher or
 key, ~USD 1. Both print from the Carte MSS, so a hit would give the key's wording without the BL order.
+
+## Catalogue availability flag (IMG-AUDIT, 3 Oct 2026)
+Fetched once: https://searcharchives.bl.uk/catalog/032-002033865.json (Add MS 21483). Field `url_tsi` (label "Digitised Content") value '' (empty); `restrictions_on_access_ssi` carries the BL "request the physical item" form text. Not digitised per the record. Requests: searcharchives.bl.uk 3.

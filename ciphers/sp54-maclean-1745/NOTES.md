@@ -351,3 +351,6 @@ Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk
 - [n/a] image-check: no image of SP 54/25 is available; waiting on TNA copy
 - [x] retry: the Lyon vol. 1 "Burnet" query is superseded by the full djvu read (3 Burnet hits, none is the alias)
 Verdict: parked: blocked on ASKS row 57 (TNA page copy of SP 54/25/5, 8B; 8C and 8A as a second tier, REQUEST.md); the known-keys overlap test waits on that ciphertext
+
+## Discovery availability flag (IMG-AUDIT, 3 Oct 2026)
+TNA Discovery API /records/v1/details, fetched once each: C6818403 (SP 54/25/5), C6818406 (SP 54/25/8A), C6818407 (SP 54/25/8B): `digitised` = False for all three. Replaces the earlier "per QUEUE row" wording. Requests: discovery.nationalarchives.gov.uk 4.

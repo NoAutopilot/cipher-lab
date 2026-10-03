@@ -238,3 +238,6 @@ Run now, depends on nobody: a copy-order pack for SP 90/3/358 together with SP 9
 ## Verdict (A2P4-RABY, 3 Oct 2026)
 
 Open, unchanged. The two named free checks are negative: no draft of 1 Aug 1705 in the catalogued BL Strafford papers (Add MS 31134, selective list) and no 1 Aug 1705 Raby item in HMC Portland vols 4 or 8. Not novel, not unpublished: absence from these two sources is a search result only (rule 10).
+
+## Discovery availability flag (IMG-AUDIT, 3 Oct 2026)
+TNA Discovery /records/v1/details, fetched once each: C6554948 (SP 90/3/358), C6555516 (SP 90/7/126), C6555524 (/149), C6555549 (/212), C6555649 (SP 90/8/80), C6555650 (/84): `digitised` = False for all six. Replaces the earlier "per the QUEUE row" wording. Requests: discovery.nationalarchives.gov.uk about 8.
