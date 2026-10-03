@@ -1,0 +1,9 @@
+crop	position	role	transcribed	blind_read	confidence	alternatives	marks	changed
+C8	f207r L01 g21	target	534	534	medium	digit1: 5 open-backed (3 possible); digit3: 4 open-topped	separator dot before and after; blank to line end	no
+C4	f207r L02 g22	target	581	581	medium	digit1: 5 open-backed (3 less likely)	only separator dot after; faint offset/bleed-through strokes at left, not a group	no
+C5	f207r L03 g35	target	338	338	high	none	only separator dot after (raised, touching the 8)	no
+C3	f207r L03 g36	target	581	581	medium	digit1: 5 open-backed (3 or 6 less likely); 1 plain stroke	only separator dot after	no
+C7	f207r L01 g20	decoy	420	420	high	digit1: 4 open-topped; 0 or small o	only separator dot after	no
+C1	f207r L02 g23	decoy	379	379	high	digit1: looped 3 (5 unlikely)	only separator dot after	no
+C2	f207r L03 g37	decoy	279	279	high	digit1: 2 (7 unlikely)	only separator dot after	no
+C6	f207r L03 g38	decoy	347	347	medium	digit2: 4 open-topped (2 less likely)	only separator dot after	no
