@@ -202,3 +202,47 @@ Waits on a person reading Ruppert 1884 (Google Books JDnaXqmSWR0C) and on the GL
 - Action that depends on nobody: fetch the GLA Findbuch 81 tree page for 81 Nr. 441-443 and 812-814 with
 `tools/browser_fetch.js` (the title text is client-rendered) and read the neighbours' descriptions for a
 decipherment, Beilage or Duplikat. S.
+
+## IMG-GLA: GLA Findbuch 81 and Bestand 48 catalogue read (3 Oct 2026, account 2 worker for LANE-IMAGES)
+
+Route: LABW OFS21 (`www2.landesarchiv-bw.de/ofs21`), plain curl with a browser UA, 2.2 s apart, no browser needed. Simple search
+(`suche/ergebnis1.php`, POST, `archive[1]=4` = GLA) for the sender's name; signature search is two steps (`suche/signatursuche.php`
+with `sign_archiv=4`, `zahlensequenz=81`, `exakt=1`, then `id_bestand=10853`, `bestellnr=<n>`); each unit read through
+`olf/druckansicht.php?id_titlaufn=<id>`. Positive control for the search: "Claudia Medici" returned 41 units of Bestand 81,
+including both targets. Clock 21:2x-21:3x UTC.
+
+Unit records (Findbuch 81 Ensisheim: Extradita Colmar, bestand id 10853), quoted from the print view:
+
+| Unit | id_titlaufn | Permalink | Titel | Laufzeit | Umfang / Vorsignatur | Digitisation flag |
+|---|---|---|---|---|---|---|
+| 81 Nr. 442 | 10846648 | http://www.landesarchiv-bw.de/plink/?f=4-5062086 | Chiffriertes Schreiben der Erzherzogin Claudia de Medici an Markgraf Wilhelm von Baden-Baden über die Eroberung der Stadt Neuenburg und die Entsendung des Obersts Hans Werner Escher von Binningen an den Grafen Johann von Aldringen. | 24. Januar 1633 | 1 Stück, C 460 | none: no Digitalisat link or image field |
+| 81 Nr. 813 | 10846085 | http://www.landesarchiv-bw.de/plink/?f=4-5071198 | Schreiben der Erzherzogin Claudia de Medici an Markgraf Wilhelm von Baden-Baden mit Übersendung von 15.000 Gulden zur Bezahlung der Truppen und Fortführung der Festungsarbeiten zu Breisach (zum Teil in Geheimschrift). | 23. März 1633 | 1 Stück, C 523 | none |
+| 81 Nr. 441 | 10846647 | plink f=4-5062078 | Schreiben des Markgrafen Wilhelm von Baden-Baden ... an Oberst Ascanius Albertinus von Ichtersheim, Gubernator zu Breisach, ... die Tore, Brücken, Türme und Rondelle mit Pulver zu minieren oder in Brand zu stecken. | 13. Januar 1633 | 1 Stück, C 460 | none |
+| 81 Nr. 443 | 10845650 | plink f=4-5062105 | Designation über die Musketenlieferung aus der Herrschaft Waldkirch und der Stadt Elzach an Oberst Schoffholz zu Freiburg | 14. Februar 1633 | 2 Stücke, C 460 | none |
+| 81 Nr. 812 | 10846874 | plink f=4-5071194 | Schreiben des Heinrich von Gaudecker aus Emmendingen an den Obervogt der Herrschaften Kastelberg und Schwarzenberg über die Übergriff der in Simonswald einquartierten Truppen. | 8. Oktober 1633 | 1 Stück, C 523 | none |
+| 81 Nr. 814 | 10846644 | plink f=4-5071200 | Verzeichnis der am 12. Mai 1633 zu Neuenburg gelieferten Rationen. | 1633 | 1 Stück, C 523 | none |
+
+Each print view carries only Titel, Laufzeit, Umfang, Vorsignaturen; the order basket is the only action. Caveat on the flag: I did not
+find a GLA unit that does show a digitisation link, so the absence of one is read from the record's fields, not checked against a known
+digitised GLA unit (the search result list's "Digitalisate einsehen" label, used as the positive control in stas-waldburg-1653, appeared
+on none of the 41 Claudia hits). The earlier plink check (24 Sept) and the scout's sweep agree.
+
+Neighbours (step 2): none of 441, 443, 812, 814 mentions a key, Chiffre, Geheimschrift, Dechiffrierung or Auflösung. What the searches show about the
+cipher-bearing set: simple search `chiffr*` in GLA gave 37 units; in Bestand 81 only Nr. 442; `Geheimschrift` gave 25 units, in Bestand 81
+only Nr. 813; `Chiffrenschlüssel OR Chiffreschlüssel OR Ziffernschlüssel` 0. The other 39 of the 41 "Claudia Medici" units of Bestand 81 (Nr. 96, 209,
+342, 351, 355, 431, 451, 459, 469, 478, 589, 684, 716, 721, 725, 743, 757, 770, 816, 818, 820, 823, 825, 830, 832, 839, 857, 862, 864, 900,
+910, 912, 924, 944, 947, 950, 961, 1387, 1451) were listed; titles read for the search terms only, none carries a cipher word.
+
+Bestand 48 (Haus- und Staatsarchiv III. Staatssachen, rubric "Chiffren", Nr. 65-84): nothing names Claudia de' Medici or the
+Baden-Baden/Ensisheim pair before 1633. Items dated before 1650: Nr. 68 "Aus der Zeit des Markgrafen Georg Friedrich von Baden-Durlach"
+(ca. 1624-ca. 1626, unbestimmte Chiffren) and Nr. 77 "Entwurf eines baden-durlachischen Chiffrierbuchs ..." (17. Jhdt.); both are
+Baden-Durlach, a different line from the recipient Markgraf Wilhelm von Baden-Baden. Nr. 72 ("Chiffren für die Korrespondenz des Markgrafen
+Hermann von Baden-Baden", 17. Jhdt.) and Nr. 73 are Baden-Baden but undated within the century / later. Not read: the units' contents;
+whether any of these keys fits either 1633 letter is untested and unknown. No digitisation flag recorded for them beyond the same print-view
+fields (not fetched individually, request cap).
+
+Found: both units are undigitised in the LABW catalogue and orderable only through LABW. Not found: a key, a decipherment, a clear copy,
+a Beilage or a digital image for either unit or its four neighbours. Requests: www2.landesarchiv-bw.de about 41 (one over the 40 cap;
+2 returned 404 and are included), no vision calls, no subagents.
+
+**Next step (unchanged):** copy order for 81 Nr. 442 and 813 (REQUEST.md, ASKS row 136); Ruppert 1884 read by a person.

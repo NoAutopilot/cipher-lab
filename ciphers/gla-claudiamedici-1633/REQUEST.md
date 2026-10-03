@@ -11,6 +11,8 @@ send).
 - **81 Nr. 813**, 23 März 1633: Claudia de' Medici to Markgraf Wilhelm von Baden-Baden, sending 15,000 Gulden
   for troop pay and continuing the fortification works at Breisach ("zum Teil in Geheimschrift").
 
+**Catalogue records (IMG-GLA, 3 Oct 2026, verbatim in NOTES.md):** 442 = http://www.landesarchiv-bw.de/plink/?f=4-5062086 (id_titlaufn 10846648); 813 = http://www.landesarchiv-bw.de/plink/?f=4-5071198 (id_titlaufn 10846085). Neither print view carries a digitisation link or image field; the only action offered is "Einheit in den Bestellkorb übernehmen" (LABW order basket), so the order goes through LABW's own order system.
+
 **Why:** check-solved sweep of 24 September 2026 (NOTES.md) found no printed edition, catalogue gloss,
 community list, DECODE record, or solver-repository entry for either letter, and no online image for either
 item (LABW plink checked directly for 442; no attached digitisate).
