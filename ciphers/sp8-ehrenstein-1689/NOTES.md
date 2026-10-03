@@ -231,3 +231,72 @@ Next cheapest step: check Uppsala UB's manuscript catalogue (Alvin, plain search
 of Nordin 469-470 and the neighbouring Nordin volumes holding Nils Gyldenstolpe's correspondence from 1688-90.
 Web/API only, about USD 1. Then the Arcinsys Niedersachsen search for the Bernstorff/Celle side (browser tool,
 about USD 2). The letter itself remains a copy order (REQUEST.md, `digitised: false`).
+
+## GAPS123 (3 Oct 2026, account-4): Uppsala (Alvin / Nordin catalogue) and Arcinsys Niedersachsen
+
+Step run: GAPS119's named next step (Alvin for Nordin 469-470 and 1688-90 Gyldenstolpe volumes), then the Arcinsys
+search for the Bernstorff/Celle side. Plain curl GET on both hosts (no challenge), about 1.6 s apart. No vision, no
+subagents, no reading. Nothing here is a reading or a novelty verdict (rule 10).
+
+**Uppsala, Alvin (www.alvin-portal.org).** Positive control: `Gyldenstolpe` 223 hits, `Gyldenstolpe Nils` 76 hits.
+- `Nordin 469` (alvin-record:380384) and `Nordin 470`: bare shelfmark records, "Format: Non digital", no contents
+  note. `Nordin 464` (alvin-record:380409): "Brev till Nils Gyldenstolpe från enskilda, W-Ö", Non digital. So the
+  Nordin 4xx run is Nils Gyldenstolpe's incoming letters filed alphabetically by sender, not by year.
+- The volume-level contents are in the typed copy of the collection catalogue, "Katalog över nordinska samlingen :
+  4. 442-724" (alvin-record:255191, "Format: Non digital + Digital", OCR text attachment ATTACHMENT-0398, 253 kB;
+  the handwritten original is UUB arkiv M 19 a-g). Grepped for Ehrenst*/Gyldenstolp*/Bernst*/Celle/chiff*/1689:
+  - **Bernstorff**: two items only, neither 1689. A letter "Bernstorff, Minister hos Hert. af Celle", dated Celle
+    26 July 1696 with 2 enclosures, among letters to N. Gyldenstolpe from individuals; and Gyldenstolpe's own drafts
+    to Bernstorff ("Premierminister hos Hert. af Braunschw.-Lüneburg-Celle"), The Hague 14/24 Mar and 7/17 Oct
+    1682 (Nordin 467, "Gr. N. Guldenstolpes Bref till åtskillige. Concepter").
+  - **Ehrensteen family** (catalogue section C, "Ehrenstenska familjebrefvexlingen", Nordin 473 and neighbours):
+    letters of Lars Ph. Ehrensteen ("f. 1662 - Commend. i Ottersberg, +1700") to his mother only, Uppsala 15 Jan
+    1678 and Forsby 17 May 1693 (with enclosure). No letter of his from 1688-90, none to or about Bernstorff.
+    Margareta Gyldenstolpe (née Ehrensteen) to her husband: one letter of 1689 (Forsbygård, 28 July).
+  - **1689 overall**: 13 occurrences of "1689" in the volume; none is Ehrensteen, Bernstorff or Celle.
+  - **Cipher**: one key volume, **Nordin 724, "Chiffer-[nycklar?] för svenska diplomater och militärpersoner
+    1640-166?"** (OCR damaged; Alvin record alvin-record:380743, "Format: Non digital"). Its date range stops in
+    the 1660s, so it is not a 1689 key; noted as a Swedish key-family source only. Section 14 of the same
+    catalogue lists "Bref och rapporter till N. Gyldenstolpe, dels utan namn dels med oläsliga [underskrifter]",
+    21 pieces, undated in the catalogue: unsigned reports, the one place in the Nordin run where an unattributed
+    1689 piece could sit unseen.
+- Free-text `chiffer` in Alvin: 18 hits, none 1680-1700 except "Castel Rodrigo ... brev i chiffer", 1695? (Örebro,
+  OUB/001/208), unrelated. `chiffer 1689`: 0.
+
+**Arcinsys Niedersachsen (www.arcinsys.niedersachsen.de, einfachsuchen.action GET).** Positive control:
+`Bernstorff` 1,215 hits; restricted to 1688-1690, 49.
+- `Ehrenstein` 64 (none 17th-century Celle; seals and 19th-20th-century persons); `Ehrensteen OR Ehrensten` 6, of
+  which **NLA ST, Rep. 5a, Nr. 734**, Gyllenstierna's correspondence including "Korrespondenz Ehrensteens mit
+  Gyllenstierna vom 2. Dezember 1699 ..." (1699-1701; Lars Philip as Ottersberg commandant: a hand sample for him, not
+  a sibling). `Gyldenstolpe OR Güldenstolpe OR ...` 7: **NLA HA, Celle Or. 8, Nr. 1304/1**, B. Oxenstierna,
+  N. Bielke and N. Gyldenstolpe [to Celle], 1 July 1691, the nearest dated Celle-Gyldenstolpe item.
+- Bernstorff 1688-90 (page 1, 20 of 49 rows): **NLA HA, Cal. Br. 24, Nr. 1627, "Vier Briefe Portlands an Bernstorff
+  aus England", 1689** (William III's side of the same channel; old sign. Cal. Br. 24 England Nr. 49), and
+  **NLA HA, Celle Br. 16, Nr. 401**, a Hamburg agent's report to Bernstorff on a rumoured France-Denmark alliance,
+  1689. Neither title names Ehrenstein, Gyldenstolpe or a cipher.
+- Cipher wording 1688-90 (`Chiffre OR Ziffer OR dechiffriert OR Chiffern`, 19 hits): **NLA WO, 2 Alt, Nr. 2837 and
+  2838, "Chiffern zur Korrespondenz der Herzöge ... mit den Gesandten an den Höfen in Hannover, Celle, Paris,
+  Petersburg, Berlin ...", Bd. 1 (1641) 1675 - end 17th c., Bd. 2 1675-1725.** These are Wolfenbüttel keys, not
+  Celle's, but they name Celle as a correspondent court.
+- `Schweden Bernstorff` 1688-90: 3, `Stockholm Gesandtschaft` 1688-90: 5 (Bremen-Verden Ritterschaft envoys, not
+  Celle), `Lauenburg Schweden` 1689: 0.
+- Availability flag, quoted from each detail page's "Repräsentationen": Original, Sicherungsfilm (and for the two HA
+  files Micro-/Macrofiche); no Digitalisat on any of the four files above.
+
+Found: no sibling letter, key or decipherment of SP 8/6/65 in the Uppsala Nordin catalogue or in Arcinsys under these
+terms. Two leads, both of them undigitised: Cal. Br. 24 Nr. 1627 (Portland to Bernstorff, 1689) on the
+recipient's side, and NLA WO 2 Alt 2837-2838 (Guelph cipher keys naming Celle, to 1699) as a possible key family. Both
+are physical-access items. This is a search result, not a novelty verdict (rule 10).
+
+Requests: www.alvin-portal.org 20 (incl. one OCR attachment); www.arcinsys.niedersachsen.de 23 (5 of them empty
+detail fetches before the redirect was followed). No vision, no subagents.
+
+Next step: the letter itself remains a copy order (REQUEST.md, TNA `digitised: false`); the cheapest remote step
+left is a reproduction enquiry to NLA (Hannover for Cal. Br. 24 Nr. 1627, Wolfenbüttel for 2 Alt 2837, both on
+Sicherungsfilm) for the person's desk, about USD 0 of model time plus the archive's fee.
+
+## While waiting
+
+- Action that depends on nobody: read the remaining 29 rows of the Arcinsys `Bernstorff` 1688-1690 list (page 2-3)
+and the Celle Br. 16 / Cal. Br. 24 England series lists in the Arcinsys tree for any 1689 file naming Sweden,
+Gyldenstolpe or Ehrenstein (web only, about USD 1).
