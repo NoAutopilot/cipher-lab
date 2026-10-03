@@ -1,0 +1,31 @@
+line	position	old	new	confidence	shape (A2-GRA3, 3 Oct 2026, one reader at 3x on crops/f30_split/zoom_eh.jpg, zoom_cross.jpg)
+f30r_L01	31	eh	ehx	h	open c-bowl with a crossed stroke above
+f30r_L03	9	eh	ehx	h	same
+f30r_L04	6	eh	ehx	m	same; glyph at the strip edge, slanted stroke (as the 2 Oct key-image check saw it)
+f30r_L04	16	eh	ehx	h	same
+f30r_L04	36	eh	ehx	h	same
+f30r_L05	12	eh	ehx	h	same
+f30r_L06	8	eh	ehx	h	same, stroke ends in a dot
+f30r_L06	32	eh	ehx	h	same
+f30r_L08	15	eh	ehx	m	under the ink blot; bowl and stroke visible
+f30r_L10	7	eh	ehx	h	same
+f30r_L13	8	eh	ehx	h	same
+f30r_L13	24	eh	ehx	h	same
+f30r_L14	26	eh	ehx	h	same
+f30r_L17	11	eh	ehx	h	same
+f30r_L17	21	eh	c	m	plain c, no stroke above (the c sign, key L)
+f30r_L26	34	eh	ehx	h	same
+f30r_L30	3	eh	ehx	h	same
+f30r_L31	25	eh	c	m	plain c, no stroke above (the c sign, key L)
+f30r_L34	32	eh	ehx	h	same
+f30r_L35	26	eh	ehx	h	same
+f30v_L02	28	eh	ehx	h	same
+f30v_L17	18	eh	ehx	h	same, flat T-bar top
+f30r_L03	30	CROSS	CROSSo	h	cross over a circle, with a triangular flag
+f30r_L03	36	CROSS	CROSSp	h	equal-armed cross, splayed (pattee) ends
+f30r_L07	3	CROSS	CROSSp	m	pattee; short top cap could be read as a second bar (2 Oct: double-barred)
+f30r_L08	28	CROSS	CROSS2	h	upright with two full crossbars
+f30r_L11	2	CROSS	CROSS2	h	upright with two full crossbars
+f30r_L12	0	CROSS	CROSSp	h	pattee
+f30r_L21	12	CROSS	CROSSp	h	pattee
+f30r_L33	15	CROSS	CROSSp	h	pattee

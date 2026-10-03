@@ -19,10 +19,12 @@ def load(fn, who):
         d[p[0]] = [(NORM[who].get(t.rstrip('?'), t.rstrip('?')), t.endswith('?') and t != '[?]', t) for t in p[1].split()]
     return d
 R, A, B = load('passR_f30.tsv', 'R'), load('passA_f30.tsv', 'A'), load('passB_f30.tsv', 'B')
+# Shape split (A2-GRA3, 3 Oct 2026, split_f30.tsv): a split code agrees with the pass code it was split from.
+SPLITOF = {'ehx': 'eh', 'CROSSp': 'CROSS', 'CROSS2': 'CROSS', 'CROSSo': 'CROSS'}
 def align(r, o):
     """map index in r (dots excluded from matching) -> aligned code in o or None"""
     ri = [i for i, t in enumerate(r) if t[0] != '.']; oi = [t[0] for t in o if t[0] != '.']
-    rc = [r[i][0] for i in ri]
+    rc = [SPLITOF.get(r[i][0], r[i][0]) for i in ri]
     m = {}
     sm = difflib.SequenceMatcher(None, rc, oi, autojunk=False)
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
@@ -43,7 +45,7 @@ for row in R:
         pos = base + i
         if c == '.': ct.append(f'{ln}\t{pos}\t.\th'); continue
         if unsure or c == '[?]': conf = 'l'
-        elif ma.get(i) == c or mb.get(i) == c: conf = 'h'
+        elif ma.get(i) in (c, SPLITOF.get(c, c)) or mb.get(i) in (c, SPLITOF.get(c, c)): conf = 'h'
         else: conf = 'm'
         ct.append(f'{ln}\t{pos}\t{c}\t{conf}'); s[0] += 1; s[7 + 'hml'.index(conf)] += 1
         a, b = ma.get(i, '-'), mb.get(i, '-')

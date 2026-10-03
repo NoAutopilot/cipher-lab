@@ -4,6 +4,8 @@ control. Section "f.30r L01, L02, L11, L12 (24 Sept 2026)" in NOTES.md.
 
   python3 test_f30r_top.py            run everything, write test_f30r_top.tsv and linescore_f30r_top.tsv
   python3 test_f30r_top.py --round1   the same run without the OVERRIDE rows it produced (test_f30r_top_round1.tsv)
+  python3 test_f30r_top.py --split split_f30.tsv   recode the shape split in memory, test eh (f.29r), ehx and the three
+                                      cross shapes only, write test_f30r_split.tsv (A2-GRA3, 3 Oct 2026)
   python3 test_f30r_top.py --help     this text
 
 Base reading = key.tsv + key_extension_f30.tsv (the extended reading). Scoring, window and model are those of
@@ -46,6 +48,17 @@ def base(t):
     v = EXT.get(t) or iu.keyval(t)
     return v
 S = [[(t, w) for t, w in s] for s in iu.S]
+# --split FILE (A2-GRA3, 3 Oct 2026): recode the listed f.30 positions by shape (line, position, old, new), in memory
+# only (a no-op once split_f30.tsv is applied in passR_f30.tsv); the split codes start unvalued except 'ehx', whose
+# current value for the test is the eh table value (D), whatever key_extension_f30.tsv now says.
+SPLIT = sys.argv[sys.argv.index('--split') + 1] if '--split' in sys.argv else None
+if SPLIT:
+    _rc = {f'{r[0]} {r[1]}': (r[2], r[3]) for r in iu.rows(SPLIT) if r[0] != 'line'}
+    for s in S:
+        for j, (t, w) in enumerate(s):
+            if w in _rc:
+                assert t in _rc[w], (w, t, _rc[w]); s[j] = (_rc[w][1], w)   # already applied upstream is fine
+    EXT['ehx'] = iu.keyval('eh')
 line = lambda w: w.split()[0].replace('f29r', 'f29r_')
 
 def score_at(stream, idx, over):
@@ -150,10 +163,13 @@ if __name__ == '__main__':
     DRAWS = int(os.environ.get('DRAWS', 100))
     SIGNS = ['ss2', 'zb', 'Af', 'E', 'Tb', 'eh', 'CROSS', 'A2', 'HASH', 'B8', 'INF', 'TRI', 'ev', 'nn', 'q']
     NAMED = {'eh': 'T', 'CROSS': 'C', 'nn': 'V', 'A2': 'NULL'}
+    if SPLIT:
+        SIGNS = ['eh', 'ehx', 'CROSSp', 'CROSS2', 'CROSSo']
+        NAMED = {'eh': 'T', 'ehx': 'T', 'CROSSp': 'C', 'CROSS2': 'LL', 'CROSSo': 'C'}
     q07 = [(k, i) for k, i in occs('q') if S[k][i][1].startswith('f30r_L07')]
     rows = ['sign\tn\tn_top\tcurrent\tbest\tmargin\tsecond\tp_shuffled\trecovery\tout_delta\tout_lose3\tout_n'
             '\tnamed\tnamed_delta\tnamed_p\tdecision\tcontrol\td_f29\td_f30\td_top']
-    for sg in SIGNS + ['q@L07']:
+    for sg in SIGNS + ([] if SPLIT else ['q@L07']):
         occ = q07 if sg == 'q@L07' else occs(sg)
         s0 = 'q' if sg == 'q@L07' else sg
         cur = base(s0)
@@ -182,9 +198,9 @@ if __name__ == '__main__':
                     '' if nd == '' else f'{nd:.1f}', '' if np_ == '' else f'{np_:.3f}', 'accept' if ok else 'reject', CTLKIND[0] if cur not in (None, 'NULL') else 'gaps',
                     *(f'{leaf[g]:.1f}' for g in ('f29', 'f30', 'top')))))
         print(rows[-1], flush=True)
-    open(os.path.join(H, 'test_f30r_top_round1.tsv' if '--round1' in sys.argv else 'test_f30r_top.tsv'), 'w').write(
-        '\n'.join(rows) + '\n')
-    if '--round1' in sys.argv: sys.exit(0)
+    open(os.path.join(H, 'test_f30r_split.tsv' if SPLIT else 'test_f30r_top_round1.tsv' if '--round1' in sys.argv
+                      else 'test_f30r_top.tsv'), 'w').write('\n'.join(rows) + '\n')
+    if '--round1' in sys.argv or SPLIT: sys.exit(0)
     after = linescore({})
     saved = {s: EXT.pop(s) for s in OVR if s in EXT}
     before = linescore({}); EXT.update(saved)

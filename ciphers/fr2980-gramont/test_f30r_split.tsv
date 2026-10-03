@@ -1,0 +1,6 @@
+sign	n	n_top	current	best	margin	second	p_shuffled	recovery	out_delta	out_lose3	out_n	named	named_delta	named_p	decision	control	d_f29	d_f30	d_top
+eh	10	0	D	D	0.0	V	1.000	0.88	0.0	0	10	T	-57.1	1.000	reject	matched	0.0	0.0	0.0
+ehx	20	1	D	T	152.1	L	0.010	1.00	141.7	3	19	T	152.1	0.010	accept	matched	0.0	141.7	10.5
+CROSSp	5	1	None	C	17.4	T	0.762	0.94	-2.4	0	4	C	27.6	0.535	reject	gaps	0.0	24.9	2.7
+CROSS2	2	1	None	EMPEREVR	0.9	POVR	0.891		-3.6	1	1	LL	-34.4	1.000	reject	gaps	0.0	5.3	0.0
+CROSSo	1	0	None	P	0.1	T	0.960	0.70	0.1	0	1	C	-3.5	1.000	reject	gaps	0.0	3.2	0.0

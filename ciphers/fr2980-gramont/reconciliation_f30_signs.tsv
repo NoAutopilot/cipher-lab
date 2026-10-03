@@ -13,7 +13,7 @@ f30r_L01	18	sl	sl	paren	image: agrees with pass A
 f30r_L01	19	zb	2	2	image: both passes differ
 f30r_L01	20	xr	lam	L2	image: both passes differ
 f30r_L01	30	FL	FL	m	image: agrees with pass A
-f30r_L01	31	eh	-	eh	image: agrees with pass B
+f30r_L01	31	ehx	-	eh	image: both passes differ
 f30r_L01	32	xr	-	x	image: both passes differ
 f30r_L01	33	Af?	-	fh	image: both passes differ
 f30r_L01	35	br	Tb	br	image: agrees with pass B
@@ -42,6 +42,7 @@ f30r_L02	38	r3	paren	-	image: both passes differ
 f30r_L02	39	9	9	-	image: agrees with pass A
 f30r_L03	6	br	D	br	image: agrees with pass B
 f30r_L03	7	zb	2	2	image: both passes differ
+f30r_L03	9	ehx	eh	eh	image: both passes differ
 f30r_L03	11	nq?	n6	n6	image: both passes differ
 f30r_L03	12	n	2	2	image: both passes differ
 f30r_L03	14	INF?	FL	n6	image: both passes differ
@@ -51,23 +52,23 @@ f30r_L03	22	dl?	Af	Af	image: both passes differ
 f30r_L03	23	br	D	br	image: agrees with pass B
 f30r_L03	24	5	5	2	image: agrees with pass A
 f30r_L03	27	ST	-	-	image: both passes differ
-f30r_L03	30	CROSS?	-	Af	image: both passes differ
+f30r_L03	30	CROSSo?	-	Af	image: both passes differ
 f30r_L03	31	r3	-	yt	image: both passes differ
 f30r_L03	34	FL	-	-	image: both passes differ
 f30r_L03	35	xr	xr	-	image: agrees with pass A
-f30r_L03	36	CROSS	-	-	image: both passes differ
+f30r_L03	36	CROSSp	-	-	image: both passes differ
 f30r_L03	37	9	9	-	image: agrees with pass A
 f30r_L04	0	nr	r3	r3	image: both passes differ
 f30r_L04	2	FL	H	FL	image: agrees with pass B
 f30r_L04	4	lt	lt	sl	image: agrees with pass A
 f30r_L04	5	z3	zb	bb	image: both passes differ
-f30r_L04	6	eh	eh	c	image: agrees with pass A
+f30r_L04	6	ehx	eh	c	image: both passes differ
 f30r_L04	7	dl	A2	lam	image: both passes differ
 f30r_L04	10	br	D	bb	image: both passes differ
 f30r_L04	11	Af?	fh	fh	image: both passes differ
 f30r_L04	12	T	Th	T	image: agrees with pass B
 f30r_L04	15	n6	-	d	image: both passes differ
-f30r_L04	16	eh	-	eh	image: agrees with pass B
+f30r_L04	16	ehx	-	eh	image: both passes differ
 f30r_L04	18	r3	r3	yt	image: agrees with pass A
 f30r_L04	19	zb	2	2	image: both passes differ
 f30r_L04	22	nn?	n6	-	image: both passes differ
@@ -77,6 +78,7 @@ f30r_L04	30	FL	H	FL	image: agrees with pass B
 f30r_L04	31	dl	A2	A2	image: both passes differ
 f30r_L04	33	br	D	br	image: agrees with pass B
 f30r_L04	35	n6	D	d	image: both passes differ
+f30r_L04	36	ehx	eh	eh	image: both passes differ
 f30r_L04	37	B8?	S	aq	image: both passes differ
 f30r_L04	39	9	9	zu	image: agrees with pass A
 f30r_L05	1	z3?	bb	bb	image: both passes differ
@@ -85,6 +87,7 @@ f30r_L05	6	n6	D	d	image: both passes differ
 f30r_L05	9	nr?	n6	n	image: both passes differ
 f30r_L05	10	xr	x	x	image: both passes differ
 f30r_L05	11	nr	sl	r3	image: both passes differ
+f30r_L05	12	ehx	eh	eh	image: both passes differ
 f30r_L05	13	dl	A2	A2	image: both passes differ
 f30r_L05	16	r3	r3	yt	image: agrees with pass A
 f30r_L05	17	ST	Rt	FL	image: both passes differ
@@ -97,6 +100,7 @@ f30r_L05	36	z3	bb	bb	image: both passes differ
 f30r_L06	2	2	nr	-	image: both passes differ
 f30r_L06	3	xr	x	-	image: both passes differ
 f30r_L06	7	FL	H	fh	image: both passes differ
+f30r_L06	8	ehx	eh	eh	image: both passes differ
 f30r_L06	9	zb	2	z	image: both passes differ
 f30r_L06	11	br	D	br	image: agrees with pass B
 f30r_L06	13	aq	A2	aq	image: agrees with pass B
@@ -108,10 +112,11 @@ f30r_L06	23	z	z	z3	image: agrees with pass A
 f30r_L06	24	HASH?	Mx	HASH	image: agrees with pass B
 f30r_L06	25	rho?	n6	paren	image: both passes differ
 f30r_L06	27	xr	yt	x	image: both passes differ
+f30r_L06	32	ehx	eh	eh	image: both passes differ
 f30r_L06	33	Tb?	Tb	p	image: agrees with pass A
 f30r_L06	37	sl	ss2	sl	image: agrees with pass B
 f30r_L06	38	FL	H	fh	image: both passes differ
-f30r_L07	3	CROSS	fh	T	image: both passes differ
+f30r_L07	3	CROSSp	fh	T	image: both passes differ
 f30r_L07	7	br	D	br	image: agrees with pass B
 f30r_L07	9	zb	2	2	image: both passes differ
 f30r_L07	11	HASH	HASH	Mx	image: agrees with pass A
@@ -134,7 +139,7 @@ f30r_L08	8	nr	lt	T	image: both passes differ
 f30r_L08	9	Af?	fh	fh	image: both passes differ
 f30r_L08	13	xr	-	-	image: both passes differ
 f30r_L08	14	5?	-	-	image: both passes differ
-f30r_L08	15	eh	-	-	image: both passes differ
+f30r_L08	15	ehx	-	-	image: both passes differ
 f30r_L08	16	sl	sl	-	image: agrees with pass A
 f30r_L08	18	ST?	sl	paren	image: both passes differ
 f30r_L08	19	9	-	-	image: both passes differ
@@ -142,7 +147,7 @@ f30r_L08	20	oi	-	-	image: both passes differ
 f30r_L08	21	br	-	br	image: agrees with pass B
 f30r_L08	25	n6	n6	d	image: agrees with pass A
 f30r_L08	26	r3	r3	yt	image: agrees with pass A
-f30r_L08	28	CROSS	HASH	Mx	image: both passes differ
+f30r_L08	28	CROSS2	HASH	Mx	image: both passes differ
 f30r_L08	33	nr	nr	mx	image: agrees with pass A
 f30r_L08	35	B8	yt	yt	image: both passes differ
 f30r_L08	36	dl	A2	A2	image: both passes differ
@@ -177,6 +182,7 @@ f30r_L09	38	E?	bb	br	image: both passes differ
 f30r_L10	3	rho	rho	p	image: agrees with pass A
 f30r_L10	5	xr	xr	x	image: agrees with pass A
 f30r_L10	6	lt?	Mx	Mx	image: both passes differ
+f30r_L10	7	ehx	eh	eh	image: both passes differ
 f30r_L10	8	q9?	q9	q	image: agrees with pass A
 f30r_L10	12	Tb	b	br	image: both passes differ
 f30r_L10	13	r3	Rt	yt	image: both passes differ
@@ -193,7 +199,7 @@ f30r_L10	34	z3	bb	z3	image: agrees with pass B
 f30r_L10	35	br	D	br	image: agrees with pass B
 f30r_L11	0	ST	-	ST	image: agrees with pass B
 f30r_L11	1	9	-	g	image: both passes differ
-f30r_L11	2	CROSS	-	Mx	image: both passes differ
+f30r_L11	2	CROSS2	-	Mx	image: both passes differ
 f30r_L11	3	E	-	eh	image: both passes differ
 f30r_L11	5	xr	xr	x	image: agrees with pass A
 f30r_L11	6	Af?	fh	fh	image: both passes differ
@@ -212,7 +218,7 @@ f30r_L11	27	nq?	xr	yt	image: both passes differ
 f30r_L11	28	zb	2	2	image: both passes differ
 f30r_L11	31	ST	ss2	ST	image: agrees with pass B
 f30r_L11	32	bb	bb	br	image: agrees with pass A
-f30r_L12	0	CROSS	Mx	CROSS	image: agrees with pass B
+f30r_L12	0	CROSSp	Mx	CROSS	image: both passes differ
 f30r_L12	1	lz	lam	lam	image: both passes differ
 f30r_L12	2	Tb?	D	br	image: both passes differ
 f30r_L12	6	nq?	xr	yt	image: both passes differ
@@ -236,7 +242,7 @@ f30r_L13	0	rho?	p	p	image: both passes differ
 f30r_L13	2	xr	xr	x	image: agrees with pass A
 f30r_L13	3	r3	r3	yt	image: agrees with pass A
 f30r_L13	7	B8?	fh	Af	image: both passes differ
-f30r_L13	8	eh?	D	eh	image: agrees with pass B
+f30r_L13	8	ehx?	D	eh	image: both passes differ
 f30r_L13	9	r3	r3	-	image: agrees with pass A
 f30r_L13	10	z	z	-	image: agrees with pass A
 f30r_L13	12	br	D	br	image: agrees with pass B
@@ -248,6 +254,7 @@ f30r_L13	18	yt?	-	-	image: both passes differ
 f30r_L13	19	III	III	-	image: agrees with pass A
 f30r_L13	20	5	sl	-	image: both passes differ
 f30r_L13	23	nr	xr	r3	image: both passes differ
+f30r_L13	24	ehx	eh	eh	image: both passes differ
 f30r_L13	26	sl	-	ST	image: both passes differ
 f30r_L13	31	9	g	9	image: agrees with pass B
 f30r_L13	32	nr	xr	x	image: both passes differ
@@ -271,6 +278,7 @@ f30r_L14	21	r3	r3	-	image: agrees with pass A
 f30r_L14	22	III	III	-	image: agrees with pass A
 f30r_L14	23	nr	xr	-	image: both passes differ
 f30r_L14	25	n6	n6	-	image: agrees with pass A
+f30r_L14	26	ehx	eh	eh	image: both passes differ
 f30r_L14	31	br	D	br	image: agrees with pass B
 f30r_L14	35	nq	xr	yt	image: both passes differ
 f30r_L14	36	zb	2	br	image: both passes differ
@@ -323,11 +331,12 @@ f30r_L17	1	Rt	xr	Rt	image: agrees with pass B
 f30r_L17	3	FL	fh	fh	image: both passes differ
 f30r_L17	6	oi	paren	paren	image: both passes differ
 f30r_L17	9	xr	xr	x	image: agrees with pass A
+f30r_L17	11	ehx	eh	eh	image: both passes differ
 f30r_L17	12	r3	r3	yt	image: agrees with pass A
 f30r_L17	15	lam?	lt	lam	image: agrees with pass B
 f30r_L17	16	lt	-	-	image: both passes differ
-f30r_L17	19	zb	-	-	image: both passes differ
-f30r_L17	20	E	-	-	image: both passes differ
+f30r_L17	19	zb	r3	z3	image: both passes differ
+f30r_L17	20	E	eh	eh	image: both passes differ
 f30r_L17	23	v	rho	v	image: agrees with pass B
 f30r_L17	24	sl	ss2	-	image: both passes differ
 f30r_L17	25	nr	nr	-	image: agrees with pass A
@@ -404,6 +413,7 @@ f30r_L21	5	sl	ss2	-	image: both passes differ
 f30r_L21	6	br	D	br	image: agrees with pass B
 f30r_L21	10	Rt	xr	Rt	image: agrees with pass B
 f30r_L21	11	n6	D	dl	image: both passes differ
+f30r_L21	12	CROSSp	CROSS	CROSS	image: both passes differ
 f30r_L21	14	Sx	5	5	image: both passes differ
 f30r_L21	16	h	z	z	image: both passes differ
 f30r_L21	23	r3	r3	yt	image: agrees with pass A
@@ -519,7 +529,7 @@ f30r_L26	30	E	-	eh	image: both passes differ
 f30r_L26	31	FL?	-	yt	image: both passes differ
 f30r_L26	32	[?]	-	Mx	image: both passes differ
 f30r_L26	33	5	-	5	image: agrees with pass B
-f30r_L26	34	eh	eh	-	image: agrees with pass A
+f30r_L26	34	ehx	eh	-	image: both passes differ
 f30r_L26	35	HASH	-	-	image: both passes differ
 f30r_L27	1	sl	-	-	image: both passes differ
 f30r_L27	2	r3	-	-	image: both passes differ
@@ -574,6 +584,7 @@ f30r_L29	30	br	D	br	image: agrees with pass B
 f30r_L29	31	zb	z3	z3	image: both passes differ
 f30r_L29	33	9	2	2	image: both passes differ
 f30r_L29	34	n6	D	n6	image: agrees with pass B
+f30r_L30	3	ehx	eh	eh	image: both passes differ
 f30r_L30	4	sl	ss2	-	image: both passes differ
 f30r_L30	5	2	2	-	image: agrees with pass A
 f30r_L30	8	lz	-	-	image: both passes differ
@@ -603,6 +614,7 @@ f30r_L31	16	c	c	-	image: agrees with pass A
 f30r_L31	17	9	9	-	image: agrees with pass A
 f30r_L31	19	sl	ss2	ST	image: both passes differ
 f30r_L31	23	sl?	ss2	ST	image: both passes differ
+f30r_L31	25	c	eh	eh	image: both passes differ
 f30r_L31	26	ev	rho	cv	image: both passes differ
 f30r_L31	29	aq	Rt	A2	image: both passes differ
 f30r_L31	33	g	-	-	image: both passes differ
@@ -636,6 +648,7 @@ f30r_L33	11	h	-	-	image: both passes differ
 f30r_L33	12	br?	-	br	image: agrees with pass B
 f30r_L33	13	sl	-	-	image: both passes differ
 f30r_L33	14	r3	r3	-	image: agrees with pass A
+f30r_L33	15	CROSSp	CROSS	CROSS	image: both passes differ
 f30r_L33	17	nq	rho	yt	image: both passes differ
 f30r_L33	21	FL	-	-	image: both passes differ
 f30r_L33	22	dl	-	-	image: both passes differ
@@ -663,6 +676,7 @@ f30r_L34	26	nq	rho	yt2	image: both passes differ
 f30r_L34	29	ST	ss2	ST	image: agrees with pass B
 f30r_L34	30	9	fh	g	image: both passes differ
 f30r_L34	31	n6	D	dl	image: both passes differ
+f30r_L34	32	ehx	eh	eh	image: both passes differ
 f30r_L34	33	sl	ss2	-	image: both passes differ
 f30r_L34	34	nr	rho	-	image: both passes differ
 f30r_L35	0	dl	A2	A2	image: both passes differ
@@ -679,6 +693,7 @@ f30r_L35	19	r3	r3	yt2	image: agrees with pass A
 f30r_L35	21	dl	A2	A2	image: both passes differ
 f30r_L35	23	zb	z3	-	image: both passes differ
 f30r_L35	25	z	z	z3	image: agrees with pass A
+f30r_L35	26	ehx	eh	eh	image: both passes differ
 f30r_L35	29	nr	nr	r3	image: agrees with pass A
 f30r_L35	31	4t	HASH	Mx	image: both passes differ
 f30r_L35	33	sl	-	ST	image: both passes differ
@@ -713,6 +728,7 @@ f30v_L02	19	ST	-	A2	image: both passes differ
 f30v_L02	20	z	z	z3	image: agrees with pass A
 f30v_L02	26	br	D	br	image: agrees with pass B
 f30v_L02	27	z	z	z3	image: agrees with pass A
+f30v_L02	28	ehx	eh	eh	image: both passes differ
 f30v_L02	31	nr	nr	v	image: agrees with pass A
 f30v_L02	35	lam?	z	d	image: both passes differ
 f30v_L03	2	E	eh	E	image: agrees with pass B
@@ -950,7 +966,7 @@ f30v_L17	7	bb	bb	Th	image: agrees with pass A
 f30v_L17	8	Af	Mx	xr	image: both passes differ
 f30v_L17	9	z	z	z3	image: agrees with pass A
 f30v_L17	10	n6	D	dl	image: both passes differ
-f30v_L17	18	eh?	T	Th	image: both passes differ
+f30v_L17	18	ehx?	T	Th	image: both passes differ
 f30v_L17	20	9	9	-	image: agrees with pass A
 f30v_L17	23	sl	fh	ST	image: both passes differ
 f30v_L17	24	H	Mx	Mx	image: both passes differ

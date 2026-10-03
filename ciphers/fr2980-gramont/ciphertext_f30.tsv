@@ -30,7 +30,7 @@ f30r_L01	27	2	h
 f30r_L01	28	9	h
 f30r_L01	29	ss2	h
 f30r_L01	30	FL	h
-f30r_L01	31	eh	h
+f30r_L01	31	ehx	h
 f30r_L01	32	xr	m
 f30r_L01	33	Af	l
 f30r_L01	34	III	h
@@ -86,7 +86,7 @@ f30r_L03	5	Rt	h
 f30r_L03	6	br	h
 f30r_L03	7	zb	m
 f30r_L03	8	ss2	h
-f30r_L03	9	eh	h
+f30r_L03	9	ehx	h
 f30r_L03	10	9	h
 f30r_L03	11	nq	l
 f30r_L03	12	n	m
@@ -107,13 +107,13 @@ f30r_L03	26	2	h
 f30r_L03	27	ST	m
 f30r_L03	28	A2	h
 f30r_L03	29	.	h
-f30r_L03	30	CROSS	l
+f30r_L03	30	CROSSo	l
 f30r_L03	31	r3	m
 f30r_L03	32	9	h
 f30r_L03	33	2	h
 f30r_L03	34	FL	m
 f30r_L03	35	xr	h
-f30r_L03	36	CROSS	m
+f30r_L03	36	CROSSp	m
 f30r_L03	37	9	h
 f30r_L04	0	nr	m
 f30r_L04	1	III	h
@@ -121,7 +121,7 @@ f30r_L04	2	FL	h
 f30r_L04	3	m	h
 f30r_L04	4	lt	h
 f30r_L04	5	z3	m
-f30r_L04	6	eh	h
+f30r_L04	6	ehx	h
 f30r_L04	7	dl	m
 f30r_L04	8	Rt	h
 f30r_L04	9	h	h
@@ -131,7 +131,7 @@ f30r_L04	12	T	h
 f30r_L04	13	m	h
 f30r_L04	14	A2	h
 f30r_L04	15	n6	m
-f30r_L04	16	eh	h
+f30r_L04	16	ehx	h
 f30r_L04	17	9	h
 f30r_L04	18	r3	h
 f30r_L04	19	zb	m
@@ -151,7 +151,7 @@ f30r_L04	32	III	h
 f30r_L04	33	br	h
 f30r_L04	34	z	h
 f30r_L04	35	n6	m
-f30r_L04	36	eh	h
+f30r_L04	36	ehx	h
 f30r_L04	37	B8	l
 f30r_L04	38	h	h
 f30r_L04	39	9	h
@@ -167,7 +167,7 @@ f30r_L05	8	fh	h
 f30r_L05	9	nr	l
 f30r_L05	10	xr	m
 f30r_L05	11	nr	m
-f30r_L05	12	eh	h
+f30r_L05	12	ehx	h
 f30r_L05	13	dl	m
 f30r_L05	14	lt	h
 f30r_L05	15	g	h
@@ -200,7 +200,7 @@ f30r_L06	4	c	h
 f30r_L06	5	ss2	h
 f30r_L06	6	9	h
 f30r_L06	7	FL	m
-f30r_L06	8	eh	h
+f30r_L06	8	ehx	h
 f30r_L06	9	zb	m
 f30r_L06	10	h	h
 f30r_L06	11	br	h
@@ -224,7 +224,7 @@ f30r_L06	28	5	h
 f30r_L06	29	m	h
 f30r_L06	30	.	h
 f30r_L06	31	ss2	h
-f30r_L06	32	eh	h
+f30r_L06	32	ehx	h
 f30r_L06	33	Tb	l
 f30r_L06	34	2	h
 f30r_L06	35	2	h
@@ -234,7 +234,7 @@ f30r_L06	38	FL	m
 f30r_L07	0	fh	h
 f30r_L07	1	z3	h
 f30r_L07	2	2	h
-f30r_L07	3	CROSS	m
+f30r_L07	3	CROSSp	m
 f30r_L07	4	Rt	h
 f30r_L07	5	.	h
 f30r_L07	6	h	h
@@ -285,7 +285,7 @@ f30r_L08	11	2	h
 f30r_L08	12	fh	h
 f30r_L08	13	xr	m
 f30r_L08	14	5	l
-f30r_L08	15	eh	m
+f30r_L08	15	ehx	m
 f30r_L08	16	sl	h
 f30r_L08	17	2	h
 f30r_L08	18	ST	l
@@ -298,7 +298,7 @@ f30r_L08	24	paren	h
 f30r_L08	25	n6	h
 f30r_L08	26	r3	h
 f30r_L08	27	z	h
-f30r_L08	28	CROSS	m
+f30r_L08	28	CROSS2	m
 f30r_L08	29	2	h
 f30r_L08	30	lt	h
 f30r_L08	31	Mx	h
@@ -355,7 +355,7 @@ f30r_L10	3	rho	h
 f30r_L10	4	A2	h
 f30r_L10	5	xr	h
 f30r_L10	6	lt	l
-f30r_L10	7	eh	h
+f30r_L10	7	ehx	h
 f30r_L10	8	q9	l
 f30r_L10	9	9	h
 f30r_L10	10	xr	l
@@ -388,7 +388,7 @@ f30r_L10	36	fh	h
 f30r_L10	37	9	h
 f30r_L11	0	ST	h
 f30r_L11	1	9	m
-f30r_L11	2	CROSS	m
+f30r_L11	2	CROSS2	m
 f30r_L11	3	E	m
 f30r_L11	4	lam	h
 f30r_L11	5	xr	h
@@ -421,7 +421,7 @@ f30r_L11	31	ST	h
 f30r_L11	32	bb	h
 f30r_L11	33	g	h
 f30r_L11	34	BOX	h
-f30r_L12	0	CROSS	h
+f30r_L12	0	CROSSp	h
 f30r_L12	1	lz	m
 f30r_L12	2	Tb	l
 f30r_L12	3	g	h
@@ -464,7 +464,7 @@ f30r_L13	4	9	h
 f30r_L13	5	lam	h
 f30r_L13	6	h	h
 f30r_L13	7	B8	l
-f30r_L13	8	eh	l
+f30r_L13	8	ehx	l
 f30r_L13	9	r3	h
 f30r_L13	10	z	h
 f30r_L13	11	z3	h
@@ -480,7 +480,7 @@ f30r_L13	20	5	m
 f30r_L13	21	m	h
 f30r_L13	22	z	h
 f30r_L13	23	nr	m
-f30r_L13	24	eh	h
+f30r_L13	24	ehx	h
 f30r_L13	25	5	h
 f30r_L13	26	sl	m
 f30r_L13	27	c	h
@@ -523,7 +523,7 @@ f30r_L14	22	III	h
 f30r_L14	23	nr	m
 f30r_L14	24	z	h
 f30r_L14	25	n6	h
-f30r_L14	26	eh	h
+f30r_L14	26	ehx	h
 f30r_L14	27	fh	h
 f30r_L14	28	BOX	h
 f30r_L14	29	2	h
@@ -622,7 +622,7 @@ f30r_L17	7	c	h
 f30r_L17	8	ss2	h
 f30r_L17	9	xr	h
 f30r_L17	10	9	h
-f30r_L17	11	eh	h
+f30r_L17	11	ehx	h
 f30r_L17	12	r3	h
 f30r_L17	13	BOX	h
 f30r_L17	14	2	h
@@ -632,7 +632,7 @@ f30r_L17	17	g	h
 f30r_L17	18	fh	l
 f30r_L17	19	zb	m
 f30r_L17	20	E	m
-f30r_L17	21	eh	l
+f30r_L17	21	c	l
 f30r_L17	22	9	h
 f30r_L17	23	v	h
 f30r_L17	24	sl	m
@@ -774,7 +774,7 @@ f30r_L21	8	9	h
 f30r_L21	9	c	h
 f30r_L21	10	Rt	h
 f30r_L21	11	n6	m
-f30r_L21	12	CROSS	h
+f30r_L21	12	CROSSp	h
 f30r_L21	13	9	h
 f30r_L21	14	Sx	m
 f30r_L21	15	h	h
@@ -977,7 +977,7 @@ f30r_L26	30	E	m
 f30r_L26	31	FL	l
 f30r_L26	32	[?]	l
 f30r_L26	33	5	h
-f30r_L26	34	eh	h
+f30r_L26	34	ehx	h
 f30r_L26	35	HASH	m
 f30r_L27	0	2	h
 f30r_L27	1	sl	m
@@ -1089,7 +1089,7 @@ f30r_L29	34	n6	h
 f30r_L30	0	m	h
 f30r_L30	1	Rt	h
 f30r_L30	2	g	h
-f30r_L30	3	eh	h
+f30r_L30	3	ehx	h
 f30r_L30	4	sl	m
 f30r_L30	5	2	h
 f30r_L30	6	5	h
@@ -1154,7 +1154,7 @@ f30r_L31	21	z3	h
 f30r_L31	22	BOX	h
 f30r_L31	23	sl	l
 f30r_L31	24	g	h
-f30r_L31	25	eh	h
+f30r_L31	25	c	m
 f30r_L31	26	ev	m
 f30r_L31	27	h	h
 f30r_L31	28	lt	h
@@ -1222,7 +1222,7 @@ f30r_L33	11	h	m
 f30r_L33	12	br	l
 f30r_L33	13	sl	m
 f30r_L33	14	r3	h
-f30r_L33	15	CROSS	h
+f30r_L33	15	CROSSp	h
 f30r_L33	16	9	h
 f30r_L33	17	nq	m
 f30r_L33	18	h	h
@@ -1273,7 +1273,7 @@ f30r_L34	28	z3	h
 f30r_L34	29	ST	h
 f30r_L34	30	9	m
 f30r_L34	31	n6	m
-f30r_L34	32	eh	h
+f30r_L34	32	ehx	h
 f30r_L34	33	sl	m
 f30r_L34	34	nr	m
 f30r_L34	35	fh	h
@@ -1303,7 +1303,7 @@ f30r_L35	22	h	h
 f30r_L35	23	zb	m
 f30r_L35	24	m	h
 f30r_L35	25	z	h
-f30r_L35	26	eh	h
+f30r_L35	26	ehx	h
 f30r_L35	27	xr	h
 f30r_L35	28	lt	h
 f30r_L35	29	nr	h
@@ -1379,7 +1379,7 @@ f30v_L02	24	c	h
 f30v_L02	25	lam	h
 f30v_L02	26	br	h
 f30v_L02	27	z	h
-f30v_L02	28	eh	h
+f30v_L02	28	ehx	h
 f30v_L02	29	xr	h
 f30v_L02	30	lt	h
 f30v_L02	31	nr	h
@@ -1888,7 +1888,7 @@ f30v_L17	14	A2	h
 f30v_L17	15	nr	h
 f30v_L17	16	m	h
 f30v_L17	17	.	h
-f30v_L17	18	eh	l
+f30v_L17	18	ehx	l
 f30v_L17	19	v	h
 f30v_L17	20	9	h
 f30v_L17	21	lam	h

@@ -917,18 +917,75 @@ The key_extension_f30.tsv OVERRIDE row for Tb is now redundant with key.tsv but 
 regenerates identically either way). test_f30r_top.py's base is the extended reading, so its committed results are
 unaffected. No spec for this target (specs/ has no gramont file), so no judge run. Vision calls 0; requests: none.
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026)
-Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1486, S 181, M 239; U 63, after the Tb correction), from the f30r_top section above; f.29r reading.txt per its own section.
-- f.30 c-with-stroke sign (coded eh) value - blocker: not-attempted; the key images do not key it (this section), so a value needs a test on the split code; next: recode the 22 f.30 eh occurrences by shape from the crops, then rerun test_f30r_top.py with the split code and its shuffled-position control, ~$3
-- the two cross shapes (CROSS pattee, CROSS double-barred) - blocker: not-attempted; neither table keys the pattee, the double-barred has one candidate (Tomokiyo row-5 l, LL) that disagrees with sense on L07; next: split the code and run the same hidden-sign test with control, in the same pass as the eh split, ~$1 extra
-- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section)
+## f.30 eh and CROSS split by shape, hidden-sign test rerun (A2-GRA3, account 2, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-gra3.md` (the Verdict's cheapest next step). Intake gate before work
+(`python3 tools/intake_gate_check.py fr2980-gramont`): `fr2980-gramont: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0. Disk only: no host contacted, no subagents.
+
+**Images (rule 2).** `split_shapes_crops.py` cuts one strip per f.30 `eh` (22) and `CROSS` (8) occurrence from the committed
+native line-half crops (`images/crops_f30/`), and `split_shapes_zoom.py` zooms each glyph 3x into `crops/f30_split/zoom_eh.jpg`
+and `zoom_cross.jpg` (glyph centres read by eye on the strips, listed in the script). One reader (this worker), 6 image views
+(4 strip sheets, 2 zoom sheets) plus one re-view of L04 pos 6. The calls are in `split_f30.tsv` (line, position, old, new,
+confidence, shape).
+
+| Code | Shape | Occurrences | Note |
+|---|---|---|---|
+| `ehx` (was eh) | open c-bowl with a crossed (sometimes slanted or flat T-bar) stroke above | 20 (ciphertext confidence 17 h, 1 m, 2 l; shape call m for L08 pos 15, under the blot, and L04 pos 6, at a strip edge) | the 2 Oct "slanted" vs "crossed" variants are one sign: the stroke angle varies continuously across the 20 |
+| `c` (was eh) | plain c, no stroke | 2: f30r L17 pos 21 (l), L31 pos 25 (m) | the atlas c sign (key L); a transcription correction, not a new code |
+| `CROSSp` | equal-armed cross, splayed ends | 5: L03 pos 36, L07 pos 3 (m), L12 pos 0, L21 pos 12, L33 pos 15 | L07 pos 3 was called double-barred on 2 Oct; at 3x its upper bar is a short cap, like the other pattee tops |
+| `CROSS2` | upright with two full crossbars | 2: L08 pos 28, L11 pos 2 | |
+| `CROSSo` | cross over a circle, with a triangular flag | 1: L03 pos 30 | a third cross shape, not seen before |
+
+Applied through `passR_f30.tsv` (30 signs recoded) -> `build_ciphertext_f30.py` (new `SPLITOF`: a split code agrees with the
+pass code it was split from, for alignment and confidence; ciphertext_f30.tsv changes only at the 30 positions, L31 pos 25
+drops h -> m) -> `decode.py`. Both `--check` exit 0.
+
+**Test (rule 3).** `test_f30r_top.py --split split_f30.tsv` (new option: recodes in memory, tests eh on f.29r, ehx and the three
+cross shapes only, writes `test_f30r_split.tsv`; `ehx` is tested against D, the eh table value, as its current value). Same
+model, candidates (23 letters, NULL, 24 word signs), shuffled-position control (100 draws, matched on n) and acceptance rule as
+the 24 Sept run, fixed before running. The control can differ from the target on this statistic: it rescans the margin at n
+other positions of the current value, so a margin depends on where the positions fall.
+
+| Code | n | best | margin (bits) | control p | recovery | outside delta / lose>3 | named value | decision |
+|---|---|---|---|---|---|---|---|---|
+| eh (f.29r) | 10 | D (current) | 0.0 | 1.000 | 0.88 | 0.0 / 0 of 10 | T: -57.1 | D kept |
+| **ehx** | 20 | **T** | **152.1** over D | **0.010** (matched) | **1.00** | +141.7 / 3 of 19 | T | **accept, grade S** |
+| CROSSp | 5 | C | 17.4 over T (no current value) | 0.762 (gaps) | 0.94 | -2.4 / 0 of 4 | C: 27.6, p 0.535 | reject: C is not separated from random positions |
+| CROSS2 | 2 | EMPEREVR | 0.9 | 0.891 | -- | -3.6 / 1 of 1 | LL (Tomokiyo row 5): -34.4 | reject; n < 5; LL disfavoured |
+| CROSSo | 1 | P | 0.1 | 0.960 | 0.70 | 0.1 / 0 of 1 | C: -3.5 | reject; n = 1 |
+
+`key_extension_f30.tsv` gains `ehx T S` (key.tsv unchanged: neither table keys the shape, so the published-key reading now
+leaves ehx unkeyed). Grades, f.30, 1969 tokens: published key **H 1468, C 0, S 16, M 229, I 0, U 256** (was H 1486, U 236:
+the 20 ehx leave the H column, as the tables do not give them D; 2 c gain H L); extended **H 1468, C 0, S 199, M 239, I 0,
+U 63** (was H 1486, S 181, M 239, U 63). f.29r unchanged (H 532, S 1, M 30, U 5). No C, so a cryptanalytic result.
+
+Extended-reading changes (sense by eye, grade I): L04 NESTOIT POVR ... TENTERA ... ESPERANT; L03 LA SORTE QVE; L06 EST VRAY;
+L08 DICTES; L14 DE SORTE; L30 TOVTES; L35 REPVTATION; f30v L02 DECLARATION; L13 TRAIRE (was DRAIRE). Not improved or worse:
+L05 NINTPOVR, L10 IOTPEIL, L17 VELIET, L26 ·CT·, L01 (still not French); the c recodes give L17 DBLE and L31 IEEVL (were
+DBDE, IEEVD), neither yet words. Which three outside occurrences lose >3 bits is in the per-occurrence scores, not listed here.
+
+**Not established:** a value for any cross shape. CROSS = C has now been tested three times with this hidden-sign test (round 1,
+round 2, and split as CROSSp here) and never passed its control; the instrument is retired for it (rule 3, third attempt), and
+the three shapes have only 5, 2 and 1 occurrences.
+**Suggestions (not done):** on the L10 strip (`crops/f30_split/f30r_L10_7_eh.jpg`) the sign coded `lt` before ehx looks like
+the double-barred cross; the 24 Sept re-read already moved two `lt` to CROSS (L03, L07), so lt/CROSS2 may be confused
+elsewhere. The default `test_f30r_top.py` run (L01, L02, L11, L12 hypotheses) has not been rerun with ehx = T in the base.
+**Where not searched:** no phrase or print search on the changed text. Novelty is not classified (rule 10).
+Requests this pass: none to any host. Vision calls: 7 (by this worker; no subagents).
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, 3 Oct 2026)
+Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split), from the eh/CROSS split section above; f.29r reading.txt per its own section.
+- the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
+- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base
+- f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: not-attempted; the hidden-sign tests for neighbouring signs were run before ehx = T entered the base (eh/CROSS split section); next: rerun the default test_f30r_top.py (round 3, ehx = T and the c recodes in the base) and check the 3 losing ehx occurrences against their crops, ~$1
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
 - [ ] clear-pages: no clear text of these letters known; neighbouring LP iv(3) 6244/6245 summaries not yet aligned as cribs
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
-- [ ] key-rebuild: split eh and CROSS by shape and rerun the hidden-sign test with its control (gaps above)
+- [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 3 internal gaps; cheapest next: split the f.30 eh and CROSS codes by shape from the crops and rerun test_f30r_top.py with its shuffled-position control, ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: rerun the default test_f30r_top.py with ehx = T in the base (round 3) and check the 3 losing ehx occurrences on their crops, ~$1
