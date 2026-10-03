@@ -3712,6 +3712,8 @@ Waits on the owner's Monroe Catalogue Online lookup (ASKS 97) for the Armstrong-
   its groups above 1600 (Bourdeau lists 1701, 1723) and test their overlap with the 20 Feb 1808 letter's value set --
   a two-letter value-overlap count against random value sets of the same size drawn from the same numeric range
   (a reordering control could not differ, rule 3), no reading. S.
+- H70 (ARM-A-H70, 3 Oct 2026): context crib sheet for the letter's probable content and its clear frame is in
+  `crib_sources.md` "## H70 context crib sheet" (timeline, ranked cribs, formulas); scoring it is LANE-ARM-B's.
 
 ## Campaign step H67 (2026-10-03 05:32 UTC)
 

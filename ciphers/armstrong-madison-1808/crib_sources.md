@@ -383,7 +383,7 @@ used (7 small page images read directly, cheaper and simpler than a classificati
 
 ## H70 context crib sheet (ARM-A-H70, 3 Oct 2026)
 
-Worker ARM-A-H70 (LANE-ARM-A, account 1, session_01VXG4dyHsuCJvU991UoLBjF), 19:22-20:0x UTC by `date -u`. Brief
+Worker ARM-A-H70 (LANE-ARM-A, account 1, session_01VXG4dyHsuCJvU991UoLBjF), 19:22-19:41 UTC by `date -u`. Brief
 `.claude/briefs/runs/2026-10-03-acct1-arma-h70-crib.md`. **Context only: no scoring of the target, no decoding, no
 reading, so no grades (rule 4 not applicable).** What the 20 Feb 1808 letter most plausibly talks about, built from
 what Armstrong wrote and was told in the weeks around it. Scoring any of this against the ciphertext is LANE-ARM-B's.
