@@ -1,4 +1,5 @@
 open
+Molini, Documenti di storia italiana vol. 2 (1836), 'Omessi di copiare' list, no. 8513 (prefatory p. xxvi, Google Books page id PR26) (= fr.2988) read by this worker (GF4-BATCH14, 3 Oct 2026, archive.org documentidistor02moligoog djvu l.1031-1037): "a c. 9 e altra lettera dello stesso parimente in cifra, ma senza l'interpetrazione"; CSP Spain III pts 1-2 (1525-1529) full text, no Ranzo letter.
 
 **LANE N3 orchestrator, 24 Sept 2026 18:03 UTC:** open, but not a separate nomination: same Ranzo corpus as ciphers/fr3022-garbino-1528 (Bourdeau pooled both); the recovery/cryptanalysis lane should treat them as one target.
 
@@ -191,3 +192,63 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: already cited in our NOTES.md (catalogue item 170)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 4 runs): (1) `"Ranzo" cipher letter Gattinara 1526 "2988"` -- Bourdeau's site and
+three GitHub forks of cyphersolver (setsunaatto, arya1515, aryasn2026; copies, not separate work), no reading;
+(2) `"Hieronimo Ranzo" chiffre lettre` -- BnF archivesetmanuscrits records for Fr. 2988, Fr. 3019, Fr. 4050-4051
+(catalogue only); (3) `"Français 2988" chiffre Ranzo` -- BnF record and Biblissima manifest only; (4) `Ranzo Garbino
+1528 cipher decipherment initial-letter code Tomokiyo` -- Bourdeau's pages ("~3,900 groups ... unsolved"); (5) model-solve
+query `Ranzo cipher solves Claude OR GPT` -- only the Cyphral Distich news, nothing on Ranzo.
+Blog site searches: **Cipherbrain** (`Ranzo cipher site:scienceblogs.de`) -- the 17 May 2016 post "Wer löst diesen
+verschlüsselten Brief aus dem französischen Nationalarchiv" and the 24 Mar 2017 Spinelli post; **Cryptiana**
+(`site:cryptiana.blogspot.com` Ranzo Gattinara) -- no hit; **Cipher Mysteries** (`site:ciphermysteries.com` Ranzo
+Gattinara) -- no hit.
+Comment threads opened and read in full (curl, scienceblogs.de, 21 comments):
+- 17 May 2016 post, about Gallica btv1b9059908w (this volume). Torbjörn Andersson (#9, 29 Mar 2017) posts a key and
+  English plaintext ("Pleis your Majesty ...") for the **simple-substitution letter at the head of the volume**, which he
+  (#16) and Norbert (#18, 21 Oct 2017) judge misplaced and not Ranzo's. Norbert: "Die Geheimtexte auf den nachfolgenden
+  Seiten [f6] und ab folio 9 [f17] sind von Ranzo unterschrieben und ganz offensichtlich wesentlich komplexer"; Thomas
+  (#21): "Zu dem Nomenklator von Ranzos Brief fol. 2 konnte ich nichts finden." Norbert (#20) also refutes Molini's
+  "interpretation" at c.4 (it is Raince's double of 15 Dec 1526). **Nothing in the thread deciphers ff.9-11.** It points
+  to fr.3022 f.50, the "adizione nel zifra" (Ranzo's addition sheet, since used by Bourdeau).
+- 24 Mar 2017 Spinelli post: comment #14 only says "the unbroken Ranzo cipher which also dates around the year 1520".
+Same thread already logged independently in ciphers/decode-4450-bnf-fr20506-1525/NOTES.md (same reading of it).
+Cabinet Noir (github.com/el-descifrador/cabinet-noir, shallow clone HEAD 47b6db9, 2 Oct 2026; CC BY 4.0): grep for
+2988, 3022, ranzo, garbino -- no folder or file (two false hits on "zubeZalen" in malsburg-1637 key TSVs). Result: no
+decipherment or plaintext of ff.9-11 found in any blog post, comment or repository searched.
+
+## Premise check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+(a) **Folder's own mentions -- not found (checked).** The only "interpretation" anywhere is Molini's c.4 French text,
+which Molini himself ties to the c.1 letter and explicitly denies for c.9 (line 2 above); the BnF 1868 catalogue and
+Cipherbrain #20 identify c.4 as Raince's double of 15 Dec 1526 (FT4 viewed it: clear French, Rome news). DECODE R1894's
+attached "Transcription" is a ciphertext transcription, not a decipherment (section above).
+(b) **Other solvers' working files -- not found.** Bourdeau, github.com/dbourdeau/cyphersolver HEAD 4aedb40 (2 Oct 2026),
+sparse clone of targets/vasto1527: `n20/ranzo_c017-c020.txt` are his transcriptions of views 17-20 (ff.9r-10v); his
+`solve2.py` annealer recovers only a function-word skeleton on the pooled no.20+Ranzo corpus (control 46% token / 9% type);
+no rendering, apply-key output or key exists. Aymeloglu: no target folder (prior pass). Cabinet Noir: nothing (above).
+(c) **Physical neighbours -- not found.** Gallica btv1b9059908w (labels all "NP"; foliation from the leaf numbers) viewed by
+this worker: view 15 and view 16 (f.8, blank, only show-through), view 21 (f.11r, blank apart from pen trials), view 22
+(f.11v: **address panel**, native crop rotated 270: "R.do S. ... [G]arbino" across the seal cut, a date-like "...rzo",
+and two dorse words "Luna"/"Lura" and "tup^ta"; no clear text), view 23 (f.12, blank), view 24. No clear copy, gloss or slip
+beside the cipher. The f.11v address to **Garbino** (reading grade I, cut by the seal gap) ties ff.9-11 to the same addressee
+as fr.3022 no.20 -- not noted in Bourdeau's NOTES, which list only ff.9r-10v.
+(d) **Recipient's side -- not found.** CSP Spain vol. III pt 1 (1525-26, archive.org calendarofletter0003pasc) and pt 2
+(1527-29, calendarorleters0003vari), full text grepped: "Ranzo" 1 hit (introduction, Gattinara's mother Felicita Ranzo),
+"Garbino" 0; OCR usable (Gattinara 80 and 117 hits). Garbino's own papers are not located (Bourdeau's crib list names them).
+Sibling lead, not this item: Molini vol. 2 no. 8544 (prefatory p. xxxii, Google Books PR32; djvu l.1326-1328) "A c. 73. Lettera senza data ne direzione, tutta in cifra,
+colla sola firma Hieronimo Ranzo" = Bourdeau's fr.3019 no.27 f.73 (btv1b9059994n views 114-116, "no interlinear or separate
+decipherment").
+
+Verdict after both checks: **`open`** (unchanged). Not found-solved: no printed or posted decipherment or plaintext of ff.9-11.
+Requests this pass: scienceblogs.de 1 (curl) + 2 (fetch tool); gallica.bnf.fr 10 (1 manifest, 9 IIIF images); archive.org 6
+(1 advancedsearch, 2 metadata, 3 djvu.txt); github.com 2 shallow clones; WebSearch 8. All >=1.5 s apart per host.
+
+## While waiting
+
+Next step that depends on nobody: view Bourdeau's fr.3019 no.27 neighbours (Gallica btv1b9059994n views 112-118, ff.72-74)
+and no.36 (f.94) at native resolution for a clear copy or gloss of Ranzo's code; free Gallica image check, about $0.5.
+
+Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py fr2988-ranzo-1520s` -> "fr2988-ranzo-1520s: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no Web and blog check). `python3 tools/next_steps.py --wait-only | grep fr2988-ranzo-1520s` -> no line.
