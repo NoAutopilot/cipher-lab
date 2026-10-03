@@ -1,0 +1,41 @@
+crop	pos	decision	conf	note
+leg46_L01	2	A [x-dot]	H	thick diagonal + thin cross, ball terminal lower-left, separate dot upper-right; same form as L03 pos3, L09 pos4, L11 pos18
+leg46_L01	4	SAME [ezh]=3	H	flat-topped 3; every 3 in this hand (L02 O3w, L03 o3t) has this flat top, so [ezh] and 3 are one shape; use 3
+leg46_L01	5	A [h-tilde]	M	short mark at the upper right of the h above the shoulder; partly at crop top
+leg46_L01	6	SAME W=w	M	one looped w; it is the large form (loop on left stem) but no second w-shape seen to contrast; use w
+leg46_L01	8	B -	H	only one glyph (a 7) between W and [w-dots]; A's extra r is likely the 7 or the first stroke of [w-dots]
+leg46_L02	4	B [d-loop]	M	tall narrow bowl at x-height with hairline ascender rising very high and curling, same build as the d-loop in L03 'tdl' and L02 pos18; not a plain o
+leg46_L02	6	B -	M	only two round glyphs between v and 3: the d-loop (pos4) and one large O (=pos5); A split them as o+O. Note the round glyph at pos5 is visibly larger than ordinary o (capital-size O)
+leg46_L02	17	B [o-flag]	M	o with hairline flag off the top right, like L03 pos7/13; contrast plain o in L02 '5o[y-dots]'. Flag could be a joining stroke to the d-loop
+leg46_L03	5	B v	H	x-height v with thick left stroke and foot at baseline, no descender; same form as v in L02 'h v' and L07 pos10; contrast true y with descender in L02 [y-dots]
+leg46_L03	7	B [o-flag]	M	o with hairline flag top right (sigma-like)
+leg46_L03	13	B [o-flag]	M	o with hairline flag top right, as pos7
+leg46_L04	3	B [delta-grave]	M	base: angular triangle (thin straight left side, flat thin base, thick right side), i.e. a delta not a round a; mark: grave stroke directly above. The higher dot is over the MM, not this glyph. Same form as L05 pos19; contrast round [a-grave] at L04 pos13 in the same slot -- possibly one character drawn two ways
+leg46_L04	13	B [a-grave]	H	base: round cursive a (bowl + tail); mark: grave stroke above, no dot
+leg46_L04	21	SAME [diamond]	H	one lozenge with thin inner diagonal and small tail lower-left; use [diamond]
+leg46_L04	27	B [amp]	M	small looped bowl crossed by a short diagonal ending upper-left in a tick; no tall curling ascender, so not the d-loop; identical to L08 pos3
+leg46_L04	33	[x-dot-grave]	M	thick diagonal with a dot on each side (lower-left, upper-right) = the x-dot form, plus a grave stroke above; neither reader's code includes the grave; not a delta (no triangle)
+leg46_L04	44	A [3-breve]	M	lower part a 3-bowl with ball at left, upper part an open cup (breve) not joined into a closed loop, so not an 8; same as L06 pos4 (also after MM p)
+leg46_L04	49	SAME 6=[d-hook]	M	bowl with ascender curving right to a hooked/flagged tip; same shape as the numeral 6 in this hand (L10 't6.'); ascender length varies (longest at L11 pos5) -- recheck if the key separates tall vs short
+leg46_L05	3	B [p-grave]	H	base: p; mark: short slanted grave stroke, not a dot
+leg46_L05	12	B [d-hook]	H	bowl with tall ascender curving right to a ball tip; clearly not o (=6 shape, see L04 pos49)
+leg46_L05	19	B [delta-grave]	M	base: angular delta-like triangle; mark: grave; same as L04 pos3
+leg46_L06	4	A [3-breve]	M	3 with small cup/breve above; same as L04 pos44 (the 3 in '630' later on this line also carries a small mark above)
+leg46_L07	1	B [1-hook]	M	single vertical stroke with hook top-left and foot bottom-left; the thin diagonal on its right is a joining hairline to q, not a second arm; not y
+leg46_L07	10	B v	M	x-height v-form, thick left stroke ending in a small loop at the baseline, thin right arm with ball; no descender; same as L03 pos5
+leg46_L08	3	B [amp]	M	small looped bowl crossed by short diagonal with tick at upper left; identical to L04 pos27; not the tall-ascender d-loop
+leg46_L08	43	SAME [d-loop]	H	bowl with hairline ascender curling back left over the 7; d and [d-loop] are one shape here
+leg46_L09	4	B [x-dot]	H	thick diagonal, dot upper-right, ball lower-left (thin cross faint); same as L01 pos2
+leg46_L09	15	B [d-loop]	M	small separate bowl with a short stem rising and turning, a clear gap before the long s; short ascender, smaller than usual d-loop
+leg46_L09	19	B 8	M	closed lower bowl plus small closed upper loop, x-height size; not a 3 (bottom loop closed on the left)
+leg46_L09	40	A 5	M	horizontal top flag to the right, short stem, bowl opening left; matches the 5 in L09 'l5#'; contrast [s-hook] (no top bar) at L10 pos23
+leg46_L10	17	B l	M	sequence is t then l: the second stroke has no crossbar of its own, the t's bar runs into it
+leg46_L10	23	B [s-hook]	M	stem on the right with a small hook top-right, curving round the bottom to a ball at left; no horizontal top bar, so not the 5; same as L10 pos59, L11 pos4
+leg46_L10	50	B <h,>	M	label h; the mark after it sits at/below the baseline with a short downward tail (comma-like), unlike the round period before h; punctuation only
+leg46_L10	58	SAME 6=[d-hook]	M	bowl with ascender curving right to a ball tip; same as the numeral 6 (see L04 pos49)
+leg46_L10	59	B [s-hook]	M	ball lower-left, rising right stroke with hook; not a 3 (no flat top, one bowl); as L10 pos23
+leg46_L11	1	B [thorn]	M	hooked left arm, closed loop on the right, stem descending below the line with a short foot right; the closed right loop rules out psi (two open arms)
+leg46_L11	4	B [s-hook]	M	ball lower-left, rising right stem with small hook top-right, no top bar; as L10 pos23
+leg46_L11	5	SAME 6=[d-hook]	M	bowl with a very long ascender sweeping right to a hooked tip; longest instance of the 6/[d-hook] shape
+leg46_L11	16	B [delta-dots]	M	base: pointed triangle with thin left side, thick right side, foot left (same base as L04 pos3, L05 pos19); mark: two dots above
+leg46_L11	18	B [x-dot]	H	thick diagonal with dot upper-right and dot lower-left; as L01 pos2

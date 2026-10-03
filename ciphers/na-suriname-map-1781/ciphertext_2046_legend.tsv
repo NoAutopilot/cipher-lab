@@ -1,0 +1,394 @@
+# NA 4.VEL 2046 (Plan en defensie van de redout Purmerent, Wollant 1781): the whole text block lower right -- title 2 lines,
+# heading, battery lines No.1-3, second heading, lettered legend a-k. Native IIIF region 9000,1800,2450,1400 of 11529x4584
+# (images/2046_legend_native.jpg), crops images/crops_2046_leg (tools/iiif_lines.py, command in NOTES.md GAPS18). Two blind Opus
+# passes (passes/leg2046_passA.tsv, passB.tsv; brief passes/leg2046_pass_brief.md) aligned by passes/leg2046_merge.py, one blind
+# Opus reconciliation (passes/leg2046_reconcile.tsv); built by passes/leg2046_build.py. conf H = both passes agree or the
+# reconciliation rated H; M otherwise. GAPS18-na-suriname-map-1781 (account-4), 3 Oct 2026.
+line	pos	sign	conf	note
+2046_title1	0	q	H	
+2046_title1	1	e	H	
+2046_title1	2	[x-dot]	H	A:[x-dot] B:x; reconciled H: thick diagonal + thin cross, ball terminal lower-left, separate dot upper-right; same form as L03 pos3, L09 pos4, L11 pos18
+2046_title1	3	l	H	
+2046_title1	4	3	H	A:[ezh] B:3; reconciled H: flat-topped 3; every 3 in this hand (L02 O3w, L03 o3t) has this flat top, so [ezh] and 3 are one shape; use 3
+2046_title1	5	[h-tilde]	M	A:[h-tilde] B:h; reconciled M: short mark at the upper right of the h above the shoulder; partly at crop top
+2046_title1	6	w	M	A:W B:w; reconciled M: one looped w; it is the large form (loop on left stem) but no second w-shape seen to contrast; use w
+2046_title1	7	7	H	
+2046_title1	8	[w-dots]	H	
+2046_title1	9	a	H	
+2046_title1	10	l	H	
+2046_title1	11	[psi]	H	
+2046_title1	12	[f-loop]	H	
+2046_title1	13	o	H	
+2046_title1	14	6	H	
+2046_title1	15	[lambda]	H	
+2046_title1	16	[delta]	H	
+2046_title1	17	p	H	
+2046_title1	18	r	H	
+2046_title2	0	5	H	
+2046_title2	1	p	H	
+2046_title2	2	h	H	
+2046_title2	3	v	H	
+2046_title2	4	[d-loop]	M	A:- B:[d-loop]; reconciled M: tall narrow bowl at x-height with hairline ascender rising very high and curling, same build as the d-loop in L03 'tdl' and L02 pos18; not a plain o
+2046_title2	5	o	H	
+2046_title2	6	3	H	
+2046_title2	7	w	H	
+2046_title2	8	[hash]	H	
+2046_title2	9	5	H	
+2046_title2	10	[lambda]	H	
+2046_title2	11	S	H	
+2046_title2	12	5	H	
+2046_title2	13	o	H	
+2046_title2	14	[u-dots]	H	
+2046_title2	15	7	H	
+2046_title2	16	[o-flag]	M	A:o B:[o-flag]; reconciled M: o with hairline flag off the top right, like L03 pos7/13; contrast plain o in L02 '5o[y-dots]'. Flag could be a joining stroke to the d-loop
+2046_title2	17	[d-loop]	H	
+2046_title2	18	h	H	
+2046_title2	19	v	H	
+2046_title2	20	a	H	
+2046_head1	0	[psi]	H	
+2046_head1	1	[lambda]	H	
+2046_head1	2	[x-dot]	H	
+2046_head1	3	[delta]	H	
+2046_head1	4	[lambda]	H	
+2046_head1	5	v	H	A:y B:v; reconciled H: x-height v with thick left stroke and foot at baseline, no descender; same form as v in L02 'h v' and L07 pos10; contrast true y with descender in L02 [y-dots]
+2046_head1	6	7	H	
+2046_head1	7	[o-flag]	M	A:o B:[o-flag]; reconciled M: o with hairline flag top right (sigma-like)
+2046_head1	8	[d-loop]	H	
+2046_head1	9	p	H	
+2046_head1	10	r	H	
+2046_head1	11	[lambda]	H	
+2046_head1	12	a	H	
+2046_head1	13	[o-flag]	M	A:o B:[o-flag]; reconciled M: o with hairline flag top right, as pos7
+2046_head1	14	3	H	
+2046_head1	15	t	H	
+2046_head1	16	[d-loop]	H	
+2046_head1	17	l	H	
+2046_No1	0	w:No.1.	H	
+2046_No1	1	w:1	H	
+2046_No1	2	[MM]	H	
+2046_No1	3	[delta-grave]	M	A:[a-dot] B:[delta-grave]; reconciled M: base: angular triangle (thin straight left side, flat thin base, thick right side), i.e. a delta not a round a; mark: grave stroke directly above. The higher dot is over the MM, not this glyph. Same form as L05 pos19; contrast round [a-grave] at L04 pos13 in the same slot -- possibly one character drawn two ways
+2046_No1	4	w:24	H	
+2046_No1	5	g	H	
+2046_No1	6	[d-loop]	H	
+2046_No1	7	t	H	
+2046_No1	8	[psi]	H	
+2046_No1	9	3	H	
+2046_No1	10	o	H	
+2046_No1	11	w:2	H	
+2046_No1	12	[MM]	H	
+2046_No1	13	[a-grave]	H	A:[a-dot] B:[a-grave]; reconciled H: base: round cursive a (bowl + tail); mark: grave stroke above, no dot
+2046_No1	14	w:18	H	
+2046_No1	15	g	H	
+2046_No1	16	[d-loop]	H	
+2046_No1	17	v	H	
+2046_No1	18	[f-loop]	H	
+2046_No1	19	[lambda]	H	
+2046_No1	20	[hash]	H	
+2046_No1	21	[diamond]	H	A:[diamond] B:[lozenge]; reconciled H: one lozenge with thin inner diagonal and small tail lower-left; use [diamond]
+2046_No1	22	3	H	
+2046_No1	23	7	H	
+2046_No1	24	g	H	
+2046_No1	25	w	H	
+2046_No1	26	a	H	
+2046_No1	27	[amp]	M	A:[d-loop] B:[amp]; reconciled M: small looped bowl crossed by a short diagonal ending upper-left in a tick; no tall curling ascender, so not the d-loop; identical to L08 pos3
+2046_No1	28	[d-hook]	H	
+2046_No1	29	[thorn]	H	
+2046_No1	30	r	H	
+2046_No1	31	w:2	H	
+2046_No1	32	[MM]	H	
+2046_No1	33	[x-dot-grave]	M	A:[x-dot] B:[delta-dots]; reconciled M: thick diagonal with a dot on each side (lower-left, upper-right) = the x-dot form, plus a grave stroke above; neither reader's code includes the grave; not a delta (no triangle)
+2046_No1	34	w:6	H	
+2046_No1	35	g	H	
+2046_No1	36	[d-loop]	H	
+2046_No1	37	t	H	
+2046_No1	38	6	H	
+2046_No1	39	a	H	
+2046_No1	40	o	H	
+2046_No1	41	w:1	H	
+2046_No1	42	[MM]	H	
+2046_No1	43	p	H	
+2046_No1	44	[3-breve]	M	A:[3-breve] B:<8>; reconciled M: lower part a 3-bowl with ball at left, upper part an open cup (breve) not joined into a closed loop, so not an 8; same as L06 pos4 (also after MM p)
+2046_No1	45	g	H	
+2046_No1	46	[d-loop]	H	
+2046_No1	47	t	H	
+2046_No1	48	[psi]	H	
+2046_No1	49	[d-hook]	M	A:6 B:[d-hook]; reconciled M: bowl with ascender curving right to a hooked/flagged tip; same shape as the numeral 6 in this hand (L10 't6.'); ascender length varies (longest at L11 pos5) -- recheck if the key separates tall vs short
+2046_No1	50	o	H	
+2046_No2	0	w:No.2.	H	
+2046_No2	1	w:3	H	
+2046_No2	2	[MM]	H	
+2046_No2	3	[p-grave]	H	A:[p-dot] B:[p-grave]; reconciled H: base: p; mark: short slanted grave stroke, not a dot
+2046_No2	4	w:18	H	
+2046_No2	5	g	H	
+2046_No2	6	[d-loop]	H	
+2046_No2	7	t	H	
+2046_No2	8	6	H	
+2046_No2	9	a	H	
+2046_No2	10	o	H	
+2046_No2	11	v	H	
+2046_No2	12	[d-hook]	H	A:o B:[d-hook]; reconciled H: bowl with tall ascender curving right to a ball tip; clearly not o (=6 shape, see L04 pos49)
+2046_No2	13	[w-tilde]	H	
+2046_No2	14	a	H	
+2046_No2	15	[thorn]	H	
+2046_No2	16	[lambda]	H	
+2046_No2	17	w:1	H	
+2046_No2	18	[MM]	H	
+2046_No2	19	[delta-grave]	M	A:[a-dot] B:[delta-grave]; reconciled M: base: angular delta-like triangle; mark: grave; same as L04 pos3
+2046_No2	20	w:6	H	
+2046_No2	21	g	H	
+2046_No2	22	[d-loop]	H	
+2046_No2	23	t	H	
+2046_No2	24	[psi]	H	
+2046_No2	25	7	H	
+2046_No2	26	o	H	
+2046_No3	0	w:No.3.	H	
+2046_No3	1	w:2	H	
+2046_No3	2	[MM]	H	
+2046_No3	3	p	H	
+2046_No3	4	[3-breve]	M	A:[3-breve] B:<3>; reconciled M: 3 with small cup/breve above; same as L04 pos44 (the 3 in '630' later on this line also carries a small mark above)
+2046_No3	5	g	H	
+2046_No3	6	[d-loop]	H	
+2046_No3	7	t	H	
+2046_No3	8	6	H	
+2046_No3	9	3	H	
+2046_No3	10	o	H	
+2046_head2	0	3	H	
+2046_head2	1	[1-hook]	M	A:y B:[1-hook]; reconciled M: single vertical stroke with hook top-left and foot bottom-left; the thin diagonal on its right is a joining hairline to q, not a second arm; not y
+2046_head2	2	q	H	
+2046_head2	3	g	H	
+2046_head2	4	m	H	
+2046_head2	5	[thorn]	H	
+2046_head2	6	[delta]	H	
+2046_head2	7	[lambda]	H	
+2046_head2	8	8	H	
+2046_head2	9	7	H	
+2046_head2	10	v	M	A:y B:v; reconciled M: x-height v-form, thick left stroke ending in a small loop at the baseline, thin right arm with ball; no descender; same as L03 pos5
+2046_head2	11	a	H	
+2046_head2	12	o	H	
+2046_head2	13	[psi]	H	
+2046_head2	14	[f-loop]	H	
+2046_head2	15	g	H	
+2046_head2	16	h	H	
+2046_head2	17	[x-dot]	H	
+2046_head2	18	r	H	
+2046_head2	19	5	H	
+2046_head2	20	e	H	
+2046_head2	21	o	H	
+2046_head2	22	3	H	
+2046_head2	23	l	H	
+2046_leg_abc	0	w:a.	H	
+2046_leg_abc	1	k	H	
+2046_leg_abc	2	[w-tilde]	H	
+2046_leg_abc	3	[amp]	M	A:[d-loop] B:[amp]; reconciled M: small looped bowl crossed by short diagonal with tick at upper left; identical to L04 pos27; not the tall-ascender d-loop
+2046_leg_abc	4	[f-loop]	H	
+2046_leg_abc	5	[thorn]	H	
+2046_leg_abc	6	m	H	
+2046_leg_abc	7	3	H	
+2046_leg_abc	8	o	H	
+2046_leg_abc	9	6	H	
+2046_leg_abc	10	g	H	
+2046_leg_abc	11	[hash]	H	
+2046_leg_abc	12	[pi]	H	
+2046_leg_abc	13	g	H	
+2046_leg_abc	14	7	H	
+2046_leg_abc	15	w:b.	H	
+2046_leg_abc	16	[psi]	H	
+2046_leg_abc	17	k	H	
+2046_leg_abc	18	g	H	
+2046_leg_abc	19	v	H	
+2046_leg_abc	20	[delta]	H	
+2046_leg_abc	21	[x-dot]	H	
+2046_leg_abc	22	[lambda]	H	
+2046_leg_abc	23	3	H	
+2046_leg_abc	24	h	H	
+2046_leg_abc	25	b	H	
+2046_leg_abc	26	4	H	
+2046_leg_abc	27	[delta]	H	
+2046_leg_abc	28	o	H	
+2046_leg_abc	29	[lambda]	H	
+2046_leg_abc	30	[f-loop]	H	
+2046_leg_abc	31	7	H	
+2046_leg_abc	32	o	H	
+2046_leg_abc	33	w:c,	H	
+2046_leg_abc	34	b	H	
+2046_leg_abc	35	g	H	
+2046_leg_abc	36	a	H	
+2046_leg_abc	37	t	H	
+2046_leg_abc	38	t	H	
+2046_leg_abc	39	l	H	
+2046_leg_abc	40	3	H	
+2046_leg_abc	41	g	H	
+2046_leg_abc	42	7	H	
+2046_leg_abc	43	[d-loop]	H	A:d B:[d-loop]; reconciled H: bowl with hairline ascender curling back left over the 7; d and [d-loop] are one shape here
+2046_leg_abc	44	[hash]	H	
+2046_leg_abc	45	5	H	
+2046_leg_abc	46	4	H	
+2046_leg_abc	47	l	H	
+2046_leg_abc	48	5	H	
+2046_leg_abc	49	k	H	
+2046_leg_abc	50	[pi]	H	
+2046_leg_abc	51	o	H	
+2046_leg_abc	52	v	H	
+2046_leg_abc	53	[f-loop]	H	
+2046_leg_abc	54	[lambda]	H	
+2046_leg_abc	55	k	H	
+2046_leg_d	0	w:d.	H	
+2046_leg_d	1	[d-loop]	H	
+2046_leg_d	2	[delta]	H	
+2046_leg_d	3	o	H	
+2046_leg_d	4	[x-dot]	H	A:x B:[x-dot]; reconciled H: thick diagonal, dot upper-right, ball lower-left (thin cross faint); same as L01 pos2
+2046_leg_d	5	b	H	
+2046_leg_d	6	b	H	
+2046_leg_d	7	3	H	
+2046_leg_d	8	l	H	
+2046_leg_d	9	5	H	
+2046_leg_d	10	[hash]	H	
+2046_leg_d	11	k	H	
+2046_leg_d	12	o	H	
+2046_leg_d	13	v	H	
+2046_leg_d	14	7	H	
+2046_leg_d	15	[d-loop]	M	A:- B:[d-loop]; reconciled M: small separate bowl with a short stem rising and turning, a clear gap before the long s; short ascender, smaller than usual d-loop
+2046_leg_d	16	[s-loop]	H	
+2046_leg_d	17	m	H	
+2046_leg_d	18	a	H	
+2046_leg_d	19	8	M	A:3 B:8; reconciled M: closed lower bowl plus small closed upper loop, x-height size; not a 3 (bottom loop closed on the left)
+2046_leg_d	20	l	H	
+2046_leg_d	21	[d-loop]	H	
+2046_leg_d	22	3	H	
+2046_leg_d	23	[psi]	H	
+2046_leg_d	24	[d-hook]	H	
+2046_leg_d	25	[lambda]	H	
+2046_leg_d	26	r	H	
+2046_leg_d	27	[f-loop]	H	
+2046_leg_d	28	h	H	
+2046_leg_d	29	g	H	
+2046_leg_d	30	g	H	
+2046_leg_d	31	a	H	
+2046_leg_d	32	g	H	
+2046_leg_d	33	g	H	
+2046_leg_d	34	3	H	
+2046_leg_d	35	l	H	
+2046_leg_d	36	v	H	
+2046_leg_d	37	7	H	
+2046_leg_d	38	[d-loop]	H	
+2046_leg_d	39	a	H	
+2046_leg_d	40	5	M	A:5 B:[s-round]; reconciled M: horizontal top flag to the right, short stem, bowl opening left; matches the 5 in L09 'l5#'; contrast [s-hook] (no top bar) at L10 pos23
+2046_leg_d	41	o	H	
+2046_leg_d	42	3	H	
+2046_leg_d	43	[d-hook]	H	
+2046_leg_d	44	w	H	
+2046_leg_d	45	m	H	
+2046_leg_d	46	g	H	
+2046_leg_d	47	v	H	
+2046_leg_d	48	7	H	
+2046_leg_d	49	[d-loop]	H	
+2046_leg_d	50	[hash]	H	
+2046_leg_d	51	6	H	
+2046_leg_d	52	[psi]	H	
+2046_leg_d	53	h	H	
+2046_leg_d	54	3	H	
+2046_leg_d	55	a	H	
+2046_leg_d	56	g	H	
+2046_leg_d	57	[d-hook]	H	
+2046_leg_d	58	o	H	
+2046_leg_d	59	6	H	
+2046_leg_efgh	0	w:e.	H	
+2046_leg_efgh	1	[hand-box]	H	
+2046_leg_efgh	2	[amp]	H	
+2046_leg_efgh	3	[delta]	H	
+2046_leg_efgh	4	[u-dots]	H	
+2046_leg_efgh	5	5	H	
+2046_leg_efgh	6	h	H	
+2046_leg_efgh	7	[f-loop]	H	
+2046_leg_efgh	8	[lambda]	H	
+2046_leg_efgh	9	m	H	
+2046_leg_efgh	10	3	H	
+2046_leg_efgh	11	[u-dots]	H	
+2046_leg_efgh	12	[x-dot]	H	
+2046_leg_efgh	13	g	H	
+2046_leg_efgh	14	[delta]	H	
+2046_leg_efgh	15	[thorn]	H	
+2046_leg_efgh	16	t	H	
+2046_leg_efgh	17	l	M	A:t B:l; reconciled M: sequence is t then l: the second stroke has no crossbar of its own, the t's bar runs into it
+2046_leg_efgh	18	[lambda]	H	
+2046_leg_efgh	19	8	H	
+2046_leg_efgh	20	3	H	
+2046_leg_efgh	21	6	H	
+2046_leg_efgh	22	[hash]	H	
+2046_leg_efgh	23	[s-hook]	M	A:5 B:[s-hook]; reconciled M: stem on the right with a small hook top-right, curving round the bottom to a ball at left; no horizontal top bar, so not the 5; same as L10 pos59, L11 pos4
+2046_leg_efgh	24	v	H	
+2046_leg_efgh	25	a	H	
+2046_leg_efgh	26	[d-loop]	H	
+2046_leg_efgh	27	[x-dot]	H	
+2046_leg_efgh	28	[lambda]	H	
+2046_leg_efgh	29	r	H	
+2046_leg_efgh	30	[d-hook]	H	
+2046_leg_efgh	31	o	H	
+2046_leg_efgh	32	t	H	
+2046_leg_efgh	33	7	H	
+2046_leg_efgh	34	l	H	
+2046_leg_efgh	35	w:f.	H	
+2046_leg_efgh	36	[thorn]	H	
+2046_leg_efgh	37	8	H	
+2046_leg_efgh	38	[lambda]	H	
+2046_leg_efgh	39	3	H	
+2046_leg_efgh	40	o	H	
+2046_leg_efgh	41	h	H	
+2046_leg_efgh	42	7	H	
+2046_leg_efgh	43	6	H	
+2046_leg_efgh	44	w:g.	H	
+2046_leg_efgh	45	[psi]	H	
+2046_leg_efgh	46	g	H	
+2046_leg_efgh	47	5	H	
+2046_leg_efgh	48	t	H	
+2046_leg_efgh	49	6	H	
+2046_leg_efgh	50	w:h,	M	A:<h.> B:<h,>; reconciled M: label h; the mark after it sits at/below the baseline with a short downward tail (comma-like), unlike the round period before h; punctuation only
+2046_leg_efgh	51	g	H	
+2046_leg_efgh	52	[delta]	H	
+2046_leg_efgh	53	l	H	
+2046_leg_efgh	54	v	H	
+2046_leg_efgh	55	m	H	
+2046_leg_efgh	56	h	H	
+2046_leg_efgh	57	g	H	
+2046_leg_efgh	58	[d-hook]	M	A:6 B:[d-hook]; reconciled M: bowl with ascender curving right to a ball tip; same as the numeral 6 (see L04 pos49)
+2046_leg_efgh	59	[s-hook]	M	A:3 B:[s-hook]; reconciled M: ball lower-left, rising right stroke with hook; not a 3 (no flat top, one bowl); as L10 pos23
+2046_leg_efgh	60	g	H	
+2046_leg_efgh	61	[x-dot]	H	
+2046_leg_efgh	62	p	H	
+2046_leg_efgh	63	[lambda]	H	
+2046_leg_efgh	64	[psi]	H	
+2046_leg_ki	0	w:k.	H	
+2046_leg_ki	1	[thorn]	M	A:[psi] B:[thorn]; reconciled M: hooked left arm, closed loop on the right, stem descending below the line with a short foot right; the closed right loop rules out psi (two open arms)
+2046_leg_ki	2	[hash]	H	
+2046_leg_ki	3	o	H	
+2046_leg_ki	4	[s-hook]	M	A:5 B:[s-hook]; reconciled M: ball lower-left, rising right stem with small hook top-right, no top bar; as L10 pos23
+2046_leg_ki	5	[d-hook]	M	A:6 B:[d-hook]; reconciled M: bowl with a very long ascender sweeping right to a hooked tip; longest instance of the 6/[d-hook] shape
+2046_leg_ki	6	v	H	
+2046_leg_ki	7	3	H	
+2046_leg_ki	8	g	H	
+2046_leg_ki	9	[delta]	H	
+2046_leg_ki	10	o	H	
+2046_leg_ki	11	v	H	
+2046_leg_ki	12	7	H	
+2046_leg_ki	13	w:i.	H	
+2046_leg_ki	14	g	H	
+2046_leg_ki	15	7	H	
+2046_leg_ki	16	[delta-dots]	M	A:[a-dots] B:[delta-dots]; reconciled M: base: pointed triangle with thin left side, thick right side, foot left (same base as L04 pos3, L05 pos19); mark: two dots above
+2046_leg_ki	17	5	H	
+2046_leg_ki	18	[x-dot]	H	A:x B:[x-dot]; reconciled H: thick diagonal with dot upper-right and dot lower-left; as L01 pos2
+2046_leg_ki	19	6	H	
+2046_leg_ki	20	3	H	
+2046_leg_ki	21	a	H	
+2046_leg_ki	22	o	H	
+2046_leg_ki	23	v	H	
+2046_leg_ki	24	[d-hook]	H	
+2046_leg_ki	25	h	H	
+2046_leg_ki	26	[delta]	H	
+2046_leg_ki	27	g	H	
+2046_leg_ki	28	[lambda]	H	
+2046_leg_ki	29	8	H	
+2046_leg_ki	30	[hash]	H	
+2046_leg_ki	31	[psi]	H	
+2046_leg_ki	32	[lambda]	H	
+2046_leg_ki	33	3	H	
+2046_leg_ki	34	l	H	

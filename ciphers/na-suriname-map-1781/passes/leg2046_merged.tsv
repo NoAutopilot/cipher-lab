@@ -1,0 +1,390 @@
+crop	pos	sign	conf	note
+leg46_L01	0	q	H	
+leg46_L01	1	e	H	
+leg46_L01	2	[x-dot]	M	A:[x-dot] B:x
+leg46_L01	3	l	H	
+leg46_L01	4	[ezh]	M	A:[ezh] B:3
+leg46_L01	5	[h-tilde]	M	A:[h-tilde] B:h
+leg46_L01	6	W	M	A:W B:w
+leg46_L01	7	7	H	
+leg46_L01	8	r	M	A:r B:-
+leg46_L01	9	[w-dots]	H	
+leg46_L01	10	a	H	
+leg46_L01	11	l	H	
+leg46_L01	12	[psi]	H	
+leg46_L01	13	[f-loop]	H	
+leg46_L01	14	o	H	
+leg46_L01	15	6	H	
+leg46_L01	16	[lambda]	H	
+leg46_L01	17	[delta]	H	
+leg46_L01	18	p	H	
+leg46_L01	19	r	H	
+leg46_L02	0	5	H	
+leg46_L02	1	p	H	
+leg46_L02	2	h	H	
+leg46_L02	3	v	H	
+leg46_L02	4	[d-loop]	M	A:- B:[d-loop]
+leg46_L02	5	o	H	
+leg46_L02	6	O	M	A:O B:-
+leg46_L02	7	3	H	
+leg46_L02	8	w	H	
+leg46_L02	9	[hash]	H	
+leg46_L02	10	5	H	
+leg46_L02	11	[lambda]	H	
+leg46_L02	12	S	H	
+leg46_L02	13	5	H	
+leg46_L02	14	o	H	
+leg46_L02	15	[u-dots]	H	
+leg46_L02	16	7	H	
+leg46_L02	17	o	M	A:o B:[o-flag]
+leg46_L02	18	[d-loop]	H	
+leg46_L02	19	h	H	
+leg46_L02	20	v	H	
+leg46_L02	21	a	H	
+leg46_L03	0	[psi]	H	
+leg46_L03	1	[lambda]	H	
+leg46_L03	2	[x-dot]	H	
+leg46_L03	3	[delta]	H	
+leg46_L03	4	[lambda]	H	
+leg46_L03	5	y	M	A:y B:v
+leg46_L03	6	7	H	
+leg46_L03	7	o	M	A:o B:[o-flag]
+leg46_L03	8	[d-loop]	H	
+leg46_L03	9	p	H	
+leg46_L03	10	r	H	
+leg46_L03	11	[lambda]	H	
+leg46_L03	12	a	H	
+leg46_L03	13	o	M	A:o B:[o-flag]
+leg46_L03	14	3	H	
+leg46_L03	15	t	H	
+leg46_L03	16	[d-loop]	H	
+leg46_L03	17	l	H	
+leg46_L04	0	<No.1.>	H	
+leg46_L04	1	<1>	H	
+leg46_L04	2	[MM]	H	
+leg46_L04	3	[a-dot]	M	A:[a-dot] B:[delta-grave]
+leg46_L04	4	<24>	H	
+leg46_L04	5	g	H	
+leg46_L04	6	[d-loop]	H	
+leg46_L04	7	t	H	
+leg46_L04	8	[psi]	H	
+leg46_L04	9	3	H	
+leg46_L04	10	o	H	
+leg46_L04	11	<2>	H	
+leg46_L04	12	[MM]	H	
+leg46_L04	13	[a-dot]	M	A:[a-dot] B:[a-grave]
+leg46_L04	14	<18>	H	
+leg46_L04	15	g	H	
+leg46_L04	16	[d-loop]	H	
+leg46_L04	17	v	H	
+leg46_L04	18	[f-loop]	H	
+leg46_L04	19	[lambda]	H	
+leg46_L04	20	[hash]	H	
+leg46_L04	21	[diamond]	M	A:[diamond] B:[lozenge]
+leg46_L04	22	3	H	
+leg46_L04	23	7	H	
+leg46_L04	24	g	H	
+leg46_L04	25	w	H	
+leg46_L04	26	a	H	
+leg46_L04	27	[d-loop]	M	A:[d-loop] B:[amp]
+leg46_L04	28	[d-hook]	H	
+leg46_L04	29	[thorn]	H	
+leg46_L04	30	r	H	
+leg46_L04	31	<2>	H	
+leg46_L04	32	[MM]	H	
+leg46_L04	33	[x-dot]	M	A:[x-dot] B:[delta-dots]
+leg46_L04	34	<6>	H	
+leg46_L04	35	g	H	
+leg46_L04	36	[d-loop]	H	
+leg46_L04	37	t	H	
+leg46_L04	38	6	H	
+leg46_L04	39	a	H	
+leg46_L04	40	o	H	
+leg46_L04	41	<1>	H	
+leg46_L04	42	[MM]	H	
+leg46_L04	43	p	H	
+leg46_L04	44	[3-breve]	M	A:[3-breve] B:<8>
+leg46_L04	45	g	H	
+leg46_L04	46	[d-loop]	H	
+leg46_L04	47	t	H	
+leg46_L04	48	[psi]	H	
+leg46_L04	49	6	M	A:6 B:[d-hook]
+leg46_L04	50	o	H	
+leg46_L05	0	<No.2.>	H	
+leg46_L05	1	<3>	H	
+leg46_L05	2	[MM]	H	
+leg46_L05	3	[p-dot]	M	A:[p-dot] B:[p-grave]
+leg46_L05	4	<18>	H	
+leg46_L05	5	g	H	
+leg46_L05	6	[d-loop]	H	
+leg46_L05	7	t	H	
+leg46_L05	8	6	H	
+leg46_L05	9	a	H	
+leg46_L05	10	o	H	
+leg46_L05	11	v	H	
+leg46_L05	12	o	M	A:o B:[d-hook]
+leg46_L05	13	[w-tilde]	H	
+leg46_L05	14	a	H	
+leg46_L05	15	[thorn]	H	
+leg46_L05	16	[lambda]	H	
+leg46_L05	17	<1>	H	
+leg46_L05	18	[MM]	H	
+leg46_L05	19	[a-dot]	M	A:[a-dot] B:[delta-grave]
+leg46_L05	20	<6>	H	
+leg46_L05	21	g	H	
+leg46_L05	22	[d-loop]	H	
+leg46_L05	23	t	H	
+leg46_L05	24	[psi]	H	
+leg46_L05	25	7	H	
+leg46_L05	26	o	H	
+leg46_L06	0	<No.3.>	H	
+leg46_L06	1	<2>	H	
+leg46_L06	2	[MM]	H	
+leg46_L06	3	p	H	
+leg46_L06	4	[3-breve]	M	A:[3-breve] B:<3>
+leg46_L06	5	g	H	
+leg46_L06	6	[d-loop]	H	
+leg46_L06	7	t	H	
+leg46_L06	8	6	H	
+leg46_L06	9	3	H	
+leg46_L06	10	o	H	
+leg46_L07	0	3	H	
+leg46_L07	1	y	M	A:y B:[1-hook]
+leg46_L07	2	q	H	
+leg46_L07	3	g	H	
+leg46_L07	4	m	H	
+leg46_L07	5	[thorn]	H	
+leg46_L07	6	[delta]	H	
+leg46_L07	7	[lambda]	H	
+leg46_L07	8	8	H	
+leg46_L07	9	7	H	
+leg46_L07	10	y	M	A:y B:v
+leg46_L07	11	a	H	
+leg46_L07	12	o	H	
+leg46_L07	13	[psi]	H	
+leg46_L07	14	[f-loop]	H	
+leg46_L07	15	g	H	
+leg46_L07	16	h	H	
+leg46_L07	17	[x-dot]	H	
+leg46_L07	18	r	H	
+leg46_L07	19	5	H	
+leg46_L07	20	e	H	
+leg46_L07	21	o	H	
+leg46_L07	22	3	H	
+leg46_L07	23	l	H	
+leg46_L08	0	<a.>	H	
+leg46_L08	1	k	H	
+leg46_L08	2	[w-tilde]	H	
+leg46_L08	3	[d-loop]	M	A:[d-loop] B:[amp]
+leg46_L08	4	[f-loop]	H	
+leg46_L08	5	[thorn]	H	
+leg46_L08	6	m	H	
+leg46_L08	7	3	H	
+leg46_L08	8	o	H	
+leg46_L08	9	6	H	
+leg46_L08	10	g	H	
+leg46_L08	11	[hash]	H	
+leg46_L08	12	[pi]	H	
+leg46_L08	13	g	H	
+leg46_L08	14	7	H	
+leg46_L08	15	<b.>	H	
+leg46_L08	16	[psi]	H	
+leg46_L08	17	k	H	
+leg46_L08	18	g	H	
+leg46_L08	19	v	H	
+leg46_L08	20	[delta]	H	
+leg46_L08	21	[x-dot]	H	
+leg46_L08	22	[lambda]	H	
+leg46_L08	23	3	H	
+leg46_L08	24	h	H	
+leg46_L08	25	b	H	
+leg46_L08	26	4	H	
+leg46_L08	27	[delta]	H	
+leg46_L08	28	o	H	
+leg46_L08	29	[lambda]	H	
+leg46_L08	30	[f-loop]	H	
+leg46_L08	31	7	H	
+leg46_L08	32	o	H	
+leg46_L08	33	<c,>	H	
+leg46_L08	34	b	H	
+leg46_L08	35	g	H	
+leg46_L08	36	a	H	
+leg46_L08	37	t	H	
+leg46_L08	38	t	H	
+leg46_L08	39	l	H	
+leg46_L08	40	3	H	
+leg46_L08	41	g	H	
+leg46_L08	42	7	H	
+leg46_L08	43	d	M	A:d B:[d-loop]
+leg46_L08	44	[hash]	H	
+leg46_L08	45	5	H	
+leg46_L08	46	4	H	
+leg46_L08	47	l	H	
+leg46_L08	48	5	H	
+leg46_L08	49	k	H	
+leg46_L08	50	[pi]	H	
+leg46_L08	51	o	H	
+leg46_L08	52	v	H	
+leg46_L08	53	[f-loop]	H	
+leg46_L08	54	[lambda]	H	
+leg46_L08	55	k	H	
+leg46_L09	0	<d.>	H	
+leg46_L09	1	[d-loop]	H	
+leg46_L09	2	[delta]	H	
+leg46_L09	3	o	H	
+leg46_L09	4	x	M	A:x B:[x-dot]
+leg46_L09	5	b	H	
+leg46_L09	6	b	H	
+leg46_L09	7	3	H	
+leg46_L09	8	l	H	
+leg46_L09	9	5	H	
+leg46_L09	10	[hash]	H	
+leg46_L09	11	k	H	
+leg46_L09	12	o	H	
+leg46_L09	13	v	H	
+leg46_L09	14	7	H	
+leg46_L09	15	[d-loop]	M	A:- B:[d-loop]
+leg46_L09	16	[s-loop]	H	
+leg46_L09	17	m	H	
+leg46_L09	18	a	H	
+leg46_L09	19	3	M	A:3 B:8
+leg46_L09	20	l	H	
+leg46_L09	21	[d-loop]	H	
+leg46_L09	22	3	H	
+leg46_L09	23	[psi]	H	
+leg46_L09	24	[d-hook]	H	
+leg46_L09	25	[lambda]	H	
+leg46_L09	26	r	H	
+leg46_L09	27	[f-loop]	H	
+leg46_L09	28	h	H	
+leg46_L09	29	g	H	
+leg46_L09	30	g	H	
+leg46_L09	31	a	H	
+leg46_L09	32	g	H	
+leg46_L09	33	g	H	
+leg46_L09	34	3	H	
+leg46_L09	35	l	H	
+leg46_L09	36	v	H	
+leg46_L09	37	7	H	
+leg46_L09	38	[d-loop]	H	
+leg46_L09	39	a	H	
+leg46_L09	40	5	M	A:5 B:[s-round]
+leg46_L09	41	o	H	
+leg46_L09	42	3	H	
+leg46_L09	43	[d-hook]	H	
+leg46_L09	44	w	H	
+leg46_L09	45	m	H	
+leg46_L09	46	g	H	
+leg46_L09	47	v	H	
+leg46_L09	48	7	H	
+leg46_L09	49	[d-loop]	H	
+leg46_L09	50	[hash]	H	
+leg46_L09	51	6	H	
+leg46_L09	52	[psi]	H	
+leg46_L09	53	h	H	
+leg46_L09	54	3	H	
+leg46_L09	55	a	H	
+leg46_L09	56	g	H	
+leg46_L09	57	[d-hook]	H	
+leg46_L09	58	o	H	
+leg46_L09	59	6	H	
+leg46_L10	0	<e.>	H	
+leg46_L10	1	[hand-box]	H	
+leg46_L10	2	[amp]	H	
+leg46_L10	3	[delta]	H	
+leg46_L10	4	[u-dots]	H	
+leg46_L10	5	5	H	
+leg46_L10	6	h	H	
+leg46_L10	7	[f-loop]	H	
+leg46_L10	8	[lambda]	H	
+leg46_L10	9	m	H	
+leg46_L10	10	3	H	
+leg46_L10	11	[u-dots]	H	
+leg46_L10	12	[x-dot]	H	
+leg46_L10	13	g	H	
+leg46_L10	14	[delta]	H	
+leg46_L10	15	[thorn]	H	
+leg46_L10	16	t	H	
+leg46_L10	17	t	M	A:t B:l
+leg46_L10	18	[lambda]	H	
+leg46_L10	19	8	H	
+leg46_L10	20	3	H	
+leg46_L10	21	6	H	
+leg46_L10	22	[hash]	H	
+leg46_L10	23	5	M	A:5 B:[s-hook]
+leg46_L10	24	v	H	
+leg46_L10	25	a	H	
+leg46_L10	26	[d-loop]	H	
+leg46_L10	27	[x-dot]	H	
+leg46_L10	28	[lambda]	H	
+leg46_L10	29	r	H	
+leg46_L10	30	[d-hook]	H	
+leg46_L10	31	o	H	
+leg46_L10	32	t	H	
+leg46_L10	33	7	H	
+leg46_L10	34	l	H	
+leg46_L10	35	<f.>	H	
+leg46_L10	36	[thorn]	H	
+leg46_L10	37	8	H	
+leg46_L10	38	[lambda]	H	
+leg46_L10	39	3	H	
+leg46_L10	40	o	H	
+leg46_L10	41	h	H	
+leg46_L10	42	7	H	
+leg46_L10	43	6	H	
+leg46_L10	44	<g.>	H	
+leg46_L10	45	[psi]	H	
+leg46_L10	46	g	H	
+leg46_L10	47	5	H	
+leg46_L10	48	t	H	
+leg46_L10	49	6	H	
+leg46_L10	50	<h.>	M	A:<h.> B:<h,>
+leg46_L10	51	g	H	
+leg46_L10	52	[delta]	H	
+leg46_L10	53	l	H	
+leg46_L10	54	v	H	
+leg46_L10	55	m	H	
+leg46_L10	56	h	H	
+leg46_L10	57	g	H	
+leg46_L10	58	6	M	A:6 B:[d-hook]
+leg46_L10	59	3	M	A:3 B:[s-hook]
+leg46_L10	60	g	H	
+leg46_L10	61	[x-dot]	H	
+leg46_L10	62	p	H	
+leg46_L10	63	[lambda]	H	
+leg46_L10	64	[psi]	H	
+leg46_L11	0	<k.>	H	
+leg46_L11	1	[psi]	M	A:[psi] B:[thorn]
+leg46_L11	2	[hash]	H	
+leg46_L11	3	o	H	
+leg46_L11	4	5	M	A:5 B:[s-hook]
+leg46_L11	5	6	M	A:6 B:[d-hook]
+leg46_L11	6	v	H	
+leg46_L11	7	3	H	
+leg46_L11	8	g	H	
+leg46_L11	9	[delta]	H	
+leg46_L11	10	o	H	
+leg46_L11	11	v	H	
+leg46_L11	12	7	H	
+leg46_L11	13	<i.>	H	
+leg46_L11	14	g	H	
+leg46_L11	15	7	H	
+leg46_L11	16	[a-dots]	M	A:[a-dots] B:[delta-dots]
+leg46_L11	17	5	H	
+leg46_L11	18	x	M	A:x B:[x-dot]
+leg46_L11	19	6	H	
+leg46_L11	20	3	H	
+leg46_L11	21	a	H	
+leg46_L11	22	o	H	
+leg46_L11	23	v	H	
+leg46_L11	24	[d-hook]	H	
+leg46_L11	25	h	H	
+leg46_L11	26	[delta]	H	
+leg46_L11	27	g	H	
+leg46_L11	28	[lambda]	H	
+leg46_L11	29	8	H	
+leg46_L11	30	[hash]	H	
+leg46_L11	31	[psi]	H	
+leg46_L11	32	[lambda]	H	
+leg46_L11	33	3	H	
+leg46_L11	34	l	H	

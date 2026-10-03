@@ -2,11 +2,14 @@
 # (adapted from remN_merge.py). Plain tokens <...> other than punctuation are KEPT (labels No.1., a., numbers) so entries
 # stay separable; punctuation <,> <.> and word separators are dropped (decode style concat).
 import csv,difflib,sys
-NORM={}   # reader-name unification, filled after reading both passes (each pairing listed in NOTES.md)
+# reader-name unification (each pairing consistent through both files, rule 3 notation lesson): A [y-loop] = B [thorn],
+# A [delta-curl] = B [d-hook], A [x-dots] = B [x-dot]; plain numbers lose a trailing period (<24.> = <24>)
+NORM={'[y-loop]':'[thorn]','[delta-curl]':'[d-hook]','[x-dots]':'[x-dot]'}
 def toks_of(g):
     out=[]
     for t in g.replace('/',' ').split():
         if t in ('<,>','<.>','.',','): continue
+        if t.startswith('<') and t.endswith('.>') and t[1:-2].isdigit(): t='<'+t[1:-2]+'>'
         out.append(NORM.get(t,t))
     return out
 def load(f):
