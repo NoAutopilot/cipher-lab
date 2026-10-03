@@ -5,7 +5,7 @@ nomination (ROOM.md 00:52 and 01:26 UTC 2 Oct): the finish-or-blocker pass of 1 
 (finish-or-blocker pass, 1 Oct 2026)" section to each partial target's NOTES.md whose Verdict line names the cheapest
 next step and its cost; account-4 runs that step on the twelve partial targets not queued to account 2 (NEXT-* rows in
 WORK-QUEUE.tsv). The session's prompt names the target, the Verdict step verbatim, the cap and the vision-call count.
-Role field for ROOM.md lines: `GAPS-<target> (account-4)`. Model: Fable 5.1 (Opus 5.5 if Fable fails). Box: 60 minutes.
+Role field for ROOM.md lines: `GAPS-<target> (account-4)`. Model: Opus 5.5 (owner, 2 Oct 2026: nothing below Opus 5.5 -- this includes every subagent the worker spawns; FT4-rousseau used a Sonnet subagent on 3 Oct, do not). Box: 60 minutes. Cost: a native Opus vision pass has cost USD 3.5-10 (3 Oct 2026 ledger); the prompt states the vision-call count and per-pass rate.
 Stop before any unit that would cross 80 pct of the cap or the box, push what you hold.
 
 ## Order of work
