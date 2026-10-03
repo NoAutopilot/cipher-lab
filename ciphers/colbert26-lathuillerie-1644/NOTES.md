@@ -785,16 +785,46 @@ U 1 (90). Cryptanalytic-grade; every C comes from the f.23 gloss. No reading or 
 Hosts: gallica.bnf.fr IIIF 3 requests (1 info.json, 2 regions). Vision: 2 Sonnet subagent calls (3 crops each) + 1
 reconciliation by this worker (5 native zooms). No credentials.
 
-## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026)
+## A2-COL5 (account 2, LANE-A2PUSH, 3 Oct 2026): thumbnail sort of the other cipher-bearing leaves by system
 
-Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing canvases 0.
-- f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed; the rotated margin postscript, the only further f.23 material, was read and used as a known-answer test (A2-COL4: C codes 6/7 consistent, M2 5/5 above the control max 4, pooled p 0.076; leads 61 = ge, 71 = dans, 77 = faire); next: fold the margin pairs into the alignment as a second fit, key revision with its own shuffled-gloss control, ~$1
+Intake gate, run before the step: `colbert26-lathuillerie-1644: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+Escalation step "siblings". The 19 other cipher-bearing leaves in leaves.tsv (20 canvases: 20, 21, 30-33, 35, 36, 39, 40,
+47-51, 54-56, 62, 63; canvas 31 is the duplicate capture of 30) were sorted by sign system by eye from the 1000 px leaf images
+already on disk (images/leaves/canvas_N.jpg; 19 viewed, 31 taken from leaves.tsv). No network, no subagents, no transcription.
+Result in `siblings_sort.tsv`, one row per canvas.
+
+- mixed (digits with bare letters, letter-codes and marks; the f.24 / KX-LATHCT1 corpus A type): canvas 20-21 only, the
+  Christianopel letter of 6 Avril 1645.
+- two-digit numerals only (often an overline or mark over one digit; the f.23 / corpus B type): all 17 others -- canvas 30-32
+  (the May 1646 La Haye letter, corpus B, already d2 = 1.000 on 147 transcribed tokens) and every La Haye leaf of
+  January-February 1648 (canvas 33, 35, 36, 39, 40, 47-51, 54-56, 62, 63; datelines and dockets 6e/9e de l'an, 13, 18, 20, 23,
+  24, 27, 30 Janvier, 3 Febvrier 1648). Every one of them carries an interlinear gloss over most numeral groups.
+- So the volume holds one two-digit system on f.23 (17 Mars 1646) and on 17 sibling leaves from May 1646 to Feb 1648, and a
+  mixed system on f.17-18 (1645) and f.24 (1646). The sort is by sign class only: whether the two-digit leaves share f.23's
+  key, rather than one design with several tables, is not shown by a thumbnail (rule 3: no claim without a control).
+
+Grade: a by-eye class judgement at 1000 px, not a reading; a stray letter-code or three-digit group could be missed at this
+size. No token read, so no rule 4 counts; key and reading unchanged; no decode or judge re-run.
+
+What it opens: about 17 glossed two-digit leaves are the "more occurrences" the f.23 open-codes gap needs, and canvas 30 already
+has 149 tokens transcribed with their gloss column (ciphertext.tsv). Next cheapest: apply key_f23.tsv's C codes to canvas 30's
+glossed tokens and score agreement with its own gloss against a shuffled-gloss control (the control can differ: it moves the
+gloss under each code), offline, ~$1.
+
+Hosts: none (images on disk). Vision: 21 leaf images viewed by this worker, 0 subagent calls. No credentials.
+
+## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, 3 Oct 2026)
+
+Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing leaves 0 (sorted by system, A2-COL5: 17 two-digit like f.23, 2 mixed like f.24; siblings_sort.tsv).
+- f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed (A2-COL5: 17 glossed two-digit sibling leaves, May 1646-Feb 1648, are that material if they share the key); the rotated margin postscript, the only further f.23 material, was read and used as a known-answer test (A2-COL4: C codes 6/7 consistent, M2 5/5 above the control max 4, pooled p 0.076; leads 61 = ge, 71 = dans, 77 = faire); next: fold the margin pairs into the alignment as a second fit, key revision with its own shuffled-gloss control, ~$1
 - f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv), and f.23 is a different key, so it cannot serve as the prior (A2-COL2 step)
+- two-digit siblings (17 leaves, siblings_sort.tsv) - blocker: not-attempted; same sign class as f.23 but no key test yet; next: key_f23 C codes on canvas 30's 149 transcribed glossed tokens vs its gloss, shuffled-gloss control, ~$1
 - canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
 
-## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026)
+## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, 3 Oct 2026)
 
-- [ ] siblings: the other 19 cipher-bearing canvases not yet sorted by system (two-digit like f.23, mixed like f.24); next: one thumbnail sort, ~$1
+- [x] siblings: sorted by eye (A2-COL5, siblings_sort.tsv): 17 leaves two-digit like f.23 (canvas 30-32 May 1646, all La Haye leaves Jan-Feb 1648), 2 mixed like f.24 (canvas 20-21, 1645); shared key with f.23 not yet tested
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
 - [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
 - [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
@@ -802,4 +832,4 @@ Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading
 - [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
 - [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412; A2-COL4 margin postscript known-answer test: C 6/7 consistent, M2 5/5 vs control max 4, pooled p 0.076
 
-Verdict: keep going: 3 internal gaps; cheapest next: siblings thumbnail sort of the other 19 cipher-bearing canvases by system, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: key_f23 C codes on canvas 30's transcribed glossed tokens vs its own gloss with a shuffled-gloss control, ~$1

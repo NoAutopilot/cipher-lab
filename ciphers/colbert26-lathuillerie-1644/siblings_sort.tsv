@@ -1,0 +1,24 @@
+# A2-COL5, 3 Oct 2026: thumbnail sort of the 19 other cipher-bearing leaves (20 canvases; 31 = duplicate capture of 30) by sign system.
+# Read by eye from images/leaves/canvas_N.jpg (1000 px, on disk; no network). system: mixed = digits + bare letters/letter-codes/marks (f.24 / corpus A type); d2 = two-digit numerals only, many with an overline/mark on a digit (f.23 / corpus B type).
+# Grade: by-eye class judgement at thumbnail resolution, not a transcription; a stray single letter or 3-digit group could be missed at 1000 px.
+canvas	folio	dateline_or_docket	system	gloss	basis
+20	17	Christianopel, 6 Avril 1645 (close on canvas 21)	mixed	yes	viewed; letters, z/v/gt/hk-like marks among digits (also corpus A, KX-LATHCT1 d2 .567 l1 .300)
+21	18	Christianopel, 6 Avril 1645	mixed	yes	viewed; same letter as canvas 20
+30	27	docket left leaf "[?] May 1646 a M. Servien" (NOTES KX-LATHTR: 8 May 1646)	d2	yes	viewed; also corpus B, d2 = 1.000 on 147 transcribed tokens
+31	27	duplicate capture of canvas 30	d2	yes	not viewed separately (leaves.tsv: pixel-identical text)
+32	28	continuation of canvas 30	d2	yes	viewed
+33	29	La Haye, 6e [?] de l'an 1648, signed La Thuillerie	d2	yes	viewed
+35	31	docket on inserted leaf illegible at 1000 px	d2	yes	viewed
+36	32	La Haye, 9e de l'an 1648, signed La Thuillerie	d2	yes	viewed
+39	35	docket "10 [?] Janvier 1648"	d2	yes	viewed
+40	36	La Haye, 13e Janvier 1648	d2	yes	viewed
+47	43	docket "18 Janvier 1648"	d2	yes	viewed
+48	44	La Haye, 20e Janvier 1648	d2	yes	viewed
+49	45	docket "20 Janvier 1648 a M. Servien"	d2	yes	viewed
+50	46	continuation (canvas 49/51 letter)	d2	yes	viewed
+51	47	La Haye, 23e Janvier 1648	d2	yes	viewed
+54	50	docket "24 Janvier 1648"	d2	yes	viewed
+55	51	continuation	d2	yes	viewed
+56	52	La Haye, 27e Janvier 1648	d2	yes	viewed
+62	58	docket "30 Janvier 1648" on inserted leaf	d2	yes	viewed
+63	59	La Haye, 3e Febvrier 1648	d2	yes	viewed
