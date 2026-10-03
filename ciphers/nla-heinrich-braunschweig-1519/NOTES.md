@@ -1,5 +1,5 @@
 open
-Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative. GAPS129 (3 Oct 2026): Stanelle 1982 (Books index, phrase-controlled) has no cipher term; Wallstein 2025 has no secret-correspondence chapter, but its index places Bückeburg at p. 112 in Bei der Wieden's Schaumburg chapter -- next read.
+Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative. GAPS129 (3 Oct 2026): Stanelle 1982 (Books index, phrase-controlled) has no cipher term; Wallstein 2025 has no secret-correspondence chapter, but its index places Bückeburg at p. 112 in Bei der Wieden's Schaumburg chapter -- next read. GAPS133 (3 Oct 2026): the Wallstein volume is not open access (DNB print record, no licence; publisher sells print and PDF), so p. 112 is a library or purchase read.
 
 # Two enciphered letters of Heinrich der Jüngere, Herzog von Braunschweig-Lüneburg — NLA Bückeburg
 
@@ -245,3 +245,28 @@ NLA BU L 1 Nr. 548/562. The e-book is EUR 27.99, or open access may exist on wal
 2025 "Nachrichten" are there). Check open access first with one request, ~$0.5. Otherwise it is a LOCAL-QUEUE/library
 row. (2) Siebert 1968/71 (Schaumburger Heimatblätter), a print-only lead. (3) Re-test Arcinsys for L 1 Nr. 548/562
 (old step 2). (4) The provenance question stands.
+
+## GAPS133: is the Wallstein 2025 volume open access? (3 Oct 2026, account-4)
+
+**No, so Bei der Wieden pp. 107-117 was not read.** Checked 3 Oct 2026, about 14:15 UTC:
+- DNB SRU (`num=9783835358898`, MARC21): one record, IDN 1363989707. It is the print hardcover ("Festeinband : circa
+  EUR 28.00"). Its 856 links are the publisher blurb and the DNB table-of-contents PDF (d-nb.info/1363989707/04).
+  There is no 506/540 licence field and no open-access or Creative Commons link.
+- Publisher page (wallstein-verlag.de/9783835358898-die-hildesheimer-stiftsfehde-1519-1523.html): print at EUR 28.00
+  (D), "Auch als E-Book erhältlich: PDF" (ISBN 978-3-8353-8862-8, the paid e-book GAPS129 priced at EUR 27.99). The
+  page does not mention open access. Its e-book subpage rendered no text to curl.
+- wallstein-open-library.de: the search URL redirected to its 404 page. The volume does not appear among the site's
+  OA books by that route (a search result, not a listing read).
+- OAPEN and DOAB REST APIs: both returned HTTP 403 "You address is not allowed to access this API" to this
+  container, so neither was tested. This is a non-test, not a negative.
+
+Result: the volume is a paid publication, with no open-access edition found. Rule 10: no claim is made about what
+p. 112 says.
+
+**While waiting (next step):** this is a library or purchase read, not a cloud step. One LOCAL-QUEUE/ASKS row
+would cover it: read Bei der Wieden pp. 107-117 (Bückeburg at p. 112) and Bohnenkamp pp. 155-224's footnotes for
+NLA BU L 1 Nr. 548/562 or any mention of a cipher or decipherment. The e-book is about EUR 28, so the owner decides.
+In parallel, steps (2)-(4) of GAPS129 stand: Siebert 1968/71 (print only), the Arcinsys re-test, and provenance.
+
+Requests: services.dnb.de 1, www.wallstein-verlag.de 2, wallstein-open-library.de 1 (redirected), library.oapen.org 1
+(403), directory.doabooks.org 1 (403). No googleapis, no vision, no subagents.
