@@ -1,0 +1,128 @@
+line	set	real	n	hits
+49L01	C	1	1	10=a
+49L02	C	5	7	25=p 22=m 10=a 51=de 78=u
+49L03	C	1	2	24=n
+49L04	C	1	4	51=de
+49L05	C	0	1	
+49L06	C	3	5	10=a 12=c 10=a
+49L07	C	0	0	
+49L08	C	3	4	48=c 12=c 10=a
+49L09	C	0	0	
+49L10	C	3	6	18=h 51=de 51=de
+49L11	C	2	5	51=de 51=de
+49L12	C	1	3	48=c
+49L13	C	0	0	
+49L14	C	1	1	51=de
+49L15	C	2	3	51=de 12=c
+49L16	C	1	2	51=de
+49L17	C	4	4	10=a 33=ux 48=c 25=p
+50a01	C	1	2	24=n
+50a02	C	4	5	48=c 22=m 25=p 24=n
+50a03	C	4	4	51=de 51=de 12=c 51=de
+50a05	C	2	2	51=de 25=p
+50a06	C	2	3	78=u 10=a
+50a07	C	0	2	
+50a08	C	2	6	22=m 12=c
+50a09	C	2	2	12=c 36=ez
+50a10	C	1	3	10=a
+50a11	C	5	6	10=a 12=c 12=c 65=s 10=a
+50a12	C	0	2	
+50a13	C	1	3	10=a
+50a14	C	3	3	12=c 48=c 22=m
+50b01	C	4	4	12=c 24=n 78=u 53=d
+50b02	C	0	1	
+50b03	C	0	1	
+50b04	C	1	2	10=a
+50b05	C	1	1	69=s
+50b06	C	2	2	10=a 51=de
+50b07	C	4	5	51=de 24=n 51=de 53=d
+50b08	C	1	1	51=de
+50b09	C	2	4	51=de 78=u
+50b10	C	6	8	10=a 51=de 51=de 10=a 51=de 33=ux
+50b11	C	2	6	69=s 36=ez
+50b12	C	2	4	10=a 22=m
+50b13	C	3	3	10=a 10=a 48=c
+50b14	C	1	1	78=u
+50b15	C	7	9	22=m 24=n 24=n 78=u 10=a 10=a 53=d
+50b16	C	2	2	10=a 51=de
+51L02	C	1	2	51=de
+51L03	C	4	5	10=a 51=de 10=a 69=s
+51L04	C	1	2	24=n
+51L05	C	4	4	25=p 40=b 51=de 51=de
+49L01	all	2	5	10=a 32=o
+49L02	all	9	18	30=s 25=p 21=e 23=n 22=m 10=a 11=n 78=u 23=n
+49L03	all	3	12	21=e 21=e 24=n
+49L04	all	3	23	51=de 20=i 23=n
+49L05	all	7	15	20=i 15=e 23=n 57=e 23=n 11=n 30=s
+49L06	all	9	15	10=a 20=i 23=n 11=n 76=c 10=a 20=i 23=n 21=e
+49L07	all	2	3	30=s 23=n
+49L08	all	8	24	20=i 21=e 30=s 23=n 15=e 23=n 17=o 21=e
+49L09	all	1	3	56=r
+49L10	all	4	18	18=h 23=n 11=n 51=de
+49L11	all	3	8	51=de 51=de 29=a
+49L12	all	2	7	48=c 23=n
+49L13	all	2	4	30=s 30=s
+49L14	all	8	11	20=i 23=n 30=s 51=de 23=n 15=e 46=c 21=e
+49L15	all	3	9	51=de 76=c 57=e
+49L16	all	2	4	32=o 51=de
+49L17	all	5	15	46=c 30=s 29=a 37=e 30=s
+50a01	all	2	6	24=n 23=n
+50a02	all	5	9	48=c 22=m 25=p 21=e 24=n
+50a03	all	8	16	15=e 23=n 51=de 30=s 29=a 51=de 12=c 66=f
+50a05	all	9	14	21=e 21=e 30=s 32=o 21=e 30=s 51=de 25=p 30=s
+50a06	all	3	11	78=u 29=a 30=s
+50a07	all	3	8	30=s 15=e 37=e
+50a08	all	6	22	11=n 23=n 22=m 15=e 96=r 76=c
+50a09	all	3	13	13=d 30=s 15=e
+50a10	all	3	11	20=i 10=a 11=n
+50a11	all	5	22	13=d 20=i 11=n 10=a 65=s
+50a12	all	1	5	30=s
+50a13	all	9	22	56=r 32=o 20=i 15=e 23=n 23=n 29=a 10=a 11=n
+50a14	all	4	17	11=n 23=n 12=c 29=a
+50b01	all	8	22	17=o 76=c 24=n 32=o 30=s 35=o 15=e 23=n
+50b02	all	0	5	
+50b03	all	1	2	39=et
+50b04	all	6	14	29=a 30=s 30=s 10=a 32=o 23=n
+50b05	all	8	23	23=n 30=s 20=i 21=e 30=s 11=n 20=i 29=a
+50b06	all	2	6	37=e 37=e
+50b07	all	8	13	51=de 30=s 32=o 24=n 23=n 32=o 53=d 23=n
+50b08	all	1	3	51=de
+50b09	all	10	25	30=s 20=i 23=n 57=e 21=e 30=s 30=s 30=s 11=n 11=n
+50b10	all	7	25	21=e 35=o 10=a 91=d 58=e 57=e 30=s
+50b11	all	5	24	15=e 23=n 69=s 15=e 36=ez
+50b12	all	8	14	21=e 10=a 23=n 30=s 58=e 30=s 15=e 22=m
+50b13	all	5	11	10=a 21=e 23=n 17=o 15=e
+50b14	all	1	2	78=u
+50b15	all	7	22	20=i 22=m 91=d 24=n 24=n 21=e 23=n
+50b16	all	3	9	20=i 21=e 30=s
+51L02	all	5	13	11=n 91=d 23=n 23=n 32=o
+51L03	all	8	18	10=a 32=o 13=d 23=n 58=e 10=a 20=i 69=s
+51L04	all	3	6	24=n 23=n 30=s
+51L05	all	4	15	54=du 25=p 13=d 46=c
+
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas50	C	65	97	f23-window	44.09	51	59	0.0000	PASS
+canvas50	C	65	97	shuffled-gloss	35.25	41	49	0.0000	-
+canvas50	all	141	396	f23-window	100.86	112	133	0.0000	-
+canvas50	all	141	396	shuffled-gloss	96.43	108	121	0.0000	-
+canvas51	C	10	13	f23-window	5.66	8	11	0.0036	TOO-SHORT
+canvas51	C	10	13	shuffled-gloss	7.00	9	10	0.0379	-
+canvas51	all	20	52	f23-window	15.18	20	26	0.0646	-
+canvas51	all	20	52	shuffled-gloss	16.73	20	20	0.0813	-
+letter4951	C	103	158	f23-window	69.14	78	86	0.0000	-
+letter4951	C	103	158	shuffled-gloss	56.70	64	74	0.0000	-
+letter4951	all	234	642	f23-window	165.22	180	195	0.0000	-
+letter4951	all	234	642	shuffled-gloss	162.36	176	197	0.0000	-
+
+code12	line	gloss
+12	50a03	endesmordentetserelaschentdequoyquecefort
+12	50a08	garentieetqueleduchdebarnousdemeurantauecles
+12	50a09	troiseueschezdureste
+12	50a10	queueritablementest
+12	50a11	seroitrendueauduccharlesquilnyapas
+12	50a14	prendredurelascherecommencerla
+12	50b01	guerresyleedduroulesespagnolzcouluznousendonnoient
+12	50b02	subiet
+12	50b11	mayeneiamaisexecutnettementpasundestraictez
+12	51L03	aurontfautedenoussymaltraitermais
+12	51L04	nouspatrons
