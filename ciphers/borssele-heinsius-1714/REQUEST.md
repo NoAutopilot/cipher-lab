@@ -37,7 +37,14 @@ Letter no. 959 (Ph.J. van Borssele van der Hooghe to Heinsius, London, 3 April 1
 cijfer" (an unsolved cipher letter, added on the same leaf), and that a decipherment ("oplossing") of a
 different enciphered letter, "mogelijk dezelfde" (possibly the same one), is also present in the dossier.
 Photograph: the whole leaf/dossier for letter 959 -- the cipher letter itself, the "oplossing" document, and
-the copy of Van Borssele's letter to the States-General the footnote also mentions. Estimated extent: 2-3
+the copy of Van Borssele's letter to the States-General the footnote also mentions.
+Added 3 Oct 2026 (FT4-borssele-heinsius-1714, account-4; same dossier H.A. 1836, still `"availability":"PHYSICAL","scans":[]`
+on 3 Oct 2026): also photograph letter 936 (27 March 1714, Deel 15 p.517 n.1: the undated "uit het cijfer opgelost"
+piece on the queen's health is filed under this letter), letter 970 (6 April 1714, Deel 15 p.538 n.1: "een briefje in
+cijfer, dat op een apart blaadje is opgelost" -- a same-correspondent cipher WITH its period decipherment slip, the
+best key source for this system), and Deel 16 letter 104 (8 June 1714, Deel 16 p.60 n.1: a second undated, unsolved
+cipher letter of Van Borssele's). Revised extent: about 6-8 leaves. One order then brings the cipher, its candidate
+solution and a solved sibling pair together. Estimated extent: 2-3
 leaves. Why: comparing the "oplossing" text against the cipher letter's ciphertext by eye is the only way to
 resolve whether this item is already solved (found-solved) or is a genuine sibling-decipherment case; nothing
 online can settle it (rule 2, image over transcription -- no transcription exists at all here).

@@ -110,3 +110,34 @@ exit 0 (was 1: no standard-edition citation within 6 lines)
 $ python3 tools/next_steps.py --wait-only | grep borssele-heinsius-1714
 (no line)
 ```
+
+## FT4-borssele-heinsius-1714 (3 Oct 2026, account-4)
+
+Step (from GF4-BATCH15 premise (c), c912005e): locate the same-dossier sibling letter 970 (6 Apr 1714, cipher plus a
+period decipherment slip) and Deel 16 no.104 in H.A. 1836 online, and if imaged, pair and align them.
+
+- Result: **not digitised.** `https://www.nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/1836`, embedded
+  `drupal-settings-json` -> `viewer.response`, read 3 Oct 2026 03:5x UTC: `"unittitle":"Borssele van der Hooghe, Philips
+  Jacob van-, heer van Voorhout-, uit Londen."`, `"scans":[]`, `"has_scan_navigation":false`, `"availability":"PHYSICAL"`.
+  Positive control the same minute, same accessor: NA 1.04.02 invnr 1 -> `"availability":"DIGITALIZED"`. Letters 936,
+  959, 970 and Deel 16 no.104 all sit in this one inventory number (the edition's own footnotes), so none of the four
+  leaves can be read online; steps (2) onward (vision, transcription, interlinear_align, pairing-shuffle control, key
+  test on 959) were not run. No vision call, no reading, nothing graded.
+- REQUEST.md item 1 extended to letters 936, 970 and Deel 16 no.104 (one order, about 6-8 leaves).
+- Requests: www.nationaalarchief.nl 2 (>=1.5 s apart). No other host.
+
+## Remaining gaps (FT4-borssele-heinsius-1714, 3 Oct 2026)
+Read so far: 0 of the cipher letter's tokens (no image or transcription of the leaf exists online)
+- 959 cipher on the leaf, and its candidate "oplossing" (filed under 936) - blocker: needs-physical-access; NA 3.01.19 invnr 1836 is PHYSICAL, scans [] (re-checked 3 Oct 2026 with a DIGITALIZED positive control); REQUEST.md item 1
+- 970 cipher + decipherment slip (period key source) - blocker: needs-physical-access; same inventory number, same check
+- Deel 16 no.104 unsolved cipher - blocker: needs-physical-access; same inventory number, same check
+
+## Escalation (3 Oct 2026)
+- [x] siblings: 970 (with slip), 936 (candidate solution), Deel 16 no.104 located in print (GF4-BATCH15); none imaged online (this step)
+- [n/a] clear-pages: letter 959's clear text is printed but carries no crib for the cipher
+- [n/a] known-keys: no Borssele key printed or imaged; inv. 2315-2317 cipher keys also physical only
+- [x] print: Veenendaal Deel 15-16 read (GF4-BATCH15); cipher and solution not printed
+- [n/a] key-rebuild: no ciphertext available to rebuild from
+- [x] image-check: NA per-item record re-read 3 Oct 2026, PHYSICAL
+- [n/a] retry: nothing online left to retry until the archive digitises the dossier
+Verdict: parked: every gap has an outside blocker (needs-physical-access, REQUEST.md item 1: copy order or visit for NA 3.01.19 inv. 1836, letters 936/959/970 and Deel 16 no.104)
