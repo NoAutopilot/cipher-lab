@@ -275,18 +275,50 @@ The planned crib test in the FT4 section is unchanged and still not run, because
 Requests this job: archive.org 1 (metadata) and 2 (`/download/` page index and searchtext, both HTTP 500, not retried);
 ia800504.us.archive.org 1 (djvu.txt, 200). 2 s or more apart. No vision calls, no WebSearch.
 
+## GAPS165-sp54-maclean-1745 (3 Oct 2026, account-4): Discovery item descriptions and Browne vol. ii appendix
+
+Script only, no vision, no subagents. Clock read 16:16 UTC 3 Oct 2026.
+
+1. **Item descriptions.** `python3 tools/discovery_items.py "SP 54" "SP 54/25" Maclean Barclay Blaw cipher` (12 items).
+   The seized papers are three catalogue items, not one: SP 54/25/5 (C6818403, [5 June 1745]) is Craigie's covering report
+   ("on 3 letters, partly in cipher taken with them"); SP 54/25/8B (C6818407, [27 Apr 1745]) is "Letters, partly in cipher,
+   from Burnet [Charles Edward Stuart]; found in the possession of Sir Hector MacLean"; and **SP 54/25/8C (C6818408, [1745])
+   is "J Barclay to Cleland [Sir Hector MacLean]. Concerning a meeting in Linlithgow."** with no cipher word in its description.
+   So Murray's Barclay letter (Memorials p.136, the Linlithgow meeting) is most likely 8C, catalogued as a separate item and not
+   described as in cipher (H for the catalogue wording; that 8C is one of Craigie's "3 letters" is inferred, I). The crib rows
+   above marked "Barclay letter" apply to 8C, not to the 8B cipher letters; 8B's cribs stay at I. Related items seen:
+   8A (14 June, Tweeddale to Harrington, "concerning cipher letters found with Sir Hector MacLean"), 11B (8 June, the prisoners'
+   stories), 10, 11C-D, 18, 19A, 94B, 97A. Suggestion (not done, outside this brief): add 8C, and 8A for the government's
+   view of the cipher, to the REQUEST.md copy order (ASKS row 57).
+2. **Browne vol. ii appendix.** archive.org advancedsearch for Browne's *History of the Highlands*, then the djvu text of
+   `historyofhighlan02brow` (Glasgow: Fullarton, 1840 ed., vol. II, 25,750 lines) fetched once and grepped. **Positive control:**
+   the "J. Barclay" letter the Memorials p.101 note (Bell, djvu line 6928, read this pass from `memorialsofjohnm00murr`) says
+   Browne prints is found: Appendix pp. 476-478, "Letter supposed to be written by Murray of Broughton under the name of
+   'J. Barclay' to Prince Charles, without place or date", cipher words in italics "interlined with the proper names, in the
+   Prince's hand-writing". It is the early-1745 letter (it mentions the Emperor's death, Jan 1745) Bell ties to p.101, from the
+   Stuart Papers, **not** the June 1745 letters seized on Maclean. Counts: Blaw 0, Sir Hector 0, Castlehill 0, "Burnet" 6 (all
+   Bishop Burnet / Dr Burnet, never the Prince's alias), Linlithgow 5 (1715 and earlier), Cleland 9 (Col. Cleland, 1689).
+   The appendix (pp. ~423-478) prints Sempil/Edgar/Prince correspondence of Jan-June 1745 with deciphered words in italics and a
+   two-column feigned-name list (p. 405-406; Barclay, Walker/Watson, Lumley, Adams, Talmash ...; OCR splits the columns, so the
+   name-meaning pairs are not recoverable from this text). Not found in this volume: any text, clear copy or decipherment of
+   SP 54/25/5, 8B or 8C. Search result for the log, not a novelty verdict (rule 10).
+   Possible known-keys input (inferred): the 1745 feigned-name list and italicised cipher words are the same period and circle as
+   the Burnet letters; reading the list's pairs needs the page image (p. 405-406), not the OCR.
+
+Requests: discovery.nationalarchives.gov.uk (tool: 4 term queries), archive.org 3 (advancedsearch 1, Browne vol. II djvu 1,
+Memorials djvu 1). 0 vision calls.
+
 ## Remaining gaps (FT4-sp54-maclean-1745, 3 Oct 2026; updated FT4b, 3 Oct 2026)
-Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk). Print risk, Lyon in Mourning vols 1-3: all searched in full text, the last on 3 Oct 2026 (FT4b); none prints the seized letters
+Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk). Print risk, Lyon in Mourning vols 1-3: all searched in full text, the last on 3 Oct 2026 (FT4b); none prints the seized letters. Done 3 Oct 2026 (GAPS165): print risk: Browne's *History of the Highlands* vol. ii appendix: its "J. Barclay" letter (pp. 476-478) is the early-1745 Stuart Papers letter, not the seized letters; no text of SP 54/25/5, 8B or 8C in the volume ; item-level description of SP 54/25/5: the Barclay letter is a separate item, SP 54/25/8C ("J Barclay to Cleland [Sir Hector MacLean]. Concerning a meeting in Linlithgow", no cipher in its description); the cipher letters are 8B (from Burnet); 8C and 8A are not in the copy order yet (suggestion above)
 - SP 54/25/5 and 8B ciphertext - blocker: waiting-on ASKS row 57 (TNA page copy, REQUEST.md); not digitised on Discovery
-- print risk: Browne's *History of the Highlands* vol. ii appendix (prints a "J. Barclay" letter, per the Memorials p.101 note) is unread - blocker: not-attempted; no session has looked for the volume yet; next: archive.org advancedsearch for Browne's History vol. ii, then grep its djvu for Barclay/Burnet/Maclean, ~$0.5
-- item-level description of SP 54/25/5 (are the "Barclay" letters among the three?) - blocker: not-attempted; the While waiting step of 3 Oct names it and nobody has run it; next: tools/discovery_items.py "SP 54" "SP 54/25", ~$0.5
+- print risk: Blaikie's *Itinerary of Prince Charles Edward Stuart* (SHS 1897) is unread - blocker: not-attempted; no session has fetched it yet; next: archive.org advancedsearch for it, grep its djvu for Maclean/Burnet/Barclay/Linlithgow with a positive control, ~$0.5
 
 ## Escalation (FT4-sp54-maclean-1745, 3 Oct 2026)
 - [n/a] siblings: no sibling cipher letter on disk; the 1744 Murray-Burnet letters are in print only (Origins pp.60-66), used as known keys below
 - [x] clear-pages: Memorials pp.134-137, 157 give the Barclay letters' clear content (crib table above)
 - [ ] known-keys: Blaikie's printed 1744 Murray-Burnet numeric groups (Origins pp.60-66) are the planned overlap test, waiting on the transcription
-- [ ] print: Lyon in Mourning vols 1-3 all searched in full text (vol. 1 on 3 Oct 2026, FT4b), with no print of the seized letters; still unread: the appendix of Browne's History vol. ii (it prints a "J. Barclay" letter, per the Memorials p.101 note)
+- [ ] print: Lyon in Mourning vols 1-3 all searched in full text (vol. 1 on 3 Oct 2026, FT4b), with no print of the seized letters; Browne's History vol. ii appendix read in full text 3 Oct 2026 (GAPS165), no print of the seized letters; still unread: Blaikie's Itinerary
 - [n/a] key-rebuild: no ciphertext on disk to rebuild a key against
 - [n/a] image-check: no image of SP 54/25 is available; waiting on TNA copy
 - [x] retry: the Lyon vol. 1 "Burnet" query is superseded by the full djvu read (3 Burnet hits, none is the alias)
-Verdict: keep going: 2 internal gaps; cheapest next: tools/discovery_items.py "SP 54" "SP 54/25" for the item description, ~$0.5; then the Browne vol. ii appendix grep, ~$0.5
+Verdict: keep going: 1 internal gap; cheapest next: Blaikie's *Itinerary* (SHS 1897) djvu grep for Maclean/Burnet/Barclay/Linlithgow with a positive control, ~$0.5
