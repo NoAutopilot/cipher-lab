@@ -43,7 +43,7 @@ Vision budget for this job: at most 5 calls total; stop before any call that wou
 Tool shelf: glyph_atlas.py (proven) not used -- a dozen table symbols against ten target signs is one visual comparison, not a
 segmentation/clustering job.
 
-## Addendum A1B-VILL-L (3 Oct 2026, ~18:05 UTC, committed before any crop of the f200 Sillabes/doubles grid is viewed)
+## Addendum A1B-VILL-L (3 Oct 2026, 17:59 UTC, committed before any crop of the f200 Sillabes/doubles grid is viewed)
 
 Brief .claude/briefs/runs/2026-10-03-acct1-a1b-vill-l.md, step (l). Region: canvas f200 left block below the header (Sillabes
 1-72, Lettres doubles 73-96); crops only via iiif_lines (never the full page to a reader).
