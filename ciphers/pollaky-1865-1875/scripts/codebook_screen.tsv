@@ -1,0 +1,3 @@
+book	R_B	entries_parsed	S0_target	S0_target_977314	pos_plain_power	pos_key_power	null_mean	null_p95	gate	verdict
+slater1888	24999	15847	31	30	1.0	1.0	29.99	32	>=34 & power>=0.8	FAIL
+smith1845_phrases	70	n/a	6	5	1.0	1.0	7.08	9	>=34 & power>=0.8	FAIL
