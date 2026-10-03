@@ -856,17 +856,64 @@ statistic at the same N is not the cheapest next step.
 Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
 (all local).
 
+## 3 Oct 2026 -- A2-RAA11: sibling-letter sweep of the other 2.01.27.xx and VOC-successor finding aids
+
+Intake gate (pasted before work): `na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found
+within 6 lines` (exit 0).
+
+Method (VX-N03's, extended): each toegang's whole finding-aid PDF fetched once from
+`www.nationaalarchief.nl/onderzoeken/archief/<toegang>/download/pdf`, text-extracted with `pdftotext -layout`, grepped
+(case-insensitive) for `cijfer|cyfer|geheimschrift|chiff|sleutel|cipher|cypher`, every hit line read in context by
+script output, plus a name grep for Prediger|Smissaert|Elout|Grasveld and a secondary grep for `geheim`. Texts and a
+manifest (pages, bytes, hit counts, true hits) are on disk in `data/finding_aids/` so nobody refetches. Every PDF has
+a real text layer (1,360-46,582 words each), so a zero is a full-text zero, not an OCR gap.
+
+| toegang | body | pages | raw hits | cipher items |
+|---|---|---|---|---|
+| 2.01.27.03 | Min. Koophandel en Koloniën 1806-07 / Marine en Koloniën 1808-10 | 33 | 0 | 0 |
+| 2.01.27.04 | stukken uit Engeland overgezonden (Oost-Indië, Kaap) | 17 | 0 | 0 |
+| 2.01.27.05 | Hollandse Divisie, Parijs, 1810-14 | 16 | 2 | 1 (invnr 12, below) |
+| 2.01.27.06 | Comptabiliteit Oost-Indische Bezittingen 1795-1813 | 33 | 0 | 0 |
+| 2.01.27.07 | Oost-Indische Troepen 1796-1806 | 14 | 0 | 0 |
+| 2.01.27.08 | does not exist (HTTP 404 HTML page, not a challenge): the 2.01.27 series is .01-.07 | - | - | - |
+| 2.01.28.01 | Comité Koloniën Guinea en Amerika 1795-1800 | 63 | 0 | 0 |
+| 2.01.28.02 | Raad der Amerikaanse Bezittingen 1801-06 (the West-side twin of this Raad) | 69 | 1 | 0 (`zoeksleutel`) |
+| 2.01.28.03 | divisie West, Koophandel/Marine en Koloniën 1806-10 | 45 | 0 | 0 |
+| 2.10.01 | Ministerie van Koloniën 1814-49 | 191 | 1 | 0 (`cijfer` = numeral) |
+| 2.10.02 | Ministerie van Koloniën 1850-1900 | 201 | 2 | 0 (numeral; post-1850 cijfertelegrammen) |
+| 2.10.03 | Ministerie van Koloniën supplement 1826-1952 | 44 | 3 | 0 (numeral/figures) |
+
+The only cipher item is 2.01.27.05 invnr 12 (Janssens to the Minister, "missiven in cijfer" 20 June-7 Aug 1811 "met
+bijgevoegde ontcijfering"), already on file as VX-N02 (`ciphers/na-janssens-java-1811/`): different sender and
+recipient, eleven years later, French-language code -- not a sibling in this letter's system on the evidence of the
+finding aid (no structural comparison was made; that would be a separate known-keys step). Name hits: Prediger appears
+in 2.01.27.03 invnr 142 (a request of his, 1811); Smissaert heads 2.01.27.03 section H (invnr 209 there is an 1806
+Cape missive to him, not this letter); Elout in 2.10.01 is the 1815-18 Commissie-Generaal. None is cipher-marked.
+`geheim` hits are secret resolutions/correspondence descriptions, not cipher; the one in-period lead is 2.01.27.03
+invnr 207, "Geheime ingekomen berichten hoofdzakelijk van Mr. R.G. van Polanen en van H.W. Meyer", 15 Nov 1807-1810,
+"zie tevens inv.nr. 144" -- secret, not described as cipher, and from the successor ministry, not the Raad; a lead
+for an item-page digitisation check only, not a candidate sibling.
+
+Result: no cipher-marked sibling of invnr 209 in any of the eleven further finding aids; with VX-N03's three
+(2.01.27.01, .02, 1.04.17) the whole 2.01.27 series and the 2.01.28 and 2.10.01-03 successor toegangen at NA are now
+swept. Not swept: the Batavia side proper (Hoge Regering archive at ANRI Jakarta, outside NA), private family papers
+of the correspondents (e.g. 2.21.xxx collecties), and the inside of uncatalogued "geheime" bundles.
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. Requests: www.nationaalarchief.nl 14
+(12 PDFs incl. one 404 for 2.01.27.08, plus two wasted 404s from a mistyped `onderzoek/` path for .08/.09, all
+>=2 s apart, no 403/429/challenge); WebSearch 1.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-RAA7)
 Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a reading; HYPOTHESES.md)
 - leaf 2 cipher body (370 cells) - blocker: too-short; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); leaf 3 adds no ciphertext (A2-RAA9); the bottom-digit order statistics are under-powered at N=370 (A2-RAA8 9/20, A2-RAA10 trigram about 0.7 post-hoc), so N=370 is too short for the remaining tests; reopens with a sibling letter in the same system
 - bottom-digit order (vowel-column hypothesis) - blocker: too-short; A2-RAA8 vowel-bigram a non-test (POS 9/20); A2-RAA10 vowel-trigram met the registered 18/20 gate but post-hoc power is 27/40 on fresh windows (pooled 61/80), target p 0.209 = weak negative only; the label-free cross-cell MI passes 19/20 ALT and does not discriminate; reopens with a sibling letter (pooled N)
 
 ## Escalation (3 Oct 2026, A2-RAA7)
-- [ ] siblings: none found in the 2.01.27.02, 2.01.27.01 and 1.04.17 finding aids (VX-N03, 25 Sept 2026); the other 2.01.27.xx sub-series and the VOC-successor family were flagged unswept by VX-N03 (Established section)
+- [ ] siblings: no cipher-marked sibling in any NA finding aid of the 2.01.27 series (.01-.07), 2.01.28.01-03, 2.10.01-03 or 1.04.17 (VX-N03 25 Sept; A2-RAA11 3 Oct 2026, data/finding_aids/manifest.tsv); only 2.01.27.05 invnr 12 (Janssens 1811, VX-N02) is cipher-marked, a different correspondence; untried: item-page check of 2.01.27.03 invnr 207/144 (secret Van Polanen/Meyer reports 1807-10, not described as cipher) for digitised cipher leaves
 - [x] clear-pages: clear words around the grid used as cribs, strict mode no anchor, homophonic mode control fails (A2-RAA7)
 - [x] known-keys: invnr 317 Grasveld 1799 code tested against 209, negative by design mismatch (VX-CS06, A2-RAA)
 - [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
 - [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
-Verdict: keep going: 0 internal gaps; cheapest next: sibling-letter sweep (same full-finding-aid-PDF search for cijfer/geheimschrift/chiffre) of the other 2.01.27.xx sub-series and the VOC-successor toegangen VX-N03 left unswept, ~$1 (A2-RAA10: N=370 is too short for the remaining statistics)
+Verdict: keep going: 0 internal gaps; cheapest next: item-page and digitisation check of 2.01.27.03 invnr 207 and 144 (secret Van Polanen/Meyer reports 1807-10) for any cipher leaves, ~$1 (A2-RAA11: the finding-aid sweep of every 2.01.27/2.01.28/2.10.01-03 toegang found no cipher-marked sibling)
