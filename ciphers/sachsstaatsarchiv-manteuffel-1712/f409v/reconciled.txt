@@ -1,0 +1,28 @@
+# f.409v + upper f.410 (694/08 file 0511), cipher groups only, reconciled GAPS177 3 Oct 2026 from passA/passB (2 blind Opus passes per crop set) + native zoom by the worker; low = passes split or one pass marked ?; M1/M2 = lines between crops, read by the worker alone (low). L33 tok1 and L35 tok3 take pass B's blind reading (31 not 21, 16 not 11): the image allows both and the key-constrained decode ("ma negociation", "a quoi je vise") picks B -- a key-constrained choice, noted as such. Excluded as plain numerals in clear text: "3. regimens" (L03, L31), "1500. Chevaux" (f410u L11).
+f409v_L10 371
+f409v_L11 403 228 111 149 bir 583 401
+f409v_L12 161:low 583 237 932
+f409v_L13 553:low 716 417 648:low 87:low 406 108 515 485 492 287 402 519:low
+f409v_L14 342 583 240 825
+f409v_L15 284:low 253 322 14 90 20:low 123 278 bir 87
+f409v_L16 289:low 655:low 253 156 575 282 237 408 579
+f409v_L17 592 272 181 99
+f409v_L19 310 198:low 404:low bir 106 555 123 480 416 237 434:low
+f409v_L20 864
+f409v_L22 253 406 233 560
+f409v_L23 403 529:low 340:low 156 143 611 320:low
+f409v_M1 864:low 357:low
+f409v_L24 611 648 90 247:low 548 757:low
+f409v_L25 585 564 384 680
+f409v_L26 253 87:low 108 558:low 109 77 549 414 821 402 936
+f409v_L27 714 431 73:low bir 237 715 99 bir 89
+f409v_L28 592 285 375 277 589:low
+f409v_L29 447 237 560
+f409v_M2 185:low 825:low
+f409v_L33 31:low 66 21 35 7 33 15 9 50 28 39 22
+f409v_L34 14:low 110 34 9 2 30 35 51:low 6 120:low 46 59 10:low 25
+f409v_L35 24 6 16:low 29 9 35 5 46 29 10 20000:low
+f410u_L06 103:low 36
+f410u_L07 31
+f410u_L12 359 585 564 387
+f410u_L13 359:low

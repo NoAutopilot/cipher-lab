@@ -438,9 +438,54 @@ persons or Krauske's table is incomplete for these; logged for the verifier, not
 Vision: 1 quarter-size layout look + 1 debug overlay + 4 zooms by this worker; subagents 2 (Opus, blind passes, one crop set
 each). Requests: www.archiv.sachsen.de 1 (file 0579 full size). Not done: the rest of file 0511 (f.409v, upper f.410).
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026)
+## GAPS177-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): the rest of file 0511 (f.409v, upper f.410)
+
+**Crops.** `python3 tools/iiif_lines.py --image images/loc694-08-09/694-08_0511.jpg --region 470,1060,1650,2480 --out
+images/f409v_crops --prefix f409v --top-margin 25 --bottom-margin 25 --quality 80` -> 35 line crops (f.409v);
+`... --region 2110,1040,1660,980 --out images/f410u_crops --prefix f410u ...` -> 16 crops (f.410 above GAPS162's block).
+Both passes on f.409v found two short lines that fell between two crops' centres ("864. c'est le seul 357.", "pense 185. 825."). The worker cut them as
+fixed bands (`--region 470,2510,1650,160 --centres 80 --prefix f409vM1`; `470,2948,...,f409vM2`) and read them alone (low).
+
+**Passes.** Two blind Opus passes per crop set (4 subagent calls: f409v/passA_f409v.tsv, passB_f409v.tsv, passA_f410u.tsv,
+passB_f410u.tsv), clear French collapsed to [w]. The passes agree outright on 102 of 147 number tokens on f.409v (69%, a ? counts as a split).
+On upper f.410 they agree on 8 of 9, splitting only on 103 vs 10. The worker then settled the splits with one native-zoom pass (f409v/reconciled.txt).
+Upper f.410 is clear text with only 7 code tokens ("pour Mr. 103. 36. 31. d'icy", "359. 585. 564. 387.", "359."). "1500. Chevaux" and "les 3.
+regimens" are plain numerals, excluded. The [bir] token (x5 on f.409v, between codes) is transcribed literally, unkeyed.
+Reconciled: **162 tokens** (f.409v 154, upper f.410 8), 34 low, appended to ciphertext.tsv as `694-08_0511_f409v_*` / `_f410u_*`.
+Two tokens take pass B's blind reading where the image allows both and the key-constrained decode picks it (L33 tok1 31 not 21,
+"ma negociation"; L35 tok3 16 not 11, "a quoi"): a key-constrained choice, noted in reconciled.txt.
+
+**Key applied** (`python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`: "reading up to date", exit 0).
+New tokens: **H 0, C 39, S 0, M 21, I 0, U 102**; keyed coverage 60/162 = 37%. Most of f.409v's code runs (paragraph 6) are 3-digit
+nomenclator codes 106-936 that Krauske's 157-code table does not cover (75 distinct unkeyed codes, e.g. 237 x5, 253 x4, 583 x3, 403 x2,
+864 x2). `--split-check` gives no French letter string for any of them (583 = v sch / s w, 237 = e g / p g, 403 = b w), so they read as
+words/syllables of a larger nomenclator, not glued letter pairs. Keyed words among them: comte (284), Pless (240), Hoym (156 x2),
+Menzikoff (181), Dresden (310), Stanislas (198). The one letter-level run is paragraph 8 (L33-L35, 37 tokens, C 27 M 9 U 1). Read with
+Krauske's key, first alternative: "Je ne dis rien de particulier de **m a n e g o c i a t i o n**. V.E. jugera de reste par **la p i e c e s u d i t e
+a q u o s i e v i s e** [20000]". That is "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M at best: cryptanalytic application of
+Krauske's 1893 table, unchecked against any gloss. 29 reads s where "quoi" wants i, and 20000 is unkeyed, probably a closing mark.
+
+**Judge (fr18, the gate VERIFY-MANT accepted: decode vs 20 shuffled-key decodes).** f409v/judge_f409v.py, a copy of f410/judge_f410.py
+with only the line filter changed (`--check` regenerates candidate.txt). Output (f409v/judge.tsv):
+
+```
+text         verdict  score    real_p05  null_p99
+candidate    FAIL     -1.469   -1.001    -1.607
+shuffled x20 FAIL     best -1.191, worst -1.717; 15 of 20 score above the candidate
+```
+
+**No pass, and the control does not separate:** the shuffled-key control varies on the statistic's own axis, and the candidate sits
+inside its spread (rank 16 of 21). This is a non-discriminating result for this block as a whole, not a negative on the key. The keyed
+part of paragraph 6 is isolated letters and names between unkeyed nomenclator codes, which are noise to a letter-n-gram judge. The
+letter-level run (paragraph 8, about 38 letters) is under the judge's letters_min 40, so the judge cannot test it on its own;
+the floor was not lowered for it. **Not flagged "reading ready".** Credit: the key is Dr. O. Krauske's 1893 table (Loc. 694/10).
+
+Vision: 2 overview/overlay checks + 2 zoom montages by this worker; subagents 4 (Opus, blind passes). Requests: none (image on disk).
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 21 of 894 report frames inventoried, 4 carry code groups (694/08 0510, 0511, 0579, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); next: the rest of file 0511 (f.409v, upper f.410), two blind Opus passes + reconcile, ~$3
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
+- f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: no-key-material; Krauske's Loc. 694/10 table stops at 157 codes and no period key sheet for the upper range has been seen; the frame inventory (next gap) is where a glossed leaf carrying these codes would turn up
 - Loc. 694/08 and /09 ciphered reports, 873 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 21 sampled (A2-SAX2 + GAPS162: 4 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; Haake has no archive.org item (GAPS158); next: Google Books API fts for Haake (country=US) + read the paper, ~$1
 
@@ -452,11 +497,11 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 21 sampled (4 cipher, 1 possible; A2-SAX2 + GAPS162 3 Oct 2026), 873 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: the rest of file 0511 (f.409v, upper f.410) -- crops with tools/iiif_lines.py --image, two blind Opus passes + reconcile, apply key.tsv, judge beside f.410 and the f.467 gloss calibration (GAPS166), ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: print -- Google Books API full-text search for Haake's Flemming biography (country=US) and read the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation, ~$1; then the frame inventory batch (~$2 per 250 frames), which is also where a glossed leaf for f.409v's nomenclator codes would turn up
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166). Depends on nobody: transcribe the rest of file 0511 (f.409v, upper f.410), ~$3.
+- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Depends on nobody: the Haake/Wackerbarth print check, ~$1, then the frame inventory batch, ~$2.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 

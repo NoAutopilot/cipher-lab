@@ -734,6 +734,54 @@
     "prominence": 233.2
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f409vM1_L01.jpg",
+   "source_url": "",
+   "source_file": "694-08_0511.jpg",
+   "box": [
+    470,
+    2540,
+    2120,
+    2640
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     80
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f409vM2_L01.jpg",
+   "source_url": "",
+   "source_file": "694-08_0511.jpg",
+   "box": [
+    470,
+    2978,
+    2120,
+    3078
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     80
+    ]
+   },
+   "date": "03 Oct 2026"
   }
  ]
 }
