@@ -988,14 +988,80 @@ and no control (rule 3 does not apply: no solver, gate or alignment was run).
 **Where Y1's follow-ups stand:** (1) done (A2-LAG); (3) done here, read as far as this image allows. (2) The 27-sign
 and 18-sign clauses of 6467 and all of 6179's cipher are still unread, with no key material.
 
-**Next cheapest step:** the untried family for this numeral system that WC-LAGARDE2 names: `masc` through
+**Next cheapest step:** ~~the untried family for this numeral system that WC-LAGARDE2 names: `masc` through
 `tools/family_run.py` on the pooled 6179+6467 ciphertext (N=239), matched control first (rule 3), about $3. This is a
 different instrument from the syllabary/wordcode families that fell below their gates, so it is not a third pass
 at the same knob. Expect the control to be weak at N=239 under the measured transcription error: if it falls below
 its gate, the step is "not a test at this N" and the target waits for new material (a same-system sibling, or
 Gachard's Correspondance de Guillaume le Taciturne, unreachable on 25 Sept). Another route: a higher-resolution
 image of KHA A 11/XIV C/M-12 f.2 from the Koninklijk Huisarchief (owner-side copy request) would settle the N's
-superscript; it is low value on its own.
+superscript; it is low value on its own.~~ Done 3 Oct 2026 by A2-LAG3 (section below): the clean control passes, but at the measured error it falls below its gate, so this is not a test at this N and error.
 
 Requests: none (no network). Vision: 3 direct image reads by this worker, 0 subagent calls. New file:
 `images/crops_wc/6467p2_run2_margin_context_2x.png` (176 KB).
+
+## A2-LAG3: `masc` through `tools/family_run.py`, matched control first (3 Oct 2026, account 2, LANE-A2PUSH)
+
+**Job:** the Verdict's next cheapest step only: `masc` on the pooled 6179+6467 ciphertext, control first (rule 3). No
+network, no image reads.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines` (exit 0).
+
+**Design check before running.** The spec's own tokens are code+mark types (N=239, K=48). A one-sign-per-letter control
+cannot have 48 distinct letters: `homophonic_anneal.fold` gives a 24-letter alphabet (j->i, v->u), so `family_run.py`
+would have built a control far below the target's K (dry run shows K=48; the control's window accept test can never
+pass). So the run uses the base codes: `build_basecode.py` (new, `--check` exits 0) strips the mark suffix and drops
+the free-standing `MARK^` flourishes, the same choice as `solve_l2.py`'s base-digit mode, and writes
+`families/basecode_cipher.txt`: **N=229, K=26** (1-24 plus `07` and `29`, kept as transcribed). Even this K is two
+above the 24-letter alphabet, so a strict simple substitution cannot fit the transcription as it stands unless `07`
+and `29` are variants of other signs; each control drew K=19-21 (the most a 229-letter French window gives). The
+controls are therefore at the target's N and design, but below its K -- they are easier than the target, not harder.
+
+**Tool change.** `tools/families/masc.py` had no way to inject transcription error into its control, so a masc FAIL
+could never bracket this target's measured 20.1-25.5% pass disagreement (rule 3, SALV-DIAG paragraph). Added
+`--param noise=p`, the same redraw recipe as `homophonic.py`'s `noise=p` (its `_inject_noise`), default 0 unchanged;
+offline test `tools/tests/test_masc_family.py` (ok, changed share 0.207 at noise 0.25); `tools/tests/test_family_run.py`
+still passes.
+
+**Runs** (`python3 tools/family_run.py specs/la-garde-1577.json --family masc --cipher
+ciphers/la-garde-1577/families/basecode_cipher.txt --tokens space --seeds 3 --gate 0.6 [--measured-error 0.23 --param
+noise=p] [--control-only]`; corpus the spec's two fr16 volumes; rows in HYPOTHESES.md):
+
+| Control noise | Control recovery, seeds 1-3 | Mean | Gate 0.6 | Target |
+|---|---|---|---|---|
+| 0 (clean) | 0.948 / 0.978 / 0.983 | 0.969 | met | run: best score -572.867; judge **FAIL** (below) |
+| 0.20 (below measured; tool warns non-test) | 0.777 / 0.332 / 0.585 | 0.565 | not met | not run (control-only) |
+| 0.23 (= `--measured-error`) | 0.563 / 0.507 / 0.031 | 0.367 | not met | not run (CONTROL BELOW GATE, exit 3) |
+| 0.26 | 0.310 / 0.297 / 0.406 | 0.338 | not met | not run (control-only) |
+
+Judge on the clean-gated target decode (`families/masc-1-a2lag3masconbase.txt`), as `family_run.py` printed it:
+`FAIL language: score=-1.208, null_p99=-1.601, real_p05=-0.96, real_median=-0.806, mode=both, N=229`. The decode is
+gibberish ("osleeetereeenetornoute..."); the anneal's key gives five signs to `e`. The target's anneal score
+(-572.9) sits inside the range of the noise-0.23 controls' own scores (-564.2 to -597.6), so it does not separate from
+a correctly-keyed noisy control either. The control CAN differ from the target on the statistic (recovery and anneal
+score both depend on the key and the token values the noise redraws), so this is a real control, not a non-test by
+construction.
+
+**Result: masc is untestable at N=229 and this transcription's measured error -- not a negative.** The clean control
+reads 97%, so a clean masc at this N would be read; but at the measured error band (0.20-0.26) the control falls to
+0.34-0.57, below its gate, and the target's FAIL is drawn from a clean control only. Grades: 0 cipher tokens read
+(H 0, C 0, S 0, M 0, I 0). Note for the orchestrator, not acted on: WC-LAGARDE's `solve_l2.py` "control-backed
+negative" for the same design rests on the target scoring below the noisy control, not on a noisy control meeting a
+recovery gate (its own base-digit control read 28.6% at 22% noise); on `family_run.py`'s gate standard that earlier
+negative would also read "not a test at this error". Status line unchanged (`open`).
+
+**Where the ladder stands.** masc/homophonic and periodic via `solve_l2.py`: score-based negatives (see note above);
+syllabary, wordcode, masc via `family_run.py`: controls below gate at the measured error. `running_key` is the one
+family neither instrument has tried; `family_run.py` needs three corpus texts for it and the fr16 folder has two, and
+its control will face the same N=229 and 20-25% error. The step that changes the picture is lower transcription
+error (a better image, KHA A 11/XIV C/M-12, owner-side request) or more same-system ciphertext (Gachard, Correspondance
+de Guillaume le Taciturne, unreachable 25 Sept).
+
+**Next cheapest step:** `running_key` through `tools/family_run.py` on `families/basecode_cipher.txt` with
+`--measured-error 0.23` and a third 1570s French corpus text added to `tools/data/fr16`, control first, about $3;
+expect the control to fall below its gate at this N and error, in which case the target waits for new material
+(a better image to lower the error, or same-system siblings).
+
+Requests: none (no network). Vision: 0 reads, 0 subagent calls. New files: `build_basecode.py`,
+`families/basecode_cipher.txt`, `families/masc-1-a2lag3masconbase.txt`, `tools/tests/test_masc_family.py`.

@@ -3,7 +3,11 @@
 Control design: a plaintext window with exactly K distinct letters (K = the target's sign count) under a random
 one-sign-per-letter key, so the control is a true simple substitution of the target's N and K, not a homophonic
 one (that is the `homophonic` family). Solver: homophonic_anneal.solve, the same call the target gets.
-params: iters (default 40000), order (3), uni_weight (1.0)."""
+params: iters (default 40000), order (3), uni_weight (1.0).
+noise=p (A2-LAG3, 3 Oct 2026, la-garde-1577): after the control cipher is built, a share p of its tokens are
+redrawn weighted by the target's own sign-count profile -- the same Salviati recipe as homophonic.py's noise=p
+(its _inject_noise), so a masc control can bracket a target's measured transcription error (CLAUDE.md rule 3,
+SALV-DIAG paragraph) and family_run.py's --measured-error check sees it. Default 0 leaves the control untouched."""
 import random
 import homophonic_anneal as ha
 from families import draw_window, letters
@@ -25,7 +29,12 @@ def make_control(spec, seed, corpora, params):
     signs = [f"s{i}" for i in range(len(distinct))]
     rng.shuffle(signs)
     key = dict(zip(distinct, signs))
-    return [[key[a] for a in plain]], plain, [rest]
+    seq = [key[a] for a in plain]
+    noise = float(params.get("noise", 0) or 0)
+    if noise:
+        from families.homophonic import _inject_noise, _target_sign_counts
+        seq = _inject_noise(seq, noise, _target_sign_counts(params), seed)
+    return [seq], plain, [rest]
 
 
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
