@@ -229,7 +229,7 @@ brief template, steps 1-5. It did no decoding and touched no other target.
 
 | item | claim under audit | class | key source | prior plaintext | prior decipherment / key in print |
 |---|---|---|---|---|---|
-| 4 | 2077 title cartouche, heading and "Explicatie der Signatuuren" legend a-z (+ alpha-eta), reading_2077_legend_nieuw.txt: 658 cipher tokens H 500 M 106 U 52, plus 98 plain words. GAPS22: the rate-matched nl18 gate PASSes 7/7 folds and 0/400 target shuffles pass; the non-gating half-M-right sensitivity check FAILs 4/7 | **N1 (provisional)**, held there until LOCAL-QUEUE L36/L41 are answered. **Ceiling N2** even if they come back empty (see below) | **period** (NA 1.05.03 inv. 86 scan 0003, Nieuw Secreet Alphabet + code groups; image exceptions from GAPS21) | **Content, yes, in a period plain sister plan.** NA 4.VEL 2078, Wollant's own July 1782 plan of the same fort "not in cipher" (Pl. E / E.E.), carries a plain "Nota" A-C, a-z that lists the same buildings. It is printed in facsimile on the same page as 2077 (den Heijer 2012, p. 329). The 2077 legend's own text was not located in print: AMH 2123 says "partly encrypted, not transcribed". | **Key: yes.** den Heijer 2012 p. 471 prints the Nieuw Secrett Alphabeth in facsimile (inv. 86 fols 1v-2), and so does de Leeuw 1997. **Decipherment of 2077: none located.** den Heijer's caption on p. 329 does not transcribe it. de Leeuw 1997 lists 2077 (no. 740 e) and is unread (L36). *Suriname en zijn historie* (1972) reproduces 2077 (plate 120/121) and is unread (L41) |
+| 4 | 2077 title cartouche, heading and "Explicatie der Signatuuren" legend a-z (+ alpha-eta), reading_2077_legend_nieuw.txt: 658 cipher tokens H 500 M 106 U 52, plus 98 plain words. [VERIFY2-SURINAME-2077, 3 Oct 2026: revised by GAPS23/GAPS24 to H 500 C 7 M 101 U 50; class re-checked and unchanged, see the section at the end of item 4.] GAPS22: the rate-matched nl18 gate PASSes 7/7 folds and 0/400 target shuffles pass; the non-gating half-M-right sensitivity check FAILs 4/7 | **N1 (provisional)**, held there until LOCAL-QUEUE L36/L41 are answered. **Ceiling N2** even if they come back empty (see below) | **period** (NA 1.05.03 inv. 86 scan 0003, Nieuw Secreet Alphabet + code groups; image exceptions from GAPS21) | **Content, yes, in a period plain sister plan.** NA 4.VEL 2078, Wollant's own July 1782 plan of the same fort "not in cipher" (Pl. E / E.E.), carries a plain "Nota" A-C, a-z that lists the same buildings. It is printed in facsimile on the same page as 2077 (den Heijer 2012, p. 329). The 2077 legend's own text was not located in print: AMH 2123 says "partly encrypted, not transcribed". | **Key: yes.** den Heijer 2012 p. 471 prints the Nieuw Secrett Alphabeth in facsimile (inv. 86 fols 1v-2), and so does de Leeuw 1997. **Decipherment of 2077: none located.** den Heijer's caption on p. 329 does not transcribe it. de Leeuw 1997 lists 2077 (no. 740 e) and is unread (L36). *Suriname en zijn historie* (1972) reproduces 2077 (plate 120/121) and is unread (L41) |
 
 Safe sentence (2077): "Under the period key in NA 1.05.03 inv. 86 (printed in facsimile by de Leeuw 1997 and den Heijer 2012, p. 471),
 we read the 2077 (fort Zeelandia) legend at 500 of 658 cipher signs from the key sheet, with 106 uncertain and 52 unkeyed. Its content
@@ -320,3 +320,74 @@ did not exist before this audit.**
 No SECOND-OPINIONS-QUEUE.tsv row: 2077 is below N3. No CONTRIBUTIONS or outreach.
 
 Reading revised by GAPS23/GAPS24 (3 Oct 2026, solver, rule 10 propagation, not a verifier pass): 2077 was H 500 M 106 U 52 when this item was classed and is now H 500 C 7 M 101 U 50, M+U 0.229 (2078 Nota known-plaintext check, passes/nota2078_gaps23 and passes/nota2078_gaps24). Re-class pending.
+
+### Re-class on the revised reading (VERIFY2-SURINAME-2077, account-4, verifier, 3 Oct 2026, 05:20-05:4x UTC)
+
+A session separate from every solver on this target (GAPS19-GAPS24, NL18-CORPUS), from REDERIVE-SURINAME-2077 and from
+VERIFY-SURINAME-2077. Rule 10 propagation of GAPS23 (51d9794e) and GAPS24 (2d92f06b). No decoding; no other target touched.
+
+**Verdict: item 4 stays N1 (provisional), key source period, ceiling N2.** The revision makes the reading better supported. It
+adds no print of this legend and removes none of the reasons for the hold.
+
+| | before (VERIFY-SURINAME-2077) | now |
+|---|---|---|
+| 2077 cipher tokens (658) | H 500 M 106 U 52, M+U 0.240 | **H 500 C 7 M 101 U 50, M+U 0.229** (C 7 = 7 tokens settled against 4.VEL 2078; one of the 8 exceptions, L11:17, is capped at M by its transcription conf) |
+| gates on file | GAPS22 rate-matched nl18 gate PASS 7/7, shuffled 0/400; half-M-right sensitivity FAIL 4/7 | unchanged (GAPS22 not re-run at 0.229), **plus** GAPS23 known-plaintext check against the plain 2078 Nota: pooled H-letter agreement 0.696 (78/112) vs label-shuffle N1 p99 0.446 and value-shuffled-key N2 p99 0.277, 0/2000 each, PASS; GAPS24 secondary pairs: 1 of 4 supported (e~h 9/9), k~s and l~t tie N1 p99 (no power at 9-16 H letters, not a negative), a~B fails |
+| `decode_key.py --check` | exit 0 (04:32 UTC) | **exit 0** (05:2x UTC, this session): "ciphertext_2077_legend.tsv: tokens 658: C 7, H 500, M 101, U 50", "reading up to date" |
+
+**What this session checked (step 2 of the brief, stage 9):**
+- Pre-registration order holds in git: 5c306ccd (GAPS23 prereg + score.py, 04:49 UTC) precedes 51d9794e (transcription and scores,
+  04:55); 7c2e235b (GAPS24 prereg, 05:05:09) precedes 2d92f06b (scores, 05:05:58). The GAPS23 gating pairs were chosen by the earlier
+  verifier, not by the solver; GAPS24's pairs were chosen from the solver's own word segmentation, which GAPS24 says, and which is why a
+  pair counts only when it beats both of its own controls.
+- Reproduced both scores on a scratch copy (committed files untouched). The real numbers are identical: GAPS23 per-pair and pooled
+  78/112 = 0.696; GAPS24 4/10, 9/9, 10/16, 7/9. The control quantiles move slightly (N1 p99 0.438 vs committed 0.446; u~d own p99 0.476
+  vs 0.524) because the script now reads a token file in which its own regrades are already applied. Verdicts unchanged.
+- Re-derivation (rule 7): REDERIVE-SURINAME-2077 agreed on the pre-revision reading. The revision changes 8 tokens, every one of them
+  M or U before, through 8 committed rows of exceptions_nieuw_image.tsv that cite their pre-registered source. That is within the
+  rule-7 tolerance (differences only on M-graded tokens), and `--check` regenerates it. No fresh re-derivation is needed for this
+  revision.
+- **Stage 9 is still not ready.** Three things hold it: (1) the half-M-right sensitivity FAIL (GAPS22, 4/7) has not been re-run, and
+  M+U only went from 0.240 to 0.229; (2) the per-instance g|l call that GAPS24 names as next (about 40 g|l tokens still M) is not done;
+  (3) new from GAPS23's confusion table: the commonest mismatches against 2078 are H-graded letters, systematically d->c, n->m, q->a
+  ("dassernes" for casserne). So some **H** grades are wrong in a patterned way, and the H count overstates the letters that are right.
+  The grade mask cannot see this: an H grade says "read from the key sheet", not "right". Before stage 9 a solver should settle whether
+  those are key-reading or sign-merge errors on the d, n and q signs (one blind sign call against inv. 86 scan 0003, about $1.5) and
+  re-grade; then a verifier confirms the class on the settled reading.
+
+**What the 2078 Nota means for the class (step 1 of the brief).** It is a period plain text of parallel content, by the same author,
+eight to twelve months later, with different letters, order and wording. It is not a print of the 2077 legend, and nothing in the
+record maps 2077's ciphertext to it before GAPS23 did. So it does not make the 2077 plaintext "already published" in the N1 sense.
+N1 stays only as the provisional hold for the two unread sources that treat or reproduce this sheet (de Leeuw 1997, LOCAL-QUEUE L36;
+*Suriname en zijn historie* 1972, L41; both still `queued` at 05:2x UTC). What GAPS23 does change is the ceiling's footing: 7 letters
+of our reading are now graded C *from* that parallel, so part of the reading rests on known period text. That confirms the ceiling of
+N2 ("plaintext known elsewhere, no prior mapping of this ciphertext to it"), loosely as before: if L36 and L41 come back empty, the class
+is N2, not N3. The mapping of 2077 to 2078 is ours (GAPS23), not prior.
+
+**Searches newly relevant to the revision (step 3),** for the newly C-graded words and the phrases they complete (artillerie,
+laboratorium, bakkery, neeger), 3 Oct 2026:
+
+| family | searched | result |
+|---|---|---|
+| (e) Google Books (key, country=US, 1.8 s apart) | "artillerie cassernen"; "Neeger gevangenhuysen"; "Neeger gevangenhuisen" Suriname; "laboratorium voor de artillerie" Suriname 1781; "monteerings kamer" Zeelandia artillerie; bakkery "fort Zeelandia" 1781 Wollant; "laboratorium voor de artillerie" Zeelandia | 503 twice on the last query (one retry, then stopped). Hits: a Copenhagen street register (1831); Temminck Groll 1973 (already logged, describes "artillerie-laboratorium" in prose); *Suriname en zijn historie* (1972), snippet "Artillerie Casernen, en boven het monteerings Magazijn; door de Engelschen tot het voorgemelde einde ingerigt" -- a description after the British occupation (1799-1816), not a transcription of 2077's legend; it does show the book describes these buildings in prose, which L41 should note |
+| (e) IA full text (be-api) | "laboratorium voor de artillerie"; "artillerie cassernen"; "Neeger gevangenhuysen"; Zeelandia AND laboratorium AND bakkery | 6 / 1 / 0 / 0. The hits are 19th-century Delpher newspapers and a Danish weekly, none about Suriname's fort Zeelandia in 1781 |
+| (g) CORE (key) | title search for de Leeuw 1997 ("verdedigingswerken langs de Surinamerivier"), to see if CORE holds the open-access full text that the Leiden repository blocks | 4 records of the article, all without full text or abstract (providers NARCIS and a Leiden collection). L36 stays the route |
+| (a)-(d), (f), JSTOR | not re-run: the revision adds no new identifier, sender, recipient or date. JSTOR rows 175-176 (3 Oct 2026) already cover the 2078 words | -- |
+
+Requests by host: www.googleapis.com 8; be-api.us.archive.org 4; api.core.ac.uk 3.
+
+Safe sentence (2077, replaces the one above): "Under the period key in NA 1.05.03 inv. 86 (printed in facsimile by de Leeuw 1997 and den Heijer 2012,
+p. 471), we read the 2077 (fort Zeelandia) legend at 500 of 658 cipher signs from the key sheet and 7 more from Wollant's own plain
+1782 plan of the same fort (NA 4.VEL 2078), with 101 uncertain and 50 unkeyed. Where the two plans name the same building, our reading
+agrees with the 2078 Nota well beyond chance (pre-registered check). No printed transcription of the 2077 legend was found in the
+sources searched; de Leeuw 1997 and *Suriname en zijn historie* (1972), which both treat or reproduce the sheet, have not been read."
+Unsafe (unchanged, plus one): "first decipherment of the Zeelandia map"; "previously unknown contents of fort Zeelandia"; "we recovered
+Wollant's key"; "read in full"; **"confirmed against known plaintext"** or "verified by 2078" for the whole legend (the check covers 5
+gating entries and 1 supported secondary pair, and the matches are H-letter agreement with a differently worded text, about 70%).
+
+Postmortem: no over-claim found in the revision. GAPS23/GAPS24 left the class to a verifier and wrote the "re-class pending" line, as
+rule 10 asks. One gap: GAPS23 reported the d->c / n->m / q->a pattern as "descriptive, non-gating" and its Verdict and GAPS24's go
+straight to the g|l call. That pattern is direct evidence about H-graded tokens, so it belongs in the reading's next step ahead of the
+g|l call. Added to the stage-9 list above, not to NOTES.md's gaps (a solver's job).
+
+No SECOND-OPINIONS-QUEUE.tsv row: the class is N1 (provisional), below N3. No CONTRIBUTIONS or outreach.
