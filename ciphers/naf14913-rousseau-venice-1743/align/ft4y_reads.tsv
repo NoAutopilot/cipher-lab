@@ -1,0 +1,15 @@
+crop	position	role	transcribed	blind_read	confidence	alternatives	marks	changed
+A4	f.252r g1	target	253	253	medium	digit2: 5 or 3; digit3: 3 or 5	trailing dot	no
+A1	f.252r g5	target	369	369	high	none	long tail on 9	no
+A2	f.252r g6	target	213	213	medium	digit1: 2 or 9; digit2: 1 or separator	trailing dot	no
+A6	f.252r g7	target	248	248	high	digit3: 8 (cut at right edge)	none	no
+B2	f.266r S1 g39	target	213	213	high	digit3: 3 or 5	none	no
+B3	f.266r S1 g40	target	248	248	high	digit2: 4 (open-top form)	none	no
+B6	f.266r S1 g46	target	369	369	medium	digit1: 3 or 5	stray dots	no
+A8	f.252r g0	decoy	527	327	medium	digit1: 3 or 5	long descender on 7	yes (medium)
+A5	f.252r g2	decoy	447	447	high	none	trailing dot	no
+A3	f.252r g3	decoy	188	188	high	none	trailing dot	no
+A7	f.252r g4	decoy	767	767	high	digit1: 7 or 1	trailing dot	no
+B1	f.266r S1 g48	decoy	180	180	high	none	none	no
+B4	f.266r S1 g42	decoy	63	63	medium	digit2: 3 or 5	stroke above 6	no
+B5	f.266r S1 g35	decoy	718	718	high	none	dot above	no
