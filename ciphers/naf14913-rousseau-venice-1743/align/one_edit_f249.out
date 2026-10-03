@@ -1,0 +1,15 @@
+pair f249: groups 111, distinct 78, slip letters 355, words 73, maxlen 12
+REAL E0 (no edit) = False (4.5 s)  (True fit / False proved none / None timed out)
+REAL E (<= 1 edit) = 1; timed out False (35.1 s)
+single edits giving a fit: 9 of 223 (timed out 0)
+  W at group 2 (253)
+  W at group 25 (242)
+  W at group 26 (253)
+  W at group 27 (66)
+  W at group 28 (52)
+  W at group 95 (242)
+  D at group 26 (-)
+  D at group 27 (-)
+  D at group 28 (-)
+CONTROL (s wrong slip (words shuffled), n=40): E=1 in 40 (1.000); timeouts counted high 40; among resolved draws E=1 in 0 of 0 (descriptive)
+# run stopped by the worker's outer 590 s timeout (exit 124) during control (g); control (g) not scored. Gate by the registered rule: control (s) share 1.000 > 0.05 -> NON-INFORMATIVE.
