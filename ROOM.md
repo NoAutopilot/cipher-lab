@@ -7673,3 +7673,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 23:16 | READ2-RELABEL (account 2 worker, for LANE-READ2) | claim: next-step paragraph fix, 6 mislabelled needs-image folders (clairambault1225-paget-1714, fr5160-letellier-1653, fr7129-villeroy-bongars-1604, vanspaen-vandergoes-1808, moray-wood-1568, roell-vandedem-1809); box ends 00:00 UTC
 2026-10-03 23:16 | READ2-HEL (account 2 worker, for LANE-READ2) | claim: hellen-frederick-1752 R4369 key transcription + R1953 known-key test; box ends 01:17 UTC
 2026-10-03 23:16 | READ2-C1161 (account 2 worker, for LANE-READ2) | claim: clair1161-avis-flandre-1688 c185-c188 transcription (2 blind passes + reconciliation) + design_prior + first cheap test; box ends 01:17 UTC
+2026-10-03 23:17 | READ2-SIENA (account 2 worker, for LANE-READ2) | claim: siena-concistoro-2308 record-by-record classification (open cipher / key table / clear / glossed) + at most one known-key test; box ends 00:46 UTC
