@@ -1372,3 +1372,23 @@ for the shorthand family (rule 3, second-attempt paragraph), the target was neve
 score from a plate-plus-crops model reader (ARM-S2/S3 included) is an exclusion. Not a negative on any system or on
 the marks being shorthand. Next instrument: a person who reads one of these systems, a trained recogniser, or an
 independent crib for one passage. NOTES.md steps H24 and H28.
+
+## H73 vocabulary prior with decade order (3 Oct 2026, worker ARM-H73 for LANE-ARM-B): control below gate, target not run
+
+`tools/families/nomenclator.py --param vocab_order=1` (one-part-by-decade on a sibling's alphabetical whole-word list,
+NOTES.md "Step H73", prereg h73/PREREGISTRATION.md). Control = Armstrong's own 15+22 Feb 1808 THE=972 decodes re-encoded
+at N=369 in the target's design, cross-held-out (prior list never the synthetic book list). Rows in the family_run.py
+column convention (written by h73/run_h73.py's results, not by family_run.py, whose control builder has no option for
+an outside plaintext):
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 19:39 | nomenclator | N=369 vocab_order=1 prior=WE028 book=THE972 block=6 win=30 sweeps=30 restarts=3 corpus=en18 | 1-3 | 0.153 (0.127-0.179) | not run (control below gate) | - | no | H73 V1, C-A gating control |
+| 3 Oct 2026 19:42 | nomenclator | N=369 ARM-C1 defaults on the same C-A letters | 1-3 | 0.130 (0.117-0.144) | not run | - | - | H73 blind baseline (rule 3 headroom) |
+| 3 Oct 2026 19:43 | nomenclator | as C-A, thin=0.75 | 1 | 0.117 | not run | - | no | H73 realistic-overlap control |
+| 3 Oct 2026 19:43 | nomenclator | N=369 vocab_order=1 prior=THE972 book=WE028 win=6 | 1 | 0.108 | not run | - | no (not gating) | H73 C-B leak-side control |
+
+Logged: **untestable by this tool at N=369 (vocabulary prior, matched control 0.153 vs gate 0.6).** The objective scores
+V1's wrong decode 470-550 nats above the true plaintext on every control (h73/diag_fixedpoint.tsv). V2 (vocabulary only)
+was not run: it is ARM-C1's sibling prior with one knob turned. This is the third attempt at the nomenclator objective
+here (ARM-C1, H27, H73), so the next attempt needs new material, not a further setting.

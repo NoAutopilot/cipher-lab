@@ -3939,3 +3939,60 @@ the MISS screen, so only a fuller specimen would test it.
 
 Requests: archive.org 2 (advancedsearch 1, djvu.txt download 1); founders.archives.gov 14 (headless page loads, one at a time,
 >=2 s apart); 0 challenges, 0 retries. Logs `sources/h75/requests.log`, `h75/requests.log`.
+
+## Step H73 (3 Oct 2026, 19:27-19:50 UTC, worker ARM-H73 for LANE-ARM-B): vocabulary-prior solver -- control below gate, target not run
+
+Intake gate, run before any work (`python3 tools/intake_gate_check.py armstrong-madison-1808`, exit 0):
+```
+armstrong-madison-1808: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+Pre-registration `h73/PREREGISTRATION.md`, committed and pushed (ac380695) before any control was built or solved.
+
+**Instrument.** Tomokiyo's suggestion (a model reading the letter after learning a sibling code's vocabulary) as an
+ORDER constraint: `tools/families/nomenclator.py --param vocab_order=1 prior=WE028|THE972` (offline test
+`tools/tests/test_nomenclator.py::test_vocab_order`) assumes the book is one-part at decade level, so the target's
+sorted decades must sit in the same order on one sibling's alphabetical whole-word list; particles are restricted
+to the siblings' short-word entries that are en18 function words; the score is the en18 word-trigram LM. V2
+(vocabulary only, no order) was judged before running to be ARM-C1's soft sibling prior with one knob turned, so it
+was not run as a variant (prereg, same-instrument check); the unchanged ARM-C1 solver is the blind baseline.
+
+**Matched control.** Bourdeau's THE=972 decodes of Armstrong's 15 and 22 Feb 1808 letters, with words rebuilt
+from fragments by the pre-registered DP and unread groups as `*` (`h73/control_plain.txt`, 528 words), re-encoded
+into a synthetic code of the target's design at N=369. The particle block is cold at 1-99. The book is the OTHER
+sibling's whole-word list in alphabetical blocks of 6 per decade, with members on the target's slot order and
+decades spread over 100-1999. Shape (`h73/controls.tsv`): C-A (book THE=972, prior WE028) has 369 coded tokens, 153
+distinct, 83 singletons, 199 particle / 170 book tokens and a slot-0 share of 0.288 (target 0.388). 92.5% of its
+book-list entries are in the prior, and 0.965 of its book tokens. C-B (book WE028, prior THE=972) has 158 distinct,
+89 singletons, 34.7% list overlap and 0.931 token coverage. The seeds change only the code: the particle
+permutation and the decade placement.
+
+| control (h73/results.tsv) | seed | V1 blended / particle / book | ARM-C1 solver (blind baseline) blended / particle / book |
+|---|---|---|---|
+| C-A prior WE028 -> book THE=972 (gating) | 1 | 0.154 / 0.266 / 0.024 | 0.144 / 0.241 / 0.029 |
+| C-A | 2 | 0.179 / 0.266 / 0.076 | 0.117 / 0.211 / 0.006 |
+| C-A | 3 | 0.127 / 0.216 / 0.024 | 0.130 / 0.211 / 0.035 |
+| **C-A mean** | | **0.153 (0.127-0.179); 0 of 3 seeds >= 0.6: GATE NOT MET** | 0.130 (0.117-0.144); headroom fine (not near ceiling) |
+| C-A thinned to 0.75 token coverage (prereg: C-A coverage > 0.90) | 1 | 0.117 / 0.211 / 0.006 | - |
+| C-B prior THE=972 -> book WE028 (leak-side, not gating) | 1 | 0.108 / 0.195 / 0.011 | - |
+
+The 19:33 single-restart timing pilot (seed 1, 0.133) is kept in results.tsv labelled as such and is not in the gate.
+V1 gains about 2 points over the blind solver, which is inside the baseline's own 2.7-point seed spread. The book
+class, which carries the letter's content, reads 0.6-7.6%.
+
+**Why (`h73/diag_fixedpoint.py` -> `diag_fixedpoint.tsv`, run after the gate and used for no tuning):** on every
+control the en18 LM scores V1's own wrong decode 470-550 nats ABOVE the true plaintext (-2223 to -2253 against
+-2777 on C-A; -2428 against -2702 on C-B). So the objective, not the search, rules out the reading at this N. This
+is the same finding as ARM-C1's truth-start diagnostic, now with the order constraint and a 1,079-word sibling list
+in place. Caveat: the control plaintext keeps THE=972's syllable fragments wherever the DP could not rebuild a word
+(for example "ac ce mp t"). That lowers the truth's LM score, so the control is harder than a letter written in
+whole words would be. ARM-C1's whole-word Jefferson control read 0.135 with the same objective, so the fragments do
+not explain the failure.
+
+**Verdict.** Untestable by this tool at N=369 (vocabulary prior with decade order, matched control 0.153 vs gate
+0.6). Target not run, no decode and no judge line. This is the third attempt at the nomenclator objective on this
+design (ARM-C1, H27, now H73), and every number moved the same way. Under rule 3's third-attempt clause the
+next attempt needs new material: a second letter in this code, a key or a gloss. A further prior, order or
+annealer setting is not a new attempt. Status stays `open`.
+Found: nothing about the target. Not found: no reading. The instrument fails on its own matched control.
+Files: `h73/` (PREREGISTRATION.md, run_h73.py, control_plain.txt, controls.tsv, results.tsv, battery_*.log, out/,
+diag_fixedpoint.py/.tsv). No network requests, no vision calls.

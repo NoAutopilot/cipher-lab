@@ -1,0 +1,5 @@
+  control build: {'coded': 369, 'distinct': 153, 'singletons': 83, 'particle_tokens': 199, 'book_tokens': 170, 'distinct_book': 109, 'oov_words': 117, 'wild_tokens': 92, 'book_list': 386, 'blocks': 65, 'slot0_share': 0.288, 'prior_list': 1079, 'book_list_in_prior': 0.925, 'book_token_coverage': 0.965, 'plain_words': 528}
+    restart 0: score -2312.0
+    restart 1: score -2298.5
+    restart 2: score -2265.8
+V1-THE972-WE028-t0.75-s1: blended 0.117 particle 0.211 book 0.006 (16s)

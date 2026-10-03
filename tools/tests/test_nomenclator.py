@@ -92,5 +92,46 @@ def test_nomenclator():
     print(f"test_nomenclator OK: truth-start recovery {rec:.3f} ({line.strip()}), {time.time() - t0:.0f}s")
 
 
+def test_vocab_order():
+    """(6) H73 vocab_order mode (3 Oct 2026): rebuild_words joins fragments only when they are not all words and
+    turns unread groups into '*'; make_control_vocab is cross-held-out (prior table != book table), reaches the
+    target's 369 coded tokens on the two held-out decodes, and its book is one-part at decade level (decade order
+    = alphabetical block order); solve_vocab returns a well-formed decode whose decades sit in alphabetical order
+    on the prior list. Says nothing about power (h73/results.tsv measures that)."""
+    vocab = {"accept", "the", "of", "ment", "govern", "government", "in"}
+    assert nm.rebuild_words("ac . ce . pt {12} of the govern . ment", vocab | {"acce"})[1:3] == ["*", "of"]
+    assert nm.rebuild_words("{12} x . y", vocab) == ["*", "x", "y"]
+    assert nm.rebuild_words("in the", vocab) == ["in", "the"]
+    corpora = [jp.read_corpus(str(p)) for p in jp.LANG_CORPORA["en18"]]
+    target = [l.split() for l in open(os.path.join(ROOT, "ciphers", "armstrong-madison-1808", "ciphertext.txt"))
+              if l.strip() and not l.startswith("#")]
+    par = {"vocab_order": 1, "book": "THE972", "prior": "WE028", "target_msgs": target}
+    with contextlib.redirect_stdout(io.StringIO()):
+        cm, plain, train = nm.make_control({}, 1, corpora, dict(par))
+    st = nm._LAST_CONTROL["stats"]
+    assert st["coded"] == 369 and st["book_tokens"] > 0 and st["book_list_in_prior"] < 1.0
+    pairs = sorted({(int(t), w) for t, w in zip(cm[0], plain.split()) if t.isdigit() and int(t) >= 100})
+    by_dec = {}
+    for v, w in pairs:
+        by_dec.setdefault(v // 10, []).append(w)
+    decs = sorted(by_dec)
+    for d1, d2 in zip(decs, decs[1:]):
+        assert max(by_dec[d1]) < min(by_dec[d2]), (d1, d2)
+    with contextlib.redirect_stdout(io.StringIO()):
+        dec, sc, info = nm.solve(cm, {}, 1, 1, train, {**par, "sweeps": 1, "greedy": 0})
+    assert len(dec.split()) == len(cm[0]) and info["mode"] == "vocab_order" and sc < 0
+    prior = [w for w in nm.table_words("WE028", nm.get_lm(train, 3).vocab)]
+    key = info["restart_keys"][0]
+    seen = {}
+    for v, w in key.items():
+        if int(v) >= 100:
+            seen.setdefault(int(v) // 10, []).append(prior.index(w))
+    ds = sorted(seen)
+    for d1, d2 in zip(ds, ds[1:]):
+        assert max(seen[d1]) < min(seen[d2]), (d1, d2)
+    print("test_vocab_order OK")
+
+
 if __name__ == "__main__":
     test_nomenclator()
+    test_vocab_order()

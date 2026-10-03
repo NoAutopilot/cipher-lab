@@ -42,6 +42,10 @@ the crib from the first sweep. Words are folded to the LM's vocabulary (an unsee
 driver is `tools/crib_rounds.py --family nomenclator` (make / round / score / view); `info["restart_keys"]`
 carries every restart's final key so the driver can report a per-value confidence (share of restarts agreeing
 with the best one), and `info["cribs"]` the cribs actually applied.
+Vocabulary prior with order (H73, 3 Oct 2026): `--param vocab_order=1 prior=WE028|THE972` assumes a one-part book at
+decade level on one sibling's alphabetical whole-word list (section "vocabulary-prior, one-part-by-decade" below; its
+control re-encodes the THE=972 decodes of Armstrong's 15/22 Feb 1808 letters with `book=THE972|WE028`, `thin=`).
+Matched control 0.153 mean vs gate 0.6 (ciphers/armstrong-madison-1808/h73/results.tsv): a non-test at N=369.
 Test: python3 tools/tests/test_nomenclator.py (offline, about a minute)."""
 import math, os, random, re, sys
 from collections import Counter, defaultdict

@@ -1,0 +1,27 @@
+  control build: {'coded': 369, 'distinct': 153, 'singletons': 83, 'particle_tokens': 199, 'book_tokens': 170, 'distinct_book': 109, 'oov_words': 117, 'wild_tokens': 92, 'book_list': 386, 'blocks': 65, 'slot0_share': 0.288, 'prior_list': 1079, 'book_list_in_prior': 0.925, 'book_token_coverage': 0.965, 'plain_words': 528}
+    restart 0: score -2295.7
+    restart 1: score -2271.3
+    restart 2: score -2281.9
+V1-THE972-WE028-t0.0-s1: blended 0.154 particle 0.266 book 0.024 (16s)
+    restart 0: score -1630.5
+    restart 1: score -1649.2
+    restart 2: score -1654.3
+ARM-C1-THE972-WE028-t0.0-s1: blended 0.144 particle 0.241 book 0.029 (165s)
+  control build: {'coded': 369, 'distinct': 153, 'singletons': 83, 'particle_tokens': 199, 'book_tokens': 170, 'distinct_book': 109, 'oov_words': 117, 'wild_tokens': 92, 'book_list': 386, 'blocks': 65, 'slot0_share': 0.288, 'prior_list': 1079, 'book_list_in_prior': 0.925, 'book_token_coverage': 0.965, 'plain_words': 528}
+    restart 0: score -2253.7
+    restart 1: score -2253.8
+    restart 2: score -2236.5
+V1-THE972-WE028-t0.0-s2: blended 0.179 particle 0.266 book 0.076 (16s)
+    restart 0: score -1634.1
+    restart 1: score -1637.4
+    restart 2: score -1625.5
+ARM-C1-THE972-WE028-t0.0-s2: blended 0.117 particle 0.211 book 0.006 (162s)
+  control build: {'coded': 369, 'distinct': 153, 'singletons': 83, 'particle_tokens': 199, 'book_tokens': 170, 'distinct_book': 109, 'oov_words': 117, 'wild_tokens': 92, 'book_list': 386, 'blocks': 65, 'slot0_share': 0.288, 'prior_list': 1079, 'book_list_in_prior': 0.925, 'book_token_coverage': 0.965, 'plain_words': 528}
+    restart 0: score -2251.0
+    restart 1: score -2303.6
+    restart 2: score -2278.0
+V1-THE972-WE028-t0.0-s3: blended 0.127 particle 0.216 book 0.024 (16s)
+    restart 0: score -1659.4
+    restart 1: score -1656.4
+    restart 2: score -1642.2
+ARM-C1-THE972-WE028-t0.0-s3: blended 0.130 particle 0.211 book 0.035 (165s)

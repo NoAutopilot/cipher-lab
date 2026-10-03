@@ -1,0 +1,5 @@
+V1-THE972-WE028-t0.0-s1	truth_lm	-2777.1	decode_lm	-2253.4	objective prefers decode
+V1-THE972-WE028-t0.0-s2	truth_lm	-2777.1	decode_lm	-2223.0	objective prefers decode
+V1-THE972-WE028-t0.0-s3	truth_lm	-2777.1	decode_lm	-2230.5	objective prefers decode
+V1-THE972-WE028-t0.75-s1	truth_lm	-2777.1	decode_lm	-2242.1	objective prefers decode
+V1-WE028-THE972-t0.0-s1	truth_lm	-2702.0	decode_lm	-2428.4	objective prefers decode
