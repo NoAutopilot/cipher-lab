@@ -1,0 +1,99 @@
+slot	line	positions	crops	current	readerA	readerB	old_slots	person
+P1	L01	3	f67r_L01_s1.jpg	de	de	que	S1	
+P2	L01	23	f67r_L01_s2.jpg,f67r_L01_s3.jpg	sa	son quartier Dom ?	ses quartiers Dont le	S2	
+P3	L01	25,26,27	f67r_L01_s2.jpg,f67r_L01_s3.jpg	la Dont ie	son quartier Dom ?	ses quartiers Dont le	S2	
+P4	L02	17	f67r_L02_s2.jpg,f67r_L02_s3.jpg	lombraige	ombraige	ombrage	S3	
+P5	L03	20,21	f67r_L03_s2.jpg,f67r_L03_s3.jpg	nauoir ueu	neantmoins veu	Ce nauroit este	S5	
+P6	L05	2	f67r_L05_s1.jpg	necess~re	necess~e	necess~	S8	
+P7	L05	12	f67r_L05_s2.jpg,f67r_L05_s3.jpg	p~	po~	po~ a	S10	
+P8	L06	3	f67r_L06_s1.jpg	aua~t	aime	auec	S12	
+P9	L06	13,14	f67r_L06_s2.jpg,f67r_L06_s3.jpg	ouuertement son	descouurir ouuertem~ sa	descouurir son ambition ses	S13	
+P10	L06	16	f67r_L06_s2.jpg,f67r_L06_s3.jpg	p~	pour	p~in	S14	
+P11	L07	4	f67r_L07_s1.jpg	ce	ce	a	S15	
+P12	L07	6	f67r_L07_s1.jpg,f67r_L07_s2.jpg	resentoit	ressentoit	resoluton	S16	
+P13	L07	10,11	f67r_L07_s1.jpg,f67r_L07_s2.jpg	dire sena	ses siens	dit siens	S17	
+P14	L07	21	f67r_L07_s3.jpg	Lassl~	le seruir Daylleurs	le seruir Dagth~	S18	
+P15	L08	1	f67r_L08_s1.jpg	deffraince	deffiance	lesperance	S19	
+P16	L08	8,9,10	f67r_L08_s1.jpg,f67r_L08_s2.jpg,f67r_L08_s3.jpg	declara~on confirmant nellre	declara~on mesmement celles	delayance confirmation nouuelle	S20	
+P17	L08	12	f67r_L08_s2.jpg,f67r_L08_s3.jpg	faicte	seruice	seruice Ce	S21	
+P18	L08	15	f67r_L08_s2.jpg,f67r_L08_s3.jpg	fai	fort	fur	S22	
+P19	L09	5,6	f67r_L09_s1.jpg,f67r_L09_s2.jpg	dez factieux	des fouqibons	des fourgibons	S23	
+P20	L09	16,17,18,19	f67r_L09_s2.jpg,f67r_L09_s3.jpg	qua~ vous men songez	par vng mensonge	par vng mensonge	S25	
+P21	L09	21	f67r_L09_s3.jpg	venger	venger	hausser	S26	
+P22	L10	7	f67r_L10_s1.jpg,f67r_L10_s2.jpg	cognoistre	cognois il	cognoistre	S27	
+P23	L10	11,12	f67r_L10_s1.jpg,f67r_L10_s2.jpg,f67r_L10_s3.jpg	petits sistre	plus fortz	p~sonnes	S28	
+P24	L10	14	f67r_L10_s2.jpg,f67r_L10_s3.jpg	Mamett	Vaunett	Danice	S29	
+P25	L10	16,17	f67r_L10_s2.jpg,f67r_L10_s3.jpg	par parolle	po~ pauure	po~ pouuoir	S30	
+P26	L10	19	f67r_L10_s2.jpg,f67r_L10_s3.jpg	ouuerte	pieca	occupe	S31	
+P27	L11	10,11	f67r_L11_s1.jpg,f67r_L11_s2.jpg	fere estat	puissiez sasseurer	puissiez vo~ asseurer	S32	
+P28	L12	10	f67r_L12_s1.jpg,f67r_L12_s2.jpg	dauoir	sauez	dauoir	S37	
+P29	L12	12,13	f67r_L12_s1.jpg,f67r_L12_s2.jpg	ne sta	en ceste	en este mesme	S38	
+P30	L12	18,19	f67r_L12_s2.jpg,f67r_L12_s3.jpg	poinct este	pour estre	point este	S39	
+P31	L12	21	f67r_L12_s2.jpg,f67r_L12_s3.jpg	retenue	celebre	estrange	S40	
+P32	L13	10	f67r_L13_s1.jpg,f67r_L13_s2.jpg	promien	prouient	prouien~	S41	
+P33	L13	19	f67r_L13_s2.jpg,f67r_L13_s3.jpg	faicts	faicts	ses faictz	S44	
+P34	L13	21	f67r_L13_s3.jpg	propos	imposte	Imposteur	S45	
+P35	L14	1,2,3	f67r_L14_s1.jpg	co~ ne partie	ce porteur	ce porteur	S46	
+P36	L14	8	f67r_L14_s1.jpg,f67r_L14_s2.jpg	estats	effects	effectz	S47	
+P37	L14	10,11,12	f67r_L14_s1.jpg,f67r_L14_s2.jpg,f67r_L14_s3.jpg	ses mauuaises volontes	sa mauuaise volonte	ses maimaisons volontes	S48	
+P38	L14	15	f67r_L14_s2.jpg,f67r_L14_s3.jpg	pensoys	pensoys	pensoie	S49	
+P39	L14	21	f67r_L14_s3.jpg	dauoir	Dauant	Dauoir	S50	
+P40	L15	1	f67r_L15_s1.jpg	aultant	autant	autant	S51	
+P41	L15	3	f67r_L15_s1.jpg	moiens	moien	moins	S52	
+P42	L15	12,13	f67r_L15_s1.jpg,f67r_L15_s2.jpg	voye rendre	veoir reussir	veoyr reussir	S53	
+P43	L15	16,17,18,19,20	f67r_L15_s2.jpg,f67r_L15_s3.jpg	parolle sans son calumnier Regnolles	intentions pardessus ses calumnies Lesquelles	intentions par dessus ses calamitez desquelles	S54	
+P44	L16	17	f67r_L16_s2.jpg,f67r_L16_s3.jpg	etre	aussy vtile	et lautre vtile	S56	
+P45	L16	20	f67r_L16_s3.jpg	laue	laultre	taire	S57	
+P46	L17	9	f67r_L17_s1.jpg,f67r_L17_s2.jpg	partie	party	pate	S60	
+P47	L17	15	f67r_L17_s2.jpg,f67r_L17_s3.jpg	damitie	deuures	de preuue	S61	
+P48	L18	1	f67r_L18_s1.jpg	consoller	consoler	consoler	S62	
+P49	L18	13,14	f67r_L18_s2.jpg,f67r_L18_s3.jpg	ezle sceu	naissent que du despit	naissent dailleurs que	S64	
+P50	L18	20	f67r_L18_s3.jpg	amis	amys	actes	S65	
+P51	L19	1	f67r_L19_s1.jpg	ayans	ayans	ayant	S66	
+P52	L19	4	f67r_L19_s1.jpg,f67r_L19_s2.jpg	blessee	foible	noble	S67	
+P53	L19	12	f67r_L19_s2.jpg,f67r_L19_s3.jpg	quile	estrange dentendre quilz produisent	estrange dentendre quilz produisent	S68	
+P54	L19	15,16,17	f67r_L19_s2.jpg,f67r_L19_s3.jpg	tels fruicts Ouec	telz fruictz Oue	telz fruictz Oue	S69	
+P55	L20	7,8,9	f67r_L20_s1.jpg,f67r_L20_s2.jpg	v~ite descouuria eluit	verite descouurira celles	vertu	S72	
+P56	L20	11,12,13	f67r_L20_s1.jpg,f67r_L20_s2.jpg,f67r_L20_s3.jpg	calumnies quilz nos	calumnies quilz ne scauroient diuertir que le Roy	sobriete et de calamitez quelle nay scauroient demourer ny estre regne	S73	
+P57	L20	15,16,17	f67r_L20_s2.jpg,f67r_L20_s3.jpg	dementir ezle Ezr~	calumnies quilz ne scauroient diuertir que le Roy	sobriete et de calamitez quelle nay scauroient demourer ny estre regne	S73	
+P58	L21	8,9,10	f67r_L21_s1.jpg,f67r_L21_s2.jpg,f67r_L21_s3.jpg	ceste complaisance destinee	leurs complainctes ordinaires	vostre conseil et~ conseillers	S74	
+P59	L21	15	f67r_L21_s2.jpg,f67r_L21_s3.jpg	p~mis	p~mis	permis	S75	
+P60	L22	1,2,3,4,5	f67r_L22_s1.jpg	ce qui dy referes Ie	ce qui Jay resceu Je	ne quil luy resceut de	S76	
+P61	L22	16,17	f67r_L22_s2.jpg,f67r_L22_s3.jpg	peu ont	peu ont	combat pris ou	S78	
+P62	L22	19,20	f67r_L22_s2.jpg,f67r_L22_s3.jpg	sera monitia	sont moins	fist mourir	S79	
+P63	L22	22	f67r_L22_s3.jpg	sbuez	seruez	sebuez	S80	
+P64	L23	1,2,3	f67r_L23_s1.jpg	en parolles ouuertes	en pareilles occasions	ez pareilles occasions	S81	
+P65	L23	13	f67r_L23_s2.jpg,f67r_L23_s3.jpg	arrestee	courte	courte	S83	
+P66	L23	17,18	f67r_L23_s2.jpg,f67r_L23_s3.jpg	desplus rongneu	desfiance recognue	desloyaulte redoubte	S84	
+P67	L24	6	f67r_L24_s1.jpg,f67r_L24_s2.jpg	auoz	non	amoy	S85	
+P68	L24	8	f67r_L24_s1.jpg,f67r_L24_s2.jpg	ses	ses discours	ce discours	S86	
+P69	L24	13	f67r_L24_s1.jpg,f67r_L24_s2.jpg,f67r_L24_s3.jpg	effaitz	des effects	vray effectz	S87	
+P70	L24	15	f67r_L24_s2.jpg,f67r_L24_s3.jpg	aussi	auec	auront	S88	
+P71	L24	17,18	f67r_L24_s2.jpg,f67r_L24_s3.jpg	considerant celle	conseruant et cela	conseruation eslu	S89	
+P72	L24	20	f67r_L24_s3.jpg	auoissent	accroissent	auoir assistan~	S90	
+P73	L25	4	f67r_L25_s1.jpg	renuoy	de renom	le regnay	S92	
+P74	L25	8,9	f67r_L25_s1.jpg,f67r_L25_s2.jpg	ssuils voque	seruiteurs viennent	subiectz le danger	S93	
+P75	L25	21	f67r_L25_s3.jpg	desirent	disent	desirent	S97	
+P76	L26	2,3,4	f67r_L26_s1.jpg	vo^s nauiez faict	vo~ naurez faict	vo~ nauez pouuoir	S98	
+P77	L26	9	f67r_L26_s1.jpg,f67r_L26_s2.jpg	entiere	entiere ou	totalle ou	S99	
+P78	L26	15	f67r_L26_s2.jpg,f67r_L26_s3.jpg	seba	sera cause	sera cause	S100	
+P79	L27	4	f67r_L27_s1.jpg	immobl	comme le	semblable	S102	
+P80	L27	19	f67r_L27_s2.jpg,f67r_L27_s3.jpg	vo^s	quant vo~	quand vo~	S104	
+P81	L27	21	f67r_L27_s2.jpg,f67r_L27_s3.jpg	voulebes	voudrez	vouldrez	S105	
+P82	L28	4	f67r_L28_s1.jpg	peult	peult	veult	S106	
+P83	L29	1	f67r_L29_s1.jpg	auiourdhuy	aucunement	au royaulme	S111	
+P84	L29	13	f67r_L29_s1.jpg,f67r_L29_s2.jpg,f67r_L29_s3.jpg	face	face	faict	S113	
+P85	L29	19,20	f67r_L29_s2.jpg,f67r_L29_s3.jpg	me pendant	vre~ prudence	vne prudence	S114	
+P86	L30	1,2,3	f67r_L30_s1.jpg	fourra regibes tou~	scaura digerer tous ses discours	comme dicelluy tous ses discours	S115	
+P87	L30	5	f67r_L30_s1.jpg,f67r_L30_s2.jpg	diferens	scaura digerer tous ses discours	comme dicelluy tous ses discours	S115	
+P88	L30	11	f67r_L30_s1.jpg,f67r_L30_s2.jpg,f67r_L30_s3.jpg	lextresme	lextreme	lhonneste	S116	
+P89	L30	15	f67r_L30_s2.jpg,f67r_L30_s3.jpg	vra~	vre~	vraye	S117	
+P90	L30	18,19	f67r_L30_s2.jpg,f67r_L30_s3.jpg	anan lingerinas	auant Jugement	tenant augurinas	S118	
+P91	L31	1,2,3	f67r_L31_s1.jpg	y moy ame	en may ainsi que lamour de vre~ seruice Les affaires par vill~ ne saduancent pas Je le souhaite Mais auec la calumnie	Et moy auec que ceux de vos subiectz ces assistez par vertu ne scauroient dau~ de le souhaiter Mais veu la calamite	S119	
+P92	L31	5	f67r_L31_s1.jpg	mande	en may ainsi que lamour de vre~ seruice Les affaires par vill~ ne saduancent pas Je le souhaite Mais auec la calumnie	Et moy auec que ceux de vos subiectz ces assistez par vertu ne scauroient dau~ de le souhaiter Mais veu la calamite	S119	
+P93	L31	7,8,9,10,11	f67r_L31_s1.jpg,f67r_L31_s2.jpg	vos sibnict 2ii Lit affire	en may ainsi que lamour de vre~ seruice Les affaires par vill~ ne saduancent pas Je le souhaite Mais auec la calumnie	Et moy auec que ceux de vos subiectz ces assistez par vertu ne scauroient dau~ de le souhaiter Mais veu la calamite	S119	
+P94	L31	13,14,15,16,17,18	f67r_L31_s1.jpg,f67r_L31_s2.jpg,f67r_L31_s3.jpg	vill un sadunautm dud de la	en may ainsi que lamour de vre~ seruice Les affaires par vill~ ne saduancent pas Je le souhaite Mais auec la calumnie	Et moy auec que ceux de vos subiectz ces assistez par vertu ne scauroient dau~ de le souhaiter Mais veu la calamite	S119	
+P95	L31	21,22,23	f67r_L31_s2.jpg,f67r_L31_s3.jpg	est la ratmuit	en may ainsi que lamour de vre~ seruice Les affaires par vill~ ne saduancent pas Je le souhaite Mais auec la calumnie	Et moy auec que ceux de vos subiectz ces assistez par vertu ne scauroient dau~ de le souhaiter Mais veu la calamite	S119	
+P96	L32	1	f67r_L32_s1.jpg	du	en	Du	S120	
+P97	L32	4	f67r_L32_s1.jpg	p~mier	p~mettra	p~uenir	S121	
+P98	L32	6,7	f67r_L32_s1.jpg,f67r_L32_s2.jpg	q~ ne	que ce	? le	S122	
