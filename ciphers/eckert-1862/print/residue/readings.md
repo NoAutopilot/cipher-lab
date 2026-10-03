@@ -6,23 +6,23 @@ image; code words in [brackets] read by key.md's dated rule, grade per pages.tsv
 The Huntington Library, San Marino, California. Telegrams in these pages were not found in OR ser. I vols. 7, 9-12 by
 print/or_match.py (GAPS113); that is a search result, not a novelty verdict (rule 10).
 
-Pages 57, entries 122; key.md tokens C 120, I 41, M 97; oov 856.
+Pages 57, entries 122; key.md tokens C 144, I 31, M 83; oov 856.
 
-Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 vs real_p05 -0.831, null_p99 -2.138 -> FAIL (N 35575); shuffled_key_full score -1.031 vs real_p05 -0.829, null_p99 -2.139 -> FAIL (N 33979); real_windows score -1.126 vs real_p05 -0.839, null_p99 -2.118 -> FAIL (N 6526); shuffled_key_windows score -1.098 vs real_p05 -0.835, null_p99 -2.123 -> FAIL (N 5884)
+Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 vs real_p05 -0.831, null_p99 -2.141 -> FAIL (N 35573); shuffled_key_full score -1.03 vs real_p05 -0.831, null_p99 -2.139 -> FAIL (N 33930); real_windows score -1.128 vs real_p05 -0.844, null_p99 -2.127 -> FAIL (N 6524); shuffled_key_windows score -1.095 vs real_p05 -0.84, null_p99 -2.115 -> FAIL (N 5835)
 
 ## 4960 Page_
 
 *01 Feb*  Washington Feby 1 1862 Genl Lander Instructions have been given to issue new [arms] to the Eighty fourth and hundred & tenth Regt Pa Volunteers. By what route had these [arms] better be forwarded about two hundred carbines will also be sent to you S Williams
 
-*02 Feb*  Feby 2 ' 62 Genl Lander [Ohio] [regiment(s)]'s & battery ordered temporarily to [Cumberland (Md.)] In attacking [Romney] you must use your discretion & be certain that the [the enemy] is not reinforced from [Winchester] Do not [advance] beyond [Romney] [Rosecrans] needs time to prepare to cooperate & you would be in danger east of [Romney] if he were not in position to distract [the enemy] If you gain [Romney] look out for return of Jackson whom I know to be a man of vigor & nerve as well as a good soldier signed [McClellan] Sunday Barbara
+*02 Feb*  Feby 2 ' 62 Genl Lander [Ohio] [regiment(s)]'s & battery ordered temporarily to [New Creek] In attacking [Romney] you must use your discretion & be certain that the [the enemy] is not reinforced from [Winchester] Do not [advance] beyond [Romney] [Banks] needs time to prepare to cooperate & you would be in danger east of [Romney] if he were not in position to distract [the enemy] If you gain [Romney] look out for return of Jackson whom I know to be a man of vigor & nerve as well as a good soldier signed [McClellan] Sunday Barbara
 
 *02 Feb*  Feb 2 ' 62 Genl Lander You are authorized to retain Captains Patterson Russell & Sahl with their companies of [cavalry] under your command until further orders By command of [McClellan] S Williams etc
 
 ## 4961 Page_
 
-*02 Feb*  Feb 2 ' 62 [Banks] The General in Chief directs that the three [Ohio] [regiment(s)] & one battery now at [Frederick] proceed forthwith to [Cumberland (Md.)] there to be temporarily subject to the orders of Brig Genl Lander A V Colburn
+*02 Feb*  Feb 2 ' 62 [Rosecrans] The General in Chief directs that the three [Ohio] [regiment(s)] & one battery now at [Grafton] proceed forthwith to [New Creek] there to be temporarily subject to the orders of Brig Genl Lander A V Colburn
 
-*02 Feb*  Feb 2 ' 62 Brig Genl F W Lander The Comdg General having learned that you yesterday sent a telegram direct to [Frederick] ordering three [regiment(s)] to [Cumberland (Md.)] instructs me to call upon you for an explanation of this unusual procedure & to say that if you needed troops from [Banks]'s Command you should have called upon that officer by telegraph for the required assistance By command of [McClellan] signed S Williams Asst Adjt Genl cool
+*02 Feb*  Feb 2 ' 62 Brig Genl F W Lander The Comdg General having learned that you yesterday sent a telegram direct to [Grafton] ordering three [regiment(s)] to [New Creek] instructs me to call upon you for an explanation of this unusual procedure & to say that if you needed troops from [Rosecrans]'s Command you should have called upon that officer by telegraph for the required assistance By command of [McClellan] signed S Williams Asst Adjt Genl cool
 
 *03 Feb*  Feb 3 ' 62 Genl Lander What number of [arms] do you require to equip your troops efficiently Please report by what route mail matter will reach you most expeditiously S William Asst etc
 
@@ -34,7 +34,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 ## 4969 Page_
 
-*07 Feb*  Sent Feby 7th 1862 And For Genl F M Lander [McClellan] desires that as soon as you can dispense with their services you send back to [Frederick] the [Ohio] [regiment(s)] and [batteries] recently drawn to your support from that place These troops are required by [Banks] for operations in M [Virginia] S Williams A A G Bully Big Victories
+*07 Feb*  Sent Feby 7th 1862 And For Genl F M Lander [McClellan] desires that as soon as you can dispense with their services you send back to [Grafton] the [Ohio] [regiment(s)] and [batteries] recently drawn to your support from that place These troops are required by [Rosecrans] for operations in M [Virginia] S Williams A A G Bully Big Victories
 
 *07 Feb*  Sent Feby 7th 1862 . For [Buell] the Governors of [Ohio] <deletion>Lark</deletion> & [Indiana] are ordered to send all their light [batteries] to you at once please let [McClellan] know if you require more A V Colburn A A G Knight here
 
@@ -78,7 +78,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *14 Feb*  Feb 14 ' 62 2 PM [Halleck] Please inform me as soon as possible the number of troops sent up the [Cumberland River] & [Tennessee River] with [Grant] what [reinforcements] have since been sent from your Dept what from [Buell]'s Command in [Kentucky] and from the states in his Dept North of the [Ohio] [McClellan]  {time Sarah: 2 PM}
 
-*14 Feb*  Feb 14 ' 62 For [Lander] [Banks] needs the three [regiment(s)] and battery recently sent to your support from [Frederick] . The Commanding General therefore directs that those troops return at once to [Frederick] & that you notify [Banks] that they have returned S Williams Asst Adjt
+*14 Feb*  Feb 14 ' 62 For [Lander] [Rosecrans] needs the three [regiment(s)] and battery recently sent to your support from [Grafton] . The Commanding General therefore directs that those troops return at once to [Grafton] & that you notify [Rosecrans] that they have returned S Williams Asst Adjt
 
 *14 Feb*  Feb 14 ' 62. 11 PM [Buell] Telegh me in cipher & much detail the position of your troops also your intentions Where is [Thomas] & where Carter where is your [advance] on the [Bowling Green] line What force do you wish to take to the line of the Cumberland Write fully signed [McClellan]  {time Francis: 11 PM}
 
@@ -88,7 +88,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *14 Feb*  Feb 14 ' 62 11 PM [Halleck] Telegh me in cipher & much detail your position numbers & intentions in regard to [Tennessee] What have you from [Columbus] Watch it closely write fully signed [McClellan]  {time Francis: 11 PM}
 
-*15 Feb*  Feb 15 62 For [Banks] Captain Updegraff has gone to new mexico the troops from Humbolt will probably go back at once he had a skirmish today killed thirteen took seventeen officers sixty five prisoners in all signed A V Colburn A A G  {time Sarah: 2 PM}
+*15 Feb*  Feb 15 62 For [Rosecrans] Captain Updegraff has gone to new mexico the troops from Humbolt will probably go back at once he had a skirmish today killed thirteen took seventeen officers sixty five prisoners in all signed A V Colburn A A G  {time Sarah: 2 PM}
 
 ## 4984 Page_
 
@@ -96,7 +96,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *15 Feb*  Feb 15 " 62 [Halleck] the President desires your opinion whether the building of the railroad from [division] to Roland would not effectually keep luna quiet signed John G Nicolay private secretary snowing hard
 
-*02 Mar*  March 2d 1862 For [Banks] I have just recd a Telegram from Surgeon Suckley saying that [Lander] was seriously ill does not expect him to live . I want you to keep a close watch of affairs at New Creek signed [McClellan] hope wait lose [Lander]
+*02 Mar*  March 2d 1862 For [Rosecrans] I have just recd a Telegram from Surgeon Suckley saying that [Lander] was seriously ill does not expect him to live . I want you to keep a close watch of affairs at New Creek signed [McClellan] hope wait lose [Lander]
 
 ## 4985 Page_
 
@@ -122,7 +122,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 ## 4997 Page_
 
-*18 Feb*  For Gen Wool, [Buell], [Halleck] & [Banks] - Feb 18 62 For I am directed by the Secy of War to instruct you that no arrangements either by equivalents or otherwise will be made for the exchange of the Rebel Generals Flora Gen Earnest & Tillman nor for that of prisoners who had served in our regular [army] without special orders from these Head Quarters signed [McClellan] Fanny warm pleasant
+*18 Feb*  For Gen Wool, [Buell], [Halleck] & [Rosecrans] - Feb 18 62 For I am directed by the Secy of War to instruct you that no arrangements either by equivalents or otherwise will be made for the exchange of the Rebel Generals Flora Gen Earnest & Tillman nor for that of prisoners who had served in our regular [army] without special orders from these Head Quarters signed [McClellan] Fanny warm pleasant
 
 *18 Feb*  Feb 18 ' 62 [Halleck] [McClellan] directs that you send Genl Tillman to Fort Warren with the other Generals if you have him in charge signed A V Colburn A A General Fanny finis
 
@@ -212,7 +212,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *24 Feb*  Genl Sedgwick - Poolesville - Feb 24 ' 62 The Major Genl comdg directs that you tomorrow morning move with two brigades of your division & all your disposable artillery by way of Adamstown to Harpers Ferry and report to Eddy please communicate with him on receipt of this & inform him when to have Rail road transportation ready RB Marcy Chief of Staff
 
-*25 Feb*  Feb 25th 62 [Lander] [Rosecrans] has been delayed in crossing the River at Harpers Ferry & will not probably be on the [Virginia] side before tomorrow He will take position near Harpers Ferry & there await further orders from [McClellan] [Rosecrans] reports that Genl Williams had sent a reconnoitering party below Bath towards [Winchester] & no [the enemy] was discovered The Genl Comdg wishes you to remain at Paw Paw until further orders but to hold your command ready to move at short notice signed R B Marcy Chief of Staff oh how cold
+*25 Feb*  Feb 25th 62 [Lander] [Banks] has been delayed in crossing the River at Harpers Ferry & will not probably be on the [Virginia] side before tomorrow He will take position near Harpers Ferry & there await further orders from [McClellan] [Banks] reports that Genl Williams had sent a reconnoitering party below Bath towards [Winchester] & no [the enemy] was discovered The Genl Comdg wishes you to remain at Paw Paw until further orders but to hold your command ready to move at short notice signed R B Marcy Chief of Staff oh how cold
 
 ## 5022 Page_
 
@@ -240,7 +240,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *27 Feb*  Feb 27th 62 Gen Mcclellan Harpers Ferry I returned last night I consider the landings where proposed too hazardous the ground is not known It cannot be well known nor the arrangements made to repel assault by the enemy who is warned and prepared to meet it even if the landing were not objectionable I should consider that part of the project which involves the reembarking and leaving the field in possession of enemy to involve the probability of terrible disaster the way & the only way to take those works is to occupy the ground behind them signed J. G. Barnard Chief Engineer Shall I direct Genl Hooker not to move until further instructions Genl Barnard recommends this finis etc R. B. M
 
-*27 Feb*  Sent Feby 27th 1862 For [Banks] The Pattersons Creek Bridge has been fired by Rebel<deletion>s</deletion> Guerrillas please take steps to guard the Bridges and to send if possible two companys of [cavalry] to New Creek Bridge at once nothing I believe but small parties of Rebels along the line of the road signed [McClellan] this is bad weather
+*27 Feb*  Sent Feby 27th 1862 For [Rosecrans] The Pattersons Creek Bridge has been fired by Rebel<deletion>s</deletion> Guerrillas please take steps to guard the Bridges and to send if possible two companys of [cavalry] to New Creek Bridge at once nothing I believe but small parties of Rebels along the line of the road signed [McClellan] this is bad weather
 
 ## 5029 Page_
 
@@ -250,7 +250,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *27 Feb*  method is adopted it is too important to run any risks of failure and would be best executed by yourself in person . Seventh If it is not judged best to make an imposing movement beyond the Occoquan it is better to let the batteries alone than to undertake to silence them by landing and disembarkation signed <deletion>D Barner</deletion> <insertion>J. G.</insertion> Barnard <deletion>glory</deletion> <insertion>amen</insertion> T. T. Eckert
 
-*27 Feb*  5 P. M Washington Feby 27 / 62 For [Banks] The Genl Commanding directs that you suspend the movement of your division until further
+*27 Feb*  5 P. M Washington Feby 27 / 62 For [Rosecrans] The Genl Commanding directs that you suspend the movement of your division until further
 
 *27 Feb*  For Genl Hooker Camp Baker 5 PM Feb. 27 / 62 The General Commanding directs that you suspend the movement of your division until further orders RB Marcy Chief of Staff
 
@@ -272,7 +272,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 ## 5035 Page_
 
-*03 Mar*  March 3 ' 62 For [Banks] The limits of your Dept have been extended to take in the valleys of the South Branch of the [Potomac] the Cow [St Louis] Branch of Nutmeg the valley of the Nutmeg to Bulerny Falls the valley of the Roanoke west of the Blue Ridge and the New River valley . The order will be sent as soon as ready from the adjutant Generals office . The General in chief directs that you at once cause an inspection of the Rail Road guards and the troops in this new portion of your department to be made . [Lander]'s available force will go to Bunkers Hill and be joined by General Williams Brigade [Rosecrans] has two brigades at Charlestown and Sedgwick two at Harpers Ferry . This occupation will prevent any large force of the [the enemy] moving on [Romney] or vicinity Please examine the case at once and state what reinforcements to your command if any are necessary State whether you will require any more [cavalry] A. V. Colburn A. A. G.
+*03 Mar*  March 3 ' 62 For [Rosecrans] The limits of your Dept have been extended to take in the valleys of the South Branch of the [Potomac] the Cow [St Louis] Branch of Nutmeg the valley of the Nutmeg to Bulerny Falls the valley of the Roanoke west of the Blue Ridge and the New River valley . The order will be sent as soon as ready from the adjutant Generals office . The General in chief directs that you at once cause an inspection of the Rail Road guards and the troops in this new portion of your department to be made . [Lander]'s available force will go to Bunkers Hill and be joined by General Williams Brigade [Banks] has two brigades at Charlestown and Sedgwick two at Harpers Ferry . This occupation will prevent any large force of the [the enemy] moving on [Romney] or vicinity Please examine the case at once and state what reinforcements to your command if any are necessary State whether you will require any more [cavalry] A. V. Colburn A. A. G.
 
 ## 5036 Page_
 
@@ -318,7 +318,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 ## 5048 Page_
 
-*09 Mar*  Mch 13 62 For [McClellan] I have ordered [Rosecrans] to send Sedgwicks division to Harpers Ferry to await there further orders for a prompt movement also to send another division to Centreville by the route indicated by you you say his other divisions will move as soon after as possible I take it of course to Centreville by the same route will it not be necessary to leave some of the last detachment at [Winchester] or other points to protect the orchard the Harpers Ferry and [Winchester] Rail road has not been much injured with the exception of one bridge cars and locomotives are now on the [Winchester] side I said nothing to [Rosecrans] about the disposition of the remainder of his command as I await your instructions regarding the force to be left behind signed Brig Gen R B Marcy
+*09 Mar*  Mch 13 62 For [McClellan] I have ordered [Banks] to send Sedgwicks division to Harpers Ferry to await there further orders for a prompt movement also to send another division to Centreville by the route indicated by you you say his other divisions will move as soon after as possible I take it of course to Centreville by the same route will it not be necessary to leave some of the last detachment at [Winchester] or other points to protect the orchard the Harpers Ferry and [Winchester] Rail road has not been much injured with the exception of one bridge cars and locomotives are now on the [Winchester] side I said nothing to [Banks] about the disposition of the remainder of his command as I await your instructions regarding the force to be left behind signed Brig Gen R B Marcy
 
 ## 5051 Page_
 

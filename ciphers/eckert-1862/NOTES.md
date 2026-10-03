@@ -592,10 +592,67 @@ entries; no new code).
 - N1 shape: all three telegrams are printed in OR ser. I vol. 51 pt 1; no novelty claimed (rule 10).
 - Requests: hdl.huntington.org 3 (page texts 4965-4967); archive.org 1 (`_djvu.txt`). No vision, no subagents.
 
+## GAPS167-eckert-1862 (3 Oct 2026, account-4)
+Step run: GAPS161's Verdict -- regenerate `print/residue/readings.md` with the corrected Feb key (Anthon = Rosecrans,
+Arno = Banks, Vesper = New Creek, Virtue = Grafton, Twinkle = Romney).
+- The 57 residue page texts re-fetched once (hdl.huntington.org 57 requests, 1.6 s apart, no retries needed), kept in
+  the scratchpad, not committed (volunteer transcription, their credit); `print/residue/pages_manifest.tsv` now records
+  pointer, URL, text length and SHA-256 of each page's `text` field (fetched 3 Oct 2026) so a later worker can confirm a
+  re-fetch is the same text. Page set validated before the regeneration: the pre-GAPS161 folder (commit 5c93897a) with
+  these 57 texts gives `residue_decode.py --check` exit 0, i.e. the committed readings reproduced exactly.
+- `print/residue_decode.py --write` then `--check` exit 0; `decode.py --check` exit 0 (reading.md untouched).
+  Grades (key.md tokens, rule 4): C 144, I 31, M 83 (was C 120, I 41, M 97 after GAPS153); H 0, S 0; oov 856 (was 856).
+  M dropped on 8 pages (4960, 4961, 4969, 4982, 4983, 5021, 5035, 5048). en judge FAILs real and shuffled-key alike
+  (full -1.036 vs -1.030; windows -1.128 vs -1.095; real_p05 about -0.83), judge cannot decide; 0 pages reading ready.
+- Candidates (`print/residue_candidates.py PAGES_DIR --write|--check`, exit 0; `print/residue/candidates.tsv` carries the
+  readings): entries with >= 1 key.md token and no M token. 32 entries on 25 pages (24 Feb, 7 Mar, 1 Apr); 25 of them
+  with no I token either. 19 sit on pages print/residue_print.tsv already matches to print (OR ser. I vols. 5, 8, 51
+  pt 1, 53; Nicolay-Hay) -- N1 shape where the entry itself is the printed one (a page match is not proof for every
+  entry on it); 13 on pages with no print match yet. A sorting list for a later verifier, not a reading claim: the text
+  is the volunteer transcription, not reconciled against the image (rule 2), and oov tokens (names, misspellings or
+  unread code) remain in every entry. No novelty is claimed (rule 10).
+
+| pointer.entry | date | C | I | oov | page in print |
+|---|---|---|---|---|---|
+| 4960.1 | 01 Feb | 0 | 2 | 5 | OR ser. I vol. 51 pt 1 |
+| 4961.3 | 03 Feb | 0 | 1 | 5 | OR ser. I vol. 51 pt 1 |
+| 4962.1 | 05 Feb | 1 | 0 | 4 | OR ser. I vol. 5 |
+| 4969.1 | 07 Feb | 6 | 1 | 3 | OR ser. I vol. 51 pt 1 |
+| 4969.2 | 07 Feb | 5 | 0 | 6 | OR ser. I vol. 51 pt 1 |
+| 4973.1 | 08 Feb | 1 | 0 | 6 | OR ser. I vol. 51 pt 1; OR ser. I vol. 8 |
+| 4976.1 | 10 Feb | 7 | 0 | 7 | OR ser. I vol. 8 |
+| 4976.2 | 10 Feb | 1 | 0 | 3 | OR ser. I vol. 8 |
+| 4978.1 | 11 Feb | 1 | 1 | 6 | -- |
+| 4978.2 | 12 Feb | 1 | 0 | 9 | -- |
+| 4983.2 | 14 Feb | 4 | 1 | 2 | OR ser. I vol. 51 pt 1 |
+| 4992.2 | 16 Feb | 1 | 0 | 1 | -- |
+| 4992.3 | 16 Feb | 3 | 0 | 0 | -- |
+| 4995.1 | 07 Feb | 3 | 5 | 1 | -- |
+| 4995.2 | 17 Feb | 2 | 0 | 3 | -- |
+| 4997.2 | 18 Feb | 2 | 0 | 6 | -- |
+| 4998.2 | 18 Feb | 1 | 0 | 7 | -- |
+| 5005.2 | 20 Feb | 3 | 0 | 3 | -- |
+| 5008.1 | 21 Feb | 1 | 0 | 2 | -- |
+| 5016.1 | 23 Feb | 0 | 1 | 1 | OR ser. I vol. 51 pt 1 |
+| 5016.3 | 23 Feb | 1 | 0 | 6 | OR ser. I vol. 51 pt 1 |
+| 5017.1 | 23 Feb | 1 | 0 | 7 | OR ser. I vol. 51 pt 1 |
+| 5029.1 | 27 Feb | 1 | 0 | 13 | OR ser. I vol. 51 pt 1 |
+| 5031.3 | 28 Feb | 1 | 0 | 3 | OR ser. I vol. 5; OR ser. I vol. 51 pt 1 |
+| 5036.2 | 03 Mar | 1 | 0 | 5 | -- |
+| 5041.2 | 07 Mar | 1 | 0 | 4 | OR ser. I vol. 51 pt 1; OR ser. I vol. 8 |
+| 5044.1 | 09 Mar | 1 | 0 | 17 | OR ser. I vol. 5 |
+| 5051.1 | 16 Mar | 1 | 0 | 7 | -- |
+| 5051.2 | 16 Mar | 1 | 0 | 6 | -- |
+| 5054.3 | 22 Mar | 1 | 0 | 9 | Lincoln, Nicolay-Hay letters/works (IA be-api fts, no page locator); OR ser. I vol. 51 pt 1 |
+| 5056.2 | 27 Mar | 1 | 0 | 9 | OR ser. I vol. 53; OR ser. I vol. 53 (supplement) |
+| 5059.1 | 29 Apr | 1 | 0 | 5 | Lincoln, Nicolay-Hay letters/works (IA be-api fts) |
+
+- Requests: hdl.huntington.org 57. No vision, no subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
 - residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C); key.md dated 3 Oct 2026 (GAPS127); the 57 unmatched pages decoded with the dated key 3 Oct 2026 (GAPS132: 122 entries, C 99, I 31, M 124; 53 of 57 pages are Feb-Mar, not spring-summer; en judge FAILs real and shuffled-key alike, -1.036 vs -1.033, judge cannot decide; 0 pages reading ready); residue print grep 3 Oct 2026 (GAPS140): OR vol. 8 matches 3 pages (4976 control, 4973, 5041), no new code word; Lincoln texts identified for 7 entries in the Nicolay-Hay editions and OR vol. 53 (Basler vol. 5 not full-text searchable, non-test); OR vols. 5 and 53 grepped 3 Oct 2026 (GAPS142): 3 new vol. 5 pages (5031, 5035, 5044) plus the two controls, aligned, no key.md change (held-out 0/0 scored, non-test); vols. 9, 10 pt 1-2, 11 pt 1 aligned and all aligned volumes pooled 3 Oct 2026 (GAPS147: held-out 63/77 vs shuffled control mean 0.17 hits, p95 1; 4 code words added at C; residue readings regenerated without page 4976, fetch failed); page 4976 re-fetched and OR vol. 51 pt 1 grepped and pooled 3 Oct 2026 (GAPS153: 28 residue pages matched, pooled held-out 76/88 vs control mean 0.26 hits, p95 1; damon and yankee to C; residue 57 pages, C 120, I 41, M 97); next: the residue pages still unmatched by any OR volume (57 less the 28 here and the vols. 5, 8, 53 pages), read against the received ledgers mssEC 01-03 (gap 2), ~$2
-- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M); GAPS140 print witnesses: Alden = Halleck to 13 Jul against Alden = Banks 17-20 Jul (logged, not merged), Legend/Lamb/Luna range extensions proposed, key.md unchanged pending a discriminating check; GAPS142 proposals Nutmeg = James River, damon = batteries, Ellen = Fredericksburg (one telegram each, not added); GAPS147 pooled run: Japan = Manassas, Persian = army, tarquin = movements, Pastor = battle (dated split) added at C, Nutmeg/Ellen/Lamb/damon still one telegram, Luna = Shenandoah (25 May, aligned) vs Luna = Missouri (1 May, by eye) logged as a conflict, Alden = Halleck 13 Jul (by eye) now inside the aligned Banks range 25 May-20 Jul, logged; GAPS153 (OR 51 pt1): damon = batteries added, yankee = transportation firmed to C; Anthon = Rosecrans, Virtue = Grafton, Vesper = New Creek (print, 1-14 Feb) logged against the Feb inferences Banks/Frederick/Cumberland; settled 3 Oct 2026 (GAPS161): pages [10]-[12] against OR 51 pt1, no twin (page [11] is a parallel plain telegram), Anthon = Rosecrans, Arno = Banks, Vesper = New Creek, Virtue = Grafton, Twinkle = Romney all C for Feb -- next: regenerate print/residue/readings.md with the corrected key (re-fetch the 57 residue page texts, residue_decode.py --write then --check), ~$0.3; then read the received ledgers mssEC 01-03 for Luna, Nutmeg, Ellen, Lamb (sibling witnesses), ~$2; and fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
+- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M); GAPS140 print witnesses: Alden = Halleck to 13 Jul against Alden = Banks 17-20 Jul (logged, not merged), Legend/Lamb/Luna range extensions proposed, key.md unchanged pending a discriminating check; GAPS142 proposals Nutmeg = James River, damon = batteries, Ellen = Fredericksburg (one telegram each, not added); GAPS147 pooled run: Japan = Manassas, Persian = army, tarquin = movements, Pastor = battle (dated split) added at C, Nutmeg/Ellen/Lamb/damon still one telegram, Luna = Shenandoah (25 May, aligned) vs Luna = Missouri (1 May, by eye) logged as a conflict, Alden = Halleck 13 Jul (by eye) now inside the aligned Banks range 25 May-20 Jul, logged; GAPS153 (OR 51 pt1): damon = batteries added, yankee = transportation firmed to C; Anthon = Rosecrans, Virtue = Grafton, Vesper = New Creek (print, 1-14 Feb) logged against the Feb inferences Banks/Frederick/Cumberland; settled 3 Oct 2026 (GAPS161): pages [10]-[12] against OR 51 pt1, no twin (page [11] is a parallel plain telegram), Anthon = Rosecrans, Arno = Banks, Vesper = New Creek, Virtue = Grafton, Twinkle = Romney all C for Feb; residue readings regenerated with that key 3 Oct 2026 (GAPS167: C 144, I 31, M 83; 32 entries with no M token listed in print/residue/candidates.tsv, 13 on pages with no print match) -- next: read the received ledgers mssEC 01-03 for Luna, Nutmeg, Ellen, Lamb (sibling witnesses), ~$2; and fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
 ## Escalation (3 Oct 2026)
@@ -603,7 +660,7 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
 - [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vol. 8 grepped 3 Oct 2026 (GAPS140, 2 new pages); Lincoln texts found in Nicolay-Hay (GAPS140); vols. 5 and 53 grepped 3 Oct 2026 (GAPS142, 3 new vol. 5 pages); every matched volume aligned and pooled 3 Oct 2026 (GAPS147); vol. 51 pt 1 grepped, aligned and pooled 3 Oct 2026 (GAPS153, 28 pages)
-- [ ] key-rebuild: Feb Anthon/Arno/Vesper/Virtue settled by print 3 Oct 2026 (GAPS161, residue readings to regenerate); residue decoded 3 Oct 2026 (GAPS132, M 124 of 254 key tokens, mostly Feb rows read outside their few-day witness ranges); vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 aligned and pooled 3 Oct 2026 (GAPS147, 4 words added, held-out passes against its control)
+- [ ] key-rebuild: Feb Anthon/Arno/Vesper/Virtue settled by print 3 Oct 2026 (GAPS161; residue regenerated 3 Oct 2026, GAPS167, M 83); residue decoded 3 Oct 2026 (GAPS132, M 124 of 254 key tokens, mostly Feb rows read outside their few-day witness ranges); vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 aligned and pooled 3 Oct 2026 (GAPS147, 4 words added, held-out passes against its control)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: regenerate print/residue/readings.md with the GAPS161 key (Anthon, Arno, Vesper, Virtue Feb values corrected; 57 page re-fetches), ~$0.3; then the received ledgers mssEC 01-03 for the one-telegram words, ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: the received ledgers mssEC 01-03 for the one-telegram words (Luna, Nutmeg, Ellen, Lamb) and the residue pages no OR volume matches, ~$2 (page texts: re-fetch per print/residue/pages_manifest.tsv, 57 requests); the 13 no-print candidates in print/residue/candidates.tsv are ready for a verifier's print search, ~$1
