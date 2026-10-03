@@ -1,4 +1,5 @@
 open
+Veenendaal, *Briefwisseling van Anthonie Heinsius* Deel 15 (GS 227) pp.517, 531, 538 and Deel 16 (GS 240) p.60 read by this worker (GF4-BATCH15, Huygens retroboeken OCR, 3 Oct 2026), plus full-text search "onopgelost cijfer" (all 19 volumes, 3 hits), "oplossing" (Deel 15, 2; Deel 16, 2), "cijfer" (Deel 15, 11; Deel 16, 15), "gezondheid van de koningin" (Deel 15, 4): the cipher on letter 959's leaf is not printed and no decipherment of it is printed; the only solution named, an undated "uit het cijfer opgelost" piece on the queen's health, is listed under letter 936 (27 March 1714, p.517 n.1), so its match to the 3 April cipher remains the editor's "mogelijk".
 
 # Ph.J. van Borssele van der Hooghe to Anthonie Heinsius, unsolved cipher on the same leaf as letter 959, 3 April 1714
 
@@ -85,3 +86,27 @@ request).
 - Re-read Veenendaal's edition (already on disk) for another footnote cross-referencing this "oplossing" by letter number, no leaf needed. S.
 - Compare this target's cipher design against the key.tsv/decode.json already recovered for sibling Heinsius-circle folders (e.g. heinsius-hermitage-1704, heinsius-dopff-1702) for a design match. M.
 - Search Google Books/HathiTrust again for "van Borssele van der Hooghe" + "cijfer"/"chiffre" 1714, beyond the one WebSearch already run. S.
+
+## Web and blog check (GF4-BATCH15, account-4, 3 Oct 2026)
+Plain web searches: `"Borssele van der Hooghe" Heinsius 1714 cijfer OR cipher OR chiffre` (hits: NA 3.01.19 inventory pages and PDF; Leiden scholarly-publications items; **de Leeuw, "The Black Chamber in the Dutch Republic during the War of the Spanish Succession"**, pure.uva.nl -- opened, and the whole thesis it belongs to, K. de Leeuw, *Cryptology and statecraft in the Dutch Republic* (UvA 2000, pure.uva.nl/ws/files/3074957/12760_Thesis.pdf), fetched and grepped: "Borssele" occurs only as Adriaan's *Gedenkschriften* in citations; no mention of Philips Jacob, H.A. 1836, or any cipher letter of his; KZGW catalogues; Wikipedia); `"3.01.19" 1836 Heinsius cijferschrift` (NA inventory pages only; inv. 2315-2317 cipher subsection, already in Source); `"onopgelost cijferschrift" Heinsius` (NA inventory pages, unrelated genealogy sites); `"Sleutel van een cijferschrift, waarschijnlijk voor correspondentie met Engeland"` (NA inventory, UvA cryptography syllabi with no Heinsius item). Model-solve check: nothing naming this letter.
+Blog site searches: Cipherbrain `Heinsius cipher OR Geheimschrift OR "Hermitage" site:scienceblogs.de` -- 0 relevant; Cryptiana (blog and Tomokiyo's fc2 pages) + Cipher Mysteries `Heinsius Dutch cipher 1704 OR 1714 site:cryptiana.blogspot.com OR site:ciphermysteries.com OR site:cryptiana.web.fc2.com` -- 0 relevant. No hit to open, no comment thread to read. Result: no public decipherment of the 3 April 1714 cipher found. Requests: resources.huygens.knaw.nl 13 (shared with heinsius-hermitage-1704), pure.uva.nl 2 + dare.uva.nl 1, github.com 2 clones; all >=1.5 s apart.
+
+## Premise check (GF4-BATCH15, account-4, 3 Oct 2026)
+(a) Folder's own mentions -- found, not viewable: the edition's "oplossing van een gecijferde brief, voornamelijk over de gezondheid van de koningin" (p.531 n.959). This pass located where the edition files it: letter 936 (Borssele, 27 March 1714, p.517) n.1, "Kopieën van Van Borssele's brieven aan de griffier en aan de Staten-Generaal, alsmede een uit het cijfer opgelost ongedateerd stuk over de gezondheid van de koningin, aanwezig in H.A. 1836." It is undated and its ciphertext is not identified, so it may decipher 959's cipher or a 27 March one; only the leaf decides. H.A. 1836 is PHYSICAL, no scans (24 Sept check, unchanged).
+(b) Other solvers' working files -- not found: fresh depth-1 clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers grepped for borssele/hooghe/hermitage/sauniere/heinsius: only unrelated substrings (Dutch "Hoogheid", English "hermitage").
+(c) Physical neighbours -- found in print, three siblings in the same dossier H.A. 1836: letter 970 (6 April 1714, p.538 n.1) "Op hetzelfde blad is bijgeschreven een briefje in cijfer, dat op een apart blaadje is opgelost: de verwijdering tussen Oxford en Bolingbroke neemt toe..." -- a same-correspondent cipher with a period decipherment slip, i.e. a key source for this letter's system if the leaves are imaged; Deel 16 letter 104 (8 June 1714, p.60 n.1) "een in het cijfer gestelde, ongedateerde en onopgeloste brief" -- a second unsolved Borssele cipher; and the 936 solution above. None is printed in cipher or in clear beyond the editor's one-line gist.
+(d) Recipient/other side -- not found, not reached: Borssele's parallel letters to the griffier/States-General (copies in H.A. 1836; originals presumably NA 1.01.02 Staten-Generaal liassen Engeland) were not searched; de Leeuw's thesis (the published study of Heinsius's cipher office) does not discuss this correspondent.
+
+## While waiting (GF4-BATCH15, account-4, 3 Oct 2026)
+
+- Add letters 936 (27 Mar 1714), 970 (6 Apr 1714, cipher + decipherment slip) and Deel 16 no.104 (8 Jun 1714, unsolved cipher) to REQUEST.md beside 959, all in H.A. 1836, so one copy order brings the cipher, its candidate solution and a solved sibling together (text edit only, depends on nobody).
+- Sweep Deel 15-16 for every other Borssele letter footnoted "cijfer" (Deel 16 p.317 "het officiële cijfer voor de geheime correspondentie" not yet read) via the same retroboeken full-text route. S.
+
+Gate re-run (GF4-BATCH15, 3 Oct 2026): status `open` unchanged (no printed decipherment of this item; the possible one is unconfirmed and on an undigitised leaf).
+```
+$ python3 tools/intake_gate_check.py borssele-heinsius-1714
+borssele-heinsius-1714: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0 (was 1: no standard-edition citation within 6 lines)
+$ python3 tools/next_steps.py --wait-only | grep borssele-heinsius-1714
+(no line)
+```
