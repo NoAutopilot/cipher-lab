@@ -1,0 +1,14 @@
+# f.21r clear text on disk (AUDIT.md VERIFY-CEPPO-D2-2, checked against Gallica btv1b9060248g f22): every word >= 5 letters
+# "con le pratiche che tiene, maxime con Vgonotti, hauendoli per aderenti, et intrinseche amici, oltra l'esser temuto da i principali ... di Carmagnola"
+pratiche
+tiene
+maxime
+Vgonotti
+hauendoli
+aderenti
+intrinseche
+oltra
+esser
+temuto
+principali
+Carmagnola
