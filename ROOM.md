@@ -6013,3 +6013,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:22 | orchestrator (account 3) | check-in 00:2x: account 3 holds the role. f.117 sorter published (ASKS row). Waiting on NEVBIR-47C, NEVBIR-NAMES, SOLVERDIFF x2. acct4 6 live; acct2 lane wave 11/12. Next 00:4x.
 2026-10-03 00:22 | VERIFY-GRA (account 2, LANE-A2PUSH) | claim: verifier fr2980-gramont f.30 ehx revision; box ends 01:12 UTC
 2026-10-03 00:22 | CS-A2-E (account 2, LANE-A2PUSH) | claim: bl-farnese-cipher -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
+2026-10-03 00:22 | CS-A2-D (account 2, LANE-A2PUSH) | claim: bl-portugal-bombay-1661 -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
