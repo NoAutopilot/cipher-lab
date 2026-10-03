@@ -496,3 +496,71 @@ with no 403, 429 or challenge. Rule 10: this is a search log; it makes no novelt
 fr3151-noailles-1558: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## FT4-fr3151-noailles-1558 (3 Oct 2026, account-4)
+
+The step: the step the Premise check above names. Read BnF fr. 4127's holding record and quote its availability
+flag. If it is digitised, compare the design of its Nov 1558 cipher-and-decipherment letters with no. 33's. Do not
+build a key or decode anything.
+
+**Holding record, read 3 Oct 2026, ~02:1x UTC.** BnF Archives et manuscrits, **Français 4127**,
+`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50527m` (FRBNFEAD000050527). It reads "Anc. 9291(17), de La Mare 151 •
+Recueil de lettres originales et de copies de lettres adressées au Sr de La Vigne, de 1557 à 1559". Items 1-68 are
+"Soixante-huit lettres de « F[RANÇOIS] DE NOAILLES, e[vêque] d'Acqs... ambassadeur de France à Venise... à Mr de La
+Vigne »". The notice was "créée à partir de la conversion rétrospective du Catalogue des manuscrits français, tome
+troisième ... 1881". The record confirms the folio list the Premise check read from the 1881 print. Items nearest the
+target's date, quoted from the record:
+- Fol. 131, no. 48: "Avec chiffre et déchiffrement", 7 Oct 1558
+- Fol. 135, no. 49: same, 20 Oct 1558
+- **Fol. 137, no. 50: same, 7 Nov 1558**
+- Fol. 142, no. 51: 15 Nov 1558, no cipher noted
+- Fol. 145, no. 52: 24 Nov 1558
+- **Fol. 147, no. 53: chiffre et déchiffrement, 3 Dec 1558**
+- Fol. 152, no. 54: same, 10 Dec 1558
+
+The series runs from Dec 1557, with separate "Copie et déchiffrement" items (e.g. nos. 3, 4, 6, 9, 12, 14, 17, 22,
+38). By the catalogue's count about 45 of the 68 letters carry cipher.
+
+**Availability flag: no digitisation link.** Neither the record page nor its "Informations bibliographiques" panel
+(`ajaxGetCompDisplay.html?eadCompId=FRBNFEAD000050527_info`) carries a Gallica link or a `DaoGal` element: 0
+matches for `gallica.bnf.fr/ark` or a `DaoGal` class. The class appears only in the page's CSS.
+- **Control that can differ:** the same fetch and grep on the record for **Français 3151**
+  (`ark:/12148/cc496140`), which is known to be digitised, finds 4 matches and the link
+  `gallica.bnf.fr/ark:/12148/btv1b9059865k`.
+- **Second test:** a Gallica SRU query `dc.source all "Français 4127"` returns 0 records. The identical query for
+  `"Français 3151"` returns 1 (btv1b9059865k). Title queries ("La Vigne" + manuscrit, 51 records; "Vigne 1557")
+  return no record for fr. 4127. They do find a different, digitised Noailles volume: **Français 10773**, "Copies de
+  pièces et de dépêches relatives aux négociations à Venise et à Constantinople de François DE NOAILLES ..."
+  (`https://gallica.bnf.fr/ark:/12148/btv1b52527305r`).
+
+Conclusion: as of 3 Oct 2026, fr. 4127 has **no online reproduction**. The holding record carries no viewer link,
+and Gallica's index has no record. This is an availability result, not a statement about the manuscript.
+
+**Design comparison: not run (non-test).** There are no fr. 4127 leaves to look at, so I made no vision calls and
+fetched no IIIF image. The pre-registered comparison was a shape inventory of no. 33's pen-signs (sign_legend.md
+codes) plus two-digit numerals against fr. 4127 no. 50's cipher. The control was an unrelated 1550s table. That
+comparison stays unrun; it is not a negative. Whether fr. 4127 uses no. 33's key is still unknown.
+
+**Next step, cheapest first.**
+- (a) **Depends on nobody, ~$2.** Survey Gallica's fr. 10773 (digitised copies of Noailles's Venice and
+  Constantinople dispatches) for:
+  - a copied cipher alphabet or key table;
+  - deciphered copies of the Nov 1558 letters;
+  - any copy of the 13 Nov 1558 letter to Lorraine.
+  Method: canvas labels first, then at most 2 vision calls at 1000 px on the leaves whose labels point there. This
+  is a shape-free search for a key source or clear text. It is not a design test.
+- (b) **The owner's step.** Order a reproduction of fr. 4127 fols. 131-151 (nos. 48-54), at least fol. 137 (no. 50,
+  7 Nov 1558, chiffre + déchiffrement), through the BnF reproduction service (manuscrits@bnf.fr / SINDBAD). Once the
+  images arrive, the design comparison above runs as pre-registered (~$3). If the designs match, a `period` key
+  rebuild from the cipher/decipherment pairs follows (~$6-10).
+
+I did not write an ASKS row in this job: step (a) comes first, and the parent decides whether to put (b) on the
+owner's card.
+
+Requests this job: archivesetmanuscrits.bnf.fr 5 (home, 1 search POST, 2 record pages, 1 info panel); gallica.bnf.fr
+6 (SRU only: 5 queries plus 1 control; no IIIF). All were at least 1.6 s apart, with no 403, 429 or challenge.
+Vision calls: 0. Rule 10: this is a search and availability log; it makes no novelty claim.
+
+## While waiting (FT4-fr3151-noailles-1558, 3 Oct 2026)
+
+- Survey the digitised Gallica fr. 10773 (btv1b52527305r: copies of Noailles's Venice/Constantinople dispatches) for a copied cipher alphabet, a key table or deciphered copies of the Nov 1558 letters: canvas labels first, then at most 2 vision calls at 1000 px, ~$2. This depends on nobody, unlike the fr. 4127 reproduction order.
