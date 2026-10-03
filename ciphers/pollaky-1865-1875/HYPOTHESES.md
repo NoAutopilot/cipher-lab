@@ -88,3 +88,11 @@ scripts/topic_crib.py (seed 174). Pre-registered in NOTES.md before scoring (com
 
 18/29 windows unencodable under the rule (no v-z); 0/29 fit the sign-repeat pattern under any simple substitution (random 0.55%).
 Status: the 1465 wording and the listed paraphrases are not the plaintext under Laura's rule; topic and design not refuted.
+
+## GAPS182 (3 Oct 2026, account-4): independent test of Laura's rule on a sibling sign ad
+Not run: no second ad in ad 1's dot-and-bar script was found. A script scan of all of Clay 1881 found none
+(scripts/sign_sibling_scan.py; positive control: ad 1, item 1459, flagged), and Schmeh's twelve-ad list has none.
+| target | control | result |
+|---|---|---|
+| none (no sibling text) | n/a (no N, no power) | not runnable on the material on disk; GAPS160 T support stays unreplicated |
+Status: needs new material (a second sign-script ad: Palmer/Gaffney or the Times 1865-1871 beyond Clay). Not a negative.
