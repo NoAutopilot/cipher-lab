@@ -14,3 +14,5 @@ its README). The f.117r sids live in `ciphers/birago-fr3252-1571-72/sorter/signs
 Two lines have one tile fewer than transcribed positions (f117 L09: 29 vs 30; f168 R03: 18 vs 19): those rows say the
 tile index may be one off, and L09.30 has no tile at all (crop = line end). Build and publish are the account-3
 orchestrator's (sign_sorter.py `--focus` reads the first two columns). No sign values appear in this folder.
+
+**Published 3 Oct 2026 13:40 UTC (account-3 orchestrator):** https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s (private to the owner; built from the two sorters' joined signs/labels; 16 focus tiles -- f117 L09.30 has no tile, left out; db capability records the decisions; apply with tools/sign_sorter_apply.py).
