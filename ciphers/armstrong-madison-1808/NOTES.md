@@ -3669,3 +3669,46 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 16 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Premise check (GF4-BATCH16, account-4, 3 Oct 2026)
+
+Adversarial pass, asked to prove the 20 Feb 1808 letter already read. Standard edition: Papers of James Madison,
+Secretary of State Series, via Founders Online 99-01-02-2728 (line 2 above; ARM-REC3 re-read the page, 26 Sept 2026:
+"its own Early Access page carries no editorial note or footnote at all, only the bare source citation"). Not re-fetched
+this pass (founders.archives.gov answers scripts with a CloudFront 202; the reads on file are via Wayback and headless
+Chromium).
+
+- (a) Decipherments the folder itself mentions: **found, rejected on file.** The AFIO claimed solution (Apelbaum, 27 May
+  2025) is the only claimed reading; Bourdeau's matched control (`adjudicate_feb20.py`: 500 shuffled-ciphertext keys fit
+  better than the AFIO key, 70%/41% vs 59%/30%) and Tomokiyo both reject it -- a control-backed negative, so not
+  found-solved. Kreider's statement "we've found no evidence that it ever was decoded, nor that Madison acknowledged
+  receiving it" stands; LOC's finding-aid abstract of Armstrong's letters jumps 4 May 1805 -> 30 Aug 1808 (ARM-REC).
+  The 1805 "passages of inexplicable cypher" docket (ARM-KEYHUNT) is a different letter in the Armstrong-Monroe cipher,
+  no decipherment printed (PJM-SS 9 notes describe the numbers, do not print them; ARM-KEYHUNT-2). No interlinear,
+  docket decode or clear copy of the 20 Feb letter is recorded on frames 0029-0032 (ARM-IMG/ARM-TR/ARM-TR2).
+- (b) Other solvers' working files: fresh clones 3 Oct 2026. dbourdeau/cyphersolver 841111b (2 Oct): `targets/armstrong/`
+  holds `feb20_ciphertext.txt`, `afio_key.txt`, `adjudicate_feb20.py` and the THE=972 machinery (`decode972.py`,
+  `additions972.tsv`, 160 new values); his NOTES says "The 20 Feb 1808 letter (369 groups) is a different code and
+  stays out" and "the 20 Feb 1808 code is a different key" -- no rendering of the 20 Feb letter, no key run on it beyond
+  the AFIO adjudication. Not found. One lead to hand on: his "Remaining gaps" lists "27/29 Dec 1807, 25 groups, including
+  1701 and 1723 (values above 1600, as in the 20 Feb letter's code) ... The manuscript was not located on roll 13 or 14
+  at grid scale" -- ARM-POOL2 (26 Sept) located a 27 Dec 1807 Duplicate on roll 13 frame 0390 and screened it 70% THE=972
+  with period interlinear glosses; whether its >1600 groups overlap the 20 Feb letter's values was not tested by either
+  side. aaymeloglu/unsolved-ciphers d2800bb (27 Sept): no Armstrong target or file. Not found.
+- (c) Physical neighbours: **not found.** M34 roll 14 frames 0028-0034 viewed natively on file (ARM-IMG, ARM-POOL,
+  ARM-TR2): 15 Feb (0024-25, faint pencil decodes in THE=972), 22 Feb (0033-0034), docket 0645; none carries a decode,
+  clear copy or slip for the 20 Feb letter. No duplicate of 20 Feb located on rolls 13-14 (ARM-POOL, ARM-POOL2).
+- (d) Recipient side: the recipient is Madison, whose edition (PJM-SS) is the standard edition above -- no decode. The
+  forwarding side (Madison to Jefferson, Founders; ARM-JEF) and the other correspondents (Pinkney, Monroe, Erving,
+  Livingston; ARM-REC3, ARM3-COR, ARM-LIV, ARM3-LIVCODE, ARM-KEYHUNT/-2) were read on file: no decode, no paraphrase of the
+  20 Feb content. Not found. Unrun: the Monroe Catalogue Online lookup (ASKS 97, guest sign-in refused to a cloud worker).
+
+Verdict unchanged: `open` (no printed or posted decipherment of this letter; the one claimed solution fails its control).
+
+## While waiting (GF4-BATCH16, account-4, 3 Oct 2026)
+
+Waits on the owner's Monroe Catalogue Online lookup (ASKS 97) for the Armstrong-Monroe cipher's 1805 specimens.
+- Action that depends on nobody: screen M34 roll 13 frame 0390 (27 Dec 1807 Duplicate, already located by ARM-POOL2) for
+  its groups above 1600 (Bourdeau lists 1701, 1723) and test their overlap with the 20 Feb 1808 letter's value set --
+  a two-letter value-overlap count against random value sets of the same size drawn from the same numeric range
+  (a reordering control could not differ, rule 3), no reading. S.
