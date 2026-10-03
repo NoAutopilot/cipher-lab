@@ -257,3 +257,104 @@ Verdict after this pass: `open` stands. The next step, a sign-by-sign transcript
 Requests this pass: archivesetmanuscrits.bnf.fr 2, books.google.com 9 (SearchWithinVolume, 2 s apart),
 archive.org 1, be-api.us.archive.org 1 (the generic Dinteville full-text query returned only noise), raw.githubusercontent.com 1,
 github.com 2 (shallow clones). Rule 10: no novelty claim; these are search results.
+
+## Intake gate (A2-DIN, account 2, 3 Oct 2026)
+
+```
+$ python3 tools/intake_gate_check.py fr3621-dinteville-1592
+fr3621-dinteville-1592: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+
+## f.128r interlinear transcription and alignment (A2-DIN, account 2, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-din.md` (LANE-A2PUSH2). No live account-4 claim in ROOM.md (GF4-BATCH9
+done 02:42). Files: `f128/` (README.md lists them), crops in `images/`.
+
+**Image.** `tools/gallica_folio.py btv1b52524472n --folio 128` -> canvas f265, label '128r', one constant offset
+(k=10, ff.1-131). The leaf is no.114 (the BnF finding aid's "avec chiffre et dechiffrement", Langres 1 July 1592): the
+date line at the foot reads "...ce j^er Juillet 1592" (not checked further). The cipher passage is 4 lines (L02 right
+end after "et"; L03 to L05), each with a period decipherment written word by word above it. Crops (pasted):
+
+```
+$ python3 tools/iiif_lines.py --ark btv1b52524472n --canvas 265 --region 200,1800,3700,560 \
+    --out ciphers/fr3621-dinteville-1592/images --prefix f128 --top-margin 45 --bottom-margin 25 --only-lines 2,3,4,5 --debug
+...src_ark_12148_btv1b52524472n_f265_200_1800_3700_560.jpg (cached): region 3700x560, 5 lines, 5 bands x 2 segments; pitch 100 distance 70 prominence 228.2
+  centres (region y): 78 174 271 377 483
+  wrote 8 crops and ciphers/fr3621-dinteville-1592/images/manifest.json
+```
+
+**Transcription (rule 2: from the image).** Two blind Sonnet passes on the 8 line-segment crops (`f128/passA.tsv`,
+`passB.tsv`, raw), then one Opus reconciliation from 1.6x sub-crops of the same region (`images/zoom/`), written to
+`f128/gloss_pairs.tsv` and committed (b30b3db2) **before** any alignment. 183 cipher signs in 4 lines, 31 sign labels
+(the 25 of `f128/pass_instructions.md` plus D triangle, r curled r, al alpha distinct from a, zh bare z-tail, h, B, n,
+div, plus). Error: err_2reader only (no benchmark item for this hand): pass A vs pass B edit distance 26 / 183 signs
+(14%), A vs reconciled 33, B vs reconciled 21, all on the instruction label set (so the a/alpha, D/r/4 and 3/zh splits
+the reconciliation makes are not counted: a lower bound). Pass B read almost no gloss, and pass A read it only roughly.
+The gloss lines in gloss_pairs.tsv are the reconciler's reading, single-reader. Uncertain gloss words are flagged in the
+note column: 'dascender' letters 3-5, 'bestiaux', and L05's 'besounasiana' (read literally; Bourdeau reads Besancon).
+The gloss writes '+' and '|' for signs it left unexpanded, kept as '+' wildcards.
+
+Gloss as read: L02 "ma dit"; L03 "auoir veu dascender a geneue + deux millions dor despaigne" / clear "Il ha laisse" /
+"a"; L04 "bestiaux quarante cinq + + mulets chargez qui doibt aussi passer dans trois"; L05 "iours et + + prendre le
+chemin de + besounasiana que + vn chemin de fl[andres]", ending in clear "Cremona"(?).
+
+**Alignment (tools/interlinear_align.py through `f128/align_f128.py`, f and s kept apart, rule 3 control first).**
+Control: every rotation (172) of the concatenated gloss letters, re-split into the original words, so each gloss word
+keeps its length and place and the letter frequencies are unchanged. Only the sign/letter correspondence moves, so the
+control can differ from the target on the statistic. Statistic: consistency, i.e. the share of aligned occurrences of
+sign types seen at least twice that carry their type's top letter. My first control re-split without word spaces, which
+changed the aligner's word-boundary bonus and gave a null mean of 0.672. That is not a matched control, and I fixed it
+before the numbers below.
+
+| variant | params | real | null mean | null p95 | null max | rotations >= real | grades (183 tokens) |
+|---|---|---|---|---|---|---|---|
+| 1 letter | --code-prefix, 0-1 letter/sign, null-cost 0, seg-bonus 1 | 0.313 (147 occ) | 0.316 | 0.349 | 0.408 | 95/172 | C 38, M 145 |
+| 2 syllabic | 0-3 letters/sign, null-cost -1, seg-bonus 0, len-prior 1 | **0.590** (156 occ) | 0.299 | 0.331 | 0.353 | **0/172** | **C 89, M 94** |
+
+Variant 2 was declared after variant 1 failed. Its one run with null-cost 0 was degenerate: every sign went null and
+there were no counts. I changed only that one setting (to -1.0), and both runs are logged in the script's docstring.
+Variant 1's failure looks like a parameter artifact, not a design result. With free nulls and a word-boundary bonus, the
+DP pushes letters onto nulls. Both aligned keys take almost only single letters (variant 2 has two multi-letter chunks,
+both M), so the system read here is **a homophonic letter substitution with nulls**, not a syllabary. This is a
+cryptanalytic alignment of a period gloss: grade C per sign where it agrees, and no H.
+
+Key (`f128/key_syl.tsv`, sign -> letter, agree/n), the clean ones: al=u 5/5, p=i 5/5, w=r 6/6, z=m 4/4, 4=l 3/3,
+y=o 6/8, L=i 4/5, 3=d 4/5, a=q 3/4 (the "qu" of quarante/qui), m=u 5/8, 0=e 9/16, f=n 6/11, sq=s 5/9, #=d 5/13, v=a 5/11,
+9=g 2/3, T=h 2/3. Weak or conflicting: 1, ., c, D, r, o, zh, and the singletons II, h, B, n, div, plus. The cleanest
+spans are L03 "auoir" (D al y p w; the leading II is unaligned), "veu" (m o al), "deux millions dor despaigne" (# 0 m sq
+/ z p 4 plus L y f sq / 3 y w / # 0 sq 0 v L 9 r 0), and L04 "qui" (a m L). The spans that drift (M) are L03 "a geneue +",
+the second half of L04 (from "doibt"), and L05 after "de +". Those are where a transcription error or a misread gloss
+word is most likely.
+
+**What this adds to Bourdeau** (`targets/dinteville1592/align.py`, MIT, cited, not copied; github.com/dbourdeau/cyphersolver,
+21 Sept 2026). His test aligned only L03, about 50 signs against 48 letters, looking for an exact one-to-one map with at
+most 3 null types, and found none ("auoir" over II D alpha psi p, but alpha also = d in "dascender"). This pass
+transcribes all 4 cipher lines and their gloss (183 signs) and keeps alpha (al) apart from the plain a. Read that way,
+al = u 5/5, and the a before "#" in "dascender" is not the "auoir" sign. Hard-EM alignment then tolerates transcription
+noise, and the control shows the resulting consistency is not an artifact of the gloss's length structure. It does not
+show the key is complete or correct per sign.
+
+`python3 ciphers/fr3621-dinteville-1592/f128/align_f128.py --check` and `... --syl --check` both print "check: committed
+outputs match" (rule 7). No spec and no judge for this target (not a reading). Not done in this step: f.130 (the brief
+names it as the next step).
+Requests: gallica.bnf.fr 3 (manifest via gallica_folio.py, 1 overview at 1000 px, 1 native region), github.com 1 (sparse
+clone of Bourdeau's target folder). Vision calls: 2 blind Sonnet passes plus the Opus reconciliation (17 zoom
+sub-crops read in this session). Rule 10: no novelty claim. This is an alignment of a period gloss that DECODE R9450
+already marks Decrypted.
+
+## Remaining gaps (A2-DIN, 3 Oct 2026)
+Read so far: f.130 0 of about 420 signs read; f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
+- f.130 cipher passages (about 420 signs) - blocker: not-attempted; the f.128 key exists at C only for about 17 signs and f.130 is not transcribed (f128/key_syl.tsv); next: transcribe f.130 (Gallica canvas f269, 2 line-crop passes + reconciliation in this label set) and apply key_syl.tsv with a shuffled-key control, ~$7
+- f.128 drifting spans (L03 "a geneue +", L04 from "doibt", L05 from "de +") - blocker: not-attempted; likely transcription or gloss-reading error (f128/align_syl.tsv M rows); next: a second reader on those crops only, then re-run align_f128.py --syl, ~$3
+- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
+
+## Escalation (A2-DIN, 3 Oct 2026)
+- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (this file, A2-DIN)
+- [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
+- [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
+- [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9)
+- [ ] key-rebuild: f.128 key at C, partial (key_syl.tsv); apply to f.130 is the planned step
+- [ ] image-check: f.130 not yet transcribed from Gallica f269
+- [n/a] retry: no failed instrument on this target to retry yet
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe f.130 and apply f128/key_syl.tsv with a shuffled-key control, ~$7
