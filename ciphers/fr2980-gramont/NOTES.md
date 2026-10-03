@@ -1063,6 +1063,44 @@ codes they share (key values, not this letter's tokens). Neither was opened; (a)
 **Where not searched:** LP iv(3) and Le Grand III texts not re-fetched (disk-only brief). Novelty not classified (rule 10).
 Requests this pass: none to any host. Vision calls: 0.
 
+## fr.3019 no.31 (f.84) as a name and topic source for the f.30 open codes (A2-GRA6, account 2, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-gra6.md` (the Verdict's cheapest next step). Intake gate before work
+(`python3 tools/intake_gate_check.py fr2980-gramont`): `fr2980-gramont: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0.
+
+**Crops (mandatory step, pasted).** Leaf: BnF fr.3019 no.31 = f.84 = Gallica `btv1b9059994n` canvas 86 (offset canvas = folio + 2,
+second audit, AUDIT.md "Gap (4)"); native 4189x5985 (info.json).
+```
+python3 tools/iiif_lines.py --ark btv1b9059994n --canvas 86 --region 984,387,3166,4692 --prefix f84m --out ciphers/fr2980-gramont/images/fr3019_f84 --debug
+  region 3166x4692, 27 lines, 27 bands x 2 segments; pitch 162 distance 113 prominence 220.0   (L01-L22 = letter body; L23-L27 = postscript, clipped on the left)
+python3 tools/iiif_lines.py --ark btv1b9059994n --canvas 86 --region 448,4230,3700,800 --prefix f84ps --out ciphers/fr2980-gramont/images/fr3019_f84 --debug
+  region 3700x800, 7 lines, 7 bands x 2 segments; pitch 114 distance 79 prominence 197.1   (postscript, full width)
+```
+(Two earlier calls failed: a doubled `ark:/12148/` prefix gave HTTP 500 twice, my error; one mis-placed postscript region was cut and deleted.)
+
+**Pre-registration (written before any line of f.84 was read; committed before scoring).**
+- Candidate list N: every person, place and title-as-name read on f.84 (body + postscript), normalized to the cipher's spelling
+  (upper case, U/V -> V, J -> I, Y kept), each at most two spellings. Built from the reconciled reading of two blind passes.
+- Codes tested: the f.30 open (U) signs with >= 4 occurrences in `reading_f30_extended_tokens.tsv`: B8 (15), HASH (12), v (11),
+  CROSSp (5), INF (4). Signs with 2-3 occurrences are too short for this test and are not scored.
+- Statistic: f.30 extended reading as one upper-case string, other U signs and `[..]` brackets kept as they are. For code c and
+  name w, every occurrence of c is replaced by w; boundary fit B(c,w) = mean over occurrences of [LL(window with w) - LL(window
+  with c deleted) - LL(w alone)], window = 6 characters each side, LL from an add-0.5 character 4-gram model trained on
+  `tools/data/fr16` (all three files, upper-cased, U->V, J->I, letters only). Subtracting LL(w alone) removes the name's own
+  internal likelihood, so B measures how the name's edges fit the cipher context.
+- Control (shuffled names; it CAN differ from the target because B depends on the order of w's letters, its first and last
+  letters above all): 1000 replicates, each letter-shuffles every name in N (same lengths, same letters), and takes
+  max over names of B(c, shuffled w). Gate per code: real max_w B(c,w) above the replicate's 99th percentile (p <= 0.01,
+  Bonferroni for 5 codes at alpha 0.05).
+- Power control (known answer, run first): for each of the frequent decoded words VOVS, QVIL, POVR, mask 5 occurrences
+  (seed 0, chosen at random from all occurrences) as a pseudo-code, add the word to N, and run the identical statistic and gate.
+  If fewer than 2 of 3 pass with the masked word as the top candidate, the test has no power at this N and the target result
+  is a non-test (licenses nothing), whatever its numbers.
+- Outcome rule: a code passing the gate gets the name as a grade-S candidate value in this section only, with VERIFIER WANTED;
+  no token in key files changes from this step unless the code passes and the power control passes. Otherwise no grade moves.
+- Script: `f84_names_test.py` (this folder).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4 and A2-GRA5, 3 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
