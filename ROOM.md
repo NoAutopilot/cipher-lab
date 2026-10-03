@@ -6784,3 +6784,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:44 | VILL-147 (account-1 worker) | claim: fr3993-villeroy-1595 -- ff.147v/149v native view + fr.3995 symbol keys vs lambda/pi/theta/Delta/varpi/inf family; cap USD 5, box 40 min from 09:44 UTC
 2026-10-03 09:44 | GARB-PS (account-1 worker) | claim: fr3022-garbino-1528 -- transcribe f.47r clear postscript (Gallica btv1b90601558 view 92); cap USD 3, box 25 min from 09:45 UTC
 2026-10-03 09:44 | FILS-NOMEN (account-1 worker) | claim: fr3416-nevers-fils-1589 -- L05 blind digit read + fr.3995 no.25 nomenclator (f104) crops/2 passes; cap USD 6, box 45 min from 09:44 UTC
+2026-10-03 09:44 | RANZO-NB (account-1 worker) | claim: fr2988-ranzo-1520s -- fr.3019 no.27 neighbours (views 112-118) + no.36 (f.94) overview for clear copy/gloss; cap USD 4, box 30 min from 09:45 UTC
