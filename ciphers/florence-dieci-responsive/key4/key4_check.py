@@ -5,7 +5,9 @@ Statistic: mean per-char log-prob (char 4-gram, add-k, la18 corpus) of the key-4
 c70_tokens.tsv, real values vs N decodes with the values permuted among the distinct sign entries (shuffled-key
 control). Positive control: a la18 span of the same total length, cut into entries with the same value-length mix,
 scored the same way against its own permutations. Coverage is printed, not gated (a permutation cannot change it).
-Usage: python3 key4_check.py [--n 1000] [--seed 1]"""
+Usage: python3 key4_check.py [--n 1000] [--seed 1] [--noise F]
+       python3 key4_check.py --tokens reconciled.tsv --map sheet_map.tsv --noise F   (GAPS117: a blind K-id
+       transcription, columns line/pos/sign; values looked up in sheet_map.tsv; '?' and unmapped ids break runs)"""
 import argparse, gzip, math, random, re, collections
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
@@ -61,11 +63,20 @@ def test(m, runs, n, rng):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--n", type=int, default=1000); ap.add_argument("--seed", type=int, default=1); ap.add_argument("--noise", type=float, default=0.0, help="fraction of positive-control tokens whose sign is swapped for a random other sign (reader error)")
+    ap.add_argument("--tokens", help="GAPS117: blind K-id transcription TSV (header with a 'sign' column) instead of c70_tokens.tsv")
+    ap.add_argument("--map", help="GAPS117: id -> value TSV (sheet_map.tsv: id, source_cell, value)")
     a = ap.parse_args(); rng = random.Random(a.seed)
-    rows = [l.rstrip("\n").split("\t") for l in open(HERE/"c70_tokens.tsv") if not l.startswith("#")][1:]
-    toks = [(s, v) for _, s, v in rows]
-    matched = sum(v != "?" for _, v in toks)
-    print(f"coverage (not gated): {matched}/{len(toks)} = {matched/len(toks):.3f}")
+    if a.tokens:
+        mp = {r[0]: r[2] for r in (l.rstrip("\n").split("\t") for l in open(a.map)) if r[0] != "id"}
+        lines = [l.rstrip("\n").split("\t") for l in open(a.tokens) if not l.startswith("#")]
+        si = lines[0].index("sign")
+        toks = [(r[si], mp.get(r[si], "?")) for r in lines[1:]]  # CLEAR (a clear word) breaks a run
+    else:
+        rows = [l.rstrip("\n").split("\t") for l in open(HERE/"c70_tokens.tsv") if not l.startswith("#")][1:]
+        toks = [(s, v) for _, s, v in rows]
+    cip = [(s_, v) for s_, v in toks if s_ != "CLEAR"]
+    matched = sum(v != "?" for _, v in cip)
+    print(f"coverage (not gated): {matched}/{len(cip)} = {matched/len(cip):.3f}")
     t = corpus(); m = Model(t)
     runs = runs_of(toks)
     real, p95, p, ent = test(m, runs, a.n, rng)
