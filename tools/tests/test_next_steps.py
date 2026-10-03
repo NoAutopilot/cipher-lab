@@ -377,3 +377,48 @@ def test_render_tsv_idempotent_and_check_mode(tmp_path):
 if __name__ == "__main__":
     import pytest
     sys.exit(pytest.main([__file__, "-q"]))
+
+
+# TOOL-NS1, 3 Oct 2026 (flag from GAPS136): 'follow-up' triggers only as a line-head label.
+FOLLOW_UP_PROSE_NOTES = """# decode-1411-like fixture
+status: open
+
+## Check-solved verdict (24 Sept 2026)
+
+Blog site searches:
+5. Cipherbrain: monthly archives. Also surfaced: Top 50
+   no. 27 Ferdinand III letters and the 2017-10-07 Thomas Ernst follow-up -- Ferdinand III's own letters, not this
+   fascicle. No post or comment naming this fascicle.
+- Follow-up 2017-10-07 (.../top-50-crypto-mystery-solved-thomas-ernst/):
+  Ernst's solution. No shelfmark.
+"""
+
+FOLLOW_UP_HEADING_NOTES = """# rumpf-vandebie-heinsius-like fixture
+status: partial
+
+## H1 pass (25 Sept 2026)
+
+Letters 309 and 446 read at grade H.
+
+Follow-up suggestions (one line each): (1) the NA originals of letters 309 and 446/455 against the edition.
+"""
+
+
+def test_follow_up_in_prose_is_not_a_next_step():
+    """Must NOT fire: 'follow-up' inside a sentence (a cited blog title) or heading a bullet that
+    names a post ('- Follow-up 2017-10-07 (<url>)') -- the decode-1411-hhsta-vienna-1600 shape."""
+    assert ns.extract_next_step(FOLLOW_UP_PROSE_NOTES) == ""
+
+
+def test_follow_up_label_heading_is_a_next_step():
+    """Must catch: 'Follow-up suggestions (one line each):' heading a line, and the other
+    labelled forms the corpus uses."""
+    step = ns.extract_next_step(FOLLOW_UP_HEADING_NOTES)
+    assert "NA originals" in step
+    for label in ("Follow-up:", "## Follow-ups", "**Follow-up (not done):**",
+                  "Follow-ups (suggestions, not done): x", "**Follow-up for the next job:** x",
+                  "Suggested follow-ups (one line each, not run):"):
+        assert ns.NEXT_STEP_RE.search("Some prose.\n" + label), label
+    for prose in ("a narrower follow-up, not completed.", "follow-up pass with crop tooling",
+                  "- Follow-up by hand (Google Books API)"):
+        assert not ns.NEXT_STEP_RE.search(prose), prose

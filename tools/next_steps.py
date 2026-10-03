@@ -75,8 +75,22 @@ STATUS_RE = re.compile(
     re.IGNORECASE,
 )
 
+# 'follow-up' is a trigger only when it heads a line or labels a clause (TOOL-NS1, 3 Oct 2026,
+# flagged by GAPS136 on ciphers/decode-1411-hhsta-vienna-1600): the bare word also occurs in
+# ordinary prose -- a cited blog title ("the 2017-10-07 Thomas Ernst follow-up") in a web-check
+# sentence, or "- Follow-up 2017-10-07 (<url>)" naming a post -- and was surfaced as the folder's
+# next step. Must catch: "Follow-up suggestions (one line each):", "Follow-up:", "## Follow-ups",
+# "**Follow-up (not done):**", "Follow-ups (suggestions, not done):", "Follow-up for the next job:",
+# "Suggested follow-ups (one line each, not run):".
+# Must NOT block (i.e. must not fire on): "follow-up" mid-sentence, or heading a line but followed
+# by anything other than an optional "suggestion(s)" / "for <...>" and then ':', '(', '**' or
+# end of line. Every other trigger phrase is unchanged.
+FOLLOW_UP_LABEL = (
+    r'(?m:^[ \t>#*\-]*(?:\*\*)?(?:suggested\s+)?follow-ups?(?:\s+suggestions?|\s+for\b[^:\n]{0,40}(?=:))?'
+    r'\s*(?::|\(|\*\*|$))'
+)
 NEXT_STEP_RE = re.compile(
-    r'next step|next:|next job|for whoever picks this up|successor|follow-up',
+    r'next step|next:|next job|for whoever picks this up|successor|' + FOLLOW_UP_LABEL,
     re.IGNORECASE,
 )
 
