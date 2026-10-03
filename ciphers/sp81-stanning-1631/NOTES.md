@@ -117,3 +117,36 @@ Swedish mission, starting with *The Manuscripts of the Duke of Hamilton* (HMC 11
 the 1631 British expedition to Gustavus Adolphus, and the volume calendars letters of 1631. Search it for Stanning and
 its variants, plus "cipher"/"cypher" on its 1631 pages. Cost: about USD 1, no vision. If that also fails, the target
 can be read only from the image, so step (2) waits on the copy order (REQUEST.md).
+
+## GAPS130-sp81-stanning-1631 (3 Oct 2026, account-4): HMC Hamilton MSS grep
+
+Step run: GAPS126's named next step (recommended step 3), the HMC Hamilton volumes searched for "Mr Stanning" and for
+cipher entries of the 1631 Swedish mission. Script grep of the full text, fetched once. No vision, no subagents, no
+reading of the item. Clock read 13:54 UTC.
+
+| Edition (IA identifier) | Route | Stanning / Stannyng / Staning / Stanninge / Stannings | cipher, cypher, decipher, character | Positive control |
+|---|---|---|---|---|
+| HMC 11th Report app. VI, *MSS of the Duke of Hamilton* (1887), `manuscriptsofduk00greauoft` (Toronto scan) | `_djvu.txt` (1.09 MB), regex | 0 | 30 hits. Most are the word "character" (a person's character, "of a historical character"). The only cipher entry of 1631-32 is **No. 59**, Hamilton to Charles I, Augsburg, May [1632], p. 81: "The first portion of this letter is in cypher, and seems to refer to an important interview between the King of Sweden and the English Ambassador" (the cipher part is not printed or deciphered in the calendar). All other cipher entries are 1647-50 (Nos. 270-396, Lanark and the Engagement; Camden Society 1880) | Vane: 6 hits, e.g. No. 39, Herbipoli [Würzburg] 9 Nov 1631 (Hamilton as umpire between Charles I "acting through Sir Henry Vane his ambassador" and Gustavus Horn); No. 52 (Vane's arrival in Germany); index "Vane, Sir Henry, ambassador; 74. arrives in Germany; 77". Gustavus 47, 1631 27 |
+| Same edition, second scan, `manuscriptsofduk00grea_2` (Getty) | `_djvu.txt`, regex | 0 | 30 (same entries) | Vane 4, Gustavus 47 (an OCR cross-check, not an independent edition) |
+| HMC 21, *Supplementary report on the MSS of the Duke of Hamilton* (1932), `supplementaryrep0000grea` | lending-only (`_djvu.txt` 401); be-api full-text search | 0 for each variant | cipher 1 item-level hit (passages "in cipher" to Lanark, 1640s; Sadler/Walsingham keys in the introduction), cypher 1 (1640s; index "Angus, cypher for England, 40") | Vane 1 (captains "recommended by Sir Henry Vane"), Gustavus 1 ("interview with Gustavus Adolphus described by, 21"; "an Imperial agent in the confidence of Gustavus nearly succeeded in preventing the expedition") |
+
+**Result: not found.** No Stanning variant in either Hamilton report. Both searches passed the positive control:
+the 1631 Hamilton-Vane-Gustavus entries are found in the same texts. The one cipher entry of the mission period is
+Hamilton's own letter to the King (No. 59, May 1632). It is a separate cipher in Hamilton's papers. It is not a key or
+decipherment for SP 81/37/284 and has no link to Stanning. Recorded as a possible later comparison: if the image of
+f.284 is ever obtained, the Hamilton cipher of 1632 (Hamilton Archive, Lennoxlove) is one more 1631-32 Anglo-Swedish
+cipher to set beside Vane's ff.93/169/216. That is a lead to check, not a finding. Rule 10: this is a search result
+about the editions, not a finding about the item.
+
+Requests: archive.org (metadata 3, download 3) 6, be-api.us.archive.org 8; one at a time, 1.6 s apart, no 429/403
+(the 401 is the supplement's lending-only text, expected).
+
+**Next step:** the open-source routes to identifying Stanning are now done: TNA Discovery, CSP Dom 1629-33, Google
+Books, EMLO (GAPS126), and both Hamilton reports (this step). The item can only be read from its image, and step (2),
+the copy order for f.284 and the siblings ff.93/169/216 (REQUEST.md), needs the owner. See "While waiting".
+
+## While waiting (3 Oct 2026, GAPS130)
+
+- grep the HMC Cowper (Coke) MSS vols 1-2 (HMC 12th Report app. I-II, 1888), which hold Secretary Coke's papers for
+  1631, from Internet Archive `_djvu.txt` for Stanning variants and for "cipher" on the 1631-32 Vane-mission pages.
+  Positive control: a Vane-to-Coke 1631 entry. No vision, about USD 1. This depends on nobody.
