@@ -339,6 +339,34 @@ Rule 4: no token read, none graded. Rule 10: nothing here is a reading of any ki
 vision calls, 0 subagents. The bigram-IC instrument is now spent on ad 2 for design A at this N; a further tuning of
 the same statistic (other phases, other allocations) would be rule 3's third-attempt shape and is not proposed.
 
+## GAPS160-pollaky-1865-1875 (3 Oct 2026, account-4): gap 1 component test, Laura's rule on ad 1
+
+**Pre-registration (written and committed before any scoring, 3 Oct 2026, about 16:00 UTC).**
+Candidate rule (Laura, part 1 comment #4, 25 Aug 2016, sources/schmeh/posts/29a-pollaky-2014-12-27.txt line 262):
+count the bars/dashes S and dots P of each sign regardless of arrangement; letter = alphabet[(S-1)*6 + P - 1] for
+S=1..3, P=1..6 (a..r); a sign of k dots in parentheses = s, t, u for k = 1, 2, 3. Applied to this repo's sign table
+(ciphertext.txt, single pass on a modern redrawing) the part counts are: 01 (1S,2P), 02 (1S,5P), 03 (3S,2P), 04 (1S,3P),
+05 (1S,1P), 01, 07 (paren,3P), 08 (1S,3P), 09 (2S,2P), 10 (3S,4P). Laura reads sign 04 as four dots (D), our table as
+three (C); both strings are scored, ours as the primary target, hers as a variant; the disagreement is a transcription
+question for the image (not settled here: script only).
+Statistic T (primary, crib-bearing): mean add-one-smoothed English letter-bigram log10 probability over the string
+"timeto" + X + "shall" (the clear frame on both sides, so junction bigrams carry the crib), X the 10 decoded letters.
+Bigram model from the four English sources scripts/bigram_prior.py uses. Statistic W (secondary): fraction of X's
+letters covered by the best segmentation into corpus words (count >= 5; length >= 2, plus "a" and "i"), uncovered
+letters allowed. Seed 160.
+Controls, all N=10 under the same rule: (A) shuffled-sign: 2000 random orderings of the target's own 10 signs (same
+letter multiset, order varies, so T and W can differ from the target by construction); (B) random-sign: 2000 strings
+of 10 signs with (S,P) drawn uniformly from the rule's 21 cells; (C) rule-family (forking paths): the target's signs
+under 104 sibling rules of the same component-count design (S-major or P-major cell order, forward or reversed
+alphabet, 26 cyclic shifts) -- Laura's rule is one of them; report its rank. Positive control (power, ceiling check):
+2000 random 10-letter windows of the corpus restricted to the encodable letters a-u, encoded to signs and decoded by
+the rule (identity), scored by T and W; power = share above control B's p95. If power < 0.5 the test is "untestable at
+N=10" (rule 3), not a negative; if control B's own p95 already equals the positive control's median the statistic
+has no headroom and the same applies.
+Decision: the rule is "supported (S-grade candidate)" only if the target T exceeds the p95 of both A and B AND ranks in
+the top 5% of C AND power >= 0.5; "inconclusive" if power >= 0.5 and it fails any of the three; "untestable" if power
+< 0.5. No token is graded above M unless supported; S needs two words (rule 4).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 0 of 4 ads read in this repo. Ad 1 is 0/10 signs, ad 2 is 0/36 digit groups (36 counts "9:77314" as two groups; 35 if it is one), and ads 3-4 are 0/72 letter-words re-derived here (NOTES.md Test 1 table, Test 2 diff). There is no key, decode script, AUDIT.md or HYPOTHESES.md here, and nothing is graded. The ads 3-4 ciphertext is corroborated: two passes agree on 78/80 tokens, and the text matches Ernst's BNA-checked text 72/72. Their community readings are tracked in ciphers/catokwacopa-1875, which has its own gaps section (1 Oct 2026). Pollaky's authorship of ads 3-4 is Schmeh's attribution (post 29; 2 Oct 2026: the W. ads are not among the twelve ads "signed by Pollaky" in his 2014-15 list, only in the 2016 post's sentence, GAPS section above). The ads are signed "W.", not Pollaky, and this repo has not established the attribution.
 - Ad 1 (16 May 1865): 10 invented signs inside a plaintext sentence - blocker: not-attempted; statistics cannot help at N=10 (K=9, SIGN-01 repeats at positions 1 and 6; IC 0.0222 falls inside both N=10 control scatters, NOTES.md Test 1). Two cheap internal steps are still untried. First, the signs are built from a few parts (dots, dashes, bars, one bracket pair; ciphertext.txt sign table), so a compositional design (part counts or positions to letters or numbers) can be tested directly. Second, the clear frame "...fortunately in time to [10 signs] shall return to England..." is a crib. Also, the on-disk image is a modern redrawing (clean vector signs, modern serif type, no paper texture; viewed 1 Oct 2026), not the newspaper page (rule 2), so sign details are conditional on the redrawer; next: run a component-decomposition plus frame-crib test with Laura's bars-x-dots rule (part 1 comment #4, 25 Aug 2016, reads B E N D A B U C H P; recorded 2 Oct 2026) as the pre-registered candidate, scoring the same rules on shuffled-sign and random-sign controls of N=10 and reporting both numbers; find the original newspaper and date through the print step, ~$2
