@@ -1,4 +1,5 @@
 open
+Bulliet, "The Diviner's Handbook" (Mizan Project, mizanproject.org/the-diviners-handbook/, 31 Dec 2021) read in full by GF4-BATCH18 on 3 Oct 2026: the author's own latest account; the violin inscription is still untranslated (only the name Muhammad in line 5 read), Maranao ruled out by M. Kawashima, Tausug/Sulu proposed, a query to R. D. Trimillos pending.
 
 Intake (25 Sept 2026, LANE B4 worker bSUF, minimal check-solved per breadth.md's intake step):
 Cipherbrain post "The Top 50 unsolved encrypted messages: 38. The Sufi Fiddle mystery" (Klaus
@@ -125,3 +126,36 @@ probable ~60, guess ~60, excluded (obscured/uncertain, unchanged from bSUF's own
 spans/signs. Not a solve; not closed-negative either (no matched synthetic control exists to
 license that verdict -- rule 3's own headline paragraph: a negative means nothing without one).
 Status stays `open`.
+
+## Web and blog check (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `Sufi Fiddle inscription Bulliet violin solved` -- Cipherbrain Top 50 no. 38, Amazon listing of the 1991 novel, Mizan Project "The Diviner's Handbook"; all say unread, none gives a reading; (2) `"Sufi Fiddle" Bulliet inscription decipherment Arabic Maranao` -- the same plus Goodreads, a Columbia Seminar on Religion and Writing abstracts page (blogs.cuit.columbia.edu, WebFetch HTTP 403, not retried) and Mindanao manuscript papers on academia.edu (unrelated to the violin, not opened: academia.edu is 403 from the cloud); (3) `Sufi Fiddle cipher Claude solves OR GPT solves 2026` (model-solve family) -- only the Vals AI / Fable Cyphral Distich announcements (another item) and the "No, ChatGPT didn't solve Kryptos 4" gist; no AI-solve claim for this item; (4) `violin Boston 1968 Harvard Arabic script talisman inscription "Sufi Fiddle" hoax` (descriptive title) -- Mizan Project essay again; (5) `Bulliet violin inscription Tausug biyula Trimillos translation` -- Mizan essay again and Tausug music pages; no published reply from Trimillos and no translation.
+**Hit read in full:** Richard W. Bulliet, "The Diviner's Handbook", Mizan Project, 31 Dec 2021 (curl, HTTP 200). The author's own account, later than everything the folder had: the seven lines were copied in 1968 by Labib Zuwiyya-Yamak (Widener Library, Middle East division) from the back plate; Schimmel and Frye saw it; "no one ... could read a single word, except for the name Muhammad in line 5"; Bulliet's own careful copy is printed as Figure 1 (a second, independent copy beside the folder's "V. Castle Winter" hand copy); a 1983 letter relays three Philippine embassy staff who "read the inscription but none of them could really translate it", calling it an anting-anting charm, "Tausug, Maguindanaw or Maranaw"; a bundle of texts bought ca. 2001 from a Boston curio shop (the "Blue Booklet", identified as Maranao) is written in a similar hand; Prof. Midori Kawashima (Sophia University) assured him the violin inscription "is not" Maranao and suggested the Sulu archipelago (Tausug *biyula*); he was awaiting a reply from R. D. Trimillos (Tausug music, UCLA PhD 1972). No translation of the inscription is given anywhere in the essay. Status of this account: the author's own report of an unread text -- not a decipherment, not claimed as one.
+Blog site searches: Cipherbrain (scienceblogs.de, Top 50 no. 38, 3 Apr 2017, live re-fetch: still 6 comments, same as bSUF's 25 Sept read -- Simpson, tomtoo, Gruber, Schmeh, MF, J Muso; no reading); klausschmeh.net `?s=Sufi+Fiddle`: Nothing Found; Cryptiana blog `search?q=Sufi+Fiddle`: no posts; Cipher Mysteries `?s=Sufi+Fiddle`: Nothing Found; Apeiron (apeiron.re: no working site search; its Next.js build manifest lists one publication only, `/publication/apeiron-koehler-cryptograms`) -- nothing on this item. Reddit r/codes (OAuth search `sufi fiddle`): 0 results.
+Solver repos (fresh shallow clones, 3 Oct 2026, deleted after): dbourdeau/cyphersolver HEAD 46f8056 (2 Oct 2026) -- research/top50/NOTES.md row 38 "low ... no transcription has ever been published ... A palaeography problem before it is a cipher problem", no targets/ folder; aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026) -- no "sufi"/"fiddle" anywhere. DECODE: 0 hits for "sufi"/"fiddle" in the on-disk listings (sources/decode/*.tsv).
+Requests: mizanproject.org 1 + 1 WebFetch, scienceblogs.de 1, klausschmeh.net 1, cryptiana.blogspot.com 1, ciphermysteries.com 1, apeiron.re 3 (search, home, build manifest; shared across this batch's three targets), oauth.reddit.com 1 (+1 token, shared), blogs.cuit.columbia.edu 1 WebFetch (403), github.com 2 clones (shared); all >= 1.5 s apart.
+
+## Premise check (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment or clear copy: none. bSUF3's reading-attempt.md is our own I-graded transliteration (no formula found; best M guess "baraka(t)" in L6). Cross-check from the Mizan essay: Harvard readers and Bulliet read "Muhammad" in line 5; reading-attempt.md lists no محمد and its L5 group 4 is مهيد (m-h-y-d), one letter from محمد -- a lead for the next reader, not a reading.
+(b) Other solvers' working files: none -- Bourdeau a list row only, Aymeloglu nothing, no DECODE record; Bulliet's own decades of queries (Schimmel, Frye, embassy staff, Leiden, Kawashima) produced no translation.
+(c) Physical neighbours: FIND (provenance, not a reading). Bulliet's Figure 1 is a second hand copy of the same seven lines, independent of the folder's image; and the "Blue Booklet" text bundle (Maranao, a similar hand, Bulliet's own possession) is the closest sibling material. Neither carries a translation of the violin lines.
+(d) Recipient / owner side: the violin's owner was never identified (the instrument first went to Widener's Hebrew Division); Bulliet's query to Trimillos was open at Dec 2021, no published answer located.
+Result: no decipherment located; the language hypothesis has moved from Bulliet's 2014 "Maranao" (as relayed by Schmeh) to Tausug (Kawashima, 2021). Status stays open.
+
+## Verdict (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+**open (unchanged).** No published or accepted reading of the violin inscription in Bulliet's own 2021 essay (read in full), Cipherbrain no. 38 and its 6-comment thread, klausschmeh.net, Cryptiana, Cipher Mysteries, Apeiron, r/codes, DECODE listings, or either solver repository, searched 3 Oct 2026. Claimed-but-unaccepted: none (only script/language guesses: Arabic or Farsi, Kurdish, Maranao, Tausug).
+
+## While waiting (GF4-BATCH18, 3 Oct 2026)
+
+Nothing here waits on a person. The zero-dependency step: fetch Bulliet's Figure 1 copy from the Mizan essay (mizanproject.org/wp-content/uploads/2021/12/Diviners-Handbook.docx-10.jpg), diff it sign by sign against the folder's hand copy (images/Suffi-Fiddle-614.png) to measure copyist disagreement, and check whether line 5 carries a محمد form on either copy -- before any further reading attempt, and with the language prior moved to Tausug.
+
+## Intake gate (GF4-BATCH18, 3 Oct 2026)
+
+$ python3 tools/intake_gate_check.py sufi-fiddle
+sufi-fiddle: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+
+$ python3 tools/next_steps.py --wait-only | grep sufi-fiddle
+(no line)
