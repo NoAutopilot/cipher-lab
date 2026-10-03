@@ -2337,7 +2337,7 @@ vision calls were the whole image and a 3-4x zoom of rows 2-3 (crops not committ
 Every other image value (2-43) matches key_stamford.tsv.
 
 **Result: no value changed, so the reading and grades are unchanged:** H 64, C 338, S 0, M 16, U 6 of 424 before and
-after. `python3 pool_1654/decode_stamford.py --check` re-run: result in the follow-up commit below. No novelty class (rule 10; AUDIT.md holds
+after. `python3 pool_1654/decode_stamford.py --check` re-run: exit 0 ("ok: key_stamford.tsv, control_stamford.tsv, reading_P4.txt match"). No novelty class (rule 10; AUDIT.md holds
 P4 at N3).
 Requests: cryptiana.web.fc2.com 2 (one 302 on http, one 200 on https); no other host. Vision calls 2. Subagents 0.
 
