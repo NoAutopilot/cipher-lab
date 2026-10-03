@@ -1,6 +1,7 @@
 # decode-9970-simancas-1527
 
 Status: open
+CSP Spanish III pt 2 (Gayangos 1877, IA calendarorleters0003vari), be-api full-text search for "Andrea del Burgo", "Burgo", "26th October 1527" and "1563" run by this worker (GF-A2B-1, 3 Oct 2026): del Burgo's Ferrara letters of 4, 18 and 24 Oct 1527 are calendared (some "(Cipher:)" extracts), no entry dated 26 Oct 1527 and no leg. 1563 citation surfaced; the DECODE images themselves are not this letter (Premise check (b)).
 
 ## What this is
 
@@ -80,3 +81,56 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 28 Sept 2026
 - Note: NOT in our NOTES.md (grep burgo1527, "not a cipher": 0). Earlier (22-23 Sept) they had "attempt closed, target unread"
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2B-1, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `"Andrea del Burgo" Gattinara 26 octubre 1527 Ferrara carta cifrada` (sender + recipient + date) -- Este-court
+   cipher pages (Bologna FICLIT exhibit, "La parola incognita"), Estudios Románicos articles on imperial ciphers
+   (Rome 1543 and others), a Milan SSMD article. None names this letter.
+2. `Simancas Estado legajo 1563 folio 572 cifra` (shelfmark + cipher) -- Simancas generalities, british-history.ac.uk
+   CSP Simancas (Elizabethan volumes), UCM article on the archive's founding. No hit.
+3. `"Andrea del Burgo" cipher letter 1527 deciphered Gattinara` -- british-history.ac.uk CSP Spain III nodes (Dec 1527),
+   HistoCrypt article 389, Venice cryptography press pieces. No decipherment of a 26 Oct letter.
+4. `DECODE R9970 Simancas 1527 Galende cifras Andrea del Burgo Gattinara Fugger "al príncipe"` (descriptive title, with
+   Bourdeau's reading of the images) -- BL Add MS Simancas-transcript records (searcharchives.bl.uk 040-002019988/9: del
+   Burgo letters 1525-29, one of 3 Nov 1527), CSP Spain "November 1527, 1-20" (prod.british-history.ac.uk node 74585:
+   HTTP 401 to WebFetch, not read), Estudios Románicos "Nápoles 1547" and "Ciphers of Joanna of Austria". No page on R9970.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Simancas 1527 Gattinara`): no scienceblogs.de page returned.
+6. Cryptiana (`site:cryptiana.blogspot.com Simancas Charles V cipher 1527`): no cryptiana.blogspot.com page; results were
+   the Estudios Románicos series, the Granada cipher museum page on Philip II's Cifra General, and an Oviedo thesis record
+   "Construcción, uso y descifrado de los lenguajes secretos en el siglo XVI" (Charles V's ciphers 1521-27; not opened).
+7. Cipher Mysteries (`site:ciphermysteries.com Simancas cipher Charles V Gattinara`): no ciphermysteries.com page; LORIA's
+   "Charles V's encrypted letter" (1547 letter, a different item) and the same academic set.
+No decipherment or plaintext of the 26 Oct 1527 letter found in any post or comment thread. Requests: WebSearch 7,
+prod.british-history.ac.uk 1 (401, not retried), archive.org 1 (advancedsearch) + be-api.us.archive.org 6.
+
+## Premise check (GF-A2B-1, 3 Oct 2026)
+
+(a) Folder's own mentions -- found: the "Solver-repo check (bourdeau, 2 Oct 2026)" section above already records
+Bourdeau's verdict that R9970's images are not a cipher; DocumentsList "No records found".
+(b) Other solvers' working files -- **found, decisive for the images**: dbourdeau/cyphersolver (shallow clone, HEAD
+e8b4287, 2 Oct 2026) `targets/burgo1527/NOTES.md` and `reading_evidence.md` (28 Sept 2026): the four DECODE R9970
+images are two revised drafts of a clear Spanish minute headed "al principe" -- Charles V to Prince Philip about an
+exchange (*cambio*) of 110,770 ducats ("CX U DCC LXX") with "Antonio Fucar" (Anton Fugger), datable 1543-1554 since
+Philip was born in May 1527; "No cipher anywhere on the four surfaces"; the Roman-numeral sum and the U thousands
+sign explain DECODE's "graphic signs, numerical" tags. The del Burgo-Gattinara letter of 26 Oct 1527 (DECODE's
+description, after Galende 1994 p. 163) is not on these scans and was not located by him (PARES leg. 1563 not
+itemised). Bourdeau's catalogue entry 198 is removed and a DECODE correction queued. Read here, not copied (MIT/CC BY
+4.0, credited). aaymeloglu/unsolved-ciphers (HEAD d2800bb, 27 Sept): R9970 only in the catalogue harvest (cited, not
+copied).
+(c) Physical neighbours -- not viewed: the R9970 images were not fetched this pass (no DECODE login); Bourdeau's
+reading of all four surfaces stands unchecked by this repo. Leg. 1563's neighbouring folios are not itemised online.
+(d) Recipient-side editions -- partly: CSP Spanish III pt 2 (the calendar of Simancas Estado for 1527) calendars del
+Burgo's Ferrara letters of 4, 18 and 24 Oct 1527 with "(Cipher:)" passages (status-line citation), none dated
+26 Oct; the BL's Simancas transcripts (Add MS records 040-002019988/9) list del Burgo letters 1525-29. Gattinara's
+own papers (Bornate's edition of his autobiography/documents) not searched.
+Consequence (for the orchestrator, not changed here): the item as imaged in DECODE carries no cipher on Bourdeau's
+reading; the 1527 letter it is meant to represent is unlocated. ROOM flag sent to the account-3 orchestrator.
+
+## While waiting
+
+Next action that depends on nobody: one DECODE browser login to fetch R9970's four images and confirm or refute
+Bourdeau's "al principe / Antonio Fucar" reading by eye (a one-page check, no cryptanalysis); if confirmed, the
+target is a catalogue correction and the 26 Oct 1527 letter is a separate search (Galende 1994 p. 163's source).
