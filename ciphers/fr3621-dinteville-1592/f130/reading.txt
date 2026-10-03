@@ -1,0 +1,13 @@
+# f.130r decoded with f128/key_syl.tsv (score_f130.py). lower = C, UPPER = M, ? = unkeyed (U), [..] = clear.
+# grades: C 266 M 225 U 39
+L01	L E U O
+L02	? E A o i u s i L B i E ? ? ? i u ? o U A u E u q u i m E A A E D u L E s i r E n u o i E A A u e D D E L A O u L D A E [bonne] [fortune]
+L03	[aussi] [si] [vous] [plaist] [Monseigneur] [que] D i q i e D E m e u A E s e u l i D i A u E D L e ? H A B i u A n s E u [que] [larmee] [Lorraine]
+L04	[se] [fortifie] [et] [a] [qui] [estoit] [du] [costé] [de] [Strasbourg] q i e ? D r E u o u A n A B ? A m o L i l m e s E r n A L ? ? A l L E s e D E D
+L05	o n s e r u E A D e s ? E U l e M E e n l o B e i s ? A n D e Q A u e l L E e H ? [Messieurs] [de] [la] [ville]
+L06	[dy] s i l E ? A o N r D e s
+L07	n O s o n ? ? l A s ? E E e s o u L ? r e L E H A s L r u q u M e D o u r ? l A u E I l L e i l n e s E l e u E A A Q n D E n i E e r D e ? A
+L08	i l L E s D A u L ? r E D o s ? E L e n E u o i l E D e d A n s ? E B i e n B A s ? i q u I l n e s o L ? ? l u s A D r A E n D r E q Q E l E
+L09	D E H o r s l E s A o r D E ? s E r u i A o n ? U A n ? A l E E s D o n ? ? I o L r A l E u A D E u o L r q u E A L A D E A L N D E D e
+L10	l A u i l L E e l e r o i E A u o q A s m E s D u ? E R A S ? I I E U A s ? D E m o A q q A E S O l n E e e l A L s ? A s A m A i e u E D I
+L11	U o u r U o i r D E m e n r e ? i A e r D A u l ? A n ? q u i l i A A U e r D A E e l A u L e E ? l H o n B E u r [pour] [luy]

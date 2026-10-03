@@ -1,0 +1,20 @@
+{
+ "stat": "fr16 4-gram mean log10 P/letter inside keyed runs",
+ "real": -1.3472,
+ "windows": 428,
+ "shuf_mean": -1.9478,
+ "shuf_p95": -1.713,
+ "shuf_max": -1.5428,
+ "shuffles_ge_real": 0,
+ "n_shuffles": 1000,
+ "gate_pass": true,
+ "cover_real": 0.8471,
+ "cover_shuf_mean": 0.6481,
+ "cover_shuf_p95": 0.7525,
+ "grades": {
+  "C": 266,
+  "M": 239,
+  "U": 25
+ },
+ "variant": "o_stem"
+}

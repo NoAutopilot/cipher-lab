@@ -1,0 +1,21 @@
+line	seg	order	signs	note
+L01	s2	1	? ? ? 4 1 ? ? ?	tail after CLEAR et partly cut; signs poorly visible
+L02	s1	2	t o c y x m sq 1 + r x o 0 t v f zh 1 + m y a c m 1 al a m x 2 1 D v 1 # m 4	uncertain: sign 4 (y vs NEW), several
+L02	s2	3	0 sq x w 1 f al y L 1 c v m 0 # # 1 + D y al + # c 1 CLEAR:bonne CLEAR:fortune	skipped overlap # m 4; sign 3 w/x unsure
+L03	s1	4	CLEAR:aussi CLEAR:si CLEAR:vous CLEAR:plaist CLEAR:Monseigneur CLEAR:que # x a x 0 # 1 2 0 al c 1 sq	x signs could be p/rho
+L03	s2	5	0 m 4 x # L v m 1 # + 0 0' T v div L m v f sq 1 m CLEAR:que CLEAR:larmee CLEAR:Lorraine	skipped overlap c 1 sq
+L04	s1	6	CLEAR:se CLEAR:fortifie CLEAR:et CLEAR:a CLEAR:qui CLEAR:estoit CLEAR:du CLEAR:costé CLEAR:de CLEAR:Strasbourg a x 0 v' # w 1	a x may be a p
+L04	s2	7	m y m c f v r v' v 2 y + x 4 2 0 sq 1 w f c + v' NEW:N-like v 4 4' 1 sq 0 # 1 #	skipped overlap # w 1
+L05	s1	8	y f sq 0 w m 1 c # 0 sq v' 1 h 4 0 z 1 0 f 4 y div 0 L sq 0' v f # 0 a c m 0 4	
+L05	s2	9	+ 1 0 T v' CLEAR:Messieurs CLEAR:de CLEAR:la CLEAR:ville	skipped overlap a c m 0 4
+L06	s2	10	CLEAR:dy sq L 4 1 0' D y f w # 0 sq	last sign cut
+L07	s1	11	f y sq y f v' 0' 4 v sq 0' 1 0 0 sq y m + v' w 0 + 1 T v sq 4 w m a m z 0 # y	y vs psi uncertain
+L07	s2	12	m w v' 4 v m 1 L 4 + 0 x 4 f 0 sq 1 4 0 m 1 c v a f # 1 f L 1 0 w # 0 v' v	skipped overlap 0 # y (z is tail of m)
+L08	s1	13	x 4 + 1 sq # v m + v' w 1 # y sq v' 1 + 0 f 1 m y x 4 1 # 0 3 v f sq 0' 1 div x 0	
+L08	s2	14	f div v sq v' L a m L 4 f 0 sq y + v' 0' 4 m sq v # w v 1 f # w 0 a a 0 4 1	skipped overlap 1 div x 0
+L09	s1	15	# 1 T y w sq 4 1 sq D y w # 1 0' sq 0 w m L c y f v' h v f v' D' 4 1 0 sq # y	
+L09	s2	16	f v' 0' x y + w v 4 1 m c # o m y + w a m 1 v + D' # 1 D 4 f # 1 # 0	skipped overlap sq # y
+L10	s1	17	4 v m L 4 + 1 . 4 0 w y L 0 v m y a c sq z 1 sq # m 0' 1 w 0 0 0' L x 0 h v	
+L10	s2	18	sq 0' # 1 z y v a a c 1 sq y 4 f 1 . 0 4 v + sq v' v sq D' z v L 0 m 1 # L	skipped overlap o h v
+L11	s1	19	h y m w a y L w # 1 z 0 f w 0 t' L c 0 w # v m 4 v' v f v' a m 1 4 x	
+L11	s2	20	v D' h 0 w # c 1 . 4 v m + 0 1 v' 4 T y f r 0 m w CLEAR:pour CLEAR:luy	skipped overlap 1 4 x

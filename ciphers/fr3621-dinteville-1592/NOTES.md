@@ -343,7 +343,7 @@ clone of Bourdeau's target folder). Vision calls: 2 blind Sonnet passes plus the
 sub-crops read in this session). Rule 10: no novelty claim. This is an alignment of a period gloss that DECODE R9450
 already marks Decrypted.
 
-## f.130r transcription and key_syl decode: PRE-REGISTRATION (A2-DIN2, account 2, 3 Oct 2026, written 05:03 UTC before any scoring)
+## f.130r transcription and key_syl decode: PRE-REGISTRATION (A2-DIN2, account 2, 3 Oct 2026, written 05:00 UTC before any scoring)
 
 Brief `.claude/briefs/runs/2026-10-03-acct2-a2-din2.md` (LANE-A2PUSH2). Intake gate pasted:
 ```
@@ -368,9 +368,69 @@ Fixed before the transcription is reconciled or any decode is scored:
   mean, p95, max and rank. A pass means "the f.128 key reads f.130 better than its own shuffles", not a reading.
 - Script: `f130/score_f130.py` (`--check` regenerates the committed outputs).
 
+## f.130r transcription and key_syl decode: RESULT (A2-DIN2, account 2, 3 Oct 2026)
+
+**Crops (pasted, Usage 6).** `tools/gallica_folio.py btv1b52524472n --folio 130` -> canvas f269, label '130r'. The lines
+slope up to the right by about 0.04-0.06 px/px, so fixed-y bands mixed neighbouring rows. These are the crops that were used:
+```
+$ python3 tools/iiif_lines.py --ark btv1b52524472n --canvas 269 --region 280,600,3360,1360 \
+    --out ciphers/fr3621-dinteville-1592/images --prefix f130 --debug --centres 125,201,279,387,525,755,891,989,1095,1187,1325 \
+    --top-margin 50 --bottom-margin 50 --max-width 1760 --overlap 160 --follow-slope 300 --slope-local
+  band L01: slope fit y = 100.7 + -0.03221*x ... band L11: slope fit y = 1302.1 + -0.06327*x
+  wrote 22 crops and ciphers/fr3621-dinteville-1592/images/manifest.json
+```
+The centres are the left-edge y values, so the slope tracker starts on the cipher row. I checked the crops on contact
+sheets before any pass. Eleven lines carry cipher: L01 is a tail after "et", L02-L05, L06 is a tail after "dy", and
+L07-L11 run to the clear words "pour luy".
+
+**Transcription (rule 2: from the image).** Two blind Sonnet passes read 20 segment crops, using the f.128 label set
+(`f130/pass_instructions.md`). Pass B read the crops in reverse order. The raw output is in `f130/passA.tsv` and
+`f130/passB.tsv`. I then did one Opus reconciliation (`f130/reconcile_f130.py`). It first normalizes the labels: x -> p, because
+the looped-x glyph is the sign f.128 labels p (checked on `images/f128_L03_s1.jpg` against gloss_pairs L03 "deux millions" =
+z p 4 plus L); + and t -> plus; and 2 -> z. After that I re-read L02 s1, L10 s1 and L11 s1 from 1.6x zooms (`images/zoom/f130_*_z.jpg`).
+That re-read found one systematic pass error. Both passes sometimes wrote a cross label (t, t') for v' (a v with a
+crossed stem). Error: err_2reader only, since there is no benchmark item for this hand. Before normalization the A-B
+edit distance is 108 on 570 tokens. After it, the distance is 61 on 542 cipher signs (11%). Every sign inside an A/B
+disagreement span is conf M (57 of 530). Result: `f130/ciphertext.tsv` has 530 cipher signs (3 of them dots) and 29 labels.
+
+**Inventory against f.128** (`f130/inventory.tsv`). Signs absent from f.128 are flagged there. v' occurs 23 times on f.130
+and 0 times on f.128. 0' (an o with a stem) occurs 14 times. The f.128 reconciliation wrote that glyph as 0 ("sq 0 0 f" over "□ o ō ≠"),
+so 0' may not be a separate sign. NEW:e-hook and NEW:N-like occur once each. Every other f.130 label occurs on f.128.
+The key does not cover v' (23), 0' (14) or the two NEW signs. Together they make the 39 U tokens.
+
+**Test (as pre-registered above, `f130/score_f130.py`, `f130/result.json`, `f130/control.tsv`).**
+
+| statistic | real (key_syl) | shuffled keys (1000) mean | p95 | max | shuffles >= real | gate |
+|---|---|---|---|---|---|---|
+| fr16 4-gram mean log10 P/letter, keyed runs (385 windows) | **-1.334** | -1.961 | -1.716 | -1.538 | **0/1000** | **PASS** (real > p95) |
+| word cover (secondary) | 0.841 | 0.631 | 0.743 | - | - | - |
+| variant o_stem (0' read as 0, not pre-registered; 428 windows) | -1.347 | -1.948 | -1.713 | -1.543 | 0/1000 | - |
+
+The control can differ from the target on this statistic: a shuffled key keeps the letter multiset and the keyed
+positions, and moves only which sign carries which letter. The f.128 key reads f.130 about 0.2 log10 per letter better
+than the best of 1000 shuffles. Grades (decode_key.py, 527 tokens, dots excluded): **C 263, M 225, U 39**. No H. This is
+a cryptanalytic result: a period gloss key from a sibling leaf, applied to a leaf with no gloss.
+
+Rule 7: `python3 tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` prints "reading up to date"
+(decode.json). `tools/decode_key.py`'s key reader treats a key row whose sign is `#` as a comment line. For that reason
+score_f130.py writes two derived copies, `f130/key_dk.tsv` and `f130/ciphertext_dk.tsv`, in which `#` is spelled
+`hash`. A tool fix is flagged for the lane. `python3 ciphers/fr3621-dinteville-1592/f130/score_f130.py --check` prints
+"check: committed outputs match". There is no spec for this target, so judge_plaintext.py was not run as a spec judge.
+Its NgramModel is the statistic above.
+
+**What the decode shows** (`f130/reading.txt`: lower case = C, upper case = M, ? = U). This is not yet a reading. The
+runs contain recognisable French: L08 "...dedans ... e bien bas ... quil nes...", L09 "dehors les ...", L10 "...la ville
+... le roi ...", L11 "uouruoir de mener ... qui l'... honbeur" (pourvoir? honneur?), and L05 "onserue" (conserve?).
+Long stretches drift. The likely causes are the weak key rows (v=a 5/11, #=d 5/13, 1=e 2/11, .=e) and the 39 unkeyed
+v'/0' signs. Not done in this step: a word-level reading, key repair from f.130's own runs, and the fr.3623 f.23 sibling.
+
+Requests: gallica.bnf.fr 3 (manifest via gallica_folio.py, 1 overview at 1000 px, 1 native region; later crop runs
+read the cached file). Vision calls: 2 blind Sonnet passes plus 1 Opus reconciliation (2 contact sheets, 3 zooms, 1
+f.128 reference crop, 4 check crops). Rule 10: no novelty claim.
+
 ## Remaining gaps (A2-DIN, 3 Oct 2026)
-Read so far: f.130 0 of about 420 signs read; f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
-- f.130 cipher passages (about 420 signs) - blocker: not-attempted; the f.128 key exists at C only for about 17 signs and f.130 is not transcribed (f128/key_syl.tsv); next: transcribe f.130 (Gallica canvas f269, 2 line-crop passes + reconciliation in this label set) and apply key_syl.tsv with a shuffled-key control, ~$7
+Read so far: f.130 530 of 530 signs transcribed and decoded at C 263 / M 225 / U 39 (f130/reading.txt, not yet a word-level reading); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
+- f.130 word-level reading (530 signs transcribed, key_syl decode beats 1000 shuffled keys 0/1000; C 263 M 225 U 39) - blocker: not-attempted; 39 signs unkeyed (v' 23, 0' 14, 2 NEW) and the weak key rows drift (f130/reading.txt); next: key repair (v', 0', weak rows) by a constrained hill-climb seeded with key_syl on f.130 + f.128 together, scored on fr16 with the same shuffled-key control, then a word-level reading for a verifier, ~$5
 - f.128 drifting spans (L03 "a geneue +", L04 from "doibt", L05 from "de +") - blocker: not-attempted; likely transcription or gloss-reading error (f128/align_syl.tsv M rows); next: a second reader on those crops only, then re-run align_f128.py --syl, ~$3
 - fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
 
@@ -379,7 +439,7 @@ Read so far: f.130 0 of about 420 signs read; f.128 key aligned on 89 of 183 sig
 - [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9)
-- [ ] key-rebuild: f.128 key at C, partial (key_syl.tsv); apply to f.130 is the planned step
-- [ ] image-check: f.130 not yet transcribed from Gallica f269
+- [ ] key-rebuild: key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repair of v'/0'/weak rows is next
+- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps; cheapest next: transcribe f.130 and apply f128/key_syl.tsv with a shuffled-key control, ~$7
+Verdict: keep going: 3 internal gaps; cheapest next: key repair (v', 0', weak rows) seeded with key_syl on f.130 + f.128, same shuffled-key control, then a word-level reading for a verifier, ~$5
