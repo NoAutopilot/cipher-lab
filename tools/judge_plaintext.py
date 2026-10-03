@@ -149,6 +149,14 @@ LANG_CORPORA = {
                DATA / "es17c7" / "memorialhistri15realuoft.txt.gz", DATA / "es17c7" / "memorialhistri16realuoft.txt.gz",
                DATA / "es17c7" / "memorialhistri17realuoft.txt.gz", DATA / "es17c7" / "memorialhistri18realuoft.txt.gz",
                DATA / "es17c7" / "memorialhistri19realuoft.txt.gz"],
+    # es17a (3 Oct 2026, OLD-ES17A, account 1): 1590-1625 Spanish state, diplomatic and court prose -- Cabrera de
+    # Cordoba's Relaciones 1599-1614 (1857 print), San Clemente's embassy letters 1581-1608 (1892 print), Coloma 1625,
+    # Mendoza 1592 and Antonio Perez's Relaciones 1624 (the three originals long-s repaired with tools/data/es18's
+    # cleaner), each capped at 650k folded letters -- for na-oldenbarnevelt-2442-1605 (a 23 Dec 1605 letter), which
+    # es17c (1643-47) misses by 40 years and es17 (fiction) by register. A spec opts in with "judge": {"language":
+    # "es17a"}. See tools/data/es17a/README.md (leave-one-file-out false-negative rate and per-fold spread).
+    "es17a": [DATA / "es17a" / f"{i}.txt.gz" for i in ("relacionesdelasc00cabr", "correspondencia01clemgoog",
+              "bub_gb_zb0d4P6LU2oC", "bub_gb_54G5MclHRpUC", "bub_gb_CujQp6gW1dQC")],
     # nl (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo holds only a target's own committed reading (a few KB,
     # nowhere near the ~200k-character floor a language check needs) -- circular per CLAUDE.md "never use a
     # target's own reading as its corpus". Not wired. A future worker who fetches a real nl period corpus
