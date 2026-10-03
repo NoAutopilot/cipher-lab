@@ -1,0 +1,9 @@
+{"jobs": [
+ {"ciphertext": "R1953_pipe.txt", "key": "key_sibling.tsv", "format": "pipe", "style": "spaced",
+  "reading": "reading_R1953_sibling.txt", "tokens": "reading_R1953_sibling_tokens.tsv",
+  "header": [
+   "# hellen-frederick-1752 R1953 (4 Jan 1752) decoded with the MICHELL SIBLING key (DECODE R1050+R1051 period glosses), FT4 3 Oct 2026.",
+   "# NOT A READING: test_sibling_output.txt shows this key does not beat 200 shuffled-value keys on R1953 (p=0.695). Kept only so the negative is reproducible.",
+   "# tokens {total}: {HCSMIU}"
+  ]}
+]}

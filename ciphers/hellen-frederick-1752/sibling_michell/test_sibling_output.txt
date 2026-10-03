@@ -1,0 +1,29 @@
+key: 268 codes, range 2-20005, 7 with a ½ mark
+# positive control (same code, held-out letter): key from R1050 only, applied to R1051 code stream
+R1051 (control)	N_tokens=122	covered=68 (55.7%)	real=-5.735	shuffle_mean=-9.236	shuffle_p95=-8.218	p=0.000
+# targets: full sibling key (R1050+R1051)
+# ciphertext_R1045.txt: 367 numeric tokens, in key range 365 (99.5%), target median 972
+R1045	N_tokens=367	covered=35 (9.5%)	real=-8.205	shuffle_mean=-9.352	shuffle_p95=-8.133	p=0.060
+# ciphertext_R1046.txt: 209 numeric tokens, in key range 206 (98.6%), target median 1025
+R1046	N_tokens=209	covered=18 (8.6%)	real=-8.903	shuffle_mean=-9.288	shuffle_p95=-7.827	p=0.330
+# ciphertext_R1047.txt: 193 numeric tokens, in key range 192 (99.5%), target median 1242
+R1047	N_tokens=193	covered=24 (12.4%)	real=-9.254	shuffle_mean=-9.316	shuffle_p95=-8.028	p=0.455
+# ciphertext_R1048.txt: 188 numeric tokens, in key range 186 (98.9%), target median 1103
+R1048	N_tokens=188	covered=13 (6.9%)	real=-8.839	shuffle_mean=-9.301	shuffle_p95=-7.496	p=0.355
+# ciphertext_R1049.txt: 506 numeric tokens, in key range 506 (100.0%), target median 744
+R1049	N_tokens=506	covered=42 (8.3%)	real=-9.260	shuffle_mean=-9.295	shuffle_p95=-8.053	p=0.480
+# ciphertext_R1060.txt: 134 numeric tokens, in key range 134 (100.0%), target median 1044
+R1060	N_tokens=134	covered=11 (8.2%)	real=-8.481	shuffle_mean=-9.361	shuffle_p95=-7.657	p=0.245
+# ciphertext_R1061.txt: 151 numeric tokens, in key range 148 (98.0%), target median 1017
+R1061	N_tokens=151	covered=18 (11.9%)	real=-8.064	shuffle_mean=-9.327	shuffle_p95=-8.065	p=0.050
+# ciphertext_R1953.txt: 836 numeric tokens, in key range 835 (99.9%), target median 897
+R1953	N_tokens=836	covered=98 (11.7%)	real=-9.641	shuffle_mean=-9.367	shuffle_p95=-8.500	p=0.695
+# power check: positive control subsampled to each target's covered count (200 draws of the R1051 stream, share with p<=0.05 against 50 shuffles each)
+R1045	covered=35	power(control at this N)=1.00
+R1046	covered=18	power(control at this N)=0.99
+R1047	covered=24	power(control at this N)=1.00
+R1048	covered=13	power(control at this N)=0.99
+R1049	covered=42	power(control at this N)=1.00
+R1060	covered=11	power(control at this N)=0.99
+R1061	covered=18	power(control at this N)=1.00
+R1953	covered=98	power(control at this N)=1.00

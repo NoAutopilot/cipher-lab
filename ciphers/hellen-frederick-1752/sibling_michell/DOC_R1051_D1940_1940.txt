@@ -1,0 +1,36 @@
+#CIPHERTEXT
+#CATALOG NAME: KHA_A31_PWV_inr198_A.L._Michell_to_Frederick the Great_1751-11-12
+#IMAGE NAME: 5504.png
+#TRANSCRIBER NAME: XZ
+#DATE OF TRANSCRIPTION: March 11, 2020
+#TRANSCRIPTION TIME: 2h
+#TRANSCRIPTION METHOD: Manual
+
+#IMAGE NAME: 5504.png
+#COMMENTS: (1) In the first  line of cleartext, the "12e" is written below "1er" (2) In the plaintext of line 1, the second last word is indistinguishable (3) In the plaintext of line 2, the second last word should be "on" (corresponding to cipher "1454"), but it has an preceding "F" (4) In line 4, an "s" is written next to "2694", an "nt" is wrtiitem next to "2965" (5) In line 6, an "s" is written next to "2139" (6) In line 7, an "s" is written next to "2206" (7) In line 8, an "e" is written next to "715"
+<CLEARTEXT FR Londres le 1er/12e Novemb 1751>
+<CLEARTEXT FR Sire>
+<CLEARTEXT FR (J'ay reçu le tres gracieux Resent? dont il a plus a V.M. de>
+<CLEARTEXT FR mlhonnores? en date du 30e du mais dernier)>
+<PLAINTEXT FR comme l'on continue de voir de bonne s nouvelle s du l'deHoldeonesse? au>
+2 0 0 5  3 3 2  5 7__ 6  5 0  2 5  5 0  3 5 5 0  1 4 8 7  4 1 3  1 4 3 3  3 0 0  1___ 6 5 2  1 0
+<PLAINTEXT FR sujet de l' etablissement du pouvoir dans la maison d' Orange Fon/on? est>
+1 5 4 9  5 0  2 6 9 2  2 4 9 2  3 0 0  2 6 5 7  1 2 0 1/2  1 1 7 2  2 5 0 9  1 5 0  3 0 6 8  1 4 5 4  1 2 4 2
+<PLAINTEXT FR moins inquiet sur cet article que ci-devant mais pour cela on n'est>
+1 2 7 8  3 6___ 4  5 1 0 1/2  3 2 2 2  2 0 8 0  2 9 9 9  1 9 5  9 8 6  1 0 0 5  4 6  1 4 5 4  1 3 2 5
+<PLAINTEXT FR pas encore assure que les Resolutions de la Republique s accordent>
+2 6 4 5  2 9 6 3  6__ 3__  2 9 9 9  7 0 4  2 6 9 4  5 0  4 0 1/2  2 6 5 1  1 4 8 7  2__ 9__ 6__ 5__
+<PLAINTEXT FR d oros en avant avec celles de la cour de la mancire/manure? que du>
+2 3 2 8  2 0 7 9  3 5 0  3 5 7 0  9 1  8 6  5 0  8 0 0  5 1 8  5 0  4 0 1/2  1 8 0 5  2 9 9 9  3 0 0
+<PLAINTEXT FR v? ant du PrinceStadhouder et jusqu'à ce que l'on ait porté les états>
+6__ 1__ 8__  1 0 0  3 0 0  1 7___ 4 4  3 4 0  1 3 8 1  1 0 0 0  2 9 9 9  3 3 2  2 2 9 9  3 0 2  7 0 4  2 1 3 9
+<PLAINTEXT FR a esuret? dans les different es mesures dont j'ai eu  l' honneur de>
+2  1 3 3 1  1 2 0 1/2  7 0 4  1 8 0 6  8 3 0  2 2 0 6  8 8  1 2  3 0 8 0  2 6 9 2  3 9 4  5 0
+<PLAINTEXT FR faire raport dans ma derniere depeche et au contenu de laquelle je ne>
+1 2 8 3  1 4 0 9  1 2 0 1/2  3 3 3 3  7 1 5  2 8 5 3  3 4 0  1 0  1 6 7  5 0  5 3 9  1 6  2 7 5
+<PLAINTEXT FR puis que me referer encore l'on ne sera ni tranquille la dessus>
+1 2 0 5  2 9 9 9  2 4 7  2 9 0 2  2 3 4 1  1 4 5 4  2 7 5  6 8  7 9 6  2 0 0 2  4 0 1/2  8 4 8
+<PLAINTEXT FR ni l'on n' obtiendra a rien d' important>
+2 8 3  1 4 5 4  4 0 9  3__ 2__ 8__  2  1 0 3 7  2 3 2 8  2___ 6___ 3___
+<CLEARTEXT FR J'ay l'honneur d'etre>
+<CLEARTEXT FR /.Jcgné :/ Michells>

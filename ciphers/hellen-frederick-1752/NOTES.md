@@ -532,3 +532,28 @@ side (Fagel 5206, De Leeuw) is covered in (a).
 
 Requests this pass: koninklijkeverzamelingen.nl 4 (1 curl, 3 browser), googleapis 3, api.openalex.org 1,
 github.com 2 shallow clones (grep only); all >=1.5 s apart; no 403/429/challenge. Nothing read, graded or tested.
+
+## First cheap test: Michell sibling key (FT4-hellen-frederick-1752, account-4, 3 Oct 2026)
+
+Lead from the Premise check (c). **What R1050/R1051 hold:** login-free metadata (cached listing
+`sources/decode/records-decrypted-2026-09-24.tsv`, no fresh listing call): both "Decrypted", Cipher, KHA PWV inv. 198,
+French, R1050 2 pp. (Michell to Frederick II, London 28 Aug/8 Sept 1752), R1051 1 p. (1/12 Nov 1751). After one browser
+login: each has one document, DECODE's transcription (transcriber "XZ", March 2020) of the 4-digit code lines with the
+period Dutch decipherer's interlinear French over them, and full-size page images (3, served at 5472x3648, not
+committed; sha1s in `sibling_michell/README.md`). No key sheet: the key is the glosses themselves.
+Built `sibling_michell/key_sibling.tsv` (268 codes, 14 with conflicting glosses; `build_key.py --check`), grade S.
+
+**Overlap first:** ranges overlap (Michell 2-~3600; Hellen 1752 up to ~1650, 1756 up to ~3100, 1763 up to ~3900), so the
+test ran. **Test vs control** (`sibling_michell/test_sibling.py`, table in HYPOTHESES.md): mean fr18 word log-prob of the
+decoded covered tokens vs 200 value-shuffled keys. R1953: real -9.641 vs shuffle mean -9.367, p=0.695 (98/836 covered);
+the other seven p 0.050-0.480. Positive control (R1050-only key on R1051): -5.735 vs -9.236, p=0.000, and power 0.99-1.00
+at every target's covered count. **The Michell 1751-52 code is not Hellen's code** for any of the eight letters
+(control-backed; conditional on DECODE's transcriptions, rule 2). Supporting: 37% of Michell's glossed tokens are above
+1732, R1953 has 1 of 836 there; Michell's half-code mark (40½ la) is absent from every Hellen transcription.
+`decode_key.py ciphers/hellen-frederick-1752/sibling_michell --check` passes (the sibling decode is kept as the negative's
+reproduction, not a reading: H 0, C 0, S 96, M 3, U 747). No reading claimed; status stays `open`.
+
+Requests: de-crypt.org 13 after one login (record 1050, 1051, DocumentsList x2, ImagesList x2, 2 documents, 3 thumbnails,
+3 full-size images), 1.6 s apart, no challenge; account name not in any saved file. Vision calls 0.
+Next suggestion (not run): other Prussian chancery sibling keys of 1751-56 with a code range near 1-1650 (DECODE key
+records, GStA PK); the folder's 1763 cluster (range to ~3900) is the one a Michell-sized code could still fit, and it tested negative here.
