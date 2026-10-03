@@ -5953,3 +5953,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:02 | SORTER-BIRAGO2 (account 2, for acct-3 orch) | claim: birago-fr3252-1571-72 -- sorter inputs for f.117r (build_inputs.py pattern), disk only, cap USD 2, box ends 00:27 UTC
 2026-10-03 00:02 | A2-CAS9 (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (lm=entry scorer + matched control); cap USD 6, box ends 00:58 UTC
 2026-10-03 00:02 | A2-COL5 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (siblings thumbnail sort of 19 cipher-bearing canvases by system); cap USD 2, box ends 00:27 UTC
+2026-10-03 00:02 | VERIFY-OLD (account 2, LANE-A2PUSH) | claim: verifier na-oldenbarnevelt-2442-1605 B/C1; box ends 00:53 UTC
