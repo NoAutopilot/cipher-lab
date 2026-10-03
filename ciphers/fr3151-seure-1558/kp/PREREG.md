@@ -51,3 +51,15 @@ letters only, abbreviations expanded only where the hand writes them out, unread
 Opus subagent sign-count/segment pass of line crops with the existing f75L glyph conventions where they fit
 (`glyphs/`), unknown signs given ad-hoc labels consistently. Then one reconciliation by the worker. Signs read
 and cost per 100 signs recorded.
+
+## Amendment A1 (3 Oct 2026, committed after crops were cut, before any read or score)
+
+Crops (`images/kp/`, debug overlays checked) show f85R's clear prose runs the whole top of the page (23+ lines,
+~1,500 letters), longer than one leaf of 43's cipher at any r. To fit the cap, P is fixed to the clear text of
+f85R crop lines L01-L08 from "(que je donnay ..." (the words 43 also writes in clear on f81R line 1, "Sire, Je
+vous escrivis par mes dernieres ... doctobre", are dropped, per H-span's start anchor; f81R's clear opener ends at
+"doctobre" and its cipher begins on the same line). C is read from f81R line 1 (cipher part) through as many
+lines as C_1.00 + one line needs (~L01-L20). A prefix of the H-span pair is still an instance of H-span.
+The positive control is also run at 40% sign error, because this folder's earlier two-reader passes on f75L
+agreed at only 38-52% (rule 3: the control's injected error must bracket the target's reader error); if the
+control fails at 40% but passes at 15%, a target miss is logged "non-test above ~15% reader error", not a negative.
