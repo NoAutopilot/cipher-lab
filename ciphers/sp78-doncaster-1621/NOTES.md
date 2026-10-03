@@ -1,4 +1,5 @@
 open
+*Calendar of State Papers, Domestic, James I, 1619-1623* (Green; archive.org `sim_great-britain-public-record-mary-elizabeth-i-and-james-i_1619-1623`, full text grepped whole by GF4-BATCH8 (account-4), 3 Oct 2026): read at its Sept 1621 entries, pp. 287-295 -- no Doncaster-to-Calvert letter, no cipher item; its index lists Doncaster's French embassy at pp. 276, 346, 362, 394, 425, 434, none this letter; its only 'partly in cipher' Doncaster item is at pp. 173-174 (Woodford to Nethersole, 1620). Birch, *Court and Times of James I* vol. 2 (IA `courttimesofjame02bircuoft`), read at July-Sept 1621, pp. 270-288: newsletters only (Doncaster leaves for France 3 Aug 1621, p. 272). No CSP Foreign calendar covers 1621. No printing of SP 78/69/91 or its f.222 cipher advertisement found.
 
 # Doncaster (Viscount Doncaster, later Earl of Carlisle) to Calvert, with an advertisement in cipher enclosed — TNA SP 78/69/91
 
@@ -117,3 +118,30 @@ Sept 2026, now folded into the consolidated TNA batch, ASKS row 73).
 - S: fetch full record detail (note field) for SP 78/69/56 (f.142) and /59 (f.146) individually -- only f.144's note was checked this pass -- tools/discovery_items.py.
 - S: search TNA Discovery broadly for other 'French titles for the cipher'-style key sheets from the same 1621 embassy-preparation clerks, to gauge what such a sheet typically contains before assuming f.144 is the operative key.
 - S: search Calvert's later CSPD entries for a retrospective mention of this cipher/advertisement; only the pre-embassy hits were searched this pass.
+
+## Web and blog check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Doncaster Calvert 1621 cipher advertisement "French titles" Hay embassy France` -- the SSNE biography of
+James Hay, Wikipedia, a Folger ambassadors list, BHO's CSP Venice vol. 17 index page, the TNA blog post on an undeciphered Louis XIV
+letter (a different item); nothing on this letter or f.144/f.222. (2) site-restricted to the three blogs, `Doncaster 1621 cipher` on
+**Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne), the **Cryptiana blog** (cryptiana.blogspot.com) and **Cipher Mysteries**
+(ciphermysteries.com): only those blogs' front pages and unrelated posts (Blitz ciphers, Dorabella); no post or comment thread names
+Doncaster, Calvert or SP 78/69. Solver repositories re-cloned shallow 3 Oct 2026 and grepped (`doncaster|SP ?78/69`): zero hits in
+Bourdeau's and in Aymeloglu's repository.
+
+## Premise check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **found, not a decipherment** -- NOTES.md names SP 78/69/58 (f.144, July 1621) "French
+titles for the cipher", a candidate key sheet in the same piece, and /56 "Directions for the letters", /59 "List of French letters";
+all `digitised: false`, so none could be opened; none is described as a decipherment of f.222. (b) Other solvers' working files:
+**not found** -- no Doncaster folder, key or rendering in either solver repository. (c) Physical neighbours: **unreachable** -- f.214
+and its duplicate with the f.222 enclosure are `digitised: false` (Discovery C7322858); the piece-wide term sweep (24 Sept) found no
+decipher item beside f.214-222. (d) Recipient's side: **not found** -- Calvert's office papers are what CSPD calendars, and its Sept
+1621 entries (pp. 287-295) hold no copy or decipherment of the advertisement; the sender's own papers (BL Egerton, Hay/Carlisle)
+sit at the British Library, offline since 2023 (LESSONS.md), so are unreachable from here. Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH8)
+
+Waits on: the TNA page copy of f.142/144/146/214/222 (ASKS row 73, batch order).
+
+- S: grep CSP Venice vol. 17 (1621-1623; BHO or archive.org full text) for the Venetian ambassador's reports of Doncaster's Sept 1621 audiences, a free crib source for the advertisement's subject -- no person needed.
