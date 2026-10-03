@@ -160,3 +160,22 @@ l. 303, which crashed on an OpenAlex work with a null `display_name`.
 Requests: archive.org 24 (advancedsearch 3, metadata 7, djvu 13, print_check 1), books.google.com 37 (search-inside
 JSON, 1.6 s apart, no challenge), www.googleapis.com 12, be-api.us.archive.org 10, api.openalex.org 6, api.semanticscholar.org 4
 (429), api.crossref.org 1.
+
+## Addendum GAPS180 (account-4, 3 Oct 2026): Haake and the Wackerbarth paper
+
+The two items AUDIT2-MANT listed as "not excluded" under (b). Searched by word lists and search-inside, not read page by page.
+
+| family | searched | result |
+|---|---|---|
+| (b) Paul Haake | IA advancedsearch `creator:Haake` (+August/Flemming/Sachsen) and titles "August der Starke"/Flemming: no Haake title on this subject. Google Books API (key, country=US) `inauthor:Haake "August der Starke"`: 9 titles 1902-1939, all NO_PAGES; books.google.com search-inside on 5 (jMU9AAAAIAAJ, CywIAAAAIAAJ, Mx_rcQAACAAJ, VCzSAAAAMAAJ, 780rHAAACAAJ) returned 0 even for the control "Flemming" (non-test). HathiTrust bibliographic API via Open Library OCLC numbers, then HTRC Extracted Features word counts: *August der Starke* (1926, mdp.39015033271936, full view), *König August der Starke* (1902, uc1.$b191675, 42 tokenised pp.), *Kursachsen oder Brandenburg-Preussen?* (1939, inu.30000055055671, search-only). Positive controls: Flemming 56 / 6 / 13; Manteuffel (OCR "Manteussel"/"Manteufsel") on 9 pages of 1926; Wackerbarth 8 / 0 / 1. Targets: Angleterre, d'Angleterre, Suédois, Suedois, contentement, Chiffre, Chiffren, chiffriert, Dhona, Whitworth = 0 in all three; Stettin 0 (1926), 9 (1939, no page with Manteuffel). 1926 seq 139-141 (Manteuffel, 1712 nearby) are character sketches (Paykull, Sidney, Engländer), not a report. 1939 seq 233 cites Krauske for 1722-26 Prussian matters. | no print of the f.410 passage or of Krauske's decipherment found (bag-of-words, OCR-conditioned). The 1929/1930/1934 titles and the 1922 essay were not readable (NO_PAGES, not in HathiTrust under the OCLC numbers tried). |
+| (b) Rous 2016, "Der Weinkeller als Schlachtfeld" (in Gahlen et al., *Geheime Netzwerke im Militär 1700-1945*, doi:10.30965/9783657777815_004, OA) | Brill PDF: HTTP 202 challenge; BORIS (boris.unibe.ch/78675): Anubis wall; CORE: metadata only. Read through Google Books search-inside on RuHvEQAAQBAJ (PARTIAL). Controls: Wackerbarth 10, Manteuffel 10, Flemming 8, Krauske 2 (pp. 38-39, his 1905 edition, not the cipher). Targets: "Loc. 694", 694, 1712, Angleterre, reine, Stettin, dechiffriert = 0. | footnote 48 (p. 44) cites "SächsHStAD, 10026, Geheimes Kabinett, Chiffren de S. Exc. Mgr. le C. de Flemming, **Loc. 3234/5**; Chiffre, **Loc. 3233/4**": the Flemming cipher series beside DECODE record 4999 (Loc. 03233/02), **not Loc. 694**, used for the 1720s Société, not the 1712-13 reports. Not a print of this passage. |
+
+**Class unchanged: N4.** No prior print found, so nothing to propagate to status.json or SECOND-OPINIONS-QUEUE.tsv. Haake's
+volumes now count as searched (word counts, with controls) and Rous 2016 as searched (search-inside, with controls). Still
+not excluded: internal or unpublished work, Haake's NO_PAGES titles, page-by-page reading of any of these, and the JSTOR rows.
+Side lead for the key gap, not a novelty fact: Loc. 3233/4 and 3234/5 are Flemming cipher volumes, possible homes of a key
+for the f.409v codes above Krauske's table.
+
+Requests: archive.org 2, www.googleapis.com 4, books.google.com 23 (search-inside JSON, 1.6-1.7 s apart, a few empty
+responses, no challenge page), openlibrary.org 1, catalog.hathitrust.org 5, data.htrc.illinois.edu 3, api.openalex.org 1,
+api.core.ac.uk 3, brill.com 1 (202), boris.unibe.ch 1 (Anubis), library.oapen.org 1 (refused).

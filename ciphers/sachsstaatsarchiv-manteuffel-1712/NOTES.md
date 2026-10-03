@@ -482,26 +482,44 @@ the floor was not lowered for it. **Not flagged "reading ready".** Credit: the k
 
 Vision: 2 overview/overlay checks + 2 zoom montages by this worker; subagents 4 (Opus, blind passes). Requests: none (image on disk).
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026)
-Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 21 of 894 report frames inventoried, 4 carry code groups (694/08 0510, 0511, 0579, 0580)
+## GAPS180-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): Haake / Wackerbarth print check
+
+No decoding, no vision. Question: do Paul Haake's August-der-Starke books or the "Société des antisobres" paper print the f.410
+passage, Krauske's decipherment, or a citation of Loc. 694? Result: **no**, with positive controls, details in AUDIT.md
+("Addendum GAPS180").
+- Haake (the brief's "Alfred Haake" is Paul Haake): IA has no August/Flemming title by him. Google Books lists 9 relevant
+  titles (1902, 1922, 1926, 1929, 1930, 1934, 1939), all NO_PAGES; search-inside on 5 of them returned 0 even for Flemming
+  (control fails, so non-test). HathiTrust word counts (HTRC EF) for 3 volumes: *August der Starke* (1926, mdp.39015033271936,
+  264 pp.), *König August der Starke* (1902, uc1.$b191675, 42 pp. tokenised), *Kursachsen oder Brandenburg-Preussen?*
+  (1939, inu.30000055055671, search-only). Controls: Flemming 56/6/13, Manteuffel (OCR "Manteussel") 9 pages in 1926.
+  Targets: Angleterre, Suédois/Suedois, contentement, Chiffre/Chiffren/chiffriert, Dhona, Whitworth: 0 in all three.
+  Stettin: 0 in 1926, 9 in 1939 (none on a Manteuffel page; Manteuffel 0 in 1939). The 1926 Manteuffel pages near 1712
+  (seq 139-141) are character sketches (Paykull, Sidney), not the report.
+- Rous 2016, "Der Weinkeller als Schlachtfeld" (Geheime Netzwerke im Militär, Schöningh/Brill, OA): Brill PDF challenged
+  (HTTP 202), BORIS Anubis-walled; read through Google Books search-inside (RuHvEQAAQBAJ, PARTIAL). Footnote 48 (p. 44)
+  cites **Loc. 3234/5 ("Chiffren de S. Exc. Mgr. le C. de Flemming") and Loc. 3233/4 ("Chiffre")**, not Loc. 694. So the
+  lead does not resolve to these reports; it points at the Flemming cipher series beside DECODE record 4999 (Loc. 03233/02).
+  Controls Wackerbarth 10, Manteuffel 10, Flemming 8; 1712, Angleterre, reine, Stettin, dechiffriert, 694: 0.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026)
+Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 21 of 894 report frames inventoried, 4 carry code groups (694/08 0510, 0511, 0579, 0580); print check closed for now (GAPS180, 3 Oct 2026: NASG, Acta Borussica I, Droysen IV.1, Haake 1902/1926/1939 and Rous 2016 searched with controls, no print of f.410; detail in AUDIT.md)
 - Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
 - f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: no-key-material; Krauske's Loc. 694/10 table stops at 157 codes and no period key sheet for the upper range has been seen; the frame inventory (next gap) is where a glossed leaf carrying these codes would turn up
 - Loc. 694/08 and /09 ciphered reports, 873 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 21 sampled (A2-SAX2 + GAPS162: 4 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
-- print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; Haake has no archive.org item (GAPS158); next: Google Books API fts for Haake (country=US) + read the paper, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
 - [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); gloss hand judged period, not Krauske's (GAPS158, 3 Oct 2026, M)
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
-- [ ] print: NASG 1893-98 done, no print found; Haake (no IA item) and the Wackerbarth paper still to read
+- [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read)
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 21 sampled (4 cipher, 1 possible; A2-SAX2 + GAPS162 3 Oct 2026), 873 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: print -- Google Books API full-text search for Haake's Flemming biography (country=US) and read the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation, ~$1; then the frame inventory batch (~$2 per 250 frames), which is also where a glossed leaf for f.409v's nomenclator codes would turn up
+Verdict: keep going: 2 internal gaps; cheapest next: image-check -- frame inventory batch of Loc. 694/08-09 (<=250 frames, 1000-px contact sheet y/n), ~$2 per batch, which is also where a glossed leaf for f.409v's nomenclator codes would turn up
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Depends on nobody: the Haake/Wackerbarth print check, ~$1, then the frame inventory batch, ~$2.
+- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Haake/Wackerbarth print check done (GAPS180). Depends on nobody: the frame inventory batch, ~$2.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 
