@@ -1,4 +1,5 @@
 status: open
+Check-solved web pass by GF-A2-12, 3 Oct 2026: sources/schmeh/posts/12-scorpion.txt (Cipherbrain top-50 no.12, 30 Jan 2018, with its 7 comments to 29 Dec 2021) read in full by this worker; the ciphermysteries.com Scorpion category (10 posts, 1 Jun 2014 - 30 Dec 2020) and the 16 Oct 2018 "Scorpion S1, a different view" post with its 9 comments read; Cipherbrain 7 Jan 2022 post read; dbourdeau/cyphersolver targets/scorpion grepped. No accepted decipherment of S1 or S5 found; three claimed plaintexts are on record (Farmer 2007, Roberts 2016, "Rubislaw32" forum 2018/2022), none accepted, the 2018 one tested by Bourdeau and found no more probable than random fits (see Premise check). No printed standard edition exists for these letters; Bauer, Unsolved! (2017) p.224 discusses them (cited by a Cipherbrain commenter, not opened by this worker).
 
 # Scorpion letters (1991), two published cryptograms
 
@@ -116,3 +117,25 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: NOT in our NOTES.md (grep bourdeau/cyphersolver: 0)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2-12, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Scorpion letters 1991 John Walsh cipher solved` -- Cipher Mysteries Scorpion category and posts (2014-2020), Cipherbrain top-50 no.12, history.com (Craig Bauer, "When killers leave ciphers"): all say unsolved; Farmer's 2007 S1 claim noted as inconsistent (cipher K -> a and g).
+2. `"Scorpion" cipher "America's Most Wanted" 1991 cryptogram solution claim` -- adds Cipherbrain "Mail from a Zodiac copycat: The Scorpion Letters" (7 Jan 2022); same verdict.
+3. `"Bagel Bob's" Scorpion cipher` (the most distinctive phrase of the 2018 claimed plaintext, quoted) -- no web page carrying the phrase was returned; only Cipher Mysteries Scorpion posts.
+4. Descriptive title: covered by 1-2 (the folder title "Scorpion letters (1991), two published cryptograms").
+Site searches: `site:ciphermysteries.com Scorpion ciphers` (Cipher Mysteries: category pages 1-2, posts 2014-2018); Cipherbrain hits via queries 1-2 (2018 and 2022 posts); `cryptiana blogspot Scorpion cipher Walsh` (Cryptiana: no cryptiana.blogspot.com or Tomokiyo page returned -- not a target of that blog).
+Hits opened and threads read:
+- Cipher Mysteries category "scorpion ciphers" page 1 (10 posts, 1 Jun 2014 - 30 Dec 2020): no post reports S1 or S5 read; Pelling's 2020 note is that strictly cycling homophonics "may well prove to be surprisingly solvable" after Louie Helm read Pelling's own challenge cipher #1 -- not a Scorpion text.
+- Cipher Mysteries 16 Oct 2018 "Scorpion S1, a different view" and 9 comments (16 Oct - 13 Nov 2018: Karl, Thomas, Pelling x3, milongal, Zlatoděj, Jarlve x2): one speculative letter substitution (Zlatoděj), no accepted plaintext.
+- Cipherbrain 30 Jan 2018 (on disk, 7 comments read): no solution; comment 6 (Septimius Severus, 16 Dec 2021) corrects S5's distinct-symbol count to 145 and notes Bauer, Unsolved! (2017) p.224 repeats the 155 error.
+- Cipherbrain 7 Jan 2022 "Mail from a Zodiac copycat": no solution; comments are on the German version only (not located; logged as not read).
+Result: no accepted decipherment or plaintext found on the open web or in these comment threads. The 2018 "Rubislaw32" claimed plaintext lives on zodiackillermystery.freeforums.net (per Bourdeau), which this pass did not open (forum host, not one of the three blogs); its text is quoted in Bourdeau's NOTES.md. Requests: WebSearch 5; WebFetch ciphermysteries.com 2, scienceblogs.de 1.
+
+## Premise check (GF-A2-12, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions -- found: the spec's own "claimed solutions 2018 unverified" (Search log above). Opened via Bourdeau's record: the "Rubislaw32" readings of S1 ("A picture in collection of people: Bagel Bob's Old Dairy Frothy Late Cofee. Pour action.") and S5 (begins "I am sending other picture of people for the collection of recent hybrid genders ..."), first posted 19 Oct 2018 on zodiackillermystery.freeforums.net. These are claimed plaintexts, not accepted ones: Bourdeau's claimed.py (15 Sept 2026) finds them consistent with most repeat constraints (S1 10/13, S5 26/27) but scoring worse in English (-2.74/-2.61 nats/letter) than the false solutions his annealer returns for random keys of the same size, and both texts sit below the unicity distance. Farmer 2007 (S1) is inconsistent per Pelling; Roberts 2016 is listed by Bourdeau, not opened here. Flagged to the account-3 orchestrator in ROOM.md for the found-solved question; status line unchanged by this worker.
+(b) Other solvers' working files -- shallow clones 3 Oct 2026, dbourdeau/cyphersolver HEAD 810a777 and aaymeloglu/unsolved-ciphers HEAD d2800bb: Bourdeau targets/scorpion (NOTES.md, s1.txt, s5.txt, claimed.py, alternatives.py, unicity.py, profile.json -- attempted, closed as below unicity; MIT/CC BY, credited); Aymeloglu SHORTLIST.md lists Scorpion among "Hoax risk, no context, or no real system" (cited, not copied). No key either solver would hand us has been applied to a further text: found (as above), no reading.
+(c) Physical neighbours -- S2-S4 (and a further unpublished text per Severus) are held by law enforcement and were never published; the plain-English caption "Hi! Remember me?" on S5's sheet is already in this folder. No clear copy known: not found; the unpublished letters are unreachable.
+(d) Recipient's side -- America's Most Wanted / John Walsh and the FBI release (via Oranchak's site): no decipherment reported in any source read here (Pelling 2014-2020, Schmeh 2018/2022). The FBI/AMW files themselves are unreachable from here: not found / unreachable.
