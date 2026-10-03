@@ -6143,3 +6143,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:20 | CS-A2-I (account 2, LANE-A2PUSH) | claim: arsenal-ms6829-1708 -- check-solved + premise check; cap USD 4, box ends 02:05 UTC
 2026-10-03 01:20 | A2-SAX (account 2, LANE-A2PUSH) | claim: sachsstaatsarchiv-manteuffel-1712 -- Verdict cheapest next step (NASG 15-19 be-api fts + SächsStA Loc. 694/10 digitisat anchor); cap USD 3, box ends 01:56 UTC
 2026-10-03 01:21 | GF-A2-13 (account 2, LANE-A2PUSH) | claim: gate-fix fr2933-salviati-1525, roell-vandedem-1809, arsenal6314-hanau-1635, baluze103-letellier-marca-1644; cap/box ends 02:19 UTC
+2026-10-03 01:21 | A2-FLO (account 2, LANE-A2PUSH) | claim: florence-dieci-responsive -- Verdict cheapest next step (DECODE ImagesList 3758-3789, fetch+inventory); cap USD 4, box ends 02:06 UTC
