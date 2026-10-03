@@ -1,0 +1,1 @@
+trial 0 ncell=40 planted=monsignore,regina,sauoia J=61.21 null_mean=61.96 p95=84.40 p=0.396 found=False

@@ -1,0 +1,8 @@
+trial 0 ncell=40 planted=monsignore,ceppo,ualletta J=61.15 null_mean=40.70 p95=77.77 p=0.075 found=False
+trial 1 ncell=40 planted=ugonotti,birago,neuers J=37.48 null_mean=38.19 p95=45.42 p=0.592 found=False
+trial 0 ncell=40 planted=regina,ceppo,centurione J=33.53 null_mean=42.70 p95=52.88 p=0.900 found=False
+trial 1 ncell=40 planted=saluzzo,ugonotti,ualletta J=52.07 null_mean=40.45 p95=60.17 p=0.109 found=False
+trial 0 ncell=40 planted=ceppo,sauoia,ugonotti J=42.39 null_mean=46.14 p95=64.34 p=0.552 found=False
+trial 1 ncell=40 planted=centurione,bellagarda,ualletta J=78.09 null_mean=45.32 p95=78.74 p=0.065 found=False
+trial 0 ncell=40 planted=maesta,centurione,saluzzo J=31.06 null_mean=36.42 p95=45.90 p=0.751 found=False
+trial 1 ncell=40 planted=regina,maresciale,centurione J=44.87 null_mean=46.13 p95=69.48 p=0.547 found=False

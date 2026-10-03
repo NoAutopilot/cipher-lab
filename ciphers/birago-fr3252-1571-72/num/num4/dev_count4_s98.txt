@@ -1,0 +1,1 @@
+trial 0 ncell=40 planted=saluzzo,birago,carmagnola J=67.00 null_mean=67.58 p95=79.00 p=0.564 found=False

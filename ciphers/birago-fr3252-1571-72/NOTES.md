@@ -958,14 +958,14 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs (two-reader E 0.286, key con
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
 - f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
-- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); decoy-null joint-consistency crib test untested-by-this-tool, control 0/8 found against a 15/20 gate (BIRAGO-NUM4); next: dotted two-figure groups read as nomenclator codes against the clear text around each run, disk only, ~$1
 
 ## Escalation (F36R-REREAD, 3 Oct 2026)
 - [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ), the fr.3251 1572 group's sheet, maps, clerk key and controls used
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
 - [x] known-keys: Ceppo-Nevers on f.36-37 whole letter (control-backed, F36-READ; re-run on the recut transcription, F36R-REREAD) and f.47r (NEVBIR-47); 1572 key on f.117r (z 3.2, judge FAIL); Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: f.36 gloss by per-sign tiles (running-line reads retired, F36-GLOSS); f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 decoy-null crib test
+- [ ] key-rebuild: f.36 gloss by per-sign tiles (running-line reads retired, F36-GLOSS); f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 dotted groups as nomenclator codes against the clear text (spelled-crib tests: crib drag weak by control, BIRAGO-NUM2; decoy-null joint crib test untested-by-this-tool, BIRAGO-NUM4)
 - [x] image-check: f.36r rows r36n_L09-L14 recut on the row-ink profile and re-read (F36R-REREAD); f.36-37 gloss crops re-cut (F36-GLOSS); f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
 Verdict: keep going: 9 internal gaps; cheapest next: one reconciliation call on the kept f.36-37 rows' splits (~$1.5), then the per-sign tile gloss read (~$8) once the rate limit reads allowed
@@ -978,3 +978,37 @@ no.87; the pre-registered lam 1 failed the no.87 known-answer gate): **rank 1/20
 each grade S at best. Position-shuffled lattice control: rank 4-64, z at most 1.91 over 5 seeds. Synthetic power at 279
 signs, err 0.25: 20/20 (top-1 16/20). Judge FAIL -1.081 (real_p05 -0.903). No reading committed; status unchanged.
 Outputs `../nevers-birago-fr3251-1572/harvest/tx_decode/f117_*`.
+
+## f.119 + f.100r: decoy-null joint-consistency crib test (BIRAGO-NUM4, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-birago-num4.md`. Files in `num/num4/`. `PREREG.md` and the instrument
+`joint_crib.py` were pushed in 168bbcfc before the target was scored. This is a different instrument from the retired
+anneal. 15 cribs (carmagnola, bellagarda, ualletta, sauoia, turino, saluzzo, monsignore, maesta, neuers, birago, ceppo,
+centurione, maresciale, ugonotti, regina) were dragged over the pooled phase.py stream (61 runs, 473 pairs). Two
+placements are jointly consistent when they do not overlap and no code gets two letters across them. The statistic is the
+best jointly consistent pair, scored by it16dip bigram PMI over every adjacent token pair in both letters that the joint
+key fixes. Each crib's own bigrams are removed. The null is 200 decoy sets, each crib swapped for a random it16dip word of
+the same length and dragged over the same real stream. This replaces BIRAGO-NUM2's permutation null, which was
+anti-conservative.
+
+**Dev (synthetic only, seeds 98/99, `dev_*.txt`).** A count statistic (pairs that agree on >= 2, 3 or 4 shared codes) is
+swamped by chance pairs. On 3 dev trials the real set scored *below* the decoys at K=2, 3 and 4. The PMI-max statistic was
+pre-registered instead. It also missed on its one dev trial, p 0.40.
+
+**Power control (gate, `control_out.txt`).** Synthetic it16dip, 476 pairs, 40 cells, 5% strays, re-phased by `phase.em`,
+3 of the 15 cribs planted, 200 decoys. Run as 4 x 5 trials, seeds 4001-4004; PREREG named seed 4001 for one run of 20,
+and the split was made so it fit the box. **Found (p <= 0.05) in 0 of 8 trials**, p 0.065-0.900. The runs were stopped at
+8 trials because even 12 more finds would leave 12/20, below the 15/20 gate.
+
+**Target (`target_out.txt`, decoy seed 20261003).** J = 33.86 against a decoy mean of 41.44 (p95 56.67, max 67.98),
+rank 182 of 201, **p = 0.905**. This is scored for the record only.
+
+**Verdict: untested-by-this-tool, neither a pass nor a negative.** Joint consistency between spelled cribs cannot
+separate 3 planted names from same-length decoys at 476 pairs and 40 cells. The test has no power at this N, so the
+target's p = 0.905 says nothing about whether the names are present. No pair value comes out of this test and no token is
+graded. Together with BIRAGO-NUM2 this covers both spelled-crib designs, and neither has power here. BIRAGO-NUM2's premise
+risk also remains: the 1572 key gives names their own word codes. The next instrument is BIRAGO-NUM2 design note 3, the
+dotted two-figure groups read as nomenclator codes against the clear text around each run. More N (a third letter in this
+key) would also help. Novelty is not classified (rule 10).
+
+Cost and requests: disk only, no network, no subagents, 0 vision calls.
