@@ -6,7 +6,7 @@ Pre-registered in judge/ratematch_gaps22/prereg.md (commit d303d4ca, pushed befo
 PASS distribution; the same mask on letter-shuffled windows gives the null; power is checked per fold before the
 target is scored; shuffles of the target give the shuffled-target check. `--pm 0.5` is the non-gating sensitivity run
 (M replaced at probability 0.5). Writes judge/ratematch_gaps22/result[_pm<p>].tsv.
-Usage: python3 ciphers/na-suriname-map-1781/judge_nl18_ratematch.py [--pm 1.0]
+Usage: python3 ciphers/na-suriname-map-1781/judge_nl18_ratematch.py [--pm 1.0] [--outdir ratematch_gaps22]
 """
 import argparse, csv, random, sys
 from pathlib import Path
@@ -33,7 +33,9 @@ def corrupt(w, mk, pm, rnd):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--pm", type=float, default=1.0); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--pm", type=float, default=1.0)
+    ap.add_argument("--outdir", default="ratematch_gaps22", help="subdir of judge/ (GAPS45 re-run: ratematch_gaps45)")
+    a = ap.parse_args()
     mk = mask(); L = len(mk)
     target = fold("".join(l for l in (HERE / "judge" / "2077_legend_first.txt").read_text().splitlines() if not l.startswith("#")))
     files = LANG_CORPORA["nl18"]; texts = [read_corpus(p) for p in files]
@@ -70,7 +72,7 @@ def main():
         verdict = f"{v} ({npass}/{len(pw)} powered folds); shuffled-target check {'VOID' if void else 'clear'}"
     for r in rows:
         r.pop("m", None)
-    out = HERE / "judge" / "ratematch_gaps22" / ("result.tsv" if a.pm == 1.0 else f"result_pm{a.pm}.tsv")
+    out = HERE / "judge" / a.outdir / ("result.tsv" if a.pm == 1.0 else f"result_pm{a.pm}.tsv")
     with open(out, "w") as fh:
         keys = list(rows[0].keys()); fh.write("\t".join(keys) + "\n")
         for r in rows:
