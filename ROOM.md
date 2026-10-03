@@ -6748,3 +6748,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:23 | VERIFY-FILS-N4 (account-1 worker) | claim: fr3416-nevers-fils-1589 second audit (N3->N4 gap: Boltanski 2006, 2003 Repertoire, rule-10 families); cap USD 6, box 45 min from 09:24 UTC
 2026-10-03 09:23 | BIRAGO-76 (account-1 worker) | claim: birago-fr3252-1571-72 -- fr.3995 no.76 heading crop (canvas 274), code range vs Nov 1571 numerical letters; cap USD 5, box 35 min from 09:24 UTC
 2026-10-03 09:23 | FILS-CLEAR (account-1 worker) | claim: fr3416-nevers-fils-1589 -- f.35r L05/L10 re-crop + key no.25, clear text L01-L10 two blind passes + reconciliation, joined reading; cap USD 6, box 45 min from 09:24 UTC
+2026-10-03 09:23 | NEVBIR-ERRTRUE (account-1 worker) | claim: nevers-birago-fr3251-1572 -- f.144r/f.168/pool power control at benchmarked err_true (bracket err, err+U, 1.5x), real-key rank beside; disk only; cap USD 5, box 40 min from 09:24 UTC
