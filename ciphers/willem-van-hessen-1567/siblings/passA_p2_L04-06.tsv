@@ -1,0 +1,111 @@
+line	pos	sign_class	shape_note	gloss	confidence
+4	1	h-with-horizontal-bar	d-loop joined to two tall barred stems (dff-like ligature)	o	med
+4	2	pi-like-capital-Π	П with curled right leg (h/Π)	r	med
+4	3	wide-T-crossbar	t/£-shaped, crossbar plus foot	v	med
+4	4	yogh-3-shape	flat z/≥ form	o	med
+4	5	mercury		n	high
+4	6	open-8-with-tail	plain 8	e	high
+4	7	mercury		n/	high
+4	8	four		o/	high
+4	9	small-o-with-hooked-tail	small round o, no clear tail	ß	low
+4	10	theta-loop	scribbled w/loop blob	in/	low
+4	11	V-sign		o	high
+4	12	backward-C-loop	square bracket ]/コ shape	o/	med
+4	13	mars		j	low
+4	14	backward-C-loop	σ with forward curl	e	low
+4	15	capital-H-with-crossbar	H with loop on crossbar	b	med
+4	16	small-o-with-hooked-tail		e	low
+4	17	single-vertical-minim	1-like	o	low
+4	18	yogh-3-shape	3	o	med
+4	19	capital-R		f	low
+4	20	yogh-3-shape	Z-shape	o	med
+4	21	jupiter	2+ form	d	high
+4	22	capital-X-cross		a	high
+4	23	wide-T-crossbar	t/£ form	v	med
+4	24	nine		a	high
+4	25	long-s-with-flag	bold looped ligature with filled lower loop	ü	med
+4	26	open-pi	square box	f	med
+4	27	pi-like-capital-Π		o	high
+4	28	p-shape		w	med
+4	29	double-cross	‡	a	med
+4	30	wide-T-crossbar	t/£ form	v	low
+4	31	hook-loop-figure8	∂/h-like hook	r	low
+4	32	capital-H-with-crossbar	H/ɛ form	e	low
+4	33	open-8-with-tail	8 (loop of next line below)	n/	low
+4	34	mercury		w	low
+4	35	p-shape		o	low
+4	36	mars		i	med
+4	37	wide-T-crossbar	t/£ form	r	med
+5	1	bold-dagger-crossbar	∂ with two crossbars	o	med
+5	2	umbrella-cross	triangle on cross stem	o	high
+5	3	p-shape		w	med
+5	4	seven		o	med
+5	5	nine		o	low
+5	6	nine	gloss area covered by line-4 descender	?	low
+5	7	l-loop		e	med
+5	8	mercury		n/	high
+5	9	wide-T-crossbar	plain T	o	high
+5	10	theta-loop	9/g with loop	o	med
+5	11	nine		a	high
+5	12	closed-triangle		b	high
+5	13	backward-C-loop	σ curl form	i	med
+5	14	wide-T-crossbar	t/£ form	r	med
+5	15	double-cross	ǂ	a/	med
+5	16	nine	9-curl	?	low
+5	17	filled-blob	solid ink-filled oval (new)	?	low
+5	18	l-loop		e	low
+5	19	g-C-ligature	g with long looped descender	n/	med
+5	20	h-with-horizontal-bar	∂ff-like ligature as L4 pos1	o	med
+5	21	hook-loop-figure8	∂	m	low
+5	22	open-8-with-tail	8/ℓ form	n	low
+5	23	alpha-loop	α-shape (new)	g	low
+5	24	nine		-	low
+5	25	open-pi	ink-filled box	i	low
+5	26	l-loop	t/ℓ	c	med
+5	27	h-with-horizontal-bar	ħ	h	high
+5	28	triple-bar-III	II/III	e	med
+5	29	wide-T-crossbar	£ with loop	n/	med
+5	30	mercury		b	low
+5	31	theta-loop	w scribble with loop	?	low
+5	32	nine	9/∂	?	low
+5	33	open-8-with-tail		f	low
+5	34	nine	g form	i	low
+5	35	capital-H-with-crossbar	H/ɛ form	v	low
+5	36	capital-R		-	low
+5	37	yogh-3-shape	3	o	med
+6	1	V-sign		o	high
+6	2	capital-H-with-crossbar	H/ɛ, gloss obscured by ink blot	?	low
+6	3	triple-bar-III		h	high
+6	4	open-8-with-tail		u	med
+6	5	mercury		n/	high
+6	6	wide-T-crossbar	plain T	o/	high
+6	7	capital-R		f	high
+6	8	yogh-3-shape	Z-shape	o	high
+6	9	nine		f	low
+6	10	h-with-horizontal-bar	ħ	r	med
+6	11	triple-bar-III		h	high
+6	12	open-8-with-tail		z/	med
+6	13	closed-triangle	with inner dot	b	high
+6	14	backward-C-loop	σ curl form	e	high
+6	15	p-shape		w	high
+6	16	l-loop		e	med
+6	17	wide-T-crossbar	t/£ form	r	high
+6	18	closed-triangle		b	high
+6	19	g-C-ligature	g with looped descender	n	med
+6	20	mercury		n	low
+6	21	alpha-loop	α/& shape	g/	med
+6	22	open-8-with-tail		e	high
+6	23	nine		o	high
+6	24	small-o-with-hooked-tail	small o	z	med
+6	25	open-8-with-tail	8 with long tail	n	med
+6	26	theta-loop	w scribble with loop	u	med
+6	27	l-loop		n	med
+6	28	wide-T-crossbar	t/£ form	e	high
+6	29	triple-bar-III		r	high
+6	30	small-o-with-hooked-tail	small o	h	low
+6	31	mercury		i	low
+6	32	jupiter	2+ form, wide	nd	low
+6	33	backward-C-loop	σ curl form	e	high
+6	34	wide-T-crossbar	t/£ form	r	high
+6	35	mercury		n	high
+6	36	venus-with-crossbar		-	high
