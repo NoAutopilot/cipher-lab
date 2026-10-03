@@ -1,4 +1,4 @@
-# A1B-CEPPO-36V pre-registration (3 Oct 2026, written ~18:43 UTC, pushed before any blind read)
+# A1B-CEPPO-36V pre-registration (3 Oct 2026, written ~18:35 UTC, pushed before any blind read)
 
 Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-ceppo-36v.md`. Rule carried over UNCHANGED from A1B-CEPPO-87's unit 2
 (`../a1b87/PREREG.md`, commit 6334b236); only the instance list is new.

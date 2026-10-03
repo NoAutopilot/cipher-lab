@@ -1,0 +1,7 @@
+tile	recon_target	target_idx	readerA_letter_above	readerA_conf	readerB_letter_above	readerB_conf	agreed_letter	note
+T1	v36mid_L05 pos10 S32 (A=B)	3	small k-like stroke, unclear	L	small k/r-like mark	L	none	no committed letter from either
+T2	v36mid_L01 pos2 S76/S58	2	faint dots/strokes, unreadable (maybe i/ij)	L	faint dashes/dots, unreadable	L	none	
+T3	v36mid_L02 pos11 S76/S58	3	k/h-like small mark, unclear	L	k or h-like (k/hr)	L	none	both k/h-like, neither commits
+T4	v36mid_L06 pos9 S76/S58	2	ii or 11, unclear	L	ll / 11 / ii (two ticks)	M	none	both: two tall strokes
+T5	v36mid_L06 pos15 S76/S58	1(A)/2(B)	ii or 11, unclear	L	ll / ii / 11 (two ticks)	M	none	both: two tall strokes
+T6	v36top_L02 pos7 S76/S58	2	ii/11 or long-s pair, unclear	L	ll / ii (two ticks)	M	none	both: two tall strokes
