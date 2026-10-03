@@ -1,0 +1,268 @@
+ITEM 1
+CIPHER DECODE: i e c r a n n s q u e l e t [?] y e s _ _ a s s e z e s t r o
+PRINT: environs de Tiel pour estre en ces quartiers-là vous recepvoir, oires que je crains que le pays y est assez estroict pour la cavallerie, et toutesfois nous donnerons ordre de vous accommoder
+
+ITEM 2
+CIPHER DECODE: t i r e r o i u maintenant auecq peu de raison _ [?] h o r s d e t o u s k e u l x
+PRINT: actions est requise et que ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses
+
+ITEM 3
+CIPHER DECODE: par plusieurs l e t t r e s u o s t r [?] s a s s e z u e u l e s b o n
+PRINT: aulcunement me deffier de voz bonnes diligences, ayant cy-devant par plusieurs lettres très assez veu les bons debvoirs que vous faictes sans cesse, mais pour aultant que plusieurs
+
+ITEM 4
+CIPHER DECODE: e t t e n f d r e d e u o s s [?] et larrest qui en est promis s e n s m e d i
+PRINT: quelque assamblée, joinctement quel secours nous avons seurement à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy
+
+ITEM 5
+CIPHER DECODE: l l e n d r o i t l a b o n n [?] uillede d e harlem l a q u e l l e a
+PRINT: attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après s'estre si vaillamment maintenue et avoir tant souffert
+
+ITEM 6
+CIPHER DECODE: t p e s d e u x _ u t r o i s [?] d i u e s s s e s u o i e s _
+PRINT: incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux ou trois diverses voies. Depuis ce que dessus, est icy arrivé le présent porteur avec une lettre
+
+ITEM 7
+CIPHER DECODE: g i n s q u e l e _ g e n t [?] e s s s f f e s t r o i g t p
+PRINT: environs de Tiel pour estre en ces quartiers-là vous recepvoir, oires que je crains que le pays y est assez estroict pour la cavallerie, et toutesfois nous donnerons ordre de vous accommoder
+
+ITEM 8
+CIPHER DECODE: o n s i c e signer et faire estat selon cela pour apres [?] u n e l o n g u e e t uingt u a
+PRINT: aucune chose, affin que nous puissions icy régler et faire estat selon cela, pour, après une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint
+
+ITEM 9
+CIPHER DECODE: q u e s c e u e f l affin bon termes et que [?] _ semble proceder auecque toute sinceritez et toutesfois se fera bon de prendre touiours
+PRINT: suis esté aise de veoir que la confédération par delà que sçavez est en bons termes et que semble procéder avecque toute sincérité. Et toutesfois il sera bon de prendre toujours
+
+ITEM 10
+CIPHER DECODE: s d e t o u s k e u l x estans k [?] f o r c e s f n n e m i e s
+PRINT: ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses de tous costez; que me faict aultre
+
+ITEM 11
+CIPHER DECODE: sapprochera uingt l a p r k m e u e r e _ [?] e t q u e d e s p r a d c y
+PRINT: temps et la saison de l'iver s'advance bien fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains
+
+ITEM 12
+CIPHER DECODE: pour a e a n t l e m o i s i r [?] s e m e c u p e _ e n n o u u
+PRINT: debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le loysir, se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant, mesmes
+
+ITEM 13
+CIPHER DECODE: m e r c e d e s e n n e m i s [?] _ q u k m o n t t r e i c t e
+PRINT: secours que nous recepvrions, fust à la fin constrainte se rendre à la mercy des ennemys, qui l'ont traictée si inhumainement que la souvenance des cruaultez y exercées ne se polra
+
+ITEM 14
+CIPHER DECODE: s d o s t e sur ces faict aultresfois uous prier que [?] i n c o n t i n e n t c e s t
+PRINT: descouragées, désunies et esparses de tous costez; que me faict aultre fois vous prier que incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux
+
+ITEM 15
+CIPHER DECODE: s e r e n d r e a l a _ [?] f r c y d e s e n n e m i s
+PRINT: je luy donnois du secours que nous recepvrions, fust à la fin constrainte se rendre à la mercy des ennemys, qui l'ont traictée si inhumainement que la souvenance des cruaultez y
+
+ITEM 16
+CIPHER DECODE: l o o n e p o u r r o n t p g [?] s e r s g n g o u r k r q u
+PRINT: leur arrivée vous estes party: qu'ilz soyent délibérez de vous suivre, ilz ne pourront passer sans courrir quelque grand dangier, qui seroit dommaigne pour eulx, et nous viendroit
+
+ITEM 17
+CIPHER DECODE: e q o u r r o e e o t l o o g [?] e m e n t s u o s i s t e s
+PRINT: et despences si fort chargées que, selon apparence humaine, elles ne pourroyent longuement subsister sans quelque bon secours et soulaigement; je vous prie, le plus affectueusement
+
+ITEM 18
+CIPHER DECODE: e p o u r r o n t p g s s e r [?] s g n g o u r k r q u e l q u
+PRINT: arrivée vous estes party: qu'ilz soyent délibérez de vous suivre, ilz ne pourront passer sans courrir quelque grand dangier, qui seroit dommaigne pour eulx, et nous viendroit mal à propos.
+
+ITEM 19
+CIPHER DECODE: l e t t r e s u o s t r e s e [?] s e f u f u l e s b o n s d e
+PRINT: aulcunement me deffier de voz bonnes diligences, ayant cy-devant par plusieurs lettres très assez veu les bons debvoirs que vous faictes sans cesse, mais pour aultant que plusieurs
+
+ITEM 20
+CIPHER DECODE: u r e r q u i l promectra bruq pour a e [?] n t l e l o i s i r s e m e
+PRINT: l'ennemi ne debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le loysir, se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant,
+
+ITEM 21
+CIPHER DECODE: c e t e f m e i s q u e s k _ [?] despouiller de toute humanite ie ne uous diz promect tout cecy pour aultrement
+PRINT: vergoigne : vous congnoissez son naturel, non seulement ambitieux et vindicatyf, mais quasi despouillé de toute humanité. Je ne vous diz poinct tout cecy pour aulcunement me deffier
+
+ITEM 22
+CIPHER DECODE: t s e d r e u e s m f n e e s [?] e m e n n e m k nos deuons aulcunement doubter _ e
+PRINT: fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour,
+
+ITEM 23
+CIPHER DECODE: f a u l d r c o m m e u s s y [?] e e e r o i s o s e p l u s g
+PRINT: Dordrecht, ce xiij jour d'apvril 1574. Quant à Eyndhoven, je ne fauldroye de y aller, comme aussy je ferois chasse plus grande, mais noz forces ne sont assez bastantes. Messeigneurs. Estant
+
+ITEM 24
+CIPHER DECODE: t harlem a r e c e u t a n t e n [?] u a t e r l a n d t q u e i
+PRINT: tomber entre ses mains; puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si grand escorne , perte, honte, et vergoigne : vous congnoissez
+
+ITEM 25
+CIPHER DECODE: e n s m e d i s s i m u l e r [?] u d u n e d h o s e m e f i
+PRINT: secours nous avons seurement à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy régler et faire estat selon cela, pour, après une
+
+ITEM 26
+CIPHER DECODE: l q e t n o u s u i e p d r o [?] t m a p _ l p q o p o s p n o
+PRINT: passer sans courrir quelque grand dangier, qui seroit dommaigne pour eulx, et nous viendroit mal à propos. Or il le fault remectre à Dieu et soy aider du mieulx qu'on peult. Quant au Rittmaistre
+
+ITEM 27
+CIPHER DECODE: autre part comme [?] l e t e m p s e t l a
+PRINT: vostre bonne santé et disposition que de noz affaires de par delà: d'aultre part, comme le temps et la saison de l'iver s'advance bien fort et petit à petit s'approchera la primevére,
+
+ITEM 28
+CIPHER DECODE: c q u e s e t s e c r e t e [?] m e n e e s d e l e n n e m k
+PRINT: bien fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra
+
+ITEM 29
+CIPHER DECODE: d h o s e m e f i n q u e _ [?] u o u s p u i s s i o n s i c
+PRINT: à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy régler et faire estat selon cela, pour, après une longue et vaine attente
+
+ITEM 30
+CIPHER DECODE: _ t i r e r o i u maintenant auecq peu de raison [?] h o r s d e t o u s k e u l
+PRINT: actions est requise et que ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses
+
+ITEM 31
+CIPHER DECODE: u harlem _ e s e c e u t e n t e n [?] u e t e r l e n d t q u e i
+PRINT: tomber entre ses mains; puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si grand escorne , perte, honte, et vergoigne : vous congnoissez
+
+ITEM 32
+CIPHER DECODE: r o n z e l t i o l _ p o u r [?] n c e s q u e r n e r s l a u
+PRINT: partie de mes Capitaines qu'ilz ayent au plus tost à se trouver ès environs de Tiel pour estre en ces quartiers-là vous recepvoir, oires que je crains que le pays y est assez estroict pour
+
+ITEM 33
+CIPHER DECODE: o o d u d i c u harlem _ e s e c [?] u t e n t e n _ u e t e r l e
+PRINT: pourroyent tomber entre ses mains; puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si grand escorne , perte, honte, et vergoigne : vous
+
+ITEM 34
+CIPHER DECODE: e m l g i a g u e u u o s t r [?] b d e r y t k n n d e l u e n
+PRINT: mois, et ce jourd'huy matin m'est venue une aultre vostre du vije, par laquelle j'ay veu vostre délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre
+
+ITEM 35
+CIPHER DECODE: a n n s q u e l e t y e s _ [?] a s s e z e s t r o i c t p o
+PRINT: environs de Tiel pour estre en ces quartiers-là vous recepvoir, oires que je crains que le pays y est assez estroict pour la cavallerie, et toutesfois nous donnerons ordre de vous accommoder
+
+ITEM 36
+CIPHER DECODE: frais et despences s i f o r t c h a r g e [?] s q u e s e l o n a p p a r
+PRINT: destituez de tout secours et noz villes par tant de frais et despences si fort chargées que, selon apparence humaine, elles ne pourroyent longuement subsister sans quelque
+
+ITEM 37
+CIPHER DECODE: o u r s n e t o m b e r a u [?] mesme inconuenient qui nous aduint a l l e n d r o
+PRINT: faire estat selon cela, pour, après une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après
+
+ITEM 38
+CIPHER DECODE: n t p a q s e r s a n s c o [?] r k r q u e l o u e t r a n d
+PRINT: vous estes party: qu'ilz soyent délibérez de vous suivre, ilz ne pourront passer sans courrir quelque grand dangier, qui seroit dommaigne pour eulx, et nous viendroit mal à propos.
+
+ITEM 39
+CIPHER DECODE: l o i s i r s e m e c t s e [?] e n n o u u e l f q u i p p e
+PRINT: aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le loysir, se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant, mesmes s'il nous voyt
+
+ITEM 40
+CIPHER DECODE: i n g n e et iusques a ou mon frere le conte louis [?] l a u r a c o n d u i c t
+PRINT: d'entendre au vray le passaige du Roy de Poloingne et jusques à où mon frère le Conte Louys l'aura conduict, dont il y a grand bruyct par deçà. Quant à la difficulté que vous avez trouvé
+
+ITEM 41
+CIPHER DECODE: m e n e e s d e l e n n e m k [?] ne debuons aulcunement doubter _ a i n s n o u s a s
+PRINT: à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le
+
+ITEM 42
+CIPHER DECODE: c a t y f m a i s q u a s k _ [?] despouiller de toute humanite ie ne uous diz point tout cecy pour aucunement
+PRINT: vergoigne : vous congnoissez son naturel, non seulement ambitieux et vindicatyf, mais quasi despouillé de toute humanité. Je ne vous diz poinct tout cecy pour aulcunement me deffier
+
+ITEM 43
+CIPHER DECODE: k e u l x estans k _ f o r c e s [?] f n n e m i e s t e n t d e s
+PRINT: secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses de tous costez; que me faict aultre fois
+
+ITEM 44
+CIPHER DECODE: o u r s n e t o m d e r f u [?] mesme inconuenient quon nous aduient e l l e n d r h
+PRINT: faire estat selon cela, pour, après une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après
+
+ITEM 45
+CIPHER DECODE: e te puisse auoir _ a b s o l u t e [?] r e s p o n s e d e u o f s
+PRINT: me faict aultre fois vous prier que incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux ou trois diverses voies. Depuis ce que dessus, est
+
+ITEM 46
+CIPHER DECODE: m o i s i r s e m e c u p e [?] e n n o u u e l e q u i p p a
+PRINT: aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le loysir, se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant, mesmes s'il nous voyt
+
+ITEM 47
+CIPHER DECODE: e l t r e i c t e m f n t uingt _ [?] m e n n e m e f e r o i t e u
+PRINT: exercées ne se polra jamais estaindre. Qu'à ce regard debvons bien penser quel traictement l'ennemy feroit aux aultres qui, par faulte de secours, pourroyent tomber entre ses mains;
+
+ITEM 48
+CIPHER DECODE: i i n h u m a i n e m e n t [?] que la souuenance des cruaultez y expressees que se pourra iamais oblandre quand ce regard
+PRINT: fin constrainte se rendre à la mercy des ennemys, qui l'ont traictée si inhumainement que la souvenance des cruaultez y exercées ne se polra jamais estaindre. Qu'à ce regard
+
+ITEM 49
+CIPHER DECODE: q u e l s e c o u r s n o u s [?] d o n s s e u r e m e n t a
+PRINT: par delà, et si en brieff vous ferez quelque assamblée, joinctement quel secours nous avons seurement à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose,
+
+ITEM 50
+CIPHER DECODE: d r c o m m e u s s y i e e e [?] o i s o s e p l u s g r a n d
+PRINT: Dordrecht, ce xiij jour d'apvril 1574. Quant à Eyndhoven, je ne fauldroye de y aller, comme aussy je ferois chasse plus grande, mais noz forces ne sont assez bastantes. Messeigneurs. Estant son Excellence
+
+ITEM 51
+CIPHER DECODE: y expressees ne se poura tamais oster que quand ce regard debuons bien penser [?] q u e l t r e i c t e m f
+PRINT: cruaultez y exercées ne se polra jamais estaindre. Qu'à ce regard debvons bien penser quel traictement l'ennemy feroit aux aultres qui, par faulte de secours, pourroyent tomber
+
+ITEM 52
+CIPHER DECODE: d r e u o s t r e c h e m y n [?] _ e n u r e _ g r a u e e t
+PRINT: délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer que voz lettres me sont esté plus que bien venues
+
+ITEM 53
+CIPHER DECODE: r e u o s t r e c h e m y n [?] e n u r e _ g r a u e e t s
+PRINT: délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer que voz lettres me sont esté plus que bien venues
+
+ITEM 54
+CIPHER DECODE: i e n f o r t e t petit a petit sapprochera [?] m e p r k m e u e r e _ _ e
+PRINT: part, comme le temps et la saison de l'iver s'advance bien fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement
+
+ITEM 55
+CIPHER DECODE: _ s i uaillamment maintenue et auoir tant souffert s u r [?] e s p o i r q u e d e i o u r
+PRINT: de Harlem, laquelle, après s'estre si vaillamment maintenue et avoir tant souffert sur l'espoir que de jour en jour je luy donnois du secours que nous recepvrions, fust à la fin constrainte
+
+ITEM 56
+CIPHER DECODE: e t o m b e r a u _ mesme inconuenient qui nous aduint [?] a l l e n d r o i t l a b o
+PRINT: une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après s'estre si vaillamment maintenue
+
+ITEM 57
+CIPHER DECODE: a u e c u o z t r o z p p e s [?] p a r d e c a e t a c e s t
+PRINT: aultre vostre du vije, par laquelle j'ay veu vostre délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer
+
+ITEM 58
+CIPHER DECODE: _ r e s p o n s e d e u o f s [?] e t p l u s t q s t p a r d e
+PRINT: fois vous prier que incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux ou trois diverses voies. Depuis ce que dessus, est icy arrivé le présent
+
+ITEM 59
+CIPHER DECODE: n e l u r r o n t p a q s e r [?] s a n s c o u r k r q u e l o
+PRINT: arrivée vous estes party: qu'ilz soyent délibérez de vous suivre, ilz ne pourront passer sans courrir quelque grand dangier, qui seroit dommaigne pour eulx, et nous viendroit
+
+ITEM 60
+CIPHER DECODE: sapprochera m e p r k m e u e r e _ [?] e t q u e d e s p r e d t e
+PRINT: temps et la saison de l'iver s'advance bien fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains
+
+ITEM 61
+CIPHER DECODE: u o s s et larrest que en est promis s a n [?] m e d i s s i m u l e r a u c
+PRINT: joinctement quel secours nous avons seurement à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy régler et faire estat selon cela,
+
+ITEM 62
+CIPHER DECODE: r g n t g u s s g f g l l e r [?] o g m e s m e i e s u i s m r
+PRINT: accommoder de bateaux et autres nécessités, le plus que sera possible, espérant aussy d'y aller moy-mesme. Je suis marri que les Franchoys ne sont encoires venuz jusques à vous; me doubtant
+
+ITEM 63
+CIPHER DECODE: inconuenients irreparables dont pourrez facillement considerer combien m e d i l k [?] e n c e e n n o f e c u i o n
+PRINT: dommaiges et inconvéniens irréparables, dont pouvez facillement considérer combien la diligence en noz actions est requise et que ung bon secours nous tirreroit maintenant avecq
+
+ITEM 64
+CIPHER DECODE: d r h k t m f f o n n e uillede d e [?] harlem _ a q u f l l e e p r e s
+PRINT: secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après s'estre si vaillamment maintenue et avoir tant souffert sur l'espoir
+
+ITEM 65
+CIPHER DECODE: t o m b e r a u _ mesme inconuenient qui nous aduint [?] a l l e n d r o i t l a b o n
+PRINT: une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après s'estre si vaillamment maintenue
+
+ITEM 66
+CIPHER DECODE: n q u e _ n o u s p u i s s [?] o n s i c e signer et faire estat selon cela pour apres
+PRINT: de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy régler et faire estat selon cela, pour, après une longue et vaine attente de secours,
+
+ITEM 67
+CIPHER DECODE: p a r a u a n u uingt m e s m e s [?] i l n o u s sortes encoires d e s c
+PRINT: se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant, mesmes s'il nous voyt encoires destituez de tout secours et noz villes par tant de frais et despences
+

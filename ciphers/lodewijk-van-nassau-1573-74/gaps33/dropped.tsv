@@ -1,0 +1,15 @@
+letter	line	pos	code	kind	why
+5810	05810_p5_L08	1	140	band	locate sl=41 sr=38 gap=-2935
+5810	05810_p6_L32	14	142	band	locate sl=42 sr=42 gap=29
+5810	05810_p7_L02	5	149	band	locate sl=36 sr=45 gap=-2
+5811	05811_p1_L09	17	150	band	locate sl=41 sr=39 gap=118
+5811	05811_p5_L08	2	139	band	locate sl=27 sr=17 gap=3
+5811	05811_p5_L08	19	150	band	locate sl=24 sr=24 gap=83
+5811	05811_p5_L13	19	127	cnull	locate sl=16 sr=40 gap=0
+5811	05811_p2_L14	7	130	cnull	locate sl=29 sr=14 gap=0
+5810	05810_p5_L08	2	138	cnull	locate sl=41 sr=38 gap=-2935
+5810	05810_p5_L08	5	122	cnull	locate sl=41 sr=38 gap=-2935
+5810	05810_p7_L06	7	29	cletter	locate sl=45 sr=28 gap=372
+5811	05811_p5_L21	5	38	cletter	locate sl=18 sr=30 gap=13
+5811	05811_p2_L31	13	2	cletter	locate sl=39 sr=18 gap=5
+5811	05811_p1_L22	13	32	cletter	locate sl=35 sr=13 gap=-274
