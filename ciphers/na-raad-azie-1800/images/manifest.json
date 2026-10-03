@@ -11,10 +11,11 @@
         "209_leaf1.jpg": "order 1 -- dispatch-record cover memo (Origineel/Duplicaat/Triplicaat routing note), plain Dutch, no cipher",
         "209_leaf2.jpg": "order 2 -- bifolium; left page is the tail of an unrelated earlier plain-Dutch draft; right page opens '20 Nov. 1800 / van Prediger / Geacht vriend!' in plain, then the cipher body (paired-digit-row cipher, see zoom)",
         "209_leaf2_cipher_zoom.jpg": "native-res crop of the cipher opening on leaf 2's right page -- two aligned rows of numerals: a longer top row of multi-digit cipher groups, a shorter single-digit row directly beneath most/every digit of the top row",
-        "209_leaf3.jpg": "order 3 -- bifolium, both pages very faint/low-contrast, apparently mirror-image ink bleed-through from the facing recto rather than the recto's own ink; the same paired-digit-row cipher pattern is visible but hard to read",
+        "209_leaf3.jpg": "order 3 -- bifolium, both pages very faint/low-contrast, apparently mirror-image ink bleed-through from the facing recto rather than the recto's own ink; the same paired-digit-row cipher pattern is visible but hard to read -- A2-RAA9 (3 Oct 2026): confirmed, left page is leaf 2's cipher page seen through the paper (mirrored ink-map r 0.541 vs controls <=0.162), right page shows through leaf 4; no independent cipher",
         "209_leaf3_zoom.jpg": "native-res crop of leaf 3's faint cipher rows",
         "209_leaf4.jpg": "order 4 -- reverts to plain Dutch: continues and closes the letter body, signed '(getekend) Smissaert', dated 'Amsterdam den 20 November 1800', with a same-day P.S. about Council membership (Mr. Daniel van Laer's appointment) -- all plain, no cipher",
-        "209_leaf5.jpg": "order 5 -- a separate, later postscript entirely in plain Dutch, dated 'Amst. 20 April 1801', signed '(getekend) Smissaert' -- matches the unittitle's 'minuut-post-scriptum (van latere datum)'"
+        "209_leaf5.jpg": "order 5 -- a separate, later postscript entirely in plain Dutch, dated 'Amst. 20 April 1801', signed '(getekend) Smissaert' -- matches the unittitle's 'minuut-post-scriptum (van latere datum)'",
+        "209_leaf3_vs_leaf2_mirror.jpg": "A2-RAA9, 3 Oct 2026, derived: top = leaf 2 right page rows y 480-900 mirrored L-R; bottom = leaf 3 left page same rows, contrast-stretched; 1600 px wide"
       }
     },
     {

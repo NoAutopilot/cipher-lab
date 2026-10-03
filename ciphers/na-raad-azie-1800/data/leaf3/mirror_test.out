@@ -1,0 +1,9 @@
+leaf2 right, flipped r=0.541 dy=2 dx=-6
+leaf2 right, unflipped r=0.141 dy=2 dx=-8
+leaf2 left, flipped r=0.040 dy=23 dx=-34
+leaf4 right, flipped r=0.047 dy=-22 dx=24
+--- leaf3 right page
+leaf2 left, flipped r=0.040 dy=-29 dx=28
+leaf2 left, unflipped r=0.050 dy=-4 dx=22
+leaf4 left, flipped r=0.162 dy=-1 dx=-4
+leaf2 right, flipped r=0.048 dy=23 dx=28

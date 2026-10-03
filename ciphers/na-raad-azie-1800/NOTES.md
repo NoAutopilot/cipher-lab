@@ -764,11 +764,57 @@ attempt), not refuted.
 Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
 (all local).
 
+## 3 Oct 2026 -- A2-RAA9: leaf 3 checked before transcription -- no independent cipher body (rule 2)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Question.** The planned step was to transcribe leaf 3 (images/209_leaf3.jpg) to raise N, after first confirming that
+leaf 3 carries cipher body in the same column system as leaf 2. VX-CS04's manifest already called leaf 3 "apparently
+mirror-image ink bleed-through from the facing recto"; this step tested that before spending any transcription pass.
+
+**Look.** One downsized contact view of leaf 3 (own read, no subagent): the left page carries 14 faint two-row digit
+lines in the same layout as leaf 2's right page (12 lines, a gap of two clear-text lines, then 2 lines), digits visibly
+reversed; the right page carries only faint cursive.
+
+**Test.** `python3 ciphers/na-raad-azie-1800/scripts/leaf3_mirror_test.py` (output `data/leaf3/mirror_test.out`):
+ink maps downsampled 8x, best correlation over integer shifts of +-40 px (downsampled), leaf 3 left page against
+candidates. The controls can differ from the target on this statistic (different text, or same text unflipped):
+
+| leaf 3 left page against | r | shift (dy, dx) |
+|---|---|---|
+| leaf 2 right page (cipher), mirrored L-R | **0.541** | 2, -6 |
+| leaf 2 right page, unflipped (control: same layout, not mirrored) | 0.141 | 2, -8 |
+| leaf 2 left page (plain Dutch), mirrored (control) | 0.040 | 23, -34 |
+| leaf 4 right page, mirrored (control) | 0.047 | -22, 24 |
+
+Leaf 3 right page: best match leaf 4 left page mirrored, r 0.162 (others 0.040-0.050): faint show-through of the plain
+Dutch continuation, no cipher. Eye check of the overlay `images/209_leaf3_vs_leaf2_mirror.jpg` (top: leaf 2 right page
+lines L01-L03 mirrored; bottom: leaf 3 left page, same rows, contrast-stretched): the two blots in L03, the struck
+group, the group gaps and the comma positions fall at the same places, column for column.
+
+**Result.** Leaf 3 is the reverse of leaf 2's cipher page photographed as its own image: its "cipher" is leaf 2's ink
+seen through the paper, not a further cipher body. Per the brief, transcription stopped here (no subagent pass run).
+Invnr 209's cipher body is the 370 columns of leaf 2 only (leaves 1, 4, 5 are plain Dutch, per VX-CS04); N cannot be
+raised from this item. A leaf 3 transcription would at most serve as a second witness for the 2 M columns of leaf 2
+(L13 col 18, L17 col 13), where the reverse may show a blotted stroke more clearly -- not worth a pass (2 tokens).
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Transcription standard: no transcription made, so no
+two-reader split to report; BENCHMARK-TX.tsv has no row for this family (grep "raad": 0). Vision: 0 subagent calls; 3 own
+reads (leaf 3 contact view, leaf 2 contact view, overlay) plus the existing leaf 3 zoom. Requests: none (all images on disk).
+
+**Next step** (named, not run): the re-run "homophonic at the pooled N" has no pooled N to run at. Cheapest internal step:
+a stronger bottom-digit statistic at N=370 (bottom digit conditioned on top digit, or a consonant-row x vowel-column
+decode with a syllable model), same POS/ALT controls as A2-RAA8, ~$1; if its POS control also fails at N=370 the
+cell-substitution gaps become too-short for this item. Outside the item: a sibling letter in the same system (another
+Smissaert/Prediger missive in 2.01.27.02 or the Batavia side, 1.04.17) is the only route to more ciphertext; VX-N03's
+25 Sept sweep found none in 2.01.27.02.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-RAA7)
 Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a reading; HYPOTHESES.md)
-- leaf 2 cipher body (370 cells) - blocker: not-attempted; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); next: transcribe leaf 3 (same cipher, faint) to raise N, then re-run homophonic with control, ~$5
-- leaf 3 cipher body (untranscribed, faint bleed-through) - blocker: not-attempted; images on disk (images/209_leaf3*.jpg); next: tools/iiif_lines.py crops + 2 blind passes + 1 reconciliation, ~$5
-- bottom-digit order (vowel-column hypothesis) - blocker: not-attempted; A2-RAA8 vowel-bigram order test is a non-test (POS power 9/20 at N=370, post-hoc 15/20 even at N=1110); next: a stronger statistic (e.g. bottom digit conditioned on top digit, or consonant-row x vowel-column decode with a syllable model) with the same POS/ALT controls, only after leaf 3 raises N, ~$1
+- leaf 2 cipher body (370 cells) - blocker: not-attempted; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); leaf 3 adds no ciphertext (A2-RAA9: mirror bleed-through of leaf 2, r 0.541 vs controls <=0.162), so N stays 370 from this item; next: stronger bottom-digit statistic at N=370 with POS/ALT controls (see bottom-digit gap), and if that control fails, this gap becomes too-short pending a sibling letter, ~$1
+- bottom-digit order (vowel-column hypothesis) - blocker: not-attempted; A2-RAA8 vowel-bigram order test is a non-test (POS power 9/20 at N=370, post-hoc 15/20 even at N=1110); next: a stronger statistic (e.g. bottom digit conditioned on top digit, or consonant-row x vowel-column decode with a syllable model) with the same POS/ALT controls, at N=370 (leaf 3 cannot raise N, A2-RAA9), ~$1
 
 ## Escalation (3 Oct 2026, A2-RAA7)
 - [n/a] siblings: no sibling cipher letter of this system found in 2.01.27.02 (VX-N03 sweep, 25 Sept 2026)
@@ -776,6 +822,6 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - [x] known-keys: invnr 317 Grasveld 1799 code tested against 209, negative by design mismatch (VX-CS06, A2-RAA)
 - [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
-- [ ] image-check: leaf 3 transcription from line crops to raise N (planned step)
-- [ ] retry: homophonic family and homophonic crib drag on leaf 2+3 once leaf 3 is in, control first; the vowel-column order test (A2-RAA8, non-test at N=370, POS power 9/20 vs gate 16/20) retried only with a stronger statistic
-Verdict: keep going: 3 internal gaps; cheapest next: transcribe leaf 3 (tools/iiif_lines.py crops + 2 blind passes + 1 reconciliation) to raise N, ~$5 (A2-RAA8 vowel-column order test was a non-test at N=370: POS power 9/20)
+- [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
+- [ ] retry: the vowel-column order test (A2-RAA8, non-test at N=370, POS power 9/20 vs gate 16/20) with a stronger statistic at N=370, POS/ALT controls first; homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
+Verdict: keep going: 2 internal gaps; cheapest next: stronger bottom-digit statistic (bottom conditioned on top, or row x vowel-column syllable decode) at N=370 with A2-RAA8's POS/ALT controls, ~$1 (A2-RAA9: leaf 3 is bleed-through of leaf 2, N cannot rise from invnr 209)

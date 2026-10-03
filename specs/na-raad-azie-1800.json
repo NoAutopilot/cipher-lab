@@ -4,7 +4,7 @@
  "language_candidates": [
   "nl"
  ],
- "ciphertext": "ciphers/na-raad-azie-1800/ciphertext_209_leaf2_full.tsv (A2-RAA2, 2 Oct 2026: 370 cipher columns in 14 lines of leaf 2's right page, two blind passes from line crops, 355 agree, 13 settled from the crop, 2 M). Corrected extent, rule 2: the earlier file ciphertext_209_leaf2.tsv (VX-CS06, 25 Sept 2026) holds only line 1 (35 columns) and is superseded; leaf 3 remains untranscribed -- too faint, per VX-CS04",
+ "ciphertext": "ciphers/na-raad-azie-1800/ciphertext_209_leaf2_full.tsv (A2-RAA2, 2 Oct 2026: 370 cipher columns in 14 lines of leaf 2's right page, two blind passes from line crops, 355 agree, 13 settled from the crop, 2 M). Corrected extent, rule 2: the earlier file ciphertext_209_leaf2.tsv (VX-CS06, 25 Sept 2026) holds only line 1 (35 columns) and is superseded; leaf 3 carries no independent cipher body -- it is mirror-image bleed-through of leaf 2's cipher page (A2-RAA9, 3 Oct 2026, scripts/leaf3_mirror_test.py), so N = 370 is the whole of invnr 209's cipher",
  "ciphertext_source": "Nationaal Archief 2.01.27.02, invnr 209, leaf 2 (https://service.archief.nl/api/file/v1/default/a9eb3ad8-af67-41bc-b3d1-e63e3e7f0179), letter dated 20 Nov 1800, clear Dutch salutation/close, ciphered body",
  "alphabet": "stacked digit pairs: a top digit 1-7 over a bottom digit 1-4 (no 0, 8, 9 anywhere; 24 of 28 cells occur), interleaved with clear Dutch words, some struck columns, commas; corrected 2 Oct 2026 (A2-RAA2) from the earlier description of multi-digit clusters with an optional second row",
  "constraints": [
