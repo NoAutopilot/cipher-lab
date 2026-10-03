@@ -1141,3 +1141,42 @@ PASS - antt-linhares-chave (a PASS is a gate for a verifier, not a reading; rule
 
 A fresh-instance re-derivation (rule 7) has not been run on the revised token; the one-token change is propagated to AUDIT.md
 and the SECOND-OPINIONS-QUEUE.tsv row (rule 10). Requests: none (all images on disk).
+
+## Rule 7 re-derivation (A1B-LIN-REDERIV, 3 Oct 2026)
+
+Fresh session (17:39-17:45 UTC), which read only CLAUDE.md, `specs/antt-linhares-chave.json`, `key.tsv`, `ciphertext.tsv`
+and `decode.json` before deriving (no exceptions file is named by decode.json). An independent ~15-line script (scratchpad, not
+`tools/decode_key.py`) mapped each ciphertext.tsv group through key.tsv, dropped `[null]` values and joined per
+page_of_letter + line. It gave 26 tokens, H 23 / M 3 / U 0:
+
+```
+para supprir o seu lugar junto com man o
+d justa he segredo ate para o ministerio
+pela memoria do cagar lhe pauperr ven ha
+logo
+```
+
+`python3 tools/decode_key.py ciphers/antt-linhares-chave --check` (exit 0):
+
+```
+ciphertext.tsv: tokens 26: H 23, M 3
+reading up to date
+```
+
+`python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file ciphers/antt-linhares-chave/reading.txt` (exit 0):
+
+```
+ok   language: score=-1.024, null_p99=-1.452, real_p05=-1.122, real_median=-0.849, mode=both, N=102
+ok   words: cover=0.922, min=0.5, real_text_median_cover=0.951
+PASS - antt-linhares-chave (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Diff, made only after the above was written: the four reading.txt lines are identical to the re-derivation's text. Per
+token against reading_tokens.tsv (sign, value, grade): **0 of 26 differ**, so no differences fall outside the M-graded tokens.
+**Verdict: PASS (rule 7).** The 329011 = "para" (M) revision re-derives from the spec and the key alone.
+
+Bookkeeping seen in passing, not changed (outside this brief): (1) ciphertext.tsv still grades the 329011 row `H`
+(a transcription grade, kept on purpose by A1B-LIN-M0002b) while key.tsv grades the decoded token `M`; decode_key.py
+takes the key grade, so the reading is right. (2) key.tsv still carries the orphan row `829011 [null]`, which no
+ciphertext group now uses. Suggestion: drop it or mark it superseded in a later housekeeping pass (~USD 0.2).
+Vision 0, subagents 0, network requests 0.

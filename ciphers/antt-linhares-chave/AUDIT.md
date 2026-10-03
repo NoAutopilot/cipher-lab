@@ -464,3 +464,8 @@ the current reading is "ate **para** o ministerio" (26 tokens, H 23 / M 3 / U 0;
 -1.122). A cancelled, looped group after it is illegible under its strike (`cancelled.tsv`) and is not part of the
 reading. No N-class change is made here: this is the solver side's propagation note, and any class change is a
 verifier's. Details: NOTES.md "m0002 p.2 line 2: cancelled group and first glyph of 829011".
+
+Propagation trail, 3 Oct 2026 (A1B-LIN-REDERIV): the rule 7 fresh re-derivation of the revised reading (329011 = "para", M)
+ran from the spec and the key alone and matches reading.txt and reading_tokens.tsv on all 26 tokens (0 differences);
+decode_key.py --check exit 0; judge PASS -1.024 vs real_p05 -1.122. Verdict PASS. No N-class change. Details: NOTES.md
+"Rule 7 re-derivation (A1B-LIN-REDERIV, 3 Oct 2026)".
