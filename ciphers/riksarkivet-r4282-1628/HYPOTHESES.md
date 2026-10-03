@@ -96,3 +96,11 @@ Script: scripts/key4327_overlap.py (--check exits 0); numbers in key4327_overlap
 | 3 Oct 2026 07:35 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz nulls=0.1,noise=0 | 1-5 | 0.984 (0.969-0.994) | not run (control-only) | - | yes | GAPS50 control, nulls 0.1, la18, noise 0 |
 | 3 Oct 2026 07:38 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz nulls=0.1,noise=0.034 | 1 | 0.859 (0.720-0.949) | -2950.256 | FAIL language: score=-1.262, null_p99=-1.674, real_p05=-0.978, real_median=-0.894, mode=both, N=1090 | yes (gate 0.6) | GAPS50 target, nulls 0.1, la18 |
 | 3 Oct 2026 07:39 | homophonic | N=1090 K=34 restarts=16 corpus=zaluski_epistolae_t1.txt.gz+zaluski_epistolae_t2.txt.gz+zaluski_epistolae_t3.txt.gz nulls=0.1,noise=0.034,shuffle_target=1 | 1 | 0.720 (0.720-0.720) | -3156.528 | FAIL language: score=-1.338, null_p99=-1.674, real_p05=-0.978, real_median=-0.894, mode=both, N=1090 | yes (gate 0.6) | GAPS50 shuffled target 1, nulls 0.1, la18 |
+
+## GAPS53 (3 Oct 2026, account-4): wordcode family (letter-or-word nomenclator), not matched
+| family | control | control number | target number | verdict |
+|---|---|---|---|---|
+| wordcode, digits 3 4 5 7 8 as code signs (share 0.195) | tool control, la18, 1 seed x 2 restarts, err 0 | blended 0.963; code class 0.429 (n=14); control code share 0.013 | not run | non-test: control cannot reach the target's code share |
+| wordcode, 8 rarest types as code signs (share 0.054) | same | blended 0.957; code class 0.000 (n=17); control code share 0.016 | not run | non-test: same |
+| count bound, n dedicated word-code types | n commonest la18 words coded in a spelt stream | Latin max share n=3 0.0079, n=8 0.0136, n=20 0.0218 | R4282 rarest-n share n=3 0.0110, n=8 0.0541, n=20 0.3367 | >= 3 dedicated code signs do not fit R4282's counts in Latin; untested-by-this-tool, not refuted |
+Scripts: gaps53/share_bound.py (--check exits 0); timing rows gaps53/control_calibration.md.
