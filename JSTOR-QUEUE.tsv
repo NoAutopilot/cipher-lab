@@ -190,3 +190,6 @@ ciphers/fr15575-syllabic-1592-95	"de buena gana como por"	2026-10-03	queued
 ciphers/fr15575-syllabic-1592-95	"apercibido para ir a la frontera"	2026-10-03	queued	
 ciphers/hessen-daenemark-1672	("Lincker" OR "Lyncker" OR "Linker") AND (Vultejus OR Hessen-Kassel) AND (1672 OR Dänemark OR Hamburg) AND (Chiffre OR cipher OR chiffriert)	2026-10-03	queued	
 ciphers/hessen-daenemark-1672	"Aus Berichten des hessischen Sekretärs Lincker"	2026-10-03	queued	
+ciphers/sachsstaatsarchiv-manteuffel-1712	"Manteuffel" AND "Flemming" AND 1712 AND ("reine d'Angleterre" OR Stettin) AND (Chiffre OR dechiffriert OR cipher)	2026-10-03	queued	
+ciphers/sachsstaatsarchiv-manteuffel-1712	"Manteuffel" AND "Krauske" AND (Acta Borussica OR Behördenorganisation)	2026-10-03	queued	
+ciphers/sachsstaatsarchiv-manteuffel-1712	"ne donne contentement" AND "reine d'Angleterre"	2026-10-03	queued	

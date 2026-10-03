@@ -469,3 +469,14 @@ pages, no letter text. Blogs, site search by name: **Cipherbrain** (`site:scienc
 Manteuffel/Flemming post; **Cryptiana blog** (`site:cryptiana.blogspot.com`) -- no matching post; **Cipher Mysteries**
 (`site:ciphermysteries.com`) -- no matching post. No plausible hit, so no comment thread needed opening. A search result, not a
 novelty verdict (rule 10).
+
+## VERIFY-MANT (verifier, 3 Oct 2026, account-4) -- see AUDIT.md
+
+Re-derivation reproduces (decode_key --check exit 0; judge -1.038 vs real_p05 -0.99; new-seed shuffles 0/100 at or above the
+candidate, both all-code and letter-codes-only). Class: f.410 **N3**, f.467/f.468 glosses **N0**. Corrections to this file:
+(1) Krauske's table is an **unprinted 1893 manuscript** (Loc. 694/10), not a printed key. Its key class is `published` only in rule
+10's "someone else's modern key" sense. (2) The f.468 17/17 agreement is independent of Krauske **in hand only**. Krauske
+most likely compiled his table from such glosses (I), so it shows that the table carries the period values. It does not
+separately test his work. (3) New lead: Acta Borussica *Behördenorganisation* I (1894, Schmoller & **O. Krauske**) prints
+decoded extracts of these Loc. 694 reports (Nr. 82, Berlin 23 Nov 1712, and others). Word counts show no "Angleterre" anywhere in
+the volume, so f.410's passage looks unprinted there; a page read of seq 434-440 (HathiTrust njp.32101065980920) is next.
