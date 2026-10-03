@@ -1,4 +1,6 @@
-blocked
+partial
+No printed edition of these Zeschau-Seebach dispatches exists; IA full-text search (be-api fts, 4 queries incl. "Zeschau" "Seebach" chiffre and "Albin Leo von Seebach") and Google Books (3 queries, 0 hits) read by this worker 3 Oct 2026, letters absent; HStAD 10731 Nr. 12 catalogue record read ("Ministerialdepeschen", 1841-1849, digitalisatExists: false).
+Status `partial` (CHECK-ZESCHAU, 3 Oct 2026): six-source check finds no decipherment anywhere; Bourdeau holds 7 grade-I syllabary values from the rubbed R5005 gloss and we hold 692 transcribed R5006 digits, so the target is partly in hand, not untouched.
 Read (26 Sept 2026, bZES): Bourdeau's `zeschau1841/` folder and CATALOGUE.md #53 in full at HEAD fc0c9e8
 (25 Sept 2026, `github.com/dbourdeau/cyphersolver`, shallow clone, deleted after); Aymeloglu's
 `catalogue/decode-records.jsonl` at HEAD (`github.com/aaymeloglu/unsolved-ciphers`, shallow clone, deleted
@@ -217,7 +219,6 @@ parent's GAPS briefs.
 ## Remaining gaps (GAPS179, 3 Oct 2026)
 Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2,500-3,000 on R5006-R5008 (2 of 6 pages); 0 tokens read
 - R5007 p.1-2, R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179); next: one page per worker as GAPS179 (1 login, overview, iiif_lines crops, 2 blind Opus passes + 1 reconcile; a 3-line page ran 3 units, a full page 5 units at about USD 1.3 each), ~$4-7 a page, ~$22 for the four
-- Status word - blocker: not-attempted; intake gate needs an edition/full-text line, a Web and blog check and a Premise check (GAPS179 "Status word"); next: check-solved worker, ~$4.5
 - Crib test of Bourdeau's 7 R5005 values on the R5006-R5008 digits - blocker: not-attempted; can run on R5006's 692 digits now, or wait for all six pages; next: crib + coverage and order-scrambled controls as the bZES brief specified, ~$3
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
@@ -229,4 +230,79 @@ Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2
 - [ ] key-rebuild: syllabary crib from the 7 values on the R5006 digits, then R5007-R5008
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 3 internal gaps; cheapest next: crib test of Bourdeau's 7 values on R5006's 692 digits with both controls, ~$3 (then R5007 p.1 as GAPS179, ~$5)
+Verdict: keep going: 2 internal gaps (status word done by CHECK-ZESCHAU, 3 Oct 2026: line 1 `partial`, gate exit 0); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict); cheapest next: crib test of Bourdeau's 7 values on R5006's 692 digits with both controls, ~$3 (then R5007 p.1 as GAPS179, ~$5)
+
+## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
+
+Verdict: **not found solved; `partial`** (no decipherment, key or plaintext of R5005-R5008 located in any of the six
+source families; Bourdeau's 7 grade-I values and our R5006 transcription are the only progress). Sources, all checked
+17:47-18:05 UTC 3 Oct 2026 by this worker:
+
+1. **Web** (search engine, 9 queries, see Web and blog check below): only hit about the cipher is Bourdeau's own site
+   (dbourdeau.github.io/cyphersolver), which calls it undeciphered.
+2. **Print** (sender's/recipient's papers): no edition of Zeschau's or Seebach's diplomatic correspondence exists that
+   any search reached. IA be-api fts, 4 queries (`"Zeschau" "Seebach" chiffre` 226 hits, `"Zeschau" "Seebach"
+   Petersburg 1842` 530, `"Albin Leo von Seebach"` 33, `"Seebach" "Zeschau" Depesche` 181; top 8 of each read): hits are
+   Hof- und Staatshandbücher, Almanach de Gotha, newspapers, Vehse's *Geschichte der Höfe des Hauses Sachsen*
+   (geschichtederde60/63vehsgoog -- its "Chiffre" hits concern 18th-century Prussian ciphers, not these letters) and
+   Wagner literature (Seebach in Paris 1859). None prints the 1841-43 dispatches. Google Books API (`country=US`, keyed),
+   3 queries (`"Zeschau" "Seebach" chiffre`; `"Zeschau" "Seebach" 1842 Petersburg Gesandtschaft`; `"Seebach" "Zeschau"
+   dépêche 1841`): 0 results each. OpenAlex/S2: 0 each (bZES, 26 Sept, not repeated).
+3. **Holding archive catalogue**: archiv.sachsen.de record guid fb8ee3d8-3829-4665-8b8f-45c2574196d7, read this pass
+   (HTTP 200): "Sächsisches Staatsarchiv, 10731 Sächsische Gesandtschaft für Russland, St. Petersburg, Nr. 12",
+   "Ministerialdepeschen", Datierung 1841 - 1849, Benutzung im Hauptstaatsarchiv Dresden; "Enthält u. a." lists subjects
+   (Zollangelegenheiten ... Auslieferung von Michael Bakunin) with no mention of Chiffre, Schlüssel or decipherment;
+   availability flag in the page data: `digitalisatExists: false`. Not digitised by the archive; DECODE's scans are
+   the only images.
+4. **DECODE** record notes (cached RecordsList, `sources/decode/records-non-decrypted-2026-09-24.tsv`, and Aymeloglu's
+   mirror): all four "Partially decrypted", note "interlinear decrypted, but unfortunately rubbed out"; R5007's title
+   mistypes 13.06.1846 (letter dated 1842). No key or decipherment document attached.
+5. **Bourdeau** (`github.com/dbourdeau/cyphersolver`, fresh shallow clone, HEAD a439937, 3 Oct 2026 01:07 -05:00):
+   `targets/zeschau1841/NOTES.md` line 3 verbatim: "Status: attempted, open. The system is identified and a few code
+   values are recovered from the erased decipherment, but the letters are not read." CATALOGUE.md #53: "No key on
+   DECODE; ciphertext-only solvers failed." Only `ct_R5005.*` ciphertext files; no R5006-R5008 transcription.
+   **Duplicate-effort risk** (brief's "stated next step" rule): his "What would move it" item 3 reads "Transcribe
+   R5006–R5008. The German letters use the same code; the cipher in R5008 sits inside a known sentence frame, and
+   R5006's cipher follows a clear acknowledgement of Seebach's reports." His target table already describes the
+   R5006-R5008 layouts (8 + 3 cipher lines on R5006, about 10 on R5007, 5 on R5008), so he has viewed the images.
+   This target is his own stated next step with the material in his hands; the parent weighs that before further spend.
+6. **Aymeloglu** (`github.com/aaymeloglu/unsolved-ciphers`, fresh shallow clone, HEAD d2800bb, 27 Sept 2026): only
+   `catalogue/decode-records.jsonl` and `decode-catalog.csv` rows 5005-5008 (DECODE metadata, "Partially decrypted").
+   No working files.
+
+Who did not know: nobody is shown to have read it; DECODE's own "interlinear decrypted" note means the 1840s recipient
+did, and that pencil is now largely rubbed out. Nothing to hand on. Not a novelty statement (rule 10).
+
+## Web and blog check (CHECK-ZESCHAU, 3 Oct 2026)
+
+Search engine, 9 queries, every hit title read:
+- `Zeschau Seebach 1841 cipher` -> Bourdeau index (undeciphered, posted 21 Sept 2026), Wikipedia/Zeno biography pages. No solution.
+- `"Sächsische Gesandtschaft in Russland" Chiffre Zeschau Seebach` -> de.wikipedia "Liste der sächsischen Gesandten in Russland" (Seebach 1839-1852), archiv.sachsen.de Beständeübersicht, Deutsche Biographie (Zeschau). No cipher content.
+- `"10731" "Gesandtschaft in Russland" Nr. 12 chiffre` (shelfmark + cipher) -> archiv.sachsen.de Beständeübersicht pages only.
+- `Zeschau Seebach Chiffre Dresden St. Petersburg 1842 entziffert` -> Zeschau family Wikipedia pages, Bourdeau index. None.
+- `"J'accuse la réception de Vos rapports" Zeschau 1842` (the most distinctive clear-text phrase, R5006 l.1) -> only Zola's *J'Accuse* pages and one 1842 Preußische Staats-Zeitung OCR page without the phrase. No hit.
+- `Zeschau Seebach cipher solved Claude OR GPT` (model-solve announcements) -> Bourdeau index; Vals AI / Cyphral Distich (Urquhart 1653) coverage; LiveScience "AI decodes 217-year-old secret letter ordered by Napoleon" (a different item, a Napoleonic general's letter). None concerns this cipher.
+- Cipherbrain: `site:scienceblogs.de/klausis-krypto-kolumne Zeschau OR Seebach OR "sächsische Gesandtschaft"` -> 10 posts, none about this item (the one Saxon mention is a 1786 Munich legation secretary in the Bernotat PDF).
+- Cryptiana blog: `site:cryptiana.blogspot.com Saxony OR Saxon OR Zeschau OR Seebach cipher` -> Richelieu 1641, Henry IV 1590, Catherine of Aragon posts; none about this item.
+- Cipher Mysteries: `site:ciphermysteries.com Zeschau OR Seebach OR Saxon 1841` -> two unrelated posts (Middle Ages codes, Schmeh interview).
+No post about this item was found on any of the three blogs, so there was no comment thread to open. Searches are a log, not a novelty finding.
+
+## Premise check (CHECK-ZESCHAU, 3 Oct 2026)
+
+(a) Folder's own mentions -- **found, partial only**: DECODE's "interlinear decrypted, but unfortunately rubbed out"
+for all four records. R5005: Bourdeau's 7 values from the rubbed pencil (grade I, already in Established). R5006 p.1-2:
+looked at native resolution by two passes plus the reconciler (GAPS175, GAPS179): ticks only, no letters. R5007 and
+R5008: pencil **not yet looked at** -- their transcription workers must mark it (the "Next step" already says so). No
+clear copy or "Dechiffrement" sheet is mentioned anywhere in the folder.
+(b) Other solvers' working files -- **not found**: Bourdeau's `syll*.py`, `hsolve.py`, `gl.py`, `enh*.py` run on
+`ct_R5005` only (no R5006-R5008 ciphertext in his repo, HEAD a439937); Aymeloglu has metadata only. No borrowed key has
+been run on R5006-R5008 by anyone.
+(c) Physical neighbours -- **partly viewed, rest unreachable**: R5006 p.2 (the cipher's own spread, facing page
+included) viewed by GAPS179: clear French, signature and address, no decipherment. Nr. 12 runs 1841-1849
+(Ministerialdepeschen); the leaves around each cipher letter are not on DECODE and the file is not digitised
+(`digitalisatExists: false`). Unreachable without HStAD (SEND-QUEUE S5 / ASKS 64).
+(d) Recipient's side -- **not found / unreachable**: 10731 is itself the recipient's (St Petersburg legation's) file,
+so the rubbed interlinear is the recipient-side decipherment. The other direction (Seebach's reports and their Dresden
+decipherments, in the foreign ministry's holdings) is not digitised as far as this pass found and was not searched by
+shelfmark. No printed Saxon or Russian documentary series for 1841-43 prints these dispatches (print search above).
+No find in (a)-(d) makes the item calibration or found-solved.
