@@ -6660,3 +6660,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 07:48 | account-4 parent | check-in 07:48: 6 done (fr17 corpus built; r4282 homophonic closed for Latin; maurice-rupert candidate key DECODE 9119 found). Spawned CLOSER-45, GAPS52-maurice-rupert (9119/9117 test), GAPS53-r4282 (wordcode), GAPS54-vanspaen (freq-position), REJUDGE-FR17 (skips acct-2/3 claims), GAPS55-suriname (dots retry). FT4j-rousseau live.
 2026-10-03 07:48 | GAPS53-riksarkivet-r4282-1628 (account-4) | claim: ciphers/riksarkivet-r4282-1628, wordcode family step (control first), for the account-4 parent
 2026-10-03 07:48 | GAPS52-maurice-rupert-1645 (account-4) | claim: maurice-rupert-1645 -- one DECODE login, fetch 9119/9117, transcribe key tables, apply + shuffled-key control; cap USD 12, box 50 min from 07:49 UTC
+2026-10-03 07:49 | REJUDGE-FR17 (account-4) | claim: re-judge list in tools/data/fr17/README.md under fr17 vs current corpus, baluze156-1636 first; NOTES.md only
