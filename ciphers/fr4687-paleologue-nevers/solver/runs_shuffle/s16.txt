@@ -1,0 +1,15 @@
+shuffle 16: 642 units, anchor kept at 2 occurrences
+SHUFFLE 16: 12 cribs, 6 restarts x 30000 iters each
+  suofratel	-4.250	uasiralliliemmoseauitarssuofratelogniicoleouirtuheim
+  cardinale	-4.320	ancoibeetetleerclnatapiccardinalersoooorelratiaaglie
+  francesco	-5.041	reftcmooeoecaaafceresucffrancescoadittlaocarecsrmcia
+  guglielmo	-5.439	uegiihooioimssggmeuiltigguglielmogpriiagomguiiluemas
+  monsignor	-4.988	ogmaierraraoiinmogoanuimmonsignorndiaaenronoainopoei
+  suamaesta	-4.590	uesoacaanantiiasteunsrassuamaestaadiooraataunasuotii
+  ilducadis	-4.961	laiocassusuioodiialudociilducadisdprooadsidlucdlfieo
+  monferrat	-4.589	ormaehttutuaiinmarourlemmonferratndiaaintanouerolaei
+  lacorteet	-4.577	atlorottutuesscletaueorllacorteetcinooactecaureadeis
+  cheilrede	-5.276	hrculaeeieidiiecdrhiealccheilredeepauuaeedehilehtdoi
+  nostrofra	-5.037	oonirgaaaaarddsnrooafirnnostrofrasamiiisarsoarfocred
+  ostrofrat	-5.246	sfoiohttataanntoafsariooostrofrattdiiiettatsaorsbaen
+SHUFFLE 16: suofratel -4.250 margin +0.070 over cardinale

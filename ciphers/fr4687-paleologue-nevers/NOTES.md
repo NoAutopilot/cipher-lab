@@ -752,3 +752,49 @@ Next step (compute only, ~10 min, ~USD 1): the confound control -- the same crib
 solver-optimum cribs also clear margin >= 0.30, the target's +0.657 means nothing. Only if they do not is the
 `suofratel` hypothesis worth a nomenclator-aware or Mantuan-model pass.
 Requests this step: none (compute only). Subagents/vision calls: 0.
+
+## Unit-shuffle null for the `suofratel` crib test (A2-PAL2, account 2, LANE-A2PUSH, 3 Oct 2026)
+
+Intake gate before work (02:01 UTC): `tools/intake_gate_check.py fr4687-paleologue-nevers` -> `fr4687-paleologue-nevers:
+blocked (line 1) -- already terminal, nothing to gate`, exit 0. Status word unchanged (`blocked`, Ferrari 1999, LOCAL-QUEUE
+L33). Brief: `.claude/briefs/runs/2026-10-03-acct2-a2-pal2.md` (the unit-shuffle null of A2-PAL's crib test, at least 20
+shuffles, compute only). Note: this NOTES.md carries no "## Remaining gaps" / "## Escalation" sections (the target is
+`blocked`, not `partial`, so `tools/gaps_check.py` skips it); the brief's Verdict text was taken from the brief itself.
+
+**Design (written before the shuffles ran).** Script `solver/cribs_shuffle.py`, driver `solver/runs_shuffle/run.sh`,
+outputs `solver/runs_shuffle/s-1.txt` (real target) and `s0.txt`-`s19.txt`. Each null copy keeps both anchor occurrences
+(`17 9 6 10 20 4 y 3 18`) in place and permutes every other unit of the segmented target (642 units) across all
+non-anchor positions (rng seed 7000+k): unit counts and passage lengths unchanged, order destroyed. Then the identical
+test of `cribs_repeat.py target`: same 12 cribs (`suofratel` + the 11 wrong), same 6 restarts, same constrained score per
+unit, same seed 11, same model (it16_all, rebuilt from tools/data/it16 as in run_full.sh), statistic = `suofratel` score
+minus best other crib. The statistic depends on the context the shuffle destroys, so the null can differ from the target
+(rule 3). Box sizing: at A2-PAL's 150,000 iterations one copy costs ~4 min (20 copies = 80 min, over this job's 30-min
+box), so iterations were cut to 30,000 for every run and the real target was re-run at that same setting to keep the
+two sides matched: it reproduces A2-PAL's margin exactly (+0.657 over cardinale, `suofratel` -3.416/unit vs -3.413 at
+150k), so the cheaper setting reaches the same optimum on the real text.
+
+**Result (runs 02:03-02:17 UTC).**
+
+| run | `suofratel` score/unit | margin over best other | best other |
+|---|---|---|---|
+| real target (6 x 30k) | -3.416 | **+0.657** | cardinale |
+| 20 unit shuffles | -4.349 to -4.144 | -0.015 to +0.228; mean +0.081, sd 0.070, p95 +0.207 | cardinale (18), suamaesta (2) |
+
+The real margin is above every one of the 20 shuffles (empirical p < 1/21) and above the shuffle p95 (+0.207) by
++0.450, about 8 sd above the null mean; no shuffle reaches the 0.30 gate. So the pre-registered condition holds: the
+candidate is **not** rejected by this null. What it shows: the anchor units plus the language model alone favour
+`suofratel` slightly (it ranks first in 19 of 20 shuffles, but by +0.08 on average), and most of the real +0.657 comes
+from the order of the units around it -- the unshuffled text holds sequential structure that agrees with the crib.
+
+**What it does not show.** It does not separate "`suofratel` is the right reading" from "any crib that matches the
+unconstrained solver's optimum on a sequentially structured text wins by this much": the shuffle removes that structure
+for every crib alike. The surrounding text still does not read (`dutocuelomiscriueilaanoasuofrateleisoirisoltadifarle`),
+and its score per unit (-3.416) stays below the controls' true-crib solves (-2.70 to -3.12). Grade counts for this step:
+H 0, C 0, S 0, M 18 (the 9 anchor units at both occurrences, `s u o f r a t e l`, unchanged as a candidate), I 0. No
+token is graded S; this is a candidate, not a reading.
+
+Next step (compute only, ~15 min, ~USD 1): the solver-optimum crib null on the real target -- take 10-20 other 9-unit
+windows (repeats first, then single windows), set each window's crib to what the unconstrained solve reads there, run
+the same crib test (same 11 wrong cribs, 6 x 30k) and report where `suofratel`'s +0.657 falls among those
+solver-optimum margins; only if it stands above their p95 is a nomenclator-aware or Mantuan-model pass worth running.
+Requests this step: none (compute only). Subagents/vision calls: 0.
