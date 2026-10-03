@@ -53,3 +53,6 @@ qui	2123	M	3	block2 row23 (bottom edge of band 1)	sub-s3b1 (L) + worker
 pour	2205	H	3	block3 row5	sub-s3b1 + worker
 pour	2206	H	3	block3 row6	sub-s3b1 + worker
 pour	2305	H	3	block4 row5	sub-s3b1 + worker
+se	2055	H	3	block1 row55	sub-s3b3 + worker
+se	2155	H	3	block2 row55	sub-s3b3 + worker
+se	2255	H	3	block3 row55	sub-s3b3 + worker
