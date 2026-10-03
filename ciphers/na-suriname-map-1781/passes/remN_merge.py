@@ -3,8 +3,13 @@ import csv,difflib,re
 def load(f):
     d={}
     for r in csv.DictReader(open(f),delimiter='\t'):
-        toks=[t for t in r['glyphs'].replace('<,>',' ').replace('<.>',' ').replace('/',' ').replace(',',' ').split() if t not in ('.',)]
+        toks=[t for t in r['glyphs'].replace('<,>',' ').replace('<.>',' ').replace('/',' ').replace(',',' ').split() if t not in ('.',) and not (t.startswith('<') and t.endswith('>') and not t[1:-1].replace('½','').isdigit())]
         norm={'f':'[f-loop]','h':'[h-loop]','1':'[l-bare]'}
+        # GAPS16: the two readers' own names for one shape (each pairing consistent through both files), unified to
+        # pass A's name before diffing (rule 3 notation lesson): B v = A y, [div] = [x-dot], [kappa] = K, [u-tail] = [thorn],
+        # J = [J-rev], [amp] = &, A's [ct] = 'c t'
+        norm.update({'v':'y','[div]':'[x-dot]','[kappa]':'K','[u-tail]':'[thorn]','J':'[J-rev]','[amp]':'&'})
+        toks=[x for t in toks for x in (['c','t'] if t=='[ct]' else [t])]
         d[r['crop']]=[norm.get(t,t) for t in toks]
     return d
 A=load('passes/remN_passA.tsv');B=load('passes/remN_passB.tsv')
