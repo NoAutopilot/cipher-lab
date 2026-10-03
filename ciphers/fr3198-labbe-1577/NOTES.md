@@ -112,3 +112,18 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 23 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (CS-BATCH1, 3 Oct 2026)
+
+Queries (WebSearch, standard, 3 Oct 2026): (1) `Desiderio l'Abbé Nevers Prague 1577 cipher Rudolf II "l'Abbé" lettres chiffrées Français 3198` -> HistoCrypt 2019/2021 papers on Nevers ciphers, Source Library items on Rudolf II's 1597 cipher tools: nothing on fr.3198 nos.30/37; (2) four Cryptiana/Cipherbrain/Cipher Mysteries variant searches: no page naming l'Abbé 1577. Local: grep of `sources/cryptiana/web/nevers.htm`, `league.htm` for "3198", "labb", "l'abb": only an unrelated "monsieur l'abbé d'Orbais" (nevers.htm no.62, f.126); no fr.3198 section. Not found. Blog comment threads not opened.
+
+## Premise check (CS-BATCH1, 3 Oct 2026)
+
+(a) Folder's own files: the 2 March letter cites the 24 Feb 1577 enclosure ("copie de la chiffre"); fr.4695 no.51 named as possible key/crib -- not located. No decipherment mentioned. Not found.
+(b) Other solvers' working files: `sources/cyphersolver/` disk snapshots (2026-10-01..03) contain no labbe1582 folder (only Bourdeau's mercy1648 notes mention an unrelated "Desiderio" hit); recorded via 2 Oct diff, class b. Not found.
+(c) Physical neighbours: not viewed (no vision calls). The second witness of the Breslau letter (no.38, f.76) is a neighbour to check for a clear copy.
+(d) Recipient/edition side: Nuntiaturberichte III. Abt. Bd. IX (Koller, 2003) identified, not reachable online; Gomberville not read here. Unreachable. Verdict remains `blocked`.
+
+## While waiting
+
+The one action that depends on nobody: Tomokiyo's fr.4695 pages (bnf4715.htm and neighbours on disk) searched for the 5 Feb 1577 no.51 key, disk-only, ~USD 0.3; then a Gallica fr.4695 manifest lookup (1 request). Status stays `blocked`.

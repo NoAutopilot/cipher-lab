@@ -83,3 +83,19 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 22 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (CS-BATCH1, 3 Oct 2026)
+
+Queries (WebSearch, standard, 3 Oct 2026): (1) `Nevers La Vieuville 1587 "Saint-Aignan" lettre chiffre Français 3975 cipher decipherment` -> the 2019 HistoCrypt paper on Henri IV's 1592 digit-cipher letter to Nevers (dspace.ut.ee) and CCFr entries: no reading of fr.3975 f.101-102; (2) four `cryptiana.blogspot.com` / Cipherbrain / Cipher Mysteries variant searches: no page naming Vieuville 1587. Local read by this worker: `sources/cryptiana/web/league.htm` section "BnF fr. 3975" -- verbatim: "Information on BnF does not mention \"chiffre.\""; `nevers.htm` lines on no.39 (fr.3995 f.53v) "Duke of Nevers to Robert de La Vieuville (this employs figures, letters, and symbols ...)" and the Vieuville-Nevers cipher of 1589 (phelippes.htm). Not found: a decipherment of the 30 Sept 1587 letter. Blog comment threads not opened.
+
+## Premise check (CS-BATCH1, 3 Oct 2026)
+
+(a) Folder's own files: Bourdeau's key no.16 (fr.3995 f.32v) reads the code numbers; the 33 letter-sign runs do not decode. Found (partial, already recorded). No clear copy named.
+(b) Other solvers' working files: `sources/cyphersolver/` snapshots on disk (2026-10-01..03) hold no vieuville1587 folder; his page was read through the 2 Oct diff (class b). Aymeloglu: no hit (24 Sept). Not found beyond what is recorded.
+(c) Physical neighbours: not viewed (no vision calls); Bourdeau reports the only image is B/W microfilm, hand ~30-40% legible.
+(d) Recipient/sender side: Nevers is both sender and holder; Gomberville 1665 negative is Bourdeau's, not re-run (Google Books part 2 not opened here). Not found / not re-read.
+Related on-disk lead: the 1589 Vieuville-Nevers numerical cipher (phelippes.htm) and fr.3995 no.39 (f.53v) share the correspondent pair; a key comparison needs images.
+
+## While waiting
+
+The one action that depends on nobody: run `tools/print_check.py` phrase queries for the readable clear phrases of the letter ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against IA/Google Books/OpenAlex, disk-only, ~USD 0.5. Status stays `blocked` (copy-order: colour scan).

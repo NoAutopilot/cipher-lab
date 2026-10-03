@@ -153,3 +153,7 @@ Requests: gallica.bnf.fr 15 (13 IIIF images + 1 manifest via gallica_folio.py x2
 - Add fr.4688 ff.15-18 and ff.65-86 to the next BnF reproduction quote batch (outreach/bnf-manuscrits-arsenal-quote-batch.md, ASKS 38 pattern); REQUEST.md here.
 - fr.4687 no.41 (f.89r, Gallica btv1b90075058 canvas 97): an undated cipher letter fragment (figures + capitals + marks), not in Tomokiyo; probably 1589-93 by its neighbours. A scout/intake row, not this target.
 - fr.3995 undated tables nos.32-34, 71, 73, 76 by image (~$1) for a Casale/Monferrato caption.
+
+## Re-check (CS-BATCH1, 3 Oct 2026)
+
+Re-confirmed, no new material: WebSearch `Stefano Guazzo Nevers Casale 1571 1572 ... "Français 4688"` (3 Oct 2026) returned the Guazzo biography, BnF/Folger/Heidelberg catalogue records and the HistoCrypt Nevers papers, none carrying a decipherment of fr.4688. Local grep of `sources/cryptiana/web/codebreaking.htm` and the DECODE key lists: the "4688" hits are an unrelated Marburg key. Status stays `blocked` (needs-physical-access; the 2 Oct premise check and While-waiting entries stand, no new step).

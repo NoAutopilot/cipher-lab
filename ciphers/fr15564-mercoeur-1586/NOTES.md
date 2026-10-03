@@ -74,3 +74,19 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: their target folder not cited in our NOTES.md (catalogue item 13 is)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (CS-BATCH1, 3 Oct 2026)
+
+Queries (WebSearch, standard, 3 Oct 2026): (1) `Mercoeur 1586 lettre chiffrée Guise "15564" déchiffrement` -> Loria 2023 PDF, HistoCrypt papers, Morgan, museeprotestant Guise genealogy: no reading of f.151; (2) `Nevers/Mercoeur/... cryptiana.blogspot.com` variants (four searches): no hit on the Cryptiana blog itself via the search engine. Local snapshots read instead by this worker: `sources/cryptiana/web/henryiii.htm` (section "BnF fr. 15564", "f.151"), `unsolved.htm`, `GL.htm` ("Duke of Guise? in BnF fr.15564 and fr.15565"), `blog/2018_12_undeciphered-letters-from-duke-of-guise.html`. Tomokiyo, unsolved.htm: "In 2022, George Lasry solved it ... He also found there is a short ciphertext in f.151 ... He says it does not decipher with the same key and is probably too short for cryptanalysis." henryiii.htm, f.151: "Undeciphered. Dated \"ce xxvje juin.\" Endorsed \"A Monseigneur / Monseigneur le Duc de Mercoeur\"". Cipherbrain, Cipher Mysteries and the live Cryptiana blog comment threads: not opened this pass (search engine returned no page for them; no live fetch run). Not found: any decipherment of f.151.
+
+## Premise check (CS-BATCH1, 3 Oct 2026)
+
+(a) Folder's own files: NOTES.md named only Bourdeau's "attempted, open" and the catalogue's ciphered list (f.27, 78, 119, 142); no decipherment mentioned. Not found.
+(b) Other solvers' working files: Tomokiyo/Lasry solved f.27, f.78, f.119, f.142 of this volume (and fr.15565 ff.105, 122, same key; solution printed on GL.htm, "nomenclature symbols appear to be Roman numerals") -- that key is on hand and Lasry reports f.151 does NOT decipher under it. Bourdeau (`targets/mercoeur1586`, 21 Sept 2026): clear frame transcribed, cipher not read, Lasry/Mayenne-Forget/Clair.357 keys tried. Found for the neighbouring letters, not found for f.151.
+(c) Physical neighbours/facing page/slips: not viewed (no vision calls in this brief). Unreachable-by-brief; image is online (ark btv1b9064027v, canvas f151, 8936x6606).
+(d) Recipient side: Carne, Documents sur la Ligue en Bretagne (1899) covers 1589-1598 only (no date overlap). Not found.
+Open point: the earlier note that the catalogue lists no f.151 is answered by Tomokiyo/Lasry, who do record a short ciphertext at f.151.
+
+## While waiting
+
+The one action that depends on nobody: count the f.151 cipher signs from the Gallica canvas (one native crop, one vision call, ~USD 2.5) to see whether it is long enough for any test, and list its sign inventory against the Lasry fr.15564 key's inventory (GL.htm). Status stays `blocked` (no printed edition exists for an anonymous letter; Tomokiyo is the nearest index).
