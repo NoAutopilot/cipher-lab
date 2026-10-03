@@ -433,6 +433,28 @@ Step run (FT4b's Verdict): transcribe f.216v + f.217r and score the f.206 key ag
 
 Not found in: no print or phrase search was run this step (transcription and scoring only). Rule 10: no novelty class here.
 
+## FT4d-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (FT4c's Verdict): pooled f.206 + f.216v consistency run. Rule 3: a pooled re-run with new material (f.216v),
+allowed once; a FAIL is logged and the next step names the f.249v/f.250r and f.213v/f.214r pairs as new material.
+
+### Pre-registration (committed and pushed before the first scored run, 3 Oct 2026 ~05:15 UTC)
+
+`align/pooled_gate.py` (docstring holds the full definition; nothing in it is changed after this commit):
+- **Statistic Hp.** Both pairs at once (f.205v/207r vs f.206r slip, maxlen 9 as FT4; f.216v vs f.217r slip, maxlen 12 as
+  FT4c), FT4's ten C codes pinned to their f.206 aligned chunks in both passages (379 pinned as `xinterets`, the chunk FT4
+  aligned for "aux interets" -- key.tsv's bare "interets" makes the f.206 pins jointly infeasible with 581=au, found while
+  writing this script, before any score). Hp = the largest sum of occurrences (both passages) of a set of non-C codes
+  shared by the two passages that can be tied to one identical chunk across both, in segmentations that exist together
+  (every repeated code still consistent within its passage). Shared non-C codes: 10, 121, 208, 306, 338, 420, 444, 781,
+  824 (26 occurrences).
+- **Controls, pooled N.** (a) value permutation: f.216v's non-C labels permuted among its own non-C distinct labels, 100;
+  (b) pairing shuffle: both passages' group orders shuffled, 100. Time limit 4 s per control run (timeouts counted high),
+  60 s per tied set for the real run (timeouts counted not reached); seed 7.
+- **Gate.** PASS: Hp >= 5 AND Hp > p95(a) AND Hp > p95(b). Fewer than 5 shared non-C occurrences = non-test.
+- **Key rule.** A shared code with exactly one joint chunk (relaxed, pins fixed: `forced-check` lines) that is also in the
+  real best tied set enters key.tsv at C only on PASS; otherwise key.tsv is unchanged.
+
 ## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, 3 Oct 2026)
 Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced)
 - f.249v(+249r?) <-> f.250r-v and f.213v(+213r?) <-> f.214r pairs (about 50 and 30+ groups) - blocker: not-attempted; located FT4b, 249r and 213r not yet viewed; next: same as above after the f.216v pair, ~$3 each
