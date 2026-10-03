@@ -347,7 +347,7 @@ Not found in print: nothing searched (transcription job).
 Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
-- code word xiiij (Seigneur, M) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij; next: one targeted blind read of L02 run 1's first glyph on a tight crop of images/f43_L02_s2.jpg, ~$1. (The L10 overbar "28" (Ml de Biron) was withdrawn by A1B-FILS-L10: the stroke belongs to line 11.)
+- code word xiiij (Seigneur, M) - blocker: not-attempted; two blind reads now give x first and the group as xiiij (FILS-F38: alts c/viiij; A1B-FILS-XIIIJ: alt e, from the crop cutting the glyph's left edge), pre-registered G1 not met; next: one blind read on a wider crop starting at x ~1780 of images/f43_L02_s2.jpg (the lead-in stroke and the preceding figure visible), same G1 rule, ~$1. (The L10 overbar "28" (Ml de Biron) was withdrawn by A1B-FILS-L10: the stroke belongs to line 11.)
 - fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
 
@@ -361,7 +361,7 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn
-Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: one targeted blind read of the xiiij first glyph (L02), ~$1
+Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: one blind read of the xiiij first glyph on a wider L02 crop (lead-in visible), ~$1
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -470,3 +470,15 @@ moves M -> H (two independent blind reads agree on x) and the code word xiiij = 
 (G2) x but with c or v named as a live alternative, or confidence L -> stays M. (G3) any other first glyph -> split,
 stays M, logged. Only G1 triggers a rebuild (`keys/build_no25_nomen.py --check`, `decode_f35.py --check`) and rule-10
 propagation to AUDIT.md (class N4 unchanged) and SECOND-OPINIONS-QUEUE.tsv rows for this target.
+
+## A1B-FILS-XIIIJ result (account 1, 3 Oct 2026, 17:2x UTC)
+
+Blind read (1 Opus subagent call, crop `images/f43_L02_xiiij.jpg` only, no candidates): first glyph **x**, alternatives
+**"e (or the tail of a letter from the word before, since the crop cuts this glyph at its left edge)"**, confidence M,
+whole group `xiiij`; deciding feature: a closed loop at x-height whose stroke drops below the baseline and curls left
+("the usual secretary-hand x and not an e"). Comparison with FILS-F38 (x, alternatives c/viiij, M): both blind reads give x
+first and the whole group as xiiij; neither gives v. **Outcome: not G1** -- the pre-registered G1 needs no alternative named,
+and this reader named one (e / crop-edge), so the token **stays M** and xiiij = Seigneur stays M. No rebuild, no AUDIT.md or
+SECOND-OPINIONS-QUEUE.tsv propagation due (no grade moved). The stated doubt is the crop's left edge, not the letter shape:
+my crop started at x 1880 and the reader could not see where the glyph's lead-in begins.
+Grades this job: 0 tokens moved; code word xiiij = Seigneur M (unchanged). Not found in print: nothing searched.
