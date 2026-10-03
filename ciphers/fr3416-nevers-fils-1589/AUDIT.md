@@ -238,3 +238,25 @@ because unquoted single words silently return 0. I recorded that behaviour above
 SECOND-OPINIONS-QUEUE row SO-NV02-F35 already exists, and the class did not change, so no new row was added.
 
 Propagation (FILS-NOMEN, 3 Oct 2026, rule 10): token grades on f.35r are now H 74 / M 28 of 102 (the safe sentence above says 62 H; FILS-CLEAR moved 9, FILS-NOMEN 3; no decoded letter changed); code words xiiij = Seigneur and 28 = Ml de Biron added at M via keys/key_no25_nomenclator.tsv.
+
+## Gérard 2003 *Répertoire* entry, cloud route (A1B-FILS-LQ, account 1 for LANE-A1B, 3 Oct 2026, 16:4x UTC)
+
+Search log only, no class change (a worker, not a verifier). ASKS 110 asked for one look at the "Fr. 3416 fol. 35" entry
+in Jean-Philippe Gérard's *Répertoire des ressources généalogiques et héraldiques du Département des manuscrits de la BnF* (2003, ISBN 9782914611145).
+Routes tried, one request each, 3 Oct 2026: archive.org advancedsearch (title) 0 items; Google Books volume 2L0WAQAAIAAJ
+`NO_PAGES` (confirmed again with key + `country=US`), `"3416" inauthor:Gérard répertoire` 0 items; Gallica SRU, the title phrase
+returns only unrelated heraldry books, so the *Répertoire* is not in Gallica. **HathiTrust bibliographic API (ISBN): record 004336226, htid
+`mdp.39015059979289`, "Limited (search-only)".** **HTRC Extracted Features API** for that htid (406 pages, per-page token
+counts, no word order): the token `3416` occurs on one page only, seq 00000176 (501 tokens, 38 lines). That page's vocabulary is
+the index section on princely and royal **households**: *maison* x12, *officiers* x5, *Rôle(s)*, *gages*, *pensions*,
+*pensionnaires*, *domestiques*, *gentilshommes*, *Comptes*, *État(s)*, *dépense(s)*, *Clairambault* x3, *Fr* x15, *fol* x13,
+with *Nevers* x3, *Mantoue* x1 (no *Gonzague*), *duc*/*duchesse*, and the tokens `3416` and `35` once each. The page carries **no** token
+containing *chiffr* (no *chiffre*, *chiffré*, *déchiffrement*), nor *lettre(s)*; the only *chiffr* tokens in the volume are on
+seq 20, 21, 41, 44, 46, 47, 65 (front matter and early sections, none with 3416).
+Reading of that evidence (inference, grade I: bag of words, the entry's own sentence is not quoted): fr.3416 fol.35 is
+indexed by Gérard as a source for a Nevers household (officers, rolls, wages), a catalogue line of the genealogical kind,
+and nothing on that page mentions a cipher or decipherment. This is the "genealogical or heraldic, or a catalogue line
+without a decipherment" case the second audit named; whether it is enough for N4 without the sentence itself quoted is the
+next verifier's call, not this worker's. No LOCAL-QUEUE row filed; if a verifier wants the exact wording quoted, the route
+is a LOCAL-QUEUE `hathitrust-page` row on full-text search inside mdp.39015059979289 for "3416" (snippet only, search-only volume).
+Requests: archive.org 1, be-api.us.archive.org 1, www.googleapis.com 3, catalog.hathitrust.org 3, data.htrc.illinois.edu 1, gallica.bnf.fr 1.

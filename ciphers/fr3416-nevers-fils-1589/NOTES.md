@@ -350,6 +350,7 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - code word xiiij (Seigneur, M) and the L10 overbar "28" (Ml de Biron, M, doubtful) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij, and put the only stroke under L10 "8 14" over a line 11 that lies outside the crop region; next: line 11 is now cropped (images/f43b_L03_s1/s2.jpg, FILS-UPPER); one targeted read of the stroke under L10 '8 14' on that crop and f43b_L02, ~$2
 - fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
+- Novelty N3 -> N4 (ASKS 110, Gérard 2003 *Répertoire* entry for fr.3416 f.35) - blocker: not-attempted; A1B-FILS-LQ answered it from the cloud (HTRC Extracted Features for HathiTrust mdp.39015059979289: '3416' on one page only, seq 176, a household-rolls index page, no *chiffr* token; AUDIT.md section 'Gérard 2003 Répertoire entry, cloud route'), no LOCAL-QUEUE row filed; next: a separate verifier session weighs that evidence for N4, ~$1
 
 ## Escalation
 - [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned once (FILS-F38: FAIL vs shuffled gloss, single passes)
@@ -359,7 +360,7 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split
-Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: read the stroke under L10 on the line-11 crop now on disk, ~$2
+Verdict: keep going: 5 internal gaps (1 illegible); cheapest next: read the stroke under L10 on the line-11 crop now on disk, ~$2
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
