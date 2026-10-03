@@ -456,3 +456,31 @@ the cipher words as a reading, which is what separates N1 from N0 for item A. A 
 item whose plaintext has been in print since 1842 (Surtees vol. 14): **class after the reply N1 (items A and B), unchanged;**
 item C (the sign table) stays at its search-level scope. No gate 2 applies to an N1 post. Nothing further is owed to him on
 this item.
+
+## 12. Propagation note: numeric code-layer revision (GAPS60, 3 Oct 2026) -- not a verifier verdict
+
+Worker GAPS60 (account 4, for the account-4 parent), 3 Oct 2026 about 08:30 UTC (clock read). Rule 10 propagation only:
+carries the reading revision made after this AUDIT.md was last written (NOTES.md "GAPS59-bowes-walsingham-1583 (3 Oct
+2026, account-4)", commit f9f4d8c5) into this file. **No class is changed here; the N-class is the verifier's.**
+
+**What changed in the reading.** The numeric code layer (codes.py / codes.tsv), not the sign table (key.tsv and
+reading.tsv are unchanged; `check.py` grades line still `S 73, M 12, I 3, H 0, C 9, unread 3, total 100, excluded 1`):
+- **000 = England, now C**: Boyd p.568 `50,000* sent to "000"` against Letter-Book CCXL p.532 `5000 men sent shortly into
+  England` at the same place.
+- **32 = the Queen (Elizabeth), now C**: Boyd p.371 `Finds the Queen of England ["32"]` against CLXXXVII p.404 `her
+  Majesty's resolution` at the same place. 32 and 000 are thereby one-to-one (the 24 Sept table had allowed either for
+  "England / the Queen").
+- codes.py now reads **C 8, M 23, unread 2 occurrences** (by code: C 3 = 189, 32, 000; M 7; unread 2 = 85, 0100), was
+  C 3, M 28. 91 = the King stays M (Bowes's own CXXI statement, held as a C-candidate for the parent). 223, 870, 54, 149,
+  19, 29(=23) stay M.
+
+**Bearing on sections 1 and 11.** The section 11 safe sentence quotes only the sign-table counts (97 of 100, S 73, C 9,
+M 12, I 3) and no code-layer count, so it stays accurate as written. Both new C values take their meaning from print
+(Boyd 1910, Surtees 1842), which is consistent with N1 and cannot raise it. **One point for the verifier:** Boyd's own
+bracket `["32"]` after "the Queen of England" means an identification of code 32 was already in print in 1910 (prior
+decipherment of that code, N0-shaped at the single-code level), and his `"000"` is printed without a gloss (the England
+value comes from setting Boyd beside Surtees). Neither raises the folder above N1; whether item C's scope sentence or the
+item-B row should mention the 1910 identification of 32 is the verifier's call.
+
+**SECOND-OPINIONS-QUEUE.tsv:** no row filed for this target (grep, 3 Oct 2026; class N1, below the N3 threshold for a
+row), so there is nothing to propagate there.
