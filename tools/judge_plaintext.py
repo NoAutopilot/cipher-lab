@@ -108,6 +108,16 @@ LANG_CORPORA = {
     "fr1810": [DATA / "fr1810" / f for f in ("correspondancede11napouoft.txt.gz", "correspondancede16napouoft.txt.gz",
                "correspondancede20napouoft.txt.gz", "correspondanced01davogoog.txt.gz",
                "correspondanced00davogoog.txt.gz", "lettresindites01napo.txt.gz")],
+    # fr17 (3 Oct 2026, account-4 worker TOOL-FR17): French diplomatic/administrative/epistolary prose of about 1617-1644
+    # in its own period spelling -- Richelieu's Lettres (Avenel) tomes III (1628-30) and VI (1638-42), Peiresc's letters
+    # to the Dupuy brothers tomes I-II (1617-33), Chapelain's Lettres tome I (1632-40), Mazarin's Lettres tome I (1642-44)
+    # -- editors' modern-French notes dropped by a period-vs-modern spelling-marker filter (tools/data/fr17/build.py),
+    # each file capped at 650k folded letters. For 1630s-1650s French targets (first: decode-2754-bnf-baluze156-1636),
+    # which fr16 (c.1560-1615) and fr18 (1680-1790) do not era-match. Read tools/data/fr17/README.md for the
+    # leave-one-file-out false-negative rate and per-fold spread before trusting a FAIL/PASS.
+    "fr17": [DATA / "fr17" / f"{i}.txt.gz" for i in ("bub_gb_OIQItRIybmIC", "bub_gb_wBJLsV8B_BgC",
+             "lettresdepeiresc01peiruoft", "lettresdepeiresc02peiruoft", "lettresdejeancha01chap",
+             "lettresducardina01maza")],
     "es": [DATA / "es17" / "donquijote00cervuoft.txt.gz", DATA / "es17" / "vidadelbuscn01quevuoft.txt.gz"],
     "da19": [DATA / "da19" / "historisktidsskriftdk1s6.txt"],  # 1845 Historisk Tidsskrift, 1.04M letters (B2 bCPH, 25 Sept 2026); 19th-c. register
     "es17c": [DATA / "es17c" / "memorialhistri17realuoft.txt.gz", DATA / "es17c" / "memorialhistri18realuoft.txt.gz",

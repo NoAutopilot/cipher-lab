@@ -1,0 +1,8 @@
+corpus=fr18 held_out=memoiresdemonsie01torc.txt.gz N=138 samples=200 real_p05=-1.033 false_negatives=1/200 (0.5%)
+corpus=fr18 held_out=memoiresdemonsie02torc.txt.gz N=138 samples=200 real_p05=-1.031 false_negatives=6/200 (3.0%)
+corpus=fr18 held_out=mmoiresduducde01invill.txt.gz N=138 samples=200 real_p05=-1.043 false_negatives=13/200 (6.5%)
+corpus=fr18 held_out=mmoiresduducde02vill.txt.gz N=138 samples=200 real_p05=-0.987 false_negatives=8/200 (4.0%)
+corpus=fr18 held_out=mmoiresetlettre01margoog.txt.gz N=138 samples=200 real_p05=-1.038 false_negatives=38/200 (19.0%)
+corpus=fr18 held_out=lagazettedefran01unkngoog.txt.gz N=138 samples=200 real_p05=-0.906 false_negatives=174/200 (87.0%)
+corpus=fr18 TOTAL false-negative rate: 240/1200 (20.0%)
+corpus=fr18 per-fold spread: 0.5-87.0% (174.0x)

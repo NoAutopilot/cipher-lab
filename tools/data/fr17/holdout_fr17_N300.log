@@ -1,0 +1,8 @@
+corpus=fr17 held_out=bub_gb_OIQItRIybmIC.txt.gz N=300 samples=200 real_p05=-0.879 false_negatives=36/200 (18.0%)
+corpus=fr17 held_out=bub_gb_wBJLsV8B_BgC.txt.gz N=300 samples=200 real_p05=-0.883 false_negatives=50/200 (25.0%)
+corpus=fr17 held_out=lettresdepeiresc01peiruoft.txt.gz N=300 samples=200 real_p05=-0.898 false_negatives=33/200 (16.5%)
+corpus=fr17 held_out=lettresdepeiresc02peiruoft.txt.gz N=300 samples=200 real_p05=-0.881 false_negatives=50/200 (25.0%)
+corpus=fr17 held_out=lettresdejeancha01chap.txt.gz N=300 samples=200 real_p05=-0.909 false_negatives=16/200 (8.0%)
+corpus=fr17 held_out=lettresducardina01maza.txt.gz N=300 samples=200 real_p05=-0.905 false_negatives=24/200 (12.0%)
+corpus=fr17 TOTAL false-negative rate: 209/1200 (17.4%)
+corpus=fr17 per-fold spread: 8.0-25.0% (3.1x)
