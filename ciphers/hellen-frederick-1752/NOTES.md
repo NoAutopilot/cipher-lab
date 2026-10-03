@@ -804,3 +804,15 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369 and R4370 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 2 internal gaps; cheapest next: open R4376 and the pre-f.44 Add MS 32276 key records for codes 1-800, ~$6
+
+## READ2-HELRD rule-7 re-derivation (3-4 Oct 2026)
+
+Fresh worker (account 2, for LANE-READ2) that had seen only the spec, `ciphertext_R1953.txt`, `key_r4369/key.tsv` and `decode.json`. Script: `key_r4369/rederive_helrd.py` (output `rederive_helrd.txt`, one line per token, `?` for unkeyed). Rules it applied, from decode.json's header and key.tsv alone: left cell -> its own code; right cell -> code+100, and where both land on one code the right (code+100) cell is used; `_`/`^` marks stripped; an inner `?` (doubtful digit, e.g. `128?3`) -> unkeyed; a trailing `?` (e.g. `990?`) read as usual.
+
+`python3 tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check`: `R1953_pipe.txt: tokens 846: H 152, M 16, S 304, U 374` / `reading up to date` (exit 0).
+
+Diff against `reading_R1953_tokens.tsv` (opened only after the script and its output were written): 846 tokens, 845 agreements, 1 difference.
+- Token 355 (sign 1023, line L01 pos 354): re-derivation `~satisfa` (key.tsv left cell, H); committed reading `?`, grade U. Not an M-graded token. Cause: the committed key drops crossed-out cells (a `~` prefix; stated in `build_keys.py`'s docstring, not in decode.json or the key's header), which a spec-plus-key reader cannot know. Applying that `~` rule makes it 846/846.
+- Two choices were not stated in the files this pass read and were matched to the committed reading only by trial: right-over-left on a shared code (207 tokens, committed S/M), and trailing `?` as read-but-M (990?, 1421?, two M tokens).
+
+Verdict: on the letter of the brief (every difference on an M-graded token, else SEND BACK), SEND BACK, narrowly: one U-graded token, from an unstated convention rather than a key error. Suggested fix, for the lane orchestrator: state the `~` rule, the right-over-left rule and the trailing-`?` rule in decode.json's header or README, then this reading can be accepted at 846/846. This check says "worth a verifier", never "right" (rule 10).
