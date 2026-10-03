@@ -1,0 +1,34 @@
+# riksarkivet-r4282-1628 homophonic seed 1 restarts 16 3 Oct 2026 09:08 UTC; control mean 0.947 (0.946-0.949); score -3185.433; TARGET LETTERS SHUFFLED (seed 2, false-positive floor)
+# {"restart_scores": [-3185.4, -3189.4, -3194.6, -3195.3, -3196.0, -3201.0, -3204.3, -3207.5, -3208.8, -3210.1, -3212.5, -3213.3, -3215.4, -3227.2, -3229.4, -3240.2], "key": {"3": "t", "4": "e", "5": "i", "7": "i", "8": "n", "A": "a", "B": "s", "D": "c", "E": "d", "F": "i", "L": "u", "M": "t", "S": "m", "T": "i", "^": "l", "a": "e", "b": "e", "c": "o", "e": "d", "f": "e", "g": "n", "h": "e", "i": "p", "k": "s", "l": "s", "m": "a", "n": "e", "o": "u", "p": "l", "q": "e", "r": "r", "t": "r", "u": "u", "x": "i"}}
+clienretourdiuemnlusseeuunrteilaleli
+eutpieenanoreetnioureruetesitiersesrinae
+eetnetesetientertittiultieuueruisiuit
+eecseeeiiealeeiosieceeilsaiaerssut
+aiseercearietinetretsnereuaossitsuci
+ueaiuieadedreduuiruselrerrerssiotense
+eeicresientteetrirniinueerueeieacecee
+leiieuenueucnlclireaninutedentemsisserti
+elersuiiuenalitnuneeptudauedeseeeeaieleue
+iilene
+reeeoieusoeieeperrsietreistriieristeie
+uueinredeeissertneeuecseeinmaeeeneetlesaee
+enrelituelecttiieeiarduureestlociinue
+esimisepdaicniteeeiareeniiiculneus
+eieenclaeairareriremiseresduliueuesi
+uelareiesresteeeiseeteueusieinuaeretiee
+uretuseaeiiueeissentsoirecerseinttter
+sreserlulinuiuiseusiiioineeuluuiiua
+noiediiciplieneesuuuiesmsdauseoleee
+mieettiilsseiilreieiensrte
+saoeleseetsueiineenetisieortseeeiee
+serueeuenlsesdaseiecriuureuileeusu
+uruessuiiesaperesuresocuteseauciletn
+ieieuueiatri
+ouassirtueiieteireessienpetedaetiiseilt
+eiduniteeeratnnaaiaeu
+eeieieraanceiueeeeruliireodeireeonilu
+icdeeseeetetuirdoillecieueoieleuesprerai
+reaetnrieescpietirrutinslaistuieeaoostetae
+tiurieeotteasitemienarsneteisedi
+iieirerroieenieueteslaeunlcinuuelonss
+treceurnieeleiautraenc
