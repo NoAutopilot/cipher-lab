@@ -232,7 +232,7 @@ Run now, depends on nobody: a copy-order pack for SP 90/3/358 together with SP 9
 ## Next (A2P4-RABY, 3 Oct 2026; supersedes the earlier lists)
 
 1. [retired for this catalogue and these two HMC volumes] BL Add MS 31128-31152 and HMC Portland vols 4/8 for a 1 Aug 1705 draft or printed text: done, negative (above).
-2. Cheapest untried: HMC Portland vol. 3 and the Marlborough-Godolphin and Wentworth-adjacent calendars? Not named by evidence; the evidence points to Marlborough's 24 Aug 1705 acknowledgment (TNA catalogue, see Web check) as the only recipient-side trace.
+2. No further free print step is named by the evidence: the only recipient-side trace is Marlborough's 24 Aug 1705 acknowledgment of Raby's treaty letter (TNA catalogue, see Web check); a further untried instrument would be HMC Portland vol. 3 / Marlborough-Godolphin calendars, speculative, not started.
 3. TNA page-copy order for SP 90/3/358, SP 90/7/126, /149, /212, SP 90/8/80 and /84 (nothing digitised) remains the way to an image; to ASKS if not already there.
 
 ## Verdict (A2P4-RABY, 3 Oct 2026)
