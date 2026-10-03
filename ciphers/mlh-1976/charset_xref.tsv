@@ -1,0 +1,24 @@
+code	description	candidates	literal	ASCII-1967	EBCDIC-S360	APL360-2741	ALGOL68-RR	matched_glyphs
+S1	dash + integral/S curl	∫ʃ§~∽	no	Y	-	Y	-	ASCII-1967:~; APL360-2741:~
+S2	stem, filled dot near top, macron above	¡⫯⍿	no	-	-	-	-	
+S3	open P on stem	Pρ⍴Þ	no	Y	Y	Y	Y	ASCII-1967:P; EBCDIC-S360:P; APL360-2741:P⍴; ALGOL68-RR:P
+S4	small filled dot (reused label)	.·∘	no	Y	Y	Y	Y	ASCII-1967:.; EBCDIC-S360:.; APL360-2741:.∘; ALGOL68-RR:.∘
+S5	outline triangle apex up	△∆Δ	no	-	-	Y	-	APL360-2741:∆
+D	letter-shaped D	D▷	no	Y	Y	Y	Y	ASCII-1967:D; EBCDIC-S360:D; APL360-2741:D; ALGOL68-RR:D
+O	plain open circle	O○0	no	Y	Y	Y	Y	ASCII-1967:O0; EBCDIC-S360:O0; APL360-2741:O○0; ALGOL68-RR:O0
+S8	caret / chevron without base	^∧Λ	no	Y	-	Y	Y	ASCII-1967:^; APL360-2741:∧; ALGOL68-RR:∧
+S9	n-shape with descending tail	nηŋ∩	no	Y	Y	Y	Y	ASCII-1967:n; EBCDIC-S360:n; APL360-2741:∩; ALGOL68-RR:n
+S10	stem topped by arch with two dots	⊤↑☂⍦	no	-	-	Y	Y	APL360-2741:⊤↑; ALGOL68-RR:↑
+S11	triangle with zigzag tail	∆⍙↯	no	-	-	Y	-	APL360-2741:∆⍙
+S12	zigzag / lightning, blocky 5 or S	5SZ↯ϟ⌁	no	Y	Y	Y	Y	ASCII-1967:5SZ; EBCDIC-S360:5SZ; APL360-2741:5SZ; ALGOL68-RR:5SZ
+S13	e-loop on underline curling into arrow	e℮∊↪	no	Y	Y	Y	Y	ASCII-1967:e; EBCDIC-S360:e; APL360-2741:∊; ALGOL68-RR:e
+S14	single-stroke right arrow	→	no	-	-	Y	-	APL360-2741:→
+S15	circle with central dot	⊙☉◉⍟	no	-	-	Y	-	APL360-2741:⍟
+S16	stem crossed by two bars	F‡ǂ∓±	no	Y	Y	Y	Y	ASCII-1967:F; EBCDIC-S360:F; APL360-2741:F; ALGOL68-RR:F
+S17	D/6 loop with inner curl	D6∂δð	no	Y	Y	Y	Y	ASCII-1967:D6; EBCDIC-S360:D6; APL360-2741:D6; ALGOL68-RR:D6
+S18	P with dot in bowl	P⍴℗ṗ	no	Y	Y	Y	Y	ASCII-1967:P; EBCDIC-S360:P; APL360-2741:P⍴; ALGOL68-RR:P
+S19	asymmetric cross	+×x†	no	Y	Y	Y	Y	ASCII-1967:+x; EBCDIC-S360:+x; APL360-2741:+×; ALGOL68-RR:+×x
+S20	oval with arrowhead inside	⍈⍄⊳⊲	no	-	-	-	-	
+⇒	double-stroke right arrow (literal connector)	⇒	yes	-	-	-	-	
+/	slash (literal)	/	yes	Y	Y	Y	Y	ASCII-1967:/; EBCDIC-S360:/; APL360-2741:/; ALGOL68-RR:/
+|	vertical stroke (literal)	|1l	yes	Y	Y	Y	Y	ASCII-1967:|1l; EBCDIC-S360:|1l; APL360-2741:|1; ALGOL68-RR:|1l

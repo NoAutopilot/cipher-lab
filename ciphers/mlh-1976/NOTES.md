@@ -137,3 +137,58 @@ Result: no decipherment or plaintext found on the open web or in these comment t
 (b) Other solvers' working files -- shallow clones 3 Oct 2026, dbourdeau/cyphersolver HEAD 810a777 (only research/top50 NOTES.md row "7, 31, 44 ... MLH 1974 ... low ... All far too short"; no targets folder, no rendering) and aaymeloglu/unsolved-ciphers HEAD d2800bb (no file names MLH; "mlh" matches only unrelated substrings): not found.
 (c) Physical neighbours -- the only witness is the single image printed by the ACA and reposted by Schmeh (images/MLH-Cryptogram.jpg); the envelope ("Milestone" in place of a return address) is described, not reproduced. No second sheet or clear copy is known: not found; the family's original letter is unreachable.
 (d) Recipient's side -- the receiving "office" is the ACA, which printed it in The Cryptogram Jan-Feb 1976 and, per Schrödel's 16 Apr 2016 comment relaying the ACA, again in an MA 1978 issue still calling it unsolved. The ACA issues themselves were not opened (members' archive; not found online this pass): not found in what was reachable; the ACA back issues are unreachable from here.
+
+## GAPS131-mlh-1976: cheap test 2, sign shapes vs period character sets (3 Oct 2026, account-4)
+
+Script `charset_xref.py` (outputs `charset_xref.tsv`, `charset_xref_summary.json`; `--check` exits 1 if stale).
+No vision, no fetch: the input is this file's own sign table (single blind pass, every sign grade M, rule 2:
+conditional on that transcription). Each of the 20 non-literal signs (S1-S20 with S4 = the reused dot, plus the
+letter-shaped D and O; S6/S7 are unused labels) got a short list of candidate glyphs its shape description could
+be, then set membership was computed against four printable repertoires written from public documentation:
+ASCII-1967 (94 printable), EBCDIC as printed on System/360 (88), APL\360 / APLSV on the IBM 2741 APL typeball
+(106: base keys plus the standard 1966-75 overstrikes; APL2-era glyphs excluded), ALGOL 68 Revised Report 1975
+representation symbols (98). Matched control: 2,000 random catalogues of the same size, each sign's candidate
+list replaced by a random sample of the same length from a 1,764-glyph Unicode pool (the blocks the candidates
+come from), seed 1976. The control changes which glyphs are candidates, so it can fail differently from the target.
+
+| statistic (of 20 signs) | target | control mean | control p95 | p(control >= target) |
+|---|---|---|---|---|
+| matches ASCII-1967 | 13 | 3.64 | 7 | 0.0005 |
+| matches EBCDIC-S360 | 11 | 3.43 | 6 | 0.0015 |
+| matches APL\360 2741 | 18 | 4.06 | 7 | 0.0005 |
+| matches ALGOL 68 RR | 13 | 3.76 | 7 | 0.0005 |
+| programming-specific (APL or ALGOL 68, not ASCII or EBCDIC) | 5 | 1.65 | 4 | 0.0205 |
+
+Programming-specific signs: S5 (outline triangle = APL ∆), S11 (triangle with tail = APL ∆ / ⍙), S10 (stem with
+arch = APL ⊤ or ↑, ALGOL 68 ↑), S14 (single arrow = APL →), S15 (circle with central dot = APL ⍟ circle-star,
+only an approximate fit). No candidate in any set: S2 (stem, dot, macron), S20 (oval with inner arrowhead), and the
+double arrow ⇒ (in none of the four period repertoires).
+
+What this does and does not show:
+- The four general-set excesses (11-18 of 20 vs a null of about 4) are not evidence for the hypothesis: the
+  candidates are common shapes (letters, triangle, circle, caret, arrow, plus) while the random pool is mostly
+  exotic glyphs, so the null is lenient toward the target, and the candidate lists were written by a reader who
+  knows these repertoires (a bias toward glyphs that are in them). APL's 18 is the largest only because APL\360's
+  repertoire is letters plus the most geometric symbols.
+- The discriminating figure, 5 programming-specific signs against a null p95 of 4 (p = 0.02), is a weak excess
+  under the same biases; S15's ⍟ and S10's ⊤/↑ are loose fits. Read it as "several shapes are consistent with
+  the APL typeball", the commenter's observation restated with a number, not as support for an APL or ALGOL source.
+- No letter-to-symbol mapping emerges: APL/ALGOL operator glyphs carry no letter values, and the letter-shaped
+  signs (D, O, P-variants, F, e) match every set equally. Cheap test 3 (judge decodes against English) therefore
+  has no input and stays not runnable. No reading is claimed (rule 4: none).
+
+## Remaining gaps (GAPS131, 3 Oct 2026)
+Read so far: 0 of 33 tokens read (no reading; cheap tests 1-2 are catalogue and character-set tests, no mapping)
+- whole note (33 tokens) - blocker: not-attempted; sign table is a single blind pass (S2/S3/S18 may be one sign), see "Cheap test 1" above; next: second blind transcription pass of the existing crops + reconciliation, ~$4
+- letter-to-symbol mapping for cheap test 3 - blocker: too-short; 26 symbol tokens / 20 distinct, IC below both controls, and test 2 (GAPS131 above) yields no letter values
+- the ACA's printed context (The Cryptogram Jan-Feb 1976 and the 1978 issue Schrodel cites) - blocker: needs-physical-access; ACA members' back-issue archive, not online (Premise check (d) above)
+
+## Escalation (GAPS131, 3 Oct 2026)
+- [n/a] siblings: no other note from this sender is known
+- [n/a] clear-pages: the strip carries only MLH, e and slash in clear
+- [x] known-keys: test 2 (GAPS131) checked ASCII/EBCDIC/APL/ALGOL 68 glyph sets; weak programming-specific excess, no key
+- [ ] print: ACA Cryptogram back issues not opened; planned only if a member copy becomes reachable
+- [n/a] key-rebuild: no key material exists to rebuild from
+- [ ] image-check: second blind transcription pass on images/crops + reconciliation
+- [n/a] retry: no earlier decode attempt exists to retry
+Verdict: keep going: 1 internal gaps; cheapest next: second blind transcription pass + reconciliation, ~$4

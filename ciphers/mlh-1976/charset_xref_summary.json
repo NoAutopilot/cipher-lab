@@ -1,0 +1,51 @@
+{
+ "n_signs": 20,
+ "pool_size": 1764,
+ "trials": 2000,
+ "seed": 1976,
+ "set_sizes": {
+  "ASCII-1967": 94,
+  "EBCDIC-S360": 88,
+  "APL360-2741": 106,
+  "ALGOL68-RR": 98
+ },
+ "target": {
+  "ASCII-1967": 13,
+  "EBCDIC-S360": 11,
+  "APL360-2741": 18,
+  "ALGOL68-RR": 13,
+  "prog_specific": 5
+ },
+ "control": {
+  "ASCII-1967": {
+   "mean": 3.643,
+   "p95": 7,
+   "max": 11,
+   "p_ge_target": 0.0005
+  },
+  "EBCDIC-S360": {
+   "mean": 3.426,
+   "p95": 6,
+   "max": 11,
+   "p_ge_target": 0.0015
+  },
+  "APL360-2741": {
+   "mean": 4.056,
+   "p95": 7,
+   "max": 11,
+   "p_ge_target": 0.0005
+  },
+  "ALGOL68-RR": {
+   "mean": 3.756,
+   "p95": 7,
+   "max": 12,
+   "p_ge_target": 0.0005
+  },
+  "prog_specific": {
+   "mean": 1.649,
+   "p95": 4,
+   "max": 7,
+   "p_ge_target": 0.0205
+  }
+ }
+}

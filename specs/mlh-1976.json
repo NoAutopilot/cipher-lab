@@ -36,6 +36,14 @@
    "method": "fetched the sole image (scienceblogs.de, 1 request, browser UA, HTTP 200) to ciphers/mlh-1976/images/ with manifest.json; single blind transcription pass to ciphers/mlh-1976/ciphertext.txt (draft, grade M) with a 20-code sign table in NOTES.md",
    "result": "N=33 tokens/K=26 distinct (full stream incl. literal MLH/e/punctuation), IC=0.0189; symbol-only N=26/K=20, IC=0.0277. Both below the matched English control (mean IC 0.06) and the matched uniform-random control (mean IC 0.039-0.049) -- reported, not gated, N too small to be a reliable signal. Structural finding: line 1 reads '[symbol] MLH ⇒ [7 symbols]', a plaintext word directly followed by a double-arrow before an unbroken 7-symbol run -- read at face value the sender may be glossing 'MLH' against its own encoding, a possible self-supplied crib (grade M, single pass, unconfirmed).",
    "cost_est_usd": "get_session exposes no cost figure; the orchestrator reads it, per the wall-clock box in the worker's brief"
+  },
+  {
+   "test": 2,
+   "date": "3 Oct 2026",
+   "worker": "GAPS131-mlh-1976 (account-4)",
+   "method": "ciphers/mlh-1976/charset_xref.py: 20 non-literal signs of the NOTES.md sign table, each with a candidate-glyph list from its shape description, matched against ASCII-1967 (94), EBCDIC S/360 (88), APL\\360 IBM 2741 typeball (106), ALGOL 68 Revised Report (98); control = 2000 random catalogues, each sign's candidate list replaced by a same-length random sample from a 1764-glyph Unicode pool, seed 1976",
+   "result": "target vs control mean/p95: ASCII 13 vs 3.64/7; EBCDIC 11 vs 3.43/6; APL 18 vs 4.06/7; ALGOL68 13 vs 3.76/7; programming-specific (APL or ALGOL, not ASCII/EBCDIC) 5 vs 1.65/4, p=0.02 (S5, S11, S10, S14, S15). General-set excesses reflect generic shapes against a lenient, writer-biased null; programming-specific excess is weak. No letter-to-symbol mapping emerges, so test 3 has no input. Conditional on the single-pass transcription (rule 2).",
+   "next": "second blind transcription pass + reconciliation, ~$4"
   }
  ],
  "judge": {
