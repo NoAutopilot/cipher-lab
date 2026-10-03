@@ -1,5 +1,5 @@
 open
-LABW unit records (GAPS101, 3 Oct 2026): Bü 161 plink http://www.landesarchiv-bw.de/plink/?f=3-88062 "Enthält: Beilage: Chiffrierschlüssel" (key enclosed); Bü 165 plink .../?f=3-88066; no digitisation on either.
+LABW unit records (GAPS101, 3 Oct 2026): Bü 161 plink http://www.landesarchiv-bw.de/plink/?f=3-88062 "Enthält: Beilage: Chiffrierschlüssel" (key enclosed); Bü 165 plink .../?f=3-88066; no digitisation on either. GAPS103 (3 Oct 2026): sibling key Sf 35 Bü 226 (f=3-88134, Ochs correspondence) found, undigitised; no digitised sibling; copy order is ASKS row 116.
 Ruland, Graf Wolfgang Julius von Hohenlohe-Neuenstein, Archiv für hohenlohische Geschichte 2 (1870) pp. 271-290 read in full by this worker (GF-A2-7, 2 Oct 2026, PDF via a browser past the WLB Anubis check): Melchior, Pape, Köhler, the reports and any cipher absent.
 
 # Reports of Lic. Melchior and of Pape/Köhler to Graf Wolfgang Julius von Hohenlohe, partly ciphered — HZA Neuenstein
@@ -157,6 +157,45 @@ No vision calls, no subagents.
 section] LABW records: undigitised, orderable, Bü 161 encloses a key; (3) copy order for Bü 161 first, key leaf
 included (REQUEST.md, the owner's step), then Bü 165; nothing runnable in the cloud remains until copies exist.
 
+## GAPS103-hza-hohenlohe-1679 (3 Oct 2026, account-4): LABW sibling sweep
+
+Step run: the "While waiting" sweep (LABW finding aids, Hohenlohe-Zentralarchiv scope, for other cipher units of
+Wolfgang Julius's circle). Route: ofs21 simple search (`suche/ergebnis1.php`, POST, archive filter `archive[]=3` =
+Hohenlohe-Zentralarchiv Neuenstein; the Lucene search covers unit titles and "Enthält" notes), then each hit's
+print view (`olf/druckansicht.php`) and structure view; curl with a browser UA, about 2.2 s apart. Terms: `chiffr`
+(prefix, 5 hits), `Chiffre` (1), `Geheimschrift` (14), `verschlüsselt` (4), `Ziffer` (79, all seals, maps, plans --
+none cipher), `Schlüssel` (80, first 30 read: keys to doors, "Schlüsselgeld", Schlüsselberg -- none cipher),
+`Zifern` (0).
+
+Cipher units found in HZA (none digitised: no record carries an image link, each offers only the order basket; the
+LABW list "Findbücher mit Digitalisaten" for HZA names, in the series concerned, only Sf 155, Oe 1 and Ni 40, and
+the Oe 1 structure view shows no image icon on either Oe 1 unit below):
+
+| Unit | Permalink | Title / Enthält (quoted) | Date | Size | Relevance |
+|---|---|---|---|---|---|
+| Sf 35 Bü 161 | http://www.landesarchiv-bw.de/plink/?f=3-88062 | Berichte (teilweise chiffriert) des Lic. Melchior ...; Enthält: Beilage: Chiffrierschlüssel | 1679-1680 | 1 Fasz. | the target (GAPS101) |
+| Sf 35 Bü 165 | http://www.landesarchiv-bw.de/plink/?f=3-88066 | Berichte (teilweise chiffriert) ... Pape und ... Köhler | 1689 | 1 Fasz. | the target (GAPS101) |
+| **Sf 35 Bü 226** | http://www.landesarchiv-bw.de/plink/?f=3-88134 | **Chiffre-Schlüssel zur Korrespondenz in Sachen Ochs.** | undated (section 5.2 "Korrespondenzen" of "5. Forderungen an Johann Ochs"; the sibling Bü 160-series unit "Korrespondenz zwischen Graf Wolfgang Julius bzw. seinem Sekretär Gottfried Sanger zu Neuenstein und Johannes Ochs zu Frankfurt a. Main", plink f=3-88122, runs 1656-1670) | 1 Schr. | a second key from Wolfgang Julius's own chancery, same finding aid, about a decade earlier |
+| Oe 1 Bü 4330 | http://www.landesarchiv-bw.de/plink/?f=3-197690 | Dissense zwischen Familienmitgliedern (Kraft Magnus, Johann Friedrich I., Siegfried, Johann Ludwig, Wolfgang Julius); Enthält u.a.: Schriftstück mit Passagen in Geheimschrift sowie dazu passende Aufschlüsselung der Geheimschrift | 1653-1655 | 1 Fasz. | a cipher passage with its matching key, Wolfgang Julius among the parties; earlier, different provenance (Nachlass Kraft Magnus) |
+| Oe 1 Bü 14681 | http://www.landesarchiv-bw.de/plink/?f=3-580045 | Chiffrier- bzw. Dechiffrieranleitung ... französische Wörter ... zwei- bis vierstellige Zahlenreihe; Herkunft unbekannt, fränkischer Kreis? | ca. 1740-1800 | 2 Hefte | out of period; a nomenclator for some other target |
+| Ni 10 Bd 240-249 (10 vols) | via finding aid Ni 10 (bestand 19790) | Befehlsschreiben Ferdinand III / Leopold Wilhelm an Graf Melchior von Hatzfeldt (z.T. in Geheimschrift) | 1634-1657 | vols | out of circle (Hatzfeldt, Thirty Years' War); the Ni 10 finding-aid introduction cites H. Stützel, "Chiffrierwesen im Dreißigjährigen Krieg" -- prior work on that series, not on ours |
+| We 5 Bü 1105 | (not fetched) | Verschlüsseltes Schreiben nach Weikersheim(?) | 1621 | -- | out of period |
+| La 120 Bü 305 | (not fetched) | Schreiben (teilweise verschlüsselt) des Prinzen Wilhelm | 1763-1765 | -- | out of period |
+| La 120 Bü 629 | (not fetched) | Sammlung über Steganographie oder Geheimschriften (Buchauszüge) | o.D. | -- | reference material, not a key |
+
+Result: **no digitised sibling key or ciphered letter of Wolfgang Julius's agents found online**; nothing copy-free
+remains. One new unit worth adding to the copy order: Sf 35 Bü 226 (one sheet, a chancery key of Wolfgang Julius's
+own Ochs correspondence), cheap beside Bü 161 and a check on whether his chancery reused one key family; Oe 1
+Bü 4330 is a lower-priority third. The Bü 161 enclosed key stays the main lead. Not found: any 1670s-80s HZA unit
+beyond Bü 161/165 with a cipher term in title or "Enthält". Search scope limit: only what the finding aids describe;
+uncatalogued cipher leaves inside other bundles are invisible to this search.
+
+Requests: www2.landesarchiv-bw.de 21 (7 searches, 3 print views, 3 structure views, 4 digitised-finding-aid lists,
+plus 4 form/navigation pages). No vision calls, no subagents.
+
 ## While waiting
 
-- Search the LABW finding aids (ofs21 full-text search, Hohenlohe-Zentralarchiv scope) for other "Chiffre"/"Chiffrierschlüssel"/"chiffriert" units of Wolfgang Julius or his agents (1670-1698), and check each hit's record for a digitisation link; a digitised sibling key or a ciphered letter from the same agent would give a copy-free start. About 10-20 LABW requests, no vision, about USD 1.
+- (Done 3 Oct 2026, GAPS103: LABW sweep, no digitised sibling; table above.) Nothing copy-free remains in the cloud;
+  the target waits on the owner's copy order (ASKS row 116, REQUEST.md). The one action that depends on nobody: when
+  any HZA copy lands, start with Sf 35 Bü 226 or the Bü 161 key leaf, build `key.tsv` from it and run
+  `tools/decode_key.py` on the ciphered passages (recovery, grade H).
