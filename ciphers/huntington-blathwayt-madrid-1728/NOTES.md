@@ -1,6 +1,7 @@
 # Blathwayt Papers Addenda — Madrid/Port Ste Marie diplomatic-intelligence run, 1725-1729 — Huntington mssBLA 176-195
 
 Status: partial
+Rose, *A Selection from the Papers of the Earls of Marchmont* vol. 2 (1831; IA selectionfrompap02roseuoft, `_djvu.txt`) read by this worker (GF-A2-10, 3 Oct 2026) at pp. 414-415: Paretti to Marchmont, "September 3d, 1728", a translated extract (Ripperda's escape from Segovia) printing the cipher passage only as "(Cypher.)" -- no decipherment printed.
 
 Novelty (AUDIT.md "N4 set", LANE W2 worker B1, 24 Sept 2026): BLA 186 cipher lines N4 (clear text N1, Rose 1831), BLA 191(a) N4,
 BLA 184 N4, each "no prior decipherment located"; readings partial. (Line corrected 24 Sept 2026 by verifier V3a; it still said N3.)
@@ -325,3 +326,49 @@ Suggestion (24 Sept 2026, verifier V3a, from SO-BLATHWAYT-1728; not done): re-ch
 BLA188) on the BLA188 image, and the 7/3 distinctions in the glossed training letters, before extending the key; keep the
 BLA 191(a) interpretive French ("milord" from "mi co r d", "m'aime" from "m' ame", "serai" from "sec ai", 585 = ig) marked
 separately from the mechanical reading.txt layer.
+
+## Web and blog check (GF-A2-10, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Blathwayt papers Huntington "Port Ste Marie" OR "Port Sainte Marie" 1729 cipher intelligence Newcastle` -- OAC
+   finding aid ark:/13030/kt1199n4mx (entire_text, admin, dsc), Huntington collection pages (lib-mssbla,
+   p15150coll7 items). Catalogue text only; no decipherment beyond the finding aid's "deciphered in French" notes
+   already logged above.
+2. `Abbé Paretti Marchmont 1728 Madrid Ripperda escape Segovia letter cipher` (the distinctive clear-text phrase of
+   BLA 186) -- Huntington rare-books record, University of Arizona map items, TNA SP 35/62/30 (1726 Ripperda,
+   unrelated). No page discusses the 1728 cipher lines.
+3. `"mssBLA" OR "BLA 186" Huntington Blathwayt addenda cipher Madrid 1728` -- finding aid and Huntington pages only.
+4. Descriptive title: covered by 1 and 3.
+Blog site searches:
+- Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Blathwayt OR Huntington OR Ripperda cipher 1728`):
+  only archive/category listing pages (unsolved-cryptograms p.18, solved-cryptograms p.7, monthly archives
+  2019/01, 2019/07, 2020/06); no post on Blathwayt, Paretti or Ripperda. The 24 Sept sweep's "Cipherbrain
+  negative" stands.
+- Cryptiana blog (`site:cryptiana.blogspot.com Blathwayt OR Newcastle OR Townshend cipher 1729 Spain`): no blog page
+  returned; `sources/cryptiana/` has no "Blathwayt" (24 Sept grep, unchanged).
+- Cipher Mysteries (`site:ciphermysteries.com Blathwayt OR Marchmont OR Paretti cipher`): ciphermysteries.com
+  pages returned were on alchemy, Alberti, the Blitz ciphers (?p=4165, 2011/12/22) -- none on this run.
+No comment thread found that discusses any BLA 176-195 item.
+
+## Premise check (GF-A2-10, 3 Oct 2026)
+
+(a) Folder's own mentions -- found, already used: six items carry contemporary French decipherments (BLA 179, 185,
+188, 189, 190, 194), which are the key source (R17, `key.tsv`, grade C). Nothing in the folder names a decipherment
+of BLA 186's two cipher lines, BLA 191(a) or BLA 184's cipher. BLA 187 "Enclosing a cipher, in French" was
+glossed (R17: `key_conflicts.tsv` lists BLA187 11/72), so it is not an unread item.
+(b) Other solvers' working files -- not found. Shallow clones 3 Oct 2026: dbourdeau/cyphersolver (HEAD 2341682):
+one "Blathwayt" hit, `targets/harley1582r8499/lit/harlcat2.txt` line 143477 (a Harleian catalogue entry for a
+grant to William Blathwayt, unrelated); no Paretti/Port Ste Marie working file. aaymeloglu/unsolved-ciphers (HEAD
+d2800bb): no Blathwayt/mssBLA hit (cited, not copied).
+(c) Physical neighbours -- found as glossed siblings only (see (a)); BLA 185 and BLA 187 bracket BLA 186 and both are
+glossed, neither carries a clear copy of BLA 186's lines. Leaves not re-viewed this pass (the 24 Sept image capture
+and R11/R17 passes covered BLA 186 p1/p3).
+(d) Recipient's side -- **printed clear text found, cipher not printed**: Rose 1831 vol. 2 pp. 414-415 (read this
+pass, IA selectionfrompap02roseuoft) prints BLA 186's clear text in English translation and omits the cipher as
+"(Cypher.)"; the editor's note (p. 414 n.) identifies the writer as "a Sicilian Abbot ... from Spain ... in
+consideration of a stipend". The 1729 Port Ste Marie reports to Newcastle/Townshend: TNA Discovery API (2 queries,
+"Port St Mary 1729 cypher", "Port Sainte Marie 1729") found no State Papers copy; SP 36/12/65 and SP 36/15/31
+(Newcastle to Townshend, June and Sept 1729) surfaced via web search are ministers' letters, not the agent's
+reports. The Newcastle Papers (BL Add MSS) and SP 94 (Spain) for 1728-29 were not searched (BL catalogue route
+limited since 2023); next: TNA Discovery API on SP 94/98-100 descriptions for "Paretti"/"Pareti", ~USD 0.5.
+Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found in any source checked.
