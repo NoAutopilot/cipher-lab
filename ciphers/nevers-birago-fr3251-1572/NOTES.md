@@ -2318,3 +2318,19 @@ calibrated). Everything else stays M.
   has no tile. Ready for the orchestrator to build and publish; nothing published here.
 Cryptanalytic result only (no H or C). No reading claimed; not classed for novelty.
 Next: owner sign sorter on the focus list; then f.144r with the BIR-OPEN instrument (~3 vision calls, ~$5).
+
+## BIR-OPEN-144 (3 Oct 2026, account-3 worker): the BIR-OPEN open-choice instrument on f.144r
+Brief `.claude/briefs/runs/2026-10-03-acct3-bir-open.md` (section BIR-OPEN-144). Pre-registered at 88df4b16 before any crop or score; details
+`harvest/tx_decode/eye/open/RESULTS-OPEN-144.md`. One blind Opus reader (1 vision call) saw 36 M targets and 36 H decoys against the full sign sheet.
+- Calibration 35/36 = 0.97 PASS. The one decoy miss is L04.1:7 T60->T86 (H). Target change rate 9/36. Posnull PASS (rank 1/201, S -1.049 vs p95 -1.239).
+- 3 survivors (reader + lattice): L05:19 and L05:26 T95->T51, L04.1:12 T78->T86. A1-BIR-EYE did not ask any of them -> **M** (single instrument).
+- Grade policy (open read = A1-BIR-EYE pick): **S** at L06:7 T36 and L05:32 T83. These are A1's key-implied picks, already the transcribed sign, so the value is unchanged.
+  This applies the policy to positions where the lattice sign equals the transcription sign; the pre-registration did not name that case, logged post-hoc.
+  Four open/A1 disagreements and L04.1:7 (both blind reads T86 against the conf-H T60, not applied) go to `harvest/tx_decode/eye/open/sorter/focus.tsv`
+  (8 rows appended, kinds conflict/open-only).
+- decode_key.py `--config harvest/tx_decode/eye/open/decode_open144.json --check` exit 0: **f.144r H 0, C 0, S 42, M 34, I 0, U 14** (was S 40, M 36).
+- Judge (specs/nevers-birago-fr3251-1572.json):
+      before FAIL language: score=-1.454, null_p99=-1.6, real_p05=-0.955, real_median=-0.828, mode=both, N=94
+      after  FAIL language: score=-1.418, null_p99=-1.614, real_p05=-0.954, real_median=-0.817, mode=both, N=91
+  The gain is partly circular (the lattice uses an Italian LM). This is a cryptanalytic result only: no reading, no novelty classed.
+Next: owner sign sorter on the appended f.144r rows (the orchestrator republishes); after the decisions, sign_sorter_apply + decode --check, ~$1.

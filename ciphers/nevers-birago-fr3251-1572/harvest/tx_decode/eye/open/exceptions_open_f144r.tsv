@@ -1,0 +1,6 @@
+folio	line	pos	value	grade	reason
+f144r	L05	26	l	M	BIR-OPEN-144 kept: open blind read T95->T51 + lattice lam 4 (calibration 0.97, posnull PASS); not asked by A1-BIR-EYE
+f144r	L04.1	12	e	M	BIR-OPEN-144 kept: open blind read T78->T86 + lattice lam 4 (calibration 0.97, posnull PASS); not asked by A1-BIR-EYE
+f144r	L05	19	l	M	BIR-OPEN-144 kept: open blind read T95->T51 + lattice lam 4 (calibration 0.97, posnull PASS); not asked by A1-BIR-EYE
+f144r	L06	7	c	S	BIR-OPEN-144 grade policy: open blind read T36 = A1-BIR-EYE blind pick T36 (the lam-4 key-implied sign; value unchanged, two instruments agree)
+f144r	L05	32	r	S	BIR-OPEN-144 grade policy: open blind read T83 = A1-BIR-EYE blind pick T83 (the lam-4 key-implied sign; value unchanged, two instruments agree)
