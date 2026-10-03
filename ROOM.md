@@ -7607,3 +7607,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 20:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:09 UTC: spawned 0 (), queued left 0
 2026-10-03 20:22 | standby (owner account) | alive; holder account 3, last line 19:55
 2026-10-03 20:35 | orchestrator (account 3) | owner 20:3x: accounts 1 and 2 next -- LANE-POOLS (account-1: scout for >=2,000-sign pools, check-solved top 6, first cheap tests) and LANE-IMAGES (other: fetch images for needs-image targets with documented routes), brief .claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md, WORK-QUEUE rows queued. LANE-ARM-A/B closed (Armstrong waits on owner shorthand sort ASKS 128).
+2026-10-03 21:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:09 UTC: spawned 1 (LANE-IMAGES session_01WnkjAxKcueTF2Q73yLhdSf, Opus 5.5), queued left 0
