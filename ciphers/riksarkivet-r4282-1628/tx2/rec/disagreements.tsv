@@ -1,0 +1,38 @@
+line	col	A	B	flagged	crop
+p1_L01	3	-	b		crops/p1_L01.jpg
+p1_L01	16	A	L		crops/p1_L01.jpg
+p1_L03	20	t	p		crops/p1_L03.jpg
+p1_L05	6	-	l		crops/p1_L05.jpg
+p1_L05	13	-	l		crops/p1_L05.jpg
+p1_L05	33	n	S	B	crops/p1_L05.jpg
+p1_L06	22	S	5		crops/p1_L06.jpg
+p1_L11	37	l	-		crops/p1_L11.jpg
+p1_L12	34	t	f		crops/p1_L12.jpg
+p1_L13	36	4	-		crops/p1_L13.jpg
+p1_L14	22	L	A		crops/p1_L14.jpg
+p1_L16	15	a	-		crops/p1_L16.jpg
+p1_L17	24	S	f	B	crops/p1_L17.jpg
+p1_L17	37	A	L		crops/p1_L17.jpg
+p1_L18	10	-	o		crops/p1_L18.jpg
+p1_L23	33	5	8	B	crops/p1_L23.jpg
+p1_L24	13	E	-		crops/p1_L24.jpg
+p1_L24	14	p	-		crops/p1_L24.jpg
+p1_L24	15	t	-		crops/p1_L24.jpg
+p1_L24	16	M	-		crops/p1_L24.jpg
+p1_L24	17	S	-		crops/p1_L24.jpg
+p1_L24	18	a	-		crops/p1_L24.jpg
+p1_L24	19	b	-		crops/p1_L24.jpg
+p1_L24	20		-	A	crops/p1_L24.jpg
+p1_L25	16	8	b		crops/p1_L25.jpg
+p1_L25	22	-	7		crops/p1_L25.jpg
+p1_L25	36	S	g	B	crops/p1_L25.jpg
+p2_L01	1	S	-		crops/p2_L01.jpg
+p2_L01	2		f	AB	crops/p2_L01.jpg
+p2_L03	16	a	D		crops/p2_L03.jpg
+p2_L03	33	A	D		crops/p2_L03.jpg
+p2_L04	16	p		B	crops/p2_L04.jpg
+p2_L04	18	m	-		crops/p2_L04.jpg
+p2_L04	25	A	D	B	crops/p2_L04.jpg
+p2_L04	36	A	D	B	crops/p2_L04.jpg
+p2_L07	13	8	3	B	crops/p2_L07.jpg
+p2_L07	15	-	q		crops/p2_L07.jpg
