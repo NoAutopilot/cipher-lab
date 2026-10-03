@@ -334,21 +334,93 @@ about 600-900 px per leaf; nothing transcribed).
 - Vision: 3 contact-sheet reads by this worker, 0 subagents. Requests: de-crypt.org 1 failed page.goto (cert, before any
   login), then 1 login + RecordsView/3758 + 30 image gets; no other host.
 
+## GAPS112-florence-dieci-responsive: filza 7 check-solved and Gabbrielli key 4 against c. 70 (3 Oct 2026, account-4)
+
+**Step A, check-solved scoped to filza 7 cc. 59/61/66/70 (DECODE R3758-R3760, R3762), 3 Oct 2026.** These are letters
+of Filippo Maria Visconti, Duke of Milan, subscribed by his secretaries "Conradinus" (Corradino da Vimercate) and
+"Zaninus" (Zanino Riccio), held in the Florentine Dieci's incoming filza (Bourdeau, `targets/medici1425/NOTES.md`
+table, agrees). Searched, in rule 1's order:
+- Web search, four queries ("Zaninus" "Conradinus" Visconti 1424 cifra Dieci di Balìa; Filippo Maria Visconti 1424
+  lettere cifrate intercettate Firenze decifrate Gabbrielli; Gabbrielli "Dieci di Balìa" cifre 1424 Zanino Corradino;
+  Visconti cipher 1424 intercepted letters Florence deciphered Zanino/Corradino): no decipherment or edition of these
+  letters. Hits: the Treccani DBI life of Filippo Maria (names Corradino da Vimercate and Zanino Riccio as cipher
+  secretaries), ciphermysteries.com 2011/06/28 "Milanese enciphered letters" and 2016/07/06 (Sforza-period, not this),
+  Domnina, HistoCrypt 2018 (Tranchedini cipher, 1440s-50s; full text grepped: no Balìa/Gabbrielli/1424/Zaninus), and a
+  HathiTrust record "Due lettere intercette dai Dieci di Balìa ... 1384" (1893; its own title gives 1384, not 1424).
+- Printed Milanese side: Osio, *Documenti diplomatici tratti dagli archivj milanesi* (1869 volume, IA
+  bub_gb_XkUAjq5V07wC, 36,917 lines OCR, grepped): prints ducal letters countersigned "Conradinus"/"Zaninus" from the
+  Milan registers, 7 lines mentioning 1424, "cifra/zifra" 6 hits none about Florence or the Dieci, and no "Decem
+  Balie"/"intercett" hit. Not a decipherment of these ASFi originals.
+- IA full-text (be-api fts, no login): "Zaninus et Conradinus" 0 hits; the bare names return Milanese chronicles and
+  documentary volumes (Osio, *Archivio storico lombardo*, Giulini), none about Florentine decipherment.
+- Calendars and state papers: none exist for the Responsive (CS-A2-K above). Blog threads: CS-A2-K's three-blog check
+  stands; the two ciphermysteries posts above are on the Milanese chancery, not these leaves.
+- DECODE (on-disk records TSV, sources/decode): R3758-R3763 all "Non-decrypted", 0 documents.
+- Solver repositories: dbourdeau/cyphersolver (shallow clone, head a439937, 3 Oct 2026 01:07 -0500), grepped for
+  Zaninus/Conradinus/R3758-R3763: only the medici1425 table (identification, no reading) and florence1429's note "R3758
+  not this cipher"; no key application or output for filza 7. aaymeloglu/unsolved-ciphers: catalogue rows only (Premise
+  check (b) above).
+- Gabbrielli's own volume: key 4 *is* a decipherment key for this correspondence (period-derived or rebuilt by
+  Gabbrielli, 1863-64), but no printed decipherment of any letter was found; Gabbrielli vol. II not seen (not digitised).
+Verdict for filza 7 cc. 59/61/66/70: **open** -- no printed decipherment or plaintext of these letters located in the
+sources above, searched 3 Oct 2026. Rule 10: a search result, not a novelty class. Key route for any reading here
+would be `period` (Gabbrielli's key), not `ours`.
+
+**Frame numbering.** Our `sources/florence/keys/58-6.pdf` carries Gabbrielli's own heading "4. Zaninus et Conradinus,
+an. 1424, Cifra, Carteggio di X di Balia filza N.o 7" (and 58-5.pdf "3. Johannes"), checked on the image this session;
+Bourdeau's italy.md calls key 4 "frame 58-5". A file/frame naming difference, not a content conflict.
+
+**Step B, known keys: c. 70 (R3762) against key 4.** Pre-registered before any c. 70 read in `key4/PREREG-GAPS112.md`.
+- Key: `key4/key4.tsv`, 158 entries read from the key image at 150 dpi (20 letters with homophones for a, d, o, u;
+  about 130 syllable, Roman-numeral and word codes such as `cul`=de, `dla`=dictus, `hec`=ten, `hoc`=tel, `Slag`=
+  Florentini, `Slaf`=Pape); every value M.
+- c. 70: one DECODE login, 1 image get (sha1 46f5e949... matches the manifest); `tools/iiif_lines.py --image ...
+  --region 400,150,4300,2300 --prefix c70 --debug` cut 17 lines x 2 segments (kept in the session scratchpad, not
+  committed; re-cut from the manifest image). Read: L07_s1, L08_s1 (with key 4's letter row beside them), L08_s2,
+  L09_s1, L10_s1.
+- **What the leaf looks like (M):** c. 70 is a *partly* enciphered Latin letter: clear Latin runs ("Intelleximus
+  etiam que scripsisti de ...") with cipher stretches between them, and lines 9-10 mostly cipher. The cipher stretches
+  carry forms that are specific entries of key 4, not generic symbols: the word-codes `cul`, `dla` (and `dlal`, `dla?`
+  variants not in the table as read), `hec`, a `Sla`-like group, `ñ` (=que), the Roman-numeral group XXIIII (or
+  "xxiiij") several times, and the letter signs `÷`, `δ`, `oo`, `□`, `‖`, `—`, `7`, `3`, `h`, `φ`, `qq`. Coverage of
+  the 70 tokens read by a key-4 entry: 53/70 = 0.757 (descriptive only: a value-permuted key has the same coverage, so
+  no shuffled control can vary on it -- rule 3, orthogonal-control clause).
+- **Gated test (`key4/key4_check.py`, la18 char 4-gram, 1000 value permutations among the 27 sign entries used):**
+  target, 13 runs / 81 decoded chars: real -2.759 vs shuffled-key p95 -2.732, p 0.075 -> **FAIL**. Positive control
+  (la18 Latin spans with the same run and value-length shape, 5 seeds): 5/5 PASS at 0 and 10% injected reader error,
+  2/5 at 25%, 0/5 at 40% (`key4/run_noise0*.txt`).
+- **Reading of the numbers (rule 3, error-band clause):** the control loses power between 10% and 25% reader error;
+  this read is M throughout, by a reader who saw the key values (not blind), with 17/70 signs unmatched outright and
+  several ambiguous (`φ` = M or `non`, `y` = es or in) -- its error is not measured but is very likely above 25%. So
+  the FAIL is a **non-test at this reader error**, not evidence against key 4. Against that, the presence of key-4-
+  specific word-codes (`cul`, `dla`, `hec`) on a filza 7 leaf subscribed "Zaninus" is consistent with key 4 being this
+  letter's key (M, descriptive, uncontrolled).
+- No reading claimed; no token graded above M (70 tokens: H 0, C 0, S 0, M 70, I 0). Rule 7 does not yet apply.
+- Next step: a blind transcription of c. 70's cipher stretches against an anonymised key-4 sign sheet (shape ids, no
+  values; two passes, line crops as above, plus one reconciliation), then re-run `key4/key4_check.py` on it with the
+  noise sweep; ~$6 at the current Opus vision rate (2 passes x 2 crop sets + 1 reconciliation, about 5 calls). The clear
+  Latin runs on the same leaf bound the cipher stretches and can serve as crib context.
+- Vision: 3 calls by this worker (the key page; key letter row + 2 line segments; 3 line segments), 0 subagents.
+  Requests: de-crypt.org 1 failed page.goto (cert, before any login; certutil fix applied) + 1 login + RecordsView/3762
+  + 1 image get; archive.org 3 (Osio djvu, 2 metadata) and be-api.us.archive.org 6; catalog.hathitrust.org 1 (403) +
+  1 API; ep.liu.se 1; github.com 1 clone.
+- `python3 tools/gaps_check.py florence-dieci-responsive` (3 Oct 2026, after this update): "OK keep-going florence-dieci-responsive: keep going: 2 internal gap(s), 3 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped", exit 0.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf (GAPS106); next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
-- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 cc. 59/70 subscriptions read (M) "Conradinus"/"Zaninus", matching Gabbrielli key 4 "Zaninus et Conradinus" 1424; gated on a check-solved verdict covering filza 7; next: check-solved for filza 7, then a test of cc. 61/70 against Gabbrielli key 4 (then 3), and a line-level look at filza 9 for short cipher groups, ~$6
+- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 check-solved done 3 Oct 2026 (GAPS112): open, no printed decipherment located; c. 70 against Gabbrielli key 4 (GAPS112): key-4-specific word-codes (cul, dla, hec) present, coverage 53/70 (descriptive), gated decode FAIL (real -2.759 vs shuffled p95 -2.732, p 0.075) but a non-test at this reader error (control 5/5 at <=10% error, 2/5 at 25%, 0/5 at 40%; read M, not blind); next: blind two-pass transcription of c. 70 cipher stretches against an anonymised key-4 sign sheet + reconciliation, re-run key4/key4_check.py, ~$6; then key 3 for the other leaves and a line-level look at filza 9
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
 ## Escalation (3 Oct 2026, A2-FLO)
 - [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
 - [x] clear-pages: filze 7/9/22 contact-sheet look found no clear copy (GAPS108, 3 Oct 2026); c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
-- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved; key 4 ("Zaninus et Conradinus") first, since cc. 59/70 subscriptions read (M) Conradinus/Zaninus (GAPS108)
+- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf = key 3, 58-6.pdf = key 4) against filza 7 leaves; check-solved for filza 7 done (open, GAPS112 3 Oct 2026); key 4 vs c. 70: inventory consistent (cul/dla/hec present), gated decode a non-test at this reader error (GAPS112); next: blind anonymised-sheet transcription of c. 70 and re-run key4/key4_check.py, ~$6
 - [x] print: Guasti *Commissioni* vols 2-3 full-text read 3 Oct 2026 (CS-A2-K), letter absent; no edition or calendar of the Responsive exists; Gabbrielli vol. II and Cavalcanti not read
 - [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking; c.127 main-block crops complete, images/c127b2, GAPS106 3 Oct 2026), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
+Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; then filza 7 c. 70 blind two-pass transcription against an anonymised Gabbrielli key-4 sign sheet + reconciliation and a re-run of key4/key4_check.py with its noise sweep, ~$6 (GAPS112, 3 Oct 2026); filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)
