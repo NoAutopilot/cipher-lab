@@ -2071,6 +2071,7 @@ committed reading or transcription was changed; the atlas is an input for TX-DEC
   only where the line reads split (the lattice is useful as a candidate source, not a reader); a better tile needs
   the line-read box positions (cut per token) rather than connected components; err_true here is on one hand's
   held-out lines only.
+
 ## TX-DECODE (3 Oct 2026, account 2 for the account-3 orchestrator): key-constrained lattice decode -- no.87 known answer, then f.144r, f.168 and f.117r re-tested
 
 Brief `.claude/briefs/runs/2026-10-03-acct3-tx-decode.md`. New shared tool `tools/key_decode_lattice.py` (TRANSCRIPTION.md
