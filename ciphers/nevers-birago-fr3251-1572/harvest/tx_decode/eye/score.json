@@ -262,16 +262,300 @@
    }
   ]
  },
+ "f144r": {
+  "n_changed": 12,
+  "c": 5,
+  "r_c": 0.4166666666666667,
+  "n_decoy": 12,
+  "d": 0,
+  "r_d": 0.0,
+  "p0": 0.07142857142857142,
+  "p_binom": 0.0009606938575954228,
+  "p_fisher": 0.018633540372670808,
+  "gate": "PASS",
+  "s_candidates": [
+   "L04.1:7 T60->T86",
+   "L05:32 T81->T83",
+   "L05:7 T36->T26",
+   "L06:7 T18->T36"
+  ],
+  "rows": [
+   {
+    "qid": "f144r-01",
+    "kind": "decoy",
+    "passage": "L04.2",
+    "pos": "3",
+    "original": "T84",
+    "other": "T49",
+    "pick": "T84",
+    "conf": "M",
+    "note": "double-barred cross on top over box/body, like T84 top"
+   },
+   {
+    "qid": "f144r-02",
+    "kind": "decoy",
+    "passage": "L05",
+    "pos": "17",
+    "original": "T50",
+    "other": "T92",
+    "pick": "T50",
+    "conf": "H",
+    "note": "omega with S-flourish, T50"
+   },
+   {
+    "qid": "f144r-03",
+    "kind": "decoy",
+    "passage": "L05",
+    "pos": "5",
+    "original": "T52",
+    "other": "T64",
+    "pick": "T52",
+    "conf": "M",
+    "note": "m-like with descending z tail, T52"
+   },
+   {
+    "qid": "f144r-04",
+    "kind": "changed",
+    "passage": "L05",
+    "pos": "31",
+    "original": "T33",
+    "other": "T86",
+    "pick": "T33",
+    "conf": "M",
+    "note": "two verticals on base line with dots, T33 shape not #"
+   },
+   {
+    "qid": "f144r-05",
+    "kind": "decoy",
+    "passage": "L05",
+    "pos": "8",
+    "original": "T81",
+    "other": "T83",
+    "pick": "T81",
+    "conf": "M",
+    "note": "plain x with small loop, no extra crossbar"
+   },
+   {
+    "qid": "f144r-06",
+    "kind": "decoy",
+    "passage": "L05",
+    "pos": "21",
+    "original": "T45",
+    "other": "T89",
+    "pick": "T45",
+    "conf": "M",
+    "note": "loop at bottom with stem, b-like as T45"
+   },
+   {
+    "qid": "f144r-07",
+    "kind": "changed",
+    "passage": "L06",
+    "pos": "20",
+    "original": "X_NEW",
+    "other": "T84",
+    "pick": "X_NEW",
+    "conf": "M",
+    "note": "triangle on top with crossed stem below, inverse of T84"
+   },
+   {
+    "qid": "f144r-08",
+    "kind": "changed",
+    "passage": "L05",
+    "pos": "12",
+    "original": "T81",
+    "other": "X_NEW",
+    "pick": "X_NEW",
+    "conf": "L",
+    "note": "star/x with extra stroke and long slash, not plain x"
+   },
+   {
+    "qid": "f144r-09",
+    "kind": "decoy",
+    "passage": "L04.2",
+    "pos": "10",
+    "original": "T57",
+    "other": "X_NEW",
+    "pick": "T57",
+    "conf": "M",
+    "note": "diamond with tail, T57"
+   },
+   {
+    "qid": "f144r-10",
+    "kind": "decoy",
+    "passage": "L03",
+    "pos": "1",
+    "original": "T84",
+    "other": "T49",
+    "pick": "T84",
+    "conf": "M",
+    "note": "barred cross on top over body, T84-like top"
+   },
+   {
+    "qid": "f144r-11",
+    "kind": "changed",
+    "passage": "L04.1",
+    "pos": "7",
+    "original": "T60",
+    "other": "T86",
+    "pick": "T86",
+    "conf": "M",
+    "note": "two verticals one horizontal bar, T86"
+   },
+   {
+    "qid": "f144r-12",
+    "kind": "changed",
+    "passage": "L05",
+    "pos": "32",
+    "original": "T81",
+    "other": "T83",
+    "pick": "T83",
+    "conf": "M",
+    "note": "x with extra crossbar, T83"
+   },
+   {
+    "qid": "f144r-13",
+    "kind": "changed",
+    "passage": "L06",
+    "pos": "2",
+    "original": "T42",
+    "other": "X_NEW",
+    "pick": "T42",
+    "conf": "M",
+    "note": "T with curled top stroke, T42"
+   },
+   {
+    "qid": "f144r-14",
+    "kind": "decoy",
+    "passage": "L06",
+    "pos": "1",
+    "original": "T90",
+    "other": "T51",
+    "pick": "T90",
+    "conf": "M",
+    "note": "cross over looped body, T90"
+   },
+   {
+    "qid": "f144r-15",
+    "kind": "changed",
+    "passage": "L06",
+    "pos": "11",
+    "original": "T63",
+    "other": "X_NEW",
+    "pick": "T63",
+    "conf": "L",
+    "note": "V/Y with longer left leg, likely V variant"
+   },
+   {
+    "qid": "f144r-16",
+    "kind": "decoy",
+    "passage": "L03",
+    "pos": "8",
+    "original": "T42",
+    "other": "X_NEW",
+    "pick": "T42",
+    "conf": "L",
+    "note": "t-shape with curl top, same as sign read T42 elsewhere"
+   },
+   {
+    "qid": "f144r-17",
+    "kind": "changed",
+    "passage": "L05",
+    "pos": "7",
+    "original": "T36",
+    "other": "T26",
+    "pick": "T26",
+    "conf": "M",
+    "note": "loop left with stem right down, 9/q like T26"
+   },
+   {
+    "qid": "f144r-18",
+    "kind": "changed",
+    "passage": "L04.2",
+    "pos": "5",
+    "original": "T95",
+    "other": "T51",
+    "pick": "T95",
+    "conf": "M",
+    "note": "p-like loop on stem, T95"
+   },
+   {
+    "qid": "f144r-19",
+    "kind": "decoy",
+    "passage": "L03",
+    "pos": "4",
+    "original": "T54",
+    "other": "X_NEW",
+    "pick": "T54",
+    "conf": "L",
+    "note": "loop with spread legs, R-like"
+   },
+   {
+    "qid": "f144r-20",
+    "kind": "decoy",
+    "passage": "L06",
+    "pos": "12",
+    "original": "T83",
+    "other": "T81",
+    "pick": "T83",
+    "conf": "M",
+    "note": "x with crossbar, T83"
+   },
+   {
+    "qid": "f144r-21",
+    "kind": "changed",
+    "passage": "L04.1",
+    "pos": "1",
+    "original": "T66",
+    "other": "T25",
+    "pick": "T66",
+    "conf": "M",
+    "note": "1-shape with hooked top and foot, T66"
+   },
+   {
+    "qid": "f144r-22",
+    "kind": "changed",
+    "passage": "L04.1",
+    "pos": "3",
+    "original": "T81",
+    "other": "T83",
+    "pick": "T81",
+    "conf": "M",
+    "note": "small x with loop, no extra crossbar"
+   },
+   {
+    "qid": "f144r-23",
+    "kind": "changed",
+    "passage": "L06",
+    "pos": "7",
+    "original": "T18",
+    "other": "T36",
+    "pick": "T36",
+    "conf": "M",
+    "note": "circle on plain stem, no cross-through"
+   },
+   {
+    "qid": "f144r-24",
+    "kind": "decoy",
+    "passage": "L04.1",
+    "pos": "2",
+    "original": "T55",
+    "other": "X_NEW",
+    "pick": "T55",
+    "conf": "M",
+    "note": "vertical with two bars to right, F-like T55"
+   }
+  ]
+ },
  "pooled": {
-  "n_changed": 11,
-  "c": 7,
-  "r_c": 0.6363636363636364,
-  "n_decoy": 11,
+  "n_changed": 23,
+  "c": 12,
+  "r_c": 0.5217391304347826,
+  "n_decoy": 23,
   "d": 1,
-  "r_d": 0.09090909090909091,
-  "p0": 0.15384615384615385,
-  "p_binom": 0.0003784207006563268,
-  "p_fisher": 0.011867905056759546,
+  "r_d": 0.043478260869565216,
+  "p0": 0.08,
+  "p_binom": 4.0043010210639306e-08,
+  "p_fisher": 0.0003168227785357678,
   "gate": "PASS"
  }
 }
