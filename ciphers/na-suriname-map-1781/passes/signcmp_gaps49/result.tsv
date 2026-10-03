@@ -1,0 +1,10 @@
+tile	crop	what	class	main_sign_shape	mark_above	mark_conf	notes
+T1	g49_d_L01.jpg	right N middle sign	query	y-like / open 4 shape, dot after it at baseline	stroke_from_line_above	0.7	no dots above
+T2	g49_b_L01.jpg	left N first sign	query	y / ij shape, heavy descender	dots:2	0.5	one dot above left stroke; upper-right dots may be punctuation
+T3	g49_f_L01.jpg	left K b	control-none	6 / b shape	stroke_from_line_above	0.7	counts as none: control OK
+T4	g49_c_L01.jpg	right M sign	query	tall y / long-s shape with foot hook	stroke_from_line_above	0.5	no dots
+T5	g49_g_L01.jpg	right O k	control-none	small h / k shape	none	0.7	control OK
+T6	g49_e_L01.jpg	left A [x-dots]	control-dots	diagonal stroke with small tick upper right	unclear	0.4	control FAILED (expected dots)
+T7	g49_a_L01.jpg	left M first sign	query	y / ij shape, descender looping lower-left	dots:2	0.8	two dots directly above; loop from line above at top-left
+# groups (reader): T2=T7; others distinct
+# gate: T6 (dots control) = unclear 0.4 -> FAIL. Outcome: non-test (mark-reading gate failed); no value changed.
