@@ -1,0 +1,70 @@
+# modal period gloss per code over pairs_8443p4.tsv plus every new page that cleared its per-page gate (osborne_test2.tsv); S = >=2 agreeing occurrences, M = single or conflicting; 'new' = code not in the P4 key (rule 4: sibling values are S at best, never H for the target)
+code	value	agree	grade	note
+2	l	5/5	S	
+3	l	1/1	M	
+4	d	1/2	M	conflict: d,g
+7	h	1/1	M	
+10	y	3/4	M	conflict: y,t
+11	a	1/1	M	
+12	w	4/4	S	
+13	w	2/2	S	
+16	t	6/6	S	
+17	t	4/4	S	
+18	r	5/5	S	
+19	r	3/3	S	
+21	s	8/8	S	
+22	s	5/5	S	
+23	p	3/3	S	
+24	p	2/2	S	
+27	n	7/7	S	
+28	n	5/5	S	
+29	m	1/1	M	new
+31	d	6/6	S	
+32	d	4/4	S	
+37	b	1/1	M	new
+39	c	1/1	M	
+40	c	2/3	M	conflict: e,c
+41	i	4/4	S	
+42	i	5/5	S	
+43	u	3/3	S	
+44	u	2/2	S	
+45	e	5/5	S	
+46	e	5/5	S	
+47	a	2/2	S	
+48	a	4/4	S	
+49	o	4/4	S	
+50	o	4/4	S	
+52	e	7/7	S	
+54	i	2/2	S	
+55	o	2/2	S	
+66	o	2/2	S	
+69	e	2/2	S	new
+75	all	1/1	M	
+77	and	3/3	S	
+79	are	1/1	M	new
+80	be	6/6	S	
+81	but	1/1	M	
+84	best	1/1	M	
+95	done	2/2	S	
+103	expect	1/1	M	
+107	part	1/2	M	conflict: part,from
+109	for	1/1	M	new
+120	is	1/1	M	
+129	is	1/1	M	
+130	it	2/2	S	
+131	in	1/1	M	
+133	into	1/1	M	new
+139	may	1/1	M	
+143	me	2/2	S	
+153	not	1/1	M	
+156	not	1/1	M	new
+159	of	2/2	S	
+164	or	2/2	S	
+177	quarell	1/1	M	
+181	rather	1/1	M	
+193	that	1/2	M	conflict: that,the
+194	this	1/1	M	
+201	they	1/1	M	
+203	unto	1/1	M	
+204	under	1/1	M	
+226	King	2/2	S	

@@ -1,0 +1,43 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+8444p2_L7	0	80	num	80		be	agrees
+8444p2_L7	1	283	num	283			null-or-unaligned
+8444p2_L7	2	18	num	18		r	agrees
+8444p2_L7	3	46	num	46		e	single
+8444p2_L7	4	23	num	23		p	single
+8444p2_L7	5	19	num	19		r	single
+8444p2_L7	6	49	num	49		o	single
+8444p2_L7	7	43	num	43		u	single
+8444p2_L7	8	45	num	45		e	single
+8444p2_L7	9	31	num	31		d	agrees
+8444p2_L8	0	109	num	109		for	single-segment
+8444p2_L8	1	156	num	156		not	single-segment
+8444p2_L13	0	80	num	80		be	agrees
+8444p2_L13	1	31	num	31		d	agrees
+8444p2_L13	2	41	num	41		i	single
+8444p2_L13	3	21	num	21		s	single
+8444p2_L13	4	24	num	24		p	single
+8444p2_L13	5	44	num	44		u	single
+8444p2_L13	6	17	num	17		t	agrees
+8444p2_L13	7	52	num	52		e	agrees
+8444p2_L13	8	32	num	32		d	agrees
+8444p2_L13	9	284	num	284			null-or-unaligned
+8444p2_L14	0	133	num	133		into	single-segment
+8444p2_L14	1	37	num	37		b	single
+8444p2_L14	2	69	num	69		e	agrees
+8444p2_L14	3	16	num	16		t	single
+8444p2_L14	4	17	num	17		t	agrees
+8444p2_L14	5	52	num	52		e	agrees
+8444p2_L14	6	18	num	18		r	agrees
+8443p2_L1a	0	79	num	79		are	single-segment
+8443p2_L1a	1	29	num	29		m	single
+8443p2_L1a	2	48	num	48		a	single
+8443p2_L1a	3	27	num	27		n	agrees
+8443p2_L1a	4	10	num	10		y	single
+8443p2_L1b	0	42	num	42		i	single
+8443p2_L1b	1	28	num	28		n	single
+8443p2_L1b	2	40	num	40		c	single
+8443p2_L1b	3	2	num	2		l	single
+8443p2_L1b	4	54	num	54		i	single
+8443p2_L1b	5	27	num	27		n	agrees
+8443p2_L1b	6	69	num	69		e	agrees
+8443p2_L1b	7	32	num	32		d	agrees

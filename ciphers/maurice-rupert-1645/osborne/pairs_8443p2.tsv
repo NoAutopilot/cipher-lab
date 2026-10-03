@@ -1,0 +1,15 @@
+# DECODE 8443 (BL Add MS 18982 ff.93-94), image P2: two cipher lines at the head of the page with the period interlinear decipherment ('are many [of both houses] inclined'), one eye read by FT4e 3 Oct 2026 (one crop sheet of 7 line crops, tools/iiif_lines.py --image, region 1300,900,3900,1900). Eye alignment confirmed by tools/interlinear_align.py align (align_new.tsv).
+line	code	gloss
+L1a	79	are
+L1a	29	m
+L1a	48	a
+L1a	27	n
+L1a	10	y
+L1b	42	i
+L1b	28	n
+L1b	40	c
+L1b	2	l
+L1b	54	i
+L1b	27	n
+L1b	69	e
+L1b	32	d

@@ -18,6 +18,11 @@ Six-source sweep by this worker (session CX2-BRIT2), all queries and URLs logged
 
 ## Verdict
 
+**3 Oct 2026 (FT4e):** still open. The Osborne key family is now read in full from the DECODE images (8443 P1 has no
+cipher; 8443 P2, P4 and 8444 P2 read) and still does not read this letter: 19/93 tokens keyed, 4-gram rank 148/201 vs
+shuffled keys, judge FAIL. The remaining unread piece is blocked from outside the session (BL Add MS 18980-82 images,
+ASKS row 56). See "## Remaining gaps" at the end of this file.
+
 **Open.** Verified unsolved by this worker's own sweep (Warburton read at the page, CSP Domestic checked by full-text search with a real control, DECODE searched exhaustively for the relevant volume, fresh Bourdeau/Aymeloglu clones). Unchanged from the 15/19 Sept 2026 finding: offline-only, blocked on BL images for Add MS 18980-18982/72438 (catalogue confirms "digital images currently unavailable"). New leads for a future worker: the ff.95-96 (R.) decipherment in the same 18982 volume, and Add MS 18982's item list as a place to watch if BL restores images.
 
 ## Background
@@ -317,3 +322,84 @@ those 17 score worse than shuffled keys.** Status stays `open`.
 
 Requests: de-crypt.org about 15 (login, RecordsView/8443, RecordsView/8444, 6 thumbnails, 6 full-size; 1.6 s apart), one
 login. Vision calls: 3 (overview sheet, two 8443 P4 crops). Rule 10: nothing here says new or unread.
+
+## Osborne lines completed: 8443 P1/P2 and 8444 P2 (FT4e-maurice-rupert-1645, account-4, 3 Oct 2026)
+
+Run 3 Oct 2026, 04:44-05:0x UTC (`date -u`). FT4d named this step. **Result: the extra pages add 40 genuine pairs and 7
+codes, but the extended key still does not read the target. Both numbers are below FT4d's own controls.**
+
+- **Fetch.** One DECODE browser login (`tools/decode_browser_login.js 8443 ... --fetch` with the three full-size
+  file URLs). Full-size images were served, and the sha1s match `osborne/fullsize_sha1.txt` (P1 2cc22f58, P2 72d6ce17,
+  8444 P2 51af71f5). Not committed (13 MB each). Locator: one contact sheet of the three committed 200 px thumbnails.
+- **Crops** (pasted commands):
+  `python3 tools/iiif_lines.py --image IMG_R8444_I38995_P2.jpg --region 3100,1300,3896,3900 --out c8444p2 --prefix r8444p2 --debug`
+  (14 lines) and `python3 tools/iiif_lines.py --image IMG_R8443_I38994_P2.jpg --region 1300,900,3900,1900 --out
+  c8443p2 --prefix r8443p2 --debug` (7 lines). Each page's line crops were joined into one sheet and read in one vision
+  call. 8443 P1 got a contrast-equalised view of the text block (the third call). It is a letter wholly in clear ("May it
+  please your Highnesse / I had not kept Mr Craven thus long here ..."), with **no cipher numerals**, so it gives 0 pairs.
+- **Pairs.** 8444 P2: four cipher stretches with period interlinear glosses. They read "will be [283] reproued / for not
+  reading it in the house", "to be disputed [284] into better conditions" (`osborne/pairs_8444p2.tsv`, 27 pairs).
+  8443 P2: "are many [of both houses] inclined [to your Highnesse]" (`osborne/pairs_8443p2.tsv`, 13 pairs). The eye
+  alignment was checked with `tools/interlinear_align.py align` (`osborne/align_pairs_new.tsv` -> `align_new.tsv`,
+  `--floor 75 --prior` P4 key `--word-prior`). It agrees token for token. A flat-start run without the prior misplaces
+  "be" and the nulls 283/284, so the prior is what makes this alignment work. New codes: 29 m, 37 b, 69 e (twice; the 8444 gloss
+  looks like "a" by eye, while 8443 P2 glosses it e and the sense wants "better"), 79 are, 109 for, 133 into, 156 not.
+  The new glosses also settle two P4 conflicts the other way: 10 = y, 40 = c.
+- **Per-page gate before merging** (rule 3 per unit; `osborne/osborne_test2.py`). Each page's glosses must agree with
+  the P4 key on shared codes more often than the same page's glosses shuffled among its own occurrences (1000 shuffles):
+
+  | page | agree with P4 key | shuffle mean | p95 | verdict |
+  |---|---|---|---|---|
+  | 8443 P2 | 0.900 (10 shared occ of 13) | 0.132 | 0.300 | clears, rank 1/1001 |
+  | 8444 P2 | 1.000 (22 shared occ of 27) | 0.106 | 0.227 | clears, rank 1/1001 |
+
+  Within-page repeat consistency: 8444 P2 1.000 vs shuffle p95 0.600 (10 repeated occurrences); 8443 P2 1.000 vs p95
+  0.500 (only 2 repeated occurrences, rank 35, weak by itself). Both pages are merged: 68 codes, 181 occurrences
+  (`osborne/osborne_key2.tsv`).
+- **Target test, same statistics as FT4d** (`osborne/osborne_test2.tsv`; en16_repo 4-gram, judge block of
+  `judge_key118.json`, 200 shuffled-value keys, seed 1):
+
+  | stat | FT4d (P4 key, 60 codes) | FT4e (extended, 68 codes) | FT4e shuffled mean | FT4e p95 | FT4e rank |
+  |---|---|---|---|---|---|
+  | tokens keyed | 17/93 (13/63 codes) | 19/93 (15/63 codes) | - | - | - |
+  | 4-gram/letter | -2.012 (rank 175/201) | -1.844 | -1.733 | -1.469 | 148/201 |
+  | word cover | 0.606 (rank 87/201) | 0.541 | 0.615 | 0.789 | 150/201 |
+  | judge | FAIL -2.012 (real_p05 -0.638, N=33) | FAIL -1.844 (real_p05 -0.617, null_p99 -1.621, N=37) | | | |
+
+  Only 2 more target tokens are keyed (156 "not", which the target uses once, and one more letter). The target's
+  frequent codes (148, 212, 229, 293, 323, 351, 355) and its whole 290-398 band are still outside every Osborne pair.
+  All Osborne cipher lines on the six DECODE images are now read. The table as written in these letters does not use
+  codes above 291 (283-291 are nulls), so no further Osborne material on these records can reach the target's band.
+- **Rule 3 third-attempt clause.** This was a second attempt with the same instrument and more key material, and every
+  number stayed below its control. So the Osborne key family is logged **untested-by-this-instrument** (sibling-key
+  transfer at 20% coverage), not refuted. The pairs are genuine, but the table, as far as it survives here, does not
+  overlap the target's code band. Only a different instrument or new material reopens it: Osborne's full key sheet,
+  or the 7 July leaf itself.
+- **Grades:** none claimed for the target (rule 4). The sibling values are S at best. Rule 7: `python3
+  osborne/osborne_test2.py --check` exits 0 ("osborne2 outputs up to date"). `osborne_test.py --check` and
+  `tools/decode_key.py . --check` still pass.
+
+Requests: de-crypt.org 6 (login page, login post, RecordsView/8443, thumbnail, 3 full-size), one login, 1.5 s apart. Vision
+calls: 3 on crops/page views (8444 P2 sheet, 8443 P2 sheet, 8443 P1 view), plus 1 locator on the three 200 px
+thumbnails. Rule 10: nothing here says new or unread.
+
+## Remaining gaps (FT4e, 3 Oct 2026)
+Read so far: 0 of 93 tokens read at any grade. Keys tested: no. 118 (rank 80/201), Osborne P4 (rank 175/201), Osborne extended (rank 148/201), all with judge FAIL. NOTES FT4b, FT4d, FT4e.
+- The letter's own key, or a decipherment of the 7 July 1645 leaf, in Rupert's papers BL Add MS 18980-82 (the leaf is not itemised in the catalogue) - blocker: needs-physical-access; BL images have been offline since the 2023 cyberattack, and the copy order is ASKS row 56 / REQUEST.md. Every key reachable online was tested: Digby cabinet no. 118, the DECODE 8627 index, Osborne 8443/8444 in full, Cryptiana Nicholas-Rupert, Bourdeau's King-Queen SP106-5.
+- Statistical key rebuild from the 93 tokens alone - blocker: too-short; 93 tokens with 63 distinct codes in a letters-plus-words nomenclator. The rule 3 controls on file show code+mark designs read only at pooled lengths (22-67% blind at N=720), so no solver can be expected to read this at N=93.
+
+## Escalation (3 Oct 2026)
+- [x] siblings: Digby-cabinet key index DECODE 8627 and key no. 118 (FT4/FT4b, excluded, control-backed); Add MS 18982 ff.95-96 is a different letter, Osborne 10 Nov (FT4c); Osborne 8443/8444 are read in full, see known-keys
+- [x] clear-pages: the Osborne clear text (8443 P1, P2; 8444 P2) was read by FT4e and gives no crib for this letter; the letter's own clear tail ("Garrison ... Accordingly") is in ciphertext.txt
+- [retired] known-keys: the Osborne-Rupert sibling key was transferred by 4-gram vs shuffled-key control plus the judge, twice: FT4d rank 175/201, then FT4e with 40 more pairs rank 148/201, judge FAIL both times, coverage 17-19/93. Rule 3's third-attempt clause applies: untested-by-this-instrument, not refuted. It reopens only on new material, such as Osborne's own key sheet or a key reaching codes 290-398. Key no. 118, the Cryptiana Nicholas-Rupert key and King-Queen SP106-5 are excluded
+- [x] print: Warburton, Memoirs vol. iii pp.131-137, read at the page: the cipher is printed without a decipherment. CSP Domestic 1644-5 was full-text searched (LANE CX2)
+- [n/a] key-rebuild: 93 tokens is too short for a letters-plus-words nomenclator (gap above)
+- [x] image-check: Warburton's printed cipher matches ciphertext.txt group for group (LANE CX2). The manuscript leaf is not reachable (gap above)
+- [x] retry: the Osborne step was retried with the full remaining material (FT4e). The rule 7 checks pass: osborne_test.py, osborne_test2.py, decode_key.py --check
+Verdict: parked: every gap has an outside blocker
+
+## While waiting
+
+- Scan the on-disk DECODE harvest (`sources/decode/records-*.tsv`, no login) and `KEY-OFFICES.tsv` for any key with
+  Rupert or Maurice as party, dated 1644-46, that reaches codes up to about 400. Test any found with the shuffled-key
+  control, as key118_test.py does. Depends on nobody; about $1.
