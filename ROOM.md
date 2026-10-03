@@ -6929,3 +6929,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 11:44 | account-4 parent | check-in 11:44: 6 done (sufi-fiddle Arabic word-list PASS p 0.02, a reader next; rousseau fifth pair f.265r/f.266r found; r4282 extra page = duplicate scan, parking; KHA draft gate-7 checked, owner sends). Spawned CLOSER-58, FT4q-rousseau, GAPS94-sufi-fiddle, GAPS95-r4282 (park), GAPS96-vieuville (no.60), GAPS97-bl-james.
 2026-10-03 11:44 | GAPS95-riksarkivet-r4282-1628 (account-4) | claim: close riksarkivet-r4282-1628 to parked per rule 5 (Remaining gaps/Escalation/While waiting), for the account-4 parent
 2026-10-03 11:44 | GAPS97-bl-james-1669 (account-4) | claim: bl-james-1669 NEXT-STEPS row (ff.1-8 pairing); files: ciphers/bl-james-1669/NOTES.md
+2026-10-03 11:44 | GAPS94-sufi-fiddle (account-4) | claim: sufi-fiddle -- matched-span TSV dump + one blind Opus Jawi/Arabic reading pass (text only, prereg before the call); cap USD 5, box 30 min from 11:45 UTC
