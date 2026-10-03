@@ -146,6 +146,6 @@ NEVBIR-NAMES	other	.claude/briefs/runs/2026-10-03-acct3-nevbir-names.md	Opus 5.5
 CEPPO-WITNESS-PAIRS	other	.claude/briefs/runs/2026-10-03-acct3-ceppo-witness-pairs.md	Opus 5.5	5	50	claimed by LANE-A2PUSH 01:00	2026-10-03 00:46	Ceppo-Nevers look-alike pairs settled on the f.36 glossed witness; apply to fr.3252 f.47 and fr.3251 f.87
 F36-READ	other	.claude/briefs/runs/2026-10-03-acct3-f36-read.md	Opus 5.5	5	50	claimed session_01MMnhJhD3mwceobnFwQNGcg 2026-10-03 01:09	2026-10-03 01:06	fr.3252 f.36 (5 Apr 1571) read in full vs its period gloss
 NO87-LABELS	other	.claude/briefs/runs/2026-10-03-acct3-no87-labels.md	Opus 5.5	3	35	claimed session_01DBFTmfdMkcuVJNkrnS7xbs 2026-10-03 01:09	2026-10-03 01:06	apply no.87 label rulings by value-blind pass; true error vs clerk sheet
-VERIFY-CEPPO-WP	other	.claude/briefs/runs/2026-10-03-acct3-verify-ceppo-wp.md	Opus 5.5	4	40	queued	2026-10-03 01:26	verifier: witness-pair S candidates f.47 + f.87 and 3 conflicts
-F36-GLOSS	other	.claude/briefs/runs/2026-10-03-acct3-f36-gloss.md	Opus 5.5	6	55	queued	2026-10-03 01:26	Opus read of f.36 clerk gloss -> C-grade Ceppo-Nevers key; apply to 1570-71 letters
-NO87-FOLLOW	other	.claude/briefs/runs/2026-10-03-acct3-no87-follow.md	Opus 5.5	2	25	queued	2026-10-03 01:26	carry no.87 label fix to nos.71/86/90
+VERIFY-CEPPO-WP	other	.claude/briefs/runs/2026-10-03-acct3-verify-ceppo-wp.md	Opus 5.5	4	40	claimed by LANE-A2PUSH 01:38	2026-10-03 01:26	verifier: witness-pair S candidates f.47 + f.87 and 3 conflicts
+F36-GLOSS	other	.claude/briefs/runs/2026-10-03-acct3-f36-gloss.md	Opus 5.5	6	55	claimed by LANE-A2PUSH 01:38	2026-10-03 01:26	Opus read of f.36 clerk gloss -> C-grade Ceppo-Nevers key; apply to 1570-71 letters
+NO87-FOLLOW	other	.claude/briefs/runs/2026-10-03-acct3-no87-follow.md	Opus 5.5	2	25	claimed by LANE-A2PUSH 01:38	2026-10-03 01:26	carry no.87 label fix to nos.71/86/90
