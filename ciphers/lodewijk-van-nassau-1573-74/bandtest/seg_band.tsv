@@ -1,0 +1,12 @@
+code	tokens	scored_occ	called	best_letter	delta_cost_per_occ	licensed
+125	33	33	NULL	I	0.118	yes
+139	15	15	letter	I	-0.013	yes
+140	21	21	letter	E	-0.090	yes
+142	18	18	letter	E	-0.117	yes
+145	23	23	NULL	I	0.035	yes
+146	8	8	NULL	S	0.012	no (untested-by-this-tool at this N)
+147	14	14	letter	I	-0.129	yes
+148	24	24	NULL	I	0.096	yes
+149	21	21	letter	I	-0.019	yes
+150	73	73	NULL	I	0.042	no (untested-by-this-tool at this N)
+151	5	5	letter	C	0.000	no (untested-by-this-tool at this N)
