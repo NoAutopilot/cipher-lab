@@ -216,10 +216,50 @@ no printed edition found, bZES); (2) a `## Web and blog check` section; (3) a `#
 worker writing those three is what moves the word to `partial` (~$4.5). Deep transcription has gone ahead under the
 parent's GAPS briefs.
 
-## Remaining gaps (GAPS179, 3 Oct 2026)
+## GAPS185-zeschau-seebach-1841 (3 Oct 2026, account-4)
+
+Step run: the crib test of Bourdeau's 7 published values on R5006's 692 digits (the Verdict line's cheapest step).
+Pre-registered in `PREREG-GAPS185.md` (commit b75a39a8, 18:08 UTC, before any statistic). Script `crib_test.py`
+(seeded; `--check` exits 0), output `crib_test.json`. R5005 reference text: Bourdeau's `ct_R5005.txt` and
+`offsets.json`, snapshot in `sources/cyphersolver/2026-10-03/zeschau1841/` (HEAD a439937, CC BY 4.0, credited; no
+code copied). Script only: no vision, no subagents.
+
+**Overlap with Bourdeau (rule 8).** Transcribing R5006-R5008 and testing his seed values on them is Bourdeau's own
+stated next step ("What would move it" item 3 in `targets/zeschau1841/NOTES.md`, dbourdeau/cyphersolver), and his
+target table shows he has viewed those images. The 7 values are his recovery; GAPS175/179's R5006 transcription and
+this test are ours, done in parallel with his plan, not ahead of it. The parent weighs offering him the 692 digits.
+
+| statistic | R5006 target | shuffled-digit control (2,000 draws) | p | verdict (prereg) |
+|---|---|---|---|---|
+| T1 cosine of the pair profile to R5005 | **0.886** | mean 0.760, p95 0.805 | **0.0005** (the floor at 2,000 draws) | PASS |
+| T2 share of pairs that are one of the 7 pins | 0.099 (34 of 345) | mean 0.080, p95 0.104 | 0.106 | not significant (support only) |
+| T3 Spearman, pin counts R5006 vs R5005 (7 points) | 0.273 | -- | -- | reported, no gate |
+
+- Parsing: the 692-digit stream concatenated in page/line order; the fixed rule (higher pair IC) picked phase 1, 345
+  pairs, pair IC 0.0141 (R5005 0.0142 on 1,846 pairs under Bourdeau's per-line phases).
+- Power at the target's N (positive control): 200 random 692-digit windows of R5005 against the rest of R5005, each
+  with its own 200-draw shuffled null: **200/200 reach p < 0.01** (window cosine mean 0.880, their null mean 0.773).
+  R5006's 0.886 sits right on R5005's own self-similarity at this length.
+- The control can differ from the target: shuffling digits changes the pair counts, which both statistics are
+  computed on (a pair-level shuffle would have tied by construction and was not used).
+- Pin counts in R5006: 11 (la) 7, 70 (pre) 2, 82 (m) 5, 34 (i) 6, 29 (er) 5, 40 (e) 3, 46 (que) 6. Pin coverage 9.9%
+  against 11.1% in R5005.
+- Not pre-registered, descriptive only: two of Bourdeau's four long R5005 repeats occur verbatim in R5006,
+  `7778948206` (5x in R5005) once (p.1 L04) and `06777818711001` (3x in R5005) once (p.1 L06); `2437784` and `00866`
+  do not occur.
+
+What this licenses: R5006 shares R5005's pair profile beyond its digit frequencies, so it is consistent with the same
+two-digit syllabary. The 7 values may be applied to R5006 as pins. Rule 4 grades: the pins stay **I** (Bourdeau's
+values from a rubbed gloss, his own grade). Applied in R5006 they are at most **M**: 34 tokens (7+2+5+6+5+3+6), 0 H,
+0 C, 0 S. No token is read, no plaintext is claimed, and nothing is shown about whether the values themselves are
+right. T2's non-result means the pins do not stand out in R5006 beyond digit frequencies at N=345 pairs. A
+single global phase is wrong wherever an odd-length line shifts the pairing, so the test is conservative there.
+Rule 10: no novelty claim.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, 3 Oct 2026)
 Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2,500-3,000 on R5006-R5008 (2 of 6 pages); 0 tokens read
 - R5007 p.1-2, R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179); next: one page per worker as GAPS179 (1 login, overview, iiif_lines crops, 2 blind Opus passes + 1 reconcile; a 3-line page ran 3 units, a full page 5 units at about USD 1.3 each), ~$4-7 a page, ~$22 for the four
-- Crib test of Bourdeau's 7 R5005 values on the R5006-R5008 digits - blocker: not-attempted; can run on R5006's 692 digits now, or wait for all six pages; next: crib + coverage and order-scrambled controls as the bZES brief specified, ~$3
+- Crib test of Bourdeau's 7 R5005 values on R5007-R5008 - blocker: not-attempted; done for R5006 by GAPS185 (3 Oct 2026: pair profile T1 cosine 0.886 vs shuffled-digit control mean 0.760, p 0.0005, power 200/200; pin coverage 0.099 vs 0.080, p 0.106 n.s.); next: rerun `crib_test.py` on each new page once transcribed, then a syllabary annealer seeded with the 7 pins on the pooled R5005+R5006 pairs with its matched synthetic-syllabary control, ~$3
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -227,10 +267,10 @@ Read so far: 692 digits transcribed (R5006 p.1-2, the whole of R5006) of about 2
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: syllabary crib from the 7 values on the R5006 digits, then R5007-R5008
+- [ ] key-rebuild: R5006 shares R5005's pair profile (GAPS185, p 0.0005), so the pools can be merged; next a seeded syllabary annealer on R5005+R5006 with a matched control, then R5007-R5008
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps (status word done by CHECK-ZESCHAU, 3 Oct 2026: line 1 `partial`, gate exit 0); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict); cheapest next: crib test of Bourdeau's 7 values on R5006's 692 digits with both controls, ~$3 (then R5007 p.1 as GAPS179, ~$5)
+Verdict: keep going: 2 internal gaps (crib test on R5006 done by GAPS185: same pair profile as R5005, p 0.0005, pins applicable at grade M, no token read); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: transcribe R5007 p.1 as GAPS179, ~$5 (then the seeded syllabary annealer on pooled R5005+R5006 with its control, ~$3)
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 
