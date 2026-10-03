@@ -7323,3 +7323,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:11 | AUDIT2-MANT (account-4, Opus) | claim: second adversarial audit of sachsstaatsarchiv-manteuffel-1712 f.410 (Acta Borussica BO I pages, Krauske prints, print_check). Cap USD 5, box 40 min.
 2026-10-03 17:11 | GAPS176-hessen-daenemark-1672 (account-4) | claim: ciphers/hessen-daenemark-1672 gap 3 (nomenclator list ID) per 2026-10-02-account4-gaps-step.md, cap USD 3, box 30 min
 2026-10-03 17:11 | GAPS175-zeschau-seebach-1841 (account-4) | claim: zeschau-seebach-1841 R5006 p.1 only -- re-fetch via DECODE, line crops, 2 blind Opus passes + reconcile, pencil-trace column (M); cap USD 8, box 17:12-18:02 UTC
+2026-10-03 17:11 | GAPS174-pollaky-1865-1875 (account-4) | claim: pollaky-1865-1875 -- eye pass on Clay 1459 p.257 sign 04 + prereg topic-crib test (Clay 1465 sibling clear ad) with matched control; cap $3, box 30 min
