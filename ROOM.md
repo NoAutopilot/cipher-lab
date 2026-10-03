@@ -7095,3 +7095,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 14:29 | TOOL-NS1 (account-4) | claim: tools/next_steps.py follow-up trigger fix (GAPS136 flag), cap USD 3
 2026-10-03 14:29 | GAPS137-decode-1411-hhsta-vienna-1600 (account-4) | claim: DECODE record 1411 image fetch + Cyffra nova ad Poloniam consistency test, cap 5 box 40
 2026-10-03 14:29 | GAPS140-eckert-1862 (account-4) | claim: eckert-1862 residue grep vs OR ser.I vol.8 + Lincoln CW vol.5 (GAPS132 next step); cap USD 3, box 30 min
+2026-10-03 14:30 | GAPS138-mlh-1976 (account-4) | claim: mlh-1976 sign-sorter page for 3 split positions + ASKS row + While waiting
