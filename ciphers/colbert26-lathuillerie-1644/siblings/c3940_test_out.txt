@@ -1,0 +1,51 @@
+line	set	real	n	hits
+39L01	C	1	1	51=de
+39L02	C	0	2	
+39L03	C	3	8	51=de 48=c 25=p
+39L04	C	0	2	
+39L05	C	5	8	51=de 51=de 25=p 51=de 51=de
+39L06	C	2	2	24=n 78=u
+39L07	C	1	2	10=a
+39L08	C	3	4	25=p 25=p 10=a
+39L09	C	2	2	10=a 12=c
+39L10	C	0	1	
+39L11	C	1	1	12=c
+39L12	C	3	3	10=a 24=n 51=de
+39L13	C	4	4	10=a 12=c 10=a 25=p
+39L14	C	3	3	78=u 10=a 51=de
+40L01	C	2	3	25=p 10=a
+40L02	C	2	5	10=a 78=u
+40L03	C	2	2	10=a 10=a
+40L04	C	2	2	22=m 10=a
+40R01	C	1	1	48=c
+39L01	all	2	3	51=de 30=s
+39L02	all	1	9	91=d
+39L03	all	5	18	51=de 48=c 79=s 17=o 25=p
+39L04	all	2	6	21=e 96=r
+39L05	all	8	16	20=i 51=de 21=e 51=de 25=p 13=d 23=n 51=de
+39L06	all	6	12	32=o 21=e 30=s 24=n 11=n 30=s
+39L07	all	3	7	21=e 66=f 10=a
+39L08	all	9	19	25=p 20=i 23=n 21=e 39=et 96=r 35=o 23=n 10=a
+39L09	all	3	6	10=a 12=c 21=e
+39L10	all	3	6	32=o 21=e 30=s
+39L11	all	5	8	12=c 68=s 30=s 30=s 30=s
+39L12	all	10	17	96=r 46=c 30=s 30=s 30=s 15=e 30=s 23=n 10=a 51=de
+39L13	all	10	20	10=a 20=i 12=c 21=e 44=p 30=s 17=o 11=n 21=e 96=r
+39L14	all	4	8	78=u 23=n 58=e 30=s
+40L01	all	8	18	58=e 21=e 25=p 17=o 10=a 32=o 23=n 30=s
+40L02	all	7	20	21=e 23=n 10=a 20=i 11=n 78=u 21=e
+40L03	all	6	10	10=a 21=e 29=a 23=n 30=s 21=e
+40L04	all	5	17	15=e 22=m 21=e 10=a 23=n
+40R01	all	7	11	20=i 23=n 48=c 23=n 15=e 30=s 21=e
+
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas3940	C	37	56	f23-window	25.67	31	36	0.0000	PASS
+canvas3940	C	37	56	shuffled-gloss	22.24	26	32	0.0000	-
+canvas3940	all	104	231	f23-window	63.81	72	83	0.0000	-
+canvas3940	all	104	231	shuffled-gloss	63.45	72	84	0.0000	-
+
+code12	line	gloss
+12	39L03	laconclusiondelapaixcesttropse
+12	39L09	retracter
+12	39L11	chosespossibles
+12	39L13	leurtraitteaueclespagneapreslhonneurque
