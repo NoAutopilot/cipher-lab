@@ -1,6 +1,7 @@
 # decode-1411-hhsta-vienna-1600
 
 Status: open
+Kopal, "Two Encrypted Diplomatic Letters Sent by Jan Chodkiewicz to Emperor Maximilian II in 1574-1575", HistoCrypt 2023 (ecp.ep.liu.se histocrypt article 160), Table 1 and full-text search of the PDF for "182" read by this worker (GF-A2B-1, 3 Oct 2026): its five deciphered Kt. 14 Fasc. 20 letters sit at ff. 174, 194-198, 200-204, 205-208, 210-212, none at f. 182-192.
 
 ## What this is
 
@@ -63,3 +64,53 @@ step. Status word unchanged.
 Census diff regenerated this session (normaliser fix): R1411's `held_by` is now
 `ours:decode-1411-hhsta-vienna-1600` (was `none`, folder did not exist when the stale diff was made) — pipeline
 catching up, not a new finding.
+
+## Web and blog check (GF-A2B-1, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Chiffrenschlüssel Kt. 14 Fasc. 20 f. 182 Staatskanzlei Interiora cipher letter` -- archivinformationssystem.at
+   StK Interiora series record (ID=332, series level only), Busse's Austrian Black Chamber PDF, Kopal's HistoCrypt
+   2024 Charles V paper (article 704). Nothing at folio level for f. 182-192.
+2. `DECODE record 1411 Haus- Hof- und Staatsarchiv Chiffrenschlüssel partially decrypted German` -- Kopal HistoCrypt
+   2023 (article 160, opened, see Premise check (c)), Cipherbrain "unsolved cryptograms from the thirty years war 2"
+   (Trauttmansdorff-Volmar dispatches; not this fascicle). No record-level page for R1411.
+3. `HHStA Staatskanzlei Interiora Chiffrenschlüssel Karton 14 Fasz. 20 Chiffre Brief entziffert` -- Kopal 2023 and
+   2024 again; Hungaricana BecsSeg (Vienna-held Hungarian records, unrelated). No hit.
+4. `Láng Benedek Vienna cipher key collection Staatskanzlei Interiora Chiffrenschlüssel HistoCrypt Fasc. 20 letters`
+   -- Láng 2020 HistoCrypt description (cited in Kopal 2023's bibliography), Láng's Frank "chiffre indéchiffrable"
+   paper (article 400, opened: Tuscany, 18th c., not this item), Real Life Cryptology (Láng 2018). No folio-level hit.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne` + HHStA/Chiffrenschlüssel/Wien): "unsolved cryptograms
+   from the thirty years war 2" (2018-10-21; Trauttmansdorff, a different item), monthly archives. Also surfaced: Top 50
+   no. 27 Ferdinand III letters and the 2017-10-07 Thomas Ernst follow-up -- Ferdinand III's own letters, not Kt. 14
+   Fasc. 20 f. 182-192. No post or comment naming this fascicle or R1411.
+6. Cryptiana (`site:cryptiana.blogspot.com Vienna Staatskanzlei Chiffrenschlüssel`): no cryptiana.blogspot.com hit;
+   Tomokiyo's habsburg.htm (on disk, sources/cryptiana/web/) already checked on 24 Sept: no f. 182-192 citation.
+7. Cipher Mysteries (`site:ciphermysteries.com Vienna Haus- Hof- und Staatsarchiv cipher letter Habsburg`): no
+   ciphermysteries.com hit returned; results were the HistoCrypt papers and Cipherbrain posts above.
+No decipherment or plaintext of R1411 found in any post or comment thread. Requests: WebSearch 7, ecp.ep.liu.se 2 (PDFs).
+
+## Premise check (GF-A2B-1, 3 Oct 2026)
+
+(a) Folder's own mentions -- found (signal, not a decipherment): DECODE status "Partially decrypted" with `Inline
+Cleartext: Yes` and DocumentsList "No records found" (LANE N audit above); no decipherment document to open.
+(b) Other solvers' working files -- not found for R1411. Shallow clones 3 Oct 2026: dbourdeau/cyphersolver (HEAD
+e8b4287, 2 Oct): `targets/warsaw/` works R1408 (f. 176) and fetched DECODE images of R1409 (f. 178) and R1410 (f. 181,
+"a German letter with inserted code numbers"), plus key records R1392-R1406; R1411 is not fetched or rendered there,
+and no apply-key script names it. `targets/chodkiewicz1575/` works R1473 (ff. 210-212). aaymeloglu/unsolved-ciphers
+(HEAD d2800bb, 27 Sept): R1411 only in `catalogue/decode-ranked.md`/`decode-catalog.csv` (cited, not copied).
+(c) Physical neighbours -- found (context, not this item): Kopal and Waldispühl (Cryptologia 2021) and Kopal
+(HistoCrypt 2023) deciphered five letters of this fascicle, Maximilian II's and Chodkiewicz's of 1574-75 on the
+Polish election, at ff. 174 (letter C), 194-198, 200-204, 205-208 and 210-212, keys "Cyffra nova ad Poloniam" (1572,
+two copies in DECODE) and a Dudith-type key; plaintexts are said to be in DECODE. R1411's f. 182-192 sits inside
+that run, between letter C and letter B, so it may belong to the same 1575 Polish correspondence and key family;
+not seen at native resolution this pass (DECODE images, no login used). R1410 at f. 181 is German with code numbers
+(Bourdeau's description).
+(d) Recipient-side editions -- not searched beyond the web pass: Augustynowicz 2001 (Habsburg candidates, second
+interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions Kopal names; neither opened here.
+
+## While waiting
+
+Next action that depends on nobody: one DECODE browser login (`tools/decode_browser_login.js 1411 ...`) to fetch
+R1411's images, check the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (same fascicle,
+ff. 174-212), and confirm whether R1411 is one of their letters' copies or drafts before any transcription.
