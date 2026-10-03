@@ -1,0 +1,15 @@
+{
+  "slug": "eckert-1862",
+  "name": "War Department Ciphers Sent, 1 Feb-21 July 1862 (Huntington mssEC 15, Thomas T. Eckert Papers)",
+  "language_candidates": ["en"],
+  "ciphertext": "dictionary-coded English telegrams, code words in clear English letters; see ciphers/eckert-1862/ciphertext.txt and print/residue/",
+  "ciphertext_note": "Written 3 Oct 2026 by GAPS132-eckert-1862 (account-4) so the folder's readings have a judge (rule 7). The plaintext is 1862 telegraphese, mostly in clear; only code words are substituted, so a judge PASS mainly measures the clear words around them.",
+  "ciphertext_source": "Huntington Digital Library p16003coll11, object 5126; volunteer transcription (Decoding the Civil War, 2016-17) in each page record's text field",
+  "alphabet": "English words",
+  "constraints": ["code-word vocabulary in ciphers/eckert-1862/key.md, dated column"],
+  "cheap_tests_in_order": [],
+  "judge": {
+    "language": "en"
+  },
+  "written": "3 Oct 2026"
+}

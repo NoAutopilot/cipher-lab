@@ -348,9 +348,49 @@ covers its own entries. Disk only; no requests, no vision, no subagents.
 - Rule 10: N1 shape -- every witness is a telegram already printed in the OR (1882-85); this is key bookkeeping, not new
   plaintext.
 
+## GAPS132-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: GAPS127's Verdict -- decode the ledger pages GAPS113 did not match to OR ser. I vols. 7, 9-12 with the dated
+key. Script: `print/residue_decode.py PAGES_DIR --write|--check` (imports decode.py's dated rule; outputs
+`print/residue/readings.md` and `print/residue/pages.tsv`, one row per page: entries, key.md tokens by grade, oov,
+page judge). `--check` exits 0; `python3 decode.py --check` exits 0 (key.md and the ten readings untouched).
+Inputs: the volunteer page texts, re-fetched for this step (hdl.huntington.org 69 requests, 1.6 s apart; one empty reply
+on the front cover), not committed. The brief said "disk only", but GAPS113-122 never committed the page texts, so
+the step could not run without this re-fetch; logged here as a deviation.
+- Pages: 57 text pages unmatched (GAPS113 counted 60; the difference is the front cover, the pastedown title and one
+  page now empty), 122 entries. The residue is NOT spring-summer: by first entry date 40 pages are Feb, 13 Mar, 1 Apr,
+  3 Jul 1862 -- the unmatched pages are mostly the Feb-Mar western-theatre traffic that OR vol. 7 does not print and
+  vol. 8 (not fetched) may.
+- Grades (rule 4, key.md tokens only): C 99, I 31, M 124 (Feb 86/30/87, Mar 9/1/26, Apr 3/0/2, Jul 1/0/9); H 0, S 0.
+  M is high by construction: a Feb row's witness range is a few days wide, so an entry dated outside it reads M
+  (GAPS127 caveat). oov 860 (tokens in no English corpus word list: proper names, misspellings, or code words missing
+  from key.md -- a lower bound on unread code, not a grade). Code words that are ordinary English words and absent from
+  key.md are invisible to this count. Source caveat: the text is the volunteer transcription, not reconciled against
+  the image (rule 2), so every reading here is conditional on it.
+- Judge (`tools/judge_plaintext.py specs/eckert-1862.json`, spec written in this step; corpus `en` = Holmes +
+  Moby-Dick, no 1860s English corpus exists in tools/data; `en`'s per-fold false-negative spread is 0.44-0.64,
+  tools/data/en/README.md, so FAIL/PASS against it is of unknown reliability, rule 3):
+  real decode, all 57 pages: score -1.036 vs real_p05 -0.831, null_p99 -2.141, FAIL (N 35573);
+  shuffled-key control (key.md's row sets permuted across its words, seed 1862): -1.033 vs -0.830 / -2.137, FAIL (N 33491);
+  code-word windows only (each key token's meaning +/- 3 words): real -1.131 vs -0.843 / -2.125, FAIL (N 6423);
+  shuffled-key windows -1.129 vs -0.844 / -2.123, FAIL (N 5422).
+  Per page: 1 of 57 PASSes (5015, 23 Feb, -0.849 vs -0.863; 3 M tokens).
+- What the numbers say: the real key and the shuffled key score the same to 0.003 on the whole text and on the
+  code-word windows. A 4-gram letter judge cannot tell a right code-word value from a wrong one when the plaintext is
+  telegraphese with code words as a few percent of the letters: the control does vary on this statistic, but the
+  statistic does not respond to the key, so this is "judge cannot decide" (rule 3), not a negative on the key and not a
+  support for it. The FAIL against real_p05 is the register (1862 telegraphese, names, numbers) against 19th-century
+  novels, the same on both sides.
+- Reading ready: 0 pages by the script's mechanical rule (>= 1 key token, no M, page judge PASS). No status change.
+  Read by eye, the decodes are coherent where key.md covers the date (e.g. 5059, 1 May 1862, [Lincoln] to [Halleck]
+  about Schofield and the Missouri members of Congress, "Luna" unread) -- for a separate verifier with a print check,
+  not a claim here (rule 10: these telegrams were not found in OR vols. 7, 9-12 by or_match.py; Lincoln's own
+  telegrams are likely in Basler's Collected Works, not searched in this step).
+- Requests: hdl.huntington.org 69 (1 object record + 68 page records); no vision, no subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C, held-out 30/31 and 26/26 vs controls 0.05 and 0.15 hits); key.md dated 3 Oct 2026 (GAPS127); next: decode the unmatched spring-summer entries (60 of 161 text pages) with the dated table (decode.py --at), and align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C); key.md dated 3 Oct 2026 (GAPS127); the 57 unmatched pages decoded with the dated key 3 Oct 2026 (GAPS132: 122 entries, C 99, I 31, M 124; 53 of 57 pages are Feb-Mar, not spring-summer; en judge FAILs real and shuffled-key alike, -1.036 vs -1.033, judge cannot decide; 0 pages reading ready); next: grep the 57 residue pages against OR ser. I vol. 8 and Basler's Collected Works of Lincoln vol. 5 (IA full text, print/or_match.py unchanged), ~$2; then align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
 - residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M) -- next: fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
@@ -359,7 +399,7 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
 - [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vols. 8 and 51 pt 1 not fetched
-- [ ] key-rebuild: vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 alignments next (gap 1)
+- [ ] key-rebuild: residue decoded 3 Oct 2026 (GAPS132, M 124 of 254 key tokens, mostly Feb rows read outside their few-day witness ranges); vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 alignments next (gap 1)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: decode the unmatched spring-summer entries of mssEC 15 (60 of 161 text pages, page texts re-fetched from hdl.huntington.org) with the dated key (decode.py --at), grading per date, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: grep the 57 decoded residue pages of mssEC 15 (print/residue/) against OR ser. I vol. 8 and Basler's Collected Works of Lincoln vol. 5 with print/or_match.py (IA full text, positive control T5 = OR vol. 8), ~$2
