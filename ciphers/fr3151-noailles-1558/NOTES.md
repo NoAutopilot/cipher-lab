@@ -420,3 +420,79 @@ Venice posting (26 Sept check above). **Cipher Mysteries** (ciphermysteries.com)
 fifteenth-century cipher posts, none naming Noailles or 1558; none opened beyond the result list since no title or
 snippet touched the item. Result: no decipherment or plaintext of fr. 3151 no. 33 found in any open-web or blog comment
 thread searched on 2 Oct 2026 (a search result, rule 10, not a novelty class).
+
+## Premise check (GF4-BATCH5, 3 Oct 2026)
+
+The adversarial pre-reading pass (`.claude/briefs/check-solved.md` "## Premise check"). Its aim was to show this
+item is already read. No cryptanalysis or transcription was done. Result: **not found**. No decipherment, clear
+copy or printed plaintext of no. 33's cipher turned up, apart from the period marginal gloss the folder already
+records. Status unchanged (`open`).
+
+- **(a) Decipherments the folder already mentions: found, already known, not a full reading.** The only one is
+  the contemporary marginal gloss beside the three blocks. The 26 Sept and 2 Oct jobs above opened it on every
+  block and read it as partial: gutter-cut, about 0.4 letters per sign surviving. It gives no full plaintext.
+  Then the BnF finding-aid record for Français 3151 (ark:/12148/cc496140). Its search snippet calls the item
+  "lettre en chiffre", not "avec déchiffrement" (2 Oct; direct fetch 403). Bourdeau's `bnf_candidates.txt` line
+  quotes the same catalogue entry: "33 Lettre, avec chiffre, de F[rançois] de Noailles ... au cardinal de
+  Lorraine ... De Venise, ce XIIIe jour de novembre 1558". This is the catalogue's wording, and the catalogue
+  says "avec chiffre et déchiffrement" when a decipherment is bound with a letter (see fr. 4127 below). So the
+  BnF does not record a separate decipherment for no. 33.
+- **(b) Other solvers' working files: not found.** Fresh shallow clones on 3 Oct 2026: dbourdeau/cyphersolver
+  HEAD a4292cb (2 Oct) and aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept). I grepped every file in both,
+  case-insensitive, for "noailles", "3151", "français 3151" and "4127".
+  - Bourdeau `targets/guiche1551/`: files NOTES.md, guiche_ct.txt, reading_raw.txt, solve.py, solve1.py,
+    refine.py and profile.json. `reading_raw.txt` and the solvers are La Guiche's text only. NOTES.md §2 and
+    Remaining gaps still read "the cipher itself (about 150 signs) ... not attacked" and "known-keys: not done --
+    no French diplomatic key of the 1550s ... was tried on ... Noailles". Nothing in the repository renders
+    no. 33.
+  - Bourdeau's other "noailles" hits are unrelated: the gallica_sweep candidate lists and shelfmark JSON, a
+    Mondoucet key JSON, and the Napoleon sources.
+  - Aymeloglu: only false positives. A French lexicon word-list hit, and DECODE record id 4127 (a Riksarkivet
+    key, not fr. 4127).
+- **(c) Physical neighbours: not found.** Gallica btv1b9059865k, at 1000 px, fetched this pass:
+  - Canvas 61, left page f.59v: plain-hand text in the same secretary hand. No cipher, no interlinear, no
+    pasted slip. Facing page f.60r: the cipher blocks and gloss already recorded.
+  - Canvas 63: f.61v carries a later title "Lettre du prince d'Est au duc de Guise" over a bleed-through ghost
+    of f.62r. f.62r is an Italian letter from the prince d'Este, the next item. Neither leaf holds a decipherment
+    or clear copy of no. 33.
+  - Canvases 59, 60 and 62 were already surveyed on 26 Sept (survey/f59-f62). Canvas 62 holds f.60v, block 3
+    with gloss 3, and f.61r, the address panel. The 26 Sept survey found no slip on either.
+  - The f.60r/f.60v gutter is still the one unread place: the gloss starts are lost in the binding. That needs
+    physical access and is already logged.
+- **(d) Recipient side: no edition found; one sibling source located.** The recipient is the Cardinal de
+  Lorraine. Cuisiat 1998 holds his outgoing letters only (26 Sept). The IA full-text search (be-api, all items)
+  found no edition of letters received by Lorraine that prints this letter. Queries run: `"evesque d Acqs" Venise
+  1558`, `"Noailles" "Corfou" "Candie" 1558` and `"de Venise ce" "novembre 1558"`. Hits were de Thou, Charrière's
+  Levant volume, Jurien de La Gravière, and a Library and Archives Canada Noailles-collection catalogue
+  (baclac_1007364698_002, England embassy). None prints the 13 Nov letter. Three things came out of the search:
+  - The third query hit the **BnF Catalogue des manuscrits français, ancien fonds, tome III** (1881; IA
+    `p1cataloguegnr03bibluoft`, djvu text grepped whole). Its entry for **Français 4127** reads "Recueil de
+    lettres originales et de copies de lettres adressées au S' de La Vigne, de 1557 à 1559". That is 68 letters
+    from François de Noailles at Venice to La Vigne at Constantinople, dozens marked "Avec chiffre et
+    déchiffrement" or paired with a "Copie et déchiffrement de la lettre précédente". Nearest in date:
+    - no. 50, 7 Nov 1558, "avec chiffre et déchiffrement", fol. 137;
+    - no. 51, 15 Nov 1558, fol. 142;
+    - no. 53, 3 Dec 1558, chiffre et déchiffrement, fol. 147.
+    These are **not** this item; they are another correspondent's letters, and the key may differ. They are the
+    same sender in the same weeks, with period decipherments bound beside the ciphertext. That is a candidate
+    key source (a sibling pool), not a reading of no. 33.
+  - A Gallica SRU query for "Français 4127" (title/identifier) returned no record. That is a search result, not
+    proof the volume is undigitised. Its catalogue record's availability flag was not read this pass.
+  - The same catalogue lists a register of La Vigne's own outgoing letters, Henri II to Lorraine 1558. It is not
+    a decipherment of Noailles.
+
+**Next step this premise check names (not run, outside this brief).** Read the holding record of BnF fr. 4127
+and quote its availability flag. If it is digitised, test whether the Noailles-La Vigne decipherment pairs of
+Nov 1558 (nos. 50 and 53) share no. 33's symbol+numeral alphabet. Use a sign-inventory comparison, not a decode.
+If the alphabets match, a period key (`period`) exists for this item and the target moves to the recovery
+route. Estimated cost: about $3 for the catalogue read and one leaf survey.
+
+Hosts this pass: archive.org advancedsearch 3, be-api.us.archive.org 3, archive.org download 1 (catalogue djvu
+text), gallica.bnf.fr 3 (SRU 1, IIIF 2 at 1000 px), github.com 2 clones. All requests were at least 1.6 s apart,
+with no 403, 429 or challenge. Rule 10: this is a search log; it makes no novelty claim.
+
+`python3 tools/intake_gate_check.py fr3151-noailles-1558` (after this section):
+```
+fr3151-noailles-1558: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
