@@ -540,3 +540,15 @@ key negative: the f.35r statistics (rank 1/201, z 5.04) and the NV-03 f.38v posi
 attempt needs new material (a clear copy of no.32, or the owner reading the gloss) or a different instrument, never a
 third machine pass. No reading, key or grade on f.35r moves, so `decode_f35.py`, AUDIT.md (N4) and SO-NV02-F35 are
 unchanged.
+
+## A1B-FILS-XIIIJ2 pre-registration (account 1, 3 Oct 2026, written 17:59 UTC before the read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-xiiij2.md`. Same question as A1B-FILS-XIIIJ on a wider crop (x 1780-2090
+of images/f43_L02_s2.jpg, full height, lead-in stroke and the end of the preceding stroke visible); tools/iiif_lines.py
+needs numpy, which this container lacked at start, so PIL as the brief allows. Crop command (pasted):
+`python3 -c "from PIL import Image; Image.open('ciphers/fr3416-nevers-fils-1589/images/f43_L02_s2.jpg').crop((1780,0,2090,115)).resize((1240,460)).save('ciphers/fr3416-nevers-fils-1589/images/f43_L02_xiiij_wide.jpg')"`
+One blind subagent call, that crop only, question only "read the first glyph of this roman-numeral group", no candidates,
+no key. Rule unchanged from A1B-FILS-XIIIJ (G1/G2/G3 above, not loosened): G1 = x as single answer, no alternative named,
+confidence M or H -> token M -> H and xiiij = Seigneur -> H, rebuild + rule-10 propagation; G2 = x with any alternative or
+confidence L -> stays M; G3 = other glyph -> split, stays M. If not G1, the gap's blocker becomes illegible (two crops,
+two reads on the only image).
