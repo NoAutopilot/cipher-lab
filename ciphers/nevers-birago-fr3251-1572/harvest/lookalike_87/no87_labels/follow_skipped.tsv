@@ -1,0 +1,8 @@
+line	pos	label	why
+no90_f185r_L10	2	T50	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L10	22	T46	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L16.2	14	T50	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L18	1	T50	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L19	23	T46	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L20	22	T46	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)
+no90_f185r_L22	7	T46	crop not on disk (f185r2 crops gitignored; f185r2/REGEN.sh re-fetches, 1 Gallica request)

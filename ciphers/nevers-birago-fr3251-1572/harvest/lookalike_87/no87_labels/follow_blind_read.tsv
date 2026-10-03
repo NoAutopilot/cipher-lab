@@ -1,0 +1,20 @@
+panel	read	confidence	shape
+Q01	T50	H	ω with a hooked, S-like upper-right tail; between λ and the E-bar sign
+Q02	T50	H	ω with a tall S-tail on the right, before π
+Q03	T50	M	ω with S-tail after the blobbed b-sign; panel is cut by a dark edge
+Q04	OFF	L	italic text ("meg ς π"); no ω-like sign visible at the arrow
+Q05	T50	H	ω with a long S-tail, before π
+Q06	OFF	H	running italic text only; no sign
+Q07	T50	H	ω with an S-tail between # and π
+Q08	T50	H	ω with an S-tail between two plus signs
+Q09	T50	H	ω with a large S-tail after π
+Q10	T50	H	ω with an S-tail between the ж-sign and +
+Q11	T50	H	ω with an S-tail after ℓ, before π
+Q12	T50	H	ω with an S-tail after the E-bar sign, before π
+Q13	T50	H	ω with an S-tail after the E-bar sign
+Q14	T50	H	ω with an S-tail after g, before π
+Q15	T50	H	ω with an S-tail after θ, before π
+Q16	T50	M	ω with an S-tail after ℓ, before +
+Q17	T50	H	ω with an S-tail after the plus sign, before θ
+Q18	T50	H	ω with an S-tail before the E-bar sign
+Q19	T50	H	ω with an S-tail after D, before the dotted π
