@@ -1,0 +1,146 @@
+{
+ "source": "DECODE (de-crypt.org) record 1168, ImagesList 9 images; images 1-8 fetched full size 3 Oct 2026 00:43-00:44 UTC by A2-COS, one browser login (tools/decode_browser_login.js 1168 --guess-fullsize --max-files 16); image 9 (TH_IMG_R1168_I5872_P9.png) not fetched (cap reached).",
+ "note": "committed: s_*.jpg = full PNG downscaled to 1400 px long side, JPEG q80; c*.jpg = crops from the full PNG (box in source px).",
+ "files": [
+  {
+   "source_file": "IMG_R1168_I5864_P1.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5864_P1.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 9422782,
+   "sha1": "c3f2a2ead418f65c6b814d52a5aaa31768ce161a",
+   "committed_as": "s_IMG_R1168_I5864_P1.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5865_P2.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5865_P2.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 9945116,
+   "sha1": "2c533c17b30b65e09527179e75a27d0a90a0e16e",
+   "committed_as": "s_IMG_R1168_I5865_P2.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5866_P3.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5866_P3.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 9359181,
+   "sha1": "03586b751675037c958f594ff05ee096bb0d3e85",
+   "committed_as": "s_IMG_R1168_I5866_P3.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5867_P4.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5867_P4.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 8140306,
+   "sha1": "fb3356f4219cff65f285f8cb57bda4334706e0fb",
+   "committed_as": "s_IMG_R1168_I5867_P4.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5868_P5.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5868_P5.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 8979762,
+   "sha1": "77827a35b291e929af84c6401fe2ee210df85e0e",
+   "committed_as": "s_IMG_R1168_I5868_P5.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5869_P6.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5869_P6.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 9876098,
+   "sha1": "d02ef3e167b963ed8d6831be0c5114263f1805ce",
+   "committed_as": "s_IMG_R1168_I5869_P6.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5870_P7.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5870_P7.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 9267899,
+   "sha1": "9de0b520f2177431dfd1fac70ade377d663c0cd2",
+   "committed_as": "s_IMG_R1168_I5870_P7.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5871_P8.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5871_P8.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 7942681,
+   "sha1": "41499d25974f4821eac1445b7a6f2bd56762c7cd",
+   "committed_as": "s_IMG_R1168_I5871_P8.jpg"
+  }
+ ],
+ "crops": [
+  {
+   "file": "c1top.jpg",
+   "from": "IMG_R1168_I5864_P1.png",
+   "box": [
+    250,
+    500,
+    2400,
+    1500
+   ]
+  },
+  {
+   "file": "c3bot.jpg",
+   "from": "IMG_R1168_I5866_P3.png",
+   "box": [
+    300,
+    2900,
+    2592,
+    3700
+   ]
+  },
+  {
+   "file": "c5top.jpg",
+   "from": "IMG_R1168_I5868_P5.png",
+   "box": [
+    300,
+    500,
+    2400,
+    1500
+   ]
+  },
+  {
+   "file": "c7mid.jpg",
+   "from": "IMG_R1168_I5870_P7.png",
+   "box": [
+    150,
+    1400,
+    2592,
+    2350
+   ]
+  },
+  {
+   "file": "c8top.jpg",
+   "from": "IMG_R1168_I5871_P8.png",
+   "box": [
+    150,
+    700,
+    2500,
+    2050
+   ]
+  }
+ ]
+}
