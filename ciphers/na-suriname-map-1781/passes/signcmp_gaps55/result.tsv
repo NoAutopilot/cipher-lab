@@ -1,0 +1,12 @@
+tile	id	what	class	main_sign_shape	mark_above	mark_conf	notes
+T1	b	left N first sign (2x)	query	large y, straight heavy descender, no curl	dots:2	0.85	third dot beside at mid-height
+T2	u2	2077 L08:3 [u-dots] (2x)	control-dots	small y, descender curls into loop	dots:2	0.85	control OK
+T3	u1	2077 L15:0 [u-dots] (2x)	control-dots	small y, descender hooks left	dots:2	0.85	control OK
+T4	f	left K b	control-none	6 / b shape	stroke_from_line_above	0.7	counts as none: control OK
+T5	d	right N middle sign	query	4 / y shape	stroke_from_line_above	0.7	no dots
+T6	c	right M sign	query	y, long thin descender curving left	stroke_from_line_above	0.65	no dots
+T7	g	right O k	control-none	h / k shape	none	0.75	control OK
+T8	a	left M first sign (2x)	query	y, crescent left stroke, curled descender	dots:2	0.8	loop at top from line above
+# groups (reader): T2=T3; T1 and T8 "possibly the same sign, uncertain" (descenders differ); T6 ~ T8 body without dots; T5 ~ T1 body, low conf; T4, T7 distinct.
+# gate: u1, u2 dots:2 at 0.85 (>=0.6) and f, g none -> PASS.
+# left page: M dotted 0.8, N dotted 0.85, not grouped as the same sign -> not C. right page: neither dotted. Pages disagree -> outcome D: no value change.
