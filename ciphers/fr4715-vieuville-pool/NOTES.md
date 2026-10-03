@@ -969,7 +969,7 @@ held.** f.51r's only reading of a dotted 49 is pass B's "Roy" at L, which contra
 `tools/decode_key.py ciphers/fr4715-vieuville-pool --check` exits 0.
 Rule 10: nothing here is called new or first. This records what was found and where it was not found.
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7, -8 and -9, 2 Oct 2026, and -10, -11, -12 and -13, 3 Oct 2026)
+### Remaining gaps, superseded by CABNOIR 3 Oct 2026 below (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7, -8 and -9, 2 Oct 2026, and -10, -11, -12 and -13, 3 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
 - the 8-glyph rule on no.37 (43 L06-L14 tokens at I, 23 at S since GAPS-7) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; 2 Oct 2026 (GAPS-7): the key-side word-cover test ran (scripts/eight_cover_test.py): 8x wins 23/66 sites vs 9x 6, 6x 1, 0x/3x 0, 36 ties; control 20 seeds mean 0.105 max 0.167 vs target 0.348 (rank 1 of 21); known answer: true 8 wins 17/46 (0.370), 8x on settled non-8 sites 0.061; 23 sites I -> S, 43 stay I (36 ties, 7 won by 9x/6x); what remains for the 43 is new material (the same letter run elsewhere, or a sibling leaf in the same hand), not a further pass at these glyphs
@@ -978,7 +978,7 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; 2 Oct 2026 (GAPS-9): L-word pass, two blind Opus readers on 123 masked slots + 1 reconciliation: 42 L -> H, 14 replaced at M, frame H 325/M 86/L 221 -> H 367/M 100/L 165, slot agreement 41/123; 165 L words remain (mostly L20-L32 and the slots the readers split); a further model pass at the same crops is not the next instrument; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
 - Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026, GAPS-9: edition-read in the desk browser, the footnote citing 12 décembre 1589 copied word for word, and whether she quotes the text); the cloud cannot open the page (books.google.com page view bot-blocked)
 
-## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
+### Escalation, superseded by CABNOIR 3 Oct 2026 below (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
 - [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21 f.44r imaged and its glosses read 3 Oct 2026 (GAPS-10: 8 sites, the leaf ties its control, nothing keyed, 0 of no.44's 7 unglossed occurrences); no.39 f.62r imaged and read 3 Oct 2026 (GAPS-11: clears its control, .13/.14/.52 keyed, 1 of 7); no.35 f.58r seen at 1000 px only; no.27 f.50r imaged and read 3 Oct 2026 (GAPS-12: ties its control, nothing keyed, .49 = Champagne held); no.60 f.83r seen at 1000 px only (symbol alphabet, no glosses); no.28 f.51r imaged and read 3 Oct 2026 (GAPS-13: clears its span control narrowly, 22 Soissons C / 44 Roy M keyed, 0 of no.44's 5, f.50r re-run unchanged)
 - [x] clear-pages: no.44 is 95 pct clear French (two Sonnet passes + one Fable pass); no.37's 16 clear lines transcribed by one Opus pass at 5 M / 11 L after two Sonnet passes failed at 2x
 - [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py on both leaves (--check exit 0); key_wordcodes_f60r.tsv built from the period glosses
@@ -987,3 +987,91 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
 Verdict: keep going: 5 internal gaps; cheapest next: no.35 f.58r imaged native and its glosses read (crops via tools/iiif_lines.py, 2 blind passes + 1 reconciliation, then the per-leaf control and the f.50r/f.51r controls re-run with any shared codes), ~$10, box 75 min (GAPS-13, 3 Oct 2026: f.51r read, 0 of no.44's 5 unglossed occurrences, f.50r still held) (Boltanski filed as LOCAL-QUEUE L37, waiting on the desk)
+
+## Premise check (CABNOIR, 3 Oct 2026)
+
+Source: Descifrado, *Cabinet Noir* v1.0, github.com/el-descifrador/cabinet-noir (shallow clone, HEAD 47b6db9a, committed
+2 Oct 2026 14:15 UTC; release 29 Sept 2026, Zenodo 10.5281/zenodo.23039566, CC BY 4.0, quoted here with credit), folder
+`montholon-1589/` (README.md, `cle/montholon1589_complements.tsv`, one `chiffre.txt` + `lecture.md` per leaf), read
+3 Oct 2026 by CABNOIR (account-4). Found by GF4-BATCH9 (ROOM 02:46 UTC 3 Oct). Grep of the whole clone for 4715, 3414
+and 3995: hits only in `montholon-1589/`, `feria-1593-1594/` (fr.3995 f.96v-97r, the 1592 Spanish syllabary, Nevers
+cipher no.54; not this pool) and `es132-vargas-mexia/README.md`.
+
+What Cabinet Noir publishes for this cipher: seven readings ("results" no.4, 5, 9, 10, 11, 12, 13), each "confirmée
+avec réserves" by their own independent verifier. They cover fr.3414 p.78 (ff.127, 126) and fr.4715 no.27, 35, 37, 47, 48
+and 58. They state that their key is Tomokiyo's published Vieuville-Nevers table plus their own complements (about 1-3
+pct of the text). For no.35 the key is the period key **Nevers no.71, BnF fr.3995 f.133r** (Gallica btv1b525085665,
+view 256). They say they identified it as Montholon's key on 29 Sept 2026: 64 of their 69 sure values are identical in
+it, and a period pair confirms it (BnF fr.4712 f.7r, 6 Mar 1589, with an interlinear decipherment: 18 word-codes and 2
+names). They took down the key in full but **do not reproduce it** ("consulter l'original sur Gallica"). README line 52
+reads: "Le même manuscrit fr 4715 contient d'autres lettres de Montholon au même chiffre (n°21, 28, 39, 44, 54, 55,
+60-63) : lectures partielles non confirmées ou non faites, non publiées ici." Their complements table cites a few words
+from nos. 28, 39, 54 and 55 as evidence ("ce sont des indices, pas des résultats").
+
+### Per-leaf table (the pool's 8 leaves)
+
+| Leaf | Our state before this check | Cabinet Noir | Their key source | Their stated reservations | Consequence here |
+|---|---|---|---|---|---|
+| no.21 f.44r (Jerome de Montholon, 21 Oct 1589) | glosses read (GAPS-10); the leaf ties its control; nothing keyed | **not published** (listed among the "non publiées" letters) | -- | -- | not covered; stays ours |
+| no.27 f.50r (Tours, 30 Oct 1589) | glosses read (GAPS-12); ties its control; .49 = Champagne held | **read, L04-L22** (1,096 groups; result no.13); L01-L03 read by Tomokiyo | Tomokiyo's published key + their complements | verifier: 91.0 pct at sentence level / 88.2 pct strict; blind re-read of 341 groups agrees 98.8 pct; L13-L14 not understood (also L07, L10, L11 proposals); ''84 = légat rests on internal evidence only; L22's clear text and its glosses ("Pavia, Cabude?, Lancastre?, Champagne?, Nevers") not transcribed | **covered**: any reading of ours is N0-type; no further native read |
+| no.28 f.51r | glosses read (GAPS-13); clears its span control narrowly; 22 Soissons C / 44 Roy M keyed | **not published**; cited as evidence only ("indices") | -- | -- | not covered |
+| no.35 f.58r (Tours, 26 Nov 1589) | seen at 1000 px only; queued for a native read (~$10) | **read in full**, 900 groups (result no.11) | **period key Nevers no.71, fr.3995 f.133r**; Tomokiyo's table for the alphabet | 82.2 pct per group (740/900) / **76.4 pct per word** (198/259), under 80 pct; the 2.2-point margin rests on passage R2 (26 groups settled by sense; with R2 refused, 79.3 pct); severe count 77.2 pct; the clear text was read at only 35-40 pct | **covered**: the queued native read is retired |
+| no.37 f.60r (Tours, 12 Dec 1589) | 16 clear lines transcribed; both dense blocks letter-decoded (604 + 308 letters); 177 word-codes U; 5 glossed codes | **read**, about 1,230 groups (result no.9) | Tomokiyo + their complements | about 86 pct (block 1 about 88, block 2 about 85); blind re-read of about 205 groups agrees about 96 pct; '12, '81, '92, '17 open or HYP; groups omitted at pass 11 in L.g/L.h; L.a weak | **covered**: our block decodes are N0-type; the open word-code and 8-glyph gaps on this leaf close as moot |
+| no.39 f.62r | glosses read (GAPS-11); clears its control; .13/.14/.52 keyed | **not published**; fragments cited as evidence (L13 "a Fontenay" = period gloss; L17 period gloss "Navarre" over a barred 13; L19-L20 "'93 de Beaulieu", "du seau") | -- | "indices, pas des résultats" | not covered; those few words are already in print (N1-type for those words only) |
+| no.44 f.67r (Tours, 15 Apr 1590) | the pool's working leaf: 8 of 27 groups H; 7 of 14 word-code slots at M | **not published**; one clear-text fragment cited ("discouru 6 7", for name 6 = "Monsieur le?", HYP) | -- | -- | not covered |
+| no.60 f.83r | seen at 1000 px: a symbol alphabet, no glosses (GAPS-12) | **not published**; their notes say Tomokiyo applied the key to his "no.60" (= f.83) and read its beginning, and they quote it ("dans deux '84", "'93 de Sainct Germain") | Tomokiyo | -- | not covered; **data conflict**: a digit-code passage in Tomokiyo's no.60 vs our 1000 px look at f.83r as a symbol alphabet (POOL.md already flags the no.60 DUMP). An image check settles it; no reading here |
+
+Out of the pool but in the same release: no.47 f.70r (result no.12, about 88 pct of the unglossed parts), no.48 f.71r
+(result no.10, about 75 pct, "lecture partielle"), no.58 f.81r L18-L40 (result no.5; `ciphers/fr4715-montholon-1589`,
+found-solved by GF4-BATCH9) and fr.3414 p.78 ff.126-127 (result no.4).
+
+**Coverage.** 3 of the pool's 8 leaves (no.27, no.35, no.37) are read in public. Of the leaves we had read in any part,
+no.37 is the only one with decoded cipher text, and it is covered. The other 5 (no.21, 28, 39, 44, 60) are not read
+there, so not all the pool's unread leaves are covered. The status stays **partial**, with the 3 covered leaves marked.
+found-solved would need published decipherments of every item in the pool.
+
+### Our values against theirs (rule 4: data, not settled by majority)
+
+| Code (mark) | Ours (grade, leaf) | Cabinet Noir (status, witness) | Result |
+|---|---|---|---|
+| 7 (barred) | Roy (C, f.60r L23) | ~7 = le Roy (published glosses; key no.71 ~6/7/8 = Roy) | agree |
+| 71 (barred) | montolon (C, f.60r L01) | ~71 = Montholon, SÛR-G (no.37 header gloss; fr.3414 v263) | agree |
+| 93 (two dots over the 9) | Mr (C, f.60r L01) | '93 = monsieur, SÛR; their reading of key no.71 is ''93 = Monsieur with two points, '93 = "quil" with one | agree on the value; our two-dot observation matches the key's two-point form |
+| 13 (barred) | Narre (M, f.62r L18) | ~13 = Henri de Navarre, SÛR-G (no.39 L17 period gloss "Navarre"; ≥ 6 contexts in no.37); key no.71 reads ~13 "Royne de nauarre", which they reject on usage | agree (the same gloss; their line count is one lower) |
+| 14 (barred) | Card de bourbon (C, f.62r L14) | ~14 = cardinal de Bourbon, SÛR-G (fr.3414 glosses "Cal de Bourbon", "Cal") | agree |
+| 27 (barred) | nauarre? (M, f.60r L01, L20); Neuers (M, f.44r, two sites) | ~27 = Nevers, SÛR-G (the **same** no.37 header gloss, plus fr.3414 v263 L16-17 and no.54) | **conflict** with our f.60r reading of that gloss; their value agrees with our f.44r reading. Logged in HYPOTHESES.md; not merged |
+| 99 | bours (M, f.60r L21/L24, read as a person) | '99 = vous (dotted; Tomokiyo; fr.4712 period gloss) | conflict unless the mark differs; held, not merged |
+| 52 (two strokes) | Normandie (M, f.62r L23-24) | '52 = si (one dot; fr.4712 gloss). Their description of key no.71: "villes et provinces à deux points" | no conflict on the layer: a two-mark 52 sits in the place layer they describe but do not list; unconfirmed |
+| 49 (two dots) | Champagne (lead held, f.50r; f.51r pass B "Roy", L) | '49 = sa, SÛR (one dot); their no.27 transcription has ''49? at L21 and a clear-text gloss "Champagne?" at L22, not transcribed | partial support for a Champagne gloss on f.50r; their lecture gives no ''49 value. Stays held |
+| 22 (barred, bar seen by A only) | Soissons (C, f.51r) | '22 = je (dotted; Tomokiyo; fr.4712 gloss); no ~22 | consistent only if the bar is real; unchanged |
+| 44 (barred) | Roy (M, f.51r) | no ~44; Roy = ~6/7/8 in key no.71 | unconfirmed (as already logged vs 7 = Roy) |
+| 16 (dotted) | du/dn (M, f.60r L20) | 16 = de (SÛR-G) | compatible |
+| 50 23 30 (letters) | legat (M span, f.60r L20; f.51r) | "legat" spelled in letters (50 23 30 25 95) | agree |
+
+Our five unglossed no.44 slots (.03 x2, .07, .57, .6) and .49 are not given values in the release, apart from what
+Tomokiyo publishes. Their README says the dotted series starts "57 avec", which would read .57 as avec. That comes from
+Tomokiyo's published code list, which our `key_vieuville_nevers.tsv` does not carry: it holds 35 letter rows only, while
+Cabinet Noir counts "25 valeurs de lettres et 27 codes pointés" in his table. This is a lead, not a value: it was not
+checked against Tomokiyo's page in this job, and nothing was added to any key. Key no.71 on Gallica is the
+instrument that would give these codes period values.
+
+Rule 10: nothing here is called new or first. A leaf whose plaintext Cabinet Noir publishes is N0-type for any later
+reading of ours. Nothing was decoded in this job.
+
+## Remaining gaps (CABNOIR, 3 Oct 2026; replaces the LIKELY-1 ... GAPS-13 list above, which stays as history)
+Read so far: no.44 8 of 27 cipher groups at H and 7 of 14 word-code occurrences at M (.7 x4, .71, .27, .25), plus .13 = Narre at M from f.62r; no.37 (604 + 308 letters decoded) is now covered by Cabinet Noir result no.9, so it is not counted as an open piece; 3 of 8 pool leaves covered in public (no.27, 35, 37)
+- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13); Cabinet Noir names the period key Nevers no.71 (BnF fr.3995 f.133r, Gallica btv1b525085665 view 256), which carries dotted codes and two-point places but is not reproduced in their release; next: fetch view 256 once via tools/iiif_lines.py, two blind passes over its code columns + 1 reconciliation, test it on our C-graded glossed codes (.7, .71, .93, .14, legat span) as the known answer with a shuffled-label control, and only then read .03/.07/.49/.57/.6 from it, ~$6
+Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, the four L glosses, the no.35 native read). These leaves are read in public as Cabinet Noir results no.13, no.11 and no.9, so a reading of ours would be N0-type. No native read or decode job is run on them, and the queued no.35 f.58r step (~$10) is retired.
+- no.60 f.83r: Tomokiyo's "no.60" digit-code passages vs our 1000 px view of f.83r as a symbol alphabet - blocker: not-attempted; a data conflict, not a reading; next: one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2
+- the clear-French frame of no.44 (165 L words) - blocker: not-attempted; unchanged from GAPS-9; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
+- Boltanski 2006 (cites the 12 Dec 1589 letter, no.37) - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026); no.37 is now covered by Cabinet Noir, so the row matters only for the print check, not for any reading
+
+## Escalation (CABNOIR, 3 Oct 2026)
+- [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 and no.60 seen at 1000 px; Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
+- [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
+- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r), named by Cabinet Noir, is not yet read here; planned: the view-256 read behind its known-answer control (gap 1)
+- [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
+- [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
+- [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
+- [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
+Verdict: keep going: 3 internal gaps; cheapest next: the fr.3995 f.133r key no.71 read (view 256) behind a known-answer control on our C-graded codes, then no.44's six open slots from it, ~$6

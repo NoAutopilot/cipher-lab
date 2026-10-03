@@ -23,3 +23,9 @@ Not resolved by majority (rule 4): both period glosses are M, the leaves have di
 - 44 = Roy (f.51r, M) vs 7 = Roy (f.60r, C): two codes for one gloss; a nomenclator may give the king two codes, or one gloss is misplaced. Not merged.
 - 34 glossed twice on f.51r with two different words (Amyens S04, Libourn S05): a within-leaf conflict (the f50r_gloss_control.py within-leaf statistic 1/2, a tie with its shuffle p95 0.500). 34 not keyed.
 - dotted 49: f.50r Champagne (two dots, gloss H both passes, leaf did not clear) vs f.51r Roy (pass B only, L, gloss placed between 'agui' and 49). Neither is keyed; no.44 .49 stays I.
+
+## CABNOIR (3 Oct 2026, account-4): barred 27 -- a third witness, Cabinet Noir
+- Descifrado, *Cabinet Noir* v1.0 (github.com/el-descifrador/cabinet-noir, `montholon-1589/cle/montholon1589_complements.tsv`, CC BY 4.0) gives ~27 = Nevers, SÛR-G. Their witnesses are the no.37 f.60r header gloss (the **same** L01 gloss we read "nauarre?" at M), fr.3414 p.78 v263 L16-17 and no.54.
+- This agrees with our f.44r reading (Neuers, M, two sites). It conflicts with our f.60r reading of the same gloss.
+- Not resolved by majority (rule 4). Their reading of the same ink is an outside witness, so our f.60r reading is the one to re-check. The next eye on the f.60r L01/L20 crops settles it, and key no.71 (fr.3995 f.133r) gives a period value for barred 27. Until then, .27 on no.44 stays M with both candidates.
+- Also logged as data, not merged: 99 (ours "bours" M, read as a person; theirs '99 = vous, dotted). 52 with two strokes (ours Normandie M; theirs '52 = si with one dot; their key no.71 description puts places in a two-point layer, so this is compatible). 49 with two dots (ours: Champagne held; their no.27 transcription has ''49? at L21 and a clear gloss "Champagne?" at L22, with no value given).
