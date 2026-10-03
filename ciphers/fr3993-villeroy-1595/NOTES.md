@@ -272,8 +272,51 @@ Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read in the cipher). Requests: ga
 2 native regions, 1 info.json, 1 from iiif_lines), about 1.6 s apart, no block. Vision calls 4 (one over the planned 3:
 the first rotation of f.149v was upside down). Rule 10: no novelty claim; search and view results only.
 
-Verdict after this pass: `open`. Next steps, cheapest first: (a) fr.3995 nos.39, 40, 43 and 58 headings viewed for the
-figure+symbol family (one contact sheet, ~$3), scored only if coverage >= 0.5 with a value-shuffled control; (b) Nevers's
+Verdict after this pass: `open`. Next steps, cheapest first: (a) [done, VILL-KEYS below] fr.3995 nos.39, 40, 43 and 58
+viewed for the figure+symbol family; (b) Nevers's
 letters to Henri IV of 23 and 25 July and 3-31 Aug 1595 located in fr.3992-3994 (finding aid, disk/one host, ~$2) and
 checked for the same cipher, to pool signs; (c) the as-sent packet on Villeroy's side (Villeroy papers). All depend on
 nobody.
+
+## fr.3995 nos.39, 40, 43, 58 for the figure+symbol family (VILL-KEYS, 3 Oct 2026)
+
+Pre-registered before any image was viewed: `fr3995/PREREG-VILL-KEYS.md` (commit 76fb0713): a table is family-bearing
+only if it shows figure codes AND at least 3 of lambda, pi, theta, Delta, varpi, infinity as cipher values; score
+(judge + 200 value-shuffled keys, rank and z) only for a family-bearing table at coverage >= 0.5.
+
+Canvases (`tools/gallica_folio.py btv1b525085665`): f.72r f143, f.72v f144, f.74r f147, f.80r f158, f.104r f202, all from
+the manifest's own labels. Crops (iiif_lines.py, regions native, then 2 contact sheets, 2 vision calls):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas {143,147,158,202} --region 0,0,4000,3000 --out <scratch> \
+        --prefix c<N> --lines-per-crop 200 --max-width 2400 --debug           # -> images/fr3995/vk_sheet1_f143_147_158_202_top.jpg
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas N --region R --out <scratch> --lines-per-crop 200 --max-width 2400
+        # 143 1000,3000,3000,3000; 144 0,1200,4100,3000; 147 1300,2600,2700,3000; 158 1800,2600,2200,3000;
+        # 202 1700,0,2400,3000; 202 1700,3000,2400,3000                      -> images/fr3995/vk_sheet2_bodies.jpg
+
+What the sheets show (all at about 0.37x native, every observation M):
+- **f.72 (no.39)**: a small slip mounted low on the guard; f.72r shows "1591" and a vertical endorsement on the left edge
+  (an "extraict"/"coppie" docket, not read), f.72v a vertical endorsement beginning "Chiffre ...". No table in either
+  region viewed. The 1591 "symbols and figures" table Tomokiyo describes was not seen here.
+- **f.74r (no.40)**: heading "Doncheri 1591 20 Aoust", "Chiffre". A letter strip across the top with one- and two-figure
+  codes under the letters, then a two-column nomenclator of names with two- and three-figure numbers. No lambda/pi/theta/
+  Delta/varpi/infinity identifiable at this resolution. Donchery is the place of the "extraict de nouvelles venues de
+  Doncheri" in the target's own f.149v docket.
+- **f.80r (no.43)**: heading "... 22 Novem 1591", "Chiffre"; the rest of the slip in the region viewed is blank (table
+  presumably on the verso, f.80v, canvas f159, not viewed).
+- **f.104r (no.58)**: heading "...tangi 1593 23 Juillet", "Chiffre". A letter strip at top with figure codes (11, 12, 13
+  ... legible) and one or two non-figure signs (an x-like and a Delta-like mark under the right-hand columns, M), then a
+  nomenclator of persons (Montpensier, Rosny, Baron de ..., D. de Parme ...) with two-figure numbers about 60-99.
+
+**Result: no table is family-bearing by the pre-registered rule 1** (none shows 3 of the 6 family signs), so no score was
+run and no control was needed: **not testable** for these four tables, not a negative. Caveat: the resolution cannot
+exclude small symbols in the f.74r and f.104r letter strips. Those two are figure tables; under rule 2 alone their figures
+would cover 445/753 = 0.591 of the target, so a figure-only test is possible, but only after their letter strips are read.
+
+Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read in the cipher). Requests: gallica.bnf.fr 10 region fetches + 1
+cached manifest read, about 2 s apart, no block. Vision calls 2 (as planned). Rule 10: no novelty claim.
+
+Verdict after VILL-KEYS: `open`. Next steps, cheapest first: (a) native read of the f.74r (Doncheri, 20 Aug 1591) and
+f.104r (23 Jul 1593) letter strips, two crops each (~$3), checking for the family signs at native resolution and, if
+coverage >= 0.5 holds, scoring them under PREREG-VILL-KEYS rule 3 with the value-shuffled control; (b) f.80v (canvas f159)
+viewed for no.43's table (~$1.5); (c) Nevers's letters to Henri IV of 23 and 25 July and 3-31 Aug 1595 located in
+fr.3992-3994 and checked for the same cipher, to pool signs; (d) the as-sent packet on Villeroy's side. All depend on nobody.
