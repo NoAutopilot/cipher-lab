@@ -1,0 +1,21 @@
+r1033_cipher_groups	5359
+r1033_range	1-999
+r1033_groups_over_999	0
+r1033_mark_counts	^:1227 ":1122 ::906 ~:751 +:700 (none):561 =:92
+r1033_share_unmarked	0.105
+r1033_pairs_annotated	5358
+r1033_distinct_value_mark	1766
+r1033_distinct_numbers	872
+r1941_groups	304
+r1941_range	15-1339
+r1941_groups_over_999	36
+r1941_distinct	216
+coverage_target	0.757
+coverage_control_mean	0.648
+coverage_control_p95	0.694
+coverage_control_ge_target	0/1000
+coverage_target_le999	0.858
+coverage_control_le999_mean	0.871
+coverage_control_le999_p95	0.903
+coverage_control_le999_ge_target	771/1000
+decode_first_60_under_r1033	874=schrijven-en 729=aux* 821=rec 776=onregt* 826=reeds 752=regel-en 1155=? 956=ou* 729=aux* 572=sen 58=de|ac* 608=meest|gewis* 769=voort* 899=dagelijks* 952=mijn* 860=rij 1073=? 493=? 339=vers* 602=brief|Pruissen* 441=binnen|maal* 373=erf* 713=hoe|Begin des Briefs* 996=steld 1148=? 297=erger|zen* 847=Begin des briefs|vooruit* 459=NULL|Weenen* 395=moeten* 1170=? 517=maak|eli* 255=prijs 1126=? 726=? 424=met|ne* 262=questie 371=zelf* 795=hoog* 972=iets* 977=? 399=verdenken* 478=? 353=gg* 1015=? 727=? 515=de Fransche|elders* 885=de 269=dit 709=NULL* 517=maak|eli* 954=eene|va* 511=ri|eerst* 322=kunnen|NULL* 325=Begin des Briefs 318=? 759=gevoelen|volmaakt* 525=uitgaave-en|mar* 893=s|tot* 212=NULL|ement* 249=?

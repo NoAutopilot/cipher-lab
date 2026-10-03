@@ -597,18 +597,60 @@ Clock read 08:25-08:32 UTC, 3 Oct 2026. Status word unchanged.
   2 (IIIF 1000 px, inv. 20 and 88 scan 25), 1.6 s apart, no 4xx/5xx; de-crypt.org 0. Vision 2. Subagents 0. Grade
   counts H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54, GAPS58 and GAPS61, 3 Oct 2026)
+## GAPS63-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): DECODE R1033 compared with R1941
+
+Step: the Verdict's cheapest step (one DECODE login, view R1033). Clock 08:44-08:50 UTC, 3 Oct 2026. Status word unchanged.
+Route: one real-browser login (`tools/decode_browser_login.js 1033 <scratchpad> --max-files 0 --delay 1700 --listen`,
+`loggedIn: true`); Chromium's NSS store first needed the proxy CA (`apt-get install -y libnss3-tools`; then
+`certutil -d sql:$HOME/.pki/nssdb -A ...` alone -- `certutil -N --empty-password` spins at 100% CPU and never returns,
+which is the hang GAPS61 hit; kill it, the database files are already written, and `-A` succeeds).
+- **R1033's record** (RecordsView/1033): Six van Oterleek, St Petersburg, to W.F. Roell, 1808-1810; Cipher, Decrypted,
+  "Nomenclatures", symbol sets "Graphic signs, Numerical"; 37 images, **4 documents**: a 2020 transcription of the
+  drafts (transcriber "XZ", 5 July 2020, 873 lines), and three files uploaded 9 Jan 2026 -- "Transcription of coded
+  messages", "Decoded messages", "Annotated decoded messages" (35 messages, word[group+mark] per token). The documents
+  are account-gated on DECODE and are not committed here; sha1 of each, and the script, in `gaps63/`.
+- **Design comparison** (`gaps63/compare_r1033.py <dir>` -> `gaps63/compare.tsv`):
+  | | R1033 (Six van Oterleek 1808-10) | R1941 (No 4 + No 6, GAPS36 image reading) |
+  |---|---|---|
+  | groups | 5,359 cipher groups, 5,358 annotated pairs | 304 |
+  | range | 1-999, none over 999 | 15-1339, 36 groups over 999 |
+  | length | 1-3 digits | 2-4 digits |
+  | marks | 89.5% marked: ^ 1227, " 1122, : 906, ~ 751, + 700, = 92; unmarked 561 | none (a dash after some groups, a colon twice) |
+  | code values | 872 numbers, 1,766 number+mark values (the mark selects the meaning: 885 = de, 885^ = in) | 216 distinct |
+  | decryption | yes: Dutch plaintext, syllable- and word-level (nulls tagged) | none |
+  R1033 is the same code+mark family as the Croiset 1803 book (R1035) Bourdeau ruled out: three-digit numbers to 999
+  with a mark that selects the value. R1941 has no marks and runs past 999. **Different design.**
+- **Overlap test, with a control that can differ** (coverage depends on which numbers occur, which a random draw changes;
+  order shuffling would not -- rule 3): share of No 4/No 6 groups whose number is an attested R1033 code value, mark
+  ignored. Full range: target 0.757 vs same-range random sets (uniform 15-1339, N 304, 1000 draws, seed 63) mean 0.648,
+  p95 0.694, 0/1000 at or above target -- **but that excess is the range alone** (R1033 has nothing over 999; 12% of the
+  target's groups are over 999 against 26% of a uniform draw). Restricted to groups <= 999 (N 268) against uniform
+  15-999 draws: target **0.858** vs control mean **0.871**, p95 0.903, 771/1000 at or above target. **No overlap beyond
+  chance.** Applying R1033's values (unmarked value where one exists, else the two commonest) to No 4 reads
+  "schrijven-en aux rec onregt reeds regel-en ? ou aux sen de|ac meest|gewis ..." -- no Dutch or French run.
+- Grades: no reading, H 0, C 0, S 0, M 0, I 0. Not found: any R1033 code value carried into R1941; any key, decipherment
+  or Van Spaen mention in R1033's record or documents (grep of the four documents for Spaen, Dusseldorf/Düsseldorf,
+  Berg, Goes: none -- the record is Six van Oterleek's St Petersburg traffic only).
+- Credit: D. Bourdeau (cyphersolver) for the R1941 transcription and for ruling out R1035; R1033's transcription
+  (DECODE, 2020, "XZ") and decryption documents (DECODE, uploaded 9 Jan 2026) are the DECODE contributors' work.
+- One-line suggestion (Usage 7, not done here): R1033's 1,766 decoded number+mark values are a decrypted same-ministry
+  1808-10 code+mark nomenclator; `ciphers/roell-vandedem-1809` (legatie Turkije 1809, R1469/R1470) cites inv. 226 as a
+  sibling and could compare its own group design against them.
+- Requests: de-crypt.org 7 (login page + login submit + RecordsView/1033 + 4 documents), 1.7 s apart, no 4xx/5xx;
+  example.com 1 (browser TLS test). Vision 0. Subagents 0.
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54, GAPS58, GAPS61 and GAPS63, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet in any of the 360 scans of inv. 281 (GAPS41: none in 1-74; GAPS58, 3 Oct 2026: none in the last 139)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99, nor anywhere in inv. 281 (all 360 viewed, GAPS58)
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; NA catalogue pass run 3 Oct 2026 (GAPS61): no key or cipher unit in 2.01.08, 3.20.16 or 3.20.17, none in the DECODE key listing; candidates found: DECODE R1033 (decrypted 1808-10 code "op basis van het cijfer van Van Hogendorp", NA 1.02.13 inv. 226, not digitised) and the ministry's own registers 2.01.08 inv. 20 (incoming verbaal 1808, 600 scans) and inv. 88 (outgoing minutes Jan-Mar 1808, 714 scans), both digitised; next: one DECODE login to view R1033's record and images and compare its group range and marks with R1941's (15-1339, unmarked), ~$2; then the inv. 20 entries for exh. 14 and 18 Jan 1808 and the inv. 88 reply, ~$5
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; NA catalogue pass run 3 Oct 2026 (GAPS61): no key or cipher unit in 2.01.08, 3.20.16 or 3.20.17, none in the DECODE key listing; candidates found: DECODE R1033 (decrypted 1808-10 code "op basis van het cijfer van Van Hogendorp", NA 1.02.13 inv. 226, not digitised) and the ministry's own registers 2.01.08 inv. 20 (incoming verbaal 1808, 600 scans) and inv. 88 (outgoing minutes Jan-Mar 1808, 714 scans), both digitised; R1033 compared 3 Oct 2026 (GAPS63): different design (code+mark, 1-999, 89.5% marked, 1,766 decoded values; R1941 unmarked 15-1339), group overlap at chance (<=999: 0.858 vs same-range random 0.871, 771/1000 >= target), not R1941's key; next: the inv. 20 entries for exh. 14 and 18 Jan 1808 and the inv. 88 reply, ~$5
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74; GAPS58 (3 Oct 2026) viewed the last 139 scans: no No 1/No 5, no figure page, inv. 281 complete
 - [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
-- [ ] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026); GAPS61 (3 Oct 2026): the cipher record R1033 (decrypted, 1808-10, code based on Van Hogendorp's cipher) was not in Bourdeau's key-record set -- next: view it, one DECODE login, ~$2
+- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026); GAPS61 (3 Oct 2026) found the decrypted cipher record R1033 outside Bourdeau's key-record set; GAPS63 (3 Oct 2026) viewed it: code+mark 1-999, a different design from R1941, overlap at chance against a same-range random control -- not this letter's key
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- NA catalogue pass done (GAPS61, 3 Oct 2026): no key unit in 2.01.08/3.20.16/3.20.17; next: compare DECODE R1033 (1808-10, Van Hogendorp-based, decrypted) with R1941, one login, ~$2; then the ministry's verbaal (inv. 20) and reply minutes (inv. 88), ~$5
+- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- NA catalogue pass done (GAPS61, 3 Oct 2026): no key unit in 2.01.08/3.20.16/3.20.17; R1033 compared (GAPS63, 3 Oct 2026): different design, overlap at chance; next: the ministry's verbaal (inv. 20) and reply minutes (inv. 88), ~$5
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: one DECODE browser login to view R1033 (NA 1.02.13 inv. 226, Six van Oterleek 1808-10, decrypted, "op basis van het cijfer van Van Hogendorp") and compare its group range and marks with R1941 (15-1339, unmarked), ~$2; then read the ministry's own entries for No 4/No 6 in 2.01.08 inv. 20 (incoming verbaal, exh. 14 and 18 Jan 1808) and the reply in inv. 88, ~$5 (GAPS61, 3 Oct 2026: no key or decipherment unit in the 2.01.08, 3.20.16 or 3.20.17 finding aids)
+Verdict: keep going: 1 internal gap; cheapest next: read the ministry's own entries for No 4/No 6 in NA 2.01.08 inv. 20 (incoming verbaal 1808, exh. 14 and 18 Jan 1808) and the reply minute in inv. 88 (Jan-Mar 1808), both digitised, ~$5 (GAPS63, 3 Oct 2026: DECODE R1033 viewed, code+mark 1-999, not R1941's key, overlap at chance)
