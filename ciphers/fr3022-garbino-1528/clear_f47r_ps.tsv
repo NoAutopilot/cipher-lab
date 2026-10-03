@@ -1,0 +1,31 @@
+# f.47r clear postscript, BnF fr.3022 no.20, Gallica btv1b90601558 view 92 (native 4246x6077), region 500,250,3200,650.
+# Crops: images/f47r_ps_L0{1,2,3}_s{1,2}.jpg (tools/iiif_lines.py --centres 140,280,430). Pass A: blind Sonnet subagent on the crops;
+# pass B: GARB-PS check read of the same crops and the debug overlay (3 Oct 2026). Grades (rule 4): S here = read from the image with both
+# passes agreeing on the letters; M = one pass or letters uncertain; U = unresolved. Clear text, so no H/C/key grades apply.
+line	word	diplomatic	reading	grade	note
+1	1	Post	Post	S	both passes
+1	2	data	data	M	A: dato/data; Post data formula
+1	3	no	no[n]	M	A: no (sign over?); B: no
+1	4	e	e	S	both
+1	5	poi	poi	M	A: yor/gior; B: y-form p, poi
+1	6	ſucceſſo?	successo	U	A: prontab-; B: long-s word, successo fits "non e poi successo altro"; prouato alt.
+1	7	altro	altro	M	A: de[..]; B: altro clear on overlay
+1	8	Hoge	hoggi?	U	after a slash; A: ysge/yege; may run on to line 2
+2	1	gaw	?	U	A: Gano/Sano/Garo; unread (han? gia?)
+2	2	Iurato	iurato	M	A: Inrato/Zurato; B: Iurato
+2	3	el	el	S	both
+2	4	principe	principe	S	A: prencipe/principe (p[ri]ncipe); both
+2	5	e	et	M	tironian-style e
+2	6	lo	lo	S	both
+2	7	Imp[er]atore	Imperatore	M	A: Imp[eratore]; B: Imp atore with overline
+2	8	partira	partirà	M	A: illegible; B: p-with-bar + tira = p[ar]tira
+3	1	p[er]	per	M	A: et/of; B: p with crossed descender
+3	2	valenna	Valenza	M	A: valenna/valenza
+3	3	a	a	S	both
+3	4	li	li	S	both
+3	5	cxxj / xxij	xxij (22)	M	A: cexy/cery; B: x x i j with final j-hook, roman 22
+3	6	data	data	M	A: dato/Data
+3	7	ut	ut	M	A: un-; B: ut
+3	8	sup^a	supra	M	A: -notip; B: sup + superscript a
+3	9	de	de	M	A: de
+3	10	19	19	M	A: to ly; B: arabic 19, overlay and overview

@@ -77,7 +77,7 @@ nomenclator; no. 20's is a base-letter-plus-superscript-number code, structurall
 
 ## Verdict
 
-**Stage 2, open.** No source of the six claims a decipherment of BnF fr.3022 no. 20 (ff.44r-46v). Bourdeau's own
+**Stage 2, open.** (3 Oct 2026, GARB-PS: f.47r clear postscript transcribed, dates the tail 19 April 1528; see below. Next: key or crib for the cipher body.) No source of the six claims a decipherment of BnF fr.3022 no. 20 (ff.44r-46v). Bourdeau's own
 repository, working the item most recently (18-22 Sept 2026), closes it as "not solved" for lack of a key or
 crib, having built a full transcription and a validated (matched-control) annealer that only reaches the
 function-word skeleton. This is therefore a genuine cryptanalysis target, not a fresh one: the obvious annealer
@@ -168,8 +168,34 @@ with the fr2988 pass. All >=1.5 s apart per host.
 
 ## While waiting
 
-Next step that depends on nobody: transcribe the f.47r clear postscript at native resolution (Gallica btv1b90601558 view 92,
-one line crop, one blind pass + check) and add it to the no. 20 text, since it dates the letter's tail (prince sworn,
-Emperor leaving for Valencia); free, about $0.5.
+~~Next step: transcribe the f.47r clear postscript~~ -- done by GARB-PS (3 Oct 2026), section below. Next step that depends
+on nobody: none cheap left on the clear text; the cipher body still needs a key or crib (Verdict above). A second-hand
+check of f.47r line 2 word 1 and line 1 word 6 (U below) is the only open item on the postscript, ~$0.5.
+
+## f.47r clear postscript (GARB-PS, account 1, 3 Oct 2026)
+
+Source: Gallica btv1b90601558 view 92 (f.47r, native 4246x6077), region 500,250,3200,650; crops by
+`python3 tools/iiif_lines.py --ark btv1b90601558 --canvas 92 --region 500,250,3200,650 --out ciphers/fr3022-garbino-1528/images --prefix f47r_ps --centres 140,280,430 --debug`
+(auto line-finding saw one band only, so centres were given by eye from the debug overlay). Pass A: one blind Sonnet
+subagent on the six crops; pass B: this worker's check read of the same crops and overlay. Per-word table with grades:
+`clear_f47r_ps.tsv` (26 words: S 7, M 16, U 3; no H/C -- clear text, no key involved). Bourdeau's `bourdeau/f46v.txt`
+ends at "de Madrid a xi de aprile 1528"; this postscript is the letter's tail, on the next leaf, in the same hand:
+
+> Post data no[n] e poi [successo?] altro / [hoggi? ...] iurato el principe et lo Imp[er]atore p[ar]tira p[er] Valenza a li
+> xxij data ut sup[r]a de 19
+
+Reading: "Postscript: nothing further has happened; [today?] the prince was sworn, and the Emperor will leave for
+Valencia on the 22nd. Dated as above, the 19th." The clear crib for the cipher body is nil (it follows the signature
+block, f.47r is otherwise blank).
+
+Date it implies: the tail was added on the **19th** (April 1528; "data ut supra" = Madrid, the month of the main date
+of 11 April). The prince sworn is the infante Philip's jura as heir by the Cortes of Castile at San Jeronimo el Real,
+Madrid, which Lafuente's Historia general de Espana gives as 19 April 1528 (filosofia.org/his/laf/p301c31.htm, read via
+web search 3 Oct 2026); other summaries give 17 or 18 April (ramhg.es Sampedro PDF on the numbering of the Princes of
+Asturias; es.wikipedia "Iglesia de San Jeronimo el Real"), so the postscript fits a jura on or just before the 19th.
+The Emperor's announced departure for Valencia "a li xxij" (22 April) is the letter's own statement; not checked here
+against an itinerary (Foronda, Estancias y viajes del emperador Carlos V, would settle it). So the letter of 11 April
+was still unsent on 19 April 1528. Pass disagreements: pass A read most tails as U (crops are faint); line 3 "cexy"
+(A) vs "xxij" (B), "unnotip" (A) vs "ut sup^a" (B) are graded M on B's reading.
 
 Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py fr3022-garbino-1528` -> "fr3022-garbino-1528: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no Web and blog check). `python3 tools/next_steps.py --wait-only | grep fr3022-garbino-1528` -> no line.
