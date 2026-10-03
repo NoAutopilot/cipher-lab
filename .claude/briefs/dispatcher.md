@@ -46,3 +46,20 @@ account you took over from and the WIP branch it names, run tools/orphan_check.p
 check-in ...' at least every 90 minutes, and continue its queue. Never touch the private repository. Never call
 AskUserQuestion; never print credentials; never name the owner." Otherwise do nothing for the standby (no ROOM line).
 
+
+## Account-1 dispatcher (3 Oct 2026, owner: "can they pull this automatically so I don't have to paste?")
+
+Same job as the account-2 dispatcher above, on account 1 (the owner account), for WORK-QUEUE rows tagged `account-1` (or `owner`).
+Bootstrap once by pasting the "Bootstrap paste (account 1)" below into a Claude Code session on account 1 with the repository; after
+that the owner never pastes a lane prompt for account 1 again -- the orchestrator queues a row and this session spawns it.
+Firing interval: try cron `*/15 * * * *` first; if create_trigger refuses it as too frequent, use `0 * * * *`. Per firing at most 4 rows.
+The spawned session's prompt for a lane row is: "You are <job_id>, the account-1 lane orchestrator for cipher-lab. Read CLAUDE.md, then
+follow <brief path> exactly. Claim the WORK-QUEUE row <job_id> and post your claim in ROOM.md with tools/room.py before spawning anything.
+Read the clock with date -u before writing any time. Never call AskUserQuestion; never print credentials; never name the owner."
+(For a non-lane worker row use the account-2 worker prompt above with "account 1".)
+
+### Bootstrap paste (account 1)
+
+```
+You are the cipher-lab dispatcher on account 1, the standing poller for WORK-QUEUE.tsv rows tagged account-1 (.claude/briefs/dispatcher.md, sections "Bootstrap paste" and "Account-1 dispatcher"). Do this once now: git fetch origin main && git checkout -B main origin/main; read CLAUDE.md, .claude/briefs/dispatcher.md (both sections), tools/work_queue.py and WORK-QUEUE.tsv. Then create one Routine that fires into THIS session (create_trigger, no persistent_session_id, no create_new_session_on_fire) named "cipher-lab dispatcher (account 1)", cron "*/15 * * * *" (if refused as too frequent, "0 * * * *"), whose prompt is the account-2 dispatcher firing prompt from dispatcher.md with every "account 2" read as "account 1", "--account other" as "--account account-1", and lane rows (job_id starting LANE-) spawned with the lane prompt given in "Account-1 dispatcher". Then post one ROOM line via python3 tools/room.py "dispatcher (account 1, <this session id>)" "dispatcher live on account 1, trigger <id>, polling WORK-QUEUE.tsv every <interval>" --push, and run one firing immediately. Never call AskUserQuestion; never print credentials; never name the owner.
+```
