@@ -2201,3 +2201,33 @@ brief's "if not" branch): the office decipherment adds nothing Birch does not al
 leaves: whether old pp.73-76 of MS. Rawl. A. 24/1 (a letter signed "W. S.", Calais, 13 March 1654/5) carry an
 office decipherment. Suggested for the owner's reply to the curator (not sent by this job): ask him to look at
 old pp.73-76 in A. 24/1 for a letter signed "W. S." rather than "Stamford".
+
+## Web and blog check (GF4-BATCH22 (account-4), 3 Oct 2026)
+
+Scope: the one item in this pool without a printed decipherment, P4 (letter signed "W. S.", attributed to William Stamford, Calais, 13 March 1654/5, Birch 1742 vol. 3 pp.187-189, margin "Vol. xxiv. p. 76."); P2-P28 otherwise are N0 (Birch prints their decipherments, AUDIT.md).
+
+Plain web searches (WebSearch, 3 Oct 2026): (1) `"Stamford" Calais 1655 Thurloe cipher letter royalist plot decipher`; (2) `Thurloe State Papers cipher letters numerals decipherment solved "Thurloe" cipher unsolved`; (3) `"Rawlinson A. 24" OR "Rawl. A. 24" Thurloe cipher Calais "W. S."` (shelfmark query); (4) `"Thurloe" cipher solved Claude OR GPT OR ChatGPT` (model-solve announcements). Hits about this item: only (a) github.com/dbourdeau/cyphersolver/issues/12, "Thurloe: Stamford's letter from Calais of 13 March 1655 (Birch III pp.187-189) read with the Stamford key" -- this is our own outreach text (outreach/bourdeau-issues.md line 49), indexed by the search engine; opened 3 Oct 2026, the page now reads "This issue has been deleted", so no comment thread survives to read; it is not a prior decipherment; (b) PR 22 of this repository (LQ-L19); (c) the BHO Thurloe pages and Tomokiyo's article (below). Ericsams.org (Sams, "Cryptanalysis and Historical Research", TLS 1977 / Archiv. 1985-6) reports Sams's solutions of unsolved Thurloe ciphers filed in the Bodleian with Clarendon MS 94 (1973) -- those concern the royalist/Charles II intercepts, not a Stamford/Calais letter, by the page's own description; logged as a lead for the verifier (Clarendon MS 94 not seen). Query 4: only the Urquhart Cyphral Distich model-solve stories; nothing on Thurloe. Searching the most distinctive decoded phrase was not separately run: P4's clear opening ("promotion comes not from the east nor from the west", Psalm 75) is printed clear text in Birch, not plaintext of the cipher.
+
+Blog site searches:
+- Cipherbrain (`scienceblogs.de/klausis-krypto-kolumne/?s=Thurloe`): "Wir konnten leider keine Beiträge finden" -- no posts, so no comment threads.
+- Cipher Mysteries (`ciphermysteries.com/?s=Thurloe`): "Nothing Found".
+- Cryptiana: on-disk `sources/cryptiana/web/thurloe.htm` (zero requests): section "William Stamford (1655)" reconstructs his key (stamford.jpg) and cites the 13 March, 30 March and 3 April letters; it quotes the 13 March letter's clear text ("I should desire you to sende me another cipher ...") but gives no decipherment of its cipher passages. Live blog `cryptiana.blogspot.com/search?q=Thurloe`: three posts (the thurloe.htm update adding "BL Add MS 4166"; the Charles I/Thurloe cipher-use post; the Dutch crypto-history post naming "undeciphered ciphertexts I found in Thurloe State Papers", which are the Dutch/French intercepts of cryptiana unsolved #9, not this pool); no comment carries a reading of P4.
+
+Solver repositories and new publications: dbourdeau/cyphersolver shallow clone (HEAD a439937, 3 Oct 2026 01:07 -0500), `targets/thurloe/NOTES.md`: four different intercepts (TSP i.435, v.78, v.267, v.337), all "stuck"; it applies the Stamford 1655 key to them and has no reading of P4. Cabinet Noir (github.com/el-descifrador/cabinet-noir, clone HEAD 47b6db9, 2 Oct 2026) grepped for `thurloe|stamford|calais`: no hit. apeiron.re front page: no "Thurloe"/"Stamford" string.
+
+Result: no decipherment or plaintext of P4 located by these queries on 3 Oct 2026 (a search result, not a novelty verdict, rule 10). Status word unchanged (`partial`). Lead for the verifier: Sams 1973, Clarendon MS 94.
+Requests: WebSearch 4; github.com 1 (WebFetch) + 2 shallow clones; scienceblogs.de 1; ciphermysteries.com 1; cryptiana.blogspot.com 1; apeiron.re 1; at least 3.5 s apart per host. No 403/429/challenge.
+
+## Premise check (GF4-BATCH22 (account-4), 3 Oct 2026)
+
+- Decipherments the folder already mentions: Birch's printed decipherments of P2-P28 (N0, AUDIT.md); the Bodleian curator's reply (s.26) locates the office decipherment of the 30 March letter (P5+P6, MS pp.324-327, A. 24/2), not of P4. No decipherment of the 13 March letter is mentioned anywhere in the folder.
+- Other solvers' working files: Tomokiyo's stamford key (cryptiana thurloe.htm) and Bourdeau's `targets/thurloe/` use the key, neither reads P4 (above).
+- Neighbouring leaves: Birch's own neighbours of P4 are the short clear covering letter at "Vol. xxiv. p. 73." (13 March, signed "W. S.") and the endorsement "W. S. Calais, 13/3 March 1654/5" (s.26); neither prints a decipherment. Old pp.73-76 of MS. Rawl. A. 24/1 are unseen (s.26's open question) -- the one place an office decipherment could still sit.
+- Recipient-side edition: the recipient is Thurloe; Birch is the recipient-side edition and prints P4 with numerals only. Sams 1973 (Clarendon MS 94) is the one unread lead above.
+Premise stands: P4 has no located printed or published decipherment; the reading in pool_1654/reading_P4.txt rests on the key rebuilt from Birch's sibling decipherments.
+
+Gate re-run (3 Oct 2026, GF4-BATCH22):
+```
+thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
