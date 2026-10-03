@@ -3,8 +3,8 @@
 
 Centres are the row-ink-profile centres of tools/iiif_lines.py (run on the committed native regions in
 ../../../ceppo-nevers-fr3251-1570s/harvest/witness_f36/, command in NOTES.md), not HARVEST-D's eye grid, whose f.36r
-centres drift between rows from about L08. Band = centre-105 .. centre+20 native px (gloss letters plus the tops of the
-cipher signs as anchors), segments of 700 native px with 60 px overlap, upscaled 3x. Crops are regenerated, not committed.
+centres drift between rows from about L08. Band = centre-110 .. centre+45 native px (gloss letters plus the whole
+cipher line as anchor), segments of 1000 native px with 80 px overlap, upscaled 1.5x (round 1 at 700 px x3 was too narrow, see NOTES). Crops are regenerated, not committed.
   python3 cut_gloss.py   -> crops/<line>_s<k>.png and crops/crops_manifest.json
 """
 import json
@@ -23,7 +23,7 @@ BLOCKS = [
 ]
 
 
-def main(seg=700, ov=60, up=105, dn=20, scale=3):
+def main(seg=1000, ov=80, up=110, dn=45, scale=1.5):
     out = []
     (HERE / 'crops').mkdir(exist_ok=True)
     for src, pref, lines, x0, x1 in BLOCKS:
@@ -34,7 +34,7 @@ def main(seg=700, ov=60, up=105, dn=20, scale=3):
             w = band.size[0]; a = 0; k = 1
             while a < w:
                 b = min(w, a + seg)
-                p = band.crop((a, 0, b, band.size[1])).resize(((b - a) * scale, band.size[1] * scale), Image.LANCZOS)
+                p = band.crop((a, 0, b, band.size[1])).resize((int((b - a) * scale), int(band.size[1] * scale)), Image.LANCZOS)
                 name = f'crops/{pref}_L{i:02d}_s{k}.png'; p.save(HERE / name)
                 out.append({'crop': name, 'src': src, 'box': [xs + a, y0, xs + b, y1], 'scale': scale})
                 if b == w:
