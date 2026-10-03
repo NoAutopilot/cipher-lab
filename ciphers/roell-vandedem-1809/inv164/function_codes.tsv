@@ -1,0 +1,46 @@
+# READ2-ROELL, 3 Oct 2026: function-word cells of NA 1.02.20 inv. 164 large table, number-right convention (see NOTES.md).
+# word	code	grade(H/M/L/x)	scan	where	read_by
+word	code	grade	scan	where	read_by
+a	89	H	1	block1 bottom sub-block main	sub-band4 + worker
+a	95	H	1	block1 bottom sub-block sub	sub-band4 + worker
+a	189	H	1	block2 bottom main	sub-band4 + worker
+a	195	H	1	block2 bottom sub (written 195)	sub-band4 + worker
+au	329	H	1	block4 row29	sub-band2 + worker
+au	429	H	1	block5 row29	sub-band2 + worker
+au	489	H	1	block5 bottom main	sub-band4 + worker
+de	86	H	1	block1 row86	sub-band4 + worker
+de	185	M	1	block2 row85 (De, trailing mark)	sub-band4 + worker
+de	186	H	1	block2 row86	sub-band4 + worker
+de	285	H	1	block3 row85	sub-band4 + worker
+de	286	H	1	block3 row86	sub-band4 + worker
+de	385	H	1	block4 row85	worker (sub L)
+de	485	H	1	block5 row85	worker (sub L)
+de	390	H	1	block4 bottom main (written 390)	sub-band4 + worker
+de	396	H	1	block4 bottom sub	sub-band4 + worker
+de	496	H	1	block5 bottom sub	sub-band4 + worker
+des	608	H	1	block7 row8	sub-band1 (as 508, number-left) + worker
+du	527	H	1	block6 row27	sub-band2 + worker
+du	590	H	1	block6 bottom main (written 590)	sub-band4 + worker
+en	91	H	1	block1 bottom main	sub-band4 + worker
+en	197	H	1	block2 bottom sub	sub-band4 + worker
+en	541	H	1	block6 row41	sub-band2 + worker
+en	641	H	1	block7 row41	sub-band2 + worker
+en	741	H	1	block8 row41	sub-band2 + worker
+en	841	H	1	block9 row41	sub-band2 + worker
+en	941	H	1	block10 row41	sub-band2 + worker
+est	397	H	1	block4 bottom sub	sub-band4 + worker
+est	847	H	1	block9 row47	sub-band2 + worker
+est	947	H	1	block10 row47	sub-band2 + worker
+et	391	H	1	block4 bottom main	sub-band4 + worker
+et	497	H	1	block5 bottom sub	sub-band4 + worker
+et	549	H	1	block6 row49	sub-band3 (as 459) + worker
+et	848	H	1	block9 row48	worker
+et	948	H	1	block10 row48	sub-band2 (L) + worker
+il	392	H	1	block4 bottom main	sub-band4 + worker
+ne	393	H	1	block4 bottom main	sub-band4 + worker
+ne	499	M	1	block5 bottom sub	worker (sub L)
+se	294	H	1	block3 bottom main	sub-band4 + worker
+la	898	H	1	block9 bottom sub	sub-band4 + worker
+le	892	H	1	block9 bottom main	sub-band4 + worker
+les	998	H	1	block10 bottom sub	sub-band4 + worker
+que	993	H	1	block10 bottom main	sub-band4 + worker
