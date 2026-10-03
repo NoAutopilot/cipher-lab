@@ -1,10 +1,36 @@
 # BnF fr.3416 f.35r (Gallica btv1b9058240c canvas f43), clear text around the figure runs. FILS-CLEAR (account 1), 3 Oct 2026.
+# FILS-UPPER (account 1, 3 Oct 2026): rows U01-U26 (upper letter, crops images/f43u_*), B11 (= line 11 below L10, images/f43b_L03_*) and M1-M4 (left-margin note written sideways, images/f43m_*) from two blind Opus passes (verify/fils_upper_pass{A,B}.tsv); words A=B are H, {A / B} are unsettled splits (M), [...] unread by both; line grade M if >=40% of words agree, else I.
 # Two blind Opus passes A/B (crops images/f43_Lnn_s*.jpg only, no key, no reading shown) + one reconciliation against the same crops
 # (rules pre-registered in NOTES.md "FILS-CLEAR pre-registration"). <FIG> = figure run (decoded in reading_f35r.txt), never transcribed here.
 # grade: H = A and B read the words identically and the reconciler agrees; M = split, settled against the crop; I = gap/unread.
 # Per-word: words in {braces} are M inside an otherwise H line; [...] = unread.
 line	text	grade	note
-UPPER	[...]	I	only descenders of the line above L01 fall inside the region (y 3560); the upper letter is not cropped -- not read this job
+U01	Mon fil j'ay receu 3 de vos l'res du 27 et {p'. dece / p'r de ce}	M	A=B 11/14 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U02	mois {qui / qu'y} m'ont este {agreables? / apportees?} au mesme {celles / jour} qu	M	A=B 6/9 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U03	{me escrives / m'escrivis?} par lesquelles je {cognoistre? q' faittes [...] / cognois? par faute? de}	I	A=B 3/9 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U04	devoir Je {vous ay aujourd'huy / l'avoy aussy entendu?} escrit {p' / par} le {s'dit [...] / dit memoire?}	M	A=B 4/10 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U05	de {la sorte? / ce sujet?} que je avois {eu agreable / en reguelle?} La {responce que / response par}	M	A=B 5/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U06	{avez faict de m' / avis fait d' m.} garder la citadelle. Je suis {d'[...] / d'esprit?} alle	M	A=B 6/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U07	{cet lieu / cest bien?} plus fermes et {[...], / constans} q' {laisse? faict / lequel fait} luy {vous / Roy?}	M	A=B 5/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U08	{[...] p'? / conduict par} generosite et prudence {l'honneur q' avez / la bonne que avis} acquis	M	A=B 4/10 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U09	{- / par devers Crapon?} ses {devis? lorsq'? les s'r d'[...]olit? / d' Tremolit} et M'r {d'Busy? / d' Buzy?} et {q' / par}	I	A=B 4/12 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U10	en sorte {q' luy? cognoistre? q' avez / que les cognoistra que avis} du courage et {d'[...] / d'esfatere?}	M	A=B 5/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U11	et que vous {<del>[...]</del> <del>[...]</del> l'estes? a? d'la [...] / <del>est amitie</del> estoit asse? d'empescher?} et ne [...]	M	A=B 5/12 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U12	{q' / que} le Roy et {le / ce} Duc {de? / au desyrs? aussy que ne seroit} [...] {adressez? affin? q' ne soyez [...] / -}	I	A=B 4/14 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U13	{ceq? <del>[...]</del> ^[...]ment^ / ce? ^Tremolett?^ <del>Tremolett?</del>} et {q' / que} chascun {faire / face} tout et {[...] / les} mis {q' / que} a	M	A=B 6/13 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U14	passer le temps, {en / car} les nuits par {ce lieu? q' / un bien grand} [...]	M	A=B 6/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U15	avez plus {l'honneur? / le besoin?} en {recommendacion q' / recommandacion que} les {plaisirs / plaintes} du {[...] / midi?}	M	A=B 5/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U16	{<del>[...]</del> / -} il est temps {q' resveillez? vre? / que veuilles le} esprit a penser {ne? / et} choses	M	A=B 7/12 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U17	grandes et {quitter? / quitte?} les {badineries? / ordinaires} q' {- / estoit selon?} [...] {[...] / -}	M	A=B 4/9 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U18	[...] avez {desia? / desire?} pris {ce? / les} quand {- / Dieu? par} [...] {p' [...] / le comm-}	I	A=B 3/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U19	dont chascun sur en {petit? estaige?, M'? 11 / sa charge, Et} [...] [...] {- / leur conse-}	I	A=B 4/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U20	{q' le 7 Jour ultime? / que les [...] sera? estime} ne {badineries? / ordinaires desquelz qu'il} [...] {si 7 / -}	I	A=B 1/10 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U21	{leur perdre / par?} la reputation, {C'est / Cest} a vous a {y? [...] / qq'} le {proffit? / profit?}	M	A=B 6/12 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U22	a {vuider? / l'ordre?} et a vous {les? / [...]} faire et {suivre le contentement? / servir la Catholiq'}	M	A=B 6/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U23	{des? / et} obliges a venir a {vre? service, / [...] [...],} 97 fit [...]	M	A=B 6/10 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U24	{des? services d'ailleurs, Selon? / et conseils de aultres, Il en fault que de tout} [...] {q' d' [...] [...] / -}	I	A=B 0/11 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U25	{estime? d' le? [...] / estimez de l' estat} et {reputa'? / servite?} a {[...] de [...] / ceux des? servites?}	I	A=B 2/10 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+U26	Le Roy est ung {despit? / depuis?} a Paris et {q' pour asseurer? / les ponts? asseure?} la	M	A=B 8/12 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
 L01	{pensse}. {Craignez} que il [...] cy [...] {en le(s)} [...]	M	A "pucelle Craignez que il che cy gardiclat en le cr?menyt", B "pensse. Craignt que il effue cy gendicullt en les cerneurs"
 L02	<FIG>	H	figure run 1 (the Roman code word ciiij is inside the run, tokenised there)
 L03	<FIG>	H	figure run 2
@@ -15,4 +41,8 @@ L07	{qu[e]} <FIG>	M	A "[...]?n-", B "que"; crop "qn-" -- que, or the end of L06'
 L08	<FIG> Cequy ne {apporteroit comodite}. {affaire} [...] {luy}	M	"Cequy ne" A=B; A "apportroit commodite", B "se porteroit comodem't"; crop "aporteroit comodit."
 L09	{feray} luy d'y venir {la} [...] {Demeurez} [...] {depesche} le	M	"luy d'y venir" and "le" A=B; A "feray ... le roy Demeurez ... d?esp?ey le", B "faict ... la mieux Venans ... depesche le"
 L10	{Instruir} <FIG> et	M	A "[...]ir", B "Feburier"; 2x crop: capital I, long s, "truir" -- Instruir (inform), M; "et" A=B. NV02-READ's note "Febvrier" not confirmed
-L11	[...]	I	a further line below L10 is outside the crop region; not read
+B11	[...] {[...] reste? / seulle?} du {[...] / Pape?} apres {en la p' / ce a s'} garde d' {[...] / Rome} ^a ung temps^	M	A=B 7/15 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+M1	en {telle occasion, puisque? / telles occasions prenez} vous {avez deu? / avec Dieu}	I	A=B 2/7 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+M2	{estre? q'il le? perdu? q' / et qu'il vous garde que} et pour	I	A=B 2/7 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+M3	{[...] [...] assure? / S'? vous estes} en {la louange? [...] / sa eslogne? d'aultre}	I	A=B 1/7 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
+M4	{[...]a? / asseta?}	I	A=B 0/1 words (H inside the line); {A / B} = blind split, unsettled (no reconciliation look: cap)
