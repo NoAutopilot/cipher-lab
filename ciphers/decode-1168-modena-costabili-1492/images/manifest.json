@@ -89,6 +89,18 @@
    "bytes": 7942681,
    "sha1": "41499d25974f4821eac1445b7a6f2bd56762c7cd",
    "committed_as": "s_IMG_R1168_I5871_P8.jpg"
+  },
+  {
+   "source_file": "IMG_R1168_I5872_P9.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1168_I5872_P9.png",
+   "px": [
+    2592,
+    3888
+   ],
+   "bytes": 6715627,
+   "sha1": "9d261b241f359a72478647d785163df36981b3db",
+   "committed_as": "s_IMG_R1168_I5872_P9.jpg",
+   "fetched": "3 Oct 2026 01:01 UTC, A2-COS2, one browser login"
   }
  ],
  "crops": [
@@ -142,5 +154,6 @@
     2050
    ]
   }
- ]
+ ],
+ "line_crops_f12r": "A2-COS2 3 Oct 2026: tools/iiif_lines.py --image IMG_R1168_I5864_P1.png --region 250,700,2342,2700 --centres 150,340,...,2620 (step 190) --lines-per-crop 1 --top-margin 50 --bottom-margin 30; 14 crops 2342x~270, autocontrast; not committed (re-derive from the PNG with that command)"
 }

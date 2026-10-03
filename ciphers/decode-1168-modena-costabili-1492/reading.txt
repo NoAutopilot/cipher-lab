@@ -1,0 +1,16 @@
+# decode-1168-modena-costabili-1492 f.12r letter-level groups, key.tsv aligned to the period gloss (A2-COS2, 3 Oct 2026)
+# tokens 130: H 0, C 48, S 0, M 80, I 0, U 2; line names carry the period gloss the group sits under, for comparison
+f12r_01_alafuturadieta | alaaettureditea
+f12r_02_dehungaria | depin·a·at
+f12r_03_loexpectare | ltaspeetareae
+f12r_04_desperarsene | desperaroine
+f12r_05_totalmente | totalmente
+f12r_06_andare | andare
+f12r_07_desanctorp | desadetort
+f12r_08_altro | altra
+f12r_09_risposta | riseostia
+f12r_10_andasseabuda | andeosaabede
+f12r_11_delaarte | deleaetto
+f12r_12_talur | tale
+f12r_13_iniuria | inieria
+f12r_14_nonliera | nonliera

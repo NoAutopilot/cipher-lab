@@ -204,17 +204,71 @@ may share the key.
 
 Requests: de-crypt.org 1 login + 2 pages + 16 files (1.8 s apart); real-eod.mtak.hu 2 (HEAD + PDF). Vision reads 7.
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
-Read so far: 100% of the plaintext in print and in the period clear copy (Berzeviczy CLV; f.13 images 5-8); cipher-sign key unmeasured, 0 signs mapped
-- cipher-sign key for f.12 (sign -> letter table) - blocker: not-attempted; the period gloss and the clear copy give the alignment, no key table has been built; next: sign inventory from line crops + interlinear_align.py alignment to the f.13 text, ~$6
-- image 9 of 9 (IMG_R1168_I5872_P9) - blocker: not-attempted; not fetched this session (file cap, one login per session); next: fetch at the start of the key-recovery job's own login, ~$0.2
+## Sign key by alignment to the period gloss, f.12r (A2-COS2, 3 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-03-acct2-a2-cos2.md`. Intake gate re-run 01:00 UTC:
+```
+$ python3 tools/intake_gate_check.py decode-1168-modena-costabili-1492
+decode-1168-modena-costabili-1492: partial (line 3) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+**Images.** One DECODE browser login (01:01 UTC, `tools/decode_browser_login.js 1168 <scratch> --fetch <images 1-3 and 9,
+absolute filesrv URLs> --max-files 4 --delay 1800`): images 1-3 re-fetched full size (sha1s match `images/manifest.json`),
+image 9 fetched (2592x3888, sha1 in the manifest; committed as `images/s_IMG_R1168_I5872_P9.jpg`). **Image 9 is f.14: the
+23 March postscript written in the same mixed clear/cipher form with its own interlinear gloss** ("Non fu ala Dieta",
+"chiamato", "sugillare li Capituli de la pace", "a Buda", "Baroni", "del Re", "mandasse", "informati"), dated "23. martij
+1492" -- a second glossed cipher witness, not yet transcribed.
+
+**Crops (Usage 6, the command):** `python3 tools/iiif_lines.py --image IMG_R1168_I5864_P1.png --out <scratch>/crops
+--region 250,700,2342,2700 --centres 150,340,530,720,910,1100,1290,1480,1670,1860,2050,2240,2430,2620 --prefix f12r
+--lines-per-crop 1 --top-margin 50 --bottom-margin 30 --debug` -> 14 crops 2342x~270 (each a cipher row with the gloss
+above), autocontrast; the automatic pitch read the gloss/cipher interleave as one 3100-px line, hence `--centres`.
+**Passes:** two blind Sonnet passes over the 14 crops (one call each, sign labels by shape from a fixed list; B read
+the crops in reverse order) -> `align/f12r_passA.tsv` (34 groups), `align/f12r_passB.tsv` (36 groups); this worker's own
+reconciliation was one view of crop L02 (vision reads this worker: 4, incl. image 9 and two crop checks).
+
+**What the leaf is.** Not a pure letter cipher: a nomenclator mix. "le cosse de la Regina" sits over 8 signs, "la Regina"
+over 3 (a hooked F-like sign, +, the same sign), so word/name signs stand beside letter signs. Only groups whose sign
+count is within 0.8-1.25x the gloss's letter count were aligned (14 pairs in A, 13 in B; `align/run_align.py`,
+`tools/interlinear_align.py align --code-prefix @ --keep-fs`, each sign 0-1 letters).
+
+**Rule 3 control (pairing shuffle).** Statistic: share of aligned tokens whose sign agrees with that sign's majority value
+across the pairs. The control re-pairs the same sign groups with the glosses shuffled (20 seeds); it CAN differ, since
+consistency depends on which gloss sits over which group.
+| pass | pairs | real agree | shuffle mean | shuffle p95 |
+|---|---|---|---|---|
+| A | 14 | 0.631 | 0.215 | 0.254 |
+| B | 13 | 0.658 | 0.233 | 0.300 |
+Both passes beat the shuffled pairing by >0.35. Cross-pass agreement on values: 12 signs read the same value in both passes
+with >=2 agreeing occurrences each -> grade C in `key.tsv`: `+`=a, `T`=d, `TT`=s, `a`=i, `b`=o, `d`=r, `g`=l, `y`=n,
+`~`=t, `q`=e; the two passes also agree on `4`=b and `8`=m, once each (M). Signs graded M where the passes split: `o`
+(e/a), `z` (t/o), `c` (p/c), `7` (a/f), `e`, `x`, `r` -- these are mostly label collisions between look-alike shapes
+(q/g/9, o/sigma, z/~/r-rotunda, both passes' "hardest" lists), not settled homophones. `q` itself takes e 6/13 and 9/17
+with u and c as runners-up: the label `q` very likely covers two or three different signs.
+
+**Reading (rule 7):** `decode.json` -> `python3 tools/decode_key.py ciphers/decode-1168-modena-costabili-1492 --check`:
+"reading up to date", tokens 130: H 0, C 48, S 0, M 80, I 0, U 2 (`reading.txt`, `reading_tokens.tsv`). This decodes the
+SAME 14 pairs the key was fitted on, so it is a self-consistency check, not an independent reading: "totalmente",
+"andare", "nonliera" come back exact, "desperaroine", "inieria", "altra" near, the rest show the label collisions.
+Plaintext is not at stake (Berzeviczy CLV and the f.13 Exemplum give it in full); what this step adds is a partial sign
+key with grade C on 12 letter signs and its control. Key source `period` (from the period gloss). No judge spec for this
+target; no judge run.
+
+Not done (cap): f.12v-f.13 cipher groups (images 2-3), the f.14 postscript (image 9), and the word/name signs.
+Requests: de-crypt.org 1 login + 1 page + 4 files (1.8 s apart). Subagent vision calls: 2 (one per pass, 14 crops each).
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026; updated A2-COS2 3 Oct 2026)
+Read so far: 100% of the plaintext in print and in the period clear copy (Berzeviczy CLV; f.13 images 5-8); cipher-sign key: 12 letter signs at grade C from f.12r (A2-COS2 step above), word/name signs 0 mapped
+- sign labels that collide (q/g/9, o/sigma, z/~/r-rotunda) on f.12r - blocker: not-attempted; two machine passes split on these shapes; next: reconcile the M-graded labels from the 14 f.12r crops by eye (one reconciliation unit) or settle the inventory in the owner's sign sorter, then re-run align/run_align.py, ~$1.5
+- cipher groups of images 2-3 (f.12 cont.) and image 9 (f.14 postscript, glossed) - blocker: not-attempted; images now on hand (image 9 fetched A2-COS2); next: crops with tools/iiif_lines.py --image + 2 blind passes per image + align with the f.12r key as --prior, ~$4
+- word/name signs (e.g. the sign over "Regina") - blocker: not-attempted; needs the full sign inventory first; next: after the two steps above, group-level key from the gloss pairs, ~$1
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: plaintext already complete from print and copy
 - [x] clear-pages: f.13 period clear Exemplum (images 5-8) read, A2-COS 3 Oct 2026
 - [n/a] known-keys: no key needed to read; plaintext already period-deciphered
 - [x] print: Berzeviczy 1914 no. CLV pp. 216-219 matched to the images, A2-COS 3 Oct 2026
-- [ ] key-rebuild: planned -- align f.12 cipher groups to the f.13 clear text with tools/interlinear_align.py (grade C)
-- [x] image-check: DECODE full-size images 1-8 read, A2-COS 3 Oct 2026
+- [ ] key-rebuild: started -- f.12r aligned to its period gloss, 12 signs grade C, control beaten (A 0.631 vs shuffle p95 0.254; B 0.658 vs 0.300), A2-COS2 3 Oct 2026; images 2-3 and 9 still to align
+- [x] image-check: DECODE full-size images 1-9 on hand (image 9 = f.14, glossed postscript), A2-COS2 3 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
-Verdict: keep going: 2 internal gaps; cheapest next: fetch image 9 and build the f.12 sign key by alignment to f.13 (interlinear_align.py, grade C), ~$6
+Verdict: keep going: 3 internal gaps; cheapest next: reconcile the colliding f.12r labels by eye from the 14 crops and re-run align/run_align.py, ~$1.5

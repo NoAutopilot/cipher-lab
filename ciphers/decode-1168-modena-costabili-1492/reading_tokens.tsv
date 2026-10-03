@@ -1,0 +1,131 @@
+line	pos	sign	conf	value	grade
+f12r_01_alafuturadieta	1	+	?	a	M
+f12r_01_alafuturadieta	2	g	?	l	M
+f12r_01_alafuturadieta	3	+	?	a	M
+f12r_01_alafuturadieta	4	7	?	a	M
+f12r_01_alafuturadieta	5	q	?	e	M
+f12r_01_alafuturadieta	6	z	?	t	M
+f12r_01_alafuturadieta	7	1	?	t	M
+f12r_01_alafuturadieta	8	6	?	u	M
+f12r_01_alafuturadieta	9	d	?	r	M
+f12r_01_alafuturadieta	10	o	?	e	M
+f12r_01_alafuturadieta	11	T	?	d	M
+f12r_01_alafuturadieta	12	a	?	i	M
+f12r_01_alafuturadieta	13	~	?	t	M
+f12r_01_alafuturadieta	14	o	?	e	M
+f12r_01_alafuturadieta	15	+	?	a	M
+f12r_02_dehungaria	1	e	?	d	M
+f12r_02_dehungaria	2	x	?	e	M
+f12r_02_dehungaria	3	c	?	p	M
+f12r_02_dehungaria	4	a	?	i	M
+f12r_02_dehungaria	5	s	?	n	M
+f12r_02_dehungaria	6	?	?	?	U
+f12r_02_dehungaria	7	p	?	a	M
+f12r_02_dehungaria	8	?	?	?	U
+f12r_02_dehungaria	9	+	?	a	M
+f12r_02_dehungaria	10	~	?	t	M
+f12r_03_loexpectare	1	g	?	l	M
+f12r_03_loexpectare	2	z	?	t	M
+f12r_03_loexpectare	3	+	?	a	M
+f12r_03_loexpectare	4	TT	?	s	M
+f12r_03_loexpectare	5	c	?	p	M
+f12r_03_loexpectare	6	o	?	e	M
+f12r_03_loexpectare	7	q	?	e	M
+f12r_03_loexpectare	8	~	?	t	M
+f12r_03_loexpectare	9	+	?	a	M
+f12r_03_loexpectare	10	d	?	r	M
+f12r_03_loexpectare	11	o	?	e	M
+f12r_03_loexpectare	12	+	?	a	M
+f12r_03_loexpectare	13	f	?	e	M
+f12r_04_desperarsene	1	T		d	C
+f12r_04_desperarsene	2	q		e	C
+f12r_04_desperarsene	3	TT		s	C
+f12r_04_desperarsene	4	c		p	M
+f12r_04_desperarsene	5	o		e	M
+f12r_04_desperarsene	6	d		r	C
+f12r_04_desperarsene	7	+		a	C
+f12r_04_desperarsene	8	d		r	C
+f12r_04_desperarsene	9	b		o	C
+f12r_04_desperarsene	10	a		i	C
+f12r_04_desperarsene	11	y		n	C
+f12r_04_desperarsene	12	q		e	C
+f12r_05_totalmente	1	~		t	C
+f12r_05_totalmente	2	b		o	C
+f12r_05_totalmente	3	~		t	C
+f12r_05_totalmente	4	+		a	C
+f12r_05_totalmente	5	g		l	C
+f12r_05_totalmente	6	8		m	M
+f12r_05_totalmente	7	o		e	M
+f12r_05_totalmente	8	y		n	C
+f12r_05_totalmente	9	~		t	C
+f12r_05_totalmente	10	q		e	C
+f12r_06_andare	1	+		a	C
+f12r_06_andare	2	y		n	C
+f12r_06_andare	3	T		d	C
+f12r_06_andare	4	+		a	C
+f12r_06_andare	5	d		r	C
+f12r_06_andare	6	q		e	C
+f12r_07_desanctorp	1	T		d	C
+f12r_07_desanctorp	2	q		e	C
+f12r_07_desanctorp	3	TT		s	C
+f12r_07_desanctorp	4	+		a	C
+f12r_07_desanctorp	5	e	?	d	M
+f12r_07_desanctorp	6	q		e	C
+f12r_07_desanctorp	7	z	?	t	M
+f12r_07_desanctorp	8	b		o	C
+f12r_07_desanctorp	9	d		r	C
+f12r_07_desanctorp	10	z		t	M
+f12r_08_altro	1	+		a	C
+f12r_08_altro	2	g		l	C
+f12r_08_altro	3	z	?	t	M
+f12r_08_altro	4	d		r	C
+f12r_08_altro	5	+		a	C
+f12r_09_risposta	1	d	?	r	M
+f12r_09_risposta	2	a	?	i	M
+f12r_09_risposta	3	TT	?	s	M
+f12r_09_risposta	4	o	?	e	M
+f12r_09_risposta	5	b	?	o	M
+f12r_09_risposta	6	TT	?	s	M
+f12r_09_risposta	7	~	?	t	M
+f12r_09_risposta	8	a	?	i	M
+f12r_09_risposta	9	+	?	a	M
+f12r_10_andasseabuda	1	+	?	a	M
+f12r_10_andasseabuda	2	y	?	n	M
+f12r_10_andasseabuda	3	T	?	d	M
+f12r_10_andasseabuda	4	o	?	e	M
+f12r_10_andasseabuda	5	b	?	o	M
+f12r_10_andasseabuda	6	r	?	s	M
+f12r_10_andasseabuda	7	+	?	a	M
+f12r_10_andasseabuda	8	+	?	a	M
+f12r_10_andasseabuda	9	4	?	b	M
+f12r_10_andasseabuda	10	q	?	e	M
+f12r_10_andasseabuda	11	T	?	d	M
+f12r_10_andasseabuda	12	o	?	e	M
+f12r_11_delaarte	1	T	?	d	M
+f12r_11_delaarte	2	o	?	e	M
+f12r_11_delaarte	3	g	?	l	M
+f12r_11_delaarte	4	q	?	e	M
+f12r_11_delaarte	5	+	?	a	M
+f12r_11_delaarte	6	q	?	e	M
+f12r_11_delaarte	7	z	?	t	M
+f12r_11_delaarte	8	~	?	t	M
+f12r_11_delaarte	9	b	?	o	M
+f12r_12_talur	1	~	?	t	M
+f12r_12_talur	2	+	?	a	M
+f12r_12_talur	3	g	?	l	M
+f12r_12_talur	4	q	?	e	M
+f12r_13_iniuria	1	a	?	i	M
+f12r_13_iniuria	2	y		n	C
+f12r_13_iniuria	3	a		i	C
+f12r_13_iniuria	4	q	?	e	M
+f12r_13_iniuria	5	d		r	C
+f12r_13_iniuria	6	a		i	C
+f12r_13_iniuria	7	+		a	C
+f12r_14_nonliera	1	y		n	C
+f12r_14_nonliera	2	b		o	C
+f12r_14_nonliera	3	y		n	C
+f12r_14_nonliera	4	g		l	C
+f12r_14_nonliera	5	a		i	C
+f12r_14_nonliera	6	q		e	C
+f12r_14_nonliera	7	d		r	C
+f12r_14_nonliera	8	+		a	C

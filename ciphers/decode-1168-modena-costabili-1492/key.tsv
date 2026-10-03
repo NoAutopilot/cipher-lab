@@ -1,0 +1,27 @@
+sign	value	grade	source	note
++	a	C	period gloss f.12r	passA 16/20, passB 15/18
+1	t	M	period gloss f.12r	passA t 1/1, passB u 1/1
+4	b	M	period gloss f.12r	passA b 1/1, passB b 1/1
+6	u	M	period gloss f.12r	passA u 1/1, passB None
+7	a	M	period gloss f.12r	passA a 1/1, passB f 1/1
+8	m	M	period gloss f.12r	passA m 1/1, passB m 1/1
+?	g	M	period gloss f.12r	passA g 1/2, passB None
+T	d	C	period gloss f.12r	passA 7/7, passB 7/7
+TT	s	C	period gloss f.12r	passA 4/5, passB 3/3
+a	i	C	period gloss f.12r	passA 6/8, passB 5/8
+b	o	C	period gloss f.12r	passA 4/7, passB 3/6
+c	p	M	period gloss f.12r	passA p 2/3, passB c 1/4
+d	r	C	period gloss f.12r	passA 10/10, passB 8/8
+e	d	M	period gloss f.12r	passA d 1/2, passB n 1/1
+f	e	M	period gloss f.12r	passA e 1/1, passB None
+g	l	C	period gloss f.12r	passA 7/7, passB 7/11
+nd	r	M	period gloss f.12r	passA None, passB r 1/1
+o	e	M	period gloss f.12r	passA e 4/9, passB a 3/7
+p	a	M	period gloss f.12r	passA a 1/1, passB None
+q	e	C	period gloss f.12r	passA 6/13, passB 9/17
+r	s	M	period gloss f.12r	passA s 1/1, passB i 1/1
+s	n	M	period gloss f.12r	passA n 1/1, passB None
+x	e	M	period gloss f.12r	passA e 1/1, passB a 1/1
+y	n	C	period gloss f.12r	passA 7/7, passB 8/8
+z	t	M	period gloss f.12r	passA t 2/6, passB o 2/3
+~	t	C	period gloss f.12r	passA 7/9, passB 9/10

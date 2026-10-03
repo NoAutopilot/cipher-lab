@@ -1,0 +1,9 @@
+{"target": "ciphers/decode-1168-modena-costabili-1492",
+ "note": "A2-COS2, 3 Oct 2026: letter-level cipher groups of f.12r (pass A labels, '?' where pass B differs) decoded with the sign key aligned to the period interlinear gloss (align/run_align.py). Grade C = both blind passes give the same value with >=2 agreeing occurrences each; M otherwise.",
+ "jobs": [
+  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "format": "tsv", "line_column": "line", "style": "concat",
+   "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+   "header": ["# decode-1168-modena-costabili-1492 f.12r letter-level groups, key.tsv aligned to the period gloss (A2-COS2, 3 Oct 2026)",
+              "# tokens {total}: {HCSMIU}; line names carry the period gloss the group sits under, for comparison"]}
+ ]
+}
