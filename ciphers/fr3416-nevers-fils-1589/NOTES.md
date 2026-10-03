@@ -335,3 +335,17 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split
 Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: crop line 11 of f.35r and read the stroke under L10, ~$2
+
+## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-upper.md`. Crops (commands pasted, debug overlays checked):
+`python3 tools/iiif_lines.py --ark btv1b9058240c --canvas 43 --region 3550,420,3550,3260 --out ciphers/fr3416-nevers-fils-1589/images --prefix f43u --debug`
+(26 lines x 2 segments, U01-U26; U26 is the top of FILS-CLEAR's L01);
+`python3 tools/iiif_lines.py --ark btv1b9058240c --canvas 43 --region 3550,4560,3550,400 --out ciphers/fr3416-nevers-fils-1589/images --prefix f43b --debug`
+(3 lines: L09, L10, and line 11 = f43b_L03); and a left-margin note written sideways (region 3780,2950,600,2050 fetched
+once, rotated 90 deg with PIL to `images/src_..._3780_2950_600_2050_rot90.jpg`), then
+`python3 tools/iiif_lines.py --image ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f43_3780_2950_600_2050_rot90.jpg --out ciphers/fr3416-nevers-fils-1589/images --prefix f43m --debug` (4 lines M1-M4).
+Rules: FILS-CLEAR's rules 2 and 3 unchanged (word read identically by blind passes A and B = H; split settled against
+the crop in one reconciliation = M; unsettled = [...], I if supplied from context; no decode used to settle a clear
+word). Agreement is reported as difflib ratio per line on lower-cased, punctuation-stripped text. Figures met in these
+lines are transcribed as figures and graded the same way but not decoded into the reading unless A=B.
