@@ -1,5 +1,5 @@
 open
-Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative.
+Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative. GAPS129 (3 Oct 2026): Stanelle 1982 (Books index, phrase-controlled) has no cipher term; Wallstein 2025 has no secret-correspondence chapter, but its index places Bückeburg at p. 112 in Bei der Wieden's Schaumburg chapter -- next read.
 
 # Two enciphered letters of Heinrich der Jüngere, Herzog von Braunschweig-Lüneburg — NLA Bückeburg
 
@@ -195,3 +195,53 @@ snippet only; editor not established this pass) collects contemporary reports. T
 the web check above) needs a table-of-contents read for a correspondence or Schaumburg chapter. Both are a
 snippet/ToC check, ~$1. (2) Re-test Arcinsys Niedersachsen directly for L 1 Nr. 548/562 before any copy order
 (old step 3). (3) The provenance question (old step 2) stands.
+
+## GAPS129: the 1982 Stanelle edition and the Wallstein 2025 table of contents (3 Oct 2026, account-4)
+
+(a) **The 1982 edition** is Udo Stanelle, *Die Hildesheimer Stiftsfehde in Berichten und Chroniken des 16.
+Jahrhunderts. Ein Beitrag zur niedersächsischen Geschichtsschreibung* (Hildesheim: A. Lax, 1982; 193 pp.; ISBN
+3-7848-3645-3; Google Books 8AJoAAAAMAAJ, also indexed as 2wssAQAAIAAJ). Google Books API (`country=US`, key) says
+`NO_PAGES`, so no page or snippet view. It has no IA copy (not searched further, request cap) and no HathiTrust
+EF route was run (in-copyright 1982 German volume; out of budget). It is a study of the chronicles, not an edition
+of letters. Method: the Books API full-text index, a known-hit phrase ANDed with each term:
+`"Heinrich der Mittlere" <term> Stanelle`. Single-word and `isbn:`/`intitle:` forms are unreliable here: they
+returned 0 even for words visible in this volume's own snippet ("Schaumburg", "Hoya"), so they are logged as
+non-tests, not negatives.
+
+| query term (ANDed with "Heinrich der Mittlere" Stanelle) | 8AJoAAAAMAAJ returned? |
+|---|---|
+| positive control: Hoya | yes (snippet: "Heinrich der Mittlere mit ihren Verbündeten, zu denen die Grafen von Hoya, Schaumburg, Lippe und Diepholz gehörten") |
+| negative control: Zyxquorbel (nonsense) | no (0 volumes) |
+| Ziffern | yes, but the snippet is about "Zahlen" (troop numbers): a stemming hit, not cipher |
+| Geheimschrift | no |
+| Chiffre | no |
+| verschlüsselt | no |
+| Bückeburg | no |
+| Briefe | no (only the Nds. Jb. 1982 and Braunschweig. Jb. 1993 articles returned) |
+
+Result: **not found.** In the Books index the 1982 volume has no cipher term and no Bückeburg. This is a snippet-index
+search, conditional on Google's OCR and index. It is not a page read.
+
+(b) **The Wallstein volume** is Arnd Reitemeier (ed.), *Die Hildesheimer Stiftsfehde 1519-1523* (Veröff. Hist. Komm.
+Niedersachsen und Bremen 325; Göttingen: Wallstein, 2025; ISBN 978-3-8353-5889-8). The guessed `5889_Inhalt.pdf`
+URLs on wallstein-verlag.de return HTML, not the PDF. The table of contents was read instead from the e-book reading
+sample (content.e-bookshelf.de/media/reading/L-26795954-f9650756b7.pdf, pdftotext). That sample holds the front matter,
+the ToC, the introduction and the Ortsregister. There are 13 chapters. **No chapter is on secret correspondence,
+cipher or letters as such.** Two chapters are relevant to this item. (1) Brage Bei der Wieden, "Schaumburgische
+Perspektiven: die Grafen, der Adel und die Historiografie", pp. 107-117. The Ortsregister has **Bückeburg 112** and
+Schaumburg 107-115, so this chapter cites Bückeburg, plausibly the NLA Abt. Bückeburg holdings. (2) Lennart
+Bohnenkamp, "Vakanter Thron, riskanter Krieg ... der Braunschweig-Lüneburgische Krieg vom 18. April bis zum 28. Juni
+1519", pp. 155-224, which covers the exact months of Nr. 548. The sample text itself (830 non-empty lines) has no
+geheim-, chiff-, ziffer- or verschl- term. The introduction cites Walter Siebert, "Die Grafen von Schaumburg und die
+Hildesheimer Stiftsfehde", *Schaumburger Heimatblätter* 14 (1968/71), pp. 35 f., which is a further
+Schaumburg-side lead. Result: **no chapter on secret correspondence. Whether p. 112 or Bohnenkamp's chapter names L 1 Nr. 548/562 is
+not established** (the chapter pages are not in the sample).
+
+Requests: www.googleapis.com 32 (two over this brief's 30 per host; three answered 503 or no totalItems and were
+not retried), www.wallstein-verlag.de 3, content.e-bookshelf.de 1, WebSearch 1. No vision, no subagents.
+
+**Recommended next steps (3 Oct 2026):** (1) read Bei der Wieden pp. 107-117 (p. 112) and Bohnenkamp's footnotes for
+NLA BU L 1 Nr. 548/562. The e-book is EUR 27.99, or open access may exist on wallstein-open-library.de (the series'
+2025 "Nachrichten" are there). Check open access first with one request, ~$0.5. Otherwise it is a LOCAL-QUEUE/library
+row. (2) Siebert 1968/71 (Schaumburger Heimatblätter), a print-only lead. (3) Re-test Arcinsys for L 1 Nr. 548/562
+(old step 2). (4) The provenance question stands.
