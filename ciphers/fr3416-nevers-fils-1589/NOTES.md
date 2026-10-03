@@ -254,6 +254,26 @@ No other overbar or Roman code word was found on the transcribed figure lines. T
 (NV02-READ note) would read "recherche" (97, H) -- f.38 is not aligned; not used.
 Grades this job: H 74 / M 28 figure tokens; code words 0 H, 2 M. Not found in print: nothing searched (transcription job).
 
+## FILS-F38 pre-registration (account 1, 3 Oct 2026, written 10:1x UTC before any read returned)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-f38.md`. Rules fixed before the reads:
+1. Crops: fr.3416 f.38 (canvas f46), the 4 figure lines each cut with the gloss band above it, 2 segments each
+   (`images/f38g_L01-L04_s1/s2.jpg`). Pass F (figures) and pass G (gloss) are one blind Opus call each, crops only, no
+   key, no reading. Figures are paired from the first digit of each unbroken digit run the reader reports; an odd run
+   keeps its last digit unpaired; no other offset is tried (key coverage never chooses a pairing). Overbarred
+   figures the reader reports are read through `keys/key_no25_nomenclator.tsv`, others through `keys/key_no25.tsv`
+   (nulls dropped).
+2. Statistic: per band, the decoded letters D and the gloss words G (concatenated) are normalised (lower case, u/v->u,
+   i/j/y->i, accents and non-letters removed, doubled letters collapsed); agreement = 2*M/(|D|+|G|) pooled over the 4
+   bands, M = matched letters (difflib SequenceMatcher blocks per band). Also reported: M/|G| (share of gloss letters
+   matched).
+3. Controls (order-sensitive, so they can differ from the target): (a) shuffled gloss -- all gloss words permuted
+   across the page and re-split into bands with each band's word count, 1000 draws; (b) shuffled key -- letter values
+   permuted over the letter codes (nulls and nomenclator kept), 200 draws. PASS = real agreement above the p95 of both
+   controls. Anything else is FAIL, reported with both numbers.
+4. f.35r code words (L02 `ciiij`/`xiiij`, L10 overbar `28`): one blind read on tight crops; FILS-NOMEN rule 3 decides
+   M -> H (a code word moves only if the blind read gives the same code with no alternative AND the nomenclator entry is H).
+
 ## Remaining gaps
 Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
