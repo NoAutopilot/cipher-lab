@@ -413,3 +413,22 @@ courage, generosity and prudence shown in keeping the citadel, names "d' Tremoli
 wake his mind to great things and leave "badineries", speaks of reputation and of Rome and the Pope (B11, margin), and
 says the King is at Paris (U26). No full date line (month, year) and no subscription were found in these rows.
 Not found in print: nothing searched (transcription job).
+
+## A1B-FILS-L10 pre-registration (account 1, 3 Oct 2026, written 16:4x UTC before any read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-l10.md`. Question: the one free horizontal stroke near the end of
+L10 (under the figures read "8 14" / "2 8 4", above line 11's "Rouen a ..."). Crop: one tight sub-crop of the FILS-UPPER
+source strip `images/src_ark_12148_btv1b9058240c_f43_3550_4560_3550_400.jpg` covering L10's tail and line 11 below it,
+cut with `tools/iiif_lines.py --image` (command pasted below with the results). Two blind readers (subagents) get only
+the crop and a neutral question (which figures are written at the end of the upper line; is there a horizontal stroke;
+which written marks it belongs to -- above it, below it, or neither; which figures it spans), never "28", "Biron" or any
+candidate value.
+Outcomes, fixed now:
+- O1: both readers put the stroke with the upper line's figures, as an overbar/underline spanning exactly the pair
+  read "2 8" (no alternative) -> code word 28 = Ml de Biron moves M -> H (meaning H from keys/key_no25_nomenclator.tsv).
+- O2: both readers put the stroke with line 11's writing (an abbreviation bar, t-cross or letter stroke) -> no code word
+  in L10: the "28 = Ml de Biron" row in f35r_codewords.tsv is withdrawn (marked withdrawn, not deleted); figure tokens
+  in f35r_ciphertext.tsv keep their current grades (M); AUDIT.md propagation note added.
+- O3: anything else (readers split, stroke spans other figures, either reader unsure) -> stays M, doubtful; the gap row
+  names the next step and nothing in the reading changes.
+No decode is used to settle the reads.
