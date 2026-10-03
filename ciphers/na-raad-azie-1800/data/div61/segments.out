@@ -1,0 +1,9 @@
+target: 61-61 11 segs 71 empty 11 one-cell 20 mean nonzero 3.02 max 9
+shuffle 61-61 p05 13 med 19 p95 25
+shuffle one-cell p05 8 med 13 p95 20
+shuffle mean p05 3.19 med 3.69 p95 4.26
+shuffle max p05 10 med 14 p95 21
+dutch nwords p05 54 med 66 p95 76
+dutch mean p05 3.8 med 4.4 p95 5.42
+dutch one-letter p05 0 med 1 p95 6
+dutch max p05 9 med 12 p95 16

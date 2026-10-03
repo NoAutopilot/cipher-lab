@@ -1,0 +1,16 @@
+# na-raad-azie-1800 masc seed 1 restarts 8 3 Oct 2026 00:43 UTC; control mean 0.877 (0.877-0.877); score -786.330; TARGET LETTERS SHUFFLED (seed 11, false-positive floor)
+# {"restart_scores": [-786.3, -787.2, -787.9, -817.6, -822.1, -827.1, -832.4, -863.1], "key": {"11": "a", "12": "e", "14": "n", "21": "u", "22": "m", "23": "t", "24": "e", "31": "h", "32": "o", "33": "n", "34": "e", "41": "i", "42": "l", "43": "g", "44": "n", "51": "k", "52": "r", "53": "e", "54": "f", "62": "d", "63": "s", "64": "n", "71": "e", "?2": "e"}}
+heenetiemnterekeilinretidg
+enieiinneettenmoemaden
+oegdteirkeeteenuriefdintie
+temd
+kouorraeereeueee
+nneietuiure
+eerdkreengneenaeeeineuen
+eeeinrledstnuteeeetie
+eeeenneriedennuonenintteenend
+medhenleeente
+geeenlueeeereneeellegaeededrest
+neredeeeluiglille
+geueidenineeisentnenene
+neeeenenutteineerigeen

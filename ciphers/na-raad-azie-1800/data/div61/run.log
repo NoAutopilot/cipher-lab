@@ -1,0 +1,80 @@
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/masc-1-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.877 score -664.93
+CONTROL seed 2: N=285 K=24 recovery 0.937 score -639.94
+CONTROL seed 3: N=285 K=21 recovery 0.965 score -586.62
+TARGET best score -758.049; decode -> ciphers/na-raad-azie-1800/families/masc-1-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+
+real	0m24.541s
+user	0m24.093s
+sys	0m0.210s
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params profile=target
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-profile=target-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.972 score -639.50
+CONTROL seed 2: N=285 K=24 recovery 0.912 score -594.34
+CONTROL seed 3: N=285 K=23 recovery 0.989 score -610.56
+TARGET best score -758.049; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-profile=target-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 11, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params shuffle_target=11
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle11-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.877 score -664.93
+TARGET best score -786.330; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle11-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 12, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params shuffle_target=12
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle12-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.877 score -664.93
+TARGET best score -800.706; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle12-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 13, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params shuffle_target=13
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle13-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.877 score -664.93
+TARGET best score -771.030; decode -> ciphers/na-raad-azie-1800/families/masc-1-shuffle13-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 11, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params profile=target,shuffle_target=11
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle11-profile=target-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.972 score -639.50
+TARGET best score -786.330; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle11-profile=target-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 12, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params profile=target,shuffle_target=12
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle12-profile=target-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.972 score -639.50
+TARGET best score -800.706; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle12-profile=target-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec specs/na-raad-azie-1800.json slug na-raad-azie-1800
+ciphertext: 14 message(s), N=285 signs, K=24 distinct, tokens=space (target letters shuffled, seed 13, false-positive floor)
+corpora: tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz, tools/data/nl20/pg10820_Een_liefde.txt.gz, tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz, tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz, tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz, tools/data/nl20/pg19563_Eline_Vere.txt.gz, tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz
+control seeds [1], restarts 8, gate 0.6, params profile=target,shuffle_target=13
+row -> ciphers/na-raad-azie-1800/HYPOTHESES.md; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle13-profile=target-nl20.txt
+CONTROL seed 1: N=285 K=24 recovery 0.972 score -639.50
+TARGET best score -771.030; decode -> ciphers/na-raad-azie-1800/families/homophonic-1-shuffle13-profile=target-nl20.txt; judge: no judge block
+row appended to ciphers/na-raad-azie-1800/HYPOTHESES.md

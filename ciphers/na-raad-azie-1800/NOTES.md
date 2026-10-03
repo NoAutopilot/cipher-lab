@@ -559,3 +559,63 @@ Dutch corpus (~$2, V6-PTCORP's method) before any judge. If neither reads, the c
 this length and the next instrument is a different design (a syllable/word code over the 7x4 grid, `--family
 syllabary` or `nomenclator`) or more text (leaf 3, faint, same cipher, untranscribed: ~$4-6 crops + 2 passes + 1
 reconciliation).
+
+## 3 Oct 2026 -- A2-RAA5: cell 6/1 as a word divider or null (N=285, K=24), matched control first (rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Input.** `data/div61/cells_no61.txt`: `data/masc/cells_370.txt` with the 85 cells 6/1 removed (N=285, K=24 incl. the
+blotted `?2`), one manuscript line per text line. The solver (`homophonic_anneal`) scores a spaceless letter stream, so
+"6/1 is a divider" and "6/1 is a null" are the same test for it; the segment test below separates them. Corpus `nl20`
+as before (1880s-1900s; no c.1800 Dutch in tools/data, so every number here is conditional on that era mismatch).
+Logs: `data/div61/run.log`, `data/div61/segments.out`; decodes in `data/div61/` (moved there so A2-RAA3/4's
+`families/` decodes stay as committed); rows in HYPOTHESES.md.
+
+**(a) Segment test** (`scripts/div61_segments.py`, regenerates `cells_no61.txt` and `segments.out`). If 6/1 divides
+words, the runs between 6/1s should look like Dutch word lengths. They do not:
+
+| statistic (interior segments, line edges dropped) | target | 200 order shuffles p05-p95 | 200 nl20 windows of 285 letters p05-p95 |
+|---|---|---|---|
+| empty segments (6/1 6/1 adjacent) | **11** | 13-25 | 0 (no empty words in prose) |
+| one-cell segments | **20** | 8-20 | 0-6 one-letter words |
+| mean non-empty length | **3.02** | 3.19-4.26 | 3.80-5.42 |
+| longest | 9 | 10-21 | 9-16 |
+
+Twenty one-cell "words" against a Dutch p95 of 6, eleven empty ones, and a mean length below the Dutch p05: 6/1 does
+not behave as a word divider. It also sits *more evenly spread* than chance (fewer doublings and a shorter mean gap
+than 95% of shuffles), which is what a frequent letter such as e does. The control can differ from the target on
+these statistics (they depend on order; the shuffles and the Dutch windows both land elsewhere), so this is a test.
+
+**(b) family_run with 6/1 removed** (`--cipher data/div61/cells_no61.txt --tokens space --corpus tools/data/nl20
+--seeds 3 --gate 0.6`, then `--shuffle-target 11/12/13 --seeds 1`):
+
+| family | control recovery per seed (N=285) | mean | target best score | shuffle floors 11/12/13 |
+|---|---|---|---|---|
+| masc | 0.877 / 0.937 / 0.965 | 0.926 | -758.0 | -786.3 / -800.7 / -771.0 |
+| homophonic profile=target | 0.972 / 0.912 / 0.989 | 0.958 | -758.0 | -786.3 / -800.7 / -771.0 |
+
+Both controls meet the 0.6 gate, so the target ran. The decode does not read (`data/div61/masc-target.txt`, L02
+"itraeedreerkneenieennearte"; the key sends seven cells to e). The target's margin over its own shuffle floor falls
+from about 180-190 points with 6/1 in (A2-RAA3/4) to 13-43 with 6/1 out: most of the order structure those runs
+found was carried by where 6/1 stands, which again fits a letter, not a divider or null. The A2-RAA4 noise bracket
+(control 0.942 at 3%, 0.800 at 6%) was not re-run at N=285; the clean controls at 0.93-0.96 are the matched figure.
+
+**Result.** Control-backed negative for "6/1 is a word divider or null over a cell-per-letter substitution of Dutch",
+conditional on nl20; the segment statistics argue against the divider reading independently of any solver. With
+A2-RAA3/4 this exhausts the cell-per-letter substitution family on leaf 2 at this length (logged as untested-by-this-
+family beyond it, not refuted for the target: rule 3, third-attempt clause shape (a), the same family re-tuned).
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. Requests: none (all local).
+
+**Next steps, written, not run** (in cost order):
+1. *Syllabary over the 7x4 grid* (~$1.5, local): 24 live cells of 28, with tops 1-7 and bottoms 1-4, fit a
+   consonant x vowel table (7 rows x 4 columns) better than an alphabet; `tools/family_run.py --family syllabary`
+   needs a spec `row_pattern` and its control is built for a base+mark design, so first check (by reading
+   `tools/families/syllabary.py`) whether a grid syllabary can be expressed; if not, a `--param` added to that tool
+   (Usage 8), not a private script.
+2. *Crib from the interleaved clear words* (~$1, local): the plain words in the lines ("is de Asiatische", "Raad")
+   mark syntax around the cipher spans; a cipher span after "de" should be a noun, which constrains a syllabary key.
+3. *Leaf 3* (same cipher, faint bleed-through, untranscribed): ~$4-6 for `tools/iiif_lines.py` crops + 2 blind passes
+   + 1 reconciliation (Usage 6 per-pass pricing); more text is what any family needs at N=370.
+4. *c.1800 Dutch corpus* (~$2, V6-PTCORP's method) before any judge, whichever family first reads.
