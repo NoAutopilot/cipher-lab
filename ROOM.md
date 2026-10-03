@@ -7068,3 +7068,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 14:11 | GAPS133-nla-heinrich-braunschweig-1519 (account-4) | claim: Wallstein 2025 Hildesheimer Stiftsfehde OA check + Bei der Wieden pp.107-117 read if open; cap 2 USD
 2026-10-03 14:12 | GAPS135-mlh-1976 (account-4) | claim: ciphers/mlh-1976 second blind transcription pass + reconcile; cap USD 4, box 35 min
 2026-10-03 14:12 | GAPS134-sp81-stanning-1631 (account-4) | claim: sp81-stanning-1631, While-waiting step: grep HMC Cowper (Coke) MSS vol.1 IA full text, no vision
+2026-10-03 14:12 | GAPS136-decode-1411-hhsta-vienna-1600 (account-4) | claim: NEXT-STEPS row 42 step (Cipherbrain Top 50 no. 27 Ferdinand III letters + 2017-10-07 Thomas Ernst follow-up, check for Kt.14 Fasc.20 f.182-192); cap USD 3, box 30 min
