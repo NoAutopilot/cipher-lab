@@ -393,9 +393,54 @@ Gate after the change (`python3 tools/intake_gate_check.py sachsstaatsarchiv-man
 4 internal gaps. `tools/next_steps.py --wait-only | grep manteuffel`: no line.
 Vision: 1 montage read by this worker (no subagents). Requests: archive.org 1 (advancedsearch); WebSearch 7.
 
+## GAPS166-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): f.467's period gloss as the fr18 judge's calibration
+
+Pre-registered before any reading or scoring: f467/PREREG-GAPS166.md (commits 418348a5, 56752f90; addenda: the candidate
+has 263 letters, not "about 190"; a fallback text C2 if the gloss were under 40 letters).
+Crops: `python3 tools/iiif_lines.py --image images/loc694-08-09/694-08_0579.jpg --region 2120,900,1260,1680 --out
+images/f467_crops --prefix f467 --lines-per-crop 2 --debug` -> 24 lines, 12 crops. Two blind Opus passes (f467/passA.tsv,
+passB.tsv: 23 lines each; glosses 15 / 14), then four native zooms by this worker (lines 2, 4, 18, 22). Reconciled:
+f467/gloss_reconciled.tsv. 10 of 14 gloss rows agree outright; settled by zoom: line 4 "Rozralewski" as written (the
+code run's own Krauske values r o z r a z e + 3.51.11.42 spell Rozrażewski; A read Poniatowski, B Korzalewski), line 22
+"Ilgen" (A Vizir?, B Ugen), line 2 "Langhalt" (M). Excluded from G (no code under them): a word over "chargé" (line 2)
+and the insertion "promis" (line 20). Code numbers 148/178 (gloss Stanislas) left open; they do not enter G.
+G (f467/gloss.txt, 128 letters) = "Langhalt Rozralewski R. Stenbock restant dans l'inaction Stanislas R. Stenbock
+Stanislas le Roy de Prusse Stanislas le Roy de Prusse Ilgen le Roy de Prusse". C2 (f467/c2.txt, 877 letters) = pass A's
+clear text with the glosses put in for their codes (one pass, not reconciled; secondary only).
+
+Scores (`python3 ciphers/sachsstaatsarchiv-manteuffel-1712/f467/score_gaps166.py`, f467/score.tsv; same spec, fr18):
+
+```
+text                               letters  score    real_p05  margin
+G  period gloss                    128      -1.417   -1.033    -0.384   (FAIL)
+G  letter-shuffled x20             128      median -1.98, best -1.848
+C2 period plaintext (pass A)       877      -0.942   -0.953    +0.011   (PASS by 0.011)
+C2 letter-shuffled x20             877      best -1.797
+f.410 candidate, full              263      -1.038   -0.99     -0.048   (FAIL)
+f.410 candidate, 128-letter win x14  128    median -0.981 (min -1.185, max -0.880); margin median +0.052, range -0.152..+0.153
+f.410 shuffled-key decodes x20     263      best -1.18, median -1.434; best margin -0.185
+```
+
+Decision rule applied as written: m(G) = -0.384 < +0.05, so the fr18 judge cannot certify the genuine period gloss of
+this series at this length; the f.410 FAIL (-0.048) is the judge's limit, not a key negative. The f.410 decode beats all
+20 shuffled-key decodes, and at G's length its windows score margin -0.152 to +0.153 (median +0.052), every one within
+0.10 of m(G) and above it, so the rule's flag condition is met: **reading ready for a separate verifier** (no status change).
+Caveats, stated in advance and visible in the numbers: G is mostly names and titles (the register fr18 under-represents),
+which is why it scores so low; C2, the same leaf's full period plaintext in the same hand and register, only grazes the gate
+(+0.011 at 877 letters), which supports the same conclusion from the prose side. C2 is one blind pass, not reconciled.
+
+f.410 grades unchanged from GAPS162: H 0, C 144, S 0, M 48, I 0, U 24 (216 tokens; C = Krauske's published 1893 table,
+credit Dr. Krauske; the decode is a cryptanalytic application of that key, not checked against any gloss on f.410).
+Side observation (not used in any score): on f.467 code 26 is glossed "R." (and written "R." in the margin) although
+Krauske's table gives 26 = r, and code 4 is glossed "Ilgen" against Krauske's 4 = x -- either a second code list for
+persons or Krauske's table is incomplete for these; logged for the verifier, nothing changed in key.tsv.
+
+Vision: 1 quarter-size layout look + 1 debug overlay + 4 zooms by this worker; subagents 2 (Opus, blind passes, one crop set
+each). Requests: www.archiv.sachsen.de 1 (file 0579 full size). Not done: the rest of file 0511 (f.409v, upper f.410).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 21 of 894 report frames inventoried, 4 carry code groups (694/08 0510, 0511, 0579, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; next: the period gloss of f.467 (file 0579) through the same fr18 judge as calibration plus the rest of file 0511 (f.409v, upper f.410), two blind passes, ~$3
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); next: the rest of file 0511 (f.409v, upper f.410), two blind Opus passes + reconcile, ~$3
 - Loc. 694/08 and /09 ciphered reports, 873 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 21 sampled (A2-SAX2 + GAPS162: 4 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; Haake has no archive.org item (GAPS158); next: Google Books API fts for Haake (country=US) + read the paper, ~$1
 
@@ -407,11 +452,11 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 21 sampled (4 cipher, 1 possible; A2-SAX2 + GAPS162 3 Oct 2026), 873 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: f.467 (file 0579) glossed cipher -- transcribe its glosses and score them through the fr18 judge beside the f.410 candidate as a same-series calibration (CLAUDE.md rule 3, ZX-DEC349 shape), then the rest of file 0511 (f.409v, upper f.410), two blind Opus passes + reconcile, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: the rest of file 0511 (f.409v, upper f.410) -- crops with tools/iiif_lines.py --image, two blind Opus passes + reconcile, apply key.tsv, judge beside f.410 and the f.467 gloss calibration (GAPS166), ~$3
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Neighbour frames done (GAPS162). Depends on nobody: transcribe f.467's glosses (file 0579, URL in images/loc694-08-09/frames.tsv) and score them through specs/sachsstaatsarchiv-manteuffel-1712.json beside f410/candidate.txt, ~$1.5.
+- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166). Depends on nobody: transcribe the rest of file 0511 (f.409v, upper f.410), ~$3.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 
