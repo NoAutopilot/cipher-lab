@@ -116,3 +116,58 @@ should be run before nominating any other Le Tellier-Marca-cipher leaf from `lou
 
 Grades: none (no reading attempted). Novelty: not assessed (rule 10 — this is a check-solved verdict, not a
 verifier pass).
+
+## Web and blog check (GF-A2-13, 3 Oct 2026)
+
+Worker GF-A2-13 (account 2, LANE-A2PUSH), 01:31-01:3x UTC. Gate-fix only (gate already exit 0: status `blocked`,
+terminal). No transcription, no key application.
+(a) Plain web searches (WebSearch, standard):
+1. `Le Tellier Marca avril 1644 lettre chiffrée Baluze 103 déchiffrement` -- Wikipedia (Étienne Baluze), Universalis
+   (Michel Le Tellier), a Cambridge Le Tellier family tree, engraving sale pages. Nothing on this letter.
+2. `"Baluze 103" chiffre OR cipher Le Tellier` -- Baluze biographies, a HAL paper (Boutier), and Cipherbrain's "Norbert
+   Biermann solves encrypted letters from the 17th century" (Louvois to Lauzun, 27 May 1690: a different Le Tellier,
+   a different correspondent and decade -- not this item).
+3. `Le Tellier Marca cipher 1644 Catalonia decrypted letter Tomokiyo` -- HistoCrypt papers (liu.se), the Mary Queen of
+   Scots coverage (Lasry/Biermann/Tomokiyo 2023), TNA "secret diplomatic message deciphered after 350 years". None
+   concerns Baluze 103 or Le Tellier-Marca 1644.
+4. `"Baluze 103"` + the catalogue title was covered on 24 Sept (two queries); not repeated.
+(b) Site searches: `site:cryptiana.blogspot.com Le Tellier Marca` -- no Cryptiana blog page (Tomokiyo's own page
+louisxiv0.htm, quoted above, remains the one source naming f.50 "undeciphered");
+`site:scienceblogs.de/klausis-krypto-kolumne "Le Tellier" OR Marca 1644` -- the Biermann/Louvois post and the Louis
+XIII 6 April 1635 post, neither this item; `site:ciphermysteries.com "Le Tellier" OR Marca Catalonia cipher` --
+ciphermysteries.com/page/54, ?p=6866, a Moustier PDF; by the summaries none is about Le Tellier-Marca 1644.
+(c) The Biermann post concerns Louvois 1690 by its own title and summary; its comment thread was not read because the
+item differs by sender (Louvois, not Michel Le Tellier), recipient and date.
+Result: no decipherment or plaintext of Baluze 103 f.50 on the open web or the three blogs.
+Requests: WebSearch 6.
+
+## Premise check (GF-A2-13, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions: **found in the catalogue, not opened.** DECODE R2742 (status
+"Decrypted", holder "Baluze 103, f.51-52", tag BnF_Baluze103_f50, 2 pages): its documents need a DECODE login
+(account-gated; not used by this worker). Tomokiyo says the four sibling letters (f.171, f.189, f.200, f.230) are
+"deciphered on separate pages"; f.50 he tags "undeciphered".
+(c) Physical neighbours, viewed this pass (Gallica btv1b9001389d, 600-900 px, 5 requests): canvas 110 (f.49v) blank
+mount with a blank pasted slip; canvas 113 (f.51r) blank, foliated "51", with the stub of the f.50v cipher lines at
+the gutter; canvas 114 (f.51v) the address leaf, docket "Lettre de M. le Tellier receue le 3 may 1644, resp. le 4
+may"; canvas 115 (f.52r) a pasted slip: "Plus la lettre à M. le Cardinal du 20 may 1644 qui est dans les mesmes
+cayers" (struck-through words in the slip); canvas 116 (f.52v) a pasted slip: "Il faut mettre icy les nouvelles de
+Barcelone du 3 May 1644 qui sont dans les grands cayers de Catalogne. Cella regarde l'arrivée de M. de Marca à
+Barcelone ..." (filing notes, about the papers' order). **Not found: no clear decipherment of f.50 on f.49v, f.51
+or f.52** at this resolution. So DECODE's "f.51-52" holder string names the address leaf and two filing slips, not a
+decipherment leaf; the "Decrypted" status must rest on a document DECODE holds, not on a period decipherment bound
+next to the letter. The docket dates receipt to 3 May 1644 (reply 4 May), which fixes the letter to late April 1644.
+(b) Other solvers' working files: **not found for this leaf.** Fresh shallow clones (3 Oct 2026): dbourdeau/
+cyphersolver `targets/letellier/` is Le Tellier to Castelnau, 12 May 1657 (different item, confirmed 24 Sept); no
+Baluze 103 folder. aaymeloglu/unsolved-ciphers: `baluze 103` only in catalogue/decode-catalog.csv (R2742-R2746
+rows). No rendering of f.50 under Tomokiyo's Le Tellier-Marca table anywhere in either repository. The key we would
+borrow (Tomokiyo, louisxiv0.htm, table `louisxiv_0marca1644.png`) is published; whether Tomokiyo or DECODE's
+transcriber already applied it to f.50 is exactly what R2742's documents would show.
+(d) Recipient side: **not checked further (unreachable as free full text, per 24 Sept).** The recipient is Marca;
+his papers are this very Baluze series, and the docket shows Marca's office received and answered the letter. The
+standard sender/recipient editions (Sanabre, *La acción de Francia en Cataluña*; Marca's correspondence) were not
+located as free full text on 24 Sept and were not retried. The siblings' own separate-page decipherments (f.171ff.,
+f.189ff., f.200ff., f.230ff.) are the same office's work 2-6 months later and are the calibration set for the key.
+Result: no plaintext of f.50 found; the blocker stays DECODE R2742 (login needed to see its documents). Status line
+unchanged.
+Requests: gallica.bnf.fr 5 (IIIF image, 200 each, 2 s apart); github.com shared clones.
