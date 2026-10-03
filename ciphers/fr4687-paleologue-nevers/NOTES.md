@@ -736,7 +736,7 @@ No token is graded unless both pass.
 
 Control gate met (3 of 3 seeds, gate 2 of 3). The target's `suofratel` clears its pre-registered gate (rank 1, margin
 >= 0.30): its margin, +0.657, sits inside the control's true-crib range (+0.680 to +1.245), just below it. With 6
-restarts the 24 Sept test's 3-restart margin (+0.524 over `ostrofrat`'s neighbours) firms up.
+restarts the 24 Sept test's 3-restart margin over the best wrong crib (+0.524) firms up.
 
 **What it does not show.** The text around the fixed crib still does not read
 (`dutocuelomiscriueilaanoasuofrateleisoarisoltadifarle`), and its score per unit (-3.413) stays below the controls'
