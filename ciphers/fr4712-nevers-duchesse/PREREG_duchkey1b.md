@@ -16,3 +16,12 @@ Power control: 20 synthetic texts, each a random fr16 window enciphered with key
 nulls) truncated to 37 tokens, then digit errors injected at 3% per digit (1 uncertain digit of 74 read on f.10r,
 rounded up), segmented as S2; power = share of the 20 with rank 1 and z >= 3. Power < 0.8: the target result is a
 non-test, whatever it is.
+
+## Amendment A1 (3 Oct 2026, written after the first run's power control read 0/20 and before any A1 score)
+
+Diagnosis of the 0/20: expanded code names add many French letters, so value-shuffled keys that put names on
+letter tokens outscore the true key on synthetic letter text; the statistic measures name content, not the key.
+A1 statistic: code tokens become word breaks (no letters), nulls and unkeyed dropped; score = fr16 mean log10 4-gram
+over the letters only, with the same 200 value-shuffled keys, same rank/z, same gate (rank 1 and z >= 3), and the same
+power control (20 synthetic 37-token texts, 3% digit error, S2). A1 also reports the share of tokens that decode to
+name codes under the real key vs the 200 shuffles (descriptive only, no gate). Power < 0.8: non-test.
