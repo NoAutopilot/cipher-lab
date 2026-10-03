@@ -1,0 +1,16 @@
+# BnF NAF 14913, Lorenzi to Montaigu, Florence, 11 Jan 1744 (Souchon 1915 no. 2047), cipher passage.
+# Transcribed FT4 (account-4) 3 Oct 2026 from Gallica btv1b525174513 views 424 (f.205v, last line) and 427 (f.207r, lines 1-5),
+# iiif_lines crops in images/. Pass A (worker) + pass B (blind Sonnet subagent), reconciled on crops.
+# Uncertain groups marked ? (alternative after =). 635: the 5 is underlined in the MS.
+# f205v_L01 (after clear "...reprime les idees des")
+548 326 722 154 444 303 67 66 22 31
+# f207r_L01
+22 628 501 715 247?=217 22 299 306 279 776 420 534
+# f207r_L02
+581 379 22 65 443 24?=21 271 208 501 172 581 66 123
+# f207r_L03
+338 581 279 347 722 476 781 22 824 114 336 585
+# f207r_L04
+746 40 360 363 121 10 188 344 635 321 336 229
+# f207r_L05
+22 712 834

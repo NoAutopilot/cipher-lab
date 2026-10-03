@@ -1,0 +1,51 @@
+code	value	grade	source	note
+22	de	C	repetition-consistent (align/consistency_search.py), f.206r slip	6 occurrences, each at a "de" of the slip
+66	r	C	repetition-consistent (align/consistency_search.py), f.206r slip	faveu-r, au-r-oient
+279	plus	C	repetition-consistent (align/consistency_search.py), f.206r slip	2 occurrences, both "plus"
+581	au	C	repetition-consistent (align/consistency_search.py), f.206r slip	3 occurrences: au(x), au(roient), (tout) au
+722	ti	C	repetition-consistent (align/consistency_search.py), f.206r slip	veni-ti-ens, con-ti-nue
+501	et	C	repetition-consistent (align/consistency_search.py), f.206r slip	2 occurrences, both before/after "et"; max-letter statistic prefers "eet" (hongri|eet), word boundary gives et
+31	la reine	C	single group between two repetition-fixed groups, f.206r slip	between 22 de and 22 de
+628	hongrie	C	single group between two repetition-fixed groups, f.206r slip	between 22 de and 501 et
+172	quils	C	single group between two repetition-fixed groups, f.206r slip	between 501 et and 581 au: qu'ils
+379	interets	C	single group between two repetition-fixed groups, f.206r slip	between 581 au and 22 de; stretch reads x+interets, the x of aux unencoded or here
+548	ve	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+326	ni	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+154	ens	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+444	en	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+303	fa	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+67	veu	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+715	particulier	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	715+247 = particulierement
+247	ement	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	read 247 or 217
+299	ceux	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+306	les	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+776	at	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+420	ta	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+534	ches	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	776+420+534 = attaches
+65	cette	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+443	pr	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+24	in	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	read 24 or 21
+271	ce	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+208	sse	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	443..208 = princesse
+123	oient	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+338	tout	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+347	con	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+476	nu	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+781	e	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+824	don	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+114	ner	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+336	sous|pr	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	2 occurrences; consistency search leaves de/in/pr open; split here inferred
+585	main	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+746	des	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+40	pro	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+360	vi	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+363	si	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+121	ons	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+10	a	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+188	lar	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+344	mee	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+635	de m	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	the 5 is underlined in the MS
+321	le	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+229	ince	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	336+229 = (pr)ince
+712	lob	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+834	kowitz	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	

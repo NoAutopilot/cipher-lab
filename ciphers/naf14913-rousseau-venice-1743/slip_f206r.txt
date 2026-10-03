@@ -1,0 +1,4 @@
+# BnF NAF 14913 f.206r, slip in Rousseau's hand bound between ff.205v and 207r (period decipherment). Read 3 Oct 2026 FT4 from
+# images/f206r_L*.jpg (iiif_lines crops, canvas 425); agrees with the 24 Sept 2026 and 3 Oct 2026 (GF4-BATCH14) readings.
+# MS abbreviation "particulierem.t" expanded to "particulierement" for alignment.
+venitiens en faveur de la Reine de Hongrie et particulierement de ceux les plus attachés aux intérets de cette princesse et qu'ils auroient tout au plus continué de donner sous main des provisions a l'armée de M. le Prince de Lobkowitz.

@@ -1,4 +1,4 @@
-open
+partial
 Souchon, Correspondance diplomatique du comte de Montaigu (1915, Gallica bpt6k935116v) pp. 257 and 268 read by this worker (GF4-BATCH14, 3 Oct 2026, page images + Gallica ContentSearch full text): p. 268 no. 2047, Lorenzi to Montaigu, Florence, 11 Jan 1744 -- the letter around f.206 -- quotes only its clear opening ("On m'assure que le motif du voyage de M. le duc de Modene ... a tous egards..."); the ciphered passage and Rousseau's decipherment of it are not printed.
 
 ## M21 — BnF NAF 14913 (Papiers Montaigu), Jean-Jacques Rousseau's decipherments, f.206/214/217/250/274
@@ -278,9 +278,87 @@ page images); googleapis.com/books 9; WebSearch 6. All >=1.5 s apart per host.
 
 ## While waiting
 
+(Superseded 3 Oct 2026 by FT4's Remaining gaps below: the ff.214/217/250/274 image check is now its cheapest next step.)
 Next step that depends on nobody: view ff.214, 217, 250, 274 and their facing leaves (Gallica btv1b525174513, IIIF, free) to
 list which Lorenzi/Castellane cipher passages each Rousseau slip renders, and match them to Souchon's numbers (pp.257-275);
 about $0.5, image check only, no transcription. (The JSTOR reread of Hatzenberger 2015, ASKS 76, and LOCAL-QUEUE L25 stay
 where they are.)
 
 Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` -> "naf14913-rousseau-venice-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no standard-edition citation). `python3 tools/next_steps.py --wait-only | grep naf14913-rousseau-venice-1743` -> no line.
+
+## FT4-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (GF4-BATCH14 premise find, e20e9c77): key recovery from Rousseau's f.206r slip against the numeral passage on
+f.205v (last line) and f.207r (lines 1-5). No cryptanalysis: every meaning comes from the period decipherment (grade C/M).
+
+- **Images.** Gallica btv1b525174513, IIIF regions cut with `tools/iiif_lines.py` (commands run 03:36-03:38 UTC):
+  `python3 tools/iiif_lines.py --ark btv1b525174513 --canvas 424 --region 1000,4430,3150,360 --out ciphers/naf14913-rousseau-venice-1743/images --prefix f205v --centres 180 --debug`
+  (1 line, 2 crops); `... --canvas 427 --region 1000,520,3300,1180 ... --prefix f207r --debug` (5 lines, 10 crops);
+  `... --canvas 425 --region 900,3780,3300,700 ... --prefix f206r --debug` (slip, 4 lines, 8 crops). Overviews v424/v425/v427_1000.jpg.
+  The first two calls used `--ark ark:/12148/btv1b525174513`, which the tool doubles into a bad URL (HTTP 500, my error,
+  2 requests); rerun with the bare id.
+- **Transcription** (`ciphertext.txt`, `ciphertext.tsv`): 62 groups, 50 distinct, three-digit and two-digit numerals
+  (10-834). Pass A (the worker, from the debug overlays) and pass B (one blind Sonnet subagent on the 12 numeral crops)
+  agree on 59/62; reconciliation on a cut strip of the three groups: f.205v group 1 = **548** (B; A had 648), f.207r L1
+  group 5 **247 or 217** and L2 group 6 **24 or 21** (cursive 4 vs 1, left M). The 5 of 635 is underlined in the MS.
+  The slip (`slip_f206r.txt`) reads as the 24 Sept and GF4-BATCH14 passes; "particulierem.t" expanded for alignment.
+- **`tools/interlinear_align.py`** (`align/pairs.tsv`, one pair: the whole passage against the slip). From a flat start
+  on a single pair it only spreads the 192 letters evenly over the 62 groups (tried `--floor 0 --max-chunk 16` with
+  `--len-prior` 0.3/0.6/1.0 x `--seg-bonus` 1/2, 10 iterations): repeated groups do not lock (22 took "de" twice, "n"
+  and others elsewhere). With one pair there is nothing for hard-EM to agree with across pairs, so it is not a test
+  of the key here. Not used for key.tsv.
+- **Consistency search** (`align/consistency_search.py`, output `align/consistency_search.out`): the evidence a single
+  pair offers is that a repeated group must take the same chunk at every occurrence. Seven values repeat (22 x6, 581
+  x3, 66/279/336/501/722 x2: 19 occurrences). The search assigns chunks (1-9 letters) to the repeated values under
+  exact coverage of the slip, and the statistic S = letters carried by repeated groups in the best fully consistent
+  assignment. **Real: S = 42**, best maps 22=de, 66=r, 279=plus, 581=au, 722=ti, 501=eet (word boundary gives "et";
+  the max-letters statistic prefers hongri|eet), 336 = de / in / pr (three maps tie).
+  **Per-leaf pairing-shuffle control** (rule 3, per-unit; the statistic depends on where the repeats fall, so the
+  shuffle can change it): 200 shuffles of the group order, same slip. 150 have no consistent assignment at all, 42
+  complete with S 21-41 (max 41), 8 hit the 25 s per-shuffle limit and are counted as >= real (conservative).
+  p95 35, shuffles >= real 8/200, **p = 0.045 -> PASS, thin** (the conservative timeout count is most of the tail).
+  The gate (real S above shuffle p95) is written in the script's docstring; it was not committed before the run, so
+  it is not pre-registered. A first run at a 4 s limit (34 timeouts counted >= real) gave p = 0.17, FAIL, an
+  artefact of the time limit; a maxlen-6 run was infeasible for the real order ("la reine" is 7 letters in one group).
+- **Key** (`key.tsv`, 50 codes): **C** for the six repetition-fixed values above and for four single groups standing
+  between two fixed ones (31 = la reine, 628 = hongrie, 172 = qu'ils, 379 = [x]interets); **M** for the other 40
+  codes, which are splits of multi-group stretches by word and syllable boundary (e.g. 548 ve / 326 ni; 715 + 247 =
+  particulierement; 443 24 271 208 = princesse), and 336 = sous|pr unresolved.
+  Internal checks that agree with the C values without being used to set them: 722 = ti in both veni-ti-ens and
+  con-ti-nue, 581 = au in au(x), au(roient), (tout) au, 66 = r in faveu-r and au-r-oient.
+- **Decode**: `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743` (decode.json) -> `reading.txt`,
+  `reading_tokens.tsv`: **tokens 62: H 0, C 21, S 0, M 41, I 0, U 0**; `--check` -> "reading up to date", exit 0.
+  This is a cryptanalytic-free key recovery, not an H reading: no key sheet. Judge not run (no spec for this target;
+  the plaintext is the period decipherment itself, so a language judge would test Rousseau's French, not the key).
+- **Design note** (inference): a French syllabic nomenclator of the 1740s, two- and three-digit groups, syllables (ve,
+  ni, ti, au, r) beside whole words and phrases (plus, hongrie, la reine, qu'ils): the Lorenzi-Montaigu cipher of 1744.
+- **Other leaves**: not looked at this pass. The finding aid names slips at ff.214, 217, 250, 274; whether their facing
+  leaves carry numerals of this same key, and whether any leaf carries these numerals with no slip, is the next step
+  (image check only).
+- Requests: gallica.bnf.fr 11 (3 overview images, 2 info.json, 2 failed region fetches HTTP 500 from my ark error,
+  3 region fetches for crops, 1.5 s+ apart). Vision: 1 blind Sonnet subagent pass (12 numeral crops) + 3 worker views
+  (two overlays, one reconciliation strip of three groups, plus a reference strip).
+
+Not found in: Souchon 1915 p.268 (clear opening only), the phrase searches logged above (GF4-BATCH14). Rule 10: this
+reports what was read and where it was not found; no novelty class is assigned here.
+
+## Remaining gaps (FT4, 3 Oct 2026)
+Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41)
+- ff.214, 217, 250, 274 slips and their facing leaves - blocker: not-attempted; the finding aid names the slips, nobody has looked for numerals beside them; next: image check of the four slips and facing leaves at 1000 px, list which carry numerals, ~$1
+- M-graded splits of multi-group stretches (40 codes) and 336 - blocker: open-codes; each occurs once in this passage, only another passage under the same key can fix them
+- Hatzenberger 2015 read - blocker: waiting-on ASKS row 76; Cairn is DataDome-blocked from the cloud, JSTOR reread stable/24719303 queued (CHECK-NAF)
+
+## Escalation (3 Oct 2026)
+- [ ] siblings: the four other slips (ff.214, 217, 250, 274) and their facing leaves, image check first
+- [x] clear-pages: the f.206r slip is the clear text of this passage, used as the plain side
+- [n/a] known-keys: no Lorenzi-Montaigu key table found in Souchon or the solver repositories
+- [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
+- [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
+- [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
+- [ ] retry: re-run consistency_search.py pooled over a second slip passage once one is found, to lift M codes
+Verdict: keep going: 2 internal gaps; cheapest next: image check of ff.214/217/250/274 slips and facing leaves for numerals of this key, ~$1
+
+Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
+keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
+"partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. `python3 tools/decode_key.py
+ciphers/naf14913-rousseau-venice-1743 --check` -> "reading up to date", exit 0. Status open -> partial (one passage read at C/M).

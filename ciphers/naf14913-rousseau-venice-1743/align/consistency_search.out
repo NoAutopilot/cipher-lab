@@ -1,0 +1,9 @@
+groups 62, distinct 50, plain letters 192, maxlen 9
+REAL: S = 42 letters carried by repeated groups; 3 best map(s)
+  map: 22=de 66=r 279=plus 336=de 501=eet 581=au 722=ti
+  map: 22=de 66=r 279=plus 336=in 501=eet 581=au 722=ti
+  map: 22=de 66=r 279=plus 336=pr 501=eet 581=au 722=ti
+completed feasible shuffles: 42, S values [21, 21, 21, 21, 21, 21, 21, 23, 23, 23, 23, 23, 23, 25, 25, 25, 25, 25, 26, 26, 26, 27, 27, 27, 27, 27, 28, 29, 29, 29, 30, 31, 32, 32, 33, 33, 33, 33, 35, 35, 37, 41]
+shuffles timed out at 25.0s (counted as >= real): 8; infeasible (no consistent map, S=-1): 150
+SHUFFLE (pairing shuffle, group order, n=200): mean 6.6, p95 35, max 42; shuffles >= real: 8 (p = 0.0448)
+GATE PASS (real S above shuffle p95)

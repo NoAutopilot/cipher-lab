@@ -1,0 +1,14 @@
+{
+ "target": "ciphers/naf14913-rousseau-venice-1743",
+ "note": "FT4 (account-4), 3 Oct 2026: f.205v/f.207r numeral passage under the key recovered from Rousseau's f.206r slip (grade C/M).",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "key.tsv",
+   "format": "tsv",
+   "style": "words",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv"
+  }
+ ]
+}
