@@ -1,0 +1,10 @@
+sid	sign	family
+L01.4	S2	mlh
+L01.5	S3	mlh
+L01.6	S4	mlh
+L01.5-6	S3+S4	mlh
+L01.7	S5	mlh
+L02.1	S9	mlh
+L02.2	S10	mlh
+L02.2+	speck	mlh
+L02.3	S2	mlh

@@ -216,7 +216,7 @@ Cost: 1 vision subagent call (pass B) + 1 reconciliation by this worker = 2 pric
 
 ## Remaining gaps (GAPS135, 3 Oct 2026)
 Read so far: 0 of 33 tokens read (no reading; tests 1-2 and the second pass are transcription and character-set tests, no mapping)
-- three tiles the two passes and the reconciler leave open (L02.3, the dot under S10, the dot after the L01 P) - blocker: not-attempted; questions written to tx2/focus.tsv, no sorter page built or ASKS row filed yet; next: build a sign_sorter.py page from images/tx2 crops with --focus tx2/focus.tsv and file the never-blocking ASKS row, ~$1
+- three tiles the two passes and the reconciler leave open (L02.3, the dot under S10, the dot after the L01 P) - blocker: waiting-on ASKS row 119 (owner's sign sorter, https://claude.ai/artifact/6MT1CLAbNx3iTMpa1yzSCJ, built GAPS138 3 Oct 2026; sorter/README.md)
 - letter-to-symbol mapping for cheap test 3 - blocker: too-short; 26 symbol tokens / 19 distinct after reconciliation, IC below both controls, and test 2 (GAPS131) yields no letter values
 - the ACA's printed context (The Cryptogram Jan-Feb 1976 and the 1978 issue Schrodel cites) - blocker: needs-physical-access; ACA members' back-issue archive, not online (Premise check (d) above)
 
@@ -228,4 +228,11 @@ Read so far: 0 of 33 tokens read (no reading; tests 1-2 and the second pass are 
 - [n/a] key-rebuild: no key material exists to rebuild from
 - [x] image-check: second blind pass + reconciliation (GAPS135), err_2reader 0.091, 3 tiles to the sorter
 - [n/a] retry: no earlier decode attempt exists to retry
-Verdict: keep going: 1 internal gap; cheapest next: sorter page for the 3 focus tiles + ASKS row, ~$1
+Verdict: keep going: 0 internal gaps; cheapest next: print step, an ACA member copy of The Cryptogram Jan-Feb 1976 (needs-physical-access); the sorter gap waits on ASKS row 119 (GAPS138, 3 Oct 2026)
+
+## While waiting (GAPS138-mlh-1976, 3 Oct 2026)
+
+- Depends on nobody: export the sorter db as soon as any answer lands and run `tools/sign_sorter_apply.py` (sorter/README.md), carry the settled labels into tx2/ciphertext_reconciled.tsv and recompute N/K/IC of the symbol stream; a seconds-long script job, no vision.
+
+Until then nothing else is machine-runnable on this strip (mapping is too-short, rule 3). Outside waits: ASKS row 119
+(owner's sorter, ~5 minutes, never blocking) and an ACA member's copy of The Cryptogram Jan-Feb 1976.
