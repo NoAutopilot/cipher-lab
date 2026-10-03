@@ -231,3 +231,47 @@ digitised and whose cipher its unittitle says it is. If it is a digitised Rumpf 
 lead for letter 142, the one instance already in print.
 
 Requests: `www.nationaalarchief.nl` 2 (2 s apart, descriptive User-Agent). DECODE 0. No subagents, no vision calls.
+
+## GAPS115-rumpf-vandebie-heinsius-1716-19 (3 Oct 2026, account-4)
+
+Step run: the next cheap step GAPS109 named, the Nationaal Archief 1.10.29 (Familie Fagel) item pages for inv. 5345
+and 1233 (DECODE 2818's two contradictory numbers), read through the embedded `drupal-settings-json` viewer record.
+
+- **inv. 5345** (`www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5345`, fetched 3 Oct 2026 13:0x UTC): the
+  page answers 200 but carries no unit: `viewer.response` is `null`, no unittitle, no scans. DECODE 2818's holder field
+  ("inv. nr. 5345") does not point at this item in the NA's own inventory; its shelfmark code (`inr.1233`) does.
+- **inv. 1233** (same route): unittitle "'Voor den Heer Carel van Rumpf, haar Ho. Mo. Extras Envoyé aan het Hof van
+  Sweeden', 1743", `"availability":"DIGITALIZED"`, 25 scans (`NL-HaNA_1.10.29_1233_0001` to `_0025`), matching
+  DECODE 2818's 25 pages. **Digitised.** The full scan list (service.archief.nl file and IIIF URLs, byte sizes) is in
+  `images/fagel1233/manifest.json`; five scans (orders 1, 2, 3, 12, 25) were fetched once at 1400 px wide through the
+  IIIF image API into `images/fagel1233/` (about 1.5 MB together), the rest re-fetchable from the manifest.
+- **Whose cipher.** The unittitle names **Carel** van Rumpf, States-General envoy extraordinary to Sweden in 1743, not
+  Hendrik Willem Rumpf, the 1716-19 writer of letter 142. Same family name and the same post (Stockholm) a generation
+  later, so a family or office link is possible, but the record itself does not make this book the 1716 system.
+- **Vision check (one call, Opus, own view).** Line crops cut first with `tools/iiif_lines.py --image
+  images/fagel1233/NL-HaNA_1.10.29_1233_0012.jpg --prominence 20 --distance 25 --lines-per-crop 4` (41 lines, 11 crops
+  `images/fagel1233_0012_L01..L11.jpg`, debug overlay `fagel1233_0012_lines_debug.jpg`); one composite of the scan-12
+  opening at 700 px plus crops L03 and L06 was looked at. Scan 12 is a two-column **nomenclator list in Dutch**: names
+  of German princes, territories, towns, troops and rivers ("Bisschop van Wurtsburgh", "de Landgraef van Hessen
+  Cassel", "Hessen Casselsche Troupes", "Hamburgh", "Hanover", "de Rhyn", "de Donau", "de Mase") each against a
+  three-digit code, consecutive from **216 to 305** on this opening (ruled leader dots, codes in the right margin).
+- **Family-resemblance note (no reading, no key claim).** On what was seen, the design does not match letter 142's:
+  the 1743 book is a large numbered nomenclator for a Dutch-language correspondence, codes in the 200s-300s on scan 12,
+  while letter 142 is French running text with numbers 1-77 only (H1 above: homophonic letter cipher of about 64-77
+  signs). The book's first eleven scans were not looked at; if it opens with a letter/syllable table in the low
+  numbers, that section is the only place a resemblance could show, and it is the next look (one vision call on
+  scans 2-3 crops, both already on disk). As it stands: **not shown to share the target's design; not excluded either**
+  (one opening of 25 seen). Graded nothing; no token of letter 142 read.
+
+Requests: `www.nationaalarchief.nl` 2 (item pages, 2 s apart, descriptive User-Agent); `service.archief.nl` 5 (IIIF
+image API, 2 s apart). DECODE 0. Vision calls 1 (own view, no subagents).
+
+Next cheap step: one vision call on line crops of scans 2-3 (already on disk; cut with `tools/iiif_lines.py
+--prominence 20 --distance 25`) to see whether the 1743 book opens with a low-number letter or syllable table that
+could be compared with letter 142's 1-77 range; about USD 1. The route to a reading is unchanged: the NA originals of
+letters 309/446/455 (ASKS row 46, `REQUEST.md`).
+
+## While waiting
+
+- While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: look at scans 2-3 of NA 1.10.29 inv. 1233
+(on disk, `images/fagel1233/`) for a low-number letter/syllable table, one vision call; it depends on nobody.
