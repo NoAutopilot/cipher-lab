@@ -72,13 +72,54 @@ Bourdeau, `dbourdeau/cyphersolver`, `zeschau1841/` folder and CATALOGUE.md #53, 
 fc0c9e8 (25 Sept 2026 18:14 CDT). MIT code, CC BY 4.0 text. The 7 syllabary values above are his recovery, not
 ours.
 
-## Next step (not run this pass)
+## GAPS173-zeschau-seebach-1841 (3 Oct 2026, account-4)
 
-1. HStAD Dresden copy order for 10731 ... Nr. 12 (person, ASKS.md).
-2. If/when R5006-R5008 images exist, apply Bourdeau's 7 values as a crib with the coverage + order-scrambled
-   controls this brief specified.
-3. Multispectral/UV imaging of R5005 itself (Bourdeau's own suggestion) would let the pencil decipherment be
-   read in full rather than the single legible line.
+Step run: Next step 1 (the HStAD Dresden copy order) needs a person, but its purpose -- images of R5006-R5008 --
+has a cloud route since 28 Sept 2026: DECODE serves full-size scans after a browser login (sources/decode/NOTES.md
+"Full-size images: access after the PI's extension", DECODE-OPEN, which fetched only the first image of each of
+these records). This pass ran that route for all six images.
+
+- One login (`tools/decode_browser_login.js 5006 <scratch> --fetch-page RecordsView/5007,5008 --guess-fullsize`,
+  `loggedIn: true`, 3 Oct 2026 16:59-17:00 UTC). Six full-size JPEGs, all 7214x5412, none the `forbidden.png`
+  placeholder. Images stay in the session scratchpad only, never in this repository (the PI's reminder: the holding
+  archive's permission may be needed before any image is published); a later worker refetches them the same way.
+
+| file | sha1 (12) |
+|---|---|
+| IMG_R5006_I28865_P1.jpg | 483bbb1d719f (matches DECODE-OPEN) |
+| IMG_R5006_I28865_P2.jpg | 27186d7b5d48 |
+| IMG_R5007_I28868_P1.jpg | b5ec8e9e93cd (matches DECODE-OPEN) |
+| IMG_R5007_I28868_P2.jpg | c081766ef775 |
+| IMG_R5008_I28871_P1.jpg | 86e6105b60fe (matches DECODE-OPEN) |
+| IMG_R5008_I28871_P2.jpg | 17a51f08bf33 |
+
+- Vision call 1 (downscaled overview of R5006 p.1): heading "No. 13", "Dresde, ce 6 Avril 1842", clear French
+  opening "J'accuse la réception de Vos rapports inclus le n° 17 du 22 Mars", then 9 lines of unseparated digits
+  on the leaf, which takes about a third of the image width (the rest is the copy-stand background). A red archival
+  foliation note sits at the foot (not read).
+- Vision call 2 (one native-resolution line crop, `tools/iiif_lines.py --image` on a local crop of the page body, 8
+  lines found): the first cipher line is fully legible, about 68 digits, written in the same unseparated style as
+  R5005. Faint pencil traces show above the digits, which fits DECODE's own note "interlinear decrypted, but
+  unfortunately rubbed out". No digit string is committed here: one unchecked read is not a transcription (rule 2/4).
+- Estimate, from 9 lines x ~68 digits on R5006 p.1: about 600 digits a page, roughly 3,000-3,600 digits over the
+  six pages, nearly doubling the 3,969 digits of R5005 now on disk (Bourdeau).
+- Not done: no transcription, no crib test, no reading. Status word left `blocked` for the parent to change: the
+  outside blocker it named (no images anywhere reachable) no longer holds.
+
+Requests: de-crypt.org 1 login + 3 RecordsView + 12 filesrv (6 thumbnails, 6 full-size) = about 17, 2 s apart, one
+at a time. No other host.
+
+## Next step (refreshed 3 Oct 2026, GAPS173)
+
+1. Transcribe R5006-R5008 (6 pages) from the DECODE scans: refetch them with one login as above, crop with
+   `tools/iiif_lines.py --image`, two blind passes a page on line crops (one page per subagent call), then
+   `tools/reconcile_passes.py`. That is 12 pass-calls + 1 reconciliation at the 3 Oct ledger's Opus native-vision
+   rate (USD 3.5-10 a pass), about USD 45-65 in total.
+   Mark the rubbed pencil traces above the digits as they are found: they may give more gloss values (grade I).
+2. Then apply Bourdeau's 7 values as a crib with the coverage + order-scrambled controls the bZES brief specified.
+3. The HStAD copy order (ASKS 64, SEND-QUEUE S5, still `queued` on 3 Oct) is no longer needed to get images; the
+   parent decides whether to hold S5 or reword it as a permission/quality request. Multispectral/UV imaging of
+   R5005 (Bourdeau's suggestion) stays a person/archive step.
 
 ## Solver-repo check (bourdeau, 2 Oct 2026)
 
