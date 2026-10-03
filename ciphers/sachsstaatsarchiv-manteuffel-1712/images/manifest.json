@@ -104,6 +104,16 @@
    "content": "Loc. 694/08 frame 0580: cipher frame (see frame_inventory.tsv)",
    "fetched": "2026-10-03",
    "by": "A2-SAX2"
+  },
+  {
+   "file": "loc694-08-09/694-08_0511.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0511.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68",
+   "bytes": 1496588,
+   "sha256": "bd7feb7abd0c702bc10b27c3561307b028026b951d73a9a5d0efcd6ab41314e4",
+   "content": "Loc. 694/08 file 0511 (film label 0512): ff.409v-410 P.S., unglossed cipher; f.410 groups transcribed GAPS162 3 Oct 2026",
+   "fetched": "2026-10-03",
+   "by": "GAPS162"
   }
  ],
  "loc694_08_09_note": "Loc. 694/08 (592 frames) and 694/09 (302 frames): every frame URL in loc694-08-09/frames.tsv (from files.json); only 2 cipher frames committed (folder under 30 MB). Re-fetch: curl -A Mozilla/5.0 the URL, >=1.5 s apart."

@@ -1,0 +1,8 @@
+{
+  "slug": "sachsstaatsarchiv-manteuffel-1712",
+  "title": "Manteuffel to Flemming, Berlin 1712-13, SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08-09; key: Krauske 1893 table, Loc. 694/10",
+  "ciphertext": "ciphers/sachsstaatsarchiv-manteuffel-1712/ciphertext.tsv (as transcribed; f.410 rows GAPS162 3 Oct 2026, two blind passes reconciled)",
+  "alphabet": "numeric code groups 1-1056, letters/syllables below ~120, nomenclator above",
+  "judge": {"language": "fr18", "letters_min": 40},
+  "note": "judge block written GAPS162 3 Oct 2026: fr18 (Torcy/Villars memoirs, Gazette, early 18th-c. French) matches the reports' language and era; the candidate is the keyed f.410 tokens (first alternative of an M value, U tokens dropped)"
+}

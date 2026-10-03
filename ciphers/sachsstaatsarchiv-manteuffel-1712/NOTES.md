@@ -132,7 +132,60 @@ ciphers/sachsstaatsarchiv-manteuffel-1712` on that frame, with the leaf's own gl
 
 Requests: www.archiv.sachsen.de 2 record pages + 1 archiv.js + 2 files.json + 1 preview + 17 full-size frames = 23.
 Vision: 5 contact-sheet reads + 1 preview + 2 crops by this worker = 8, no subagent calls.
-Not done: 877 of 894 frames not inventoried (see gaps).
+Not done: 873 of 894 frames not inventoried (see gaps).
+
+## GAPS162-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): neighbour frames and f.410's unglossed cipher
+
+**(1) Neighbour frames (premise (c)).** 694/08 files 0509, 0511, 0579, 0581 fetched (plain curl, frames.tsv URLs; 4 requests,
+1.6 s apart), one 2x2 contact sheet read once. The film's own frame card reads one higher than the file number (file 0509 =
+card 0510, 0511 = 0512, 0579 = 0580, 0581 = 0582): a constant offset, so A2-SAX2's "frame 0510" is file 0510. Result
+(frame_inventory.tsv): 0509 ff.407v-408 French clear, no cipher; **0511 ff.409v-410 "P.S.", dense code groups on both pages,
+no interlinear glosses**; 0579 f.467 cipher WITH interlinear glosses (a second glossed leaf beside f.468, not transcribed);
+0581 f.469 French clear copy of a letter from Copenhagen, 8 Dec 1712, endorsed "a la lettre du 13 Xbre 1712 Mantf.". No clear
+copy of f.409's cipher was seen. Only file 0511 (1.5 MB) is kept in images/loc694-08-09/; the other three were scratch.
+
+**(2) f.410 transcription.** Best unglossed stretch: the lower block of f.410 (file 0511, region 2040,2000,1800,1220).
+Crops: `python3 tools/iiif_lines.py --image images/loc694-08-09/694-08_0511.jpg --region 2040,2000,1800,1220 --centres
+82,144,...,1140 --follow-slope 200 --out images/f410_crops --prefix f410 --debug` -> 17 crops, but follow-slope snapped five
+bands onto their neighbours (both passes flagged the duplicates L06=L07, L08=L09, L11=L12, L14=L15, L16=L17); the five missed
+lines were re-cut as fixed bands (`--region 2040,<y-80>,1800,160 --centres 80 --prefix f410M1..M5`, y = 2427, 2551, 2855, 3052,
+3176). Manifest: images/f410_crops/manifest.json (22 crops). Two blind Opus passes (f410/passA.tsv, f410/passB.tsv), then one
+native zoom read by this worker to settle splits (381 not 281; 100; 391, 94, 52; M4 tail 50 39 29 42 54 92|72). Reconciled:
+f410/reconciled.txt, 17 lines, **216 code tokens**; passes agreed outright on 178 (82%), the 38 others carry conf low.
+Appended to ciphertext.tsv as lines `694-08_0511_f410_*` (med = agree, low = split or doubted).
+
+**(3) Key applied** (`python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`: "reading up to date",
+exit 0). f.410: **H 0, C 144, S 0, M 48, I 0, U 24** (U = code with no value in key.tsv: 19 [listed by Krauske with no value], 94, 273, 381, 388 x2, 391, 392, 398, 399 x2, 400, 402, 481 x2, 487, 520, 536, 553, 580, 611, 613, 625, 4001).
+Keyed coverage 192/216 = 88.9% (C alone 66.7%). Grade C is "from Krauske's published 1893 table", not a period key sheet
+(GAPS151); credit Dr. Krauske. Decoded stretches read as French (letters as keyed; M values first alternative):
+"... c o u r", "d a c l a r e r ...", "e le s sch v e d o i s la paix" (les Suédois la paix: Krauske's German values sch/v
+for 74/5 spell French "suedois"), "e n ch a r g e r", "n e d o n n e c o n t e n t e m e n t", "a la reine d'Angleterre
+t o u ch a n t le p r i n c e", "f i l s", "r i e n p o u r l u i m a i s l u y", "Stettin c o n t r a i r e". All M at
+best as a reading (cryptanalytic application of a published key; not checked against any gloss).
+
+`python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --split-check`: every f.410 U code splits only into letter strings that are not French (381 = w k / w h f / h f; 553 = v d / v v w; 625 = u a / u e v; 4001 out of range, no split), so they read as nomenclator codes above the table's range, not as glued letter pairs; 4001 (possibly "400." + "1") and 520/120 stay low.
+
+**(4) Judge.** spec written: specs/sachsstaatsarchiv-manteuffel-1712.json, judge `{"language": "fr18", "letters_min": 40}`
+(fr18 = Torcy/Villars memoirs and Gazette, early 18th-c. French, era-matched). Script f410/judge_f410.py (candidate = keyed
+f.410 tokens, first alternative, U dropped; 20 shuffled-key controls = key values permuted among codes, same tokens; `--check`
+regenerates candidate.txt and exits 1 if stale). Output (f410/judge.tsv):
+
+```
+text         verdict  score    real_p05  null_p99
+candidate    FAIL     -1.038   -0.99     -1.644
+shuffled x20 FAIL     best -1.17, median about -1.40, worst -1.707
+```
+
+The candidate is above the letter-shuffle null p99 by 0.61 and above **all 20 shuffled-key decodes** (best -1.17), but 0.05
+below real_p05: FAIL on the gate as written, close to it. Reading this per rule 3: the shuffled-key control varies on the
+statistic's own axis (it changes the letters) and loses 20/20, so the key reads this leaf far better than chance; the miss
+on real_p05 is at a length (about 190 letters, word breaks lost where U tokens fall) and with German-valued letter codes
+(sch, w, ch) that the fr18 windows do not contain -- "judge cannot decide", not a negative. Not flagged "reading ready"
+(the template needs a judge PASS); next step named below.
+
+Vision: 1 contact sheet + 2 overlay/crop checks + 1 zoom by this worker; subagents 2 (Opus, blind passes, each resumed once
+for the 5 re-cut crops). Requests: www.archiv.sachsen.de 4 (full-size frames). Not done: f.409v (left page of file 0511) and
+the upper half of f.410; f.467 glossed cipher (file 0579).
 
 ## Remaining gaps"/"## Escalation"; it did not (status `blocked`,
 which gaps_check skips). The sections are written below for the first time, from this step.
@@ -330,6 +383,7 @@ pass, NOTES "Print check" item 4); no other solver has applied a key to these le
 (c) Physical neighbours -- **partly checked**: frame 0580 is a two-page spread; both pages (f.468 and its facing page,
 R01-R03) were read by GAPS154 and carry no decipherment beyond the interlinear glosses. Adjacent frames 0579/0581 and the
 leaves around f.409 (0509/0511) have not been fetched; next: fetch those 4 frames and view at 1600 px, about $1.
+Updated GAPS162 (3 Oct 2026): the 4 frames fetched and viewed -- 0509 and 0581 clear text, 0511 (ff.409v-410) unglossed cipher, 0579 (f.467) glossed cipher; no clear copy or decipherment of f.409/f.410 seen.
 (d) Recipient side -- **not found**: the recipient is Flemming (Saxon cabinet). NASG 1893-98 (vols 14-19) grepped, no hit
 on the reports. Haake's Flemming studies: no archive.org item (advancedsearch `creator:Haake AND Flemming`, 0 results, 3 Oct
 2026). The Prussian side (Manteuffel was envoy in Berlin) has no edition located for 1712-13 dispatches.
@@ -340,11 +394,10 @@ Gate after the change (`python3 tools/intake_gate_check.py sachsstaatsarchiv-man
 Vision: 1 montage read by this worker (no subagents). Requests: archive.org 1 (advancedsearch); WebSearch 7.
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026)
-Read so far: 1 leaf of the 1712-13 reports decoded (694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.409 (frame 0510) codes run 213-1056, past the table; next: two blind passes of f.409's code groups and a split check of the high codes against key.tsv + compounds.tsv, ~$3
-- Loc. 694/08 and /09 ciphered reports, 877 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 17 sampled (A2-SAX2: 2 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
+Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 21 of 894 report frames inventoried, 4 carry code groups (694/08 0510, 0511, 0579, 0580)
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; next: the period gloss of f.467 (file 0579) through the same fr18 judge as calibration plus the rest of file 0511 (f.409v, upper f.410), two blind passes, ~$3
+- Loc. 694/08 and /09 ciphered reports, 873 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 21 sampled (A2-SAX2 + GAPS162: 4 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; Haake has no archive.org item (GAPS158); next: Google Books API fts for Haake (country=US) + read the paper, ~$1
-- premise (c) neighbours, frames 0579/0581 and 0509/0511 - blocker: not-attempted; not fetched in this step (scope); next: 4 frames at 1600 px, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
@@ -352,13 +405,13 @@ Read so far: 1 leaf of the 1712-13 reports decoded (694/08 f.468, its 20 code gr
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [ ] print: NASG 1893-98 done, no print found; Haake (no IA item) and the Wackerbarth paper still to read
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
-- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 17 sampled (2 cipher, 1 possible, A2-SAX2 3 Oct 2026), 877 to check
+- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 21 sampled (4 cipher, 1 possible; A2-SAX2 + GAPS162 3 Oct 2026), 873 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 4 internal gaps; cheapest next: fetch the 4 neighbour frames of f.468 and f.409 (0579/0581, 0509/0511) and look for glosses or a clear copy, ~$1; then f.409's code groups (two blind passes + split check against Krauske's key and compounds), ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: f.467 (file 0579) glossed cipher -- transcribe its glosses and score them through the fr18 judge beside the f.410 candidate as a same-series calibration (CLAUDE.md rule 3, ZX-DEC349 shape), then the rest of file 0511 (f.409v, upper f.410), two blind Opus passes + reconcile, ~$3
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Fetch 694/08 frames 0579, 0581, 0509, 0511 (URLs in images/loc694-08-09/frames.tsv, plain curl) and look for glosses or a clear copy beside f.468 and f.409: ~$1, depends on nobody.
+- Neighbour frames done (GAPS162). Depends on nobody: transcribe f.467's glosses (file 0579, URL in images/loc694-08-09/frames.tsv) and score them through specs/sachsstaatsarchiv-manteuffel-1712.json beside f410/candidate.txt, ~$1.5.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 
