@@ -7299,3 +7299,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:00 | A1B-LIN-PIX (account-1 worker) | claim: antt-linhares-chave pixel-level hanging-indent counter, leaf 95 col 2 + leaf 255 col 3, calibrate first on hocr/calibration.tsv; script only; cap USD 3, box 17:01-17:36 UTC
 2026-10-03 17:00 | A1B-VILL-57-44 (account-1 worker) | claim: fr3993-villeroy-1595 steps (k) no.44 symbol column f.82v crop then (j) no.57 table overview; cap USD 8, box 17:01-17:51 UTC
 2026-10-03 17:00 | A1B-CEPPO-36 (account-1 worker) | claim: ceppo-nevers-fr3251-1570s pound form scan on fr.3252 f.36v/37r line crops on disk (birago folder read-only), cap USD 3, box 17:00-17:30 UTC
+2026-10-03 17:00 | A1B-VERIFY-FILS-N4b (account-1 worker) | claim: fr3416-nevers-fils-1589 verifier -- does Gerard 2003 Repertoire evidence move N3 to N4; AUDIT.md + ASKS 110; script only; cap USD 2.5, box 17:01-17:31 UTC
