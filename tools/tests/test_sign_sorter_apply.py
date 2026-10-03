@@ -25,6 +25,15 @@ check('legacy outlier and ASIDE both aside', r['g'][3] == 'aside' and r['h'][3] 
 check('merge cycle does not hang', sa.apply([{'sid': 'z', 'sign': 'Q1'}], piles, [], [])[0][0][2] in ('Q1', 'Q2'))
 check('summary counts', summ['by_status']['bad-cut'] == 1 and summ['confirmed_piles'] == ['X'] and summ['new_piles'] == ['X1'])
 
+# QA pass (3 Oct 2026): page-named new piles and "Right pile: keep it" confirmations
+rows3, sm3 = sa.apply([{'sid': 'k1', 'sign': 'T51'}, {'sid': 'k2', 'sign': 'T51'}, {'sid': 'k3', 'sign': 'T95'}], [],
+                      [{'sid': 'k2', 'to': 'T51-b'}, {'sid': 'k3', 'to': 'T51-b'}], [{'id': 'T51-b'}], (), None,
+                      [{'sid': 'k1', 'pile': 'T51'}, {'sid': 'k2', 'pile': 'T51'}])
+r3 = {x[0]: x for x in rows3}
+check('auto-named new pile becomes a new sign label', r3['k2'][2:] == ('T51-b', 'moved') and r3['k3'][2:] == ('T51-b', 'moved'))
+check('keep confirmation stays kept and is listed; a later move wins', r3['k1'][2:] == ('T51', 'kept') and sm3['confirmed_tiles'] == ['k1'])
+check('no checked docs, no confirmed_tiles key', 'confirmed_tiles' not in summ)
+
 # --- TX-SORTER (3 Oct 2026): cluster decisions and the family atlas ---
 import json, os, subprocess, tempfile
 lab2 = [{'sid': s, 'sign': g} for s, g in [('s1', 'T24'), ('s2', 'T24'), ('s3', 'T24'), ('s4', 'T29'), ('s5', 'T29'), ('s6', 'DOT'), ('s7', 'T60')]]

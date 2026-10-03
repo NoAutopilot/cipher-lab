@@ -11,12 +11,13 @@ const { chromium } = require('playwright');
   console.log(await page.textContent('#ctxT'), '|', await page.textContent('#ctxPos'));
   await page.click('#ctxNext'); await page.keyboard.press('ArrowRight');
   console.log('after 2 steps:', await page.textContent('#ctxT'), '|', await page.textContent('#ctxPos'));
-  await page.fill('#ctxNew', 'x dot'); await page.click('#ctxNewB');
+  await page.click('#ctxNewB');   // one tap, the page names the pile (X-b); nothing to type (owner, 3 Oct 2026)
   console.log('msg:', await page.textContent('#ctxMsg'), '|', await page.textContent('#ctxT'));
-  await page.selectOption('#ctxDest', 'X-DOT'); console.log('msg2:', await page.textContent('#ctxMsg'));
+  await page.selectOption('#ctxDest', 'X-b'); console.log('msg2:', await page.textContent('#ctxMsg'));
   await page.click('#ctxAside'); console.log('msg3:', await page.textContent('#ctxMsg'));
   await page.click('#ctxClose');
   console.log('X header:', await x.locator('.cnt').textContent());
-  console.log('new pile X-DOT exists? (X-DOT is a base pile)', await page.locator('.pid', { hasText: /^X-DOT$/ }).count());
+  const nb = await page.locator('.pile').filter({ has: page.locator('.pid', { hasText: /^X-b$/ }) }).locator('.t').count();
+  console.log('new pile X-b tiles:', nb); if (nb !== 2 || errs.length) { console.log('FAILED'); process.exit(1); }
   console.log('errors:', errs); await b.close();
 })();

@@ -233,3 +233,24 @@ the dialog's Previous/Next now walk the list the tile was opened from ("Check th
 position shown as "n of N in ..."; a sticky "× Close" sits at the top of the dialog; the page carries a viewport meta; on narrow
 screens the line view scales to the screen width. New browser test `tools/sign_sorter/browser_tests/test_mobile_ctx.js` (390 px
 phone viewport). Sorters published before this keep the old behaviour until rebuilt (Birago ASKS 118 rebuilt, v3).
+
+**3 Oct 2026 -- sign sorter QA pass** (worker for the parent, 15:55 UTC). The owner said the sorter "seems buggy"; a
+browser pass at phone (390x760, touch) and desktop (1280x900) size against a realistic store stand-in
+(`tools/sign_sorter/browser_tests/mock_db.js`: persists across reloads, slow, out-of-order, can refuse a write) found and
+fixed in `tools/sign_sorter/template.html`: tall tiles spilled out of their frames over the pile buttons and swallowed
+taps; choices made in the first second, before storage answered, were never saved; a move followed quickly by Undo could
+land in the wrong order and come back on reload (writes are now one at a time per document); after a refused save the
+status stuck on "Saving 1..." and the change was never retried (now retried once, then "Not saved ... Try again", shown in
+the open dialog too); piles and families re-sorted after every move, so the page jumped to a different sign set (order is
+now fixed and the pile in view stays put); an update from another device wiped a note being typed; the zoom slider did
+nothing on a phone, and at high zoom on a desktop the bracketed sign scrolled out of view; the brackets were nearly
+invisible on a phone; a page image loading late could paint another tile over the one shown; the "Check these first"
+captions made a 2,000 px column on a phone and gave no sign which tiles were answered (now a short question, the full
+question in the dialog, and "now T51 / kept in T95" under each answered tile); there was no way to say "this tile is in the
+right pile" (new "Right pile: keep it", saved in a `checked` collection that `sign_sorter_apply.py` lists as
+confirmed_tiles); the progress count included emptied piles, so it could never reach the end; "Possibly similar" jumps
+landed under the sticky toolbar or did nothing when the Show filter hid the pile; the toolbar took a third of a phone
+screen (no longer pinned on phones). Owner's request the same afternoon: nothing needs typing -- "New pile" / "None of
+these: new sign" is one tap and the page names the pile (T51 -> T51-b, T51-c), offered first for the next tile.
+`run_all.sh` builds synthetic fixtures (`make_fixtures.py`) and runs every browser test; `test_qa.js` (80 checks) fails 30 on the old
+template and passes on the new one, and on the rebuilt Birago page.

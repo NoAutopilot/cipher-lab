@@ -27,15 +27,14 @@ const { chromium } = require('playwright');
   await page.waitForTimeout(800);
   console.log('stored moves:', Object.keys(await page.evaluate(() => window.__store.moves || {})).length);
   console.log('X header:', await xPile.locator('.cnt').textContent());
-  // select 3 more and create a new pile
+  // select 3 more and create a new pile (one tap, named by the page)
   for (let i = 0; i < 3; i++) await xPile.locator('.tiles .t:not(.out)').nth(i).click();
-  await xPile.locator('.movebar input').fill('x 2bars');
   await xPile.locator('.movebar button', { hasText: 'New pile' }).click();
   await page.waitForTimeout(800);
   const st = await page.evaluate(() => ({ moves: window.__store.moves, np: window.__store.newpiles }));
-  console.log('new piles:', Object.keys(st.np || {}), '| moves to X-2BARS:', Object.values(st.moves).filter(m => m.to === 'X-2BARS').length,
+  console.log('new piles:', Object.keys(st.np || {}), '| moves to X-b:', Object.values(st.moves).filter(m => m.to === 'X-b').length,
               '| ASIDE:', Object.values(st.moves).filter(m => m.to === 'ASIDE').length);
-  const np = page.locator('.pile').filter({ has: page.locator('.pid', { hasText: /^X-2BARS$/ }) });
+  const np = page.locator('.pile').filter({ has: page.locator('.pid', { hasText: /^X-b$/ }) });
   console.log('new pile shows tiles:', await np.locator('.t').count(), '| moved-in badges:', await np.locator('.badge').count());
   // verdict button
   await xPile.locator('.acts button', { hasText: 'All one sign' }).click(); await page.waitForTimeout(600);

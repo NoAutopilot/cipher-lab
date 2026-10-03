@@ -42,7 +42,8 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .fam{margin-top:28px}
 .fam h2{font-family:var(--f-display);font-weight:600;font-size:1.45rem;margin:0 0 2px}
 .fam .sub{color:var(--muted);font-size:.82rem;margin:0 0 10px}
-.pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px}
+.pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px;scroll-margin-top:var(--barh,110px)}
+.pile.flash{outline:3px solid var(--accent);outline-offset:2px}
 .pile.same{border-left-color:var(--ok)} .pile.merge{border-left-color:var(--accent)} .pile.mark{border-left-color:var(--warn)}
 .ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
 .pid{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
@@ -51,12 +52,12 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .chip.same{background:var(--ok-soft);color:var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--accent)} .chip.mark{background:var(--warn-soft);color:var(--warn)}
 .tiles{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
 .t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:3px;padding:0;display:grid;place-items:center;cursor:pointer}
-.t img{max-width:100%;max-height:100%;image-rendering:auto}
-.t{position:relative}
+.t img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;image-rendering:auto}
+.t{position:relative;overflow:hidden}   /* a tall tile used to spill out of its frame over the pile's buttons and swallow taps */
 .t.out{border:2px dashed var(--ink)}
 .t.out img{opacity:.35}
 .t.sel{border:4px solid var(--ink);opacity:1}
-.t .badge{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
+.t .badge{position:absolute;top:1px;right:1px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
 .movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
 .movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
@@ -75,11 +76,13 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
 #ctx{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px}
 #ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
 #ctx .cv{overflow-x:auto;background:var(--tile);min-width:0;max-width:100%}
-#ctx canvas{display:block;max-width:none}
+#ctx canvas{display:block;max-width:none;height:auto}
+#ctxQ{font-weight:600;margin:0}
 #ctx .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 #ctx .row.top{position:sticky;top:-14px;z-index:1;background:var(--surface);padding:6px 0;justify-content:space-between;flex-wrap:nowrap}
 #ctx .x{font-size:1rem;padding:6px 12px;flex:0 0 auto}
-@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}#ctx canvas{max-width:100%;height:auto}}
+@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
+  .bar{position:static} .pile{scroll-margin-top:8px}}
 .acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
@@ -89,6 +92,10 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
 #rankTiles > div{width:max(var(--sz),84px);justify-items:center} #rankTiles .fcap{max-width:100%}
 #rankTiles .t,#offer .t{overflow:hidden} #rankTiles .t img,#offer .t img{width:calc(var(--sz) - 4px);height:calc(var(--sz) - 4px);max-width:none;max-height:none;object-fit:contain}
 .t.done{opacity:.45}
+#focusTiles > div{width:max(var(--sz),76px);justify-items:center}
+#focusTiles .fcap{max-width:100%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#focusTiles .fdone{font-size:.72rem;color:var(--ok);font-weight:600;text-align:center;max-width:100%}
+.save button{font-size:.78rem;padding:1px 8px;margin-left:6px}
 #offer[hidden]{display:none}
 #offer{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:640px;margin:0 auto;background:var(--surface);color:var(--ink);
   border:2px solid var(--accent);border-radius:8px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
@@ -101,7 +108,8 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
   <h1>__TITLE__</h1>
   <p class="lede">__LEDE__</p>
   <div class="how">
-    <div><b>Tile in the wrong pile</b>Click tiles to select them (thick frame and ✓). Then choose "Move to" a pile, "New pile" (e.g. X-2BARS), or "Set aside" (×). Selecting alone saves nothing. Tiles moved in from another pile show ↪.</div>
+    <div><b>Check one tile</b>Tap a tile in "Check these first" (or switch to "Click shows context"): it opens on its line, the sign in brackets. Move it to the pile it belongs to, or press "Right pile: keep it". Next steps through the list.</div>
+    <div><b>Tile in the wrong pile</b>Click tiles to select them (thick frame and ✓). Then choose "Move to" a pile, "New pile" (a new sign; the page names it, e.g. T51-b), or "Set aside" (×). Selecting alone saves nothing. Tiles moved in from another pile show ↪.</div>
     <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small pen wobbles do not make a new sign; a mark repeated on several tiles (a bar, a dot) usually does.</div>
     <div><b>Not a letter</b>Dots, stains, flourishes and joins: press "Not a letter". If a pile looks right, press "All one sign".</div>
   </div>
@@ -124,14 +132,16 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
     <div class="row top"><strong id="ctxT"></strong><button type="button" id="ctxX" class="x" aria-label="Close">&times; Close</button></div>
+    <p id="ctxQ" hidden></p>
     <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
-    <div class="row"><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
-      <input id="ctxNew" type="text" placeholder="or new pile name" aria-label="New pile name"><button type="button" id="ctxNewB">New pile</button>
+    <div class="row"><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
+      <button type="button" id="ctxNewB">None of these: new sign</button>
       <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
+    <p class="save err" id="ctxErr" role="alert" hidden></p>
   </div></div>
 </div>
 <script>
@@ -149,11 +159,32 @@ basePiles.forEach(p => p.items.forEach(it => { if (it.c){ clusterOf[it.sid] = it
 const clusterDec = {};   // cluster id -> {to, from_sid, n}   (saved in db collection 'clusters')
 let ccol = null;
 const selected = {};     // pile id -> Set(sid)   (not saved)
-let col = null, mcol = null, ncol = null;
+const focusQ = Object.fromEntries((DATA.focus || []).map(f => [f.sid, f.q]));
+const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
+let col = null, mcol = null, ncol = null, kcol = null;
+// Fixed display order (QA 3 Oct 2026): families and piles keep the order they had when the page was built, so a move
+// never reshuffles the page under the person's thumb (it used to re-sort by live tile counts after every move).
+const baseCount = Object.fromEntries(basePiles.map(p => [p.id, p.items.length]));
+const baseFam = {}; basePiles.forEach(p => { baseFam[p.family] = (baseFam[p.family] || 0) + p.items.length; });
+const famOrder = Object.keys(baseFam).sort((a, b) => baseFam[b] - baseFam[a] || a.localeCompare(b));
+const pileOf = sid => (moves[sid] && moves[sid] !== 'ASIDE') ? moves[sid] : homeOf[sid];   // the pile a tile is shown in
 const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
 const sel = id => selected[id] || (selected[id] = new Set());
 
+// New piles are named by the page (owner, 3 Oct 2026: "I don't want to add names"): the pile the tile came from plus
+// -b, -c, ... (T51 -> T51-b; a new pile split again stays on its root: T51-b -> T51-c), the first name not yet used.
+function nextPileName(from){
+  const root = (from && from !== 'BAD-CUT' && from !== 'ASIDE' ? from : 'NEW').replace(/-[b-z]$/, '');
+  const used = id => baseIds.has(id) || !!newPiles[id];
+  for (let i = 1; i < 26; i++){ const n = root + '-' + String.fromCharCode(97 + i); if (!used(n)) return n; }
+  for (let i = 1; ; i++){ const n = root + '-' + i; if (!used(n)) return n; }
+}
+function makePile(from){
+  const name = nextPileName(from);
+  const fam = (byBase[from] && byBase[from].family) || (newPiles[from] && newPiles[from].family) || 'NEW';
+  newPiles[name] = {family: fam, from: from || ''}; saveNew(name); return name;
+}
 function allPiles(){
   const out = basePiles.map(p => ({id: p.id, family: p.family, isNew: false}));
   Object.keys(newPiles).sort().forEach(id => out.push({id, family: newPiles[id].family, isNew: true}));
@@ -175,18 +206,26 @@ function asideOf(id){ // set aside from this home pile: legacy outliers or moves
 }
 function statusOf(id){ const s = state[id]; if(!s) return null; if (s.merge_into) return 'merge'; return s.verdict; }
 
+function barBottom(){ const r = document.querySelector('.bar').getBoundingClientRect(); return Math.max(0, r.bottom); }
 function render(){
   const show = document.getElementById('show').value;
   const piles = allPiles();
   const famTotals = {};
   piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length; });
-  const fams = Object.keys(famTotals).sort((a, b) => famTotals[b] - famTotals[a]);
-  const list = document.getElementById('list'); list.textContent = '';
+  const fams = famOrder.concat(Object.keys(famTotals).filter(f => !(f in baseFam)).sort());
+  const list = document.getElementById('list');
+  // Keep the person's place: the first pile on screen stays where it was, and a half-typed note or pile name survives.
+  const ae = document.activeElement;
+  const keep = ae && ae.id && ae.tagName === 'INPUT' && list.contains(ae) ? {id: ae.id, v: ae.value, a: ae.selectionStart, b: ae.selectionEnd} : null;
+  let anchor = null; const top = barBottom();
+  for (const el of list.querySelectorAll('.pile')){ const r = el.getBoundingClientRect(); if (r.bottom > top){ anchor = {id: el.id, y: r.top}; break; } }
+  list.textContent = '';
   for (const f of fams){
+    if (!(f in famTotals)) continue;
     const ps = piles.filter(p => p.family === f)
       .map(p => ({...p, members: membersOf(p.id)}))
       .filter(p => p.members.length || asideOf(p.id).length || p.isNew)
-      .sort((a, b) => (a.isNew - b.isNew) || b.members.length - a.members.length)
+      .sort((a, b) => (a.isNew - b.isNew) || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id))
       .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
     if (!ps.length) continue;
     const sec = document.createElement('section'); sec.className = 'fam';
@@ -196,9 +235,21 @@ function render(){
     ps.forEach(p => sec.append(pileEl(p, piles)));
     list.append(sec);
   }
-  const done = piles.filter(p => statusOf(p.id)).length;
-  document.getElementById('prog').textContent = done + ' of ' + piles.length + ' piles settled';
-  document.getElementById('fill').style.width = (100 * done / piles.length) + '%';
+  // Count only piles that still hold tiles (or were settled): an emptied pile cannot be settled, and the bad-cut pile is no sign.
+  const live = piles.filter(p => p.id !== 'BAD-CUT' && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
+  const done = live.filter(p => statusOf(p.id)).length;
+  document.getElementById('prog').textContent = done + ' of ' + live.length + ' piles settled';
+  document.getElementById('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
+  document.documentElement.style.setProperty('--barh', (document.querySelector('.bar').offsetHeight + 8) + 'px');
+  if (anchor){ const el = document.getElementById(anchor.id); if (el){ const dy = el.getBoundingClientRect().top - anchor.y; if (Math.abs(dy) > 1) window.scrollBy(0, dy); } }
+  if (keep){ const el = document.getElementById(keep.id); if (el && el !== document.activeElement){ el.value = keep.v; el.focus({preventScroll: true});
+    try { el.setSelectionRange(keep.a, keep.b); } catch(e){} } }
+}
+function jumpTo(id){
+  let t = document.getElementById('pile_' + key(id));
+  if (!t && document.getElementById('show').value !== 'all'){ document.getElementById('show').value = 'all'; render(); t = document.getElementById('pile_' + key(id)); }
+  if (!t) return;
+  t.scrollIntoView({block: 'start'}); t.classList.add('flash'); setTimeout(() => t.classList.remove('flash'), 1600);
 }
 
 function tileEl(sid, pid, cls){
@@ -227,7 +278,7 @@ function pileEl(p, piles){
   ph.append(nm, ct, chip); el.append(ph); el.id = 'pile_' + key(p.id);
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
-    near.forEach(n => { const b = btn(n, false, () => { const t = document.getElementById('pile_' + key(n)); if (t) t.scrollIntoView({block: 'start'}); }); b.title = 'Jump to pile ' + n; nr.append(b); });
+    near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
     el.append(nr); }
   const tiles = document.createElement('div'); tiles.className = 'tiles';
   p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
@@ -241,16 +292,11 @@ function pileEl(p, piles){
     piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
       .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); dest.append(o); });
     dest.onchange = () => { if (dest.value) moveSel(p.id, dest.value); };
-    const nn = document.createElement('input'); nn.type = 'text'; nn.id = 'nn_' + key(p.id); nn.placeholder = 'New pile name, e.g. X-2BARS';
-    const bNew = btn('New pile', false, () => {
-      const name = nn.value.trim().toUpperCase().replace(/\s+/g, '-').replace(/[^A-Z0-9_.\-]/g, '');
-      if (!name){ nn.focus(); nn.placeholder = 'Type a name first'; return; }
-      if (!newPiles[name] && !baseIds.has(name)){ newPiles[name] = {family: p.family, from: p.id}; saveNew(name); }
-      moveSel(p.id, name);
-    });
+    const bNew = btn('New pile', false, () => moveSel(p.id, makePile(p.id)));   // named by the page, never typed
+    bNew.title = 'Start a new sign for the selected tiles (named ' + nextPileName(p.id) + ')';
     const bAside = btn('Set aside', false, () => moveSel(p.id, 'ASIDE'));
     const bClear = btn('Clear selection', false, () => { chosen.clear(); render(); });
-    mb.append(lab, dest, nn, bNew, bAside, bClear);
+    mb.append(lab, dest, bNew, bAside, bClear);
     el.append(mb);
   }
   const acts = document.createElement('div'); acts.className = 'acts';
@@ -269,16 +315,18 @@ function pileEl(p, piles){
 }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
-const history = [];   // each entry: [[sid, previous destination or null], ...] (+ .cluster/.prevDec for a cluster decision)
+const history = [];   // each entry: [[sid, previous destination or null], ...] (+ .cluster/.prevDec for a cluster decision, .checks for "keep")
+function updateUndo(){ document.getElementById('undo').disabled = !history.length; document.getElementById('ctxUndo').disabled = !history.length; }
 function remember(sids){ const e = sids.map(sid => [sid, moves[sid] || null]); history.push(e); if (history.length > 200) history.shift();
-  document.getElementById('undo').disabled = false; return e; }
+  updateUndo(); return e; }
 function undo(){
   const last = history.pop(); if (!last) return;
   hideOffer();
   last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; saveMove(sid); });
   if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
-  document.getElementById('undo').disabled = !history.length;
-  saveEl().textContent = 'Undid the last move (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'); render();
+  (last.checks || []).forEach(([sid, prev]) => { if (prev) checked[sid] = prev; else delete checked[sid]; saveCheck(sid); });
+  updateUndo();
+  note_(last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last move (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)')); render();
   return last;
 }
 function moveSel(from, to){
@@ -327,60 +375,105 @@ function applyCluster(){
     saveMove(sid); });
   clusterDec[o.c] = {to: o.to, from_sid: o.sids[0], n: clusterMembers[o.c].length};
   saveCluster(o.c);
-  saveEl().textContent = 'Moved ' + o.rest.length + ' more tiles of cluster ' + o.c + ' to ' + o.to;
+  note_('Moved ' + o.rest.length + ' more tiles of cluster ' + o.c + ' to ' + o.to);
   render();
-  if (!document.getElementById('ctx').hidden) showCtx(ctxSid, ctxPid, true);
+  if (!document.getElementById('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true);
 }
 document.getElementById('offerYes').onclick = applyCluster;
 document.getElementById('offerNo').onclick = hideOffer;
 
-let open_ = 0, failed = false;
-const inflight = {};   // doc path -> writes not yet confirmed; snapshots for these are ignored
+// Saving (QA 3 Oct 2026). Each document path ('m/<sid>', 'p/<pile>', ...) has one writer that reads the CURRENT state
+// when it runs, and at most one write per path is in flight (the db contract: one write at a time per document), so a
+// move followed at once by its undo can no longer land in the wrong order. Writes made before storage answers are held
+// and sent when it connects (they used to be dropped). A refused write is retried once; if it still fails it stays
+// listed, on screen, with a "Try again" button, and the status line no longer sticks at "Saving 1...".
+let dbMode = 'connecting';     // 'connecting' | 'db' | 'local'
+let open_ = 0, lastErr = '';
+const writers = {}, running = {}, again = {}, failedPaths = new Set();
+const inflight = {};   // doc path -> true while a local change is not yet confirmed; snapshots for these are ignored
 const saveEl = () => document.getElementById('save');
-function queue(fn){
-  const el = saveEl();
-  if (!col){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; persistLocal(); return; }
-  open_++; el.textContent = 'Saving ' + open_ + '…'; el.className = 'save';
-  Promise.resolve().then(fn).then(() => { if (--open_ === 0 && !failed){ el.textContent = 'All changes saved'; el.className = 'save'; } else if (open_) el.textContent = 'Saving ' + open_ + '…'; },
-    e => { open_--; failed = true; el.textContent = 'Not saved: ' + (e && e.message || 'storage refused the write') + '. Your choices stay on screen; reload and redo the last step.'; el.className = 'save err'; });
+function note_(t){ if (failedPaths.size) return; const el = saveEl(); el.textContent = t; el.className = 'save'; }
+function status(){
+  const el = saveEl(), ce = document.getElementById('ctxErr');   // a refused save is shown in the open dialog too
+  ce.hidden = !(failedPaths.size && dbMode === 'db'); ce.textContent = '';
+  if (dbMode === 'local'){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; return; }
+  if (failedPaths.size){ el.className = 'save err'; el.textContent = 'Not saved: ' + failedPaths.size + (failedPaths.size === 1 ? ' change' : ' changes') +
+      ' (' + lastErr + '). They are still on screen. ';
+    ce.textContent = el.textContent;
+    const retry = () => { [...failedPaths].forEach(p => { failedPaths.delete(p); pump(p); }); status(); };
+    [[el, 'retry'], [ce, 'ctxRetry']].forEach(([box, id]) => { const b = document.createElement('button'); b.type = 'button'; b.id = id; b.textContent = 'Try again'; b.onclick = retry; box.append(b); });
+    return; }
+  el.className = 'save';
+  if (dbMode === 'connecting'){ el.textContent = Object.keys(writers).length ? 'Connecting to storage… your choices will be saved as soon as it answers' : 'Connecting to storage…'; return; }
+  el.textContent = open_ ? 'Saving ' + open_ + '…' : 'All changes saved';
 }
-function track(path, fn){ inflight[path] = (inflight[path] || 0) + 1;
-  queue(() => fn().finally(() => { inflight[path]--; })); }
-function save(id){ const s = st(id);
-  const body = {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: new Date().toISOString()};
-  track('p/' + id, () => col.doc(key(id)).set(body)); }
+function pump(path){
+  if (running[path]){ again[path] = true; return; }
+  running[path] = true; open_++; status();
+  const attempt = n => Promise.resolve().then(writers[path]).catch(e => {
+    const code = (e && e.code) || '';
+    if (n === 0 && code !== 'invalid_argument' && code !== 'quota_exceeded' && code !== 'revoked')
+      return new Promise(r => setTimeout(r, 300 + Math.random() * 500)).then(() => attempt(1));
+    throw e; });
+  attempt(0).then(() => { failedPaths.delete(path); },
+    e => { failedPaths.add(path); lastErr = (e && (e.message || e.code)) || 'storage refused the write'; })
+    .finally(() => { running[path] = false; open_--;
+      if (again[path]){ again[path] = false; failedPaths.delete(path); pump(path); return; }
+      if (!failedPaths.has(path)){ delete writers[path]; delete inflight[path]; }
+      status(); });
+}
+function track(path, fn){
+  writers[path] = fn; inflight[path] = true; failedPaths.delete(path);
+  if (dbMode === 'local'){ delete writers[path]; delete inflight[path]; persistLocal(); status(); return; }
+  if (dbMode === 'connecting'){ status(); return; }   // sent by connect()
+  pump(path);
+}
+const stamp = () => new Date().toISOString();
+function save(id){
+  track('p/' + id, () => { const s = st(id);
+    return col.doc(key(id)).set({pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: stamp()}); }); }
 function saveMove(sid){
-  const to = moves[sid];
-  if (to) track('m/' + sid, () => mcol.doc(key(sid)).set({sid, from: homeOf[sid], to, updated: new Date().toISOString()}));
-  else track('m/' + sid, () => mcol.doc(key(sid)).delete());
-}
-function saveNew(id){ track('n/' + id, () => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
+  track('m/' + sid, () => moves[sid] ? mcol.doc(key(sid)).set({sid, from: homeOf[sid], to: moves[sid], updated: stamp()}) : mcol.doc(key(sid)).delete()); }
+function saveNew(id){
+  track('n/' + id, () => newPiles[id] ? ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: stamp()}) : ncol.doc(key(id)).delete()); }
 function saveCluster(c){
-  const d = clusterDec[c];
-  if (d) track('c/' + c, () => ccol.doc(key(c)).set({cluster: c, to: d.to, from_sid: d.from_sid, n: d.n, source: DATA.clusterSource || '', atlas: DATA.atlas || '', updated: new Date().toISOString()}));
-  else track('c/' + c, () => ccol.doc(key(c)).delete());
-}
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec})); } catch(e){} }
+  track('c/' + c, () => { const d = clusterDec[c];
+    return d ? ccol.doc(key(c)).set({cluster: c, to: d.to, from_sid: d.from_sid, n: d.n, source: DATA.clusterSource || '', atlas: DATA.atlas || '', updated: stamp()})
+             : ccol.doc(key(c)).delete(); }); }
+function saveCheck(sid){
+  track('k/' + sid, () => checked[sid] ? kcol.doc(key(sid)).set({sid, pile: checked[sid], updated: stamp()}) : kcol.doc(key(sid)).delete()); }
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked})); } catch(e){} }
 
 let clickMode = 'sel', ctxSid = null, ctxPid = null;
 const pageImgs = {};
 function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
 function drawCtx(){
-  const it = itemBySid[ctxSid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
-  const z = +document.getElementById('ctxZ').value;
+  const sid = ctxSid, it = itemBySid[sid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
   const draw = () => {
+    // a page image that finishes loading after the person has stepped on must not paint over the tile now shown
+    if (sid !== ctxSid || document.getElementById('ctx').hidden) return;
+    const z = +document.getElementById('ctxZ').value;
     const x0 = Math.max(0, x - 180), y0 = Math.max(0, y - Math.round(h * 1.8) - 10);
     const x1 = Math.min(im.naturalWidth, x + w + 180), y1 = Math.min(im.naturalHeight, y + h + Math.round(h * 1.4) + 10);
-    const c = document.getElementById('ctxC'); c.width = (x1 - x0) * z; c.height = (y1 - y0) * z;
+    const c = document.getElementById('ctxC'), cv = c.parentElement;
+    // Phone: zoom 3 fits the line to the screen width and the slider scales from there (it used to do nothing, the
+    // canvas being squeezed to 100% width at every zoom). Desktop: zoom = page pixels per source pixel, as before.
+    const phone = window.matchMedia('(max-width:640px)').matches;
+    const cssW = phone ? Math.max(120, Math.round(cv.clientWidth * z / 3)) : (x1 - x0) * z;
+    const s = phone ? cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0) : z;
+    c.width = Math.round((x1 - x0) * s); c.height = Math.round((y1 - y0) * s); c.style.width = cssW + 'px';
     const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, c.width, c.height);
-    // mark the tile's own box with corner brackets (shape, not colour), drawn twice for contrast on any paper
-    const bx = (x - x0) * z, by = (y - y0) * z, bw = w * z, bh = h * z, L = Math.min(14, bw / 2, bh / 2) + 4, pad = 4;
-    [['#ffffff', 6], ['#000000', 3]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
+    // mark the tile's own box with corner brackets (shape, not colour), drawn twice for contrast on any paper;
+    // stroke sizes are in screen pixels, so the brackets stay visible when the canvas is shown smaller than drawn
+    const k = c.width / cssW;
+    const bx = (x - x0) * s, by = (y - y0) * s, bw = w * s, bh = h * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
+    [['#ffffff', 6 * k], ['#000000', 3 * k]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
       [[bx - pad, by - pad, 1, 1], [bx + bw + pad, by - pad, -1, 1], [bx - pad, by + bh + pad, 1, -1], [bx + bw + pad, by + bh + pad, -1, -1]]
         .forEach(([cx, cy, sx, sy]) => { g.moveTo(cx + sx * L, cy); g.lineTo(cx, cy); g.lineTo(cx, cy + sy * L); });
       g.stroke(); });
+    cv.scrollLeft = Math.max(0, (bx + bw / 2) / k - cv.clientWidth / 2);   // keep the bracketed sign in view at any zoom
   };
-  if (im.complete && im.naturalWidth) draw(); else im.onload = draw;
+  if (im.complete && im.naturalWidth) draw(); else im.addEventListener('load', draw, {once: true});
 }
 let ctxList = [];
 let ctxListName = 'in this pile';
@@ -393,46 +486,59 @@ function showCtx(sid, pid, keepList, list, listName){
   document.getElementById('ctxPrev').disabled = i <= 0; document.getElementById('ctxNext').disabled = i >= ctxList.length - 1;
   const cur = moves[sid] || homeOf[sid];
   const dest = document.getElementById('ctxDest'); dest.length = 1;
-  allPiles().filter(q => q.id !== cur).sort((a, b) => (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
-    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + '  (' + q.family + ')'; dest.append(o); });
-  document.getElementById('ctxT').textContent = 'Tile ' + sid + ' in pile ' + pid;
+  allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && b.id !== 'BAD-CUT') - (a.isNew && a.id !== 'BAD-CUT')) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
+    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.isNew && q.id !== 'BAD-CUT' ? '  (new pile)' : '  (' + q.family + ')'); dest.append(o); });
+  document.getElementById('ctxNewB').title = 'Start a new sign for this tile (named ' + nextPileName(cur === 'ASIDE' || cur === 'BAD-CUT' ? homeOf[sid] : cur) + ')';
+  document.getElementById('ctxT').textContent = 'Tile ' + sid + (moves[sid] === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' :
+    moves[sid] === 'BAD-CUT' ? ' (marked bad cut)' : ' in pile ' + pid);
+  const q = document.getElementById('ctxQ'); q.hidden = !focusQ[sid]; q.textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
+  const kb = document.getElementById('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'BAD-CUT';
+  kb.textContent = checked[sid] && checked[sid] === cur ? '✓ Kept in ' + cur : 'Right pile: keep it in ' + cur;
   document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.';
   document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
+  updateUndo();
   document.getElementById('ctx').hidden = false; drawCtx();
 }
-function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, moves[s2] || homeOf[s2], true); } }
+function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
+function ctxAdvance(sid){
+  const i = ctxList.indexOf(sid);
+  if (i >= 0 && i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, pileOf(s2), true); }
+  else { document.getElementById('ctxMsg').textContent += ' That was the last tile in this list.'; showCtx(sid, pileOf(sid), true); }
+}
 function ctxMove(to){
-  const sid = ctxSid, from = moves[sid] || homeOf[sid];
+  const sid = ctxSid, from = pileOf(sid);
   remember([sid]);
   if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
   const hs = state[homeOf[sid]];
   if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
   saveMove(sid); sel(from).delete(sid);
-  document.getElementById('ctxMsg').textContent = 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to) + '. Showing the next tile.';
+  document.getElementById('ctxMsg').textContent = 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to) + '. Showing the next tile.';
   render();
-  const i = ctxList.indexOf(sid);
-  if (i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, moves[s2] || homeOf[s2], true); } else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, moves[sid] || homeOf[sid], true); }
+  ctxAdvance(sid);
   offerCluster([sid], to);
 }
+function ctxKeep(){
+  const sid = ctxSid, cur = moves[sid] || homeOf[sid];
+  const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
+  checked[sid] = cur; saveCheck(sid); hideOffer();
+  document.getElementById('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
+  render(); ctxAdvance(sid);
+}
+document.getElementById('ctxKeep').onclick = ctxKeep;
 document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
 document.getElementById('undo').onclick = undo;
 document.getElementById('order').onchange = render;
-document.getElementById('ctxUndo').onclick = () => { const last = undo(); if (last && last.length === 1 && ctxList.includes(last[0][0])) {
-  document.getElementById('ctxMsg').textContent = 'Undid the move of ' + last[0][0] + '. Showing it again.'; showCtx(last[0][0], moves[last[0][0]] || homeOf[last[0][0]], true); } };
+document.getElementById('ctxUndo').onclick = () => { const last = undo(); if (!last) return;
+  const one = last.length === 1 ? last[0][0] : last.checks ? last.checks[0][0] : null;
+  if (one && ctxList.includes(one)){ document.getElementById('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
+  else { document.getElementById('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
 document.getElementById('ctxNext').onclick = () => ctxStep(1);
 document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
 document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
 document.getElementById('ctxBad').onclick = () => {   // tile box cut in the wrong place: parked in one pile for recutting
   if (!newPiles['BAD-CUT']){ newPiles['BAD-CUT'] = {family: 'Bad cuts (to recut)', from: ctxPid}; saveNew('BAD-CUT'); }
   ctxMove('BAD-CUT'); };
-document.getElementById('ctxNewB').onclick = () => {
-  const inp = document.getElementById('ctxNew');
-  const name = inp.value.trim().toUpperCase().replace(/\s+/g, '-').replace(/[^A-Z0-9_.\-]/g, '');
-  if (!name){ inp.focus(); inp.placeholder = 'Type a name first'; return; }
-  const fam = (allPiles().find(q => q.id === ctxPid) || {}).family || 'NEW';
-  if (!newPiles[name] && !baseIds.has(name)){ newPiles[name] = {family: fam, from: ctxPid}; saveNew(name); }
-  inp.value = ''; ctxMove(name);
-};
+document.getElementById('ctxNewB').onclick = () => ctxMove(makePile(ctxPid === 'BAD-CUT' ? homeOf[ctxSid] : ctxPid));
 document.addEventListener('keydown', e => { if (document.getElementById('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
 const closeCtx = () => { document.getElementById('ctx').hidden = true; };
@@ -441,7 +547,7 @@ document.getElementById('ctxX').onclick = closeCtx;
 document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
 document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!document.getElementById('offer').hidden) hideOffer(); else closeCtx(); } });
 document.getElementById('ctxZ').oninput = drawCtx;
-document.getElementById('ctxSel').onclick = () => { const s = sel(ctxPid); if (s.has(ctxSid)) s.delete(ctxSid); else s.add(ctxSid); closeCtx(); render(); };
+document.getElementById('ctxSel').onclick = () => { const s = sel(ctxPid); if (s.has(ctxSid)) s.delete(ctxSid); else s.add(ctxSid); closeCtx(); render(); jumpTo(ctxPid); };
 const setMode = m => { clickMode = m; document.getElementById('modeSel').classList.toggle('on', m === 'sel'); document.getElementById('modeCtx').classList.toggle('on', m === 'ctx');
   document.getElementById('modeSel').setAttribute('aria-pressed', m === 'sel'); document.getElementById('modeCtx').setAttribute('aria-pressed', m === 'ctx'); };
 document.getElementById('modeSel').onclick = () => setMode('sel');
@@ -459,14 +565,24 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
   const box = document.getElementById('focus'); box.hidden = false;
   document.getElementById('focusNote').textContent = DATA.focusNote || '';
   const wrap = document.getElementById('focusTiles');
-  F.forEach(f => { const it = itemBySid[f.sid]; if (!it) return;
-    const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px';
+  const missing = F.filter(f => !itemBySid[f.sid]).map(f => f.sid);
+  if (missing.length) document.getElementById('focusNote').textContent += (DATA.focusNote ? ' ' : '') + missing.length +
+    (missing.length === 1 ? ' listed sign has' : ' listed signs have') + ' no tile on this page and is not shown: ' + missing.join(', ') + '.';
+  const ids = [...new Set(F.map(x => x.sid).filter(x => itemBySid[x]))];
+  F.forEach(f => { const it = itemBySid[f.sid]; if (!it || wrap.querySelector('[data-sid="' + f.sid + '"]')) return;
+    const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q;
     const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
-    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid], false, F.map(x => x.sid).filter(x => itemBySid[x]), 'in "Check these first"');
-    const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.q;
-    d.append(b, c); wrap.append(d); });
+    b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"');
+    // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog
+    const short = f.q.replace(/\s*\[[^\]]*\]/g, '').split('; ').pop().trim() || f.q;
+    const c = document.createElement('span'); c.className = 'fcap'; c.textContent = short;
+    const ok = document.createElement('span'); ok.className = 'fdone';
+    d.append(b, c, ok); wrap.append(d); });
 })();
+function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach(d => { const sid = d.dataset.sid, to = moves[sid];
+  const msg = to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cut' : to ? 'now ' + to : checked[sid] ? 'kept in ' + checked[sid] : '';
+  d.querySelector('.t').classList.toggle('done', !!msg); d.querySelector('.fdone').textContent = msg ? '\u2713 ' + msg : ''; }); }
 (function(){ const R = DATA.rank || []; if (!R.length) return;
   const box = document.getElementById('rank'); box.hidden = false;
   document.getElementById('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
@@ -475,37 +591,46 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
     const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
-    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid], false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
+    b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
     const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' \u00b7 ' + (+f.score).toFixed(1);
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
     d.append(b, k, c); wrap.append(d); });
 })();
 function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid;
-  const done = !!moves[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
-const render0 = render; render = function(){ render0(); markRankDone(); };
+  const done = !!moves[sid] || !!checked[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
+const render0 = render; render = function(){ render0(); markRankDone(); markFocusDone(); };
 render();
 
+updateUndo();
 (async () => {
   let db = null;
   try { db = await window.claude?.use?.('db'); } catch(e) { db = null; }
   const el = saveEl();
   if (!db){
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); } } catch(e){}
-    el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; render(); return; }
-  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters');
-  el.textContent = 'Connected. Choices save as you go.';
-  const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; };
-  col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile || inflight['p/' + d.pile]) return;
-      if (ch.type === 'removed') { delete state[d.pile]; return; }
-      state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
-    render(); }, fail);
-  mcol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.sid || !itemBySid[d.sid] || inflight['m/' + d.sid]) return;
-      if (ch.type === 'removed') delete moves[d.sid]; else moves[d.sid] = d.to; });
-    render(); }, fail);
-  ncol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.id || inflight['n/' + d.id]) return;
-      if (ch.type === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
-    render(); }, fail);
-  ccol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.cluster || inflight['c/' + d.cluster]) return;
-      if (ch.type === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; }); }, fail);
+    // no store: keep choices in this browser; what the person did before this answer wins over the stored copy
+    const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}};
+    const touched = Object.keys(writers);
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); } } catch(e){}
+    touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
+      const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked]}[k];
+      if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
+    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); render(); return; }
+  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked');
+  dbMode = 'db';
+  const held = Object.keys(writers);
+  el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
+  held.forEach(pump);   // choices made while storage was still connecting
+  const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error') + '. Reload the page.'; el.className = 'save err'; };
+  // A snapshot re-renders only when it changed something (a re-render used to wipe a note being typed), and never
+  // overwrites a local change that is not yet confirmed (inflight).
+  const listen = (c, path, apply) => c.onSnapshot(snap => { let changed = false;
+    snap.docChanges().forEach(ch => { const d = ch.doc.data(); const id = d && path(d); if (!id || inflight[id]) return; if (apply(ch.type, d) !== false) changed = true; });
+    if (changed){ render(); if (!document.getElementById('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true); } }, fail);
+  listen(col, d => d.pile && 'p/' + d.pile, (t, d) => { if (t === 'removed') delete state[d.pile];
+    else state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
+  listen(mcol, d => d.sid && itemBySid[d.sid] && 'm/' + d.sid, (t, d) => { if (t === 'removed') delete moves[d.sid]; else moves[d.sid] = d.to; });
+  listen(ncol, d => d.id && 'n/' + d.id, (t, d) => { if (t === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
+  listen(ccol, d => d.cluster && 'c/' + d.cluster, (t, d) => { if (t === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; return false; });
+  listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; });
 })();
 </script>

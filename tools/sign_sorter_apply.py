@@ -16,7 +16,10 @@ row per sign: sid, old_sign, new_sign, status, where status is one of
   cluster-moved  the person made a cluster decision (DIR/clusters/*.json, TX-SORTER 3 Oct 2026) and this tile, of
               that cluster, had no move of its own: it follows the decision (a sibling letter's tile, or a save from a
               page built before the per-tile moves landed)
-A pile's verdict "same" (all one sign) is recorded in the summary as confirmed. Nothing is guessed: a tile the
+A pile's verdict "same" (all one sign) is recorded in the summary as confirmed. A tile the person confirmed in
+place ("Right pile: keep it", DIR/checked/*.json {sid, pile}, QA pass 3 Oct 2026) stays 'kept' and is listed in the
+summary's confirmed_tiles (only while it has no move of its own). New piles are named by the page (the tile's pile
+plus -b, -c, ...: T51-b) and come out as new sign labels like any other pile name. Nothing is guessed: a tile the
 person did not touch keeps its old label. A save with no clusters collection (every sorter published before 3 Oct
 2026, Birago and Florence included) applies exactly as before.
 
@@ -42,7 +45,7 @@ def load(dirp, coll):
     return out
 
 
-def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None):
+def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None, checked=()):
     merge = {p['pile']: p['merge_into'] for p in piles if p.get('merge_into')}
     verdict = {p['pile']: p.get('verdict') for p in piles}
     outliers = {sid for p in piles if not p.get('merge_into') for sid in (p.get('outliers') or [])}
@@ -85,6 +88,9 @@ def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None):
         'not_letter_piles': sorted(p for p, v in verdict.items() if v == 'mark'),
         'merges': merge, 'new_piles': sorted(n['id'] for n in newpiles if n.get('id')),
     }
+    kept_ok = {k['sid'] for k in checked if k.get('sid')} - set(mv)
+    if kept_ok:
+        summary['confirmed_tiles'] = sorted(kept_ok)
     if cdec:
         summary['cluster_decisions'] = {c: final(t) for c, t in cdec.items()}
     return rows, summary
@@ -164,7 +170,7 @@ def main(argv=None):
             if r.get('kind', 'sign') == 'sign' and sid and r.get('cluster'):
                 cluster_of[sid] = r['cluster']
     piles, moves, cdocs = load(a.db, 'piles'), load(a.db, 'moves'), load(a.db, 'clusters')
-    rows, summary = apply(labels, piles, moves, load(a.db, 'newpiles'), cdocs, cluster_of)
+    rows, summary = apply(labels, piles, moves, load(a.db, 'newpiles'), cdocs, cluster_of, load(a.db, 'checked'))
     if a.atlas_labels:
         L = json.load(open(a.atlas_labels))
         summary['atlas'] = write_atlas(L, rows, piles, moves, cdocs, cluster_of, a.source)
