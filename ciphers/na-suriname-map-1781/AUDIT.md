@@ -318,3 +318,5 @@ did not exist before this audit.**
   The GAPS22 ROOM.md line "reading ready" is a solver's gate statement and not a novelty claim; it is left as is.
 
 No SECOND-OPINIONS-QUEUE.tsv row: 2077 is below N3. No CONTRIBUTIONS or outreach.
+
+Reading revised by GAPS23/GAPS24 (3 Oct 2026, solver, rule 10 propagation, not a verifier pass): 2077 was H 500 M 106 U 52 when this item was classed and is now H 500 C 7 M 101 U 50, M+U 0.229 (2078 Nota known-plaintext check, passes/nota2078_gaps23 and passes/nota2078_gaps24). Re-class pending.

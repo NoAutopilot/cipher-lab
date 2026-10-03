@@ -1,0 +1,13 @@
+pair	line	pos	value	grade	aligned_2078	ctx_ok	value_ok	action
+77a-78B	2077_L05	2	g|l	M	l	no	yes	keep-unsupported-pair
+77a-78B	2077_L05	4	p	M	p	no	yes	keep-unsupported-pair
+77a-78B	2077_L05	9	e	M	e	no	yes	keep-unsupported-pair
+77e-78h	2077_L06	4	g|l	M	g	yes	yes	APPLY
+77e-78h	2077_L06	5	t	M	e	yes	no	keep
+77e-78h	2077_L06	7	p	M	n	yes	no	keep
+77e-78h	2077_L06	8	i	M	g	yes	no	keep
+77k-78s	2077_L08	23	?	U	a	no	yes	keep-unsupported-pair
+77k-78s	2077_L08	37	g|l	M	l	yes	yes	keep-unsupported-pair
+77k-78s	2077_L08	38	?	U	i	yes	yes	keep-unsupported-pair
+77l-78t	2077_L08	50	o	M	l	yes	no	keep-unsupported-pair
+77l-78t	2077_L08	51	g|l	M	l	yes	yes	keep-unsupported-pair

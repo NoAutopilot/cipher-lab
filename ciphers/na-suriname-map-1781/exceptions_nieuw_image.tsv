@@ -61,3 +61,4 @@ line	pos	value	grade	reason
 2077_L13	3	e	C	GAPS23 2078 Nota parallel: 2077 u ~ 2078 d, unkeyed [d-hook] aligned to e with H neighbours matching
 2077_L12	10	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n 'Bakkerÿ, defect', k|i aligned to k with H neighbours matching
 2077_L12	11	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n, k|i aligned to k with H neighbours matching
+2077_L06	4	g	C	GAPS24 2078 Nota secondary pair (passes/nota2078_gaps24, prereg 7c2e235b): 2077 e ~ 2078 h (Neeger gevangenhuysen), pair A 1.000 vs N1 p99 0.778 / N2 p99 0.667; g|l aligned to g with H neighbours matching
