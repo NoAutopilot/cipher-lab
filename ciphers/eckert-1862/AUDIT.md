@@ -150,3 +150,125 @@ method were published by the project in 2017.
 
 One-line postmortem: the plaintexts were always N1 and the folder said so implicitly; the faults were an offer
 made without this audit, a "word for word" that T10 contradicts, and no credit to the project's 2017 key words.
+
+# Second audit: GAPS113-171 key recovery and the 32 residue candidates (VERIFY-ECK, 3 Oct 2026)
+
+Verifier session VERIFY-ECK (account-4), 3 Oct 2026, 17:11-17:40 UTC (clock read with `date -u`). Separate from the
+GAPS110-171 solver sessions. Claim under audit: "the mssEC 15 ledger's code words recovered at grade C by aligning
+ledger pages with telegrams printed in OR ser. I (pooled held-out 76/88 vs shuffled-pairing p95 1), dated key column
+(print/key_dates.py), residue decoded; 32 residue entries read with no M token (print/residue/candidates.tsv): 19 on
+print-matched pages (N1 shape), 13 with no print match." No decoding beyond the folder's own `--check` runs.
+
+## A. Re-derivation (rule 7)
+
+| check | result |
+|---|---|
+| `decode.py --check` | exit 0, reading.md current |
+| `print/key_dates.py --check` | exit 0 |
+| `print/residue_decode.py PAGES --check`, `print/residue_candidates.py PAGES --check` | exit 0 on the 57 pages of `print/residue/pages_manifest.tsv`, re-fetched in one CONTENTdm `dmQuery` on callid mssEC 15 (57/57 sha256 match the manifest) |
+| pooled held-out, `print/or_align.py` unchanged, pooled OR text rebuilt (ser. I vols. 5, 9, 10 pt 1-2, 11 pt 1 and 3, 12 pt 1 and 3, 51 pt 1, IA `_djvu.txt`, re-fetched) | seed 1: 76/88 = 0.864, control mean 0.26, p95 1 (1000 draws), align_pairs.tsv byte-identical to the committed one after sort; **new seed 20261003: 76/88, control mean 0.20, p95 1** |
+
+Verdict: **reproduces.** One coverage finding: the same `dmQuery` returns text for two more pages the committed residue
+set lacks, 4979 (12 Feb, "Alden Retain the Koran battery also the other troops for Lamb ...", an entry using Lamb and
+Koran) and 5125 (the cover title). The residue is 58 text pages, not 57; 4979 has never been decoded or searched. It is
+also a sent-side witness for Lamb, the word GAPS171 wanted a second witness for. Next step for the solver lane, not done
+here.
+
+## B. Control audit (rule 3)
+
+- Can the shuffled-pairing control differ from the target? Yes. It re-aligns each test entry to another matched
+  telegram's print window; the 123 telegrams go to Lander, Rosecrans, Hooker, Banks, Halleck, McClellan, McDowell,
+  Fremont, Wool and others, Feb-Jul, so a wrong window rarely puts the fit meaning under the code word. Confirmed.
+- Its weakness: in a wrong window difflib seldom finds a 1-word-for-1-3-words replacement at all, so the control also
+  measures "no alignment" as well as "wrong meaning". I added a second control that keeps the real alignment and permutes
+  the fit meanings across the 84 fit words (scratch script, not committed): mean 1.64 hits, p95 7, p99 10, max 18 in
+  1000 draws, against 76 real. **Pass on both.**
+- Class balance (the AX-NAMES lesson): the 88 scored test occurrences spread over 37 words. The largest single word is
+  humming, 8 of 88; then rampant, indus and welsh, 7 each. Not one dominant class.
+- Were the dated values fitted on the held-out half? No. or_align.py's test scores against `fit`, built only from
+  even-group telegrams' alignments; key.md (and so its dated column) is not read by the scorer. The dated key.md values
+  used for the residue were fitted on all telegrams, which is right for a key: the held-out figure tests the method,
+  not each row.
+- Not covered by the held-out test: whether a key row holds on a *different line*. See C, 4978.2 and 5051.
+
+## C. The 13 "no print match" candidates
+
+Searched 3 Oct 2026: OR ser. I vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1 and 3, 12 pt 1 and 3, 51 pt 1, 53 (local `_djvu.txt`,
+exact phrase after normalising); **OR ser. II vol. 3** (IA waroftherebellio026237mbp) and **ORN ser. I vol. 22**
+(IA officialrecordso0022unse), which no earlier pass searched; `tools/print_check.py` with 18 phrases
+(print/residue/verify_eck_phrases.txt; output print/residue/verify_eck_print_check.tsv): IA be-api full text over all
+items, Google Books (key, country=US; quoted-phrase counts of 300+ are loose matches, read only the named hits),
+OpenAlex, CrossRef; 11 more be-api queries on variant wording (digits for numbers, "to-morrow"); the Decoding the Civil
+War blog through the WordPress API (12 searches; posts read: "Reverse Engineering Lost Codebooks" 21 Apr 2017,
+"Bickering Generals" 18 May 2017, "Buckner Goes Down" 14 Apr 2017).
+
+| entry | date, parties | found | class |
+|---|---|---|---|
+| 4992.2 | 16 Feb, McClellan to Foote | ORN ser. I vol. 22 ("sorry you are wounded ... nearly [600] sailors") | **N1** |
+| 4995.1 | ledger "Feb 7", McClellan to Buell | OR ser. I vol. 7 p.630, dated **February 17, 7.30 a.m.** (Prussian smooth bores) | **N1** |
+| 4995.2 | 17 Feb, McClellan to Halleck (Buckner, Pillow to Fort Warren) | OR ser. II vol. 3 | **N1** |
+| 4997.2 | 18 Feb, Colburn to Halleck (Tilghman to Fort Warren) | OR ser. II vol. 3 | **N1** |
+| 5005.2 | 20 Feb, McClellan to Halleck (original order, Fort Warren) | OR ser. II vol. 3 | **N1** |
+| 4978.1 | 11 Feb, Colburn to Buell (3,500 rifles) | not in print by these searches; the clear text is the Huntington's published volunteer transcription; its one code word Alvord = Buell was printed by the DCW blog in 2017 | **N1** |
+| 4998.2 | 18 Feb, Van Vliet to Hooker (barges) | same; one code word Andes = McClellan (DCW blog 2017) | **N1** |
+| 5008.1 | 21 Feb, Stanton to Halleck (General Smith spared?) | same; Alden = Halleck (DCW blog 2017) | **N1** |
+| 5036.2 | 3 Mar, Stanton to Halleck (Smith nominated) | same; Alden = Halleck (DCW blog 2017) | **N1** |
+| 4992.3 | 16 Feb, McClellan to Buell ("how many in Sermon line") | not found; Alvord and Andes printed by the DCW blog 2017; **Sermon = Bowling Green** (key.md C, from OR 7 pp.584, 624, 626) printed nowhere found | **N3** (the one code word only) |
+| 4978.2 | 12 Feb, Stanton to "Andes" ("Dawn General Jin ... light draught Steamer") | reading **wrong**: decoded [McClellan], but the addressee is the commander at Fort Monroe | no class: withdrawn |
+| 5051.1 | 16 Mar, McClellan to "Andes commanding Fort Monroe" | reading **wrong** the same way: McClellan signs it, so Andes is not McClellan here | no class: withdrawn |
+| 5051.2 | 16 Mar, the coded copy of 5051.1 ("for Dawn") | reading **wrong**, same; Dawn and Jin, Davis, Darby (4978.2) unread | no class: withdrawn |
+
+**The 19 print-matched entries:** N1, provisionally. Their page is matched to print, but a page match is not proof for
+every entry on it (GAPS167's own caveat), and this session did not verify them entry by entry. Nothing in them may be
+called new.
+
+**Why 4978.2/5051 fail.** key.md's dated rule reads Andes = McClellan from 1 Feb to 4 Jul whatever the line. 5051.1
+gives "For Andes commanding Fort Monroe" in half-clear form, and its twin 5051.2 replaces "Fort Monroe" with Dawn. On the
+Fort Monroe line, then, Andes is that commander (Wool, in Feb-Mar 1862). This is an inference, grade I; it is not added
+to key.md (no decoding here). These entries cleared GAPS167's "no M token" filter because the wrong value carries grade
+C, and the held-out test cannot catch this: every pooled telegram is on the western, Potomac or Shenandoah lines.
+**Lesson:** a dated key also needs a line or recipient scope before its C grade transfers to a telegram on a line no
+witness covers.
+
+## D. Prior art on the key (correction to section 1 of this file)
+
+Section 1 above credits the Decoding the Civil War blog with three arbitraries. It printed more. "Reverse Engineering
+Lost Codebooks" (21 Apr 2017,
+https://decodingthecivilwar.wordpress.com/2017/04/21/reverse-engineering-lost-codebooks/) gives, from Lincoln's 21 Apr
+1862 telegram to McClellan: Andes = McClellan, Palate = bridge, Rampant = enemy, Anthon = McDowell, Label [the ledger's
+Sabel] = Rappahannock River, Berlin = Lincoln. "Buckner Goes Down" (14 Apr 2017) prints a received telegram addressed
+"Indus Ocean" (19 Feb 1862) without decoding Indus. So those key.md rows for April 1862 (rampant, palate, Anthon =
+McDowell, Berlin, Sabel) are **published**, credited to the Huntington's DCW team (the post names the project leader only as "Mario"). The
+other rows are ours.
+
+## E. Classes, key source, sentences
+
+| scope | class | key |
+|---|---|---|
+| ten readings T1-T10 (section 1) | N1, unchanged | ours (C, from OR prints); Andes/Alden/Alvord published (DCW 2017) |
+| 9 of the 13 no-print candidates plus the 5 found in OR ser. II vol. 3, OR I/7 and ORN I/22 (C above) | N1 | ours, plus published rows |
+| 4992.3 | N3 for "Sermon = Bowling Green" in this entry; the rest of its text is N1 | ours (OR 7 alignment) |
+| 4978.2, 5051.1, 5051.2 | none (reading wrong) | n/a |
+| 19 print-matched residue entries | N1 (provisional, page-level) | ours |
+| key recovery method (pooled held-out) | reproduces; controls pass | ours from print alignment (grade C), with DCW 2017 prior art for 8 arbitraries |
+
+Safe sentence: "Aligning the 1862 Eckert 'Ciphers Sent' ledger (Huntington mssEC 15) with telegrams printed in the
+Official Records recovers code-word meanings at grade C (held-out 76/88 against shuffled controls at 1 and 18 hits). The
+telegrams those words occur in are almost all in print already, or their clear text is published in the Huntington's own
+transcription; one code word in one unprinted entry (Sermon = Bowling Green, 16 Feb 1862) was found in no earlier
+publication by our search."
+
+Unsafe sentence: "13 previously unread Civil War telegrams decoded." Five are printed in OR/ORN, four were readable from
+the published transcription plus the DCW team's published arbitraries, and three were decoded wrongly.
+
+Not searched (limits on the N3): Sears, *Civil War Papers of George B. McClellan* (1989; not full text online), OR
+ser. III vol. 1, the Stanton papers (LC; no edition), JSTOR (no row queued: one code word in one telegram does not
+warrant one). Second opinion queued as SO-ECK-4992 for the N3.
+
+## F. Postmortem
+
+The "13 with no print match" figure counted only the OR volumes the lane had grepped (ser. I). Prisoner traffic (ser.
+II) and naval traffic (ORN) were never searched, and or_match's 5-grams miss telegrams whose numbers the ledger spells
+out ("thirty five hundred") while the print uses digits (4995.1). "No M token" was used as a quality signal although an
+off-line C value passes it. Corrections made: NOTES.md (VERIFY-ECK section). candidates.tsv is generated and left as
+is; its "page in print" column must not be read as an entry-level verdict.
