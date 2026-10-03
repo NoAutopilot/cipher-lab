@@ -460,3 +460,27 @@ move) or a two-stage solve (base 22 letters first, then the softness split), bui
 a measured judge calibration for ru19_soft (leave-one-book-out FN rate) before trusting any further Russian FAIL, ~$2.
 Verdict: keep going (no outside blocker), but the homophonic family on this target is near exhausted.
 
+
+## A2P4-KAL5, ru19_soft judge calibration, 3 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2p4-kal5.md` (LANE-A2PUSH4, account 2). Script only, no anneal, no hosts.
+Tool shelf named `judge_plaintext.py`; the 16 per-corpus `tools/data/*/holdout_check.py` copies had no alphabet option,
+so a shared `--holdout FILES --N --alphabet` option was added to `tools/judge_plaintext.py` (offline test
+`tools/tests/test_judge_holdout.py`). Pre-registration in HYPOTHESES.md (commit f613b8ef) before any score.
+
+ru19_soft is one file per scheme, so folds are 8 book groups of the Synodal Bible rebuilt with the same command: 8 folds,
+one independent source. Leave-one-group-out false-negative rate on the in-model real_p05 gate: **s3_soft N 978 38.4%
+(folds 14.5-49.5%, 3.4x); s3_soft N 1066 45.9% (26.5-56.0%, 2.1x); s3p_soft N 1066 40.1% (25.0-48.5%, 1.9x).** Per-fold
+table and held-out p05/p01/min in HYPOTHESES.md "A2P4-KAL5 result" and tools/data/ru19_soft/README.md.
+
+**Correction to A2P4-KAL4 (above).** By rule 3 (one source, wide spread) the ru19_soft real_p05 gate is of unknown
+reliability at this N, so the 5-ru-soft-s3-A FAIL is re-labelled **"judge cannot decide" on the real_p05 gate**, not a
+control-backed negative. Beside it, unchanged: the target scored -1.992, below every one of 1,600 held-out real Russian
+windows at N 978 (minimum -1.201, p01 -1.054) and 0.25 above the shuffled null's p99 (-2.242). On the held-out
+distribution as gate the s3-soft decode still fails by a wide margin; the relabel concerns the gate's calibration, not
+the size of the miss.
+
+**Next steps.** Score Russian candidates against the held-out distribution (p01 about -1.05 at N about 1000) as well as
+real_p05; the ru19_lat corpora behind GOLD-KAL2/GOLD-KAL4's Russian FAILs are uncalibrated the same way (same `--holdout`
+run, ~$1). The S3' unit stays untested (control 0.723); the different instrument named by A2P4-KAL4 (paired soft/hard
+move set or two-stage solve, ~$6) is unchanged. Verdict: keep going (no outside blocker).

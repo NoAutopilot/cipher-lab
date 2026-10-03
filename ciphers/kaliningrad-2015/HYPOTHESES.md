@@ -642,4 +642,24 @@ shuffled-target check owed. Rule 10: nothing here is a reading. Spec judge block
 | 3 Oct 2026 01:07 | homophonic | N=1066 K=28 restarts=20 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz profile=target | 1 | 0.998 (0.995-0.999) | -3386.829 | FAIL language: score=-1.572, null_p99=-2.075, real_p05=-0.807, real_median=-0.782, mode=both, N=1066 | yes (gate 0.9) | A2-KAL3 2-de-B, restarts 20 seeds 5, control before target |
 | 3 Oct 2026 17:34 | homophonic | N=978 K=36 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft | 1-5 | 0.723 (0.105-0.994) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2P4-KAL4 5-ru-soft-s3p-A, conv A K36, restarts 20 seeds 5, control before target |
 | 3 Oct 2026 17:41 | homophonic | N=1066 K=28 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft | 1-5 | 0.842 (0.306-0.999) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2P4-KAL4 5-ru-soft-s3p-B, conv B K28, restarts 20 seeds 5, control before target |
-| 3 Oct 2026 17:46 | homophonic | N=978 K=36 restarts=20 corpus=s3_soft.txt.gz profile=target,alphabet=ru-s3-soft | 1 | 0.995 (0.988-0.999) | -3727.287 | FAIL language: score=-1.992, null_p99=-2.242, real_p05=-0.859, real_median=-0.798, mode=both, N=978 | yes (gate 0.9) | A2P4-KAL4 5-ru-soft-s3-A, conv A K36, restarts 20 seeds 5, control before target |
+| 3 Oct 2026 17:46 | homophonic | N=978 K=36 restarts=20 corpus=s3_soft.txt.gz profile=target,alphabet=ru-s3-soft | 1 | 0.995 (0.988-0.999) | -3727.287 | FAIL language: score=-1.992, null_p99=-2.242, real_p05=-0.859, real_median=-0.798, mode=both, N=978 | yes (gate 0.9) | A2P4-KAL4 5-ru-soft-s3-A, conv A K36, restarts 20 seeds 5, control before target; **A2P4-KAL5 correction:** ru19_soft real_p05 gate of unknown reliability (leave-one-book-group-out FN 38.4% at N 978, folds 14.5-49.5%, one source) -> on the real_p05 gate "judge cannot decide", not a negative; the score -1.992 is below every held-out real window (min -1.201, p01 -1.054) |
+
+### A2P4-KAL5 result (3 Oct 2026; pre-registration commit f613b8ef before any score)
+
+`python3 tools/judge_plaintext.py --holdout <8 fold files> --N <N> --alphabet <A>`, samples 200, seed 1; logs
+`tools/data/ru19_soft/holdout_*.log`. FN = held-out window at or below the in-model real_p05.
+
+| corpus, N | per fold FN pct (Pent, Hist, Poet, MajP, MinP, Gosp, Epis, Deut) | blended | spread | held-out p05 / p01 / min |
+|---|---|---|---|---|
+| s3_soft, N 978 | 33.0, 39.5, 46.0, 35.0, 14.5, 42.5, 47.0, 49.5 | 38.4% | 14.5-49.5 (3.4x) | -0.952 / -1.054 / -1.201 |
+| s3_soft, N 1066 | 28.0, 50.0, 55.5, 42.5, 26.5, 52.5, 56.0, 56.0 | 45.9% | 26.5-56.0 (2.1x) | -0.948 / -1.044 / -1.197 |
+| s3p_soft, N 1066 | 26.0, 44.0, 45.5, 38.5, 25.0, 46.5, 46.5, 48.5 | 40.1% | 25.0-48.5 (1.9x) | -0.947 / -1.033 / -1.156 |
+
+Pre-registered reading: one independent source (8 folds of one translation) and a spread of 1.9-3.4x -> the ru19_soft
+judge's real_p05 gate is **of unknown reliability at this N** (rule 3, es17c/EN-FOLDS); about 4 in 10 genuine held-out
+Russian windows fail it. So the 5-ru-soft-s3-A FAIL is re-labelled **"judge cannot decide" on the real_p05 gate**, not a
+control-backed negative. Reported beside it, unchanged by the relabel: the target's -1.992 lies 0.79 below the lowest of
+1,600 held-out real windows at N 978 (-1.201) and 0.25 above the shuffled null's p99 (-2.242), i.e. much nearer the
+shuffle null than any held-out Russian; against the held-out distribution as a gate (la17 README's fairer gate) it fails
+by a wide margin. The same calibration caveat applies to every Russian FAIL scored against ru19_soft; ru19_lat (the
+24-letter schemes, GOLD-KAL2/4) was not measured here.
