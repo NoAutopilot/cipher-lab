@@ -1,6 +1,7 @@
 # decode-1162-modena-ambung-1492
 
 Status: partial
+(VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
@@ -379,6 +380,10 @@ FAIL - decode-1162-modena-ambung-1492 (a PASS is a gate for a verifier, not a re
 Shuffled-key decodes through the same model have a median of -1.838 and a p95 of -1.512 (500 draws). The leaf's own period
 gloss scores **-1.134**, also below real_p05. So by rule 3's gloss paragraph this judge cannot decide at this length and
 register: it is not a negative. The gate is G, as pre-registered.
+(VERIFY-MOD1162 correction, 3 Oct 2026: the gloss's -1.134 sits nearer real_p05 (-0.989) than the shuffled null (p99
+-1.504), so unlike ZX-DEC349 the judge does separate genuine prose from noise somewhat at this N; the decode's -1.34 is
+better read as the cost of its 27 known M-graded sign misreads than as "judge cannot decide". It stays not a negative on
+the key question, which the judge does not test; G is the gate. See AUDIT.md.)
 
 **Reading** (`decode.json`, `python3 tools/decode_key.py ciphers/decode-1162-modena-ambung-1492 --check`: "reading up to
 date"): tokens 77: **H 0, C 32, S 10, M 27, I 5, U 3**. Grades, per the pre-registration through `votes.tsv`: C is a 1168
