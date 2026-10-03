@@ -611,3 +611,18 @@ SECOND-OPINIONS-QUEUE.tsv do not quote these word counts (grep, 18:19 UTC), so n
 Lesson: a word window with no marked target, given to Sonnet on this cursive hand, reads below the level needed for the
 check; the next pass is the same crops to an Opus reader (the earlier FILS-UPPER passes, which did read the hand, were Opus).
 Not found in print: nothing searched (transcription job).
+
+## A1B-FILS-UPPER2 pre-registration (account 1, 3 Oct 2026, written 18:41 UTC before any blind read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-upper2.md`. Addendum to the A1B-FILS-UPPER pre-registration above,
+whose rules 1-4 apply unchanged to the same 62 crops (`verify/upper_mu/crops/w01-w62.jpg`, commit b5b54b03), read this
+time by a blind **Opus** subagent, at most 2 calls, crops only, the same instruction text, no candidates, no grades.
+Capability check added to the same batch: 6 H-graded words picked by `verify/upper_mu/cut_cap.py`
+(random.Random(20261003) over plain tokens of >= 5 letters in U01-U26 with no M/U token within 2 places; same window
+cut as cut_mu.py; c06's window set by eye to x0=700 because the proportional rule put it on the margin -- placement of
+all 6 eye-checked on one contact sheet): c01 U01 receu, c02 U01 l'res, c03 U05 agreable, c04 U09 Tremolit, c05 U14
+nuits, c06 U22 vuider (`verify/upper_mu/cap_targets.tsv`, `crops_cap/`). The 68 crops are sent under neutral names
+x01-x68 in the order of random.Random(20261004).shuffle over [w01..w62, c01..c06]; call 1 = x01-x34, call 2 = x35-x68.
+Gate, fixed now: a control word counts as right when the blind read of it equals the reconciled reading exactly under
+rule 1's normalisation. **If fewer than 5 of 6 control words are right, the run is a non-test like the last one: no M/U
+grade moves, whatever the target reads say**, and the reads are only listed. At 5/6 or 6/6, rules 1-4 are applied.

@@ -1,0 +1,7 @@
+crop	row	tok_idx	token	grade	x0	line_w
+c01	U01	3	receu	H	965	3600
+c02	U01	7	l'res	H	1702	3600
+c03	U05	7	agreable	H	1851	3600
+c04	U09	5	Tremolit	H	1595	3600
+c05	U14	5	nuits	H	1596	3600
+c06	U22	1	vuider	H	700	3600
