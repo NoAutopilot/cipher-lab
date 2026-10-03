@@ -157,3 +157,33 @@ Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp87-newcastle-1743: open (line 1) -- ed
 
 Status unchanged: open. New in print, premise (a)/(d): Yorke, *Life and Correspondence of Philip Yorke, Earl of Hardwicke* (1913), vol. 1 (IA `lifecorresponden01york` _djvu.txt, read by this worker) footnote at the foot of p.245 running to the head of p.246: "By 101 is meant Bussy, then the French Minister here, who had been, from 1735 on, our Intelligencer and in our pay: he continued this game till the breaking out of the War and renewed it afterwards. He dropped his correspondence upon the Dunkirk Question in 1744", citing Hardwicke's own note (H.); vol. 3 (`lifecorresponden03york`) p.314 n. 4 repeats it (Francois de Bussy, "under the cipher 101", citing Waddington, *Louis XV et le renversement des alliances*, p.101, and Quarterly Review 190 p.346). This identifies the code-name '101' in the catalogue text of SP 87/13/18 and /85 and sibling /29 (20 May 1743: '101' about to depart for Paris, ff. 60-64, `digitised: false`, item fetched by this worker); it prints no text or decipherment of any of the three items, so they stay unread. Yorke vols. 1-3 whole-volume grep: Munchberg/Munchberg/Minchberg 0 hits; cipher/cypher hits are metaphor or unrelated. An unrestricted be-api phrase search for Munchberg returned unrelated gazetteer noise, logged as a non-test. Fresh WebSearch: TNA catalogue records for /18, /29, /76, /85 only. Requests: archive.org 5 (+ advancedsearch 1), be-api 3, discovery 1, WebSearch 1.
 Grades: no reading made; nothing to grade. Verdict: open. The Bussy name is a lead, not a key (rule 4: H/C none). Next step (costed): TNA page copy of /18, /29, /76, /85 (REQUEST.md, ASKS row 57); S: read Waddington p.101 and Quarterly Review 190 pp.346, 354 for the Bussy-'101' attribution on IA, ~$0.5.
+
+## Third pass: Waddington p.101 and Quarterly Review 190 pp.346, 354 (A2P4-NEWC (account-2 worker), 3 Oct 2026)
+
+Status unchanged: open. Ran the folder's own free step (Second pass, Next step "S:"). Texts: IA `louisxvetlerenve00wadduoft` (Waddington,
+*Louis XV et le renversement des alliances*, 1896, `_djvu.txt`) and IA `sim_quarterly-review-1809_1899-10_190_380` (Quarterly Review vol. 190,
+Oct 1899, `_djvu.txt`); `_1899-07_190_379` also fetched and grepped (0 hits for Bussy). Positive control per source: the page header in each djvu
+reads as cited (Waddington header "ENVOI DE BUSSY A HANOVRE. 101" = p.101, the page Yorke vol. 3 cites; QR running heads "346 / 347 / 354 Pitt and the
+Family Compact"), so the page numbers locate the text. Interpretation (English gist), not a reading of the target items:
+
+- **Waddington p.101 (1755):** Newcastle to Holdernesse, 16 May 1755 ("Private", in French translation): Bussy "a été autrefois salarié par nous quand il était en
+  Angleterre"; asks whether to renew those relations if Bussy comes to Hanover. The page does **not** use the number "101" or any cipher number; "101" occurs once in
+  the whole volume, as this page number. It supports "Bussy was formerly in British pay" (consistent with Hardwicke's note), not "101 = Bussy".
+- **QR 190 p.346 (starts at the '101' passage, continuing p.347):** the agent "known only as '101'" in the Newcastle correspondence sent Newcastle word of the Family
+  Compact of 25 Oct 1743 from Paris; the article says "This mysterious person was really a lady", who communicated by an unaddressed sealed letter of figures
+  forwarded through the British minister at Paris (Thompson), and wanted payment. Quotes on p.347 ("L'on rendra plus ample raison ... quand l'argent sera venu").
+- **QR 190 p.354:** a 1761 note among Newcastle's papers, "101 est prié de faire savoir à son ancien ami s'il souhaite de renouveler la correspondance". Bussy is named
+  on p.352-353 only as the French minister whom Temple proposed to buy ("not, they say, as chaste as Penelope"), a separate person from '101' in that article.
+
+**Result: a data conflict, not a settlement (rule 4).** Two printed attributions of '101': Hardwicke's own note via Yorke (1913) = Bussy, the French minister, in
+British pay from 1735; QR 190 (1899) = a lady in Paris in 1743 and 1761. Waddington p.101 backs neither by number. Support for each: Yorke vol. 1 p.245-246 (Hardwicke's
+note, a contemporary witness; Yorke vol. 3 p.314 n.4 cites Waddington p.101 and QR 190 p.346 for it, which neither page states); QR, an 1899 essayist reading the
+Newcastle papers, no source named on the page read. Not resolved by either; '101' stays unidentified for SP 87/13/18, /29, /85 (the cataloguer's "[undeciphered]"
+remains the only note). Grades: no reading made; H/C/S none; nothing to grade. Neither source prints text or a decipherment of SP 87/13/18, /76 or /85.
+Also: QR p.346 dates the '101' channel to 1743 and the Family Compact, same year as our items; a lead to read the Newcastle papers (BL Add MS 32700 vicinity) for
+the '101' letters, not a key.
+
+Requests: archive.org 3 downloads (djvu) + 5 advancedsearch, >=2 s apart; no logins, no vision calls. Cost well under USD 1.
+
+Next step (costed): TNA page copy of /18, /29, /76, /85 (REQUEST.md, ASKS row 57); S: none free left for the attribution; the BL Add MS 32700 series catalogue search for '101'
+(~$0.5) would test the lady-vs-Bussy conflict from the papers themselves. Verdict: open.
