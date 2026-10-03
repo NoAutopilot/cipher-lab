@@ -1,0 +1,5 @@
+unit	R	D	shared	candidate
+CONTROL f146r (same family, not key)	0.643	0	4 6 Z c f ff g h ll m n nn o p t u x y	control
+CONTROL servien1632 (not key)	0.714	3	10 12 4 6 9 E b c e f ff g h m n o p t u x	control
+CONTROL lasry1631 (not key)	0.821	3	10 4 6 7 9 E Z c e f ff g ll m n o p r t tt u x y	control
+# M (28): 10 12 4 6 7 9 94 E Z b c e f ff g h ll m n nn o p r t tt u x y; gate R >= 0.921 and D >= 2
