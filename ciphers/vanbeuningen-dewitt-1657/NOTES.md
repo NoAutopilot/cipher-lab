@@ -1,4 +1,5 @@
-partial
+found-solved
+Source of the prior plaintext: R. Fruin / N. Japikse (ed.), Brieven aan Johan de Witt I (1919), pp.405-406, printed from the plain copy NA 3.01.17 inv.1538 ff.208-209 of this same letter (editor's footnote 1: "Dezelfde brief ook in onopgelost cijfer") -- the plaintext of this very item is in print (AUDIT.md item 1, N1); no prior key or decipherment of the cipher copy ff.210-211 located (AUDIT.md item 2, N3, key ours). Status set found-solved by GF4-BATCH6, 3 Oct 2026, by the brief's rule (premise check below); was partial.
 Brieven aan Johan de Witt I (Fruin/Japikse 1919) p.405 read directly by the check-solved worker csHU on 24 Sept 2026 from the Huygens retroboeken page image (images/dewitt_01_405.jpg; footnote 1 "onopgelost cijfer" quoted in the sweep below), and pp.405-406 is the plaintext in plaintext_print.txt; the citation sat at line 9 until 2 Oct 2026, when GAPS-vanbeuningen-dewitt-1657 moved it here per check-solved.md's line-2 placement rule (RETRO-2026-09-24f).
 
 # Van Beuningen circle to Johan de Witt: the same letter survives as a plain copy and an unsolved cipher copy, 19/29 September 1657
@@ -731,5 +732,52 @@ Gate re-run output follows.
 ```
 $ python3 tools/intake_gate_check.py vanbeuningen-dewitt-1657
 vanbeuningen-dewitt-1657: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
+
+## Premise check (GF4-BATCH6, 3 Oct 2026)
+
+Worker GF4-BATCH6 (account-4), 01:5x-02:0x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
+"## Premise check". No cryptanalysis, no transcription, no vision subagent call (the worker viewed three downscaled spreads itself).
+
+- **(a) Decipherments and plaintexts the folder already mentions -- FOUND (plaintext of this very item; no decipherment of the
+  cipher copy).** Opened each: (1) the plain copy ff.208-209 = Brieven aan Johan de Witt I pp.405-406 (`plaintext_print.txt`,
+  `images/dewitt_01_405.jpg`, `_406.jpg`), the same letter word for word, footnote 1 calling the cipher copy "onopgelost cijfer"
+  -- the folder was built on it (known-plaintext key recovery). (2) Fruin/Kernkamp 1906, Brieven van Johan de Witt I pp.440-441:
+  Kernkamp deciphered three Van Beuningen letters to the Amsterdam burgomasters of 28 Oct 1657 with the key in the portfolio --
+  different items, a sibling-key lead (Remaining gaps). (3) Fruin/Kernkamp pp.71-72, De Witt's Feb 1653 key: does not match
+  key.tsv (AUDIT.md AUD2). (4) The Stadsarchief Amsterdam page www.amsterdam.nl/stadsarchief/stukken/macht/geheimschrift/: curl
+  with a browser UA answered 403 today (1 request, not retried); the WebSearch snippet "Van Beuningen geheimschrift 1656 sleutel
+  burgemeesters Amsterdam stadsarchief" says the 6 Sept 1656 Copenhagen letter to the burgomasters carries a decipherment written
+  above it and its key is kept in the burgomasters' archive -- a different letter, but same writer and post: if that key is the
+  one used here it would be a period key for codes 40 and 11 (lead for the sibling step, not a decipherment of this item).
+- **(b) Other solvers' working files -- not found.** Fresh shallow clones 3 Oct 2026 (dbourdeau/cyphersolver a4292cb;
+  aaymeloglu/unsolved-ciphers d2800bb), `grep -ril beuningen`: only Rechteren tot Borgbeuningen 1785-86 (Bourdeau
+  `targets/rechteren1785`, DECODE R1039/R2032/R2052), a different writer; nothing on Coenraad van Beuningen, De Witt 1657 or NA
+  3.01.17 inv.1538.
+- **(c) Physical neighbours -- not found.** NA 3.01.17 inv.1538 spreads viewed by the worker at 1400 px: 0206-0207 (the other
+  same-day Brandenburg/Poland dispatch, plain), 0208-0209 (the plain copy), 0210 (left page blank but for show-through; right page
+  the cipher f.210, no interlinear above the digit groups), 0211 (left page the cipher f.211 ending with the date and signature;
+  right page blank, no slip, no decipherment), and 0212, fetched today from the bundle's METS (1 METS + 1 image request,
+  service.archief.nl, not committed): left page blank verso with show-through, right page a new plain letter opening "Mijn Heer, De
+  heer ... Ambassadeur ...", no decipherment of the cipher copy. The cipher's own spread therefore carries no gloss or laid-in
+  slip at this scale; native resolution of the facing pages was not checked (the downscale is enough to see they are blank).
+- **(d) Recipient's side -- found the plaintext only (= (a)(1)).** De Witt is the recipient, and Brieven aan Johan de Witt is the
+  recipient-side edition: it prints the plaintext and states the cipher copy unsolved. Sender's side: Fruin/Kernkamp's Brieven van
+  Johan de Witt read in full from IA OCR (AUDIT.md), no decipherment of this letter. Postma 2006 (the standard study) still unread
+  (AUDIT.md gaps). Danish side not searched (no Danish edition of an intercept of this letter is known to the folder).
+
+**Verdict:** (a)/(d) found the plaintext of this very item in print (Fruin/Japikse 1919, N1), already known since intake; no prior
+decipherment or key of the cipher copy found by this pass (AUDIT.md's N3 for the key stands). Per this job's brief ("a hit carrying
+a decipherment or plaintext of this very item: status word -> found-solved"), the status word is set to `found-solved` with the
+source on line 2. Flagged to the account-4 parent: this folder's open work is key recovery (codes 40 and 11, the transcription
+gaps), which `found-solved` does not close; "Remaining gaps" and "Escalation" above are left as the record. Rule 10 wording.
+
+Requests this job (this target): www.amsterdam.nl 1 (403), service.archief.nl 2, WebSearch 1; github.com clones shared with the
+batch. No credentials.
+
+```
+$ python3 tools/intake_gate_check.py vanbeuningen-dewitt-1657   # before: exit 1, no Premise check section
+vanbeuningen-dewitt-1657: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
