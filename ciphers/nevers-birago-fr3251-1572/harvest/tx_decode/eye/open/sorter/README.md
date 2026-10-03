@@ -16,3 +16,5 @@ tile index may be one off, and L09.30 has no tile at all (crop = line end). Buil
 orchestrator's (sign_sorter.py `--focus` reads the first two columns). No sign values appear in this folder.
 
 **Published 3 Oct 2026 13:40 UTC (account-3 orchestrator):** https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s (private to the owner; built from the two sorters' joined signs/labels; 16 focus tiles -- f117 L09.30 has no tile, left out; db capability records the decisions; apply with tools/sign_sorter_apply.py).
+
+**How the owner's picks are used (owner, 3 Oct 2026 18:2x UTC: "did some, not all; doesn't mean they're right").** The sorter decisions are one more independent reader, not ground truth. A sign is graded S only where the owner's pick agrees with at least one of the two blind machine instruments (A1-BIR-VERIFY two-option, BIR-OPEN open-choice); an owner pick that disagrees with both stays M and goes to a fourth look (native re-capture); signs the owner has not touched stay as they are. Partial sorting is fine: apply only what is saved, and never treat "not moved" as "confirmed" unless the tile carries an explicit Right-pile/keep record.
