@@ -271,6 +271,21 @@ Next cheap step: one vision call on line crops of scans 2-3 (already on disk; cu
 could be compared with letter 142's 1-77 range; about USD 1. The route to a reading is unchanged: the NA originals of
 letters 309/446/455 (ASKS row 46, `REQUEST.md`).
 
+## GAPS120-rumpf-vandebie-heinsius-1716-19 (3 Oct 2026, account-4)
+
+**Pre-registered criterion (written 3 Oct 2026 13:2x UTC, before any scan 4-11 fetch or vision call).** Question:
+does any part of NA 1.10.29 inv. 1233 (Carel van Rumpf, 1743) scans 2-11 carry a letter/syllable table numbered in
+the 1-77 range, the shape of letter 142's homophonic design? Family resemblance only; no reading, no grades.
+- **YES** if a scan shows single letters of the alphabet (a, b, c ...) and/or syllables (ba, be, bi ... or similar
+  two/three-letter groups) set against numbers, at least some of which fall in 1-77, as a table (not a name list).
+  Homophones (several numbers per letter) noted if visible but not required for YES.
+- **NO (nomenclator-only)** if every legible scan of 2-11 shows only words/names/phrases against codes, or blank or
+  non-key pages, and no letter or syllable table appears.
+- **UNDECIDED** if a scan is illegible at 1400 px, or a table is seen whose entries cannot be told apart as
+  letters/syllables versus words. A NO covers scans 2-11 only (scans 13-24 unseen apart from 12 and 25).
+- Budget: at most 2 vision calls (one contact sheet of 2-11; one line-crop set of the one scan the sheet points at),
+  at most 15 service.archief.nl requests.
+
 ## While waiting
 
 - While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: look at scans 2-3 of NA 1.10.29 inv. 1233
