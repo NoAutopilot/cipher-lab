@@ -33,6 +33,14 @@ r3 = {x[0]: x for x in rows3}
 check('auto-named new pile becomes a new sign label', r3['k2'][2:] == ('T51-b', 'moved') and r3['k3'][2:] == ('T51-b', 'moved'))
 check('keep confirmation stays kept and is listed; a later move wins', r3['k1'][2:] == ('T51', 'kept') and sm3['confirmed_tiles'] == ['k1'])
 check('no checked docs, no confirmed_tiles key', 'confirmed_tiles' not in summ)
+# two-step sorter: a tile taken out in step 1 and never placed is unsettled, not kept; NOT-LETTER pile reads as not-letter
+rows4, sm4 = sa.apply([{'sid': 'o1', 'sign': 'T51'}, {'sid': 'o2', 'sign': 'T51'}, {'sid': 'o3', 'sign': 'T95'}],
+                      [{'pile': 'NOT-LETTER', 'verdict': 'mark'}], [{'sid': 'o1', 'to': 'OUT'}, {'sid': 'o2', 'to': 'NOT-LETTER'}],
+                      [{'id': 'NOT-LETTER'}])
+r4 = {x[0]: x for x in rows4}
+check('taken out, never placed -> taken-out, no sign', r4['o1'][2:] == ('', 'taken-out') and sm4['by_status']['taken-out'] == 1)
+check('placed in NOT-LETTER -> not-letter', r4['o2'][3] == 'not-letter' and r4['o3'][2:] == ('T95', 'kept'))
+check('old saves: no taken-out key', 'taken-out' not in summ['by_status'])
 
 # --- TX-SORTER (3 Oct 2026): cluster decisions and the family atlas ---
 import json, os, subprocess, tempfile

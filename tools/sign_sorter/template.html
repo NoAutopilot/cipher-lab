@@ -2,7 +2,9 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__TITLE__</title>
 <style>
-/* Layout: a sorting bench -- sticky toolbar, then one tray per family of look-alike signs, each pile a row of tiles. */
+/* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
+   and it goes to a "Taken out" tray; hold a sign to see it larger on its line. Step 2: one taken-out sign at a time,
+   large, over cards of every other pile -- drag it onto its pile or tap the pile. Phone first, mouse works too. */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   --accent:#8a3b12; --accent-soft:#f1e2d6; --ok:#2f6b3a; --ok-soft:#dcebdc; --warn:#9a6a00; --warn-soft:#f3e7c4; --bad:#b3261e;
@@ -10,7 +12,7 @@
   --f-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
   --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
-  --sz:56px;
+  --sz:64px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
@@ -20,7 +22,8 @@
   --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
   --accent:#e08a5a; --accent-soft:#3d2a1f; --ok:#7fc38b; --ok-soft:#203325; --warn:#e2b54f; --warn-soft:#3a3020; --bad:#ff8a80;
   --tile:#f4f1ea; --tile-ink:#000000; color-scheme:dark}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45;margin:0}
+body.traypad{padding-bottom:92px}
 .wrap{padding-inline:16px;padding-block:20px 60px;max-width:1100px;margin:0 auto}
 h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-wrap:balance;letter-spacing:.01em}
 .lede{color:var(--muted);max-width:65ch;margin:.3rem 0 0}
@@ -28,17 +31,29 @@ h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-w
 .how div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:.9rem}
 .how b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:2px}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
-  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-block:10px;margin-top:16px}
-.meter{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-size:.9rem}
+  display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding-block:8px;margin-top:16px}
+.tabs{display:flex;gap:6px;flex:1 1 auto;min-width:0}
+.tabs button{flex:1 1 0;font-size:.9rem;padding:7px 8px;font-weight:600;min-width:0}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cntb{display:inline-block;min-width:20px;padding:0 6px;border-radius:10px;background:var(--accent);color:#fff;font-size:.78rem;line-height:20px;margin-left:4px}
+.cntb.zero{background:var(--line);color:var(--muted)}
+#undo{padding:7px 10px}
+.save{font-size:.78rem;color:var(--muted);flex:1 1 100%}
+.save.err{color:var(--bad)}
+.hint1{margin:10px 0 0;font-size:.95rem}
+.hint1 b{color:var(--accent)}
+.meter{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-size:.9rem;margin-top:8px}
 .meter .track{width:140px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
 .meter .fill{height:100%;background:var(--ok);width:0}
-.bar label{font-size:.85rem;color:var(--muted);display:flex;gap:6px;align-items:center}
-.save{font-size:.82rem;color:var(--muted)}
-.save.err{color:var(--bad)}
+.opts{margin-top:8px;font-size:.85rem}
+.opts summary{cursor:pointer;color:var(--muted)}
+.opts .row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding-top:8px}
+.opts label{color:var(--muted);display:flex;gap:6px;align-items:center}
 select,input,button{font:inherit;font-size:.85rem}
 button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:5px;padding:4px 10px;cursor:pointer}
 button:hover{border-color:var(--accent)}
-button:focus-visible,select:focus-visible,input:focus-visible,.t:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button:disabled{opacity:.5;cursor:default}
+button:focus-visible,select:focus-visible,input:focus-visible,.t:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
 .fam{margin-top:28px}
 .fam h2{font-family:var(--f-display);font-weight:600;font-size:1.45rem;margin:0 0 2px}
@@ -46,22 +61,24 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px;scroll-margin-top:var(--barh,110px)}
 .pile.flash{outline:3px solid var(--accent);outline-offset:2px}
 .pile.same{border-left-color:var(--ok)} .pile.merge{border-left-color:var(--accent)} .pile.mark{border-left-color:var(--warn)}
-.ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 .pid{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
 .cnt{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
 .chip{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;padding:1px 7px;border-radius:10px;background:var(--line);color:var(--ink)}
 .chip.same{background:var(--ok-soft);color:var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--accent)} .chip.mark{background:var(--warn-soft);color:var(--warn)}
-.tiles{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
-.t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:3px;padding:0;display:grid;place-items:center;cursor:pointer}
-.t img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;image-rendering:auto}
-.t{position:relative;overflow:hidden}   /* a tall tile used to spill out of its frame over the pile's buttons and swallow taps */
+.ph .big{margin-left:auto;font-size:.8rem;padding:2px 8px}
+.tiles{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+/* tiles: tap and hold, never select text, show a callout or drag the picture */
+.t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:4px;padding:0;display:grid;place-items:center;cursor:pointer;
+  position:relative;overflow:hidden;touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;transition:transform .12s}
+.t img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;image-rendering:auto;pointer-events:none;-webkit-user-drag:none}
+.t.pressing{transform:scale(.92);border-color:var(--accent)}
 .t.out{border:2px dashed var(--ink)}
 .t.out img{opacity:.35}
-.t.sel{border:4px solid var(--ink);opacity:1}
+.t.fq{border:2px dashed var(--accent)}
 .t .badge{position:absolute;top:1px;right:1px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
-.movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
-.movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
+.t.fq .badge{background:var(--accent);color:#fff}
 .pile.new{border-style:dashed}
 #focus{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
 .ftitle{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0}
@@ -71,38 +88,73 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
 .seg button{border:0;border-radius:0}
 .seg button.on{background:var(--ink);color:var(--bg)}
-body.ink1 .t img,body.ink1 #ctx canvas{filter:grayscale(1) contrast(1.9) brightness(1.08)}
-body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightness(1.15)}
+body.ink1 .t img,body.ink1 canvas,body.ink1 .bigt img{filter:grayscale(1) contrast(1.9) brightness(1.08)}
+body.ink2 .t img,body.ink2 canvas,body.ink2 .bigt img{filter:grayscale(1) contrast(3.2) brightness(1.15)}
 #ctx[hidden]{display:none}
 #ctx{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px}
-#ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
-#ctx .cv{overflow-x:auto;background:var(--tile);min-width:0;max-width:100%}
-#ctx canvas{display:block;max-width:none;height:auto}
-#ctxQ{font-weight:600;margin:0}
-#ctx .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;box-sizing:border-box}
+.cv{overflow-x:auto;background:var(--tile);min-width:0;max-width:100%}
+canvas{display:block;max-width:none;height:auto}
+#ctxQ,#s2Q{font-weight:600;margin:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 #ctx .row.top{position:sticky;top:-14px;z-index:1;background:var(--surface);padding:6px 0;justify-content:space-between;flex-wrap:nowrap}
 #ctx .x{font-size:1rem;padding:6px 12px;flex:0 0 auto}
-@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
-  .bar{position:static} .pile{scroll-margin-top:8px}}
+#ctx #ctxT{min-width:0;overflow-wrap:anywhere}
 .acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.acts .done{font-weight:600}
+.acts details{font-size:.85rem}
+.acts details summary{cursor:pointer;color:var(--muted);padding:4px 2px}
+.acts details[open]{flex:1 1 100%}
+.acts details .row{padding-top:6px}
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
 .hint{font-size:.78rem;color:var(--muted)}
 #rank{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:10px 12px}
 .rk{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);text-align:center}
 #rankTiles > div{width:max(var(--sz),84px);justify-items:center} #rankTiles .fcap{max-width:100%}
-#rankTiles .t,#offer .t{overflow:hidden} #rankTiles .t img,#offer .t img{width:calc(var(--sz) - 4px);height:calc(var(--sz) - 4px);max-width:none;max-height:none;object-fit:contain}
 .t.done{opacity:.45}
 #focusTiles > div{width:max(var(--sz),76px);justify-items:center}
 #focusTiles .fcap{max-width:100%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 #focusTiles .fdone{font-size:.72rem;color:var(--ok);font-weight:600;text-align:center;max-width:100%}
 .save button{font-size:.78rem;padding:1px 8px;margin-left:6px}
+/* the "Taken out" tray (step 1), fixed at the bottom while it holds anything */
+#tray[hidden]{display:none}
+#tray{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--surface);border-top:2px solid var(--accent);box-shadow:0 -4px 14px rgba(0,0,0,.15);
+  display:flex;align-items:center;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}
+#tray .lab{font-size:.82rem;line-height:1.2;flex:0 0 auto}
+#tray .lab b{font-size:1.1rem}
+#trayTiles{display:flex;gap:4px;overflow-x:auto;flex:1 1 auto;min-width:0;margin:0;flex-wrap:nowrap}
+#trayTiles .t{--sz:52px;flex:0 0 auto}
+#trayGo{font-weight:600;padding:8px 10px;flex:0 0 auto;background:var(--accent);color:#fff;border-color:var(--accent)}
+.fly{position:fixed;z-index:40;pointer-events:none;background:var(--tile);border-radius:4px;transition:transform .32s ease-in,opacity .32s ease-in;object-fit:contain}
+/* step 2 */
+#s2[hidden],#s1[hidden],#s2Empty[hidden],#s2Work[hidden]{display:none}
+.s2top{position:sticky;top:var(--barh,60px);z-index:4;background:var(--bg);display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.bigt{width:104px;height:104px;flex:0 0 auto;background:var(--tile);border:2px solid var(--accent);border-radius:6px;display:grid;place-items:center;
+  touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
+.bigt img{max-width:96px;max-height:96px;pointer-events:none;-webkit-user-drag:none}
+.s2info{min-width:0;flex:1 1 auto}
+.s2info strong{display:block;overflow-wrap:anywhere}
+#s2 .cv{margin-top:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:10px}
+.card{display:grid;gap:4px;text-align:left;padding:8px;border:2px solid var(--line);border-radius:6px;background:var(--surface);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}
+.card .cid{font-family:var(--f-mono);font-weight:600;overflow-wrap:anywhere}
+.card .cnt{font-size:.75rem}
+.card .smp{display:flex;gap:3px}
+.card .smp img{width:32px;height:32px;object-fit:contain;background:var(--tile);border-radius:2px;pointer-events:none;-webkit-user-drag:none}
+.card.home{border-style:dashed}
+.card.over{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
+.ghost{position:fixed;z-index:50;pointer-events:none;width:72px;height:72px;object-fit:contain;background:var(--tile);border:2px solid var(--accent);border-radius:6px;opacity:.9;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.donebox{background:var(--ok-soft);border-radius:6px;padding:14px;margin-top:12px}
 #offer[hidden]{display:none}
 #offer{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:640px;margin:0 auto;background:var(--surface);color:var(--ink);
   border:2px solid var(--accent);border-radius:8px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+body.traypad #offer{bottom:100px}
 #offer .tiles{margin:0}
 #offer.inbox{position:static;max-width:none;margin:0;box-shadow:none}
 #offer .t{--sz:40px}
+@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
+  .pile{scroll-margin-top:var(--barh,70px)} .bigt{width:88px;height:88px} .bigt img{max-width:80px;max-height:80px} #trayGo{padding:8px 8px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -110,25 +162,48 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
   <h1>__TITLE__</h1>
   <p class="lede">__LEDE__</p>
   <div class="how">
-    <div><b>Check one tile</b>Tap a tile in "Check these first" (or switch to "Click shows context"): it opens on its line, the sign in brackets. Move it to the pile it belongs to, or press "Right pile: keep it". Next steps through the list.</div>
-    <div><b>Tile in the wrong pile</b>Click tiles to select them (thick frame and ✓). Then choose "Move to" a pile, "New pile" (a new sign; the page names it, e.g. T51-b), or "Set aside" (×). Selecting alone saves nothing. Tiles moved in from another pile show ↪.</div>
-    <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small pen wobbles do not make a new sign; a mark repeated on several tiles (a bar, a dot) usually does.</div>
-    <div><b>Not a letter</b>Dots, stains, flourishes and joins: press "Not a letter". If a pile looks right, press "All one sign".</div>
+    <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
+    <div><b>See a sign larger</b>Press and hold a sign (or press "View larger" on a pile): it opens on its line, the sign in brackets, with Next and Previous.</div>
+    <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Drag it onto its pile, or just tap the pile. "None of these: new sign" starts a new pile; nothing to type.</div>
   </div>
   <div class="bar">
-    <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles settled</span></div>
-    <label for="size">Tile size <input id="size" type="range" min="36" max="96" value="56"></label>
-    <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Settled</option></select></label>
-    <span class="seg" role="group" aria-label="What a click on a tile does"><button type="button" id="modeSel" class="on">Click selects</button><button type="button" id="modeCtx">Click shows context</button></span>
-    <span class="seg" role="group" aria-label="Ink darkness"><button type="button" id="ink0" class="on">Ink: normal</button><button type="button" id="ink1">Darker</button><button type="button" id="ink2">Darkest</button></span>
-    <label for="order">Order <select id="order"><option value="odd">Odd ones first</option><option value="page">Page order</option></select></label>
-    <button type="button" id="undo" disabled>Undo last move</button>
+    <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean piles</button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
+    <button type="button" id="undo" disabled>Undo</button>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
-  <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
-  <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
-  <div id="list"></div>
-  <p class="hint" id="foot"></p>
+  <section id="s1">
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger.</p>
+    <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
+    <details class="opts"><summary>Display options</summary><div class="row">
+      <label for="size">Tile size <input id="size" type="range" min="40" max="110" value="64"></label>
+      <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Done</option></select></label>
+      <span class="seg" role="group" aria-label="Ink darkness"><button type="button" id="ink0" class="on">Ink: normal</button><button type="button" id="ink1">Darker</button><button type="button" id="ink2">Darkest</button></span>
+      <label for="order">Order <select id="order"><option value="odd">Odd ones first</option><option value="page">Page order</option></select></label>
+    </div></details>
+    <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
+    <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
+    <div id="list"></div>
+    <p class="hint" id="foot"></p>
+  </section>
+  <section id="s2" hidden aria-label="Step 2: place the taken-out signs">
+    <h2 class="ftitle">Put each taken-out sign where it belongs</h2>
+    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap</b> the pile. The closest-looking piles come first.</p>
+    <div id="s2Empty" class="donebox" hidden><strong>Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
+    <div id="s2Work" hidden>
+      <div class="s2top">
+        <div class="bigt" id="s2Tile" role="img" aria-label="The sign to place"><img id="s2Img" alt=""></div>
+        <div class="s2info"><strong id="s2T"></strong><p class="hint" id="s2Pos"></p><p id="s2Q" hidden></p>
+          <div class="row"><button type="button" id="s2Prev">&larr; Previous</button><button type="button" id="s2Next">Skip &rarr;</button></div></div>
+      </div>
+      <div class="cv"><canvas id="s2C"></canvas></div>
+      <div class="row" style="margin-top:10px"><button type="button" id="s2New">None of these: new sign</button><button type="button" id="s2Mark">Not a letter</button>
+        <button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button><button type="button" id="s2Home">Put back where it was</button></div>
+      <p class="hint" id="s2Msg" aria-live="polite"></p>
+      <div class="cards" id="cards" aria-label="Piles: tap one to put the sign there"></div>
+    </div>
+  </section>
+  <div id="tray" hidden role="region" aria-label="Taken out"><span class="lab">Taken out<br><b id="trayN">0</b></span>
+    <div class="tiles" id="trayTiles" title="Tap a sign to put it back"></div><button type="button" id="trayGo">Place them &rarr;</button></div>
   <div id="offer" hidden role="region" aria-live="polite" aria-label="Apply to the whole cluster">
     <span id="offerT"></span><div class="tiles" id="offerTiles"></div>
     <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
@@ -139,9 +214,9 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
-    <div class="row"><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
+    <div class="row"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
-      <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
+      <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
     <p class="save err" id="ctxErr" role="alert" hidden></p>
   </div></div>
@@ -154,33 +229,34 @@ basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it
 const baseIds = new Set(basePiles.map(p => p.id));
 const byBase = Object.fromEntries(basePiles.map(p => [p.id, p]));
 const state = {};        // pile id -> {verdict, merge_into, outliers:[], note}
-const moves = {};        // sid -> destination pile id ('ASIDE' = set aside, no pile yet)
+const moves = {};        // sid -> destination: a pile id, 'OUT' (taken out in step 1, not placed yet), 'ASIDE' (set aside)
 const newPiles = {};     // new pile id -> {family, from}
+const outAt = {};        // sid -> when it was taken out (tray order)
 const clusterOf = {}, clusterMembers = {};   // atlas (or provisional) cluster id per tile, and its tiles
 basePiles.forEach(p => p.items.forEach(it => { if (it.c){ clusterOf[it.sid] = it.c; (clusterMembers[it.c] = clusterMembers[it.c] || []).push(it.sid); } }));
 const clusterDec = {};   // cluster id -> {to, from_sid, n}   (saved in db collection 'clusters')
 let ccol = null;
-const selected = {};     // pile id -> Set(sid)   (not saved)
 const focusQ = Object.fromEntries((DATA.focus || []).map(f => [f.sid, f.q]));
 const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
 let col = null, mcol = null, ncol = null, kcol = null;
-// Fixed display order (QA 3 Oct 2026): families and piles keep the order they had when the page was built, so a move
-// never reshuffles the page under the person's thumb (it used to re-sort by live tile counts after every move).
+const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that are not signs
+// Fixed display order: families and piles keep the order they had when the page was built (a move never reshuffles the
+// page); families and piles holding a "Check these first" tile come first.
 const baseCount = Object.fromEntries(basePiles.map(p => [p.id, p.items.length]));
-const baseFam = {}; basePiles.forEach(p => { baseFam[p.family] = (baseFam[p.family] || 0) + p.items.length; });
-const famOrder = Object.keys(baseFam).sort((a, b) => baseFam[b] - baseFam[a] || a.localeCompare(b));
-const pileOf = sid => (moves[sid] && moves[sid] !== 'ASIDE') ? moves[sid] : homeOf[sid];   // the pile a tile is shown in
+const focusPile = {}; Object.keys(focusQ).forEach(s => { if (homeOf[s]) focusPile[homeOf[s]] = 1; });
+const baseFam = {}, famFocus = {}; basePiles.forEach(p => { baseFam[p.family] = (baseFam[p.family] || 0) + p.items.length; if (focusPile[p.id]) famFocus[p.family] = 1; });
+const famOrder = Object.keys(baseFam).sort((a, b) => (famFocus[b] || 0) - (famFocus[a] || 0) || baseFam[b] - baseFam[a] || a.localeCompare(b));
+const pileOf = sid => (moves[sid] && moves[sid] !== 'ASIDE' && moves[sid] !== 'OUT') ? moves[sid] : homeOf[sid];   // the pile a tile belongs to now
 const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');   // db document ids (kept as they were: saved docs use them)
-// DOM ids: capitals are escaped too, so piles "O" and "o" never share an element id (selectors and some lookups can
-// ignore case, e.g. in quirks mode), and "_" always starts an escape, so two different pile names never map to one id.
+// DOM ids: capitals are escaped too, so piles "O" and "o" never share an element id, and "_" always starts an escape.
 const domKey = id => id.replace(/[^a-z0-9-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
-const sel = id => selected[id] || (selected[id] = new Set());
+const $ = id => document.getElementById(id);
+const imgSrc = sid => 'data:image/png;base64,' + itemBySid[sid].img;
 
-// New piles are named by the page (owner, 3 Oct 2026: "I don't want to add names"): the pile the tile came from plus
-// -b, -c, ... (T51 -> T51-b; a new pile split again stays on its root: T51-b -> T51-c), the first name not yet used.
+// New piles are named by the page (owner: "I don't want to add names"): the pile the tile came from plus -b, -c, ...
 function nextPileName(from){
-  const root = (from && from !== 'BAD-CUT' && from !== 'ASIDE' ? from : 'NEW').replace(/-[b-z]$/, '');
+  const root = (from && !SPECIAL.has(from) && from !== 'ASIDE' && from !== 'OUT' ? from : 'NEW').replace(/-[b-z]$/, '');
   const used = id => baseIds.has(id) || !!newPiles[id];
   for (let i = 1; i < 26; i++){ const n = root + '-' + String.fromCharCode(97 + i); if (!used(n)) return n; }
   for (let i = 1; ; i++){ const n = root + '-' + i; if (!used(n)) return n; }
@@ -189,6 +265,11 @@ function makePile(from){
   const name = nextPileName(from);
   const fam = (byBase[from] && byBase[from].family) || (newPiles[from] && newPiles[from].family) || 'NEW';
   newPiles[name] = {family: fam, from: from || ''}; saveNew(name); return name;
+}
+function ensureSpecial(id){
+  if (newPiles[id]) return;
+  newPiles[id] = {family: id === 'BAD-CUT' ? 'Bad cuts (to recut)' : 'Not letters (dots, stains, flourishes)', from: ''}; saveNew(id);
+  if (id === 'NOT-LETTER'){ const s = st(id); s.verdict = 'mark'; save(id); }   // sign_sorter_apply.py reads it as not-letter
 }
 function allPiles(){
   const out = basePiles.map(p => ({id: p.id, family: p.family, isNew: false}));
@@ -200,7 +281,7 @@ function membersOf(id){
   Object.keys(itemBySid).forEach(sid => {
     if (!moves[sid] && state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid)) return; // legacy set-aside
     const dest = moves[sid] || homeOf[sid]; if (dest === id) m.push(sid); });
-  if (document.getElementById('order').value === 'odd') m.sort((a, b) => (itemBySid[b].d || 0) - (itemBySid[a].d || 0));
+  if ($('order').value === 'odd') m.sort((a, b) => (itemBySid[b].d || 0) - (itemBySid[a].d || 0));
   else m.sort();
   return m;
 }
@@ -209,28 +290,49 @@ function asideOf(id){ // set aside from this home pile: legacy outliers or moves
   Object.keys(moves).forEach(sid => { if (moves[sid] === 'ASIDE' && homeOf[sid] === id) s.add(sid); });
   return [...s].filter(sid => !moves[sid] || moves[sid] === 'ASIDE');
 }
+function outList(){ return Object.keys(moves).filter(s => moves[s] === 'OUT' && itemBySid[s]).sort((a, b) => (outAt[a] || 0) - (outAt[b] || 0) || a.localeCompare(b)); }
 function statusOf(id){ const s = state[id]; if(!s) return null; if (s.merge_into) return 'merge'; return s.verdict; }
+const answered = sid => !!moves[sid] || !!checked[sid];
+
+// ---- press: a tap does one thing, a hold (450 ms, touch or mouse) another; no callout, no text selection, no ghost drag
+// After a hold opens the larger view, lifting the finger makes the browser send a click to whatever now lies under it --
+// a button of the dialog (Next, Set aside...). That one click is swallowed; any new press clears the guard.
+let swallowClick = false;
+document.addEventListener('pointerdown', () => { swallowClick = false; }, true);
+document.addEventListener('click', e => { if (swallowClick){ swallowClick = false; e.preventDefault(); e.stopPropagation(); } }, true);
+function attachPress(el, onTap, onHold){
+  let t = null, sx = 0, sy = 0, held = false;
+  const cancel = () => { if (t){ clearTimeout(t); t = null; } el.classList.remove('pressing'); };
+  el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; sx = e.clientX; sy = e.clientY; el.classList.add('pressing');
+    clearTimeout(t); t = setTimeout(() => { t = null; held = true; swallowClick = true; el.classList.remove('pressing'); onHold(); }, 450); });
+  el.addEventListener('pointermove', e => { if (t && Math.hypot(e.clientX - sx, e.clientY - sy) > 10) cancel(); });
+  el.addEventListener('pointerup', cancel); el.addEventListener('pointercancel', cancel); el.addEventListener('pointerleave', cancel);
+  el.addEventListener('click', e => { if (held){ held = false; e.preventDefault(); return; } onTap(e); });
+  el.addEventListener('contextmenu', e => e.preventDefault());
+  el.addEventListener('dragstart', e => e.preventDefault());
+}
 
 function barBottom(){ const r = document.querySelector('.bar').getBoundingClientRect(); return Math.max(0, r.bottom); }
 function render(){
-  const show = document.getElementById('show').value;
+  const show = $('show').value;
   const piles = allPiles();
   const famTotals = {};
   piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length; });
   const fams = famOrder.concat(Object.keys(famTotals).filter(f => !(f in baseFam)).sort());
-  const list = document.getElementById('list');
-  // Keep the person's place: the first pile on screen stays where it was, and a half-typed note or pile name survives.
+  const list = $('list');
+  // Keep the person's place: the first pile on screen stays where it was, and a half-typed note survives.
   const ae = document.activeElement;
   const keep = ae && ae.id && ae.tagName === 'INPUT' && list.contains(ae) ? {id: ae.id, v: ae.value, a: ae.selectionStart, b: ae.selectionEnd} : null;
+  const openMore = [...list.querySelectorAll('details[open]')].map(d => d.closest('.pile') && d.closest('.pile').id);
   let anchor = null; const top = barBottom();
-  for (const el of list.querySelectorAll('.pile')){ const r = el.getBoundingClientRect(); if (r.bottom > top){ anchor = {id: el.id, y: r.top}; break; } }
+  if (!$('s1').hidden) for (const el of list.querySelectorAll('.pile')){ const r = el.getBoundingClientRect(); if (r.bottom > top){ anchor = {id: el.id, y: r.top}; break; } }
   list.textContent = '';
   for (const f of fams){
     if (!(f in famTotals)) continue;
     const ps = piles.filter(p => p.family === f)
       .map(p => ({...p, members: membersOf(p.id)}))
-      .filter(p => p.members.length || asideOf(p.id).length || p.isNew)
-      .sort((a, b) => (a.isNew - b.isNew) || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id))
+      .filter(p => p.members.length || asideOf(p.id).length || (p.isNew && !SPECIAL.has(p.id)))
+      .sort((a, b) => (a.isNew - b.isNew) || (focusPile[b.id] || 0) - (focusPile[a.id] || 0) || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id))
       .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
     if (!ps.length) continue;
     const sec = document.createElement('section'); sec.className = 'fam';
@@ -240,47 +342,53 @@ function render(){
     ps.forEach(p => sec.append(pileEl(p, piles)));
     list.append(sec);
   }
-  // Count only piles that still hold tiles (or were settled): an emptied pile cannot be settled, and the bad-cut pile is no sign.
-  const live = piles.filter(p => p.id !== 'BAD-CUT' && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
+  openMore.forEach(id => { const d = id && document.getElementById(id); const m = d && d.querySelector('details'); if (m) m.open = true; });
+  // Count only piles that still hold tiles (or were settled); the page-made bad-cut and not-a-letter piles are no signs.
+  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
   const done = live.filter(p => statusOf(p.id)).length;
-  document.getElementById('prog').textContent = done + ' of ' + live.length + ' piles settled';
-  document.getElementById('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
+  $('prog').textContent = done + ' of ' + live.length + ' piles done';
+  $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
+  renderTray();
   document.documentElement.style.setProperty('--barh', (document.querySelector('.bar').offsetHeight + 8) + 'px');
   if (anchor){ const el = document.getElementById(anchor.id); if (el){ const dy = el.getBoundingClientRect().top - anchor.y; if (Math.abs(dy) > 1) window.scrollBy(0, dy); } }
   if (keep){ const el = document.getElementById(keep.id); if (el && el !== document.activeElement){ el.value = keep.v; el.focus({preventScroll: true});
     try { el.setSelectionRange(keep.a, keep.b); } catch(e){} } }
+  if (step === 2) renderS2();
 }
 function jumpTo(id){
   let t = document.getElementById('pile_' + domKey(id));
-  if (!t && document.getElementById('show').value !== 'all'){ document.getElementById('show').value = 'all'; render(); t = document.getElementById('pile_' + domKey(id)); }
+  if (!t && $('show').value !== 'all'){ $('show').value = 'all'; render(); t = document.getElementById('pile_' + domKey(id)); }
   if (!t) return;
   t.scrollIntoView({block: 'start'}); t.classList.add('flash'); setTimeout(() => t.classList.remove('flash'), 1600);
 }
 
 function tileEl(sid, pid, cls){
-  const s = sel(pid), it = itemBySid[sid];
-  const b = document.createElement('button'); b.type = 'button';
-  b.className = 't' + cls + (s.has(sid) ? ' sel' : '');
-  b.title = sid + (clusterOf[sid] ? ' [cluster ' + clusterOf[sid] + ']' : '') + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '');
-  b.setAttribute('aria-pressed', s.has(sid));
-  const im = document.createElement('img'); im.alt = sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
+  const it = itemBySid[sid], fq = focusQ[sid] && !answered(sid) && homeOf[sid] === pid;
+  const b = document.createElement('button'); b.type = 'button'; b.dataset.sid = sid;
+  b.className = 't' + cls + (fq ? ' fq' : '');
+  b.title = sid + (fq ? ' (check this one: ' + focusQ[sid] + ')' : '') + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '') +
+    '. Tap: take out of this pile. Hold: see it larger.';
+  b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
+  const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
-  const mark = s.has(sid) ? '\u2713' : cls.includes('out') ? '\u00d7' : cls.includes('in') ? '\u21aa' : '';
+  const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : '';
   if (mark){ const g = document.createElement('span'); g.className = 'badge'; g.textContent = mark; g.setAttribute('aria-hidden', 'true'); b.append(g); }
-  b.onclick = () => { if (clickMode === 'ctx') return showCtx(sid, pid); if (s.has(sid)) s.delete(sid); else s.add(sid); render(); };
+  attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid));
   return b;
 }
 
 function pileEl(p, piles){
-  const s = st(p.id), status = statusOf(p.id), aside = asideOf(p.id), chosen = sel(p.id);
+  const s = st(p.id), status = statusOf(p.id), aside = asideOf(p.id);
   const el = document.createElement('div'); el.className = 'pile' + (status ? ' ' + status : '') + (p.isNew ? ' new' : '');
   const ph = document.createElement('div'); ph.className = 'ph';
   const nm = document.createElement('span'); nm.className = 'pid'; nm.textContent = p.id;
   const ct = document.createElement('span'); ct.className = 'cnt';
   ct.textContent = p.members.length + ' tiles' + (aside.length ? ', ' + aside.length + ' set aside' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
-  chip.textContent = status === 'same' ? 'one sign' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
-  ph.append(nm, ct, chip); el.append(ph); el.id = 'pile_' + domKey(p.id);
+  chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
+  const big = btn('View larger', false, () => { const m = p.members.concat(aside); if (m.length) showCtx(m[0], p.id); });
+  big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
+  ph.append(nm, ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id);
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
     near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
@@ -289,76 +397,197 @@ function pileEl(p, piles){
   p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
   aside.forEach(sid => tiles.append(tileEl(sid, p.id, ' out')));
   el.append(tiles);
-  if (chosen.size){
-    const mb = document.createElement('div'); mb.className = 'movebar';
-    const lab = document.createElement('strong'); lab.textContent = chosen.size + (chosen.size === 1 ? ' tile' : ' tiles') + ' selected (\u2713). Not saved until you choose:';
-    const dest = document.createElement('select'); dest.id = 'd_' + domKey(p.id); dest.setAttribute('aria-label', 'Move selected tiles to');
-    const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Move to…'; dest.append(o0);
-    piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
-      .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); dest.append(o); });
-    dest.onchange = () => { if (dest.value) moveSel(p.id, dest.value); };
-    const bNew = btn('New pile', false, () => moveSel(p.id, makePile(p.id)));   // named by the page, never typed
-    bNew.title = 'Start a new sign for the selected tiles (named ' + nextPileName(p.id) + ')';
-    const bAside = btn('Set aside', false, () => moveSel(p.id, 'ASIDE'));
-    const bClear = btn('Clear selection', false, () => { chosen.clear(); render(); });
-    mb.append(lab, dest, bNew, bAside, bClear);
-    el.append(mb);
-  }
   const acts = document.createElement('div'); acts.className = 'acts';
-  const bSame = btn('All one sign', s.verdict === 'same' && !s.merge_into, () => { s.verdict = s.verdict === 'same' ? null : 'same'; s.merge_into = null; save(p.id); render(); });
+  const bSame = btn(s.verdict === 'same' && !s.merge_into ? '✓ This pile is done' : 'This pile is done', s.verdict === 'same' && !s.merge_into, () => {
+    s.verdict = s.verdict === 'same' ? null : 'same'; s.merge_into = null; save(p.id); render(); });
+  bSame.classList.add('done');
   const bMark = btn('Not a letter', s.verdict === 'mark', () => { s.verdict = s.verdict === 'mark' ? null : 'mark'; s.merge_into = null; save(p.id); render(); });
+  const more = document.createElement('details'); const sm = document.createElement('summary'); sm.textContent = 'More'; more.append(sm);
+  const mr = document.createElement('div'); mr.className = 'row';
   const mg = document.createElement('select'); mg.id = 'm_' + domKey(p.id); mg.setAttribute('aria-label', 'Same sign as another pile');
   const g0 = document.createElement('option'); g0.value = ''; g0.textContent = 'Same sign as…'; mg.append(g0);
-  piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
+  piles.filter(q => q.id !== p.id && !SPECIAL.has(q.id)).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
     .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); if (s.merge_into === q.id) o.selected = true; mg.append(o); });
   mg.onchange = () => { s.merge_into = mg.value || null; if (s.merge_into) s.verdict = null; save(p.id); render(); };
   const note = document.createElement('input'); note.type = 'text'; note.id = 'n_' + domKey(p.id); note.placeholder = 'Note (optional)'; note.value = s.note || '';
   note.onchange = () => { s.note = note.value; save(p.id); };
-  acts.append(bSame, bMark, mg, note);
+  mr.append(mg, note); more.append(mr);
+  if (s.merge_into || s.note) more.open = true;
+  acts.append(bSame, bMark, more);
   el.append(acts);
   return el;
 }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
+// ---- step 1: take out / put back
+function setDest(sid, to){
+  if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
+  if (to === 'OUT') outAt[sid] = Date.now();
+  const hs = state[homeOf[sid]];
+  if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
+  saveMove(sid);
+}
+function takeOut(sid, el){
+  const from = el ? el.getBoundingClientRect() : null;
+  remember([sid]); setDest(sid, 'OUT'); hideOffer();
+  note_('Took ' + sid + ' out of pile ' + homeOf[sid] + '. Tap it in the tray to put it back.');
+  render(); if (from) fly(sid, from);
+}
+function putBack(sid){
+  remember([sid]); setDest(sid, homeOf[sid]); note_('Put ' + sid + ' back in pile ' + homeOf[sid] + '.'); render();
+}
+function fly(sid, r){   // the tile shrinks into the tray, so the person sees where it went
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const target = $('trayTiles').querySelector('[data-sid="' + CSS.escape(sid) + '"]') || $('tray'); const t = target.getBoundingClientRect();
+  const g = document.createElement('img'); g.className = 'fly'; g.src = imgSrc(sid);
+  Object.assign(g.style, {left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px'}); document.body.append(g);
+  requestAnimationFrame(() => requestAnimationFrame(() => { g.style.transform = 'translate(' + (t.left - r.left) + 'px,' + (t.top - r.top) + 'px) scale(' + (Math.min(t.width, 52) / r.width) + ')'; g.style.opacity = '.4'; }));
+  setTimeout(() => g.remove(), 420);
+}
+function renderTray(){
+  const L = outList(), tray = $('tray');
+  $('outN').textContent = L.length; $('outN').classList.toggle('zero', !L.length);
+  tray.hidden = !L.length || step !== 1; document.body.classList.toggle('traypad', !tray.hidden);
+  $('trayN').textContent = L.length;
+  const w = $('trayTiles'); w.textContent = '';
+  L.slice().reverse().forEach(sid => { const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.dataset.sid = sid;
+    b.title = sid + ' (from ' + homeOf[sid] + '): tap to put it back'; b.setAttribute('aria-label', 'Put ' + sid + ' back in pile ' + homeOf[sid]);
+    const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
+    attachPress(b, () => putBack(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'taken out'));
+    w.append(b); });
+}
+
+// ---- step 2: place the taken-out signs
+let step = 1, s2Cur = null;
+let s1Scroll = 0;
+function setStep(n){
+  if (n === step) return;
+  if (step === 1) s1Scroll = window.scrollY;   // coming back to step 1 returns to the same place
+  step = n; $('s1').hidden = n !== 1; $('s2').hidden = n !== 2;
+  $('tab1').setAttribute('aria-selected', n === 1); $('tab2').setAttribute('aria-selected', n === 2);
+  hideOffer(); renderTray();
+  if (n === 2){ ensureVecs().then(() => { if (step === 2) renderS2(); }); renderS2(); }
+  if (n === 1) window.scrollTo(0, s1Scroll);
+  else window.scrollTo(0, Math.max(0, $('s2').getBoundingClientRect().top + scrollY - document.querySelector('.bar').offsetHeight - 6));
+}
+$('tab1').onclick = () => setStep(1); $('tab2').onclick = () => setStep(2); $('trayGo').onclick = () => setStep(2); $('s2Back').onclick = () => setStep(1);
+// tile likeness: a 16x16 ink vector per tile (computed in the browser once), pile = mean of its tiles; cosine similarity
+const vecs = {}; let vecPromise = null, vecDone = false;
+function ensureVecs(){
+  if (vecPromise) return vecPromise;
+  vecPromise = (async () => { const N = 16, cv = document.createElement('canvas'); cv.width = cv.height = N; const g = cv.getContext('2d', {willReadFrequently: true});
+    const sids = Object.keys(itemBySid);
+    const ims = await Promise.all(sids.map(sid => { const im = new Image(); im.src = imgSrc(sid); return im.decode().then(() => im, () => null); }));
+    sids.forEach((sid, i) => { const im = ims[i]; if (!im || !im.width) return;
+      g.fillStyle = '#fff'; g.fillRect(0, 0, N, N); const k = N / Math.max(im.width, im.height), w = im.width * k, h = im.height * k;
+      g.drawImage(im, (N - w) / 2, (N - h) / 2, w, h);
+      const d = g.getImageData(0, 0, N, N).data, v = new Float32Array(N * N); let m = 0;
+      for (let j = 0; j < N * N; j++){ v[j] = 255 - (d[j * 4] + d[j * 4 + 1] + d[j * 4 + 2]) / 3; m += v[j]; }
+      m /= N * N; let n = 0; for (let j = 0; j < N * N; j++){ v[j] -= m; n += v[j] * v[j]; } n = Math.sqrt(n) || 1; for (let j = 0; j < N * N; j++) v[j] /= n;
+      vecs[sid] = v; });
+    vecDone = true; })();
+  return vecPromise;
+}
+function likeness(sid, members){
+  const v = vecs[sid]; if (!v) return 0; let c = null, n = 0;
+  members.forEach(m => { const u = vecs[m]; if (!u || m === sid) return; if (!c) c = new Float32Array(u.length); for (let j = 0; j < u.length; j++) c[j] += u[j]; n++; });
+  if (!c) return -1; let dot = 0, nn = 0; for (let j = 0; j < c.length; j++){ dot += c[j] * v[j]; nn += c[j] * c[j]; } return dot / (Math.sqrt(nn) || 1);
+}
+function renderS2(){
+  const L = outList();
+  if (!L.includes(s2Cur)) s2Cur = L[0] || null;
+  $('s2Empty').hidden = !!s2Cur; $('s2Work').hidden = !s2Cur;
+  if (!s2Cur){ $('s2EmptyT').textContent = 'Take signs out in step 1 and they will wait here.'; return; }
+  const sid = s2Cur, it = itemBySid[sid], i = L.indexOf(sid);
+  $('s2Img').src = imgSrc(sid); $('s2Img').alt = sid;
+  $('s2T').textContent = 'Sign ' + sid + ', taken out of pile ' + homeOf[sid];
+  $('s2Pos').textContent = (i + 1) + ' of ' + L.length + ' waiting. Page ' + it.p + '; brackets mark it on its line below.';
+  $('s2Q').hidden = !focusQ[sid]; $('s2Q').textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
+  $('s2Prev').disabled = i <= 0; $('s2Next').disabled = i >= L.length - 1;
+  $('s2Home').textContent = 'Put back in ' + homeOf[sid];
+  drawLine(sid, $('s2C'), 3, () => s2Cur === sid && step === 2);
+  const cards = $('cards'); cards.textContent = '';
+  if (!vecDone){ cards.textContent = 'Sorting the piles by likeness…'; return; }
+  const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id)}))
+    .filter(p => p.members.length || p.isNew || p.id === homeOf[sid])
+    .map(p => ({...p, score: likeness(sid, p.members) + (p.family === it.fam ? 0.08 : 0)}))
+    .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id));
+  ps.forEach(p => { const c = document.createElement('button'); c.type = 'button'; c.className = 'card' + (p.id === homeOf[sid] ? ' home' : ''); c.dataset.pile = p.id;
+    const h = document.createElement('span'); h.className = 'cid'; h.textContent = p.id;
+    const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.id === homeOf[sid] ? ' · where it came from' : p.isNew ? ' · new pile' : '');
+    const smp = document.createElement('span'); smp.className = 'smp';
+    p.members.slice().sort((a, b) => (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 4).forEach(m => { const im = document.createElement('img'); im.alt = ''; im.src = imgSrc(m); im.draggable = false; smp.append(im); });
+    c.append(h, n, smp); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
+    c.onclick = () => place(p.id);
+    cards.append(c); });
+}
+function place(to){
+  const sid = s2Cur; if (!sid) return;
+  const L = outList(), i = L.indexOf(sid);
+  remember([sid]); setDest(sid, to);
+  const L2 = outList(); s2Cur = L2[Math.min(i, L2.length - 1)] || null;
+  $('s2Msg').textContent = 'Put ' + sid + (to === 'ASIDE' ? ' aside' : to === 'BAD-CUT' ? ' with the bad cuts' : to === 'NOT-LETTER' ? ' with the not-letters' : ' in pile ' + to) + '.' + (s2Cur ? ' Next one:' : '');
+  render(); offerCluster([sid], to);
+}
+$('s2New').onclick = () => { if (s2Cur) place(makePile(homeOf[s2Cur])); };
+$('s2Mark').onclick = () => { ensureSpecial('NOT-LETTER'); place('NOT-LETTER'); };
+$('s2Bad').onclick = () => { ensureSpecial('BAD-CUT'); place('BAD-CUT'); };
+$('s2Aside').onclick = () => place('ASIDE');
+$('s2Home').onclick = () => { if (s2Cur) place(homeOf[s2Cur]); };
+$('s2Prev').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i > 0){ s2Cur = L[i - 1]; $('s2Msg').textContent = ''; renderS2(); } };
+$('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i < L.length - 1){ s2Cur = L[i + 1]; $('s2Msg').textContent = ''; renderS2(); } };
+// drag the big sign onto a pile card (pointer events: touch, pen and mouse); the page scrolls when the finger nears an edge
+(function(){
+  const tile = $('s2Tile'); let drag = null;
+  const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
+  const loop = () => { if (!drag) return; const y = drag.y, top = barBottom() + 40, bot = window.innerHeight - 50;
+    if (y > bot) window.scrollBy(0, Math.min(24, (y - bot) / 2 + 4)); else if (y < top) window.scrollBy(0, -Math.min(24, (top - y) / 2 + 4));
+    mark(); drag.raf = requestAnimationFrame(loop); };
+  const mark = () => { const c = cardAt(drag.x, drag.y); if (c !== drag.over){ if (drag.over) drag.over.classList.remove('over'); if (c) c.classList.add('over'); drag.over = c; } };
+  tile.addEventListener('pointerdown', e => { if (e.button > 0 || !s2Cur) return; e.preventDefault();
+    tile.setPointerCapture(e.pointerId);
+    drag = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, over: null, ghost: null, raf: 0}; });
+  tile.addEventListener('pointermove', e => { if (!drag) return; drag.x = e.clientX; drag.y = e.clientY;
+    if (!drag.moved && Math.hypot(drag.x - drag.sx, drag.y - drag.sy) > 6){ drag.moved = true;
+      const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(s2Cur); document.body.append(g); drag.ghost = g; drag.raf = requestAnimationFrame(loop); }
+    if (drag.ghost){ drag.ghost.style.left = (drag.x - 36) + 'px'; drag.ghost.style.top = (drag.y - 36) + 'px'; } });
+  const end = (e, drop) => { if (!drag) return; const d = drag; drag = null; cancelAnimationFrame(d.raf);
+    if (d.ghost) d.ghost.remove(); if (d.over) d.over.classList.remove('over');
+    if (!d.moved){ if (drop && s2Cur){ swallowClick = true; } if (drop && s2Cur) showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'taken out'); return; }   // a tap on the big sign: the larger view
+    const c = drop && cardAt(e.clientX, e.clientY); if (c) place(c.dataset.pile); };
+  tile.addEventListener('pointerup', e => end(e, true)); tile.addEventListener('pointercancel', e => end(e, false));
+  tile.addEventListener('contextmenu', e => e.preventDefault());
+})();
+
 const history = [];   // each entry: [[sid, previous destination or null], ...] (+ .cluster/.prevDec for a cluster decision, .checks for "keep")
-function updateUndo(){ document.getElementById('undo').disabled = !history.length; document.getElementById('ctxUndo').disabled = !history.length; }
+function updateUndo(){ $('undo').disabled = !history.length; $('ctxUndo').disabled = !history.length; }
 function remember(sids){ const e = sids.map(sid => [sid, moves[sid] || null]); history.push(e); if (history.length > 200) history.shift();
   updateUndo(); return e; }
 function undo(){
   const last = history.pop(); if (!last) return;
   hideOffer();
-  last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; saveMove(sid); });
+  last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; if (prev === 'OUT' && !outAt[sid]) outAt[sid] = Date.now(); saveMove(sid); });
   if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
   (last.checks || []).forEach(([sid, prev]) => { if (prev) checked[sid] = prev; else delete checked[sid]; saveCheck(sid); });
+  if (last.length === 1 && moves[last[0][0]] === 'OUT') s2Cur = last[0][0];   // step 2: the undone sign is shown again
   updateUndo();
-  note_(last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last move (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)')); render();
+  note_(last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
+  if (step === 2) $('s2Msg').textContent = 'Undid the last step.';
+  render();
   return last;
-}
-function moveSel(from, to){
-  const chosen = sel(from);
-  remember([...chosen]);
-  chosen.forEach(sid => {
-    if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
-    const hs = state[homeOf[sid]];
-    if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
-    saveMove(sid);
-  });
-  const moved = [...chosen];
-  chosen.clear(); render();
-  offerCluster(moved, to);
 }
 
 // Cluster-level decision: after a move, offer to send the rest of the moved tiles' cluster (same shape, every letter of
 // the family on this page) to the same pile. Saved as per-tile moves (old apply works unchanged) plus one 'clusters'
 // doc, which sign_sorter_apply.py --atlas-labels writes into the family atlas.
 let offerState = null;
-function hideOffer(){ const o = document.getElementById('offer'); o.hidden = true; offerState = null; o.classList.remove('inbox'); document.querySelector('.wrap').append(o); }
-// with the dialog open, the offer sits inside it (as a fixed bar it covered the dialog's buttons, Close included: Din f.23r)
-function placeOffer(){ const o = document.getElementById('offer'); if (document.getElementById('ctx').hidden) return;
-  o.classList.add('inbox'); document.getElementById('ctxMsg').after(o); }
+function hideOffer(){ const o = $('offer'); o.hidden = true; offerState = null; o.classList.remove('inbox'); document.querySelector('.wrap').append(o); }
+// inside the open dialog or the step-2 panel the offer sits in the flow (as a fixed bar it covered buttons, Close included: Din f.23r)
+function placeOffer(){ const o = $('offer');
+  if (!$('ctx').hidden){ o.classList.add('inbox'); $('ctxMsg').after(o); } else if (step === 2){ o.classList.add('inbox'); $('s2Msg').after(o); } }
 function offerCluster(sids, to){
   hideOffer();
-  if (to === 'ASIDE' || to === 'BAD-CUT' || !sids.length) return;
+  if (to === 'ASIDE' || to === 'OUT' || SPECIAL.has(to) || !sids.length) return;
   const cs = [...new Set(sids.map(s => clusterOf[s]).filter(Boolean))];
   if (cs.length !== 1 || sids.some(s => !clusterOf[s])) return;
   const c = cs[0];
@@ -366,43 +595,37 @@ function offerCluster(sids, to){
   if (!rest.length) return;
   offerState = {c, to, sids, rest};
   const prov = DATA.clusterSource === 'provisional';
-  document.getElementById('offerT').textContent = 'Apply to all ' + (clusterMembers[c].length) + ' in this ' + (prov ? 'provisional shape group' : 'atlas cluster') +
+  $('offerT').textContent = 'Apply to all ' + (clusterMembers[c].length) + ' in this ' + (prov ? 'provisional shape group' : 'atlas cluster') +
     ' (' + c + ')? ' + rest.length + ' more tile' + (rest.length > 1 ? 's' : '') + ' would move to ' + to + '.';
-  const w = document.getElementById('offerTiles'); w.textContent = '';
-  rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = 'data:image/png;base64,' + itemBySid[s].img; b.append(im); w.append(b); });
+  const w = $('offerTiles'); w.textContent = '';
+  rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = imgSrc(s); b.append(im); w.append(b); });
   if (rest.length > 12) w.append('+' + (rest.length - 12));
-  document.getElementById('offer').hidden = false; placeOffer();
+  $('offer').hidden = false; placeOffer();
 }
 function applyCluster(){
   const o = offerState; if (!o) return; hideOffer();
   const e = remember(o.rest); e.cluster = o.c; e.prevDec = clusterDec[o.c] ? {...clusterDec[o.c]} : null;
-  o.rest.forEach(sid => {
-    if (o.to === homeOf[sid]) delete moves[sid]; else moves[sid] = o.to;
-    const hs = state[homeOf[sid]];
-    if (hs && hs.outliers.includes(sid)){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
-    saveMove(sid); });
+  o.rest.forEach(sid => setDest(sid, o.to));
   clusterDec[o.c] = {to: o.to, from_sid: o.sids[0], n: clusterMembers[o.c].length};
   saveCluster(o.c);
   note_('Moved ' + o.rest.length + ' more tiles of cluster ' + o.c + ' to ' + o.to);
   render();
-  if (!document.getElementById('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true);
+  if (!$('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true);
 }
-document.getElementById('offerYes').onclick = applyCluster;
-document.getElementById('offerNo').onclick = hideOffer;
+$('offerYes').onclick = applyCluster;
+$('offerNo').onclick = hideOffer;
 
-// Saving (QA 3 Oct 2026). Each document path ('m/<sid>', 'p/<pile>', ...) has one writer that reads the CURRENT state
-// when it runs, and at most one write per path is in flight (the db contract: one write at a time per document), so a
-// move followed at once by its undo can no longer land in the wrong order. Writes made before storage answers are held
-// and sent when it connects (they used to be dropped). A refused write is retried once; if it still fails it stays
-// listed, on screen, with a "Try again" button, and the status line no longer sticks at "Saving 1...".
+// Saving. Each document path ('m/<sid>', 'p/<pile>', ...) has one writer that reads the CURRENT state when it runs, and
+// at most one write per path is in flight (the db contract: one write at a time per document). Writes made before
+// storage answers are held and sent when it connects. A refused write is retried once; then "Not saved ... Try again".
 let dbMode = 'connecting';     // 'connecting' | 'db' | 'local'
 let open_ = 0, lastErr = '';
 const writers = {}, running = {}, again = {}, failedPaths = new Set();
 const inflight = {};   // doc path -> true while a local change is not yet confirmed; snapshots for these are ignored
-const saveEl = () => document.getElementById('save');
+const saveEl = () => $('save');
 function note_(t){ if (failedPaths.size) return; const el = saveEl(); el.textContent = t; el.className = 'save'; }
 function status(){
-  const el = saveEl(), ce = document.getElementById('ctxErr');   // a refused save is shown in the open dialog too
+  const el = saveEl(), ce = $('ctxErr');   // a refused save is shown in the open dialog too
   ce.hidden = !(failedPaths.size && dbMode === 'db'); ce.textContent = '';
   if (dbMode === 'local'){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; return; }
   if (failedPaths.size){ el.className = 'save err'; el.textContent = 'Not saved: ' + failedPaths.size + (failedPaths.size === 1 ? ' change' : ' changes') +
@@ -433,7 +656,7 @@ function pump(path){
 function track(path, fn){
   writers[path] = fn; inflight[path] = true; failedPaths.delete(path);
   if (dbMode === 'local'){ delete writers[path]; delete inflight[path]; persistLocal(); status(); return; }
-  if (dbMode === 'connecting'){ status(); return; }   // sent by connect()
+  if (dbMode === 'connecting'){ status(); return; }   // sent when storage connects
   pump(path);
 }
 const stamp = () => new Date().toISOString();
@@ -450,29 +673,27 @@ function saveCluster(c){
              : ccol.doc(key(c)).delete(); }); }
 function saveCheck(sid){
   track('k/' + sid, () => checked[sid] ? kcol.doc(key(sid)).set({sid, pile: checked[sid], updated: stamp()}) : kcol.doc(key(sid)).delete()); }
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked})); } catch(e){} }
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt})); } catch(e){} }
 
-let clickMode = 'sel', ctxSid = null, ctxPid = null;
+// ---- the larger view: a tile on its line
+let ctxSid = null, ctxPid = null;
 const pageImgs = {};
 function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
-function drawCtx(){
-  const sid = ctxSid, it = itemBySid[sid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
+// draw a tile's line into canvas c; alive() says whether that tile is still the one wanted (a late page image must not
+// paint over the tile now shown). Phone: zoom 3 fits the line to the width and the zoom scales from there.
+function drawLine(sid, c, z, alive){
+  const it = itemBySid[sid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
   const draw = () => {
-    // a page image that finishes loading after the person has stepped on must not paint over the tile now shown
-    if (sid !== ctxSid || document.getElementById('ctx').hidden) return;
-    const z = +document.getElementById('ctxZ').value;
+    if (!alive()) return;
     const x0 = Math.max(0, x - 180), y0 = Math.max(0, y - Math.round(h * 1.8) - 10);
     const x1 = Math.min(im.naturalWidth, x + w + 180), y1 = Math.min(im.naturalHeight, y + h + Math.round(h * 1.4) + 10);
-    const c = document.getElementById('ctxC'), cv = c.parentElement;
-    // Phone: zoom 3 fits the line to the screen width and the slider scales from there (it used to do nothing, the
-    // canvas being squeezed to 100% width at every zoom). Desktop: zoom = page pixels per source pixel, as before.
+    const cv = c.parentElement;
     const phone = window.matchMedia('(max-width:640px)').matches;
     const cssW = phone ? Math.max(120, Math.round(cv.clientWidth * z / 3)) : (x1 - x0) * z;
     const s = phone ? cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0) : z;
     c.width = Math.round((x1 - x0) * s); c.height = Math.round((y1 - y0) * s); c.style.width = cssW + 'px';
     const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, c.width, c.height);
-    // mark the tile's own box with corner brackets (shape, not colour), drawn twice for contrast on any paper;
-    // stroke sizes are in screen pixels, so the brackets stay visible when the canvas is shown smaller than drawn
+    // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;
     const bx = (x - x0) * s, by = (y - y0) * s, bw = w * s, bh = h * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
     [['#ffffff', 6 * k], ['#000000', 3 * k]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
@@ -483,44 +704,41 @@ function drawCtx(){
   };
   if (im.complete && im.naturalWidth) draw(); else im.addEventListener('load', draw, {once: true});
 }
+function drawCtx(){ const sid = ctxSid; drawLine(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
 let ctxList = [];
 let ctxListName = 'in this pile';
 function showCtx(sid, pid, keepList, list, listName){
   if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
-    document.getElementById('ctxMsg').textContent = ''; }
+    $('ctxMsg').textContent = ''; }
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
   const i = ctxList.indexOf(sid);
-  document.getElementById('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
-  document.getElementById('ctxPrev').disabled = i <= 0; document.getElementById('ctxNext').disabled = i >= ctxList.length - 1;
+  $('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
+  $('ctxPrev').disabled = i <= 0; $('ctxNext').disabled = i >= ctxList.length - 1;
   const cur = moves[sid] || homeOf[sid];
-  const dest = document.getElementById('ctxDest'); dest.length = 1;
-  allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && b.id !== 'BAD-CUT') - (a.isNew && a.id !== 'BAD-CUT')) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
-    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.isNew && q.id !== 'BAD-CUT' ? '  (new pile)' : '  (' + q.family + ')'); dest.append(o); });
-  document.getElementById('ctxNewB').title = 'Start a new sign for this tile (named ' + nextPileName(cur === 'ASIDE' || cur === 'BAD-CUT' ? homeOf[sid] : cur) + ')';
-  document.getElementById('ctxT').textContent = 'Tile ' + sid + (moves[sid] === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' :
-    moves[sid] === 'BAD-CUT' ? ' (marked bad cut)' : ' in pile ' + pid);
-  const q = document.getElementById('ctxQ'); q.hidden = !focusQ[sid]; q.textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
-  const kb = document.getElementById('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'BAD-CUT';
+  const dest = $('ctxDest'); dest.length = 1;
+  allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && !SPECIAL.has(b.id)) - (a.isNew && !SPECIAL.has(a.id))) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
+    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.isNew && !SPECIAL.has(q.id) ? '  (new pile)' : '  (' + q.family + ')'); dest.append(o); });
+  $('ctxNewB').title = 'Start a new sign for this tile (named ' + nextPileName(pileOf(sid)) + ')';
+  $('ctxT').textContent = 'Tile ' + sid + (cur === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' : cur === 'OUT' ? ' (taken out of pile ' + homeOf[sid] + ')' :
+    cur === 'BAD-CUT' ? ' (marked bad cut)' : ' in pile ' + pid);
+  const q = $('ctxQ'); q.hidden = !focusQ[sid]; q.textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
+  const kb = $('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'OUT' || SPECIAL.has(cur);
   kb.textContent = checked[sid] && checked[sid] === cur ? '✓ Kept in ' + cur : 'Right pile: keep it in ' + cur;
-  document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.';
-  document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
+  $('ctxOut').hidden = cur === 'OUT';
+  $('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.';
   updateUndo();
-  document.getElementById('ctx').hidden = false; drawCtx();
+  $('ctx').hidden = false; drawCtx();
 }
 function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
 function ctxAdvance(sid){
   const i = ctxList.indexOf(sid);
   if (i >= 0 && i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, pileOf(s2), true); }
-  else { document.getElementById('ctxMsg').textContent += ' That was the last tile in this list.'; showCtx(sid, pileOf(sid), true); }
+  else { $('ctxMsg').textContent += ' That was the last tile in this list.'; showCtx(sid, pileOf(sid), true); }
 }
 function ctxMove(to){
-  const sid = ctxSid, from = pileOf(sid);
-  remember([sid]);
-  if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
-  const hs = state[homeOf[sid]];
-  if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
-  saveMove(sid); sel(from).delete(sid);
-  document.getElementById('ctxMsg').textContent = 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to) + '. Showing the next tile.';
+  const sid = ctxSid;
+  remember([sid]); setDest(sid, to);
+  $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to)) + '. Showing the next tile.';
   render();
   ctxAdvance(sid);
   offerCluster([sid], to);
@@ -529,59 +747,54 @@ function ctxKeep(){
   const sid = ctxSid, cur = moves[sid] || homeOf[sid];
   const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
   checked[sid] = cur; saveCheck(sid); hideOffer();
-  document.getElementById('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
+  $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
   render(); ctxAdvance(sid);
 }
-document.getElementById('ctxKeep').onclick = ctxKeep;
-document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
-document.getElementById('undo').onclick = undo;
-document.getElementById('order').onchange = render;
-document.getElementById('ctxUndo').onclick = () => { const last = undo(); if (!last) return;
+$('ctxKeep').onclick = ctxKeep;
+$('ctxOut').onclick = () => ctxMove('OUT');
+$('ctxPrev').onclick = () => ctxStep(-1);
+$('undo').onclick = undo;
+$('order').onchange = render;
+$('ctxUndo').onclick = () => { const last = undo(); if (!last) return;
   const one = last.length === 1 ? last[0][0] : last.checks ? last.checks[0][0] : null;
-  if (one && ctxList.includes(one)){ document.getElementById('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
-  else { document.getElementById('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
-document.getElementById('ctxNext').onclick = () => ctxStep(1);
-document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
-document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
-document.getElementById('ctxBad').onclick = () => {   // tile box cut in the wrong place: parked in one pile for recutting
-  if (!newPiles['BAD-CUT']){ newPiles['BAD-CUT'] = {family: 'Bad cuts (to recut)', from: ctxPid}; saveNew('BAD-CUT'); }
-  ctxMove('BAD-CUT'); };
-document.getElementById('ctxNewB').onclick = () => ctxMove(makePile(ctxPid === 'BAD-CUT' ? homeOf[ctxSid] : ctxPid));
-document.addEventListener('keydown', e => { if (document.getElementById('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  if (one && ctxList.includes(one)){ $('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
+  else { $('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
+$('ctxNext').onclick = () => ctxStep(1);
+$('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
+$('ctxAside').onclick = () => ctxMove('ASIDE');
+$('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };   // tile box cut in the wrong place: parked for recutting
+$('ctxNewB').onclick = () => ctxMove(makePile(pileOf(ctxSid)));
+document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
-const closeCtx = () => { document.getElementById('ctx').hidden = true; const o = document.getElementById('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); };
-document.getElementById('ctxClose').onclick = closeCtx;
-document.getElementById('ctxX').onclick = closeCtx;
-document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
-document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!document.getElementById('offer').hidden) hideOffer(); else closeCtx(); } });
-document.getElementById('ctxZ').oninput = drawCtx;
-document.getElementById('ctxSel').onclick = () => { const s = sel(ctxPid); if (s.has(ctxSid)) s.delete(ctxSid); else s.add(ctxSid); closeCtx(); render(); jumpTo(ctxPid); };
-const setMode = m => { clickMode = m; document.getElementById('modeSel').classList.toggle('on', m === 'sel'); document.getElementById('modeCtx').classList.toggle('on', m === 'ctx');
-  document.getElementById('modeSel').setAttribute('aria-pressed', m === 'sel'); document.getElementById('modeCtx').setAttribute('aria-pressed', m === 'ctx'); };
-document.getElementById('modeSel').onclick = () => setMode('sel');
-document.getElementById('modeCtx').onclick = () => setMode('ctx');
-[0, 1, 2].forEach(n => document.getElementById('ink' + n).onclick = () => {
+const closeCtx = () => { $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
+$('ctxClose').onclick = closeCtx;
+$('ctxX').onclick = closeCtx;
+$('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!$('offer').hidden) hideOffer(); else closeCtx(); } });
+$('ctxZ').oninput = drawCtx;
+[0, 1, 2].forEach(n => $('ink' + n).onclick = () => {
   document.body.classList.remove('ink1', 'ink2'); if (n) document.body.classList.add('ink' + n);
-  [0, 1, 2].forEach(k => { const b = document.getElementById('ink' + k); b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });
+  [0, 1, 2].forEach(k => { const b = $('ink' + k); b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });
   try { localStorage.setItem('sorter:ink', n); } catch(e){} });
-try { const n = +localStorage.getItem('sorter:ink'); if (n) document.getElementById('ink' + n).click(); } catch(e){}
-document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
-document.getElementById('show').onchange = render;
-document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles, first piled by our readers’ labels. ' +
+try { const n = +localStorage.getItem('sorter:ink'); if (n) $('ink' + n).click(); } catch(e){}
+$('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
+$('show').onchange = render;
+$('foot').textContent = Object.keys(itemBySid).length + ' tiles, first piled by our readers’ labels. ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 (function(){ const F = DATA.focus || []; if (!F.length) return;
-  const box = document.getElementById('focus'); box.hidden = false;
-  document.getElementById('focusNote').textContent = DATA.focusNote || '';
-  const wrap = document.getElementById('focusTiles');
+  const box = $('focus'); box.hidden = false;
+  $('focusNote').textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + 'Tap one to see it on its line. In the piles below these signs have a dashed frame and a "?".';
+  const wrap = $('focusTiles');
   const missing = F.filter(f => !itemBySid[f.sid]).map(f => f.sid);
-  if (missing.length) document.getElementById('focusNote').textContent += (DATA.focusNote ? ' ' : '') + missing.length +
+  if (missing.length) $('focusNote').textContent += ' ' + missing.length +
     (missing.length === 1 ? ' listed sign has' : ' listed signs have') + ' no tile on this page and is not shown: ' + missing.join(', ') + '.';
   const ids = [...new Set(F.map(x => x.sid).filter(x => itemBySid[x]))];
-  F.forEach(f => { const it = itemBySid[f.sid]; if (!it || wrap.querySelector('[data-sid="' + f.sid + '"]')) return;
+  F.forEach(f => { const it = itemBySid[f.sid]; if (!it || wrap.querySelector('[data-sid="' + CSS.escape(f.sid) + '"]')) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q;
-    const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
+    const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
     b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"');
+    b.addEventListener('contextmenu', e => e.preventDefault());
     // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog
     const short = f.q.replace(/\s*\[[^\]]*\]/g, '').split('; ').pop().trim() || f.q;
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = short;
@@ -589,23 +802,23 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
     d.append(b, c, ok); wrap.append(d); });
 })();
 function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach(d => { const sid = d.dataset.sid, to = moves[sid];
-  const msg = to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cut' : to ? 'now ' + to : checked[sid] ? 'kept in ' + checked[sid] : '';
-  d.querySelector('.t').classList.toggle('done', !!msg); d.querySelector('.fdone').textContent = msg ? '\u2713 ' + msg : ''; }); }
+  const msg = to === 'ASIDE' ? 'set aside' : to === 'OUT' ? 'taken out' : to === 'BAD-CUT' ? 'bad cut' : to === 'NOT-LETTER' ? 'not a letter' : to ? 'now ' + to : checked[sid] ? 'kept in ' + checked[sid] : '';
+  d.querySelector('.t').classList.toggle('done', !!msg && to !== 'OUT'); d.querySelector('.fdone').textContent = msg ? (to === 'OUT' ? '→ ' : '✓ ') + msg : ''; }); }
 (function(){ const R = DATA.rank || []; if (!R.length) return;
-  const box = document.getElementById('rank'); box.hidden = false;
-  document.getElementById('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
-  const wrap = document.getElementById('rankTiles');
+  const box = $('rank'); box.hidden = false;
+  $('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
+  const wrap = $('rankTiles');
   R.forEach((f, n) => { const it = itemBySid[f.sid]; if (!it) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
-    const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
+    const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
     b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
-    const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' \u00b7 ' + (+f.score).toFixed(1);
+    const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' · ' + (+f.score).toFixed(1);
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
     d.append(b, k, c); wrap.append(d); });
 })();
 function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid;
-  const done = !!moves[sid] || !!checked[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
+  const done = (!!moves[sid] && moves[sid] !== 'OUT') || !!checked[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
 const render0 = render; render = function(){ render0(); markRankDone(); markFocusDone(); };
 render();
 
@@ -618,7 +831,7 @@ updateUndo();
     // no store: keep choices in this browser; what the person did before this answer wins over the stored copy
     const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}};
     const touched = Object.keys(writers);
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); } } catch(e){}
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); } } catch(e){}
     touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
       const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked]}[k];
       if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
@@ -629,14 +842,14 @@ updateUndo();
   el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
   held.forEach(pump);   // choices made while storage was still connecting
   const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error') + '. Reload the page.'; el.className = 'save err'; };
-  // A snapshot re-renders only when it changed something (a re-render used to wipe a note being typed), and never
-  // overwrites a local change that is not yet confirmed (inflight).
+  // A snapshot re-renders only when it changed something, and never overwrites a local change not yet confirmed.
   const listen = (c, path, apply) => c.onSnapshot(snap => { let changed = false;
     snap.docChanges().forEach(ch => { const d = ch.doc.data(); const id = d && path(d); if (!id || inflight[id]) return; if (apply(ch.type, d) !== false) changed = true; });
-    if (changed){ render(); if (!document.getElementById('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true); } }, fail);
+    if (changed){ render(); if (!$('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true); } }, fail);
   listen(col, d => d.pile && 'p/' + d.pile, (t, d) => { if (t === 'removed') delete state[d.pile];
     else state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
-  listen(mcol, d => d.sid && itemBySid[d.sid] && 'm/' + d.sid, (t, d) => { if (t === 'removed') delete moves[d.sid]; else moves[d.sid] = d.to; });
+  listen(mcol, d => d.sid && itemBySid[d.sid] && 'm/' + d.sid, (t, d) => { if (t === 'removed') delete moves[d.sid];
+    else { moves[d.sid] = d.to; if (d.to === 'OUT') outAt[d.sid] = Date.parse(d.updated) || outAt[d.sid] || 0; } });
   listen(ncol, d => d.id && 'n/' + d.id, (t, d) => { if (t === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
   listen(ccol, d => d.cluster && 'c/' + d.cluster, (t, d) => { if (t === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; return false; });
   listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; });

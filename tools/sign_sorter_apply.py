@@ -13,6 +13,8 @@ row per sign: sid, old_sign, new_sign, status, where status is one of
   not-letter  its final pile was marked "Not a letter"
   aside       set aside without a pile (needs a second look)
   bad-cut     the tile's box was cut in the wrong place (recut it before reading)
+  taken-out   taken out of its pile in step 1 ("doesn't belong here") and not yet placed in step 2: unsettled, no
+              sign (moves doc with to 'OUT', two-step sorter, 3 Oct 2026); never silently kept in its old pile
   cluster-moved  the person made a cluster decision (DIR/clusters/*.json, TX-SORTER 3 Oct 2026) and this tile, of
               that cluster, had no move of its own: it follows the decision (a sibling letter's tile, or a save from a
               page built before the per-tile moves landed)
@@ -72,6 +74,8 @@ def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None, chec
             rows.append((sid, old, '', 'aside')); continue
         if dest == 'BAD-CUT':
             rows.append((sid, old, '', 'bad-cut')); continue
+        if dest == 'OUT':
+            rows.append((sid, old, '', 'taken-out')); continue
         pile = dest or old
         fin = final(pile)
         status = ('cluster-moved' if via_cluster else 'moved') if dest else ('merged' if fin != old else 'kept')
@@ -81,7 +85,7 @@ def apply(labels, piles, moves, newpiles, cluster_docs=(), cluster_of=None, chec
     summary = {
         'tiles': len(rows),
         'by_status': {s: sum(1 for r in rows if r[3] == s) for s in ('kept', 'moved', 'merged', 'not-letter', 'aside', 'bad-cut')
-                      + (('cluster-moved',) if cdec else ())},
+                      + (('cluster-moved',) if cdec else ()) + (('taken-out',) if any(r[3] == 'taken-out' for r in rows) else ())},
         'signs_before': len({r[1] for r in rows}),
         'signs_after': len({r[2] for r in rows if r[2] and r[3] != 'not-letter'}),
         'confirmed_piles': sorted(p for p, v in verdict.items() if v == 'same'),
@@ -117,13 +121,13 @@ def write_atlas(L, rows, piles, moves, cluster_docs, cluster_of, source=''):
     covered = set()
     for c in cluster_docs:
         cid, to = c.get('cluster'), c.get('to')
-        if not cid or not to or '~' in cid or to in ('ASIDE', 'BAD-CUT'):
+        if not cid or not to or '~' in cid or to in ('ASIDE', 'BAD-CUT', 'OUT'):
             continue                        # provisional page-local groups are never atlas clusters
         signs[cid] = final(to); n_clu += 1; covered.add(cid)
     own = {m['sid'] for m in moves if m.get('sid') and m.get('to')}
     review = L.setdefault('sorter_review', {})
     for sid, old, new, status in rows:
-        if status in ('aside', 'bad-cut'):
+        if status in ('aside', 'bad-cut', 'taken-out'):
             review[sid] = status; continue
         if sid not in own or status not in ('moved', 'not-letter') or sid not in cluster_of:
             continue

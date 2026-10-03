@@ -71,4 +71,25 @@ async function install(target, opts = {}) {
   }, o);
   return store;
 }
-module.exports = { install };
+// Gestures for the two-step sorter. On a touch context they go through CDP touch events (real pointerType 'touch',
+// the path a phone takes); otherwise through the mouse.
+async function touchOrMouse(page, kind, x, y) {
+  if (page.__touch === undefined) page.__touch = await page.evaluate(() => navigator.maxTouchPoints > 0);
+  if (page.__touch) { const cdp = page.__cdp || (page.__cdp = await page.context().newCDPSession(page));
+    const type = { down: 'touchStart', move: 'touchMove', up: 'touchEnd' }[kind];
+    await cdp.send('Input.dispatchTouchEvent', { type, touchPoints: kind === 'up' ? [] : [{ x, y }] }); return; }
+  if (kind === 'down') { await page.mouse.move(x, y); await page.mouse.down(); } else if (kind === 'move') await page.mouse.move(x, y); else await page.mouse.up();
+}
+async function hold(page, locator, ms = 650) {   // press and hold, then let go
+  await locator.evaluate(e => e.scrollIntoView({ block: 'center' })); await page.waitForTimeout(150);   // centred, so not under the fixed tray
+  const b = await locator.boundingBox(); const x = b.x + b.width / 2, y = b.y + b.height / 2;
+  await touchOrMouse(page, 'down', x, y); await page.waitForTimeout(ms); await touchOrMouse(page, 'up', x, y); await page.waitForTimeout(150);
+}
+async function drag(page, from, to) {            // drag one element onto another, in small steps
+  await to.scrollIntoViewIfNeeded().catch(() => {}); const a = await from.boundingBox(), b = await to.boundingBox();
+  const x0 = a.x + a.width / 2, y0 = a.y + a.height / 2, x1 = b.x + b.width / 2, y1 = b.y + b.height / 2;
+  await touchOrMouse(page, 'down', x0, y0);
+  for (let i = 1; i <= 12; i++) { await touchOrMouse(page, 'move', x0 + (x1 - x0) * i / 12, y0 + (y1 - y0) * i / 12); await page.waitForTimeout(16); }
+  await touchOrMouse(page, 'up', x1, y1); await page.waitForTimeout(150);
+}
+module.exports = { install, hold, drag, gesture: touchOrMouse };
