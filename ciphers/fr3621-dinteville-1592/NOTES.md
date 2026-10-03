@@ -273,7 +273,7 @@ done 02:42). Files: `f128/` (README.md lists them), crops in `images/`.
 
 **Image.** `tools/gallica_folio.py btv1b52524472n --folio 128` -> canvas f265, label '128r', one constant offset
 (k=10, ff.1-131). The leaf is no.114 (the BnF finding aid's "avec chiffre et dechiffrement", Langres 1 July 1592): the
-date line at the foot reads "...ce j^er Juillet 1592" (not checked further). The cipher passage is 4 lines (L02 right
+date line at the foot ends "...Juillet 1592" (day not read in this step). The cipher passage is 4 lines (L02 right
 end after "et"; L03 to L05), each with a period decipherment written word by word above it. Crops (pasted):
 
 ```
