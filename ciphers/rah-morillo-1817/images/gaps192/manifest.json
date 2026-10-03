@@ -1,0 +1,81 @@
+{
+ "fetched": "2026-10-03",
+ "worker": "GAPS192-rah-morillo-1817 (account-4)",
+ "source": "OAI didl idImagen ids (GAPS186) -> imagen_id.do via tools/browser_fetch.js --binary; committed files are half-size re-encodes (folder 30 MB rule); native sha1 recorded for re-fetch",
+ "items": [
+  {
+   "record_id": 3886,
+   "idImagen": 10084370,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10084370",
+   "native_size": "2382x3250",
+   "native_bytes": 985732,
+   "native_sha1": "e5ccb5a72eee2a2e4b8fbcc3f354139d0f94ae03",
+   "file": "10084370_half.jpg",
+   "file_size": "1191x1625",
+   "file_sha1": "3fc64d94d251be7eb511e6ee499ff0da0a30a24e",
+   "content": "f.419r: Morales to Morillo, Guardatinajas 10 Sept 1819, clear autograph letter, no numerals/table"
+  },
+  {
+   "record_id": 3886,
+   "idImagen": 10084371,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10084371",
+   "native_size": "2418x3243",
+   "native_bytes": 1058339,
+   "native_sha1": "622859f9b47ae4b6fdf91765aece9d853b0fec73",
+   "file": "10084371_half.jpg",
+   "file_size": "1209x1621",
+   "file_sha1": "67a21ab5b8c5253a6dc0f523f5bcda6b10471b78",
+   "content": "f.419v: continuation, signed, addressed to Morillo; clear, no numerals/table"
+  },
+  {
+   "record_id": 3893,
+   "idImagen": 10084429,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10084429",
+   "native_size": "2460x3309",
+   "native_bytes": 988214,
+   "native_sha1": "6687f569ba49e65210f8d14641d7f5a0926052e7",
+   "file": "10084429_half.jpg",
+   "file_size": "1230x1654",
+   "file_sha1": "85a3730a92d6057d7ee73a2b6fbff3de4a01ddff",
+   "content": "f.429r: Morales to Morillo, Guardatinajas 13 Sept 1819, clear letter acknowledging receipt of \"la clave\"; no numerals/table"
+  },
+  {
+   "record_id": 3893,
+   "idImagen": 10084430,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10084430",
+   "native_size": "2443x3278",
+   "native_bytes": 1119126,
+   "native_sha1": "8f8bf632db6fbffa454ad52bd3839b71864bfd5a",
+   "file": "10084430_half.jpg",
+   "file_size": "1221x1639",
+   "file_sha1": "ee5c62a96f5db1ef63deeb5508715bdf901c59a6",
+   "content": "f.429v: continuation, clear, no numerals/table"
+  },
+  {
+   "record_id": 3893,
+   "idImagen": 10084431,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10084431",
+   "native_size": "2460x3273",
+   "native_bytes": 1013688,
+   "native_sha1": "13e7bdca2dff49d203e98da8796ee738272e72dd",
+   "file": "10084431_half.jpg",
+   "file_size": "1230x1636",
+   "file_sha1": "8a962fab5dcb0f6b651192438e52ca42f1447f44",
+   "content": "f.430r: end of letter, signed; clear, no numerals/table"
+  },
+  {
+   "record_id": 1759,
+   "idImagen": 10080060,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10080060",
+   "file": null,
+   "content": "NOT AN IMAGE: served as image/jpeg but body is a Tomcat stack trace (ClassNotFoundException org.apache.jsp._401_jsp, i.e. the 401 error page), 1707551 bytes, sha1 b9fe5f00095ae5372fe245353149f40cf33baaca; twice (one retry after 20 s)"
+  },
+  {
+   "record_id": 1759,
+   "idImagen": 10080061,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10080061",
+   "file": null,
+   "content": "NOT AN IMAGE: served as image/jpeg but body is a Tomcat stack trace (ClassNotFoundException org.apache.jsp._401_jsp, i.e. the 401 error page), 1854722 bytes, sha1 94e23b5883096e7a4672530b0c764bac4037bbcc; twice (one retry after 20 s)"
+  }
+ ]
+}
