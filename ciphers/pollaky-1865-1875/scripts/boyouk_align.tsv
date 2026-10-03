@@ -1,0 +1,5 @@
+text	groups	words	pos_91	S_target	ctrl_p95	ctrl_tail	ctrl_floor_share	power	verdict
+P1 whole ad	36 (split)	73	15,23	-2.962	-2.330	0.384	0.042	0.335	untestable by this statistic at this N (power < 0.5)
+P2 minus address	36 (split)	64	15,23	-1.970	-1.983	0.045	0.038	0.315	untestable by this statistic at this N (power < 0.5)
+P1 whole ad	35 (joined)	73	14,22	-2.795	-2.394	0.268	0.036	0.375	untestable by this statistic at this N (power < 0.5)
+P2 minus address	35 (joined)	64	14,22	-2.080	-2.088	0.048	0.036	0.320	untestable by this statistic at this N (power < 0.5)

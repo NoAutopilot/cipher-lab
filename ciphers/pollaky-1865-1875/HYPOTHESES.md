@@ -30,3 +30,19 @@ NOTES.md before scoring (commit 577aeea6).
 
 Status: supported as a design candidate on letter-bigram order (post-hoc rule; C weak by construction); no word read,
 10 letters M.
+
+## Ad 2 (1871 telegram) = Boyouk's 1867 "ELOPED" clear ad, one group per 1-3-word chunk -- GAPS164, 3 Oct 2026
+
+Statistic S: log10 share of monotone alignments (each group 1-3 consecutive words) in which the two "91" groups cover
+identical chunks. Control: 2000 same-length windows of period English prose (Holmes 1892, Huck Finn 1884, Pride 1813).
+Positive control: 200 synthetic chunk codes from fresh windows. Script: scripts/boyouk_align.py (seed 164). Pre-registered
+in NOTES.md before scoring (commit f065906d).
+
+| plaintext | groups | S target | control p95 (tail) | power | verdict |
+|---|---|---|---|---|---|
+| whole ad (73 words) | 36 split | -2.962 | -2.330 (0.384) | 0.335 | untestable |
+| minus address (64) | 36 split | -1.970 | -1.983 (0.045) | 0.315 | untestable |
+| whole ad | 35 joined | -2.795 | -2.394 (0.268) | 0.375 | untestable |
+| minus address | 35 joined | -2.080 | -2.088 (0.048) | 0.320 | untestable |
+
+Status: untested-by-this-tool at N=36 with one repeated group (power < 0.5), not refuted.
