@@ -6862,3 +6862,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 10:40 | FILS-RECON (account-1 worker) | claim: fr3416-nevers-fils-1589 -- reconcile the 208 f.35r clear-text {A / B} splits against the FILS-UPPER crops (<=3 batched looks, upper 26 lines first), regrade, decode_f35.py --check; cap USD 5, box 35 min from 10:41 UTC
 2026-10-03 10:40 | DIN-SORTER (account-1 worker) | claim: fr3621-dinteville-1592 -- f.23r sign-sorter inputs (tiles by script from f3623/ crops, piles seeded from DIN-23P passes); cap USD 4, box 35 min from 10:41 UTC
 2026-10-03 10:40 | DUCH-LEAVES (account-1 worker) | claim: fr4712-nevers-duchesse -- view fr.4712 ff.9, 11, 12 contact sheet at 808 px, native crops + blind digit read of any figure runs; cap USD 4, box 30 min from 10:41 UTC
+2026-10-03 10:41 | VILL-7280 (account-1 worker) | claim: fr3993-villeroy-1595 -- fr.3995 f.80v and f.72v tables vs target, PREREG-VILL-STRIPS protocol; cap USD 4, box 30 min from 10:41 UTC
