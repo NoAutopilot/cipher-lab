@@ -1,0 +1,92 @@
+folio	column	code	value	note	confidence
+4	L	85	st		high
+4	L	86			high
+4	L	87	f		med
+4	L	88			high
+4	L	89	tz. z. s?	last s carries a mark above	med
+4	L	90	c ch		high
+4	L	91	st. Stanislaus	Stanislaus in Kurrent	med
+4	L	92	y		high
+4	L	93	f ff		med
+4	L	94			high
+4	L	95	te?	value struck through	low
+4	L	96	le		high
+4	L	97	la		high
+4	L	98			high
+4	L	99	s. ss. sa.		high
+4	L	100.	d		high
+4	L	102	s. ss. ess.		high
+4	L	103	le la		high
+4	L	109	ss		high
+4	L	110	la		high
+4	L	115	à		high
+4	L	118	e et		high
+4	L	119	t tt		high
+4	L	120	d. Dhona.		high
+4	R	130	Walling?	Kurrent	low
+4	R	150	le Roi de Pologne		high
+4	R	153	der Statthalter Prinz von Fürsten= berg.	Kurrent	med
+4	R	154	Feldmarschall	Kurrent	med
+4	R	155	Flemming	Kurrent	med
+4	R	156	Hoym	Kurrent	med
+4	R	160	Manteuffel	Kurrent; code digit overwritten (5 or 6 corrected to 6?)	med
+4	R	163	Löwendahl	Kurrent	med
+4	R	168	l'Empereur		high
+4	R	170	le Roi		high
+4	R	171	le Vicechancelier		high
+4	R	177	le czar		high
+4	R	180	Golowkin		high
+4	R	181	Menzikoff		high
+4	R	186	Roi de Suède		high
+4	R	187	Roi de Suède		high
+4	R	190	Stanislas		high
+4	R	191	Steenbock?	Kurrent	low
+4	R	198	Stanislas		high
+4	R	202	la république de Pologne		high
+4	R	205	le grand général		high
+4	R	207	le grand chancelier		high
+4	R	217	la reine d'Angle, terre		high
+5	L	227	Le roi de Danemark, Danemark		high
+5	L	230	Le roi de Prusse		high
+5	L	240	Pless.		high
+5	L	252	Le roi de Prusse	hatched mark after value	high
+5	L	257	Le roi de Prusse		high
+5	L	259	Ilgen?	Kurrent	low
+5	L	260	Kameke?	Kurrent	low
+5	L	266	Hannover. Électeur de Hanovre	Hannover in Kurrent	med
+5	L	283	prince		high
+5	L	284	comte		high
+5	L	288	Mecklenbourg		high
+5	L	291	Suède		high
+5	L	292	Pologne		high
+5	L	298	la France; le roi de France.		high
+5	L	299	l'Angleterre		high
+5	L	301	nin? nonvaleur	first word unclear	low
+5	L	303	Pape		high
+5	L	305	Roi		high
+5	L	310	Dresden		high
+5	L	312	Berlin		high
+5	L	313	Hambourg		high
+5	R	327	Rom	Kurrent	med
+5	R	355	u un une		high
+5	R	356	deux		high
+5	R	376	l'envoyé		high
+5	R	378	le secrétaire		high
+5	R	380	la paix		high
+5	R	390	Stettin	Kurrent	med
+5	R	401	o		high
+5	R	700	et	brace joins 700 and 1000	high
+5	R	1000	et	brace joins 700 and 1000	high
+5	R	45.60	Kreis?	Kurrent	low
+5	R	20.12	Blaspil?	Kurrent	low
+5	R	1.44	Flemming	Kurrent	med
+5	R	17.16.44	Polonois		high
+5	R	35.12.55.	Elbing		high
+5	R	mons.110.217	der englische Gesandte	Kurrent; "mons." written in code position	med
+5	R	8.60	Grumbkow	Kurrent	med
+5	R	60.39	roi		high
+5	R	17.27.26	prince royal		high
+5	R	17.6	prince		high
+5	R	34.27	prince		high
+5	R	11.21.	Kniphausen		high
+5	R	83.44	Schlippenbach.	Kurrent	med

@@ -1,0 +1,15 @@
+# compound codes (Krauske f.5 R): letter codes spelled through key.tsv vs the word's opening; 8/13 agree
+compound	word	grade	spelled_by_key	check
+45.60	Kreis?	C	kr	agree
+20.12	Blaspil?	M	bl	agree
+1.44	Flemming	C	fl	agree
+17.16.44	Polonois	C	pol	agree
+35.12.55	Elbing	C	elb	agree
+mons.110.217	der englische Gesandte	C	lala reine d'Angleterre	disagree
+8.60	Grumbkow	C	hr	disagree
+60.39	roi	C	ri	disagree
+17.27.26	prince royal	C	prr	disagree
+17.6	prince	C	pu	disagree
+34.27	prince	C	pr	agree
+11.21	Kniphausen	C	kn	agree
+83.44	Schlippenbach.	C	schl	agree

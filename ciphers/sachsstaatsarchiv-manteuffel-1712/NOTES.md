@@ -188,18 +188,68 @@ as is (brief: not this worker's to change); flagged to LANE-A2PUSH.
 Requests: archive.org 5 (djvu.txt) + 1 (advancedsearch); www.archiv.sachsen.de 3 browser renders + 7 image GETs.
 Vision: 2 reads of reduced frames by this worker, no subagent calls.
 
+## GAPS151-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): Krauske's key table into key.tsv
+
+Intake gate pasted before work: `sachsstaatsarchiv-manteuffel-1712: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
+Scope (prompt): the table only, ff.2-5 (images/0004-0007.jpg); then apply it to the ciphertext on disk.
+
+**Crops.** `python3 tools/iiif_lines.py --image ciphers/sachsstaatsarchiv-manteuffel-1712/images/000N.jpg --out
+ciphers/sachsstaatsarchiv-manteuffel-1712/images/table_crops --region 2100,870,1680,1400 --prefix fFtop --centres
+50,150,...,1350 --lines-per-crop 14` and the same with `--region 2100,2070,1680,1400 --prefix fFbot` (N=4-7, F=2-5):
+one top and one bottom half per folio, overlapping by 200 px. The tool's automatic line finder missed most rows
+on this sparse table, and evenly spaced 13-line bands cut through rows 49, 98 and 283, hence the two overlapping halves.
+
+**Two blind Opus passes** (one subagent call per pass per folio pair: 4 calls) -> `table_passes/pass{A,B}_f{2-3,4-5}.tsv`.
+Agreement on value: ff.2-3 78/84 codes, ff.4-5 84/91. Every value split was either an alternative written in the
+value or the note column (settled by joining) or a Kurrent name: 259 Ilgen?/Flynn?, 260 Kameke?/Haacken?, 191
+Stenbock?/Steenbock?, 20.12 Blaspil?/Blassil?. **Reconciliation** (`reconcile_table.py`, settlements listed in
+its RECON table with reasons; one reconciler image read of three spots): 259 Ilgen (Ilgen is also written beside codes 9, 39 and 46 on f.2 in
+both passes), 260 Kameke (pass A reads Kameke beside code 11 on f.2), 191 Stenbock. All of these graded M.
+
+**key.tsv: 157 codes**, 122 grade C, 35 grade M (alternatives such as `s|ss|sa`, nulls, the reconciled names, any
+'?'). Codes with no value written (75, 86, 88, 94, 98) are left out of the key. **Grade C, not H**: Krauske's table is an
+1893 archivist's compilation ("Einige Chiffre-Auflösungen", f.2 head), not the 1712 key sheet; key source class
+`published` (Dr. Krauske, 1893, Loc. 694/10; rule 8). The table is a homophonic letter table (codes 1-120,
+several codes per letter, a few marked "non valeurs"), a nomenclator (130-401: names, titles, places) and
+compound groups (f.5 right column). `python3 reconcile_table.py --check` regenerates key.tsv and compounds.tsv.
+
+**Internal check (compounds.tsv).** Krauske's 13 compound groups spelled through his own single-letter codes
+match the opening letters of the word he gives in **8/13** (1.44 fl-Flemming, 17.16.44 pol-Polonois,
+35.12.55 elb-Elbing, 11.21 kn-Kniphausen, 83.44 schl-Schlippenbach, 20.12 bl-Blaspil, 45.60 kr-Kreis?, 34.27
+pr-prince). They disagree in 5: 8.60 hr-Grumbkow, 60.39 ri-roi, 17.6 pu-prince, 17.27.26 prr-prince royal,
+mons.110.217. So most compounds are words spelled with the letter codes, and the 5 misses are either
+abbreviations or misreads; none was re-read.
+
+**Applied** (`decode.json`, `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`:
+"reading up to date", exit 0) to the only ciphertext on disk, the 24 code tokens A2-SAX2 eye-read from 694/08
+frames 0510 and 0580 (`ciphertext.tsv`; all conf low, as that pass graded them M; not a transcription of either leaf).
+**Grades: H 0, C 0, S 0, M 6, I 0, U 18** (U = code not in Krauske's table). Frame 0580: 191 Stenbock, 187 Roi de
+Suède, 157 ?, 26 r, 66 a. **Known-answer check, 1 of 1:** the leaf's own gloss writes Stenbock over 191 (A2-SAX2),
+and Krauske's table gives 191 = Stenbock. That is one agreement, not a control. Frame 0510: 2 of 18 codes are keyed (155 Flemming, 77 d). Its
+codes run 213-1056, above or between the table's entries ("Einige" = some solutions only), so Krauske's table does
+not cover that letter's nomenclator.
+
+**Judge** (fr18, Torcy/Villars/Maintenon/Gazette, era-matched for 1712; leave-one-file-out false-negative rate
+0.18-0.19 at N=200/500, tools/data/fr18/README.md, so a FAIL on a short text is weak): decode
+`STENBOCKROI DE SUÈDERA FLEMMINGD` **FAIL, score -1.394** (null_p99 -1.377, real_p05 -1.101, N=29 letters);
+shuffled-key decode (key values permuted, seed 1) **FAIL, -2.146** (null_p99 -1.145, real_p05 -1.114, N=20).
+The judge cannot decide here: 29 letters, almost all nomenclator names, no prose. This is not a negative on the key
+(rule 3). No 'reading ready' flag.
+
+Vision: 4 blind subagent passes (Opus) + 1 reconciler read + 5 layout reads by this worker. Requests: none (all images on disk).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX)
 Read so far: 0 of the 1712-13 reports read; Krauske's key table imaged (7 frames, ff.1-5), untranscribed; 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: not-attempted; table images and cipher frame 694/08 0580 on disk (A2-SAX2); next: line crops with tools/iiif_lines.py --image, two blind passes + reconcile into key.tsv, then the 0580 code groups the same way and decode_key.py with the leaf's own glosses as the check, ~$7
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent); applied only to 24 eye-read tokens (M 6, U 18; gloss check 191 Stenbock 1/1); the letters' own codes on 694/08 f.409 run past the table, so the table does not cover that letter; next: line crops of 694/08 frame 0580 (f.468, codes under 200 with glosses), 2 blind passes + reconcile into ciphertext.tsv, decode_key.py with the glosses as votes, ~$4
 - Loc. 694/08 and /09 ciphered reports, 877 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 17 sampled (A2-SAX2: 2 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; NOTES 24 Sept steps (2)-(3); next: IA/Google Books fts for Haake + read the paper, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
-- [ ] clear-pages: 694/08 frame 0580 carries interlinear glosses above code groups (Stenbock over 191, A2-SAX2) -- a known-answer check for Krauske's table; not yet read
-- [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026)
+- [ ] clear-pages: 694/08 frame 0580 carries interlinear glosses above code groups (Stenbock over 191, A2-SAX2) -- a known-answer check for Krauske's table; 191 agrees with key.tsv (GAPS151); the full leaf is not yet transcribed
+- [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [ ] print: NASG 1893-98 done, no print found; Haake and the Wackerbarth paper still to read
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 17 sampled (2 cipher, 1 possible, A2-SAX2 3 Oct 2026), 877 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: transcribe Krauske's table ff.2-5 into key.tsv (line crops, 2 blind passes + reconcile) and apply it to 694/08 frame 0580 with decode_key.py, its own glosses as the check, ~$7
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe the code groups and glosses of 694/08 frame 0580 (f.468) into ciphertext.tsv (line crops, 2 blind passes + reconcile) and decode it with key.tsv, the leaf's glosses as votes, ~$4

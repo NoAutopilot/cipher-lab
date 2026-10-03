@@ -1,0 +1,91 @@
+folio	column	code	value	note	confidence
+2	HEAD	HEAD	Einige Chiffre-Auflösungen		high
+2	HEAD	HEAD	zu den Berichten Manteuffels an		med
+2	HEAD	HEAD	Flemming 1712 und 1713.		high
+2	HEAD	HEAD	Hauptstaatsarchiv zu Dresden.		high
+2	HEAD	HEAD	vol. CXLV und CXLVI.		high
+2	HEAD	HEAD	Loc. 694/8-9.		high
+2	L	1.	f	[Flemming]	high
+2	L	2.	e.		high
+2	L	3	w	Welling	med
+2	L	4	x.		high
+2	L	5	v		high
+2	L	6	u		high
+2	L	7	g	gu Golowkin	med
+2	L	8	h		high
+2	L	9	i	Ilgen	high
+2	L	10	e		high
+2	L	11	k	Kameke?	low
+2	L	12	l		high
+2	L	13	m	[Manteuffel]	high
+2	L	14	n		high
+2	L	15	c?		med
+2	L	16	o	ou ous	high
+2	L	17	p	Poméranie	high
+2	R	18		} wahrscheinlich non-valeurs	high
+2	R	19		} wahrscheinlich non-valeurs	high
+2	R	20	b		high
+2	R	21	n		high
+2	R	22	o. a		med
+2	R	23	p		high
+2	R	24	q		high
+2	R	25	a		high
+2	R	26	r		high
+2	R	27	r		high
+2	R	28	t		high
+2	R	29	s.		med
+2	R	30	c?		med
+2	R	31	m	Manteuffel	high
+2	R	32	n		high
+2	R	33	o		high
+2	R	34	p		high
+2	R	35	e		high
+3	L	36	f		high
+3	L	37	g		high
+3	L	38	h		high
+3	L	39	i	Ilgen	high
+3	L	40	b		high
+3	L	41	k		high
+3	L	42	l		high
+3	L	43	m		high
+3	L	44	l		high
+3	L	45	k		high
+3	L	46	i	Ilgen	high
+3	L	47	h	[?] (struck-through mark, x?)	low
+3	L	48	g		high
+3	L	49	f		high
+3	L	50	a		high
+3	L	51	s sa		med
+3	L	52	t		high
+3	L	53	d		high
+3	L	54	u		high
+3	L	55	b.	[a]	high
+3	L	56	w		high
+3	L	57	s		med
+3	L	58	s?		low
+3	L	59	t		high
+3	L	60	r. re ro		med
+3	R	61		} non valeurs?	high
+3	R	62		} non valeurs?	high
+3	R	63		} non valeurs?	high
+3	R	64	c?		low
+3	R	65	b?		high
+3	R	66	a	Angleterre	high
+3	R	67	u		high
+3	R	68	v		high
+3	R	69	w		high
+3	R	70	x		high
+3	R	71	y		high
+3	R	72	ch		high
+3	R	73	s. z.		med
+3	R	74	sch	Schönhausen	med
+3	R	75			high
+3	R	76	st.	Stanislaus	med
+3	R	77	d		high
+3	R	78	le		high
+3	R	79	la		high
+3	R	80	i		high
+3	R	81	k		high
+3	R	82	z		high
+3	R	83	sch		med
+3	R	84	sch		med
