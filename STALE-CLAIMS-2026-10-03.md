@@ -230,3 +230,50 @@ except the live dispatcher; record-only (private) and out-of-scope rows were not
 
 Counts, account 2: landed 74, superseded 3 (T15 A2-HAR5; T78, T79 the two DECODE curl-login sessions of 24 Sept), lost 0, never-started 0;
 record-only private 2, out-of-scope 3, live dispatcher excluded 1. Archived 76 of the 77 landed/superseded sessions; the archive call for session_015DaE5rVM1789AY8g52Kg3w (NEVBIR-POOL, landed) was refused by this session's permission classifier and was not retried -- left idle for the owner or orchestrator to archive.
+
+## Sessions, account 1
+
+SWEEP-OWN-1 (account-1 worker, CIPHERLAB_ACCOUNT=owner, session_01GZviub2FQXjy12TqJpwysi, for LANE-ARM-A), brief
+`.claude/briefs/runs/2026-10-03-acct3-sweep-own.md` (Part 2). `list_sessions mine=true` paged to the end at about 19:22 UTC on
+3 Oct 2026 (5 pages): 475 sessions, 35 not archived. Excluded as live and not classified: this worker, LANE-ARM-A
+(session_015rWTRZYuKLgHKfVpjMBGUW) and its three ARM-A-H70/H71/H72 workers (created 19:20), the LIVE parent / standby
+session_01FXDfYR3CvGk7tcid1Aav1n (bound to the enabled 2-hourly standby and nightly cross-match triggers). The other 29 were judged
+from repository evidence (ROOM.md done lines under the session id, LEDGER.md, STATUS.md handoffs, the files they name) and the
+session's own last summary. Archived after this section was committed: every landed or superseded row; sessions bound to an enabled
+trigger and non-cipher-lab sessions were recorded only. No row is `lost`, so no NOTES.md "## Remaining gaps" line was added.
+"last activity" is the session's updated_at.
+
+| # | session | title / role | last activity (UTC) | verdict | evidence | redo step |
+|---|---|---|---|---|---|---|
+| U1 | session_01BuquErzUYdSB116KPAM8qh | campaign runner armstrong-madison-1808 (runner 3, standing) | 2026-10-03 18:25 | record only (live) | bound to enabled trigger trig_01KsXywGFVrwoCH1teUNned5 (:25 hourly, last fired 18:25); ROOM 3 Oct 05:32 H67-H68 done, waits on ASKS. Not archived: archiving would break a live runner; LANE-ARM-A owns the decision | - |
+| U2 | session_01QXP6VgydPmcfBDw7m1mCDv | LANE-A1 orchestrator (account 1) | 2026-10-03 12:33 | landed | STATUS.md "LANE A1 handoff (session_01QXP6..., account 1)"; LEDGER row 3 Oct (36 worker rows USD 107.52, all ledgered/archived); its 5 owner asks are ASKS rows 110-111 and the handoff | - |
+| U3 | session_012NTadgrCBftz3oRtgw5jFu | campaign runner fr4715-f61-mayenne-1592 (runner 9) | 2026-10-03 05:50 | superseded | ROOM 3 Oct 05:49 "done, stopping: replaced on 29 Sept (runner 10, account 3, then LANE-A2PUSH workers)"; no enabled trigger | - |
+| U4 | session_01K2B2cTCwujqmMqmGYyE6BY | campaign runner espagnol142-mercy-1648 (owner account) | 2026-09-28 17:00 | landed | ROOM 28 Sept 16:59 steps H30-H80 done (CAMPAIGN.md, NOTES.md); 17:00 paused its own trigger trig_01FiLDeivjm7E4BcEL4B9iLh; campaign moved to account 2 | - |
+| U5 | session_0185wbSuc3VUYGpvy2MDHTQC | MERCY-N4 verifier | 2026-09-28 06:22 | landed | LEDGER 28 Sept "done 06:22, class N4"; ciphers/espagnol142-mercy-1648/AUDIT.md | - |
+| U6 | session_01SBqFqTJkY37SuXd6hjb6P9 | MERCY-OUT outreach drafts | 2026-09-28 06:15 | landed | LEDGER 28 Sept "done 06:15, three drafts, nothing sent" | - |
+| U7 | session_01TrimUWpSxSyUXp7w7FEMfR | mercy campaign runner (retired unused) | 2026-09-27 21:44 | never-started | LEDGER 27 Sept: "ran no step, retired 22:28 when the campaign moved to account 2"; nothing to redo (U4 and account 2 ran the campaign) | - |
+| U8 | session_01YGuujsharo6NhL3xSxCb22 | LANE VO3 orchestrator | 2026-09-27 23:25 | landed | ROOM 27 Sept 23:25 done line; LEDGER row (no workers, five idle check-ins) | - |
+| U9 | session_01EYwyYDeAaQReWy7ZuQcoxe | LANE VX orchestrator | 2026-09-25 11:09 | landed | ROOM 25 Sept 11:08 done; STATUS.md "LANE VX handoff"; LEDGER row | - |
+| U10 | session_01JPoYAFvVfraJibxQdQfrqp | LANE KX orchestrator | 2026-09-25 10:59 | landed | ROOM 25 Sept 10:59 done; STATUS.md LANE KX handoff; LEDGER row | - |
+| U11 | session_01UDxtM9Xv2dnPfoo5z9T6wA | LANE TX orchestrator | 2026-09-25 09:34 | landed | ROOM 25 Sept 09:34 done; STATUS.md LANE TX handoff; LEDGER row | - |
+| U12 | session_013KFBgt7wPCVWv6eApPHWXF | HOSTS (parent worker) | 2026-09-25 05:19 | landed | ROOM 25 Sept 05:19 done; CLAUDE.md "### Image and catalogue hosts (table, 25 Sept 2026)" | - |
+| U13 | session_01KapVpHVzNpnnQce5C8c3LY | LANE PX orchestrator | 2026-09-25 09:53 | landed | ROOM 25 Sept 09:53 done; STATUS.md LANE PX handoff; LEDGER row | - |
+| U14 | session_01BV3tEgag6Qar38AACgLMM4 | LX-ED (Textos Politicos 1993, antt-linhares-chave) | 2026-09-25 04:02 | landed | ROOM 25 Sept 04:02 done line: every route failed, logged (a negative access result, recorded in the target's files and LOCAL-QUEUE) | - |
+| U15 | session_01BE3g8tWbS4T24KXMpShHt4 | LANE OX orchestrator | 2026-09-25 04:35 | landed | ROOM 25 Sept 04:35 done; STATUS.md LANE OX handoff; LEDGER row | - |
+| U16 | session_01LgrmyB7HMcMaeLTRNbEqb4 | LANE DX orchestrator | 2026-09-25 02:08 | landed | ROOM 25 Sept 02:08 done; STATUS.md "LANE DX handoff"; LEDGER row | - |
+| U17 | session_01UXTpujdthrPiBDUG57oNwf | LANE LX orchestrator | 2026-09-25 03:11 | landed | ROOM 25 Sept 03:10 done; STATUS.md LANE LX handoff; ciphers/antt-linhares-chave/AUDIT.md; LEDGER row | - |
+| U18 | session_01547w4GTk2sPmBxoixG2UPn | Routines: weekly retrospective (persistent) | 2026-09-28 06:19 | record only (live) | bound to enabled trigger trig_018XSXrWQQqZyuxZeQxRxnWd (Mondays 06:00, next 5 Oct); not archived, archiving would break the routine | - |
+| U19 | session_013wFmnrcXaatHXjkALLgdtZ | Diagnostic: credential variables | 2026-09-21 23:14 | landed | CLAUDE.md Access playbook "Credential diagnostic, 21 September 2026" | - |
+| U20 | session_01B7dAHdp63HEwsYKrhj6hin | IA lending: HMC Hamilton 1932, Grant Papers 10, Saberton | 2026-09-21 23:10 | superseded | its summary: IA login failed, items logged offline-only; CLAUDE.md "Retried 21 Sept 2026" entry; IA login resolved 23 Sept and the borrow route re-tested by IA-BORROW (25 Sept) | - |
+| U21 | session_01HyFLZH1rvVQNV8P5ydZUEz | DECODE: record 8725, R413, R4930 | 2026-09-21 23:04 | superseded | its summary: login rejected, tasks flagged; CLAUDE.md "Update, 21 Sept 2026"; DECODE login resolved 24 Sept (decode_browser_login.js) and LANE DX (U16) worked DECODE records | - |
+| U22 | session_018G7NHaTyGUePTc4zC9impX | Scout: queue builder (done) | 2026-09-19 22:14 | landed | QUEUE.md (built 19 Sept, since rebuilt by many scouts) | - |
+| U23 | session_015swU7qvzjJzfRQ44nD4WAz | Archive Lookup: Stepney 1702 (done) | 2026-09-19 21:14 | landed | ciphers/stepney-manchester-1702/REQUEST.md and NOTES.md name SP 105/65 (C3609655) | - |
+| U24 | session_01PajyZ5XEmBbB4oH6upKVnZ | Archive Lookup: Stepney 1702 (blocked) | 2026-09-19 20:51 | superseded | proxy 403 logged in REQUEST.md; the lookup was done by U23 twenty minutes later | - |
+| U25 | session_016RDFFGFzat9o7MCKRCpaTg | LANE-A1 orchestrator setup (repository leopard-gecko-mix) | 2026-10-03 09:16 | out-of-scope | sourced on a non-cipher-lab repository; record only, not archived | - |
+| U26 | session_01CBLNGMjFPmg7K492QcHfzB | Catamount data code session | 2026-09-27 17:45 | out-of-scope | non-cipher-lab repository (catamount-storefront-full); not archived | - |
+| U27 | session_01YH5sYnqsU3gDoFUaqu32ej | Catamount Data project search | 2026-09-27 17:47 | out-of-scope | non-cipher-lab repository; not archived | - |
+| U28 | session_01PdQqaMyDb1PkmChXpUZ1qs | New session (leopard-gecko-mix) | 2026-09-17 19:47 | out-of-scope | non-cipher-lab repository; not archived | - |
+| U29 | session_016Ss7whdhWWZvoMLGXXENZ8 | Rimworld emergent story discussion | 2026-09-21 03:22 | out-of-scope | non-cipher-lab repository; not archived | - |
+
+Counts, account 1: landed 17 (U2, U4-U6, U8-U17, U19, U22, U23), superseded 4 (U3, U20, U21, U24), lost 0,
+never-started 1 (U7); record-only live 2 (U1, U18), out-of-scope 5 (U25-U29). Archived 22 (every landed, superseded and never-started row).
