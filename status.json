@@ -810,6 +810,18 @@
       "next": "keep going: 8 internal gaps (the bracketing step done 2 Oct 2026, predictions 40 = a and 11 = n registered); cheapest next: the NA 3.01.17 EAD re-fetch (one request) grepped for cijfer/sleutel/chiffre items 1655-1660, ~$2; then the Stadsarchief Amsterdam catalogue record for the burgomasters' 1657 m",
       "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
       "kind": "recovery"
+    },
+    {
+      "name": "Manteuffel to Flemming, Berlin 1712-13 (SHStA Dresden Loc. 694/08), read with Krauske's 1893 key table",
+      "year": "1712",
+      "ref": "SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08, 694/10",
+      "folder": "ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "stage": 9,
+      "state": "active",
+      "holder": "Nobody",
+      "next": "f.410 at N4 (C 144 M 48 U 24 of 216); open: unglossed f.409 (codes to 1056) has no key reading; DECODE record 4999 (1717 Flemming-Manteuffel key, Loc. 03233/02) vs Krauske's table is the named next step",
+      "note": "Novelty verified 3 Oct 2026 from AUDIT.md (VERIFY-MANT N3, AUDIT2-MANT N4), key published. Safe sentence: Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica, Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026 (log in AUDIT.md).",
+      "kind": "recovery"
     }
   ],
   "workers": [
@@ -3051,6 +3063,29 @@
       "grade": "N3 (VERIFY-NV02, VERIFY-FILS-N4), key published (Tomokiyo's attribution of key no.25; alphabet read by us from fr.3995 f.51r). 102 figure tokens: H 74, M 28 (after FILS-CLEAR/FILS-NOMEN propagation). Outscores 200 shuffled keys at three seeds.",
       "line": "Fragmentary reading of the figure runs at the foot of the letter; no prior decipherment located (searched 3 Oct 2026). N4 waits on one page of the 2003 Répertoire (ASKS 110).",
       "completeness": "74/102 figure tokens at H"
+    },
+    {
+      "date": "3 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "novelty": "N4",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, VERIFY-MANT (N3) and \"Second adversarial audit\" (AUDIT2-MANT, N4)",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 f.410 lower block (frame 0511), P.S. of Manteuffel to Flemming, Berlin, November 1712",
+      "title": "SHStA Dresden Loc. 694/08 f.410, Manteuffel to Flemming, Berlin, Nov 1712: unglossed cipher P.S. read with Dr. Krauske's 1893 manuscript key table (Loc. 694/10, unprinted)",
+      "grade": "N4 (AUDIT2-MANT; N3 at VERIFY-MANT), key published (Krauske's 1893 manuscript table, someone else's non-period key, credited; agrees 17/17 with the period glosses on f.468, which it was probably compiled from). 216 tokens: H 0, C 144, M 48, U 24. fr18 judge FAIL (-1.038 vs real_p05 -0.99); 0/100 shuffled keys at or above the candidate under two shuffle designs (VERIFY-MANT). f.468 and f.467 glosses N0.",
+      "line": "Fragmentary reading: the Swedes, the peace, 'ne donne contentement', the Queen of England touching the prince, Stettin; Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica, Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026 (log in AUDIT.md).",
+      "completeness": "144/216 at C",
+      "unresolved_spans": "48 M, 24 U (codes outside Krauske's table)",
+      "audit_refs": [
+        "AUDIT.md VERIFY-MANT",
+        "AUDIT.md Second adversarial audit (AUDIT2-MANT)"
+      ]
     }
   ],
   "lanes": [

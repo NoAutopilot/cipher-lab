@@ -16,9 +16,17 @@ THE ITEM
 - Full files: https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712 (AUDIT.md,
   reading.txt, key.tsv, f410/).
 
+WHAT WE ALREADY SEARCHED (two audits, 3 Oct 2026; class N4 in AUDIT.md)
+- Our current statement: "Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher
+  passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216
+  tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica,
+  Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026
+  (log in AUDIT.md)."
+- Not yet read in full: Haake's Flemming monographs, the 2016 Wackerbarth "Société des antisobres" paper, JSTOR.
+
 QUESTIONS
 1. Is this passage, or this report of November 1712, printed anywhere? Check especially Acta Borussica, Behördenorganisation
-   und allgemeine Staatsverwaltung Preußens I (1894, ed. Schmoller and Krauske), Nr. 82 (Berlin 23 Nov 1712) and nearby; J. G.
+   und allgemeine Staatsverwaltung Preußens I (1894, ed. Schmoller and Krauske), Nr. 82 (p. 285, November 1712; the day number was not re-read at the heading) and nearby; J. G.
    Droysen, Geschichte der preußischen Politik IV; Haake's studies on Flemming; any edition of Manteuffel's Berlin reports.
 2. Give exact page citations for anything you find. Do not invent citations: say "not found" when you have not found it.
 3. Does the decoded content fit what is known of Prussian-Saxon diplomacy in November 1712 (Danish-Swedish war in Pomerania,
