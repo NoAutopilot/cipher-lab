@@ -565,3 +565,11 @@ offer a minister would put in cipher; if Champagny delivered it promptly it fall
 4 and 8 Feb and the reply ordered on 11 Feb fall in the same window. Candidate words: Floridas, alliance, Spain, cession,
 treaty, flag, decree(s), England, war, sequestration/sequester, verbally. This duplicates H70's ranked list for Floridas,
 Spain, decrees and England and adds alliance/cession/treaty/flag.
+
+## H75 Bowdoin (ARM-A-H75, 3 Oct 2026)
+
+Adds no Jan-Mar 1808 clear text: Bowdoin left Paris by 26 Oct 1807 and no Armstrong-Bowdoin letter after 16 Sept 1807
+is printed (NOTES.md "## H75 Bowdoin"). For the frame only: Armstrong's letters to Bowdoin (1806-07, printed in
+*Bowdoin and Temple Papers* pt. II, `sources/h75/bt2_djvu.txt`) open "Sir," and close "I am, Sir, very respectfully
+yrs." -- a colleague frame, not the despatch frame H70 found for the target; vocabulary in the Sept 1807 letters
+(Champagny, Prince of Benevento, Florida(s), Spain, "the Emperor") overlaps H70's list and adds nothing ranked.

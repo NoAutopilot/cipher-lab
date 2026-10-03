@@ -3869,3 +3869,73 @@ gallica.bnf.fr 1. One at a time, >=1.5 s apart.
 Next step (one line): the complete *Correspondance generale* vol. 8 (1808), and AAE CP Etats-Unis 1808 plus AN AF IV
 1192 read on site or by copy order (ASKS row) for any copy of an American legation dispatch; until then the French-side
 route has produced context cribs only, no intercept.
+
+## H75 Bowdoin (ARM-A-H75)
+
+Worker ARM-A-H75 (account 1, for LANE-ARM-A), 3 Oct 2026, 19:41-19:47 UTC (clock read). Brief
+`.claude/briefs/runs/2026-10-03-acct1-arma-h75-bowdoin.md`. Builds on ARM-KEYHUNT item 3 (28 Sept 2026), which had
+already read *The Bowdoin and Temple Papers* pt. II and screened its 512 printed cipher groups (MISS); not redone.
+0 vision, 0 subagents.
+
+**Editions.** IA advancedsearch (title:bowdoin, texts, 1800-1930) finds no edition of James Bowdoin III's letters
+other than *The Bowdoin and Temple Papers* (pt. I = MHS Coll. 6th ser. 9, 1897, IA bowdointemplepap00bowdrich,
+1756-1782, no Armstrong; pt. II = 7th ser. 6, 1907, IA collectionsofmas00mass_17). Pt. II full text fetched once to
+`sources/h75/bt2_djvu.txt`.
+
+**Every Armstrong-Bowdoin item printed in pt. II (14, plus joint addresses):** Armstrong to Bowdoin, Paris 22 July,
+7 Aug, 14 Sept (two), 16 Sept, 25 Oct (two) 1806; 30 Aug (two), 11 Sept, 16 Sept 1807. Bowdoin to Armstrong 29 Oct
+1806; [Aug-Sept] 1807; 14 Sept 1807. Joint: Gallatin to Armstrong and Bowdoin 18 Mar 1806; Madison to Armstrong and
+Bowdoin 15 July 1807 (the editors: the duplicate original "is almost wholly in cipher"; the volume prints the
+contemporary clear copy). Also Armstrong to the Prince of Benevento 12 June and 8 Aug 1807 (copies in Bowdoin's
+papers). **The last item between them is 16 Sept 1807; the volume has no letter from Oct 1807 (Bowdoin at
+Cherbourg, 26 Oct) to 29 May 1808** -- nothing printed covers Jan-Apr 1808.
+
+**Numerals in Armstrong's hand: none printed.** Every Armstrong-authored letter in pt. II was scanned line by line
+for runs of three or more 2-4 digit numbers: 0 runs. The one cipher passage *between the two* is Bowdoin to
+Armstrong, Paris 29 Oct 1806 (pp. 347-348): 5 runs, 26 groups, with the editors' bracketed glosses ("your private
+instructions", "those common to us both"). `sources/h75/numerals.tsv`. Already inside ARM-KEYHUNT's screen
+(`keyhunt/bt_we028_check.tsv` lines 17243-17253: 3 of 4 runs MATCH WE028, "Mr Monroe's cypher"). Pool screen on
+these 26 groups alone (`pool/cor/overlap_test.py`, unchanged; one OCR "13885" read as 1385): **candidate 0/26 shared
+with the target's top-20; control 1 THE=972 pooled sample 1/81; control 2 random draws of N=26 over 1-1899: 0.0%
+reach >=3 (mean 0.34) -- not a pool candidate.** Digit shape: units 0/1 among values >=100 0.136 (target 0.59),
+values >1700 0.000 (target 0.092), values <100 0.154 (target 0.36), values 900-1099 1 of 26 (target: 4 digit tokens of
+`ciphertext.txt`). WE028 itself was already scored on the target (HYPOTHESES.md, A2 table transfer: FAIL).
+
+**What the volume adds about Armstrong's ciphers (cited, grade I where inferred):**
+- 1805: Bowdoin to Erving, "General A. must therefore decypher it for you, & you can send it to me in Mr Monroe's
+  cypher" -- Armstrong held the Department's Paris code in 1805 (consistent with H25/ARM-KEYHUNT).
+- 22 July 1806: Armstrong, "Having no cypher in which I can write to Messrs Monroe & Pinckney" (ARM-KEYHUNT).
+- **29 Oct 1806: Bowdoin writes to Armstrong in WE028 (Monroe's cypher)** -- so by October 1806 Armstrong could read
+  WE028 (new to this folder's record; ARM-KEYHUNT screened the runs but did not note the recipient). WE028 does not
+  fit the target (above), so this narrows rather than opens.
+- 1807 (Bowdoin to Erving): Monroe wrote that "both you & I have written him in cyphers of which they have no
+  copies" -- Armstrong was already, in 1807, sending Monroe cipher the recipient could not read; Bowdoin: "with the
+  exception of a few lines in one of my letters to the President, I have used no cyphers". A second documented case
+  of the 1805 / 1808 pattern (Armstrong writing in a cipher his correspondent lacks); grade I.
+
+**Founders Online (headless, `h75/`): Bowdoin <-> Madison and Bowdoin <-> Jefferson, Jefferson Presidency.**
+40 Bowdoin-Madison items, 1807-08 tail: Bowdoin to Madison 1 May, 25 July, 2 Oct 1807, then **19 April 1808 (Boston,
+arrival note only)** -- no Bowdoin-to-Madison letter Nov 1807-Mar 1808 in Founders. Bowdoin to Jefferson: 24 Sept,
+7 Nov 1807 (Cherbourg, embarking), 17 Feb 1808 (London, already screened clear, `pool/cor/`), 9 and 12 June, 18 July
+1808 (Boston). None of the 1808 letters names Armstrong or a cipher (grep: 0). Bowdoin to Madison 2 Oct 1807 (Paris):
+"I think it unnecessary to trouble you with the continuance of my correspondence with general Armstrong", and "I
+shall leave such Papers as I have, belonging to the public ... in the hands of Mr. Skipwith, subject to Mr. Erving's
+orders" -- Bowdoin's public papers, presumably including his cipher tables (WE028, "Mr Pinckney's cypher"; grade I),
+stayed in Paris with Skipwith from Oct 1807. **So Bowdoin was out of Paris from late Oct 1807 and out of Europe
+from mid-March 1808; he cannot report what Armstrong was writing in Feb 1808, and nothing he wrote does.**
+
+**Where it was not found:** printed Bowdoin and Temple Papers pt. I-II; IA title search for any other Bowdoin III
+edition; Founders Bowdoin-Madison (40) and Bowdoin-Jefferson (Jefferson Presidency) lists, 7 documents opened. Not
+reachable (already logged by H71/ARM-KEYHUNT, not retried): MHS Ms. N-2059 (not digitised), Bowdoin College
+letterbooks 1806-1811 (archivesspace Cloudflare; request draft `outreach/armstrong-keyhunt-bowdoin.md`). No new
+ASKS/LOCAL-QUEUE row: both holdings already have their request on file, and nothing found here raises the chance
+that either holds a numeral item from 1808 (Bowdoin left Paris before the target was written). Nothing graded,
+nothing read on the target.
+
+Next step this suggests (not run, suggestion only): Skipwith as custodian of Bowdoin's public papers and ciphers in
+Paris from Oct 1807 -- whether Armstrong's office had Bowdoin's Madrid legation cipher ("Mr Pinckney's cypher",
+Madison to Bowdoin 25 May 1807, four runs on file) at hand in Feb 1808; that cipher's 4 printed runs are already in
+the MISS screen, so only a fuller specimen would test it.
+
+Requests: archive.org 2 (advancedsearch 1, djvu.txt download 1); founders.archives.gov 14 (headless page loads, one at a time,
+>=2 s apart); 0 challenges, 0 retries. Logs `sources/h75/requests.log`, `h75/requests.log`.
