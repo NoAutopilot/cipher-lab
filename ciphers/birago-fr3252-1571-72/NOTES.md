@@ -631,8 +631,8 @@ Requests this job: 0 network. Subagents: 2 Sonnet calls (passes A and B). No thi
 
 ## Remaining gaps (NEVBIR-47, 2 Oct 2026)
 Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged after NEVBIR-47C, 3 Oct 2026). The Ceppo-Nevers key is control-backed for f.47r (z 3.4-4.6, rank 1/201 in every run, power 19-20/20 at 0.33-0.34), but the text is not: 771 signs decoded, all M/U, judge FAIL. f.117r: 276 signs, all M/U.
-- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C: 178 of 197 split tiles settled 2-of-3, 19 unsettled, key z 4.17-4.73, judge still FAIL -1.543); the third reader took the same side of every frequent pair (S74 over S54 x39, S80 over S65 x28, S76 over S91 x21), so the pair choice is unverified; next: known-answer check of those three pairs on the fr.3252 f.36 glossed witness (glossed signs give the true member), disk only, ~$2
-- f.47r 79 unsettled positions (19 third-reader UNSETTLED in harvest/f47/la/focus.tsv + 60 one-reader gaps) - blocker: not-attempted; written as sign-sorter focus rows; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C); witness pair check done (CEPPO-WITNESS-PAIRS, 3 Oct 2026): R-8 and R-6 agree with the third reader on 28/28 and 39/39 tiles (the shuffle control is non-discriminating by construction); R-hash settles 6 unsettled upright hashes as S24 (o), which are 6 S candidates; key z 4.36-4.93, judge FAIL -1.524; next: verifier on the 6 S candidates and a second eye on the f.36 witness glosses (blob-6 = m is still by elimination only), ~$2
+- f.47r 73 unsettled positions (13 third-reader UNSETTLED after CEPPO-WITNESS-PAIRS settled 6; was 19 in harvest/f47/la/focus.tsv + 60 one-reader gaps) - blocker: not-attempted; written as sign-sorter focus rows; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
 - f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so L01-L03 and L17 run edges are unchecked; next: eye-check the s1 crops of L01-L03 and L17 s1-s2 against the passes, disk only, ~$1
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error with 100 windows, disk only, ~$1
 - f.117r 12 unsettled tiles - blocker: not-attempted; sorter focus rows (harvest/f117/la/focus.tsv); sorter inputs built 3 Oct 2026 (SORTER-BIRAGO2, `sorter/README.md`, 277 tiles, 12 in the focus box), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
@@ -644,10 +644,10 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged 
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r whole letter (control-backed, NEVBIR-47), 1572 key on f.117r (z 3.2, judge FAIL), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: f.47r S74/S54, S80/S65, S76/S91 pair check against the f.36 gloss; T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
+- [ ] key-rebuild: f.47r S74/S54, S80/S65 and hash pairs checked against the f.36 gloss (CEPPO-WITNESS-PAIRS), S76/S91 has no glossed witness instance yet; T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut, all 17 lines read twice
-- [x] retry: f.47r third reader on 197 split tiles (NEVBIR-47C); [ ] f.117r power at a measured post-look-alike error; f.47r pair check on the f.36 glossed witness
-Verdict: keep going: 7 internal gaps; cheapest next: f.47r pair check of the three one-sided pairs against the f.36 glossed witness, ~$2
+- [x] retry: f.47r third reader on 197 split tiles (NEVBIR-47C); [ ] f.117r power at a measured post-look-alike error; [x] f.47r pair check on the f.36 glossed witness (CEPPO-WITNESS-PAIRS)
+Verdict: keep going: 7 internal gaps; cheapest next: verifier on the 6 CEPPO-WITNESS-PAIRS S candidates on f.47r, ~$2
 
 ## NEVBIR-NAMES (3 Oct 2026, account 2 for the account-3 orchestrator): whole-name gap fill, f.117r exploratory only
 
@@ -702,3 +702,43 @@ word islands as NEVBIR-47 plus "intende" and "mondo"; the run-on letters between
 S65 at 28 positions) may be the pair-choice issue above rather than the text.
 
 Subagents: 1 Opus call (third reader). Requests: 0. Rate limit read `allowed_warning` during the job.
+
+## CEPPO-WITNESS-PAIRS (3 Oct 2026, account 2 for the account-3 orchestrator): pair shapes from the f.36 glossed witness
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-ceppo-witness-pairs.md`. Disk only, 0 network requests, 0 subagents (one Opus
+session's own eye). No class, no novelty wording. Files: `harvest/witness_pairs/`.
+
+**Rules, pre-registered before any tile was opened** (`harvest/witness_pairs/PREREG.md`, pushed e1760f2e). Source: the fr.3252
+f.36v top block (HARVEST-D native region), cut at 2.5-3x with autocontrast. One reader (this worker) read the glosses, so they
+are grade M. Tallies: an 8 with a bar through the waist that runs out past both sides is glossed **a** x6 (S80). A plain 8 is
+glossed with an &-like mark x1 (S65 et, faint). A hash with an **upright** stem is glossed **o** x4 (S24). A hash with a
+**slanted** stem is glossed **t** x2 (S88). A 6 with a flat crossbar on top has no gloss letter x2 (S54 null). A 6 with a blob
+top was never seen glossed blank, but its gloss was illegible x4, so S74 m rests on elimination only. S76/S91 and S31/S32: no
+legible glossed instance, so no rule.
+
+**f.47r.** The third reader's per-tile shape notes (`la/f47_reread.tsv`, NEVBIR-47C) record exactly the deciding features.
+`apply_rules.py` parses them, and the rule decides, not the reader's label (`f47_rule_labels.tsv`):
+- 8 family, 28 split tiles: all "bar through 8", so R-8 gives S80 in 28/28. 6 family, 39 tiles: all "no crossbar", so R-6
+  gives S74 in 39/39. The third reader's one-sided choice therefore follows the witness shape, and nothing is relabelled.
+- **Shuffle control: non-discriminating by construction.** Reader A labelled every one of these tiles S80/S74 and reader B
+  every one S65/S54, so shuffling either reader's labels leaves agreement unchanged (28 vs 28, 0 vs 0). This is a non-test
+  (CLAUDE.md rule 3), not a pass. The features come from one reader's descriptions plus an eye check of L10 by this worker
+  (no crossbar on the 6s; both hash forms present).
+- **Hash: 6 of the 19 UNSETTLED tiles settled.** L03.6, L04.32, L08.38, L10.10, L10.35 and L12.29 are upright, and the third
+  reader noted "S24-type" each time, so R-hash gives S24 (o). L10.10 was also checked by eye. Result: `f47_passE.tsv`
+  (unsettled 19 -> 13).
+- Value control: the same 6 positions were filled with each of the 20 key values. o ranks 1 of 20 (-1.5133; e -1.5228, the
+  readers' t -1.5436, r -1.5629; `f47_hash6_valuefill.txt`). Random signs at the same 6 positions reached the rule's score 0/300
+  times (p 0.003); random positions 4/300 (p 0.017) (`f47_relabel_null.txt`).
+- Key control at the TWO-READER error 0.33 (`decode_control.py f47_passE.tsv --shuffles 200 --windows 20 --err 0.33 --extra
+  X_THETA2=r`): real key -1.5133 (passD -1.5267); seeds 1/2/3 z 4.36 / 4.93 / 4.65, rank 1/201 in each, power 20/20 (z median
+  7.64-8.20).
+- Judge (pasted): `FAIL language: score=-1.524, null_p99=-1.788, real_p05=-0.906, real_median=-0.826, mode=both, N=782`
+  (passD -1.543).
+- Grades: the 6 hash tokens clear all three pre-registered gates, so they are **S candidates (6)**; everything else is
+  unchanged. Total 6 S, 751 M, 13 U. Still not a reading. **VERIFIER WANTED** for the 6 tokens. The committed passD files are
+  not edited; the proposed sequence is `f47_passE.tsv`.
+- Fragments (M, English gist only): L10 now reads "molto tempo" in full ("a long time"; the o is one of the six). L08 has
+  "...l o delfin et le..." (the Dauphin?), unresolved. The rest is as NEVBIR-47C.
+
+f.87 (fr.3251) results are in `../ceppo-nevers-fr3251-1570s/NOTES.md`, section CEPPO-WITNESS-PAIRS.

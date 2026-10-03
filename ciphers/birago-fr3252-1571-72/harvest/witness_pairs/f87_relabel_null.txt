@@ -1,0 +1,8 @@
+same positions, random signs: n=300 mean -1.7505 p95 -1.6948 max -1.6709; >= rule: 0/300 (p=0.003)
+random positions, random signs: n=300 mean -1.7675 p95 -1.6991 max -1.6547; >= rule: 0/300 (p=0.003)
+base -1.7352  rule -1.6372  positions changed 10
+same positions, random signs: n=300 mean -1.7443 p95 -1.7041 max -1.6747; >= rule: 1/300 (p=0.007)
+random positions, random signs: n=300 mean -1.7602 p95 -1.6955 max -1.6535; >= rule: 9/300 (p=0.033)
+base -1.7352  rule -1.6814  positions changed 7
+in-family flips {'S65->S80': 3, 'S24->S88': 1, 'S88->S24': 6}: n=500 mean -1.6884 p95 -1.6396 max -1.6168; >= rule -1.6372: 20/500 (p=0.042)
+in-family flips {'S24->S88': 1, 'S88->S24': 6}: n=500 mean -1.7119 p95 -1.6737 max -1.6521; >= rule -1.6814: 45/500 (p=0.092)

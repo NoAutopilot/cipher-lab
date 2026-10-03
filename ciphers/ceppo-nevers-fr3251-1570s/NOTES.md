@@ -1032,7 +1032,7 @@ Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
-- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; the four look-alike pairs (S54/S74/S77/S37, S80/S65, S24/S88, S31/S32/S76) recur on every line and the merge scored below its inputs (HARVEST-D2 f.87 section); next: per-sign crops for the four pairs plus a witness check of S24/S88 and S80/S65 against the fr.3252 f.36 glosses (`harvest/f3252_f36/`), ~$5.
+- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; next: verifier on the 7 candidates and 3 conflicts, then a glossed S76/S31 instance on f.36r/f.37r, ~$3
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
@@ -1046,3 +1046,53 @@ on every folio.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
 Verdict: keep going: 3 internal gaps; cheapest next: look for the pound sign on ff.27, 39, 82 and read its interlinear value, ~$3
+
+## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-ceppo-witness-pairs.md`. Disk only, 0 requests, 0 subagents. No class, no novelty
+wording. Rules pre-registered from the f.36v glosses before any tile was opened:
+`../birago-fr3252-1571-72/harvest/witness_pairs/PREREG.md` (e1760f2e). In short: barred 8 = a (S80, glossed x6), plain 8 = et
+(S65, x1); upright hash = o (S24, x4), slanted hash = t (S88, x2); crossbar-6 = null (S54, unglossed x2), blob-6 = m (S74, by
+elimination). No rule for S31/S32/S76 or S24-vs-others outside these shapes. Files: that folder, `f87_*`.
+
+**Application.** `harvest/f87/c88_cipher_w.jpg` was cut into 6 strips at 2x. Each hash and each S65 8 in passC was located by
+its passC neighbours (one eye, this worker; a positional slip is possible, so grade M) and then judged by the rule. Note that
+`sorter/focus.tsv` positions follow a different alignment from passC, so tiles were located by neighbour triplets, not by
+those numbers.
+- Hash, rule disagrees with passC (7): L03.25, L03.46, L04.29, L04.41, L05.23, L05.42 are upright, so S88 -> S24 (o). L02.35 is
+  slanted, so S24 -> S88 (t). The rule agrees with passC at L03.12, L04.34, L02.30 (slanted, S88) and L05.30 (upright, S24).
+  L05.28 is UNDECIDED.
+- 8 (3): L02.7, L03.6, L04.21 are barred, so S65 -> S80 (a). L03.13 and L04.39 are plain, so S65 stays. L04.9 is unclear.
+- 6: no crossbar-6 found among the passC S74 positions checked by eye. Not tallied tile by tile (cap).
+- **Conflicts with endorsed S tokens:** L02.35 (S24 o, H, S), L04.41 (S88 t, H, S) and L05.42 (S88 t, H, S) are already graded S
+  in `reading_f87_tokens.tsv`, and the rule reads them the other way. This is a data conflict for the verifier, not settled
+  here. The committed reading files are NOT edited. The proposed sequences are `f87_passE_hash.tsv` (7 changes) and
+  `f87_passE_hash8.tsv` (10).
+
+**Controls** (TWO-READER error 0.28 = 1 - 0.72 agreement; `decode_control.py ... --shuffles 200 --windows 20 --err 0.28 --extra
+X_THETA2=r`):
+| sequence | real key | z (seeds) | rank | power |
+|---|---|---|---|---|
+| passC (as committed) | -1.7352 | 2.48 / 2.83 | 2 / 2 | 20/20 |
+| passE hash (7) | -1.6814 | 3.03 / 3.23 / 3.25 | 1 / 2 / 1 | 20/20 |
+| passE hash+8 (10) | -1.6372 | 3.29 / 3.54 / 3.57 | 1 / 1 / 1 | 20/20 |
+
+Relabel controls (`relabel_null.py`, `f87_relabel_null.txt`):
+- hash+8 vs random signs at the same 10 positions: 0/300 reach it (p 0.003). Random positions: 0/300 (p 0.003).
+- **In-family flips** (the same number of random S88->S24, S24->S88 and S65->S80 flips; the value set is the same, only which
+  tiles flip changes): 20/500 reach it (**p 0.042**, mean -1.6884).
+- hash only: random signs 1/300 (p 0.007). In-family flips: 45/500 (**p 0.092**, fails).
+So much of the gain comes from adding o and a anywhere. The specific tiles the rule picks beat random in-family flips only for
+hash+8, and only just.
+
+**Judge** (pasted, `python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ...`):
+```
+passC (= reading_f87_letters.txt): FAIL language: score=-1.723, null_p99=-1.669, real_p05=-0.942, real_median=-0.816, mode=both, N=197
+passE hash:                        FAIL language: score=-1.685, null_p99=-1.669, real_p05=-0.942, real_median=-0.816, mode=both, N=197
+passE hash+8:                      FAIL language: score=-1.642, null_p99=-1.623, real_p05=-0.947, real_median=-0.833, mode=both, N=194
+```
+**Grades (proposed, hash+8):** all three pre-registered gates are met: the rule settles each tile, the key ranks 1/201 with
+power 20/20 in every seed, and the judge is better. That gives 7 M -> S candidates (L03.25, L03.46, L04.29, L05.23 o; L02.7,
+L03.6, L04.21 a) and 3 S tokens contested. **VERIFIER WANTED** (the in-family control passes only at p 0.042; the gloss reads
+and the tile locations are one eye each). Fragments (M, English gist only): L04 "...un giorno..." ("one day"; was "ungiornt"),
+L03 "...avendo..." ("having"), L05 "secre[t]amente" ("secretly", unchanged).
