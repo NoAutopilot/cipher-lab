@@ -1790,3 +1790,9 @@ the end of every wake.
 | 3 Oct 2026 | CS-A2-J | session_015CjWocDrcZ2AtkTGer2MBi | account 2 | Sonnet 5.5 | 1.70 | D | done 01:25 (18311489): clair577-brienne-estrades-1647 stays blocked on the image; Estrades edition by Gallica ContentSearch: letter absent. |
 | 3 Oct 2026 | SOLVERDIFF-BOURDEAU | session_01FCyaE6JkqbZ9kfQYKZB7TX | account-2 | Opus 5.5 | not visible from account 3 | D | 110 rows; NEW: malsburg-hessen-1636 read 95.9% by Bourdeau (28 Sept), missed on 2 Oct -> verifier queued |
 | 3 Oct 2026 | NO87-FOLLOW | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | N | nos.71/86/90 T50 tiles are true tall-tail T50, not the no.87 Ce shape: no change |
+| 3 Oct 2026 | GAPS-fr4715-vieuville-pool-12 | session_01LmdD5UFYCKq5aBuYpBwufV | account-4 | Opus 5.5 | 7.25 | D | done 01:40: f.50r read native (21 crops, 2 passes, reconciled); 10 glosses; no.44 control tied (1/2 within-leaf). |
+| 3 Oct 2026 | GAPS-riksarkivet-r4282-1628 | session_01UevftxLF4nbvdpYfR61M6V | account-4 | Opus 5.5 | 2.40 | D | done 01:36: Symbol Sets filter; key 4327 test complete; one vision call on key 4307 left pending at stop. |
+| 3 Oct 2026 | GAPS-esp318-sicilia-1503 | session_01XvzeC5U59aV1TVDNvgZfya | account-4 | Opus 5.5 | 2.76 | D | done 01:37: visorrey (RAH 9/15) not fetchable online; manifest written, added to ASKS 105. |
+| 3 Oct 2026 | FT4c-decode-2754 | session_01TunneHLTSmkvmQJqyiM3id | account-4 | Opus 5.5 | 2.36 | D | done 01:34: sign sweep; f.247 scores 0.679 vs calibration gate 0.921 -- non-test; 24 of 33 Genoa folios in fr.4141. |
+| 3 Oct 2026 | FT4b-mccormick-1999 | session_01QYowE9P7cF7XDCPyDmewux | account-4 | Opus 5.5 | 3.30 | D | done 01:36: note 2 line 10 image check (36 vs 86 unresolved at 500 px); needs high-res FBI image via LOCAL-QUEUE. |
+| 3 Oct 2026 | CLOSER-24 | session_01TuBWpa2CDmyJe3yRGQBPRs | account-4 | Opus 5.5 | 1.42 | D | done 01:28: archived 8 of 8 finished account-4 sessions (refused: none). |
