@@ -1,0 +1,17 @@
+item	value
+X	bendabuchp
+crib_windows	29
+encodable_windows	11
+M_target	2
+best_window	bestordery
+A_p95	3
+A_tail	0.813
+B_p95	3
+B_tail	0.7695
+C_rank	21/104 (ties 56)
+P1_median	10
+P1_power	1.0
+P2_median	7
+P2_power	1.0
+pattern_fit_crib	0/29
+pattern_fit_random_share	0.0055

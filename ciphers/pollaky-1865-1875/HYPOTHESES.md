@@ -18,6 +18,8 @@ Status of the hypothesis: untested-by-this-tool for design A (not refuted); open
 
 ## Ad 1 (1865 sign script), Laura's bars-x-dots component rule -- GAPS160, 3 Oct 2026
 
+(3 Oct 2026, GAPS174: the 1881 print settles sign 04 as 4 dots, so the "Laura's sign 04" row below is the primary row.)
+
 Statistic T: mean add-one bigram log10 prob of "timeto"+X+"shall" (clear frame as crib); W: word-segmentation coverage.
 Controls at N=10: A 2000 shuffled-sign orders, B 2000 random-sign strings over the rule's 21 cells, C 104 sibling
 rules. Positive control: 2000 corpus windows over a-u. Script: scripts/laura_rule.py (seed 160). Pre-registered in
@@ -62,3 +64,17 @@ before scoring (commit 1ecd9062).
 Status: untested-by-this-tool at N=36-46 (null median within 0.01 of positive median), not refuted; instrument retired
 for this hypothesis. Baertl's own 46 values duplicate an 8-value run of the 36 sums and add two, and his reading maps
 sum 7 to both B and W.
+
+## Ad 1 (1865 sign script), topic crib from sibling clear ad Clay 1465 under Laura's rule -- GAPS174, 3 Oct 2026
+
+Sign 04 = 1 dash + 4 dots (1881 print, Clay item 1459, IA leaf n280, component count). Statistic M: max positional matches of
+X against 29 word-start 10-letter windows of the 1465 text plus 14 fixed paraphrases. Controls at N=10: A 2000 shuffled-sign,
+B 2000 random-sign, C 104 sibling rules; positives P1 exact crib, P2 crib with 3 letters replaced. Script:
+scripts/topic_crib.py (seed 174). Pre-registered in NOTES.md before scoring (commit 587ce6ea).
+
+| X | M target | A p95 (tail) | B p95 (tail) | C rank | power P1 / P2 | verdict |
+|---|---|---|---|---|---|---|
+| bendabuchp | 2 | 3 (0.813) | 3 (0.770) | 21/104 | 1.000 / 1.000 | not read under this rule (this crib set only) |
+
+18/29 windows unencodable under the rule (no v-z); 0/29 fit the sign-repeat pattern under any simple substitution (random 0.55%).
+Status: the 1465 wording and the listed paraphrases are not the plaintext under Laura's rule; topic and design not refuted.

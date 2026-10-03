@@ -49,7 +49,18 @@
    "size_bytes": 787466,
    "fetched": "3 Oct 2026 16:54 UTC",
    "fetched_by": "GAPS172 (account-4)",
-   "note": "Alice Clay (ed.), The Agony Column of the 'Times' 1800-1870 (Chatto and Windus, 1881), p. 257, item 1459 (ad 1, Tuesday 16 May 1865) and items 1458/1460; IA leaf index 281 from fulltext/inside.php (par box r 2368, b 2906). An independent 1881 typeset rendering of ad 1's signs, not yet read by eye (no vision in GAPS172). Item 1465 (24 May 1865, sibling clear ad to the same 'T.') is on the next page, not fetched."
+   "note": "Alice Clay (ed.), The Agony Column of the 'Times' 1800-1870 (Chatto and Windus, 1881), p. 257, item 1459 (ad 1, Tuesday 16 May 1865) and items 1458/1460; IA leaf index 281 from fulltext/inside.php (par box r 2368, b 2906). An independent 1881 typeset rendering of ad 1's signs, not yet read by eye (no vision in GAPS172). Item 1465 (24 May 1865, sibling clear ad to the same 'T.') is on the next page, not fetched. CORRECTION 3 Oct 2026 (GAPS174): this leaf is p. 258 (items 1460 end, 1461-1464), not p. 257; item 1459 is on leaf n280 (clay1881-p256-n280.jpg). Id and filename kept as cited."
+  },
+  {
+   "id": "clay1881-n280",
+   "file": "clay1881-p256-n280.jpg",
+   "url": "https://archive.org/download/agonycolumntime00claygoog/page/n280_w1600.jpg",
+   "date": "1865-05-16 (Times; printed 1881)",
+   "sha1": "d7398d6cdcfd171e99f3c90ef550ae683dbb82ee",
+   "size_bytes": 817352,
+   "fetched": "3 Oct 2026 17:13 UTC",
+   "fetched_by": "GAPS174 (account-4)",
+   "note": "Clay 1881 p. 257 (filename says p256 in error; the IA leaf is n280): item 1458 and item 1459 (ad 1) at y about 2760-3220, sign lines at y 2905-3110; item 1460 head. Signs read by connected-component count, NOTES.md GAPS174."
   }
  ],
  "requests": "4 GET requests to scienceblogs.de, 2s apart, browser User-Agent (site requires it); all HTTP 200; no retries needed"
