@@ -388,18 +388,63 @@ the step could not run without this re-fetch; logged here as a deviation.
   telegrams are likely in Basler's Collected Works, not searched in this step).
 - Requests: hdl.huntington.org 69 (1 object record + 68 page records); no vision, no subagents.
 
+## GAPS140-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: GAPS132's next -- the 57 residue pages (122 entries) against OR ser. I vol. 8 and Lincoln's printed works.
+Disk first: page texts were not on disk in this container; the committed `print/residue/readings.md` (decoded, code
+words replaced by their key.md meaning) was used as the page text for the 5-gram search, and only the pages that
+matched were re-fetched raw for alignment (hdl.huntington.org 6 requests). Results in `print/residue_print.tsv`.
+- OR vol. 8 (warofrebellionco08unit `_djvu.txt`, 1 request): `print/or_match.py` unchanged, --min 6. Positive control
+  passes: page 4976 (T5, Lincoln to Hunter and Lane, 10 Feb) found at p.551, 40 shared 5-grams (38 on the raw text).
+  New matches: 4973 (8 Feb, Stanton to Halleck) p.547, 24; 5041 (7 Mar, Stanton to Halleck) p.596, 13. At --min 3 three
+  more pages share 3-4 (4975, 4985, 5023), at the GAPS113 calibration's cross-telegram ceiling (3): not matches.
+  4985 (15 Feb, Marcy to Hooker, Budd's Ferry) belongs to the Potomac line, OR vol. 5, not fetched.
+- `print/or_align.py` on the vol. 8 matches: no new code word. Its proposals: Carroll = Hunter (agrees key.md), one
+  `single` junk pair (able -> "spared from kansas", the Dix entry mis-anchored). Held-out: 0 fit words, 0/0 scored, so
+  no check ran. or_align.py fixed in this step: since GAPS127 `load_key()` returns a list of dated rows per word and
+  the proposals/known-answer lines crashed on it (now: agrees-key if any dated value matches).
+- Lincoln, Collected Works vol. 5 (Basler): both IA copies (collectedworksof0005royp, collectedworksof0000royp_v6w0)
+  are lending-only and are NOT in the be-api full-text index -- the T5 phrase "avail the government of the services of
+  both" returns 0 hits on each, so a miss there is a non-test, not a negative. Substitute: the same be-api search over
+  all of IA (T5 control: 125 items, among them the Nicolay-Hay editions). Phrases from the 8 Lincoln-authored or
+  Lincoln-related residue entries: 7 found, in the Nicolay-Hay letters/telegrams and Complete Works volumes and OR
+  vol. 53 (5056, "a protest against General Denver"); one ("effectually keep", 4984) too common to search. be-api gives
+  no page locator, so these are identified texts, not page citations; Basler page numbers need the owner's copy or a
+  local read.
+- What the print says about the key (by eye on the printed address lines; `print/residue_print.tsv`):
+  Alden = Halleck on 8 Feb, 7 Mar, 21 Mar, 1 May and twice on 13 Jul 1862 (five telegrams beyond the Feb set; the
+  13 Jul pair is Lincoln's "You should call on General Halleck" and "Halleck, Corinth, Mississippi: They are having a
+  stampede in Kentucky"); Legend = Kentucky on 13 Jul (key.md: 17 Feb only); Lamb = Kansas on 21 Mar (key.md I,
+  10-13 Feb), the clerk striking "Magnet" (= Arkansas) for it; Luna = Missouri (1 May, twice; not in key.md);
+  Irving = Lincoln throughout.
+- Conflict (rule 4, logged not merged): Alden = Halleck on 13 Jul 1862 (5104, two Lincoln telegrams, print as above)
+  against key.md Alden = Banks 17-20 Jul 1862 (5110, 5112; OR 11 pt3 p.326, OR 12 pt3 pp.486-487; GAPS118, GAPS122).
+  The ranges do not overlap (13 vs 17 Jul) but sit four days apart, with Halleck named general-in-chief on 11 Jul; the
+  Banks rows were aligned, these are address lines read by eye. Not resolved by count.
+- key.md unchanged. The brief's gate (or_align held-out + shuffled pairing before any key.md change) cannot run on
+  these: the words sit in address lines, which or_align's 5-gram anchors do not reach, and the Lincoln texts have no
+  local full text to align against. A by-hand held-out split would not help either: every matched telegram is to
+  Halleck, so a shuffled-pairing control lands on "Halleck" as often as the real pairing does (rule 3, a control that
+  cannot differ by construction). Proposed rows, pending a discriminating check: Alden = Halleck extended to
+  05 Feb-13 Jul (C); Legend = Kentucky extended to 13 Jul (C); Lamb = Kansas 21 Mar (C, one telegram -- stays I under
+  the >= 2 telegrams rule); Luna = Missouri 1 May (one telegram, I at most).
+- N1 shape: every telegram matched here is in print (OR vol. 8, OR vol. 53, the Nicolay-Hay editions); this step adds
+  ledger-to-print identifications and key witnesses, not new plaintext. No novelty is claimed (rule 10).
+- en judge not used (GAPS132: real vs shuffled-key within 0.003). Requests: archive.org 1 (OR vol. 8 djvu) + 7
+  metadata/advancedsearch; be-api.us.archive.org 16; hdl.huntington.org 6. No vision, no subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C); key.md dated 3 Oct 2026 (GAPS127); the 57 unmatched pages decoded with the dated key 3 Oct 2026 (GAPS132: 122 entries, C 99, I 31, M 124; 53 of 57 pages are Feb-Mar, not spring-summer; en judge FAILs real and shuffled-key alike, -1.036 vs -1.033, judge cannot decide; 0 pages reading ready); next: grep the 57 residue pages against OR ser. I vol. 8 and Basler's Collected Works of Lincoln vol. 5 (IA full text, print/or_match.py unchanged), ~$2; then align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
-- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M) -- next: fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vols. 11 pt 3 and 12 pt 3/pt 1 aligned 3 Oct 2026 (GAPS118, GAPS122: 21 code words added at C); key.md dated 3 Oct 2026 (GAPS127); the 57 unmatched pages decoded with the dated key 3 Oct 2026 (GAPS132: 122 entries, C 99, I 31, M 124; 53 of 57 pages are Feb-Mar, not spring-summer; en judge FAILs real and shuffled-key alike, -1.036 vs -1.033, judge cannot decide; 0 pages reading ready); residue print grep 3 Oct 2026 (GAPS140): OR vol. 8 matches 3 pages (4976 control, 4973, 5041), no new code word; Lincoln texts identified for 7 entries in the Nicolay-Hay editions and OR vol. 53 (Basler vol. 5 not full-text searchable, non-test); next: grep the residue against OR ser. I vol. 5 (Potomac line: Lander, Banks, Hooker; most Feb-Mar residue entries) and vol. 53, ~$1; then align the vol. 9/10/11 pt 1 matches (18 pages), ~$3
+- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 21 spring-summer words (GAPS118, GAPS122); later eastern-line tables reuse Feb words for other values; dated key column added 3 Oct 2026 (GAPS127): of 10 conflicting words 8 separate cleanly by date, 2 stay true conflicts (wedding, Stanhope: overlapping ranges, read M); GAPS140 print witnesses: Alden = Halleck to 13 Jul against Alden = Banks 17-20 Jul (logged, not merged), Legend/Lamb/Luna range extensions proposed, key.md unchanged pending a discriminating check -- next: fix the table-change dates (Feb-Apr/May split points unwitnessed) from the March-April ledger pages when the residue entries are decoded (gap 1), ~$0 extra
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: received ledgers mssEC 01-03 may show code words resolved (section 5 (b)); not yet read for that
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
-- [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vols. 8 and 51 pt 1 not fetched
+- [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vol. 8 grepped 3 Oct 2026 (GAPS140, 2 new pages); Lincoln texts found in Nicolay-Hay (GAPS140); vols. 5, 51 pt 1, 53 not grepped
 - [ ] key-rebuild: residue decoded 3 Oct 2026 (GAPS132, M 124 of 254 key tokens, mostly Feb rows read outside their few-day witness ranges); vol. 11 pt 3 done (GAPS118, 13 words); vol. 12 pt 3/pt 1 done (GAPS122, 8 words + widow to C, 7 conflicts logged); dated key column done 3 Oct 2026 (GAPS127, 8 of 10 conflicts date-scoped); vols. 9, 10, 11 pt 1 alignments next (gap 1)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: grep the 57 decoded residue pages of mssEC 15 (print/residue/) against OR ser. I vol. 8 and Basler's Collected Works of Lincoln vol. 5 with print/or_match.py (IA full text, positive control T5 = OR vol. 8), ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: grep the residue pages of mssEC 15 (print/residue/readings.md as page text) against OR ser. I vol. 5 and vol. 53 with print/or_match.py (IA full text; positive control: a vol. 5 Lander/Romney telegram, or 5056 for vol. 53), ~$1

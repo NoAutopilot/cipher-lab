@@ -127,8 +127,8 @@ with open(os.path.join(a.out, 'proposals.tsv'), 'w') as fo:
     for lw, lst in sorted(occ.items(), key=lambda x: (-len({t for t, _ in x[1]}), x[0])):
         c = collections.Counter(rp for _, rp in lst); top, tc = c.most_common(1)[0]
         tel = len({t for t, _ in lst}); tels_top = len({t for t, rp in lst if rp == top})
-        km = KEY.get(lw, ('', ''))[0]
-        if km and matched(km.lower(), top): st = 'agrees-key'
+        kms = [r[0] for r in KEY.get(lw, [])]; km = '/'.join(kms)  # key.md is dated since GAPS127: one row per value
+        if kms and any(matched(k.lower(), top) for k in kms): st = 'agrees-key'
         elif km: st = 'conflicts-key'
         elif tels_top >= 2: st = 'propose'
         else: st = 'single'
@@ -157,7 +157,7 @@ for _ in range(a.shuffles):
     sh, st_ = score(sp, fit); ctrl.append(sh)
 ctrl.sort(); mean = sum(ctrl) / len(ctrl); p95 = ctrl[int(0.95 * len(ctrl)) - 1]  # control in hits, not rate: its scored count is often 0-2
 # known-answer check: existing key.md C/I entries recovered by the alignment
-ka = [(lw, KEY[lw][0]) for lw in occ if lw in KEY and KEY[lw][1] in ('C', 'I')]
+ka = [(lw, r[0]) for lw in occ for r in KEY.get(lw, []) if r[1] in ('C', 'I')]
 with open(os.path.join(a.out, 'heldout.tsv'), 'w') as fo:
     fo.write('entries\tfit_telegrams\ttest_telegrams\tfit_words\ttest_hits\ttest_scored\treal_acc\tctrl_hits_mean\tctrl_hits_p95\tshuffles\n')
     fo.write(f"{len(entries)}\t{len(fit_idx)}\t{len(test_idx)}\t{len(fit)}\t{h}\t{t}\t{h / t if t else 0:.3f}\t{mean:.2f}\t{p95}\t{a.shuffles}\n")
