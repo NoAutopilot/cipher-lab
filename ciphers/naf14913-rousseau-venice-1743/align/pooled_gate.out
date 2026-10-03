@@ -1,0 +1,17 @@
+pair1 62 groups / 192 letters; pair2 79 groups / 245 letters
+shared non-C codes (f206, f216v): {'10': (1, 2), '121': (1, 5), '208': (1, 1), '306': (1, 1), '338': (1, 2), '420': (1, 1), '444': (1, 2), '781': (1, 2), '824': (1, 1)} occurrences 26
+REAL: Hp = 23; tied {'208': 'se', '781': 'e', '306': 's', '824': 'don', '444': 'n', '121': 's', '10': 'a', '420': 't'}; timeouts on higher sets: False
+  forced-check 10: 10 joint chunk(s) ['a', 'e', 'es', 'i', 'l', 'n', 'o', 'p', 'r', 's']
+  forced-check 121: 8 joint chunk(s) ['a', 'e', 'es', 'l', 'n', 'o', 'r', 's']
+  forced-check 208: 1 joint chunk(s) ['se']
+  forced-check 306: 3 joint chunk(s) ['es', 'les', 's']
+  forced-check 338: 1 joint chunk(s) ['t']
+  forced-check 420: 15 joint chunk(s) ['a', 'ac', 'ach', 'c', 'ch', 'e', 'h', 't', 'ta', 'tac']
+  forced-check 444: 5 joint chunk(s) ['a', 'e', 'en', 'n', 's']
+  forced-check 781: 1 joint chunk(s) ['e']
+  forced-check 824: 4 joint chunk(s) ['d', 'do', 'don', 'donn']
+CONTROL (a value permutation, n=100): mean 12.84, p95 18, max 21, timeouts (counted high) 98, >= real 0 (p = 0.0099)
+  Hp distribution: [(6, 2), (8, 4), (9, 7), (10, 13), (11, 8), (12, 12), (13, 13), (14, 12), (15, 9), (16, 8), (17, 5), (18, 5), (19, 1), (21, 1)]
+CONTROL (b pairing shuffle, n=100): mean 0.00, p95 0, max 0, timeouts (counted high) 0, >= real 0 (p = 0.0099)
+  Hp distribution: [(0, 100)]
+GATE PASS (Hp=23 >= 5 and > p95 of both controls: {'a value permutation': 18, 'b pairing shuffle': 0})

@@ -455,12 +455,33 @@ allowed once; a FAIL is logged and the next step names the f.249v/f.250r and f.2
 - **Key rule.** A shared code with exactly one joint chunk (relaxed, pins fixed: `forced-check` lines) that is also in the
   real best tied set enters key.tsv at C only on PASS; otherwise key.tsv is unchanged.
 
-## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, 3 Oct 2026)
-Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced)
+### Result (run 3 Oct 2026 05:05-05:07 UTC, `align/pooled_gate.out`, `python3 align/pooled_gate.py`, defaults n 100, limit 4, seed 7)
+
+- **Real Hp = 23** of 26 shared non-C occurrences, no timeout: tied 208 se, 781 e, 306 s, 824 don, 444 n, 121 s, 10 a,
+  420 t (338 is the one shared code left untied).
+- Control (a) value permutation, 100: mean 12.84, **p95 18**, max 21; 98 of 100 hit the 4 s limit and were counted high
+  (conservative); >= real 0/100 (p = 0.0099). Control (b) pairing shuffle, 100: every draw Hp 0 (with both orders
+  shuffled the ten pins admit no exact-coverage segmentation in at least one passage), **p95 0**; >= real 0/100. This
+  control could have scored (the statistic depends on order, and pin feasibility is part of it), but at this N it is
+  weak: it says the pins themselves only fit the real order, which FT4/FT4c already showed. Control (a) is the one with
+  teeth. **GATE PASS** (Hp 23 >= 5, > 18, > 0).
+- **Forced codes** (relaxed, pins fixed; joint chunks feasible in both passages): 208 -> {se}, 338 -> {t}, 781 -> {e};
+  every other shared code has 3-15 joint chunks (306 es/les/s, 824 d/do/don/donn, 444 five, 121 eight, 10 ten, 420
+  fifteen). Key rule (registered): forced AND in the real tied set -> C. **208 = se** (C; was M "sse": f.206 princes|se,
+  f.216v "tachoit de se tenir" = 22 208) and **781 = e** (C; already M "e"). 338 is forced to "t" only if tied, and it is
+  not in the tied set (f.206 M "tout" stays; the two passages disagree on it under this model), so it stays M.
+  271 re-split ce -> ces (M) so that 443..208 still reads "princesse"; the reading text is unchanged.
+- **Decode:** `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 /
+  reading up to date", exit 0 (H 0, C 23, S 0, M 39, I 0, U 0; was C 21 M 41).
+- Requests: none (disk only). Vision calls: 0.
+
+Not found in: no print or phrase search was run this step. Rule 10: no novelty class here.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, 3 Oct 2026)
+Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced); pooled f.206+f.216v gate PASS (FT4d, Hp 23 vs p95 18 / 0): 208 se and 781 e to C, reading C 23 M 39
 - f.249v(+249r?) <-> f.250r-v and f.213v(+213r?) <-> f.214r pairs (about 50 and 30+ groups) - blocker: not-attempted; located FT4b, 249r and 213r not yet viewed; next: same as above after the f.216v pair, ~$3 each
 - f.274 slip's cipher passage - blocker: not-attempted; not on 273v/274r/274v/275r at 1000 px (FT4b); next: view 273r and 274r at native resolution for a pasted slip, ~$0.5
-- pooled f.206 + f.216v consistency run - blocker: not-attempted; FT4b "Per-leaf before merging": both pairs now PASS and align/forced_f216v.out shows no code fixed by f.216v alone (FT4c); next: extend align/consistency_search.py to two pairs and run its pairing-shuffle control, ~$2
-- M-graded splits of multi-group stretches (40 codes) and 336 - blocker: open-codes; each occurs once in this passage, a second passage under the same key (now located) can fix them
+- M-graded splits of multi-group stretches (39 tokens) and 336 - blocker: open-codes; FT4d pooled run fixed 208 and 781, left 306/824/444/121/10/420 with 3-15 joint chunks and 338 untied; a third passage (f.249v/f.250r) is the material that can fix more
 - Hatzenberger 2015 read - blocker: waiting-on ASKS row 76; Cairn is DataDome-blocked from the cloud, JSTOR reread stable/24719303 queued (CHECK-NAF)
 
 ## Escalation (3 Oct 2026; revised FT4b)
@@ -470,8 +491,8 @@ Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
-- [ ] retry: f.206 key scored on f.216v<->f.217r under the pre-registered gate (FT4c): PASS, H 5; still to run: f.206 + f.216v pooled consistency run to lift M codes (script only)
-Verdict: keep going: 4 internal gaps; cheapest next: pooled f.206 + f.216v consistency run with its pairing-shuffle control (script only), ~$2
+- [ ] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); still to run: the f.249v/f.250r pair under the same two gates (vision + script)
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe f.249v(+249r) <-> f.250r-v, score the FT4b gate, then the pooled 3-pair run (align/pooled_gate.py extended), ~$3
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
@@ -486,3 +507,7 @@ Checks (FT4c, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice
 keep going: 4 internal gap(s), 1 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
 "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. `python3 tools/decode_key.py
 ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 21, M 41 / reading up to date", exit 0. Status stays partial.
+
+Checks (FT4d, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 3 internal gap(s), 1 step(s) untried", exit 0; `python3 tools/intake_gate_check.py
+naf14913-rousseau-venice-1743` -> "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0.
+`python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
