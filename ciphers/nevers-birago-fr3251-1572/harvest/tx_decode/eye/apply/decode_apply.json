@@ -1,0 +1,75 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "harvest/tx_decode/eye/verify/ciphertext_f117_top1.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/tx_decode/eye/apply/exceptions_apply_f117.tsv",
+   "reading": "harvest/tx_decode/eye/apply/reading_f117_apply.txt",
+   "tokens": "harvest/tx_decode/eye/apply/reading_f117_apply_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exception_grade_overrides_conf": true
+  },
+  {
+   "ciphertext": "harvest/tx_decode/eye/verify/ciphertext_f168_top1.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/tx_decode/eye/apply/exceptions_apply_f168.tsv",
+   "reading": "harvest/tx_decode/eye/apply/reading_f168_apply.txt",
+   "tokens": "harvest/tx_decode/eye/apply/reading_f168_apply_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exception_grade_overrides_conf": true
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f144r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/tx_decode/eye/verify/exceptions_f144r.tsv",
+   "reading": "harvest/tx_decode/eye/verify/reading_f144r_verify.txt",
+   "tokens": "harvest/tx_decode/eye/verify/reading_f144r_verify_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  }
+ ]
+}

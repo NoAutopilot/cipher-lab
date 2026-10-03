@@ -1,0 +1,10 @@
+folio	line	pos	value	grade	reason
+f168	V03	1	m	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T17) and BIR-OPEN open-choice (T17) agree
+f168	R03	4	r	M	BIR-APPLY M: A1-BIR-VERIFY T83 vs BIR-OPEN T24 conflict (owner sorter)
+f168	R02	17	m	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T17) and BIR-OPEN open-choice (T17) agree
+f168	V03	10	l	M	BIR-APPLY M: A1-BIR-VERIFY T51 vs BIR-OPEN T95 conflict (owner sorter)
+f168	V01	10	r	M	BIR-APPLY M: A1-BIR-VERIFY T83 vs BIR-OPEN T24 conflict (owner sorter)
+f168	R02	34	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 1.00, posnull PASS))
+f168	R03	17	r	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T56->T97 + lattice lam 4 (calibration 1.00, posnull PASS))
+f168	V02	30	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 1.00, posnull PASS))
+f168	V03	14	u	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T19->T33 + lattice lam 4 (calibration 1.00, posnull PASS))

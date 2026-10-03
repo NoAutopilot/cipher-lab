@@ -1455,3 +1455,30 @@ was asked for any sheet id, OTHER or U at each of the 74 f.117r / 22 f.168 M pos
 Cryptanalytic result only. No reading claimed, no novelty classed.
 Next: owner sign sorter on T65/T95/T51 and T83/T24 (focus list = the 11 conflicts + 6 T5x survivors). Then decide whether open-read
 survivors on conf-M rows may carry grade S (tool/grade policy, orchestrator). Then f.144r with the same instrument (~3 vision calls, ~$5).
+
+## BIR-APPLY (3 Oct 2026, account-3 worker): orchestrator grade policy applied to the f.117r / f.168 lattice corrections
+Policy (account-3 orchestrator, 3 Oct 2026, answering BIR-OPEN's flag): a lattice correction is S only where two independent blind
+instruments agree on the sign: A1-BIR-VERIFY's two-option check (ambiguity-matched decoys) AND BIR-OPEN's open-choice re-read (H-decoy
+calibrated). Everything else stays M.
+- Files: `nevers-birago-fr3251-1572/harvest/tx_decode/eye/apply/` -- `exceptions_apply_f117.tsv` (S 11, M 20), `exceptions_apply_f168.tsv`
+  (S 2, M 7), `decode_apply.json` (`exception_grade_overrides_conf: true` on the f.117r and f.168 jobs; the f.144r job unchanged). The reason
+  column names the instrument(s): "A1 and BIR-OPEN agree" (S), "A1 vs BIR-OPEN conflict (owner sorter)" (M, 11 rows), "BIR-OPEN single
+  instrument only" (M, 16 rows). Values are BIR-OPEN's (`open/`) unchanged; only grades move, so the reading text is identical to
+  `open/reading_<leaf>_open.txt` below its header.
+- `python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --config ciphers/nevers-birago-fr3251-1572/harvest/tx_decode/eye/apply/decode_apply.json --check`:
+  exit 0, "reading up to date". Per leaf (rule 4): **f.117r H 0, C 0, S 190, M 63, I 0, U 26** (was S 179, M 74);
+  **f.168 H 0, C 0, S 92, M 20, I 0, U 10** (was S 90, M 22); f.144r unchanged (S 40, M 36, U 14).
+- Judge (letters only, brackets and separators stripped, the same extraction as BIR-OPEN; values unchanged, so the scores are BIR-OPEN's):
+
+      $ python3 tools/judge_plaintext.py specs/birago-fr3252-f117.json --file <f117 letters>
+      FAIL language: score=-1.224, null_p99=-1.813, real_p05=-0.899, real_median=-0.782, mode=both, N=246
+      FAIL - birago-fr3252-f117 (a PASS is a gate for a verifier, not a reading; rule 10)
+      $ python3 tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file <f168 letters>
+      FAIL language: score=-1.15, null_p99=-1.622, real_p05=-0.992, real_median=-0.824, mode=both, N=111
+      FAIL - nevers-birago-fr3251-1572 (a PASS is a gate for a verifier, not a reading; rule 10)
+- Sorter focus: `harvest/tx_decode/eye/open/sorter/focus.tsv` (+ README): 17 tiles, the 11 conflicts (T95/T51 x5, T66/T76, X_NEW/T84,
+  T13/T64 on f.117r; T83/T24 x2, T51/T95 on f.168) and the 6 f.117r BIR-OPEN-only T65/T95->T51 moves, with crop paths from the two existing
+  sorters' signs.tsv. f117 L09 and f168 R03 have one tile fewer than transcribed positions, so those rows may be one tile off and L09.30
+  has no tile. Ready for the orchestrator to build and publish; nothing published here.
+Cryptanalytic result only (no H or C). No reading claimed; not classed for novelty.
+Next: owner sign sorter on the focus list; then f.144r with the BIR-OPEN instrument (~3 vision calls, ~$5).
