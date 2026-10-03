@@ -24,3 +24,10 @@ except the gloss itself.
 | hypothesis | control | target | verdict |
 |---|---|---|---|
 | a key table on disk carries the 1672 nomenclator (18 gloss-pinned codes) | positive control, 3/4/6/9 planted values in a decoy key: real 3/4/5/8 vs shuffle p99 2/2/2/3, all flagged | 224 key tables: 0 hits in total, 0 candidates (shuffle p99 0 for every key) | no list on disk; DECODE 1650-1690 Marburg/Danish keys = 4687-4692, all opened, none matching; list needs the archive (keys/nomen_list_match.py) |
+
+## Nomenclator bracketing (GAPS193, 3 Oct 2026, account-4; PREREG-GAPS193.md)
+
+| hypothesis | control (K=16, code+mark, noise 0/0.2/0.4) | target | verdict |
+|---|---|---|---|
+| one-part alphabetical nomenclator (S1, Kendall tau) | power 1.000/0.989/0.807, size 0.051/0.047/0.040 | tau 0.194, p 0.172 | control-backed negative at K=16 |
+| topical-block nomenclator (S2, same-topic adjacent pairs) | power 1.000/0.769/0.318, size 0.017/0.026/0.016 | 5 pairs, p 0.014 | non-test at this N (power < 0.8 at noise 0.4); not support |
