@@ -1,0 +1,11 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+A01	g01_s1,g01_s2	ce messagre	M	60 23 83 84 25 30	none	L	escript par 14	23 1 . et depuis	line 1; gloss spans roughly from the 6 of 60 to 30; full digit run on line is 14 60 23 83 84 25 30 23 1 (odd count, grouping uncertain; 83/84 glyphs ambiguous 8/0); final letters of gloss re/er ambiguous
+A02	g02_s3,g03_s3	estrangers am?ab	L	2a 75	none	M	faict ... dd	desperer	line 4; first word 'estrangers' M, second word ('amez'/'armez'?) L; '2a' read as written (digit+letter-like sign); gloss begins with a long lead-in stroke over '2a'
+A03	g04_s1	?ite?	L	63 50 85	none	L	nommee en la [sign]	vous a dit aultre	line 7; faint light-ink gloss ('gitet'/'Jitet'?), mixed with descenders of line 6 above; run reads 30 63 50 85 85
+A04	g04_s2	dit	M	-	none	H	a dit aultre	escript par	line 8; over clear text, insertion with caret dots between 'aultre' and 'escript'
+A05	g07_s2,g08_s2	Car de bourbon	H	14	bar	H	ung mon a	pour le visite ayant	line 14; gloss starts just right of barred 14 and runs over clear 'pour le visite'; nothing else nearby it could belong to
+A06	g08_s2	fontarras	M	95 23 73 25	none	M	tres secrete 25 20 85 73	90 . M	line 15; gloss spans from 95 to 25; final letter s/y uncertain; full run 25 20 85 73 95 23 73 25 90 (dot over 85)
+A07	g09_s1,g10_s1	Narre	M	17	bar	H	comme ,	a ... aultrement	line 18; light ink, sits just right of the barred 17, over 'a'; may be abbreviated (Nar^re)
+A08	g12_s1,g12_s2,g13_s1,g13_s2	b de	L	11	none	M	auroit dit	qui estoient	line 24; dark ink; first stroke may be a descender from line 23 (read 'vb de' at first); could be main-hand interlinear rather than later gloss
+A09	g12_s3	Normandie	M	52	dot	M	apres a	par a [sign] 93 75	line 24; gloss starts over 52 and runs right over clear 'par a'; reads 'Noramdie'/'Normandie'; dot before 52
+A10	g12_s3,g13_s3	nav	L	7	bar	H	voyant le	de sa ... aurongull	line 25 (last); gloss sits over 'le' just left of barred 7; alt reading 'nre'
