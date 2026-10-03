@@ -406,21 +406,62 @@ Bourdeau's italy.md calls key 4 "frame 58-5". A file/frame naming difference, no
   1 API; ep.liu.se 1; github.com 1 clone.
 - `python3 tools/gaps_check.py florence-dieci-responsive` (3 Oct 2026, after this update): "OK keep-going florence-dieci-responsive: keep going: 2 internal gap(s), 3 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped", exit 0.
 
+## GAPS117-florence-dieci-responsive: blind two-pass c. 70 against an anonymised key-4 sheet (3 Oct 2026, account-4)
+
+Pre-registered in `key4/PREREG-GAPS117.md` (pushed b687336e at 13:26 UTC, before either pass ran).
+- **Sheet:** `key4/sheet_key4_anon.png`, 162 sign cells cut from 58-6.pdf at 300 dpi by `key4/make_anon_sheet.py`, labelled
+  K001-K162 in shuffled order (seed 117), with header letters and values removed. The values are in `key4/sheet_map.tsv`,
+  which the readers never saw. While building it, this worker read the key's letter row from the image (M): E carries three
+  homophones (X, a 9-like sign, 7), and U and V carry three each. `key4.tsv` (GAPS112) put two of these under d. That is a key-reading
+  conflict between two M readings of the same image; `sheet_map.tsv` follows this worker's read, and key4.tsv is unchanged.
+- **Crops:** c. 70 fetched again with one DECODE login (sha1 46f5e949..., matches the manifest). `tools/iiif_lines.py --image
+  IMG_R3762_I23019_P.jpg --region 400,150,4300,2300 --prefix c70 --debug` output: "region 4300x2300, 17 lines, 17 bands x 2
+  segments; pitch 64 distance 44 prominence 463.3". The debug overlay shows L07-L13 on the text lines and L14 onward
+  misaligned. Passes read L07-L10, 8 crops. The s1 and s2 segments overlap by 500 px; `passes/gaps117/dedupe.py` dropped the
+  repeated s2 prefix per pass (A: 4/5/4/6 signs; B: 4/5/0/0, because B had not repeated them).
+- **Passes:** two independent blind Opus subagent calls, each given the 8 crops and the sheet only. A: 130 rows, 22 `?`, 49 L.
+  B: 112 rows, 17 `?`, 43 L. `tools/reconcile_passes.py` (nw): A 111 / B 103 signs, **agree 74/113 = 65.5%**: 19 agreed-H,
+  55 agreed-uncertain (12 of them both-`?`), 39 differ. Reader disagreement is therefore 34.5%, or 38.6% if both-`?`
+  columns are excluded. Files: `passes/gaps117/`, `key4/c70_blind_reconciled.tsv` (agreed positions kept, every
+  disagreement set to `?`).
+- **Shapes neither reader could place on the sheet (M):** a recurring ligature, a b/h joined to "ay" with a long tail and
+  often an x in front ("xbom"/"xoxomi"/"G1"), about 9 times in four lines, matches no key-4 cell. An "H" plus "xxiiij°"
+  group in L07/L08 may be clear script (a date or number) rather than cipher. Either the key as Gabbrielli copied it lacks
+  a frequent nomenclator sign, or that sign was missed when the sheet was cut. Not settled here.
+- **Gate (`key4/key4_check.py --tokens c70_blind_reconciled.tsv --map sheet_map.tsv`, la18 char 4-gram, 1000 value
+  permutations):** coverage 61/112 = 0.545, not gated. Target: 23 runs / 118 chars / 30 entries, real -2.828 vs shuffled p95
+  -2.472, **p 0.640**. Positive control, same shape: 5/5 at 0 noise, 4/5 at 10%, 5/5 at 25%, **2/5 at the measured 35%**
+  (`key4/run_gaps117_noise*.txt`). Under the pre-registered rule this is a **NON-TEST at this reader error**. The control
+  fails below 4/5 at the error the readers actually have, so the target's FAIL licenses nothing about key 4 either way
+  (rule 3, error-band clause).
+  The measured blind error (34.5%) now replaces GAPS112's unmeasured "very likely above 25%". It sits past the band where
+  the control holds (<=25%), as GAPS112 suspected.
+- **Grading (rule 4):** no reading claimed. 113 transcription positions: 61 agreed K-ids (shape matches, M), 1 clear run,
+  51 `?`. Decoded tokens H 0, C 0, S 0, M 0, I 0. Rule 7 does not apply.
+- **Next:** two machine passes split by more than a tenth, so per CLAUDE.md Usage 6 (transcription) the next pass is the
+  owner's. Put c. 70's sign set (L07-L13 crops, the G1 ligature, the numeral group) and key 4's 162 cells into the sign
+  sorter (`tools/sign_sorter.py`; ~$1.5 to build). Re-run `key4_check.py` only once the settled labels bring disagreement under
+  25%. A third machine pass of the same crops would repeat an approach already shown to fail its gate (rule 3).
+- Usage: vision -- this worker 7 looks (key page, 3 gridded renders, 2 sheet checks, crop debug overlay), 2 Opus subagent
+  passes, 0 reconciliation vision calls (script only). Requests: de-crypt.org 1 failed page.goto (cert, before the login;
+  certutil fix applied) + 1 login + RecordsView/3762 + 1 image get; no other host.
+- `python3 tools/gaps_check.py florence-dieci-responsive` (3 Oct 2026, after this update): "OK keep-going florence-dieci-responsive: keep going: 2 internal gap(s), 3 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped", exit 0.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf (GAPS106); next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
-- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 check-solved done 3 Oct 2026 (GAPS112): open, no printed decipherment located; c. 70 against Gabbrielli key 4 (GAPS112): key-4-specific word-codes (cul, dla, hec) present, coverage 53/70 (descriptive), gated decode FAIL (real -2.759 vs shuffled p95 -2.732, p 0.075) but a non-test at this reader error (control 5/5 at <=10% error, 2/5 at 25%, 0/5 at 40%; read M, not blind); next: blind two-pass transcription of c. 70 cipher stretches against an anonymised key-4 sign sheet + reconciliation, re-run key4/key4_check.py, ~$6; then key 3 for the other leaves and a line-level look at filza 9
+- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 check-solved done 3 Oct 2026 (GAPS112): open, no printed decipherment located; c. 70 against Gabbrielli key 4 (GAPS112): key-4-specific word-codes (cul, dla, hec) present, coverage 53/70 (descriptive), gated decode FAIL (real -2.759 vs shuffled p95 -2.732, p 0.075) but a non-test at this reader error (control 5/5 at <=10% error, 2/5 at 25%, 0/5 at 40%; read M, not blind); blind two-pass c. 70 (GAPS117, 3 Oct 2026): passes agree 74/113 (34.5% disagreement), control 5/5 at 0, 4/5 at 10%, 5/5 at 25%, 2/5 at 35% -> NON-TEST at this reader error (target p 0.640); a recurring ligature (about 9x) matches no key-4 cell; next: owner sign sorter for c. 70 + key-4 cells (tools/sign_sorter.py, ~$1.5 to build, never blocking), then re-run key4/key4_check.py once disagreement is under 25%; then key 3 for the other leaves and a line-level look at filza 9
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
 ## Escalation (3 Oct 2026, A2-FLO)
 - [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
 - [x] clear-pages: filze 7/9/22 contact-sheet look found no clear copy (GAPS108, 3 Oct 2026); c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
-- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf = key 3, 58-6.pdf = key 4) against filza 7 leaves; check-solved for filza 7 done (open, GAPS112 3 Oct 2026); key 4 vs c. 70: inventory consistent (cul/dla/hec present), gated decode a non-test at this reader error (GAPS112); next: blind anonymised-sheet transcription of c. 70 and re-run key4/key4_check.py, ~$6
+- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf = key 3, 58-6.pdf = key 4) against filza 7 leaves; check-solved for filza 7 done (open, GAPS112 3 Oct 2026); key 4 vs c. 70: inventory consistent (cul/dla/hec present), gated decode a non-test at this reader error (GAPS112); blind anonymised-sheet two-pass done (GAPS117, 3 Oct 2026): measured disagreement 34.5%, control 2/5 there, so still a non-test; next: owner sign sorter for c. 70 + key-4 cells, ~$1.5 to build, then re-run key4_check.py
 - [x] print: Guasti *Commissioni* vols 2-3 full-text read 3 Oct 2026 (CS-A2-K), letter absent; no edition or calendar of the Responsive exists; Gabbrielli vol. II and Cavalcanti not read
 - [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; then filza 7 c. 70 blind two-pass transcription against an anonymised Gabbrielli key-4 sign sheet + reconciliation and a re-run of key4/key4_check.py with its noise sweep, ~$6 (GAPS112, 3 Oct 2026); filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
+Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; then a sign-sorter build for filza 7 c. 70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells) for the owner, ~$1.5, after which key4/key4_check.py re-runs once reader disagreement is under 25% (GAPS117, 3 Oct 2026: blind two-pass 34.5%, a non-test); filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)

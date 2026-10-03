@@ -1,0 +1,8 @@
+coverage (not gated): 61/112 = 0.545
+target: runs 23, chars 118, entries 30: real -2.828 shuffled p95 -2.472 p 0.640 -> FAIL
+positive control 0: entries 39: real -2.238 p95 -2.492 -> PASS
+positive control 1: entries 38: real -2.570 p95 -2.583 -> PASS
+positive control 2: entries 39: real -2.098 p95 -2.533 -> PASS
+positive control 3: entries 37: real -2.851 p95 -2.844 -> FAIL
+positive control 4: entries 40: real -1.950 p95 -2.488 -> PASS
+positive controls passing: 4/5

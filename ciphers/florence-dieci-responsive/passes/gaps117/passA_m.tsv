@@ -1,0 +1,112 @@
+line	pos	sign	conf	note
+c70_L07	1	CLEAR	H	Intelleximus etiam que scripsisti de
+c70_L07	2	K113	M	H-like
+c70_L07	3	?	L	word-like xoxomi with superscript o
+c70_L07	4	K002	H	7
+c70_L07	5	K088	H	dash
+c70_L07	6	K036	H	ll
+c70_L07	7	K148	L	h with tail
+c70_L07	8	K117	L	b/s-loop + ay
+c70_L07	9	K078	H	o-o
+c70_L07	10	K148	L	k-like
+c70_L07	11	K140	L	y with loop
+c70_L07	12	?	L	L-shape
+c70_L07	13	K025	M	crossed p
+c70_L07	14	K017	L	bar with dot
+c70_L07	15	K128	M	4
+c70_L07	16	K121	L	q-like
+c70_L07	17	K025	M	crossed p
+c70_L07	18	?	L	xoxomi-like, top clipped
+c70_L07	19	?	L	xaxy-like, clipped
+c70_L07	20	?	L	may-like, clipped
+c70_L07	21	K105	L	small d, clipped
+c70_L08	1	K055	M	Cla/Sla
+c70_L08	2	K093	M	n with stroke
+c70_L08	3	K062	M	q-o
+c70_L08	4	K075	H	o+
+c70_L08	5	K117	L	b+ay loop
+c70_L08	6	?	L	xoxomi with superscript o
+c70_L08	7	K010	M	2+
+c70_L08	8	K062	M	
+c70_L08	9	K089	M	o with stroke above
+c70_L08	10	?	L	kare/ham-like
+c70_L08	11	K047	L	yo
+c70_L08	12	K088	H	
+c70_L08	13	K036	H	
+c70_L08	14	K025	L	p with curl above
+c70_L08	15	K117	L	b+ay loop
+c70_L08	16	K062	M	
+c70_L08	17	K066	M	o
+c70_L08	18	K062	M	
+c70_L08	19	K089	M	
+c70_L08	20	?	L	bz
+c70_L08	21	K025	L	x/p crossed
+c70_L08	22	K117	L	
+c70_L08	23	K062	M	
+c70_L08	24	K001	H	qq
+c70_L08	25	K040	M	m
+c70_L08	26	K120	L	u/n
+c70_L08	27	K138	H	square
+c70_L08	28	K028	H	3
+c70_L08	29	K148	L	h
+c70_L08	30	?	L	xoxomi-like
+c70_L08	31	K105	L	d
+c70_L08	32	K025	L	
+c70_L09	1	K032	M	a
+c70_L09	2	K093	M	n with stroke
+c70_L09	3	K002	H	7
+c70_L09	4	K139	L	slash
+c70_L09	5	K040	M	m
+c70_L09	6	K062	M	
+c70_L09	7	K017	H	bar dot below
+c70_L09	8	K030	M	S with o above
+c70_L09	9	K025	M	
+c70_L09	10	K077	M	p
+c70_L09	11	K140	M	y
+c70_L09	12	K095	H	cul
+c70_L09	13	K078	H	o-o
+c70_L09	14	K024	H	dot over bar
+c70_L09	15	K116	H	box cross
+c70_L09	16	K148	M	h
+c70_L09	17	?	L	xbom-like
+c70_L09	18	K066	M	o
+c70_L09	19	K078	M	o-o, cut at edge
+c70_L09	20	K089	M	
+c70_L09	21	?	L	bz
+c70_L09	22	?	L	xbom
+c70_L09	23	?	L	ibbz
+c70_L09	24	?	L	xbom
+c70_L09	25	K002	H	
+c70_L09	26	?	L	bz
+c70_L09	27	K062	M	
+c70_L09	28	?	L	clipped word at top right
+c70_L10	1	K062	M	
+c70_L10	2	K024	H	
+c70_L10	3	K057	M	9
+c70_L10	4	K078	H	
+c70_L10	5	K148	L	k
+c70_L10	6	K069	M	b with stroke
+c70_L10	7	K106	H	dla
+c70_L10	8	K106	L	dlal variant
+c70_L10	9	K106	L	dlaf variant
+c70_L10	10	K117	M	flak/slay
+c70_L10	11	K057	M	9
+c70_L10	12	K105	M	d
+c70_L10	13	?	L	L-shape
+c70_L10	14	K028	H	3
+c70_L10	15	K025	M	
+c70_L10	16	K088	H	
+c70_L10	17	K036	H	
+c70_L10	18	K103	L	pp crossed
+c70_L10	19	K030	M	S
+c70_L10	20	?	L	faint am
+c70_L10	21	K024	L	plus/div
+c70_L10	22	K001	M	qq/99
+c70_L10	23	K110	M	triangle
+c70_L10	24	K081	L	long s/z
+c70_L10	25	?	L	xbom
+c70_L10	26	K066	M	
+c70_L10	27	K140	M	y
+c70_L10	28	K040	M	m
+c70_L10	29	K066	M	
+c70_L10	30	?	L	yr clipped

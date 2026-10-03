@@ -1,0 +1,114 @@
+line	position	sign	confidence	alt	why
+c70_L07	1	CLEAR	H		agree
+c70_L07	2	K113	L		agree-flagged
+c70_L07	3		M	B:K151	differ
+c70_L07	4	K002	H		agree
+c70_L07	5	K088	H		agree
+c70_L07	6	K036	H		agree
+c70_L07	7	K148	L		agree-flagged
+c70_L07	8	K117	M	B:	differ
+c70_L07	9	K078	H		agree
+c70_L07	10	K148	M	B:K035	differ
+c70_L07	11	K140	L		agree-flagged
+c70_L07	12		L		agree-flagged
+c70_L07	13	K025	M	B:K020	differ
+c70_L07	14	K017	L		agree-flagged
+c70_L07	15	K128	M	B:K121	differ
+c70_L07	16	K121	L		agree-flagged
+c70_L07	17	K025	M		agree-flagged
+c70_L07	18		L		agree-flagged
+c70_L07	19		L		agree-flagged
+c70_L07	20		L		agree-flagged
+c70_L07	21	K105	M	B:K023	differ
+c70_L08	1	K055	L		agree-flagged
+c70_L08	2	K093	M		agree-flagged
+c70_L08	3	K062	M		agree-flagged
+c70_L08	4	K075	H		agree
+c70_L08	5	K117	M	B:-	gap
+c70_L08	6		L		agree-flagged
+c70_L08	7	K151	M	A:-	gap
+c70_L08	8	K010	M	B:K131	differ
+c70_L08	9	K062	M		agree-flagged
+c70_L08	10	K089	M		agree-flagged
+c70_L08	11		M	B:K035	differ
+c70_L08	12	K047	M	B:K020	differ
+c70_L08	13	K088	H		agree
+c70_L08	14	K036	H		agree
+c70_L08	15	K025	M	B:K076	differ
+c70_L08	16	K117	M	B:	differ
+c70_L08	17	K062	M		agree-flagged
+c70_L08	18	K066	M		agree-flagged
+c70_L08	19	K062	M		agree-flagged
+c70_L08	20	K089	M		agree-flagged
+c70_L08	21		M	B:K035	differ
+c70_L08	22	K025	M	B:K020	differ
+c70_L08	23	K117	M	B:	differ
+c70_L08	24	K062	M		agree-flagged
+c70_L08	25	K001	H		agree
+c70_L08	26	K040	M		agree-flagged
+c70_L08	27	K120	M	B:-	gap
+c70_L08	28	K138	H		agree
+c70_L08	29	K028	H		agree
+c70_L08	30	K148	L		agree-flagged
+c70_L08	31		L		agree-flagged
+c70_L08	32	K105	M	B:K089	differ
+c70_L08	33	K025	M	B:K020	differ
+c70_L09	1	K032	M		agree-flagged
+c70_L09	2	K093	M		agree-flagged
+c70_L09	3	K002	H		agree
+c70_L09	4	K139	L		agree-flagged
+c70_L09	5	K040	M		agree-flagged
+c70_L09	6	K062	M		agree-flagged
+c70_L09	7	K017	H		agree
+c70_L09	8	K030	M		agree-flagged
+c70_L09	9	K025	M		agree-flagged
+c70_L09	10	K077	M		agree-flagged
+c70_L09	11	K140	L		agree-flagged
+c70_L09	12	K095	H		agree
+c70_L09	13	K078	H		agree
+c70_L09	14	K024	M	B:-	gap
+c70_L09	15	K116	M	B:-	gap
+c70_L09	16	K148	M		agree-flagged
+c70_L09	17		L		agree-flagged
+c70_L09	18	K066	M		agree-flagged
+c70_L09	19	K078	M		agree-flagged
+c70_L09	20	K089	M		agree-flagged
+c70_L09	21		M	B:K035	differ
+c70_L09	22		L		agree-flagged
+c70_L09	23		M	B:K035	differ
+c70_L09	24		L		agree-flagged
+c70_L09	25	K002	H		agree
+c70_L09	26		M	B:K035	differ
+c70_L09	27	K062	M		agree-flagged
+c70_L09	28		M	B:-	gap
+c70_L10	1	K062	M		agree-flagged
+c70_L10	2	K024	M		agree-flagged
+c70_L10	3	K057	M		agree-flagged
+c70_L10	4	K078	H		agree
+c70_L10	5	K148	M	B:-	gap
+c70_L10	6	K069	M	B:K009	differ
+c70_L10	7	K106	M	B:K035	differ
+c70_L10	8	K106	L		agree-flagged
+c70_L10	9	K106	L		agree-flagged
+c70_L10	10	K117	M	B:-	gap
+c70_L10	11	K057	M	B:-	gap
+c70_L10	12	K105	M	B:-	gap
+c70_L10	13		L		agree-flagged
+c70_L10	14	K028	M	B:K117	differ
+c70_L10	15	K025	M	B:K020	differ
+c70_L10	16	K088	H		agree
+c70_L10	17	K036	H		agree
+c70_L10	18	K103	L		agree-flagged
+c70_L10	19	K030	L		agree-flagged
+c70_L10	20		L		agree-flagged
+c70_L10	21	K063	M	A:-	gap
+c70_L10	22	K024	M	B:K057	differ
+c70_L10	23	K001	M	B:K154	differ
+c70_L10	24	K110	M		agree-flagged
+c70_L10	25	K081	M	B:	differ
+c70_L10	26		L		agree-flagged
+c70_L10	27	K066	M		agree-flagged
+c70_L10	28	K140	L		agree-flagged
+c70_L10	29	K040	M	B:K080	differ
+c70_L10	30	K066	M		agree-flagged
+c70_L10	31		M	B:-	gap

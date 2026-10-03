@@ -1,0 +1,104 @@
+line	pos	sign	conf	note
+c70_L07	1	CLEAR	H	Intelleximus etiam que scripsisti de
+c70_L07	2	K113	L	H-shape; may be clear
+c70_L07	3	K151	L	numeral xxiiij with superscript o; alt K091; may be clear
+c70_L07	4	K002	H	
+c70_L07	5	K088	H	
+c70_L07	6	K036	H	
+c70_L07	7	K148	M	h with long left-descending tail
+c70_L07	8	?	L	G1: b/h+ay ligature with long tail, recurs L08-L10
+c70_L07	9	K078	H	
+c70_L07	10	K035	L	small k/b3-like
+c70_L07	11	K140	L	y-shape
+c70_L07	12	?	L	L-shape
+c70_L07	13	K020	L	x with descending tail
+c70_L07	14	K017	M	bar with dot below
+c70_L07	15	K121	L	4/q-like
+c70_L07	16	K121	L	9/q-like
+c70_L07	17	K025	M	p with slash
+c70_L07	18	?	L	numeral-like xxxiiij, top clipped
+c70_L07	19	?	L	x..ay group, top clipped (G1?)
+c70_L07	20	?	L	m-a-q, top clipped
+c70_L07	21	K023	M	d-loop at line end
+c70_L08	1	K055	L	large S/C-la; could be clear Cela
+c70_L08	2	K093	M	n with dot above
+c70_L08	3	K062	H	q with o
+c70_L08	4	K075	H	o+
+c70_L08	5	?	L	G1 b+ay ligature
+c70_L08	6	K151	L	numeral with sup o; alt K091
+c70_L08	7	K131	L	2+ shape, mirror of K131
+c70_L08	8	K062	H	
+c70_L08	9	K089	M	circle with upright stroke
+c70_L08	10	K035	L	k/b3
+c70_L08	11	K020	L	x with tail
+c70_L08	12	K088	H	
+c70_L08	13	K036	H	
+c70_L08	14	K076	M	p with hook above
+c70_L08	15	?	L	G1
+c70_L08	16	K062	H	
+c70_L08	17	K066	M	o
+c70_L08	18	K062	H	
+c70_L08	19	K089	M	
+c70_L08	20	K035	M	b3
+c70_L08	21	K020	L	2/x with tail
+c70_L08	22	?	L	G1
+c70_L08	23	K062	H	
+c70_L08	24	K001	H	qq crossed below
+c70_L08	25	K040	M	light m
+c70_L08	26	K138	H	square
+c70_L08	27	K028	H	3 with long tail
+c70_L08	28	K148	L	h with tail
+c70_L08	29	?	L	faint numeral-like group xxxiij
+c70_L08	30	K089	M	
+c70_L08	31	K020	L	
+c70_L09	1	K032	M	a
+c70_L09	2	K093	H	n with stroke above
+c70_L09	3	K002	H	
+c70_L09	4	K139	L	slash/virgule
+c70_L09	5	K040	M	m
+c70_L09	6	K062	H	
+c70_L09	7	K017	H	bar with dot below
+c70_L09	8	K030	M	S with o above
+c70_L09	9	K025	H	p with slash
+c70_L09	10	K077	H	p
+c70_L09	11	K140	L	v/y with tail
+c70_L09	12	K095	H	cul
+c70_L09	13	K078	H	
+c70_L09	14	K148	M	h with tail
+c70_L09	15	?	L	x + G1
+c70_L09	16	K066	M	
+c70_L09	17	K078	H	
+c70_L09	18	K089	M	
+c70_L09	19	K035	H	b3
+c70_L09	20	?	L	x + G1
+c70_L09	21	K035	M	i-b3 with tick
+c70_L09	22	?	L	x + G1
+c70_L09	23	K002	H	
+c70_L09	24	K035	H	b3
+c70_L09	25	K062	M	q with hook
+c70_L10	1	K062	H	
+c70_L10	2	K024	M	bar with mark above
+c70_L10	3	K057	M	g/9
+c70_L10	4	K078	H	
+c70_L10	5	K009	L	k
+c70_L10	6	K035	L	b with crossbar
+c70_L10	7	K106	H	dla
+c70_L10	8	K106	L	dlal; dla + l
+c70_L10	9	?	L	diaf
+c70_L10	10	K117	M	Slah/flah
+c70_L10	11	K020	L	x with tail, partly cut
+c70_L10	12	K088	H	
+c70_L10	13	K036	H	
+c70_L10	14	K103	M	pp with stroke
+c70_L10	15	K030	L	S followed by faint erased letters
+c70_L10	16	?	L	faint erased cuij
+c70_L10	17	K063	M	inverted T with ascender
+c70_L10	18	K057	M	
+c70_L10	19	K154	L	9
+c70_L10	20	K110	H	triangle
+c70_L10	21	?	L	z with long tail
+c70_L10	22	?	L	x + G1
+c70_L10	23	K066	M	
+c70_L10	24	K140	L	y/v
+c70_L10	25	K080	L	m
+c70_L10	26	K066	M	o
