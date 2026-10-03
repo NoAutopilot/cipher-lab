@@ -1,4 +1,5 @@
 open
+Gomberville, *Mémoires du duc de Nevers* (1665) seconde partie (Google Books H2eV4wAmIr0C) full-text searched by this worker (GF4-BATCH9, 3 Oct 2026): pregnant, "noz affaires", intelligiblement 0 hits; Doullens 6 hits pp.717-719 (the different letter to "Messieurs") -- letter absent.
 
 **Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
 page confirmed); full-text searched for this letter's own terms (Villeroy, Cambray, Doullens, Fuentes,
@@ -172,3 +173,55 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 22 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Nevers Villeroy Saint-Quentin 16 août 1595 lettre chiffre Cambrai Doullens` returned the BnF fr.3974-3995 finding aid,
+   historyofwar.org's siege of Cambrai, Wikipedia pages (Nevers, Doullens, Villeroy) and a Gallica Leuridan volume.
+   There was no decipherment and no transcription of this letter.
+2. `"français 3993" OR "fr. 3993" Nevers chiffre 1595` returned only number-spelling and Wikipedia noise.
+3. The letter's own clear phrase, `"ne puissent prendre cognoissance de noz affaires" OR "seroit bon d'estre en chiffre"`,
+   returned no exact hit (DMF, Montaigne and Gutenberg noise only).
+4. For the folder title and the BnF record, the live fr.3993 finding aid (archivesetmanuscrits.bnf.fr/ark:/12148/cc504266/cd0e37708)
+   was fetched by curl; see Premise check (c).
+Blogs: `Nevers 1595 cipher Villeroy site:scienceblogs.de OR site:ciphermysteries.com OR site:cryptiana.blogspot.com`.
+- Cryptiana blog, 2018 archive page (cryptiana.blogspot.com/2018), opened and read with its comment text. It names
+  Tomokiyo's fr.3995 Nevers catalogue and the fr.4715 post, with no mention of fr.3993, Villeroy or 1595.
+- Cipherbrain hits (Biermann's 17th-century letters; the German conquistador cryptogram) are unrelated.
+- No Cipher Mysteries hit.
+Tomokiyo's League page, as cited by Bourdeau above, says "Undeciphered". Nothing found.
+
+## Premise check (GF4-BATCH9, account-4, 3 Oct 2026)
+
+(a) **Decipherments the folder mentions: none of this item.** The folder names no gloss or clear copy of no.102. The
+live BnF record reads "102 Lettre, avec chiffre, de LOUIS DE GONZAGUE, duc DE NEVERS, à monseigneur de Villeroy,...
+De St Quentin, ce 16 aoust 1595. Copie." It says "avec chiffre", without the "et déchiffrement" the catalogue uses
+elsewhere. The leaf is Nevers's file copy, so the as-sent letter (Villeroy's side) is the one place a decipherment
+could sit. Not found.
+(b) **Other solvers' working files: not found.** Checked dbourdeau/cyphersolver `targets/nevers1595/` (shallow clone,
+HEAD 4aedb40, 2 Oct 2026). It holds the transcriptions, hsolve.py/hsyl.py with control logs and anneal.py. There are no
+plaintext outputs, and no key renders French. Its NOTES.md still reads "attempted, closed from the evidence (not read)".
+aaymeloglu/unsolved-ciphers (shallow clone, HEAD d2800bb) has no "3993" or Villeroy-1595 file.
+(c) **Physical neighbours: no clear copy found in the catalogue.** The live finding aid lists:
+- f.145 no.100, d'Auchi to Nevers, St Quentin, 14 Aug 1595;
+- f.146 no.101, Longueville, 15 Aug;
+- f.148 no.102, this letter;
+- f.150 no.103, Charles de Gonzague-Clèves, 16 Aug, copy;
+- f.151 no.104, Trumelet, Cambrai, 16 Aug, copy;
+- f.152 no.105, Petit, Cambrai, 16 Aug, copy.
+None is marked "chiffre" or "déchiffrement". Bourdeau checked sibling no.133 (18 Aug, to Villeroy) and found it all
+clear. This worker did not view ff.147v/149v at native resolution, so that view is still to do (cheap, depends on
+nobody).
+(d) **Recipient side: not found.** Villeroy, *Mémoires d'Estat* (1622, archive.org memoiresdestat01vill, 02vill and
+03vill) was searched in full in the OCR text. There were 4 and 6 "Cambray" hits in vols 1 and 3, and 0 hits for
+Doullens, Fuentes, Quentin or "aoust 1595". Nevers appears only in other contexts (vol. 3 l.8045 "receus de feu M. de
+Neuers qui me conuioit de me haster pour le secours" is a later narrative, not this letter). These are long-s OCR
+texts, so this is a conditional negative. The 1665 "Second volume ... recueillis de diuers manuscrits" was not
+searched.
+
+Verdict after this pass: `open` stands. Next steps per the sections above: the fr.3995 keys outside nos.60/65/66/68-76,
+the as-sent letter in Villeroy's papers, and the ff.147v/149v native view. All of these depend on nobody, so no
+"While waiting" section is needed.
+Requests this pass: archivesetmanuscrits.bnf.fr 1, books.google.com 4, archive.org 4 (1 advancedsearch, 3 djvu.txt),
+cryptiana.blogspot.com 1. Rule 10: no novelty claim; these are search results.
