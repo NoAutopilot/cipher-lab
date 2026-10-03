@@ -1,0 +1,3 @@
+# fair-game-2010 masc seed 1 restarts 32 3 Oct 2026 09:46 UTC; control mean 0.591 (0.179-0.791); score -145.249; TARGET LETTERS SHUFFLED (seed 8, false-positive floor)
+# {"restart_scores": [-145.2, -148.8, -149.6, -150.5, -150.7, -151.3, -151.4, -151.6, -151.7, -152.1, -152.4, -153.7, -153.8, -153.9, -153.9, -154.1, -154.1, -154.9, -155.4, -155.9, -156.4, -157.3, -158.4, -160.0, -161.4, -161.8, -162.9, -163.9, -164.2, -164.9, -165.2, -166.0], "key": {"a": "t", "c": "e", "d": "h", "e": "e", "f": "t", "g": "d", "h": "i", "i": "l", "j": "u", "k": "r", "m": "s", "n": "o", "o": "h", "p": "i", "q": "f", "r": "e", "s": "s", "t": "n", "u": "a", "w": "n", "y": "r"}}
+eheoforeethessitedatanothertannerietheseleishaueententionstisththeh

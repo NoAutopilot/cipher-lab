@@ -1,0 +1,23 @@
+# fair-game-2010 -- hypothesis families
+
+Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 09:38 | masc | N=67 K=21 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-5 | 0.537 (0.179-0.791) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | GAPS71 test2 order=scroll |
+| 3 Oct 2026 09:38 | masc | N=67 K=21 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-5 | 0.537 (0.179-0.791) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | GAPS71 test2 order=column |
+| 3 Oct 2026 09:39 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-5 | 0.591 (0.179-0.791) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | GAPS71 test2 r32 order=scroll |
+| 3 Oct 2026 09:40 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-5 | 0.591 (0.179-0.791) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | GAPS71 test2 r32 order=column |
+| 3 Oct 2026 09:41 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.591 (0.179-0.791) | -150.915 | FAIL language: score=-0.985, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 test2 r32 gate0.5 order=scroll |
+| 3 Oct 2026 09:42 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=7 | 1 | 0.591 (0.179-0.791) | -151.632 | FAIL language: score=-1.336, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 test2 shuffle7 order=scroll |
+| 3 Oct 2026 09:43 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.591 (0.179-0.791) | -151.553 | FAIL language: score=-1.29, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 test2 r32 gate0.5 order=column |
+| 3 Oct 2026 09:44 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=7 | 1 | 0.591 (0.179-0.791) | -153.721 | FAIL language: score=-1.113, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 test2 shuffle7 order=column |
+| 3 Oct 2026 09:45 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=8 | 1 | 0.591 (0.179-0.791) | -149.454 | FAIL language: score=-1.152, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf8 scroll |
+| 3 Oct 2026 09:46 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=8 | 1 | 0.591 (0.179-0.791) | -145.249 | FAIL language: score=-1.174, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf8 column |
+| 3 Oct 2026 09:47 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=9 | 1 | 0.591 (0.179-0.791) | -148.088 | FAIL language: score=-1.378, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf9 scroll |
+| 3 Oct 2026 09:49 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=9 | 1 | 0.591 (0.179-0.791) | -151.441 | FAIL language: score=-1.267, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf9 column |
+| 3 Oct 2026 09:50 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=10 | 1 | 0.591 (0.179-0.791) | -147.001 | FAIL language: score=-1.118, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf10 scroll |
+| 3 Oct 2026 09:51 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=10 | 1 | 0.591 (0.179-0.791) | -144.952 | FAIL language: score=-1.137, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf10 column |
+| 3 Oct 2026 09:52 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.591 (0.179-0.791) | -150.915 | FAIL language: score=-0.985, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 SCROLL final |

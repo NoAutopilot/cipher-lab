@@ -106,3 +106,23 @@ Spec: **not changed.** The reconciled scroll-order text equals the spec's cipher
 Possible crib, not tested (brief): the credits carry a clear line, "Democracy only works if you do your part" (fourth-from-last screenshot; Cipherbrain comments of 12-14 May 2021), and one marked letter is the G of "TAKEPART.COM/FAIR GAME" (BFG22, y 255), the film's TakePart campaign. "do your part" / "takepart" may relate to the hidden message's theme or be its plaintext's closing. Noted only.
 
 Requests: klausschmeh.net 3 pages + 23 images; scienceblogs.de 2 images; at least 3.2 s apart, one at a time. No 403/429. Vision: one contact-sheet read.
+
+## Cheap test 2: simple substitution on both credit-block orders (3 Oct 2026, GAPS71-fair-game-2010, account-4)
+
+Both orders from `reconcile_2026-10-03.tsv` (GF4-BATCH22): scroll order (spec/ATS, line 2 `...GSEHUWTOAKRA`) and
+column-wise (Schmeh 2026, `...GEUSHWTOKARA`), 67 known letters each (position 1:4 dropped), N=67, K=21, same multiset,
+in `test2/order_scroll.txt` and `test2/order_column.txt`. Tool: `tools/family_run.py specs/fair-game-2010.json
+--family masc --cipher <order> --seeds 5`, en corpus, rows in `HYPOTHESES.md`.
+
+| order | control mean (8 / 32 restarts) | gate 0.6 | target judge (run at gate 0.5) | shuffle floor (seeds 7-10) |
+|---|---|---|---|---|
+| scroll (spec) | 0.537 / 0.591 (0.179-0.791) | below | FAIL -0.985 (real_p05 -0.92, null_p99 -1.837) | -1.11 to -1.38 |
+| column-wise | 0.537 / 0.591 (same control) | below | FAIL -1.290 | -1.14 to -1.27 |
+
+The control is below its gate at both restart counts and not at ceiling, so neither FAIL is a negative: a non-test at
+N=67 with this instrument (rule 3). The scroll order's judge score is above all 8 shuffled decodes but below real_p05,
+and its decode is not English (`dnotsudeleantupolarstsandstentsaresitter...`); the anneal score does not separate
+target from shuffle (-150.9/-151.6 vs -151.6 to -153.7). The en judge has unknown reliability (EN-FOLDS). Test 3 (per
+line, N=34) would be a weaker non-test with the same anneal. Not run: the crib GF4-BATCH22 noted (per brief). Next
+step needs a different instrument, not more restarts: a crib/word-constrained solve, or the marker-scheme sweep
+aaymeloglu's SHORTLIST proposes.

@@ -10,8 +10,7 @@
  "ciphertext": [
   "CES?OAPCHFHTEOPISFMNADAMECAOREDATN",
   "RAYUURNQWKNUFRCOJRWRMDGSEHUWTOAKRA"
-]
-,
+ ],
  "ciphertext_source": "Cipherbrain post 36 (Schmeh 2017, sources/schmeh/posts/36-fair-game.txt), fetched 25 Sept 2026, quoting the sequence as reported by the web forum AboveTopSecret (abovetopsecret.com/forum/thread833418/pg1) from the film's own end-credits screenshots (files/2014/10/Fair-Game.png, files/2014/10/Fair-Game-2.png -- not fetched this pass). The '?' at position 4 of line 1 marks a letter Schmeh/AboveTopSecret could not read because the surname it belongs to was itself redacted in the credits for a real person's privacy (see constraints.redaction_overlap) -- this is a genuine unknown, not a placeholder to be silently filled in (rule 2).",
  "alphabet": "A-Z only, two lines of 34 characters each (line 1 has one unreadable position, so 33 known + 1 unknown)",
  "constraints": {
@@ -29,7 +28,7 @@
   "2. Simple substitution anneal of the 67-68 known letters (both lines pooled, and separately) against English, judged with a matched control (synthetic English monoalphabetic-substitution ciphertext at the same N/K, same solver) -- Schmeh's own frequency-chart claim ('consistent with a letter substitution') is a lead worth testing directly rather than taking at face value. Cost $2.",
   "3. Treat the two 34-character lines as two independent short messages (rather than one 68-character message) in case they are unrelated per-line codes (e.g. two separate initials/acrostics), and re-run test 2's judge separately per line. Cost under $1 (reuses test 2's output)."
  ],
- "matched_control": "not yet run; test 2 above specifies the design (synthetic English monoalphabetic-substitution ciphertext, same N/K, same solver)",
+ "matched_control": "test 2 (3 Oct 2026): masc control N=67 K=21 en, mean 0.591 at 32 restarts -- below gate 0.6",
  "cheap_test_done": [
   {
    "test": 1,
@@ -40,6 +39,16 @@
    "control": "(a) 3 synthetic sequences built with the SAME extraction procedure on the SAME word pool, marks placed to spell a known 13-letter name (ROBERTJOHNSON, unrelated to the film): name recovered exactly in all 3/3 trials -- confirms the procedure and script are not broken and can recover a real signal when one is planted. (b) 3 random-marking false-positive trials, same word pool, same N=65: judge FAIL on all 3/3 (scores -2.134 to -2.261, word cover 0.246-0.523) -- the real target's score (-2.202, cover 0.462) sits inside this random-noise band, not below or above it.",
    "verdict": "control-backed negative for this specific realization of the Halpin hypothesis (real target indistinguishable from random-marking noise of the same design; sanity control confirms the test has power). Caveated: the source transcription is missing 2/67 known letters and its order relative to the true credit scroll is unverified, so this negative applies to THIS reconstruction, not to every possible ordering of the same words. Does not by itself close the target (tests 2-3 not run this pass, per brief).",
    "files": "specs/cheap-tests/fair-game-2010/{credits_words.py,run_test1.py,test1_output.json}"
+  },
+  {
+   "test": 2,
+   "date": "3 Oct 2026",
+   "worker": "GAPS71-fair-game-2010 (account-4, Opus)",
+   "method": "tools/family_run.py --family masc (homophonic_anneal one sign per letter), 67 known letters pooled (pos 1:4 dropped), N=67 K=21, en corpus (holmes+mobydick), 5 control seeds, 8 then 32 restarts; run on BOTH orders of the BFG22-24 music-credit block from reconcile_2026-10-03.tsv: scroll order (spec, ...SEHU...OAKR...) and column-wise (Schmeh 2026, ...EUSH...OKAR...). Same multiset, so the matched control (synthetic English simple substitution, same N/K/design/language) is the same for both orders.",
+   "control": "mean recovery 0.537 at 8 restarts (0.179-0.791), 0.591 at 32 restarts (0.179-0.791; seed 4 stuck at 0.179) -- below the 0.6 gate both times, not near ceiling; family_run printed CONTROL BELOW GATE and did not run the target at gate 0.6.",
+   "target": "run anyway at gate 0.5 for the record (licenses nothing): scroll order judge FAIL -0.985 (real_p05 -0.92, null_p99 -1.837), decode word salad ('dnotsudeleantupolarstsands...'); column order judge FAIL -1.290. Shuffle floor (same family, target letters shuffled, seeds 7-10, 4 per order): -1.11 to -1.38. Anneal scores: target -150.9 (scroll) / -151.6 (column) vs shuffled -151.6 to -153.7, i.e. no separation.",
+   "verdict": "non-test at this N, both orders: the matched control is below its own gate, so neither FAIL is a negative (rule 3). Scroll order's -0.985 sits above all 8 shuffled decodes but below real_p05 and its decode is not English; column order sits inside the shuffle band. The en judge is itself of unknown reliability (EN-FOLDS). A masc anneal on 67 letters cannot settle the substitution hypothesis either way; test 3 (per line, N=34) has even less power and would also be a non-test with this instrument.",
+   "files": "ciphers/fair-game-2010/test2/{order_scroll.txt,order_column.txt}, ciphers/fair-game-2010/HYPOTHESES.md, ciphers/fair-game-2010/families/"
   }
  ],
  "judge": {
