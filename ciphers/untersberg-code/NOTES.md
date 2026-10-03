@@ -302,8 +302,8 @@ No decode, no other host touched, no credentials, no AskUserQuestion, no solved/
 Waits on: LOCAL-QUEUE.tsv row L26 (the owner's desk runner reading Lang 2010's zobodat.at PDF, Anubis-blocked
 from the cloud by both curl and headless Chromium), filed 27 Sept 2026.
 
-- S: check Cappelli's Lexicon abbreviaturarum (archive.org) and Walther's Lexicon diplomaticum (Google Books) against symA's shape -- SO-UNTERSBERG-LEADS reference-dictionary items, unchecked, no wait needed.
-- S: fetch Schöppner's Sagenbuch der Bayerischen Lande vol. 1 (1852) for its shorter initials tradition 'S.O.R.C.E.J.S.A.T.O.M.' to compare against symA -- witness-print lead, unchecked.
+- S: check Cappelli's Lexicon abbreviaturarum (archive.org) and Walther's Lexicon diplomaticum (Google Books) against symA's shape -- SO-UNTERSBERG-LEADS reference-dictionary items. Done: Cappelli p.634 no match (bUNT8); Walther Tab. CCXX does not match (A2P4-UNT, 3 Oct 2026); Walther leaves 254 and 256-258 not viewed.
+- S: fetch Schöppner's Sagenbuch der Bayerischen Lande vol. 1 (1852) for its shorter initials tradition 'S.O.R.C.E.J.S.A.T.O.M.' to compare against symA -- witness-print lead. Done (A2P4-UNT, 3 Oct 2026): identical to Herzog Hs 3, no symA position reached.
 - M: build the same-scribe abbreviation concordance across all 28 IIIF leaves (already on disk) before any further Cappelli/Walther comparison -- methodology lead, unchecked.
 
 ## Web and blog check (GF4-BATCH21 (account-4), 3 Oct 2026)
@@ -364,3 +364,54 @@ Finding: an **interpretation, not a decipherment**. There are three mutually inc
 Print copies (search only, not read): OpenAlex `search=Kneissl Untersberg` returned 0 works. Google Books (`q=Kneissl Untersberg`, keyed, `country=US`) returned 43 hits. Three books by or including Kneissl may reprint these interpretations: Peter Kneissl, *Mein Untersberg* (2017-08-28); Peter Kneissl, *Was mir der Untersberg mitzuteilen hatte* (2018-03-07); and Betz, Wolf, Habeck, Kneissl et al., *Der Untersberg ruft* (2018-09-10). None was opened. Given the web text, a printed copy is a bibliographic lead for a verifier, not a step that could change the status.
 
 Requests: kollektiv.org 2 (301, then expired-certificate refusal; stopped); web.archive.org 3 (CDX 1, captures 2); api.openalex.org 1; www.googleapis.com 1. Spaced at least 3 s per host. No vision. NEAR.md is unchanged, because its named next step (symA / Cappelli, Lang via L26) does not depend on this fetch.
+
+## Schöppner 1852 and Walther 1756 against symA (A2P4-UNT (account-2), 3 Oct 2026, 17:36-17:4x UTC)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2p4-unt.md`. Intake gate: `python3 tools/intake_gate_check.py untersberg-code`
+-> "untersberg-code: open (line 3) -- edition/page or full-text-search citation found within 6 lines", exit 0.
+Match criterion for item 2 committed before any plate was viewed: `specs/cheap-tests/untersberg-code/PREREG-A2P4-UNT.md` (4ea7ca25).
+
+**Item 1, Schöppner, *Sagenbuch der Bayerischen Lande* vol. 1 (München 1852), no. 5 "Ein Wanderer in den Untersberg": located.**
+The Wikimedia Commons PDF answered HTTP 429 (not retried). Internet Archive has two Google scans of vol. 1:
+`bub_gb_ortBAAAAcAAJ` and `bub_gb_qD7aAAAAMAAJ`. A grep of both `_djvu.txt` files found the line in each. In the
+first it reads "ab: S. O. R. C. E. J. S. A. T. O. M. Ueber dem Aufschauen". In the second the OCR reads
+"S. O. R. CE. E. J. ...", where "CE." is an OCR fault. `_djvu.xml` puts the line on leaf 25 of `bub_gb_ortBAAAAcAAJ`.
+Rule 2 (print image over OCR) was applied with a crop:
+`python3 tools/iiif_lines.py --image leaf25.jpg --out crops --region 300,1250,1600,110 --prefix sch_init`
+(leaf image from `archive.org/download/bub_gb_ortBAAAAcAAJ/page/n25_w2500.jpg`). The Fraktur on the crop reads
+**S. O. R. C. E. J. S. A. T. O. M.** (11 initials, each followed by a full stop). The printed page number was not
+read: the header crop caught only the frame rule, and the OCR has no page numbers. The second-opinion lead cites pp. 5-8. Story
+no. 5 begins on leaf 24, so the line stands one leaf into the story. The text names Lazarus Aigner (or Gitschner), servant of the
+Reichenhall town clerk, in 1529, and the inscription "mit uralten Buchstaben in die Wand gehauen". Its sources are Bechstein's
+*Volkssagen ... Oesterreichs* I, 75 f. and Maßmann.
+Comparison with `specs/cheap-tests/untersberg-code/witnesses.tsv` (descriptive, a print witness, not the manuscript):
+Schöppner's line is **identical letter for letter to Herzog 1929's Hs 3** (S.O.R.C.E.J.S.A.T.O.M). It differs from
+Hs 3a (S.O.R.C.E.T.S.A.T.O.N) at positions 6 (J/T) and 11 (M/N), and from Hs 11 (S.U.R.C.E.T.S.A.T.U.S) at 2, 6, 10 and 11. So
+Schöppner prints the Hs 3 tradition and adds no witness reading beyond it. It has no sign at any symA position: it is a run
+of capital initials, and every symA instance sits inside Hs 1's longer six-line text. This gives no shape or value
+for symA (bUNT9 already showed that the initials witnesses reach symA only by a granularity artefact).
+
+**Item 2, Walther, *Lexicon diplomaticum* (Ulm 1756), general-sign plates: does not match (on the one plate viewed).**
+Full-view copy: Internet Archive `gri_33125011161557` (Getty, 362 images). The preface says the alphabetical series is
+followed by the "signa ... e. g. particulas con, com, contra, esse, est, et, etcetera, etiam". `_djvu.xml` places
+those plates on leaves 254-258. Leaf 255 is **Tab. CCXX**, columns 442-444, signs for con, conceditur, conceptus,
+continens, contra, cum, de, enim, esse, est and et, with 81 entries viewed. Crop command (a plate is not a text line, so
+`tools/iiif_lines.py` found one line only; four explicit bands were cut instead):
+`python3 -c "from PIL import Image; im=Image.open('w255.jpg'); [im.crop((0,y,1887,min(3000,y+800))).save('w255_band%d.jpg'%(i+1)) for i,y in enumerate((0,740,1480,2220))]"`
+(leaf image `archive.org/download/gri_33125011161557/page/n255_w1887.jpg`). Pre-registered criterion: F1 hook top-left, F2 vertical
+stem with top serif, F3 loop at the join, F4 long descender with no crossbar. The nearest signs are the "9"-shaped *con*
+forms (col. 442, e.g. 1408 and 1447). They have a top loop (F3, arguably F1) and a tail below the baseline without a crossbar (F4), but no
+vertical stem with a top serif (F2). That is 2-3 of 4: partial at best, **not a match**. The *est* signs (small 3/z
+shapes), the *esse* bars, the *enim* cross, the *cum* "9" and the *et* ligatures (compound forms with crossing strokes) all
+reach fewer features. The comparison was made by eye against bUNT8's written description of symA, not side by side with the symA crop.
+Leaves 254 and 256-258 (Tab. CCXXI and after: et cetera, punctum, interrogation and division signs) were **not viewed**.
+The vision budget was spent (2 of 2), so the negative covers Tab. CCXX only. This agrees with bUNT8's Cappelli check (p. 634, no match):
+symA is not, so far, a catalogued general Latin sign.
+
+Counts (rule 4): H 0, C 0, S 0. No token is graded from either source. Neither is a key for this hand (Hs 2398, c.1690-1710).
+Rule 3: neither item is a statistic, so there is no control figure. Item 2 is a pre-registered by-eye shape match with a stated criterion.
+Requests: upload.wikimedia.org 1 (429); archive.org 9 (advancedsearch 2, djvu.txt 3, djvu.xml 2, page jpg 2, page_numbers 1), spaced at least 2 s apart.
+Vision: 2 calls (Schöppner line plus a blank header crop; Walther Tab. CCXX in 4 bands).
+
+Next step for symA (one line, not run): view Walther leaves 254 and 256-258 (Tab. CCXIX tail, CCXXI ff.), 1 vision call
+per leaf in bands, about USD 0.5. Better still, build the same-scribe concordance across the 28 leaves first (WAIT-PASS-B item 3).
