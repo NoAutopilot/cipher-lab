@@ -1,0 +1,14 @@
+WINDOW 2: 12 cribs, 6 restarts x 30000 iters each
+  eletroidi	-3.609	ditouienomnsuraieanienoisiopretentasoirasontedaperne
+  cardinale	-4.559	lodniorenemaiilorueeceneaonsicdreauanaiuanedcluscier
+  francesco	-4.822	canerailemmurceaiolofheouaetcfnildouescouelnfcotfcla
+  guglielmo	-4.705	maletairecontioaierogseonaepiglirpenelienerlgmepgirg
+  monsignor	-4.731	oasgearigpheeiuarlirmagreaghimsriulegnilegismolhmiin
+  suamaesta	-4.240	timeniolechrnaaioelasuearietasmolperesaerelmstetsala
+  ilducadis	-4.129	ieuaneoramftnceeoarsilasteasciuormatadcataruiiasicrd
+  monferrat	-4.764	aifrainoraheaelinsotmarteirtemfnouserreserofmastmeon
+  lacorteet	-4.141	eaotiauetepiirsaunetlettiaterlouegniterniteolenelrec
+  cheilrede	-4.493	daireanorgoueleanioecareuaralcinofiureliuroicdiacloe
+  nostrofra	-4.097	ritocieuomiscreieauanloasiogrnteuhasofrasoutnragnrus
+  ostrofrat	-4.712	airflienfidalopieuntohftaiftooreneuafrouafnroautoont
+WINDOW 2: crib eletroidi -3.609 margin +0.488 over nostrofra

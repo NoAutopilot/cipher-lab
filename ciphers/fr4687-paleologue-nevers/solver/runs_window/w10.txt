@@ -1,0 +1,14 @@
+WINDOW 10: 12 cribs, 6 restarts x 30000 iters each
+  fiudatoli	-3.563	ditocienomiscraieaneeloesiopretenhasoirasontedaperno
+  cardinale	-3.787	denaseiralfustieiiraocaaueaptonirmiuaatiuarnodipotra
+  francesco	-4.171	noesuotasealuicoteariasrlospiietadelsrielsaeinepiiar
+  guglielmo	-4.312	loelnoerlpiuntioeariialiuolatieerbaulutaulreilaaitra
+  monsignor	-4.496	srgnuraonhaeuairatociincerneaigaoetenoatenogisteiaop
+  suamaesta	-4.095	maeslaeusnonlraaeiuoorsonastroeeudinsurinsueomitorui
+  ilducadis	-4.348	usadasiidperancsioilemdlrsdoneaiinordlnordiaeuooenit
+  monferrat	-4.537	ftrretaurcheeletaouaicraetrelirauioeroloerurifoeilus
+  lacorteet	-4.240	ottestalemhnsortaaluideuntemoitalianeaoaneltioamiole
+  cheilrede	-4.019	iereueasecotuileaosoaneoteegiarassotehiotesraiogaisn
+  nostrofra	-4.545	taofmainfchumlraieneitfeuafglioinseufoleufnoitegilns
+  ostrofrat	-4.552	rtfrntolrbginiotoaluepruitrmiefolsairsiairlferameile
+WINDOW 10: crib fiudatoli -3.563 margin +0.225 over cardinale

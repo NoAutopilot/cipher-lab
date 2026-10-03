@@ -1,0 +1,14 @@
+WINDOW 14: 12 cribs, 6 restarts x 30000 iters each
+  etdalougl	-3.602	ditocienomiscraieanienoisiopretenhasourasontedaperno
+  cardinale	-4.296	rianuiconogiutmicdoeeoneiinateacordinstdinoaerdaetol
+  francesco	-4.703	airedifleohodatifnlueseuoietaerflunoeganoelreanteala
+  guglielmo	-4.978	gouetogiehsrtniogliaadearoeinaugirlreenlreiuaglianie
+  monsignor	-4.665	naogeamegioueieamsectogcuaglitomersugiisugeotnsltiel
+  suamaesta	-4.340	aoueaoseechiairosmelndelioetinusehmiepimieeunamtniec
+  ilducadis	-4.046	dolatoinasortaioiuniemairoataelinhurauauranleduteane
+  monferrat	-4.891	naortamiraaltecamfisiarslardeiomihflreeflrioinfdieip
+  lacorteet	-4.143	ciateilatheueeoiloarndtruitrenalapoutseoutaancorneam
+  cheilrede	-4.509	eahrtacorofetinaciosuarseardiuhcoeiersiierohueiduiom
+  nostrofra	-4.207	siooeinuoicielaintuaemoaiioaleonuntioaltiouoestaeluc
+  ostrofrat	-4.738	tesfleonfdoaluieornaiefaaefpuisontrafcurafnsitrpiuni
+WINDOW 14: crib etdalougl -3.602 margin +0.444 over ilducadis

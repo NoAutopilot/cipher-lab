@@ -1,0 +1,14 @@
+WINDOW 11: 12 cribs, 6 restarts x 30000 iters each
+  tadaceuoe	-3.559	ditocienomiscraieanieloisiopretengasoirasontedaperno
+  cardinale	-4.464	ricliinulohaioainduteeltailmoecnuedalfodalucerdmeous
+  francesco	-4.811	aafccaetcheicuraentiosciiacpuofetgniclunictfoanpoutr
+  guglielmo	-5.061	gagmiaetmieiiruaeltaoimaiamprogetilimerlimtgoglporte
+  monsignor	-4.880	nemoiegaottiiuoegsaarloaieopurmgafsioiusioamrnspruad
+  suamaesta	-4.498	aistaieethooaruiemeiaetioituraseetmotormotesaamuaren
+  ilducadis	-4.287	deiiceaoimftcrleauoasoiateinrsiaonutiarutioisdunsron
+  monferrat	-5.130	nomaeoreaadueioorfectlacuoaditmreifuaaifuaemtnfdties
+  lacorteet	-4.497	cileritaergeraaitoautneueienatltahoeeraoeealtcontaau
+  cheilrede	-4.623	eocdlorudpailahoriumeadmiodiaecruiiidfaiiduceeiieaun
+  nostrofra	-4.369	sinrriourhpereoiotuiaarieirmeanoueterceterunastmaeud
+  ostrofrat	-4.888	teoaoefiamgiousefrietlaeiealutofinriaauriaiottrltuin
+WINDOW 11: crib tadaceuoe -3.559 margin +0.728 over ilducadis

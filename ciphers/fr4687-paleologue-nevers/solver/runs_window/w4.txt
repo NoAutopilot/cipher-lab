@@ -1,0 +1,14 @@
+WINDOW 4: 12 cribs, 6 restarts x 30000 iters each
+  edipirfch	-3.564	ditocienomiscraieanieloisiopretentasoirasontedaperno
+  cardinale	-4.309	aitalioeagdelnsiorercfareiadnctoeereamnreaetcardcneu
+  francesco	-5.133	rctoccalodunceacailafnoanconeftaloinoreinoltfrinfeli
+  guglielmo	-4.842	uiromiatofuimesiaetggnogiiolegratheiodeeiotrguelgetl
+  monsignor	-4.580	oiaroilerefeogtiluenmarneirsgmaleduerhguereamousmges
+  suamaesta	-3.938	uaortalerfaitepalneasoraiarmesolennircenireosunmseed
+  ilducadis	-3.952	lcneicorelfuiaecoarditeduceuainorhauemaauernilauiaro
+  monferrat	-4.336	oeauaetouhplarietionmounleufrmatodiluiriluoamoifmroc
+  lacorteet	-4.114	aresernasehoeturniaclescorsotlenagiositiosaelaioltam
+  cheilrede	-4.561	hlnodlesortidreleasecioeiloircnesgaiooraiosnchaicrsm
+  nostrofra	-4.274	orlerreieghiromreaisnsesiretonleipaieuoaieilnoatnoic
+  ostrofrat	-4.601	sonaaoirachuafeoiertodatuoarfonirgeuaefeuarnoserofrp
+WINDOW 4: crib edipirfch -3.564 margin +0.375 over suamaesta

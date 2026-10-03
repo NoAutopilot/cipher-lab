@@ -1,0 +1,14 @@
+WINDOW 3: 12 cribs, 6 restarts x 30000 iters each
+  idiciesal	-3.614	ditociesomuncraieesialoiniofratestenoirenostadefarso
+  cardinale	-4.065	aieudinauoledolintarroureiucorenapteucoteuaeratcroam
+  francesco	-4.133	rctoncesodilnucceasaimoalconuiteshalofualostiraniuse
+  guglielmo	-3.986	uitolieloccslrmieelgapogsiofratelhesogresoltauefarla
+  monsignor	-4.569	oiuosignordlsioiganneconliodieugncalomialonueoadeine
+  suamaesta	-3.906	uatemaesenhlmrtaeisaodealaefrotestilesrilestouiforse
+  ilducadis	-4.237	lcreucadelgaueicaiddotedaceteoradeiaeieiaedrolitoedi
+  monferrat	-4.537	oeoaferrachifiaernrnulanieadiuorreniaminiarouonduirp
+  lacorteet	-4.317	aronortenedioaertiecuoncirneauotediinlaiineouaieuaes
+  cheilrede	-4.327	hlunilrenomaiadlroeeisnealntaiuremoancaoaneuihotiaet
+  nostrofra	-4.502	ornatrofacheterroifsilaseraleinofoieaneieafnioiliefu
+  ostrofrat	-4.631	souarofralhnriaofirtelatnoamieufrdinaoiinaruesimeira
+WINDOW 3: crib idiciesal -3.614 margin +0.292 over suamaesta

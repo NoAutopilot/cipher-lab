@@ -1,0 +1,14 @@
+WINDOW 5: 12 cribs, 6 restarts x 30000 iters each
+  anlioetci	-3.621	ritociesomincuaieaseoloeniopuotestanoauanostorapouse
+  cardinale	-4.186	eiailineiodalosincertuiraiimotanelcaipocaieatecmtoed
+  francesco	-5.130	uisccietconrcolieftdaacdricioasetefrcpofrctsaufiaote
+  guglielmo	-4.525	ialimaerinlumtcaegreosieuaintoleraguistguirloignotre
+  monsignor	-4.842	urniorgaiasooetrgmadilidoriceingaamoisemoianiumcieap
+  suamaesta	-4.117	eisatieladmutriieslaomaauiaproselasuagrsualsoesporla
+  ilducadis	-4.364	uodcioatcsulirioaitaencalocpredatailcorilctdeuiperta
+  monferrat	-4.604	aireaireeifoasdirmeauteaoiensurreimoensmoeeruamnusep
+  lacorteet	-3.990	oiereitoruoaeeuitlosnirsairmenetoslarpelaroenolmneoc
+  cheilrede	-4.599	noeldoralaihdeuorcasialsholteieraschlmechlaeinctieat
+  nostrofra	-4.625	iifrrioerptorutionesaersoireuafoegnortunorefaineaued
+  ostrofrat	-4.707	diroaifloprsaueifolaenoasioguerflnosoauosolredogeula
+WINDOW 5: crib anlioetci -3.621 margin +0.369 over lacorteet

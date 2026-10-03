@@ -798,3 +798,53 @@ windows (repeats first, then single windows), set each window's crib to what the
 the same crib test (same 11 wrong cribs, 6 x 30k) and report where `suofratel`'s +0.657 falls among those
 solver-optimum margins; only if it stands above their p95 is a nomenclator-aware or Mantuan-model pass worth running.
 Requests this step: none (compute only). Subagents/vision calls: 0.
+
+## Solver-optimum crib null on 15 other windows (A2-PAL3, account 2, LANE-A2PUSH, 3 Oct 2026)
+
+Intake gate before work (02:39 UTC): `tools/intake_gate_check.py fr4687-paleologue-nevers` -> `fr4687-paleologue-nevers:
+blocked (line 1) -- already terminal, nothing to gate`, exit 0. Status word unchanged (`blocked`, Ferrari 1999, LOCAL-QUEUE
+L33). Brief: `.claude/briefs/runs/2026-10-03-acct2-a2-pal3.md` (the next step A2-PAL2 named, compute only). As A2-PAL2
+noted, this NOTES.md has no "## Remaining gaps" / "## Escalation" sections (the target is `blocked`; `tools/gaps_check.py`
+-> `SKIP fr4687-paleologue-nevers: status blocked; sections not required`), so the next step is written at the end here.
+
+**Design (pre-registered in `solver/cribs_window.py`'s docstring, pushed as 92715ec0 before any window ran).** One
+unconstrained solve of the real target (6 restarts x 30k, seed 11, it16_all): -3.649/unit over 642 units; it reads the
+anchor as `niopretes` at this setting. Eligible windows: 9 consecutive units in one passage, 9 distinct unit types, not
+overlapping either anchor occurrence -- 89 such windows, **none on a repeat** (the anchor is the target's only repeated
+9-unit window), so 15 single windows were taken at evenly spaced positions (`solver/runs_window/windows.tsv`). Each
+window's crib = the unconstrained solve's letters there; then the identical test of A2-PAL2's matched setting (that crib
++ the same 11 wrong cribs, 6 x 30k, seed 11, constrained score per unit); statistic = crib score minus best wrong crib.
+Pre-registered condition: `suofratel`'s +0.657 (A2-PAL2, same setting) survives only if it stands above the p95 of the 15
+window margins. Extra row A: the same test with the anchor's own solver-optimum crib `niopretes`. The window margins
+depend on each window's own context, so they can differ from the anchor's (rule 3). Runs 02:41-02:58 UTC,
+`solver/runs_window/w*.txt` (`run.sh` regenerates them).
+
+**Result.**
+
+| run | crib | score/unit | margin over best wrong | best wrong |
+|---|---|---|---|---|
+| anchor (A2-PAL2) | `suofratel` | -3.416 | **+0.657** | cardinale |
+| anchor, solver optimum (A) | `niopretes` | -3.574 | +0.499 | cardinale |
+| 15 other windows | solver optimum each | -3.626 to -3.558 | +0.225 to +0.848; mean +0.444, sd 0.169, **p95 +0.764** | cardinale 5, ilducadis 4, lacorteet 3, suamaesta 2, nostrofra 1, monsignor 1 |
+
+Window margins in order 0-14: +0.506 +0.414 +0.488 +0.292 +0.375 +0.369 +0.335 +0.848 +0.349 +0.348 +0.225 +0.728 +0.606
++0.328 +0.444. `suofratel`'s +0.657 ranks 3rd of 16 (windows 7 `eintrolae` +0.848 and 11 `tadaceuoe` +0.728 are higher)
+and sits below the window p95 (+0.764). 13 of the 15 solver-optimum cribs, none of which reads as Italian, also clear
+A2-PAL's 0.30 gate. **The pre-registered condition fails:** on this target the crib test cannot tell `suofratel` from
+whatever the solver happens to read at a window, so the margin gives the candidate no support. What does differ: at the
+anchor, `suofratel` scores better (-3.416) than the solver's own reading there (-3.574) and than every window crib
+(best -3.558), i.e. it is a better optimum the 30k unconstrained search did not find -- a score difference of about
+0.14/unit, inside what a language-model optimum on a non-reading text can give, and not tested against a control here.
+
+**What it does not show.** It is not a negative on the target's design or language: it says only that this crib test,
+at this length and noise, has no discriminating power for a 9-letter crib on fr.4687 (rule 3, a test that could not
+fail differently). Grade counts for this step: H 0, C 0, S 0, M 18 (the 9 anchor units at both occurrences, `s u o f r a t
+e l`, kept as a candidate only), I 0; no token graded S. Rule 3's third-attempt clause: three crib-test passes (A2-PAL,
+A2-PAL2, A2-PAL3) on the same hypothesis with the same instrument; the last one shows the instrument cannot license it,
+so the `suofratel` crib test is [retired] as an instrument ("untested-by-this-tool", not refuted); only a different
+instrument or new material reopens it.
+
+Next step (not crib-test tuning): none cheap in compute on the present transcription. The status word stays `blocked`
+on Ferrari 1999 (LOCAL-QUEUE L33); a different instrument for `suofratel` would be a nomenclator-aware solve (the
+1x/2x + y inventory read as code groups, not letters) with its own matched control first, ~USD 3, only if a lane brief
+names it. Requests this step: none (compute only, no network). Subagents/vision calls: 0.

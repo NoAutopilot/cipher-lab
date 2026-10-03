@@ -1,0 +1,14 @@
+WINDOW 9: 12 cribs, 6 restarts x 30000 iters each
+  encidaler	-3.620	ditociesoumncraieasoelooniopretestanouranostedaperso
+  cardinale	-4.283	iiosrilesigareuilnetcostaistecoleunastenaseocintceem
+  francesco	-5.012	ciauaiceusgraoliceetfiutriumofacederuioerueafcemfoet
+  guglielmo	-5.195	iaingamonthugoeameorganruantogimoseunioeunoigietgood
+  monsignor	-5.006	iilenioaehhonruiogaamueaoiearmloaugoecrgoealmigamrat
+  suamaesta	-4.206	aionaitennouaaliteecsoncuincasotereuniaeuneosaecsaed
+  ilducadis	-3.968	cenodeitorildseeiatairoaleorsinitoaloosalotnicarista
+  monferrat	-4.520	eileniaueacontiiaruomseooiehtmlaueroestroeulmerhmtud
+  lacorteet	-4.533	riencieonofactdietoalgnaainptleeohtansttanoelrtpltom
+  cheilrede	-4.718	lioneidanaeheetidraucenuhinsecodaurhnperhnaoclrsceag
+  nostrofra	-4.427	rielsiralgiosaeiroauneluoilmaneramooltaoolaenromnaad
+  ostrofrat	-4.765	oiuetialemcsttniafleodeesiectoualafseptfseluoofcotla
+WINDOW 9: crib encidaler -3.620 margin +0.348 over ilducadis

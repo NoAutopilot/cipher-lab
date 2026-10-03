@@ -1,0 +1,14 @@
+WINDOW 0: 12 cribs, 6 restarts x 30000 iters each
+  iesomincr	-3.592	ditociesomincreieisaaloaniofratestinoarinostadifarse
+  cardinale	-4.319	tcndlcardinaleicaireondeacdueonargiadueiadrnotiuoere
+  francesco	-5.040	tfincfrancescoifreauainusfndoairabesnooesnaiatedaoap
+  guglielmo	-5.545	tgilmguglielmorguegiarlilglsoaiugdelleoellgiatesaogi
+  monsignor	-4.475	dmesomonsignorimoincaescnmstraeontinstrinsneaditarne
+  suamaesta	-4.577	rsemtsuamaestaisuoaciomcssmdaieuaposmlaosmaeirodiaal
+  ilducadis	-4.426	tiauiilducadisailedeoruediussoaldbeduesedudaotesosda
+  monferrat	-4.901	smifamonferratemoanienfirmfiteionharfitarfniesaietnu
+  lacorteet	-4.098	dlroelacorteetalaicienoielosteraciieostieocredisetca
+  cheilrede	-4.713	ncridcheilredetchoeiauiiecisearhesoeineoeieranosaeet
+  nostrofra	-4.502	dnltrnostrofraunoesiietifntrailosuefthaeftslideriasa
+  ostrofrat	-4.301	doaraostrofrateosetuieruroritiastherriterrtaideiitta
+WINDOW 0: crib iesomincr -3.592 margin +0.506 over lacorteet

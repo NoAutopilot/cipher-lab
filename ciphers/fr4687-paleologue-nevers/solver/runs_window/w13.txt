@@ -1,0 +1,14 @@
+WINDOW 13: 12 cribs, 6 restarts x 30000 iters each
+  selognali	-3.612	citodiesonindruieasaefoaniopretestanooranostecaperso
+  cardinale	-4.308	teidueocdbenuseeoacoardonedisaiochandisandciataiasci
+  francesco	-4.464	eoaniolfnpoeiitolsfurtnueondiralfbsenmisenfaresdrife
+  guglielmo	-5.075	aoalsoiglhpesndoilgeualeeolcnuaigcleltnlelgaualcungr
+  monsignor	-4.794	irusaremstogaiarenmeocsegrspiouemangsdingsmuoinpoima
+  suamaesta	-4.592	oaimtaesmchetnlaessiugmieamonuiesosemonsemsiuosounsr
+  ilducadis	-4.631	asiuesoiupraeensoditlautasuaelioindauhedauiiladaleim
+  monferrat	-5.072	etifltamfssrleutarmuoifurtfdeoiamerrfcerrfmioerdoeme
+  lacorteet	-3.940	dtroutologhtuietoelianoittosiarolaetomietolradesaila
+  cheilrede	-4.730	ueaiienciporitoenecohsioreilthancleriatericahuelhtca
+  nostrofra	-4.915	ialtraintueoremaifncoetcoatheolinafotdefotnloifhoenu
+  ostrofrat	-4.956	ataretiorgdfeentirolserlftriesaioarfrperfroasariseoc
+WINDOW 13: crib selognali -3.612 margin +0.328 over lacorteet

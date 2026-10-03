@@ -1,0 +1,14 @@
+WINDOW 6: 12 cribs, 6 restarts x 30000 iters each
+  liresaeie	-3.613	citodiesoumndruieasienoiniopretestanoaranostecaperse
+  cardinale	-3.948	ioteuoeiestiurloeniaameaioefrateigniesrnieitainfarid
+  francesco	-4.375	iitaliocaghelauioecrsrareiapastocheeadaeeactsiepsacn
+  guglielmo	-4.789	tainiaoinperigeaoeiulonuranaglioidernegerniiltealgil
+  monsignor	-4.839	eaoeuarieheiuncargiondeoiaeannorilgietngieionegannis
+  suamaesta	-4.349	iinrtiaarcootauiaeauseruoirgasnaadeorcaeoransiegsaam
+  ilducadis	-4.924	ueortescrohitdlesacldarlieraddoscpairmdaircoduaaddcu
+  monferrat	-4.564	aoaiuoteicheunsotreoraioeoipnratelreiinreieararprnef
+  lacorteet	-4.485	soainotriapincaottraeriaioiaceatrutiinctiiraestaecro
+  cheilrede	-4.239	utsontelomfaneiterlhenohatoneeselaraomeraolseurneeli
+  nostrofra	-4.758	ueiitearicultseeaorofhioleinsfiardolipsolirifuonfsrt
+  ostrofrat	-4.751	eeanietonegiitletfosrunsienotratohfinctfinoarefortor
+WINDOW 6: crib liresaeie -3.613 margin +0.335 over cardinale

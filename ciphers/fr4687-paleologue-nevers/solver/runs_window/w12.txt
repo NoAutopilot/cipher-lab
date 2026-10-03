@@ -1,0 +1,14 @@
+WINDOW 12: 12 cribs, 6 restarts x 30000 iters each
+  idatoueil	-3.558	ditocienomiscreieanialoisiofratengasoerasontadafarno
+  cardinale	-4.164	acdiucatilleuiscartaopiaecigiodatoreimireitdoargoite
+  francesco	-5.017	rfncafsicpdeaitfsailouclefchionsitaecuiaecinorahoiil
+  guglielmo	-5.625	uglirgliichoresglginatinoginealliegoicegoiilaugnaein
+  monsignor	-4.602	omsiumnoicheuitmnnolacilemidiasnoaneilineiosaondaiop
+  suamaesta	-4.606	usmaossrapheooessarnitanesanoimsrlaealoaearmiuaniori
+  ilducadis	-4.923	liucnidecoronemiddetaictoicheaudendocredoceualdhaeer
+  monferrat	-4.834	omfesmrueehosalmrnuiipeiomesaifrugnoelanoeufionsiaui
+  lacorteet	-4.379	alorolearafionslecauieruilranioeasciranciraoiacainam
+  cheilrede	-4.517	hcilaceilpnraunceeiaoglarclsuoieinerlauerliiohesouis
+  nostrofra	-4.710	ontrinferahaiilnfsemuermanriiutfepsardisaretuosiuiec
+  ostrofrat	-4.566	soroloruoigelacortueieoeeoomairruiteobateouristmiaun
+WINDOW 12: crib idatoueil -3.558 margin +0.606 over cardinale

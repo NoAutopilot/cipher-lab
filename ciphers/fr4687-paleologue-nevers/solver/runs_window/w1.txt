@@ -1,0 +1,14 @@
+WINDOW 1: 12 cribs, 6 restarts x 30000 iters each
+  ncraieasi	-3.626	uitociesommncraieasieloiniopretestanoaranosteuaperso
+  cardinale	-4.040	tiioainlommcardinaleetoeciopreinltacoaracolietaperlo
+  francesco	-4.986	uciercecetnfrancescooteofcedaoiecnsferasfeciousdoaca
+  guglielmo	-5.065	iireuiemetoguglielmoateogiesgaremolgeoglgemrailsagmo
+  monsignor	-4.795	uiiaoigoaalmonsignoredarmiasneigoonmaennmaoieunsenor
+  suamaesta	-4.313	eaiouaetounsuamaestailoasaodaiiethssoeassotiiesdiatr
+  ilducadis	-4.849	ncrolcaioigilducadisesosicoaderaiodionddioirendaediu
+  monferrat	-4.623	aeiuoerauelmonferratiautmeueniiraprmuonrmuaiiareinas
+  lacorteet	-4.279	nrauarteunglacorteetiautlruiciatepeluicelueaineiicei
+  cheilrede	-4.478	nlaohlrdopocheilredeiuoecloseiarduecomeecodainesiedi
+  nostrofra	-5.070	lraeororeccnostrofraiteanrepsiaordfneusfnerailfpisre
+  ostrofrat	-4.842	eonesofaeuhostrofratiaetooectinfaproemtroeaniercital
+WINDOW 1: crib ncraieasi -3.626 margin +0.414 over cardinale

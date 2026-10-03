@@ -1,0 +1,19 @@
+unconstrained -3.649/unit over 642 units; anchor reads 'niopretes'; 89 eligible windows, 0 on repeats
+k	passage	pos	units	crib	kind
+A	-	-	17 9 6 10 20 4 y 3 18	niopretes	anchor-solver-optimum
+0	0	5	9 3 18 6 27 28 17 22 20	iesomincr	single
+1	0	11	17 22 20 15 9 3 5 18 19	ncraieasi	single
+2	1	6	4 7 14 y 20 6 26 8 19	eletroidi	single
+3	1	12	26 8 19 22 9 3 18 15 7	idiciesal	single
+4	2	40	4 8 19 10 9 20 13 22 12	edipirfch	single
+5	2	58	5 17 16 28 6 3 y 22 0	anlioetci	single
+6	2	138	7 19 20 14 18 5 4 0 3	liresaeie	single
+7	2	154	3 0 17 y 20 6 7 5 4	eintrolae	single
+8	2	193	22 3 2 y 6 15 18 4 17	cettoasen	single
+9	2	200	4 17 22 0 8 5 7 3 20	encidaler	single
+10	2	247	13 26 24 8 15 y 6 7 9	fiudatoli	single
+11	4	33	y 15 8 5 22 3 24 6 4	tadaceuoe	single
+12	6	42	9 8 5 y 6 29 3 0 7	idatoueil	single
+13	6	97	18 4 7 6 25 17 5 16 9	selognali	single
+14	6	158	3 y 8 5 7 6 29 25 16	etdalougl	single
+

@@ -1,0 +1,14 @@
+WINDOW 7: 12 cribs, 6 restarts x 30000 iters each
+  eintrolae	-3.582	citodiesommndraieasoelooniopretestanofranostecaperso
+  cardinale	-4.476	aidnuiconogruiticloseonsrinmiedcoalrnailrnodealmeiop
+  francesco	-5.118	eineuifreidauctifcrioleiaietconfricaemccaernoectocre
+  guglielmo	-5.365	ualenagieihgnisagmieodeegaeciolgiimgeeimgeiloumcoiin
+  monsignor	-4.858	casgeameghineiiamoetragtnaglirsmepongaiongesrcolrieu
+  suamaesta	-4.476	eimeuisoeobaualistocarecaiehaamsontaedataeomaethaaon
+  ilducadis	-4.430	teuareinafldrcaeiinesmaedeabcsuinhidaocidanustibscno
+  monferrat	-4.862	uofriomerianiesomaeltarlnorletfmehanrceanreftualteei
+  lacorteet	-4.479	siotailetancaruileeptatpcitortolefectmrecteotseotrei
+  cheilrede	-4.538	ntirotcarifeolutcdameormetroleicanderslderaiendoelas
+  nostrofra	-4.471	eitouineohcsurlinreealoesiocratneersourrsoetaercarem
+  ostrofrat	-4.897	uerfieoifgatioeeoaintafntefcotroidatfioatfirtuactoip
+WINDOW 7: crib eintrolae -3.582 margin +0.848 over ilducadis

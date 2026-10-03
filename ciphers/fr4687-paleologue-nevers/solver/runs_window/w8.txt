@@ -1,0 +1,14 @@
+WINDOW 8: 12 cribs, 6 restarts x 30000 iters each
+  cettoasen	-3.612	ditociesomincraieaseeloeniopretestanoaranostedaperso
+  cardinale	-4.216	oidiciaaigheceniaraultiueiioeldaaureisereiadlorolean
+  francesco	-4.937	lencferscapofieerasicacioechicnrsoaocuiaocsnclahcist
+  guglielmo	-4.781	naligauliprogieauelrmairoaisimlulfeoisieoillmnesmilc
+  monsignor	-3.961	uasimaonicarmigaoeneolieraihiosonceriaierinsouehoine
+  suamaesta	-4.275	limasiusadhasoeiuesotcaoaianotmuspeaaroeaasmtlentosi
+  ilducadis	-4.426	teucieldcensioaeladmiocmsecpoiuldbascioascduitapioda
+  monferrat	-4.310	difemiorechtmnrioerialeitiegnaforseteoneterfadeganra
+  lacorteet	-4.227	uiorliaerpotlntiaseieiritirpneoaebstronstreoeuspened
+  cheilrede	-4.572	oailcaheleuecorahnesdelsealpodiheaneltoneleidonpdoem
+  nostrofra	-4.784	letrneofrmianioeoafircriaerdirtofhaargiaarftrladrifs
+  ostrofrat	-4.284	lnroonsrouhtoifnsercamoctnodiarsrgetoaietorraledaire
+WINDOW 8: crib cettoasen -3.612 margin +0.349 over monsignor

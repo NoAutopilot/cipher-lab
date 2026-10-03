@@ -66,7 +66,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('model')
     ap.add_argument('--list', action='store_true')
-    ap.add_argument('--window', type=int)
+    ap.add_argument('--window')
     ap.add_argument('--iters', type=int, default=30000)
     ap.add_argument('--restarts', type=int, default=6)
     ap.add_argument('--procs', type=int, default=4)
@@ -89,7 +89,7 @@ def main():
         print(open(TSV).read(), flush=True)
         return
     rows = [l.rstrip('\n').split('\t') for l in open(TSV)][1:]
-    r = [x for x in rows if x[0] == str(a.window)][0]
+    r = [x for x in rows if x[0] == a.window][0]
     units, crib = r[3].split(), r[4]
     res = run(prob, lm, 11, units, [crib] + [w for w in WRONG if w != crib], a, f'WINDOW {a.window}')
     others = {w: s for w, s in res.items() if w != crib}
