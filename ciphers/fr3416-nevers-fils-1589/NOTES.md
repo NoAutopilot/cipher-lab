@@ -626,3 +626,22 @@ x01-x68 in the order of random.Random(20261004).shuffle over [w01..w62, c01..c06
 Gate, fixed now: a control word counts as right when the blind read of it equals the reconciled reading exactly under
 rule 1's normalisation. **If fewer than 5 of 6 control words are right, the run is a non-test like the last one: no M/U
 grade moves, whatever the target reads say**, and the reads are only listed. At 5/6 or 6/6, rules 1-4 are applied.
+
+## A1B-FILS-L05 pre-registration (account 1, 3 Oct 2026, written 18:38 UTC before any classification)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-l05.md`. Instrument: `tools/glyph_atlas.py` (segment at `--rel 0.7`
+on the f43 source region, then `classify --topk 3 --knn 5`, HOG features as the tool). Rules fixed before any score:
+1. Atlas: only glyphs inside tokens graded H in `f35r_ciphertext.tsv`, outside L05, are labelled (override per box id,
+   one digit per box; a box holding two digits or a digit fused with clear script is left unlabelled '_'). All L05
+   boxes are `--holdout f43_05` (never vote).
+2. Leave-one-out gate: every labelled H box is classified by the same command with itself excluded (the tool's own
+   self-exclusion); the share whose kNN code equals its own label must be >= 0.90 over all labelled digit boxes,
+   and every digit class the 7 L05 questions name (0, 1, 5, 6, 7, 8, 9) must have >= 3 exemplars. Below either, the
+   run is a non-test and no grade moves.
+3. Settling statistic, per L05 glyph in question (pos 4, 5, 7, 13, 15, 16, 17, 20): the glyph settles to digit D only if
+   (a) the kNN code (k1) is a digit D, (b) its vote share s1 >= 0.60, and (c) margin: the nearest distance of the
+   reader's named alternative class (8 vs 0/1; 1 vs 9 stroke; 7 mark; 6 vs 8; 5 vs 6) divided by d(D) >= 1.10
+   (alternative absent from the 40-box pool counts as met). A glyph fused into one box with a neighbour (no single-digit
+   box) is not classified: unsettled.
+4. A token moves M -> H only if every glyph in question in it settles to the committed digit. A glyph that settles to a
+   different digit is reported and the token stays M (no digit is changed by this run). Key coverage never chooses.
