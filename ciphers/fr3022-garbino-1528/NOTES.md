@@ -1,4 +1,5 @@
 open
+CSP Spain vol. III pt 2 (1527-1529, Gayangos 1877, archive.org calendarorleters0003vari) full-text grepped by this worker (GF4-BATCH14, 3 Oct 2026): "Garbino" 0 hits, "Ranzo" 0 (Gattinara 117, OCR usable); Molini 1836 vol. 2 nos. 8513/8544 read, no Garbino letter or decipherment.
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. CSP Spain III.2 (British
@@ -121,3 +122,54 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 18-22 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `"Garbino" 1528 Madrid lettre chiffre "3022"` -- BnF archivesetmanuscrits records for
+Fr. 3641 and Fr. 4050-4051 only (catalogue), no reading; (2) `"Garbino" Ranzo cipher letter 11 April 1528` -- Bourdeau's
+site ("~3,900 groups ... not yet solved"), his PR 5, the 2017 Cipherbrain Spinelli post, Cryptiana blog 2018 index;
+(3) `"Français 3022" chiffre Garbino Gasto` -- nothing relevant; (4) folder title / sender queries shared with the
+fr2988-ranzo-1520s pass (same day, same worker): `"Hieronimo Ranzo" chiffre lettre`, `Ranzo Garbino 1528 cipher decipherment
+initial-letter code Tomokiyo`, model-solve query `Ranzo cipher solves Claude OR GPT` -- no reading.
+Blog site searches: `Garbino cipher site:scienceblogs.de OR site:ciphermysteries.com OR site:cryptiana.blogspot.com` -- no
+Garbino post on any of the three; `Ranzo cipher site:scienceblogs.de`, `site:cryptiana.blogspot.com`, `site:ciphermysteries.com`
+(fr2988 pass) -- only the two Cipherbrain posts below. Cryptiana blog index pages 2018 and 2025/09 fetched (curl) and grepped
+for Ranzo/Garbino/3022/2988/Gattinara: 0 hits.
+Comment threads read in full: Cipherbrain 17 May 2016 ("Wer löst diesen verschlüsselten Brief ...", 21 comments): Norbert
+(#18, 21 Oct 2017) points to this volume's **f.50 "adizione nel zifra"** (Gallica btv1b90601558/f97) as Ranzo's code
+extension; Thomas (#21): no nomenclator found. No reading of no. 20. Cipherbrain 24 Mar 2017 (Spinelli): "the unbroken
+Ranzo cipher" only. Details in ciphers/fr2988-ranzo-1520s/NOTES.md (same date).
+Cabinet Noir (github.com/el-descifrador/cabinet-noir, HEAD 47b6db9, 2 Oct 2026; CC BY 4.0) grepped for 3022, garbino, ranzo,
+2988: no folder or file. Result: no decipherment or plaintext of no. 20 found in any post, comment or repository searched.
+
+## Premise check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+(a) **Folder's own mentions -- not found.** No decipherment, gloss or clear copy is claimed anywhere in this folder;
+Clair. 327 ff.279-280 (18th-c. copy, "partie en chiffre, partie non") and Clair. 314 f.337 (copy of addition and jargon
+sheets) carry no decipherment per Bourdeau (not re-viewed this pass).
+(b) **Other solvers' working files -- not found.** Bourdeau, cyphersolver HEAD 4aedb40 (2 Oct 2026), targets/vasto1527:
+`additione.json` (the f.50 addition sheet: a327 apresso, g215 Garbino ...) has been applied as far as it reaches; his
+annealer (`n20/solve2.py`) gives a function-word skeleton only; no rendering of no. 20 exists. Cabinet Noir and Aymeloglu:
+nothing.
+(c) **Physical neighbours -- not found (no decipherment); one unrecorded clear postscript.** Gallica btv1b90601558 viewed by
+this worker: view 85 (f.43v, the del Vasto letter's address "Sacre Ces.e et Cath.ce M.ti", seal; not this letter);
+view 92 (**f.47r: three lines of clear Italian postscript** with a paraph, read here at grade I only: "Post data non e poi
+[successo] altro / [heri?] fu iurato el principe et lo Imperatore partira per Valenza a li xxij data ut supra de 19" -- not
+in Bourdeau's `f46v.txt`, which ends "de Madrid a xi de aprile 1528"); view 93 (f.47v, address panel "R.do S. ... Garbino"
+and dorse "Lura/Luna", the same layout and dorse word as fr.2988 f.11v). No decipherment, interlinear or slip on any of
+them. The postscript is clear context, not a crib for any cipher group.
+(d) **Recipient's side -- not found.** Garbino's own papers not located (Bourdeau's crib list); CSP Spain III pt 2 (line 2)
+and Lanz vol. 1 (prior pass) carry nothing; Gattinara's family papers are at Vercelli (ASV-FAG; FT4, decode-4450 folder)
+with no cipher table reported.
+
+Verdict after both checks: **`open`** (unchanged). Not found-solved.
+Requests this pass (fr3022 part): gallica.bnf.fr 4 IIIF images; cryptiana.blogspot.com 2; WebSearch 4; other hosts shared
+with the fr2988 pass. All >=1.5 s apart per host.
+
+## While waiting
+
+Next step that depends on nobody: transcribe the f.47r clear postscript at native resolution (Gallica btv1b90601558 view 92,
+one line crop, one blind pass + check) and add it to the no. 20 text, since it dates the letter's tail (prince sworn,
+Emperor leaving for Valencia); free, about $0.5.
+
+Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py fr3022-garbino-1528` -> "fr3022-garbino-1528: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no Web and blog check). `python3 tools/next_steps.py --wait-only | grep fr3022-garbino-1528` -> no line.
