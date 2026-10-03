@@ -179,3 +179,4 @@ VERIFY-DIN2	other	.claude/briefs/runs/2026-10-03-acct3-verify-din2.md	Opus 5.5	6
 DIN-FIRM	other	.claude/briefs/runs/2026-10-03-acct3-din-firm.md	Opus 5.5	5	45	claimed by account-3 orchestrator in-session 2026-10-03 08:25	Dinteville date line, conflict rows, sibling key leads	
 BIRAGO-NUM-KEYEYE3	other	.claude/briefs/runs/2026-10-03-acct3-birago-num-keyeye3.md	Opus 5.5	4	35	claimed by account-3 orchestrator in-session 2026-10-03 08:25	fr.3995 French tables 71/75/76 vs Nov 1571 numerical letters	
 TWO-LOOKS	other	.claude/briefs/runs/2026-10-03-acct3-two-looks.md	Opus 5.5	4	30	claimed by account-3 orchestrator in-session 2026-10-03 08:51	Dinteville date line + fr.3995 no.76 code range	
+LANE-A1	account-1	.claude/briefs/runs/2026-10-03-acct3-lane-a1.md	Opus 5.5	60	1200	queued	2026-10-03 09:14	lane orchestrator on account 1 (usage reset): WORK-QUEUE queued rows, then account-3 priorities, refill every 15 min	
