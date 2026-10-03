@@ -1,0 +1,8 @@
+{
+ "defaults": {"format": "tsv", "key": "key118.tsv", "style": "spaced", "include_clear": true,
+  "uncertain_conf": ["M"], "unknown_values": ["", "?"], "unkeyed_value": "?", "unkeyed_grade": "U",
+  "header": ["# {name}: Digby key no. 118 (Ormond & Prince Rupert, BL Add MS 72438 ff.59-60, DECODE 8655) applied by tools/decode_key.py, FT4b 3 Oct 2026. Grades {grades_sorted} of {total} cipher tokens (U = blank on the key sheet). A key test, not a reading: see NOTES.md.",
+             "# Regenerate: python3 tools/decode_key.py ciphers/maurice-rupert-1645 ; check: --check"],
+  "token_columns": [["line","line"],["pos","pos"],["sign","sign"],["conf","conf"],["value","value"],["grade","grade"]]},
+ "jobs": [{"name": "Maurice to Rupert, 7 July 1645 (Warburton iii.133)", "ciphertext": "ct118.tsv", "reading": "reading_key118.txt", "tokens": "reading_key118_tokens.tsv"}]
+}

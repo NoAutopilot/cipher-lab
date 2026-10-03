@@ -160,3 +160,56 @@ Lord Digby's cabinet (BL Add MS 72438 ff.25-26, DECODE record 8627) list a Mauri
 
 Requests: de-crypt.org 8 (1 failed TLS navigation before login, then login + RecordsView + 6 filesrv, 1.6 s apart),
 one login. Vision calls: 2 (f.25r; f.25v+f.26r together).
+
+## Key no. 118 tested: Digby key "Ormond & Pr: Rupert", BL Add MS 72438 ff.59-60 (FT4b-maurice-rupert-1645, account-4, 3 Oct 2026)
+
+Run 3 Oct 2026, 00:28-00:40 UTC (`date -u`). FT4 named this step. **Result: key 118 does not read this letter. It was
+applied, with a shuffled-key control and the judge, and failed both.** Status stays `open`.
+
+- **Record found.** Nothing on disk said which DECODE record holds index no. 118, so it was placed from folio anchors.
+  The index numbers run in folio order (f.52 = 113, f.70 = 125, from `ciphers/intercepted-royalist-1646/NOTES.md`).
+  Keys 114-124 then fall on the 11 Key records for ff.53-69, which puts no. 118 on ff.59-60, **DECODE 8655**.
+  Tomokiyo confirms it (`sources/cryptiana/web/charlesi.htm`, "Cipher with Prince Rupert, Digby, and Ormonde
+  (1644-1645)": "A copy is preserved in Add MS 72438, f.59-60"). The leaf itself confirms it too: f.59r is endorsed
+  "Cypher for Ormond & Prince Rupert 118". No `decode_list.py` crawl was needed, because
+  `sources/decode/keys-all-2026-09-28-merged.tsv` already lists every 72438 Key record.
+- **Fetch.** One browser login: `tools/decode_browser_login.js 8655 --guess-fullsize`, with the NSS proxy-CA fix
+  applied first because it was missing again in this container. All 4 full-size pages were served (13-16 MB each). The
+  2000 px copies, thumbnails, scrubbed RecordsView and manifest are in `key118/`. The originals were deleted (sha1s in
+  `key118/fullsize_sha1.txt`).
+- **Range check: the ranges overlap and the design matches.** The key has letters 1-80 as homophones (a 14-17, b 21-23,
+  c 11-13, d 5-7, e 1-4, ... z 51-52), nulls 81-90, and words 91-434 in alphabetical order, nearly all proper names
+  (354 = Rupert Prince, as Tomokiyo has it). Common words are letter+digit codes (a1 and ... p6 wch). The target's
+  values (6-398; letters at or below 80, nulls 82/84, words 100-398) all fall inside that range, so this is not a
+  range mismatch. One caveat: the target has **no** letter+digit codes. The "two-digit groups never consecutive"
+  remark is also not quite true of the transcription ("15 26", "6 15", "12 15").
+- **Applied.** `key118.tsv` holds all letters and nulls plus the 42 word rows the target uses, from one reader pass over
+  the rotated crops; every row is graded M. `ct118.tsv` holds the target. `decode.json` drives
+  `tools/decode_key.py`, whose output is in `reading_key118.txt` (M 90, U 3). The decode begins "a m [342] Designe
+  Clanrickard_Ea c Peace Edenburgh [null] Harbour m Queene q Question Give h Poland Row_Sr_Tho Dartmouth ...". It is
+  isolated letters and a run of place and person names, with no function words. 3 of the 93 tokens (239, 252, 342)
+  fall on code numbers that are **blank** on the key sheet.
+- **Test vs control** (rule 3; `key118_test.py`, output in `key118_test.tsv`, `--check` passes). The test scores the
+  cipher-only decode with the en16_repo 4-gram model, because no en17 corpus is wired and en16_repo holds 1650s
+  printed Thurloe readings, the nearest era on disk. The control is 200 keys whose values are shuffled among the
+  key's own rows, so it varies on the same axis as the statistic.
+
+  | stat | key 118 | shuffled-key mean | shuffled p95 | rank of 201 |
+  |---|---|---|---|---|
+  | 4-gram/letter | -1.783 | -1.796 | -1.698 | 80 |
+  | word cover | 0.319 | 0.313 | 0.372 | 88 |
+
+  Judge (`judge_key118.json`, en16_repo): **FAIL**, score -1.783 vs real_p05 -0.568, null_p99 -1.831, N=504.
+  The decode is indistinguishable from random keys and scores near shuffled letters.
+- **Grades:** M 90, U 3; no H, no C. The key is not shown to be this letter's, which is what the test found.
+- **Verdict on the step.** Key 118 (Charles I / Rupert / Digby / Ormonde, 1644-45) is excluded for this letter: the
+  ranges overlap, but the key was applied with a control and failed. This agrees with Bourdeau's range-only rejection
+  of the "Charles I-Rupert-Digby-Ormonde 1644-45" key, which is this same table. The letter's own key (Maurice and
+  Rupert) would sit in Rupert's papers (BL Add MS 18980-82), not in Digby's cabinet.
+- **Next key / next step** (keep going): the Add MS 18982 ff.95r-96v Osborne-to-Rupert decipherment (REQUEST.md). It
+  needs BL images; check DECODE for an 18982 f.95 record first (none in the 24 Sept harvest), at about $1. There is
+  one cheap internal check: `design_prior.py`/KEY-DESIGN.tsv for any other Rupert-circle key with letters at or below
+  80, nulls in 81-90 and no letter+digit codes, about $0.5.
+
+Requests: de-crypt.org 9 (login + RecordsView + 8 filesrv, 1.6 s apart), one login. Vision reads: 6 (4 page overviews at
+1000 px, 4 crops; one reader pass, no subagents). Rule 10: nothing here says new or unread.

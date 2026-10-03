@@ -1,0 +1,4 @@
+stat	target	shuffled_key_mean	shuffled_key_p95	rank_of_201
+4gram	-1.783	-1.796	-1.698	80
+word_cover	0.319	0.313	0.372	88
+judge	score -1.783	real_p05 -0.568	null_p99 -1.831	FAIL N=504

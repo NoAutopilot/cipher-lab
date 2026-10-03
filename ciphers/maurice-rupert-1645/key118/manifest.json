@@ -1,0 +1,4 @@
+{"record": 8655, "shelfmark": "BL Add MS 72438 ff.59-60", "fetched": "2026-10-03 by FT4b (account-4), one DECODE browser login",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 8655 OUT --guess-fullsize (full-size = https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8655_I39932_P{1..4}.jpg)",
+ "pages": {"P1": "f.59r, endorsed 'Cypher for Ormond & Prince Rupert 118' (table show-through)", "P2": "f.59v/60 blank side", "P3": "key table: letters 1-80, nulls 81-90, words 91-288 A-M, letter+digit codes a1-p6", "P4": "words 289-434 N-Z"},
+ "files": {"p{1,2}_2000.jpg": "2000 px copies as served", "p{3,4}_2000.jpg": "2000 px copies rotated to read upright", "TH_*.jpg": "DECODE thumbnails", "record_8655.html": "RecordsView, account name scrubbed", "fullsize_sha1.txt": "sha1 of the deleted 13-16 MB originals"}}
