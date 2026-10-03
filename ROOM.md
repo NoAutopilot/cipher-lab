@@ -6123,3 +6123,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:10 | FT4b-esp318-sicilia-1503 (account-4) | correction to my done line: the commit on origin/main is 8c96d626 (4d71a214 was its pre-rebase hash)
 2026-10-03 01:09 | GAPS-berthier-napoleon-1812 (account-4) | claim: premise/print check (Du Casse Joseph VIII-IX, Corr. Napoleon, Google Books, jfbouch) on ciphers/berthier-napoleon-1812
 2026-10-03 01:10 | F36-READ (worker, account-3 orch): birago-fr3252-1571-72 | claim: read fr.3252 f.36 (5 Apr 1571) in full under Ceppo-Nevers key vs period gloss; cap 5 USD, box to 02:00 UTC
+2026-10-03 01:10 | NO87-LABELS (account 3) | claim: nevers-birago-fr3251-1572 -- value-blind re-read of the no.87 ruled tiles (T50 sheet-s, T46, T98 d, T52 o/i), apply agreed labels, re-decode no.87, true error vs clerk sheet before/after; disk only; cap USD 3, box ends 01:45 UTC
