@@ -29,7 +29,7 @@ cipher. Run either kind exactly as written; do not add a keyword to a phrase-onl
 
 ```
 You are the cipher-lab JSTOR runner on the owner's computer, where Chrome is logged into www.jstor.org. Read CLAUDE.md rule 10 and the good-citizen rule.
-1. git fetch origin main && git checkout -B main origin/main
+1. git fetch origin main && git checkout -B main origin/main  (the folder must be a clone of https://github.com/NoAutopilot/cipher-lab.git; if it is not a git repository, stop and say so -- a ZIP copy cannot push)
 2. Open JSTOR-QUEUE.tsv (tab-separated: target, query, requested, status, hits). Take every row with status `queued`; do first the rows whose target is one of ciphers/fr2980-gramont, ciphers/fr20140-danzay-1557, ciphers/thurloe-printed, ciphers/lodewijk-van-nassau-1573-74, ciphers/august-van-saksen-1561-64, ciphers/eckert-1864, ciphers/huntington-blathwayt-madrid-1728 (they gate the outreach), then the rest.
 3. Run each query on www.jstor.org in my Chrome (never log in yourself, never store a password), one at a time, at least 4 seconds apart, at most 60 in this sitting. On a captcha or any block page, stop, leave the rest `queued`, and say so.
 4. Record the first page of hits in the hits column as `title | author | journal | year | pages | stable URL` separated by `;`, or `no hits`. Set status to `done <date>`. Keep tabs, row order and every other row unchanged.

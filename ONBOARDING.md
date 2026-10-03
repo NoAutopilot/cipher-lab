@@ -4,6 +4,9 @@ For a new person joining the project, and for the first session of any agent the
 one-page map of roles, outside loops, gates, registers and levers, with a diagram), then this, then
 `CLAUDE.md`, then the tail of `UPDATES.md`, then `STATUS.md`. Twenty minutes, and you are current.
 
+The repository is https://github.com/NoAutopilot/cipher-lab (clone: `git clone https://github.com/NoAutopilot/cipher-lab.git`).
+A ZIP download (a folder named `cipher-lab-main`) cannot fetch, commit or push: any local runner needs a real clone.
+
 ## What this project is
 
 We read old ciphered letters nobody has read. The bottleneck is access, not cryptanalysis: two well-funded
