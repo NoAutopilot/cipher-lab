@@ -1,0 +1,27 @@
+code	values	n_contexts	winner	runner_up	margin_log10	shuffle_max	decision
+13	aux|au-|au	7	au-	aux	13.135	7.507	MOVE
+38	res|re	2	re	res	0.536	5.097	stays (fails gate 1 or 2)
+76	on|ou	2	on	ou	2.882	4.066	stays (fails gate 1 or 2)
+102	peu|peut	6	peu	peut	7.041	1.136	MOVE
+144	été|étoit	5	été	étoit	21.979	29.122	stays (fails gate 1 or 2)
+404	croisières|croir	4	croir	croisières	8.558	9.659	stays (fails gate 1 or 2)
+420	fin|fui.	6	fin	fui.	6.395	19.804	stays (fails gate 1 or 2)
+435	il y a|Il	2	Il	il y a	2.53	6.579	stays (fails gate 1 or 2)
+456	re|=re	4					untested-by-this-tool (values fold equal)
+513	cotés|cote	2	cote	cotés	0.856	2.893	stays (fails gate 1 or 2)
+547	aoust|août.	3	août.	aoust	14.875	20.41	stays (fails gate 1 or 2)
+564	de|des	10	de	des	12.397	16.623	stays (fails gate 1 or 2)
+585	l'Isle de Java|Java)	4	Java)	l'Isle de Java	32.97	36.74	stays (fails gate 1 or 2)
+663	ai|ait	3	ai	ait	1.098	5.893	stays (fails gate 1 or 2)
+697	ble|bles	3	ble	bles	2.898	2.709	MOVE
+743	trois|Troi	3	trois	Troi	2.385	8.971	stays (fails gate 1 or 2)
+960	près|pret|(Près	2	près	pret	0.927	5.562	stays (fails gate 1 or 2)
+997	4|quatre|N°. 4	3	4	N°. 4	9.04	13.327	stays (fails gate 1 or 2)
+1023	N°.|nd	2	N°.	nd	3.873	9.329	stays (fails gate 1 or 2)
+1039	pillé|piter	3	pillé	piter	5.58	8.04	stays (fails gate 1 or 2)
+1040	uner|nu	2	nu	uner	12.38	8.179	MOVE
+1049	événement|événements	2	événements	événement	0.051	1.914	stays (fails gate 1 or 2)
+1094	Douze|dont	2	dont	Douze	5.944	5.897	MOVE
+1096	part|par	9	par	part	16.399	15.289	MOVE
+1122	le|les	8	le	les	4.399	7.696	stays (fails gate 1 or 2)
+1135	forte|fort	4	fort	forte	1.355	4.763	stays (fails gate 1 or 2)

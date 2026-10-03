@@ -1,7 +1,7 @@
 code	value	n	pages	grade	note
 1	Soixante	1	no5(210-212)	M	only a corrected/crossed-out cell seen
 12	encore	2	199,no4-206R	C	
-13	aux	3	191,192,no4-206R	M	ambiguous: aux (n=1, pages=191); au- (n=1, pages=192); au (n=1, pages=no4-206R)
+13	au	3	191,192,no4-206R	M	ambiguous: aux (n=1, pages=191); au- (n=1, pages=192); au (n=1, pages=no4-206R); GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'au' (margin 13.135 log10 vs shuffled-context max 7.507, 7 contexts; lmfill/results.tsv); value was 'aux'; M kept, witnesses stay in conflicts.tsv
 20	da	1	no4-205R	C	
 21	bre	1	200	M	only a corrected/crossed-out cell seen
 25	a	5	191,200,no4-205R	C	ambiguous: a (n=3, pages=191,200); à (n=1, pages=191); GAPS3 2 Oct 2026: C: accent-only variant (a/à), the same code in four distinct words
@@ -23,7 +23,7 @@ code	value	n	pages	grade	note
 93	de	1	no4-206R	M	single occurrence, cell uncertain: plain copy 208R-209L aligns 'ed' here (leaf no4-206R)
 95	grand	1	200	C	
 99	n'	2	199,no5(210-212)	C	ambiguous: n' (n=1, pages=199); n (n=1, pages=no5(210-212)); GAPS3 2 Oct 2026: C: apostrophe-only variant (n'/n), the letter n in two distinct words
-102	peu	4	200,no4-206R	M	ambiguous: peu (n=2, pages=200); peut (n=1, pages=200); GAPS3 2 Oct 2026: C: the syllable peu in three distinct words (peu, peut, peu-vent); peut (n=1, pages=no4-206R)
+102	peu	4	200,no4-206R	M	ambiguous: peu (n=2, pages=200); peut (n=1, pages=200); GAPS3 2 Oct 2026: C: the syllable peu in three distinct words (peu, peut, peu-vent); peut (n=1, pages=no4-206R); GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'peu' (margin 7.041 log10 vs shuffled-context max 1.136, 6 contexts; lmfill/results.tsv); value was 'peu'; M kept, witnesses stay in conflicts.tsv
 104	l'	2	191,no4-206R	C	
 108	m	1	no5(210-212)	C	
 110	en	2	no4-206L,no4-207L	C	
@@ -180,7 +180,7 @@ code	value	n	pages	grade	note
 692	;	3	191,no4-205R,no4-207L	C	
 694	crainte	1	200	C	
 696	van	1	199	M	only a corrected/crossed-out cell seen
-697	ble	3	no5(210-212),208(Vanteau),no4-205R,no4-207L	M	ambiguous: ble (n=1, pages=no5(210-212),208(Vanteau)); bles (n=1, pages=no4-205R) [earlier note: only a corrected/crossed-out cell seen VX-RD02C: also confirmed on leaf 208 (signed Vanteau, not Janssens -- a different correspondent reusing the same code book), 2-pass agreed.]; leaf no4-207L: ble (clean)
+697	ble	3	no5(210-212),208(Vanteau),no4-205R,no4-207L	M	ambiguous: ble (n=1, pages=no5(210-212),208(Vanteau)); bles (n=1, pages=no4-205R) [earlier note: only a corrected/crossed-out cell seen VX-RD02C: also confirmed on leaf 208 (signed Vanteau, not Janssens -- a different correspondent reusing the same code book), 2-pass agreed.]; leaf no4-207L: ble (clean); GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'ble' (margin 2.898 log10 vs shuffled-context max 2.709, 3 contexts; lmfill/results.tsv); value was 'ble'; M kept, witnesses stay in conflicts.tsv
 700	Ville	1	no5(210-212)	C	
 706	gi	1	199	M	only a corrected/crossed-out cell seen
 710	part	1	201	M	single occurrence, cell A/B part; final letter is a small t or flourish, uncertain (par-t or par); with 721 mis next it reads par-mis = parmi (leaf 201)
@@ -274,7 +274,7 @@ code	value	n	pages	grade	note
 1034	ro	1	no4-206L	C	
 1035	possible	1	192	M	single occurrence, cell period after the gloss is the row separator dot copied, not part of the value; A uncertain, B clean (leaf 192)
 1039	pillé	2	no4-206R,no4-207L	M	ambiguous: pillé (n=1, pages=no4-206R); piter (n=1, pages=no4-207L)
-1040	uner	2	no4-206L,no4-206R	M	ambiguous: uner (n=1, pages=no4-206L); nu (n=1, pages=no4-206R) [earlier note: single occurrence, cell uncertain: plain copy 208R-209L aligns 'nu' here (leaf no4-206L)]
+1040	nu	2	no4-206L,no4-206R	M	ambiguous: uner (n=1, pages=no4-206L); nu (n=1, pages=no4-206R) [earlier note: single occurrence, cell uncertain: plain copy 208R-209L aligns 'nu' here (leaf no4-206L)]; GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'nu' (margin 12.38 log10 vs shuffled-context max 8.179, 2 contexts; lmfill/results.tsv); value was 'uner'; M kept, witnesses stay in conflicts.tsv
 1041	si	2	no5(210-212),no4-206R	M	single-pass only, other pass skipped this code; GAPS3 2 Oct 2026: M stays: one word (dé-ci-si-ve); digits settled; leaf no4-206R: si (clean)
 1046	plus	1	no4-205R	C	
 1049	événement	2	200,no4-206L	M	ambiguous: événement (n=1, pages=200); événements (n=1, pages=no4-206L) [earlier note: only a corrected/crossed-out cell seen]
@@ -293,8 +293,8 @@ code	value	n	pages	grade	note
 1090	A	4	190,191,200,no4-205R	C	
 1091	neuf	2	190,191	C	
 1092	batimens	2	190,191	C	
-1094	Douze	2	no4-205R,no4-206L	M	ambiguous: Douze (n=1, pages=no4-205R); dont (n=1, pages=no4-206L) [earlier note: single occurrence, cell uncertain: plain copy 208R-209L aligns 'dont' here (leaf no4-205R)]
-1096	part	5	191,199,200,192,no4-205R	M	ambiguous: part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192); GAPS3 2 Oct 2026: M stays: par and part are one syllable with and without the final t, tied 2:2, and the choice decides the sense on 188; par (n=1, pages=no4-205R)
+1094	dont	2	no4-205R,no4-206L	M	ambiguous: Douze (n=1, pages=no4-205R); dont (n=1, pages=no4-206L) [earlier note: single occurrence, cell uncertain: plain copy 208R-209L aligns 'dont' here (leaf no4-205R)]; GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'dont' (margin 5.944 log10 vs shuffled-context max 5.897, 2 contexts; lmfill/results.tsv); value was 'Douze'; M kept, witnesses stay in conflicts.tsv
+1096	par	5	191,199,200,192,no4-205R	M	ambiguous: part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192); GAPS3 2 Oct 2026: M stays: par and part are one syllable with and without the final t, tied 2:2, and the choice decides the sense on 188; par (n=1, pages=no4-205R); GAPS17 3 Oct 2026: LM-context fill (fr1810, pre-registered e5ff7541) prefers 'par' (margin 16.399 log10 vs shuffled-context max 15.289, 9 contexts; lmfill/results.tsv); value was 'part'; M kept, witnesses stay in conflicts.tsv
 1098	ront	1	191	M	only a corrected/crossed-out cell seen
 1101	pa	2	no4-207L	C	
 1104	les	1	199	C	

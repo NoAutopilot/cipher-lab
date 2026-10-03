@@ -1,48 +1,48 @@
 code	variants	decision
-13	aux (n=1, pages=191); au- (n=1, pages=192); au (n=1, pages=no4-206R)	
+13	aux (n=1, pages=191); au- (n=1, pages=192); au (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: M, value -> au by LM-context fill (margin 13.135 vs shuffle max 7.507); witnesses kept
 25	a (n=3, pages=191,200); à (n=1, pages=191)	GAPS3 2 Oct 2026: C: accent-only variant (a/à), the same code in four distinct words
-38	res (n=1, pages=no4-206L); re (n=1, pages=no4-206R)	
-76	on (n=1, pages=200); ou (n=1, pages=no4-207L)	
+38	res (n=1, pages=no4-206L); re (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner re, margin 0.536 vs shuffle max 5.097); logged as is
+76	on (n=1, pages=200); ou (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner on, margin 2.882 vs shuffle max 4.066); logged as is
 99	n' (n=1, pages=199); n (n=1, pages=no5(210-212))	GAPS3 2 Oct 2026: C: apostrophe-only variant (n'/n), the letter n in two distinct words
-102	peu (n=2, pages=200); peut (n=1, pages=200); peut (n=1, pages=no4-206R)	GAPS3 2 Oct 2026: C: the syllable peu in three distinct words (peu, peut, peu-vent)
+102	peu (n=2, pages=200); peut (n=1, pages=200); peut (n=1, pages=no4-206R)	GAPS3 2 Oct 2026: C: the syllable peu in three distinct words (peu, peut, peu-vent); GAPS17 3 Oct 2026: M, value -> peu by LM-context fill (margin 7.041 vs shuffle max 1.136); witnesses kept
 140	de (n=3, pages=191,200); Dé (n=2, pages=191,no5(210-212))	GAPS3 2 Oct 2026: C: accent-only variant (de/dé), five cells in four texts
-144	été (n=1, pages=192); étoit (n=1, pages=no4-206L)	
+144	été (n=1, pages=192); étoit (n=1, pages=no4-206L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner été, margin 21.979 vs shuffle max 29.122); logged as is
 190	en (n=3, pages=199,no5(210-212)); est (n=2, pages=190,191); est (n=1, pages=192)	GAPS3 2 Oct 2026: M stays, value column flips to est by merge_leaf.py's own majority rule (4 distinct sentences vs 3): both renderings remain attested in the gloss
 355	car (n=1, pages=200); cargaison, (n=1, pages=192)	
-404	croisières (n=2, pages=191,201); croir (n=1, pages=no4-206R)	
-420	fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L)	
-435	il y a (n=1, pages=201); Il (n=1, pages=no4-207L)	
-456	re (n=1, pages=no5(210-212)); =re (n=1, pages=no4-206R)	
-513	cotés (n=1, pages=no4-205R); cote (n=1, pages=no4-206R)	
+404	croisières (n=2, pages=191,201); croir (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner croir, margin 8.558 vs shuffle max 9.659); logged as is
+420	fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner fin, margin 6.395 vs shuffle max 19.804); logged as is
+435	il y a (n=1, pages=201); Il (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner Il, margin 2.53 vs shuffle max 6.579); logged as is
+456	re (n=1, pages=no5(210-212)); =re (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: untested-by-this-tool (values fold equal under the fr1810 letter model); logged as is
+513	cotés (n=1, pages=no4-205R); cote (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner cote, margin 0.856 vs shuffle max 2.893); logged as is
 516	et (n=2, pages=200,no5(210-212)); te (n=1, pages=192)	
-547	aoust (n=1, pages=no5(210-212)); août. (n=1, pages=no4-207L)	
-564	de (n=5, pages=191,199,200,no5(210-212),192); des (n=1, pages=no4-205R)	
+547	aoust (n=1, pages=no5(210-212)); août. (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner août., margin 14.875 vs shuffle max 20.41); logged as is
+564	de (n=5, pages=191,199,200,no5(210-212),192); des (n=1, pages=no4-205R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner de, margin 12.397 vs shuffle max 16.623); logged as is
 571	ti (n=4, pages=199); tie (n=1, pages=192)	
-585	l'Isle de Java (n=1, pages=no4-206L); Java) (n=1, pages=no4-207L)	
+585	l'Isle de Java (n=1, pages=no4-206L); Java) (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner Java), margin 32.97 vs shuffle max 36.74); logged as is
 587	où (n=2, pages=190,191); ou (n=1, pages=199)	
 624	fe (n=1, pages=191); fé (n=1, pages=no5(210-212))	
 625	frigate (n=1, pages=200); frigates (n=1, pages=200)	
 659	a (n=2, pages=191); à (n=1, pages=199)	
-663	ai (n=1, pages=199); ait (n=1, pages=no4-206R)	
+663	ai (n=1, pages=199); ait (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner ai, margin 1.098 vs shuffle max 5.893); logged as is
 689	Le (n=3, pages=199,no5(210-212)); de (n=2, pages=190,191)	GAPS3 2 Oct 2026: C: le in five distinct contexts across four texts, plain copy agrees; the lone de is one cell where Le is also grammatical
-697	ble (n=1, pages=no5(210-212),208(Vanteau)); bles (n=1, pages=no4-205R)	
+697	ble (n=1, pages=no5(210-212),208(Vanteau)); bles (n=1, pages=no4-205R)	GAPS17 3 Oct 2026: M, value -> ble by LM-context fill (margin 2.898 vs shuffle max 2.709); witnesses kept
 721	mi (n=1, pages=191); mis (n=1, pages=201)	
 738	lieues (n=2, pages=190,191); lieu (n=2, pages=191,no5(210-212)); lieu (n=1, pages=192)	
-743	trois (n=1, pages=191); Troi (n=1, pages=no4-207L)	
+743	trois (n=1, pages=191); Troi (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner trois, margin 2.385 vs shuffle max 8.971); logged as is
 840	mois (n=1, pages=no5(210-212)); moi (n=1, pages=192)	
 883	Capitaine (n=1, pages=191); Capitaines (n=1, pages=191)	
 904	i (n=1, pages=no5(210-212)); J' (n=1, pages=192)	GAPS3 2 Oct 2026: C: the letter i (written J' before a vowel) in two distinct words, plain copy agrees
-960	près (n=1, pages=208(Vanteau)); pret (n=1, pages=no4-205R); (Près (n=1, pages=no4-207L)	
+960	près (n=1, pages=208(Vanteau)); pret (n=1, pages=no4-205R); (Près (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner près, margin 0.927 vs shuffle max 5.562); logged as is
 965	port (n=2, pages=190,191); porte (n=1, pages=199)	
-997	4 (n=1, pages=199); quatre (n=1, pages=no5(210-212)); N°. 4 (n=1, pages=no4-206L)	
-1023	N°. (n=1, pages=199); nd (n=1, pages=no4-205R)	
-1039	pillé (n=1, pages=no4-206R); piter (n=1, pages=no4-207L)	
-1040	uner (n=1, pages=no4-206L); nu (n=1, pages=no4-206R)	
-1049	événement (n=1, pages=200); événements (n=1, pages=no4-206L)	
-1094	Douze (n=1, pages=no4-205R); dont (n=1, pages=no4-206L)	
-1096	part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192); par (n=1, pages=no4-205R)	GAPS3 2 Oct 2026: M stays: par and part are one syllable with and without the final t, tied 2:2, and the choice decides the sense on 188
-1122	le (n=1, pages=200); les (n=1, pages=no4-205R)	
-1135	forte (n=2, pages=no5(210-212)); fort (n=1, pages=no4-205R)	
+997	4 (n=1, pages=199); quatre (n=1, pages=no5(210-212)); N°. 4 (n=1, pages=no4-206L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner 4, margin 9.04 vs shuffle max 13.327); logged as is
+1023	N°. (n=1, pages=199); nd (n=1, pages=no4-205R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner N°., margin 3.873 vs shuffle max 9.329); logged as is
+1039	pillé (n=1, pages=no4-206R); piter (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner pillé, margin 5.58 vs shuffle max 8.04); logged as is
+1040	uner (n=1, pages=no4-206L); nu (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: M, value -> nu by LM-context fill (margin 12.38 vs shuffle max 8.179); witnesses kept
+1049	événement (n=1, pages=200); événements (n=1, pages=no4-206L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner événements, margin 0.051 vs shuffle max 1.914); logged as is
+1094	Douze (n=1, pages=no4-205R); dont (n=1, pages=no4-206L)	GAPS17 3 Oct 2026: M, value -> dont by LM-context fill (margin 5.944 vs shuffle max 5.897); witnesses kept
+1096	part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192); par (n=1, pages=no4-205R)	GAPS3 2 Oct 2026: M stays: par and part are one syllable with and without the final t, tied 2:2, and the choice decides the sense on 188; GAPS17 3 Oct 2026: M, value -> par by LM-context fill (margin 16.399 vs shuffle max 15.289); witnesses kept
+1122	le (n=1, pages=200); les (n=1, pages=no4-205R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner le, margin 4.399 vs shuffle max 7.696); logged as is
+1135	forte (n=2, pages=no5(210-212)); fort (n=1, pages=no4-205R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner fort, margin 1.355 vs shuffle max 4.763); logged as is
 1150	avoir (n=1, pages=191); avons (n=1, pages=no5(210-212))	
 1187	va (n=1, pages=199); Sa (n=1, pages=192)	
 1195	est (n=2, pages=190,191); en (n=1, pages=200)	
