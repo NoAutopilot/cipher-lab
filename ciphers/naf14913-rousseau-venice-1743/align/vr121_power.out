@@ -1,0 +1,3 @@
+real solution 121 spans [(47, 's'), (61, 's'), (128, 's'), (203, 's'), (215, 's'), (291, 's'), (369, 's'), (418, 's'), (434, 's'), (476, 's')]
+PLANT 121=ons: J fit; candidates 313 feasible ['ons'] unresolved []; recovered True unique True
+PLANT 121=qx: J fit; candidates 305 feasible ['qx'] unresolved []; recovered True unique True

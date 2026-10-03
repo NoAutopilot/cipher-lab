@@ -1,0 +1,4 @@
+REAL F216V+S1 J fit
+pooled 121: candidates 306 feasible ['s'] unresolved []
+F216V alone 121: candidates 2478 feasible 1 ['s'] unresolved 0
+S1 alone 121: candidates 2318 feasible 5 ['e', 'i', 'l', 'n', 's'] unresolved 0

@@ -40,7 +40,7 @@ code	value	grade	source	note
 40	pro	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 360	vi	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 363	sion	I	compensating re-split of the f.206r stretch pro|vi|?|s after 121 = s (FT4z)	was M si; f.206 alone exact-fits with 121 s + 363 sion (align/ft4z_diag.out); not separately tested
-121	s	C	pooled exact pin run f.216v + f.266r S1 (align/ft4z_pool.py, PREREG-FT4z gate PASS: J fit, controls (s) 0/40 (g) 0/40)	FT4z PASS, pending VERIFY: sole feasible chunk of 306 tried (was M ons, f.206 split); also tied s in FT4d; f.206 alone and f.206(338 released)+f.216v fit with s, not with ons; rule-4 dispute vs f.252r gloss (FT4v, 121 absent) stands
+121	s	C	pooled exact pin run f.216v + f.266r S1 (align/ft4z_pool.py, PREREG-FT4z gate PASS: J fit, controls (s) 0/40 (g) 0/40)	FT4z PASS, CONFIRMED by VERIFY-ROU121 3 Oct 2026 (re-run seed 11 n 80: controls (s) 0/80 (g) 0/80, J fit, s sole chunk of 306; planted ons recovered uniquely; f.216v alone forces s uniquely of 2478; ons excluded one-edit on f.213, f.249, f.266r S2/S3, f.252r; align/verify_rou121.py): sole feasible chunk of 306 tried (was M ons, f.206 split); also tied s in FT4d; f.206 alone fits exactly with s and with ons (1 occurrence, untestable; VERIFY-ROU121 corrects FT4z here); f.206(338 released)+f.216v fits with s; f.252r gloss fits with s (FT4v dispute was against ons only)
 10	a	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 188	lar	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 344	mee	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
