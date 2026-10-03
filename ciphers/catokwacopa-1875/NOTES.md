@@ -272,7 +272,7 @@ requests. Step: pollaky-1865-1875's gap 3 Verdict (copy the ads 3-4 text, Ernst'
 test with a synthetic-line control). The copy, the segmentation and the length test were already on disk from step NEXT-CAT
 (2 Oct 2026); `python3 pairs.py --check` reproduces them (exit 0: 29 pairs, 0 mismatches vs Bourdeau's ads.py, S 33,
 0/100,000). So this step adds the same permutation test on a second axis, the letter content, which S cannot see.
-It was pre-registered in PREREG-GAPS205.md (f7730438, and addendum A 70fa6dae, each committed before its run).
+It was pre-registered in PREREG-GAPS205.md (f418da80, and addendum A b333caa3, each committed before its run).
 Credit: the line division is Thomas Ernst's (Cipherbrain, 2018, comment #29 via Bourdeau's ads.py). The length test is
 David Bourdeau's (cyphersolver catokwacopa, MIT). The design reading is the published community one.
 
