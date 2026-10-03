@@ -735,18 +735,72 @@ period key, grade H for 152 tokens" (plus S 304 by attribution). Conditional on 
 fresh-session re-derivation has not been run; that is the orchestrator's step. Report what was found and where it was not found:
 codes 1-800 of this key were not found on R4369 P1-P4. Calls: 4 Sonnet subagent passes and 6 own image reads (no further passes).
 
-## Remaining gaps (READ2-HEL, 3 Oct 2026)
-Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U
-- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; not on R4369; the BL Add MS 32276 neighbours (R4370 f.46, an unnamed 1751 table on which IMG-DECODE1 saw codes 131-148 with meanings) may be its first half; next: test R4370 P2/P3 with the same --key test after a 2-pass transcription, ~$12
-- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
-- the other seven letters (1756, 1763 cluster) - blocker: no-key-material; R4369 does not read them (controls above), and FT4b/IMG-DECODE1 found no meaning-bearing 1756/1763 Hellen table among the DECODE Add MS 32276 records looked at
+## READ2-HEL2 (3 Oct 2026): R4370 transcribed and tested as codes 1-800 on R1953 (account 2 worker for LANE-READ2)
 
-## Escalation (READ2-HEL, 3 Oct 2026)
-- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 named as the candidate first half above
+Step run: READ2-HEL's named next step. Pre-registration (`key_r4370/PREREG.md`, commit f275f41d) was pushed before any image was
+looked at. **Route:** one browser login (`tools/decode_browser_login.js 4370 <scratchpad> --fetch <4 filesrv URLs>`). P1-P4 were
+fetched full size; the P2/P3 sha1s match `images/decode/manifest.json`. P1 sha1 666c481b..., P4 0dc248ee...; neither was listed. The
+images stay in the scratchpad (not public domain) and the account name is in no file. Requests: de-crypt.org about 8 (login page,
+submit, landing, RecordsView/4370, 4 images), 1.7 s apart, no challenge; no other host.
+
+**What the sheet is.** P1 carries only the docket "1751"; P4 is blank (P3's edge shows). P2+P3 are one spread with the same printed form
+as R4369: printed codes in blocks of 100, a LEFT meaning straight after the number and a RIGHT entry right-aligned against the next
+block's divider, ending in a dash. P2 holds 1-400 plus 401-500 (whose right entries also appear photographed again at the left of P3),
+and P3 holds 501-900 plus a strip of 901-1000 numbers. **R4370 carries codes 1-1000**, so it does reach R1953's codes 1-800.
+
+**Transcription.** Column crops: `python3 tools/iiif_lines.py --image <P2|P3 file> --out <scratchpad>/crops --region <x>,230,<w>,5020
+--centres 628,1883,3138,4393 --prefix P<p>_c<block> --debug`, once per block (P2 x/w 190/840, 940/820, 1700/820, 2450/840, 3200/808;
+P3 590/820, 1360/790, 2120/800, 2880/820). That makes **36 crops** (9 blocks x 4 bands), cut before any subagent call. Four blind
+Sonnet passes (2 per page) saw only that page's crop paths. A code-keyed diff (letters only: case, accents and punctuation ignored)
+gives **err_2reader 13.1%** (122 of 934 written cells; 16.0% raw). That is higher than R4369's 4.8%. Most splits are row or side
+placement of right entries, crossed words, and abbreviation dots. I settled the 46 disputed codes that bear on R1953 (code c or c+100
+in R1953) from two strip montages (my own reads). The other 60 disputed codes take pass A's cell (B's when A is empty) at grade M.
+The montage also corrected one cell both readers got wrong: 175 R is "gueres", not "queres". 413 R is "douteux".
+`key_r4370/key.tsv`: 689 rows, 917 meaning cells, grade H 836 / M 81 (H = read from a period key sheet). err_true is not measurable
+(no benchmark item of this hand).
+
+**Gate A (range/overlap).** R4370 carries codes 2-1000. On 801-1000 it shares 70 codes with R4369 LR100, and **none has the same
+meaning** (R4369's hand block 801-900 runs son, sont, sort ... prison, publie; R4370's runs entrave, munic, ... reste, disposition).
+So on that range it is a rival series, not a continuation. Per PREREG it was also tested whole as a rival (row "full").
+**Gate B (coverage):** R1953 has 349 numeric tokens at codes 1-800. L covers 191 (51% of 374), R0 158, R100 145, LR100 243. The gate
+(113) is met.
+
+**Test** (`sibling_michell/test_sibling.py --key key_r4370/key_<X>.tsv --out key_r4370/test_key_<X>.txt`, seed 1). Each key is
+restricted to codes 1-800, so it covers only the tokens R4369 cannot reach. Pass = uni value-shuffle p and bi order-shuffle p both
+<= 0.05/4 = 0.0125, power >= 0.8.
+
+| R4370 key on R1953 | covered | uni real / shuffle mean / p95 | uni p | pairs | bi real / val-shuffle mean | bi val p | bi order-shuffle mean / p95 | bi order p | power uni / bi | verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| L | 191 | -9.283 / -9.383 / -8.758 | 0.370 | 48 | -1.047 / -0.809 | 0.985 | -0.837 / -0.648 | 0.985 | 1.00 / 1.00 | fail |
+| R0 | 158 | -10.106 / -10.225 / -9.566 | 0.350 | 28 | -0.817 / -0.811 | 0.510 | -0.797 / -0.615 | 0.535 | 1.00 / 1.00 | fail |
+| R100 | 145 | -10.719 / -10.143 / -9.552 | 0.935 | 29 | -0.830 / -0.822 | 0.550 | -0.831 / -0.628 | 0.505 | 1.00 / 1.00 | fail |
+| LR100 | 243 | -10.036 / -9.664 / -9.221 | 0.875 | 79 | -0.908 / -0.813 | 0.840 | -0.888 / -0.769 | 0.595 | 1.00 / 1.00 | fail |
+| full (rival, 1-1000, outside k) | 341 | -10.259 / -9.849 / -9.518 | 0.950 | 146 | -0.905 / -0.807 | 0.915 | -0.867 / -0.780 | 0.825 | 1.00 / 1.00 | fail |
+
+For comparison, R4369 LR100 on its own codes reads -7.017 against -9.157 (p 0.000), with bi order p 0.000, at the same power.
+**Secondary rows (not gated):** across the five R4370 keys, none of the other seven letters (R1045-R1049, R1060, R1061) clears 0.0125 on
+both statistics. The lowest are R100 on R1061, uni p 0.020 with bi order p 1.000 at bi power 0.00, and full on R1061, bi order p 0.035
+with uni p 0.635.
+
+**Result.** At full power (1.00), no attribution of R4370 reads R1953's codes 1-800, and none reads any of the other letters.
+**R4370 is not the first half of the Hellen key that R4369 reads.** Its 801-1000 conflicts with R4369 on every shared code, and the
+sheet names no holder: it is another 1751 code in the volume. **R4369's result stands unchanged** (H 152 / S 304 / M 16 / U 374). No
+merged key was built (brief step 5 is gated on a pass). Calls: 4 Sonnet subagent passes, plus my own reads (contact sheet, 4 edge and
+header strips, 2 crop checks, 2 reconciliation montages). Report what was found and where it was not found: R1953's codes 1-800 have
+no key on R4369 P1-P4 or R4370 P1-P4.
+
+## Remaining gaps (READ2-HEL2, 3 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; not on R4369, and R4370 tested negative at power 1.00 (READ2-HEL2); next: open the Add MS 32276 key records not yet looked at, R4376 (f.56, 1754) and the 1740s records before f.44, contact sheet first, then the same --key test on any sheet carrying 1-800 meanings, ~$6
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the other seven letters (1756, 1763 cluster) - blocker: no-key-material; neither R4369 nor R4370 reads them (controls above), and FT4b/IMG-DECODE1 found no meaning-bearing 1756/1763 Hellen table among the DECODE Add MS 32276 records looked at
+
+## Escalation (READ2-HEL2, 3 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) tested negative as the first half (READ2-HEL2)
 - [n/a] clear-pages: no clear passage of R1953 is known on disk to serve as a crib
-- [x] known-keys: R4369 transcribed and tested here, reads R1953 above every control
+- [x] known-keys: R4369 transcribed and tested, reads R1953 above every control; R4370 transcribed and tested, does not
 - [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
-- [ ] key-rebuild: infer values for codes 1-800 from context in the decoded spans (cryptanalytic, needs its own control), after the R4370 check
-- [x] image-check: R4369 read from the full-size images, two blind passes plus reconciliation
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, needs its own control)
+- [x] image-check: R4369 and R4370 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
-Verdict: keep going: 2 internal gaps; cheapest next: R4370 transcription + --key test for codes 1-800, ~$12
+Verdict: keep going: 2 internal gaps; cheapest next: open R4376 and the pre-f.44 Add MS 32276 key records for codes 1-800, ~$6

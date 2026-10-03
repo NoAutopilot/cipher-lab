@@ -61,3 +61,20 @@ Secondary rows (other seven letters, same script, files above): no letter beats 
 0.155-0.98, coverage 7-34%; lowest bigram p R1046 order 0.025 on 34 tokens with uni p 0.94, not surviving correction) -- R4369 is not their key. Result: **LR100 reads R1953 above every control**; R100 attribution chosen by the test,
 so those values are grade S. Decode H 152 / S 304 / M 16 / U 374 (codes 1-800 absent from the sheet); judge FAIL -0.976 vs real_p05
 -0.954 (null_p99 -1.741), with a calibration on true decodes at this coverage failing 2/8 at -0.972/-0.980 -- judge cannot decide.
+
+## R4370 as codes 1-800 of the Hellen key (READ2-HEL2, account 2, 3 Oct 2026) -- fails at power 1.00, pre-registered k=4
+
+Pre-registration: key_r4370/PREREG.md (f275f41d, before any look). Pass = uni value-shuffle p and bi order-shuffle p both <= 0.0125, power >= 0.8.
+Keys restricted to codes 1-800 (R1953: 349 numeric tokens there). Script: sibling_michell/test_sibling.py --key, seed 1, 200 shuffles each.
+
+| R4370 key on R1953 | covered | uni real | uni shuffle mean / p95 | uni p | pairs | bi real | bi val-shuffle mean | bi val p | bi order-shuffle mean / p95 | bi order p | power uni / bi |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| L | 191 | -9.283 | -9.383 / -8.758 | 0.370 | 48 | -1.047 | -0.809 | 0.985 | -0.837 / -0.648 | 0.985 | 1.00 / 1.00 |
+| R0 | 158 | -10.106 | -10.225 / -9.566 | 0.350 | 28 | -0.817 | -0.811 | 0.510 | -0.797 / -0.615 | 0.535 | 1.00 / 1.00 |
+| R100 | 145 | -10.719 | -10.143 / -9.552 | 0.935 | 29 | -0.830 | -0.822 | 0.550 | -0.831 / -0.628 | 0.505 | 1.00 / 1.00 |
+| LR100 | 243 | -10.036 | -9.664 / -9.221 | 0.875 | 79 | -0.908 | -0.813 | 0.840 | -0.888 / -0.769 | 0.595 | 1.00 / 1.00 |
+| full 1-1000 (rival, outside k) | 341 | -10.259 | -9.849 / -9.518 | 0.950 | 146 | -0.905 | -0.807 | 0.915 | -0.867 / -0.780 | 0.825 | 1.00 / 1.00 |
+
+Secondary rows: no other letter clears 0.0125 on both statistics under any R4370 key. Result: **fail** on every attribution (target vs
+control above); R4370's 801-1000 shares 70 codes with R4369, 0 with the same meaning (rival series). R4369's row above stands.
+
