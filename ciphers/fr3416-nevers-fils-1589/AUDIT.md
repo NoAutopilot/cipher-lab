@@ -105,3 +105,134 @@ The solver's NOTES.md already disclosed the four key-assisted choices and the lo
 over-claim. One sentence needs a qualifier: "Power at the measured 0.239 digit error" should say that 0.239 is the raw
 blind-reader error against the reconciliation, an upper bracket, and that the residual error is unmeasured. I corrected
 this in NOTES.md. No other file over-claims. The SECOND-OPINIONS-QUEUE row SO-NV02-F35 is filed in this session.
+
+## Second audit (VERIFY-FILS-N4, 3 Oct 2026)
+
+Verifier VERIFY-FILS-N4 (account 1, for LANE-A1), 3 Oct 2026, 09:24-09:35 UTC. I'm separate from both the solver and
+VERIFY-NV02. I did no decoding and read no images. The question was whether the two gaps that section 4 named between
+N3 and N4 can be closed. Requests: www.googleapis.com 62 (Books API, `country=US` + key; about 10 answered 503 and were
+retried once at 4 s spacing), archive.org advancedsearch 3, be-api.us.archive.org 2, api.openalex.org 3,
+api.semanticscholar.org 2, api.core.ac.uk 3, api.archives-ouvertes.fr 3, persee.fr 1, scienceblogs.de 2,
+klausschmeh.net 1, ciphermysteries.com 1.
+
+### Gap 1: Boltanski 2006 (*Les ducs de Nevers et l'État royal*, Droz, ISBN 9782600010221)
+
+The book is on Google Books as dsInahmnar8C (PARTIAL view). A second id, UAloAAAAMAAJ, is the same ISBN with NO_PAGES.
+It is not on Internet Archive (advancedsearch by title and by creator). I searched inside it through the Books API
+(`q=<phrase> isbn:9782600010221`).
+
+**How the search behaves.** A single unquoted word returns 0 even for words certainly in the book ("Nevers",
+"Gonzague"). Quoted phrases do work. So every query below that counts was quoted.
+
+**Positive control.** The book cites fr.3416 in the form "Mss. Fr. 3416 , f ° NN". I tested that exact form:
+
+| query | result |
+|---|---|
+| "3416 , f ° 59" | hit (4 Sept 1580, to Brulart) |
+| "3416 , f ° 60" | hit (3 Sept 1580, Nevers to the king) |
+| "3416 , f ° 66" | hit (31 Oct 1589) |
+| "3416 , f ° 80" | hit (14 Dec 1580, to Crillon) |
+| **"3416 , f ° 35"** | **0** |
+| "3416 , fol . 35" | 0 |
+| "3416 , f ° 35 v" | 0 |
+
+The control found 4 of 4 known citations, so the search can find a citation of this form. Matching is if anything
+loose: "3416 , f ° 38" returned a passage showing only f ° 59, and a loose matcher should over-report, not under-report.
+
+**Other quoted queries:**
+
+- "Fr. 3416" Rethelois: 0
+- "Fr. 3416" "fils": 0
+- "Fr. 3416" "son fils": 0
+- "Fr. 3416" chiffre: 0
+- "Rethelois" "1589": 0
+- "déchiffrement": 0
+- "déchiffré": 0
+- "chiffrée": 0
+- "chiffres": 0
+- "son fils" "chiffre": 0
+
+**The queries that hit are not about this letter:**
+
+- "lettres chiffrées": Henriette de Clèves to Louis de Gonzague, April 1585.
+- "chiffre" Nevers: a sum of money (marriage of Catherine de Gonzague).
+- "en chiffre": an army's numbers, 1577.
+- "duc de Rethelois", and "Rethelois" Nevers: lordship and revenues.
+
+**Result.** No citation of fr.3416 f.35 and no decipherment of it is located in Boltanski 2006. Searched by
+positive-controlled phrase search, 3 Oct 2026.
+
+This is a search-inside, not a page-by-page read. The API shows one snippet per query, so it rules out a citation in
+the forms tested, not a paraphrase that never gives the folio.
+
+### Gap 2: the 2003 *Répertoire* hit
+
+The hit is Jean-Philippe Gérard, *Répertoire des ressources généalogiques et héraldiques du Département des manuscrits
+de la BnF* (Mémoire & documents, 2003, ISBN 9782914611145, 394 pp.). It is on Google Books as pxPgAAAAMAAJ and
+2L0WAQAAIAAJ, both NO_PAGES, and it is not on Internet Archive.
+
+Search-inside results:
+
+- "Fr. 3416": matches (2L0WAQAAIAAJ), no snippet.
+- "Fr. 3416" "fol. 35": matches, no snippet.
+- "Rethelois": 0
+- "chiffre": 0
+- "Nevers": 0
+- "Gonzague": 0
+- "Clèves": 0
+- "Fr. 3417" (control): 0
+- "zzqqxx" (null): 0
+
+That "Nevers" and "Gonzague" both return 0 suggests the entry cites f.35 for a genealogical or heraldic item, not for
+the letter as such. That is an inference (grade I).
+
+**Result: the page stays unread.** It cannot be reached from the cloud: NO_PAGES, no IA copy, and the
+books.google.com page view is bot-blocked (Access playbook table). ASKS row 110.
+
+### Gap 3: the remaining rule-10 families
+
+This pass added these families. Section 3's own entries stand.
+
+| family | searched (3 Oct 2026) | result |
+|---|---|---|
+| OpenAlex (key) | "Nevers Rethelois 1589"; "Gonzague Nevers lettres chiffrées"; "duc de Nevers correspondance chiffre" | 3 / 0 / 959 results; none on fr.3416 or a Nevers decipherment |
+| Semantic Scholar (key) | "Nevers Rethelois"; "Gonzague Nevers chiffre 1589" | noise / 0 |
+| CORE (key) | "Nevers Rethelois chiffre"; "Boltanski Nevers" | one relevant-looking hit, the Gallica record of BnF fr.4715 ("Recueil de pièces ... la plupart en chiffre", ark btv1b52509819x), a different manuscript; Boltanski 1999 on Nevers 1614-17, wrong generation |
+| HAL | Rethelois AND chiffre; Nevers AND Rethelois AND 1589; "fr. 3416" | 0 / 0 / 0 |
+| Persée | "Rethelois chiffre Nevers" (first page) | lordship and Ligue context only; nothing on a cipher letter to the son |
+| IA full text (be-api) | "duc de Rethelois" chiffre; "Rethelois" "déchiffrement" | 432 / 690 hits, first pages: poetry, BnF catalogue volumes ("Lettre, avec chiffre et déchiffrement" entries for other manuscripts), local history; nothing on f.35 |
+| Cipherbrain (scienceblogs.de and klausschmeh.net) | ?s=Nevers, ?s=Rethelois | Nothing Found |
+| Cipher Mysteries | ?s=Nevers | Nothing Found |
+| JSTOR | family (i) and (ii) rows already queued (JSTOR-QUEUE.tsv rows 177-178) | unanswered; does not block |
+
+The decoded runs have no phrase distinctive enough to quote. Their longest stretches are ".aisi.nlesauroit" and
+"b.onnefaSUN.as.", so a phrase search on the decode is not meaningful. "bons deniers" (clear text beside run 3) was
+searched in Boltanski (0) and by VERIFY-NV02 in the Books API at large (nothing about this letter).
+
+### Classification
+
+| item | class | key | prior plaintext | prior decipherment |
+|---|---|---|---|---|
+| fr.3416 f.35r figure runs, key no.25 | **N3 (kept)** | published (Tomokiyo's attribution of key no.25 to this letter; the alphabet was read by us from the period key sheet fr.3995 f.51r) | none located | none located |
+
+Why N3 is kept: gap 1 is closed within the limits of a search-inside. Gap 2, the one page that section 4 itself named
+as a condition for N4, is still unread and cannot be read from the cloud. I don't promote on an inference about what an
+unread page says.
+
+What would make it N4: one look at the Gérard 2003 *Répertoire* entry for "Fr. 3416 fol. 35" (ASKS row 110). If the
+entry is genealogical or heraldic, or a catalogue line without a decipherment, N4 follows with no further search.
+
+**Safe sentence:** "Under key no.25, which Tomokiyo identified for this letter, the figure runs at the foot of BnF
+fr.3416 f.35r (the duc de Nevers to his son, c. late 1589) read as French letter fragments, graded 62 of 102 tokens H,
+that outscore 200 shuffled keys at three seeds. No prior decipherment was located in the BnF catalogue, Gomberville's
+1665 *Mémoires*, Boltanski's *Les ducs de Nevers et l'État royal* (2006, phrase search with a positive control),
+Tomokiyo's pages, three solver repositories, the cipher blogs or the open scholarship indexes (searched 3 Oct 2026)."
+
+**Unsafe sentence:** "No prior decipherment located in the principal editions and catalogues". That is the N4 wording,
+and the *Répertoire* entry is unread. Also unsafe: any wording that calls the runs a plaintext of the letter, or calls
+the result new, unread or first.
+
+**Postmortem.** Nothing in the target's files over-claims beyond what section 5 already corrected. Section 4 called
+the Boltanski step a job for the owner's desk or a library copy; it needed only the Books API with quoted phrases,
+because unquoted single words silently return 0. I recorded that behaviour above for the next verifier. The
+SECOND-OPINIONS-QUEUE row SO-NV02-F35 already exists, and the class did not change, so no new row was added.
