@@ -133,6 +133,19 @@ decode.py reads this table; keep the column order.
 | wreathe | gunboat(s) | C | OR 7 p.624, 646 |
 | yankee | (stores? transportation?) | M | ledger p.[7], [45] |
 | youth | arms | I | ledger p.[5], [6], [40] |
+| Arctic | Fremont | C | OR 11 pt3 p.202, 205 (ledger 5069-5070, 31 May-1 June 1862; GAPS118 alignment, print/or_align.py) |
+| Genoa | Washington | C | OR 11 pt3 p.217, 269 (ledger 5073-5074, 5092, June 1862; GAPS118); Feb entries use Ocean |
+| humming | Richmond | C | OR 11 pt3 p.173, 217, 232, 234, 269 (ledger 5060-5092, May-June 1862; GAPS118) |
+| Indus | Fredericksburg | C | OR 11 pt3 p.217, 232, 325 (ledger 5073-5074, 5085, 5110, June-July 1862; GAPS118); on 5049 (13 Mar) "signed Indus" is a signature, so an earlier meaning differs |
+| Jasper | Winchester | C | OR 11 pt3 p.202, 205 (ledger 5069-5070, May-June 1862; GAPS118); Feb entries use Opal (M) |
+| Juno | Gordonsville | C | OR 11 pt3 p.232, 234, 327 (ledger 5085, 5086, 5111, June-July 1862; GAPS118) |
+| panther | advance | C | OR 11 pt3 p.205, 221 (ledger 5070, 5076, June 1862; GAPS118); Feb entries use whig |
+| princess | artillery | C | OR 11 pt3 p.217, 260 (ledger 5073-5074, 5090, June 1862; GAPS118); Feb entries use whack (I) |
+| rampant | (the) enemy | C | OR 11 pt3 p.117, 205, 269, 278, 325 (ledger 5058-5110, Apr-July 1862; GAPS118); Feb entries use whistle (I) |
+| rampants | (the) enemy | C | OR 11 pt3 p.199, 202, 205, 269 (ledger 5064-5092, May-June 1862; GAPS118) |
+| robin | division | C | OR 11 pt3 p.260, 326 (ledger 5090, 5110, June-July 1862; GAPS118) |
+| wedding | transportation | C | OR 11 pt3 p.217, 260 (ledger 5073, 5090, June 1862; GAPS118) |
+| welsh | reinforcements | C | OR 11 pt3 p.232, 234, 258, 269, 270 (ledger 5085-5093, June 1862; GAPS118) |
 | Eugenia | 8 PM (time word) | I | ledger: 7 Feb 7.15 PM, 15 Feb 8 PM twice |
 | Florence | 7 PM (time word) | I | ledger: 6 Feb 7 PM twice, 13 Feb 7 PM |
 | Francis | 11 PM (time word) | I | ledger: 14 Feb 11 PM twice, 15 Feb 11 PM |

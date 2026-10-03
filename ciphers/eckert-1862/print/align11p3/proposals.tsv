@@ -1,0 +1,51 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+andes	6	5	mcclellan	6	mcclellan:6	McClellan	agrees-key
+humming	9	5	richmond	9	richmond:9		propose
+rampant	6	5	enemy	6	enemy:6		propose
+welsh	9	5	re enforcements	9	re enforcements:9		propose
+rampants	4	4	enemy	4	enemy:4		propose
+indus	6	3	frederieksburg	6	frederieksburg:6		propose
+juno	3	3	gordousville	3	gordousville:3		propose
+lather	4	3	james	2	james:2; james river:2	Michigan	conflicts-key
+anthons	2	2	mcdowell	2	mcdowell:2		propose
+arctic	2	2	fremont	2	fremont:2		propose
+arno	2	2	halleck	2	halleck:2	Rosecrans	conflicts-key
+genoa	5	2	washington	5	washington:5		propose
+have	2	2	are	1	are:1; had:1		single
+jasper	2	2	winchester	2	winchester:2		propose
+panther	2	2	advance	2	advance:2		propose
+princess	3	2	artillery	3	artillery:3		propose
+robin	2	2	division	2	division:2		propose
+wedding	2	2	transportation	2	transportation:2		propose
+alden	1	1	banks	1	banks:1	Halleck	conflicts-key
+alvord	1	1	wool	1	wool:1	Buell	conflicts-key
+answer	1	1	dispatch	1	dispatch:1		single
+anthon	1	1	mcdowell	1	mcdowell:1	Banks	conflicts-key
+asia	1	1	uix	1	uix:1		single
+dawn	5	1	fort monroe	4	fort monroe:4; fort:1		single
+eagle	2	1	fort monroe	2	fort monroe:2		single
+important	1	1	supposed	1	supposed:1		single
+ingot	1	1	lynchburg	1	lynchburg:1		single
+ingrate	1	1	williainsburg	1	williainsburg:1		single
+irving	1	1	a lincoln	1	a lincoln:1	Lincoln	agrees-key
+jargon	2	1	charlottesville	2	charlottesville:2		single
+kettle	1	1	newport news	1	newport news:1		single
+object	1	1	reception	1	reception:1		single
+ocean	1	1	washington	1	washington:1	Washington	agrees-key
+offal	1	1	richmond	1	richmond:1		single
+oyster	1	1	attack	1	attack:1		single
+pagans	2	1	batteries	2	batteries:2		single
+palate	1	1	bridges	1	bridges:1	Cairo	conflicts-key
+pastor	1	1	bat tle	1	bat tle:1	St Louis	conflicts-key
+peasant	1	1	cut off	1	cut off:1		single
+persian	2	1	army	2	army:2		single
+quadrant	1	1	cavalry	1	cavalry:1		single
+return	1	1	nature	1	nature:1		single
+segments	1	1	gunboats	1	gunboats:1		single
+shylock	1	1	fall back	1	fall back:1	Nashville	conflicts-key
+tarquin	1	1	movement	1	movement:1		single
+this	1	1	the	1	the:1		single
+wayworn	1	1	army	1	army:1	army	agrees-key
+widow	1	1	re enforcements	1	re enforcements:1	(troops sent, reinforcements?)	conflicts-key
+wish	1	1	do not see	1	do not see:1		single
+yankee	1	1	transportation	1	transportation:1	(stores? transportation?)	conflicts-key

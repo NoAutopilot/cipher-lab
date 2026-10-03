@@ -243,10 +243,48 @@ text) and the OR text (re-fetch from the IA identifiers below).
 - Requests: hdl.huntington.org 173 (one object record + 172 page texts, 1.6 s apart, one empty reply on the front
   cover); archive.org 13 (3 advancedsearch, 10 `_djvu.txt`). No vision, no subagents.
 
+## GAPS118-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: the Verdict's cheapest step -- align the 33 ledger pages that GAPS113 matched to OR ser. I vol. 11 pt 3
+(`3warofrebellion11secrrich`) to the printed text and fix the code words they carry. Script: `print/or_align.py`
+(entries cut at blank lines, anchored by rare word 5-grams, word-level difflib alignment against the print window; a
+1-word ledger token replaced by 1-3 printed words, not a spelling variant or abbreviation, is a candidate; printed
+forms normalised for OCR, rank words and possessives). `tools/interlinear_align.py` was not used: it aligns cipher
+groups to letters of a plain line, while here both sides are words and most are identical, so a word diff fits.
+Outputs: `print/align11p3/align_pairs.tsv` (111 candidate occurrences), `proposals.tsv` (50 ledger words),
+`heldout.tsv`. Inputs re-fetched (not on disk in this container, not committed): the 33 page texts and the vol. 11 pt 3
+`_djvu.txt`.
+- Aligned: 50 entries on 33 pages = 41 distinct telegrams (entries whose print windows overlap are one telegram; the
+  ledger copies a few twice, e.g. 5073/5074).
+- Held-out (rule fixed in the script docstring before scoring): fit on the even telegram groups (27 entries), test on
+  the odd (23): 38 fit words, test 30/31 occurrences give the fit meaning (0.968). Shuffled-pairing control (test
+  entries aligned to another matched telegram's print window, 200 derangements): mean 0.05 hits, p95 0. Known answer:
+  of the 11 key.md C/I words the alignment sees, Andes = McClellan (5 telegrams), Irving = Lincoln, Ocean = Washington
+  and wayworn = army agree.
+- key.md: 13 rows added, grade C, each seen in >= 2 distinct telegrams with one printed meaning and no rival:
+  Arctic = Fremont, Genoa = Washington, humming = Richmond, Indus = Fredericksburg, Jasper = Winchester, Juno =
+  Gordonsville, panther = advance, princess = artillery, rampant/rampants = the enemy, robin = division, wedding =
+  transportation, welsh = reinforcements. `python3 decode.py --check` exits 0 (the ten Feb readings use none of them).
+- Conflicts with key.md, logged not merged (rule 4: a data conflict, witnesses by date): Anthon/Anthons = McDowell in
+  3 telegrams (5058 Apr, 5069 May, 5110 July; OR 11.3 p.117, 202, 326) against key.md Anthon = Banks (I, Feb, p.[11]),
+  agreeing with the Decoding the Civil War blog's 21 Apr 2017 Anthon = McDowell; Alden = Banks once (5110, 17 July,
+  Pope to McClellan, "Culpepper is occupied ... with Alden Sigel & one robin of Anthon", OR p.326 "Banks, Sigel, and one
+  division of McDowell") against Alden = Halleck (C, Feb); Arno = Halleck in 2 telegrams (5096, 5099, 3-4 July; p.291,
+  294) against Arno = Rosecrans (M); Lather = James (River) in 3 telegrams (5091, 5093, 5110; p.269, 270, 326) against
+  Lather = Michigan (C, Feb, OR 7 p.593). These are a later key or keys on the eastern line from spring 1862, as
+  section 3 already suspected (Humboldt, Devon); key.md's single table keeps the Feb values and decode.py is unchanged.
+  Single-telegram pairs (Alvord = Wool, Shylock = fall back, Palate = bridges, Pastor = battle, Jargon =
+  Charlottesville, Ingot = Lynchburg, Kettle = Newport News, Dawn = Fort Monroe, Eagle = Fort Monroe, Persian = army,
+  quadrant = cavalry, Segments = gunboats, Tarquin = movement, Offal = Richmond, ...) stay in proposals.tsv as 'single'.
+- Rule 10: every telegram aligned here is already printed (Official Records ser. I vol. 11 pt 3, 1884): N1 shape. What
+  the alignment adds is the code-word table for the spring-summer 1862 key, not new plaintext.
+- Requests: hdl.huntington.org 34 (33 page texts, one empty reply retried); archive.org 1 (`_djvu.txt`). No vision,
+  no subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages carry at least one entry printed in OR vols. 7 or 9-12 (`print/or_matches.tsv`, positive control 9/9 known, null <= 3 grams); next: align the matched entries to the OR text to fix code words and read them (`tools/interlinear_align.py` or a word diff per entry, then decode.py/key.md), one volume part at a time starting with vol. 11 pt 3 (33 pages), ~$3
-- residue code words not fixed by any known plaintext - blocker: open-codes; about 60 distinct words seen in the first 60 pages, 31 fixed (section 5); only more print matches narrow the rest
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages match OR vols. 7 or 9-12; vol. 11 pt 3 aligned 3 Oct 2026 (GAPS118: 41 telegrams, 13 code words added at C, held-out 30/31 vs control 0.05 hits); next: run print/or_align.py on the vol. 12 pt 3 (27 pages) and pt 1 (13 pages) matches, then decode the unmatched entries of the same months with the enlarged table, ~$3
+- residue code words not fixed by any known plaintext - blocker: open-codes; 31 Feb words fixed (section 5) plus 13 spring-summer words (GAPS118); a second key on the eastern line from spring 1862 conflicts with 4 Feb values (Anthon, Alden, Arno, Lather) and needs a dated key column before those words can be read in later entries
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
 ## Escalation (3 Oct 2026)
@@ -254,7 +292,7 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
 - [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vols. 8 and 51 pt 1 not fetched
-- [ ] key-rebuild: extend the code-word table from the 101 matched pages (print step done 3 Oct 2026); next gap 1's alignment
+- [ ] key-rebuild: vol. 11 pt 3 done (GAPS118, 13 words); vols. 12 pt 1/pt 3, 9, 10 alignments next (gap 1)
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: align the OR-matched entries of vol. 11 pt 3 (33 ledger pages, print/or_matches.tsv) to their printed text and fix the code words they carry, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: run print/or_align.py on the vol. 12 pt 3 and pt 1 matches (40 ledger pages, print/or_matches.tsv) with the same held-out and shuffled control, ~$3
