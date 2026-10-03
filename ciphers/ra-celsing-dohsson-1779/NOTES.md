@@ -1,6 +1,7 @@
 # Celsing–d'Ohsson correspondence with cipher key, 1779-1782
 
 **Status: open**
+Findley, Enlightening Europe on Islam and the Ottomans (Brill 2019; Google Books hf-GDwAAQBAJ, partial view) Books API full-text search by this worker (GF-A2B-2, 3 Oct 2026) for Mouradgea + Celsing + cipher/chiffre/code/key: snippets cite the "Celsing papers" (fol. 79, Pera 6 May 1779; Konvolut 12 p.759 in *Making Sense of Global History*, 2001) but none names a cipher, chiffre or key -- snippet-level, not a page-by-page read.
 
 ## Item
 
@@ -86,3 +87,53 @@ monograph's text or a French/Swedish diplomatic-history bibliography is reachabl
 
 24 Sept 2026: no personal data logged here; the archive request itself (if the person sends it) is logged by
 date and archive only, per CLAUDE.md rule 9.
+
+## Web and blog check (GF-A2B-2, 3 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Celsing d'Ohsson 1779 1782 letters cipher key chiffernyckel` (sender + recipient + date): Wikipedia d'Ohsson, an
+   auction catalogue, History Studies (DOAJ, Nov 2023), travelogues.gr -- biography and the 1784 Paris letter; no cipher.
+2. `"SE/RA/721512" Biby Celsing chiffer` (shelfmark + cipher): unrelated Celsing pages, patents; no hit on the item.
+3. `Mouradgea d'Ohsson Ulric Celsing correspondence deciphered secret dragoman Constantinople` (title; no clear or
+   decoded phrase exists to quote): Kure Ansiklopedi, Cornucopia, authority files, Findley's book page -- no
+   decipherment.
+4. Google Books API (key, country=US), 7 queries: `"Celsing" Ohsson`, `"Celsing" "d'Ohsson" chiffre`,
+   `Celsing Mouradgea`, `Mouradgea Celsing cipher|chiffre|code key`, `"Celsing papers"`: Findley 2019, Findley 2001
+   (*Making Sense of Global History*), Meddelanden från Svenska Riksarkivet 1891, *Svenskarna och Österlandet* 1952,
+   *Türkische ... Urkunden im schwedischen Reichsarchiv* 1945 -- snippets about the Tableau and the Celsing papers, none
+   about a cipher in this correspondence.
+
+Blog site searches:
+- Cipher Mysteries + Cipherbrain + Cryptiana (combined domain filter, "Swedish legation Constantinople cipher 18th
+  century Celsing d'Ohsson"): two unrelated Cipher Mysteries posts (Guinigi, van Heeck); nothing on this item.
+- Cryptiana alone (`cryptiana.blogspot.com`, `cryptiana.web.fc2.com`, "Celsing Ohsson Swedish cipher Constantinople"):
+  no Cryptiana page returned.
+- Cipherbrain alone (`scienceblogs.de`, "Celsing Ohsson schwedische Chiffre Konstantinopel"): Swedish gravestone,
+  Livijn almanac (opened for ra-morner-welin, see there: Livijn 1800, Stockholm University, read in its comments by
+  "Kent" -- unrelated), Catinat, Soglia -- none about Celsing or d'Ohsson.
+
+No plausible hit for this item; no comment thread about it. Requests: WebSearch 6, Google Books API 13.
+
+## Premise check (GF-A2B-2, 3 Oct 2026)
+
+- (a) Folder's own mentions: the catalogue note names a "Chiffernyckel" filed with the letters and an appendix
+  ("bilaga") to the draft of 13 Oct 1780 -- a key beside the letters, possibly a deciphered or clear appendix; not
+  digitised (`onlyDigitisedMaterials: false`, 24 Sept 2026), so not openable. No spec. Unreachable.
+- (b) Other solvers' working files: fresh shallow clones 3 Oct 2026, dbourdeau/cyphersolver (e8b4287) and
+  aaymeloglu/unsolved-ciphers (d2800bb), `grep -rliE "celsing|ohsson|mouradgea"`: one Bourdeau file,
+  targets/roell1809/turk_inv.txt (an inventory naming G. Celsing, 1753 -- unrelated target, as on 24 Sept);
+  Aymeloglu none. Bourdeau's riksarkivet1628 is a 1628-33 group, unrelated. Not found.
+- (c) Physical neighbours: the folder is undigitised; the sibling R2 item (SE/RA/721512/II/II 1/II 1 B/4) is also
+  catalogued without images. Unreachable.
+- (d) Recipient side and the specialist literature: Findley 2019 used the "Celsing papers" (snippet: fol. 79, Pera
+  6 May 1779), and *Making Sense of Global History* (2001) cites them by Konvolut 8 and 12 -- a specialist has read this family's papers, so a reading of cipher passages there
+  cannot be excluded until his notes are read; snippet search found no cipher mention (status line). *Europe and the
+  Porte: Swedish diplomatic reports 1795-1797* (2001) covers d'Ohsson's later dispatches, outside 1779-82. Not found
+  at snippet level; Findley's full text unreachable (partial view).
+
+## While waiting
+
+Waiting on a copy order (REQUEST.md). The one action that depends on nobody: query the Riksarkivet Sök-API
+(`data.riksarkivet.se/api/records`) for every record under SE/RA/721512 (Beskickningsarkivet från Biby) with
+`onlyDigitisedMaterials: true`, to find any digitised volume of the same mission archive (a key or dispatch register
+of the 1779-82 Constantinople legation).
