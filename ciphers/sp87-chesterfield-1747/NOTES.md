@@ -1,5 +1,5 @@
 open
-Full-text search read by this worker (be-api fts on Dobrée's 1932 *Letters* vol.2, archive.org id lettersofphilipd0002bona, control phrase "Chesterfield" confirmed present) plus a fresh Google Books full-text search (key+country=US, 25 Sept 2026) both surfaced real, dated snippets narrating the same Waldeck/Cronstrom/Ginckel affair (Chesterfield's own 1845 printed *Letters* and the 1831 Marchmont Papers, diary of 17 Sept 1747) but neither shows the cipher despatch SP 87/23/41 or /70 itself reproduced anywhere.
+Full-text search read by this worker (be-api fts on Dobrée's 1932 *Letters* vol.2, archive.org id lettersofphilipd0002bona, control phrase "Chesterfield" confirmed present) plus a fresh Google Books full-text search (key+country=US, 25 Sept 2026) both surfaced real, dated snippets narrating the same Waldeck/Cronstrom/Ginckel affair (Chesterfield's own 1845 printed *Letters* and the 1831 Marchmont Papers, diary of 17 Sept 1747) but neither shows the cipher despatch SP 87/23/41 or /70 itself reproduced anywhere. Recipient side opened by GF4-BATCH8 (account-4), 3 Oct 2026: Charteris, *William Augustus, Duke of Cumberland* (1913, IA `williamaugustusd00charuoft`, grepped whole) narrates Waldeck (p. 305) and Cronstrom (pp. 331-332, Aug 1747) from the Cumberland Papers without printing either despatch.
 
 ## Check-solved (LANE CX2, 25 Sept 2026)
 
@@ -131,3 +131,31 @@ served obfuscated for scripts, so a person still has to read the held loan in th
 - S: pin the exact Marchmont Papers page for the Cronstrom/Waldeck passage via a sixth OCR source or a different archive.org scan -- five copies all have an OCR gap on this page, though Google's own snippet shows it.
 - S: search Basil Williams and the Cumberland Papers (Windsor) editions, this target's own named unsearched edition risk, via archive.org/HathiTrust.
 - S: full-text search Dobrée vol. 2 (already fts-searchable, no login) for 'S.P.' or 'State Papers' near the Waldeck passage, to see whether it cites SP 87/23 directly rather than SP 84 -- without needing to borrow the book.
+
+## Web and blog check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Chesterfield Cumberland 1747 cipher Waldeck Cronstrom despatch deciphered` -- TNA Discovery/beta catalogue
+pages for SP 87/23/41 (C9040584) and a neighbour, Bourdeau's index page, Wikipedia (Fontenoy, Lauffeldt); no decipherment named.
+(2) site-restricted to the three blogs, `Chesterfield 1747 cipher` on **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne: musical
+cryptogram, Urquhart, Henry II device, Ferdinand III, an 1897 newspaper ad), **Cipher Mysteries** (ciphermysteries.com: Gentlemen's
+Cipher 1748, early American ciphers, Blitz) and the **Cryptiana blog** (cryptiana.blogspot.com: no hit; Tomokiyo's only Chesterfield
+item is the 2nd Earl's 1659 letter, already noted above); no post or comment thread names SP 87/23. Solver repositories re-cloned
+shallow 3 Oct 2026 and grepped (`SP ?87/23|cronstrom`): zero hits in Bourdeau's and Aymeloglu's.
+
+## Premise check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md and REQUEST.md name no decipherment, gloss or clear copy of
+/41, /51 or /70; the SP 87 class-wide "deciphered" sweep (8 hits) has none in piece 23. (b) Other solvers' working files: **not
+found** -- no SP 87 folder or rendering in either solver repository. (c) Physical neighbours: **unreachable** -- all three items and
+/71 (Cumberland's enclosed letter to the Prince of Orange) are `digitised: false`; the piece sweep found no other cipher-flagged item.
+(d) Recipient's side: **not found** -- Cumberland's papers (Royal Archives, Windsor) are printed only in extract by Charteris,
+*William Augustus, Duke of Cumberland: his early life and times* (1913; IA `williamaugustusd00charuoft`, grepped whole 3 Oct 2026):
+Waldeck at p. 305 ("difficulties with"), Cronstrom at Bergen-op-Zoom, Aug 1747, pp. 331-332 -- narration, no despatch of Chesterfield's
+printed. Mahon's 1845 *Letters* (IA BSB scans 10402489bsb, 10402490bsb, 10402492bsb, vol. I and IV among them) grepped: no Waldeck or
+Cronstrom in their OCR (the passage Google's own scan shows is in a private letter, as the 25 Sept sweep found). Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH8)
+
+Waits on: the TNA page copy of SP 87/23/41, 51, 70 (ASKS row 57) and a person reading Dobrée vol. 2 in an IA loan.
+
+- S: grep the Newcastle-side printed sources (Coxe, *Pelham Administration*, 1829, on archive.org) for July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland -- a free crib source for the cipher passages, no person needed.
