@@ -439,3 +439,57 @@ f.72v (canvas f144) carries no.39's "symbols and figures" table on the facing si
 sheet then a strip read; same script, new key file); (e) a target-image pass on the f.148r-149r cipher runs, settling which
 target signs are figures vs symbols and whether 'o' is a 0 or a sign, before any further figure-key test (~$5); (d) the as-sent
 packet on Villeroy's side (finding aids, ~$3). All depend on nobody.
+
+## fr.3995 f.72v and the no.43 table (canvas f159) (VILL-7280, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-7280.md`. Intake gate: "open (line 1) -- edition/page or full-text-search
+citation found within 6 lines", exit 0. Pre-registered before any image was viewed: `fr3995/PREREG-VILL-7280.md` (commit 7252c082),
+rules unchanged from PREREG-VILL-STRIPS.
+
+**f.72v (canvas f144, no.39): no table.** The verso of the small 1591 slip carries only a docket written sideways, "+ 1591 /
+Chiffre extraict d'une lettre ... escrite ... pour son secretaire" (thumbnail at 900 px, not read further); the rest is blank,
+and there is no mirrored ink suggesting a table on f.72r either (VILL-KEYS saw only "1591" and the endorsement there). Whatever
+"symbols and figures" Bourdeau's checked set lists for no.39 is not a table on f.72. Canvas f143 answered 503 once (not retried).
+
+**f.80 (no.43).** f.80r (canvas f158) is a small slip mounted on a guard: "... + 22 Novem 1591 / Chiffre", foliated "80", with a
+ruled-table show-through. The next canvas, **f159, is a full leaf foliated "81" in ink** (manifest: f158 = 80r, f160 = 81v; no
+separate 80v canvas was found), carrying a complete table written sideways: alphabet strip down the right edge, a "Nulles" box
+(about six symbols), and a nomenclator of Picardy places (Abbeville, Rue, Amiens, Corbie, S Quentin, Moreuil, Compiegne) and
+persons (Mr de Longueville, Mr de Humieres, ...) with two-figure codes 20-80. The ink reads the right way round (not show-through).
+Its attribution to no.43 is likely (heading on f.80r, show-through of a ruled table) but not certified.
+
+Crops (pasted):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 159 --region 4060,220,520,3460 --out <scratch> --prefix f159_strip \
+        --centres 430,1290,2150,3010 --lines-per-crop 1 --max-width 2400 --overlap 100 --debug      # 4 bands
+    # committed: images/fr3995/f159_strip_L01-4.jpg + f159_strip_rotated_stack.jpg (bands rotated 90 deg CCW for reading)
+
+Key (one blind read, `keys/key_f159_letters.tsv`): figures cover only eight letters -- a 19 18, b 16, c 15 14, d 13 12, e 11 10,
+i 7 8 6, l 5 4, o 3 2 1 (8 and 1 graded I) -- and every other letter is a symbol: f epsilon-like, g N-with-flourish, h alpha/cross
+loop, m omega, n psi, p curly phi/varsigma, q overbarred zigzag, **r lambda**, s two cross-hatched stars, t v, u a thick pi-like p,
+x +, y square; the z column is cut off at the leaf edge (not read).
+
+**Family signs: this table carries lambda (= r), a pi-like sign (u) and an infinity-free Nulles box** -- the first fr.3995 table
+seen in this folder with the target's commonest symbol (lambda, 17 in the target). Not certified identical to the target's
+lambda (no target image viewed in this job).
+
+**Gates** (`strips_score.py`, now three rows; `--check` exits 0):
+
+| table | coverage | reader err | power (rank 1 of 201, 20 synthetic French texts) | target letters | score | rank | z | verdict |
+|---|---|---|---|---|---|---|---|---|
+| f159 (no.43?) | 0.591 | 0.065 | **8/20** | 282 | -- | -- | -- | **non-test** (power < 16/20, stop before scoring) |
+
+Rule 3, both numbers: control power 8/20 against the pre-registered 16/20, so the target was not scored. Why: the figures here
+spell only a b c d e i l o, so a figure-only decode is an eight-letter text whose 4-grams cannot separate the real key from value
+shuffles. This is not a negative for the table. By eye the figure-only decode is dominated by 'o' (the target's 1/2/3 figures):
+"alododoodaicoooillocoloidioi...". Grade counts in the cipher: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Requests: gallica.bnf.fr 4 thumbnails (900 px; one 503) + 1 manifest pass (tools/gallica_folio.py, twice) + 1 info.json + 1
+native region, about 2 s apart. Vision reads: 4 (thumbnails f159+f144 together, f158, the rotated strip stack). Rule 10: no novelty claim.
+
+Verdict after VILL-7280: `open`. Next steps, cheapest first: (e') a target-image sign pass on the f.148r-149r cipher runs that
+settles which target signs match this table's symbols (lambda, the pi-like u, omega, psi, v, +, square, stars), then rescore with
+figures + certified signs -- with lambda = r and the symbols counted, the f159 key would cover nearly every token and the power
+control would no longer be an eight-letter text (~$5 image pass + ~$1 rescore, power gate first); (f) read the f159 Nulles box and
+the nomenclator codes 20-80 (the target's two-figure groups such as 72 for the Spanish may be nomenclator codes, cf. "72 ne
+puissent" in the clear) (~$2); (d) the as-sent packet on Villeroy's side (~$3). All depend on nobody.

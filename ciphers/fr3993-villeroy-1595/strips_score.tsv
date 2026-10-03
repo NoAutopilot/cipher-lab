@@ -1,3 +1,4 @@
 strip	coverage	reader_err	power_rank1_of_20	power_verdict	target_letters	target_score	target_rank	target_z	verdict
 f74v(no.40)	0.591	0.015	20	powered	146	-2.201	107/201	-0.13	FAIL
 f104v(no.58)	0.591	0.152	18	powered	217	-2.107	41/201	0.83	FAIL
+f159(no.43?)	0.591	0.065	8	non-test	282				stop (power below 16/20)

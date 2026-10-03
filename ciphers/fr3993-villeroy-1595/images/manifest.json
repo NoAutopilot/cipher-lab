@@ -296,6 +296,118 @@
     ]
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fr3995/f159_strip_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/4060,220,520,3460/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f159_4060_220_520_3460.jpg",
+   "box": [
+    4060,
+    220,
+    4580,
+    1080
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     430,
+     1290,
+     2150,
+     3010
+    ]
+   },
+   "date": "03 Oct 2026",
+   "note": "VILL-7280; rotated 90 deg CCW and stacked as fr3995/f159_strip_rotated_stack.jpg for reading"
+  },
+  {
+   "crop": "fr3995/f159_strip_L02.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/4060,220,520,3460/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f159_4060_220_520_3460.jpg",
+   "box": [
+    4060,
+    1080,
+    4580,
+    1940
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     430,
+     1290,
+     2150,
+     3010
+    ]
+   },
+   "date": "03 Oct 2026",
+   "note": "VILL-7280; rotated 90 deg CCW and stacked as fr3995/f159_strip_rotated_stack.jpg for reading"
+  },
+  {
+   "crop": "fr3995/f159_strip_L03.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/4060,220,520,3460/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f159_4060_220_520_3460.jpg",
+   "box": [
+    4060,
+    1940,
+    4580,
+    2800
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     430,
+     1290,
+     2150,
+     3010
+    ]
+   },
+   "date": "03 Oct 2026",
+   "note": "VILL-7280; rotated 90 deg CCW and stacked as fr3995/f159_strip_rotated_stack.jpg for reading"
+  },
+  {
+   "crop": "fr3995/f159_strip_L04.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/4060,220,520,3460/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f159_4060_220_520_3460.jpg",
+   "box": [
+    4060,
+    2800,
+    4580,
+    3660
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     430,
+     1290,
+     2150,
+     3010
+    ]
+   },
+   "date": "03 Oct 2026",
+   "note": "VILL-7280; rotated 90 deg CCW and stacked as fr3995/f159_strip_rotated_stack.jpg for reading"
   }
  ]
 }

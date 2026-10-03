@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""VILL-STRIPS (3 Oct 2026): decode the target's figure tokens with the fr.3995 f.74v / f.104v letter strips
+"""VILL-STRIPS (3 Oct 2026; VILL-7280 added the canvas f159 table, keys/key_f159_letters.tsv, same rules, fr3995/PREREG-VILL-7280.md): decode the target's figure tokens with the fr.3995 f.74v / f.104v letter strips
 (keys/key_f74r_letters.tsv, keys/key_f104r_letters.tsv), score with the fr16 4-gram model of tools/judge_plaintext.py,
 rank against 200 value-shuffled keys, and run the PREREG-VILL-STRIPS power control (20 synthetic French texts at the
 target's own length and coverage, at the strip's measured reader error) first.
@@ -77,7 +77,7 @@ def main():
     model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA["fr"]])
     lines = tokens(); ntok = sum(len(t) for t in lines); nfig = sum(1 for t in lines for x in t if x in DIG)
     rows = ["strip\tcoverage\treader_err\tpower_rank1_of_20\tpower_verdict\ttarget_letters\ttarget_score\ttarget_rank\ttarget_z\tverdict"]
-    for name, kp in [("f74v(no.40)", "keys/key_f74r_letters.tsv"), ("f104v(no.58)", "keys/key_f104r_letters.tsv")]:
+    for name, kp in [("f74v(no.40)", "keys/key_f74r_letters.tsv"), ("f104v(no.58)", "keys/key_f104r_letters.tsv"), ("f159(no.43?)", "keys/key_f159_letters.tsv")]:
         key, grade = load_key(HERE / kp)
         cov = nfig / ntok
         if cov < 0.5:
@@ -97,7 +97,7 @@ def main():
     if "--check" in sys.argv:
         sys.exit(0 if f.exists() and f.read_text() == out else 1)
     f.write_text(out); print(out)
-    for name, kp in [("f74v", "keys/key_f74r_letters.tsv"), ("f104v", "keys/key_f104r_letters.tsv")]:
+    for name, kp in [("f74v", "keys/key_f74r_letters.tsv"), ("f104v", "keys/key_f104r_letters.tsv"), ("f159", "keys/key_f159_letters.tsv")]:
         key, _ = load_key(HERE / kp); print(name, decode(segment(lines, key), key)[:160])
 
 if __name__ == "__main__":

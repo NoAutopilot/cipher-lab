@@ -1,0 +1,39 @@
+# fr.3995 canvas f159 (leaf foliated "81" in ink, top right; manifest: f158 = 80r, f160 = 81v), table written sideways:
+# alphabet strip down the right edge, "Nulles" box, nomenclator (Abbeville, Rue, Amiens, Corbie, S Quentin, Moreuil, Compiegne;
+# Mr de Longueville, Mr de Humieres ...). Attribution to no.43 (f.80r heading "22 Novem 1591 / Chiffre", whose recto shows a
+# ruled-table show-through) is likely but not certified. Strip read by VILL-7280 3 Oct 2026 from native crops (iiif_lines,
+# region 4060,220,520,3460, rotated 90 deg for reading), one blind read. z column cut off (not read). code<TAB>letter<TAB>grade
+# Symbols named: EPS = epsilon-like (f); NFL = N with flourish (g); AX = alpha/cross loop (h); OMEGA (m); PSI (n);
+# VARPHI = curly phi/varsigma (p); ZBAR = overbarred z-like zigzag (q); LAMBDA (r); STAR1, STAR2 = two cross-hatched stars (s);
+# V (t); PTHICK = thick p-shape, pi-like (u); PLUS (x); SQX = square (y).
+19	a	M
+18	a	M
+16	b	M
+15	c	M
+14	c	M
+13	d	M
+12	d	M
+11	e	M
+10	e	M
+EPS	f	M
+NFL	g	M
+AX	h	M
+7	i	M
+8	i	I
+6	i	M
+5	l	M
+4	l	M
+OMEGA	m	M
+PSI	n	M
+3	o	M
+2	o	M
+1	o	I
+VARPHI	p	M
+ZBAR	q	M
+LAMBDA	r	M
+STAR1	s	M
+STAR2	s	M
+V	t	M
+PTHICK	u	M
+PLUS	x	M
+SQX	y	M
