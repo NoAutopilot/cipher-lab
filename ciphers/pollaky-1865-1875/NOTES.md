@@ -487,6 +487,55 @@ Found:
 - **Side find for gap 2 (not worked):** Clay prints 37 items naming Pollaky, 1861-1870 (print/clay1881_pollaky_items.tsv). Several are digit-group or mixed-number ads absent from Schmeh's twelve-ad list, e.g. 1430 (19/23 Jan 1865, 119 digits), 1466 (24 May 1865), the DIPLOMAT series 1499/1500/1502 (Nov 1865), 1582 (Feb 1867) and 1611 (Aug 1867). Some may be addressed to Pollaky rather than written by him. This is a larger sibling pool for ad 2's number family than the two on disk.
 Requests per host: be-api.us.archive.org 22, archive.org 4, ia801801.us.archive.org 1, www.googleapis.com 2. No 429/403.
 
+## GAPS174-pollaky-1865-1875 (3 Oct 2026, account-4): gap 1 eye pass on Clay 1881 and topic-crib test
+
+**Step 1, the 1881 print of ad 1 (3 Oct 2026, 17:12-17:20 UTC).** The page image GAPS172 fetched, images/clay1881-p257-n281.jpg,
+is **not** p. 257. IA leaf n281 is p. 258 (items 1460 end, 1461-1464; seen in vision call 1). Leaf n280 (fetched now, one
+archive.org request, saved as images/clay1881-p256-n280.jpg; despite the filename, the page it shows is **p. 257**) carries item
+1459 at y about 2760-3220 (line centres 2762 header, 2851, 2953, 3058, 3159, from `tools/iiif_lines.py --image ... --dry-run`).
+Vision call 2 was on the wrong strip too (1460 plus the p. 258 head), so I did not spend a third. Instead I ran a
+connected-component count on the two sign lines (scipy.ndimage, threshold 140, y 2905-3005 and 3010-3110 of n280; script inline,
+counts in the table). That is a script reading of the 1881 typeset, not an eye reading:
+| sign | 1881 components | our table | agrees |
+|---|---|---|---|
+| 01 | dash w162 + 2 dots above | 1S 2P | yes |
+| 02 | 3 stacked dots, bar h81, 1 dot above-right, 1 below-right | 1S 5P | yes |
+| 03 | 3 stacked dashes + 2 stacked dots right | 3S 2P | yes |
+| **04** | **dash + 4 dots cascading down-right (x 1955/1983/2021/2045, y 2916/2933/2957/2973)** | **1S 3P** | **no: 4 dots, Laura's D** |
+| 05 | bar h81 + 1 dot right | 1S 1P | yes |
+| 01 | dash + 2 dots above | 1S 2P | yes |
+| 07 | ( 3 stacked dots ) | paren 3P | yes |
+| 08 | dash + 3 dots above | 1S 3P | yes |
+| 09 | 2 stacked short dashes, dot above, dot below | 2S 2P | yes |
+| 10 | 3 stacked dots, 3 bars, 1 dot | 3S 4P | yes |
+The 1881 print has **"I shall return"** after sign 10, so the clear frame's right side is "I shall", not "shall" as ciphertext.txt
+and GAPS160's T statistic have it. So sign 04 = 1 dash, 4 dots. The print agrees with the redrawing on the other nine signs.
+This is still a print rendering (1881), not the Times page (rule 2).
+
+**Step 2, pre-registration (written and committed before any scoring, 3 Oct 2026, about 17:22 UTC).**
+Hypothesis: under Laura's rule (GAPS160; sign 04 now 4 dots, X = rule(signs) = "bendabuchp"), the 10 signs read a phrase on the
+topic of sibling clear ad Clay 1465 (24 May 1865, same "T.": "Citation duly served, all in best order. You may rely on my
+returning about the middle of June."). The crib is a probable topic, not known plaintext.
+Crib set, fixed here: S1 = every 10-letter window starting at a word start in the letters of the 1465 text;
+S2 = the same windows from these paraphrases: "serve the citation", "have the citation served", "get the citation served",
+"the citation served", "citation served", "serve it on him", "serve it on her", "serve the summons", "serve the writ",
+"serve the papers", "have it served", "it was served", "it is served", "duly served". Phrases under 10 letters give no window.
+Statistic M(X) = max over all crib windows c of the count of positions i with X[i] == c[i]; best window reported.
+Controls at N=10, all under the same rule so M can differ from the target by construction: (A) 2000 shuffled orders of the
+target's own signs (the alignment against the crib changes with order); (B) 2000 random 10-sign strings over the rule's 21
+cells; (C) the target's signs under the 104 sibling rules (GAPS160), rank of Laura's. Positive controls: (P1) 2000 crib
+windows restricted to a-u, encoded and decoded under the rule (exact crib, identity: M = 10); (P2) the same with 3 of 10
+letters replaced at random (a near-topic or partly wrong crib); power = share of P above B's p95.
+Decision: "topic crib supported" only if M > p95 of A and of B AND Laura ranks <= 5 of 104 in C AND P2 power >= 0.5. If
+the powers are >= 0.5 and the target fails, the result is "these cribs are not read under Laura's rule" (control-backed for
+this crib set and rule only, not a negative on the design or on the topic). If P2 power < 0.5, the result is "untestable
+at N=10".
+Descriptive, no decision: under any simple substitution, the share of crib windows that fit the sign-repeat pattern
+ABCDEAFGHI (positions 1 and 6 equal, the other 8 letters distinct from each other and from A), against the same share in
+2000 random English corpus windows.
+Grades (rule 4): M at most unless supported. If supported, S only on letters inside a matched crib window of two or more
+words. Seed 174. Script: scripts/topic_crib.py.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 0 of 4 ads read in this repo. Ad 1 is 0/10 signs, ad 2 is 0/36 digit groups (36 counts "9:77314" as two groups; 35 if it is one), and ads 3-4 are 0/72 letter-words re-derived here (NOTES.md Test 1 table, Test 2 diff). There is no key, decode script, AUDIT.md or HYPOTHESES.md here, and nothing is graded. The ads 3-4 ciphertext is corroborated: two passes agree on 78/80 tokens, and the text matches Ernst's BNA-checked text 72/72. Their community readings are tracked in ciphers/catokwacopa-1875, which has its own gaps section (1 Oct 2026). Pollaky's authorship of ads 3-4 is Schmeh's attribution (post 29; 2 Oct 2026: the W. ads are not among the twelve ads "signed by Pollaky" in his 2014-15 list, only in the 2016 post's sentence, GAPS section above). The ads are signed "W.", not Pollaky, and this repo has not established the attribution.
 - Ad 1 (16 May 1865): 10 invented signs inside a plaintext sentence - blocker: not-attempted; statistics cannot help at N=10 (K=9, SIGN-01 repeats at positions 1 and 6; IC 0.0222 falls inside both N=10 control scatters, NOTES.md Test 1). Two cheap internal steps are still untried. First, the signs are built from a few parts (dots, dashes, bars, one bracket pair; ciphertext.txt sign table), so a compositional design (part counts or positions to letters or numbers) can be tested directly. Second, the clear frame "...fortunately in time to [10 signs] shall return to England..." is a crib. Also, the on-disk image is a modern redrawing (clean vector signs, modern serif type, no paper texture; viewed 1 Oct 2026), not the newspaper page (rule 2), so sign details are conditional on the redrawer; next: run a component-decomposition plus frame-crib test with Laura's bars-x-dots rule (part 1 comment #4, 25 Aug 2016, reads B E N D A B U C H P; recorded 2 Oct 2026) as the pre-registered candidate, scoring the same rules on shuffled-sign and random-sign controls of N=10 and reporting both numbers; find the original newspaper and date through the print step, ~$2; 3 Oct 2026 (GAPS160 section above): the component test ran -- Laura's rule gives "bencabuchp" (our sign 04) / "bendabuchp" (hers); frame-bigram T -1.14 beats shuffled-sign p95 -1.29 (tail 0.002) and random-sign p95 -1.20 (tail 0.019), rank 1 of 104 sibling rules, positive-control power 0.98: supported as a design candidate on T; word coverage W 0.6 = random p95 0.6, so no word reading clears its control; 10 letters M, none read. 3 Oct 2026 (GAPS172 section above): print step ran -- The Times, 16 May 1865 (Clay 1881 item 1459, p. 257, page image on disk, unread); SIGN-A is the addressee "T."; sibling clear ad Clay 1465 (24 May 1865, same "T.") gives a probable topic, "Citation duly served"; no printed reading found. Next for gap 1: one eye pass on images/clay1881-p257-n281.jpg to settle sign 04 and the 1881 sign shapes against the redrawing, then a pre-registered topic-crib test (citation/serve vocabulary, sign-01 repeat at positions 1 and 6 as a constraint) of Laura's rule and its siblings with shuffled-sign controls, ~$2
