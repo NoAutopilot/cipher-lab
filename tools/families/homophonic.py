@@ -43,7 +43,9 @@ prints the design's recovery ceiling (1 - (merged count - largest member count)/
 compare the control's recovery with that ceiling, not only with the gate. Must catch: a solver that reads a clean
 homophonic control but not this design (a control under the gate then says the design, not the length, is the
 limit -- rule 3's Salviati lesson). Must NOT change: merge=0 nulls=0 (or absent) is byte-for-byte the old
-behaviour (tools/tests/test_homophonic_merge.py checks both).
+behaviour (tools/tests/test_homophonic_merge.py checks both). --param noise=p applies to this design too (GAPS50,
+3 Oct 2026: before then it was silently ignored here, so a merge/nulls control "at the measured error" was clean);
+profile=target is still not applied to the merge/nulls allotment.
 
 wild=<sign>[,<sign>] (H25, 28 Sept 2026, spinelli-beinecke-c1515): solver side of the same design -- every occurrence of
 a wild sign is annealed as its own pseudo-sign, i.e. a per-position free letter chosen by the n-gram model with the
@@ -197,6 +199,9 @@ def make_control(spec, seed, corpora, params):
     merge, nulls = int(params.get("merge", 0) or 0), float(params.get("nulls", 0) or 0)
     if merge or nulls:
         seq, plain, truth, info = _make_control_merged(text, N, K, seed, params, _target_sign_counts(params))
+        noise = float(params.get("noise", 0) or 0)
+        if noise:  # GAPS50 3 Oct 2026: noise was silently ignored on this branch; same redraw rule as the plain design
+            seq = _inject_noise(seq, noise, _target_sign_counts(params), seed)
         print("homophonic merge/nulls control (seed %d): merged letters %s (share %.3f of %d letter tokens), "
               "%d null tokens over %d null signs, %d signs in all, recovery ceiling %.3f" % (
                   seed, "".join(info["merged"]) or "-", info["merged_share"], info["M"], info["n_null"],

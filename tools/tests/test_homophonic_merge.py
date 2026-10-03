@@ -9,6 +9,7 @@ spinelli-beinecke-c1515). No network, no anneal (make_control only -- fast). Che
     1.0; one letter wrong scores (M-1)/M.
 (3) merge=0 nulls=0 (and the params absent) is byte-for-byte the old control (must NOT block: the plain
     homophonic control every earlier HYPOTHESES.md row rests on).
+(4) noise=p on a nulls control redraws about a share p of tokens, plain unchanged (GAPS50, 3 Oct 2026).
 Run: python3 tools/tests/test_homophonic_merge.py"""
 import os, sys
 from collections import Counter
@@ -98,8 +99,23 @@ def test_default_unchanged():
     print("ok: merge=0 nulls=0 is the old control unchanged")
 
 
+def test_nulls_noise_applied():
+    # (4) GAPS50, 3 Oct 2026: noise=p on a nulls control redraws tokens (it was silently ignored); noise absent unchanged
+    import io, contextlib
+    corpora = _corpora()
+    N, K = 262, 25
+    base = {"N": N, "K": K, "target_msgs": [_target()], "nulls": "0.1"}
+    with contextlib.redirect_stdout(io.StringIO()):
+        clean, plain0, _ = hf.make_control({}, 3, corpora, dict(base))
+        noisy, plain1, _ = hf.make_control({}, 3, corpora, dict(base, noise="0.1"))
+    assert plain0 == plain1 and len(clean[0]) == len(noisy[0]) == N
+    diff = sum(a != b for a, b in zip(clean[0], noisy[0]))
+    assert 5 <= diff <= 50, diff
+
+
 if __name__ == "__main__":
     test_merge_nulls()
+    test_nulls_noise_applied()
     test_score_recovery_skips_nulls()
     test_default_unchanged()
     print("all ok")
