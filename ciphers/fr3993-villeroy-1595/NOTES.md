@@ -318,5 +318,66 @@ cached manifest read, about 2 s apart, no block. Vision calls 2 (as planned). Ru
 Verdict after VILL-KEYS: `open`. Next steps, cheapest first: (a) native read of the f.74r (Doncheri, 20 Aug 1591) and
 f.104r (23 Jul 1593) letter strips, two crops each (~$3), checking for the family signs at native resolution and, if
 coverage >= 0.5 holds, scoring them under PREREG-VILL-KEYS rule 3 with the value-shuffled control; (b) f.80v (canvas f159)
-viewed for no.43's table (~$1.5); (c) Nevers's letters to Henri IV of 23 and 25 July and 3-31 Aug 1595 located in
-fr.3992-3994 and checked for the same cipher, to pool signs; (d) the as-sent packet on Villeroy's side. All depend on nobody.
+viewed for no.43's table (~$1.5); (c) [done, VILL-SIBS 3 Oct 2026: the six digitised Nevers-to-King letters,
+fr.3993 ff.40/46/82/99/204/235, are clear; fr.3994 ff.6/44 not digitised; no pool. One same-sender cipher
+letter found instead: fr.3994 f.134, Nevers to his son, 17 Sept 1595, not digitised, needs a reproduction]; (d) the as-sent packet on Villeroy's side
+(Villeroy papers finding aids, ~$3). All depend on nobody.
+
+## Nevers to Henri IV, 23 Jul - 31 Aug 1595: located, none in cipher (VILL-SIBS, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-sibs.md`. Intake gate 10:04 UTC: "open (line 1) -- edition/page or
+full-text-search citation found within 6 lines", exit 0. Job: find the letters VILL-147's f.149v docket names (copies of
+Nevers to the King of 23 and 25 Jul and 3, 6, 13[?] and last of Aug 1595, sent in the packet with the original of no.102),
+and say which carry cipher.
+
+**Source.** BnF archivesetmanuscrits finding aid for Français 3974-3995 (ark:/12148/cc504266; the page serves the whole
+dépouillement), fetched by curl 3 Oct 2026, grepped for Nevers letters "au roi/au roy" dated 20 Jul - 31 Aug 1595.
+Availability flags read on the volume records: fr.3993 (cd0e33226) "Version numérisée ... gallica.bnf.fr/ark:/12148/
+btv1b9059229n"; **fr.3994 (cd0e35499) carries no "Version numérisée" line, i.e. not digitised** (Tomokiyo's League page,
+`sources/cryptiana/web/league.htm` l.646-649, also says "Images not available online"). fr.3992 ends 30 Jun 1595 (its
+last Nevers items are June), so it holds none of these dates.
+
+**Canvases.** The fr.3993 manifest has no folio labels (279 canvases, all "NP"), so `tools/gallica_folio.py` cannot map
+folios; canvases were placed by reading the folio number and date on 808 px thumbnails. The canvas-folio offset drifts
+(+7 at f.46, +9 at f.82-104, +13 at f.204, +14 at f.235), so VILL-147's +13 anchor at f.148 does not carry back.
+
+| date (docket) | catalogue entry | shelfmark, folio | Gallica canvas | catalogue flag | seen at 808 px |
+|---|---|---|---|---|---|
+| 23 Jul 1595 | no.21, Nesle, minute | fr.3993 f.40 | 47 (right) | none | clear French prose, heavy deletions; no cipher run |
+| 25 Jul 1595 | no.26, Amiens "mardy 25 juillet au soir", minute | fr.3993 f.46 | 53 (right) | none | clear; no cipher run |
+| 3 Aug 1595 | no.47, Amiens, minute | fr.3993 f.82 | 91 (right) | none | clear ("Sire, Je ne diray point..."); no cipher run |
+| 6 Aug 1595 | no.63, Corbie, copie | fr.3993 f.99 | 108 (right) | none | clear, short; no cipher run |
+| "13[?]" Aug | no letter to the King dated 13 Aug in the catalogue; nearest is no.134, St Quentin 18 Aug, copie (the docket's "13" may be "18", not settled) | fr.3993 f.204 | 217 (right) | none | clear; no cipher run |
+| (not in docket) | no.157, St Quentin 23 Aug, copie | fr.3993 f.235 | 249 (right) | none | clear, dense; no cipher run |
+| (not in docket) | no.5, St Quentin 26 Aug, copie | fr.3994 f.6 | not digitised | none | not seen |
+| last of Aug 1595 | no.34, St Quentin "ce dernier d'aougst 1595", copie | fr.3994 f.44 | not digitised | none | not seen |
+
+Contact sheets (committed): `images/sheet_sibs_c53-249.jpg` (canvases 53, 54, 59, 60, 95, 96, 112, 113, 217, 218, 248, 249;
+the first pass, which found the offset drift) and `images/sheet_sibs2_c47-108.jpg` (47, 89, 90, 91, 108). Every 808 px
+thumbnail was fetched as `https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059229n/f<N>/full/808,/0/native.jpg`.
+
+**Result.** All six digitised letters (ff.40, 46, 82, 99, 204, 235) are clear prose at contact-sheet resolution, and the
+catalogue marks none of the eight "avec chiffre" (it does mark no.102 itself, and every Balagny/Petit/Charles cipher
+letter in the same weeks). So Nevers's own file copies of his letters to the King in July-August 1595 do not supply a
+pool of the no.102 cipher: **pooling from this set: none found** (conditional on 808 px, where a short cipher run inside a
+line could be missed; a foot-of-page block like no.102's is visible at 500 px, per the check-solved section above). The two
+fr.3994 letters (26 and 31 Aug) were not seen; the catalogue does not flag them either. Inferred, not checked: the docket's
+packet copies were probably clear, and the cipher in no.102 was for Villeroy alone (the letter's "affin que 72 ne
+puissent prendre cognoissance de noz affaires").
+
+Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read in the cipher). Vision calls: 2 contact sheets (1 over the planned 1:
+the first sheet's +13 offset guess missed ff.40, 82, 99). Requests: archivesetmanuscrits.bnf.fr 4 (1 reset, retried once
+after 20 s), gallica.bnf.fr 18 (12 + 5 thumbnails + 1 retry after a connection reset; 1 SRU query, 0 records), 1.6 s apart.
+Rule 10: no novelty claim; search and view results only.
+
+**Pooling next step, priced.** Not within Nevers-to-King. The remaining pool candidates are: (i) other Nevers outgoing
+letters "avec chiffre" in fr.3993-3994 (grep of the whole dépouillement of both volumes for "chiffre" in a Nevers-sender
+entry): exactly one besides this letter, **fr.3994 f.134 no.102, Nevers "à son filz [the son is presumably Charles, duc de Rethelois; inferred]...  De St Quentin,
+ce XVIIe septembre 1595", avec chiffre (no déchiffrement), original not marked copie** -- same sender, same place, one
+month later, the only same-sender pool candidate found. fr.3994 is not digitised, so it needs a BnF reproduction
+(owner step; a quote request for one leaf, f.134r-v); worth it only if the sign family matches, which cannot be judged
+without the image. Charles's own letters to Nevers in these weeks (fr.3993 f.71, f.254; fr.3994 f.1, f.41) use cipher
+no.70 per Tomokiyo, a different direction and a key already ruled out for no.102 by Bourdeau; (ii) the as-sent packet
+on Villeroy's side (Villeroy papers, BnF fr.15xxx / Cinq Cents de Colbert), a catalogue search, one host, ~USD 3 for a
+finding-aid worker; (iii) fr.3994 ff.6/44 seen only by a BnF reproduction order (owner, low value given the catalogue's
+silence; not filed).
