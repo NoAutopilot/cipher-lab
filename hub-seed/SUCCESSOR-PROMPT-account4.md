@@ -39,11 +39,12 @@ get_session reads `seven_day allowed_warning` (resetsAt 1791230400) on account 4
 workers at allowed_warning; the owner's standing rule says keep 6 until `rejected`. Parent 3 compromised at 4-5 workers and
 asked the owner (no reply as of 05:20). Read the owner's answer first; if none, keep at most 5; at `rejected`, stop spawning.
 
-## Live at hand-over (spawned 05:19 UTC 3 Oct)
-- VERIFY2-SURINAME-2077 session_0186iCyYg4gHZgzrSzKmHbsf (re-class AUDIT item 4 after GAPS23/24)
-- FT4e-naf14913-rousseau f.249v/f.250r + pooled 3-pair session_01M2UMo3WTZxTDxRexU8u58F (cap 15)
-- FT4f-maurice-rupert BL Add MS 18980-82 route session_01JPWiZMa9wz2jQXbhHwoV17
-- CLOSER-37 session_01HjYaXG2M3siWLbzVfpCPwk
+## Live at hand-over (3 Oct 2026 05:38 UTC)
+- FT4e-naf14913-rousseau f.249v/f.250r + pooled 3-pair session_01M2UMo3WTZxTDxRexU8u58F (cap 15, started 05:19)
+- GAPS25-na-suriname blind d/n/q sign call session_018BhzSF2qjz5fPKcxrQR95D (cap 8, started 05:37)
+- CLOSER-38 session_01TvA1vyPhZEU5t5HJZhVJRt (archives VERIFY2-SURINAME, FT4f-maurice-rupert, CLOSER-37)
+Since 05:20: VERIFY2 kept 2077 at N1 provisional (key period), stage 9 held pending the d/n/q call; maurice-rupert BL
+18980-82 + Warburton: no key, no crib (next: parked or Digby/other Rupert key sources). Previous check time: 05:36 UTC.
 
 ## State of the best leads (see STATUS.md check-ins 29-43)
 - na-suriname-map-1781 2077 legend: period key, H 500 C 6 M 102 U 50; rule-7 re-derivation agreed; rate-matched nl18 gate
