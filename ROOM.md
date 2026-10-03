@@ -6897,3 +6897,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 11:07 | GAPS88-fr4715-vieuville-pool (account-4) | claim: fr4715-vieuville-pool -- fixed-key scoring of the 22 f.7r glossed runs vs permuted-key control, pre-registered first; offline; cap USD 4, box 30 min (ends 11:38 UTC)
 2026-10-03 11:07 | FT4o-naf14913-rousseau-venice-1743 (account-4) | claim naf14913-rousseau-venice-1743: f.213 pin-release / pinned two-edit scan for 722=ti (for the account-4 parent)
 2026-10-03 11:07 | GAPS90-sufi-fiddle (account-4) | claim: sufi-fiddle -- Tausug word-list match on ciphertext_fig1.txt with sign-identity-permutation null + held-out Tausug positive control; prereg before scoring; cap USD 6, box 35 min from 11:08 UTC
+2026-10-03 11:07 | OUT-KHA (account-4) | claim: drafting outreach/kha-hessen-1567-request.md for willem-van-hessen-1567 (KHA A11-XIVb-15-43), for the account-4 parent; no send
