@@ -61,15 +61,17 @@ def regenerate():
 def main():
     plain, counts, n = regenerate()
     header = (
-        "# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 lines 1-3, "
-        f"{n} signs of an estimated 1000+ across p2-p4 (GAPS78, 3 Oct 2026; see NOTES.md).\n"
+        "# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 lines 1-6, "
+        f"{n} signs of an estimated 1000+ across p2-p4 (GAPS78 lines 1-3, GAPS80 lines 4-6, 3 Oct 2026; see NOTES.md).\n"
         f"# grade counts: {counts}\n"
     )
     body = (
         f'raw decode (lines joined by |; o = the decipherer\'s null mark, [-] = no gloss, ? = gloss split): "{plain}"\n'
         'reading: "...?o?mit Grumpachs [oo] bewerbung. | ist [o] FR nicht [o] garnichts [---] es ?igen | auch [oo] schon '
         '[o] dreimal hündert [o] u tausent" -- the decipherer\'s gloss read through the key; FR (overlined, over the V sign) '
-        'is a code word, plausibly Frankreich; see NOTES.md GAPS78 for grades and caveats.\n'
+        'is a code word, plausibly Frankreich; see NOTES.md GAPS78 for grades and caveats. Lines 4-6 (GAPS80): only the clear '
+        'words are segmented -- L4 "... darauf [gloss davauf, Kurrent r read v] ... wir", L5 "... chen", L6 "... bewer?nng '
+        '[bewerbung?] ... ?nnerhindern"; the rest is left as the raw gloss string above, not interpreted.\n'
     )
     regenerated = header + body
 

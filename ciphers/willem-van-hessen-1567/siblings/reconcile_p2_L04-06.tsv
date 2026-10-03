@@ -1,0 +1,111 @@
+line	pos	sign_class	passA_class	passB_label	glossA	glossB	value	grade	note
+# GAPS80 (account-4), 3 Oct 2026: two blind Opus passes on iiif_lines crops of 01069.pdf p2 (600 dpi) lines 4-6; sign segmentation from pass B (A has one extra sign at L4 p35, gloss o, dropped); class names = key_1069.tsv names where pass B label maps to one; gloss normalised z=ʒ=ß, s=ſ=f(over R), j=i.
+4	1	dff-ligature	h-with-horizontal-bar	DFF	o	o	o	H	both passes
+4	2	h-bar-ascender	pi-like-capital-Π	HBAR	r	r	r	H	both passes
+4	3	bold-dagger-crossbar	wide-T-crossbar	LCROSS	v	v	v	M	both passes read v over the r-class sign (Kurrent r/v lookalike; davauf->darauf)
+4	4	horizontal-z	yogh-3-shape	Z	o	o	o	H	both passes
+4	5	mercury	mercury	MERC	n	n	n	H	both passes
+4	6	hook-loop-figure8	open-8-with-tail	EIGHT	e	e	e	H	both passes
+4	7	mercury	mercury	MERC	n/	n/	n	H	both passes
+4	8	four	four	FOUR	o/	o/	o	H	both passes
+4	9	small-plain-circle	small-o-with-hooked-tail	OSMALL	ß	ʒ	z	H	both passes
+4	10	w-scribble-loop	theta-loop	SCRIB	in/	in/	in	H	both passes
+4	11	nu-v-shape	V-sign	NU	o	o	o	H	both passes
+4	12	square-bracket	backward-C-loop	BRACK	o/	o/	o	H	both passes
+4	13	mars	mars	MARS	j	J	i	H	both passes
+4	14	e-curl-tail	backward-C-loop	ECURL	e	r	r	M	gloss split A e / B r; value from pass B (key-consistent alignment)
+4	15	cursive-H	capital-H-with-crossbar	HCURS	b	b	b	H	both passes
+4	16	venus-with-crossbar	small-o-with-hooked-tail	VENUS	e	r	r	M	gloss split A e / B r; value from pass B (key-consistent alignment)
+4	17	single-vertical-minim	single-vertical-minim	ONE	o	o	o	H	both passes
+4	18	numeral-3	yogh-3-shape	THREE	o	o	o	H	both passes
+4	19	capital-R	capital-R	R	f	ſ	s	M	gloss split A f / B s; value from pass B (key-consistent alignment)
+4	20	horizontal-z	yogh-3-shape	Z	o	o	o	H	both passes
+4	21	jupiter	jupiter	JUP	d	d	d	H	both passes
+4	22	capital-X-cross	capital-X-cross	X	a	a	a	H	both passes
+4	23	bold-dagger-crossbar	wide-T-crossbar	LCROSS	v	v	v	M	both passes read v over the r-class sign (Kurrent r/v lookalike; davauf->darauf)
+4	24	small-g	nine	G	a	a	a	H	both passes
+4	25	dff-ligature	long-s-with-flag	DFF	ü	u	u	H	both passes
+4	26	small-closed-square	open-pi	SQUARE	f	f	f	H	both passes
+4	27	open-pi	pi-like-capital-Π	PI	o	o	o	H	both passes
+4	28	p-shape	p-shape	P	w	w	w	H	both passes
+4	29	double-cross	double-cross	TDBL	a	a	a	H	both passes
+4	30	bold-dagger-crossbar	wide-T-crossbar	LCROSS	v	v	v	M	both passes read v over the r-class sign (Kurrent r/v lookalike; davauf->darauf)
+4	31	cursive-H	hook-loop-figure8	HCURS	r	r	r	H	both passes
+4	32	hook-loop-figure8	capital-H-with-crossbar	EIGHT	e	e	e	H	both passes
+4	33	mercury	open-8-with-tail	MERC	n/	n/	n	H	both passes
+4	34	p-shape	mercury	P	w	w	w	H	both passes
+4	35	mars	mars	MARS	i	i	i	H	both passes
+4	36	bold-dagger-crossbar	wide-T-crossbar	LCROSS	r	r	r	H	both passes
+5	1	dff-ligature	bold-dagger-crossbar	DFF	o	o	o	H	both passes
+5	2	umbrella-cross	umbrella-cross	TRICROSS	o	o	o	H	both passes
+5	3	p-shape	p-shape	P	w	w	w	H	both passes
+5	4	seven	seven	SEVEN	o	o	o	H	both passes
+5	5	nine	nine	NINE	o	?	?	M	gloss split A o / B ?
+5	6	nine	nine	NINE	?	?	?	M	no gloss / gloss hidden in both passes
+5	7	l-loop	l-loop	LLOOP	e	e	e	H	both passes
+5	8	mercury	mercury	MERC	n/	n/	n	H	both passes
+5	9	wide-T-crossbar	wide-T-crossbar	T	o	o	o	H	both passes
+5	10	nine-with-top-loop	theta-loop	NINELOOP	o	o	o	H	both passes
+5	11	nine	nine	NINE	a	a	a	H	both passes
+5	12	closed-triangle	closed-triangle	TRI	b	b	b	H	both passes
+5	13	e-curl-tail	backward-C-loop	ECURL	i	i	i	H	both passes
+5	14	bold-dagger-crossbar	wide-T-crossbar	LCROSS	r	r/	r	H	both passes
+5	15	double-cross	double-cross	TDBL	a/	a	a	H	both passes
+5	16	nine	nine	NINE	?	?	?	M	no gloss / gloss hidden in both passes
+5	17	filled-blob	filled-blob	BLOB	?	?	?	M	no gloss / gloss hidden in both passes
+5	18	l-loop	l-loop	LLOOP	e	e	e	H	both passes
+5	19	mercury	g-C-ligature	MERC	n/	n/	n	H	both passes
+5	20	dff-ligature	h-with-horizontal-bar	DFF	o	o	o	H	both passes
+5	21	d-loop-diagonal	hook-loop-figure8	DLOOP	m	m	m	H	both passes
+5	22	tall-8	open-8-with-tail	TALL8	n	n	n	H	both passes
+5	23	backward-C-loop	alpha-loop	ALPHA	g	g	g	H	both passes
+5	24	nine	nine	NINE	-	-	[-]	M	no gloss / gloss hidden in both passes
+5	25	filled-pi-square	open-pi	PIFILL	i	i	i	H	both passes
+5	26	l-loop	l-loop	LLOOP	c	-	?	M	gloss split A c / B -
+5	27	h-bar-ascender	h-with-horizontal-bar	HBAR	h	c	c	M	gloss split A h / B c; value from pass B (key-consistent alignment)
+5	28	pi-like-capital-Π	triple-bar-III	PIBAR	e	h	h	M	gloss split A e / B h; value from pass B (key-consistent alignment)
+5	29	l-loop	wide-T-crossbar	LLOOP	n/	e	e	M	gloss split A n / B e; value from pass B (key-consistent alignment)
+5	30	mercury	mercury	MERC	b	n/	n	M	gloss split A b / B n; value from pass B (key-consistent alignment)
+5	31	w-scribble-loop	theta-loop	SCRIB	?	v	v	M	gloss split A ? / B v; value from pass B (key-consistent alignment)
+5	32	nine	nine	NINE	?	?	?	M	no gloss / gloss hidden in both passes
+5	33	six-loop	open-8-with-tail	SIX	f	ʒ	z	M	gloss split A f / B z; value from pass B (key-consistent alignment)
+5	34	small-g	nine	G	i	-	?	M	gloss split A i / B -
+5	35	cursive-H	capital-H-with-crossbar	HCURS	v	i	i	M	gloss split A v / B i; value from pass B (key-consistent alignment)
+5	36	capital-R	capital-R	R	-	w	w	M	gloss split A - / B w; value from pass B (key-consistent alignment)
+5	37	numeral-3	yogh-3-shape	THREE	o	o	o	H	both passes
+6	1	nu-v-shape	V-sign	NU	o	o	o	H	both passes
+6	2	cursive-H	capital-H-with-crossbar	HCURS	?	?	?	M	no gloss / gloss hidden in both passes
+6	3	pi-like-capital-Π	triple-bar-III	PIBAR	h	h	h	H	both passes
+6	4	tall-8	open-8-with-tail	TALL8	u	n	n	M	gloss split A u / B n; value from pass B (key-consistent alignment)
+6	5	mercury	mercury	MERC	n/	n/	n	H	both passes
+6	6	wide-T-crossbar	wide-T-crossbar	T	o/	o/	o	H	both passes
+6	7	capital-R	capital-R	R	f	ſ	s	M	gloss split A f / B s; value from pass B (key-consistent alignment)
+6	8	horizontal-z	yogh-3-shape	Z	o	o	o	H	both passes
+6	9	nine	nine	NINE	f	?	?	M	gloss split A f / B ?
+6	10	h-bar-ascender	h-with-horizontal-bar	HBAR	r	r	r	H	both passes
+6	11	pi-like-capital-Π	triple-bar-III	PIBAR	h	h	h	H	both passes
+6	12	tall-8	open-8-with-tail	TALL8	z/	ʒ/	z	H	both passes
+6	13	closed-triangle	closed-triangle	TRI	b	b	b	H	both passes
+6	14	e-curl-tail	backward-C-loop	ECURL	e	e	e	H	both passes
+6	15	p-shape	p-shape	P	w	w	w	H	both passes
+6	16	l-loop	l-loop	LLOOP	e	e	e	H	both passes
+6	17	bold-dagger-crossbar	wide-T-crossbar	LCROSS	r	r	r	H	both passes
+6	18	closed-triangle	closed-triangle	TRI	b	?	?	M	gloss split A b / B ?
+6	19	eight-with-bar	g-C-ligature	EIGHTBAR	n	n	n	H	both passes
+6	20	mercury	mercury	MERC	n	n	n	H	both passes
+6	21	backward-C-loop	alpha-loop	ALPHA	g/	g/	g	H	both passes
+6	22	hook-loop-figure8	open-8-with-tail	EIGHT	e	e	e	H	both passes
+6	23	nine-with-top-loop	nine	NINELOOP	o	o	o	H	both passes
+6	24	small-plain-circle	small-o-with-hooked-tail	OSMALL	z	ʒ	z	H	both passes
+6	25	tall-8	open-8-with-tail	TALL8	n	n	n	H	both passes
+6	26	w-scribble-loop	theta-loop	SCRIB	u	n	n	M	gloss split A u / B n; value from pass B (key-consistent alignment)
+6	27	l-loop	l-loop	LLOOP	n	e	e	M	gloss split A n / B e; value from pass B (key-consistent alignment)
+6	28	bold-dagger-crossbar	wide-T-crossbar	LCROSS	e	r	r	M	gloss split A e / B r; value from pass B (key-consistent alignment)
+6	29	pi-like-capital-Π	triple-bar-III	PIBAR	r	h	h	M	gloss split A r / B h; value from pass B (key-consistent alignment)
+6	30	mars	small-o-with-hooked-tail	MARS	h	i	i	M	gloss split A h / B i; value from pass B (key-consistent alignment)
+6	31	mercury	mercury	MERC	i	n	n	M	gloss split A i / B n; value from pass B (key-consistent alignment)
+6	32	jupiter	jupiter	JUP	nd	d	d	M	gloss split A nd / B d; value from pass B (key-consistent alignment)
+6	33	e-curl-tail	backward-C-loop	ECURL	e	e	e	H	both passes
+6	34	bold-dagger-crossbar	wide-T-crossbar	LCROSS	r	r	r	H	both passes
+6	35	mercury	mercury	MERC	n	n	n	H	both passes
+6	36	venus-with-crossbar	venus-with-crossbar	VENUS	-	-	[-]	M	no gloss / gloss hidden in both passes

@@ -93,3 +93,113 @@ page	line	pos	sign_desc	value_override	grade_override
 2	3	33	l-loop	e	M
 2	3	34	mercury		
 2	3	35	capital-H-with-crossbar	t	M
+# p2 lines 4-6 from reconcile_p2_L04-06.tsv (GAPS80, 3 Oct 2026). Overrides = class not keyed or passes split.
+2	4	1	dff-ligature	o	H
+2	4	2	h-bar-ascender	r	H
+2	4	3	bold-dagger-crossbar	v	M
+2	4	4	horizontal-z		
+2	4	5	mercury		
+2	4	6	hook-loop-figure8		
+2	4	7	mercury		
+2	4	8	four		
+2	4	9	small-plain-circle		
+2	4	10	w-scribble-loop	in	H
+2	4	11	nu-v-shape		
+2	4	12	square-bracket		
+2	4	13	mars		
+2	4	14	e-curl-tail	r	M
+2	4	15	cursive-H	b	H
+2	4	16	venus-with-crossbar	r	M
+2	4	17	single-vertical-minim		
+2	4	18	numeral-3		
+2	4	19	capital-R	s	M
+2	4	20	horizontal-z		
+2	4	21	jupiter		
+2	4	22	capital-X-cross		
+2	4	23	bold-dagger-crossbar	v	M
+2	4	24	small-g		
+2	4	25	dff-ligature	u	H
+2	4	26	small-closed-square		
+2	4	27	open-pi		
+2	4	28	p-shape		
+2	4	29	double-cross		
+2	4	30	bold-dagger-crossbar	v	M
+2	4	31	cursive-H	r	H
+2	4	32	hook-loop-figure8		
+2	4	33	mercury		
+2	4	34	p-shape		
+2	4	35	mars		
+2	4	36	bold-dagger-crossbar		
+2	5	1	dff-ligature	o	H
+2	5	2	umbrella-cross		
+2	5	3	p-shape		
+2	5	4	seven		
+2	5	5	nine	?	M
+2	5	6	nine	?	M
+2	5	7	l-loop		
+2	5	8	mercury		
+2	5	9	wide-T-crossbar		
+2	5	10	nine-with-top-loop		
+2	5	11	nine		
+2	5	12	closed-triangle		
+2	5	13	e-curl-tail	i	H
+2	5	14	bold-dagger-crossbar		
+2	5	15	double-cross		
+2	5	16	nine	?	M
+2	5	17	filled-blob	?	M
+2	5	18	l-loop		
+2	5	19	mercury		
+2	5	20	dff-ligature	o	H
+2	5	21	d-loop-diagonal		
+2	5	22	tall-8	n	H
+2	5	23	backward-C-loop		
+2	5	24	nine	[-]	M
+2	5	25	filled-pi-square		
+2	5	26	l-loop	?	M
+2	5	27	h-bar-ascender	c	M
+2	5	28	pi-like-capital-Π	h	M
+2	5	29	l-loop	e	M
+2	5	30	mercury	n	M
+2	5	31	w-scribble-loop	v	M
+2	5	32	nine	?	M
+2	5	33	six-loop	z	M
+2	5	34	small-g	?	M
+2	5	35	cursive-H	i	M
+2	5	36	capital-R	w	M
+2	5	37	numeral-3		
+2	6	1	nu-v-shape		
+2	6	2	cursive-H	?	M
+2	6	3	pi-like-capital-Π		
+2	6	4	tall-8	n	M
+2	6	5	mercury		
+2	6	6	wide-T-crossbar		
+2	6	7	capital-R	s	M
+2	6	8	horizontal-z		
+2	6	9	nine	?	M
+2	6	10	h-bar-ascender	r	H
+2	6	11	pi-like-capital-Π		
+2	6	12	tall-8	z	H
+2	6	13	closed-triangle		
+2	6	14	e-curl-tail	e	H
+2	6	15	p-shape		
+2	6	16	l-loop		
+2	6	17	bold-dagger-crossbar		
+2	6	18	closed-triangle	?	M
+2	6	19	eight-with-bar		
+2	6	20	mercury		
+2	6	21	backward-C-loop		
+2	6	22	hook-loop-figure8		
+2	6	23	nine-with-top-loop		
+2	6	24	small-plain-circle		
+2	6	25	tall-8	n	H
+2	6	26	w-scribble-loop	n	M
+2	6	27	l-loop	e	M
+2	6	28	bold-dagger-crossbar	r	M
+2	6	29	pi-like-capital-Π	h	M
+2	6	30	mars	i	M
+2	6	31	mercury	n	M
+2	6	32	jupiter	d	M
+2	6	33	e-curl-tail	e	H
+2	6	34	bold-dagger-crossbar		
+2	6	35	mercury		
+2	6	36	venus-with-crossbar	[-]	M

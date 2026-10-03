@@ -1,0 +1,110 @@
+line	pos	label	shape_description	gloss	confidence
+4	1	DFF	looped d-bowl joined to two f-like stems with crossbar	o	med
+4	2	HBAR	h-shape with horizontal bar across the ascender	r	high
+4	3	LCROSS	L/t shape: stem, crossbar, flat foot to right	v	med
+4	4	Z	horizontal z	o	high
+4	5	MERC	Mercury sign	n	high
+4	6	EIGHT	compact closed 8	e	high
+4	7	MERC	Mercury sign	n/	high
+4	8	FOUR	numeral 4 open top	o/	high
+4	9	OSMALL	small plain circle, low	ʒ	med
+4	10	SCRIB	w-like squiggle with loop beneath	in/	med
+4	11	NU	v / Greek nu	o	high
+4	12	BRACK	square bracket open to left	o/	high
+4	13	MARS	Mars sign	J	high
+4	14	ECURL	cursive e/omega loop with curling tail	r	med
+4	15	HCURS	cursive H	b	med
+4	16	VENUS	small circle over cross	r	low
+4	17	ONE	numeral 1	o	high
+4	18	THREE	numeral 3	o	high
+4	19	R	capital R	ſ	high
+4	20	Z	horizontal z with underline	o	high
+4	21	JUP	Jupiter sign	d	high
+4	22	X	capital X / chi	a	high
+4	23	LCROSS	L/t with crossbar and flat foot	v	med
+4	24	G	small g	a	med
+4	25	DFF	looped double-f with dark blob	u	med
+4	26	SQUARE	small closed square	f	high
+4	27	PI	Pi / n-shape with top bar	o	high
+4	28	P	p with long descender	w	high
+4	29	TDBL	t with two crossbars	a	high
+4	30	LCROSS	L/t with crossbar and flat foot	v	med
+4	31	HCURS	cursive H	r	med
+4	32	EIGHT	8 with loops, leaning	e	med
+4	33	MERC	Mercury sign	n/	high
+4	34	P	p with descender	w	med
+4	35	MARS	Mars sign	i	med
+4	36	LCROSS	L/t with crossbar and curled foot	r	med
+5	1	DFF	looped d-bowl with two crossed stems	o	med
+5	2	TRICROSS	triangle on a cross	o	high
+5	3	P	p with descender	w	high
+5	4	SEVEN	numeral 7	o	high
+5	5	NINE	9 shape	?	low
+5	6	NINE	9 shape	?	low
+5	7	LLOOP	looped cursive l	e	high
+5	8	MERC	Mercury sign	n/	high
+5	9	T	capital T	o	high
+5	10	NINELOOP	9 with extra open loop over top	o	high
+5	11	NINE	9 shape	a	high
+5	12	TRI	open triangle	b	med
+5	13	ECURL	cursive e/omega loop with curling tail	i	high
+5	14	LCROSS	L/t with crossbar and flat foot	r/	med
+5	15	TDBL	t with two crossbars	a	high
+5	16	NINE	9 shape tall	?	low
+5	17	BLOB	solid ink-filled teardrop	?	low
+5	18	LLOOP	looped l	e	high
+5	19	MERC	Mercury sign with tail tick	n/	high
+5	20	DFF	d-loop joined to double-crossed stems	o	med
+5	21	DLOOP	d-like loop with diagonal ascender	m	high
+5	22	TALL8	tall 8 / rho	n	high
+5	23	ALPHA	alpha, fish-like loop open right	g	med
+5	24	NINE	9 / reversed-d loop	-	low
+5	25	PIFILL	heavily inked Pi/square	i	high
+5	26	LLOOP	looped l	-	med
+5	27	HBAR	h with bar across ascender	c	med
+5	28	PIBAR	two-legged Pi with bar through	h	med
+5	29	LLOOP	looped l with small cross foot	e	high
+5	30	MERC	Mercury sign	n/	high
+5	31	SCRIB	w-like squiggle with loop beneath	v	med
+5	32	NINE	9 / d-loop	?	low
+5	33	SIX	6 / b-loop	ʒ	low
+5	34	G	g with descending loop	-	low
+5	35	HCURS	cursive H / ye ligature	i	med
+5	36	R	capital R	w	low
+5	37	THREE	numeral 3 flat-top	o	high
+6	1	NU	v / nu	o	high
+6	2	HCURS	cursive H, ink blot before it (not counted)	?	low
+6	3	PIBAR	Pi with bars	h	high
+6	4	TALL8	tall 8 / l with closed lower loop	n	med
+6	5	MERC	Mercury sign	n/	high
+6	6	T	capital T	o/	high
+6	7	R	capital R	ſ	high
+6	8	Z	horizontal z	o	high
+6	9	NINE	9 shape	?	low
+6	10	HBAR	h with bar across ascender	r	high
+6	11	PIBAR	Pi with bars	h	high
+6	12	TALL8	tall 8	ʒ/	high
+6	13	TRI	open triangle	b	low
+6	14	ECURL	cursive e/omega loop with curling tail	e	low
+6	15	P	p with descender	w	high
+6	16	LLOOP	looped l	e	high
+6	17	LCROSS	L/t with crossbar and flat foot	r	high
+6	18	TRI	open triangle	?	low
+6	19	EIGHTBAR	8 with horizontal stroke through middle	n	med
+6	20	MERC	Mercury sign	n	high
+6	21	ALPHA	alpha / fish loop with tail	g/	med
+6	22	EIGHT	compact closed 8	e	high
+6	23	NINELOOP	9 with open loop over top	o	high
+6	24	OSMALL	small plain circle	ʒ	high
+6	25	TALL8	tall 8	n	high
+6	26	SCRIB	w-like squiggle with loop beneath	n	high
+6	27	LLOOP	looped l	e	high
+6	28	LCROSS	L/t with crossbar and flat foot	r	high
+6	29	PIBAR	Pi with bars	h	high
+6	30	MARS	small circle with stroke up-right	i	med
+6	31	MERC	Mercury sign	n	high
+6	32	JUP	Jupiter sign	d	high
+6	33	ECURL	cursive e/omega loop with curling tail	e	high
+6	34	LCROSS	L/t with crossbar and flat foot	r	high
+6	35	MERC	Mercury sign	n	high
+6	36	VENUS	circle over cross	-	high

@@ -593,3 +593,53 @@ Intake gate at start: `willem-van-hessen-1567: open (line 1) -- edition/page or 
   The key grows with each round; the homophone count decides when it is complete enough to test against 1127 once
   it is imaged.
 - Hosts: resources.huygens.knaw.nl 1 request. Subagents: 2 (Opus), 9 crops each, no full page sent.
+
+## GAPS80-willem-van-hessen-1567 (3 Oct 2026, account-4): sibling 1069 p2 lines 4-6 read from the period gloss, key extended
+
+Step run: the GAPS78 next step, verbatim "--only-lines 4,5,6 same command + 2 passes".
+- `01069.pdf` re-fetched once from resources.huygens.knaw.nl (HTTP 200, 4,651,784 bytes, same size as before). Page index 1
+  was rendered at 600 dpi (4961x7016). The GAPS78 command was then run with `--only-lines 4,5,6`. It found the same 24 bands
+  (pitch 229) and wrote 9 crops, now in `siblings/crops_p2/` (manifest merged). One own look confirmed the gloss row is kept.
+- **Two blind Opus subagent passes, crops only, one call each.** Pass A used the 31 key class names as a reference
+  vocabulary. Pass B used its own labels. Both are filed: `siblings/passA_p2_L04-06.tsv` and `passB_p2_L04-06.tsv`.
+  - Sign counts: L4 37/36, L5 37/37, L6 36/36. Pass A's extra sign is L4 p35 (gloss o, low confidence); it was dropped and
+    pass B's segmentation kept.
+  - Gloss strings agree almost letter for letter.
+  - Agreement per position: the gloss letter agrees on 74 of 109 signs (67.9%). The rest are split or unglossed: 22 where
+    line-4 descenders cover the gloss band or there is no gloss, and the others are splits.
+- **Pass A's class labels are not reliable.** Forced onto the reference list, they put one class name over different
+  glosses (mercury over n, w, b, i). In L5 p26-29 and L6 p26-32, pass A's glosses sit one sign left of pass B's.
+  Pass B's internally consistent labels were used for classes, and pass B's per-sign alignment matches the existing key
+  (h-bar = c, Pi = h, l-loop = e, mercury = n).
+  - One own look at the L5 s3 crop could not settle that alignment by eye. Those positions are graded M, value from pass B.
+- **Reconciliation** (`siblings/reconcile_p2_L04-06.tsv`, worker's own).
+  - Glosses normalised z=ʒ=ß, s=ſ, j=i.
+  - Where pass A wrote f and pass B ſ over capital-R, the token stays M (two tokens), although the key has R = s.
+- **Consistency check of the GAPS78 key.** 19 earlier classes reappear among the agreed tokens of lines 4-6 (42 tokens).
+  All 42 carry the keyed value, so there are 0 conflicts.
+  - Pass B's L/t-with-foot sign is the old bold-dagger-crossbar, r (4 agreed). On three further tokens in L4, both passes
+    read the gloss as v, and the gloss itself reads "davauf". These are taken as the Kurrent r read as v ("darauf"),
+    kept at v and graded M.
+- **Key extended.** 11 new classes, each H: both passes read the same gloss letter over it, with no conflicting agreed reading.
+  - horizontal-z o (3), numeral-3 o (2), nine-with-top-loop o (2), square-bracket o (1) and nu-v-shape o (2) are nulls
+    or word-break marks.
+  - small-plain-circle z (2), small-closed-square f (1), filled-pi-square i (1), d-loop-diagonal m (1), eight-with-bar n (1),
+    small-g a (1).
+  - nu-v-shape may be the V-sign that carries ^FR^ on L2. It is not merged with it.
+  - Left unkeyed because their agreed glosses conflict: dff-ligature (o 3, u 1), cursive-H (b, r), e-curl-tail (e 2, i 1),
+    tall-8 (n 2, z 1), h-bar-ascender (r 2; the old h-with-horizontal-bar is c), w-scribble-loop ("in").
+  - `key_1069.tsv` now has 42 classes.
+- **Grades.** Lines 4-6: H 74, M 35 of 109. Lines 1-6 together: H 150, M 52 of 202. H = the period decipherer's
+  interlinear gloss, read identically by both passes. That gloss is a period decipherment, so these are rule-4 H, not C.
+  The key rows are a `period` key, rebuilt by us from that gloss.
+  - `check_1069.py --check`: exit 0, twice.
+  - Clear words: L4 "... darauf ... wir", L5 "... chen", L6 "... bewer?nng (bewerbung?) ... ?nnerhindern". The rest is
+    left as the raw gloss string in `reading_1069.txt`, not interpreted.
+- **Target 1127: still not read.** The key does not read any part of the target letter. The target's cipher sits only in
+  the KHA original (A 11/XIV B/15-43). That original is unimaged (REQUEST.md), so there is no target ciphertext on disk
+  for `decode_key` to apply the key to. A control would have nothing to differ from, so no test was run. That is a
+  missing-material gap, not a negative.
+- **Next step.** Same command with `--only-lines 7,8,9` + 2 blind Opus passes + worker reconciliation, about 2 vision calls.
+  Add one targeted own look per round at the unkeyed lumped classes (dff, cursive-H, e-curl, tall-8, h-bar) to split them.
+  About 6 rounds remain for p2. The test against 1127 waits on its image (REQUEST.md).
+- Hosts: resources.huygens.knaw.nl 1 request. Subagents: 2 (Opus), 9 crops each, no full page sent; own looks: 2 crops.
