@@ -206,7 +206,7 @@ Hits opened and comment threads read:
 - Moustier_Eng.pdf (English text of the EOS article, ciphermysteries.com upload, 2022): states "To date, the cryptic characters have not been deciphered" and "no one has proposed a decipherment" since 1974. It gives the Trithemius-Polygraphia rendering of the opening letters (JNLK -> "Luder sempiternus producens terram ...") and says Connart's book printed a full Latin text by this method, but itself notes "about any sequence of letters according to the system of Trithemius leads to a religious text" -- a hypothesis, not a key-backed reading. It also reports that Rudy Cambier's private "decipherment" was judged by Philippe Connart: "It takes a lot of imagination to read anything into it."
 - Cipher Mysteries category "moustier cryptograms": 6 posts (2 Apr 2013 - 19 Apr 2022), none claims a solution; 23 Oct 2016 post (Philippe Connart's Merovingian-letterform theory) and its 2 comments read: no plaintext.
 - Already on disk and read by bINT (25 Sept 2026): Cipherbrain post 18 (5 comments) and Pelling 2 Apr 2013 (incl. Ulyanenkov's unaccepted 2017/2026 claims).
-Result: no accepted decipherment or plaintext found on the open web or in these comment threads. Requests: WebSearch 7; WebFetch scienceblogs.de 1, ciphermysteries.com 3.
+Result: no accepted decipherment or plaintext found on the open web or in these comment threads. Requests: WebSearch 7; WebFetch scienceblogs.de 1, ciphermysteries.com 4.
 
 ## Premise check (GF-A2-12, 3 Oct 2026)
 
