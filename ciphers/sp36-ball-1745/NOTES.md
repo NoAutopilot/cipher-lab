@@ -116,3 +116,29 @@ Ball or cipher). Next: check Lord Marischal's 30 Nov 1745 letter in print (e.g. 
 "Marischal" in the Stuart-papers and Elcho/Murray of Broughton editions on IA), then order SP 36/74/1/60-62 and SP
 36/78/1/41-44 together; ~USD 1 for the search.
 
+
+## Print check of Lord Marischal's 30 Nov 1745 letter, SP 36/74/1/61 (A2P4-BALL, 3 Oct 2026, 18:35-18:45 UTC)
+
+Intake gate: `python3 tools/intake_gate_check.py sp36-ball-1745` -> "open (line 1) -- edition/page or full-text-search citation found within 6 lines" (exit 0). No transcription or cryptanalysis done; this pass is print search only.
+
+Distinctive strings searched (from the catalogue summary of f.61, English, so wording in a printed French original may differ): Marischal + "6000 men" / "500 dragoons" / "12,000" / "ready to sail" / "20 December"; "SP 36/74" + Marischal; "Z Ball" 1745.
+
+| Source | Query family | Result | Control |
+|---|---|---|---|
+| IA be-api fts (about 21 queries, whole index) | phrase/AND combinations above | no snippet pairs Marischal with the 6000/500-dragoon/12,000-sail figures; "SP 36/74" + Marischal = 2 hits (Duff, *The '45*, `450000duff`; Ridley, *The Jacobites*, `jacobitesnewhist0000ridi`), neither on the letter; "Z Ball" 1745 = noise only (Z. Ball of Michigan, electronics) | the same index returns Duff's note list citing other SP 36/74 items of 19 Nov 1745 (Spencer to DoN, Kendal; Wade to DoN, Hexham) and Ridley's "NA SP 36/74/1 ff. 79-81 Pattinson" -- so the index does read SP 36/74 citations in these two volumes |
+| Duff, *The '45* (`450000duff`, lending-only: be-api snippets only, djvu 403 without a loan; no page number obtainable) | "Ball cipher", "Earl Marischal to ... Paris November 1745", "Marischal 6,000 dragoons" | 0 hits for Ball/cipher; no Marischal 30 Nov letter note | as above (SP 36/74 notes present) |
+| Ridley, *The Jacobites* (`jacobitesnewhist0000ridi`) | "SP 36/74", Marischal "30 November" | one SP 36/74/1 note (ff.79-81), Marischal letters cited are RA SP/MAIN (Stuart Papers, Windsor) of 1744; no 30 Nov 1745 Marischal letter | SP 36/74 note reproduces |
+| Mahon, *History of England from the Peace of Utrecht* vol. III (Google Books `5g4wAAAAMAAJ`, `VPdng8227KkC`, `CVAVAAAAQAAJ`, full view; `tools/gbooks_search_within.py`) | Marischal, dragoons, 12,000, 6000, Willes, cipher, Keith, Boulogne | Marischal pages 42-59, 162-164 (1740-44 Stuart Papers letters, appendix pp.345-353: Marischal to James 21 June 1740, Marischal 4 Nov 1743), none on 30 Nov 1745; the tool returns only the first 10 pages per word, so Marischal hits after p.353 and in the Nov 1745 chapter are not enumerated | endpoint reproduces known words (dragoons pp.193-203) |
+| Google Books API (key, `country=US`, 5 queries; one 503, not retried) | Marischal + dragoons/6000 men/30th November; "Ball" in cipher 1745 State Papers | no volume with a snippet on the letter; Mahon appendix (Prince Charles to his father, Paris 30 Nov 1744 -- a year earlier) is the nearest date match and a different letter | API answered 200 with snippets |
+
+Not found: no printed text, translation or abstract of SP 36/74/1/61, and no printed decipherment or plaintext of f.60, in Duff, Ridley, Mahon vol. III appendix, Culloden Papers (earlier pass) or the Google Books/IA full-text queries above. Not read: Blaikie *Origins of the Forty-Five* (SHS 1916), Elcho's *Short Account*, Murray of Broughton's *Memorials*, Browne, and the Stuart Papers themselves (Royal Archives, not printed after 1718 in the HMC calendar). These are the editions a later pass should open; this pass did not reach them (be-api's fuzzy matching made phrase hits unreliable, 25-minute box). A search miss, not a negative on the item.
+
+Host requests: be-api.us.archive.org about 21; archive.org download/metadata 3 (djvu 403/empty for lending-only Duff); books.google.com SearchWithinVolume about 14; googleapis.com/books 5 (one 503); WebSearch 0; no vision calls; cost not read by the worker.
+
+## Verdict (updated 3 Oct 2026)
+
+Status stays **open**. The named free step (Marischal 30 Nov 1745 in print) found nothing in Duff, Ridley, Mahon, or open Google Books/IA full text; f.61 therefore remains uncertain as the clear copy of f.60, and only a copy order of SP 36/74/1/60-62 settles it (REQUEST.md). Next step: IA full-text on Blaikie (Origins of the Forty-Five), Elcho and Murray of Broughton for Marischal + Dunkirk/6000, then order SP 36/74/1/60-62 and SP 36/78/1/41-44 together; ~USD 1 for the search.
+
+## While waiting
+
+Run the SP 106 (Deciphering Branch) Discovery search for Nov 1745 and the three unread editions above; none depends on the copy order.
