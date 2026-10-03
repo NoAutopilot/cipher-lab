@@ -1,4 +1,5 @@
 open
+Doniol vol. IV (archive.org `histoiredelapart04doniuoft`) be-api full-text searched again by this worker (3 Oct 2026: "croisière de la Caroline" and "Estaing écrivait" hit the p.774 paraphrase; "30 avril 1779" 0 hits; "chiffré"/"pli chiffré" hit only a 6 Jan 1779 Martinique packet), and HMC *Report on American MSS in the Royal Institution* vols 1-2 (`reportonamerican12greauoft`) and HMC *Stopford-Sackville* vol. 2 (`reportonmanuscri02grea_0`) grepped whole-volume (djvu) -- none prints the 30 April 1779 letter or a British decipherment of it.
 Doniol, *Histoire de la participation de la France...* vol. IV (archive.org `histoiredelapart04doniuoft`) and Meng, *Despatches and Instructions of C. A. Gérard* (archive.org `despatchesinstru00fran`) full-text searched by this worker (be-api fts, controls found: "Terre-Neuve"/"croisière de la Caroline" p.774 in Doniol iv, "Vergennes" in Meng) -- neither prints the 30 April 1779 letter's cipher passage deciphered.
 
 ## Check-solved (LANE CX2, 25 Sept 2026)
@@ -194,3 +195,79 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Check-solved re-run (GF4-BATCH13, account-4, 3 Oct 2026)
+
+Gate fix (no logged web/blog pass, no Premise check). Per `.claude/briefs/check-solved.md`; earlier sweeps (LANE CX2 and ZX2-EST,
+25 Sept; Bourdeau 15 Sept) are above and not repeated.
+
+1. **Sender/recipient edition.** Doniol, *Histoire de la participation...* vol. IV, be-api fts (identifier
+   `histoiredelapart04doniuoft`; its djvu download answered HTTP 500 again, as on 25 Sept): "croisière de la Caroline" 1 hit and
+   "Estaing écrivait" 1 hit (the p.774 paraphrase of this letter, already logged); "30 avril 1779" 0; "chiffre" 1 hit, three
+   snippets: "Un pli chiffré ... En rade de la Martinique, le 6 janvier 1779" (a different, earlier packet), "ma lettre en chiffre
+   à M. de Sartine", and an unrelated "chiffré" (a sum). Doniol paraphrases; he does not print the 30 April cipher passage.
+2. **The interceptor's side (British).** Clinton forwarded the letter home in July 1779 (Tomokiyo). HMC *Report on American
+   Manuscripts in the Royal Institution* vols 1-2 (1904; `reportonamerican12greauoft`, whole-volume grep: Estaing 36, Gérard 2,
+   intercept 15, cypher/cipher 47 hits, read): no entry for a d'Estaing-to-Gérard letter of 30 April 1779; its intercepted-letter
+   entries for 1779 are Clinton's "conjectures gathered from intercepted dispatches" (20 Oct 1779) and the like. HMC
+   *Stopford-Sackville* vol. 2 (1910, Germain's papers, `reportonmanuscri02grea_0`, whole-volume grep: Estaing 18, Gérard 3,
+   intercept 11, cypher 3, read): the only intercepted French cipher printed is Luzerne to Vergennes "[1780, June ?]" (p.172,
+   "Extracts of intercepted letters (in cypher) from M. De la Luzerne"), not this letter.
+3. **Continental Congress / Founders.** Google Books API (key + country=US) `"d'Estaing" Gérard "30 April 1779"`: the *Index, Papers
+   of the Continental Congress* (1978) volumes appear, snippets on other Gérard letters, none this one (an intercepted letter to
+   Gérard would not reach Congress's files); `Papers of the Continental Congress Estaing Gerard April 1779 intercepted`: 0.
+   founders.archives.gov search answered HTTP 202 (bot challenge), not retried; Founders pages surfaced by WebSearch (below) are
+   other d'Estaing letters. *B. F. Stevens' Facsimiles* (index vol., 1898): Google Books lists a full-view copy for `"Estaing"
+   "Gérard" Stevens facsimiles 1779 Martinique` with no snippet; no archive.org copy found by advancedsearch -- not reached this
+   pass (the series centres on 1773-1778 European archives; logged, not a clearance).
+4. **Web, blogs, DECODE, solver repositories:** web and blog log below; DECODE, Bourdeau (class b, 2 Oct 2026, above) and
+   Aymeloglu as before.
+
+**Verdict: open** (stays). No print of the 30 April 1779 cipher passage deciphered was found in the sender's editions (Doniol
+iv, Meng), the interceptor's printed papers (HMC American MSS i-ii, Stopford-Sackville ii) or the Congress index. New lead for
+the route list (from WebSearch, not checked): d'Estaing's campaign registers in Archives nationales, Marine B4 168 hold his
+letters to Gérard (a letter of 26 Oct 1779 is cited at B4 168 p.59 in *Storm over Savannah*'s notes) -- the sender's own
+register copy of 30 April 1779 may be there in clear.
+
+Requests: archive.org 9 (advancedsearch 4, djvu 3 incl. the HTTP 500, be-api fts 6 -- 1.6 s apart); googleapis.com 2;
+founders.archives.gov 1 (202, not retried); ugapress.manifoldapp.org 1 (WebFetch); WebSearch 4 + 3 blog-site searches.
+
+## Web and blog check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- Plain web: `d'Estaing to Gérard 30 April 1779 Martinique intercepted letter Clinton` (Storm over Savannah notes, Founders
+  letters of 1779, Wikipedia -- none on this letter; the Savannah notes cite AN Marine B4 168 p.59 for a 26 Oct 1779 letter to
+  Gérard, read by WebFetch: no April 1779 letter, no cipher, no intercept); `Clinton Papers "64:14" OR "volume 64" d'Estaing
+  cipher Clements Library` (Clements exhibit pages, Arnold cipher -- no item-level hit); `"Je me flatte" d'Estaing Gérard 1779
+  lettre chiffrée Géorgie` (Founders d'Estaing letters, Washington to Gérard 12 Sept 1779 -- not this letter); `Admiral
+  d'Estaing coded letter to Gerard 1779 deciphered solved` (no solve announcement; a "Napoleon letter cracked by AI" news item is
+  a different target).
+- Cipherbrain (site:scienceblogs.de, `d'Estaing Gérard 1779 code letter`): Soglia, 1783 letter, Biermann posts -- none on this
+  letter; no comment thread found naming it.
+- Cryptiana (site:cryptiana.blogspot.com / cryptiana.web.fc2.com, `d'Estaing Gerard 1779 code`): no search results; the on-disk
+  `sources/cryptiana/web/unsolved.htm` lines 590-591 list it unsolved (quoted in the CX2 section above).
+- Cipher Mysteries (site:ciphermysteries.com, `d'Estaing Gerard 1779 cipher`): La Buse / Nageon de l'Estang posts only -- not
+  this letter.
+- Result: no blog post or comment thread reads it.
+
+## Premise check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- (a) Folder's own files: NOTES.md, REQUEST.md, cribs.tsv, siblings.tsv and the spec mention no decipherment or clear copy of
+  this letter; the only "decipherment" mentions are the AAE Corr. pol. Etats-Unis Supt.1 copy Bourdeau names (not online) and
+  Doniol's p.774 paraphrase (opened, a paraphrase only) -- not found.
+- (b) Other solvers' working files: Bourdeau's `targets/destaing/NOTES.md` (skipped, no key run on this text); Aymeloglu has no
+  file -- not found.
+- (c) Physical neighbours: Clinton Papers 64:15 (same-date clear letter to Holker, two copies, one in André's hand) and whatever
+  André or Clinton's office may have written on or beside 64:14 -- unreachable (no image; clements.umich.edu 403s, REQUEST.md
+  and SEND-QUEUE S1 stand).
+- (d) Recipient's side: Gérard's despatches (Meng 1939, searched 25 Sept) and the British recipients' printed papers (HMC American
+  MSS i-ii, Stopford-Sackville ii, this pass) -- not found; AAE Supt.1 and AN Marine B4 168 -- unreachable from the cloud, named.
+
+## While waiting (GF4-BATCH13, account-4, 3 Oct 2026)
+
+Waits on: the Clements image (REQUEST.md / SEND-QUEUE S1). The one action that depends on nobody:
+
+- S: query the Archives nationales
+salle des inventaires virtuelle (FranceArchives / siv.archives-nationales.culture.gouv.fr) for Marine B4 168 and its neighbours
+(d'Estaing's 1779 campaign registers) to see whether the register itself, with a clear copy of the 30 April 1779 letter, is
+digitised -- a catalogue lookup, no person needed (S; FranceArchives may not load from the cloud, in which case it becomes a
+LOCAL-QUEUE row, logged with the probe line).
