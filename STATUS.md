@@ -3716,3 +3716,24 @@ Counts 18 / 2 / 1 / 6, unchanged. This session compacted (context 125k after the
 - Desk runner: the owner reports the ChatGPT desk runner rerunning with new document access; six LOCAL-QUEUE rows that failed on access (L3, L4, L5, L10, L12, L21) are queued again. [LQ-] pull requests expected tonight; either parent lands them.
 - Board: the Hall of fame's second tier now shows acknowledgements only (notes saying the work helped), at the owner's direction; today none, two public citations stand.
 - Counts unchanged: 20 letters, 15 entries.
+
+## LANE ARM-B handoff (session_017E8NVaLGF23Wd9DtaiA91T, account 2), 3 October 2026 (closed: nothing genuinely new runnable)
+
+Lane orchestrator on account 2 (brief `.claude/briefs/runs/2026-10-03-acct3-lane-arm.md`, LANE-ARM-B = instruments on what is on disk
+for armstrong-madison-1808, Tomokiyo's ask), 19:20 to 20:0x UTC. 4 worker rows USD 14.62 (3 D, 1 C), orchestrator about 5.2
+(self-ledgered as the delta over this session's 210.39 baseline); lane total about 19.8 of 60. Five-hour window `allowed` throughout.
+No live workers, no check-in armed. WORK-QUEUE LANE-ARM-B done; SWEEP-OWN-2 done (spawned 19:09 by this session as dispatcher).
+
+- SWEEP-OWN-2: account 2 swept, 1,154 sessions paged, 84 not archived, 83 classified, 76 archived, 1 permission-refused
+  (STALE-CLAIMS-2026-10-03.md "## Sessions, account 2"). 1.6x its cap (one archive call per session).
+- H73 (Tomokiyo's suggestion, controlled): vocabulary-prior solver for the two-level design (nomenclator.py vocab_order=1, offline test
+  added). Matched control, Armstrong's own 15+22 Feb 1808 decodes re-encoded at N=369 with the other sibling's word list: mean 0.153
+  (0 of 3 >= 0.6) vs the blind ARM-C1 solver's 0.130 on the same letters. CONTROL BELOW GATE, target not run; logged "untestable by this
+  tool at N=369". A crib-fed rerun with LANE-ARM-A's H70 list would be a third attempt in the crib-loop family (ARM3-LOOP, H27) and is
+  not briefed (rule 3 third-attempt clause); the next instrument needs new material (a second letter in this code, a key or a gloss).
+- H74/H74b: the shorthand as a sign-sorter page, 997 tiles from the 28 corrected lines in 36 provisional shape piles (21 named after the
+  nearest of Tomokiyo's 38 types, starting labels, not readings), test_qa.js 133/0; published by the account-3 orchestrator
+  (https://claude.ai/artifact/R9GrLoF1ajudygVjo4d17N, ASKS 128). H74's first build (all tiles in one pile) was returned and rebuilt.
+- H60 (cluster purity against person labels) waits on the owner's sort; H56 (proper-name pattern words) stays blocked on the same labels
+  (H54 inventory gate not met).
+- Next for whoever reopens this half: run tools/sign_sorter_apply.py on the owner's sorter result, then H60, then H56 if its gate is met.
