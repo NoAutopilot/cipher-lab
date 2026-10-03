@@ -7262,3 +7262,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:35 | GAPS167-eckert-1862 (account-4) | claim: ciphers/eckert-1862 residue regen (GAPS161 next), cap USD 2, box 25 min
 2026-10-03 16:35 | FT4z-naf14913-rousseau-venice-1743 (account-4) | claim: pooled exact (0-edit) pin run f.206 + f.216v + f.266r S1 over disputed split values 121/188/834/344/24/534/253, FT4x CP-SAT instrument, controls first (s)/(g) n 40 seed 3, PREREG-FT4z before any run; script only; cap USD 3, box 16:37-17:07 UTC
 2026-10-03 16:35 | GAPS166-sachsstaatsarchiv-manteuffel-1712 (account-4) | claim: PREREG-GAPS166 then f.467 (file 0579) period gloss transcription (crops + 2 blind Opus passes + reconcile) scored through fr18 beside f.410 decode and shuffled-key decodes; cap USD 5, box 16:36-17:16 UTC
+2026-10-03 16:35 | GAPS169-pollaky-1865-1875 (account-4) | claim: pollaky-1865-1875 gap 2(c) Baertl digit-sum rule, cap USD 2, box 25 min
