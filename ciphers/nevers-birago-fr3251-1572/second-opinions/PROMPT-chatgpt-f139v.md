@@ -5,7 +5,7 @@ agents). We want you to try to find this in print, not to praise it.
 
 THE ITEM
 - Lodovico Birago (French governor of the Marquisate of Saluzzo) to Louis de Gonzague, duc de Nevers, Saluzzo,
-  7 January or 7 February 1572 (an endorsement reads "7 di Gennaro 1572"; Tomokiyo's catalogue gives 7 February).
+  7 February 1572 (Tomokiyo's catalogue).
   Bibliothèque nationale de France, ms. français 3251, no.71, ff.138-139; Gallica
   https://gallica.bnf.fr/ark:/12148/btv1b9060248g/f141.item (left page, f.139v). Italian, about Pinerolo
   fortification money, the Conte da Coconato's company and Capitano Voluera, with five lines in a symbol cipher at

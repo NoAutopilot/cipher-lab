@@ -418,6 +418,7 @@ api.openalex.org 3, api.semanticscholar.org 2. No credentials printed.
    letters are conditional on the image.
 2. **Date.** The endorsement (images/manifest.json, "alli 7 di Gennaro 1572") and Tomokiyo's "7 February 1572" disagree;
    still not settled. The safe sentence names neither month alone.
+   *Correction, 3 Oct 2026 (FIX-NO71-DATE, from OUT-CHECK-TOMO-BIRAGO2, 04:47 UTC): the "alli 7 di Genaro" docket is on f.137v (canvas 139, left, the facing verso), not f.138r, and reads "Attestat.ne fatta dal M.s ... conto di l'andata a ... alli 7 di Genaro" -- the docket of a preceding attestation, not of letter no.71 (checked on a native crop, canvas 139 region 1050,1800,800,1800). It is no evidence against Tomokiyo's 7 February 1572 for no.71. The verdict above is unchanged; the safe sentence may now give 7 February 1572 (Tomokiyo).*
 3. **Content consistency is not confirmation.** "il cocinato" matches the Conte da Coconato in the letter's own clear
    prose; NEVBIR-138 already says this; keep it so outward.
 4. **Labels correct.** The claim's "printed 1572 key + T42=m" correctly names the fitted map (the mislabel the no.87

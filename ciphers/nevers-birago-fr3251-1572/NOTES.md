@@ -31,6 +31,7 @@ this job's brief named all seven -- nevers.htm lists the full 1572 run as ff.138
 **Date note (images/manifest.json):** the f.138r image fetched this session shows a marginal endorsement partly
 reading "...alli 7 di Gennaro 1572" (7 January), not the "7 February 1572" nevers.htm gives for no.71 -- flagged,
 not resolved, for the SOLVE parent to check against the image before transcribing.
+**Correction, 3 Oct 2026 (FIX-NO71-DATE, from OUT-CHECK-TOMO-BIRAGO2, 04:47 UTC): the "alli 7 di Genaro" docket is on f.137v (canvas 139, left, the facing verso), not f.138r, and reads "Attestat.ne fatta dal M.s ... conto di l'andata a ... alli 7 di Genaro" -- the docket of a preceding attestation, not of letter no.71 (checked on a native crop, canvas 139 region 1050,1800,800,1800). It is no evidence against Tomokiyo's 7 February 1572 for no.71.** No date conflict remains for no.71.
 
 ## Witness (known-plaintext sibling -- carries a period decipherment, the calibration set per the fr7129 lesson)
 
@@ -1109,7 +1110,7 @@ the letter's clear prose (f.138r), so the name is content-consistent, not indepe
 Shuffled-target control (`harvest/shuffled_judge.py`, 10 seeds, 161 signs): 0 of 10 PASS, mean -1.802, max -1.545. The FAIL
 sits between the shuffled decodes and real_p05, the same shape as no.87's near-miss with 13% unkeyed signs here.
 
-**Date.** The endorsement "alli 7 di Gennaro 1572" (images/manifest.json) against Tomokiyo's 7 February: not settled here.
+**Date.** The endorsement "alli 7 di Gennaro 1572" (images/manifest.json) against Tomokiyo's 7 February: not settled here. Settled 3 Oct 2026: the docket belongs to a preceding attestation on f.137v, not to no.71 (see the Date note above); Tomokiyo's 7 February stands uncontradicted.
 
 Next: value-fit of the recurring off-sheet signs (disk only), then a separate verifier on the f.139v reading (flagged in ROOM).
 

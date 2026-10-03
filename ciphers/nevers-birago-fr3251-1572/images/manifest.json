@@ -9,7 +9,7 @@
       "folio": "138r",
       "canvas": 139,
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f139/full/1000,/0/native.jpg",
-      "note": "this folder's own target f.138 no.71, Saluzzo -- ink foliation '138' confirmed; a marginal endorsement on the facing verso reads (partially) 'Lodovico Birago del Marchese... conto di Saluzza a Nevers... alli 7 di Gennaro 1572' (7 January, not Tomokiyo's stated 7 February 1572 -- a date discrepancy between the endorsement and the catalogue sentence, not resolved here, flagged for the SOLVE parent); cipher block not examined (no reading, no decoding, per this job's brief)"
+      "note": "this folder's own target f.138 no.71, Saluzzo -- ink foliation '138' confirmed; a marginal endorsement on the facing verso reads (partially) 'Lodovico Birago del Marchese... conto di Saluzza a Nevers... alli 7 di Gennaro 1572' (7 January, not Tomokiyo's stated 7 February 1572 -- a date discrepancy between the endorsement and the catalogue sentence, not resolved here, flagged for the SOLVE parent); cipher block not examined (no reading, no decoding, per this job's brief) -- 3 Oct 2026 correction (FIX-NO71-DATE, from OUT-CHECK-TOMO-BIRAGO2): the 'alli 7 di Genaro' docket is on f.137v (canvas 139, left), reads 'Attestat.ne fatta dal M.s ... conto di l'andata a ... alli 7 di Genaro', and is the docket of a preceding attestation, not of letter no.71; it is no evidence against Tomokiyo's 7 February 1572."
     },
     "f178r_verso177_canvas181.jpg": {
       "folio": "178r (left page of the same canvas: 177v, the letter's own address leaf, 'Al Ill.mo et Ecc.mo Sig.re et Sig.r mio oss.mo il Sig.r Duca di Nevers Par di Francia...')",
