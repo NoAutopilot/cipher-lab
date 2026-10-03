@@ -627,10 +627,20 @@ nos.44/45/52 carries the target's pi/varpi/theta/infinity at overview resolution
 key family, since (i) overview resolution cannot exclude a pi/theta among no.44's few symbols and (ii) no.57's table page was not
 on the sheet. No sign was certified; no key written; grade counts in the cipher H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-Requests: gallica.bnf.fr 8 native/info fetches by iiif_lines (about 2 s apart) + 0 for the manifest (cached), no block.
-Vision calls: 1 of the 3 allowed. Rule 10: no novelty claim.
+Requests: gallica.bnf.fr 10 native/info fetches by iiif_lines (about 2 s apart) + 0 for the manifest (cached), no block.
+Vision calls: see below. Rule 10: no novelty claim.
 
-Next steps from this pass, cheapest first: (j) view no.57's table (canvases f194 = f.100v-101r and f195 = f.101v), the one 1593
+**Second locate call (no.57's table, still within the registered candidate list; no crop read, certification rule untouched):**
+canvases f194 (f.100v-101r) and f195 (f.101v), same iiif_lines command with `--canvas 194` / `195`, tiled at 1250 px high
+(`<scratch>/ov/sheet57.jpg`), vision call 2 of 3. f194 is **not no.57 but no.56** (fol.100, Italian): an Italian nomenclator
+(Accordo, Ambasciatore, Cardinale di, Re di Spagna, Re di Francia, ...) with Italian instructions, and an alphabet header of
+figures in broken squares plus a few symbols (one infinity-like sign in the header row) -- Tomokiyo's "figures in a square broken
+at both sides", out of scope (Italian, square-framed figures, no figure+symbol letter of the target's shape). f195 (f.101v) is a dense
+figure grid with a short docket, no symbol alphabet seen. **No.57's table was not found on ff.100v-102v**; the manifest labels
+canvases f198, f199 and f200 all '103r' (duplicate labels, `gallica_folio.py`), so it is presumably there. Vision calls: 2 of 3; the
+third was not spent because a found candidate would still need two blind reads (2 calls) to certify anything.
+
+Next steps from this pass, cheapest first: (j) view no.57's table, presumably canvases f198-f200 (all labelled '103r'), the one 1593
 candidate whose description (symbol homophones, figures 1-72 for two-letter syllables) fits a figure+symbol letter, one overview
-plus, if it carries pi/theta/infinity, the two blind row reads this job pre-registered (~$4); (k) a native crop of no.44's right-hand
+plus, if it carries pi/theta/infinity, the two blind row reads PREREG-VILL-TABLE.md sets out (~$5); (k) a native crop of no.44's right-hand
 symbol column on f.82v (canvas f162) to settle whether any of its few symbols is a target sign (~$3). Both depend on nobody.
