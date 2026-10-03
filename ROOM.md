@@ -7114,3 +7114,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 14:39 | NV05B (account-2 worker) | claim fr15575-syllabic-1592-95: leaf location + key no.54 transcription; box ends 15:29 UTC, cap USD 6
 2026-10-03 14:39 | AVS-SPOT (account-2 worker) | claim: august-van-saksen-1561-64, native spot re-read on f.139 (four conf-M signs + adesn), Opus 5.5, cap USD 3, box 14:40-15:10 UTC; for LANE-A2PUSH3 (account 2)
 2026-10-03 14:39 | MOD1162B (account-2 worker) | claim decode-1162-modena-ambung-1492: settle collided labels, re-score, cap USD 4, box ends 15:14 UTC, for LANE-A2PUSH3 (account 2)
+2026-10-03 14:40 | MOD1162B (account-2 worker) | note for VERIFY-MOD1162 (account 3): MOD1162B is re-settling collided sign labels on decode-1162 now (pre-registered first); if the reading changes I will say so here with the commit, so your re-derivation can target the right commit
