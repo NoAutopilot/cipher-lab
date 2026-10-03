@@ -1663,6 +1663,24 @@ script `judge_nl18_ratematch.py`; results `judge/ratematch_gaps22/result.tsv` (g
 - Grades unchanged (rule 4): 2077 H 500, C 0, S 0, M 106, I 0, U 52; reading text unchanged, `tools/decode_key.py
   ciphers/na-suriname-map-1781 --check` exit 0. Rule 10: report only. Requests: none (disk only). Vision calls: 0.
 
+## Re-derivation (REDERIVE-SURINAME-2077, 3 Oct 2026)
+
+Rule 7 re-derivation of job 10 (4.VEL 2077 title + Explicatie legend) by a fresh account-4 session that read only
+decode.json, key_period_codes_nieuw.tsv, exceptions_nieuw_image.tsv and ciphertext_2077_legend.tsv before deriving.
+- `python3 tools/decode_key.py ciphers/na-suriname-map-1781 --check`: exit 0, "reading up to date"; 2077 job 658 tokens,
+  H 500, M 106, U 52 (98 plain-word `w:` entries are not tokens).
+- Independent script (no import of decode_key; key lookup by sign, per-(line,pos) exception override, `w:` words
+  passed through, unkeyed = U): same 658 token positions; **0 value differences**; the rendered reading is
+  byte-identical to all 20 lines of reading_2077_legend_nieuw.txt.
+- Grades: 23 tokens differ, all one direction -- the independent script said H, the committed file says M. All 23
+  are tokens whose transcription `conf` is M (decode_key caps a keyed grade at the transcription confidence;
+  the independent script did not, at first). With that cap applied, 658/658 grades agree. Two of the 23
+  (2077_L03:0, 2077_L10:19, both [d-loop]=b) are GAPS21 exceptions graded H that the committed file holds at M for
+  the same reason: conservative, not an over-claim.
+- Differing tokens: 23, all grade-only, all committed as M; non-M differences: none.
+
+Verdict: **agrees**. The reading re-derives from the transcription and the key; nothing sent back.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have been transcribed to this folder's two-pass bar, so there is no target ciphertext.tsv and no reading (RD03D "State at close"). The key-source control (self-consistency only) is 37 of 56 tokens at grade C (66.1%), with M 1 and U 18 (reading.txt header; tools/decode_key.py --check exits 0, rerun on a scratch copy 1 Oct 2026). RD03D's "C 56, M 1, U 18" is a slip for the 56-token total. The key has 17 grade-C signs (key.tsv), period and ours.
 - 2007A key-source remainder: Nota clauses B/D/E/F (about two-thirds of the block), the Remarque paragraph after "Signatuure", and the other enciphered map labels on 2007A whose plain twins are on 2007B - blocker: not-attempted; the plain text is in hand (scratch_2007b_nota_plain.txt; images/2007b_remarques_crop.jpg is on disk but not transcribed). Only pass A of Nota B/D/E/F survives as a file (scratch_notaBDEF_passA.tsv); pass B exists only in the RD03C transcript. Each attempt so far gained signs (13, then 15, then 17), so rule 3's third-attempt clause does not apply. The з/Signatuure conflict belongs here too: single-reader zoom re-reads of that one word on crops already at native resolution failed twice (RD03C, RD03D), so settle з from its other occurrences in the aligned Remarque, not from a third read of the same word; next: transcribe 2007B's plain Remarque, run a fresh blind pass B over the Nota B/D/E/F crops, add a glyph-token option to tools/interlinear_align.py (it is numeral-only today; Usage 8, no private copy), and align against 2007B's plain text seeded with the 17 signs, ~$9
