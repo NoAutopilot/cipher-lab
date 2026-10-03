@@ -1,5 +1,5 @@
 open
-Vochezer, Geschichte des fürstlichen Hauses Waldburg in Schwaben vol. 3 (archive.org djvu full text, 67,235 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Walburga, Pröpstin, Essen, Christoph Karl: no cipher term, neither correspondent, letters absent.
+Vochezer, Geschichte des fürstlichen Hauses Waldburg in Schwaben vol. 3 (archive.org djvu full text, 67,235 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Walburga, Pröpstin, Essen, Christoph Karl: no cipher term, neither correspondent, letters absent. GAPS116 (3 Oct 2026): Regesten/regional-journal full-text search (IA fts, Google Books, Hohenzollern Mitteilungen 1887-91 djvu) found no mention of Nr. 702, its cipher or a decipherment; Friedberg-Scheer leads for the recipient logged.
 
 # Maria Walburga Eusebia von Waldburg to Christoph Karl von Waldburg, partly ciphered — StA Sigmaringen
 
@@ -117,3 +117,64 @@ Waldburg family correspondence in Dep. 30/1 T 3 (e.g. Nr. 1331) is catalogue-onl
 (d) Recipient side: recipient Christoph Karl (Waldburg-Trauchburg line); Vochezer vol. 3, the family history,
 re-grepped in full by this worker (status line), names neither the letters nor a cipher; no edition of the Essen
 abbey's (sender's side) correspondence for 1653-54 found. Not found.
+
+## GAPS116-stas-waldburg-1653 (3 Oct 2026, account-4): next step (1), Regesten / regional-journal full-text search
+
+Clock read 13:00 UTC. Intake gate `python3 tools/intake_gate_check.py stas-waldburg-1653` exit 0 before work. Scripts
+only (no vision, no subagents); the model read only the hit snippets.
+
+**Hosts and positive controls.** (a) Internet Archive cross-item full-text search (`be-api.us.archive.org/fts/v1/search`),
+control `"Truchsess von Waldburg"` -> 8,375 hits (works). (b) Google Books API (`&country=US`, keyed), control
+`"Truchsess von Waldburg"` -> 311 volumes (works). (c) IA `advancedsearch` title search for the journals. (d) IA djvu text
+of *Mitteilungen des Vereins für Geschichte und Altertumskunde in Hohenzollern* 1887-1891 (`MitteilungenHohenzollern18871891`,
+39,383 lines), control "Sigmaringen" -> 308 lines (OCR readable). The second IA copy `bub_gb_CIgAAAAAcAAJ` has a 7-line
+djvu text and no fts index (control "Hohenzollern" 0): not searchable, a non-test. BSB's own full-text search was not
+queried; BSB-digitised volumes were reached through their IA mirrors (`*bsb` identifiers) in (a).
+
+**What is online.** No *Zeitschrift für Hohenzollerische Geschichte* (1965-) or *Hohenzollerische Jahreshefte* volume on
+IA by title search (0 each); the in-copyright journal is reachable only as Google Books snippets, covered by (b). The only
+Hohenzollern society volume online (1887-91) has 0 lines for Waldburg/Truchsess/Walburga/Trauchburg/Friedberg variants
+(Fraktur OCR, loose substrings `aldburg`, `ruchse`, `rauchburg` tried), and 0 for Geheimschrift/Chiffre/Ziffer.
+*Beiträge zur Geschichte von Stadt und Stift Essen* (1881, `bub_gb_PFzVAAAAMAAJ`): 0 hits for Waldburg or Walburga
+(control "Essen" hits).
+
+**Queries and results** (IA fts / Google Books): `"Maria Walburga" Essen Waldburg` (229 / -), `Walburga Pröpstin Essen
+Truchsessin` (10), `"Christoph Karl" Trauchburg` (122), `Waldburg Geheimschrift` (1,310), `Waldburg Chiffre 1653`
+(2,845), `"Pröpstin" Essen Waldburg` (348), `Eusebia Waldburg Essen` (1,301), `Truchsessin Essen 1653` (525); GB:
+`"Maria Walburga" Waldburg Essen Pröpstin` (2), `Waldburg Trauchburg Geheimschrift` (11), `"Dep. 30/1 T 3"` (8),
+`"Nr. 702" "Dep. 30/1"` (157, all noise), `Walburga Eusebia Waldburg Geheimschrift` (0), `"Walburga Eusebia" Waldburg`
+(15), `"Pröpstin zu Essen" Waldburg` (3), `"Archivinventare" Walburga Eusebia Trauchburg` (2), `Walburga Trauchburg Essen
+Geheimschrift` (0), `"Christoph Karl" Friedberg-Scheer 1653` (3), and three more with 0-1 hits. Every hit's snippet read:
+**no hit names Dep. 30/1 T 3 Nr. 702, these letters, a cipher of this family, a key or a decipherment.** Not found.
+
+**Leads (for step 2, not resolved here; grade M, snippet-level only):**
+- Ute Küppers-Braun, *Frauen des hohen Adels im kaiserlich-freiweltlichen Damenstift Essen, 1605-1803* (1997, GB
+  X-f5rjgmscwC, no preview): an entry "Maria Walburga Eusebia Truchseß von Waldburg-Trauchburg", Essen, with a
+  parents line naming a "Hans Ernst Truchseß von Waldburg" (snippet; whether as father is not legible from it).
+  Same author, *Macht in Frauenhand* (2002, N3ElAQAAIAAJ): "Maria Walburga Eusebia Truchseß v. Waldburg-Trauchburg",
+  date 1668 Juni 18 (her death or resignation as Pröpstin). This is the prosopography that settles her parents and so
+  her brothers; snippet-only from the cloud.
+- *Württembergische Archivinventare* (1947, GB bzhmAAAAMAAJ, no preview): an inventory entry grouping letters of
+  "Walburga Eusebia von Königsegg geb. Gräfin zu Trauchburg, Christoph Carl Graf zu Friedberg-Scheer, Maria Franziska
+  von Wolkenstein geb. Gräfin zu Trauchburg von ihrer Schwester Maria Veroni[ka?]" -- a sibling group with a Christoph
+  Carl styled **Graf zu Friedberg-Scheer**. Obermarchtal Urkunden (1993, YThmAAAAMAAJ) and *Die Grafen von Sulz* (1992,
+  ZCZoAAAAMAAJ) name "Christoph Karl Gf. v. Friedberg[-Scheer]" with brother Otto, 1653; the Sulz marriage matches the
+  kaiserhof record cited under Source. Dep. 30/1 T 3 is itself the Grafschaft Friedberg-Scheer fonds (GB lPjMQgAACAAJ,
+  "Bestand Dep. 30/1 T 3 - Grafschaft Friedberg-Scheer", 2001). So the recipient is more likely styled Friedberg-Scheer
+  than Trauchburg (the Source section's "Waldburg-Trauchburg" is an inference from 24 Sept, not established).
+- *Ortskirche und Weltkirche in der Geschichte* (Festgabe Trippen, GB 3SP8fxb7CfoC, PARTIAL) has an essay drawing all
+  its unprinted sources from Dep. 30/1 T 3 (cites Nr. 1649); a Cologne church-history volume, so plausibly about a
+  Waldburg canoness or cleric in the Rhineland. Snippet does not show Nr. 702.
+- Separate person, not ours: Zündorf 1911 (St. Ursula, Cologne) lists Waldburg-Zeil canonesses; a Walburga Eusebia
+  daughter of Christoph of Friedberg-Scheer married into Königsegg/Niederösterreich lines (d. 1656/1663/1673 by
+  source) -- name collision to keep apart in step (2).
+
+**Requests per host:** archive.org advancedsearch 8, metadata 3, download 2; be-api.us.archive.org 25;
+www.googleapis.com (Books) 26 (one 503, not retried). No 429 or challenge.
+
+**Next step:** (2) resolve the sender's parents and the recipient's line from Küppers-Braun 1997 (the Essen
+prosopography entry for Maria Walburga Eusebia) and the *Württembergische Archivinventare* 1947 entry -- both
+snippet-only from the cloud; a LOCAL-QUEUE row (owner's browser, Google Books snippet view or a library copy) or a
+CORE/OpenAlex check for an open-access Küppers-Braun text, ~USD 1. Then (3), the LABW viewer re-test for Nr. 702; the
+copy (REQUEST.md) is still what any reading needs. Also worth a ~USD 1 check: the Trippen-Festgabe essay built on
+Dep. 30/1 T 3 (GB 3SP8fxb7CfoC, PARTIAL) for a citation of Nr. 702.
