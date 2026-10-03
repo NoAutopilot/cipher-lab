@@ -1,0 +1,32 @@
+{
+ "slug": "fr3993-gonzague-nevers-1595",
+ "name": "BnF fr.3993 ff.71v-72r, Charles de Gonzague-Cleves to the duc de Nevers, 2 Aug 1595: digit cipher runs under key no.70",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "ciphers/fr3993-gonzague-nevers-1595/ciphertext.tsv (reconciled by NV01-READ from 2 blind passes, 3 Oct 2026)",
+ "ciphertext_source": "Gallica ark btv1b9059229n canvas 81, crops in ciphers/fr3993-gonzague-nevers-1595/images/crops/",
+ "alphabet": "two-digit groups; key no.70 (fr.3995 f.131r): 22 letters with homophones, 17 nulls; a few nomenclator signs",
+ "constraints": [
+  "key known: no.70 (Tomokiyo nevers.htm)",
+  "the leaf carries a period interlinear letter gloss above the cipher lines"
+ ],
+ "cheap_tests_in_order": [
+  "known-answer control on fr.3993 f.254 (glossed sibling), then key no.70 on the target vs its own gloss, shuffled-key null, judge fr16"
+ ],
+ "judge": {
+  "language": "fr",
+  "min_word_cover": 0.5,
+  "control_samples": 200
+ },
+ "written": "3 Oct 2026, NV01-READ",
+ "cheap_test_done": {
+  "date": "3 Oct 2026",
+  "by": "NV01-READ (account 3 parent worker, session_012Ujekwha7bGgoYR9S5WptM)",
+  "test": "1: key no.70 (fr.3995 f.131r) vs the leaf's own period interlinear gloss, after a known-answer control on fr.3993 f.254",
+  "control": "f.254 sibling: agreement with period gloss 0.826 vs 200 shuffled keys max 0.271 (z 17.7); blind digits unreconciled 0.569 vs 0.257",
+  "target": "0.685 vs shuffled max 0.262 (z 14.4, rank 1/201); power at 4/10/20% injected error 0.544-0.664, rank 1/201; err_2reader 0.019",
+  "judge": "FAIL language -1.06 (null_p99 -1.749, real_p05 -0.931), cover 0.886 ok; shuffled-target decodes -1.69..-2.17; gloss-confirmed sibling decode -0.933 also FAIL -> judge cannot decide at this N",
+  "verdict": "key no.70 confirmed on this letter by two period glosses; the leaf carries a period interlinear decipherment; status partial (gloss pass and nomenclator remain)"
+ }
+}

@@ -1,0 +1,69 @@
+# Key no.70 (Tomokiyo, nevers.htm 'no.70 (fol.130) (August 1595)'), alphabet and nulls only.
+# Source: BnF fr.3995 f.131r (Gallica ark:/12148/btv1b525085665 canvas f252, written sideways), the inner leaf of the
+# f.130 docket 'aoust 1595'. Read by NV01-READ from images/key70/key70_alphabet_rot.jpg, 3 Oct 2026. The nomenclator
+# columns below the alphabet (words, persons, towns) are not transcribed here. s=84 is written over a correction (grade M).
+code	value	grade	source	note
+32	a	H	fr3995-f131r	
+34	a	H	fr3995-f131r	
+35	a	H	fr3995-f131r	
+36	b	H	fr3995-f131r	
+37	c	H	fr3995-f131r	
+14	c	H	fr3995-f131r	
+38	d	H	fr3995-f131r	
+17	d	H	fr3995-f131r	
+42	e	H	fr3995-f131r	
+43	e	H	fr3995-f131r	
+45	e	H	fr3995-f131r	
+46	f	H	fr3995-f131r	
+59	f	H	fr3995-f131r	
+47	g	H	fr3995-f131r	
+48	h	H	fr3995-f131r	
+52	i	H	fr3995-f131r	
+53	i	H	fr3995-f131r	
+54	i	H	fr3995-f131r	
+56	l	H	fr3995-f131r	
+39	l	H	fr3995-f131r	
+57	m	H	fr3995-f131r	
+79	m	H	fr3995-f131r	
+62	n	H	fr3995-f131r	
+63	n	H	fr3995-f131r	
+64	n	H	fr3995-f131r	
+65	o	H	fr3995-f131r	
+67	o	H	fr3995-f131r	
+68	o	H	fr3995-f131r	
+72	p	H	fr3995-f131r	
+69	p	H	fr3995-f131r	
+73	qu	H	fr3995-f131r	
+49	qu	H	fr3995-f131r	
+74	r	H	fr3995-f131r	
+75	r	H	fr3995-f131r	
+76	r	H	fr3995-f131r	
+82	s	H	fr3995-f131r	
+83	s	H	fr3995-f131r	
+84	s	M	fr3995-f131r	overwritten in the table
+85	t	H	fr3995-f131r	
+86	t	H	fr3995-f131r	
+87	t	H	fr3995-f131r	
+92	u	H	fr3995-f131r	
+93	u	H	fr3995-f131r	
+94	u	H	fr3995-f131r	
+95	x	H	fr3995-f131r	
+96	y	H	fr3995-f131r	
+97	z	H	fr3995-f131r	
+11	NULL	H	fr3995-f131r	Nulles
+12	NULL	H	fr3995-f131r	Nulles
+13	NULL	H	fr3995-f131r	Nulles
+16	NULL	H	fr3995-f131r	Nulles
+18	NULL	H	fr3995-f131r	Nulles
+19	NULL	H	fr3995-f131r	Nulles
+89	NULL	H	fr3995-f131r	Nulles
+99	NULL	H	fr3995-f131r	Nulles
+01	NULL	H	fr3995-f131r	Nulles
+02	NULL	H	fr3995-f131r	Nulles
+03	NULL	H	fr3995-f131r	Nulles
+04	NULL	H	fr3995-f131r	Nulles
+05	NULL	H	fr3995-f131r	Nulles
+06	NULL	H	fr3995-f131r	Nulles
+07	NULL	H	fr3995-f131r	Nulles
+08	NULL	H	fr3995-f131r	Nulles
+09	NULL	H	fr3995-f131r	Nulles

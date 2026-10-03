@@ -1,0 +1,13 @@
+# BnF fr.3993 f.72r (T0-T6) and f.71v foot (V1-V2), Gallica btv1b9059229n canvas 81. Reconciled by NV01-READ, 3 Oct 2026, from the
+# native image against blind passes A and B (Sonnet). digits: two-digit groups; [..] = a non-digit sign (nomenclator) or a struck run.
+# gloss_blindA: the period interlinear letters as blind pass A read them ('?' dropped); used for the gloss_score.py test.
+line	digits	gloss_blindA
+T0	[struck:12 13 14 65 ...] 15 56 43 82	NONE
+T1	47 32 83 17 45 82 [struck:18 14] 82 65 62 85 92 42 63 92 97 32 17 92 43 74 85 52 75	g a s d e s s o n t a c a r a d u c e r t i r
+T2	62 43 85 36 92 96 [xiiij] 56 43 82 [X] 46 65 62 85 32 79 42 63 45 74 17 42 83 47 32	t c t b u r y m i i c s e n t o n t a n c e t d e s g
+T3	36 52 65 62 82 45 62 85 74 43 56 32 72 67 75 85 43 17 92 79 32 82 43 86 39 45	b i e n s e n t r e p o r t a d u m a l
+T4	74 32 93 45 56 52 63 39 32 63 65 92 43 [m] 36 32 85 86 74 43 17 45 79 32 52 62 45 85	r a n c l i n t a n o u c p o t t e d e m u i n i s
+T5	59 32 93 56 85 43 17 43 [5.] 13 56 65 62 82 45 74 32 [struck] 43 62 17 32 62 47 45 74 16 16	f a n t e d e n o m i s s o n s e r a e n d e n g a z
+T6	17 45 72 42 74 17 75 42 06 15 85 65 62 86	d e l e r d r e s o n t
+V1	[xvij] [struck:13 32 19 85 35 12 62 ...] 13 32 08 92 65 62 19 85 36 07 65 62 12 [struck]	n o n o n n b o n
+V2	[blot] 11 [x5?] 19 62 65 52 19 62 17 13 45 [0.] 13 19 45 85 92 11 52 85 42 13 79 45 62 19 85	t t i b n

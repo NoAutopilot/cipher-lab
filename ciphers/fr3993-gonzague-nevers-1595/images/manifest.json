@@ -1,0 +1,61 @@
+{
+ "sources": [
+  {
+   "file": "c81_native.jpg",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059229n/f81/full/full/0/native.jpg",
+   "committed": false
+  },
+  {
+   "file": "c265_native.jpg",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059229n/f265/full/full/0/native.jpg",
+   "committed": false
+  },
+  {
+   "file": "key70/f131r_native.jpg",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f252/full/full/0/native.jpg",
+   "committed": false
+  }
+ ],
+ "crops": [
+  {
+   "file": "crops/c81_72r_block.jpg",
+   "ark": "btv1b9059229n",
+   "canvas": 81,
+   "region_native": [
+    4350,
+    820,
+    7450,
+    1920
+   ],
+   "scale": 0.774,
+   "note": "fr.3993 f.72r cipher block with interlinear gloss"
+  },
+  {
+   "file": "crops/c81_71v_foot.jpg",
+   "ark": "btv1b9059229n",
+   "canvas": 81,
+   "region_native": [
+    250,
+    4720,
+    3550,
+    5320
+   ],
+   "scale": 0.727,
+   "note": "fr.3993 f.71v two foot lines (struck line + cipher line) with gloss"
+  },
+  {
+   "file": "crops/c265_f254_block.jpg",
+   "ark": "btv1b9059229n",
+   "canvas": 265,
+   "region_native": [
+    4700,
+    2620,
+    8000,
+    3680
+   ],
+   "scale": 0.727,
+   "note": "fr.3993 f.254r sibling cipher block with interlinear gloss"
+  }
+ ],
+ "fetched": "2026-10-03 NV01-READ"
+}
