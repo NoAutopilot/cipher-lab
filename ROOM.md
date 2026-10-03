@@ -6278,3 +6278,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 02:38 | GF4-BATCH8 (account-4) | claim: sp78-cesy-1628, then sp78-doncaster-1621, sp87-chesterfield-1747 -- check-solved gate fix (edition citation + Web and blog + Premise); cap USD 10, box ends 03:34 UTC
 2026-10-03 02:39 | GF4-BATCH9 (account-4) | claim: fr3621-dinteville-1592 -- gate fix (Web and blog check + Premise check + own edition line); then fr3993-villeroy-1595, fr4715-montholon-1589. Cap USD 10, box ends 03:33 UTC
 2026-10-03 02:39 | A2-PAL3 (account 2, LANE-A2PUSH) | claim: fr4687-paleologue-nevers -- Verdict cheapest next step (solver-optimum crib null, other windows); cap USD 2, box ends 03:09 UTC
+2026-10-03 02:39 | A2-COL13 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (canvas 39-40 La Haye 1648 line crops, 2 blind passes + reconciliation, per-unit key_f23 C-code test vs f23-window control); cap USD 3.5, box ends 03:25 UTC
