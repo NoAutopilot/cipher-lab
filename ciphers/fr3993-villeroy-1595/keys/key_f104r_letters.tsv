@@ -1,0 +1,50 @@
+# fr.3995 no.58 f.104v (canvas f203; the recto f.104r carries only heading + show-through), "...tangi 1593 23 Juillet",
+# letter strip read by VILL-STRIPS 3 Oct 2026 from native crops (iiif_lines, region 500,180,4000,700). code<TAB>letter<TAB>grade
+# Symbols named: DELTAX = Delta with a cross above; XX = double-barred x; DIAM = open diamond; SQ = square; OPLUS = circle with cross above.
+# Nulles box (right of z, not cropped): read only at 700 px thumbnail as 32 35 37 40 41 43 45 -- grade I.
+6	a	M
+5	a	M
+DELTAX	a	M
+2	b	M
+3	c	M
+4	c	M
+8	d	M
+7	d	M
+11	e	M
+12	e	M
+XX	e	M
+15	f	M
+16	f	M
+17	g	M
+18	h	M
+19	i	M
+20	i	M
+DIAM	i	M
+9	l	M
+22	m	M
+23	m	M
+24	n	M
+25	n	M
+27	o	M
+28	o	M
+SQ	o	M
+13	p	M
+14	q	M
+30	r	M
+31	r	M
+33	s	M
+34	s	M
+36	t	M
+38	u	M
+39	u	M
+OPLUS	u	M
+42	x	M
+44	y	M
+46	z	M
+32	NULL	I
+35	NULL	I
+37	NULL	I
+40	NULL	I
+41	NULL	I
+43	NULL	I
+45	NULL	I

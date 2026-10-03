@@ -381,3 +381,61 @@ no.70 per Tomokiyo, a different direction and a key already ruled out for no.102
 on Villeroy's side (Villeroy papers, BnF fr.15xxx / Cinq Cents de Colbert), a catalogue search, one host, ~USD 3 for a
 finding-aid worker; (iii) fr.3994 ff.6/44 seen only by a BnF reproduction order (owner, low value given the catalogue's
 silence; not filed).
+
+## fr.3995 nos.40 and 58 letter strips read and scored (VILL-STRIPS, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-strips.md`. Intake gate: "open (line 1) -- edition/page or full-text-search
+citation found within 6 lines", exit 0. Pre-registered before any strip was read: `fr3995/PREREG-VILL-STRIPS.md` (commit c93ea117).
+
+**Correction to VILL-KEYS.** The faint "letter strips" seen on f.74r (canvas f147) and f.104r (canvas f202) are show-through:
+at native resolution the figures on f.74r read mirror-image (`images/fr3995/f74r_lines_debug.jpg`), and the dark recto ink is
+only the heading ("Doncheri 1591 20 Aoust" / "...tangi 1593 23 Juillet", "Chiffre"). The tables themselves are on the versos:
+**f.74v = canvas f148** (5440x3646, landscape: alphabet strip, Nulles box, then Noms generaux / Provinces / Noms propres /
+Villes nomenclator) and **f.104v = canvas f203** (5054x3635: alphabet strip, Nulles, nomenclator of persons and Villes).
+The step was run on the verso strips.
+
+Crops (pasted):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 148 --region 200,30,4600,620 --out <scratch> --prefix f74v_strip \
+        --centres 150,300,450 --lines-per-crop 200 --max-width 1200 --overlap 100      # 5 segments
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 203 --region 500,180,4000,700 --out <scratch> --prefix f104v_strip \
+        --centres 150,300,450 --lines-per-crop 200 --max-width 1100 --overlap 100      # 4 segments
+    # committed: images/fr3995/f74v_strip_L01_s1-5.jpg, f104v_strip_L01_s1-4.jpg (manifest.json "iiif_lines")
+
+Keys (one blind read per strip, every cell M; nulls of f.104v I, read only at 700 px):
+- **f.74v (no.40, Doncheri 20 Aug 1591)** `keys/key_f74r_letters.tsv`: a-z (23 letters) = even 10-52 (a 10, b 12, ... z 52),
+  plus odd homophones 11-37 (a 21, c 11, e 23, f 13, h 15, i 31, m 17, n 33, p 19, r 35, s 25, u 37, x 27, z 29) and symbol
+  homophones (theta-barred, phi, upsilon, x-bar, #, R, alpha, beta, hatched x, triangle, T, square, reversed c, I, double-barred =,
+  triple #, gamma, epsilon, A); Nulles 39 41 45 47 49 51, infinity, double-barred H, Z, open bracket.
+- **f.104v (no.58, 23 Jul 1593)** `keys/key_f104r_letters.tsv`: mixed one- and two-figure codes: a 6 5, b 2, c 3 4, d 8 7, e 11 12,
+  f 15 16, g 17, h 18, i 19 20, l 9, m 22 23, n 24 25, o 27 28, p 13, q 14, r 30 31, s 33 34, t 36, u 38 39, x 42, y 44, z 46;
+  symbols: Delta with cross (a), double-barred x (e), open diamond (i), square (o), circle with cross (u). Nulles (I): 32 35 37 40 41 43 45.
+
+Family signs: the f.74v strip carries infinity (as a null) and theta-like and reversed-c signs; f.104v carries a Delta-like
+sign. Neither carries lambda, pi or varpi, the target's commonest symbols (L 17, P 13, V 12). No target sign was certified
+identical (no target image viewed in this job), so per PREREG rule 2 only figures count.
+
+**Gates and score** (`strips_score.py`, regenerates `strips_score.tsv`, `--check` exits 1 if stale; fr16 4-gram model of
+`tools/judge_plaintext.py`; figure tokens segmented two-figure-first when the pair is a key code, 'o' = 0, signs dropped):
+
+| strip | coverage | reader err | power (rank 1 of 201, 20 synthetic French texts, same length/coverage/segmentation) | target letters | target score | rank / 201 | z | verdict |
+|---|---|---|---|---|---|---|---|---|
+| f.74v no.40 | 0.591 | 0.015 | 20/20 | 146 | -2.201 | 107 | -0.13 | FAIL |
+| f.104v no.58 | 0.591 | 0.152 | 18/20 | 217 | -2.107 | 41 | 0.83 | FAIL |
+
+Both strips clear the coverage gate (0.591 >= 0.5) and the power gate (>= 16/20), so both are **control-backed negatives
+for the figure part of the target under these two alphabets** (the real key scores no better than value-shuffled keys).
+Conditional on: Bourdeau's transcription (no image check of the target's figures in this job); the two-figure-first
+segmentation; and signs dropped (41% of tokens unread). Decodes by eye show no French either (f.104v begins
+"ipbemeidqgafbdeaog..."). No reading committed; judge_plaintext.py not run because there is no reading to report
+(nothing passed). Grade counts: H 0, C 0, S 0, M 0, I 0 in the cipher.
+
+Requests: gallica.bnf.fr 4 info.json + 2 thumbnails (700 px) + 4 native regions, about 2 s apart, no block. Vision reads: 6
+(1 earlier contact sheet, 2 debug overlays, the f.74r show-through stack, 1 verso thumbnail pair, 2 verso strip stacks).
+Rule 10: no novelty claim.
+
+Verdict after VILL-STRIPS: `open`. Next steps, cheapest first: (b) f.80v (canvas f159) for no.43's table, and check whether
+f.72v (canvas f144) carries no.39's "symbols and figures" table on the facing side, as nos.40 and 58 did (~$2, one thumbnail
+sheet then a strip read; same script, new key file); (e) a target-image pass on the f.148r-149r cipher runs, settling which
+target signs are figures vs symbols and whether 'o' is a 0 or a sign, before any further figure-key test (~$5); (d) the as-sent
+packet on Villeroy's side (finding aids, ~$3). All depend on nobody.

@@ -62,6 +62,240 @@
     "prominence": 46.8
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f74v_strip_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f148/200,30,4600,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f148_200_30_4600_620.jpg",
+   "box": [
+    200,
+    105,
+    1400,
+    555
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f74v_strip_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f148/200,30,4600,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f148_200_30_4600_620.jpg",
+   "box": [
+    1050,
+    105,
+    2250,
+    555
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f74v_strip_L01_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f148/200,30,4600,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f148_200_30_4600_620.jpg",
+   "box": [
+    1900,
+    105,
+    3100,
+    555
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f74v_strip_L01_s4.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f148/200,30,4600,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f148_200_30_4600_620.jpg",
+   "box": [
+    2750,
+    105,
+    3950,
+    555
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f74v_strip_L01_s5.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f148/200,30,4600,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f148_200_30_4600_620.jpg",
+   "box": [
+    3600,
+    105,
+    4800,
+    555
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 5,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f104v_strip_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f203/500,180,4000,700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f203_500_180_4000_700.jpg",
+   "box": [
+    500,
+    255,
+    1600,
+    705
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f104v_strip_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f203/500,180,4000,700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f203_500_180_4000_700.jpg",
+   "box": [
+    1467,
+    255,
+    2567,
+    705
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f104v_strip_L01_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f203/500,180,4000,700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f203_500_180_4000_700.jpg",
+   "box": [
+    2433,
+    255,
+    3533,
+    705
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "ciphers/fr3993-villeroy-1595/images/fr3995/f104v_strip_L01_s4.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f203/500,180,4000,700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b525085665_f203_500_180_4000_700.jpg",
+   "box": [
+    3400,
+    255,
+    4500,
+    705
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150,
+     300,
+     450
+    ]
+   },
+   "date": "03 Oct 2026"
   }
  ]
 }
