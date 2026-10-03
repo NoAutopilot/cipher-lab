@@ -60,3 +60,8 @@ material for this instrument, not a re-tune.
 | instrument | control (known answer) | target | verdict |
 |---|---|---|---|
 | flat-start interlinear_align, G1 A/S vs Tomokiyo (PASS S>=12, A/S>=0.70, A>perm p99) | synthetic f.7r glosses enciphered with Tomokiyo: K1 clean 1.000, K2 (word-codes 0.15, sub 0.10) 0.970, K3 (sub 0.20) 0.969 median, PASS 20/20 each | f.7r: GAPS-16 5/32 = 0.156, GAPS82 8/30 = 0.267 | gate reachable; target FAILs are real FAILs of the pairing as transcribed, not a non-test and not a key negative; no third reconciliation (rule 3); next instrument: fixed-key scoring vs permuted-key control |
+
+## Fixed-key scoring of the f.7r runs (GAPS88, 3 Oct 2026, account-4; PREREG5_fixedkey.md, c27e21b8)
+| instrument | control | target | verdict |
+|---|---|---|---|
+| Tomokiyo's letter table applied to each f.7r run (nothing learned), pooled LCS vs own gloss (scripts/f7r_fixedkey.py) | permuted key, 10,000: T mean 116.1, p99 137, max 152, meanR 0.318; positive control K2 synthetic: D_K2 0.566, PASS 20/20 | T 235, R 0.644, D 0.326 (gate 0.283); 16 of 19 runs p < 0.01 | PASS: f.7r follows Tomokiyo's letters; G1 FAILs were aligner misfit, not a different key; letters only, no slot read |
