@@ -652,13 +652,35 @@ Rule 7: `decode_key.py --check` (4 jobs) and `firm/firm_grades.py --check` both 
 fetches, of which 1 was reset and retried once and the first used a malformed ark and returned HTTP 500; 2 info.json, of
 which 1 was reset; 5 SRU; 1 manifest), be-api.us.archive.org 9. Vision calls 2. Rule 10: no novelty claim.
 
+## Date line located, not yet read (TWO-LOOKS, account 3, 3 Oct 2026, 08:53-09:10 UTC)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-two-looks.md` part (A). Gallica requests 3 (one 500 on a doubled ark
+prefix in the tool's `--ark` argument, then the whole canvas f269 0,0,4040,5762 native, then one native region that
+missed the line), >=2 s apart, no block. Vision calls 3 of 3:
+1. `images/f269_overview_808.jpg` (808 px, made locally from `images/src_ark_12148_btv1b52524472n_f269_0_0_4040_5762.jpg`).
+   The leaf holds: the cipher-and-clear body to the line "...Lorraine a envoye Florainville du duc de Parme ...", then a
+   short line in the same hand, then the stamp of the Bibliotheque royale at the right, then the second, larger-hand
+   paragraph ("Monseigneur ce matin ..."), the closing, the signature and the postscript. The head (y 0-600) carries only
+   "Monseigneur" and the folio number; the left margin shows no written line. The short line is the only candidate for
+   a date line.
+2. A native region x 1700-3200, y 3860-4120: placed too high, showed only the stamp (crop deleted).
+3. `images/f130_dateline_L01_s2.jpg` (region 300,3800,2900,200 cut from the cached whole canvas with `--image`): this is
+   the last clear-body line ("...a envoye Florainville du duc de Parme, ie say pour ... de produire ..."), not the date.
+After call 3 the row ink profile of the cached canvas (x 300-1500 and x 1500-2900, 10 px bins) puts the next line at
+y about 4060-4160 (right half 4100-4150, densest where the date words sit), with the large-hand paragraph starting at
+about 4170. **DIN-FIRM's block began at y 4180, so it missed this line by about 30 px**; its finding that y 4180-5762
+holds no date stands. The line is cut at native resolution in `images/f130_dateline2_L01_s1.jpg` and `_s2.jpg` (region
+300,4030,2900,170 of the cached canvas) but **was not viewed**: the brief's 3 vision calls were spent. At 808 px the
+day numeral is not legible, so **iij vs iiij is not settled; headings unchanged (3 July, Bourdeau; iiij the
+alternative)**. Nothing corrected in NOTES/AUDIT; status.json's result title and document_id are the orchestrator's.
+
 ## Remaining gaps (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
 Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4, unchanged by DIN-FIRM's conflict check: sq and m not promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line absent from x 280-3640, y 4180-5762 of f269
 - f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t) and m (u/t, DIN-FIRM) are polyphones, v' and 0' unkeyed; next: a word-division pass with #, v and m read in context and graded I, ~$4
 - v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
 - fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches; next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
 - Drouot-cited letters: fr.4718 f.76 (Dinteville to Nevers, 8 Jul 1592, not called deciphered) and "fr.4075 f.37" (1589 deciphered letter, writer unnamed, Gallica fr.4075 is a 1613-41 Coeuvres volume so the shelfmark does not fit) - blocker: not-attempted; shelfmark mismatch and no Gallica copy of fr.4718 found; next: read fr.4718's archivesetmanuscrits record and its availability flag, and Drouot's printed page for the 4075 citation (IA lending, a person's read), ~$2
-- f.130 date (iij or iiij July) - blocker: not-attempted; not in x 280-3640, y 4180-5762 (DIN-FIRM); next: one 808 px look at the whole of f269 to find the date line (left margin x 0-280, head y 0-600 or mid-leaf), then one native crop, ~$2
+- f.130 date (iij or iiij July) - blocker: not-attempted; line located at f269 y about 4060-4160 (TWO-LOOKS), crops cut but not viewed (vision budget spent); next: one vision call on images/f130_dateline2_L01_s1.jpg + _s2.jpg (disk only, no Gallica request), ~$1.5
 
 ## Escalation (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2)
@@ -666,6 +688,6 @@ Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; 
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
 - [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq/m checked per occurrence, not promoted (DIN-FIRM)
-- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2); foot of f269 viewed for the date (DIN-FIRM)
+- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2); foot of f269 viewed for the date (DIN-FIRM); whole leaf at 808 px, date line located at y 4060-4160 and cut, not yet read (TWO-LOOKS)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 5 internal gaps; cheapest next: one whole-leaf look at f269 to find the date line (~$2), then fr.3623 f.23's sign set for v' and 0' (~$4)
+Verdict: keep going: 5 internal gaps; cheapest next: one look at the cut date-line crops images/f130_dateline2_L01_s1/s2 (~$1.5, disk only), then fr.3623 f.23's sign set for v' and 0' (~$4)

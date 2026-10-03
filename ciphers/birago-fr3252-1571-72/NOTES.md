@@ -1296,6 +1296,13 @@ nos.33, 75 by range/coverage); no.76 not read. No token graded; no reading claim
 
 Requests: gallica.bnf.fr 7 (6 x 800 px overview, 1 native region), >=1.7 s apart, no block; manifest from cache.
 
+## fr.3995 no.76 not reached (TWO-LOOKS, account 3, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-two-looks.md` part (B). Not attempted: the brief's three vision calls were
+all used in part (A) (ciphers/fr3621-dinteville-1592, date line). No Gallica request to fr.3995, no crop, no reading;
+no.76's code range is still unknown and the fr.3995 sweep stays open on that one table. Next step unchanged (Remaining
+gaps, "Nov 1571 key table").
+
 ## Remaining gaps (BIRAGO-NUM-KEYEYE3, 3 Oct 2026)
 Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 276 signs, all M/U; f.100r + f.119: 0 graded of 1,048 digits.
 - f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
@@ -1307,7 +1314,7 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
 - f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); next: the dotted groups and the 1x/5x/8x units read as nomenclator codes against the clear text around each run, disk only, ~$1
-- Nov 1571 key table - blocker: not-attempted; fr.3995 undated tables all viewed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also dated 1580s by Epernon/Joyeuse), no.75 three-figure codes with League-era names, no.48-51 symbol keys; no.76 (f.142v-143r) a faint two-page repertory not read; no key table in fr.3995 fits; next: native crop of no.76's alphabet heading only to check its code range against the 00-59/74-99 token set (gap 60-73), ~$1.5
+- Nov 1571 key table - blocker: not-attempted; fr.3995 undated tables all viewed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also dated 1580s by Epernon/Joyeuse), no.75 three-figure codes with League-era names, no.48-51 symbol keys; no.76 (f.142v-143r) a faint two-page repertory not read (TWO-LOOKS, 3 Oct 2026, did not reach it: the shared brief's 3 vision calls went to the Dinteville date line); no key table in fr.3995 fits; next: native crop of no.76's alphabet heading only (canvas f274, `tools/iiif_lines.py --ark btv1b525085665 --canvas 274`, region from `images/fr3995/lo_f274.jpg`) to check its code range against the 00-59/74-99 token set (gap 60-73), then KEYEYE3's xmatch with its control first if two-figure, ~$1.5
 - fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
 
 ## Escalation (BIRAGO-NUM-KEYEYE3, 3 Oct 2026)
