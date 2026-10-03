@@ -1,0 +1,6 @@
+{"record": "DECODE 4282 (Riksarkivet Chifferklaver II:113)", "fetched": "3 Oct 2026, GAPS38, one tools/decode_browser_login.js 4282 --guess-fullsize login",
+ "pages": [
+  {"file": "IMG_R4282_I25746_P.pdf", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4282_I25746_P.pdf", "sha1": "001724bb240ea34615e6a484501614edc66bdb18", "image": "2465x3609 jpeg, 309 ppi", "crops": "crops/p1_L01-L25 (iiif_lines --image --region 800,40,1665,2800)"},
+  {"file": "IMG_R4282_I25747_P.pdf", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4282_I25747_P.pdf", "sha1": "eb3939a405308ae8d0f7e416db00b4338e9739b4", "image": "4917x3895 jpeg, 471 ppi, two-page spread; cipher letter = left page", "crops": "crops/p2_L01-L07 (iiif_lines --image --region 560,40,1900,950)"},
+  {"file": "IMG_R4282_I25745_P.pdf", "sha1": "304c6f1974d83217c7f0eaf5bea788dd444541ef", "note": "fetched, not used (not a cipher page of the letter)"}],
+ "committed": "line crops only; PDFs not committed, re-fetch needs a DECODE login"}
