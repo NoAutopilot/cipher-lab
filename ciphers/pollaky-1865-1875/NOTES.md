@@ -273,6 +273,40 @@ or ad 2 beyond the Laura, Baertl, Boyouk and Ernst claims recorded here and in t
 
 Status stays `partial`. Nothing read; 0 of 4 ads read here; 0 tokens graded. Hosts: scienceblogs.de 4 requests.
 
+## GAPS156-pollaky-1865-1875 (3 Oct 2026, account-4): bigram design prior on ad 2
+
+### Pre-registration (written and committed 3 Oct 2026 ~15:50 UTC, before any score was computed)
+
+Step: Verdict gap 2 (a). Texts: ad 2 (114 digits, ciphertext.txt AD 2 with every non-digit dropped), the
+25 July 1864 sibling (50 digits) and the 24 May 1865 sibling (56 digits), both as Gaffney's print in Schmeh part 1
+(GAPS table above). Script: `scripts/bigram_prior.py` (seeded, deterministic).
+
+- Split each digit string into non-overlapping bigrams from position 0 (Ernst ignores the printed group
+  boundaries, so do we). Primary statistic: **bigram IC** = sum n(n-1) / (N(N-1)) over the N bigrams.
+  Secondary: **repeat count** R = N - distinct bigrams. Phase-1 split (drop the first digit) reported, not gated.
+- Null: 200 uniform random digit strings of the text's own length. Positive control (rule 3, same N, same
+  design): 20 synthetic 10x10 homophonic encipherments of English letter text of the same bigram count, in two
+  allocation variants -- (A) frequency-proportional (each letter gets max(1, round(100 x English frequency))
+  codes, trimmed/padded to exactly 100; a well-built homophonic) and (B) random allocation (100 codes dealt to
+  26 letters, at least 1 each, uniformly); homophone chosen uniformly per letter. Plaintext: random letter-only
+  windows from `tools/data` en sources (pg1661 Holmes, pg76 Huck Finn, pg1342 Pride, pg64317 Gatsby;
+  Moby-Dick left out as the register outlier of tools/data/en/README.md). Power is also estimated on 1,000
+  synthetic texts per variant so the 20 are not the only estimate.
+- Axis check: the statistic (bigram repeat structure) can differ between null and control by construction --
+  a homophonic of English repeats bigrams more than uniform digits unless the allocation fully flattens it.
+- **Decision rule.** For each text and variant: power = share of synthetic texts whose bigram IC exceeds the
+  null's 95th percentile. (1) If power < 0.80 for variant A, the statistic cannot detect a well-built 10x10
+  homophonic at this N: the test is a **non-test** for that design, logged "untestable by bigram IC at N=57"
+  (not a negative, not a positive), whatever the target scores. (2) If power >= 0.80: target IC above the null
+  p95 = "consistent with a bigram design" (an S-level observation, no reading, no token graded); target IC at
+  or below the null median = "no bigram repeat signal; evidence against a frequency-skewed bigram design at
+  this N"; between = inconclusive. (3) The siblings are scored the same way at their own N (25 and 28 bigrams)
+  as Ernst's claimed positives: if they too fail to clear the null where power >= 0.80, Ernst's readings carry
+  no support from this statistic. No reading is attempted; rule 4 grades only if a token is read (none will be).
+- The en corpus here only supplies synthetic plaintext, it is not a judge; the en fold caveat
+  (tools/data/en/README.md: per-file spread 0.44-0.64, unknown reliability as a judge) is reported anyway, and
+  the per-source spread of synthetic power is printed so a source effect would show.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 0 of 4 ads read in this repo. Ad 1 is 0/10 signs, ad 2 is 0/36 digit groups (36 counts "9:77314" as two groups; 35 if it is one), and ads 3-4 are 0/72 letter-words re-derived here (NOTES.md Test 1 table, Test 2 diff). There is no key, decode script, AUDIT.md or HYPOTHESES.md here, and nothing is graded. The ads 3-4 ciphertext is corroborated: two passes agree on 78/80 tokens, and the text matches Ernst's BNA-checked text 72/72. Their community readings are tracked in ciphers/catokwacopa-1875, which has its own gaps section (1 Oct 2026). Pollaky's authorship of ads 3-4 is Schmeh's attribution (post 29; 2 Oct 2026: the W. ads are not among the twelve ads "signed by Pollaky" in his 2014-15 list, only in the 2016 post's sentence, GAPS section above). The ads are signed "W.", not Pollaky, and this repo has not established the attribution.
 - Ad 1 (16 May 1865): 10 invented signs inside a plaintext sentence - blocker: not-attempted; statistics cannot help at N=10 (K=9, SIGN-01 repeats at positions 1 and 6; IC 0.0222 falls inside both N=10 control scatters, NOTES.md Test 1). Two cheap internal steps are still untried. First, the signs are built from a few parts (dots, dashes, bars, one bracket pair; ciphertext.txt sign table), so a compositional design (part counts or positions to letters or numbers) can be tested directly. Second, the clear frame "...fortunately in time to [10 signs] shall return to England..." is a crib. Also, the on-disk image is a modern redrawing (clean vector signs, modern serif type, no paper texture; viewed 1 Oct 2026), not the newspaper page (rule 2), so sign details are conditional on the redrawer; next: run a component-decomposition plus frame-crib test with Laura's bars-x-dots rule (part 1 comment #4, 25 Aug 2016, reads B E N D A B U C H P; recorded 2 Oct 2026) as the pre-registered candidate, scoring the same rules on shuffled-sign and random-sign controls of N=10 and reporting both numbers; find the original newspaper and date through the print step, ~$2
