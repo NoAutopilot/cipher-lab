@@ -134,3 +134,7 @@ reading; the 1527 letter it is meant to represent is unlocated. ROOM flag sent t
 Next action that depends on nobody: one DECODE browser login to fetch R9970's four images and confirm or refute
 Bourdeau's "al principe / Antonio Fucar" reading by eye (a one-page check, no cryptanalysis); if confirmed, the
 target is a catalogue correction and the 26 Oct 1527 letter is a separate search (Galende 1994 p. 163's source).
+
+## CS-BATCH4 pass (3 Oct 2026)
+
+No new source opened (no DECODE login, no images, per brief). Re-read the folder against the intake gate (python3 tools/intake_gate_check.py decode-9970-simancas-1527: "open (line 3) -- edition/page or full-text-search citation found within 6 lines", exit 0). Standing reading of the Premise check stays: Bourdeau (28 Sept 2026) reads the four R9970 images as a clear Spanish minute, not the del Burgo letter; this repo has not viewed them. Status stays `open`; next step is the one-login image check in "While waiting" (~USD 1), after which the folder is a catalogue correction rather than a cipher target if Bourdeau's reading holds.

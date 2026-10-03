@@ -61,3 +61,16 @@ WebSearch (standard) on the envoy/secretary, place, year and "cifra/cifrario" in
 (a) Folder's own NOTES.md/REQUEST.md: no decipherment, gloss, clear copy or attachment mentioned. Not found. (b) Solver working files: no file for this item in either repository. Not found. (c) Physical neighbours / facing page: no image exists or was reachable (copy-order). Unreachable. (d) Recipient-side editions: not located by this worker's searches. Not found (not an edition read).
 
 Hosts this pass: de-crypt.org 17 (no login, shared run), github.com 2 clones (shared), archiviodistatogenova/torino 2 attempts each failed, WebSearch 1 for this target.
+
+## CS-BATCH4 pass (3 Oct 2026, 15:3x-15:4x UTC)
+
+- Holding finding aid opened this time: ASGe Archivio segreto, Materie politiche, inventory 31, at `archiviodistatogenova.cultura.gov.it/fileadmin/risorse/pdf/31_Trattati_202008.pdf` (the earlier root-path URL 404s; this one answers HTTP 200, 826 KB, one request). Read: items 292-300 (1691): 293 "Per il pagamento della missione in Alessandria del segretario Salvago" (28 Dec 1691); **294 "Cifra per il segretario Salvago data nel tempo che si portò in Alessandria dal conte Caraffa" (1691)**; 295 draft letter from the secretary to Durazzo, Imperiale and the governor of Savona; 296-298 Caraffa's subsistence demand and the Republic's justification; 299 "Cifra con cui il signor di Coysis consiglia i principi italiani ad allearsi contro le pretese esagerate del conte Caraffa". Also Archivio segreto b. 2756, "Vienna e Impero. Negoziazioni relative al Gen.le Caraffa" (1691), a separate busta of notes and reports. Both ciphers (294, 299) are listed as items, but the aid gives no content, no ciphertext marker and no availability flag. Grade I for any claim that a ciphered letter sits beside item 294.
+- Edition: Carutti vol. 3 (IA `carutti-...-v-3`, whole-volume djvu grepped for "Salvago": 0 hits; Caraffa's 1691 campaign is narrated, nothing on a Genoese cipher). No printed Genoese edition of this affair identified. Not found.
+
+Intake gate (python3 tools/intake_gate_check.py salvago-caraffa-1691): "blocked (line 3) -- already terminal, nothing to gate", exit 0.
+
+Verdict: stays `blocked` (finding aid read, no edition or image exists to open). Next: ASGe copy enquiry of REQUEST.md for items 294 and 299 (owner-side), or a Società Ligure di Storia Patria article-level search (~USD 1.5).
+
+## While waiting
+
+One action that depends on nobody: full-text search of Atti della Società Ligure di Storia Patria (memoriedigitaliliguri.it) for "Caraffa" 1691 and "Coysis", to see whether item 299's cipher was printed; ~USD 1.

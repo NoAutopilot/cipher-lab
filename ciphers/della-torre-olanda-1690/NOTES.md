@@ -69,3 +69,17 @@ WebSearch (standard) on the envoy/secretary, place, year and "cifra/cifrario" in
 (a) Folder's own NOTES.md/REQUEST.md: no decipherment, gloss, clear copy or attachment mentioned. Not found. (b) Solver working files: no file for this item in either repository. Not found. (c) Physical neighbours / facing page: no image exists or was reachable (copy-order). Unreachable. (d) Recipient-side editions: not located by this worker's searches. Not found (not an edition read).
 
 Hosts this pass: de-crypt.org 17 (no login, shared run), github.com 2 clones (shared), archiviodistatogenova/torino 2 attempts each failed, WebSearch 1 for this target.
+
+## CS-BATCH4 pass (3 Oct 2026, 15:3x-15:4x UTC)
+
+- Holding finding aid opened this time (the 2 Oct connection resets did not recur; one request, HTTP 200, 20.1 MB): ASTo `upload/LETTERE MINISTRI_Vol.II.pdf`, "Lettere Ministri Olanda" listing read with pdftotext. Mazzo 2 line reads "CIFRARIO ... Lettere di Milord Monquille, dirette al Conte e Presidente Della Torre 1690 e 1691", then Terne (London, 1690-97), Conte Caraffa (1691), Nottingham, Doria, Prie (Vienna 1691-1700); mazzo 1 is the Court's instruction and letters to Della Torre. The aid is box-level: it does not say any letter is in cipher, and it carries no availability flag (it is an inventory, not a catalogue record or viewer). Grade I for "the cipher-book sits with the letters" (same box line, OCR-noisy).
+- Edition: Carutti, Storia della diplomazia della corte di Savoia vol. 3 (1880), IA `carutti-storia-della-diplomazia-della-corte-di-savoia-v-3`, whole-volume djvu (957 KB, 24,732 lines) grepped by this worker for "della torre", "cifr", "Car[a]ffa": Della Torre's mission to The Hague and London in autumn 1690 is narrated (treaties of 20 Oct 1690, text near line 7093), the only "in cifra" citation is a 1686 Ferrero despatch (line 5225); no cipher text, key or decipherment of Della Torre's papers printed. This is a narrative history, not an edition of the correspondence; no edition of the Della Torre Hague letters was identified. Not found.
+- Not done: Italian-side printed editions of the despatches (none identified), ASTo holding record flag, images (none online per the 24 Sept sweep).
+
+Intake gate (python3 tools/intake_gate_check.py della-torre-olanda-1690): "blocked (line 3) -- already terminal, nothing to gate", exit 0.
+
+Verdict: stays `blocked` (no edition of the letters exists to open; whether the letters are enciphered is unknown). Next: the ASTo reading-room/copy enquiry of REQUEST.md, ~USD 0 agent cost, owner-side; or a Dutch-side search of Hague records for the same envoy (Nationaal Archief, Staten-Generaal lias Savoije 1690, ~USD 1.5).
+
+## While waiting
+
+One action that depends on nobody: search Dutch printed sources for Della Torre's 1690 mission (Resolutien der Staten-Generaal, Huygens retroboeken Staten-Generaal 1690) for a clear copy of his despatches; ~USD 1.

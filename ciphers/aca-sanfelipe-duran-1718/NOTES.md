@@ -98,3 +98,7 @@ vowels -- a partial-family test that would say whether the missing key is an ext
 - (d) recipient/sender-side editions: San Felipe's Comentarios (1725) narrates the period, prints no despatch text per the earlier worker, unopened by this worker; no Spanish state-series edition identified; unreachable/unchecked.
 
 Verdict: stays `blocked`. What would move it: the ACA reading-room or PARES description of leg. 22 doc. 67 and of leg. 30 docs 4, 7, 9-14, 17, 18 (owner's machine, LOCAL-QUEUE shape), and a full-text pass of the Comentarios. Nothing found to say the item is read. No class (rule 10).
+
+## CS-BATCH4 pass (3 Oct 2026)
+
+Re-checked for an opened edition: IA advancedsearch for San Felipe's Comentarios de la guerra de Espana returned no item (1 request), so no edition could be opened; ACA/PARES still unreachable from the cloud. Nothing new. Verdict unchanged: `blocked`; next step remains the owner-side ACA/PARES description of leg. 22 doc. 67 and leg. 30 docs 4, 7, 9-14, 17, 18 (LOCAL-QUEUE shape). The "While waiting" third-pass step above still stands.
