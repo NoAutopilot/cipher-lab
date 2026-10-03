@@ -3378,3 +3378,75 @@ prior split's 8) is now unblocked material if the parent wants a third cm attemp
 would be a genuinely different split, not a further restart increase on the same one); or new material (more
 leaves' plain boxes re-settled the SALV2-J3 way, most promisingly f55v's own `<none>`-graded diagnostic finding
 from that job, still untried). Never "reading ready".
+
+## Web and blog check (GF-A2-13, 3 Oct 2026)
+
+Worker GF-A2-13 (account 2, LANE-A2PUSH), 01:22-01:3x UTC. Gate-fix only: no step, no solver, no transcription.
+(a) Plain web searches (WebSearch, standard):
+1. `cardinal Giovanni Salviati letter cipher 16 October 1525 deciphered` -- hits: BL searcharchives record
+   042-001592846 (see below), museum-digital Salviati person pages, a Wesleyan "Renaissance murder mystery" feature,
+   the Tartu dspace paper on a 15th-century Florentine polyalphabetic cipher (different century, different item).
+   No hit names this letter or a decipherment of it.
+2. `"Français 2933" chiffre Salviati` -- only painter Francesco Salviati and glass pages; nothing on the manuscript.
+3. `"Salviati" lettera in cifra 1525 Spagna legato decifrata "Johannes cardinalis de Salviatis"` -- Wikipedia
+   (Giovanni Salviati, Salviati Planisphere), the same BL record, CSP Spain May 1534 (unrelated). No decipherment.
+4. `BnF fr.2933 lettre en chiffres italien cardinal Salviati 1525 déchiffrement` -- BL record, data.bnf.fr
+   (Leonardo Salviati), Pinakes, a BnF printed-book notice. No decipherment.
+5. `Phillipps MS 7293 Salviati letter book despatches Spain 1525` -- BL records 041-001592842/042-001592846/
+   042-001592850 and a CSP Spain hit "Spain: October 1525, 16-20" (prod.british-history.ac.uk/node/74508).
+6. `"Spain: October 1525, 16-20" british-history Salviati legate` -- the search summary says the 16 Oct entry there
+   is Jonglet to Madame, and that the legate Salviati had not yet reached the imperial court in early October 1525.
+   The BHO page itself answered 401 (prod.) and a connection reset (archive.) to curl; not retried (good-citizen rule),
+   so the calendar text was not read by this worker -- unreachable, not a negative.
+(b) Site searches: `site:scienceblogs.de/klausis-krypto-kolumne Salviati` -- no Cipherbrain page returned;
+   `site:cryptiana.blogspot.com Salviati` -- no Cryptiana page returned; `site:ciphermysteries.com Salviati` -- two
+   Cipher Mysteries pages returned (?p=59, a historical-ciphers category page and the walter-hoeflechner tag page),
+   none mentions Salviati by the search summary; no Salviati post exists to open, so no comment thread to read.
+(c) Hits opened: BL record 042-001592846 (JSON, read in full): "RP 271/2/4. Letter book of Cardinal Giovanni
+   Salviati, containing copies of his diplomatic despatches sent from Spain and France to Rome. Phillipps MS 7293.
+   Lot 881. Creation dates: 17 July 1525 - 15 May 1527." This is a BL export-licence copy (RP) of a letter book
+   sold at Sotheby's 1968, and its date range covers 16 Oct 1525: a possible clear-text register copy of the target's
+   own despatch (see Premise check (c)/(d)). Not a decipherment; not viewed (BL images dead since 2023).
+Model-solve family: covered by the 25 Sept LANE R6 S0 searches above; not re-run.
+Result: no decipherment or plaintext of fr.2933 no.11 found on the open web or in the three blogs.
+Requests: WebSearch 8; searcharchives.bl.uk 1 (200); british-history.ac.uk 3 (404, 401, reset; stopped).
+
+## Premise check (GF-A2-13, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions: **not found.** NOTES.md, HYPOTHESES.md and siblings.tsv grepped for
+decipherment, gloss, interlinear, facing, slip, letter book. The only "Deschiffrement" in the volume is item 17
+(f.70, about messire Philibert), already viewed by the 24 Sept capture worker (canvases 71-72): unrelated. The
+f.57v marginal numbers (line 153) give numbers, not words. The letter's own plain-Italian boxes (1,114) are part of
+the cipher letter, not a gloss of it.
+(b) Other solvers' working files: **not found.** Fresh shallow clones (3 Oct 2026) of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers grepped for `salviat` and `2933`: Bourdeau's hits are his Gallica SRU description dump
+(fr.3086-type Salviati plain letters to the grand maître, "De Parme, ce quatriesme jour d'avril"), a Jacopo
+Salviati mention in targets/bizozola1520 and coincidental numerals; no target folder, rendering or key run on
+fr.2933. Aymeloglu's hits are DECODE R12 (Vatican, nuncio Salviati, 1574), already excluded above. Cited, not copied.
+(c) Physical neighbours: **not found** (from the 24 Sept capture, not re-fetched): f.53v blank, item 10 plain French
+prose before, item 12 a plain unrelated document from f.58r on the same canvas 59, left-hand pages of the letter
+blank; no slip or laid-in leaf recorded. **New catalogue evidence, found:** Molini, *Documenti di storia italiana*
+I (Florence 1836; archive.org `bub_gb_ZyDcTK4CtNIC`, `_djvu.txt` grepped, p. XXII of the "Nota" of Paris documents
+not copied), under Bibl. du Roi MS 8469 (= Anc. 8469 = fr.2933): "A c. 54. Lettera di otto pagine del Cardinal
+Salviati del [1]6 Ottobre 1525 col solo indirizzo R.mo Do[mi]n[o], tanquam Pa-ter. È quasi tutta in cifra ed anche
+lacera in qualche parte." Molini saw the letter, did not copy it, and records no decipherment -- an 1836 negative
+from a reader of the original, and an address line ("Reverendissimo Domino tanquam Patri") that names a cardinal
+or prelate as recipient. The same "Nota" (p. XXIII) lists, under what OCR reads as 8469 c.283, an unsigned long
+Italian letter dated Segura, Spain, 14 Sept 1525, "forse il card. Salviati", describing his journey: a possible
+same-sender plain letter in the same volume, one month earlier (not viewed; folio range not checked against the
+84+ folios of the finding aid -- the OCR'd shelfmark may be wrong).
+(d) Recipient side / same-sender print: **found, sibling only, no decipherment.** Molini I no. CI (body text, OCR
+line 13636): "Lettera del Cardinal Giovanni Salviati, non si sa a chi diretta ... 22 Settemb. e 3 Ottobre 1525
+(Libr. R. MSS. Vol. N.° 8612 a c. 163). È autografa. Nell'originale sono due versi in cifra dei quali fu preso il
+fac simile, che non essendosi potuta decifrare, è stata lasciata la lacuna." Jacqueton, *La politique extérieure de
+Louise de Savoie* (1892; archive.org `lapolitiqueext00jacquoft`, grepped) cites the same letter as "Salviati au
+Pape, 3 octobre, dans Molini, Doc. Stor., i, 196." This is very probably siblings.tsv's Français 3087 item 90
+(3 Oct 1525, "plain per catalogue"): by Molini it carries two lines of cipher 13 days before the target, which the
+catalogue row misses. A same-sender, same-season cipher sample with clear context, not a decipherment. Champollion-
+Figeac, *Captivité du roi François Ier* (1847; `bub_gb_XdSjTWNBWjwC`, grepped): 3 Salviati mentions, no letter of his
+printed. The BL letter book (RP 271/2/4, Phillipps MS 7293, 17 July 1525-15 May 1527, despatches to Rome) is the
+recipient-side register most likely to hold a clear copy of the 16 Oct 1525 despatch: **unreachable** (BL image
+service down since 2023; the original was sold in 1968 and its current holder is not recorded in the BL record).
+Result: no decipherment or plaintext of the item found; two leads for later steps (fr.3087/Anc.8612 c.163 two cipher
+lines; the Phillipps 7293 letter book as a possible clear copy). Neither changes the status line.
+Requests: archive.org 3 advancedsearch + 3 `_djvu.txt` (200 each), >=2 s apart; github.com 2 shallow clones.
