@@ -349,11 +349,11 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - code word xiiij (Seigneur, M) and the L10 overbar "28" (Ml de Biron, M, doubtful) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij, and put the only stroke under L10 "8 14" over a line 11 that lies outside the crop region; next: line 11 is now cropped (images/f43b_L03_s1/s2.jpg, FILS-UPPER); one targeted read of the stroke under L10 '8 14' on that crop and f43b_L02, ~$2
 - fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
-- upper letter U01-U26, line 11 (B11) and margin note M1-M4 (clear text): two blind passes agree on 44% of words; splits unsettled - blocker: not-attempted; FILS-UPPER stopped at its cap before the reconciliation look; next: one reconciliation pass over the {A / B} splits in clear_f35r.tsv against the same f43u/f43b/f43m crops, U01-U02, U09, U26, B11 and M1-M4 first, ~$3
+- upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
 
 ## Escalation
 - [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned once (FILS-F38: FAIL vs shuffled gloss, single passes)
-- [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter, line 11 and margin note cropped and read by two blind passes (FILS-UPPER), reconciliation pending
+- [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter, line 11 and margin note cropped and read by two blind passes (FILS-UPPER) and reconciled once against the crops (FILS-RECON: 84 splits settled, 23 words left U)
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
@@ -389,3 +389,27 @@ s2 right half) with ImageMagick into scratchpad montages (not committed; they ad
 2. Line grade: H if every word is H; M if >= 60% of words are H or M; else I (unchanged vocabulary in clear_f35r.tsv).
 3. Counts reported: splits settled A / B / third / left U, and words H / M / U per line.
 4. The interpretation line (date, addressee, subject) is marked as interpretation and uses only H/M words.
+
+## FILS-RECON results (account 1 for LANE-A1, 3 Oct 2026)
+
+Intake gate 10:40 UTC: `fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Crops: the FILS-UPPER crops on disk (commands pasted in "FILS-UPPER pre-registration"); for viewing, each line re-laid as
+three 1200-px strips (`convert f43u_Lnn_s1.jpg -crop 1200x+0+0`, `-crop 1200x+1200+0`, `f43u_Lnn_s2.jpg -crop 1200x+1200+0`,
+`-append`; margin lines as two 1030-px halves) in scratchpad montages, not committed. Three looks, all by this worker
+(Opus): U01-U13, U14-U26, B11+M1-M4. Rules as pre-registered (commit da93ec99) before the first look.
+Outcome over the 84 split groups in U01-U26, B11, M1-M4: **A 27, B 28, third reading 19, left U 10**. Words in these 31
+rows: **H 250, M 44, U 23** (317; was H 165 by blind agreement). Line grades: U01, U02, U08 H; every other row M
+(>= 60% H+M), none I. `clear_f35r.tsv` rewritten for these rows (note column carries each row's counts);
+`reading_f35r.txt` regenerated, `decode_f35.py --check` OK. Figure runs and their decodes untouched.
+Notable settlements: U01 ends "du 27 et p'r de ce" + U02 "mois" (B); U08 "conduict par generosite et prudence l'honneur
+q' avez acquis" (B then A); U09 "par devers {Crapon} ses d' Tremolit et M'r d' {Buzy}" (B throughout); U12 "affin que ne
+soyez" (A); U14 "car les nuits par un bien grand" (B); U19 "sa charge, Et {11} leur conse-" (B, with A's "11"); U22
+"servir le contentement" (B's verb, A's object: third); U24 "et conseils d' aultres, Il en fault" (B); B11 "reste du Pape
+apres {ce a la} garde d' Rome" ; M1 "en telles occasions, puisque vous avez Dieu" (third: B's noun phrase, A's puisque/avez).
+Cost: get_session exposes no cost field to this session, so the per-look Opus rate is unmeasured (reported, not estimated).
+Interpretation (not a reading; H/M words only): the duc de Nevers writes to his son ("Mon fil") acknowledging three of
+his letters, of the 27th and of the first of this month ("du 27 et p'r de ce mois", p'r read as premier), praises the
+courage, generosity and prudence shown in keeping the citadel, names "d' Tremolit" and "M'r d' Buzy", urges him to
+wake his mind to great things and leave "badineries", speaks of reputation and of Rome and the Pope (B11, margin), and
+says the King is at Paris (U26). No full date line (month, year) and no subscription were found in these rows.
+Not found in print: nothing searched (transcription job).
