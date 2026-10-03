@@ -113,3 +113,56 @@ full-text search (archive.org fts or a downloaded djvu grep) rather than a cover
 efficient route, as vols 2-3 showed this round. Not digitised on Discovery (per QUEUE row); TNA page-copy
 order is the fallback if the print check above closes
 negative.
+
+## Check-solved addendum (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+Brief named the HMC *Stuart Papers* and the Lockhart / Murray of Broughton prints. HMC *Calendar of the Stuart Papers* ends Dec 1718
+(see sp36-stquentin-pretender-1743 NOTES.md, 24 Sept sweep) and *The Lockhart Papers* (1817) end in 1728: both are out of range for
+June 1745 by date, a caveat not a read. Read this pass: *Memorials of John Murray of Broughton, 1740-1747* (ed. R. F. Bell, SHS 1898,
+archive.org `memorialsofjohnm00murr`, djvu text grepped whole, 3 Oct 2026). Murray narrates Sir Hector Maclean's arrival in
+Edinburgh and arrest (pp. 134-137, "on the Tuesday morning [5th June] Sir Hector was most unfortunately taken into custody"): Maclean
+was "charged with a packet of letters to me, which was not to be opened till the Duke of Perth was present" (p. 135), and "two letters
+had been found in Sir Hector's pocket, one signed J. Barclay, the other Barclay" (p. 136) -- Murray's own aliases (editor's note,
+cf. p. 101) -- whose content Murray summarises (the writer ill of an ague, meeting at Linlithgow on the Wednesday; again p. 157,
+"an appointment ... att Linlithgow with the D."). The volume prints no cipher text, key or decipherment of the seized letters;
+"Burnet" 0 hits; its cipher passages (Murray's own cypher in the narrative, and the Carte papers inventory in the appendix, "An English
+Cypher in Figures and Cant Words") concern other correspondence. *Lyon in Mourning* vol. 1 (`lyoninmourningor01forbuoft`) retried:
+HTTP 500 again (170 bytes), the third failure on two dates -- logged unreachable, not a negative; not retried further. Verdict:
+**open**, unchanged; a search result, not a discovery (rule 10).
+
+## Web and blog check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Sir Hector Maclean arrested Edinburgh 5 June 1745 letters found cipher Burnet Prince Charles` --
+Wikipedia (Sir Hector Maclean 5th Bt), clan pages (electricscotland, maclean.us.org, WikiTree), an unrelated 1781 Hector MacLean
+journal at Clements; none prints or deciphers the seized letters. (2) `"SP 54/25" cipher Maclean 1745` -- noise, then TNA's Jacobite
+research guide and SP 54 catalogue pages (C3609567, C3609577, C9189377 and neighbours), macleanhistory.org's Jacobite page, a
+"Jacobite Ciphers" PDF (yourphotocard.com/Ascanius) and Cambridge's 1715 anti-Jacobite intelligence article -- none on SP 54/25/5 or
+8B. (3) site-restricted to **Cipherbrain** (scienceblogs.de), the **Cryptiana blog** (cryptiana.blogspot.com) and **Cipher Mysteries**
+(ciphermysteries.com), `Jacobite 1745 cipher letters Maclean Burnet` -- unrelated Cipher Mysteries posts and two Guelph "Jacobite
+Intelligence Letter" items (digex.lib.uoguelph.ca/items/show/1643, 1661, 1715-era); no post on this item, so no comment thread to
+read. (4) the catalogue's own wording, `"Letters, partly in cipher, from Burnet" Charles Edward Stuart Sir Hector MacLean` -- Maclean
+Wikipedia pages, an NTS page on the Prince's handwriting, BL Add MS 32499 (catalogue only); no decipherment. Not found on the open
+web.
+
+## Premise check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md mentions only Blaikie's code-name glossary ("Burnet, Mr.,
+cipher name of prince", a published alias, not a decipherment of these letters) and the 1729 SP 54/19/98B item already dropped from
+the row; REQUEST.md mentions none. (b) Other solvers' working files: **not found** -- no Maclean/SP 54 item in Bourdeau's or
+Aymeloglu's repository (25 Sept clones). (c) Physical neighbours: **unreachable as images** (SP 54/25 not digitised per QUEUE row);
+not re-searched by catalogue this pass. (d) Recipient's side: **found as narrative, not as text** -- the intended recipient, John
+Murray of Broughton, describes the packet and the two "Barclay" letters seized (Memorials pp. 135-137, 157) and summarises the
+Barclay letters' clear content, but prints no cipher or decipherment; that summary is a possible crib for SP 54/25/5 if the Barclay
+letters are among the three there (inferred, not checked against the catalogue). Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH10)
+
+Waits on: the TNA page copy of SP 54/25/5 and 8B (REQUEST.md, ASKS row 57).
+
+- S: TNA Discovery item-level fetch of SP 54/25/5's full description (tools/discovery_items.py "SP 54" "SP 54/25") to see whether
+  the three letters include Murray's "J. Barclay"/"Barclay" notes -- if so, Murray's p. 136 summary is a crib -- no login, no person.
+
+Requests this pass (3 Oct 2026): archive.org 1 (Lyon vol. 1 djvu, HTTP 500; Murray's Memorials already on disk from this session's
+sp36 pass). WebSearch 4.
+
+Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp54-maclean-1745: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp54-maclean`: no line.
