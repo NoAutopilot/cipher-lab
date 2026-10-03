@@ -1,0 +1,6 @@
+cipher_line	print_raw	print_norm	gloss_norm	note
+L02.2	m'a dit	ma dit	ma dit	print p.340 line 8 'et m'a dit'
+L03.1	avoir vu descendre à Gène 2 millions d'or d'Espaigne	auoir uu descendre a gene deux millions dor despaigne	auoir ueu dascender a geneue deux millions dor despaigne	numeral 2 spelled 'deux' (the gloss's own word; the cipher spells numbers out)
+L03.3	à	a	a	print 'Il en a laissé à Besançon'; the clear 'Il ha laisse' precedes on the leaf
+L04.1	Besançon [45] mulets chargés qui doivent partir dans trois	besancon quarante cinq mulets charges qui doiuent partir dans trois	bestiaux quarante cinq mulets chargez qui doibt aussi passer dans trois	OCR prints the numeral as 'îa' (garbled); '45'/'quarante cinq' taken from the gloss and VERIFY-DIN's reading -- a gloss dependency, not print evidence
+L05.1	jours et prendre le chemin de Vesoul, n'ayant que cent chevaux d'escorte	iours et prendre le chemin de uesoul naiant que cent cheuaux descorte	iours et prendre le chemin de besounasiana que un chemin de fl	the print's span after 'Vesoul' ('n'ayant que cent chevaux d'escorte') is assumed to be the rest of the cipher line; the gloss's 'vn chemin de fl' and clear '(Cremona?)' are not in the print
