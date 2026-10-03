@@ -976,3 +976,32 @@ Read so far: 26 of the 27 groups written on m0002 are transcribed: 25 decoded to
 - [ ] image-check: done: two blind passes over the 26 recorded groups, reconciled at 80.8% agreement, with 5 disagreements settled from 8-12x re-crops (LX-TR); the caret digit of 283219 re-cropped at 20x and read blind (LX-FIX: 3 about 55%, 5 about 30%, 8 about 15%). Not tried: the cancelled, looped group on p.2 line 2 with its interlinear mark, and the first glyph of 829011 (8 or 3, never questioned; an 8 makes it the only group outside the dictionary rule). Planned: one tools/iiif_lines.py crop, 2 blind reads and 1 reconciliation
 - [x] retry: LX-QAFIX re-derived all 26 groups with the corrected key and 24 of 26 agree. "justa" was lowered from H to M and "cagar" stays M; decode_key.py --check exits 0. A further retry is due after the column counts, the 829011 re-read and the cancelled group (m0001 done 2 Oct 2026, it changes no group)
 Verdict: keep going: 6 internal gaps (m0001 settled 2 Oct 2026, NEXT-LIN); cheapest next: the hOCR flush-left column counter on newpocketdiction00viey leaf 95 col 2 ("cagar", 83/2) and leaf 255 col 3 ("justa", 241/3), calibrated first on the agreed columns, ~$3; then the m0002 p.2 line 2 crop with 2 blind reads and 1 reconciliation (cancelled group and the first glyph of 829011), ~$4.5
+
+## hOCR column counter (A1B-LIN-HOCR, 3 Oct 2026) -- PRE-REGISTRATION (written and pushed before any scored run)
+
+Instrument: `ciphers/antt-linhares-chave/hocr/hocr_column_count.py` (method in its docstring) on IA's own
+`newpocketdiction00viey_hocr.html` (78.5 MB, fetched once to the scratchpad, not committed; re-fetch from
+archive.org/download/newpocketdiction00viey/). hOCR `ppageno` == leaf. A line counts as a headword iff its first word's
+x0 is within TOL = 20 px of the column margin (10th percentile of the column's line x0s); the hanging indent of
+continuation lines is ~35-47 px at this scan's 400 dpi (smoke-tested on leaf 200, a page in neither set below). This is the
+every-bold-line convention measured by position, independent of any eye count. `tools/ia_djvu_headwords.py` was checked
+first (Usage 8): it finds a word at a line start per scan, with no columns or indentation, so it cannot count ranks.
+
+Calibration set (`hocr/calibration.tsv`, 34 groups): the 11 worked-example groups with a confirmed leaf (page 1 has none on
+file) and the 23 live groups whose reading two counts agree on (all 26 minus the null 829011 and the two disputed groups).
+For each, the script finds the flush-left line in that column whose first OCR token best matches the expected headword
+(SequenceMatcher ratio after accent/long-s normalisation). Located (ratio >= 0.5) and at the key's rank = hit; located
+elsewhere = MISS; ratio < 0.5 = unlocated (OCR too garbled to say).
+**Gate: PASS iff MISS = 0 and unlocated <= 3, at TOL 20 (k = 0, exact rank).** No re-tuning of TOL or the method after
+seeing the calibration result; a FAIL stops the job and logs the counter as not licensed on this scan.
+
+What settles each gap (read only if the gate passes):
+- 83/2 (leaf 95 col 2, "cagar"): if the counter's rank-19 flush-left line is "Cagar" (ratio >= 0.5), the column-count
+  objection (LX-QAFIX's 18) is resolved for 28[3]219; the token stays **M** because its grade rests on the caret digit's
+  shape (3 vs 5 vs 7), which this instrument does not see. If the column has fewer than 19 flush-left lines or rank 19 is
+  another word, 283219 goes to unresolved (U) at the column-count level, as Remaining gaps already says.
+- 241/3 (leaf 255 col 3, "justa"): whatever the counter's rank-15 headword is ("Justa" or "Jus"), it is the reading; graded
+  **H** if it agrees with at least one of the earlier independent counts (LX-DEC: Justa; LX-DEC's subagent and LX-QAFIX:
+  Jus), since the dictionary is the key itself (key-source grade, rule 4) and the count is then backed by two instruments;
+  also reported: whether "Junto, prepos." heads col 3 as its own flush-left line.
+- If the counter's rank-15 or rank-19 line is unlocated/garbled, that gap stays as it is and the job says so.
