@@ -152,23 +152,6 @@ Grades per token (f35r_ciphertext.tsv): H 62, M 40, C 0, S 0, I 0. Not found in:
 Tomokiyo's pages and hidden comments (no decode of fr.3416 f.35; grep of nevers.htm for 3416/f.35); Cabinet Noir,
 Bourdeau, Aymeloglu (NV-INTAKE clones). Novelty not classified by the solver (rule 10); verifier class N3, see AUDIT.md (VERIFY-NV02, 3 Oct 2026).
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
-Read so far: 62 of 102 figure tokens at H (61%); 40 M
-- f.35r clear text around the runs (needed to read the runs as sentences) - blocker: not-attempted; one transcription pass of the clear lines L01-L10 + the upper letter; next: two blind passes of the clear text on the existing crops, ~$3
-- L05 and L10 runs (looped 8 with an extra upright; low-contrast last line) - blocker: not-attempted; out of this job's box; next: one native re-crop at 2x of L05/L10 with a single targeted read, ~$1.5
-- Roman-numeral and overbar code words (ciiij, the "97" codes in the clear text) - blocker: not-attempted; not in this job's brief; next: transcribe the no.25 nomenclator from fr.3995 canvas f104 (Villes, Noms gnaulx, Motz, Noms propres columns), ~$2
-- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; gloss is word-level, not aligned this job; next: transcribe f.38 figures + gloss from images/f46_* and align codes to gloss words, ~$3
-
-## Escalation (3 Oct 2026)
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
-- [ ] clear-pages: f.35r clear text not transcribed yet (planned step above)
-- [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
-- [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
-- [ ] key-rebuild: nomenclator part of no.25 still to transcribe (planned step above)
-- [x] image-check: native crops of f.35r foot, the key strip and f.38v foot viewed
-- [ ] retry: L05/L10 targeted re-read at higher resolution (planned step above)
-Verdict: keep going: 4 internal gaps; cheapest next: L05/L10 targeted re-read, ~$1.5
-
 ## FILS-CLEAR pre-registration (account 1, 3 Oct 2026, written 09:3x UTC before any read returned)
 
 Brief `.claude/briefs/runs/2026-10-03-acct1-fils-clear.md`. Rules fixed before the reads:
@@ -179,3 +162,58 @@ Brief `.claude/briefs/runs/2026-10-03-acct1-fils-clear.md`. Rules fixed before t
    against the crops in one reconciliation and graded M; a word not settled is [...] and graded I if supplied from
    context. Clear text is marked as clear in the joined reading (never as a decode).
 3. No reading of the runs is used to settle a clear word, and no clear word is used to change a digit.
+
+## FILS-CLEAR results (account 1 for LANE-A1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-clear.md`. Intake gate re-run 09:24 UTC:
+`fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**(1) L05 and L10 re-crop.** Command (pasted; numpy + Pillow pip-installed first):
+`python3 tools/iiif_lines.py --image ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f43_3950_3560_3150_1800.jpg --out <scratch>/x2 --prefix f43x2 --groups 120 --group-lines 5,10 --group-upscale 2 --debug`
+(same 10 line centres as NV02-READ: 130 242 360 488 600 710 844 942 1062 1155). The 2x pieces were wider than 2500 px,
+so they were cut into overlapping pieces <= 2275 px: `images/x2/f43x2_L05_p1-3.jpg`, `f43x2_L10_p1-2.jpg` (+ g01/g03 end pieces, debug strips).
+One targeted Opus read (crops only) + my reconciliation against zooms of the same pieces:
+- L05: the reconciliation confirms NV02-READ's 20 digits `43181987394579655416` (the looped "cl" glyph is one 8, as on the
+  key sheet). The targeted read gave 23 digits (it split each looped 8 into "8 1" and counted the 1-1-9 overlap twice), so
+  pre-registered rule 1(a) is not met for any L05 token: **all 10 stay M**. The 79/57 question (null vs m) is unchanged.
+- L10: the targeted read's first 26 digits match the committed string exactly (17 43 69 45 76 19 65 62 43 68 19 39 93).
+  Tokens with no alternative in the read and the reconciler's agreement move **M -> H: 17 43 76 19 65 62 43 19 93 (9 tokens)**;
+  69, 45, 68, 39 stay M (the read gave 6|b, 5|s, 8|0|c, 9|3). Past 93 an ink blot (5 over 8?) and the line's tail climbing
+  into L09's crop (the "...6 7 6 2 8 4 et" visible at the foot of L09_s2) keep 53 96 76 28 4 at M.
+- The clear word before run 8 reads **Instruir** (capital I, long s, -truir), not 'Febvrier' as NV02-READ's note had (M).
+Grades now (f35r_ciphertext.tsv): **H 71, M 31** of 102 (was 62/40). No token's digits changed; only grades.
+
+**(2) Clear text.** Two blind Opus passes (A: s1 then s2; B: s2 then s1; crops only, no key, no reading) + one
+reconciliation, rules pre-registered above. `clear_f35r.tsv` (line, text, grade, note). H lines: L05 "vous faire entendre
+ma volonte." (A=B). Mostly-H lines with one M word: L04 "vous deuez bien {facillem[ent]}" (NV02-READ's "bons deniers" not
+supported by either blind pass), L06 "A quoy je vous prie dy bien veiller {a fin / et pen-}", L08 "Cequy ne {apporteroit
+comodite}...", L09 "... luy d'y venir ... le". L01 and L07 M; the upper letter above L01 and a line below L10 are outside
+the crop region and were not read.
+
+**(3) Joined reading** `reading_f35r.txt` (written by `decode_f35.py`; `--check` now covers it and f35r_reading.txt; exit 0).
+The runs now sit in sentences, e.g. L04-L05 `{run 3: s.es.auoir[0]} vous deuez bien facillem[ent] / vous faire entendre ma
+volonte.`; L06 `{run 5: ens} A quoy je vous prie dy bien veiller`; L08 `{run 7: er.} Cequy ne apporteroit comodite`.
+Statistics re-run (decode_f35.py, seed 1, fr16): all tokens -1.150 rank 1/201 z 5.04 (unchanged); H tokens only now 57
+letters -0.994 rank 1/201 z 5.41 (shuffled max -1.547); positive control NV-03 f.38v -0.769 rank 1/201 z 5.66;
+shuffled-target control beats real 0/200; power at 0.239 error 11/20. `tools/judge_plaintext.py` not run: no spec exists
+for this target (`ls specs | grep 3416` empty). AUDIT.md not edited (verifier FILS-N4 in parallel); no decoded letter
+changed, only the case (grade) of 9 L10 letters and the clear word before run 8 (Instruir, not Febvrier).
+Not found: nothing searched in print this job (transcription job only).
+
+## Remaining gaps
+Read so far: 71 of 102 figure tokens at H (70%); 31 M; clear text L01-L10 transcribed (1 H line, 6 mixed, 2 M)
+- L05 run (10 tokens M): looped 8 settled by the reconciler, but no second reader agrees - blocker: not-attempted; one more blind digit read of images/x2/f43x2_L05_p*.jpg told to treat "cl" as one glyph; next: one Opus vision call, ~$1.5
+- L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
+- Roman-numeral and overbar code words (ciiij) - blocker: not-attempted; not in this job's brief; next: transcribe the no.25 nomenclator from fr.3995 canvas f104, ~$2
+- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; not in this job's brief; next: transcribe f.38 figures + gloss from images/f46_* and align codes to gloss words, ~$3
+- upper letter above L01 and the line below L10 (clear text) - blocker: not-attempted; outside the crop region; next: iiif_lines.py on canvas 43 above y 3560 and below y 5360, two blind passes, ~$4
+
+## Escalation
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
+- [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter still to crop
+- [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
+- [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
+- [ ] key-rebuild: nomenclator part of no.25 still to transcribe (planned step above)
+- [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
+- [ ] retry: one more blind read of L05 to clear rule 1 (planned step above)
+Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: L05 second blind digit read, ~$1.5

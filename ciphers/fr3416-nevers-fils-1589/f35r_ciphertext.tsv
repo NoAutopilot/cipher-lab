@@ -86,21 +86,21 @@ L07	6	9	M	odd digit
 L08	7	42	H	
 L08	7	75	H	
 L08	7	14	H	
-L10	8	17	M	after the clear word 'Febvrier'; whole line low-contrast, bottom of leaf
-L10	8	43	M	
-L10	8	69	M	
-L10	8	45	M	
-L10	8	76	M	
-L10	8	19	M	
-L10	8	65	M	
-L10	8	62	M	
-L10	8	43	M	
-L10	8	68	M	
-L10	8	19	M	
-L10	8	39	M	
-L10	8	93	M	
-L10	8	53	M	
-L10	8	96	M	
-L10	8	76	M	
-L10	8	28	M	tail 2-8-4 under an overbar, not settled
-L10	8	4	M	
+L10	8	17	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	43	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	69	M	FILS-CLEAR: kept M
+L10	8	45	M	FILS-CLEAR: kept M
+L10	8	76	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	19	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	65	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	62	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	43	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	68	M	FILS-CLEAR: kept M
+L10	8	19	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	39	M	FILS-CLEAR: kept M
+L10	8	93	H	FILS-CLEAR 2x re-read: no alternative, reconciler agrees (pre-reg rule 1)
+L10	8	53	M	FILS-CLEAR: tail past ink blot climbs into L09, kept M
+L10	8	96	M	FILS-CLEAR: tail past ink blot climbs into L09, kept M
+L10	8	76	M	FILS-CLEAR: tail past ink blot climbs into L09, kept M
+L10	8	28	M	tail 2-8-4 under an overbar, not settled; FILS-CLEAR: tail past ink blot climbs into L09, kept M
+L10	8	4	M	FILS-CLEAR: tail past ink blot climbs into L09, kept M
