@@ -6786,3 +6786,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:44 | FILS-NOMEN (account-1 worker) | claim: fr3416-nevers-fils-1589 -- L05 blind digit read + fr.3995 no.25 nomenclator (f104) crops/2 passes; cap USD 6, box 45 min from 09:44 UTC
 2026-10-03 09:44 | RANZO-NB (account-1 worker) | claim: fr2988-ranzo-1520s -- fr.3019 no.27 neighbours (views 112-118) + no.36 (f.94) overview for clear copy/gloss; cap USD 4, box 30 min from 09:45 UTC
 2026-10-03 09:44 | DIN-3623 (account-1 worker) | claim: fr3621-dinteville-1592 -- f.128 conflicting 0 vision look + fr.3623 f.23 sign set vs f.130; cap USD 6, box 45 min from 09:44 UTC
+2026-10-03 09:44 | DUCH-KEY1 (account-1 worker) | claim: fr4712-nevers-duchesse -- f.10 check + fr.3995 no.1 key + score; cap USD 6, box 45 min from 09:44 UTC
