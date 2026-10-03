@@ -22,3 +22,9 @@ retired strict-consistency instrument (gate_pair.py / f249_diag.py / f213_diag.p
 - Key rule: nothing enters or moves in key.tsv this step whatever the result (no pinned key statistic is registered).
 - Run order: f213 then f249: `python3 one_edit.py --pair f213`, `python3 one_edit.py --pair f249`. Stop before a run that
   would cross 80 pct of the 40-minute box (box 06:55-07:35 UTC).
+
+## Amendment FT4j (account-4, 3 Oct 2026, ~07:36 UTC, pushed before any re-run)
+Timeout change only: the controls are re-run with `--limit 60` (60 s per draw instead of 15 s); nothing else changes
+(same script, n 40, seed 3, same gate and rule). Side effect of the script's own scaling, stated here: the real E0/E
+calls get 3 x limit = 180 s and the single-edit enumeration 60 s per edit; both resolved under 36 s at 15 s, so their
+results cannot change. Run order f213 then f249, serialized (one run at a time on the 4-CPU container).
