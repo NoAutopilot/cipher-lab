@@ -3353,6 +3353,11 @@
       "target": "birago-fr3252-1571-72",
       "title": "BnF fr.3252 f.47r (Birago to Nevers, 26 Apr 1571): printed Ceppo-Nevers key control-backed on the whole letter (rank 1/201, z 3.4-4.2, power 19-20/20 at two-reader error 0.33; NEVBIR-47, 2 Oct 2026); text word islands only, judge FAIL. f.117r (13 Mar 1572) under the 1572 key rank 1/201 z 3.21, not licensed.",
       "next": "NEVBIR-47C third reader on 257 split tiles (~USD 3), then a verifier; f.117 owner sorter or a fourth reader"
+    },
+    {
+      "target": "fr3621-dinteville-1592",
+      "title": "BnF fr.3621 f.130r (Dinteville to Nevers, Langres 3 July 1592): period key rebuilt from sibling f.128's interlinear decipherment reads f.130r far above chance (fr16 -1.271 vs repaired-shuffle p95 -1.582, 0/1000; A2-DIN2/A2-DIN3, 3 Oct 2026); C 329 S 71 M 127, fragments only.",
+      "next": "VERIFY-DIN verifier, then a word-level reading"
     }
   ]
 }
