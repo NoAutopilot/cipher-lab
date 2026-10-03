@@ -1,5 +1,7 @@
 # Sign sorter, Birago f.117r (SORTER-BIRAGO2, 3 Oct 2026)
 
+Published 3 Oct 2026 by the account-3 orchestrator: https://claude.ai/artifact/HY4WNLmJSrbfNQhVU7bJcB (private).
+
 For the owner, when he has time. Nothing waits on it. Not yet published: the account-3 orchestrator publishes it, with
 capabilities {"db": {}}, as for `../nevers-birago-fr3251-1572/sorter/README.md` (same build pattern).
 
