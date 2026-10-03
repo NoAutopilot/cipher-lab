@@ -1,0 +1,35 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+fig1la	L01	17	kha	kha	ghayn	split	split	kha,ghayn	dal | waw |			
+fig1la	L02	14	ya	NONE	ya	split	split	NONE,ya	ta waw | ha	tooth ya |		
+fig1la	L02	16	ya	ya	NONE	split	split	ya,NONE	| ha ya tooth	| ba tooth		
+fig1la	L02	18	ba	NONE	ba	split	split	NONE,ba	ya tooth ya |	tooth | alif		
+fig1la	L02	19	tooth	tooth	tha	split	split	tooth,tha	tooth ya | ba	| alif lam		
+fig1la	L02	51	sin	NONE	sin	split	split	NONE,sin	ba ain | shin	fa ra ghayn		
+fig1la	L02	57	tooth	tooth	ba	split	split	tooth,ba	ra ghayn | lam	alif		
+fig1la	L03	3	ta	ta	nun	split	split	ta,nun	sin nun	waw OBSCURED sin		
+fig1la	L03	6	sin	sin	NONE	split	split	sin,NONE	nun ta waw OBSCURED	dal alif waw		
+fig1la	L03	7	dal	dal	UNK	split	split	dal,UNK	ta waw OBSCURED sin	alif waw |		
+fig1la	L03	12	tha	tha	nun	split	split	tha,nun	alif waw | ta	| kaf ya		
+fig1la	L04	2	tooth	tooth	nun	split	split	tooth,nun	fa	nga | kaf		
+fig1la	L04	3	nga	nga	ghayn	split	split	nga,ghayn	fa tooth	| kaf waw		
+fig1la	L04	18	tooth	tooth	NONE	split	split	tooth,NONE	| dal hamza |	tooth sin ya		
+fig1la	L04	21	ya	NONE	ya	split	split	NONE,ya	| tooth tooth sin	ra | kaf		
+fig1la	L04	22	ra	ra	ba	split	split	ra,ba	tooth tooth sin ya	| kaf mim		
+fig1la	L04	32	tooth	tooth	mim	split	split	tooth,mim	sin ra | lam	tooth ya alif		
+fig1la	L04	33	tooth	tooth	ba	split	split	tooth,ba	ra | lam tooth	ya alif |		
+fig1la	L04	38	fa	fa	mim	split	split	fa,mim	ya alif | kaf	ra | mim		
+fig1la	L04	55	nga	nga	ghayn	split	split	nga,ghayn	ta | fa nun	| mim waw		
+fig1la	L05	2	lam	NONE	lam	split	split	NONE,lam	kaf	sin | sin		
+fig1la	L05	6	tooth	NONE	tooth	split	split	NONE,tooth	lam sin | sin	| mim waw		
+fig1la	L05	17	lam	NONE	lam	split	split	NONE,lam	mim dal | kaf	sin nun |		
+fig1la	L05	19	nun	nun	tooth	split	split	nun,tooth	| kaf lam sin	| ra		
+fig1la	L06	16	nun	nun	ta	split	split	nun,ta	dal | tooth ra	| ta nga		
+fig1la	L06	19	nga	nga	ghayn	split	split	nga,ghayn	ra nun | ta	| ba ra		
+fig1la	L06	21	ba	ba	tooth	split	split	ba,tooth	| ta nga |	ra kaf |		
+fig1la	L06	45	lam	NONE	lam	split	split	NONE,lam	| lam lam |	lamalif mim ha2		
+fig1la	L06	46	lamalif	lamalif	alif	split	split	lamalif,alif	lam lam | lam	mim ha2 lam		
+fig1la	L06	48	ha2	ha2	kaf	split	split	ha2,kaf	| lam lamalif mim	lam mim		
+fig1la	L06	49	lam	lam	alif	split	split	lam,alif	lam lamalif mim ha2	mim		
+fig1la	L07	3	UNK	UNK	lam	split	split	UNK,lam	sin lam	| lam lam		
+fig1la	L07	6	lam	lam	dal	split	split	lam,dal	lam UNK | lam	| sin waw		
+fig1la	L07	13	lam	lam	dal	split	split	lam,dal	waw | lam lam			

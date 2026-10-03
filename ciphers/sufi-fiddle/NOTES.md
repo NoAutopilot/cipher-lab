@@ -164,11 +164,22 @@ Disputed signs: none between the two images. One dispute against OUR transcripti
 10 pct rule (Usage 6): disagreement 0.0 pct, under 10 pct -- but moot, since no second copy exists to disagree. What Figure 1 does give is the same copy at about 4x the resolution (2500 px vs 614 px), which is the better image for any re-transcription (resolving bSUF's pooled dot clusters b/t/th, j/h/kh, and the L5 g4 dispute).
 No decipherment attempted. Requests: mizanproject.org 2 (Figure 1, essay page for the licence), 2 s apart. Vision calls: 2 of 3.
 
-## Remaining gaps (FT4-sufi-fiddle, 3 Oct 2026)
-Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet; not graded above I here).
-- independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (owner never identified, Bulliet 2021) and Figure 1 turned out to be the same sheet, so every image on record is one hand copy
-- transcription from the 2500 px Figure 1 - blocker: not-attempted; ciphertext.txt was read from the 614 px image with dot clusters pooled; next: one re-transcription pass of Figure 1 line crops per TRANSCRIPTION.md (pooled dots, L5 g4), 2 vision calls, ~$4
+## GAPS87-sufi-fiddle (3 Oct 2026, account-4): Figure 1 re-transcribed from line crops
+
+Step (FT4 Verdict): re-transcribe from Bulliet's Mizan 2021 Figure 1 (2500x1301, sha1 2825b442..., refetched once from mizanproject.org, still not committed: manifest only) per TRANSCRIPTION.md's LLM line-read fallback (an inscription in a known script, no key family, no atlas).
+Crops (scratch only, pasted command; the profile found 5 of 7 lines, so centres were set from the --debug overlay; region trimmed to 2490 px so each line is one crop under the 2500 px limit):
+```
+python3 tools/iiif_lines.py --image <scratch>/fig1.jpg --out <scratch>/crops --prefix fig1 --region 0,0,2490,1301 --max-width 2490 --centres 148,289,445,613,820,1000,1195 --debug
+```
+Passes: two blind Opus calls over the 7 crops only (`fig1-tx/prompt_pass.txt`, grep-checked for unfilled placeholders: one unfilled output path caught and fixed before launch), dots resolved per sign, group gaps as `|`. `tools/reconcile_passes.py fig1-tx/passA.tsv fig1-tx/passB.tsv`: A 176 signs, B 181; 205/242 columns agree incl. gaps; **err_2reader 34/184 sign columns = 18.5 pct** (over a tenth). So, per the brief, no third full pass: one look-alike re-read of the 34 split signs only (`prompt_lookalike.txt`, candidates A/B shown, `reread.tsv`), folded by `tools/lookalike_pass.py reconcile` (fixed 2-of-3 rule; tiles/passC built from the reconcile_passes draft by a scratch adapter, since the packet subcommand needs a symbol sheet this script does not have): 28 settled, 15 relabelled, **6 UNSETTLED (residual 6/184 = 3.3 pct, agreement not accuracy)** -> `fig1-tx/focus.tsv` for the sign sorter, never blocking. err_true not measurable: no benchmark item of this hand.
+Result: `ciphertext_fig1.txt` (176 signs, 7 lines, 2 OBSCURED spans; `ciphertext.txt` left as transcribed, rule 1). Against bSUF's 166-sign pooled read the new read has 10 more signs and resolves the pooled dot clusters except 5 `tooth`. **L5 group 4: both blind passes read `mim ha2 mim dal`** (agreed, M) -- the FT4 dispute is settled against bSUF's `mim ha ya dal`; the shape matches the name Muhammad that Bulliet reports, a script reading graded I here (no reading claimed). Commonest signs: lam 20, waw 17, dal 14, kaf 14, sin 13, mim 13, ta 12. Splits concentrate on dot counts (tooth vs nun/ba/tha, nga vs ghayn x3) and lam/dal/alif strokes.
+Vision calls: 2 passes + 1 look-alike re-read (3 of 3). Requests: mizanproject.org 1. No decipherment attempted.
+
+## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026)
+Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet, now matched by both blind passes at L5 g4; graded I).
+- independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (its holder never identified, Bulliet 2021) and Figure 1 is the same sheet as the folder image, so every image on record is one hand copy
 - language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
+- script reading of the Figure 1 transcription as Jawi-script Tausug - blocker: not-attempted; ciphertext_fig1.txt (GAPS87) is the first dot-resolved sign read, its 6 unsettled signs marked '?' (fig1-tx/focus.tsv for the sign sorter, non-blocking); next: build a small Tausug word list from archive.org texts and match the 7 lines' groups against it with a shuffled-group control, ~$4
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
@@ -176,13 +187,13 @@ Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet; not gra
 - [n/a] known-keys: not a cipher on present evidence; script reading, no key
 - [x] print: Bulliet's own 2021 essay read in full (GF4-BATCH18); its Figure 1 diffed here (FT4)
 - [n/a] key-rebuild: no key involved in a script reading
-- [ ] image-check: re-transcribe from Figure 1 at 2500 px (the not-attempted gap above)
+- [x] image-check: Figure 1 re-transcribed from 2500 px line crops (GAPS87, 3 Oct 2026): err_2reader 18.5 pct, look-alike residual 3.3 pct
 - [n/a] retry: no failed attempt with a changed knob to retry
-Verdict: keep going: 1 internal gaps; cheapest next: re-transcribe ciphertext.txt from Bulliet's Figure 1 line crops (dot clusters, L5 g4 Muhammad), ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: script reading of ciphertext_fig1.txt as Jawi-script Tausug against a Tausug word list with a shuffled-group control, ~$4
 
-## While waiting (FT4-sufi-fiddle, 3 Oct 2026)
+## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026)
 
-Nothing here waits on a person for the next step: the zero-dependency action is the re-transcription of Figure 1's line crops (Verdict above). Trimillos's reply on Tausug is the only outside wait. GF4-BATCH18's earlier While waiting step (diff Figure 1 against the folder copy) is done: same sheet, 0.0 pct disagreement.
+Nothing here waits on a person for the next step: the zero-dependency action is the Tausug word-list match on ciphertext_fig1.txt (Verdict above). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 

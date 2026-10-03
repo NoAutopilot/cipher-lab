@@ -1,0 +1,243 @@
+line	position	sign	confidence	alt	why
+L01	1	ha	H		agree
+L01	2	waw	H		agree
+L01	3	|	M		agree-flagged
+L01	4	lam	M		agree-flagged
+L01	5	dal	M		agree-flagged
+L01	6	|	M		agree-flagged
+L01	7	ha	H		agree
+L01	8	alif	H		agree
+L01	9	hamza	M		agree-flagged
+L01	10	|	M		agree-flagged
+L01	11	sin	M		agree-flagged
+L01	12	lam	L		agree-flagged
+L01	13	dal	L		agree-flagged
+L01	14	|	M	B:-	gap
+L01	15	waw	H		agree
+L01	16	|	M		agree-flagged
+L01	17	kha	M	B:ghayn	differ
+L02	1	ha	H		agree
+L02	2	ha2	M		agree-flagged
+L02	3	|	M		agree-flagged
+L02	4	ta	M		agree-flagged
+L02	5	waw	H		agree
+L02	6	|	M		agree-flagged
+L02	7	lam	H		agree
+L02	8	kaf	H		agree
+L02	9	fa	M		agree-flagged
+L02	10	ta	M		agree-flagged
+L02	11	waw	H		agree
+L02	12	|	M		agree-flagged
+L02	13	ha	M		agree-flagged
+L02	14	ya	M	A:-	gap
+L02	15	tooth	L		agree-flagged
+L02	16	ya	M	B:-	gap
+L02	17	|	M		agree-flagged
+L02	18	ba	M	A:-	gap
+L02	19	tooth	M	B:tha	differ
+L02	20	|	M		agree-flagged
+L02	21	alif	H		agree
+L02	22	lam	H		agree
+L02	23	kaf	H		agree
+L02	24	waw	H		agree
+L02	25	|	M		agree-flagged
+L02	26	ain	M		agree-flagged
+L02	27	tha	M		agree-flagged
+L02	28	|	M		agree-flagged
+L02	29	ba	M		agree-flagged
+L02	30	shin	M		agree-flagged
+L02	31	|	M		agree-flagged
+L02	32	kaf	H		agree
+L02	33	ta	M		agree-flagged
+L02	34	dal	M		agree-flagged
+L02	35	|	M		agree-flagged
+L02	36	kaf	H		agree
+L02	37	ta	L		agree-flagged
+L02	38	dal	M		agree-flagged
+L02	39	|	M		agree-flagged
+L02	40	hamza	M		agree-flagged
+L02	41	|	M		agree-flagged
+L02	42	ba	M		agree-flagged
+L02	43	ta	M		agree-flagged
+L02	44	|	M		agree-flagged
+L02	45	sin	H		agree
+L02	46	alif	H		agree
+L02	47	ba	M		agree-flagged
+L02	48	ain	M		agree-flagged
+L02	49	|	M		agree-flagged
+L02	50	shin	M		agree-flagged
+L02	51	sin	M	A:-	gap
+L02	52	fa	M		agree-flagged
+L02	53	ra	H		agree
+L02	54	ghayn	M		agree-flagged
+L02	55	|	M		agree-flagged
+L02	56	lam	H		agree
+L02	57	tooth	M	B:ba	differ
+L02	58	alif	H		agree
+L03	1	sin	M		agree-flagged
+L03	2	nun	L		agree-flagged
+L03	3	ta	M	B:nun	differ
+L03	4	waw	M		agree-flagged
+L03	5	OBSCURED	L		agree-flagged
+L03	6	sin	M	B:-	gap
+L03	7	dal	M	B:UNK	differ
+L03	8	alif	M		agree-flagged
+L03	9	waw	M		agree-flagged
+L03	10	|	M		agree-flagged
+L03	11	ta	M		agree-flagged
+L03	12	tha	M	B:nun	differ
+L03	13	|	M		agree-flagged
+L03	14	kaf	H		agree
+L03	15	ya	M		agree-flagged
+L03	16	alif	H		agree
+L03	17	|	M		agree-flagged
+L03	18	lam	L		agree-flagged
+L03	19	kaf	L		agree-flagged
+L03	20	alif	M		agree-flagged
+L04	1	fa	M		agree-flagged
+L04	2	tooth	M	B:nun	differ
+L04	3	nga	M	B:ghayn	differ
+L04	4	|	M		agree-flagged
+L04	5	kaf	H		agree
+L04	6	waw	H		agree
+L04	7	|	M		agree-flagged
+L04	8	fa	M		agree-flagged
+L04	9	nun	M		agree-flagged
+L04	10	ain	L		agree-flagged
+L04	11	|	M		agree-flagged
+L04	12	mim	H		agree
+L04	13	waw	H		agree
+L04	14	|	M		agree-flagged
+L04	15	dal	H		agree
+L04	16	hamza	M		agree-flagged
+L04	17	|	M		agree-flagged
+L04	18	tooth	M	B:-	gap
+L04	19	tooth	L		agree-flagged
+L04	20	sin	M		agree-flagged
+L04	21	ya	M	A:-	gap
+L04	22	ra	M	B:ba	differ
+L04	23	|	M		agree-flagged
+L04	24	kaf	H		agree
+L04	25	mim	M		agree-flagged
+L04	26	waw	H		agree
+L04	27	|	M		agree-flagged
+L04	28	sin	H		agree
+L04	29	ra	H		agree
+L04	30	|	M		agree-flagged
+L04	31	lam	H		agree
+L04	32	tooth	M	B:mim	differ
+L04	33	tooth	M	B:ba	differ
+L04	34	ya	M		agree-flagged
+L04	35	alif	H		agree
+L04	36	|	M		agree-flagged
+L04	37	kaf	H		agree
+L04	38	fa	M	B:mim	differ
+L04	39	ra	H		agree
+L04	40	|	M		agree-flagged
+L04	41	mim	H		agree
+L04	42	mim	M		agree-flagged
+L04	43	waw	H		agree
+L04	44	|	M	B:-	gap
+L04	45	ta	M		agree-flagged
+L04	46	dal	M		agree-flagged
+L04	47	|	M		agree-flagged
+L04	48	ba	M		agree-flagged
+L04	49	sin	M		agree-flagged
+L04	50	ra	M		agree-flagged
+L04	51	ta	M		agree-flagged
+L04	52	|	M		agree-flagged
+L04	53	fa	M		agree-flagged
+L04	54	nun	M		agree-flagged
+L04	55	nga	M	B:ghayn	differ
+L04	56	|	M		agree-flagged
+L04	57	mim	H		agree
+L04	58	waw	H		agree
+L04	59	OBSCURED	L		agree-flagged
+L04	60	lam	L		agree-flagged
+L04	61	ta	M		agree-flagged
+L04	62	ya	M		agree-flagged
+L04	63	dal	L		agree-flagged
+L05	1	kaf	M		agree-flagged
+L05	2	lam	M	A:-	gap
+L05	3	sin	M		agree-flagged
+L05	4	|	M		agree-flagged
+L05	5	sin	M		agree-flagged
+L05	6	tooth	M	A:-	gap
+L05	7	|	M		agree-flagged
+L05	8	mim	H		agree
+L05	9	waw	H		agree
+L05	10	|	M		agree-flagged
+L05	11	mim	H		agree
+L05	12	ha2	M		agree-flagged
+L05	13	mim	H		agree
+L05	14	dal	H		agree
+L05	15	|	M		agree-flagged
+L05	16	kaf	M		agree-flagged
+L05	17	lam	M	A:-	gap
+L05	18	sin	M		agree-flagged
+L05	19	nun	M	B:tooth	differ
+L05	20	|	M		agree-flagged
+L05	21	ra	L		agree-flagged
+L06	1	sin	H		agree
+L06	2	ra	H		agree
+L06	3	|	M	B:-	gap
+L06	4	kaf	H		agree
+L06	5	waw	H		agree
+L06	6	|	M		agree-flagged
+L06	7	mim	H		agree
+L06	8	mim	M		agree-flagged
+L06	9	waw	H		agree
+L06	10	|	M		agree-flagged
+L06	11	ta	M		agree-flagged
+L06	12	dal	M		agree-flagged
+L06	13	|	M		agree-flagged
+L06	14	tooth	L		agree-flagged
+L06	15	ra	M		agree-flagged
+L06	16	nun	M	B:ta	differ
+L06	17	|	M		agree-flagged
+L06	18	ta	L		agree-flagged
+L06	19	nga	M	B:ghayn	differ
+L06	20	|	M		agree-flagged
+L06	21	ba	M	B:tooth	differ
+L06	22	ra	H		agree
+L06	23	kaf	M		agree-flagged
+L06	24	|	M		agree-flagged
+L06	25	dal	H		agree
+L06	26	waw	H		agree
+L06	27	|	M		agree-flagged
+L06	28	ain	M		agree-flagged
+L06	29	|	M		agree-flagged
+L06	30	lam	M		agree-flagged
+L06	31	dal	M		agree-flagged
+L06	32	|	M		agree-flagged
+L06	33	ain	M		agree-flagged
+L06	34	lam	H		agree
+L06	35	|	M		agree-flagged
+L06	36	kaf	M		agree-flagged
+L06	37	lam	H		agree
+L06	38	|	M		agree-flagged
+L06	39	ain	M		agree-flagged
+L06	40	lam	H		agree
+L06	41	|	M		agree-flagged
+L06	42	lam	H		agree
+L06	43	lam	H		agree
+L06	44	|	M		agree-flagged
+L06	45	lam	M	A:-	gap
+L06	46	lamalif	M	B:alif	differ
+L06	47	mim	M		agree-flagged
+L06	48	ha2	M	B:kaf	differ
+L06	49	lam	M	B:alif	differ
+L06	50	mim	L		agree-flagged
+L07	1	sin	M		agree-flagged
+L07	2	lam	M		agree-flagged
+L07	3	UNK	M	B:lam	differ
+L07	4	|	M		agree-flagged
+L07	5	lam	M		agree-flagged
+L07	6	lam	M	B:dal	differ
+L07	7	|	M		agree-flagged
+L07	8	sin	H		agree
+L07	9	waw	H		agree
+L07	10	|	M		agree-flagged
+L07	11	lam	M		agree-flagged
+L07	12	lam	M		agree-flagged
+L07	13	lam	M	B:dal	differ

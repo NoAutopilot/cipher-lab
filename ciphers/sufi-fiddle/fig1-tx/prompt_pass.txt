@@ -1,0 +1,12 @@
+You are doing one blind sign-by-sign transcription pass of a handwritten copy of a 7-line inscription in Arabic script (possibly Jawi / a Philippine language; meaning unknown and not wanted). Do not try to read words or meaning, do not guess a language, and do not consult any other file. Read ONLY these 7 image crops with the Read tool, one per manuscript line:
+<scratch>/crops/fig1_L01.jpg ... fig1_L07.jpg (L01 through L07, same folder).
+Each crop is one line; the printed numeral at the far right is the copyist's line number (ignore it). Text runs RIGHT TO LEFT: sign position 1 is the rightmost sign. English pencil annotations ("hard to read", "glue", arrows, "?", square brackets) are the copyist's notes: do not transcribe them as signs, except record a bracketed sign as a sign with conf L. A crosshatched glue patch hides part of lines 3 and 4: write one row with sign OBSCURED where it covers signs.
+
+Write a TSV file to <scratch>/passA.tsv with header line exactly:
+line	pos	sign	conf
+one row per sign, line = L01..L07, pos = 1,2,3... counting right to left within the line, and a row with sign "|" for each visible gap between letter groups (unjoined word/group break; a non-joining letter like alif, dal, ra, waw followed by an ordinary letter spacing is NOT a group break -- only a visibly wider gap is). conf is H, M or L.
+Sign names (letter identity, ignoring positional/joining form; resolve dots individually, do not pool):
+alif ba ta tha nun ya jim ha2(hah, plain) kha dal dhal ra zay sin shin sad dad ta2(tah) za2(zah) ain ghayn fa qaf kaf lam mim ha(heh) waw hamza lamalif ya-hamza waw-hamza
+Jawi extras: nga (ain shape with 3 dots), pa (fa with 3 dots), ca (jim/hah with 3 dots below), nya (nun/ya tooth with 3 dots above), ga (kaf with one dot), va (waw with dot).
+If the dots of a toothed or hah-shaped sign cannot be resolved, write tooth? (dotless/unclear tooth: ba/ta/tha/nun/ya) or hah? (jim/ha2/kha/ca) with conf L; for any other shape you cannot name write UNK with conf L. Vowel/diacritic marks (fatha, kasra, damma, sukun, shadda, tanwin) are NOT signs: skip them.
+When done, reply only with the path written and the number of sign rows per line.

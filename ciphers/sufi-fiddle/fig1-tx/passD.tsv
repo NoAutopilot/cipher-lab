@@ -1,0 +1,243 @@
+passage	pos	sign_id	conf	note	question
+L01	1	ha	H	passC	
+L01	2	waw	H	passC	
+L01	3	|	M	passC	
+L01	4	lam	M	passC	
+L01	5	dal	M	passC	
+L01	6	|	M	passC	
+L01	7	ha	H	passC	
+L01	8	alif	H	passC	
+L01	9	hamza	M	passC	
+L01	10	|	M	passC	
+L01	11	sin	M	passC	
+L01	12	lam	L	passC	
+L01	13	dal	L	passC	
+L01	14	|	M	passC	
+L01	15	waw	H	passC	
+L01	16	|	M	passC	
+L01	17	kha	M	lookalike 2-of-3	
+L02	1	ha	H	passC	
+L02	2	ha2	M	passC	
+L02	3	|	M	passC	
+L02	4	ta	M	passC	
+L02	5	waw	H	passC	
+L02	6	|	M	passC	
+L02	7	lam	H	passC	
+L02	8	kaf	H	passC	
+L02	9	fa	M	passC	
+L02	10	ta	M	passC	
+L02	11	waw	H	passC	
+L02	12	|	M	passC	
+L02	13	ha	M	passC	
+L02	14	NONE	M	lookalike 2-of-3	
+L02	15	tooth	L	passC	
+L02	16	ya	M	lookalike UNSETTLED	L02.16: readers ya/NONE, look-alike NONE (L); which of NONE, ya?
+L02	17	|	M	passC	
+L02	18	NONE	M	lookalike 2-of-3	
+L02	19	tha	M	lookalike 2-of-3	
+L02	20	|	M	passC	
+L02	21	alif	H	passC	
+L02	22	lam	H	passC	
+L02	23	kaf	H	passC	
+L02	24	waw	H	passC	
+L02	25	|	M	passC	
+L02	26	ain	M	passC	
+L02	27	tha	M	passC	
+L02	28	|	M	passC	
+L02	29	ba	M	passC	
+L02	30	shin	M	passC	
+L02	31	|	M	passC	
+L02	32	kaf	H	passC	
+L02	33	ta	M	passC	
+L02	34	dal	M	passC	
+L02	35	|	M	passC	
+L02	36	kaf	H	passC	
+L02	37	ta	L	passC	
+L02	38	dal	M	passC	
+L02	39	|	M	passC	
+L02	40	hamza	M	passC	
+L02	41	|	M	passC	
+L02	42	ba	M	passC	
+L02	43	ta	M	passC	
+L02	44	|	M	passC	
+L02	45	sin	H	passC	
+L02	46	alif	H	passC	
+L02	47	ba	M	passC	
+L02	48	ain	M	passC	
+L02	49	|	M	passC	
+L02	50	shin	M	passC	
+L02	51	NONE	M	lookalike 2-of-3	
+L02	52	fa	M	passC	
+L02	53	ra	H	passC	
+L02	54	ghayn	M	passC	
+L02	55	|	M	passC	
+L02	56	lam	H	passC	
+L02	57	ba	H	lookalike 2-of-3	
+L02	58	alif	H	passC	
+L03	1	sin	M	passC	
+L03	2	nun	L	passC	
+L03	3	ta	M	lookalike 2-of-3	
+L03	4	waw	M	passC	
+L03	5	OBSCURED	L	passC	
+L03	6	sin	M	lookalike 2-of-3	
+L03	7	dal	M	lookalike UNSETTLED	L03.7: readers dal/UNK, look-alike dal (L); which of UNK, dal?
+L03	8	alif	M	passC	
+L03	9	waw	M	passC	
+L03	10	|	M	passC	
+L03	11	ta	M	passC	
+L03	12	nun	M	lookalike 2-of-3	
+L03	13	|	M	passC	
+L03	14	kaf	H	passC	
+L03	15	ya	M	passC	
+L03	16	alif	H	passC	
+L03	17	|	M	passC	
+L03	18	lam	L	passC	
+L03	19	kaf	L	passC	
+L03	20	alif	M	passC	
+L04	1	fa	M	passC	
+L04	2	nun	M	lookalike 2-of-3	
+L04	3	nga	M	lookalike 2-of-3	
+L04	4	|	M	passC	
+L04	5	kaf	H	passC	
+L04	6	waw	H	passC	
+L04	7	|	M	passC	
+L04	8	fa	M	passC	
+L04	9	nun	M	passC	
+L04	10	ain	L	passC	
+L04	11	|	M	passC	
+L04	12	mim	H	passC	
+L04	13	waw	H	passC	
+L04	14	|	M	passC	
+L04	15	dal	H	passC	
+L04	16	hamza	M	passC	
+L04	17	|	M	passC	
+L04	18	tooth	M	lookalike UNSETTLED	L04.18: readers tooth/NONE, look-alike tooth (L); which of NONE, tooth?
+L04	19	tooth	L	passC	
+L04	20	sin	M	passC	
+L04	21	ya	M	lookalike UNSETTLED	L04.21: readers NONE/ya, look-alike NONE (L); which of NONE, ya?
+L04	22	ra	M	lookalike 2-of-3	
+L04	23	|	M	passC	
+L04	24	kaf	H	passC	
+L04	25	mim	M	passC	
+L04	26	waw	H	passC	
+L04	27	|	M	passC	
+L04	28	sin	H	passC	
+L04	29	ra	H	passC	
+L04	30	|	M	passC	
+L04	31	lam	H	passC	
+L04	32	mim	M	lookalike 2-of-3	
+L04	33	ba	M	lookalike 2-of-3	
+L04	34	ya	M	passC	
+L04	35	alif	H	passC	
+L04	36	|	M	passC	
+L04	37	kaf	H	passC	
+L04	38	fa	H	lookalike 2-of-3	
+L04	39	ra	H	passC	
+L04	40	|	M	passC	
+L04	41	mim	H	passC	
+L04	42	mim	M	passC	
+L04	43	waw	H	passC	
+L04	44	|	M	passC	
+L04	45	ta	M	passC	
+L04	46	dal	M	passC	
+L04	47	|	M	passC	
+L04	48	ba	M	passC	
+L04	49	sin	M	passC	
+L04	50	ra	M	passC	
+L04	51	ta	M	passC	
+L04	52	|	M	passC	
+L04	53	fa	M	passC	
+L04	54	nun	M	passC	
+L04	55	nga	M	lookalike 2-of-3	
+L04	56	|	M	passC	
+L04	57	mim	H	passC	
+L04	58	waw	H	passC	
+L04	59	OBSCURED	L	passC	
+L04	60	lam	L	passC	
+L04	61	ta	M	passC	
+L04	62	ya	M	passC	
+L04	63	dal	L	passC	
+L05	1	kaf	M	passC	
+L05	2	NONE	M	lookalike 2-of-3	
+L05	3	sin	M	passC	
+L05	4	|	M	passC	
+L05	5	sin	M	passC	
+L05	6	tooth	M	lookalike UNSETTLED	L05.6: readers NONE/tooth, look-alike nun (M); which of NONE, nun, tooth?
+L05	7	|	M	passC	
+L05	8	mim	H	passC	
+L05	9	waw	H	passC	
+L05	10	|	M	passC	
+L05	11	mim	H	passC	
+L05	12	ha2	M	passC	
+L05	13	mim	H	passC	
+L05	14	dal	H	passC	
+L05	15	|	M	passC	
+L05	16	kaf	M	passC	
+L05	17	NONE	M	lookalike 2-of-3	
+L05	18	sin	M	passC	
+L05	19	nun	H	lookalike 2-of-3	
+L05	20	|	M	passC	
+L05	21	ra	L	passC	
+L06	1	sin	H	passC	
+L06	2	ra	H	passC	
+L06	3	|	M	passC	
+L06	4	kaf	H	passC	
+L06	5	waw	H	passC	
+L06	6	|	M	passC	
+L06	7	mim	H	passC	
+L06	8	mim	M	passC	
+L06	9	waw	H	passC	
+L06	10	|	M	passC	
+L06	11	ta	M	passC	
+L06	12	dal	M	passC	
+L06	13	|	M	passC	
+L06	14	tooth	L	passC	
+L06	15	ra	M	passC	
+L06	16	nun	H	lookalike 2-of-3	
+L06	17	|	M	passC	
+L06	18	ta	L	passC	
+L06	19	nga	M	lookalike 2-of-3	
+L06	20	|	M	passC	
+L06	21	ba	H	lookalike 2-of-3	
+L06	22	ra	H	passC	
+L06	23	kaf	M	passC	
+L06	24	|	M	passC	
+L06	25	dal	H	passC	
+L06	26	waw	H	passC	
+L06	27	|	M	passC	
+L06	28	ain	M	passC	
+L06	29	|	M	passC	
+L06	30	lam	M	passC	
+L06	31	dal	M	passC	
+L06	32	|	M	passC	
+L06	33	ain	M	passC	
+L06	34	lam	H	passC	
+L06	35	|	M	passC	
+L06	36	kaf	M	passC	
+L06	37	lam	H	passC	
+L06	38	|	M	passC	
+L06	39	ain	M	passC	
+L06	40	lam	H	passC	
+L06	41	|	M	passC	
+L06	42	lam	H	passC	
+L06	43	lam	H	passC	
+L06	44	|	M	passC	
+L06	45	NONE	M	lookalike 2-of-3	
+L06	46	lamalif	M	lookalike 2-of-3	
+L06	47	mim	M	passC	
+L06	48	ha2	M	lookalike 2-of-3	
+L06	49	lam	M	lookalike UNSETTLED	L06.49: readers lam/alif, look-alike lam (L); which of alif, lam?
+L06	50	mim	L	passC	
+L07	1	sin	M	passC	
+L07	2	lam	M	passC	
+L07	3	lam	M	lookalike 2-of-3	
+L07	4	|	M	passC	
+L07	5	lam	M	passC	
+L07	6	dal	M	lookalike 2-of-3	
+L07	7	|	M	passC	
+L07	8	sin	H	passC	
+L07	9	waw	H	passC	
+L07	10	|	M	passC	
+L07	11	lam	M	passC	
+L07	12	lam	M	passC	
+L07	13	dal	M	lookalike 2-of-3	

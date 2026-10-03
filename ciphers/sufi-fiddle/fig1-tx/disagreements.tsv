@@ -1,0 +1,38 @@
+line	col	A	B	flagged	crop
+L01	14	|	-		
+L01	17	kha	ghayn	AB	
+L02	14	-	ya	B	
+L02	16	ya	-	A	
+L02	18	-	ba	B	
+L02	19	tooth	tha	AB	
+L02	51	-	sin	B	
+L02	57	tooth	ba	AB	
+L03	3	ta	nun	AB	
+L03	6	sin	-	A	
+L03	7	dal	UNK	AB	
+L03	12	tha	nun	AB	
+L04	2	tooth	nun	AB	
+L04	3	nga	ghayn	AB	
+L04	18	tooth	-	A	
+L04	21	-	ya	B	
+L04	22	ra	ba	B	
+L04	32	tooth	mim	A	
+L04	33	tooth	ba	AB	
+L04	38	fa	mim	AB	
+L04	44	|	-		
+L04	55	nga	ghayn	AB	
+L05	2	-	lam	B	
+L05	6	-	tooth	B	
+L05	17	-	lam	B	
+L05	19	nun	tooth	AB	
+L06	3	|	-		
+L06	16	nun	ta	AB	
+L06	19	nga	ghayn	AB	
+L06	21	ba	tooth	AB	
+L06	45	-	lam	B	
+L06	46	lamalif	alif	AB	
+L06	48	ha2	kaf	AB	
+L06	49	lam	alif	AB	
+L07	3	UNK	lam	AB	
+L07	6	lam	dal	AB	
+L07	13	lam	dal	AB	

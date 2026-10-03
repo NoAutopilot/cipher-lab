@@ -1,0 +1,20 @@
+# sufi-fiddle ciphertext_fig1.txt -- re-transcription from Bulliet's Mizan 2021 Figure 1 (GAPS87-sufi-fiddle (account-4), 3 Oct 2026)
+# RULE 2: still a SECONDARY source -- Figure 1 photographs the same hand copy as images/Suffi-Fiddle-614.png (FT4), at
+# 2500x1301 px (sha1 2825b442..., not committed: no licence stated; URL in images/manifest.json external_not_committed).
+# Method: tools/iiif_lines.py --image ... --region 0,0,2490,1301 --max-width 2490 --centres 148,289,445,613,820,1000,1195
+# (7 one-line crops, scratch only); two blind Opus passes (fig1-tx/passA.tsv, passB.tsv; prompt fig1-tx/prompt_pass.txt),
+# tools/reconcile_passes.py, then one look-alike re-read of the 34 split signs (prompt_lookalike.txt, reread.tsv) folded in
+# by tools/lookalike_pass.py reconcile's fixed 2-of-3 rule (passD.tsv). Dots resolved per sign, NOT pooled
+# (unlike ciphertext.txt); 'tooth' = toothed sign whose dots neither reader could resolve.
+# err_2reader 34/184 sign columns = 18.5 pct (gap '|' rows excluded); look-alike residual 6/184 = 3.3 pct (2-of-3
+# agreement, NOT true error); err_true not measurable: no benchmark item of this hand. A trailing '?' marks the 6
+# UNSETTLED signs (kept at the reconciled draft's label; fig1-tx/focus.tsv for the owner's sorter, never blocking).
+# '|' = visible group gap. Signs read right to left. Nothing here is a reading; no meaning is asserted.
+
+L01: ha waw | lam dal | ha alif hamza | sin lam dal | waw | kha
+L02: ha ha2 | ta waw | lam kaf fa ta waw | ha tooth ya? | tha | alif lam kaf waw | ain tha | ba shin | kaf ta dal | kaf ta dal | hamza | ba ta | sin alif ba ain | shin fa ra ghayn | lam ba alif
+L03: sin nun ta waw OBSCURED sin dal? alif waw | ta nun | kaf ya alif | lam kaf alif
+L04: fa nun nga | kaf waw | fa nun ain | mim waw | dal hamza | tooth? tooth sin ya? ra | kaf mim waw | sin ra | lam mim ba ya alif | kaf fa ra | mim mim waw | ta dal | ba sin ra ta | fa nun nga | mim waw OBSCURED lam ta ya dal
+L05: kaf sin | sin tooth? | mim waw | mim ha2 mim dal | kaf sin nun | ra
+L06: sin ra | kaf waw | mim mim waw | ta dal | tooth ra nun | ta nga | ba ra kaf | dal waw | ain | lam dal | ain lam | kaf lam | ain lam | lam lam | lamalif mim ha2 lam? mim
+L07: sin lam lam | lam dal | sin waw | lam lam dal

@@ -1,0 +1,43 @@
+Look-alike re-read of a handwritten Arabic-script inscription copy (meaning unknown and not wanted; do not try to read words or guess a language). Two earlier readers transcribed it sign by sign and split at the positions listed below. For each position, look at the line crop with the Read tool (zoom by cropping with python/PIL into your own scratch folder if needed, never into the crops folder) and decide which reading is right.
+Crops (one manuscript line each, text runs RIGHT TO LEFT, the numeral at far right is the line number; English pencil notes, arrows, "?" and brackets are the copyist's annotations):
+<scratch>/crops/fig1_L01.jpg ... fig1_L07.jpg (L01 to L07, same folder)
+Sign names: alif ba ta tha nun ya jim ha2 (hah) kha dal dhal ra zay sin shin sad dad ta2 za2 ain ghayn fa qaf kaf lam mim ha (heh) waw hamza lamalif; Jawi nga (ain shape + 3 dots), pa, ca, nya, ga; tooth = a dotless or unresolved tooth (ba/ta/tha/nun/ya); NONE = no sign at this position (one reader saw an extra sign the other did not); UNK = unnameable shape. Diacritic/vowel marks are not signs.
+Positions (line, pos, readerA / readerB, then the agreed neighbouring signs: "before" is to the RIGHT of the position, "after" to the LEFT; "|" is a group gap):
+L01	17	kha / ghayn	before(right side): dal | waw |	after(left side): 
+L02	14	NONE / ya	before(right side): ta waw | ha	after(left side): tooth ya |
+L02	16	ya / NONE	before(right side): | ha ya tooth	after(left side): | ba tooth
+L02	18	NONE / ba	before(right side): ya tooth ya |	after(left side): tooth | alif
+L02	19	tooth / tha	before(right side): tooth ya | ba	after(left side): | alif lam
+L02	51	NONE / sin	before(right side): ba ain | shin	after(left side): fa ra ghayn
+L02	57	tooth / ba	before(right side): ra ghayn | lam	after(left side): alif
+L03	3	ta / nun	before(right side): sin nun	after(left side): waw OBSCURED sin
+L03	6	sin / NONE	before(right side): nun ta waw OBSCURED	after(left side): dal alif waw
+L03	7	dal / UNK	before(right side): ta waw OBSCURED sin	after(left side): alif waw |
+L03	12	tha / nun	before(right side): alif waw | ta	after(left side): | kaf ya
+L04	2	tooth / nun	before(right side): fa	after(left side): nga | kaf
+L04	3	nga / ghayn	before(right side): fa tooth	after(left side): | kaf waw
+L04	18	tooth / NONE	before(right side): | dal hamza |	after(left side): tooth sin ya
+L04	21	NONE / ya	before(right side): | tooth tooth sin	after(left side): ra | kaf
+L04	22	ra / ba	before(right side): tooth tooth sin ya	after(left side): | kaf mim
+L04	32	tooth / mim	before(right side): sin ra | lam	after(left side): tooth ya alif
+L04	33	tooth / ba	before(right side): ra | lam tooth	after(left side): ya alif |
+L04	38	fa / mim	before(right side): ya alif | kaf	after(left side): ra | mim
+L04	55	nga / ghayn	before(right side): ta | fa nun	after(left side): | mim waw
+L05	2	NONE / lam	before(right side): kaf	after(left side): sin | sin
+L05	6	NONE / tooth	before(right side): lam sin | sin	after(left side): | mim waw
+L05	17	NONE / lam	before(right side): mim dal | kaf	after(left side): sin nun |
+L05	19	nun / tooth	before(right side): | kaf lam sin	after(left side): | ra
+L06	16	nun / ta	before(right side): dal | tooth ra	after(left side): | ta nga
+L06	19	nga / ghayn	before(right side): ra nun | ta	after(left side): | ba ra
+L06	21	ba / tooth	before(right side): | ta nga |	after(left side): ra kaf |
+L06	45	NONE / lam	before(right side): | lam lam |	after(left side): lamalif mim ha2
+L06	46	lamalif / alif	before(right side): lam lam | lam	after(left side): mim ha2 lam
+L06	48	ha2 / kaf	before(right side): | lam lamalif mim	after(left side): lam mim
+L06	49	lam / alif	before(right side): lam lamalif mim ha2	after(left side): mim
+L07	3	UNK / lam	before(right side): sin lam	after(left side): | lam lam
+L07	6	lam / dal	before(right side): lam UNK | lam	after(left side): | sin waw
+L07	13	lam / dal	before(right side): waw | lam lam	after(left side): 
+
+Write a TSV file to <scratch>/la/reread.tsv with header exactly:
+passage	pos	label	conf	second
+one row per position above (passage = the line id, pos = the number given). label = your reading (one sign name, or NONE, or SPLIT:x|y if you genuinely cannot choose between x and y); conf H, M or L; second = your runner-up or blank. You may answer a sign neither reader gave. Reply only with the path and how many rows you wrote.
