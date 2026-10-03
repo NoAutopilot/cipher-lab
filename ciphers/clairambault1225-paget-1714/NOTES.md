@@ -931,3 +931,22 @@ Adversarial pass per .claude/briefs/check-solved.md, trying to show the item is 
   (Genoa instructions) already searched (CX2-MISC2).
 Result: no prior modern decipherment or print of these letters located; the item stays partial and step 2 proceeds
 (a search result, not a novelty verdict, rule 10). Requests: github.com 2 clones; WebSearch 3.
+
+## Next step (READ2-RELABEL, 3 Oct 2026)
+Images are on disk and read: the Gallica leaves f55-f66 (Clairambault 1225, ark btv1b9001034d) are in images/ (f60-f66 L/R halves, gutter strip and bracket crops, manifest.json with folio_pinning), and two blind line-crop passes plus the f66L gutter pass re-read all 505 cipher tokens against them (A2-PAG2, A2-PAG3). The next step is therefore the open-codes homophone pass on the 428 M tokens, run on align/ alone (group the codes by agreeing aligned chunks across both letters, per-letter shuffle control first), ~$2; it needs nothing further from an archive. The only unread pieces are 4 tokens (f66L 169-172, no gloss) and one solid-inked group (f61L), both waiting on the Marine B7 originals (LOCAL-QUEUE L11), unchanged.
+
+## Remaining gaps (READ2-RELABEL, 3 Oct 2026; restates the 2 Oct 2026 section, nothing re-run)
+Read so far: token level H 64, M 428, I 7, U 6 of 505 (firm 64), decode.json run 2 Oct 2026 (A2-PAG2); 99.2% of tokens lie under a period interlinear gloss read off the images on disk
+- Code-level values for the 428 M tokens (single-attestation or unsettled codes; frequent codes 46, 146, 145, 175) - blocker: open-codes; alignment self-agreement 0.276 vs shuffle p95 0.121 does not hold one value for them, which fits homophones, nulls or a paraphrasing gloss; next: the homophone pass on align/, per-letter shuffle control first, ~$2
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (READ2-RELABEL, 3 Oct 2026; restates the 2 Oct 2026 ladder)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: per-letter controls both PASS (PAGET-KEY, A2-PAG2); key.tsv 111 codes; decode H 64 M 428 I 7 U 6
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: decode --check exit 0 at the 2 Oct 2026 regrade; re-run it after the homophone pass
+Verdict: keep going: 1 internal gaps; cheapest next: the open-codes homophone pass on the 428 M tokens (align/ only; the page images are on disk and already re-read), ~$2

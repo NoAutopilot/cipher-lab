@@ -899,3 +899,22 @@ Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourd
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
 Verdict: parked: every gap has an outside blocker (no-key-material); GAPS84 (3 Oct 2026) sampled NA 2.01.08 inv. 261 (Goldberg, Berlin 1808-10) and found no key, cipher or decipherment, closing the archival route in 2.01.08; new material that reopens it: a ministry codebook or key list 1806-1810 in another archive, or D. Bourdeau's own key work on R1941
+
+## Next step (READ2-RELABEL, 3 Oct 2026)
+The images are on disk and fully used, so this is not an image step. On disk: native 5000 px captures of NA 2.01.08 inv. 281 scans 67, 73-76, 81, 82 and 85 (the target letter No 4 at scans 81-82, the annex No 6 at scan 85; manifest.json, na_2.01.08_281_scans.tsv with all 360 scans listed), line crops in images/lines_gaps36 and lines_gaps44, and the inv. 261 and 204A samples under gaps72/gaps84. The 304 groups were transcribed from these crops and matched to Bourdeau's (GAPS36), and every scan of inv. 281 was viewed (GAPS41, GAPS58) with no key sheet in it. What reopens the target is new material, not a pass over these scans: a ministry code book or key list for 1806-1810 held in another archive, or D. Bourdeau's own key work on R1941. The one action that depends on nobody (~USD 1): grep the public finding aid of the King's cabinet archive at the Nationaal Archief (Kabinet des Konings, 1806-1810) for a key unit.
+
+## Remaining gaps (READ2-RELABEL, 3 Oct 2026; restates the 3 Oct 2026 section, nothing re-run)
+Read so far: 0 of 304 groups (229 letter + 75 annex; image reading GAPS36, Bourdeau's count 303); nothing decoded
+- letter 14 Jan 1808 (228 groups, inv. 281 scans 81-82) - blocker: no-key-material; no key sheet in any of the 360 scans of inv. 281, none on DECODE for this code, Croiset 1803 (R1035) gives word salad
+- annex 15 Jan 1808 (75 groups, scan 85) - blocker: no-key-material; DECODE DocumentsList 0 documents (FT4c), no decipherment beside it in inv. 281
+- numbered sibling series and crib - blocker: no-key-material; crib placement (GAPS48) and frequency-position (GAPS54) are non-tests at N 304 (controls below gate), R1033 is a different design (GAPS63), inv. 261 holds no key (GAPS84)
+
+## Escalation (READ2-RELABEL, 3 Oct 2026; restates the 3 Oct 2026 ladder)
+- [x] siblings: target is No 4 and No 6 of a numbered Düsseldorf series (GAPS34); inv. 281 fully viewed, No 2 and No 3 clear (GAPS41, GAPS44, GAPS58)
+- [x] clear-pages: No 3, slip 102 and No 2 read from crops, 2 blind passes 95.8% word agreement (GAPS44); crib list in gaps44/crib_candidates.tsv
+- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked (Bourdeau), R1035 ruled out, R1941 DocumentsList empty (FT4c), R1033 compared (GAPS63)
+- [x] print: Colenbrander Gedenkstukken V read 24 Sept 2026, Smit 1975 grepped 3 Oct 2026; letter absent from both
+- [x] key-rebuild: crib placement and frequency-position both non-tests at N 304; NA catalogue pass found no key unit in 2.01.08, 3.20.16, 3.20.17 (GAPS61); ministry registers read (GAPS66, GAPS70)
+- [x] image-check: native scans 81, 82, 85 fetched and committed (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36)
+- [n/a] retry: no attempt has failed yet that a retry could repeat
+Verdict: parked: every gap has an outside blocker (no-key-material); the images are on disk and read, and new material reopens it: a ministry code book or key list 1806-1810 in another archive, or D. Bourdeau's own key work on R1941
