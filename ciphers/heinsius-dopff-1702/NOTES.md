@@ -182,3 +182,51 @@ on archive.org full text for Dopff, for a sender-side use of the same numbers.
 Beyond those two, the manuscript H.A. 756 is
 not digitised (REQUEST.md, ASKS row 46), and Dopff's Marlborough cipher correspondence, BL Add MS 61202, is not
 digitised either.
+
+## GAPS107-heinsius-dopff-1702 (3 Oct 2026, account-4): the 12 unlocated Deel 1 Dopff letters; Murray vol. 1
+
+GAPS105's named next step, run as written. Status stays `open`. No reading, no tokens graded.
+
+1. **The 12 letters, all located and read on the printed page** (Huygens retroboeken OCR, Deel 1 source=1; printed page =
+   page_index - 33). Letter, date, page, how the edition prints it:
+
+   | no. | date 1702 | p. | printed as | numbers for names? |
+   |---|---|---|---|---|
+   | 40 | 25 Mar, Düsseldorf | 34 | full French text (condolence on William III's death, offer of service, plan with Heyden) | no |
+   | 153 | 18 Apr, camp Kaiserswerth | 103 | Dutch regest | no |
+   | 177 | 22 Apr, camp Kaiserswerth | 116 | Dutch regest (OCR damaged at the top) | no |
+   | 267 | 4 May, camp Kaiserswerth | 162 | Dutch regest; fn 1 cross-refers p.148 and no. 268 only | no |
+   | 286 | 8 May, camp Kaiserswerth | 173 | Dutch regest with one quoted French sentence (Düsseldorf alarm) | no |
+   | 335 | 15 May, camp Kaiserswerth | 200 | Dutch regest with one quoted French clause | no |
+   | 424 | 31 May, Düsseldorf | 248 | Dutch regest, with P.S.; fn 1 says a Heinsius letter "is niet gevonden" (not a key) | no |
+   | 454 | 5 Jun, camp Kaiserswerth | 264 | Dutch regest | no |
+   | 485 | 11 Jun, camp Kaiserswerth | 279 | Dutch regest | no |
+   | 515 | 17 Jun, camp Kaiserswerth | 294 | Dutch regest | no |
+   | 881 | 21 Sep, camp Lanaken | 432 | Dutch regest | no |
+   | 1053 | 30 Oct, Maastricht | 514 | Dutch regest | no |
+
+   With GAPS105's ten, all 21 register letters (p.610) plus no. 546 have now been read as printed. Only nos. 104 and 40
+   are printed in full besides the target 357. No letter, summary, quoted passage or footnote carries a number standing
+   for a name, mentions a cipher or key, or glosses any of 357's codes (110, 103, 121, 112, 111, 174, 105, 37). This is a
+   result about the edition as printed. Nineteen of the 22 are editor's summaries, and a summary would not show a reused
+   code, so the originals in H.A. 756 are not tested by this (rule 2; REQUEST.md, ASKS row 46).
+2. **Murray, *Letters and Dispatches of Marlborough* vol. 1 (1845), archive.org `10280849bsb`, `_djvu.txt` grepped.** The
+   volume runs 17 Apr 1702 to Dec 1704. "Dopff" occurs 45 times, including 19 letters headed "To M. DOPFF". The first is
+   25 Dec 1702 (St James's), the last is late 1704. All are in French, and their only 2-3 digit numbers are dates and
+   running page numbers: none of 357's eight codes occurs as a standalone number in any of them. The volume's ten
+   cipher/chiffre mentions are all in letters to other recipients (Hedges, Harley, Stepney, Hill, Wratislaw, the Elector
+   of Hanover), none to or about Dopff. Murray prints Marlborough's outgoing letters only, so Dopff's side (BL Add MS
+   61202, "partly copies and cipher") is not tested by this grep, and nothing from Marlborough to Dopff dated before
+   25 Dec 1702 is printed there.
+
+Result: no sibling letter in Heinsius Deel 1 as printed, and no letter to Dopff in Murray vol. 1, reuses or glosses any
+code in no. 357. Not located: nothing; every letter named in the step was read. Requests: resources.huygens.knaw.nl 27
+(1 pages.json, 1 toc1 probe that returned 404 because the Heinsius book has no `toc1` accessor, 25 OCR pages), all at
+least 2.1 s apart, descriptive UA; archive.org 3 (advancedsearch, metadata, `_djvu.txt`), at least 1.5 s apart. No vision
+calls. No subagents.
+
+Next step: none cheap remains in print. Both remaining routes are blocked from outside: H.A. 756 originals (not
+digitised, REQUEST.md / ASKS row 46) and BL Add MS 61202 (Dopff-Marlborough, partly cipher, not digitised; BL images
+offline since 2023). A Marlborough-side edition of the 1702 letters that this grep did not cover (Snyder,
+*Marlborough-Godolphin Correspondence*; van 't Hoff, *Correspondence of Marlborough and Heinsius*) is a further
+print check, ~USD 1, if anyone wants it.
