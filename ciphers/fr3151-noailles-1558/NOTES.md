@@ -564,3 +564,54 @@ Vision calls: 0. Rule 10: this is a search and availability log; it makes no nov
 ## While waiting (FT4-fr3151-noailles-1558, 3 Oct 2026)
 
 - Survey the digitised Gallica fr. 10773 (btv1b52527305r: copies of Noailles's Venice/Constantinople dispatches) for a copied cipher alphabet, a key table or deciphered copies of the Nov 1558 letters: canvas labels first, then at most 2 vision calls at 1000 px, ~$2. This depends on nobody, unlike the fr. 4127 reproduction order.
+
+## IMG-GALLICA1: fr. 10773 survey (3 Oct 2026, account 2 worker for LANE-IMAGES)
+
+Step (a) of the FT4 next-step list. Brief `.claude/briefs/runs/2026-10-03-acct2-img-gallica1.md`. No transcription,
+no decoding.
+
+**Availability flag quoted.** Gallica ark:/12148/btv1b52527305r, manifest
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b52527305r/manifest.json`. The manifest metadata reads: "Français 10773
+... Copies de pièces et de dépêches relatives aux négociations à Venise et à Constantinople de François DE NOAILLES,
+évêque de Dax, et de Jean DE LA VIGNE. (1557-1559)"; Date "1601-1700"; "Papier. - 104 feuillets". The catalogue
+record is archivesetmanuscrits.bnf.fr ark:/12148/cc42278j (FRBNFEAD000042278, "Supplément français 252"), fetched
+once, HTTP 200. It is a single-level record with **no item list and no folio-by-date breakdown**.
+
+**Canvas labels.** `tools/gallica_folio.py btv1b52527305r --list` gives 226 canvases: 208 with a folio label
+(1r-104v, consecutive) and 18 without (binding, endleaves, and two NP slips at c116-117).
+
+**Survey.** I fetched all 226 canvases at 200 px. Two contact sheets at 996 px wide (113 canvases each, about 83 px
+per page) used the 2 vision calls. They are committed as `images/fr10773_survey/sheet_f10773_{1,2}.jpg`, with
+per-canvas classes in `images/fr10773_survey/canvas_classes.tsv`.
+
+| class | canvases |
+|---|---|
+| clear (continuous prose) | 200 |
+| blank | 11 |
+| binding | 13 |
+| NP slip | 2 |
+
+**Result.** At this scale no canvas shows a key table, a cipher alphabet, a grid or a numeral-dense block. Every
+written page is the same 17th-century copy hand in continuous prose, with occasional marginal notes. That fits a
+register of clear copies, not of cipher.
+
+**Not found and not tested:**
+- Dates. At about 83 px per page no date heading can be read, so whether fr. 10773 holds a clear copy of the Nov 1558
+  letters, including no. 33 of 13 Nov 1558 to Lorraine, is **not established**.
+- Images. No native image or crop was fetched, because the brief allows that only for a key table or a Nov 1558
+  cipher or decipherment page, and none was identified.
+
+A clear copy of no. 33 would be a C-grade crib source. Finding one needs a date-locating pass that reads the copy
+headings at about 1000 px. This is a separate job, not this brief.
+
+**Requests:**
+- gallica.bnf.fr: 227, all one at a time and at least 2 s apart: 1 manifest plus 226 thumbnails. The thumbnail run
+  was paused once at 108/226 to serve the clair1161 job and then resumed. There was one transient
+  "RemoteDisconnected" on c19, which succeeded on its single retry. No 403, 429 or altcha.
+- archivesetmanuscrits.bnf.fr: 1.
+
+Vision calls: 2.
+
+Next step (one line, not actioned): a date-locating pass over fr. 10773, reading copy headings at about 1000 px by
+bisection on the folio labels (about 6-8 leaf views, about $2). Its aim is a clear copy of the 13 Nov 1558 letter to
+Lorraine, or of fr. 4127's Nov 1558 letters. FT4's (b), the fr. 4127 reproduction order, stands unchanged.
