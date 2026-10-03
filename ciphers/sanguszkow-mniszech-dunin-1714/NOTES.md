@@ -74,10 +74,38 @@ Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchan
 
 WebSearch (standard) `Mniszech Dunin 1714 cipher Sanguszko archive letter deciphered`: results were HistoCrypt papers (papal cipher 1721, Brougham 1724), Augustus II ciphers and unrelated Dunin namesakes; none names this letter. Solver diffs of 3 Oct 2026 (sources/solver-diffs/2026-10-03-bourdeau.tsv, -aymeloglu.tsv) match this item as before (Bourdeau class b: R7524 "separate, still unread numerical system"; Aymeloglu: DECODE harvest listing only). No image exists online per the holding record ("No scans / photos"), so no edition or leaf was read and the status stays `blocked`. Premise check: (a) folder mentions no decipherment: not found; (b) Bourdeau's potocka1714 working files: not opened here (his page cited above only); (c) neighbours: unreachable, no scans; (d) recipient-side Polish edition: not located.
 
+## Comparison with Bourdeau's Potocka alphabet and DECODE R7524 (A2P4-SANG, 3 Oct 2026)
+
+Descriptive only; nothing here is a reading (H 0, C 0, S 0, M 0, I 0 tokens) and no cipher sign of R7524 was read by us.
+Sources: Bourdeau's targets/potocka1714/NOTES.md (fetched once from raw.githubusercontent.com, 3 Oct 2026; D. Bourdeau, cyphersolver, code MIT, text CC BY 4.0, credited); DECODE https://de-crypt.org/decrypt-web/RecordsView/7524 (login-free page, 1 request, 3 `TH_IMG_R7524_I33989_P1-3.jpg` thumbnails, 3 requests, 200x296/297/157 px; nothing larger is served without the account gate, sources/decode/NOTES.md).
+
+- **R7524 metadata (DECODE):** Krakow, Archiwum Narodowe w Krakowie; date 1714; type Cipher, status N/A, cipher type Unknown, symbol set Numerical, 3 pages, cleartext Polish, plaintext Polish, ciphertext flagged private; no key attached.
+- **Bourdeau's account of R7524:** ASang teka 290/6, date 1714 from metadata and letter heading; 232 cipher tokens, about 75 distinct signs in his count, "a different alphabet" and "separate numerical system" from the Potocka letters; Polish quintgram homophonic annealing, a tentative *hetmanow* crib and a hypothetical null failed; his synthetic Polish homophonic control (232 tokens, ~75 signs) read only 49/232 (21.1%), so his negative is inconclusive (his words; consistent with rule 3 here, and it means no negative stands on this item).
+- **Potocka system (his R7525-7530, 7534-7536; 887 tokens):** numerals about 16-37 for letters, plus person codes up to 270 and homophones (50=e, 52=a, 58=c, 74=r; a=26/27/5/10/15 in different records), French and Polish plaintext, key coverage 863/887 graded I by him. By his own check of the three Sanguszko key records (R7515, R7460, R7461) none fits R7524's neighbours.
+- **Shared signs / numeral range:** cannot be stated from what we hold. His notes give R7524's sign count (~75) but not its numeral range or sign list, and our 200-px thumbnails of the cipher pages are not legible at digit level. A ~75-sign inventory against the Potocka letters' roughly 16-37 letter range plus homophones is a wider inventory, which agrees with his "different alphabet", but that is his observation, not ours.
+- **Hand (one vision call, P1 thumbnail only, 200 px):** the first leaf is an ordinary clear-text letter page, 13-14 lines of cursive with a short address block and a date at top right, no figures visible at that size. The cipher lies on P2/P3 if it is on these leaves; not examined (one call allowed). Whether sender hand matches the Potocka letters is not judgeable at this size.
+- **Found / not found:** found: his written statement that R7524 is a separate unread system and that his control failed; DECODE metadata above. Not found: a sign list or numeral range for R7524, any key or plaintext, any shared-sign claim. No size larger than the thumbnail was fetched.
+- Cost: 1 vision call (thumbnail P1), 4 DECODE requests, 1 raw.githubusercontent request, 0 subagents.
+
 ## Next step (costed)
 
-Open Bourdeau's targets/potocka1714 folder and DECODE R7524's own thumbnail and metadata for the sender/recipient hand and sign set, ~USD 1; then copy order to Archiwum Narodowe w Krakowie for the 1714 Mniszech letters, owner-side.
+An image of the 1714 letter is the only thing that moves this: owner-side copy order to Archiwum Narodowe w Krakowie for the Mniszech-to-Dunin 1714 item (reference 29/637/0/1.3/9908/9, ASKS 125), then one crop-based transcription per TRANSCRIPTION.md. Until then no cheap step is untried: Bourdeau's folder and the DECODE metadata are now read. If the DECODE full-size route opens for R7524 (re-test with `--guess-fullsize`, as A2-HDK did for record 4692, ~USD 1), that replaces the order.
 
 ## While waiting
 
-- Read Bourdeau's potocka1714 NOTES.md (public, MIT/CC BY) to see whether R7524's numeral system shares signs with the recovered Potocka alphabet; depends on nobody (~USD 1).
+- Re-test DECODE R7524 full-size images with one browser login (decode_browser_login.js, `--guess-fullsize`); depends on nobody (~USD 1). Bourdeau's local images came through DECODE's image manager, so the route may be open.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
+Read so far: 0 of 232 cipher tokens (no image beyond 200-px thumbnails; nothing read)
+- R7524 all 232 cipher tokens - blocker: not-attempted; DECODE full-size route untried for this record, Bourdeau's local images came through DECODE's image manager; next: one browser login with --guess-fullsize, ~$1
+- Copy of the 1714 letter from the archive - blocker: waiting-on ASKS 125; the archive record says "No scans / photos", so only a copy order to Archiwum Narodowe w Krakowie supplies one
+
+## Escalation (3 Oct 2026)
+- [x] siblings: Bourdeau's potocka1714 folder read (3 Oct 2026); R7515, R7460, R7461 do not fit per his check.
+- [n/a] clear-pages: the one clear leaf seen carries no cipher; cipher leaves unseen.
+- [x] known-keys: Bourdeau checked the three Sanguszko key records; none fits.
+- [x] print: no edition or decipherment located (solver diffs 2-3 Oct 2026).
+- [ ] key-rebuild: needs an image first; planned step is a crop transcription after the full-size re-test.
+- [ ] image-check: DECODE full-size re-test with one login, ~$1.
+- [ ] retry: after a full-size image, a stronger homophonic attack with a control matched on 232 tokens and ~75 signs.
+Verdict: keep going: 1 internal gaps; cheapest next: DECODE full-size re-test, ~$1
