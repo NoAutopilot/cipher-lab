@@ -199,3 +199,78 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 24 Sept 2026 (updated 30 Sept)
 - Note: already cited in our NOTES.md (26 Sept 2026)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2-11, 3 Oct 2026)
+
+Run for LANE-A2PUSH (account 2), 3 Oct 2026, 00:22-00:30 UTC, because the intake gate had no logged web/blog check
+for this folder. WebSearch (plain web), WebFetch for opened pages.
+
+(a) Plain web searches, five:
+1. `Siena Concistoro 2308 lettere in cifra decifrate` -- hits: Yale Dataverse (Ilardi collection listing "Siena, Lettere
+   Cifrate"), cultura.gov.it (Concistoro onomastics volumes 1385-1557), revistas.um.es, Atlas Obscura (Venice), a Tartu
+   Oxenstierna decipherment. None names a decipherment of any Concistoro 2308 piece.
+2. `Archivio di Stato di Siena cifrari Concistoro cipher letters 15th century deciphered` -- hits: Yale Dataverse, the
+   HistoCrypt 2019 proceedings PDF, JSTOR Daily (Venice), Cipher Mysteries "milanese enciphered letters call for help"
+   (2011) and ?p=3700, voynich.ninja thread 3943. Nothing on Siena's letters.
+3. `"Magnifici et potentes domini" Siena cifra lettera oratore 1456 Borghesi Benvoglienti cifra` (no. 4's opening and
+   correspondents) -- hits: Penn Colenda notarial charter 1456, Patrizi timeline (Harvard), Petrucci articles, HAL
+   preaching paper. No cipher content.
+4. `Siena cipher letter 1421 oldest Sienese nomenclator Meister Geheimschrift Siena` (the folder's own title / no. 1) --
+   hits: arXiv 2205.12527, Yale Dataverse, a Czech maths-history PDF, voynich.ninja threads 3533/4618, Cipher Mysteries
+   "fifteenth century cryptography" (2016). No item about a Sienese cipher letter.
+5. `"Klausis Krypto Kolumne" Siena verschlüsselt Brief Italien 15. Jahrhundert` -- hits: Cipherbrain 24 Mar 2017 (the
+   Beinecke spinelli letter, a different item, already handled in this repo), Villa Vigoni "Information, Ciphers and
+   Decipherment in Renaissance Italy", Tartu Florentine polyalphabetic paper, Simonetta's rules. No Siena letter.
+
+(b) Blog site searches:
+- Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Siena` -- only tourist pages; plus search 5 above. No post.
+- Cryptiana: `site:cryptiana.blogspot.com Siena cipher` -- no cryptiana page returned. The repo's Tomokiyo snapshot
+  (`sources/cryptiana/`) grepped for siena/sienese: galileo.htm (Galileo in Siena, 1633), spanish3.htm ("Cardinal of
+  Burgos in Siena", 1550s Spanish), and the cyphersolver index page's "Siena Concistoro ciphers ... partial" (Bourdeau,
+  below). No Tomokiyo page on these letters.
+- Cipher Mysteries: `site:ciphermysteries.com Siena cipher` -- ?p=34, ?p=200, ?p=59, tags cryptologia/evelyn-welch/cicco-
+  simonetta; and the site's own search `ciphermysteries.com/?s=Siena` (WebFetch): four posts (Voynich Q20 recipes,
+  Casini da Siena, Scaglia, Urbino intarsia) -- none on Sienese cipher letters.
+
+(c) Opened: Cipher Mysteries "fifteenth century cryptography" (2016/07/06), the one plausible hit: WebFetch reports no
+mention of Siena, Sienese letters or the Concistoro in the post or the comments it rendered (header: 907 comments, only
+part rendered). A plain curl of the page for a full grep was refused by the host (HTTP "Not Acceptable", Mod_Security);
+not retried. So that thread is read in part only.
+
+Result: no decipherment or plaintext of nos. 6/24, 20/23, 7, 9, 11, 15, 17, 19, 21 (the pieces this folder holds open)
+found on the open web or in the three blogs. The only public reading of any piece of the busta is Bourdeau's (nos. 4,
+14, 18, 25 in part; nos. 8, 10, 12, 13/16, 22 read at the time), already cited in this folder.
+
+## Premise check (GF-A2-11, 3 Oct 2026)
+
+- **(a) Decipherments the folder already mentions: found for other pieces only, not for the open ones.** The folder
+  cites Bourdeau's: no. 16 = clear decipherment of no. 13; no. 8's sheet carries its own decipherment; glosses on nos.
+  4, 7 (nine letter values, L08), 10; no. 22's clear drafts; no. 24 P1 = dorse ("not decipherment", his words). None of
+  these is a decipherment of nos. 6/24, 20/23, 9, 11, 15, 17, 19, 21; no. 7's gloss is partial (nine values) and was
+  already the basis of his and our tests.
+- **(b) Other solvers' working files: found, partial, already on file.** dbourdeau/cyphersolver HEAD 2341682 (2 Oct
+  2026; `targets/siena1421/` last changed 2 Oct), NOTES.md read in full this pass, plus its file list (keys R4750-R4764,
+  no04/no18/no25 keys, key14, homsolve2/3, sylsolve, wordsolve, decode/views.jsonl). Status line "read in part (key
+  recovered from the ciphertext alone for nos. 14, 18, 25; no. 4 from its own fragment; no. 1 of 1421 not
+  photographed)". His own "Remaining gaps" lists nos. 6+24, 20+23, 11 as no-key-material, 7, 9, 15, 17, 19, 21 as
+  too-short -- i.e. the same pieces this folder holds open are open there too; no output or rendering of them reads as
+  Italian. Already flagged to the parents by SOLVERDIFF-BOURDEAU (2 Oct 2026, ROOM.md) and in "Solver-repo check"
+  above; not re-flagged. aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026) grepped for `siena`, `concistoro`,
+  `4790`-`4814`: no hit.
+- **(c) Physical neighbours: not viewed by us.** The neighbours are the busta's other DECODE records (keys R4746-R4789,
+  letters R4790-R4814, R1858 key photos); Bourdeau states every record was opened and the clear pages used (his
+  Escalation "siblings" and "clear-pages" rows), with no clear copy beside nos. 6/24 or 20/23. We have not seen the
+  images ourselves (full-size DECODE images were account-blocked when this folder was worked; A2-HDK, 2 Oct 2026,
+  got one record's full image after a browser login -- a per-record re-test is the route if a next step needs it).
+- **(d) Recipient's side: not found.** The recipient is the Sienese government itself; the busta is its own archive.
+  Printed apparatus named in this folder and by Bourdeau: Cecchini's 1952 Concistoro inventory ("solo parzialmente
+  decifrate"), Meister 1902, Senatore 2009 (no. 4) -- no printed decipherment of any open piece. For no. 11 (Acciaiuoli
+  to Lorenzo, Rome 13 June 1478) the recipient-side edition would be the Medici correspondence: one IA full-text query
+  (`"Donato Acciaiuoli" cifra 1478`) returned only unrelated hits (Poliziano's Coniuratio commentary, Rinascimento 1982
+  index lines, Florentine chancery diaries); Lorenzo's own Lettere (Fubini) print his outgoing letters, not this one --
+  not checked further this pass.
+
+Verdict of this pass: no decipherment of any piece this folder holds open; status stays `open`. Requests: WebSearch 8,
+ciphermysteries.com 2 (1 WebFetch post, 1 WebFetch site search; 1 curl refused, not retried), be-api.us.archive.org 1.
+
+`python3 tools/intake_gate_check.py siena-concistoro-2308` after both sections (3 Oct 2026, GF-A2-11): `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
