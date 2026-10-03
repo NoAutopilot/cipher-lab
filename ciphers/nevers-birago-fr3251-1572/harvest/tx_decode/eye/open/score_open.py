@@ -62,12 +62,18 @@ for L, g, parts in LEAVES:
     agreeing = [p for p in changed if res['olat'][(p['passage'], int(p['pos']))] == ans[p['qid']]['answer']]
     surv = [p for p in agreeing if ans[p['qid']].get('conf') in ('H', 'M')]
     g_cal = calib >= 0.80; g_pn = pn.get(L, {}).get('gate') == 'PASS'
+    # deviation logged in RESULTS-OPEN.md (post-hoc, before the decode): targets that already carry an A1-BIR-VERIFY
+    # exception are not re-added; they are reported as replicate (same sign) or conflict (different sign).
+    prev = {(r['line'], r['pos']): r['reason'].split('->')[1].split(' ')[0] for r in csv.DictReader(open(f'../verify/exceptions_{L}.tsv'), delimiter='\t')}
+    already = [p for p in tg if (p['passage'], p['pos']) in prev]
+    rep = [f"{p['passage']}:{p['pos']} prior {prev[(p['passage'], p['pos'])]} open {ans.get(p['qid'], {}).get('answer')} ({ans.get(p['qid'], {}).get('conf')})" for p in already]
+    surv = [p for p in surv if (p['passage'], p['pos']) not in prev]
     keep = surv if g_cal and g_pn else []
     out[L] = dict(n_hdecoy=len(dec), hdecoy_agree=agree, calibration=round(calib, 4), calib_gate='PASS' if g_cal else 'FAIL',
                   n_target=len(tg), target_same=len(same), target_changed=len(changed), change_rate=round(len(changed) / len(tg), 4),
                   target_other_or_U=len(tg) - len(same) - len(changed), lattice_agrees=len(agreeing), lattice_agrees_HM=len(surv),
                   baseline_chosen_eq_reader=sum(res['oblat'][(p['passage'], int(p['pos']))] == ans[p['qid']]['answer'] for p in changed),
-                  posnull_gate=pn.get(L, {}).get('gate', 'NOT RUN'),
+                  already_exception=rep, posnull_gate=pn.get(L, {}).get('gate', 'NOT RUN'),
                   kept=[f"{p['passage']}:{p['pos']} {p['current']}->{ans[p['qid']]['answer']} ({ans[p['qid']]['conf']})" for p in keep],
                   agreeing_not_kept=[f"{p['passage']}:{p['pos']} {p['current']}->{ans[p['qid']]['answer']} ({ans[p['qid']]['conf']})" for p in agreeing if p not in keep])
     with open(f'exceptions_open_{L}.tsv', 'w') as f:

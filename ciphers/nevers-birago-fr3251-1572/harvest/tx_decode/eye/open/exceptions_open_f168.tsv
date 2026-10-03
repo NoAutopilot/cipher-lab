@@ -1,0 +1,10 @@
+folio	line	pos	value	grade	reason
+f168	V03	1	m	S	A1-BIR-VERIFY kept: image read X_NEW->T17 (blind, G1+G2 PASS)
+f168	R03	4	r	S	A1-BIR-VERIFY kept: image read T24->T83 (blind, G1+G2 PASS)
+f168	R02	17	m	S	A1-BIR-VERIFY kept: image read X_NEW->T17 (blind, G1+G2 PASS)
+f168	V03	10	l	S	A1-BIR-VERIFY kept: image read T49->T51 (blind, G1+G2 PASS)
+f168	V01	10	r	S	A1-BIR-VERIFY kept: image read T24->T83 (blind, G1+G2 PASS)
+f168	R02	34	e	S	BIR-OPEN kept: open blind read T60->T86 + lattice lam 4 (calibration 1.00, posnull PASS)
+f168	R03	17	r	S	BIR-OPEN kept: open blind read T56->T97 + lattice lam 4 (calibration 1.00, posnull PASS)
+f168	V02	30	e	S	BIR-OPEN kept: open blind read T60->T86 + lattice lam 4 (calibration 1.00, posnull PASS)
+f168	V03	14	u	S	BIR-OPEN kept: open blind read T19->T33 + lattice lam 4 (calibration 1.00, posnull PASS)

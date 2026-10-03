@@ -1,0 +1,100 @@
+{
+ "f117": {
+  "n_hdecoy": 74,
+  "hdecoy_agree": 70,
+  "calibration": 0.9459,
+  "calib_gate": "PASS",
+  "n_target": 74,
+  "target_same": 31,
+  "target_changed": 41,
+  "change_rate": 0.5541,
+  "target_other_or_U": 2,
+  "lattice_agrees": 25,
+  "lattice_agrees_HM": 12,
+  "baseline_chosen_eq_reader": 13,
+  "already_exception": [
+   "L01:17 prior T86 open T86 (M)",
+   "L04:23 prior T86 open T86 (M)",
+   "L05:27 prior T66 open T76 (M)",
+   "L04:6 prior T95 open T51 (M)",
+   "L03:15 prior T86 open T86 (M)",
+   "L05:12 prior T95 open T95 (M)",
+   "L04:7 prior T86 open T86 (M)",
+   "L01:22 prior T86 open T86 (M)",
+   "L03:27 prior X_NEW open T84 (M)",
+   "L05:2 prior T95 open T51 (M)",
+   "L03:23 prior T18 open T18 (H)",
+   "L03:1 prior T90 open T90 (M)",
+   "L05:9 prior T13 open T13 (L)",
+   "L09:11 prior T95 open T51 (M)",
+   "L06:23 prior T13 open T64 (L)",
+   "L08:10 prior T83 open T83 (M)",
+   "L07:28 prior T86 open T86 (M)",
+   "L09:30 prior T95 open T51 (M)",
+   "L07:21 prior T95 open T51 (M)"
+  ],
+  "posnull_gate": "PASS",
+  "kept": [
+   "L03:11 T60->T86 (M)",
+   "L05:18 T65->T51 (M)",
+   "L02:3 T60->T86 (M)",
+   "L05:16 T98->T18 (H)",
+   "L03:10 T65->T51 (M)",
+   "L02:1 T95->T51 (M)",
+   "L08:23 T65->T51 (M)",
+   "L09:20 T65->T51 (M)",
+   "L06:13 T65->T51 (M)",
+   "L10:7 T60->T86 (M)",
+   "L09:17 T60->T86 (M)",
+   "L06:21 T60->T86 (M)"
+  ],
+  "agreeing_not_kept": [
+   "L01:17 T60->T86 (M)",
+   "L04:23 T60->T86 (M)",
+   "L03:15 T60->T86 (M)",
+   "L05:12 T65->T95 (M)",
+   "L04:7 T60->T86 (M)",
+   "L01:22 T60->T86 (M)",
+   "L03:27 T81->T84 (M)",
+   "L03:23 T98->T18 (H)",
+   "L03:1 T45->T90 (M)",
+   "L05:9 T64->T13 (L)",
+   "L09:11 T65->T51 (M)",
+   "L08:10 T81->T83 (M)",
+   "L07:28 T60->T86 (M)"
+  ]
+ },
+ "f168": {
+  "n_hdecoy": 22,
+  "hdecoy_agree": 22,
+  "calibration": 1.0,
+  "calib_gate": "PASS",
+  "n_target": 22,
+  "target_same": 10,
+  "target_changed": 12,
+  "change_rate": 0.5455,
+  "target_other_or_U": 0,
+  "lattice_agrees": 7,
+  "lattice_agrees_HM": 4,
+  "baseline_chosen_eq_reader": 5,
+  "already_exception": [
+   "V03:1 prior T17 open T17 (M)",
+   "R02:17 prior T17 open T17 (M)",
+   "R03:4 prior T83 open T24 (M)",
+   "V01:10 prior T83 open T24 (M)",
+   "V03:10 prior T51 open T95 (M)"
+  ],
+  "posnull_gate": "PASS",
+  "kept": [
+   "R02:34 T60->T86 (M)",
+   "R03:17 T56->T97 (H)",
+   "V02:30 T60->T86 (H)",
+   "V03:14 T19->T33 (H)"
+  ],
+  "agreeing_not_kept": [
+   "V03:23 T70->T84 (L)",
+   "V03:1 X_NEW->T17 (M)",
+   "R02:17 X_NEW->T17 (M)"
+  ]
+ }
+}

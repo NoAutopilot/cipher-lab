@@ -1438,3 +1438,20 @@ f.117r L02 and f.144r L04.1 (both readers), and "1 6" appears on f.144r L05. The
 (85/86/89), but they are not in the printed key; values unknown. An "up triangle over cross" resembles quello (T84) in reverse
 orientation. No other off-sheet shape matches a printed code. Next: pooled 47/16 count across the 1572 leaves, disk only, ~$1.
 Cryptanalytic result only; no reading claimed, no novelty classed.
+## BIR-OPEN (3 Oct 2026, account-3 worker): open-choice blind re-read of the M positions, then lattice lam 4
+The full record is in `nevers-birago-fr3251-1572/harvest/tx_decode/eye/open/RESULTS-OPEN.md`. The prereg (e5076ee1) was pushed before any crop or score.
+This is the different instrument BIR-ROUND2 named. Each reader saw a masked orientation, the native line crops and the whole sign sheet, and
+was asked for any sheet id, OTHER or U at each of the 74 f.117r / 22 f.168 M positions. Equal sign-matched H decoys were mixed in. There were 3 fresh blind Opus readers.
+- Calibration on the H decoys: f.117r 70/74 (0.95), f.168 22/22 (1.00), both PASS (gate 0.80). T60 decoys read T60 9/10 and 2/2.
+- Change rate on M targets: f.117r 41/74, f.168 12/22. The lattice (open answers added as candidates) agrees at H/M on 24 / 6. Posnull PASS on
+  both (rank 1/201; z 4.88 / 3.25).
+- New S candidates (value changes): f.117r 12 (T60->T86 x5, T65->T51 x5, T95->T51, T98->T18). f.168 4 (T60->T86 x2, T56->T97, T19->T33).
+  They are in `open/exceptions_open_<leaf>.tsv` (`open/decode_open.json`), decode --check exit 0.
+- The M targets included A1-BIR-VERIFY's 24 exception positions. Open reads replicate 11/19 (f.117r) and 2/5 (f.168). 11 conflict, mainly
+  T95 vs T51 (6) and T83 vs T24 (2). The T65/T95/T51 three-way is unsettled, so it goes to the owner's sorter. A1's rows are left unchanged.
+- **Grades unchanged** in the tokens file (f.117r H0 C0 S179 M74 U26, f.168 H0 C0 S90 M22 U10). decode_key.py grades an exception on a
+  conf-M transcription row as M. So A1's 24 "applied at S" and these 16 are value changes, not S grades. Flagged for the orchestrator.
+- Judge: f.117r FAIL -1.224 (before -1.301; real_p05 -0.899). f.168 FAIL -1.150 (before -1.242; real_p05 -0.992). The gain is partly circular.
+Cryptanalytic result only. No reading claimed, no novelty classed.
+Next: owner sign sorter on T65/T95/T51 and T83/T24 (focus list = the 11 conflicts + 6 T5x survivors). Then decide whether open-read
+survivors on conf-M rows may carry grade S (tool/grade policy, orchestrator). Then f.144r with the same instrument (~3 vision calls, ~$5).
