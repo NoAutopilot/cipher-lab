@@ -737,6 +737,35 @@ change to ciphertext_5186.tsv (git diff empty). The two print disagreements the 
 2021 text is a modernised, partly re-read version of this leaf, not a character-level witness at those two places.
 Rule 10: nothing here is new; item 3 stays N0 (AUDIT.md), key `period`.
 
+## GAPS3-rah-morillo-1817 (3 Oct 2026, account-4): Aymeloglu PARES-cache grep for item 2's received original
+
+Step (Verdict line of 3 Oct): grep A. Aymeloglu's cached PARES sweep for the Ministerio de la Guerra's received
+original of Morillo's 19 Nov 1817 letter and its enclosed "clave". Source: github.com/aaymeloglu/unsolved-ciphers,
+shallow clone of commit d2800bb2 (27 Sept 2026) to scratch, data files only (`catalogue/pares-hits.jsonl` 1115 lines,
+`pares-pages.jsonl` 501, `pares-images.jsonl` 536, `pares-ranked.md`, `pares-exclude.txt`); cited, no code copied
+(the repository has no licence). PARES itself not contacted (dead from the cloud). Requests: github.com 1 clone;
+no other host.
+
+Result: **no hit.** Over the 1115 distinct PARES units in the cache: "morillo" 0, "enrile" 0, "herrera" 0,
+"cartagena" 0, "costa firme" 0, "ministerio de la guerra" 0; "clave" 8 (all 1615-1876 and none Morillo: AHN
+Diversos-Títulos 1840-58, AHN Ultramar 1866-76, AGS CCA 1615-16); "1817" 20 units, all AGI ESTADO diplomatic
+dispatches (London, St Petersburg, Brazil/Montevideo, Fernán Núñez, Campuzano), none from Costa Firme or the war
+office, none dated November 1817.
+
+What the negative covers (the control on the search itself): the cache does reach this period -- 80 units dated
+1810-1825, so a cipher-described 1817 unit would be in it if its series was swept -- but those 80 sit in only three
+series: AGI ESTADO (75), AHN DIVERSOS-COLECCIONES (4), AHNOB BAENA (1). It holds no unit from the Archivo General de
+Simancas Secretaría de Guerra (SGU), the AGI Caracas or Santa Fe audiencias, or any war-office series (0 signaturas
+containing GUERRA, SGU or CARACAS). And its six queries are cipher words only (cifrada 609, "carta cifrada" 190,
+descifrada 181, "en cifra" 101, "cartas cifradas" 20, cifradas 14): a received covering letter described as
+enclosing a "clave", or catalogued only by sender and date, would not have been retrieved. So this is a search
+result on Aymeloglu's sweep, not evidence that no received original survives in a Spanish archive; which archive
+holds the Ministry's 1817 file is still not established here.
+
+Next for this gap: a PARES search from the owner's own browser (LOCAL-QUEUE row, not filed by this step):
+"Morillo" AND "clave", and "Morillo" with date 1817-11, in AGS Secretaría de Guerra and AGI Caracas / Estado
+(Costa Firme), recording archive, signatura and the digitised flag of any hit.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: item 3, 90 of 97 cipher tokens at C (92.8%), 7 M, 0 U (`tools/decode_key.py --check` on 2 Oct 2026 after GAPS-rah-morillo-1817 folded the 2021 print into key_5186.tsv and exceptions.tsv; was C 86 / M 5 / U 6 by AUDIT.md section 3); all 21 groups carry a period gloss word, and the block's plaintext is in print (Portuguesa en Carabobo, 2021, p.37 n.100). Item 1 is read from print only (Rodriguez Villa t.3, 1908, cipher passages marked); its leaf (record 2242) was never imaged (images/manifest.json holds records 1306, 1487, 1957, 4332, 4537, 5186 and 5195 only), so its cipher tokens are unmeasured. Item 2 is a clear letter; its enclosed key table is unread.
 Done 2 Oct 2026 (GAPS-rah-morillo-1817, section above): the former first gap -- the 6 U tokens and r5g1's M token -- is closed by the print fold-in: 26 = v, 28 = j, 10 = g at C; r5g1 position 1 C under "Bolivar"; sign 22 does not hold as one value (l / y / ll from three print words) and is logged M with each print letter in exceptions.tsv; sign 30 (j in dijo, g in Guayana) is untestable at this N and stays j with the conflict recorded and r4g2 position 0 at M; exceptions.tsv carries V9's split; `decode_key.py --check` C 90 / M 7 / U 0, exit 0.
@@ -744,7 +773,7 @@ Done 3 Oct 2026 (GAPS2-rah-morillo-1817, section above): the image check -- clea
 - item 3, the 7 M tokens (r2g2 positions 5 and 7, sign 22 at r2g4/r4g2/r6g1, r4g2 position 0, r5g2 position 1) - blocker: open-codes; each is a single-occurrence conflict between period witnesses (the sign, read identically by three numeral passes; the interlinear gloss, now read by three eye passes that split at r4g2 position 0 and r5g2 position 1; the 2021 print, which GAPS2 found is not a character-level witness at r2g2 or the clear line), logged in exceptions.tsv with every witness; this leaf has no further occurrence to narrow them (GAPS2-rah-morillo-1817 section, 3 Oct 2026)
 - item 1, leaf 2242 (RAH 9/7658 ff.32-34, Enrile to Morillo, 15 Jul 1817) - blocker: not-attempted; Rodriguez Villa t.3 prints the full plaintext with footnotes "Lo que sigue en cifra" / "Desde aqui en cifra" marking the enciphered passages (NOTES "Item 1"), but no session has fetched the leaf (images/manifest.json, rederiv_transfer/candidates.tsv "already-known"), so whether it carries numeral ciphertext, and with it a 1817 Morillo-circle key recoverable at C against the printed clear, is untested; next: fetch its images by the RAH OAI didl route plus `tools/browser_fetch.js --binary`, check for numerals, and if present align a marked passage against the print with `tools/interlinear_align.py`, ~$2.5
 - item 2, the enclosed key table ("la adjunta clave", 19 Nov 1817), other RAH-side copies - blocker: not-attempted; the table is absent from the copybook copy, record 1957 (3 images, NX-MOR), and from Rodriguez Villa t.3, but the second copy, record 1759 (9/7656 f.524-524v), returned a Tomcat error page twice and was never seen, and records 3893 (Morales acknowledges receipt of a key, 19 Sept 1819) and 3886 (Morales on Montero's oficios and the key used, 10 Sept 1819) were not fetched, past NX-MOR4's 4-candidate cap (rederiv_transfer/candidates.tsv); next: retry 1759 once on a fresh day and fetch 3893 and 3886 by the OAI didl route, checking each for a numeral table or ciphertext, ~$3
-- item 2, the original letter and enclosure as received by the Ministerio de la Guerra - blocker: not-attempted; the RAH holds only Morillo's retained copies, and no search for the received original has been run (PARES is dead from the cloud; the 24 Sept check-solved PARES attempt was not reached, NOTES "PARES", and the Aymeloglu grep covered his DECODE and BNE rows, not catalogue/pares-*.jsonl); which Spanish archive holds the Ministry's 1817 file is not established here; next: grep Aymeloglu's cached PARES sweep for Morillo, 19 Nov 1817 and clave and record the archive and shelfmark if found (an undigitised hit turns this gap into needs-physical-access), ~$2
+- item 2, the original letter and enclosure as received by the Ministerio de la Guerra - blocker: not-attempted; the RAH holds only Morillo's retained copies; done 3 Oct 2026 (GAPS3-rah-morillo-1817 section): Aymeloglu's cached PARES sweep (catalogue/pares-*.jsonl, commit d2800bb2, 1115 units) has no Morillo, Enrile, Herrera or Costa Firme unit and no Nov 1817 unit, but it covers only AGI ESTADO, AHN DIVERSOS-COLECCIONES and AHNOB BAENA for 1810-25 and was queried by cipher words only, never "clave" or a name, so the received original is unsearched rather than absent; PARES is dead from the cloud; next: file a LOCAL-QUEUE row for a PARES search from the owner's browser ("Morillo" AND "clave"; "Morillo" 1817-11; AGS Secretaría de Guerra, AGI Caracas and Estado), recording archive, signatura and digitised flag, ~$0.5
 
 ## Escalation (1 Oct 2026)
 - [x] siblings: NX-MOR4 searched the RAH Morillo fonds (about 13 catalogue searches: cifra, cifrado, clave, Herrera and combinations) and opened records 5195, 4332, 4537, 1306 and 1487 (20 images): no ciphertext compatible with key_5186; 4332 carries Aldama's own vowel-only tally-glyph key, 1306/1487 a Ministerio de la Guerra tens-pattern nomenclator with its own "Descifrado" (f.151), already printed in Rodriguez Villa; 5195 f.433 has Morillo acknowledging Herrera's letters "de 7 y 8, la 1a en cifra" (so the 8 Nov letter is clear or unlocated); no DECODE neighbour (no Morillo record in Aymeloglu's cached DECODE catalogue, 24 Sept). Still unopened: 1759 (server error twice), 3893, 3886 and item 1's leaf 2242 (gaps above)
@@ -754,7 +783,7 @@ Done 3 Oct 2026 (GAPS2-rah-morillo-1817, section above): the image check -- clea
 - [x] key-rebuild: done 2 Oct 2026 (GAPS-rah-morillo-1817): the 2021 print folded into key_5186.tsv via build_key_5186.py (26 = v, 28 = j, 10 = g at C; BOX = u confirmed in three more words), exceptions.tsv written for V9's split plus the three sign-22 positions; merged-sign tests: 22 = l|y|ll does not hold as one value (M), 30 = g/j untestable at one word each (M at r4g2); C 90 / M 7 / U 0
 - [x] image-check: done 3 Oct 2026 (GAPS2-rah-morillo-1817): gloss letters at r2g2/r4g2/r5g2, the clear line and the row-1 margin mark read blind on native crops and reconciled against the print, C 90 / M 7 / U 0 unchanged; before that, the numerals were read by three passes (NX-MOR2 two blind, NX-MOR3 a third, 0 differences), all agreeing and none failing a gate, so the numeral read is settled rather than retired, and a fourth numeral pass is not proposed; planned: re-read the interlinear gloss letters at r2g2/r4g2/r5g2, the clear-text "mueven"/"reciben" and the row-1 margin mark against the print ("Caimital", "Guayana", "seguro", "reciben", "rio") on native crops
 - [ ] retry: the key-rebuild and image-check reruns are done (`decode_key.py --check` 2 and 3 Oct 2026, C 90 / M 7 / U 0, no token regraded, margin mark not a group); planned: if leaf 2242 carries numerals, decode its marked passages with whatever key the alignment gives
-Verdict: keep going: 4 internal gaps; cheapest next: item 2's received original -- grep Aymeloglu's cached PARES sweep (catalogue/pares-*.jsonl) for Morillo, 19 Nov 1817 and clave, record archive and shelfmark if found, ~$2
+Verdict: keep going: 4 internal gaps; cheapest next: file the LOCAL-QUEUE row for a PARES search (owner's browser) for item 2's received original -- "Morillo" AND "clave", "Morillo" 1817-11, in AGS Secretaría de Guerra and AGI Caracas/Estado -- ~$0.5
 
 ## Web and blog check (GAPS-rah-morillo-1817, 2 Oct 2026)
 
