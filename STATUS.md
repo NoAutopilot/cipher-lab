@@ -3759,3 +3759,33 @@ Brief `.claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md` (LANE-IMAGES).
 - Next for solving lanes (not image work): hellen R4369 transcription + known-key test on R1953 (matched control); clair1161 c185-188
   transcription (TRANSCRIPTION.md); fr3151 fr.10773 date-locating pass for a clear copy of the Nov 1558 letters; siena open pieces now
   have images in reach (re-fetch per manifest).
+
+## LANE POOLS handoff (session_01JKkb3fmtQCnwhMQpdmzT1H, account 1), 3 October 2026 (closed 23:0x UTC: backlog spent)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md` (LANE-POOLS). 14 workers, USD 51.56 (13 D, 1 D-), orchestrator in the
+self-ledger row; all archived, no check-in armed. Nothing promoted (the orchestrator promotes).
+- Scout (4 Sonnet, `sources/pools-scout/2026-10-03/`, merged into QUEUE.md "LANE-POOLS scout, 3 Oct 2026" + POOLS.tsv): 11 pools kept;
+  Low Countries/Iberia hosts gave none (Miranda MMCG/3L undigitised; Tarouca 1720-21 and Lachaulx 1522 unchecked leads).
+- Check-solved + premise (6 Sonnet), all `partial`, intake gate exit 0: es132-vargas-mexia-1578, fr16144-savary-lancosme-1588,
+  rah-juan-manuel-1521, fr16142-noailles-constantinople-1571 sent on; fr16104-vivonne-spain-1572 (>=26 letters deciphered on the leaf,
+  <600 open signs) and baluze167-davaux-1637 (interlinear decipherments, 5 open passages) fail the pool bar.
+- First cheap tests (4 Opus), specs written for all four:
+  - **rah-juan-manuel-1521 -- promote.** Tomokiyo 2025 nomenclator on the UNGLOSSED R9501 f.34 (7 Mar 1522): attested-bigram share 0.725
+    vs 200 permuted tables mean 0.091, p95 0.200 (rank 1/201, N 40 pairs); known-answer R9528 f.194 vs clerk f.197 LCS 0.525 vs p95 0.170
+    (in-sample). Word codes only, one rough pass, uniform null, no era-matched Spanish corpus. Next: test 1 alphabet recovery from
+    R9528 f.194/f.197, validate on R9529 (~6). 28 letters, ~19k est signs, Kolosova 2017/2024 not yet opened (named gap, check it first).
+  - es132-vargas-mexia-1578: Cp.30 vs Teulet's official decipherment (f.119, 15 Oct 1578) 0.915/0.904 blind vs shuffled p95 0.29 --
+    key and transcription confirmed; the unprinted paragraph's word-cover metric sits at ceiling (0.983 vs p95 0.971): non-test, needs a
+    discriminating statistic. github.com/el-descifrador/cabinet-noir published 30 readings of this pool on 2 Oct 2026 -- race; check
+    its log before any further letter.
+  - fr16144-savary-lancosme-1588: 17 of 18 cipher letters in ff.75-206 carry a period decipherment on the leaf; the pool is ONE open
+    letter (29 Apr 1587 duplicata, ff.182-184, ~5,000 signs, not in Charriere IV). Test 0 not run (sign inventory unsettled); next a
+    sign-sorter sheet from c380 + c370-375, ~9.
+  - fr16142-noailles-constantinople-1571: survey 351/353 canvases (67 cipher, 21 decipherment sheets), open est ~14,000 signs (bulk
+    c510-516, July 1574, conditional on Dupuy 521 / Charriere excerpts); known-answer on glossed c262 FAILED its pre-registered gate
+    against the gloss-order null (non-test: crops cut on sloped lines). Next: re-cut c262, settle signs, re-run the known-answer.
+- Lessons: (1) FT-D ran 2.1x cap: a 350-canvas survey is ~18 contact-sheet units and must be priced as such, not as a step 0 inside
+  a single-unit box (Usage 6; the brief's error). (2) FT-C/FT-D used 280/354 Gallica requests (one 429) -- a survey should use
+  contact sheets at 600 px, one request per canvas at most once, and stay under ~250 per host per session. (3) `tools/orphan_check.py`
+  reported every archived worker as a TITLE MISMATCH "not archived" right after archive_session returned ARCHIVED -- list_sessions lag
+  or a status-field mismatch in the tool; not investigated.
