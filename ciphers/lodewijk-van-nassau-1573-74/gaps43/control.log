@@ -1,0 +1,7 @@
+5811 cut: 833 numerals 1-120, 833 keyed, 95 distinct keyed codes
+key_full seg cost 52.8
+null start: perturbed 0/95, start 1.000 -> recovery 0.060; repaired 0/0, false moves 89; cost 18.1; word share 0.998
+seed 1: perturbed 19/95, start 0.882 -> recovery 0.046; repaired 0/19, false moves 73; cost 17.7; word share 0.998
+seed 2: perturbed 19/95, start 0.821 -> recovery 0.062; repaired 1/19, false moves 70; cost 17.6; word share 0.998
+seed 3: perturbed 19/95, start 0.768 -> recovery 0.054; repaired 2/19, false moves 73; cost 17.6; word share 0.998
+GATE (each of 3 seeds recovery >= 0.90): FAIL

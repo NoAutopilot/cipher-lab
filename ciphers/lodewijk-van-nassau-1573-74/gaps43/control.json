@@ -1,0 +1,46 @@
+{
+ "null": {
+  "seed": 0,
+  "start": 1.0,
+  "recovery": 0.060024009603841535,
+  "perturbed": 0,
+  "repaired": 0,
+  "false_moves": 89,
+  "cost": 18.099999999999643,
+  "word_share": 0.9975990396158463
+ },
+ "seeds": [
+  {
+   "seed": 1,
+   "start": 0.8823529411764706,
+   "recovery": 0.04561824729891957,
+   "perturbed": 19,
+   "repaired": 0,
+   "false_moves": 73,
+   "cost": 17.69999999999988,
+   "word_share": 0.9975990396158463
+  },
+  {
+   "seed": 2,
+   "start": 0.8211284513805522,
+   "recovery": 0.062424969987995196,
+   "perturbed": 19,
+   "repaired": 1,
+   "false_moves": 70,
+   "cost": 17.599999999999685,
+   "word_share": 0.9975990396158463
+  },
+  {
+   "seed": 3,
+   "start": 0.7683073229291717,
+   "recovery": 0.05402160864345738,
+   "perturbed": 19,
+   "repaired": 2,
+   "false_moves": 73,
+   "cost": 17.600000000000193,
+   "word_share": 0.9975990396158463
+  }
+ ],
+ "gate": false,
+ "key_full_word_share": 0.9315726290516206
+}
