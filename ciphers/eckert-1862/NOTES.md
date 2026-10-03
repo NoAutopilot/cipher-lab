@@ -211,9 +211,41 @@ access item 3, so this is a presence/absence search, not a page-cited one).
   of that date; the negative is conditional on the query set above.
 - Requests: archive.org advancedsearch 1, be-api.us.archive.org 40. No vision, no subagents.
 
+## GAPS113-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: the Verdict's cheapest step -- grep OR ser. I vols. 9-12 (IA full text) for the mssEC 15 residue. Script:
+`print/or_match.py` (word 5-grams shared between each ledger page's volunteer transcription and each OR volume's
+`_djvu.txt`; a 5-gram occurring more than 8 times across the volumes is a formula and ignored; a page/volume pair is
+reported at >= 6 distinct 5-grams in one 400-word block). Output: `print/or_matches.tsv` (pointer, page title, ledger
+head line, IA volume, OR page from the running head, gram count, 45 words of OR context). Inputs not committed: the
+172 page texts (re-harvested 3 Oct 2026 from the CONTENTdm `text` field, 171 fetched, the front cover failed; 161 carry
+text) and the OR text (re-fetch from the IA identifiers below).
+- Volumes: ser. I vol. 9 `warofrebellion09secrrich`; vol. 10 pts 1-2 `1warofrebellion10secrrich`,
+  `2warofrebellion10secrrich`; vol. 11 pts 1-3 `1/2/3warofrebellion11secrrich`; vol. 12 pts 1-3
+  `1/2/3warofrebellion12secrrich`; plus vol. 7 `warofrebellionco0007vari` as the positive control.
+- Positive control (same script, same threshold): of the nine known telegrams printed in vol. 7 (T1-T4, T6-T10; T5 is
+  vol. 8, not fetched), all nine are found, with 12-88 shared 5-grams, and the OR page from the running head agrees with
+  reading.md for T1 584, T2 591, T3 593, T6 608, T7 626, T8 624 (T4 938 vs 937, a page-break offset). Null side: vol. 7
+  against ledger pages after March 1862 (which vol. 7 cannot print) shares at most 3 5-grams; the threshold of 6 sits
+  above that.
+- Found: 101 of the 161 ledger pages with text share >= 6 5-grams with a printed telegram in vol. 7 or vols. 9-12.
+  Vols. 9-12 alone: 69 pages (pointers 5010-5118, 21 Feb-21 July 1862): vol. 9 3 pages, vol. 10 pt 1 2, pt 2 5,
+  vol. 11 pt 1 8, pt 3 33, vol. 12 pt 1 13, pt 3 27 (a page can match more than one volume, e.g. a telegram the OR
+  prints twice). Examples: 5049 (13 Mar 1862, "Andes Irving having considered the plan of operations", OR vol. 11 pt 3,
+  the President's directions to McClellan); 5082-5083 (16 June, "For Arctic Your dispatch of yesterday reminding me
+  of a supposed understanding", Lincoln to Fremont, vol. 12 pt 1); 5117 (July, "Let him sieze guides in the country",
+  vol. 12 pt 3). Vol. 7 also matches 32 pages (4963-5037), 23 more than the ten read in section 4.
+- Not found (below 6 5-grams in every volume): 60 of the 161 text pages. A page match means at least one entry on the
+  page is printed, not every entry on it; the unmatched entries are the residue that stays without known plaintext.
+- What this means (rule 10 wording): for the matched entries the plaintext is already in print (Official Records,
+  1882-85); the folder would add the code-word alignment and the ledger's time words, as for the ten. No reading or
+  key change was made in this step; key.md, reading.md and decode.py are untouched.
+- Requests: hdl.huntington.org 173 (one object record + 172 page texts, 1.6 s apart, one empty reply on the front
+  cover); archive.org 13 (3 advancedsearch, 10 `_djvu.txt`). No vision, no subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
-- residue entries of mssEC 15 (about 290) - blocker: not-attempted; no transcription of them is committed and their dates and recipients are not listed on disk (section 5); next: grep OR ser. I vols. 9-12 (IA full text) for Washington-sent telegrams of Feb-July 1862 and match them to the volunteer transcription of the residue pages, ~$1.5
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; OR print step done 3 Oct 2026 (GAPS113): 101 of 161 text pages carry at least one entry printed in OR vols. 7 or 9-12 (`print/or_matches.tsv`, positive control 9/9 known, null <= 3 grams); next: align the matched entries to the OR text to fix code words and read them (`tools/interlinear_align.py` or a word diff per entry, then decode.py/key.md), one volume part at a time starting with vol. 11 pt 3 (33 pages), ~$3
 - residue code words not fixed by any known plaintext - blocker: open-codes; about 60 distinct words seen in the first 60 pages, 31 fixed (section 5); only more print matches narrow the rest
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
 
@@ -221,8 +253,8 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [ ] siblings: received ledgers mssEC 01-03 may show code words resolved (section 5 (b)); not yet read for that
 - [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
 - [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
-- [ ] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 next
-- [ ] key-rebuild: extend the code-word table from new print matches (needs the print step first)
+- [x] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 grepped 3 Oct 2026 (GAPS113): 69 ledger pages matched there, 32 in vol. 7 (101 of 161); vols. 8 and 51 pt 1 not fetched
+- [ ] key-rebuild: extend the code-word table from the 101 matched pages (print step done 3 Oct 2026); next gap 1's alignment
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 3 internal gaps; cheapest next: grep OR ser. I vols. 9-12 for Washington-sent telegrams of Feb-July 1862, ~$1.5
+Verdict: keep going: 3 internal gaps; cheapest next: align the OR-matched entries of vol. 11 pt 3 (33 ledger pages, print/or_matches.tsv) to their printed text and fix the code words they carry, ~$3
