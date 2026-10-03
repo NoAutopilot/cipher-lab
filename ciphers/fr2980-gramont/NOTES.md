@@ -974,6 +974,22 @@ elsewhere. The default `test_f30r_top.py` run (L01, L02, L11, L12 hypotheses) ha
 **Where not searched:** no phrase or print search on the changed text. Novelty is not classified (rule 10).
 Requests this pass: none to any host. Vision calls: 7 (by this worker; no subagents).
 
+## Round 3 of the f.30r hidden-sign test, ehx = T in the base (A2-GRA4, account 2, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-gra4.md` (the Verdict's cheapest next step). Intake gate before work
+(`python3 tools/intake_gate_check.py fr2980-gramont`): `fr2980-gramont: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0.
+
+**Pre-registered, 04:36 UTC 3 Oct 2026, before running.** `test_f30r_top.py --round3` runs the default sign list (ss2, zb, Af, E,
+Tb, eh, CROSS, A2, HASH, B8, INF, TRI, ev, nn, q, q@L07) on the current base (key.tsv + key_extension_f30.tsv, which now carries
+ehx = T and the two c recodes through ciphertext_f30.tsv), skipping any code with no occurrences left after the split, plus
+ehx itself at its current value T. Same model, candidates, shuffled-position control (100 draws, matched on n), seed and
+acceptance rule as the 24 Sept and A2-GRA3 runs, unchanged: best differs from current, margin >= 10 bits, p <= 0.01,
+recovery >= 0.9, n >= 5, outside delta >= 0 and at most a quarter of outside occurrences lose > 3 bits. A sign enters the
+base only if it clears that rule; nothing else changes the key. Output to `test_f30r_top_round3.tsv` (round 2's
+`test_f30r_top.tsv` is kept as is), and the per-occurrence T-minus-D scores for ehx to `ehx_occ_round3.tsv`, whose three
+outside occurrences losing > 3 bits are then checked by eye on their committed crops (`crops/f30_split/`).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, 3 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them

@@ -6,6 +6,9 @@ control. Section "f.30r L01, L02, L11, L12 (24 Sept 2026)" in NOTES.md.
   python3 test_f30r_top.py --round1   the same run without the OVERRIDE rows it produced (test_f30r_top_round1.tsv)
   python3 test_f30r_top.py --split split_f30.tsv   recode the shape split in memory, test eh (f.29r), ehx and the three
                                       cross shapes only, write test_f30r_split.tsv (A2-GRA3, 3 Oct 2026)
+  python3 test_f30r_top.py --round3   the default signs on the current base (ehx = T in it), codes with no occurrences
+                                      skipped, plus ehx at T; writes test_f30r_top_round3.tsv and ehx_occ_round3.tsv
+                                      (A2-GRA4, 3 Oct 2026); test_f30r_top.tsv and linescore_f30r_top.tsv untouched
   python3 test_f30r_top.py --help     this text
 
 Base reading = key.tsv + key_extension_f30.tsv (the extended reading). Scoring, window and model are those of
@@ -166,6 +169,10 @@ if __name__ == '__main__':
     if SPLIT:
         SIGNS = ['eh', 'ehx', 'CROSSp', 'CROSS2', 'CROSSo']
         NAMED = {'eh': 'T', 'ehx': 'T', 'CROSSp': 'C', 'CROSS2': 'LL', 'CROSSo': 'C'}
+    R3 = '--round3' in sys.argv
+    if R3:
+        SIGNS = [sg for sg in SIGNS if occs(sg)] + ['ehx']
+        NAMED['ehx'] = 'D'
     q07 = [(k, i) for k, i in occs('q') if S[k][i][1].startswith('f30r_L07')]
     rows = ['sign\tn\tn_top\tcurrent\tbest\tmargin\tsecond\tp_shuffled\trecovery\tout_delta\tout_lose3\tout_n'
             '\tnamed\tnamed_delta\tnamed_p\tdecision\tcontrol\td_f29\td_f30\td_top']
@@ -198,6 +205,14 @@ if __name__ == '__main__':
                     '' if nd == '' else f'{nd:.1f}', '' if np_ == '' else f'{np_:.3f}', 'accept' if ok else 'reject', CTLKIND[0] if cur not in (None, 'NULL') else 'gaps',
                     *(f'{leaf[g]:.1f}' for g in ('f29', 'f30', 'top')))))
         print(rows[-1], flush=True)
+        if R3 and sg == 'ehx':   # per occurrence: T (current) minus D, outside the four lines marked
+            eo = ['line\tposition\tconfidence\ttop\tT_minus_D']
+            for pp, (k, i) in zip(per, occ):
+                w = S[k][i][1]
+                eo.append(f"{w.split()[0]}\t{w.split()[1]}\t{CONF.get(w, '')}\t{int(line(w) in TOP)}\t{pp['T'] - pp['D']:.1f}")
+            open(os.path.join(H, 'ehx_occ_round3.tsv'), 'w').write('\n'.join(eo) + '\n')
+    if R3:
+        open(os.path.join(H, 'test_f30r_top_round3.tsv'), 'w').write('\n'.join(rows) + '\n'); sys.exit(0)
     open(os.path.join(H, 'test_f30r_split.tsv' if SPLIT else 'test_f30r_top_round1.tsv' if '--round1' in sys.argv
                       else 'test_f30r_top.tsv'), 'w').write('\n'.join(rows) + '\n')
     if '--round1' in sys.argv or SPLIT: sys.exit(0)
