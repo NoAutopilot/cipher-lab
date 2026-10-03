@@ -78,18 +78,19 @@ refetched once), googleapis.com 6, archive.org 1, dspace.ut.ee 2.
 Read so far: 0 of 3 leaves (no transcription). Leaves located NV05B 3 Oct 2026 (f.228 = canvas 235, f.233 = canvas 240, fr.15576 f.2 = canvas 8); key no.54 syllabary on disk (key_no54.tsv).
 - edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
 - key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; NV05B transcribed only the syllabary and header signs (key_no54.tsv, H 94 / M 16 / I 5) within its cap; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
-- target decode (fr.15576 f.2 first, ~350 groups; then fr.15575 f.228, f.233 cipher runs) - blocker: not-attempted; next: iiif_lines.py crops of canvas 8 (btv1b9063777v), 2 blind passes + reconcile, decode_key with key_no54 syllabary, ~$6; nomenclator groups stay unread until the no.54 nomenclator is transcribed
+- target decode fr.15576 f.2 - blocker: not-attempted; NV05D premise test P1 FAILed (the leaf is a 3-digit numeric cipher, K = 0/64 groups in the no.54 syllabary) and the leaf carries a period interlined decipherment; next: transcribe the interlined gloss + the ~25 cipher lines (iiif_lines.py crops, 2 blind passes per batch for cipher and 1 gloss read, + reconcile) and align with tools/interlinear_align.py to rebuild the 3-digit table (grade C), ~$8
+- fr.15575 f.228, f.233 cipher runs - blocker: not-attempted; which system they use is not yet seen at native resolution; next: one native crop each to see whether their groups are 2-digit (no.54 syllabary, decode_key) or 3-digit (the f.2 system), ~$1.5 each
 
 ## Escalation (NV05-CS, 3 Oct 2026)
 
 - [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
 - [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the edition entry names the liasse
-- [ ] known-keys: fr.3995 no.54 located (canvas f188, f.96v-97r), syllabary transcribed and control-checked on fr.3641 f.111r (NV05C, gate PASS); nomenclator and no.31 (canvas f126) still to transcribe
+- [ ] known-keys: fr.3995 no.54 located (canvas f188, f.96v-97r), syllabary transcribed and control-checked on fr.3641 f.111r (NV05C, gate PASS); nomenclator and no.31 (canvas f126) still to transcribe; fr.15576 f.2 is not in this syllabary (NV05D P1) but carries its own period interlined decipherment, a known-plaintext source for its 3-digit system (next: gloss alignment, ~$8)
 - [ ] print: Lefèvre IV and van Durme entries to read in full
 - [n/a] key-rebuild: the period key sheet exists, rebuild not needed yet
 - [x] image-check: native corner crops of the five candidate openings read (NV05B): canvases 235, 240, 8 carry the leaves
 - [n/a] retry: nothing has been attempted yet to retry
-Verdict: keep going: 2 internal gaps; cheapest next: decode fr.15576 f.2 (~350 groups) with the key no.54 syllabary, ~$6 (crops + 2 blind passes + reconcile); then the no.54 nomenclator (~$6) for the code-word groups
+Verdict: keep going: 3 internal gaps; cheapest next: fr.15576 f.2 gloss + cipher transcription and interlinear alignment (~$8, grade C, period known plaintext on the leaf); then one native crop each of fr.15575 f.228/f.233 to see which system they use (~$3); the no.54 nomenclator (~$6) only for leaves in the 2-digit system
 
 ## While waiting
 
@@ -231,3 +232,63 @@ nomenclator is the remaining half of the key, not a fault of the syllabary.
 
 Not done here: no target leaf was read or decoded. Requests: gallica.bnf.fr 3 (2 overviews, 1 native region).
 Next (Verdict above): fr.15576 f.2 decode with this syllabary, ~$6.
+
+## fr.15576 f.2 premise test (NV05D, account-2 worker, LANE-A2PUSH3, 3 Oct 2026 15:18-15:2x UTC)
+
+Folder `f2_fr15576/`. Brief: decode f.2 with key no.54. Intake gate re-run first:
+
+    $ python3 tools/intake_gate_check.py fr15575-syllabic-1592-95
+    fr15575-syllabic-1592-95: blocked (line 1) -- already terminal, nothing to gate
+    exit 0
+
+**What the leaf is.** One 1400 px overview of canvas f8 and one native test crop (both disclosed in the prereg) showed
+two things the brief's premise did not have: (1) the body groups are spaced **3-digit numbers** (201 775 114 553 246 ...),
+not the spaced 2-digit codes 10-99 of the no.54 syllabary used by the control letter fr.3641 f.111r; (2) the leaf carries
+a **period interlined decipherment** in lighter ink over the cipher lines. A 5-line block above the body is in another
+script (letter-like signs), not read. Pre-registration `f2_fr15576/PREREG.md` (commit 04ed8646) was pushed after those two
+looks and before any transcription pass: premise test P1 gates the decode on K = share of numeric tokens that are coded
+rows of key_no54.tsv >= 0.50; P2 = one look at whether the no.54 sheet carries 3-digit codes.
+
+**Crops** (TRANSCRIPTION.md; run before any vision call):
+
+    $ python3 tools/iiif_lines.py --ark btv1b9063777v --canvas 8 --region 5700,1860,2700,560 \
+        --out ciphers/fr15575-syllabic-1592-95/f2_fr15576/images --prefix f2r --centres 80,220,353,493 \
+        --lines-per-crop 1 --max-width 1500 --overlap 150 --top-margin 60 --bottom-margin 50 --debug
+    ... region 2700x560, 4 lines, 4 bands x 2 segments ... wrote 8 crops
+
+**Reads.** Two blind Sonnet passes of body lines L01-L04 (passA.tsv, passB.tsv; one call each on the 8 crops, gloss
+ignored). err_2reader = 1/72 on digits (0.014), 3/72 counting marks (0.042) -- agreement of two runs of one model, not
+accuracy. Reconciled by the worker on the crop: L03 first group read 266 (pass B 766; the first digit is 2-like under a
+dieresis, M), marks kept as pass A. Signs read: 72 tokens (~210 digits).
+Reconciled text `f2_fr15576/ciphertext_L01-04.tsv`.
+
+**P1** (`python3 f2_fr15576/p1_check.py`, p1.tsv; `--check` exit 0):
+
+| statistic | value |
+|---|---|
+| numeric tokens L01-L04 | 64 (63 of 3 digits, 1 of 4: '1502') |
+| tokens that are no.54 syllabary codes (10-99) | **0** |
+| K | 0.000 -- gate (K >= 0.50) **FAIL** |
+
+Per the prereg, no decode.json, no judge run (es17a would have been the corpus: 1590-1625 Spanish state prose, the
+nearest era match on disk) and no shuffled-key or shuffled-order control were run: a decode that is all U cannot be
+judged, and its controls could not differ from it (rule 3, the bCAS/AX-5799 non-test shape). This is a premise
+result, not a negative on key no.54 (which passed its own control on fr.3641) nor on the leaf.
+
+**P2** (one overview look at fr.3995 canvas f188, y 1600-6055, at 1600 px): the no.54 nomenclator gives code words
+mostly as 3-letter groups (en -- xel, estados -- vul, fin -- dam, francia -- gam, fuerza -- gim ...) plus a few marked
+2-digit numbers and a handful of 70x-like entries (Size 705?, Sizo 707?, que 70+? -- overview size, not eye-checked).
+3-digit numbers across the 100-964 range the target uses were **not seen**. So f.2 is in a different numeric system from
+the no.54 sheet as transcribed, whatever Tomokiyo's grouping says; which system is not identified here.
+
+**What the gloss says (interpretation, not a reading; faint fragments seen on the four crops, not transcribed or
+checked):** over L01-L04 the clerk's interlining runs roughly "dixe a V.M. en una de ... sobre ... con el conde de
+Fuentes / se quedaua apercibido para ir a la frontera ... / Francia a tomar a su cargo ... que ha ... / que le tengo ...
+alla ... inmouible por esto ... de la ...". In English, roughly: "I told Your Majesty in one of [my letters] ... with the
+Count of Fuentes ... [he] was ready to go to the frontier ... of France to take charge ... which I hold ... immovable on
+this ...". That fits the van Durme calendar entry quoted above (5 Jan 1595: Fuentes refusing to take command of the
+royal army in France); it is consistent with the leaf being that dispatch, not proof.
+
+**Not done:** no decode; lines L05 onward, the 5-line top block, the gloss transcription. Requests: gallica.bnf.fr 7
+(1 overview + 1 info.json + 1 test crop + 1 native region + 1 recheck crop of f8, 1 overview of fr.3995 f188, the
+iiif_lines fetch counted in the native region). Next: see Verdict above (gloss alignment, grade C, ~$8).

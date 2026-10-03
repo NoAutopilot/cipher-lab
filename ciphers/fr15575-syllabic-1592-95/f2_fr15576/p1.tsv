@@ -1,0 +1,8 @@
+numeric_tokens	64
+in_key_no54_syllabary	0
+K	0.000
+digit_lengths	3,4
+gate_K>=0.50	FAIL
+aligned_tokens_AB	72
+err_2reader_digits	1/72=0.014
+err_2reader_incl_marks	3/72=0.042
