@@ -121,3 +121,67 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH16, account-4, 3 Oct 2026)
+
+- Web: `"van Spaen" "van der Goes" 1808 Düsseldorf cijfer brief` -- Leiden thesis on Van der Goes van Dirxland
+  (scholarlypublications.universiteitleiden.nl item 2948775), **E.J.T.A.M.A. Smit, *De oude Kleefse enklaves en hun
+  overgang naar Gelderland, 1795-1817* (diss. Nijmegen 1975, repository.ubn.ru.nl hdl 2066/147708)**, NA inventories
+  3.20.16/3.20.17 (Van der Goes family papers), Wikipedia. No decipherment or plaintext of R1941 in any of them; Smit read
+  below.
+- Web: `Nationaal Archief 2.01.08 inv. 281 Spaen Riemsdijk Zevenaar gecedeerde districten cijferschrift` -- unrelated NA
+  inventory PDFs only.
+- Web: `DECODE R1941 Spaen Voorstonden cipher 1808 "partially decrypted"` -- only Bourdeau's index ("attempted but not
+  deciphered ... 303 groups of a plain code reaching 1339").
+- Web (descriptive title): covered by the first query; nothing else.
+- Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Spaen OR "van der Goes" OR "Koninkrijk Holland" 1808` --
+  "Wer löst diese Verschlüsselungen aus dem Jahr 1808?" (14 Feb 2016) is a crypto book's printed puzzles, and the
+  Van-Gelder-Kryptogramm (Top-25 no. 10) is Dedem van Gelder at Constantinople, Feb 1809 -- different items; nothing on
+  Van Spaen / Van der Goes.
+- Cryptiana blog: `site:cryptiana.blogspot.com Dutch cipher 1808 OR "Kingdom of Holland" OR Spaen` -- forum index pages
+  (Sept 2025, Henry IV 1590) only; local `sources/cryptiana/web/dutch.htm` already read 24 Sept (different Van Spaen, 1800).
+- Cipher Mysteries: `site:ciphermysteries.com Spaen OR "van der Goes" OR "Kingdom of Holland" cipher` -- Willen Styn and
+  Van Heeck posts, unrelated.
+- Solver repositories, fresh clones 3 Oct 2026: dbourdeau/cyphersolver 841111b (2 Oct) `targets/spaen1808/NOTES.md`
+  still reads "The letter is still unread: DECODE has no key for this code and nothing is in print ... 'attempted, open'";
+  aaymeloglu/unsolved-ciphers d2800bb (27 Sept): no target, no write-up naming Spaen or R1941.
+
+## Premise check (GF4-BATCH16, account-4, 3 Oct 2026)
+
+- (a) Folder's own mentions of a decipherment: **found, not located.** DECODE's record note says the 15 Jan annex "is
+  solved" and sets R1941 to "Partially decrypted"; Bourdeau (quoted above) saw no decipherment on the images and no
+  document attached. Nobody has yet listed the record's DocumentsList while logged in (csNA had no login; Bourdeau's
+  check is his). Open until a logged-in DECODE pass lists R1941's documents.
+- (b) Other solvers' working files: Bourdeau's `targets/spaen1808/` holds `transcription.txt`, `letter_groups.txt`,
+  `annex_groups.txt`, `profile.json`, `decode/` -- a transcription and a profile, no rendering, no key applied beyond
+  R1035 Croiset 1803 ("word salad"). Not found: no reading. Aymeloglu: none.
+- (c) Physical neighbours: **found, not yet viewed.** NA 2.01.08 inv. 281 is fully scanned and public: the inventory page
+  (www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/281, fetched 3 Oct 2026) carries 360 scans,
+  NL-HaNA_2.01.08_281_0001.jpg to _0360.jpg, each with a service.archief.nl IIIF info.json -- the whole file of the
+  commissioners' letters, Jul 1806 - May 1809, not only DECODE's four photos of photocopies. The leaves around the
+  14-15 Jan 1808 letter (a ministry decipherment slip, a clear draft, a later letter repeating its content) were not
+  located in this pass: four sample scans at 700-900 px (IIIF `full/700,/0`) show the file is not in strict date order --
+  _0130 a blank leaf and a P.S. in clear; _0160 a letter ending "Uwe Excellentie ... [signed] van Spaen" in clear (left)
+  and Arnhem 8 March 1808 to the Landdrost of Gelderland (right); _0180 Utrecht 3 February 1808 to the King, in clear,
+  naming "den Heer van Spaen van Voorstonde" and the commissioners at Wesel, beside a Ministerie van Financiën cover
+  "Ingekomen ... 1808, No. 33". So the file runs at least Feb-Mar 1808 around scans 160-180, in clear, and confirms the
+  Voorstonden identity used in this folder. Stopped at four images (per-unit cap); the Jan 1808 leaves remain to find.
+- (d) Recipient side: the recipient's edition is Colenbrander Gedenkstukken V (BuZa), read 24 Sept (letter absent).
+  Smit 1975 (above; pdftotext of the repository PDF, whole-volume grep for januari 1808, Spaen, Düsseldorf, cijfer,
+  chiffre, ontcijfer): Hoofdstuk III-B pp. 59-62 narrates the commissioners' Dec 1807 - Jan 1808 position from
+  A.R.A. B.Z. (1795-1810) 281 (notes 1-3, 8) with Arnhem and Düsseldorf files -- Van Spaen kept "aan het lijntje" by
+  Agar, Murat's instruction of 7 Jan received at Düsseldorf on 13 Jan, Van Spaen joining Van Riemsdijk at Wesel on
+  12 Jan, his confidential note to Agar on conscription in the enclaves the same day. No cipher, decipherment or
+  quotation of the 14-15 Jan letter; "cijfer" occurs only as population figures. Not found as a decipherment; useful
+  as context for a later reader. Smit names the commissioner J.F.W. van Spaen van Biljoen (1746-1827) in his 1802-03
+  chapters; this folder and Bourdeau read the 1808 signature as "G. C. van Spaen", and scan _0180 names "van Spaen van
+  Voorstonde" in Feb 1808 -- which Van Spaen signed R1941 is for the image reader, not settled here.
+
+Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart), repository.ubn.ru.nl 1 (PDF), github.com 2 clones (shared), WebSearch 6.
+
+## While waiting (GF4-BATCH16, account-4, 3 Oct 2026)
+
+Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
+- Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public) at thumbnail size to locate
+  the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
+  or a ministry gloss (premise (c)); then one logged-in DECODE pass listing R1941's documents (premise (a)). S.
