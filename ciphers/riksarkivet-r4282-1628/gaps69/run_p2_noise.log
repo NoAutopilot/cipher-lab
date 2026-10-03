@@ -1,0 +1,10 @@
+family periodic_masc: periodic general substitution: P independent monoalphabetic alphabets in rotation (own signs via homophonic_anneal.py; --param period=P required)
+spec ciphers/riksarkivet-r4282-1628/gaps69/spec_gaps69.json slug riksarkivet-r4282-1628
+ciphertext: 32 message(s), N=1090 signs, K=34 distinct, tokens=tsv
+corpora: tools/data/la17/hugonisgrotiiepi00grot.txt.gz, tools/data/la17/hugonisgrotiiad00oxengoog.txt.gz, tools/data/la17/bub_gb_WTkBFjX6G_UC.txt.gz, tools/data/la17/bub_gb_FK3cWikzFwsC.txt.gz, tools/data/la17/bub_gb_mBpUAAAAcAAJ.txt.gz, tools/data/la17/epistolaecelebe00grotgoog.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params period=2,noise=0.034
+row -> ciphers/riksarkivet-r4282-1628/HYPOTHESES.md; decode -> ciphers/riksarkivet-r4282-1628/families/periodic_masc-1-period=2,noise=0.034-gaps69controltar.txt
+CONTROL seed 1: N=1090 K=42 recovery 0.002 score -2593.27
+CONTROL seed 2: N=1090 K=43 recovery 0.146 score -2576.36
+CONTROL seed 3: N=1090 K=43 recovery 0.156 score -2576.90
+CONTROL BELOW GATE: mean 0.101 < 0.6; target not run; row appended to ciphers/riksarkivet-r4282-1628/HYPOTHESES.md

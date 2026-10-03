@@ -103,6 +103,14 @@ def main():
     assert seq_cont3[151].endswith("#" + str(151 % 3))
     assert seq_restart3[151].endswith("#0")
 
+    # (6) noise=p (GAPS69): about p of control tokens redrawn, same N, signs from the clean control's own inventory
+    pn = dict(params); pn["noise"] = 0.2
+    nm, nplain, _ = pm.make_control({"slug": "test"}, 2, corpora, pn)
+    flat_c, flat_n = [x for m in cm for x in m], [x for m in nm for x in m]
+    assert nplain == cplain and len(flat_n) == N and set(flat_n) <= set(flat_c)
+    changed = sum(a != b for a, b in zip(flat_c, flat_n)) / N
+    assert 0.05 < changed < 0.25, changed
+
     print(f"ok periodic_masc: control K={K} (collapsed etao), P=3 recovery {acc:.3f}; {time.time() - t0:.0f}s")
 
 

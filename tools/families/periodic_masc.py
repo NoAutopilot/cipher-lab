@@ -16,7 +16,10 @@ that many signs each -- one key per coset, same N, K, P and language as the targ
 
 params: period=P (required, no default -- the runner passes it explicitly per the brief's P in 6/7/8 sweep),
 iters (default 40000), order (3), uni_weight (1.0), continuous (as periodic_vigenere: key phase runs on across
-message boundaries unless the spec gives separate {groups} messages or --param continuous=0/1 overrides)."""
+message boundaries unless the spec gives separate {groups} messages or --param continuous=0/1 overrides),
+noise=p (GAPS69, 3 Oct 2026, riksarkivet-r4282-1628: a share p of control tokens redrawn from the control's own
+token stream, frequency-weighted, ignoring coset -- a misread sign is still a sign from the same inventory -- so
+the control runs at the target's measured transcription error, CLAUDE.md rule 3 SALV-DIAG paragraph; default 0)."""
 import random
 import homophonic_anneal as ha
 from families import draw_window
@@ -79,6 +82,11 @@ def make_control(spec, seed, corpora, params):
             seg.append(keys[j % P][a])
         msgs.append(seg)
         pos += n
+    noise = float(params.get("noise", 0) or 0)
+    if noise:  # GAPS69 3 Oct 2026: see module docstring
+        nrng = random.Random(seed + 9000)
+        flat = [x for m in msgs for x in m]
+        msgs = [[nrng.choice(flat) if nrng.random() < noise else x for x in m] for m in msgs]
     return msgs, plain, [rest]
 
 
