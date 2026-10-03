@@ -643,3 +643,82 @@ Step run: the GAPS78 next step, verbatim "--only-lines 4,5,6 same command + 2 pa
   Add one targeted own look per round at the unkeyed lumped classes (dff, cursive-H, e-curl, tall-8, h-bar) to split them.
   About 6 rounds remain for p2. The test against 1127 waits on its image (REQUEST.md).
 - Hosts: resources.huygens.knaw.nl 1 request. Subagents: 2 (Opus), 9 crops each, no full page sent; own looks: 2 crops.
+
+## GAPS86-willem-van-hessen-1567 (3 Oct 2026, account-4): holding catalogue record for 1127 read; print check; request route found
+
+Intake gate at start: `willem-van-hessen-1567: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+- **Holding institution's own catalogue record (read 3 Oct 2026, about 10:50 UTC).** The Koninklijke Verzamelingen
+  publish the KHA inventory A11 online. The record for this letter is
+  https://www.koninklijkeverzamelingen.nl/archief/a/a11/a11-xiv/a11-xivb/a11-xivb-15-43/ ("A11-XIVb-15-43", "Van Willem
+  van Hessen", "28 januari 1567", "1 stuk", archiveLocation "Koninklijk Huisarchief, Den Haag"). Its content note is
+  "Voor het digitale exemplaar en een nadere beschrijving zie de website van het Huygens ING:
+  http://resources.huygens.knaw.nl/wvo/app/brief?nr=1127".
+  - **Availability flag, quoted from the record's page data:** `"scans":[]`, `"scansThumbnails":[]`. In the parent
+    listing (`/archief/a/a11/a11-xiv/a11-xivb/`) the same item reads `"scans":0`, `"hasDirectScans":false`.
+  - The record's zip-download URL (`cms.koninklijkeverzamelingen.nl/api/archive/download-images/17329.zip`) answers
+    HTTP 302 with 0 bytes. No image of the original is online at the holder.
+  - The WVO record it points to was re-read the same day (HTTP 200). It still lists only the Marburg minuut PDF; the
+    KHA original row (A 11/XIV B/15-43, origineel) has no PDF. The only scanned items in the whole A11-XIVb series
+    (376 listed) are 09-06, 09a-03 and 39-02, none of them from Hessen.
+  - The record names its request route: `archiveUsageRequestPage` = https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen/
+    ("Archiefonderzoek doen"). It says requests to consult the archives go to the director of the Koninklijke
+    Verzamelingen through the "toestemmingsformulier".
+  - That form (https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen/toestemmingsformulier/,
+    "Aanvraag inzage archieven") is for archives dated before 7 Sept 1948 and for scholarly research. It submits to
+    **info@koninklijkeverzamelingen.nl** (the form's own `submissionEmail`). Its success text promises a reply within
+    3 weeks. Its fields include "Benoem hier, indien bij u bekend, de gewenste archieven en inventarisnummers" (name the
+    archives and inventory numbers, if you know them).
+  - The postal address on the request page is Koninklijke Verzamelingen, Postbus 30412, 2500 GK Den Haag.
+  - This is the public address that ASKS 31 and `outreach/kha-hessen-1567-request.md` recorded as missing on 26 Sept
+    2026. That pass had tried the koninklijkhuis.nl paths, not koninklijkeverzamelingen.nl.
+  - The form asks for a visit permit. A scan request without a visit is a question the email has to ask; the page does
+    not say whether remote reproductions are supplied.
+- **Print check for 1127's ciphertext or a decipherment.**
+  - Groen van Prinsterer, Archives 1e s. t.III (archive.org `archivesoucorre04housgoog`), IA full-text search (be-api):
+    "Riedesel" 0 hits, "Riedesell" 0 hits. Control "Grumbach": 1 hit ("écrit au Prince touchant le Duc de Saxe et
+    Grumbach"), as on file. The head line's earlier finding (the letter is absent from that volume) stands.
+  - Rommel, *Neuere Geschichte von Hessen* Bd 1 (= Geschichte von Hessen 5, 1835; BSB copy on IA `11686813bsb`,
+    full-text search). This is the gap the 24 Sept 2026 sweep flagged as unread.
+    - Controls: "Hessen" hit; "Grumbach" hit (the Landfriedensbrecher passage); "Oranien" hit (Anna, the 1568 Reuter).
+    - "Riedesel" hits, but none of the returned snippets names Volpert. "Ziffer", "Ziffern", "Chiffre" and
+      "Geheimschrift" each return 0.
+    - The Google-scan copy `bub_gb_c4AAAAAAcAAJ` returns 0 for every term including "Hessen", so it is not
+      full-text indexed and was not used.
+    - Result: no printed decipherment or cipher passage of 1127 found in this volume by this method. The volume's text
+      was not read page by page.
+  - Google Books API (with `country=US` and the key): "Demnach sich itzo eben zugetragen" (the WVO incipit) gave 29
+    results; "Volpert Riedesel" gave 237 results; "E.L. Diener Volpert" gave 33. The top results were all genealogy,
+    18th-century tracts or noise, and none was this letter. "Riedesel Oranien 1567 Gotha" and
+    "Landgraf Wilhelm Oranien 1567 Geheimschrift Ziffern Brief" both gave 0.
+  - Huygens retroboeken: the WVO's companion volume (retroboeken/wvo) is the edition's introduction, not a letter
+    edition. WVO itself prints no text of 1127, only the summary, incipit and Opmerkingen ("onopgelost
+    cijferschrift").
+  - Not found in print by these searches. Status word unchanged (`open`). Not found-solved.
+- **Ciphertext reachable?** No. 1127's ciphertext exists only in the KHA original, and the holder's own record shows
+  no scans. REQUEST.md was updated with the route and the exact request. ASKS 31's status cell was refreshed to point
+  at it (no new row).
+- Hosts: www.koninklijkeverzamelingen.nl 7 requests (one 404, `/contact/`); cms.koninklijkeverzamelingen.nl 1;
+  resources.huygens.knaw.nl 1; www.googleapis.com 6; archive.org 1 (advancedsearch); be-api.us.archive.org 20.
+  All requests were at least 2 s apart, one at a time. Vision calls: 0. Subagents: 0.
+
+## Remaining gaps (GAPS86, 3 Oct 2026)
+Read so far: 0 of the target's cipher signs (the target's ciphertext is not on disk; sibling 1069's key has 42 classes, H 150 M 52 of 202 glossed signs, GAPS80)
+- 1127 cipher passage (KHA A11-XIVb-15-43, original) - blocker: waiting-on ASKS row 31 (KHA scan request via info@koninklijkeverzamelingen.nl / the toestemmingsformulier); the holder's own record shows `"scans":[]` (GAPS86 above), no print carries it, so there is nothing to apply the 1069 key or the minuut crib to
+- 1127 loose enclosed note ("los bericht" inside the original, WVO Opmerkingen) - blocker: waiting-on ASKS row 31 (same KHA item, same request); unimaged with the letter
+
+## Escalation (3 Oct 2026)
+- [x] siblings: 174 and 1069 fetched and eye-checked (OX-WVH); 1069 period-gloss key rebuilt to 42 classes (GAPS78, GAPS80); extending it to p2 lines 7-24 is preparation, not a read of the target (see While waiting)
+- [x] clear-pages: the Marburg minuut (WVO 01127.pdf, 4 pp.) viewed in full, plain text only with no cipher spans (A2-WVH); it is the crib once the original arrives
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv on file; neither can be applied without the target ciphertext
+- [x] print: Groen III full-text (head line, GAPS86), Rommel Neuere Geschichte Bd 1 full-text (GAPS86), Google Books phrase queries (GAPS86), WVO record (GAPS86) -- no printed ciphertext or decipherment found
+- [n/a] key-rebuild: no target ciphertext exists on disk to rebuild a key against
+- [x] image-check: holder's own catalogue record read and quoted, `"scans":[]` and the zip endpoint empty (GAPS86); WVO lists no PDF of the original
+- [n/a] retry: no attempt on the target has been made that could be retried
+Verdict: parked: every gap has an outside blocker (ASKS row 31, the KHA scan request)
+
+## While waiting
+
+- The one action that depends on nobody: transcribe the Marburg minuut's clear text (01127.pdf pp.2-4, about 75 lines of
+  Kurrent; line crops with `tools/iiif_lines.py --image`, 2 blind passes + 1 reconciliation per crop set), so the crib is
+  ready the day the KHA image arrives. Alternative, also independent: extend the sibling 1069 key with `--only-lines 7,8,9`
+  (GAPS80's command), about 2 vision calls a round.

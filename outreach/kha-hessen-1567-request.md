@@ -1,5 +1,5 @@
-status: blocked: no public address found (checked 26 Sept 2026, twice: NOTIFY.md 17:58-18:00 UTC and this pass ~18:57 UTC, both koninklijkhuis.nl/onderwerpen/contact and koninklijkhuis.nl/onderwerpen/koninklijk-huisarchief return HTTP 404); route via ASKS 67 (Huygens Instituut dr. Huysman already asked, 24 Sept 2026, for the Koninklijk Huisarchief route)
-to: (none -- no public contact page or address located for the Koninklijk Huisarchief, Den Haag)
+status: needs-draft (3 Oct 2026, GAPS86): a public route now exists -- see ciphers/willem-van-hessen-1567/REQUEST.md "Update, 3 Oct 2026"; the 26 Sept "no address" finding below covered koninklijkhuis.nl only
+to: info@koninklijkeverzamelingen.nl (the submissionEmail of the Koninklijke Verzamelingen "Aanvraag inzage archieven" form, https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen/toestemmingsformulier/, read 3 Oct 2026)
 subject: (not drafted; no address to send to)
 target: ciphers/willem-van-hessen-1567 (ASKS 31: A 11/XIV B/15-43)
 
