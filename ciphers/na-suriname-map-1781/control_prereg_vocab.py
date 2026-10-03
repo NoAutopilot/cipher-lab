@@ -37,7 +37,10 @@ def hits(S, k):
                 if all(w[j] in opts[i+j] or (w[j] in 'ijy' and opts[i+j] & set('ijy')) for j in range(L)): n += 1
     return n
 k = keymap(sys.argv[2] if len(sys.argv) > 2 else 'key_period_codes.tsv')  # arg 2 (key file) added GAPS14 after pre-registration; vocab and statistic unchanged
-S = seqs('ciphertext_2039_legend.tsv') + seqs('ciphertext_2061_battery.tsv')
+# arg 3 (GAPS18, 3 Oct 2026, added before the 2046 file existed): comma-separated ciphertext files to score instead of the
+# default 2039 legend + 2061 block; vocab, statistic, nulls and seed unchanged.
+CT = sys.argv[3].split(',') if len(sys.argv) > 3 else ['ciphertext_2039_legend.tsv', 'ciphertext_2061_battery.tsv']
+S = [s for f in CT for s in seqs(f)]
 real = hits(S, k)
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 rng = random.Random(14)
