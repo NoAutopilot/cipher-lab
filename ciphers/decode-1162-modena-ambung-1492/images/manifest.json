@@ -1,11 +1,59 @@
 {
-  "record": "DECODE R1162, State Archives of Modena, Amb. Ung. b.2/20 no.6, Ferrara, 1492",
-  "fetched": "24 September 2026",
-  "fetch_method": "tools/decode_browser_login.js (one login), --fetch-page RecordsView/1162 with auto-discovered /decrypt-custom/filesrv attachment links",
-  "images": [
-    { "file": "TH_IMG_R1162_I5837_P1.png", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5837_P1.png", "bytes": 106437, "sha1": "5ca8a9c4d5b577af42e4ff4367448932ace9e3d0", "date": "24 September 2026" },
-    { "file": "TH_IMG_R1162_I5838_P2.png", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5838_P2.png", "bytes": 96669, "sha1": "3535d289d7fc738afac2fd9f19becc002aee78bd", "date": "24 September 2026" }
-  ],
-  "documents": [],
-  "documents_note": "The record's one attached document (id 3593, title SAMo_Amb_Ung_b_2_20_6, category Transcription) could NOT be fetched: /decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt returns HTTP 200 with Content-Disposition: inline; filename=\"forbidden.png\" -- a fixed 986x568 PNG placeholder (sha1 035489a0605851154ab88372216354b63596ca22), byte-identical whether requested with or without an authenticated session (tested inside the logged-in Playwright browser context via ctx.request.get, and again with plain curl plus a Referer/Accept header). This account cannot retrieve this document via filesrv; see NOTES.md."
+ "record": "DECODE R1162, State Archives of Modena, Amb. Ung. b.2/20 no.6, Ferrara, 1492",
+ "fetched": "24 September 2026",
+ "fetch_method": "tools/decode_browser_login.js (one login), --fetch-page RecordsView/1162 with auto-discovered /decrypt-custom/filesrv attachment links",
+ "images": [
+  {
+   "file": "TH_IMG_R1162_I5837_P1.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5837_P1.png",
+   "bytes": 106437,
+   "sha1": "5ca8a9c4d5b577af42e4ff4367448932ace9e3d0",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R1162_I5838_P2.png",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5838_P2.png",
+   "bytes": 96669,
+   "sha1": "3535d289d7fc738afac2fd9f19becc002aee78bd",
+   "date": "24 September 2026"
+  }
+ ],
+ "documents": [],
+ "documents_note": "The record's one attached document (id 3593, title SAMo_Amb_Ung_b_2_20_6, category Transcription) could NOT be fetched: /decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt returns HTTP 200 with Content-Disposition: inline; filename=\"forbidden.png\" -- a fixed 986x568 PNG placeholder (sha1 035489a0605851154ab88372216354b63596ca22), byte-identical whether requested with or without an authenticated session (tested inside the logged-in Playwright browser context via ctx.request.get, and again with plain curl plus a Referer/Accept header). This account cannot retrieve this document via filesrv; see NOTES.md.",
+ "fullsize_3oct": {
+  "fetched": "3 Oct 2026 14:21 UTC, MOD1162 (account-2 worker), one tools/decode_browser_login.js login (--fetch-page ImagesList,DocumentsList --fetch DOC_R1162_D3593_3593.txt --guess-fullsize --max-files 6 --delay 1800)",
+  "note": "after the 28 Sept access extension the full-size PNGs and document 3593 are served (no forbidden.png). Full PNGs kept in the session scratchpad only; committed s_*.jpg = 1400 px long side, JPEG q80.",
+  "files": [
+   {
+    "source_file": "IMG_R1162_I5837_P1.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1162_I5837_P1.png",
+    "px": [
+     2592,
+     3888
+    ],
+    "bytes": 8774991,
+    "sha1": "1a49a5f9bf7d00ef0c5c6390d499457dd1ecf990",
+    "committed_as": "s_IMG_R1162_I5837_P1.jpg"
+   },
+   {
+    "source_file": "IMG_R1162_I5838_P2.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1162_I5838_P2.png",
+    "px": [
+     2592,
+     3888
+    ],
+    "bytes": 7531561,
+    "sha1": "536891395b9f7143211976f5ae7f015940df5bb0",
+    "committed_as": "s_IMG_R1162_I5838_P2.jpg"
+   },
+   {
+    "source_file": "DOC_R1162_D3593_3593.txt",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt",
+    "bytes": 4247,
+    "sha1": "2221964b8e5f7d97e854d189a228c326e5d99d3c",
+    "committed_as": "../decode/DOC_R1162_D3593_3593.txt",
+    "what": "DECODE transcription, transcriber RP, 11 Nov 2020, CIPHERTEXT/CLEARTEXT/PLAINTEXT-tagged"
+   }
+  ]
+ }
 }
