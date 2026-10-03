@@ -3940,7 +3940,7 @@ the MISS screen, so only a fuller specimen would test it.
 Requests: archive.org 2 (advancedsearch 1, djvu.txt download 1); founders.archives.gov 14 (headless page loads, one at a time,
 >=2 s apart); 0 challenges, 0 retries. Logs `sources/h75/requests.log`, `h75/requests.log`.
 
-## Step H73 (3 Oct 2026, 19:27-19:50 UTC, worker ARM-H73 for LANE-ARM-B): vocabulary-prior solver -- control below gate, target not run
+## Step H73 (3 Oct 2026, 19:27-19:48 UTC, worker ARM-H73 for LANE-ARM-B): vocabulary-prior solver -- control below gate, target not run
 
 Intake gate, run before any work (`python3 tools/intake_gate_check.py armstrong-madison-1808`, exit 0):
 ```
