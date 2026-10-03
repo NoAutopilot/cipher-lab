@@ -1,0 +1,8 @@
+window 0	covered 372/846	ok -0.93 -1.733 -0.985,
+window 1	covered 372/846	FAIL -0.972 -1.735 -0.947,
+window 2	covered 374/846	FAIL -0.98 -1.733 -0.974,
+window 3	covered 402/846	ok -0.933 -1.733 -0.976,
+window 4	covered 406/846	ok -0.882 -1.749 -0.97,
+window 5	covered 402/846	ok -0.904 -1.741 -0.96,
+window 6	covered 358/846	ok -0.901 -1.719 -0.993,
+window 7	covered 372/846	ok -0.935 -1.739 -0.966,

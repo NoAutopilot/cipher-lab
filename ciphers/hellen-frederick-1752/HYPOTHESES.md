@@ -37,3 +37,27 @@ conditional on DECODE's transcriptions of both). Retired as an instrument for th
 | 2 Oct 2026 00:16 | homophonic | N=1234 K=634 restarts=8 corpus=lagazettedefran01unkngoog.txt.gz+memoiresdemonsie01torc.txt.gz+memoiresdemonsie02torc.txt.gz+mmoiresduducde01invill.txt.gz+mmoiresduducde02vill.txt.gz+mmoiresetlettre01margoog.txt.gz profile=target | 1-3 | 0.100 (0.090-0.113) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HEL-T2 2 Oct 2026 (account-4): spec test 2, pooled 1763 cluster, matched control before target |
 | 2 Oct 2026 00:23 | nomenclator | N=1234 K=634 restarts=3 corpus=lagazettedefran01unkngoog.txt.gz+memoiresdemonsie01torc.txt.gz+memoiresdemonsie02torc.txt.gz+mmoiresduducde01invill.txt.gz+mmoiresduducde02vill.txt.gz+mmoiresetlettre01margoog.txt.gz sweeps=30,phase1=20 | 1 | 0.092 (0.092-0.092) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HEL-T2 2 Oct 2026 (account-4): spec test 2 next instrument after homophonic non-test, ARM-C1 settings, seed 1 timing run |
 | 2 Oct 2026 00:30 | nomenclator | N=1234 K=634 restarts=3 corpus=lagazettedefran01unkngoog.txt.gz+memoiresdemonsie01torc.txt.gz+memoiresdemonsie02torc.txt.gz+mmoiresduducde01invill.txt.gz+mmoiresduducde02vill.txt.gz+mmoiresetlettre01margoog.txt.gz sweeps=30,phase1=20 | 2 | 0.109 (0.109-0.109) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HEL-T2 2 Oct 2026 (account-4): spec test 2 next instrument after homophonic non-test, ARM-C1 settings, seed 2 |
+
+## R4369 Hellen key (READ2-HEL, account 2, 3 Oct 2026) -- reads R1953 above every control
+
+Hypothesis: DECODE R4369 (BL Add MS 32276 f.44, "Hellen avec le Roy de Prusse", 1751, English Deciphering Branch) is the key of
+R1953. Key: `key_r4369/key.tsv` (2 blind passes + reconciliation, err_2reader 4.8%, codes 801-1796); keys per attribution of the
+sheet's right-hand entries from `key_r4369/build_keys.py`. Script: `sibling_michell/test_sibling.py --key K --out F` (outputs
+`key_r4369/test_key_*.txt`). Statistics: uni = mean fr18 word log-prob of covered tokens (order-blind); bi = mean fr18 junction-pair
+PMI over adjacent covered tokens (order-sensitive). Controls x200: value-shuffled key (uni, bi); token-order shuffle (bi only -- uni
+cannot move under it); positive control power from fr18 prose encoded with the same key at the target's covered/pair count.
+
+| key on R1953 | covered | uni real | uni shuffle mean / p95 | uni p | pairs | bi real | bi val-shuffle mean | bi val p | bi order-shuffle mean / p95 | bi order p | power uni / bi |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| L (left entries) | 359 | -8.985 | -9.750 / -9.229 | 0.005 | 148 | -0.756 | -0.880 | 0.025 | -0.858 / -0.758 | 0.040 | 1.00 / 1.00 |
+| R0 (right entry = own row) | 195 | -8.891 | -8.604 / -8.046 | 0.805 | 44 | -0.896 | -0.875 | 0.545 | -0.846 / -0.656 | 0.645 | 1.00 / 1.00 |
+| R100 (right entry = row +100) | 315 | -6.930 | -8.578 / -8.185 | 0.000 | 125 | -0.455 | -0.865 | 0.000 | -0.656 / -0.541 | 0.010 | 1.00 / 1.00 |
+| L where R100 absent | 155 | -7.193 | -9.667 / -8.958 | 0.000 | 26 | -0.212 | -0.867 | 0.000 | -0.762 / -0.544 | 0.000 | 1.00 / 1.00 |
+| L where R100 present | 204 | -10.346 | -9.949 / -9.418 | 0.855 | 48 | -0.836 | -0.889 | 0.285 | -0.899 / -0.755 | 0.220 | 1.00 / 1.00 |
+| LR100 (seed 1) | 470 | -7.017 | -9.157 / -8.755 | 0.000 | 266 | -0.361 | -0.877 | 0.000 | -0.694 / -0.609 | 0.000 | 1.00 / 1.00 |
+| LR100 (seed 2) | 470 | -7.017 | -9.181 / -8.809 | 0.000 | 266 | -0.361 | -0.871 | 0.000 | -0.688 / -0.596 | 0.000 | 1.00 / 1.00 |
+
+Secondary rows (other seven letters, same script, files above): no letter beats its controls under L, R0, R100 or LR100 (uni p
+0.155-0.98, coverage 7-34%; lowest bigram p R1046 order 0.025 on 34 tokens with uni p 0.94, not surviving correction) -- R4369 is not their key. Result: **LR100 reads R1953 above every control**; R100 attribution chosen by the test,
+so those values are grade S. Decode H 152 / S 304 / M 16 / U 374 (codes 1-800 absent from the sheet); judge FAIL -0.976 vs real_p05
+-0.954 (null_p99 -1.741), with a calibration on true decodes at this coverage failing 2/8 at -0.972/-0.980 -- judge cannot decide.

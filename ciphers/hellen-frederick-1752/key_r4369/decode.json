@@ -1,0 +1,10 @@
+{"jobs": [
+ {"ciphertext": "R1953_pipe.txt", "key": "key_decode.tsv", "format": "pipe", "style": "spaced",
+  "reading": "reading_R1953.txt", "tokens": "reading_R1953_tokens.tsv",
+  "header": [
+   "# hellen-frederick-1752 R1953 (4 Jan 1752) decoded with DECODE R4369 (BL Add MS 32276 f.44, 'Hellen avec le Roy de Prusse', 1751), READ2-HEL 3 Oct 2026.",
+   "# Key: key_r4369/key_decode.tsv (left entries as read, H/M; right entries attributed to code+100 by the control-backed test, S). Covers codes 801-1796 only; codes 1-800 are not on this sheet (U).",
+   "# Transcription: DECODE's, not the image (rule 2). Not called anything more than 'read with a period key'.",
+   "# tokens {total}: {HCSMIU}"
+  ]}
+]}

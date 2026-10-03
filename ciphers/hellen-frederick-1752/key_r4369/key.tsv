@@ -1,0 +1,717 @@
+code	left	right	grade_left	grade_right	page
+902	quo,	tem	H	H	P2
+903	qu'		H		P2
+904	qualite	op	H	M	P2
+905		be		H	P2
+906	quand	du	H	H	P2
+907	quantite	em	H	H	P2
+908	40.	en	H	H	P2
+909		er		H	P2
+910		dre		H	P2
+911		fa		H	P2
+912		fe		H	P2
+913		ter		H	P2
+914		fi		H	P2
+915	dernier	ve	H	H	P2
+916		fo		H	P2
+917		fu		H	P2
+918		ad		H	P2
+919	ront	il	H	H	P2
+920		les		H	P2
+921	puissance	tach	H	H	P2
+922		tant		H	P2
+925	patr..		H		P2
+926		tres		H	P2
+927	y		H		P2
+928		ci		H	P2
+929	pro		H		P2
+930		cu		H	P2
+932	Rt de Polog(e)	tems	H	H	P2
+933		e		H	P2
+935	s	bic	H	M	P2
+936		ces		H	P2
+937		ces		H	P2
+938	preten	h	H	H	P2
+939	pretexte	et	H	H	P2
+940	S.M.		H		P2
+944	Petersbourg	ge	H	H	P2
+945	rendre	vi	H	H	P2
+947		he		H	P2
+948		ma		H	P2
+949	question	me	H	H	P2
+950		mi		H	P2
+951	ra	traiter	H	H	P2
+952	re		H		P2
+953	l	tranquil	H	H	P2
+954		transpir		H	P2
+956	roit	ant	H	H	P2
+957	roy	avoit	H	H	P2
+958		di		H	P2
+959		do		H	P2
+960		t		H	P2
+961	su		H		P2
+962		ten		H	P2
+963	sur	ter	H	H	P2
+964	sus		H		P2
+965	a		H		P2
+966		mer		H	P2
+968		v		H	P2
+969	trompe	et	H	H	P2
+970	trop		H		P2
+971	u	oit	H	H	P2
+972		que		H	P2
+973	tent	tems	H	H	P2
+974	a		H		P2
+975	va		H		P2
+976	c	vos	H	M	P2
+977	con	votre	H	H	P2
+979	ent		H		P2
+980	de		H		P2
+981		que		H	P2
+982		qu		H	P2
+983	tenir	qu'il	H	H	P2
+984	ent		H		P2
+985	va	ont	H	H	P2
+986		o		H	P2
+988	je		H		P2
+989	il		H		P2
+990	le		H		P2
+991	tra		H		P2
+992	tre	i	H	H	P2
+993	tri		H		P2
+994	ca	tes	H	H	P2
+995	ce		H		P2
+996	da		H		P2
+997	g		H		P2
+998	d	an	H	H	P2
+999	de	s	H	H	P2
+1000		or		M	P2
+1001	ci ~selon ~suivt	ta	H	H	P2
+1002	ch	to	H	H	P2
+1004	cho		H		P2
+1005	~Emp(r)	ve	H	H	P2
+1006	~imper. (ce) brut	vi	H	H	P2
+1007	~immediatemt.	ter	H	H	P2
+1009	aurons	a	H	H	P2
+1010	autant		H		P2
+1011	haute	qu	H	H	P2
+1012	Leide	t	H	H	P2
+1013		tel		H	P2
+1015	in		H		P2
+1016	~Hollande int	aux	H	H	P2
+1017	~hollands	qu'ils	M	H	P2
+1018	~homme		H		P2
+1019		re		H	P2
+1020	~honneur matie		H		P2
+1021	~selon veut		H		P2
+1022	~semaine	sa	H	H	P2
+1023	~satisfa	se	H	H	P2
+1024	~savoir zele		H		P2
+1025	~sage		M		P2
+1026	~Saxon	ver	H	H	P2
+1027		ses		H	P2
+1028	ze		H		P2
+1029	~bra za	tre	H	H	P2
+1031	co	te	H	H	P2
+1032	h	tu	H	H	P2
+1033	~sera cla		H		P2
+1034	cle.	up	H	H	P2
+1035	avis	ur	H	H	P2
+1036	avoient	vrai	H	H	P2
+1037	avoir.	us	H	H	P2
+1038	~mari avo	ut	H	H	P2
+1039	~marq autre		M		P2
+1040	auff	vous	H	H	P2
+1042	~mor		H		P2
+1043	~mort ici		H		P2
+1044	id		H		P2
+1045	ie		H		P2
+1046	~aux ient	ud	H	H	P2
+1047	~en ier.		H		P2
+1048	ie suis	si	H	H	P2
+1049		so		H	P2
+1050	insi...	su	H	H	P2
+1051	Z	st	H	H	P2
+1052		st		H	P2
+1054		t		H	P2
+1055		une		H	P2
+1056	x	uni	H	H	P2
+1057		tes		H	P2
+1060		vous		H	P2
+1061	cu	ti	H	H	P2
+1062	aura	n	H	H	P2
+1063	aurez	t	H	H	P2
+1066	clu		H		P2
+1067		u		H	P2
+1068	a		H		P2
+1069	aye		H		P2
+1071		ser		H	P2
+1072	heur		H		P2
+1073	hier		H		P2
+1074	V.M.	un	H	H	P2
+1076		k?		H	P2
+1079		e		H	P2
+1080	un	l	H	H	P2
+1081		r		H	P2
+1083		tu		H	P2
+1085	weiman		H		P2
+1087	effective	y	H	H	P2
+1089	ves		H		P2
+1090	veu	s	H	H	P2
+1091	cha		H		P2
+1093		c.		H	P2
+1094		tur		H	P2
+1096	V.M.		H		P2
+1097	la Maison de		H		P2
+1098		s		H	P2
+1099		der		H	P2
+1100		er		H	P2
+1101	selon, suivt		H		P2
+1102		hiver		H	P2
+1105	emper(r)	iu	H	H	P2
+1106	Imperat. (ce)	io	H	H	P2
+1107	immediatemt.	ji	H	H	P2
+1108		ie		H	P2
+1109		ia		H	P2
+1112		libre		H	P2
+1113		lieu		H	P2
+1116	hollande		H		P2
+1117	hollandois	ordonn	H	H	P2
+1118	homme	ordre	H	H	P2
+1119		ors		H	P2
+1120	honneur	f	H	H	P2
+1121	selon.		H		P2
+1122	semaine	avoit	H	H	P2
+1123	satisfa	aussi	H	H	P2
+1124	savoir		H		P2
+1125	saxe	ob	H	H	P2
+1126	saxon	oc	H	H	P2
+1129	bra		H		P2
+1132		intention		H	P2
+1133	sera	interet	H	H	P2
+1134		jour		H	P2
+1136		aucun		H	P2
+1138	mari		H		P2
+1139	marq		H		P2
+1140		ma		H	P2
+1141		lo		H	P2
+1142	mor	lu	H	H	P2
+1143	mort..		H		P2
+1145		neutralite		H	P2
+1146		neuf		H	P2
+1147	on	ner	H	H	P2
+1149	on	ni	H	H	P2
+1150	n'y		H		P2
+1151	su	million	H	H	P2
+1153		mille		H	P2
+1155	secret		H		P2
+1156		nouveau		H	P2
+1157	vu	nouvelle	H	H	P2
+1159	vre		H		P2
+1162		..ion		H	P2
+1163		juge		H	P2
+1165	ber:.		H		P2
+1167		jusqu		H	P2
+1168	vacante		H		P2
+1169	no		H		P2
+1170	nu		H		P2
+1171	vou	m	H	M	P2
+1172	vous	la	H	H	P2
+1173		le		H	P2
+1174	vouloir	li	H	H	P2
+1175	voulu		H		P2
+1176	mois		H		P2
+1177	mon		H		P2
+1179	oi, loi		H		P2
+1182	brou	observ	H	H	P2
+1183	bro	obten	H	H	P2
+1184	bon		H		P2
+1185	bord		H		P2
+1187	bourg		H		P2
+1188		officier		H	P2
+1189	vi		H		P2
+1190		pa		H	P2
+1191		humble		H	P2
+1194	beaucoup		H		P2
+1195		Londres		H	P2
+1196	vive	long	H	H	P2
+1197	vivre	loix	H	H	P2
+1198		lor.		H	P2
+1199	ul		H		P2
+1202	vie	avec	H	H	P2
+1203	vient		H		P2
+1204	ministre	ma	H	H	P2
+1205	min	me	H	H	P2
+1206	moind	mi	H	H	P2
+1207	moins	mo	H	H	P2
+1208	mot	mu	H	H	P2
+1209	ser		H		P2
+1210	moi		H		P2
+1211	du		H		P2
+1212		z		H	P2
+1215	min...	mouvemt.	H	H	P2
+1216		muni		H	P2
+1217	sept		H		P2
+1219	ser	parceque	H	H	P2
+1222		i		H	P2
+1224	Secre d'Etat	or	H	H	P2
+1225		os		M	P2
+1226	seulemt.		H		P2
+1228	s'il	val	H	H	P2
+1229		van		H	P2
+1230	aussi	baron	H	M	P2
+1234	negociatn		H		P2
+1236	mort	vo	H	H	P2
+1237		voy		H	P2
+1238	metre	voit	H	H	P2
+1241	ami	raison	H	H	P2
+1243		retour		H	P2
+1244		reve		H	P2
+1245	pro	rien	H	H	P2
+1247	pais		H		P2
+1249	ont, ayt		H		P2
+1252	croire	pi	H	H	P2
+1253		po		H	P2
+1254	credit	pu	H	H	P2
+1255	du		H		P2
+1256	dra		H		P2
+1257	dre		H		P2
+1259	cer	vent	H	H	P2
+1260	certain		H		P2
+1261	affaire		H		P2
+1262	affection	plus	H	H	P2
+1263	am	point	H	H	P2
+1265	age	polonois	H	H	P2
+1266		port		H	P2
+1267	dan	possession	H	H	P2
+1268	dans	pres	H	H	P2
+1269	ceux	projet	H	H	P2
+1270	chambre	propos	H	H	P2
+1271		rom..		H	P2
+1272	parl		H		P2
+1273	par..	a	H	H	P2
+1275		n		H	P2
+1276	cela	L	H	M	P2
+1277	celle		H		P2
+1278	celui		H		P2
+1279	cen		H		P2
+1280	l		H		P2
+1281	particulier	lui	H	H	P2
+1282	pas	vienne	H	H	P2
+1283	cour		H		P2
+1284	s		H		P2
+1285	ag		H		P2
+1287	ai		H		P2
+1288	al	raison	H	H	P2
+1290	an		H		P2
+1291		de		H	P2
+1292	aparence	dernier	H	H	P2
+1293		des		H	P2
+1294		c		H	P2
+1295	et.	ef	H	H	P2
+1296	ci	eg	H	H	P2
+1297	d		H		P2
+1298	ces		H		P2
+1299	cet	effet	H	H	P2
+1300	cette		H		P2
+1301		ca		H	P2
+1302	apr.	ce	H	H	P2
+1303		m		H	P2
+1304		d		H	P2
+1305	apres		H		P2
+1306	mettre		H		P2
+1307	mieux	x	H	H	P2
+1308	con	e	H	H	P2
+1309	concla	ll	H	H	P2
+1310		eur		H	P2
+1311	act		H		P2
+1312	ant		H		P2
+1313	appell		H		P2
+1314	admi		H		P2
+1315	avant	par	H	H	P2
+1316	ap		H		P2
+1317		ble		H	P2
+1318		bli		H	P2
+1319	archi		H		P2
+1320		depute		H	P2
+1321	able	premier	H	M	P2
+1322		prendre		H	P2
+1323		present		M	P2
+1324	entiere	er	H	H	P2
+1325		es		H	P2
+1326	accommod	et	H	H	P2
+1327	acce..	eu	H	H	P2
+1328		15		M	P2
+1330		ex		H	P2
+1331	paroit		H		P2
+1332	part		H		P2
+1333	cependt		H		P2
+1334		regence		H	P2
+1336	compris		H		P2
+1338		s		M	P2
+1339		z		H	P2
+1340	confer	p	H	H	P2
+1341	confir		H		P2
+1342	conge		H		P2
+1343	corps	can..	H	H	P2
+1345	cour de		H		P2
+1346	courier		H		P2
+1347	le Dc de		H		P2
+1348		bi		H	P2
+1349		fer		H	P2
+1350	defen	feu	H	H	P2
+1351	deja		H		P2
+1352	dem..	fin	H	H	P2
+1355	conven	tu	H	H	P2
+1356	contribu	to	H	H	P2
+1357	contre.	ti	H	H	P2
+1358	contraire	te	H	H	P2
+1359	contract	ta	H	H	P2
+1360	continu	t	H	H	P2
+1361	memoire	commis	H	H	P2
+1362	mei		M		P2
+1363		communi		H	P2
+1364	pre	comp	H	H	P2
+1365	pri	compagnie	H	H	P2
+1366		tout		H	P2
+1367	car		H		P2
+1369	cas		H		P2
+1370		traite		H	P2
+1371	act		H		P2
+1372	ans	circonstance	H	H	P2
+1373	ance	connois	H	H	P2
+1374	anglois	connu	H	H	P2
+1375	na	conseil	H	H	P2
+1376	ne	consente	H	H	P2
+1377	ni	ba	H	H	P2
+1381	aise	des	H	H	P2
+1382	ait	detach	H	H	P2
+1383	allem(gne)	devant	H	H	P2
+1384		devoir		H	P2
+1385	non	2	H	H	P2
+1386		chang		H	P2
+1387		char		H	P2
+1388		chemin		H	P2
+1390		cher		H	P2
+1391	men	f	H	H	P2
+1392	merite	fi	H	H	P2
+1393	mes		H		P2
+1394	met		H		P2
+1395		fa		H	P2
+1396		fe		H	P2
+1397		troupes		H	P2
+1398		trouver		H	P2
+1399	demand		H		P2
+1400	plutot	ts	H	H	P2
+801	son		H		P3
+802	sont		M		P3
+803	sort		H		P3
+804	x		H		P3
+806	avance		H		P3
+807	avant		H		P3
+808	somme		H		P3
+809	son		H		P3
+811	seur		H		P3
+816	soupçon		H		P3
+818	sous		H		P3
+820	soin		H		P3
+825	quoique		H		P3
+827	sui.		H		P3
+828	suis		H		P3
+829	suivant		H		P3
+830	suite		H		P3
+836	r		H		P3
+838	que		H		P3
+840	que		H		P3
+843	republique		H		P3
+844	resident		H		P3
+845	que		H		P3
+847	qua		H		P3
+848	que.		H		P3
+849	qui		H		P3
+850	sans		H		P3
+855	ratification		H		P3
+857	reçu		H		P3
+859	i		H		P3
+861	proposition		H		P3
+863	province		H		P3
+864	quelque		H		P3
+865	quelqu'un		H		P3
+866	quer.		H		P3
+867	possible		H		P3
+868	pour		H		P3
+869	pouvoir		H		P3
+872	resolu		H		P3
+873	rs		H		P3
+874	rt		H		P3
+875	reste		H		P3
+876	sa		H		P3
+877	se		H		P3
+878	si		H		P3
+879	so		H		P3
+880	su		H		P3
+884	prince de		H		P3
+885	princesse de		H		P3
+886	prince de		H		P3
+889	prison		H		P3
+892	publie		H		P3
+895	qui		H		P3
+896	qu'il		H		P3
+897	r		H		P3
+898	quel		H		P3
+899	quelle		H		P3
+900	passe		H		P3
+1401	colonel		H		P3
+1402	ap		H		P3
+1405	a?		H		P3
+1406	ab	temoign	H	H	P3
+1407	ac		H		P3
+1408	ad		H		P3
+1410	af	sur	H	H	P3
+1411	ar	toujours	H	H	P3
+1412	as	d	H	H	P3
+1413	at	da	H	H	P3
+1414	au	de	H	H	P3
+1415	ay	di	H	H	P3
+1416		do		H	P3
+1417	article		H		P3
+1419	ou		H		P3
+1421	ment	fla	H	H	P3
+1422	moyen	tion	H	H	P3
+1423	cra		H		P3
+1424	cre		H		P3
+1425	cri	tion	H	H	P3
+1426	cro		H		P3
+1427	e		H		P3
+1429	chose	tot	H	H	P3
+1430		touche		H	P3
+1431		consequen		H	P3
+1432	tu	consider	H	H	P3
+1433		commander		H	P3
+1434	arret	comme	H	H	P3
+1435	arriv	comment	H	H	P3
+1436	natur	commerce	H	H	P3
+1437	nd		H		P3
+1438	ng		H		P3
+1439	n		H		P3
+1440	den		H		P3
+1442		content		H	P3
+1443	diffic		H		P3
+1444	ainsi		H		P3
+1445	ajout		H		P3
+1446	ox		H		P3
+1449	ob		H		P3
+1450	p		H		P3
+1451	alliance		H		P3
+1452	altesse		H		P3
+1453	ns		H		P3
+1454	nt	empire	H	H	P3
+1455	offre		H		P3
+1456	per		H		P3
+1457	ois		H		P3
+1458	oit		H		P3
+1459	oient		H		P3
+1462	nom		H		P3
+1465	oppos		H		P3
+1467	ple		H		P3
+1468	pli		H		P3
+1470	nu		H		P3
+1471	id		H		P3
+1472	bien		H		P3
+1473	angletre		H		P3
+1474	amsterdam		H		P3
+1476	pe		H		P3
+1481	doute		H		P3
+1483	dresde		H		P3
+1484	droit		H		P3
+1486	d'y		H		P3
+1487	e		H		P3
+1488	gi		H		P3
+1489	go		H		P3
+1490	gu		H		P3
+1491	employ		H		P3
+1492	encore		H		P3
+1493	enfin		H		P3
+1494	engage		H		P3
+1495	espor		H		P3
+1496	esperance		H		P3
+1497	est		H		P3
+1498	est		H		P3
+1499	fru		H		P3
+1500	facile		H		P3
+1501	facilite		H		P3
+1502	façon		H		P3
+1503	il y a		H		P3
+1505	im		H		P3
+1506	aussi		H		P3
+1509		Et.s generaux		H	P3
+1510		les Et.s gen.t		H	P3
+1511	depeche	pce d'Orange	H	H	P3
+1512	de	princesse d'Orange	H	H	P3
+1513	des	le Prince	H	H	P3
+1514	gna		H		P3
+1515	gni		H		P3
+1517	gne		H		P3
+1519	gue		H		P3
+1520	etre		H		P3
+1521	etant		H		P3
+1522	fau		H		P3
+1524	faut		H		P3
+1525	femme		H		P3
+1526	France		H		P3
+1527	fort		H		P3
+1529	four...		H		P3
+1535		prince de		H	P3
+1536	laisse		H		P3
+1537	lan		H		P3
+1539	les..		H		P3
+1540	les	amsterdam	H	H	P3
+1541		les P.ces Maritimes		H	P3
+1543	diffici		H		P3
+1544	dire		H		P3
+1545	dispose		H		P3
+1546	exam	Holderness	H	H	P3
+1548	expedi		H		P3
+1549	expres		H		P3
+1553	florin		H		P3
+1555	ens		H		P3
+1556	ent		H		P3
+1557	entre		H		P3
+1558	jeudi		H		P3
+1559	if		H		P3
+1560	ig		H		P3
+1562	il		H		P3
+1563	ils		H		P3
+1566	lequel		H		P3
+1567	les		H		P3
+1568	lire		H		P3
+1569	li		H		P3
+1571	depuis	bruhl	H	H	P3
+1572	Dit		H		P3
+1573	donne		H		P3
+1574	dont		H		P3
+1578	inform	la Cour de Vienne	H	H	P3
+1580	insinuation		H		P3
+1583	front..		H		P3
+1584		le Roy de Pologne		H	P3
+1586	ger		H		P3
+1587	gens		H		P3
+1588	ger		H		P3
+1595	maniere		H		P3
+1596	ment		H		P3
+1597	mar		H		P3
+1598	march		H		P3
+1600	m		H		P3
+1601		les Et.s gen.t		H	P3
+1603	gli		H		P3
+1604	gle		H		P3
+1608	gri		H		P3
+1609	gre		H		P3
+1611	bien		H		P3
+1617	election		H		P3
+1618	elle		H		P3
+1619	em		H		P3
+1620	h		H		P3
+1621	gue		H		P3
+1632	envers	prince	H	H	P3
+1633	envoy	princesse	H	H	P3
+1635	avois	le Prince	H	H	P3
+1638	eux		H		P3
+1639	Europe		H		P3
+1640	eur		H		P3
+1641	faire		H		P3
+1642	fais		H		P3
+1643	fait		H		P3
+1644	fal		H		P3
+1645	ez		H		P3
+1648	fond		H		P3
+1649	former		H		P3
+1650	f		M		P3
+1651	ha		H		P3
+1652		les Puiss. Maritimes		M	P3
+1653	ho		H		P3
+1654	hi		H		P3
+1655	he		H		P3
+1656	etablir		H		P3
+1657	etat		H		P3
+1658	ete		H		P3
+1659	etoi		H		P3
+1661		orange		H	P3
+1662	ec	les Puiss. Maritimes	M	H	P3
+1663	ed		H		P3
+1664	ca		H		P3
+1665	ke		H		P3
+1667	lettre		H		P3
+1668	leve		H		P3
+1669	leur		H		P3
+1672	fort		H		P3
+1673	fois		H		P3
+1674	ge		H		P3
+1675	fusse		H		P3
+1676	fut		H		P3
+1677	to		H		P3
+1678	ga		H		P3
+1679	ge		H		P3
+1681	guerre		H		P3
+1684	ent		H		P3
+1685	grand		H		P3
+1688	fra		H		P3
+1693	ip.		H		P3
+1694	ir		H		P3
+1695	is		H		P3
+1696	it		H		P3
+1698	ga		H		P3
+1699	livre		H		P3
+1701	ei		H		P3
+1702	el		H		P3
+1703	em		H		P3
+1706	garde		H		P3
+1708	gazette		H		P3
+1710	general		H		P3
+1714	gouvern		H		P3
+1718	fri		H		P3
+1721	semble		H		P3
+1723	ses		H		P3
+1726	soi...		H		P3
+1727	soyent		H		P3
+1728	d		H		P3
+1729	soi		H		P3
+1733	l'on		H		P3
+1735	ls		H		P3
+1736	lt		H		P3
+1738	main		H		P3
+1739	major		H		P3
+1740	mais		H		P3
+1741	assur		H		P3
+1743	assist		H		P3
+1744	ation		H		P3
+1745	attend		H		P3
+1748	diminu		H		P3
+1750	le Roy d'Angleterre		H		P3
+1753	ent		H		P3
+1757	soient		H		P3
+1759	silesie		H		P3
+1760	sire		H		P3
+1761	sol..		H		P3
+1762	pen	le Pce	H	H	P3
+1763	pendant		H		P3
+1764	per		H		P3
+1765	personne	Stedhouder	H	H	P3
+1766	persuad		H		P3
+1767	pere		M		P3
+1768	peuple		H		P3
+1769	peutetre		H		P3
+1771	sous		H		P3
+1772	st		H		P3
+1773	ste		H		P3
+1774	subside		H		P3
+1775	e		H		P3
+1776	subsiste		H		P3
+1777	succez		H		P3
+1782	sieur		H		P3
+1785	sion		H		P3
+1791	man		H		P3
+1792	pe		H		P3
+1793	qu'ils		H		P3
+1794	qu'on		H		P3
+1796	ro		H		P3

@@ -3435,6 +3435,13 @@
       "target": "pollaky-1865-1875",
       "title": "Ad 1 (16 May 1865, 10 signs): Laura's bars-x-dots rule beats matched N=10 controls on frame-bigram T (-1.1405 vs shuffled-sign p95 -1.2895, tail 0.002; power 0.981; GAPS160, 3 Oct 2026); no word clears its control, 10 letters M, no reading.",
       "next": "print step to find the newspaper page and settle sign 04 (~USD 2), then a word-level crib test with random-sign controls"
+    },
+    {
+      "target": "hellen-frederick-1752",
+      "title": "Hellen 1752: the Deciphering Branch's own Hellen key (DECODE R4369, codes 801-1796) reads R1953 above every control (uni -7.017 vs -9.157, p 0/200; PMI vs order shuffle p 0); decode H 152 / S 304 / M 16 / U 374; judge FAIL -0.976 vs real_p05 -0.954, judge cannot decide at this coverage",
+      "next": "codes 1-800: R4370 transcription + --key test (~$12); rule 7 fresh-session re-derivation; R1953 image check",
+      "lane": "LANE-READ2 (account 2)",
+      "touched": "3 Oct 2026 23:3x"
     }
   ]
 }

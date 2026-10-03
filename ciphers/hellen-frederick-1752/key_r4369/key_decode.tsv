@@ -1,0 +1,703 @@
+code	value	grade	source
+801	son	H	R4369 left entry
+802	sont	M	R4369 left entry
+803	sort	H	R4369 left entry
+804	x	H	R4369 left entry
+806	avance	H	R4369 left entry
+807	avant	H	R4369 left entry
+808	somme	H	R4369 left entry
+809	son	H	R4369 left entry
+811	seur	H	R4369 left entry
+816	soupçon	H	R4369 left entry
+818	sous	H	R4369 left entry
+820	soin	H	R4369 left entry
+825	quoique	H	R4369 left entry
+827	sui.	H	R4369 left entry
+828	suis	H	R4369 left entry
+829	suivant	H	R4369 left entry
+830	suite	H	R4369 left entry
+836	r	H	R4369 left entry
+838	que	H	R4369 left entry
+840	que	H	R4369 left entry
+843	republique	H	R4369 left entry
+844	resident	H	R4369 left entry
+845	que	H	R4369 left entry
+847	qua	H	R4369 left entry
+848	que.	H	R4369 left entry
+849	qui	H	R4369 left entry
+850	sans	H	R4369 left entry
+855	ratification	H	R4369 left entry
+857	reçu	H	R4369 left entry
+859	i	H	R4369 left entry
+861	proposition	H	R4369 left entry
+863	province	H	R4369 left entry
+864	quelque	H	R4369 left entry
+865	quelqu'un	H	R4369 left entry
+866	quer.	H	R4369 left entry
+867	possible	H	R4369 left entry
+868	pour	H	R4369 left entry
+869	pouvoir	H	R4369 left entry
+872	resolu	H	R4369 left entry
+873	rs	H	R4369 left entry
+874	rt	H	R4369 left entry
+875	reste	H	R4369 left entry
+876	sa	H	R4369 left entry
+877	se	H	R4369 left entry
+878	si	H	R4369 left entry
+879	so	H	R4369 left entry
+880	su	H	R4369 left entry
+884	prince de	H	R4369 left entry
+885	princesse de	H	R4369 left entry
+886	prince de	H	R4369 left entry
+889	prison	H	R4369 left entry
+892	publie	H	R4369 left entry
+895	qui	H	R4369 left entry
+896	qu'il	H	R4369 left entry
+897	r	H	R4369 left entry
+898	quel	H	R4369 left entry
+899	quelle	H	R4369 left entry
+900	passe	H	R4369 left entry
+902	quo,	H	R4369 left entry
+903	qu'	H	R4369 left entry
+904	qualite	H	R4369 left entry
+906	quand	H	R4369 left entry
+907	quantite	H	R4369 left entry
+908	40.	H	R4369 left entry
+915	dernier	H	R4369 left entry
+919	ront	H	R4369 left entry
+921	puissance	H	R4369 left entry
+925	patr..	H	R4369 left entry
+927	y	H	R4369 left entry
+929	pro	H	R4369 left entry
+932	Rt de Polog(e)	H	R4369 left entry
+935	s	H	R4369 left entry
+938	preten	H	R4369 left entry
+939	pretexte	H	R4369 left entry
+940	S.M.	H	R4369 left entry
+944	Petersbourg	H	R4369 left entry
+945	rendre	H	R4369 left entry
+949	question	H	R4369 left entry
+951	ra	H	R4369 left entry
+952	re	H	R4369 left entry
+953	l	H	R4369 left entry
+956	roit	H	R4369 left entry
+957	roy	H	R4369 left entry
+961	su	H	R4369 left entry
+963	sur	H	R4369 left entry
+964	sus	H	R4369 left entry
+965	a	H	R4369 left entry
+969	trompe	H	R4369 left entry
+970	trop	H	R4369 left entry
+971	u	H	R4369 left entry
+973	tent	H	R4369 left entry
+974	a	H	R4369 left entry
+975	va	H	R4369 left entry
+976	c	H	R4369 left entry
+977	con	H	R4369 left entry
+979	ent	H	R4369 left entry
+980	de	H	R4369 left entry
+983	tenir	H	R4369 left entry
+984	ent	H	R4369 left entry
+985	va	H	R4369 left entry
+988	je	H	R4369 left entry
+989	il	H	R4369 left entry
+990	le	H	R4369 left entry
+991	tra	H	R4369 left entry
+992	tre	H	R4369 left entry
+993	tri	H	R4369 left entry
+994	ca	H	R4369 left entry
+995	ce	H	R4369 left entry
+996	da	H	R4369 left entry
+997	g	H	R4369 left entry
+998	d	H	R4369 left entry
+999	de	H	R4369 left entry
+1001	ci	H	R4369 left entry
+1002	tem	S	R4369 right entry of row 902, attributed +100
+1004	op	M	R4369 right entry of row 904, attributed +100
+1005	be	S	R4369 right entry of row 905, attributed +100
+1006	du	S	R4369 right entry of row 906, attributed +100
+1007	em	S	R4369 right entry of row 907, attributed +100
+1008	en	S	R4369 right entry of row 908, attributed +100
+1009	er	S	R4369 right entry of row 909, attributed +100
+1010	dre	S	R4369 right entry of row 910, attributed +100
+1011	fa	S	R4369 right entry of row 911, attributed +100
+1012	fe	S	R4369 right entry of row 912, attributed +100
+1013	ter	S	R4369 right entry of row 913, attributed +100
+1014	fi	S	R4369 right entry of row 914, attributed +100
+1015	ve	S	R4369 right entry of row 915, attributed +100
+1016	fo	S	R4369 right entry of row 916, attributed +100
+1017	fu	S	R4369 right entry of row 917, attributed +100
+1018	ad	S	R4369 right entry of row 918, attributed +100
+1019	il	S	R4369 right entry of row 919, attributed +100
+1020	les	S	R4369 right entry of row 920, attributed +100
+1021	tach	S	R4369 right entry of row 921, attributed +100
+1022	tant	S	R4369 right entry of row 922, attributed +100
+1024	zele	H	R4369 left entry
+1026	tres	S	R4369 right entry of row 926, attributed +100
+1028	ci	S	R4369 right entry of row 928, attributed +100
+1029	za	H	R4369 left entry
+1030	cu	S	R4369 right entry of row 930, attributed +100
+1031	co	H	R4369 left entry
+1032	tems	S	R4369 right entry of row 932, attributed +100
+1033	e	S	R4369 right entry of row 933, attributed +100
+1034	cle.	H	R4369 left entry
+1035	bic	M	R4369 right entry of row 935, attributed +100
+1036	ces	S	R4369 right entry of row 936, attributed +100
+1037	ces	S	R4369 right entry of row 937, attributed +100
+1038	h	S	R4369 right entry of row 938, attributed +100
+1039	et	S	R4369 right entry of row 939, attributed +100
+1040	auff	H	R4369 left entry
+1043	ici	H	R4369 left entry
+1044	ge	S	R4369 right entry of row 944, attributed +100
+1045	vi	S	R4369 right entry of row 945, attributed +100
+1046	ient	H	R4369 left entry
+1047	he	S	R4369 right entry of row 947, attributed +100
+1048	ma	S	R4369 right entry of row 948, attributed +100
+1049	me	S	R4369 right entry of row 949, attributed +100
+1050	mi	S	R4369 right entry of row 950, attributed +100
+1051	traiter	S	R4369 right entry of row 951, attributed +100
+1053	tranquil	S	R4369 right entry of row 953, attributed +100
+1054	transpir	S	R4369 right entry of row 954, attributed +100
+1056	ant	S	R4369 right entry of row 956, attributed +100
+1057	avoit	S	R4369 right entry of row 957, attributed +100
+1058	di	S	R4369 right entry of row 958, attributed +100
+1059	do	S	R4369 right entry of row 959, attributed +100
+1060	t	S	R4369 right entry of row 960, attributed +100
+1061	cu	H	R4369 left entry
+1062	ten	S	R4369 right entry of row 962, attributed +100
+1063	ter	S	R4369 right entry of row 963, attributed +100
+1066	mer	S	R4369 right entry of row 966, attributed +100
+1068	v	S	R4369 right entry of row 968, attributed +100
+1069	et	S	R4369 right entry of row 969, attributed +100
+1071	oit	S	R4369 right entry of row 971, attributed +100
+1072	que	S	R4369 right entry of row 972, attributed +100
+1073	tems	S	R4369 right entry of row 973, attributed +100
+1074	V.M.	H	R4369 left entry
+1076	vos	M	R4369 right entry of row 976, attributed +100
+1077	votre	S	R4369 right entry of row 977, attributed +100
+1080	un	H	R4369 left entry
+1081	que	S	R4369 right entry of row 981, attributed +100
+1082	qu	S	R4369 right entry of row 982, attributed +100
+1083	qu'il	S	R4369 right entry of row 983, attributed +100
+1085	ont	S	R4369 right entry of row 985, attributed +100
+1086	o	S	R4369 right entry of row 986, attributed +100
+1087	effective	H	R4369 left entry
+1089	ves	H	R4369 left entry
+1090	veu	H	R4369 left entry
+1091	cha	H	R4369 left entry
+1092	i	S	R4369 right entry of row 992, attributed +100
+1094	tes	S	R4369 right entry of row 994, attributed +100
+1096	V.M.	H	R4369 left entry
+1097	la Maison de	H	R4369 left entry
+1098	an	S	R4369 right entry of row 998, attributed +100
+1099	s	S	R4369 right entry of row 999, attributed +100
+1100	or	M	R4369 right entry of row 1000, attributed +100
+1101	ta	S	R4369 right entry of row 1001, attributed +100
+1102	to	S	R4369 right entry of row 1002, attributed +100
+1105	ve	S	R4369 right entry of row 1005, attributed +100
+1106	vi	S	R4369 right entry of row 1006, attributed +100
+1107	ter	S	R4369 right entry of row 1007, attributed +100
+1109	a	S	R4369 right entry of row 1009, attributed +100
+1111	qu	S	R4369 right entry of row 1011, attributed +100
+1112	t	S	R4369 right entry of row 1012, attributed +100
+1113	tel	S	R4369 right entry of row 1013, attributed +100
+1116	aux	S	R4369 right entry of row 1016, attributed +100
+1117	qu'ils	S	R4369 right entry of row 1017, attributed +100
+1118	homme	H	R4369 left entry
+1119	re	S	R4369 right entry of row 1019, attributed +100
+1120	honneur	H	R4369 left entry
+1121	selon.	H	R4369 left entry
+1122	sa	S	R4369 right entry of row 1022, attributed +100
+1123	se	S	R4369 right entry of row 1023, attributed +100
+1124	savoir	H	R4369 left entry
+1125	saxe	H	R4369 left entry
+1126	ver	S	R4369 right entry of row 1026, attributed +100
+1127	ses	S	R4369 right entry of row 1027, attributed +100
+1129	tre	S	R4369 right entry of row 1029, attributed +100
+1131	te	S	R4369 right entry of row 1031, attributed +100
+1132	tu	S	R4369 right entry of row 1032, attributed +100
+1133	sera	H	R4369 left entry
+1134	up	S	R4369 right entry of row 1034, attributed +100
+1135	ur	S	R4369 right entry of row 1035, attributed +100
+1136	vrai	S	R4369 right entry of row 1036, attributed +100
+1137	us	S	R4369 right entry of row 1037, attributed +100
+1138	ut	S	R4369 right entry of row 1038, attributed +100
+1139	marq	H	R4369 left entry
+1140	vous	S	R4369 right entry of row 1040, attributed +100
+1142	mor	H	R4369 left entry
+1143	mort..	H	R4369 left entry
+1146	ud	S	R4369 right entry of row 1046, attributed +100
+1147	on	H	R4369 left entry
+1148	si	S	R4369 right entry of row 1048, attributed +100
+1149	so	S	R4369 right entry of row 1049, attributed +100
+1150	su	S	R4369 right entry of row 1050, attributed +100
+1151	st	S	R4369 right entry of row 1051, attributed +100
+1152	st	S	R4369 right entry of row 1052, attributed +100
+1154	t	S	R4369 right entry of row 1054, attributed +100
+1155	une	S	R4369 right entry of row 1055, attributed +100
+1156	uni	S	R4369 right entry of row 1056, attributed +100
+1157	tes	S	R4369 right entry of row 1057, attributed +100
+1159	vre	H	R4369 left entry
+1160	vous	S	R4369 right entry of row 1060, attributed +100
+1161	ti	S	R4369 right entry of row 1061, attributed +100
+1162	n	S	R4369 right entry of row 1062, attributed +100
+1163	t	S	R4369 right entry of row 1063, attributed +100
+1165	ber:.	H	R4369 left entry
+1167	u	S	R4369 right entry of row 1067, attributed +100
+1168	vacante	H	R4369 left entry
+1169	no	H	R4369 left entry
+1170	nu	H	R4369 left entry
+1171	ser	S	R4369 right entry of row 1071, attributed +100
+1172	vous	H	R4369 left entry
+1174	un	S	R4369 right entry of row 1074, attributed +100
+1175	voulu	H	R4369 left entry
+1176	k?	S	R4369 right entry of row 1076, attributed +100
+1177	mon	H	R4369 left entry
+1179	e	S	R4369 right entry of row 1079, attributed +100
+1180	l	S	R4369 right entry of row 1080, attributed +100
+1181	r	S	R4369 right entry of row 1081, attributed +100
+1182	brou	H	R4369 left entry
+1183	tu	S	R4369 right entry of row 1083, attributed +100
+1184	bon	H	R4369 left entry
+1185	bord	H	R4369 left entry
+1187	y	S	R4369 right entry of row 1087, attributed +100
+1189	vi	H	R4369 left entry
+1190	s	S	R4369 right entry of row 1090, attributed +100
+1193	c.	S	R4369 right entry of row 1093, attributed +100
+1194	tur	S	R4369 right entry of row 1094, attributed +100
+1196	vive	H	R4369 left entry
+1197	vivre	H	R4369 left entry
+1198	s	S	R4369 right entry of row 1098, attributed +100
+1199	der	S	R4369 right entry of row 1099, attributed +100
+1200	er	S	R4369 right entry of row 1100, attributed +100
+1202	hiver	S	R4369 right entry of row 1102, attributed +100
+1203	vient	H	R4369 left entry
+1204	ministre	H	R4369 left entry
+1205	iu	S	R4369 right entry of row 1105, attributed +100
+1206	io	S	R4369 right entry of row 1106, attributed +100
+1207	ji	S	R4369 right entry of row 1107, attributed +100
+1208	ie	S	R4369 right entry of row 1108, attributed +100
+1209	ia	S	R4369 right entry of row 1109, attributed +100
+1210	moi	H	R4369 left entry
+1211	du	H	R4369 left entry
+1212	libre	S	R4369 right entry of row 1112, attributed +100
+1213	lieu	S	R4369 right entry of row 1113, attributed +100
+1215	min...	H	R4369 left entry
+1217	ordonn	S	R4369 right entry of row 1117, attributed +100
+1218	ordre	S	R4369 right entry of row 1118, attributed +100
+1219	ors	S	R4369 right entry of row 1119, attributed +100
+1220	f	S	R4369 right entry of row 1120, attributed +100
+1222	avoit	S	R4369 right entry of row 1122, attributed +100
+1223	aussi	S	R4369 right entry of row 1123, attributed +100
+1224	Secre d'Etat	H	R4369 left entry
+1225	ob	S	R4369 right entry of row 1125, attributed +100
+1226	oc	S	R4369 right entry of row 1126, attributed +100
+1228	s'il	H	R4369 left entry
+1230	aussi	H	R4369 left entry
+1232	intention	S	R4369 right entry of row 1132, attributed +100
+1233	interet	S	R4369 right entry of row 1133, attributed +100
+1234	jour	S	R4369 right entry of row 1134, attributed +100
+1236	aucun	S	R4369 right entry of row 1136, attributed +100
+1238	metre	H	R4369 left entry
+1240	ma	S	R4369 right entry of row 1140, attributed +100
+1241	lo	S	R4369 right entry of row 1141, attributed +100
+1242	lu	S	R4369 right entry of row 1142, attributed +100
+1245	neutralite	S	R4369 right entry of row 1145, attributed +100
+1246	neuf	S	R4369 right entry of row 1146, attributed +100
+1247	ner	S	R4369 right entry of row 1147, attributed +100
+1249	ni	S	R4369 right entry of row 1149, attributed +100
+1251	million	S	R4369 right entry of row 1151, attributed +100
+1252	croire	H	R4369 left entry
+1253	mille	S	R4369 right entry of row 1153, attributed +100
+1254	credit	H	R4369 left entry
+1255	du	H	R4369 left entry
+1256	nouveau	S	R4369 right entry of row 1156, attributed +100
+1257	nouvelle	S	R4369 right entry of row 1157, attributed +100
+1259	cer	H	R4369 left entry
+1260	certain	H	R4369 left entry
+1261	affaire	H	R4369 left entry
+1262	..ion	S	R4369 right entry of row 1162, attributed +100
+1263	juge	S	R4369 right entry of row 1163, attributed +100
+1265	age	H	R4369 left entry
+1267	jusqu	S	R4369 right entry of row 1167, attributed +100
+1268	dans	H	R4369 left entry
+1269	ceux	H	R4369 left entry
+1270	chambre	H	R4369 left entry
+1271	m	M	R4369 right entry of row 1171, attributed +100
+1272	la	S	R4369 right entry of row 1172, attributed +100
+1273	le	S	R4369 right entry of row 1173, attributed +100
+1274	li	S	R4369 right entry of row 1174, attributed +100
+1276	cela	H	R4369 left entry
+1277	celle	H	R4369 left entry
+1278	celui	H	R4369 left entry
+1279	cen	H	R4369 left entry
+1280	l	H	R4369 left entry
+1281	particulier	H	R4369 left entry
+1282	observ	S	R4369 right entry of row 1182, attributed +100
+1283	obten	S	R4369 right entry of row 1183, attributed +100
+1284	s	H	R4369 left entry
+1285	ag	H	R4369 left entry
+1287	ai	H	R4369 left entry
+1288	officier	S	R4369 right entry of row 1188, attributed +100
+1290	pa	S	R4369 right entry of row 1190, attributed +100
+1291	humble	S	R4369 right entry of row 1191, attributed +100
+1292	aparence	H	R4369 left entry
+1295	Londres	S	R4369 right entry of row 1195, attributed +100
+1296	long	S	R4369 right entry of row 1196, attributed +100
+1297	loix	S	R4369 right entry of row 1197, attributed +100
+1298	lor.	S	R4369 right entry of row 1198, attributed +100
+1299	cet	H	R4369 left entry
+1300	cette	H	R4369 left entry
+1302	avec	S	R4369 right entry of row 1202, attributed +100
+1304	ma	S	R4369 right entry of row 1204, attributed +100
+1305	me	S	R4369 right entry of row 1205, attributed +100
+1306	mi	S	R4369 right entry of row 1206, attributed +100
+1307	mo	S	R4369 right entry of row 1207, attributed +100
+1308	mu	S	R4369 right entry of row 1208, attributed +100
+1309	concla	H	R4369 left entry
+1311	act	H	R4369 left entry
+1312	z	S	R4369 right entry of row 1212, attributed +100
+1313	appell	H	R4369 left entry
+1314	admi	H	R4369 left entry
+1315	mouvemt.	S	R4369 right entry of row 1215, attributed +100
+1316	muni	S	R4369 right entry of row 1216, attributed +100
+1319	parceque	S	R4369 right entry of row 1219, attributed +100
+1321	able	H	R4369 left entry
+1322	i	S	R4369 right entry of row 1222, attributed +100
+1324	or	S	R4369 right entry of row 1224, attributed +100
+1325	os	M	R4369 right entry of row 1225, attributed +100
+1326	accommod	H	R4369 left entry
+1327	acce..	H	R4369 left entry
+1328	val	S	R4369 right entry of row 1228, attributed +100
+1329	van	S	R4369 right entry of row 1229, attributed +100
+1330	baron	M	R4369 right entry of row 1230, attributed +100
+1331	paroit	H	R4369 left entry
+1332	part	H	R4369 left entry
+1333	cependt	H	R4369 left entry
+1336	vo	S	R4369 right entry of row 1236, attributed +100
+1337	voy	S	R4369 right entry of row 1237, attributed +100
+1338	voit	S	R4369 right entry of row 1238, attributed +100
+1340	confer	H	R4369 left entry
+1341	raison	S	R4369 right entry of row 1241, attributed +100
+1342	conge	H	R4369 left entry
+1343	retour	S	R4369 right entry of row 1243, attributed +100
+1344	reve	S	R4369 right entry of row 1244, attributed +100
+1345	rien	S	R4369 right entry of row 1245, attributed +100
+1346	courier	H	R4369 left entry
+1347	le Dc de	H	R4369 left entry
+1350	defen	H	R4369 left entry
+1351	deja	H	R4369 left entry
+1352	pi	S	R4369 right entry of row 1252, attributed +100
+1353	po	S	R4369 right entry of row 1253, attributed +100
+1354	pu	S	R4369 right entry of row 1254, attributed +100
+1355	conven	H	R4369 left entry
+1356	contribu	H	R4369 left entry
+1357	contre.	H	R4369 left entry
+1358	contraire	H	R4369 left entry
+1359	vent	S	R4369 right entry of row 1259, attributed +100
+1360	continu	H	R4369 left entry
+1361	memoire	H	R4369 left entry
+1362	plus	S	R4369 right entry of row 1262, attributed +100
+1363	point	S	R4369 right entry of row 1263, attributed +100
+1364	pre	H	R4369 left entry
+1365	polonois	S	R4369 right entry of row 1265, attributed +100
+1366	port	S	R4369 right entry of row 1266, attributed +100
+1367	possession	S	R4369 right entry of row 1267, attributed +100
+1368	pres	S	R4369 right entry of row 1268, attributed +100
+1369	projet	S	R4369 right entry of row 1269, attributed +100
+1370	propos	S	R4369 right entry of row 1270, attributed +100
+1371	rom..	S	R4369 right entry of row 1271, attributed +100
+1372	ans	H	R4369 left entry
+1373	a	S	R4369 right entry of row 1273, attributed +100
+1374	anglois	H	R4369 left entry
+1375	n	S	R4369 right entry of row 1275, attributed +100
+1376	L	M	R4369 right entry of row 1276, attributed +100
+1377	ni	H	R4369 left entry
+1381	lui	S	R4369 right entry of row 1281, attributed +100
+1382	vienne	S	R4369 right entry of row 1282, attributed +100
+1383	allem(gne)	H	R4369 left entry
+1385	non	H	R4369 left entry
+1388	raison	S	R4369 right entry of row 1288, attributed +100
+1391	de	S	R4369 right entry of row 1291, attributed +100
+1392	dernier	S	R4369 right entry of row 1292, attributed +100
+1393	des	S	R4369 right entry of row 1293, attributed +100
+1394	c	S	R4369 right entry of row 1294, attributed +100
+1395	ef	S	R4369 right entry of row 1295, attributed +100
+1396	eg	S	R4369 right entry of row 1296, attributed +100
+1399	effet	S	R4369 right entry of row 1299, attributed +100
+1400	plutot	H	R4369 left entry
+1401	ca	S	R4369 right entry of row 1301, attributed +100
+1402	ce	S	R4369 right entry of row 1302, attributed +100
+1403	m	S	R4369 right entry of row 1303, attributed +100
+1404	d	S	R4369 right entry of row 1304, attributed +100
+1405	a?	H	R4369 left entry
+1406	ab	H	R4369 left entry
+1407	x	S	R4369 right entry of row 1307, attributed +100
+1408	e	S	R4369 right entry of row 1308, attributed +100
+1409	ll	S	R4369 right entry of row 1309, attributed +100
+1410	eur	S	R4369 right entry of row 1310, attributed +100
+1411	ar	H	R4369 left entry
+1412	as	H	R4369 left entry
+1413	at	H	R4369 left entry
+1414	au	H	R4369 left entry
+1415	par	S	R4369 right entry of row 1315, attributed +100
+1417	ble	S	R4369 right entry of row 1317, attributed +100
+1418	bli	S	R4369 right entry of row 1318, attributed +100
+1419	ou	H	R4369 left entry
+1420	depute	S	R4369 right entry of row 1320, attributed +100
+1421	premier	M	R4369 right entry of row 1321, attributed +100
+1422	prendre	S	R4369 right entry of row 1322, attributed +100
+1423	present	M	R4369 right entry of row 1323, attributed +100
+1424	er	S	R4369 right entry of row 1324, attributed +100
+1425	es	S	R4369 right entry of row 1325, attributed +100
+1426	et	S	R4369 right entry of row 1326, attributed +100
+1427	eu	S	R4369 right entry of row 1327, attributed +100
+1428	15	M	R4369 right entry of row 1328, attributed +100
+1429	chose	H	R4369 left entry
+1430	ex	S	R4369 right entry of row 1330, attributed +100
+1432	tu	H	R4369 left entry
+1434	regence	S	R4369 right entry of row 1334, attributed +100
+1435	arriv	H	R4369 left entry
+1436	natur	H	R4369 left entry
+1437	nd	H	R4369 left entry
+1438	s	M	R4369 right entry of row 1338, attributed +100
+1439	z	S	R4369 right entry of row 1339, attributed +100
+1440	p	S	R4369 right entry of row 1340, attributed +100
+1443	can..	S	R4369 right entry of row 1343, attributed +100
+1444	ainsi	H	R4369 left entry
+1445	ajout	H	R4369 left entry
+1446	ox	H	R4369 left entry
+1448	bi	S	R4369 right entry of row 1348, attributed +100
+1449	fer	S	R4369 right entry of row 1349, attributed +100
+1450	feu	S	R4369 right entry of row 1350, attributed +100
+1451	alliance	H	R4369 left entry
+1452	fin	S	R4369 right entry of row 1352, attributed +100
+1453	ns	H	R4369 left entry
+1454	nt	H	R4369 left entry
+1455	tu	S	R4369 right entry of row 1355, attributed +100
+1456	to	S	R4369 right entry of row 1356, attributed +100
+1457	ti	S	R4369 right entry of row 1357, attributed +100
+1458	te	S	R4369 right entry of row 1358, attributed +100
+1459	ta	S	R4369 right entry of row 1359, attributed +100
+1460	t	S	R4369 right entry of row 1360, attributed +100
+1461	commis	S	R4369 right entry of row 1361, attributed +100
+1462	nom	H	R4369 left entry
+1463	communi	S	R4369 right entry of row 1363, attributed +100
+1464	comp	S	R4369 right entry of row 1364, attributed +100
+1465	compagnie	S	R4369 right entry of row 1365, attributed +100
+1466	tout	S	R4369 right entry of row 1366, attributed +100
+1467	ple	H	R4369 left entry
+1468	pli	H	R4369 left entry
+1470	traite	S	R4369 right entry of row 1370, attributed +100
+1471	id	H	R4369 left entry
+1472	circonstance	S	R4369 right entry of row 1372, attributed +100
+1473	connois	S	R4369 right entry of row 1373, attributed +100
+1474	connu	S	R4369 right entry of row 1374, attributed +100
+1475	conseil	S	R4369 right entry of row 1375, attributed +100
+1476	consente	S	R4369 right entry of row 1376, attributed +100
+1477	ba	S	R4369 right entry of row 1377, attributed +100
+1481	des	S	R4369 right entry of row 1381, attributed +100
+1482	detach	S	R4369 right entry of row 1382, attributed +100
+1483	devant	S	R4369 right entry of row 1383, attributed +100
+1484	devoir	S	R4369 right entry of row 1384, attributed +100
+1485	2	S	R4369 right entry of row 1385, attributed +100
+1486	chang	S	R4369 right entry of row 1386, attributed +100
+1487	char	S	R4369 right entry of row 1387, attributed +100
+1488	chemin	S	R4369 right entry of row 1388, attributed +100
+1489	go	H	R4369 left entry
+1490	cher	S	R4369 right entry of row 1390, attributed +100
+1491	f	S	R4369 right entry of row 1391, attributed +100
+1492	fi	S	R4369 right entry of row 1392, attributed +100
+1493	enfin	H	R4369 left entry
+1494	engage	H	R4369 left entry
+1495	fa	S	R4369 right entry of row 1395, attributed +100
+1496	fe	S	R4369 right entry of row 1396, attributed +100
+1497	troupes	S	R4369 right entry of row 1397, attributed +100
+1498	trouver	S	R4369 right entry of row 1398, attributed +100
+1499	fru	H	R4369 left entry
+1500	ts	S	R4369 right entry of row 1400, attributed +100
+1501	facilite	H	R4369 left entry
+1502	façon	H	R4369 left entry
+1503	il y a	H	R4369 left entry
+1505	im	H	R4369 left entry
+1506	temoign	S	R4369 right entry of row 1406, attributed +100
+1510	sur	S	R4369 right entry of row 1410, attributed +100
+1511	toujours	S	R4369 right entry of row 1411, attributed +100
+1512	d	S	R4369 right entry of row 1412, attributed +100
+1513	da	S	R4369 right entry of row 1413, attributed +100
+1514	de	S	R4369 right entry of row 1414, attributed +100
+1515	di	S	R4369 right entry of row 1415, attributed +100
+1516	do	S	R4369 right entry of row 1416, attributed +100
+1517	gne	H	R4369 left entry
+1519	gue	H	R4369 left entry
+1520	etre	H	R4369 left entry
+1521	fla	S	R4369 right entry of row 1421, attributed +100
+1522	tion	S	R4369 right entry of row 1422, attributed +100
+1524	faut	H	R4369 left entry
+1525	tion	S	R4369 right entry of row 1425, attributed +100
+1526	France	H	R4369 left entry
+1527	fort	H	R4369 left entry
+1529	tot	S	R4369 right entry of row 1429, attributed +100
+1530	touche	S	R4369 right entry of row 1430, attributed +100
+1531	consequen	S	R4369 right entry of row 1431, attributed +100
+1532	consider	S	R4369 right entry of row 1432, attributed +100
+1533	commander	S	R4369 right entry of row 1433, attributed +100
+1534	comme	S	R4369 right entry of row 1434, attributed +100
+1535	comment	S	R4369 right entry of row 1435, attributed +100
+1536	commerce	S	R4369 right entry of row 1436, attributed +100
+1537	lan	H	R4369 left entry
+1539	les..	H	R4369 left entry
+1540	les	H	R4369 left entry
+1542	content	S	R4369 right entry of row 1442, attributed +100
+1543	diffici	H	R4369 left entry
+1544	dire	H	R4369 left entry
+1545	dispose	H	R4369 left entry
+1546	exam	H	R4369 left entry
+1548	expedi	H	R4369 left entry
+1549	expres	H	R4369 left entry
+1553	florin	H	R4369 left entry
+1554	empire	S	R4369 right entry of row 1454, attributed +100
+1555	ens	H	R4369 left entry
+1556	ent	H	R4369 left entry
+1557	entre	H	R4369 left entry
+1558	jeudi	H	R4369 left entry
+1559	if	H	R4369 left entry
+1560	ig	H	R4369 left entry
+1562	il	H	R4369 left entry
+1563	ils	H	R4369 left entry
+1566	lequel	H	R4369 left entry
+1567	les	H	R4369 left entry
+1568	lire	H	R4369 left entry
+1569	li	H	R4369 left entry
+1571	depuis	H	R4369 left entry
+1572	Dit	H	R4369 left entry
+1573	donne	H	R4369 left entry
+1574	dont	H	R4369 left entry
+1578	inform	H	R4369 left entry
+1580	insinuation	H	R4369 left entry
+1583	front..	H	R4369 left entry
+1586	ger	H	R4369 left entry
+1587	gens	H	R4369 left entry
+1588	ger	H	R4369 left entry
+1595	maniere	H	R4369 left entry
+1596	ment	H	R4369 left entry
+1597	mar	H	R4369 left entry
+1598	march	H	R4369 left entry
+1600	m	H	R4369 left entry
+1603	gli	H	R4369 left entry
+1604	gle	H	R4369 left entry
+1608	gri	H	R4369 left entry
+1609	Et.s generaux	S	R4369 right entry of row 1509, attributed +100
+1610	les Et.s gen.t	S	R4369 right entry of row 1510, attributed +100
+1611	pce d'Orange	S	R4369 right entry of row 1511, attributed +100
+1612	princesse d'Orange	S	R4369 right entry of row 1512, attributed +100
+1613	le Prince	S	R4369 right entry of row 1513, attributed +100
+1617	election	H	R4369 left entry
+1618	elle	H	R4369 left entry
+1619	em	H	R4369 left entry
+1620	h	H	R4369 left entry
+1621	gue	H	R4369 left entry
+1632	envers	H	R4369 left entry
+1633	envoy	H	R4369 left entry
+1635	prince de	S	R4369 right entry of row 1535, attributed +100
+1638	eux	H	R4369 left entry
+1639	Europe	H	R4369 left entry
+1640	amsterdam	S	R4369 right entry of row 1540, attributed +100
+1641	les P.ces Maritimes	S	R4369 right entry of row 1541, attributed +100
+1642	fais	H	R4369 left entry
+1643	fait	H	R4369 left entry
+1644	fal	H	R4369 left entry
+1645	ez	H	R4369 left entry
+1646	Holderness	S	R4369 right entry of row 1546, attributed +100
+1648	fond	H	R4369 left entry
+1649	former	H	R4369 left entry
+1650	f	M	R4369 left entry
+1651	ha	H	R4369 left entry
+1653	ho	H	R4369 left entry
+1654	hi	H	R4369 left entry
+1655	he	H	R4369 left entry
+1656	etablir	H	R4369 left entry
+1657	etat	H	R4369 left entry
+1658	ete	H	R4369 left entry
+1659	etoi	H	R4369 left entry
+1662	ec	M	R4369 left entry
+1663	ed	H	R4369 left entry
+1664	ca	H	R4369 left entry
+1665	ke	H	R4369 left entry
+1667	lettre	H	R4369 left entry
+1668	leve	H	R4369 left entry
+1669	leur	H	R4369 left entry
+1671	bruhl	S	R4369 right entry of row 1571, attributed +100
+1672	fort	H	R4369 left entry
+1673	fois	H	R4369 left entry
+1674	ge	H	R4369 left entry
+1675	fusse	H	R4369 left entry
+1676	fut	H	R4369 left entry
+1677	to	H	R4369 left entry
+1678	la Cour de Vienne	S	R4369 right entry of row 1578, attributed +100
+1679	ge	H	R4369 left entry
+1681	guerre	H	R4369 left entry
+1684	le Roy de Pologne	S	R4369 right entry of row 1584, attributed +100
+1685	grand	H	R4369 left entry
+1688	fra	H	R4369 left entry
+1693	ip.	H	R4369 left entry
+1694	ir	H	R4369 left entry
+1695	is	H	R4369 left entry
+1696	it	H	R4369 left entry
+1698	ga	H	R4369 left entry
+1699	livre	H	R4369 left entry
+1701	les Et.s gen.t	S	R4369 right entry of row 1601, attributed +100
+1702	el	H	R4369 left entry
+1703	em	H	R4369 left entry
+1706	garde	H	R4369 left entry
+1708	gazette	H	R4369 left entry
+1710	general	H	R4369 left entry
+1714	gouvern	H	R4369 left entry
+1718	fri	H	R4369 left entry
+1721	semble	H	R4369 left entry
+1723	ses	H	R4369 left entry
+1726	soi...	H	R4369 left entry
+1727	soyent	H	R4369 left entry
+1728	d	H	R4369 left entry
+1729	soi	H	R4369 left entry
+1732	prince	S	R4369 right entry of row 1632, attributed +100
+1733	princesse	S	R4369 right entry of row 1633, attributed +100
+1735	le Prince	S	R4369 right entry of row 1635, attributed +100
+1736	lt	H	R4369 left entry
+1738	main	H	R4369 left entry
+1739	major	H	R4369 left entry
+1740	mais	H	R4369 left entry
+1741	assur	H	R4369 left entry
+1743	assist	H	R4369 left entry
+1744	ation	H	R4369 left entry
+1745	attend	H	R4369 left entry
+1748	diminu	H	R4369 left entry
+1750	le Roy d'Angleterre	H	R4369 left entry
+1752	les Puiss. Maritimes	M	R4369 right entry of row 1652, attributed +100
+1753	ent	H	R4369 left entry
+1757	soient	H	R4369 left entry
+1759	silesie	H	R4369 left entry
+1760	sire	H	R4369 left entry
+1761	orange	S	R4369 right entry of row 1661, attributed +100
+1762	les Puiss. Maritimes	S	R4369 right entry of row 1662, attributed +100
+1763	pendant	H	R4369 left entry
+1764	per	H	R4369 left entry
+1765	personne	H	R4369 left entry
+1766	persuad	H	R4369 left entry
+1767	pere	M	R4369 left entry
+1768	peuple	H	R4369 left entry
+1769	peutetre	H	R4369 left entry
+1771	sous	H	R4369 left entry
+1772	st	H	R4369 left entry
+1773	ste	H	R4369 left entry
+1774	subside	H	R4369 left entry
+1775	e	H	R4369 left entry
+1776	subsiste	H	R4369 left entry
+1777	succez	H	R4369 left entry
+1782	sieur	H	R4369 left entry
+1785	sion	H	R4369 left entry
+1791	man	H	R4369 left entry
+1792	pe	H	R4369 left entry
+1793	qu'ils	H	R4369 left entry
+1794	qu'on	H	R4369 left entry
+1796	ro	H	R4369 left entry

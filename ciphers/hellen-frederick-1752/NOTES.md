@@ -1,4 +1,4 @@
-open
+partial
 Politische Correspondenz Friedrichs des Grossen vols. 9-10 (1752), 13 (1756) and 23 (1763) --
 archive.org identifiers politischecorres09fred, politischecorres10fred (both full-text searched for
 "Hellen" and fetched as djvu.txt and read directly by this worker, LANE CX2 25 Sept 2026, correcting
@@ -650,3 +650,103 @@ count). The images must be re-fetched (manifest gives the URLs; one login). Stat
 
 Requests: de-crypt.org 18 for this target (6 RecordsView, 12 full-size images), part of about 39 for the shared one-login job,
 1.7 s apart, no challenge. Vision calls: 1 for this target (3 in the job). Account name not in any committed file.
+
+## READ2-HEL (3 Oct 2026): R4369 key transcribed, known-key test on R1953 (account 2 worker for LANE-READ2)
+
+Step run: IMG-DECODE1's next step. **Route:** one browser login (`tools/decode_browser_login.js 4369 <scratchpad> --fetch
+<4 absolute filesrv URLs>`). R4369 P1-P4 were re-fetched full size, and all four sha1s match `images/decode/manifest.json`. The
+images are kept in the scratchpad and are not committed (not public domain), and the account name is in no file.
+Requests: de-crypt.org about 8 (login page, login submit, landing page, RecordsView/4369, 4 images), 1.7 s apart, no challenge;
+no other host.
+
+**What the sheet is.** P1 is the docket only ("Ellen a la Haye avec le Roy de Prusse 1751"). P4 is blank. P2+P3 are one spread
+headed "Hellen avec le Roy de Prusse", printed code numbers in blocks of 100: P2 has 901-1300 and a cut-off copy of 1401, and P3
+has 1401-1800 (entries up to 1796) plus a hand-numbered, unruled block 801-900 at the right.
+**Codes 1-800 are not on this record.** A row can carry two meanings: a LEFT one written straight after the number ("1202- vie"),
+and a RIGHT one, right-aligned against the next block's divider and ending in a dash ("avec -"). Many right entries are names
+(la Cour de Vienne, le Roy de Pologne, bruhl, les Puiss. Maritimes, baron, van) or syllables (ma me mi mo mu).
+
+**Transcription** (TRANSCRIPTION.md pipeline, shortened: no benchmark item of this hand exists). Column crops were cut with
+`python3 tools/iiif_lines.py --image <P2|P3 file> --out <scratchpad>/crops --region <x>,400,<665|660|950>,4880 --centres
+625,1835,3045,4255 --prefix P<p>_c<block> --debug`, once for each of the 10 blocks. That gives **40 crops** (4 per block, about
+25 rows each). Automatic line detection found 0 lines on the ruled table, so the centres were given by eye. The two blind Sonnet
+passes for each page each saw only that page's 20 crop paths (4 subagent calls). Their outputs were compared with a script keyed
+on the code: `reconcile_passes.py` aligns sequences of signs, but these passes are rows keyed by code number, so no alignment was
+needed and a code-keyed diff was used instead. I settled 44 disagreements from a strip montage of the disputed rows (my own
+vision reads: contact sheet, 2 header strips, 2 crop checks, 1 montage).
+**err_2reader 4.8%** (44 of 908 written cells: P2 26/564, P3 18/344). Most splits were spelling (cedilla, abbreviation dots).
+Six were row assignments of right entries, which sit about half a row low. One cell both readers got wrong: 1125 is "saxe",
+not "sacre"/"sage". **err_true is not measurable** (no benchmark item of this hand).
+`key_r4369/key.tsv`: 716 rows, 902 meaning cells, grade H 881 / M 21 (H = read from a period key sheet, rule 4).
+
+**Which code a right entry belongs to** is not stated on the sheet. A complementarity check (does a right entry sit beside an
+empty left cell?) gives no signal at offset 0, +100 or +-1 (178-191 of 321 against a 57% base rate). So three attributions were
+tested as separate keys (`key_r4369/build_keys.py [--check]`): L (left meanings), R0 (a right entry belongs to its own row's
+code), R100 (it belongs to the code on the same row of the next block, the one its dash points at).
+
+**Gate (brief step 4):** key_L covers 359 of R1953's 836 tokens, **42.9%**, so the gate (40% or more) is met. key_LR100 covers 470
+(56.2%).
+
+**Known-key test** (`sibling_michell/test_sibling.py --key <key> --out <file>`). This is a new mode in FT4's script (not a
+private copy). Its unigram numbers reproduce FT4's Michell row exactly (-9.641, p 0.695). Statistics: (uni) FT4's mean fr18
+word log-prob of the covered tokens; (bi) the mean fr18 PMI of the junction word pair over adjacent covered tokens.
+Controls, 200 each: (a) value-shuffled keys, applied to both statistics. (b) The target's token ORDER shuffled, applied to bi
+only. **Brief correction:** the brief said FT4's statistic is order-sensitive, but a mean over covered tokens is identical under
+any order shuffle by construction (CLAUDE.md rule 3, the bCAS / AX-5799 shape). That is why the bigram statistic was added: so
+that (b) can differ from the target. (c) Positive control: fr18 prose encoded with the same key, decoded windows at R1953's
+covered count (uni) or pair count (bi); power is the share of 200 windows reaching p<=0.05. Full table in HYPOTHESES.md.
+
+| key (R1953) | covered | uni real / shuffle mean / p95 | uni p | pairs | bi real / val-shuffle mean | bi val p | bi order-shuffle mean / p95 | bi order p | power uni / bi |
+|---|---|---|---|---|---|---|---|---|---|
+| L | 359 (42.9%) | -8.985 / -9.750 / -9.229 | 0.005 | 148 | -0.756 / -0.880 | 0.025 | -0.858 / -0.758 | 0.040 | 1.00 / 1.00 |
+| R0 | 195 (23.3%) | -8.891 / -8.604 / -8.046 | 0.805 | 44 | -0.896 / -0.875 | 0.545 | -0.846 / -0.656 | 0.645 | 1.00 / 1.00 |
+| **R100** | 315 (37.7%) | -6.930 / -8.578 / -8.185 | **0.000** | 125 | -0.455 / -0.865 | **0.000** | -0.656 / -0.541 | **0.010** | 1.00 / 1.00 |
+| L on codes R100 does not reach (Lonly) | 155 (18.5%) | -7.193 / -9.667 / -8.958 | **0.000** | 26 | -0.212 / -0.867 | **0.000** | -0.762 / -0.544 | **0.000** | 1.00 / 1.00 |
+| L on the 189 codes R100 also reaches | 204 (24.4%) | -10.346 / -9.949 / -9.418 | 0.855 | 48 | -0.836 / -0.889 | 0.285 | -0.899 / -0.755 | 0.220 | 1.00 / 1.00 |
+| **LR100** (R100 wins conflicts) | 470 (56.2%) | -7.017 / -9.157 / -8.755 | **0.000** | 266 | -0.361 / -0.877 | **0.000** | -0.694 / -0.609 | **0.000** | 1.00 / 1.00 |
+
+Seed 2 reproduces LR100 (uni -7.017 vs -9.181, p 0.000; bi order p 0.000). Under LR100 none of the other seven letters (R1045-R1049,
+R1060, R1061; 1756 and 1763) beats its controls. Under LR100 their uni p values run 0.665-0.98 at 16-34% coverage. The
+lowest of the 14 bigram p values is R1046's order p of 0.025, on 34 covered tokens with uni p 0.94, which does not survive a
+multiple-test correction. They are another code, as their ranges already suggested.
+
+**Reading of the result.** The right entries belong to code+100, and the left entries hold only where no right entry lands. On
+the 189 codes where both land, the left meanings carry no signal (p 0.855); they look like superseded or other-series values.
+The sheet does not say this. It is the control-backed test's choice, so those 305 key values are graded **S**, not H.
+**R1953 decoded with a period key:** `tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369` with `decode.json` gives
+`reading_R1953.txt`, and `--check` passes ("reading up to date"). Tokens 846: **H 152, C 0, S 304, M 16, I 0, U 374**. U are codes
+1-800 (not on this sheet) and 14 empty cells. The decoded spans are French fragments, e.g. "si feu pce d'Orange a [643] un ...",
+"eu le tems [486] son", "lieu qu' ... les plus", "prince de ... le ordre avance". Willem IV of Orange died 22 Oct 1751, so
+"feu" fits a 4 Jan 1752 letter. That is a fit, not a check.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/hellen-frederick-1752.json --file ciphers/hellen-frederick-1752/key_r4369/reading_R1953.txt`):
+```
+ok   length: got=1322, min=200, max=1000000000
+FAIL language: score=-0.976, null_p99=-1.741, real_p05=-0.954, real_median=-0.827, mode=both, N=1322
+FAIL - hellen-frederick-1752 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Calibration (`key_r4369/judge_calib.py`, output in `judge_calib_output.txt`): real fr18 prose was encoded with this key and
+decoded with the same gaps (uncovered words dropped), in windows of 846 tokens (358-406 covered). It scores -0.882 to -0.980
+and FAILs 2 of 8 windows (-0.972, -0.980), the same place R1953 sits. **At this key's coverage the judge cannot decide:** this
+is a FAIL near the gate and far above the null, not a negative.
+
+Status: **partial** (rule 5: a key beat its matched controls by a reproducible margin). Nothing is called more than "read with a
+period key, grade H for 152 tokens" (plus S 304 by attribution). Conditional on DECODE's transcription of R1953 (rule 2). Rule 7's
+fresh-session re-derivation has not been run; that is the orchestrator's step. Report what was found and where it was not found:
+codes 1-800 of this key were not found on R4369 P1-P4. Calls: 4 Sonnet subagent passes and 6 own image reads (no further passes).
+
+## Remaining gaps (READ2-HEL, 3 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; not on R4369; the BL Add MS 32276 neighbours (R4370 f.46, an unnamed 1751 table on which IMG-DECODE1 saw codes 131-148 with meanings) may be its first half; next: test R4370 P2/P3 with the same --key test after a 2-pass transcription, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the other seven letters (1756, 1763 cluster) - blocker: no-key-material; R4369 does not read them (controls above), and FT4b/IMG-DECODE1 found no meaning-bearing 1756/1763 Hellen table among the DECODE Add MS 32276 records looked at
+
+## Escalation (READ2-HEL, 3 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 named as the candidate first half above
+- [n/a] clear-pages: no clear passage of R1953 is known on disk to serve as a crib
+- [x] known-keys: R4369 transcribed and tested here, reads R1953 above every control
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the decoded spans (cryptanalytic, needs its own control), after the R4370 check
+- [x] image-check: R4369 read from the full-size images, two blind passes plus reconciliation
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 2 internal gaps; cheapest next: R4370 transcription + --key test for codes 1-800, ~$12
