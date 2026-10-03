@@ -1,0 +1,30 @@
+line	index	shape	before	after	best	conf	second	conf2
+Q1	4	p-shape: straight stem below line, bowl at right top, bar above	AA monogram	1 (dotless i stroke)	R17	0.2	R5	0.1
+Q1	7	g/9-shape: closed bowl, tail down then curling left into loop	2 (z-like)	d-curl (partial-d)	R20	0.45	R2	0.4
+Q1	10	psi-like: cup with two arms, straight stem below line	t	a (open)	R5	0.75	R14	0.1
+Q1	15	g: closed bowl, tail curving down-left	b	r (small)	R2	0.5	R20	0.35
+Q1	20	psi: cup/fork with straight stem below	a with loop above	g	R5	0.8	R14	0.05
+Q1	21	g: bowl with long tail curling left	psi	dot-backslash-dot	R2	0.5	R20	0.35
+Q1	24	g: bowl, tail curling left below	l	r (small)	R2	0.5	R20	0.35
+Q1	31	large swash C/ell: tall stem with top-left loop, lower C curve sweeping well below line	r (with apostrophe)	struck-through m (#m)	R9	0.55	R27	0.15
+Q1	34	small y: v-shape with short tail just below line (descender weak, uncertain)	o	r (small)	R7	0.35	R14	0.3
+Q1	38	large 9: round bowl, deep tail curving down and left	l	3	R20	0.55	R2	0.3
+Q1	40	g: bowl with loop tail below	3	r (small)	R2	0.5	R20	0.35
+Q1	47	g: bowl with loop tail below	6	d-curl (partial-d)	R2	0.5	R20	0.35
+Q2	2	long-s / f: heavy tall stem with crossbar, extends far below line, joined to h	6	h	R24	0.35	R11	0.2
+Q2	4	y with tall loop/flourish above, straight stroke descending left below line	h	r (small)	R10	0.5	R7	0.3
+Q2	7	g: bowl with long tail looping left below line	crossed-x/loop sign	Delta	R2	0.55	R20	0.3
+Q2	19	y: v-arms with long straight stem far below line	d-curl (partial-d)	m	R7	0.5	R10	0.3
+Q2	22	p: straight stem below line, bowl at right	d-curl (partial-d)	psi	R17	0.2	R5	0.1
+Q2	23	psi: cup with two arms, straight stem below	p	lambda	R5	0.8	R14	0.05
+Q2	33	g: bowl, tail curling down-left into loop	3	d-curl (partial-d)	R2	0.5	R20	0.4
+Q2	36	psi: cup with arms, straight stem below	t	3	R5	0.8	R14	0.05
+Q3	0	y/v with dot, tail sweeping down-left slightly below line	(line start)	r (small)	R14	0.4	R7	0.3
+Q3	9	long-s with loop at top, straight stem below line	w	q (straight descender)	R24	0.55	R11	0.1
+Q3	10	q: bowl with straight vertical descender	long-s	y (small)	R17	0.6	R20	0.2
+Q3	11	small y: v-shape, short tail below line	q	delta-curl (d)	R7	0.35	R14	0.3
+Q3	16	psi: cup with arms, straight stem below	6	h	R5	0.8	R14	0.05
+Q3	20	g with z-shaped (yogh) tail below line	a	r (small)	R2	0.35	R23	0.25
+Q3	24	g with z-shaped (yogh) tail below line, same as Q3 20	6 (after comma)	q	R2	0.35	R23	0.25
+Q3	25	q: bowl with straight vertical descender	g	Delta	R17	0.6	R20	0.2
+Q3	28	q: bowl with straight vertical descender	c	r (small)	R17	0.6	R20	0.2

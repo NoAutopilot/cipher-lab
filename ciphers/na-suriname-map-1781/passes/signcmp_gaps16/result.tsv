@@ -1,0 +1,17 @@
+# GAPS16-na-suriname-map-1781 (account-4), 2 Oct 2026: the blind call's rows (result_raw.tsv) mapped back to tokens by the
+# call's own neighbour shapes against ciphertext_2061_battery.tsv, and refs mapped through passes/signcmp_gaps15/blind_key.json.
+# Q1 = 2061 L04, Q2 = L06, Q3 = L10. Settle rule (brief.md): change only at conf >= 0.6 with a different-valued runner-up.
+query	token	reader_code	best_sheet_sign	conf	runner_up	conf2	settled
+Q1 10	2061_bat_L04:10	y	S row psi	0.75	D row tall v	0.1	yes: s (M, context 'yder' wanted d)
+Q1 15	2061_bat_L04:15	g	L row g	0.5	G row 9	0.35	no
+Q1 21	2061_bat_L04:21	g	L row g	0.5	G row 9	0.35	no
+Q1 24	2061_bat_L04:24	g	L row g	0.5	G row 9	0.35	no
+Q1 38/40	2061_bat_L04:37/39	g	G row 9 / L row g	0.55/0.5	L row g / G row 9	0.3/0.35	no (neighbours off by one; below 0.6 either way)
+Q2 7	2061_bat_L06:7	g	L row g	0.55	G row 9	0.3	no
+Q2 19	2061_bat_L06:18	y	N row ij	0.5	M row y	0.3	no (neighbours approximate)
+Q2 23	2061_bat_L06:22	y	S row psi	0.8	D row tall v	0.05	yes: s (H; 'bastion')
+Q3 10	2061_bat_L10:10	q	P row q	0.6	G row 9	0.2	confirms q=p, no change
+Q3 11	2061_bat_L10:11	y	N row ij	0.35	D row tall v	0.3	no
+Q3 20	2061_bat_L10:21	g	L row g	0.35	trefoil code	0.25	no (z-shaped tail)
+Q3 25	2061_bat_L10:26	g	P row q	0.6	G row 9	0.2	yes: p (M)
+Q3 28	2061_bat_L10:29	g	P row q	0.6	G row 9	0.2	yes: p (M)

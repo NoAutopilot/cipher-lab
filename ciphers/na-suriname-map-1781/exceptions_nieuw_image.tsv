@@ -4,3 +4,7 @@ line	pos	value	grade	reason
 2039_leg_f	6	c|z	M	GAPS15 blind image call: 0.45, looped-p form, not separated (Q11); kept two-valued
 2039_leg_b	2	s	M	GAPS15 blind image call: Nieuw S row 6, 0.7, runner-up K row script B (Q14); readers' b here is the 6-shaped sign
 2061_bat_L01	4	a	H	GAPS15 blind image call: Nieuw A row x-with-dots, 0.6 (Q13)
+2061_bat_L06	22	s	H	GAPS16 blind image call: readers' y is the psi sign, Nieuw S row psi 0.8, runner-up D row tall v 0.05 (passes/signcmp_gaps16/result.tsv Q2 23); gives 'bastion' in L06
+2061_bat_L04	10	s	M	GAPS16 blind image call: readers' y is the psi sign, Nieuw S row psi 0.75, runner-up D row 0.1 (Q1 10); against context: y=d gave 'yder', s gives 'ysder'
+2061_bat_L10	26	p	M	GAPS16 blind image call: readers' g is a straight-descender q, Nieuw P row q 0.6, runner-up G row 9 0.2 (Q3 25); mapped by neighbours, reading not improved
+2061_bat_L10	29	p	M	GAPS16 blind image call: readers' g is a straight-descender q, Nieuw P row q 0.6, runner-up G row 9 0.2 (Q3 28); mapped by neighbours, reading not improved
