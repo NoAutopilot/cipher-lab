@@ -17,6 +17,16 @@ AND drops below 5 lines absolute -- a real collapse, not a normal edit or a legi
 containing "shrink", "regen", "restore" or "AX2-SHRINK" (case-insensitive) exempts the whole run: a worker
 doing a deliberate, named shrink or a restore is not the incident this guards against.
 
+Binary files (3 Oct 2026, TOOL-FSG-JPEG; GAPS29 and CLOSER-40 found the tool crashed with UnicodeDecodeError on
+any JPEG path, so a worker pushing images had to drop them from the check). Both sides are now read as bytes. A
+side is binary when it holds a NUL byte or is not valid UTF-8; when either side is binary the comparison is in
+bytes, not lines: a path fails when its new size is below 20 percent of the prior size AND below 1024 bytes
+absolute (BINARY_STUB_BYTES). Meant to catch: a binary (a JPEG, a PDF) replaced by a tiny text stub such as
+"PLACEHOLDER" or an empty file -- the PR-LAND-3 shape on an image. Must NOT block: a JPEG re-encoded to a
+fraction of its size but still a real image (AX2-SHRINK's PNG-to-JPEG conversion: 2 MB -> 300 KB passes); a
+binary swapped for another binary of similar size; a brand-new binary. Text files keep the line rule unchanged.
+Tests for each case: tools/tests/test_file_shrink_guard.py (section 6).
+
 Exit 0 (nothing shrank, or a shrink was found but the commit message exempts it), 1 (an unexempted shrink was
 found), 2 (a named path does not exist in the working tree at all -- nothing to compare, likely a typo).
 Offline; reads the working tree and `git show`/`git log` only, no network. Test: tools/tests/test_file_shrink_guard.py.
@@ -36,6 +46,7 @@ import subprocess
 import sys
 
 EXEMPT_WORDS = ("shrink", "regen", "restore", "ax2-shrink")
+BINARY_STUB_BYTES = 1024
 
 
 def line_count(text):
@@ -63,6 +74,42 @@ def exempt(message):
     return any(w in low for w in EXEMPT_WORDS)
 
 
+def is_binary(data):
+    """True for bytes holding a NUL byte or not decodable as UTF-8 (a JPEG, PNG, PDF); False for text and None."""
+    if data is None:
+        return False
+    if isinstance(data, str):
+        return False
+    if b"\0" in data:
+        return True
+    try:
+        data.decode("utf-8")
+    except UnicodeDecodeError:
+        return True
+    return False
+
+
+def is_byte_shrink(before_b, after_b):
+    """Binary analogue of is_shrink(): below 20% of the prior byte size AND below BINARY_STUB_BYTES absolute.
+    A re-encoded image stays well above 1 KB; a text stub or an empty file does not."""
+    if before_b <= 0:
+        return False
+    return after_b < before_b * 0.2 and after_b < BINARY_STUB_BYTES
+
+
+def check_bytes(path, before_data, after_data):
+    """Like check_file() but takes raw bytes for both sides, so it never raises on a binary file. Text on
+    both sides -> the line rule (units "lines"); binary on either side -> the byte rule (units "bytes").
+    Returns (path, before_n, after_n, units) on a shrink, else None. before_data None means a new path."""
+    if before_data is None:
+        return None
+    if is_binary(before_data) or is_binary(after_data):
+        before_n, after_n = len(before_data), len(after_data)
+        return (path, before_n, after_n, "bytes") if is_byte_shrink(before_n, after_n) else None
+    result = check_file(path, before_data.decode("utf-8"), after_data.decode("utf-8"))
+    return result + ("lines",) if result else None
+
+
 def check_file(path, before_text, after_text):
     """Return (path, before_n, after_n) if this path shrank per is_shrink(), else None.
     before_text is None for a path that did not exist at the compared ref (a new file) -- never a shrink."""
@@ -75,11 +122,18 @@ def check_file(path, before_text, after_text):
     return None
 
 
-def git_show(root, ref, relpath):
-    r = subprocess.run(["git", "show", f"{ref}:{relpath}"], cwd=root, capture_output=True, text=True)
+def git_show_bytes(root, ref, relpath):
+    """Raw bytes of relpath at ref, or None if absent there. Never decodes, so safe on a JPEG."""
+    r = subprocess.run(["git", "show", f"{ref}:{relpath}"], cwd=root, capture_output=True)
     if r.returncode != 0:
         return None
     return r.stdout
+
+
+def git_show(root, ref, relpath):
+    """Text of relpath at ref (undecodable bytes replaced, never raises), or None if absent there."""
+    data = git_show_bytes(root, ref, relpath)
+    return None if data is None else data.decode("utf-8", errors="replace")
 
 
 def head_commit_message(root, ref):
@@ -89,8 +143,8 @@ def head_commit_message(root, ref):
 
 def run(paths, root, ref, message):
     """Core check, usable both from the CLI and from tools/room.py. Returns (bad, missing) where bad is a
-    list of (relpath, before_n, after_n) triples that shrank and missing is a list of paths absent from the
-    working tree entirely."""
+    list of (relpath, before_n, after_n, units) tuples that shrank (units "lines" or "bytes") and missing is
+    a list of paths absent from the working tree entirely."""
     bad, missing = [], []
     for p in paths:
         full = p if os.path.isabs(p) else os.path.join(root, p)
@@ -98,9 +152,10 @@ def run(paths, root, ref, message):
         if not os.path.exists(full):
             missing.append(rel)
             continue
-        before_text = git_show(root, ref, rel)
-        after_text = open(full, encoding="utf-8").read()
-        result = check_file(rel, before_text, after_text)
+        before_data = git_show_bytes(root, ref, rel)
+        with open(full, "rb") as f:
+            after_data = f.read()
+        result = check_bytes(rel, before_data, after_data)
         if result:
             bad.append(result)
     return bad, missing
@@ -124,11 +179,12 @@ def main(argv=None):
 
     if bad and exempt(message):
         print(f"file_shrink_guard: {len(bad)} path(s) shrank but the commit message is exempt "
-              f"(shrink/regen/restore/AX2-SHRINK): " + ", ".join(p for p, _, _ in bad))
+              f"(shrink/regen/restore/AX2-SHRINK): " + ", ".join(p for p, _, _, _ in bad))
         return 2 if missing else 0
 
-    for p, b, af in bad:
-        print(f"SHRINK: {p} {b} -> {af} lines (below 20% of prior count and below 5 lines)")
+    for p, b, af, units in bad:
+        floor = "5 lines" if units == "lines" else f"{BINARY_STUB_BYTES} bytes"
+        print(f"SHRINK: {p} {b} -> {af} {units} (below 20% of prior size and below {floor})")
 
     if bad:
         print(f"file_shrink_guard: FAIL -- {len(bad)} of {len(a.paths)} path(s) shrank; if this is a "

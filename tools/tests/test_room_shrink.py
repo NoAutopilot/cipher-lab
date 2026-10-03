@@ -55,6 +55,25 @@ with tempfile.TemporaryDirectory() as d:
     bad = room.shrink_ok({missing: 26}, message="ROOM: some update")
     report("a path absent from the working tree is skipped, not refused", bad is None, bad)
 
+# binary snapshots (3 Oct 2026, TOOL-FSG-JPEG): line_count_from_ref() now returns bytes, and a JPEG in a
+# --push used to crash the text read with UnicodeDecodeError
+JPEG = b"\xff\xd8\xff\xe0" + bytes(range(256)) * 400 + b"\xff\xd9"
+with tempfile.TemporaryDirectory() as d:
+    jp = os.path.join(d, "f.jpg")
+    open(jp, "wb").write(JPEG)
+    bad = room.shrink_ok({jp: JPEG}, message="ROOM: images")
+    report("an unchanged JPEG pushes (no crash, no refusal)", bad is None, bad)
+    open(jp, "wb").write(JPEG[:6000])
+    bad = room.shrink_ok({jp: JPEG}, message="ROOM: images")
+    report("a JPEG shrunk but above 1 KB is not refused", bad is None, bad)
+    open(jp, "w").write(PLACEHOLDER)
+    bad = room.shrink_ok({jp: JPEG}, message="ROOM: images")
+    report("a JPEG replaced by PLACEHOLDER is refused", bad is not None and "bytes" in bad, bad)
+    tq = os.path.join(d, "q.tsv")
+    open(tq, "w").write(PLACEHOLDER)
+    bad = room.shrink_ok({tq: TSV_26.encode()}, message="ROOM: x")
+    report("a bytes snapshot of a text file keeps the line rule", bad is not None and "lines" in bad, bad)
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)

@@ -264,18 +264,19 @@ def headings_ok(before):
 
 
 def line_count_from_ref(ref, relpath):
-    """tools/file_shrink_guard.py's line_count() of relpath as committed at ref, or None if absent there
-    (a brand-new path -- never a shrink). Mirrors headings_from_ref()'s contract."""
+    """Raw bytes of relpath as committed at ref (tools/file_shrink_guard.py's git_show_bytes()), or None if
+    absent there (a brand-new path -- never a shrink). Mirrors headings_from_ref()'s contract. Bytes, not a
+    line count, since 3 Oct 2026 (TOOL-FSG-JPEG): the text read crashed on a JPEG, and shrink_ok() needs the
+    bytes to tell a binary from text. The name is kept for callers."""
     import file_shrink_guard as fsg
-    text = fsg.git_show(ROOT, ref, relpath)
-    return fsg.line_count(text) if text is not None else None
+    return fsg.git_show_bytes(ROOT, ref, relpath)
 
 
 def shrink_ok(before_sizes, message=_UNSET):
     """Refuse to push if any named path collapsed to a stub (26 Sept 2026, RETRO-2026-09-26i item 1,
     PR-LAND-3: LOCAL-QUEUE.tsv and a completed verifier AUDIT.md replaced with the single word
     "PLACEHOLDER" each, on a plain `git commit` that never called room.py at all). `before_sizes` maps
-    absolute path -> its line count from line_count_from_ref(), snapshotted before this commit was
+    absolute path -> its bytes from line_count_from_ref() (or, legacy/test, an int line count), snapshotted before this commit was
     created, the same way headings_ok()'s `before` is snapshotted. A shrink is exempt when the commit
     just created (HEAD, post-rebase) names one in its own message (shrink/regen/restore/AX2-SHRINK).
     `message` is for the offline test only; real callers get HEAD's own message."""
@@ -284,16 +285,24 @@ def shrink_ok(before_sizes, message=_UNSET):
     for path, before_n in before_sizes.items():
         if before_n is None or not os.path.exists(path):
             continue
-        after_n = fsg.line_count(open(path, encoding="utf-8").read())
-        if fsg.is_shrink(before_n, after_n):
-            bad.append((os.path.relpath(path, ROOT), before_n, after_n))
+        with open(path, "rb") as f:
+            after_data = f.read()
+        rel = os.path.relpath(path, ROOT)
+        if isinstance(before_n, int):
+            after_n = fsg.line_count(after_data.decode("utf-8", errors="replace"))
+            if fsg.is_shrink(before_n, after_n):
+                bad.append((rel, before_n, after_n, "lines"))
+            continue
+        r = fsg.check_bytes(rel, before_n, after_data)
+        if r:
+            bad.append(r)
     if not bad:
         return None
     if message is _UNSET:
         message = sh("git", "log", "-1", "--format=%B", "HEAD").stdout
     if fsg.exempt(message):
         return None
-    return "; ".join(f"{p} shrank {b} -> {a} lines" for p, b, a in bad)
+    return "; ".join(f"{p} shrank {b} -> {a} {u}" for p, b, a, u in bad)
 
 def bad_paths(paths):
     """Return the entries in paths that are not safe to pass to `git add --` (LEARN-2026-09-26-0022 item 2 =

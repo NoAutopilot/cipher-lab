@@ -102,6 +102,45 @@ with tempfile.TemporaryDirectory() as d:
     )
     report("CLI exits 2 naming a missing path", r.returncode == 2 and "MISSING" in r.stdout, r.stdout + r.stderr)
 
+# --- 6. binary files (3 Oct 2026, TOOL-FSG-JPEG: the CLI crashed with UnicodeDecodeError on a JPEG) ---------
+JPEG = b"\xff\xd8\xff\xe0" + bytes(range(256)) * 400 + b"\xff\xd9"   # ~100 KB, not UTF-8
+JPEG_SMALL = b"\xff\xd8\xff\xe0" + bytes(range(256)) * 20 + b"\xff\xd9"  # ~5 KB re-encode
+report("JPEG bytes are binary", fsg.is_binary(JPEG))
+report("TSV bytes are not binary", not fsg.is_binary(TSV_26.encode()))
+r6 = fsg.check_bytes("img.jpg", JPEG, b"PLACEHOLDER\n")
+report("must catch: JPEG -> PLACEHOLDER text stub", r6 is not None and r6[3] == "bytes", r6)
+r6 = fsg.check_bytes("img.jpg", JPEG, b"")
+report("must catch: JPEG -> empty file", r6 is not None, r6)
+r6 = fsg.check_bytes("img.jpg", JPEG, JPEG_SMALL)
+report("must NOT block: JPEG re-encoded to ~5% but still > 1 KB", r6 is None, r6)
+r6 = fsg.check_bytes("img.jpg", JPEG, JPEG)
+report("must NOT block: unchanged JPEG", r6 is None, r6)
+r6 = fsg.check_bytes("img.jpg", None, JPEG)
+report("must NOT block: brand-new JPEG", r6 is None, r6)
+r6 = fsg.check_bytes("LOCAL-QUEUE.tsv", TSV_26.encode(), PLACEHOLDER.encode())
+report("text via check_bytes keeps the line rule", r6 is not None and r6[3] == "lines", r6)
+
+with tempfile.TemporaryDirectory() as d:
+    git("init", "-q")
+    git("config", "user.email", "t@example.invalid")
+    git("config", "user.name", "t")
+    jp = os.path.join(d, "f.jpg")
+    open(jp, "wb").write(JPEG)
+    git("add", "f.jpg")
+    git("commit", "-q", "-m", "seed: one jpeg")
+    cli = [sys.executable, os.path.join(ROOT, "tools", "file_shrink_guard.py"), "f.jpg", "--root", d,
+           "--message", "ROOM: images"]
+    r = subprocess.run(cli, capture_output=True, text=True)
+    report("CLI exits 0 on an unchanged committed JPEG (was a UnicodeDecodeError crash)",
+           r.returncode == 0 and "Traceback" not in r.stderr, r.stdout + r.stderr)
+    open(jp, "wb").write(JPEG_SMALL)
+    r = subprocess.run(cli, capture_output=True, text=True)
+    report("CLI exits 0 on a re-encoded smaller JPEG", r.returncode == 0, r.stdout + r.stderr)
+    open(jp, "w").write(PLACEHOLDER)
+    r = subprocess.run(cli, capture_output=True, text=True)
+    report("CLI exits 1 on a JPEG replaced by PLACEHOLDER", r.returncode == 1 and "bytes" in r.stdout,
+           r.stdout + r.stderr)
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)
