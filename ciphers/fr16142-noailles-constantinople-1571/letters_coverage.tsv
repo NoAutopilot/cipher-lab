@@ -1,0 +1,40 @@
+# Cipher letters in fr.16142 ff.104-278 and where their plaintext already sits, from survey.tsv (FT-D, 3 Oct 2026, 400 px reading; dates as legible at 400 px, '?' = digit unread).
+# cover: margin = period marginal decipherment beside the cipher; sheet = 'Dechiffré de la precedente' on the following leaves; dup = enciphered duplicate of a glossed/deciphered original; open = no decipherment seen on the leaves.
+# est_signs = cipher pages x ~1,500 signs per full page (half for P), a rough figure: c262's 13 crop lines carry ~35-45 signs each; not counted.
+canvases	letter	cover	est_signs
+225-226	Acqs to the King, 2 Dec 1571	margin	2200
+231-232	"Relation d'une bataille" (1571)	unclear (no margin text seen at 400 px)	3000
+245-246	Acqs to the King, March 1572	unclear	1000
+257-266	Acqs to the King, April 1572	margin	11000
+268	Acqs, April 1572 (6 lines)	unclear	300
+275-276	Acqs to Anjou, 25 April 1572	interlinear? (faint lines)	2200
+287-289	Acqs to the King, May 1572	sheet c291-292	2000
+297-303	Acqs to the King, 10 June 1572	margin	8000
+306-311	Duplicata of 10 June 1572	dup	7000
+318-324	Acqs to the King, 9 July 1572	margin	9000
+330	Acqs to the Queen, 9 July 1572	unclear	700
+334-340	Duplicata of 9 July 1572	dup	8500
+346-351	Acqs [to Anjou?], July 1572	margin	7000
+354-355	Duplicata of 9 July, to Anjou	dup	2200
+358-361	Coppie de la depesche, Aug 1572	unclear (copy; original not located)	4500
+362-364	Duplicata of 25 Aug 1572	sheet c366-369	2500
+371	Acqs to Anjou, 25 Aug 1572	margin	1000
+375	Duplicata of 25 Aug, to Anjou	dup (c371)	1200
+383-384	Acqs to the King, 3/4 Sept 1572	sheet c387-388	2200
+389-392	Acqs to Anjou, Sept 1572	sheet c393-395	4500
+409-410	Acqs to the King, 6? Sept 1572	open (no sheet seen c411-413)	2200
+417-422	Acqs to the Queen / Anjou, Nov 1572	margin	3000
+425-426	Acqs to the King, Nov 1572	margin	1000
+434-435	Acqs, Nov 1572	margin	1000
+454-455	Acqs to the Queen, March 1573	sheet c458	1500
+460-461	Duplicata, March 1573	dup / sheet c458	3000
+464	Acqs to the King, 4 March 1573 (lower half)	open (no sheet seen)	800
+472-473	Acqs to the Queen, March 1573 + postscript	open (no sheet seen)	1000
+476-477	Acqs to Anjou, March 1573	sheet c480-483	2200
+484-486	Duplicata of the Anjou letter	dup	3700
+488-490	Acqs to the Queen, April 1573	sheet c492-494	3700
+510-516	Noailles to the King, July 1574 (day unread)	open (no sheet; Charrière III prints clear excerpts of Acqs's letters of 7 and 16 July 1574 from other copies, unmatched)	9750
+520-521	Gilles de Noailles to the King, Oct 1574	margin? (notes beside cipher)	1500
+540-542	Gilles de Noailles to the King, March 1576	sheet c544	3700
+546-547	Gilles de Noailles to the King, April 1576	sheet c550	2500
+560-561	Gilles de Noailles, May 1577	margin? (notes beside cipher)	1500

@@ -1,0 +1,358 @@
+# Leaf survey of BnF fr.16142 canvases 215-567 (ff.104-278), Gallica ark:/12148/btv1b9060927q, IIIF full/400,/0/default.jpg, one look per canvas on 5x4 contact sheets.
+# FT-D (LANE-POOLS, account 1), 3 Oct 2026 22:26-22:47 UTC. Classes: C cipher most of page, P part cipher, D separate-sheet decipherment ('Dechiffré de la precedente'), L clear, B blank/address/docket, X image 404.
+# 'margin notes' = a running small-hand text beside the cipher block, read at 300-400 px as a period marginal decipherment (checked at native resolution on c262 only). Gloss presence elsewhere is a 400 px judgement: unverified.
+# Folio = number written on the leaf where legible at 400 px (canvas ~ 2*folio + 6..8).
+canvas	class	note
+215	B	blank leaf (numbered 104)
+216	B	binding stub/blank
+217	L	clear letter, Acqs to the King
+218	L	clear
+219	L	clear, signed Noailles evesque d'Acqs
+220	L	clear
+221	L	clear, Acqs to the Queen
+222	L	clear, signed
+223	B	blank leaf numbered 108
+224	B	address leaf
+225	C	full cipher page, marginal notes left
+226	P	top ~8 lines cipher, rest clear, signed
+227	B	blank leaf numbered 110
+228	B	address leaf
+229	L	clear, Queen to Acqs? (heading)
+230	B	docket
+231	C	"Relation d'une bataille", cipher body under clear heading
+232	C	full cipher page
+233	L	clear
+234	L	clear
+235	L	clear end of letter, signed, Jan 1572
+236	B	address
+237	L	clear, Acqs to the King, Ragusa Jan 1572
+238	L	clear, signed
+239	B	blank leaf 116
+240	B	address
+241	L	clear, Acqs to the King, Feb 1572
+242	B	blank
+243	B	blank leaf 118
+244	B	address
+245	P	upper half clear, lower ~15 lines cipher (Constantinople, March 1572)
+246	P	top 3 lines cipher, rest clear, signed
+247	B	blank leaf 120
+248	B	address
+249	L	clear Italian document (capitulations?), 1572
+250	L	clear Italian continued
+251	B	blank leaf 122
+252	B	docket
+253	L	clear, 22 March 1572, signed
+254	B	blank
+255	B	blank leaf 124
+256	B	address
+257	P	clear top, ~10 lines cipher mid-page, margin notes beside the cipher (gloss)
+258	P	mixed clear/cipher, margin notes beside cipher runs (gloss)
+259	P	mixed, cipher top + middle, margin notes
+260	C	cipher most of page, margin notes along whole cipher block (gloss)
+261	C	cipher most of page; margin notes few
+262	C	full cipher page, margin notes along left
+263	C	full cipher page, margin notes along left
+264	C	full cipher page, margin notes left
+265	C	cipher most of page, margin notes left
+266	P	cipher top ~10 lines, margin notes
+267	L	clear, Acqs to the King
+268	P	clear with ~6 cipher lines
+269	L	clear, signed
+270	B	address
+271	L	clear, Acqs to the Queen, signed
+272	B	blank (show-through)
+273	B	blank leaf 133
+274	B	address
+275	C	full cipher page, Acqs to the Duke of Anjou, 25 April 1572; faint lines between cipher lines (interlinear gloss?)
+276	P	clear + ~10 cipher lines, signed
+277	B	blank leaf 135
+278	B	address to Monseigneur
+279	L	clear, Acqs to Anjou, signed
+280	B	show-through / near blank
+281	B	blank leaf 137
+282	B	address
+283	L	clear, Acqs to the King, April 1572, signed
+284	B	blank
+285	B	blank leaf 139
+286	B	address
+287	P	Acqs to the King, 1? May 1572: clear + ~12 cipher lines, interlinear?
+288	C	cipher with alternating clear lines (interlinear decipherment?)
+289	P	cipher top 3 lines, clear rest, signed
+290	B	address
+291	D	"Dechiffré de la precedente" 4? May 1572 -- separate-sheet decipherment of the preceding letter (c287-289)
+292	D	decipherment continued
+293	L	clear Italian: King of Poland? to the Grand Seigneur, copy
+294	L	clear Italian continued
+295	L	clear Italian continued, dated 1572
+296	B	address (Latin, to the Sultan?)
+297	P	Acqs to the King, 10 June 1572: clear + ~10 cipher lines, margin notes
+298	P	Acqs to the King, 1? June 1572: clear + cipher block, margin notes
+299	C	cipher most of page, margin notes left
+300	C	cipher most of page, margin notes left
+301	C	full cipher, margin notes left
+302	C	full cipher, margin notes left
+303	C	cipher most of page, margin notes, signed
+304	B	blank leaf 148
+305	B	address
+306	P	"Duplicata de la precedente" (10 June 1572): clear + cipher lines -- a second enciphered copy of c297-303
+307	C	cipher most of page, no margin gloss visible at 300px (faint interlinear lines?)
+308	C	full cipher, no margin gloss visible
+309	C	full cipher, no margin gloss visible
+310	C	full cipher, no margin gloss visible
+311	C	full cipher, no margin gloss visible, signed June 1572
+312	B	blank leaf 152
+313	B	address
+314	L	clear, 6 July 1572, signed
+315	B	near blank, docket at foot
+316	B	blank leaf 154
+317	B	address
+318	C	Acqs to the King, 9 July 1572: cipher most of page, margin notes left
+319	C	full cipher, margin notes left
+320	C	full cipher, margin notes left
+321	C	full cipher, margin notes left
+322	C	full cipher, margin notes left (partial)
+323	C	cipher most of page, margin notes left
+324	P	cipher ~10 lines, margin notes, signed
+325	B	address
+326	L	clear, Acqs to the King, July 1572
+327	L	clear, signed
+328	B	blank leaf 160
+329	B	address
+330	P	Acqs to the Queen, 9 July 1572: clear + ~10 cipher lines, signed
+331	B	show-through
+332	B	blank leaf 162
+333	B	address
+334	C	"Duplicata de la depesche du 9 de juillet 1572": cipher most of page, no margin gloss visible
+335	C	duplicata 9 July contd: full cipher, no margin gloss
+336	C	duplicata contd: cipher most of page, no margin gloss
+337	P	duplicata contd: clear + cipher lines
+338	C	duplicata contd: full cipher, no margin gloss
+339	C	duplicata contd: full cipher, no margin gloss
+340	C	duplicata contd: ~6 cipher lines, signed
+341	B	address
+342	L	Acqs to the Queen, last July 1572: "Duplicata de la depesche du 9 de juillet" -- clear
+343	L	clear contd, signed
+344	B	blank leaf 168
+345	B	address
+346	C	cipher most of page, margin notes left
+347	C	full cipher, margin notes left
+348	P	cipher + clear, margin notes
+349	P	clear + some cipher, margin notes
+350	C	cipher most of page, margin notes left
+351	C	cipher most of page, margin notes left, signed
+352	B	blank leaf 172
+353	B	address
+354	C	Acqs to Anjou, last July 1572, "Duplicata de la depesche du 9 de juillet": cipher, no margin gloss
+355	P	duplicata contd: ~10 cipher lines, signed, no margin gloss
+356	B	blank leaf 175
+357	B	address to Monseigneur
+358	C	"Coppie de la depesche ..." (Aug 1572?) cipher most of page, no margin gloss visible
+359	C	cipher most of page, no margin gloss visible, signed
+360	P	clear + cipher, no margin gloss visible
+361	P	~8 cipher lines top, signed
+362	P	"Duplicata de la depesche du xxv aoust 1572": clear + cipher, no margin gloss
+363	C	full cipher, no margin gloss
+364	P	~6 cipher lines, signed
+365	B	address
+366	D	"Dechiffré de la precedente" 25 Aug 1572 (separate-sheet decipherment)
+367	D	same image as c366 (duplicate canvas?)
+368	D	decipherment / clear contd ("Sire ...")
+369	D	decipherment contd
+370	B	blank
+371	P	Acqs to Anjou, 25 Aug 1572: cipher ~14 lines with margin notes
+372	B	show-through
+373	B	blank leaf 182
+374	B	address
+375	C	"Duplicata de la ... du xxv aoust 1572" to Anjou: cipher ~20 lines, no margin gloss, signed
+376	B	near blank
+377	B	blank leaf 184
+378	B	address to Monseigneur
+379	L	Acqs to the Queen, 3 Sept 1572, clear, signed
+380	B	show-through
+381	B	blank leaf 186
+382	B	address
+383	C	Acqs to the King, 3/4 Sept 1572: cipher most of page, no margin gloss visible
+384	P	~8 cipher lines + clear, no margin gloss, signed
+385	B	blank leaf 188
+386	B	address
+387	D	"Dechiffré de la precedente" 4 Sept 1572 (separate-sheet decipherment)
+388	D	decipherment contd
+389	C	Acqs to Anjou, 3/4 Sept 1572: cipher most of page, no margin gloss
+390	C	full cipher, no margin gloss
+391	C	cipher most of page, no margin gloss, signed
+392	P	~8 cipher lines
+393	D	"Dechiffré de la precedente" Sept 1572
+394	D	decipherment contd
+395	D	decipherment contd (clear hand, Sept 1572)
+396	B	address
+397	L	Iacomo Malatesta to the King, Venice 4 Sept 1572, Italian clear (not Noailles)
+398	L	Malatesta contd
+399	B	signature leaf
+400	B	address
+401	L	Malatesta to the Queen, Italian clear
+402	L	contd
+403	L	end, signed
+404	B	address
+405	L	Malatesta to Anjou, Italian clear
+406	L	contd
+407	B	blank leaf 199
+408	B	address
+409	C	Acqs to the King, 6? Sept 1572: cipher most of page, no margin gloss visible
+410	P	cipher ~10 lines + clear, signed
+411	B	blank leaf 201
+412	B	address
+413	L	clear memoir (Oct-Nov 1572)
+414	L	clear contd
+415	L	clear memoir contd
+416	B	docket
+417	P	Acqs to the Queen, 2 Nov 1572: mixed clear/cipher (~50%), margin notes
+418	P	mixed clear/cipher, margin notes
+419	P	mixed, mostly clear, signed
+420	B	address
+421	P	Acqs to Anjou, Nov 1572: mixed clear/cipher, margin notes
+422	P	mixed, margin notes, signed
+423	B	blank leaf 207
+424	B	address
+425	P	Acqs to the King, 1? Nov 1572: mixed clear/cipher (~40%), margin notes
+426	P	mixed, mostly clear
+427	L	clear, signed
+428	B	address
+429	L	clear, Ragusa? Nov 1572, signed
+430	B	show-through
+431	B	blank leaf 211
+432	B	address
+433	L	Acqs to Anjou, 21 Nov 1572, mostly clear, a few cipher lines at foot
+434	P	mixed clear/cipher, margin notes
+435	P	mixed, mostly clear with ~8 cipher lines, margin notes, signed Nov 1572
+436	B	address
+437	L	Acqs to the King, Jan 1573, clear, signed
+438	X	HTTP 404 from Gallica IIIF (image missing), not viewed
+439	B	address/blank
+440	B	address
+441	L	Acqs to the Queen, Jan 1573, clear, signed
+442	B	show-through
+443	B	blank leaf 217
+444	B	address
+445	L	Acqs to Anjou, Jan 1573, clear, signed
+446	B	show-through
+447	B	address
+448	B	address
+449	B	address
+450	L	Acqs to the Queen, Jan 1573, clear, 2 cipher lines at left margin
+451	L	clear, signed
+452	X	HTTP 404 from Gallica IIIF, not viewed
+453	B	address
+454	P	Acqs to the Queen, March 1573: clear + ~12 cipher lines at foot, no margin gloss
+455	P	cipher ~12 lines + clear, signed (no margin gloss visible)
+456	B	blank leaf 223
+457	B	address
+458	D	"Dechiffré de la precedente" March 1573 (separate-sheet decipherment)
+459	B	blank
+460	C	"Duplicata de la precedente" March 1573: cipher ~70% with interlinear clear between some lines? no margin gloss
+461	C	cipher most of page, signed
+462	B	blank leaf 226
+463	B	address
+464	P	Acqs to the King, 4? March 1573: clear upper half, cipher lower half (~20 lines), no margin gloss
+465	B	show-through
+466	B	blank leaf 228
+467	B	address
+468	L	Acqs to the Queen, March 1573, clear, few cipher words, signed
+469	B	show-through
+470	B	blank leaf 230
+471	B	address
+472	P	Acqs to the Queen, March 1573 + "Postscripte du ... mars": clear + ~12 cipher lines, no margin gloss
+473	P	cipher ~10 lines + clear, signed
+474	B	blank leaf 232
+475	B	address
+476	C	Acqs to Anjou, 4/21 March 1573: cipher most of page mixed with clear, no margin gloss
+477	P	mixed cipher/clear, postscript, signed
+478	B	blank leaf 234
+479	B	address
+480	D	"Dechiffré de la precedente" 4? March 1573 (deciphers the c476-477 letter to Anjou)
+481	D	decipherment contd
+482	D	decipherment contd + Postscripte
+483	D	decipherment end
+484	C	"Duplicata de la precedente" 4/21 March 1573: cipher/clear mixed, no margin gloss
+485	C	cipher most of page, Postscripte, no margin gloss
+486	P	cipher ~12 lines, signed
+487	B	address
+488	C	Acqs to the Queen, April 1573: cipher most of page, no margin gloss
+489	C	full cipher, no margin gloss
+490	P	cipher ~10 lines, signed
+491	B	address
+492	D	"Dechiffré de la precedente" April 1573 (deciphers c488-490)
+493	D	decipherment contd
+494	D	decipherment end
+495	B	blank
+496	L	the King to Acqs (draft/minute), April 1573, clear
+497	B	blank/strip
+498	L	clear minute contd
+499	B	docket strip
+500	L	clear minute (King's side?), 1573
+501	L	contd
+502	L	clear minute contd
+503	B	blank/strip
+504	L	the Queen to Acqs, Dec 1573?, clear
+505	B	docket strip
+506	L	Acqs to the King, 6? Oct 1573, clear, signed
+507	L	clear contd (faint)
+508	B	blank leaf 249
+509	B	address
+510	C	"Du Sr de Noailles au Roy", 2? July 1574: full cipher, no margin gloss, no interlinear
+511	C	full cipher, no gloss
+512	C	full cipher, no gloss
+513	C	full cipher, no gloss
+514	C	full cipher, no gloss
+515	C	full cipher, no gloss
+516	C	cipher ~20 lines, signed, Constantinople ... juillet 1574; no gloss
+517	B	address
+518	B	title leaf: "Lettres de Gilles de Noailles faisant les affaires du Roy a Constantinople ... depuis oct. 1574 jusques en may 1577"
+519	B	title leaf (Gilles de Noailles letters) verso/show-through
+520	C	Gilles de Noailles to the King, 2? Oct 1574: cipher ~70%, interlinear/marginal notes beside cipher (gloss?)
+521	P	cipher ~10 lines + clear, signed Gilles de Noailles
+522	B	blank leaf 256
+523	B	address
+524	L	Gilles de Noailles to the Queen, Oct 1574, clear, signed
+525	B	show-through
+526	B	blank leaf 258
+527	B	docket
+528	L	Noailles (Acqs) to the King, Venice Jan 1575, clear
+529	L	contd, signed
+530	B	blank leaf 260
+531	B	address
+532	L	Acqs to the Queen, Venice Jan 1575, clear
+533	L	contd, signed
+534	B	blank leaf 262
+535	B	address
+536	L	Latin: Mehemet Pasha to the King of Poland (copy), clear
+537	L	Latin contd
+538	L	Latin contd
+539	B	docket strip
+540	C	Gilles de Noailles to the King, 11? March 1576: cipher most of page, no gloss
+541	C	full cipher, no gloss
+542	P	cipher ~10 lines, signed Gilles de Noailles, March 1576
+543	B	address
+544	D	"Dechiffré de la precedente" March 1576 (deciphers c540-542)
+545	B	blank
+546	C	Gilles de Noailles to the King, 1? April 1576: cipher most of page, no gloss
+547	C	cipher most of page, signed April 1576
+548	B	blank leaf 269
+549	B	address
+550	D	"Dechiffré de la precedente" April 1576 (deciphers c546-547)
+551	B	show-through
+552	L	Italian clear document
+553	L	Italian contd, end
+554	B	blank leaf 272
+555	B	docket
+556	L	Italian clear (capitulations/commandment copy)
+557	L	contd
+558	L	contd
+559	L	Italian contd, end
+560	C	Gilles de Noailles to the Queen?, 1? May 1577: cipher ~60% with margin notes beside cipher (gloss?)
+561	P	cipher ~15 lines + clear, margin notes, signed Gilles de Noailles, May 1577
+562	B	blank leaf 276
+563	B	address
+564	B	blank leaf 277
+565	B	blank
+566	B	blank leaf 278
+567	B	binding/docket strip
