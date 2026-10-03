@@ -2029,7 +2029,7 @@
       "audit_status": "two audits",
       "reading_version": "e8567d0 (reading_f30_extended.txt at the second audit, 649f359); revised later at ec48dcd",
       "superseded_by": "",
-      "fields_source": "fr2980-gramont/AUDIT.md '## f.30' verdict and its second audit (N3), N4 from 'N4 decision (final families)' section 3; extended H 1486, S 181, M 239, U 63 of 1969 from the V3b note in that section"
+      "fields_source": "fr2980-gramont/AUDIT.md '## f.30' verdict and its second audit (N3), N4 from 'N4 decision (final families)' section 3; extended H 1468, S 199, M 239, U 63 of 1969 from the V3b note in that section; ehx = T confirmed by VERIFY-GRA (3 Oct 2026)"
     },
     {
       "date": "24 Sept 2026",
