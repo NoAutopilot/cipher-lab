@@ -274,20 +274,64 @@ Brief `.claude/briefs/runs/2026-10-03-acct1-fils-f38.md`. Rules fixed before the
 4. f.35r code words (L02 `ciiij`/`xiiij`, L10 overbar `28`): one blind read on tight crops; FILS-NOMEN rule 3 decides
    M -> H (a code word moves only if the blind read gives the same code with no alternative AND the nomenclator entry is H).
 
+## FILS-F38 results (account 1 for LANE-A1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-f38.md`. Intake gate re-run 10:04 UTC:
+`fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+Rules pre-registered above (commit db1e90fe) before any read returned; `align_f38.py` committed (ff3aff92) before the
+figure pass returned.
+
+**Crops.** The old `images/f46_*` crops are 50 px bands that split each gloss from its figures, so they were not used.
+Command (pasted): `python3 tools/iiif_lines.py --image ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f46_4000_3880_3100_1000.jpg --out ciphers/fr3416-nevers-fils-1589/images --prefix f38g --centres 340,430,500,546,705,748,846,882 --lines-per-crop 2 --max-width 1700 --overlap 200 --top-margin 40 --debug`
+-> `images/f38g_L01-L04_s1/s2.jpg` (gloss band + figure line, 4 bands x 2 segments).
+
+**Passes.** 3 vision calls, all Opus subagents with crops only and no key: F (figures) -> `f38_figures.tsv`, G (gloss)
+-> `f38_gloss.tsv`, and the f.35r code words. Both f.38 files are verbatim. Pass F: 10 runs, 54 tokens. The reader
+saw no clear overbar; "54" after the clear "je cuyde que" carries a stroke that may be an underline. Pass G: 21 rows,
+1 at H ("laultre"), 6 at M and the rest at L. Several are crossed out, band 3's gloss is smudged ("garde rupture" is
+the reader's own guess), and band 4 reads "le duc de Kefalluna" (alternatives Retelluna/Rethellois).
+
+**Known-answer measure (`python3 align_f38.py`, output `f38_align.txt`, `--check` covers it).** The pre-registered
+statistic, with the target and the controls side by side:
+
+| | agreement 2M/(|D|+|G|) | p95 | max |
+|---|---|---|---|
+| target: no.25 decode vs gloss | **0.309** (M = 17 letters; M/|G| = 0.233) | | |
+| shuffled gloss, 1000 draws | mean 0.246 | 0.327 | 0.385 |
+| shuffled key, 200 draws | mean 0.233 | 0.306 | 0.357 |
+
+**VERDICT (pre-registered): FAIL.** The target beats the shuffled-key p95 but not the shuffled-gloss p95. Per band:
+band 2 decodes `autr...` under the gloss "laultre" (39 null, 32 a, 94 u, 86 t, 75 r: the one visible match). Band 1
+decodes `uidoiaenereteou`, band 3 `neroitbrole` and band 4 `raue`, with no match to their glosses. A post-hoc look
+that drops band 1's doubtful position-14 tick (reader: "may be no digit") does not help: `uidoismubmn`, outside the
+gate and not counted. Why this is a weak test, not a key negative: the gloss pass is mostly L. The gloss is sparse
+(4 bands, about 22 normalised gloss letters per band) and partly struck through. Its words are not positioned over
+figure tokens, so the gloss of one band may sit over clear text. And a single blind figure pass has no measured error
+on this leaf. The f.35r statistics (rank 1/201, z 5.04, NV02-READ) are unaffected. This measure says only that key
+no.25 is **not yet confirmed by a known answer on this hand**. Grades on f.35r do not move.
+
+**f.35r code words (rule 4 of the pre-registration = FILS-NOMEN rule 3).** Q1, L02: blind read `xiiij`, first glyph
+x, "c, or a looped v (viiij) can't be ruled out", confidence M. There is an alternative, so it **stays M** (Seigneur).
+Q2, L10: the reader found **no overbar over L10's own figures**. Its run ends `...39 99 35 39 67 62 8 14 et`. The one
+free stroke lies under "8 14" and over the next line's glyphs ("43", cut off in the crop), confidence L. The
+`28 = Ml de Biron` reading (`f35r_codewords.tsv`) therefore **stays M and is now doubtful**: the stroke may belong to
+a line 11 below the crop region. AUDIT.md is not edited, because no cited token changed grade.
+Not found in print: nothing searched (transcription and alignment job).
+
 ## Remaining gaps
 Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
-- code words ciiij (xiiij = Seigneur) and 28 (Ml de Biron) at M - blocker: not-attempted; one blind read of the L02 code word and the L10 overbar tail; next: one vision call on the two crops, ~$1.5
-- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; not in this job's brief; next: transcribe f.38 figures + gloss from images/f46_* and read its overbar codes through key_no25_nomenclator.tsv (the gloss "97" = recherche is a ready check), ~$3
+- code word xiiij (Seigneur, M) and the L10 overbar "28" (Ml de Biron, M, doubtful) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij, and put the only stroke under L10 "8 14" over a line 11 that lies outside the crop region; next: crop canvas 43 below y 5360 (line 11) with iiif_lines.py and one blind read of the stroke and the figures under it, ~$2
+- fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
 - upper letter above L01 and the line below L10 (clear text) - blocker: not-attempted; outside the crop region; next: iiif_lines.py on canvas 43 above y 3560 and below y 5360, two blind passes, ~$4
 
 ## Escalation
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned once (FILS-F38: FAIL vs shuffled gloss, single passes)
 - [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter still to crop
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split
-Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: one blind read of the two code words, ~$1.5
+Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: crop line 11 of f.35r and read the stroke under L10, ~$2

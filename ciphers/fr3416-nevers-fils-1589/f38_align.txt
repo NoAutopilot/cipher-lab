@@ -1,0 +1,16 @@
+band 1: tokens 93 52 14 38 67 52 81 35 79 43 62 45 74 14 12 45 86 42 9 0 67 94
+  decode  uidoiaenereteou
+  gloss   Lecq. .. 7 dabz 97. aminitie asseurement seruira lou  -> lecqdabzaminitieaseurementseruiralou
+band 2: tokens 39 32 94 86 75 48 14 35 76 54^
+  decode  autrhar
+  gloss   laultre Cas  -> laultrecas
+band 3: tokens 64 19 42 59 45 75 67 54 86 36 74 65 56 39 42
+  decode  neroitbrole
+  gloss   garde rupture  -> garderupture
+band 4: tokens 74 18 32 93 45 14 59
+  decode  raue
+  gloss   le duc de Kefalluna  -> leducdekefaluna
+agreement 2M/(|D|+|G|) = 0.309; matched letters M = 17; M/|G| = 0.233
+shuffled gloss (1000): mean 0.246 p95 0.327 max 0.385; real beats p95: False
+shuffled key (200):   mean 0.233 p95 0.306 max 0.357; real beats p95: True
+VERDICT (pre-registered): FAIL
