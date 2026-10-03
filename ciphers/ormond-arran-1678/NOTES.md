@@ -420,23 +420,64 @@ Requests: bodley.ox.ac.uk 3 (one 301, two resets), archives.bodleian.ox.ac.uk 1 
 web.archive.org 1 (offline page), virtualtreasury.ie 3 (SPA shell and its JS bundle), by2022-prod.adaptcentre.ie 1 (401) +
 13 search POSTs, all >=1.6 s apart, one at a time. WebSearch 2 queries. No logins, no vision calls.
 
-## Remaining gaps (FT4-ormond-arran-1678, 3 Oct 2026)
-Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status open, not partial)
-- key sheet MS. Carte 50 fols. 439-440 (Ormond-Arran cypher, Jan 1678) - blocker: waiting-on LOCAL-QUEUE L39; catalogue flag and leaf images unreachable from the cloud (archives.bodleian.ox.ac.uk Anubis challenge, this section above)
-- ninth group 57 vs 58 (both prints read 58) - blocker: needs-physical-access; no page image of the NLI original or of the 1877/1906 prints is on disk (Premise check transcription flag)
-- prior print of the Carte 50 key - blocker: not-attempted; not searched this pass; next: IA full text and Google Books phrase search for a printed Carte 50 Ormond-Arran cypher table, ~$1
+## FT4b-ormond-arran-1678 (3 Oct 2026, account-4): prior print of the Carte 50 key; Digital Bodleian
 
-## Escalation (3 Oct 2026)
+Run 3 Oct 2026 02:38-02:45 UTC (`date -u`). No cryptanalysis, no reading, no test; no vision calls.
+
+**Prior print of MS. Carte 50 fols. 439-440: none found.** Searched by interior string and shelfmark, not title only.
+- HMC *Ormonde* N.S. vols IV and V (archive.org `calendarofmanusc04greauoft`, one OCR file carrying both volumes, vol. V
+  from OCR line 52222): all 36 "cipher/cypher" lines read in context. They are letters partly in cipher, two
+  editors' notes that Ormond interlined the equivalents (vol. IV p.107 and a vol. V letter) and three vol. V index
+  entries ("Cypher, employed in correspondence, 454, 469, ..."). No key table and no Carte 50 item is printed; the
+  vol. IV preface names Carte 50 only as one of the Oxford volumes for 1677-85 and points to Russell and Prendergast's
+  report for its contents.
+- Internet Archive full text (be-api fts, 15 queries): exact `"Carte 50, f. 439"`, `"Carte 50, fol. 439"`,
+  `"Carte MS. 50, f. 439"`, `"Carte 50, ff. 439"`, `"Carte 50, f. 440"`, `"cypher with the Earl of Arran"`,
+  `"cipher with the Earl of Arran"`: 0 hits each. The broader queries hit secondary works that cite other Carte 50
+  folios (f.58, f.86, f.103, f.194, f.349). One of them cites **another cipher key in the same volume**: J.P. Kenyon,
+  *Robert Spencer, Earl of Sunderland* (1958), reads Bodl. Carte MS. 232 f.49 (1679) with "[cipher key Carte MS. 50,
+  f. 472]" (IA `robertspencerear0000keny`; Google Books `JlY0AAAAIAAJ` snippet agrees). So at least one 20th-century
+  historian used a Carte 50 key to read Ormond-circle cipher. That key is f.472, not ff.439-440, and its table is not
+  printed in the snippet. Charles Middleton studies cite a different key, "Carte MS 256".
+- Google Books API (key, `country=US`, 6 queries): `"Carte 50" cipher Arran` returns Russell and Prendergast, *The
+  Carte Manuscripts in the Bodleian Library* (1871; also in the DKPR 32nd Report), whose snippet describes vols 48-51
+  only at title level ("drafts or copies ... of Ormonde's letters ... in cipher"). `"Carte MS. 50" "cipher key"`
+  returns only Kenyon (above). The `"f. 439"`/`"fol. 439"` queries return only noise (338/332 unrelated items).
+- OpenAlex (3 searches): 0 / 7 / 6 results, none about an Ormond-Arran key. The 7 and 6 overlap; nearest is
+  "Breaking the Code. John Wallis and the Politics of Concealment" (2016), general.
+Result: no transcription of the Carte 50 ff.439-440 table was found in these sources. This is a search result,
+not a novelty verdict (rule 10). Not searched: JSTOR (cloud-blocked), Kenyon's full text at f.472 (lending-only),
+and the 1871 Russell-Prendergast report's full entry for vol. 50.
+
+**Digital Bodleian: no images of MS. Carte 50.** Queried with the Data API's JSON search
+(`GET digital.bodleian.ox.ac.uk/search/` with `Accept: application/ld+json`). `shelfmark:"MS. Carte 50"` returned 0,
+`"Carte 50"` returned 0 and `shelfmark:Carte` returned 3: MS. Carte 3, 55 and 91. Positive control: the same API
+lists those three Carte volumes, so the 0 means the search found nothing, not that the search is broken. This is
+the image portal's result, not the holding record's flag. The holding-catalogue flag (archives.bodleian.ox.ac.uk,
+Anubis-challenged to the cloud, FT4) is already queued as LOCAL-QUEUE **L39**, so no new row was filed. Nothing was
+fetched: no images are online to fetch.
+
+Requests: archive.org 10 (1 OCR file, 1 advancedsearch, 8 metadata); be-api.us.archive.org 15; googleapis.com 6;
+api.openalex.org 3; digital.bodleian.ox.ac.uk 7 (2 HTML search/developer pages, 1 data-API doc, 4 JSON searches).
+Every request ran one at a time, at least 1.6 s apart.
+
+## Remaining gaps (FT4b-ormond-arran-1678, 3 Oct 2026)
+Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status open, not partial)
+- key sheet MS. Carte 50 fols. 439-440 (Ormond-Arran cypher, Jan 1678) - blocker: waiting-on LOCAL-QUEUE L39; the catalogue flag is unreachable from the cloud (archives.bodleian.ox.ac.uk Anubis challenge, FT4), Digital Bodleian has no Carte 50 images (FT4b, positive control returned Carte 3/55/91), and no printed transcription was found (FT4b section above), so the leaves need a reproduction order or a person's reading
+- ninth group 57 vs 58 (both prints read 58) - blocker: not-attempted; the 1906 HMC print is public-domain on IA (calendarofmanusc04greauoft, p.93) and its page image can be read directly; only the NLI original needs physical access; next: fetch the IA page image of vol. IV p.93 and read the ninth group, ~$0.5
+
+## Escalation (3 Oct 2026, FT4b)
 - [x] siblings: 1680 Ormond-Longford sibling passages and keys tested (YX-ORM, ZX2-ORM), no fit
 - [x] clear-pages: Arran's reply of 5 Feb and Ormond's clear letter of 29 Jan read (Premise check c)
-- [ ] known-keys: MS. Carte 50 fols. 439-440 key sheet located 3 Oct 2026; read it once L39 returns images
-- [ ] print: search for a printed transcription of the Carte 50 key (While waiting)
+- [ ] known-keys: MS. Carte 50 fols. 439-440 key sheet located 3 Oct 2026; read it once L39 or a reproduction order returns images
+- [x] print: no printed Carte 50 fols. 439-440 table found in HMC Ormonde N.S. IV-V, IA full text, Google Books or OpenAlex (FT4b, 3 Oct 2026)
 - [n/a] key-rebuild: twenty groups are far too short for cryptanalytic key rebuilding
-- [ ] image-check: ninth group 57/58 against an image of the original or print
+- [ ] image-check: ninth group 57/58 against the IA page image of the 1906 print, vol. IV p.93
 - [n/a] retry: no earlier route failed that a retry would change
-Verdict: keep going: 1 internal gaps; cheapest next: prior-print search for the Carte 50 Ormond-Arran key, ~$1
+Verdict: keep going: 1 internal gaps; cheapest next: IA page-image check of HMC Ormonde N.S. IV p.93 for the ninth group (57/58), ~$0.5
 
 ## While waiting
 
-Search IA full text and Google Books (country=US) for a printed transcription of MS. Carte 50 fols. 439-440 or of any
-1678 Ormond-Arran cipher table (queries: "Carte 50" Arran cypher; "cypher" "Earl of Arran" 1678 key) -- depends on nobody.
+While L39 is pending, read the ninth group (57 or 58) on the IA page image of HMC Ormonde N.S. vol. IV p.93
+(`calendarofmanusc04greauoft`). This depends on nobody. The prior-print search for the Carte 50 key was done on
+3 Oct 2026 (FT4b): none found.
