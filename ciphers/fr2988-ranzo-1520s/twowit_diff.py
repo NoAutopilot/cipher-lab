@@ -46,7 +46,9 @@ def diff(A, B):
         for k in range(n):
             ia, jb = i1 + k, j1 + k
             ra = A[ia] if ia < i2 else None
-            out.append(dict(op=op if (ra is not None and jb < j2) else ('delete' if ra is not None else 'insert'),
+            prev = A[i1 - 1] if i1 > 0 else None
+            out.append(dict(after=f"{prev['line']}:{prev['pos']}" if (ra is None and prev) else '',
+                            op=op if (ra is not None and jb < j2) else ('delete' if ra is not None else 'insert'),
                             line=ra['line'] if ra else '', pos=ra['pos'] if ra else '',
                             fr3019=ra['token'] if ra else '-', conf=ra.get('conf', '') if ra else '',
                             b_idx=str(jb) if jb < j2 else '', bourdeau=B[jb] if jb < j2 else '-'))
@@ -60,7 +62,7 @@ def main():
     a = ap.parse_args()
     A, B = ours(os.path.join(HERE, 'fr3019_no27_tokens.tsv')), bourdeau(a.bourdeau)
     rows, same = diff(A, B)
-    cols = ['op', 'line', 'pos', 'fr3019', 'conf', 'b_idx', 'bourdeau', 'class', 'note']
+    cols = ['op', 'line', 'pos', 'after', 'fr3019', 'conf', 'b_idx', 'bourdeau', 'class', 'note']
     path = os.path.join(HERE, 'twowit_diff.tsv')
     key = lambda r: (r['op'], r['line'], r['pos'], r['b_idx'])
     old = {}
@@ -80,11 +82,17 @@ def main():
         w.writerows(rows)
     # settled fr.3019 read: our reconciled tokens with every R3019/R2 row replaced by the settled sign
     fix = {(r['line'], r['pos']): r['bourdeau'] for r in rows if r['class'] in ('R3019', 'R2') and r['line']}
+    add = {}  # R3019 insert rows: a token our read missed, placed after the fr.3019 token named in 'after'
+    for r in rows:
+        if r['class'] in ('R3019', 'R2') and r['op'] == 'insert' and r['after']:
+            add.setdefault(tuple(r['after'].split(':')), []).append(r['bourdeau'])
     with open(os.path.join(HERE, 'fr3019_no27_settled.tsv'), 'w') as f:
         f.write('line\tpos\ttoken\tsource\n')
         for r in A:
             k = (r['line'], r['pos'])
             f.write(f"{r['line']}\t{r['pos']}\t{fix.get(k, r['token'])}\t{'settled R3019' if k in fix else 'reconciled'}\n")
+            for n, t in enumerate(add.get(k, []), 1):
+                f.write(f"{r['line']}\t{r['pos']}+{n}\t{t}\tsettled R3019 (missed token; may belong to the next line)\n")
 
 
 if __name__ == '__main__':

@@ -1,71 +1,71 @@
-op	line	pos	fr3019	conf	b_idx	bourdeau	class	note
-replace	f73r_01	2	g1	L	1	s1	RB	both copies show the open-bowl g1; Bourdeau labels it s
-insert			-		15	?2	RB	"""?2"" is the folio number 2, not a token"
-replace	f73r_02	12	r41	M	27	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
-replace	f73r_03	14	g17	M	44	q17	R3019	fr.3019 clearly q17
-replace	f73r_10	12	L143	M	140	L14	U	fr.2988 line end beyond the fetched region (L14 cut)
-replace	f73r_12	12	i286	M	168	i266	V	fr.3019 286, fr.2988 266
-replace	f73r_13	13	r41	M	185	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
-replace	f73r_16	5	D78	M	220	d78	R3019	heavily inked d78, not a D
-replace	f73r_22	11	h30	M	307	b30	RB	fr.2988 shows h30, same form as fr.3019
-replace	f73v_01	14	Q	M	335	z7	R3019	fr.3019 z7 at the page edge
-replace	f73v_02	13	s34	M	348	s347	U	fr.3019 number runs into the gutter
-insert			-		363	m8	U	fr.3019 line end in the gutter
-replace	f73v_04	15	d1	L	378	d10	U	fr.3019 gutter
-replace	f73v_05	14	L10	M	392	L108	U	fr.3019 gutter
-insert			-		407	c170	U	fr.3019 line end in the gutter
-replace	f73v_09	2	s320	M	435	g320	RB-sg	fr.3019 plain S; fr.2988 compact closed 8 = s in that hand
-replace	f73v_09	3	h129	M	436	h29	R3019	h29: the 1 is the h ascender
-replace	f73v_09	4	r196	M	437	r296	V	fr.3019 196, fr.2988 296
-replace	f73v_09	8	q12	M	441	g12	RB	fr.2988 shows q12 (straight descender)
-replace	f73v_09	13	s34	M	446	g347	U	fr.3019 gutter
-replace	f73v_10	1	y16	M	447	y6	V	fr.3019 y16, fr.2988 y6
-insert			-		460	t41	U	fr.3019 gutter
-replace	f73v_11	10	s7	M	470	g7	RB-sg	plain S vs compact 8
-replace	f73v_11	12	m297	M	472	m247	V	fr.3019 297, fr.2988 247
-delete	f73v_12	12	r4	L		-	V	fr.3019 extra token at line break (p149 r4 | p97 r41 vs p149 r41)
-delete	f73v_13	1	p97	M		-	V	fr.3019 extra token at line break
-replace	f73v_13	11	s233	M	494	g233	RB-sg	plain S vs compact 8
-replace	f73v_13	13	p1	M	496	p217	U	fr.3019 gutter
-replace	f73v_14	3	s22	M	499	g22	RB-sg	plain S vs compact 8
-replace	f73v_14	14	m	L	510	m6	U	fr.3019 gutter
-replace	f73v_15	2	c21	M	511	Q21	R3019	left-edge token is Q21 (curl visible)
-replace	f73v_15	9	s233	M	518	g233	RB-sg	plain S vs compact 8
-replace	f73v_15	10	s292	M	519	g292	RB-sg	plain S vs compact 8
-replace	f73v_16	2	s8	M	524	g8	RB-sg	plain S vs compact 8
-insert			-		535	Q6	U	fr.3019 left edge outside this job's crop region
-replace	f73v_18	2	c42	M	548	v42	U	fr.3019 left edge outside the crop region
-replace	f73v_18	8	s151	M	554	g151	RB-sg	plain S vs compact 8
-insert			-		562	i29	U	fr.3019 gutter
-replace	f73v_19	3	m107	M	565	m10	U	fr.2988 digit after m10 crossed by a z tail
-replace	f73v_19	10	s26	M	572	g26	RB-sg	plain S vs compact 8
-insert			-		574	o2	U	fr.3019 left edge outside the crop region
-replace	f73v_20	14	p1	L	588	p10	U	fr.3019 gutter
-replace	f73v_21	1	c70	M	589	c170	U	fr.3019 left edge outside the crop region
-replace	f73v_21	10	s155	M	598	g155	RB-sg	plain S vs compact 8
-replace	f73v_21	11	y18	M	599	y8	RB	fr.2988 y18 with a faint 1
-replace	f73v_22	2	s113	M	603	g113	RB-sg	plain S vs compact 8
-replace	f73v_22	12	s299	M	613	g299	RB-sg	plain S vs compact 8
-replace	f73v_22	14	m21	M	615	n213	V	fr.3019 m, fr.2988 n (number of fr.3019 in the gutter)
-replace	f73v_23	1	i100	M	616	d100	U	fr.3019 left edge outside the crop region
-replace	f73v_23	7	s69	M	622	g69	RB-sg	plain S vs compact 8
-replace	f74r_01	15	s113	M	643	g113	RB-sg	compact 8 in both
-delete	f74r_02	5	X	L		-	V	fr.3019 cancelled (struck-out) sign, absent in fr.2988
-replace	f74r_02	14	s77	M	656	g77	RB-sg	compact 8 in both
-replace	f74r_02	15	b147	M	657	h147	RB	both copies show b147
-replace	f74r_04	11	t137	H	676	r137	RB	both copies show t137
-replace	f74r_05	5	s116	M	683	g116	RB-sg	compact 8
-replace	f74r_06	3	s230	M	695	g230	RB-sg	compact 8
-replace	f74r_07	1	s291	M	706	g291	RB-sg	compact 8
-replace	f74r_07	13	a159	M	718	a153	V	fr.3019 159, fr.2988 153
-replace	f74r_08	11	s9	M	728	g9	RB-sg	compact 8 in both
-replace	f74r_08	13	r222	M	730	t222	R3019	fr.3019 shows t222
-replace	f74r_09	4	b26	M	734	h26	RB	both copies show b26
-replace	f74r_09	12	h3	L	742	h32	R3019	fr.3019 clearly h32
-replace	f74r_11	9	s292	M	763	g292	RB-sg	compact 8
-replace	f74r_11	11	m	L	765	m170	R3019	fr.3019 clearly m170
-replace	f74r_12	6	r41	M	772	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
-replace	f74r_12	7	q20	M	773	q10	V	fr.3019 q20, fr.2988 q10
-replace	f74r_13	4	s233	M	782	g?	U	fr.2988 number under the ink blot; sign compact 8 in both
-replace	f74r_13	10	s113	M	788	g113	RB-sg	compact 8
-replace	f74r_13	11	r	L	789	r296	R3019	fr.3019 clearly r296
+op	line	pos	after	fr3019	conf	b_idx	bourdeau	class	note
+replace	f73r_01	2		g1	L	1	s1	RB	both copies show the open-bowl g1; Bourdeau labels it s
+insert			f73r_01:15	-		15	?2	RB	"""?2"" is the folio number 2, not a token"
+replace	f73r_02	12		r41	M	27	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
+replace	f73r_03	14		g17	M	44	q17	R3019	fr.3019 clearly q17
+replace	f73r_10	12		L143	M	140	L14	U	fr.2988 line end beyond the fetched region (L14 cut)
+replace	f73r_12	12		i286	M	168	i266	V	fr.3019 286, fr.2988 266
+replace	f73r_13	13		r41	M	185	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
+replace	f73r_16	5		D78	M	220	d78	R3019	heavily inked d78, not a D
+replace	f73r_22	11		h30	M	307	b30	RB	fr.2988 shows h30, same form as fr.3019
+replace	f73v_01	14		Q	M	335	z7	R3019	fr.3019 z7 at the page edge
+replace	f73v_02	13		s34	M	348	s347	U	fr.3019 number runs into the gutter
+insert			f73v_03:14	-		363	m8	U	fr.3019 line end in the gutter
+replace	f73v_04	15		d1	L	378	d10	U	fr.3019 gutter
+replace	f73v_05	14		L10	M	392	L108	U	fr.3019 gutter
+insert			f73v_06:14	-		407	c170	U	fr.3019 line end in the gutter
+replace	f73v_09	2		s320	M	435	g320	RB-sg	fr.3019 plain S; fr.2988 compact closed 8 = s in that hand
+replace	f73v_09	3		h129	M	436	h29	R3019	h29: the 1 is the h ascender
+replace	f73v_09	4		r196	M	437	r296	V	fr.3019 196, fr.2988 296
+replace	f73v_09	8		q12	M	441	g12	RB	fr.2988 shows q12 (straight descender)
+replace	f73v_09	13		s34	M	446	g347	U	fr.3019 gutter
+replace	f73v_10	1		y16	M	447	y6	V	fr.3019 y16, fr.2988 y6
+insert			f73v_10:13	-		460	t41	U	fr.3019 gutter
+replace	f73v_11	10		s7	M	470	g7	RB-sg	plain S vs compact 8
+replace	f73v_11	12		m297	M	472	m247	V	fr.3019 297, fr.2988 247
+delete	f73v_12	12		r4	L		-	V	fr.3019 extra token at line break (p149 r4 | p97 r41 vs p149 r41)
+delete	f73v_13	1		p97	M		-	V	fr.3019 extra token at line break
+replace	f73v_13	11		s233	M	494	g233	RB-sg	plain S vs compact 8
+replace	f73v_13	13		p1	M	496	p217	U	fr.3019 gutter
+replace	f73v_14	3		s22	M	499	g22	RB-sg	plain S vs compact 8
+replace	f73v_14	14		m	L	510	m6	U	fr.3019 gutter
+replace	f73v_15	2		c21	M	511	Q21	R3019	left-edge token is Q21 (curl visible)
+replace	f73v_15	9		s233	M	518	g233	RB-sg	plain S vs compact 8
+replace	f73v_15	10		s292	M	519	g292	RB-sg	plain S vs compact 8
+replace	f73v_16	2		s8	M	524	g8	RB-sg	plain S vs compact 8
+insert			f73v_16:12	-		535	Q6	R3019	fr.3019 has Q6 at the start of f.73v line 17, left of this job's crop region (native strip x 1250-1900)
+replace	f73v_18	2		c42	M	548	v42	R3019	fr.3019 v42 (left of the crop region)
+replace	f73v_18	8		s151	M	554	g151	RB-sg	plain S vs compact 8
+insert			f73v_18:15	-		562	i29	R3019	fr.3019 has i29 at the start of f.73v line 19, left of the crop region
+replace	f73v_19	3		m107	M	565	m10	U	fr.2988 digit after m10 crossed by a z tail
+replace	f73v_19	10		s26	M	572	g26	RB-sg	plain S vs compact 8
+insert			f73v_19:11	-		574	o2	R3019	fr.3019 has o2 at the start of f.73v line 20, left of the crop region
+replace	f73v_20	14		p1	L	588	p10	U	fr.3019 gutter
+replace	f73v_21	1		c70	M	589	c170	R3019	fr.3019 c170 (left of the crop region)
+replace	f73v_21	10		s155	M	598	g155	RB-sg	plain S vs compact 8
+replace	f73v_21	11		y18	M	599	y8	RB	fr.2988 y18 with a faint 1
+replace	f73v_22	2		s113	M	603	g113	RB-sg	plain S vs compact 8
+replace	f73v_22	12		s299	M	613	g299	RB-sg	plain S vs compact 8
+replace	f73v_22	14		m21	M	615	n213	V	fr.3019 m, fr.2988 n (number of fr.3019 in the gutter)
+replace	f73v_23	1		i100	M	616	d100	R3019	fr.3019 d100 (left of the crop region)
+replace	f73v_23	7		s69	M	622	g69	RB-sg	plain S vs compact 8
+replace	f74r_01	15		s113	M	643	g113	RB-sg	compact 8 in both
+delete	f74r_02	5		X	L		-	V	fr.3019 cancelled (struck-out) sign, absent in fr.2988
+replace	f74r_02	14		s77	M	656	g77	RB-sg	compact 8 in both
+replace	f74r_02	15		b147	M	657	h147	RB	both copies show b147
+replace	f74r_04	11		t137	H	676	r137	RB	both copies show t137
+replace	f74r_05	5		s116	M	683	g116	RB-sg	compact 8
+replace	f74r_06	3		s230	M	695	g230	RB-sg	compact 8
+replace	f74r_07	1		s291	M	706	g291	RB-sg	compact 8
+replace	f74r_07	13		a159	M	718	a153	V	fr.3019 159, fr.2988 153
+replace	f74r_08	11		s9	M	728	g9	RB-sg	compact 8 in both
+replace	f74r_08	13		r222	M	730	t222	R3019	fr.3019 shows t222
+replace	f74r_09	4		b26	M	734	h26	RB	both copies show b26
+replace	f74r_09	12		h3	L	742	h32	R3019	fr.3019 clearly h32
+replace	f74r_11	9		s292	M	763	g292	RB-sg	compact 8
+replace	f74r_11	11		m	L	765	m170	R3019	fr.3019 clearly m170
+replace	f74r_12	6		r41	M	772	t41	V	fr.3019 r41, fr.2988 t41 (recurring pair)
+replace	f74r_12	7		q20	M	773	q10	V	fr.3019 q20, fr.2988 q10
+replace	f74r_13	4		s233	M	782	g?	U	fr.2988 number under the ink blot; sign compact 8 in both
+replace	f74r_13	10		s113	M	788	g113	RB-sg	compact 8
+replace	f74r_13	11		r	L	789	r296	R3019	fr.3019 clearly r296

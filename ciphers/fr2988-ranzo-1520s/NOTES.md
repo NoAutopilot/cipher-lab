@@ -164,7 +164,7 @@ single month, since no single month can be justified as *the* date.
 
 **3 Oct 2026 (RANZO-NB):** still `open`. fr.3019 no.27 neighbours and no.36 (f.94) carry no clear copy, gloss or key; f.74r is marked "dupp^ta". Next: compare no.27 with fr.2988 f.2r-v ("dup.a") for a second copy (section "fr.3019 no.27 neighbours" below).
 
-**3 Oct 2026 (A1B-RANZO-2WIT):** still `open`. Full fr.3019 no.27 transcribed (813 tokens) and settled against fr.2988 f.2r-v: our read 0.011 settled error (N 813, lower bound), Bourdeau's 0.035 (21 of 29 are a systematic s->g labelling flip on f.2v); r41/t41 is a recurring copy variant. Next: re-label Bourdeau's c007 g->s before any pooled-corpus attack (script, ~USD 0.5), then the target still needs a key-bearing source (section "Two-witness transcription" below).
+**3 Oct 2026 (A1B-RANZO-2WIT):** still `open`. Full fr.3019 no.27 transcribed (813 tokens) and settled against fr.2988 f.2r-v: our read 0.018 settled error (N 813, lower bound; 0.011 reader-only, the rest a crop-region miss), Bourdeau's 0.035 (21 of 29 are a systematic s->g labelling flip on f.2v); r41/t41 is a recurring copy variant. Next: re-label Bourdeau's c007 g->s before any pooled-corpus attack (script, ~USD 0.5), then the target still needs a key-bearing source (section "Two-witness transcription" below).
 
 **3 Oct 2026 (RANZO-DUP):** still `open`. fr.3019 no.27 (f.73r-74r) and fr.2988 f.2r-v are two copies of the same letter (41/44 and 57/66 tokens agree on the lines compared); both wholly cipher, so no crib. Next: full no.27 transcription diffed against Bourdeau c006/c007 for a measured reader error, about USD 13.5 (section "Duplicate check" below).
 
@@ -344,11 +344,11 @@ pairs, read by this worker) and classed per the pre-registration -> `twowit_diff
 
 | class | n | what |
 |---|---|---|
-| R3019 (our reader error) | 9 | f5/t, q17/g17, d78/D78, z7/Q, h29/h129, Q21/c21, t222/r222, h32/h3, m170/m, r296/r (bare) -- `fr3019_no27_settled.tsv` carries the fixes |
+| R3019 (our error) | 15 | 9 reader errors: f5/t, q17/g17, d78/D78, z7/Q, h29/h129, Q21/c21, t222/r222, h32/h3, m170/m, r296/r (bare); 6 tokens at f.73v line starts left of this job's crop region (x<1550), settled on a native strip x 1250-1900 (one extra request): Q6, i29, o2, v42, c170, d100 -- a crop error of this job, not of the readers. `fr3019_no27_settled.tsv` carries all 15 fixes |
 | RB (Bourdeau reader error) | 8 | folio number "2" read as a token, b30->h30, q12->g12, y18->y8, b147->h147, t137->r137, b26->h26, g1->s1 |
 | RB-sg (Bourdeau s/g label) | 21 | see s/g below |
 | V (copy variant) | 13 | numbers: 286/266, 196/296, 297/247, 159/153, 20/10, 16/6; sign: **r41 (fr.3019) / t41 (fr.2988) four times**, m/n once; fr.3019 has two extra tokens at a line break (p149 r4 / p97 r41 vs p149 r41) and one cancelled sign (ink-struck) absent from fr.2988 |
-| U (unsettled) | 19 | 13 in the fr.3019 gutter (f.73v line ends), 5 at f.73v line starts left of this job's crop region (x<1550; the native page has them), 1 fr.2988 line end beyond my fetched region; plus fr.2988's own ink blot (1) and a z-tail crossing a digit (1) |
+| U (unsettled) | 13 | 10 at f.73v line ends in the fr.3019 gutter; 1 fr.2988 line end beyond my fetched region (L14 vs L143); fr.2988's ink blot over a number (1); a z-tail crossing a digit on fr.2988 (1) |
 
 **s/g settled first (pre-registration item 4).** fr.2988's hand has two forms, a compact closed "8" and an open-bowled g
 (both in one line, e.g. 8^113 beside g^140 on f.2v), matching fr.3019's plain S and its g. So the 21 s/g rows are
@@ -359,20 +359,20 @@ evidence (his annealer's type counts are affected); not posted, a parent's call 
 
 **Result (step 5, pre-registered measures; `twowit_stats.py` prints all of these):**
 - raw two-copy token agreement 750/817 = **0.918** (this is agreement, not accuracy);
-- reconciled fr.3019 read, settled per-token error **9/813 = 0.011 (95% 0.006-0.021)**; 0.034 if all 19 U were ours;
+- reconciled fr.3019 read, settled per-token error **15/813 = 0.018 (95% 0.011-0.030)** (9 reader + 6 crop-region misses; reader errors alone 9/813 = 0.011); 0.034 if all 13 U were ours;
 - Bourdeau's fr.2988 read **29/817 = 0.035 (0.025-0.051)**, of which 21 are the s/g labels; 8/817 = 0.010 (0.005-0.019) without
-  them; 0.059 if all U were his;
+  them; 0.051 if all 13 U were his;
 - copy variants 13/813 = 0.016 per token (genuine scribal differences between the two copies, not reader error);
-- single blind passes vs the settled read: A 94/800 = 0.117, B 66/800 = 0.083, C (f.73v only) 3/292 = 0.010. These favour
+- single blind passes vs the settled read: A 100/806 = 0.124, B 72/806 = 0.089, C (f.73v only) 9/298 = 0.030. These favour
   the passes (the settled read inherits every token the passes agreed on, and C is the preferred f.73v pass), and A/B include
   the band-crop clipping losses; the line-crop passes are the fair single-pass figure.
 All error figures are lower bounds: a sign both readers misread the same way in both copies is invisible. TRANSCRIPTION.md
 terms: **err_2reader** 0.05-0.10 per page (above); **err_true not measurable** (no benchmark item of this hand); the
-two-witness settled figure 0.011 stands in for it with that caveat, N = 813.
+two-witness settled figure 0.018 (reader-only 0.011) stands in for it with that caveat, N = 813.
 BENCHMARK-TX: no row added -- the settled read was built from these same passes, so it cannot score them; a future pipeline
 on the Ranzo hand could use the positions where `fr3019_no27_settled.tsv` and Bourdeau agree (two copies, two readers) as a
 dev item (suggestion).
 Grades: no reading, no key; H 0, C 0. Cost units: 7 Sonnet transcription calls + 12 tile sheets read by this worker (1
 reconciliation unit beyond plan, as two calls were redone).
-Requests: gallica.bnf.fr 15 (3+2 overviews, 2 info.json, 5 native regions, 1 HTTP 500 not retried, 2 resets on first try
-re-sent once each), github.com 1 sparse clone.
+Requests: gallica.bnf.fr 16 (3+2 overviews, 2 info.json, 5 native regions, 1 HTTP 500 not retried, 2 resets on first try
+re-sent once each; 1 left-margin strip), github.com 1 sparse clone.

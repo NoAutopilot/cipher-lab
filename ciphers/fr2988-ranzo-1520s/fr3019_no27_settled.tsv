@@ -532,6 +532,7 @@ f73v_16	9	c246	reconciled
 f73v_16	10	z9	reconciled
 f73v_16	11	f6	reconciled
 f73v_16	12	q49	reconciled
+f73v_16	12+1	Q6	settled R3019 (missed token; may belong to the next line)
 f73v_17	2	p168	reconciled
 f73v_17	3	d78	reconciled
 f73v_17	4	m211	reconciled
@@ -544,7 +545,7 @@ f73v_17	10	t90	reconciled
 f73v_17	11	m11	reconciled
 f73v_17	12	c170	reconciled
 f73v_17	13	g72	reconciled
-f73v_18	2	c42	reconciled
+f73v_18	2	v42	settled R3019
 f73v_18	3	q4	reconciled
 f73v_18	4	q18	reconciled
 f73v_18	5	i99	reconciled
@@ -558,6 +559,7 @@ f73v_18	12	d202	reconciled
 f73v_18	13	e39	reconciled
 f73v_18	14	d35	reconciled
 f73v_18	15	t164	reconciled
+f73v_18	15+1	i29	settled R3019 (missed token; may belong to the next line)
 f73v_19	1	m119	reconciled
 f73v_19	2	y8	reconciled
 f73v_19	3	m107	reconciled
@@ -569,6 +571,7 @@ f73v_19	8	z3	reconciled
 f73v_19	9	z8	reconciled
 f73v_19	10	s26	reconciled
 f73v_19	11	p3	reconciled
+f73v_19	11+1	o2	settled R3019 (missed token; may belong to the next line)
 f73v_20	1	a5	reconciled
 f73v_20	2	a104	reconciled
 f73v_20	3	m8	reconciled
@@ -583,7 +586,7 @@ f73v_20	11	n105	reconciled
 f73v_20	12	v191	reconciled
 f73v_20	13	a152	reconciled
 f73v_20	14	p1	reconciled
-f73v_21	1	c70	reconciled
+f73v_21	1	c170	settled R3019
 f73v_21	2	t89	reconciled
 f73v_21	3	g140	reconciled
 f73v_21	4	d36	reconciled
@@ -610,7 +613,7 @@ f73v_22	11	o65	reconciled
 f73v_22	12	s299	reconciled
 f73v_22	13	L77	reconciled
 f73v_22	14	m21	reconciled
-f73v_23	1	i100	reconciled
+f73v_23	1	d100	settled R3019
 f73v_23	2	z9	reconciled
 f73v_23	3	t74	reconciled
 f73v_23	4	p149	reconciled
