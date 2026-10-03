@@ -1,0 +1,3 @@
+line	pos	value	grade	reason
+p3_20	2	h	M	VERIFY-HDK 3 Oct 2026: key 255 table gives h but the letter's own gloss over this group is g (GAPS168 zoom: sign is 55, not 53); the S licence (table vs gloss, control-backed) does not cover a cell the gloss contradicts
+p3_21	7	NULL	M	VERIFY-HDK 3 Oct 2026: key 255 lists 6 as a null but the letter's own gloss over this group is t; contradicted cell, regraded S->M

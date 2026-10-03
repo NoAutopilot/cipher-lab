@@ -380,6 +380,8 @@ The pooled check is now discriminating, with or without the 690 override: 651 (p
 
 Files: `transcription/p3_passA.tsv`, `p3_passB.tsv` (raw, unnormalised), `p3_ciphertext.tsv`, `gloss_pairs.tsv` (+11 rows), `gloss_align.tsv`, `gloss_key.tsv`, crops in `images/crops_p3/`. No reading beyond the graded pairs. Vision calls: 2 subagent passes plus the reconciler's own zooms (6 small native crops and one preview of key 255 f.14) -- 3 units.
 
+**Verifier note (VERIFY-HDK, 3 Oct 2026; AUDIT.md):** the 8/8 above counts each agreeing pair twice. It is 4/4 agreeing pairs on 4 recurring codes (690, 651, 229, 601), 3/3 without the circular 690 override; chance per pair 0.047, so the consistency result stands, but quote it as "3 recurring codes consistent", not as 8 tests.
+
 ## GAPS163-hessen-daenemark-1672 (3 Oct 2026, account-4): merged ciphertext.tsv, gloss-derived key, decode_key --check
 
 Script only, no vision, no subagents. `keys/merge_pages.py` merges `transcription/p1-p3_ciphertext.tsv` into
@@ -432,6 +434,8 @@ own glosses, and a letter-cipher run at S that agrees with its marginal gloss. T
 this target (`specs/` has none), and the decoded text is names plus three short runs, not prose. Whether the glossing
 hand is period or later is still unsettled (While waiting); that changes the source label, not the C grade (known
 plaintext). No status change by this worker. Rule 10: report only; nothing here says new or first.
+
+**Verifier note (VERIFY-HDK, 3 Oct 2026; AUDIT.md):** class N0, key `period`, text known -- the leaf carries its own period decipherment (the bold glosses); this reading transcribes it and identifies the 1666 letter table, it is not an independent decipherment. Re-derivation reproduced. A selection-free LCS test (keys/verify_hdk_controls.py) confirms key 255's letter table on both runs (17/20 and 14/21 vs control max 12 and 11). Two cells the letter's own gloss contradicts were regraded S -> M in exceptions.tsv (p3_20 pos 2 = 55, p3_21 pos 7 = 6); tokens now C 9, I 1, M 25, S 28, U 2.
 
 ## GAPS168-hessen-daenemark-1672 (3 Oct 2026, account-4): native-zoom re-read of the 625 margin gloss and of run 2
 
