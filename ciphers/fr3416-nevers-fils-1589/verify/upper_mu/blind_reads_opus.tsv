@@ -1,0 +1,69 @@
+crop	blind	row	token	grade	opus_read	confidence
+c01	x10	U01	receu	H	[?]e fil[?] fay recen 3 de lo[?]	M
+c02	x33	U01	l'res	H	3 de vos lres du 27	H
+c03	x50	U05	agreable	H	[...]rois en requeste La ai[...]	L
+c04	x53	U09	Tremolit	H	par d [?]renolit et M[...]	L
+c05	x49	U14	nuits	H	[...] en lay moitie par en	L
+c06	x28	U22	vuider	H	a lieder et a mon[?]	L
+w01	x21	U03	{cognoistre}	M	Je cognoistre pr- fai[?]	L
+w02	x11	U03	{q'}	M	[?]ouverte pr- faittes le	L
+w03	x09	U03	{ce}	M	[?] pr- faittes le	M
+w04	x34	U04	{leur}	M	dernier je vous ay esc[?]	L
+w05	x40	U04	{memoire}	M	t par le soldat mar[?]hot	L
+w06	x18	U05	{sorte}	M	de la ligue que je a	M
+w07	x67	U06	[...]	U	[?]a forme d [...] alle	L
+w08	x07	U07	{lieu / bien}	U	cet bay p[?]les fon[?]	L
+w09	x57	U07	{laisse / lequel}	U	[?]ung [...] lon[?]s fait luy	L
+w10	x55	U07	{fait}	M	[...] lon[?]s fait luy Roy	L
+w11	x23	U09	{Crapon}	M	[?]r devis Crapne sur d Cha[?]	L
+w12	x47	U09	{Buzy}	M	et Mr d [?]uby et que	M
+w13	x62	U09	{par}	M	Mr d [?]uby et que	M
+w14	x51	U10	{cognoistra}	M	[...] que luy requeste que [...]	L
+w15	x36	U10	{d'esfatere / d'esfa[...]}	U	de courage et de [?]alleurs	M
+w16	x48	U11	[...]	U	t que luy [struck: et moitie] Ita[...]	L
+w17	x44	U11	<del>[...] amitie</del>	U	[...] [struck: et moitie] Itali[?] est d[...]	L
+w18	x46	U11	{a}	M	Itali[?] est de della [...] et	L
+w19	x01	U11	[...]	U	l- dd le plus- et ne vien[?]	L
+w20	x24	U11	[...]	U	le plus- et ne viendray	L
+w21	x20	U12	{au}	M	[?]n et a Dieu. Madame	H
+w22	x22	U12	{adressez}	M	[?]n Dieu. Madame aty.	M
+w23	x68	U12	[...]	U	luy que ne sçay Itali[?]	L
+w24	x52	U13	{<del>Tremolett</del>}	M	C[?]y [struck: ...] et	L
+w25	x15	U13	[...]	U	[?]g [struck word] et qui clas[?]	L
+w26	x54	U13	{faire}	M	chascun faire tout et [?]	M
+w27	x38	U13	{les}	M	[...]eur tout et [?]y mesme q[ue] a	L
+w28	x37	U14	[...]	U	r en luy g[?]a[?] ame. Il	L
+w29	x14	U15	{[...] / midi}	U	que les plaines du midi	M
+w30	x02	U16	[...]	U	[...] il est tr[?]	M
+w31	x56	U16	{ne}	M	[?] c[?]s[?]fuit a pense ne esto[...]	L
+w32	x08	U17	{estoit}	M	sadinozie q Belle Bo[?]	L
+w33	x06	U17	{selon}	M	[?]oziie q Belle Bolee [?]	L
+w34	x63	U17	[...]	U	q[ue] Itali[?] [...] [...]	L
+w35	x30	U18	[...]	U	[?]m- amis de	L
+w36	x64	U18	{ce}	M	Dieu pris luy grand	L
+w37	x31	U18	[...]	U	[?]i ay quand bel pt bbe	L
+w38	x04	U18	[...]	U	quand bel pt bbe le psam[?]	L
+w39	x66	U19	{11}	M	cha[?]ge [...] [...] [?]a	L
+w40	x17	U20	{ultime}	M	T fen retenu ne	L
+w41	x13	U20	{desquelz}	M	sadinaire depeschat je T	L
+w42	x39	U20	{si 7}	M	[...] desplaist q[ue] [?]	L
+w43	x58	U21	{perdre}	M	Les pedre la	L
+w44	x03	U22	[...]	U	a lieder et a mon[?] [?]	L
+w45	x25	U23	[...]	U	[?]z fit sulingenu-	L
+w46	x59	U24	{que de tout}	M	en sorte q[ue] [?] tant q	L
+w47	x27	U24	{q' le-}	M	[?]y J Ant fil[?]	L
+w48	x60	U25	{estime}	M	[...] ca [?]suiui	L
+w49	x12	U25	{servitu-}	M	feal- et senilier. a l[?]	L
+w50	x05	U25	{de}	M	n[?]. a ung de vnilles	L
+w51	x65	U25	[...]	U	ung de moitie	M
+w52	x35	U26	{depuis}	M	Le Roy est en[?] du[?]e[?] [...]	L
+w53	x61	B11	[...]	U	[...] Lua[?]	L
+w54	x45	B11	{ce a la}	M	[...]s de Ch[?]i aussi en a fait d	L
+w55	x42	M2	{et}	M	[?]is qu'il [?]e pr[...]	L
+w56	x19	M2	{vous}	M	[?]z qui est bie pardu q[?]	L
+w57	x26	M2	[...]	U	est bie pardu qu et p[?]	L
+w58	x29	M3	[...]	U	[?]lr ie aseu en l[?]	L
+w59	x32	M3	{assure}	M	[?]lr ie aseu en la bl[?]	L
+w60	x41	M3	{la}	M	afin [?] en sa [?]log[?]e d[...]	L
+w61	x16	M3	{louange / eslogne}	U	[?] en la bloque d'autre	L
+w62	x43	M4	{asseta}	M	[...] a[?]ff[?]a	L
