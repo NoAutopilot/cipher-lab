@@ -5955,3 +5955,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:02 | A2-COL5 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (siblings thumbnail sort of 19 cipher-bearing canvases by system); cap USD 2, box ends 00:27 UTC
 2026-10-03 00:02 | VERIFY-OLD (account 2, LANE-A2PUSH) | claim: verifier na-oldenbarnevelt-2442-1605 B/C1; box ends 00:53 UTC
 2026-10-03 00:02 | A2-LAG3 (account 2, LANE-A2PUSH) | claim: la-garde-1577 -- Verdict cheapest next step (masc family_run, control first); cap USD 3, box ends 00:38 UTC
+2026-10-03 00:02 | VERIFY-BIRAGO-SMALL (account 2, for account-3 orch) | claim: ceppo-nevers-fr3251-1570s f.21v L11.17 endorsement + nevers-birago-fr3251-1572 no.87 reader-label rulings; verifier, disk only, cap USD 3, box 35 min (ends 00:37 UTC)
