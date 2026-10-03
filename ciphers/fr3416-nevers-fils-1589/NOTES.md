@@ -168,3 +168,14 @@ Read so far: 62 of 102 figure tokens at H (61%); 40 M
 - [x] image-check: native crops of f.35r foot, the key strip and f.38v foot viewed
 - [ ] retry: L05/L10 targeted re-read at higher resolution (planned step above)
 Verdict: keep going: 4 internal gaps; cheapest next: L05/L10 targeted re-read, ~$1.5
+
+## FILS-CLEAR pre-registration (account 1, 3 Oct 2026, written 09:3x UTC before any read returned)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-clear.md`. Rules fixed before the reads:
+1. L05/L10 digits: a figure token moves M -> H only if (a) the targeted 2x read gives that glyph pair with no
+   alternative and (b) my reconciliation against the same 2x crops agrees. Key coverage (whether a pair is in no.25)
+   is never used to choose a digit in this pass; a changed token whose new reading rests on one reader stays M.
+2. Clear text: a word read identically by blind passes A and B is graded H (clear); a word they split is settled
+   against the crops in one reconciliation and graded M; a word not settled is [...] and graded I if supplied from
+   context. Clear text is marked as clear in the joined reading (never as a decode).
+3. No reading of the runs is used to settle a clear word, and no clear word is used to change a digit.
