@@ -2311,10 +2311,40 @@ letter, s.16/s.19); there was nothing to align. Grades are unchanged, and so are
 class (rule 10; AUDIT.md holds P4 at N3).
 Requests: none (archive.org 0, all other hosts 0). Vision calls 0. Subagents 0.
 
-## Remaining gaps (GAPS144-thurloe-printed, 3 Oct 2026)
+## GAPS148-thurloe-printed (3 Oct 2026, account-4)
+
+Brief: the GAPS144 Verdict step -- compare Tomokiyo's key image `stamford.jpg` (cryptiana.web.fc2.com/code/stamford.jpg,
+the image on his thurloe.htm `#Stamford` section, "William Stamford's cipher (1655)", E=12/25; key credited to
+Satoshi Tomokiyo, Cryptiana) with `pool_1654/key_stamford.tsv` for codes 143, 70 and the M-graded codes.
+
+**Fetch.** One request (http 302 to https, then 200 image/jpeg, 18,562 bytes, 358x181 px), saved unmodified as
+`sources/cryptiana/web/stamford.jpg` (sha1 209214db...). Crop step run as required:
+`python3 tools/iiif_lines.py --image ciphers/thurloe-printed/pool_1654/tomokiyo/stamford.jpg --out ciphers/thurloe-printed/pool_1654/tomokiyo/crops`
+-> 4 bands (the image's three table rows and its caption); the whole image is smaller than one line crop, so the two
+vision calls were the whole image and a 3-4x zoom of rows 2-3 (crops not committed: derived from his image).
+
+**What the image shows.** A letters-only table, values 2-60, no code words: 2 m, 3 l, 5 k, 6 i, 7 h, 10 g, 11 f, 12 e,
+16 d, 17 c, 18 b, 19 a / 21 k, 22 g, 23 h, 25 e, 26 f, 27 c, 28 i, 29 d, 30 a / 31 y, 32 x, 33 w, 34 u/v, 35 t, 36 s,
+37 r, 38 q, 39 p, 40 o, 41 n, 42 n, 43 m, 47 r, 55 t, 56 s, 60 i. Per code (`pool_1654/tomokiyo_compare.tsv`):
+- **143, 70 (P4 U, 1 each): not in the image** (it stops at 60 and has no words). Left unread.
+- **33 w (P4 x6), 38 q (x2), 32 x (x1), 47 r (not in P4): image agrees.** Value unchanged; grade stays M, because
+  Tomokiyo's table is a published modern reconstruction from Stamford's letters, very probably from the same printed
+  decipherments our key comes from, so it is not an independent key source (rule 4 H) -- consistent, not confirmation.
+- **1 i (P4 x3), 67 england (x3), 153 thecavaliers (x1), and one-vote 4 n, 9 a, 20 i, 24 u: not in the image.** Left.
+- **27: conflict.** key_stamford.tsv r (C, 9 of 11 printed votes: r 9, c 1, h 1); the image c. 27 does not occur in
+  P4, so no reading changes; recorded, not resolved (rule 4).
+- 55 t, 56 s, 60 i: in the image, absent from key_stamford.tsv, none occurs in P4.
+Every other image value (2-43) matches key_stamford.tsv.
+
+**Result: no value changed, so the reading and grades are unchanged:** H 64, C 338, S 0, M 16, U 6 of 424 before and
+after. `python3 pool_1654/decode_stamford.py --check` re-run: result in the follow-up commit below. No novelty class (rule 10; AUDIT.md holds
+P4 at N3).
+Requests: cryptiana.web.fc2.com 2 (one 302 on http, one 200 on https); no other host. Vision calls 2. Subagents 0.
+
+## Remaining gaps (GAPS144-thurloe-printed, 3 Oct 2026; updated GAPS148)
 Read so far: P4 (the one pool item with no printed decipherment) 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.txt, s.21, re-counted 3 Oct 2026); P2-P28's other items are printed decipherments (N0, AUDIT.md)
 Closed, not a gap: P4 block A/B line order (pp.188-189 page images), done 24 Sept 2026 by s.18 (image) and s.21 (reading), re-checked 3 Oct 2026 above.
-- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: not-attempted; the key comes only from P5-P7's printed decipherments, and Tomokiyo's key image stamford.jpg (built partly from P4, AUDIT.md (f)) has never been compared; next: one fetch of stamford.jpg from cryptiana.web.fc2.com, compare against key_stamford.tsv for 143, 70 and the M codes 33/67/153, ~$1.5
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): it is a letters-only table 2-60, neither code is in it; it agrees on 32/33/38/47 and conflicts on 27 (r vs c, not in P4); no other sibling letter or key on disk carries 143 or 70
 - P4 one-vote M entries 67, 153, 84, 275 - blocker: not-attempted; V3a's SO-THURLOE-P4 suggestion (s.21 foot) to test them against number boundaries in the later Stamford letters; next: disk-only check against pool_1654/tokens.tsv, ~$1
 - A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
 - P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
@@ -2322,9 +2352,9 @@ Closed, not a gap: P4 block A/B line order (pp.188-189 page images), done 24 Sep
 ## Escalation (GAPS144-thurloe-printed, 3 Oct 2026)
 - [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92-94% (s.16)
 - [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
-- [ ] known-keys: Tomokiyo's stamford.jpg not yet fetched or compared; planned as the cheapest next step
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): agrees on 32/33/38/47, conflict on 27 (not in P4), no entry for 143/70/1/67/153
 - [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
 - [x] key-rebuild: key rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py)
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
 - [ ] retry: V3a's one-vote M boundary test against the later Stamford letters, disk only
-Verdict: keep going: 3 internal gaps; cheapest next: fetch Tomokiyo's stamford.jpg and compare against key_stamford.tsv for 143/70/M codes, ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: V3a's one-vote M boundary test (67, 153, 84, 275) against pool_1654/tokens.tsv, disk only, ~$1
