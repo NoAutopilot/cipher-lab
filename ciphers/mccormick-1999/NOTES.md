@@ -425,3 +425,58 @@ Adversarial pass (.claude/briefs/check-solved.md lines 123-139): tried to show a
 
 Result: not found-solved -- stays open (a search result, rule 10; nothing here supports new/first wording).
 Next cheap test: the 2 Oct "Named next step" above, rating the Tsuchimoto and Sadak tables (fetch the two Zenodo PDFs, apply to both notes, `tools/judge_plaintext.py specs/mccormick-1999.json` beside the shuffled control, check Sadak line 10 26 vs 36), about USD 3.
+
+## Cheap test 5 (FT4-mccormick-1999, account-4, 3 Oct 2026 00:28-00:45 UTC) -- rating the Tsuchimoto and Sadak readings
+
+Other people's readings, scored only (rule 10); no new solving. Sources (both CC BY 4.0, copies kept in `second-opinions/`
+with text extracts): Masataka Tsuchimoto, "Research Paper: Structural Solution of the Ricky McCormick Notes", Zenodo,
+26 Jan 2026, https://doi.org/10.5281/zenodo.18375728 (`tsuchimoto-18375728.pdf/.txt`); Sanaa Sadak, "Forensic Manuscript
+Volume VI", Zenodo, 19 Jun 2026, https://doi.org/10.5281/zenodo.20767125 (`sadak-20767125.docx/.txt`).
+
+**What the papers actually give.** Neither is a full reading. Tsuchimoto: a six-row table (PNSE=Prednisone, SE/NSE=Serevent,
+ALPM/ALPRM=Alprazolam, OLPLM=Olanzapine, WBT=Wellbutrin, ACDN=Acetaminophen+Codeine) plus "V-Removal" and "Dot-Linking";
+PNSE, ALPM, ALPRM, OLPLM, WBT and ACDN do not occur in the transcription at all, and the paper decodes no line. Sadak: one
+line (note 2 line 10) rendered "36 MILES 74 SPRING PARK 29 BLOCKS 175 ROUTE TRAFFIC" from a source line he transcribes
+`36 MLSE 74 SPRK[SE...] 29KE[NO...] 175R[TR...]`; the spec (Schmeh's retype) has `26 MLSE 74 SPRKSE 29KCNOB,OLE 175 RTRSE`
+-- his 36 vs 26, KE vs KC, and dropped OLE are departures from the transcription, unchecked against the image here (rule 2:
+conditional on the transcription). No key, no method a script can rerun ("Excel VBA core"), so the ARM-C1 shuffled-decode
+check is done by applying each paper's own table to shuffled ciphertext, the only mechanical part.
+
+**Method.** `specs/cheap-tests/mccormick-1999/test5_rate_claims.py` -> `test5_result.json`. Each table applied to both notes
+(746 letters), unglossed text left in place; shuffled-target control = the notes' letters permuted within each note
+(separators kept), K=20, seed 1999 -- this control *can* differ on both coverage and score (it changes which substrings
+occur; a token-order shuffle could not, bCAS). The judge's own controls are the shuffled-null p99 and the real-text p05.
+Corpora: default `en` and a US-vernacular pair (Huck Finn + Gatsby, `tools/data/en/`), the nearest on disk to 1999 US
+vernacular; no 1999-era corpus exists in tools/data. **Corpus caveat (rule 3):** `en` is of unknown reliability --
+judge_plaintext.py gives no per-fold figures, so from `tools/data/en/README.md`: leave-one-file-out false negatives
+17.0-80.5% per fold at N=200 (spread 0.635) and 9.5-84.0% at N=500 (spread 0.745); real_p05 per fold sits at -0.88 to
+-0.91. The full-notes FAILs below miss real_p05 by about 1.2 log10 units, far outside that fold band, so the caveat does not
+touch them; it does touch the line-level result.
+
+| Reading (variant) | corpus | letters glossed | judge score | null_p99 | real_p05 | verdict | shuffled-target (K=20): score min/med/max, PASS count, coverage med |
+|---|---|---|---|---|---|---|---|
+| unglossed notes (reference) | en | 0% | -2.171 | -2.071 | -0.864 | FAIL | -- |
+| Tsuchimoto, whole-token match | en | 0.5% | -2.157 | -2.056 | -0.859 | FAIL | -2.224/-2.110/-2.045, 0/20, 0.0% (target rank 5/20) |
+| Tsuchimoto, whole-token match | us-vern | 0.5% | -2.104 | -2.048 | -0.831 | FAIL | -2.195/-2.086/-2.007, 0/20 (rank 7/20) |
+| Tsuchimoto, substring + V-removal | en | 20.4% | -1.720 | -2.080 | -0.858 | FAIL | -2.091/-2.003/-1.902, 0/20, 4.0% (rank 20/20) |
+| Tsuchimoto, substring + V-removal | us-vern | 20.4% | -1.763 | -2.070 | -0.839 | FAIL | -2.073/-1.999/-1.883, 0/20 (rank 20/20) |
+| Sadak, four glosses as substrings | en | 3.4% | -2.105 | -2.064 | -0.884 | FAIL | -2.214/-2.110/-2.045, 0/20, 0.0% (rank 12/20) |
+| Sadak, four glosses as substrings | us-vern | 3.4% | -2.048 | -2.057 | -0.849 | FAIL | -2.185/-2.086/-2.007, 0/20 (rank 15/20) |
+
+Tsuchimoto's substring variant beats all 20 shuffles only because "SE" (his Serevent) sits inside the notes' own repeated
+-RSE/-NSE endings, so it pastes one English word over 20% of the letters; it is still about 0.86 below real_p05. Not
+evidence for the table: the table glosses one recurring bigram, not the notes.
+
+**Line level (Sadak's line only, length check dropped, 33 letters).** His rendering scores -0.987 (en; real_p05 -0.947,
+null_p99 -1.582) and -1.154 (us-vern; real_p05 -0.948): FAIL, near the gate. Placebo lines (same digits, his four slots
+filled with random Gatsby words of the same lengths, K=20) score median -0.936 (en) / -0.974 (us-vern) and PASS 10/20 and
+7/20; an ordinary 39-letter English sentence PASSes (-0.754). So at this length the judge cannot tell any hand-chosen
+English words from a decipherment: a non-test ("judge cannot decide"), and his line sits below the placebo median anyway.
+
+**Verdict.** Tsuchimoto: FAIL on both notes (both variants, both corpora), glosses 0.5% (whole tokens) to 20.4% (one
+bigram) of the letters; target inside or barely above its shuffled controls; not a reading of the notes. Sadak: FAIL on both
+notes (3.4% glossed, inside the shuffle band); his one line is judge-cannot-decide at 33 letters against placebo controls,
+and rests on three departures from the spec's transcription. Neither paper is the N1 reference for this item; status stays
+`open` (no H, C or S tokens anywhere). Requests: zenodo.org 4 (2 record JSON, 2 files), no login. Next cheap step for the
+transcription departures: check note 2 line 10 (26/36, KCNOB/KENO) against the FBI image, which also serves any future
+reading; one image fetch, ~USD 1.

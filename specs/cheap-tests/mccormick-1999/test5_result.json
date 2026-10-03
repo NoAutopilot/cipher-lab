@@ -1,0 +1,230 @@
+{
+ "K": 20,
+ "seed": 1999,
+ "variants": {
+  "T-tok": {
+   "en": {
+    "target": {
+     "pass": false,
+     "letters": 758,
+     "score": -2.157,
+     "null_p99": -2.056,
+     "real_p05": -0.859,
+     "lang_pass": false,
+     "word_cover": 0.266,
+     "coverage": 0.0054
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.224,
+     -2.11,
+     -2.045
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0,
+     0.0,
+     0.0054
+    ],
+    "target_score_rank_among_shuffles": 5
+   },
+   "en_us_vern": {
+    "target": {
+     "pass": false,
+     "letters": 758,
+     "score": -2.104,
+     "null_p99": -2.048,
+     "real_p05": -0.831,
+     "lang_pass": false,
+     "word_cover": 0.277,
+     "coverage": 0.0054
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.195,
+     -2.086,
+     -2.007
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0,
+     0.0,
+     0.0054
+    ],
+    "target_score_rank_among_shuffles": 7
+   }
+  },
+  "T-sub": {
+   "en": {
+    "target": {
+     "pass": false,
+     "letters": 1147,
+     "score": -1.72,
+     "null_p99": -2.08,
+     "real_p05": -0.858,
+     "lang_pass": false,
+     "word_cover": 0.554,
+     "coverage": 0.2038
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.091,
+     -2.003,
+     -1.902
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0241,
+     0.0402,
+     0.0563
+    ],
+    "target_score_rank_among_shuffles": 20
+   },
+   "en_us_vern": {
+    "target": {
+     "pass": false,
+     "letters": 1147,
+     "score": -1.763,
+     "null_p99": -2.07,
+     "real_p05": -0.839,
+     "lang_pass": false,
+     "word_cover": 0.524,
+     "coverage": 0.2038
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.073,
+     -1.999,
+     -1.883
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0241,
+     0.0402,
+     0.0563
+    ],
+    "target_score_rank_among_shuffles": 20
+   }
+  },
+  "S-sub": {
+   "en": {
+    "target": {
+     "pass": false,
+     "letters": 766,
+     "score": -2.105,
+     "null_p99": -2.064,
+     "real_p05": -0.884,
+     "lang_pass": false,
+     "word_cover": 0.299,
+     "coverage": 0.0335
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.214,
+     -2.11,
+     -2.045
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0,
+     0.0,
+     0.0054
+    ],
+    "target_score_rank_among_shuffles": 12
+   },
+   "en_us_vern": {
+    "target": {
+     "pass": false,
+     "letters": 766,
+     "score": -2.048,
+     "null_p99": -2.057,
+     "real_p05": -0.849,
+     "lang_pass": false,
+     "word_cover": 0.312,
+     "coverage": 0.0335
+    },
+    "shuffled_target_scores_min_med_max": [
+     -2.185,
+     -2.086,
+     -2.007
+    ],
+    "shuffled_target_pass_count": 0,
+    "shuffled_target_coverage_min_med_max": [
+     0.0,
+     0.0,
+     0.0054
+    ],
+    "target_score_rank_among_shuffles": 15
+   }
+  }
+ },
+ "line": {
+  "en": {
+   "sadak_line": {
+    "pass": false,
+    "letters": 33,
+    "score": -0.987,
+    "null_p99": -1.582,
+    "real_p05": -0.947,
+    "lang_pass": false,
+    "word_cover": 1.0
+   },
+   "placebo_scores_min_med_max": [
+    -1.594,
+    -0.936,
+    -0.725
+   ],
+   "placebo_pass_count": 10,
+   "plain_english_reference_same_length": {
+    "pass": true,
+    "letters": 39,
+    "score": -0.754,
+    "null_p99": -1.685,
+    "real_p05": -0.952,
+    "lang_pass": true,
+    "word_cover": 1.0
+   }
+  },
+  "en_us_vern": {
+   "sadak_line": {
+    "pass": false,
+    "letters": 33,
+    "score": -1.154,
+    "null_p99": -1.734,
+    "real_p05": -0.948,
+    "lang_pass": false,
+    "word_cover": 0.939
+   },
+   "placebo_scores_min_med_max": [
+    -1.108,
+    -0.974,
+    -0.755
+   ],
+   "placebo_pass_count": 7,
+   "plain_english_reference_same_length": {
+    "pass": true,
+    "letters": 39,
+    "score": -0.742,
+    "null_p99": -1.777,
+    "real_p05": -0.948,
+    "lang_pass": true,
+    "word_cover": 1.0
+   }
+  }
+ },
+ "unglossed_ciphertext": {
+  "en": {
+   "pass": false,
+   "letters": 746,
+   "score": -2.171,
+   "null_p99": -2.071,
+   "real_p05": -0.864,
+   "lang_pass": false,
+   "word_cover": 0.255
+  },
+  "en_us_vern": {
+   "pass": false,
+   "letters": 746,
+   "score": -2.112,
+   "null_p99": -2.06,
+   "real_p05": -0.85,
+   "lang_pass": false,
+   "word_cover": 0.268
+  }
+ }
+}
