@@ -123,8 +123,72 @@ and the agents' address list no. 1165) and Coke's (HMC Cowper vol. 2 pp. 187-190
 
 Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md; consolidated TNA batch).
 
-- S: find the Bodleian catalogue record for the Clarendon State Papers volume holding Cal. Clar. no. 1486 (keys, item 14 "Sir Thos. Roe's cypher") and quote its availability flag (tools/data/catalogue_ladders.tsv), ~$1.
+- S: [done 3 Oct 2026, FT4-sp81-roe-1638 -> LOCAL-QUEUE L40] find the Bodleian catalogue record for the Clarendon State Papers volume holding Cal. Clar. no. 1486 (keys, item 14 "Sir Thos. Roe's cypher") and quote its availability flag (tools/data/catalogue_ladders.tsv), ~$1.
 - S: fetch SP 81/44/88's full Discovery record detail (note field) to see whether its "decipher" names the cipher used.
 
 Requests this pass (shared with the sibling targets where noted): archive.org 6 (advancedsearch 3, djvu.txt 3), github.com
 2 shallow clones (shared), WebSearch 2 for this target.
+
+## FT4-sp81-roe-1638 (3 Oct 2026, account-4)
+
+Step: the Clarendon key lead (Cal. Clar. i no. 1486 item 14). Results:
+
+1. **Calendar entry pinned.** IA `calendarofclaren01bodluoft` djvu text, pp. 214-215: no. 1486 "Keys to various Cyphers,
+   principally those used by the Ambassadors resident abroad", 20 items, placed among the calendar's undated papers at
+   the end of 1640 (between no. 1485 and the 1 Jan 1640/1 entry no. 1487). Siblings in the same bundle: Boswell 30 July
+   1632, Aston, Leander 1640, Hopton (one endorsed Oct. 1638), Curtius, Morton (Turin) 1635, Welford, Taylor, Avery
+   (received 28 June 1638), Gerbier, Leicester (sent 26 Oct 1637), Lord Deputy, Hamilton, **14 "Sir Thos. Roe's cypher.
+   End. by Windebank."**, Oliver Fleming, Fielding, Dawson, Elson, Hatton, five anonymous. The calendar prints no
+   volume or folio. Volume: **not established**. MS. Clarendon 19 is a composite volume Sept 1640 - Jan 1640/1, 284
+   leaves (web-search summary of the CELM/Bodleian description), so it is the likely home of an end-of-1640 undated
+   bundle -- an inference from the calendar's order, not read in any catalogue.
+2. **Availability.** Digital Bodleian JSON search (`/search/?q=...&format=json`, Accept: application/json): "Clarendon"
+   52 objects, the only MS. Clarendon objects MS. Clarendon 128 and 155; "MS. Clarendon 19" 3 objects (all MS. Abinger);
+   "cypher Windebank" 0; "cipher keys Clarendon" 2 (MS. Abinger e. 32, Arch. G c.7). A search result, not a
+   digitisation verdict. The holding record (archives.bodleian.ox.ac.uk) answered the cloud with the Anubis bot page
+   ("Making sure you're not a bot!"), one request, not retried -> **LOCAL-QUEUE L40** (catalogue-record row, quotes
+   tools/key_livecheck.py 03:03 UTC: no credential applies to this host). Bodleian archives blog "Secret ciphers"
+   (2 Aug 2021) is about the 1746 Villiers papers (Clarendon 2nd creation), not this bundle.
+3. **DECODE (login-free).** On-disk key harvest (`sources/decode/keys-all-2026-09-28-merged.tsv` + `keys-na-*`,
+   9,828 rows) grepped for Roe/Windebank/Clarendon/Hamburg/Coke/Boswell: no Roe key. All London/Kew/Oxford keys dated
+   1628-1645 listed (26); record views opened for 8734, 9114, 370, 373, 7596, 414, 416, 418, 419. 8734 (BL Add MS 72438
+   ff.144-145, 1638, homophonic + nomenclator) has origin city Constantinople, no correspondent -- 1638 Constantinople
+   is not Roe's post (he left in 1628); 370 is Hopton's (and Anstruther's), 373 Aston's 1635, 414 Carleton's;
+   416/418/419 (TNA SP 106/5, 1625-49) name no correspondent -- unnamed Charles I keys, not excluded as Roe's, not
+   identified. Oxford holds no DECODE key record in this range.
+4. **Solver repositories** (shallow clones 3 Oct 2026): Aymeloglu: no Roe hit. Bourdeau: no Roe target; his `hyde`
+   target searched the Deciphering Branch key volume BL Add MS 32256 (DECODE R9113-R9219) by correspondent and opened
+   every 1630-50 key -- R9115 is Windebank's 1640 cipher (an 18th-century reconstruction), none is Roe's.
+5. **design_prior.py: does not apply** -- no ciphertext on disk (f.225 undigitised), and it predicts from sign
+   statistics. KEY-DESIGN.tsv / KEY-OFFICES.tsv carry no 1630s English Secretary-of-State key. The nearest office
+   evidence is DECODE's own description of two sibling Charles I keys of the same bundle's correspondents: 370 (Hopton,
+   Spain 1630s) "homophonic substitution ... with nulls and a nomenclature ... over 400 codegroups ... numerals only",
+   373 (Aston 1635) "roughly 700 codegroups", vowels 8 homophones. A Roe key of 1638 from Windebank's office is
+   therefore expected to be a numeric homophonic nomenclator of a few hundred groups -- a prior, not an observation;
+   if f.225's postscript is in numerals, this family fits; a key test needs both the key leaf and the ciphertext.
+
+No image of the key is online that this pass could find; nothing fetched. Requests: archive.org 1 (djvu.txt),
+digital.bodleian.ox.ac.uk 9 (2 HTML, 7 JSON), archives.bodleian.ox.ac.uk 1 (Anubis), blogs.bodleian.ox.ac.uk 1,
+de-crypt.org 9 (RecordsView, no login), github.com 2 shallow clones, WebSearch 2. All >= 1.5 s apart per host.
+
+## Remaining gaps (FT4-sp81-roe-1638, 3 Oct 2026)
+Read so far: 0 tokens (no ciphertext on disk; f.225 is digitised: false)
+- ciphertext of SP 81/44/225 postscript - blocker: waiting-on ASKS row 106 (TNA page copy); Discovery C7775394 digitised: false, REQUEST.md
+- Roe's cypher key leaf (Cal. Clar. i no.1486 item 14) - blocker: waiting-on LOCAL-QUEUE L40; the Bodleian holding record is Anubis-challenged from the cloud and Digital Bodleian shows no MS. Clarendon 19 object (FT4 section above)
+- SP 81/44/88 decipher (Coke to Roe, 30 May 1638) - blocker: waiting-on ASKS row 106 (TNA page copy); Discovery C7775340 digitised: false
+
+## Escalation (3 Oct 2026)
+- [x] siblings: SP 81/44 piece swept 24 Sept (f.88 decipher lead); DECODE 1628-45 English keys opened 3 Oct, none Roe's
+- [n/a] clear-pages: no page of the letter is in hand, so no clear text exists to use
+- [x] known-keys: Cal. Clar. i no.1486 item 14 located; BL Add MS 32256 (Bourdeau) and DECODE swept, no Roe key
+- [x] print: CSPD 1637-38, Cal. Clar. i, HMC Cowper ii read 3 Oct (GF4-BATCH7), letter not calendared
+- [n/a] key-rebuild: no ciphertext on disk to rebuild a key from
+- [x] image-check: Digital Bodleian searched 3 Oct (no MS. Clarendon 19 object); TNA f.225 digitised: false
+- [n/a] retry: nothing was attempted that failed and could be retried
+Verdict: parked: every gap has an outside blocker (ASKS row 106; LOCAL-QUEUE L40)
+
+## While waiting (3 Oct 2026, FT4-sp81-roe-1638)
+
+Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md) and LOCAL-QUEUE L40 (Bodleian record for the Roe key).
+
+- S: fetch SP 81/44/88's full Discovery record detail (note field) to see whether its "decipher" names the cipher used, ~$0.5.
