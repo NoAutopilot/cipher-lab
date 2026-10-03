@@ -34,3 +34,15 @@ Scope reduced to fit the box: runs = WVO 175 p1 cipher lines c1 (y~920-975, glos
 (statistic, nulls >= 200 draws each, gate real >= 0.60 and > p95 of both nulls; the "fewer than 3 runs" stop rule is met at exactly 3).
 The two blind reads are Sonnet subagents given cipher-only crops and a 98-system reference sheet cut from f.66 with align_98.txt's codes;
 the gloss read is a third subagent given gloss-only crops. With n this small a PASS licenses only the sign values seen at those positions.
+
+## Addendum AVS175B, 3 Oct 2026 ~15:22 UTC (worker AVS175B, account 2; committed before the second gloss read)
+One more independent gloss read of the p1 gloss strips over c2 and c3 only (gloss-only crops, re-cut at the AVS175 NOTES coordinates
+from a fresh 00175.pdf fetch; the reader is not shown the cipher, key_98, either earlier gloss read or the word 'wir'). The reader returns a
+letter-by-letter transcription of each strip with per-word legibility (clear / probable / doubtful).
+Decision rule for Q1 NW (the gate already PASSed, 0.615 vs p95 0.385/0.446, and is not re-run): the gloss word over NW at c2 pos 17 and
+c3 pos 1 counts as H-read 'wir' only where this read gives 'wir' (or 'wier', 'wyr', u/v/i/y variants) marked clear or probable AND the AVS175
+reconciliation read 'wir' there (it did, both positions). NW moves M -> C only if both positions are H-read 'wir'. If either position reads
+another word, or doubtful, NW stays M and the split is logged (rule 4). One H-read 'wir' and one doubtful = stays M (every aligned
+occurrence must agree and be H-read).
+Q2 Qf and Q3 K: AVS175's reconciled c2/c3 signs contain no Qf and no K, and this job does not re-read cipher signs, so neither can move;
+nothing about them is decided here. Q4 (sign 1) is not touched.
