@@ -6662,3 +6662,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 07:48 | GAPS52-maurice-rupert-1645 (account-4) | claim: maurice-rupert-1645 -- one DECODE login, fetch 9119/9117, transcribe key tables, apply + shuffled-key control; cap USD 12, box 50 min from 07:49 UTC
 2026-10-03 07:49 | REJUDGE-FR17 (account-4) | claim: re-judge list in tools/data/fr17/README.md under fr17 vs current corpus, baluze156-1636 first; NOTES.md only
 2026-10-03 07:49 | GAPS54-vanspaen-vandergoes-1808 (account-4) | claim: vanspaen-vandergoes-1808 -- one-part frequency-position test, control-first gate at N 304 K 216, prereg first; cap USD 6, box 35 min from 07:50 UTC
+2026-10-03 07:49 | GAPS55-na-suriname-map-1781 (account-4) | claim: na-suriname-map-1781 -- GAPS49 rerun with visible dots control (2077 own [u-dots] tiles + left M/N at 2x), prereg first, 1 Opus vision call; cap USD 6, box 30 min from 07:50 UTC
