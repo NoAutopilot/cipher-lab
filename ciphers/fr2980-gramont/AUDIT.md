@@ -891,7 +891,7 @@ April text was found.
   reconciler read at medium confidence (`m`).** H on a high-confidence identification is 1171. Also, 43 H tokens
   fall on the four keyed signs the reconciler itself flagged as doubtful in context: eh 19, Tb 16, H 8. The
   solver's own model puts eh at T, not the table's D (47.6 bits; DECLARA*t*ION), a contradiction a key-image check
-  must settle. This does not break rule 4, but the H count overstates the firmness of the reading. The honest
+  must settle. This does not break rule 4, but the H count overstates the firmness of the reading. The honest [3 Oct 2026: settled as a shape split, not a contradiction; see "f.30 ehx revision" below.]
   summary is "values from the key for 1502 signs, 1171 of them on confidently identified signs; one reconciled
   transcription (agreement with blind passes 63.5% and 55.3%)". NOTES.md is corrected (below).
 - **M/U share reported honestly.** U 232 (11.8%) and M 239 (12.1%) are stated in every place that gives H. The
@@ -1604,7 +1604,8 @@ Rome, 20 May 1530 (BnF fr.2980 f.30r-v, no.22). Tomokiyo identified it as readab
 We read it in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023): of 1,973 signs, 1,500 are at grade
 H and 158 at grade S with a matched control. [V3b, 24 Sept 2026: counts stale. Since the seam fix and the second extension
 (NOTES.md) f.30 has 1,969 signs; `decode.py --check` gives extended H 1,486, S 181, M 239, U 63 (published key alone H 1,502).
-Quote: "of 1,969 signs, 1,486 are at grade H and 181 at grade S with a matched control".] Its closest print is the sibling letter of April 1530 (*Archivio storico
+Quote: "of 1,969 signs, 1,486 are at grade H and 181 at grade S with a matched control".] [VERIFY-GRA, 3 Oct 2026: counts changed again by the f.30 eh shape split (section "f.30 ehx revision" below):
+quote "of 1,969 signs, 1,468 are at grade H and 199 at grade S with a matched control".] Its closest print is the sibling letter of April 1530 (*Archivio storico
 italiano*, Appendice I, pp.473-481), which is a different letter. The search log is in AUDIT.md."
 
 **Unsafe sentences:** "first decipherment", "previously unread", "never printed" or "unpublished" without the qualifier
@@ -1693,7 +1694,7 @@ letter. It also lists corrections to our counts and presentation. No decoding wa
 | 4 | Tomokiyo francis.htm: the key is published and the letter is identified as readable; key credit is separate from plaintext | AUDIT.md f.30 verdict row (Tomokiyo's quotation, Bourdeau no.328) | **right, already covered** | none |
 | 5 | Prompt counts stale: the reading now gives 1969 tokens, H 1486 / S 181 / M 239 / U 63, not 1973 with H 1502 / S 158 / M 254 / U 59 | `decode.py --check` (exit 0, "reading up to date"): "f30 extended # tokens 1969: H 1486, C 0, S 181, M 239, I 0, U 63"; published key alone 1969: H 1502 / M 231 / U 236 | **right** | PROMPT-chatgpt-f30.md counts updated. The no.22 N4 safe sentence is annotated in place with the current counts. status.json's no.22 line was not edited (no class change). The orchestrator should refresh it from the annotated sentence |
 | 6 | "Avignon" is a normalization; f30r L32 reads AVILNON | reading_f30_extended.txt L32 "...QvILVEvLTA[LL]ElENAVILNON" | **right** | prompt phrase now "qu'il veult aller en Avilnon [Avignon?]". The reading itself is unchanged. A one-line solver suggestion was added to NOTES.md |
-| 7 | "declaration" reads DECLARADION (eh T/D conflict) | reading L02 f30v; AUDIT.md "Reading quality" (eh at T, not the table's D) | **right, already recorded** | prompt phrase now marked "(letters as read: DECLARADION)" |
+| 7 | "declaration" reads DECLARADION (eh T/D conflict) | reading L02 f30v; AUDIT.md "Reading quality" (eh at T, not the table's D) | **right, already recorded** | prompt phrase now marked "(letters as read: DECLARADION)"; 3 Oct 2026: reads DECLARAtION (ehx = T, grade S), prompt updated |
 | 8 | L01, L02 and L11 are not continuous French | NOTES.md (the four lines, "Still not French") | **right, already recorded** | none |
 | 9 | The two cross shapes should be split before values are tested | NOTES.md (cross pattée vs double-barred, both coded CROSS) | **right, already recorded** | none (a solver matter) |
 | 10 | Grade S is not image confirmation; p = 0.01 from 100 draws is not the probability the reading is right | NOTES.md extension tables (p = 0.010, 100 draws) | **right in substance**; S is correctly defined as cryptanalytic with a control (rule 4) | none. AUDIT.md already says "a cryptanalytic result resting on a key-based reading" |
@@ -1773,3 +1774,79 @@ What would let a verifier set N5 (rule 10: confirmed by a specialist): a sentenc
 "I know of no earlier decipherment of Gramont's letters of 20 May 1530 in fr.2980 (nos. 21-22) [beyond the key Lasry and I
 published]". The owner looks for that sentence (or its denial, e.g. a pointer to a decipherment in print or in a thesis) in the
 24-26 Sept thread and pastes it into this file verbatim; an acknowledgement or thanks alone moves nothing.
+
+## f.30 ehx revision (verifier VERIFY-GRA, 3 Oct 2026)
+
+Verifier VERIFY-GRA (account 2, for LANE-A2PUSH), 3 Oct 2026, 00:22-00:28 UTC (`date -u` read). A session separate from
+the solver (A2-GRA3, NOTES.md "f.30 eh and CROSS split by shape"). Claim under audit: the f.30 sign coded `eh` is two shapes,
+`ehx` (c-bowl with a crossed stroke, 20) and plain `c` (2), and `ehx` = T at grade S (152.1 bits over D, control p 0.010,
+recovery 1.00); no value for the three cross shapes.
+
+**1. Shape split, re-checked from the crops on disk** (`crops/f30_split/zoom_eh.jpg`, plus the strips for L01 pos 31 and
+L13 pos 8, whose zoom centres fall between two glyphs; the strips' token order puts the crossed c at the coded position in
+both). All 20 `ehx` tiles show the c-bowl with a stroke above it; the angle runs from slanted to flat, as the solver says.
+L08 pos 15 is under the blot, and its stroke is only partly visible (m is right). L17 pos 21 and L31 pos 25 are plain c,
+with no stroke. **Agree on all 22.** One reader each (the solver and this verifier), not a blind second pass.
+
+**2. Control re-run.** `test_f30r_top.py --split split_f30.tsv` reproduces `test_f30r_split.tsv` exactly. The committed
+p 0.010 is the floor of a 100-draw control ((0+1)/101), so it says only that no draw reached 152.1. Re-run here, from a
+scratch copy and not committed, at 1000 draws with two other seeds (11, 22): p 0.001 both times, again the floor. The
+largest control margin was 26.9 and 11.2 bits, against 152.1 for the real sign; recovery 1.00. The control can differ
+from the target on this statistic (it rescans other positions), so it is a real test (rule 3).
+Two alternatives the solver did not test, run here:
+- **T against L.** L is the value of the plain c, which is the obvious reading if ehx were only a c with a flourish. On
+  the ehx positions T beats L by 37.4 bits. On 20 positions drawn from H-keyed true-L tokens (pool 86, 300 draws, two
+  seeds), T minus L never rose above -118.8, p 0.003 (the floor). So ehx is not a variant of c = L.
+- **The tables' nearest shape.** The 2 Oct key-image check found the nearest shape in Tomokiyo's row of doubled letters,
+  under m. With MM and TT added as candidates: MM -326.8, TT -46.6 against D, and T +152.1. The doubled-letter reading
+  is excluded.
+**ehx = T stands at grade S.** It is cryptanalytic, not H: neither published table keys the shape (key-image check, 2 Oct).
+
+**3. Re-derivation (rule 7).** `decode.py --check`: "reading up to date"; f.29r 568: H 532, S 1, M 30, U 5. f.30
+published key 1969: H 1468, S 16, M 229, U 256. Extended 1969: H 1468, S 199, M 239, U 63. These match NOTES.md.
+`build_ciphertext_f30.py --check`: "f30 ciphertext up to date". Both exit 0.
+
+**4. Propagation (rule 10, V6-MERCY2).** Changed in place: the no.22 safe-sentence counts (annotation; new quote below),
+the "Reading quality" eh note, and second-opinion row 7. Changed in `second-opinions/PROMPT-chatgpt-f30.md`: counts are
+1468 / 199 / 239 / 63, and the phrase is DECLARAtION (it was DECLARADION). `SECOND-OPINIONS-QUEUE.tsv` row SO-GRAMONT-F30
+has a note added to its outcome. Not edited here, for the orchestrator to refresh: `status.json` (fr2980-gramont
+`fields_source`, "H 1486, S 181") and STATUS.md.
+
+**5. Novelty search, only for phrases the revision changed** (`tools/print_check.py`; phrases "si ce n'est que la
+declaration de la liberte", "la declaration de la liberte de Florence", "il parle de la reputation et de ma"; other
+changed words — TENTERA, ESPERANT, EST VRAY, DE SORTE, TOVTES, DICTES — are too generic for a phrase search):
+- (a) Canonical series. *ASI* App. I (IA `archiviostoricoi01fireuoft`, the sibling April letter), djvu text exact and
+  proximity search: no hits. The English calendars (LP, CSP) were not re-searched, since a French phrase cannot match them.
+- (b) Sender's printed letters. Camusat was not re-searched by phrase. Earlier passes read the whole tract page by page
+  for this letter, not for a phrase, and that negative does not depend on these letters.
+- (c) Documentary editions: as (a).
+- (d) Holding archive (BnF fr.2980 catalogue): does not depend on the phrases; not re-searched.
+- (e) IA full text across all items (be-api, quoted): no hits, 3 phrases. Google Books (keyed, `country=US`): 329-337
+  volumes per phrase, bag-of-words matches only (Le Trosne, Bourdaloue, liberty treatises); none is about 1530 Florence
+  or Gramont; no exact hit. HathiTrust full text: unreachable from the cloud (Cloudflare); not run.
+- (f) Solver repositories and cipher blogs (local snapshots `sources/cyphersolver*`, `cryptiana`, `lasry`,
+  `ciphermysteries`, `decode`, `bourdeau`; grep for the phrases and the run-together forms): no hits. The "2980" hits are
+  Tomokiyo's known identification, already cited. aaymeloglu/unsolved-ciphers: no local snapshot; not re-searched.
+- (g) Scholarship. OpenAlex (keyed, quoted): no hits, 3 phrases. CrossRef: keyword noise only (11-13 million records,
+  top 5 unrelated). Semantic Scholar: not run. JSTOR: one family-(ii) bare-phrase row queued in `JSTOR-QUEUE.tsv`
+  ("declaration de la liberté de Florence"); per CLAUDE.md, it does not block N4.
+Requests: archive.org 1, be-api.us.archive.org 3, www.googleapis.com 3, api.openalex.org 3, api.crossref.org 3. No
+challenge or 429.
+
+**6. Class.** **No.22 (f.30r-v) stays N4** (no prior decipherment located). Key source: `published` for the H tokens
+(Tomokiyo and Lasry 2023); the 199 S values, including ehx = T, are `ours` (cryptanalytic, with a control). No.21 (f.29r)
+is unchanged: N4, and f.29r's eh stays D (the eh row: D kept, T -57.1).
+**Safe sentence, no.22 (current):** "No prior decipherment located of Gabriel de Gramont's all-cipher letter to Francis I,
+Rome, 20 May 1530 (BnF fr.2980 f.30r-v, no.22). Tomokiyo identified it as readable, and Bourdeau catalogued it (no.328).
+We read it in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023): of 1,969 signs, 1,468 are at grade
+H and 199 at grade S with a matched control. Its closest print is the sibling letter of April 1530 (*Archivio storico
+italiano*, Appendice I, pp.473-481), which is a different letter. The search log is in AUDIT.md."
+**Unsafe sentences (added):** "the key gives T for this sign", or ehx = T at grade H (the tables do not key the shape;
+T is ours, grade S); "ehx confirmed by the image" (one reader per side; the image settles the shape, not the value).
+
+**7. Postmortem.** No over-claim found in A2-GRA3's text: grades, counts and "cryptanalytic result" are correct. Two gaps,
+both now closed here, neither changing the result. (1) The p value was reported at the 100-draw floor without saying so;
+p <= 0.01 was met only because no draw reached the margin. At 1000 draws the margin is still far beyond every draw.
+(2) The obvious rival, L (the plain c's value), and the tables' nearest shape (MM) were not named or tested; both lose
+heavily. Lesson: when a sign is split off a keyed shape, test the parent shape's value, and the value of the shape it
+resembles, as named alternatives.
