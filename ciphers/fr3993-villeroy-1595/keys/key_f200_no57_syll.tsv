@@ -1,0 +1,114 @@
+# fr.3995 no.57 (Feb 1593), canvas f200, Sillabes 1-72 + Lettres doubles 73-98, A1B-VILL-L 3 Oct 2026 (PREREG-VILL-TABLE addendum A1B-VILL-L).
+# grade M = both blind readers same code+value (fr3995/vill_l_readerA.tsv, vill_l_readerB.tsv); I = one reader only or disagreeing (not scored).
+# use=no: the code also carries an overlined homophone (v-/z- row: 15,16,29,30,43,44,57,58 overlined = va za ve ze vi zi vo zo) that the target
+# transcriptions do not mark, so a plain figure there is ambiguous; excluded from scoring. Doubles row ends at 98 (not 96 as Tomokiyo/earlier notes said).
+# code	value	grade	use	note
+1	ba	M	yes	
+2	ca	M	yes	
+3	da	M	yes	
+4	fa	M	yes	
+5	ga	M	yes	
+6	la	M	yes	
+7	ja	M	yes	
+8	ma	M	yes	
+9	na	M	yes	
+10	pa	M	yes	
+11	qua	M	yes	
+12	ra	M	yes	
+13	sa	M	yes	
+14	ta	M	yes	
+15	be	I	no	A only
+15	va	M	no	overlined
+16	ce	I	no	A only
+16	za	M	no	overlined
+17	de	M	yes	
+18	fe	M	yes	
+19	ge	M	yes	
+20	le	M	yes	
+21	je	M	yes	
+22	me	M	yes	
+23	ne	M	yes	
+24	pe	M	yes	
+25	que	M	yes	
+26	re	M	yes	
+27	se	M	yes	
+28	te	M	yes	
+29	bi	I	no	A only
+29	ve	M	no	overlined
+30	ci	I	no	A only
+30	ze	M	no	overlined
+31	di	M	yes	
+32	fi	M	yes	
+33	gi	M	yes	
+34	li	M	yes	
+35	ji	M	yes	
+36	mi	M	yes	
+37	ni	M	yes	
+38	pi	M	yes	
+39	qui	M	yes	
+40	ri	M	yes	
+41	si	M	yes	
+42	ti	M	yes	
+43	bo	I	no	A only
+43	vi	M	no	overlined
+44	co	I	no	A only
+44	zi	M	no	overlined
+45	do	M	yes	
+46	fo	M	yes	
+47	go	M	yes	
+48	lo	M	yes	
+49	jo	M	yes	
+50	mo	M	yes	
+51	no	M	yes	
+52	po	M	yes	
+53	quo	M	yes	
+54	ro	M	yes	
+55	so	M	yes	
+56	to	M	yes	
+57	bu	I	no	A only
+57	vo	M	no	overlined
+58	cu	I	no	A only
+58	zo	M	no	overlined
+59	du	M	yes	
+60	fu	M	yes	
+61	gu	M	yes	
+62	lu	M	yes	
+63	ju	M	yes	
+64	mu	M	yes	
+65	nu	M	yes	
+66	pu	M	yes	
+67	quu	M	yes	
+68	ru	M	yes	
+69	su	M	yes	
+70	tu	M	yes	
+71	vu	M	yes	
+72	zu	M	yes	
+73	cc	M	yes	
+74	dd	M	yes	
+75	ff	M	yes	
+76	mm	M	yes	
+77	nn	M	yes	
+78	pp	M	yes	
+79	ll	M	yes	
+80	rr	M	yes	
+81	ss	M	yes	
+82	tt	M	yes	
+83	bb	I	no	B only
+83	bl	I	no	A only
+84	uu	M	yes	
+85	nt	M	yes	
+86	lt	M	yes	
+87	st	M	yes	
+88	ns	M	yes	
+89	ng	M	yes	
+90	gl	M	yes	
+91	gr	M	yes	
+92	pr	M	yes	
+93	pl	M	yes	
+94	by	I	no	B only
+94	vy	I	no	A only
+95	cr	M	yes	
+96	ph	I	no	B only
+96	th	I	no	A only
+97	fr	M	yes	
+98	fl	M	yes	

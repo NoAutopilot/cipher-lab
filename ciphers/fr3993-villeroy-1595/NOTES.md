@@ -71,6 +71,7 @@ key among the unexamined portions of fr. 3995 beyond nos. 60/65/66/68–76.
 fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 nos.39/40/43/58; Nevers to Henri IV, July-Aug 1595, as siblings.
 **Update, A1B-VILL-PAIR, 3 Oct 2026:** figure-pair homophone design (Bourdeau 1x/2x, K null) is a control-backed negative (control 0.733, target judge FAIL -1.263 = shuffle -1.261). Next: no.57's table (j), no.44 symbol column (k), as-sent packet (d), second transcription pass (e').
 **Update, A1B-VILL-57-44, 3 Oct 2026:** (k) no.44's symbols (f162) carry no registered target sign (Delta SAME-class only, 5 tokens). (j) no.57's table is canvas f200: 22-letter symbol-homophone header + figure syllables 1-72, doubles 73-96, nomenclator 100-353; two blind readers agree on 9 target sign designs (keys/key_f200_no57_signs.tsv, M) but they cover 0.116 of the target (< 0.5, not testable, no score). Next: (l) read no.57's Sillabes/Lettres doubles grid (two blind reads, ~$5), then the coverage test; (d), (e') stand.
+**Update, A1B-VILL-L, 3 Oct 2026:** (l) no.57's Sillabes 1-72 + Lettres doubles 73-98 read twice blind (87 usable codes agreed, M) + 9 header signs: coverage 0.643, power 20/20 (still 20/20 at 25 pct injected code error); Bourdeau's pass FAIL rank 2/201 z 2.60, TX2 pass B FAIL rank 4/201 z 2.46 (gate rank 1 and z>=3; every synthetic z>=4.31). no.57 under the 1-2-figure parse is a control-backed negative, conditional on the transcription (ASKS 124). Next: (e'') owner's sorter then reconciled text; (m) no.57's 3-figure nomenclator 100-353 as a parse model (~$3).
 **Update, A1B-VILL-ASSENT, 3 Oct 2026:** (d) as-sent search: no 16 Aug 1595 original was found on Villeroy's side. The closest is Bibliothèque de l'Institut, Godefroy 262 (Villeroy's secretariat file), nos.144-145: Nevers to Villeroy and to the King, "16 septembre" 1595, "Lettre en partie en chiffres" (SHF Annuaire-bulletin 1865 inventory, p.116). This is either a sibling cipher letter or our letter misdated (unsettled, M). It is not digitised (ASKS 123). Next: fr.3994 f.131 (Nevers's copy of Godefroy 145) on Gallica, to check whether it is in clear, which would give a plaintext pair, ~$1; then (l), (e').
 
 **Update, A1B-VILL-TX2, 3 Oct 2026:** (e') second pass measured. Bourdeau's ct_*.txt omits two whole cipher lines of f.148v (L09 "Car en 1214 1020 ...", L10 "2120793 ...": 64 signs by pass B), and on the 770 shared columns the two readers split 16.8% (> 10%, so no third machine pass; split pairs in tx2/focus_pairs.tsv for the owner's sorter, ASKS row). Bourdeau's per-sign error vs a blinded adjudication: 0.047 (95% 0.024-0.214) on the signs he read, plus 64/834 = 0.077 omitted. Every prior negative's control ran the target at 0% transcription error, so none brackets this: they are conditional on an incomplete pass, not design exclusions. Next: (e'') the owner's sorter on the split pairs, then a reconciled ciphertext with L09-L10 restored before any family is re-run.
@@ -972,3 +973,47 @@ Requests this pass: archivesetmanuscrits.bnf.fr 2 (finding aid; one record URL t
 
 Verdict after A1B-VILL-994: `open`. Next steps are unchanged from A1B-VILL-TX2 ((e'') the sign-sorter settlement). The
 f.131/Godefroy 145 pair is blocked on two reproductions (ASKS 111 extended, ASKS 123).
+
+## fr.3995 no.57 Sillabes / Lettres doubles grid and score (A1B-VILL-L)
+
+Worker A1B-VILL-L, LANE-A1B, account 1, 3 Oct 2026, 17:58-18:05 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-l.md`, step (l).
+Rules pre-registered in `fr3995/PREREG-VILL-TABLE.md` addendum A1B-VILL-L (commit d1f824a3, pushed before any grid crop was viewed);
+reader A's read committed (9b99d8e1, `fr3995/vill_l_readerA.tsv`) before reader B (Sonnet subagent, blind, same crops) was spawned
+(`fr3995/vill_l_readerB.tsv`). Crops (one low-resolution locate look at the page first, 990 px, no reading from it):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 200 --out <scratch>/ov --prefix c200 --lines-per-crop 200 --max-width 2400 --debug
+    for r in 120,850,960,250 120,900,960,1500 120,2350,960,1300 120,3600,960,1100 120,4380,960,400; do
+      python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 200 --region $r --out <scratch>/g --prefix f200gN --lines-per-crop 200 --max-width 2400; done
+    # -> images/fr3995/f200_no57_grid0..4.jpg (re-saved at quality 80)
+
+**The grid.** Sillabes: 16 rows (b c d f g l j m n p qu r s t v z) x 5 vowels, code = row + 14 x vowel-column for the first 14 rows
+(ba 1, be 15, bi 29, bo 43, bu 57 ... ta 14, tu 70); the v- and z- rows reuse 15/16, 29/30, 43/44, 57/58 with an **overline**
+(va, za, ve, ze, vi, zi, vo, zo) and end 71 vu, 72 zu. Lettres doubles run **73-98** (not 73-96 as noted before): cc dd ff mm nn pp
+ll rr ss tt, 83 bl/bb, 84 uu, nt lt st ns ng gl gr pr pl, 94 vy/by, cr, 96 th/ph, fr fl.
+Agreement (same code and value): 95 cells M; split: 83, 94, 96 (one letter each); B did not list the plain b-/c- cells at
+15,16,29,30,43,44,57,58 (B gave only the overlined va..zo there). Those 8 codes are excluded from scoring in any case: neither
+transcription marks overlines, so a plain 15 is be or va. Usable: 87 grid codes + 9 header signs = 96 key codes,
+`keys/key_f200_no57_syll.tsv` (use column).
+
+**Score** (`no57_score.py`, `no57_score.tsv`, `--check` exits 0):
+
+| transcription | tokens | covered | coverage | codes | power (rank 1, 20 synth) | letters | score | rank | z | verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Bourdeau (bourdeau/) | 753 | 484 | 0.643 | 319 | 20/20 | 558 | -1.786 | 2/201 | 2.60 | FAIL |
+| TX2 pass B (tx2/passB.tsv, '?' stripped) | 757 | 485 | 0.641 | 317 | 20/20 | 562 | -1.799 | 4/201 | 2.46 | FAIL |
+
+Rule 3 error bracket (unregistered secondary, disclosed; `no57_score.py --errsweep`, seed 7): with 10/17/25 pct of synthetic codes
+replaced at random, power stays 20/20, mean z 6.74/6.17/5.66, min z 5.64/5.28/4.31. Both target z values (2.60, 2.46) sit below
+every synthetic run at up to 25 pct error, which brackets TX2's measured 16.8 pct sign disagreement. Decode (Bourdeau): "agesissajelemeragemax
+gtafixsdegasitrbaposirvuresedepalemaame..." -- no French. **No.57's syllable/double grid + header signs, read with the 1-2-figure parse, is a
+control-backed negative on both transcriptions.** It is conditional on (i) that parse (the target's 3-4-figure groups are split, as in
+VILL-STRIPS/7280/SIGNS; no.57's nomenclator 100-353 is not modelled), (ii) the 8 overline-ambiguous codes left out, and (iii) a transcription
+with two omitted lines in Bourdeau's pass (pass B has them) and 16.8 pct disagreement (ASKS 124). Rank 2 is below the registered gate and is
+not a near-solve. Grades in the target: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Vision: 4 own looks (1 locate overview, 3 grid crops as reader A), 1 Sonnet subagent call (reader B, 5 crops). Requests: gallica.bnf.fr about 14
+(info.json + 6 regions through iiif_lines, about 2 s apart, no block). Tool shelf: glyph_atlas.py not used (a printed-style grid of 100 cells is a
+read, not a clustering job). Rule 10: no novelty claim.
+
+Verdict after A1B-VILL-L: `open`. Next, cheapest first: (m) a parse model with no.57's 3-figure nomenclator codes 100-353 (read the nomenclator
+columns twice blind, ~$5, then the same scoring); (e'') stands (owner's sorter, ASKS 124); (d) stands.

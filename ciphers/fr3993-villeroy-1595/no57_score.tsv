@@ -1,0 +1,3 @@
+transcription	key_codes	tokens	covered_tokens	coverage	codes	power_rank1_of_20	power_verdict	target_letters	target_score	target_rank	target_z	verdict
+bourdeau	96	753	484	0.643	319	20	powered	558	-1.786	2/201	2.60	FAIL
+tx2_passB	96	757	485	0.641	317	20	powered	562	-1.799	4/201	2.46	FAIL
