@@ -16,6 +16,17 @@ ff.93/169/216 are Vane-Dorchester letters from the same piece and months already
 contemporary decipher work — ordering them alongside the target tests whether the same office cipher covers
 "Mr. Stanning"'s paper, turning this from a possible ciphertext-only job into a possible key-alignment job.
 
+**Second tier (added 3 Oct 2026, GAPS143; optional, for the pool-first rule):** the 1632 items from the same Vane
+mission that TNA catalogues with a decipher or with cipher (none digitised; descriptions in `sibling_pool.tsv`):
+- **SP 81/38 f.76**, "Vane to --- - decipher," 1632 Feb. 20.
+- **SP 81/38 f.206**, "Vane to ---, and decipher," 1632 May 22.
+- **SP 81/38 f.250**, "Vane to Secretary of State - duplicate of despatch of 6/16 and extracts in cipher," 1632 June 13/23.
+- **SP 81/39 f.88**, "Vane to Coke - decipher, and duplicate," 1632 Sept. 6.
+- **SP 81/39 f.402**, "2 sheets of cipher [? fragments]," [? 1632].
+No catalogue record gives the number of leaves or the length of the cipher, so TNA's copy quote (by item) is the first
+measure of the pool's size. If the cost matters, order the four first-tier folios first. f.284 and the 1631 deciphered
+siblings decide whether the 1632 items are worth adding.
+
 **Order via:** The National Archives' own paid copying service (TNA Discovery record page, "order a copy").
 
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.

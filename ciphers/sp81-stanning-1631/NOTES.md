@@ -214,11 +214,41 @@ Rule 10: a search result about the catalogue, not a finding about the item.
 Requests: discovery.nationalarchives.gov.uk 28 (16 term x series; 6 coverage: "letter" and "1631" per series, the "1631"
 probes returning 0; 6 follow-up); one at a time, 1.7 s apart, all HTTP 200, no 429/403.
 
-## While waiting (3 Oct 2026, GAPS139)
+## GAPS143-sp81-stanning-1631 (3 Oct 2026, account-4): item records of the Vane 1631-32 cipher pool
 
-- `tools/discovery_items.py --notes` over the SP 81/38 and SP 81/39 pieces (children + details, 1.6 s apart), to catch
-  1632 items noted "in cipher" only in the `note` field, and to fill out the Vane mission-cipher pool beyond the eight
-  described items above. Positive control: the run over SP 81/37 must flag f.284 and ff.93/169/216. No vision, about
-  USD 1 (a few hundred requests across two pieces: check the piece sizes first and keep to the host limit). This
-  depends on nobody. Reading the item and any key rebuild from the Vane pool still wait on the copy order (REQUEST.md);
-  the copy order could add the five SP 81/38-39 decipher folios when it goes.
+Step run: GAPS139's "While waiting" action, but scoped down. The pieces are larger than a 30-request brief allows: SP 81/38
+(Discovery id C5910245) has 141 items and SP 81/39 (C5910246) has 129, so a full `tools/discovery_items.py --notes` sweep
+(children + details per item) would take about 272 requests. It is not run. Instead, item ids came from two keyword searches
+("decipher", "cipher", series SP 81), followed by the `records/v1/details` record of each named item, using the same calls
+`--notes` makes. Table: `sibling_pool.tsv` (6 items fetched this pass, plus the three SP 81/37 siblings from GAPS139's search
+descriptions, not re-fetched).
+
+| Item | Date | Correspondents | Description (verbatim) | Decipher noted |
+|---|---|---|---|---|
+| SP 81/37/284 (C7774544) | [? 1631] | Mr Stanning; recipient not stated | Duplicate of paper sent by Mr. Stanning in cipher. | no |
+| SP 81/38/76 (C7774576) | 1632 Feb. 20 | Vane to --- | Vane to --- - decipher. | yes |
+| SP 81/38/206 (C7774637) | 1632 May 22 | Vane to --- | Vane to ---, and decipher. | yes |
+| SP 81/38/250 (C7774653) | 1632 June 13/23 | Vane to Secretary of State | ... duplicate of despatch of 6/16 and extracts in cipher. | no |
+| SP 81/39/88 (C7774705) | 1632 Sept. 6 | Vane to Coke | Vane to Coke - decipher, and duplicate. | yes |
+| SP 81/39/402 (C7774813) | [? 1632] | not stated | 2 sheets of cipher [? fragments]. | no |
+
+**Result.** All six details records have an empty `note` field, no extent or physical description, `digitised: false`, and
+no key noted. The details record adds nothing beyond the search description. **No record gives a cipher length**, so the pool's
+total cipher length is not known from the catalogue. Whether it reaches the pool-first threshold (2,000 signs) can only be
+measured from images. What the catalogue does establish: one sender (Vane) and one office (the Secretaries of State,
+Dorchester then Coke) over Oct 1631 to Sept 1632, with six items carrying a contemporary decipher (ff.37/93, 37/169, 37/216,
+38/76, 38/206, 39/88; f.216 partial) and two more carrying cipher only (38/250 extracts, 39/402 two sheets). Whether
+Stanning's paper uses Vane's cipher is still unknown. The only link is that it was filed in Vane's piece. A key family is
+also not shown, since the Secretary changed (Dorchester died Feb 1632, Coke followed) and the cipher may have changed with
+him. Rule 10: a catalogue search result, not a reading.
+
+Requests: discovery.nationalarchives.gov.uk 10 (2 search, 6 details, 2 children counts); one at a time, 1.7 s apart, all
+HTTP 200.
+
+## While waiting (3 Oct 2026, GAPS143)
+
+- Pool-first input is in `sibling_pool.tsv`. The next step depends on the owner: the copy order in REQUEST.md, now with
+  the 1632 pool as a second tier. Nothing else in the catalogue route stays cheap. The remaining step that depends on nobody
+  is a full `tools/discovery_items.py --notes C5910245` / `C5910246` sweep (about 272 requests, over two sessions at <=150
+  per host, about USD 1-2) to catch 1632 items noted "in cipher" only in the `note` field. It is low-yield, because all six
+  details records checked here had an empty `note`. Next: that sweep, ~$1.5, only if a cheaper step is not on the board.
