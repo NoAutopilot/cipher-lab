@@ -67,6 +67,8 @@ Gomberville tome against the letter's own clear phrases — closes it as a genui
 homophonic control (rule 3 satisfied), and is not any of eleven candidate Nevers keys checked against the image.
 What would move it, per Bourdeau: the as-sent letter to Villeroy (Nevers's copy is what survives here), or a
 key among the unexamined portions of fr. 3995 beyond nos. 60/65/66/68–76.
+**Update, VILL-147, 3 Oct 2026:** ff.147v/149v viewed native (no gloss; f.149v docket names the packet the original went in);
+fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 nos.39/40/43/58; Nevers to Henri IV, July-Aug 1595, as siblings.
 
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (catalogue item 277; `nevers1595/`
 working folder — full transcription, matched-control solver ladder across six unit models, Gomberville tome-2
@@ -225,3 +227,53 @@ the as-sent letter in Villeroy's papers, and the ff.147v/149v native view. All o
 "While waiting" section is needed.
 Requests this pass: archivesetmanuscrits.bnf.fr 1, books.google.com 4, archive.org 4 (1 advancedsearch, 3 djvu.txt),
 cryptiana.blogspot.com 1. Rule 10: no novelty claim; these are search results.
+
+## ff.147v/149v native view and fr.3995 nos.48-51 (VILL-147, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-147.md`. Intake gate 09:44 UTC: "open (line 1) -- edition/page or
+full-text-search citation found within 6 lines", exit 0. Gallica canvases placed from a 700 px contact sheet of canvases
+160-163 (the volume is shot as two-page spreads: 160 = f.146v|147r, 161 = f.147v|148r, 162 = f.148v|149r, 163 =
+f.149v|150r). Crop step (native, then rotated by hand because both versos are written sideways/upside down):
+
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 161 --region 1500,3000,1900,1000 \
+        --out ciphers/fr3993-villeroy-1595/images --prefix f147v --debug     # -> f147v_rot180.jpg
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 163 --region 1900,2600,1800,2300 \
+        --out ciphers/fr3993-villeroy-1595/images --prefix f149v --debug     # -> f149v_rot_ccw.jpg, read_f149v_docket.jpg
+
+**(1) ff.147v and 149v: no decipherment, no gloss, no cipher.**
+- f.147v (the blank verso closing the preceding letter, no.101) carries only an address: "A Monsieur / Monsieur de
+  nevers". It belongs to no.101 (Longueville to Nevers), not to this letter.
+- f.149v (the verso of this letter) carries a secretary's docket, read at about 1x native, every word M:
+  "[Coppie de la lettre de Monseig]neur / a Monsieur de Villeroy / l'original de laquelle a / este envoyee par
+  [struck: un laquais du Roy; interlined: a word read 'Bagne'/'Loris', not settled] / ensemble une coppie / de
+  plus[ieu]rs l[ett]res que / Monseig[neu]r a escrit a sa Ma[jes]te / des 23 et 25 Juillet / 3. 6. 13[?], et dern[ier] /
+  Aoust 1595 avec un / extraict de no[uve]lles / venues de Doncheri. / [two lines not read, one ending '77', the last
+  '... le Roy']". It describes the packet; it holds no key, gloss or clear rendering of the cipher runs. The '77' in the
+  unread line is noted only: it may be a date, a count or a code number, and nothing here settles which.
+- What it adds: the original went to Villeroy in a packet with copies of Nevers's letters to the King of 23 and 25 July
+  and 3, 6, 13[?] and the last of August 1595, plus news from Donchery. So the as-sent copy, if it survives, sits with
+  that packet on Villeroy's side, and Nevers's letters to Henri IV of those dates (his own file copies are likely in this
+  same volume or fr.3992-3994) may share the cipher. These are candidate siblings for pooling, not yet looked at.
+
+**(2) fr.3995 nos.48-51 (f.90-91v, canvases 175-178, `btv1b525085665`): not testable against this letter.** One
+1100 px contact sheet (`images/fr3995/sheet_f175_178.jpg`). f.90r is a cover, "Chiffres de lettres interceptees" (Mayenne
+with Aumale, with Villars, ...); f.90v and f.91r are Mayenne-Aumale symbol alphabets (a-z each with one or two symbols,
+pi-like and Delta-like forms among them, double-letter and small-word signs); f.91v is Mayenne-Villars, a shifted-letter
+alphabet with symbols for some words and names. None of the four uses figures as substitutes. The target's own
+transcription (Bourdeau, `bourdeau/ct_*.txt`) is 753 signs, of which 445 are figures (1-9 and o) and 308 are other signs,
+so a symbol-only table can cover at most 308/753 = 0.409 of it, under the brief's pre-registered 0.5 coverage floor
+(brief, committed before this run): **not testable**, not a negative. No table was transcribed, no score run, no control
+needed. These are also League (Mayenne) intercept keys, a poor design and party match for a royalist Nevers to
+Villeroy letter. Tomokiyo's descriptions of the remaining fr.3995 keys that mix figures and symbols in 1591-93 and are not
+in Bourdeau's checked set (no.39 f.72, 1591, intercepted, symbols and figures; no.40 f.74, Aug 1591; no.43 f.80, 1591;
+no.58 f.104, Jul 1593) are the ones with the target's shape; none was viewed here.
+
+Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read in the cipher). Requests: gallica.bnf.fr 12 (4 + 4 overview images,
+2 native regions, 1 info.json, 1 from iiif_lines), about 1.6 s apart, no block. Vision calls 4 (one over the planned 3:
+the first rotation of f.149v was upside down). Rule 10: no novelty claim; search and view results only.
+
+Verdict after this pass: `open`. Next steps, cheapest first: (a) fr.3995 nos.39, 40, 43 and 58 headings viewed for the
+figure+symbol family (one contact sheet, ~$3), scored only if coverage >= 0.5 with a value-shuffled control; (b) Nevers's
+letters to Henri IV of 23 and 25 July and 3-31 Aug 1595 located in fr.3992-3994 (finding aid, disk/one host, ~$2) and
+checked for the same cipher, to pool signs; (c) the as-sent packet on Villeroy's side (Villeroy papers). All depend on
+nobody.
