@@ -764,3 +764,71 @@ rah-morillo-1817: partial (line 1) -- edition/page or full-text-search citation 
 ```
 exit 0 (was 1). `python3 tools/gaps_check.py rah-morillo-1817`: `OK keep-going rah-morillo-1817: keep going: 5 internal
 gap(s), 2 step(s) untried`, exit 0.
+
+## Premise check (GF4-BATCH5, 3 Oct 2026)
+
+The adversarial pre-reading pass (`.claude/briefs/check-solved.md` "## Premise check"), run per item. No
+cryptanalysis, transcription or image fetch was done. Result: **nothing new found.** Two items are already
+found-solved, and the folder already says so:
+- item 1: plaintext printed in Rodríguez Villa t.3 (1908), cipher passages marked;
+- item 3: plaintext printed in *Portuguesa en Carabobo* (2021, p.37 n.100), N0 per AUDIT.md, and deciphered
+  interlinearly on the leaf.
+
+Item 2's enclosed key table ("la adjunta clave", 19 Nov 1817) was not found printed or held anywhere searched.
+Status unchanged (`partial`, per item as line 2 states).
+
+- **(a) Decipherments the folder already mentions: all opened earlier; none new.**
+  - Item 3's interlinear decipherment on f.420r is the key's source, at grade C. Its 2021 print is folded into
+    `key_5186.tsv`.
+  - Item 1's printed clear (Rodríguez Villa t.3) is already in the folder.
+  - Records 1306 (f.151 "Descifrado") and 1487 are Ministerio de la Guerra dispatches with their own
+    decipherments, already printed (Rodríguez Villa t.III doc.754, t.IV doc.814). They are different items in a
+    different system (NX-MOR4).
+  - Record 4537 (Morillo to Pereira, "indicándole la clave", 1819) was opened by NX-MOR4: no compatible
+    ciphertext.
+  - Record 5195 has Morillo acknowledging Herrera's letters "de 7 y 8, la 1a en cifra", so item 3 is the
+    enciphered one.
+  - No mentioned decipherment is unopened. The unopened records 1759 (server error twice), 3893 and 3886 are
+    candidate key-description letters, not decipherments of items 1-3. They are the folder's own named next step.
+- **(b) Other solvers' working files: not found.** Fresh shallow clones on 3 Oct 2026: dbourdeau/cyphersolver
+  HEAD a4292cb (2 Oct) and aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept), grepped whole and
+  case-insensitive for "morillo". Three hits, none a working file for this target:
+  - Bourdeau `targets/napoleon/an_ir.txt`: a Napoleonic-era archive list naming a different Morillo in Spain;
+  - `targets/esp318/lit/quijote.txt`: Cervantes;
+  - `targets/matignon1586/corpus_words_v1.txt`: a word list.
+  - Aymeloglu: no Morillo hit anywhere, including `catalogue/decode-*`, `bne-*` and `pares-*`.
+- **(c) Physical neighbours: covered earlier; nothing new.**
+  - Item 3: both sides of the leaf (f.420r cipher with gloss, f.420v clear close) were imaged by NX-MOR. The
+    acknowledging reply, record 5195 ff.432v-433, was opened by NX-MOR4.
+  - Item 2: the three copybook images (ff.155v-156v) were imaged. Entry N.196 runs mid-page into unrelated entries
+    before and after, so the key table was never copied into the register beside it (NX-MOR).
+  - Item 1's leaf (record 2242, ff.32-34) has never been imaged. Its plaintext is printed, so the leaf matters for
+    key recovery, not for whether the item is read. It is already a named gap.
+- **(d) Recipient side: not found.** Item 2's recipient is the Ministerio de la Guerra.
+  - Aymeloglu's cached PARES sweep (`catalogue/pares-hits.jsonl` 1,115 rows, `pares-pages.jsonl` 501) was grepped
+    for morillo, Venezuela, Tierra Firme and Costa Firme, and every 1815-1821 row was listed. The only
+    1817-1820 American-war hit is AGI ESTADO,64,N.46, "Expedición a favor de insurgentes de Venezuela y Colombia"
+    (1820), an unrelated file. No Ministerio de la Guerra file of Nov 1817 from Morillo appears.
+  - That sweep was run only on cipher-keyword queries ("carta cifrada", "en cifra" and similar), so it cannot
+    exclude a received original catalogued without such a word. This is a limited negative; PARES itself is dead
+    from the cloud (host table).
+  - IA full-text search (be-api, all items): `"numeracion que da el valor"` (item 2's own sentence) hits only
+    Rodríguez Villa t.3 (`eltenientegener01villgoog`), the letter already cited, printed without its enclosure.
+    `"adjunta clave" Morillo` hits only an unrelated 20th-century book. `"Romerito" Herrera Guanare 1820` hits
+    *Portuguesa en Carabobo* (already AUDIT.md's N0 source), the *Archivo del general José Antonio Páez* t.I and
+    O'Leary's *Memorias* t.II (already searched 26 Sept, per Escalation "print"). None prints item 2's key.
+  - Items 1 and 3 were addressed to Morillo, so the RAH fonds itself is the recipient's archive. That side is
+    covered by (a) and (c).
+
+No new next step. The folder's Verdict line stands: the gloss image-check, then records 1759/3893/3886 and leaf
+2242.
+
+Hosts this pass: be-api.us.archive.org 3, github.com 2 clones (shared with the two other targets in this batch).
+All requests were at least 1.6 s apart, with no 403, 429 or challenge. bibliotecadigital.rah.es was not
+contacted. Rule 10: this is a search log; it makes no novelty claim.
+
+`python3 tools/intake_gate_check.py rah-morillo-1817` (after this section):
+```
+rah-morillo-1817: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
