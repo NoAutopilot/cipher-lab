@@ -1,6 +1,11 @@
 # Archive request: ASFi Dieci di Balìa, Responsive, filze 7, 8, 9, 22
 
-Status: waiting on you (no image of any of these four filze located online; see NOTES.md job 1 for one
+Update 3 Oct 2026 (A2-FLO): the DECODE route worked -- full-size images of 31 of the 32 records were served
+(NOTES.md, step of 3 Oct 2026; images/manifest.json). Only record 3783 (filza 9, c. 190 by sequence) lists no image,
+so a copy order, if still wanted, is that one carta plus Gabbrielli vol. II below; the list that follows is kept as
+written on 24 Sept.
+
+Status as of 24 Sept 2026: waiting on you (no image of any of these four filze located online; see NOTES.md job 1 for one
 untested route -- a DECODE login worker should try that before this request is sent, since it may make some
 items copy-free at no cost).
 

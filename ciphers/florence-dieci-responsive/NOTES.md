@@ -126,3 +126,62 @@ no archive.org (not this worker's IA slot), no Google Books (out of scope).
 3. Search `sources/cryptiana/` (Tomokiyo) and Guasti's *Commissioni di Rinaldo degli Albizzi* specifically for
    filza 7/9/22 or the *Responsive* series (not just the 1414 material florence1414 already checked).
 4. Verify the "Somogyi 2016" citation independently before repeating it for this fondo (flagged above).
+
+## Step of 3 Oct 2026: DECODE image fetch and inventory, ids 3758-3789 (A2-FLO, account 2, LANE-A2PUSH)
+
+Runs "Next steps" item 1. Intake gate output, pasted before the step: `florence-dieci-responsive: blocked (line 1) --
+already terminal, nothing to gate` (exit 0).
+
+- **Route.** One DECODE real-browser login (`tools/decode_browser_login.js 3758 <scratchpad> --max-files 0 --delay 1600
+  --probe "ImagesList?showmaster=records&fk_id=3758" --listen <cmd>`), `loggedIn: true`. The `--probe` answered
+  **HTTP 200 with no redirect**: the ImagesList redirect loop recorded by dcB on 24 Sept 2026 (sources/decode/NOTES.md,
+  R3754) no longer happens for this account. Then `page ImagesList?showmaster=records&fk_id=<id>` for all 32 ids, and
+  `get https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R<rec>_I<img>_P<n>.jpg` (the thumbnail name without `TH_`)
+  for every image the lists named. 71 requests after login, 1.6 s apart, one at a time, no 403/429/challenge.
+- **Result.** 31 of 32 records list images (39 images: 24 single leaves, 7 two-leaf records); **all 39 full-size
+  images were served** (HTTP 200, `image/jpg`, 0.85-19.2 MB, 3768-5853 px on the long side; none is the
+  `forbidden.png` placeholder sha1 035489a0...). Record **3783** (filza 9, c. 190 by sequence) lists **no image** on
+  DECODE although its record says 2 pages. DECODE's "Original Filename" column gives filza and carta for every image
+  (`Dieci di Balia Responsive <filza>_<carta>[v].jpg`); note record 3761 is c. 102 and 3762/3763 are cc. 70/71 (the
+  ids do not run in carta order). Every image's record, image id, original filename, size, dimensions, sha1 and URL
+  are in `images/manifest.json`.
+- **Committed sample.** Two full-size images, 19 MB: `images/IMG_R3765_I23024_P.jpg` (filza 8 c. 111) and
+  `images/IMG_R3766_I23025_P.jpg` (filza 8 c. 127). The other 37 are re-fetchable from the manifest's `url` field
+  with one login (`refetch` field); sha1 checks a re-fetch. ImagesList HTML pages were not committed (they carry the
+  account name in the navbar).
+- **Key / clear-copy leaves seen** (looked at two contact sheets of all 39 at about 380 px per leaf, plus three crops;
+  4 image reads by this worker, no subagent; every observation below is grade M, read at low resolution, nothing
+  transcribed):
+  - **Filza 8 c. 111 (R3765) carries a later archival pencil note "Decifrato della lettera al N° 115"** below a text
+    in clear Italian ending "data al ... adì xxvi dicembre 1430"; **filza 8 c. 127 (R3766) carries the ink stamp
+    "N° 115"** and has long passages of symbol cipher among clear lines. Read together, c. 111 is labelled as the
+    decipherment of the letter at c. 127 -- a plain/cipher pair inside this cluster. Not checked beyond the note and
+    the stamp (no alignment, no reading); if it holds, it is the "clear-pages" rung for filza 8's symbol cipher.
+  - Stamps on filza 8 run N° 75 (c. 82), 115 (c. 127), 116 (c. 128), 117 (c. 129), 118 (c. 130), 119 (c. 131).
+  - Symbol cipher visible at contact-sheet scale: filza 7 cc. 61, 70, 102 (mixed with clear), filza 8 cc. 82, 82v,
+    127, 128, 129, 130, 131. Filza 7 cc. 59 and 66 are narrow strips not legible at this scale; c. 71 looks mostly clear.
+  - Filza 9 (cc. 172-194): letters in a cursive hand, most signed by the same two-line subscription; no symbol-cipher
+    passage distinguishable at this scale (a cipher, if any, would need a page-level look; not done -- this step's
+    scope is fetch and inventory). c. 193 is in a different, larger hand.
+  - Filza 22 c. 243 (R3788) is a slip wholly in symbol cipher, **photographed upside down** (rotate 180° before any
+    pass); c. 244 / 244v look like a clear letter and its address leaf.
+  - No key table (a cipher alphabet laid out as a table) seen on any of the 39 leaves.
+- Requests: de-crypt.org 1 login + 1 probe + 32 ImagesList pages + 39 full-size images (73 in all, including the login
+  page and RecordsView/3758). No other host.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
+Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
+- check-solved for the Responsive series (filze 7/8/9/22) - blocker: not-attempted; the 24 Sept verdict is `blocked` for want of an edition or calendar read (Job 3 above), and no premise check has run; next: check-solved + premise check (Guasti, Tomokiyo's Italian pages, Google Books, the Somogyi 2016 citation, now with c. 111's 1430 date and the filza 8 stamps as search handles), ~$4
+- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; gated on the check-solved verdict above (intake gate); next: line crops of c. 111 and c. 127 (tools/iiif_lines.py --image), two blind passes + reconciliation, then a plain/cipher alignment with its shuffle control, ~$8
+- filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
+- record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
+
+## Escalation (3 Oct 2026, A2-FLO)
+- [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
+- [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026; not yet aligned
+- [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved
+- [ ] print: check-solved has not read an edition or calendar of the Responsive series (Job 3); planned as the next step
+- [ ] key-rebuild: from the c. 111 / c. 127 pair once aligned
+- [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
+- [n/a] retry: no earlier failed attempt on this cluster to retry
+Verdict: keep going: 3 internal gaps; cheapest next: check-solved + premise check on the Responsive series (Guasti, Tomokiyo, Google Books, Somogyi 2016, with the 1430 date and filza 8 stamps as handles), ~$4
