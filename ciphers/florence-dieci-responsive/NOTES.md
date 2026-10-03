@@ -1,4 +1,5 @@
-status: blocked
+status: open
+Guasti, *Commissioni di Rinaldo degli Albizzi* vol.3 (1867-73 ed., Florence 1873; IA bub_gb_ZsSBc8CtYB8C, 69,631 lines of OCR) and vol.2 (bub_gb_3ZkvD-9ug8IC, 37,833 lines) full-text searched by this worker on 3 Oct 2026 for "Guasto", "Aymone"/"Aimone", "Fibindac", "Zaninus", "Tomaso", "Neri Capponi", "26 di dicembre", "buona dispos" and "cifra": the 26 Dec 1430 letter of filza 8 c.127 is absent from both (hit counts in "Edition read" below); verdict scoped to the filza 8 c.111/c.127 pair, filze 7/9/22 as in Job 3.
 
 # ASFi, Dieci di Balìa, Responsive filze 7, 8, 9, 22 (32 DECODE records, ids 3758-3789)
 
@@ -209,7 +210,7 @@ pasted before the step: `florence-dieci-responsive: blocked (line 1) -- already 
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
-- check-solved for the Responsive series (filze 7/8/9/22) - blocker: not-attempted; the 24 Sept verdict is `blocked` for want of an edition or calendar read (Job 3 above), and no premise check has run; next: check-solved + premise check (Guasti, Tomokiyo's Italian pages, Google Books, the Somogyi 2016 citation, now with c. 111's 1430 date and the filza 8 stamps as search handles), ~$4
+- filza 7/9/22 premise coverage - blocker: not-attempted; check-solved for the filza 8 pair is done (3 Oct 2026, CS-A2-K: Guasti vols 2-3 read, web and blog check, premise check; status open) but clear copies like c.111 were not looked for among filze 7/9/22; next: contact-sheet look for clear copies, ~$1
 - filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing of c. 111 (clear, stamped N° 102) with c. 127 (cipher, N° 115) confirmed from the images on disk (same opening, same 26 Dec 1430 date and place, the c. 111 subscription writes out the cipher signature of c. 127; step of 3 Oct 2026, A2-FLO2), transcription not begun because the intake gate needs the check-solved verdict first; next: after check-solved, line crops of c. 127 and c. 111 (tools/iiif_lines.py --image), 2 blind cipher passes + 1 reconciliation + 1 clear-text pass of c. 111, then tools/interlinear_align.py with a gloss-shuffle control, ~$8
 - filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
@@ -218,8 +219,53 @@ Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster h
 - [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
 - [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
 - [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved
-- [ ] print: check-solved has not read an edition or calendar of the Responsive series (Job 3); planned as the next step
+- [x] print: Guasti *Commissioni* vols 2-3 full-text read 3 Oct 2026 (CS-A2-K), letter absent; no edition or calendar of the Responsive exists; Gabbrielli vol. II and Cavalcanti not read
 - [ ] key-rebuild: from the c. 111 / c. 127 pair once aligned
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 3 internal gaps; cheapest next: check-solved + premise check on the Responsive series (Guasti, Tomokiyo, Google Books, Somogyi 2016), now with the c. 111/c. 127 pair as handle (26 Dec 1430, Neri Capponi, subscription 'Tomaso ...'), ~$4; then the filza 8 transcription and alignment, ~$8
+Verdict: keep going: 3 internal gaps; cheapest next: re-read the c.127 date at crop scale (Bourdeau reads 'xxx d'agosto 1430', we read 'xxvi dicembre 1430'), then the filza 8 transcription and alignment (c.127 cipher passes, c.111 clear-text pass, interlinear_align with gloss-shuffle control), ~$8
+
+
+## Edition read (CS-A2-K, 3 Oct 2026)
+
+Standard edition for the Dieci di Balìa correspondence of the Lucca war: Cesare Guasti, *Commissioni di Rinaldo degli Albizzi per il Comune di Firenze dal MCCCXCIX al MCCCCXXXIII*, 3 vols, Florence 1867-73. It prints Rinaldo's own commissions and the Signoria/Dieci letters to and from him, not the Responsive series as such. Neither an edition nor a calendar of the *Responsive* is known (Job 3 above found none; none turned up in the searches below). Full-text greps of the whole OCR of vol.3 (1426-1433) and vol.2 (1424-1426), saved copy `djvu.txt` per volume, hit counts (case-insensitive, OCR with double spaces):
+
+| query | vol.3 | vol.2 | what the hits are |
+|---|---|---|---|
+| "Guasto" (as a place) | 0 (only "guasti", damaged) | not run | no place-name hit |
+| "Aymone" / "Aimone" | 2 | not run | Savoyard/Lausanne names, index, unrelated |
+| "Fibindac" | 2 | 1 | index entries "Fibindacci (de') Carlo" and "Galeotto, ved. Ricasoli" (vol.3); heading "Galeotto de' Fibindacci da Ricasoli" (vol.2); no 1430 Pontremoli letter |
+| "Zaninus" | 0 | 1 | bare name, no cipher context |
+| "26 di dicembre" | 3 | not run | all inside the [1429-30] block (Dec 1429): Dieci courier Arrigo, letters of Giovanni Aliprandi and Niccolo, no letter to or from Neri Capponi |
+| "dicembre ... 1430" | 1 | not run | Cosimo to Averardo, 10 Dec 1430; Dieci to Carlo da Ricasoli, 23 Dec (not the 26th) |
+| "Neri Capponi" | 114 | not run | Neri sent as commissioner to the camp at Lucca on 20 Dec 1430 with Felice Brancacci and Alessandro degli Alessandri; no 26 Dec letter to him |
+| "buona dispos" | 3 | not run | none about messer ... and Neri Capponi |
+| "cifra" | 11 | 16 | Guasti's note (vol.3, [1429-30] block, n.4): the cipher "si compone di molti segni che corrispondono alle lettere dell'alfabeto, ai numeri e ad alcune parole ... un segno corrisponde anche ai nomi che si celano sott'altri nomi"; further hits are 'cifra' words in Rinaldo's own letters, none printing a decipherment of this item |
+
+Result: the letter is not in Guasti vols 2-3 and neither volume prints a decipherment of any filza 8 item. This corroborates the dating context: Neri Capponi was sent to the camp against Lucca on 20 Dec 1430 (Guasti vol.3, near the Cosimo-to-Averardo passage of 10 Dec 1430), which fits a letter of 26 Dec 1430 that mentions having written "a Neri Capponi". Vol.1 (1399-1423) was not searched: it ends before any date in this cluster. The 1430 question that edition cannot answer is the place (see "Premise check (b)", date discrepancy).
+
+## Web and blog check (CS-A2-K, 3 Oct 2026)
+
+Plain web searches, 5 calls (WebSearch), queries as typed:
+1. "Dieci di Balìa" Responsive filza 8 "Decifrato della lettera" 1430 Neri Capponi cifra -> no hit naming the item (generic Capponi/Dieci pages; warwick.ac.uk Italian elites letters, sepoltuario.iath, Wikisource).
+2. Gabbrielli "Dieci di Balìa" cifre Neri Capponi 26 dicembre 1430 lettera in cifra "Tommaso" campo Lucca -> no hit.
+3. cryptiana.blogspot.com Florence "Dieci di Balia" 1430 cipher letter Fibindacci OR Capponi decipherment -> no hit on that blog; surfaced dspace.ut.ee "A Florentine 'polyalphabetic' cipher in the 15th century" (Piero Capponi, Livorno cipher, not this item) and the Yale voynichverse Dataverse (Ilardi reel 58, already on disk).
+4. ciphermysteries.com OR klausis-krypto-kolumne Florence fifteenth-century Dieci di Balia ciphers DECODE Gabbrielli Meister -> ciphermysteries.com 2017/07/08 "new paper fifteenth century cryptography" (Pelling, general), Cipherbrain page 75 listing (general); nothing on the Dieci filze 7/8/9/22 or this letter. Posts opened only as search snippets, comment threads not opened (no hit named the item).
+5. Florentine 1430 Lucca war cipher letter Dieci di Balia Responsive deciphered Neri Capponi commissario "cifra" "al Guasto" (the call ran four follow-up searches) -> Neri di Gino Capponi biographical pages (Deutsche Biographie, sepoltuario), a Voynich Ninja thread (Florentine ciphers, general); no hit on the item or on a place "al Guasto".
+Google Books API (key + country=US), 2 queries: `"Dieci di Balìa" cifra Responsive` returned 37 volumes (Machiavelli *Opere* 1874/1877 editions print Dieci di Balìa carteggio responsive with "Qui comincia la cifra ... Qui finisce la cifra" in Machiavelli-period items (not this fondo-year); Studies in the Renaissance 1962 names the Gabbrielli "cifra del Carteggio dei Dieci di Balia"); `"Neri Capponi" cifra 1430 Dieci` returned 3, fiscal history only. None is 1430 and none prints a decipherment of filza 8.
+Site search of the three blogs by name: done as the engine's site-restricted terms in searches 3 and 4 (cryptiana.blogspot.com; ciphermysteries.com; klausis-krypto-kolumne); the local Cryptiana mirror (`sources/cryptiana`: web/, blog/, CRYPTO-INDEX.tsv) grepped for "Dieci di Bal", "Capponi", "Gabbrielli": one hit, web/polyalphabetic.htm, the Piero Capponi Livorno cipher of the 1490s, not this item. Found: no decipherment or plaintext of c.127 on any of them.
+DECODE: status read from the saved login-free listing `sources/decode/florence-dieci-2026-09-24.tsv` (R3765, R3766 Non-decrypted, "none found" for documents) and from A2-FLO's 3 Oct 2026 login session; not re-listed live by this worker.
+
+## Premise check (CS-A2-K, 3 Oct 2026)
+
+(a) The folder's own mentions: **found.** c.111 (R3765) is itself the decipherment: pencil note "Decifrato della lettera al N° 115", a clear text of c.127 with the cipher stretches written out (A2-FLO2 above). It is an archival clear copy on disk, not a published reading and not transcribed by us; Bourdeau's note (medici1425 table) calls it a "19th-c. clear sheet", which would make it Gabbrielli-era work. That makes the key route a plain-copy alignment (rule 10 key `ours`) and the plaintext of this item a text in an archive, not a cryptanalytic result: a cryptanalytic reading of c.127 would be calibration against c.111, never a blind decipherment.
+(b) Other solvers' working files: **found, not this item.** dbourdeau/cyphersolver (shallow clone, grepped, 2 Oct 2026 head): `targets/medici1425/NOTES.md` has a DECODE R3758-R3789 table in which R3765 = "19th-c. clear sheet endorsed 'Decifrato della lettera al n. 115': the decipherment of R3766" and R3766 = "Italian letter with long cipher passages, 'al Guasto ... ad xxx d'agosto 1430'. Read at the time via R3765"; R3764 "Ex Pontremulo, 4 martii 1430", Fibindacci; `research/oldest/scan_2026-09-23/italy.md` records that Bourdeau saw all 32 images by cookie and that Gabbrielli's volume holds 1430 keys (reel 58 frames 58-6..58-9, filza 8). His repository does NOT read c.127 or any filza 8 item (no output, key table or apply script for 1430 filza 8; medici1425 targets the Oct 1425 Faenza letter, a different letter). **Date conflict, M-grade on both sides:** Bourdeau's preview-size read "ad xxx d'agosto 1430" versus our A2-FLO2 read "a dì xxvi dicembre 1430" for the same leaf; the Guasti hits above make late December 1430 (Neri at the Lucca camp from 20 Dec) the more consistent reading, but the leaf date is to be re-read at crop scale before it is quoted anywhere. Place "al Guasto Aymone(?)" unresolved. aaymeloglu/unsolved-ciphers (shallow clone, 27 Sept 2026 head): `catalogue/decode-records.jsonl` and `decode-catalog.csv` list R3765/R3766 as Non-decrypted cipher records only; no work on them; Aymeloglu's repository has no licence, cited not copied.
+(c) Physical neighbours: **found, c.111 is the neighbour.** The only clear copy in the cluster is the c.111 sheet; c.128-131 (R3767-R3770) are cipher slips in the same sign set per Bourdeau; no other clear copy or slip seen by this worker beyond the A2-FLO inventory (contact sheets); the facing pages of c.127 not viewed at native resolution by this worker (no image reads here), so (c) stays open for c.127 verso and c.128.
+(d) Recipient side: **not found.** Neri Capponi's own *Commentari* and Guasti's Rinaldo registers searched as above (recipient/commission side); no printed edition of Neri Capponi's letters of 1430 was located in Google Books or the open web, and none is known to this worker. Not run: HathiTrust full text (Cloudflare), JSTOR (owner's machine), Gabbrielli vol. II, and Giovanni Cavalcanti's *Istorie fiorentine* (Dec 1430 events) as a letter source.
+Net: nothing found that decodes c.127 in print or on the three blogs; what exists is c.111's archival clear copy, which is the project's alignment source and the reason the item is not a blind cryptanalysis target. Not classified for novelty (rule 10; a verifier does that).
+
+## Requests (CS-A2-K)
+archive.org 3 (advancedsearch 1, `_djvu.txt` 2); www.googleapis.com 2; github.com 2 shallow clones (grep only); WebSearch 5 calls. No de-crypt.org, no images, no vision calls, no subagents.
+
+## Intake gate output (CS-A2-K)
+`florence-dieci-responsive: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0, run 3 Oct 2026 after the edits)
