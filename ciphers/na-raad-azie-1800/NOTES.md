@@ -725,11 +725,50 @@ and every instrument tried at N=370 has either failed its control or found nothi
 Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
 (all local).
 
+## 3 Oct 2026 -- A2-RAA8: vowel-column order test on the bottom digits, matched controls first (rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Question.** A2-RAA6 noted that the bottom-digit counts 166:86:62:56 (45/23/17/15%) sit close to the nl20 shares of
+e:i:a:o (45.3/21.5/18.8/14.4%). That is a frequency coincidence until the *order* is tested: if the bottom digit is a
+vowel column, the bottom-digit sequence should follow Dutch vowel-to-vowel transitions.
+
+**Pre-registration** (`data/vowelcol/PREREG.md`, commit 421eea1a, pushed 02:03 UTC before any scoring). Statistic G: for
+each of the 24 bijections bottom -> {e,i,a,o}, per-token vowel-bigram minus vowel-unigram log-likelihood (model: vowel
+sequence of nl20 with pg10820 held out; ij, y -> i; u dropped); G = the maximum. Null for every sequence: 200 order
+permutations of itself (counts fixed, so G can differ only through order -- the control *can* differ from the target on
+this statistic; the frequency match itself is deliberately removed). Controls at N=370: POS = 20 held-out nl20 vowel
+sequences (hypothesis true by construction); ALT = 20 synthetic one-cell-per-letter ciphers on a random 7x4 table,
+bottom = column (hypothesis false). Gate: POS p<0.05 in at least 16/20.
+
+**Run.** `python3 ciphers/na-raad-azie-1800/scripts/vowelcol_test.py` (seed 20261003, 7 s; `data/vowelcol/result.tsv`,
+`data/vowelcol/run.out`):
+
+| set | N | passes p<0.05 | G range | note |
+|---|---|---|---|---|
+| POS (vowel sequence, Hv true) | 370 | **9/20** | 0.0017 - 0.0574 | gate 16/20: **not met** |
+| ALT (letter table, Hv false) | 370 | 4/20 | -0.0335 - 0.0218 (p90 0.0129) | false-positive rate of the design 20% |
+| target (leaf-2 bottoms) | 370 | -- | G 0.0152, p 0.249 | not scored as a result |
+
+**Result: non-test at N=370.** The positive control reaches only 9/20 against the 16/20 gate, so the order statistic
+cannot detect a true vowel column at this length, and the target's p = 0.249 is neither for nor against the
+hypothesis; and since 4/20 non-vowel letter tables also pass, even a target pass would not have separated the designs
+well. Post-hoc, not pre-registered (`scripts/vowelcol_power.py`, `data/vowelcol/power_posthoc.tsv`): POS power with fresh
+windows 11/20 at N=370, 15/20 at N=740, 15/20 at N=1110 -- this vowel-bigram statistic stays under 0.8 power even at
+three times the text, so adding leaf 3 alone would not make it a test. The A2-RAA6 frequency match stays a descriptive
+observation; the vowel-column hypothesis is untested-by-this-statistic (rule 3 third-attempt clause does not apply: first
+attempt), not refuted.
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed, no reading written. Vision: 0. Requests: none
+(all local).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-RAA7)
 Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a reading; HYPOTHESES.md)
 - leaf 2 cipher body (370 cells) - blocker: not-attempted; one-to-one and syllable-table substitution and the strict crib drag give control-backed negatives, homophonic crib drag fails its control at N=370 (A2-RAA3..A2-RAA7); next: transcribe leaf 3 (same cipher, faint) to raise N, then re-run homophonic with control, ~$5
 - leaf 3 cipher body (untranscribed, faint bleed-through) - blocker: not-attempted; images on disk (images/209_leaf3*.jpg); next: tools/iiif_lines.py crops + 2 blind passes + 1 reconciliation, ~$5
-- bottom-digit order (vowel-column hypothesis, A2-RAA6 descriptive note) - blocker: not-attempted; never tested; next: vowel-sequence bigram test with nl20-window control, ~$0.5
+- bottom-digit order (vowel-column hypothesis) - blocker: not-attempted; A2-RAA8 vowel-bigram order test is a non-test (POS power 9/20 at N=370, post-hoc 15/20 even at N=1110); next: a stronger statistic (e.g. bottom digit conditioned on top digit, or consonant-row x vowel-column decode with a syllable model) with the same POS/ALT controls, only after leaf 3 raises N, ~$1
 
 ## Escalation (3 Oct 2026, A2-RAA7)
 - [n/a] siblings: no sibling cipher letter of this system found in 2.01.27.02 (VX-N03 sweep, 25 Sept 2026)
@@ -738,5 +777,5 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [ ] image-check: leaf 3 transcription from line crops to raise N (planned step)
-- [ ] retry: homophonic family and homophonic crib drag on leaf 2+3 once leaf 3 is in, control first
-Verdict: keep going: 3 internal gaps; cheapest next: vowel-column order test on the bottom digits with nl20-window control, ~$0.5 (then leaf 3 transcription, ~$5)
+- [ ] retry: homophonic family and homophonic crib drag on leaf 2+3 once leaf 3 is in, control first; the vowel-column order test (A2-RAA8, non-test at N=370, POS power 9/20 vs gate 16/20) retried only with a stronger statistic
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe leaf 3 (tools/iiif_lines.py crops + 2 blind passes + 1 reconciliation) to raise N, ~$5 (A2-RAA8 vowel-column order test was a non-test at N=370: POS power 9/20)
