@@ -1,0 +1,6 @@
+# control f206: 62 groups, pins ['172', '22', '279', '31', '379', '501', '581', '628', '66', '722']; base FIT
+injection 0: idx 8 (22 -> 581): FIT idx [8]; injected in set True; set size 1; timeouts 0
+# injection 54<-121 skipped (still fits or timed out)
+# injection 48<-444 skipped (still fits or timed out)
+injection 1: idx 16 (299 -> 66): FIT idx [16]; injected in set True; set size 1; timeouts 0
+injection 2: idx 31 (172 -> 40): FIT idx [30, 31, 48]; injected in set True; set size 3; timeouts 0
