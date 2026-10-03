@@ -1,0 +1,6 @@
+draw g 15 E 1 timedout True 319.1
+draw g 16 E 0 timedout False 8.6
+draw g 17 E 0 timedout False 122.0
+draw g 18 E 0 timedout False 61.9
+draw g 19 E 1 timedout True 299.7
+f249 g dec 15-19: E=1 in 2 of 5; unresolved 2; resolved fits 0 of 3; 811 s
