@@ -345,3 +345,34 @@ sheet, this file calls them two sheets; not settled here). No other sheet or cle
 (d) Recipient's side: none identified (unaddressed note); the only primary report, strana39.ru (July 2015), now 404s
 and was not reachable through Wayback this pass. Unreachable.
 Result: nothing found that reads the cryptogram.
+
+## A2-KAL, convention-B Portuguese and Lithuanian at restarts 20, 3 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal.md` (LANE-A2PUSH, account 2). Intake gate before deep work:
+`python3 tools/intake_gate_check.py kaliningrad-2015` -> `kaliningrad-2015: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0.
+
+Ran the step GOLD-KAL4's "Next steps" named: the two convention-B (K=28) homophonic units still open, by GOLD-KAL4
+part (a)'s method (`tools/family_run.py --family homophonic --param profile=target`, restarts 20, seeds 5, a 6th seed
+only for the four-0.9+/one-under-0.5 pattern, gate 0.9 never lowered, control before target). Disk and CPU only.
+- **2-pt-B (pt18):** control 0.998/0.977/0.998/0.990/0.981, mean 0.989 (met; it was 0.555 at restarts 8). Target
+  judge **FAIL** (score -1.316, real_p05 -1.078, null_p99 -1.613). A restarts problem, now resolved: a
+  control-backed negative for Portuguese at convention B. No reading.
+- **2-lt-B (lt, Bible register):** control 0.991/0.991/0.416/0.997/0.984, mean 0.876; 6th seed 1.000, mean 0.896.
+  **CONTROL BELOW GATE**, target not run, untested not excluded. Not pursued further: a 7th seed would be a third
+  turn of the same knob (rule 3's third-attempt clause).
+Tables, per-seed numbers and commands: HYPOTHESES.md "A2-KAL" section; both numbers per unit also in
+specs/kaliningrad-2015.json `cheap_test_done`. The target has no "Remaining gaps"/"Escalation" sections (status
+`open`, not `partial`; `tools/gaps_check.py` reports SKIP), so none were edited. Status stays `open`; rule 10:
+nothing here is a reading.
+
+**Next steps.** The homophonic family is now spent at convention B across every Latin-alphabet language tried
+(nl/da/en/fr/it/es/pt/pl/ru-s3: control-backed negatives; German was run at convention A only, GOLD-KAL1); the only homophonic residuals are
+Lithuanian at both conventions (2-lt-A 0.827, 2-lt-B 0.896, both anneal-control limits on the Bible corpus, not
+target results), which further reruns of the same anneal should not chase. The periodic-IC test was flat (best
+period 17, margin 0.0008), so a periodic polyalphabetic family is a poor bet. The cheapest genuinely different
+instrument is the transposition hypothesis the 2016 thread raised (Thomas: IC about 0.08 on base letters, order
+e n r i s): test whether the convention-B letters read as plain German letters in another order -- unigram fit of
+the target's own letter counts against tools/data/de20, with a matched control of transposed de20 text at N=1066
+and a shuffled-alphabet null (the control can fail differently: a substitution of German changes the unigram fit,
+a transposition does not); ~$2, one worker, no hosts.

@@ -458,6 +458,48 @@ job; no re-derivation owed. Status stays `open`.
 
 Rule 10: nothing in this section is a reading; status stays `open`; never solved, new, first or unpublished.
 
+## A2-KAL, convention-B Portuguese and Lithuanian at restarts 20 (3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-kal.md` (LANE-A2PUSH, account 2): the two convention-B units GOLD-KAL4
+left open, by GOLD-KAL4 part (a)'s method (restarts 20, seeds 5, a 6th seed only for the four-0.9+/one-under-0.5
+pattern), gate 0.9 never lowered, control before target. Disk and CPU only, no hosts, no subagents. The spec's
+`judge.corpora` was set per unit in a scratch copy of the spec (slug unchanged, so rows land here); the committed
+spec's judge block is untouched (still de20).
+
+| unit | corpus | K | per-seed control (restarts 20) | mean | gate | target judge |
+|---|---|---|---|---|---|---|
+| 2-pt-B | pt18 (4 files) | 28 | 0.998 / 0.977 / 0.998 / 0.990 / 0.981 | 0.989 | met at 5 | FAIL: -1.316 (real_p05 -1.078, null_p99 -1.613) |
+| 2-lt-B | lt (66 files, Bible) | 28 | 0.991 / 0.991 / 0.416 / 0.997 / 0.984 | 0.876 | NOT met at 5 | not run |
+| 2-lt-B (6 seeds) | lt (66 files, Bible) | 28 | as above + 1.000 (seed 6) | 0.896 | NOT met | not run |
+
+- **2-pt-B: restarts problem, resolved.** At restarts 8 (GOLD-KAL4 sweep) the control read 0.205/0.462/0.998
+  (mean 0.555); at restarts 20 all five seeds read 0.977-0.998. Target judge FAIL, now a control-backed negative
+  for Portuguese (pt18, 1808-1819 periodical register) at convention B. Rule 3 check: the control's recovery is a
+  function of the anneal on a design-matched synthetic text and could have failed (it did at restarts 8), so it
+  is a real control for this statistic. Position of the target score between the judge's null_p99 and real_p05:
+  (score - null_p99)/(real_p05 - null_p99) = 0.56, in the same band as the sweep's other negatives (nl 0.54,
+  it 0.42), not an outlier toward the real-prose side.
+- **2-lt-B: CONTROL BELOW GATE, untested not excluded.** Seeds 1, 2, 4, 5 read 0.984-0.997 and seed 3 collapsed to
+  0.416 -- the single-collapsed-seed pattern, so a 6th seed was run (1.000), bringing the mean to 0.896, 0.004
+  under gate. The gate was not lowered and no 7th seed was run (that would be tuning the same knob a third time;
+  CLAUDE.md rule 3's third-attempt clause). Same anneal local-optimum shape as 2-ru-s1s-A and 2-lt-A; with
+  2-lt-A (0.827 at restarts 20) this makes Lithuanian the one language where the homophonic anneal has not
+  cleared its own control at either convention.
+
+Commands (the scratch spec differs from specs/kaliningrad-2015.json only in `judge.corpora`):
+```
+python3 tools/family_run.py <scratch>/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/pt18 \
+  --param profile=target --seeds 5 --restarts 20 --gate 0.9 \
+  --label "A2-KAL 2-pt-B, restarts 20 seeds 5, control before target"
+python3 tools/family_run.py <scratch>/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/lt \
+  --param profile=target --seeds 5 --restarts 20 --gate 0.9 \
+  --label "A2-KAL 2-lt-B, restarts 20 seeds 5, control before target"
+  (then the same with --seeds 6)
+```
+No judge PASS; no reading described. Status stays `open`. Rule 10: nothing here is a reading.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -483,3 +525,6 @@ Rule 10: nothing in this section is a reading; status stays `open`; never solved
 | 26 Sept 2026 03:01 | homophonic | N=1066 K=28 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt profile=target | 1 | 0.908 (0.757-0.998) | -3171.319 | FAIL language: score=-1.447, null_p99=-1.801, real_p05=-0.962, real_median=-0.82, mode=both, N=1066 | yes (gate 0.9) | GOLD-KAL4 sweep it16, convention B K28, control before target |
 | 26 Sept 2026 03:03 | homophonic | N=1066 K=28 restarts=8 corpus=memorialhistri17realuoft.txt.gz+memorialhistri18realuoft.txt.gz+memorialhistri19realuoft.txt.gz profile=target | 1 | 0.990 (0.989-0.992) | -3349.593 | FAIL language: score=-1.646, null_p99=-1.966, real_p05=-0.886, real_median=-0.789, mode=both, N=1066 | yes (gate 0.9) | GOLD-KAL4 sweep es17c, convention B K28, control before target |
 | 26 Sept 2026 03:04 | homophonic | N=1066 K=28 restarts=8 corpus=correiobrazilie00unkngoog.txt.gz+correiobrazilie02unkngoog.txt.gz+oinvestigadorpo03unkngoog.txt.gz+oinvestigadorpo05unkngoog.txt.gz profile=target | 1-3 | 0.555 (0.205-0.998) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | GOLD-KAL4 sweep pt18, convention B K28, control before target |
+| 3 Oct 2026 00:25 | homophonic | N=1066 K=28 restarts=20 corpus=correiobrazilie00unkngoog.txt.gz+correiobrazilie02unkngoog.txt.gz+oinvestigadorpo03unkngoog.txt.gz+oinvestigadorpo05unkngoog.txt.gz profile=target | 1 | 0.989 (0.977-0.998) | -3046.256 | FAIL language: score=-1.316, null_p99=-1.613, real_p05=-1.078, real_median=-0.847, mode=both, N=1066 | yes (gate 0.9) | A2-KAL 2-pt-B, restarts 20 seeds 5, control before target |
+| 3 Oct 2026 00:28 | homophonic | N=1066 K=28 restarts=20 corpus=01_pradzia.txt.gz+02_isejimas.txt.gz+03_levitas.txt.gz+04_skaiciai.txt.gz+05_pakartotine_istatymo.txt.gz+06_jozue.txt.gz+07_teisejai.txt.gz+08_ruta.txt.gz+09_1_samuelis.txt.gz+10_2_samuelis.txt.gz+11_1_karaliai.txt.gz+12_2_karaliai.txt.gz+13_1_kronikos.txt.gz+14_2_kronikos.txt.gz+15_ezdras.txt.gz+16_nehemijas.txt.gz+17_ester.txt.gz+18_jobas.txt.gz+19_psalmynas.txt.gz+20_patarles.txt.gz+21_ekleziastas.txt.gz+22_giesmiu_giesme.txt.gz+23_izaijas.txt.gz+24_jeremijas.txt.gz+25_raudos.txt.gz+26_ezechielis.txt.gz+27_danielius.txt.gz+28_ozejas.txt.gz+29_joelis.txt.gz+30_amosas.txt.gz+31_abdijas.txt.gz+32_jonas.txt.gz+33_michejas.txt.gz+34_nahumas.txt.gz+35_habakukas.txt.gz+36_sofonijas.txt.gz+37_agejas.txt.gz+38_zacharijas.txt.gz+39_malachijas.txt.gz+40_matai.txt.gz+41_markas.txt.gz+42_lukas.txt.gz+43_jonas.txt.gz+44_apastalu_darbai.txt.gz+45_romieciams.txt.gz+46_1_korintieciams.txt.gz+47_2_korintieciams.txt.gz+48_galatams.txt.gz+49_efezieciams.txt.gz+50_filipieciams.txt.gz+51_kolosieciams.txt.gz+52_1_tesalonikieciams.txt.gz+53_2_tesalonikieciams.txt.gz+54_1_timotiejui.txt.gz+55_2_timotiejui.txt.gz+56_titui.txt.gz+57_filemonui.txt.gz+58_zydams.txt.gz+59_jokubas.txt.gz+60_1_petras.txt.gz+61_2_petras.txt.gz+62_1_jonas.txt.gz+63_2_jonas.txt.gz+64_3_jonas.txt.gz+65_judai.txt.gz+66_apreiskimas.txt.gz profile=target | 1-5 | 0.876 (0.416-0.997) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2-KAL 2-lt-B, restarts 20 seeds 5, control before target |
+| 3 Oct 2026 00:32 | homophonic | N=1066 K=28 restarts=20 corpus=01_pradzia.txt.gz+02_isejimas.txt.gz+03_levitas.txt.gz+04_skaiciai.txt.gz+05_pakartotine_istatymo.txt.gz+06_jozue.txt.gz+07_teisejai.txt.gz+08_ruta.txt.gz+09_1_samuelis.txt.gz+10_2_samuelis.txt.gz+11_1_karaliai.txt.gz+12_2_karaliai.txt.gz+13_1_kronikos.txt.gz+14_2_kronikos.txt.gz+15_ezdras.txt.gz+16_nehemijas.txt.gz+17_ester.txt.gz+18_jobas.txt.gz+19_psalmynas.txt.gz+20_patarles.txt.gz+21_ekleziastas.txt.gz+22_giesmiu_giesme.txt.gz+23_izaijas.txt.gz+24_jeremijas.txt.gz+25_raudos.txt.gz+26_ezechielis.txt.gz+27_danielius.txt.gz+28_ozejas.txt.gz+29_joelis.txt.gz+30_amosas.txt.gz+31_abdijas.txt.gz+32_jonas.txt.gz+33_michejas.txt.gz+34_nahumas.txt.gz+35_habakukas.txt.gz+36_sofonijas.txt.gz+37_agejas.txt.gz+38_zacharijas.txt.gz+39_malachijas.txt.gz+40_matai.txt.gz+41_markas.txt.gz+42_lukas.txt.gz+43_jonas.txt.gz+44_apastalu_darbai.txt.gz+45_romieciams.txt.gz+46_1_korintieciams.txt.gz+47_2_korintieciams.txt.gz+48_galatams.txt.gz+49_efezieciams.txt.gz+50_filipieciams.txt.gz+51_kolosieciams.txt.gz+52_1_tesalonikieciams.txt.gz+53_2_tesalonikieciams.txt.gz+54_1_timotiejui.txt.gz+55_2_timotiejui.txt.gz+56_titui.txt.gz+57_filemonui.txt.gz+58_zydams.txt.gz+59_jokubas.txt.gz+60_1_petras.txt.gz+61_2_petras.txt.gz+62_1_jonas.txt.gz+63_2_jonas.txt.gz+64_3_jonas.txt.gz+65_judai.txt.gz+66_apreiskimas.txt.gz profile=target | 1-6 | 0.896 (0.416-1.000) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | A2-KAL 2-lt-B, restarts 20 seeds 6 (seed 3 collapsed at seeds 5), control before target |

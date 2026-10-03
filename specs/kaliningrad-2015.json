@@ -222,6 +222,22 @@
    "target": "not run (CONTROL BELOW GATE)",
    "control": "profile=target, 3 seeds: recovery 0.205/0.462/0.998, mean 0.555 (NOT met). Per the brief the sweep runs at restarts 8/seeds 3 without the units-1-4 retry rule, so no 6th-seed or restarts-20 re-run this job.",
    "verdict": "CONTROL BELOW GATE at restarts 8; untested, not excluded. A restarts-20 rerun (matching part (a)'s method) is the natural next cheap step, not attempted this job."
+  },
+  {
+   "test": "2-pt-B (restarts 20)",
+   "date": "3 Oct 2026",
+   "method": "A2-KAL: tools/family_run.py --family homophonic --param profile=target, restarts 20 seeds 5, gate 0.9, --corpus tools/data/pt18, judge.corpora the 4 tools/data/pt18 files (set in a scratch copy of this spec; this file's judge block untouched). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "control": "5 seeds: 0.998/0.977/0.998/0.990/0.981, mean 0.989 (met)",
+   "target": "best score -3046.256; judge FAIL language: score=-1.316, null_p99=-1.613, real_p05=-1.078, real_median=-0.847, N=1066",
+   "verdict": "restarts problem at restarts 8 (mean 0.555), resolved at restarts 20; target now a control-backed negative for Portuguese (pt18 register) at convention B."
+  },
+  {
+   "test": "2-lt-B",
+   "date": "3 Oct 2026",
+   "method": "A2-KAL: tools/family_run.py --family homophonic --param profile=target, restarts 20, seeds 5 then 6 (GOLD-KAL4 part (a) rule: four seeds 0.9+ and one under 0.5), gate 0.9 never lowered, --corpus tools/data/lt (66 files, Bible register), judge.corpora the same 66 files in a scratch copy of this spec. Cipher: ciphertext_signs_B.tsv (N=1066 K=28).",
+   "control": "0.991/0.991/0.416/0.997/0.984, mean 0.876 at 5 seeds; + seed 6 1.000, mean 0.896 at 6 seeds (NOT met)",
+   "target": "not run (CONTROL BELOW GATE)",
+   "verdict": "CONTROL BELOW GATE; untested, not excluded. One collapsed seed (seed 3, 0.416) holds the mean 0.004 under gate; same anneal local-optimum shape as 2-ru-s1s-A and 2-lt-A."
   }
  ]
 }
