@@ -38,3 +38,18 @@ doubt flag stays visible there.
 Known limit, stated now: key_53 was annealed from this same transcription, so a dictionary unit is partly a consequence
 of the fit; the control measures chance agreement, not fitting. An S here means "the key reads this sign into a period
 word beyond chance", not that the image was re-read. A native-resolution image re-read remains the stronger test.
+
+## Test B, pre-registered 3 Oct 2026 14:2x UTC after test A's result (before any test-B score)
+
+Test A (above) ran as registered: aggregate gate PASS (12 of 24 DOT-units in dictionary vs control p99 0.208), 20 tokens
+move. Its limit: 53's dots separate phrases, not words (24 units for 364 letters), so a token inside a long run can never
+pass (a). Test B is a second, separately-labelled test; test A's result stands whatever B gives.
+
+Unit for B: each DOT-unit is segmented by dynamic programming into dictionary pieces (same dictionary and folding as A),
+maximising the number of letters covered by pieces of length >= 3 (ties: fewer pieces); letters not covered stay
+uncovered. A token is "covered" if it lies in a piece of length >= 3.
+Control: the same 1000 band-permuted keys (seed 53), the same segmentation run on each control decode.
+Gates: (1) aggregate: share of 53's letters covered under key_53 must exceed the control's 99th percentile, else stop;
+(2) per eligible token (A's eligible set, minus those A already moved): moves M -> S iff covered under key_53 by a
+piece of length >= 4, AND covered (length >= 4) in at most 5% of control draws at that position, AND for a 'differ'
+row the other pass's sign does not leave the token covered by a length >= 4 piece too.
