@@ -47,3 +47,83 @@ from the survey's own summary, not this post):
   narrowed further).
 
 No control applies to a fetch; this step is not a cryptanalytic test and has no numbers to report.
+
+## Web and blog check (GF-A2-11, 3 Oct 2026)
+
+Run for LANE-A2PUSH (account 2), 3 Oct 2026, 00:30-00:38 UTC. WebSearch (plain web); hits opened with WebFetch.
+
+(a) Plain web searches, four:
+1. `Cylob cryptogram solved` -- hits: Cipherbrain post 50 (2017, both renders), Cipherbrain "revisited the cylob
+   cryptogram" (18 Aug 2020), Cipherbrain "a booklet similar to the cylob cryptogram" (24 Nov 2020), the Top-50 list
+   page, Futility Closet "The Cylob Cryptogram" (3 Apr 2026), Mathew Ingram's newsletter (16 Apr 2026).
+2. `Cylob Chris Jeffs booklet Dillons bookshop strange symbols book` -- Boing Boing (?p=1109788), Cipherbrain 2020
+   revisit, Futility Closet; the rest unrelated (symbol dictionaries, an alchemy forum).
+3. `"Cylob-Manuskript" OR "Cylob manuscript" Rätsel` -- the Cipherbrain posts above plus the Orwell-1984 colour-cipher
+   post (2016, a different item) and Boing Boing.
+4. `"Cylob" cryptogram Futility Closet rectangles geometrical patterns booklet` -- the same set; nothing else.
+No page found claims a solution, decipherment, author or meaning; every summary repeats "the meaning of all this has
+never been discovered".
+
+(b) Blog site searches:
+- Cipherbrain: covered by searches 1-4 (all six Cylob posts/pages it has surfaced); the 2017 post 50 thread (7 comments)
+  was read in full by bCYL, 25 Sept 2026, above.
+- Cryptiana: `site:cryptiana.blogspot.com Cylob` -- no cryptiana page returned (only Cipherbrain and unrelated pages).
+- Cipher Mysteries: `site:ciphermysteries.com Cylob` -- no ciphermysteries page returned; the site's own search for the
+  related artist (`ciphermysteries.com/?s=Cointet`) finds one post, "Guy de Cointet's 'A Captain From Portugal'
+  (1972)" (26 Apr 2022), opened below.
+
+(c) Opened, comment threads read (WebFetch):
+- Cipherbrain, "Cylob-Manuskript: ein ungelöstes Rätsel" (1 May 2015, German): 11 scans shown (Cylob-01..11), text
+  says 22 pages; 15 comments, no pagination (Joe, Richard SantaColoma x3, emma, Klaus Schmeh x4, Dave, Gert Brantner,
+  Thorsten, Philipp Bisson, Wolfgang Anschlag x2; 1 May 2015 - 31 Aug 2017). Hypotheses only (musicians' stage plan,
+  factory floor plan, 1990s game copy-protection sheet, IQ test); "Thorsten" (2 May 2015) announces the transcription
+  update; Wolfgang Anschlag (28-30 Aug 2017) proposes a symbol-to-letter substitution ("16 Symbole, das häufigste kommt
+  17 Mal vor") and Schmeh answers "Diesen Ansatz müsste man weiterverfolgen" -- a proposal, no reading posted.
+- Cipherbrain, "revisited the cylob cryptogram" (18 Aug 2020): three hypotheses (cipher, modern art, game accessory,
+  with Elonka Dunin); 2 comments (TWO, 20 Aug 2020, "Spy IQ test"; David Oranchak, 13 Sept 2020, repeating elements
+  between two pages). No solution.
+- Cipherbrain, "a booklet similar to the cylob cryptogram" (24 Nov 2020): Guy de Cointet's "A Captain from Portugal"
+  (1972) as a similar artist's booklet; 11 comments (Richard Bean, Armin x3, Klaus Schmeh x2, ShadowWolf x2, Matthew
+  Brown, jan, a Cipher Mysteries pingback; 24 Nov 2020 - 26 Apr 2022). The decipherments posted there ("A CAPT AIN FR
+  OM POR TUGAL", "like bands of pigmentation in the zebra ...") are of **de Cointet's** booklet, not the Cylob booklet;
+  no comment attributes the Cylob booklet to de Cointet or anyone.
+- Cipher Mysteries, de Cointet post (26 Apr 2022): mentions Cylob only through Schmeh's post title; 2 comments
+  (Rossignol, nickpelling, 28 Apr 2022), neither about Cylob.
+- Futility Closet (3 Apr 2026): no comments shown; "The meaning of all this has never been discovered."
+- Mathew Ingram newsletter (16 Apr 2026): no comments shown; no solution claimed.
+- Boing Boing (?p=1109788): HTTP 403 to WebFetch, not retried -- unreachable this pass.
+
+Result: no decipherment, plaintext, identified author or meaning of the Cylob booklet found on the open web or in the
+blog threads read.
+
+## Premise check (GF-A2-11, 3 Oct 2026)
+
+- **(a) Decipherments or transcriptions the folder mentions: transcription found, no decipherment.** The "partial
+  transcription" link in post 50 (`cloud.rotering-net.de/public.php?service=files&t=4d7d...`, not fetched by bCYL) was
+  opened this pass: an ownCloud share whose download is `Cylob-Manuskript.pdf` (application/pdf, 602,402 bytes, 12
+  pages, sha256 0f9deae8ef6b313a2087cc3be944bfeea964afc80c334943a5d94bd351232082, PDF author "Thorsten Rotering", created 2 May 2015 -- the "Thorsten" of the 2015 thread). Page
+  1 is a "Transkriptionstabelle" of 24 sign labels A-X with frequencies; its notes say the "Standardalphabet" has 16
+  signs, the frequencies ignore sign doublings on pp. 1 and 3, and page 20 shows new signs read as simplified versions
+  of standard ones (shown in brackets, e.g. C (N), D (Q)); the remaining pages give page images with the letter
+  labels under them. This is the source of the "24 symbols (Torsten)" figure bCYL could not trace. It is a
+  transcription only, no reading. Not committed (third-party file, licence unknown); URL, size and hash recorded here
+  for a later transcription job. No other decipherment, gloss or clear copy is mentioned in this folder or its spec.
+- **(b) Other solvers' working files: not found.** dbourdeau/cyphersolver HEAD 2341682 (2 Oct 2026): hits only in
+  `TARGETS.md` (open, "not settleable by cryptanalysis"), `research/top50/` (NOTES.md, top50.txt/json/htm; provenance
+  or authenticity unresolved), `research/catalogue_harvest/hcportal/index.json` and `targets/urquhart/src/list.json`
+  (list entries) -- no target folder, transcription, output or solver run. aaymeloglu/unsolved-ciphers HEAD d2800bb
+  (27 Sept 2026): `SHORTLIST.md` only (open, no solve claims), no working files.
+- **(c) Physical neighbours: not found.** The item is a printed booklet with no known second copy (Schmeh, post 50). The
+  "neighbours" are the booklet's other pages: the 2015 post shows 11 scans (01-11) while the texts say 20 or 22 pages;
+  Rotering's PDF shows the pages he transcribed (pp. 1-20 by its own page labels). No clear text, key or note appears in
+  any description of the booklet ("no letters or numbers, not even page numbers"). The nearest analogue, Guy de
+  Cointet's 1972 booklet, was read in 2020 by Cipherbrain commenters; nobody links its author to the Cylob booklet.
+- **(d) Recipient's side: not applicable / not found.** There is no addressee; the finder's side is Cylob's own account
+  (read by bCYL via Schmeh's posts, 25 Sept 2026). No edition or archive applies.
+
+Verdict of this pass: no decipherment or plaintext found; status stays `open`. Next-step note (not run): Rotering's
+2015 transcription is on line and may serve as the second pass for any transcription job (rule 2: the scans decide).
+Requests: WebSearch 6; scienceblogs.de 3 (WebFetch); futilitycloset.com 1; newsletter.mathewingram.com 1;
+ciphermysteries.com 2 (site search, post); boingboing.net 1 (403); cloud.rotering-net.de 2 (share page, download).
+
+`python3 tools/intake_gate_check.py cylob-c1995` after both sections (3 Oct 2026, GF-A2-11): `cylob-c1995: open (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
