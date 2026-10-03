@@ -1,4 +1,5 @@
 open
+Avenel, *Lettres, instructions diplomatiques et papiers d'état du cardinal de Richelieu* (archive.org full text, grepped whole by GF4-BATCH8 (account-4), 3 Oct 2026): vol. 3 (IA `lettresinstructi03richuoft`) read at its 11 Aug-29 Sept 1628 letters, pp. 129-139 -- no letter to or from Césy; its only Césy piece is Richelieu to Césy, 9 March 1629, p. 252. Vol. 7 (IA `lettresinstructi07richuoft`, analyses and supplement) has Césy at p. 559 (the king to Césy, 30 June 1625, 'Extrait d'une lettre chiffrée', AE Constantinople t. 3 f. 116) and p. 967 (analysis, the king to Césy, 30 April 1628, minute, AE Constantinople t. III); vol. 8's general index (IA `lettresinstruct00avengoog`, 'Césy ou Cézy': III 252; VI; VII 559, 967; VIII 51-300) lists no Aug-Sept 1628 piece. Halphen 1904 (Louis XIII to Césy) begins 28 Jan 1631. No printing of SP 78/83/62 (31 Aug/10 Sept 1628) found.
 
 # Louis XIII to the Marquis de Cesy, ambassador at Constantinople — TNA SP 78/83/62
 
@@ -120,3 +121,32 @@ consolidated TNA batch, ASKS row 73).
 - S: confirm digitisation status of SP 78/83 f.147 via TNA Discovery -- this run's host rules excluded it, still not run -- tools/discovery_items.py.
 - S: read Avenel's Richelieu vol. 3 exhaustively for every 'Cesy' occurrence, not just the three fts snippets already pulled.
 - S: check whether Halphen 1904's introduction (Gallica ark bpt6k5758477g) reaches back before Jan 1631, via archive.org/HathiTrust rather than Gallica, which was out of this pass's scope.
+
+## Web and blog check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Louis XIII Césy 1628 cipher letter Constantinople deciphered` -- general Great Cipher/Rossignol pages,
+an academia.edu paper on Césy's 1625-26 negotiations, Bourdeau's index page; nothing on this letter. (2) site-restricted to the
+three blogs, `Cesy Constantinople cipher 1628` on **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne), the **Cryptiana blog**
+(cryptiana.blogspot.com) and **Cipher Mysteries** (ciphermysteries.com): no post on Césy or SP 78/83; the search surfaced the Gallica
+copy of BnF Césy embassy papers II (ark:/12148/btv1b52000533f, 'Lettres et mémoires de Mr de Césy ... 1620-1644'). No comment thread
+names this item, so none to read. Solver repositories re-cloned shallow 3 Oct 2026 and grepped (`c[eé]sy`): Bourdeau has no Césy
+target (hits only a cached Tomokiyo page, a Gallica SRU dump, and vizani1637, a 1637 Italian letter *to* Césy in BnF fr.16158 -- a
+different item); Aymeloglu: zero hits.
+
+## Premise check (GF4-BATCH8 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md and REQUEST.md mention no decipherment, gloss or clear copy
+of f.147. (b) Other solvers' working files: **not found** -- no Césy folder or rendering in Bourdeau's or Aymeloglu's repository.
+(c) Physical neighbours: **unreachable** -- SP 78/83 is not digitised (REQUEST.md; Discovery HTTP 500 on 26 Sept), so the leaves
+beside f.147 cannot be viewed. (d) Sender's and recipient's side: **not found as print, located as a clear-text source** -- Avenel
+(above) prints no Aug-Sept 1628 king-to-Césy letter, but shows the French Foreign Ministry kept the king's minutes to Césy in clear
+in Archives des Affaires étrangères, Correspondance politique, Constantinople (Turquie) t. 3 (a 30 April 1628 minute, Avenel VII
+p. 967; a 1625 'lettre chiffrée' extract, VII p. 559). The minute of this 31 Aug 1628 letter, if it survives there, is the clear
+text of f.147 -- a key/plain source, not a reading; Césy's own received papers (BnF fr.16149-16164, partly on Gallica) are the
+recipient-side equivalent. Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH8)
+
+Waits on: the TNA page copy of SP 78/83/62 (ASKS row 73, batch order).
+
+- S: check the Gallica-digitised Césy papers (BnF fr.16149-16164; Gallica ark btv1b52000533f and its siblings) for a received copy or decipherment of the king's letter of 31 Aug/10 Sept 1628 -- free, no person needed -- tools/gallica_folio.py.
