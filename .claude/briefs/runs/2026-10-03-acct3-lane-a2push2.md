@@ -16,6 +16,8 @@ below is spent or the window is rejected; then write "LANE A2PUSH2 handoff" in S
 Backlog, in this order (the first incarnation closed 03:16 UTC 3 Oct with its own backlog spent; read its STATUS.md
 "LANE A2PUSH handoff" first). Rows 1-4 have account-3 briefs already written and price-checked: claim them in
 WORK-QUEUE.tsv (tools/work_queue.py) and spawn them as written.
+0. FIRST (owner's priority, 3 Oct 03:4x): TX-BENCH, TX-ATLAS-B72, TX-DECODE, TX-SORTER (...-tx-*.md; TRANSCRIPTION.md),
+   all four at once -- each has a fallback if its neighbour has not landed.
 1. NV01-READ (.claude/briefs/runs/2026-10-03-acct3-nv01-read.md), 2. NV02-READ (...-nv02-read.md),
 3. F36R-REREAD (...-f36r-reread.md), 4. BIRAGO-NUM4 (...-birago-num4.md).
 5. Handoff "Open next steps": colbert26 canvases 50-51 (~4); na-raad-azie leaf 3 (~5); manteuffel key table -> key.tsv

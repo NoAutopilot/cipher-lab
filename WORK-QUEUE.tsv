@@ -160,3 +160,7 @@ NV01-READ	other	.claude/briefs/runs/2026-10-03-acct3-nv01-read.md	Opus 5.5	13	70
 NV02-READ	other	.claude/briefs/runs/2026-10-03-acct3-nv02-read.md	Opus 5.5	13	70	queued	2026-10-03 03:27	Nevers vein NV-02 fr.3416 f.35 + NV-03 fr.4715 f.38 under key no.25, sibling control first
 F36R-REREAD	other	.claude/briefs/runs/2026-10-03-acct3-f36r-reread.md	Opus 5.5	5	40	queued	2026-10-03 03:27	Birago f.36r rows 9-14 recut and re-read
 BIRAGO-NUM4	other	.claude/briefs/runs/2026-10-03-acct3-birago-num4.md	Opus 5.5	3	35	queued	2026-10-03 03:27	Birago numerical: decoy-null joint crib test (new instrument)
+TX-BENCH	other	.claude/briefs/runs/2026-10-03-acct3-tx-bench.md	Opus 5.5	10	70	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
+TX-ATLAS-B72	other	.claude/briefs/runs/2026-10-03-acct3-tx-atlas-b72.md	Opus 5.5	15	90	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
+TX-DECODE	other	.claude/briefs/runs/2026-10-03-acct3-tx-decode.md	Opus 5.5	10	75	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
+TX-SORTER	other	.claude/briefs/runs/2026-10-03-acct3-tx-sorter.md	Opus 5.5	8	60	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it

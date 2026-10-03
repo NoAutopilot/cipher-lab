@@ -483,6 +483,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    (create_session, or WORK-QUEUE.tsv rows for another account), not as one in-container Workflow: a session container
    has 4 CPUs and a Workflow runs about two agents at a time there, so 60 agents took 2.6 hours (finish-pass, 1-2 Oct
    2026) that separate sessions finish in about 20 minutes for the same usage. Workflows stay for short chained jobs.
+   **Transcription standard (owner, 3 Oct 2026): `TRANSCRIPTION.md`** sets the target (true per-sign error <= 5% on
+   symbols, measured against BENCHMARK-TX.tsv, never agreement alone), the pipeline (family atlas -> top-k -> key-
+   constrained decode -> active sorter) and the rules every account's transcription job follows; read it before briefing one.
    Transcription of a symbol cipher: when two machine passes disagree on more than a tenth of the signs, or the sign
    inventory itself is unsettled, the next pass is a person's, not a third machine pass: the owner settles the alphabet
    in the sign sorter (`tools/sign_sorter.py` -> `tools/sign_sorter_apply.py`, which turns the piles, merges, bad cuts

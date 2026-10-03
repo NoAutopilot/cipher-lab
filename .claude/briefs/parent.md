@@ -195,6 +195,14 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
+## Transcription standard (owner, 3 Oct 2026, about 03:4x UTC)
+
+Every parent briefs transcription to `TRANSCRIPTION.md`: a transcription job reports err_true (benchmark item named) or
+says why it cannot, plus err_2reader; a symbol cipher with siblings goes into its key family's atlas before line reads.
+The build jobs (TX-BENCH, TX-ATLAS-B72, TX-DECODE, TX-SORTER) are account-3 orchestrator rows in WORK-QUEUE.tsv; any
+account may run them. At each check-in, a parent landing a transcription result copies its err_true into the
+TRANSCRIPTION.md "Today" column when it improves the best figure, and the recap names the change in one line.
+
 ## Progress bars in every recap (owner's request, 28 Sept 2026 18:1x UTC)
 
 Every reply to the owner shows one bar per live target, in a code block, from the record only:
