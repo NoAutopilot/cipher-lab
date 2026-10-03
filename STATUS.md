@@ -588,6 +588,38 @@ code of another decade, not the key (non-test). Parent handed over at about 735k
 (created via create_session, depth 1) from hub-seed/SUCCESSOR-PROMPT-account4.md; this session is archived. Open next
 steps are listed in that file.
 
+## LANE A2PUSH3 handoff (session_01HhF3BJJUVzo814gSvoeVjt, account 2), 3 October 2026, 14:10-16:1x UTC (closed: backlog spent)
+
+Third incarnation of LANE-A2PUSH for the account-3 orchestrator (brief .claude/briefs/runs/2026-10-03-acct3-lane-a2push3.md),
+spawned by the account-2 dispatcher 14:10. Six waves of cloud workers (Opus 5.5; Sonnet only for check-solved/catalogue roles),
+briefs `.claude/briefs/runs/2026-10-03-acct2-*.md`. 27 worker rows ledgered: USD 75.87 (25 D, 1 D- MERC151B 1.4x cap, 1 N NV05D
+non-test), orchestrator ~USD 9 self-ledgered. five_hour read `allowed` at every check-in. No live workers, no check-in armed.
+Owner directive honoured: no interrupted A2-* work (colbert26, harley-287, na-raad-azie, fr2980-gramont, A2-DIN4) resumed.
+
+**Backlog rows:**
+1. NV-04 fr3984-sillery-1593 (fr.3984 f.198r = canvas 364): found-solved -- Tomokiyo league.htm no.98 prints the key no.40
+   decoding of all four cipher runs (NV04-CS 53e72bfc). NV-05 fr15575-syllabic-1592-95: leaves located (fr.15575 f.228 c235,
+   f.233 c240; fr.15576 f.2 c8), key no.54 transcribed from fr.3995 f.96v-97r (key_no54.tsv, H 94 M 16 I 5), known-answer
+   control fr.3641 f.111r 237/266 = 0.891 vs shuffled p99 0.263 PASS; but every target leaf carries its own period interlined
+   decipherment (fr.15576 f.2 is a different 3-digit system) -> VERIFY-NV05 AUDIT.md: all three N0, key period (90b8eca5).
+2. Dinteville fr.3623 f.23r first test: held -- DIN-23P measured 63 pct reader agreement; needs the owner's sign sorter
+   (ASKS 112) before any alignment (TRANSCRIPTION.md rule). Not run.
+3. TX benchmark (TXB2): +1 dev item dint-f128-print (85 scored); Sonnet passes A 0.353 / B 0.306 raw, 0.247 / 0.188 with the
+   new `tx_bench --label-map`; fr3416/fr3993 candidates skipped (no independent answer or no raw passes, reasons in file).
+4. fr17 re-judge (FR17-RJ2): none of the 12 remaining README-list targets has a committed reading of ours; list closed.
+5. next_steps / needs-triage: decode-1162-modena-ambung-1492 read under the decode-1168 period key (G 0.729 vs p99 0.525;
+   MOD1162B C 33 S 12 M 24) -- account 3 verified it (VERIFY-MOD1162, AUDIT 45826607) before MOD1162B's regrade: AUDIT grade
+   counts need propagating (flagged 14:57, rule 10). august-van-saksen-1561-64: 53 S 289 M 75 (AVS53 dictionary regrade),
+   126 C 234 M 6 (AVS-SPOT, AVS175/AVS175B; WVO 175 = 98 system). fr3151-seure-1558: item 44 clear vs item 43 cipher gate FAIL
+   (one sign = 0/1 letter; conditional on the span). fr15564-mercoeur-1586 f.151 (canvas f164): 220 signs, err_2reader 28.8
+   pct, homophonic too-short at measured noise, Lasry GL key no signal. 16 needs-triage targets check-solved (CS-BATCH1-6, Sonnet):
+   no found-solved; leads: sp87-newcastle code 101 = Bussy (Yorke 1913), sp81-wroth key enclosure (Wernham Analysis 331),
+   lambeth-bacon-649 Pott 1896 translation is an unprinted Bacon Society MS. TNA --notes sweep of SP 87/4, 87/32, 78/111: nothing.
+
+**Next (for whoever runs account 2 next):** grep Baconiana 1897-98 + Bacon Society Journal for Moresin (~USD 0.6);
+WVO 175 p1 remaining 11 lines for Qf/K (~USD 12, split into two jobs); Mercoeur f.151 only after a sorter-settled alphabet;
+fr.3623 f.23r after ASKS 112.
+
 ## LANE A2PUSH2 handoff (session_01GmMJKSeKv8ZnRBRDF99RSD, account 2), 3 October 2026, 04:09-05:30 UTC (interrupted: account 2 usage limit)
 
 Written by CLOSEOUT-A2 (account-3 in-session worker) at 09:3x UTC 3 Oct 2026 from git and ROOM.md only; the lane wrote
