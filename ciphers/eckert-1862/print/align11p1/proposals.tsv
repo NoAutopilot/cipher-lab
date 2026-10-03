@@ -1,0 +1,32 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+rampants	3	3	enemy	3	enemy:3	(the) enemy	agrees-key
+alden	5	2	banks	5	banks:5	Halleck/Banks	agrees-key
+humming	2	2	richmond	2	richmond:2	Richmond	agrees-key
+japan	2	2	manassas	2	manassas:2		propose
+alvords	1	1	wool	1	wool:1		single
+anthon	1	1	mcdowell	1	mcdowell:1	Banks/McDowell	agrees-key
+anthons	1	1	mcdowell	1	mcdowell:1		single
+arctic	1	1	fremont	1	fremont:1	Fremont	agrees-key
+are	1	1	is	1	is:1		single
+gem	1	1	baltimore	1	baltimore:1		single
+genoa	1	1	washington	1	washington:1	Washington	agrees-key
+has	1	1	have	1	have:1		single
+indus	1	1	fredericksburg	1	fredericksburg:1	Fredericksburg	agrees-key
+irving	1	1	yorktown	1	yorktown:1	Lincoln	conflicts-key
+jasper	1	1	winchester	1	winchester:1	Winchester	agrees-key
+limpid	1	1	potomac	1	potomac:1		single
+luna	1	1	shenandoah	1	shenandoah:1		single
+one	1	1	i	1	i:1		single
+pastor	1	1	battle	1	battle:1	St Louis	conflicts-key
+persian	1	1	army	1	army:1		single
+quack	1	1	cannon	1	cannon:1	Sigel	conflicts-key
+rampant	1	1	enemy	1	enemy:1	(the) enemy	agrees-key
+raven	2	1	defense	2	defense:2		single
+tarquin	1	1	movements	1	movements:1		single
+tarquins	1	1	movements	1	movements:1		single
+they	1	1	this	1	this:1		single
+utterly	1	1	entirely	1	entirely:1		single
+wafer	1	1	regiment	1	regiment:1	regiment	agrees-key
+wafers	1	1	regiment	1	regiment:1		single
+wedding	1	1	transportation	1	transportation:1	transportation/battle	agrees-key
+widow	2	1	telegraph	2	telegraph:2	reinforcements	conflicts-key

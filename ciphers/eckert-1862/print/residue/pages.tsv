@@ -1,12 +1,11 @@
 pointer	page	first_date	entries	C	I	M	oov	judge	score	real_p05	ready
-4960	Page_	01 Feb 1862	3	0	5	12	13	FAIL	-1.063	-0.856	
+4960	Page_	01 Feb 1862	3	0	9	8	13	FAIL	-1.063	-0.856	
 4961	Page_	02 Feb 1862	3	0	5	6	16	FAIL	-1.066	-0.868	
-4962	Page_	05 Feb 1862	2	1	2	4	15	FAIL	-1.01	-0.858	
+4962	Page_	05 Feb 1862	2	1	4	2	15	FAIL	-1.01	-0.858	
 4969	Page_	07 Feb 1862	4	15	2	7	29	FAIL	-1.142	-0.857	
 4972	Page_	08 Feb 1862	2	1	1	3	15	FAIL	-1.059	-0.87	
 4973	Page_	08 Feb 1862	3	2	2	5	19	FAIL	-1.027	-0.864	
 4975	Page_	09 Feb 1862	2	1	0	1	12	FAIL	-1.062	-0.882	
-4976	Page_	10 Feb 1862	2	8	0	0	10	FAIL	-0.995	-0.868	
 4978	Page_	11 Feb 1862	2	2	1	0	15	FAIL	-1.017	-0.868	
 4982	Page_	14 Feb 1862	3	8	3	11	10	FAIL	-0.965	-0.882	
 4983	Page_	14 Feb 1862	3	5	1	3	7	FAIL	-1.003	-0.861	
@@ -41,10 +40,10 @@ pointer	page	first_date	entries	C	I	M	oov	judge	score	real_p05	ready
 5031	Page_	27 Feb 1862	3	1	0	0	17	FAIL	-1.114	-0.858	
 5032	Page_	01 Mar 1862	2	2	0	2	12	FAIL	-1.036	-0.863	
 5035	Page_	03 Mar 1862	1	1	1	6	13	FAIL	-1.002	-0.881	
-5036	Page_	03 Mar 1862	3	0	0	4	17	FAIL	-1.099	-0.869	
+5036	Page_	03 Mar 1862	3	1	0	3	17	FAIL	-1.099	-0.869	
 5038	Page_	04 Mar 1862	1	0	0	0	16	FAIL	-0.941	-0.874	
 5039	Page_	05 Mar 1862	2	0	0	1	16	FAIL	-1.046	-0.886	
-5041	Page_	07 Mar 1862	3	0	0	3	22	FAIL	-1.012	-0.862	
+5041	Page_	07 Mar 1862	3	1	0	2	22	FAIL	-1.012	-0.862	
 5043	Page_	09 Mar 1862	2	0	0	2	26	FAIL	-1.121	-0.87	
 5044	Page_	09 Mar 1862	1	0	0	0	18	FAIL	-1.058	-0.878	
 5045	Page_	09 Mar 1862	2	0	0	0	23	FAIL	-1.187	-0.866	
@@ -52,7 +51,7 @@ pointer	page	first_date	entries	C	I	M	oov	judge	score	real_p05	ready
 5051	Page_	16 Mar 1862	3	2	0	0	21	FAIL	-1.223	-0.878	
 5054	Page_	21 Mar 1862	3	2	0	1	27	FAIL	-1.168	-0.859	
 5056	Page_	22 Mar 1862	2	1	0	2	20	FAIL	-0.961	-0.873	
-5059	Page_	29 Apr 1862	3	3	0	2	15	FAIL	-0.989	-0.865	
+5059	Page_	29 Apr 1862	3	3	0	2	15	FAIL	-0.985	-0.878	
 5102	Page_	05 Jul 1862	2	0	0	1	12	FAIL	-1.015	-0.86	
 5103	Page_	06 Jul 1862	1	1	0	1	16	FAIL	-0.952	-0.862	
-5104	Page_	13 Jul 1862	3	0	0	7	15	FAIL	-1.053	-0.879	
+5104	Page_	13 Jul 1862	3	2	0	5	15	FAIL	-1.053	-0.879	

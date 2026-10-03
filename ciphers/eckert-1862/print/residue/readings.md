@@ -6,9 +6,9 @@ image; code words in [brackets] read by key.md's dated rule, grade per pages.tsv
 The Huntington Library, San Marino, California. Telegrams in these pages were not found in OR ser. I vols. 7, 9-12 by
 print/or_match.py (GAPS113); that is a search result, not a novelty verdict (rule 10).
 
-Pages 57, entries 122; key.md tokens C 99, I 31, M 124; oov 860.
+Pages 56, entries 120; key.md tokens C 95, I 37, M 114; oov 850.
 
-Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 vs real_p05 -0.831, null_p99 -2.141 -> FAIL (N 35573); shuffled_key_full score -1.033 vs real_p05 -0.83, null_p99 -2.137 -> FAIL (N 33491); real_windows score -1.131 vs real_p05 -0.843, null_p99 -2.125 -> FAIL (N 6423); shuffled_key_windows score -1.129 vs real_p05 -0.844, null_p99 -2.123 -> FAIL (N 5422)
+Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 vs real_p05 -0.831, null_p99 -2.14 -> FAIL (N 34979); shuffled_key_full score -1.029 vs real_p05 -0.832, null_p99 -2.14 -> FAIL (N 33129); real_windows score -1.135 vs real_p05 -0.845, null_p99 -2.118 -> FAIL (N 6197); shuffled_key_windows score -1.108 vs real_p05 -0.842, null_p99 -2.115 -> FAIL (N 5264)
 
 ## 4960 Page_
 
@@ -61,12 +61,6 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 *09 Feb*  Major Gen John A Dix Feb 9 ' 62 Baltimore Please be in readiness to receive into your custody a prisoner by the early morning train in respect to whom if arrested instructions to you will be delivered by the officer in charge Please acknowledge the receipt of this message when received & postpone your visit to Washington until you hear again from me finis Edwin M Stanton Secy of War
 
 *09 Feb*  Brig Genl Buell Feby 9 " 62 Louisville Ky [(an officer, cavalry)] will be ordered to report to you the regulars at Camp Chase will be ordered to report to you at once would you wish to see me in person signed [McClellan] Tell Tyler send Blunderbuss
-
-## 4976 Page_
-
-*10 Feb*  Feb 10 ' 62 For [Hunter] and General Lane [Leavenworth] Gen Lane [Leavenworth] My wish has been & is to avail the Govt of the services of both [Hunter] & Gen Lane & so far as possible to personally oblige both [Hunter] is the senior officer & must command when they serve together though in so far as he can consistently with the public service & his own honor oblige Genl Lane he will also oblige me. If they can not come to an amicable understanding Genl Lane must report to [Hunter] for duty according to the rules or decline the service signed [Lincoln] Bush please send far as possible in cipher
-
-*10 Feb*  Feb 10th 62 [Halleck] The President this morning nominated to the senate E A Hitchcock to be Major General of Volunteers signed John G Nicolay Private Secretary
 
 ## 4978 Page_
 
@@ -346,7 +340,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 v
 
 *29 Apr*  Apl 29 1863 [McClellan] Would it damage or embarrass your operations if I were to appoint Capt Chas Griffin a Brigadier General of weigh Please answer Berlin
 
-*01 May*  May 1 1862 [Halleck] I am pressed by the Luna members of Congress to give Genl Schofield independent command in Luna They insist that for want of this their local troubles gradually grow worse I have forborne so far for fear of interfering with and embarrassing your operations Please answer telling me whether anything and what I can do for them without injuriously interfering with you signed [Lincoln] noon
+*01 May*  May 1 1862 [Banks] I am pressed by the Luna members of Congress to give Genl Schofield independent command in Luna They insist that for want of this their local troubles gradually grow worse I have forborne so far for fear of interfering with and embarrassing your operations Please answer telling me whether anything and what I can do for them without injuriously interfering with you signed [Lincoln] noon
 
 *01 May*  May 1 1862 [McClellan] Your call for Parrott guns from [Washington] alarms me chiefly because it argues indefinite procrastination is any thing to be done signed Berlin
 

@@ -1,0 +1,2 @@
+entries	fit_telegrams	test_telegrams	fit_words	test_hits	test_scored	real_acc	ctrl_hits_mean	ctrl_hits_p95	shuffles
+118	58	60	67	63	77	0.818	0.17	1	1000

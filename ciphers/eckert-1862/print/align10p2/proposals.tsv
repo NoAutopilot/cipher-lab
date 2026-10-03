@@ -1,0 +1,11 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+alden	2	2	halleck	2	halleck:2	Halleck/Banks	agrees-key
+lonesome	2	2	tennessee	2	tennessee:2	Tennessee	agrees-key
+alvord	2	1	buell	2	buell:2	Buell	agrees-key
+andes	2	1	mcclellan	2	mcclellan:2	McClellan	agrees-key
+him	1	1	you	1	you:1		single
+legend	1	1	kentucky	1	kentucky:1	Kentucky	agrees-key
+them	1	1	him	1	him:1		single
+whist	1	1	regiments	1	regiments:1	regiment(s)	conflicts-key
+yellow	1	1	ammunition	1	ammunition:1		single
+youth	1	1	arms	1	arms:1	arms	agrees-key
