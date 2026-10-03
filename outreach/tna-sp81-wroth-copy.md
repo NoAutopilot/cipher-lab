@@ -1,5 +1,5 @@
 status: drafted (A2P4-WROTH2, account 2, 3 Oct 2026 17:2x UTC); not sent, not paid, not queued
-checked: (pending OUT-CHECK)
+checked: A2P4-OUTCHECK (account 2, not the drafter), 3 Oct 2026 17:58 UTC. Re-read against TNA Discovery API details for C7771054/C7771077/C7771078/C7771051 (references, dates, descriptions, digitised false all match) and SP 81 searches for Wroth and Wrothe (4 items each, the same four); TNA fees page (page check £9.92, digital copy up to A3 £1.52, over A3 £11.95), record-copying page (Order a copy link, £9.92 non-refundable once begun, speculative enquiry may be unsuccessful, about 29 working days) and contact page (copy requests to the records-enquiry form, Live Chat Tue-Sat 09:00-17:00), all read 3 Oct 2026 HTTP 200; arithmetic (£29.76 + £9.12 = £38.88; item 1 £12.96) correct; Wernham quote, p. 29, vol. VII and the 2000 imprint verified by Google Books search-within on hG4pAAAAYAAJ; mailbox search for nationalarchives.gov.uk: no prior thread; disclosure in the free-text note's first sentence, voice per rule 1a correct. One correction: "fo. 226 is the older foliation of what TNA now numbers 239" was stated as fact; now marked as inferred.
 to: FORM: TNA record-copying "Order a copy" link at the bottom of each Discovery record page (route read on https://www.nationalarchives.gov.uk/help-with-your-research/record-copying/ , 3 Oct 2026 17:19 UTC, HTTP 200). No email address for copy orders: TNA's contact page (https://www.nationalarchives.gov.uk/contact-us/ , read 3 Oct 2026, HTTP 200) sends "requests for digital or paper copies of records" to the records-enquiry form https://www.nationalarchives.gov.uk/contact-us/make-a-records-and-research-enquiry/ , and Live Chat Tue-Sat 09:00-17:00.
 prior_contact: none found (searched the project mailbox, all folders, for nationalarchives.gov.uk, and CONTRIBUTIONS.md Recipient column for "National Archives"/TNA, 3 Oct 2026)
 subject: (none -- the order is placed record by record through Discovery; if the records-enquiry form is used instead: "Page check and digital copies: SP 81/7/239, SP 81/8/29, SP 81/8/31")
@@ -24,7 +24,8 @@ starts and may be unsuccessful if the enquiry is speculative. If only one item i
 Printed calendar line for item 1 (R. B. Wernham, *List and Analysis of State Papers, Foreign Series, Elizabeth I*,
 vol. VII, 1596, PRO 2000, p. 29, read as Google Books snippets of volume hG4pAAAAYAAJ, not a page image): "GS15
 Sept 7 John Wrothe to Cecil. Cassel fo. 226 Holograph. Enclosing key to a cipher. p. See Analysis 331." (fo. 226
-is the older foliation of what TNA now numbers 239.)
+appears to be the older foliation of what TNA now numbers 239: same writer, date and description; inferred,
+not checked against the volume.)
 
 ## Price (TNA's own fee page)
 
