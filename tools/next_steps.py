@@ -52,6 +52,19 @@ before truncation; `one_line()`'s output is kept only for the TSV's display colu
 `estimate_cost_band()`'s own docstrings for what each must catch and must not block (CLAUDE.md
 Usage 8a).
 
+Fixed 3 Oct 2026 (TOOL-NS2, flagged by GAPS144 on ciphers/thurloe-printed): once a folder carries
+rule 5's "## Remaining gaps" + "## Escalation" pair, the Escalation step bullets ("planned as the
+cheapest next step") matched the prose triggers and the whole Escalation block was quoted as the
+next step, burying the Verdict line that states the cheapest next step outright. `verdict_step()`
+now reads that Verdict with tools/gaps_check.py's own parser (`last_section` + `parse_escalation`
+on the LAST "## Escalation" section, falling back to a "Verdict:" line in the LAST "## Remaining
+gaps" section), and when one exists it wins over every prose trigger. Classification for a
+"parked" verdict also reads the Remaining gaps body, so its outside blockers (a LOCAL-QUEUE row, a
+missing image) still set the blocker class. Must catch: a thurloe-shaped NOTES with both sections
+-> next_step is the "Verdict: keep going: ...; cheapest next: ..." line. Must NOT change: a folder
+with no Remaining gaps/Escalation sections (or sections with no Verdict line) keeps the prose next
+step exactly as before. Both tested in tools/tests/test_next_steps.py.
+
 Usage:
   tools/next_steps.py [--ciphers-dir ciphers] [--ledger LEDGER.md] [--near NEAR.md] [--out NEXT-STEPS.tsv]
   tools/next_steps.py --check     exit nonzero if NEXT-STEPS.tsv on disk is stale against the folders
@@ -214,6 +227,27 @@ def extract_next_step(text):
     return match
 
 
+def verdict_step(text):
+    """(verdict_line, gaps_body) from rule 5's sections, parsed with tools/gaps_check.py's own
+    helpers, or ("", "") when the file carries no Verdict line in its last Escalation (or last
+    Remaining gaps) section. Imported lazily: gaps_check imports this module at load time."""
+    import gaps_check as gc
+    lines = gc.unfenced(text.splitlines())
+    gaps_body = gc.last_section(lines, gc.GAPS_HEAD)
+    esc_body = gc.last_section(lines, gc.ESC_HEAD)
+    verdict = None
+    if esc_body is not None:
+        _, verdict = gc.parse_escalation(esc_body, [])
+    if verdict is None and gaps_body is not None:
+        for line in gaps_body:
+            m = gc.VERDICT.match(line)
+            if m:
+                verdict = m.group("text").strip()
+    if not verdict:
+        return "", ""
+    return "Verdict: " + verdict, "\n".join(gaps_body or [])
+
+
 def extract_while_waiting(text):
     """The first bullet line of the newest '## While waiting' section in `text`, or "" when the
     file has no such section or the section carries no bullet.
@@ -330,13 +364,23 @@ def build_rows(ciphers_dir, ledger_text, near_text):
         status = first_status_word(text)
         if status not in TARGET_STATUSES:
             continue
-        block = extract_next_step(text)
-        next_step = one_line(block)
+        verdict, gaps_body = verdict_step(text)
+        if verdict:
+            # rule 5's Verdict line wins over Escalation text and older prose triggers (TOOL-NS2);
+            # a "parked" verdict names no step itself, so its gap lines carry the blocker keywords.
+            block = verdict
+            # whole line, not one_line()'s trigger-sentence pick, so "keep going: N" is never cut off
+            next_step = verdict if len(verdict) <= 200 else verdict[:199].rstrip() + "…"
+            class_text = verdict + ("\n" + gaps_body if re.match(r"Verdict:\s*parked", verdict, re.I) else "")
+        else:
+            block = extract_next_step(text)
+            next_step = one_line(block)
+            class_text = block
         # Classify on the FULL extracted block, before one_line()'s truncation -- a blocker
         # keyword past the truncation limit (CODEX-REVIEW-2026-09-27.md section 2) must still be
         # caught, and an empty block must still classify needs-triage/? rather than runnable/S.
-        blocker = classify_blocker(block)
-        cost_band = estimate_cost_band(block)
+        blocker = classify_blocker(class_text)
+        cost_band = estimate_cost_band(class_text)
         if blocker in PARALLEL_BLOCKERS:
             bullet = extract_while_waiting(text)
             parallel = one_line(bullet) if bullet else ""

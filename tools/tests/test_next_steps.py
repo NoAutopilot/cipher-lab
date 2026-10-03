@@ -422,3 +422,64 @@ def test_follow_up_label_heading_is_a_next_step():
     for prose in ("a narrower follow-up, not completed.", "follow-up pass with crop tooling",
                   "- Follow-up by hand (Google Books API)"):
         assert not ns.NEXT_STEP_RE.search(prose), prose
+
+
+# TOOL-NS2 (3 Oct 2026, flagged by GAPS144 on ciphers/thurloe-printed): rule 5's Verdict line wins.
+THURLOE_SHAPED_NOTES = """# thurloe-like fixture
+status: partial
+
+## s.20 (24 Sept 2026)
+
+Pages 188-189 on archive.org are the next step, and this brief did not allow fetching them.
+
+## Remaining gaps (GAPS-fixture, 3 Oct 2026)
+Read so far: 402 of 424 tokens at H or C (94.8%)
+- codes 143 and 70 - blocker: not-attempted; key image never compared; next: fetch stamford.jpg, ~$1.5
+- a contemporary decipherment - blocker: waiting-on LOCAL-QUEUE L45 and the Bodleian's reply
+
+## Escalation (GAPS-fixture, 3 Oct 2026)
+- [x] siblings: printed decipherments aligned (s.16)
+- [ ] known-keys: stamford.jpg not yet compared; planned as the cheapest next step
+- [x] clear-pages: clear text used as context
+- [x] print: phrase searches done (s.14)
+- [x] key-rebuild: rebuilt from siblings
+- [x] image-check: pages read from the image
+- [ ] retry: one-vote M boundary test, disk only
+Verdict: keep going: 1 internal gaps; cheapest next: fetch stamford.jpg and compare against key_stamford.tsv, ~$1.5
+"""
+
+PARKED_NOTES = THURLOE_SHAPED_NOTES.replace(
+    "Verdict: keep going: 1 internal gaps; cheapest next: fetch stamford.jpg and compare against key_stamford.tsv, ~$1.5",
+    "Verdict: parked: every gap has an outside blocker")
+
+
+def test_remaining_gaps_verdict_wins_over_escalation_and_prose(tmp_path):
+    """Must catch: a thurloe-shaped NOTES with Remaining gaps + Escalation -> the Verdict line is the
+    next step, not the Escalation block (which matched 'next step') nor the older s.20 prose."""
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "thurloe-like", THURLOE_SHAPED_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert len(rows) == 1
+    step = rows[0]["next_step"]
+    assert step.startswith("Verdict: keep going: 1 internal gaps; cheapest next: fetch stamford.jpg")
+    assert "Escalation" not in step and "archive.org" not in step
+    assert rows[0]["blocker"] == "runnable"
+
+
+def test_parked_verdict_classifies_from_gap_blockers(tmp_path):
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "parked-like", PARKED_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert rows[0]["next_step"] == "Verdict: parked: every gap has an outside blocker"
+    assert rows[0]["blocker"] == "needs-person"  # LOCAL-QUEUE L45 in the gap lines
+
+
+def test_no_remaining_gaps_keeps_prose_next_step(tmp_path):
+    """Must NOT change: a folder with no Remaining gaps / Escalation sections keeps its prose next
+    step exactly as extract_next_step() + one_line() gave it before TOOL-NS2."""
+    assert ns.verdict_step(RUNNABLE_NOTES) == ("", "")
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "some-target", RUNNABLE_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert rows[0]["next_step"] == ns.one_line(ns.extract_next_step(RUNNABLE_NOTES))
+    assert rows[0]["next_step"].startswith("Next step: cut fresh line crops")
