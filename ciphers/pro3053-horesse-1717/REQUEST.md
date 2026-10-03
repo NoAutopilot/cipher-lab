@@ -1,6 +1,8 @@
 # Copy request — TNA PRO 30/53/11/42, 43
 
-**Status:** waiting on you (a person needs to place/confirm this; not an archive-request draft an agent can
+**Status (3 Oct 2026, GF4-BATCH13):** moot for reading -- both letters are printed, cipher passage deciphered, in Montgomeryshire Collections vol. 20 (1886) pp. 73-76 (NOTES.md); an image would only check the 1886 transcription. Do not order for reading.
+
+**Former status:** waiting on you (a person needs to place/confirm this; not an archive-request draft an agent can
 send).
 
 **What to request:** page copies (photographs or scans) of both items in **The National Archives, Kew,

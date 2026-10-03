@@ -1,4 +1,5 @@
-open
+found-solved
+Printed with its cipher passage deciphered: "The Herbert MSS. at Powis Castle", *Collections Historical & Archaeological relating to Montgomeryshire* vol. 20 (Powys-land Club, 1886, extra volume), Part I Miscellaneous, nos. XLIII-XLIV, pp. 73-76 -- read in full by this worker from the archive.org djvu text (`collectionshist04unkngoog`), found by Google Books full-text search for "Horesse" (volume sdg4AQAAMAAJ, snippet "1717, December 4 Letter (partly in cipher) from \"Mrs Horesse\"").
 
 # Two letters to "Mrs Horesse" — TNA PRO 30/53/11/42, 43
 
@@ -96,3 +97,71 @@ Waits on: page copies of PRO 30/53/11/42 and /43 (REQUEST.md, since the 24 Sept 
 - M: read the note field of every item in PRO 30/53/11 individually by record id -- description-text search misses cipher marks -- tools/discovery_items.py.
 - S: confirm W. J. Smith's 1963 Herbert Correspondence table of contents actually stops before 1717; that is currently only inferred from the edition's title, not checked directly.
 - S: search 'Horesse' as a possible garbled name/code-name variant against the Herbert-family genealogy material already surfaced this pass.
+
+## Check-solved re-run (GF4-BATCH13, account-4, 3 Oct 2026)
+
+Gate fix: the 24 Sept verdict named no edition read. Re-run per `.claude/briefs/check-solved.md`.
+
+1. **Edition (found).** Google Books API (`q="Horesse"`, key + `country=US`) returned *The Montgomeryshire Collections* 1886
+   (sdg4AQAAMAAJ, N5ExAQAAIAAJ, 050MAAAAIAAJ), snippet: "1717, December 4 Letter (partly in cipher) from \"Mrs Horesse\"" with the
+   numeral groups "16:27:11 -- 18 : 11 : 27 : 21" beside it. The archive.org copy `collectionshist04unkngoog` (vol. 20, 1886,
+   "Being an extra volume, 'The Herbert MSS.' at Powis Castle, etc., presented by the President, the Earl of Powis") was read in
+   full text by this worker (djvu, grepped for Horesse/Horbu/partly in cipher/the numeral groups, then the pages read). It prints:
+   - **No. XLIII** (table of contents "1717, December 4. Letter (partly in cipher) from ---- to 'Mrs. Horesse'"), pp. 73-75: the
+     whole letter (dated "Decemb. 4th 1717", opening "I wrote to you last week upon my coming here...") with every cipher group
+     printed in place (e.g. "4 -- 18 : 23 : 7 : 15 : 11 : 5 : 21"), then a running decipherment of the cipher passages: "a subject
+     subj a princes is to be got, then is one sent to see two who are named and I doe not yet believe that y'e p's of is
+     impracticable who I confess I wish rather than any of y'e other two upon account of the good character she has besides a
+     fine person it will take two months att least before there can be any certainty as to any of y'm, but as things goe you may
+     be sure to hear from me ... friends subjects a prencess"; then "[On a detached paper.]" (p. 75) a short number-to-letter /
+     name table (OCR rough: "23:19:7:15:27:16 ... 54 D 15 A 98 ... 78 e"), and the address "To Mrs. Horesse". The cipher is a
+     numeral letter cipher (4 = a, 18 = s, 23 = u, 7 = b, 15 = j, 11 = e, 5 = c, 21 = t gives "subject" from the printed groups,
+     a check by eye of the printed gloss, not a reading of ours).
+   - **No. XLIV**, pp. 75-76: "1717, December 4. Letter from ---- to ----", "Decemb: 4th 1717. Madam, ..." (no signature, no
+     address) -- the same hand per TNA's /43 description; in clear except name-code numerals (37, 24, "15 : 98 w't 78", 97, 16,
+     43, 39, 31, 17), some of which the detached paper of no. XLIII glosses (15 = A, 98, 78); the rest are printed as numerals
+     with no gloss.
+   Match to the TNA items: same date, same recipient, "partly in cipher" (/42 note) and "letter in the same hand" (/43
+   description) follow the 1886 calendar's own wording; PRO 30/53 is the Herbert/Powis Castle collection the 1886 volume prints.
+   Context (inference, grade I, not checked further): written from the Stuart court at Urbino (Dec 1717; the letter calls it
+   "out of the world ... an uglier & duller place"), on the search for a princess for James III -- the courtier's identity and
+   the code names are left for any later reader.
+   HMC *Calendar of the Stuart Papers* vol. 5 (archive.org `calendarofstuart05grea`, covers 1 Sept 1717 - 28 Feb 1718) grepped
+   whole-volume for Horesse/Horess/"Mrs. Hor"/Powis and the 4 Dec 1717 entries (pp. 252-254) read: no copy of either letter, no
+   "Horesse" in the index (Herbert entries: Lady Mary, Thomas 8th Earl of Pembroke only). Vol. 6 (`calendarofstuart06grea`)
+   grepped: no Horesse.
+2. **Web.** WebSearch `"Mrs Horesse" 1717`; `"PRO 30/53/11" Herbert cipher 1717`; `Herbert Powis Jacobite letter December 1717
+   "partly in cipher" Horesse`; `"Horesse" Herbert papers National Archives letter` -- no hit on this item (genealogy, Hoover
+   papers, an unrelated PRO 30/53/5 catalogue page). No model-solve announcement.
+3. **Community lists, DECODE, Bourdeau, Aymeloglu.** As 24 Sept (no hit); not re-cloned this pass.
+
+**Verdict: found-solved, F1** -- the plaintext and the cipher groups of /42 have been in print since 1886 (Montgomeryshire
+Collections vol. 20 pp. 73-75), and /43 likewise (pp. 75-76, its name-code numerals only partly glossed); TNA's catalogue
+entries for PRO 30/53/11/42-43 do not cite the print, and our queue (N57) and the 24 Sept sweep did not know of it. What it
+leaves to hand on: the print citation for TNA's catalogue and for the list keeper; optionally a key table for the numeral
+cipher from the printed groups and gloss, and the unglossed name codes of /43 (37, 24, 97, 16, 43, 39, 31, 17), which are a
+small residual, not a reason to hold the folder open. REQUEST.md's copy order is moot for reading the text (the print has it);
+an image would only serve a check of the 1886 transcription. No cryptanalysis, no transcription done here.
+
+Requests: archive.org 9 (advancedsearch 4, djvu downloads 9 incl. one HTTP 500 on `collectionshist02unkngoog`, 1.6 s apart);
+googleapis.com 7 (1.6 s apart); WebSearch 4 + 3 blog-site searches (shared table below).
+
+## Web and blog check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- Plain web: `"Mrs Horesse" 1717` (no hit); `"PRO 30/53/11" Herbert cipher 1717` (one TNA catalogue page, PRO 30/53/5/108, 1623,
+  unrelated); `Herbert Powis Jacobite letter December 1717 "partly in cipher" Horesse` (Wikipedia Powis/Jacobite pages, no item);
+  `"Horesse" Herbert papers National Archives letter` (Hoover papers, unrelated).
+- Cipherbrain (site:scienceblogs.de, `Horesse 1717 Herbert cipher`): ten unrelated posts (Henry II device, Catinat, Yardley),
+  none names Horesse or the Herbert papers; no comment thread to read.
+- Cryptiana (site:cryptiana.blogspot.com / cryptiana.web.fc2.com, `Horesse Herbert 1717 cipher`): no results.
+- Cipher Mysteries (site:ciphermysteries.com, same query): La Buse, Beale, Voynich posts only; no hit on this item.
+- Result: no blog post or comment thread reads or mentions the item. The print hit came from Google Books, logged above.
+
+## Premise check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- (a) Folder's own files: NOTES.md and REQUEST.md mention no decipherment or clear copy -- not found (none was on file).
+- (b) Other solvers' working files: no folder for this item in Bourdeau's or Aymeloglu's repositories (24 Sept grep) -- not found.
+- (c) Physical neighbours: no image of the leaves is online (`digitised: false`); the printed neighbour is the find -- no. XLIII
+  carries its own "[On a detached paper.]" table (p. 75), the laid-in slip this check asks about. Found (in print).
+- (d) Recipient's side: the Powis/Herbert recipients' own printed papers are exactly the 1886 Montgomeryshire Collections
+  volume -- found. The Stuart court side (HMC Stuart Papers v-vi) -- not found.
