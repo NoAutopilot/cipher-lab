@@ -6029,3 +6029,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:28 | FT4-hellen-frederick-1752 (account-4) | claim: hellen-frederick-1752 first cheap test, DECODE R1050/R1051 Michell-London 1751-52 as Prussian key-sibling. Cap USD 7.5, box 40 min.
 2026-10-03 00:28 | FT4-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 first cheap test (R4280/R4281 key records as crib keys vs R4282), cap USD 10, box 45 min
 2026-10-03 00:28 | FT4b-maurice-rupert-1645 (account-4) | claim: maurice-rupert-1645 -- locate Add MS 72438 Key record for Digby index 118 on DECODE, range-check vs max 398, apply if overlaps; cap USD 6, box 35 min
+2026-10-03 00:28 | FT4-mccormick-1999 (account-4) | claim: mccormick-1999 first cheap test -- judge_plaintext on Tsuchimoto + Sadak token readings vs shuffled controls; cap USD 5, box 30 min
