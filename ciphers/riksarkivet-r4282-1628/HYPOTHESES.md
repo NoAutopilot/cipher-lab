@@ -104,3 +104,9 @@ Script: scripts/key4327_overlap.py (--check exits 0); numbers in key4327_overlap
 | wordcode, 8 rarest types as code signs (share 0.054) | same | blended 0.957; code class 0.000 (n=17); control code share 0.016 | not run | non-test: same |
 | count bound, n dedicated word-code types | n commonest la18 words coded in a spelt stream | Latin max share n=3 0.0079, n=8 0.0136, n=20 0.0218 | R4282 rarest-n share n=3 0.0110, n=8 0.0541, n=20 0.3367 | >= 3 dedicated code signs do not fit R4282's counts in Latin; untested-by-this-tool, not refuted |
 Scripts: gaps53/share_bound.py (--check exits 0); timing rows gaps53/control_calibration.md.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 08:35 | homophonic | N=1090 K=34 restarts=16 corpus=dieverhandlungen01irme.txt.gz+dieverhandlungen02irme.txt.gz+dieverhandlungen03irme.txt.gz+urkundenundacten1601berluoft.txt.gz+urkundenundacte32kommgoog.txt.gz profile=target,noise=0 | 1-5 | 0.974 (0.927-1.000) | not run (control-only) | - | yes | GAPS62 control, de17, noise 0 |
