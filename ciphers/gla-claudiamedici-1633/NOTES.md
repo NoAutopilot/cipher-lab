@@ -1,4 +1,5 @@
-open
+blocked
+GF4-BATCH16 (3 Oct 2026) could not open the edition: BAGK NF2 Bd.8 (Bierther 1982) is NO_PAGES on Google Books, so only its snippet index was searched ('Escher Kschw', 'Neuenburg Kschw Claudia', 'Ziffern Kschw Claudia': 0 hits); Ruppert, Die Kriegsereignisse im Breisgau 1632-1635 (1884, Google Books JDnaXqmSWR0C, full view) prints from Karlsruhe files but its page view is captcha-blocked from the cloud, so it was not read -- status blocked until a person reads Ruppert for 24 Jan / 23 Mar 1633.
 
 # Two enciphered letters, Erzherzogin Claudia de' Medici to Markgraf Wilhelm von Baden-Baden — GLA Karlsruhe
 
@@ -128,3 +129,76 @@ BAGK NF2 Bd.8 edition is separately blocked (no free route, NX-UNBLOCK 26 Sept 2
 - Read GLA Bestand 48's finding-aid text (the Baden cipher-key rubric, DA2, 1676-1761) for any item predating 1633 naming this pair -- catalogue-text only. S.
 - Queue the JSTOR phrase-only family (ii): a distinctive phrase quoted from the letter's own catalogue description, no cipher keyword -- only family (i), sender/date/keyword, has run so far (26 Sept 2026 runner). S, JSTOR-QUEUE.tsv row.
 - Run OpenAlex/Persée/HAL for "Claudia de' Medici" Baden-Baden 1633 diplomatic correspondence scholarship, beyond the generic WebSearch already tried. S.
+
+## Check-solved re-run (GF4-BATCH16, account-4, 3 Oct 2026)
+
+Status moved open -> blocked (CLAUDE.md Pipeline intake gate: an edition named but not opened is `blocked`).
+
+- **BAGK NF2 Bd.8 (Bierther 1982, Jan 1633-May 1634).** Still NO_PAGES on the Google Books API (`&country=US`, keyed),
+  but the API's snippet index answers for NO_PAGES volumes. Its returned snippets (e.g. "200. Maximilian an Erzherzogin
+  Claudia Bitte um Hilfe fuer Breisach und Konstanz", archive siglum "Kschw 7546") show the volume is built on the
+  Munich Kasten schwarz series, i.e. Maximilian's side, not the Ensisheim/Baden-Baden extradita at GLA. Searches
+  anchored to the volume by its own siglum: 'Escher Kschw Bierther' 0, 'Escher Kschw' 0 relevant (one Karlsruhe
+  address book), 'Neuenburg Kschw Claudia' 0, 'Ziffern Kschw Claudia' 0. This is a snippet-index search, not a read:
+  it does not show the volume omits the two letters, only that the index did not surface them.
+- **New lead, not readable from the cloud: Philipp Ruppert, *Die Kriegsereignisse im Breisgau von 1632 bis 1635 und
+  die erste Belagerung Breisachs* (1884; Google Books JDnaXqmSWR0C, viewability ALL_PAGES, no PDF).** Also serialised
+  in the Freiburg *Zeitschrift der Gesellschaft fuer Befoerderung der Geschichts-, Alterthums- und Volkskunde* (1883, 1887
+  volumes ALL_PAGES on Google Books; archive.org holds only 1869/1872/1874, `advancedsearch` title query 3 Oct 2026).
+  This is the regional history of exactly the Neuenburg/Breisach episode, written from the Karlsruhe files, and is the
+  closest thing to a standard edition for these two letters. Keyword snippet queries anchored by title ('Escher',
+  'Ziffern', 'chiffrirt', 'Neuenburg 24. Januar', 'Claudia Markgraf Wilhelm', '15000 Gulden', 'Geheimschrift',
+  'Karlsruhe Landesarchiv', each + intitle:kriegsereignisse intitle:Breisgau) all returned 0 items -- the API does not
+  search inside a single volume this way, so this is not a negative. books.google.com page/text view is
+  captcha-blocked from the cloud (host table). Needs a person: LOCAL-QUEUE-style read of Ruppert for the January and
+  March 1633 Claudia letters and whether any passage is said to be "in Ziffern"/deciphered.
+- **Secondary citation of the same correspondence:** *Protection royale* (1978; also Schriftenreihe der Vereinigung zur
+  Erforschung der Neueren Geschichte 1976), NO_PAGES, snippet: "... Baden an Erzherzogin Claudia, 1633 II 13 Karlsruhe GL[A]"
+  -- a modern scholar used the Baden-Claudia correspondence at GLA for Feb 1633. Not readable; noted for the verifier.
+- *Der Zug des Herzogs von Feria nach Deutschland im Jahre 1633* (1882, Google Books Aq-TyKCNLYsC, ALL_PAGES): snippet
+  names Markgraf Wilhelm and Claudia in 1633; same cloud block on page view.
+
+## Web and blog check (GF4-BATCH16, account-4, 3 Oct 2026)
+
+- Web: `"Claudia" Medici "Wilhelm" Baden-Baden 1633 Neuenburg Breisach chiffriert` -- biographies only (de/en Wikipedia,
+  fembio, LABW Findbuch 37), nothing on the letters.
+- Web: `GLA Karlsruhe 81 Nr. 442 Claudia Medici chiffriertes Schreiben` -- GLA home page, DDB item for an unrelated GLA
+  14/242, biographies; no hit on either shelfmark.
+- Web: `Claudia de' Medici cipher letter 1633 Baden-Baden decipher` -- Bourdeau's site index (no Claudia target; a fresh
+  clone of dbourdeau/cyphersolver at 841111b, 2 Oct 2026, has no target and no text naming Claudia/Baden-Baden/Neuenburg/
+  Escher von Binningen in any NOTES), Mary Stuart decipherment articles, Wikipedia; nothing on these letters.
+- Web (phrase): `"Escher von Binningen"` via Google Books (38 volumes: family histories, Ersch-Gruber, Oberbadisches
+  Geschlechterbuch) and `Kriegsereignisse Breisgau Escher Aldringen` (Waldkirch und das Elztal, 1989: Escher's 520 men
+  in Waldkirch, Feb 1633) -- context only, no letter text.
+- Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Claudia Medici OR Baden-Baden OR Tirol 1633` -- posts on
+  Barga, Kryptos, a 1645 encryption (Eine ungeloeste Verschluesselung aus dem Jahr 1645, a different item), nothing on
+  Claudia or Baden-Baden.
+- Cryptiana blog: `site:cryptiana.blogspot.com Claudia OR Tirol OR Innsbruck OR "Baden-Baden"` -- no cryptiana page
+  returned; local `sources/cryptiana/` already grepped 24 Sept, no hit.
+- Cipher Mysteries: `site:ciphermysteries.com Claudia Medici OR "Baden-Baden" OR Breisach` -- one Voynich post (Medici
+  bank in Bruges, comment), nothing on this item.
+- Aymeloglu: fresh clone of aaymeloglu/unsolved-ciphers at d2800bb (27 Sept 2026): no target, grep for
+  claudia|baden-baden|neuenburg|escher von: no hit.
+
+## Premise check (GF4-BATCH16, account-4, 3 Oct 2026)
+
+- (a) Folder's own mentions of a decipherment/gloss/clear copy: not found. NOTES.md and REQUEST.md mention none; the
+  LABW record for 813 says "zum Teil in Geheimschrift" (the letter itself).
+- (b) Other solvers' working files: not found -- neither repository has a target or a working file for this pair
+  (clones above).
+- (c) Physical neighbours: unreachable. No image of either item online (24 Sept plink check). The GLA signature search
+  for 81 Nr. 441, 443, 812, 814 resolves each unit (POST signatursuche.php, 3 Oct 2026) but the title text loads only in
+  the client-side Findbuch tree, so the neighbours' descriptions (a "Dechiffrierung" or Beilage) were not read.
+- (d) Recipient side: the recipient's archive is GLA itself; the recipient-side printed treatment is Ruppert 1884 /
+  the Freiburg Zeitschrift (above) -- found, unreadable from the cloud; a modern recipient-side citation (*Protection
+  royale*, 1978, "Baden an Erzherzogin Claudia, 1633 II 13") -- found, unreadable.
+
+Host requests: googleapis.com 25 (>=2 s apart), archive.org 3 (advancedsearch 2, be-api 4 incl. one test; 1.5-2 s),
+www2.landesarchiv-bw.de 7 (2 s), github.com 2 clones, WebSearch 6.
+
+## While waiting (GF4-BATCH16, account-4, 3 Oct 2026)
+
+Waits on a person reading Ruppert 1884 (Google Books JDnaXqmSWR0C) and on the GLA copy order (REQUEST.md).
+- Action that depends on nobody: fetch the GLA Findbuch 81 tree page for 81 Nr. 441-443 and 812-814 with
+`tools/browser_fetch.js` (the title text is client-rendered) and read the neighbours' descriptions for a
+decipherment, Beilage or Duplikat. S.
