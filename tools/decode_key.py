@@ -93,6 +93,15 @@ GRADES = 'HCSMIU'
 DEFAULT_UNCERTAIN = ['M', 'm', 'L', 'l', 'low', '?']
 
 
+def is_comment(line):
+    """A comment line is '#' alone, '# ...' (hash + space) or '##...'. It catches the repo's comment and
+    '# name<TAB>name' header lines. It must NOT catch a row whose first cell is a cipher sign written with '#':
+    '#<TAB>a' (fr3621-dinteville-1592), "#'<TAB>l'Empereur" and '#~<TAB>...' (tools/keys/key60.tsv) are data.
+    Before 3 Oct 2026 (TOOL-DK-HASH) every line starting with '#' was skipped, so those signs decoded as U."""
+    s = line.rstrip('\r\n')
+    return s.startswith('#') and (len(s) == 1 or s[1] in ' #')
+
+
 def data_lines(path):
     """Non-comment lines split on tabs; the last '# a<TAB>b' comment before data counts as a header."""
     header, out = None, []
@@ -100,7 +109,7 @@ def data_lines(path):
         s = l.rstrip('\n')
         if not s.strip():
             continue
-        if s.startswith('#'):
+        if is_comment(s):
             c = s.lstrip('#').strip()
             if '\t' in c and not out:
                 header = c.split('\t')
@@ -136,7 +145,7 @@ def clear_word(t):
 
 def detect_format(path):
     for l in open(path, encoding='utf-8'):
-        if not l.strip() or l.startswith('#'):
+        if not l.strip() or is_comment(l):
             continue
         if '|' in l.split('\t')[0] and re.match(r'^\S+( \S+)? \|', l):
             return 'pipe'
@@ -150,7 +159,7 @@ def detect_format(path):
 def load_pipe(path, job):
     recs = []
     for l in open(path, encoding='utf-8'):
-        if not l.strip() or l.startswith('#'):
+        if not l.strip() or is_comment(l):
             continue
         head, body = l.split('|', 1)
         hp = head.split()
@@ -204,7 +213,7 @@ def load_tsv(path, job):
 def load_rows(path, job):
     recs = []
     for l in open(path, encoding='utf-8'):
-        if l.startswith('#') or not l.strip():
+        if is_comment(l) or not l.strip():
             continue
         p = l.rstrip('\n').split('\t') + ['', '']
         ln, toks, graw = p[0], p[1].split(), p[2]

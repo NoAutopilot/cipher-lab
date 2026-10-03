@@ -111,5 +111,25 @@ try:
 finally:
     shutil.rmtree(tmp3)
 
+# '#' as a cipher sign (TOOL-DK-HASH, 3 Oct 2026): '#<TAB>a' is a key row, '# note' and '##' are comments
+tmp4 = tempfile.mkdtemp()
+try:
+    open(os.path.join(tmp4, 'key.tsv'), 'w').write(
+        '# sign\tvalue\n## a comment\n#\n# another comment\n#\ta\n#~\tb\n7\tc\n')
+    open(os.path.join(tmp4, 'ciphertext.tsv'), 'w').write(
+        'line\tposition\tsign\tconfidence\nr01\t1\t#\tH\nr01\t2\t#~\tH\nr01\t3\t7\tH\n')
+    job = {'format': 'tsv'}
+    outputs, cnt, ct = decode_key.run_job(tmp4, job)
+    toks = outputs['reading_tokens.tsv']
+    hdr, rows = decode_key.data_lines(os.path.join(tmp4, 'key.tsv'))
+    ok = (hdr == ['sign', 'value'] and [r[0] for r in rows] == ['#', '#~', '7']
+          and '\tU' not in toks and toks.count('\tH') >= 3
+          and all(decode_key.is_comment(c) for c in ('#', '# x', '##', '#\n'))
+          and not any(decode_key.is_comment(c) for c in ('#\ta', "#'\tl'Empereur", '#~\tb', 'a#')))
+    fails += not ok
+    print('PASS' if ok else 'FAIL', "'#' sign rows decode; '# ...', '##' and bare '#' lines stay comments")
+finally:
+    shutil.rmtree(tmp4)
+
 print('decode_key:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)
