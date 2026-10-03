@@ -1,0 +1,26 @@
+metric	value
+S_real	0.4302
+matched	37
+scored_tokens	86
+letter_agreement_real	0.5707
+control_draws	1000
+control_seed	1
+control_mean	0.1162
+control_p99	0.1860
+control_max	0.2209
+control_ge_real	0
+gate	FAIL
+line_L01	10/20 tokens; 26/48 gloss letters
+line_L02	15/20 tokens; 35/58 gloss letters
+line_L03	4/21 tokens; 19/45 gloss letters
+line_L04	8/25 tokens; 25/33 gloss letters
+judge_letters	177
+judge_score_real	-1.229
+judge_null_p99	-1.817
+judge_real_p05	-0.915
+judge_verdict_real	FAIL
+judge_valueshuffled_mean	-1.816
+judge_valueshuffled_pass	0/200
+judge_valueshuffled_ge_real	0/200
+judge_ordershuffled_mean	-1.306
+judge_ordershuffled_pass	0/20

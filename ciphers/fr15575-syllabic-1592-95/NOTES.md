@@ -79,7 +79,7 @@ Read so far: 0 of 3 leaves (no transcription). Leaves located NV05B 3 Oct 2026 (
 - edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
 - key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; NV05B transcribed only the syllabary and header signs (key_no54.tsv, H 94 / M 16 / I 5) within its cap; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
 - target decode fr.15576 f.2 - blocker: not-attempted; NV05D premise test P1 FAILed (the leaf is a 3-digit numeric cipher, K = 0/64 groups in the no.54 syllabary) and the leaf carries a period interlined decipherment; next: transcribe the interlined gloss + the ~25 cipher lines (iiif_lines.py crops, 2 blind passes per batch for cipher and 1 gloss read, + reconcile) and align with tools/interlinear_align.py to rebuild the 3-digit table (grade C), ~$8
-- fr.15575 f.228, f.233 cipher runs - blocker: not-attempted; which system they use is not yet seen at native resolution; next: one native crop each to see whether their groups are 2-digit (no.54 syllabary, decode_key) or 3-digit (the f.2 system), ~$1.5 each
+- fr.15575 f.228 L05-L47 and f.233 (both 2-digit no.54 syllabary with a period interlined decipherment, NV05E) - blocker: not-attempted; f.228 L01-L04 decoded (S 77 M 9 U 49) and scored against the gloss: S 0.430 vs shuffled p99 0.186, gate FAIL on the 0.60 floor, diagnosed as an incomplete gloss read (f228/, NOTES NV05E); next: re-read the L01-L04 gloss full-width (prereg addendum, ~$1.5), then further 4-line batches of f.228 and f.233 (crops + 2 cipher passes + 1 gloss read + reconcile), ~$6 per batch
 
 ## Escalation (NV05-CS, 3 Oct 2026)
 
@@ -90,7 +90,7 @@ Read so far: 0 of 3 leaves (no transcription). Leaves located NV05B 3 Oct 2026 (
 - [n/a] key-rebuild: the period key sheet exists, rebuild not needed yet
 - [x] image-check: native corner crops of the five candidate openings read (NV05B): canvases 235, 240, 8 carry the leaves
 - [n/a] retry: nothing has been attempted yet to retry
-Verdict: keep going: 3 internal gaps; cheapest next: fr.15576 f.2 gloss + cipher transcription and interlinear alignment (~$8, grade C, period known plaintext on the leaf); then one native crop each of fr.15575 f.228/f.233 to see which system they use (~$3); the no.54 nomenclator (~$6) only for leaves in the 2-digit system
+Verdict: keep going: 3 internal gaps; cheapest next: f.228 L01-L04 full-width gloss re-read and re-score (~$1.5, NV05E); then fr.15576 f.2 gloss + cipher transcription and interlinear alignment (~$8, grade C); then f.228/f.233 4-line batches against their own glosses (~$6 each); the no.54 nomenclator (~$6) for the code-word groups
 
 ## While waiting
 
@@ -292,3 +292,101 @@ royal army in France); it is consistent with the leaf being that dispatch, not p
 **Not done:** no decode; lines L05 onward, the 5-line top block, the gloss transcription. Requests: gallica.bnf.fr 7
 (1 overview + 1 info.json + 1 test crop + 1 native region + 1 recheck crop of f8, 1 overview of fr.3995 f188, the
 iiif_lines fetch counted in the native region). Next: see Verdict above (gloss alignment, grade C, ~$8).
+
+## fr.15575 f.228 decode with key no.54 (NV05E, account-2 worker, LANE-A2PUSH3, 3 Oct 2026 15:17-15:2x UTC)
+
+Folder `f228/`. Intake gate re-run first:
+
+    $ python3 tools/intake_gate_check.py fr15575-syllabic-1592-95
+    fr15575-syllabic-1592-95: blocked (line 1) -- already terminal, nothing to gate
+    exit 0
+
+**What the leaf is** (one 1600 px overview of canvas f235 and one 1600 px rendering of the crop source region, both
+disclosed in the prereg): the recto is almost all digit cipher, ~47 lines, 2-digit codes written run together
+("4873 4689"), with letter signs, dots and colons between, and a faint **period interlined decipherment** above every
+cipher line seen. So the plaintext of f.228 exists on the leaf (the clerk's gloss); this job scored the no.54 decode
+against that gloss, as NV05C did on fr.3641 -- a second known-answer test of the key and a reading aid, not a recovery
+of unknown plaintext. Pre-registration `f228/PREREG.md` (commit 15c16dc3, with the crops and judge spec) before any pass.
+Scope fixed there: batch B1 = L01-L04 only (one batch = 4 units, about 80 pct of the cap with overhead).
+
+**Crops** (TRANSCRIPTION.md; run before any vision call):
+
+    $ python3 tools/iiif_lines.py --ark btv1b90637788 --canvas 235 --region 5250,740,3700,600 \
+        --out ciphers/fr15575-syllabic-1592-95/f228/images --prefix f228 --centres 104,231,358,486 \
+        --lines-per-crop 1 --max-width 1900 --overlap 150 --top-margin 100 --bottom-margin 40 --debug
+    ... region 3700x600, 4 lines, 4 bands x 3 segments ... wrote 12 crops
+
+**Reads.** Two blind Sonnet passes of the cipher lines (passA.tsv, passB.tsv) and one Sonnet read of the gloss
+(passG_gloss_raw.tsv -> gloss.tsv: G's "rule-conformant" lines, "qȷ" written q, nothing else changed), one call each on
+the 12 crops. err_2reader = 13/152 tokens = 0.086 (agreement of two runs of one model, not accuracy). Disclosure: the
+prereg said disagreements would be settled before the worker opened G's output; G's report reached the worker's context
+on completion, before reconciliation. The five settled spots were decided from glyph shape on the crops: L01 `44527`
+(A; B 44522?), the hook `(` before 198921 (neither pass), L02 `23 7¨ 23` (a 7 with a diaeresis, a marked numeral; A
+"237 7?", B "237 ¨"), L03 no dot before 68 (A), L03 `48` (A; B q8) -- all graded M. Signs read: 149 tokens (~250 digits
+and signs). Cost per 100 signs: the orchestrator's get_session figure / 2.5.
+Reconciled lines and tokeniser: `f228/build_ciphertext.py` -> `f228/ciphertext.tsv` (`--check`).
+
+**Decode** (`python3 tools/decode_key.py ciphers/fr15575-syllabic-1592-95/f228`, decode.json, key_syllabary.tsv = the 95
+coded rows of key_no54.tsv unedited; `--check` exit 0; `--split-check`: 27 flagged token types, 0 with a candidate split,
+all non-code signs). Grades per rule 4, reported in the brief's scheme (syllables applied from the period key sheet are S,
+control-backed by NV05C; decode_key labels them H after its key file): tokens 135: **S 77, M 9, I 0, U 49** (U = letter
+signs, marks and code-word groups outside the syllabary).
+
+    L01	ta ta [:] de [se] [9] [i] [^] ue ra po [y] lo [fel] [^] hu iy [7] ha [(] ca ua do su le ga [:] to do lo que [^] [/]
+    L02	pa [:] ti [n] ro [fq] que [nh] de [7] [¨] de [v] tu be [q] lo [^] que ui ni [n] ro [x] po [y] la ma co [nol] iu [e] ba di
+    L03	ua ne ga [qnh] [dol] da ie xo [9] po te ra [far] [v] da ma ni do [^] [L] lo que le ua lo [^] de [ca] [n] [^] de su [^]
+    L04	ta ci [c] que si co mi sa ge pu di [n] ra mu da [:] la la ue [:] ti [n] ra po [y] [n] lo ta de [moe] ga na [sc] po [y]
+
+With the header letter signs of key_no54.tsv (`:` and `y` = r, `n` = e, `.` = n) the runs read e.g. "ta[n] ta[r]de",
+"[a]cava do ... llega[r] todos los que", "pa[r]ti[e]ro[n] ... de 7 de ... los que vinie[ro]n po[r] la ma[r] co[n]",
+"...pudi[e]ra muda[r]la ... ti[e]rra po[r] lo ta[n]to de ... gana" -- the letter-sign values are read off the key
+header by the worker, not scored.
+
+**Score** (`python3 f228/score_f228.py`, score.tsv; `--check`; statistic imported from control_fr3641/score_control.py):
+
+| statistic | real key | value-shuffled control (1000, seed 1) |
+|---|---|---|
+| S (scored codes matching the gloss) | **0.430** (37 / 86) | mean 0.116, p99 0.186, max 0.221; 0 / 1000 >= real |
+| letter agreement (secondary) | 0.571 | -- |
+
+**Gate: FAIL** as pre-registered (S > p99 holds, S >= 0.60 does not). Per line: L01 10/20, L02 15/20, L03 4/21, L04 8/25.
+Diagnosis: the gloss read, not the key. G called its own read "low-confidence throughout (very faint hand)", and on the
+crops the gloss runs further than G transcribed: L01's gloss starts "[..] tarde como vs [..]" before "por los despachos"
+(G omits it; the decode's "ta[n] ta[r]de" has nothing to match), L03's gloss continues on the right "lo que bivan los
+deach[..]" (G stops at "bien mandados"; the decode's "lo que le ua lo" falls there), and L04's gloss reads on the crop
+"... por ello tan de buena gana como por" where G has "taustora" (decode "po[r] lo ta[n]to de ... gana"). L02, whose gloss G
+read in full, matches 15/20. These are the worker's looks at the crops after scoring, not a re-score; the gate stands as
+FAIL. Next: a second gloss read of L01-L04 (and of any next batch) by a pass told the gloss spans the full line width,
+pre-registered as an addendum before re-scoring, ~$1.5.
+
+**Language judge** (`tools/judge_plaintext.py` statistic via `f228/judge_spec.json`, corpus es17 = Cervantes + Quevedo,
+nearest Spanish on disk, NOT 1590s-matched and literary, not epistolary -- rule 3 era paragraph; the judged string is the
+syllable values only, letter signs dropped, 177 letters):
+
+| | real decode | value-shuffled key (200, seed 2) | token order shuffled per line (20, seed 3) |
+|---|---|---|---|
+| mean log10 4-gram/letter | -1.229 | mean -1.816; 0/200 >= real | mean -1.306 |
+| PASS (> null p99 -1.817 and > real p05 -0.915) | FAIL | 0/200 | 0/20 |
+
+FAIL on the real decode, expected for syllable fragments with the letter signs dropped (prereg); the order-shuffled decode
+does not PASS, so the judge is not voided (ARM-C1), but at this length it cannot separate a right decode (-1.229) from its
+own order shuffle (-1.306) and is not a test here. The known-answer comparison above is the test.
+
+**Who, when, to whom.** No date, sender or recipient was legible in the crops read (L01-L04 only). The top-left of the leaf
+carries a note read at 1600 px as "dupp.^da" (likely "duplicada", a duplicate copy; M, not checked at native resolution).
+The text concerns dispatches arriving late, those that left before the one "of 7 [month: G read 'abril', the worker's
+pre-prereg look read 'otubre']" and those that came by sea with "don Juan" -- not enough to name the writer.
+
+**English gist (interpretation, not a reading; from the gloss as read and the decode together, L01-L04 only):**
+"[Sire,] so late ... the dispatches have at last finished arriving, all those that left before the one of the 7th [of
+October or April], and those that came by sea with don Juan [...]; [...] so that I might change it [...] by land(?);
+and therefore [I do it] gladly ...".
+
+**fr.15575 f.233 (canvas f240), overview only, nothing transcribed.** The 1600 px overview shows the recto fully in digit
+cipher of the same look (2-digit runs, letter groups such as "sel", "gam", "hum", "pal") with a faint interlined
+decipherment over the lines, and the address panel on the facing page reading approximately "Al Conde de Castel R[..] /
+[..] del cons^o de [..]" (M, 1600 px only; the recipient is not settled). Since f.233 carries its own gloss too, its next
+step is the same as f.228's: crops + 2 cipher passes + gloss read + score against the gloss, ~$6 per 4-line batch.
+
+Requests: gallica.bnf.fr 3 (2 overviews at 1600 px, canvases 235 and 240; 1 native region fetched once by iiif_lines.py,
+a first dry-run region fetched once and not used). Not done: L05 onward of f.228, any f.233 transcription.
