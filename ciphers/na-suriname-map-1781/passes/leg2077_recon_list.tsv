@@ -1,0 +1,75 @@
+crop	pos	context	optionA	optionB
+leg77_L01	4	S c [delta] [h-loop] {?} l [psi] [dot] [lambda]	[ezh-dot]	[ezh]
+leg77_L01	7	[h-loop] [ezh-dot] l [psi] {?} [lambda] [x-dots] p r	-	[dot]
+leg77_L01	17	[delta] [h-loop] w 3 {?} a l 6 m	[4-bowl]	[q-bar]
+leg77_L01	27	w p [h-loop] [lambda] {?} [pi]	-	[dot]
+leg77_L02	5	[hash] [kappa] x g {?} [dot] [lambda] [psi] 3	[sigma]	6
+leg77_L02	17	[psi] 3 a v {?} [r-rot] o [lambda] [dot]	[d-hook]	[d-loop]
+leg77_L02	24	[lambda] [dot] r [d-loop] {?} g [f-loop] l 5	r	[r-rot]
+leg77_L02	29	g [f-loop] l 5 {?} l v 3 l	a	[delta]
+leg77_L03	0	{?} [f-loop] 3 c [psi]	[d-hook]	[d-loop]
+leg77_L03	1	[d-hook] {?} 3 c [psi] [lambda]	[f-loop]	[s-loop]
+leg77_L03	3	[d-hook] [f-loop] 3 {?} [psi] [lambda] a g	c	[sigma]
+leg77_L03	15	6 m g [lambda] {?} [delta] l 6 [d-loop]	[delta-dot]	[sigma-dot]
+leg77_L03	16	m g [lambda] [delta-dot] {?} l 6 [d-loop] 3	-	[delta]
+leg77_L05	4	<a> [lambda] g [hash] {?} e 3 o l	s	[r-rot]
+leg77_L05	9	e 3 o l {?} [u-dots] a [h-loop] [lambda]	r	[r-rot]
+leg77_L05	18	<b> [u-dots] [delta] g {?} g [delta] [?] t	x	[x-dots]
+leg77_L05	20	[delta] g x g {?} [?] t l s	[delta]	[a-bar]
+leg77_L05	21	g x g [delta] {?} t l s [delta]	[?]	[c-curl]
+leg77_L05	24	[delta] [?] t l {?} [delta] [h-loop] [dot] [lambda]	s	5
+leg77_L05	56	[psi] [lambda] [delta] g {?} l b [pi] 3	[ezh-dot]	[r-rot]
+leg77_L05	63	[pi] 3 [lambda] [psi] {?} [f-loop] 5 t 6	s	[sigma]
+leg77_L05	64	3 [lambda] [psi] s {?} 5 t 6	[f-loop]	[s-loop]
+leg77_L05	65	[lambda] [psi] s [f-loop] {?} t 6	5	3
+leg77_L06	5	[h-loop] 3 a g {?} o s [f-loop] e	r	[r-rot]
+leg77_L06	7	a g r o {?} [f-loop] e t 6	s	[sigma]
+leg77_L06	8	g r o s {?} e t 6 [r-rot]	[f-loop]	[s-loop]
+leg77_L06	34	e 3 l [h-loop] {?} [d-hook] g 3 o	r	[r-rot]
+leg77_L06	35	3 l [h-loop] r {?} g 3 o [?]	[d-hook]	[d-dots]
+leg77_L06	39	[d-hook] g 3 o {?} s t 6 3	[?]	[sigma]
+leg77_L06	40	g 3 o [?] {?} t 6 3 l	s	[s-loop]
+leg77_L07	16	<Ambagts> <Slaaven> <van> <de> {?}	<Mon.>	<Mon>
+leg77_L08	0	{?} <Kamer> <i> [u-dots] [delta]	<,,teerings>	<teerings>
+leg77_L08	6	<i> [u-dots] [delta] g {?} [psi] t [h-loop] 3	x	[x-dots]
+leg77_L08	23	a [psi] <k> v {?} [lambda] [hash] 3 [delta]	3	[sigma]
+leg77_L08	38	o m [delta] g {?} 3 [h-loop] <l> 4	3	[sigma]
+leg77_L08	50	3 o [u-dots] [hash] {?} g [r-rot] <m> 4	[delta]	[pi]
+leg77_L09	1	l {?} [h-loop] g 5 [delta]	s	[sigma]
+leg77_L09	37	g 5 t 6 {?} [hash] r	[delta]	[lambda]
+leg77_L10	5	[lambda] m [h-loop] l {?} a [u-dots] [r-rot] l	[?]	[s-dot]
+leg77_L10	19	x [lambda] 3 o {?} [hash] [kappa] o 4	3	[d-loop]
+leg77_L10	29	p r [u-dots] [hash] {?} g [r-rot] <p> [c-curl]	[delta]	[pi]
+leg77_L10	45	6 v [r-rot] [w-tilde] {?} [psi] [lambda] a g	3	[sigma]
+leg77_L10	46	v [r-rot] [w-tilde] 3 {?} [lambda] a g [d-hook]	[psi]	[c-curl]
+leg77_L10	50	[psi] [lambda] a g {?} [hash] s 4 3	[d-hook]	[d-dot]
+leg77_L10	52	a g [d-hook] [hash] {?} 4 3 l <q>	s	5
+leg77_L10	66	c 3 o m {?} <,,>	[?]	[sigma]
+leg77_L11	17	[lambda] 3 a o {?} [h-loop] g [psi] b	3	[sigma]
+leg77_L11	41	[dot] [delta] w [f-loop] {?} v x [h-loop] [lambda]	6	[sigma]
+leg77_L11	60	l 6 [psi] [c-curl] {?} [f-loop] o t s	s	[s-loop]
+leg77_L11	61	6 [psi] [c-curl] s {?} o t s 3	[f-loop]	-
+leg77_L12	4	<seer> <defect> <gebouw> <s> {?} <de> <garde> <t> [d-loop]	<Cörps>	<Cöps>
+leg77_L12	21	b [dot] v 3 {?} r [c-curl] [lambda] <u>	[Q-bar]	[phi]
+leg77_L13	11	<berging> <van> <hout> <materialien> {?} <w> <gevangenhuÿsen> <x> <nog>	<&:>	<N:o>
+leg77_L14	0	{?} <dienende> <tot> [hash] g	<gebouw,>	<gebouw>
+leg77_L14	9	t [u-dots] [delta] g {?} [psi] t l [amp]	x	[x-dots]
+leg77_L14	40	[r-rot] v a o {?} [h-loop] 3 [delta] [h-loop]	6	[d-hook]
+leg77_L14	42	a o 6 [h-loop] {?} [delta] [h-loop] [lambda]	3	[sigma]
+leg77_L15	7	[delta] [psi] t [h-loop] {?} p l [hash] [pi]	5	[sigma]
+leg77_L16	0	{?} 4 8 [h-loop] b	<,,>	-
+leg77_L17	1	<z.> {?} <woning> <α.> <Smeederÿ> <heel>	<Cipiers=wooning>	<Cipiers>
+leg77_L17	2	<z.> <Cipiers=wooning> {?} <α.> <Smeederÿ> <heel> <defect>	-	<woning>
+leg77_L17	7	<α.> <Smeederÿ> <heel> <defect> {?} <eene> <oude>	<@>	<[c-at]>
+leg77_L18	1	<kalkloots> {?} [hand-box] [u-dots] [delta] g	<γ.>	<y.>
+leg77_L18	2	<kalkloots> <γ.> {?} [u-dots] [delta] g x	[hand-box]	[MM]
+leg77_L18	29	[d-loop] a o g {?} [h-loop] g 5 [delta]	3	[sigma]
+leg77_L19	2	[d-loop] o {?} l [lambda] [psi] s	3	[sigma]
+leg77_L19	6	3 l [lambda] [psi] {?} 5 t [lambda] 3	s	[sigma]
+leg77_L19	22	o a [d-loop] o {?} [delta] [h-loop] [lambda] [u-dots]	3	[sigma]
+leg77_L19	23	a [d-loop] o 3 {?} [h-loop] [lambda] [u-dots] [delta]	[delta]	-
+leg77_L19	28	[h-loop] [lambda] [u-dots] [delta] {?} [c-curl] 3 m l	-	[psi]
+leg77_L19	30	[u-dots] [delta] [psi] [c-curl] {?} m l [r-rot] [psi]	3	-
+leg77_L19	35	m l [r-rot] [psi] {?} <Citerne.>	<η.>	<ŋ.>
+leg77_L19	36	l [r-rot] [psi] <η.> {?}	<Citerne.>	<Citerne>
+leg77_L20	8	[kappa] 6 [f-loop] [lambda] {?} 3 v 3 o	s	3

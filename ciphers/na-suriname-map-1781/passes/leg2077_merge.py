@@ -4,7 +4,13 @@
 import csv,difflib,sys
 # reader-name unification: filled in after reading both files (a pairing is applied only if it is consistent through both
 # files, rule 3 notation lesson; listed in NOTES.md GAPS19); plain numbers lose a trailing period (<24.> = <24>)
-NORM={}
+# Applied (GAPS19, after reading both files; each pairing one-to-one through both files): A 7 = B [r-rot] (24/24 of A's 7),
+# A k = B [kappa] (9/9), A [v-tall] = B [c-curl] (6 of 7), A ' = B [dot] (8/8), A [et] = B [amp] (5/5). Unified to B's NEUTRAL
+# names so no key value is implied; whether [r-rot]/[kappa]/[c-curl] are the key's 7 / k / tall v is put to the blind reconciler
+# as NAME rows, and NAMEFINAL below records its answer.
+NORM={'7':'[r-rot]','k':'[kappa]','[v-tall]':'[c-curl]',"'":'[dot]','[et]':'[amp]'}
+NAMEFINAL={}
+NORM={a:NAMEFINAL.get(b,b) for a,b in NORM.items()}; NORM.update(NAMEFINAL)
 def toks_of(g):
     out=[]
     for t in g.replace('/',' ').split():
