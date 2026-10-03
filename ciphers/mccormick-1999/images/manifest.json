@@ -1,0 +1,50 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "note2_l10_L01.jpg",
+   "source_url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2013/08/Mccormick-2.jpg",
+   "source_file": "note2_schmeh2013.jpg",
+   "box": [
+    0,
+    270,
+    500,
+    312
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     20
+    ]
+   },
+   "date": "03 Oct 2026",
+   "note": "note 2 line 10 (\"26 MLSE ... 175 RTRSE\"), centre given by eye after the auto profile mis-split the 500 px scan"
+  }
+ ],
+ "source_images": [
+  {
+   "file": "note2_schmeh2013.jpg",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2013/08/Mccormick-2.jpg",
+   "fetched": "3 Oct 2026 01:33 UTC",
+   "size_px": [
+    500,
+    482
+   ],
+   "bytes": 83375,
+   "sha256": "d0e10bf8f34fa90203ec0173cdaa4e61706d25ebc7948a7e08c6a35d76822b74",
+   "what": "Klaus Schmeh's re-hosted copy (Klausis Krypto Kolumne, Aug 2013) of the FBI's 30 March 2011 web image of note 2; NOT fetched from fbi.gov, whose story, archive and Vault PDF routes all answered 403 from the cloud on 3 Oct 2026",
+   "fbi_routes_tried": [
+    "https://www.fbi.gov/news/stories/help-solve-an-open-murder-case (curl 403; browser: page not found)",
+    "https://www.fbi.gov/news/stories/2011/march/cryptanalysis_032911 (curl 403)",
+    "https://archives.fbi.gov/archives/news/stories/2011/march/cryptanalysis_032911 (curl 403; browser: S3 AccessDenied)",
+    "https://vault.fbi.gov/ricky-mccormick/ricky-mccormick-part-01-final/at_download/file (curl 403; browser and in-context request 403)",
+    "web.archive.org CDX (connection reset x3)"
+   ]
+  }
+ ]
+}

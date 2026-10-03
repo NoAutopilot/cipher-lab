@@ -480,3 +480,44 @@ and rests on three departures from the spec's transcription. Neither paper is th
 `open` (no H, C or S tokens anywhere). Requests: zenodo.org 4 (2 record JSON, 2 files), no login. Next cheap step for the
 transcription departures: check note 2 line 10 (26/36, KCNOB/KENO) against the FBI image, which also serves any future
 reading; one image fetch, ~USD 1.
+
+## FT4b-mccormick-1999 (3 Oct 2026, account-4) -- note 2 line 10 against the image
+
+Step from cheap test 5's verdict: check note 2 line 10 (`26 MLSE 74 SPRKSE 29KCNOB,OLE 175 RTRSE` in the spec, Schmeh's
+retype; `36 MLSE 74 SPRK[SE...] 29KE[NO...] 175R[TR...]` in Sadak 2026) against the FBI image.
+
+**Image (rule 2).** The FBI's own copy could not be fetched: fbi.gov story URLs (curl 403; one browser load answered "page not
+found"), archives.fbi.gov (curl 403; browser S3 AccessDenied), the FBI Vault PDF `vault.fbi.gov/ricky-mccormick/...` (curl 403;
+browser download and in-context request 403), web.archive.org CDX (connection reset, 3 tries; stopped per the good-citizen
+rule). Used instead: Klaus Schmeh's re-hosted copy of the FBI's 30 March 2011 web image of note 2,
+https://scienceblogs.de/klausis-krypto-kolumne/files/2013/08/Mccormick-2.jpg (500x482 px, the image post 10 embeds),
+saved as `images/note2_schmeh2013.jpg` with sha256 and the routes tried in `images/manifest.json`. It is a copy of the FBI's
+image, not the FBI host, and low resolution (about 20 px per line).
+
+**Crop.** `python3 tools/iiif_lines.py --image ciphers/mccormick-1999/images/note2_schmeh2013.jpg --out
+ciphers/mccormick-1999/images --prefix note2_l10 --region 0,270,500,42 --centres 20 --debug` -> `images/note2_l10_L01.jpg`
+(the automatic profile on the full image mis-split the lines; those crops were deleted). Vision: 2 blind Sonnet reads of a
+4x upscale of the crop (neither shown any transcription) + 1 reconciliation look at an 8x enlargement = 3 calls.
+
+| Departure | spec (Schmeh) | Sadak | read A | read B | reconciliation | image supports |
+|---|---|---|---|---|---|---|
+| first number | 26 | 36 | 86 (alt 36, 85) | 86 (8 may be 3) | looped closed top: 3 or 8, not 2 | **26 not supported**; 36 vs 86 undecidable at 500 px (low) |
+| 2nd letter after 29 | C | E | E | E (85%) | E, same shape as the E of OLE | **Sadak's E** (medium) |
+| `,OLE` | present | dropped | `NOB,OLE` | `NOBOLE` | comma under B, OLE clear | **spec** (high) |
+| tail | 175 RTRSE | 175R[TR...] | 175R7RSE | 175R7RSE (40%) | smudged, not re-read | undecidable; both reads agree on 175 R?RSE |
+
+Both blind reads give the whole line as `86 MLSE 74 SPRKSE 29KENOB(,)OLE 175R?RSE`. Per-row details:
+`transcription_check.tsv`. The spec's ciphertext is **not changed** (never silently repaired); any later reading should take
+line 10 as `?6 MLSE 74 SPRKSE 29KENOB,OLE 175 R?RSE` with the first digit 3/8 and the tail open, and treat 26/KC as
+transcription doubts. Effect on cheap test 5: none of its verdicts move -- Sadak's line still glosses only four slots and
+stays judge-cannot-decide at 33 letters; his E is supported, his dropped OLE is not, his 36 is possible, not confirmed.
+
+**Other departures.** Sadak transcribes no other line (the paper quotes only line 10), and Tsuchimoto gives no line, so
+there is no further line where the two transcriptions can be compared. The live transcription question is the spec's own
+reliability at 500 px against the FBI's original.
+
+**Next step.** The FBI's full-resolution image (the 2011 story's photograph, or the Vault PDF `ricky-mccormick-part-01-
+final`), fetched from a desk browser (fbi.gov answers 403 to the cloud; a LOCAL-QUEUE row, ~USD 0.5 to write), then 2 blind
+reads of every line against the spec (~USD 3), which settles 36/86 and any other retype error before any further reading.
+Status stays `open` (no H, C or S tokens). Requests: fbi.gov 2 curl + 1 browser, archives.fbi.gov 1 curl + 1 browser, vault.fbi.gov
+1 curl + 4 browser, web.archive.org 3 (reset), scienceblogs.de 1, web search 2.

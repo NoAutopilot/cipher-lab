@@ -1,0 +1,8 @@
+# Note 2 line 10 checked against an image, 3 Oct 2026 (FT4b-mccormick-1999, account-4). ciphertext as transcribed (specs/mccormick-1999.json note_2[9], Schmeh's retype) is NOT changed (CLAUDE.md layout rule); this file records what the image supports.
+# image: images/note2_schmeh2013.jpg = Schmeh's re-hosted copy of the FBI's 30 Mar 2011 web image (500x482 px; fbi.gov routes 403 from the cloud, see images/manifest.json). crop: images/note2_l10_L01.jpg
+# reads: A, B = two blind Sonnet subagent reads (no transcription shown); R = reconciliation look by the worker at a 8x enlargement
+position	spec_schmeh	sadak_2026	read_A	read_B	R	image_supports	confidence
+first number	26	36	86 (alt 36,85)	86 (8 may be 3)	3 or 8, looped closed top; not a 2	26 not supported; 36 or 86 -- undecidable at 500 px	low
+group after 29, letter 2	C (KCNOB)	E (KE[NO...])	E	E (85%)	E, same shape as the E of OLE	Sadak (E)	medium
+",OLE" after NOB	present	absent	NOB,OLE (comma low)	29KENOBOLE	comma under B, OLE clear	spec (present)	high
+tail number+group	175 RTRSE	175R[TR...]	175R7RSE / ITSRARSE	175R7RSE (40%)	not re-read: smudged	undecidable (both agree on 175 R?RSE)	low
