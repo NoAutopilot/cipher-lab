@@ -1,0 +1,16 @@
+control seed 3: 843 signs, 550 units, 30 types; planted crib 'econsider' on units y.11.6.0.14.28.8.15.23 found at [112, 226]
+CONTROL: 13 cribs, 6 restarts x 150000 iters each
+  econsider (TRUE)	-2.700	ichepuosetegondogletoniconuostraaltezzadaellamortedelgtranducamiosuocezchesiainc
+  cardinale	-3.945	nansiericolerdareasordiarderioettuoseetatsuutereocalueoetdaeatenrieraleancintnda
+  francesco	-4.232	oriaulacficransartaianaranlaciseediappeseaddetasifscdrisenslretoaclarcprifcoeenr
+  guglielmo	-4.874	nuiaragigomhgllghaaoglsuglagioneetoaddeleatteignoglmthonellaueingiagumduigineelu
+  monsignor	-4.132	aolatinimiopnsnnpaainstonsiniireeliaccenealleunrimnolpiresnioeuaniinoocolmiaegso
+  suamaesta	-4.175	ouniolaasithamsahiiiamouamlaaideeciitteseicceradisstchidemslueroaalauttunsaoeemu
+  ilducadis	-4.259	olueridciaioduddoneaduplduidcateetaessedeetterdtaiditoateudilerodcidlisluicoeaul
+  monferrat	-4.378	eorseinemaapnfrnposanfconfinealiisasggirisssiunlamraspalifrioiueneinoagormeeirfo
+  lacorteet	-4.172	salieucrlaetcoectmiacoracoucraniioaiddieiiooincnaleeotanioeuainscrucaedallrsitoa
+  cheilrede	-4.124	ohooinelcudieieeisoueirheinelutaatuommaeaottaretucedtiutaienharoelnehdmhocloarih
+  nostrofra	-4.288	uoaeiusrnirdstfsdaeistoostusrimeeliehhefeelleasminfrldimetfuoeausrusorhoanrueoto
+  ostrofrat	-4.046	asuauetooiaitrrtinaitrastretoileediappereaddeltlioradiilerreselatoetsapsuooaefrs
+  suofratel	-3.955	aunailorsiepoftoptaiofeuoflorineemiaddeteammeconistempineftluecaorlouedunsraeafu
+CONTROL seed 3: econsider rank 1/13, margin +1.245 over best other (cardinale) -> PASS (gate: rank 1, margin >= 0.30)
