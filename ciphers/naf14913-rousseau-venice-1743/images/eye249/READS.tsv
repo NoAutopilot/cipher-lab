@@ -1,0 +1,13 @@
+crop	leaf_line	transcribed_FT4e	role	passA	passA_alt	passA_conf	passB	passB_alt	passB_conf	recon	recon_conf	settled
+c01	f249r L01 g3	253	target	253	-	high	253	-	high	-	-	253
+c02	f249r L03 g9	242	target	242	-	high	242	247	medium	-	-	242
+c03	f249r L03 g10	253	target	253	255	medium	255	253	medium	253	medium	253
+c04	f249r L03 g11	66	target	66	-	high	66	-	high	-	-	66
+c05	f249r L05 g5	66	target	66	-	high	66	-	high	-	-	66
+c06	f249v L01 g5	66	target	66	bb=66	medium	66	bb	medium	-	-	66
+c07	f249v L03 g11	242	target	242	-	high	242	247	medium	-	-	242
+c08	f249r L01 g2	755	decoy	755	753	medium	755	-	high	-	-	755
+c09	f249r L03 g13	605	decoy	605	603	medium	605	603	medium	603	medium	605|603
+c10	f249v L01 g11	63	decoy	63	-	high	63	-	high	-	-	63
+c11	f249v L03 g3	65	decoy	65	-	medium-high	65	63	high	-	-	65
+c12	f249r L05 g12	33|35	decoy	35	33	medium	33	35	low	33	medium	33|35
