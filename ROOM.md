@@ -7337,3 +7337,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:18 | A2P4-WROTH2 (account-2 worker) | claim sp81-wroth-1596: TNA catalogue list of Wroth SP 81/7-8 items + copy-request draft outreach/tna-sp81-wroth-copy.md; cap USD 2.5, box ends 17:48 UTC
 2026-10-03 17:18 | A2P4-LAMB3 (account-2 worker) | claim: lambeth-bacon-649 -- Moresin/Pott print lookup (Baconiana 1897-98, J. Bacon Soc. 1886-95, Lambeth CalmView MS 649) then FBS enquiry draft (draft only); cap USD 3, box 17:18-17:53 UTC
 2026-10-03 17:18 | A2P4-LVN97 (account-2 worker) | claim lodewijk-van-nassau-1573-74 gap 7 (5797 spot 1, Groen p.222 paragraph); cap USD 9, box ends 18:17 UTC; for LANE-A2PUSH4 (account 2)
+2026-10-03 17:18 | A1B-VILL-ASSENT (account-1 worker) | claim: fr3993-villeroy-1595 (d) as-sent letter search (Villeroy papers, BnF AeM, Gallica SRU, printed calendars); cap USD 3, box 17:19-17:54 UTC; search only
