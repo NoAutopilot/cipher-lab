@@ -593,3 +593,44 @@ f159's figure values give 41% 'o' -- look in fr.3995 for a later (1592-95) Never
 (thumbnail sheet of the remaining canvases, ~$3); (i) homophonic cryptanalysis treating all target signs and figures as unknown
 codes with K as a null, matched control first (tools/family_run.py homophonic at the target's N, ~$3; at 753 tokens expect a weak
 control); (d) the as-sent packet on Villeroy's side (~$3). All depend on nobody.
+
+## fr.3995 nos.44, 45, 52, 57 located for a later pi/theta/infinity table (A1-VILL-TABLE, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-a1-wave7.md` job 3 (VILL-NOMEN step (h)). Intake gate 11:31 UTC: "open (line 1)
+-- edition/page or full-text-search citation found within 6 lines", exit 0. Pre-registered before any canvas was viewed:
+`fr3995/PREREG-VILL-TABLE.md` (commit 63d04072). Candidates chosen from Tomokiyo's catalogue (sources/cryptiana/web/nevers.htm):
+the French 1592-93 tables mixing figures and symbols outside Bourdeau's checked set and outside VILL-KEYS/STRIPS/7280/NOMEN.
+Canvases from the manifest labels (`tools/gallica_folio.py btv1b525085665 --list`). Crop/overview step (pasted; outputs in the
+worker's scratchpad only, nothing committed):
+
+    for c in 161 162 165 166 179 180 196 197; do
+      python3 tools/iiif_lines.py --ark btv1b525085665 --canvas $c --out <scratch>/ov --prefix c$c \
+          --lines-per-crop 200 --max-width 2400 --debug; done
+    # the eight 1600 px reference copies tiled 4x2 at 620 px -> <scratch>/ov/sheet.jpg (2480x1890), one vision call
+
+What the sheet shows (about 0.15x native, every observation M):
+- **no.44 (f.82r cover "Janvier 1592"; table on f.82v, canvas f162):** a figure alphabet (a-z header, two- and three-figure
+  homophones in rows) and a long nomenclator of names/titles with two-figure codes; a narrow right-hand column of symbols beside
+  some entries and a few symbols in the lower names block. No pi, varpi, theta or infinity identifiable at this resolution.
+- **no.45 (f.84r cover "Aoust 1592"; table on the f.84v-85r spread, canvas f166):** a dense grid of figure columns (the
+  intercalary-null table Tomokiyo describes); no symbol alphabet seen.
+- **no.52 (f.92r, canvas f179; f.92v, canvas f180):** an **Italian** table ("Provincie, Alamagna, Fiandra ... soldati, citta,
+  ambasciatore ..."): a symbol-only alphabet (each letter two or three symbols) and symbols for words and names; no figure
+  alphabet. Out of the pre-registered family (figures in the alphabet), and Italian.
+- **no.57 (f.102r cover "fevrier 1593", f.102v endorsement "Mons. de Laveriere" ... "Chartres"):** canvases f196-f197 carry only
+  the cover and the endorsement; **the table itself was not on the sheet** (it is presumably on the preceding opening, f.100v-101r
+  canvas f194 or f.101v canvas f195, not viewed).
+
+**Pre-registered decision: no family candidate** (figure codes in the alphabet AND at least 2 of pi/varpi/theta/infinity) among the
+seven canvases viewed, so no native crops were cut and no blind reads were made: **"no 1592-93 French figure+symbol table among
+nos.44/45/52 carries the target's pi/varpi/theta/infinity at overview resolution"** -- a search result at M, not a negative on the
+key family, since (i) overview resolution cannot exclude a pi/theta among no.44's few symbols and (ii) no.57's table page was not
+on the sheet. No sign was certified; no key written; grade counts in the cipher H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Requests: gallica.bnf.fr 8 native/info fetches by iiif_lines (about 2 s apart) + 0 for the manifest (cached), no block.
+Vision calls: 1 of the 3 allowed. Rule 10: no novelty claim.
+
+Next steps from this pass, cheapest first: (j) view no.57's table (canvases f194 = f.100v-101r and f195 = f.101v), the one 1593
+candidate whose description (symbol homophones, figures 1-72 for two-letter syllables) fits a figure+symbol letter, one overview
+plus, if it carries pi/theta/infinity, the two blind row reads this job pre-registered (~$4); (k) a native crop of no.44's right-hand
+symbol column on f.82v (canvas f162) to settle whether any of its few symbols is a target sign (~$3). Both depend on nobody.
