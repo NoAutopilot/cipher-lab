@@ -1,0 +1,6 @@
+{"note": "Sources used by match.py; none committed (GAPS90, 3 Oct 2026).",
+ "sources": [
+  {"name": "Cowie 1893 English-Sulu-Malay Vocabulary (OCR)", "url": "https://archive.org/download/englishsulumala00cowigoog/englishsulumala00cowigoog_djvu.txt", "licence": "public domain (1893); Google-digitised, not committed to keep the folder small", "sha1": "3e4c390991e47fe974e63b50497338de481abc70", "fetched": "2026-10-03"},
+  {"name": "Tausug New Testament (Kitab Injil), eBible tsg readaloud text", "url": "https://ebible.org/Scriptures/tsg_readaloud.zip", "licence": "copyright 1998, 2018 Wycliffe Bible Translators, Inc., all rights reserved (ebible.org/tsg/copyright.htm) -- local statistics only, never committed", "sha1": "6bc9addc69d21ef4802f635960442db10fda488d", "fetched": "2026-10-03"},
+  {"name": "Wiktionary Category:Tausug_lemmas (CC BY-SA)", "url": "https://en.wiktionary.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Tausug_lemmas", "licence": "CC BY-SA 4.0", "status": "HTTP 429 twice (one retry after pause), not used"}
+ ]}
