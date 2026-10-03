@@ -169,3 +169,9 @@ fetched this job.
 | `web/img/spinelly1515.png` | https://cryptiana.web.fc2.com/code/spinelly1515.png | 27 Sep 2026, ~19:49 UTC | 148511 | dd050325416761f88896e5aa76a0b0c52943dd54 | Tomokiyo's own reconstruction of "Spinelly's Cipher", transcribed into ciphers/spinelli-beinecke-c1515/keys/key_spinelli_c1515.tsv |
 
 See `sources/cryptiana/web/manifest_2026-09-27-spinelli.tsv` for the manifest row.
+
+## Added 3 October 2026 (ciphers/maurice-rupert-1645, GAPS51 key scan)
+
+| File | URL | Fetched | Bytes | For |
+|---|---|---|---|---|
+| `web/charlesi4.jpg` | https://cryptiana.web.fc2.com/code/charlesi4.jpg | 3 Oct 2026, 07:34 UTC | 25765 | Tomokiyo's letter table (codes 2-79), captioned "Cipher between Charles I and Henrietta-Maria (and Ministers) after Naseby (June 1645-)", embedded in charlesi.htm under "Cipher with Ministers in Oxford after Naseby". Letters only, no word codes. Tested on maurice-rupert-1645 (non-test, see its NOTES.md GAPS51) |
