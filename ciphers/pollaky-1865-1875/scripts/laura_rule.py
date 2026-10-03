@@ -5,7 +5,8 @@ Pre-registered in NOTES.md ("GAPS160 ... gap 1 component test") before scoring (
 Rule: letter = alphabet[(S-1)*6 + P - 1] for S bars/dashes, P dots; parenthesised k dots = s/t/u.
 Statistic T: mean add-one bigram log10 prob of "timeto"+X+"shall"; W: word-segmentation coverage of X.
 Controls: A shuffled-sign, B random-sign, C 104 sibling rules, plus a positive control for power.
-Deterministic (seed 160). Usage: python3 laura_rule.py [--out laura_rule.tsv]
+Deterministic (seed 160). Usage: python3 laura_rule.py [--out laura_rule.tsv] [--right shall]
+GAPS178 (3 Oct 2026): --right ishall re-scores with the 1881 print's frame "I shall" (PREREG-GAPS178 in NOTES.md).
 """
 import argparse, math, os, random, re
 from collections import Counter
@@ -45,6 +46,7 @@ def load():
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", default=os.path.join(os.path.dirname(__file__), "laura_rule.tsv"))
+    ap.add_argument("--right", default="shall", help="right-hand clear frame (GAPS178: ishall)")
     a = ap.parse_args()
     rng = random.Random(160)
     letters, wc = load()
@@ -53,7 +55,7 @@ def main():
     vocab = {w for w, c in wc.items() if c >= 5 and (len(w) >= 2 or w in ("a", "i"))}
 
     def T(x):
-        s = "timeto" + x + "shall"
+        s = "timeto" + x + a.right
         return sum(lp[s[i:i + 2]] for i in range(len(s) - 1)) / (len(s) - 1)
 
     def W(x):

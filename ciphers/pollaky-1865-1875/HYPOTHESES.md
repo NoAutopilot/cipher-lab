@@ -33,6 +33,16 @@ NOTES.md before scoring (commit 577aeea6).
 Status: supported as a design candidate on letter-bigram order (post-hoc rule; C weak by construction); no word read,
 10 letters M.
 
+GAPS178 re-score, 3 Oct 2026 (frame right side "ishall" from the 1881 print; sensitivity re-score under PREREG-GAPS178,
+commit b480322e, not covered by GAPS160's pre-registration; scripts/laura_rule.py --right ishall, laura_rule_ishall.tsv):
+
+| text | X | target T | A p95 (tail) | B p95 (tail) | C rank | W vs B p95 | power (T / W) | verdict |
+|---|---|---|---|---|---|---|---|---|
+| ad 1, sign 04 = 4 dots (primary) | bendabuchp | -1.0835 | -1.2261 (0.000) | -1.1844 (0.003) | 1/104 | 0.5 vs 0.6 | 0.985 / 0.868 | survives the corrected frame on T; W does not clear |
+| ad 1, sign 04 = 3 dots (variant) | bencabuchp | -1.1150 | -1.2581 (0.002) | -1.1851 (0.013) | 1/104 | 0.6 vs 0.6 | same | same |
+
+Status unchanged: supported as a design candidate on T (post-hoc rule); no word read, 10 letters M.
+
 ## Ad 2 (1871 telegram) = Boyouk's 1867 "ELOPED" clear ad, one group per 1-3-word chunk -- GAPS164, 3 Oct 2026
 
 Statistic S: log10 share of monotone alignments (each group 1-3 consecutive words) in which the two "91" groups cover
