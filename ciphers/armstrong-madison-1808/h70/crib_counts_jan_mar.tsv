@@ -1,0 +1,47 @@
+label	regex	letters_with	letters_total	total_hits	letter_dates
+Emperor	\bEmperor	5	12	11	1808-01-13,1808-02-22,1808-03-05,1808-03-09,1808-03-15
+His Majesty / H. M.	\bHis Majesty|H\. ?M\.?	2	12	9	1808-02-28,1808-03-15
+Napoleon	\bNapoleon	1	12	2	1808-02-22
+Champagny	\bChampagny	4	12	5	1808-02-22,1808-02-28,1808-02-29,1808-03-26
+Prince of Benevento / Talleyrand	Prince of Benevent|Benevento|Talleyrand|T_+d	3	12	3	1808-02-15,1808-02-28,1808-03-15
+Minister of Marine	Minister of Marine	1	12	1	1808-02-17
+Minister of Exterior/Foreign Relations	Minister of (Exterior|Foreign) Relations	1	12	1	1808-02-28
+decree(s)	\bdecrees?\b	8	12	23	1808-01-13,1808-02-22,1808-02-28,1808-02-29,1808-03-05,1808-03-09,1808-03-15,1808-03-26
+November 1806 (decree)	Nov(ember|\.)? ?(21\.? )?1806	2	12	3	1808-01-13,1808-02-28
+December 1807 (decree)	Dec(ember|emb|r)?\.? ?(17\.? )?1807	2	12	3	1808-02-28,1808-03-05
+sequester/sequestration	\bsequest	7	12	12	1808-01-13,1808-02-17,1808-02-22,1808-02-28,1808-03-05,1808-03-15,1808-03-26
+confiscate	\bconfiscat	3	12	4	1808-02-22,1808-03-15,1808-03-26
+capture	\bcaptur	5	12	7	1808-01-13,1808-02-17,1808-02-28,1808-02-29,1808-03-05
+embargo	\bembargo	3	12	3	1808-01-13,1808-02-22,1808-03-05
+neutral	\bneutral	1	12	1	1808-01-13
+commerce	\bcommerce	4	12	5	1808-01-13,1808-02-17,1808-02-22,1808-03-05
+England / Great Britain / British	\bEngland|Great Britain|British	3	12	10	1808-01-13,1808-02-22,1808-02-28
+Spain	\bSpain|Spanish	4	12	4	1808-01-13,1808-02-22,1808-03-05,1808-03-26
+Portugal	\bPortug	1	12	2	1808-02-22
+Florida(s)	\bFlorida	0	12	0	
+Russia	\bRussia	2	12	5	1808-02-22,1808-03-05
+Denmark	\bDenmark|Danes|Danish	1	12	2	1808-02-22
+Sweden	\bSweden	2	12	2	1808-02-22,1808-03-05
+Holland	\bHolland	1	12	1	1808-02-17
+Austria	\bAustria	2	12	2	1808-01-13,1808-02-22
+Hamburg	\bHamburg	4	12	5	1808-02-22,1808-03-05,1808-03-15,1808-03-26
+Pinkney	\bPinkney	0	12	0	
+Erving	\bErving|Irving	1	12	1	1808-02-15
+Skipwith	\bSkipwith	2	12	2	1808-02-15,1808-02-29
+ally/alliance	\ballies|\ballied|alliance	2	12	2	1808-01-13,1808-02-22
+enemy	\benem(y|ies)	1	12	1	1808-02-22
+war	\bwar\b	2	12	2	1808-02-15,1808-02-22
+our business/affairs	\bour (business|affairs)	3	12	3	1808-02-15,1808-02-22,1808-03-05
+this Government	\bthis Government	2	12	2	1808-03-05,1808-03-26
+United States / U. S.	\bUnited States|\bU\. ?S\.	2	12	2	1808-01-13,1808-02-28
+I have the honor to be	\bI have the honor to be	5	12	5	1808-01-13,1808-02-15,1808-02-29,1808-03-15,1808-03-26
+with (very) high respect/consideration	\bwith (very )?high (respect|consideration)	5	12	5	1808-02-15,1808-02-29,1808-03-05,1808-03-15,1808-03-26
+most obedient	most obedient	9	12	9	1808-01-13,1808-02-15,1808-02-15,1808-02-17,1808-02-22,1808-02-29,1808-03-05,1808-03-15,1808-03-26
+humble servant	humble [Ss]ervant	7	12	7	1808-01-13,1808-02-15,1808-02-15,1808-02-17,1808-02-22,1808-02-29,1808-03-05
+the Nth instant/ultimo	\bthe (\d+)(th|st|d|nd|rd)?\.? (inst|instant|ultimo|ult)	5	12	6	1808-02-22,1808-03-05,1808-03-09,1808-03-15,1808-03-26
+my (last) letter of the	\bmy (last )?letter of the	2	12	3	1808-01-13,1808-02-17
+enclosed/inclosed/subjoin	\benclosed|inclosed|subjoin	7	12	7	1808-01-13,1808-02-15,1808-02-15,1808-02-17,1808-02-29,1808-03-05,1808-03-15
+conveyance	\bconveyance	1	12	1	1808-02-22
+messenger	\bmessenger	2	12	3	1808-02-15,1808-02-15
+I have (this moment) received	\bI have (this moment )?received	1	12	2	1808-03-26
+dispatch	\bdispatch|despatch	4	12	4	1808-02-15,1808-02-22,1808-03-05,1808-03-05

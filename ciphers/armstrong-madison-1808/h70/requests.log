@@ -1,0 +1,50 @@
+2026-10-03T19:23:16Z	202	0	https://founders.archives.gov/API/docdata/Madison/99-01-02-2703
+2026-10-03T19:23:41Z	browser	18592	founders 2703
+2026-10-03T19:24:18Z	curl	309	archive.org advancedsearch ASP FR
+2026-10-03T19:24:19Z	browser	27206	https://founders.archives.gov/documents/Madison/99-01-02-2678
+2026-10-03T19:24:26Z	curl	8023	archive.org advancedsearch ASP FR 2
+2026-10-03T19:24:28Z	browser	17825	https://founders.archives.gov/documents/Madison/99-01-02-2560
+2026-10-03T19:24:34Z	curl	-	archive.org metadata americanstatepap_a03unit
+2026-10-03T19:24:36Z	curl	-	archive.org metadata americanstatepap03unit
+2026-10-03T19:24:36Z	browser	21156	https://founders.archives.gov/documents/Madison/99-01-02-2472
+2026-10-03T19:24:39Z	curl	-	archive.org metadata americanstatepap_q03unit
+2026-10-03T19:24:41Z	curl	-	archive.org metadata americanstatepap_o03unit
+2026-10-03T19:24:44Z	browser	16548	https://founders.archives.gov/documents/Madison/99-01-02-2453
+2026-10-03T19:24:51Z	curl	-	be-api fts Champagny americanstatepap_a03unit
+2026-10-03T19:24:53Z	browser	17151	https://founders.archives.gov/documents/Madison/99-01-02-2382
+2026-10-03T19:24:54Z	curl	-	be-api fts Champagny americanstatepap03unit
+2026-10-03T19:24:57Z	curl	-	be-api fts Champagny americanstatepap_q03unit
+2026-10-03T19:25:01Z	curl	-	be-api fts Champagny americanstatepap_o03unit
+2026-10-03T19:25:01Z	browser	16265	https://founders.archives.gov/documents/Madison/99-01-02-2370
+2026-10-03T19:25:10Z	browser	16769	https://founders.archives.gov/documents/Madison/99-01-02-2339
+2026-10-03T19:25:12Z	curl	6156987	archive.org djvu americanstatepap_o03unit
+2026-10-03T19:25:18Z	browser	26608	https://founders.archives.gov/documents/Madison/99-01-02-2332
+2026-10-03T19:25:27Z	browser	17287	https://founders.archives.gov/documents/Madison/99-01-02-2320
+2026-10-03T19:25:35Z	browser	16589	https://founders.archives.gov/documents/Madison/99-01-02-2709
+2026-10-03T19:25:43Z	browser	24031	https://founders.archives.gov/documents/Madison/99-01-02-2728
+2026-10-03T19:25:52Z	browser	24865	https://founders.archives.gov/documents/Madison/99-01-02-2733
+2026-10-03T19:26:00Z	browser	22280	https://founders.archives.gov/documents/Madison/99-01-02-2758
+2026-10-03T19:26:08Z	browser	16512	https://founders.archives.gov/documents/Madison/99-01-02-2761
+2026-10-03T19:26:17Z	browser	20540	https://founders.archives.gov/documents/Madison/99-01-02-2780
+2026-10-03T19:26:24Z	browser	16150	https://founders.archives.gov/documents/Madison/99-01-02-2781
+2026-10-03T19:26:33Z	browser	15725	https://founders.archives.gov/documents/Madison/99-01-02-2798
+2026-10-03T19:26:41Z	browser	18562	https://founders.archives.gov/documents/Madison/99-01-02-2818
+2026-10-03T19:26:49Z	browser	18261	https://founders.archives.gov/documents/Madison/99-01-02-2871
+2026-10-03T19:26:57Z	browser	20229	https://founders.archives.gov/documents/Madison/99-01-02-2907
+2026-10-03T19:27:06Z	browser	15790	https://founders.archives.gov/documents/Madison/99-01-02-2918
+2026-10-03T19:27:14Z	browser	17096	https://founders.archives.gov/documents/Madison/99-01-02-2937
+2026-10-03T19:27:22Z	browser	17260	https://founders.archives.gov/documents/Madison/99-01-02-2947
+2026-10-03T19:27:30Z	browser	17859	https://founders.archives.gov/documents/Madison/99-01-02-2962
+2026-10-03T19:27:37Z	browser	17382	https://founders.archives.gov/documents/Madison/99-01-02-2988
+2026-10-03T19:27:46Z	browser	16390	https://founders.archives.gov/documents/Madison/99-01-02-2994
+2026-10-03T19:27:55Z	browser	24972	https://founders.archives.gov/documents/Madison/99-01-02-3029
+2026-10-03T19:28:03Z	browser	15867	https://founders.archives.gov/documents/Madison/99-01-02-3078
+2026-10-03T19:28:11Z	browser	16582	https://founders.archives.gov/documents/Madison/99-01-02-3088
+2026-10-03T19:28:19Z	browser	16448	https://founders.archives.gov/documents/Madison/99-01-02-3139
+2026-10-03T19:28:27Z	browser	18391	https://founders.archives.gov/documents/Madison/99-01-02-3164
+2026-10-03T19:28:34Z	browser	17028	https://founders.archives.gov/documents/Madison/99-01-02-3232
+2026-10-03T19:35:25Z	browser	18115	https://founders.archives.gov/documents/Jefferson/99-01-02-8145
+2026-10-03T19:35:33Z	browser	18328	https://founders.archives.gov/documents/Jefferson/99-01-02-7944
+2026-10-03T19:35:41Z	browser	17807	https://founders.archives.gov/documents/Jefferson/99-01-02-7420
+2026-10-03T19:35:49Z	browser	32866	https://founders.archives.gov/documents/Jefferson/99-01-02-6668
+2026-10-03T19:35:57Z	browser	34848	https://founders.archives.gov/documents/Jefferson/99-01-02-8403

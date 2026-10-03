@@ -380,3 +380,167 @@ native-resolution fetch (22 Mar 1807 p1, `0600d.jpg`) = 8. web.archive.org: 2 CD
 document fetches (both succeeded on the first attempt) + 1 CDX query that failed twice (connection reset, not
 retried further) = 5. All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. No subagent
 used (7 small page images read directly, cheaper and simpler than a classification call for this volume).
+
+## H70 context crib sheet (ARM-A-H70, 3 Oct 2026)
+
+Worker ARM-A-H70 (LANE-ARM-A, account 1, session_01VXG4dyHsuCJvU991UoLBjF), 19:22-20:0x UTC by `date -u`. Brief
+`.claude/briefs/runs/2026-10-03-acct1-arma-h70-crib.md`. **Context only: no scoring of the target, no decoding, no
+reading, so no grades (rule 4 not applicable).** What the 20 Feb 1808 letter most plausibly talks about, built from
+what Armstrong wrote and was told in the weeks around it. Scoring any of this against the ciphertext is LANE-ARM-B's.
+
+**Material (all under `h70/`, fetched once):**
+- Founders Online Early Access transcriptions (PJM-SS series, no editorial notes printed for any of these items --
+  every page's apparatus is the bare "DNA: RG 59--DD--Diplomatic Despatches, France" source line): the whole
+  "More between these correspondents" Armstrong<->Madison chain from 12 Nov 1807 to 25 June 1808 (27 items: 25 Armstrong
+  to Madison, Madison to Armstrong 8 Feb and 2 May 1808) and the Armstrong<->Jefferson chain 28 Oct 1807 to 28 July 1808
+  (5 items). Walked by `h70/crawl.py` (headless Chromium, `tools/browser_fetch.js`; the Founders API and plain curl
+  answer 202/403 CloudFront). Extracted text in `h70/letters.txt`, index with URLs in `h70/letters.tsv`,
+  `h70/chain_madison.tsv`, `h70/chain_jefferson.tsv`; the raw HTML was kept out of the repo (re-fetch with
+  `python3 h70/crawl.py`).
+- American State Papers, Foreign Relations vol. III (Gales & Seaton 1832), IA `americanstatepap_o03unit` (Pittsburgh
+  scan; the other three "v.3" ASP items on IA are other classes), `_djvu.txt` pp. 247-252 cut to `h70/asp_fr3_excerpt.txt`
+  (No. 216, France: the despatches of Jul 1807-Aug 1808 that Jefferson sent to Congress).
+- On disk already: Bourdeau's THE=972 decodes of the 15 and 22 Feb 1808 letters (`tools/data/uscodes-1800/decodes/`,
+  dbourdeau/cyphersolver, MIT, credited there); `tools/data/en18` (Madison *Writings* VIII, Jefferson *Writings* IX,
+  Ford ed.); line B's B15 read of the 22 Feb postscript (`line-b/NOTES.md`).
+- Counts: `h70/cribs.py` (offline; the target 99-01-02-2728 excluded from every count; numeral groups and editorial
+  brackets stripped, so a word only inside a THE=972 passage is not counted) -> `h70/crib_counts.tsv` (Nov 1807-June
+  1808, 32 Armstrong letters: 30 to Madison, 2 to Jefferson), `h70/crib_counts_jan_mar.tsv` (Jan-Mar 1808, 12 letters:
+  11 to Madison + 15 Feb to Jefferson), `h70/formulas.tsv` / `h70/formulas_jan_mar.tsv` (opening words, closing
+  formula verbatim, the 12 words before it).
+
+### (1) Timeline, Nov 1807 - Apr 1808
+
+| Date | What | Source |
+|---|---|---|
+| 12 Nov 1807 | Armstrong's letter to Champagny on the Nov 1806 (Berlin) decree; Champagny's answer extends it to the high seas (the *Horizon* case) | ASP FR III 247; Founders 99-01-02-2320 |
+| 15 Nov 1807 | Emperor leaves Fontainebleau for Italy/Spain/Portugal; Portugal "taken from the Braganzas"; **US "to be invited to make common cause against England"**; Russia's adhesion not yet ascertained; distance as the argument against a European coalition; "the demarcation of Louisiana, or the transfer to us of the Floridas" -- France "has done, I fear, all you have to expect from her" | 99-01-02-2332 (Triplicate) |
+| 24 Nov / 1 Dec 1807 | Champagny (Milan) to Armstrong: US tolerates British search, blockades, impressment, so must allow French reprisals; "take with the whole continent the part of guarantying itself" | ASP FR III 247-8; 99-01-02-2382 |
+| 17 Dec 1807 | Milan decree (the "December 1807" decree in every later letter) | 99-01-02-2472 and after |
+| Dec 1807 (Washington) | US Embargo Act (described in Madison's 8 Feb letter; its news reached Paris by 22 Feb 1808, below) | ASP FR III 249 (Madison 8 Feb) |
+| 27-29 Dec 1807 | Copy of "a second and very extraordinary decree" by Mr. McElhonny; Talleyrand (T______d) disapproves but dare not object (THE=972); Emperor expected in Paris on the 31st; P.S.: the Emperor wished to seize the Portuguese royal family; Minister of Marine's order holding vessels of "friendly and allied powers" in port; 29 Dec: England accepts Austrian mediation | 99-01-02-2472; ASP FR III 248 |
+| 13 Jan 1808 | Vessel embargo meant for allies only ("the word neutral crept into it merely by mistake"); Champagny's answer on the 17 Dec *arrêté*: captures "in the nature of detentions", released if the US excludes British commerce; Austrian peace mediation failed; "The Emperor's views seem to be seriously turned towards Spain. I labor most diligently the adjustment of our disputes with that power"; repeats his 15 Nov advice ("The measure ... ought not to be delayed") | 99-01-02-2560; ASP FR III 248 (dated 22 Jan there) |
+| 15 Jan 1808 | Champagny's note: "War exists, then, in fact, between England and the United States; and His Majesty considers it as declared"; American prizes "remain sequestered" pending the US decision | ASP FR III 248-9 |
+| 27 Jan 1808 | Emperor's special decision confiscating the *Julius Henry* and *Juniatta* (reported 22 Feb) | 99-01-02-2733 |
+| 2 Feb 1808 | French take Rome; 1 Feb Junot proclaims a provisional government of Portugal | 99-01-02-2733 |
+| 3 Feb 1808 (about) | Champagny verbally repeats his 15 Jan assurances to Armstrong ("seven days" after 27 Jan) | 99-01-02-2733 |
+| 8/18 Feb 1808 (Washington) | Madison's instruction: a formal remonstrance against the decrees; explain the embargo as precaution; Erskine's communication of the British Orders of 11 Nov; Hamburg/Bremen/Holland/Leghorn vexations. **Reached Armstrong only on 26 March (by Lt. Lewis)** -- not known to him on 20 Feb | ASP FR III 249-50; 99-01-02-2678; 99-01-02-2907 |
+| 13-14 Feb 1808 | Armstrong to the Minister of Marine on the *James Adams* (13th); his "2d letter of the 14th of February" to Champagny (unanswered by 28 Feb); a letter to Champagny of the 16th is cited on 2 Apr | 99-01-02-2709, -2758; ASP FR III 251 |
+| **15 Feb 1808** | **Special messenger** (the seaman recommended to Jefferson the same day). THE=972 passages, Bourdeau's decode: France offers "the blessings of equal [alliance?]" with one hand and menaces war with the other; "and with both they pick our pockets"; "a cession of the Floridas and settlement of a [western boundary]" as the price; "In either case, do not suspend a moment the seizure of the Floridas"; encloses Erving's last letter; "Our business here has taken ... an extraordinary turn, and will require on your part some extraordinary measures" | 99-01-02-2703; `decodes/armstrong_1808-02-15.txt`; Jefferson 99-01-02-7420 |
+| 17 Feb 1808 | Minister of Marine's answer (prizes at sea not covered by the forbearance promised for vessels in port); King of Holland's "outlawry of our Commerce" ("omitted mentioning in my letter of the 15th") | 99-01-02-2709; ASP FR III 250 |
+| **20 Feb 1808** | **The target.** Clear frame: "Paris 20th feby 1808 / Sir, / The" + 369 groups and 35 shorthand passages + "I have the honor to be, sir, with very high consideration, your most obedient & very humble servant / John Armstrong" | 99-01-02-2728; `ciphertext.txt` |
+| 22 Feb 1808 | By Mr. Patterson: "Nothing has occurred here since the date of my public dispatches (the 17th. inst.)"; council of administration -- Emperor "highly indignant", decrees "should suffer no Change", "the Americans Should be compelled to take the positive character, either of allies or of enemies"; 160 sequestered cases, >100 million francs; Russia to seize Finland, France & Denmark Sweden; Prince of Ponte Corvo in Holstein; Charles V, the Sound and the Dardanelles; the Pope, Rome, Junot in Portugal, 150,000 French in Spain; P.S.: another attempt on "the two offensive decrees" next Wednesday; "The news of the Embargo came in good time -- by verifying one of my predictions, it gave new weight to others" | 99-01-02-2733; ASP FR III 250-1; line-b B15 (frame 0035) |
+| 28-29 Feb 1808 | Audience with the Prince of Benevento (Talleyrand); cases *Vermont* (Capt. Lyman), *Speculator*, brig *Edward*, *Charleston Packet* (retroactive operation of the December decree); agents of prize causes, Skipwith's fees | 99-01-02-2758, -2761 |
+| 5-9 Mar 1808 | Five notes to the Foreign and Marine ministers unanswered; "Friday" (THE=972) note; 6 Mar: report that the King of Spain will abdicate, Russia presses French mediation with the Porte; 8 Mar: Emperor would consent to an exception from the November decree; Hamburg sequestration raised, Hamburg/Bremen to furnish 2,000 seamen | 99-01-02-2780, -2781, -2798 |
+| 15-26 Mar 1808 | Note on the exception given to Talleyrand; notes of the 19th and 20th to Champagny (certificates of origin, Hamburg); French army reported in Madrid | 99-01-02-2818, -2871 |
+| 5-25 Apr 1808 | Formal remonstrance of 2 Apr presented; Emperor leaves for Spain; Lewis sent via Falmouth; Murat in Madrid; 17 Apr order to seize all American vessels; Napoleon refuses to acknowledge Ferdinand | 99-01-02-2907 ... -2994; ASP FR III 251-2 |
+| 2 May 1808 (Washington) | Madison acknowledges "your several letters of 27th of December, 22d of January, 15th and 17th of February" -- **not the 20th or the 22nd**; Jefferson the same day: "be more frequent & full in your communications with us" | ASP FR III 252; en18 Jefferson *Writings* IX 193-4 |
+| 15-20 May 1808 | Madison: "The undecyphered letter from A. ... No such Cypher is in the office"; Graham forwards a "Duplicate ... in Cypher" with a postscript | 99-01-02-3082; 99-01-02-3101 (line-b B15) |
+
+### (2) Ranked crib list (for LANE-ARM-B to test; nothing here is scored)
+
+Rank is this worker's judgement of how likely the word or phrase is to occur *inside the coded body*, from (a) the
+topics of the five days on either side (15, 17, 22 Feb), (b) how often Armstrong uses it, and (c) whether he would
+think it worth hiding (the THE=972 letters show what he chose to encipher: Talleyrand's private views, the Floridas,
+the French price for an alliance, Danish/Swedish/Russian moves). Counts: letters containing it in clear, Jan-Mar 1808
+(of 12) / Nov 1807-June 1808 (of 32), and total clear occurrences in the 32.
+
+| Rank | Crib | Why | Jan-Mar / all (hits) | Numerals that could travel with it |
+|---|---|---|---|---|
+| 1 | Emperor (also "His Majesty", "H. M.", "Napoleon") | subject of nearly every despatch; 22 Feb's two facts are both the Emperor's acts | 5/12, 15/32 (25); H.M. 2/12, 4/32 (11); Napoleon 1/12, 4/32 (7) | -- |
+| 2 | Florida / the Floridas | 15 Feb's coded close ("seizure of the Floridas", "cession of the Floridas"); always enciphered or private, hence 0 in clear Jan-Mar | 0/12, 2/32 (6) in clear; 1 coded occurrence 15 Feb (Bourdeau) | -- |
+| 3 | decree(s) of November 1806 / December 1807 | the standing grievance; named as a pair in 22 Feb, 28-29 Feb, 5 Mar | 8/12, 11/32 (29) | 1806, 1807, "21 Nov.", "17 Dec." |
+| 4 | allies / alliance / "allies or enemies" | 15 Feb coded ("equal [alliance]"), 22 Feb ("compelled to take the positive character, either of allies or of enemies"), 15 Nov ("common cause against England") | 2/12, 4/32 (5); enemy 1/12, 3/32 | -- |
+| 5 | England / Great Britain / British | the other belligerent; Champagny's "war exists in fact" | 3/12, 8/32 (25) | "11 November" (British Orders) |
+| 6 | Spain (Spanish, King of Spain, Prince of Asturias) | 13 Jan "views ... seriously turned towards Spain"; 22 Feb 150,000 French in Spain; 15 Feb boundary/cession is a Spanish question | 4/12, 11/32 (25) | 150,000 |
+| 7 | war | 15 Feb coded (menace of war), Champagny 15 Jan | 2/12, 4/32 (4) | -- |
+| 8 | Champagny ("Mr. Champagny", "the Minister of Foreign/Exterior Relations") | his 15 Jan note and verbal assurances, Armstrong's notes of the 14th and 16th | 4/12, 7/32 (9) | 15 January, 14th, 16th |
+| 9 | Prince of Benevento / Talleyrand (written T______d in clear 27 Dec) | the 15 Feb Jefferson letter names Talleyrand; 27 Dec enciphered Talleyrand's private opinion; audience 28 Feb | 3/12, 5/32 (5) | -- |
+| 10 | sequestered / sequestration / confiscated / captured | 22 Feb (160 cases, *Julius Henry*, *Juniatta*), 17 Feb (*James Adams*) | sequest 7/12, 10/32 (16); confisc 3/12; captur 5/12 | 160; 27 January; 100 millions; ship names |
+| 11 | embargo | 13 Jan (the French vessel embargo); news of the US Embargo arrived by 22 Feb | 3/12, 8/32 (9) | -- |
+| 12 | Russia, Sweden, Denmark, Finland, Prussia, Austria | 22 Feb's survey of Europe (coded: "Russia ... assists him in accomplishing one half of the object") | Russia 2/12, 5/32 (12); Sweden 2/12; Denmark 1/12; Austria 2/12 | -- |
+| 13 | Portugal, Rome, the Pope, Junot, Holland | 22 Feb and 17 Feb | Portugal 1/12 (5 hits in 32); Holland 1/12 | 1st and 2nd (Feb) |
+| 14 | "our business" / "our affairs" / "this Government" / "the United States" (U. S.) | his stock nouns for the subject (15 Feb "Our business here has taken ... an extraordinary turn") | our business/affairs 3/12; this Government 2/12; U. S. 2/12, 9/32 (11) | -- |
+| 15 | "the 15th" / "the 17th instant" / "my letter of the" / "my last letter" | he opens by citing his previous letter in 13 Jan, 17 Feb, 15 Mar, 26 Mar, 6 Jun; the target follows letters of the 15th and 17th | Nth instant 5/12, 9/32 (10); my (last) letter 2/12, 5/32 (7) | 15, 17 (instant) |
+| 16 | enclosed / inclosed / subjoin / copy | most despatches forward a copy | 7/12, 15/32 (17) | -- |
+| 17 | messenger / conveyance / dispatch | 15 Feb special messenger, 22 Feb Mr. Patterson | messenger 2/12; conveyance 1/12; dispatch 4/12, 11/32 | "twelve hundred francs" (15 Feb) |
+| 18 | Erving (Irving), Pinkney, Skipwith, Monroe, Livingston | named correspondents; Madison's "concerted with another correspondent" | Erving 1/12; Skipwith 2/12; Pinkney 0/12, 2/32 | -- |
+
+Caveat that governs the whole list: Madison wrote that the cipher "must be one concerted with another correspondent"
+and that the letter was "probably misaddressed". If so, the body may be a private letter (to Monroe, Livingston or
+another), and the despatch topics above are a prior, not a constraint. Against that, see (3): the clear frame is
+Armstrong's *official* despatch frame, not his private one.
+
+### (3) Armstrong's opening and closing formulas (the structural cribs)
+
+From `h70/formulas.tsv` (32 letters, Nov 1807-June 1808; the target excluded), verbatim where quoted.
+
+- **Salutation.** "Sir," in all 30 to Madison that carry one; "Dear Sir," in both to Jefferson (15 Feb, 15 Jun 1808).
+  The target has "Sir," -- the official form.
+- **Closing.** The target's clear closing is "I have the honor to be, sir, with very high consideration, your most
+  obedient & very humble servant". Armstrong's closing variants in the 32 (counts of letters):
+  - "I have the honor to be[,] [Sir,] with very high consideration, your most obedient [&] [very] humble Servant"
+    -- 15 Nov 1807 (exact: "I have the honor to be Sir, with very high consideration, your most obedient, & very humble
+    Servant"), 18 Nov, 29 Feb, 15 Mar, 26 Mar 1808 (the last three end "your most Obedient [humble] Servant"); with
+    "very great respect" / "much respect" instead: 27 Dec, 13 Jan, 31 May, 6 Jun. "I have the honor to be" in 12 of
+    32 letters (5 of 12 Jan-Mar).
+  - "I am, Sir, with very high consideration, ..." / "With very high consideration, I am Sir, ..." -- 5 Mar, 5 Apr,
+    12 Apr, 15 Apr, 23 Apr, 25 Apr.
+  - "... and am, Sir, With very high [respect and] consideration, ..." (the formula grows out of the last sentence)
+    -- 29 Nov, 1 Dec 1807, 15 Feb 1808.
+  - "With the highest respect, I am, Sir, ..." 17 Feb; "... believe me to be with the highest consideration, ..."
+    22 Feb; private: "with the truest attachment and respect, D Sir" (Jefferson, 15 Feb).
+  - "with very high consideration" (or "very high respect and consideration") in 17 of 32 letters, 5 of 12 Jan-Mar;
+    "most obedient" 22/32; "humble servant" 17/32.
+  **Structural consequence for the cipher (an inference, not tested):** in 11 of the 12 letters where "I have the
+  honor to be" occurs, it begins a new sentence (the preceding word ends a sentence; 27 Dec lacks the stop in the
+  Founders text but has it in ASP FR III 248; the exception is 25 Jun, "With very high respect, Sir, I have the honor
+  to be"): e.g. 13 Jan
+  "... it may be readily relinquished. I have the honor ..."; 15 Mar "... The channel thro' which my information comes
+  is correct."). So the target's last coded group (`170.`) most probably closes a sentence, and the clear closing does
+  not continue a coded "and am". Where the closing *does* grow out of the text ("and am, Sir," 3 letters; "believe me to
+  be" 22 Feb) the formula starts "with ...", not "I have the honor to be".
+- **What precedes the closing (the last coded sentence, by analogy):** often a short summing-up or a forward look:
+  "If found unnecessary, it may be readily relinquished." (13 Jan); "Our's, in being more temperate, will not, I flatter
+  myself, be less firm." (17 Feb); "This Short Statement Sufficiently indicates the course we ought to take." (15 Feb,
+  mid-letter); "To neither of those Notes have I yet received an answer." (5 Mar); "The channel thro' which my
+  information comes is correct." (15 Mar); "we can only do our duty by preparing for the worst." (6 Jun).
+- **Opening.** The target's first word, in clear, is "The". Armstrong's body opens with "The" in 6 of 32 letters:
+  "The Emperor left Fontainebleau yesterday" (15 Nov), "The enclosed copy of a letter from the Prefect of ..." (18 Nov),
+  "The conjecture offered in my last letter with regard to ..." (13 Jan), "The conversation alluded to in the copy of
+  the letter ..." (9 Mar), "The writer of the letter appended to this note ..." (8 Apr), "The St. Michael arrived at
+  l'Orient ..." (25 Jun). Four of the six continue with a reference to an earlier letter or an enclosure within the
+  first ten words. Other first sentences cite the last letter directly: "I Stated in my last letter ..." (15 Mar), "My
+  last letter was of the 15th. inst." (26 Mar), "In my letter of the 16th. ultimo ..." (6 Jun). Note: the target's
+  coded body begins immediately after "The" (`453. 240. 760. 1480.`), so if Armstrong enciphered from the second word,
+  the code's first value is a noun or adjective of a "The ___" subject.
+- **Dateline.** "Paris 20th feby 1808" matches his ordinary form ("Paris 15 february 1808", "Paris 22 february 1808",
+  "Paris 29 Feby. 1808"); an ordinal in the dateline is less usual (28th Oct, 15th Nov, 22d Dec 1807 only).
+- **Numbers in clear.** Armstrong writes dates and sums in clear around the THE=972 passages ("the 17th. inst.",
+  "1806", "twelve hundred francs", "150,000 men"); Bourdeau's two decodes on file (15, 22 Feb) contain no enciphered
+  date or sum. Inference from those two letters only: a numeral in the target's body is more likely a code value than
+  a literal date.
+
+### (4) Searched and not found
+
+- **No editorial note on any of the 32 Founders items** fetched (Early Access: source line only), so PJM-SS's
+  annotation for Jan-Mar 1808 is not online; the printed PJM-SS volume for 1808 was not reached (no IA/HathiTrust copy
+  searched this pass; Founders prints PJM-SS text as Early Access).
+- **No letter from Armstrong to Madison dated 18-19 or 21 Feb 1808** in the Founders chain (sequence 15, 17, 20, 22,
+  28, 29 Feb), and none to Jefferson between 15 Feb and 15 Jun 1808.
+- **22 January 1808** is printed in ASP FR III as an extract dated 22 Jan; the Founders chain has the same text as
+  **13 January** (99-01-02-2560) and no separate 22 Jan item -- either ASP misdates it or a second copy was dated the
+  22nd; not resolved (it does not bear on the target).
+- **ASP FR III prints no extract of the 15 Feb (coded) or 20 Feb letters**; the 22 Feb extract stops at "... that you
+  will immediately take your's", omitting the coded survey of Europe. Madison's 2 May acknowledgement lists 27 Dec,
+  22 Jan, 15 and 17 Feb only.
+- **Madison to Armstrong between 8 Feb and 2 May 1808:** none in the Founders chain; the 8 Feb instruction (with an
+  18 Feb continuation) was the only one in transit at the target's date and had not arrived.
+- **Founders API** (`/API/docdata/...`): 202 to curl, CloudFront 403 to the headless browser -- not usable; document
+  pages work through `tools/browser_fetch.js`.
+- Not searched this pass: Monroe's papers for an Armstrong letter of Feb 1808 (H71/H72 and ASKS 97 cover the
+  catalogues), Brant's *James Madison: Secretary of State* narrative (no full text found to grep), newspapers.
+
+Requests this pass: founders.archives.gov 40 (38 document pages + 1 curl API 202 + 1 browser API 403, headless,
+one at a time, 2 s apart); archive.org 7 (2 advancedsearch, 4 metadata, 1 djvu.txt); be-api.us.archive.org 4. Log in
+`h70/requests.log`. No subagents, no vision calls.
