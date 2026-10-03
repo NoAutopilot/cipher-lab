@@ -27,3 +27,14 @@ Regrade: recompute VERIFY-DIN2's strict count with the promoted rows' explained 
 `firm/firm_grades.py`, with `--check`), and add a decode.json job carrying the strict grades per row
 (`f130/print/key_dk_strict.tsv`) so `tools/decode_key.py --check` reproduces the strict counts. Token conf rule unchanged
 (C only on a sign read H). Report both the old strict figure (C 177 M 311 U 39) and the new one.
+
+## Addendum: rows `0` and `a` (DIN-LEFT, account-1 worker, 3 Oct 2026, written ~09:28 UTC before any occurrence is read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-din-left.md` step 1. The rule above is applied **unchanged** (same three
+classes, same evidence requirements, same promotion rule: a row is promoted only if every one of its conflicts is
+spelling or slip; any unexplained conflict keeps it M) to the two remaining minority-conflict rows of
+`f128/print_align/key_print.tsv`: `0` (e 11/18; s 4, p 2, c 1 -- 7 conflicting occurrences) and `a` (q 4/5; ul 1 -- 1
+conflicting occurrence). For `a` the key value is q; a print chunk "ul" can only be spelling or slip if the gloss or a
+neighbouring sign accounts for both letters. Disclosure: before writing this I have seen only the key_print.tsv row counts
+quoted here and AUDIT.md's summary of them; no occurrence, print word, gloss word or neighbouring sign. Results append to
+`firm/conflicts.tsv`; `firm/firm_grades.py` is re-run unchanged (it already reads every row in conflicts.tsv).
