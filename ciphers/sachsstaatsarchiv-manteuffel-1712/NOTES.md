@@ -1,4 +1,5 @@
-blocked
+partial
+Krauske 1893 key table (SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/10 ff.1-5, images 0003-0007) read by this worker at ff.1, 2 and 4 (GAPS158, 3 Oct 2026; table transcribed ff.2-5 by GAPS151), and Neues Archiv für sächsische Geschichte vols. 14-19 (1893-98) full-text grepped (djvu, A2-SAX 3 Oct 2026): no printed decipherment of the 1712-13 reports found; partial because Krauske's table and the period glosses read the glossed leaves, while unglossed leaves (694/08 f.409, codes to 1056) have no key reading yet.
 
 # Krauske's 1893 decipherment of Manteuffel's 1712-13 reports to Flemming — SHStA Dresden (print check only)
 
@@ -289,22 +290,84 @@ check-solved verdict naming the edition read and a Premise check are written.
 Vision: 2 blind subagent passes (Opus, one call each) + 2 reconciler crop reads + 2 layout reads by this worker. Requests: none
 (image on disk). Credit: the key is Dr. (Otto) Krauske's 1893 table, Loc. 694/10 (rule 8).
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX)
-Read so far: 1 leaf of the 1712-13 reports decoded (694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed); Krauske's key table imaged (7 frames, ff.1-5), untranscribed; 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
-- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5; spelled 'Welling' 6/7, 34=p vs i); 694/08 f.409 (frame 0510) codes run 213-1056, past the table; open: whose hand wrote the f.468 glosses (Krauske 1893 or period) -- next: compare the gloss hand with Loc. 694/10 ff.1-5 on disk, one reader call, ~$1
+## GAPS158-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): intake requirements and the f.468 gloss hand
+
+Intake gate before work: `sachsstaatsarchiv-manteuffel-1712: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
+Line 1 was moved from `blocked` to `partial` in this step, after the edition sentence (line 2), the Premise check below and
+the Web and blog check (end of file) were written. Gate output after the change is pasted at the end of this section.
+
+**Gloss hand (M-grade judgement, one vision call).** Crops cut with `python3 tools/iiif_lines.py --image` (manifest in
+images/hand_crops/manifest.json): f.468 `--image images/loc694-08-09/694-08_0580.jpg --region 870,1135,1270,1660 --prefix f468g
+--lines-per-crop 3` (8 crops); Krauske's hand: `--image images/0003.jpg --region 2100,700,1680,1600 --prefix k694f1` (f.1 title),
+`--image images/0004.jpg --region 2100,870,1680,1400 --prefix k694f2` (f.2 head), `--image images/0006.jpg --region 2900,870,880,2600
+--prefix k694f4R` (f.4 right column, codes 130-217). One montage (f468g_L01, L06, L07 above k694f4R) read by this worker.
+What was compared, same words in both hands:
+- **Script choice.** Krauske writes every German or Baltic name in Kurrent (130 Welling, 155 Flemming, 160 Manteuffel,
+  191 Stenbock, 154 Feldmarschall) and French titles in Latin script. The f.468 glosses write *Welling*, *Stenbock*, *Ilgen*,
+  *Arn*, *Stanis.* in a small Latin cursive. Same name, different script: not Krauske's table hand.
+- **Orthography.** Krauske: "Roi de Suède" (186, 187), "le roi de Prusse" (257), modern spelling with accent. The glosses:
+  "le Roy de Suede", "le Roy de Prusse": the 1712 spelling, matching the letter's own clear text on the same leaf.
+- **Letterforms and size.** Krauske's 1893 hand is large, rounded and upright, with a looped final d. The glosses are small,
+  steep and fluent, in the same pen weight and ink tone as the letter's text on the microfilm.
+Judgement (M): **the f.468 glosses are not in Krauske's hand. On script, spelling and ink they fit a period (1712-13) decipherer**,
+most likely in Flemming's chancery on receipt. This rests on a grayscale microfilm and one comparison; a different 19th-century
+archival hand is not excluded, but the "Roy" spelling makes it unlikely. Consequences: (1) the 17/17 gloss-key agreement
+(GAPS154) is a check of Krauske's table against an independent witness, not against his own notes; (2) f.468 carries its own
+period decipherment, so any reading of its code groups is a re-reading of an already deciphered leaf (calibration, N0-shaped;
+the class is a verifier's to assign, rule 10). Side note: Krauske gives 130 = Welling, while f.468 spells Welling out with
+letter codes (3.35.44.12.34.21.7), so the writer did not use the nomenclator entry in this letter (I).
+
+## Premise check (GAPS158, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found**: Krauske's 1893 "Chiffre-Auflösungen" (Loc. 694/10; a code table,
+not a running decipherment of any letter; opened, ff.1-5 imaged, transcribed into key.tsv) and the interlinear glosses on
+694/08 f.468 (opened at native resolution, judged a period hand above). So glossed leaves are already deciphered, and
+Krauske had worked out codes 1-401 by 1893. What stays open is any leaf without glosses whose codes the table does not cover:
+694/08 f.409 (frame 0510), codes 213-1056, no gloss seen (A2-SAX2).
+(b) Other solvers' working files -- **not found**: `sources/cryptiana/`, `sources/decode/` and both solver repositories
+(dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers) grepped for Manteuffel, Flemming, Krauske: zero hits (24 Sept 2026
+pass, NOTES "Print check" item 4); no other solver has applied a key to these letters.
+(c) Physical neighbours -- **partly checked**: frame 0580 is a two-page spread; both pages (f.468 and its facing page,
+R01-R03) were read by GAPS154 and carry no decipherment beyond the interlinear glosses. Adjacent frames 0579/0581 and the
+leaves around f.409 (0509/0511) have not been fetched; next: fetch those 4 frames and view at 1600 px, about $1.
+(d) Recipient side -- **not found**: the recipient is Flemming (Saxon cabinet). NASG 1893-98 (vols 14-19) grepped, no hit
+on the reports. Haake's Flemming studies: no archive.org item (advancedsearch `creator:Haake AND Flemming`, 0 results, 3 Oct
+2026). The Prussian side (Manteuffel was envoy in Berlin) has no edition located for 1712-13 dispatches.
+
+Gate after the change (`python3 tools/intake_gate_check.py sachsstaatsarchiv-manteuffel-1712`, exit 0):
+`partial (line 1) -- edition/page or full-text-search citation found within 6 lines`. `tools/gaps_check.py`: OK keep-going,
+4 internal gaps. `tools/next_steps.py --wait-only | grep manteuffel`: no line.
+Vision: 1 montage read by this worker (no subagents). Requests: archive.org 1 (advancedsearch); WebSearch 7.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026)
+Read so far: 1 leaf of the 1712-13 reports decoded (694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
+- Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.409 (frame 0510) codes run 213-1056, past the table; next: two blind passes of f.409's code groups and a split check of the high codes against key.tsv + compounds.tsv, ~$3
 - Loc. 694/08 and /09 ciphered reports, 877 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 17 sampled (A2-SAX2: 2 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
-- print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; NOTES 24 Sept steps (2)-(3); next: IA/Google Books fts for Haake + read the paper, ~$1
+- print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; Haake has no archive.org item (GAPS158); next: Google Books API fts for Haake (country=US) + read the paper, ~$1
+- premise (c) neighbours, frames 0579/0581 and 0509/0511 - blocker: not-attempted; not fetched in this step (scope); next: 4 frames at 1600 px, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
-- [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); independence of the glosses from Krauske not yet judged
+- [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); gloss hand judged period, not Krauske's (GAPS158, 3 Oct 2026, M)
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
-- [ ] print: NASG 1893-98 done, no print found; Haake and the Wackerbarth paper still to read
+- [ ] print: NASG 1893-98 done, no print found; Haake (no IA item) and the Wackerbarth paper still to read
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 17 sampled (2 cipher, 1 possible, A2-SAX2 3 Oct 2026), 877 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: judge the f.468 gloss hand against Krauske's own hand on Loc. 694/10 ff.1-5 (images on disk, one reader call, ~$1), which decides whether the 17/17 gloss agreement is an independent check; then the check-solved + Premise check that would let line 1 read partial (Haake, the Wackerbarth paper), ~$3
+Verdict: keep going: 4 internal gaps; cheapest next: fetch the 4 neighbour frames of f.468 and f.409 (0579/0581, 0509/0511) and look for glosses or a clear copy, ~$1; then f.409's code groups (two blind passes + split check against Krauske's key and compounds), ~$3
 
-## While waiting (GAPS154, 3 Oct 2026)
+## While waiting (GAPS158, 3 Oct 2026)
 
-- Judge the f.468 interlinear gloss hand against Krauske's own hand on Loc. 694/10 ff.1-5 (images/0003-0007.jpg on disk): one reader call, ~$1, depends on nobody; it decides whether the 17/17 gloss agreement is an independent check of the key.
+- Fetch 694/08 frames 0579, 0581, 0509, 0511 (URLs in images/loc694-08-09/frames.tsv, plain curl) and look for glosses or a clear copy beside f.468 and f.409: ~$1, depends on nobody.
+
+## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026): (1) `Manteuffel Flemming 1712 Berichte Chiffre Berlin` -- Wikipedia (de) Manteuffel,
+en Flemming, Kulturportal West-Ost, a ResearchGate paper on Anna von Cosel: biographies only, nothing on the cipher or a
+decipherment; (2) `"Loc. 694" Manteuffel Flemming Chiffre Krauske` -- no relevant hit (LoC photographs, unrelated Krauses);
+(3) `"Chiffre-Auflösungen" Manteuffel Flemming 1712 1713` -- Sächsische Biografie, Deutsche Biographie, Wikipedia: biographies,
+no cipher; (4) decoded-text phrase `Manteuffel Flemming Stenbock 1712 lettre chiffrée "Welling" Ilgen` -- Gadebusch/Stenbock
+pages, no letter text. Blogs, site search by name: **Cipherbrain** (`site:scienceblogs.de`, Klausis Krypto Kolumne) -- no
+Manteuffel/Flemming post; **Cryptiana blog** (`site:cryptiana.blogspot.com`) -- no matching post; **Cipher Mysteries**
+(`site:ciphermysteries.com`) -- no matching post. No plausible hit, so no comment thread needed opening. A search result, not a
+novelty verdict (rule 10).
