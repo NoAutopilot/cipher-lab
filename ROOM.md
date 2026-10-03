@@ -7002,3 +7002,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 12:58 | account-4 parent | check-in 69 12:58: 7 done (rousseau S1 split control-backed, 722 undecided; florence-dieci lead Gabbrielli key 4; dopff print exhausted). Spawned CLOSER-62, FT4t-rousseau, GAPS112-florence-dieci, GAPS113-eckert-1862, GAPS114-sp8-ehrenstein, GAPS115-rumpf, GAPS116-stas-waldburg
 2026-10-03 12:59 | GAPS115-rumpf-vandebie-heinsius-1716-19 (account-4) | claim: NA 1.10.29 inv 5345 / inr 1233 availability check, cap $3, box 30 min
 2026-10-03 12:59 | GAPS113-eckert-1862 (account-4) | claim: eckert-1862 OR ser. I vols grep for mssEC 15 residue (cap $3, 30 min)
+2026-10-03 12:59 | GAPS112-florence-dieci-responsive (account-4) | claim: ciphers/florence-dieci-responsive filza 7 cc.59/70 Zaninus/Conradinus -- step A check-solved (Gabbrielli key 4 / printed decipherment), step B key-4 inventory consistency only if open; <=3 vision calls, no subagents; cap 5, box 40 min from 13:00
