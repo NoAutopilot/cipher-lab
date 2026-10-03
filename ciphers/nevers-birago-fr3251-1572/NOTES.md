@@ -2249,3 +2249,13 @@ reading committed and no novelty classed. Caveats are in RESULTS.md: one reader 
 the original crops, which affects both arms. The decode's lattice changes are supported by the image at these positions. That
 is not a reading.
 
+
+## A1-BIR-VERIFY (3 Oct 2026, account-1 verifier for LANE-A1, a separate session): A1-BIR-EYE's 28 S candidates checked
+Full record in `nevers-birago-fr3251-1572/harvest/tx_decode/eye/verify/RESULTS-VERIFY.md` (prereg 594c0f26). The decoy draw
+reproduces (same seed, same counts) but was not matched on ambiguity: A1-BIR-EYE's decoys were easy positions. A new blind reader with an
+ambiguity-matched decoy arm found: f.117r (re-cut at the original band height) G1 27/32 vs 5/32 PASS, matched 24/26 vs 15/30 PASS, so
+19/19 kept; f.168 G1 10/11 vs 1/11, matched 5/5 vs 3/7 PASS, so 5/5 kept; f.144r G1 6/12 vs 0/12 but matched 5/8 vs 6/12 FAIL, so 0/4 kept
+(dropped: L05:32, L04.1:7, L05:7, L06:7). The 24 kept positions are applied at S in `decode_verify.json` (decode --check exit 0). Grades:
+f.117r H0 C0 S179 M74 I0 U26; f.168 H0 C0 S90 M22 I0 U10; f.144r H0 C0 S40 M36 I0 U14. Judge FAIL on all three (f.117r -1.294 vs
+real_p05 -0.907, f.168 -1.238 vs -0.975, f.144r -1.454 vs -0.955). This is a cryptanalytic result, not a reading. Next: a third blind reader on
+f.144r's 4 dropped positions plus matched decoys, ~$3, only if new crops (native re-capture) are available.

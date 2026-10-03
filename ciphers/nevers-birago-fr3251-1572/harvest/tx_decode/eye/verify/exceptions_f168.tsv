@@ -1,0 +1,6 @@
+folio	line	pos	value	grade	reason
+f168	V03	1	m	S	A1-BIR-VERIFY kept: image read X_NEW->T17 (blind, G1+G2 PASS)
+f168	R03	4	r	S	A1-BIR-VERIFY kept: image read T24->T83 (blind, G1+G2 PASS)
+f168	R02	17	m	S	A1-BIR-VERIFY kept: image read X_NEW->T17 (blind, G1+G2 PASS)
+f168	V03	10	l	S	A1-BIR-VERIFY kept: image read T49->T51 (blind, G1+G2 PASS)
+f168	V01	10	r	S	A1-BIR-VERIFY kept: image read T24->T83 (blind, G1+G2 PASS)

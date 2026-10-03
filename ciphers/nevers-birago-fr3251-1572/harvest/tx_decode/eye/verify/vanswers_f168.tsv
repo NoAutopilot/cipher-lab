@@ -1,0 +1,30 @@
+qid	answer	conf	note
+vf168-01	A	H	clear '4'-shape after lambda; not the d-epsilon of T83
+vf168-02	A	M	t-like sign: upright with top bar and foot curling right; closest to T17 C-with-ascender
+vf168-03	B	L	long-s stem with hook and small loop at top right, foot to left; loose match to T27 loop-on-curled-stem
+vf168-04	B	H	plain cross
+vf168-05	A	M	triangle with a cross stroke below it; composite cross+triangle, not a bare triangle
+vf168-06	B	M	P-loop to right of stem, dot, bar low on stem; not circle-on-stem
+vf168-07	B	H	cross above an 8/circle form, matches T90
+vf168-08	B	H	two-part d+epsilon form
+vf168-09	A	H	S with slash through, matches T97
+vf168-10	A	M	large K-shape with long slashing stroke; bigger and different from small cross-k of T51
+vf168-11	A	M	t-like sign same as V03 opening; matches T17 C-with-ascender
+vf168-12	A	H	two verticals with one horizontal bar
+vf168-13	A	H	two verticals with one horizontal bar
+vf168-14	A	H	pi
+vf168-15	A	H	n with z-tail descender
+vf168-16	B	M	9 with straight descender bending slightly left, matches T76
+vf168-17	A	H	q-over-b double loop, matches T89
+vf168-18	B	H	two verticals with one horizontal bar
+vf168-19	B	H	two verticals with one horizontal bar
+vf168-20	A	M	stem with loop head, blob, and horizontal foot bar at base; foot matches T66
+vf168-21	A	H	n with z-tail descender
+vf168-22	B	H	trident/Sh shape
+vf168-23	A	M	stem with small loop top right and crossbar low; no box top of T49
+vf168-24	A	H	circle bisected by vertical with cross below, matches T65
+vf168-25	A	H	two-part d+epsilon form
+vf168-26	B	H	m with curled left stroke, matches T38 not plain m
+vf168-27	B	H	two-part d+epsilon form
+vf168-28	B	M	bare triangle, small tick inside, no cross attached
+vf168-29	A	M	upper curl left, diagonal, closed loop lower right; two-loop form nearer T89 than T56
