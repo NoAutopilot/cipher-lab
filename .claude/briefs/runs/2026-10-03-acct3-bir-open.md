@@ -16,3 +16,9 @@ open-choice blind re-read of the M positions against the full printed-key sign s
    stay M. decode_key.py --check; judge lines pasted in NOTES.md.
 3. NOTES section in both folders; gaps_check; file_shrink_guard; commit by explicit path; push.
 Grades per leaf. Report what was found and where it was not found; do not classify novelty.
+
+## BIR-OPEN-144 (added 13:4x UTC): same job on f.144r only
+nevers-birago-fr3251-1572 f.144r (M 36, U 14; its 4 A1 lattice corrections failed the matched-decoy arm). Same protocol, cap USD 5,
+box 35 min, vision calls <= 2. Apply the grade policy in 2026-10-03-acct3-bir-apply.md (S only where two blind instruments agree;
+for f.144r that is the open-choice read agreeing with A1-BIR-EYE's G1 pick, all others M). Judge with it. Conflicts -> append to
+eye/open/sorter/focus.tsv (the orchestrator republishes the sorter page).
