@@ -508,9 +508,21 @@ job 2 = the repaired key). `python3 ciphers/fr3621-dinteville-1592/f130/repair_f
 committed outputs match". No spec exists for this target, so judge_plaintext.py was not run as a spec judge. Its
 NgramModel is the statistic above. Requests: none. Vision calls: none. Rule 10: no novelty claim.
 
+## Verifier (VERIFY-DIN, account 3, 3 Oct 2026, 07:26-07:50 UTC) -- see AUDIT.md
+
+N3 for the f.130 cipher fragments, key source `period`. Re-derived exactly (all four --check pass). Controls at fresh seeds:
+key_syl -1.334 vs free-shuffle max -1.537/-1.523/-1.463 and frequency-banded-shuffle max -1.440/-1.526 (0/5000); repaired
+-1.271 vs repaired-shuffle p95 -1.583/-1.588 (0/2000). Power at 11% injected error on a same-design synthetic: exact key
+5/5 beat all shuffles; real f.130 sits between an exact key and 4 of 33 rows wrong. The repair climb fails its own
+known-answer test (4/14 held rows; 40% of freed rows at 11%), so the 71 S are M, and five low-agreement rows the repair
+graded C (1, D, T, o, 9) are M: **licensed C 263 S 0 M 264 U 0**. h and D: M; the letters the words want (p, c/d) are I.
+Found in print: *Revue de Champagne et de Brie* t.XII (1882) pp.340-341 prints f.128 (1 July) in full and calendars f.130
+(4 July, "En chiffres") from its clear text only (`print/revue-champagne-t12-1882-pp340-341.txt`). Script verify/verify_din.py.
+
 ## Remaining gaps (A2-DIN, 3 Oct 2026)
-Read so far: f.130 530 of 530 signs transcribed and decoded with the repaired key at C 329 / S 71 / M 127 / U 0 (f130/repair/reading.txt; word-level reading of L05, L08-L11 in f130/repair/reading_words.md); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
-- f.130 word-level reading (repaired key, A2-DIN3: fr16 -1.271 vs repaired-shuffle p95 -1.582, 0/1000; C 329 S 71 M 127 U 0; f130/repair/reading_words.md, phrases on L05 and L08-L11) - blocker: not-attempted; h and D rejected by thin f.128 gloss evidence although the f.130 words want h=p and D=c/d, and L01-L04/L06-L07 are undivided; next: a second reader on the f.128 gloss at the h and D (and other drifting) signs, re-run align_f128.py --syl and repair_f130.py, then a verifier session on f130/repair/reading_words.md, ~$4
+Read so far: f.130 530 of 530 signs transcribed and decoded with the repaired key at C 263 / M 264 / U 0 as licensed by VERIFY-DIN (filed as C 329 / S 71 / M 127) (f130/repair/reading.txt; word-level reading of L05, L08-L11 in f130/repair/reading_words.md); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
+- f.130 word-level reading (repaired key, A2-DIN3: fr16 -1.271 vs repaired-shuffle p95 -1.582, 0/1000; C 329 S 71 M 127 U 0 as filed, verifier-licensed C 263 S 0 M 264 (AUDIT.md 2d); f130/repair/reading_words.md, phrases on L05 and L08-L11) - blocker: not-attempted; h and D rejected by thin f.128 gloss evidence although the f.130 words want h=p and D=c/d, and L01-L04/L06-L07 are undivided; next: a second reader on the f.128 gloss at the h and D (and other drifting) signs, re-run align_f128.py --syl and repair_f130.py, then a verifier session on f130/repair/reading_words.md, ~$4
+- f.128 gloss vs its 1882 print (Revue de Champagne et de Brie t.XII p.340 prints the f.128 plaintext in full; VERIFY-DIN, AUDIT.md 3b) - blocker: not-attempted; the print contradicts the gloss reading at 'bestiaux'/'besounasiana' (Besançon/Vesoul) and 'doibt aussi passer' (doivent partir), where h's only gloss support sits; next: normalise print and gloss to one convention (rule 3 PX-BRODEC), re-align f128 with interlinear_align.py against the print, re-run align_f128.py --syl and repair_f130.py, regrade repair_f130.py per AUDIT.md 2d, ~$3
 - f.128 drifting spans (L03 "a geneue +", L04 from "doibt", L05 from "de +") - blocker: not-attempted; likely transcription or gloss-reading error (f128/align_syl.tsv M rows); next: a second reader on those crops only, then re-run align_f128.py --syl, ~$3
 - fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
 
@@ -519,7 +531,7 @@ Read so far: f.130 530 of 530 signs transcribed and decoded with the repaired ke
 - [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9)
-- [ ] key-rebuild: key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repaired (v', 0', weak rows) -1.271 vs repaired-shuffle p95 -1.582 (0/1000, A2-DIN3); h and D still open against the f.128 gloss
+- [ ] key-rebuild: VERIFY-DIN, the repair climb recovers 4/14 held gloss values and 40% of freed rows at 11% error, so its values are M; next: re-align f.128 against the 1882 print. key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repaired (v', 0', weak rows) -1.271 vs repaired-shuffle p95 -1.582 (0/1000, A2-DIN3); h and D still open against the f.128 gloss
 - [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps; cheapest next: a second reader on the f.128 gloss at signs h, D and the drifting spans, then re-run align_f128.py --syl and repair_f130.py, then a verifier on f130/repair/reading_words.md, ~$4
+Verdict: keep going: 4 internal gaps; cheapest next: (VERIFY-DIN) re-align the f.128 gloss against its 1882 print (Revue de Champagne t.XII p.340), or a second reader on the f.128 gloss at signs h, D and the drifting spans, then re-run align_f128.py --syl and repair_f130.py, then a verifier on f130/repair/reading_words.md, ~$4
