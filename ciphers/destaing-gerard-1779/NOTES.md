@@ -262,6 +262,33 @@ founders.archives.gov 1 (202, not retried); ugapress.manifoldapp.org 1 (WebFetch
 - (d) Recipient's side: Gérard's despatches (Meng 1939, searched 25 Sept) and the British recipients' printed papers (HMC American
   MSS i-ii, Stopford-Sackville ii, this pass) -- not found; AAE Supt.1 and AN Marine B4 168 -- unreachable from the cloud, named.
 
+## FT4-destaing-gerard-1779 (3 Oct 2026, account-4) -- planned test, written before the run
+
+Cheapest step named in the folder: the "While waiting" line (Archives nationales catalogue lookup for Marine B4 168);
+the brief's fallback (design prior, period-key registers, Doniol p.774 as crib) is script-only and is run beside it.
+
+- `tools/design_prior.py --no-write ciphertext.tsv` (216 tokens, 104 distinct, 127 references at this N): multi-sign
+  (homophonic/nomenclator/syllabary) d=0.25 vs null_p05 0.23 -> "not above null"; letter-for-letter plausible; mixed
+  plausible; **code excluded** (d=1.29 vs envelope 0.91). Shuffled-input false-positive rate 0.080. Advisory ranking:
+  homophonic 0.29, nomenclator 0.38, syllabary 0.66. Reading: the sign statistics do not favour a large two-part code;
+  a syllabary/nomenclator of about 600 entries stays the working family (grade S, advisory).
+- KEY-OFFICES.tsv / KEY-DESIGN.tsv: the only French key of the 1770s-80s on file is La Luzerne-Destouches, 16 and 31 Jan
+  1781 (`ciphers/huntington-luzerne-destouches-1781/key.tsv`, 281 valued codes in 1-1199, syllabary, French crown's
+  American-theatre naval/diplomatic correspondence; Luzerne succeeded Gérard as minister in 1779). No French navy or
+  Affaires étrangères key of 1778-1780 is on file. Candidate in hand: the Luzerne 1781 key (different correspondents,
+  two years later -- a long shot, but the same office family and the same design family as the prior).
+- **Planned known-key test (pre-registered).** Apply Luzerne `key.tsv` to the 216 CODE tokens. Statistics: (i) coverage
+  (tokens with a keyed value) -- reported only, since a value-shuffled control cannot move it (rule 3, bCAS/AX-5799);
+  (ii) primary: fr18 4-gram mean log10 score (tools/judge_plaintext.py NgramModel) of the decoded text over the
+  maximal runs of consecutive keyed tokens (runs of >=2 tokens), and (iii) fr18 word cover of the same string.
+  Control: 1000 value-shuffled keys (the key's values permuted among its codes; coverage fixed, reading varies, so the
+  control can differ from the target on (ii) and (iii)). Gate: target (ii) above the control's p99. Positive control
+  (matched N and coverage): the same key on its own ciphertext (Luzerne mssDE 108A/68, `ciphertext.tsv`), a 216-token
+  window with tokens masked at random down to the target's own coverage, scored the same way against its own 1000
+  value-shuffled keys; the test is a test only if the positive control clears its own p99 in at least 4 of 5 windows.
+  Crib: Doniol p.774's paraphrase ("fin de mai ... croisière de la Caroline Méridionale") is checked only if the gate
+  passes (a key that fails the gate gives no reading to compare).
+
 ## While waiting (GF4-BATCH13, account-4, 3 Oct 2026)
 
 Waits on: the Clements image (REQUEST.md / SEND-QUEUE S1). The one action that depends on nobody:
