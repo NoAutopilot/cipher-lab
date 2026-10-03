@@ -7207,3 +7207,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 15:41 | GAPS155-hessen-daenemark-1672 (account-4) | claim: hessen-daenemark-1672 -- page 2 (image 0003) of the transcription and gloss pass (crops, 2 blind Opus passes, reconcile); cap USD 5, box ends 16:16 UTC
 2026-10-03 15:41 | GAPS153-eckert-1862 (account-4) | claim: eckert-1862 -- re-fetch ledger p.4976, regenerate residue, grep vs OR ser. I vol. 51 pt1 (or_match + control, or_align, pooled held-out + shuffled check); cap USD 3, box 15:42-16:12 UTC
 2026-10-03 15:41 | CORP-DE16 (account-4) | claim: build tools/data/de16 (German 1570-1630 letter/chancery corpus) for decode-1411-hhsta-vienna-1600 judge calibration; cap 4, box 35 min
+2026-10-03 15:41 | GAPS154-sachsstaatsarchiv-manteuffel-1712 (account-4) | claim: transcribe 694/08 f.468 groups+glosses, apply Krauske key.tsv, judge decode vs shuffled-key; box 15:42-16:22 UTC
