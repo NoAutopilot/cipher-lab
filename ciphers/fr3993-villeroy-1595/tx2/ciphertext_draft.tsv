@@ -1,0 +1,771 @@
+line	position	sign	confidence	alt	why
+f148r	1	L	H		agree
+f148r	2	X	H		agree
+f148r	3	U	H		agree
+f148r	4	o	H		agree
+f148r	5	1	H		agree
+f148r	6	9	H		agree
+f148r	7	:	H		agree
+f148r	8	4	H		agree
+f148r	9	1	H		agree
+f148r	10	C	H		agree
+f148r	11	P	H		agree
+f148r	12	o	H		agree
+f148r	13	d	H		agree
+f148r	14	m	H		agree
+f148r	15	1	H		agree
+f148r	16	3	H		agree
+f148r	17	T	H		agree
+f148r	18	2	H		agree
+f148r	19	1	H		agree
+f148r	20	2	H		agree
+f148r	21	o	H		agree
+f148r	22	2	H		agree
+f148r	23	2	H		agree
+f148r	24	1	H		agree
+f148r	25	2	H		agree
+f148r	26	o	H		agree
+f148r	27	h	H		agree
+f148r	28	J	M	B:X	differ
+f148r	29	1	H		agree
+f148r	30	9	H		agree
+f148r	31	o	H		agree
+f148r	32	8	H		agree
+f148r	33	d	H		agree
+f148r	34	c	M	B:C	differ
+f148r	35	Q	H		agree
+f148r	36	V	M	B:w	differ
+f148r	37	l	M	B:f	differ
+f148r	38	1	H		agree
+f148r	39	4	H		agree
+f148r	40	d	H		agree
+f148r	41	R	M	B:2	differ
+f148r	42	C	H		agree
+f148r	43	3	M	B:z	differ
+f148r	44	2	H		agree
+f148r	45	o	H		agree
+f148r	46	W	H		agree
+f148r	47	P	H		agree
+f148r	48	p	H		agree
+f148r	49	1	H		agree
+f148r	50	7	H		agree
+f148r	51	5	H		agree
+f148r	52	h	H		agree
+f148r	53	X	M	B:y	differ
+f148r	54	4	H		agree
+f148r	55	1	H		agree
+f148r	56	x	H		agree
+f148r	57	D	H		agree
+f148r	58	k	H		agree
+f148r	59	K	M	B:#	differ
+f148r	60	u	M	B:N	differ
+f148r	61	1	H		agree
+f148r	62	5	H		agree
+f148r	63	2	H		agree
+f148r	64	C	H		agree
+f148r	65	H	M	B:j	differ
+f148r	66	x	H		agree
+f148r	67	4	H		agree
+f148r	68	1	H		agree
+f148r	69	q	H		agree
+f148r	70	:	M	A:-	gap
+f148r	71	:	H		agree
+f148r	72	K	M	B:#	differ
+f148r	73	N	H		agree
+f148r	74	7	H		agree
+f148r	75	1	H		agree
+f148r	76	2	H		agree
+f148r	77	6	H		agree
+f148r	78	2	H		agree
+f148r	79	7	H		agree
+f148r	80	1	H		agree
+f148r	81	7	H		agree
+f148r	82	1	H		agree
+f148r	83	o	H		agree
+f148r	84	U	H		agree
+f148r	85	2	H		agree
+f148r	86	o	H		agree
+f148r	87	8	H		agree
+f148r	88	L	H		agree
+f148r	89	R	M	B:x	differ
+f148r	90	2	H		agree
+f148r	91	2	H		agree
+f148r	92	1	H		agree
+f148r	93	5	H		agree
+f148r	94	T	H		agree
+f148r	95	j	M	B:H	differ
+f148r	96	:	H		agree
+f148r	97	z	H		agree
+f148r	98	1	H		agree
+f148r	99	4	H		agree
+f148r	100	5	H		agree
+f148r	101	K	M	B:#	differ
+f148r	102	:	H		agree
+f148r	103	i	H		agree
+f148r	104	6	H		agree
+f148r	105	4	H		agree
+f148r	106	i	H		agree
+f148r	107	3	H		agree
+f148r	108	2	H		agree
+f148r	109	2	H		agree
+f148r	110	K	M	B:#	differ
+f148r	111	1	H		agree
+f148r	112	7	H		agree
+f148r	113	3	H		agree
+f148r	114	1	H		agree
+f148r	115	9	H		agree
+f148r	116	1	H		agree
+f148r	117	2	H		agree
+f148r	118	o	H		agree
+f148r	119	x	H		agree
+f148r	120	h	H		agree
+f148r	121	4	H		agree
+f148r	122	w	H		agree
+f148r	123	4	H		agree
+f148r	124	1	H		agree
+f148r	125	1	H		agree
+f148r	126	2	H		agree
+f148r	127	3	H		agree
+f148r	128	K	M	B:#	differ
+f148r	129	I	M	B:L	differ
+f148r	130	T	H		agree
+f148r	131	N	H		agree
+f148r	132	Q	H		agree
+f148r	133	t	H		agree
+f148r	134	2	H		agree
+f148r	135	o	H		agree
+f148r	136	2	H		agree
+f148r	137	i	H		agree
+f148r	138	t	H		agree
+f148r	139	o	H		agree
+f148r	140	L	H		agree
+f148r	141	P	H		agree
+f148r	142	1	H		agree
+f148r	143	7	H		agree
+f148r	144	2	H		agree
+f148r	145	i	H		agree
+f148r	146	7	H		agree
+f148r	147	o	H		agree
+f148r	148	:	H		agree
+f148r	149	K	M	B:F	differ
+f148r	150	V	M	B:w	differ
+f148r	151	R	M	B:2	differ
+f148r	152	m	H		agree
+f148r	153	2	M	B:z	differ
+f148r	154	h	H		agree
+f148r	155	1	H		agree
+f148r	156	4	H		agree
+f148r	157	q	M	A:-	gap
+f148r	158	c	H		agree
+f148r	159	P	H		agree
+f148r	160	R	M	B:x	differ
+f148r	161	C	H		agree
+f148r	162	l	M	B:L	differ
+f148r	163	1	H		agree
+f148r	164	5	H		agree
+f148r	165	U	H		agree
+f148r	166	N	H		agree
+f148r	167	Q	H		agree
+f148r	168	W	M	A:-	gap
+f148r	169	2	M	A:-	gap
+f148r	170	V	M	B:o	differ
+f148r	171	R	M	B:2	differ
+f148r	172	o	H		agree
+f148r	173	v	H		agree
+f148r	174	L	H		agree
+f148r	175	4	H		agree
+f148r	176	1	H		agree
+f148r	177	9	H		agree
+f148r	178	2	H		agree
+f148r	179	o	H		agree
+f148r	180	7	H		agree
+f148r	181	N	M	B:7	differ
+f148r	182	y	M		agree-flagged
+f148r	183	o	H		agree
+f148r	184	6	H		agree
+f148r	185	1	H		agree
+f148r	186	2	H		agree
+f148r	187	d	H		agree
+f148r	188	e	H		agree
+f148r	189	7	H		agree
+f148r	190	2	H		agree
+f148r	191	4	H		agree
+f148r	192	1	H		agree
+f148r	193	5	H		agree
+f148r	194	8	H		agree
+f148r	195	3	H		agree
+f148r	196	9	H		agree
+f148r	197	X	M	B:y	differ
+f148r	198	x	H		agree
+f148r	199	o	H		agree
+f148r	200	o	H		agree
+f148r	201	d	H		agree
+f148r	202	T	H		agree
+f148r	203	U	H		agree
+f148r	204	P	M	A:-	gap
+f148r	205	V	M	B:w	differ
+f148r	206	L	H		agree
+f148r	207	2	H		agree
+f148r	208	o	H		agree
+f148r	209	3	H		agree
+f148r	210	1	H		agree
+f148r	211	6	H		agree
+f148r	212	2	H		agree
+f148r	213	m	H		agree
+f148r	214	T	H		agree
+f148r	215	o	M	A:-	gap
+f148r	216	W	M	B:o	differ
+f148r	217	1	H		agree
+f148r	218	2	H		agree
+f148r	219	1	H		agree
+f148r	220	#	M	B:y	differ
+f148r	221	1	H		agree
+f148r	222	6	H		agree
+f148r	223	2	H		agree
+f148r	224	w	H		agree
+f148r	225	u	M	B:w	differ
+f148r	226	2	H		agree
+f148r	227	o	H		agree
+f148r	228	2	H		agree
+f148r	229	2	H		agree
+f148r	230	7	H		agree
+f148r	231	P	H		agree
+f148r	232	R	M	B:2	differ
+f148r	233	o	H		agree
+f148r	234	1	H		agree
+f148r	235	5	H		agree
+f148r	236	1	H		agree
+f148r	237	2	H		agree
+f148r	238	5	H		agree
+f148r	239	4	H		agree
+f148r	240	1	H		agree
+f148r	241	9	H		agree
+f148r	242	4	H		agree
+f148r	243	d	H		agree
+f148r	244	C	H		agree
+f148r	245	t	H		agree
+f148r	246	N	H		agree
+f148r	247	d	H		agree
+f148r	248	R	M	B:2	differ
+f148r	249	T	H		agree
+f148r	250	2	H		agree
+f148r	251	o	H		agree
+f148r	252	L	H		agree
+f148r	253	1	H		agree
+f148r	254	2	H		agree
+f148r	255	o	H		agree
+f148r	256	d	H		agree
+f148r	257	W	H		agree
+f148r	258	Q	H		agree
+f148r	259	9	H		agree
+f148r	260	h	H		agree
+f148r	261	R	M	B:x	differ
+f148r	262	1	H		agree
+f148r	263	1	H		agree
+f148r	264	3	H		agree
+f148r	265	1	H		agree
+f148r	266	9	H		agree
+f148r	267	o	H		agree
+f148r	268	d	H		agree
+f148r	269	C	H		agree
+f148r	270	R	M	B:e	differ
+f148r	271	1	H		agree
+f148r	272	6	H		agree
+f148r	273	y	H		agree
+f148r	274	v	H		agree
+f148r	275	R	M	B:2	differ
+f148r	276	o	H		agree
+f148r	277	o	H		agree
+f148r	278	1	H		agree
+f148r	279	C	H		agree
+f148r	280	P	H		agree
+f148r	281	1	H		agree
+f148r	282	2	H		agree
+f148r	283	L	H		agree
+f148r	284	h	H		agree
+f148r	285	z	H		agree
+f148r	286	o	H		agree
+f148r	287	o	H		agree
+f148r	288	1	H		agree
+f148r	289	9	H		agree
+f148r	290	Q	H		agree
+f148r	291	1	H		agree
+f148r	292	7	H		agree
+f148r	293	o	H		agree
+f148r	294	2	H		agree
+f148r	295	2	H		agree
+f148r	296	W	H		agree
+f148r	297	T	H		agree
+f148r	298	1	H		agree
+f148r	299	4	H		agree
+f148r	300	8	H		agree
+f148r	301	l	H		agree
+f148r	302	U	H		agree
+f148r	303	o	H		agree
+f148r	304	P	H		agree
+f148r	305	R	M	B:2	differ
+f148r	306	2	H		agree
+f148r	307	o	H		agree
+f148v	1	1	H		agree
+f148v	2	3	H		agree
+f148v	3	3	H		agree
+f148v	4	2	H		agree
+f148v	5	o	H		agree
+f148v	6	d	H		agree
+f148v	7	x	H		agree
+f148v	8	o	H		agree
+f148v	9	x	H		agree
+f148v	10	C	H		agree
+f148v	11	c	H		agree
+f148v	12	7	H		agree
+f148v	13	t	H		agree
+f148v	14	h	H		agree
+f148v	15	W	H		agree
+f148v	16	R	M	B:x	differ
+f148v	17	2	H		agree
+f148v	18	6	H		agree
+f148v	19	2	H		agree
+f148v	20	f	H		agree
+f148v	21	x	H		agree
+f148v	22	T	H		agree
+f148v	23	2	H		agree
+f148v	24	o	H		agree
+f148v	25	1	H		agree
+f148v	26	4	H		agree
+f148v	27	T	H		agree
+f148v	28	o	H		agree
+f148v	29	y	H		agree
+f148v	30	o	H		agree
+f148v	31	o	H		agree
+f148v	32	W	H		agree
+f148v	33	A	M		agree-flagged
+f148v	34	t	M	A:-	gap
+f148v	35	H	M	B:i	differ
+f148v	36	q	H		agree
+f148v	37	:	H		agree
+f148v	38	7	H		agree
+f148v	39	2	H		agree
+f148v	40	7	H		agree
+f148v	41	1	H		agree
+f148v	42	2	H		agree
+f148v	43	2	H		agree
+f148v	44	1	H		agree
+f148v	45	a	H		agree
+f148v	46	x	H		agree
+f148v	47	1	M	B:i	differ
+f148v	48	9	H		agree
+f148v	49	4	H		agree
+f148v	50	2	H		agree
+f148v	51	o	H		agree
+f148v	52	3	H		agree
+f148v	53	5	H		agree
+f148v	54	1	H		agree
+f148v	55	5	H		agree
+f148v	56	1	H		agree
+f148v	57	2	H		agree
+f148v	58	7	H		agree
+f148v	59	1	H		agree
+f148v	60	3	H		agree
+f148v	61	2	H		agree
+f148v	62	2	H		agree
+f148v	63	K	M	B:#	differ
+f148v	64	x	H		agree
+f148v	65	A	H		agree
+f148v	66	U	M	B:m	differ
+f148v	67	V	M	B:W	differ
+f148v	68	2	H		agree
+f148v	69	3	H		agree
+f148v	70	R	M	B:x	differ
+f148v	71	h	H		agree
+f148v	72	C	M	B:c	differ
+f148v	73	T	H		agree
+f148v	74	x	H		agree
+f148v	75	L	H		agree
+f148v	76	P	H		agree
+f148v	77	9	H		agree
+f148v	78	d	M	A:-	gap
+f148v	79	d	M		agree-flagged
+f148v	80	N	M	B:a	differ
+f148v	81	Q	H		agree
+f148v	82	2	H		agree
+f148v	83	1	H		agree
+f148v	84	3	H		agree
+f148v	85	2	H		agree
+f148v	86	6	H		agree
+f148v	87	#	M	A:-	gap
+f148v	88	K	M	B:o	differ
+f148v	89	W	M	B:o	differ
+f148v	90	o	H		agree
+f148v	91	1	H		agree
+f148v	92	5	H		agree
+f148v	93	3	H		agree
+f148v	94	2	H		agree
+f148v	95	o	H		agree
+f148v	96	T	H		agree
+f148v	97	L	H		agree
+f148v	98	Q	H		agree
+f148v	99	9	H		agree
+f148v	100	i	H		agree
+f148v	101	:	H		agree
+f148v	102	Z	M	B:m	differ
+f148v	103	D	H		agree
+f148v	104	Q	H		agree
+f148v	105	1	H		agree
+f148v	106	2	H		agree
+f148v	107	1	H		agree
+f148v	108	7	H		agree
+f148v	109	3	H		agree
+f148v	110	1	H		agree
+f148v	111	2	H		agree
+f148v	112	L	H		agree
+f148v	113	T	H		agree
+f148v	114	W	H		agree
+f148v	115	1	H		agree
+f148v	116	5	H		agree
+f148v	117	:	M	A:-	gap
+f148v	118	3	H		agree
+f148v	119	U	M	B:m	differ
+f148v	120	d	H		agree
+f148v	121	1	M	B:i	differ
+f148v	122	9	H		agree
+f148v	123	Q	H		agree
+f148v	124	R	M	B:9	differ
+f148v	125	T	H		agree
+f148v	126	x	H		agree
+f148v	127	C	H		agree
+f148v	128	L	H		agree
+f148v	129	3	H		agree
+f148v	130	T	H		agree
+f148v	131	2	H		agree
+f148v	132	1	H		agree
+f148v	133	l	H		agree
+f148v	134	o	H		agree
+f148v	135	d	M		agree-flagged
+f148v	136	V	M	B:W	differ
+f148v	137	Q	H		agree
+f148v	138	o	H		agree
+f148v	139	1	M	B:i	differ
+f148v	140	2	H		agree
+f148v	141	E	M		agree-flagged
+f148v	142	x	M	A:-	gap
+f148v	143	R	M	B:2	differ
+f148v	144	o	H		agree
+f148v	145	v	M	B:U	differ
+f148v	146	2	H		agree
+f148v	147	o	H		agree
+f148v	148	p	M		agree-flagged
+f148v	149	N	M		agree-flagged
+f148v	150	P	H		agree
+f148v	151	K	M	B:+	differ
+f148v	152	o	H		agree
+f148v	153	h	H		agree
+f148v	154	1	H		agree
+f148v	155	7	H		agree
+f148v	156	3	H		agree
+f148v	157	4	H		agree
+f148v	158	1	H		agree
+f148v	159	o	H		agree
+f148v	160	3	H		agree
+f148v	161	1	H		agree
+f148v	162	2	H		agree
+f148v	163	l	H		agree
+f148v	164	1	H		agree
+f148v	165	2	H		agree
+f148v	166	o	H		agree
+f148v	167	z	H		agree
+f148v	168	2	H		agree
+f148v	169	1	H		agree
+f148v	170	2	H		agree
+f148v	171	6	H		agree
+f148v	172	o	H		agree
+f148v	173	d	M	B:o	differ
+f148v	174	3	H		agree
+f148v	175	1	H		agree
+f148v	176	5	H		agree
+f148v	177	T	H		agree
+f148v	178	1	M		agree-flagged
+f148v	179	4	M	B:-	gap
+f148v	180	3	M	B:7	differ
+f148v	181	1	M	B::	differ
+f148v	182	2	H		agree
+f148v	183	1	H		agree
+f148v	184	7	H		agree
+f148v	185	4	M	A:-	gap
+f148v	186	C	M	B:f	differ
+f148v	187	o	M	B:d	differ
+f148v	188	y	M	B:x	differ
+f148v	189	c	M	B:C	differ
+f148v	190	P	H		agree
+f148v	191	9	H		agree
+f148v	192	2	H		agree
+f148v	193	o	H		agree
+f148v	194	1	H		agree
+f148v	195	7	H		agree
+f148v	196	1	H		agree
+f148v	197	5	H		agree
+f148v	198	T	H		agree
+f148v	199	1	H		agree
+f148v	200	1	H		agree
+f148v	201	6	H		agree
+f148v	202	Q	H		agree
+f148v	203	9	H		agree
+f148v	204	1	H		agree
+f148v	205	9	H		agree
+f148v	206	1	H		agree
+f148v	207	7	H		agree
+f148v	208	1	H		agree
+f148v	209	W	M	B:-	gap
+f148v	210	2	M	B:-	gap
+f148v	211	o	M	B:-	gap
+f148v	212	R	M	B:-	gap
+f148v	213	1	H		agree
+f148v	214	4	M	A:-	gap
+f148v	215	9	M	B:3	differ
+f148v	216	U	M	B:i	differ
+f148v	217	2	H		agree
+f148v	218	o	M	B:-	gap
+f148v	219	R	M	B:1	differ
+f149r	1	7	H		agree
+f149r	2	9	H		agree
+f149r	3	1	H		agree
+f149r	4	7	H		agree
+f149r	5	3	H		agree
+f149r	6	2	H		agree
+f149r	7	o	H		agree
+f149r	8	7	H		agree
+f149r	9	5	H		agree
+f149r	10	:	M	B:-	gap
+f149r	11	R	M	B:L	differ
+f149r	12	4	H		agree
+f149r	13	o	H		agree
+f149r	14	2	H		agree
+f149r	15	2	H		agree
+f149r	16	o	H		agree
+f149r	17	1	H		agree
+f149r	18	6	H		agree
+f149r	19	P	H		agree
+f149r	20	o	H		agree
+f149r	21	V	M	B:w	differ
+f149r	22	e	H		agree
+f149r	23	U	M	B:H	differ
+f149r	24	N	M	B:	differ
+f149r	25	Q	H		agree
+f149r	26	1	H		agree
+f149r	27	2	H		agree
+f149r	28	1	H		agree
+f149r	29	4	H		agree
+f149r	30	9	H		agree
+f149r	31	5	H		agree
+f149r	32	B	M	B:f	differ
+f149r	33	T	H		agree
+f149r	34	4	H		agree
+f149r	35	N	M		agree-flagged
+f149r	36	2	H		agree
+f149r	37	o	H		agree
+f149r	38	R	M	B:2	differ
+f149r	39	o	H		agree
+f149r	40	2	H		agree
+f149r	41	o	H		agree
+f149r	42	3	H		agree
+f149r	43	L	H		agree
+f149r	44	Q	H		agree
+f149r	45	R	M	B:o	differ
+f149r	46	l	H		agree
+f149r	47	F	H		agree
+f149r	48	A	H		agree
+f149r	49	y	H		agree
+f149r	50	#	H		agree
+f149r	51	T	H		agree
+f149r	52	L	H		agree
+f149r	53	K	M	B:f	differ
+f149r	54	V	M	B:W	differ
+f149r	55	d	H		agree
+f149r	56	R	H		agree
+f149r	57	C	M	B:E	differ
+f149r	58	T	H		agree
+f149r	59	o	H		agree
+f149r	60	2	H		agree
+f149r	61	6	H		agree
+f149r	62	8	H		agree
+f149r	63	7	H		agree
+f149r	64	9	H		agree
+f149r	65	2	H		agree
+f149r	66	o	M	B:-	gap
+f149r	67	o	H		agree
+f149r	68	d	H		agree
+f149r	69	4	H		agree
+f149r	70	1	H		agree
+f149r	71	9	H		agree
+f149r	72	f	H		agree
+f149r	73	3	H		agree
+f149r	74	l	H		agree
+f149r	75	K	M	B:#	differ
+f149r	76	D	H		agree
+f149r	77	1	H		agree
+f149r	78	7	H		agree
+f149r	79	6	H		agree
+f149r	80	2	H		agree
+f149r	81	o	H		agree
+f149r	82	2	H		agree
+f149r	83	1	H		agree
+f149r	84	B	M	B:f	differ
+f149r	85	W	H		agree
+f149r	86	o	M	B:-	gap
+f149r	87	7	H		agree
+f149r	88	7	H		agree
+f149r	89	u	M	B:m	differ
+f149r	90	1	H		agree
+f149r	91	2	H		agree
+f149r	92	2	H		agree
+f149r	93	7	H		agree
+f149r	94	1	M	B:i	differ
+f149r	95	9	H		agree
+f149r	96	6	H		agree
+f149r	97	9	H		agree
+f149r	98	2	H		agree
+f149r	99	o	H		agree
+f149r	100	7	H		agree
+f149r	101	5	H		agree
+f149r	102	1	H		agree
+f149r	103	2	H		agree
+f149r	104	1	H		agree
+f149r	105	o	H		agree
+f149r	106	o	H		agree
+f149r	107	R	H		agree
+f149r	108	h	H		agree
+f149r	109	1	M	B:i	differ
+f149r	110	X	H		agree
+f149r	111	2	M	A:-	gap
+f149r	112	4	H		agree
+f149r	113	K	M	B:F	differ
+f149r	114	A	H		agree
+f149r	115	x	H		agree
+f149r	116	W	H		agree
+f149r	117	U	M	B:H	differ
+f149r	118	V	M	B:w	differ
+f149r	119	a	M	B:W	differ
+f149r	120	2	H		agree
+f149r	121	o	H		agree
+f149r	122	4	H		agree
+f149r	123	1	H		agree
+f149r	124	u	H		agree
+f149r	125	x	H		agree
+f149r	126	K	M	B:	differ
+f149r	127	:	H		agree
+f149r	128	W	H		agree
+f149r	129	P	H		agree
+f149r	130	1	M	B:i	differ
+f149r	131	9	H		agree
+f149r	132	7	H		agree
+f149r	133	9	H		agree
+f149r	134	2	H		agree
+f149r	135	o	H		agree
+f149r	136	d	H		agree
+f149r	137	o	H		agree
+f149r	138	L	H		agree
+f149r	139	4	H		agree
+f149r	140	u	M	B:m	differ
+f149r	141	U	M		agree-flagged
+f149r	142	R	M	B:x	differ
+f149r	143	C	M	B:c	differ
+f149r	144	c	H		agree
+f149r	145	1	H		agree
+f149r	146	V	M	B:W	differ
+f149r	147	4	H		agree
+f149r	148	1	H		agree
+f149r	149	o	H		agree
+f149r	150	3	H		agree
+f149r	151	1	H		agree
+f149r	152	2	H		agree
+f149r	153	9	H		agree
+f149r	154	3	H		agree
+f149r	155	1	H		agree
+f149r	156	4	H		agree
+f149r	157	1	M	B:2	differ
+f149r	158	o	H		agree
+f149r	159	4	H		agree
+f149r	160	1	H		agree
+f149r	161	+	H		agree
+f149r	162	9	H		agree
+f149r	163	3	H		agree
+f149r	164	1	H		agree
+f149r	165	2	H		agree
+f149r	166	9	H		agree
+f149r	167	c	H		agree
+f149r	168	u	H		agree
+f149r	169	f	M		agree-flagged
+f149r	170	1	H		agree
+f149r	171	6	H		agree
+f149r	172	T	H		agree
+f149r	173	C	M	B:c	differ
+f149r	174	U	M	B:H	differ
+f149r	175	2	H		agree
+f149r	176	o	H		agree
+f149r	177	1	H		agree
+f149r	178	2	H		agree
+f149r	179	8	H		agree
+f149r	180	3	H		agree
+f149r	181	2	H		agree
+f149r	182	o	H		agree
+f149r	183	1	H		agree
+f149r	184	7	H		agree
+f149r	185	3	H		agree
+f149r	186	1	H		agree
+f149r	187	6	H		agree
+f149r	188	7	H		agree
+f149r	189	d	H		agree
+f149r	190	5	H		agree
+f149r	191	d	H		agree
+f149r	192	4	H		agree
+f149r	193	1	H		agree
+f149r	194	5	H		agree
+f149r	195	1	H		agree
+f149r	196	D	H		agree
+f149r	197	z	M	A:-	gap
+f149r	198	X	M	B:	differ
+f149r	199	a	M	B:o	differ
+f149r	200	c	H		agree
+f149r	201	2	H		agree
+f149r	202	o	H		agree
+f149r	203	Q	H		agree
+f149r	204	e	H		agree
+f149r	205	1	H		agree
+f149r	206	3	H		agree
+f149r	207	5	H		agree
+f149r	208	U	M	B:u	differ
+f149r	209	1	H		agree
+f149r	210	2	H		agree
+f149r	211	L	H		agree
+f149r	212	3	H		agree
+f149r	213	1	H		agree
+f149r	214	2	H		agree
+f149r	215	1	H		agree
+f149r	216	R	H		agree
+f149r	217	C	M	B:c	differ
+f149r	218	m	H		agree
+f149r	219	D	H		agree
+f149r	220	W	M	B:-	gap
+f149r	221	T	H		agree
+f149r	222	l	H		agree
+f149r	223	L	H		agree
+f149r	224	H	M	A:-	gap
+f149r	225	U	M	B:w	differ
+f149r	226	V	M	B:W	differ
+f149r	227	a	M	B:6	differ
+f149r	228	3	H		agree
+f149r	229	1	H		agree
+f149r	230	2	H		agree
+f149r	231	2	H		agree
+f149r	232	3	H		agree
+f149r	233	T	H		agree
+f149r	234	x	H		agree
+f149r	235	d	H		agree
+f149r	236	R	H		agree
+f149r	237	N	H		agree
+f149r	238	T	H		agree
+f149r	239	1	H		agree
+f149r	240	4	H		agree
+f149r	241	3	H		agree
+f149r	242	2	H		agree
+f149r	243	1	H		agree
+f149r	244	:	M	A:-	gap

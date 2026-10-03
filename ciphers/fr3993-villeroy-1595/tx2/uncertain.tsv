@@ -1,0 +1,12 @@
+line	col	A	B	flagged	crop	both_conf
+f148r	182	y	y	B		A:H/B:M
+f148v	33	A	A	B		A:H/B:M
+f148v	79	d	d	B		A:H/B:M
+f148v	135	d	d	B		A:H/B:M
+f148v	141	E	E	B		A:H/B:M
+f148v	148	p	p	B		A:H/B:M
+f148v	149	N	N	B		A:H/B:M
+f148v	178	1	1	B		A:H/B:M
+f149r	35	N	N	B		A:H/B:M
+f149r	141	U	U	B		A:H/B:M
+f149r	169	f	f	B		A:H/B:M

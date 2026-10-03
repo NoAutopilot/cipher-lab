@@ -1,0 +1,61 @@
+id	kind	line	col	stratum	A	B	before	after	opt1	opt2
+S01	agr	f148r	48	agree	p	p	C 3 2 o W P	1 7 5 h X 4	p	
+S02	dis	f149r	220	indel	W	-	2 1 R C m D	T l L H U V	W	-
+S03	agr	f148v	85	agree	2	2	d N Q 2 1 3	6 # K W o 1	2	
+S04	dis	f149r	21	ss	V	w	2 o 1 6 P o	e U N Q 1 2	V	w
+S05	dis	f148r	275	ds	R	2	C R 1 6 y v	o o 1 C P 1	R	2
+S06	agr	f148v	165	agree	2	2	o 3 1 2 l 1	o z 2 1 2 6	2	
+S07	dis	f148v	70	ss	R	x	x A U V 2 3	h C T x L P	R	x
+S08	agr	f148r	245	agree	t	t	4 1 9 4 d C	N d R T 2 o	t	
+S09	dis	f148r	270	ss	R	e	3 1 9 o d C	1 6 y v R o	R	e
+S10	dis	f148r	225	ss	u	w	1 # 1 6 2 w	2 o 2 2 7 P	w	u
+S11	dis	f148v	185	indel	-	4	4 3 1 2 1 7	C o y c P 9	4	-
+S12	dis	f148v	145	ss	v	U	1 2 E x R o	2 o p N P K	U	v
+S13	dis	f148v	34	indel	-	t	o y o o W A	H q : 7 2 7	t	-
+S14	dis	f149r	86	indel	o	-	2 o 2 1 B W	7 7 u 1 2 2	o	-
+S15	agr	f148v	171	agree	6	6	2 o z 2 1 2	o d 3 1 5 T	6	
+S16	dis	f148v	16	ss	R	x	C c 7 t h W	2 6 2 f x T	R	x
+S17	agr	f148r	186	agree	2	2	7 N y o 6 1	d e 7 2 4 1	2	
+S18	dis	f148v	180	dd	3	7	3 1 5 T 1 4	1 2 1 7 4 C	3	7
+S19	dis	f148v	47	ds	1	i	1 2 2 1 a x	9 4 2 o 3 5	i	1
+S20	agr	f148r	200	agree	o	o	8 3 9 X x o	d T U P V L	o	
+S21	dis	f149r	157	dd	1	2	1 2 9 3 1 4	o 4 1 + 9 3	2	1
+S22	agr	f149r	63	agree	7	7	C T o 2 6 8	9 2 o o d 4	7	
+S23	dis	f149r	57	ss	C	E	T L K V d R	T o 2 6 8 7	C	E
+S24	dis	f149r	10	indel	:	-	7 3 2 o 7 5	R 4 o 2 2 o	-	:
+S25	dis	f148v	67	ss	V	W	2 2 K x A U	2 3 R h C T	V	W
+S26	agr	f148r	260	agree	h	h	2 o d W Q 9	R 1 1 3 1 9	h	
+S27	dis	f148r	160	ss	R	x	h 1 4 q c P	C l 1 5 U N	x	R
+S28	agr	f148v	41	agree	1	1	H q : 7 2 7	2 2 1 a x 1	1	
+S29	dis	f148r	72	ss	K	#	x 4 1 q : :	N 7 1 2 6 2	K	#
+S30	dis	f148v	214	indel	-	4	1 W 2 o R 1	9 U 2 o R	-	4
+S31	dis	f149r	142	ss	R	x	d o L 4 u U	C c 1 V 4 1	R	x
+S32	agr	f148r	125	agree	1	1	x h 4 w 4 1	2 3 K I T N	1	
+S33	dis	f148r	171	ds	R	2	U N Q W 2 V	o v L 4 1 9	R	2
+S34	dis	f149r	146	ss	V	W	u U R C c 1	4 1 o 3 1 2	W	V
+S35	dis	f148v	35	ss	H	i	y o o W A t	q : 7 2 7 1	i	H
+S36	agr	f149r	152	agree	2	2	V 4 1 o 3 1	9 3 1 4 1 o	2	
+S37	dis	f148r	216	ds	W	o	1 6 2 m T o	1 2 1 # 1 6	o	W
+S38	dis	f148r	101	ss	K	#	j : z 1 4 5	: i 6 4 i 3	K	#
+S39	agr	f148r	52	agree	h	h	W P p 1 7 5	X 4 1 x D k	h	
+S40	agr	f148v	99	agree	9	9	3 2 o T L Q	i : Z D Q 1	9	
+S41	agr	f149r	27	agree	2	2	V e U N Q 1	1 4 9 5 B T	2	
+S42	dis	f148v	212	indel	R	-	1 7 1 W 2 o	1 4 9 U 2 o	R	-
+S43	dis	f148v	187	ds	o	d	1 2 1 7 4 C	y c P 9 2 o	d	o
+S44	dis	f148v	139	ds	1	i	l o d V Q o	2 E x R o v	1	i
+S45	agr	f148r	39	agree	4	4	d c Q V l 1	d R C 3 2 o	4	
+S46	dis	f148r	232	ds	R	2	2 o 2 2 7 P	o 1 5 1 2 5	2	R
+S47	agr	f148r	217	agree	1	1	6 2 m T o W	2 1 # 1 6 2	1	
+S48	dis	f148r	65	ss	H	j	K u 1 5 2 C	x 4 1 q : :	j	H
+S49	dis	f148v	215	dd	9	3	W 2 o R 1 4	U 2 o R	3	9
+S50	dis	f148r	287	dd	o	0	1 2 L h z o	1 9 Q 1 7 o	o	0
+S51	agr	f148v	37	agree	:	:	o W A t H q	7 2 7 1 2 2	:	
+S52	dis	f149r	66	indel	o	-	2 6 8 7 9 2	o d 4 1 9 f	o	-
+S53	dis	f148r	89	ss	R	x	o U 2 o 8 L	2 2 1 5 T j	R	x
+S54	dis	f149r	109	ds	1	i	2 1 o o R h	X 2 4 K A x	i	1
+S55	dis	f148v	87	indel	-	#	Q 2 1 3 2 6	K W o 1 5 3	#	-
+S56	agr	f149r	214	agree	2	2	U 1 2 L 3 1	1 R C m D W	2	
+S57	agr	f149r	1	agree	7	7		9 1 7 3 2 o	7	
+S58	dis	f149r	208	ss	U	u	o Q e 1 3 5	1 2 L 3 1 2	u	U
+S59	dis	f148r	181	ds	N	7	4 1 9 2 o 7	y o 6 1 2 d	N	7
+S60	dis	f149r	75	ss	K	#	4 1 9 f 3 l	D 1 7 6 2 o	#	K

@@ -1,0 +1,13 @@
+line	anchor_before	tokens	anchor_after	notes
+f148v_A_L01	^	1 3 3 2 o d x o x C c 7 t h	dans	leading colon-like mark at far left ignored
+f148v_A_L01	respondre	W x 2 6 2 f x	$	preceded by a stroke (il?) read as part of prose; x after W may be z
+f148v_A_L02	^	T 2 o 1 4 T o y o o W A? t? i q : 7 2 7 1 2 2 1 a x i 9 4 2 o 3 5 1 5 1 2 7 1 3 2 2 # x A m? W 2 3 x h c?	$	dash strokes skipped; A? is arrow-cross glyph; t? i could be H
+f148v_A_L03	^	T x L P 9 d d? a? Q 2 1 3 2 6	ontre	middle glyphs after d are cursive/uncertain
+f148v_A_L03	ontre	# o o o	Agnoz	last two circles close together, maybe W
+f148v_A_L04	gare	1 5 3 2 o T L Q 9 i : m? D Q	$	small dot between L and Q ignored
+f148v_A_L05	^	1 2 1 7 3 1 2 L T W 1 5 : 3 m? d i 9 Q 9 T x C L 3 T 2 1 l o d? W Q o i 2	Ce	comma after 2 not a sign
+f148v_A_L08	8bra	E? x 2 o U 2 o p? N? P + o h 1 7 3 4 1 o 3 1 2 l 1 2 o z 2 1 2 6 o o 3 1 5 T	froges	8bra may itself be cipher (8 b); run start uncertain
+f148v_A_L09	an	1 2 1 4 1 o 2 o P W L : 1 6 8 N? 1 3 o 1 5 A ? ?	$	last two glyphs small double-hook signs
+f148v_A_L10	^	2 1 3 o? 7 2 3 6 7 1 o 1 7 + o # x C o c x 2 3 3 I 3 2 1 + o W P 2 7 x o W T 1 7	Re	top of line clipped in crop; left section low confidence
+f148v_B_L01	^	1? 7? : 2 1 7 4? f? d? x C P 9 2 o 1 7 1 5 T 1 1 6 Q 9 1 9 1 7 1	$	sliver crop, top clipped; low confidence
+f148v_B_L02	gm	1 4 3 i 2 1	$	following slash-like stroke and script uncertain, not transcribed
