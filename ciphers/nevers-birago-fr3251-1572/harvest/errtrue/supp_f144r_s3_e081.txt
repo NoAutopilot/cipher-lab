@@ -1,0 +1,8 @@
+L03	quello__mprima_g
+L04.1	eobtatnn__perqual
+L04.2	diquellols__rosa_
+L05	the_ircbodib__aqualcosmezodiseu_purato
+L06	pmiudicedi_raginero_
+
+TARGET: 90 signs, 0 nulls, 94 letters; real key -1.2564; 200 shuffled keys mean -1.5414 sd 0.1517 max -1.2167; z 1.88; rank 3 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.08: real key rank 1 in 15/20; z median 2.98 min 1.12

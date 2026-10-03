@@ -1,0 +1,8 @@
+R02	cheisisafasuanuato_oltoconlorialtezn
+R03	sopfagpafti_solehn
+V01	guantoilpfoce
+V02	deresi__sii_tanto_astidiisaamn
+V03	_ada_osasufefoi_iilifoquello__m
+
+TARGET: 121 signs, 0 nulls, 117 letters; real key -1.4135; 200 shuffled keys mean -1.5598 sd 0.1605 max -1.1316; z 0.91; rank 41 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.08: real key rank 1 in 17/20; z median 3.35 min 1.71
