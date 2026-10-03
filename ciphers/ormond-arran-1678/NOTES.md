@@ -382,3 +382,61 @@ is checked. The earlier key-coverage tests are unaffected in substance: 57 and 5
 
 Requests this pass: archive.org 3 (vol.4 djvu, Sixth Report djvu, plus 4+5 be-api fts calls, >=2 s apart),
 googleapis.com 3 (keyed, country=US), github.com 2 (shallow clones, shared with this batch). No logins.
+
+## FT4-ormond-arran-1678 (3 Oct 2026, account-4): Carte calendar route
+
+Run 3 Oct 2026 02:21-02:40 UTC (`date -u`). No cryptanalysis, no reading, no test.
+
+**Route that worked.** The Bodleian's own online Carte Calendar pages (`bodley.ox.ac.uk/dept/scwmss/projects/carte/carte54.html`)
+now 301 to `archives.bodleian.ox.ac.uk/...`, which serves an Anubis "Making sure you're not a bot!" page to curl (1 request);
+`https://www.bodley...` resets the connection; the Wayback Machine answered "Temporarily Offline"; one headless-Chromium attempt
+timed out (killed, not retried). The same calendar text (Edwards's MS. Carte Calendar vols 30-61, keyed by the Bodleian in 2004)
+is platformed by the Virtual Record Treasury of Ireland (virtualtreasury.ie, VRTI, 2024). Its public search endpoint
+(`POST https://by2022-prod.adaptcentre.ie/IR_REST_V2/webapi/doc_search`, JSON body with `indexDBName: "beyond_2022"`,
+`kwList`, `kwOperList: ["ALL"]`, `kwSearchFieldList`: `all` or `referenceCode`) answers plain curl with no key; the per-item
+REST endpoint answers 401 and was not used.
+
+**Finding 1 -- the key sheet (premise evidence, not a reading).** `Bodleian MS. Carte Calendar 54/46`:
+"Cypher [used in the correspondence of the Duke of Ormond] with the Earl of Arran: January 1678" -- "Calendar of MS. Carte 50,
+fol(s). 439-440 (276)". The calendar gives the title only, no abstract and no table. A second, later key exists:
+`MS. Carte Calendar 58/76`, "Cypher [used in the Correspondence of the Duke of Ormond with his son] the Earl of Arran:
+25 April 1682", MS. Carte 50, fols. 435-436 (274). The January 1678 sheet is dated the month of our letter (24 Jan 1677/8) and
+names the same correspondents, so it is very likely the key of this passage; that it *is* that key is inferred, not checked, until
+someone reads fols. 439-440. It is not one of the three keys already tested here (`keys/cipher1-3`: Ormond-Longford, HMC vols 5-7).
+Whether the HMC or anyone has printed MS. Carte 50 fols. 439-440 was not searched this pass.
+
+**Finding 2 -- no Carte copy of the letter in the calendar.** Retrieved MS. Carte Calendar vol.54 items 25-60 (19 Jan - c.5 Feb
+1678, contiguous) by reference-code search: none is Ormond to Arran of 24 Jan 1678 (nearest Ormond out-letters are to Henry
+Coventry, 19 and 22 Jan, MS. Carte 146; 54/32 is Ormond to Coventry with William Douglas's narrative, MS. Carte 146 fols. 63-67,
+context for the passage's subject). A full-text query "Ormond to Arran January 1678" over the whole index returned no such item
+either. So the calendar records no second copy of the letter; the Kilkenny original (NLI) printed in HMC remains the only witness
+found. The calendar prints no summary or clear text of the p.93 passage: **the item's plaintext is not in print in this source.**
+
+**Holding-catalogue availability flag: not read.** The archives.bodleian.ox.ac.uk record for MS. Carte 50 is behind the same
+Anubis challenge from this container; filed as LOCAL-QUEUE row L39 for the owner's desk runner (catalogue flag, and if a viewer
+exists, fols. 439-440 imaged).
+
+Requests: bodley.ox.ac.uk 3 (one 301, two resets), archives.bodleian.ox.ac.uk 1 curl + 1 browser attempt (timed out),
+web.archive.org 1 (offline page), virtualtreasury.ie 3 (SPA shell and its JS bundle), by2022-prod.adaptcentre.ie 1 (401) +
+13 search POSTs, all >=1.6 s apart, one at a time. WebSearch 2 queries. No logins, no vision calls.
+
+## Remaining gaps (FT4-ormond-arran-1678, 3 Oct 2026)
+Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status open, not partial)
+- key sheet MS. Carte 50 fols. 439-440 (Ormond-Arran cypher, Jan 1678) - blocker: waiting-on LOCAL-QUEUE L39; catalogue flag and leaf images unreachable from the cloud (archives.bodleian.ox.ac.uk Anubis challenge, this section above)
+- ninth group 57 vs 58 (both prints read 58) - blocker: needs-physical-access; no page image of the NLI original or of the 1877/1906 prints is on disk (Premise check transcription flag)
+- prior print of the Carte 50 key - blocker: not-attempted; not searched this pass; next: IA full text and Google Books phrase search for a printed Carte 50 Ormond-Arran cypher table, ~$1
+
+## Escalation (3 Oct 2026)
+- [x] siblings: 1680 Ormond-Longford sibling passages and keys tested (YX-ORM, ZX2-ORM), no fit
+- [x] clear-pages: Arran's reply of 5 Feb and Ormond's clear letter of 29 Jan read (Premise check c)
+- [ ] known-keys: MS. Carte 50 fols. 439-440 key sheet located 3 Oct 2026; read it once L39 returns images
+- [ ] print: search for a printed transcription of the Carte 50 key (While waiting)
+- [n/a] key-rebuild: twenty groups are far too short for cryptanalytic key rebuilding
+- [ ] image-check: ninth group 57/58 against an image of the original or print
+- [n/a] retry: no earlier route failed that a retry would change
+Verdict: keep going: 1 internal gaps; cheapest next: prior-print search for the Carte 50 Ormond-Arran key, ~$1
+
+## While waiting
+
+Search IA full text and Google Books (country=US) for a printed transcription of MS. Carte 50 fols. 439-440 or of any
+1678 Ormond-Arran cipher table (queries: "Carte 50" Arran cypher; "cypher" "Earl of Arran" 1678 key) -- depends on nobody.
