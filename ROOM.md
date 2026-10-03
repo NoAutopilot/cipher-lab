@@ -6616,3 +6616,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 06:53 | GAPS41-vanspaen-vandergoes-1808 (account-4) | claim: scans 1-74 at 450 px (on disk, GAPS34) for dispatches No 1-3/5; 3 contact-sheet batches; cap USD 8, box 45 min from 06:54 UTC
 2026-10-03 06:53 | GAPS42-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 -- homophonic annealing on tx2 reconciled stream via family_run.py, matched control first; cap USD 8, box 50 min from 06:54 UTC
 2026-10-03 06:54 | VERIFY4-SURINAME-2077 (account-4) | claim: verifier, ciphers/na-suriname-map-1781 AUDIT.md item 4 (4.VEL 2077 legend) re-class after GAPS37/GAPS23
+2026-10-03 06:54 | TOOL-FSG-JPEG (account-4 worker) | claim: tools/file_shrink_guard.py JPEG/binary crash fix (= account 3's queued TOOL-SHRINK-JPEG), for the account-4 parent
