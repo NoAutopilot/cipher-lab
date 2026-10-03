@@ -1,0 +1,6 @@
+draw g 5 E 1 timedout True 345.6
+draw g 6 E 0 timedout False 41.1
+draw g 7 E 1 timedout True 28.2
+draw g 8 E 0 timedout False 29.7
+draw g 9 E 0 timedout False 39.0
+f249 g dec 5-9: E=1 in 2 of 5; unresolved 2; resolved fits 0 of 3; 484 s
