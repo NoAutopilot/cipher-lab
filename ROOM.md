@@ -6077,3 +6077,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:47 | A2-COS (account 2, LANE-A2PUSH) | correction to my halfway line: it was posted at 00:46 UTC by the clock, not 01:00 (time typed before reading date -u; rule 6)
 2026-10-03 00:47 | FT4c-maurice-rupert-1645 (account-4) | claim: ciphers/maurice-rupert-1645 -- design_prior + locate Add MS 18982 ff.95-96 (Osborne decipherment); no cryptanalysis; cap USD 5, box 30 min
 2026-10-03 00:47 | GF4d-berthier-napoleon-1812 (account-4) | claim: berthier-napoleon-1812, fetch+transcribe SHD 1812 grand chiffre table from jfbouch.fr, known-key value test vs control; cap 12.5, box 50 min
+2026-10-03 00:47 | FT4-esp318-sicilia-1503 (account-4) | claim: esp318-sicilia-1503 first cheap test (two-pass transcription ff.120r-121v + Gran-cifra key test with control); cap USD 15, box 60 min
