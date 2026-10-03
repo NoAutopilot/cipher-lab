@@ -1,0 +1,13 @@
+# f.130r decoded with the repaired key (repair_f130.py, A2-DIN3). lower = C or S, UPPER = M, [..] = clear.
+# grades: C 332 S 71 M 127 U 0
+L01	L E U O
+L02	t e r o i u s i l n i e s t R i u s o U r u e u q u i m e a A e D u L E s i r e n u o i e r A u e D D e l A O u l D r e [bonne] [fortune]
+L03	[aussi] [si] [vous] [plaist] [Monseigneur] [que] D i q i e D e m e u r e s e u l i D i A u e D l e s h A b i u A n s e u [que] [larmee] [Lorraine]
+L04	[se] [fortifie] [et] [a] [qui] [estoit] [du] [costé] [de] [Strasbourg] q i e t D r e u o u r n A N t A m o l i l m e s e r n R l t L A l L E s e D e D
+L05	o n s e r u E r D e s t e U l e M e e n l o b e i s s A n D e Q R u e l l e e h t [Messieurs] [de] [la] [ville]
+L06	[dy] s i l e s a o N r D e s
+L07	n O s o n t S l A s s e E e s o u l t r e l e h A s L r u q u M e D o u r t l A u e I l l e i l n e s e l e u e r A Q n D e n i E e r D e t A
+L08	i l l e s D A u l t r e D o s t e l e n e u o i l e D e d A n s S e b i e n b A s t i q u I l n e s o l t S l u s A D r A e n D r E q Q E l e
+L09	D e h o r s l e s a o r D e s s E r u i r o n t U A n t a l e E s D o n T s I o l r A l e u r D e u o l r q u e A l a D e a L N D e D e
+L10	l A u i l l e e l e r o i E A u o q r s m e s D u s e R A S S I I E U A s s D e m o A q q r e S O l n e e e l A l s t A s a m A i e u e D I
+L11	U o u r U o i r D e m e n r e t i r e r D A u l t A n t q u i l i A a U e r D r e e l A u l e e t l h o n N E u r [pour] [luy]

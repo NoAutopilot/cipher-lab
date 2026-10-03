@@ -1,0 +1,34 @@
+sign	value	grade	source	stability	gloss_letters
+hash	d	M	key_syl 5/13 (held)		d:5,c:3,a:2,s:2,i:1
+.	e	C	key_syl 4/8 (held)		e:4,a:3,l:1
+0	e	C	key_syl 9/16 (held)		e:9,s:3,c:1,p:1,i:1,m:1
+0'	s	S	repair (unkeyed in key_syl)	20	
+1	e	C	key_syl kept by repair (key_syl e 2/11)	20	r:2,n:2,i:2,e:2,u:1,h:1,f:1
+3	d	C	key_syl 4/5 (held)		d:4,c:1
+4	l	C	key_syl 3/3 (held)		l:3
+9	g	C	key_syl 2/3 (repair value rejected by f.128 gloss)	20	g:2,e:1
+B	s	M	key_syl 1/1 (repair value rejected by f.128 gloss)	20	s:1
+D	a	C	key_syl 2/4 (repair value rejected by f.128 gloss)	20	a:2,g:1,t:1
+L	i	C	key_syl 4/5 (held)		i:4,p:1
+NEW:N-like	l	S	repair (unkeyed in key_syl)	20	
+NEW:e-hook	r	S	repair (unkeyed in key_syl)	20	
+T	h	C	key_syl 2/3 (repair value rejected by f.128 gloss)	20	h:2,q:1
+a	q	C	key_syl 3/4 (held)		q:3,o:1
+al	u	C	key_syl 5/5 (held)		u:4,v:1
+c	r	S	repair (key_syl a 1/5)	20	e:1,s:1,a:1,r:1,d:1
+div	b	S	key_syl kept by repair (key_syl b 1/1)	20	b:1
+f	n	C	key_syl 6/11 (held)		n:6,u:1,i:1,t:1,e:1,a:1
+h	u	M	key_syl 1/1 (repair value rejected by f.128 gloss)	20	u:1
+m	u	C	key_syl 5/8 (held)		u:4,v:1,a:1,n:1,s:1,t:1,e:1
+n	e	M	key_syl 1/1 (repair value rejected by f.128 gloss)	20	e:1
+o	e	C	key_syl 2/3 (repair value rejected by f.128 gloss)	20	e:2,b:1
+p	i	C	key_syl 5/5 (held)		i:5
+plus	l	S	key_syl kept by repair (key_syl l 1/1)	20	l:1
+r	n	S	repair (key_syl b 1/4)	20	e:1,n:1,x:1,b:1
+sq	s	C	key_syl 5/9 (held)		s:5,x:1,z:1,r:1,d:1,a:1,n:1
+v	a	M	key_syl 5/11 (held)		a:5,t:3,s:1,i:1,n:1
+v'	t	S	repair (unkeyed in key_syl)	20	
+w	r	C	key_syl 6/6 (held)		r:6
+y	o	C	key_syl 6/8 (held)		o:6,u:1,n:1
+z	m	C	key_syl 4/4 (held)		m:4
+zh	e	M	key_syl 1/2 (repair value rejected by f.128 gloss)	20	t:1,e:1

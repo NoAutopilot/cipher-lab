@@ -1,0 +1,62 @@
+{
+ "stat": "fr16 4-gram mean log10 P/letter, f.130 + f.128 cipher runs, all free rows keyed",
+ "windows": 685,
+ "seed_key_score": -1.449,
+ "repaired_before_rejection": -1.2147,
+ "repaired_real": -1.2705,
+ "rejected": [
+  [
+   "zh",
+   "c",
+   2
+  ],
+  [
+   "D",
+   "l",
+   4
+  ],
+  [
+   "o",
+   "l",
+   3
+  ],
+  [
+   "9",
+   "l",
+   3
+  ],
+  [
+   "T",
+   "i",
+   3
+  ],
+  [
+   "h",
+   "l",
+   1
+  ],
+  [
+   "B",
+   "a",
+   1
+  ],
+  [
+   "n",
+   "l",
+   1
+  ]
+ ],
+ "shuf_seed_mean": -1.9485,
+ "shuf_repaired_mean": -1.7893,
+ "shuf_repaired_p95": -1.5824,
+ "shuf_repaired_max": -1.4072,
+ "shuffles_ge_real": 0,
+ "n_shuffles": 1000,
+ "gate_pass": true,
+ "grades": {
+  "C": 332,
+  "S": 71,
+  "M": 127,
+  "U": 0
+ }
+}

@@ -463,9 +463,54 @@ Fixed before any repaired key is scored (script `f130/repair_f130.py`, outputs u
 - A word-level reading is written from the final key with every token graded; decode.json gets the repaired key as a
   second job and `tools/decode_key.py ... --check` must pass.
 
+## f.130r key repair: RESULT (A2-DIN3, account 2, 3 Oct 2026)
+
+Run as pre-registered above (`f130/repair_f130.py`; outputs `f130/repair/`: result.json, key_repaired.tsv, control.tsv,
+stability.tsv, reading.txt, tokens.tsv, reading_words.md). No images and no network in this step.
+
+| statistic (fr16 4-gram mean log10 P/letter, f.130 + f.128 cipher runs, 685 windows) | value |
+|---|---|
+| key_syl seed (free unkeyed rows at 'e') | -1.449 |
+| repaired, before the f.128 held-out check | -1.215 |
+| **repaired, after the held-out check (8 rows reverted)** | **-1.271** |
+| 1000 shuffled seed keys, before repair: mean | -1.949 |
+| 1000 shuffled seed keys, same climb + check: mean / p95 / max | -1.789 / -1.582 / -1.407 |
+| shuffles >= real | **0/1000: gate PASS** |
+
+The control can differ from the target here: a shuffled seed key has different letters on the 16 held rows, and the
+free rows get the same climb. The climb raises the shuffles by about 0.16 and the real key by about 0.18, so the repair
+does not by itself produce the margin.
+
+**Held-out check.** 8 of the 13 free key_syl rows had their repaired value rejected by the f.128 gloss and reverted:
+zh (c), D (l), o (l), 9 (l), T (i), h (l), B (a), n (l). Three of these rest on a single gloss occurrence (h, B, n).
+Values kept by the repair: 1 = e, plus = l, div = b (unchanged from key_syl); c = r (was a, 1/5), r = n (was b, 1/4).
+Unkeyed signs: v' = t, 0' = s, NEW:e-hook = r, NEW:N-like = l. Every free value was reached in 20 of 20 random-start
+climbs (stability.tsv).
+
+**Grades** (decode_key.py, 527 tokens, dots excluded): **C 329, S 71, M 127, U 0**, no H (A2-DIN2: C 263, M 225,
+U 39). The S tokens are v', 0', c, r, plus, div and the two NEW signs. This is a cryptanalytic result: a period key
+from a sibling leaf, repaired by a hill-climb with a matched control.
+
+**Word level** (`f130/repair/reading_words.md`, my word division, graded by its letters). The runs now carry French
+phrases: L05 "(c)onseruer ... en l'obeissan(c)e" (before the clear "Messieurs de la ville"), L09 "dehors les ...
+seruiront ... leur", L10 "la uille et le roi", L11 "(p)ourvoir de ... retirer d'aultant qu'il i a ... l'honneur"
+(before the clear "pour luy"), L08 "...de dans se bien bas ... qu'il ne ... plus". English gist (fragments): keep [the
+town] in obedience; outside, the [...] will serve; the town and the king; to provide [for ...], withdraw, inasmuch as
+there is [...] the honour [for him]. L01-L04 and L06-L07 are still mostly undivided.
+
+**The words contradict two held-out rejections:** h = p (pourvoir) and D = c (auec, obeissance, conseruer; D = d in
+"demeure"). The pre-registered rule kept h = u and D = a, so those tokens stay M and the letters in parentheses are
+grade I. The f.128 gloss for h is a single occurrence, and for D it is 2 of 4. A second reader on the f.128 gloss at
+those signs would settle whether the rejection or the gloss reading is wrong.
+
+Rule 7: `python3 tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` prints "reading up to date" (decode.json
+job 2 = the repaired key). `python3 ciphers/fr3621-dinteville-1592/f130/repair_f130.py --check` prints "check:
+committed outputs match". No spec exists for this target, so judge_plaintext.py was not run as a spec judge. Its
+NgramModel is the statistic above. Requests: none. Vision calls: none. Rule 10: no novelty claim.
+
 ## Remaining gaps (A2-DIN, 3 Oct 2026)
-Read so far: f.130 530 of 530 signs transcribed and decoded at C 263 / M 225 / U 39 (f130/reading.txt, not yet a word-level reading); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
-- f.130 word-level reading (530 signs transcribed, key_syl decode beats 1000 shuffled keys 0/1000; C 263 M 225 U 39) - blocker: not-attempted; 39 signs unkeyed (v' 23, 0' 14, 2 NEW) and the weak key rows drift (f130/reading.txt); next: key repair (v', 0', weak rows) by a constrained hill-climb seeded with key_syl on f.130 + f.128 together, scored on fr16 with the same shuffled-key control, then a word-level reading for a verifier, ~$5
+Read so far: f.130 530 of 530 signs transcribed and decoded with the repaired key at C 329 / S 71 / M 127 / U 0 (f130/repair/reading.txt; word-level reading of L05, L08-L11 in f130/repair/reading_words.md); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
+- f.130 word-level reading (repaired key, A2-DIN3: fr16 -1.271 vs repaired-shuffle p95 -1.582, 0/1000; C 329 S 71 M 127 U 0; f130/repair/reading_words.md, phrases on L05 and L08-L11) - blocker: not-attempted; h and D rejected by thin f.128 gloss evidence although the f.130 words want h=p and D=c/d, and L01-L04/L06-L07 are undivided; next: a second reader on the f.128 gloss at the h and D (and other drifting) signs, re-run align_f128.py --syl and repair_f130.py, then a verifier session on f130/repair/reading_words.md, ~$4
 - f.128 drifting spans (L03 "a geneue +", L04 from "doibt", L05 from "de +") - blocker: not-attempted; likely transcription or gloss-reading error (f128/align_syl.tsv M rows); next: a second reader on those crops only, then re-run align_f128.py --syl, ~$3
 - fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
 
@@ -474,7 +519,7 @@ Read so far: f.130 530 of 530 signs transcribed and decoded at C 263 / M 225 / U
 - [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9)
-- [ ] key-rebuild: key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repair of v'/0'/weak rows is next
+- [ ] key-rebuild: key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repaired (v', 0', weak rows) -1.271 vs repaired-shuffle p95 -1.582 (0/1000, A2-DIN3); h and D still open against the f.128 gloss
 - [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps; cheapest next: key repair (v', 0', weak rows) seeded with key_syl on f.130 + f.128, same shuffled-key control, then a word-level reading for a verifier, ~$5
+Verdict: keep going: 3 internal gaps; cheapest next: a second reader on the f.128 gloss at signs h, D and the drifting spans, then re-run align_f128.py --syl and repair_f130.py, then a verifier on f130/repair/reading_words.md, ~$4

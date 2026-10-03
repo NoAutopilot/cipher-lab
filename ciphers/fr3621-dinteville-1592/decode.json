@@ -1,4 +1,3 @@
-{"jobs": [{"name": "f130r with f128/key_syl.tsv (A2-DIN2, 3 Oct 2026)",
-  "ciphertext": "f130/ciphertext_dk.tsv", "key": "f130/key_dk.tsv", "format": "tsv",
-  "reading": "f130/reading_decode_key.txt", "tokens": "f130/reading_tokens.tsv",
-  "clear_prefix": "CLEAR:", "style": "spaced", "uncertain_conf": ["M"]}]}
+{"jobs": [
+ {"name": "f130r with f128/key_syl.tsv (A2-DIN2, 3 Oct 2026)", "ciphertext": "f130/ciphertext_dk.tsv", "key": "f130/key_dk.tsv", "format": "tsv", "reading": "f130/reading_decode_key.txt", "tokens": "f130/reading_tokens.tsv", "clear_prefix": "CLEAR:", "style": "spaced", "uncertain_conf": ["M"]},
+ {"name": "f130r with the repaired key f130/repair/key_repaired.tsv (A2-DIN3, 3 Oct 2026)", "ciphertext": "f130/ciphertext_dk.tsv", "key": "f130/repair/key_repaired.tsv", "format": "tsv", "reading": "f130/repair/reading_decode_key.txt", "tokens": "f130/repair/reading_tokens.tsv", "clear_prefix": "CLEAR:", "style": "spaced", "uncertain_conf": ["M"]}]}
