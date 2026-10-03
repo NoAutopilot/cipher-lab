@@ -52,16 +52,16 @@ L04	3	68	H
 L04	3	53	H	
 L04	3	75	H	
 L04	3	0	M	single trailing glyph before 'bons deniers' (0 or a stroke)
-L05	4	43	M	line has three looped glyphs with an extra upright; 8-with-stroke reading
-L05	4	18	M	
-L05	4	19	M	
-L05	4	87	M	
-L05	4	39	M	
-L05	4	45	M	
-L05	4	79	M	null by key; 57 (m) would give 'moiens'
-L05	4	65	M	
-L05	4	54	M	
-L05	4	16	M	
+L05	4	43	H	line has three looped glyphs with an extra upright; 8-with-stroke reading; FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
+L05	4	18	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos4 8 or 01)
+L05	4	19	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos5 1 may be a stroke of 9)
+L05	4	87	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos7 8 or 01/61)
+L05	4	39	H	FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
+L05	4	45	H	FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
+L05	4	79	M	null by key; 57 (m) would give 'moiens'; FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos13 mark above 7)
+L05	4	65	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos15 6 or 8; pos16 5 or 6)
+L05	4	54	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos17 5 or 6)
+L05	4	16	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos20 6 or 8)
 L06	5	45	H	
 L06	5	64	H	
 L06	5	83	H	
