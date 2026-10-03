@@ -3817,7 +3817,7 @@ alphabet by sorting tiles instead of typing a TSV. Offline build, no model read 
 - Not done: no reading, no statistic, no class change. Suggestion (not run): a lighter page with numeral tiles pre-piled
   if the owner finds the digits in the way, by excluding the numeral-group x-spans read from ciphertext_ms.txt.
 
-## Step H74b (3 Oct 2026, 19:44-19:5x UTC, ARM-H74b for LANE-ARM-B)
+## Step H74b (3 Oct 2026, 19:44-19:50 UTC, ARM-H74b for LANE-ARM-B)
 
 The account-3 orchestrator returned H74 (ROOM 19:39 UTC): with all 997 tiles in one pile '?', the two-step page had
 nothing to compare against and tools/sign_sorter/browser_tests/test_qa.js fails on a single-pile page. Rebuilt with
