@@ -1,0 +1,105 @@
+line	set	real	n	hits
+47L01	C	1	2	69=s
+47L02	C	2	4	25=p 10=a
+47L03	C	0	0	
+47L04	C	5	7	51=de 48=c 12=c 10=a 12=c
+47L05	C	3	3	22=m 10=a 48=c
+47L06	C	2	4	51=de 78=u
+47L07	C	3	3	51=de 48=c 51=de
+47L08	C	1	1	10=a
+47L09	C	3	4	10=a 12=c 10=a
+47L10	C	0	1	
+47L11	C	4	4	51=de 51=de 10=a 51=de
+47L12	C	3	6	48=c 10=a 10=a
+47L13	C	2	2	24=n 48=c
+47L14	C	2	5	51=de 48=c
+48L01	C	2	2	10=a 51=de
+48L02	C	3	5	51=de 10=a 22=m
+48L03	C	3	8	10=a 25=p 51=de
+48L04	C	1	2	48=c
+48L05	C	4	5	10=a 24=n 51=de 51=de
+48L06	C	2	5	12=c 12=c
+48R02	C	1	2	78=u
+49L01	C	1	1	10=a
+49L02	C	5	7	25=p 22=m 10=a 51=de 78=u
+49L03	C	1	2	24=n
+49L04	C	1	4	51=de
+49L05	C	0	1	
+49L06	C	3	5	10=a 12=c 10=a
+49L07	C	0	0	
+49L08	C	3	4	48=c 12=c 10=a
+49L09	C	0	0	
+49L10	C	3	6	18=h 51=de 51=de
+49L11	C	2	5	51=de 51=de
+49L12	C	1	3	48=c
+49L13	C	0	0	
+49L14	C	1	1	51=de
+49L15	C	2	3	51=de 12=c
+49L16	C	1	2	51=de
+49L17	C	4	4	10=a 33=ux 48=c 25=p
+47L01	all	3	5	69=s 54=du 23=n
+47L02	all	5	14	25=p 11=n 15=e 23=n 21=e
+47L03	all	3	12	20=i 30=s 30=s
+47L04	all	8	20	20=i 23=n 54=du 20=i 11=n 76=c 48=c 12=c
+47L05	all	5	16	22=m 15=e 23=n 23=n 56=r
+47L06	all	6	10	54=du 20=i 23=n 51=de 78=u 20=i
+47L07	all	7	16	51=de 32=o 11=n 15=e 23=n 11=n 30=s
+47L08	all	4	9	57=e 29=a 46=c 10=a
+47L09	all	10	18	39=et 20=i 30=s 29=a 37=e 11=n 10=a 20=i 21=e 15=e
+47L10	all	2	4	96=r 20=i
+47L11	all	5	19	11=n 76=c 51=de 11=n 46=c
+47L12	all	6	17	39=et 96=r 23=n 11=n 21=e 10=a
+47L13	all	8	9	24=n 23=n 20=i 30=s 30=s 15=e 23=n 48=c
+47L14	all	6	11	13=d 23=n 15=e 51=de 48=c 23=n
+48L01	all	8	13	46=c 30=s 20=i 10=a 21=e 23=n 51=de 23=n
+48L02	all	6	10	51=de 23=n 10=a 30=s 22=m 15=e
+48L03	all	4	18	10=a 25=p 23=n 51=de
+48L04	all	5	8	48=c 23=n 20=i 23=n 21=e
+48L05	all	7	15	10=a 24=n 23=n 30=s 20=i 23=n 51=de
+48L06	all	5	21	96=r 23=n 96=r 12=c 76=c
+48R02	all	4	7	15=e 23=n 78=u 23=n
+49L01	all	2	5	10=a 32=o
+49L02	all	9	18	30=s 25=p 21=e 23=n 22=m 10=a 11=n 78=u 23=n
+49L03	all	3	12	21=e 21=e 24=n
+49L04	all	3	23	51=de 20=i 23=n
+49L05	all	7	15	20=i 15=e 23=n 57=e 23=n 11=n 30=s
+49L06	all	9	15	10=a 20=i 23=n 11=n 76=c 10=a 20=i 23=n 21=e
+49L07	all	2	3	30=s 23=n
+49L08	all	8	24	20=i 21=e 30=s 23=n 15=e 23=n 17=o 21=e
+49L09	all	1	3	56=r
+49L10	all	4	18	18=h 23=n 11=n 51=de
+49L11	all	3	8	51=de 51=de 29=a
+49L12	all	2	7	48=c 23=n
+49L13	all	2	4	30=s 30=s
+49L14	all	8	11	20=i 23=n 30=s 51=de 23=n 15=e 46=c 21=e
+49L15	all	3	9	51=de 76=c 57=e
+49L16	all	2	4	32=o 51=de
+49L17	all	5	15	46=c 30=s 29=a 37=e 30=s
+
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas47	C	31	46	f23-window	20.44	25	30	0.0000	PASS
+canvas47	C	31	46	shuffled-gloss	19.51	23	30	0.0000	-
+canvas47	all	78	180	f23-window	45.23	53	64	0.0000	-
+canvas47	all	78	180	shuffled-gloss	55.17	63	71	0.0000	-
+canvas48	C	16	29	f23-window	10.94	14	18	0.0172	PASS
+canvas48	C	16	29	shuffled-gloss	12.28	16	19	0.0502	-
+canvas48	all	39	92	f23-window	22.96	28	34	0.0000	-
+canvas48	all	39	92	shuffled-gloss	28.61	34	42	0.0040	-
+canvas49	C	28	48	f23-window	19.35	24	31	0.0028	PASS
+canvas49	C	28	48	shuffled-gloss	15.65	20	25	0.0000	-
+canvas49	all	73	194	f23-window	48.99	57	68	0.0000	-
+canvas49	all	73	194	shuffled-gloss	51.21	59	71	0.0000	-
+letter4748	C	47	75	f23-window	31.22	37	44	0.0000	-
+letter4748	C	47	75	shuffled-gloss	30.64	36	42	0.0000	-
+letter4748	all	117	272	f23-window	68.13	77	86	0.0000	-
+letter4748	all	117	272	shuffled-gloss	80.98	90	105	0.0000	-
+
+code12	line	gloss
+12	47L04	indubitabledeueoirconclurreleurtraictauec
+12	47L09	etlaissernostretraictenarriere
+12	48L03	auantageuxdeconclurrelapaixsanslafrancequedela
+12	48L06	quenousnemanqueronspasdelesrechercher
+12	49L06	raisonnablecraintquelz
+12	49L08	ilsneconcluentetsignentleurtraittsanslenostre
+12	49L10	capabledimpescherlaprouincedehollande
+12	49L15	delesfairechanger
