@@ -65,15 +65,33 @@ catalogue's "from 159," but no decipher or key for folio 251 itself. No communit
 solver-repository entry names this item; the two other "Wotton" targets in the solver repos are different
 people (Edward Wotton 1585, Nicholas Wotton 1554), already read, and unrelated to this one.
 
+**Update 3 Oct 2026 (A2P4-WOTT):** printed evidence (Pearsall Smith vol. 1 p. 320 n. 1) shows Wotton's 1604 cipher assigned numerals 130-160 to individuals, so "159" as a person code-name is more likely than a folio pointer (grade I). Status stays open: no printed decipherment of this letter found. Next: order f.251 and f.159 (REQUEST.md); read Kerr/modern Wotton biographies; TNA SP 99/25 for numbered-agent lists.
+
 **Copy status:** no online image located; `digitised: false` confirmed by direct record fetch (id C6915573).
 **Copy-order.** See REQUEST.md.
 
 **Recommended next steps (not run this pass):** (1) resolve whether "159" in the description is a correspondent
 code-name or a folio cross-reference — read folio 159 itself ("Nys to [Carleton]") once ordered, alongside 251;
 (2) if a numeric code-name, check whether Wotton's Venice network used a standing numbered-agent list
-documented elsewhere in SP 99/24 or SP 99/25 (the following volume); (3) Daniel Nys is a real, identifiable
+documented elsewhere in SP 99/24 or SP 99/25 (the following volume); (3) [print lookup done 3 Oct 2026, see "Print lookup" below; Kerr and modern biographies still not reached] Daniel Nys is a real, identifiable
 Wotton-Venice correspondent worth checking against Venice-period Wotton scholarship (Logan Pearsall Smith's
 notes, or Gordon Kerr / other modern Wotton biographies) not reached under this run's hosts.
+
+## Print lookup: "159" code-name or folio (A2P4-WOTT, 3 Oct 2026)
+
+Intake gate (3 Oct 2026): `python3 tools/intake_gate_check.py sp99-wotton-1622` -> "open (line 1) -- edition/page or full-text-search citation found within 6 lines". No transcription or cryptanalysis was done; print lookup only, no vision calls.
+
+**Sources read, by script (archive.org djvu full text, 2 requests, >=2 s apart):** Pearsall Smith, *Life and Letters of Sir Henry Wotton* vol. 1 (`lifelettersofsir01smituoft`) and vol. 2 (`lifelettersofsir02smituoft`), grepped for `Nys|Nuis|cipher|cypher|numbered|159`.
+Positive control per source: both volumes return many known Wotton letters and cipher passages (vol. 1: 32 cipher-line hits; vol. 2: 20), so the grep can see this author's cipher talk.
+
+Evidence found:
+1. **Vol. 1, p. 320 n. 1** (letter 52, Wotton to [Salisbury], Dec. 1604, sending a cipher): "The ciphers Wotton used were of simple numerical kind; the vowels had five variants, the consonants two. In his first cipher ... Higher numerals stood for individuals, 130 Philip III, 134 the Pope, 148 the Duke of Savoy, 160 the Papal Nuncio, etc. Numerals below 6 had no meaning. Almost all the dispatches in the Record Office have already been deciphered." Printed, from the editor (no source cited in the note). It is the 1604 cipher, not a 1622 one.
+2. **Vol. 2, p. 210** (letter 345, Wotton to Calvert, April 1621): "Daniel Nuis" is named in clear as the conveyer of a postscript ("whose conveyance I use"); n. 1 (the editor): Daniel Nys, agent employed by Wotton, Carleton and Wake to collect pictures, Mantua collection 1628. Vol. 2 p. 258 n. 4 queries "Daniel Nys?" for an unnamed person in a Dec. 1622 letter. In print Nys appears under his own name, never as a number.
+3. Vol. 2 also prints new ciphers sent in Sept. 1621 (to Aston) and 1623 (to Donne): the number scheme was reissued, so the 1604 individual-numerals range cannot be assumed for 1622.
+4. Vol. 1/2 indexes: cipher *names* printed are Blotius (Ferdinand I), Plese (Burghley), Taxis (Darcy): all word-names from the 1580s-90s, none numeric; no numbered-agent list, no "159" as a person, no SP 99/24 f.251 in either index. Appendices: nothing further under these terms.
+5. **Sources not reached:** CSP Venetian vol. 17 (1621-23): not located on IA by two searches (title/creator queries returned other volumes); by scope it calendars the Venetian archive, so it was not pursued further. OpenAlex (3 queries, key header, 1.5 s apart) found nothing on Daniel Nys as intelligencer (one Gonzaga/Mantua query returned two unrelated art-history papers); one 2026 title, "Decoding Conspiratorial Rhetoric in Sir Henry Wotton's Diplomatic Correspondence on the Jesuits" (doi 10.1163/22141332-12340030), is about rhetoric and was not opened. Semantic Scholar answered 429 twice (one pause, no loop); not run. Kerr and other modern biographies: not reached.
+
+**Decision (grade I, inferred; nothing printed states it):** the evidence favours "159" as a numeric code-name for an individual over a folio cross-reference, for two reasons: (a) a printed Wotton cipher gave persons numbers in the 130-160 range (130, 134, 148, 160 attested), so 159 falls in the attested band for individuals; (b) the TNA description's wording "Letter in cipher from 159" plus Pearsall Smith's use of Nys's name in clear for other letters weakens the idea that 159 stands for Nys. Against: the number scheme was reissued in 1621-23 (item 3), and f.159 in the same piece is "Nys to [Carleton]" (Oct. 25/Nov. 5, 1622), so the folio reading is not excluded. Counts: 1 H-grade-adjacent printed statement (item 1, 1604, a different cipher), 0 C, 0 S, 3 I. Not a reading of the target; no key or plaintext exists.
 
 ## Web and blog check (GF-A2-6, 2 Oct 2026)
 
