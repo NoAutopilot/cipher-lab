@@ -2231,3 +2231,53 @@ Gate re-run (3 Oct 2026, GF4-BATCH22):
 thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6 lines
 EXIT 0
 ```
+
+## Sams 1973 and MS. Clarendon 94 (CHECK-THURLOE-P4 (account-4), 3 Oct 2026)
+
+Check-solved step on GF4-BATCH22's lead. Status unchanged: `partial` (no period or modern decipherment of P4 located).
+
+**(1) What "Sams 1973" is.** Not a 1973 publication. It is a sentence in the bibliographical note of Eric Sams and
+Julian Moore, "Cryptanalysis and Historical Research", *Times Literary Supplement*, March 1977 (text on ericsams.org,
+`/index.php/on-cryptography/337-cryptanalysis-and-historical-research-with-moore-j`, read 3 Oct 2026; issue date and page
+not given there): "Solutions to unsolved cipher in Thurloe by Eric Sams have been filed in the Bodleian Library with
+Clarendon MS 94 (1973) and the solution to Clarke's shorthand by Eric Sams with the Clarke archives in Worcester College
+Library, Oxford (1974)." The later version, E. Sams, "Cryptanalysis and Historical Research", *Archivaria* 21 (Winter
+1985-86), pp. 87-97 (OpenAlex: vol. 21, pp. 87-97; Semantic Scholar 1985; no DOI in CrossRef), reprints the same worked
+example but its ericsams.org text has no Clarendon/Bodleian filing sentence. Neither text names which Thurloe letters
+were solved. The one worked example (both versions): "a letter of the exiled Charles II intercepted ... (State Papers,
+Volume 111 [= III], page 76)", "Upon the whole matter let me heare from you 114.20.28.41.66.25.63.30.32.68.31.44.167",
+solved as "[by] a discreete key". Located in Birch vol. 3 (IA `collectionofstat03thur` djvu text, line ~6233): "An
+intercepted letter of king Charles II. Amsterdam, January 4, 1655", to "Mr. Roles", signed "J. Westrope" -- calendared
+in the *Calendar of the Clarendon State Papers* III (1876), 1655 art. 8, "Mr. Westrope (i.e. the King) to Mr. Roles ...
+Cologne, Jan. 4", "Copy by Edgeman". This is a royalist letter, not P4 (P4 is "W. S." at Calais to Thurloe's side,
+Birch vol. 3 pp.187-189). So the filed solutions concern Birch ciphers Thurloe's office failed to read; whether P4 is
+among them is **not known** (P4 is a letter *to* Cromwell's side, and its endorsement shows the office understood it,
+s.26 -- so it is a less likely candidate than the royalist intercepts, but not excluded).
+
+**(2) MS. Clarendon 94.** EMLO Solr (`emlo.bodleian.ox.ac.uk/solr/all/select`): `"MS Clarendon 94"` 0 hits (phrase form
+checked on "MS Clarendon 83": 1 hit; 92, 93, 95 also 0) -- EMLO has no per-item note for this volume. Bodleian
+Archives & Manuscripts (archives.bodleian.ox.ac.uk search) and the MARCO collection record "Clarendon State Papers"
+(marco.ox.ac.uk/ark:29072/x08049g514x0, found by WebSearch) both answered curl with the Anubis bot-check, and one
+headless-browser attempt got Anubis's unsolved page ("could not load its JavaScript"); host left there (good-citizen
+rule). Catalogue record not read: LOCAL-QUEUE.tsv row **L45** (desktop runner, quote the record and its availability
+flag). Placement from the printed Calendar: vol. III (1655-57) is the volume for March 1655, and vol. IV (1657-60)
+begins at "Vol. 57"; so MS 94 lies outside the chronological run that holds the 1655 papers -- consistent with Sams's
+notes being *filed with* a later volume rather than with the letters themselves. (Calendar vol. V, 1660-1726, IA
+`calendarofclaren0005unse`, is lending-only: 401, not read.)
+
+**(3) Calendar of the Clarendon State Papers III (1655-57), IA `calendarofclaren03bodluoft` full text, grepped
+3 Oct 2026:** no "Stamford"; no entry for "W. S." at Calais in March 1655 (the only Calais/March 13 hits are other
+writers, e.g. art. 81 Thomas Allin at Bruges to Skippon, 13 March 1655). Vol. IV (1657-60) grepped too: "Stamford"
+only as the Earl of Stamford. The Clarendon papers are the royalist side; a Thurloe agent's letter to Whitehall would
+not be expected there, and none was found.
+
+**Result.** No period or modern decipherment of P4 located. Sams's filed solutions in MS. Clarendon 94 are the one
+unseen item that could contain one; the catalogue record is L45, and the solutions themselves would need a reading-room
+visit or a reproduction order (Bodleian Special Collections imaging, the same route as ASKS row 30 /
+outreach/bodleian-rawl-a24-p4.md; ask for "the notes by Eric Sams, 1973, filed with MS. Clarendon 94"). JSTOR-QUEUE.tsv
+rows added (both families): `"Sams" AND Thurloe AND (cipher ...) AND (Bodleian OR Clarendon)`; `"Clarendon MS 94" OR
+...`; bare phrases `"His desire of a correspondence"` (P4's printed endorsement) and `"Unsolved cipher in Thurloe"`
+(Sams's own wording). A search result, not a novelty verdict (rule 10).
+Requests: ericsams.org 4; api.crossref.org 2; api.openalex.org 2; api.semanticscholar.org 1; archive.org 5 (djvu text,
+advancedsearch); emlo.bodleian.ox.ac.uk 11; archives.bodleian.ox.ac.uk 2 (1 curl, 1 browser, both Anubis);
+marco.ox.ac.uk 1 (Anubis); celm.folger.edu 1; WebSearch 2. All >=1.5 s apart; S2 single call.
