@@ -603,6 +603,50 @@ wave-5 workers and the lane orchestrator's own row are unledgered; their costs a
 (get_session on the session ids above). Any of the five may still push if account 2's sessions resume: check git before
 re-running a step. WORK-QUEUE row LANE-A2PUSH2 marked interrupted.
 
+## LANE A1 handoff (session_01QXP6VgydPmcfBDw7m1mCDv, account 1), 3 October 2026 (closed: backlog spent)
+
+Lane orchestrator on account 1 for the account-3 orchestrator (brief `.claude/briefs/runs/2026-10-03-acct3-lane-a1.md`),
+09:19 to 11:30 UTC 3 Oct 2026, 7 waves of Opus 5.5 cloud workers (briefs `.claude/briefs/runs/2026-10-03-acct1-*.md`).
+31 worker rows ledgered by this lane: USD 87.10 of worker usage (23 D, 1 D-, 1 F, 6 N), plus USD ~12 of orchestrator usage
+(self-ledgered). The five-hour window read `allowed` throughout. No live workers; no check-in armed. Owner's 09:25 directive
+honoured: no account-2 interrupted work resumed (colbert26, harley-287, na-raad-azie, fr2980-gramont briefs written, unused).
+
+**Results (all on origin/main, NOTES.md per target; no new reading counted, no class changed):**
+- birago-fr3252-1571-72 / nevers-birago-fr3251-1572 (account-3 campaign, rows 1-2 only): fr.3995 no.76 is a single-sign letter
+  alphabet, not the Nov 1571 key; fr.3995 sweep closed (BIRAGO-76). TX-DECODE lam-4 rank 1 on f.144r/f.168/f.117r survives a
+  pre-registered held-out control (thin margin; wrong-key gate weak alone) (TXD-HOLDOUT). At benchmarked err_true f.144r is still
+  too short; f.168 top-1 misses with power though the lattice ranks it 1 -- a transcription question (NEVBIR-ERRTRUE). Flagged to
+  the account-3 orchestrator; next (theirs): verifier look at f.144r's changed lattice positions.
+- fr3416-nevers-fils-1589 (N3): figures H 74 / M 28 of 102; no.25 nomenclator keyed (204 rows); clear text of f.35r settled
+  (H 250 / M 44 / U 23 words: Nevers to his son, citadel kept, no year line); second audit keeps N3 -- the one page between N3 and
+  N4 is the 2003 Repertoire (ASKS 110). f.38 known-answer test non-test (gloss too weak).
+- fr3621-dinteville-1592 (counted N3): rows 0/a checked per occurrence, none promoted; fr.4718 holds three more Dinteville
+  cipher+decipherment letters (fols. 17/21/40, not on Gallica, ASKS 78 batch); fr.3623 f.23r is a Dinteville slip with an
+  interlinear Italian decipherment (key source for 0'/v'), one-line pilot a non-test at 63 pct reader agreement -> f.23r sign
+  sorter built and published by account 3 (ASKS 112); f.130 word division missed its pre-registered margin by 0.007 (layout aid).
+- fr3993-villeroy-1595 (open): fr.3995 nos.39/40/43/48-51/58 and f.72v not the key; f.74v/f.104v figure tables control-backed
+  negatives (power 20/20, 18/20); f159 table certifies lambda=r, omega=m, +=x but power 5/20 (non-test); its nomenclator (52 codes)
+  and Nulles box do not explain the target's other symbols (target K = null N3 by both readers); the only same-sender cipher
+  letter is fr.3994 f.134 (not digitised, ASKS 111).
+- fr4712-nevers-duchesse (open): f.10r digits = Tomokiyo; keys no.1 (non-test, power 0/20 at 37 tokens) and no.4 (cannot spell
+  f.10r) out; ff.9/11/12 no cipher; f.13r has 6 H-glossed codes that recur 6 times in f.10r (p 0.029 vs random code sets), held at
+  M pending an owner same-hand check (ASKS 113).
+- fr2988-ranzo-1520s (open): fr.3019 no.27 = fr.2988 f.2r-v (same letter, both wholly cipher, no crib).
+- fr3022-garbino-1528 (open): clear postscript dates the letter's tail 19 April 1528.
+- na-oldenbarnevelt-2442-1605 (open, N3): second blind pass, 1 sign changed (propagated to AUDIT.md and SO row);
+  tools/data/es17a built (1590-1625 Spanish state prose); judge cannot decide (FN 62 pct, folds 22-97 pct).
+
+**Lessons (ledgered):** an Opus worker on a one-step brief finishes in 5-12 min at USD 1.5-5, so a 15-min refill cadence left
+slots empty about a third of the time -- for this shape, brief the next wave before the current one lands; price a column-crop
+pass by crop count, not by pass (FILS-NOMEN 1.2x); send trial crops to the scratchpad, never the repo, so no rm is needed
+(DUCH-KEY1 stopped on a denied rm); never `git stash` around a NOTES.md rebase (TXD-HOLDOUT's one denial); a power gate before
+transcription saved two keys' worth of work (DUCH-KEY4, VILL-7280, VILL-SIGNS stopped at the gate as designed).
+
+**Open next steps (all wait on someone, or are campaign-size):** owner -- ASKS 110 (Repertoire page), 111 (fr.3994 f.134
+reproduction), 112 (f.23r sorter), 113 (fr4712 same-hand look), 78 (fr.4718 fols. 17/21/40); after the f.23r sort, the 6-line
+f.23r alignment (~USD 30-48); fr3993 (h) a later fr.3995 table with pi/theta/infinity, (i) homophonic family_run with K as null
+(~3); ranzo full no.27 two-witness transcription (~13.5); na-oldenbarnevelt (a') blocks A/C2 crop-and-read (~4).
+
 ## LANE A2PUSH handoff (session_01LpiQYZ6ALkasXqnfsrufvm, account 2), 2-3 October 2026 (closed: backlog spent)
 
 Lane orchestrator on account 2 for the account-3 orchestrator, 20:50 UTC 2 Oct to 03:16 UTC 3 Oct 2026, 19 waves of
