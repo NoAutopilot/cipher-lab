@@ -69,6 +69,7 @@ What would move it, per Bourdeau: the as-sent letter to Villeroy (Nevers's copy 
 key among the unexamined portions of fr. 3995 beyond nos. 60/65/66/68–76.
 **Update, VILL-147, 3 Oct 2026:** ff.147v/149v viewed native (no gloss; f.149v docket names the packet the original went in);
 fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 nos.39/40/43/58; Nevers to Henri IV, July-Aug 1595, as siblings.
+**Update, A1B-VILL-PAIR, 3 Oct 2026:** figure-pair homophone design (Bourdeau 1x/2x, K null) is a control-backed negative (control 0.733, target judge FAIL -1.263 = shuffle -1.261). Next: no.57's table (j), no.44 symbol column (k), as-sent packet (d), second transcription pass (e').
 
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (catalogue item 277; `nevers1595/`
 working folder — full transcription, matched-control solver ladder across six unit models, Gomberville tome-2
@@ -678,3 +679,37 @@ FAIL is informative but not overwhelming. Vision calls 0; network requests 0.
 Next (one line, for the lane): (j) the same family with figure pairs segmented as codes (Bourdeau seg 1x/2x) and the
 VILL-SIGNS certified signs pinned (L=r, w=m, +=x) via `--param pins` is the remaining untried variant of this instrument;
 otherwise (h) and (d) above stand.
+
+## Figure-pair homophonic family_run, K as null (A1B-VILL-PAIR, LANE-A1B, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-pair.md`. Intake gate 16:40 UTC: "fr3993-villeroy-1595: open (line 1) --
+edition/page or full-text-search citation found within 6 lines". Pre-registered in `fr3995/PREREG-VILL-PAIR.md` (commit
+cf962165, pushed before any run). Cipher `pair/cipher_pairs_noK.txt` = Bourdeau's 1x/2x segmentation already on disk
+(`solver/target_pairs.txt`, nevers1595/seg.py) with the header and every K dropped:
+
+    grep -v '^#' solver/target_pairs.txt | sed -E 's/(^| )K( |$)/\1\2/g; s/(^| )K( |$)/\1\2/g; s/  +/ /g; s/^ //; s/ $//' \
+        > pair/cipher_pairs_noK.txt          # 25 runs, N = 594 tokens, K = 68 types, 146 two-figure groups
+
+Family `homophonic` (same solver, corpus fr16 and profile=target as A1-VILL-HOMO; only the token unit changes: one figure group =
+one homophone). Not pinned: the homophonic family takes no pins parameter, so L=r, w=m, +=x were not applied (disclosed deviation).
+
+| run | control (fr16, N=594, K=68 allotted, target profile) | target best anneal score | judge (fr16, real_p05 -0.900, null_p99 -1.857) |
+|---|---|---|---|
+| real target, seed 1 | mean **0.733** over 3 seeds (0.860 / 0.941 / 0.399; scores -1256 / -1271 / -1459) -- gate 0.6 met | -1460.8 (8 restarts -1461 to -1500, no agreement) | **FAIL** -1.263 |
+| shuffled target (floor), seed 1 | 0.860 (one seed, the same seed-1 control) | -1495.8 | FAIL -1.261 |
+
+Reading the numbers: the control reads its own design in 2 of 3 seeds (and is not at ceiling, 0.733 < 0.95, so it can fail -- seed 3
+did); when it reads it scores -1256 to -1271. The real target's best (-1461) sits at the failed control seed (-1459), only 35 points
+above the order-destroyed shuffle, and its judge score (-1.263) is indistinguishable from the shuffle's (-1.261). Per the prereg:
+**control-backed negative for the figure-pair homophone design (Bourdeau 1x/2x groups, one group or sign = one letter) with K as
+null** -- control 0.733 vs a target judge FAIL, both numbers above. Decodes `pair/decode_target.txt`, `pair/decode_shuffle1.txt`
+(the tool writes to `families/` under the same names as A1-VILL-HOMO's run; those two files were restored from git). Conditional
+on (a) Bourdeau's single unmeasured transcription pass (rule 2), (b) his 1x/2x segmentation being the true unit cut, and (c) no
+word codes: it says nothing about a mixed nomenclator (LANE R4 N's design, whose control reads 2-6% at this N -- untestable, not
+refuted). Grades: H 0, C 0, S 0, M 0, I 0 (nothing read). Vision calls 0; network requests 0. Rule 10: no novelty claim.
+
+Verdict after A1B-VILL-PAIR: `open`. Both controllable letter-homophone token models (one sign, one figure group) are now
+control-backed negatives on the transcription as it stands; the next steps are not further solver variants on the same text but new
+material or a better text, cheapest first: (j) view no.57's table (canvases f198-f200, ~$5); (k) no.44's right-hand symbol column
+(canvas f162, ~$3); (d) the as-sent packet on Villeroy's side (~$3); (e') a measured second transcription pass of the f.148r-149r runs
+so negatives stop resting on one unmeasured pass (~$4). All depend on nobody.
