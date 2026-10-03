@@ -6912,3 +6912,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 11:25 | GAPS93-sufi-fiddle (account-4) | claim: sufi-fiddle -- match.py vs Malay and Arabic word lists separately (same C3 null + held-out power control), prereg before scoring; cap USD 5, box 35 min from 11:26 UTC
 2026-10-03 11:25 | GAPS92-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 -- R4284 I25750 LEFT-page letter cipher: DECODE login, crops, 2 blind Opus passes + reconcile, inventory vs R4282 34 labels; cap USD 11, box 50 min from 11:25 UTC
 2026-10-03 11:25 | FT4p-naf14913-rousseau-venice-1743 (account-4) | claim naf14913-rousseau-venice-1743: f.274 slip 300px sweep + blind eye check of six 63/444/664 groups in f.213 (for the account-4 parent); cap USD 6, box 40 min from 11:26 UTC
+2026-10-03 11:25 | OUT-CHECK-KHA (account-4) | claim: gate-7 fact check of outreach/kha-hessen-1567-request.md
