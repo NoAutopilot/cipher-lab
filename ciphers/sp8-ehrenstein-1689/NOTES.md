@@ -67,7 +67,7 @@ correspondents.
 **Copy-order.** See REQUEST.md.
 
 **Recommended next steps (not run this pass):** (1) a full page-by-page read of CSP Domestic William and Mary
-vol. 1 (rather than a name-string grep alone) to rule out an OCR-garbled entry; (2) identify the specific
+vol. 1 (rather than a name-string grep alone) to rule out an OCR-garbled entry; [Done, GAPS111, 3 Oct 2026: the entry is found at p. 387 and the OCR-fuzzy sweep adds nothing; see the GAPS111 section below.] (2) identify the specific
 "d'Ehrenstein," "de Bernsdorff," and "de Guldenstolp" via Scandinavian/Hanoverian prosopography (SSNE database,
 per LESSONS.md precedent) before any solve attempt, since a firm identification would open a proper printed-
 correspondence search for any of the three; (3) check whether SP 8's neighbouring volumes/pieces (SP 8/1-5,
@@ -102,3 +102,40 @@ Not found: no decipherment, plaintext or prior attempt for SP 8/6/65 on the open
 (b) Other solvers' working files: fresh shallow clones (2 Oct 2026) grepped for `ehrenstein|bernsdorff|bernstorff|guldenstolp|gyldenstolp`: aaymeloglu/unsolved-ciphers none (cited, not copied); dbourdeau/cyphersolver only `targets/windischgraetz1720/` (key5017 nomenclator code 432 and key5018 code 53 = "Bernsdorff"), an Imperial key of 1720 naming the same family -- a different sender, office and date, not run on this letter and not evidence for its key. Not found for this item.
 (c) Physical neighbours: no image online (`digitised: false`) -- leaves, facing page and slips unreachable. Calendar neighbours on p. 387 (King William's Chest 6, Nos. 66-74): an artillery report from Ireland, a description of the Emperor's generals, a Breda fortifications project, Waldeck to Heinsius (copy), a Galicia salt-farm memorandum, Castanaga's army, the Duke of Brunswick-Lüneburg to the King, winter-quarter proposals. None is a key, decipherment or clear copy of No. 68. Not found.
 (d) Recipient side: Bernsdorff is most plausibly Andreas Gottlieb von Bernstorff (1649-1726), then minister at Celle (identification not confirmed). No printed edition of his 1689 correspondence was located in the web searches above; the Hanover archive (NLA Hannover) holds the Celle side and was not searched this pass. Separately, vol. 1 shows Dr John Wallis deciphering intercepted French letters for Nottingham in 1689 (pp. 363-364, De Bethune and De Gravel to de Croissy); Wallis's decipherment volumes were not searched for this letter. Not found in what was read; Celle-side and Wallis-side unsearched.
+
+## GAPS111 (3 Oct 2026, account-4): CSP Dom. William and Mary full-text grep
+
+Step run: "Recommended next steps" (1), by script, not by a model reading the volume (Usage 2). Full text fetched once
+from Internet Archive: vol. 1 `calendarofstatep01grea_2_djvu.txt` (2.40 M chars; 13 Feb 1689 - Apr 1690) and, as a
+check for any later mention, vol. 2 `calendarofstatep02grea_1_djvu.txt` (2.35 M chars). Script: `csp_grep.py` in this
+folder (name regexes, an OCR-fuzzy token sweep at edit distance <= 2 with f/s, c/e, y/i folded, King William's Chest 6
+references, cipher words within 400 characters of any name; exits 2 if the positive control is missed).
+
+Positive control: the same regex method finds the p. 387 neighbour "The Prince of Waldeck to Pensionary Heinsius"
+(No. 70 in the calendar run, 1 hit in vol. 1) and "Castanaga" (27 hits in vol. 1, 30 in vol. 2). Control passed.
+
+| Search (vol. 1) | Hits | What they are |
+|---|---|---|
+| Ehrenstein regex | 2 | p. 387 entry "Major d'Ehrenstein to Mons. de Bernsdorff, touching Mons. de Guldenstolp. [Ibid., No. 68.]"; index "D'Ehrenstein, Major, 387" |
+| Bernsdorff regex + fuzzy | 1 + 2 | the p. 387 entry; index "De Bernsdoff, Mons., 387" (OCR or print spelling); "Ebersdorff, letters dated at" (unrelated place) |
+| Guldenstolp regex | 2 | p. 387 entry; index "De Guldenstolp, Mons., 387" |
+| Ehrenstein / Guldenstolp fuzzy (beyond regex) | 0 | -- |
+| King William's Chest 6 references | 66 | the run containing No. 68 |
+| cipher/cypher/decipher within 400 chars of a name | 0 | -- |
+| cipher words in the volume | 26 | editorial rules, Wallis decipherments of French and Polish letters (pp. 363-364 etc.), seals "with a cypher and coronet"; index "Cipher, letters, &c. in, 201, 205, 217, 227, 314, 363, 364, 374" -- p. 387 is not among them |
+
+Vol. 2: 0 hits for all three names (regex and fuzzy), 0 King William's Chest 6 references; 21 cipher words, none
+within 400 characters of a name.
+
+Found: the calendar's one-line description of the letter (vol. 1 p. 387, King William's Chest 6 No. 68; TNA's item
+65), already logged by GF-A2-6 on 2 Oct 2026 and confirmed here by script. Not found: any extract, "in cypher" note,
+plaintext or decipherment of this letter in vol. 1 or vol. 2, nor any other mention of the three named parties in
+either volume; the calendar's own cipher index does not list p. 387. The calendar's editorial rule (vol. 1 front
+matter: "when a contemporary or authorised decipher exists it will be sufficient to treat the cipher as an ordinary
+document") means a one-line entry neither confirms nor excludes a decipher among the original papers -- only the
+leaf can settle that. Search result, not a novelty verdict (rule 10).
+
+Requests: archive.org 3 (metadata x1, djvu.txt x2, >= 1.6 s apart). No vision, no subagents.
+
+Next cheapest step: recommended step (2), identification of the three parties (SSNE / Bernstorff-Celle
+prosopography), web-only, about USD 2; the letter itself stays copy-order (REQUEST.md, `digitised: false`).
