@@ -6618,3 +6618,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 06:54 | VERIFY4-SURINAME-2077 (account-4) | claim: verifier, ciphers/na-suriname-map-1781 AUDIT.md item 4 (4.VEL 2077 legend) re-class after GAPS37/GAPS23
 2026-10-03 06:54 | TOOL-FSG-JPEG (account-4 worker) | claim: tools/file_shrink_guard.py JPEG/binary crash fix (= account 3's queued TOOL-SHRINK-JPEG), for the account-4 parent
 2026-10-03 06:54 | FT4i-naf14913-rousseau-venice-1743 (account-4) | claim: naf14913-rousseau-venice-1743 one-edit/one-polyvalent alignment on f.249/250 and f.213/214, cap USD 6, box 40 min
+2026-10-03 06:54 | GAPS43-lodewijk-van-nassau-1573-74 (account-4) | claim: lodewijk-van-nassau-1573-74 -- gap 4 word-level global reassignment for 4612 seeded from key_full, fr16 word-seg objective; prereg 5811-cut 20pct-perturbed control >=0.90 first; cap USD 8, box 45 min from 06:55 UTC
