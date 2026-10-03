@@ -137,3 +137,7 @@ Waiting on a copy order (REQUEST.md). The one action that depends on nobody: que
 (`data.riksarkivet.se/api/records`) for every record under SE/RA/721512 (Beskickningsarkivet från Biby) with
 `onlyDigitisedMaterials: true`, to find any digitised volume of the same mission archive (a key or dispatch register
 of the 1779-82 Constantinople legation).
+
+## Re-check (CS-BATCH3, 3 Oct 2026)
+
+The "While waiting" action (Riksarkivet Sök-API, `data.riksarkivet.se/api/records?text=Celsing&onlyDigitisedMaterials=true`) was tried twice, one retry after 5 s: curl error 35, SSL_ERROR_SYSCALL on connect to data.riksarkivet.se, HTTP 000 both times; the host is unreachable from this container, logged, not retried further. Verdict unchanged (`open`); the step stays as written, to be run from a session that can reach the host.

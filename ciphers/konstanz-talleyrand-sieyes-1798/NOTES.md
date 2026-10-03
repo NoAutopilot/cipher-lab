@@ -74,3 +74,7 @@ Local `sources/cryptiana` grep last done 24 Sept 2026 (napoleon2.htm, madison.ht
 Where it was not found: no printed text of the 17 Jul 1798 Sieyès letter; no decipherment of any Konstanz leaf. Pallain's other volumes and Bailleu vol. 2 were not searched.
 
 Next, cheapest: compare P 1839/21's image (when copied) with Pallain p. 398 as a known-plaintext check (grade C), then attempt P 1839/28 and /41 against the printed 3-27 Dec and 5-17 Feb candidates, ~$3 once a copy exists.
+
+## Re-check (CS-BATCH3, 3 Oct 2026)
+
+Google Books API (key, country=US), 1 query, `"Sieyes" "17 juillet 1798" chiffre Talleyrand`: 0 results. Nothing new; verdict unchanged (`open`; P 1839/21 stays calibration material because Pallain 1891 p. 398 prints its text, P 1839/5 not found in print). Gap left from the 2 Oct premise check: Pallain's other volumes and Bailleu vol. 2 not searched.

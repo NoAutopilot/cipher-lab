@@ -91,3 +91,7 @@ Queries (WebSearch, standard): (1) "Waldegrave Delafaye 21 July 1734 Fleury Newc
 (a) Folder's own files: NOTES.md and REQUEST.md mention no decipherment, gloss or attached clear copy; the Discovery description itself says the folio is a copy "of a letter in cypher" seen on a table, so any ciphertext on f.146 would be Newcastle's, not Waldegrave's. Not found. (b) Other solvers' working files: nothing for SP 78/205 in either repository. Not found. (c) Physical neighbours: no image exists online (TNA Discovery record C7336977, not digitised, copy-order); neighbours f.99-type items listed only by catalogue: SP 78/205/94 (17 July, Paris Gazette enclosure) has no cipher sentence. Unreachable (no image). (d) Recipient side: Coxe's Walpole papers cover Delafaye/Walpole/Newcastle; nothing for 21 July 1734 (above). Not found.
 
 Hosts this pass: archive.org 3 downloads, discovery.nationalarchives.gov.uk 2, de-crypt.org 17 (no login), github.com 2 clones, cryptiana.blogspot.com 1, scienceblogs.de 1, ciphermysteries.com 1, WebSearch 5.
+
+## Re-check (CS-BATCH3, 3 Oct 2026)
+
+Google Books API (key, country=US), 1 query, `"Waldegrave" Delafaye "21 July 1734" cypher`: 0 results. Nothing new found; verdict unchanged (`open`, low confidence): the folio's own text may only describe a French copy of Newcastle's cipher letter, so a page check is still the first step. Not found: any print, gloss or key for the 21 July 1734 letter. While waiting stays as written above (Discovery catalogue only, copy order in REQUEST.md).
