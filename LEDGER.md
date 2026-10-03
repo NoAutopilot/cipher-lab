@@ -1737,3 +1737,10 @@ the end of every wake.
 | 3 Oct 2026 | NEVBIR-NAMES | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | N | owner's proper-noun idea: 239-form gazetteer vs 22 gaps, 0 fills beat controls; unread signs are mostly single (125 of 150 U runs are 1 sign) |
 | 3 Oct 2026 | NEVBIR-47C | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | f.47 third reader: key z 4.2-4.7, power 20/20; text still M/U; frequent pairs need the witness check |
 | 3 Oct 2026 | SOLVERDIFF-AYMELOGLU | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | 3 Oct diff: their side unchanged since 27 Sept; nothing of ours read or closed there unrecorded |
+| 3 Oct 2026 | CLOSER-20 | session_013tR1NAfHc6EsQQf4r3uZij | account-4 | Opus 5.5 | 0.95 | D | done 00:10: archived 6 of 6 with per-id costs. |
+| 3 Oct 2026 | GAPS16-na-suriname-map-1781 | session_011iV14R69bjfvowA7MrxEqP | account-4 | Opus 5.5 | 10.23 | D | done 00:10 (0a0c5a47, aadece65): Remarque at native res, passes 0.946 after shape unification; reads as Dutch engineering prose (H 165 M 76 U 14); 4 more signs settled blind. |
+| 3 Oct 2026 | FT4-maurice-rupert-1645 | session_01MMBsnFYKGpEDej1kZKuQbb | account-4 | Opus 5.5 | 1.52 | D | done 00:14: DECODE 8627 Digby index has no Maurice key; Rupert key = no.118. Container needed the NSS cert fix. |
+| 3 Oct 2026 | GAPS14-na-janssens-java-1811 | session_019DQs3T6zChphCNMj2BLCyc | account-4 | Opus 5.5 | 1.20 | D | done 00:14 (88913761): invnr 7 scans 59-117, nothing new. |
+| 3 Oct 2026 | GF4-BATCH4 | session_01WaHaf44EzytFge5Tv6tBoS | account-4 | Opus 5.5 | 3.60 | D | done 00:15: mccormick, oldenbarnevelt-brederode, riksarkivet-r4282 gate 1 -> 0, open. |
+| 3 Oct 2026 | GF4c-berthier-napoleon-1812 | session_01UVLDfPVZX29NjBCg2xL8Ni | account-4 | Opus 5.5 | 2.02 | D | done 00:15: Davout Nov 1813 code control-backed negative (excess = 2 values); SHD 1812 grand chiffre found as images on jfbouch. |
+| 3 Oct 2026 | GF4-BATCH3 | session_01Xea5ujuCxf6FZCP12MfzzP | account-4 | Opus 5.5 | 3.98 | D | done 00:18: decode-2754 (Bourdeau 'solved' = misread of adjacent Tomokiyo entry), decode-4450, esp318 gate 1 -> 0, open. |
