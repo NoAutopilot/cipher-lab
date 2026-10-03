@@ -1,5 +1,5 @@
 open
-Négociations secrètes touchant la paix de Munster et d'Osnabrug (Le Clerc, 1725, tome II, archive.org
+*Lettres, mémoires et négociations de monsieur le comte d'Estrades* (1743, tome I, archive.org lettresmmoires01estr, djvu text read by GF4-BATCH11 on 3 Oct 2026): its table lists one 1645 piece only, Prince d'Orange to d'Estrades, 17 Apr 1645 (p.91), then 4 Feb 1646 (p.92); nothing Jul-Dec 1645, no letter to a plenipotentiary. Also read: Négociations secrètes touchant la paix de Munster et d'Osnabrug (Le Clerc, 1725, tome II, archive.org
 negociationssecr02lecl) read by this worker: printed extract of a D'Estrades letter to Mazarin, 23 Sept 1645
 (djvu line ~71269, within the target's own Jul-Dec 1645 window), control words "Servien" (329 hits) and
 "plénipotentiaire" (81 hits) confirm the OCR text is searchable for this period; the target's own ciphered
@@ -294,3 +294,54 @@ status "waiting on the owner" since the request was written, unchanged through t
 - Fetch DECODE's login-free listing for 9430-9432 (Clair 574/577/580 Key records) for descriptive text on the key, before the image request lands. M.
 - Search Le Clerc tome II further and the d'Avaux/Servien Négociations printed record (named in NOTES as "not searched this pass") for this specific letter. S, tools/print_check.py.
 - Re-read the archivesetmanuscrits finding aid to pin which of the twelve 571-582 volumes actually holds the Jul-Dec 1645 item, narrowing the pending request. S.
+
+## Web and blog check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `d'Estrades 1645 lettre chiffrée plénipotentiaires Münster Clairambault 575` (sender + recipient + date): hits are the
+   BnF finding aid cc13896b itself, neighbouring Clairambault finding aids, the 1710 English *Secret letters* of the Nijmegen
+   embassy (1676-78, wrong period), Wikipedia, digibug.ugr.es's copy of the 1709 *Lettres* (1663-64). No discussion of this letter.
+2. `"Clairambault 575" chiffre` (shelfmark + chiffre): company-register noise and one Brepols bibliography; nothing on this item.
+3. `"Lettre chiffrée adressée à l'un des plénipotentiaires"` (the catalogue's own phrase, the only distinctive text the item
+   has; there is no clear text or decode): the BnF finding aid is the only real hit.
+4. `Estrades Brasset chiffre 1645 cryptiana OR scienceblogs.de OR ciphermysteries` (descriptive title + blogs): hit Cipherbrain
+   2015-03-20 "Eine ungelöste Verschlüsselung aus dem Jahr 1645", which I opened with its comment thread. It is Prince Maurice to Lord Digby,
+   31 Aug 1645 (TNA), solved in the comments by Hans Jahr and Kent Ramliden. Unrelated: no d'Estrades, Clairambault or Brasset.
+Blog site searches: scienceblogs.de (`Estrades chiffre Münster 1645`) -- the Rabenhaupt 1646 post (opened: Rabenhaupt to
+Amalie Elisabeth of Hesse-Kassel, Pilsen/Prague holding, no French link) and the 1645 Digby post above, nothing else relevant;
+cryptiana.blogspot.com + cryptiana.web.fc2.com (`Estrades cipher Clairambault`) -- no indexed hit; local snapshot
+sources/cryptiana/ re-grepped for "Clair 575", "Clairambault 575": 0 (louisxiv0.htm's d'Estrades section covers Clair 577/579, 1647-53,
+already logged above); ciphermysteries.com (`Estrades cipher Munster 1645`) -- no relevant hit.
+Also grepped: github.com/el-descifrador/cabinet-noir (Descifrado, *Cabinet Noir* v1.0, 29 Sept 2026, CC BY 4.0; shallow clone,
+HEAD 47b6db9 of 2 Oct 2026) for "clairambault 57x", "estrades", "cc13896b": 0 hits (its only Clairambault items are Clair 369,
+Baugy 1616). Result: no decipherment, plaintext or discussion of this letter found on the open web or in the three blogs.
+
+## Premise check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+- (a) Folder's own mentions -- not found. The folder mentions keys near this letter (DECODE 9431, the Brasset key at Clair 574 p.4-5; 9430
+  Clair 577; 9432 Clair 580; Lasry's Clair 577/579 reconstructions; Baluze 172), but none is a decipherment or clear copy of Clair 575 p.1209.
+  None of them can be opened from here: Clair 571-582 are not on Gallica (SRU, 25-26 Sept 2026). REQUEST.md asks for exactly these leaves.
+- (b) Other solvers' working files -- not found. Fresh shallow clones on 3 Oct 2026: cyphersolver (HEAD 4aedb40, 2 Oct 2026) grepped
+  for "clairambault 57[45]", "clair 575", "estrades": its hits are the Clair 577 Italian letter (napoleon/unsolved.*), the Colbert-office and
+  Bordeaux 1651 d'Estrades keys (other dates), Ronquillo/Perwich corpus text, and a Gallica-sweep description line naming "le comte G.
+  d'Estrades" as a signatory in another volume; no target folder, rendering or apply-key script for this letter. unsolved-ciphers (HEAD
+  d2800bb): only catalogue/decode-catalog.csv (the three Key rows already logged). Cabinet Noir: 0.
+- (c) Physical neighbours -- unreachable. Volume not digitised; the facing pages and any decipherment bound beside p.1209 cannot be viewed
+  until the REQUEST.md reproduction comes back. When it does, the request's pages around p.1209 must be checked for a clerk's decipherment.
+- (d) Recipient side -- not found. The recipients' printed papers have now been read: Le Clerc's *Négociations secrètes* II-III (the Münster
+  plenipotentiaries' own papers; LANE CX) and APW II B 2 (LANE CX). There, Servien wrote on 21 Oct 1645 that they had no cipher with
+  d'Estrades. APW II B 3 begins 25 Nov 1645, and its source list cites Clairambault only from 1646 (vols 405, 576). The sender's own *Lettres*
+  (1743, tome I) has nothing for Jul-Dec 1645 (line 2).
+Result: no prior decipherment or printing of this item located; it stays open, blocked on the image. This is a search result, not a novelty verdict (rule 10).
+
+## Verdict (GF4-BATCH11, 3 Oct 2026)
+
+**open** (unchanged). Editions read: Le Clerc, *Négociations secrètes* II-III (1725, archive.org negociationssecr02lecl/03lecl, full text);
+APW II B 2 (full-text "chiffre" sweep, doc. 244 read); *Lettres, mémoires et négociations du comte d'Estrades* (1743) tome I, table
+pp.91-92 plus full-text grep for 1645/Munster/chiffre. None prints or calendars Clair 575 p.1209. Open web and the three blogs: nothing.
+The next step is still the image (REQUEST.md). The "## While waiting" section above names the steps that depend on nobody.
+
+Requests this pass: archive.org 5 (1 advancedsearch, 2 metadata, 2 djvu.txt), >=1.6 s apart; WebSearch 7; WebFetch 1 (scienceblogs.de);
+github.com 3 shallow clones (shared across this batch's three targets).
+
+Gate re-run (GF4-BATCH11, 3 Oct 2026): `clair571-estrades-1645: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
