@@ -6757,3 +6757,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-COL18 colbert26-lathuillerie-1644 -- last commit none; unfinished: anchor_split.py with canvases 54-56 as cleared units
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-GRA7 fr2980-gramont -- last commit none; unfinished: locate fr.3038 no.19 + cipher original, align as known plaintext
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-RAA12 na-raad-azie-1800 -- last commit none; unfinished: NA 2.01.27.03 invnr 207/144 item-page and scan check
+2026-10-03 09:27 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: LANE-A2PUSH2 (lane, account 2) -- last commit 2d73ce471; unfinished: refill loop after wave 5 and own handoff (written for it in STATUS.md c92db36c1); WORK-QUEUE row marked interrupted
