@@ -2281,3 +2281,50 @@ rows added (both families): `"Sams" AND Thurloe AND (cipher ...) AND (Bodleian O
 Requests: ericsams.org 4; api.crossref.org 2; api.openalex.org 2; api.semanticscholar.org 1; archive.org 5 (djvu text,
 advancedsearch); emlo.bodleian.ox.ac.uk 11; archives.bodleian.ox.ac.uk 2 (1 curl, 1 browser, both Anubis);
 marco.ox.ac.uk 1 (Anubis); celm.folger.edu 1; WebSearch 2. All >=1.5 s apart; S2 single call.
+
+## GAPS144-thurloe-printed (3 Oct 2026, account-4)
+
+Brief: run the named next step "Thurloe State Papers vol. 3 pp. 188-189 on archive.org (collectionofstat03thur)" --
+fetch the djvu text, extract the printed cipher passage, run what the sentence says it settles. The sentence is the
+last line of section 16 (worker G, 24 Sept 2026): the page images are needed to fix the line order of P4's
+OCR-disordered blocks A and B. `tools/next_steps.py` picked it up because this NOTES.md had no "## Remaining gaps"
+section, so the oldest written next step was taken as current.
+
+**Result: already done, no fetch made.** Worker I (section 18, 24 Sept 2026) fetched the p.188 leaf
+(`images/collectionofstat03thur_leaf0198_p188.jpg` plus a native-resolution block A crop, in `images/manifest.json`) and
+transcribed printed lines 50-61 (`P4/image_transcription.tsv`); worker L (section 21) rebuilt `reading_P4.txt` from it.
+Re-checked today from disk only: (a) `python3 pool_1654/decode_stamford.py --check` exit code is in the done line below;
+(b) `reading_P4.txt`'s token list counts **H 64, C 338, S 0, M 16, U 6 of 424** (awk over column 4), the same as section
+21; (c) the stretch after the image span (djvu 15552-15645, which covers the rest of p.188 and p.189) is clear prose
+with one coded sign (the lord-protector sign). Its only U tokens are hyphen-split clear words ("[en-]gage") and OCR
+fragments of clear words ("[n-]", "[4a]", "[efFe<5ls,]", inside the clear-text span `{beeaculo[n-]yreach[4a]ftrustsince}`
+and line 33). None is a cipher numeral, so the p.189 text is not garbled for the cipher, and per the brief no page image
+was fetched. The two remaining coded U tokens are values **143** ("the whole partie of 143") and **70** (last numeral
+of block A). Neither is in `key_stamford.tsv`. Both are missing from the key, not misread: section 18 found no digit
+difference between the image and the reassembled OCR.
+
+M tokens (16): code 33 = w (6), 67 = england (3), 1 = i (3), 38 = q (2), 32 = x (1), 153 = thecavaliers (1); low-vote
+key entries from the P5-P7 alignment (control P5+P6 -> P7 92.3%, P7 -> P5+P6 93.7%, unchanged).
+
+No interlinear_align.py run: pp.188-189 carry no printed cipher/clear pair for P4 (Birch prints no decipherment of this
+letter, s.16/s.19); there was nothing to align. Grades are unchanged, and so are the reading and the key. No novelty
+class (rule 10; AUDIT.md holds P4 at N3).
+Requests: none (archive.org 0, all other hosts 0). Vision calls 0. Subagents 0.
+
+## Remaining gaps (GAPS144-thurloe-printed, 3 Oct 2026)
+Read so far: P4 (the one pool item with no printed decipherment) 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.txt, s.21, re-counted 3 Oct 2026); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+Closed, not a gap: P4 block A/B line order (pp.188-189 page images), done 24 Sept 2026 by s.18 (image) and s.21 (reading), re-checked 3 Oct 2026 above.
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: not-attempted; the key comes only from P5-P7's printed decipherments, and Tomokiyo's key image stamford.jpg (built partly from P4, AUDIT.md (f)) has never been compared; next: one fetch of stamford.jpg from cryptiana.web.fc2.com, compare against key_stamford.tsv for 143, 70 and the M codes 33/67/153, ~$1.5
+- P4 one-vote M entries 67, 153, 84, 275 - blocker: not-attempted; V3a's SO-THURLOE-P4 suggestion (s.21 foot) to test them against number boundaries in the later Stamford letters; next: disk-only check against pool_1654/tokens.tsv, ~$1
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (GAPS144-thurloe-printed, 3 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92-94% (s.16)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [ ] known-keys: Tomokiyo's stamford.jpg not yet fetched or compared; planned as the cheapest next step
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: key rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
+- [ ] retry: V3a's one-vote M boundary test against the later Stamford letters, disk only
+Verdict: keep going: 3 internal gaps; cheapest next: fetch Tomokiyo's stamford.jpg and compare against key_stamford.tsv for 143/70/M codes, ~$1.5
