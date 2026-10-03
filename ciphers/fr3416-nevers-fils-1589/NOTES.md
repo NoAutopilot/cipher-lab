@@ -345,7 +345,7 @@ Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
 Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
+- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried once (A1B-FILS-L05): non-test at its own pre-registered class gate, since no H token on f.35r contains a 0 (class 0 has 0 exemplars, gate >= 3), and pos 15-16 fuse into one segmented box; next: re-register the atlas test with exemplars of this hand's 0 from a second leaf (the Nevers fils letters' other figure runs, once one is H-graded) or with the 8-vs-'01' question posed as one looped-8 box against the H 8 class and a joined 0+1 synthetic, then classify pos 5/13/17/20 (single boxes), ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON) and blind-checked once (A1B-FILS-UPPER): 251 words H, 43 M, 23 U; the Sonnet word-window reader could not read this hand (61 of 62 windows at [...] or wrong on H neighbours, all L), so the check moved only 1 token - blocker: not-attempted; no capable independent reader has seen the M/U words yet; next: the same 62 crops (verify/upper_mu/crops) to one blind Opus reader (the FILS-UPPER passes that read this hand were Opus), same pre-registered rules, ~$5
@@ -359,7 +359,7 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H
+- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved
 Verdict: keep going: 2 internal gaps (2 more illegible); cheapest next: the upper letter's 62 M/U word windows to one blind Opus reader, ~$5
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
@@ -645,3 +645,23 @@ on the f43 source region, then `classify --topk 3 --knn 5`, HOG features as the 
    box) is not classified: unsettled.
 4. A token moves M -> H only if every glyph in question in it settles to the committed digit. A glyph that settles to a
    different digit is reported and the token stays M (no digit is changed by this run). Key coverage never chooses.
+
+## A1B-FILS-L05 results (account 1 for LANE-A1B, 3 Oct 2026, 18:35-18:4x UTC)
+
+Rules pre-registered above (commit 65e04065) before any classification. Segmentation (command, pasted):
+`python3 tools/glyph_atlas.py segment --page f43=ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f43_3950_3560_3150_1800.jpg --out <scratch>/ga/r0.7 --rel 0.7 --debug`
+-> 345 signs, 41 marks, 10 lines (the default `--rel 0.78` gave 1186 boxes at median height 4 px, paper speckle, 27 lines;
+not used). Box overlays checked by eye for L02 and L05 (scratch only, nothing committed).
+- L05 boxes (pos -> box): 4 -> 17 (looped 8, one box), 5 -> 18, 7 -> 20, 13 -> 26, **15+16 -> one fused box 28**, 17 -> 29,
+  20 -> 32; pos 6 (9) is fused with the next line's descender (box 19). By rule 3 pos 15 and 16 are unsettled whatever the atlas.
+- L02 (all H): 32 of its 32 run digits map to boxes; 30 are single-digit boxes; the looped 8 is one box three times
+  (boxes 8, 30, 33) and two components once (19+20), and the 6 of 68 splits (28+29), so the H 8 and 6 classes exist.
+- **Class gate (rule 2) fails before any score:** no token graded H on f.35r contains the digit 0 (H tokens: L02 79..43,
+  L03 75..42, L04 84..75, L05 43 39 45, L06 45 64 83, L07 36..84, L08 42 75 14, L10 17..93; key no.25 values with 0 are
+  only the nulls 01-09, none at H). Class 0, named by the reader's alternative for pos 4 and 7 (8 or 01), has 0 exemplars
+  against the gate of 3. By the pre-registered rule the run is a non-test: classification and the leave-one-out check
+  were not run, and **no grade moves (H 75, M 27 unchanged)**. Classes 1, 5, 6, 7, 8, 9 do have >= 3 H exemplars across
+  L02-L10, so a re-registered test that does not need class 0 (pos 5, 13, 17, 20) is runnable; the next step above names it.
+- `python3 ciphers/fr3416-nevers-fils-1589/decode_f35.py --check`: exit 0 (no token or grade changed). AUDIT.md safe
+  sentence and the SO-NV02-F35 prompt: counts unchanged, not edited.
+Not found: nothing searched in print (transcription job only). Vision: 3 own looks at scratch overlays, 0 subagent calls.
