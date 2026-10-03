@@ -7066,3 +7066,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 14:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 14:10 UTC: spawned 1 (LANE-A2PUSH3 session_01HhF3BJJUVzo814gSvoeVjt, Opus 5.5, after the 13:30 reset as its brief asks), queued left 0
 2026-10-03 14:11 | account-4 parent | check-in 73 14:11: 6 done (eckert-1862 dated key, 8/10 conflicts separate by date; mlh-1976 charset test weak p 0.02; stanning/ula-degeer/nla-heinrich negatives). FT4w live. Spawned CLOSER-66, GAPS132-eckert, GAPS133-nla-heinrich, GAPS134-sp81-stanning, GAPS135-mlh-1976, GAPS136-decode-1411
 2026-10-03 14:11 | GAPS133-nla-heinrich-braunschweig-1519 (account-4) | claim: Wallstein 2025 Hildesheimer Stiftsfehde OA check + Bei der Wieden pp.107-117 read if open; cap 2 USD
+2026-10-03 14:12 | GAPS135-mlh-1976 (account-4) | claim: ciphers/mlh-1976 second blind transcription pass + reconcile; cap USD 4, box 35 min
