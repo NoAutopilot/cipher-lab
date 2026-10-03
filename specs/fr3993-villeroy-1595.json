@@ -1,0 +1,17 @@
+{
+ "slug": "fr3993-villeroy-1595",
+ "name": "BnF fr.3993 no.102 ff.148r-149r, Nevers to Villeroy, Saint-Quentin 16 Aug 1595: 17 cipher runs of figures and signs",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/fr3993-villeroy-1595/homo/cipher_noK.txt (Bourdeau first pass, one token per sign, K removed as null N3; 25 lines, 740 tokens, 53 types)",
+ "ciphertext_source": "D. Bourdeau cyphersolver nevers1595/ct_f148r.txt + ct_f148v_149r.txt (copied unchanged in ciphers/fr3993-villeroy-1595/bourdeau/); single transcription pass, error unmeasured",
+ "alphabet": "space-separated sign tokens: figures 1-9, o, and about 43 non-figure signs (Bourdeau codes)",
+ "constraints": [
+  "K (double-crossed dagger, 13 tokens) = f159 Nulles box N3 by two readers (VILL-NOMEN, 3 Oct 2026): removed as null",
+  "L = r, w = m, + = x shared with fr.3995 f159 (VILL-SIGNS), not pinned in this test"
+ ],
+ "cheap_tests_in_order": [
+  "homophonic family_run treating every sign and figure as an unknown code, K removed, matched control at N=740 K=53 fr16 first (A1-VILL-HOMO)"
+ ],
+ "judge": {"language": "fr", "corpora": ["tools/data/fr16"], "min_word_cover": 0.5, "control_samples": 200},
+ "written": "3 Oct 2026, A1-VILL-HOMO (account 1)"
+}
