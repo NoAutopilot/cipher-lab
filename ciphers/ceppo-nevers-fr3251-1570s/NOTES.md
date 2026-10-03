@@ -1033,7 +1033,7 @@ HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short p
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
 - f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; verifier (VERIFY-CEPPO-WP, AUDIT.md): 7 accepted and applied (endorsed 113 -> 120), L04.41/L05.42 contested (t at M), L02.35 rejected; next: passC L04.39 (D reads a barred 8) and a glossed S76/S31 instance on f.36r/f.37r, ~$3
-- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; ff.27/39/82 searched for the sign by A1B-CEPPO-POUND (3 Oct 2026): 0 occurrences of the pre-registered form (f.27's two upright L's are the plain corner sign, key row 42 = s; f.82 none; f.39 has no gloss); next: scan the unread lines of the fr.3252 f.36r/f.36v/f.37r native regions and the slip already on disk (`harvest/witness_f36/c37_f36r_cipher.jpg`, `c38_*`) for the pound form and read its gloss with two blind readers under the same pre-registration, ~$3.
+- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; ff.27/39/82 (A1B-CEPPO-POUND) and fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36, 3 Oct 2026) searched: one occurrence of the pre-registered form (f.36r r36_L03 pos 30, labelled S84 by both earlier passes), gloss not legible to either blind reader, so it stays I under the pre-registration; next: scan the other glossed Birago leaves already on disk (`ciphers/birago-fr3252-1571-72/images/f47`, `f117`, read only) for a second glossed occurrence, then f.11v (never fetched, 1 Gallica region), ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
 ## Escalation (2 Oct 2026)
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 3 internal gaps; cheapest next: scan the unread fr.3252 f.36r/f.36v/f.37r lines on disk for the pound sign and read its gloss, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: scan the glossed Birago leaves f.47/f.117 on disk for a second glossed pound form, ~$3
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1173,3 +1173,27 @@ Pre-registration above (commit c5412f90, pushed before any band was viewed). Dis
 - **Where not found:** fr.3251 ff.27r (both cipher lines), 82r (three cipher lines) on the native bands; f.39r-v by
   NEV-C2's record. Not searched: fr.3252 f.36r lines 4-8, f.36v lines 6 on, f.37r after line 1, the f.37r slip
   (the named next step), and f.11v (never fetched).
+
+## A1B-CEPPO-36: the pound form on fr.3252 f.36r/f.36v/f.37r -- one occurrence, gloss not read blind (3 Oct 2026)
+
+Pre-registration unchanged: A1B-CEPPO-POUND's shape rule and promotion threshold (commit c5412f90). Disk only, 0 requests.
+- **Script locate.** The birago folder's existing passes (read only) carry X_POUND only in F36R-REREAD pass B at r36n_L09 pos 2,
+  19 and L10 pos 41; adjudicated S94 (female sign, H) and S53 -- a circle on top with a stem, not the pound form.
+- **Crops** (scratchpad, not committed): `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/witness_f36/<f>.jpg --out <scratch>/lines/<f> --prefix <f> --debug`
+  for f in c37_f36r_cipher (17 bands), c38_f36v_top (8), c38_f36v_mid (7), c38_f37r_cipher (3); eye scan on 12 native tiles
+  of those regions plus `c38_slip_wide.jpg`, one eye (this worker).
+- **Found:** one upright script-L/pound form, f.36r r36_L03 pos 30 (region x ~2150, y ~350), in the run "+ Z [pound] ng-sign",
+  the same "z / pound" run as f.11r P1. Crop kept: `harvest/witness_f36/f36r_L03pos30_pound_3x.jpg` (region 1990,255-2310,415, 3x).
+  Both earlier passes in the birago folder (f36/recon.tsv, ciphertext_f36_v2.tsv) label this sign **S84** (printed l), and
+  the same page also has the leaning S84 in "Z [S84] triangle" -- so in this hand an upright pound form sits where readers
+  put S84, which supports the upright-S84 explanation above (inference, M).
+- **Blind readers (2 Sonnet calls, no value given):** A: shape "script L/2-like, loop top right, second loop at bottom", gloss ?,
+  conf L. B: shape "looped cursive L/ell, open loop top right, lower hook with curl", gloss "none clearly above it; a faint
+  slanted l-like stroke up-left, probably a neighbour's gloss", conf L. This worker's own eye reads a small l above the sign (M,
+  not used for any grade).
+- **Outcome under the pre-registration:** 1 located occurrence, readers give no letter -> stays I; logged as a located
+  occurrence with unread gloss, not as support. The 7 f.11r pound positions stay I; no decode re-run, no AUDIT.md or
+  SECOND-OPINIONS-QUEUE.tsv change.
+- **Where not found:** f.36r all 17 bands of `c37_f36r_cipher.jpg` (only the one above), f.36v `c38_f36v_top`/`c38_f36v_mid`
+  (the "2."/underlined angular signs present are the corner form, glossed s at least once, "il s[i]gnor"), f.37r
+  `c38_f37r_cipher` (none), the slip (clear text only, no cipher). Not on disk: the parts of f.36v outside the two regions.
