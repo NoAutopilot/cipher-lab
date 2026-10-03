@@ -387,3 +387,79 @@ Requests this pass: gallica.bnf.fr 2 (texteBrut, 1 redirect + 1 altcha page, sto
 blog searches shared with clairambault296); github.com clones shared with clair571.
 
 Gate re-run (GF4-BATCH11, 3 Oct 2026): `clair1161-avis-flandre-1688: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+## IMG-GALLICA1: leaf located (3 Oct 2026, account 2 worker for LANE-IMAGES)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-img-gallica1.md`. Clock read 21:20 UTC at start.
+
+**Availability flag quoted.** Gallica ark:/12148/btv1b90010063, IIIF manifest
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b90010063/manifest.json` (342 canvases, every label "NP";
+`tools/gallica_folio.py btv1b90010063 --list`, cached in sources/gallica-manifests/). Finding aid unchanged
+(ark:/12148/cc137837/cd0e35310, "Fol. 106 et suiv.").
+
+**Count correction.** The "~65 unsampled canvases" in the While-waiting line was an undercount: canvas_sweep.tsv
+held 87 rows, which left 255 of 342 canvases with no row. Y7's "gapless" claim for c128-216 rested on folio
+continuity, not on looking at every canvas. With a 5-call vision cap I took 80 in priority order: every
+unsampled canvas in c129-216 (the finding aid's own bundle), then c1-14, then c218-229.
+
+**Found: the cipher group is at canvases c185-c188 (IIIF f186-f189), inside the Noailles bundle.** Y7 and
+ZX2-GAL had not sampled these canvases. Mounted 16th-century leaves, each with a BnF royal-library stamp:
+- c185 right leaf: three paragraphs almost wholly in a pen-sign cipher, mixed with two-digit numerals and a few
+  clear words. Ink "162" large, small number uncertain.
+- **c186 right leaf, headed "Advis de flandres"**, ink "163" large and "185" small. Clear French paragraphs
+  (l'Empereur ..., Arras et Boullongne ..., Angleterre ...), then a 9-line cipher block that opens "Les
+  seigneurs ...". In the left margin beside the block is **a contemporary note in a smaller hand, about 12 short
+  lines**. It may be a gloss of the block: not read and not tested. A clear closing paragraph follows.
+- c186 left: the lower part of another mounted cipher leaf, about 10 lines.
+- c187 left leaf, headed "Autres advis": about 30 lines, almost all cipher. c187 right leaf (ink "164" and "187"):
+  two cipher paragraphs, about 32 lines.
+- c188 left leaf: about 30 lines of cipher, a continuation.
+- c188 right leaf: a clear letter, "Monsieur ...", dated Paris, [20?] décembre 1570, signed "Noailles e. d'Acqs".
+  This is the finding aid's item 6 (François II de Noailles, évêque de Dax, au marquis de Villars,
+  20 déc. 1570), so the "Avis" and the 1570 letter sit together, as the finding aid lists them.
+
+The ink numbers on these leaves ("163", "185") do not follow the offset-22 formula (c186 - 22 = 164). That formula
+is not re-checked here.
+
+**Native fetch + line crops, c186 right leaf only** (the leaf with the heading):
+`python3 tools/iiif_lines.py --ark btv1b90010063 --canvas 187 --region 3800,1300,3400,4650 --out
+ciphers/clair1161-avis-flandre-1688/images --prefix c186R --debug`. Result: 23 bands x 2 segments = 46 crops
+(`images/c186R_L*_s*.jpg`), source `images/src_ark_12148_btv1b90010063_f187_3800_1300_3400_4650.jpg`, and the
+overlay `images/c186R_lines_debug.jpg`. I checked the overlay by eye: band edges fall between lines through the
+cipher block. Some bands span a paragraph gap, and the marginal note's short lines share bands with the block. A
+transcription pass should re-cut the margin with its own `--columns`. Manifest entries were written under
+"iiif_lines".
+
+**Native regions noted but not fetched** (folder size: the c186R leaf alone added about 7 MB). These are IIIF
+`f` numbers, native px:
+- f186 (c185) right: 4450,100,3150,4650
+- f187 (c186) left: 100,50,3400,2000
+- f188 (c187) left: 100,1200,3250,4450
+- f188 (c187) right: 3950,50,3150,4650
+- f189 (c188) left: 100,50,3150,4600
+- f189 (c188) right, the clear 1570 letter: 3850,1200,3330,4750
+
+**What was not done.**
+- Contact sheets 4-5 were built but not viewed, because the vision cap was spent. They hold c193-215 gaps, c1-14
+  and c218-229, and their rows in canvas_sweep.tsv read "not-viewed".
+- 175 canvases outside c129-229 and c1-14 still have no row. They are less relevant now that the leaf is found.
+- No transcription, no decoding, no reading of the marginal note.
+
+**Leaf-locator blocker flipped.** ASKS 54 and the BnF quote-batch item 6 (ASKS 78) ask the BnF where the leaf is.
+That question is answered from the digitised volume, so it is flagged to the parent in ROOM.md to drop it; I did
+not edit the outreach draft.
+
+Contact sheets (committed, each under 1 MB): `images/contact_sheets/sheet_c1161_{1..5}.jpg` (16 canvases each, at
+300 px) and `c185-188_1200px_grid.jpg` (the four cipher canvases at 1200 px, with a 1000-px native grid).
+Thumbnails were kept in scratch, not committed.
+
+Requests: gallica.bnf.fr 86: 1 manifest, 80 thumbnails, 4 at 1200 px, and 1 native region. One at a time, at
+least 2 s apart, with a descriptive UA. No 403, 429, altcha or reset. Vision calls: 5 (sheets 1-3, the c185-188
+grid, the overlay).
+
+## Next step (IMG-GALLICA1, 3 Oct 2026)
+
+Fetch the remaining cipher leaves (regions above) with `tools/iiif_lines.py`, keeping the folder under 30 MB: about
+7 MB per leaf, and the tool shrinks its src copies past 30 MB. Then two blind transcription passes per
+TRANSCRIPTION.md. Run the intake gate first: the target is `open` and has had a check-solved pass and a Premise
+check, and the marginal note on c186R should be read as a possible key source before any cryptanalysis.
