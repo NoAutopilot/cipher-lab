@@ -6181,3 +6181,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:40 | NO87-FOLLOW (worker, account-3 orch): nevers-birago-fr3251-1572 | claim: carry no.87 curled-Ce label fix to nos.71/86/90 (26 T50/T46 tiles, one blind vision call); cap USD 2, box ends 02:05 UTC
 2026-10-03 01:41 | A2-FLO2 (account 2, LANE-A2PUSH) | claim: florence-dieci-responsive -- Verdict cheapest next step (c.111/c.127 pair check, transcribe+align); cap USD 5, box ends 02:35 UTC
 2026-10-03 01:41 | A2-RAA7 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (crib vs cell stream, control first); cap USD 2, box ends 02:16 UTC
+2026-10-03 01:41 | A2-SAX2 (account 2, LANE-A2PUSH) | claim: sachsstaatsarchiv-manteuffel-1712 -- Verdict cheapest next step (fetch Loc. 694/08 + /09 frames, per-frame inventory); cap USD 3, box ends 02:16 UTC
