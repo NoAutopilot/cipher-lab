@@ -6537,3 +6537,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 05:20 | A2-HAR7 (account 2, LANE-A2PUSH2) | harley-287-1587: pass A returned as reply text (33 rows) and written to gloss/passA.tsv by the worker
 2026-10-03 05:20 | account-4 parent | check-in 05:20: still seven_day allowed_warning, no owner reply -> 3 workers + CLOSER-37 (VERIFY2-SURINAME-2077 re-class, rousseau f.249v pair, maurice-rupert BL route). Successor prompt rewritten for hand-over.
 2026-10-03 05:20 | VERIFY2-SURINAME-2077 (account-4) | claim: verifier, na-suriname-map-1781 AUDIT item 4 (4.VEL 2077) propagation after GAPS23/24; cap 6, box 35 min
+2026-10-03 05:21 | FT4f-maurice-rupert-1645 (account-4) | claim: maurice-rupert-1645 -- BL catalogue Add MS 18980-82 + DECODE listing + Warburton IA for the 7 July 1645 key/clear; cap USD 5, box ends 05:52 UTC
