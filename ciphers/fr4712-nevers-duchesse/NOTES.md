@@ -1,5 +1,5 @@
 open
-Verdict: open -- key no.1 applied (DUCH-KEY1B, 3 Oct 2026): non-test at 37 tokens (power 0/20 on two pre-registered statistics); next: transcribe fr.3995 no.4 (fol.8, two-digit word list, 1585) and apply, ~USD 6.
+Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 (fr.3995 f.9v) cannot cover f.10r (DUCH-KEY4, 3 Oct 2026: no no.4 code contains a 0, every f.10r line does) -- design mismatch, no power control or score run; next: view fr.4712 ff.9, 11, 12 (the other letters to the duchess) for more cipher in the same hand, ~USD 2, then key no.2 (fr.3995 f.3) figures only if more text turns up.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -193,3 +193,50 @@ Next step: the run of repeated two-digit words fits Tomokiyo's no.4 better than 
 figures". Transcribe it the way no.1 was done here: rotate-and-crop with IIIF, two blind passes, reconcile. Then apply it
 under S1 and S2. The power control has to be rebuilt for a word-code design, because the letter-based one has no power
 at N=37. That is about 3 vision calls, ~USD 6.
+
+## DUCH-KEY4 (account 1 for LANE-A1, 3 Oct 2026, 10:22-10:30 UTC by the container clock): key no.4 does not fit f.10r -- design mismatch, steps 2-3 not run
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-duch-key4.md`. Rule pre-registered in `PREREG_duchkey4.md` (commit fd47ed94)
+before any count. Two vision batches (both by this worker, Opus); crops in `images/key_no4/` with `manifest.tsv`.
+
+- **Where no.4 is.** Tomokiyo's "fol.8" is canvas f22 (label 8r). It carries only a docket ("Chifre", with a word above
+  it, M). The table itself is **f.9v, canvas f25**. Canvases f23 (8v) and f24 (9r) are blank apart from show-through
+  (700 px views).
+- **Design, as seen on f.9v.** It is a word list grouped under initial-letter sections, each headed "÷ A ÷" and so on.
+  The two-digit codes **restart in each section**:
+  - A 11-19, 21-29, 31-39 (Abandonner 11 ... Archiers 39);
+  - B 41-49;
+  - C 51-59, 61-69, 71-79 (Car 51 ... Croy 79);
+  - D 81-88 and, in a second block, 89 (Descouvrir), 91-99;
+  - E 11-19, F 21-26 and G 31-39, all written with an **overbar**;
+  - I 41-49, 51-53.
+
+  The 8 is written as an "ɑ"-like form. The left note reads, M: "Il fault se servir en ce chifre avec 2 lettres
+  premieres ...". The "Advertissement" explains stacked forms such as 59/74 and 74 with a bar. So a code is made unique
+  by its bar, and the note may mean the first letters are written too. Not transcribed beyond this (brief step 3 not
+  reached).
+- **Gate F1 holds.** On every visible column, **no code contains the digit 0**: x0 is skipped in each decade (A has no
+  20 or 30, C has no 60 or 70, D has no 90).
+- **f.10r cannot be covered.** It has a 0 in every line: line 1 at digits 10 and 18, line 2 at 6 and 14, line 3 at 2.
+  Under Tomokiyo's segmentation 5 of the 37 tokens contain a 0 (10, 60, 10, 20, 10), and his "8" is a single digit.
+  No segmentation can read these runs wholly as no.4 codes.
+- **Gate F2 also holds.** Codes repeat across 2 or 3 sections (11-39 in A and E/F/G; 41-53 in B and I). f.10r carries no
+  section letters, and DUCH-KEY1B noted no bars.
+
+**Verdict by the pre-registered rule:** this is a design mismatch, not a negative on a reading. It is also not a
+power-tested negative. Rule 3: a power control would have no meaning when the key cannot spell the text. So steps 2
+(power control) and 3 (transcription, scoring) were not run. Grades: 0 tokens read, so 0 H, C or S.
+
+Caveat (M):
+- The f.10r zeros were read the same way by two readers (DUCH-KEY1B and Tomokiyo). The ɑ-form 8 of this key's hand is
+  not the f.10r hand's 8.
+- If a 0 were a null or a separator in some other duchess key, that would be a different key, not no.4. The
+  Advertissement was not fully read; nothing in the readable part mentions nulls.
+
+Where not found: no table of no.4 in Tomokiyo (description only) or in the solver repositories (NV-INTAKE grep).
+
+Next (Verdict line):
+- More ciphertext is the only route to power. DUCH-KEY1B measured 0/20 at N=37 with no.1, the only one of the three
+  duchess keys whose code set includes 0-numbers (10, 60).
+- Next step: view fr.4712 ff.9, 11 and 12 (Gallica btv1b9058289m, canvases near 17-21) for further cipher passages.
+- Key no.2 (f.3, mostly symbols) only if figures appear there.
