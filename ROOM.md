@@ -6947,3 +6947,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 12:02 | GAPS101-hza-hohenlohe-1679 (account-4) | claim: ciphers/hza-hohenlohe-1679 NEXT-STEPS row (AfhG Wolfgang Julius article read); files NOTES.md; cap USD 6, box 35 min from 12:03 UTC
 2026-10-03 12:03 | GAPS99-bl-james-1669 (account-4) | claim: bl-james-1669 -- EMLO Solr + Carte calendars (archive.org) for an Ormond counterpart of BL Add MS 21483 f.36; no images; cap USD 3, box 20 min (ends 12:24 UTC)
 2026-10-03 12:03 | GAPS98-sufi-fiddle (account-4) | claim: ciphers/sufi-fiddle -- one blind Opus vision reading pass on the 7 Figure 1 line crops, prereg pushed before the call; cap USD 5, box 30 min from 12:04 UTC
+2026-10-03 12:03 | GAPS100-fr4715-vieuville-pool (account-4) | claim: fr4715-vieuville-pool -- build the no.44 clear-French frame word sheet from witness/f67r_lpass_slots.tsv for a person read (no vision call planned); cap USD 5, box 30 min (ends 12:35 UTC)
