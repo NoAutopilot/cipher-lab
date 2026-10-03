@@ -27,6 +27,56 @@
    "sha256": "aac265aa071cdf8cc2cacf76140419c4b90772c9be6ce62f8f5c7b104a0d4c1c",
    "size": "5000 px wide",
    "what": "No 6, Dusseldorf den 15 January 1808, docket '136 Ontv. 18 January 1808'; clear salutation then figure groups"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0067.jpg",
+   "scan": 67,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/af222443-4e89-451b-9f42-673f1d694d8b.jp2/full/full/0/default.jpg",
+   "bytes": 1347306,
+   "sha256": "bce5759fd72d6d383452df43ca9dd65a36ee3537345bec527e78065c8bd83bc0",
+   "size": "5000 px wide",
+   "what": "left: end of clear French letter docket 43 (Dusseldorf 2 Jan 1808, signed J.F.G. de Spaen de Biljoen?); right: 'No 2' Dusseldorf 5 Janvier 1808, docket '44 Ontv. 7 January 1808', clear French (GAPS44)",
+   "fetched": "3 Oct 2026 07:1x UTC (GAPS44)"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0073.jpg",
+   "scan": 73,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/9ee08be6-e86d-4291-a645-268d67c3d3bc.jp2/full/full/0/default.jpg",
+   "bytes": 874727,
+   "sha256": "4f360f112bcd24d64978a6c01fedd3da6ef89281f10098728cb0bc27e4f036fc",
+   "size": "5000 px wide",
+   "what": "right: clear French note 'Dusseldorf ce 12 Janvier 1808', docket '104 Ontv. 14 January 1808', body covered by an inserted clear slip docketed '102 Ontv. 14 January 1808' signed G.C. de Spaen (GAPS44)",
+   "fetched": "3 Oct 2026 07:1x UTC (GAPS44)"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0074.jpg",
+   "scan": 74,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/aa6abcce-e087-40bf-9186-ff363533f47b.jp2/full/full/0/default.jpg",
+   "bytes": 813478,
+   "sha256": "08a1dc07a001da05e2a5083d36c64d0ed1616289fcd39b09594c1e45b182eced",
+   "size": "5000 px wide",
+   "what": "second capture of the 73 opening with the 102 slip turned; the 104 note's body still covered by another leaf (GAPS44)",
+   "fetched": "3 Oct 2026 07:1x UTC (GAPS44)"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0075.jpg",
+   "scan": 75,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/88e5c20b-f247-4527-96c8-c1c1bc403b8f.jp2/full/full/0/default.jpg",
+   "bytes": 1067439,
+   "sha256": "88271ff505412042c380a073c8d27a6fd2ac4101d919989c332fdc5d9c2bac3e",
+   "size": "5000 px wide",
+   "what": "right: 'No 3' Dusseldorf ce 11(?) Janvier 1808, docket 'No 103 Ontv. 14 January 1808', clear French, continues on scan 76 (GAPS44)",
+   "fetched": "3 Oct 2026 07:1x UTC (GAPS44)"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0076.jpg",
+   "scan": 76,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/190a2c6a-8621-474a-a7c1-33f420bf2d21.jp2/full/full/0/default.jpg",
+   "bytes": 1066597,
+   "sha256": "22d2599bac31714b654417f0b31af92cfade3eeed7118c175071865900a4ab5d",
+   "size": "5000 px wide",
+   "what": "continuation of No 3 (left page and top of right), signed G.C. de Spaen (GAPS44)",
+   "fetched": "3 Oct 2026 07:1x UTC (GAPS44)"
   }
  ]
 }
