@@ -1,3 +1,4 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench -- sticky toolbar, then one tray per family of look-alike signs, each pile a row of tiles. */
@@ -72,10 +73,13 @@ body.ink1 .t img,body.ink1 #ctx canvas{filter:grayscale(1) contrast(1.9) brightn
 body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightness(1.15)}
 #ctx[hidden]{display:none}
 #ctx{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px}
-#ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;gap:10px}
-#ctx .cv{overflow-x:auto;background:var(--tile)}
+#ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+#ctx .cv{overflow-x:auto;background:var(--tile);min-width:0;max-width:100%}
 #ctx canvas{display:block;max-width:none}
 #ctx .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#ctx .row.top{position:sticky;top:-14px;z-index:1;background:var(--surface);padding:6px 0;justify-content:space-between;flex-wrap:nowrap}
+#ctx .x{font-size:1rem;padding:6px 12px;flex:0 0 auto}
+@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}#ctx canvas{max-width:100%;height:auto}}
 .acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
@@ -119,7 +123,8 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <span id="offerT"></span><div class="tiles" id="offerTiles"></div>
     <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
-    <div class="row"><strong id="ctxT"></strong><span class="hint" id="ctxS"></span></div>
+    <div class="row top"><strong id="ctxT"></strong><button type="button" id="ctxX" class="x" aria-label="Close">&times; Close</button></div>
+    <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
@@ -378,11 +383,13 @@ function drawCtx(){
   if (im.complete && im.naturalWidth) draw(); else im.onload = draw;
 }
 let ctxList = [];
-function showCtx(sid, pid, keepList){
-  if (!keepList){ ctxList = membersOf(pid).concat(asideOf(pid)); document.getElementById('ctxMsg').textContent = ''; }
+let ctxListName = 'in this pile';
+function showCtx(sid, pid, keepList, list, listName){
+  if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
+    document.getElementById('ctxMsg').textContent = ''; }
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
   const i = ctxList.indexOf(sid);
-  document.getElementById('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' in this pile';
+  document.getElementById('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
   document.getElementById('ctxPrev').disabled = i <= 0; document.getElementById('ctxNext').disabled = i >= ctxList.length - 1;
   const cur = moves[sid] || homeOf[sid];
   const dest = document.getElementById('ctxDest'); dest.length = 1;
@@ -393,7 +400,7 @@ function showCtx(sid, pid, keepList){
   document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
   document.getElementById('ctx').hidden = false; drawCtx();
 }
-function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length) showCtx(ctxList[i], ctxPid, true); }
+function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, moves[s2] || homeOf[s2], true); } }
 function ctxMove(to){
   const sid = ctxSid, from = moves[sid] || homeOf[sid];
   remember([sid]);
@@ -404,14 +411,14 @@ function ctxMove(to){
   document.getElementById('ctxMsg').textContent = 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to) + '. Showing the next tile.';
   render();
   const i = ctxList.indexOf(sid);
-  if (i < ctxList.length - 1) showCtx(ctxList[i + 1], ctxPid, true); else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, ctxPid, true); }
+  if (i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, moves[s2] || homeOf[s2], true); } else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, moves[sid] || homeOf[sid], true); }
   offerCluster([sid], to);
 }
 document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
 document.getElementById('undo').onclick = undo;
 document.getElementById('order').onchange = render;
 document.getElementById('ctxUndo').onclick = () => { const last = undo(); if (last && last.length === 1 && ctxList.includes(last[0][0])) {
-  document.getElementById('ctxMsg').textContent = 'Undid the move of ' + last[0][0] + '. Showing it again.'; showCtx(last[0][0], ctxPid, true); } };
+  document.getElementById('ctxMsg').textContent = 'Undid the move of ' + last[0][0] + '. Showing it again.'; showCtx(last[0][0], moves[last[0][0]] || homeOf[last[0][0]], true); } };
 document.getElementById('ctxNext').onclick = () => ctxStep(1);
 document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
 document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
@@ -430,6 +437,7 @@ document.addEventListener('keydown', e => { if (document.getElementById('ctx').h
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
 const closeCtx = () => { document.getElementById('ctx').hidden = true; };
 document.getElementById('ctxClose').onclick = closeCtx;
+document.getElementById('ctxX').onclick = closeCtx;
 document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
 document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!document.getElementById('offer').hidden) hideOffer(); else closeCtx(); } });
 document.getElementById('ctxZ').oninput = drawCtx;
@@ -455,7 +463,7 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px';
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q;
     const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
-    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid]);
+    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid], false, F.map(x => x.sid).filter(x => itemBySid[x]), 'in "Check these first"');
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.q;
     d.append(b, c); wrap.append(d); });
 })();
@@ -467,7 +475,7 @@ document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' 
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
     const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
-    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid]);
+    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid], false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
     const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' \u00b7 ' + (+f.score).toFixed(1);
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
     d.append(b, k, c); wrap.append(d); });

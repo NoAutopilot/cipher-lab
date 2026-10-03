@@ -225,3 +225,11 @@ the other account's next session inherits it without a message. Newest last.
 3 Oct 2026 04:3x UTC -- owner: usage means the real bars, not dollars. USAGE.tsv now holds 5-hour/7-day percent per account, posted by the cipher-lab-usage mod (moved to .claude/skills/cipher-lab-usage) from $.session.usage(); dollar columns dropped; ACCOUNTS.tsv maps logins to account numbers; parent.md "Usage register" rewritten; recaps give bars, never dollars.
 3 Oct 2026 04:3x UTC -- owner: a project view of jobs across accounts. tools/jobs_board.py + PROJECTS.tsv (jobs grouped by project with state and account, from ROOM.md + WORK-QUEUE.tsv), shown by the cipher-lab-usage mod's /jobs pane; the owner-account parent and its workers count as account 1. A new project gets a PROJECTS.tsv row.
 3 Oct 2026 04:4x UTC -- owner ("anything else we built that'd be helpful?" / "just because these exist doesn't mean they're good"): the tool shelf. tools/tool_shelf.py "<problem>" offers the shared tool that fits, grade first (proven / controlled-only / weak / untested / retired, evidence cited per row in tools/data/tool_shelf.tsv); SYSTEM.md section 3c carries the table; briefs README common tail + parent.md "Opening a lane": run it before briefing a new instrument or private script and name the tool or say why not; --underused lists 0-1-cited tools matching open/partial next steps (TOOL-SHELF, account 2 for account 3).
+
+## 3 Oct 2026, ~15:2x UTC -- sign sorter: phone fixes (account-3 orchestrator, owner report)
+The owner reported two problems on a phone: tapping a tile in "Check these first" then Next walked a different set (the tile's
+whole pile, not the focus list), and the context dialog had no reachable Close. Fixed in `tools/sign_sorter/template.html`:
+the dialog's Previous/Next now walk the list the tile was opened from ("Check these first" or "Most useful first"), with the
+position shown as "n of N in ..."; a sticky "× Close" sits at the top of the dialog; the page carries a viewport meta; on narrow
+screens the line view scales to the screen width. New browser test `tools/sign_sorter/browser_tests/test_mobile_ctx.js` (390 px
+phone viewport). Sorters published before this keep the old behaviour until rebuilt (Birago ASKS 118 rebuilt, v3).
