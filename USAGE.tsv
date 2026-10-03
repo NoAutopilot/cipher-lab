@@ -1,2 +1,3 @@
 utc	account	rl_status	rl_type	resets_utc	session_cost	live	note
 2026-10-03 04:09	3	allowed_warning	seven_day	2026-10-03 08:00	321.34	0	account-3 orchestrator; its workers run on account 2
+2026-10-03 04:12	2	allowed_warning	seven_day	2026-10-03 13:00		7	LANE-A2PUSH2 start
