@@ -3,6 +3,7 @@
 Status: partial
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
+(MOD1162B, 3 Oct 2026: 8 of 19 uncertain signs settled at native resolution, G unchanged, fresh-seed control PASS; tokens C 33, S 12, M 24, I 5, U 3; g/q/sigma split still open.)
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
 ## What this is

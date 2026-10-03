@@ -123,3 +123,12 @@ audit. For the orchestrator: since the plaintext of every glossed run is on the 
 whether the status word should move from `partial` (e.g. to `found-solved` for the cipher runs, with the clear text as
 an edition gap) is the orchestrator's call, not changed here. Rule-7 gap to close cheaply: commit the two raw pass TSVs
 so the A/B figures re-derive.
+
+## Post-audit revision (MOD1162B, account-2 worker, 3 Oct 2026, carried in under rule 10)
+After this audit, MOD1162B (commit 0250614f; pre-registration b928f2db) re-read the uncertain signs at native resolution.
+8 of 19 conf-'?' signs were settled: six lost the '?' on an unchanged label, and two code-group signs were relabelled z -> 3
+(`T o 3 o`). Every letter-group label is unchanged, so the decoded text, G (0.729) and the judge input are identical.
+The band-shuffle control at fresh seeds 1000..1999 gives p99 0.525, max 0.576: PASS. Grades are now
+**H 0, C 33, S 12, M 24, I 5, U 3** (were C 32, S 10, M 27). The re-derivation table above quotes the
+pre-revision counts. The N-class (N0) is unaffected: the plaintext is unchanged. No SECOND-OPINIONS-QUEUE row exists for this
+target (N0).
