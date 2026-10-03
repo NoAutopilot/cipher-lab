@@ -36,3 +36,14 @@ Gate (both shares <= 2/40):
 Rule 3 third-attempt note: the pooled-exact instrument's second use (FT4x first, f.252r question); on the 121/534 values it is
 the first exact pooled test (FT4u used the one-edit S2 gate, FT4v the f.252r pair).
 Box 16:37-17:07 UTC, stop line 17:01. Cap USD 3. Script only, no vision, no subagents.
+
+## Addendum (16:4x UTC, after stage 0 only; no control or real J run yet)
+Stage 0 (`align/ft4z_stage0.out`): F206, F216V, S1 each exact fit alone; **F206+F216V nofit, F206+S1 nofit**, F216V+S1 fit.
+A pool containing F206 is therefore nofit for the real run and for every S1-perturbed control draw by construction (F206+F216V
+already nofit, a control that cannot differ, rule 3), so by the FT4x addendum rule F206 is dropped. Pool: **F216V + S1**.
+Testable disputed codes now: **121 only** (5 + 5 occurrences); 534 is NOT TESTED (S1 only once remaining). Controls, gate and
+the 121 readout exactly as registered above, on F216V + S1 (carriers of 121: both blocks).
+Secondary readout, registered here, no gate, licenses nothing on its own (pairs with no control): for F206+F216V and F206+S1,
+each code shared with F206 renamed in F206 alone (one release at a time); list the single releases that restore an exact fit.
+If 121 is among them for both pairs, that is reported as the f.206 split '121 ons' being the joint-inconsistency candidate
+(rule-4 conflict, witnesses named), no key edit.

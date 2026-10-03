@@ -1,0 +1,13 @@
+stage0 F206: groups 62 letters 192 exact fit 0.4s
+stage0 F216V: groups 79 letters 245 exact fit 0.1s
+stage0 S1: groups 75 letters 251 exact fit 1.0s
+stage0 pair F206+F216V: exact nofit
+stage0 pair F206+S1: exact nofit
+stage0 pair F216V+S1: exact fit
+disputed 121 (ons): occurrences {'F206': 1, 'F216V': 5, 'S1': 5} testable True
+disputed 188 (lar): occurrences {'F206': 1, 'F216V': 0, 'S1': 0} testable False
+disputed 834 (kowitz): occurrences {'F206': 1, 'F216V': 0, 'S1': 0} testable False
+disputed 344 (mee): occurrences {'F206': 1, 'F216V': 0, 'S1': 0} testable False
+disputed 24 (in): occurrences {'F206': 1, 'F216V': 0, 'S1': 0} testable False
+disputed 534 (ches): occurrences {'F206': 1, 'F216V': 0, 'S1': 1} testable True
+disputed 253 (None): occurrences {'F206': 0, 'F216V': 0, 'S1': 1} testable False

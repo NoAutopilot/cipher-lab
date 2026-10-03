@@ -50,11 +50,27 @@ def lab(r):
     return 'unresolved' if r is None else ('fit' if r else 'nofit')
 
 
+def release(B):
+    A, ta = B['F206']
+    for other in ('F216V', 'S1'):
+        t2, x2 = B[other]
+        sh = sorted((set(A) & set(t2)) - set(PINS), key=int)
+        ok = []
+        for c in sh:
+            A2 = [t if t != c else 'R' + c for t in A]
+            toks, text = join([(A2, ta), (t2, x2)])
+            r = solve_exact(toks, text, PINS, LIMIT)
+            if r is not False:
+                ok.append((c, lab(r)))
+        print(f'release F206+{other}: shared {sh}; single releases restoring fit {ok}', flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stage0', action='store_true')
     ap.add_argument('--real', action='store_true')
     ap.add_argument('--ctrl', choices=['s', 'g'])
+    ap.add_argument('--release', action='store_true', help='addendum secondary readout')
     a = ap.parse_args()
     B, sw = blocks()
     if a.stage0:
@@ -68,14 +84,16 @@ def main():
             n = {k: B[k][0].count(c) for k in B}
             print(f'disputed {c} ({v}): occurrences {n} testable {sum(1 for x in n.values() if x) >= 2}')
         return
-    real = [B['F206'], B['F216V'], B['S1']]
+    real = [B['F216V'], B['S1']]  # PREREG-FT4z addendum: F206 dropped (jointly nofit with each other block)
+    if a.release:
+        return release(B)
     if a.real:
         toks, text = join(real)
         t0 = time.time(); r = J((toks, text))
-        print(f'REAL F206+F216V+S1: J {lab(r)} {time.time()-t0:.1f}s', flush=True)
+        print(f'REAL F216V+S1: J {lab(r)} {time.time()-t0:.1f}s', flush=True)
         if r:
             deadline = time.time() + READOUT_LIMIT
-            for c in ('121', '534'):
+            for c in ('121',):
                 carriers = [x for t, x in real if c in t]
                 cand = sorted({x[p:p + l] for x in carriers[:1] for l in range(1, fs.MAXLEN + 1) for p in range(len(x) - l + 1)
                                if all(x[p:p + l] in y for y in carriers)}, key=lambda s: (len(s), s))
@@ -99,7 +117,7 @@ def main():
             w = sw[:]; rng.shuffle(w); D.append((st, ''.join(w)))
         else:
             t = st[:]; rng.shuffle(t); D.append((t, sx))
-    jobs = [join([B['F206'], B['F216V'], d]) for d in D]
+    jobs = [join([B['F216V'], d]) for d in D]
     with Pool(4) as pool:
         res = pool.map(J, jobs)
     for i, r in enumerate(res):
