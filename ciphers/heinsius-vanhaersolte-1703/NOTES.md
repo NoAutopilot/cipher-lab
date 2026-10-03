@@ -128,11 +128,67 @@ Dutch clear text. Its footnote 1017.1 reads "De sleutel van dit cijferschrift is
 cipher was not found). So 178 occurs in both letters, and the earlier verdict's "none has yet" about a sibling no
 longer holds: the cipher extent is two letters, 24 code tokens (22 in no. 1017 as printed, 2 in no. 341), not two. The whole-edition search for
 "geheimschrift" (4 hits) adds only Buys 1714 (Deel 16 pp.299, 347) and a Deel 19 bibliography line. Nothing prints
-a key for the Haersolte system. The other 1432 "Haersolte" hits across the edition were not paged through; that is
-the next step for more siblings.
+a key for the Haersolte system. The other 1432 "Haersolte" hits across the edition were paged through on 3 Oct 2026 (A2P4-HAER section below).
 (d) Recipient's side: Heinsius is the recipient, and his edition is the one read. The other side of the cover note
 (the enclosed letter "à mons.r le grephier", i.e. Griffier Fagel / States-General, NA 1.01.02 Lias Polen) was **not
 searched** this pass. No US/Canadian-type state series applies. Unreachable here: the NA originals, which are
 undigitised.
 Requests: resources.huygens.knaw.nl 7 (pages.json 1, p.130, p.397, p.398, 3 search queries), github.com 2 shallow
 clones (shared with the other three targets of GF-A2-8), WebSearch 7.
+
+## Haersolte paging across the Heinsius edition (A2P4-HAER, 3 Oct 2026, 18:33-18:50 UTC)
+
+Intake gate (`python3 tools/intake_gate_check.py heinsius-vanhaersolte-1703`): "open (line 1) -- edition/page or full-text-search
+citation found within 6 lines", exit 0. Reading step only; no transcription, key application or cryptanalysis was done.
+
+Step run (the folder's named step): `retroboeken/heinsius/search_in_text/index_html?search_term:ustring:utf-8=Haersolte&batch_start=N`,
+N = 1, 21, ... 1421, 2.2 s apart, descriptive UA. Result: 72 result pages, 1431 of the 1432 reported hits parsed (one snippet line not
+parsed), all HTTP 200, kept in `haersolte_hits.tsv` (volume, printed page, snippet). Hits per volume (Deel 1-19): 33, 85, 106, 105,
+88, 93, 85, 84, 57, 80, 102, 81, 55, 96, 111, 103, 64, 0 (Deel 18), 3. The search returns one snippet per page, not per mention,
+and it matches the name, so it lists pages, not ciphered letters.
+Positive control: the 30 Mar 1703 page (Deel 2 p.130, letter 341) is in the hit list and the OCR page reproduces the known
+footnote 341.1 and the codes 178 and 198 (same on re-fetch of the page). The control can differ: a page not holding the name would not appear.
+
+Cipher-word filter on the 1431 snippets (sleutel, cijfer, geheim, niet gevonden, niet aangetroffen): 5 snippets.
+- **Deel 3 p.208, letter 588, Van Haersolte, 1 July 1704, H.A. 918** (OCR page read). Footnote 588.1: "De brief is gericht aan d'Alonne en niet
+  ondertekend; de gespatieerd afgedrukte passages zijn door Haersolte in cijfer geschreven en door d'Alonne opgelost." So the edition
+  prints a contemporary decipherment (by d'Alonne) of Haersolte's cipher passages in a 1704 letter. The OCR text does not mark which words
+  were spaced; the page image is the only witness (not fetched: 1 crop allowed, not needed for this step). It is 1704, a year after
+  letters 341 and 1017, and no code numbers appear in the printed text, so whether it is the same system is **not known**. Graded: no
+  reading made by us (0 H/C/S/M/I tokens); the printed deciphered passages are period decipherment text, not ours.
+- Deel 12 p.528 (letter 892, 26 Nov 1711) and Deel 16 p.4 (1714): "niet aangetroffen"/"niet gevonden" refer to an advice and a copy of a letter, not a key.
+- Deel 5 p.680 (1706), Deel 6 p.344 (1707): the word "geheim" in the sense of secret; no cipher.
+
+Deel 2 (1703) read page by page: 70 OCR pages (printed pp.81-600, the pages the search listed) via
+`retroapp/service_heinsius/02_163/html/heinsius_02_GS163_<p>.html`. Grepped for sleutel, cijfer, geheimschrift, opgelost and for numeric
+codes 140-199: the only cipher footnote is 341.1 (control). One further page shows a code in the running text, **Deel 2 p.362, letter 929, Van
+Haersolte, 24 July 1703, Warschau, H.A. 841**: "... de republic[k] ... ris 142 , als de coning van Sweden op dat point soude blijven staen"
+(code 142, in the 140-180 name-code range the 178 and 143/144/180 codes of letters 341 and 1017 sit in). There is no cipher footnote
+(929.1 is only "Aanwezig in H.A. 841"), and the OCR may have dropped the rest of a spaced-type passage. Counted as one candidate sibling token
+(grade M at best, a single number in OCR); the page image would settle it. Letter 1017 (pp.397-398) was not among the 70 pages and was
+not re-read (read in GF-A2-8).
+
+Where it was not found: no printed key or decipherment of the 1703 system (codes 178, 198) in any of the hits or the 70 pages read. The
+edition's coverage of Deel 1 and Deels 3-19 for Haersolte letters in cipher was only filtered through snippets, not read page by page (Deel 3's
+Haersolte letters run 1704, a different year); that is a snippet filter, not a negative for those volumes.
+
+Requests: resources.huygens.knaw.nl about 150 (1 root, 72 search pages, 1 first-page repeat, 2 redirect probes, 2 pages.json, 2 Deel 3 OCR
+pages, 70 Deel 2 OCR pages). That is **over the brief's 120 cap**: the Deel 2 page batch was sized from the hit list after the paging was
+done (70 pages, not the ~35 estimated) and ran in the background, so the cap was passed before the count was checked. All requests were at
+least 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, subagents 0.
+
+## Verdict (A2P4-HAER, 3 Oct 2026)
+
+**Status: open (unchanged).** Paging all 1432 Haersolte hits and reading 70 Deel 2 pages found no key or decipherment of the 1703 system. Two
+leads for more material: letter 929 (24 July 1703, Deel 2 p.362, code 142 in the OCR text, same H.A. 841) and letter 588 (1 July 1704, Deel 3
+p.208, passages in cipher printed deciphered by d'Alonne, different year).
+
+## Next step (cheap, depends on no one)
+1. Page image of Deel 2 p.361-362 (letter 929) as one crop via `tools/iiif_lines.py`, to see whether 142 sits in a spaced-type ciphered
+   passage and what the edition prints around it (~USD 0.5, one vision call).
+2. Page image of Deel 3 p.208 (letter 588): the spaced-type passages are the decipherment of a Haersolte cipher by d'Alonne; with the
+   Dutch/French clear text beside any cipher in a sibling letter that is a crib (~USD 0.5).
+3. Read Deel 2 letters by number for the Haersolte letters the snippets did not reach (the 70 pages read were only those the search listed).
+
+## While waiting
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: steps 1-3 above.
