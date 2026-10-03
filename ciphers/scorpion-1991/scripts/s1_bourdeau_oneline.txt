@@ -1,0 +1,2 @@
+# S1 as one message (grid rows run on, no word breaks); generated from Bourdeau s1.txt (cyphersolver, MIT, 15 Sept 2026)
+pi K A halfdisc sqnotchBR gamma O revF circL circR arch venus circQ dash Y Q cornerBR halfdiscL sqnotchTL crosshair S lambda circQ2 flag sqnotchT sqdot sqtriTR N sqnotchTR dome B revF circL sqbarB M circ3q tack R crosshair sqnotchBR U sqtriBL sqsplitL sqbarT circ3q2 slash O R cornerBR circtop circhole sqtriTL sqbarL cornerBR circL roman2 S lambda flag cupdot K tridot Z sqbarT revE arch cornerBR sqsplitR sqnotchBR Iserif
