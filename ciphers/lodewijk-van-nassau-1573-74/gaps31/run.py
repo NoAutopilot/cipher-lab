@@ -103,3 +103,71 @@ if __name__ == '__main__':
         build('target')
     elif cmd == 'hide':
         build('hide', hide=True)
+
+
+def names_obs():
+    """names.tsv-side (axnames/occ_*.tsv) observation per occurrence: line:pos -> absorbed ('' = NULL)."""
+    d = {}
+    for n in LETTERS:
+        with open(os.path.join(T, 'axnames', 'occ_%s.tsv' % n)) as f:
+            for r in csv.DictReader(f, delimiter='\t'):
+                d[(r['code'], r['line'])] = d.get((r['code'], r['line']), []) + [r['absorbed']]
+    return d
+
+
+def score():
+    k = key_full()
+    nulls = sorted((c for c, (v, g) in k.items() if v == 'NULL' and g == 'C' and 121 <= int(c) <= 144), key=int)
+    rows, res = [], {}
+    # G1
+    called, occ_e, occ_n = 0, 0, 0
+    for c in nulls:
+        o = obs('target', c)
+        e = sum(1 for x in o if x[2] == '')
+        occ_e += e; occ_n += len(o)
+        ok = len(o) > 0 and e > len(o) / 2
+        called += ok
+        rows.append(['null-control', c, 'NULL', len(o), e, 'NULL' if ok else 'letter', ''])
+    res['G1'] = (called, len(nulls), called / len(nulls) >= 0.80, occ_e / occ_n)
+    # G2/G3
+    called, fe, tot, vok = 0, 0, 0, 0
+    for c in HIDDEN:
+        o = obs('hide', HIDE_AS[c])
+        e = sum(1 for x in o if x[2] == '')
+        fe += e; tot += len(o)
+        ok = len(o) > 0 and e < len(o) / 2
+        called += ok
+        top = Counter(an.letters(x[2]) for x in o if x[2]).most_common(1)
+        topv = top[0][0] if top else ''
+        vok += (topv == an.letters(k[c][0]))
+        rows.append(['letter-control', c, k[c][0], len(o), e, 'letter' if ok else 'NULL', 'top=' + topv])
+    q = fe / tot
+    res['G2'] = (called, len(HIDDEN), called / len(HIDDEN) >= 0.80, vok)
+    res['G3'] = (q, q <= 0.316)
+    gate = res['G1'][2] and res['G2'][2] and res['G3'][1]
+    nob = names_obs()
+    for c in BAND:
+        o = obs('target', c)
+        if not o:
+            continue
+        e = sum(1 for x in o if x[2] == '')
+        conflicts = []
+        for line, idx, ch in o:
+            prev = nob.get((c, line))
+            if prev is not None and any((p == '') != (ch == '') for p in prev):
+                conflicts.append(line)
+        lift = gate and e >= 4 and e == len(o) and not conflicts
+        rows.append(['band', c, 'chunks=' + '|'.join(x[2] or '-' for x in o), len(o), e,
+                     'LIFT NULL C' if lift else 'no change', 'conflicts=' + ','.join(conflicts)])
+    with open(os.path.join(HERE, 'result.tsv'), 'w', newline='') as f:
+        w = csv.writer(f, delimiter='\t', lineterminator='\n')
+        w.writerow(['class', 'code', 'truth_or_chunks', 'n', 'empty', 'call', 'note'])
+        w.writerows(rows)
+    print('G1 nulls called NULL %d/%d pass=%s per-occurrence empty %.3f' % res['G1'])
+    print('G2 hidden letters called letter %d/%d pass=%s value right %d' % res['G2'])
+    print('G3 q (letter false-empty per occurrence) %.3f pass=%s' % res['G3'])
+    print('GATE', 'PASS' if gate else 'FAIL')
+
+
+if __name__ == '__main__' and sys.argv[1] == 'score':
+    score()

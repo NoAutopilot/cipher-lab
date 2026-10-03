@@ -1,0 +1,37 @@
+class	code	truth_or_chunks	n	empty	call	note
+null-control	121	NULL	34	21	NULL	
+null-control	122	NULL	11	4	letter	
+null-control	124	NULL	23	14	NULL	
+null-control	126	NULL	14	7	letter	
+null-control	127	NULL	39	26	NULL	
+null-control	130	NULL	14	5	letter	
+null-control	131	NULL	23	13	NULL	
+null-control	132	NULL	19	12	NULL	
+null-control	133	NULL	12	8	NULL	
+null-control	134	NULL	15	9	NULL	
+null-control	135	NULL	6	4	NULL	
+null-control	137	NULL	10	8	NULL	
+null-control	138	NULL	7	5	NULL	
+null-control	141	NULL	22	12	NULL	
+null-control	143	NULL	7	7	NULL	
+null-control	144	NULL	4	3	NULL	
+letter-control	96	h	2	0	letter	top=i
+letter-control	57	z	3	1	letter	top=u
+letter-control	86	f	3	1	letter	top=z
+letter-control	66	b	4	2	NULL	top=b
+letter-control	15	p	6	3	NULL	top=touteschos
+letter-control	65	a	7	4	NULL	top=rent
+letter-control	116	m	9	3	letter	top=prcdentesconti
+letter-control	25	r	9	4	letter	top=r
+letter-control	75	c	9	5	NULL	top=c
+letter-control	80	d	9	0	letter	top=d
+letter-control	111	l	10	1	letter	top=l
+letter-control	94	g	11	1	letter	top=g
+letter-control	115	l	12	6	NULL	top=s
+band	125	chunks=m	1	0	no change	conflicts=
+band	139	chunks=-|-|graveetthi|j	4	2	no change	conflicts=
+band	140	chunks=santet|-|fficultquevous|t|llercomm	5	1	no change	conflicts=
+band	142	chunks=-|-|es|lennemytantp|-	5	3	no change	conflicts=
+band	147	chunks=w|g	2	0	no change	conflicts=
+band	149	chunks=-|-|icymanderaultr|-	4	3	no change	conflicts=
+band	150	chunks=testplusque|r	2	0	no change	conflicts=

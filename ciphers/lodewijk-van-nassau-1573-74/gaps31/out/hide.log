@@ -1,0 +1,3 @@
+5810: 3555 tokens (3096 numerals), 64 clear runs, 27 anchors, 28 pairs, plain letters 4476
+5811: 1593 tokens (1531 numerals), 8 clear runs, 3 anchors, 3 pairs, plain letters 1855
+tokens 4903; values 143; {'clear': 275, 'conflict': 851, 'single-segment': 6, 'single': 33, 'agrees': 2347, 'null-or-unaligned': 1390, 'doubtful': 1}

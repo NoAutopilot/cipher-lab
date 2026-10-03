@@ -1,4 +1,4 @@
-# GAPS31 pre-registration (3 Oct 2026, written and pushed before any scoring run; clock read 06:1x UTC)
+# GAPS31 pre-registration (3 Oct 2026, written and pushed before any scoring run; clock read 06:01 UTC)
 
 Step (Verdict line, GAPS28): align the band tokens of the Groen-printed 5810 (142 x5, 140 x3, 149 x4, 139 x2, 147 x2,
 125 x1) and 5811 (139 x2, 140 x2, 150 x2) to print, to decide 139/140/142 (and 149, 150) NULL vs letter from the print side.

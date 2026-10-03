@@ -1,0 +1,144 @@
+value	meaning	n	agree	others
+0	o	4	4	
+1	n	41	35	u:2,e:1,o:1,s:1,z:1
+2	n	91	73	s:3,u:3,a:2,c:2,m:2,t:2,y:2,i:1,r:1
+3	n	40	32	d:2,e:2,r:2,h:1,y:1
+4	n	31	27	i:1,l:1,t:1,u:1
+5	n	5	3	o:2
+6	o	24	19	e:2,s:2,m:1
+7	o	39	32	q:2,e:1,i:1,t:1,u:1,y:1
+8	o	87	67	a:4,e:4,d:3,n:3,b:2,r:1,s:1,v:1,z:1
+9	o	39	29	c:2,n:2,a:1,e:1,h:1,p:1,t:1,u:1
+10	o	15	13	e:2
+11	p	22	11	r:3,d:2,n:2,h:1,i:1,o:1,s:1
+12	p	21	15	u:2,e:1,i:1,r:1,s:1
+13	p	20	14	r:2,e:1,i:1,s:1,t:1
+14	p	18	13	g:2,c:1,n:1,x:1
+16	q	11	10	m:1
+17	q	9	8	l:1
+18	q	24	17	p:3,a:1,n:1,r:1,x:1
+19	q	13	8	p:3,e:2
+20	q	11	6	s:3,m:1,r:1
+21	r	66	55	e:2,j:2,o:2,t:2,i:1,l:1,s:1
+22	r	75	58	l:4,t:4,n:3,f:2,a:1,b:1,p:1,u:1
+23	r	43	36	s:2,a:1,e:1,m:1,n:1,x:1
+24	r	29	25	c:1,s:1,t:1,z:1
+26	s	34	29	r:3,e:1,n:1
+27	s	102	90	m:2,n:2,r:2,d:1,e:1,j:1,o:1,t:1,u:1
+28	s	97	78	r:6,e:4,c:2,l:2,u:2,i:1,n:1,z:1
+29	s	53	42	a:2,n:2,t:2,u:2,e:1,p:1,y:1
+30	s	23	16	r:2,u:2,d:1,n:1,t:1
+31	t	56	43	m:4,e:3,a:2,b:1,p:1,s:1,x:1
+32	t	40	34	l:3,c:1,i:1,y:1
+33	t	61	54	e:2,p:2,c:1,n:1,s:1
+34	t	27	26	u:1
+35	t	8	5	s:2,g:1
+36	u	43	41	i:1,t:1
+37	u	91	75	t:4,c:3,s:3,e:2,i:1,l:1,o:1,z:1
+38	u	100	69	t:11,i:4,n:3,c:2,d:2,g:2,e:1,j:1,m:1,o:1,p:1,r:1,s:1
+39	u	47	36	r:4,t:2,c:1,d:1,e:1,n:1,o:1
+40	u	20	17	h:1,o:1,r:1
+44	l	1	1	
+47	x	2	2	
+48	x	4	2	c:1,q:1
+49	x	1	1	
+51	y	7	4	n:1,o:1,u:1
+52	y	3	2	a:1
+53	y	4	3	e:1
+54	y	3	2	a:1
+58	u	7	5	e:1,z:1
+59	o	2	1	z:1
+61	a	26	17	e:3,l:1,o:1,q:1,r:1,s:1,y:1
+62	a	23	19	g:1,j:1,m:1,f:1
+63	a	21	16	n:2,t:2,d:1
+64	a	20	18	e:1,o:1
+67	b	3	2	r:1
+68	m	1	1	
+69	b	1	1	
+70	b	11	6	d:4,u:1
+71	c	9	7	e:1,t:1
+72	c	16	14	r:1,v:1
+73	c	21	19	d:1,t:1
+74	c	10	10	
+76	d	13	10	e:1,h:1,o:1
+77	d	25	19	g:2,l:2,c:1,s:1
+78	d	34	25	c:6,b:1,i:1,l:1
+79	d	24	21	c:2,r:1
+81	e	197	169	a:12,s:3,t:3,i:2,y:2,c:1,d:1,g:1,l:1,n:1,v:1
+82	e	154	112	a:27,o:3,r:3,y:3,b:1,g:1,h:1,i:1,q:1,s:1
+83	e	97	66	a:18,u:3,s:2,y:2,g:1,i:1,j:1,m:1,n:1,r:1
+84	e	117	84	a:19,i:3,y:3,c:2,b:1,d:1,l:1,n:1,o:1,p:1
+85	e	35	29	j:1,l:1,n:1,o:1,r:1,u:1
+87	f	23	18	a:1,b:1,c:1,o:1,p:1
+88	e	51	19	f:9,a:6,b:5,y:3,z:3,g:2,t:2,n:1,u:1
+89	s	20	5	z:5,n:4,e:3,d:1,j:1,m:1
+90	s	24	14	c:2,e:2,b:1,d:1,p:1,v:1,y:1,z:1
+91	a	13	4	t:3,g:2,c:1,j:1,n:1,q:1
+92	g	27	8	a:3,d:3,e:3,s:3,h:1,j:1,n:1,o:1,r:1,v:1,x:1
+93	a	8	3	e:2,g:2,v:1
+97	h	2	1	q:1
+98	c	9	2	s:2,z:2,a:1,n:1,o:1
+99	h	4	3	p:1
+100	h	7	3	e:2,q:1,t:1
+101	i	20	12	e:2,r:2,d:1,n:1,o:1,y:1
+102	i	40	29	n:3,e:2,j:2,y:2,r:1,s:1
+103	i	37	35	j:1,y:1
+104	i	54	41	j:5,t:4,e:2,a:1,n:1
+105	i	16	14	j:1,o:1
+106	m	1	1	
+107	f	1	1	
+108	i	20	16	e:2,l:1,o:1
+109	i	7	4	m:2,t:1
+112	l	32	25	e:2,n:2,o:1,r:1,u:1
+113	l	36	32	a:2,h:1,m:1
+114	l	37	28	e:2,i:2,m:1,n:1,p:1,q:1,s:1
+117	m	12	10	i:1,l:1
+118	m	31	17	l:9,e:1,i:1,q:1,s:1,t:1
+119	m	13	6	o:2,t:2,i:1,l:1,s:1
+120	m	14	11	c:1,n:1,v:1
+121	e	12	2	r:2,c:1,i:1,lainsiqu:1,messusdit:1,partcommele:1,t:1,tejayb:1,z:1
+122	depardeldau	6	1	i:1,m:1,manderaultresq:1,s:1,yndhov:1
+123	s	8	2	u:2,coiressa:1,l:1,nda:1,z:1
+124	e	7	1	le:1,n:1,nemytant:1,t:1,y:1,z:1
+125	m	1	1	
+126	denozaffaires	7	1	entre:1,g:1,longdiscours:1,o:1,r:1,voussauroysicy:1
+127	r	12	2	d:1,enresponce:1,h:1,longuement:1,ntparterrequep:1,pour:1,frresen:1,venueuneaultre:1,y:1,z:1
+128	a	3	1	arlem:1,l:1
+129	a	9	1	d:1,maisaus:1,noz:1,pts:1,r:1,script:1,sont:1,vouspuisasseur:1
+130	a	9	2	b:1,etsubtilit:1,ex:1,lus:1,uma:1,vostreduvije:1,vozlettresm:1
+131	a	8	2	n:2,ays:1,oye:1,pa:1,r:1
+132	l	8	2	dredebvoirpour:1,iddelbo:1,lafamineetdi:1,ns:1,rlem:1,tmon:1
+133	a	6	2	f:2,c:1,l:1
+134	b	6	1	courri:1,devostrelettre:1,i:1,r:1,s:1
+135	e	2	1	oit:1
+136	c	4	1	commeilsemble:1,u:1,villenepourra:1
+137	party	2	1	y:1
+138	desnouvelles	2	1	l:1
+139	est	2	1	graveetthi:1
+140	llercomm	4	1	monintention:1,santet:1,t:1
+141	e	9	2	y:2,a:1,depardejene:1,dispositionque:1,eelande:1,rdhuymatinmest:1
+142	es	2	1	sycroistdheure:1
+147	w	1	1	
+149	mainsbi	1	1	
+150	d	2	1	testplusque:1
+173	l	1	1	
+223	a	2	1	h:1
+242	a	1	1	
+311	r	1	1	
+312	ville	1	1	
+338	avallerie	1	1	
+351	a	2	1	bateaux:1
+707	bo	1	1	
+760	avill	2	1	i:1
+761	u	2	1	z:1
+762	z	2	2	
+763	b	2	1	ujou:1
+764	femmes	3	1	touteschos:1,v:1
+765	nk	3	1	p:1,rent:1
+766	b	6	1	es:1,m:1,prcdentesconti:1,quelesenn:1,r:1
+767	r	5	2	rcesjesupp:1,s:1,x:1
+768	c	4	2	pardive:1,queparpractic:1
+769	d	9	8	ray:1
+770	l	9	6	d:1,m:1,t:1
+771	g	10	2	p:2,e:1,gn:1,puis:1,r:1,y:1,z:1
+772	s	6	2	i:1,l:1,semaintenirs:1,touscost:1
