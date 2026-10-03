@@ -16,17 +16,22 @@ import argparse, csv, os, sys, datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(os.path.dirname(HERE), "WORK-QUEUE.tsv")
 COLS = ["job_id", "account", "brief", "model", "cap_usd", "box_min", "status", "added", "note"]
-ACCOUNTS = ("owner", "other", "third")
+ACCOUNTS = ("owner", "other", "third", "account-1", "account-2", "account-3", "account-4")
 
 def now(): return datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M")
 def load():
     with open(PATH, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
+    for r in rows:  # a stray trailing tab gives an extra None field: fold it into note, never crash mid-write
+        extra = [x for x in (r.pop(None, None) or []) if x]
+        if extra: r["note"] = " ".join([r.get("note") or ""] + extra).strip()
     return rows
 def save(rows):
-    with open(PATH, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=COLS, delimiter="\t", lineterminator="\n")
+    tmp = PATH + ".tmp"  # write whole, then rename: a failure never truncates the shared file
+    with open(tmp, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=COLS, delimiter="\t", lineterminator="\n", extrasaction="ignore")
         w.writeheader(); w.writerows(rows)
+    os.replace(tmp, PATH)
 def check(rows):
     bad = 0; seen = set()
     for i, r in enumerate(rows, 2):
