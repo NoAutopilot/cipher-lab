@@ -28,6 +28,10 @@ count. Because the decoy need not contain the pinned chunks (la reine, hongrie .
 in the real-(c) statistic alike (pairs 1 and 2 keep their pins and real slips), so the decoy stays feasible and the
 statistic can move either way: Hc(real) vs the Hc distribution over 100 decoys, same search, same time-out rules.
   python3 pooled_gate3.py [--n 100] [--limit 5] [--seed 7] [--skip-c]
+Amendment FT4n (account-4, 3 Oct 2026, PREREG-FT4n.md): --pair3 f213 --drop 73 makes pair 3 the f.213r-v/f.214r pair
+(ciphertext_f213.txt / slip_f214r.txt, maxlen 12) with the 0-based group indices in --drop removed before anything is
+scored (group 73 = the second 368, FT4m's unmarked extra group, grade I). Everything else is unchanged; the defaults
+(--pair3 f249, no drop) reproduce FT4e/FT4g.
 """
 import argparse, os, random, sys, time
 from collections import Counter
@@ -39,6 +43,7 @@ T = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PINS = dict(g.PINS, **{'379': 'xinterets'})
 FILES = [('ciphertext.txt', 'slip_f206r.txt', 9), ('ciphertext_f216v.txt', 'slip_f217r.txt', 12),
          ('ciphertext_f249.txt', 'slip_f250.txt', 12)]
+PAIR3 = {'f249': ('ciphertext_f249.txt', 'slip_f250.txt', 12), 'f213': ('ciphertext_f213.txt', 'slip_f214r.txt', 12)}
 
 
 class Timeout(Exception):
@@ -157,10 +162,15 @@ def main():
     ap.add_argument('--limit', type=float, default=5.0)
     ap.add_argument('--seed', type=int, default=7)
     ap.add_argument('--skip-c', action='store_true')
+    ap.add_argument('--pair3', choices=sorted(PAIR3), default='f249')
+    ap.add_argument('--drop', type=int, nargs='*', default=[], help='0-based pair-3 group indices removed before scoring')
     a = ap.parse_args()
     P, texts, mls = [], [], []
-    for c, s, m in FILES:
+    for k, (c, s, m) in enumerate(FILES[:2] + [PAIR3[a.pair3]]):
         A, t = g.load(os.path.join(T, c), os.path.join(T, s))
+        if k == 2 and a.drop:
+            print(f'pair3 {a.pair3}: dropping groups {a.drop} = {[A[i] for i in a.drop]}')
+            A = [x for i, x in enumerate(A) if i not in set(a.drop)]
         P.append(A); texts.append(t); mls.append(m)
     cnts = [Counter(A) for A in P]
     X = sorted((x for x in set().union(*[set(c) for c in cnts]) if x not in PINS and sum(1 for c in cnts if x in c) >= 2), key=int)
