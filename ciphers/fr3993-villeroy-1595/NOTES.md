@@ -70,6 +70,7 @@ key among the unexamined portions of fr. 3995 beyond nos. 60/65/66/68–76.
 **Update, VILL-147, 3 Oct 2026:** ff.147v/149v viewed native (no gloss; f.149v docket names the packet the original went in);
 fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 nos.39/40/43/58; Nevers to Henri IV, July-Aug 1595, as siblings.
 **Update, A1B-VILL-PAIR, 3 Oct 2026:** figure-pair homophone design (Bourdeau 1x/2x, K null) is a control-backed negative (control 0.733, target judge FAIL -1.263 = shuffle -1.261). Next: no.57's table (j), no.44 symbol column (k), as-sent packet (d), second transcription pass (e').
+**Update, A1B-VILL-57-44, 3 Oct 2026:** (k) no.44's symbols (f162) carry no registered target sign (Delta SAME-class only, 5 tokens). (j) no.57's table is canvas f200: 22-letter symbol-homophone header + figure syllables 1-72, doubles 73-96, nomenclator 100-353; two blind readers agree on 9 target sign designs (keys/key_f200_no57_signs.tsv, M) but they cover 0.116 of the target (< 0.5, not testable, no score). Next: (l) read no.57's Sillabes/Lettres doubles grid (two blind reads, ~$5), then the coverage test; (d), (e') stand.
 
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (catalogue item 277; `nevers1595/`
 working folder — full transcription, matched-control solver ladder across six unit models, Gomberville tome-2
@@ -713,3 +714,66 @@ control-backed negatives on the transcription as it stands; the next steps are n
 material or a better text, cheapest first: (j) view no.57's table (canvases f198-f200, ~$5); (k) no.44's right-hand symbol column
 (canvas f162, ~$3); (d) the as-sent packet on Villeroy's side (~$3); (e') a measured second transcription pass of the f.148r-149r runs
 so negatives stop resting on one unmeasured pass (~$4). All depend on nobody.
+
+## fr.3995 no.44 symbol column and no.57's table (A1B-VILL-57-44, LANE-A1B, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-57-44.md`, steps (k) and (j). The rules were pre-registered in the
+`fr3995/PREREG-VILL-TABLE.md` addendum (commit 7a4a968b), pushed before any crop was viewed. Reader A's calls were written
+to `fr3995/vill5744_readerA.tsv` before reader B was spawned. Crop commands (scratch outputs; the crops used are in
+`images/fr3995/`, rotated 90 deg for reading):
+
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 162 --out <scratch>/ov --prefix c162 --lines-per-crop 200 --max-width 2400 --debug
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 162 --region 950,2100,1850,550 --out <scratch>/k --prefix f162sym --lines-per-crop 200 --max-width 2400
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 162 --region 450,2100,560,550 --out <scratch>/k --prefix f162symC --lines-per-crop 200 --max-width 2400
+    for c in 198 199 200; do python3 tools/iiif_lines.py --ark btv1b525085665 --canvas $c --out <scratch>/ov --prefix c$c --lines-per-crop 200 --max-width 2400 --debug; done
+    python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 200 --region 0,150,4952,650 --out <scratch>/j --prefix f200hdr --lines-per-crop 200 --max-width 2400
+    # native region source files split/rotated with PIL -> images/fr3995/f162_no44_sym{A,B,C}.jpg, f200_no57_hdr{L,R}.jpg
+
+**(k) no.44, f.82v (canvas f162).** The page is written sideways. The symbols stand at the line-ends of the nomenclator, one
+per name: a cross over a 6 (Mr de Lanerdam?), a square (Mr de la Tremouille), a Delta (Mr de Clermont d'Amboise), a Venus
+sign (Mr de Luc?), and a footed upright stem with two crossbars, marked "ss" (Mr de Sois). The Dames block uses the plain
+capitals A, B, C, D, E (crossed), F and G. Reader A's verdicts against the registered list (P V Q W T R L w + K): K LIKE
+(the table's sign is upright and footed, the target's is slanted), all others NO. Delta matches in design but is outside the
+registered list (target D, 5 tokens). There was no SAME on the list, so the pre-registered call 2 was not spent. **"No
+registered target sign among no.44's symbols at native resolution"**: a search result at M.
+
+**(j) no.57.** Canvases f198-f200, all labelled '103r'. f198 and the flap of f199 are the nomenclator's continuation and the
+Dames list; f200 (with the f199 spread) is the table. Its header gives 22 letters (A-Z, with I/J and U/V merged and no K),
+each with two symbol homophones (rows 2 and 3). Below it: "Sillabes" with figures 1-72 (ba be bi bo bu ...), "Lettres
+doubles" 73-96 and a nomenclator 100-353. This fits Tomokiyo's description. It is a family candidate under the registered
+rule: pi, theta and infinity all appear as cipher signs, and the table carries figure codes, though in the syllable grid
+rather than the single-letter rows (this reading of the rule is disclosed). Two blind reads of the header crops followed:
+reader A (the worker) and reader B (a Sonnet subagent that was not told A's answers).
+
+| target sign | A | B | value | certified |
+|---|---|---|---|---|
+| L lambda | SAME A r2 | SAME A r2 | a | yes |
+| w omega | SAME A r3 | SAME A r3 | a | yes |
+| P pi | SAME S r3 | SAME S r3 | s | yes |
+| V varpi | SAME G r2 | SAME G r2 | g | yes |
+| Q theta | SAME X r2 | SAME X r2 | x | yes |
+| W infinity | SAME X r3 | SAME X r3 | x | yes |
+| + plus | SAME T r3 | SAME T r3 | t | yes |
+| K double-crossed dagger | SAME R r3 | SAME R r3 | r | yes |
+| D Delta (unregistered) | SAME T r2 | SAME T r2 | t | agreed, unregistered |
+| T tau | NO | LIKE (inverted T, U r3) | - | no |
+| R reversed c | LIKE H r2 | LIKE H r3 | - | no |
+
+The certified values are in `keys/key_f200_no57_signs.tsv` at grade M (the designs are shared; nothing here shows that this
+is the target's key). **Coverage**: these signs cover 87 of 753 target tokens (0.116). The non-figure ceiling is 303/753 =
+0.402, so the pre-registered floor of 0.5 cannot be reached from the header. Result: **not testable, no score computed** (not
+a negative). Observation (M, no control): the f159 table and VILL-SIGNS gave lambda = r, omega = m and + = x, while no.57
+gives the same designs a, a and t. The Nevers office reused one pool of sign designs across keys with different values, so
+a shared design does not identify a key. Under no.57, theta and infinity (27 target tokens) would both be x, a rare letter in
+French. That would argue against no.57 as the target's key unless they are nulls or code marks, but nothing here tests it.
+Grades in the target: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Vision: reader-A looks 4 (f162 overview, the f162 sym A/B/C crops with the target stack, the f198-200 sheet, the no.57 header
+halves), plus 3 locate looks spent on mis-placed f162 crops (an fr.3993 thumbnail, a wrong region, a grid). Subagent calls:
+1 (Sonnet, reader B). Requests: gallica.bnf.fr about 18 (manifest/info and native regions through iiif_lines, about 2 s apart,
+no block). Rule 10: no novelty claim. Tool shelf: glyph_atlas.py (proven) was not used, because one visual comparison does
+the job.
+
+Next (l): no.57's Sillabes 1-72 and Lettres doubles 73-96 grid (canvas f200, left block), read with native crops and two
+blind reads. With figures covered, the key's coverage could pass 0.5, and the scoring (rank 1 of 201 power check) becomes
+possible (~$5). Both (d) and (e') stand. None of these depends on anyone else.

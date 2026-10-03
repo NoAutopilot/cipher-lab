@@ -1,0 +1,16 @@
+# Reader A (worker, A1B-VILL-57-44, 3 Oct 2026 ~17:08 UTC), written before reader B was spawned.
+# no.57 f.200 (canvas f200) header: letter / row2 symbol / row3 symbol (as read by A)
+# target_sign	verdict	table_letter	where	note
+L lambda	SAME	a	A row2	
+P pi	SAME	s	S row3	plain pi
+V varpi	SAME	g	G row2	barred omega form
+Q theta	SAME	x	X row2	small closed theta
+W infinity	SAME	x	X row3	closed oo
+T tau	NO	-	-	only an inverted T (U/V row3) and the header letter T itself (tau-shaped); LIKE at most for inverted
+R reversed c	LIKE	h	H row2	hook-shaped reversed-c with tail; not certain
+w omega	SAME	a	A row3	
++ plus	SAME	t	T row3	
+K double-crossed dagger	SAME	r	R row3	
+D Delta (outside registered list)	SAME	t	T row2	
+# no.44 f.82v (canvas f162) symbol column: +-over-6, square, Delta (Clermont d'Amboise), venus sign, footed double-barred stem (Mr de Sois); Dames A B C D E(crossed) F G capitals
+# no.44 vs registered list: K LIKE (footed upright vs target slanted), D Delta SAME-class (outside list), all others NO -> no SAME in the registered list, call 2 not spent
