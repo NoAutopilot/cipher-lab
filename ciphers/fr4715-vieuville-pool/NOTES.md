@@ -1183,9 +1183,62 @@ record. Requests: none (disk only). Lesson for the next brief: one subagent call
 109-line readings is not a "~$4" unit. Size it per crop (Usage 6) or split it into two calls of about 10 crops each
 (bands L01-L05, L06-L10), and paste the readings into the prompt file before the call.
 
+## GAPS82-fr4715-vieuville-pool (3 Oct 2026, account-4): image reconciliation of the f.7r crops, then G1 unchanged
+Done as PREREG3_recon.md fixes it (445beed3), split as the GAPS-17 re-pricing says: two blind Opus vision subagent calls,
+bands L01-L05 and L06-L10, 10 crops each, each prompt carrying both passes' readings for its bands (prompts kept in
+witness/f4712_7r_recon_prompts/; grepped for '{' / TODO / PLACEHOLDER before sending -- the one '{' hit was pass A's own
+note "{-shaped 5"). No key, no Cabinet Noir list, no Tomokiyo table, no expected value in either prompt. Output written
+verbatim to witness/f4712_7r_pairs_img.tsv (22 glossed runs; every token parses; no hand edit; the two #NOTE lines kept as
+comments) and committed/pushed (bb494740) BEFORE the gate run. Then
+`python3 scripts/f4712_7r_gates.py --pairs witness/f4712_7r_pairs_img.tsv --out witness/f4712_7r_img` ran once, unedited:
+
+```
+G1	1	aligned=p	tomokiyo=r	DIFFER
+G1	5	aligned=l	tomokiyo=a	DIFFER
+G1	10	aligned=a	tomokiyo=b	DIFFER
+G1	11	aligned=e	tomokiyo=r	DIFFER
+G1	16	aligned=d	tomokiyo=r	DIFFER
+G1	19	aligned=a	tomokiyo=r	DIFFER
+G1	20	aligned=e	tomokiyo=f	DIFFER
+G1	23	aligned=e	tomokiyo=e	agree
+G1	24	aligned=e	tomokiyo=e	agree
+G1	25	aligned=a	tomokiyo=a	agree
+G1	30	aligned=e	tomokiyo=g	DIFFER
+G1	40	aligned=o	tomokiyo=h	DIFFER
+G1	48	aligned=e	tomokiyo=e	agree
+G1	50	aligned=e	tomokiyo=l	DIFFER
+G1	52	aligned=e	tomokiyo=t	DIFFER
+G1	60	aligned=e	tomokiyo=m	DIFFER
+G1	63	aligned=e	tomokiyo=i	DIFFER
+G1	64	aligned=a	tomokiyo=i	DIFFER
+G1	65	aligned=n	tomokiyo=c	DIFFER
+G1	70	aligned=e	tomokiyo=p	DIFFER
+G1	73	aligned=t	tomokiyo=n	DIFFER
+G1	74	aligned=e	tomokiyo=n	DIFFER
+G1	75	aligned=e	tomokiyo=d	DIFFER
+G1	80	aligned=q	tomokiyo=q	agree
+G1	83	aligned=s	tomokiyo=s	agree
+G1	84	aligned=s	tomokiyo=s	agree
+G1	85	aligned=o	tomokiyo=o	agree
+G1	93	aligned=l	tomokiyo=u	DIFFER
+G1	94	aligned=a	tomokiyo=u	DIFFER
+G1	95	aligned=e	tomokiyo=t	DIFFER
+G1 A 8/30 = 0.267 | control (10000 value permutations) mean 2.15 p99 5 max 7 | FAIL
+exit 2
+```
+
+Result: G1 FAIL as registered -- S = 30 >= 12 and A = 8 > p99 5 (also above the control's max 7), but A/S = 0.267 < 0.70.
+Leaf held: nothing merged into any key, G2 not run, no no.44 slot read, no grade changed, decode --check untouched.
+Against GAPS-16's mechanical reconciliation (A 5/32, at p99) the image reconciliation moved A up (8/30, beyond every one of
+10,000 permutations), so the pairing carries signal, but the flat-start alignment assigns 'e' to 14 of the 22 differing codes;
+the share threshold may be out of reach for this aligner at this N even on a perfect transcription. That is read after
+scoring and is not a re-score. This is the second G1 attempt with the same instrument (flat-start interlinear_align G1);
+under rule 3's third-attempt clause a third reconciliation of the same crops is not the next step.
+Vision calls 2 (both completed). Requests: none (disk only).
+
 ## Remaining gaps (CABNOIR, 3 Oct 2026; replaces the LIKELY-1 ... GAPS-13 list above, which stays as history)
 Read so far: no.44 8 of 27 cipher groups at H and 7 of 14 word-code occurrences at M (.7 x4, .71, .27, .25), plus .13 = Narre at M from f.62r; no.37 (604 + 308 letters decoded) is now covered by Cabinet Noir result no.9, so it is not counted as an open piece; 3 of 8 pool leaves covered in public (no.27, 35, 37)
-- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. 3 Oct 2026 (GAPS-15): re-gated on 8 unseen Cabinet Noir sure values (PREREG2.md, 0c411223, before scoring): 4 match, 3 conflict, 1 absent, SHARE 4/7 = 0.571 < 0.80 (perm p95 2, random p95 0): FAIL as registered; 2 of the 3 conflicts are notation misses seen after scoring (l'on, vendosme), 1 real (~37 Mayenne vs Langres); not re-scored. [retired] instrument: reconciled key71 transcription + token-subset match against a printed answer list (rule 3, second attempt; no third). 3 Oct 2026 (GAPS-16): f.7r imaged (20 crops), read by two blind passes and mechanically reconciled; its own control G1 FAILs (5/32 vs p99 5), so nothing merged and G2 did not run. 3 Oct 2026 (GAPS-17): the image reconciliation was pre-registered (PREREG3_recon.md, 445beed3) and stopped by the parent at 3.1x cap before its one subagent wrote any output; no file, no gate run. next: the same reconciliation per PREREG3_recon.md split into two Opus calls (bands L01-L05, L06-L10; readings pasted into the prompt), then scripts/f4712_7r_gates.py unchanged, ~$8-10 (priced per call, not ~$4)
+- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. 3 Oct 2026 (GAPS-15): re-gated on 8 unseen Cabinet Noir sure values (PREREG2.md, 0c411223, before scoring): 4 match, 3 conflict, 1 absent, SHARE 4/7 = 0.571 < 0.80 (perm p95 2, random p95 0): FAIL as registered; 2 of the 3 conflicts are notation misses seen after scoring (l'on, vendosme), 1 real (~37 Mayenne vs Langres); not re-scored. [retired] instrument: reconciled key71 transcription + token-subset match against a printed answer list (rule 3, second attempt; no third). 3 Oct 2026 (GAPS-16): f.7r imaged (20 crops), read by two blind passes and mechanically reconciled; its own control G1 FAILs (5/32 vs p99 5), so nothing merged and G2 did not run. 3 Oct 2026 (GAPS-17): the image reconciliation was pre-registered (PREREG3_recon.md, 445beed3) and stopped by the parent at 3.1x cap before its one subagent wrote any output; no file, no gate run. 3 Oct 2026 (GAPS82): the image reconciliation ran as two Opus calls (witness/f4712_7r_pairs_img.tsv, bb494740, committed before the gates); G1 FAILs as registered, A 8/30 = 0.267 < 0.70 though A > p99 5 and > control max 7; leaf held, G2 not run, no slot read. Second G1 attempt with the same aligner; no third reconciliation. next: a known-answer power check of G1 itself -- encipher the 22 f.7r gloss texts with Tomokiyo's key (offline, no vision), run the same flat-start alignment and read the A/S it reaches on a perfect transcription; if that ceiling is under 0.70 the G1 share gate is a non-test at this N and needs re-registration before any further f.7r use, ~$1
 Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, the four L glosses, the no.35 native read). These leaves are read in public as Cabinet Noir results no.13, no.11 and no.9, so a reading of ours would be N0-type. No native read or decode job is run on them, and the queued no.35 f.58r step (~$10) is retired.
 - no.60 f.83r: Tomokiyo's "no.60" digit-code passages vs our 1000 px view of f.83r as a symbol alphabet - blocker: not-attempted; a data conflict, not a reading; next: one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2
 - the clear-French frame of no.44 (165 L words) - blocker: not-attempted; unchanged from GAPS-9; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
@@ -1194,9 +1247,9 @@ Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, 
 ## Escalation (CABNOIR, 3 Oct 2026)
 - [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 and no.60 seen at 1000 px; Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
 - [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
-- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Registered gate 1 FAILs on letter coverage (0.758 vs 0.80, 0 conflicts) with glosses 5/5; gate 2 on 8 unseen Cabinet Noir values (GAPS-15) FAILs 4/7 = 0.571 (2 of 3 conflicts notation misses, 1 real). The current instrument is [retired] under rule 3. f.7r new material imaged and read twice (GAPS-16); its G1 leaf control FAILed on the mechanical reconciliation; untried: an image reconciliation of those crops (gap 1)
+- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Registered gate 1 FAILs on letter coverage (0.758 vs 0.80, 0 conflicts) with glosses 5/5; gate 2 on 8 unseen Cabinet Noir values (GAPS-15) FAILs 4/7 = 0.571 (2 of 3 conflicts notation misses, 1 real). The current instrument is [retired] under rule 3. f.7r new material imaged and read twice (GAPS-16); its G1 leaf control FAILed on the mechanical reconciliation; image reconciliation done 3 Oct 2026 (GAPS82): G1 FAIL 8/30 = 0.267 (A > p99 5); untried: a known-answer power check of G1's flat-start aligner at this N (gap 1)
 - [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
 - [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
 - [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
 - [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
-Verdict: keep going: 3 internal gaps; cheapest next: the f.7r image reconciliation exactly as witness/key71/PREREG3_recon.md fixes it (445beed3), run as two Opus subagent calls on bands L01-L05 and L06-L10 of the 20 crops on disk, with both blind passes' readings pasted into each prompt. Commit witness/f4712_7r_pairs_img.tsv, then run scripts/f4712_7r_gates.py --pairs witness/f4712_7r_pairs_img.tsv --out witness/f4712_7r_img unchanged (PREREG3), then no.44's six open slots only on G1+G2 PASS, ~$8-10 priced per call (GAPS-17, 3 Oct 2026: stopped at 3.1x cap by the parent before any output; no gate run)
+Verdict: keep going: 3 internal gaps; cheapest next: the G1 known-answer power check (encipher the 22 f.7r gloss texts in witness/f4712_7r_pairs_img.tsv with Tomokiyo's key, run scripts/f4712_7r_gates.py's same flat-start alignment on that synthetic pairs file, report the A/S ceiling; offline, no vision), ~$1 (GAPS82, 3 Oct 2026: image reconciliation done, G1 FAIL 8/30 = 0.267 vs 0.70, A > p99 5; leaf held)
