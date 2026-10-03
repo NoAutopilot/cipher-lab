@@ -24,7 +24,16 @@ the share of adjacent pinned pairs within the bracket that are in alphabetical o
 run length can be matched to the target's own run structure (--param run).
 
 Recovery: share of UNPINNED token positions whose decoded entry equals the true entry (pinned positions are not
-counted). Params: pins, pinshare, pinpow=2, words=400, vocab=2500, run=6, bracket=8, iters=300000, prior=1.0."""
+counted). Params: pins, pinshare, pinpow=2, words=400, vocab=2500, run=6, bracket=8, iters=300000, prior=1.0,
+lm=letter|entry.
+
+lm=entry (A2-CAS9, 3 Oct 2026): the second instrument for this family, after the letter 4-gram control read 0.070
+against a 0.6 gate (A2-CAS8). Whole entries are scored in sequence: an interpolated Witten-Bell entry-bigram model
+over the same segmented training corpus (P(b|a) = (c(a,b) + d(a) Pu(b)) / (c(a) + d(a)), d(a) = distinct followers
+of a, Pu add-0.5 unigram), so "confer" is followed by "enza" whatever its letters; nulls are skipped as context; the
+prior term is off (the bigram carries the unigram). Half the proposals are drawn from the corpus followers of the
+entry before a random occurrence of the type (kept only if inside the type's bracket), half as in lm=letter.
+Same control, same recovery statistic, so the two instruments' numbers are comparable."""
 import math, random, re
 from collections import Counter, defaultdict
 
@@ -86,6 +95,29 @@ class Quad:
                 self.cache[g] = v
             tot += v
         return tot
+
+
+class EntryBigram:
+    def __init__(self, seqs):
+        self.uni, self.big, self.fol = Counter(), Counter(), defaultdict(Counter)
+        for q in seqs:
+            self.uni.update(q)
+            for a, b in zip(q, q[1:]):
+                self.big[(a, b)] += 1; self.fol[a][b] += 1
+        self.tot = sum(self.uni.values()); self.V = len(self.uni) + 1
+        self.cache = {}
+
+    def pu(self, b):
+        return (self.uni.get(b, 0) + 0.5) / (self.tot + 0.5 * self.V)
+
+    def lp(self, a, b):
+        k = (a, b)
+        v = self.cache.get(k)
+        if v is None:
+            ca = self.uni.get(a, 0); d = len(self.fol[a]) if a in self.fol else 0
+            v = math.log((self.big.get(k, 0) + d * self.pu(b)) / (ca + d)) if ca + d else math.log(self.pu(b))
+            self.cache[k] = v
+        return v
 
 
 def read_pins(path):
@@ -176,7 +208,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     rng = random.Random(seed)
     nwords = int(params.get("words", 400)); nvocab = int(params.get("vocab", 2500))
     bracket = int(params.get("bracket", 8)); iters = int(params.get("iters", 300000))
-    lam = float(params.get("prior", 1.0))
+    lm = params.get("lm", "letter")
+    lam = float(params.get("prior", 1.0 if lm == "letter" else 0.0))
     pins = read_pins(params.get("pins"))
     toks = [t for m in cipher_msgs for t in m]
     sym, fixed = [], {}
@@ -189,11 +222,14 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         elif g in pins:
             fixed[g] = pins[g]
         sym.append(g)
-    model = Quad(corpora)
     top = top_words(corpora, nwords)
     ec = Counter()
-    for c in corpora:
-        ec.update(segment(words_of(c), top))
+    segs = [segment(words_of(c), top) for c in corpora]
+    for q in segs:
+        ec.update(q)
+    model = Quad(corpora) if lm == "letter" else None
+    bg = EntryBigram(segs) if lm == "entry" else None
+    del segs
     for v in fixed.values():
         if v:
             ec[v] += 1
@@ -231,13 +267,49 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         if g not in fixed:
             occ[g].append(i)
     L = len(sym)
+    # entry mode: neighbours skipping nulls; transitions touched by each free type
+    nn = [i for i in range(L) if not (sym[i] in fixed and fixed[sym[i]] == "")]
+    prv, nxt = [None] * L, [None] * L
+    for a, b in zip(nn, nn[1:]):
+        nxt[a] = b; prv[b] = a
+    trans = {}
+    if lm == "entry":
+        for g in free:
+            ts = set()
+            for i in occ[g]:
+                if prv[i] is not None:
+                    ts.add((prv[i], i))
+                if nxt[i] is not None:
+                    ts.add((i, nxt[i]))
+            trans[g] = sorted(ts)
+    cset = {g: (set(cands[g]) if cands[g] is not vocab else None) for g in free}
+    vset = set(vocab)
     best = None
     for r in range(restarts):
         val = dict(fixed)
         for g in free:
             val[g] = rng.choices(cands[g], cum_weights=cw[g])[0]
 
+        def local_e(g, v):
+            old = val[g]; val[g] = v
+            s = sum(bg.lp(val[sym[a]], val[sym[b]]) for a, b in trans[g])
+            val[g] = old
+            return s + lam * len(occ[g]) * logf.get(v, -15.0)
+
+        def propose(g):
+            if lm == "entry" and rng.random() < 0.5:
+                i = occ[g][rng.randrange(len(occ[g]))]
+                if prv[i] is not None:
+                    f = bg.fol.get(val[sym[prv[i]]])
+                    if f:
+                        e = rng.choices(list(f), weights=list(f.values()))[0]
+                        if e in vset and (cset[g] is None or e in cset[g]):
+                            return e
+            return rng.choices(cands[g], cum_weights=cw[g])[0]
+
         def local(g, v):
+            if lm == "entry":
+                return local_e(g, v)
             s = 0.0
             for i in occ[g]:
                 a, b = max(0, i - 2), min(L, i + 3)
@@ -247,20 +319,25 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         T0, T1 = 3.0, 0.05
         for it in range(iters):
             g = free[rng.randrange(len(free))]
-            new = rng.choices(cands[g], cum_weights=cw[g])[0]; old = val[g]
+            new = propose(g); old = val[g]
             if new == old:
                 continue
             d = local(g, new) - local(g, old)
             T = T0 * (T1 / T0) ** (it / iters)
             if d >= 0 or rng.random() < math.exp(d / T):
                 val[g] = new
-        text = "".join(val[g] for g in sym)
-        sc = model.lp(text) / max(1, len(text)) + lam * sum(logf.get(val[g], -15.0) for g in free for _ in occ[g]) / L
+        if lm == "entry":
+            ent = [val[sym[i]] for i in nn]
+            sc = sum(bg.lp(a, b) for a, b in zip(ent, ent[1:])) / max(1, len(ent))
+        else:
+            text = "".join(val[g] for g in sym)
+            sc = model.lp(text) / max(1, len(text))
+        sc += lam * sum(logf.get(val[g], -15.0) for g in free for _ in occ[g]) / L
         if best is None or sc > best[0]:
             best = (sc, dict(val))
     sc, val = best
     dec = "|".join(("=" + val[g]) if g in fixed else val[g] for g in sym)
-    return dec, sc, {"free_types": len(free), "bracketed": nb, "vocab": len(vocab), "iters": iters}
+    return dec, sc, {"free_types": len(free), "bracketed": nb, "vocab": len(vocab), "iters": iters, "lm": lm}
 
 
 def score_recovery(plain, truth):

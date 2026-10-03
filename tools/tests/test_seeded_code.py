@@ -3,7 +3,8 @@
 in memory. Checks: (1) make_control returns N tokens in the target's message lengths, K codes, pinned tokens carry
 "code=value" and the pinned share is at least the requested share; (2) solve keeps every pinned token's value and
 score_recovery ignores pinned positions (a decode equal to the truth reads 1.0, one with every unpinned entry wrong
-reads 0.0); (3) with pinshare=0.95 on a tiny repetitive text the solver reads better than a random-vocabulary floor.
+reads 0.0); (3) with pinshare=0.95 on a tiny repetitive text the solver reads better than a random-vocabulary floor;
+(4) the same with --param lm=entry (entry-bigram scorer, A2-CAS9, 3 Oct 2026).
 Run: python3 tools/tests/test_seeded_code.py"""
 import os, random, sys
 
@@ -43,6 +44,16 @@ def main():
     rec = sc.score_recovery(dec2, truth2)
     print(f"pinned recovery on the tiny control: {rec:.2f}")
     assert rec >= 0.15, rec  # a random draw from the ~50-entry vocabulary reads about 0.02
+    # (4) lm=entry (A2-CAS9, 3 Oct 2026): pinned values kept, and the entry-bigram solver beats the same floor
+    P3 = dict(P2, lm="entry")
+    dec3, _, info3 = sc.solve(msgs2, {}, 2, 1, train2, dict(P3))
+    assert info3["lm"] == "entry"
+    for t, d in zip([t for m in msgs2 for t in m], dec3.split("|")):
+        if "=" in t:
+            assert d == "=" + t.split("=", 1)[1], (t, d)
+    rec3 = sc.score_recovery(dec3, truth2)
+    print(f"pinned recovery on the tiny control, lm=entry: {rec3:.2f}")
+    assert rec3 >= 0.15, rec3
     print("test_seeded_code: ok")
 
 

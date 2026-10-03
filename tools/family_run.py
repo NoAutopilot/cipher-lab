@@ -58,7 +58,8 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   seeded_code        homophonic two-part code of syllables/words with a partial key pinned (A2-CAS8 2 Oct 2026,
                      castelcicala-1816): --param pins=<key.tsv>, local alphabetical runs as bracket constraints
                      (run=6 bracket=8), control at the target's pinned token share (pinshare=0 = blind baseline);
-                     recovery = token accuracy on unpinned positions
+                     recovery = token accuracy on unpinned positions; --param lm=entry scores entries with an
+                     entry-bigram model instead of the letter 4-gram (A2-CAS9 3 Oct 2026)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
