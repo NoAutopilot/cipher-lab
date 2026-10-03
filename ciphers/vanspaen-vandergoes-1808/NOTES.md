@@ -183,9 +183,9 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 
 Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
 - Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public; list in
-  images/na_2.01.08_281_scans.tsv, 50 sampled 3 Oct by FT4 and FT4b, not found; next 161-179) at thumbnail size to locate
+  images/na_2.01.08_281_scans.tsv, 65 viewed 3 Oct by FT4, FT4b, FT4c, not found; next 141-159) at thumbnail size to locate
   the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
-  or a ministry gloss (premise (c)); then one logged-in DECODE pass listing R1941's documents (premise (a)). S.
+  or a ministry gloss (premise (c)); (DECODE DocumentsList done 3 Oct, FT4c: 0 documents). S.
 
 ## FT4-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): locate the Jan 1808 leaves in NA 2.01.08 inv. 281
 
@@ -248,18 +248,48 @@ Step: the gap "location of the target leaves in inv. 281". Locate only; nothing 
 - Requests: service.archief.nl 25 (the cap for this session), 1.6 s apart, no 4xx/5xx; www.nationaalarchief.nl 0.
   Vision 2. Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, 3 Oct 2026)
+## FT4c-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): DECODE DocumentsList, then inv. 281 scans 161-179
+
+Step: the Verdict's two named steps (FT4b). Nothing transcribed or decoded. Status unchanged (`open`).
+- **DECODE, one browser login** (`tools/decode_browser_login.js 1941 ... --fetch-page DocumentsList,ImagesList`,
+  3 Oct 2026 04:45 UTC). Record view: "Documents 0", "Associated Records 0", field "Available Documents" empty,
+  Images 4 (IMG_R1941_I13398-I13401, P1-P4, uploaded 13 Jul 2021). `DocumentsList?showmaster=records&fk_id=1941`
+  answers "No records found". The only text behind DECODE's "Partially decrypted" is the record's Additional
+  Information note, quoted as served (typos the site's): *"The letter itself is onsolved, only a small anne, dated
+  15 January of the same year is. With 4 d9g9t numbers, the nomenclator seems a little unfaailiar, not tyically a
+  nomenclator made by Croiset."* Other fields: Plaintext language French, Cleartext Dutch; Cipher type
+  Nomenclatures; author given as "Gerard Carel baron van Spaen tot Voorstonden, ambassador of the King of Holland
+  ar rhe Court of Westphalia". So: no decipherment of this item (letter or annex) is served by DECODE; the note
+  asserts the annex was solved but cites no source and attaches nothing. Not found-solved. Saved pages and the four
+  thumbnails stayed in the session scratchpad (account name in the page header; not committed). The note's
+  "Plaintext: French" is a catalogue field, not a reading -- a hint for a later key attack, grade nothing.
+- **NA inv. 281 scans 161-179**, IIIF `full/450,/0`, 19 views (15 new; 164/168/172/176 re-viewed beside their
+  neighbours), 1.6 s apart, all HTTP 200 image/jpeg; two contact sheets, two vision calls.
+  - 161-172: one long Dutch report in clear, running page to page with catchwords at the foot of each page; ends on
+    172 with a closing formula and signature (not read at this size).
+  - 173: blank. 174 and 178: small cabinet extract slips ("Uit het Register ..." heading, "No 14" / "No 1.."),
+    pinned on cover sheets addressed "Sire" / "Aan den Koning". 175: a letter "Sire" with a dated report heading
+    (year not legible at 450 px). 176: a short letter "Sire", signed. 177, 179: covers "Aan den Koning".
+  - So 161-179 is ministry-to-King material (a report plus covering letters and cabinet extracts), not
+    commissioners' or envoys' despatches; it continues into 180 (3 Feb 1808, to the King, FT4/GF4).
+  - None of the 19 carries a page of figure groups, a decipherment slip or a key sheet.
+- Total inv. 281 viewed now 65 of 360 scans (18%). Not located is a search result, not an absence.
+- Requests: de-crypt.org 1 login + 2 pages + 4 thumbnails (auto, --max-files 6), 1.5 s apart;
+  service.archief.nl 19 (of the 25 cap), no 4xx/5xx; www.nationaalarchief.nl 0. Vision 2.
+  Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b and FT4c, 3 Oct 2026)
 Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
-- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 25 of 360 inv. 281 scans
-- annex 15 Jan 1808 (75 groups) - blocker: not-attempted; DECODE says it "is solved" but no document has been seen; next: one logged-in DECODE pass listing R1941's DocumentsList, ~$1
-- location of the target leaves in inv. 281 - blocker: not-attempted; 50 of 360 scans sampled (FT4 25, FT4b 25, 3 Oct 2026), leaves not located; scans 180-233 are a Feb-Mar 1808 bundle in rising date order, so Jan 1808 should precede 180; next: IIIF 450 px views of scans 161-179 then 141-159 (25 per session, host rule), contact sheets, ~$2 per 25-scan batch
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 65 of 360 inv. 281 scans
+- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; DECODE DocumentsList read 3 Oct 2026 (FT4c): 0 documents, 0 associated records, the "is solved" claim is an unsourced catalogue note; no decipherment seen in 65 of 360 inv. 281 scans
+- location of the target leaves in inv. 281 - blocker: not-attempted; 65 of 360 scans viewed (FT4 25, FT4b 25, FT4c 19, 3 Oct 2026), leaves not located; 161-233 is ministry-to-King and commissioners' material Feb-Mar 1808 in clear; next: IIIF 450 px views of the unviewed scans 141-159 then 100-139, contact sheets, ~$2 per 25-scan batch
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no sibling letter in this code is identified anywhere
 - [ ] clear-pages: locate the leaves next to the target in inv. 281 (the gap above) for a clear draft or a ministry gloss
-- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out
+- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: needs a crib or a period decipherment first; the annex decipherment DECODE claims would be the crib
+- [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
 - [ ] image-check: native-resolution view of the target leaves once they are located in inv. 281
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 2 internal gaps; cheapest next: logged-in DECODE DocumentsList for R1941, ~$1; then inv. 281 scans 161-179 + 141-149 (25 views), ~$2
+Verdict: keep going: 1 internal gap; cheapest next: inv. 281 IIIF 450 px views of scans 141-159 (17 unviewed), then 100-139, contact sheets, ~$2 per 25-scan batch
