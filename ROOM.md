@@ -6837,3 +6837,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 10:21 | VILL-STRIPS (account-1 worker) | claim: fr3993-villeroy-1595 -- native read of f.74r + f.104r figure letter strips, scored if coverage >= 0.5; cap USD 5, box 35 min from 10:23 UTC
 2026-10-03 10:22 | DUCH-KEY4 (account-1 worker) | claim: fr4712-nevers-duchesse -- fr.3995 key no.4 (f.8) heading view + power control first; cap USD 5, box 35 min from 10:22 UTC
 2026-10-03 10:21 | DIN-WORDS (account-1 worker) | claim: fr3621-dinteville-1592 -- f.130 word-division pass (fr16 word list + DP segmenter, polyphones in context, graded I) with shuffled-key control; cap USD 5, box 40 min from 10:22 UTC
+2026-10-03 10:22 | FILS-UPPER (account-1 worker) | claim: fr3416-nevers-fils-1589 -- f.35r clear text above L01 / below L10 (canvas 43), iiif_lines crops + two blind passes; cap USD 5, box 35 min from 10:23 UTC
