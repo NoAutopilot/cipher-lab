@@ -10,6 +10,11 @@ DECODE's catalogue have none of the five. The 1931 BRAH Soria catalogue (tomo 98
 unread. Rodriguez Villa's two editions (1875, 1885) searched for items 2 and 4 and the pool's other open Sanchez rows (NX2-RV): not found. Status `blocked`: no page image of any item is online (bibliotecadigital.rah.es has no record), REQUEST.md is the
 only route. Details in the NX2-GATE2 section below.
 
+Verifier A2P4-VRAHSAL (3 Oct 2026, AUDIT.md): item 5 = CSP No.462 at A.42 f.443 exactly (N0, key `published`); items 1
+and 3 are calendared from other copies of the same letters (No.212 = A.35 f.314, duplicate inv.5181; No.399 = A.42
+f.279, inv.6428, first part a duplicate of item 3; both via period decipherments; N2, key `period`, text known).
+Next step for 1 and 3 once images exist: use the printed text as a crib to settle Ko.6 vs Ko.16 per sheet.
+
 # Lope de Soria (Genoa/Mirandola) and Alonso Sánchez (Venice) to Charles V, 1524-1528 — RAH Colección Salazar y
 Castro (Madrid)
 
@@ -191,7 +196,7 @@ the EMPEROR"). The full letter is given in English translation, with the cipher 
 marked inline — `(Cipher :) Has been informed that in the last conference held [at Milan]...` /
 `(Common writing :) It would be highly advantageous...` — alternating for the whole entry. Ends: "Indorsed:
 'To the King. 1525. From Genoa, Lope de Soria, 21 Sept.' Spanish. Original partly in cipher. Contemporary
-deciphering. pp. 44." The shelfmark and date match item 1 exactly; the "Contemporary deciphering" note
+deciphering. pp. 44." The shelfmark and date match item 1 exactly [corrected by verifier A2P4-VRAHSAL, 3 Oct 2026, AUDIT.md: the CSP margin, read on the page image, is A.35 f.314 = Índice inv.5181, the duplicate copy of item 1 (inv.5180, ff.310-312); same letter, other sheet; class N2]; the "Contemporary deciphering" note
 means Gayangos worked from a period decipherment. **Item 1's plaintext (in English translation, drawn from
 a period decipherment) is already published — no cryptanalytic campaign is possible or needed on it.**
 
@@ -209,7 +214,7 @@ items 1/3/5 below, Gayangos did not calendar this letter at all, which fits the 
 
 **Item 3 — Lope de Soria → Charles V, 14 Apr 1528, Mirandola (A-42 ff.243-244, inv.6417): plaintext already
 in print.** CSP Spain vol.III pt.2, No. 399 (pp.653-654, "LOPE DE SORIA to the EMPEROR"), header "M. Re. Ac.
-d. Hist. Salazar, A. 42" (shelfmark matches exactly). Multiple `(Cipher :)` sections in English translation,
+d. Hist. Salazar, A. 42" (shelfmark matches exactly) [corrected by verifier A2P4-VRAHSAL, 3 Oct 2026, AUDIT.md: the margin reads A.42 f.279 = Índice inv.6428, Soria, Mirandola 25 Apr 1528, "cuya primera parte es duplicada" of item 3 (inv.6417, ff.243-244); its period decipherment is inv.6429; item 3 class N2]. Multiple `(Cipher :)` sections in English translation,
 including one with the original Spanish quoted verbatim in a footnote: *"Que el Papa ha concedido la
 dispensacion para que el Rey de Inglaterra dexe su muger, y se case con la otra que quiere"* (news of Henry
 VIII's divorce, reported in cipher from Mirandola). Dateline: "—La Mirandola, 14th April 1528" (place and
@@ -237,7 +242,7 @@ Emperor, a *sixth*, different Sánchez item at A-42 f.429, not in our five). Giv
 `(Cipher :)` translation (named individuals, a bill-of-exchange transaction, travel plans) — but ends:
 "Spanish. Holograph entirely in cipher. **No deciphering appended.** pp. 14." This is the opposite of items
 1/3's "Contemporary deciphering" note: no period key survives attached to this letter, yet Gayangos still
-prints its content in English, which can only mean **Gayangos solved this cipher himself** (a 19th-century
+prints its content in English, which can only mean **Gayangos solved this cipher himself** [corrected by verifier A2P4-VRAHSAL, 3 Oct 2026, AUDIT.md section 3: not established; the same-day Sánchez letters inv.6498-6500 and their period decipherment inv.6501 give other routes; the folio, A.42 f.443, is confirmed on the page image; class N0, key `published`] (a 19th-century
 cryptanalytic reading, not a period decipherment) — a materially different kind of "already in print" than
 items 1 and 3, worth flagging precisely for whoever grades this (CLAUDE.md's `ours`/`period`/`published`
 key-source distinction, rule 10 addendum). **Item 5's plaintext is already published, by Gayangos's own
@@ -350,7 +355,7 @@ reading short of a physical/RAH-image or HathiTrust-affiliated read of the 1931 
 of the five items (1, 3, 5) are no longer cryptanalytic targets at all: their plaintext (in English
 translation) is already published in CSP Spain** (Gayangos, vol.III parts 1 and 2, 1873/1877) — items 1
 and 3 via a surviving period/contemporary decipherment, item 5 via what appears to be Gayangos's own
-19th-century solving of a cipher with no period key attached. This is a search result about print, not a
+19th-century solving of a cipher with no period key attached. [Verifier A2P4-VRAHSAL, 3 Oct 2026, AUDIT.md: confirmed in substance; item 5 = CSP No.462 at A.42 f.443 exactly (N0); items 1 and 3 are printed from other copies of the same letters, CSP No.212 = A.35 f.314 (duplicate inv.5181) and No.399 = A.42 f.279 (inv.6428, first part a duplicate of item 3) (N2 each: printed text is a crib for ff.310-312 and ff.243-244, not a reading of them); item 5's decipherment source is not established.] This is a search result about print, not a
 decipherment performed here, and not this worker's novelty classification to make (rule 10) — a verifier
 should confirm these three CSP entries against the exact RAH shelfmarks (folio-level matches are inferred
 from date+place+correspondent+addressee, not from an RAH image) before any outward claim. **Not Bourdeau's
