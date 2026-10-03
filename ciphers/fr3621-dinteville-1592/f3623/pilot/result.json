@@ -1,0 +1,28 @@
+{
+ "passA_len": 54,
+ "passB_len": 50,
+ "overlapA": 4,
+ "overlapB": 5,
+ "agree": 0.6296296296296297,
+ "consensus": "a ? ? ? c ? 0' c y ? sq 0' L ? ? 9 # ? 0 ? a a v ? 4 ? ? 0 a a v a a ? 4 ? ? # 0 0 x ? y ? ? 0' c 0 ? 0 sq x ? y ? ?",
+ "letters": "prossimoconquantohoqagttochemipremesisono",
+ "real": {
+  "g1": 0.7619,
+  "n_keyed": 21,
+  "zero_prime": [
+   "p"
+  ],
+  "zp_sp": 1,
+  "v_prime": [],
+  "vp_at": 0,
+  "score": 18
+ },
+ "aligned": "a=- ?=- ?=- ?=- c=- ?=- 0'=p c=r y=o ?=s sq=s 0'=- L=i ?=m ?=o 9=- #=c ?=o 0=- ?=n a=q a=u v=a ?=n 4=t ?=o ?=h 0=o a=q a=- v=a a=g a=- ?=t 4=- ?=t ?=o #=c 0=h 0=e x=m ?=i y=- ?=p ?=- 0'=- c=r 0=e ?=m 0=e sq=s x=i ?=s y=o ?=n ?=o",
+ "null_n": 32,
+ "null_g1_max": 0.8182,
+ "null_zp_sp_p95": 1,
+ "null_vp_at_p95": 0,
+ "null_zp_sp_max": 1,
+ "null_vp_at_max": 0,
+ "null_g1_mean": 0.7214
+}

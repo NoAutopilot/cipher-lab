@@ -775,27 +775,68 @@ together with its gloss, to see whether 0' sits under s/p letters.
 
 Requests: gallica.bnf.fr 3 (two 808 px images, one native region), >= 2 s apart, no block. Rule 10: no novelty claim.
 
-## Remaining gaps (DIN-3623, 3 Oct 2026; supersedes DIN-LEFT's list)
+## fr.3623 f.23r one-line pilot (DIN-23P, account 1, 3 Oct 2026, 10:04-10:10 UTC)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-din-23p.md`. Rule committed before any f.23r look: `f3623/pilot/PREREG.md`
+(a9bbcde2). DIN-3623's inventory pass has no per-line 0' counts, so PREREG fixed a substitute choice: one look at a 60%
+contact sheet of the L02-L07 band crops (`pilot/select_sheet.jpg`), counting stemmed zeros only. The counts were about
+R1 1, R2 1, R3 2, R4 3, R5 1, R6 1 and R7 1, so the pilot line is **R4**, the cipher row under the gloss "prossimo con quanto
+ho qua gtto che mi preme si sono".
+Crops (the rows slope about -0.055 across the slip):
+`python3 tools/iiif_lines.py --image ciphers/fr3621-dinteville-1592/f3623/src_ark_12148_btv1b525245007_f55_560_1780_2950_1560.jpg
+--out ciphers/fr3621-dinteville-1592/f3623/pilot --prefix r4 --centres 643,800 --follow-slope 300 --slope-margin 45
+--lines-per-crop 1 --max-width 1600` gave the fit y = 803.3 - 0.05504x. The L02 strips were then masked
+(`r4_cipher_s1/s2.jpg`: gloss rows whited out; `r4_gloss_s1/s2.jpg`: the gloss band alone).
+Vision calls: 4. (1) The selection sheet (this worker). (2, 3) Two blind Sonnet sign passes on the masked cipher
+strips (`pilot/passA.txt`, `passB.txt`, raw); both readers called their own read low-confidence. (4) The gloss read
+(this worker, `pilot/gloss.tsv`; "gtto" is uncertain).
+`pilot/align_pilot.py` (`--check` regenerates and compares `result.json`) does the following:
+- joins each pass's two segments on their overlap;
+- builds a consensus from the two passes. A and B have 54 and 50 signs and agree on **63%** of positions; disagreements become ?;
+- DP-aligns the consensus to the 41 gloss letters using f.128's key_print values;
+- runs the same DP on 32 rotated glosses as the null.
+
+| measure | real gloss | rotated-gloss null (32) |
+|---|---|---|
+| G1: keyed signs landing on their key_print letter | 0.762 (21 keyed) | mean 0.721, max **0.818** |
+| consensus 0' aligned / on s or p | 1 / 1 (0' = p of "prossimo") | s/p count p95 1, max 1 |
+| consensus v' aligned / on a or t | 0 / 0 | 0 |
+
+**Result: G1 FAILS (0.762 < null max 0.818), so Q1 (0' under s/p) and Q2 (v' under a/t) are undecided by the
+pre-registered rule.** The one 0' the two passes agree on does align to p, which fits DIN-3623's s/p guess. Grade I,
+not used. Nothing changed under f128/, f130/ or firm/, and the key is unchanged.
+The pilot found the instrument is the limit, not the key. The two Sonnet passes agree on only 63% of signs, and they
+use their own coin for a sign the other reads differently (plus/t, 9/c, Z/z, y/p). The DP has 41 letters against
+about 50 signs, so it fits rotated glosses about as well as the real one (null mean 0.72). Neither the null nor the
+real alignment can discriminate at this transcription error.
+Price of the full 6-line job, from this pilot: at least 2 x 6 pass calls + 6 gloss reads + 1 reconciliation = 19 vision
+calls at the Fable/Opus floor of about USD 1.5-2.5 = **about USD 30-48**. On this pilot's 63% pass agreement it would
+reproduce the same non-test. So the next step is not more machine passes. TRANSCRIPTION.md's route comes first: the
+owner settles the f.23r alphabet in the sign sorter (the 0/0'/o and v/v'/D/4 splits are exactly where the passes part).
+After that, two passes against the settled labels, then the alignment. Session cost could not be read here: get_session
+returned no cost figure. Requests: none (local native region reused).
+
+## Remaining gaps (DIN-23P, 3 Oct 2026; supersedes DIN-3623's list)
 Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4; conflict rows sq, m, 0 and a all checked per occurrence, none promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line read, 4 July 1592
 - f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t), m (u/t) and 0 (e/s/p/c, DIN-LEFT) read more than one letter; next: a word-division pass with #, v, m and 0 read in context and graded I, ~$4
 - `0` on f.128: one sign or two merged - blocker: not-attempted; DIN-3623's look was undecided (3 of 7 conflicting zeros have f.130's stemmed 0' shape, 4 look plain at line-crop resolution; look/PREREG.md); next: native-resolution sub-crops of the 7 positions (tools/iiif_lines.py --ark btv1b52524472n --canvas 265), one look, same rule, ~$5
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; fr.3623 f.23r is a Dinteville cipher slip with an interlinear Italian decipherment, same sign family on a low-confidence pass, 0' about 10 times (DIN-3623, f3623/inventory_passA.md); next: f.23r alignment job (2 blind passes + gloss + reconciliation + interlinear_align, rotated-gloss null), ~$26
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; fr.3623 f.23r is a Dinteville cipher slip with an interlinear Italian decipherment. The one-line pilot (DIN-23P, row R4) was a non-test: two Sonnet passes agree on only 63%, and G1 0.762 is below the rotated-gloss max 0.818. Its single consensus 0' sits on p (grade I); next: the owner settles f.23r's sign alphabet in tools/sign_sorter.py (0/0'/o, v/v'/D/4), then 2 passes against settled labels + the 6-line alignment, ~$30-48
 - fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; catalogue ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch; fr.4718 to be added by the parent); not on Gallica
 - "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed; Gallica fr.4075 is a 1613-41 Coeuvres volume) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read (ASKS row to be filed by the parent if wanted)
 
-## Escalation (DIN-3623, 3 Oct 2026; supersedes DIN-LEFT's list)
+## Escalation (DIN-23P, 3 Oct 2026; supersedes DIN-3623's list)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2); fr.4718 catalogue read, three more Dinteville cipher-with-decipherment items found at fols. 17, 21, 40 (DIN-LEFT)
-- [ ] clear-pages: fr.3623 f.23r is a cipher slip with an interlinear Italian decipherment, same sign family on one low-confidence pass (DIN-3623); alignment not yet run (~$26); fr.4718 fols. 17/21/40 not online (reproduction order)
+- [ ] clear-pages: fr.3623 f.23r is a cipher slip with an interlinear Italian decipherment, same sign family (DIN-3623). The one-line pilot was a non-test: pass agreement 63%, G1 0.762 vs null max 0.818 (DIN-23P). It needs a settled alphabet (sign sorter) before the 6-line alignment (~$30-48). fr.4718 fols. 17/21/40 are not online (reproduction order)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
 - [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence, none promoted
 - [ ] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, A2-DIN2); date line read 4 July (orchestrator); f.128's 7 conflicting `0`s looked at once at line-crop resolution, undecided 3 stemmed / 4 plain (DIN-3623); native sub-crops next
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 3 internal gaps; cheapest next: native sub-crops of f.128's 7 conflicting `0`s, one look (~$5), then the fr.3623 f.23r alignment job (~$26, the key source for 0'/v'); fr.4718 fols. 17/21/40 to the BnF reproduction batch (ASKS row 78)
+Verdict: keep going: 3 internal gaps. Cheapest next: native sub-crops of f.128's 7 conflicting `0`s, one look (~$5). Then a sign-sorter pass on fr.3623 f.23r for the owner, then the 6-line alignment (~$30-48, the key source for 0'/v'; DIN-23P's machine-only pilot was a non-test). fr.4718 fols. 17/21/40 go to the BnF reproduction batch (ASKS row 78)
 
 ## While waiting
 
-- fr.3623 f.23r alignment job (Gallica btv1b525245007 f55, crops in f3623/; ~$26) -- depends on nobody; fr.4718 fols. 17/21/40 wait on the BnF reproduction order
+- fr.3623 f.23r: build the sign-sorter sheet for the owner from the existing crops (f3623/, pilot/), then the 6-line alignment (~$30-48) -- the sheet depends on nobody; fr.4718 fols. 17/21/40 wait on the BnF reproduction order
 - f.128 `0` native sub-crop look at the seven conflicting occurrences (~$5)
 
 ## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
