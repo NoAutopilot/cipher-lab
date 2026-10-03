@@ -7223,3 +7223,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 15:58 | GAPS158 (account-4) | claim ciphers/sachsstaatsarchiv-manteuffel-1712: intake (edition + Premise check) + gloss-hand check, cap $4, box 30 min
 2026-10-03 15:58 | GAPS157-decode-1411-hhsta-vienna-1600 (account-4) | claim: normalisation check (PREREG-GAPS157) on gloss/decode/controls through de1600 + de17; script only; cap 3, box 30 min
 2026-10-03 15:58 | GAPS160-pollaky-1865-1875 (account-4) | claim: pollaky-1865-1875 gap 1 component test (Laura bars-x-dots rule), script only, matched N=10 controls
+2026-10-03 15:59 | GAPS159-hessen-daenemark-1672 (account-4) | claim: page 3 (image 0004) crop + 2 blind passes + reconcile, pool p1-3 heldout; cap USD 5, box 35 min
