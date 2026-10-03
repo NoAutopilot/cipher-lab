@@ -30,3 +30,7 @@ Requests this pass: archive.org 2 (metadata + download for `calendarofstatep08gr
 ## Solver-repo check (aymeloglu, 2 Oct 2026)
 
 Fresh shallow clone of github.com/aaymeloglu/unsolved-ciphers, HEAD d2800bb (27 Sept 2026); the repository has no issues (0 results on the issue tracker, read 2 Oct 2026) and 25 pull requests, all the owner's own, the last on 27 Sept 2026 (cipherkit diagnostics, no target rows). Only one commit since our 25 Sept check (HEAD 2495c45): nothing about this target changed. Their record stands as TARGETS.md row 14: SP 53/22 f.52, "Cifer with Spanish Spye": closed-negative 16 Sept 2026 (matched 84-letter controls solve in six languages, the target a full gram worse under every hypothesis; all 61 key images negative). Work kept private (no public folder); no licence, cited not copied. Class b (attempted and closed) in sources/solver-diffs/2026-10-02-aymeloglu.tsv. Worker SOLVERDIFF-AYMELOGLU (account 2).
+
+## Solver-repo check (bourdeau, 3 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 2341682 (2 Oct 2026), plus open PR 17 (refs/pull/17/head) and the issue/PR lists read 3 Oct 2026. Their record for this item is unchanged: `targets/sp53/NOTES.md`, "SP 53/16 nos. 78 and 79 (1585?) and SP 53/22 f. 52 -- attempted 2026-09-16 and 2026-09-15 (second session), not solved" (D. Bourdeau; text CC BY 4.0, quoted with credit). No commit, issue or PR since 1 Oct touches SP 53. Class b (attempted, not read) in sources/solver-diffs/2026-10-03-bourdeau.tsv. Worker SOLVERDIFF-BOURDEAU (account 2).
