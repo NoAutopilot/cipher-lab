@@ -1,4 +1,5 @@
-status: open
+open
+Souchon, Correspondance diplomatique du comte de Montaigu (1915, Gallica bpt6k935116v) pp. 257 and 268 read by this worker (GF4-BATCH14, 3 Oct 2026, page images + Gallica ContentSearch full text): p. 268 no. 2047, Lorenzi to Montaigu, Florence, 11 Jan 1744 -- the letter around f.206 -- quotes only its clear opening ("On m'assure que le motif du voyage de M. le duc de Modene ... a tous egards..."); the ciphered passage and Rousseau's decipherment of it are not printed.
 
 ## M21 — BnF NAF 14913 (Papiers Montaigu), Jean-Jacques Rousseau's decipherments, f.206/214/217/250/274
 
@@ -225,3 +226,61 @@ runner), open since 26 Sept 2026 -- the JPASS credentials are reported in hand p
 - S: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books/archive.org be-api -- only tried on JSTOR so far.
 - M: fetch and read the four unviewed Gallica folios (f.214, f.217, f.250, f.274) via IIIF, the same free no-login route already used for f.206r -- tools/gallica_folio.py + tools/iiif_lines.py.
 - S: full-text search Souchon 1915 (Gallica ark bpt6k935116v) inside the volume for the 1743-44 passage; only its catalogue entry has been checked so far, not the text itself.
+
+## Web and blog check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `Rousseau Montaigu Venise 1743 1744 déchiffrement "14913"` -- Hatzenberger 2015 (Cairn),
+Larousse, Wikipedia chronology, BnF Editions "La Musique a Venise", Wikisource *Démêlés du comte de Montaigu*, rousseau-chronologie.com;
+none prints a NAF 14913 decipherment; (2) `Rousseau secrétaire Montaigu déchiffrement dépêches chiffre Venise manuscrit BnF` --
+the BnF finding aid NAF 14904-14937 (cc7393f), Cairn, Confessions VII on Wikisource (Rousseau's own "en moins de huit jours j'eus
+dechiffre le tout"); (3) phrase `"venitiens en faveur de la Reine de Hongrie"` -- no hit for this text; (4) `Rousseau cipher
+Venice Montaigu secretary deciphered dispatches` -- Confessions VII translations, generic Venetian-cryptology pages;
+(5) model-solve query `Rousseau Venice cipher deciphered solves Claude OR GPT` -- only Cyphral Distich and Napoleon-letter news.
+Blog site search: `Rousseau Montaigu chiffre site:scienceblogs.de OR site:ciphermysteries.com OR site:cryptiana.blogspot.com` --
+no post on any of the three (Cipherbrain, Cipher Mysteries, Cryptiana) about this item; no comment thread to open.
+Phrase searches on f.206's own text (Google Books API, key + country=US): `"en faveur de la Reine de Hongrie et particulièrement"`,
+`"attachés aux intérêts de cette princesse"`, `"sous main des provisions"` -- no hit for this passage (the last finds only an
+unrelated 1743 periodical, *Le Persan en Empire*, on Lobkowitz). Gallica ContentSearch inside Souchon 1915 for
+`"attachés aux intérêts de cette princesse"`: 0. Pleiade *Oeuvres completes* III (1964, Google Books ORkFJd3jMloC, NO_PAGES):
+snippets show Rousseau's own outgoing despatches (23 May 1744 to Du Theil, "Lobkowitz ... faute de provisions"), a different text.
+Cabinet Noir (el-descifrador/cabinet-noir HEAD 47b6db9, CC BY 4.0) grep for 14913, rousseau, montaigu: nothing.
+
+## Premise check (GF4-BATCH14, account-4, 3 Oct 2026)
+
+(a) **Folder's own mentions -- FOUND: the item carries its own period decipherment.** The finding aid (Thomas 1969 p.149) and
+the 24 Sept view of f.206r already say the five folios are Rousseau's *decipherments*. This pass looked at the leaves either
+side: Gallica btv1b525174513 view 424 (**f.205v**) is a clear letter (Duc de Modene at Venice, the Masse succession, M. de
+l'Hopital's Constantinople news) that ends in **numeral cipher groups** ("les idees des 648.326.722.154.444.303.67.66.22.31.");
+view 427 (**f.207r**) opens with four more lines of numerals ("22.628.601.715.247.22.299 ...") before the clear text resumes
+(Prince Charles of Lorraine's wedding feast "le 7", M. Viale's memoire to the Regency). View 425 (**f.206r**) is the small slip
+in Rousseau's hand bound between them: "[...] venitiens en faveur de la Reine de Hongrie et particulierement de ceux les plus
+attaches aux interets de cette princesse et qu'ils auroient tout au plus continue de donner sous main des provisions a l'armee
+de M. le Prince de Lobkowitz." Its first word picks up the cipher's lead-in "les idees des" -- so f.206 is the period
+decipherment of the numeral passage on ff.205v/207r (reading of the fit: grade I, from position and sense; no group-level
+check run). Souchon p.268 identifies the letter as **no. 2047, Lorenzi, Florence, 11 Jan 1744**. **Correction to the 24 Sept
+entry above** ("no ciphertext survives on the folios examined"): ciphertext does survive, on the leaves around the slip.
+(b) **Other solvers' working files -- not found.** Bourdeau and Aymeloglu (24 Sept clones): no hit; Cabinet Noir: none.
+(c) **Physical neighbours -- found, see (a).** Views 424-427 viewed at 600 px (enough to tell clear from cipher and to read the
+slip); view 426 (f.206v) blank. Ff.214, 217, 250, 274 not viewed this pass.
+(d) **Recipient's side -- partly checked.** Souchon 1915 is the recipient-side edition (letters *to* Montaigu): p.257 opens
+NAF 14913's Constantinople letters (nos. 1972-2029), pp.267-275 the Florence letters (Lorenzi); p.268 prints no. 2047's clear
+opening only. Leigh's *Correspondance complete* (Rousseau's own letters; not online, copyrighted) not checked -- the incoming
+Lorenzi letter is not Rousseau's, so it is an unlikely home for it; Hatzenberger 2015 still unread (ASKS 76).
+
+**Consequence (for the parent):** what the premise check describes is a cipher passage with a period decipherment bound beside it,
+not an unread cipher. Nothing printed of the deciphered text was found (Souchon p.268, phrase searches), so this is not
+`found-solved` under the brief's printed-or-posted test, and the status word stays **`open`** -- but it is a **calibration /
+key-recovery item** (a period plaintext against a numeral code, the Lorenzi-Montaigu cipher of 1744), never a cryptanalysis target.
+No novelty implied (rule 10).
+
+Requests this pass: gallica.bnf.fr 26 (19 ContentSearch on Souchon, 1 NAF 14913 manifest, 4 NAF 14913 IIIF images, 2 Souchon
+page images); googleapis.com/books 9; WebSearch 6. All >=1.5 s apart per host.
+
+## While waiting
+
+Next step that depends on nobody: view ff.214, 217, 250, 274 and their facing leaves (Gallica btv1b525174513, IIIF, free) to
+list which Lorenzi/Castellane cipher passages each Rousseau slip renders, and match them to Souchon's numbers (pp.257-275);
+about $0.5, image check only, no transcription. (The JSTOR reread of Hatzenberger 2015, ASKS 76, and LOCAL-QUEUE L25 stay
+where they are.)
+
+Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` -> "naf14913-rousseau-venice-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no standard-edition citation). `python3 tools/next_steps.py --wait-only | grep naf14913-rousseau-venice-1743` -> no line.
