@@ -1392,3 +1392,15 @@ held-out no.87 lines choose lam 4; the printed 1572 key beats all 218 same-desig
 gate also passes on 4 of 5 position-shuffled f.117r lattices, so it is weak on its own); rank 1 of 201 value-shuffled keys
 at every lam 1-8 (z 3.28-3.66); judge FAIL -1.081 (real_p05 -0.903; shuffled-target decode -1.382). **Verdict: lam-4 rank 1
 survives held-out control.** No reading committed, S at best, no class.
+
+## A1-POSNULL (3 Oct 2026, account-1 worker for LANE-A1): position-shuffled-lattice null for the printed 1572 key at lam 4
+Brief `.claude/briefs/runs/2026-10-03-acct3-a1-wave7.md` job 1; PREREG `../nevers-birago-fr3251-1572/harvest/tx_decode/posnull/PREREG.md` (d05de564, before
+any score); results `posnull/RESULTS.md`, `posnull.json`. Replaces TXD-HOLDOUT's gate (a), which passed on 9/15 shuffled lattices.
+200 position-shuffled lattices per leaf (same per-position candidate sets, positions permuted), printed key, lam 4. Gate: real
+rank 1/201 among value-shuffled keys AND real score > shuffled p95.
+- f.144r: real -0.945 vs shuffled p95 -1.096 (max -0.956); rank 1; shuffled rank-1 2/200. **PASS** (thin: 0.011 over max).
+- f.168: real -1.019 vs shuffled p95 -1.299 (max -1.209); rank 1; shuffled rank-1 0/200. **PASS.**
+- f.117r (fr.3252): real -1.081 vs shuffled p95 -1.334 (max -1.297); rank 1; shuffled rank-1 0/200. **PASS.**
+Licenses only that the real sign order carries the key's language signal beyond the position-shuffled null; no reading, no
+grade change (a separate verifier would be needed), nothing above S, no class. Next as before: the verifier pass on the lam-4
+changed positions against the crops (~$2 each).
