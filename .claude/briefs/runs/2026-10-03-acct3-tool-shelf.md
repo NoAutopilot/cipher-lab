@@ -3,7 +3,11 @@
 Owner, 3 Oct 2026: "anything else we built that'd be helpful?" Audit found shared tools never used on the targets they
 fit (tools/glyph_atlas.py on Birago/Florence; tools/seg_homophonic.py, tools/key_crossmatch.py, tools/cipher_page_detector.py
 on the Birago numerical system). Model Opus 5.5. Cap USD 6, box 50 min. Disk only: vision calls: 0 x USD 1.5 = 0.
-(1) Add a "Tool shelf" table to SYSTEM.md (or extend its tools table): one row per tools/*.py|js with a "use when"
+Owner, same day: "just because these exist doesn't mean they're good." The shelf records evidence, not existence:
+per tool, its best known-answer or control result on file (cite the NOTES/HYPOTHESES line), its last outcome, and a
+grade -- proven (passed a known-answer test on real material), controlled-only (synthetic control only), untested, or
+retired (rule 3 third-attempt) -- and tool_shelf.py prints the grade first; an untested tool is offered with "run its
+known-answer check before trusting it". (1) Add a "Tool shelf" table to SYSTEM.md (or extend its tools table): one row per tools/*.py|js with a "use when"
 column phrased as the problem a briefer has (e.g. "unseparated digit cipher, no key" -> seg_homophonic.py; "a key on
 disk might read another ciphertext" -> key_crossmatch.py; "find cipher pages in a whole volume" -> cipher_page_detector.py;
 "leaf with a clerk's plaintext" -> decode_witness.py / interlinear_align.py; "sign shapes unsettled" -> glyph_atlas.py,

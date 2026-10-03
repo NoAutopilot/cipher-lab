@@ -195,6 +195,15 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
+## Usage register (owner, 3 Oct 2026, about 04:1x UTC)
+
+At every check-in, after reading get_session on yourself, post your account's rate-limit reading:
+`python3 tools/account_usage.py --post <account number> --status <rate_limit_info.status> --type <rateLimitType>
+--resets <resetsAt> --session-cost <usage.cost_usd> --live <your live workers>`, then commit USAGE.tsv with your
+check-in. A lane orchestrator does the same at each wake. `python3 tools/account_usage.py` (or the owner's
+`cipher-lab-usage` mod, tools/mods/cipher-lab-usage, `/usage`) then shows every account side by side: live workers
+from ROOM.md, archived-worker spend from LEDGER.md, and the latest rate-limit reading from USAGE.tsv.
+
 ## Transcription standard (owner, 3 Oct 2026, about 03:4x UTC)
 
 Every parent briefs transcription to `TRANSCRIPTION.md`: a transcription job reports err_true (benchmark item named) or
