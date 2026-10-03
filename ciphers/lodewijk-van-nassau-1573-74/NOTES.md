@@ -3387,7 +3387,7 @@ Read so far: 2317 of 4032 cipher tokens in the four target letters (57.5%), coun
 - 4612 cipher body (833 numerals 1-120 in ciphertext_4612_v3.tsv, plus 154 clear-word '?' rows) - blocker: not-attempted; under key_full the French-word share is 70.7%, above the shuffle max 60.6% but below the 79.2% gate (5811 control 93.2%), the fr16 judge FAILs both 4612 and the 5811 control, the anneal control reached 0.699 against 0.90 (AX2-4612, HYPOTHESES.md), tools/key_repair.py is retired for H-S after three CONTROL BELOW GATE runs (AX2-4612S/S2/S3), the key_5799 and key_5801 tests were non-tests (AX-5799, AX2-5801), and AX-4612's family_run.py negatives used the superseded 47.8% transcription; key_1572 (KEY-OFFICES.tsv row 34) was applied 2 Oct 2026 (NEXT-LVN, this file) and does not read it: 26.7% French-word share against a 28.6% shuffle max and a 73.9% bar from 5200 cut to N=833 (86.9%, shuffle max 54.8%), and only 37.9% of its numerals fall on a multiple of 3 against 5200's 64.7%; key_nepveu covers too little to test (29.5%); the word-level global reassignment seeded from key_full and scored by fr16 word segmentation (AX2-4612S3's named step) was run 3 Oct 2026 (GAPS43, this file, gaps43/, pre-registered 918c0056): control gate FAILED, recovery 0.046/0.062/0.054 against 0.90 per seed (starts 0.77-0.88), the null start from unperturbed key_full also fell to 0.060; the true key costs 52.8 against the anneal's 17.6-18.1 optimum (word share 0.998, chains of short fr16 words), so the objective's optimum is the wrong key; target not run, untested-by-this-tool, and re-tuning the same segmentation cost (min word length, per-word cost) would be the same instrument; next: a global anneal under a word-frequency language model (fr16 word-unigram log-probability with a per-character out-of-vocabulary cost, a different objective), admitted only after the pre-check that key_full scores better than its own null-start optimum on the 5811 cut, then the same 20%-perturbed >=0.90 gate, ~$4
 - 5797 p5_spot5, code 173 -- settled for list A, 2 Oct 2026 (A2-LVN, this file): 173 = graf at H from the 5550 p2-5 period gloss tail read at 300 dpi ("vnd" for 90.1.79, "graf" written whole and placed on 173 by elimination; spatially the gloss sits about one code left of the run, VERIFY-LVN-173), applied to 5797 only through exceptions_5797.tsv (reading_5797_full: H 2->3, U 11->10, --check up to date); 5810's sign is M, 173 or 113 (113 = l fills Groen's "laquelle"), so it is not a list-B null observation; 5801's 173 x2 stays key_5801 'q' M (HYPOTHESES.md "Code 173, graded per direction"); the spot's 123 stays dual l/NULL M - blocker: open-codes (list B has no settled value for 173 and needs none for the target letters; 4610/4611/4612/4616 do not contain 173); remaining for the spot: none beyond 123's dual reading, which is gap 1's band test
 - 5797 p6_spot4 (172), p7_spot6 (182), p8_spot7 (156) - blocker: open-codes; 172 has three conflicting period witnesses, le Conte Jean (4614), Lumbres (7206) and le conte Louis (5801 gloss), so AUDIT.md A4 withdrew the spot (HYPOTHESES.md "Key conflict: code 172"); 182 occurs only at 4610 p2_L02 (M) and once in 7205, where key_7205 'y' and key_5801 'i' are unconstrained aligner guesses (AX-COMP2); 156 occurs nowhere else in the 16 ciphertext files (AX2-BLANKS, ax2_blanks/contexts.tsv); none of the three occurs in the j6 sibling transcriptions 5803/5804/5805/5810/5812 (counted 2 Oct 2026)
-- 5797 spot 1, the p.222 garbled paragraph ([Phit]/[testgu]) - blocker: not-attempted; only its opening anchor "Soviel den secours" was located (p3_spot1_open, AX-5797) and the garbled interior never was (AUDIT.md V8.1 table); next: render 05797.pdf pp.3-4 at 300 dpi, cut crops with tools/iiif_lines.py --image, run two blind passes per page plus one reconciliation (5 calls), then align to the fragments Groen prints on p.222, ~$8
+- 5797 spot 1, the p.222 garbled paragraph ([Phit]/[testgu]) - blocker: open-codes; transcribed and decoded 3 Oct 2026 (A2P4-LVN97, this file, spot1/): pp.3-4 at 300 dpi, 23 crop lines, 2 blind passes + 1 reconciliation, 239 code tokens (H 4, C 155, M 45, I 16, U 19; decode_key --check up to date); pre-registered in-order gate (7d636fe2) FAILED on A (0.171 vs 0.50) while B beat both controls (0.355 vs shuffle p95 0.161, other paragraphs <= 0.032), so nothing in the interior is licensed beyond the transcription; by eye the decode runs with Groen (nemlich Dateno, begert, Phit, haupter, ziffer, konne, insel, bringen) and puts 173 before each of Groen's three subject-less verbs; unread codes 227, 254 (Groen prints it 'Grönningen' on p4_L02 and 'Bergen op Zoom' on p4_L18), 142, 148 and 339 (key 'harquebouziers' vs Groen's 'schlachtordnung'); next: one clear-word pass normalised to Groen's spelling (E.G., balt, darzu) and a fresh pre-registration scoring cipher units only, the PX-BRODEC convention fix (attempt 2 of this instrument), ~$3
 
 ## Escalation (2 Oct 2026)
 - [ ] siblings: opened 4613/4615 (key source, R18), 4614 (AX-COMP), 7205 (AX-COMP2), 7206 (AX2-BLANKS), 5801+11250 (AX2-5801, AX2-5801ADJ), the glosses on 4496/5550/5552/5557 (AX-GLOSS, AX-NAMES); aligned the Groen-printed 5810/5811/4503/5799 (W1, AX-NAMES, AX-5799); 5194 is printed whole (Groen III CCCLXIX, sources/wvo/groen-check-2026-09-24.tsv); DECODE has no record (check-solved item 4). Planned: transcribe 7208 (Orange to Lodewijk, Vlissingen, 21 Feb 1574, cipher pp.1-3 "Duplicata", WVO "solved on leaf", same-date clear letter on p5, AX-GLOSS), the letter 4612 says it answers ("vostre lettre du xxime de febvrier", NOTES.md check-solved incipits; date match inferred, not checked), as a topical crib for gap 4 and a test of whether p5 is its clear copy, ~$12. 5803/5804's partial contemporary interlinear glosses (../jan-van-nassau-1572-75/NOTES.md J6) are unread but are list-B and carry almost none of this target's open codes (3 band tokens, 184 and 254 once each), so they are not the next step.
@@ -3395,9 +3395,9 @@ Read so far: 2317 of 4032 cipher tokens in the four target letters (57.5%), coun
 - [x] known-keys: tried key.tsv, key_full v3, key_5799, key_5801 and key_4614/7205/7206; 5799 uses a different table (W1 0/146, AX-5799); 4610/4611/4616/5797/5810/5811/4503/4614/7205/5801 use key_full's table (table_check 1.000). key_1572 (KEY-OFFICES.tsv row 34, Jan van Nassau and Orange, 1572) applied to 4612 v3 on 2 Oct 2026 (NEXT-LVN): does not read (26.7% vs shuffle max 28.6%, control 5200 86.9%); key_nepveu (row 37) puts only 29.5% of 4612's numerals on a keyed code, too little to test; key_5549 (row 35) is Lodewijk's 1574 table again. Cryptiana and the solver repositories hold no key for this circle (check-solved items 3, 5). No other key of this office or decade is on file.
 - [x] print: searched (AUDIT.md section 1, A1, D1, V5, V8, V-GATE2): Groen III-V and the Supplement by date and full text, Gachard, Kervyn, Blok 1887/1889, La Huguerye, the KHA inventory, WVO, Google Books, IA full text, OpenAlex/S2, JSTOR rows 52-54, 60 and 87-92. No prior decipherment of 4610/4611/4612/4616 was located. Orange's replies to 4610/4611/4616 are printed (CDXXVII, CDXXXIII, CDLXXXIV), none was located for 4612; 5797, 5799, 5801, 5810, 5811 and 4503 are printed in Groen IV.
 - [ ] key-rebuild: done for names and for nulls 121-138 (AX-NAMES/NAMES2 Groen alignment with the class-b gate, AX-GLOSS H values for 192/221, AX-MERGE/MERGE3 conflict gate); U in 4610/4611/4616 fell from 541 to 310. For 4612 under H-S, tools/key_repair.py is retired after three CONTROL BELOW GATE runs (AX2-4612S/S2/S3), and the char-order-3 key-seeded anneal failed its control once (0.699, a 150000-iteration recheck 0.786, gate 0.90). The fr16 char-LM NULL-vs-letter test for the band was run 2 Oct 2026 (A2-LVN3): known-answer gate FAIL (NULL 1.000, letter 0.462, gate 0.80 per class), band untested-by-this-tool. The fr16 word-segmentation NULL-vs-letter score was run 3 Oct 2026 (GAPS28): gate PASS but band calls contradict 5810's C print observations on 5 of 6 codes, nothing applied. The 5811/5810 band-token print alignment with tools/interlinear_align.py was run 3 Oct 2026 (GAPS31): known-answer gate FAIL (letter class 0.615, false-empty 0.330), nothing applied. The blind local-window reading of the 5810/5811 band occurrences against print was run 3 Oct 2026 (GAPS33): gate PASS (0.840/0.960, q 0), but no code reached >= 4 NULL with 0 letter calls, nothing applied. The same reading on the 6 dropped occurrences, print hand-located, was run 3 Oct 2026 (GAPS39): fresh 6+6 control gate FAIL (letter 4/6), nothing applied; 139/149 print material exhausted, step [retired] for 139/149 on this material. The word-segmentation global reassignment for 4612 was run 3 Oct 2026 (GAPS43): control gate FAIL (0.046-0.062 vs 0.90; true key costs 52.8 vs the degenerate 17.6 optimum), target not run, untested-by-this-tool. Planned: a word-unigram-LM global anneal for 4612 behind a null-start pre-check (gap 4, ~$4). The reply-window fit for name codes against Orange's printed replies (gap 2) was run 2 Oct 2026 (A2-LVN4): known-answer gate FAIL (0 of 8 hits, 1 wrong), [retired] for that tool.
-- [ ] image-check: done for 4612 (300-dpi re-render, all 32 numeral disagreements settled, AX-4612TR2, AX2-4612), the 5550 p2-5 gloss tail and 5810 p1_L40's 173/113 sign at 300 dpi (A2-LVN, 2 Oct 2026: 173 = graf H list A; 5810 sign M), 7205 digits (AX-COMP2), 172 by eye (AX2-172), the 4611 p2_L36 footer (R20 override) and the 5797 spots in two passes (AX-5797); 5811 stalled at 150 dpi (W2) but is printed. Planned: a 300-dpi settle of 4610/4611/4616's M rows and 4616's 19 split groups (gap 3, ~$14) and of 5797 pp.3-4 (gap 7, ~$8).
+- [ ] image-check: done for 4612 (300-dpi re-render, all 32 numeral disagreements settled, AX-4612TR2, AX2-4612), the 5550 p2-5 gloss tail and 5810 p1_L40's 173/113 sign at 300 dpi (A2-LVN, 2 Oct 2026: 173 = graf H list A; 5810 sign M), 7205 digits (AX-COMP2), 172 by eye (AX2-172), the 4611 p2_L36 footer (R20 override) and the 5797 spots in two passes (AX-5797); 5811 stalled at 150 dpi (W2) but is printed. Planned: a 300-dpi settle of 4610/4611/4616's M rows and 4616's 19 split groups (gap 3, ~$14) 5797 pp.3-4 done 3 Oct 2026 (A2P4-LVN97, spot1/, gate FAIL on A, see gap 7).
 - [x] retry: readings regenerated and regraded under key_full v1, v2 and v3 (AX-NAMES2, AX-MERGE, AX-MERGE3); fresh re-derivations byte-identical (AX-REDERIV, AX-REDERIV2); U in 4610/4611/4616 fell from 541 to 310. Rerun after gaps 1, 3 and 4.
-Verdict: keep going: 7 internal gaps (gap 1 band: char-LM A2-LVN3 gate FAIL; word segmentation GAPS28 PASS but contradicted by print; print alignment GAPS31 gate FAIL; local-window reading GAPS33 gate PASS, 139/149 NULL x3; GAPS39 hand-located dropped occurrences, 3 Oct 2026, gate FAIL (C letter 4/6), 149 NULL 4/4 across both runs, 139 'n' conflict; 139/149 print material exhausted, open-codes until new material; gap 2 reply-window fit A2-LVN4 gate FAIL); gap 4 word-segmentation global reassignment GAPS43, 3 Oct 2026, control gate FAIL 0.046-0.062 vs 0.90, objective degenerate (true key 52.8 vs optimum 17.6), target not run); cheapest next: a global anneal for 4612 under an fr16 word-unigram log-probability objective, admitted only after key_full beats its own null-start optimum on the 5811 cut, then the 20%-perturbed >= 0.90 gate (gap 4), ~$4
+Verdict: keep going: 7 internal gaps (gap 1 band: char-LM A2-LVN3 gate FAIL; word segmentation GAPS28 PASS but contradicted by print; print alignment GAPS31 gate FAIL; local-window reading GAPS33 gate PASS, 139/149 NULL x3; GAPS39 hand-located dropped occurrences, 3 Oct 2026, gate FAIL (C letter 4/6), 149 NULL 4/4 across both runs, 139 'n' conflict; 139/149 print material exhausted, open-codes until new material; gap 2 reply-window fit A2-LVN4 gate FAIL); gap 4 word-segmentation global reassignment GAPS43, 3 Oct 2026, control gate FAIL 0.046-0.062 vs 0.90, objective degenerate (true key 52.8 vs optimum 17.6), target not run); gap 7 spot-1 in-order alignment A2P4-LVN97, 3 Oct 2026, gate FAIL on A 0.171 (B 0.355 beat shuffle p95 0.161 and other paragraphs 0.032), next a Groen-normalised clear-word pass ~$3; cheapest next: a global anneal for 4612 under an fr16 word-unigram log-probability objective, admitted only after key_full beats its own null-start optimum on the 5811 cut, then the 20%-perturbed >= 0.90 gate (gap 4), ~$4
 
 ## Intake gate, 2 Oct 2026 20:5x UTC (A2-LVN, account 2, LANE-A2PUSH) -- step not run
 
@@ -3597,3 +3597,81 @@ sollicité ... pour rapaiser les choses du Pais-Bas". So 186/194 may name prince
 prince, so nothing can be assigned. (3) CDLXXXIV's places (Tiel, Wamel, Varik, Gorinchem) have no match in 4616: its only
 name code, 313 x2, sits in lines full of unsegmented digit groups (gap 3), and no context is readable enough to test.
 Requests: www.dbnl.org 4 (2 kept). Vision: 0 calls. Subagents: 0.
+
+## A2P4-LVN97: 5797 spot 1, the Groen p.222 paragraph (3 Oct 2026, 17:17-17:28 UTC, account 2, LANE-A2PUSH4) -- gate FAIL
+
+Intake gate first, `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74`, exit 0:
+
+    lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+The gap-7 step only. 05797.pdf fetched once (resources.huygens.knaw.nl, 1 request, scratchpad only), pp.3-4 rendered at
+300 dpi with pdftoppm. Crops, pasted before any vision call:
+
+    python3 tools/iiif_lines.py --image <scratch>/05797_p3_300.png --out ciphers/lodewijk-van-nassau-1573-74/spot1/crops --region 420,1880,1980,760 --prefix p3 --debug
+      -> 8 lines, pitch 93
+    python3 tools/iiif_lines.py --image <scratch>/05797_p4_300.png --out ciphers/lodewijk-van-nassau-1573-74/spot1/crops --region 420,200,2000,1900 --prefix p4 --debug
+      -> 20 lines, pitch 92
+
+**Where the paragraph sits.** Groen's paragraph ("werden E.G. nhumehr ... nemlich Dateno. Wir seint resolvirt ... bringen.")
+runs from p3_L02 (the clear tail after AX-5797's "secours"/"entrepr" clusters) to p4_L20. The garbled stretch Groen
+brackets ("begert das uff dert mögen. [Phit] ... vol ssen ... 11 haupter ... meinung ist, die schlachtordnung ...") is
+p4_L10-L20. The p3_L01-L02 clusters were already in ciphertext_5797.tsv (p3_spot1_open) and are not repeated.
+
+**Transcription** (TRANSCRIPTION.md). Two blind Sonnet passes per page, given crop paths only: p3_L06-L08 and p4_L01-L18
+(spot1/passA.tsv, passB.tsv). tools/reconcile_passes.py: 272/311 signs agree (87.5%), 39 columns differ, only 2 of
+them on codes. The p.3 crops handed to the passes began at L06, so p3_L03-L05 and p4_L19-L20 had no pass. The fifth call
+(the reconciliation) settled the 6 code queries and blind-read those five lines (spot1/passR_extra.tsv). I read the same
+five lines as the second pass (spot1/passM_extra.tsv). Codes agree on all of p3_L03-L05. On p4_L19 my "lb"/"6i ch" vs
+its "16"/"61 ich" was settled at 2x zoom as 16, 61 + attached "ch" (M). One reconciler call overruled: it read the
+dotted "ııı" strokes as Roman 3, but p3_L04's "120.111.103" = m l i inside Groen's "nemlich" shows this hand writes code
+111 that way. So p4_L06 and p4_L12 take 111 (M) and p4_L14's "ii" takes code 11 = p (M; Groen's "haupter"). p4_L13's
+barred "II" is clear Roman 11 (Groen "darzu 11 haupter"). p4_L10's barred V is recorded as an unread sign "?" (L).
+Result: spot1/ciphertext_spot1.tsv, 386 rows, 239 of them code tokens. Signs read: 311 x 2 passes + 75 x 2 + 6 settled.
+Vision: 5 Sonnet subagent calls (about 478k subagent tokens in all) plus 5 crops and one zoom read by eye in this
+session. Cost per 100 signs: the orchestrator reads the session cost; at the brief's USD 1.5-per-call rate it is about
+USD 7.5 / 386 signs = USD 1.9 per 100.
+
+**Decode** (rule 7): `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74 --config spot1/decode_spot1.json --check`
+gives "reading up to date". key_full.tsv v3, with clear prefix w:. spot1/exceptions_spot1.tsv carries code 173 = graf at H
+at its three positions: list A, the same letter and grounds as exceptions_5797.tsv. **Tokens 239: H 4, C 155, M 45, I 16,
+U 19** (rule 4; no S, no claimed reading beyond the key's grades).
+
+**Gate** (spot1/prereg.md, committed 7d636fe2 before any pass; spot1/align_spot1.py, output spot1/gate.tsv and spot1/units.tsv):
+
+| reference | A (Groen fragment words reproduced in order) | B (cipher units matched) |
+|---|---|---|
+| target, Groen p.222 paragraph (N=160 words, F=82) | **0.171** | **0.355** (11/31) |
+| (s) 200 word-shuffles of the same paragraph | mean 0.030 | mean 0.128, p95 0.161, max 0.226 |
+| (d1) "Die schwere last..." | 0.000 | 0.000 |
+| (d2) "Von zeittungen..." | 0.007 | 0.032 |
+| (d3) "Es lest sich..." | 0.007 | 0.032 |
+
+Gate: A >= 0.50 **fail**; B >= p95(s) + 0.15 pass (0.355 vs 0.311); B >= max(d) + 0.15 pass (0.355 vs 0.182) -> **FAIL**.
+Nothing in the interior is licensed beyond the transcription.
+**Diagnostic, after the gate and changing nothing.** Two causes keep A low. (1) F counts as "fragment words" every
+Groen word the passes' clear words missed, and the passes' clear words are often not in Groen's spelling: "e.f.g." for
+E.G., "halt" for balt, "dazu" for darzu. Rule 3 calls this the PX-BRODEC shape: the two
+renderings follow different conventions. (2) Cipher units that join codes and clear fragments ("58.35 pf 21.81.104 ben")
+miss the 0.75 threshold although they spell the word. Fixing either one now would be scoring after seeing the result, so
+neither is applied here.
+
+**What the decode shows, by eye, not licensed by the gate (all graded as decode_key gives them):**
+- "nemlich Dateno" = 2.139.81.120.111.103 ch 129.147.80.61.33.82.3.7 -> n?e mli ch [NULL][?] d a t e n o.
+- "resolvirt alsbalt" = 22.139.83.40.9.113 u 122.104.24.34 128.65.115.26.70.61.111.35 -> r?euol u irt / alsbalt.
+- 173 (graf, H list A) stands before all three of Groen's subject-less verbs in the paragraph: "wirdt [173] mit bruder"
+  (p4_L05), "[173] begert" (p4_L10, 173.121.67.81.92.82.22.32 = graf NULL b e g e r t), "[173] meinung ist" (p4_L18).
+  Groen prints "begert" and "meinung ist" with no subject, and leaves the word out of "wirdt mit bruder".
+- Groen's "uff dert" = 40.90.87 (u f f) + 136 (key 'uingt', dual l/uingt M) + 227 (no key row) + barred V + 30.3.80.83.23.33
+  (s n d e r t) + 133 (NULL) + 339 (key 'harquebouziers'). So he kept "uff" and the tail "-dert" and dropped the rest.
+- [Phit] = 13.97.101 + clear t = p h i t, Groen's own conjecture letter for letter.
+- "vol ssen" = 36.9.111.142.100.88.26.27.81.1 -> u o l [142 U] h f s s e n.
+- "11 haupter" = II (clear) ha + 135.39.11.31 + tr -> ha [NULL] u p t er.
+- "ziffer" = 60.101.90 fr -> z i f + fr; "zuschreiben könne" = 58.35 [schr/pf] 21.81.104 [ben] 127.108.10.1.2.81.125 ->
+  zu .. rei .. [NULL] k o n n e [125 U].
+- "die schlachtordnung" = 339 = key 'harquebouziers' (the same code three lines up). Groen's word is a conjecture that the key does not
+  support. "Bergen op Zoom" = 254 after 37.87 (u f). Groen prints 254 as "Grönningen" on p4_L02 ("mit Grönningen"), so 254
+  carries two different printed values in one letter. That is a conflict to log, not to settle (rule 4, AX2-172).
+- "Scholbich(?)" = 26 ch 8 16 123 61 ch -> s ch o q l a ch (16 'q' and 61 at M). "insel" = 105.5.27.85.136 -> i n s e +
+  136, which needs 136 = l at this position (136's l/uingt dual stands). "bringen" = 69.24.102.3 gen -> b r i n gen.
+Not done (outside the brief): the 254 conflict was not entered in HYPOTHESES.md as a key conflict row, and Groen's [testgu]
+(next paragraph, p4_L21-L23) was not transcribed. Requests: resources.huygens.knaw.nl 1. Subagents: 5 (Sonnet).

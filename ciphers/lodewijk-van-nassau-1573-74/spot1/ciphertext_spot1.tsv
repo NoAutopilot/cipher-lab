@@ -1,0 +1,387 @@
+line	position	sign	confidence	why
+p3_L03	1	w:der	M	clear word, passM
+p3_L03	2	w:bekanten	M	clear word, passM
+p3_L03	3	w:persohn	M	clear word, passM
+p3_L03	4	w:allen	M	clear word, passM
+p3_L03	5	w:bericht	M	clear word, passM
+p3_L03	6	w:haben	M	clear word, passM
+p3_L03	7	w:entfangen	M	clear word, passM
+p3_L03	8	2	H	passM+passR agree
+p3_L03	9	139	H	passM+passR agree
+p3_L03	10	81	H	passM+passR agree
+p3_L04	1	120	H	passM+passR agree
+p3_L04	2	111	H	passM+passR agree
+p3_L04	3	103	H	passM+passR agree
+p3_L04	4	w:~ch	M	clear word, passM
+p3_L04	5	129	H	passM+passR agree
+p3_L04	6	147	H	passM+passR agree
+p3_L04	7	80	H	passM+passR agree
+p3_L04	8	61	H	passM+passR agree
+p3_L04	9	33	H	passM+passR agree
+p3_L04	10	82	H	passM+passR agree
+p3_L04	11	3	H	passM+passR agree
+p3_L04	12	7	H	passM+passR agree
+p3_L04	13	144	H	passM+passR agree
+p3_L04	14	133	H	passM+passR agree
+p3_L05	1	w:wir	M	clear word, passM
+p3_L05	2	w:seint	M	clear word, passM
+p3_L05	3	22	H	passM+passR agree
+p3_L05	4	139	H	passM+passR agree
+p3_L05	5	83	H	passM+passR agree
+p3_L05	6	40	H	passM+passR agree
+p3_L05	7	9	H	passM+passR agree
+p3_L05	8	113	H	passM+passR agree
+p3_L05	9	w:~u	M	passM 'u' attached; passR '?'
+p3_L05	10	122	H	passM+passR agree
+p3_L05	11	104	H	passM+passR agree
+p3_L05	12	24	H	passM+passR agree
+p3_L05	13	34	H	passM+passR agree
+p3_L05	14	128	H	passM+passR agree
+p3_L05	15	65	H	passM+passR agree
+p3_L05	16	115	H	passM+passR agree
+p3_L05	17	26	H	passM+passR agree
+p3_L05	18	70	H	passM+passR agree
+p3_L05	19	61	H	passM+passR agree
+p3_L05	20	111	H	passM+passR agree
+p3_L05	21	35	H	passM+passR agree
+p3_L06	1	w:daß	M	differ
+p3_L06	2	135	H	agree
+p3_L06	3	350	M	agree-flagged
+p3_L06	4	w:da	M	agree-flagged
+p3_L06	5	21	M	agree-flagged
+p3_L06	6	39	M	agree-flagged
+p3_L06	7	88	M	agree-flagged
+p3_L06	8	148	H	agree
+p3_L06	9	w:mog	M	differ
+p3_L06	10	w:alle	M	agree-flagged
+p3_L06	11	w:stund	M	agree-flagged
+p3_L06	12	123	H	agree
+p3_L06	13	61	M	agree-flagged
+p3_L06	14	114	H	agree
+p3_L06	15	w:~s	L	agree-flagged
+p3_L06	16	130	H	agree
+p3_L06	17	102	M	agree-flagged
+p3_L07	1	w:e	M	differ
+p3_L07	2	147	H	agree
+p3_L07	3	100	H	agree
+p3_L07	4	w:b	M	agree-flagged
+p3_L07	5	90	H	agree
+p3_L07	6	89	M	agree-flagged
+p3_L07	7	w:en	M	agree-flagged
+p3_L07	8	127	H	agree
+p3_L07	9	w:vnnd	M	differ
+p3_L07	10	w:demselbigen	M	agree-flagged
+p3_L07	11	w:albreit	M	agree-flagged
+p3_L07	12	w:auch	M	agree-flagged
+p3_L07	13	113	M	agree-flagged
+p3_L07	14	81	H	agree
+p3_L07	15	40	H	agree
+p3_L08	1	w:t	M	differ
+p3_L08	2	149	H	agree
+p3_L08	3	138	M	agree-flagged
+p3_L08	4	w:vnd	M	agree-flagged
+p3_L08	5	60	H	agree
+p3_L08	6	61	M	agree-flagged
+p3_L08	7	91	M	agree-flagged
+p3_L08	8	81	M	agree-flagged
+p3_L08	9	w:i	L	agree-flagged
+p3_L08	10	121	M	agree-flagged
+p3_L08	11	82	M	agree-flagged
+p3_L08	12	2	M	agree-flagged
+p3_L08	13	32	M	agree-flagged
+p3_L08	14	92	M	agree-flagged
+p3_L08	15	83	M	agree-flagged
+p3_L08	16	93	M	agree-flagged
+p3_L08	17	84	M	agree-flagged
+p3_L08	18	4	M	agree-flagged
+p3_L08	19	128	M	agree-flagged
+p3_L08	20	94	M	agree-flagged
+p3_L08	21	85	M	agree-flagged
+p3_L08	22	w:~s	L	agree-flagged
+p3_L08	23	133	H	agree
+p4_L01	1	103	H	agree
+p4_L01	2	73	H	agree
+p4_L01	3	101	H	agree
+p4_L01	4	34	H	agree
+p4_L01	5	w:mehr	M	gap
+p4_L01	6	w:mhr	M	differ
+p4_L01	7	99	H	agree
+p4_L01	8	5	H	agree
+p4_L01	9	109	H	agree
+p4_L01	10	135	H	agree
+p4_L01	11	37	M	agree-flagged
+p4_L01	12	119	H	agree
+p4_L01	13	15	H	agree
+p4_L01	14	31	H	agree
+p4_L01	15	141	H	agree
+p4_L01	16	w:das	M	agree-flagged
+p4_L01	17	w:so	M	agree-flagged
+p4_L01	18	w:halt	M	agree-flagged
+p4_L02	1	w:zeit	M	differ
+p4_L02	2	w:sachen	L	agree-flagged
+p4_L02	3	118	H	agree
+p4_L02	4	105	H	agree
+p4_L02	5	142	H	agree
+p4_L02	6	w:et	M	differ
+p4_L02	7	254	H	agree
+p4_L02	8	134	H	agree
+p4_L02	9	w:soll	M	agree-flagged
+p4_L02	10	128	H	agree
+p4_L02	11	133	H	agree
+p4_L02	12	145	M	agree-flagged
+p4_L02	13	95	H	agree
+p4_L02	14	85	H	agree
+p4_L02	15	35	H	agree
+p4_L03	1	w:h	M	differ
+p4_L03	2	129	H	agree
+p4_L03	3	65	H	agree
+p4_L03	4	5	H	agree
+p4_L03	5	w:gemisser	L	agree-flagged
+p4_L03	6	34	H	agree
+p4_L03	7	64	H	agree
+p4_L03	8	94	H	agree
+p4_L03	9	144	H	agree
+p4_L03	10	134	H	agree
+p4_L03	11	w:und	M	agree-flagged
+p4_L03	12	117	H	agree
+p4_L03	13	63	H	agree
+p4_L03	14	116	H	agree
+p4_L03	15	w:sta	L	agree-flagged
+p4_L03	16	137	H	agree
+p4_L04	1	77	H	agree
+p4_L04	2	147	H	agree
+p4_L04	3	w:kr	L	agree-flagged
+p4_L04	4	123	H	agree
+p4_L04	5	30	H	agree
+p4_L04	6	31	H	agree
+p4_L04	7	103	H	agree
+p4_L04	8	w:mt	M	differ
+p4_L04	9	w:und	M	agree-flagged
+p4_L04	10	w:das	M	agree-flagged
+p4_L04	11	350	H	agree
+p4_L04	12	146	H	agree
+p4_L04	13	91	H	agree
+p4_L04	14	81	H	agree
+p4_L04	15	26	H	agree
+p4_L04	16	12	H	agree
+p4_L04	17	104	H	agree
+p4_L04	18	w:et	M	differ
+p4_L04	19	142	H	agree
+p4_L05	1	131	H	agree
+p4_L05	2	w:werden	M	agree-flagged
+p4_L05	3	w:und	M	differ
+p4_L05	4	w:wirdt	M	agree-flagged
+p4_L05	5	173	H	agree
+p4_L05	6	w:mit	M	agree-flagged
+p4_L05	7	170	H	agree
+p4_L05	8	124	H	agree
+p4_L05	9	70	H	agree
+p4_L05	10	21	H	agree
+p4_L05	11	39	H	agree
+p4_L05	12	136	H	agree
+p4_L05	13	w:der	M	agree-flagged
+p4_L05	14	w:nach	M	agree-flagged
+p4_L06	1	w:solchem	M	agree-flagged
+p4_L06	2	w:so	M	agree-flagged
+p4_L06	3	121	H	agree
+p4_L06	4	1	H	agree
+p4_L06	5	111	M	passes 3; recon 'iiii'; 111 by the p3_L04 convention
+p4_L06	6	31	H	agree
+p4_L06	7	w:aus	M	differ
+p4_L06	8	w:der	M	differ
+p4_L06	9	10	H	agree
+p4_L06	10	21	H	agree
+p4_L06	11	w:t	L	agree-flagged
+p4_L06	12	31	H	agree
+p4_L06	13	81	H	agree
+p4_L06	14	22	H	agree
+p4_L06	15	122	H	agree
+p4_L06	16	w:am	M	differ
+p4_L06	17	w:zeitlang	L	agree-flagged
+p4_L06	18	w:und	M	differ
+p4_L06	19	w:sich	L	agree-flagged
+p4_L07	1	66	H	agree
+p4_L07	2	61	H	agree
+p4_L07	3	92	H	agree
+p4_L07	4	121	H	agree
+p4_L07	5	82	H	agree
+p4_L07	6	67	H	agree
+p4_L07	7	83	H	agree
+p4_L07	8	3	H	agree
+p4_L07	9	w:und	M	agree-flagged
+p4_L07	10	w:ihner	M	differ
+p4_L07	11	w:nothwendige	M	differ
+p4_L07	12	w:versehung	L	agree-flagged
+p4_L07	13	w:und	M	agree-flagged
+p4_L08	1	w:bestellung	L	agree-flagged
+p4_L08	2	w:thun	L	agree-flagged
+p4_L08	3	w:wie	M	agree-flagged
+p4_L08	4	w:e.f.g.	M	differ
+p4_L08	5	w:seines	L	agree-flagged
+p4_L08	6	w:ob	L	agree-flagged
+p4_L08	7	w:Gott	M	agree-flagged
+p4_L08	8	w:wil	M	differ
+p4_L08	9	w:sie	M	agree-flagged
+p4_L08	10	w:obgemelter	L	agree-flagged
+p4_L09	1	w:zur	M	differ
+p4_L09	2	w:sach	M	differ
+p4_L09	3	w:nunmehr	M	differ
+p4_L09	4	w:gnedigsten	M	differ
+p4_L09	5	w:wirdt	M	agree-flagged
+p4_L09	6	w:berichtet	L	agree-flagged
+p4_L09	7	w:haben	M	agree-flagged
+p4_L10	1	173	H	agree
+p4_L10	2	121	H	agree
+p4_L10	3	67	H	agree
+p4_L10	4	81	H	agree
+p4_L10	5	92	H	agree
+p4_L10	6	82	H	agree
+p4_L10	7	22	H	agree
+p4_L10	8	32	H	agree
+p4_L10	9	w:daß	M	agree-flagged
+p4_L10	10	40	H	agree
+p4_L10	11	90	H	agree
+p4_L10	12	87	H	agree
+p4_L10	13	136	H	agree
+p4_L10	14	227	H	agree
+p4_L10	15	?	L	passes 5; recon: Roman V with bar, not a code
+p4_L10	16	30	H	agree
+p4_L10	17	3	H	agree
+p4_L10	18	80	H	agree
+p4_L10	19	83	H	agree
+p4_L10	20	23	H	agree
+p4_L11	1	33	H	agree
+p4_L11	2	133	H	agree
+p4_L11	3	339	H	agree
+p4_L11	4	w:mögen	M	agree-flagged
+p4_L11	5	w:gegen	M	agree-flagged
+p4_L11	6	13	H	agree
+p4_L11	7	97	H	agree
+p4_L11	8	101	H	agree
+p4_L11	9	w:t	L	agree-flagged
+p4_L11	10	w:so	M	agree-flagged
+p4_L11	11	w:e.f.g.	M	differ
+p4_L11	12	w:fürstlichen	L	agree-flagged
+p4_L11	13	w:und	M	differ
+p4_L12	1	w:nach	M	agree-flagged
+p4_L12	2	w:der	M	agree-flagged
+p4_L12	3	w:angezeigten	L	agree-flagged
+p4_L12	4	w:ankunfft	M	agree-flagged
+p4_L12	5	w:so	M	agree-flagged
+p4_L12	6	w:halt	M	agree-flagged
+p4_L12	7	36	H	agree
+p4_L12	8	9	H	agree
+p4_L12	9	111	M	passes 3; recon 'iii' = 111 by the p3_L04 convention
+p4_L12	10	142	H	agree
+p4_L12	11	100	H	agree
+p4_L12	12	88	H	agree
+p4_L13	1	26	H	agree
+p4_L13	2	27	H	agree
+p4_L13	3	81	H	agree
+p4_L13	4	1	H	agree
+p4_L13	5	w:gemacht	M	agree-flagged
+p4_L13	6	w:werden	M	agree-flagged
+p4_L13	7	w:wirtschafft	L	agree-flagged
+p4_L13	8	w:und	M	agree-flagged
+p4_L13	9	w:dazu	M	differ
+p4_L13	10	w:II	M	recon: Roman II with bar (Groen '11 haupter'), clear
+p4_L13	11	w:fa	L	agree-flagged
+p4_L13	12	135	L	agree-flagged
+p4_L14	1	39	H	agree
+p4_L14	2	11	M	passA 2 / passB 11; recon 'ii' = code 11 (ii/iii strokes = 11/111 in this hand, cf. p3_L04 120.111.103 'mli')
+p4_L14	3	31	H	agree
+p4_L14	4	w:sr	L	agree-flagged
+p4_L14	5	w:damit	M	agree-flagged
+p4_L14	6	w:sing	L	agree-flagged
+p4_L14	7	w:das	M	agree-flagged
+p4_L14	8	w:ander	M	agree-flagged
+p4_L14	9	w:im	M	agree-flagged
+p4_L14	10	w:fall	M	agree-flagged
+p4_L14	11	w:der	M	agree-flagged
+p4_L14	12	w:noth	L	agree-flagged
+p4_L14	13	w:ver	M	differ
+p4_L15	1	w:sehen	L	agree-flagged
+p4_L15	2	w:könig	M	differ
+p4_L15	3	w:gefordert	M	differ
+p4_L15	4	w:und	M	agree-flagged
+p4_L15	5	w:deren	L	agree-flagged
+p4_L15	6	w:die	M	agree-flagged
+p4_L15	7	60	H	agree
+p4_L15	8	101	H	agree
+p4_L15	9	90	H	agree
+p4_L15	10	w:fr	L	agree-flagged
+p4_L15	11	121	H	agree
+p4_L15	12	130	H	agree
+p4_L15	13	w:so	M	differ
+p4_L16	1	w:wir	M	agree-flagged
+p4_L16	2	w:brauchen	M	differ
+p4_L16	3	w:auch	M	agree-flagged
+p4_L16	4	w:mit	M	agree-flagged
+p4_L16	5	59	H	agree
+p4_L16	6	39	H	agree
+p4_L16	7	91	H	agree
+p4_L16	8	81	H	agree
+p4_L16	9	24	H	agree
+p4_L16	10	w:te	L	agree-flagged
+p4_L16	11	121	H	agree
+p4_L16	12	114	H	agree
+p4_L16	13	31	H	agree
+p4_L16	14	w:wurden	L	agree-flagged
+p4_L17	1	w:damit	M	differ
+p4_L17	2	w:man	M	agree-flagged
+p4_L17	3	w:also	M	differ
+p4_L17	4	w:vermöchen	M	differ
+p4_L17	5	58	H	agree
+p4_L17	6	35	H	agree
+p4_L17	7	w:pf	M	differ
+p4_L17	8	21	M	passA 21 / passB 52; recon 21
+p4_L17	9	81	H	agree
+p4_L17	10	104	H	agree
+p4_L17	11	w:bm	L	agree-flagged
+p4_L17	12	127	H	agree
+p4_L17	13	108	H	agree
+p4_L18	1	10	H	agree
+p4_L18	2	1	H	agree
+p4_L18	3	2	H	agree
+p4_L18	4	81	H	agree
+p4_L18	5	125	H	agree
+p4_L18	6	173	H	agree
+p4_L18	7	w:meinung	M	agree-flagged
+p4_L18	8	w:ist	M	agree-flagged
+p4_L18	9	w:die	M	agree-flagged
+p4_L18	10	339	H	agree
+p4_L18	11	w:soll	M	agree-flagged
+p4_L18	12	w:man	M	agree-flagged
+p4_L18	13	37	H	agree
+p4_L18	14	87	H	agree
+p4_L18	15	254	H	agree
+p4_L19	1	w:leichtlich	M	
+p4_L19	2	w:können	M	
+p4_L19	3	36	H	
+p4_L19	4	9	H	
+p4_L19	5	5	H	
+p4_L19	6	129	H	
+p4_L19	7	148	H	
+p4_L19	8	136	H	
+p4_L19	9	26	H	
+p4_L19	10	w:~ch	H	
+p4_L19	11	8	H	
+p4_L19	12	16	M	passM+passR (16/61: passM 'lb'/'6i'; settled by 2x zoom)
+p4_L19	13	123	H	
+p4_L19	14	61	M	passM+passR (16/61: passM 'lb'/'6i'; settled by 2x zoom)
+p4_L19	15	w:~ch	M	
+p4_L19	16	w:welches	L	
+p4_L20	1	w:ein	L	
+p4_L20	2	105	H	
+p4_L20	3	5	H	
+p4_L20	4	27	H	
+p4_L20	5	85	H	
+p4_L20	6	136	H	
+p4_L20	7	w:ist	H	
+p4_L20	8	69	H	
+p4_L20	9	24	H	
+p4_L20	10	102	H	
+p4_L20	11	3	H	
+p4_L20	12	w:~gen	M	
+p4_L20	13	127	H	
+p4_L20	14	123	H	
