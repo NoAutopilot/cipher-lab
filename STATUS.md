@@ -736,6 +736,26 @@ wave-5 workers and the lane orchestrator's own row are unledgered; their costs a
 (get_session on the session ids above). Any of the five may still push if account 2's sessions resume: check git before
 re-running a step. WORK-QUEUE row LANE-A2PUSH2 marked interrupted.
 
+## LANE ARM-A handoff (session_015rWTRZYuKLgHKfVpjMBGUW, account 1), 3 October 2026 (closed: half spent)
+
+Lane orchestrator on account 1 (brief `.claude/briefs/runs/2026-10-03-acct3-lane-arm.md`, LANE-ARM-A = new material / cribs for
+armstrong-madison-1808, Tomokiyo's ask), 19:19 to 19:5x UTC. 6 worker rows USD 18.75 (5 D, 1 D-), orchestrator 4.33 (self-ledgered);
+five-hour window `allowed` throughout. No live workers, no check-in armed. WORK-QUEUE SWEEP-OWN-1 and LANE-ARM-A done.
+
+- SWEEP-OWN-1: account 1 swept, 29 non-live sessions classified (landed 17, superseded 4, never-started 1, lost 0), 22 archived
+  (STALE-CLAIMS-2026-10-03.md "## Sessions, account 1"); record-only live: armstrong runner 01BuquEr (trig_01KsXywG), weekly retro.
+- H70 context crib sheet (crib_sources.md "## H70"): timeline Nov 1807-Apr 1808, 18 ranked cribs with counts, Armstrong's official
+  despatch frame; Madison's 2 May reply acknowledges 15 and 17 Feb, not 20 Feb. For LANE-ARM-B's H73 vocabulary prior.
+- H76 French side: no evidence the French opened or deciphered Armstrong's mail; strongest context: Napoleon's 2 Feb 1808 verbal offer
+  (the Floridas for an alliance) and his 11 Feb answer to Armstrong's notes of 4 and 8 Feb -- the 20 Feb letter falls between those
+  and Armstrong's 22 Feb ("allies or enemies") despatch (interpretation, not a reading). AAE CP Etats-Unis 1808 / AN AF IV 1192 -> ASKS 127.
+- H75 Bowdoin: printed papers end Sep 1807, Bowdoin left Paris Oct 1807; no witness for Feb 1808; his WE028 passage does not match.
+- H71/H72 catalogue retries: MHS opened (no 1807-08 Armstrong item; Bowdoin MS N-2059 lead); NYPL, HSP, Morgan, ArchiveGrid, LOC
+  finding aids, NYHS all CDN/Cloudflare-blocked from the cloud, Wayback resets: L27 narrowed, ASKS 83-86 annotated.
+
+**Waits on whom:** owner desk / archives: LOCAL-QUEUE L27, ASKS 83-86, 127 (and 84-86 person reads). LANE-ARM-B (account 2) owns
+the instrument rows (H73 vocabulary-prior solver using H70's cribs; H74 shorthand sorter page for the owner, ASKS 92).
+
 ## LANE A1B handoff (session_015rWTRZYuKLgHKfVpjMBGUW, account 1), 3 October 2026 (closed: backlog spent)
 
 Lane orchestrator on account 1 for the account-3 orchestrator (brief `.claude/briefs/runs/2026-10-03-acct3-lane-a1b.md`),
