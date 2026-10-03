@@ -1144,7 +1144,7 @@ and the SECOND-OPINIONS-QUEUE.tsv row (rule 10). Requests: none (all images on d
 
 ## Rule 7 re-derivation (A1B-LIN-REDERIV, 3 Oct 2026)
 
-Fresh session (17:39-17:45 UTC), which read only CLAUDE.md, `specs/antt-linhares-chave.json`, `key.tsv`, `ciphertext.tsv`
+Fresh session (17:39-17:41 UTC), which read only CLAUDE.md, `specs/antt-linhares-chave.json`, `key.tsv`, `ciphertext.tsv`
 and `decode.json` before deriving (no exceptions file is named by decode.json). An independent ~15-line script (scratchpad, not
 `tools/decode_key.py`) mapped each ciphertext.tsv group through key.tsv, dropped `[null]` values and joined per
 page_of_letter + line. It gave 26 tokens, H 23 / M 3 / U 0:
