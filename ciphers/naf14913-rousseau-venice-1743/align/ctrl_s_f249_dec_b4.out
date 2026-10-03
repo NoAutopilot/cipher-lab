@@ -1,0 +1,6 @@
+draw s 15 E 0 timedout False 108.7
+draw s 16 E 0 timedout False 121.3
+draw s 17 E 0 timedout False 22.6
+draw s 18 E 0 timedout False 117.4
+draw s 19 E 0 timedout False 119.5
+f249 s dec 15-19: E=1 in 0 of 5; unresolved 0; resolved fits 0 of 5; 489 s
