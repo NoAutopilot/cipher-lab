@@ -1,4 +1,5 @@
 blocked
+No standard edition or calendar of the legation's despatches was identified or opened by this worker (CS-A2-H, 3 Oct 2026); blocked on: ACA catalogue/PARES not opened (PARES dead from the cloud), so the holding record's availability flag is unquoted.
 
 # Fernandez Duran to the marques de San Felipe, El Pardo, 30 November 1718
 
@@ -79,3 +80,21 @@ vowels -- a partial-family test that would say whether the missing key is an ext
   pitch of about 160 px, 0 lines at defaults; with `--distance 110 --prominence 2` it found 9 of 17 and 15 of 10
   lines. The fallback row-profile cut is in the session notes, not a tool; if this recurs, the tool needs a
   `--pitch` override.
+
+## Web and blog check (CS-A2-H, 3 Oct 2026)
+
+- Web searches (4, WebSearch standard): "Fernández Durán" "marqués de San Felipe" 1718 carta cifra Génova; "Legación en Génova y Turín" Archivo de la Corona de Aragón Diversos cifra 1718; Bacallar San Felipe Génova 1718 despacho Fernández Durán cifra descifrada 30 noviembre 1718 El Pardo; a fourth in the same family. Hits: nothing naming this letter. Related only: Quirantes' study of Fogliani's 1747 cifra (revistas.um.es 613681), different cipher and date.
+- Blogs: Cipherbrain site search "Fernández Durán" 0 results (200); Cryptiana blog search "Duran 1718" "No posts matching" (200); Cipher Mysteries search URL answered 406 Mod_Security to curl, not retried (so this blog is unreachable by search here; one web search covers it only indirectly). Comment threads not read (no post hit).
+- DECODE: record 10181 page fetched without login, Status: Non-decrypted, 1718; AssociatedRecordsList for 10181 fetched (no associated record seen in the page text).
+- Solver repositories (shallow clones, grep only): dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers: only a catalogue row for R10181 itself (Non-decrypted) in aaymeloglu catalogue/decode-records.jsonl; no target, key or planning line for Duran / San Felipe / Legación en Génova.
+- Google Books API (country=US, keyed): one query, 2 items, none relevant by title. Internet Archive advancedsearch: 2 queries, no relevant item inspected (count not read). Not a whole-volume sweep.
+- Not done: ACA catalogue/PARES description (unreachable), HTRC test (no candidate calendar named), any printed edition.
+
+## Premise check (CS-A2-H, 3 Oct 2026)
+
+- (a) folder's own files: NOTES.md and README.md mention no decipherment, gloss or clear copy of this letter; not found. The earlier worker's cover/closing reading is the only clear text.
+- (b) other solvers' working files: nothing on this item in either repository beyond the DECODE catalogue row; not found.
+- (c) physical neighbours: the record has 4 DECODE images (cover, two text leaves and one more); the earlier worker viewed them; this worker did not re-view the images, so a pasted slip or facing-page copy is not independently excluded; unreachable/unchecked by this worker.
+- (d) recipient/sender-side editions: San Felipe's Comentarios (1725) narrates the period, prints no despatch text per the earlier worker, unopened by this worker; no Spanish state-series edition identified; unreachable/unchecked.
+
+Verdict: stays `blocked`. What would move it: the ACA reading-room or PARES description of leg. 22 doc. 67 and of leg. 30 docs 4, 7, 9-14, 17, 18 (owner's machine, LOCAL-QUEUE shape), and a full-text pass of the Comentarios. Nothing found to say the item is read. No class (rule 10).
