@@ -1,4 +1,5 @@
 open
+Verdict: open -- key no.1 applied (DUCH-KEY1B, 3 Oct 2026): non-test at 37 tokens (power 0/20 on two pre-registered statistics); next: transcribe fr.3995 no.4 (fol.8, two-digit word list, 1585) and apply, ~USD 6.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -117,3 +118,78 @@ is the only result that would mean anything.
 - Next: rerun the crop at the region above into a fresh `--prefix f10b`, two blind reads of the digit runs with
   `tools/decode_key.py --split-check`-style segmentation left open (the split is part of the key test), then units (2)-(3)
   as briefed; ~USD 6.
+
+## DUCH-KEY1B (account 1 for LANE-A1, 3 Oct 2026, 10:03-10:15 UTC by the container clock): f.10r read, key no.1 transcribed and applied -- non-test
+
+Superseded files: `images/f10_L0*_s*.jpg`, `images/f10_lines_debug.jpg` and
+`images/src_ark_12148_btv1b9058289m_f18_4100_2750_3300_560.jpg` are DUCH-KEY1's earlier crop run, whose region cut off
+the first cipher line. They are kept as they are (not deleted) and superseded by `images/f10b/`.
+
+**(1) f.10r digits.** Crop command (pasted): `python3 tools/iiif_lines.py --ark btv1b9058289m --canvas 18 --region
+4000,2560,3500,520 --out <scratch> --prefix f10c --lines-per-crop 3 --max-width 1800 --overlap 200`. The used crops are in
+`images/f10b/`. I read them myself in one Opus vision call plus one zoom on line 1 (21-69). The raw digit strings are in
+`ciphertext_f10_digits.tsv`.
+- **The digit strings agree with Tomokiyo's 37 numbers on every digit (0 differences in 74+ digits).** One digit is M:
+  the 1 of "13" in line 1, which is ligatured to the preceding 0.
+- The figures are written unspaced, so Tomokiyo's division is a segmentation and not a transcription. His single "8"
+  before "59" sits inside the run "92859". Line 1 has an odd number of digits (33).
+- The non-numeric sign that opens lines 2 and 3 is a loop with the cross **above** it. Tomokiyo prints it as the female
+  sign, with the cross below.
+- Before the cipher a struck-out false start reads "82 82 5? 7 20 +". It is not part of the text, but it repeats the
+  opening "82 82".
+- The cipher sits inside clear text: "... angoir[?]" before line 1, and "ce laquay ne ma falle" before line 3.
+
+**(2) Key no.1** is on fr.3995 Gallica canvas 10. That leaf is foliated "2", while f.1r (canvas 9) carries only the docket
+"Juin 1580". The key is written sideways, so it was read rotated 270.
+- Crops (IIIF region + rotation, at native resolution): `images/key_no1/` a1-a3 (the alphabet and the Nulles line) and
+  c1-c4 (the code list).
+- Two blind passes: A by Opus (this worker), B by a Sonnet subagent. Both are kept as `keys/key_no1_passA.tsv` and
+  `keys/key_no1_passB.tsv`; the reconciled key is `keys/key_no1.tsv`.
+- **The two passes agree on all 89 codes and on every letter value.** Name spellings differ only in orthography.
+- M grades:
+  - 45: vous or tous. Pass A read "tous", as Tomokiyo does; pass B read "vous".
+  - 90: the last null, cut at the crop edge.
+  - 95: Chiverny, read by pass B as "Gievrny".
+- **Design:**
+  - Letters run 12-58, assigned in descending order a 36-38, b 35 ... z 12, with homophones a 36-38, e 56-58,
+    i 46-48, o 42-44 and u 16-18.
+  - Nulls: 39 40 50 60-65 70 80 90.
+  - Codes: 10, 11, 13-15, 19, 45, 49, 51-55, 59, 66-69, 71-79, 81-89, 91-99.
+  - Note: Tomokiyo lists "Monsieur" twice; the key has it at both 69 and 59.
+
+**(3) Score.** The rule was pre-registered in `PREREG_duchkey1b.md` (commit 62c1978b) before any score was computed. The
+script is `score_key1.py`; `--check` and `--a1 --check` both print OK. Outputs are in `key1_score.tsv`,
+`key1_readings.txt`, `key1_score_A1.tsv` and `key1_readings_A1.txt`.
+
+Main statistic (fr16 4-gram, code names expanded), target vs 200 value-shuffled keys, with its power control:
+
+| segmentation | rank of 201 | z | judge |
+|---|---|---|---|
+| S1 Tomokiyo | 94 | 0.20 | FAIL (-0.899 vs real_p05 -0.883, null_p99 -1.833) |
+| S2 pairs from start | 104 | -0.01 | FAIL |
+| S3 offset 1 | 197 | -2.49 | FAIL |
+| **Power control** (20 synthetic French texts of 37 tokens, key no.1, 3% digit error) | rank 1 with z>=3 in **0/20** | | |
+
+Amendment A1 was pre-registered after that 0/20 and before any A1 score. Its statistic gives code tokens no letters and
+treats them as word breaks. A1 power is also **0/20**: the true key ranks 3-23 of 201 with z of about 1.1-1.8.
+Neither statistic can separate key no.1 from a shuffle at 37 tokens. **The result is a non-test (rule 3), not a
+negative.**
+
+`tools/judge_plaintext.py specs/fr4712-nevers-duchesse.json --file <S1 reading>` (spec written by this job):
+```
+FAIL language: score=-0.899, null_p99=-1.833, real_p05=-0.883, real_median=-0.774, mode=both, N=287
+ok   words: cover=0.93, min=0.5, real_text_median_cover=0.948
+FAIL - fr4712-nevers-duchesse (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The language score and the cover above come mostly from the expanded code names. They are not evidence of a reading.
+
+Descriptive only (no gate). Under key no.1, 59-61% of the tokens decode to name codes, against a mean of 49-50% under
+the shuffles. The S1 decode is a run of names ("Mareschal de Cosse, Mareschal de Cosse, Reistres, Mons d'O, Mons
+d'Arques ...") with isolated letters ("x", "u", "e", "g", "z", "y x t", "q z", "r u", "p") and no letter run of four or
+more. It does not look like a no.1 letter. Grades: no reading claimed, so there are 0 H/C/S tokens.
+
+Next step: the run of repeated two-digit words fits Tomokiyo's no.4 better than no.1. No.4 is fol.8, the 1585 key
+"avec la Duchesse ma feme en ce voiage des bains de Lucques", described as a "List of words represented by two-digit
+figures". Transcribe it the way no.1 was done here: rotate-and-crop with IIIF, two blind passes, reconcile. Then apply it
+under S1 and S2. The power control has to be rebuilt for a word-code design, because the letter-based one has no power
+at N=37. That is about 3 vision calls, ~USD 6.

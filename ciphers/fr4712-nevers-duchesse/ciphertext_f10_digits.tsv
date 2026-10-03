@@ -1,0 +1,5 @@
+# BnF fr.4712 f.10r (Gallica btv1b9058289m canvas 18, native region 4000,2560,3500,520), read by DUCH-KEY1B (Opus) 3 Oct 2026 from crops images/f10b/. Raw digit runs, unspaced as written; S = the non-numeric sign (a loop with a cross ABOVE it, Tomokiyo prints it as a female sign). Tomokiyo segmentation in ciphertext.txt.
+line	digits	uncertain	note
+1	828252141085922160131652745692859	21:digit 18 (the 1 after 60) ligatured to the 0, M	preceded by a struck-out false start "82 82 5? 7 20 +" (not part of the text); line slopes down to the right
+2	S317210781269202122958525121993		end of the line (...2512 1993) slopes into the third visual row
+3	S1024178126		follows clear "ce laquay ne ma falle"

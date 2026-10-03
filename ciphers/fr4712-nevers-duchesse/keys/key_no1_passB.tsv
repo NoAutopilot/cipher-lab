@@ -1,0 +1,90 @@
+code	value	kind	crop	conf
+36	a	letter	a1	H
+37	a	letter	a1	H
+38	a	letter	a1	H
+35	b	letter	a1	H
+34	c	letter	a1	H
+33	d	letter	a1	H
+56	e	letter	a1	H
+57	e	letter	a1	H
+58	e	letter	a1	H
+32	f	letter	a1	H
+31	g	letter	a2	H
+30	h	letter	a2	H
+46	i	letter	a2	H
+47	i	letter	a2	H
+48	i	letter	a2	H
+29	l	letter	a2	H
+28	m	letter	a2	H
+27	n	letter	a2	H
+42	o	letter	a2	H
+43	o	letter	a2	H
+44	o	letter	a2	H
+26	p	letter	a2	H
+25	q	letter	a2	H
+24	r	letter	a3	H
+23	s	letter	a3	H
+22	t	letter	a3	H
+16	v	letter	a3	H
+17	v	letter	a3	H
+18	v	letter	a3	H
+21	x	letter	a3	H
+20	y	letter	a3	H
+12	z	letter	a3	H
+39	-	null	a3	H
+40	-	null	a3	H
+50	-	null	a3	H
+60	-	null	a3	H
+61	-	null	a3	H
+62	-	null	a3	H
+63	-	null	a3	H
+64	-	null	a3	H
+65	-	null	a3	H
+70	-	null	a3	H
+80	-	null	a3	H
+9?	-	null	a3	M
+82	Marechal de Cosse	code	c1	H
+83	Marechal de Retz	code	c1	H
+84	Marechal Matignon	code	c1	H
+85	Marechal d Aumont	code	c1	H
+86	Marechal de Biron	code	c1	H
+87	Monsieur le Prince de Conde	code	c1	H
+88	Roy de Navarre	code	c1	H
+89	Royne de Navarre	code	c1	H
+91	Royne d Angleterre	code	c1	H
+92	Cardinal de Bourbon	code	c1	H
+93	Cardinal d Est	code	c1	H
+94	Cardinal de Guyse	code	c1	H
+95	Monsieur de Gievrny	code	c1	M
+66	Le Roy	code	a1	H
+96	Flandres	code	a2	H
+67	La Royne mere du Roy	code	c2	H
+68	La Royne	code	c2	H
+69	Monsieur	code	c2	H
+71	Le Roy Philippe	code	c2	H
+72	L Empereur	code	c2	M
+73	Le Duc de Lorraine	code	c2	H
+74	Le Duc de Savoye	code	c2	H
+75	Le Duc de Montpensier	code	c2	H
+76	Le Duc de Guyse	code	c2	H
+77	Le Duc de Nemours	code	c2	H
+78	Le Duc d Umaine	code	c2	H
+79	Le Duc de Mercure	code	c2	H
+81	Le Duc de Montmorency	code	c2	H
+55	Huguenotz	code	c3	M
+59	Monsieur	code	c3	H
+49	Madame	code	c3	H
+45	vous	code	c3	H
+19	Monsieur de Bellievre	code	c3	M
+13	Monsieur de Villeclere	code	c3	M
+14	Monsieur Do	code	c3	M
+15	Monsieur de la Valette	code	c3	H
+10	Monsieur d Argues	code	c3	H
+97	Ambassadeur	code	c4	H
+98	Monsieur le Chancellier	code	c4	H
+99	Allemans	code	c4	H
+11	Suisses	code	c4	H
+51	Capitaine	code	c4	H
+52	Reistres	code	c4	H
+53	Argent	code	c4	H
+54	Armee	code	c4	H

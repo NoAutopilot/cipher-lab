@@ -1,0 +1,12 @@
+{
+ "slug": "fr4712-nevers-duchesse",
+ "name": "BnF fr.4712 f.10r, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage (NV-09)",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/fr4712-nevers-duchesse/ciphertext_f10_digits.tsv (DUCH-KEY1B read, 3 Oct 2026); Tomokiyo's segmentation in ciphertext.txt",
+ "ciphertext_source": "Gallica ark btv1b9058289m canvas 18, native region 4000,2560,3500,520",
+ "alphabet": "two-digit figures 10-99 plus one non-numeric sign; key family fr.3995 no.1 (figures, vowel homophones, nulls, name codes)",
+ "constraints": ["key candidate: fr.3995 no.1 'Chifre avec Madame' (June 1580), keys/key_no1.tsv", "the key instructs even spacing of two-digit units"],
+ "cheap_tests_in_order": ["apply key no.1 under 3 segmentations, score vs 200 value-shuffled keys with a power control (PREREG_duchkey1b.md)"],
+ "judge": {"language": "fr", "min_word_cover": 0.5, "control_samples": 200},
+ "written": "3 Oct 2026, DUCH-KEY1B (account 1 for LANE-A1)"
+}

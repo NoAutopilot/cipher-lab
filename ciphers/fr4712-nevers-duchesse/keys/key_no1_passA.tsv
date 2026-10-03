@@ -1,0 +1,90 @@
+code	value	kind	crop
+36	a	letter	a1
+37	a	letter	a1
+38	a	letter	a1
+35	b	letter	a1
+34	c	letter	a1
+33	d	letter	a1
+56	e	letter	a1
+57	e	letter	a1
+58	e	letter	a1
+32	f	letter	a1
+31	g	letter	a2
+30	h	letter	a2
+46	i	letter	a2
+47	i	letter	a2
+48	i	letter	a2
+29	l	letter	a2
+28	m	letter	a2
+27	n	letter	a2
+42	o	letter	a2
+43	o	letter	a2
+44	o	letter	a2
+26	p	letter	a2
+25	q	letter	a2
+24	r	letter	a3
+23	s	letter	a3
+22	t	letter	a3
+16	u	letter	a3
+17	u	letter	a3
+18	u	letter	a3
+21	x	letter	a3
+20	y	letter	a3
+12	z	letter	a3
+39	-	null	a3
+40	-	null	a3
+50	-	null	a3
+60	-	null	a3
+61	-	null	a3
+62	-	null	a3
+63	-	null	a3
+64	-	null	a3
+65	-	null	a3
+70	-	null	a3
+80	-	null	a3
+90	-	null	a3(cut at crop edge; 90 from 1100px overview, M)
+66	Le Roy	code	c2
+67	La Royne mere du Roy	code	c2
+68	La Royne	code	c2
+69	Monsieur	code	c2
+71	Le Roy Philippe	code	c2
+72	L'Empereur	code	c2
+73	Le Duc de Lorraine	code	c2
+74	Le Duc de Savoye	code	c2
+75	Le Duc de Montpensier	code	c2
+76	Le Duc de Guyse	code	c2
+77	Le Duc de Nemours	code	c2
+78	Le D. d'Umaine	code	c2
+79	Le Duc de Mercure	code	c2
+81	Le D. de Montmorency	code	c2
+82	Mareschal de Cosse	code	c1
+83	Mareschal de Retz	code	c1
+84	Mareschal Matignon	code	c1
+85	Mareschal d'Aumont	code	c1
+86	Mareschal de Biron	code	c1
+87	Mr le Prince de Conde	code	c1
+88	Roy de Navarre	code	c1
+89	Royne de Navarre	code	c1
+91	Royne d'Angleterre	code	c1
+92	Cardinal de Bourbon	code	c1
+93	Cardinal d'Est	code	c1
+94	Cardinal de Guyse	code	c1
+95	Mons de Chiverny	code	c1
+96	Flandres	code	c4
+97	Ambassadeur	code	c4
+98	Mr le Chancellier	code	c4
+99	Allemans	code	c4
+11	Suisses	code	c4
+51	Cappitaine	code	c4
+52	Reistres	code	c4
+53	Argent	code	c4
+54	Armee	code	c4
+55	Huguenotz	code	c3
+59	Monsieur	code	c3
+49	Madame	code	c3
+45	tous	code	c3
+19	Mons de Bellieure	code	c3
+13	Mons de Villeclere	code	c3
+14	Mons d'O	code	c3
+15	Mons de la Vallette	code	c3
+10	Mons d'Arques	code	c3

@@ -1,0 +1,91 @@
+# key no.1 "Chifre avec Madame" (Tomokiyo no.1; docket Juin 1580 on f.1r), BnF fr.3995 Gallica btv1b525085665 canvas 10 (leaf foliated 2), rotated 270; crops images/key_no1/. Reconciled from passA (Opus, this worker) and passB (Sonnet subagent, blind) 3 Oct 2026, DUCH-KEY1B. All codes and letter values agree between passes; names differ in spelling only.
+code	value	kind	grade	note
+36	a	letter	H	
+37	a	letter	H	
+38	a	letter	H	
+35	b	letter	H	
+34	c	letter	H	
+33	d	letter	H	
+56	e	letter	H	
+57	e	letter	H	
+58	e	letter	H	
+32	f	letter	H	
+31	g	letter	H	
+30	h	letter	H	
+46	i	letter	H	
+47	i	letter	H	
+48	i	letter	H	
+29	l	letter	H	
+28	m	letter	H	
+27	n	letter	H	
+42	o	letter	H	
+43	o	letter	H	
+44	o	letter	H	
+26	p	letter	H	
+25	q	letter	H	
+24	r	letter	H	
+23	s	letter	H	
+22	t	letter	H	
+16	u	letter	H	
+17	u	letter	H	
+18	u	letter	H	
+21	x	letter	H	
+20	y	letter	H	
+12	z	letter	H	
+39	-	null	H	
+40	-	null	H	
+50	-	null	H	
+60	-	null	H	
+61	-	null	H	
+62	-	null	H	
+63	-	null	H	
+64	-	null	H	
+65	-	null	H	
+70	-	null	H	
+80	-	null	H	
+90	-	null	M	last null cut at crop edge in both passes; 90 from 1100px overview
+66	Le Roy	code	H	
+67	La Royne mere du Roy	code	H	
+68	La Royne	code	H	
+69	Monsieur	code	H	
+71	Le Roy Philippe	code	H	
+72	L'Empereur	code	H	
+73	Le Duc de Lorraine	code	H	
+74	Le Duc de Savoye	code	H	
+75	Le Duc de Montpensier	code	H	
+76	Le Duc de Guyse	code	H	
+77	Le Duc de Nemours	code	H	
+78	Le D. d'Umaine	code	H	
+79	Le Duc de Mercure	code	H	
+81	Le D. de Montmorency	code	H	
+82	Mareschal de Cosse	code	H	
+83	Mareschal de Retz	code	H	
+84	Mareschal Matignon	code	H	
+85	Mareschal d'Aumont	code	H	
+86	Mareschal de Biron	code	H	
+87	Mr le Prince de Conde	code	H	
+88	Roy de Navarre	code	H	
+89	Royne de Navarre	code	H	
+91	Royne d'Angleterre	code	H	
+92	Cardinal de Bourbon	code	H	
+93	Cardinal d'Est	code	H	
+94	Cardinal de Guyse	code	H	
+95	Mons de Chiverny	code	M	pass B Gievrny; Tomokiyo Chiverny
+96	Flandres	code	H	
+97	Ambassadeur	code	H	
+98	Mr le Chancellier	code	H	
+99	Allemans	code	H	
+11	Suisses	code	H	
+51	Cappitaine	code	H	
+52	Reistres	code	H	
+53	Argent	code	H	
+54	Armee	code	H	
+55	Huguenotz	code	H	
+59	Monsieur	code	H	
+49	Madame	code	H	
+45	vous	code	M	pass A tous (Tomokiyo: tous), pass B vous; initial glyph v/b-shaped
+19	Mons de Bellieure	code	H	
+13	Mons de Villeclere	code	H	
+14	Mons d'O	code	H	
+15	Mons de la Vallette	code	H	
+10	Mons d'Arques	code	H	

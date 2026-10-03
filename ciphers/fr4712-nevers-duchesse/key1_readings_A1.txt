@@ -1,0 +1,14 @@
+## S1_tomokiyo
+ /   /   /   /   /   /   /  x  /  u  /   /  e  /  ?  / 
+g  /   /   /  z  /  y x t  /   /  q z  /   / 
+ /  r u  /  p
+
+## S2_pairs_from_start
+ /   /   /   /   /   /   /  x  /  u  /   /  e  /   / 
+g  /   /   /  z  /  y x t  /   /  q z  /   / 
+ /  r u  /  p
+
+## S3_pairs_from_offset1
+m q x ? ?  /  t u ? g n  /   /  m  / 
+u x ?  /  p  /  ? z l e  /   /  x  / 
+? ?  /  z

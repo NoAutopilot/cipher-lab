@@ -1,0 +1,14 @@
+## S1_tomokiyo
+[Mareschal de Cosse] [Mareschal de Cosse] [Reistres] [Mons d'O] [Mons d'Arques] [Mareschal d'Aumont] [Cardinal de Bourbon] x [Mons de Villeclere] u [Reistres] [Le Duc de Savoye] e [Cardinal de Bourbon] ? [Monsieur]
+g [L'Empereur] [Mons d'Arques] [Le D. d'Umaine] z [Monsieur] y x t [Mons de Chiverny] [Mareschal d'Aumont] q z [Mons de Bellieure] [Cardinal d'Est]
+[Mons d'Arques] r u [Le D. de Montmorency] p
+
+## S2_pairs_from_start
+[Mareschal de Cosse] [Mareschal de Cosse] [Reistres] [Mons d'O] [Mons d'Arques] [Mareschal d'Aumont] [Cardinal de Bourbon] x [Mons de Villeclere] u [Reistres] [Le Duc de Savoye] e [Cardinal de Bourbon] [Mareschal d'Aumont]
+g [L'Empereur] [Mons d'Arques] [Le D. d'Umaine] z [Monsieur] y x t [Mons de Chiverny] [Mareschal d'Aumont] q z [Mons de Bellieure] [Cardinal d'Est]
+[Mons d'Arques] r u [Le D. de Montmorency] p
+
+## S3_pairs_from_offset1
+m q x ? ? [Monsieur] t u ? g n [vous] [Monsieur] m [Monsieur]
+u x ? [Le D. de Montmorency] p [Cardinal de Bourbon] ? z l e [Reistres] [Cappitaine] x [Allemans]
+? ? [Le D. d'Umaine] z
