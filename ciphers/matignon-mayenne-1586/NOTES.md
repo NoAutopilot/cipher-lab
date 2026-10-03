@@ -1264,3 +1264,86 @@ OK keep-going matignon-mayenne-1586: keep going: 6 internal gap(s), 5 step(s) un
 $ python3 tools/intake_gate_check.py matignon-mayenne-1586
 matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines   (exit 0)
 ```
+
+## Premise check (GF4-BATCH5, 3 Oct 2026)
+
+The adversarial pre-reading pass (`.claude/briefs/check-solved.md` "## Premise check"). Its aim was to show the
+unread leaves are already read: Cipher-1 ff.110, 123-124, 143, 150, 154, 173, 196 and 201, fr.15571 f.177, and
+Cipher-3 f.276 and fr.15571 f.179. No cryptanalysis or transcription was done. Result: **not found**. No period
+decipherment, clear copy or printed plaintext of any target leaf turned up. One other solver's partial modern
+readings are now cited. Status unchanged (`partial`).
+
+- **(a) Decipherments the folder already mentions: found, already known; none covers a target leaf.**
+  - Tomokiyo's list was re-read in full from `sources/cryptiana/web/henryiii.htm`. On 2 Oct the live page was
+    identical to this snapshot (Web and blog check above).
+  - Cipher-1 decipherments: f.14 in f.15, ff.18-21 in f.19, ff.78-79 in the margin, ff.91-92 in the margin. Each
+    is a different letter from the target leaves. Every target leaf is "undeciphered".
+  - Cipher-3 decipherments: f.189 in f.190, ff.277-278 in ff.279-280, f.282 in the margin. f.276 and fr.15571
+    f.179 are "undeciphered".
+  - The f.179 magenta annotation was settled as Tomokiyo's modern overlay (bMAT3, 26 Sept), not a period gloss.
+  - Bourdeau's NOTES.md, "Prior art checked", reads: "no printed decipherment of these despatches was found".
+  - So no mentioned decipherment is of a target leaf. The ff.91-92 margin is unopened; it is a sibling crib,
+    already the Escalation's planned step.
+- **(b) Other solvers' working files: found, partial modern readings, not a solve.** Fresh shallow clone on 3 Oct
+  2026 of dbourdeau/cyphersolver, HEAD a4292cb (2 Oct 2026). `targets/matignon1586/NOTES.md` is byte-identical to
+  our snapshot `sources/cyphersolver/2026-10-02/matignon1586/NOTES.md`. Its status line reads "in progress. Read
+  in part ... 28% of the target's cipher tokens read as sense ... Cipher-3 leaves untouched".
+  - **Not previously cited in this folder** (0 mentions before this section): his per-leaf reading files.
+    `f123_124_reading.md`, `f143_reading.md` (recto "about two thirds", whole leaf "a quarter", f.143v not
+    transcribed), `f150_reading.md`, `f154_reading.md` ("about half the cipher reads as continuous French"),
+    `f173_reading.md`, `f177_reading.md` (24% of transcribed tokens, 20% of the leaf), `f196_reading.md` (45% /
+    38%) and `f201_reading.md` (f.201 is the same despatch as f.196). Also `f110_status.md`, "the one leaf I could
+    not read".
+  - These are another solver's partial cryptanalytic readings made with the same key (Bourdeau, CC BY 4.0). They
+    are not a period decipherment or a full reading of any leaf. Any reading this target later reports overlaps
+    them and must be compared and credited against them (rule 8; a verifier's N-class question, rule 10).
+  - aaymeloglu/unsolved-ciphers was re-cloned on 3 Oct 2026 (HEAD d2800bb, 27 Sept): no matignon/mayenne/15572 hit
+    beyond those logged on 26 Sept.
+- **(c) Physical neighbours: not found, one sub-check left open.** Gallica btv1b9061879d, canvas numbers from
+  Bourdeau's NOTES.md (f.276 = canvas 285 right; ff.277-278 = canvases 286-287; ff.279-280 from canvas 288),
+  fetched this pass at 1200-1600 px:
+  - Canvas 285: the left page is a sealed address panel with an endorsement, no cipher and no clear text. The
+    right page is f.276, a small slip of about 27 lines wholly in cipher, with no interlinear and no margin note.
+  - Canvas 288: f.277v and f.278r are wholly in cipher, with no gloss.
+  - Canvas 289: f.279r is the period clear text. Its first line, read at 1600 px, grade M: "Monsieur Forget s'est
+    allé ... [?Monsieur du Mayne] a Bordeaux". That is **not** Tomokiyo's f.276 opening ("La Guiolle est en doubte
+    du pu pour les amis de la Roussiere ..."). This fits Tomokiyo's statement that ff.279-280 decipher ff.277-278,
+    not f.276. The left page is a blank verso with a docket.
+  - **Not checked:** whether any passage further into ff.279-280 repeats f.276's text. The clear mentions
+    "Eguillon" (Aiguillon) and powder, and Tomokiyo's "La Guiolle" may be the same place. A line-by-line
+    comparison of f.279-280 against Tomokiyo's f.276 opening is the named sub-step; it is a reading job, not done
+    here.
+  - The Cipher-1 leaves' own neighbours were not re-imaged. Bourdeau's leaf-by-leaf canvas table (his NOTES.md)
+    records no decipherment beside any of them, and the SPLIT job found no image of them on disk.
+- **(d) Recipient side: not found.** The letters are addressed to Villeroy and Henri III.
+  - IA full-text search (be-api, all items) for the openings and names: `"en quelle peine nous estions"` (Tomokiyo's
+    f.154 opening; 2 hits, both Calvin, unrelated), `"La Guiolle" Roussiere` (topographical dictionaries only),
+    `Bellebourg Mayenne 1586` (0) and `"Matignon" "Forget" 1586 "Villeroy" lettres chiffre`.
+  - The last query found Ehrlich, *The Letters and Documents of Armand de Gontaut, baron de Biron* vol. 2 (IA
+    `lettersdocuments0002biro`, lending-only; searched inside with be-api fts on "15572", "Forget à Villeroy",
+    "Forget", "Mayenne", "chiffre" and "Castillon"). It prints letters from **fr.15572 ff.284, 291, 298, 303, 334
+    and 351**, among them Forget to Villeroy, camp before Castillon, 18 July 1586, f.351. **None is a target
+    leaf.** Its "chiffré ... déchiffrement en marge" notes concern Biron's own letters (B.N. fr. 23195 and
+    others).
+  - Henry and Loriquet, *Correspondance du duc de Mayenne* (Reims, 1860-62; Google Books API, keyed, country=US)
+    begins 11 Nov 1590, outside 1586.
+  - Already logged above: the SHF *Lettres de Henri III* are not on IA, and the 1749 Villeroy-to-Matignon
+    *Lettres* run in the opposite direction and are still unchecked.
+
+**Named next steps (not run, outside this brief).**
+1. Compare ff.279-280's clear text against f.276. Read f.279r-280 at native resolution and test Tomokiyo's f.276
+   opening and the "La Guiolle"/Aiguillon question. A match makes f.276 found-solved through a period decipherment.
+   About $2, one native fetch and one read.
+2. The verifier for any future reading diffs it against Bourdeau's per-leaf reading files listed in (b).
+
+Hosts this pass: gallica.bnf.fr 3 (IIIF, canvases 285, 288 and 289), be-api.us.archive.org 14, archive.org 3
+(advancedsearch 2 and metadata 1; the lending-only djvu text answered 401, not retried), www.googleapis.com 2,
+github.com 2 clones. All requests were at least 1.6 s apart, with no 429 or challenge. Images:
+`images/premise/c285_1200.jpg`, `c288_1600.jpg`, `c289_1600.jpg`. Rule 10: this is a search log; it makes no
+novelty claim.
+
+`python3 tools/intake_gate_check.py matignon-mayenne-1586` (after this section):
+```
+matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
