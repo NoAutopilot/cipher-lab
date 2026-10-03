@@ -28,3 +28,13 @@ Shuffled controls: the existing f410/shuffled_00..19 are re-scored unchanged; ad
 its letters shuffled (20 seeds) as a null sanity check (must fall far below G).
 Caveat stated in advance: a gloss of a ciphered passage may be dominated by names and titles (f.468's were), a register
 the fr18 corpus under-represents; that biases m(G) down, which is exactly the calibration in question.
+
+Addendum (before any transcription or scoring, same session): letters(candidate.txt) by a-z count is 263, not 190 (GAPS162's
+"about 190" was an estimate). Read L = min(letters(G), 263) wherever 190 appears above; nothing else changes.
+
+Addendum 2 (16:4x UTC, after a 1/4-size layout look at file 0579 only, before any line is read or scored): f.467 is a
+French clear report with a few code groups glossed interlinearly; the gloss words alone may fall under 40 letters. So
+the passes also read the clear text, and a second calibration text C2 = the leaf's period plaintext as its decipherer
+had it (clear text with each glossed code run replaced by its gloss, unglossed codes dropped) is scored the same way.
+The decision rule is applied to G if letters(G) >= 40; otherwise to C2, reported as "C2 substituted for G (G too
+short)". C2 is the same register as f.410 (Manteuffel's own French reports to Flemming), which is the calibration asked.
