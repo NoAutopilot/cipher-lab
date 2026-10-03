@@ -1,0 +1,17 @@
+scan	label	class	note	grade	sheet	thumb_url
+176	NL-HaNA_2.01.27.05_7_0176.jpg	prose	minute/register page with margin entries, facing page short notes; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/8ba36866-143f-4eea-a970-272b35ef062d
+177	NL-HaNA_2.01.27.05_7_0177.jpg	table	few figure columns left, right page blank; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/baf639cd-68a5-46f4-b460-2706805731f5
+178	NL-HaNA_2.01.27.05_7_0178.jpg	table	figures column left; 'Etat ...' ruled register right; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/aadbf23d-e115-4d86-8b74-f9d6fd99f624
+179	NL-HaNA_2.01.27.05_7_0179.jpg	table	ruled multi-column register both pages; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/fa36de42-2ddb-455e-a7fa-9a4dc58d0280
+180	NL-HaNA_2.01.27.05_7_0180.jpg	table	ruled register left; 'Etat ...' titled ruled table right; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/359116c7-f675-4a31-b280-8c36644ed460
+181	NL-HaNA_2.01.27.05_7_0181.jpg	table	ruled multi-column register both pages; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/a4958513-cce3-416c-ae0b-c2ff3eeebdd5
+182	NL-HaNA_2.01.27.05_7_0182.jpg	table	ruled register left; tipped-in list and slip with short prose right; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/7f7ccf2d-4778-4f8b-807b-a418dfaf8196
+183	NL-HaNA_2.01.27.05_7_0183.jpg	table	tipped-in slip and list over a ruled register; no digit grid	M	gaps16_sheet_1	https://service.archief.nl/api/file/v1/thumb/b389601a-0d81-4760-94bf-43293d6d1ec1
+184	NL-HaNA_2.01.27.05_7_0184.jpg	table	list left; 'Etat ...' table right with a tipped-in signed prose note (4-5 lines); no digit grid	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/d69c6592-4e01-495a-8203-b2d21608376a
+185	NL-HaNA_2.01.27.05_7_0185.jpg	table	same list/Etat spread with a tipped-in prose slip and red seal; no digit grid	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/a8bd2004-fb81-4d3f-b5d8-db17d0920da6
+186	NL-HaNA_2.01.27.05_7_0186.jpg	table	same list/Etat spread, tipped-in slip with red seal; no digit grid	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/d1617dc2-f06f-4459-8008-645ae53393fd
+187	NL-HaNA_2.01.27.05_7_0187.jpg	table	figures list left, right page blank; no digit grid	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/2e37e6c1-634c-4eab-ab14-bb33ac1b8cba
+188	NL-HaNA_2.01.27.05_7_0188.jpg	blank	both pages blank	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/a4d9418f-c5bc-4d3a-9202-c9c1aef0e724
+189	NL-HaNA_2.01.27.05_7_0189.jpg	blank	both pages blank (specks only)	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/fadfedb8-6f1f-48e8-bdf6-67f579638be6
+190	NL-HaNA_2.01.27.05_7_0190.jpg	blank	back board / end cover, blank	M	gaps16_sheet_2	https://service.archief.nl/api/file/v1/thumb/39d79950-ee20-4c31-b2c4-5882425e198f
+c188	invnr 12 leaf 188	cipher (control)	known-positive control, raw No.1 Triplicata, on both sheets (local images/188_med.jpg downscaled to 256 px; no request): digit-group rows visible each time	H	gaps16_sheet_1-2	local images/188_med.jpg
