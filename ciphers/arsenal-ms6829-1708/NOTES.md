@@ -1,4 +1,5 @@
 blocked
+Martin, Catalogue des manuscrits de la Bibliothèque de l'Arsenal vol. 2 (IA cataloguedesman02funcgoog full text), Ms 6829 entry (items 1-63, item 57 = Fol. 296, "Lettre chiffrée, non déchiffrée. 5 janvier 1708") read by this worker, with the BnF finding aid's item list for fols 265-316: the catalogue gives no sender, recipient, place or key, so no correspondent edition or calendar can be searched, and the leaf is undigitised (original-only reservation), so the image is unread.
 
 # Single "Lettre chiffrée, non déchiffrée" -- Bibliothèque de l'Arsenal, Ms-6829
 
@@ -64,3 +65,41 @@ original only, no `typecote=sub` (microfilm) offered, unlike M23/Ms-6314's MICRO
 
 Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 3 (the SRU query above needed 2
 tunnel-reset retries, `ws_closed_mid_exchange`, before the 200 that returned the 571 hits checked).
+
+## Web and blog check (CS-A2-I, 3 Oct 2026)
+
+Web searches (WebSearch, 6 queries): (1) `Arsenal Ms-6829 lettre chiffrée 5 janvier 1708 non déchiffrée` -- no hit for the item
+(TNA Discovery, BnF catalogue.bnf.fr and IA Martin vol. 2 only as generic results; the Martin hit is the volume read below);
+(2) `"Arsenal" "6829" "196ter" recueil de pièces XVIIe-XVIIIe siècles chiffre` -- bnf.fr collection pages, no hit;
+(3) `cipher letter 5 January 1708 Bibliothèque de l'Arsenal undeciphered` -- HistoCrypt and Yale hits, unrelated letters;
+(4) `site:scienceblogs.de klausis-krypto-kolumne Arsenal 1708 chiffre` -- Cipherbrain index pages only, no post on this item;
+(5) `cryptiana.blogspot.com OR ciphermysteries.com Arsenal Paris manuscript 1708 cipher letter` -- Cipher Mysteries Paris 7272 and
+?p=6866/7833 pages, none naming Ms-6829 (post bodies and comment threads of these hits not opened: the hit lists carry no
+Arsenal/1708 text, a gap noted, not a clear); Cryptiana blog and Tomokiyo's pages: no Arsenal-1708 hit in the same search.
+Blog site searches were done through the search engine, not each blog's own search box.
+Google Books API (country=US, keyed): `"lettre chiffrée" "5 janvier 1708"` 2 volumes, both the Arsenal/BN catalogues, no snippet.
+IA advancedsearch: 3 queries (date phrase, Arsenal+6829, Arsenal+Ms-6829+chiffre+1708), no item; be-api fts on the date phrase:
+5 volumes, buckets only (Arsenal catalogue among them), no snippet read.
+
+## Edition read (CS-A2-I, 3 Oct 2026)
+
+Martin vol. 2 djvu text (31,383 lines), Ms 6829 entry lines 21887-22145: item 57 reads "Fol. 296. Lettre chiffrée, non déchiffrée.
+5 janvier 1708." identical to the finding aid. The recueil is court copies and pamphlets (Siam harangue 1687, Charles II's will,
+a 1703 pamphlet, Louis XIV's will, quittances of the duc de Guiche); items 56 and 58 adjoin it (a printed-in-English character
+sketch, a leaf of a journal, 1709). Nothing names who wrote to whom. The cipher letter spans fols 296-301 (next item at fol. 302).
+Wider IA, Google Books and phrase searches above found no print of it. This is a search result, not a novelty verdict.
+
+## Premise check (CS-A2-I, 3 Oct 2026)
+
+(a) Folder's own files: NOTES.md, REQUEST.md mention no decipherment, gloss, clear copy or "attached" text beyond the cataloguer's
+"non déchiffrée": not found. (b) Other solvers' working files: cyphersolver (shallow clone, grep) and unsolved-ciphers (shallow
+clone, grep incl. catalogue/decode-catalog.csv) carry no file, render or key for Ms-6829 or ark cc87337r; the only "6829"
+and "1708" hits are unrelated (a Gallica manifest id, DECODE rows for BL Add MS 20443 Italian 1708-1713): not found. Aymeloglu's
+repo cited, no code copied. (c) Physical neighbours: unreachable -- the leaf and fols 295/302 are undigitised; the catalogue's
+neighbouring items (fols 280-295 printed pamphlet, fol 302 journal leaf) list no clear copy or decipherment, and the six-leaf
+span fols 296-301 is described as the one item: not found in catalogue text, image not viewed. (d) Recipient's side: unreachable
+-- no sender or recipient is known, so no receiving-country edition can be named. Standing gap: whoever reads the leaf must read
+a name from it first.
+
+Requests this section: archivesetmanuscrits.bnf.fr 1; archive.org 6 (Martin djvu 1, advancedsearch 3, be-api 1, plus 1 earlier
+redirect); googleapis 1; github.com 2 shallow clones; WebSearch 6.
