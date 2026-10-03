@@ -2927,11 +2927,12 @@
       "grade": "N3 after two audits (VERIFY-CEPPO-D2-1 00:27, VERIFY-CEPPO-D2-2 01:22 UTC 29 Sept, held in part), key published (Tomokiyo). Five cipher lines, 204 tokens, 134 at S; blind key rank 1 of 201 (z 5.1-5.3), power control 20/20.",
       "line": "Passages endorsed by the second audit: un gio[r]no auanti; ne ando sec[r]e-amente (each r the double-barred oval, graded M).",
       "document_id": "BnF fr.3251 f.87 (no.45), Birago to Nevers, 9 May 1571",
-      "completeness": "134/204 at S (two passages)",
+      "completeness": "120/205 endorsed at S (VERIFY-CEPPO-WP, 3 Oct 2026; was 113)",
       "unresolved_spans": "the rest at M/I/U",
       "audit_refs": [
         "AUDIT.md VERIFY-CEPPO-D2-1 f.87",
-        "AUDIT.md VERIFY-CEPPO-D2-2 f.87"
+        "AUDIT.md VERIFY-CEPPO-D2-2 f.87",
+        "AUDIT.md VERIFY-CEPPO-WP"
       ],
       "reading_version": "HARVEST-D2 decode as re-checked by VERIFY-CEPPO-D2-1/2"
     },
