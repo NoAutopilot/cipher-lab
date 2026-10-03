@@ -374,3 +374,18 @@ Rules: FILS-CLEAR's rules 2 and 3 unchanged (word read identically by blind pass
 the crop in one reconciliation = M; unsettled = [...], I if supplied from context; no decode used to settle a clear
 word). Agreement is reported as difflib ratio per line on lower-cased, punctuation-stripped text. Figures met in these
 lines are transcribed as figures and graded the same way but not decoded into the reading unless A=B.
+
+## FILS-RECON pre-registration (account 1, 3 Oct 2026, written 10:4x UTC before any reconciliation look)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-recon.md`. Crops: the FILS-UPPER crops already on disk, made by the
+commands pasted in "FILS-UPPER pre-registration" above (f43u_L01-L26, f43b_L03 = B11, f43m_L01-L04); no new fetch. For
+viewing at native resolution each line's two segments are re-laid as three 1200-px strips (s1 left half, s1 right half,
+s2 right half) with ImageMagick into scratchpad montages (not committed; they add no pixels). At most 3 looks: (1) U01-U13,
+(2) U14-U26, (3) B11 + M1-M4. Rules, fixed now:
+1. Each {A / B} split is settled from the crop to A, B, or a third reading. Grade per word: H = the letters are clear on the
+   crop and the reading equals A or B; M = probable (one or two letters uncertain, or a third reading matching neither blind
+   pass -- a single reader's third reading is never H); U = not legible enough to choose: kept as [...] (or {A / B} if the
+   two remain equally possible). No decode, no context-only supply: a word guessed from sense and not seen is U.
+2. Line grade: H if every word is H; M if >= 60% of words are H or M; else I (unchanged vocabulary in clear_f35r.tsv).
+3. Counts reported: splits settled A / B / third / left U, and words H / M / U per line.
+4. The interpretation line (date, addressee, subject) is marked as interpretation and uses only H/M words.
