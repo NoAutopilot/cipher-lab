@@ -814,7 +814,7 @@ Possibility (ii) is weaker than (i) but is not excluded. Only the leaf can settl
 
 Either way, Godefroy 144 and 145 are cipher letters from Nevers to the court in this exact campaign. As received
 letters, they are where a secretariat decipherment, interlined or on a separate sheet, would sit. A second lead, not yet
-tested: fr.3994 no.99 (f.131, on Gallica in the same series) is Nevers's own copy of Godefroy 145. If that copy carries
+tested: fr.3994 no.99 (f.131; **correction, A1B-VILL-994: fr.3994 is not on Gallica**, see below) is Nevers's own copy of Godefroy 145. If that copy carries
 the cipher passages in clear (the catalogue's lack of "avec chiffre" suggests it, but does not establish it, M), then
 fr.3994 f.131 plus Godefroy 145 is a ready plaintext/ciphertext pair in Nevers's 1595 cipher. Next cheap step, about
 $1: view fr.3994 f.131 on Gallica (btv1b... of fr.3994, canvas from the finding aid) and confirm whether it is in clear
@@ -935,3 +935,40 @@ calls (3 reads + 1 adjudication). Requests: gallica.bnf.fr 18 (2 info.json, 2 pa
 Verdict after A1B-VILL-TX2: `open`. Next: (e'') the owner settles the split pairs (#/K, 2/R, C/c, R/x, 1/i, V/W/w) in a sign sorter
 built from `images/tx2/` (ASKS row), then a reconciled ciphertext with f.148v L09-L10 restored; re-run families only after that,
 with controls injected at the measured error (~0.05-0.2).
+
+## fr.3994 f.131 check (A1B-VILL-994)
+
+Worker A1B-VILL-994, LANE-A1B, account 1, 3 Oct 2026, 17:38-17:42 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-994.md`.
+No vision call, no crops, no transcription, no reading.
+
+**Result: f.131 could not be viewed, because fr.3994 is not digitised.** The A1B-VILL-ASSENT section's phrase "on Gallica in
+the same series" was wrong. It contradicts this file's own VILL-SIBS finding (the fr.3994 record cd0e35499 carries no
+"Version numérisée"; Tomokiyo's League page says "Images not available online"). Rechecked this pass in two ways:
+- The finding aid for cc504266, re-fetched: the Français 3994 entry carries no Gallica link.
+- Gallica SRU `dc.type all "manuscrit" and gallica all "Français N"`: for N=3993 (positive control) it returns 1 record,
+  the fr.3993 *Mémoires de la Ligue* volume (btv1b9059229n). For N=3994 it returns 1 unrelated record (Albericus de
+  Roxiate, Dante commentary) and no Nevers volume.
+
+So `tools/gallica_folio.py` and `tools/iiif_lines.py` have nothing to run on, and the three questions cannot be answered
+from the image here:
+- Is f.131 all clear text? Not settled. The catalogue gives "Copie" with no "avec chiffre" (M).
+- Does it carry in clear a passage that Godefroy 145 has in cipher? Not settled.
+- Does any phrase match our f.148r-149r subject matter (Cambrai, Doullens, Fuentes)? Not settled. The catalogue says only
+  "au roy ... De St Quentin, le XVIe septembre 1595". Godefroy's inventory says "Siége de Cambrai".
+
+**16 Sept Nevers-to-Villeroy copy in fr.3994: none.** I re-read every Nevers entry in the whole volume's dépouillement (nos.1-145,
+26 Aug-30 Sept 1595). The Nevers-to-Villeroy copies are no.72 (f.93, 7 Sept au soir), no.85 (f.111, 11 Sept), no.128
+(f.173, Montdidier, 24 Sept) and no.143 (f.190, Rozières, 29 Sept). None is dated 16 Sept. This confirms ASSENT. A side match
+the catalogue offers but does not establish (M): Godefroy 143 (Nevers to the King, 11 Sept) corresponds to fr.3994 no.86 (f.112,
+"lundy au soir XI septembre", copie). If it does, it is a second possible copy/as-sent pair, but Godefroy 143 is not marked
+as being in cipher.
+
+**Next step.** f.131 needs a BnF reproduction. I added that leaf to the existing fr.3994 reproduction ask (ASKS 111, f.134)
+rather than filing a new row. The Godefroy 144-145 image request stays ASKS 123. Once both images exist, the pair test is to
+align Godefroy 145's cipher passages with f.131's text. That test is gated on both reproductions; it is not a step for a
+cloud worker.
+
+Requests this pass: archivesetmanuscrits.bnf.fr 2 (finding aid; one record URL that redirected), gallica.bnf.fr SRU 5.
+
+Verdict after A1B-VILL-994: `open`. Next steps are unchanged from A1B-VILL-TX2 ((e'') the sign-sorter settlement). The
+f.131/Godefroy 145 pair is blocked on two reproductions (ASKS 111 extended, ASKS 123).
