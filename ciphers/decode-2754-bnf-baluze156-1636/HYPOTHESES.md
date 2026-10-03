@@ -13,3 +13,12 @@ Earlier runs (24-25 Sept 2026) are logged in NOTES.md and summarised in the firs
 
 - 3 Oct 2026, FT4c (account-4): sign-inventory sweep, fr.4140 f.247 (Final advis, 1636): R 0.679 D 0 vs known non-key controls R 0.643/0.714/0.821 -- inside the control band, not a candidate; the statistic has no headroom in this family (shapes shared, values differ). Non-test of the table, not a negative. sweep_result.tsv.
 - 3 Oct 2026, FT4d (account-4): period key rebuilt from the interlinear gloss of fr.4140 f.247r (Final advis, 1636), 23 signs kept at grade C; leaf pairing control 0.787 vs shuffle median 0.206 / p99 0.346 (clears). Target f.157r: 4.824 bpc (57 of 137 tokens), p = 0.795 of 200 shuffled keys; positive control 3.680, p = 0.000. Negative, matched. f.247 and f.146r keys agree on 11 of 16 shared signs (likely one table). f247_trial.py / f247_trial.tsv.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 3 Oct 2026 07:15 | homophonic | N=138 K=38 restarts=8 corpus=lettresdecatheri01cathuoft_djvu.txt.gz+lettresdecatheri02cathuoft_djvu.txt.gz+lettresindites00marg_djvu.txt.gz | 1-3 | 0.147 (0.087-0.217) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | GAPS46 blind homophonic, fr16, N=138 K=38 |
+| 3 Oct 2026 07:16 | homophonic | N=138 K=38 restarts=32 corpus=lettresdecatheri01cathuoft_djvu.txt.gz+lettresdecatheri02cathuoft_djvu.txt.gz+lettresindites00marg_djvu.txt.gz | 1-3 | 0.312 (0.217-0.457) | not run (control-only) | - | no | GAPS46 restart check, 32 restarts |
+| 3 Oct 2026 07:18 | homophonic | N=138 K=38 restarts=128 corpus=lettresdecatheri01cathuoft_djvu.txt.gz+lettresdecatheri02cathuoft_djvu.txt.gz+lettresindites00marg_djvu.txt.gz | 1-3 | 0.309 (0.196-0.471) | not run (control-only) | - | no | GAPS46 restart check, 128 restarts |
+- 3 Oct 2026, GAPS46 (account-4): blind homophonic family_run, fr16 (not era-matched for 1636; no fr17 corpus in tools/data), N=138 K=38 ([blot] dropped). Matched control 0.147 at 8 restarts, 0.312 at 32, 0.309 at 128, gate 0.6: CONTROL BELOW GATE, target not run. Too-short at this N (rule 3), not a negative; at 128 restarts seed 2 scores better (-287.15) with lower recovery (0.196) than at 32 (-289.68, 0.217): wrong keys out-score the true one.

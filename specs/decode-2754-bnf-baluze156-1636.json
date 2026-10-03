@@ -1,0 +1,45 @@
+{
+ "slug": "decode-2754-bnf-baluze156-1636",
+ "name": "[Melchior de Sabran?] to 'Mr de ch. g^r', 9 Feb 1636, BnF Baluze 156 f.157r (DECODE R2754): the cipher runs inside the French clear text",
+ "date": "9 Feb 1636",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": [
+  "x 12 p f 6 t r tt u o 7x 4 10 9 e",
+  "n Z y 10 p ll 9 7x 4 t o e",
+  "n f 6 h Φ 4 p 9 y u nn E tt ll",
+  "d o 4 n 9 ff 4 E p C 9 9 u ff ll r m c^ o h Z p a g g",
+  "94",
+  "n tt [crossed-8] 4 Z p",
+  "u nn ll ff 9 94 9 b nn 4 u [ſcr] p 9 f c c^",
+  "9 7x 4 t o p",
+  "9 n 36",
+  "6 9 tt g n b l u",
+  "x 9 p u 4 m",
+  "n Z p E p ll 9 h o q t Φ c^ y E 12 m",
+  "9 n ll Z g c^ 9 c^"
+ ],
+ "ciphertext_source": "ciphers/decode-2754-bnf-baluze156-1636/ciphertext_reread.tsv (GAPS35, 3 Oct 2026: two blind Opus passes, 90.7 pct aligned agreement, reconciled from native Gallica btv1b9001409q f161 crops); one line per cipher line (13 lines); the one illegible '[blot]' token (L01 p1, grade L) dropped, so N=138 K=38 here (the folder's 139/40 counts include it)",
+ "alphabet": "mixed sign set: lower/upper letters, doubled letters (ll, tt, nn, ff), digits 4-94, marked signs (c^, 7x, Phi, crossed-8, long-s-cr); each whitespace token is one sign",
+ "design": "letter/doubled-letter/digit substitution of the Sabran-circle family (fr.4140 f.146r, f.247 design); runs interleaved with plain French, so word boundaries at run edges only",
+ "constraints": [
+  "six period/published keys negative with matched controls (HYPOTHESES.md); Sabran 1636 table retired for this leaf (rule 3 third-attempt clause)",
+  "no printed crib (Avenel t.V, Sourdis Correspondance I-III; GAPS40)",
+  "45 of 139 tokens at grade M"
+ ],
+ "cheap_tests_in_order": [
+  "1. blind homophonic family_run (tools/family_run.py --family homophonic), matched control first at N=138 K=38, fr16 corpus; expected to measure too-short"
+ ],
+ "matched_control": "family_run.py builds it: fr16 French text at the target's N and K, homophonic, solved blind with the same seeds and restarts",
+ "judge": {
+  "language": "fr",
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresindites00marg_djvu.txt.gz"
+  ],
+  "era_note": "no 17th-century French corpus in tools/data (fr16 = Catherine de Medicis letters c.1560-89 and Marguerite de Valois letters to c.1615; fr18 = c.1680-1790 memoirs/gazette). fr16 is chosen as nearest in register (court letters) and era (about 20-70 years before 1636); not era-matched, so a judge verdict here is of reduced reliability (rule 3, pt17->pt18 lesson); building fr17 from 1630s letters is the fix if a candidate ever reaches the judge"
+ },
+ "written": "3 Oct 2026, GAPS46-decode-2754-bnf-baluze156-1636 (account-4)"
+}

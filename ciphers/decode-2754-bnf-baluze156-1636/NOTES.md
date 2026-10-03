@@ -779,17 +779,60 @@ Grades (rule 4): no reading claimed (0 H, 0 C, 0 S, 0 M, 0 I). Status word uncha
 Requests: archive.org 6 (2 advancedsearch, 4 `_djvu.txt` downloads, >=2 s apart); googleapis.com 0. Report of what was found and
 where it was not found; no novelty class.
 
-## Remaining gaps (GAPS40, 3 Oct 2026)
-Read so far: 0 of 139 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, and the merged f.146r+f.247 table: 5.122 bpc, 0.700 of shuffles as good, positive control 3.654); Avenel t.V and Sourdis Correspondance I-III give no crib (GAPS40).
-- f.157r cipher runs (139 tokens, 40 sign types) - blocker: not-attempted; every reachable key is negative, Sabran's 1636 table is retired for this leaf (reread_trial.tsv), and no printed crib exists in Avenel t.V or Sourdis (GAPS40); next: write specs/decode-2754-bnf-baluze156-1636.json (N=139, K=40, French; tools/data has fr16 and fr18 but no 17th-century French corpus, so check the era match per rule 3 before trusting the judge) and run tools/family_run.py --family homophonic with the matched control first. A CONTROL BELOW GATE there is the measured too-short blocker, ~$2
-- fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
+## GAPS46: blind homophonic family_run, matched control first (2 Oct 2026 brief, run 3 Oct 2026, account-4)
 
-## Escalation (GAPS40, 3 Oct 2026)
+This runs GAPS40's Verdict step and nothing else. Intake gate (pasted): `decode-2754-bnf-baluze156-1636: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Spec.** `specs/decode-2754-bnf-baluze156-1636.json` (new): the GAPS35 reconciled f.157r runs, one line per cipher line,
+13 lines. The one illegible `[blot]` token (L01 p1, grade L) is dropped, so **N=138, K=38**. The folder's earlier "139
+tokens, 40 types" counts include the blot; 39 is the true type count with it. Judge corpus: **fr16** (Catherine de
+Médicis letters c.1560-89, Marguerite de Valois letters to c.1615). `tools/data` has no 17th-century French corpus. fr18
+starts about 1680. So fr16 is the nearest in register (court letters) and era, about 20-70 years early. It is **not
+era-matched**, which the spec's `judge.era_note` records (rule 3, pt17->pt18 lesson). No candidate reached the judge here.
+
+**design_prior.py** (`ciphers/.../ciphertext_reread.tsv`, 139 tokens): the multi-sign class is nearest (d=0.16, envelope
+0.26, null_p05 0.15, "not above null"). letter-for-letter d=0.43, code d=0.92 and mixed d=0.96 are all "plausible".
+Shuffled-input false-positive rate 0.055. The advisory ranking is syllabary 0.19 = nomenclator 0.19, homophonic 0.22. At
+this N the statistics do not separate the families. Homophonic is among the three nearest, so the step's family is a
+fair choice.
+
+**family_run.py --family homophonic** (control first, fr16 plaintext at N=138 K=38, seeds 1-3, gate 0.6):
+
+| restarts | control recovery, mean (seeds 1/2/3) | target |
+|---|---|---|
+| 8 (the step as named) | **0.147** (0.087 / 0.217 / 0.138) | not run: CONTROL BELOW GATE (exit 3) |
+| 32 | 0.312 (0.457 / 0.217 / 0.261) | not run (control-only) |
+| 128 | **0.309** (0.471 / 0.196 / 0.261) | not run (control-only) |
+
+Raising restarts from 8 to 32 doubles the mean. From 32 to 128 it stays flat (0.312 -> 0.309), so the plateau is about 0.31,
+half the gate. Search effort is not the limit. On seed 2 the anneal reaches a *better* n-gram score at 128 restarts
+(-287.15) than at 32 (-289.68) while recovery *falls* (0.217 -> 0.196). Wrong keys out-score the true one: N=138 is below
+this family's unicity point at K=38.
+
+**Verdict: CONTROL BELOW GATE = too-short at this N (rule 3), not a negative.** A blind homophonic solve cannot recover a
+known French text of f.157r's own length and sign count. So nothing can be concluded from running the target, and it was
+not run. Rows: HYPOTHESES.md (3 rows, 3 Oct 2026 07:15-07:18 UTC). Grades (rule 4): no reading claimed (0 H, 0 C, 0 S,
+0 M, 0 I). Status word unchanged: **open**. Vision calls 0. Requests: none (disk only). Report of what was found and where
+it was not found; no novelty class.
+
+## Remaining gaps (GAPS46, 3 Oct 2026)
+Read so far: 0 of 138 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, merged f.146r+f.247: 5.122 bpc, 0.700 of shuffles as good); no printed crib (GAPS40); blind homophonic control 0.31 at 128 restarts vs gate 0.6 (GAPS46).
+- f.157r cipher runs (138 tokens, 38 sign types) - blocker: too-short; the blind homophonic control at the target's own N and K plateaus at 0.31 recovery (0.147 at 8 restarts, 0.312 at 32, 0.309 at 128; gate 0.6; HYPOTHESES.md 3 Oct 2026), so a blind solve is below unicity here; only a key or crib reopens it, and every reachable key is negative (Sabran 1636 table retired) and no print carries a crib (GAPS40)
+- fr.4141 Genoa cipher letters (ff.276-591, most of the 17), the likely home of "Mr de ch. g^r"'s own table - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
+
+## Escalation (GAPS46, 3 Oct 2026)
 - [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
 - [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636 and their merge, all negative with matched controls
 - [x] print: Avenel t.V whole-volume full-text search and Sourdis Correspondance I-III searched, no letter, summary or crib (GAPS40)
-- [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it
+- [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it; blind homophonic rebuild measured too-short (GAPS46)
 - [x] image-check: f.157r re-read from native iiif_lines crops, 2 blind Opus passes 90.7% + reconciliation (GAPS35)
 - [n/a] retry: no transient failure to retry this pass
-Verdict: keep going: 1 internal gaps; cheapest next: spec plus blind homophonic family_run with matched control first at N=139 K=40 (expected to measure too-short), ~$2
+Verdict: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction order)
+
+## While waiting (GAPS46, 3 Oct 2026)
+The one action that depends on nobody: build an era-matched 1620s-1640s French corpus (`tools/data/fr17`: for example
+Richelieu's letters in Avenel t.IV-V, already on Internet Archive, or the Sourdis Correspondance) and record its per-fold
+false-negative spread (rule 3). The fr16 judge is not era-matched for 1636. Any reading of f.157r from a fr.4141 table
+would need this corpus. About 12 minutes, per V6-PTCORP. Suggestion only; not run here.
