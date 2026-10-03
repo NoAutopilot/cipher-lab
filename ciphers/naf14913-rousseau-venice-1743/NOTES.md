@@ -573,24 +573,69 @@ Step run (FT4e's Verdict): native-resolution eye check of the f.249 groups 253, 
 
 Not found in: no print or phrase search was run this step. Rule 10: no novelty class here.
 
-## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, FT4g, 3 Oct 2026)
+## FT4h-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step 1 (FT4g's Verdict): native view of f.273r and f.274r for the f.274 slip's cipher passage.
+- Canvases from `python3 tools/gallica_folio.py btv1b525174513 --folio 273` / `--folio 274`: 273r = f559, 273v = f560, 274r = f561,
+  274v = f562 (labels; the volume's offset changes at f595, so labels, not the formula). 273r fetched at 1000 px (`images/lowres/v559_273r_1000.jpg`);
+  273v/274r/274v re-read from FT4b's 1000 px files.
+- Native regions: `python3 tools/iiif_lines.py --ark btv1b525174513 --canvas 561 --region 450,1700,3100,4250 --out ciphers/naf14913-rousseau-venice-1743/images/ft4h --prefix f274r --debug`
+  (18 lines) and `... --canvas 559 --region 250,1150,3200,5400 ... --prefix f273r --debug` (13 lines). The worker read the debug overlays.
+- **What is there.** Ff.273r-274r are one complete clear letter, Lorenzi to Montaigu, "A Florence le 8e Aoust 1744" (red number 2078, "M. le Comte de
+  Montaigu" at the foot of 273r). It runs 273r -> 273v -> 274r without a break: 273v ends "...que ces batimens, aussi bien" and 274r opens "que ceux que le
+  Commandant du detachement de l'escadre Angloise fait fretter a Civita Vecchia ...". It is signed "Lorenzi" on 274r. 274v is blank (show-through only).
+  There are **no numeral groups** on any of the four pages: none in the text, none interlinear, none in the margins. There is **no pasted slip** on 273r or 274r,
+  and the text on both is in the letter's own secretary hand, not the slip hand of ff.206r/214r/217r/250. Group count: 0. Clear copy: the whole letter is clear.
+- So the finding aid's "f.274" has no cipher+slip pair on ff.273-274 as they are now bound. Untested possibilities (I): the slip was detached or moved;
+  the finding aid's folio is off; or Rousseau's "decipherment" here means the clear text of 273r-274r itself, i.e. a fully ciphered letter whose clear
+  copy replaced it (the hand is not the slip hand, so this is the weakest of the three). Not looked for this step: leaves outside 273r-275r.
+
+Step 2 (Verdict's second step, run because step 1 ended well under 40 pct of cap): f.213r-v <-> f.214r transcription + gate_pair.py.
+- Pre-registration `align/PREREG-FT4h.md` (commit b977f153) was pushed before any transcription or score. It sets FT4b's gate unchanged, MAXLEN 12, n 200,
+  limit 20, seed 1.
+- The passage starts on **f.213r**, not 213v. It follows the clear words "...plus puissante en Italie", runs 5 numeral lines on 213r and 3 on 213v, and
+  ends before "Le passage en France du fils aine de Mr le Chevalier de St George". That gives **84 groups** (FT4b's 213v-only estimate was about 30).
+  Crops: `... --canvas 439 --region 1100,3330,3050,1300 ... --prefix f213r`, `... --canvas 440 --region 650,650,3500,800 ... --prefix f213v`,
+  `... --canvas 441 --region 200,2300,2500,2050 ... --prefix f214r` (all `--debug`, `images/ft4h/`).
+- Reads: pass A was the worker's own read (`align/ft4h_passA.txt`); pass B was one blind Opus subagent on the crops only (`align/ft4h_passB.txt`). They agree on
+  **83 of 84** first readings. The one split, 213v L01 g11 270|210, was reconciled to **270** from the crop. Kept a|b: 835|833, 573|513, 713|113. The 213r "2"
+  is underlined in the MS. -> `ciphertext_f213.txt`.
+- Slip f.214r ("M. Lorenzi. du 1er fevrier 1744", 9 lines, read by the worker) -> `slip_f214r.txt`, 262 letters. Expansions at grade I: 2 -> deux,
+  Rep.e -> Republique, R. -> Roi, Sard.e -> Sardaigne.
+- **Gate** (`align/gate_f213_FT4h.out`): the passage carries **6 occurrences** of the ten C codes (22 x3, 722 x2, 501 x1). That is at least 5, so this is not
+  a non-test on the power floor. Result: **REAL H = 0, "timeouts on higher pin sets: False"**. The run was stopped after the REAL line, as FT4e and FT4g did,
+  because no control can change a gate that H = 0 already fails.
+- **Diagnostic** (`align/f213_diag.py`, a copy of f249_diag.py, not a gate; `align/f213_diag.out`): with the three pins the pair is not consistent (proved False).
+  With **no pins** it is also not consistent (proved False). Each of 10 repeated codes made distinct one at a time still gives False. 8 others (52, 121, 306, 317,
+  605, 689, 746, 835) time out at 40 s. So this pair, like f.249/f.250, has **no repetition-consistent exact-coverage fit as transcribed**. The H = 0 says
+  nothing about the f.206 key: it is a **non-test of the key**, not a FAIL (rule 3: the instrument cannot fit the pair at all).
+- Reading: 2 of the 3 new pairs (f.249, f.213) are infeasible under the strict model, while f.216v fits. Since the f.213 transcription agrees 83/84 blind,
+  the model's assumptions are now the likelier fault than the reads (I, untested). Candidate faults: the slip's abbreviations and expansions (Roi/Sardaigne/
+  Republique/deux may be coded otherwise, e.g. as single nomenclator groups for the abbreviated form, which exact coverage allows only if the expansion
+  letters match); a slip that paraphrases or drops a word; or polyvalent codes. This is the first scoring of this pair, so the third-attempt clause does not apply.
+- Grades: no reading changed; key.tsv untouched. Requests: gallica.bnf.fr 7 (2 x 1000 px: 273r, 213r; 5 iiif_lines native region fetches: 274r, 273r, 213r, 213v, 214r), >= 1.5 s apart, all HTTP 200.
+  Vision: 1 subagent call (Opus 5.5) + the worker's own reads.
+
+Not found in: no print or phrase search was run this step. Rule 10: no novelty class here.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, FT4g, FT4h, 3 Oct 2026)
 Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced); pooled f.206+f.216v gate PASS (FT4d, Hp 23 vs p95 18 / 0): 208 se and 781 e to C, reading C 23 M 39
 - f.249r-v <-> f.250r-v pair (111 groups) - blocker: open-codes; transcribed and scored FT4e. Both gates are non-tests: the pair has no repetition-consistent fit (proved with no pins). FT4g eye check confirmed 253, 242 and 66 at all 7 occurrences (2 blind passes + reconciliation). Both gates re-run unchanged gave identical results (H 0 proved, Hp 0). The strict-consistency instrument is [retired] for this pair; next: a one-edit/one-polyvalent-code alignment with a control that can differ, script only, ~$1.5
-- f.213v(+213r?) <-> f.214r pair (about 30+ groups) - blocker: not-attempted; located FT4b; next: transcription + gate_pair.py, ~$3
+- f.213r-v <-> f.214r pair (84 groups) - blocker: open-codes; transcribed and scored FT4h (83/84 blind agreement; 6 C-code occurrences). The gate gave REAL H 0, and the pair has no repetition-consistent fit even with no pins (proved), so it is a non-test of the key; next: the same one-edit/one-polyvalent-code alignment as f.249, run on both infeasible pairs with a control that can differ, script only, ~$1.5
 - 172 qu'ils vs qu'il - blocker: open-codes; FT4e: 172 = quils forces 208 = e on f.249 against 208's C "se" (0 joint chunks); 172's C grade rests on f.206 alone
-- f.274 slip's cipher passage - blocker: not-attempted; not on 273v/274r/274v/275r at 1000 px (FT4b); next: view 273r and 274r at native resolution for a pasted slip, ~$0.5
+- f.274 slip's cipher passage - blocker: not-attempted; FT4h native view: ff.273r-274r are one complete clear Lorenzi letter of 8 Aug 1744, with 0 numeral groups, no slip, no interlinear text, and 274v blank. The finding aid's f.274 pair is not on ff.273-275 as bound; next: a 1000 px contact-sheet sweep of ff.270-280 for a displaced slip or numeral passage, ~$1
 - M-graded splits of multi-group stretches (39 tokens) and 336 - blocker: open-codes; FT4d pooled run fixed 208 and 781, left 306/824/444/121/10/420 with 3-15 joint chunks and 338 untied; the third passage (f.249) can fix more once its fit is restored (FT4e)
 - Hatzenberger 2015 read - blocker: waiting-on ASKS row 76; Cairn is DataDome-blocked from the cloud, JSTOR reread stable/24719303 queued (CHECK-NAF)
 
 ## Escalation (3 Oct 2026; revised FT4b)
-- [x] siblings: ff.214/217/250/274 slips and facing leaves viewed at 1000 px (FT4b): three cipher+slip pairs found (216v/217r, 249v/250, 213v/214r), f.274's not found
+- [x] siblings: ff.214/217/250/274 slips and facing leaves viewed at 1000 px (FT4b): three cipher+slip pairs found (216v/217r, 249v/250, 213r-v/214r), f.274's not found; FT4h native view of 273r/274r: a clear letter, no numerals
 - [x] clear-pages: the f.206r slip is the clear text of this passage, used as the plain side
 - [n/a] known-keys: no Lorenzi-Montaigu key table found in Souchon or the solver repositories
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
 - [x] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); f.249/f.250 scored FT4e as a non-test (pair infeasible as transcribed); FT4g eye check confirmed 253/242/66, and both gates re-run unchanged gave identical results (strict-consistency instrument [retired] for this pair)
-Verdict: keep going: 5 internal gaps; cheapest next: view f.273r and f.274r at native resolution for the f.274 slip's pasted cipher passage, ~$0.5 (then f.213v/214r transcription + gate_pair.py, ~$3; f.249 relaxed alignment, ~$1.5)
+Verdict: keep going: 5 internal gaps; cheapest next: a one-edit/one-polyvalent-code alignment on the two infeasible pairs (f.249/f.250 and f.213/f.214r) with a control that can differ, script only, ~$1.5. Then a 1000 px sweep of ff.270-280 for the displaced f.274 pair, ~$1.
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
@@ -615,4 +660,7 @@ naf14913-rousseau-venice-1743` -> "partial (line 1) -- edition/page or full-text
 `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
 
 Checks (FT4g, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 0 step(s) untried", exit 0;
+`python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
+
+Checks (FT4h, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 0 step(s) untried", exit 0;
 `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.

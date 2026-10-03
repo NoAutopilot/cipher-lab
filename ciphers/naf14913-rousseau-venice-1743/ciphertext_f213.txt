@@ -1,0 +1,13 @@
+# BnF NAF 14913 f.213r L02 - f.213v L03 (Gallica btv1b525174513 canvases 439/440), numeral passage after the clear words
+# "...plus puissante en Italie" (213r) and before "Le passage en France du fils aine de Mr le Chevalier de St George" (213v).
+# FT4h (account-4) 3 Oct 2026: native iiif_lines crops images/ft4h/f213r_*, f213v_*; pass A worker (align/ft4h_passA.txt), pass B one
+# blind Opus subagent (align/ft4h_passB.txt); 83/84 first readings agree; 213v L01 g11 270|210 reconciled 270 from the crop (same hooked 7
+# as 746/317 on the line; plain 1 in 121 differs). a|b = unsettled (most likely first). 213r L02 "2" is underlined in the MS.
+L02r 317 52 347 63 834 746 2 835|833 826 306
+L03r 835 52 605 22 739 90 689 24 722 573|513 594 52
+L04r 55 745 576 506 22 338 121 306 62 121 468 46
+L05r 746 130 567 65 837 25 484 725 588 713|113 376
+L06r 810 420 268 444 664 63 306 165 468 368 46
+L01v 501 781 664 746 317 755 552 22 95 572 270 121
+L02v 360 444 329 207 10 368 426 90 689 24 722
+L03v 121 317 52 645 605

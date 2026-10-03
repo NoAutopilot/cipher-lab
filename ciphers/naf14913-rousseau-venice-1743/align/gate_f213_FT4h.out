@@ -1,0 +1,4 @@
+groups 84, distinct 58, slip letters 262, maxlen 12
+C-code occurrences in passage: {'22': 3, '722': 2, '501': 1} total 6
+repeated codes: {'317': 3, '52': 4, '63': 2, '746': 3, '835': 2, '306': 3, '605': 2, '22': 3, '90': 2, '689': 2, '24': 2, '722': 2, '121': 4, '468': 2, '46': 2, '444': 2, '664': 2, '368': 2}
+REAL: H = 0; pinned set {}; timeouts on higher pin sets: False

@@ -1,0 +1,6 @@
+# BnF NAF 14913 f.214r, slip pasted after f.213v (Gallica canvas 441), headed "M. Lorenzi. du 1er fevrier 1744", period decipherment of
+# the numeral passage f.213r L02 - f.213v L03. FT4h (account-4) 3 Oct 2026: worker read of images/ft4h/f214r_lines_debug.jpg (native region).
+# Diplomatic: "Par la conquête des 2 Siciles. si la Rep.e de / Venise garantissoit la possession actuelle / de touts les Souverains qui ont des - /
+# Estats dans cette Province, le R. de - / Sard.e y trouveroit un autre avantage / en ce que les Pais qui lui ont été / cédés par le Traité de Worms lui /
+# seroient garantis par la même / Rép.e ./."  Expanded (grade I): 2 -> deux, Rep.e/Rép.e -> Republique, R. -> Roi, Sard.e -> Sardaigne.
+Par la conquete des deux Siciles si la Republique de Venise garantissoit la possession actuelle de touts les Souverains qui ont des Estats dans cette Province le Roi de Sardaigne y trouveroit un autre avantage en ce que les Pais qui lui ont ete cedes par le Traite de Worms lui seroient garantis par la meme Republique
