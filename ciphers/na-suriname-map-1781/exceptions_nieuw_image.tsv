@@ -8,3 +8,49 @@ line	pos	value	grade	reason
 2061_bat_L04	10	s	H	GAPS16 blind image call: readers' y is the psi sign, Nieuw S row psi 0.75, runner-up D row 0.1 (Q1 10); gives 'yser' (iron) after the gun calibre, as on L05/L06
 2061_bat_L10	26	p	M	GAPS16 blind image call: readers' g is a straight-descender q, Nieuw P row q 0.6, runner-up G row 9 0.2 (Q3 25); mapped by neighbours, reading not improved
 2061_bat_L10	29	p	M	GAPS16 blind image call: readers' g is a straight-descender q, Nieuw P row q 0.6, runner-up G row 9 0.2 (Q3 28); mapped by neighbours, reading not improved
+2077_L02	23	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L03	0	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L03	19	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L05	10	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L05	15	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L05	22	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L05	43	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L05	66	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L06	10	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L06	41	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L08	3	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L08	8	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L08	29	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L08	48	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L09	11	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L09	35	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L10	7	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L10	19	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L10	27	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L11	10	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L11	23	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L11	63	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L11	67	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L12	8	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L12	14	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L12	28	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L12	37	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L14	5	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L14	6	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L14	11	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L14	18	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L15	0	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L15	5	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L15	47	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L18	3	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L18	8	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L18	14	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L18	19	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L18	25	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L19	0	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L19	8	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L19	20	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L19	26	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L20	13	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L20	20	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
+2077_L20	21	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
