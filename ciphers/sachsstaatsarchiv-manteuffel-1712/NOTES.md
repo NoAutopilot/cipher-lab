@@ -81,7 +81,59 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 ## A2-SAX, 3 Oct 2026 (LANE-A2PUSH, account 2): NASG 1894-98 sweep and the Loc. 694/10 image
 
 Intake gate pasted before work: `sachsstaatsarchiv-manteuffel-1712: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
-Note: the lane brief said this NOTES.md ends in "## Remaining gaps"/"## Escalation"; it did not (status `blocked`,
+Note: the lane brief said this NOTES.md ends in "## A2-SAX2, 3 Oct 2026 (LANE-A2PUSH, account 2): Loc. 694/08 and /09 frames, sampled inventory
+
+Intake gate pasted before work: `sachsstaatsarchiv-manteuffel-1712: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
+
+**Records and image counts.** Catalogue records quoted first (access playbook):
+https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68 -- "Archivaliensignatur
+Loc. 00694/08 · Datierung 1712", Digitalisat tab; Enthält u. a.: "Nachrichten vom Berliner Hofe.- Kriegsnachrichten.-
+Personalien des Grafen Manteuffel.- ... Peter der Große in Berlin, 1712 ...".
+https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=c5158a8f-281c-49a8-985a-b0aa75400e17 -- "Loc. 00694/09 ·
+Datierung 1713", Digitalisat tab; "Nachrichten vom Berliner Hof.- Graf Manteuffel Personalia.- Verlobung mit Baronne
+von Wackerbarth.- Krankheit und Tod des Königs von Preußen, Friedrich I. ...".
+The viewer's frame list is a plain JSON file, `https://www.archiv.sachsen.de/digitalisate/<guid>/files.json`
+(found in `/js/archiv.js`): **694/08 = 592 frames, 694/09 = 302 frames** (894 in all; each a two-page microfilm
+spread, ~4340x3860, ~1.5 MB). Every frame URL is in `images/loc694-08-09/frames.tsv`. The viewer's `/preview/`
+images are 150x134 px, too small to tell code groups from words.
+
+**Why a sample, not every frame.** 894 full-size frames is ~1.3 GB and 894 requests to one host, past the
+good-citizen limit ("a few hundred requests per host per session") and this step's 35-minute box. So 17 frames
+were fetched, evenly spread (694/08 every 70th from 0020, 694/09 every 40th from 0020, plus 0295), read on 1000-px
+contact sheets, and the two with code groups re-read at 1600-px crops. Only those two are committed
+(`images/loc694-08-09/694-08_0510.jpg`, `694-08_0580.jpg`, in `images/manifest.json`; folder 14 MB, under 30).
+Per-frame result: `frame_inventory.tsv` (loc, frame, document, cipher y/n, interlinear decipherment y/n, clear text).
+
+**Inventory (17 frames).** Cipher present: **2 of 17 sure (694/08 frames 0510, 0580), 1 possible (694/09 0060)**,
+14 without cipher. The reports are French clear text with **cipher used for words and passages inside the clear
+text** (partial encipherment, number groups underlined and separated by points), not whole-cipher letters. Other
+sampled frames: Flemming's own minutes to Manteuffel (08_0160, 08_0370, 09_0295), German enclosures (08_0090, 09_0260),
+an account signed by Manteuffel (09_0220).
+- 694/08 frame 0510 (Manteuffel to Flemming, Berlin, Nov 1712, no.96, f.409): underlined groups, e.g. (eye read
+  at 1600 px, grade M) "840.865", "403.1056.974", "344.226.213", "...272.155.583.586.351.77", "...569.403.539.237.601".
+  No interlinear decipherment seen above these groups.
+- 694/08 frame 0580 (f.468): groups 191, 187, 157, 26, 66 in the text; **"Stenbock" written above 191** and further
+  small glosses above other groups -- an interlinear (period or archival) decipherment on this leaf, hand not judged.
+
+**Finding that bears on the key step.** Frame 0510's codes run up to at least **1056**, while Krauske's table
+(Loc. 694/10) as eye-checked by A2-SAX covers codes 1-401 plus a column of composite numbers. Either the table's
+composite column covers the high codes, or 1712 letters used a larger code than Krauske tabulated, or the numbers
+are misread at this resolution (M). Not settled here. Frame 0580 (codes under 200, with glosses) is the better
+first test frame: its glosses act as a check on Krauske's table (if Krauske's 191 reads Stenbock, the table and
+this leaf agree on one code).
+
+**Key-application step named, not run (per brief):** (a) Krauske's table ff.2-5 (images/0004-0007.jpg): line crops
+with `tools/iiif_lines.py --image`, two blind passes + one reconciliation into `key.tsv` (grade H per code, M where
+the passes split), ~$5 (about 9 vision calls at the per-pass rate); (b) 694/08 frame 0580: line crops, two blind
+passes of the code groups and glosses + one reconciliation into a ciphertext file, ~$2; (c) `tools/decode_key.py
+ciphers/sachsstaatsarchiv-manteuffel-1712` on that frame, with the leaf's own glosses as the known-answer check
+(rule 3: the gloss comparison is the control). Total ~$7.
+
+Requests: www.archiv.sachsen.de 2 record pages + 1 archiv.js + 2 files.json + 1 preview + 17 full-size frames = 23.
+Vision: 5 contact-sheet reads + 1 preview + 2 crops by this worker = 8, no subagent calls.
+Not done: 877 of 894 frames not inventoried (see gaps).
+
+## Remaining gaps"/"## Escalation"; it did not (status `blocked`,
 which gaps_check skips). The sections are written below for the first time, from this step.
 
 **(1) Neues Archiv für sächsische Geschichte vols. 15-19 (1894-98).** Instead of be-api snippet search, the full
@@ -137,17 +189,17 @@ Requests: archive.org 5 (djvu.txt) + 1 (advancedsearch); www.archiv.sachsen.de 3
 Vision: 2 reads of reduced frames by this worker, no subagent calls.
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX)
-Read so far: 0 of the 1712-13 reports read; Krauske's key table imaged (7 frames, ff.1-5), untranscribed
-- Krauske's code table ff.2-5 - blocker: not-attempted; images on disk (A2-SAX step above); next: line crops with tools/iiif_lines.py --image + two blind passes + reconcile into key.tsv, ~$5
-- Loc. 694/08 and /09 ciphered reports - blocker: not-attempted; digitisat link on both result rows (A2-SAX step); next: open both records, quote the Digitalisat tab's image count, fetch with images/manifest.json, ~$1
+Read so far: 0 of the 1712-13 reports read; Krauske's key table imaged (7 frames, ff.1-5), untranscribed; 17 of 894 report frames inventoried, 2 carry code groups (694/08 0510, 0580)
+- Krauske's code table ff.2-5 and its application - blocker: not-attempted; table images and cipher frame 694/08 0580 on disk (A2-SAX2); next: line crops with tools/iiif_lines.py --image, two blind passes + reconcile into key.tsv, then the 0580 code groups the same way and decode_key.py with the leaf's own glosses as the check, ~$7
+- Loc. 694/08 and /09 ciphered reports, 877 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 17 sampled (A2-SAX2: 2 cipher, 1 possible); next: full-size fetch in batches of <=250 frames per session with a 1000-px contact-sheet y/n pass, ~$2 per batch
 - print: Haake's Flemming biography, the Wackerbarth paper's "Chiffren de S. Exc. Mgr. le C. de Flemming" citation - blocker: not-attempted; NOTES 24 Sept steps (2)-(3); next: IA/Google Books fts for Haake + read the paper, ~$1
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
-- [n/a] clear-pages: the key table is itself the clear apparatus; no clear sibling letters identified yet
+- [ ] clear-pages: 694/08 frame 0580 carries interlinear glosses above code groups (Stenbock over 191, A2-SAX2) -- a known-answer check for Krauske's table; not yet read
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026)
 - [ ] print: NASG 1893-98 done, no print found; Haake and the Wackerbarth paper still to read
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
-- [ ] image-check: 694/10 imaged; 694/08-09 images to fetch and check
+- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 17 sampled (2 cipher, 1 possible, A2-SAX2 3 Oct 2026), 877 to check
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: open Loc. 694/08 and /09 records, quote the Digitalisat image count and fetch the frames with a manifest, ~$1
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe Krauske's table ff.2-5 into key.tsv (line crops, 2 blind passes + reconcile) and apply it to 694/08 frame 0580 with decode_key.py, its own glosses as the check, ~$7

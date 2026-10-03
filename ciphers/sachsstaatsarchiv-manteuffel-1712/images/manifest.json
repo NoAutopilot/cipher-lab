@@ -84,6 +84,27 @@
    "content": "frame 0008: f.5 code table 224-401 and composite numbers (names, places, words)",
    "fetched": "2026-10-03",
    "by": "A2-SAX"
+  },
+  {
+   "file": "loc694-08-09/694-08_0510.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0510.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68",
+   "bytes": 1508748,
+   "sha256": "914cc03bd531a4fb99c43d84dd4ec0ced9af64c8386ed4c2d2dfc72264c9c1fe",
+   "content": "Loc. 694/08 frame 0510: cipher frame (see frame_inventory.tsv)",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX2"
+  },
+  {
+   "file": "loc694-08-09/694-08_0580.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0580.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68",
+   "bytes": 1506312,
+   "sha256": "87b9a48263cf8980df8d85cc810e03be449fd292370e5d8c204b4d15195a06da",
+   "content": "Loc. 694/08 frame 0580: cipher frame (see frame_inventory.tsv)",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX2"
   }
- ]
+ ],
+ "loc694_08_09_note": "Loc. 694/08 (592 frames) and 694/09 (302 frames): every frame URL in loc694-08-09/frames.tsv (from files.json); only 2 cipher frames committed (folder under 30 MB). Re-fetch: curl -A Mozilla/5.0 the URL, >=1.5 s apart."
 }
