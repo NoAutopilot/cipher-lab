@@ -332,3 +332,58 @@ probes + 5 retries, two canvases (40, 82) unresolved after their retry). No altc
 failures were transient connection resets, one retry each, per the good-citizen rule. No native-resolution
 leaf fetched (nothing pinned); probe images kept in scratchpad only, not committed, per the same practice
 established on the sister target. `images/canvas_sweep.tsv` updated with all 53 new rows.
+
+## Web and blog check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026). The item has no established sender, recipient or date, and no clear text, so the sender+date
+and phrase queries use the finding aid's own words:
+1. `"Avis de Flandre" chiffrés Clairambault 1161 Noailles` (descriptive title + family): BnF finding aids (Clairambault 1058-1110,
+   1111-1239, 312-452), Wikipedia Noailles pages, unrelated pages. No discussion of the item.
+2. `"Clairambault 1161" chiffre` (shelfmark + chiffre): company-register noise, Wikipedia/FranceArchives on Pierre Clairambault, Gallica
+   records for Lauer's *Catalogue* tomes I and III and Clairambault's own 1727 *Inventaire*. Nothing on this item.
+3. `Noailles 1688 avis de Flandre chiffre espion lettre` (sender family + volume date): FranceArchives Noailles items, an SHD Vincennes
+   manuscripts list (galleys/bailli de Noailles 1677-89), Wikipedia. No decipherment or discussion.
+4. Phrase query: the finding-aid string "Avis de Flandre, chiffrés" is query 1's quoted phrase; it has no other distinctive text.
+Blog site searches: scienceblogs.de (`Paget 1713 Chiffre OR Clairambault OR Noailles Flandre`, run jointly with clairambault296) -- Catinat,
+Soglia, Dorabella and other posts, none on Noailles, Flanders or Clairambault 1161; cryptiana.blogspot.com + cryptiana.web.fc2.com
+(`"Avis de Flandre" OR Noailles cipher`) -- no indexed hit. Local snapshot sources/cryptiana/ grepped: "Avis de Flandre" 0,
+"Clairambault 1161" 0. "Noailles" hits (elizabeth.htm, mary.htm, henryii/iii.htm, frencheastern.htm) are the 16th-century ambassadors Antoine, Gilles
+and François de Noailles (1553-1570). One of them, François, is the bishop of Dax whose 20 Dec 1570 letter shares this folio note,
+but those hits are Tomokiyo's ambassador ciphers, not this item. ciphermysteries.com (`Noailles Flanders cipher 1688`): no relevant hit.
+Also grepped github.com/el-descifrador/cabinet-noir (Descifrado, *Cabinet Noir* v1.0, 29 Sept 2026, CC BY 4.0; shallow clone HEAD 47b6db9)
+for "clairambault 1161", "avis de flandre", "btv1b90010063": 0. Its "noailles" hits are 1743 clear passages in loss-debrose-1742-1746
+(a different item). Result: nothing found.
+
+## Premise check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+- (a) Folder's own mentions -- not found. No decipherment, gloss or clear copy is mentioned anywhere in the folder. The only leaf image
+  on disk (images/f106_full.png) is a Villeroy portrait at true folio 83 (Y3, Y7).
+- (b) Other solvers' working files -- not found. Fresh shallow clones on 3 Oct 2026, cyphersolver (HEAD 4aedb40) and unsolved-ciphers
+  (HEAD d2800bb), grepped for "clairambault 1161", "avis de flandre", "btv1b90010063": 0 in both. Cabinet Noir: 0.
+- (c) Physical neighbours -- not found. Y7, ZX2-GAL and canvas_sweep.tsv sampled the whole 342-canvas ark (about 1 in 5 outside
+  the Noailles bundle; folio 106-192 gapless). They found no cipher leaf and no clear copy, and neither the "Avis" nor the 1570 Dax letter. The item may be
+  bound elsewhere or missing from the digitised volume. Lauer's *Catalogue des manuscrits de la collection Clairambault* tome II
+  (Gallica bpt6k209158x) would give the volume's own item list; its texteBrut answered Gallica's altcha challenge to curl on
+  3 Oct 2026 (1 request, not retried), and archive.org has no copy (advancedsearch `title:(collection Clairambault)`: 4 unrelated
+  inventories). Unreachable from the cloud.
+- (d) Recipient side -- not applicable / not found. No recipient is established. The war-office side for 1688 was read: Rousset, *Louvois*
+  IV (LANE CX). There, the Noailles hits are Roussillon/Catalonia, not Flanders.
+Result: no prior decipherment or print located; open, low confidence. This is a search result, not a novelty verdict (rule 10).
+
+## Verdict (GF4-BATCH11, 3 Oct 2026)
+
+**open** (unchanged, low priority). Edition read: Rousset, *Histoire de Louvois* IV (archive.org histoiredelouvoi04rousuoft, full text,
+control "Boufflers" 23 hits): no "Avis de Flandre". Open web, the three blogs, both solver repositories and Cabinet Noir: nothing. Still
+unlocated on the Gallica ark. Next step: Lauer tome II's entry for Clairambault 1161 (owner's browser, Gallica texteBrut), then the
+~65 unsampled canvases.
+
+## While waiting (GF4-BATCH11, 3 Oct 2026)
+
+Waits on locating the leaf (Lauer tome II needs a real browser for Gallica's altcha; the unsampled canvases are a further Gallica pass).
+
+- Close the ~65 unsampled canvases of ark btv1b90010063 (c1-14 and the 3-5-canvas gaps listed in images/canvas_sweep.tsv) at 300 px, one at a time, >=2 s apart. S, plain IIIF fetch.
+
+Requests this pass: gallica.bnf.fr 2 (texteBrut, 1 redirect + 1 altcha page, stood down); archive.org 1 advancedsearch; WebSearch 3 (+2
+blog searches shared with clairambault296); github.com clones shared with clair571.
+
+Gate re-run (GF4-BATCH11, 3 Oct 2026): `clair1161-avis-flandre-1688: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
