@@ -163,7 +163,7 @@ one login. Vision calls: 2 (f.25r; f.25v+f.26r together).
 
 ## Key no. 118 tested: Digby key "Ormond & Pr: Rupert", BL Add MS 72438 ff.59-60 (FT4b-maurice-rupert-1645, account-4, 3 Oct 2026)
 
-Run 3 Oct 2026, 00:28-00:40 UTC (`date -u`). FT4 named this step. **Result: key 118 does not read this letter. It was
+Run 3 Oct 2026, 00:28-00:35 UTC (`date -u`). FT4 named this step. **Result: key 118 does not read this letter. It was
 applied, with a shuffled-key control and the judge, and failed both.** Status stays `open`.
 
 - **Record found.** Nothing on disk said which DECODE record holds index no. 118, so it was placed from folio anchors.
@@ -211,5 +211,6 @@ applied, with a shuffled-key control and the judge, and failed both.** Status st
   one cheap internal check: `design_prior.py`/KEY-DESIGN.tsv for any other Rupert-circle key with letters at or below
   80, nulls in 81-90 and no letter+digit codes, about $0.5.
 
-Requests: de-crypt.org 9 (login + RecordsView + 8 filesrv, 1.6 s apart), one login. Vision reads: 6 (4 page overviews at
-1000 px, 4 crops; one reader pass, no subagents). Rule 10: nothing here says new or unread.
+Requests: de-crypt.org 9 (login + RecordsView + 8 filesrv, 1.6 s apart), one login. Vision reads: 12 (4 page overviews,
+1 mis-rotated crop, 1 rotated overview, 6 table crops; one reader pass by this worker, no subagents -- over the
+brief's 3, because the table spans two rotated pages). Rule 10: nothing here says new or unread.
