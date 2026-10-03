@@ -62,10 +62,16 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
       await page.click('#ctxNext'); ok(tag + ': Next goes to the next focus tile', (await page.textContent('#ctxT')).includes(F[j0 + 1]));
       await page.click('#ctxPrev'); ok(tag + ': Previous goes back', (await page.textContent('#ctxT')).includes(F[j0]));
       ok(tag + ': bracketed sign in view at zoom 3', await bracketVisible(page));
-      const w3 = await page.evaluate(() => document.getElementById('ctxC').getBoundingClientRect().width);
+      const scale = () => page.evaluate(() => { const c = document.getElementById('ctxC'); return c.getBoundingClientRect().width / +c.dataset.span; });
+      const w3 = await scale();
       await page.fill('#ctxZ', '6'); await page.dispatchEvent('#ctxZ', 'input'); await page.waitForTimeout(100);
-      const w6 = await page.evaluate(() => document.getElementById('ctxC').getBoundingClientRect().width);
-      ok(tag + ': zoom slider enlarges the line', w6 > w3 * 1.5, Math.round(w3) + ' -> ' + Math.round(w6));
+      const w6 = await scale();
+      ok(tag + ': zoom in makes the sign larger on screen', w6 > w3 * 1.5, w3.toFixed(2) + ' -> ' + w6.toFixed(2));
+      await page.fill('#ctxZ', '1'); await page.dispatchEvent('#ctxZ', 'input'); await page.waitForTimeout(100);
+      const w1 = await scale(); const whole = await page.evaluate(() => document.getElementById('ctxC').dataset.whole === '1');
+      ok(tag + ': zoom out shows more of the line (sign smaller on screen, or the whole line already shown)', w1 < w3 * 0.8 || (whole && w1 <= w3), w3.toFixed(2) + ' -> ' + w1.toFixed(2) + (whole ? ' (whole line)' : ''));
+      ok(tag + ': bracketed sign in view at zoom 1', await bracketVisible(page));
+      await page.fill('#ctxZ', '6'); await page.dispatchEvent('#ctxZ', 'input'); await page.waitForTimeout(100);
       ok(tag + ': bracketed sign still in view at zoom 6', await bracketVisible(page));
       await page.fill('#ctxZ', '3'); await page.dispatchEvent('#ctxZ', 'input');
       // stale draw: tile A's page image arrives late, after the person stepped on to a tile on another page
@@ -76,9 +82,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
         await page.click('#ctxClose'); await page.locator('#focusTiles .t').nth(0).click();
         for (let i = 0; i < late; i++) await page.click('#ctxNext');
         await page.waitForTimeout(800);
-        const right = await page.evaluate(() => { const it = itemBySid[ctxSid], [x, y, w, h] = it.b, im = pageImgs[it.p], c = document.getElementById('ctxC');
-          const x0 = Math.max(0, x - 180), y0 = Math.max(0, y - Math.round(h * 1.8) - 10), x1 = Math.min(im.naturalWidth, x + w + 180), y1 = Math.min(im.naturalHeight, y + h + Math.round(h * 1.4) + 10);
-          return Math.abs(c.width / c.height - (x1 - x0) / (y1 - y0)) < 0.02; });
+        const right = await page.evaluate(() => document.getElementById('ctxC').dataset.sid === ctxSid);
         ok(tag + ': a late page image does not paint another tile over the one shown', right);
       }
       await page.click('#ctxClose');

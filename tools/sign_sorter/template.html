@@ -213,7 +213,7 @@ body.traypad #offer{bottom:100px}
     <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
-      <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
+      <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label></div>
     <div class="row"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
       <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
@@ -686,13 +686,16 @@ function drawLine(sid, c, z, alive){
   const it = itemBySid[sid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
   const draw = () => {
     if (!alive()) return;
-    const x0 = Math.max(0, x - 180), y0 = Math.max(0, y - Math.round(h * 1.8) - 10);
-    const x1 = Math.min(im.naturalWidth, x + w + 180), y1 = Math.min(im.naturalHeight, y + h + Math.round(h * 1.4) + 10);
+    // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
+    // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
+    const halfW = Math.round(w / 2 + 1800 / (z + 1)), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
+    const cxm = x + w / 2;
+    const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
+    const y0 = Math.max(0, y - padY), y1 = Math.min(im.naturalHeight, y + h + padY);
     const cv = c.parentElement;
-    const phone = window.matchMedia('(max-width:640px)').matches;
-    const cssW = phone ? Math.max(120, Math.round(cv.clientWidth * z / 3)) : (x1 - x0) * z;
-    const s = phone ? cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0) : z;
-    c.width = Math.round((x1 - x0) * s); c.height = Math.round((y1 - y0) * s); c.style.width = cssW + 'px';
+    const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
+    const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
+    c.width = Math.round((x1 - x0) * s); c.height = Math.round((y1 - y0) * s); c.style.width = cssW + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : '';
     const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, c.width, c.height);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;

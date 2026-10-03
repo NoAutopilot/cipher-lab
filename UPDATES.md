@@ -272,3 +272,9 @@ moves collection (destination 'OUT' while waiting); `sign_sorter_apply.py` repor
 `taken-out`, never silently kept. `test_qa.js` rewritten for the flow (tap, hold, tray, step-2 tap and drag on a phone
 via real touch events, undo in both steps, reload, races, refused saves); passes on the fixtures and on all six real
 pages (Birago 1572, Birago f.117, Birago confusion page, Florence c.127, Din f.23r, Debosnys).
+
+## 3 Oct 2026, ~20:5x UTC -- sign sorter: zoom actually zooms on a phone (owner report, Armstrong sorter screenshot)
+The tile dialog's zoom slider only resized the bitmap inside a fixed +-180 px window, and on a phone the picture is pinned to the
+screen width, so zooming out could never show more of the line. Now the slider sets how much of the line is shown around the sign
+(1 = widest, 8 = close-up) and the picture always fills the dialog's width. test_qa.js checks both directions (zoom in makes the sign
+larger, zoom out shows more of the line or the whole line) and that a late page image never paints another tile (by sid, not geometry).
