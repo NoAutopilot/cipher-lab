@@ -1,5 +1,5 @@
 open
-Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4, design mismatch); ff.9, 11, 12 carry no further cipher (DUCH-LEAVES, 3 Oct 2026: 0 new tokens, pooled total stays 37, so no power control can pass and no key no.1 re-run is named); next: f.13r (canvas f22 right, just outside the ff.9-12 unit) is a letter with about 40 code numbers in clear text, most glossed interlinearly; transcribe its (code, gloss) pairs from native crops, two blind passes + 1 reconciliation, ~USD 6 at the Opus rate (3 vision calls x ~1.5 + floor), then test whether its codes (8 of f.10r's 29 code values recur there, M) give f.10r a crib.
+Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4); ff.9, 11, 12 carry no cipher (DUCH-LEAVES); f.13r's glossed codes (DUCH-F13, 3 Oct 2026: 34 codes, both passes agree on every number, 6 codes glossed at H) cover 6 of f.10r's 37 tokens (82 82, 21 21, 12 12; p 0.029 vs random code sets), all M because the f.13r and f.10r hands were not shown to be the same writer, so the pre-registered crib gate (>=3 C) fails; f.13r's list is not key no.1 (0/6 agree). next: settle the hand question (a person's palaeographic look at images/f10b vs images/f13r, ASKS) and a third read of the 40 gloss (Vill./Lill.) ~USD 2; if the hands match, the 6 carries become C and the gate is met.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -269,10 +269,53 @@ contact sheet (`images/contact_c16-21_808.jpg`, `images/contact_c22_808.jpg`), t
 
 Pre-registration `PREREG_duchf13.md` (commit 1d4fcd95, before any f.13r read).
 
-**Hand condition (prereg (c)), recorded 11:05 UTC before `f13_carry.py` was first run.** Side by side: f.10r's crop
+**Hand condition (prereg (c)), recorded about 11:02 UTC by the container clock (commit 893e0375) before `f13_carry.py` was first run.** Side by side: f.10r's crop
 `images/f10b/f10c_L01_s1.jpg` and f.13r's line crops. f.10r's clear words ("ce laquay ne ma falle") are a light, small,
 fast cursive; f.13r's body is a larger, heavier hand. The decisive sign is the figure 8: f.10r writes it as an open
 ɑ-form (its "82 82" reads "ɑ2 ɑ2"), f.13r writes a closed looped 8 in ".82." and ".58.". Layout also differs (f.10r unbroken
 digit runs, f.13r single dotted codes in prose). **Judged: not shown to be the same writer (undecided, leaning different).**
 So condition (c) is not met and every carried value is graded **M**, not C (`HAND_SAME = None` in `f13_carry.py`).
 Date window: both undated, same volume, same addressee -- recorded as unverifiable.
+
+**Crops (pasted commands).** `python3 tools/iiif_lines.py --ark btv1b9058289m --canvas 22 --region 4250,200,3350,2900 --out
+<scratch>/f13 --prefix f13 --lines-per-crop 2 --max-width 1800 --overlap 200 --debug` (16 band crops, 16 centres = 15 text
+lines + the top gloss). The bands cut the interlinear glosses, so a second cut: `... --prefix f13g --centres
+312,476,635,791,968,1131,1308,1474,1619,1772,1960,2157,2337,2523,2698 --lines-per-crop 1 --top-margin 70 --max-width 1750
+--overlap 150` (30 per-line crops with the gloss band above). Used crops in `images/f13r/` (manifests
+`manifest_f13.json`, `manifest_f13g.json`); `recon_1.jpg`/`recon_2.jpg` are the zoomed gloss tiles of the reconciliation.
+Gallica requests: 2.
+
+**Passes.** A (Opus, this worker, per-line crops stacked three to an image) `f13_passA.tsv`; B (Opus subagent, blind,
+band crops only) `f13_passB.tsv`; one reconciliation look -> `f13_code_gloss.tsv`.
+- **34 code occurrences, and the two passes agree on all 34 code numbers and their lines** (single-digit codes 6, 3, 4, 9, 9).
+  Distinct codes: 3 4 6 9 10 11 12 13 21 25 35 36 37 39 40 41 54 56 58 61 82 90 92 93.
+- **Glosses at grade H (same gloss in both passes, neither marked illegible): 6 codes** -- 82 "D. n.", 58 "R" (twice),
+  21 "Berry", 12 "b. Pal.", 54 "Lorm." (line 15), 35 "ap." (line 10). Everything else is M (`f13_code_gloss.tsv`):
+  the most frequent code, **40 (5 occurrences), reads "l. Vill." in pass A and "Lill." in pass B, unresolved on the zoom**;
+  25 "Paris" (M: pass B saw only "Pa?"); 93 has two different glosses (line 2 "Pari."/"Pon.", line 13 "Inge?"/"Iuge?");
+  54 on line 5 reads "Lux-?" against line 15's "Lorm." (only the line-15 one is H).
+- No reading of the glosses' referents is claimed ("D. n.", "b. Pal." are left as written).
+
+**Carry to f.10r** (`f13_carry.py`, `--check` OK; `f13_carry.tsv`, `f13_carry_stats.tsv`), PREREG_duchf13.md:
+
+| segmentation | f.10r tokens | glossed (coverage) | graded C | p (random 6-code sets from 1-99, 1000) |
+|---|---|---|---|---|
+| S1 Tomokiyo | 37 | 6 (82 82, 21 21, 12 12) | 0 | 0.029 |
+| S2 pairs from start | 36 | 6 (same tokens) | 0 | 0.035 |
+| S3 offset 1 | 34 | 6 (21 x3, 12 x2, 58) | 0 | 0.021 |
+
+- All six carried values are **M**, not C: the hand condition (c) failed (recorded above, before the run).
+- The briefed rotated-gloss control **cannot differ** on coverage (which tokens get *a* gloss does not depend on *which*
+  gloss), so it is reported as a non-test (rule 3), as the prereg said before the run. The control that can differ
+  (random code sets) puts f.10r's overlap with f.13r's six H codes at p 0.02-0.04. That p is mildly anti-conservative,
+  because the null draws single digits 1-9, which can match only f.10r's one single-digit token. Either way it says only
+  that f.10r's numbers sit on f.13r's codes more than chance would; it reads nothing.
+- **Key family (can differ under rotation):** 0 of 6 f.13r H glosses agree with key no.1 for the same number (no.1 has 82
+  Mareschal de Cosse, 21 x, 12 z, 58 e, 35 b, 54 Armee). f.13r's code list is **not key no.1**; on 25 (Paris vs q) and 40
+  (a name vs a null) the M glosses disagree with no.1 too.
+- **Gate** (p <= 0.05 AND >= 3 C tokens under S1): **not met** (0 C). No crib for f.10r is licensed. The six M look-ups are
+  not a reading: "82 82" = "D. n. D. n." opening f.10r is what an M carry *would* give, and it is recorded as a lookup only.
+
+Remaining for this route: a third reader on the 40 gloss (V vs L) and on the 93 conflict, and a hand comparison by a
+person (the owner's eye or a palaeographer) to settle condition (c); if (c) passes, the six carries become C and the gate
+is met on S1 (6 >= 3, p 0.029). Any leaf after f.13 (f.13v onward, canvas f23+) is still unviewed.

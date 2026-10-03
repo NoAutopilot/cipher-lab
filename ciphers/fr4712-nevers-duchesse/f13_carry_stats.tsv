@@ -1,0 +1,6 @@
+segmentation	n_tokens	coverage	n_C	n_glossed_codes	p_random_codeset
+S1_tomokiyo	37	6	0	6	0.029
+S2_pairs_from_start	36	6	0	6	0.035
+S3_pairs_from_offset1	34	6	0	6	0.021
+# stat 3 key-family: f.13r H codes agreeing with key no.1 = 0/6, rotation p = 1.000
+# rotated-gloss control on coverage: identical by construction (coverage ignores which gloss), non-test

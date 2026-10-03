@@ -1,0 +1,36 @@
+# DUCH-F13 pass B: Opus subagent, blind (crop paths only, no context), images/f13r/f13_L0*_s*.jpg band crops, 3 Oct 2026. As returned.
+occ	line	code	gloss_above	context	confidence
+1	1	6	Sel?g (above [del:????])	Premierement | envoye	sure (code); unsure (gloss)
+2	1	82	D. n.	envoye au | villes	sure
+3	1	58	R	villes de | (pour	sure
+4	2	92	?illery (first letter cut off at the crop edge)	line start | et	unsure
+5	2	93	Pon.	et | ont aussi escript	unsure
+6	3	41	Lim	faudra que | de	unsure
+7	3	3	Do?? (Dom? / Dans?)	de | confirme	unsure
+8	3	40	Lill.	confirme | pour ses ... deserte	sure (code); unsure (gloss)
+9	4	25	Pa? (top cut off)	me l'a mandé a | afin qu'ils	unsure
+10	4	35	ap? (top cut off)	y mettent l'ung | line end	unsure
+11	5	54	Lu?n?	qui passera de | de	unsure
+12	5	90	M.?.? (M. de L.?)	de | il y sera pourveu	unsure
+13	6	39	? (gloss cut off, ends "-ert"?)	...lles | de	unsure
+14	6	4	? (gloss cut off)	de | se mettent	unsure
+15	6	9	[del:????] eng et ??	se mettent de(s) | advertis	unsure
+16	6	11	Bo?ges	advertis de | et du	unsure
+17	7	21	Bery	Bailly de | qu'il veid	sure
+18	7	40	Lill.	l'aur(?) | / .10.	sure
+19	7	10	[del:?halbo??] Servant?	.40. / | s'y achemine	unsure
+20	8	61	S.? (placed right of the code)	qu'il les donne a | parce que mesmes	unsure
+21	9	9	eng et l. Sep.?	Ces(?) | a fermé	unsure
+22	9	41	l. ds?	a fermé | dont le	unsure
+23	9	12	b. Pal. ??? (last word may be struck)	le bailly de | doibt	unsure
+24	10	35	ap.	(doibt) estre | aux peu d'hommes	sure (code); unsure (gloss)
+25	10	36	Bar	et aussi | de	sure
+26	10	40	dLille (d'Lille?)	de | line end	sure (code); unsure (gloss)
+27	11	56	L app.	Ce faisant | me...	unsure
+28	12	40	Lill?	sera plus dans | Le messager	unsure
+29	13	37	Lill.? / Lilly?	parce que des | s'y pourront	unsure
+30	13	93	Iuge? (Inge?)	plaindre | line end	unsure
+31	14	13	Su?? (Sulz? / Suis?)	troisieme, les | sont venuz	unsure
+32	15	54	Lorm.	de | et	sure (code); unsure (gloss)
+33	15	58	R (or Ry)	et | sont/fait qu'ils	sure
+34	15	41	L?m?	sont es(?) | line end	unsure

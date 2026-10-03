@@ -1,0 +1,36 @@
+# fr.4712 f.13r (Gallica btv1b9058289m canvas 22 right, region 4250,200,3350,2900): code numbers between dots with interlinear glosses. DUCH-F13, 3 Oct 2026. Pass A = Opus (this worker), pass B = Opus subagent (blind), crops images/f13r/ (iiif_lines bands + per-line crops with --top-margin 70); reconciliation = one look at zoomed gloss tiles. Grade H = same code and same gloss in both passes, neither marking it illegible (PREREG_duchf13.md); else M. "gloss" for M rows is the reconciler's best reading, not a value.
+occ	line	code	gloss_A	gloss_B	gloss	grade	note
+1	1	6	[del:?] + illegible	Sel?g above [del:?]	-	M	gloss rewritten over a struck word; unread
+2	1	82	D. n.	D. n.	D. n.	H	
+3	1	58	R	R	R	H	
+4	2	92	Villey?	?illery	Villery?	M	first letter at crop edge
+5	2	93	Pari.	Pon.	Pari.?	M	passes disagree
+6	3	41	-	Lim	-	M	no gloss in A; B's "Lim" may belong to 3
+7	3	3	Cha-?	Do??	?	M	gloss position ambiguous between 41 and 3
+8	3	40	l. Vill.	Lill.	l. Vill.? / Lill.?	M	V vs L unresolved on zoom
+9	4	25	Paris	Pa? (top cut)	Paris	M	B saw only part; zoom reads "Pais" with a loop -- Paris, not H by the rule
+10	4	35	ap.	ap? (top cut)	ap.	M	see occ 24
+11	5	54	lux-?	Lu?n?	Lux-?	M	differs from occ 32
+12	5	90	M.r ?	M.?.?	M. de ?	M	
+13	6	39	Lbey?	?	?	M	
+14	6	4	Cht-?	?	Cht-?	M	
+15	6	9	[del:?] cuy. et Lbr?	[del:?] eng et ??	? et ?	M	same gloss as occ 21
+16	6	11	Bourges?	Bo?ges	Bourges?	M	both unsure
+17	7	21	Berry	Bery	Berry	H	orthographic variant
+18	7	40	Vill.	Lill.	Vill.? / Lill.?	M	V vs L
+19	7	10	[del:?] Servant?	[del:?halbo??] Servant?	Servant?	M	both unsure
+20	8	61	n.	S.?	n.?	M	
+21	9	9	cuy. et Lbr?	eng et l. Sep.?	? et ?	M	
+22	9	41	l. Ar	l. ds?	l. Ar?	M	
+23	9	12	b. Pal. [del:?]	b. Pal. ???	b. Pal.	H	agreed on "b. Pal."; trailing struck word unread
+24	10	35	ap.	ap.	ap.	H	both read ap.; B marked unsure, not illegible -- H by the prereg wording
+25	10	36	Lat?/Bar?	Bar	Bar?	M	
+26	10	40	Vill.	dLille	Vill.? / Lille?	M	V vs L
+27	11	56	l. Agr-?	L app.	l. App-?	M	
+28	12	40	?zill.	Lill?	?ill.	M	under ink blot
+29	13	37	Ablly?	Lill.?/Lilly?	?ll?	M	
+30	13	93	Inde?	Iuge?	Inge?	M	
+31	14	13	Inglet?	Su??	Ingle?	M	
+32	15	54	Lorm-	Lorm.	Lorm.	H	
+33	15	58	R	R (or Ry)	R	H	
+34	15	41	Ar	L?m?	Ar?	M	
