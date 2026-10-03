@@ -390,3 +390,17 @@ step is the same as f.228's: crops + 2 cipher passes + gloss read + score agains
 
 Requests: gallica.bnf.fr 3 (2 overviews at 1600 px, canvases 235 and 240; 1 native region fetched once by iiif_lines.py,
 a first dry-run region fetched once and not used). Not done: L05 onward of f.228, any f.233 transcription.
+
+## Verifier corrections (VERIFY-NV05, account-2 worker, LANE-A2PUSH3, 3 Oct 2026)
+
+AUDIT.md written: fr.15575 f.228, f.233 and fr.15576 f.2 are each N0 (a period interlined decipherment of the very
+item is on the leaf); key source `period` (fr.3995 no.54 sheet, identified by Tomokiyo). NV05C and NV05E numbers
+re-derived with fresh seeds (AUDIT.md section 1). Corrections to the sections above, which stand otherwise:
+- NV05E grades: the 77 syllable tokens of f.228 L01-L04 come from the period key sheet, so they are **H 77** (rule 4),
+  not "S 77"; the full count is H 77, C 0, S 0, M 9, I 0, U 49. The letter-sign values in the illustrative runs are I.
+- "a period interlined decipherment above every cipher line" (f.228, f.233, f.2) means every line seen at overview
+  resolution (f.228 L01-L04 and f.2 L01-L04 also on crops); f.233's gloss has not been read at all.
+- fr.15576 f.2 "a different 3-digit system": L01-L04 (64 tokens) are outside the no.54 syllabary; which system it is
+  remains open.
+- NV05E's "Diagnosis: the gloss read, not the key" is an untested explanation until the pre-registered gloss re-read
+  runs; the registered FAIL stands.

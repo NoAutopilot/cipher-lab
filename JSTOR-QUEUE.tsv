@@ -184,3 +184,7 @@ ciphers/thurloe-printed	"Sams" AND Thurloe AND (cipher OR cypher OR decipher) AN
 ciphers/thurloe-printed	"Clarendon MS 94" OR "MS. Clarendon 94" OR "Clarendon MS. 94"	2026-10-03	queued	
 ciphers/thurloe-printed	"His desire of a correspondence"	2026-10-03	queued	
 ciphers/thurloe-printed	"Unsolved cipher in Thurloe"	2026-10-03	queued	
+ciphers/fr15575-syllabic-1592-95	"Ernest" AND "Fuentes" AND 1595 AND (cipher OR chiffre OR cifra)	2026-10-03	queued	
+ciphers/fr15575-syllabic-1592-95	"Castel Rodrigo" AND 1594 AND (cipher OR chiffre OR cifra) AND Flandes	2026-10-03	queued	
+ciphers/fr15575-syllabic-1592-95	"de buena gana como por"	2026-10-03	queued	
+ciphers/fr15575-syllabic-1592-95	"apercibido para ir a la frontera"	2026-10-03	queued	
