@@ -7272,3 +7272,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:39 | A1B-FILS-L10 (account-1 worker) | claim: fr3416-nevers-fils-1589 stroke under L10 on line-11 crop, 2 blind reads + reconcile; cap USD 2, box 25 min
 2026-10-03 16:39 | A1B-RANZO-2WIT (account-1 worker) | claim: fr2988-ranzo-1520s two-witness tx fr.3019 no.27 (ff.73r-74r) vs Bourdeau c006/c007, ~9 units (6 blind Sonnet passes + 1-2 disagreement-crop calls + reconcile) x ~USD 1.5, cap USD 14, box 16:40-17:55 UTC
 2026-10-03 16:39 | A1B-FILS-LQ (account-1 worker) | claim: fr3416-nevers-fils-1589 LOCAL-QUEUE row for Gerard 2003 Repertoire (ASKS 110), cloud check first; cap USD 2, box 16:40-17:00 UTC
+2026-10-03 16:39 | A1B-VILL-PAIR (account-1 worker) | claim: fr3993-villeroy-1595 figure-pair (digraph-code) family, control first, script only, cap USD 4, box 16:40-17:20 UTC
