@@ -1,0 +1,15 @@
+c127_L01_12	b1_L01_s1.12: pass A ·, pass B ·, reconciler -; which form is it, or X_NEW?
+c127_L01_17	b1_L01_s1.17: pass A -, pass B ·, reconciler -; which form is it, or X_NEW?
+c127_L01_20	b1_L01_s1.20: pass A o, pass B o, reconciler o/; which form is it, or X_NEW?
+c127_L01_26	b1_L01_s2.6: pass A ?, pass B ?, reconciler s; which form is it, or X_NEW?
+c127_L01_28	b1_L01_s2.8: pass A a, pass B x, reconciler a; which form is it, or X_NEW?
+c127_L01_34	b1_L01_s2.14: pass A ?, pass B q, reconciler s; which form is it, or X_NEW?
+c127_L01_38	b1_L01_s2.18: pass A p, pass B D, reconciler p; which form is it, or X_NEW?
+c127_L02_01	b1_L02_s1.1: pass A t, pass B 4, reconciler 4; which form is it, or X_NEW?
+c127_L02_07	b1_L02_s1.7: pass A o/, pass B /, reconciler o/; which form is it, or X_NEW?
+c127_L02_13	b1_L02_s1.13: pass A a, pass B O, reconciler a; which form is it, or X_NEW?
+c127_L02_18	b1_L02_s1.18: pass A q, pass B F, reconciler q; which form is it, or X_NEW?
+c127_L02_30	b1_L02_s2.7: pass A a, pass B O, reconciler a; which form is it, or X_NEW?
+c127_L04_11	b1_L04_s1.11: pass A o/, pass B /, reconciler o/; which form is it, or X_NEW?
+c127_L04_23	b1_L04_s1.23: pass A z, pass B 2, reconciler z; which form is it, or X_NEW?
+c127_L04_25	b1_L04_s2.2: pass A -, pass B ·, reconciler ~; which form is it, or X_NEW?

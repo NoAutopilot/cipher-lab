@@ -267,6 +267,8 @@ edition/page or full-text-search citation found within 6 lines` (exit 0).
    crops and overviews, 3 iiif_lines debug overlays, 5 c.111 line crops, 6 c.127 crops for the reconciliation) and 2 Sonnet
    subagent passes over 8 crops each; no full page sent to a subagent.
 
+Sorter inputs of 3 Oct 2026 (SORTER-FLORENCE, account 3): `sorter/` holds the tools/sign_sorter.py inputs for c.127 lines 6-9 (120 tiles, 27 piles from the A2-FLO3 recon, 15 focus tiles where the two passes split; boxes approximate, no image read by a model); build command and pre-publish image-terms check in `sorter/README.md`; the account-3 orchestrator publishes.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - filza 7/9/22 premise coverage - blocker: not-attempted; check-solved for the filza 8 pair is done (3 Oct 2026, CS-A2-K: Guasti vols 2-3 read, web and blog check, premise check; status open) but clear copies like c.111 were not looked for among filze 7/9/22; next: contact-sheet look for clear copies, ~$1
