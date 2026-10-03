@@ -1,0 +1,126 @@
+{
+ "items": [
+  {
+   "line": "L05",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "محمد",
+   "roman": "Muhammad",
+   "language": "Arabic (name, used in any Muslim language)",
+   "gloss": "Muhammad (the Prophet's name, or a personal name)",
+   "confidence": "H",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.8333,
+   "S2_word_match": [
+    "AR"
+   ]
+  },
+  {
+   "line": "L06",
+   "groups": [
+    8,
+    9
+   ],
+   "arabic": "برکت",
+   "roman": "barakat",
+   "language": "Malay/Jawi or Persian (Arabic loan, written with open ta)",
+   "gloss": "blessing",
+   "confidence": "M",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 1.0,
+   "S2_word_match": []
+  },
+  {
+   "line": "L06",
+   "groups": [
+    13,
+    14
+   ],
+   "arabic": "على كل",
+   "roman": "'ala kull(i)",
+   "language": "Arabic",
+   "gloss": "upon all / over every (as in 'ala kulli shay'in qadir)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 1.0,
+   "S2_word_match": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    2,
+    2
+   ],
+   "arabic": "کو",
+   "roman": "-ku / aku",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "I / my (1st-person pronoun or suffix)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "مو",
+   "roman": "-mu",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "you / your (2nd-person pronoun or suffix)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": []
+  },
+  {
+   "line": "L02",
+   "groups": [
+    12,
+    13
+   ],
+   "arabic": "سابع",
+   "roman": "sabi'",
+   "language": "Arabic",
+   "gloss": "seventh",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": false,
+   "S1_p_expected": 0.8571,
+   "S2_word_match": []
+  }
+ ],
+ "S1_all": {
+  "N": 6,
+  "observed": 5,
+  "expected": 5.119,
+  "p_one_sided": 0.7896
+ },
+ "S2_all": {
+  "N": 6,
+  "W": 1
+ },
+ "S1_HM": {
+  "N": 2,
+  "observed": 2,
+  "expected": 1.833,
+  "p_one_sided": 0.8333
+ },
+ "S2_HM": {
+  "N": 2,
+  "W": 1
+ },
+ "grades": {
+  "M": 2,
+  "I": 4
+ }
+}

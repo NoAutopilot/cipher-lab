@@ -1,0 +1,82 @@
+{
+ "items": [
+  {
+   "line": "L05",
+   "group_from": 4,
+   "group_to": 4,
+   "x_from": 0.12,
+   "x_to": 0.155,
+   "arabic": "محمد",
+   "roman": "Muhammad",
+   "language": "Arabic (name, used in any Muslim language)",
+   "gloss": "Muhammad (the Prophet's name, or a personal name)",
+   "confidence": "H",
+   "assumed_misreads": "none; the letters are clearly formed"
+  },
+  {
+   "line": "L06",
+   "group_from": 8,
+   "group_to": 9,
+   "x_from": 0.235,
+   "x_to": 0.28,
+   "arabic": "برکت",
+   "roman": "barakat",
+   "language": "Malay/Jawi or Persian (Arabic loan, written with open ta)",
+   "gloss": "blessing",
+   "confidence": "M",
+   "assumed_misreads": "none; split across two groups because ر does not join; open ت instead of ة is normal for Malay and Persian"
+  },
+  {
+   "line": "L06",
+   "group_from": 13,
+   "group_to": 14,
+   "x_from": 0.39,
+   "x_to": 0.46,
+   "arabic": "على كل",
+   "roman": "'ala kull(i)",
+   "language": "Arabic",
+   "gloss": "upon all / over every (as in 'ala kulli shay'in qadir)",
+   "confidence": "L",
+   "assumed_misreads": "final ى of على not written or lost; what follows (عل لل) might be a corrupted شيء / الله, not read"
+  },
+  {
+   "line": "L04",
+   "group_from": 2,
+   "group_to": 2,
+   "x_from": 0.055,
+   "x_to": 0.075,
+   "arabic": "کو",
+   "roman": "-ku / aku",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "I / my (1st-person pronoun or suffix)",
+   "confidence": "L",
+   "assumed_misreads": "taken as a free-standing or detached suffix; the same کو groups also appear at L04 g7 and L06 g2"
+  },
+  {
+   "line": "L04",
+   "group_from": 4,
+   "group_to": 4,
+   "x_from": 0.125,
+   "x_to": 0.15,
+   "arabic": "مو",
+   "roman": "-mu",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "you / your (2nd-person pronoun or suffix)",
+   "confidence": "L",
+   "assumed_misreads": "taken as a detached suffix; the same مو groups also appear at L04 g14 and L05 g3"
+  },
+  {
+   "line": "L02",
+   "group_from": 12,
+   "group_to": 13,
+   "x_from": 0.455,
+   "x_to": 0.505,
+   "arabic": "سابع",
+   "roman": "sabi'",
+   "language": "Arabic",
+   "gloss": "seventh",
+   "confidence": "L",
+   "assumed_misreads": "the copyist marked this area 'hard to read'; the letters look like سابع but the context does not support the reading"
+  }
+ ]
+}

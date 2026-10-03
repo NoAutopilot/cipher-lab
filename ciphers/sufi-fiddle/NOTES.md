@@ -279,11 +279,51 @@ reader never saw; both rest on the same transcription (err_2reader 18.5 pct), so
 Calls: 1 text-only subagent call (no vision). Requests: downloads.wortschatz-leipzig.de 1, tanzil.net 1 (refetch of the GAPS93
 sources, sha1 match), both >= 3 s apart.
 
-## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93, GAPS94)
-Read so far: 3 words at M (muhammad L5 g4, huwa L1 g1, kamu L4 g7; GAPS94 text-only reader), 9 at I, 0 H/C/S; no running reading.
+## GAPS98-sufi-fiddle (3 Oct 2026, account-4): one blind Opus vision reading pass on the 7 Figure 1 line crops
+
+Step (GAPS94 Verdict). Pre-registered and pushed before the call (`vision/PREREG.md`, `vision/prompt_vision.txt`,
+`vision/compare_vision.py`, commit a6350b0e). Figure 1 refetched once (mizanproject.org, sha1 2825b442... = GAPS87's), cut with
+the GAPS87 command (`tools/iiif_lines.py --image <scratch>/fig1.jpg --out <scratch>/crops --prefix fig1 --region 0,0,2490,1301
+--max-width 2490 --centres 148,289,445,613,820,1000,1195 --debug`; boxes identical to `fig1-tx/crops_manifest.json`), scratch
+only, image and crops not committed. One blind Opus 5.5 vision call on the 7 crops only (no sign transcription, no word-list
+hits, no prior readings; only the per-line group counts so positions can be located). Output verbatim `vision/vision_out.json`;
+comparison `vision/compare_vision.json` (S1/S2 by `reader/compare.py` unchanged, on `vision/vision_items_valid.json`).
+The reader saw group counts L01 5, L02 16, L03 5, L04 15, L05 6, L06 17, L07 4 (ours 6/15/4/15/6/15/4), so its L06 numbering
+can sit one or two groups off ours; per the prereg nothing was re-mapped by x position. 7 items, 1 dropped (L06 g17, out of
+range: "la ... Muhammad?", L, a possible shahada end), 6 scored.
+
+| line, groups | vision reader's word (gloss) | conf | grade | S1 in C3 span | S2 list word | S3 overlaps text reader | S4 same skeleton |
+|---|---|---|---|---|---|---|---|
+| L05 g4 | muhammad (name) | H | M (two readers) | yes | AR | muhammad | yes |
+| L06 g8-9 | barakat (blessing) | M | M | yes | no | dua (text reader's barakat sits at g7) | no |
+| L06 g13-14 | 'ala kull(i) (upon all) | L | I | yes | no | -- | -- |
+| L04 g2 | -ku / aku (I, my) | L | I | yes | no | pangku | no |
+| L04 g4 | -mu (your) | L | I | yes | no | -mu | yes |
+| L02 g12-13 | sabi' (seventh) | L | I | no | no | sabi' | yes |
+
+Pre-registered statistics: **S1 (vs spans.tsv chosen C3) 5/6, expected 5.12, p 0.79; H/M 2/2 vs 1.83, p 0.83** -- no agreement
+beyond chance (the tiling covers about three quarters of the groups, as in GAPS94). **S2 1/6** (muhammad, Arabic list).
+**S3 (vs GAPS94 text reader) 5/6 overlap, expected 1.88, p 0.010; H/M 2/2 vs 0.52, p 0.060. S4: 3 of 5 overlapping pairs share
+the consonant skeleton (muhammad, -mu, sabi'), chance rate r 0.042, expected 0.21** -- descriptive, no gate. Reading of the
+numbers: the two Opus readers converge on the same few spots and words well beyond chance, but this is two readers of ONE hand
+copy from one model family, and the text reader's signs were themselves Opus reads of these crops (GAPS87): convergence, not
+confirmation. Only muhammad (L5 g4) reaches H with either reader, and that is the name Bulliet already reports. barakat is given
+by both readers at M/L but one group apart (g7 text, g8-9 vision -- the vision reader saw 17 groups in L06), so S4 does not count
+it. Language view, independent of GAPS93/94's lists: "Malay in Jawi (possibly Tausug, Maranao, or Javanese Pegon) with Arabic
+religious loanwords", confidence L; "not continuous readable prose ... a devotional or amuletic text ... or a garbled copy or
+cipher of one". New candidates raised (I, not tested): L06 g13-14 'ala kull(i) (as in 'ala kulli shay'in qadir) and a shahada
+ending at the L06 tail.
+Grades (rule 4), this pass: 0 H, 0 C, 0 S, 2 M (muhammad, barakat), 4 I. Combined with GAPS94 (distinct words): 4 at M
+(muhammad L5 g4 -- both readers; huwa L1 g1; kamu L4 g7; barakat L6 g7/g8-9 -- both readers, span differs), the rest I; no
+running reading.
+Calls: 1 vision subagent (Opus). Requests: mizanproject.org 1, downloads.wortschatz-leipzig.de 1, tanzil.net 1 (sha1 matches the
+GAPS93 manifest), all >= 3 s apart. No decipherment attempted.
+
+## Remaining gaps (GAPS87-sufi-fiddle, 3 Oct 2026; updated GAPS93, GAPS94, GAPS98)
+Read so far: 4 words at M (muhammad L5 g4 and barakat L6 -- both readers; huwa L1 g1, kamu L4 g7 -- text reader GAPS94), the rest I, 0 H/C/S; no running reading.
 - independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (its holder never identified, Bulliet 2021) and Figure 1 is the same sheet as the folder image, so every image on record is one hand copy
 - language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
-- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; text-only blind Opus reader pass done (GAPS94, 3 Oct 2026): 12 items, 3 at M (muhammad L5 g4, huwa L1 g1, kamu L4 g7), 9 at I, no running reading; S1 9/12 vs 8.91 expected (p 0.63), S2 5/12 word-list agreement (reader/compare.json); next: one blind Opus vision reading pass on the 7 Figure 1 line crops (read words from the hand, not signs) compared with reader/reader_out.json by the same S1/S2, ~$4
+- Malay/Arabic-loan reading of ciphertext_fig1.txt - blocker: not-attempted; text-only reader (GAPS94) and blind vision reader (GAPS98, 3 Oct 2026) done: vision 6 scored items, S1 5/6 vs 5.12 (p 0.79), S3 vs text reader 5/6 vs 1.88 (p 0.010), S4 3/5 same skeleton vs 0.21 expected; 4 words at M, no running reading; next: script test of the two formula candidates the vision reader raised (L06 g13-15 'ala kulli shay'in qadir; L06 tail shahada) against ciphertext_fig1.txt's sign sequence with an edit-distance null over random Quran/formula spans, ~$1
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
@@ -293,11 +333,11 @@ Read so far: 3 words at M (muhammad L5 g4, huwa L1 g1, kamu L4 g7; GAPS94 text-o
 - [n/a] key-rebuild: no key involved in a script reading
 - [x] image-check: Figure 1 re-transcribed from 2500 px line crops (GAPS87, 3 Oct 2026): err_2reader 18.5 pct, look-alike residual 3.3 pct
 - [n/a] retry: no failed attempt with a changed knob to retry
-Verdict: keep going: 1 internal gaps; cheapest next: one blind Opus vision reading pass of the 7 Figure 1 line crops (words from the hand, not signs), compared with reader/reader_out.json by the GAPS94 S1/S2 statistics, every token graded, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: script test of the vision reader's formula candidates (L06 g13-15 'ala kulli shay'in qadir; L06 tail shahada) against ciphertext_fig1.txt's signs, edit distance vs a null of random formula/Quran spans of equal length, no vision call, ~$1
 
 ## While waiting (GAPS87-sufi-fiddle, 3 Oct 2026)
 
-Nothing here waits on a person for the next step: the zero-dependency action is the blind vision reading pass of the Figure 1 crops (Verdict above; Tausug NT FAILed in GAPS90, Malay and Arabic passed the gate in GAPS93, the text-only reader of GAPS94 read 3 words at M). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
+Nothing here waits on a person for the next step: the zero-dependency action is the formula script test (Verdict above; GAPS98's vision reader converged with the text reader, S3 p 0.010; Tausug NT FAILed in GAPS90, Malay and Arabic passed the gate in GAPS93, the text-only reader of GAPS94 read 3 words at M). Trimillos's reply on Tausug and the sign sorter's 6 tiles are the outside waits; neither blocks it.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 

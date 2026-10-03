@@ -1,0 +1,244 @@
+{
+ "n_raw": 7,
+ "n_valid": 6,
+ "n_dropped": 1,
+ "group_count_seen": {
+  "L01": 5,
+  "L02": 16,
+  "L03": 5,
+  "L04": 15,
+  "L05": 6,
+  "L06": 17,
+  "L07": 4
+ },
+ "S1_all": {
+  "N": 6,
+  "observed": 5,
+  "expected": 5.119,
+  "p_one_sided": 0.7896
+ },
+ "S1_HM": {
+  "N": 2,
+  "observed": 2,
+  "expected": 1.833,
+  "p_one_sided": 0.8333
+ },
+ "S2_all": {
+  "N": 6,
+  "W": 1
+ },
+ "S2_HM": {
+  "N": 2,
+  "W": 1
+ },
+ "items": [
+  {
+   "line": "L05",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "محمد",
+   "roman": "Muhammad",
+   "language": "Arabic (name, used in any Muslim language)",
+   "gloss": "Muhammad (the Prophet's name, or a personal name)",
+   "confidence": "H",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.8333,
+   "S2_word_match": [
+    "AR"
+   ],
+   "x": [
+    0.12,
+    0.155
+   ],
+   "assumed_misreads": "none; the letters are clearly formed",
+   "S3_overlap_text": true,
+   "S3_p_expected": 0.1667,
+   "S4_text_overlaps": [
+    "Muhammad"
+   ],
+   "S4_same_skeleton": [
+    "Muhammad"
+   ]
+  },
+  {
+   "line": "L06",
+   "groups": [
+    8,
+    9
+   ],
+   "arabic": "برکت",
+   "roman": "barakat",
+   "language": "Malay/Jawi or Persian (Arabic loan, written with open ta)",
+   "gloss": "blessing",
+   "confidence": "M",
+   "grade": "M",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 1.0,
+   "S2_word_match": [],
+   "x": [
+    0.235,
+    0.28
+   ],
+   "assumed_misreads": "none; split across two groups because ر does not join; open ت instead of ة is normal for Malay and Persian",
+   "S3_overlap_text": true,
+   "S3_p_expected": 0.3571,
+   "S4_text_overlaps": [
+    "dua"
+   ],
+   "S4_same_skeleton": []
+  },
+  {
+   "line": "L06",
+   "groups": [
+    13,
+    14
+   ],
+   "arabic": "على كل",
+   "roman": "'ala kull(i)",
+   "language": "Arabic",
+   "gloss": "upon all / over every (as in 'ala kulli shay'in qadir)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 1.0,
+   "S2_word_match": [],
+   "x": [
+    0.39,
+    0.46
+   ],
+   "assumed_misreads": "final ى of على not written or lost; what follows (عل لل) might be a corrupted شيء / الله, not read",
+   "S3_overlap_text": false,
+   "S3_p_expected": 0.3571,
+   "S4_text_overlaps": [],
+   "S4_same_skeleton": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    2,
+    2
+   ],
+   "arabic": "کو",
+   "roman": "-ku / aku",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "I / my (1st-person pronoun or suffix)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": [],
+   "x": [
+    0.055,
+    0.075
+   ],
+   "assumed_misreads": "taken as a free-standing or detached suffix; the same کو groups also appear at L04 g7 and L06 g2",
+   "S3_overlap_text": true,
+   "S3_p_expected": 0.4286,
+   "S4_text_overlaps": [
+    "pangku / pangkau"
+   ],
+   "S4_same_skeleton": []
+  },
+  {
+   "line": "L04",
+   "groups": [
+    4,
+    4
+   ],
+   "arabic": "مو",
+   "roman": "-mu",
+   "language": "Malay (Jawi) or Javanese (Pegon)",
+   "gloss": "you / your (2nd-person pronoun or suffix)",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": true,
+   "S1_p_expected": 0.7143,
+   "S2_word_match": [],
+   "x": [
+    0.125,
+    0.15
+   ],
+   "assumed_misreads": "taken as a detached suffix; the same مو groups also appear at L04 g14 and L05 g3",
+   "S3_overlap_text": true,
+   "S3_p_expected": 0.4286,
+   "S4_text_overlaps": [
+    "-mu"
+   ],
+   "S4_same_skeleton": [
+    "-mu"
+   ]
+  },
+  {
+   "line": "L02",
+   "groups": [
+    12,
+    13
+   ],
+   "arabic": "سابع",
+   "roman": "sabi'",
+   "language": "Arabic",
+   "gloss": "seventh",
+   "confidence": "L",
+   "grade": "I",
+   "S1_overlap_C3": false,
+   "S1_p_expected": 0.8571,
+   "S2_word_match": [],
+   "x": [
+    0.455,
+    0.505
+   ],
+   "assumed_misreads": "the copyist marked this area 'hard to read'; the letters look like سابع but the context does not support the reading",
+   "S3_overlap_text": true,
+   "S3_p_expected": 0.1429,
+   "S4_text_overlaps": [
+    "sabi'"
+   ],
+   "S4_same_skeleton": [
+    "sabi'"
+   ]
+  }
+ ],
+ "S3_all": {
+  "N": 6,
+  "observed": 5,
+  "expected": 1.881,
+  "p_one_sided": 0.0102
+ },
+ "S3_HM": {
+  "N": 2,
+  "observed": 2,
+  "expected": 0.524,
+  "p_one_sided": 0.0595
+ },
+ "S4": {
+  "overlapping_pairs": 5,
+  "same_skeleton": 3,
+  "chance_rate_r": 0.0417,
+  "expected": 0.208
+ },
+ "grades": {
+  "M": 2,
+  "I": 4
+ },
+ "dropped": [
+  {
+   "line": "L06",
+   "group_from": 17,
+   "group_to": 17,
+   "x_from": 0.53,
+   "x_to": 0.56,
+   "arabic": "لا محمد…",
+   "roman": "la ... Muhammad?",
+   "language": "Arabic",
+   "gloss": "possibly the end of a shahada formula ('... Muhammad [rasul Allah]')",
+   "confidence": "L",
+   "assumed_misreads": "the bracketed stretch with '?' is doubtful; the letters after لا look like مح plus a bracketed ending"
+  }
+ ],
+ "overall": "I could read only one word with confidence: محمد in L05. Several glyphs carry three dots (ڠ / چ / ڽ type) and a ڤ with one dot, and the short groups کو and مو recur. That points to a Southeast-Asian Jawi or Pegon orthography, not to Arabic, Persian or Kurdish. Most of the groups (هج، لکفتو، ڤنتڠ، لڤبیا، مموتد) do not resolve into any Malay, Arabic or Persian words I recognise. So this looks like a short devotional or amuletic text containing a few Arabic religious words (Muhammad, barakat, possibly 'ala kull), or a garbled copy or cipher of one. It is not continuous readable prose.",
+ "language_guess": "Malay written in Jawi (possibly a Philippine or Indonesian Jawi variety such as Tausug or Maranao, or Javanese Pegon), with Arabic religious loanwords",
+ "language_confidence": "L"
+}
