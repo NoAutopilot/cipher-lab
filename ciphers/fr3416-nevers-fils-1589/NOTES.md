@@ -347,7 +347,7 @@ Not found in print: nothing searched (transcription job).
 Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
-- code word xiiij (Seigneur, M) and the L10 overbar "28" (Ml de Biron, M, doubtful) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij, and put the only stroke under L10 "8 14" over a line 11 that lies outside the crop region; next: line 11 is now cropped (images/f43b_L03_s1/s2.jpg, FILS-UPPER); one targeted read of the stroke under L10 '8 14' on that crop and f43b_L02, ~$2
+- code word xiiij (Seigneur, M) - blocker: not-attempted; FILS-F38 blind read gave xiiij with alternatives c/viiij; next: one targeted blind read of L02 run 1's first glyph on a tight crop of images/f43_L02_s2.jpg, ~$1. (The L10 overbar "28" (Ml de Biron) was withdrawn by A1B-FILS-L10: the stroke belongs to line 11.)
 - fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
 - Novelty N3 -> N4 (ASKS 110, Gérard 2003 *Répertoire* entry for fr.3416 f.35) - blocker: not-attempted; A1B-FILS-LQ answered it from the cloud (HTRC Extracted Features for HathiTrust mdp.39015059979289: '3416' on one page only, seq 176, a household-rolls index page, no *chiffr* token; AUDIT.md section 'Gérard 2003 Répertoire entry, cloud route'), no LOCAL-QUEUE row filed; next: a separate verifier session weighs that evidence for N4, ~$1
@@ -359,8 +359,8 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split
-Verdict: keep going: 5 internal gaps (1 illegible); cheapest next: read the stroke under L10 on the line-11 crop now on disk, ~$2
+- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn
+Verdict: keep going: 5 internal gaps (1 illegible); cheapest next: one targeted blind read of the xiiij first glyph (L02), ~$1
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -433,3 +433,24 @@ Outcomes, fixed now:
 - O3: anything else (readers split, stroke spans other figures, either reader unsure) -> stays M, doubtful; the gap row
   names the next step and nothing in the reading changes.
 No decode is used to settle the reads.
+
+## A1B-FILS-L10 results (account 1, 3 Oct 2026, 16:4x UTC)
+
+Crop: `python3 tools/iiif_lines.py --image ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f43_3550_4560_3550_400.jpg --region 2600,60,950,240 --out <scratch> --prefix l10t --lines-per-crop 3 --top-margin 60 --bottom-margin 60`
+-> `images/f43b_L10tail_stroke.jpg` (950x240: L10's tail, line 11, and the interlinear addition below it). Two blind Opus
+subagent reads, crop and neutral question only (no candidate values, no decode).
+| | figures at L10's end | free stroke | belongs to | conf. |
+|---|---|---|---|---|
+| A | 9 3 5 3? 9 6 7 6 2 (c?)1 4, then "et" | x 570-720, y 95-100; a separate short dash under the 4 (y 60-65) | line 11: abbreviation bar over its Z-like letter + "occ"; short dash = part of the 4 (H) | M |
+| B | 9 3 5 3? 9 6 7 6 2 ·1? 4, then "ct"/"et" | x 570-720, y 95-100; short tick under the 4 = how the 4 is written | line 11: abbreviation bar over the Z/P/R-shaped letter + "ocl"; alternative: underline of "14", judged too low and too wide | M |
+Reconciliation (my look at the same crop): the long stroke sits about 30 px below the figures' baseline and just above
+the Z-shaped capital of line 11 ("d Rouen a Z̄ och."), the same weight as line 11's ink; it spans that word, not two
+figures. Neither reader saw a "2 8" pair at the stroke or a bar over any pair of figures.
+**Outcome O2 (pre-registered): both readers put the stroke with line 11's writing.** Both gave M confidence, not L or
+"cannot tell"; one named the "14" underline as a weaker alternative, which is not the "2 8" overbar the code word needed
+either way, so O1 is excluded on both reads. **28 = Ml de Biron is withdrawn**: `keys/build_no25_nomen.py` now writes the
+row with grade `withdrawn` (kept, not deleted), `--check` OK. Figure tokens in `f35r_ciphertext.tsv` keep their grades
+(M); `decode_f35.py --check` OK (the reading never used the code word). Code words now: xiiij = Seigneur (M) only.
+Side note, not acted on (outside the brief): both readers read L10's last figures as "...67 62 [·]1 4 et", which bears on
+the tail-past-the-blot gap (committed tokens there are M); it is one more datum for that gap, not a settlement.
+Grades this job: 0 tokens moved; 1 code word (M) withdrawn. Not found in print: nothing searched (transcription job).

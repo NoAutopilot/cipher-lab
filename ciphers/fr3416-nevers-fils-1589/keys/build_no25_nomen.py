@@ -54,13 +54,14 @@ P = os.path.join(H, 'key_no25_nomenclator.tsv')
 NOM = {l.split('\t')[0]: l.split('\t') for l in out[4:]}
 CT = [l.rstrip('\n').split('\t') for l in open(os.path.join(H, '../f35r_ciphertext.tsv')) if not l.startswith(('#', 'line'))]
 CW = [('L02', 'ciiij', 'xiiij', 'first glyph is the letter-hand x with a long lead-in tail (the "c" of NV02-READ); no c-codes exist in the table'),
-      ('L10', '28', '28', 'tail 2-8-4 under an overbar; overbar figures are the Noms Propres codes; the 4 left out')]
+      ('L10', '28', '28', 'WITHDRAWN (A1B-FILS-L10, 3 Oct 2026): two blind reads put the only free stroke with line 11 (abbreviation bar over its Z-like letter), not over figures 2 8; no code word in L10')]
+WITHDRAWN = {('L10', '28')}
 cw = ['# f.35r code words through key no.25 nomenclator (keys/build_no25_nomen.py, FILS-NOMEN 3 Oct 2026); grade per NOTES.md pre-reg rule 3',
       'line\ttoken_f35r\tf35r_grade\tcode_read_as\tmeaning\tnomen_grade\tgrade\tnote']
 for ln, tok, code, note in CW:
     g35 = [r[3] for r in CT if r[0] == ln and r[2] == tok][0]
     e = NOM.get(code); mean, gn = (e[1], e[2]) if e else ('?', '-')
-    cw.append('\t'.join([ln, tok, g35, code, mean, gn, 'H' if (g35 == 'H' and gn == 'H') else 'M', note]))
+    cw.append('\t'.join([ln, tok, g35, code, mean, gn, 'withdrawn' if (ln, tok) in WITHDRAWN else ('H' if (g35 == 'H' and gn == 'H') else 'M'), note]))
 cwtxt = '\n'.join(cw) + '\n'
 CP = os.path.join(H, '../f35r_codewords.tsv')
 if '--check' in sys.argv:

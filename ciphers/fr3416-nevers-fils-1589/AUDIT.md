@@ -260,3 +260,7 @@ without a decipherment" case the second audit named; whether it is enough for N4
 next verifier's call, not this worker's. No LOCAL-QUEUE row filed; if a verifier wants the exact wording quoted, the route
 is a LOCAL-QUEUE `hathitrust-page` row on full-text search inside mdp.39015059979289 for "3416" (snippet only, search-only volume).
 Requests: archive.org 1, be-api.us.archive.org 1, www.googleapis.com 3, catalog.hathitrust.org 3, data.htrc.illinois.edu 1, gallica.bnf.fr 1.
+
+Propagation (A1B-FILS-L10, 3 Oct 2026, rule 10): the code word 28 = Ml de Biron (added at M by FILS-NOMEN, line above) is
+withdrawn -- two blind reads put the stroke taken for its overbar with line 11's writing (NOTES.md "A1B-FILS-L10 results").
+Token grades on f.35r are unchanged (H 74 / M 28 of 102); the only code word left is xiiij = Seigneur (M). Class unchanged.
