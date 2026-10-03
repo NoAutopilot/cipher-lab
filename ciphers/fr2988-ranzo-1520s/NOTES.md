@@ -376,3 +376,30 @@ Grades: no reading, no key; H 0, C 0. Cost units: 7 Sonnet transcription calls +
 reconciliation unit beyond plan, as two calls were redone).
 Requests: gallica.bnf.fr 16 (3+2 overviews, 2 info.json, 5 native regions, 1 HTTP 500 not retried, 2 resets on first try
 re-sent once each; 1 left-margin strip), github.com 1 sparse clone.
+
+## s/g relabel and pooled-annealer re-run (A1B-RANZO-SG, LANE-A1B account 1, 3 Oct 2026)
+
+**Pre-registration (written and pushed 3 Oct 2026 17:2x UTC, before any annealer run on relabelled data).**
+Instrument: Bourdeau's word-substitution annealer `targets/vasto1527/n20/solve2.py` (github.com/dbourdeau/cyphersolver
+a439937, D. Bourdeau, MIT), run unmodified except two injected patches applied by `sg_run.py` (token-file path; control
+flip injection). Corpus deviation, stated before running: his `ita/cast_fixed.txt` is rebuilt with his own `ita/prep.py` from
+the two archive.org Castiglione texts he names (bub_gb_CbcpV2IS7C8C, bub_gb_laRnTtJmsDAC); his Wikisource Guicciardini/
+Machiavelli file (`guicc.txt`, ~hundreds of Wikisource calls) is replaced by `tools/data/it16` (16th-c. Italian letters, 367k
+words), so absolute numbers are ours, not his; his reported control is ~46% token accuracy. Pooled target: his `all_tokens.txt`
+does not match his current n20 files token-for-token (an earlier build), so the pooled corpus is rebuilt from his current
+files by load.py's rules (`relabel_sg.py --n20`): T0 his labels, T1 = 22 settled s/g rows (21 c007 g->s, c006 s1->g1),
+T2 = T1 + the 7 other settled Bourdeau reader errors (b->h etc., folio number dropped). 3,929 tokens.
+Runs: ITER 1,000,000, seeds 1-6 for every arm; T0 also seeds 7-12 (noise reference).
+- Control arms (held-out Castiglione 3,900 words, his encoding): C0 clean (his control, a reproduction); C1 flip-matched:
+  every s-code token in the control positions matching c007's place in the pooled order relabelled g (rate 1.0, as 21/21
+  settled); C2 = C1 + positions matching c018 and c020 at rates 0.5 and 0.8 (file-level counts hypothesis, see below).
+  The relabel "matters to this annealer" only if mean token accuracy C0 - C1 > 2 x SE of the difference (6 seeds each).
+  Note rule 3 orthogonality: C0 cannot vary with the relabel (synthetic codes, no s/g labels); C1/C2 are the arms that can.
+- Target: per arm, the stable skeleton = types assigned the same word on >= 5 of 6 seeds. **Movement** iff
+  |stable(T1) - stable(T0 seeds 1-6)| > |stable(T0 seeds 1-6) - stable(T0 seeds 7-12)| + 2, same for T2. Anything less is
+  "no movement" (a relabel within the annealer's own seed noise). No reading is claimed either way; content words are not
+  expected (his control's ~9% type accuracy).
+- c017-c020 check (script, before any vision): s/g label counts per Bourdeau file, s share of tokens: c006 0.110 (s 47, g 3),
+  c007 0.005 (s 2, g 33), c017 0.103 (51/7), c018 0.045 (23/23), c019 0.117 (60/8), c020 0.019 (5/14); no.20 files
+  0.07-0.16 with g 1-7. So c018 and c020 look flipped wholly or partly, c017/c019 do not -- a counts hypothesis only,
+  settled (or not) by the image look below.
