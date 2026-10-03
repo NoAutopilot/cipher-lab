@@ -1,0 +1,5 @@
+233 in S1: 0 ; S1 positions 369/213/248: [('369', [10, 46]), ('213', [39]), ('248', [40])]
+alt 233: J False
+alt 233 + drop 213: J True
+alt 233 + drop 248: J True
+alt 233 + drop 369: J True

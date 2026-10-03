@@ -1,0 +1,8 @@
+post hoc drop 253+10: J False
+post hoc drop 253+121: J False
+post hoc drop 253+213: J True
+post hoc drop 253+248: J True
+post hoc drop 253+369: J True
+post hoc drop 253+807: J False
+253 chunks feasible in S1 alone that are also gloss substrings: []
+253 chunks feasible in f252r alone: ['a', 'al', 'alm', 'alma', 'almar', 'almaru', 'almarul', 'almarull', 'almarulli', 'almarullie', 'almarullien', 'almarulliend', 'ar', 'aru', 'arul', 'arull', 'arulli', 'arullie', 'arullien', 'arulliend', 'arulliende', 'arulliendep', 'arulliendepu', 'e', 'en', 'ene', 'ener', 'enera', 'eneral', 'eneralm', 'eneralma', 'eneralmar', 'eneralmaru', 'eneralmarul', 'eneralmarull', 'er', 'era', 'eral', 'eralm', 'eralma', 'eralmar', 'eralmaru', 'eralmarul', 'eralmarull', 'eralmarulli', 'eralmarullie', 'l', 'li', 'lie', 'lien', 'liend', 'liende', 'liendep', 'liendepu', 'liendepui', 'liendepuis', 'liendepuisp', 'liendepuispl', 'll', 'lli', 'llie', 'llien', 'lliend', 'lliende', 'lliendep', 'lliendepu', 'lliendepui', 'lliendepuis', 'lliendepuisp', 'lm', 'lma', 'lmar', 'lmaru', 'lmarul', 'lmarull', 'lmarulli', 'lmarullie', 'lmarullien', 'lmarulliend', 'lmarulliende', 'm', 'ma', 'mar', 'maru', 'marul', 'marull', 'marulli', 'marullie', 'marullien', 'marulliend', 'marulliende', 'marulliendep', 'n', 'ne', 'ner', 'nera', 'neral', 'neralm', 'neralma', 'neralmar', 'neralmaru', 'neralmarul', 'neralmarull', 'neralmarulli', 'r', 'ra', 'ral', 'ralm', 'ralma', 'ralmar', 'ralmaru', 'ralmarul', 'ralmarull', 'ralmarulli', 'ralmarullie', 'ralmarullien', 'ru', 'rul', 'rull', 'rulli', 'rullie', 'rullien', 'rulliend', 'rulliende', 'rulliendep', 'rulliendepu', 'rulliendepui', 'u', 'ul', 'ull', 'ulli', 'ullie', 'ullien', 'ulliend', 'ulliende', 'ulliendep', 'ulliendepu', 'ulliendepui', 'ulliendepuis']

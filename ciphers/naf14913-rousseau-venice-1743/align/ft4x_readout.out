@@ -1,0 +1,17 @@
+secondary text primary: J False
+secondary text literal: J False
+secondary text est: J False
+post hoc drop 10: J False
+post hoc drop 121: J False
+post hoc drop 213: J False
+post hoc drop 248: J False
+post hoc drop 253: J False
+post hoc drop 369: J False
+post hoc drop 807: J False
+post hoc only 10: J True
+post hoc only 121: J True
+post hoc only 213: J True
+post hoc only 248: J True
+post hoc only 253: J False
+post hoc only 369: J True
+post hoc only 807: J True
