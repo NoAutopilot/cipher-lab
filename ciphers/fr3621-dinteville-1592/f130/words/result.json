@@ -1,0 +1,32 @@
+{
+ "N": 527,
+ "real_D": 0.6869,
+ "real_divided_tokens": 362,
+ "shuffled_key": {
+  "n": 200,
+  "seed": 20261003,
+  "mean": 0.4794,
+  "p95": 0.5939,
+  "max": 0.6357,
+  "ge_real": 0
+ },
+ "wrong_text": {
+  "reproduced": true,
+  "ngram_max": -1.4399,
+  "n": 20,
+  "mean": 0.4268,
+  "max": 0.5199,
+  "ge_real": 0
+ },
+ "gate": "FAIL",
+ "lexicon_words": 24078,
+ "grades_out": {
+  "M": 158,
+  "I": 192,
+  "C": 177
+ },
+ "polyphone_tokens_I": 153,
+ "polyphone_choices_differing_from_key": 37,
+ "wildcards_placed_I": 39,
+ "dictionary_words": 172
+}
