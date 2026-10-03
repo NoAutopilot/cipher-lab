@@ -87,3 +87,23 @@ DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and lat
 - (d) not found/unreachable: Swedish recipient-side editions (Rikskansliets and Hattarnas-era publications) were not identified; next: search Historisk tidskrift and Svenska riksarkivets publications for Celsing's Porte correspondence.
 
 Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.
+
+## Print search: Historisk tidskrift, Riksarkivet publications, Swedish editions (A2P4-CELS, 3 Oct 2026)
+
+Step run as named by the folder's Premise check (d). Script-first: be-api fts (`tools`-style one-off in scratchpad; not reusable beyond what `tools/print_check.py` does), Google Books API with `country=US` and key. Intake gate output: `ra-celsing-sillen-1755: blocked (line 3) -- already terminal, nothing to gate`; no deep work done.
+
+Positive control (same sender, same sources): `"Celsing" "Porten" 1755 depescher` and `Celsing Ekeblad 1763 Konstantinopel` reproduce printed Celsing material in Historisk tidskrift vols 10/16 (`historisktidskr10frgoog`, `historisktidskr16frgoog`: "kungl. sekret. G. Celsing" -- an earlier Celsing of the Bassewitz affair, not the minister), Svenska Akademiens handlingar (`svenskaakademie32akadgoog`: Celsing at the Porte), Geijer (`erikgustafgeije03geijgoog`: "ministern Celsing i Konstantinopel"), and Meddelanden fran Svenska Riksarkivet vol. 5 and vol. 2 (`meddelandenfrns05riksgoog`, `meddelandenfrns02riksgoog`: Celsing instruction, Konstantinopel legation). The search can therefore see Celsing in these hosts.
+
+Target queries (be-api, 9 queries, plus 1 Google Books): Celsing+Sillen+Konstantinopel+1755; Sillen+Celsing+chiffer; Celsing+Porten+depescher; Gustaf Celsing Konstantinopel chiffer; Celsing+Sillen+brefvexling; "G. W. Sillen" Celsing; Sillen kansliråd Celsing chiffre; Celsing Ekeblad 1763; Celsing Konstantinopel 1755 chiffer nyckel; Google Books `"Celsing" "Sillen" Konstantinopel` (2 volumes).
+
+Hits, read from snippets only (be-api page_num is not a locator, so no page numbers; volume ids given):
+- `meddelandenfrns05riksgoog` (Meddelanden fran Svenska Riksarkivet, new series vol. 5): an accession list of collections naming letters "till Georg Wilhelm Sillen 1753, 1758 och Ulrik Celsing 1758, 1763, 1768, 1770" and "Kommissionssekreteraren G. W. Sillen 1759" -- a finding-aid line for other volumes (Ulric, not Gustaf; other years), no cipher text, no key, not the shelfmark SE/RA/721512/II/II 1/II 1 B/4. Not a printed edition of the target.
+- `historisktidskriftsv8` and `historisktidskr42frgoog` carry "chiffer"/"nyckel" in notes of other editions (a 17th-century and an August von Hartmansdorff letter edition); unrelated to Celsing-Sillen.
+- Google Books: Staf, *De svenska legationspredikanterna i Konstantinopel* (1977) and KVHAA Handlingar 1966 (a Sillen fund-management line, May 1762) mention Celsing/Sillen in other contexts; snippets only, not full view, no cipher.
+- 0 hits for a printed text, decipherment or key of the Celsing-to-Sillen drafts; 0 hits for the Ekeblad 3 May 1763 or Nensen drafts.
+
+Requests: be-api.us.archive.org 11 (incl. 4 identifier-scoped), googleapis.com books 1; no 403/429. Vision 0, subagents 0.
+
+Verdict (update): blocked, unchanged. No printed edition, plaintext or decipherment of the target located in these sources; this is a search result for the log, limited to snippet-level full text on Internet Archive volumes and one Google Books query. Not searched: Historisk tidskrift's own full volumes for 1755-64 diplomatic notes beyond snippets, the Riksarkivet's own publication series Meddelanden other volumes, Hattarnas-era Rikskansliets printings, and Svenskt diplomatariums later series.
+Next step: read `meddelandenfrns05riksgoog` accession entry at page level (leaf locator needed; person's reader if lending-only) to see which Riksarkivet volume holds the Sillen-addressed Celsing letters, then a copy-order via REQUEST.md.
+While waiting: grep Staf 1977 (legationspredikanterna) full text for "Sillen" in the Celsing section once a loan or full view is available; independent of the copy order.
