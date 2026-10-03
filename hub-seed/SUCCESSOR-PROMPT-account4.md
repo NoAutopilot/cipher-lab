@@ -1,7 +1,7 @@
-# Successor prompt for the account-4 parent (written 3 Oct 2026 01:0x UTC by session_01SnKHiQk7k7VPDGhfcPeiVV, parent 2, at about 640k context)
+# Successor prompt for the account-4 parent (rewritten 3 Oct 2026 05:20 UTC by session_01S3ZaR74RRQ7BPpHT5JGaGV, parent 3; parent 2 was session_01SnKHiQk7k7VPDGhfcPeiVV)
 
 You are the account-4 parent orchestrator for cipher-lab (github.com/NoAutopilot/cipher-lab), successor to
-session_01SnKHiQk7k7VPDGhfcPeiVV (parent 2). Read, in order: CLAUDE.md, SYSTEM.md, `.claude/briefs/parent.md` (esp.
+session_01S3ZaR74RRQ7BPpHT5JGaGV (parent 3). Read, in order: CLAUDE.md, SYSTEM.md, `.claude/briefs/parent.md` (esp.
 "Keep slots full", "Orchestrator fallback chain", "Model floor"), STATUS.md "Parent handoff (account-4 ...)" check-in
 paragraphs 15-28 (the newest are just above the "## Account-3 orchestrator handoff" heading), the last 60 ROOM.md lines,
 NEAR.md. Role field for your ROOM lines: `account-4 parent`; export CIPHERLAB_ACCOUNT=account-4 on every command.
@@ -34,42 +34,40 @@ NEAR.md. Role field for your ROOM lines: `account-4 parent`; export CIPHERLAB_AC
    (python replace). ROOM line via `python3 tools/room.py 'account-4 parent' '...' --push`. send_later 15 min with
    the live ids listed in the message. Hand over again at ~750k context.
 
-## Live at hand-over (spawned 00:47-01:05 UTC 3 Oct)
-- GF4d-berthier-napoleon-1812 session_019KTd6tLrsNNB5PHjRXUA3F (SHD 1812 grand chiffre table from jfbouch images, test)
-- FT4d-maurice-rupert-1645 session_01G169VTsd9Vkbjusw8bmSwK (DECODE 8443/8444 Osborne siblings, Decrypted)
-- GAPS17-na-janssens-java-1811 session_01W41pgMxEbp5upS9LRzH7Kc (LM-context fill of 26 conflicting codes)
-- FT4b-esp318-sicilia-1503 session_01DeGrV7xZoJQBXnpZG5MYzD (sign-sorter page for the owner; ASKS row)
-- FT4-decode-4450-bnf-fr20506-1525 session_01FNRGdLiyChDAdqxWFukfEv (Novarien 1990 / Ranzo table premise)
-- FT4-ra-crusenstolpe-1809 session_01Lv6ETFFbQop4Eeu7cw1W6F (Adlersparre 1809 och 1810 p.207)
-- CLOSER-23 session_01Cg5adi8zY55eijnjtjay7C (archives the 01:05 wave and ledgers it)
+## RATE LIMIT (3 Oct 2026 05:01 UTC)
+get_session reads `seven_day allowed_warning` (resetsAt 1791230400) on account 4. CLAUDE.md's scaling rule says no new
+workers at allowed_warning; the owner's standing rule says keep 6 until `rejected`. Parent 3 compromised at 4-5 workers and
+asked the owner (no reply as of 05:20). Read the owner's answer first; if none, keep at most 5; at `rejected`, stop spawning.
 
-## Queue (cheapest first; check each target's Verdict before briefing)
-- fr4715-vieuville-pool: no.39 f.62r cleared its control, keyed .14/.13/.52; next per its Verdict (no.44 has 6 of 7
-  word-codes still unread).
-- decode-2754-bnf-baluze156-1636: Sabran f.146r key (29 signs, C) does not read f.157r (p 0.815) -- next key family
-  per its Verdict.
-- na-suriname-map-1781: period keys found (NA 1.05.03 inv. 86); 2039 H 290, 2061 H 176, Remarque native H 165; AUDIT
-  item 3: 2039 N1 provisional (LOCAL-QUEUE L36, de Leeuw 1997), 2061 N0. Next: 2046 and 2077 legends under the period
-  key (~9 each).
-- pro3055-clinton-1779: 3868, 2380, 3050, 3077 all N0; 4833 cipher at Kew; next per Verdict (low value).
-- mccormick-1999: note 2 line 10 image check (Sadak departs from the transcription).
-- riksarkivet-r4282-1628: R4280/R4281 vs R4284 (numeric) instead.
-- hellen-frederick-1752: Michell sibling key control-backed negative; next per Verdict.
-- oldenbarnevelt-brederode-1605: file the drafted LOCAL-QUEUE row for DECODE key 2118.
-- ormond-arran-1678: Carte MSS copy route; group 9 = 58 in both prints vs 57 in ciphertext.txt (flagged, not repaired).
-- sp90-raby-1704: SP 87/2/37 f.68 possible clear copy (premise risk) first.
-- moray-wood-1568: parked on ASKS 103 (no.804 test pre-registered, 20ba38af). na-schonenberg-1678-1716: parked (body
-  N0). fr3986-nevers-revol-1593: parked on ASKS 102 (owner's sign sort). blitz-ciphers: parked pending new material.
-  huntington-luzerne-destouches-1781: found-solved.
-- More gate-fix batches: account-4's own earlier WEBCHECK targets still failing `tools/intake_gate_check.py` (list them
-  with the loop in STATUS.md check-in 24's method; GF4-BATCH1-4 did 12).
+## Live at hand-over (spawned 05:19 UTC 3 Oct)
+- VERIFY2-SURINAME-2077 session_0186iCyYg4gHZgzrSzKmHbsf (re-class AUDIT item 4 after GAPS23/24)
+- FT4e-naf14913-rousseau f.249v/f.250r + pooled 3-pair session_01M2UMo3WTZxTDxRexU8u58F (cap 15)
+- FT4f-maurice-rupert BL Add MS 18980-82 route session_01JPWiZMa9wz2jQXbhHwoV17
+- CLOSER-37 session_01HjYaXG2M3siWLbzVfpCPwk
 
-## Lessons from parent 2 (2 Oct 21:00 -> 3 Oct 01:05, about 110 workers)
-- Workers on own targets finish in 5-15 minutes; 15-minute check-ins keep slots near 6.
-- A verifier's shelfmark search (VERIFY-SURINAME-2061) found de Leeuw 1997 after eight passes searched by catalogue
-  words; that led to the period key the same hour. Premise and print checks search interior phrases and shelfmark
-  strings, never only incipits (VERIFY-CLINTON: 2380 was in print in 1871).
-- Pre-register candidate lists and thresholds in a commit before scoring (suriname GAPS10/11/14, moray no.804).
-- A sign inventory with pass agreement below ~90 pct goes to the owner's sign sorter (fr3986 ASKS 102, esp318), not a
-  third machine pass.
-- file_shrink_guard.py crashes on .jpg paths: pass text paths only (flagged, not fixed).
+## State of the best leads (see STATUS.md check-ins 29-43)
+- na-suriname-map-1781 2077 legend: period key, H 500 C 6 M 102 U 50; rule-7 re-derivation agreed; rate-matched nl18 gate
+  PASS 7/7; known-plaintext gate vs plain 4.VEL 2078 Nota PASS (0.696 vs p99 0.446); verifier N1 provisional before the
+  revision -> VERIFY2 re-classing. No breakthrough alert fired (needs N3+ and the owner's rule).
+- naf14913-rousseau-venice-1743: numeral key from Rousseau's own slips (f.206, f.216v/f.217r), C 23 M 39 of 62; thin gates.
+- fr4715-vieuville-pool: Cabinet Noir reads 3 of 8 leaves; key no.71 retired after 2 FAILs; fr.4712 f.7r leaf control FAIL.
+- found-solved this shift: berthier-napoleon-1812, spinelli-beinecke, vanbeuningen-dewitt (letter N1), fr4715-montholon,
+  sp35-townshend-key, pro3053-horesse, newcastle-stone (no cipher), koehler-1944.
+
+## Queue (cheapest first)
+- After VERIFY2: suriname g|l per-instance image check (sign crops, ~4) only if the verifier says stage 9 needs it.
+- rousseau: f.213v/f.214r pair after FT4e.
+- vanspaen-vandergoes: scans 1-160 of NA 2.01.08 inv. 281 (Jan 1808 leaves precede scan 180).
+- riksarkivet-r4282: 14 remaining sign-bearing key records (4307, 4298/99, 4327 tested: none read).
+- sp87-brunswick / sp87-further / borssele / brochado / sp81-roe / ormond Carte 50 / paget Clair 297: waiting on copies
+  (ASKS 49/105/106, LOCAL-QUEUE L40, REQUEST.md rows) -- While waiting steps only.
+- Off limits unchanged; also leave fr3621-dinteville, fr3993-villeroy (Nevers vein, account 3's NV-INTAKE active).
+
+## Lessons from parent 3 (3 Oct 01:07 -> 05:20, about 90 workers)
+- Gate-fix batches of 3 targets (GF4-BATCH5..18) cleared ~40 intake-gate failures; about 1 in 4 turned out found-solved.
+- Native-read jobs with Opus passes cost USD 3.5-10 per vision call: cap 15-25 and get_session them each check-in
+  (vieuville-13 29.74 on 12.5; GAPS19 23 on 10 before this rule).
+- Every subagent is Opus 5.5 too (gaps-step brief edited, 55828a43).
+- Check other projects' new publications (Cabinet Noir 29 Sept 2026, Apeiron 22 Sept 2026) in every premise check.
+- ROOM done-line filter: awk on the role field '(account-4)' and drop only role 'account-4 parent' (workers write
+  'for the account-4 parent').
