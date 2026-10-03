@@ -1,0 +1,9 @@
+ciphers/vanspaen-vandergoes-1808/gaps48/no4_all.txt: 304 tokens, 216 distinct, inventory digits
+  relabel-invariant statistics: True; references at this N: 132
+  multi-sign (homophonic/nomenclator/syllabary) d=1.12 envelope=0.4 null_p05=0.61 -> not above null
+  mixed (partial table)  d=1.62 envelope=3.26 null_p05=1.37 -> not above null
+  letter-for-letter      d=2.23 envelope=1.14 null_p05=1.36 -> not above null
+  code                   d=2.72 envelope=0.91 null_p05=2.04 -> excluded
+  shuffled-input false-positive rate: 0.050
+  fine family ranking (advisory, not calibrated): nomenclator=1.58; mixed=1.62; syllabary=1.73; homophonic=1.80; alphabet substitution=2.23; code numbers=2.72
+  nearest keys: ciphers/hellen-frederick-1752/sibling_michell/key_sibling.tsv [mixed; (folder) hellen-frederick-1752; 1752; d=0.27; real; inv=digits; num_in_range=1.00] || ciphers/huntington-luzerne-destouches-1781/key.tsv [syllabary; French crown's American-theatre naval/diplomatic corresponde; 16 and 31 Jan 1781; d=0.60; real; inv=digits; num_in_range=0.99] || ciphers/vanbeuningen-dewitt-1657/key.tsv [nomenclator; Dutch States-General diplomatic circle around the Grand Pens; 19/29 Sept 1657; d=1.38; real; inv=mixed]
