@@ -126,3 +126,97 @@ re-cloned per target). No TNA Discovery, no Google Books slot used, no logins, n
    not reproduce in full.
 3. If a volume turns out to use the D'Estrées or Medinaceli cipher (same correspondent, or a secretary shared
    across the network), Tomokiyo's published keys are the first thing to try, not fresh cryptanalysis.
+
+## Web and blog check (GF-A2-11, 3 Oct 2026)
+
+Run for LANE-A2PUSH (account 2), 3 Oct 2026, 00:27-00:33 UTC. WebSearch (plain web); hits checked against the BL
+catalogue's own JSON records (`searcharchives.bl.uk/catalog/<id>?format=json`), which answer from the cloud.
+
+(a) Plain web searches, four:
+1. `Cardinal Gualterio correspondence cipher deciphered British Library Add MS Torcy 1700` -- hits: BL searcharchives
+   records 036-002090595 (**Add MS 20318-20319, Torcy to Gualterio, one of our 14**), 040-002090908 (Add MS 20582,
+   cipher tables), 036-002090711 (**Add MS 20416-20420, one of our 14**), 040-002091026, 040-002090616; NLI Sources
+   records MS UR 036390/036392/066514/012536/043042 (Irish-interest index entries for the same BL volumes).
+2. `"Add MS 20318" OR "Add MS 20371" OR "Add MS 20416" Gualterio cipher` -- BL records 040-002090908, 036-002090651
+   (**Add MS 20365-20366, one of our 14**), 040-002090951, 040-002091026, 040-002090678, 040-002090609, 036-002090510;
+   NLI Sources as above.
+3. `Gualterio Papers British Library letters to Cardinal Gualterio in cipher Jacobite decipherment` -- BL records
+   040-002090609/678/584/571, 036-002090651, 040-002023079/063/064; NLI MS UR 012536.
+4. `Filippo Antonio Gualterio nunzio Parigi lettere cifrate decifrazione cardinale` -- Wikipedia (the cardinal), BL
+   records 040-002090951/637, 036-002090651/619, 032-002090506; NLI.
+(The 25 Sept section above also ran the model-solve query `Gualterio cardinal cipher "solves" Claude OR GPT`: no hit.)
+No modern decipherment, blog post or paper reading any of the 14 volumes was found; every substantive hit is the BL's
+own catalogue -- which, read in full below, states that 11 of the 14 volume groups carry **period decipherings** on
+the leaf (Premise check (a)/(c)).
+
+(b) Blog site searches:
+- Cipherbrain: `site:scienceblogs.de Gualterio` -- no scienceblogs.de page returned (Wikipedia, BL records, VIAF only).
+- Cryptiana: `site:cryptiana.blogspot.com Gualterio` -- no blog page returned. Tomokiyo's site page
+  `cryptiana.web.fc2.com/code/gualterio.htm` was read in full by LANE CX (25 Sept 2026, above): its keys are for Add MS
+  20359-20361 (D'Estrées), 20563 (Medinaceli) and one Gualterio-to-Torcy letter of 19 Apr 1718 with interlinear
+  decipherment (no shelfmark) -- none of our 14 named.
+- Cipher Mysteries: site search `ciphermysteries.com/?s=Gualterio` (WebFetch): "Nothing Found".
+
+(c) Opened: the BL records above (JSON, full scope-and-content text). No blog post exists to open, so no comment thread
+was read. Result: no modern decipherment found; the period decipherings are the BL's own description (below).
+
+## Premise check (GF-A2-11, 3 Oct 2026)
+
+**Finding: the BL's own catalogue describes period decipherings in 11 of the 14 target volume groups.** Each record
+was read this pass from `searcharchives.bl.uk/catalog/<id>?format=json` (scope and content, verbatim except
+abridged with "..."):
+
+| volumes | BL record | correspondent | BL's words on cipher |
+|---|---|---|---|
+| 20318-20319 | 036-002090595 | Torcy, 1700-1726 | "Many in cipher, with deciphering." |
+| 20338-20339 | 036-002090619 | Abbé de Pomponne (Venice, Paris), 1706-1730 | "Many partially in cipher, with decipherings." |
+| 20365-20366 | 036-002090651 | M. Amelot (Madrid, Rome, Paris), 1705-1724 | "Many of the letters in Vol. I. contain portions in cipher, with decipherings" |
+| 20369-20370 | 036-002090656 | de la Tour Guion, Bp of Cavaillon, 1707-1725 | "Partly in cipher, with decipherings." |
+| 20371-20380 | 036-002090659 | Abbate Tamisier, 1706-1728 | "Some in cipher, with decipherings." |
+| 20416-20420 | 036-002090711 | Card. Acquaviva, 1706-1724 | "Some in cipher, with decipherings." |
+| 20426-20431 | 036-002090722 | Abbate Albicini, 1707-1718 | "a few in cipher, with decipherings." |
+| 20466-20467 | 036-002090767 | Card. Ottoboni, 1706-1726 | "many in cipher, with decipherings." |
+| 20473-20474 | 036-002090775 | Abbate Simonetti, 1706-1724 | "Some in cipher, with decipherings." |
+| 20567-20568 | 036-002090887 | Spinola, Marqués de los Balbases, 1706-1721 | "a few in cipher, with decipherings." |
+| 20570-20571 | 036-002090891 | Marqués de Villamayor, 1703-1721 | "a few in cipher, with decipherings." |
+| 20510-20511 | 036-002090819 | Marquis Bentivoglio, 1707-1717 | "Many in cipher." (no decipherings named) |
+| 20554-20556 | 036-002090872 | Count de Vernon, 1713-1727 | "many in cipher." (no decipherings named) |
+| 20634-20635 | 036-002090968 | Abp of Myra (L. Gualterio), drafts, 1744-1753 | "DRAFTS of letters ... to be written in cipher, or in answer to letters in cipher" -- the clear side |
+
+- **(a) Decipherments the folder already mentions: found, and now pinned to our volumes.** The folder knew Add MS
+  20244's "Ciphers, with decipherings" (a companion volume) and drafted REQUEST.md to *ask* the BL whether 20318-20319
+  had the same note. The BL's public record already answers it: yes, for 20318-20319 and ten more groups (table).
+  The 24 Sept "Not digitised ... url_tsi empty" reading used the catalogue snippet, not the full scope-and-content field.
+  Caveat: catalogue level, not leaf level -- "some"/"a few"/"many ... with decipherings" does not say every cipher
+  passage is deciphered; whether any ciphered passage lacks a deciphering is unknown until a volume is seen.
+- **(b) Other solvers' working files: not found.** dbourdeau/cyphersolver HEAD 2341682 (2 Oct 2026): `CATALOGUE.md`
+  line for Gualterio/Botti (Add MS 20443, DECODE R8617-R8718; cipher tables Add MS 20244), moved off his list as "key
+  already held"; no target folder, output or key run on any of our 14. aaymeloglu/unsolved-ciphers HEAD d2800bb (27
+  Sept 2026): `catalogue/decode-catalog.csv` has Gualterio-network DECODE rows (the D'Estrées/Medinaceli/Botti
+  volumes already named above), none of our 14 shelfmarks; no working files.
+- **(c) Physical neighbours: found -- key tables.** Add MS 20582 (BL record 040-002090908): "TABLES of ciphers, used by
+  Card. Gualterio in his correspondence with various persons, viz.: Cardinal Acquaviva, f. 3 b. M. Amelot, f. 5 b. The
+  Comte du Luc ... f. 7 b. ..." -- the cardinal's own key book in the same acquisition, covering at least two of our
+  correspondents; its full list (read this pass, to f. 85 b) names five of our correspondents: Acquaviva f. 3 b
+  (20416-20420), Amelot f. 5 b (20365-20366), "Comte de Vernon" f. 74 b (20554-20556 -- one of the two groups whose
+  record names no decipherings, so its key is in hand), "Villamayor" f. 78 (20570-20571), and "Cardinal Bentivoglio"
+  f. 11 b (our 20510-20511 is the Marquis Luigi Bentivoglio, not the cardinal: a possible, unconfirmed match).
+  Torcy, Pomponne, Cavaillon, Tamisier, Albicini, Ottoboni, Simonetti and Balbases are not in its list. Add MS 20244-20265 (nunciature despatches, "in cipher, with decipherings") and 20387,
+  20329, 20620, 20681 (all "with decipherings", one "with a key prefixed") show the same practice through the papers.
+  No leaf images: the BL has served no manuscript images online since the 2023 attack.
+- **(d) Recipient's side: found -- Gualterio is the recipient, and his own office deciphered.** The decipherings above
+  are the recipient's. Sender-side editions not searched this pass (Torcy's correspondence in the AE Correspondance
+  politique Rome series, Ottoboni's and Acquaviva's papers); HMC Stuart Papers vol. I was read by LANE CX (25 Sept).
+
+**Consequence (for the orchestrator, not acted on here):** for 11 of the 14 volume groups the plaintext of the
+ciphered passages was written out at the time on or with the letters, so they are a key-recovery/alignment problem
+(period key, grade H/C from the decipherings), not open cryptanalysis -- the same shape as 20244. Flagged in ROOM.md to
+the account-3 orchestrator. Status line not changed by this worker (brief: status changes are the orchestrator's).
+Bentivoglio (20510-20511) and Vernon (20554-20556) name no decipherings, but Vernon's key is in Add MS 20582 f. 74 b; 20634-20635 are clear drafts. REQUEST.md's
+question to the BL is now answered from the public catalogue; its pilot choice stands but the ask can drop the
+"does the description mention decipherings" clause.
+
+Requests: searcharchives.bl.uk 33 (10 catalog JSON records, 12 search JSON, 11 catalog JSON; full scope texts saved to `bl_catalogue_2026-10-03.tsv`; 2 s apart, all HTTP 200),
+ciphermysteries.com 1 (WebFetch site search), WebSearch 6.
+
+`python3 tools/intake_gate_check.py bl-gualterio-1700` after both sections (3 Oct 2026, GF-A2-11): `bl-gualterio-1700: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
