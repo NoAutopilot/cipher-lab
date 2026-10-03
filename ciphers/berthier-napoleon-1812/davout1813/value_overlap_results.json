@@ -1,0 +1,61 @@
+{
+ "n_letter1": 297,
+ "n_letter2": 282,
+ "n_letter3": 96,
+ "n_target": 325,
+ "vmax": 1200,
+ "draws": 20000,
+ "seed": 1812,
+ "target_vs_L1": {
+  "obs": 118,
+  "null_mean": 79.73,
+  "p": 0.0403
+ },
+ "target_vs_all": {
+  "obs": 238,
+  "null_mean": 181.55,
+  "p": 0.0498
+ },
+ "positive_control_L23_vs_L1": [
+  {
+   "seed": 100,
+   "n": 325,
+   "obs": 224,
+   "null_mean": 80.52,
+   "p": 5e-05
+  },
+  {
+   "seed": 101,
+   "n": 325,
+   "obs": 227,
+   "null_mean": 80.41,
+   "p": 5e-05
+  },
+  {
+   "seed": 102,
+   "n": 325,
+   "obs": 218,
+   "null_mean": 80.37,
+   "p": 5e-05
+  },
+  {
+   "seed": 103,
+   "n": 325,
+   "obs": 229,
+   "null_mean": 80.29,
+   "p": 5e-05
+  },
+  {
+   "seed": 104,
+   "n": 325,
+   "obs": 207,
+   "null_mean": 80.4,
+   "p": 5e-05
+  }
+ ],
+ "positive_control_N150": {
+  "obs": 115,
+  "null_mean": 37.16,
+  "p": 5e-05
+ }
+}

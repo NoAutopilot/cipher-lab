@@ -31,3 +31,26 @@ beat it on length_fit, 15 < 17.5 -- corrected here.)
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
 | 27 Sept 2026 07:27 | homophonic | N=325 K=207 restarts=8 corpus=memoiresdemonsie01torc.txt.gz+memoiresdemonsie02torc.txt.gz+mmoiresduducde01invill.txt.gz+mmoiresduducde02vill.txt.gz+mmoiresetlettre01margoog.txt.gz+lagazettedefran01unkngoog.txt.gz | 1-3 | 0.061 (0.058-0.062) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | BER-HOMO 27 Sept 2026: rule-3 control-then-target homophonic run, N=325 K=207 (spec's own N/K; spec's own ciphertext field is a pointer string, not data -- overridden with structure/flat.txt per BER-KWIC's settled 325-token reading) |
+
+## Napoleon-Davout Nov 1813 grand chiffre: value-overlap test (GF4c, 3 Oct 2026)
+
+Source: Bazeries 1896 pp.38-45 as reproduced verbatim on Bouchaudy's jfbouch.fr (`sources/jfbouch/2026-10-03/`), key
+class `published` (cipher plus Bazeries' translation; no key table printed by Bouchaudy or Bazeries, so nothing is H).
+Script `davout1813/value_overlap_test.py` (`--check` passes). Statistic: value-frequency overlap S between a test text
+and Davout letter 1 (N=297). Shuffled-key control: letter 1's values relabelled by a random permutation of 1-1200,
+20,000 draws, seed 1812. Positive control: Davout letters 2+3 (same code) subsampled to the target's N=325.
+
+| text | N | S observed | shuffled-key null mean | p |
+|---|---|---|---|---|
+| positive control, Davout L2+L3 (5 subsamples) | 325 | 207-229 | 80.3-80.5 | 0.00005 each |
+| positive control, Davout L2+L3 | 150 | 115 | 37.2 | 0.00005 |
+| **target, Berthier 22 Dec 1812** | 325 | **118** | 79.7 | 0.040 |
+| target vs all three Davout letters | 325 | 238 | 181.6 | 0.050 |
+
+Reading: the method has power at the target's N (same-code text runs 2.6-2.8x its null; the target runs 1.5x). The
+target's small excess comes from two values only: 173 (Davout's commonest group, 12x in letter 1, 2x on the Berthier
+page) contributes 24 and 13 (the Berthier page's commonest, 8x; 2x in Davout) 16; without them S = 78 against a null of
+about 80. A shared code would put Davout's commonest group among the page's commonest too. So the page is **not** in the
+Nov 1813 Napoleon-Davout code (control-backed negative for this one key; it was in service from 23 Aug 1813 per
+Bouchaudy, so a negative was expected). This says nothing about GC34 (Berthier-Davout, May 1813, Bazeries 1896
+pp.19-36), which Bouchaudy's page does not reproduce: LOCAL-QUEUE L38 stays the route for that.

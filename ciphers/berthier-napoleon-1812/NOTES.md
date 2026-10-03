@@ -792,3 +792,42 @@ ContentSearch 7, ALTO 26, one of them HTTP 429, after which Gallica was not call
 **Escalation, updated (GF4b):** step 1 is now (a) the Bouchaudy jfbouch.fr Davout sub-page, a cloud job of about USD 1;
 then (b) LOCAL-QUEUE L38 (owner's runner), followed by about USD 4 to rebuild GC34 and apply it with a shuffled-key control.
 Step 3 (crib-pool rebuild) is **done**. Steps 2 and 4 are unchanged. Verdict: keep going.
+
+## GF4c: Bouchaudy's jfbouch.fr pages (GF4c-berthier-napoleon-1812, account-4, 3 Oct 2026)
+
+Route GF4b named as cheaper than L38. Pages read (plain HTTP; HTTPS fails with a certificate/host-name mismatch from the
+cloud, TLS checking not disabled): `crypto/napoleon/index.html`, `ex_grd_chif.html`, `ex_grd_chif.fr.html`, plus HEAD
+requests on three table images. Snapshots unmodified in `sources/jfbouch/2026-10-03/` (credit: J.-F. Bouchaudy, "The
+codebooks of Napoleon I"; text there is Bazeries 1896 pp.38-47, rule 8). Requests: jfbouch.fr 7 (4 GET incl. one failed
+HTTPS, 3 HEAD), at least 1.5 s apart. No vision.
+
+- **GC34 not there.** The "Great Cipher" page reproduces only the Napoleon-Davout code of Nov-Dec 1813 (Davout's letters
+  of 14 Nov, 19 Nov and 1 Dec 1813, cipher with Bazeries' translation; in service 23 Aug to 1 Dec 1813 per Bouchaudy).
+  Bouchaudy says he rebuilt that key but did not publish it. Nothing from Bazeries 1896 pp.19-36 (Berthier-Davout
+  7 May 1813, the "grand chiffre 34") is on the site. **L38 stays the route for GC34.**
+- **Nov 1813 Davout code tested anyway, with controls** (HYPOTHESES.md, "Napoleon-Davout Nov 1813 grand chiffre"; script
+  `davout1813/value_overlap_test.py`, `--check` OK). Value-frequency overlap against Davout letter 1, shuffled-key null:
+  positive control (Davout L2+L3, same code, N=325) S = 207-229 vs null 80, p = 0.00005 on 5 subsamples; **target S = 118
+  vs null 79.7, p = 0.040**, the whole excess from two values (173, Davout's commonest group, only 2x here; 13, this page's
+  commonest, 2x in Davout); without them S = 78. Control-backed negative for that one key: the page is not in the Nov 1813
+  Napoleon-Davout code. No reading, nothing graded.
+- **New key material found, not yet tested:** the index page shows the period deciphering table of the 1812 Spanish-
+  campaign grand chiffre (SHD archives, partly reconstructed by Scovell; groups 0001-1200 plus manuscript additions to
+  1400) as four images, `IMG/1812_0001.jpg`, `1812_0051.jpg`, `1812_0701.jpg`, `1812_0751.jpg` (about 470 KB each), and
+  `IMG/1812_tout.jpg`. It is a period key image (values would be H if applied), and a 1200-group code of 1812 is the same
+  size class as this page (values to about 1200, with 1202, 1238 and 1388 above). Different theatre (Spain, not Russia),
+  so the prior is low, but it is a full table and the test is cheap.
+
+### GF4c: open steps (target is `open`, not `partial`)
+
+1. [ ] Spanish-campaign 1812 grand chiffre (Bouchaudy's images of the SHD table) against this page: transcribe the
+   table rows for this page's ~200 distinct values from the four images, apply, value-overlap plus readability check with
+   a shuffled-key control; next: one vision-capable worker, line crops via `tools/iiif_lines.py --image`, ~$4.
+2. [ ] GC34 (Bazeries 1896 pp.19-36): waiting-on LOCAL-QUEUE L38.
+3. [ ] Two-part/blockwise code family (GF4 step 2), ~$10-15 after the headroom check.
+4. [ ] AF/IV/1643 plaquette 1/VI deciphered primata: needs-physical-access.
+
+### GF4c: next
+
+Tried this pass: Bouchaudy's Davout page (Nov 1813 code: negative with controls). Next in order: gap 1 (cloud, ~$4),
+then gap 2 when L38 lands. Verdict: keep going.
