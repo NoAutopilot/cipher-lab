@@ -138,7 +138,10 @@ riksarkivet1628/, commit fc0c9e8, read 26 Sept 2026), `scripts/crib_test.py`, `r
       (where a design-matched synthetic places each at rank 1, key 15/15) and only at chance at 1-2 misreads;
       the two short phrases are below the instrument's resolution; max 3/12 signs agree with bRIK's R4284 crib
       key, matched by a negative crib. No partial key. See "## RIK-CRIBS" below and HYPOTHESES.md.
-- [ ] known-keys (remaining): 68 of the 70 fetched Chifferklaver låda II key records (R4259-R4329) still
+- [x] known-keys, shelf neighbours R4280/R4281 (FT4, 3 Oct 2026): both numeric-only keys; no sign overlap with R4282's
+      letter-shape alphabet, stopped at the overlap check (see "## FT4" below). Not a test of R4282.
+- [ ] known-keys (remaining): 66 of the 70 (after R4280/R4281 above); next: grep their DECODE `Symbol Sets` field
+      (login-free record pages) for an Alphabet/letter-shape key before fetching any image, ~$1 fetched Chifferklaver låda II key records (R4259-R4329) still
       untried against R4282 -- this job used only R4284's key-test leaf, per its brief, not the other 68
 - [ ] print: Rikskansleren Axel Oxenstiernas skrifter och brefvexling series II, and Camerarius editions,
       not searched this job (out of scope/cap)
@@ -336,3 +339,63 @@ Result: not found-solved -- stays open (status word unchanged). Rule 10: a searc
 Next cheap test: from the Escalation list, run the neighbouring key records R4280/R4281 (II:111, II:112) -- and then the other untried Chifferklaver key records -- against R4282 as a crib key (known-keys, remaining); needs their images from DECODE/Bourdeau's decode/keys (~$2-3 once images are on disk).
 
 Requests per host (this subagent): github.com 2 (clones); sok.riksarkivet.se 3 (redirect, captcha page, /oxenstierna 200); archive.org 6 (advancedsearch, 3 phrases twice); web search 2 queries.
+
+## FT4: shelf-neighbour key records R4280/R4281 vs R4282 (3 Oct 2026, account-4)
+
+Brief: parent dispatch FT4-riksarkivet-r4282-1628 (first cheap test named by GF4-BATCH4's Premise check: "key
+records R4280/R4281 as crib keys vs R4282"). Intake gate run first: `riksarkivet-r4282-1628: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Metadata (login-free, already on disk):** `sources/decode/keys-all-2026-09-28.tsv` -- 4280 Key, N/A,
+Chifferklaver_låda_II_111, 1600-1699, 3 pages; 4281 Key, N/A, Chifferklaver_låda_II_112, 1600-1699, 8 pages. The
+record pages, read after login, give 4280 "Cipher Type: Simple substitution, Homophonic substitution, Nomenclatures;
+Symbol Sets: Numerical" and 4281 "Cipher Type: Simple substitution, Nomenclatures; Symbol Sets: Numerical"; no
+language, date or comment filled in either.
+
+**Images:** one DECODE browser login (`tools/decode_browser_login.js 4280 ... --fetch-page RecordsView/4281
+--listen`). DECODE served the **full-size page PDFs** for both records (11 files, 0.9-2.5 MB each, real scans, not
+the `forbidden.png` placeholder). Rendered at 110 dpi to `keys_r4280_r4281/*.jpg`; URLs, sizes and sha1 of the
+source PDFs in `keys_r4280_r4281/manifest.json` (PDFs not committed; re-fetch needs a login). The record HTML pages
+stayed in the scratchpad (they carry the account name).
+
+**What the keys are (by eye, from the images; not transcribed -- not needed, see below):**
+- R4280 (II:111), p.1: a homophonic letter table, each letter A-Z (with the Swedish vowels) given 2-3 two-digit
+  numbers (A 20 41 71, B 8 14 48, C 18 39 47, D 19 49 29, E 9 12 74, ... to Z 34 59 64); "Quiescentes 1 2 3 4 5 6
+  7 item a 77 ad 308 inclusive" (nulls); a nomenclator 308-331 in Swedish (S. K. Maj:t, Sverige, Soldatesqua,
+  Rijksdrotset, Rijksmarsk, Fältmarskalk Wrangel, Lifland, ...). Foot note "Från Skyttes arkiv" (reading M). Pp.2-3:
+  a docket ("... under Miscellanea ... Chiffer"), a numeric column table, a cover.
+- R4281 (II:112), 8 pp.: an alphabetical word nomenclator (A, B, C ... S headings, word -> 4-digit code, roughly
+  1100-1440 where legible at this resolution) -- numbers only on the cipher side.
+
+**Overlap check (the brief's stop condition): none.** R4282's ciphertext is Latin letter shapes plus special signs
+(lambda, delta, boxed square, epsilon, phi, alpha, mu) with single digits 3 4 5 7 8 used as letter-like signs
+inside words (`k448EkM5b`), 1,094 signs, K=34. Both keys encipher into multi-digit numbers (2-digit letter codes,
+3-digit nulls/names, 4-digit words); no sign of R4282's alphabet appears on their cipher side, and R4282 has no
+multi-digit number groups. Applying either key with `tools/decode_key.py` would decode nothing, so per the brief no
+key file, no decode, no shuffled-key control and no judge were run -- this is "no overlap, not tested", not a
+negative on R4282 (rule 3: a control on a key that covers 0 signs could not differ from the target). Grades: none
+claimed (rule 4). No HYPOTHESES.md family row (nothing was run against the target).
+
+**Suggestion (not this brief, rule 7):** R4284 (DECODE 4284, the numeric homophonic letter on II:114, 108 distinct
+values, range 2-1493 in Bourdeau's transcription) is numeric, and its range spans both R4280's 2-digit letter codes
+and R4281's 4-digit word codes. Neither key is recorded as tried against R4284 (Bourdeau tried R4310 and R4296
+only). Next: transcribe R4280 p.1 (one page, 2 passes + 1 reconciliation) and apply it to R4284 against a
+shuffled-key control, ~$3. That is a different target folder's test; the parent decides.
+
+Status word unchanged (`open`). Requests: de-crypt.org 14 (login page + submit, RecordsView/4280, RecordsView/4281,
+11 PDFs), 1.6 s apart, one login; no other host.
+
+## Remaining gaps (FT4, 3 Oct 2026)
+Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4)
+- R4282 whole letter - blocker: not-attempted; 66 Chifferklaver key records untried, none yet shown to use letter-shape signs; next: filter the 66 by DECODE Symbol Sets (login-free) for a letter-shape key, ~$1
+- transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
+
+## Escalation (FT4, 3 Oct 2026)
+- [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
+- [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
+- [ ] known-keys: R4284 crib leaf (bRIK) and R4280/R4281 (FT4, no sign overlap) done; 66 records left, filter by Symbol Sets next
+- [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
+- [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
+- [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
+- [n/a] retry: no earlier attempt failed on a fixable setting
+Verdict: keep going: 2 internal gaps; cheapest next: filter the 66 key records by Symbol Sets, ~$1

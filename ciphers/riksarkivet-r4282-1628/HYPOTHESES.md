@@ -69,3 +69,9 @@ with bRIK's R4284 crib key over every placement is 3 of ~12 signs, matched exact
 partial key, no anchor. Conditional (rule 2/3): the positive control is error-free, while Bourdeau's transcription is a
 single pass with no measured error rate; max-err 2 covers at most 2 misreads in a 22-sign window (about 9%), so a
 transcription noisier than that would make the 22-letter rows a non-test, not a negative (the SALV-DIAG lesson).
+
+## FT4 (3 Oct 2026, account-4): shelf-neighbour keys R4280/R4281 -- not run
+
+No row: both keys are numeric-only (2-, 3- and 4-digit codes) and share no sign with R4282's letter-shape
+alphabet, so a decode would cover 0 of 1,094 signs and a shuffled-key control could not differ from it (rule 3).
+Stopped at the overlap check per the brief; see NOTES.md "## FT4".
