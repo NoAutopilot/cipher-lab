@@ -264,3 +264,60 @@ Requests: archive.org 1, be-api.us.archive.org 1, www.googleapis.com 3, catalog.
 Propagation (A1B-FILS-L10, 3 Oct 2026, rule 10): the code word 28 = Ml de Biron (added at M by FILS-NOMEN, line above) is
 withdrawn -- two blind reads put the stroke taken for its overbar with line 11's writing (NOTES.md "A1B-FILS-L10 results").
 Token grades on f.35r are unchanged (H 74 / M 28 of 102); the only code word left is xiiij = Seigneur (M). Class unchanged.
+
+## Third audit: Gérard 2003 *Répertoire* weighed for N4 (A1B-VERIFY-FILS-N4b, account 1 for LANE-A1B, 3 Oct 2026, 17:01-17:10 UTC)
+
+Verifier, separate from the solver sessions and from A1B-FILS-LQ. The rule I apply was fixed in advance by the second
+audit's own text (committed before this pass): "If the entry is genealogical or heraldic, or a catalogue line without a
+decipherment, N4 follows with no further search."
+
+**Independent re-check (script, scratchpad only).** HTRC Extracted Features API, mdp.39015059979289, all 406 pages,
+header+body+footer token counts, one request:
+- `3416` occurs once in the volume, on seq 00000176 only. `3415`, `3417`, `3418`: 0 in the volume.
+- Seq 176 (505 tokens, 39 lines): *maison* x12, *État* x6, *officiers* x5, *Rôle* x3, *gentilshommes* x3, *Comptes* x3,
+  *Clairambault* x3, *gages* x2, *domestiques* x2, *Nevers* x3, *Mantoue* x1, *Lorraine*, *Bourbon*, *Montpensier*,
+  *Navarre*; 47 distinct numerals (manuscript and folio numbers of other entries), `35` among them. No token containing
+  *chiffr* or *déchiffr*, no *lettre(s)*, no *Gonzague*, *Rethel*, *Clèves* or *Biron*. This matches A1B-FILS-LQ exactly.
+- The volume's only *chiffr*/*déchiffr* tokens (7) are on seq 20, 21, 41, 44, 46, 47, 65: front matter and early
+  sections, none with 3416. *Gonzague* is on seq 307 and 363, *Rethel* on 331 and 380, all away from 3416.
+- HathiTrust full-text search-only (babel.hathitrust.org, `pt/search?q1=3416`): HTTP 403 Cloudflare "Just a moment",
+  logged unreachable, not retried.
+- Google Books API (key + `country=US`): volume 2L0WAQAAIAAJ still `NO_PAGES`; `"Fr. 3416"` (315 items) and
+  `"Fr. 3416" chiffre` (26) return only "fr. 3,416" sums and federal regulations; `"3416" Nevers maison` (82) lists the
+  *Répertoire* (pxPgAAAAMAAJ, no snippet) and, independently, Viennot's *Femmes en fleurs, femmes en corps* describing
+  "Ms. fr. 3416 : Pièces et lettres diverses (maison de Nevers)" -- the same household/family framing as Gérard's page.
+
+**Weighing.** The question for N4 was never what Gérard's sentence says word for word, but whether the *Répertoire*
+carries a decipherment of f.35. It is a source index for genealogy and heraldry; the page that cites fr.3416 is a
+household-rolls index; and a full per-page token count, not a single search snippet, shows no cipher or decipherment
+word on that page and none anywhere near it. A printed decipherment cannot sit in an entry with no word for cipher,
+decipherment or letter. That is the "catalogue line without a decipherment" case the second audit pre-registered. What
+stays inference (grade I) is only the entry's exact wording and whether its "fol. 35" refers to the letter or to a
+household item on the same folio range; neither changes the answer. One caveat: OCR could drop a token, but a 2003
+printed book's OCR losing *chiffre* on exactly that page is not a reason to withhold N4 by itself.
+
+The remaining families: Boltanski 2006 closed within search-inside limits (second audit, gap 1); open indexes, cipher
+blogs, solver repositories, Tomokiyo, Gomberville and the BnF catalogue covered (sections 3 and Gap 3); JSTOR rows
+177-178 unanswered, which do not block N4 (Verifier brief 2(g)).
+
+### Classification
+
+| item | class | key | prior plaintext | prior decipherment |
+|---|---|---|---|---|
+| fr.3416 f.35r figure runs, key no.25 | **N4** (from N3) | published (unchanged: Tomokiyo's attribution of key no.25 to this letter; the alphabet read by us from the period key sheet fr.3995 f.51r) | none located | none located |
+
+**Safe sentence:** "Under key no.25, which Tomokiyo identified for this letter, the figure runs at the foot of BnF
+fr.3416 f.35r (the duc de Nevers to his son, c. late 1589) read as French letter fragments, graded 74 of 102 tokens H,
+that outscore 200 shuffled keys at three seeds. No prior decipherment located in the principal editions and catalogues:
+the BnF catalogue, Gomberville's 1665 *Mémoires*, Boltanski's *Les ducs de Nevers et l'État royal* (2006, phrase
+search), Gérard's 2003 *Répertoire* (per-page word counts), Tomokiyo's pages, three solver repositories, the cipher
+blogs and the open scholarship indexes (searched 3 Oct 2026); internal or unpublished work not excluded."
+
+**Unsafe sentence:** "First decipherment" or "previously unread letter" without the qualifier; "no prior decipherment
+exists"; any wording that calls the runs a plaintext of the letter (they are fragments, 28 tokens M, clear text and
+nomenclator only partly read). The key is `published`, so "our key" is unsafe too.
+
+**Postmortem.** No over-claim found in the target's files. Propagation: SECOND-OPINIONS-QUEUE row SO-NV02-F35 carries no
+class field and its prompt states no class, so nothing to change there; status.json `fields_source` still says "N3
+kept" (the parent's file, flagged in ROOM.md). NOTES.md's N3->N4 gap removed. Requests: data.htrc.illinois.edu 1,
+babel.hathitrust.org 1 (403), www.googleapis.com 4.
