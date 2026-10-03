@@ -501,3 +501,61 @@ Vision: 0. Requests: none (all local).
 `data/masc/cells_370.txt` with nl20, control first, plus the same 3-seed `--shuffle-target` floor, and a 6/1-as-
 divider variant (6/1 tokens rewritten as `.`). If either reads, a c.1800 Dutch corpus (~$2, V6-PTCORP's method) is
 the next gate before any judge. Leaf 3 (faint, same cipher) stays untranscribed.
+
+## 3 Oct 2026 -- A2-RAA4: homophonic family_run on the 370 leaf-2 cells (matched control first, rule 3)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Input and corpus** unchanged from A2-RAA3: `data/masc/cells_370.txt` (370 cells, top*10+bottom, K=25 with the
+blotted `?2` kept as its own sign), `nl20` (Gutenberg 1880s-1900s novels; no c.1800 Dutch in tools/data, so a FAIL or
+PASS is conditional on that era mismatch, rule 3). Log: `data/homophonic/run.log`; rows in HYPOTHESES.md.
+
+**Command:** `python3 tools/family_run.py specs/na-raad-azie-1800.json --family homophonic --param profile=target
+--cipher ciphers/na-raad-azie-1800/data/masc/cells_370.txt --tokens space --corpus tools/data/nl20 --seeds 3 --gate 0.6`
+(then `--shuffle-target 11/12/13 --seeds 1`, and `--control-only` with `--param noise=0.03` / `noise=0.06`).
+
+| run | N | K | recovery (per seed) | mean | best score |
+|---|---|---|---|---|---|
+| control, profile=target (sign counts shaped like the target's own, 6/1 at 23%) | 370 | 24 | 0.968 / 1.000 / 0.954 | 0.974 | -757.7 / -720.7 / -775.8 |
+| control, profile=target, noise=0.03 | 370 | 24 | 0.932 / 0.970 / 0.924 | 0.942 | -829.1 / -750.3 / -823.8 |
+| control, profile=target, noise=0.06 | 370 | 24/24/23 | 0.908 / 0.943 / 0.549 | 0.800 | -824.5 / -851.6 / -939.0 |
+| **target** (8 restarts; top 3 converge -866.0/-866.0/-866.8) | 370 | 25 | n/a | | **-866.0** |
+| target shuffled, seeds 11 / 12 / 13 | 370 | 25 | n/a | | -1046.3 / -1053.7 / -1059.3 |
+
+Control meets the 0.6 gate, so the target ran. The injected-error levels bracket this transcription's own measured
+error: A2-RAA2's two blind passes disagreed on 11 of 366 aligned pairs (3.0%) before reconciliation, and the control
+still reads at 3% (0.942) and at 6% (0.800, one seed of three collapsing to 0.549) -- so the control is not passing
+only below the target's real noise (rule 3, SALV-DIAG clause). Can the control differ from the target on the
+statistic? Yes: recovery is per-position letter accuracy against a known plaintext and the target's readability is
+judged on the decode; the score is order-dependent (shuffles land 180-190 lower).
+
+**Result.** The target's best decode is the same one A2-RAA3's masc run found (identical key and score, -866.0; both
+families call the same `homophonic_anneal` solver, which already allows many cells to one letter), and **it does not
+read** (`families/homophonic-1-profile=target-nl20.txt`, L02 "deuroiekteerdeuermendindueneenkorus", L03
+"troeuenuoorindiewengedoorueene"): the key sends 61, 24 and 44 to e, 21 and 34 to u, 14, 71 and ?2 to n -- the
+many-to-one freedom spent on producing Dutch-looking letter pairs, not words. A homophonic control of the same N, K
+and sign-count shape reads 0.95-1.00 clean and 0.80-0.94 at the target's own error level, so this is a
+**control-backed negative for a cell-per-letter (homophonic or simple) substitution of Dutch at this transcription,
+conditional on the nl20 corpus** (era 1880s-1900s against a letter of 1800).
+
+**Honest status of the A2-RAA3 masc result.** A2-RAA3 placed the target's -866.0 "inside the control true-key band"
+(-811.7 to -877.8). With this step's controls the band of real nl20 text at N=370 under a correct key is -720.7 to
+-877.8 across six windows: the score varies with the window more than with the design, and -866.0 sits at the low
+edge of it. A target score inside that band with an unreadable decode is not a reading and is not evidence for one;
+what stands is only that the cell order is not random (3 of 3 shuffles land about 180 lower), which any language
+under any cell-wise code would also show. No NEAR row is warranted from either run.
+
+The ARM-C1 shuffled-decode judge clause was not triggered: no decode read, so no judge was run (the spec has no
+judge block either).
+
+Grade counts this step: H 0, C 0, S 0, M 0, I 0 -- no token claimed. Vision: 0. Requests: none (all local).
+
+**Next step** (~$1, local, ~2 min of runs): the 6/1-as-divider/null variant named by A2-RAA3 -- rewrite the 85 6/1
+cells as word breaks (`--tokens space` with 6/1 removed, N=285, K=24) and rerun `--family masc` and `--family
+homophonic --param profile=target` with the same controls and shuffle floors; then, only if either reads, a c.1800
+Dutch corpus (~$2, V6-PTCORP's method) before any judge. If neither reads, the cell-per-letter family is exhausted at
+this length and the next instrument is a different design (a syllable/word code over the 7x4 grid, `--family
+syllabary` or `nomenclator`) or more text (leaf 3, faint, same cipher, untranscribed: ~$4-6 crops + 2 passes + 1
+reconciliation).
