@@ -1032,7 +1032,7 @@ Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
-- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; next: verifier on the 7 candidates and 3 conflicts, then a glossed S76/S31 instance on f.36r/f.37r, ~$3
+- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; verifier (VERIFY-CEPPO-WP, AUDIT.md): 7 accepted and applied (endorsed 113 -> 120), L04.41/L05.42 contested (t at M), L02.35 rejected; next: passC L04.39 (D reads a barred 8) and a glossed S76/S31 instance on f.36r/f.37r, ~$3
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
@@ -1084,6 +1084,11 @@ Relabel controls (`relabel_null.py`, `f87_relabel_null.txt`):
 - hash only: random signs 1/300 (p 0.007). In-family flips: 45/500 (**p 0.092**, fails).
 So much of the gain comes from adding o and a anywhere. The specific tiles the rule picks beat random in-family flips only for
 hash+8, and only just.
+
+**Verifier (VERIFY-CEPPO-WP, 3 Oct 2026, `AUDIT.md` last section).** The 7 S candidates are accepted and applied to
+`harvest/ciphertext_f87.tsv`: solver S 134 -> 139, endorsed 113 -> 120, judge -1.655 FAIL. L04.41 and L05.42 keep t but drop
+to M: the shape says o, but o lowers the score, so gate (iii) fails. L02.35 is rejected: the verifier and blind reconciler D
+see no slant, so o stays S. Fresh-seed in-family flips: p 0.033-0.034 for the 7.
 
 **Judge** (pasted, `python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ...`):
 ```

@@ -631,7 +631,7 @@ Requests this job: 0 network. Subagents: 2 Sonnet calls (passes A and B). No thi
 
 ## Remaining gaps (NEVBIR-47, 2 Oct 2026)
 Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged after NEVBIR-47C, 3 Oct 2026). The Ceppo-Nevers key is control-backed for f.47r (z 3.4-4.6, rank 1/201 in every run, power 19-20/20 at 0.33-0.34), but the text is not: 771 signs decoded, all M/U, judge FAIL. f.117r: 276 signs, all M/U.
-- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C); witness pair check done (CEPPO-WITNESS-PAIRS, 3 Oct 2026): R-8 and R-6 agree with the third reader on 28/28 and 39/39 tiles (the shuffle control is non-discriminating by construction); R-hash settles 6 unsettled upright hashes as S24 (o), which are 6 S candidates; key z 4.36-4.93, judge FAIL -1.524; next: verifier on the 6 S candidates and a second eye on the f.36 witness glosses (blob-6 = m is still by elimination only), ~$2
+- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C); witness pair check done (CEPPO-WITNESS-PAIRS, 3 Oct 2026): R-8 and R-6 agree with the third reader on 28/28 and 39/39 tiles (the shuffle control is non-discriminating by construction); R-hash settles 6 unsettled upright hashes as S24 (o), which are 6 S candidates; key z 4.36-4.93, judge FAIL -1.524; 6 S accepted by VERIFY-CEPPO-WP (AUDIT.md, 0 -> 6 endorsed); next: a second eye on the f.36 witness glosses for blob-6 = m (still by elimination only), ~$2
 - f.47r 73 unsettled positions (13 third-reader UNSETTLED after CEPPO-WITNESS-PAIRS settled 6; was 19 in harvest/f47/la/focus.tsv + 60 one-reader gaps) - blocker: not-attempted; written as sign-sorter focus rows; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
 - f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so L01-L03 and L17 run edges are unchecked; next: eye-check the s1 crops of L01-L03 and L17 s1-s2 against the passes, disk only, ~$1
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error with 100 windows, disk only, ~$1
@@ -647,7 +647,7 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged 
 - [ ] key-rebuild: f.47r S74/S54, S80/S65 and hash pairs checked against the f.36 gloss (CEPPO-WITNESS-PAIRS), S76/S91 has no glossed witness instance yet; T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut, all 17 lines read twice
 - [x] retry: f.47r third reader on 197 split tiles (NEVBIR-47C); [ ] f.117r power at a measured post-look-alike error; [x] f.47r pair check on the f.36 glossed witness (CEPPO-WITNESS-PAIRS)
-Verdict: keep going: 7 internal gaps; cheapest next: verifier on the 6 CEPPO-WITNESS-PAIRS S candidates on f.47r, ~$2
+Verdict: keep going: 7 internal gaps; cheapest next: a glossed blob-6 on f.36r/f.37r for R-6 (the 6 f.47r S candidates were accepted by VERIFY-CEPPO-WP, 3 Oct 2026), ~$2
 
 ## NEVBIR-NAMES (3 Oct 2026, account 2 for the account-3 orchestrator): whole-name gap fill, f.117r exploratory only
 
@@ -742,6 +742,10 @@ legible glossed instance, so no rule.
   "...l o delfin et le..." (the Dauphin?), unresolved. The rest is as NEVBIR-47C.
 
 f.87 (fr.3251) results are in `../ceppo-nevers-fr3251-1570s/NOTES.md`, section CEPPO-WITNESS-PAIRS.
+
+**Verifier (VERIFY-CEPPO-WP, 3 Oct 2026): the 6 hash S candidates are accepted, so f.47r endorsed S goes 0 -> 6 (`AUDIT.md`).**
+The verifier checked all six tiles upright by eye, reproduced the readings, and re-ran the controls at fresh seeds: z 4.56-5.31, rank 1/201, power 20/20.
+In-family flips came out 0/1000 on two seeds. Endorsed sequence: `harvest/witness_pairs/f47_passE.tsv`.
 
 ## F36-READ (3 Oct 2026, account-3 orchestrator's worker): f.36-37 (5 Apr 1571) whole letter under the printed Ceppo-Nevers key
 

@@ -1009,3 +1009,82 @@ published key. Class unchanged: **N3**, key `published`, text `unknown`. No pass
 - Verdict: **endorsed**, 155 -> **156**. PROGRESS.tsv "Birago f.21v" set to 156 from this section. status.json is yours.
 - Still open (unchanged): a systematic scan of the fr.3252 witness for an unglossed diagonal dotted slash, which would be
   the one finding that reopens all five dotted-slash tiles (L01.15, L03.7, L03.10, L03.14, L11.17) together.
+
+# AUDIT: f.87 hash and 8 relabels of CEPPO-WITNESS-PAIRS (VERIFY-CEPPO-WP, 3 Oct 2026)
+
+Verifier: worker VERIFY-CEPPO-WP (account 2, LANE-A2PUSH, for the account-3 orchestrator), a separate session from the
+solver CEPPO-WITNESS-PAIRS (1942dc4d, PREREG e1760f2e). Brief `.claude/briefs/runs/2026-10-03-acct3-verify-ceppo-wp.md`.
+Clock read 01:39 UTC at start. Disk only: 0 requests, 0 subagents. No class change. The witness-rule check and the f.47r
+ruling are in `../birago-fr3252-1571-72/AUDIT.md` (on the f.36v crop, this verifier's eye reproduces 3 hash glosses: slanted
+= t, upright = o x2).
+
+**Claim under audit.** 7 S candidates on passC (hash S88 -> S24 o: L03.25, L03.46, L04.29, L05.23; plain-8 -> barred-8
+S65 -> S80 a: L02.7, L03.6, L04.21) and 3 relabels that contradict endorsed S tokens (L02.35 S24 -> S88; L04.41 and L05.42
+S88 -> S24).
+
+## 1. Tiles by eye
+Zoom crops (3-4x, autocontrast) cut from `harvest/f87/c88_cipher_w.jpg` by passC neighbours; not committed.
+- L03.25, L03.46, L04.29, L05.23: upright stem. L04.34 (slanted, the rule's own control) is plainly different. **Rule settles.**
+- L02.7, L03.6, L04.21: the bar runs through the waist of the 8 and out past it on the right (on L02.7 and L03.6 it
+  joins from the sign before, the same ligature seen on the f.36v witness). **Barred.**
+- L04.41, L05.42: **upright** to this eye, as the solver says.
+- L02.35: the sign is fused with the bar of the theta before it. The one stroke visible above the bars is near-vertical.
+  This verifier **cannot see the slant** the solver reports: UNDECIDED.
+
+**A third reader that never saw the rule.** The 29 Sept verifier's blind Opus reconciliation `harvest/verify_d2/f87/passD.tsv`
+(VERIFY-CEPPO-D2-1) reads each of these tiles. D's positions drift by one on L04 and L05 after its merges, so they were
+located by neighbours. D reads S80 at L02.7, L03.6 and L04.20 (= passC L04.21). It reads S24 at L03.25, L03.46, L04.28,
+L05.23, at L04.40 (= passC L04.41) and L05.43 (= passC L05.42), and at **L02.35**. All of these are at M or L, with
+notes such as "upright stroke with two bars" and "S24/S88 lean is the hardest pair". So D agrees with the rule on all 7
+candidates and on L04.41 and L05.42, and **disagrees with it on L02.35**.
+One more point, outside this brief: D reads passC L04.39 (where the solver kept a plain S65) as S80, "8 with bar through
+waist". That is a further 8-family tile for the next pass.
+
+## 2. Re-derivation and controls (fresh seeds 4-6; the solver used 1-3)
+Scratch copies of decode.json (the f.87 job only) were built with the proposals applied, and `tools/decode_key.py` was run
+on them. The 10-change copy reproduces the solver's `f87_reading_passE_hash8.txt` text. Key control at the two-reader error
+0.28 (200 shuffles, 20 windows):
+| sequence | real key | z seeds 4/5/6 | rank | power | in-family flips (1000; seeds 7 / 8) | judge |
+|---|---|---|---|---|---|---|
+| passC (as committed before) | -1.7352 | 2.64 / 2.78 / 3.23 | 2 / 2 / 1 | 20/20 | - | -1.723 FAIL |
+| passC + 7 candidates | -1.6516 | 3.39 / 3.49 / 3.94 | 1/1/1 | 20/20 | 33/1000 p 0.033 / 34/1000 p 0.034 | **-1.655** FAIL |
+| + L04.41, L05.42 -> o (9) | -1.6547 | 3.43 / 3.46 / 3.98 | 1/1/1 | 20/20 | 72/1000 p 0.073 (seed 7) | -1.658 FAIL |
+| solver's 10 (+ L02.35 -> t) | -1.6372 | 3.54 / 3.60 / 4.16 | 1/1/1 | 20/20 | 28/1000 p 0.029 (seed 7) | -1.642 FAIL |
+Same-position random-sign control, 500 draws, seed 7: 7 candidates 0/500 (p 0.002); 10 changes 0/500 (p 0.002).
+
+## 3. Ruling
+**Accepted: the 7 candidates, as S.** All three pre-registered gates hold at fresh seeds: (i) the rule settles each tile,
+confirmed by this eye and by blind reconciler D; (ii) rank 1/201 with power 20/20 on every seed; (iii) the judge improves
+(-1.723 -> -1.655). The in-family control passes at p 0.033-0.034. That is marginal, so the acceptance rests on the shape
+evidence, which two eyes and D give independently. The control is support, not the ground.
+
+**Conflicts (rule 4: both readings recorded, not settled by counting heads):**
+| token | t (S88) supported by | o (S24) supported by | stands |
+|---|---|---|---|
+| L04.41 | passC readers A and B (blind Sonnet, sheet matching, agreed, H); the language score (-1.6516 with t vs -1.6547 with o) | witness shape rule (upright); solver's eye; this verifier's eye; D (M, "A S88 alt S24, B S88") | **t, graded M** (was S) |
+| L05.42 | passC readers A and B (H); the language score | rule; both eyes; D (L, "both passes S88; hardest pair; line end") | **t, graded M** (was S) |
+| L02.35 | the solver's eye (slanted); the language score (-1.6547 -> -1.6372, the largest single gain) | passC readers A and B (H); D (M); this verifier sees no slant | **o, stays S** |
+Why: the shape evidence is the stronger kind. The readers matched a sheet and on f.47r they systematically labelled upright
+hashes S88, so their agreement here is a shared bias, not two independent votes. But pre-registered gate (iii) fails for
+o at L04.41 and L05.42 (the score gets worse), so o cannot be promoted. The endorsed t loses its S because its shape is
+contested. At L02.35 the rule's own condition (i) is not met for this verifier, and D agrees with the endorsed o. So the
+proposal there is rejected; the language gain for t is recorded but does not decide it.
+
+**Applied** to `harvest/ciphertext_f87.tsv`: 7 tokens set to the rule label at conf H, and L04.41 and L05.42 dropped to
+conf M with their value unchanged. Regenerated with `tools/decode_key.py` ("reading up to date" with `--check`), plus
+`reading_f87_letters.txt`. Solver-rule tokens: S 134 -> **139**, M 66 -> 61, U 4. Reading: L03 "...nores**o**nal...
+auendouaz**o**", L04 "...oci**a**ungiorn**o**auanti..." ("un giorno auanti" now in full), L05 "...con**o**zoorte...".
+The L02 change is "a" for "[et]". Judge on the committed file, pasted:
+`FAIL language: score=-1.655, null_p99=-1.623, real_p05=-0.947, real_median=-0.833, mode=both, N=194`.
+`harvest/f87/passC.tsv` is left as the record of passC.
+
+**Endorsed count (verifier rule, D-based as before):** all 7 accepted tiles sit at M/L in D's 113, so they enter the
+verifier-rule count the way the CEPPO-SPLITS tiles did on f.21v. **f.87 endorsed S 113 -> 120 of 205.** The two contested
+tokens were already M in D, so the count does not change for them. Class unchanged: **N3**, key `published`, text
+`unknown`. The safe sentence is unchanged. "un giorno auanti" was already in it, and the o is now read rather than supplied.
+
+## For the orchestrator (VERIFY-CEPPO-WP, f.87)
+- Verdict: **7 accepted** (113 -> 120). L04.41 and L05.42 are **contested**: t stands at M, o is recorded. **L02.35 rejected**
+  (o stands, S). PROGRESS.tsv "Birago f.87" set from this section. status.json is yours.
+- Open: passC L04.39 (D reads a barred 8, S80); L05.28 is undecided. A legible f.36r/f.37r gloss over an upright hash at
+  a line end would bear on L05.42.
