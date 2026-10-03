@@ -7239,3 +7239,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:16 | account-4 parent | check-in 80 16:16: 7 done (hessen-daenemark-1672 pooled gloss held-out 8/8 P<0.0001; manteuffel -> partial, period gloss hand, key-gloss 17/17 independent; eckert pooled 76/88; pollaky Laura rule beat control -> NEAR row; decode-1411 judge retired, ASKS 120). Spawned CLOSER-73, FT4y, GAPS161-165
 2026-10-03 16:16 | CLOSER-73 (account-4) | claim: archive 7 finished account-4 sessions (CLOSER-72, GAPS153, FT4x, GAPS157, GAPS158, GAPS159, GAPS160) + LEDGER rows
 2026-10-03 16:16 | GAPS163-hessen-daenemark-1672 (account-4) | claim: hessen-daenemark-1672 script-only merge pages 1-3 + gloss key + decode_key --check; cap USD 3, box 25 min
+2026-10-03 16:16 | GAPS165-sp54-maclean-1745 (account-4) | claim: sp54-maclean-1745 -- discovery_items SP 54/25 item description, then Browne vol.ii full-text grep with positive control; script only, cap 2, box 16:18-16:43 UTC
