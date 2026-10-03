@@ -205,10 +205,67 @@ Other items' recipients (Stair, Cumberland, Fawkener, Ligonier, Granby, Claverin
 
 Waits on: TNA page copies (REQUEST.md, ASKS row 57).
 
-- S: read the full text of Skrine's *Fontenoy* (1906, Google Books Q6FnAAAAMAAJ full view, or its archive.org copy) for
-  quoted Harrington-Fawkener/Harrington-Cumberland letters of June-August 1745, to see whether SP 87/17/58 or 17/122 is
-  quoted from its deciphered text -- no login, no person.
+- [done 3 Oct 2026, FT4-sp87-further-1712: neither item cited] read Skrine's *Fontenoy* (1906) for SP 87/17/58 or 17/122.
+- S (refreshed 3 Oct 2026, FT4-sp87-further-1712): one DECODE browser login (`tools/decode_browser_login.js`, with
+  `--guess-fullsize`) on key record 8957 (BL Add MS 32264 f.3-4, 1710) and 8763-8765 (Add MS 61575, 1711-1713, English),
+  to test whether their images are served and whether any key names the French plenipotentiaries or Malknecht -- no person.
 
 Requests this pass (3 Oct 2026): googleapis.com/books 5, archive.org 2 (advancedsearch 1, djvu 1), github.com 0 (clones
 shared with sp87-brunswick-1759 above). WebSearch 3.
 Gate re-run (GF4-BATCH12, 3 Oct 2026): `sp87-further-1712: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp87-further`: no line.
+
+## FT4-sp87-further-1712 (account-4), 3 Oct 2026
+
+Step run: the "While waiting" action above (Skrine's *Fontenoy*), plus the brief's key-availability checks. No ciphertext of
+any of the 13 items is on disk (all `digitised: false`, LANE CX2 25 Sept 2026; not re-fetched), so `tools/design_prior.py`
+has nothing to read and no test was run on a target. Nothing here is a reading, a negative, or a novelty claim (rules 3, 10).
+
+1. **Skrine, *Fontenoy and Great Britain's Share in the War of the Austrian Succession* (1906)**, archive.org
+   `cu31924027889686`, full djvu.txt (779,973 bytes) fetched and grepped 3 Oct 2026. "cypher|cipher|decipher": 1 hit
+   (line 553, figurative "cypher in council"), none tied to a letter. Harrington letters it cites by date: to Cumberland
+   June 9, June 22, July 26, Hanover August 13, October 6/8/19/20; to Fawkener September 20 (the date GF4-BATCH12 saw in
+   snippets). **Neither 17 June 1745 (SP 87/17/58) nor 4 August 1745 (SP 87/17/122) is cited**, and Skrine gives no
+   archive reference ("State Papers"/"Record Office" 0 hits) beyond correspondent and date. Result: no print of either
+   item's text found in Skrine; a search result, not a negative on print elsewhere.
+2. **Period key for SP 87/4/234 (1712), register check.** KEY-OFFICES.tsv / KEY-DESIGN.tsv: years 1700-1720 give only
+   `antt-msliv0638-brochado-1712` (Portuguese) and `na-schonenberg-1678-1716` (Spanish) -- no British Secretary of State
+   or Utrecht-milieu key in hand. Cached DECODE key catalogue (`sources/decode/keys-all-2026-09-28-merged.tsv`, login-free
+   crawl of 28 Sept 2026; not re-crawled) filtered to BL Add MS 322xx (Blencowe/Newcastle cipher papers) and Add MS 61575
+   (Blenheim) dated within 1708-1715: **11 key records** -- 8957 (Add MS 32264 f.3-4, 1710), 8761-8767 (Add MS 61575
+   ff.60-75, 1711-1714, three tagged English, four French?), 8762/8768-8770 (Add MS 61575 ff.61-79, 1702-1723). All
+   status N/A; DECODE full-size images are account-gated (CLAUDE.md host table; re-test per record). These are the
+   candidate period keys for the 1712 Utrecht traffic; **none is in hand**, and none is known to belong to the French
+   plenipotentiaries' (or Malknecht's) cipher rather than a British office's own -- an intercepted French letter would
+   be read with a decipherer's reconstructed key (d'Alonne/Blencowe), which is what Add MS 32264 might hold. No
+   known-key test run (brief: only if a key is in hand).
+3. **TNA Discovery digitised flag:** not re-fetched; LANE CX2's 25 Sept 2026 fetch of all 13 items (`digitised: false`)
+   stands.
+
+**Planned test (pre-registered here, run when copies arrive).** Unit: SP 87/32/115 first (calibration: Granby's
+"Copy deciphered" at Belvoir, HMC Rutland II p.225), then SP 87/4/234. (a) Transcribe the cipher passages
+(two blind passes per TRANSCRIPTION.md). (b) Run `tools/design_prior.py` on the transcription. (c) If a candidate key
+(a DECODE record above, or an SP 87 key of the Holdernesse office for 1760) is in hand: decode, statistic = share of
+decoded tokens forming dictionary words of the language (en18 or fr18 corpus, era-checked per rule 3) over the
+cipher spans, gate = real-key share >= the 99th percentile of 200 value-shuffled keys (same key, codes permuted;
+the control varies on the statistic's own axis), and then `tools/judge_plaintext.py` on the reading plus the
+same judge on the shuffled-target decode (ARM-C1). For 87/32/115 the HMC calendar gist (Ferdinand's reinforcement
+request, Prussian victory over Laudon) is a C-grade crib check only on content words it names. (d) With no key:
+`tools/family_run.py` with the matched control at the transcription's own N and the design design_prior names.
+
+Requests this pass (3 Oct 2026): archive.org 2 (advancedsearch 1, djvu 1, 1.5 s apart). DECODE, TNA: 0 (cached files).
+
+## Remaining gaps (FT4-sp87-further-1712, 3 Oct 2026)
+Read so far: 0 of 13 items (no ciphertext on disk; all 13 `digitised: false`)
+- all 13 SP 87 items (cipher text) - blocker: waiting-on ASKS row 57; TNA page copies per REQUEST.md, no online images (LANE CX2 digitised flags)
+- SP 87/4/234 period key - blocker: no-key-material; 11 DECODE key records (BL Add MS 32264, 61575, 1702-1723) are candidates only, images account-gated, none in hand (this section, item 2)
+- SP 87/32/115 period decipherment - blocker: needs-physical-access; Granby's "Copy deciphered" is in the Rutland MSS at Belvoir, calendared only (HMC Rutland II p.225)
+
+## Escalation (3 Oct 2026)
+- [n/a] siblings: no sibling ciphertext of these offices on disk
+- [n/a] clear-pages: no images of any item exist online
+- [x] known-keys: KEY-OFFICES/KEY-DESIGN and cached DECODE key list checked 3 Oct 2026, 11 candidate records, none in hand
+- [x] print: Graham vols 1-2, HMC Rutland II, Skrine Fontenoy read in full; none prints an item's text
+- [n/a] key-rebuild: no ciphertext on disk to rebuild from
+- [n/a] image-check: all thirteen items digitised false
+- [n/a] retry: no prior test exists to retry
+Verdict: parked: every gap has an outside blocker
