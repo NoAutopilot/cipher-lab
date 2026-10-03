@@ -1,0 +1,28 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "harvest/f36r/ciphertext_f36_v2.tsv",
+   "key": [
+    "../ceppo-nevers-fr3251-1570s/harvest/key_f11.tsv",
+    "../ceppo-nevers-fr3251-1570s/harvest/key_extra.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/f36r/reading_f36_v2.txt",
+   "tokens": "harvest/f36r/reading_f36_v2_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L",
+    "U"
+   ]
+  }
+ ]
+}
