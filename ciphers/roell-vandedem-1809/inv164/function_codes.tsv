@@ -44,3 +44,12 @@ la	898	H	1	block9 bottom sub	sub-band4 + worker
 le	892	H	1	block9 bottom main	sub-band4 + worker
 les	998	H	1	block10 bottom sub	sub-band4 + worker
 que	993	H	1	block10 bottom main	sub-band4 + worker
+que	2021	H	3	block1 row21	sub-s3b1 + worker
+que	2121	H	3	block2 row21	sub-s3b1 + worker
+que	2221	H	3	block3 row21	worker (sub read 'quc')
+que	2420	H	3	block5 row20 (written 2420)	worker (sub assigned 2420 to que at row 20 too)
+qui	2023	M	3	block1 row23 (bottom edge of band 1)	sub-s3b1 (L) + worker
+qui	2123	M	3	block2 row23 (bottom edge of band 1)	sub-s3b1 (L) + worker
+pour	2205	H	3	block3 row5	sub-s3b1 + worker
+pour	2206	H	3	block3 row6	sub-s3b1 + worker
+pour	2305	H	3	block4 row5	sub-s3b1 + worker
