@@ -1,0 +1,16 @@
+07:44:45
+pair f249: groups 111, distinct 78, slip letters 355, words 73, maxlen 12
+REAL E0 (no edit) = False (5.6 s)  (True fit / False proved none / None timed out)
+REAL E (<= 1 edit) = 1; timed out False (74.2 s)
+single edits giving a fit: 9 of 223 (timed out 0)
+  W at group 2 (253)
+  W at group 25 (242)
+  W at group 26 (253)
+  W at group 27 (66)
+  W at group 28 (52)
+  W at group 95 (242)
+  D at group 26 (-)
+  D at group 27 (-)
+  D at group 28 (-)
+CONTROL (s wrong slip (words shuffled), n=40): E=1 in 37 (0.925); timeouts counted high 37; among resolved draws E=1 in 0 of 3 (descriptive)
+STOPPED ~08:04 UTC: the session harness's background time limit (about 30 min on the wrapper started 07:34) killed the run during control (g); (g) not scored. Not re-run: a (g) re-run (~10 min) would cross 80 pct of the 50-min box (08:11 UTC).
