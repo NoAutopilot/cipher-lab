@@ -1,0 +1,25 @@
+lines 172  interior spans 139  eligible 51  units with eligible spans 9  spans in a length class of one 4
+per unit eligible: {'f23': 1, 'c32': 3, 'c33': 4, 'c3536': 2, 'c3940': 7, 'c47': 8, 'c48': 4, 'c49': 4, 'c50': 18}
+
+stat	real	ctrl	mean	p95	max	P(ctrl>=real)	gate
+S	30	control-B	26.40	29	31	0.0280	PASS
+S_exact	2	control-B	0.15	1	2	0.0030	-
+
+code	best	units	key_f23	units_list
+11	re	2	n(M)	c47,c50
+20	e|i|t	2	i(M)	c3940,c47
+21	e|t	5	e(M)	c3536,c3940,c47,c48,c50
+23	n	6	n(M)	c33,c3940,c47,c48,c49,c50
+26	e|r	2	aines(M)	c33,f23
+29	r	4	a(M)	c32,c3536,c3940,c50
+30	s	4	s(M)	c32,c48,c49,c50
+31	t	3	mdebrienne(M)	c3536,c48,c50
+32	ou	2	o(M)	c32,c50
+39	e|o	2	et(M)	c49,c50
+46	nce	2	c(M)	c33,c47
+54	est	2	du(M)	c32,c3536
+57	aire|fair	2	e(M)	c49,c50
+75	la	3	-	c32,c3940,c47
+76	le	2	c(M)	c3940,c49
+77	l	2	faire(M)	c47,c50
+83	r|s	2	-	c32,c50
