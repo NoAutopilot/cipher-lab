@@ -15,9 +15,9 @@ with absolute `--fetch`/`--fetch-page` URLs for the other records (relative file
 2. clair571-estrades-1645 / clair577-*: key records 9430 (Clair 577 p.1, Chiffre pour l'Italie), 9431 (Clair 574 p.4-5, Brasset),
    9432 (Clair 580 p.89-95): RecordsView text + images. Write a short pointer in each clair* NOTES.md; images live in
    ciphers/clair571-estrades-1645/keys_decode/ (one place, others point to it).
-Images: folders < 30 MB -- full-size downscaled to <=2500 px long side JPEG, images/manifest.json (URL, record, page, native px, sha1
-of native, re-fetch command); line crops with `tools/iiif_lines.py --image <file> --out <dir> --debug` for cipher pages only, overlay
-checked. Where full size answers forbidden.png, say so per record. NOTES.md per target: route, requests per host, what was / was not
+Images: DECODE images are NOT committed (IMG-DECODE1, 3 Oct 21:35: DECODE record, not public domain, library permission
+needed) -- commit images/manifest.json only (URL, record, page, native px, sha1, re-fetch command) and keep files in the scratchpad.
+Where full size answers forbidden.png, say so per record. NOTES.md per target: route, requests per host, what was / was not
 served. Grades: none. gaps_check on any partial folder touched. Rule 10 wording; "report what was found and where it was not found;
 do not classify novelty". Never print credentials, never retry a failed login, never call AskUserQuestion.
 End: commit by explicit path, `python3 tools/file_shrink_guard.py <paths>`, `python3 tools/room.py --push <paths>`, confirm on
