@@ -1,0 +1,18 @@
+{
+ "cipher_tokens": 1099,
+ "tokens_with_key_value": 367,
+ "overlap": 0.334,
+ "letters_scored": 377,
+ "corpus": "es",
+ "score": -2.0154,
+ "control_shuffled_key": {
+  "n": 200,
+  "p50": -2.059,
+  "p95": -1.781,
+  "p99": -1.6518,
+  "controls_at_or_above_target": 81
+ },
+ "judge_real_p05": -0.8941,
+ "judge_null_p99": -1.8566,
+ "reading_cipher_only": "araffgfaaccraluuafaurfgrraulglauaaaef ccsarcafulrsccccccaurccasfcclrscgrclluaufcsuafalaarlccuasacrsaalcrcarafarau carlcfarcafaufl rllausraffarcrsccaallrallcaccu sclaaafarsualaascscafaalacsculagaarsasrllaslaacscllaulraafssaalaafarlarlsfa papa srauacaalfsuasafaafcallaauucsafuaugruacllulrlfrasaaarcc fuafusllfaugslhcafurnurfs aracrrlgt cfscrsfaaaufcafalalsaalaa frsuaruacsaafaslras cscasaal"
+}

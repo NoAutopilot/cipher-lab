@@ -1,0 +1,80 @@
+{
+ "agreed_distinct_groups": 38,
+ "agreed_group_tokens": 115,
+ "key_codes": 50,
+ "matched_distinct": 2,
+ "matched_tokens": 4,
+ "matched": {
+  "mok": 2,
+  "nob": 2
+ },
+ "control_random_lists": {
+  "n": 200,
+  "mean": 0.58,
+  "p50": 0,
+  "p95": 2,
+  "max": 3
+ },
+ "top_agreed_groups_not_in_key": [
+  [
+   22,
+   "otto"
+  ],
+  [
+   21,
+   "rah"
+  ],
+  [
+   10,
+   "mal"
+  ],
+  [
+   6,
+   "mys"
+  ],
+  [
+   6,
+   "ml"
+  ],
+  [
+   3,
+   "re"
+  ],
+  [
+   3,
+   "mog"
+  ],
+  [
+   3,
+   "mb"
+  ],
+  [
+   3,
+   "lue"
+  ],
+  [
+   3,
+   "le"
+  ],
+  [
+   2,
+   "qik"
+  ],
+  [
+   2,
+   "mor"
+  ],
+  [
+   2,
+   "mon"
+  ],
+  [
+   2,
+   "mei"
+  ],
+  [
+   2,
+   "lob"
+  ]
+ ]
+}

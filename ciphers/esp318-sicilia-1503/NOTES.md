@@ -322,3 +322,70 @@ Adversarial pass per `.claude/briefs/check-solved.md` (try to prove the item alr
 Requests this pass: gallica.bnf.fr 2, googleapis.com 7, github.com (clone shared with decode-2754). Next cheap test
 (Bourdeau's own named step, unrun by anyone): two-pass transcription of ff.120r-121v from the crops already on disk,
 then Bergenroth's Gran-cifra list against it with a matched control.
+
+## First cheap test: f.120r two-pass transcription + Gran-cifra key test (FT4-esp318-sicilia-1503, account-4, 3 Oct 2026, 00:47-01:0x UTC)
+
+**Scope actually run: f.120r only** (1 of 4 pages). Vision calls: 2 (two blind Opus passes, one page per call, on the
+66 line crops already on disk from `tools/iiif_lines.py --ark btv1b52503046q --canvas 452 ... --prefix f120r`, the
+26 Sept command above; no new crop run needed for this page). No reconciliation call: see "Pass agreement".
+ff.120v-121v not transcribed (full-page images exist in Bourdeau's clone, `targets/esp318/full/f12{0v,1r,1v}.jpg`,
+3819x5115; cut with `tools/iiif_lines.py --image` when the alphabet is settled). Requests: elprofedefisica.naukas.com 1
+(the key image), gutenberg.org 1 (La Celestina, considered as an era corpus and not used: it is a modernised,
+copyrighted edition), github.com 1 shallow clone (dbourdeau/cyphersolver HEAD 810a777, 2 Oct 2026). Gallica 0.
+
+**Key source.** Bergenroth's *Gran cifra* of the Gran Capitán, 1501-04, BNE MSS 20.211/52, as photocopied and
+published by Arturo Quirantes (elprofedefisica.naukas.com, 2 Feb 2018, image `Clave-Gran-Capitan-1.jpg`; credited).
+Bourdeau's `lit/berg/` turned out to hold only OCR of Bergenroth's *Documentos* volumes (unreadable, manuscript
+facsimiles), not the key, so the key was read here from Quirantes's image: `key/gran_cifra_alpha_rows_*.jpg`,
+`key/gran_cifra_codes.jpg` (crops), `key/key_gran_cifra.tsv` (23 sign rows a-z + ll, the anulante, 50 code entries;
+codes with two values on the sheet, e.g. tao = na|nos, nom = franceses|esto, are graded M). Key grade if it ever reads:
+`published` (Bergenroth's reconstruction).
+
+**Pass agreement.** `tools/reconcile_passes.py passes/f120r_passA.tsv passes/f120r_passB.tsv --keep-plain`:
+A 1117 tokens, B 1175; agree 439/1183 = **37.1%** (agreed-H 34, agreed-uncertain 405, disagree 744). Class counts:
+clear words A 83 / B 85, code groups 214 / 187, sheet-matched signs 335 / 452, unmatched signs 485 / 451. Both readers
+graded nearly every sheet match L ("look-alike guesses"); they agree on the clear Spanish (superscription L01-02, L05-06
+"don fernando de andrada y benavides y caravajal y bolviosse dellos aqui", L12, L15, L25, L28 "para la roqua de angito
+... el despacho del armada", L32-33) and on the frequent code groups. The split is far above a tenth and the cause is
+an unsettled sign inventory (letters vs groups, and the sheet's 19th-c. hand vs the 1503 hand), so per CLAUDE.md Usage 6
+and `tools/lookalike_pass.py`'s own "Must NOT be used for" clause the look-alike pass was **not** run (it would make
+three machine readers agree on a wrong sheet) and no third machine pass or model reconciliation was spent: the next
+transcription step is the owner's sign sorter. A sheet-crop fault also hurt both passes: row m of the key fell on the
+seam between the two alphabet crops, so no reader could label an m sign (re-cut with overlap next time).
+`ciphertext.tsv` = `passes/ciphertext_draft.tsv` (majority/A sign, confidence per token, alt column), a draft, not a
+settled transcription.
+
+**Key test 1 -- code overlap** (`code_overlap.py`, `--check` OK): 38 distinct code groups agreed by both passes
+(115 tokens); 2 match a Gran-cifra code after merging look-alike letters (mok~moc "con", nob~uob "la"; 4 tokens).
+Control, 200 random code lists with the key's own length profile and letters: mean 0.58, p95 2, max 3. **At chance:
+a mismatch, not a negative** -- the five commonest groups (otto 22, rah 21, mal 10, mys 6, ml 6) are not on the
+list, and Bergenroth's list is partial (~50 of the 200+ codes Quirantes and the CNI count). It does not exclude the
+Gran cifra; it says this partial list cannot be shown to be the key of no. 94.
+
+**Key test 2 -- sign alphabet** (`gran_cifra_test.py`, `--check` OK): cipher-only stream from the draft, 377 letters,
+es 4-gram judge (es17: Cervantes/Quevedo, about a century late; no early-16th-c. Spanish corpus on disk -- rule 3 era
+mismatch noted, not fixed). Target -2.015 per letter; shuffled-key control (200 keys): p50 -2.059, p95 -1.781, 81/200 at
+or above target; judge real_p05 -0.894, null_p99 -1.857. **Non-test**: on a transcription whose sheet labels are L-graded
+guesses at 37% inter-pass agreement, any key scores at the control median. The decoded stream is a/c/f/r/s soup because
+the readers mapped the commonest shapes (7, q/9, a, x) to a3/c3/f1/r1. Grades per token: none claimed (no reading).
+
+Both rows in `HYPOTHESES.md`. `decode.json`/`tools/decode_key.py` not used: there is no reading to regenerate; the two
+scripts above are the rule-7 checks for the numbers reported.
+
+**Not found:** no Gran-cifra reading of no. 94 on f.120r; no evidence for or against the key beyond chance.
+
+## Remaining gaps (FT4-esp318-sicilia-1503, 3 Oct 2026)
+Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) agreed by two blind passes.
+- Sign alphabet of no. 94 - blocker: not-attempted; two machine passes split 63% because the inventory is unsettled (passes/agreement.tsv), so the next pass is a person's (CLAUDE.md Usage 6); next: build a tools/sign_sorter.py packet from the f.120r line crops and file the ASKS row for the owner's sort, ~$2
+- ff.120v-121v - blocker: not-attempted; never transcribed, held until the alphabet is settled; next: crops via tools/iiif_lines.py --image from Bourdeau's full/ pages, after the alphabet is settled, ~$3/page for two passes
+- Nomenclator of no. 94 - blocker: open-codes; commonest groups otto/rah/mal/mys/ml are not in Bergenroth's partial list (code_overlap.json)
+
+## Escalation (3 Oct 2026)
+- [ ] siblings: Lanuza/Claver letters of the viceroy of Sicily (Archivo del reino de Aragón inventory line, Premise check (d)) not yet located
+- [x] clear-pages: clear Spanish on f.120r transcribed by both passes; usable as context, not as a crib for coded spans yet
+- [ ] known-keys: Gran cifra tested (code overlap at chance, sign test a non-test); next key is the "Cifra del visorrey", BRAH 9/15 ff.1-6 (RAH OAI-PMH didl route + tools/browser_fetch.js --binary, CLAUDE.md host notes), ~$4
+- [ ] print: A. de la Torre, Documentos sobre relaciones internacionales vol. VI index under Sicilia/Lanuza (LOCAL-QUEUE/HathiTrust page read), named in Premise check (d)
+- [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish) not built; needs a settled transcription first
+- [ ] image-check: re-cut the key sheet with overlap so row m is visible; read crops zoomed
+- [ ] retry: none yet
+Verdict: keep going: 3 internal gaps; cheapest next: owner's sign-sorter pass on f.120r, then the Cifra del visorrey fetch, ~$4

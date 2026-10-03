@@ -1,0 +1,1184 @@
+line	position	sign	confidence	alt	why
+L01	1	w:muy	H		agree
+L01	2	w:alto	H		agree
+L01	3	w:y	H		agree
+L01	4	w:muy	H		agree
+L01	5	w:poderoso	H		agree
+L01	6	w:y	M		agree-flagged
+L02	1	w:catholico	M	B:w:catolico	differ
+L02	2	w:principe	M		agree-flagged
+L02	3	w:rey	H		agree
+L02	4	w:y	H		agree
+L02	5	w:senor	H		agree
+L03	1	tt1	M		agree-flagged
+L03	2	?q-supo	M	B:?qsupo	differ
+L03	3	g:rag	M		agree-flagged
+L03	4	a3	M		agree-flagged
+L03	5	g:otto	L		agree-flagged
+L03	6	r6	M	B:?iii	differ
+L03	7	g:ba	L		agree-flagged
+L03	8	?colondots	M	B:?colon2	differ
+L03	9	a4	M	B:?p	differ
+L03	10	g:re	L		agree-flagged
+L03	11	g:lwe	M	B:g:lue	differ
+L03	12	?k	L		agree-flagged
+L03	13	f1	L		agree-flagged
+L03	14	?x-s	M	B:r1	differ
+L03	15	?S	M	B:?s	differ
+L03	16	f1	L		agree-flagged
+L03	17	g1	L		agree-flagged
+L03	18	?x	M	B:r1	differ
+L03	19	?delta	M	B:s2	differ
+L03	20	f1	L		agree-flagged
+L03	21	?x	M	B:r1	differ
+L03	22	a3	L		agree-flagged
+L03	23	g:mog	M		agree-flagged
+L03	24	g:nb	M	B:?nb_bar	differ
+L03	25	a3	M		agree-flagged
+L03	26	c4	M	B:-	gap
+L03	27	?t	M	B:?ot	differ
+L03	28	c2	M	B:h1	differ
+L03	29	r6	M	B:?iii	differ
+L03	30	a4	M	B:?p	differ
+L03	31	l3	L		agree-flagged
+L03	32	u3	M	B:?b_hook	differ
+L03	33	g:ml	L		agree-flagged
+L03	34	u3	M	B:-	gap
+L03	35	?d-supo	M	B:?b_hook	differ
+L03	36	?t	M	B:?dot_sup	differ
+L03	37	?x	M	B:r1	differ
+L03	38	?b	M	B:s2	differ
+L03	39	?ff	L		agree-flagged
+L03	40	?n	M	B:g1	differ
+L03	41	?a	M	B:r1	differ
+L03	42	a4	M	B:?p	differ
+L03	43	?k	L		agree-flagged
+L03	44	?f	L		agree-flagged
+L03	45	f1	M	B:-	gap
+L03	46	?c	M	B:r1	differ
+L03	47	?g	L		agree-flagged
+L04	1	a3	L		agree-flagged
+L04	2	u3	M	B:?b	differ
+L04	3	r6	M	B:?iii	differ
+L04	4	f1	L		agree-flagged
+L04	5	?o-dash	M	B:?o_stroke	differ
+L04	6	g1	L		agree-flagged
+L04	7	r1	L		agree-flagged
+L04	8	r6	M	B:?iii	differ
+L04	9	g:par	M	B:g:pat	differ
+L04	10	?pp-bar	M	B:?pp_eq	differ
+L04	11	?k	L		agree-flagged
+L04	12	?x	M	B:r1	differ
+L04	13	a3	M		agree-flagged
+L04	14	?o-dash	M	B:?o	differ
+L04	15	u3	M	B:?b	differ
+L04	16	?ff	L		agree-flagged
+L04	17	l3	L		agree-flagged
+L04	18	?x	M	B:r1	differ
+L04	19	?ff	L		agree-flagged
+L04	20	g1	L		agree-flagged
+L04	21	?x	M	B:r1	differ
+L04	22	?bar2	M	B:?eq	differ
+L04	23	g:mas	M	B:g:mag	differ
+L04	24	?d-loop	M	B:s2	differ
+L04	25	?ff	L		agree-flagged
+L04	26	l3	L		agree-flagged
+L04	27	?x	M	B:r1	differ
+L04	28	?bar2	M	B:?eq	differ
+L04	29	a4	M	B:?p	differ
+L04	30	?ff	L		agree-flagged
+L04	31	u3	M	B:?b	differ
+L04	32	g:mm	M	B:g:umy	differ
+L04	33	g:re	L		agree-flagged
+L04	34	g:qek	M	B:g:gek	differ
+L04	35	a4	M	B:?p	differ
+L04	36	?x	M	B:r1	differ
+L04	37	g:mal	M		agree-flagged
+L04	38	?g	M	A:-	gap
+L04	39	g:ga	M	B:r1	differ
+L04	40	a3	L		agree-flagged
+L04	41	g:gag	M		agree-flagged
+L04	42	?k	L		agree-flagged
+L04	43	?x	M	B:r1	differ
+L04	44	a3	M		agree-flagged
+L05	1	e1	M	B:r1	differ
+L05	2	?ff	L		agree-flagged
+L05	3	f1	L		agree-flagged
+L05	4	?colon2	M	A:-	gap
+L05	5	?p	M	A:-	gap
+L05	6	?colondots	M	B:r1	differ
+L05	7	g:pa	M	B:f1	differ
+L05	8	g:ap	M	B:?p	differ
+L05	9	g:rah	M		agree-flagged
+L05	10	g:pat	M		agree-flagged
+L05	11	g:mas	M	B:g:mag	differ
+L05	12	g:qar	M	B:g:gar	differ
+L05	13	w:y	H		agree
+L05	14	w:no	H		agree
+L05	15	w:poder	H		agree
+L05	16	w:passar	H		agree
+L05	17	w:estaua	M	B:w:estava	differ
+L05	18	w:la	H		agree
+L05	19	w:galea	M		agree-flagged
+L05	20	w:de	M		agree-flagged
+L05	21	w:alla	M		agree-flagged
+L05	22	?tt-del	M	B:tt1	differ
+L05	23	w:far	M	B:g:far	differ
+L05	24	w:donde	H		agree
+L05	25	w:llego	H		agree
+L05	26	w:don	H		agree
+L06	1	w:fernando	M	B:w:ferrando	differ
+L06	2	w:de	H		agree
+L06	3	w:andrada	M		agree-flagged
+L06	4	w:y	H		agree
+L06	5	w:benavides	M		agree-flagged
+L06	6	w:y	H		agree
+L06	7	w:caravajal	M	B:w:caravasal	differ
+L06	8	w:y	H		agree
+L06	9	w:bolviosse	M		agree-flagged
+L06	10	w:dellos	M		agree-flagged
+L06	11	w:aqui	M		agree-flagged
+L06	12	g:mb	L		agree-flagged
+L06	13	c3	M	A:-	gap
+L06	14	g:qa	M	B:f1	differ
+L06	15	c3	L		agree-flagged
+L06	16	s3	M	B:r1	differ
+L06	17	?or	M	B:g:vr	differ
+L06	18	?s	L		agree-flagged
+L06	19	a4	M	B:?p	differ
+L06	20	?x	M	B:r1	differ
+L06	21	r6	M	B:?iii	differ
+L06	22	c2	M	B:h1	differ
+L06	23	?ff	L		agree-flagged
+L06	24	a4	M	B:?r	differ
+L06	25	f1	M	B:r1	differ
+L07	1	?k	M	A:-	gap
+L07	2	?lc-t	M	B:?e	differ
+L07	3	u3	M	B:?b	differ
+L07	4	g:mmh	M	B:g:umh	differ
+L07	5	?k	L		agree-flagged
+L07	6	?x	M	B:r1	differ
+L07	7	l3	L		agree-flagged
+L07	8	?iii	M	A:-	gap
+L07	9	r6	M	B:?o_stroke	differ
+L07	10	?o-dash	M	B:c3	differ
+L07	11	?44	M	B:c3	differ
+L07	12	?o-dash	M	B:?o	differ
+L07	13	g:mor	M		agree-flagged
+L07	14	g:mas	M	B:g:mag	differ
+L07	15	s3	M	B:o1	differ
+L07	16	c3	L		agree-flagged
+L07	17	?ff	L		agree-flagged
+L07	18	c3	M	A:-	gap
+L07	19	?44	M	B:c3	differ
+L07	20	?a-c	M	B:r1	differ
+L07	21	g:mm	M	B:g:umy	differ
+L07	22	?d-loop	M	B:s2	differ
+L07	23	?ac	M	B:r1	differ
+L07	24	c3	L		agree-flagged
+L07	25	c3	L		agree-flagged
+L07	26	c3	M	B:?p	differ
+L07	27	g:rah	M		agree-flagged
+L07	28	g:mb	M	B:g:umb	differ
+L07	29	?M	L		agree-flagged
+L07	30	?colondots	M	B:?colon2	differ
+L07	31	?ot	L		agree-flagged
+L07	32	c2	M	B:h1	differ
+L07	33	?k	L		agree-flagged
+L07	34	?p	M	A:-	gap
+L07	35	a4	M	B:?b	differ
+L07	36	u3	M	B:?iii	differ
+L07	37	r6	M	B:s2	differ
+L07	38	?d-loop	M	B:c3	differ
+L07	39	c3	L		agree-flagged
+L07	40	g:qa	M	B:f1	differ
+L07	41	g:qa	M	B:g:gag	differ
+L08	1	?k	L		agree-flagged
+L08	2	?x	M	B:r1	differ
+L08	3	g:ml	L		agree-flagged
+L08	4	g:nob	L		agree-flagged
+L08	5	c3	M	A:-	gap
+L08	6	g:qa	M	B:f1	differ
+L08	7	g:mon	M		agree-flagged
+L08	8	g:mal	M		agree-flagged
+L08	9	g:uml	M	A:-	gap
+L08	10	?v	M	A:-	gap
+L08	11	g:ml	M	B:f1	differ
+L08	12	g:vax	M	B:r1	differ
+L08	13	a3	L		agree-flagged
+L08	14	?colondots	M	B:?colon2	differ
+L08	15	s3	M	B:o1	differ
+L08	16	f1	M	B:r1	differ
+L08	17	?f	L		agree-flagged
+L08	18	?a-c	M	B:r1	differ
+L08	19	?g5	M	B:?g	differ
+L08	20	c4	L		agree-flagged
+L08	21	?t	M	B:?ot	differ
+L08	22	c2	M	B:h1	differ
+L08	23	l3	L		agree-flagged
+L08	24	?colondots	M	B:?colon2	differ
+L08	25	r6	M	B:?iii	differ
+L08	26	g:rah	M		agree-flagged
+L08	27	s3	M	B:o1	differ
+L08	28	c3	L		agree-flagged
+L08	29	g1	L		agree-flagged
+L08	30	r1	M	A:-	gap
+L08	31	?a-c	M	B:c3	differ
+L08	32	g:qag	M	B:f1	differ
+L08	33	c3	L		agree-flagged
+L08	34	ll1	M	B:?e	differ
+L08	35	?x	M	B:r1	differ
+L08	36	?bar2	M	B:?eq	differ
+L08	37	g:otto	L		agree-flagged
+L08	38	u3	M	B:?b	differ
+L08	39	g:n	M	B:g1	differ
+L08	40	g:rah	M		agree-flagged
+L09	1	g:mas	M	B:g:mag	differ
+L09	2	a4	M	B:?p	differ
+L09	3	?ff	M	B:?4f	differ
+L09	4	u3	M	B:?b	differ
+L09	5	?h	M	B:c2	differ
+L09	6	f1	L		agree-flagged
+L09	7	?bar2	M	B:?eq	differ
+L09	8	c3	M	B:?p	differ
+L09	9	s3	M	B:o1	differ
+L09	10	?a-c	M	B:r1	differ
+L09	11	?k	L		agree-flagged
+L09	12	u3	M	B:?b	differ
+L09	13	a3	L		agree-flagged
+L09	14	g:rah	M		agree-flagged
+L09	15	?v-dot	M	B:s2	differ
+L09	16	f1	L		agree-flagged
+L09	17	?x	M	B:r1	differ
+L09	18	a3	L		agree-flagged
+L09	19	l3	L		agree-flagged
+L09	20	?a-c	M	B:r1	differ
+L09	21	a3	L		agree-flagged
+L09	22	g:mys	L		agree-flagged
+L09	23	g:mb	M	B:g:mub	differ
+L09	24	a4	M	B:?p	differ
+L09	25	?a-c	M	B:r1	differ
+L09	26	r6	M	B:?iii	differ
+L09	27	l3	L		agree-flagged
+L09	28	c3	L		agree-flagged
+L09	29	?k	L		agree-flagged
+L09	30	?b	M	A:-	gap
+L09	31	c2	M	A:-	gap
+L09	32	u3	M	B:?o_stroke	differ
+L09	33	?z-o	M	B:?p	differ
+L09	34	?o-dash	M	B:o1	differ
+L09	35	a4	M	B:r1	differ
+L09	36	s3	M	B:?g	differ
+L09	37	?a-c	M	B:c4	differ
+L09	38	?g5	M	B:s2	differ
+L09	39	?d-loop	M	B:r1	differ
+L09	40	?a-c	M	B:?p	differ
+L09	41	a4	M	B:?g	differ
+L09	42	?g5	M	B:c4	differ
+L09	43	g:mm	M	B:g:umy	differ
+L10	1	?f	L		agree-flagged
+L10	2	c4	M	A:-	gap
+L10	3	?o-dash	M	B:?iii	differ
+L10	4	r6	M	B:o1	differ
+L10	5	s3	M	B:r1	differ
+L10	6	?a-c	M	B:?g	differ
+L10	7	?g5	M	B:c4	differ
+L10	8	a4	M	B:?p	differ
+L10	9	g:rah	M		agree-flagged
+L10	10	?p	M	A:-	gap
+L10	11	a4	M	B:?g	differ
+L10	12	?g5	M	B:c4	differ
+L10	13	l3	L		agree-flagged
+L10	14	?a-c	M	B:r1	differ
+L10	15	?ff	L		agree-flagged
+L10	16	c3	M	A:-	gap
+L10	17	?44	M	B:c3	differ
+L10	18	?a-c	M	B:r1	differ
+L10	19	g:mm	M	B:g:umy	differ
+L10	20	?k	L		agree-flagged
+L10	21	r1	M	A:-	gap
+L10	22	c3	M	A:-	gap
+L10	23	?x	M	B:c3	differ
+L10	24	?44	M	B:f1	differ
+L10	25	g:ap	M	B:?p	differ
+L10	26	g:rah	M		agree-flagged
+L10	27	g:otto	L		agree-flagged
+L10	28	?p	M	A:-	gap
+L10	29	a4	M	B:?iii	differ
+L10	30	r6	M	B:?p	differ
+L10	31	g:pa	M	B:f1	differ
+L10	32	?o-dash	M	B:?o_stroke	differ
+L10	33	?a-c	M	B:r1	differ
+L10	34	?ff	L		agree-flagged
+L10	35	a4	M	B:?p	differ
+L10	36	?k	L		agree-flagged
+L10	37	g:pet	M	B:g:pat	differ
+L10	38	g:qag	M	B:g:gag	differ
+L10	39	?d-loop	M	B:s2	differ
+L10	40	?ff	L		agree-flagged
+L10	41	f1	L		agree-flagged
+L10	42	?x	M	B:r1	differ
+L10	43	?ff	L		agree-flagged
+L11	1	?t-dot	M	B:l1	differ
+L11	2	a4	M	B:?p	differ
+L11	3	r6	M	B:?iii	differ
+L11	4	?d-loop	M	B:s2	differ
+L11	5	a4	M	B:?p	differ
+L11	6	?ff	L		agree-flagged
+L11	7	u3	M	B:?b	differ
+L11	8	w:que	M		agree-flagged
+L11	9	g:mb	L		agree-flagged
+L11	10	c3	M	A:-	gap
+L11	11	g:qa	M	B:f1	differ
+L11	12	g:mys	L		agree-flagged
+L11	13	g:mb	M	B:g:mub	differ
+L11	14	a4	M	B:?p	differ
+L11	15	?a-c	M	B:r1	differ
+L11	16	r6	M	B:?iii	differ
+L11	17	l3	L		agree-flagged
+L11	18	c2	L		agree-flagged
+L11	19	?k	L		agree-flagged
+L11	20	?x	M	B:r1	differ
+L11	21	?z-o	M	B:?l	differ
+L11	22	?o-dash	M	B:?o_stroke	differ
+L11	23	g:rah	M		agree-flagged
+L11	24	?k	L		agree-flagged
+L11	25	f1	L		agree-flagged
+L11	26	?S	M	B:?g	differ
+L11	27	a4	M	B:?p	differ
+L11	28	r6	M	B:?iii	differ
+L11	29	g:ml	L		agree-flagged
+L11	30	?g	M	A:-	gap
+L11	31	c3	M	B:s2	differ
+L11	32	?x-b	M	B:r1	differ
+L11	33	?ff	L		agree-flagged
+L11	34	a4	M	B:?p	differ
+L11	35	?e-loop	M	B:?e	differ
+L11	36	g:mm	M	B:g:umy	differ
+L11	37	g:re	L		agree-flagged
+L11	38	g:qag	M	B:g:gag	differ
+L12	1	?R	M	B:?k	differ
+L12	2	f1	L		agree-flagged
+L12	3	a4	M	B:?p	differ
+L12	4	?colondots	M	B:?colon2	differ
+L12	5	?x	M	B:r1	differ
+L12	6	?ff	L		agree-flagged
+L12	7	u3	M	B:?b	differ
+L12	8	g:mok	M		agree-flagged
+L12	9	g:hk	M	B:g:lik	differ
+L12	10	g:otto	L		agree-flagged
+L12	11	f1	L		agree-flagged
+L12	12	?x	M	B:r1	differ
+L12	13	?ff	L		agree-flagged
+L12	14	l3	L		agree-flagged
+L12	15	?o-dash	M	B:?o_stroke	differ
+L12	16	?slash	L		agree-flagged
+L12	17	w:y	H		agree
+L12	18	w:como	H		agree
+L12	19	w:esto	H		agree
+L12	20	w:passemos	M		agree-flagged
+L12	21	w:en	H		agree
+L12	22	w:anocheciendo	M	B:w:anochesiendo	differ
+L12	23	g:nax	M	B:g:naz	differ
+L12	24	?v-dot	M	B:s2	differ
+L12	25	r6	M	B:?iii	differ
+L12	26	?d-loop	M	B:s2	differ
+L12	27	ll1	M	B:?e	differ
+L12	28	?x	M	B:r1	differ
+L12	29	?bar2	M	B:?eq	differ
+L13	1	?a-c	M	B:s2	differ
+L13	2	a3	L		agree-flagged
+L13	3	g:qa	M	B:g:gat	differ
+L13	4	u3	M	B:?g	differ
+L13	5	?g5	M	B:c4	differ
+L13	6	s2	L		agree-flagged
+L13	7	r6	M	B:?iii	differ
+L13	8	a4	M	B:?p	differ
+L13	9	?bar2	M	B:?eq	differ
+L13	10	?d-loop	M	B:r1	differ
+L13	11	?ff	L		agree-flagged
+L13	12	g:pol	L		agree-flagged
+L13	13	f1	M	B:c4	differ
+L13	14	?k	L		agree-flagged
+L13	15	?S	M	B:?g	differ
+L13	16	f1	L		agree-flagged
+L13	17	?ff	L		agree-flagged
+L13	18	?e-loop	M	B:s2	differ
+L13	19	g:mm	M	B:g:umy	differ
+L13	20	g:leg	L		agree-flagged
+L13	21	?o-dash	M	B:?o_stroke	differ
+L13	22	?ff	L		agree-flagged
+L13	23	?b-dot	M	B:s2	differ
+L13	24	?x	M	B:r1	differ
+L13	25	a3	L		agree-flagged
+L13	26	g:mog	M		agree-flagged
+L13	27	?d-loop	M	B:s2	differ
+L13	28	?ff	L		agree-flagged
+L13	29	?beta	L		agree-flagged
+L13	30	r1	M	A:-	gap
+L13	31	?x	M	B:?g	differ
+L13	32	?g5	M	B:c4	differ
+L13	33	?t	M	B:l1	differ
+L13	34	c2	M	B:h1	differ
+L13	35	?bar2	M	B:?eq	differ
+L13	36	?d-loop	M	B:s2	differ
+L13	37	?o-dash	M	B:c4	differ
+L13	38	r6	M	B:?iii	differ
+L13	39	s2	L		agree-flagged
+L13	40	c2	M	B:h1	differ
+L13	41	g:mal	M		agree-flagged
+L13	42	?g	L		agree-flagged
+L14	1	?bar2	M	B:?eq	differ
+L14	2	?a-c	M	B:r1	differ
+L14	3	?ff	L		agree-flagged
+L14	4	?beta	L		agree-flagged
+L14	5	?o-dash	M	B:?o_stroke	differ
+L14	6	c2	M	B:h1	differ
+L14	7	?o-dash	M	B:c4	differ
+L14	8	?d-loop	M	B:s2	differ
+L14	9	?o-dash	M	B:c4	differ
+L14	10	?z-bar	M	B:?g	differ
+L14	11	g:nob	L		agree-flagged
+L14	12	g:otto	L		agree-flagged
+L14	13	?o-dash	M	B:?o_stroke	differ
+L14	14	?a-c	M	B:r1	differ
+L14	15	?ff	L		agree-flagged
+L14	16	a4	M	B:?p	differ
+L14	17	a3	L		agree-flagged
+L14	18	g:mel	M	B:g:mal	differ
+L14	19	g:otto	L		agree-flagged
+L14	20	?ff	L		agree-flagged
+L14	21	ll1	L		agree-flagged
+L14	22	?o-dash	M	B:c4	differ
+L14	23	r6	M	B:?iii	differ
+L14	24	a4	M	B:?p	differ
+L14	25	g:mm	M	B:g:umy	differ
+L14	26	ll1	L		agree-flagged
+L14	27	c3	M	A:-	gap
+L14	28	?e-loop	M	B:r1	differ
+L14	29	?ff	L		agree-flagged
+L14	30	a4	M	B:?p	differ
+L14	31	?x	M	B:r1	differ
+L14	32	g:mm	M	B:g:umy	differ
+L14	33	c2	M	B:h1	differ
+L14	34	?beta	L		agree-flagged
+L14	35	c4	M	A:-	gap
+L14	36	?t	M	B:l1	differ
+L14	37	u3	M	B:?b	differ
+L14	38	?ff	L		agree-flagged
+L14	39	?zhat	M	A:-	gap
+L14	40	?z-dot	M	B:?b	differ
+L14	41	w:despues	M		agree-flagged
+L15	1	w:dela	M	B:w:la	differ
+L15	2	w:media	L		agree-flagged
+L15	3	w:noche	H		agree
+L15	4	w:comencaron	M	B:-	gap
+L15	5	w:de	M	B:w:joanes	differ
+L15	6	w:entrar	M	B:w:romezaro	differ
+L15	7	?d-loop	M	B:w:dentrar	differ
+L15	8	?ff	M	B:s2	differ
+L15	9	?ff	L		agree-flagged
+L15	10	s2	M	B:?beta	differ
+L15	11	c2	M	B:h1	differ
+L15	12	?ff	L		agree-flagged
+L15	13	l3	L		agree-flagged
+L15	14	?x	M	B:r1	differ
+L15	15	a3	L		agree-flagged
+L15	16	g:rah	M		agree-flagged
+L15	17	a3	L		agree-flagged
+L15	18	a4	M	B:?p	differ
+L15	19	?v-dot	M	B:?v	differ
+L15	20	f1	L		agree-flagged
+L15	21	?x	M	B:r1	differ
+L15	22	a4	M	B:?p	differ
+L15	23	r6	M	B:?iii	differ
+L15	24	?e-loop	M	B:r1	differ
+L15	25	?ff	L		agree-flagged
+L15	26	g:mb	M	B:g:umb	differ
+L15	27	g:qet	M	B:g:get	differ
+L15	28	s3	M	B:o1	differ
+L15	29	?e-loop	M	B:r1	differ
+L16	1	?o-dash	M	B:?d	differ
+L16	2	?ff	L		agree-flagged
+L16	3	?k-cross	M	B:?k_cross	differ
+L16	4	g:mer	L		agree-flagged
+L16	5	g:ml	L		agree-flagged
+L16	6	g:neg	L		agree-flagged
+L16	7	g:umy	M	A:-	gap
+L16	8	?p	M	A:-	gap
+L16	9	g:mm	M	B:g1	differ
+L16	10	g:pix	M	B:r1	differ
+L16	11	g:rah	M		agree-flagged
+L16	12	g:qo	M	B:-	gap
+L16	13	u3	M	B:g:gob	differ
+L16	14	g:mb	M	B:g:umb	differ
+L16	15	g:rah	M		agree-flagged
+L16	16	?ot	L		agree-flagged
+L16	17	?x	M	B:r1	differ
+L16	18	a3	L		agree-flagged
+L16	19	l3	L		agree-flagged
+L16	20	?colondots	M	B:?colon2	differ
+L16	21	a4	M	B:?p	differ
+L16	22	a3	L		agree-flagged
+L16	23	g:mm	M	B:g:umy	differ
+L16	24	s2	M	B:?beta	differ
+L16	25	c2	M	B:h1	differ
+L16	26	?bar2	M	B:?dot	differ
+L16	27	s3	M	B:o1	differ
+L16	28	c4	L		agree-flagged
+L16	29	?h	M	B:c2	differ
+L16	30	?x	M	B:r1	differ
+L16	31	g:mon	M		agree-flagged
+L16	32	a4	M	B:?p	differ
+L16	33	?k	L		agree-flagged
+L16	34	?S	M	B:c2	differ
+L16	35	f1	L		agree-flagged
+L17	1	?ff	L		agree-flagged
+L17	2	a3	L		agree-flagged
+L17	3	g:hp	M	B:g:lip	differ
+L17	4	g:mm	M	B:g:umy	differ
+L17	5	?d-loop	M	B:s2	differ
+L17	6	?ff	L		agree-flagged
+L17	7	?e	M	A:-	gap
+L17	8	?e-loop	M	B:?p	differ
+L17	9	a4	M	B:?g	differ
+L17	10	?g5	M	B:c4	differ
+L17	11	l3	L		agree-flagged
+L17	12	?x	M	B:r1	differ
+L17	13	a3	L		agree-flagged
+L17	14	g:mel	L		agree-flagged
+L17	15	g:otto	L		agree-flagged
+L17	16	?e-loop	M	B:?e	differ
+L17	17	?ff	L		agree-flagged
+L17	18	?delta	M	B:s2	differ
+L17	19	?o-dash	M	B:?o_stroke	differ
+L17	20	?ff	L		agree-flagged
+L17	21	c3	M	A:-	gap
+L17	22	?44	M	B:c3	differ
+L17	23	?o-dash	M	B:?o_stroke	differ
+L17	24	g:mm	M	B:g:umy	differ
+L17	25	s3	M	B:o1	differ
+L17	26	c4	M	B:r1	differ
+L17	27	?a-c	M	B:?g	differ
+L17	28	?g5	M	B:c4	differ
+L17	29	?beta	L		agree-flagged
+L17	30	?g	M	A:-	gap
+L17	31	?g5	M	B:?e	differ
+L17	32	?4b	M	B:l1	differ
+L17	33	u3	M	B:?g	differ
+L17	34	?g5	M	B:c4	differ
+L17	35	l3	L		agree-flagged
+L17	36	g:mm	M	B:?iii	differ
+L17	37	a4	M	B:?p	differ
+L17	38	?ff	L		agree-flagged
+L17	39	g1	L		agree-flagged
+L17	40	?x	M	B:r1	differ
+L17	41	a4	M	B:?p	differ
+L17	42	?beta	L		agree-flagged
+L17	43	a4	M	B:?p	differ
+L17	44	?o-f	M	B:?ot	differ
+L18	1	?ff	L		agree-flagged
+L18	2	?b	M	A:-	gap
+L18	3	?o_stroke	M	A:-	gap
+L18	4	?iii	M	A:-	gap
+L18	5	g:lie	M	A:-	gap
+L18	6	?o-dash	M	B:o1	differ
+L18	7	r6	M	B:r1	differ
+L18	8	g:hie	M	B:?g	differ
+L18	9	s3	M	B:c4	differ
+L18	10	?a-c	M	B:s2	differ
+L18	11	?g5	M	B:r1	differ
+L18	12	?d-loop	M	B:?p	differ
+L18	13	?a-c	M	B:?g	differ
+L18	14	a4	M	B:c4	differ
+L18	15	?g5	M	B:c3	differ
+L18	16	g:qh	M	B:?k	differ
+L18	17	s2	L		agree-flagged
+L18	18	?x	M	B:r1	differ
+L18	19	r6	M	B:?iii	differ
+L18	20	ll1	L		agree-flagged
+L18	21	?p	M	A:-	gap
+L18	22	a4	M	B:?g	differ
+L18	23	?g5	M	B:c4	differ
+L18	24	?e-loop	M	B:?e	differ
+L18	25	s3	M	B:o1	differ
+L18	26	?x	M	B:r1	differ
+L18	27	?delta	M	B:s2	differ
+L18	28	?a-c	M	B:r1	differ
+L18	29	g:otto	L		agree-flagged
+L18	30	?e-loop	M	B:?e	differ
+L18	31	g:mys	L		agree-flagged
+L18	32	?A-x	M	B:?X	differ
+L18	33	?a-c	M	B:r1	differ
+L18	34	?f	L		agree-flagged
+L18	35	?a-c	M	B:r1	differ
+L18	36	?beta	L		agree-flagged
+L18	37	?d-loop	M	B:s2	differ
+L18	38	?ff	L		agree-flagged
+L18	39	?colondots	M	B:?colon2	differ
+L18	40	?x	M	B:r1	differ
+L18	41	?bar2	M	B:?eq	differ
+L18	42	?e-loop	M	B:?e	differ
+L18	43	?ff	L		agree-flagged
+L18	44	l3	L		agree-flagged
+L18	45	a4	M	B:?p	differ
+L18	46	?ff	L		agree-flagged
+L18	47	?t	M	B:l1	differ
+L19	1	?a-c	M	B:r1	differ
+L19	2	a3	L		agree-flagged
+L19	3	c3	M	A:-	gap
+L19	4	g:qa	M	B:f1	differ
+L19	5	s2	L		agree-flagged
+L19	6	?colondots	M	B:?colon2	differ
+L19	7	c2	M	B:h1	differ
+L19	8	?colondots	M	B:?colon2	differ
+L19	9	?x	M	B:r1	differ
+L19	10	?bar2	M	B:?eq	differ
+L19	11	?x	M	B:r1	differ
+L19	12	?ff	L		agree-flagged
+L19	13	?o-dash	M	B:?o_stroke	differ
+L19	14	?M	L		agree-flagged
+L19	15	?a-c	M	B:r1	differ
+L19	16	ll1	L		agree-flagged
+L19	17	a4	M	B:?p	differ
+L19	18	?ff	L		agree-flagged
+L19	19	?S	M	B:c2	differ
+L19	20	?e-loop	M	B:?e	differ
+L19	21	u3	M	B:?b	differ
+L19	22	?ff	L		agree-flagged
+L19	23	l3	L		agree-flagged
+L19	24	r6	M	B:?iii	differ
+L19	25	?x	M	B:r1	differ
+L19	26	g:mal	M		agree-flagged
+L19	27	?g	M	A:-	gap
+L19	28	g:ga	M	B:f1	differ
+L19	29	a3	L		agree-flagged
+L19	30	g:mm	M	B:g:umy	differ
+L19	31	g:qag	M	B:g:gag	differ
+L19	32	g:mok	M		agree-flagged
+L19	33	a4	M	B:?p	differ
+L19	34	g:otto	L		agree-flagged
+L19	35	f1	L		agree-flagged
+L19	36	g:otto	L		agree-flagged
+L19	37	s2	L		agree-flagged
+L19	38	?colondots	M	B:?colon2	differ
+L19	39	g:mal	M		agree-flagged
+L19	40	?g	L		agree-flagged
+L20	1	?o-dash	M	B:?o_stroke	differ
+L20	2	s3	M	B:o1	differ
+L20	3	a4	M	B:?p	differ
+L20	4	a3	L		agree-flagged
+L20	5	g:rah	M		agree-flagged
+L20	6	l1	M	A:-	gap
+L20	7	?ff	L		agree-flagged
+L20	8	?ff	M	B:?p	differ
+L20	9	?d-loop	M	B:s2	differ
+L20	10	g:qag	M	B:g:gag	differ
+L20	11	a3	L		agree-flagged
+L20	12	a4	M	B:?p	differ
+L20	13	?v-dot	M	B:?v	differ
+L20	14	f1	L		agree-flagged
+L20	15	?x	M	B:r1	differ
+L20	16	?a-c	M	B:r1	differ
+L20	17	g:mb	M	B:g:mub	differ
+L20	18	a4	M	B:?p	differ
+L20	19	?a-c	M	B:r1	differ
+L20	20	r6	M	B:?iii	differ
+L20	21	l3	L		agree-flagged
+L20	22	a4	M	B:?p	differ
+L20	23	?k	L		agree-flagged
+L20	24	r1	M	A:-	gap
+L20	25	?x	M	B:c2	differ
+L20	26	?z-o	M	B:c4	differ
+L20	27	?o-dash	M	B:?o_stroke	differ
+L20	28	g:mm	M	B:g:umy	differ
+L20	29	l3	L		agree-flagged
+L20	30	?x	M	B:r1	differ
+L20	31	s3	M	B:o1	differ
+L20	32	f1	M	B:r1	differ
+L20	33	a3	L		agree-flagged
+L20	34	g:vae	M	B:g:nae	differ
+L20	35	g:nen	L		agree-flagged
+L20	36	g:mm	M	B:g:umy	differ
+L20	37	g:lob	L		agree-flagged
+L20	38	g:rah	M		agree-flagged
+L21	1	s2	L		agree-flagged
+L21	2	?iii	M	A:-	gap
+L21	3	r6	M	B:c3	differ
+L21	4	?e-loop	M	B:?g	differ
+L21	5	?g5	M	B:c4	differ
+L21	6	?f	L		agree-flagged
+L21	7	?x	M	B:r1	differ
+L21	8	a3	L		agree-flagged
+L21	9	u3	M	B:?b_sup	differ
+L21	10	a3	L		agree-flagged
+L21	11	c3	M	A:-	gap
+L21	12	g:qa	M	B:f1	differ
+L21	13	a4	M	B:?p	differ
+L21	14	g:mal	M		agree-flagged
+L21	15	?g	L		agree-flagged
+L21	16	?d-loop	M	B:s2	differ
+L21	17	a3	L		agree-flagged
+L21	18	l3	L		agree-flagged
+L21	19	?p	M	A:-	gap
+L21	20	f1	M	A:-	gap
+L21	21	g:pa	M	B:?o_stroke	differ
+L21	22	?o-dash	M	B:?g	differ
+L21	23	?g5	M	B:c4	differ
+L21	24	g:rah	M		agree-flagged
+L21	25	g:le	L		agree-flagged
+L21	26	g:mei	L		agree-flagged
+L21	27	g:par	M	B:g:pat	differ
+L21	28	g:nag	L		agree-flagged
+L21	29	s3	M	B:o1	differ
+L21	30	u3	M	B:?b	differ
+L21	31	a3	L		agree-flagged
+L21	32	?e-loop	M	B:c3	differ
+L21	33	?x	M	B:r1	differ
+L21	34	g:otto	L		agree-flagged
+L21	35	s2	L		agree-flagged
+L21	36	a4	M	B:?p	differ
+L21	37	?v-dot	M	B:s2	differ
+L21	38	f1	L		agree-flagged
+L21	39	a3	L		agree-flagged
+L21	40	?d-loop	M	B:s2	differ
+L21	41	?x	M	B:r1	differ
+L21	42	?bar2	M	B:?eq	differ
+L21	43	?e-loop	M	B:?e	differ
+L21	44	?ff	L		agree-flagged
+L22	1	a4	M	B:c3	differ
+L22	2	f1	L		agree-flagged
+L22	3	?x	M	B:r1	differ
+L22	4	?S	M	B:c2	differ
+L22	5	?e-loop	M	B:?e	differ
+L22	6	g:mys	L		agree-flagged
+L22	7	g:qur	M	B:w:que	differ
+L22	8	g:mas	M	B:g:mag	differ
+L22	9	g:nee	L		agree-flagged
+L22	10	g:rah	M		agree-flagged
+L22	11	c3	M	A:-	gap
+L22	12	g:qa	M	B:f1	differ
+L22	13	a4	M	B:?p	differ
+L22	14	?ff	M	B:?4f	differ
+L22	15	?d-loop	M	B:s2	differ
+L22	16	g:rat	M	B:g:pat	differ
+L22	17	ll1	L		agree-flagged
+L22	18	?x	M	B:r1	differ
+L22	19	a3	L		agree-flagged
+L22	20	?colondots	M	B:?colon2	differ
+L22	21	?ff	L		agree-flagged
+L22	22	?d-loop	M	B:s2	differ
+L22	23	a4	M	B:?p	differ
+L22	24	?d-loop	M	B:s2	differ
+L22	25	g:otto	L		agree-flagged
+L22	26	?ff	M	B:tt1	differ
+L22	27	?bar2	M	B:?eq	differ
+L22	28	g:mos	L		agree-flagged
+L22	29	g:pot	L		agree-flagged
+L22	30	?beta	L		agree-flagged
+L22	31	?colondots	M	B:?colon2	differ
+L22	32	u3	M	B:?b	differ
+L22	33	?ff	L		agree-flagged
+L22	34	?b	M	A:-	gap
+L22	35	u3	M	B:g:ml	differ
+L22	36	g:mb	M	B:?b	differ
+L23	1	c3	M	A:-	gap
+L23	2	g:qa	M	B:f1	differ
+L23	3	g:qag	M	B:g:gag	differ
+L23	4	?B	L		agree-flagged
+L23	5	?e-loop	M	B:?e	differ
+L23	6	s3	M	B:o1	differ
+L23	7	?bar2	M	B:?eq	differ
+L23	8	?colondots	M	B:?colon2	differ
+L23	9	a4	M	B:?p	differ
+L23	10	?delta	M	B:s2	differ
+L23	11	?bar2	M	B:?eq	differ
+L23	12	?e-loop	M	B:?e	differ
+L23	13	f1	L		agree-flagged
+L23	14	u3	M	B:?b	differ
+L23	15	?x	M	B:r1	differ
+L23	16	?bar2	M	B:?eq	differ
+L23	17	g:lue	L		agree-flagged
+L23	18	g:le	L		agree-flagged
+L23	19	g:par	M	B:g:pat	differ
+L23	20	g:mb	M	B:g:mub	differ
+L23	21	?B	L		agree-flagged
+L23	22	?a-c	M	B:r1	differ
+L23	23	g:otto	L		agree-flagged
+L23	24	a4	M	B:?p	differ
+L23	25	?x	M	B:r1	differ
+L23	26	?ot	L		agree-flagged
+L23	27	u3	M	B:?b	differ
+L23	28	g1	L		agree-flagged
+L23	29	r1	M	A:-	gap
+L23	30	?x	M	B:?b	differ
+L23	31	u3	M	B:?g	differ
+L23	32	?g5	M	B:c4	differ
+L23	33	g:otto	L		agree-flagged
+L23	34	a4	M	B:o1	differ
+L23	35	?o-dash	M	B:?o_stroke	differ
+L23	36	g:rah	M		agree-flagged
+L23	37	?o-dash	M	B:?o_stroke	differ
+L23	38	g:otto	L		agree-flagged
+L23	39	c3	M	B:?p	differ
+L24	1	?f	M	A:-	gap
+L24	2	?f-o	M	B:c4	differ
+L24	3	ll1	L		agree-flagged
+L24	4	?colondots	M	B:?colon2	differ
+L24	5	u3	M	B:?b	differ
+L24	6	?ff	L		agree-flagged
+L24	7	l3	L		agree-flagged
+L24	8	r1	M	A:-	gap
+L24	9	?x	M	B:c3	differ
+L24	10	g:qa	M	B:f1	differ
+L24	11	g:qag	M	B:g:gag	differ
+L24	12	?k	L		agree-flagged
+L24	13	?x	M	B:r1	differ
+L24	14	l3	L		agree-flagged
+L24	15	?x	M	B:r1	differ
+L24	16	?g5	M	B:?g	differ
+L24	17	?d-loop	M	B:s2	differ
+L24	18	?o-dash	M	B:?o_stroke	differ
+L24	19	g:qag	M	B:g:gag	differ
+L24	20	?v-dot	M	B:?v	differ
+L24	21	f1	L		agree-flagged
+L24	22	?x	M	B:-	gap
+L24	23	r6	M	B:r1	differ
+L24	24	?d-loop	M	B:?iii	differ
+L24	25	a4	M	B:s2	differ
+L24	26	s3	M	B:?p	differ
+L24	27	a4	M	B:o1	differ
+L24	28	?x	M	B:r1	differ
+L24	29	a3	L		agree-flagged
+L24	30	g:otto	L		agree-flagged
+L24	31	a4	M	B:?p	differ
+L24	32	r6	M	B:?iii	differ
+L24	33	?S	M	B:?g	differ
+L24	34	?o-dash	M	B:c4	differ
+L24	35	?bar2	M	B:?eq	differ
+L24	36	tt1	M		agree-flagged
+L24	37	?qsupo	M	A:-	gap
+L24	38	c3	M	A:-	gap
+L24	39	c3	M	A:-	gap
+L24	40	?q-supo	M	B:?dot	differ
+L24	41	?44	M	B:?tz	differ
+L24	42	?z-dot	M	B:?dot	differ
+L24	43	g:en	M	B:w:en	differ
+L24	44	g:lo	M	B:w:lo	differ
+L25	1	w:de	M	A:-	gap
+L25	2	w:dela	M	B:w:la	differ
+L25	3	w:hazienda	H		agree
+L25	4	w:luego	H		agree
+L25	5	?B	L		agree-flagged
+L25	6	?colondots	M	B:-	gap
+L25	7	?e-loop	M	B:?dot	differ
+L25	8	f1	L		agree-flagged
+L25	9	?e	M	A:-	gap
+L25	10	?b	M	A:-	gap
+L25	11	u3	M	B:c3	differ
+L25	12	?44	M	B:c3	differ
+L25	13	a4	M	B:?p	differ
+L25	14	f1	L		agree-flagged
+L25	15	?x	M	B:r1	differ
+L25	16	?ff	L		agree-flagged
+L25	17	u3	M	B:?b	differ
+L25	18	?ff	L		agree-flagged
+L25	19	?e-loop	M	B:?p	differ
+L25	20	g:mal	M		agree-flagged
+L25	21	?g	L		agree-flagged
+L25	22	?o-dash	M	B:?o_stroke	differ
+L25	23	?k	L		agree-flagged
+L25	24	?a-c	M	B:r1	differ
+L25	25	s2	L		agree-flagged
+L25	26	?x	M	B:r1	differ
+L25	27	g:mm	M	B:g:umy	differ
+L25	28	ll1	L		agree-flagged
+L25	29	f1	L		agree-flagged
+L25	30	?ff	L		agree-flagged
+L25	31	?d-loop	M	B:s2	differ
+L25	32	g:otto	L		agree-flagged
+L25	33	a4	M	B:?p	differ
+L25	34	?beta	L		agree-flagged
+L25	35	?x	M	B:r1	differ
+L25	36	u3	M	B:?b	differ
+L25	37	g1	L		agree-flagged
+L25	38	?x	M	B:r1	differ
+L25	39	?bar2	M	B:?eq	differ
+L26	1	g:rah	M		agree-flagged
+L26	2	g:mas	M	B:g:mag	differ
+L26	3	s3	M	B:o1	differ
+L26	4	?e-loop	M	B:?e	differ
+L26	5	?ff	L		agree-flagged
+L26	6	l3	L		agree-flagged
+L26	7	h1	M	A:-	gap
+L26	8	c2	M	B:?p	differ
+L26	9	g:pa	M	B:f1	differ
+L26	10	?bar2	M	B:?eq	differ
+L26	11	?o-dash	M	B:?o_stroke	differ
+L26	12	?k	L		agree-flagged
+L26	13	?e-loop	M	B:?e	differ
+L26	14	?ff	L		agree-flagged
+L26	15	a3	L		agree-flagged
+L26	16	?e-loop	M	B:?e	differ
+L26	17	?S	M	B:c2	differ
+L26	18	f1	L		agree-flagged
+L26	19	?x	M	B:r1	differ
+L26	20	?bar2	M	B:?eq	differ
+L26	21	u3	M	B:?b	differ
+L26	22	r6	M	B:?iii	differ
+L26	23	?e-loop	M	B:?e	differ
+L26	24	g:hie	M	B:g:lie	differ
+L26	25	g:mas	M	B:g:mag	differ
+L26	26	g:otto	L		agree-flagged
+L26	27	?e-loop	M	B:?e	differ
+L26	28	?ff	L		agree-flagged
+L26	29	n3	L		agree-flagged
+L26	30	?x	M	B:r1	differ
+L26	31	u3	M	B:?b	differ
+L26	32	r6	M	B:?iii	differ
+L26	33	f1	L		agree-flagged
+L26	34	?g5	M	B:c2	differ
+L26	35	s3	M	B:o1	differ
+L26	36	?x	M	B:r1	differ
+L26	37	?M	L		agree-flagged
+L26	38	w:gamez	M	B:g:game	differ
+L27	1	w:desto	M		agree-flagged
+L27	2	w:embiava	M	B:w:enviava	differ
+L27	3	g:rah	M		agree-flagged
+L27	4	?t-dot	M	B:l1	differ
+L27	5	g:mal	M		agree-flagged
+L27	6	?g	L		agree-flagged
+L27	7	?x	M	B:r1	differ
+L27	8	?S	M	B:c2	differ
+L27	9	a4	M	B:?p	differ
+L27	10	r6	M	B:?iii	differ
+L27	11	?e-loop	M	B:?e	differ
+L27	12	?ff	L		agree-flagged
+L27	13	?o_stroke	M	A:-	gap
+L27	14	?o-dash	M	B:s2	differ
+L27	15	?d-loop	M	B:r1	differ
+L27	16	?a-c	M	B:c3	differ
+L27	17	?44	M	B:c3	differ
+L27	18	?o-dash	M	B:?o_stroke	differ
+L27	19	g:rah	M		agree-flagged
+L27	20	a4	M	B:?beta	differ
+L27	21	c2	M	B:h1	differ
+L27	22	g:mal	M		agree-flagged
+L27	23	?g	L		agree-flagged
+L27	24	?o-dash	M	B:?o_stroke	differ
+L27	25	r6	M	B:?iii	differ
+L27	26	?e-loop	M	B:?e	differ
+L27	27	?ff	L		agree-flagged
+L27	28	?B	L		agree-flagged
+L27	29	?o-dash	M	B:?o_stroke	differ
+L27	30	r6	M	B:?iii	differ
+L27	31	l3	L		agree-flagged
+L27	32	?d-loop	M	B:s2	differ
+L27	33	g1	L		agree-flagged
+L27	34	?e-loop	M	B:?e	differ
+L27	35	g:mas	M	B:g:mag	differ
+L28	1	g:otto	L		agree-flagged
+L28	2	?g5	M	B:c2	differ
+L28	3	t2	L		agree-flagged
+L28	4	?delta	M	B:s2	differ
+L28	5	?e-loop	M	B:?e	differ
+L28	6	w:para	H		agree
+L28	7	w:la	H		agree
+L28	8	w:roqua	L		agree-flagged
+L28	9	w:de	M		agree-flagged
+L28	10	w:angito	L		agree-flagged
+L28	11	w:y	H		agree
+L28	12	w:por	H		agree
+L28	13	w:la	H		agree
+L28	14	w:falta	M		agree-flagged
+L28	15	w:q	M		agree-flagged
+L28	16	w:hazia	M		agree-flagged
+L28	17	w:para	H		agree
+L28	18	w:el	M		agree-flagged
+L28	19	w:despacho	M		agree-flagged
+L28	20	w:del	M	B:w:dela	differ
+L28	21	w:armada	H		agree
+L28	22	g:rab	M		agree-flagged
+L29	1	c3	M	A:-	gap
+L29	2	f1	M	A:-	gap
+L29	3	g:qa	M	B:g:mag	differ
+L29	4	g:mas	M	B:o1	differ
+L29	5	s3	M	B:?e	differ
+L29	6	c3	M	B:?g	differ
+L29	7	?g5	M	B:c4	differ
+L29	8	?delta	M	B:s2	differ
+L29	9	?a-c	M	B:r1	differ
+L29	10	g:mor	M		agree-flagged
+L29	11	?B	L		agree-flagged
+L29	12	?o-dash	M	B:?o_stroke	differ
+L29	13	r6	M	B:?iii	differ
+L29	14	?t	M	B:l1	differ
+L29	15	?colondots	M	B:?colon2	differ
+L29	16	s3	M	B:o1	differ
+L29	17	?e-loop	M	B:?e	differ
+L29	18	g:qag	M	B:g:gag	differ
+L29	19	?ot	L		agree-flagged
+L29	20	?e-loop	M	B:s2	differ
+L29	21	?ff	L		agree-flagged
+L29	22	f1	L		agree-flagged
+L29	23	?colondots	M	B:?colon2	differ
+L29	24	?x	M	B:r1	differ
+L29	25	?bar2	M	B:?eq	differ
+L29	26	?e-loop	M	B:?e	differ
+L29	27	?ff	L		agree-flagged
+L29	28	?q-bar	M	B:c3	differ
+L29	29	g:mal	M		agree-flagged
+L29	30	?g	L		agree-flagged
+L29	31	?a-c	M	B:r1	differ
+L29	32	a3	L		agree-flagged
+L29	33	g:rah	M		agree-flagged
+L29	34	?B	L		agree-flagged
+L29	35	a4	M	B:?p	differ
+L29	36	?ff	L		agree-flagged
+L29	37	?e-loop	M	B:?e	differ
+L29	38	g:mas	M	B:g:mag	differ
+L29	39	g:otto	L		agree-flagged
+L30	1	a4	M	B:?e	differ
+L30	2	?ff	L		agree-flagged
+L30	3	?g	M	B:c3	differ
+L30	4	u3	M	B:?b	differ
+L30	5	?bar2	M	B:?eq	differ
+L30	6	f1	L		agree-flagged
+L30	7	c2	M	B:r1	differ
+L30	8	a4	M	B:?p	differ
+L30	9	?e-loop	M	B:?e	differ
+L30	10	?bar2	M	B:?eq	differ
+L30	11	g:per	L		agree-flagged
+L30	12	g:neb	L		agree-flagged
+L30	13	g:qik	L		agree-flagged
+L30	14	?M	L		agree-flagged
+L30	15	?x	M	B:r1	differ
+L30	16	?v-dot	M	B:?v	differ
+L30	17	f1	L		agree-flagged
+L30	18	?x	M	B:r1	differ
+L30	19	a3	L		agree-flagged
+L30	20	l3	L		agree-flagged
+L30	21	?o-dash	M	B:?o_stroke	differ
+L30	22	a4	M	B:?p	differ
+L30	23	l3	L		agree-flagged
+L30	24	?x	M	B:r1	differ
+L30	25	s3	M	B:o1	differ
+L30	26	?x	M	B:r1	differ
+L30	27	a3	L		agree-flagged
+L30	28	g:nae	L		agree-flagged
+L30	29	g:otto	L		agree-flagged
+L30	30	a4	M	B:?p	differ
+L30	31	?B	L		agree-flagged
+L30	32	?colondots	M	B:?colon2	differ
+L30	33	l3	L		agree-flagged
+L30	34	?p	M	A:-	gap
+L30	35	a4	M	B:?g	differ
+L30	36	?g5	M	B:c4	differ
+L30	37	?t	M	B:l1	differ
+L30	38	?bar2	M	B:?eq	differ
+L30	39	a3	L		agree-flagged
+L30	40	w:porque	M	B:w:paque	differ
+L31	1	?S	M	B:ll1	differ
+L31	2	f1	L		agree-flagged
+L31	3	?x	M	B:r1	differ
+L31	4	r6	M	B:?iii	differ
+L31	5	s3	M	B:o1	differ
+L31	6	?o-dash	M	B:?o_stroke	differ
+L31	7	?ff	L		agree-flagged
+L31	8	?b	M	A:-	gap
+L31	9	u3	M	B:?g	differ
+L31	10	?g5	M	B:c4	differ
+L31	11	g:qas	M	B:g:gas	differ
+L31	12	g:mb	M	B:g:mub	differ
+L31	13	?M	L		agree-flagged
+L31	14	?a-c	M	B:r1	differ
+L31	15	?delta	M	B:s2	differ
+L31	16	?o-dash	M	B:?o_stroke	differ
+L31	17	a4	M	B:?p	differ
+L31	18	?ff	L		agree-flagged
+L31	19	?colondots	M	B:?colon2	differ
+L31	20	g:lob	L		agree-flagged
+L31	21	g:lue	L		agree-flagged
+L31	22	g:mb	M	B:g:mub	differ
+L31	23	g:rah	M		agree-flagged
+L31	24	?B	L		agree-flagged
+L31	25	r6	M	B:?iii	differ
+L31	26	u3	M	B:?b	differ
+L31	27	a3	L		agree-flagged
+L31	28	?e-loop	M	B:?e	differ
+L31	29	?ff	L		agree-flagged
+L31	30	?x	M	B:r1	differ
+L31	31	?bar2	M	B:?eq	differ
+L31	32	?e-loop	M	B:?e	differ
+L31	33	?g	L		agree-flagged
+L31	34	c3	M	A:-	gap
+L31	35	g:qa	M	B:f1	differ
+L31	36	g:mys	L		agree-flagged
+L31	37	s2	M	A:-	gap
+L31	38	?d-loop	M	B:r1	differ
+L31	39	?a-c	M	B:c3	differ
+L31	40	?44	M	B:c3	differ
+L31	41	?o-dash	M	B:?o_stroke	differ
+L32	1	g:qag	M	B:g:gag	differ
+L32	2	g:ml	L		agree-flagged
+L32	3	a3	L		agree-flagged
+L32	4	a4	M	B:?p	differ
+L32	5	?v-dot	M	B:?v	differ
+L32	6	f1	L		agree-flagged
+L32	7	?x	M	B:r1	differ
+L32	8	a4	M	B:?p	differ
+L32	9	s3	M	B:o1	differ
+L32	10	?e-loop	M	B:?e	differ
+L32	11	g:lue	L		agree-flagged
+L32	12	g:le	L		agree-flagged
+L32	13	g:qua	L		agree-flagged
+L32	14	g:mb	L		agree-flagged
+L32	15	?x	M	B:r1	differ
+L32	16	l3	L		agree-flagged
+L32	17	r6	M	B:?iii	differ
+L32	18	?e-loop	M	B:?e	differ
+L32	19	g:mog	M		agree-flagged
+L32	20	g:otto	L		agree-flagged
+L32	21	?p	M	A:-	gap
+L32	22	a4	M	B:?g	differ
+L32	23	?g5	M	B:c4	differ
+L32	24	s3	M	B:o1	differ
+L32	25	?e-loop	M	B:?e	differ
+L32	26	?slash	L		agree-flagged
+L32	27	w:el	M		agree-flagged
+L32	28	w:esta	M		agree-flagged
+L32	29	w:alla	M		agree-flagged
+L32	30	w:dello	M	B:w:dtto	differ
+L32	31	w:q	M		agree-flagged
+L32	32	w:aora	M	B:w:avra	differ
+L32	33	w:fecho	M	B:w:ferho	differ
+L33	1	w:darle	M	B:w:dare	differ
+L33	2	w:aviso	M	B:w:avis	differ
+L33	3	w:avia	M	B:w:avid	differ
+L33	4	w:al	L		agree-flagged
+L33	5	?slash	L		agree-flagged
+L33	6	g:ley	L		agree-flagged
+L33	7	g:mas	M	B:g:mag	differ
+L33	8	g:mei	L		agree-flagged
+L33	9	c3	M	A:-	gap
+L33	10	g:qa	M	B:f1	differ
+L33	11	g:mb	M	B:g:mub	differ
+L33	12	g:pob	L		agree-flagged
+L33	13	g:mm	M	B:g:umy	differ
+L33	14	s3	M	B:o1	differ
+L33	15	?e-loop	M	B:?e	differ
+L33	16	?ff	L		agree-flagged
+L33	17	?beta	L		agree-flagged
+L33	18	?S	M	B:?g	differ
+L33	19	?e-loop	M	B:?e	differ
+L33	20	g:mys	L		agree-flagged
+L33	21	g:qik	L		agree-flagged
+L33	22	?B	L		agree-flagged
+L33	23	?e-loop	M	B:-	gap
+L33	24	c3	M	B:?e	differ
+L33	25	a4	M	B:n3	differ
+L33	26	s3	M	B:?p	differ
+L33	27	a4	M	B:o1	differ
+L33	28	a3	L		agree-flagged
+L33	29	l3	L		agree-flagged
+L33	30	?o-dash	M	B:?o_stroke	differ
