@@ -12,7 +12,7 @@ THE ITEM
   S. Tomokiyo identified this table as the one used for this letter
   (https://cryptiana.web.fc2.com/code/nevers.htm, section no.25). With it, the runs give only short French fragments,
   e.g. "ainsi les auroit", "s'y est", "savoir" (just before the clear words "bons deniers"), "bonne fa[ç]on". There is
-  no continuous plaintext, and code words (Roman numerals, overbarred figures) are unread.
+  no continuous plaintext. One Roman-numeral code word, xiiij, reads "Seigneur" through the table's nomenclator; no other code word was found.
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr3416-nevers-fils-1589/AUDIT.md
 
 QUESTIONS

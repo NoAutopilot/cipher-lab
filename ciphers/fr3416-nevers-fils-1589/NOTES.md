@@ -344,10 +344,9 @@ addressee line other than "Mon fil" and no date line were found in the cropped r
 Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
-Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
+Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
-- code word xiiij (Seigneur, M) - blocker: not-attempted; two blind reads now give x first and the group as xiiij (FILS-F38: alts c/viiij; A1B-FILS-XIIIJ: alt e, from the crop cutting the glyph's left edge), pre-registered G1 not met; next: one blind read on a wider crop starting at x ~1780 of images/f43_L02_s2.jpg (the lead-in stroke and the preceding figure visible), same G1 rule, ~$1. (The L10 overbar "28" (Ml de Biron) was withdrawn by A1B-FILS-L10: the stroke belongs to line 11.)
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
 
@@ -360,8 +359,8 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn
-Verdict: keep going: 3 internal gaps (2 more illegible); cheapest next: one blind read of the xiiij first glyph on a wider L02 crop (lead-in visible), ~$1
+- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H
+Verdict: keep going: 2 internal gaps (2 more illegible); cheapest next: one independent blind check of the upper letter's 44 M and 23 U words, ~$2
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -552,3 +551,18 @@ no key. Rule unchanged from A1B-FILS-XIIIJ (G1/G2/G3 above, not loosened): G1 = 
 confidence M or H -> token M -> H and xiiij = Seigneur -> H, rebuild + rule-10 propagation; G2 = x with any alternative or
 confidence L -> stays M; G3 = other glyph -> split, stays M. If not G1, the gap's blocker becomes illegible (two crops,
 two reads on the only image).
+
+## A1B-FILS-XIIIJ2 result (account 1, 3 Oct 2026, 18:01 UTC)
+
+Blind read (1 Opus subagent call, crop `images/f43_L02_xiiij_wide.jpg` only, no candidates), verbatim: first glyph **x**;
+alternatives "none (the loop could be misread as a separate e/o, but that is not a roman numeral)"; confidence M; whole
+group `xiiij`; deciding feature "a stroke comes in from the left, makes a closed loop at the top right, then drops below
+the line in a descender that curls back to the right at the bottom. After it come three dotted minims (i i i) and a final
+long-tailed j." **Outcome: G1** -- single answer x, no live alternative named (e/o raised only to be ruled out), confidence
+M. With FILS-F38 and A1B-FILS-XIIIJ, three blind reads give x. A later reader may hold the parenthetical to be an
+alternative; it is quoted here so that call can be re-made. Rebuild: the L02 token in f35r_ciphertext.tsv is now `xiiij`
+H (was `ciiij` M, NV02-READ's first form, noted in the row); keys/build_no25_nomen.py and decode_f35.py regenerated,
+both `--check` OK; f35r_codewords.tsv: xiiij = Seigneur H. Grades on f.35r: H 75 / M 27 of 102 (was 74/28); letter
+decode and scores unchanged. Propagated (rule 10): AUDIT.md safe sentence 74 -> 75 + propagation line (N4 unchanged);
+second-opinions/PROMPT-chatgpt-NV02.md (SO-NV02-F35, queued) code-word sentence. Gap closed.
+Grades this job: 1 token M -> H (the code word). Not found in print: nothing searched.

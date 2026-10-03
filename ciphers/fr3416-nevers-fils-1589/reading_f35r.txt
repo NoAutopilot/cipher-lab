@@ -26,7 +26,7 @@ U24  <<et conseils d' aultres, Il en fault {que de tout} {q' le-}>>[M]
 U25  <<{estime} d' l' estat et {servitu-} a ceux {de} [...]>>[M]
 U26  <<Le Roy est ung {depuis} a Paris et q' pour asseurer la>>[M]
 L01  <<{pensse}. {Craignez} que il [...] cy [...] {en le(s)} [...]>>[M]
-L02  {run 1: .aisi.nlesauroit[ciiij].e}
+L02  {run 1: .aisi.nlesauroit[xiiij].e}
 L03  {run 2: [1]r..etsYestes.sipr.e}
 L04  {run 3: s.es.auoir[0]} <<vous deuez bien {facillem[ent]}>>[M]
 L05  <<vous faire entendre ma volonte.>>[H] {run 4: e..T.e.OI.}

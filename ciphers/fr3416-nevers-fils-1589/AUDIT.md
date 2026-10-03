@@ -307,7 +307,7 @@ blogs, solver repositories, Tomokiyo, Gomberville and the BnF catalogue covered 
 | fr.3416 f.35r figure runs, key no.25 | **N4** (from N3) | published (unchanged: Tomokiyo's attribution of key no.25 to this letter; the alphabet read by us from the period key sheet fr.3995 f.51r) | none located | none located |
 
 **Safe sentence:** "Under key no.25, which Tomokiyo identified for this letter, the figure runs at the foot of BnF
-fr.3416 f.35r (the duc de Nevers to his son, c. late 1589) read as French letter fragments, graded 74 of 102 tokens H,
+fr.3416 f.35r (the duc de Nevers to his son, c. late 1589) read as French letter fragments, graded 75 of 102 tokens H,
 that outscore 200 shuffled keys at three seeds. No prior decipherment located in the principal editions and catalogues:
 the BnF catalogue, Gomberville's 1665 *Mémoires*, Boltanski's *Les ducs de Nevers et l'État royal* (2006, phrase
 search), Gérard's 2003 *Répertoire* (per-page word counts), Tomokiyo's pages, three solver repositories, the cipher
@@ -321,3 +321,8 @@ nomenclator only partly read). The key is `published`, so "our key" is unsafe to
 class field and its prompt states no class, so nothing to change there; status.json `fields_source` still says "N3
 kept" (the parent's file, flagged in ROOM.md). NOTES.md's N3->N4 gap removed. Requests: data.htrc.illinois.edu 1,
 babel.hathitrust.org 1 (403), www.googleapis.com 4.
+
+Propagation (A1B-FILS-XIIIJ2, 3 Oct 2026, rule 10): a third blind read on a wider crop (lead-in visible) met the
+pre-registered G1 (NOTES.md "A1B-FILS-XIIIJ2"), so the L02 code word moves M -> H as **xiiij = Seigneur** (key no.25
+nomenclator row H). Token grades on f.35r are now H 75 / M 27 of 102; the safe sentence above is updated from 74 to 75.
+No decoded letter and no score changed (the code word is not a letter token). SO-NV02-F35's prompt carries the change. Class N4 unchanged.

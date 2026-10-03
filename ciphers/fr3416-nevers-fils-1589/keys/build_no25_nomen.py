@@ -53,7 +53,7 @@ P = os.path.join(H, 'key_no25_nomenclator.tsv')
 # code is H on f.35r; the f.35r grade is read from f35r_ciphertext.tsv). Candidate code forms are the reconciler's.
 NOM = {l.split('\t')[0]: l.split('\t') for l in out[4:]}
 CT = [l.rstrip('\n').split('\t') for l in open(os.path.join(H, '../f35r_ciphertext.tsv')) if not l.startswith(('#', 'line'))]
-CW = [('L02', 'ciiij', 'xiiij', 'first glyph is the letter-hand x with a long lead-in tail (the "c" of NV02-READ); no c-codes exist in the table'),
+CW = [('L02', 'xiiij', 'xiiij', 'first glyph is the letter-hand x with a long lead-in tail (the "c" of NV02-READ); no c-codes exist in the table; x settled H by A1B-FILS-XIIIJ2 (3 Oct 2026, G1)'),
       ('L10', '28', '28', 'WITHDRAWN (A1B-FILS-L10, 3 Oct 2026): two blind reads put the only free stroke with line 11 (abbreviation bar over its Z-like letter), not over figures 2 8; no code word in L10')]
 WITHDRAWN = {('L10', '28')}
 cw = ['# f.35r code words through key no.25 nomenclator (keys/build_no25_nomen.py, FILS-NOMEN 3 Oct 2026); grade per NOTES.md pre-reg rule 3',

@@ -1,4 +1,4 @@
 # f.35r code words through key no.25 nomenclator (keys/build_no25_nomen.py, FILS-NOMEN 3 Oct 2026); grade per NOTES.md pre-reg rule 3
 line	token_f35r	f35r_grade	code_read_as	meaning	nomen_grade	grade	note
-L02	ciiij	M	xiiij	Seigneur	H	M	first glyph is the letter-hand x with a long lead-in tail (the "c" of NV02-READ); no c-codes exist in the table
+L02	xiiij	H	xiiij	Seigneur	H	H	first glyph is the letter-hand x with a long lead-in tail (the "c" of NV02-READ); no c-codes exist in the table; x settled H by A1B-FILS-XIIIJ2 (3 Oct 2026, G1)
 L10	28	M	28	Ml de Biron	H	withdrawn	WITHDRAWN (A1B-FILS-L10, 3 Oct 2026): two blind reads put the only free stroke with line 11 (abbreviation bar over its Z-like letter), not over figures 2 8; no code word in L10
