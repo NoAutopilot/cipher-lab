@@ -1,0 +1,46 @@
+{
+ "item": "BRAH 9/15 ff.1-6, 'Cifra del visorrey' (in a 25-leaf folio volume lettered 'Cifras de los Reyes Catolicos'; Galende Diaz 1994, inventory and n.9)",
+ "fetched": false,
+ "images": [],
+ "searched_utc": "2026-10-03T01:28-01:38Z",
+ "by": "GAPS-esp318-sicilia-1503 (account-4)",
+ "routes": [
+  {
+   "host": "catalogo.rah.es (Koha OPAC)",
+   "query": "idx=callnum,phr q=9/15",
+   "result": "5 hits, none is signatura 9/15 (3/2271/2272, 15-7-9/15, 15-2-9/15(I-XIII), 9/3780(9-15 y 17-19), 23-Caja 9/15); first unquoted callnum try returned a proxy error"
+  },
+  {
+   "host": "catalogo.rah.es",
+   "query": "kw 'cifras reyes catolicos', 'cifras' (itype MS), 'cifra visorrey'",
+   "result": "0 hits each"
+  },
+  {
+   "host": "bibliotecadigital.rah.es (browser_fetch)",
+   "query": "busq_general=cifras",
+   "result": "13 hits, none the 9/15 volume (maps, codices, a 1817 Morillo letter, 'El telegrafo')"
+  },
+  {
+   "host": "bibliotecadigital.rah.es",
+   "query": "busq_general=visorrey",
+   "result": "0 hits ('No hay ningun registro')"
+  },
+  {
+   "host": "bibliotecadigital.rah.es",
+   "query": "busq_general=cifra general",
+   "result": "Anubis challenge page; host not retried (good-citizen rule)"
+  },
+  {
+   "host": "bibliotecadigital.rah.es OAI-PMH",
+   "query": "ListSets; GetRecord 46325 (a web-search lead)",
+   "result": "one set 'driver' (no search route); 46325 is Salazar 'Familias diferentes T.10', not 9/15"
+  },
+  {
+   "host": "web search",
+   "query": "2 queries (Cifras de los Reyes Catolicos / 9/15; Galende 'cifra general' signatura)",
+   "result": "no reproduction or holding record of 9/15"
+  }
+ ],
+ "availability_flag": "none quotable: no holding record for 9/15 found in either RAH catalogue (Koha OPAC or Biblioteca Digital); Bourdeau targets/esp318/NOTES.md l.121: 'RAH 9/15 is not online'",
+ "route_to_images": "copy order to the RAH library (biblioteca@rah.es), riding the open Salazar order of ASKS 68; ASKS 105"
+}

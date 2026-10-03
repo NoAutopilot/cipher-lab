@@ -374,21 +374,43 @@ scripts above are the rule-7 checks for the numbers reported.
 
 **Not found:** no Gran-cifra reading of no. 94 on f.120r; no evidence for or against the key beyond chance.
 
-## Remaining gaps (FT4-esp318-sicilia-1503, 3 Oct 2026)
+## GAPS-esp318-sicilia-1503 (3 Oct 2026, account-4, 01:28-01:4x UTC)
+
+Verdict step run: fetch the "Cifra del visorrey", BRAH 9/15 ff.1-6. **Result: not fetchable from the cloud; no holding
+record online.** Galende Díaz 1994 (Bourdeau's text copy, `targets/esp318/lit/galende1994.txt` l.327-346 and n.9) places
+it in a 25-leaf folio volume, vellum, lettered "Cifras de los Reyes Católicos", B.R.A.H. sign. 9/15, ff.1-6, followed by
+the Cifra general (ff.7-9), Silva-Garcilaso (11-14), Diego de Muros (15), Mauleón (16), Juan Manuel (18).
+- RAH Koha OPAC (catalogo.rah.es), call-number phrase search "9/15": 5 hits, none is 9/15 itself (3/2271/2272,
+  15-7-9/15, 15-2-9/15(I-XIII), 9/3780(9-15 y 17-19), 23-Caja 9/15) -- the OPAC does hold some 9/xxxx manuscripts
+  (9/3780), so the absence is a real search result, not a wrong index. Keyword "cifras reyes católicos", "cifras"
+  (manuscripts), "cifra visorrey": 0 each.
+- RAH Biblioteca Digital (headless browser): "cifras" 13 hits, none the volume; "visorrey" 0; a third query met the
+  Anubis challenge and the host was not retried. OAI-PMH has one set ("driver"), no search route.
+- **Availability flag: none quotable** -- no holding record for 9/15 in either catalogue; Bourdeau's notes agree
+  ("RAH 9/15 is not online", `targets/esp318/NOTES.md` l.121). Manifest of the routes: `key/visorrey_manifest.json`
+  (no images).
+- Shape inventory against the sorter's 40 piles: **not done** (no image of the key exists to compare). Vision calls 0.
+- Route: the RAH library copy order already open in ASKS 68 (RAH sent its request form 28 Sept); one line for 9/15
+  ff.1-9 added as ASKS 105 for the owner.
+Requests: catalogo.rah.es 6 (one proxy error, one retry), bibliotecadigital.rah.es 4 browser + 2 OAI (one Anubis
+page, stopped), github.com 1 shallow clone, web search 3; all at least 1.5 s apart.
+
+## Remaining gaps (FT4-esp318-sicilia-1503, 3 Oct 2026; GAPS 3 Oct)
 Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) agreed by two blind passes.
 - Sign alphabet of no. 94 - blocker: waiting-on ASKS 104 (owner's sign sort, page https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL, built FT4b 3 Oct 2026); two machine passes split 63% because the inventory is unsettled (passes/agreement.tsv), so the next pass is a person's (CLAUDE.md Usage 6)
 - ff.120v-121v - blocker: not-attempted; never transcribed, held until the alphabet is settled; next: crops via tools/iiif_lines.py --image from Bourdeau's full/ pages, after the alphabet is settled, ~$3/page for two passes
+- Cifra del visorrey key (BRAH 9/15 ff.1-6) - blocker: waiting-on ASKS 105 (RAH copy order, riding ASKS 68); no online record or image, GAPS 3 Oct 2026 (key/visorrey_manifest.json)
 - Nomenclator of no. 94 - blocker: open-codes; commonest groups otto/rah/mal/mys/ml are not in Bergenroth's partial list (code_overlap.json)
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Lanuza/Claver letters of the viceroy of Sicily (Archivo del reino de Aragón inventory line, Premise check (d)) not yet located
 - [x] clear-pages: clear Spanish on f.120r transcribed by both passes; usable as context, not as a crib for coded spans yet
-- [ ] known-keys: Gran cifra tested (code overlap at chance, sign test a non-test); next key is the "Cifra del visorrey", BRAH 9/15 ff.1-6 (RAH OAI-PMH didl route + tools/browser_fetch.js --binary, CLAUDE.md host notes), ~$4
+- [ ] known-keys: Gran cifra tested (code overlap at chance, sign test a non-test); Cifra del visorrey BRAH 9/15 searched 3 Oct 2026, no online record or image, waiting-on ASKS 105; next untried key: none named
 - [ ] print: A. de la Torre, Documentos sobre relaciones internacionales vol. VI index under Sicilia/Lanuza (LOCAL-QUEUE/HathiTrust page read), named in Premise check (d)
 - [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish) not built; needs a settled transcription first
 - [ ] image-check: re-cut the key sheet with overlap so row m is visible; read crops zoomed
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: the Cifra del visorrey fetch (alphabet waiting on ASKS 104, sorter built), ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: re-cut the Gran-cifra key sheet with overlap so row m is visible (disk only; alphabet waiting on ASKS 104, visorrey key on ASKS 105), ~$0.5
 
 ## Sign sorter (FT4b-esp318-sicilia-1503, account-4, 3 Oct 2026)
 
@@ -403,7 +425,5 @@ Rebuild and apply-after-sort: sorter/README.md.
 
 ## While waiting
 
-- Depends on nobody: fetch the "Cifra del visorrey", BRAH 9/15 ff.1-6 (RAH OAI-PMH didl route, then `tools/browser_fetch.js
-  --binary` for the images; CLAUDE.md host notes), the second named key candidate for a viceroy's letter, ~$4. Its code
-  list can be tested against the 38 agreed code groups with `code_overlap.py`'s random-list control without a settled alphabet.
 - Depends on nobody, disk only: re-cut the Gran-cifra key sheet with overlap so row m is visible (key/), ~$0.5.
+- (Done 3 Oct 2026: the Cifra del visorrey search -- no online record or image; ASKS 105.)
