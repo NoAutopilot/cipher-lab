@@ -84,3 +84,44 @@ line	pos	value	grade	reason
 2077_L18	6	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #150 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
 2077_L18	17	a	H	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #154 -> R9 (a) 0.65; class x moved to a by the 2/3 rule
 2077_L19	29	c	M	GAPS25 blind sign call (passes/signcmp_gaps25, prereg 12845ab7): #166 -> R7 (c) 0.85; class [v-tall] moved to c by the 2/3 rule
+2077_L02	4	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #1 form F2 0.65 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L02	10	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #2 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L02	25	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #3 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L02	39	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #4 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L03	7	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #5 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L03	13	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #6 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L05	2	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #7 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L05	17	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #8 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L05	19	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #9 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L05	31	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #10 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L05	55	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #11 form F2 0.85 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L06	29	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #13 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L06	36	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #14 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L08	5	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #15 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L08	37	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #16 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L08	51	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #17 form F2 0.7 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L09	3	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #18 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L09	33	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #19 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L10	30	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #20 form F2 0.8 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L10	49	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #21 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L11	19	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #23 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L11	27	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #24 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L11	29	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #25 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L11	49	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #26 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L14	4	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #29 form F2 0.85 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L14	8	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #30 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L14	21	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #31 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L14	24	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #32 form F1 0.7 = form of C-known L06:4 (g); gate PASS
+2077_L14	32	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #33 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L14	34	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #34 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L15	13	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #36 form F2 0.85 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L15	15	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #37 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L15	24	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #38 form F2 0.9 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L15	30	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #39 form F2 0.8 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L15	34	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #40 form F1 0.8 = form of C-known L06:4 (g); gate PASS
+2077_L15	41	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #41 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L16	6	l	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #42 form F2 0.85 = form of C-known L10:61/L12:26/L12:48 (l); gate PASS
+2077_L18	5	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #43 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L18	16	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #44 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L18	28	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #45 form F1 0.85 = form of C-known L06:4 (g); gate PASS
+2077_L18	31	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #46 form F1 0.9 = form of C-known L06:4 (g); gate PASS

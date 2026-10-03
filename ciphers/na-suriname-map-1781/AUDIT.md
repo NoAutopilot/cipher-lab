@@ -466,3 +466,11 @@ Postmortem: no over-claim in GAPS25 or GAPS29 (NOTES.md additions checked for fi
 "re-class pending" as rule 10 asks. One methodological point recorded above, not an over-claim: the gate that motivated the fix was
 re-run as the fix's evidence. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 06:2x UTC) and none is added: the class
 is N1 (provisional), below N3. No CONTRIBUTIONS or outreach.
+
+[GAPS37, 3 Oct 2026 -- rule 10 propagation by the solver, not a verifier pass: reading revised by a same-hand g|l sorting call
+(passes/signcmp_gaps37, prereg 34dbb366, 1 blind Opus call, leave-all-out gate on the four C-known g tokens PASS: L06:4 in
+form F1, L10:61/L12:26/L12:48 in form F2). 41 of 42 other g tokens moved: g H 25, l H 16 (1 unsettled, L15 approx). 2077 is
+now **H 540 C 7 M 61 U 50** (was H 499 C 7 M 102 U 50); decode_key --check exit 0. Words now reading whole include "selve",
+"paardestal", "logis", "garnisons", "berging van drooge goederen", "arsenael", "kleingeweer", "geweer", "winkel". GAPS23's
+registered gate re-run unchanged: pooled 0.752 (88/117; was 0.768, 86/112), N1 p99 0.453, N2 p99 0.274, 0/2000, PASS; no g/l
+mismatch against 2078 in confusion.tsv. Re-class of item 4 is pending a separate verifier.]

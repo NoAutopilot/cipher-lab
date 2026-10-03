@@ -1,0 +1,49 @@
+FORM F1: closed round bowl; descender drops then sweeps wide to the LEFT in an open curve (often running back under the preceding sign), ending in a heavy blob/dot terminal that does not return to the stem.
+FORM F2: closed round bowl; descender drops straight then turns back up in a narrow teardrop loop that closes (or nearly closes) on the stem with a thin hairline return; no free blob terminal, loop stays directly under the bowl.
+query	line	bowl	descender	form	form_conf	located	note
+#1	L02	closed	curls-left-open	F2	0.65	sure	narrow hairline return toward stem, almost closed, no blob; nearer F2 than F1
+#2	L02	closed	closed-loop	F2	0.9	sure	narrow teardrop loop under bowl
+#3	L02	closed	curls-left-open	F1	0.9	sure	very wide left sweep, blob end
+#4	L02	closed	curls-left-open	F1	0.85	sure	line-final; left hook with blob end
+#5	L03	closed	closed-loop	F2	0.9	sure	teardrop loop
+#6	L03	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#7	L05	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#8	L05	closed	curls-left-open	F1	0.85	sure	long sweep back under delta, blob end
+#9	L05	closed	curls-left-open	F1	0.85	sure	short left hook, blob end
+#10	L05	closed	closed-loop	F2	0.9	sure	teardrop loop
+#11	L05	closed	closed-loop	F2	0.85	sure	teardrop loop, thin return
+#12	L06	closed	curls-left-open	F1	0.85	sure	short sweep, blob end
+#13	L06	closed	closed-loop	F2	0.9	sure	teardrop loop, clearly closed at 8x
+#14	L06	closed	curls-left-open	F1	0.85	sure	short left curl, blob end
+#15	L08	closed	curls-left-open	F1	0.85	sure	left curl, blob end
+#16	L08	closed	closed-loop	F2	0.9	sure	teardrop loop
+#17	L08	closed	closed-loop	F2	0.7	sure	narrow loop, two strokes meet at a small blob at the foot
+#18	L09	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#19	L09	closed	closed-loop	F2	0.9	sure	teardrop loop
+#20	L10	closed	closed-loop	F2	0.8	sure	faint ink; loop visible at 8x
+#21	L10	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#22	L10	closed	closed-loop	F2	0.75	sure	thin loop, crossed by ruling stroke
+#23	L11	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#24	L11	closed	closed-loop	F2	0.9	sure	teardrop loop
+#25	L11	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#26	L11	closed	curls-left-open	F1	0.9	sure	bowl lighter ink but closed; wide sweep, blob end
+#27	L12	closed	closed-loop	F2	0.9	sure	teardrop loop
+#28	L12	closed	closed-loop	F2	0.9	sure	teardrop loop
+#29	L14	closed	closed-loop	F2	0.85	sure	teardrop loop with heavy foot
+#30	L14	closed	curls-left-open	F1	0.85	sure	short left curl, blob end
+#31	L14	closed	curls-left-open	F1	0.85	sure	left curl, blob end
+#32	L14	open	curls-left-open	F1	0.7	sure	bowl looks open/hooked like a 9; short curl, blob end inside curve; odd variant
+#33	L14	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#34	L14	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#35	L15	closed	curls-left-open	F1	0.65	approx	descender runs into the line below; ends in a leftward horizontal stroke
+#36	L15	closed	closed-loop	F2	0.85	sure	teardrop loop
+#37	L15	closed	curls-left-open	F1	0.85	sure	left curl, blob end
+#38	L15	closed	closed-loop	F2	0.9	sure	teardrop loop
+#39	L15	closed	closed-loop	F2	0.8	sure	thin narrow loop
+#40	L15	closed	curls-left-open	F1	0.8	sure	wide curl, blob tucked inside curve
+#41	L15	closed	curls-left-open	F1	0.9	sure	wide sweep, blob end
+#42	L16	closed	closed-loop	F2	0.85	sure	loop with heavy foot
+#43	L18	closed	curls-left-open	F1	0.9	sure	left curl, blob end
+#44	L18	closed	curls-left-open	F1	0.9	sure	left curl, blob end
+#45	L18	closed	curls-left-open	F1	0.85	sure	wide sweep back under 'ao', blob end
+#46	L18	closed	curls-left-open	F1	0.9	sure	left curl, blob end
