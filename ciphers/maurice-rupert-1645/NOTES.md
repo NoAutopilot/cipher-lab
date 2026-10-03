@@ -88,6 +88,8 @@ This is the adversarial pass of `.claude/briefs/check-solved.md` "Premise check"
   hits below). Every one of the 12 IA digitisations of Warburton prints the groups without a reading.
 - Add MS 18982 ff.95r-96v, Osborne to Rupert, 10 Nov 1645, "Partially ciphered (with deciphering)" (REQUEST.md):
   **unreachable**. It is a BL image, and there is no DECODE record for 18982 ff.95-96 in the on-disk harvest. Not opened.
+  [Corrected 3 Oct 2026, FT4c: the harvest does list it -- DECODE 8444 = 18982 f.95 and 8443 = ff.93-94, both
+  Decrypted. Both are Osborne to Rupert, 9-10 Nov 1645, so neither is this letter. See the FT4c section below.]
 
 **(b) Other solvers' working files. Not found, but one finding moves the blocker.**
 - **Bourdeau**: fresh shallow clone, HEAD 2341682 (2 Oct 2026 15:12 -0500). `targets/rupert/` (NOTES.md,
@@ -214,3 +216,52 @@ applied, with a shuffled-key control and the judge, and failed both.** Status st
 Requests: de-crypt.org 9 (login + RecordsView + 8 filesrv, 1.6 s apart), one login. Vision reads: 12 (4 page overviews,
 1 mis-rotated crop, 1 rotated overview, 6 table crops; one reader pass by this worker, no subagents -- over the
 brief's 3, because the table spans two rotated pages). Rule 10: nothing here says new or unread.
+
+## design_prior and Add MS 18982 ff.95-96 (FT4c-maurice-rupert-1645, account-4, 3 Oct 2026)
+
+Run 3 Oct 2026, 00:47-01:00 UTC (`date -u`). No cryptanalysis was done. Status stays `open`.
+
+**design_prior** (`python3 tools/design_prior.py ciphers/maurice-rupert-1645/ciphertext.txt --no-write`):
+
+```
+ciphers/maurice-rupert-1645/ciphertext.txt: 99 tokens, 69 distinct, inventory digits
+  relabel-invariant statistics: True; references at this N: 120
+  multi-sign (homophonic/nomenclator/syllabary) d=0.10 envelope=0.31 null_p05=0.12 -> plausible
+  mixed (partial table)  d=0.81 envelope=2.32 null_p05=0.52 -> not above null
+  letter-for-letter      d=0.90 envelope=1.5 null_p05=0.66 -> not above null
+  code                   d=1.59 envelope=1.1 null_p05=1.17 -> excluded
+  shuffled-input false-positive rate: 0.135
+  fine family ranking (advisory, not calibrated): homophonic=0.17; nomenclator=0.26; syllabary=0.64; mixed=0.81; alphabet substitution=0.90; code numbers=1.59
+  nearest keys: vanbeuningen-dewitt-1657/key.tsv [nomenclator; d=0.05] || jan-van-nassau-1572-75/key_5549.tsv [homophonic; d=0.06] || lodewijk-van-nassau-1573-74/key_5801.tsv [homophonic; d=0.17]
+```
+
+What it says: the multi-sign class (a homophonic or nomenclator table) is plausible. A pure code is excluded. This fits
+the letters-plus-words reading already in this file and the key 118 design. The nearest keys are Dutch and Nassau
+tables, which have nothing to do with this letter. They match on statistics only. At N=99 the shuffled-input
+false-positive rate is 13.5%, so this is a weak prior. It licenses no key.
+
+**Add MS 18982 ff.95-96: what it is.**
+- BL catalogue JSON (`searcharchives.bl.uk/catalog/040-002095608?format=json`, HTTP 200, read 3 Oct 2026):
+  "ff. 95r-96v: Letter of Henry Osborne to Prince Rupert, 10 Nov 1645. Original: holograph. With address. Partially
+  ciphered (with deciphering)." The leaves before it are "ff. 93r-94v: Letter of Henry Osborne to Prince Rupert,
+  9 Nov 1645 ... Partially ciphered (with deciphering)". The same catalogue still has **no item for a 7 July 1645
+  Maurice letter**. Its only Maurice-to-Rupert item is ff.27-28 (Worcester, 29 Jan 1645). Its July 1645 items are
+  Nicholas (ff.68-69, 71), Goring, Watson, Digby and Glemham.
+- DECODE: `sources/decode/records-decrypted-2026-09-24.tsv` has **8444** ("Add MS 18982 f 95", 1645, Decrypted,
+  2 images) and **8443** ("f 93-94", Decrypted, 3 images). The premise-check line above wrongly said there was no such
+  record. RecordsView/8444 was fetched without a login (HTTP 200) and gives: Receiver "Hen?Osborne", date 1645-11-10,
+  access mode "Authentication required", "The image is not in the public domain."
+- **Answer: no.** ff.95-96 is not a period decipherment of this letter. It is a different letter: Osborne, not
+  Maurice, 10 Nov, not 7 July. The premise risk (N0) is cleared for this item. No image was fetched and no vision call
+  was made, because the catalogue and DECODE metadata already settle the question.
+- What it could still give: a deciphered Osborne-Rupert table from Nov 1645 (8443 and 8444 together, 5 images). It is
+  a possible key, not this letter's key. Osborne is a different correspondent, so the prior that it fits is low.
+
+**Next step** (keep going): one DECODE browser login fetches 8443 and 8444 (5 images, about 8 requests). Read off
+the number range and design of the Osborne table (letters vs words, max code). Apply it with the shuffled-key control
+(as `key118_test.py` did) only if it fits this letter's profile (letters at or below about 80, words up to 398, no
+letter+digit codes). About $1.5-2. If it does not fit, the remaining unread piece is blocked from outside the session:
+Rupert's own papers (Add MS 18980-82) on BL images, where the 7 July leaf is not itemised.
+
+Requests: de-crypt.org 1 (RecordsView/8444, no login); searcharchives.bl.uk 1. Vision calls 0. Rule 10: nothing here
+says new or unread.
