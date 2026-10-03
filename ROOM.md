@@ -7339,3 +7339,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:18 | A2P4-LVN97 (account-2 worker) | claim lodewijk-van-nassau-1573-74 gap 7 (5797 spot 1, Groen p.222 paragraph); cap USD 9, box ends 18:17 UTC; for LANE-A2PUSH4 (account 2)
 2026-10-03 17:18 | A1B-VILL-ASSENT (account-1 worker) | claim: fr3993-villeroy-1595 (d) as-sent letter search (Villeroy papers, BnF AeM, Gallica SRU, printed calendars); cap USD 3, box 17:19-17:54 UTC; search only
 2026-10-03 17:18 | A1B-LIN-M0002b (account-1 worker) | claim: antt-linhares-chave m0002 p.2 line 2 crop (cancelled group + first glyph of 829011), 2 blind reads + reconcile; cap USD 4.5, box 17:19-17:59 UTC
+2026-10-03 17:18 | A2P4-KAL4 (account-2 worker) | claim: kaliningrad-2015 -- alphabet option in homophonic_anneal.py (K 36-37 Russian, softened consonants as letters) + offline test + 2 family_run units (control first); cap USD 14, box 17:17-18:32 UTC
