@@ -1180,3 +1180,38 @@ Bookkeeping seen in passing, not changed (outside this brief): (1) ciphertext.ts
 takes the key grade, so the reading is right. (2) key.tsv still carries the orphan row `829011 [null]`, which no
 ciphertext group now uses. Suggestion: drop it or mark it superseded in a later housekeeping pass (~USD 0.2).
 Vision 0, subagents 0, network requests 0.
+
+## Row-crop labelling (A1B-LIN-ROWS, 3 Oct 2026) -- PRE-REGISTRATION (pushed before any vision call)
+
+Third instrument for the two disputed column counts (after A1B-LIN-HOCR and A1B-LIN-PIX failed calibration): segmentation
+by pixels, identity and indent by eye, no long-column counting by any model. Source: the page images on disk
+(`images/book/*_leafNNNN_*.jpg`, 949 x 1076). Each column is cut into one crop per text row with
+`tools/iiif_lines.py --image <leaf jpg> --region <column box> --lines-per-crop 1 --out <scratchpad>/rows_<leaf>_<col> --prefix L<leaf>c<col> --debug`
+(column boxes set by eye from a ruled contact sheet of the pages, starting just right of the column rule; commands and
+debug overlays pasted in the result). Row crops are upscaled 3x (no other change) and stacked, numbered, into sheets of at
+most 40 rows (one sheet = one batch of row crops). Each row is labelled by a blind Sonnet subagent, which is told nothing
+about the dictionary key, the target words or ranks: per row, one of `FLUSH` (row starts at the column's left margin),
+`INDENT` (starts at the hanging indent), `OTHER` (blank, running head, section initial or heading, rule, fragment,
+two lines merged -- named), plus the first word if FLUSH. Model labels are not overridden.
+
+Count convention (the key's every-bold-line convention, NOTES LX-QAFIX): rank = ordinal of FLUSH rows from the top of the
+column. A row labelled OTHER "two lines merged" or "fragment" in the counted range makes that column undecided (no fix-up).
+
+Calibration (7 columns from `hocr/calibration.tsv`, including the five that both earlier instruments missed by +1):
+236/1 Guerra r2, 236/3 Habil r1, 146/1 D r1, 276/2 Memoria r3, 261/2 Lhe r6, plus two deep columns for the target depth,
+265/2 Lugar r17 and 255/2 Junto r20 (same leaf as the "justa" column). Score: the FLUSH row whose labelled first word
+matches the expected headword (accents and long s ignored, first match from the top) has ordinal == key rank.
+**Gate: PASS iff all 7 calibration columns are exact (MISS 0, undecided 0).** No re-labelling, re-cutting or re-tuning
+after the calibration result. A FAIL stops the job: the target columns are not labelled, and per rule 3 (third instrument
+on the same question) the column-count step is logged [retired] with all three instruments named.
+
+What settles each gap (read only if the gate passes), as in the A1B-LIN-HOCR / A1B-LIN-PIX pre-registrations:
+- 83/2 (leaf 95 col 2, "cagar", 283219): FLUSH rank 19 first word "Cagar" -> the column-count objection (LX-QAFIX's 18)
+  is resolved; the token stays **M** (its grade rests on the caret digit's shape). Rank 19 another word or fewer than 19
+  FLUSH rows -> 283219 goes to unresolved (U) at the column-count level.
+- 241/3 (leaf 255 col 3, "justa", 3241315): whichever word sits at FLUSH rank 15 is the reading ("Justa" or "Jus"),
+  graded **H** if it agrees with at least one earlier independent count (LX-DEC: Justa; LX-DEC's subagent and LX-QAFIX:
+  Jus); also reported: whether "Junto, prepos." heads col 3 as its own FLUSH row.
+- A rank-15/19 row labelled OTHER or with an unreadable first word: that gap stays as it is and the job says so.
+A moved token is propagated (decode --check, judge, AUDIT.md, SO-LINHARES rows) and a rule-7 re-derivation is named as
+the next step, not run here.
