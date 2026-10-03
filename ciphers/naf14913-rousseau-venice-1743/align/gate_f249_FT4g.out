@@ -1,0 +1,5 @@
+groups 111, distinct 78, slip letters 355, maxlen 12
+C-code occurrences in passage: {'22': 5, '66': 3, '279': 1, '722': 1, '31': 1, '628': 1, '172': 1} total 13
+repeated codes: {'755': 2, '253': 2, '311': 2, '14': 3, '10': 4, '276': 3, '63': 3, '121': 4, '208': 4, '242': 2, '66': 3, '52': 4, '605': 2, '22': 5, '359': 2, '488': 2, '746': 2, '79': 2}
+REAL: H = 0; pinned set {}; timeouts on higher pin sets: False
+(run stopped by the worker after the REAL line, 06:04 UTC 3 Oct 2026, as FT4e did: H 0 cannot beat any control; this run reports no timeouts on the higher pin sets -- FT4g)
