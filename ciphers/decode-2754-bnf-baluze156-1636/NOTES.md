@@ -628,17 +628,83 @@ epsilon-E, which f.146r lacks. Grades (rule 4): no reading claimed; inventories 
 **open**. Vision calls used: 3 of 4. Requests: gallica.bnf.fr 44 (41 corner crops, 3 page views; >= 1.6 s apart,
 browser UA, no 403/429), archivesetmanuscrits.bnf.fr 1. No subagents.
 
-## Remaining gaps (FT4c, 3 Oct 2026)
-Read so far: 0 of 137 f.157r tokens read; four period/published keys tested negative (two Lasry, Servien 1632, f.146r 1636).
-- f.157r cipher runs (137 tokens) - blocker: not-attempted; no key matches yet, sign inventory cannot discriminate (sweep_result.tsv); next: rebuild the f.247 Final-advis key from its interlinear decipherment (iiif_lines crops of canvas 425, 2 blind passes + reconcile, interlinear_align, leaf control) and run fr4140_trial-style test on f.157r, ~$5
-- fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: not-attempted; Gallica SRU returned no record for Français 4141 (3 Oct 2026), and the catalogue sub-unit's own availability flag has not been read; next: read the BnF archivesetmanuscrits sub-unit FRBNFEAD000050537_a19860114 for a digitised-document link, else file a LOCAL-QUEUE row, ~$1
+## fr.4141 availability and the f.247 interlinear key (FT4d, account-4, 3 Oct 2026)
 
-## Escalation (FT4c, 3 Oct 2026)
-- [x] siblings: fr.4140 f.146r key and the f.247/207/254 sweep (this section)
+This runs the Verdict step FT4c named. Intake gate (pasted): `decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines` (exit 0).
+
+**fr.4141 catalogue flag.** archivesetmanuscrits.bnf.fr, finding aid ark:/12148/cc50537t, sub-unit
+`ajaxGetCompDisplay.html?eadCompId=FRBNFEAD000050537_a19860114`. It reads "Cote : Français 4141 Réserver", with an old
+shelfmark of "Anc. 9334(2)bis, Le Tellier-Louvois sans n°". It carries **no digitised-document link**. The fr.4140 sub-unit
+(`..._a19860113`), fetched the same way, does carry `gallica.bnf.fr/ark:/12148/btv1b90601914`. So the holding catalogue's
+own record shows fr.4141 as not online (only a reading-room reservation), which agrees with Gallica SRU returning nothing
+(FT4c). Most of Sabran's 17 Genoa cipher letters (ff.276-591) are therefore reachable only in the reading room or by a
+reproduction order.
+
+**f.247r (canvas 425): transcription.** Crops were cut with the command
+`python3 tools/iiif_lines.py --ark btv1b90601914 --canvas 425 --region 4150,500,3700,4300 --out
+ciphers/decode-2754-bnf-baluze156-1636/images/f247 --prefix f247r`, then re-cut from the cached source with eye-set
+`--centres` for the 23 cipher-bearing lines, `--lines-per-crop 2 --top-margin 90 --bottom-margin 40`. That gives 24 crops
+(12 bands x 2 segments), and each gloss falls inside its band. Two blind Opus passes each read the one crop set
+(`images/f247/passA_f247.tsv` 25 rows / 219 tokens; `passB_f247.tsv` 25 rows / 216 tokens; B read in reverse order).
+The passes agree on run boundaries and on most signs. Their main split is that A writes 'P' for two shapes B tells apart
+('E3^' and 'p^'/'7^'). The worker settled that split from two zoomed views of bands L01 and L05-L07 (the reconciliation,
+vision step 3):
+- **Pc** is a dotted looped sign with a C-curl below, gloss letter a in 14 of 14 occurrences.
+- **7d** is a dotted 7-like sign that follows r in "chasteau", gloss letter s.
+
+The gloss demands the split: "au chasteau" = Pc x 3 o r 7d z ll Pc x. `images/f247/pairs_f247.tsv` holds 14 letter
+runs (136 signs) with their glosses. It excludes the runs that are word codes or carry an uncertain gloss, each named in
+the file header: 'les galeres et vaisseaux' (2-6 signs), 'p l o t e ll e' (bonet/bonec, a cover name), 'o i i o n'
+(glossed both 'biner' and 'La teyrie'), plus Louan and struck glosses.
+
+**Key and leaf control (rule 3, per-unit control before use).** `f247_trial.py` is a copy of FT4b's `fr4140_trial.py`;
+only the pairs file, the output names and the variant row changed. It uses `tools/interlinear_align.py`'s `run_align`
+(`--code-prefix @ --clear-consumes`). Agreement share: **0.787**, against **0.206** median and **0.346** 99th percentile over
+200 permutations of the glosses across runs, so the leaf beats its own control decisively. Key
+`images/f247/key_f247.tsv`: 23 signs kept, 6 dropped (E, g, m, n, t, u split). Grade C (from the period gloss).
+
+**Target test (same scorer, same shuffled-key control as FT4b).**
+
+| row | bits/char | share of 200 shuffled keys as good |
+|---|---|---|
+| DC8 f.157r under the f.247 key (57 of 137 tokens covered) | **4.824** | **0.795** |
+| variant: DC8 '7' as 7d, DC8 'E' as Pc (named after the main row was scored) | 4.984 | 0.840 |
+| shuffled keys, median / best | 4.471 / 3.569 | |
+| positive control: held-out French, same run lengths, enciphered with the key | **3.680** | 0.000 |
+
+The decode runs read `V N M AD H G V NE G H SLGN V E DE ...`, with no French word of 4+ letters. The folder has no spec,
+so no judge was run; a reading worse than the shuffle median needs none. `python3 f247_trial.py --check` exits 0.
+
+**Verdict: the f.247 key does not read f.157r.** This is a clean negative with matched controls: the leaf clears its
+pairing control, the target sits at the shuffled-key median, and the positive control is cleanly separated. Coverage is
+only 42% (57 of 137 tokens), lower than f.146r's 89. DC8's numerals and several of its shapes have no f.247 value.
+
+**Side finding: f.146r and f.247 look like one table.** Of the 16 sign names the two grade-C keys share, 11 carry the same
+letter (3=c, 4=g, h=s, i=s, l=r, ll=e, nn=e, p=n, x=u, z=t, Φ=l), and f.146r's P and f.247's Pc are both a. Two
+independent 16-letter keys would agree on about 1 of 16 by chance. So Sabran most likely used one table for the 9 Aug
+memoir and the Final advis, and that table has now failed f.157r twice. Either "Mr de ch. g^r" had a different table, or
+DC8's 24 Sept Sonnet transcription, which has no names for Pc/7d and merges shapes, is the limit (rule 2).
+
+Grades (rule 4): no reading of the target is claimed (0 H, 0 C, 0 S, 57 M mechanical, 0 I). The key is 23 signs at grade
+C. Status word unchanged: **open**. Vision calls: 2 blind passes plus 1 reconciliation by the worker (two zoomed views).
+Requests: gallica.bnf.fr 3 (1 page view at 1400 px, 1 info.json, 1 native region; >= 1.5 s apart, browser UA, no
+403/429); archivesetmanuscrits.bnf.fr 3 (finding aid, two sub-units; descriptive UA).
+
+Suggestion only (Usage 7, not run): merge the f.146r and f.247 keys where they agree (about 30 signs) and re-score f.157r.
+It needs no vision call, but it will be informative only after the image check below.
+
+## Remaining gaps (FT4d, 3 Oct 2026)
+Read so far: 0 of 137 f.157r tokens read; five period/published keys tested negative (two Lasry, Servien 1632, f.146r 1636, f.247 1636 -- the last two apparently one table).
+- f.157r cipher runs (137 tokens) - blocker: not-attempted; no key reads it, and the two 1636 Sabran keys (one table) both sit at the shuffle median (f247_trial.tsv, fr4140_trial.tsv); next: re-read f.157r from iiif_lines crops against Sabran's own sign shapes (Pc, 7d, a+, 6/b, overbars; 2 blind passes + 1 reconcile), then re-score under the merged f.146r+f.247 table, ~$4
+- fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
+
+## Escalation (FT4d, 3 Oct 2026)
+- [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
-- [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, all negative with matched controls
+- [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636, all negative with matched controls
 - [ ] print: Avenel's Richelieu Lettres t.V, a plain summary of the Marseille/Lérins plot to use as a crib
-- [ ] key-rebuild: f.247's interlinear-deciphered table (planned next step)
-- [ ] image-check: re-read f.157r for overbars and 6/b, 4/crossed-tail-a against Sabran's own sign shapes
+- [x] key-rebuild: f.247 interlinear table rebuilt (grade C, leaf control 0.787 vs p99 0.346), negative on f.157r
+- [ ] image-check: re-read f.157r against Sabran's own sign shapes (Pc, 7d, a+, 6/b, overbars), the planned next step
 - [n/a] retry: no transient failure to retry this pass
-Verdict: keep going: 2 internal gaps; cheapest next: read the fr.4141 catalogue sub-unit's availability flag (~$1), then rebuild the f.247 key from its interlinear decipherment and test it on f.157r, ~$5
+Verdict: keep going: 1 internal gaps; cheapest next: re-read f.157r against Sabran's sign shapes and re-score under the merged f.146r+f.247 table, ~$4

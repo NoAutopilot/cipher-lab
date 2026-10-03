@@ -1,0 +1,30 @@
+sign	letter	n	agree	others	status
+3	c	5	5		kept
+4	g	1	1		kept
+7d	s	4	3	a:1	kept
+E	l	5	3	m:1,s:1	dropped
+Pc	a	14	14		kept
+a	i	6	4	t:1,r:1	kept
+b	m	3	3		kept
+d	t	2	2		kept
+ff	i	2	2		kept
+g	o	2	1	s:1	dropped
+h	s	5	5		kept
+i	s	2	2		kept
+l	r	8	7	e:1	kept
+ll	e	11	11		kept
+m	e	2	1	i:1	dropped
+n	o	9	5	t:1,r:1,g:2	dropped
+nn	e	5	5		kept
+o	h	3	3		kept
+p	n	4	4		kept
+qm	h	1	1		kept
+r	a	3	3		kept
+t	d	2	1	p:1	dropped
+tt	d	3	3		kept
+u	o	4	2	t:2	dropped
+v	n	1	1		kept
+x	u	12	12		kept
+y	u	1	1		kept
+z	t	6	4	s:1,d:1	kept
+Φ	l	5	5		kept

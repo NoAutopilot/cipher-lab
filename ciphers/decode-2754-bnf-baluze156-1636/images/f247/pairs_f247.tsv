@@ -1,0 +1,24 @@
+# Reconciled cipher runs of BnF fr.4140 f.247r (Sabran, "Advis particullier ... chasteau de Final", 1636) with the interlinear period gloss. FT4d (account-4), 3 Oct 2026.
+# Passes: passA_f247.tsv, passB_f247.tsv (blind Opus, one crop set each). The worker settled the splits from the source crops (two zoomed views of bands L01, L05-L07):
+#  Pc = the dotted looped sign with a C-curl below (A 'P', B 'E3^'), e.g. before x in "au"; 7d = the dotted 7-like sign after r in chasteau (A 'P', B 'p^'/'7^');
+#  p = plain p (A 'p', B 'p^' where A reads plain p); E = the plain epsilon (both 'E3'). Where A 'P' faces B 'p^' and the crop was not zoomed, Pc is used when the gloss letter is a.
+#  seg1 last E3^ (B) / E3 (A) = Pc (looped, C-curl; gloss 'final' wants a). seg9 split at the gloss boundary; A's 't ll E P x a Φ ll' kept (image: E and Pc both present, B dropped one).
+#  seg10 final d (A) confirmed in the crop ("a f n u d au dessous"); seg6 d (A) kept by analogy.
+# Excluded from the alignment (word codes or uncertain gloss, not letter runs): seg7-8 'les galeres et vaisseaux' (2-6 signs for 21 letters); seg12/18/25 'p l o t e ll e' (glossed bonet/bonec,
+#  also unglossed: a cover name); seg16 Louan (7-8 signs, passes split); seg17 (gloss struck); seg19 (passes diverge); seg20 (first sign split); seg22 (gloss struck); seg23-24 'o i i o n' glossed
+#  both 'biner' and 'La teyrie' (a code word, not letters).
+plain_line	plain_raw	cipher_line	cipher_raw
+s1	au chasteau de final	1	@Pc @x @3 @o @r @7d @z @ll @Pc @x @tt @ll @g @a @p @Pc @Φ
+s2	trois cent hommes	2	@u @l @n @a @h @3 @o @ll @p @u @h @qm @n @b @E @nn @i
+s3	muree et fortifiee	3	@b @x @l @nn @ll @m @n @z @g @n @a @m @E @nn
+s4	secours	4	@h @ll @3 @o @n @x @l @h
+s5	la mer	5	@E @7d @b @ll @l
+s6	varigot	6	@x @Pc @l @a @ff @n @u @d
+s9a	au desus	9	@Pc @x @tt @l @h @x @i
+s9b	de la ville	9	@t @ll @E @Pc @x @a @Φ @ll
+s10	avarigot	10	@Pc @x @Pc @ll @a @ff @n @u @d
+s11	le chasteau	11	@Φ @ll @3 @o @r @7d @z @nn @Pc @y
+s13	du chasteau	13	@tt @x @3 @o @r @7d @z @ll @Pc @x
+s14	la garnison	14	@E @Pc @4 @Pc @l @p @a @h @n @p
+s15	le petard	15	@Φ @ll @t @nn @z @Pc @l @z
+s21	louan	21	@Φ @n @x @Pc @v
