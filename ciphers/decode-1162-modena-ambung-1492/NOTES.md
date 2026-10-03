@@ -1,6 +1,7 @@
 # decode-1162-modena-ambung-1492
 
 Status: open
+Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
 ## What this is
 
@@ -246,3 +247,64 @@ L<n>	decode	ciphers/decode-1162-modena-ambung-1492	LIKELY-4 (2 Oct 2026). DECODE
 Follow-up (one line, not run here): correct the triage row's head_start cell for row 4 -- 1168 holds no key --
 so the parent does not re-rank it on that premise; and the 1162/1168 pair is a two-letter sign pool of one
 envoy, one posting, one month, which is the shape the selection rule prefers once either text is on disk.
+
+## Edition citation (GF4-BATCH19, 3 Oct 2026)
+
+Standard edition for Este dispatches from Hungary about Beatrice d'Aragona: Albert Berzeviczy (with T. Gerevich and E.
+Jakubovich), *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (Budapest 1914; Vestigia's own bibliography
+for this busta cites it), IA `aragoniaibeatrix00berz`, `_djvu.txt` fetched once (1.34 MB) and grepped. The 1492 table of
+contents (pp. XXX-XXXI) runs CLI 20 Jan, CLII 23 Feb (Vimercati, Venice), CLIII 17 Mar, CLIV 19 Mar (Costabili),
+CLV 20/22 Mar (Costabili), ... CLXII 3 May (Costabili): **nothing dated 27 Feb 1492 and no other Costabili letter of
+Feb 1492.** Grep of the whole OCR for "Strigonii" + "Februarii"/"febr" and for "Costabili": no 27 Feb letter. The
+other standard series (Nagy-Nyáry, *Magyar diplomacziai emlékek Mátyás király korából*, 4 vols) stops at 1490, out
+of range. Letter absent from the edition; a search result, not a novelty verdict (rule 10).
+
+## Web and blog check (GF4-BATCH19, 3 Oct 2026)
+
+Web searches (4): (1) `Beltrame Costabili Eleonora d'Aragona 1492 Esztergom cifra lettera` -- PPKE Lardi article
+(already read 24 Sept), Szakács, *Câteva aspecte ... Beltrame Costabili* (Studium 13, studium.ugal.ro PDF, fetched,
+grepped: no "cifr"/"zifra", no Feb 1492 letter), Vestigia, Treccani; nothing about this letter. (2) `"Amb. Ung."
+Modena Costabili cipher 1492 DECODE` -- nothing relevant (Bourdeau's site index only). (3) `Costabili Esztergom 1492
+ciphered letter Este Hungary decipherment solves Claude` (also the model-solve query) -- Láng, *Real Life Cryptology*
+(2018), Szakács on academia.edu; no reading of this letter, no model-solve announcement. (4) `Costabili "27 febbraio
+1492" OR "XXVII Februarii 1492" Strigonio Eleonora` -- nothing.
+Blogs, site search by name, 3 Oct 2026: **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne `?s=Costabili`):
+no results. **Cryptiana blog** (cryptiana.blogspot.com `search?q=Costabili`): "No posts matching the query"; on-disk
+`sources/cryptiana/` (Tomokiyo's pages): no "Costabili", no R1162. **Cipher Mysteries** (`?s=Costabili`): "Nothing
+Found". No hit, so no comment thread to read.
+Other projects' new publications: **Cabinet Noir** (github.com/el-descifrador/cabinet-noir, shallow clone HEAD
+47b6db9, 3 Oct 2026): 24 project folders, none Este/Modena/Costabili/1492 (grep hits were only digit strings).
+**Apeiron** (apeiron.re front page, 1 request): no publication list served; its only known publication is Koehler
+(STATUS.md check-in 38). Solver repos: Aymeloglu (HEAD d2800bb) lists R1162 in `decode-ranked.md` only, no attempt;
+Bourdeau (HEAD a439937) `research/oldest/CANDIDATES.md` B2 lists "Beltrame Costabili, Esztergom 1491-93
+(R1162-R1168, R1095-R1097)" with "Valentini and Costabili not checked".
+No decipherment or plaintext of this item located by these queries on 3 Oct 2026.
+
+## Premise check (GF4-BATCH19, 3 Oct 2026)
+
+(a) Folder's own mentions: DECODE says "Partially decrypted" with one attached Transcription document (id 3593),
+still the forbidden placeholder (LIKELY-4); "Inline Cleartext Yes" means clear passages on the leaf. Not a
+decipherment in hand -- **not found**, but the document is still the first thing to read once fetchable.
+(b) Other solvers' working files: Bourdeau B2 found that in the same Modena series (Sadoleto, Buda 1483, R1107-R1118)
+"every letter has a contemporary decipherment (filed copies or clear slips pasted on the leaf)" -- the shape to
+expect here; Costabili explicitly unchecked. **Not found** for 1162.
+(c) Neighbouring leaves: Vestigia (vestigia.hu, the ELTE/OTKA 81430 database of this series; 7 record pages, 6
+thumbnails, 2 searches) numbers busta 2 "Beltrame Costabili (1492)" nos. 1-3 = 16 Jan, nos. 4-5 = 7 Mar, no. 6 = 19 Mar
+(simple copy, 2 pp., DF 295973-a, = Berzeviczy CLIV) with no. 7 its original, no. 8 = 20-23 Mar ("olasz, titkosírás",
+3 pp., DF 295974), with **Vestigia 4068, a contemporary 3-page clear copy** (DF 295974-4) and printed in full as
+Berzeviczy CLV pp. 216-219, headed "Titkos írásjegyekkel írva" (written in cipher). No. 8 is decode-1168's letter
+(Costabili, 20 Mar 1492, b.2/21 no.8): **its plaintext is printed and a period clear copy exists** -- flagged in
+ROOM.md for decode-1168, not worked here. For 1162 itself: Vestigia's no. 6 is the 19 Mar letter, not 27 Feb, and a
+pixel correlation of Vestigia 3014's four 200x300 thumbnails against DECODE R1162's two (no vision call) gives
+0.60-0.69 against 0.51-0.66 for no. 8's thumbnails as controls -- not the same pages. Vestigia search for
+"1492-02-27": 0 results. So DECODE's "b.2/20, 6" does not map onto Vestigia's numbering, and R1162's leaf was not
+located on Vestigia this pass. **Not found**, but the 1168 result makes it likely that a clear copy of 1162 sits in
+the same busta: the 1168 clear copy plus Berzeviczy CLV is now a period plain-cipher pair for **the same envoy's
+key three weeks later** -- the key-source step for this letter (rule 4 grade C via `tools/interlinear_align.py`).
+(d) Recipient-side edition: Berzeviczy 1914 (Eleonora's incoming dispatches) -- read above, letter absent.
+**Not found.**
+
+Next step (not run): rebuild Costabili's key from Vestigia 3016 (cipher original, 3 pp.) against Vestigia 4068 /
+Berzeviczy CLV (clear), then the DECODE logged-in fetch for 1162 (LIKELY-4's command) and apply; ~$4.
+
+Gate re-run (GF4-BATCH19, 3 Oct 2026): `decode-1162-modena-ambung-1492: open (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1).
