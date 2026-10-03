@@ -63,3 +63,12 @@ lines as C_1.00 + one line needs (~L01-L20). A prefix of the H-span pair is stil
 The positive control is also run at 40% sign error, because this folder's earlier two-reader passes on f75L
 agreed at only 38-52% (rule 3: the control's injected error must bracket the target's reader error); if the
 control fails at 40% but passes at 15%, a target miss is logged "non-test above ~15% reader error", not a negative.
+
+## Amendment A2 (3 Oct 2026, after both reads, before any score on them)
+
+`--null-cost 0` is degenerate in `align_pair` (a letter on a code costs -0.5 and a trailing unaligned plain letter
+-0.3, so with free nulls the first iteration aligns nothing and S = 0 for every input; found by reading the code,
+no score computed on the reads). The tool's default null cost (-3.0) is used instead, for target, nulls and
+control alike. Draw counts cut to fit the box: nulls 200 each (unchanged); positive control 3 synthetic keys per
+error level x 30 shuffled-gloss draws each. No reconciliation vision unit is run (one reader per side, confidence
+0.6 clear / 0.55 cipher, as self-reported); the 40% control level stands in for the unmeasured reader error.
