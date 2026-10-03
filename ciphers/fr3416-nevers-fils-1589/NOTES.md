@@ -348,20 +348,20 @@ Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - code word xiiij (Seigneur, M) - blocker: not-attempted; two blind reads now give x first and the group as xiiij (FILS-F38: alts c/viiij; A1B-FILS-XIIIJ: alt e, from the crop cutting the glyph's left edge), pre-registered G1 not met; next: one blind read on a wider crop starting at x ~1780 of images/f43_L02_s2.jpg (the lead-in stroke and the preceding figure visible), same G1 rule, ~$1. (The L10 overbar "28" (Ml de Biron) was withdrawn by A1B-FILS-L10: the stroke belongs to line 11.)
-- fr.3416 f.38 known-answer alignment - blocker: not-attempted; FILS-F38 pre-registered gate FAIL (0.309 vs shuffled-gloss p95 0.327; beats shuffled-key p95 0.306) on one blind figure pass and a mostly-L gloss pass; next: a second blind pass of figures and of gloss on the f38g crops plus a reconciliation, with each gloss word placed over its figure tokens, then re-run align_f38.py unchanged, ~$5
+- fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
 
 (Novelty N3 -> N4 settled: N4 set by A1B-VERIFY-FILS-N4b, 3 Oct 2026, AUDIT.md "Third audit".)
 
 ## Escalation
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned once (FILS-F38: FAIL vs shuffled gloss, single passes)
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned twice (FILS-F38 single passes; A1B-FILS-F38B second passes + reconciliation): FAIL both times by the same gate
 - [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter, line 11 and margin note cropped and read by two blind passes (FILS-UPPER) and reconciled once against the crops (FILS-RECON: 84 splits settled, 23 words left U)
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn
-Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: one blind read of the xiiij first glyph on a wider L02 crop (lead-in visible), ~$1
+Verdict: keep going: 3 internal gaps (2 more illegible); cheapest next: one blind read of the xiiij first glyph on a wider L02 crop (lead-in visible), ~$1
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -504,3 +504,39 @@ Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-f38b.md`. Second attempt at
    1000, shuffled key 200, seed 1), same gate: PASS only above the p95 of both. Anything else FAIL, both numbers given.
 5. Per rule 3's third-attempt clause: a FAIL here is the second at this test on the same two inputs; a third attempt
    needs a different instrument or new material, not a third pass.
+
+## A1B-FILS-F38B results (account 1 for LANE-A1B, 3 Oct 2026, 17:38-17:5x UTC)
+
+Rules pre-registered above (commit 8a7ff5e8) before either pass B read. Crops: the FILS-F38 `images/f38g_*` set, no
+re-cut in the repo; one reconciliation look at band 3 used a scratch crop (not committed):
+`python3 tools/iiif_lines.py --image ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f46_4000_3880_3100_1000.jpg --out <scratch>/f38r --prefix f38r --centres 790 --lines-per-crop 1 --max-width 1700 --overlap 200 --top-margin 60 --bottom-margin 60 --debug`.
+
+**Passes (2 vision calls, Sonnet subagents, crops only, never shown pass A or the key):** `f38b/passB_figures.tsv`,
+`f38b/passB_gloss.tsv` (verbatim). `tools/reconcile_passes.py` figures A vs B (B writes the secretary 8 as "01"; with
+01=8): agree 97/111 = 87.4%, 14 disagreement columns; bands 2 and 4 identical. Gloss A vs B word agreement 3/17 (17.6%);
+pass GB is L on every word but one, and doubts whether band 1's line is gloss at all.
+
+**Reconciliation (own look at the crops, before any decode):** band 1 col 7 -> A (a crossed 4, not 45); band 1 pos 15
+(A 1, B 8) -> 5 at M (same flagged shape as the 5 in "935"); band 3 tail -> A (full-line crop: B read digit tops
+from the L04 crops and took the clear word "b ei h" for figures); "54" overbar -> none (B confident). Gloss: every
+A word kept (both readers within edit distance 2, or unsettled -> A); no A word sits over clear text by both passes
+and the crop; B-only "m" (over clear) not added. So the gloss input is pass A's, and the figure input changes by one
+digit and one overbar. Files: `f38b/f38_figures.tsv`, `f38b/f38_gloss.tsv`.
+
+**Score: `f38b/align_f38.py` (cmp-identical copy of `align_f38.py`, run in `f38b/` with `keys -> ../keys`):**
+
+| | agreement 2M/(|D|+|G|) | p95 | max |
+|---|---|---|---|
+| target: no.25 decode vs gloss (reconciled) | **0.304** (M = 17; M/|G| = 0.233) | | |
+| shuffled gloss, 1000 | mean 0.247 | 0.324 | 0.393 |
+| shuffled key, 200 | mean 0.238 | 0.312 | 0.351 |
+| (FILS-F38, pass A only) | 0.309 | 0.327 / 0.306 | |
+
+**VERDICT (pre-registered): FAIL** -- below both p95s now. Rule 3 third-attempt clause: the second attempt changed the
+input genuinely (a second blind pass of each stream and a placed reconciliation) and no number moved toward the gate;
+the limit is the gloss itself (faint, struck through, all-L to two independent readers), not the passes. The f.38
+known-answer test by blind passes + `align_f38.py` is retired (untestable by this method at this legibility), not a
+key negative: the f.35r statistics (rank 1/201, z 5.04) and the NV-03 f.38v positive control are untouched. A third
+attempt needs new material (a clear copy of no.32, or the owner reading the gloss) or a different instrument, never a
+third machine pass. No reading, key or grade on f.35r moves, so `decode_f35.py`, AUDIT.md (N4) and SO-NV02-F35 are
+unchanged.

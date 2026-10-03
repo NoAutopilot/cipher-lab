@@ -1,0 +1,23 @@
+# fr.3416 f.38 interlinear gloss, RECONCILED (A1B-FILS-F38B, 3 Oct 2026): pass A (../f38_gloss.tsv) + pass GB (passB_gloss.tsv). Every word kept by rule 3 (both read it within edit distance 2, or unsettled on the crop -> pass A form); no A word is placed over clear text by both passes and the crop; B-only "m" (band 3, over clear) not added; crossed-out words stay crossed. Result: the gloss input equals pass A.
+band	segment	x_fraction	word	confidence	alternatives
+1	s1	0.14	Lecq.	M	Lecq~ / Letq.
+1	s1	0.26	..	L	two dots, possibly a gloss mark
+1	s1	0.30	7	L	figure 7 in the gloss band
+1	s1	0.31	dabz	L	Pdabz / dabe
+1	s1	0.52	97.	M	figure 97. in the gloss band
+1	s1	0.65	aminitie	M	amintie / amitie
+1	s1	0.92	asseurement	L	aspermect / assrmect (continues to s2 0.10)
+1	s2	0.62	seruira	M	seruiron / feruira
+1	s2	0.80	lou	L	lon / son / ou
+2	s1	0.15	laultre	H	lautre~
+2	s1	0.57	Cas	L	Ceo / Ces
+2	s2	0.37	#abbeuille	L	#nabbeuille / #nobleuille (over interlinear 54 in clear text)
+3	s1	0.86	#..aroyt	L	#sauroit / #paroyt (same word as s2 0.05)
+3	s2	0.35	garde	L	gaud~ / guerre (smudged)
+3	s2	0.47	rupture	L	reppellee / ruptur~ (smudged)
+3	s2	0.58	#Bou...	L	#Boule~ / #Bourg~ (crossed out)
+4	s1	0.15	#.....	L	crossed-out word(s), illegible
+4	s1	0.33	le	M	li / ti
+4	s1	0.38	duc	M	dud~
+4	s1	0.43	de	M	d~
+4	s1	0.47	Kefalluna	L	Retelluna / Rethellois / Rotsellana

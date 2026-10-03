@@ -1,0 +1,13 @@
+# fr.3416 f.38 figure lines, RECONCILED (A1B-FILS-F38B, 3 Oct 2026): pass A (../f38_figures.tsv, FILS-F38) + pass FB (passB_figures.tsv), rules in NOTES.md "A1B-FILS-F38B pre-registration". tools/reconcile_passes.py A vs B (B's "01" = 8): agree 97/111 = 87.4%, 14 disagreement columns; bands 2 and 4 agree in full.
+# settled from crops: band 1 col 7 (B extra 5) -> A, the glyph is a crossed 4; band 1 col 15 (A 1 alt '-', B 8) -> 5 (M), same crossed-flag shape as the 5 in "935"; band 3 cols 13-34 -> A from a re-cut full-line crop (iiif_lines.py --centres 790, scratch): B read the tail from digit tops in the L04 crops and took the clear word "b ei h" as figures; band 2 run 2 "54" overbar (A tentative, B none H) -> none (B confident).
+band	run	digits	overbar_positions	uncertain
+1	1	935214386752853579436245741412458642	-	14:5|1|8,15:3|2,26:4|#,33:8|01,34:6
+1	2	9	-	-
+1	3	0	-	0:-
+1	4	6794	-	-
+2	1	393294867548143576	-	12:8,16:5
+2	2	54	-	-
+3	1	641942	-	4:9|0
+3	2	594575675486	-	2:9|0|8,9:5|3|2
+3	3	367465563942	-	3:7|1,12:2|42
+4	1	74183293451459	-	4:8|01

@@ -1,0 +1,25 @@
+# fr.3416 f.38 interlinear gloss, pass GB: one blind Sonnet read of images/f38g_L01-L04_s1/s2.jpg, crops only, no key, no pass A (A1B-FILS-F38B, 3 Oct 2026). Verbatim.
+band	segment	x_fraction	word	confidence	alternatives	over
+L01	s1	0.14	Lieg.	L	Lecq./Lieq.	figures (9352)
+L01	s1	0.37	7	L	-	figures (2143)
+L01	s1	0.40	Dabr	L	Dalr/Dabz	figures (0143)
+L01	s1	0.52	97.	L	-	figures (7520)
+L01	s1	0.67	amiente	L	amiéte/amienke	figures (3579)
+L01	s1	0.90	asp.	L	asph	figures (6245)
+L01	s2	0.10	asp.muct	L	aspmeet	figures (6245)
+L01	s2	0.62	seruira	L	serura/senura	figures (1642)
+L01	s2	0.82	ou	M	on	figures (9.0.)
+L02	s1	0.15	Lauttre	M	Lautre/Laultre	figures (3932)
+L02	s1	0.58	Cav	L	Cas/Can	figures (7541)
+L02	s2	0.37	#pre.abuilles	L	(struck, faint, 2 words?)	clear (qui-)
+L03	s1	0.12	m	L	(small, above blotch)	clear (fils il)
+L03	s2	0.34	gach.royalles	L	(grey smudge)	figures (586b)
+L03	s2	0.57	#Bonce.	L	(struck through, long line)	figures (3674)
+L04	s1	0.14	#..........	L	(struck, blotted)	figures (741c)
+L04	s1	0.34	ti.Dieu.d.K.fadlara	L	(partly struck)	figures (7410)
+# Reader notes: all low confidence; crops faint; could not cleanly separate gloss from the clear lines above.
+# L01: the y=90 line "Lieg.. 7 Dabr 97. amiente asp.muct seruira ou" most plausible gloss but larger/darker than a typical gloss, may be clear text.
+# L01 s2: "asp.muct" starts in the overlap with s1 "asp.".
+# L02: "Lauttre" and "Cav" small words above digit runs; "pre.abuilles" struck or underlined, over clear text.
+# L03 s1: no identifiable gloss. L03 s2: grey smudge and long struck "Bonce..." uncertain, deleted gloss or deleted clear word.
+# L04: struck word(s), then "ti. Dieu. d. K.fadlara" above "74 1c"; L04 s2 no gloss.

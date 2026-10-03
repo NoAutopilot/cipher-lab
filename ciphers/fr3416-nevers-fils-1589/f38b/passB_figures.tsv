@@ -1,0 +1,11 @@
+# fr.3416 f.38 figure lines, pass FB: one blind Sonnet read of images/f38g_L01-L04_s1/s2.jpg, crops only, no key, no pass A (A1B-FILS-F38B, 3 Oct 2026). Verbatim (the reader writes the secretary 8 as "01").
+band	run	digits	overbar_positions	uncertain	confident(H/M/L)	context
+L01	1	93521453016752018357943624574141245016 42	-	3:5|s; 10:3|b; 12:6|b; 24:6|b; 14-16:01|8	L	Line start, no clear text before. Runs on into R2 after "42".
+L01	2	9	-	-	M	Dot-separated ("42 . 9 . 0 . 6794").
+L01	3	0	-	-	M	Dot-separated, between dots.
+L01	4	6794	-	3:9|7	M	Dot-separated. The line ends here at the right edge of s2, with no clear text after it.
+L02	1	3932940167548143576	-	7:0|8; 8:1|b; 13:8|b(1)	M	Starts after a leading dot. Followed by the clear words "Je ayd[e] qui-".
+L02	2	54	-	-	H	Clear-text figure in "qui- 54 de S. ..." (probably a plain number, not a cipher run).
+L03	1	6419425945750754480669501405105944	-	1:6|b; 20:0|6; 22-23:66|be; 28:0|6; 33:0|6; 36-37:44|42	L	Follows "...biz d". Merged with L04 s2's top row; L03 s2 bottom reads the tail "3614655639 92", L04 s2 top "5014051059 44"; L04 version used.
+L04	1	74101329345 1459	-	5:1|8	M	Follows "...Dieu d. Ketchlora" (gloss above). Followed by clear "bayl l. bys / dadrys ...".
+# Reader notes: low-medium confidence; no overbar clearly seen (flag strokes on L01 pos 3, L02 pos 11 may be overbars); 6 as "b", 8 as "a1"/"01"; 0/6 and 5/3 genuinely ambiguous at the L03 seam; L03 positions 20-24 ("0 6 b e 9") 4-6 digits, high uncertainty.
