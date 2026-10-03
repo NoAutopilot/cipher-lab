@@ -1326,6 +1326,23 @@ gloss; C+M 396, 141), canvas 51 61 settled groups (C 13, 10; C+M 52, 20); no tok
 Hosts: none (images on disk). Vision: 4 Sonnet subagent calls (canvas 50: 30 line crops each, canvas 51: 6 each) + this worker's
 reconciliation (1 stacked zoom read of 7 crops, plus 2 page overviews and 4 overlay reads to set centres). No credentials.
 
+## A2-COL16 (account 2, LANE-A2PUSH2, 3 Oct 2026): anchor-split pairing of the cleared units against control B
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-col16.md`. Intake gate at start: `colbert26-lathuillerie-1644: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. Scripts only, disk only, no images, no network.
+
+**Pre-registration (rule 3), written and pushed before the script's first run.** Script `siblings/anchor_split.py` (docstring is the
+full registration). Units: f.23 (word pairs, interlinear/f23w_pairs.tsv), canvas 32, 33, 35-36, 39-40, 47, 48, 49, 50 -- each cleared
+its own length-matched control; canvas 30 and 51 are never read. Anchors: key_f23 C codes that score in the ordered greedy walk
+(c5051_test.py's walk). Spans: interior only, between two consecutive anchors; eligible if 1-3 non-C codes and 1-12 gloss letters.
+Statistic S: per non-anchor code, max over letter n-grams g (length 1-4) of (distinct units whose spans containing the code contain g)
+minus 1, floored at 0, summed over codes; secondary S_exact (k = 1 spans, identical text) reported, not gating. Control B: same anchors
+and spans, span texts permuted among eligible spans of equal letter length pooled across units, 2000 draws (the score depends on which
+text meets which code, so it can differ; spans in a length class of one are counted and printed). Gate: PASS iff S > p95 of control B
+and P < 0.05. Merge rule: only cleared units are read; on PASS candidates go to a separate key_f23_anchor.tsv, C where >= 2 cleared units
+agree on a unique best n-gram, else M; key_f23.tsv and key.tsv untouched. On FAIL: logged FAIL, first attempt with this instrument
+(not [retired]).
+
 ## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, A2-COL11, A2-COL12, A2-COL13, A2-COL14, A2-COL15, 3 Oct 2026)
 
 Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing leaves 0 (sorted by system, A2-COL5: 17 two-digit like f.23, 2 mixed like f.24; siblings_sort.tsv).
