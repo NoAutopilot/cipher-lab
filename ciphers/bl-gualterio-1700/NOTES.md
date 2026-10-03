@@ -220,3 +220,11 @@ Requests: searcharchives.bl.uk 33 (10 catalog JSON records, 12 search JSON, 11 c
 ciphermysteries.com 1 (WebFetch site search), WebSearch 6.
 
 `python3 tools/intake_gate_check.py bl-gualterio-1700` after both sections (3 Oct 2026, GF-A2-11): `bl-gualterio-1700: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
+
+## Next step (costed, CS-BATCH5, 3 Oct 2026)
+
+Re-read of the verdict and premise check above, with no new search (both were completed 3 Oct 2026 and gate exit 0). Cheapest next step: send the REQUEST.md question to the BL (owner-side email, ~USD 0 agent cost) asking for the folio list of the leaves still in cipher, then a ~USD 3 transcription batch on one pilot volume once images or a copy arrive. Status unchanged (`open`).
+
+## While waiting
+
+Fetch Add MS 20582 (the cardinal's key book) scope text and the Stuart Papers calendar entries for the Vernon group from the BL catalogue JSON already on disk (`bl_catalogue_2026-10-03.tsv`) and list which correspondents have a period key named; depends on nobody (~USD 0.5).

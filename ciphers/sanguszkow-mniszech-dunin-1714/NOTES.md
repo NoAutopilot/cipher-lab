@@ -69,3 +69,15 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 22-23 Sept 2026 (updated 30 Sept)
 - Note: their target folder not cited in our NOTES.md (catalogue item 280 is)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Re-check (CS-BATCH5, 3 Oct 2026)
+
+WebSearch (standard) `Mniszech Dunin 1714 cipher Sanguszko archive letter deciphered`: results were HistoCrypt papers (papal cipher 1721, Brougham 1724), Augustus II ciphers and unrelated Dunin namesakes; none names this letter. Solver diffs of 3 Oct 2026 (sources/solver-diffs/2026-10-03-bourdeau.tsv, -aymeloglu.tsv) match this item as before (Bourdeau class b: R7524 "separate, still unread numerical system"; Aymeloglu: DECODE harvest listing only). No image exists online per the holding record ("No scans / photos"), so no edition or leaf was read and the status stays `blocked`. Premise check: (a) folder mentions no decipherment: not found; (b) Bourdeau's potocka1714 working files: not opened here (his page cited above only); (c) neighbours: unreachable, no scans; (d) recipient-side Polish edition: not located.
+
+## Next step (costed)
+
+Open Bourdeau's targets/potocka1714 folder and DECODE R7524's own thumbnail and metadata for the sender/recipient hand and sign set, ~USD 1; then copy order to Archiwum Narodowe w Krakowie for the 1714 Mniszech letters, owner-side.
+
+## While waiting
+
+Read Bourdeau's potocka1714 NOTES.md (public, MIT/CC BY) to see whether R7524's numeral system shares signs with the recovered Potocka alphabet; depends on nobody (~USD 1).

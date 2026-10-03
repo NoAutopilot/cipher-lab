@@ -143,3 +143,11 @@ Consequence for later work (not a novelty claim): before any money goes on a cop
 ## Verdict (CS-A2-F, 3 Oct 2026)
 
 `open`, now with a web and blog check and a premise check. Search results only; no decipherment or edition of these registers was located by this worker in the sources above.
+
+## Next step (costed, CS-BATCH5, 3 Oct 2026)
+
+Re-read of the verdict and premise check above, with no new search (both were completed 3 Oct 2026 and gate exit 0). Cheapest next step: send the REQUEST.md question to the BL (owner-side email, ~USD 0 agent cost) asking for the folio list of the leaves still in cipher, then a ~USD 3 transcription batch on one pilot volume once images or a copy arrive. Status unchanged (`open`).
+
+## While waiting
+
+Search Barberini-side nunciature editions (Vatican Barb. lat. series, the one family premise (d) left unsearched) by full text for "Sacchetti" with "cifra"; depends on nobody (~USD 0.5).

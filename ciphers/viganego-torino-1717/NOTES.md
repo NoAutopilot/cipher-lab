@@ -58,3 +58,15 @@ WebSearch (standard) on the envoy/secretary, place, year and "cifra/cifrario" in
 (a) Folder's own NOTES.md/REQUEST.md: no decipherment, gloss, clear copy or attachment mentioned. Not found. (b) Solver working files: no file for this item in either repository. Not found. (c) Physical neighbours / facing page: no image exists or was reachable (copy-order). Unreachable. (d) Recipient-side editions: not located by this worker's searches. Not found (not an edition read).
 
 Hosts this pass: de-crypt.org 17 (no login, shared run), github.com 2 clones (shared), archiviodistatogenova/torino 2 attempts each failed, WebSearch 1 for this target.
+
+## Re-check (CS-BATCH5, 3 Oct 2026)
+
+WebSearch (standard) `Viganego abate inviato Genova Torino 1717 cifrario Archivio segreto Materie politiche`: hits were the ASGe inventory PDFs (31_Trattati_202008.pdf, 34_ArchivioSegreto202003.pdf, listed only, not opened: ASGe host reset twice on 2 Oct and not retried here), memoriedigitaliliguri.it (an extract PDF, not opened) and unrelated cipher papers; none names Viganego, the mission or a cipher. No printed edition of these dispatches was located or opened by this worker, so the status stays `blocked`. Premise check (a)-(d) as of CS-A2-B (2 Oct 2026) still stands; nothing new in (a)-(c); (d) recipient-side (Savoy/Turin) edition: not located.
+
+## Next step (costed)
+
+Send the existing REQUEST.md (ASGe items 246, 249, 254) to ASGe; ~USD 0 agent cost, owner-side email, then ~USD 3 for a first transcription batch if the images come. Cheaper in the meantime: one retry of the ASGe PDF fetch from a fresh container, ~USD 0.2.
+
+## While waiting
+
+Open `memoriedigitaliliguri.it` extract PDF from the 3 Oct search and read it for a Viganego mention (one request, ~USD 0.3); depends on nobody.
