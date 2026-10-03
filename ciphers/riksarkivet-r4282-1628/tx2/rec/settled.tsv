@@ -1,0 +1,38 @@
+line	col	A	B	verdict	sign	conf	note
+p1_L01	3	-	b	B	b	H	b visible between i and boxed square
+p1_L01	16	A	L	A	A	M	looped fish alpha, not lambda
+p1_L03	20	t	p	B	p	M	p with crossed descender, same as col 8
+p1_L05	6	-	l	B	l	H	l after f, before lambda
+p1_L05	13	-	l	B	l	M	l after colon, start of l7Sp
+p1_L05	33	n	S	A	n	M	blotted sign cancelled, n interlined above as correction
+p1_L06	22	S	5	B	5	M	x-height 5, not tall long s
+p1_L11	37	l	-	A	l	H	l between mu and lambda
+p1_L12	34	t	f	A	t	M	crossed t, no descender
+p1_L13	36	4	-	B	-	H	image reads phi 4 5 4 5 t 5, no third 4
+p1_L14	22	L	A	A	L	M	lambda after r
+p1_L16	15	a	-	B	-	M	mu followed directly by 5; no separate a seen
+p1_L17	24	S	f	A	S	M	long s, no crossbar
+p1_L17	37	A	L	B	L	M	lambda with small cross stroke, no alpha loop
+p1_L18	10	-	o	A	-	H	single theta-shaped 8 between 44 and epsilon
+p1_L23	33	5	8	A	5	M	5 after delta
+p1_L24	13	E	-	B	-	H	clear Latin: expensas (factum magnas admodum expensas)
+p1_L24	14	p	-	B	-	H	clear Latin expensas
+p1_L24	15	t	-	B	-	H	clear Latin expensas
+p1_L24	16	M	-	B	-	H	clear Latin expensas
+p1_L24	17	S	-	B	-	H	clear Latin expensas
+p1_L24	18	a	-	B	-	H	clear Latin expensas
+p1_L24	19	b	-	B	-	H	clear Latin expensas
+p1_L24	20		-	B	-	H	clear Latin expensas, final s
+p1_L25	16	8	b	B	b	M	inked-over b with looped ascender, possibly corrected
+p1_L25	22	-	7	B	7	H	7 between l and q
+p1_L25	36	S	g	B	g	L	blotted sign with descender loop; g or overwritten
+p2_L01	1	S	-	B	-	H	only one sign before f
+p2_L01	2		f	B	f	L	heavy struck-through f-like sign, possibly a deletion
+p2_L03	16	a	D	B	D	M	d with upright ascender, cf col 4
+p2_L03	33	A	D	A	A	M	alpha, stroke crosses diagonally
+p2_L04	16	p		A	p	L	blotted struck sign, m interlined above (cf p1_L05 33)
+p2_L04	18	m	-	A	m	H	superscript m correction present
+p2_L04	25	A	D	A	A	M	alpha, diagonal crossing stroke
+p2_L04	36	A	D	A	A	M	alpha, diagonal crossing stroke
+p2_L07	13	8	3	A	8	L	8 with open upper loop, 3-like
+p2_L07	15	-	q	B	q	H	q between 4 and 7

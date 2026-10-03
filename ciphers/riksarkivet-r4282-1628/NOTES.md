@@ -709,17 +709,59 @@ M-grade eye reads of the tables (rule 2).
 Requests: de-crypt.org 42 (login page, submit, 9 RecordsView pages, 31 PDFs; 1.7 s apart), one login; no other host.
 Vision calls: 5 image reads (two contact sheets, three crop stacks).
 
-## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, 3 Oct 2026)
-Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
-- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); the last 9 (GAPS32, 3 Oct 2026): 4293, 4295 (digits and struck reciprocal alphabet), 4297, 4308, 4312 tested, no set reaches its permutation p95 (shares of permutations >= real 0.17-0.97); 4309 = the 4275 alphabet; 4322 word list, 4329 two-digit table: inapplicable; 4323 one shared sign (non-test); all 16 sign key records now checked, none fits; next: a second blind transcription pass (see next gap), then homophonic annealing on the measured transcription, ~$5
-- transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
+## GAPS38-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
 
-## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, GAPS32, 3 Oct 2026)
+Verdict step run: "second blind transcription pass on R4282's two pages". Intake gate: `riksarkivet-r4282-1628: open
+(line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Images.** One DECODE login (`tools/decode_browser_login.js 4282 OUT --guess-fullsize --max-files 8`) served the
+full-size page PDFs (real scans, not the forbidden placeholder): I25746 (2465x3609, letter p.1) and I25747 (4917x3895,
+spread; cipher letter = left page). sha1s and URLs in `tx2/source_manifest.json`; PDFs not committed.
+
+**Crops (pasted).** `python3 tools/iiif_lines.py --image p25746-000.jpg --region 800,40,1665,2800 --out tx2/crops
+--prefix p1 --debug` -> 25 lines (pitch 109); `python3 tools/iiif_lines.py --image p25747-000.jpg --region
+560,40,1900,950 --out tx2/crops --prefix p2 --debug` -> 7 lines (pitch 115). Same line counts as Bourdeau's pass;
+debug overlay checked by eye.
+
+**Pass B.** Two Opus subagent calls (one per page, line crops only, the sign inventory of Bourdeau's header given,
+his transcription withheld): `tx2/passB_p1.tsv` 859 signs, `tx2/passB_p2.tsv` 230 signs, 31 graded M/L.
+`tools/reconcile_passes.py tx2/passA_bourdeau.tsv tx2/passB_opus.tsv` (A = Bourdeau's single pass, as committed):
+**agreement 1065/1102 = 96.6%, i.e. 3.4% two-reader disagreement** (37 columns), under the one-tenth line, so no
+look-alike pass and no sorter rows were needed (TRANSCRIPTION.md). Worst line p1_L24 (0.60): see below.
+
+**Reconciliation.** One Opus call settled the 37 columns from the crops (`tx2/rec/settled.tsv`): 14 to A, 23 to B,
+0 other, 4 at L confidence (p1_L25 col 36 g/blot, p2_L01 col 2 struck f, p2_L04 col 16 blotted p under interlined m,
+p2_L07 col 13 8/3). `tx2/apply_settled.py` (`--check` exits 0) writes **`tx2/ciphertext_reconciled.tsv`: 1,090 signs,
+34 distinct, H 1049 / M 36 / L 5**. Against it Bourdeau's pass differs by 2.1% (1078/1101) and the blind pass by 1.3%
+(1077/1091). These are err_2reader figures (two readers plus an image-settled reconciliation), not err_true: no
+BENCHMARK-TX item exists for this hand.
+
+**Findings that change the transcription.**
+- p1_L24: the eight signs Bourdeau gave after the clear phrase ("E p t M S a b ?") are the clear Latin word
+  *expensas*: the phrase reads "factum magnas admodum expensas" (reconciler, H), not "[tractatus magnas admodum]" plus
+  cipher. Eight non-cipher signs leave the stream; this is the single largest correction.
+- 13 single-sign omissions/additions and 16 sign identities settled (e.g. p1_L13 one 4 too many in Bourdeau's
+  "45454t5"; p1_L01, L05 x2, L25 and p2_L07 signs he dropped).
+- Open, not settled here: two scribal corrections (a blotted sign with a letter interlined above, p1_L05 col 33 and
+  p2_L04 col 16) are recorded differently (corrected letter at p1_L05, struck sign + interlined m at p2_L04) and need
+  one convention; p1_L25 cols 25-27 may be "M n n u" where both passes read "M n u" (reconciler's note, not changed).
+  These three positions are the owner-sorter candidates if a later step needs them; they do not block annealing.
+
+Grades: none claimed (rule 4; transcription only, no reading). Vision calls: 2 blind page passes + 1 reconciliation
+(plus 3 preview/debug image views by the worker). Requests: de-crypt.org 9 (login page, submit, RecordsView/4282,
+3 thumbnails, 3 full-size PDFs; 1.5 s apart), one login; no other host.
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, GAPS38, 3 Oct 2026)
+Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; 4275 (GAPS27, 3 Oct 2026) a German Mainz 1634 graphic-sign key, 4 sure shared signs / 81 tokens (7 with ambiguous pairs / 157), no fit vs control (strict real -4.792 vs permuted mean -4.467, 0.66 of permutations >= real; wide -3.880 vs -3.707, 0.67); 4305 (GAPS30, 3 Oct 2026) pp.2-4 a capital-letter name nomenclator (CLAVIS), no alphabet, test inapplicable; 4263 (GAPS30, 3 Oct 2026) a 1650 Sternberg graphic-sign + numeric key, 5 sure shared signs / 121 tokens (9 with ambiguous pairs / 221), no fit vs control (strict real -3.746 vs permuted mean -3.358, 0.99 of permutations >= real; wide -4.017 vs -3.550, 0.99); the last 9 (GAPS32, 3 Oct 2026): 4293, 4295 (digits and struck reciprocal alphabet), 4297, 4308, 4312 tested, no set reaches its permutation p95 (shares of permutations >= real 0.17-0.97); 4309 = the 4275 alphabet; 4322 word list, 4329 two-digit table: inapplicable; 4323 one shared sign (non-test); all 16 sign key records now checked, none fits; second blind pass done (GAPS38, 3 Oct 2026: tx2/ciphertext_reconciled.tsv, 1,090 signs, err_2reader 3.4%); next: homophonic annealing on tx2/ciphertext_reconciled.tsv with a matched control (same N 1,090, K 34, Latin la18, homophonic design) first, ~$5
+- transcription reliability - blocker: open-codes; second blind pass on R4282 done (GAPS38, 3 Oct 2026): 96.6% two-reader agreement (37 of 1,102 columns), reconciled from the crops to 1,090 signs (H 1049 / M 36 / L 5), Bourdeau differs from it by 2.1% (8 of those signs are the clear word "expensas"); err_2reader only, no benchmark item for this hand; 3 positions (two interlined corrections, one possible extra n) left for the owner sorter if a decode ever turns on them; the R4284 key-test leaf still has only Bourdeau's single pass
+
+## Escalation (FT4, 3 Oct 2026; updated GAPS, GAPS27, GAPS30, GAPS32, GAPS38, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
 - [x] known-keys: all 16 letter/graphic-sign key records of the Chifferklaver II set checked (GAPS, GAPS2, GAPS3, GAPS4, GAPS27, GAPS30, GAPS32, 3 Oct 2026), plus R4284 crib leaf (bRIK) and R4280/R4281 (FT4): partial sign overlaps only, no fit vs permutation control on any
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
-- [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
-- [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
+- [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing on tx2/ciphertext_reconciled.tsv (GAPS38) with matched control, ~$5
+- [ ] image-check: R4282 two pages done (GAPS38, 3 Oct 2026, 3.4% two-reader disagreement, reconciled); the R4284 key-test leaf still single-pass
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: second blind transcription pass on R4282's two pages (tools/iiif_lines.py --image on the DECODE full-size images, two passes + reconciliation, measured error vs Bourdeau), ~$5
+Verdict: keep going: 2 internal gaps; cheapest next: homophonic annealing on tx2/ciphertext_reconciled.tsv (1,090 signs, K 34) via tools/family_run.py --family homophonic, matched control (N 1,090, K 34, la18) first, ~$5
