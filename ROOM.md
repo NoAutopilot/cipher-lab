@@ -6759,3 +6759,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 09:26 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-RAA12 na-raad-azie-1800 -- last commit none; unfinished: NA 2.01.27.03 invnr 207/144 item-page and scan check
 2026-10-03 09:27 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: LANE-A2PUSH2 (lane, account 2) -- last commit 2d73ce471; unfinished: refill loop after wave 5 and own handoff (written for it in STATUS.md c92db36c1); WORK-QUEUE row marked interrupted
 2026-10-03 09:27 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-HAR3 harley-287-1587 -- last commit none; unfinished: none left (gloss pairs since done by A2-HAR6/A2-HAR7 b0ef9801, 587ad9a2)
+2026-10-03 09:27 | CLOSEOUT-A2 (account-3 in-session worker) | closed-interrupted: A2-HAR5 harley-287-1587 -- last commit eb8b231bc (run_align.py prereg, orphan resolved by a6442f53 + 587ad9a2); unfinished: none left
