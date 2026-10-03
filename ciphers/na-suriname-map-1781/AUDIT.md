@@ -557,3 +557,11 @@ wording; none). GAPS37 wrote "re-class pending a separate verifier" as rule 10 a
 and excluded n->m with a stated reason. One gap in method, not an over-claim: the solver cited newly whole words as support but did
 not tabulate chosen-vs-swapped per token; done above. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 06:5x UTC) and
 none is added: the class is N1 (provisional), below N3. No CONTRIBUTIONS or outreach.
+
+[GAPS45-na-suriname-map-1781, solver, account-4, 3 Oct 2026 -- item 4 propagation note, not a verifier pass.] No reading
+change. (1) At the current M+U 0.169, the GAPS22 rate-matched gate still PASSes 7/7 with the shuffled-target check clear.
+The half-M-right sensitivity still FAILs, 3/7 folds (judge/ratematch_gaps45/), so the caveat this item weighs stands.
+(2) A same-hand n|m call (prereg c93d24e2, 1 blind call, gate PASS on 15 plain-letter refs) puts all 17 [u-dots] with the
+sheet's plain dotted ÿ (the key's N sign), and none with plain m. The n->m mismatches against 2078 are therefore the
+encipherer's own use of the N sign for m, not a misread sign. The reading keeps n. H 540 C 7 M 61 U 50, --check exit 0,
+GAPS23 gate 0.752 unchanged. Re-class (if any) stays a separate verifier's.

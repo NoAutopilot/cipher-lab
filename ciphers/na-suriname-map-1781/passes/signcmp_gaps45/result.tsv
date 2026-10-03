@@ -1,0 +1,36 @@
+FORM F1: y-shape with two dots above (diaeresis y): two short downstrokes joined at the base, right stroke continuing into a descender that curls/hooks left below the line; two dots above. Same shape in cipher runs and in plain words.
+FORM F2: two-hump minim letter (n-shape), x-height only, no descender, no mark above.
+FORM F3: three-hump minim letter (m-shape), x-height only, no descender, no mark above.
+query	line	body	descender	mark_above	form	form_conf	located	note
+#1	L05	y-shape	curl	dots	F1	0.9	sure	between 7 and a; dots visible
+#2	L05	y-shape	curl	dots	F1	0.9	sure	first sign after "b,"; dotted y
+#3	L07	y-shape	curl	dots	F1	0.95	sure	3rd letter of plain "huys" (huÿs)
+#4	L07	two-hump	none	none	F2	0.95	sure	final letter of plain "den"
+#5	L07	three-hump	none	none	F3	0.95	sure	2nd letter of plain "Ambagts"
+#6	L07	two-hump	none	none	F2	0.95	sure	final letter of plain "van"
+#7	L08	three-hump	none	none	F3	0.95	sure	3rd letter of plain "Kamer"
+#8	L08	y-shape	curl	dots	F1	0.9	sure	first sign after "i,"
+#9	L08	y-shape	curl	dots	F1	0.9	sure	after "3 ∆ l"; dotted y
+#10	L08	y-shape	curl	dots	F1	0.9	sure	after "4∆xλ3o", before hash
+#11	L08	three-hump	none	none	F3	0.9	sure	plain section label "m," before "4#k"
+#12	L09	y-shape	curl	dots	F1	0.85	sure	between hash and f-loop
+#13	L09	y-shape	curl	dots	F1	0.95	sure	plain "bootehuÿs"
+#14	L09	y-shape	curl	dots	F1	0.95	sure	plain "Vaartuÿgen"
+#15	L10	y-shape	curl	dots	F1	0.8	approx	"paÿ7l" after s-dot a; dots faint
+#16	L10	y-shape	curl	dots	F1	0.9	sure	after "4xpr", before hash
+#17	L11	y-shape	curl	dots	F1	0.95	sure	after "&", dots clear
+#18	L11	y-shape	curl	dots	F1	0.9	sure	"b∆ÿ3o"
+#19	L12	y-shape	curl	dots	F1	0.9	sure	between 5 and 5 ("ʃ5ÿ5#k")
+#20	L13	two-hump	none	none	F2	0.95	sure	plain "berging", 6th letter
+#21	L13	two-hump	none	none	F2	0.95	sure	final letter of plain "van"
+#22	L13	three-hump	none	none	F3	0.95	sure	first letter of plain "materialien"
+#23	L13	y-shape	curl	dots	F1	0.95	sure	plain "gevangenhuÿsen"
+#24	L13	two-hump	none	none	F2	0.95	sure	first letter of plain "nog"
+#25	L13	two-hump	none	none	F2	0.95	sure	final letter of plain "een"
+#26	L14	y-shape	curl	dots	F1	0.9	sure	"#gtÿ∆g"
+#27	L15	y-shape	curl	dots	F1	0.9	sure	first sign of line
+#28	L15	y-shape	curl	dots	F1	0.9	sure	"oÿ∆xb" near line end
+#29	L17	y-shape	curl	unclear	F1	0.85	sure	final letter of plain "Smeederÿ"; dots faint/unclear
+#30	L18	y-shape	curl	dots	F1	0.9	sure	right after the MM monogram
+#31	L18	y-shape	curl	dots	F1	0.9	sure	first sign after "δ."
+#32	L19	y-shape	curl	dots	F1	0.9	sure	"λÿ∆ψ" before v-tall

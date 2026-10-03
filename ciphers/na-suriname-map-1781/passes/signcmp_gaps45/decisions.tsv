@@ -1,0 +1,33 @@
+query	line	pos	class	form	form_conf	located	mark_above	action
+#1	2077_L05	10	cipher	F1	0.9	sure	dots	n H(kept)
+#2	2077_L05	15	cipher	F1	0.9	sure	dots	n H(kept)
+#3	2077_L07	4	ref-y-dots	F1	0.95	sure	dots	none
+#4	2077_L07	6	ref-n	F2	0.95	sure	none	none
+#5	2077_L07	12	ref-m	F3	0.95	sure	none	none
+#6	2077_L07	14	ref-n	F2	0.95	sure	none	none
+#7	2077_L08	1	ref-m	F3	0.95	sure	none	none
+#8	2077_L08	3	cipher	F1	0.9	sure	dots	n H(kept)
+#9	2077_L08	29	cipher	F1	0.9	sure	dots	n H(kept)
+#10	2077_L08	48	cipher	F1	0.9	sure	dots	n H(kept)
+#11	2077_L08	53	ref-m	F3	0.9	sure	none	none
+#12	2077_L09	11	cipher	F1	0.85	sure	dots	n H(kept)
+#13	2077_L09	25	ref-y-dots	F1	0.95	sure	dots	none
+#14	2077_L09	30	ref-y-dots	F1	0.95	sure	dots	none
+#15	2077_L10	7	cipher	F1	0.8	approx	dots	none
+#16	2077_L10	27	cipher	F1	0.9	sure	dots	n H(kept)
+#17	2077_L11	10	cipher	F1	0.95	sure	dots	n H(kept)
+#18	2077_L11	23	cipher	F1	0.9	sure	dots	n H(kept)
+#19	2077_L12	37	cipher	F1	0.9	sure	dots	n H(kept)
+#20	2077_L13	7	ref-n	F2	0.95	sure	none	none
+#21	2077_L13	8	ref-n	F2	0.95	sure	none	none
+#22	2077_L13	10	ref-m	F3	0.95	sure	none	none
+#23	2077_L13	13	ref-y-dots	F1	0.95	sure	dots	none
+#24	2077_L13	15	ref-n	F2	0.95	sure	none	none
+#25	2077_L13	16	ref-n	F2	0.95	sure	none	none
+#26	2077_L14	6	cipher	F1	0.9	sure	dots	n H(kept)
+#27	2077_L15	0	cipher	F1	0.9	sure	dots	n H(kept)
+#28	2077_L15	47	cipher	F1	0.9	sure	dots	n H(kept)
+#29	2077_L17	3	ref-y-dots	F1	0.85	sure	unclear	none
+#30	2077_L18	3	cipher	F1	0.9	sure	dots	n H(kept)
+#31	2077_L18	14	cipher	F1	0.9	sure	dots	n H(kept)
+#32	2077_L19	26	cipher	F1	0.9	sure	dots	n H(kept)

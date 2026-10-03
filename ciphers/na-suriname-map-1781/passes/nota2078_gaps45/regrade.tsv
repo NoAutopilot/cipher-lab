@@ -1,0 +1,16 @@
+pair	line	pos	value	grade	aligned_2078	ctx_ok	value_ok	action
+77q-78b	2077_L10	66	?	U	e	yes	yes	APPLY
+77q-78b	2077_L11	17	i	M	i	yes	yes	APPLY
+77q-78b	2077_L11	21	k|i	M	k	no	yes	keep
+77u-78d	2077_L12	35	i	M	i	no	yes	keep
+77u-78d	2077_L12	40	?	U	a	no	yes	keep
+77u-78d	2077_L12	47	p	M	i	yes	no	keep
+77r-78k	2077_L11	40	i	M	j	no	no	keep
+77r-78k	2077_L11	41	?	U	u	no	yes	keep
+77r-78k	2077_L11	46	?	U	n	no	yes	keep
+77r-78k	2077_L11	61	i	M	h	no	no	keep
+77r-78k	2077_L11	64	p	M	v	yes	no	keep
+77t-78n	2077_L12	21	?	U	f	no	yes	keep
+77p-78c	2077_L10	44	f	M	f	no	yes	keep
+77p-78c	2077_L10	45	e	M	e	no	yes	keep
+77p-78c	2077_L10	46	c	M	c	no	yes	keep
