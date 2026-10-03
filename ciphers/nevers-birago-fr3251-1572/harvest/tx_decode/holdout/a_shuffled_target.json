@@ -1,0 +1,113 @@
+{
+ "f144r": [
+  {
+   "seed": 100,
+   "rank": 2,
+   "z": 2.57329315499369,
+   "n_ge_printed": 1,
+   "gate_a": "FAIL"
+  },
+  {
+   "seed": 101,
+   "rank": 5,
+   "z": 2.040540131411666,
+   "n_ge_printed": 4,
+   "gate_a": "FAIL"
+  },
+  {
+   "seed": 102,
+   "rank": 2,
+   "z": 2.867701746741071,
+   "n_ge_printed": 1,
+   "gate_a": "FAIL"
+  },
+  {
+   "seed": 103,
+   "rank": 1,
+   "z": 2.843569792352769,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 104,
+   "rank": 3,
+   "z": 2.350881815847757,
+   "n_ge_printed": 2,
+   "gate_a": "FAIL"
+  }
+ ],
+ "f168": [
+  {
+   "seed": 100,
+   "rank": 1,
+   "z": 3.636200981746365,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 101,
+   "rank": 2,
+   "z": 2.8017441953096074,
+   "n_ge_printed": 1,
+   "gate_a": "FAIL"
+  },
+  {
+   "seed": 102,
+   "rank": 1,
+   "z": 3.2397564582886123,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 103,
+   "rank": 1,
+   "z": 3.015858665502193,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 104,
+   "rank": 1,
+   "z": 3.2153570587250973,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  }
+ ],
+ "f117": [
+  {
+   "seed": 100,
+   "rank": 1,
+   "z": 4.004886619462768,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 101,
+   "rank": 1,
+   "z": 3.5231950353036745,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 102,
+   "rank": 2,
+   "z": 3.0885782299703033,
+   "n_ge_printed": 1,
+   "gate_a": "FAIL"
+  },
+  {
+   "seed": 103,
+   "rank": 1,
+   "z": 4.651626354605952,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  },
+  {
+   "seed": 104,
+   "rank": 1,
+   "z": 4.117144946086872,
+   "n_ge_printed": 0,
+   "gate_a": "PASS"
+  }
+ ]
+}
