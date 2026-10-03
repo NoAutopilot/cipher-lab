@@ -115,3 +115,40 @@ one unread monograph). Before ordering, a single targeted check of Williams's *C
 print check and should happen before any copy order, per rule 2 (image over transcription) and the access
 playbook's edition-first instruction. Not batched into REQUEST.md this session (brief scope: record findings
 and stage only).
+
+## Web and blog check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `Newcastle Carteret 1743 cipher letter "Munchberg" spy` -- only TNA catalogue pages C9188861/C9188928
+and unrelated American-Revolution cipher pages. (2) `"SP 87/13" cipher Newcastle Carteret Dettingen` -- TNA catalogue pages for
+SP 87/13/18, 66, 76, 85 and neighbours (C9188897, C9188909), SP 87/24/33 (1748, a different pair), Walpole's Letters (no cipher
+content for these items). (3) site-restricted to **Cipherbrain** (scienceblogs.de), the **Cryptiana blog** (cryptiana.blogspot.com)
+and **Cipher Mysteries** (ciphermysteries.com), `Newcastle Carteret cipher 1743` -- no post on this cluster; Cipher Mysteries hits
+are unrelated (Mauritian shipwrecks, La Buse, 17th-century memes); no comment thread names these items, so none to read. (4)
+`Newcastle to Carteret ciphers Dettingen campaign 1743 decipherment "most secret"` -- battle pages, Bourdeau's index page; the
+search engine's summary pointed at a Bourdeau 24 Sept 2026 note on a 1743 code letter London to J. G. von Ilten (Hanover papers,
+a different correspondence and archive), not SP 87/13. No decipherment of SP 87/13/18, 76 or 85 found on the open web.
+
+## Premise check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md and REQUEST.md mention no decipherment, gloss or clear copy;
+"'101' [undeciphered]" is the cataloguer's note on an agent's code-name, not on the letters' cipher (see Source). (b) Other solvers'
+working files: **not found** -- no SP 87/13 or Munchberg folder in Bourdeau's or Aymeloglu's repository (25 Sept clones, above); the
+Bourdeau 1743 Ilten letter is a different item. (c) Physical neighbours: **unreachable as images** (SP 87/13 not digitised); by
+catalogue, no item in piece 13 carries "deciphered" (23 and 25 Sept sweeps above). (d) Recipient's side: **not found** -- Carteret's
+side of the correspondence is summarised in Basil Williams, *Carteret and Newcastle* (1943, archive.org lending-only
+`carteretnewcastl0000will`), now searched by this worker via be-api full-text search (3 Oct 2026; no page numbers on this route):
+"Munchberg" 0 hits, "cipher" 0, "cypher" 0, "spy" 0; positive controls "Dettingen" 1 hit (5 snippets) and "most secret" 1 hit
+(Newcastle's "'most secret and particular' postscript", Andrew Stone as recipient of his "most secret confidences") -- the book
+discusses the private channel but prints no cipher or decipherment of these items by these terms. This narrows, not closes, the
+standing Williams gap (a page read stays for a person). Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH10)
+
+Waits on: the TNA page copy of SP 87/13/18, 76, 85 (REQUEST.md, ASKS row 57).
+
+- S: be-api full-text search for "Munchberg" across the HMC reports and Yorke's *Life of Hardwicke* (archive.org, no login) -- the
+  one free print route not yet run; tools/print_check.py with a phrases.txt naming "Munchberg" does it.
+
+Requests this pass (3 Oct 2026): be-api.us.archive.org 6 (>=1.6 s apart). WebSearch 4.
+
+Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp87-newcastle-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no Web and blog check section). `tools/next_steps.py --wait-only | grep sp87-newcastle-1743`: no line.
