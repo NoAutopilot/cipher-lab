@@ -200,3 +200,34 @@ the route).
 (d) Recipient side: Heinsius is the recipient and the edition read is his own correspondence edition (Deel 18 p.95
 this pass; Deel 19 pp.302-303, 337 by the 24 Sept sweep). Sender-side Swedish or Dutch-envoy print not searched this
 pass. Not found.
+
+## GAPS109-rumpf-vandebie-heinsius-1716-19 (3 Oct 2026, account-4)
+
+Step run: H1 follow-up (1), the Nationaal Archief originals of letters 309 (H.A. 2030) and 446/455 (H.A. 2044),
+plus one look at follow-up (3), DECODE 2818. Stale check: the availability half of (1) was already done by csHU2
+on 24 Sept 2026 (Verdict section above, with the NA 1.04.02 inv. 1 positive control) and the copy order is
+already ASKS row 46 / `REQUEST.md` (priority 4 of the consolidated Heinsius-circle request in
+`ciphers/borssele-heinsius-1714/REQUEST.md`). This pass only re-probed it, in case anything had been digitised since.
+
+- **NA 3.01.19 inv. 2030** (`www.nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/2030`, fetched 3 Oct 2026
+  12:4x UTC): the embedded `drupal-settings-json` viewer record reads unittitle "Rumpf, Hendrik Willem-, uit
+  Stockholm.", `"scans":[]`, `"availability":"PHYSICAL"`. **Not digitised.**
+- **NA 3.01.19 inv. 2044** (same route): unittitle "Bie, Jacob de-, uit Hamburg, Lübeck en Stockholm.",
+  `"scans":[]`, `"availability":"PHYSICAL"`. **Not digitised.**
+- So nothing was fetched through service.archief.nl IIIF, there are no new images and no vision call was made. The
+  route to letters 309/446/455 is still the copy order (ASKS row 46, REQUEST.md), unchanged.
+- **DECODE 2818**: its metadata is already on disk from the 28 Sept 2026 login-free key crawl
+  (`sources/decode/keys-na-p59-128-2026-09-28.tsv`, `keys-all-2026-09-28-merged.tsv`), so no new DECODE request was
+  made. Row: status N/A, record type **Key**, holder "The Hague, Nationaal Archief, collection 1.10.29 Familie
+  Fagel, inv. nr. 5345", shelfmark code `NA_1.10.29._F.F._inr.1233_cipher_van_Rumpf_1743`, date 1743-1743, 25 pages,
+  no cleartext or plaintext language given. The record contradicts itself: the holder field says inv. nr. **5345**
+  but the shelfmark code says **inr.1233**, so the Fagel inventory number has to be checked before anyone orders or
+  probes it. Nothing in the metadata names which Rumpf it is, so it is still not shown to be this correspondent's
+  system. Its images and documents sit behind DECODE's account gate (not tried, per the brief).
+
+Next cheap step, not run (outside this brief): read the NA 1.10.29 item pages for inv. 5345 and 1233 (the same
+`drupal-settings-json` check, 2 requests) to settle which number holds the "cipher van Rumpf 1743", whether it is
+digitised and whose cipher its unittitle says it is. If it is a digitised Rumpf key, it is the first key-material
+lead for letter 142, the one instance already in print.
+
+Requests: `www.nationaalarchief.nl` 2 (2 s apart, descriptive User-Agent). DECODE 0. No subagents, no vision calls.
