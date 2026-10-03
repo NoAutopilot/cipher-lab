@@ -33,7 +33,11 @@ Inputs (formats found in the repo, detected per file):
               becomes 'value1|value2' (auto-graded M, per the ambiguous-value rule below) rather than one file's
               row silently overwriting the other's.
   exceptions  TSV, one row per position that overrides the key: line (and folio), pos|position|index, value (or the
-              column named by exceptions_value_column), optional grade (else exception_grade), reason.
+              column named by exceptions_value_column), optional grade (else exception_grade), reason. By default an
+              exception on a low-confidence sign is still downgraded to M like any other token; with
+              'exception_grade_overrides_conf': true in decode.json the exception's own grade stands (use it only when the
+              exception rows record the image evidence that settled the sign, e.g. a blind check with matched decoys;
+              3 Oct 2026, BIR-OPEN).
 
 Grades (rule 4): the key row's grade, or H; M when the sign's confidence is in uncertain_conf (or it carries '?'),
 when the value is ambiguous ('a|b'), or when the key row's source is in m_sources or its note contains an m_words
@@ -352,8 +356,10 @@ def grade_tokens(recs, key, exc, votes, job):
             continue
         k, row = (r['folio'], r['line'], r['pos']), key.get(r['sign'])
         v = row['value'] if row else None
+        exc_kept = False
         if k in exc:
             v, g = exc[k]
+            exc_kept = bool(job.get('exception_grade_overrides_conf')) and k in exc
         elif v is None or v in unknown_values or (job.get('unknown_if_q') and '?' in v):
             v, g = uv, ug
         elif row['source'] in m_sources or any(w in row['note'] for w in m_words):
@@ -371,7 +377,7 @@ def grade_tokens(recs, key, exc, votes, job):
                 g = job.get('unvoted_grade', 'S')
         else:
             g = row['grade'] or dg
-        if g and g in 'HCS' and (r['conf'] in uncertain or '|' in v):
+        if g and g in 'HCS' and (r['conf'] in uncertain or '|' in v) and not (exc_kept and '|' not in v):
             g = 'M'
         r['value'], r['grade'], r['null'] = v, g, v in null_values
     return recs
