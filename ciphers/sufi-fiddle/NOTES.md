@@ -139,7 +139,7 @@ Requests: mizanproject.org 1 + 1 WebFetch, scienceblogs.de 1, klausschmeh.net 1,
 
 (a) Folder's own mentions of a decipherment or clear copy: none. bSUF3's reading-attempt.md is our own I-graded transliteration (no formula found; best M guess "baraka(t)" in L6). Cross-check from the Mizan essay: Harvard readers and Bulliet read "Muhammad" in line 5; reading-attempt.md lists no محمد and its L5 group 4 is مهيد (m-h-y-d), one letter from محمد -- a lead for the next reader, not a reading.
 (b) Other solvers' working files: none -- Bourdeau a list row only, Aymeloglu nothing, no DECODE record; Bulliet's own decades of queries (Schimmel, Frye, embassy staff, Leiden, Kawashima) produced no translation.
-(c) Physical neighbours: FIND (provenance, not a reading). Bulliet's Figure 1 is a second hand copy of the same seven lines, independent of the folder's image; and the "Blue Booklet" text bundle (Maranao, a similar hand, Bulliet's own possession) is the closest sibling material. Neither carries a translation of the violin lines.
+(c) Physical neighbours: FIND (provenance, not a reading). Bulliet's Figure 1 is a second hand copy of the same seven lines, independent of the folder's image [corrected by FT4-sufi-fiddle, 3 Oct 2026: NOT independent -- Figure 1 is a photograph of the same sheet; see the FT4 section below]; and the "Blue Booklet" text bundle (Maranao, a similar hand, Bulliet's own possession) is the closest sibling material. Neither carries a translation of the violin lines.
 (d) Recipient / owner side: the violin's owner was never identified (the instrument first went to Widener's Hebrew Division); Bulliet's query to Trimillos was open at Dec 2021, no published answer located.
 Result: no decipherment located; the language hypothesis has moved from Bulliet's 2014 "Maranao" (as relayed by Schmeh) to Tausug (Kawashima, 2021). Status stays open.
 
@@ -147,9 +147,42 @@ Result: no decipherment located; the language hypothesis has moved from Bulliet'
 
 **open (unchanged).** No published or accepted reading of the violin inscription in Bulliet's own 2021 essay (read in full), Cipherbrain no. 38 and its 6-comment thread, klausschmeh.net, Cryptiana, Cipher Mysteries, Apeiron, r/codes, DECODE listings, or either solver repository, searched 3 Oct 2026. Claimed-but-unaccepted: none (only script/language guesses: Arabic or Farsi, Kurdish, Maranao, Tausug).
 
-## While waiting (GF4-BATCH18, 3 Oct 2026)
+## FT4-sufi-fiddle (3 Oct 2026, account-4): Bulliet Figure 1 diffed against the folder copy
 
-Nothing here waits on a person. The zero-dependency step: fetch Bulliet's Figure 1 copy from the Mizan essay (mizanproject.org/wp-content/uploads/2021/12/Diviners-Handbook.docx-10.jpg), diff it sign by sign against the folder's hand copy (images/Suffi-Fiddle-614.png) to measure copyist disagreement, and check whether line 5 carries a محمد form on either copy -- before any further reading attempt, and with the language prior moved to Tausug.
+Step (GF4-BATCH18's While waiting): diff Bulliet's Mizan 2021 Figure 1 ("My copy of the violin inscription") sign by sign against `images/Suffi-Fiddle-614.png`.
+Fetch: mizanproject.org/wp-content/uploads/2021/12/Diviners-Handbook.docx-10.jpg, 2500x1301, sha1 2825b442...; the essay page states no licence, so the image is **not committed** (URL, sha1 and finding in `images/manifest.json` under `external_not_committed`).
+Crops (pasted commands, scratchpad output, not committed):
+```
+python3 tools/iiif_lines.py --image <scratch>/fig1.jpg --out <scratch>/fig1crops --prefix fig1 --centres 105,290,440,620,830,1000,1200 --max-width 2499 --overlap 0 --debug
+python3 tools/iiif_lines.py --image ciphers/sufi-fiddle/images/Suffi-Fiddle-614.png --out <scratch>/wincrops --prefix win --centres 36,78,112,158,202,245,288 --debug
+```
+(the tool's own autocorrelation found 5 and 6 lines; centres were set from the row-ink profile, 7 lines each.) Each Fig.1 line strip was paired above the same folder line at equal width; 2 vision reads (lines 1-4; lines 5-7 plus the top and bottom margins).
+
+**Result: Figure 1 is not an independent copy. It is a photograph of the same sheet** as the folder's image: every non-text mark recurs in place on both -- the "glue" arrow and crosshatch over line 3 mid-line and line 4's end, the "hard to read?" notes over line 3 and under line 2, the square bracket "[r]" with "?->" and "hard to read ->" on line 5, the bracketed final group with "?->" on line 6. Figure 1 is cropped above the "copied by ... Winter" caption, which the folder copy carries under line 7; the folder copy is the same sheet printed over prose (Bulliet calls it "my copy", 1968 or after).
+Sign-level comparison: 7/7 lines, 166 folder sign tokens (script count of ciphertext.txt, excl. OBSCURED/UNCERTAIN; bSUF's figure 165), **0 differing = 0.0 pct disagreement**, but this measures two images of one copy, not two copyists: it says nothing about copyist error against the violin. Per-line table: `fig1-diff/diff.tsv`. Numeric support (`fig1-diff/profile_corr.py`, column ink-profile correlation at best scale+shift): same line r mean 0.493 (min 0.307) vs mismatched-line control (42 pairs) mean 0.235 (max 0.546) -- separates on the mean, not on every pair (the folder image is 614 px, so the profile is coarse); the shared annotations are the decisive evidence.
+Disputed signs: none between the two images. One dispute against OUR transcription: L5 group 4, transcribed "mim ha ya dal" by bSUF, shows a mim loop in third position on Figure 1 (m-h-m-d, the name Muhammad Bulliet and the 1968 readers read in line 5). Recorded as a comment in `ciphertext.txt`; the row is not changed. Grade I.
+10 pct rule (Usage 6): disagreement 0.0 pct, under 10 pct -- but moot, since no second copy exists to disagree. What Figure 1 does give is the same copy at about 4x the resolution (2500 px vs 614 px), which is the better image for any re-transcription (resolving bSUF's pooled dot clusters b/t/th, j/h/kh, and the L5 g4 dispute).
+No decipherment attempted. Requests: mizanproject.org 2 (Figure 1, essay page for the licence), 2 s apart. Vision calls: 2 of 3.
+
+## Remaining gaps (FT4-sufi-fiddle, 3 Oct 2026)
+Read so far: 0 words read (only the name Muhammad in line 5 per Bulliet; not graded above I here).
+- independent copy of the violin text - blocker: needs-physical-access; the violin is unlocated (owner never identified, Bulliet 2021) and Figure 1 turned out to be the same sheet, so every image on record is one hand copy
+- transcription from the 2500 px Figure 1 - blocker: not-attempted; ciphertext.txt was read from the 614 px image with dot clusters pooled; next: one re-transcription pass of Figure 1 line crops per TRANSCRIPTION.md (pooled dots, L5 g4), 2 vision calls, ~$4
+- language identification (Tausug vs Maranao) - blocker: waiting-on R. D. Trimillos's reply to Bulliet; Kawashima ruled Maranao out and Bulliet's query on Tausug was pending at 31 Dec 2021 (Mizan essay, GF4-BATCH18)
+
+## Escalation (3 Oct 2026)
+- [n/a] siblings: no other inscription by this hand known; the Blue Booklet is a different text
+- [n/a] clear-pages: an inscription, no clear text beside it
+- [n/a] known-keys: not a cipher on present evidence; script reading, no key
+- [x] print: Bulliet's own 2021 essay read in full (GF4-BATCH18); its Figure 1 diffed here (FT4)
+- [n/a] key-rebuild: no key involved in a script reading
+- [ ] image-check: re-transcribe from Figure 1 at 2500 px (the not-attempted gap above)
+- [n/a] retry: no failed attempt with a changed knob to retry
+Verdict: keep going: 1 internal gaps; cheapest next: re-transcribe ciphertext.txt from Bulliet's Figure 1 line crops (dot clusters, L5 g4 Muhammad), ~$4
+
+## While waiting (FT4-sufi-fiddle, 3 Oct 2026)
+
+Nothing here waits on a person for the next step: the zero-dependency action is the re-transcription of Figure 1's line crops (Verdict above). Trimillos's reply on Tausug is the only outside wait. GF4-BATCH18's earlier While waiting step (diff Figure 1 against the folder copy) is done: same sheet, 0.0 pct disagreement.
 
 ## Intake gate (GF4-BATCH18, 3 Oct 2026)
 

@@ -21,6 +21,11 @@
 # Ambiguous dotted letters within one visual cluster (b/t/th, j/h/kh) are pooled as one type per
 # cluster since the dot count/position was not always resolvable at this resolution -- this
 # undercounts K somewhat; noted in NOTES.md.
+#
+# DISPUTE (FT4-sufi-fiddle (account-4), 3 Oct 2026; recorded, row below NOT changed): L5 group 4 'mim ha ya dal' --
+# Bulliet's Mizan 2021 Fig.1, a 2500 px photograph of this SAME sheet, shows the group's third sign as a mim loop
+# (m-h-m-d, the name Muhammad that Bulliet and the 1968 Harvard readers read in line 5). Grade I either way; a
+# re-transcription pass against Fig.1 settles it (fig1-diff/diff.tsv, NOTES.md).
 
 L1: ha waw lam | ha alif hamza | sin lam dal | waw | fa ghayn
 L2: ha ain | ta waw | lam kaf fa ta waw | dad ya-dotted | tha alif lam kaf fa | ghayn tha | ba tha | kaf ta lam | kaf ta dal | hamza ba ta | sin nun alif ba ain | shin fa ra ghayn | lam ba alif

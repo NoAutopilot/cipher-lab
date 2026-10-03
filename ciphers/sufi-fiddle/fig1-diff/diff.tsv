@@ -1,0 +1,13 @@
+# Bulliet Mizan 2021 Fig.1 vs folder copy images/Suffi-Fiddle-614.png, line by line (FT4-sufi-fiddle (account-4), 3 Oct 2026).
+# Method: tools/iiif_lines.py --image on both (--centres by row profile), paired strips at equal width, 2 vision reads; group shapes, dots and non-text marks compared in place.
+# groups/signs = the folder ciphertext.txt's own counts. match = every group of the line has the same shape at the same position on both images.
+line	groups	signs_folder	match	shared_non_text_marks	note
+L1	5	12	yes	none	identical stroke shapes incl. dot over final group
+L2	13	41	yes	"hard to read?" note under line (both)	same dot clusters on groups 6-7 (from right)
+L3	2+obscured	13	yes	glue arrow, crosshatch over mid-line, square bracket, "hard to read?" above (both)	obscured span identical
+L4	13	42	yes	crosshatch at line end with arrow (both)	obscured span identical
+L5	6	16	yes	bracket [r] with "?->" and "hard to read ->" (both)	group 4 reads as m-h-m-d (Muhammad) on Fig.1 at 2500 px; folder ciphertext.txt has mim ha ya dal -- transcription dispute in OUR file, not between copies
+L6	11	32	yes	final bracketed group with "?->" and arrow above (both)	
+L7	3	10	yes	"copied by ... Winter" caption below on folder copy only (outside Fig.1's crop)	
+# total: 166 folder sign tokens (script count of ciphertext.txt rows, excl. OBSCURED/UNCERTAIN; bSUF's NOTES figure is 165), 0 differing between the two images = 0.0 pct disagreement; but both are images of ONE copy, so this measures image agreement, not copyist agreement.
+# numeric support (profile_corr.py): column ink-profile r, same line mean 0.493 (min 0.307) vs mismatched-line control (42 pairs) mean 0.235 (max 0.546) -- separates on the mean, not on every pair; the shared annotations are the decisive evidence.
