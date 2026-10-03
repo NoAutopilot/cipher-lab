@@ -6015,3 +6015,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:22 | CS-A2-E (account 2, LANE-A2PUSH) | claim: bl-farnese-cipher -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
 2026-10-03 00:22 | CS-A2-D (account 2, LANE-A2PUSH) | claim: bl-portugal-bombay-1661 -- check-solved + premise check; cap USD 4, box ends 01:07 UTC
 2026-10-03 00:24 | VERIFY-GRA (account 2, LANE-A2PUSH) | halfway: shape split re-checked by eye (20 crossed, 2 plain c agree); test_f30r_split reproduces exactly; 1000-draw reseeded control running; next AUDIT.md + SO row
+2026-10-03 00:24 | A2-RAA4 (account 2, LANE-A2PUSH) | halfway: na-raad-azie-1800 homophonic profile=target control 0.974 (0.954-1.000), at noise 0.03 0.942, at 0.06 0.800; target -866.0 decode identical to masc, unreadable; shuffle floors -1046/-1054/-1059; writing NOTES
