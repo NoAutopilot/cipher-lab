@@ -41,3 +41,10 @@ Data conflicts, rule 4 (not merged, not settled by majority):
 - two-dot 49: key no.71 Prouinces 49 = Champaigne. This supports the f.50r Champagne lead (held, its leaf tied its control). The f.51r "Roy" (L) is not supported.
 - 52 with two marks: key no.71 Prouinces 52 = Normandye. Agrees with f.62r Normandie (M).
 - barred 13: Royne de nauarre (key), against f.62r "Narre" (M) and Cabinet Noir's Henri de Navarre on usage. The gloss and the key agree on "Navarre", and the person is disputed.
+
+## GAPS-fr4715-vieuville-pool-15 (3 Oct 2026, account-4): key no.71 re-gated on an unseen known answer (second attempt)
+| Leaf | Family | CONTROL | TARGET | Status | Reason |
+|---|---|---|---|---|---|
+| pool word-codes | the same reconciled key no.71 file, scored against 8 Cabinet Noir sure values never used or printed by GAPS-14 (Motz '29 '51 '74 '84 '94 '97; persons ~15 ~37); gate pre-registered in witness/key71/PREREG2.md (0c411223, pushed before scoring); scripts/key71_regate.py | value permutation (40,320 exact) p95 2 (mean 0.50, max 4); random code (10,000) p95 0 (mean 0.047) | 4 match, 3 conflict, 1 absent: SHARE 4/7 = 0.571 | FAIL as registered (SHARE < 0.80; REAL 4 > both p95s) | of the 3 conflicts, 2 are the match rule's notation misses, seen only after scoring and not re-scored: '29 "on" vs key "lon" (= l'on), ~15 "le cardinal de Vendôme" vs key "C. de vendosme" (silent s). 1 is real: ~37 Langres (Cabinet Noir, gloss) vs key "D. de Mayenne" (35-36-37 braced) |
+Second attempt, as GAPS-14 was the first. Rule 3's third-attempt clause: the key is not re-gated a third time with this instrument, which is the reconciled transcription plus a token-subset match rule against a printed answer list. A further gate needs new material (the fr.4712 f.7r period interlinear pair, read from its image) or a different instrument (a second blind read of the key cells that no.44's six slots need).
+Data conflict, rule 4 (not merged): barred 37. Key no.71 gives D. de Mayenne (braced 35-37). Cabinet Noir's SÛR-G value is Langres, from a gloss. Their README already notes that Montholon's clerk departs from the key's name table (~13, ~25). Logged; not settled.

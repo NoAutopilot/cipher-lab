@@ -1099,9 +1099,55 @@ FAILs, so the job stops.** No no.44 slot was read from the key, and no grade was
 needed (no reading changed). The M-pair line is data: `49!=Champagne` is the normalizer missing the spelling
 Champaigne, and by eye the two-dot 49 is Champaigne. The real conflicts are logged in HYPOTHESES.md.
 
+## GAPS-fr4715-vieuville-pool-15 (3 Oct 2026, account-4): the Verdict step -- key no.71 re-gated on an unseen known answer
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, GAPS-14's Verdict step. Clock read 03:32-03:4x UTC.
+Disk only: no vision call and no Gallica request. One GitHub clone (Cabinet Noir v1.2.1, HEAD 47b6db9), and its key
+complements file is snapshotted unmodified in `sources/cabinet-noir/2026-10-03/` (CC BY 4.0, credited).
+
+**Guard against gate-shopping.** (1) The unseen set was fixed by rule before any score
+(`witness/key71/PREREG2.md`). It takes Cabinet Noir's `code`/`nom` rows at status SÛR whose proof does not cite key
+no.71, with a mark selecting one layer. It excludes every cell GAPS-14 used or printed (Motz 49, 93; persons 13, 14,
+27, 71), the unmarked 5, and the letter rows, which part B already scored. That leaves 8 items: Motz '29 '51 '74 '84 '94
+'97 and persons ~15 ~37. They are fair because their values come from period glosses and letter usage, not from the
+key leaf, and our key transcription was made blind to them. (2) The statistic and threshold were pushed in 0c411223
+before scoring: SHARE = matches / (matches + conflicts) >= 0.80, at least 6 of 8 scorable, and REAL above p95 of both
+controls. (3) Both controls can vary on the statistic's own axis: a value permutation (exact, 40,320) and a random code
+in the layer's range (10,000). (4) GAPS-14's numbers are printed beside the new ones.
+
+`python3 scripts/key71_regate.py` (output `witness/key71/regate_output.txt`), exit 3:
+```
+'29  SÛR (sens)  CN=on                      key71[mots 29]=lon             conflict
+'51  SÛR         CN=ses                     key71[mots 51]=-               absent
+'74  SÛR-G       CN=faict                   key71[mots 74]=faict           match
+'84  SÛR         CN=jour                    key71[mots 84]=Jour            match
+'94  SÛR         CN=quoy                    key71[mots 94]=quoy            match
+'97  SÛR         CN=rien                    key71[mots 97]=rien            match
+~15  SÛR-G       CN=le cardinal de Vendôme  key71[persons 15]=C. de vendosme  conflict
+~37  SÛR-G       CN=Langres                 key71[persons 37]=D. de Mayenne   conflict
+U REAL 4 match, 3 conflict, 1 absent | SHARE 4/7 = 0.571 | permutation (40320, exact) mean 0.500 p95 2 max 4 | random-code (10000) mean 0.047 p95 0 max 2
+GAPS-14 (first gate, on record): A 5/5 vs p95 3 / 1; B 25/33 = 0.758 < 0.80 (0 conflicts); FAIL
+GATE FAIL
+```
+| Gate | Known answer | Real | Controls (p95) | Threshold | Result |
+|---|---|---|---|---|---|
+| GAPS-14 A | 5 of our C glosses (seen) | 5/5 | 3 / 1 | >= 4 and > p95 | pass |
+| GAPS-14 B | Tomokiyo's 33 letter rows | 25/33 = 0.758 (0 conflicts) | 0.121 | >= 0.80 | FAIL |
+| GAPS-15 U | 8 Cabinet Noir sure values (unseen) | 4/7 = 0.571 (1 absent) | 2 / 0 | >= 0.80 and > p95 | **FAIL** |
+
+**As registered, the gate FAILs, so the job stops.** No no.44 slot was read from the key and no grade changed.
+`decode_key.py . --check` exits 0 (no reading changed). Read after scoring and NOT used to re-score: 2 of the 3
+conflicts are the match rule's notation misses. '29 "lon" is l'on, and ~15 "C. de vendosme" is the Cardinal de
+Vendôme with the period silent s. That is the PX-BRODEC shape (rule 3: two renderings in different conventions). Only
+~37 is a real disagreement: the key braces 35-37 as D. de Mayenne, while Cabinet Noir's gloss value is Langres. By
+eye, then, the reconciled key agrees with 6 of the 7 scorable unseen values, plus 5/5 glosses and 25/25 shared letter
+codes. That is data, not a pass. The key stays ungated for grading. This was the second attempt at gating it, so rule
+3's third-attempt clause retires this instrument for this hypothesis. The instrument is our reconciled transcription,
+scored by token-subset matching against a printed answer list. Logged in HYPOTHESES.md.
+
 ## Remaining gaps (CABNOIR, 3 Oct 2026; replaces the LIKELY-1 ... GAPS-13 list above, which stays as history)
 Read so far: no.44 8 of 27 cipher groups at H and 7 of 14 word-code occurrences at M (.7 x4, .71, .27, .25), plus .13 = Narre at M from f.62r; no.37 (604 + 308 letters decoded) is now covered by Cabinet Noir result no.9, so it is not counted as an open piece; 3 of 8 pool leaves covered in public (no.27, 35, 37)
-- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. next: a fresh pre-registration with the conflict-count letter statistic plus an unseen known answer (Cabinet Noir's published sure values, or the fr.4712 f.7r interlinear pair), scored on the reconciled file already on disk, then the six slots, no new image, ~$3
+- no.44's word-codes .03 x2, .07, .49, .57, .6 (6 occurrences) - blocker: open-codes; not glossed on no.21, no.28, no.37, no.39 or no.27 (GAPS-10 to -13). 3 Oct 2026 (GAPS-14): key no.71 (fr.3995 f.133r, f256) fetched, cut, read blind and reconciled (witness/key71/key71_reconciled.tsv). Its pre-registered gate FAILs on part B: letters 25/33 = 0.758 vs 0.80 (0 conflicts; 8 Tomokiyo homophones absent). Part A passes: C glosses 5/5 vs p95 3 / 1. So no slot was read from it. 3 Oct 2026 (GAPS-15): re-gated on 8 unseen Cabinet Noir sure values (PREREG2.md, 0c411223, before scoring): 4 match, 3 conflict, 1 absent, SHARE 4/7 = 0.571 < 0.80 (perm p95 2, random p95 0): FAIL as registered; 2 of the 3 conflicts are notation misses seen after scoring (l'on, vendosme), 1 real (~37 Mayenne vs Langres); not re-scored. [retired] instrument: reconciled key71 transcription + token-subset match against a printed answer list (rule 3, second attempt; no third). next: new material -- the fr.4712 f.7r period interlinear pair (Gallica btv1b9058289m view 15; Cabinet Noir cites 18 word-codes + 2 names) read from 1 native fetch + line crops, its glosses scored against key no.71 under a fresh pre-registration with a notation-normalized match rule written before reading, then the six slots, ~$4
 Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, the four L glosses, the no.35 native read). These leaves are read in public as Cabinet Noir results no.13, no.11 and no.9, so a reading of ours would be N0-type. No native read or decode job is run on them, and the queued no.35 f.58r step (~$10) is retired.
 - no.60 f.83r: Tomokiyo's "no.60" digit-code passages vs our 1000 px view of f.83r as a symbol alphabet - blocker: not-attempted; a data conflict, not a reading; next: one native fetch of the f.83r top block and a comparison with the passage Tomokiyo dumps for no.60, ~$2
 - the clear-French frame of no.44 (165 L words) - blocker: not-attempted; unchanged from GAPS-9; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
@@ -1110,9 +1156,9 @@ Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, 
 ## Escalation (CABNOIR, 3 Oct 2026)
 - [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 and no.60 seen at 1000 px; Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
 - [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
-- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Its registered gate FAILs on letter coverage (0.758 vs 0.80, 0 conflicts), and its glosses pass 5/5. Planned: re-gate on an unseen known answer (gap 1)
+- [ ] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Registered gate 1 FAILs on letter coverage (0.758 vs 0.80, 0 conflicts) with glosses 5/5; gate 2 on 8 unseen Cabinet Noir values (GAPS-15) FAILs 4/7 = 0.571 (2 of 3 conflicts notation misses, 1 real). The current instrument is [retired] under rule 3. Untried: the fr.4712 f.7r period pair as new material (gap 1)
 - [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
 - [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
 - [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
 - [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
-Verdict: keep going: 3 internal gaps; cheapest next: re-gate key no.71 (already transcribed, witness/key71/key71_reconciled.tsv) under a fresh pre-registration: letter conflicts on the shared codes plus an unseen known answer (Cabinet Noir's published sure values or the fr.4712 f.7r pair), then no.44's six open slots from it, ~$3 (GAPS-14, 3 Oct 2026: the first gate FAILed on letter coverage 25/33, 0 conflicts; the glosses passed 5/5)
+Verdict: keep going: 3 internal gaps; cheapest next: the fr.4712 f.7r period interlinear pair (1 native fetch, line crops, 1 vision call) as new material to gate key no.71 under a fresh notation-normalized pre-registration, then no.44's six open slots, ~$4 (GAPS-15, 3 Oct 2026: the second gate on 8 unseen Cabinet Noir values FAILed 4/7 = 0.571 as registered; the reconciled-transcription instrument is retired, rule 3)

@@ -1,0 +1,11 @@
+'29	SÛR (sens)	CN=on	key71[mots 29]=lon	conflict
+'51	SÛR	CN=ses	key71[mots 51]=-	absent
+'74	SÛR-G	CN=faict	key71[mots 74]=faict	match
+'84	SÛR	CN=jour	key71[mots 84]=Jour	match
+'94	SÛR	CN=quoy	key71[mots 94]=quoy	match
+'97	SÛR	CN=rien	key71[mots 97]=rien	match
+~15	SÛR-G	CN=le cardinal de Vendôme	key71[persons 15]=C. de vendosme	conflict
+~37	SÛR-G	CN=Langres	key71[persons 37]=D. de Mayenne	conflict
+U REAL 4 match, 3 conflict, 1 absent | SHARE 4/7 = 0.571 | permutation (40320, exact) mean 0.500 p95 2 max 4 | random-code (10000) mean 0.047 p95 0 max 2
+GAPS-14 (first gate, on record): A 5/5 vs p95 3 / 1; B 25/33 = 0.758 < 0.80 (0 conflicts); FAIL
+GATE FAIL
