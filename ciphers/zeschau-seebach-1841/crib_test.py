@@ -2,7 +2,9 @@
 """GAPS185 crib test (PREREG-GAPS185.md): does R5006 share R5005's two-digit pair profile, and do
 Bourdeau's 7 published gloss values (grade I, dbourdeau/cyphersolver, CC BY 4.0) occur in R5006 above chance?
 
-Usage: python3 crib_test.py [--check]   (--check exits 1 if crib_test.json is stale)
+Usage: python3 crib_test.py [--target r5007] [--check]   (--check exits 1 if the output json is stale)
+Default target r5006 -> crib_test.json (GAPS185). --target r5007 -> crib_test_r5007.json (PREREG-GAPS196: same
+statistics, seed 196, power windows of the target's own N, plus T1 against R5006 as a descriptive extra).
 """
 import json, math, random, sys
 from pathlib import Path
@@ -61,10 +63,21 @@ def spearman(x, y):
     return num / den if den else 0.0
 
 
+TARGETS = {"r5006": (("r5006p1_ciphertext.txt", "r5006p2_ciphertext.txt"), SEED, "crib_test.json"),
+           "r5007": (("r5007p2l_ciphertext.txt", "r5007p2r_ciphertext.txt"), 196, "crib_test_r5007.json")}
+
+
+def stream(files):
+    return "".join(l.split()[-1] for f in files
+                   for l in (HERE / "transcription" / f).read_text().splitlines() if l.strip())
+
+
 def main():
-    r6 = "".join(l.split()[-1] for f in ("r5006p1_ciphertext.txt", "r5006p2_ciphertext.txt")
-                 for l in (HERE / "transcription" / f).read_text().splitlines() if l.strip())
-    assert len(r6) == 692 and r6.isdigit(), len(r6)
+    tgt = sys.argv[sys.argv.index("--target") + 1] if "--target" in sys.argv else "r5006"
+    files, seed, outname = TARGETS[tgt]
+    r6 = stream(files)
+    assert r6.isdigit() and (tgt != "r5006" or len(r6) == 692), len(r6)
+    N = len(r6)
     off = json.loads((SRC / "offsets.json").read_text())
     r5_lines = []
     for l in (SRC / "ct_R5005.txt").read_text().splitlines():
@@ -73,7 +86,7 @@ def main():
             r5_lines.append((tag, d))
     r5_pairs = [p for tag, d in r5_lines for p in pairs(d, off.get(tag, 0))]
     c5 = counts(r5_pairs)
-    rng = random.Random(SEED)
+    rng = random.Random(seed)
 
     p6 = best_pairs(r6); c6 = counts(p6)
     phase = 0 if p6 == pairs(r6, 0) else 1
@@ -86,13 +99,13 @@ def main():
     pv = lambda t, nl: (1 + sum(x >= t for x in nl)) / (1 + len(nl))
     pc = lambda nl: sorted(nl)[int(0.95 * len(nl))]
 
-    # positive control: 692-digit windows of R5005 (stream in Bourdeau's line order) vs the rest of R5005
+    # positive control: N-digit windows (N=692 for R5006) of R5005 (stream in Bourdeau's line order) vs the rest of R5005
     s5 = "".join(d for _, d in r5_lines)
     hits, wt, wn = 0, [], []
     for _ in range(NWIN):
-        st = rng.randrange(0, len(s5) - 692)
-        w = s5[st:st + 692]; rest = counts(best_pairs(s5[:st])) if st > 1 else [0] * 100
-        r2 = counts(best_pairs(s5[st + 692:])) if len(s5) - st - 692 > 1 else [0] * 100
+        st = rng.randrange(0, len(s5) - N)
+        w = s5[st:st + N]; rest = counts(best_pairs(s5[:st])) if st > 1 else [0] * 100
+        r2 = counts(best_pairs(s5[st + N:])) if len(s5) - st - N > 1 else [0] * 100
         crest = [a + b for a, b in zip(rest, r2)]
         t = cos(counts(best_pairs(w)), crest); wd = list(w); nl = []
         for _ in range(NWDRAW):
@@ -115,12 +128,18 @@ def main():
         "top10_pairs_r6": sorted(((c6[i], f"{i:02d}") for i in range(100)), reverse=True)[:10],
         "top10_pairs_r5": sorted(((c5[i], f"{i:02d}") for i in range(100)), reverse=True)[:10],
     }
+    if tgt != "r5006":
+        out = {"target": tgt, "files": list(files), "seed": seed, **out}
+        c6ref = counts(best_pairs(stream(TARGETS["r5006"][0])))
+        out["descriptive_T1_cosine_vs_r5006"] = round(cos(c6, c6ref), 4)
+        out["descriptive_T1_null_mean_vs_r5006"] = round(sum(cos(counts(best_pairs("".join(rng.sample(r6, N)))), c6ref)
+                                                             for _ in range(NDRAW)) / NDRAW, 4)
     js = json.dumps(out, indent=1) + "\n"
-    f = HERE / "crib_test.json"
+    f = HERE / outname
     if "--check" in sys.argv:
         if not f.exists() or f.read_text() != js:
-            print("STALE crib_test.json"); sys.exit(1)
-        print("crib_test.json up to date"); return
+            print("STALE", outname); sys.exit(1)
+        print(outname, "up to date"); return
     f.write_text(js); print(js)
 
 
