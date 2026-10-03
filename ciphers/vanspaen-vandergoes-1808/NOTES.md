@@ -183,9 +183,9 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 
 Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
 - Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public; list in
-  images/na_2.01.08_281_scans.tsv, 119 viewed 3 Oct by FT4, FT4b, FT4c, GAPS26, not found; next 1-99 and 137-139) at thumbnail size to locate
-  the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
-  or a ministry gloss (premise (c)); (DECODE DocumentsList done 3 Oct, FT4c: 0 documents). S.
+  images/na_2.01.08_281_scans.tsv; GAPS34 located the target at scans 81-82 and 85, natives committed) -- match them
+  against Bourdeau's transcription, then find dispatches No 1-3 and 5 in scans 1-74 and read the clear January 1808
+  letters at 75-99 for a crib (premise (c)); (DECODE DocumentsList done 3 Oct, FT4c: 0 documents). S.
 
 ## FT4-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): locate the Jan 1808 leaves in NA 2.01.08 inv. 281
 
@@ -305,18 +305,52 @@ Step: the Verdict's cheapest step. Locate only; nothing transcribed or decoded. 
 - Requests: service.archief.nl 60 (19 + 4 header crops + 37), the session cap, 1.6 s apart, no 4xx/5xx;
   www.nationaalarchief.nl 0. Vision 3 (two contact sheets, one header sheet). Grade counts H 0, C 0, S 0, M 0, I 0.
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c and GAPS26, 3 Oct 2026)
+## GAPS34-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): inv. 281 scans 137-139 and 75-99; figure leaves located
+
+Step: the Verdict's cheapest step, batch 1 (137-139 + 75-99). Locate only; nothing transcribed or decoded. Status unchanged.
+- 102 IIIF views at `full/450,/0` (137-139, 75-99, 50-74, 25-49, 1-24 in that order), 1.6 s apart, all HTTP 200
+  image/jpeg. Only the first batch (28 scans, one contact sheet) was viewed: it held figure leaves, and the brief says
+  stop there. **Scans 1-74 were fetched but not viewed** (not committed; re-fetchable from the scan list).
+- **Figure leaves found: scans 81, 82 and 85.** Native size fetched once (5000 px wide), committed as
+  images/NL-HaNA_2.01.08_281_0081/0082/0085.jpg with images/manifest.json. Headers read from one crop sheet of the
+  tops of 81 and 85 (not a transcription):
+  - 81 (right page): "No 4" / "Dusseldorf, den 12 January 1808" / ministry docket "105 Ontv. 14 January 1808" /
+    "Hoog Edele Gestrenge Heer," then rows of figure groups (about 11 rows of 12, groups 2-4 digits, some with a
+    stroke, e.g. "729-"); 82 (left page) continues with about 6 rows, then a clear Dutch closing signed
+    "G.C. van Spaen". About 17-19 rows over two pages, as DECODE describes the letter (19 lines of figures).
+  - 85 (right page): "No 6" / "Dusseldorf, den 15 January 1808" / docket "136 Ontv. 18 January 1808" /
+    "Hoog Edel Gestrenge Heer," then 7 rows of groups, clear closing, signed van Spaen. Matches the one-page,
+    7-line annex of 15 Jan.
+  - So DECODE's "14 January" letter is most likely No 4, written 12 Jan and received 14 Jan (the docket date), and
+    its "annex" of 15 Jan is a separate numbered dispatch, No 6. Identity with Bourdeau's transcription is NOT yet
+    checked group by group (first groups seen: 81 row 1 "874. 729-. 821. 776. 826. 752. 1155. 956. 729-. 572. 58. 608.";
+    85 row 1 "270. 887. 841. 330. 374. 1075. 996. 623. 615. 442. 1076-. 217." -- read at reduced size, grade M,
+    for matching only). Shared groups between the two (602 441 373, 424, 996) are consistent with one code.
+- Neighbours in 75-99, all clear (no decipherment slip, no key sheet, no interlinear figures seen): 75-80 French and
+  Dutch letters of January 1808, 83 a French letter docketed "1?? Ontv. .. January 1808" signed van Spaen beside a
+  second signature, 84 a long French text, 86 and 88 blank, 87 a short French note signed van Spaen, 89-91 and 93-94
+  French and Dutch letters docketed January 1808 (91 Dutch, signed G.C. van Spaen), 97 Dutch "Wesel den 19 January
+  1808", 98-99 long letters (99 headed "Wesel ... January 1808"). 137-139: Wesel, March 1808, clear.
+- The numbering (No 4, No 6) shows a numbered Düsseldorf dispatch series: No 5 and No 1-3 (and any later numbers)
+  are sibling dispatches by the same writer to the same ministry, possibly partly in the same figures, and the clear
+  French/Dutch letters around them (83, 87, 89-94) are the obvious crib candidates for the same news. Not checked.
+- Total inv. 281 viewed now 147 of 360 scans (FT4 25, FT4b 25, FT4c 19, GAPS26 54, GAPS34 28 new incl. 137-139).
+- Requests: service.archief.nl 105 (102 at 450 px + 3 native), under the 110 cap, 1.6 s apart, no 4xx/5xx; no other
+  host. Vision 2 (one contact sheet, one header-crop sheet). Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read;
+  the two quoted first rows are for matching only).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26 and GAPS34, 3 Oct 2026)
 Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
-- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 119 of 360 inv. 281 scans
-- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; DECODE DocumentsList read 3 Oct 2026 (FT4c): 0 documents, 0 associated records, the "is solved" claim is an unsourced catalogue note; no decipherment seen in 119 of 360 inv. 281 scans
-- location of the target leaves in inv. 281 - blocker: not-attempted; 119 of 360 scans viewed (FT4 25, FT4b 25, FT4c 19, GAPS26 54, 3 Oct 2026), leaves not located; 100-159 is the Wesel commissioners' bundle Jan-mid-Mar 1808 in clear (GAPS26), 161-233 ministry-to-King and commissioners' material Feb-Mar 1808 in clear; next: IIIF 450 px views of the unviewed scans 1-99 and 137-139, contact sheets, ~$2 per 25-scan batch (~$8 for 102 scans), then 234-360
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 147 of 360 scans
+- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
+- identity check and the numbered sibling series - blocker: not-attempted; scans 81-82/85 not yet matched group by group to Bourdeau's letter_groups.txt/annex_groups.txt, and dispatches No 1-3 and 5 (siblings, possibly in the same figures) and scans 1-74 (fetched, not viewed) are unread; next: match the first and last row of each page against Bourdeau's transcription (no vision beyond the committed native images), ~$1, then view scans 1-74 at 450 px for No 1-3/5, ~$6
 
 ## Escalation (3 Oct 2026)
-- [n/a] siblings: no sibling letter in this code is identified anywhere
-- [ ] clear-pages: locate the leaves next to the target in inv. 281 (the gap above) for a clear draft or a ministry gloss
+- [ ] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; locate No 1-3 and 5 in inv. 281 (scans 1-74 unviewed) and check which are in figures
+- [ ] clear-pages: leaves 75-99 next to the target are clear January 1808 letters (83, 87, 89-94); read them for the same news as a crib, after the identity check
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
 - [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
-- [ ] image-check: native-resolution view of the target leaves once they are located in inv. 281
+- [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); a transcription check against Bourdeau's is the next use
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: inv. 281 IIIF 450 px views of scans 1-99 and 137-139 (102 unviewed), contact sheets, ~$2 per 25-scan batch, then 234-360
+Verdict: keep going: 1 internal gap; cheapest next: match scans 81-82 and 85 row by row against Bourdeau's letter_groups.txt and annex_groups.txt from the committed native images, ~$1, then scans 1-74 at 450 px for dispatches No 1-3 and 5, ~$6

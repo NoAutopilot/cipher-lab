@@ -1,0 +1,32 @@
+{
+ "source": "Nationaal Archief 2.01.08 inv. 281, service.archief.nl IIIF full/full, fetched 3 Oct 2026 06:2x UTC (GAPS34)",
+ "files": [
+  {
+   "file": "NL-HaNA_2.01.08_281_0081.jpg",
+   "scan": 81,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/049ad01e-5808-4784-862a-8b16a4978f0c.jp2/full/full/0/default.jpg",
+   "bytes": 951327,
+   "sha256": "56dff025fa2a9e4278613fd46aa5037a6ae744f1da21acfa19ed9fbf9d278b9e",
+   "size": "5000 px wide",
+   "what": "No 4, Dusseldorf den 12 January 1808, docket '105 Ontv. 14 January 1808'; clear salutation then figure groups (right page)"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0082.jpg",
+   "scan": 82,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/5495cc20-dbf9-4bec-8fc3-0f208e9b089c.jp2/full/full/0/default.jpg",
+   "bytes": 796880,
+   "sha256": "d56836f4e61fb3da4ff4ac734ee5b8e64416012fffe10a2b4965dd74f23f4a47",
+   "size": "5000 px wide",
+   "what": "continuation of No 4 (left page): figure groups, clear closing, signed G.C. van Spaen"
+  },
+  {
+   "file": "NL-HaNA_2.01.08_281_0085.jpg",
+   "scan": 85,
+   "url": "https://service.archief.nl/iip/iipsrv?IIIF=cb/81/cf/44/97/54/48/24/87/34/b9/2b/4a/c8/31/bf/6c180ffd-0d7c-479b-b156-9c447aea43b5.jp2/full/full/0/default.jpg",
+   "bytes": 940916,
+   "sha256": "aac265aa071cdf8cc2cacf76140419c4b90772c9be6ce62f8f5c7b104a0d4c1c",
+   "size": "5000 px wide",
+   "what": "No 6, Dusseldorf den 15 January 1808, docket '136 Ontv. 18 January 1808'; clear salutation then figure groups"
+  }
+ ]
+}
