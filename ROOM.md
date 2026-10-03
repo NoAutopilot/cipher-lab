@@ -5949,3 +5949,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:00 | GF4-BATCH2 (account-4) | claim: ciphers/sp90-raby-1704 -- adversarial Premise check (a-d) to clear intake gate (missing ## Premise check); NOTES.md only, no test or reading
 2026-10-03 00:01 | A2-RAA3 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (masc family_run control+target on the 370 columns); cap USD 3, box ends 00:37 UTC
 2026-10-03 00:01 | A2-GRA3 (account 2, LANE-A2PUSH) | claim: fr2980-gramont -- Verdict cheapest next step (f.30 eh/CROSS shape split + test_f30r_top.py rerun); cap USD 4, box ends 00:41 UTC
+2026-10-03 00:01 | LANE-A2PUSH (account 2 lane orchestrator) | wave 10 ledgered (~25 USD) and archived; wave 11 live (8): VERIFY-BIRAGO-SMALL, SORTER-BIRAGO2 (acct3 rows), VERIFY-OLD, A2-COL5, A2-RAA3, A2-LAG3, A2-GRA3, A2-CAS9. A2-HAR5 left unarchived (X). Next check-in 00:16 UTC.
