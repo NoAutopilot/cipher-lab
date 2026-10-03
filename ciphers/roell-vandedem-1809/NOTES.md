@@ -227,3 +227,41 @@ negative. Independent of that: the NA 2.01.08 EAD grep for the ministry's 1808-0
 
 Intake gate after this pass (`python3 tools/intake_gate_check.py roell-vandedem-1809`, 04:33 UTC 2 Oct 2026):
 `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+## Premise check (GF-A2-13, 3 Oct 2026)
+
+Worker GF-A2-13 (account 2, LANE-A2PUSH), 01:36-01:4x UTC. Gate-fix only; no key application, no transcription.
+(a) Decipherments the folder already mentions: **not found.** NOTES.md, HYPOTHESES.md and decode_transcription/
+README.md mention no decipherment, gloss or clear copy of R1469/R1470. Bourdeau checked all 13 DECODE pages "page by
+page" (his targets/roell1809/NOTES.md, "What the records hold"): "There is no interlinear, margin or separate
+decipherment. The only clear words are an opening 'Monsieur' (R1469) and a docket on R1470 p.1." The R1470 docket
+("? 69 Fermer? no? 9?" as DECODE read it) is the only unread clear-hand item; DECODE images are account-gated here,
+so not viewed by this worker.
+(b) Other solvers' working files: **not found.** Fresh shallow clone of dbourdeau/cyphersolver (3 Oct 2026),
+targets/roell1809/: NOTES.md, parse.py, R1469/R1470 group lists, na804/na988 scan lists, turk_inv.txt, profile.json
+-- no key file, no rendering, no apply-key script; his tests (DECODE keys, the Dedem 1788-93 code with its French
+cribs, Van Spaen 1808, Fagel 1804, alphabetical ordering) all negative. aaymeloglu/unsolved-ciphers: `dedem`/`1469`
+occur only in the raw DECODE catalogue files and in unrelated starhemberg-1758 numerals; no working file. Cited, not
+copied. Schmeh's 2013 Cipherbrain post and its two comments (read by LIKELY-7) give no solution; one more web search
+(`"Van-Gelder-Kryptogramm" OR "Van Gelder cryptogram" gelöst OR solved Dedem 1809`) returned no solved-list entry.
+(c) Physical neighbours: **unreachable for the letter itself, not found in the neighbouring files.** The letter's
+real NA location is unknown (DECODE's "1.02.04 ... inv. 804" is wrong on both counts, per Bourdeau and LIKELY-7),
+so its own facing pages and adjacent leaves cannot be viewed outside DECODE's gated images. Bourdeau viewed the
+nearest same-period files in 1.02.20 page by page: inv. 988 (Röell to Testa 1809-10, clear Dutch, no 9 Feb
+despatch), inv. 990 (Van Dedem to Testa 1809-11, clear French, "Monsieur"), inv. 980 (Testa to Van Dedem copies
+1808-11, copies of 10 and 26 Feb 1809, none of 9 Feb): no cipher, no decipherment.
+(d) Recipient side: **lead found, not reachable online.** NA 2.21.006.46 (Van Dedem van de Gelder's own papers,
+EAD fetched once, 3 Oct 2026, 94,937 bytes; grep for cijfer/chiffr/geheimschrift/ontcijfer/sleutel/Croiset/Röell:
+no hit). Its introduction states that Van Dedem left Constantinople "voor goed 26 December 1808, na Gaspard Testa
+tot chargé d'affaires aangesteld te hebben" -- so a 9 Feb 1809 French "Monsieur" letter fits Van Dedem (then at
+Bucharest) to Testa or Testa to Van Dedem, as Bourdeau proposed, better than a letter to an ambassador in post. The
+recipient-side files are inv. 73 "Brieven van Gaspar Testa aan Van Dedem van de Gelder. 1794-1811. 78 stuks", inv.
+73A "Bijlagen tot brieven van Gaspar Testa aan Van Dedem van de Gelder. 1809. 2 stuks", and inv. 78 "Brieven van
+Van Dedem van de Gelder aan Gaspard Testa te Konstantinopel. 1795-1815. 8 stuks". Only 2 items in the whole
+inventory carry a digitisation link (both unrelated: loose notes on Constantinople; protégés' petitions); inv. 73,
+73A and 78 have none (EAD, no dao), so not viewed. The two 1809 "bijlagen" (enclosures) to Testa's letters are the
+nearest place a deciphered copy, key or clear duplicate could sit. Next: a reading-room or scan request for NA
+2.21.006.46 inv. 73A (2 pieces) and the 1809 part of inv. 73; this is an owner-side copy order, not a cloud step.
+Result: no decipherment, key or plaintext of R1469/R1470 found; status line unchanged.
+Requests: www.nationaalarchief.nl 2 (EAD 2.21.006.46; item page 73A, which carried no availability field);
+WebSearch 1; github.com 2 shallow clones (shared with the other targets of this job).
