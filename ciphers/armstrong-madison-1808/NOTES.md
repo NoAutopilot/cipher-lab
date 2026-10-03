@@ -3785,3 +3785,32 @@ Requests: archives.nypl.org 2, discover.hsp.org 2, corsair.themorgan.org 2, rese
 balthazaar.masshist.org 5 (one a 403 from an empty URL of mine), abigail.masshist.org 1 (502), web.archive.org 2 (reset),
 archive.org 4. Verdict unchanged: `open`; next step for this row: the owner's desk browser for L27 (four catalogues + Bowdoin
 N-2059 contents at MHS reference if wanted).
+
+## Step H74 (3 Oct 2026, 19:26-19:32 UTC, ARM-H74 for LANE-ARM-B)
+
+H59's person-read pack rebuilt as a sign-sorter page (tools/sign_sorter.py), for the owner to settle the shorthand
+alphabet by sorting tiles instead of typing a TSV. Offline build, no model read of any sign.
+
+- Tiles: `h74/cut_tiles.py` (rule in its docstring: grey < 150 ink, 3x3 closing, 8-connected components, area >= 12,
+  darkest pixel < 80, width < 25 pct and height < 85 pct of the crop, centre within 50 px of the line's row-ink peak)
+  on the 28 shorthand-bearing lines of H58/H61's corrected mapping (page 2 by physical line: phys 2 = page2_L02,
+  3 = page2_L04, 6 = page2_L06, 10 = page2_L11, 1/4/7/11/13 = h58/crops; page2_L01/L03/L07/L10/L13 and page1_L03
+  left out). 997 tiles; count per line in `h74/lines.tsv` (22-66). Numerals are cut as well (several lines are mostly
+  numerals); joins and splits are left as cut for the BAD-CUT pile. Overlays checked on p1L09 and p2L11.
+- Starting piles: all '?'. Tomokiyo's 38-type labels could not seed any tile: h59/person_labels.tsv is still empty,
+  and B35's pass files and Tomokiyo's glyphs.txt give type sequences per line with no x positions, so matching them to
+  components would be a guess. In place of piles the page shows 24 provisional shape clusters (`--auto-clusters 24`,
+  page-local, never written to an atlas).
+- Check these first: the 22 tiles of page 3 line 13 (B35 crop 29, the readers' 94 pct disagreement line); the question
+  names B35's commonest splits (Tomokiyo 29/35, 10/14, 35/48).
+- Build: `python3 tools/sign_sorter.py --signs .../h74/signs.tsv --labels .../h74/labels.tsv --pages .../h74/pages.json
+  --title "Armstrong 1808 shorthand" --lede ... --focus .../h74/focus.tsv --auto-clusters 24 --out .../h74/sorter.html
+  --data-out .../h74/data.json` -> `h74/sorter.html` (4.0 MB) + `h74/data.json`; renders headless (browser_fetch.js
+  --shot). Folder about 8 MB.
+- Hand-off: not published here. The account-3 orchestrator publishes `h74/sorter.html` with capabilities {"db": {}},
+  with `h59/person_pack/tomokiyo_38_types.png` as a supporting file (the lede points to it). After the owner sorts,
+  export the db collections and run `tools/sign_sorter_apply.py --labels ciphers/armstrong-madison-1808/h74/labels.tsv
+  --db DIR --out ciphers/armstrong-madison-1808/h74/settled_labels.tsv`; those settled labels (tile sid + box in
+  signs.tsv) stand in for h59/person_labels.tsv as H60's known answer. ASKS row 92 updated in place.
+- Not done: no reading, no statistic, no class change. Suggestion (not run): a lighter page with numeral tiles pre-piled
+  if the owner finds the digits in the way, by excluding the numeral-group x-spans read from ciphertext_ms.txt.
