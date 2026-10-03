@@ -1,0 +1,13 @@
+project	match (regex over job id, role and claim text; first row that matches wins)
+Transcription standard	(?-i:TX-[A-Z]|BENCHMARK-TX|TRANSCRIPTION\.md|SORTER-)|glyph_atlas|tx_bench
+Birago	birago|ceppo|NEVBIR|F36|F47|NO87|CEPPO|guazzo
+Nevers vein	NV0|NV-|NEVERS-VEIN|fr3993-gonzague|fr3416-nevers|fr4715-evesque|fr4712-nevers
+Nevers (other letters)	fr4715|fr39[0-9][0-9]-|fr4687|vieuville|montholon|CABNOIR
+Tools and process	TOOL-|RETRO|tool_shelf|brief_price|account_usage|LEDGER|CLOSER
+Colbert 1644-48	colbert|A2-COL
+Florence 1430	florence|A2-FLO
+Suriname map 1781	suriname
+Ormond-Arran 1678	ormond
+State Papers (SP)	\bsp[0-9]+-|SP [0-9]+
+Clairambault	clair
+Gate fixes	GF4-BATCH|GF-A2|gate fix|check-solved

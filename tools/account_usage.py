@@ -48,7 +48,11 @@ def read(name, ref):
 
 def account_of(text):
     m = ACCT_RE.search(text)
-    return m.group(1) if m else None
+    if m:
+        return m.group(1)
+    if re.search(r'\bowner[- ]acc', text, re.I):  # the owner-account parent and its workers are account 1
+        return '1'
+    return None
 
 
 def live(text, now, hours=6):

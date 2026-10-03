@@ -1,7 +1,7 @@
 import { atom, read, update } from 'claude-code'
 import type { Register } from 'claude-code'
 
-import type { Usage } from '../types'
+import type { Board, Usage } from '../types'
 
 // Usage bars across the cipher-lab accounts (owner, 3 Oct 2026). Every session that loads this posts its own
 // account's real 5-hour / 7-day bars (account-wide: every session and subagent on the login is in them) to
@@ -12,6 +12,8 @@ const REPO = '/home/user/cipher-lab'
 const EVERY_MS = 5 * 60 * 1000
 const usage = atom({ plugin: 'cipher-lab-usage', key: 'usage' } as const, null as Usage | null)
 const error = atom({ plugin: 'cipher-lab-usage', key: 'error' } as const, '')
+const board = atom({ plugin: 'cipher-lab-usage', key: 'board' } as const, null as Board | null)
+const JOBS = 'cipher-lab-jobs'
 const lastPost = atom({ plugin: 'cipher-lab-usage', key: 'lastPost' } as const, '')
 
 const pct = (p: number | null) => (p === null ? '--' : `${Math.round(p)}%`)
@@ -39,12 +41,20 @@ const postOwn = async ($: any) => {
   return (r.stdout || r.stderr || '').trim().slice(0, 200)
 }
 
+const note = async ($: any, line: string) => {
+  await $.process.run(['python3', '-c', 'import sys,time;open(sys.argv[1],"a").write(time.strftime("%H:%M:%S ")+sys.argv[2]+"\\n")', '/tmp/cipher-lab-usage-mod.log', line], { timeoutMs: 10000 })
+}
+
 const refresh = async ($: any, alsoPost: boolean) => {
   if (alsoPost) {
     try {
+      const u = await $.session.usage()
+      await note($, 'rateLimits=' + JSON.stringify(u.rateLimits))
       const said = await postOwn($)
+      await note($, 'post: ' + said)
       await update($, lastPost, () => said)
     } catch (err) {
+      await note($, 'post failed: ' + String(err))
       await update($, lastPost, () => `post failed: ${String(err).slice(0, 150)}`)
     }
   } else {
@@ -60,6 +70,11 @@ const refresh = async ($: any, alsoPost: boolean) => {
   }
   const u = JSON.parse(r.stdout) as Usage
   await update($, usage, () => u)
+  const b = await $.process.run(['python3', 'tools/jobs_board.py', '--json', '--ref', 'origin/main', '--hours', '6'], {
+    cwd: REPO,
+    timeoutMs: 60000,
+  })
+  if (b.exitCode === 0) await update($, board, () => JSON.parse(b.stdout) as Board)
   await update($, error, () => '')
   $.ui.status(statusLine(u))
 }
@@ -68,6 +83,7 @@ export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     const started = await next(e)
     await $.command.register({ name: 'usage', description: 'Usage bars across the cipher-lab accounts' })
+    await $.command.register({ name: 'jobs', description: 'Jobs across the cipher-lab accounts, by project' })
     void refresh($, true)
     $.clock.every(EVERY_MS, () => void refresh($, true))
     return started
@@ -78,6 +94,43 @@ export const register: Register = on => {
     await $.ui.open({ id: PANE, title: 'Usage bars, all accounts' })
     const u = await read($, usage)
     return { text: u ? statusLine(u) : 'Usage pane opened.' }
+  })
+
+  on('command.run', { command: 'jobs' }, async $ => {
+    await refresh($, false)
+    await $.ui.open({ id: JOBS, title: 'Jobs by project, all accounts' })
+    const b = await read($, board)
+    const running = b ? b.projects.reduce((n, g) => n + (g.counts.running ?? 0), 0) : 0
+    return { text: b ? `${running} jobs running across ${b.projects.length} projects.` : 'Jobs pane opened.' }
+  })
+
+  on('ui.render', { component: 'Pane', requestId: JOBS }, async ($, e) => {
+    const { Box, Text } = $.ui.resolve(e)
+    const b = await read($, board)
+    if (!b) return <Text dimColor>Loading jobs...</Text>
+    const mark = { running: '▶', queued: '·', stale: '!', done: '✓' } as const
+    return (
+      <Box flexDirection="column">
+        <Text bold>Jobs by project, {b.utc} UTC (done in the last {b.hours} h)</Text>
+        {b.projects.map(g => (
+          <Box flexDirection="column" marginTop={1}>
+            <Text bold>
+              {g.project}  ·  {g.counts.running ?? 0} running · {g.counts.queued ?? 0} queued · {g.counts.done ?? 0} done
+              {g.counts.stale ? ` · ${g.counts.stale} stale` : ''}
+            </Text>
+            {g.jobs.slice(0, 8).map(j => (
+              <Text dimColor={j.state === 'done'} color={j.state === 'stale' ? 'yellow' : undefined}>
+                {mark[j.state]} {j.id}  ({j.account === 'next free' ? 'next free' : `acct ${j.account}`}
+                {j.start || j.end ? `, ${j.end || j.start} UTC` : ''}) {(j.state === 'done' ? j.summary : j.text).slice(0, 70)}
+              </Text>
+            ))}
+          </Box>
+        ))}
+        <Box marginTop={1}>
+          <Text dimColor>▶ running · queued ✓ done ! stale (claim over 6 h, no done). From ROOM.md + WORK-QUEUE.tsv.</Text>
+        </Box>
+      </Box>
+    )
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
