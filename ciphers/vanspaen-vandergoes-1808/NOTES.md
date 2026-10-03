@@ -515,18 +515,46 @@ Step: the Verdict's cheapest step. Disk only, no vision calls, no subagents, no 
   section, non-uniform spacing, two-part codes (no statistic for those exists without a crib match).
 - Grades: H 0, C 0, S 0, M 0, I 0 (no reading). Vision 0; subagents 0; requests 0.
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48 and GAPS54, 3 Oct 2026)
+## GAPS58-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): inv. 281, the last 139 unviewed scans
+
+Step: the Verdict's cheapest step (locate No 1 / No 5 or a key sheet in the unviewed scans of inv. 281). Locate only;
+nothing transcribed or decoded. Status word unchanged.
+- Viewed set checked on disk first (NOTES.md, not the brief): 221 of 360 viewed; the 139 unviewed were 197-215 (the
+  scans between FT4's every-4th sample), 234-259, 261-299, 301-339 and 341-360.
+- 139 IIIF views at `full/450,/0`, 1.6 s apart, all HTTP 200 image/jpeg (0 errors). Not committed (re-fetchable from
+  images/na_2.01.08_281_scans.tsv). Four labelled contact sheets (35/35/35/34 scans), four vision calls; no header
+  crops were needed, since nothing called for a closer look.
+- **No page of figure groups, no decipherment slip and no key sheet in any of the 139.** At this size a figure page
+  is unmistakable (spaced rows of short number groups, as on 81/82/85); none appears. What they hold:
+  - 197-205: numbered articles (the cession convention bundle FT4 sampled), 205 with a red wax seal; 206 blank.
+  - 207-259 and 261-270: clear Dutch and French letters, most headed "Wesel den .. Maart/April 1808" and "Hoog Edel
+    Gestrenge Heer", several signed jointly by the two commissioners (van Spaen and a second signature).
+  - 271-272, 286-287, 302, 322: tables and accounts in money columns (financial statements; 283-285 carry
+    "Algemeen Overzigt" headings), not cipher.
+  - 273-360: further clear letters, notes ("Note") and memoirs of about April-May 1808 and later, blanks (e.g. 297,
+    298, 304, 308, 319, 323-325, 330, 334, 338, 339, 344, 345, 350-351), and at 357-360 the end of the volume with
+    the archive's "Inventaris 281" slip and the back board.
+  Dates read only at thumbnail size: approximate, not quoted.
+- **Not found in scans 197-360:** dispatches No 1 and No 5 of the Düsseldorf series, any other figure page, any
+  decipherment, interlinear figures or key. With GAPS41 (1-74), GAPS34 (75-99) and the earlier passes, **all 360 scans
+  of inv. 281 have now been viewed at least at 450 px**; the only figure leaves in the file are 81, 82 and 85 (No 4
+  and No 6). No 1 and No 5 are either in clear and missed at thumbnail size, filed elsewhere, or lost -- the file
+  cannot say which. Not located is a search result, not an absence.
+- Requests: service.archief.nl 139 (cap 220), 1.6 s apart, no 4xx/5xx; no other host. Vision 4 (four contact
+  sheets); subagents 0. Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41, GAPS44, GAPS48, GAPS54 and GAPS58, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
-- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 221 of 360 scans (GAPS41: none in 1-74)
-- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; next: new material -- find dispatch No 1 or No 5 (more ciphertext in the same code) in inv. 281 scans 100-360 not yet viewed (139 of 360 unseen, GAPS41), or a Van Spaen key in another inventory (his Düsseldorf legation papers), ~$3 locate pass
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet in any of the 360 scans of inv. 281 (GAPS41: none in 1-74; GAPS58, 3 Oct 2026: none in the last 139)
+- annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99, nor anywhere in inv. 281 (all 360 viewed, GAPS58)
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); crib-placement test under a one-part code run 3 Oct 2026 (GAPS48): control below gate (one-part 0.64 FR/NL, K-matched 0.75/0.69 vs gate 0.75), target 0.40/0.47 at the two-part null, non-test at N 304; one-part frequency-position test run 3 Oct 2026 (GAPS54): control power 0.675 FR / 0.625 NL vs gate 0.80, target not scored, untestable at N 304 by this statistic; all 360 scans of inv. 281 viewed 3 Oct 2026 (GAPS58): No 1 and No 5 not found, no other figure page, no key; next: new material -- a Van Spaen key or the ministry decipherment in another inventory (NA catalogue search of 2.01.08 and the Düsseldorf/Berg legation papers for cijfer/chiffre/sleutel/Spaen 1807-1808), ~$3 catalogue pass
 
 ## Escalation (3 Oct 2026)
-- [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74
+- [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74; GAPS58 (3 Oct 2026) viewed the last 139 scans: no No 1/No 5, no figure page, inv. 281 complete
 - [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- next: new material (dispatch No 1/No 5 in the unviewed scans of inv. 281, or a Van Spaen key in another inventory), ~$3 locate pass
+- [ ] key-rebuild: crib candidates listed (GAPS44); crib placement (GAPS48) and frequency-position (GAPS54) under a one-part code both non-tests at N 304, controls below gate (3 Oct 2026); no further cheap statistic at this N -- inv. 281 fully viewed, no further ciphertext or key in it (GAPS58, 3 Oct 2026) -- next: new material (a Van Spaen key or ministry decipherment in another NA inventory), ~$3 catalogue pass
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: locate dispatch No 1 or No 5 (more ciphertext in the same code) in the unviewed scans of inv. 281 (139 of 360 unseen), or a Van Spaen key in another inventory, ~$3 locate pass (both one-part statistics, crib placement GAPS48 and frequency-position GAPS54, are untestable at N 304: controls below gate)
+Verdict: keep going: 1 internal gap; cheapest next: search the NA catalogue for a Van Spaen key or the ministry's decipherment of No 4/No 6 in another inventory (2.01.08 inventory list and the Düsseldorf/Berg legation papers, terms cijfer/chiffre/sleutel/ontcijfering/Spaen 1807-1808), ~$3 catalogue pass (inv. 281 is now fully viewed, GAPS58: no further ciphertext or key in it; both one-part statistics are untestable at N 304)
