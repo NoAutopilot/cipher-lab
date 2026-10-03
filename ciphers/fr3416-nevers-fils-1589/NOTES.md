@@ -217,3 +217,17 @@ Read so far: 71 of 102 figure tokens at H (70%); 31 M; clear text L01-L10 transc
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [ ] retry: one more blind read of L05 to clear rule 1 (planned step above)
 Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: L05 second blind digit read, ~$1.5
+
+## FILS-NOMEN pre-registration (account 1, 3 Oct 2026, written 09:5x UTC before any read returned)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-nomen.md`. Rules fixed before the reads:
+1. L05: FILS-CLEAR's rule 1 unchanged. A token moves M -> H only if the new blind read (crops only, told "cl" is one
+   glyph, no key, no committed digits) gives that pair with no alternative AND it equals the reconciled pair. Key
+   coverage never chooses a digit.
+2. no.25 nomenclator: two blind passes (A, B) per column crop, crops only, no key, no f.35r reading. An entry
+   (code, meaning) is H if A and B agree on both code and meaning after normalisation (case, u/v, i/j, long s, accents,
+   punctuation); M if they split on either and my look at the crop settles it; unsettled entries stay M with both
+   readings in the note.
+3. f.35r code words: a code word in f35r is read through the nomenclator at H only if (a) its nomenclator entry is H and
+   (b) the code is graded H on f.35r already (or read identically by both FILS-CLEAR clear passes); otherwise M. No
+   meaning is chosen because it fits the sentence.
