@@ -461,6 +461,111 @@
     "prominence": 8.7
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "r5007p2r_L01.jpg",
+   "source_url": "",
+   "source_file": "IMG_R5007_I28868_P2.jpg",
+   "box": [
+    3800,
+    1341,
+    5920,
+    1529
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 186,
+    "distance": 130,
+    "prominence": 136.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "r5007p2r_L02.jpg",
+   "source_url": "",
+   "source_file": "IMG_R5007_I28868_P2.jpg",
+   "box": [
+    3800,
+    1529,
+    5920,
+    1714
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 186,
+    "distance": 130,
+    "prominence": 136.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "r5007p2r_L03.jpg",
+   "source_url": "",
+   "source_file": "IMG_R5007_I28868_P2.jpg",
+   "box": [
+    3800,
+    1714,
+    5920,
+    1899
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 186,
+    "distance": 130,
+    "prominence": 136.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "r5007p2r_L04.jpg",
+   "source_url": "",
+   "source_file": "IMG_R5007_I28868_P2.jpg",
+   "box": [
+    3800,
+    1899,
+    5920,
+    2086
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 186,
+    "distance": 130,
+    "prominence": 136.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "r5007p2r_L05.jpg",
+   "source_url": "",
+   "source_file": "IMG_R5007_I28868_P2.jpg",
+   "box": [
+    3800,
+    2086,
+    5920,
+    2260
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 186,
+    "distance": 130,
+    "prominence": 136.0
+   },
+   "date": "03 Oct 2026"
   }
  ]
 }
