@@ -348,7 +348,7 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
-- upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON): 250 words H, 44 M, 23 U; 19 of the 84 split groups settled to a third reading that only one reader (the reconciler) saw, graded M - blocker: not-attempted; a single reconciler settled them; next: one independent blind check of the 44 M and 23 U words only (word crops cut from the f43u/f43b/f43m strips), ~$2
+- upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON) and blind-checked once (A1B-FILS-UPPER): 251 words H, 43 M, 23 U; the Sonnet word-window reader could not read this hand (61 of 62 windows at [...] or wrong on H neighbours, all L), so the check moved only 1 token - blocker: not-attempted; no capable independent reader has seen the M/U words yet; next: the same 62 crops (verify/upper_mu/crops) to one blind Opus reader (the FILS-UPPER passes that read this hand were Opus), same pre-registered rules, ~$5
 
 (Novelty N3 -> N4 settled: N4 set by A1B-VERIFY-FILS-N4b, 3 Oct 2026, AUDIT.md "Third audit".)
 
@@ -359,8 +359,8 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H
-Verdict: keep going: 2 internal gaps (2 more illegible); cheapest next: one independent blind check of the upper letter's 44 M and 23 U words, ~$2
+- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H
+Verdict: keep going: 2 internal gaps (2 more illegible); cheapest next: the upper letter's 62 M/U word windows to one blind Opus reader, ~$5
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -589,3 +589,25 @@ Rules, fixed now:
 3. Mismatch, or the reader gives [...]/[?] at the target, or the target cannot be located in the window read: grade
    unchanged, listed. No promotion beyond one step (M never to H from a U; nothing to H without an exact match).
 4. Counts reported H/M/U before and after, words and tokens.
+
+## A1B-FILS-UPPER results (account 1 for LANE-A1B, 3 Oct 2026, 18:19 UTC)
+
+Rules as pre-registered (commit b5b54b03, before any read). Two blind Sonnet subagent calls (w01-w31, w32-w62), crops only,
+no candidates; reads verbatim in `verify/upper_mu/blind_reads.tsv`. Every one of the 62 windows came back at confidence L.
+**Reader capability, the control that decides what this means:** across the same windows the reader also failed most
+neighbouring words that FILS-RECON had graded H (w01 "Je [...] pr" for "je cognoistre q' faittes"; w50 "a my de" for
+"a ceux de"; w52 "Le Dy est ey dupt." for "Le Roy est ung depuis"). It read a word that other passes also read only
+where the hand is plain ("de la", "il est", "Mr d", "Courage", "et", "en", "d'autre"). A reader that fails the H words
+cannot confirm or refute the M/U words, so the misses below are a non-test of the readings, not a negative.
+Outcome by rule: **M tokens: 1 of 38 moved to H**: w50 U25 `{de}` read "de" (an exact match; weak, since the same read
+gives "my" for the neighbouring H word "ceux"). The other 37 stay M, each unread at the target ([...]) or read
+differently (e.g. w40 ultime/"vitem", w41 desquelz/"Dictent", w49 servitu-/"vemitu", w52 depuis/"dupt.", w62
+asseta/"affala", long s read as f). **U tokens: 0 of 24 moved to M**: each unread at the target or read as neither prior
+candidate (w44 "mes" vs A "les"/B [...]; w51 "vemilli" vs B "servites?"; w61 "Boyen" vs louange/eslogne; w32-w34
+neighbourhood "Roli Robert" matches nothing in A or B).
+Counts, words: before H 250 / M 44 / U 23; after **H 251 / M 43 / U 23**. Tokens: before M 38 / U 24; after M 37 / U 24.
+`clear_f35r.tsv` U25 updated (note column), `reading_f35r.txt` regenerated, `decode_f35.py --check` OK. AUDIT.md and
+SECOND-OPINIONS-QUEUE.tsv do not quote these word counts (grep, 18:19 UTC), so nothing to propagate; class N4 unchanged.
+Lesson: a word window with no marked target, given to Sonnet on this cursive hand, reads below the level needed for the
+check; the next pass is the same crops to an Opus reader (the earlier FILS-UPPER passes, which did read the hand, were Opus).
+Not found in print: nothing searched (transcription job).

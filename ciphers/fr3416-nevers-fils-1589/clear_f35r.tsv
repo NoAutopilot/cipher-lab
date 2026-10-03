@@ -30,7 +30,7 @@ U21	{perdre} la reputation, Cest a vous a qq' le profit	M	FILS-RECON look vs cro
 U22	a vuider et a vous [...] faire et servir le contentement	M	FILS-RECON look vs crop: splits settled A 1 / B 0 / third 1 / left U 1; words H 10 M 0 U 1
 U23	et obliges a venir a vre service, 97 fit [...]	M	FILS-RECON look vs crop: splits settled A 1 / B 1 / third 0 / left U 0; words H 9 M 0 U 1
 U24	et conseils d' aultres, Il en fault {que de tout} {q' le-}	M	FILS-RECON look vs crop: splits settled A 1 / B 1 / third 0 / left U 0; words H 7 M 5 U 0
-U25	{estime} d' l' estat et {servitu-} a ceux {de} [...]	M	FILS-RECON look vs crop: splits settled A 0 / B 0 / third 3 / left U 0; words H 6 M 3 U 1
+U25	{estime} d' l' estat et {servitu-} a ceux de [...]	M	FILS-RECON look vs crop: splits settled A 0 / B 0 / third 3 / left U 0; words H 7 M 2 U 1; A1B-FILS-UPPER blind check: "de" M->H (weak, see NOTES)
 U26	Le Roy est ung {depuis} a Paris et q' pour asseurer la	M	FILS-RECON look vs crop: splits settled A 1 / B 1 / third 0 / left U 0; words H 11 M 1 U 0
 L01	{pensse}. {Craignez} que il [...] cy [...] {en le(s)} [...]	M	A "pucelle Craignez que il che cy gardiclat en le cr?menyt", B "pensse. Craignt que il effue cy gendicullt en les cerneurs"
 L02	<FIG>	H	figure run 1 (the Roman code word ciiij is inside the run, tokenised there)

@@ -23,7 +23,7 @@ U21  <<{perdre} la reputation, Cest a vous a qq' le profit>>[M]
 U22  <<a vuider et a vous [...] faire et servir le contentement>>[M]
 U23  <<et obliges a venir a vre service, 97 fit [...]>>[M]
 U24  <<et conseils d' aultres, Il en fault {que de tout} {q' le-}>>[M]
-U25  <<{estime} d' l' estat et {servitu-} a ceux {de} [...]>>[M]
+U25  <<{estime} d' l' estat et {servitu-} a ceux de [...]>>[M]
 U26  <<Le Roy est ung {depuis} a Paris et q' pour asseurer la>>[M]
 L01  <<{pensse}. {Craignez} que il [...] cy [...] {en le(s)} [...]>>[M]
 L02  {run 1: .aisi.nlesauroit[xiiij].e}
