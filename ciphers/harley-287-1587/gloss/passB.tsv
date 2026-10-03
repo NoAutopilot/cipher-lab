@@ -1,0 +1,34 @@
+page	band	pair	gloss	cipher	notes
+f84r	L01	1	the answers brought us by norice after three	A p 7 A / U : # A w 7 V A / + V U : G p A / : A / + y / ? d V I 8 7 / U H A 7 y / A p V 7 7	s1/s2 joined at "+ y"; sign 1 of "norice" cut (? ); two dots read as one ":" token
+f84r	L02	1	?larges attendaunce dbe shewe smal hope of any good	D U G 7 V A / U A A 7 # D U # 8 7 / D d 7 / A p 7 w 7 / A G p U l / p d l 7 / d H / U # y / G d z D	first gloss letter obscured by tail from line above; words 5 (A G p U l) and 6 (G d z D) low confidence
+f84r	L03	1	success in the great cause therefore seinge we	A : 8 8 7 A / I # / A p 7 / G y 7 U A / 8 U : A 7 / A p 7 V H z V 7 / A 7 I # G 7 / w 7	end signs uncertain; "we" at gloss end only partly legible
+f84r	L04	1	must go from hence and that by sea it were to represent	Q : A V A / G z / H y z Q / p 7 # 8 7 / U # D / A p U A / + y / A 7 U / I A / w 7 V 7 / 8 d # : 7 # I 7 # A	first sign Q uncertain (reversed c vs x); s1/s2 joined at "p U A"
+f84r	L05	1	that we preserving ?lum to us went eyther to dower or	A p U A / w 7 / ? V 7 A 7 # D I # G / 8 : # k I V k / w ? 7 # A / 7 I A p 7 V / A z / 8 d : 7 V / d V	gloss word before "to us" unclear (plum?); sign 2 of "went" (?) unclear; "preserving" may be "preferring"
+f84r	L06	1	to calays and there to pres? them resolutely	A z / 8 U l U I A / U # D / A p 7 V / A c / G p V 7 A / A p 7 I G / V 7 A z l : A 7 l G	"pres?" continues past the gloss crop; sign "c" in "A c" could be d
+f84r	L07	1	whether thay wil condescend to the three poyntes	w p 7 A p 7 V / A p 7 y / w I l / 8 z # D 7 A 8 7 # D / A z / A p 7 / A p V 7 7 / l z G # A 7 A	s1/s2 joined at "A 8 7"
+f84r	L08	1	propownded wych bemg refused neuer matie	? V z ? z : # D I D / w p I 8 p / + 7 I # G 7 / V 7 H : A 7 D / p I V / G p U I 7 A A G 7	signs 1 and 4 (loop-on-stem, l or p?) unclear; a tall stroke "I" before neuer/break/resolutely/and/us is a tail from the line above, not a gloss letter
+f84r	L09	1	may voyhe honor break of and we regre home	Q U y / w I l A p / p z # z V / + V 7 U k 7 / z H / U # D / w 7 / V 7 A G V I / p z Q 7	first sign Q uncertain; gloss word 2 uncertain
+f84r	L10	1	as canour	U A / 8 U : z I V	L10_s2 holds only a diagonal rule, no signs
+f84r	L11	1	wether thei wil yeald a proofe of the sufficiency	w p 7 A p 7 V / A p 7 y / w I l / G 7 U l D / - 7 / l V z d H 7 / z H / A p 7 / A : H H I 8 I 7 # 8 y	s1/s2 joined at "l V"; "a" run (- 7) uncertain; single dots read as word gaps
+f84r	L12	1	of the dukes commission as as i desiren	z H / A p 7 / 8 : k 7 A / 8 z Q l I A A I z # / U A / 7 / 8 7 A I V I A p	"as" at the s1 end overlaps "as" at the s2 start (counted once by joining); the "desiren" reading is low confidence
+f84r	L13	1	graunts cessation of armes for the time of the	G y U : # A / A 7 A A U A V I z # / z H / U V X 7 A / H z y / A p 7 / A ? p 7 / z H / A p 7	"X" in armes may be Q or G; sign 2 of "time" unclear
+f84r	L14	1	treaty and twenty clunges after and yeald us	A V 7 U A G / U # D / A w 7 # Y / D D U G 7 A / U H A 7 V / U # D / G 7 U l D / : A	single dot after "after" read as a gap; gloss "clunges" uncertain
+f84r	L15	1	honorable security for our persons	p z # z V U + l 7 / A 7 8 : V I A G / H z V / z : y / l 7 V A z # A	"our" is cut at the s1 edge
+f90r	R01	1	growen al dislyke	G V z w 7 # / U / k I A l ? k 7	sign 5 of the last word unclear (y or T)
+f90r	R02	1	soldiers	? A z l D D T 7 V A	sign 1 is a long dash with a hooked flourish
+f90r	R03	1	betwen the gouernor and captayns	- ? A X I # / A p 7 / G d : 7 V # z V / ? # d / y c l A U y # A	sign 2 (gamma-like corner) unclear; "? # d" first sign is a hooked ?; s1/s2 joined at "# A p 7"
+f90r	R04	1	no dayne seruaut	# z / 8 y : G # 7 / A 7 V w 8 7	only "no" sits clearly over the cipher; the other gloss words are the upper-line words and may be clear text; sign 1 of word 2 uncertain
+f90r	R05	1	growen insolent	G V z w 7 / I # A z l 7 # A	a dot between z and l ignored; final A is a thick hooked caret
+f90r	R06	1	twelue moneth nor disciplyne	A w 7 l : / ? z # 7 A V p / # z V / D D I A 8 V T ? D l y # 7	low confidence throughout; s1/s2 joined at "# z V"
+f90r	R07	1	toune	? A z : # 7	sign 1 is a long flourish
+f90r	R08	1	weake	w : 7 U k 7	the first sign is the dot plus stroke w, with a possible extra dot
+f90r	R09	1	coma whether to reforme	8 z l 7 / # I A p 7 V / A z / V 7 # z V p 7	gloss "coma" uncertain
+f90r	R10	1	thes disorders	A # 7 A / D I A c V 8 7 V A	"A # 7 A" is partly written as A, bar, 7, A
+f90r	R11	1	spoken among	A l d k 7 # / U p z # X	
+f90r	R12	1	we depart they wyl also	w 7 D 7 l U V A / A p 7 + / w X l / # / U l A z	
+f90r	R13	1	them	A p 7 7 ?	last sign a 7 with a swash
+f90r	R14	1	seen into with expe	A 7 ? # / : # A z V / w I A p / 7 A l 7 ?	the "?" signs are a corner stroke and a trailing "="
+f90r	R15	1	begon	- 7 G z V #	sign 3 may be X
+f90r	R16	1	captaynes ouer that	8 U l A U y # 7 A / z : 7 V / A p U A	signs 3-4 of the first word unclear (l or D)
+f90r	R17	1	dihon	8 I A V I z #	
+f90r	R18	1	absent others in their places	? ? z A p z 7 V A / # / A p 7 T V / l l U 8 7 A	cipher row cut at the bottom edge; first two signs unreadable; first sign of "l l" may be p
