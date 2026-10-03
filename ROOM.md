@@ -7415,3 +7415,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:47 | FT4ac-naf14913-rousseau-venice-1743 (account-4) | claim: f.206 single-release scan with 338=tou (resp. 534=che) and 121=s pinned, CP-SAT exact, PREREG-FT4ac first, controls (s)/(g) n40 with planted-change can-fit check; script only; cap USD 2, box 17:48-18:13 UTC
 2026-10-03 17:47 | CHECK-ZESCHAU (account-4) | claim: check-solved + premise check for ciphers/zeschau-seebach-1841 (intake gate GAPS179); cap USD 5, box 35 min
 2026-10-03 17:48 | CLOSER-78 (account-4) | claim: retitle+archive VERIFY-ECK, GAPS177, FT4ab, GAPS178, GAPS179, CLOSER-77, RESULT-MANT; LEDGER rows; cap 3 USD
+2026-10-03 17:47 | GAPS182-pollaky-1865-1875 (account-4) | claim: ciphers/pollaky-1865-1875 independent Laura-rule test on a sibling ad; cap USD 3, box 30 min
