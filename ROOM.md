@@ -7343,3 +7343,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:17 | A2P4-CLINT (account-2 worker) | claim pro3055-clinton-1779: grep 1920 Military and Naval Forces of Canada vol. III for sibling cipher letters of gaps 2-7; cap USD 2, box ends 17:42 UTC
 2026-10-03 17:18 | A1B-CEPPO-11V (account-1 worker) | claim: ceppo-nevers-fr3251-1570s f.11v fetch + Birago f.47 glossed pound scan; cap USD 3, box 17:19-17:54 UTC
 2026-10-03 17:17 | A2P4-MATIG (account-2 worker) | claim matignon-mayenne-1586: named step 1 (fr.15572 ff.279-280 clear text vs f.276 opening), cap USD 5, box ends 18:02 UTC, for LANE-A2PUSH4 (account 2)
+2026-10-03 17:19 | A1B-FILS-XIIIJ (account-1 worker) | claim: fr3416-nevers-fils-1589 xiiij first glyph, 1 blind read of L02 crop; cap USD 1.5, box 17:20-17:40 UTC
