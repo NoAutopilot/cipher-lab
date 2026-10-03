@@ -1,0 +1,98 @@
+tool	kind	grade	use_when	evidence	last_outcome
+seg_homophonic.py	instrument	controlled-only	unseparated digit cipher with no key; digits run together, segmentation unknown; homophonic numbers	synthetic held-out Italian 360 letters read 1.000 (0% noise) and 0.917 (5% noise) over 5 seeds: ciphers/fr4687-paleologue-nevers/NOTES.md s."Matched controls (rule 3)" (~line 486)	fr4687-paleologue-nevers only (24 Sept 2026); never run on the Birago numerical system
+key_crossmatch.py	instrument	proven	a key table on disk might read another ciphertext; which key fits this letter; sibling key from the same office	calibrated gate 3.292 admits 13/13 verified key-text pairs at 1.15% null FP; under 100 tokens untestable: LEDGER.md row XMATCH-CAL (26 Sep, session_011NaaVMq1Zwtk2S6Cmtz3Fm)	nightly --since-hours 25 sweep; 0 new cross-folder leads at calibration
+cipher_page_detector.py	instrument	weak	find cipher pages in a whole volume or codex from page images; which leaves carry cipher	first gate FAILED: recall 0.69, false-positive rate 0.21, no sweep run: hub-seed/ASSIGNMENTS.md detIMG row (24 Sept 2026)	never swept a target volume
+glyph_atlas.py	instrument	proven	sign shapes unsettled; invented alphabet; segment and cluster signs; symbol cipher transcription; top-k sign candidates	shape matcher 0.754 on 309 known tiles (Birago 1572 family atlas): LEDGER.md row TX-ATLAS-B72 (3 Oct 2026); Salviati atlas passes agree 62.8% (agreement, not accuracy): LEDGER.md 24 Sep LANE G3 H	TX-ATLAS-B72 3 Oct 2026, 18 pages 4209 tiles
+sign_sorter.py	instrument	untested	sign shapes unsettled; a person settles the alphabet; merge or split sign piles; invented alphabet before transcription	no known-answer measure of the settled alphabet on file (searched LESSONS/HYPOTHESES/LEDGER 3 Oct 2026); browser tests only	active-sorter options added 3 Oct 2026 (TX-SORTER)
+sign_sorter_apply.py	instrument	untested	apply a person's sign-sorter decisions to labels; settled sign inventory	no known-answer measure on file; unit test only	3 Oct 2026 TX-SORTER
+decode_witness.py	instrument	controlled-only	leaf with a clerk's plaintext decipherment; witness leaf; calibrate a symbol or nomenclator key against a period decipherment	built-in 20-shuffled-key control; MONT-4715 calibration z 1.22 vs gate z>=2 on n=1167 letters (transcription agreement 58.9%), a key/transcription FAIL not a tool check: LEDGER.md MONT-4715 (27 Sep)	fr4715-montholon-1589 27 Sept 2026
+interlinear_align.py	instrument	controlled-only	leaf with a clerk's plaintext; printed clear text beside the cipher; interlinear gloss; known plaintext key recovery	synthetic matched control (control_interlinear.py) for the Thurloe printed P11-13 alignment: ciphers/thurloe-printed/NOTES.md ~line 316; tied shuffle on fr3151 margin gloss (NX-3151G) and Birago f.36-37 gloss near shuffle (F36-GLOSS 3 Oct)	F36-GLOSS birago-fr3252-1571-72 3 Oct 2026: gloss share near shuffle
+homophonic_anneal.py	instrument	controlled-only	homophonic substitution, letters with several signs, no key; simple or homophonic substitution solve	matched synthetic controls via family_run.py (homophonic family, 13 target HYPOTHESES files); code+mark control below gate 0.341-0.475 at N=2820 K=223: ciphers/fr2933-salviati-1525/HYPOTHESES.md rows 25 Sept	family runs across 13 targets
+nomenclator_anneal.py	instrument	controlled-only	small graphic-sign nomenclator; letters plus syllable and word signs plus nulls; joint key solve	Sforza-Maino synthetic pairs read 99%+ (LEDGER.md 23 Sept); same-design German control 10.9% at 539 tokens (LEDGER.md J7 24 Sep)	design beyond the anneal below ~600 tokens
+subst_hillclimb.py	instrument	untested	short fragmentary English substitution; many-to-one; small symbol cipher	no control or known-answer result found (searched 3 Oct 2026)	cited by 5 folders as an option
+running_key.py	instrument	controlled-only	running key; book key Vigenere; crib drag; long period	hessen-1824 crib_drag control 4/10 true placements in top 10: ciphers/hessen-1824/HYPOTHESES.md row 27 Sept 07:54; running_key family on hessen retired by rule 3(a)	hessen-1824 27 Sept 2026
+key_repair.py	instrument	retired	repair a substitution key code by code; wrong key values	rule 3(c) third attempt: null-false 100->53->29, known-answer recovery 0.000->0.625->0.458: ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md rows 26 Sept (AX2-4612S/S2/S3)	retired for the Nassau hypothesis, untested-by-this-tool elsewhere
+crib_rounds.py	instrument	controlled-only	model in the loop crib rounds; a reader proposes cribs; homophonic or nomenclator control	ARM3-LOOP controls: blind 15.6/2.3/11.3, best-round gain mean 9.2: ciphers/armstrong-madison-1808/HYPOTHESES.md row D	target not run (gate)
+partial_key_test.py	instrument	controlled-only	test a partial key implied by a crib placement; does a few-codes key carry letter order	shuffled-key and shuffled-order controls (H31, spinelli-beinecke-c1515/CAMPAIGN.md); offline tests only for --cells	spinelli H31 28 Sept 2026; fr4715-f61 H354
+crib_pattern.py	instrument	controlled-only	drag a known phrase along a sign-coded text; crib placement; pattern word	monoalphabetic control 3/3 planted cribs top-ranked, homophonic control FAILS (25/600, 61/600): ciphers/na-raad-azie-1800/HYPOTHESES.md rows 3 Oct 01:43	use only on masc-like designs until the homophone mode passes a control
+crib_list_fit.py	instrument	controlled-only	which name or word from a list fits a window of a keyed code stream; name crib from a prepared list	threshold calibrated on read name-free windows of the target (H71); espagnol142-mercy-1648/NOTES.md ~line 2448	espagnol142-mercy-1648
+key_order_test.py	instrument	proven	homophonic letter key in alphabetical order; bracket an uncertain code value; which value to check first	on a real key: letter codes keep alphabetical order P=0.0 (STATUS.md ~line 468); bracketing in vanbeuningen-dewitt-1657/NOTES.md ~line 637	vanbeuningen-dewitt-1657 2 Oct 2026
+design_prior.py	instrument	proven	which design family to attack first for an unread ciphertext; nomenclator or homophonic or code	class-level prior: 25 of 29 verified pairs in top two vs chance 14.7, FP 0.070; six-family tier fails, advisory: LEDGER.md KEY-DESIGN (26 Sep)	run before every attack family choice
+key_design.py	register	n/a	structural signature of every key; KEY-DESIGN.tsv	register builder, not a solver	close-out of every lane
+key_decode_lattice.py	instrument	weak	top-k sign candidates plus a key; key-constrained decode of a noisy transcription; pick signs by language model	first result Birago no.87: at pre-registered lam=1 raises true error and lowers z: SYSTEM.md s.3b row (TX-DECODE 3 Oct 2026)	use only with an atlas top-k set that contains the right sign
+lookalike_pass.py	instrument	weak	two blind passes disagree on look-alike signs; sign pairs readers swap; third pass	known-answer: true error unchanged (0.178/0.071), residual understates 6x, agreement-raising only: LEDGER.md LOOKALIKE-TOOL (2 Oct 2026); LESSONS.md "Look-alike pass"	never use its residual as reader error
+reconcile_passes.py	instrument	untested	two or three transcription passes to reconcile; disagreements between readers	agreement only, never measured against truth (YX-BARB: raw 5.4% was notation): LEDGER.md 25 Sep LANE YX	48 folders
+tx_bench.py	scorer	proven	measure true transcription error against known answer; benchmark a transcription pipeline	held-out Birago no.87 err_true 0.053 vs clerk sheet: LEDGER.md TX-BENCH (3 Oct 2026)	BENCHMARK-TX.tsv 4 items
+iiif_lines.py	access	n/a	cut line crops from a page image or IIIF region before a transcription pass	mandatory crop step (CLAUDE.md Usage 6)	78 folders
+gallica_folio.py	access	n/a	map folio numbers to Gallica canvases; find the right page image	-	35 folders
+judge_plaintext.py	scorer	proven	is a candidate reading language or noise; score plaintext against a spec; PASS FAIL judge	real-prose false-negative rate 4.0% on era-matched pt18 vs 8.5% on pt17 (CLAUDE.md rule 3, V6-PTCORP); en corpus per-fold spread 0.44-0.64 (tools/data/en/README.md)	55 folders; check corpus era and fold spread first
+decode_key.py	instrument	n/a	apply a key to a transcription and grade every token; regenerate a reading; split glued numbers	deterministic applier (rule 7); --split-check lists glued digits	59 folders
+freq.py	scorer	n/a	token frequencies, contacts, KWIC, repeats, one-part dictionary bands for a code	statistics tool, no correctness claim	9 folders
+french16_ngram.py	scorer	n/a	period French language model for scoring readings	corpus model	-
+german_ngram.py	scorer	n/a	period German language model	corpus model	-
+italian_ngram.py	scorer	n/a	period Italian language model	corpus model	-
+italian16_corpus.py	scorer	n/a	16th-century Italian letter corpus filter	corpus builder	-
+latin_ngram.py	scorer	n/a	Latin language model	corpus model	-
+english_score.py	scorer	n/a	acrostic or null cipher hidden message in English text	scorer	-
+translit_ru.py	scorer	n/a	Russian text in Latin transliteration	transliterator	-
+thurloe_extract.py	access	n/a	extract printed cipher groups from Thurloe State Papers	extractor	-
+htrc_numeral_pages.py	access	controlled-only	find printed cipher pages in a HathiTrust volume from word counts; numeral-dense pages	controls pass, needs an index/paylist filter before another round: STATUS.md ~line 2423	no target sweep since
+ia_numeral_runs.py	access	proven	find numeral runs inside printed clear text on Internet Archive; printed cipher passages in editions	controls 2 of 2 (Thurloe), 24 survivor passages from 274 editions, one reached found-solved: RETRO-2026-09-24.md row 5	24 Sept 2026 sweep
+htrc_ef_headwords.py	access	n/a	locate a headword or page in a HathiTrust volume without the Cloudflare site	-	9 folders
+htrc_series_harvest.py	access	n/a	all HathiTrust volume ids of a multi-volume series	-	-
+ia_djvu_headwords.py	access	n/a	locate a headword or page in an Internet Archive book	-	-
+ia_borrow.py	access	n/a	borrow a lending-only Internet Archive book for one page check	page images obfuscated for scripts (CLAUDE.md Access playbook)	-
+gbooks_search_within.py	access	n/a	locate a page in a full-view Google Books volume	-	-
+digitarq_fetch.py	access	n/a	fetch ANTT DigitArq Portuguese codex images	-	-
+discovery_items.py	access	n/a	list TNA State Papers item records for a piece by search term	-	-
+html2text.py	access	n/a	read a saved Cryptiana or other HTML page as text	-	-
+browser_fetch.js	access	n/a	site blocks curl; JavaScript challenge; fetch with headless Chromium	-	51 folders
+decode_browser_login.js	access	n/a	fetch a DECODE de-crypt.org record or full-size image	-	-
+decode_list.py	access	n/a	DECODE catalogue census by status and type without login	-	-
+decode_neighbours.py	access	n/a	DECODE undeciphered record sharing a shelfmark with a deciphered one; sibling key nearby	-	-
+decode_neighbours_exclude.py	access	n/a	drop DECODE neighbour pairs a solver project already works	-	-
+solver_repo_diff.py	access	n/a	check queue or register against the Bourdeau and Aymeloglu solver repositories	-	-
+print_check.py	access	n/a	search decoded phrases in print: Internet Archive, Google Books, OpenAlex	a search result, never a novelty verdict (rule 10)	39 folders
+key_request.py	register	n/a	need a credential or API key	-	-
+key_probe.py	gate	n/a	which credential names this container carries	-	-
+key_livecheck.py	gate	n/a	does an API key actually work	-	-
+build_dashboard.py	register	n/a	rebuild the published board	-	-
+bench_check.py	gate	n/a	validate BENCHMARK.tsv freeze rules	-	-
+bench_score_baseline.py	scorer	n/a	score key_crossmatch gate against the benchmark	-	-
+brief_price_check.py	gate	n/a	price check a brief's vision calls	-	-
+campaign.py	register	n/a	campaign file: runnable hypotheses and budget	-	-
+account_usage.py	register	n/a	usage bars of every account	-	-
+jobs_board.py	register	n/a	every job across the accounts	-	-
+work_queue.py	register	n/a	WORK-QUEUE.tsv add claim done	-	-
+progress_block.py	register	n/a	render the owner's progress block	-	-
+open_asks.py	gate	n/a	unanswered ROOM.md lines addressed to a role	-	-
+orphan_check.py	gate	n/a	orphaned sessions, triggers, stale claims	-	-
+ledger_check.py	gate	n/a	LEDGER.md duplicates and outcome codes	-	-
+near_check.py	gate	n/a	NEAR.md and status.json agreement	-	-
+next_steps.py	gate	n/a	every open/partial target's written next step	-	-
+gaps_check.py	gate	n/a	partial target's Remaining gaps and Escalation sections	-	-
+intake_gate_check.py	gate	n/a	check-solved verdict good enough for deep work	-	-
+premise_check.py	gate	n/a	shortlist row premise on disk before spawning	-	-
+leaf_pool_gate.py	gate	n/a	per-leaf control before a leaf enters a shared pool or key	-	-
+family_run.py	gate	n/a	run a hypothesis family with its matched control first	control-first harness (rule 3); grades live on the families below	33 folders
+lq_answer_check.py	gate	n/a	land a local-queue runner negative	-	-
+send_queue_check.py	gate	n/a	queue or land a send-queue row	-	-
+desk_check.py	gate	n/a	stale outreach drafts	-	-
+restricted_guard.py	gate	n/a	keep restricted material out of the public repository	-	-
+file_shrink_guard.py	gate	n/a	a shared file collapsed to a stub	-	-
+system_map_check.py	gate	n/a	every tool named in SYSTEM.md	-	-
+room.py	gate	n/a	ROOM.md lines and safe push	-	-
+tool_shelf.py	register	n/a	which existing tool fits my problem; find a shared tool before writing a private script	this shelf	-
+families/masc.py	instrument	controlled-only	monoalphabetic simple substitution family	family_run.py control rows in 10 HYPOTHESES.md files	-
+families/homophonic.py	instrument	controlled-only	homophonic substitution family	family_run.py control rows in 13 HYPOTHESES.md files	-
+families/periodic_vigenere.py	instrument	controlled-only	Vigenere or Beaufort short repeating key family	family_run.py control rows in 2 HYPOTHESES.md files	-
+families/periodic_masc.py	instrument	controlled-only	period-P general substitution, several alphabets in rotation	family_run.py control rows in 1 HYPOTHESES.md file	-
+families/running_key.py	instrument	controlled-only	running key book key family	hessen-1824 control rows; retired there by rule 3(a)	-
+families/keyed_running_key.py	instrument	controlled-only	running key through a keyed tableau family	family_run.py control rows in 1 HYPOTHESES.md file	-
+families/permuted_tableau.py	instrument	controlled-only	running key through a general permuted tableau family	family_run.py control rows in 1 HYPOTHESES.md file	-
+families/nomenclator.py	instrument	controlled-only	two-level numeric word code family	ARM-C1 control; en18 judge PASSed a shuffled-target decode, judge void as gate for this family (CLAUDE.md rule 3)	-
+families/block_homophonic.py	instrument	controlled-only	numeral table cut into contiguous blocks, one letter per block	family_run.py control rows in 2 HYPOTHESES.md files	-
+families/phased_homophonic.py	instrument	controlled-only	two-digit homophonic written as unsegmented digit runs with stray digits	family_run.py control rows in 1 HYPOTHESES.md file	-
+families/seeded_code.py	instrument	controlled-only	two-part code of syllables and words with a partial key pinned	family_run.py control rows (castelcicala-1816 A2-CAS8)	-
+families/syllabary.py	instrument	controlled-only	partial syllabary, a mark on a consonant is the following vowel; code plus mark	DSN/DSN2 controls collapse between 7% and 10% injected error (SALV-DIAG, CLAUDE.md rule 3)	-
+families/wordcode.py	instrument	controlled-only	letter-or-word nomenclator inside sign runs	family_run.py control rows in 3 HYPOTHESES.md files	-
