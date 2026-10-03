@@ -1,0 +1,20 @@
+L01	mliozometaoniuezoa_nteuaafialenquaatomeintendesono_oftet
+L02	tisanizaiomo_eneetl_erteetletnozesiuntifumondozoetd
+L03	omietn_uaetgretnmauezat_za_ienetsiafmolesilongtizmi_et
+L04	ziet_osteteualietlimondumeuantetfetn_pemoeziselnl
+L05	mfurono_oifetzimodufeuioetsetllnegfonemetquali_oleea
+L06	nodafealredefeuenezefosetlh_etetnsetzefoetlfinetle
+L07	etquemhimonoa_mo_ugifetzit_ziemprezt_ortareinmi
+L08	madalmhuaefocte_fontetauamefodilmatel_delfinetle
+L09	nsefuirmeaeatilafesentfoetsinezaeramoma_ensata_i
+L10	moltotemp_etletnozei_etiuefetpetzatomm_nosmiutoilq
+L11	a_itetnoguidtpiouefet_quemtetpretzima_ilmtlmimmuo
+L12	pfi_etlesementeefetzadimomunem_nmenmoetnq_antemie
+L13	ienemignatolmonosengettetuerequalqhedime_nomoe_rai
+L14	lmonfelethommfizeulti_etmenteq_mttaeeuetseztletl
+L15	letneseametmimoitlmomenmortehofetmmiazerotheni
+L16	onemendomempfeilfiuseoinquemepetrti__limosaam
+L17	anmetfedipfouesereml
+
+TARGET: 770 signs, 7 nulls, 776 letters; real key -1.5267; 200 shuffled keys mean -2.0499 sd 0.1256 max -1.6782; z 4.17; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.33: real key rank 1 in 20/20; z median 7.72 min 6.05

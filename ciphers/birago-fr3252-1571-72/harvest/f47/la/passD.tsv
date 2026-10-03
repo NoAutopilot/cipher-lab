@@ -1,0 +1,771 @@
+passage	pos	sign_id	conf	note	question
+L01	1	S73	H	lookalike 2-of-3	
+L01	2	S74	M	passC	
+L01	3	S84	M	passC	
+L01	4	S93	M	passC	
+L01	5	S24	M	lookalike 2-of-3	
+L01	6	S76	M	lookalike 2-of-3	
+L01	7	S62	M	passC	
+L01	8	S74	M	lookalike 2-of-3	
+L01	9	S65	M	passC	
+L01	10	S97	M	passC	
+L01	11	S70	M	passC	
+L01	12	S49	M	passC	
+L01	13	S17	M	passC	
+L01	14	S47	M	passC	
+L01	15	S75	H	passC	
+L01	16	S76	M	lookalike 2-of-3	
+L01	17	S62	M	passC	
+L01	18	S97	M	lookalike 2-of-3	
+L01	19	?	L	lookalike UNSETTLED	L01.19: readers S34/S50, look-alike S50 (L); which of ?, S34, S50?
+L01	20	S49	M	passC	
+L01	21	S53	M	passC	
+L01	22	S52	M	passC	
+L01	23	S42	M	lookalike 2-of-3	
+L01	24	S45	M	passC	
+L01	25	S80	H	lookalike 2-of-3	
+L01	26	S69	M	passC	
+L01	27	S17	M	passC	
+L01	28	S45	M	passC	
+L01	29	S84	M	passC	
+L01	30	S75	H	passC	
+L01	31	S23	M	passC	
+L01	32	S20	M	passC	
+L01	33	S47	M	passC	
+L01	34	S80	M	lookalike 2-of-3	
+L01	35	S97	M	passC	
+L01	36	S88	M	passC	
+L01	37	S70	M	passC	
+L01	38	S74	M	lookalike 2-of-3	
+L01	39	S75	H	passC	
+L01	40	S93	M	passC	
+L01	41	S49	H	lookalike 2-of-3	
+L01	42	S53	M	passC	
+L01	43	S75	H	passC	
+L01	44	S23	M	passC	
+L01	45	S89	H	passC	
+L01	46	S75	H	passC	
+L01	47	S26	M	lookalike 2-of-3	
+L01	48	S62	M	passC	
+L01	49	S23	M	passC	
+L01	50	S62	M	passC	
+L01	51	X_TRI	M	passC	
+L01	52	S70	M	passC	
+L01	53	S69	M	passC	
+L01	54	S88	M	lookalike 2-of-3	
+L01	55	S65	M	passC	
+L02	1	S53	M	passC	
+L02	2	S17	M	passC	
+L02	3	S94	M	passC	
+L02	4	S80	M	lookalike 2-of-3	
+L02	5	S49	M	passC	
+L02	6	S17	M	passC	
+L02	7	S76	M	lookalike 2-of-3	
+L02	8	S80	H	lookalike 2-of-3	
+L02	9	S93	M	passC	
+L02	10	S70	M	passC	
+L02	11	S74	M	passC	
+L02	12	S62	M	passC	
+L02	13	?	L	lookalike UNSETTLED	L02.13: readers S42/S40, look-alike S40 (L); which of ?, S40, S42?
+L02	14	S52	M	passC	
+L02	15	S23	H	lookalike 2-of-3	
+L02	16	S75	H	passC	
+L02	17	S65	M	passC	
+L02	18	S84	M	passC	
+L02	19	?	L	lookalike UNSETTLED	L02.19: readers S25/S93, look-alike S93 (L); which of ?, S25, S93?
+L02	20	S35	M	passC	
+L02	21	S56	H	lookalike 2-of-3	
+L02	22	S88	M	passC	
+L02	23	S75	H	passC	
+L02	24	S65	M	passC	
+L02	25	S40	M	passC	
+L02	26	S65	M	passC	
+L02	27	S23	M	passC	
+L02	28	S70	M	passC	
+L02	29	S76	M	lookalike 2-of-3	
+L02	30	S75	H	passC	
+L02	31	S94	M	passC	
+L02	32	S17	M	passC	
+L02	33	S42	M	passC	
+L02	34	S23	M	passC	
+L02	35	S53	M	passC	
+L02	36	S93	M	passC	
+L02	37	S69	M	passC	
+L02	38	S47	M	passC	
+L02	39	S74	M	lookalike 2-of-3	
+L02	40	S70	M	passC	
+L02	41	S49	M	passC	
+L02	42	S89	H	passC	
+L02	43	S70	M	passC	
+L02	44	S76	M	lookalike 2-of-3	
+L02	45	S70	M	passC	
+L02	46	S65	M	passC	
+L02	47	S89	H	passC	
+L03	1	S62	M	passC	
+L03	2	S74	M	passC	
+L03	3	S17	M	passC	
+L03	4	S65	M	passC	
+L03	5	S49	M	passC	
+L03	6	?	L	lookalike UNSETTLED	L03.6: readers S88/S75, look-alike S88 (L); which of ?, S75, S88?
+L03	7	S47	M	passC	
+L03	8	S97	M	passC	
+L03	9	S65	M	passC	
+L03	10	S13	M	lookalike 2-of-3	
+L03	11	S56	H	lookalike 2-of-3	
+L03	12	S65	M	passC	
+L03	13	S49	M	passC	
+L03	14	S74	M	lookalike 2-of-3	
+L03	15	S80	H	lookalike 2-of-3	
+L03	16	S42	M	lookalike 2-of-3	
+L03	17	S52	M	passC	
+L03	18	S76	M	lookalike 2-of-3	
+L03	19	S80	H	lookalike 2-of-3	
+L03	20	S88	M	passC	
+L03	21	X_TRI	M	passC	
+L03	22	S76	M	lookalike 2-of-3	
+L03	23	S45	M	passC	
+L03	24	X_TRI	M	passC	
+L03	25	S17	M	passC	
+L03	26	S75	H	passC	
+L03	27	S49	M	passC	
+L03	28	S65	M	passC	
+L03	29	S94	M	passC	
+L03	30	S93	M	passC	
+L03	31	S80	H	lookalike 2-of-3	
+L03	32	S69	H	lookalike 2-of-3	
+L03	33	S74	H	lookalike 2-of-3	
+L03	34	S62	M	passC	
+L03	35	S40	M	lookalike 2-of-3	
+L03	36	S52	M	passC	
+L03	37	S94	M	passC	
+L03	38	S93	M	passC	
+L03	39	S84	H	lookalike 2-of-3	
+L03	40	S70	M	passC	
+L03	41	S49	M	passC	
+L03	42	S13	M	lookalike 2-of-3	
+L03	43	S53	M	lookalike 2-of-3	
+L03	44	S93	M	passC	
+L03	45	S76	M	lookalike 2-of-3	
+L03	46	S74	H	lookalike 2-of-3	
+L03	47	S93	M	passC	
+L03	48	?	L	lookalike UNSETTLED	L03.48: readers S40/S47, look-alike S47 (L); which of ?, S40, S47?
+L03	49	S65	M	passC	
+L04	1	S76	M	lookalike 2-of-3	
+L04	2	S93	M	passC	
+L04	3	S65	M	passC	
+L04	4	?	L	lookalike UNSETTLED	L04.4: readers S95/S45, look-alike X_NEW (M); which of ?, S45, S95, X_NEW?
+L04	5	S70	M	lookalike 2-of-3	
+L04	6	S26	H	lookalike 2-of-3	
+L04	7	S53	M	passC	
+L04	8	S65	M	passC	
+L04	9	S35	M	lookalike 2-of-3	
+L04	10	S47	M	passC	
+L04	11	S80	H	lookalike 2-of-3	
+L04	12	S84	M	passC	
+L04	13	S93	M	passC	
+L04	14	S65	M	passC	
+L04	15	S40	M	passC	
+L04	16	S93	M	passC	
+L04	17	S74	M	lookalike 2-of-3	
+L04	18	S62	M	passC	
+L04	19	S23	H	lookalike 2-of-3	
+L04	20	S89	H	passC	
+L04	21	S47	M	passC	
+L04	22	S74	M	lookalike 2-of-3	
+L04	23	S75	H	passC	
+L04	24	S42	M	lookalike 2-of-3	
+L04	25	S80	H	lookalike 2-of-3	
+L04	26	S23	H	lookalike 2-of-3	
+L04	27	S88	M	passC	
+L04	28	S65	M	passC	
+L04	29	S69	M	passC	
+L04	30	S65	M	passC	
+L04	31	S23	H	lookalike 2-of-3	
+L04	32	?	L	lookalike UNSETTLED	L04.32: readers S60/S88, look-alike S88 (L); which of ?, S60, S88?
+L04	33	S57	M	passC	
+L04	34	S52	M	passC	
+L04	35	S74	M	passC	
+L04	36	S70	M	lookalike 2-of-3	
+L04	37	S52	M	passC	
+L04	38	S76	M	lookalike 2-of-3	
+L04	39	S93	M	passC	
+L04	40	S94	M	passC	
+L04	41	S75	H	passC	
+L04	42	S84	M	passC	
+L04	43	S49	M	passC	
+L04	44	S40	M	passC	
+L04	45	S50	M	passC	
+L05	1	S74	M	passC	
+L05	2	S69	H	lookalike 2-of-3	
+L05	3	S47	M	passC	
+L05	4	S56	H	lookalike 2-of-3	
+L05	5	S70	M	passC	
+L05	6	S49	M	passC	
+L05	7	S62	M	passC	
+L05	8	X_TRI	M	passC	
+L05	9	S62	M	passC	
+L05	10	S93	M	passC	
+L05	11	S69	M	lookalike 2-of-3	
+L05	12	S65	M	passC	
+L05	13	S76	M	lookalike 2-of-3	
+L05	14	S17	M	passC	
+L05	15	S74	M	lookalike 2-of-3	
+L05	16	S70	M	passC	
+L05	17	S89	H	passC	
+L05	18	S47	M	passC	
+L05	19	S69	M	passC	
+L05	20	S75	H	passC	
+L05	21	S47	M	passC	
+L05	22	S93	M	passC	
+L05	23	S62	M	passC	
+L05	24	S65	M	passC	
+L05	25	S94	M	passC	
+L05	26	S65	M	passC	
+L05	27	S84	M	passC	
+L05	28	S40	M	passC	
+L05	29	S49	M	passC	
+L05	30	S75	H	passC	
+L05	31	S13	M	lookalike 2-of-3	
+L05	32	S69	M	passC	
+L05	33	S70	M	passC	
+L05	34	S23	H	lookalike 2-of-3	
+L05	35	S75	H	passC	
+L05	36	S67	M	lookalike 2-of-3	
+L05	37	S74	M	passC	
+L05	38	S75	H	passC	
+L05	39	S88	M	passC	
+L05	40	S20	M	passC	
+L05	41	S47	M	passC	
+L05	42	S45	M	passC	
+L05	43	S84	M	passC	
+L05	44	S93	M	passC	
+L05	45	X_TRI	M	passC	
+L05	46	S70	M	passC	
+L05	47	S84	M	passC	
+L05	48	S52	M	passC	
+L05	49	S52	M	passC	
+L05	50	S80	H	lookalike 2-of-3	
+L06	1	S49	H	lookalike 2-of-3	
+L06	2	S24	M	lookalike 2-of-3	
+L06	3	S89	H	passC	
+L06	4	S80	H	lookalike 2-of-3	
+L06	5	S69	M	passC	
+L06	6	S75	H	passC	
+L06	7	S45	M	passC	
+L06	8	S84	M	passC	
+L06	9	S56	H	lookalike 2-of-3	
+L06	10	S75	H	passC	
+L06	11	S89	H	passC	
+L06	12	S35	M	passC	
+L06	13	S69	M	passC	
+L06	14	S52	M	passC	
+L06	15	S47	M	passC	
+L06	16	S52	M	passC	
+L06	17	S49	M	passC	
+L06	18	S75	H	passC	
+L06	19	S76	M	lookalike 2-of-3	
+L06	20	S35	M	passC	
+L06	21	S69	M	passC	
+L06	22	S70	M	passC	
+L06	23	S94	M	passC	
+L06	24	S65	M	passC	
+L06	25	S73	H	lookalike 2-of-3	
+L06	26	S71	M	lookalike 2-of-3	
+L06	27	S61	M	passC	
+L06	28	?	L	lookalike UNSETTLED	L06.28: readers S58/S40, look-alike S58 (L); which of ?, S40, S58?
+L06	29	S35	M	passC	
+L06	30	S88	M	passC	
+L06	31	S65	M	passC	
+L06	32	S23	M	passC	
+L06	33	S94	M	passC	
+L06	34	S65	M	passC	
+L06	35	S76	M	lookalike 2-of-3	
+L06	36	S75	H	passC	
+L06	37	S69	M	passC	
+L06	38	S70	M	passC	
+L06	39	S65	M	passC	
+L06	40	S40	M	passC	
+L06	41	S69	M	passC	
+L06	42	S93	M	passC	
+L06	43	S23	M	passC	
+L06	44	S65	M	passC	
+L06	45	S84	M	passC	
+L06	46	S75	H	passC	
+L07	1	S35	M	passC	
+L07	2	S53	M	passC	
+L07	3	S20	M	passC	
+L07	4	S47	M	passC	
+L07	5	S75	H	passC	
+L07	6	S74	M	passC	
+L07	7	S61	M	passC	
+L07	8	S17	M	passC	
+L07	9	S74	M	passC	
+L07	10	S70	M	passC	
+L07	11	S49	M	passC	
+L07	12	S62	M	passC	
+L07	13	S45	M	passC	
+L07	14	?	L	lookalike UNSETTLED	L07.14: readers S69/S88, look-alike X_NEW (M); which of ?, S69, S88, X_NEW?
+L07	15	S74	M	lookalike 2-of-3	
+L07	16	S62	M	passC	
+L07	17	?	L	lookalike UNSETTLED	L07.17: readers S42/S40, look-alike S40 (L); which of ?, S40, S42?
+L07	18	S47	M	passC	
+L07	19	S13	M	lookalike 2-of-3	
+L07	20	S93	M	passC	
+L07	21	S69	M	passC	
+L07	22	S65	M	passC	
+L07	23	S76	M	lookalike 2-of-3	
+L07	24	S93	M	passC	
+L07	25	S88	M	passC	
+L07	26	X_TRI	M	passC	
+L07	27	S76	M	lookalike 2-of-3	
+L07	28	S17	M	passC	
+L07	29	S75	H	passC	
+L07	30	S74	M	passC	
+L07	31	S57	M	passC	
+L07	32	S56	H	lookalike 2-of-3	
+L07	33	S35	M	passC	
+L07	34	S76	M	lookalike 2-of-3	
+L07	35	S88	M	passC	
+L07	36	X_TRI	M	passC	
+L07	37	S70	M	passC	
+L07	38	S56	H	lookalike 2-of-3	
+L07	39	S53	M	passC	
+L07	40	S80	H	lookalike 2-of-3	
+L07	41	S56	H	lookalike 2-of-3	
+L07	42	S75	H	passC	
+L07	43	S93	M	passC	
+L07	44	S23	M	passC	
+L07	45	S74	M	lookalike 2-of-3	
+L07	46	S93	M	passC	
+L08	1	S74	H	lookalike 2-of-3	
+L08	2	S80	H	lookalike 2-of-3	
+L08	3	S89	H	passC	
+L08	4	S80	H	lookalike 2-of-3	
+L08	5	S40	M	passC	
+L08	6	S74	M	lookalike 2-of-3	
+L08	7	S61	M	passC	
+L08	8	S47	M	passC	
+L08	9	S97	M	passC	
+L08	10	S75	H	passC	
+L08	11	S69	M	passC	
+L08	12	S70	M	passC	
+L08	13	S66	H	lookalike 2-of-3	
+L08	14	S53	M	passC	
+L08	15	S35	M	passC	
+L08	16	X_NEW	H	lookalike 2-of-3	
+L08	17	S69	H	lookalike 2-of-3	
+L08	18	S62	H	lookalike 2-of-3	
+L08	19	S49	H	lookalike 2-of-3	
+L08	20	S88	M	passC	
+L08	21	S65	M	passC	
+L08	22	S54	M	passC	
+L08	23	S80	H	lookalike 2-of-3	
+L08	24	S47	M	passC	
+L08	25	S80	H	lookalike 2-of-3	
+L08	26	S74	H	lookalike 2-of-3	
+L08	27	S75	H	passC	
+L08	28	S69	M	passC	
+L08	29	S70	M	passC	
+L08	30	S89	H	passC	
+L08	31	S93	M	passC	
+L08	32	S40	M	passC	
+L08	33	S74	M	lookalike 2-of-3	
+L08	34	S80	H	lookalike 2-of-3	
+L08	35	S88	M	passC	
+L08	36	S75	H	passC	
+L08	37	S84	M	passC	
+L08	38	?	L	lookalike UNSETTLED	L08.38: readers S60/S88, look-alike S88 (L); which of ?, S60, S88?
+L08	39	S89	H	passC	
+L08	40	S35	M	passC	
+L08	41	S84	M	passC	
+L08	42	S69	M	passC	
+L08	43	S93	M	passC	
+L08	44	S23	M	passC	
+L08	45	S65	M	passC	
+L08	46	S40	M	passC	
+L08	47	S75	H	passC	
+L09	1	S23	M	passC	
+L09	2	S26	M	passC	
+L09	3	S52	M	passC	
+L09	4	S69	M	passC	
+L09	5	S42	H	lookalike 2-of-3	
+L09	6	S93	M	passC	
+L09	7	S56	H	lookalike 2-of-3	
+L09	8	S74	M	passC	
+L09	9	S75	H	passC	
+L09	10	S97	M	passC	
+L09	11	S75	H	passC	
+L09	12	S80	H	lookalike 2-of-3	
+L09	13	S53	M	passC	
+L09	14	S93	M	passC	
+L09	15	S40	M	passC	
+L09	16	S80	H	lookalike 2-of-3	
+L09	17	S69	M	passC	
+L09	18	S75	H	passC	
+L09	19	S94	M	passC	
+L09	20	S75	H	passC	
+L09	21	S23	M	passC	
+L09	22	S88	M	passC	
+L09	23	S69	M	passC	
+L09	24	S70	M	passC	
+L09	25	S65	M	passC	
+L09	26	S94	M	passC	
+L09	27	S93	M	passC	
+L09	28	S49	M	passC	
+L09	29	S75	H	passC	
+L09	30	S76	M	lookalike 2-of-3	
+L09	31	S80	H	lookalike 2-of-3	
+L09	32	S75	H	passC	
+L09	33	S56	H	lookalike 2-of-3	
+L09	34	S97	M	passC	
+L09	35	S74	M	lookalike 2-of-3	
+L09	36	S62	M	passC	
+L09	37	S74	M	passC	
+L09	38	S80	H	lookalike 2-of-3	
+L09	39	X_TRI	M	passC	
+L09	40	S52	M	passC	
+L09	41	S23	M	passC	
+L09	42	S26	M	lookalike 2-of-3	
+L09	43	S80	M	lookalike 2-of-3	
+L09	44	S88	M	passC	
+L09	45	S45	M	passC	
+L09	46	?	L	lookalike UNSETTLED	L09.46: readers S95/S54, look-alike X_NEW (M); which of ?, S54, S95, X_NEW?
+L09	47	S93	M	passC	
+L10	1	S31	H	lookalike 2-of-3	
+L10	2	S70	M	passC	
+L10	3	S84	M	passC	
+L10	4	S88	M	passC	
+L10	5	S62	M	passC	
+L10	6	S88	M	passC	
+L10	7	S75	H	passC	
+L10	8	S74	H	lookalike 2-of-3	
+L10	9	S57	M	passC	
+L10	10	?	L	lookalike UNSETTLED	L10.10: readers S60/S88, look-alike S88 (L); which of ?, S60, S88?
+L10	11	S35	M	passC	
+L10	12	S88	M	passC	
+L10	13	S84	M	passC	
+L10	14	S65	M	passC	
+L10	15	S49	M	passC	
+L10	16	S70	M	passC	
+L10	17	S76	M	lookalike 2-of-3	
+L10	18	S75	H	passC	
+L10	19	S93	M	passC	
+L10	20	?	L	lookalike UNSETTLED	L10.20: readers S66/S40, look-alike S66 (L); which of ?, S40, S66?
+L10	21	S65	M	lookalike 2-of-3	
+L10	22	S93	M	passC	
+L10	23	S47	H	lookalike 2-of-3	
+L10	24	S75	H	lookalike 2-of-3	
+L10	25	S69	M	passC	
+L10	26	S65	M	passC	
+L10	27	S57	M	passC	
+L10	28	S65	M	passC	
+L10	29	S76	M	lookalike 2-of-3	
+L10	30	S45	M	passC	
+L10	31	S53	M	passC	
+L10	32	S70	M	passC	
+L10	33	S74	M	passC	
+L10	34	S74	M	lookalike 2-of-3	
+L10	35	?	L	lookalike UNSETTLED	L10.35: readers S60/S88, look-alike S88 (L); which of ?, S60, S88?
+L10	36	S49	M	passC	
+L10	37	S70	M	passC	
+L10	38	S26	M	passC	
+L10	39	S74	M	lookalike 2-of-3	
+L10	40	S93	M	passC	
+L10	41	S47	M	passC	
+L10	42	S88	M	passC	
+L10	43	S62	M	passC	
+L10	44	S93	M	passC	
+L10	45	S84	M	passC	
+L10	46	S25	M	passC	
+L11	1	S80	H	lookalike 2-of-3	
+L11	2	X_TRI	M	passC	
+L11	3	S93	M	passC	
+L11	4	S53	M	passC	
+L11	5	S65	M	passC	
+L11	6	S23	M	passC	
+L11	7	S70	M	passC	
+L11	8	S13	H	lookalike 2-of-3	
+L11	9	S47	M	passC	
+L11	10	S93	M	passC	
+L11	11	S89	M	passC	
+L11	12	S88	M	passC	
+L11	13	S57	M	passC	
+L11	14	S93	M	passC	
+L11	15	S70	M	passC	
+L11	16	S47	M	passC	
+L11	17	S75	H	passC	
+L11	18	S69	M	passC	
+L11	19	S65	M	passC	
+L11	20	X_NEW	M	passC	
+L11	21	S20	M	passC	
+L11	22	S47	M	passC	
+L11	23	S75	H	passC	
+L11	24	S74	M	passC	
+L11	25	S88	M	passC	
+L11	26	S65	M	passC	
+L11	27	S57	M	passC	
+L11	28	S56	H	lookalike 2-of-3	
+L11	29	S65	M	passC	
+L11	30	S76	H	lookalike 2-of-3	
+L11	31	S93	M	passC	
+L11	32	S74	M	lookalike 2-of-3	
+L11	33	S80	H	lookalike 2-of-3	
+L11	34	X_NEW	M	lookalike 2-of-3	
+L11	35	S93	M	passC	
+L11	36	S84	M	passC	
+L11	37	S74	M	passC	
+L11	38	S73	H	lookalike 2-of-3	
+L11	39	S53	M	lookalike 2-of-3	
+L11	40	S84	M	passC	
+L11	41	S74	M	lookalike 2-of-3	
+L11	42	S93	M	passC	
+L11	43	S74	H	lookalike 2-of-3	
+L11	44	S74	H	lookalike 2-of-3	
+L11	45	S47	M	passC	
+L11	46	S70	M	passC	
+L12	1	S57	M	passC	
+L12	2	S69	M	passC	
+L12	3	S17	M	passC	
+L12	4	X_TRI	M	passC	
+L12	5	S65	M	passC	
+L12	6	S84	M	passC	
+L12	7	S75	H	passC	
+L12	8	S26	M	passC	
+L12	9	S52	M	passC	
+L12	10	S74	H	lookalike 2-of-3	
+L12	11	S52	M	passC	
+L12	12	S23	H	lookalike 2-of-3	
+L12	13	S88	M	passC	
+L12	14	S75	H	passC	
+L12	15	S35	M	passC	
+L12	16	S69	H	lookalike 2-of-3	
+L12	17	S65	M	passC	
+L12	18	S76	H	lookalike 2-of-3	
+L12	19	S45	M	passC	
+L12	20	S89	H	passC	
+L12	21	S93	M	passC	
+L12	22	S74	M	lookalike 2-of-3	
+L12	23	S70	M	passC	
+L12	24	S31	H	lookalike 2-of-3	
+L12	25	S47	M	passC	
+L12	26	S23	H	lookalike 2-of-3	
+L12	27	S52	M	passC	
+L12	28	S74	M	lookalike 2-of-3	
+L12	29	?	L	lookalike UNSETTLED	L12.29: readers S60/S88, look-alike S88 (L); which of ?, S60, S88?
+L12	30	S23	M	passC	
+L12	31	S74	H	lookalike 2-of-3	
+L12	32	S75	H	passC	
+L12	33	S49	M	passC	
+L12	34	S74	M	lookalike 2-of-3	
+L12	35	S70	M	passC	
+L12	36	S75	H	passC	
+L12	37	S88	M	passC	
+L12	38	S23	M	passC	
+L12	39	S25	M	passC	
+L12	40	X_TRI	M	passC	
+L12	41	S80	H	lookalike 2-of-3	
+L12	42	S49	M	passC	
+L12	43	S53	M	passC	
+L12	44	S75	H	passC	
+L12	45	S31	M	lookalike 2-of-3	
+L12	46	S93	M	passC	
+L12	47	S52	M	passC	
+L13	1	S17	M	passC	
+L13	2	S75	H	passC	
+L13	3	S49	M	passC	
+L13	4	S52	M	passC	
+L13	5	S74	M	lookalike 2-of-3	
+L13	6	S93	M	passC	
+L13	7	S13	M	passC	
+L13	8	S49	H	lookalike 2-of-3	
+L13	9	S80	H	lookalike 2-of-3	
+L13	10	S88	M	passC	
+L13	11	S70	M	passC	
+L13	12	S84	M	passC	
+L13	13	S74	M	passC	
+L13	14	S70	M	passC	
+L13	15	S49	M	passC	
+L13	16	S62	M	passC	
+L13	17	S26	M	passC	
+L13	18	S75	H	passC	
+L13	19	S23	M	passC	
+L13	20	S13	M	lookalike 2-of-3	
+L13	21	S65	M	passC	
+L13	22	S53	M	lookalike 2-of-3	
+L13	23	S65	M	passC	
+L13	24	S47	M	passC	
+L13	25	S52	M	passC	
+L13	26	S56	H	lookalike 2-of-3	
+L13	27	S35	M	passC	
+L13	28	S20	M	passC	
+L13	29	S47	M	passC	
+L13	30	S80	H	lookalike 2-of-3	
+L13	31	S84	M	passC	
+L13	32	S25	M	passC	
+L13	33	S61	M	passC	
+L13	34	S75	H	passC	
+L13	35	S89	H	passC	
+L13	36	S93	M	passC	
+L13	37	S74	M	passC	
+L13	38	S75	H	passC	
+L13	39	?	L	lookalike UNSETTLED	L13.39: readers S45/S94, look-alike S45 (L); which of ?, S45, S94?
+L13	40	S23	M	passC	
+L13	41	S70	M	passC	
+L13	42	S74	M	passC	
+L13	43	S70	M	passC	
+L13	44	S75	H	passC	
+L13	45	X_TRI	M	passC	
+L13	46	S56	H	lookalike 2-of-3	
+L13	47	S45	M	passC	
+L13	48	S93	M	passC	
+L14	1	S84	M	passC	
+L14	2	S74	H	lookalike 2-of-3	
+L14	3	S70	M	passC	
+L14	4	S23	M	passC	
+L14	5	S69	M	passC	
+L14	6	S75	H	passC	
+L14	7	S40	M	passC	
+L14	8	S65	M	passC	
+L14	9	S61	M	lookalike 2-of-3	
+L14	10	S70	M	passC	
+L14	11	S74	M	passC	
+L14	12	S74	M	lookalike 2-of-3	
+L14	13	S69	M	passC	
+L14	14	S93	M	passC	
+L14	15	S76	M	lookalike 2-of-3	
+L14	16	S75	H	passC	
+L14	17	S47	M	passC	
+L14	18	S84	M	passC	
+L14	19	S88	M	passC	
+L14	20	S93	M	passC	
+L14	21	?	L	lookalike UNSETTLED	L14.21: readers S31/S94, look-alike S31 (L); which of ?, S31, S94?
+L14	22	S65	M	passC	
+L14	23	S74	H	lookalike 2-of-3	
+L14	24	S52	M	passC	
+L14	25	S23	M	passC	
+L14	26	S53	M	passC	
+L14	27	S35	M	passC	
+L14	28	S20	M	passC	
+L14	29	X_TRI	M	passC	
+L14	30	S74	M	passC	
+L14	31	S88	M	passC	
+L14	32	S53	M	lookalike 2-of-3	
+L14	33	S80	H	lookalike 2-of-3	
+L14	34	S52	M	passC	
+L14	35	S52	M	passC	
+L14	36	S47	M	passC	
+L14	37	S65	M	passC	
+L14	38	S94	M	passC	
+L14	39	S35	M	passC	
+L14	40	S76	H	lookalike 2-of-3	
+L14	41	S88	M	passC	
+L14	42	S84	M	passC	
+L14	43	S65	M	passC	
+L14	44	S40	M	passC	
+L15	1	S40	M	lookalike 2-of-3	
+L15	2	S65	M	passC	
+L15	3	S49	M	passC	
+L15	4	S52	M	passC	
+L15	5	S26	M	passC	
+L15	6	S75	H	passC	
+L15	7	S45	M	passC	
+L15	8	S74	H	lookalike 2-of-3	
+L15	9	S65	M	passC	
+L15	10	S74	H	lookalike 2-of-3	
+L15	11	S93	M	passC	
+L15	12	S74	M	lookalike 2-of-3	
+L15	13	S70	M	passC	
+L15	14	S93	M	passC	
+L15	15	S88	M	passC	
+L15	16	S40	M	passC	
+L15	17	S74	H	lookalike 2-of-3	
+L15	18	S70	M	passC	
+L15	19	S74	M	passC	
+L15	20	S75	H	passC	
+L15	21	S23	M	passC	
+L15	22	S74	H	lookalike 2-of-3	
+L15	23	S70	M	passC	
+L15	24	S56	H	lookalike 2-of-3	
+L15	25	S88	M	passC	
+L15	26	S35	M	passC	
+L15	27	S61	M	passC	
+L15	28	S70	M	passC	
+L15	29	S69	M	passC	
+L15	30	S65	M	passC	
+L15	31	S74	M	lookalike 2-of-3	
+L15	32	S74	M	lookalike 2-of-3	
+L15	33	S93	M	passC	
+L15	34	S45	M	passC	
+L15	35	S76	M	lookalike 2-of-3	
+L15	36	S75	H	passC	
+L15	37	S56	H	lookalike 2-of-3	
+L15	38	S62	M	passC	
+L15	39	S88	M	passC	
+L15	40	S61	M	lookalike 2-of-3	
+L15	41	S75	H	passC	
+L15	42	S49	M	passC	
+L15	43	S93	M	passC	
+L16	1	S70	M	passC	
+L16	2	S49	M	passC	
+L16	3	S35	M	passC	
+L16	4	S74	M	passC	
+L16	5	S52	M	passC	
+L16	6	S23	H	lookalike 2-of-3	
+L16	7	S89	H	passC	
+L16	8	S70	M	passC	
+L16	9	S74	M	passC	
+L16	10	S52	M	passC	
+L16	11	S74	H	lookalike 2-of-3	
+L16	12	S57	M	passC	
+L16	13	S69	M	passC	
+L16	14	S75	H	passC	
+L16	15	S93	M	passC	
+L16	16	S40	M	passC	
+L16	17	S69	M	passC	
+L16	18	S93	M	passC	
+L16	19	S47	M	passC	
+L16	20	S94	M	passC	
+L16	21	S75	H	passC	
+L16	22	S62	M	passC	
+L16	23	S93	M	passC	
+L16	24	S23	M	passC	
+L16	25	S25	M	lookalike 2-of-3	
+L16	26	S42	M	lookalike 2-of-3	
+L16	27	S52	M	passC	
+L16	28	S74	M	passC	
+L16	29	S52	M	passC	
+L16	30	S57	M	passC	
+L16	31	S65	M	passC	
+L16	32	S56	H	lookalike 2-of-3	
+L16	33	S53	M	passC	
+L16	34	S93	M	passC	
+L16	35	X_NEW	M	passC	
+L16	36	?	L	lookalike UNSETTLED	L16.36: readers S84/S40, look-alike S84 (L); which of ?, S40, S84?
+L16	37	S40	M	lookalike 2-of-3	
+L16	38	S93	M	passC	
+L16	39	S74	M	passC	
+L16	40	S70	H	lookalike 2-of-3	
+L16	41	S94	M	passC	
+L16	42	S97	M	passC	
+L16	43	S45	M	passC	
+L16	44	S74	H	lookalike 2-of-3	
+L17	1	S80	H	lookalike 2-of-3	
+L17	2	S23	H	lookalike 2-of-3	
+L17	3	S74	M	lookalike 2-of-3	
+L17	4	S65	M	passC	
+L17	5	S69	M	passC	
+L17	6	S52	M	passC	
+L17	7	S89	H	passC	
+L17	8	S93	M	passC	
+L17	9	S57	M	passC	
+L17	10	S69	M	passC	
+L17	11	S70	M	passC	
+L17	12	S47	M	passC	
+L17	13	S52	M	passC	
+L17	14	S94	M	passC	
+L17	15	S75	H	passC	
+L17	16	S56	H	lookalike 2-of-3	
+L17	17	S35	M	passC	
+L17	18	S74	M	passC	
+L17	19	S73	H	lookalike 2-of-3	
+L17	20	S40	M	passC	

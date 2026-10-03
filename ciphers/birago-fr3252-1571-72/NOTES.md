@@ -455,7 +455,7 @@ objective's power to separate the phases. No token is graded. Novelty is not cla
 Cost and requests: disk only, no network, no subagents.
 
 ## Remaining gaps (NEVBIR-3252-B, 2 Oct 2026)
-Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged after NEVBIR-47C, 3 Oct 2026). f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
 - f.117r reader error 0.25 - blocker: not-attempted; no third reader this job (rate limit allowed_warning); next: look-alike pass on the T60/T86, T83/T81, T95/T51/T65, T90/T45 tiles using the 1572 confusion map, or a blind third reader, then re-run harvest/f117/run_tests.sh at the new error, ~$3
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
 - f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then re-run decode_control on the whole block, ~$10
@@ -467,7 +467,7 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 27
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested: French, z 2.8-3.1, not licensed at 0.25), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; BIRAGO-NUM2: crib drag weak by control, no crib-backed value; BIRAGO-NUM3: joint phase+key anneal [retired] for this hypothesis, instrument tools/families/phased_homophonic.py, control 0.386 below gate; next decoy-null joint-consistency crib test)
+- [ ] key-rebuild: f.47r S74/S54, S80/S65, S76/S91 pair check against the f.36 gloss; T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; BIRAGO-NUM2: crib drag weak by control, no crib-backed value; BIRAGO-NUM3: joint phase+key anneal [retired] for this hypothesis, instrument tools/families/phased_homophonic.py, control 0.386 below gate; next decoy-null joint-consistency crib test)
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r at lower reader error; f.47r whole block
 Verdict: keep going: 5 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3
@@ -538,7 +538,7 @@ straight (se rend droit) [there] ... to facilitate ... before us (devant nous) .
 Subagents: 2 Opus calls (third reader, one per half-leaf). Network requests: none. f.47r passes not run this job (budget).
 
 ## Remaining gaps (NEVBIR-117C, 2 Oct 2026)
-Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 276 signs decoded at 2-of-3, all M/U, not licensed (z 3.2, rank 1/201, judge FAIL); f.47r: 157 signs tested, not licensed.
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged after NEVBIR-47C, 3 Oct 2026). f.117r: 276 signs decoded at 2-of-3, all M/U, not licensed (z 3.2, rank 1/201, judge FAIL); f.47r: 157 signs tested, not licensed.
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error, so no figure exists yet; next: power control at a known-answer error for the look-alike step (LESSONS.md "Look-alike pass" no.87 figure) with 100 windows instead of 20, disk only, ~$1
 - f.117r 12 unsettled tiles - blocker: not-attempted; the third reader marked them L or split from both readers, so they are written as sign-sorter focus rows (harvest/f117/la/focus.tsv); next: tools/sign_sorter.py --focus harvest/f117/la/focus.tsv
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
@@ -551,7 +551,7 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 27
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested twice: z 2.8 one-eye, 3.2 at 2-of-3; judge FAIL), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 joint phase+key anneal
+- [ ] key-rebuild: f.47r S74/S54, S80/S65, S76/S91 pair check against the f.36 gloss; T88=q pre-registered test on another leaf; f.100r + f.119 joint phase+key anneal
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r done at 2-of-3 (NEVBIR-117C); power at a measured post-look-alike error not run; f.47r whole block
 Verdict: keep going: 6 internal gaps; cheapest next: f.117r power control at a known-answer look-alike error, ~$1
@@ -630,9 +630,9 @@ Files: `harvest/f47/reading_{recon,recon_norm,passA,passB}.txt`.
 Requests this job: 0 network. Subagents: 2 Sonnet calls (passes A and B). No third call (rate limit `allowed_warning`).
 
 ## Remaining gaps (NEVBIR-47, 2 Oct 2026)
-Read so far: 0 tokens graded S or better of about 1,980 cipher signs. The Ceppo-Nevers key is control-backed for f.47r (z 3.4-4.6, rank 1/201 in every run, power 19-20/20 at 0.33-0.34), but the text is not: 771 signs decoded, all M/U, judge FAIL. f.117r: 276 signs, all M/U.
-- f.47r reader error 0.33 - blocker: not-attempted; two Sonnet passes with no H rows and no third eye (rate limit); next: blind third reader (Opus) on the 257 split tiles of harvest/f47/recon_norm_disagreements.tsv, 2-of-3, then re-run decode_control and the judge, ~$3
-- f.47r 257 unsettled tiles - blocker: not-attempted; written as sign-sorter focus rows (harvest/f47/focus.tsv); next: tools/sign_sorter.py --focus harvest/f47/focus.tsv
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs (unchanged after NEVBIR-47C, 3 Oct 2026). The Ceppo-Nevers key is control-backed for f.47r (z 3.4-4.6, rank 1/201 in every run, power 19-20/20 at 0.33-0.34), but the text is not: 771 signs decoded, all M/U, judge FAIL. f.117r: 276 signs, all M/U.
+- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C: 178 of 197 split tiles settled 2-of-3, 19 unsettled, key z 4.17-4.73, judge still FAIL -1.543); the third reader took the same side of every frequent pair (S74 over S54 x39, S80 over S65 x28, S76 over S91 x21), so the pair choice is unverified; next: known-answer check of those three pairs on the fr.3252 f.36 glossed witness (glossed signs give the true member), disk only, ~$2
+- f.47r 79 unsettled positions (19 third-reader UNSETTLED in harvest/f47/la/focus.tsv + 60 one-reader gaps) - blocker: not-attempted; written as sign-sorter focus rows; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
 - f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so L01-L03 and L17 run edges are unchecked; next: eye-check the s1 crops of L01-L03 and L17 s1-s2 against the passes, disk only, ~$1
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error with 100 windows, disk only, ~$1
 - f.117r 12 unsettled tiles - blocker: not-attempted; sorter focus rows (harvest/f117/la/focus.tsv); sorter inputs built 3 Oct 2026 (SORTER-BIRAGO2, `sorter/README.md`, 277 tiles, 12 in the focus box), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
@@ -644,10 +644,10 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. The Ceppo-
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r whole letter (control-backed, NEVBIR-47), 1572 key on f.117r (z 3.2, judge FAIL), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
+- [ ] key-rebuild: f.47r S74/S54, S80/S65, S76/S91 pair check against the f.36 gloss; T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut, all 17 lines read twice
-- [ ] retry: f.47r third reader on 257 split tiles; f.117r power at a measured post-look-alike error
-Verdict: keep going: 7 internal gaps; cheapest next: f.47r blind third reader on the split tiles, ~$3
+- [x] retry: f.47r third reader on 197 split tiles (NEVBIR-47C); [ ] f.117r power at a measured post-look-alike error; f.47r pair check on the f.36 glossed witness
+Verdict: keep going: 7 internal gaps; cheapest next: f.47r pair check of the three one-sided pairs against the f.36 glossed witness, ~$2
 
 ## NEVBIR-NAMES (3 Oct 2026, account 2 for the account-3 orchestrator): whole-name gap fill, f.117r exploratory only
 
@@ -657,3 +657,48 @@ f.117r has no S tokens (all 251 keyed signs M), so the pre-registered rule (fixe
 finds one U run >= 3 on the leaf (L01 start, before "mguila") and no admissible name; both controls p95 0.0. The leaf's names are
 already given by word signs (turino L01, carmagnola L03). f.47r not run: 0.66 two-reader agreement and a live NEVBIR-47C third-reader
 claim at 00:13 UTC. HYPOTHESES.md row (created this job). No reading changed; disk only, 0 requests.
+
+## NEVBIR-47C (3 Oct 2026, account 3 orchestrator's worker): f.47r third reader on the split tiles
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-nevbir-47c.md`. Disk only, 0 network requests. Pre-registration pushed before the
+read: `harvest/f47/la/PREREG.md` (commit 4916ba6a). No class, no novelty wording.
+
+**Third reader.** `tools/lookalike_pass.py confusion` + `packet` on `recon_norm_agreement.tsv` / `recon_norm.tsv`, filtered to the
+197 split tiles (`la/f47_split_tiles.tsv`; the brief's 257 = these 197 + 60 one-reader gaps, which are not in recon_norm.tsv and stay
+out). The tool's candidate-cell cut (`--cell 110 --cols 9`) does not match this sheet's grid (1350x1190) and came out garbled, so it
+was deleted and the reader got the full blind sheet with ids instead (tool limitation, noted here, not fixed). One value-blind Opus
+subagent call, prompt `la/f47_reread_prompt.md` (51 recut crops, the blind sheet, the f.36 reference tiles ref_W1-3): 197 rows,
+95 H, 86 M, 16 L, 0 SPLIT, 6 X_NEW (`la/f47_reread.tsv`).
+
+**2-of-3** (`reconcile`, rule as pre-registered): 178 settled (148 with reader A, 30 with B), 19 unsettled -> `la/focus.tsv`;
+residual 19/770 = 0.025 (agreement, not error; never the control's error). Caveat: the third reader resolved every frequent pair
+the same way each time: S74 over S54 (39/39), S80 over S65 (28/28), S76 over S91 (21/21), S56 over S52 (14/14), S23 over S97 (9/10).
+A consistent preference is either a real shape distinction or a reader bias; this job cannot tell which. Since 2-of-3 then only
+picks the reader who shares that preference, those ~110 positions are effectively one reader's call.
+
+**Test** (`decode_control.py la/passD.tsv --shuffles 200 --windows 20 --err 0.33 --extra X_THETA2=r --seed N`; E = the TWO-READER
+error, LESSONS.md "Look-alike pass"):
+
+| run | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at 0.33 |
+|---|---|---|---|---|---|---|---|
+| passD seed 1 | 770 / 776 | -1.5267 | -2.0499 (0.126) | -1.6782 | 4.17 | 1/201 | 20/20, z median 7.72 (min 6.05) |
+| passD seed 2 | 770 / 776 | -1.5267 | -2.0808 (0.117) | -1.7303 | 4.73 | 1/201 | 20/20, z median 7.66 (min 6.19) |
+| passD seed 3 | 770 / 776 | -1.5267 | -2.0739 (0.124) | -1.6548 | 4.42 | 1/201 | 20/20, z median 8.18 (min 6.56) |
+
+(NEVBIR-47 recon: z 3.38-4.24.) The key stays control-backed, margin over the best shuffle 0.13-0.20.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ciphers/birago-fr3252-1571-72/harvest/f47/la/reading_passD_letters.txt`, pasted):
+```
+FAIL language: score=-1.543, null_p99=-1.756, real_p05=-0.9, real_median=-0.83, mode=both, N=776
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+No better than recon (-1.525, which dropped the '?' positions instead of filling them). Pre-registered condition (iii) fails, so
+**no token is graded above M**: 0 H, 0 C, 0 S; 751 decoded positions M, 19 '?' U. Not a reading; no verifier is wanted yet.
+
+**Fragments (M, English gist only; readings `la/reading_passD_s1.txt`).** L10 "molto temp[o]" (a long time); L05 "furono" (they
+were) and "quali" (which); L01 "intende" (understands/intends); L02 "mondo" (world); L13 "nemi[co]" (enemy) and "qual"; L07
+"[s]empre" (always, read with z); L08 "delfin et le" (the Dauphin, or "del fine"), unresolved; L14 "ulti[mam]ente" (lately). Same
+word islands as NEVBIR-47 plus "intende" and "mondo"; the run-on letters between them do not segment. The frequent z (S80 over
+S65 at 28 positions) may be the pair-choice issue above rather than the text.
+
+Subagents: 1 Opus call (third reader). Requests: 0. Rate limit read `allowed_warning` during the job.
