@@ -345,7 +345,7 @@ sign-level output verbatim. Solver suggestion (not done): settle 53's M tokens b
 Waits on the Dresden (Loc. 9941/3 f.268-269) and KHA (A 11/XIV I/4 nr. 26) inquiries named in D2's follow-ups,
 since 24 Sept 2026.
 
-- Run the solver pass on f.266v with key_53 (already built in this folder, never applied) to settle more of 53's 126 M-tokens. S, tools/decode_key.py.
+- Run the solver pass on f.266v with key_53 (already built in this folder, never applied) to settle more of 53's 126 M-tokens. S, tools/decode_key.py. [Stale: F1 applied key_53 to f.266v on 24 Sept 2026; the regrade was run by AVS53, 3 Oct 2026: 51 tokens M->S, 53 now S 289 M 75.]
 - Eye-check SO-SAXONY-126's unapplied sign candidates (l.5 pos 11/17, l.6 'adesn'/'slagen') against images/00053_p2.png already on disk. S.
 - Re-scan the Rachfahl II.1 HTRC token counts (already fetched) for the 1561/1564 window more closely than D2's one gist pass. S, tools/htrc_ef_headwords.py.
 
@@ -594,9 +594,52 @@ f.134 (page 6, 3745x5836) and f.135 (page 7) read by this verifier from native-r
   "reading up to date": 126 still C 229, M 11; no reading or grade changed, so AUDIT.md gets a one-line propagation note and the
   SECOND-OPINIONS-QUEUE rows (SO-SAXONY-126, SO-SAXONY-53-57) need no update.
 
+## AVS53: key_53 dictionary regrade of 53's M tokens (3 Oct 2026, worker AVS53, account 2, LANE-A2PUSH3)
+
+Intake gate: `python3 tools/intake_gate_check.py august-van-saksen-1561-64` -> "august-van-saksen-1561-64: partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines", exit 0.
+
+**Premise.** The brief (and "While waiting" bullet 1) asked for key_53 to be applied to f.266v. That was already done by F1 on
+24 Sept 2026: f.266v is 53 p2 (`images/00053_p2.png`, rows `53p2_L01`-`L03` in `ciphertext_53.tsv`), 53's own system, read
+with key_53 unchanged. Nothing was re-decoded. What was left of the step is the regrade: whether key_53's decodes support
+moving any of 53's 126 M tokens (all transcription-doubt flags: 118 agree-flagged, 10 pass splits, 2 sign-9) to S.
+
+**Pre-registered** in `prereg_avs53.md` (commit 3221d9bb for test A; test B appended in 34751adb after A's result and before
+any B score). Dictionary: genuine period German only -- `tools/data/de17` word types (count >= 2) plus the sibling
+decipherment texts on disk (align_74, plaintext_74, plaintext_98, align_124); `tools/data/de16/composed_enhg.txt` excluded
+(model-composed, topic-overlapping). Control (rule 3): key_53 values permuted within four frequency bands, 1000 draws, seed 53;
+it can differ, since permuting values changes the decoded letters whose dictionary membership is counted.
+
+| test | statistic | key_53 | control mean | control p99 / max | gate | tokens moved M->S |
+|---|---|---|---|---|---|---|
+| A (`regrade_53.py`) | share of DOT-units in dictionary (24 units) | 0.500 | 0.070 | 0.208 / 0.250 | PASS | 20 of 124 eligible |
+| B (`regrade_53b.py`) | share of letters covered by dictionary pieces >= 3 (DP segmentation) | 0.863 | 0.270 | 0.437 / 0.516 | PASS | 31 of the remaining 104 |
+
+Per-token conditions: the token's unit (A) or covering piece of length >= 4 (B) is in the dictionary under key_53, the same
+position reaches the dictionary in <= 5% of control draws, and for a pass-split row the other pass's sign does not also reach
+it. Per-token rows with control rates: `regrade_53.tsv`, `regrade_53b.tsv`. Of the 10 pass-split rows, 3 moved (test B: 53_L05 pos 3, 53_L08
+pos 4, 53_L10 pos 22, all SG read l vs pass B's sign 6, which is not in key_53, so condition (c) could not test the other
+reading -- weaker support than the agree-flagged rows); none of the 6 splits whose other reading is in key_53 moved (G1/G7
+splits both read s, so (c) blocks them by design; the split changes no letter of the reading). Moved tokens are mostly in zeittung, khomen sollen, hertzog
+von, hab, werden (A) and in printzen, hispanien, wolle, konigreich, gute oder, mals, zuberzu- (B).
+
+The 51 moved tokens are exception rows (grade S, reason "AVS53 test A/B") in `exceptions_53.tsv`, with
+`exception_grade_overrides_conf` set for job 53 only; `ciphertext_53.tsv` is not edited and keeps every doubt flag.
+`python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check`: "ciphertext_53.tsv: tokens 364: M 75, S 289",
+"reading up to date", exit 0. `regrade_53.py --check` and `regrade_53b.py --check` exit 0. The reading text is unchanged.
+
+**53 grades now: H 0, C 0, S 289, M 75, I 0, U 0** (was S 238, M 126). Still a cryptanalytic result (no H or C). No judge:
+no `specs/` file for this target.
+
+**Limit.** key_53 was annealed from this same transcription, so dictionary words are partly a consequence of the fit; the
+control measures chance, not fitting. S here means "key_53 reads this flagged sign into a period-German word beyond chance";
+the image was not re-read. The 75 M left are mostly in names and unsegmented runs (neiuuer, itc-, Vandosmen, Navarra,
+geschret, mrch) and the 3 pass splits and 2 sign-9 tokens -- what the native-resolution re-read (Remaining gaps) settles.
+Searched: on disk only, no network. Not found: nothing on disk extends key_53 (as NEXT-AVS found).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: 714 of 904 cipher tokens firm (79.0%: C 476 + S 238), M 190, U 0, from `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check` (rerun 2 Oct 2026 23:0x UTC by A2-AVS4, exit 0, "reading up to date"): 126 C 229 of 240 (95.4%, key_98 from the decipherments f.67 and, since A2-AVS4, WVO 124 f.135; filled-Λ m and down-arrow k from A2-AVS3), 57 C 247 of 300 (82.3%, key_74 from f.19), 53 S 238 of 364 (65.4%, no H or C: a cryptanalytic result; matched control 280/282, 99.3%, solve_53_control.json)
-- 53 p1+p2 (f.266r-v, 13 cipher lines; 126 M, incl. 'zuberzuschreiben' l.2, 'geschret' l.7, 'mrch' L10 pos 26) - blocker: not-attempted; passes cut from the 100 dpi images/00053_p1.png (passbrief_s1.md, 90.9% agreement, recon53/disagreements.tsv 28 rows), p2 read once at 100 dpi (F1); the native JPEG (2567x4187, about 309 dpi, images/manifest.json) was never used for passes, and S1's own suggestion ("a native-resolution re-read ... would settle the 119 M tokens") and SO-SAXONY-53-57's spot checks were never run; next: fetch 00053.pdf once, `tools/iiif_lines.py --image` crops pasted, two blind passes per page + one reconciliation (5 subagent calls at about $1.46 each), tools/reconcile_passes.py, then decode_key.py --check and regrade, ~$9
+Read so far: 765 of 904 cipher tokens firm (84.6%: C 476 + S 289), M 139, U 0 (AVS53, 3 Oct 2026: 53's regrade, decode_key.py --check exit 0; figures below from earlier runs except 53's), from `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check` (rerun 2 Oct 2026 23:0x UTC by A2-AVS4, exit 0, "reading up to date"): 126 C 229 of 240 (95.4%, key_98 from the decipherments f.67 and, since A2-AVS4, WVO 124 f.135; filled-Λ m and down-arrow k from A2-AVS3), 57 C 247 of 300 (82.3%, key_74 from f.19), 53 S 238 of 364 (65.4%, no H or C: a cryptanalytic result; matched control 280/282, 99.3%, solve_53_control.json)
+- 53 p1+p2 (f.266r-v, 13 cipher lines; 126 M, 75 since AVS53's key_53 dictionary regrade on 3 Oct 2026 (51 to S, prereg_avs53.md; the regrade does not replace an image re-read), incl. 'zuberzuschreiben' l.2, 'geschret' l.7, 'mrch' L10 pos 26) - blocker: not-attempted; passes cut from the 100 dpi images/00053_p1.png (passbrief_s1.md, 90.9% agreement, recon53/disagreements.tsv 28 rows), p2 read once at 100 dpi (F1); the native JPEG (2567x4187, about 309 dpi, images/manifest.json) was never used for passes, and S1's own suggestion ("a native-resolution re-read ... would settle the 119 M tokens") and SO-SAXONY-53-57's spot checks were never run; next: fetch 00053.pdf once, `tools/iiif_lines.py --image` crops pasted, two blind passes per page + one reconciliation (5 subagent calls at about $1.46 each), tools/reconcile_passes.py, then decode_key.py --check and regrade, ~$9
 - 53 key (key_53.tsv, 20 signs all S; sign 9 = f by context, exceptions_53.tsv) - blocker: not-attempted on the only route left; the WVO 58 route was run 2 Oct 2026 (NEXT-AVS step above): 58 is System A, read by key_74 (46/60 letter-words match its f.272 decipherment; key_53 0/60; shuffled-key control mean 0.18/60), so 58 cannot extend key_53 and no sibling with a decipherment shares 53's system (74, 98, 153, 175, 58 all checked); next: the 53 native re-read (gap above) and the KHA Japikse copy of 53 (ASKS 67); a solver re-run is not a next step while the transcription carries 126 M
 - 57 p3 (KHA A 11/XIV B/41-6, 7 lines; 48 transcription-doubt M) - blocker: not-attempted; passA_57/passB_57 agree on 84.8% of columns (recon57/disagreements.tsv, 49 rows), cut from the 100 dpi images/00057_p3.png (passbrief_s1.md); R21 fetched native scans for 74/98/126/53 only, never 57 (R21 "Requests"); next: fetch 00057.pdf, crop p3's 7 lines with `tools/iiif_lines.py --image`, two blind passes + one reconciliation (3 subagent calls), decode_key.py --check, regrade, ~$6
 - 57 p3 word signs outside key_74 (OQ 'wir', THE x2 'Keiser', BOX 'Churfurs-', G1h 'x'; 5 tokens M by context, exceptions_57.tsv) - blocker: waiting-on the Dresden Hauptstaatsarchiv's reply on the minute of WVO 57 (Loc. 9941/3 Bl. 268r-269v 'Zettel', request sent 26 Sept 2026 18:20 UTC, CONTRIBUTIONS.md 'Dresden minute of WVO 57', outreach/dresden-wvo57-minute.md 'reply pending'); both internal sibling routes are now run and negative: WVO 58 (NEXT-AVS, 2 Oct 2026: System A, OQ/THE/BOX absent from all 15 lines) and WVO 175 (A2-AVS-2, 2 Oct 2026: OQ/THE/BOX absent from all of its about 45 glossed cipher lines, p1-p8, while the same 100 dpi eye finds all three on 57's own crops; 'Chur und Fürsten' glossed 3 times and 'wir' 4+ times over runs with no such sign; 175 is not System A, it writes -en as 3v and und as M); signs absent from 74 (ciphertext_74.tsv has no OQ/THE/BOX/G1h); no other deciphered System A sibling is known
@@ -611,8 +654,8 @@ Read so far: 714 of 904 cipher tokens firm (79.0%: C 476 + S 238), M 190, U 0, f
 - [x] print: Groen, Gachard, Rachfahl (II.1 through HTRC tokens only), von Weber, Kluckhohn I, Goetz 1891, Japikse I (ends Sept 1561), Demandt nrs 113/115 (clear text only), Kervyn II, Weiss, Ritter, Kruse, 24 Google Books gist queries, phrase searches, JSTOR rows 48/49/55/56/63/64/69; no prior decipherment located (AUDIT.md V3, A2, A3, D1, D2, V-GATE2). Groen's printed text of WVO 124 not yet used as a key source (siblings). "While waiting" bullet 3 (closer Rachfahl II.1 HTRC scan) is optional print work, not a reading step
 - [ ] key-rebuild: done for 53 (tools/homophonic_anneal.py, 4 of 6 restarts converge, matched control 280/282; G6 = k by context). Not done: 57's five word signs and 126's K and 1-as-i are context-only (Λ filled = m and the down-arrow = k settled from WVO 124, A2-AVS3, 2 Oct 2026); key_98 extended from WVO 124 (align_124.txt, A2-AVS4, 2 Oct 2026: EL8 das and R E.L. now C, PAPE/K/S added; 9, Pf, M, Ma confirmed); the 98-only '~' units that 124 does not contain (NW, Qf, Mf, HX, Dl, Sg, BAR) stay M because f.67 was never transcribed. Planned: settle the rest from an f.67 transcription or WVO 175 (WVO 58 does not share 53's system, 2 Oct 2026, so key_53 cannot be extended from a sibling; 58 would extend key_74 by two word signs, fried and Religion, at grade C once aligned, a key-register job with no effect on the three targets). No instrument here has failed its own gate even once, so nothing is retired
 - [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). Not done: native-resolution passes for 53 (p1 and p2) and 57 p3; the SO-SAXONY-53-57 spots (l.2, l.7, L10 pos 26) and SO-SAXONY-126 spot 'adesn' never applied ('slagen' and the down-arrow settled on the native f.139 scan by A2-AVS3, 2 Oct 2026). Planned: native crops and two passes for 53 and 57, a native spot re-check on f.139 (against images/00126_p4.png / 00126.pdf, not images/00053_p2.png). "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
-- [ ] retry: no unread groups (U 0); decode_key.py --check exits 0 on an unchanged key and transcription (unchanged since 24 Sept 2026). Planned: rerun decode_key.py --check and regrade all three letters after each image-check or key extension above
-Verdict: keep going: 4 internal gaps (126's '~' key units EL8 and R settled at C from WVO 124 f.134/f.135, A2-AVS4, 2 Oct 2026; 126 now C 229 M 11); cheapest next: native spot re-read on f.139 of the four conf-M signs and 'adesn', ~$3; then a native-resolution alignment of WVO 175's glossed runs against key_98 for NW, Qf, K and 1-as-i, ~$6
+- [ ] retry: AVS53 (3 Oct 2026) re-ran decode_key.py --check after a pre-registered key_53 dictionary regrade of 53 (tests A and B, band-permuted control, 1000 draws, both gates PASS; 51 tokens M->S, 53 now S 289 M 75; NOTES "AVS53"). no unread groups (U 0); decode_key.py --check exits 0 on an unchanged key and transcription (unchanged since 24 Sept 2026). Planned: rerun decode_key.py --check and regrade all three letters after each image-check or key extension above
+Verdict: keep going: 4 internal gaps (126's '~' key units EL8 and R settled at C from WVO 124 f.134/f.135, A2-AVS4, 2 Oct 2026; 126 now C 229 M 11; 53 now S 289 M 75 after AVS53's pre-registered key_53 dictionary regrade, 3 Oct 2026); cheapest next: native spot re-read on f.139 of the four conf-M signs and 'adesn', ~$3; then a native-resolution alignment of WVO 175's glossed runs against key_98 for NW, Qf, K and 1-as-i, ~$6; for 53, the native-resolution re-read of its 75 M (names, unsegmented runs, 3 SG/6 splits), ~$9
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 

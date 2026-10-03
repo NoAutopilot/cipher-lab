@@ -842,3 +842,10 @@ for 126 is now two period decipherments of System B (f.67 and f.135), both `peri
 Rule 10 propagation note, not a verdict (VERIFY-AVS4, 2 Oct 2026): A2-AVS4's three held pairings on WVO 124 were ruled on
 (NOTES.md "VERIFY-AVS4"): the three 'open' Λ re-read as Lf, 1 = i and D = d stay held. No word or grade of 126 changed
 (C 229, M 11); SO-SAXONY-126 needs no update.
+
+## Grade update for 53 (3 Oct 2026, worker AVS53, account 2; not a verifier entry)
+
+53's reading text is unchanged; its grades moved from S 238, M 126 to **S 289, M 75** of 364 after a pre-registered
+key_53 dictionary regrade (NOTES.md "AVS53", prereg_avs53.md; band-permuted key control, 1000 draws, both gates PASS).
+The figures "S 238, M 126" above and in the SO-SAXONY-53-57 prompt are the earlier grades; still no H or C, so the
+class wording "as read cryptanalytically" stands. The regrade is key-side support, not an image re-read.

@@ -65,6 +65,7 @@ summary = (f'units {len(units)}; in-dict under key_53 {sum(real)} ({agg:.3f}); c
            f'p99 {p99:.3f}, max {cagg[-1]:.3f}; gate1 {"PASS" if gate1 else "FAIL"}; eligible {len(out)-1}; '
            f'move {sum(1 for l in out[1:] if l.split(chr(9))[9]=="S")}; dict types {len(DICT)}')
 p = os.path.join(D, 'regrade_53.tsv')
-if '--check' in sys.argv:
-    print(summary); sys.exit(0 if open(p).read() == txt else 1)
-open(p, 'w').write(txt); print(summary)
+if __name__ == '__main__':
+    if '--check' in sys.argv:
+        print(summary); sys.exit(0 if open(p).read() == txt else 1)
+    open(p, 'w').write(txt); print(summary)

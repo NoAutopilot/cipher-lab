@@ -1,0 +1,105 @@
+line	pos	sign	value	unit	cover_len	ctrl_rate	differ_alt	alt_cover_len	move	why
+53_L01	7	V	r	neiwer	0	0.011			M	agree-flagged
+53_L01	24	G3	h	ich	3	0.000			M	agree-flagged
+53_L01	27	Xk	t	itcmalsn	0	0.011			M	agree-flagged
+53_L01	28	4	c	itcmalsn	0	0.018	Z	0	M	differ
+53_L02	1	F	m	itcmalsn	4	0.027			S	agree-flagged
+53_L02	3	SG	l	itcmalsn	4	0.016			S	agree-flagged
+53_L02	4	G1	s	itcmalsn	4	0.012			S	agree-flagged
+53_L02	9	G3	h	icht	3	0.012			M	agree-flagged
+53_L02	10	Xk	t	icht	0	0.012			M	agree-flagged
+53_L02	12	Z	z	zuberzuschreibendandas	0	0.001			M	agree-flagged
+53_L02	16	V	r	zuberzuschreibendandas	4	0.043			S	agree-flagged
+53_L02	17	Z	z	zuberzuschreibendandas	11	0.033			S	agree-flagged
+53_L02	19	G1	s	zuberzuschreibendandas	11	0.035			S	agree-flagged
+53_L02	21	G3	h	zuberzuschreibendandas	11	0.078			M	agree-flagged
+53_L02	22	V	r	zuberzuschreibendandas	11	0.093			M	agree-flagged
+53_L03	7	G7	s	zuberzuschreibendandas	3	0.006			M	agree-flagged
+53_L03	11	F	m	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.013			M	agree-flagged
+53_L03	12	G4	p	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	8	0.051			M	agree-flagged
+53_L03	13	V	r	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	8	0.071			M	agree-flagged
+53_L03	16	Xk	t	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	8	0.038			S	agree-flagged
+53_L03	17	Z	z	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	8	0.028			S	agree-flagged
+53_L03	19	5	n	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	8	0.028			S	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L03	20	Z	z	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	0	0.038			M	agree-flagged
+53_L03	22	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	9	0.034			S	agree-flagged
+53_L03	24	G7	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	9	0.027			S	agree-flagged
+53_L03	25	G4	p	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	9	0.024			S	agree-flagged
+53_L04	1	G7	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	6	0.077			M	agree-flagged
+53_L04	6	G1	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	6	0.046			S	agree-flagged
+53_L04	7	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.064			M	agree-flagged
+53_L04	9	V	r	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.104			M	agree-flagged
+53_L04	13	Xk	t	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	6	0.024			S	agree-flagged
+53_L04	14	Xk	t	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	6	0.043			S	agree-flagged
+53_L04	16	V	r	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	6	0.054			M	agree-flagged
+53_L04	17	G7	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	0	0.053			M	agree-flagged
+53_L04	18	G7	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.035	G1	4	M	differ
+53_L04	20	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.058			M	agree-flagged
+53_L04	24	G1	s	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.014			M	agree-flagged
+53_L04	25	Xk	t	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.023			M	agree-flagged
+53_L04	27	V	r	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.031			M	agree-flagged
+53_L05	2	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	0	0.026			M	agree-flagged
+53_L05	3	SG	l	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.027			S	differ
+53_L05	6	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	4	0.066			M	agree-flagged
+53_L05	9	V	r	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.087			M	agree-flagged
+53_L05	10	F	m	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	0	0.050			M	agree-flagged
+53_L05	12	G3	h	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	0	0.034			M	agree-flagged
+53_L05	13	SG	l	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.019			M	differ
+53_L05	15	Xk	t	demprintzenzuhispanienseineshernuattersschwesterehlichuermahlet	3	0.011			M	agree-flagged
+53_L05	26	5	n	und	3	0.000			M	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L05	29	G3	h	hieruberdiesselande	4	0.056			M	agree-flagged
+53_L05	32	V	r	hieruberdiesselande	4	0.103			M	agree-flagged
+53_L05	36	V	r	hieruberdiesselande	8	0.068			M	agree-flagged
+53_L06	4	G7	s	hieruberdiesselande	8	0.120	G1	8	M	differ
+53_L06	5	G7	s	hieruberdiesselande	0	0.115	G1	0	M	differ
+53_L06	7	SG	l	hieruberdiesselande	5	0.034			S	agree-flagged
+53_L06	13	Z	z	z	0	0.000			M	agree-flagged
+53_L06	17	V	r	wregieren	8	0.068			M	agree-flagged
+53_L06	22	V	r	wregieren	8	0.121			M	agree-flagged
+53_L07	14	F	m	gemeingeschretisteswolle	6	0.064			M	agree-flagged
+53_L07	21	G1	s	gemeingeschretisteswolle	3	0.049			M	agree-flagged
+53_L07	23	G3	h	gemeingeschretisteswolle	3	0.053			M	agree-flagged
+53_L07	24	V	r	gemeingeschretisteswolle	3	0.071			M	agree-flagged
+53_L07	26	Xk	t	gemeingeschretisteswolle	0	0.034			M	agree-flagged
+53_L07	29	G1	s	gemeingeschretisteswolle	3	0.011			M	agree-flagged
+53_L07	30	Xk	t	gemeingeschretisteswolle	3	0.008			M	agree-flagged
+53_L07	32	G1	s	gemeingeschretisteswolle	0	0.016			M	agree-flagged
+53_L08	3	G2	o	gemeingeschretisteswolle	5	0.038			S	agree-flagged
+53_L08	4	SG	l	gemeingeschretisteswolle	5	0.029			S	differ
+53_L08	5	SG	l	gemeingeschretisteswolle	5	0.029			S	agree-flagged
+53_L08	6	1	e	gemeingeschretisteswolle	5	0.010			S	agree-flagged
+53_L08	10	V	r	der	3	0.000			M	agree-flagged
+53_L08	25	5	n	uandosmenseinkonigreich	3	0.008			M	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L08	27	G2	o	uandosmenseinkonigreich	0	0.014			M	agree-flagged; triangle carries two dots (diaeresis)
+53_L08	28	G7	s	uandosmenseinkonigreich	0	0.006			M	agree-flagged
+53_L08	31	5	n	uandosmenseinkonigreich	3	0.032			M	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L09	1	G1	s	uandosmenseinkonigreich	4	0.083	G7	4	M	differ
+53_L09	4	5	n	uandosmenseinkonigreich	4	0.074			M	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L09	5	G6	k	uandosmenseinkonigreich	10	0.038			S	agree-flagged
+53_L09	6	G2	o	uandosmenseinkonigreich	10	0.023			S	agree-flagged
+53_L09	7	5	n	uandosmenseinkonigreich	10	0.048			S	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L09	10	V	r	uandosmenseinkonigreich	10	0.089			M	agree-flagged
+53_L09	14	G3	h	uandosmenseinkonigreich	10	0.006			S	agree-flagged
+53_L09	16	5	n	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.000			M	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L09	20	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.000			M	settled: image: V under an ink blot; M
+53_L09	21	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.005			M	agree-flagged
+53_L09	23	F	m	nauarramitderguteoderkrigwiederholenmrchdunck	3	0.031			M	agree-flagged
+53_L09	25	Xk	t	nauarramitderguteoderkrigwiederholenmrchdunck	3	0.050			M	agree-flagged
+53_L09	28	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	3	0.066			M	agree-flagged
+53_L10	3	Xk	t	nauarramitderguteoderkrigwiederholenmrchdunck	4	0.041			S	agree-flagged
+53_L10	5	G2	o	nauarramitderguteoderkrigwiederholenmrchdunck	4	0.043			S	agree-flagged
+53_L10	8	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	4	0.059			M	agree-flagged
+53_L10	9	G6	k	nauarramitderguteoderkrigwiederholenmrchdunck	4	0.080			M	agree-flagged
+53_L10	10	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	4	0.083			M	agree-flagged
+53_L10	19	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	11	0.033			S	agree-flagged
+53_L10	21	G2	o	nauarramitderguteoderkrigwiederholenmrchdunck	11	0.009			S	agree-flagged
+53_L10	22	SG	l	nauarramitderguteoderkrigwiederholenmrchdunck	11	0.013			S	differ
+53_L10	24	5	n	nauarramitderguteoderkrigwiederholenmrchdunck	11	0.027			S	S and 5 are one glyph in this hand (checked L01 pos 1, L09); passes split them
+53_L10	25	F	m	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.037			M	agree-flagged
+53_L10	26	V	r	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.040	G7	3	M	differ
+53_L10	28	G3	h	nauarramitderguteoderkrigwiederholenmrchdunck	0	0.050			M	agree-flagged
+53p2_L01	19	SG	l	dieweilderkonnigzufranckreich	7	0.068			M	F1 single reading, f.266v 100dpi; sigma loop after X, read as SG
+53p2_L01	29	Z	z	dieweilderkonnigzufranckreich	0	0.017			M	F1 single reading, f.266v 100dpi; Z with a bar (Ʒ), read as Z
+53p2_L02	11	G7	s	nochsoiungisteswerdekeinenfurganggewinnen	0	0.018			M	F1 single reading, f.266v 100dpi; lambda-like, G7 or X
+53p2_L02	13	X	i	nochsoiungisteswerdekeinenfurganggewinnen	4	0.055			M	F1 single reading, f.266v 100dpi; X with a dot above
+53p2_L02	27	1	e	nochsoiungisteswerdekeinenfurganggewinnen	5	0.059			M	F1 single reading, f.266v 100dpi; upright stroke overwritten/blotted, read as 1

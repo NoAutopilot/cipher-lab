@@ -1,6 +1,6 @@
 {
  "target": "ciphers/august-van-saksen-1561-64",
- "note": "R21, 24 Sept 2026: briefnr 126 p4 (f.139) read with the key aligned from briefnr 98 (key_98.tsv, grade C from its f.67 decipherment). S1, 24 Sept 2026: briefnr 57 p3 read with key_74 (System A). S1: briefnr 53 p1 read with key_53 (cryptanalytic, grade S). F1, 24 Sept 2026: 53 p2 (f.266v, 3 lines) appended and read with key_53; sign 9 = f by context (exceptions_53.tsv).",
+ "note": "R21, 24 Sept 2026: briefnr 126 p4 (f.139) read with the key aligned from briefnr 98 (key_98.tsv, grade C from its f.67 decipherment). S1, 24 Sept 2026: briefnr 57 p3 read with key_74 (System A). S1: briefnr 53 p1 read with key_53 (cryptanalytic, grade S). F1, 24 Sept 2026: 53 p2 (f.266v, 3 lines) appended and read with key_53; sign 9 = f by context (exceptions_53.tsv). AVS53, 3 Oct 2026: 51 transcription-flagged tokens graded S by the pre-registered key_53 dictionary test (prereg_avs53.md, regrade_53.py, regrade_53b.py); exception rows carry the grade, exception_grade_overrides_conf for job 53 only.",
  "jobs": [
   {
    "ciphertext": "ciphertext_126.tsv",
@@ -134,7 +134,8 @@
      "grade"
     ]
    ],
-   "exceptions": "exceptions_53.tsv"
+   "exceptions": "exceptions_53.tsv",
+   "exception_grade_overrides_conf": true
   }
  ]
 }
