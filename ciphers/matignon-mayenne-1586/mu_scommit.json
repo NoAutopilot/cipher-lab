@@ -1,0 +1,69 @@
+{
+ "job": "GAPS3-matignon-mayenne-1586",
+ "known_answer_gain_power_of_3": {
+  "f143r": 1,
+  "f143v": 0,
+  "f154": 0,
+  "f173": 0
+ },
+ "leaves": [
+  {
+   "G1_rises": true,
+   "G2_above_shuffle_max": true,
+   "P1_rise_above_shuffled_target": true,
+   "leaf": "f143r",
+   "letter_shuffle_max": -1.8837,
+   "letter_shuffle_mean": -1.9412,
+   "m_changed": 51,
+   "rise": 0.1435,
+   "score_first": -1.279,
+   "score_scratch": -1.1355,
+   "shuffled_target_rise_max": 0.1236,
+   "shuffled_target_rise_mean": 0.0679
+  },
+  {
+   "G1_rises": true,
+   "G2_above_shuffle_max": true,
+   "P1_rise_above_shuffled_target": false,
+   "leaf": "f143v",
+   "letter_shuffle_max": -1.8589,
+   "letter_shuffle_mean": -1.9014,
+   "m_changed": 48,
+   "rise": 0.0113,
+   "score_first": -1.1581,
+   "score_scratch": -1.1468,
+   "shuffled_target_rise_max": 0.0573,
+   "shuffled_target_rise_mean": 0.0324
+  },
+  {
+   "G1_rises": true,
+   "G2_above_shuffle_max": true,
+   "P1_rise_above_shuffled_target": false,
+   "leaf": "f154",
+   "letter_shuffle_max": -1.8524,
+   "letter_shuffle_mean": -1.9116,
+   "m_changed": 37,
+   "rise": 0.0111,
+   "score_first": -1.1888,
+   "score_scratch": -1.1778,
+   "shuffled_target_rise_max": 0.055,
+   "shuffled_target_rise_mean": 0.0305
+  },
+  {
+   "G1_rises": true,
+   "G2_above_shuffle_max": true,
+   "P1_rise_above_shuffled_target": false,
+   "leaf": "f173",
+   "letter_shuffle_max": -1.8732,
+   "letter_shuffle_mean": -1.9293,
+   "m_changed": 31,
+   "rise": 0.0009,
+   "score_first": -1.24,
+   "score_scratch": -1.239,
+   "shuffled_target_rise_max": 0.0534,
+   "shuffled_target_rise_mean": 0.0277
+  }
+ ],
+ "prereg": "mu_scommit_prereg.md",
+ "verdict": "NON-TEST (G1, G2 pass 4/4 but the rise does not beat the shuffled-target rise on every leaf): nothing committed"
+}
