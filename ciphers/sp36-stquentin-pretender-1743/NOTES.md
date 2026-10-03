@@ -1,4 +1,5 @@
 open
+James Browne, *A History of the Highlands and of the Highland Clans* vol. 2 (archive.org `vol2historyofhig00brow`, djvu text grepped whole by GF4-BATCH10 (account-4), 3 Oct 2026), whose appendix prints Stuart Papers from Windsor for 1743 (nos. VIII-XXIII, pp. 440-452, Feb-Dec 1743), contains no letter from "St Quentin" (0 hits for "Quentin" in the volume) and no Mathews intercept; Browne vols 1 and 3 (`historyofhighla01brow`, `b29335206_0003`) and *Memorials of John Murray of Broughton* 1740-47 (SHS 1898, `memorialsofjohnm00murr`) also 0 hits for "Quentin".
 
 # St Quentin to "the Pretender" — TNA SP 36/61/53
 
@@ -92,3 +93,50 @@ Waits on: a TNA page-copy order for SP 36/61/53 (REQUEST.md, since 24 Sept 2026)
 - S: confirm digitisation status of SP 36/61 f.53 by record id -- not yet checked this pass, may already be online, before ordering -- tools/discovery_items.py.
 - S: identify 'St Quentin' against the already-fetched Jacobite context (Coghlan, Bethune de Pologne, Flyn) via a targeted name search.
 - S: cross-check the four neighbouring 1743 intercepts (f.18, 51, 117, 120) in the same piece for any reference to 'St Quentin', not yet compared against each other.
+
+## Check-solved addendum (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+Gate fix for the missing standard-edition citation. No printed calendar covers SP 36 for 1743 (the State Papers Domestic calendars
+stop before George II's reign, the HMC *Stuart Papers* calendar ends Dec 1718, see the 24 Sept sweep), so this pass read the printed
+selections of the Stuart Papers that do reach 1743, by full djvu-text grep (archive.org, no login): Browne, *History of the Highlands*
+vols 1-3 (vol. 2 appendix nos. VIII-XXIII, pp. 440-452, prints the Chevalier's and his agents' letters of Feb-Dec 1743 -- Sempil,
+O'Bryen, Lord John Drummond, Albano 12 June 1743 -- none from or naming "St Quentin", no Mathews intercept); and *Memorials of John
+Murray of Broughton* (SHS 1898; 55 hits for "1743", appendix letters of 23 Dec 1743, p. 493): 0 hits for "Quentin" in all four
+volumes; "Coghlan" and "Flyn" (the neighbouring f.18/f.120 correspondents) also 0. TNA Discovery record C7768193 re-fetched by id:
+`digitised: false`, note "French. Part in cypher." (closes the 24 Sept "digitised not confirmed" caveat). Verdict: **open**,
+unchanged -- a search result, not a discovery (rule 10). Still unread: the Windsor Stuart Papers themselves (uncalendared after 1718).
+
+## Web and blog check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+WebSearch, 3 Oct 2026: (1) `"St Quentin" Jacobite agent 1743 letter Pretender intercepted Admiral Mathews` -- Wikipedia pages
+(Mathews, James Francis Edward Stuart, Dudley Bradstreet), Thomson's *Memoirs of the Jacobites* (Gutenberg), a freemasonry article;
+none names St Quentin as a correspondent or this letter. (2) `"SP 36/61" cypher Pretender 1743` -- TNA catalogue pages for SP 36/62
+items (C7768257, C7768333, C7768334: the Pretender's order to Waters, commission to Campbell, 23 Dec 1743 proclamation), not f.53;
+no decipherment. (3) site-restricted to **Cipherbrain** (scienceblogs.de), the **Cryptiana blog** (cryptiana.blogspot.com) and
+**Cipher Mysteries** (ciphermysteries.com), `Jacobite cipher 1743 Pretender intercepted letter` -- Cryptiana forum front page and
+unrelated Cipher Mysteries posts (Milanese letters, La Buse, d'Agapeyeff); no post on this item, so no comment thread to read. (4)
+the folder's title phrase `St. Quentin to the Pretender 1743 Austrian troops Queen of Hungary King of Sardinia Broglie Noailles` --
+War of the Austrian Succession background only. No decipherment or clear text of SP 36/61/53 found on the open web.
+
+## Premise check (GF4-BATCH10 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment: **not found** -- NOTES.md and REQUEST.md mention none; "Part in cypher" is the only
+cipher note. (b) Other solvers' working files: **not found** -- no SP 36/61 or St Quentin item in Bourdeau's or Aymeloglu's
+repository (24 Sept clones, sweep item 5). (c) Physical neighbours: **unreachable as images** (`digitised: false`); by catalogue, the
+24 Sept piece search found no key, decipher or decipherment in SP 36/61, and the neighbouring intercepts f.18, 51, 117, 120 carry no
+cipher note. (d) Recipient's side: **not found** -- the recipient's (the Chevalier's) papers in print for 1743 (Browne vol. 2 appendix
+pp. 440-452; Murray of Broughton's *Memorials*) carry no St Quentin letter; the original Windsor Stuart Papers are unread
+(uncalendared after 1718). Item stays `open`.
+
+## While waiting (3 Oct 2026, GF4-BATCH10)
+
+Waits on: the TNA page copy of SP 36/61/53 (REQUEST.md). Digitisation now confirmed false by record id (3 Oct 2026), so the first
+WAIT-PASS-B bullet above is done.
+
+- S: be-api full-text search for "St. Quentin" with "Chevalier" across the Royal Archives' published Stuart-papers selections
+  (Lang's *Pickle the Spy*, Mahon's *History* appendices) to identify the correspondent -- no login, tools/print_check.py.
+
+Requests this pass (3 Oct 2026): discovery.nationalarchives.gov.uk 1; archive.org 7 (3 advancedsearch, 4 djvu text);
+be-api.us.archive.org 2 (>=1.6 s apart). WebSearch 4.
+
+Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp36-stquentin-pretender-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no standard-edition citation). `tools/next_steps.py --wait-only | grep sp36-stquentin`: no line.
