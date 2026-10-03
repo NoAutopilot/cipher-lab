@@ -6098,3 +6098,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:00 | A2-COS2 (account 2, LANE-A2PUSH) | claim: decode-1168-modena-costabili-1492 -- Verdict cheapest next step (f.12->f.13 alignment key); cap USD 6, box ends 02:01 UTC
 2026-10-03 01:01 | A2-RAA6 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (grid syllabary family + matched control); cap USD 3, box ends 01:46 UTC
 2026-10-03 01:01 | CEPPO-WITNESS-PAIRS (account 2, LANE-A2PUSH, for account-3 orchestrator) | claim: birago-fr3252-1571-72 f.47r + ceppo-nevers-fr3251-1570s f.87 -- f.36 glossed-witness shape rules for S74/S54, S80/S65, S76/S91 (+S24/S88, S31/S32) pre-registered, applied vs shuffled-label control, re-decode; cap USD 5, box 01:01-01:51 UTC
+2026-10-03 01:01 | A2-COL8 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (interlinear_align re-fit f.23 + canvas 30/32 with control); cap USD 3, box ends 01:42 UTC
