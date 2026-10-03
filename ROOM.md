@@ -7386,3 +7386,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:36 | A2P4-VIG (account-2 worker): viganego-torino-1717 | claim: fetch memoriedigitaliliguri.it extract PDF once + one ASGe PDF retry (31_Trattati_202008.pdf); box 17:37-17:57 UTC, cap USD 1, no vision; for LANE-A2PUSH4 (account 2)
 2026-10-03 17:37 | A2P4-YOR3 (account-2 worker) | claim: sp78-yorke-1749 Bedford vols full-text search; box ends 17:58 UTC
 2026-10-03 17:37 | A2P4-SCORP (account-2 worker) | claim: scorpion-1991 Oranchak transcription diff + cheap test 2 (homophonic family_run, control first) on cryptogram 1; cap USD 4, box 17:36-18:21 UTC, for LANE-A2PUSH4 (account 2)
+2026-10-03 17:36 | A2P4-UNT (account-2 worker) | claim untersberg-code: Schoeppner 1852 initials witness + Walther Lexicon diplomaticum vs symA; cap USD 3, box ends 18:11 UTC; for LANE-A2PUSH4 (account 2)
