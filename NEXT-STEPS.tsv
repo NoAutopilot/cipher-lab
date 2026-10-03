@@ -38,8 +38,8 @@ colbert26-lathuillerie-1644	partial	runnable	M	n	25 Sep	Verdict: keep going: 4 i
 courten-diary	open	needs-triage	?	n	2 Oct 2026		--	0
 cylob-c1995	open	needs-triage	?	n	25 Sep		--	0
 debosnys-1883	open	runnable	S	n	25 Sep	**Against 200 NULL-HABIT draws** (the same ids with two favourite successors taken 25 pct of the time, at box level): real-N sits at the habit null's middle (median 13.8, p95 24.8, p 0.245), real-T l…	--	1444
-decode-1162-modena-ambung-1492	open	runnable	M	n	3 Oct 2026	Next step (not run): rebuild Costabili's key from Vestigia 3016 (cipher original, 3 pp.) against Vestigia 4068 / Berzeviczy CLV (clear), then the DECODE logged-in fetch for 1162 (LIKELY-4's command)…	--	214
-decode-1411-hhsta-vienna-1600	open	runnable	M	n		Next step: one DECODE browser login (`tools/decode_browser_login.js 1411 <dir>`) to fetch R1411's images and check the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (ff.	--	261
+decode-1162-modena-ambung-1492	partial	runnable	M	n	3 Oct 2026	## Escalation (MOD1162, 3 Oct 2026) - [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525), MOD1162 3 Oct 2026 - [x] clear-pages: verso and the clear lines read by DECODE d…	--	859
+decode-1411-hhsta-vienna-1600	open	runnable	M	n	3 Oct 2026	Next step: one DECODE browser login (`tools/decode_browser_login.js 1411 <dir>`) to fetch R1411's images and check the leaves against the "Cyffra nova ad Poloniam" key and Kopal's letters A-E (ff.	--	261
 decode-2678-bnf-colbert127-gravel-1665	open	needs-triage	?	n			--	0
 decode-2754-bnf-baluze156-1636	open	runnable	M	n	3 Oct 2026	Step (1) of FT4b's "Next steps": a shape-inventory sweep (no alignment, no reading) of Sabran's other 1636 cipher letters against f.157r's signs.	--	198
 decode-4450-bnf-fr20506-1525	open	needs-person	M	n	3 Oct 2026	Next step for this target: the blocker stays Bourdeau's "no-key-material".		348
@@ -54,6 +54,7 @@ espagnol142-mercy-1648	partial	needs-person	M	n	27 Sep	183 (calendar); none prin
 fair-game-2010	open	needs-triage	?	n	3 Oct 2026		--	0
 florence-dieci-responsive	open	needs-key	M	n	3 Oct 2026	70: inventory consistent (cul/dla/hec present), gated decode a non-test at this reader error (GAPS112); blind anonymised-sheet two-pass done (GAPS117, 3 Oct 2026): measured disagreement 34.5%, contro…		2236
 fr15564-mercoeur-1586	blocked	needs-triage	?	n			--	0
+fr15575-syllabic-1592-95	blocked	needs-edition	M	n		- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves - [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the…	Locate fr.3995 no.54 (fol.96) and no.31 (fol.62r) canvases with tools/gallica_folio.py anchors, and eye-check the five candidate openings on native-resolution corner crops; neither depends on anybody.	648
 fr16092-maisse-1582	blocked	runnable	M	n	25 Sep	**Snippets cannot fully answer the row's question**, per the row's own instruction for that case, but they substantially narrow it: the right book is now known to be partially queryable, and the next…	--	1507
 fr2933-salviati-1525	open	runnable	S	n	27 Sep	**Next:** for the parent -- a cm rerun on the SALV-F56V split (2,939/253/324, one hapax fewer difficult than the prior split's 8) is now unblocked material if the parent wants a third cm attempt (con…	--	498
 fr2980-gramont	partial	runnable	M	n	3 Oct 2026	to the pope), no topic overlap with f.30; its 19-name list fits no open code (registered test non-test, power 0/3; post-hoc variant only HASH -> TREBYA, rejected as bias) - [x] known-keys: Tomokiyo a…	--	1920
@@ -178,4 +179,4 @@ wvo-hessen-1564	open	needs-edition	M	n	2 Oct 2026	Wilhelm's reply to 1109 (autum
 yogtze-1984	open	needs-triage	?	n	3 Oct 2026		--	0
 zbz-busbecq-1587	open	needs-triage	?	n			--	0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	--	32
-# 179 rows -- needs-edition=11 needs-image=41 needs-key=11 needs-person=22 needs-triage=47 runnable=47
+# 180 rows -- needs-edition=12 needs-image=41 needs-key=11 needs-person=22 needs-triage=47 runnable=47
