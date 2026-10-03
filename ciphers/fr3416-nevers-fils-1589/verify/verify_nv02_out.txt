@@ -1,0 +1,29 @@
+== (a) fresh seeds
+seed 2 target all             letters  72 score -1.150 rank 1/201 z 4.87 shuf max -1.574
+seed 2 target H only          letters  51 score -0.938 rank 1/201 z 5.14 shuf max -1.389
+seed 2 control NV-03 f.38v    letters  34 score -0.769 rank 1/201 z 5.80 shuf max -1.383
+seed 2 shuffled-order: real -1.150 vs max -1.377 mean -1.645, >= real 0/200
+seed 3 target all             letters  72 score -1.150 rank 1/201 z 4.56 shuf max -1.564
+seed 3 target H only          letters  51 score -0.938 rank 1/201 z 4.85 shuf max -1.550
+seed 3 control NV-03 f.38v    letters  34 score -0.769 rank 1/201 z 5.60 shuf max -1.460
+seed 3 shuffled-order: real -1.150 vs max -1.330 mean -1.650, >= real 0/200
+== (b) key-blind variants (naive pairing from line start)
+pass A as read    tokens  98 letters  46 score -1.761 rank 32/201 z 1.19
+pass A 0->8       tokens  98 letters  56 score -1.387 rank 1/201 z 3.25
+pass B as read    tokens 103 letters  49 score -1.454 rank 1/201 z 2.54
+pass B 0->8       tokens 103 letters  54 score -1.460 rank 1/201 z 2.97
+== (c) disclosed choices flipped (all tokens, seed 2)
+as committed                   letters  72 score -1.150 rank 1/201 z 4.87
+L03 offset 0                   letters  68 score -1.366 rank 1/201 z 3.58
+L03 59->52                     letters  73 score -1.150 rank 1/201 z 5.03
+L03 59->53                     letters  73 score -1.150 rank 1/201 z 4.89
+L03 59->54                     letters  73 score -1.150 rank 1/201 z 4.88
+drop L05                       letters  67 score -1.129 rank 1/201 z 4.91
+drop L10                       letters  61 score -1.016 rank 1/201 z 5.28
+L03 offset 0 + drop L05,L10    letters  52 score -1.251 rank 1/201 z 3.87
+drop runs 2,4,8 entirely       letters  41 score -0.976 rank 1/201 z 4.67
+== (d) power, N=72 letters, 20 trials per level
+err 0.239: 11/20 rank 1 of 201
+err 0.100: 20/20 rank 1 of 201
+err 0.050: 20/20 rank 1 of 201
+H-only size N=51 letters, err 0.10: 19/20

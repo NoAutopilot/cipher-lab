@@ -135,7 +135,7 @@ nulls kept):
 | positive control: fr.4715 f.38v foot (NV-03, 46 tokens) | 34 | -0.769 | 1 | 5.66 | -1.475 |
 
 Shuffled-target control: the true key on the target's tokens in shuffled order scores max -1.365, mean -1.652, and
-beats the real order 0/200 times. Power at the measured 0.239 digit error and N=72 letters: 11/20 synthetic fr16
+beats the real order 0/200 times. Power at the measured 0.239 digit error (VERIFY-NV02 note: 0.239 is the raw blind passes against the reconciliation, an upper bracket dominated by the 8/0 glyph convention; the reconciled transcription's residual error is unmeasured; at 0.10 power is 20/20, AUDIT.md) and N=72 letters: 11/20 synthetic fr16
 windows, enciphered with no.25 and noised, rank 1 of 201. The test can fail at this error, so the target's rank 1
 counts as evidence; it is not certain at this noise level.
 `tools/judge_plaintext.py` was not run: no spec exists for this target, and this table is the fr16 test the brief
@@ -150,7 +150,7 @@ settle pairing) before the control statistics ran; the control was then run befo
 
 Grades per token (f35r_ciphertext.tsv): H 62, M 40, C 0, S 0, I 0. Not found in: Gomberville 1665 (NV-INTAKE search);
 Tomokiyo's pages and hidden comments (no decode of fr.3416 f.35; grep of nevers.htm for 3416/f.35); Cabinet Noir,
-Bourdeau, Aymeloglu (NV-INTAKE clones). Novelty not classified (rule 10).
+Bourdeau, Aymeloglu (NV-INTAKE clones). Novelty not classified by the solver (rule 10); verifier class N3, see AUDIT.md (VERIFY-NV02, 3 Oct 2026).
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 62 of 102 figure tokens at H (61%); 40 M
