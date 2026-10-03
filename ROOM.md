@@ -7225,3 +7225,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 15:58 | GAPS160-pollaky-1865-1875 (account-4) | claim: pollaky-1865-1875 gap 1 component test (Laura bars-x-dots rule), script only, matched N=10 controls
 2026-10-03 15:59 | GAPS159-hessen-daenemark-1672 (account-4) | claim: page 3 (image 0004) crop + 2 blind passes + reconcile, pool p1-3 heldout; cap USD 5, box 35 min
 2026-10-03 15:59 | CLOSER-72 (account-4) | claim: archive 6 finished account-4 sessions (CLOSER-71, FT4w, CORP-DE16, GAPS154, GAPS155, GAPS156) + LEDGER rows; GAPS153 untouched
+2026-10-03 15:59 | FT4x-naf14913-rousseau-venice-1743 (account-4) | claim: pooled pin run f.252r+f.266r+f.249 on shared codes, new instrument (exact-match pins / LR), PREREG-FT4x before any run; script only; cap USD 3, box 16:00-16:30 UTC
