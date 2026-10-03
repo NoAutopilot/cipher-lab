@@ -30,3 +30,15 @@ cursive digit hand at 1000 px; the conflict closes, and no.60 is covered by Tomo
 What FAIL would mean: the conflict stands (either the read is too noisy at this hand or Tomokiyo's no.60 is a
 different leaf); logged as a FAIL of this comparison, not as a negative on the leaf, with the next step named.
 No grade change in this folder either way (no.60 has no reading of ours).
+
+## Amendment A (3 Oct 2026, about 12:03 UTC, before the vision call; pushed before it)
+
+Seen after the native fetch, before any read: the slip's shapes (L, Σ, b, s, o) look like digits turned 180°, and the
+short line sits at the slip's top right, where a letter's last line would sit if the slip were pasted upside down
+(Tomokiyo's DUMP ends in a short line, "'14x x 85 93 23 60 10 1 23"). No group values were read by the worker.
+So: (1) the reader gets each of the four text bands (L02 short line, L03-L05) both as cut and turned 180°, chooses
+the orientation in which the signs read as numerals, states it, and reads in that orientation, lines top to bottom
+in it; (2) the statistic is computed against TWO windows of T -- the first 250 and the last 250 groups -- and LCS is
+the max of the two (the window is reported); each shuffle is scored the same way (each window shuffled, max taken),
+and each cross-letter control is the max over its own first-250 and last-250 windows. Thresholds unchanged
+(R >= 0.40, > shuffle p99, > both cross-letter values). Script edited to match in the same commit.

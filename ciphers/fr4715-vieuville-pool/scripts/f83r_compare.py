@@ -51,21 +51,25 @@ def lcs(a, b):
 def main():
     rows = list(csv.DictReader(open(sys.argv[1]), delimiter="\t"))
     B = [norm(r["group"]) for r in rows]
-    T = dump("no60", "no61")[:250]
-    C27 = dump("no27", "no38")[:250]
-    C58 = dump("no58", "no59")[:250]
-    print(f"len(B)={len(B)} readable={sum(x is not None for x in B)} len(T)={len(T)} no27={len(C27)} no58={len(C58)}")
+    D60 = dump("no60", "no61"); D27 = dump("no27", "no38"); D58 = dump("no58", "no59")
+    W = lambda d: [d[:250], d[-250:]]          # Amendment A: first and last 250 groups
+    T = W(D60)
+    print(f"len(B)={len(B)} readable={sum(x is not None for x in B)} no60={len(D60)} no27={len(D27)} no58={len(D58)}")
     if len(B) < 30:
         print("NON-TEST: len(B) < 30"); sys.exit(4)
-    L = lcs(B, T); R = L / len(B)
+    per = [lcs(B, t) for t in T]
+    L = max(per); R = L / len(B)
     rng = random.Random(7)
     sh = []
     for _ in range(1000):
-        p = T[:]; rng.shuffle(p); sh.append(lcs(B, p))
+        best = 0
+        for t in T:
+            p = t[:]; rng.shuffle(p); best = max(best, lcs(B, p))
+        sh.append(best)
     sh.sort(); p99 = sh[989]; mx = sh[-1]; mean = sum(sh) / len(sh)
-    l27 = lcs(B, C27); l58 = lcs(B, C58)
+    l27 = max(lcs(B, t) for t in W(D27)); l58 = max(lcs(B, t) for t in W(D58))
     ge = sum(s >= L for s in sh)
-    print(f"LCS={L} R={R:.3f} | shuffle mean {mean:.1f} p99 {p99} max {mx} (>= real: {ge}/1000) | no27 {l27} no58 {l58}")
+    print(f"LCS first250={per[0]} last250={per[1]} -> LCS={L} R={R:.3f} | shuffle mean {mean:.1f} p99 {p99} max {mx} (>= real: {ge}/1000) | no27 {l27} no58 {l58}")
     ok = R >= 0.40 and L > p99 and L > l27 and L > l58
     print("PASS" if ok else "FAIL"); sys.exit(0 if ok else 2)
 
