@@ -1,0 +1,35 @@
+== c370
+  band L23: slope fit y = 3726.5 + 0.05071*x (6 window peaks kept); drift over the region +190 px (pitch 160)
+  band L24: slope fit y = 3899.0 + 0.05824*x (6 window peaks kept); drift over the region +218 px (pitch 160)
+  band L25: slope fit y = 3903.0 + 0.05748*x (6 window peaks kept); drift over the region +215 px (pitch 160)
+  wrote 50 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c371
+  band L24: slope fit y = 3709.1 + 0.00233*x (5 window peaks kept); drift over the region +7 px (pitch 156)
+  band L25: slope fit y = 3899.1 + -0.01367*x (5 window peaks kept); drift over the region -41 px (pitch 156)
+  band L26: slope fit y = 4058.2 + -0.01667*x (5 window peaks kept); drift over the region -50 px (pitch 156)
+  wrote 52 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c372
+  band L55: slope fit y = 4272.8 + 0.01457*x (6 window peaks kept); drift over the region +54 px (pitch 68)
+  band L56: slope fit y = 4397.1 + 0.01614*x (6 window peaks kept); drift over the region +60 px (pitch 68)
+  band L57: slope fit y = 4447.5 + 0.01267*x (6 window peaks kept); drift over the region +47 px (pitch 68)
+  wrote 114 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c373
+  band L25: slope fit y = 3852.8 + 0.02191*x (6 window peaks kept); drift over the region +87 px (pitch 159)
+  band L26: slope fit y = 4008.8 + 0.02296*x (6 window peaks kept); drift over the region +91 px (pitch 159)
+  band L27: slope fit y = 4181.3 + 0.02850*x (7 window peaks kept); drift over the region +114 px (pitch 159)
+  wrote 54 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c374
+  band L23: slope fit y = 3870.7 + 0.02786*x (6 window peaks kept); drift over the region +108 px (pitch 162)
+  band L24: slope fit y = 4026.5 + 0.03419*x (6 window peaks kept); drift over the region +132 px (pitch 162)
+  band L25: slope fit y = 4190.5 + 0.03167*x (6 window peaks kept); drift over the region +122 px (pitch 162)
+  wrote 50 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c375
+  band L04: slope fit y = 549.7 + 0.02626*x (5 window peaks kept); drift over the region +78 px (pitch 152)
+  band L05: slope fit y = 718.9 + 0.02009*x (5 window peaks kept); drift over the region +60 px (pitch 152)
+  band L06: slope fit y = 883.6 + 0.01119*x (5 window peaks kept); drift over the region +33 px (pitch 152)
+  wrote 12 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json
+== c380
+  band L21: slope fit y = 4185.1 + -0.00500*x (6 window peaks kept); drift over the region -17 px (pitch 183)
+  band L22: slope fit y = 4356.9 + 0.01523*x (6 window peaks kept); drift over the region +51 px (pitch 183)
+  folder over 30 MB: reference copies downscaled to 1600 px: src_ark_12148_btv1b9060974c_f370_590_1475_3737_4352.jpg, src_ark_12148_btv1b9060974c_f371_1770_1155_3024_4229.jpg, src_ark_12148_btv1b9060974c_f372_614_1254_3737_4524.jpg, src_ark_12148_btv1b9060974c_f373_713_1254_3983_4278.jpg, src_ark_12148_btv1b9060974c_f374_590_1303_3860_4327.jpg, src_ark_12148_btv1b9060974c_f375_1721_1327_2975_983.jpg, src_ark_12148_btv1b9060974c_f380_1303_1327_3344_4524.jpg (crops untouched)
+  wrote 44 crops and /tmp/claude-0/-home-user-cipher-lab/7552b594-6d3d-5ed1-b8c9-b3f70e16af82/scratchpad/lines/manifest.json

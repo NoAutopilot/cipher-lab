@@ -126,3 +126,70 @@ Read so far: 0 of ~5,000 open signs (1 open letter of 31 units; 17 cipher letter
 - [n/a] retry: no host failed this pass
 Verdict: keep going: 3 internal gaps; cheapest next: one 1000 px look at c251-252, ~$0.2; the real next step is the sign-sorter + test 0 job, ~$9
 gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 3 internal gap(s), 3 step(s) untried`
+
+## Sign-sorter sheet (LANE-JM SV-SORT, account-1 worker, 3 Oct 2026 23:44-00:0x UTC by the container clock)
+Brief: .claude/briefs/runs/2026-10-03-acct1-jm-wave1.md, job SV-SORT. No decoding, no test 0 (brief).
+
+**Line crops (TRANSCRIPTION.md step 1), command and output.** Regions were picked by eye on 1000 px views and are in
+`sorter/inputs/regions.txt` (native x,y,w,h per canvas). For each canvas:
+`python3 tools/iiif_lines.py --ark btv1b9060974c --canvas C --region <region> --out <scratch>/lines --prefix cC --debug --follow-slope 600`
+(c372 needed `--centres` by eye: the autocorrelation pitch read 62-68 px, half the true ~150 px, and the profile skipped
+lines; centres listed in `sorter/inputs/iiif_lines_output.txt`). Result: c370 25 lines/50 crops, c371 26/52, c372 31/62,
+c373 27/54, c374 25/50, c375 6/12, c380 22/44 = 162 lines, 324 crops; all bands slope-fitted (drift up to +218 px over
+the region on c370, so the slope option was needed). Manifest: `images/manifest.json` (324 entries; crop paths point
+to the worker's scratch folder, crops not committed: 26 MB, re-fetchable with the same commands). Debug overlays
+checked by eye for line count (c372: 31 text lines on the overlay, 31 bands). First run used `--ark ark:/12148/...`,
+doubled the prefix and drew 7 HTTP 500s (one per canvas, no retry): my error, not Gallica's.
+
+**Segmentation and clusters (steps 2-3).** Pages for segmentation: the same regions at 2400 px wide (7 IIIF requests).
+`tools/glyph_atlas.py segment` (defaults, rel 0.78; 0.84 and 0.88 tried on c370/c372 and changed little) -> 7,113 signs
+and 1,062 marks: c370 1,455 (median sign height 24 px; its first two lines are clear French, left in as noise tiles),
+c371 1,123, c372 1,174, c373 1,074, c374 1,150, c375 205, c380 932. `cluster --k 120 --k-marks 16` (deliberate
+over-split) -> 120 sign clusters (k000-k119, 19-156 tiles each). Seen on the debug overlays and tile sample: clean
+piles for simple signs (x, 7, Delta, the r-like sign), but bad cuts are common: the long "(" hooks and slanting strokes
+chain or swallow neighbours (c380 L02: "Cm" merged with "‡‡‡"; "ꝯ" with the following "3"), dots of ":" are often lost
+or become their own pile, and a few piles are dust/fragments. These are what the sorter's bad-cut and non-letter
+buttons are for.
+
+**Naming from the c380 margin gloss (step 4): 0 clusters named, all 120 left unnamed.** The c380 gloss is not letters
+written beside signs: it is running French prose in the left margin, about two gloss lines per cipher line, with the
+beginnings of most gloss lines lost in the binding gutter (native view of x 450-1500, y 1700-3700 checked by eye). One
+Sonnet call (of the brief's two) got numbered box strips of c380 L01-L06 and the gloss beside each, with the rule
+"pairs only where a fully legible gloss word aligns to a run of boxes with high confidence". It returned **0 pairs**:
+about 4 gloss words firm ("humblement", "la deputaz", "voulu", "fait"); the long "/" strokes (5-8 per line, ~6 signs
+apart) are not reliable word dividers, so no word could be pinned to a run of boxes. The second call was not spent: it
+would have met the same gutter loss. Naming the signs from this leaf needs a key-recovery alignment of the whole gloss
+(test 0) or Tomokiyo's table, not a naming call. Grade counts: C 0, unnamed 120.
+
+**Sheet.** `python3 tools/sign_sorter.py --signs signs_s.tsv --labels labels.tsv --marks marks_s.tsv --pages pages_s.json
+--clusters clusters.tsv --focus focus.tsv ... --out sorter/index.html`: 120 piles, 7,113 tiles, 0 skipped, 120 atlas
+clusters. The first build at 2400 px was 25.8 MB (over the 16 MB page limit); pages were then rescaled per page to a
+median sign height of ~22 px (c370 kept at 2200 px wide, c380 down to 1123) and posterised (background >190 -> white,
+16 grey levels) before the tool reads them: 8.3 MB. Focus box: 18 tiles, the most central tile of each side of the 12
+pile pairs whose mean 48x48 tiles are nearest (cosine 0.941-0.972; e.g. k045/k090, k055/k099, k025/k119, and a k037/
+k039/k040/k045/k090 group that is probably one sign split five ways). Inputs in `sorter/inputs/`, a lite pile list in
+`sorter/data_lite.json` (the full --data-out JSON is 26 MB with the images and is not committed), `sorter/build.sh`
+regenerates it from Gallica. Not published (brief): flagged to the account-3 orchestrator in ROOM.md.
+
+err_true not measurable: no benchmark item of this hand/key. err_2reader: not applicable (no reading pass in this job).
+Requests: gallica.bnf.fr 7 (1000 px views) + 7 (HTTP 500, my doubled ark) + 8 (iiif_lines native regions, c372 twice)
++ 7 (2400 px pages) + 2 (c380 gloss views) = 31, 2 s apart.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, SV-SORT)
+Read so far: 0 of ~5,000 open signs; sign inventory segmented (7,113 tiles in 120 over-split piles), 0 piles named.
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply (publish sorter/index.html and file the ASKS row; flagged in ROOM.md 3 Oct 2026); the person's sorter pass, never blocking other steps
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: not-attempted; test 0 needs named signs; next: table recovery by aligning the c380 margin gloss (and the c324/c340 decipherment leaves to their cipher pages) to the segmented boxes, with the shuffled-table control, ~$9
+- Tomokiyo's table (henryiii.htm, an image) - blocker: not-attempted; not fetched in this brief; next: fetch the image and match its shapes to the 120 piles, ~$1
+- the duplicata's original - blocker: not-attempted; not in this brief; next: BnF archivesetmanuscrits "Lancosme 1587" + Harlay Turquie volumes fr.16141-16147, ~$1
+- L14 cipher lines c251-252 - blocker: not-attempted; not in this brief; next: one 1000 px look, ~$0.2
+
+## Escalation (3 Oct 2026, SV-SORT)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv)
+- [x] clear-pages: c380 margin gloss viewed at native resolution; gutter loss confirmed; not transcribed in full
+- [ ] known-keys: Tomokiyo's table not applied; next: fetch and match to the 120 piles, ~$1
+- [x] print: Charrière IV whole volume grepped (no 1587 letter); Boucher's Lettres de Henri III 1587-88 not read
+- [ ] key-rebuild: test 0 not run (needs named signs); next: gloss-to-box alignment with control, ~$9
+- [x] image-check: c370-c375 and c380 fetched at native resolution, line crops cut, 7,113 signs segmented
+- [n/a] retry: no host failed (the 7 HTTP 500s were a malformed URL of mine, corrected)
+Verdict: keep going: 4 internal gaps; cheapest next: one 1000 px look at c251-252, ~$0.2; the real next step is Tomokiyo's table matched to the sorter piles, ~$1, then test 0
+gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 4 internal gap(s), 2 step(s) untried`
