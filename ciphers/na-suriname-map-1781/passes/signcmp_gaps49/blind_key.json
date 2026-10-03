@@ -1,0 +1,44 @@
+{
+ "T1": {
+  "crop": "g49_d_L01.jpg",
+  "page": "right",
+  "what": "N row, middle sign (y between l and h)",
+  "class": "query"
+ },
+ "T2": {
+  "crop": "g49_b_L01.jpg",
+  "page": "left",
+  "what": "N row, first sign",
+  "class": "query"
+ },
+ "T3": {
+  "crop": "g49_f_L01.jpg",
+  "page": "left",
+  "what": "K row sign b (no mark)",
+  "class": "control-none"
+ },
+ "T4": {
+  "crop": "g49_c_L01.jpg",
+  "page": "right",
+  "what": "M row sign",
+  "class": "query"
+ },
+ "T5": {
+  "crop": "g49_g_L01.jpg",
+  "page": "right",
+  "what": "O row first sign k (no mark)",
+  "class": "control-none"
+ },
+ "T6": {
+  "crop": "g49_e_L01.jpg",
+  "page": "left",
+  "what": "A row, third sign [x-dots] (both GAPS14 passes: x with dots)",
+  "class": "control-dots"
+ },
+ "T7": {
+  "crop": "g49_a_L01.jpg",
+  "page": "left",
+  "what": "M row, first sign",
+  "class": "query"
+ }
+}
