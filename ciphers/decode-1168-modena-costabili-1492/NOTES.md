@@ -272,3 +272,15 @@ Read so far: 100% of the plaintext in print and in the period clear copy (Berzev
 - [x] image-check: DECODE full-size images 1-9 on hand (image 9 = f.14, glossed postscript), A2-COS2 3 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: reconcile the colliding f.12r labels by eye from the 14 crops and re-run align/run_align.py, ~$1.5
+
+## IA full-text confirmation (GF4-BATCH21, account-4, 3 Oct 2026 09:0x UTC)
+
+Re-checked against the Internet Archive OCR of Berzeviczy 1914 (`aragoniaibeatrix00berz_djvu.txt`, one request,
+HTTP 200, 1,342,028 bytes). The table of contents reads "CLV. 1492. márczius 20., 22. Beltramo Costabili jelentése a
+ferrarai herczegnéhez Esztergomból, melyben Beatrix helyzetét s az országgyűlés alkalmából Budára menetelét írja le
+216"; the item itself is headed "CLV. / 1492. márczius 20., 22. / ... / Titkos írásjegyekkel írva, Modenái áll.
+levéltár", opens "Dopo mie humili raccomandationi et per altre mie V. Ex.tia a questa hóra puó havere inteso come le
+cose de la Regina furono differite ala futura diéta", and closes on p. 219 "Strigonii, XX. Martii, 1492. /
+Bel[trando] Cos.le [Costabile]" with a "Post datum" postscript. Confirms the status above: found-solved, source
+Berzeviczy 1914 no. CLV pp. 216-219 (printed in clear from the Modena state archive). Status word unchanged; any
+reading of this item is N0/N1 territory for the verifier (rule 10), not a new result.
