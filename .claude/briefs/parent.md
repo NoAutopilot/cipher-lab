@@ -195,14 +195,17 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
-## Usage register (owner, 3 Oct 2026, about 04:1x UTC)
+## Usage register (owner, 3 Oct 2026, about 04:3x UTC: "the actual usage bars ... dollar cost means nada to me")
 
-At every check-in, after reading get_session on yourself, post your account's rate-limit reading:
-`python3 tools/account_usage.py --post <account number> --status <rate_limit_info.status> --type <rateLimitType>
---resets <resetsAt> --session-cost <usage.cost_usd> --live <your live workers>`, then commit USAGE.tsv with your
-check-in. A lane orchestrator does the same at each wake. `python3 tools/account_usage.py` (or the owner's
-`cipher-lab-usage` mod, tools/mods/cipher-lab-usage, `/usage`) then shows every account side by side: live workers
-from ROOM.md, archived-worker spend from LEDGER.md, and the latest rate-limit reading from USAGE.tsv.
+The owner reads usage as the account's 5-hour and 7-day bars (percent used, account-wide, so every session and
+subagent on the login is in them), never dollars. The `cipher-lab-usage` mod (`.claude/skills/cipher-lab-usage`, in the
+repository, so any session in it can load it) reads `$.session.usage().rateLimits` and posts this login's bars to
+USAGE.tsv on origin/main by git plumbing (working tree untouched), at most once per account per 15 min, and shows
+every account's latest bars (`/usage` pane, status line). `python3 tools/account_usage.py` prints the same table.
+At every check-in a parent reads it, and flags in ROOM.md any account whose bars are over an hour old (its sessions
+are not loading the mod: the owner enables it there, or sets CLAUDE_CODE_PLUGIN_DIRS to the folder's absolute path in
+that account's environment settings). A login posting as 'u<8 hex>' is unmapped: add its row to ACCOUNTS.tsv.
+Recaps give usage as the bars ("account 2: 5h 41%, 7d 78%"), never dollars.
 
 ## Transcription standard (owner, 3 Oct 2026, about 03:4x UTC)
 
