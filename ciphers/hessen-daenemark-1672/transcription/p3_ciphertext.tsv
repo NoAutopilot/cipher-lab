@@ -1,0 +1,56 @@
+line	pos	sign	conf	gloss	gloss_grade	note
+1	0	7480	M			margin beside lines 1-2 under a marginal word "?chwed?" (Schwed..?); both passes 7480 (alt 7450/7460/2480); may be a marginal number, not a code
+1	1	602	M	Der Konig in Dennemarck	M	crop p3_L01; A 601 H, B 601 M (last digit z-like, alt 602); RECONCILER: on a native zoom the last glyph is the z-shaped 2 of this hand (as 26.3), read 602 M. Gloss above in the bold hand, missed by both passes (it sits at the crop's top edge); read by the reconciler only on the native zoom, so M
+2	1	5756	M	Franckreich	C	crop p3_L01; both passes 5756 M (5 7 5 with a superscript stroke, 6; alt 575+6 / 57+56); gloss Franckre(i)ch, both
+2	2	68	M			crop p3_L01; A 968 M (alt 768/68), B 68 M (alt 768/y68); native zoom: "mit ey68." -- a y/7-like stroke joined to 68, unsettled; recorded 68 M, alt 768/968; no gloss
+3	1	601	H	Dennemarck	C	crop p3_L02; both 601 H; gloss De(n)nemarck, middle letters partly struck
+4	1	625	H		U	crop p3_L02; both 625; underlined; margin beside the line repeats "625" (as on page 2); no gloss on this page
+5	1	229	M	Berlin	C	crop p3_L02/L03; both 229 M (alt 223 / ZZ9); gloss Berlin, both. Key 255 reads 229 = Frankreich: conflict (second time, page 2 too)
+6	1	681	M	Cur Brandenb	C	crop p3_L03; A 601 M (0 may be 8), B 681 M (alt 601); native zoom: middle glyph is a closed double loop, read 8, so 681 M. Gloss Cur(-)Brandenb, both. Page 2 glossed 651 and 653 Kurbrandenburg: a third code for the same meaning, or 651 misread (M)
+15	1	FF	H		 	run 1; marginal words "disgustirt / unvertanin / Holstein" beside lines 15-17 are a marginal gloss of the run, not over single groups
+15	2	67	H			
+15	3	85	H			
+15	4	33	H			
+15	5	XX	H			
+15	6	60	M			both 60 M (alt 6d/63/68); old f4runs read 6d
+15	7	LL	H			
+16	1	113	M			both 113 M (alt 1113/173/1V3); old f4runs read 143 (a null in key 255); 113 = r in key 255
+16	2	WW	H			
+16	3	119	H			
+16	4	74	H			
+16	5	26	H			
+16	6	28	H			
+16	7	83	H			
+16	8	117	H			
+16	9	20	H			
+16	10	66	M			both 66 M (alt BB/6b); old f4runs read bb
+16	11	37	H			
+17	1	104	H			
+17	2	634	H			3-digit, above key 255's range
+17	3	601	H	Dennemarck	C	crop p3_L08/L09; both 601 H; gloss ?ennemarck, first letter struck, both
+20	1	768	M	?ueco	M	crop p3_L10; A 768 M, B 568 M (both note a preceding a/ä mark); native zoom: first glyph has a 7-like descender, read 768 M; gloss Sueco/secco unsettled (A ?ueco, B s?cco)
+20	2	55	H	g	M	run 2: letter-level glosses in the bold hand over the 2-digit groups (A: g/ott/g/e/b/d/a s/amm; B: g?ott/geb/das/amm), "gott geb das amm.." -- letter cipher, key.tsv reads it (S); not part of the nomenclator pairs
+20	3	76	M			
+20	4	69	M			
+20	5	63	H			
+20	6	38	H			
+20	7	22	H			
+20	8	FF	H			
+20	9	20	H			
+20	10	75	H			
+20	11	20	H			
+20	12	I	M			both I M (alt J/L), underlined
+21	1	YY	M	w	C	crop p3_L10; both passes 44 M (A alt BB? no; B "written y4/44"); RECONCILER: native zoom shows two y-forms with descenders, the f4runs reading YY; gloss "w" (both), and key 255 reads YY = w: override to YY, M
+21	2	96	M	o	M	crop p3_L10; A 66 M, B 96 M (alt 66); native zoom: first glyph a loop with descender, read 96 M; gloss o, then an ink blot
+21	3	NN	H			
+21	4	30	H	a	C	gloss "ablaut" over 30 32 110 6 (both): a b l au t
+21	5	32	H	b	C	
+21	6	110	H	l au	C	key 255 reads 110 = l
+21	7	6	H	t	M	B alt 0
+21	8	XX	H			
+25	1	437	M	Hertzog von Ploen	C	crop p3_L12; A 447 M (alt 427), B 437 M (alt 447); native zoom: the middle glyph is an open epsilon/3 form unlike the two 4s of line 26's 447: read 437 M. The gloss spans 437 641 (both), so the pair is the unit
+25	2	641	H			under the same gloss
+26	1	303	M	allian?e	M	crop p3_L12/L13; A 383 H, B 303 M; native zoom reads 3-0-3 clearly: 303 M. Gloss allian(c/tz)e, both. Key 255 reads 303 = Munster (preview read of keys/hcportal_key255_0014.jpg, M): conflict
+26	2	447	H	Kayser	C	crop p3_L12; A 441 M (alt 447), B 447 H; native zoom 447. Gloss: a struck word (Dem.../Dau...) then Kayser, both
+26	3	602	M			both 602 (B M, last glyph z-like, alt 601); no gloss of its own (the Kayser gloss ends before it)
+26	4	834	H	Rex Daniae	C	crop p3_L12; both 834 H; gloss Rex Danie / Rey Danze: Rex Daniae

@@ -1,0 +1,56 @@
+line	pos	sign	conf	gloss	context_before	context_after	note
+1	0	7480	M				L01 left margin beside lines 1-2, under marginal word "?chwed?" (Schwed..?); alt 7450/7460; may be a marginal note not a code group
+1	1	601	M		schicket und	keinen gebührenden	L01; last digit like i/z, alt 602
+2	1	5756	M	Franckre?ch	respect anthut. daß	mit ?ey	L01/L02; written 5 7 5(superscript t-like stroke) 6, divisions unclear, alt 575 + 6 / 57 + 56
+2	2	68	M		mit ?ey	zu	L01; preceded by a y/7-like sign, alt 768 / y68
+3	1	601	H	De?nemarck	schloßen und	vorbeygangen, gibt der	L02; gloss read Dennemarck
+4	1	625	H		danck.	wird vielleicht nach beyfällig	L02; underlined; also written 625. in left margin beside this line
+5	1	229	M	Be?lin	etlicher werden zu	sache und	L02/L03; alt ZZ9; gloss small, Berlin?
+6	1	681	M	Cu?Brandeb	schluß bringen, daß	in	L03; middle sign 8 or 0, alt 601; gloss Chur-Brandenb?
+15	1	FF	H		Totaliter	67.	L08; margin gloss disgustirt beside line with stroke to Totaliter, covers run of lines 15-16?
+15	2	67	M		FF.	85.	L08; alt 6y
+15	3	85	H		67.	33.	L08
+15	4	33	H		85.	XX.	L08
+15	5	XX	H		33.	60.	L08
+15	6	60	M		XX.	LL.	L08; alt 6d/68
+15	7	LL	H		60.	113.	L08
+16	1	113	M		LL.	WW.	L08; first sign 1 or V, alt 1V3; margin beside line: unvertanin, then holstein below it
+16	2	WW	H		113.	119.	L08
+16	3	119	H		WW.	74.	L08
+16	4	74	H		119.	26.	L08
+16	5	26	M		74.	28.	L08; first sign 2 or r
+16	6	28	M		26.	83.	L08; first sign 2 or r
+16	7	83	H		28.	117.	L08
+16	8	117	H		83.	20.	L08
+16	9	20	M		117.	66.	L08; alt r0
+16	10	66	M		20.	37.	L08; alt 6b/bb
+16	11	37	H		66.	104.	L08
+17	1	104	H		37.	634.	L09
+17	2	634	H		104.	nun forchte daß	L09
+17	3	601	H	?ennemarck	daß in	selbe? die	L08/L09; gloss struck through, read Dennemarck
+20	1	568	M	s?cco	(start of line, a/ä before)	55.	L10; preceded by a/ä sign which may be part of group (a568); gloss secco/sacco?
+20	2	55	M	g?ott	568:	76.	L10; gloss g over first 5, ott over second 5/76; may cover 55-76
+20	3	76	M		55.	69.	L10
+20	4	69	M		76.	63.	L10; written 6 e 9, alt 6e/69
+20	5	63	H	geb	69.	38.	L10; gloss g e b spaced over 69-63
+20	6	38	H	das	63.	22.	L10; gloss d a s over 38-22, s struck/stroke runs over FF
+20	7	22	M		38.	FF.	L10; alt rr
+20	8	FF	H		22.	20.	L10; crossed by gloss stroke
+20	9	20	M		FF.	75.	L10
+20	10	75	H		20.	20.	L10
+20	11	20	M	amm	75.	I	L10; gloss amm over 20 and I
+20	12	I	M		20.	44.	L10; underlined single letter, alt L
+21	1	44	M	wo	I	96.	L10; written y4/44; gloss w o
+21	2	96	M	?	44.	NN.	L10; gloss is an ink blot over it; alt 66
+21	3	NN	H		96.	30.	L10
+21	4	30	H	ablaut	NN.	32.	L10; gloss a b l a u t spans 30-32-110-6
+21	5	32	M		30.	110.	L10; alt 3r
+21	6	110	H		32.	6.	L10
+21	7	6	M		110.	XX.	L10; alt 0
+21	8	XX	H		6.	Weil der Inhaltische	L10
+25	1	437	M	hertzog zu ploen	Der letzte	641.	L12; middle sign 3/4/epsilon, alt 447; gloss covers 437-641
+25	2	641	H		437.	war auch zu Rendsburg	L12
+26	1	303	M	allia??e	eine estroite	zwischen	L12; gloss alliance/alliantz?
+26	2	447	H	Dem [struck] Kayser	zwischen	602.	L12; gloss Dem (struck word) Kayser spans 447-602
+26	3	602	M		447.	und 834	L12; last sign z-like, alt 601
+26	4	834	H	Rey Dan?e	602. und	unter handen	L12; gloss Rey Danze?

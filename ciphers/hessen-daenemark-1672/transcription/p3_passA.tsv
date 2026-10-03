@@ -1,0 +1,58 @@
+line	pos	sign	conf	gloss	context_before	context_after	note
+1	1	601	H		bahr schicket und	keinen gebührenden	p3_L01; margin beside line 1 in dark hand: 'Schwed?' (letters uncertain), not over the group
+2	m	7480	M		[left margin]		p3_L01 margin beside line 2 under 'Schwed?', dark hand; alt 7460/2480; may be a marginal number not a code
+2	1	5756	M	Franckreich	respect anthut. das	mit	p3_L01; gloss F r a n c k r e ? c h; digits 5,7,5,6 run together, long descender after first 5; alt 575.6 or 57.56
+2	2	968	M		6. mit	zu	p3_L01; first sign 9 or g/y-form; alt 768 or 68
+3	1	601	H	De?nemarck	schlossen und	vorbeygangen, gibt der	p3_L02; middle letters of gloss partly struck
+4	1	625	H		Danck.	wird vielleicht nach	p3_L02; '625:'
+4	m	625	H		[left margin]		p3_L02 bottom-left, dark gloss hand, between lines 4 and 5; probably repeats line-4 group
+5	1	229	M	Berlin	etliche wochen zu	sache und das	p3_L02 bottom/L03; alt 223; gloss B e r l i n
+6	1	601	M	Cur?brand?b	schluss bringen, dass	in das Foedus	p3_L03; gloss C u r ? b r a n d ? b; 0 may read 8
+11	1	12	M		[Her]stett?	Thl.? beygesetzt von	p3_L06; possibly a plain count followed by 'Thl.' (crossed sign); doubtful as code
+15	1	FF	H	disgustirt	Totaliter	67.	p3_L08; gloss is a MARGINAL word beside line 15, not over a group; 'Totaliter' struck by a stroke from the margin word
+15	2	67	H		FF.	85.	p3_L08
+15	3	85	H		67.	33.	p3_L08
+15	4	33	H		85.	XX.	p3_L08
+15	5	XX	H		33.	60.	p3_L08 (top also L07)
+15	6	60	M		XX.	LL.	p3_L08; alt 6d/63
+15	7	LL	H		60.	[EOL]	p3_L08
+16	1	113	M	unv?rtanin	[line start]	WW.	p3_L08; marginal word beside line 16 read 'unv ertanin'; alt 1113/173
+16	2	WW	H		113.	119.	p3_L08
+16	3	119	H		WW.	74.	p3_L08
+16	4	74	H		119.	26.	p3_L08
+16	5	26	H		74.	28.	p3_L08
+16	6	28	H		26.	83.	p3_L08
+16	7	83	H		28.	117.	p3_L08
+16	8	117	H		83.	20.	p3_L08
+16	9	20	H		117.	66.	p3_L08; written like 'ro'
+16	10	66	M		20.	37.	p3_L08; tall loops, alt doubled letter BB
+16	11	37	H		66.	[EOL]	p3_L08
+17	1	104	H	Hol?stein	[line start]	634.	p3_L09 top; marginal word beside line 17 (Holstein?)
+17	2	634	H		104.	nun sowohl als	p3_L09
+17	3	601	H	?ennemarck	sowohl als in	Adell	p3_L08 bottom/L09 top
+20	1	768	M	?ueco	[line start] ä	55.	p3_L10; preceded by a/ä mark, followed by ':'; gloss ? u e c o (Sueco?)
+20	2	55	H	g	768.:	76.	p3_L10; 'g' + 'ott' = 'g ott' spans 55-76
+20	3	76	M	ott	55.	69.	p3_L10; alt 7 and 6 separate
+20	4	69	M	g	76.	63.	p3_L10; first sign loop e/6, alt e9/29; bold 'g' at its right end
+20	5	63	H	e	69.	38.	p3_L10
+20	6	38	H	b	63.	22.	p3_L10
+20	7	22	H	d	38.	FF.	p3_L09 bottom/L10
+20	8	FF	H	a s	22.	20.	p3_L10; 'a' at left edge, 's' over FF; heavy stroke crosses FF
+20	9	20	H		FF.	75.	p3_L10
+20	10	75	H		20.	20.	p3_L10
+20	11	20	H	amm	75.	I.	p3_L09 bottom; 'amm' over 20 and I
+20	12	I	M		20.	[EOL]	p3_L10; single letter I/J, underlined
+21	1	44	H	w	[line start]	66.	p3_L10
+21	2	66	M	o ?	44.	NN.	p3_L10; ink blot over it; 'o' between 44 and 66, blot may be 'l'
+21	3	NN	H		66.	30.	p3_L10
+21	4	30	H	a	NN.	32.	p3_L10
+21	5	32	H	b	30.	110.	p3_L10; gloss b or t
+21	6	110	H	l au	32.	6.	p3_L10; 'l' over left, 'au' over right
+21	7	6	H	t	110.	XX..	p3_L10; 't' with an A-like stroke
+21	8	XX	H		6.	Weil der Inhalt	p3_L10
+25	1	447	M	Hertzog von Ploen	[line start]	641.	p3_L12; alt 427; gloss spans 447 and 641
+25	2	641	H		447.	war auch zu Hamburg	p3_L12; under same gloss
+26	1	383	H	allian?e	eine estroite	zwischen	p3_L12/L13
+26	2	441	M	Dem????? Kayser	zwischen	602.	p3_L12; alt 447; gloss 'Dem/Dau', middle struck through, ends 'Kayser'; may span 441-602
+26	3	602	H		441.	und 834.	p3_L12
+26	4	834	H	Rex Danie	602. und	unter handen	p3_L12; gloss sits slightly left, over 'und 8'

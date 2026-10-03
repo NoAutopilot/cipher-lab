@@ -3,8 +3,20 @@ p1:21.1	0	690	num	690		bleinenkl	single-segment
 p2:2.1	0	605	num	605		kdennemarck	single-segment
 p2:3.1	0	651	num	651		curbrandenburg	agrees
 p2:9.1	0	653	num	653		curbrand	single-segment
-p2:17.1	0	229	num	229		berlin	single-segment
+p2:17.1	0	229	num	229		berlin	agrees
 p2:25.1	0	651	num	651		curbrandenburg	agrees
 p2:25.2	0	690	num	690		bleinenkfl	conflict:bleinenkl
 p2:28.1	0	774	num	774		holland	single-segment
 p2:28.2	0	775	num	775		genstaden	single-segment
+p3:1.1	0	602	num	602		indennemarck	single-segment
+p3:2.1	0	5756	doubtful			franckreich	doubtful
+p3:3.1	0	601	num	601		dennemarck	agrees
+p3:5.1	0	229	num	229		berlin	agrees
+p3:6.1	0	681	num	681		curbrandenb	single-segment
+p3:17.3	0	601	num	601		dennemarck	agrees
+p3:20.1	0	768	num	768		ueco	single-segment
+p3:25.1	0	437	num	437		hertzog	single-segment
+p3:25.1	1	641	num	641		vonploen	single-segment
+p3:26.1	0	303	num	303		alliance	single-segment
+p3:26.2	0	447	num	447		kayser	single-segment
+p3:26.4	0	834	num	834		rexdaniae	single-segment
