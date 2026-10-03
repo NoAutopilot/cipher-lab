@@ -343,3 +343,68 @@ sonnet). Folder size unchanged from worker O's pass (no new images).
 After LANE R5 C's coarse-bucket gate (42.9%, lines 9/5/15 at 38.1/52.4/38.1%, nine loop/hook codes merged to three), f75L is not
 box-keyable at this image quality. Status `blocked`: it needs a different capture (a higher-contrast or multispectral image from
 BnF) or a key of Seure's 1558 embassy. No reconciler was spawned, per the lane brief.
+
+## GAPS102-fr3151-seure-1558 (3 Oct 2026, account-4)
+
+Worker GAPS102 (Opus 5.5, cap USD 9), brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, row from
+NEXT-STEPS.tsv (worker K's 24 Sept "suggested next step": (a) re-atlas f75L and work through its remaining lines, or
+(b) capture items 43/44 natively). Intake gate: `fr3151-seure-1558: blocked (line 1) -- already terminal, nothing to
+gate`, exit 0. No other account's claim or commit on this folder in the 6 h before 12:03 UTC.
+
+**Step (a) is not current and was not run.** Its first half (trimmed-region re-atlas) is what LANE R4 O already did;
+its second half (machine box-reads of f75L's remaining lines) is the same instrument that failed its own >=80% gate
+three times (K 51.7%, O 38.5%, C 42.9%) -- rule 3's third-attempt clause retires it for f75L at this image
+[retired: two-reader box-keyed pass on f75L], and TRANSCRIPTION.md / CLAUDE.md Usage 6 send a >10% reader split to
+the owner's sign sorter, not to a fourth machine pass.
+
+**Step (b), cheapest unit: do the "duplicate" copies 43 and 44 really carry the same cipher text?** If yes, the two
+copies give a reader-independent consistency check on every sign; if 44's clear passages are the plaintext of 43's
+cipher, they are known plaintext. Three native region fetches (canvas 83 left-leaf closing, canvas 83 right leaf =
+43's cipher postscript, canvas 87 right-leaf lower half = 44's closing and cipher postscript), cut with
+`python3 tools/iiif_lines.py --ark btv1b9059865k --canvas {83,87} --region ... --out images/dup --prefix
+{f83L_close,f83R_ps,f87R_close} --debug` (crops and overlays in `images/dup/`, manifest `images/dup/manifest.json`).
+Read by eye from the debug overlays and two date-line crops (no subagent calls):
+
+| what | item 43 (f83L / f83R) | item 44 (f87R) |
+|---|---|---|
+| body | fully enciphered, f81R-f83L (one short clear opener on f81R line 1) | mixed: clear prose with cipher blocks (f85R lower, f86L, f87R upper) |
+| closing formula | "...ce p[rése]nt a v[ost]re Magesté ... Sire je prie n[ost]re Seigneur donner ... en parfaicte santé treshewreuse et treslongue vie. De Lisbonne le xij(?)ᵉ jour de decembre 1558", signed "de Seure" | same formula, same line breaks in substance; "De Lisbonne le xij(?)ᵉ jour de decembre 1558", signed "de Seure" |
+| cipher postscript after the closing | f83R, 19 lines of ~28 signs (~530 signs), signed "Seure" | f87R, 13 lines of ~28 signs (~370 signs), before the signature |
+| PS first signs | `f 40 n R 100 B ...` | `# ∆ o n R ∆ * ...` |
+| PS last signs | `... R ∆ n 40 13 30 [loop] A ∆ s` | `... 1 . 40 n R ∆ 11 13 30 12` |
+
+Grades: the closing words are read at M (secretary hand, by eye, one reader); the day numeral is M in both copies.
+
+**Result.** The two closings carry the same plain formula and (at M) the same date, consistent with the docket's
+"Autre lettre" and with Bourdeau's duplicate note. But the two cipher postscripts are **not sign-identical**: their
+lengths differ by about 40% (~530 vs ~370 signs) and neither the opening nor the closing run matches; they share
+recurring groups (`40 n R`, `n R ∆`, `13 30`), which is what one key on related text gives, not what a copy of one
+ciphertext gives. So "duplicate" is not confirmed at the cipher level: 43 and 44 are at best the same dispatch
+enciphered differently (43 throughout, 44 in part), and the cross-copy sign check cannot be run as a straight
+position-by-position diff. Rule 3 note: no control is needed for this observation (a length and run comparison, no
+solver), and no negative is claimed about the key. Not found: any position-aligned identity between the two PSs;
+any key or decipherment on these leaves.
+
+**Image side note.** f83R's signs are well spaced and the line overlay tracks them cleanly, but measured contrast
+(60th-percentile background minus 2nd-percentile ink, same method on all three) is f75L 91, f83R 101, f87R 85: no
+large quality gain over the leaf that blocked the target, so the "different capture" blocker is not lifted by
+item 43's own leaves on this evidence.
+
+Requests: gallica.bnf.fr 3 (IIIF native regions, descriptive UA, >=1.5 s apart, no error). Vision: 0 subagent
+calls; worker's own reads of 3 overlays + 2 date crops + 4 500px survey views already on disk. Folder 24 MB.
+
+## Remaining gaps (GAPS102, 3 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-reader drafted at 42.9% agreement, diagnostic only.
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%, NOTES sections above), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, f85R-f87R) - blocker: not-attempted; 43/44 not sign-identical (this pass), 44's clear passages untested as plaintext of 43's cipher; next: one Opus line-read of f85R's clear lines + sign count of f81R's cipher, then tools/interlinear_align.py with its shuffled-gloss control first, ~$5
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located (six-source log above; Bourdeau: known keys not tried)
+
+## Escalation (GAPS102, 3 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102): not sign-identical
+- [ ] clear-pages: 44's clear passages vs 43's enciphered body as known plaintext (gap 2), not yet run
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [n/a] print: Ribier and Francisque-Michel read in full, neither prints these letters
+- [n/a] key-rebuild: no decipherment, key sheet or deciphered copy found to rebuild from
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85, no material quality gain on item 43's leaves
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gaps; cheapest next: 44-clear vs 43-cipher known-plaintext test (Opus line-read of f85R clear lines + f81R sign count), ~$5
