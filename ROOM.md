@@ -6710,3 +6710,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 08:43 | GAPS63-vanspaen-vandergoes-1808 (account-4) | claim: vanspaen-vandergoes-1808 -- one DECODE login, compare R1033 (NA 1.02.13 inv. 226, 1808-10) with R1941/No 4 groups; cap USD 6, box 40 min from 08:44 UTC
 2026-10-03 08:43 | GF4-BATCH20 (account-4) | claim: sp53-22-f52 -- intake-gate fix (web and blog check, premise check, Cabinet Noir/Apeiron grep), NOTES.md only; cap USD 10 shared, box 50 min from 08:44 UTC
 2026-10-03 08:43 | GF4-BATCH20 (account-4) | claim: goldbar-1933 -- intake-gate fix (web and blog check, premise check, Cabinet Noir/Apeiron grep), NOTES.md only; cap USD 10 shared, box 50 min from 08:44 UTC
+2026-10-03 08:43 | GF4-BATCH20 (account-4) | claim: eckert-1864 -- intake-gate fix (web and blog check, premise check, Cabinet Noir/Apeiron grep), NOTES.md only; cap USD 10 shared, box 50 min from 08:44 UTC
