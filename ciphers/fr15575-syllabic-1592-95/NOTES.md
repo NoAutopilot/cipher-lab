@@ -75,22 +75,21 @@ refetched once), googleapis.com 6, archive.org 1, dspace.ut.ee 2.
 
 ## Remaining gaps (NV05-CS, 3 Oct 2026)
 
-Read so far: 0 of 3 leaves (no transcription; check-solved and location only).
+Read so far: 0 of 3 leaves (no transcription). Leaves located NV05B 3 Oct 2026 (f.228 = canvas 235, f.233 = canvas 240, fr.15576 f.2 = canvas 8); key no.54 syllabary on disk (key_no54.tsv).
 - edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
-- leaf location (fr.15575 canvases 229/235 or 234/240; fr.15576 canvas 8) - blocker: not-attempted; one contact-sheet look gave only ESTIMATE canvases and two foliation series; next: one Sonnet vision call on native-res corner + header crops, ~$1.5
-- key table (fr.3995 no.54 fol.96, no.31 fol.62r) - blocker: not-attempted; key is not on disk in any key*.tsv or cryptiana keys TSV; next: gallica_folio.py anchors, iiif_lines.py crops, 2 passes + reconcile, ~$4.5
-- known-answer control (fr.3641 letters with interlined decipherment in this cipher) - blocker: not-attempted; needs the key table first; next: decode_key.py on one fr.3641 letter after the key, ~$3
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; NV05B transcribed only the syllabary and header signs (key_no54.tsv, H 94 / M 16 / I 5) within its cap; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- known-answer control (fr.3641 letters with interlined decipherment in this cipher) - blocker: not-attempted; syllabary now on disk; next: locate one fr.3641 letter (phelippes.htm list), crop + 2 passes + reconcile of its cipher runs, pre-register a token-agreement gate vs the period interline (normalised to one convention), decode with key_no54.tsv, ~$6-8
 
 ## Escalation (NV05-CS, 3 Oct 2026)
 
 - [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
 - [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the edition entry names the liasse
-- [ ] known-keys: fr.3995 no.54/no.31 period key sheets, canvases to locate
+- [ ] known-keys: fr.3995 no.54 located (canvas f188, f.96v-97r), syllabary transcribed; nomenclator and no.31 (canvas f126) still to transcribe
 - [ ] print: Lefèvre IV and van Durme entries to read in full
 - [n/a] key-rebuild: the period key sheet exists, rebuild not needed yet
-- [ ] image-check: native-res check of the five candidate openings
+- [x] image-check: native corner crops of the five candidate openings read (NV05B): canvases 235, 240, 8 carry the leaves
 - [n/a] retry: nothing has been attempted yet to retry
-Verdict: keep going: 3 internal gaps; cheapest next: leaf location vision call, ~$1.5
+Verdict: keep going: 2 internal gaps (nomenclator/no.31, known-answer control); cheapest next: fr.3641 known-answer control on the syllabary, ~$6-8
 
 ## While waiting
 
@@ -110,3 +109,69 @@ convention, pre-registered before scoring. (4) Only if the control passes: trans
     fr15575-syllabic-1592-95: blocked (line 1) -- already terminal, nothing to gate exit 0
 
 No transcription, key application or cryptanalysis was done in this job.
+
+## Leaf location and key no.54 (NV05B, account-2 worker, LANE-A2PUSH3, 3 Oct 2026 14:39-15:0x UTC)
+
+### Intake gate
+
+    $ python3 tools/intake_gate_check.py fr15575-syllabic-1592-95
+    fr15575-syllabic-1592-95: blocked (line 1) -- already terminal, nothing to gate
+    exit 0
+
+Exit 0; work done is location + transcription of the period key sheet (not of the target leaves); nothing was decoded.
+
+### Leaf location (native corner crops, one look by the worker)
+Native top-right/top-left corner crops (region 7500,0,1460,1000 and 0,0,1460,1000) of the five candidate openings,
+contact sheet in the worker's scratchpad (not committed). fr.15575 carries two foliations, one struck through; the
+unstruck one is the series Tomokiyo uses:
+| leaf | canvas | corner reads | what is on the page |
+|---|---|---|---|
+| fr.15575 f.228 | 235 (right page) | "228" + struck "234" | Spanish letter, clear text with digit runs (e.g. "...todos los que / 4634:6321 4873...") -- mixed clear + numeric cipher |
+| fr.15575 f.233 | 240 (right page) | struck number + "233" | Spanish letter, apparently clear with cipher runs (not counted) |
+| fr.15576 f.2 | 8 (right page) | "2" | almost the whole page in digit cipher, est. ~30 lines x ~12 groups = ~350 groups (estimate from the 900 px overview, not counted) |
+Canvas 229 = f.222 and canvas 234 = f.227 (clear Spanish letters): the NV05-CS "new foliation" candidates were the wrong series.
+Token counts for f.228 and f.233 are not estimated (cipher runs interleaved with clear text; a line-crop count is the next step).
+
+### Key no.54 location
+fr.3995 (ark:/12148/btv1b525085665) carries folio labels in its manifest (unlike fr.15575): f.96r = canvas f187 (blank, the
+key shows through), f.96v-97r = canvas f188 (two-page spread, 7564x6055), the key sheet, dated "1592" (show-through on f.96r).
+no.31 f.62r = canvas f126 (low-res overview only, not transcribed).
+Layout: an alphabet header across the spread (each letter with 0-3 small signs below it = letter/vowel substitutes), a
+syllable grid under it (18 consonant columns x 5 vowels, "ba -- 10" etc.; codes 10-99), and a word/name nomenclator filling
+the lower three-quarters of both pages, plus "Nulles" and a sign-legend block on f.97r (not transcribed).
+
+### Crops (TRANSCRIPTION.md: tool, command pasted, before any vision call)
+
+    $ python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 188 --region 0,300,7564,1300 \
+        --out ciphers/fr15575-syllabic-1592-95/images/fr3995 --prefix f96v97r_grid --centres 280,900 \
+        --max-width 2000 --overlap 200 --debug
+    ... region 7564x1300, 2 lines, 2 bands x 5 segments ... wrote 10 crops
+
+Band L01 = alphabet header, L02 = syllable grid, 5 segments each (images/fr3995/manifest.json).
+
+### Passes and reconciliation
+Two blind Sonnet passes (subagents, same prompt, 10 crops each, nothing else read) + one reconciliation by the worker on
+native sub-crops of the y/z columns, the A header and the f/g/q columns.
+- Grid: 90 coded cells read by both passes; value disagreements 0/90 (pass B only added '?' to the i column and to ya/ye/yi).
+  err_2reader (grid codes) = 0.000 on 90 -- agreement between two runs of the same model, not accuracy (TRANSCRIPTION.md).
+- Header: 20 letter signs; 2 disagree (sign under A: '2?' vs 'z?'; sign under z: '~' vs 'hook?'), 1 sign only in pass B
+  (a dot under t, not kept). err_2reader (header) = 3/21 = 0.14.
+- Reconciler: the codes run in a fixed pattern per column (ascending or descending by 1 across a-e-i-o-u), which is a
+  check, not evidence -- several cells are visibly overwritten (ya, ye, yi, yo; quo, quu blotted; lo) and are graded M.
+  z column: syllables written, no code at the page edge (graded I, no code). The column read h (codes 40-44) is
+  written with a round S-like head; s has its own column (90-94), so read h, M on letter identity.
+- Codes 00-09 do not occur in the grid; vowels and some letters are written with the header signs (a: ʒ? 4; e: n f s;
+  i: p 6; o: 7 2; u: 8; y: 9 1 ...). The 'e' column has no syllable grid (e is not a consonant column).
+Output: `key_no54.tsv` (115 rows: 95 syllable rows with codes, 5 z rows without, 20 header signs; H 94, M 16, I 5).
+Tomokiyo's caution that his no.54 reconstruction has errors applies to his table, not to this sheet; differences against
+his table are not checked (his key image is only in IMAGE-QUEUE.tsv).
+Signs read: ~190 (90 grid codes + 90 syllables + 20 header signs, counting syllable+code as 2). Cost per 100 signs: the
+orchestrator's figure from get_session divided by 1.9.
+
+### Not done in this job
+The nomenclator and the Nulles/legend block of no.54, the no.31 key (f.62r), any decoding of the three leaves, the
+fr.3641 known-answer control. Requests: gallica.bnf.fr 22 (5 info.json + 3 overviews of fr.3995 + 15 overview/corner crops
+of fr.15575/15576 + 1 native region of f188).
+Next (Verdict): known-answer control first (rule 3): one fr.3641 letter in this cipher with a period interlined
+decipherment, crops + 2 passes + reconcile of its cipher runs, a pre-registered token-agreement gate (normalised
+convention), decode with key_no54.tsv -- ~$6-8; only if it passes, transcribe fr.15576 f.2 (~350 groups, ~$6) and decode.

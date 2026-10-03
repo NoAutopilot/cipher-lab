@@ -1,0 +1,118 @@
+# BnF fr.3995 no.54, f.96v-97r (Gallica btv1b525085665 canvas f188), syllabary + header letter signs only; nomenclator (lower 3/4 of the spread) NOT transcribed. NV05B, 3 Oct 2026.
+# grades: H = both blind passes agree and reconciler confirms on the native crop; M = overwritten/blotted or identity unsure; I = no code on sheet
+code	value	kind	grade	note
+10	ba	syllable	H	
+11	be	syllable	H	
+12	bi	syllable	H	
+13	bo	syllable	H	
+14	bu	syllable	H	
+19	ca	syllable	H	
+18	ce	syllable	H	
+17	ci	syllable	H	
+16	co	syllable	H	
+15	cu	syllable	H	
+24	da	syllable	H	
+23	de	syllable	H	
+22	di	syllable	H	
+21	do	syllable	H	
+20	du	syllable	H	
+25	fa	syllable	H	
+26	fe	syllable	H	
+27	fi	syllable	H	
+28	fo	syllable	H	8 written open, like 'o'
+29	fu	syllable	H	
+34	ga	syllable	H	
+33	ge	syllable	H	
+32	gi	syllable	H	
+31	go	syllable	H	
+30	gu	syllable	H	
+40	ha	syllable	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+41	he	syllable	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+42	hi	syllable	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+43	ho	syllable	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+44	hu	syllable	M	column head written like a round S; s has its own column (90-94), so read h; letter identity M
+50	ia	syllable	H	
+51	ie	syllable	H	
+52	iy	syllable	H	syllable written 'iy'
+53	io	syllable	H	
+54	iu	syllable	H	
+45	la	syllable	H	
+46	le	syllable	H	
+47	li	syllable	H	
+48	lo	syllable	M	8 overwritten
+49	lu	syllable	H	
+55	ma	syllable	H	
+56	me	syllable	H	
+57	mi	syllable	H	
+58	mo	syllable	H	
+59	mu	syllable	H	
+64	na	syllable	H	
+63	ne	syllable	H	
+62	ni	syllable	H	
+61	no	syllable	H	
+60	nu	syllable	H	
+65	pa	syllable	H	
+66	pe	syllable	H	
+67	pi	syllable	H	
+68	po	syllable	H	
+69	pu	syllable	H	
+74	qua	syllable	H	
+73	que	syllable	H	
+72	qui	syllable	H	
+71	quo	syllable	M	code blotted/overwritten
+70	quu	syllable	M	code blotted/overwritten; cell written 'quu'
+75	ra	syllable	H	
+76	re	syllable	H	
+77	ri	syllable	H	
+78	ro	syllable	H	8 written open, like 'o' (70 is quu)
+79	ru	syllable	H	
+90	sa	syllable	H	
+91	se	syllable	H	
+92	si	syllable	H	
+93	so	syllable	H	
+94	su	syllable	H	
+80	ta	syllable	H	
+81	te	syllable	H	
+82	ti	syllable	H	
+83	to	syllable	H	
+84	tu	syllable	H	
+89	ua	syllable	H	
+88	ue	syllable	H	syllable written like 'uei'
+87	ui	syllable	H	
+86	uo	syllable	H	
+85	uu	syllable	H	
+95	xa	syllable	H	
+96	xe	syllable	H	
+97	xi	syllable	H	
+98	xo	syllable	H	
+99	xu	syllable	H	
+39	ya	syllable	M	overwritten (3o->39?)
+38	ye	syllable	M	overwritten
+37	yi	syllable	M	overwritten (34->37?)
+36	yo	syllable	M	overwritten
+35	yu	syllable	H	
+	za	syllable (no code)	I	z column: syllables written, no code visible at the page edge (both passes '#'; reconciler: none written)
+	ze	syllable (no code)	I	z column: syllables written, no code visible at the page edge (both passes '#'; reconciler: none written)
+	zi	syllable (no code)	I	z column: syllables written, no code visible at the page edge (both passes '#'; reconciler: none written)
+	zo	syllable (no code)	I	z column: syllables written, no code visible at the page edge (both passes '#'; reconciler: none written)
+	zu	syllable (no code)	I	z column: syllables written, no code visible at the page edge (both passes '#'; reconciler: none written)
+ʒ (or 2/z)	a	letter sign (header)	M	pass A '2?', pass B 'z?'
+4	a	letter sign (header)	H	
+n	e	letter sign (header)	H	under e, read n by both passes
+f	e	letter sign (header)	H	
+s	e	letter sign (header)	H	
+3	g	letter sign (header)	H	
+p	i	letter sign (header)	H	
+6	i	letter sign (header)	H	
+5	l (header 'la')	letter sign (header)	M	header reads 'la' (pass A) / 'l' (pass B)
+x	n	letter sign (header)	H	
+.	n	letter sign (header)	M	dot, may be a stray
+7	o	letter sign (header)	H	
+2	o	letter sign (header)	H	
+y	r	letter sign (header)	H	
+:	r	letter sign (header)	H	
+A	s	letter sign (header)	H	
+8	u	letter sign (header)	H	
+9	y	letter sign (header)	H	
+1	y	letter sign (header)	H	written like a long j
+hook	z	letter sign (header)	M	pass A '~', pass B 'hook?'
