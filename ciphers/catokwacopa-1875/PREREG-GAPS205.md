@@ -1,4 +1,4 @@
-# PREREG-GAPS205 (account-4, 3 Oct 2026, written 19:06 UTC before any statistic below was computed)
+# PREREG-GAPS205 (account-4, 3 Oct 2026, written 19:03 UTC (clock read) before any statistic below was computed)
 
 Worker GAPS205-pollaky-1865-1875 (account-4). Step: pollaky-1865-1875 gap 3 Verdict, "run catokwacopa-1875's own
 cheapest step there (copy ... ads 3-4 text with attribution, Ernst's pair segmentation, pairing permutation test with
@@ -30,3 +30,13 @@ Gate (decided now):
     no bearing on any reading.
   - Otherwise inconclusive.
 No reading is attempted; nothing is graded (no plaintext tokens, rule 4 n/a).
+
+## Addendum A (19:07 UTC, written after the T run above and before variant T' was computed)
+
+Result of T as registered: target p 0.00045, P-coin/P-half power 1.0/1.0, but U-half FPR 0.75 (> 0.15): **non-test**
+by the gate above. Cause: the best-merge score grows with the number of interleavings C(n+m, n), which depends on the
+two lengths, so T leaks the length pairing that S already measures. One variant, registered now, one run only:
+T' = sum_i (M[i][i] - E[len a_i][len b_i]), where E[n][m] is the mean merge score of 40 pairs of independent corpus
+halves (pairs.synth 'half' dealer on two independent phrases) of lengths n and m (seed 2050). Same null, same three
+control arms (the control strings get E from the same table, extended to their lengths), same gate and verdict words.
+If T' also fails its gate, the content axis is logged untestable-by-this-instrument at N = 24 lines; no third variant.
