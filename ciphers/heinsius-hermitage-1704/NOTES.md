@@ -1,4 +1,5 @@
 open
+Veenendaal, *Briefwisseling van Anthonie Heinsius* Deel 3 (GS 169) pp.59, 64, 92, 144, 169 read by this worker (GF4-BATCH15, Huygens retroboeken OCR, 3 Oct 2026), plus full-text search "cijfer" (Deel 3, 4 hits), "opgelost" (Deel 3, 2) and "onopgelost cijfer" (all 19 volumes, 3): letters 166, 177 and 477 are printed only as Dutch regests with footnotes "Gedeeltelijk in onopgelost cijfer(schrift)", letter 251 as a regest with "Door Sauniere gedeeltelijk in cijferschrift gesteld" (no "opgelost"); no l'Hermitage cipher text or decipherment is printed in the volume.
 
 # René de Sauniere de l'Hermitage (London) to Anthonie Heinsius, three unsolved cipher passages, Feb-May 1704
 
@@ -183,3 +184,27 @@ Waits on photographs of NA 3.01.19 invnrs. 946 and 2317, since 24 Sept 2026 (REQ
 - Re-read the edition's footnote for letter no. 251 (25 Mar 1704, inv.nr. 946) again -- it lacks "onopgelost," unlike 166/177/477, so it may already be solved in print. S.
 - Compare HU10's four read codes (14, 33, 15, 50, from letter 1231, Dec 1705) against invnr 2317's date (c.1705) for any structural fit with l'Hermitage's known code design, even without the key itself. M.
 - Systematically sweep the printed edition (Deel 3/4, already fetched) for any further l'Hermitage letters footnoted "cijferschrift"/"cijfer" not yet catalogued here, since two H.A. numbers already turned up 19 months apart. M.
+
+## Web and blog check (GF4-BATCH15, account-4, 3 Oct 2026)
+Plain web searches: `"Sauniere de l'Hermitage" Heinsius 1704 cijfer OR cipher OR chiffre` (hits: Wikipedia and mirrors on René de Saunière de l'Hermitage; Bérenger Saunière/Rennes-le-Château noise; nothing on a cipher of his); `"onopgelost cijferschrift" Heinsius` (NA 3.01.19 inventory pages only); `"Sleutel van een cijferschrift, waarschijnlijk voor correspondentie met Engeland"` (the NA inventory entry for inv. 2317 itself and its PDF; no publication of the key); `"Cryptology and statecraft in the Dutch Republic" de Leeuw Heinsius correspondents ciphers l'Hermitage` -- K. de Leeuw's UvA thesis (2000), the standard study of Heinsius's cipher office: full PDF fetched (pure.uva.nl/ws/files/3074957/12760_Thesis.pdf) and grepped for hermitage/saunière/2317/2316/946: 0 hits (inv. 2315 cited once, for a d'Alonne worksheet "tous ces nombres signifient des nulls", an intercept, not l'Hermitage's key); also `"Borssele van der Hooghe" Heinsius 1714 ...` (shared with borssele-heinsius-1714, nothing on l'Hermitage). Model-solve check: nothing.
+Blog site searches: Cipherbrain `Heinsius cipher OR Geheimschrift OR "Hermitage" site:scienceblogs.de` -- 0 relevant; Cryptiana (blog and fc2 pages) + Cipher Mysteries `Heinsius Dutch cipher 1704 OR 1714 site:...` -- 0 relevant. No hit to open, no comment thread to read. Result: no public decipherment of letters 166/177/251/477 or publication of inv. 2317. Requests: resources.huygens.knaw.nl 8 this target (3 search, 1 pages.json, 5 page OCR, minus shared), pure.uva.nl/dare.uva.nl shared with borssele-heinsius-1714.
+
+## Premise check (GF4-BATCH15, account-4, 3 Oct 2026)
+(a) Folder's own mentions -- found, not viewable: NA 3.01.19 inv. 2317 "Sleutel van een cijferschrift, waarschijnlijk voor correspondentie met Engeland" (and 2315 "Stukken betreffende cijfers en sleutels") -- a candidate key, PHYSICAL/no scans (24 Sept check); and letter 251's footnote, re-read this pass on p.92: "Door Sauniere gedeeltelijk in cijferschrift gesteld" with no "opgelost" and no gloss printed -- the edition prints only a regest, so whether 251 was deciphered at the time is not answerable from print.
+(b) Other solvers' working files -- not found: fresh depth-1 clones of both solver repositories grepped for hermitage/sauniere/heinsius/946: only unrelated substrings.
+(c) Physical neighbours -- not reachable: H.A. 946 is not digitised, so the leaves beside 166/177/477 (and any decipherment slip, the shape seen in Borssele's H.A. 1836, letter 970) cannot be viewed. In print, no neighbouring 1704 l'Hermitage letter carries a decipherment note (Deel 3 "opgelost" hits are Rumpf p.144 and Haersolte p.208, other correspondents, both deciphered by d'Alonne).
+(d) Recipient/other side -- not found, not reached: l'Hermitage's parallel reports to the States-General/griffier (NA 1.01.02 liassen Engeland, 1704) were not searched; de Leeuw's thesis does not mention him.
+
+## While waiting (GF4-BATCH15, account-4, 3 Oct 2026)
+
+- Sweep Deel 4-19 of the Heinsius edition (retroboeken full-text, source_id per volume) for "Hermitage" letters footnoted "cijfer"/"opgelost" -- a later l'Hermitage letter deciphered by d'Alonne or Heinsius would be a same-key crib and lift this from candidate-key to sibling recovery; depends on nobody, ~20 requests. S.
+- Then add any such letter's H.A. number to REQUEST.md beside 946 and 2317.
+
+Gate re-run (GF4-BATCH15, 3 Oct 2026): status `open` unchanged.
+```
+$ python3 tools/intake_gate_check.py heinsius-hermitage-1704
+heinsius-hermitage-1704: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0 (was 1: no standard-edition citation within 6 lines)
+$ python3 tools/next_steps.py --wait-only | grep heinsius-hermitage-1704
+(no line)
+```
