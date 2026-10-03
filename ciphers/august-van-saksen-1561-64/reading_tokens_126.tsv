@@ -125,8 +125,8 @@ line	pos	sign	value	grade
 5	2	4	o	C
 5	4	1	h	C
 5	5	3	e	C
-5	6	Pf	f	M
-5	7	9	t	M
+5	6	Pf	f	C
+5	7	9	t	C
 5	8	Z	i	C
 5	9	Qg	g	C
 5	11	V	k	C
@@ -215,7 +215,7 @@ line	pos	sign	value	grade
 8	2	Or	r	C
 8	3	3	e	C
 8	4	Or	r	C
-8	6	Pf	f	M
+8	6	Pf	f	C
 8	7	Or	r	C
 8	8	5	u	C
 8	9	D	c	C

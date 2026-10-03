@@ -849,3 +849,8 @@ Rule 10 propagation note, not a verdict (VERIFY-AVS4, 2 Oct 2026): A2-AVS4's thr
 key_53 dictionary regrade (NOTES.md "AVS53", prereg_avs53.md; band-permuted key control, 1000 draws, both gates PASS).
 The figures "S 238, M 126" above and in the SO-SAXONY-53-57 prompt are the earlier grades; still no H or C, so the
 class wording "as read cryptanalytically" stands. The regrade is key-side support, not an image re-read.
+
+Propagation note (AVS-SPOT, 3 Oct 2026, account 2): a pre-registered native spot re-read of f.139 (NOTES.md "AVS-SPOT",
+prereg_avs_spot.md) moved three transcription-doubt signs of 126 to C (Pf l.5 pos 6 and l.8 pos 6, 9 l.5 pos 7) and confirmed
+'adesn' as a clear Sb (a writer's s for r, kept as written); Λ l.1 pos 32 stays M. 126's grades move from C 229, M 11 to
+**C 232, M 8** of 240; the German text of reading_126.txt is unchanged, so SO-SAXONY-126 needs no update.
