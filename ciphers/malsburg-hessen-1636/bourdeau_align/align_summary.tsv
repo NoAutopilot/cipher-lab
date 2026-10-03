@@ -1,0 +1,4 @@
+image	ours_cipher_tokens	his_tokens_on_image	his_span_aligned	matched	matched_share_of_ours	replace	his_only	ours_only
+0003	191	455	193	179	0.937	13	1	0
+0012	159	712	159	153	0.962	6	0	0
+0023	1439	1443	1443	1235	0.858	199	16	10
