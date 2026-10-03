@@ -1,0 +1,38 @@
+{
+ "n_target": 325,
+ "distinct": 207,
+ "key_rows": 207,
+ "key_nonblank_for_target": 206,
+ "draws": 200,
+ "seed": 1812,
+ "corpus": "tools/data/fr1810",
+ "target": {
+  "obs": -0.8655,
+  "null_mean": -1.0605,
+  "null_max": -1.0025,
+  "p": 0.005
+ },
+ "target_decode_first80": "je n ait aucun Nouveau de votre Majesté de puis do n de par de pa ri S point et virgule je n ail aucun Nouveau direct de France de puis les lettre du Ministre de sa Guerre du Cinq Octobre un point alinea je n ait ja mais Reçu ni Compagnie L té _ ra L port ni Etat de situation de l'armée du nord de l'Espagne préjudice que aye associé me S demande re ite re s'es a cet E ga R LD un point J.",
+ "control_n": 325,
+ "control_distinct": 198,
+ "positive_control": {
+  "err0": {
+   "obs": -0.8357,
+   "null_mean": -1.2057,
+   "null_max": -1.0923,
+   "p": 0.005
+  },
+  "err15": {
+   "obs": -0.9074,
+   "null_mean": -1.1882,
+   "null_max": -1.0674,
+   "p": 0.005
+  },
+  "err30": {
+   "obs": -1.125,
+   "null_mean": -1.2473,
+   "null_max": -1.1356,
+   "p": 0.005
+  }
+ }
+}

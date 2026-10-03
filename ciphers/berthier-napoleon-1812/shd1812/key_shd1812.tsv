@@ -1,0 +1,213 @@
+# SHD (Service historique de la Defense) deciphering table of the 1812 Spanish-campaign grand chiffre, codes 1-1400,
+# as photographed and published by J.-F. Bouchaudy, http://www.jfbouch.fr/crypto/napoleon/IMG/1812_0001.jpg, _0051, _0701, _0751
+# (fetched 3 Oct 2026 by GF4d). Key class: published (Bouchaudy's images). Only the 207 codes the Berthier 22 Dec 1812 page uses
+# are transcribed. Two blind Opus passes (passA_*.tsv, passB_*.tsv) + reconciliation from the crops (settled=R). Values are a key to
+# test, not H for this letter.
+code	entry	conf	settled
+2	a	H	AB
+10	un point	H	AB
+13	de	H	AB
+25	aussi	H	AB
+29	Cro	M	AB
+43	Ministre, s	H	AB
+69	que	H	AB
+73	Majesté, s, votre	M	AB
+81	Si	M	AB
+86	ne	H	AB
+90	E.	M	AB
+112	du	H	AB
+118	do	M	R
+122	il, s	H	AB
+131	su	M	R
+139	qu'ils	H	AB
+140	dont, e	M	AB
+142	point et virgule	H	AB
+152	copie, s	H	AB
+168	ra, ront	M	AB
+173	S	H	AB
+186	le	M	AB
+192	la	H	AB
+210	et.	H	AB
+212	Nord, le, du	H	AB
+215	re	H	AB
+229	est, e, s	H	AB
+235	tu	M	AB
+236	ni	H	AB
+238	R	M	AB
+246	général, aux, ment	M	AB
+264	un	H	AB
+280	demande, s, z	M	AB
+285	sur	H	AB
+289	ta	H	AB
+306	pas	H	AB
+314	s'es	L	R
+318	des	H	AB
+320	C.	M	AB
+322	Continue, e, z, ation	M	AB
+325	naise	M	R
+331	Sa	H	AB
+339	avec, z	M	AB
+340	bien, s	H	AB
+354	ca, s	M	AB
+356	préjudice, iable, s	M	AB
+357	mon	H	AB
+359	Nouveau, x, elle	M	AB
+370	près	M	AB
+379	Re[?]	M	AB
+380	En, s, me, s	M	R
+388	et	H	AB
+402	E	M	AB
+409	ses	H	AB
+410	dernier, s, e, s, ment	H	AB
+413	les	H	AB
+415	ja	H	AB
+421	hi	H	AB
+426	ois	M	AB
+432	puis	H	AB
+434	cet, te	H	AB
+443	Courrier	H	AB
+450	point et virgule	H	AB
+463	Votre	H	AB
+476	qua	M	AB
+493	aucun, s, e, s	H	AB
+495	Cen, t	M	R
+497	la	H	AB
+498	a	H	AB
+504	a	H	AB
+507	Y, ur	M	AB
+521	L[?]	M	AB
+536	S	H	AB
+544	de	M	AB
+557	grand, s, e, s, ur, s	M	AB
+559	Compagnie, s	H	AB
+566	Des	M	AB
+572	France, ois, e, s	M	AB
+584	éclaircir, issement	M	AB
+586	me	H	AB
+599	plo	M	R
+601	jo	H	AB
+602	Etat, s	H	AB
+607	que	H	AB
+609	pendant	H	AB
+617	ou	H	AB
+623	Reçu[?], s, e, s, oir	M	AB
+631	Il, s	H	AB
+633	qua	H	AB
+635	province, s	H	AB
+637	po	M	AB
+644	ru	M	AB
+653	intention, s, ne, s	M	AB
+655	E	H	AB
+666	point et virgule	H	AB
+669	re	H	AB
+670	se	H	AB
+679	droit, s	H	AB
+683	ge	M	AB
+693	non	M	R
+694	Con	M	AB
+698	on	M	AB
+701	direct, e, s, ment	M	AB
+703	aux	M	AB
+706	ei	M	AB
+707	correspondant, s, ces	M	AB
+710	de	H	AB
+711	J.	M	R
+713	is	H	AB
+718	n	M	AB
+734	ra	M	AB
+741	me	H	AB
+745	elle, s	H	AB
+749	Russe, s, ie	M	AB
+752	la	H	AB
+770	L	H	AB
+772	ail	M	AB
+782	situation, s	H	AB
+790	pensée, s.	H	AB
+791	Guerre, s	H	AB
+793	impérial, e, s, aux	M	AB
+798	dang, s, t	L	R
+800	associé[?], ation, s	M	AB
+803	été, vis[?], t	M	AB
+809	ble, s	H	AB
+810	par, t, s	M	AB
+811	Cinq	H	AB
+820	alinea	H	AB
+821	sa	M	AB
+822	vérité, s, able, s, m^t	M	AB
+823	aye, nt, ez	M	AB
+828	ci	H	AB
+833	question, s	H	AB
+838	mais	H	AB
+851	(blank)	L	R
+853	bli	M	AB
+854	L[?]	M	AB
+862	je	H	AB
+866	C	M	AB
+869	est, e, s	M	AB
+874	qui	H	AB
+875	du	H	AB
+889	Mon	H	AB
+890	R.	M	AB
+891	pro	H	AB
+893	que	H	AB
+895	tes	H	AB
+907	fi	M	R
+909	mis	H	AB
+918	je	H	AB
+919	pas.	M	R
+921	être	H	AB
+923	it.	H	AB
+928	tra	H	AB
+929	le	H	AB
+946	té	H	AB
+949	det	M	AB
+960	lettre, s	H	AB
+966	ces	H	AB
+968	int	H	AB
+971	et	H	AB
+972	C	M	AB
+982	dru	M	AB
+984	enlèvement	M	AB
+989	de	H	AB
+994	ayant	M	AB
+999	Octobre	H	AB
+1003	a	H	AB
+1015	m.	H	AB
+1016	le	H	AB
+1017	cri	H	AB
+1018	ici	H	AB
+1030	du	H	AB
+1038	alinea[?]	M	AB
+1043	savoir, s, t	H	AB
+1045	n	H	AB
+1048	mais	H	AB
+1051	ite[?]	M	AB
+1060	de	H	AB
+1063	dépêche, s	M	AB
+1066	vo	M	AB
+1074	tion, s	H	AB
+1086	suit, s	M	R
+1087	s	M	AB
+1096	ré	M	AB
+1100	ait	H	AB
+1104	sieur, s	M	AB
+1105	votre, s	H	AB
+1109	adresse, s.	H	AB
+1110	crois, ière, s.	M	AB
+1111	ce	H	AB
+1115	premier, s, e, s, m^t.	M	AB
+1122	ri	H	AB
+1135	pa	H	AB
+1140	eux	H	AB
+1148	port, e	M	AB
+1153	un point	H	AB
+1178	LD[?]	M	AB
+1184	court, s, e, s	M	R
+1187	trouve, s	H	AB
+1188	haut, e, s	M	R
+1193	ga	M	AB
+1196	un	H	AB
+1198	avec, zté[?]	M	AB
+1202	Valladolid	H	AB
+1238	l'armée du nord de l'Espag^ne	M	AB
+1388	Salamanque	H	AB

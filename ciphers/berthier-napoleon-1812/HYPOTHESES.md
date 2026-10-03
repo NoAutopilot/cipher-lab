@@ -54,3 +54,21 @@ about 80. A shared code would put Davout's commonest group among the page's comm
 Nov 1813 Napoleon-Davout code (control-backed negative for this one key; it was in service from 23 Aug 1813 per
 Bouchaudy, so a negative was expected). This says nothing about GC34 (Berthier-Davout, May 1813, Bazeries 1896
 pp.19-36), which Bouchaudy's page does not reproduce: LOCAL-QUEUE L38 stays the route for that.
+
+## SHD 1812 Spanish-campaign grand chiffre: known-key decode test (GF4d, 3 Oct 2026)
+
+Key `shd1812/key_shd1812.tsv` (SHD table photographed by J.-F. Bouchaudy, jfbouch.fr; `published`, credited). Script
+`shd1812/known_key_test.py` (`--check` passes). Score: mean log10 4-gram/letter, fr1810 model, of the first-form decode.
+Null: 200 keys that reassign the same 207 entries to the same 207 codes at random (the statistic depends on the
+code->entry identity, so the null can differ from the target). Positive control: Berthier's Dec 1812 letters (Chuquet)
+under a synthetic two-part code, N=325, at 0/15/30% key error.
+
+| text | key | observed | shuffle mean | shuffle max | p |
+|---|---|---|---|---|---|
+| CONTROL (synthetic, 0% error) | true | -0.836 | -1.206 | -1.092 | 0.005 |
+| CONTROL (15% error) | true | -0.907 | -1.188 | -1.067 | 0.005 |
+| CONTROL (30% error) | true | -1.125 | -1.247 | -1.136 | 0.005 |
+| TARGET (325 tokens) | SHD 1812 | -0.866 | -1.061 | -1.002 | 0.005 |
+
+Result: the SHD 1812 table is this page's key (judge PASS, -0.946 vs real_p05 -0.997). The decode's content points to
+a sender in Spain, not Berthier (see NOTES.md GF4d).

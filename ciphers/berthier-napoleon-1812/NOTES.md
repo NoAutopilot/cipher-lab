@@ -1,4 +1,4 @@
-open
+partial
 Vilcoq 1969 (Persée, pages read in full incl. page images, not just search hits) reproduces the Berthier cryptogram itself as a plate (p.24, "Correspondance datée du 22 décembre 1812 du maréchal Berthier, Prince de Neufchâtel, à l'Empereur, (Archives Nationales.)" -- the image's opening number groups match ciphertext.txt exactly) with NO accompanying plaintext reconstitution, unlike the Rapp/Dantzig 1813 letter in the same article which Vilcoq does reconstruct in full (pp.25-27); Chuquet 1912 p.440 (letters XIX/XXIII, both 22 Dec 1812) read by this worker for cipher markers and carries none, while Chuquet's own edition elsewhere explicitly flags a different Berthier letter (VIII, 16 Dec, p.186) "En chiffres" -- so the XIX/XXIII pairing with this cryptogram is unconfirmed, not a match.
 
 ## Y9: full ciphertext and crib test (25 Sept 2026, LANE R6)
@@ -831,3 +831,93 @@ HTTPS, 3 HEAD), at least 1.5 s apart. No vision.
 
 Tried this pass: Bouchaudy's Davout page (Nov 1813 code: negative with controls). Next in order: gap 1 (cloud, ~$4),
 then gap 2 when L38 lands. Verdict: keep going.
+
+## GF4d: the SHD 1812 grand chiffre table reads this page (GF4d-berthier-napoleon-1812, account-4, 3 Oct 2026)
+
+**Key source.** The deciphering table ("Pour déchiffrer", codes 1-1400) of the grand chiffre used in the 1812 Spanish
+campaign, held at the SHD and photographed and published by **J.-F. Bouchaudy** on jfbouch.fr
+(`http://www.jfbouch.fr/crypto/napoleon/IMG/1812_tout.jpg`, `_0001`, `_0051`, `_0701`, `_0751`; index page snapshot
+`sources/jfbouch/2026-10-03/`). Fetched 3 Oct 2026 by this worker: 5 image requests plus 1 page
+(`complet_1815.html`, checked for a text-form table for a positive control; it has images only), 1.6-2 s apart,
+descriptive UA, all HTTP 200. Key class `published` (Bouchaudy's images of a period table), credited to him (rule 8).
+Files: `shd1812/` (images, `grid.py` + `cut.sh` grid detection and crop cutting, `crops/` 140 one-cell crops).
+
+**Crop step (pasted, Usage 6).** One `tools/iiif_lines.py` run per table column strip, cell centres as `--centres`
+so each crop is one 10-code cell, e.g.
+`python3 tools/iiif_lines.py --image ciphers/berthier-napoleon-1812/shd1812/1812_0001.jpg --out ciphers/berthier-napoleon-1812/shd1812/crops --region 335,315,554,2381 --centres 271,742,1206,1677,2132 --lines-per-crop 1 --prefix h00a`
+(all 28 commands: `sh shd1812/cut.sh`). Crop `hHH{a|b}_L0r` = codes HH*100 + (a:0, b:50) + (r-1)*10 + 1..10.
+
+**Code-range overlap (checked first).** Table 1-1400 (1-1200 base, 1201-1400 later additions); target 2-1388, all 207
+distinct codes inside it (three above 1200: 1202, 1238, 1388). Full overlap, so the test ran.
+
+**Transcription.** Only the 108 cells holding the target's 207 distinct codes were read. Two blind Opus passes, each two
+subagent calls (one per page of the table: codes 1-700 / 701-1400; 59 and 49 crops), so four vision calls in all,
+`shd1812/passA_{L,R}.tsv`, `passB_{L,R}.tsv`; plus this worker's reconciliation of the disagreements from row-level crops.
+The brief asked for one image per call; a call covered one table page (two photographs) instead, to stay at four calls.
+First-form agreement 191/207 (92.3%); the 16 splits were settled by eye (`settled=R` in the key). 851 is under a fold in
+the paper and stays unread. Key: `shd1812/key_shd1812.tsv` (207 rows; conf H = both passes H, 135 rows).
+
+**Test (rule 3).** `shd1812/known_key_test.py` (`--check` passes): decode the 325 tokens with the key (first form of each
+entry), score with the 4-gram model of `tools/judge_plaintext.py` on `tools/data/fr1810` (era-matched), against 200 keys
+that reassign the same 207 entries at random to the same 207 codes. Positive control, same design/N/language: Berthier's
+own Dec 1812 letters (Chuquet, `scripts/letters.json`, XIX and XXIII left out) encoded with a synthetic two-part code
+(300 commonest words whole, others in 3-letter pieces, codes at random in 1-1400), N=325, 198 distinct, true key vs 200
+shuffles, at 0/15/30% of key entries replaced by wrong ones.
+
+| run | observed | shuffled mean | shuffled max | p (floor 1/201) |
+|---|---|---|---|---|
+| positive control, 0% key error | -0.836 | -1.206 | -1.092 | 0.005 |
+| positive control, 15% key error | -0.907 | -1.188 | -1.067 | 0.005 |
+| positive control, 30% key error | -1.125 | -1.247 | -1.136 | 0.005 |
+| **target, SHD 1812 key** | **-0.866** | -1.061 | -1.002 | **0.005** |
+
+The target scores between the control's 0% and 15% error levels and above every one of its 200 shuffles. The shuffles
+cannot match the target by construction: the statistic depends on which entry each code gets. Judge (rule 7):
+`python3 tools/judge_plaintext.py specs/berthier-napoleon-1812.json --file shd1812/reading_shd1812.txt`:
+
+```
+ok   language: score=-0.946, null_p99=-1.73, real_p05=-0.997, real_median=-0.836, mode=both, N=1099
+ok   words: cover=0.949, min=0.5, real_text_median_cover=0.953
+PASS - berthier-napoleon-1812 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**Reading.** `shd1812/decode_shd1812.py` (`--check` passes) writes `shd1812/reading_shd1812.tsv` (per token, grade) and
+`reading_shd1812.txt` (first forms, one line per plate line). Grades (rule 4): **H 193, M 131, I 1** of 325. Here H
+means the table entry was read H by both blind passes, so it rests on a period key source *and* on this test showing the
+key is this page's. Each entry's ending (e.g. "faire, s, ..."), word joins and the code's "un point / point et virgule /
+alinea" punctuation have not been resolved into running French; that is the next step. The page opens (raw first forms):
+"je n ait aucun Nouveau de votre Majesté de puis do n de par de pa ri S point et virgule je n ail aucun Nouveau direct
+de France de puis les lettre du Ministre de sa Guerre du Cinq Octobre un point alinea je n ait ja mais Reçu ni ...
+ni Etat de situation de l'armée du nord de l'Espag^ne ...". Later lines include: copies sent in quadruplicate of the
+writer's dispatches from Salamanca, the last courier taken with the correspondence near Valladolid, an enclosed copy of
+a dispatch from a general "ré..Il le" (Reille is a probable reading, not settled), the provinces of the North, and
+"dans l'hypothèse où la guerre avec la Russie continuerait". It ends at the plate's end, mid-sentence ("et su[r]
+Votre Majesté").
+
+**Attribution question (raised here; not settled).** Vilcoq's 1969 caption gives the sender as Berthier, 22 Dec 1812. The
+plaintext reads like a letter *from Spain* to the Emperor (Salamanca, Valladolid, the army of the North of Spain, no
+news from France since the War Minister's letters of 5 Oct, the Russian war as a hypothesis), and its key is the
+Spanish-campaign table. Berthier was with the Grande Armée in Russia/Poland in Dec 1812. The likeliest sender is someone
+commanding in Spain who writes to Napoleon as "Votre Majesté [Impériale]" (King Joseph is one candidate). That is an
+inference from content and has not been checked. Next: a check-solved pass on the corrected premise, reading Du Casse,
+*Mémoires et correspondance du roi Joseph* (tomes VIII-IX) and the Spanish-front series for late 1812 against the
+reading. Search so far (rule 10, a search result only): IA full-text (be-api) for "mes dépêches de Salamanque" (0 hits)
+and "aucune nouvelle directe de France" (5 hits, none about this letter), 3 Oct 2026.
+
+Request count: jfbouch.fr 6, be-api.us.archive.org 3. Cost: get_session exposes no cost figure for this session.
+
+## Remaining gaps (GF4d, 3 Oct 2026)
+Read so far: 324 of 325 tokens have a table entry (H 193, M 131; shd1812/reading_shd1812.tsv); not yet rendered as running French.
+- token 165 (code 851) - blocker: illegible; the table entry is under a fold in the photographed sheet (shd1812/crops/h08b_L01.jpg); next: context from the running text, or the SHD sheet itself
+- running-French rendering (endings, joins, punctuation codes) of the 324 entries - blocker: not-attempted; outside the GF4d brief; next: a Sonnet/Opus rendering pass over reading_shd1812.tsv with the 16 M-reconciled entries re-checked against their crops, ~$3
+- sender and date (Vilcoq's "Berthier, 22 Dec 1812" against Spanish-front content) - blocker: not-attempted; outside the GF4d brief; next: check-solved pass on the corrected premise (Du Casse, Mémoires du roi Joseph VIII-IX; Spanish-front correspondence, late 1812), ~$3
+
+## Escalation (GF4d, 3 Oct 2026)
+- [n/a] siblings: the plate is a single page and no sibling cipher letter in this key is identified yet
+- [n/a] clear-pages: no clear text accompanies the plate in Vilcoq's article
+- [x] known-keys: SHD 1812 Spanish-campaign table (Bouchaudy's images) reads the page, p 0.005 vs 200 shuffled keys (GF4d)
+- [ ] print: check-solved on the corrected premise (Joseph's Mémoires VIII-IX, Spanish-front series) to find the plaintext in print
+- [n/a] key-rebuild: a period key is in hand, so no rebuild is needed
+- [ ] image-check: re-read the 16 reconciled M entries and token 851 at native resolution, and re-check the plate's 3-vs-8 digits where a decode looks wrong
+- [n/a] retry: the first known-key test succeeded, so there is nothing to retry
+Verdict: keep going: 2 internal gaps; cheapest next: check-solved on the corrected premise, ~$3

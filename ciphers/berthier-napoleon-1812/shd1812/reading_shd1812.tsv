@@ -1,0 +1,326 @@
+pos	code	entry	grade
+1	918	je	H
+2	1045	n	H
+3	1100	ait	H
+4	493	aucun, s, e, s	H
+5	359	Nouveau, x, elle	M
+6	989	de	H
+7	1105	votre, s	H
+8	73	Majesté, s, votre	M
+9	710	de	H
+10	432	puis	H
+11	118	do	M
+12	718	n	M
+13	544	de	M
+14	810	par, t, s	M
+15	1060	de	H
+16	1135	pa	H
+17	1122	ri	H
+18	173	S	H
+19	666	point et virgule	H
+20	862	je	H
+21	718	n	M
+22	772	ail	M
+23	493	aucun, s, e, s	H
+24	359	Nouveau, x, elle	M
+25	701	direct, e, s, ment	M
+26	13	de	H
+27	572	France, ois, e, s	M
+28	544	de	M
+29	432	puis	H
+30	413	les	H
+31	960	lettre, s	H
+32	112	du	H
+33	43	Ministre, s	H
+34	989	de	H
+35	821	sa	M
+36	791	Guerre, s	H
+37	1030	du	H
+38	811	Cinq	H
+39	999	Octobre	H
+40	1153	un point	H
+41	820	alinea	H
+42	918	je	H
+43	1045	n	H
+44	1100	ait	H
+45	415	ja	H
+46	1048	mais	H
+47	623	Reçu[?], s, e, s, oir	M
+48	236	ni	H
+49	559	Compagnie, s	H
+50	854	L[?]	M
+51	946	té	H
+52	851	(blank)	I
+53	168	ra, ront	M
+54	854	L[?]	M
+55	1148	port, e	M
+56	236	ni	H
+57	602	Etat, s	H
+58	13	de	H
+59	782	situation, s	H
+60	544	de	M
+61	1238	l'armée du nord de l'Espag^ne	M
+62	356	préjudice, iable, s	M
+63	69	que	H
+64	823	aye, nt, ez	M
+65	800	associé[?], ation, s	M
+66	741	me	H
+67	536	S	H
+68	280	demande, s, z	M
+69	669	re	H
+70	1051	ite[?]	M
+71	215	re	H
+72	314	s'es	M
+73	498	a	H
+74	434	cet, te	H
+75	402	E	M
+76	1193	ga	M
+77	238	R	M
+78	1178	LD[?]	M
+79	10	un point	H
+80	711	J.	M
+81	1100	ait	H
+82	1109	adresse, s.	H
+83	504	a	H
+84	463	Votre	H
+85	73	Majesté, s, votre	M
+86	793	impérial, e, s, aux	M
+87	388	et	H
+88	703	aux	M
+89	43	Ministre, s	H
+90	13	de	H
+91	821	sa	M
+92	791	Guerre, s	H
+93	2	a	H
+94	1135	pa	H
+95	1122	ri	H
+96	1087	s	M
+97	566	Des	M
+98	476	qua	M
+99	982	dru	M
+100	853	bli	M
+101	354	ca, s	M
+102	289	ta	H
+103	13	de	H
+104	741	me	H
+105	536	S	H
+106	1063	dépêche, s	M
+107	710	de	H
+108	1388	Salamanque	H
+109	889	Mon	H
+110	410	dernier, s, e, s, ment	H
+111	443	Courrier	H
+112	994	ayant	M
+113	1110	crois, ière, s.	M
+114	984	enlèvement	M
+115	339	avec, z	M
+116	1184	court, s, e, s	M
+117	752	la	H
+118	707	correspondant, s, ces	M
+119	370	près	M
+120	13	de	H
+121	1202	Valladolid	H
+122	325	naise	M
+123	1038	alinea[?]	M
+124	1105	votre, s	H
+125	73	Majesté, s, votre	M
+126	1187	trouve, s	H
+127	168	ra, ront	M
+128	828	ci	H
+129	601	jo	H
+130	968	int	H
+131	152	copie, s	H
+132	1178	LD[?]	M
+133	1196	un	H
+134	1063	dépêche, s	M
+135	1060	de	H
+136	693	non	M
+137	1104	sieur, s	M
+138	1016	le	H
+139	246	général, aux, ment	M
+140	1096	ré	M
+141	631	Il, s	H
+142	929	le	H
+143	874	qui	H
+144	1015	m.	H
+145	2	a	H
+146	1135	pa	H
+147	644	ru	M
+148	13	de	H
+149	718	n	M
+150	1003	a	H
+151	235	tu	M
+152	215	re	H
+153	498	a	H
+154	921	être	H
+155	909	mis	H
+156	402	E	M
+157	1086	suit, s	M
+158	409	ses	H
+159	507	Y, ur	M
+160	1140	eux	H
+161	10	un point	H
+162	866	C	M
+163	869	est, e, s	M
+164	192	la	H
+165	1115	premier, s, e, s, m^t.	M
+166	854	L[?]	M
+167	711	J.	M
+168	960	lettre, s	H
+169	90	E.	M
+170	544	de	M
+171	1111	ce	H
+172	633	qua	H
+173	718	n	M
+174	669	re	H
+175	69	que	H
+176	918	je	H
+177	215	re	H
+178	972	C	M
+179	426	ois	M
+180	142	point et virgule	H
+181	745	elle, s	H
+182	1016	le	H
+183	584	éclaircir, issement	M
+184	655	E	H
+185	285	sur	H
+186	497	la	H
+187	637	po	M
+188	81	Si	M
+189	1074	tion, s	H
+190	949	det	M
+191	635	province, s	H
+192	875	du	H
+193	212	Nord, le, du	H
+194	450	point et virgule	H
+195	918	je	H
+196	1043	savoir, s, t	H
+197	340	bien, s	H
+198	607	que	H
+199	745	elle, s	H
+200	1045	n	H
+201	803	été, vis[?], t	M
+202	919	pas.	M
+203	380	En, s, me, s	M
+204	838	mais	H
+205	918	je	H
+206	86	ne	H
+207	752	la	H
+208	29	Cro	M
+209	507	Y, ur	M
+210	1100	ait	H
+211	173	S	H
+212	919	pas.	M
+213	25	aussi	H
+214	13	de	H
+215	599	plo	M
+216	734	ra	M
+217	809	ble, s	H
+218	388	et	H
+219	918	je	H
+220	86	ne	H
+221	790	pensée, s.	H
+222	772	ail	M
+223	1087	s	M
+224	306	pas	H
+225	893	que	H
+226	745	elle, s	H
+227	655	E	H
+228	379	Re[?]	M
+229	683	ge	M
+230	498	a	H
+231	320	C.	M
+232	318	des	H
+233	331	Sa	H
+234	1017	cri	H
+235	907	fi	M
+236	966	ces	H
+237	25	aussi	H
+238	557	grand, s, e, s, ur, s	M
+239	607	que	H
+240	821	sa	M
+241	694	Con	M
+242	495	Cen, t	M
+243	928	tra	H
+244	1074	tion, s	H
+245	140	dont, e	M
+246	122	il, s	H
+247	229	est, e, s	H
+248	833	question, s	H
+249	10	un point	H
+250	918	je	H
+251	29	Cro	M
+252	713	is	H
+253	1111	ce	H
+254	609	pendant	H
+255	1003	a	H
+256	192	la	H
+257	822	vérité, s, able, s, m^t	M
+258	875	du	H
+259	168	ra, ront	M
+260	854	L[?]	M
+261	1148	port, e	M
+262	13	de	H
+263	357	mon	H
+264	1104	sieur, s	M
+265	1016	le	H
+266	972	C	M
+267	698	on	M
+268	946	té	H
+269	890	R.	M
+270	706	ei	M
+271	521	L[?]	M
+272	186	le	M
+273	210	et.	H
+274	2	a	H
+275	752	la	H
+276	679	droit, s	H
+277	235	tu	M
+278	215	re	H
+279	989	de	H
+280	409	ses	H
+281	653	intention, s, ne, s	M
+282	10	un point	H
+283	918	je	H
+284	694	Con	M
+285	972	C	M
+286	426	ois	M
+287	139	qu'ils	H
+288	1188	haut, e, s	M
+289	1187	trouve, s	H
+290	238	R	M
+291	264	un	H
+292	1096	ré	M
+293	586	me	H
+294	1060	de	H
+295	971	et	H
+296	1066	vo	M
+297	1018	ici	H
+298	1111	ce	H
+299	69	que	H
+300	862	je	H
+301	891	pro	H
+302	637	po	M
+303	670	se	H
+304	1003	a	H
+305	463	Votre	H
+306	73	Majesté, s, votre	M
+307	798	dang, s, t	M
+308	770	L	H
+309	421	hi	H
+310	637	po	M
+311	895	tes	H
+312	90	E.	M
+313	617	ou	H
+314	821	sa	M
+315	791	Guerre, s	H
+316	1198	avec, zté[?]	M
+317	497	la	H
+318	749	Russe, s, ie	M
+319	322	Continue, e, z, ation	M
+320	168	ra, ront	M
+321	923	it.	H
+322	971	et	H
+323	131	su	M
+324	463	Votre	H
+325	73	Majesté, s, votre	M
