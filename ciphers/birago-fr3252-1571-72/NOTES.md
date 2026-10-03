@@ -1423,3 +1423,18 @@ ambiguity-matched decoy arm found: f.117r (re-cut at the original band height) G
 f.117r H0 C0 S179 M74 I0 U26; f.168 H0 C0 S90 M22 I0 U10; f.144r H0 C0 S40 M36 I0 U14. Judge FAIL on all three (f.117r -1.294 vs
 real_p05 -0.907, f.168 -1.238 vs -0.975, f.144r -1.454 vs -0.955). This is a cryptanalytic result, not a reading. Next: a third blind reader on
 f.144r's 4 dropped positions plus matched decoys, ~$3, only if new crops (native re-capture) are available.
+
+## BIR-ROUND2 (3 Oct 2026, account-3 worker): round-2 lattice on the M tokens, and the U-token check against the printed key
+Full record in `nevers-birago-fr3251-1572/harvest/tx_decode/eye/round2/RESULTS-ROUND2.md` (prereg 923a783f, pushed before any score).
+With A1-BIR-VERIFY's 24 S positions pinned, H positions pinned and look-alike partners added at the M positions, the lam-4 lattice
+changes 13 / 6 / 13 positions (f.117r / f.168 / f.144r). All of them were already asked in A1-BIR-EYE or A1-BIR-VERIFY and not
+kept. There are **0 new positions on every leaf, so the round is untestable at this N** under the pre-registered rule, and no reader call
+was made. Nothing changed: decode --check exit 0, grades f.117r H0 C0 S179 M74 I0 U26, f.168 H0 C0 S90 M22 I0 U10, f.144r H0 C0
+S40 M36 I0 U14, and the judge lines are as A1-BIR-VERIFY's (FAIL on all three). Position null on the round-2 base: PASS on all three: real key rank 1/201 and real S above every one of 200 shuffled lattices (f.117r -1.081 vs p95 -1.521, z 4.97 vs shuffled p95 1.42; f.168 -1.019 vs -1.425, z 3.61 vs 0.96; f.144r -0.998 vs -1.197, z 3.08 vs 1.56; 111 s). Pinning the 24 S and H positions keeps the key separable from the null (A1-POSNULL z on the unpinned lattices: 3.66 / 2.77 / 3.10), but this gate licenses nothing without reader questions.
+The A/B lattice instrument is exhausted on these leaves at lam 4. Next is a different instrument: an open-choice blind re-read of the
+M positions against the full sign sheet, which adds candidates, and then the lattice (~3 vision calls, ~$5).
+U tokens (`round2/u_tokens.tsv`, report only): the printed key has no null and 8 word or name codes. A digit pair "4 7" recurs on
+f.117r L02 and f.144r L04.1 (both readers), and "1 6" appears on f.144r L05. Their shape class is the printed digit name codes
+(85/86/89), but they are not in the printed key; values unknown. An "up triangle over cross" resembles quello (T84) in reverse
+orientation. No other off-sheet shape matches a printed code. Next: pooled 47/16 count across the 1572 leaves, disk only, ~$1.
+Cryptanalytic result only; no reading claimed, no novelty classed.

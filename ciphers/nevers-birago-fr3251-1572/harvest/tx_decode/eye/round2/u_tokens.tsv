@@ -1,0 +1,92 @@
+leaf	pass	pass_pos	sign	reader_alt	conf	reader_note	printed_key_comparison
+f117	passA	L01.1	X_NEW	T25	L	script H with dots; line start	no printed word code, name code or null matches the description
+f117	passA	L01.2	X_NEW	T49	L	box with short stem up	no printed word code, name code or null matches the description
+f117	passA	L01.3	X_NEW		M	rectangle with inner dot	no printed word code, name code or null matches the description
+f117	passA	L01.11	X_NEW		M	empty rectangle	no printed word code, name code or null matches the description
+f117	passA	L01.19	X_NEW		M	lone 8	digit 8 alone: printed 85/89 carry a tick over the 8; a lone 8 is not a printed code (earlier fits quello/che weak, NOTES)
+f117	passA	L01.26	X_NEW	T76	L	hooked long s	no printed word code, name code or null matches the description
+f117	passA	L02.28	X_NEW	T51	L	4 with crossbar	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f117	passA	L02.29	X_NEW		M	7; line end	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f117	passA	L03.19	X_NEW		L	small t	no printed word code, name code or null matches the description
+f117	passA	L03.25	X_NEW		M	8	digit 8 alone: printed 85/89 carry a tick over the 8; a lone 8 is not a printed code (earlier fits quello/che weak, NOTES)
+f117	passA	L03.26	X_S		L	small s	no printed word code, name code or null matches the description
+f117	passA	L03.30	X_NEW	T26	L	swash s loop	no printed word code, name code or null matches the description
+f117	passA	L04.15	X_NEW		M	f with dot	no printed word code, name code or null matches the description
+f117	passA	L05.1	X_NEW		M	l with hook; line start	no printed word code, name code or null matches the description
+f117	passA	L05.13	X_NEW		M	d flourish	no printed word code, name code or null matches the description
+f117	passA	L05.20	X_NEW	T26	L	s swash	no printed word code, name code or null matches the description
+f117	passA	L05.26	X_NEW	T27	L	big swash s	no printed word code, name code or null matches the description
+f117	passA	L05.29	X_NEW		L	curly y	no printed word code, name code or null matches the description
+f117	passA	L06.12	X_NEW	T26	L	f hooked	no printed word code, name code or null matches the description
+f117	passA	L06.31	X_NEW		L	filled blob with stroke; line end	no printed word code, name code or null matches the description
+f117	passA	L07.5	X_NEW	T81	M	x with two slashes	no printed word code, name code or null matches the description
+f117	passA	L07.20	X_K		H	capital K	no printed word code, name code or null matches the description
+f117	passA	L07.26	X_NEW	T81	M	x with slash	no printed word code, name code or null matches the description
+f117	passA	L07.27	X_NEW	T36	L	filled circle stem	no printed word code, name code or null matches the description
+f117	passA	L08.2	X_EQ		H	two strokes	no printed word code, name code or null matches the description
+f117	passA	L08.16	X_NEW		M	d flourish	no printed word code, name code or null matches the description
+f117	passA	L08.27	X_NEW	T24	M	epsilon with dot	et (T29): printed "backwards-3 / script epsilon joined to a small circle"; reader saw epsilon with dot -- partial
+f117	passA	L09.1	X_NEW	T85	M	cross with small o; line start	no printed word code, name code or null matches the description
+f117	passA	L10.8	X_NEW	T27	L	big curl with 9 inside	che (T89): printed "loop on a vertical stroke curving into a hook, like 9" -- partial
+f117	passA	L10.11	X_NEW		M	f with dots; line end	no printed word code, name code or null matches the description
+f117	passB	L01.1	X_NEW		L	H-shape with dot; line start	no printed word code, name code or null matches the description
+f117	passB	L01.2	X_NEW		L	box on bar	no printed word code, name code or null matches the description
+f117	passB	L01.3	X_NEW		L	rectangle with dot	no printed word code, name code or null matches the description
+f117	passB	L01.11	X_NEW		L	rectangle	no printed word code, name code or null matches the description
+f117	passB	L01.26	X_S		L	long s	no printed word code, name code or null matches the description
+f117	passB	L02.28	X_NEW		L	4 crossed stem	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f117	passB	L02.29	X_NEW		L	7 stroke; line end	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f117	passB	L03.9	X_NEW		L	curly x with hook?	no printed word code, name code or null matches the description
+f117	passB	L03.16	X_NEW		L	x-hook	no printed word code, name code or null matches the description
+f117	passB	L03.19	X_NEW		L	t small cross	no printed word code, name code or null matches the description
+f117	passB	L03.26	X_S		L	long s	no printed word code, name code or null matches the description
+f117	passB	L03.29	X_NEW		L	n hook	no printed word code, name code or null matches the description
+f117	passB	L03.30	X_S		L	s-curl	no printed word code, name code or null matches the description
+f117	passB	L04.15	X_S		L	f with dot	no printed word code, name code or null matches the description
+f117	passB	L05.1	X_S		L	long s; line start	no printed word code, name code or null matches the description
+f117	passB	L05.13	X_NEW		L	d	no printed word code, name code or null matches the description
+f117	passB	L05.20	X_S		L	s with o	no printed word code, name code or null matches the description
+f117	passB	L05.26	X_S		L	s hook	no printed word code, name code or null matches the description
+f117	passB	L05.29	X_NEW		L	y hook	no printed word code, name code or null matches the description
+f117	passB	L06.12	X_S		L	long s	no printed word code, name code or null matches the description
+f117	passB	L07.5	X_NEW		L	slashed X	no printed word code, name code or null matches the description
+f117	passB	L07.20	X_K		H	capital K	no printed word code, name code or null matches the description
+f117	passB	L07.26	X_NEW		L	slashed X	no printed word code, name code or null matches the description
+f117	passB	L08.2	X_EQ		H	=	no printed word code, name code or null matches the description
+f117	passB	L08.16	X_NEW		L	d	no printed word code, name code or null matches the description
+f117	passB	L09.1	X_NEW		L	plus with o; line start	no printed word code, name code or null matches the description
+f117	passB	L10.8	X_NEW		L	large spiral loop	no printed word code, name code or null matches the description
+f117	passB	L10.9	X_NEW		L	V with bar	no printed word code, name code or null matches the description
+f117	passB	L10.11	X_S		L	s with dots; line end	no printed word code, name code or null matches the description
+f144r	passA	L03.2	X_NEW		M	square with centre dot	no printed word code, name code or null matches the description
+f144r	passA	L03.3	X_NEW	T37	L	circle crossed by horizontal bar with vertical stem through	no printed word code, name code or null matches the description
+f144r	passA	L03.10	X_NEW	T70	M	up triangle over cross stem	quello (T84): printed "downward open triangle pierced by a vertical stroke"; readers say UP triangle over cross/stem -- orientation differs
+f144r	passA	L04.1.1	X_NEW	T66	L	f/long-s with foot; prose before: 'line start'	no printed word code, name code or null matches the description
+f144r	passA	L04.1.9	X_NEW		H	digit 4	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f144r	passA	L04.1.10	X_NEW		H	digit 7	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f144r	passA	L04.1.11	X_NEW	T26	L	q inside C-curl	no printed word code, name code or null matches the description
+f144r	passA	L04.2.4	X_NEW	T51	L	small cross with lower bar	no printed word code, name code or null matches the description
+f144r	passA	L04.2.6	X_NEW		M	box with dot crossed by diagonal	no printed word code, name code or null matches the description
+f144r	passA	L04.2.7	X_NEW	T85	L	plus with o, slash through	no printed word code, name code or null matches the description
+f144r	passA	L04.2.12	X_NEW	T54	L	R with dot struck through; line end	no printed word code, name code or null matches the description
+f144r	passA	L05.4	X_NEW	T10	L	spiral/double circle	no printed word code, name code or null matches the description
+f144r	passA	L05.13	X_NEW		H	digits 1 6	digit name-code class; "16" not in the printed key
+f144r	passA	L05.14	X_NEW	T70	L	box with slash and flag	no printed word code, name code or null matches the description
+f144r	passA	L05.20	X_NEW	T42	L	small t	no printed word code, name code or null matches the description
+f144r	passA	L05.27	X_NEW	T66	L	f with bar	no printed word code, name code or null matches the description
+f144r	passA	L05.29	X_NEW	T97	L	hooked 8-like	no printed word code, name code or null matches the description
+f144r	passA	L06.20	X_NEW	T84	L	up triangle over cross; prose after: 'tutti'	quello (T84): printed "downward open triangle pierced by a vertical stroke"; readers say UP triangle over cross/stem -- orientation differs
+f144r	passB	L03.3	X_NEW	T70	M	square with centre dot	no printed word code, name code or null matches the description
+f144r	passB	L03.11	X_NEW	T84	M	triangle with cross/stem below	quello (T84): printed "downward open triangle pierced by a vertical stroke"; readers say UP triangle over cross/stem -- orientation differs
+f144r	passB	L03.12	X_NEW	T88	L	o with long tapering stroke; line end of crop	no printed word code, name code or null matches the description
+f144r	passB	L04.1.9	X_NEW		H	digit 4	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f144r	passB	L04.1.10	X_NEW		H	digit 7	digit name-code class (printed 85 carmagnola, 86 turino, 89 bugonotti are plain digits); "4"+"7" pair not in the printed key
+f144r	passB	L04.2.6	X_NEW	T70	M	box slashed diagonally	no printed word code, name code or null matches the description
+f144r	passB	L04.2.7	X_NEW	T85	M	plus with circle, slashed	no printed word code, name code or null matches the description
+f144r	passB	L04.2.13	X_NEW		L	crossed star with long slashes; line end	no printed word code, name code or null matches the description
+f144r	passB	L05.4	X_NEW	T92	M	spiral in oval	no printed word code, name code or null matches the description
+f144r	passB	L05.12	X_NEW	T81	L	x struck through	no printed word code, name code or null matches the description
+f144r	passB	L05.13	X_NEW		M	digits 1 6	digit name-code class; "16" not in the printed key
+f144r	passB	L05.14	X_NEW	T70	M	box slashed with curl	no printed word code, name code or null matches the description
+f144r	passB	L06.11	X_NEW	T63	M	Y-like	no printed word code, name code or null matches the description
+f144r	passB	L06.20	X_NEW	T84	M	triangle with cross below; next prose: 'tutti'	quello (T84): printed "downward open triangle pierced by a vertical stroke"; readers say UP triangle over cross/stem -- orientation differs
