@@ -134,3 +134,51 @@ decipherment (p.212 viewed). Unreachable for the manuscript (REQUEST.md is the r
 (d) Recipient side: Heinsius is the recipient and the edition read is his. Sender-side: Dopff's Marlborough letters
 (BL Add MS 61202) and Marlborough's printed letters (Murray, *Letters and Dispatches*; Snyder, *Marlborough-Godolphin
 Correspondence*) not searched this pass. Not found.
+
+## GAPS105-heinsius-dopff-1702 (3 Oct 2026, account-4): sibling check of Dopff's other letters in Deel 1
+
+Row check first: the NEXT-STEPS.tsv row for this folder named the 24 Sept brief csHU2, whose jobs for HU1 (check-solved
+to the full brief, NA scan status) are already done above (24 Sept sweep; GF-A2-5's web, blog and premise checks of
+2 Oct). The row was stale. Status is `open` (no Remaining gaps section required; `tools/gaps_check.py` skips it). Intake
+gate, 3 Oct 2026 12:22 UTC: `heinsius-dopff-1702: open (line 1) -- edition/page or full-text-search citation found within
+6 lines`, exit 0.
+
+Cheapest step that depends on no one: do Dopff's other letters to Heinsius in the same edition use the same name-codes
+(110, 103, 121, 112, 111, 174, 105, 37), or does one of them gloss a number? A sibling letter that reused a code beside
+a name would be key material (grade C).
+
+1. **Correspondent register.** Deel 1 p.610 (incoming letters by correspondent) lists 21 letters from D.W. von Dopff
+   in 1702: nos. 40 (Düsseldorf); 104, 131 (Mülheim); 153, 177, 220, 238, 267, 286, 319, 335, 357 (camp before
+   Kaiserswerth); 424 (Düsseldorf); 454, 485, 515 (camp before Kaiserswerth); 881 (Lanaken); 1053 (Maastricht); 1176, 1201,
+   1226 (Düsseldorf). Outgoing (p.609): one letter from Heinsius to Dopff, no. 57.
+2. **Letters read on the printed page this pass** (Huygens OCR): 104 (p.76, printed in French, a camp report, no
+   numbers in place of names), 131 (p.94), 220 (p.138), 238 (p.148, Dutch summary with one quoted French sentence),
+   319 (p.192), 357 (p.212, the target), 546 (p.307: a Dopff letter of 25 June 1702 that the p.610 register does not
+   list under Dopff, an OCR or register discrepancy that was not followed up), 1176 (p.563), 1201 (tail, p.572),
+   1226 (p.581). Except for 104 and 357, every one is printed as the editor's Dutch summary (regest). No summary
+   mentions a cipher or a number standing for a name, and no footnote glosses one. **Not located this pass:** 40, 153, 177,
+   267, 286, 335, 424, 454, 485, 515, 881, 1053. The page interpolation took more requests than planned, so these were
+   left inside the 60-request host limit.
+3. **Volume-wide edition marks.** In-book searches of Deel 1 (source_id=1): `cijfer`, 2 hits (p.71, a letter partly in
+   cipher solved by Robethon; p.489, a Villars letter partly in cipher); neither is Dopff. `sleutel`, 2 hits (p.142, a
+   chamberlain's key, not a cipher key; p.212, the target's own footnote). Together with the 24 Sept sweeps of all 19
+   volumes (`sources/huygens/cipher-letters-2026-09-24.tsv`, round 2), whose only Dopff row is no. 357, the edition
+   marks no other Dopff letter as being in cipher. That is a search result about the editor's marks. It is not proof
+   that no other original in H.A. 756 used the code, because the summaries would not show one.
+4. **Number search: non-test.** `que 110` and `que 121` across all 19 volumes returned 41 and 47 hits. The accessor
+   matches the words separately, not as a phrase, so the hits are page, letter and register numbers. This search
+   cannot isolate a reused code, so it is logged as a non-test, not a negative.
+
+Result: no sibling letter in Deel 1 as printed reuses or glosses any of no. 357's codes. 9 of the 21 register letters were read
+on the page, plus no. 546; 12 were not located. No reading was attempted. No tokens are graded: there is no key, crib alignment or
+control. Requests: resources.huygens.knaw.nl 50 (1 pages.json, 5 searches, 44 OCR pages; the pages were also used to
+find letters by number), all at least 2 s apart, descriptive UA. No vision calls. No subagents.
+
+Next step (cheap, depends on no one, ~USD 2): read the 12 unlocated Deel 1 Dopff letters (40, 153, 177, 267, 286, 335,
+424, 454, 485, 515, 881, 1053; pages are roughly 2 letters per printed page from the anchors p.76=104, p.148=238,
+p.192=319, p.212=357, p.307=546, p.563=1176), then grep Murray's *Letters and Dispatches of Marlborough* vol. 1 (1702)
+on archive.org full text for Dopff, for a sender-side use of the same numbers.
+
+Beyond those two, the manuscript H.A. 756 is
+not digitised (REQUEST.md, ASKS row 46), and Dopff's Marlborough cipher correspondence, BL Add MS 61202, is not
+digitised either.
