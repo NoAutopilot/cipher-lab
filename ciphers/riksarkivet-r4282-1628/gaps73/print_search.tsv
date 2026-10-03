@@ -1,0 +1,22 @@
+host	query_or_item	kind	result	about_R4282
+archive.org	advancedsearch title "oxenstiernas skrifter" / "rikskansleren axel"	listing	8 items (00akad 1625-27; 01akad 1624-26; 02akad 1635-38 incl. Grotius; 03akad 1640-45; 00pala 1644-46; 01pala 1617-39; 00styf 1629-31; 01styf 1633-35)	n/a
+archive.org	8 x _djvu.txt (01akadgoog: 500 once, one retry ok)	fulltext grep (gaps73/grep_phr.py, OCR-tolerant, hyphen-joined)	0 hits for futurus status / qualis sit eius / magnas admodum / expensas+factum / mittatur nobis / sed tamen ut res; 'dubitatur' 19 (18 Grotius 1635-38 + 1 1640s marginal) = grep control	no
+be-api fts	"futurus status dubitatur"	phrase	0	no
+be-api fts	"magnas admodum expensas"	phrase	0	no
+be-api fts	"Mittatur nobis responsum"	phrase	0	no
+be-api fts	"qualis sit eius futurus"	phrase	0	no
+be-api fts	"status dubitatur"	phrase	1 (documentistoric00sansgoog, Italian 'totius patrie status dubitatur')	no
+be-api fts	"admodum expensas"	phrase	13 (Pearl/Kibre scholarly privileges, medieval university formula)	no
+be-api fts	"nobis responsum"	phrase	1187 (generic)	no
+be-api fts	"futurus status" Camerarius	phrase+word	20 (Joachim Camerarius / Melanchthon / Amerbach 16th c.)	no
+be-api fts	"dubitatur quin mandata habeat" (positive control, Grotius 1635 in AOSB)	phrase	1 = rikskanslerenax02akadgoog	control found
+be-api fts	"sed tamen ut res" (reach control)	phrase	hits (119 Latin items)	not checked one by one (generic)
+googleapis	"futurus status dubitatur"	phrase	52 total, top = Rota Romana decisions (words not adjacent)	no
+googleapis	"magnas admodum expensas"	phrase	5 = Petrus de Warda epistolae (15th c.) / Pray Historia critica regum Hungariae	no
+googleapis	"Mittatur nobis responsum"	phrase	354, no exact snippet	no
+googleapis	"qualis sit eius futurus status"	phrase	233, Melanchthon (non-adjacent)	no
+googleapis	"factum magnas admodum"	phrase	339, patristic (non-adjacent)	no
+googleapis	"dubitatur quin mandata habeat" (positive control)	phrase	20, incl. 3 GB AOSB volumes (mQ3oqU..., sstAAQ..., Z21lWK9...) + Grotius Epistolae 1687	control found
+googleapis	intitle:"Oxenstiernas skrifter"	listing	0 (intitle with phrase fails)	n/a
+googleapis	"Oxenstiernas skrifter och brefvexling" 1628	listing	137; ser. II volumes with 1628 letters full view (Gustaf II Adolf Az11olAIVEMC/Y4RMXOyMaYAC; Skytte 0tel_P9IBycC; Gabriel Oxenstierna 292pBOXvmNkC; Wrangel/Lesle YxtEr7Hz3JgC; cu0GfMZMcMwC; VHw79SxZdn0C); ser. I Band 4 'Bref 1628-1629' (1909, jv2sQAAACAAJ) NO_PAGES	coverage
+googleapis	Camerarius 1628 epistolae Oxenstierna / Ludwig Camerarius Briefe 1628	listing	Schubert 1955 biography NO_PAGES; BuA 1948 NO_PAGES; Söltl-era 1879 diss. full view; no printed Camerarius-Oxenstierna 1628 letter series found	coverage
