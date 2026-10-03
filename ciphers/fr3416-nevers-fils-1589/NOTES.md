@@ -1,4 +1,4 @@
-open
+partial
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "Rethelois" 3 hits (all a 15th-c. genealogy line, "...Rethelois, fut Lieutenant general au gouuernement de Champagne sous le Roy Louis XI"), "mon fils" hits only a military narrative, "chiffre Rethelois" 0, "Nouembre 1589" 0, "Novembre 1589" 0 -- letter not printed there.
 
 # BnF fr.3416 f.35r, the duc de Nevers to his son (Charles, duc de Rethelois), undated (c.1589), key no.25 -- NV-02
@@ -83,3 +83,88 @@ transcribe key no.25 from fr.3995 f.50 (~USD 1.5), gate the key on the glossed s
 59, 68, 69 (known-answer control), then apply to f.35; ~USD 7.5. NV-03 (fr.4715 f.38, same key) folds into the same run.
 
 `python3 tools/next_steps.py --wait-only | grep fr3416-nevers-fils-1589` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.
+
+## Key no.25 applied to f.35r (NV02-READ, account 3 for the account-3 orchestrator, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-nv02-read.md`. Intake gate re-run first: exit 0 for both targets (pasted
+in the ROOM claim's job; output identical to the block above).
+
+**Key.** Key no.25's table is at BnF fr.3995 canvas f104 (manifest label 51r; ff.49-50 carry only the endorsements
+"Neuers 1589 ... chiffre" and "Octobre 1589", and 50r shows the table's alphabet strip folded in). The substitution
+alphabet and nulls were read from one native crop of the rotated strip into `keys/key_no25.tsv`, grade H: a 32 34 35,
+b 36, c 37, d 38, e 42 43 45, f 46, g 47, h 48, i 52 53 54, l 56, m 57, n 62 63 64, o 65 67 68, p 72, qu 73,
+r 74 75 76, s 82 83 84, t 85 86 87, u 92 93 94, x 95, y 96, z 97; nulls 11-19, 01-09, 39 49 59 69 79 89 99. Every
+value matches the readings in Tomokiyo's hidden no.25 decodes of fr.4715 f.38v and f.59 (sources/cryptiana/web/nevers.htm,
+Shift-JIS comments). The nomenclator (Roman numerals, province letters, overbar figures, Dames symbols) is not
+transcribed.
+
+**Transcription.** Crop command (pasted): `python3 tools/iiif_lines.py --ark btv1b9058240c --canvas 43 --region
+3950,3560,3150,1800 --out ciphers/fr3416-nevers-fils-1589/images --debug` -> 10 lines x 2 segments; figure lines are
+L02-L08 and L10 (L01, L09 clear). Two blind Sonnet passes (crop paths only, no key) agree with each other at 0.953
+(difflib ratio), but each sits 0.239 per digit from the reconciliation: both read this hand's looped 8 (an "o" with a
+tall back stroke, "cl"-like) as 0, 01 or 0 1. I settled that glyph as 8 from the key sheet's own handwriting of
+38 and 68, which is the same convention, not from the decode. **Caution: four further choices were settled by key
+coverage, so the transcription is not fully blind to the key:** the L03 pairing offset (a stray leading 1), the
+long-s glyph in L03 (9), and L05 and L10, which stay M throughout. Ciphertext in `f35r_ciphertext.tsv`: 102 tokens,
+62 H and 40 M.
+
+**Reading** (`python3 decode_f35.py`; `--check` exit 0; output `f35r_reading.txt`; lower case = H, upper = M,
+'.' = null):
+
+    run 1  .aisi.nlesauroit[ciiij].e        "ainsi(?) les auroit [code word]"
+    run 2  [1]r..etsYestes.sipr.e            "...r et s'y est ... si pre(s)"
+    run 3  s.es.auoir[0]                      "ses avoir" / "s(c)avoir"   -- then clear "bons deniers"
+    run 4  E..T.E.OI.                         (M; 79 is a null by key, 57 = m would give "...e moi...")
+    run 5  ens
+    run 6  b.onnefaSUN.as.[41]E[9]            "bonne fa(?)on ..."
+    run 7  er.
+    run 8  .E.ER.ONEO..UIYR[28][4]            (M, last line, low contrast)
+
+Letters: 72 decoded from 102 tokens (51 from H tokens alone). This is a period-key reading of figure runs embedded
+in a clear-text letter. The runs are short phrases, and the surrounding clear text was not transcribed in this job,
+so most runs cannot be read as sentences yet.
+
+**Statistics (seed 1, fr16 = Catherine de Médicis Lettres + Marguerite, era-matched 16th-c. French letters).**
+Mean log10 4-gram per letter, real key against 200 shuffled keys (letter values permuted over the 35 letter codes,
+nulls kept):
+
+| text | letters | score | rank /201 | z | shuffled max |
+|---|---|---|---|---|---|
+| target, all tokens | 72 | -1.150 | 1 | 5.04 | -1.496 |
+| target, H tokens only | 51 | -0.938 | 1 | 5.48 | -1.534 |
+| positive control: fr.4715 f.38v foot (NV-03, 46 tokens) | 34 | -0.769 | 1 | 5.66 | -1.475 |
+
+Shuffled-target control: the true key on the target's tokens in shuffled order scores max -1.365, mean -1.652, and
+beats the real order 0/200 times. Power at the measured 0.239 digit error and N=72 letters: 11/20 synthetic fr16
+windows, enciphered with no.25 and noised, rank 1 of 201. The test can fail at this error, so the target's rank 1
+counts as evidence; it is not certain at this noise level.
+`tools/judge_plaintext.py` was not run: no spec exists for this target, and this table is the fr16 test the brief
+names, done in-script.
+**Known-answer control.** The brief's control was the glossed sibling fr.3416 f.38 (canvas f46; crops cut,
+`images/f46_*`, region 4000,3880,3100,1000). Its interlinear gloss is word-level ("Euesq...", "97", "Fevrier" over
+code groups), not letter by letter, so this job did not align it. In its place, the positive control above is NV-03's
+f.38v foot: digits eye-checked against fr.4715 canvas f92, with the period interlinear gloss "a vostre" over
+93 67 83 85 75 43 = v o s t r e under this key. That is a period known-answer on 6 tokens plus a 46-token decode that
+ranks 1/201. The brief's order was control first. Here the target decode was looked at during reconciliation (to
+settle pairing) before the control statistics ran; the control was then run before any claim was written.
+
+Grades per token (f35r_ciphertext.tsv): H 62, M 40, C 0, S 0, I 0. Not found in: Gomberville 1665 (NV-INTAKE search);
+Tomokiyo's pages and hidden comments (no decode of fr.3416 f.35; grep of nevers.htm for 3416/f.35); Cabinet Noir,
+Bourdeau, Aymeloglu (NV-INTAKE clones). Novelty not classified (rule 10).
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
+Read so far: 62 of 102 figure tokens at H (61%); 40 M
+- f.35r clear text around the runs (needed to read the runs as sentences) - blocker: not-attempted; one transcription pass of the clear lines L01-L10 + the upper letter; next: two blind passes of the clear text on the existing crops, ~$3
+- L05 and L10 runs (looped 8 with an extra upright; low-contrast last line) - blocker: not-attempted; out of this job's box; next: one native re-crop at 2x of L05/L10 with a single targeted read, ~$1.5
+- Roman-numeral and overbar code words (ciiij, the "97" codes in the clear text) - blocker: not-attempted; not in this job's brief; next: transcribe the no.25 nomenclator from fr.3995 canvas f104 (Villes, Noms gnaulx, Motz, Noms propres columns), ~$2
+- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; gloss is word-level, not aligned this job; next: transcribe f.38 figures + gloss from images/f46_* and align codes to gloss words, ~$3
+
+## Escalation (3 Oct 2026)
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
+- [ ] clear-pages: f.35r clear text not transcribed yet (planned step above)
+- [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
+- [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
+- [ ] key-rebuild: nomenclator part of no.25 still to transcribe (planned step above)
+- [x] image-check: native crops of f.35r foot, the key strip and f.38v foot viewed
+- [ ] retry: L05/L10 targeted re-read at higher resolution (planned step above)
+Verdict: keep going: 4 internal gaps; cheapest next: L05/L10 targeted re-read, ~$1.5

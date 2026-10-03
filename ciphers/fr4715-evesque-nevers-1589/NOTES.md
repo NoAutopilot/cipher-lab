@@ -1,4 +1,4 @@
-open
+found-solved
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "Nouembre 1589" 0 hits, "Novembre 1589" 0, "17 Nouembre" 0; positive control "Rethelois" 3 -- letter not printed there.
 
 # BnF fr.4715 f.38 (no.17), "Evesque" to the duc de Nevers, 17 November 1589, key no.25 -- NV-03
@@ -87,3 +87,28 @@ written-out decipherment, do the marks gloss the figures, is f.39 its decipherme
 the ~35 figures + reconciliation, then key no.25 with the glossed fr.4715 ff.27, 59, 68, 69 as known-answer control.
 
 `python3 tools/next_steps.py --wait-only | grep fr4715-evesque-nevers-1589` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.
+
+## Premise settled: found-solved (NV02-READ, account 3 for the account-3 orchestrator, 3 Oct 2026)
+
+Step (0) of brief `.claude/briefs/runs/2026-10-03-acct3-nv02-read.md`. The prior decipherment is in Tomokiyo's own
+page source, not in the f.39 leaf. `sources/cryptiana/web/nevers.htm` (Shift-JIS; read with `iconv -f SHIFT_JIS`)
+carries an HTML comment under "BnF fr.4715", after no.16 (f.37). It is not displayed on his rendered page. It holds
+his transcription of the f.38v figures and a key-no.25 decipherment. His notes, translated: "the cipher is on the
+back of f.38; partly deciphered [interlinear] but [the gloss] cannot be read: a vostre????"; "same as no.9 per the
+fol.59 note; many nulls; 39 = null, so Nevers collection no.25, not no.70". His decode:
+
+    39 49 11 93 67 83 85 75 43 89 85 74 42 82 48 92 57 36 56 43 68 36 45 54 82 83 32 62 87 89 99
+    84 45 74 92 53 85 43 94 74 03 13 14 ~49 99 15
+    -> [nulls] u o s t r e . t r e s h u m b l e o b e i s s a n t . . / s e r u i t e u r . . . . .
+    = "[a] vostre tres humble obeissant serviteur"
+
+Image check (this job): fr.4715 canvas f92 (38v) at 1000 px. The foot reads "ce 17 Nobre 1589 · 39 49 11 93 67 83
+85 75 43 89 85 74 42 82 48 92 57 36 56 43 68 36 45 54 82 83 32 62 87 89 99 — 84 45 74 92 53 85 43 94 74 03 13 14
+49̄ 99 15 · C", the same digits as Tomokiyo's, with a period interlinear gloss "a vostre" over 93 67 83 85 75 43.
+The ~35 figures are the subscription formula only. Key no.25 (`../fr3416-nevers-fils-1589/keys/key_no25.tsv`, read
+from fr.3995 canvas f104 this job) gives the same letters. In `../fr3416-nevers-fils-1589/decode_f35.py` this string is
+the positive control: 34 letters, rank 1/201 against shuffled keys, z 5.66. f.39 ("Deschifrement de ma seur") was not
+viewed: f.38's cipher no longer needs it. No blind passes were run on NV-03, per brief step (0).
+Credit: decipherment by S. Tomokiyo (cryptiana.web.fc2.com, nevers.htm page source, undated comment); interlinear
+"a vostre" by the period decipherer. Grade C for the 6 glossed tokens and H for the rest under key no.25. Nothing
+here is ours beyond the image check.

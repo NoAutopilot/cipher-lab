@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+"""decode_f35.py -- apply key no.25 (keys/key_no25.tsv, grade H) to f35r_ciphertext.tsv and test the result.
+
+NV02-READ, 3 Oct 2026. Usage: python3 decode_f35.py [--check] [--seed N]
+  writes f35r_reading.txt (per run: tokens -> letters; '.' = null, '?' = not in key, [..] = M/unkeyed code)
+  --check: exit 1 if the committed f35r_reading.txt differs from a fresh decode (rule 7).
+Statistics (printed, seed 1):
+  (1) two-reader error: blind passes A and B (Sonnet, crops only) against the reconciled digits, per digit (edit distance).
+  (2) target: mean log10 4-gram/letter (fr16 corpus, era-matched) of the decode vs 200 shuffled keys (letter values
+      permuted over the 35 letter codes, nulls kept) -> rank and z.
+  (3) positive control: fr.4715 f.38v foot (46 tokens; digits eye-checked against canvas f92, matching Tomokiyo's
+      hidden transcription in sources/cryptiana/web/nevers.htm) under the same test.
+  (4) shuffled-target control: target token order shuffled, true key -> score must not reach the real decode.
+  (5) power: 20 fr16 windows of the target's letter count enciphered with no.25 (homophones uniform, nulls at the
+      target's observed rate), digit error injected at the measured two-reader rate, same rank test; power = share
+      ranking first of 201.
+"""
+import sys, os, gzip, math, random, re, difflib, glob
+H = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(H, '../..'))
+
+def load_key():
+    K = {}
+    for l in open(os.path.join(H, 'keys/key_no25.tsv')):
+        if l.startswith('#') or l.startswith('code'): continue
+        c, v = l.rstrip('\n').split('\t'); K[c] = v
+    return K
+
+def load_ct():
+    runs = []; cur = None
+    for l in open(os.path.join(H, 'f35r_ciphertext.tsv')):
+        if l.startswith('#') or l.startswith('line'): continue
+        f = l.rstrip('\n').split('\t')
+        if cur is None or cur[0] != f[1]: cur = (f[1], []); runs.append(cur)
+        cur[1].append((f[2], f[3]))
+    return runs
+
+def dec_tokens(toks, K):
+    out = []
+    for t, g in toks:
+        v = K.get(t)
+        if v is None: out.append('[%s]' % t)
+        elif v == '-': out.append('.')
+        else: out.append(v if g == 'H' else v.upper())
+    return out
+
+def letters(s): return re.sub('[^a-z]', '', s.lower())
+
+def corpus():
+    txt = ''
+    for p in sorted(glob.glob(os.path.join(ROOT, 'tools/data/fr16/*.gz'))):
+        txt += gzip.open(p, 'rt', errors='ignore').read()
+    t = letters(txt.replace('j', 'i').replace('v', 'u').replace('w', 'u').replace('k', 'c'))
+    return t
+
+def model(t):
+    from collections import Counter
+    c4 = Counter(t[i:i+4] for i in range(len(t)-3)); c3 = Counter(t[i:i+3] for i in range(len(t)-2))
+    def score(s):
+        s = s.replace('j', 'i').replace('v', 'u')
+        if len(s) < 4: return -9.0
+        tot = 0
+        for i in range(len(s)-3):
+            tot += math.log10((c4[s[i:i+4]] + 0.01) / (c3[s[i:i+3]] + 0.26))
+        return tot / (len(s)-3)
+    return score
+
+def keyed_text(codes, K):
+    return ''.join(K[c] for c in codes if c in K and K[c] != '-')
+
+def shuffled_keys(K, rng, n):
+    lc = [c for c in K if K[c] != '-']; vals = [K[c] for c in lc]
+    for _ in range(n):
+        v = vals[:]; rng.shuffle(v); k = dict(K); k.update(zip(lc, v)); yield k
+
+def rank_test(codes, K, score, rng, n=200):
+    real = score(keyed_text(codes, K))
+    sh = [score(keyed_text(codes, k)) for k in shuffled_keys(K, rng, n)]
+    m = sum(sh)/n; sd = (sum((x-m)**2 for x in sh)/n) ** .5
+    rank = 1 + sum(x >= real for x in sh)
+    return real, rank, (real-m)/sd if sd else 0, max(sh)
+
+PASS_A = {'L02':'79325302543964564501234937568530','L03':'1754958430601396450407420121604537274124','L04':'0410145012173293601537510',
+ 'L05':'4310119017394579655416','L06':'4564013','L07':'36126563624546320139463493508417411439','L08':'427514','L10':'1743694576196562436019399355'}
+PASS_B = {'L02':'79325301254396456450123493756853061743','L03':'175495543016013964501401742012160145372741242','L04':'0410145012173293601537510',
+ 'L05':'4310119017394579655416','L06':'4564013','L07':'36126563624546320139463499350141741439','L08':'427514','L10':'1743694576196562436019399353'}
+# reconciled digit strings (pass alphabets: digits only, Roman code dropped)
+RECON = {'L02':'793253825439645645823493756853861743','L03':'175495943868396458487428216845372741242','L04':'8418458217329368537500',
+ 'L05':'43181987394579655416','L06':'456483','L07':'361265636245463283946349358417414439','L08':'427514','L10':'174369457619656243681939935396762840'}
+# note: L04 trailing 0 and L10 tail kept as transcribed
+
+def edit_rate(P):
+    e = n = 0
+    for k, r in RECON.items():
+        sm = difflib.SequenceMatcher(None, P[k], r, autojunk=False)
+        e += sum(max(i2-i1, j2-j1) for op, i1, i2, j1, j2 in sm.get_opcodes() if op != 'equal'); n += len(r)
+    return e / n
+
+NV03 = ('39 49 11 93 67 83 85 75 43 89 85 74 42 82 48 92 57 36 56 43 68 36 45 54 82 83 32 62 87 89 99 '
+        '84 45 74 92 53 85 43 94 74 03 13 14 49 99 15').split()
+
+def main():
+    K = load_key(); runs = load_ct()
+    lines = []
+    for rid, toks in runs:
+        lines.append('run %s: %s' % (rid, ' '.join(t for t, g in toks)))
+        lines.append('       %s' % ''.join(dec_tokens(toks, K)))
+    out = '\n'.join(lines) + '\n'
+    path = os.path.join(H, 'f35r_reading.txt')
+    if '--check' in sys.argv:
+        ok = os.path.exists(path) and open(path).read() == out
+        print('check:', 'OK' if ok else 'STALE'); sys.exit(0 if ok else 1)
+    open(path, 'w').write(out); print(out)
+    seed = int(sys.argv[sys.argv.index('--seed')+1]) if '--seed' in sys.argv else 1
+    rng = random.Random(seed)
+    ea, eb = edit_rate(PASS_A), edit_rate(PASS_B)
+    print('two-reader error vs reconciled: pass A %.3f, pass B %.3f per digit' % (ea, eb))
+    sm = difflib.SequenceMatcher(None, ''.join(PASS_A.values()), ''.join(PASS_B.values()), autojunk=False)
+    print('A vs B digit agreement ratio %.3f' % sm.ratio())
+    score = model(corpus())
+    codes_all = [t for _, toks in runs for t, g in toks]
+    codes_H = [t for _, toks in runs for t, g in toks if g == 'H']
+    for name, codes in (('target all tokens', codes_all), ('target H tokens only', codes_H), ('positive control NV-03 f.38v', NV03)):
+        real, rank, z, mx = rank_test(codes, K, score, rng)
+        print('%-30s letters %3d  score %.3f  rank %d/201  z %.2f  shuffled max %.3f' % (name, len(keyed_text(codes, K)), real, rank, z, mx))
+    real = score(keyed_text(codes_all, K)); sh = []
+    for _ in range(200):
+        c = codes_all[:]; rng.shuffle(c); sh.append(score(keyed_text(c, K)))
+    print('shuffled-target control: real %.3f vs shuffled-order max %.3f, mean %.3f, beats real %d/200' % (real, max(sh), sum(sh)/200, sum(x >= real for x in sh)))
+    # power at the measured error
+    corp = score.__closure__ if False else None
+    t = corpus(); nlet = len(keyed_text(codes_all, K)); nnull = sum(1 for c in codes_all if K.get(c) == '-')
+    inv = {}
+    for c, v in K.items(): inv.setdefault(v, []).append(c)
+    err = (ea + eb) / 2; hits = 0; trials = 20
+    for i in range(trials):
+        s = rng.randrange(0, len(t) - nlet); w = t[s:s+nlet]
+        cod = [rng.choice(inv[ch]) if ch in inv else rng.choice(inv['-']) for ch in w]
+        for _ in range(nnull): cod.insert(rng.randrange(len(cod)+1), rng.choice(inv['-']))
+        ds = list(''.join(cod))
+        for j in range(len(ds)):
+            if rng.random() < err: ds[j] = str(rng.randrange(10))
+        noisy = [''.join(ds[j:j+2]) for j in range(0, len(ds)-1, 2)]
+        real, rank, z, mx = rank_test(noisy, K, score, rng, 200)
+        hits += rank == 1
+    print('power at %.3f digit error, N=%d letters: %d/%d synthetic texts rank 1 of 201' % (err, nlet, hits, trials))
+
+if __name__ == '__main__':
+    main()
