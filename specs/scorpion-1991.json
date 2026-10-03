@@ -24,28 +24,37 @@
  ],
  "matched_control": "not yet run; no ciphertext on disk to test. Note in advance (CLAUDE.md rule 3 lesson): K this close to N (53/70 distinct/total on the first message) means even a matched control is likely to read weakly -- a target failure here would need the control number reported alongside, not treated alone as a negative",
  "cheap_test_done": {
-  "test": "1 (image fetch + single blind transcription pass), re-scoped per brief .claude/briefs/runs/2026-09-25-lane-b2-scorpion-1991.md",
-  "date": "25 Sept 2026",
-  "worker": "LANE B2 bSCO (Sonnet, session_01XavLajPispv8YaywQUjLWK)",
-  "cryptogram_1": {
-   "N": 70,
-   "K": 53,
-   "IC": 0.0083,
-   "matches_schmeh_published": "yes, exactly (70/53)",
-   "controls": {
-    "english_pg1661_holmes_N70_5seeds": "mean 0.0664, range 0.0600-0.0704",
-    "uniform_random_N70_K53_5seeds": "mean 0.0189, range 0.0174-0.0199 (flat theory 0.0189)"
+  "test": "2 (homophonic anneal, tools/family_run.py --family homophonic, matched control before target) on cryptogram 1; plus the test-1 follow-up transcription diff",
+  "date": "3 Oct 2026",
+  "worker": "A2P4-SCORP (account 2, LANE-A2PUSH4), brief .claude/briefs/runs/2026-10-03-acct2-a2p4-scorp.md",
+  "transcription_diff": "oranchak.com/scorpion-cipher.html carries no typed transcription (8 <img> tags only; fetched once over http, the https host serves a Dreamhost default self-signed cert). Diffed instead against Bourdeau's independent typed S1 (cyphersolver targets/scorpion/s1.txt, 15 Sept 2026, MIT): both K=53; 61/70 positions agree under the best 1-1 sign map; pairwise same/different agreement 0.9917; repeat pairs ours 20, his 22, shared 11 (ciphers/scorpion-1991/bourdeau_diff.tsv)",
+  "control": "N=70 English homophonic, spec judge corpora, seeds 1-3, restarts 8, profile=target: recovery mean 0.038 (0.000-0.071), realized K 35-39; sensitivity (default profile, not preregistered): mean 0.133 (0.086-0.171), realized K 40-47",
+  "target": "not run (CONTROL BELOW GATE 0.6, exit 3), preregistered in ciphers/scorpion-1991/HYPOTHESES.md before the run",
+  "moved": "no -- homophonic anneal is untestable by this family at N=70, K=53: even controls with fewer realized signs than S1 read 4-13 percent; not a negative on the target. Agrees with Bourdeau's unicity analysis (S1 below unicity distance).",
+  "previous": {
+   "test": "1 (image fetch + single blind transcription pass), re-scoped per brief .claude/briefs/runs/2026-09-25-lane-b2-scorpion-1991.md",
+   "date": "25 Sept 2026",
+   "worker": "LANE B2 bSCO (Sonnet, session_01XavLajPispv8YaywQUjLWK)",
+   "cryptogram_1": {
+    "N": 70,
+    "K": 53,
+    "IC": 0.0083,
+    "matches_schmeh_published": "yes, exactly (70/53)",
+    "controls": {
+     "english_pg1661_holmes_N70_5seeds": "mean 0.0664, range 0.0600-0.0704",
+     "uniform_random_N70_K53_5seeds": "mean 0.0189, range 0.0174-0.0199 (flat theory 0.0189)"
+    },
+    "note": "target IC (0.0083) sits below even the uniform-random-K53 control -- consistent with deliberate homophone-repeat suppression (39/53 codes hapax), not an error; see NOTES.md"
    },
-   "note": "target IC (0.0083) sits below even the uniform-random-K53 control -- consistent with deliberate homophone-repeat suppression (39/53 codes hapax), not an error; see NOTES.md"
-  },
-  "cryptogram_2": {
-   "N_component_count": 179,
-   "N_schmeh_published": 180,
-   "K": "not determined this pass (density too high for the automatic shape-bucket proxy; needs a by-eye pass like cryptogram 1's)",
-   "IC": "not computed (no reliable K)",
-   "note": "caption 'Hi! Remember me?' above the grid; one row of the grid is crossed out/hatched in the source scan, unexplained -- see NOTES.md"
-  },
-  "moved": "no -- single blind pass only, this is a transcription result not a cryptanalytic gain; test 2 (homophonic anneal) is next and unrun"
+   "cryptogram_2": {
+    "N_component_count": 179,
+    "N_schmeh_published": 180,
+    "K": "not determined this pass (density too high for the automatic shape-bucket proxy; needs a by-eye pass like cryptogram 1's)",
+    "IC": "not computed (no reliable K)",
+    "note": "caption 'Hi! Remember me?' above the grid; one row of the grid is crossed out/hatched in the source scan, unexplained -- see NOTES.md"
+   },
+   "moved": "no -- single blind pass only, this is a transcription result not a cryptanalytic gain; test 2 (homophonic anneal) is next and unrun"
+  }
  },
  "judge": {
   "language": "en",

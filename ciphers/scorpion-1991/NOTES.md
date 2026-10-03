@@ -88,14 +88,14 @@ glyphs, connected-component labelling, components under area 80px dropped as noi
 
 ## Follow-ups (one-line suggestions, not run this pass)
 
-- oranchak.com/scorpion-cipher.html may already have a typed transcription of both cryptograms (noted
+- [done 3 Oct 2026, A2P4-SCORP: no typed transcription there; see the section at the end] oranchak.com/scorpion-cipher.html may already have a typed transcription of both cryptograms (noted
   in the spec) -- not fetched (one host per worker, this worker's host was scienceblogs.de only). A
   future pass should check it and diff against `ciphertext.txt`/`sign_table1.tsv` before trusting either
   over the other.
 - Cryptogram 2 needs a full by-eye pass (test 2 territory) for a real symbol inventory and K.
 - The crossed-out row in cryptogram 2's source image is unexplained; worth asking whether Oranchak's
   site has an uncrossed version or commentary on it.
-- Cheap test 2 (homophonic anneal, matched control) and test 3 (Zodiac Z408/Z340 homophone-shape
+- Cheap test 2 [done 3 Oct 2026, A2P4-SCORP: control below gate, untestable at N=70] (homophonic anneal, matched control) and test 3 (Zodiac Z408/Z340 homophone-shape
   comparison) from the spec are both still open.
 
 ## Search log
@@ -139,3 +139,45 @@ Result: no accepted decipherment or plaintext found on the open web or in these 
 (b) Other solvers' working files -- shallow clones 3 Oct 2026, dbourdeau/cyphersolver HEAD 810a777 and aaymeloglu/unsolved-ciphers HEAD d2800bb: Bourdeau targets/scorpion (NOTES.md, s1.txt, s5.txt, claimed.py, alternatives.py, unicity.py, profile.json -- attempted, closed as below unicity; MIT/CC BY, credited); Aymeloglu SHORTLIST.md lists Scorpion among "Hoax risk, no context, or no real system" (cited, not copied). No key either solver would hand us has been applied to a further text: found (as above), no reading.
 (c) Physical neighbours -- S2-S4 (and a further unpublished text per Severus) are held by law enforcement and were never published; the plain-English caption "Hi! Remember me?" on S5's sheet is already in this folder. No clear copy known: not found; the unpublished letters are unreachable.
 (d) Recipient's side -- America's Most Wanted / John Walsh and the FBI release (via Oranchak's site): no decipherment reported in any source read here (Pelling 2014-2020, Schmeh 2018/2022). The FBI/AMW files themselves are unreachable from here: not found / unreachable.
+
+## Transcription diff and cheap test 2 (A2P4-SCORP, 3 Oct 2026, 17:36-17:42 UTC)
+
+Intake gate, run before any work: `python3 tools/intake_gate_check.py scorpion-1991` ->
+```
+scorpion-1991: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
+
+**Oranchak.** `oranchak.com/scorpion-cipher.html` fetched once (descriptive UA). Over https the host presents Dreamhost's
+default self-signed certificate (CN sni.dreamhost.com), so the fetch went over plain http (301 to www.oranchak.com, 200,
+240 bytes). The page is eight `<img>` tags (scorpion1.jpg-scorpion8.jpg) and nothing else: **no typed transcription and no
+commentary on S5's crossed-out row**. The images were not fetched (not named by the brief; one possible follow-up is
+whether one of the eight is an uncrossed scan of S5).
+
+**Diff against an independent typed transcription instead.** Bourdeau's S1 (`github.com/dbourdeau/cyphersolver`
+targets/scorpion/s1.txt, transcribed 15 Sept 2026 from the same Cipherbrain scan; MIT, credited; copied to
+`sources_other/bourdeau_s1.txt`). Script `scripts/transcription_diff.py` maps each of our codes to the other side's code
+it shares most positions with (one-to-one) and lists positions that break the map: `bourdeau_diff.tsv` (position, ours,
+his, status). Both sides find K=53. **61/70 positions agree** (0.871); pairwise same/different agreement 0.9917; but of the
+repeat pairs (ours 20, his 22) only **11 are shared** -- the 9 disputed positions are exactly where the repeats live
+(r3c5, r4c3, r4c9, r4c10, r6c4, r6c5, r7c4, r7c8, r7c9; mostly the black-square-with-notch and circle-with-wedge families
+that both transcribers flagged as uncertain). Nothing in `ciphertext.txt` was changed. No vision call was made: the
+family test below fails on its control whatever these 9 signs are, so settling them would not change this result. A
+two-reader settlement of those 9 crops is the transcription next step if a future test needs S1's repeat structure.
+
+**Cheap test 2: homophonic anneal, control before target** (prereg in `HYPOTHESES.md`, commit 42329030, before the run).
+`python3 tools/family_run.py specs/scorpion-1991.json --family homophonic --cipher ciphers/scorpion-1991/scripts/s1_ours_oneline.txt --tokens space --param profile=target --seeds 3 --restarts 8 --gate 0.6`
+
+| run | control (N=70 English, seeds 1-3) | realized control K | target |
+|---|---|---|---|
+| preregistered, profile=target | mean 0.038 (0.000-0.071) | 35-39 | not run (CONTROL BELOW GATE) |
+| sensitivity, default profile (not preregistered) | mean 0.133 (0.086-0.171) | 40-47 | not run (CONTROL BELOW GATE) |
+
+The controls realize fewer distinct signs than S1's 53 in 70 letters, so they are *easier* than the target and still read
+4-13 percent: the homophonic family is **untestable at N=70, K=53** (rule 3), not a negative on S1. This agrees with
+Bourdeau's unicity estimate (S1 key 249 bits vs about 224 bits of text). Grades: no reading, so no tokens graded.
+
+**Verdict:** status stays `open`. Next step: test 3 from the spec (compare S1/S5 sign shapes against the Z408/Z340
+homophone alphabets, about USD 1); cryptogram 2 (S5, N=180) is the only published text long enough to be worth a family
+run, and needs a by-eye K before that (Bourdeau finds 145 distinct; a matched control at N=180, K=145 should be run before any
+target attempt, about USD 2).
