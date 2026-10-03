@@ -27,8 +27,8 @@ line	pos	value	grade	reason
 2077_L10	7	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
 2077_L10	19	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
 2077_L10	27	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
-2077_L11	10	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
-2077_L11	23	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6
+2077_L11	10	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6; sign identity only -- plain letter overridden by the GAPS56 row below (C m)
+2077_L11	23	n	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 10/10 mapped instances R7 (Nieuw N row ij-dots) 0.7, runner-up R10 (M row y) 0.6; sign identity only -- plain letter overridden by the GAPS56 row below (C m)
 2077_L11	63	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
 2077_L11	67	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
 2077_L12	8	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): instance mapped and settled; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
@@ -125,3 +125,5 @@ line	pos	value	grade	reason
 2077_L18	16	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #44 form F1 0.9 = form of C-known L06:4 (g); gate PASS
 2077_L18	28	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #45 form F1 0.85 = form of C-known L06:4 (g); gate PASS
 2077_L18	31	g	H	GAPS37 same-hand g|l sorting call (passes/signcmp_gaps37, prereg 34dbb366): #46 form F1 0.9 = form of C-known L06:4 (g); gate PASS
+2077_L11	10	m	C	GAPS56 2078 Nota parallel (77q-78b, monteer-): sign is the key N [u-dots] (H n, GAPS25/45), Wollant uses N for m; GAPS23 ctx clause (ii) 6/6 (passes/nota2078_gaps56/nm_grade.tsv)
+2077_L11	23	m	C	GAPS56 2078 Nota parallel (77q-78b, kamer): sign is the key N [u-dots] (H n, GAPS25/45), Wollant uses N for m; GAPS23 ctx clause (ii) 5/5 (passes/nota2078_gaps56/nm_grade.tsv)

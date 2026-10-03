@@ -1,0 +1,8 @@
+pair	H_match	H	A	N1_pair_p99	N1_pair_mean
+77q-78b	29	29	1.000	0.655	0.319
+77u-78d	17	21	0.810	0.524	0.301
+77r-78k	22	36	0.611	0.472	0.270
+77t-78n	9	11	0.818	0.818	0.434
+77p-78c	11	18	0.611	0.722	0.375
+POOLED	88	115	0.765	N1_p99=0.452 N1_mean=0.321	N2_p99=0.278 N2_mean=0.199
+VERDICT	PASS	threshold=0.452	N1_above_real=0/2000	N2_above_real=0/2000

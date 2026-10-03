@@ -1,0 +1,4 @@
+pair	line	pos	value	grade	aligned_2078	n_ctx	ctx_ok	2078_window	action
+77q-78b	2077_L11	10	n	H	m	6	yes	erneenmonteer	APPLY
+77q-78b	2077_L11	23	n	H	m	5	yes	ingskamer	APPLY
+77u-78d	2077_L12	37	n	H	m	6	no	atoriumvandar	keep

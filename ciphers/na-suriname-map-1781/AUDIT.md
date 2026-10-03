@@ -565,3 +565,13 @@ The half-M-right sensitivity still FAILs, 3/7 folds (judge/ratematch_gaps45/), s
 sheet's plain dotted ÿ (the key's N sign), and none with plain m. The n->m mismatches against 2078 are therefore the
 encipherer's own use of the N sign for m, not a misread sign. The reading keeps n. H 540 C 7 M 61 U 50, --check exit 0,
 GAPS23 gate 0.752 unchanged. Re-class (if any) stays a separate verifier's.
+
+[GAPS56-na-suriname-map-1781, solver, account-4, 3 Oct 2026 -- item 4 propagation note, not a verifier pass.] Reading
+revised in 2 tokens. The n->m on [u-dots] is logged as Wollant's own use of the key's N sign (GAPS45, GAPS55). Of the three
+[u-dots] that GAPS23's gating alignment places on a 2078 m, L11:10 and L11:23 pass GAPS23's context clause (ii) and are
+now C m (value from the 2078 Nota, entry b). L12:37 fails the clause and stays H n. The rule's clause (i) covers M/U tokens
+only, and this extension to H tokens is stated in NOTES.md, "GAPS56". 2077 is H 538 C 9 M 61 U 50, --check exit 0.
+GAPS23's gate re-run unchanged gives 0.765 (88/115) vs N1 p99 0.452 / N2 p99 0.278, PASS. The rise from 0.752 is by
+construction: two H mismatches became C, which the gate does not count. Do not cite it as independent. VERIFY4's blocker 2
+("n->m, untested") is now tested (GAPS45/55) and is partly graded. Blocker 1 (LOCAL-QUEUE L36, L41) is unchanged: both are
+`queued` with empty results as of 08:1x UTC. Re-class (if any) stays a separate verifier's (VERIFY5, when L36/L41 land).
