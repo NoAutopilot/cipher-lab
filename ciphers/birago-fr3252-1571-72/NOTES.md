@@ -635,7 +635,7 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. The Ceppo-
 - f.47r 257 unsettled tiles - blocker: not-attempted; written as sign-sorter focus rows (harvest/f47/focus.tsv); next: tools/sign_sorter.py --focus harvest/f47/focus.tsv
 - f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so L01-L03 and L17 run edges are unchecked; next: eye-check the s1 crops of L01-L03 and L17 s1-s2 against the passes, disk only, ~$1
 - f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error with 100 windows, disk only, ~$1
-- f.117r 12 unsettled tiles - blocker: not-attempted; sorter focus rows (harvest/f117/la/focus.tsv); next: tools/sign_sorter.py --focus harvest/f117/la/focus.tsv
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter focus rows (harvest/f117/la/focus.tsv); sorter inputs built 3 Oct 2026 (SORTER-BIRAGO2, `sorter/README.md`, 277 tiles, 12 in the focus box), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
 - f.100r + f.119 (565 + 483 digits, same key) - blocker: not-attempted; joint anneal retired for this hypothesis (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
 
