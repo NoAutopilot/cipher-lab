@@ -181,9 +181,10 @@ applied unchanged, and three named cycle-3 briefs written from it.
 - **The 40 percent checkpoint (27 Sept 2026, CRYPT, Lasry practice 6).** In any syllabic or nomenclator family brief: if a `wordcode`/`syllabary` run's token accuracy on the target reaches about 40 percent or higher, the named next step is a manual completion pass (crib-anchored, symbol by symbol), not a further automated restart; below 40 percent, a further automated attempt (different corpus, different n-gram order) is still the right next step. A workflow checkpoint, not a rule-3 gate.
 - **A reconciliation brief's review queue is disagreements.tsv plus uncertain.tsv (27 Sept 2026, REC-CONF).** `tools/reconcile_passes.py` writes an agreed sign at the LOWER of the two passes' confidences, not always H, and an agreed sign at M or L goes to `uncertain.tsv` alongside `disagreements.tsv`; a reconciler brief hands the worker both files, not `disagreements.tsv` alone.
 - **A repository state you can repair from git history is never a reason to stop and ask a person (27 Sept 2026, ROOM-HEAL).** `tools/room.py --start` self-heals a wiped ROOM.md, and any other wiped shared file is restored the same way (last full version plus lines committed since) with a flag line.
-- **Vision calls are a counted unit (27 Sept 2026; a gate since RETRO-2026-10-03-acct3 P2).** A brief that sends any
-  image to a model carries "vision calls: N x USD r [+ k reconciliation] = X" with X <= the cap, and
-  `python3 tools/brief_price_check.py <brief>` exits 0 before the session is created; the worker stops before call N+1.
+- **Vision calls are a counted unit (27 Sept 2026; advisory since 3 Oct 2026).** A brief that sends any image to a
+  model carries "vision calls: N x USD r [+ k reconciliation] = X" as an estimate, and `python3 tools/brief_price_check.py
+  <brief>` may be run as a sanity check; a FAIL is a warning, never a reason to hold a brief (owner, 3 Oct 2026: cost
+  overruns are not a concern, momentum is). The only stop remains BUDGETS.md's rate-limit rule (five_hour warning/rejected).
   N counts calls, not pages: one call per crop x passes when crops go one per call (F36-GLOSS: 102-128 crops x 4).
 - **Known answer first (27 Sept 2026, RETRO-2026-09-27x P2).** When any part of the target's own text is already read
   (a printed opening, a clerk's gloss, a solver's partial decipherment), the first paid step scores the key AND the
