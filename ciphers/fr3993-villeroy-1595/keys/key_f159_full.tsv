@@ -1,0 +1,27 @@
+# fr.3995 canvas f159 table (VILL-7280 read) + target signs certified against it by VILL-SIGNS, 3 Oct 2026.
+# Target token codes are Bourdeau's (bourdeau/ct_f148r.txt header). A sign is certified only where two blind readers
+# (VILL-SIGNS worker, Opus; one Sonnet subagent) both called it SAME on the f159 strip stack vs native crops of the
+# seven f.148r cipher lines (iiif_lines, canvas 161). Grades: figures as in key_f159_letters.tsv; certified signs S-shape (M as a
+# key value: the table read itself is one blind read). LIKE-only (not certified, not used): EPS f ~ target e/3-like,
+# VARPHI p ~ target y, PTHICK u ~ target p (crossed p), V t ~ target v (cup); NO: NFL g, AX h, PSI n, ZBAR q, stars s, SQX y.
+# code<TAB>letter<TAB>grade<TAB>basis
+19	a	M	figure (table read)
+18	a	M	figure (table read)
+16	b	M	figure (table read)
+15	c	M	figure (table read)
+14	c	M	figure (table read)
+13	d	M	figure (table read)
+12	d	M	figure (table read)
+11	e	M	figure (table read)
+10	e	M	figure (table read)
+7	i	M	figure (table read)
+8	i	I	figure (table read)
+6	i	M	figure (table read)
+5	l	M	figure (table read)
+4	l	M	figure (table read)
+3	o	M	figure (table read)
+2	o	M	figure (table read)
+1	o	I	figure (table read)
+L	r	M	sign LAMBDA, SAME by both readers (target ~7 seen on f.148r)
+w	m	M	sign OMEGA, SAME by both readers
++	x	M	sign PLUS, SAME by both readers (reader B also saw double-cross K as a + variant; K not certified)
