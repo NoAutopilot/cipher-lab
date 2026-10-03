@@ -542,3 +542,50 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: our NOTES.md cites vasto1527/n20/ranzo_c017.txt; catalogue #189 entry itself not cited
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Premise check (GF4-BATCH3, account-4, 3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` (try to prove the item already done), before any first test.
+**Result: not found on (a)-(d); status stays `open`.** The archetype (fr.2988 ff.9-10, Ranzo's signed letter) and
+this copy (fr.20506 ff.136-138) are both undeciphered everywhere checked.
+
+- **(a) Decipherments the folder mentions -- not found.** DECODE R4450 has no attached document (LANE N, LANE CX,
+  re-confirmed above). The one "decipherment" lead this folder names is the 18 *Decrypted* DECODE siblings in
+  fr.20506 (ids 4434-4449, 4815-4816), never opened until now: three re-opened live (plain GET, 3 Oct 2026):
+  R4449 = f.82, Claude Dodieu de Vély to Anne de Montmorency; R4434 = f.245, Mary Queen of Scots to Castelnau
+  de Mauvissière; R4815 = f.96, Robert Cenalis, bishop of Avranches, to Montmorency. French envoys' own ciphers to
+  French recipients, a different side and different senders from Ranzo (Gattinara's man, Imperial side); none
+  carries an "Additional Information" note tying it to f.136. Bourdeau's DECODE R1894 (fr.2988 ff.9-11, the
+  archetype) has "no key, decipherment or" clear copy (his `vasto1527/NOTES.md` l.157-158).
+- **(b) Other solvers' working files -- not found.** Fresh shallow clone dbourdeau/cyphersolver main 2341682
+  (3 Oct 2026): `targets/vasto1527/n20/` holds his transcriptions of the Ranzo letters (`ranzo_c006/007/017-020.txt`),
+  `solve.py`, `solve2.py`, `anchor.py`, `free.py`, `alphatest.py`, `calib.py` -- solver attempts, no rendering or
+  key file for Ranzo; his NOTES "Remaining gaps": "No. 20 ... whole letter - blocker: no-key-material; Ranzo's
+  code is non-alphabetical, the annealer recovers only function words on a matched control; needs Ranzo's table
+  or a clear copy"; README row (catalogue item 7) still "not solved". His fr.3019 no.27 (f.73) Ranzo letter
+  check: "all in cipher, no interlinear or separate decipherment". Aymeloglu (main d2800bb): R4450 only in the
+  raw DECODE harvest, no working files.
+- **(c) Physical neighbours -- not found.** Done in full by ZX2-GAL2 (25 Sept 2026, section above): canvases
+  273-280 at native 2000 px; f.135 and its verso blank (the facing page of f.136r), the copy runs ff.136r-138r to
+  Ranzo's signature, f.138v blank; no slip, no clear copy, no interlinear. Not re-fetched. The archetype's own
+  neighbours were checked by Bourdeau (fr.2988 views 43-87: a different French-side symbol cipher with clear
+  copies of *Doria* letters, not Ranzo's code; f.2v "dup.ª" a duplicate cipher, not a clear copy).
+- **(d) Recipient's side -- not found.** Ranzo writes from the Imperial court, so the receiving side is
+  Imperial/Spanish/Italian. Internet Archive full-text (be-api fts) inside the *Calendar of State Papers, Spain*
+  items `calendarorleters0003vari` (vol. III pt 2, 1527-29), `calendarofletter0003pasc`,
+  `calendarofletter0004pasc`, `dli.ministry.01108`, `dli.ministry.01109`: "Ranzo" 0/1/1/0/0 hits -- the two hits
+  are Gattinara's mother "Felicita Ranzo" and "the Lord Ranzo (Renzo da Ceri)", both unrelated (they double as
+  positive controls that the search reaches the text); "Garbino" 0 in all five. Google Books API (`country=US`,
+  key): `"Hieronimo Ranzo"` 38 (BnF 1868 *Catalogue des manuscrits français* entry for fr.2988; a 1837
+  Navarrete *Colección de los viages* witness list -- no letter text), `"Girolamo Ranzo" Gattinara` 20
+  (Gattinara biography, genealogies), `"Ranzo" Gattinara 1528 cifra` 2: *L'umanista aronese Pietro Martire
+  d'Anghiera* (1992) and *Novarien* (1990) snippet "... 1528 faceva da intermediario fra Gaspare Rotulo e Alonso
+  de Valdés, segretario del Gattinara, per la cifra ... Ranzo, camer[iere]" -- a **lead on who handled
+  Gattinara's cipher in 1528** (a person, not a key or decipherment); worth one Google Books snippet read before
+  any key-rebuild, not a solve.
+
+Requests this pass: de-crypt.org 3, archive.org 10, googleapis.com 3, github.com (clone shared with
+decode-2754). Next cheap test: none by cryptanalysis (Bourdeau's matched-control annealer already fails on
+~3,900 groups); the cheap step is material -- read the *Novarien* 1990 / Pietro Martire 1992 passage (Google
+Books snippet, ~$0.5) for where Gattinara's chancery cipher tables (Valdés, Rotulo) survive, i.e. Ranzo's table
+or a clear copy, the blocker Bourdeau names.
