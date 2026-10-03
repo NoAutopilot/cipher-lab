@@ -182,6 +182,60 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 ## While waiting (GF4-BATCH16, account-4, 3 Oct 2026)
 
 Still open and workable, but the first test waits on a key or on DECODE's claimed annex decipherment.
-- Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public) at thumbnail size to locate
+- Action that depends on nobody: read the NA inv. 281 scan list (360 IIIF images, public; list in
+  images/na_2.01.08_281_scans.tsv, 25 sampled 3 Oct by FT4, not found) at thumbnail size to locate
   the 14-15 Jan 1808 letter, then view the leaves on each side at native resolution for a decipherment, a clear draft
   or a ministry gloss (premise (c)); then one logged-in DECODE pass listing R1941's documents (premise (a)). S.
+
+## FT4-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): locate the Jan 1808 leaves in NA 2.01.08 inv. 281
+
+Step: premise (c) / While waiting, the action that depends on nobody. Locate the scans only; nothing was transcribed.
+- Scan list recorded once: `images/na_2.01.08_281_scans.tsv`. It has 360 rows (order, label, file id, bytes, IIIF
+  info.json), taken from the inventory page's `drupal-settings-json` `viewer.response` (www.nationaalarchief.nl, 1
+  request, 3 Oct 2026). The archive gives no per-scan labels or dates beyond the file name, so the scan list cannot
+  place the January 1808 leaves.
+- Contact sheets: 25 IIIF views at 600-700 px wide (`full/600,/0` or `full/700,/0`), 1.6 s apart, all HTTP 200
+  image/jpeg. Three vision calls, one sheet each:
+  - 184-220, every 4th scan;
+  - 120, 140, 150, 164, 168, 172, 176, 181, 182, 183;
+  - 40, 80, 260, 300, 340.
+  At this size the handwriting can be classed (clear prose, articles, blank, figures) but dates cannot be read.
+- What the samples show:
+  - No sampled scan carries a page of number groups, so the target's pages (19 lines of figures, a 7-line annex)
+    are not among the 25.
+  - No sampled scan carries a decipherment slip or a key sheet.
+  - Scans 196-204 are numbered articles (Art. 9-11 headings), and 216 is "Articles convenus entre les Commissaires
+    de Sa Majesté le Roi de Hollande et de Son Altesse Impériale et Royale le Grand-Duc de Berg ... Sevenaer,
+    Huissen et Malburgen". That is the cession convention, so 1806-07 material.
+  - Scans 140 and 150 are clear letters signed van Spaen; 150 reads "J.F.W. Baron van Spaen".
+  - Scans 172 and 176 are clear letters with other signatures (176 appears to read "v[an] der Goes": a ministry
+    minute or copy of an outgoing letter).
+  - Scans 40 and 340 are French letters beginning "Monsieur"; scan 40 is signed "J.F.G. de Spaen".
+  - Scans 80, 182, 212 and 260 are blank or wrapper leaves.
+- File order: the GF4-BATCH16 readings (160 = Mar 1808, 180 = Feb 1808) next to 1806-07 convention material at
+  196-216 confirm that the file is not in one date order. It is probably several bundles (convention, the two
+  commissioners' letters, ministry minutes) bound one after another. A binary search on dates does not work here.
+- Result: the Jan 1808 cipher leaves are **not located** after sampling 25 of 360 scans (7%). That is a search
+  result, not an absence. No period decipherment, clear copy or key sheet was seen in the sample. Status unchanged:
+  `open`, not found-solved.
+- Signature note: Bourdeau's DECODE images are signed "G. C. van Spaen" and were sent from Düsseldorf. The
+  commissioners in this file sign J.F.G./J.F.W. van Spaen. The target may be filed apart from the commissioners'
+  bundles, or this inv. nr. may hold it only because DECODE's citation says so; the scan list cannot tell which.
+- Requests: www.nationaalarchief.nl 1; service.archief.nl 25 images (the cap), 1.6 s apart, no 4xx/5xx. Vision 3.
+  Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026)
+Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
+- letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad, and no key sheet was seen in 25 of 360 inv. 281 scans
+- annex 15 Jan 1808 (75 groups) - blocker: not-attempted; DECODE says it "is solved" but no document has been seen; next: one logged-in DECODE pass listing R1941's DocumentsList, ~$1
+- location of the target leaves in inv. 281 - blocker: not-attempted; 25 of 360 scans sampled (this pass), leaves not located; next: thumbnails via the archive's own `api/file/v1/thumb/<id>` endpoint in batches of <=25 per session (scans 1-39, 41-119, 221-359 unsampled), cipher pages show as dense figure blocks even at thumbnail size, ~$2 per 25-scan batch
+
+## Escalation (3 Oct 2026)
+- [n/a] siblings: no sibling letter in this code is identified anywhere
+- [ ] clear-pages: locate the leaves next to the target in inv. 281 (the gap above) for a clear draft or a ministry gloss
+- [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out
+- [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
+- [ ] key-rebuild: needs a crib or a period decipherment first; the annex decipherment DECODE claims would be the crib
+- [ ] image-check: native-resolution view of the target leaves once they are located in inv. 281
+- [n/a] retry: no attempt has failed yet that a retry could repeat
+Verdict: keep going: 2 internal gaps; cheapest next: logged-in DECODE DocumentsList for R1941, ~$1
