@@ -162,6 +162,8 @@ single month, since no single month can be justified as *the* date.
 
 ## Verdict: `open` (same key/corpus as CS2-01 -- see above; do not double-book the board)
 
+**3 Oct 2026 (A1B-RANZO-SG):** still `open`. Bourdeau's c007/c018/c020 s/g label flip corrected for c007 (settled) and sampled on c018/c020; his pooled annealer re-run with the corrected labels shows no movement against seed noise (stable skeleton 81 -> 79, noise 2), controls C0 0.457 / C1 0.456 / C2 0.461. Next: a key-bearing source or crib; relabel of c018/c020 is housekeeping.
+
 **3 Oct 2026 (RANZO-NB):** still `open`. fr.3019 no.27 neighbours and no.36 (f.94) carry no clear copy, gloss or key; f.74r is marked "dupp^ta". Next: compare no.27 with fr.2988 f.2r-v ("dup.a") for a second copy (section "fr.3019 no.27 neighbours" below).
 
 **3 Oct 2026 (A1B-RANZO-2WIT):** still `open`. Full fr.3019 no.27 transcribed (813 tokens) and settled against fr.2988 f.2r-v: our read 0.018 settled error (N 813, lower bound; 0.011 reader-only, the rest a crop-region miss), Bourdeau's 0.035 (21 of 29 are a systematic s->g labelling flip on f.2v); r41/t41 is a recurring copy variant. Next: re-label Bourdeau's c007 g->s before any pooled-corpus attack (script, ~USD 0.5), then the target still needs a key-bearing source (section "Two-witness transcription" below).
@@ -311,10 +313,12 @@ Requests this pass: github.com 1 sparse clone. Vision: 1 batch (4 existing crops
 
 ## While waiting
 
-Done 3 Oct 2026 (A1B-RANZO-2WIT, section "Two-witness transcription"). Next step that depends on nobody: relabel the
-compact-8 tokens of Bourdeau's c007 (and the open-g tokens of c006) from the settled pairs in `twowit_diff.tsv`, check the
-other Ranzo pages c017-c020 for the same flip on their own images, and re-run his pooled-corpus annealer control with the
-corrected labels (~USD 2). Earlier step, kept for the record: transcribe fr.3019 no.27 in full (ff.73r-74r, about 830 tokens, line crops by
+Done 3 Oct 2026 (A1B-RANZO-2WIT two-witness transcription; A1B-RANZO-SG relabel + re-run: no movement, Bourdeau's negative
+stands with corrected labels, section "s/g relabel and pooled-annealer re-run"). Next step that depends on nobody: none
+that can move a reading -- the annealer is the limit on this design (rule 3, third-attempt clause in spirit: corrected input,
+same instrument, no movement). Housekeeping only: relabel every g on c018/c020 from their images (~37 tokens, ~USD 2) to
+complete the corrected corpus for Bourdeau. A reading needs a key-bearing source (Garbino's papers, not located) or a crib.
+Earlier step, kept for the record: transcribe fr.3019 no.27 in full (ff.73r-74r, about 830 tokens, line crops by
 `tools/iiif_lines.py --ark btv1b9059994n --canvas 114/115/116`) and diff it token-for-token against Bourdeau's
 c006/c007, settling each disagreement on native crops of both copies (fr.2988 btv1b9059908w views 6-7); the s/g split
 above is the first item. Price: about 8 Sonnet line-crop passes x USD 1.5 + 1 reconciliation = about USD 13.5. The
@@ -416,3 +420,31 @@ subagent: the brief's 4 blind calls were not spent, to stay inside the cap -- gr
   for exhaustively). c017 and c019 (s share 0.103, 0.117) were not viewed: counts only.
 So the flip is not confined to c007: c018 and c020 carry it too (sample, M). Their full relabel needs every g token on those
 two pages checked (about 37 tokens, image), not done here; arm C2 prices its effect on the control.
+
+**Result (runs 17:25-17:32 UTC, 42 runs, ITER 1,000,000; `sg_results.tsv`; `python3 sg_stats.py --vasto <clone>/targets/vasto1527`).**
+
+| arm | what | seeds | token acc mean (sd) / stable skeleton |
+|---|---|---|---|
+| C0 | his control, held-out Castiglione 3,900 words, clean | 1-6 | **0.457** (0.018) -- reproduces his ~46% on our rebuilt corpus |
+| C1 | C0 + c007-matched s->g flip (9 tokens injected) | 1-6 | 0.456 (0.011); C0-C1 +0.001 vs 2xSE 0.017 -> within noise |
+| C2 | C1 + c018 (0.5) / c020 (0.8) positions (21 tokens injected) | 1-6 | 0.461 (0.013); C0-C2 -0.003 vs 2xSE 0.018 -> within noise |
+| T0 | pooled no.20 + Ranzo, his labels | 1-6 / 7-12 | 81 / 83 stable types (overlap 39) |
+| T1 | T0 + 22 settled s/g relabels | 1-6 | 79 stable types (overlap with T0 46): \|79-81\| = 2, not > 2+2 -> **no movement** |
+| T2 | T1 + 7 other settled reader fixes | 1-6 | 78: \|78-81\| = 3, not > 4 -> **no movement** |
+
+Why, mechanically: solve2.py's own normaliser already folds a gN into sN whenever sN is at least as common (and bN into hN),
+so 19 of the 22 relabelled tokens map to the same type before and after the relabel; Bourdeau's pipeline had already
+absorbed most of his c007 label flip. Rule 3: the control arms that can vary with the manipulation (C1, C2) moved by less
+than their noise, in step with the target; C0 is orthogonal by construction (synthetic codes) and is a reproduction only.
+Caveat: the control's matched positions held only 9 (C1) / 21 (C2) s-word tokens against 22 relabels in the target -- the
+injection is weaker than the target's own change, so "within noise" on the control bounds a small effect, not a large one.
+The skeleton swaps (lei -> lui, consiglio, cesare dropped; da, dell, fatto gained) are seed churn of the size T0a/T0b already
+shows (overlap 39 of ~82), not a relabel effect. **Bourdeau's pooled-annealer negative (function words only) stands with the
+corrected labels**, conditional on his transcription elsewhere (rule 2) and on our corpus substitution (it16 for his
+Wikisource Guicciardini). Grades: no reading; H 0, C 0.
+Files: `relabel_sg.py` (`--check` exits 0), `bourdeau_relabelled/` (his c006/c007 relabelled, T2 variants, pooled T0-T2),
+`sg_run.py`, `sg_stats.py`, `sg_results.tsv`, `images/fr2988_sg/` (5 crops). His files and clone untouched.
+Requests: github.com 1 sparse clone; archive.org 2 (Castiglione djvu texts, scratch only); gallica.bnf.fr 4 (2 info.json, 2
+native regions). Vision: 5 own looks, 0 subagent calls.
+For Bourdeau (parent's call, outreach gates): his c007, c018 and c020 label the compact-8 s form as g (21/21 settled on c007;
+4/4 sampled on c018/c020), while c006/c017/c019 do not; his solver's g->s merge already absorbs most of it.
