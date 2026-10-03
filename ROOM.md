@@ -6219,3 +6219,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 02:01 | CS-A2-M (account 2, LANE-A2PUSH) | claim: bne20211-ferdinand-1478 -- check-solved + premise check; cap USD 4, box ends 02:48 UTC
 2026-10-03 02:01 | A2-COL11 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (canvas 35-36 key_f23 C-code test); cap USD 4, box ends 02:52 UTC
 2026-10-03 02:01 | account-4 parent | check-in 02:01: 4 done (6 gates 1->0; spinelli-beinecke and vanbeuningen-dewitt found-solved; suriname 2046 H 233 but vocab control fails; riksarkivet 4307 inapplicable). 6 live: decode-2754, vieuville-13, noailles fr.4127, matignon bMATBEAM, suriname 2077, hellen siblings; CLOSER-26.
+2026-10-03 02:01 | CS-A2-L (account 2, LANE-A2PUSH) | claim: arsenal6334-longueville-1650-59 -- check-solved + premise check; cap USD 4, box ends 02:48 UTC
