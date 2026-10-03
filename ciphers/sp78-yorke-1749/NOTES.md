@@ -95,6 +95,8 @@ pass's method.
 **Copy status:** `digitised: false` (Discovery API, confirmed directly). **TNA page-copy order** case for
 f.103 — see REQUEST.md.
 
+**Update 3 Oct 2026 (A2P4-YOR3):** Albemarle/Aix-la-Chapelle/cypher fts of all three Bedford volumes and the Harris and Yorke Hardwicke lives found no print of f.103's content (details in the section below); status stays open.
+
 **Recommended next step:** a TNA page-copy order for f.103; separately, a future worker with Discovery budget
 to spare should check the `note` field of every item in SP 78/232 individually (not by keyword) for other
 "partly/wholly in cipher" siblings, and check the Hardwicke Papers (1778) for Joseph Yorke's Paris
@@ -118,7 +120,43 @@ consolidated TNA batch, ASKS row 73).
 
 - [done 2 Oct 2026, A2-YOR: see "SP 78/232 per-item note check" below] M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
 - [catalogue part done 2 Oct 2026, A2-YOR2: BL Add MS 35355 f. 370, Bedford to Yorke 1749-51, copies, undigitised; see "BL catalogue check" below] S: search the Hardwicke Papers (BL Add MS 35349-36278) for this correspondence; the printed-text side (archive.org/HathiTrust) not checked.
-- S: full-text search the three already-fetched Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'; only 'Tobago'/'Puyzieulx' were tried so far.
+- [done 3 Oct 2026, A2P4-YOR3: see "Bedford volumes, Albemarle / Aix-la-Chapelle pass" below; no print of f.103 found] S: full-text search the three Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'.
+- [printed-text side of Hardwicke line done 3 Oct 2026, A2P4-YOR3: Harris 1847 and Yorke 1913 searched, no hit] S: archive.org/HathiTrust Hardwicke side (HathiTrust not reachable from the cloud; not searched).
+
+## Bedford volumes, Albemarle / Aix-la-Chapelle pass (A2P4-YOR3, 3 Oct 2026, 17:4x UTC)
+
+Method: archive.org be-api fts (no login), one query at a time, 1.6 s apart, descriptive UA, per identifier: vol. 1
+india.history.resource.40863, vol. 2 india.history.resource.40751, vol. 3 india.history.resource.40752. No djvu text was on
+disk and none was fetched; fts returns a handful of snippets per book without a usable page number (see CLAUDE.md,
+be-api note), so a "no hit" is a search result, not an exhaustive read. Requests: be-api 24 + 10 + 6, advancedsearch 1.
+Positive control: "Tobago" reproduces the 2 Oct 2026 result (0 hits vols 1-2, vol. 3 hits the 1763 Peace of Paris passage).
+
+| term | vol. 1 | vol. 2 | vol. 3 |
+|---|---|---|---|
+| Tobago | 0 | 0 | 1 (1763, not this letter) |
+| Albemarle | 1 (Albemarle named in 1748 letters about the congress) | 1 (contents list "Earl of Albemarle to the Duke of Bedford" 1751; his "Most secret" letters) | 1 (1763) |
+| Aix-la-Chapelle / Aix la Chapelle | 1 (congress, 1748) | 1 (treaty references; editor's preface) | 1 (Dunkirk, treaty references) |
+| Puyzieulx / Puisieux | 1 / 1 (1748) | 0 / 1 (Bedford's replies about his conversations, undated in snippet) | 0 / 0 |
+| cypher / cipher | 0 / 0 | 1 / 1 (Bedford: "your letter in cypher of the ... instant", "your Grace's packet, being great part in cypher I sent to Mr. Aldworth"; "Translation of a Letter in Cypher from Mr. Wall to Don Joseph de Carvajal"; one "cipher" = a person) | 0 / 1 (a person) |
+
+Hits in 1749-50 that touch the target's content (SP 78/232/44: Albemarle's appointment, Townshend answer, Tobago refused to
+Saxe): none. The vol. 2 contents list prints "Duke of Bedford to Mr. Yorke" and "Mr. Yorke to the Duke of Bedford" entries, and
+its snippets show Bedford acknowledging a cypher letter and a packet "great part in cypher"; the snippets carry no date or
+page, so whether the acknowledged letter is the 8/20 March one is not established. Follow-up queries ("Saxe Tobago",
+"Townshend memorial", "Mr. Yorke Albemarle appointment") returned nothing tying a printed letter to f.103. Not found in print.
+Cypher mentions in vol. 2 are evidence the volume prints some correspondence about cipher letters; they do not print any
+plaintext of f.103.
+
+Hardwicke printed side (search only): archive.org items lifelordchancel05harrgoog (Harris, Life of Lord Chancellor
+Hardwicke, 1847) and lifecorresponden01york / cu31924031041571 (Yorke, Life and Correspondence of Philip Yorke, 1913): "Tobago"
+0 hits in Harris and in lifecorresponden01york, 1 hit in cu31924031041571 (index entry "Tobago, occupied by the French, ii 7");
+"cypher" 1 hit each, all the word meaning a nonentity. Not found: any printed Yorke-to-Bedford cipher letter or decipherment.
+HathiTrust full text: not reachable from the cloud, not searched.
+
+Grades: none (no reading made). No control of the rule-3 kind applies (print lookup, no solver).
+
+Next cheapest step unchanged: the owner-side TNA page copy (REQUEST.md, ASKS row 73 batch). Optional, ~$1: read vol. 2's
+index/contents pages by eye for the dated Yorke entries of March 1749 (needs page images, not fts).
 
 ## Web and blog check (GF-A2-4, 2 Oct 2026)
 
