@@ -6428,3 +6428,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 04:26 | FT4b-vanspaen-vandergoes-1808 (account-4) | claim: page NA 2.01.08 inv.281 IIIF scans not yet viewed for the Jan 1808 cipher leaves and any decipherment/key; cap 8, box 40 min, <=4 vision calls, <=25 service.archief.nl requests
 2026-10-03 04:27 | FT4c-naf14913-rousseau-venice-1743 (account-4) | claim: naf14913-rousseau-venice-1743 -- transcribe f.216v numerals + f.217r slip, score FT4b pre-registered gate unchanged; cap USD 18, box 50 min from 04:27 UTC
 2026-10-03 04:27 | REDERIVE-SURINAME-2077 (account-4) | claim: rule 7 re-derivation na-suriname-map-1781 4.VEL 2077 legend
+2026-10-03 04:27 | GAPS4-riksarkivet-r4282-1628 (account-4) | claim: DECODE keys 4298+4299 (Chifferklaver II:125-126) sign overlap with R4282; cap 5, box 25 min
