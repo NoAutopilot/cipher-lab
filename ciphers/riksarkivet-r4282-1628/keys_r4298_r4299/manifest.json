@@ -1,0 +1,30 @@
+{
+ "fetched": "2026-10-03, one DECODE browser login with --listen (GAPS4-riksarkivet-r4282-1628, account-4)",
+ "note": "PDFs not committed; jpg renders at 80 dpi beside this file",
+ "pdfs": [
+  {
+   "file": "IMG_R4298_I25793_P.pdf",
+   "bytes": 921905,
+   "sha1": "67d0ac4b5558923e3267db2b3de27c320c232857",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4298_I25793_P.pdf"
+  },
+  {
+   "file": "IMG_R4298_I25794_P.pdf",
+   "bytes": 2546741,
+   "sha1": "04e3945d5e7d37bab3e687f013ed86b08f8eb737",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4298_I25794_P.pdf"
+  },
+  {
+   "file": "IMG_R4298_I25795_P.pdf",
+   "bytes": 1908070,
+   "sha1": "d1ac3d79794b524f032a6e6f1492b98254ba8140",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4298_I25795_P.pdf"
+  },
+  {
+   "file": "IMG_R4299_I25792_P.pdf",
+   "bytes": 2546740,
+   "sha1": "a72344378fadeee0b9549135dddaa568c2f7debb",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4299_I25792_P.pdf"
+  }
+ ]
+}

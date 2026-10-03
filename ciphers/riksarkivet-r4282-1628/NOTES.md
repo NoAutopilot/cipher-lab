@@ -516,17 +516,53 @@ alignment is itself uncertain (rule 2). Not a negative on the other 14 letter/gr
 Requests: de-crypt.org 3 (login page, submit + RecordsView/4307, one filesrv PDF; 1.7 s apart), one login; no other
 host. Vision calls: 1.
 
-## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, 3 Oct 2026)
+## GAPS4-riksarkivet-r4282-1628 (3 Oct 2026, account-4)
+
+Verdict step run: "fetch the 1630s-dated letter/graphic-sign key records 4298 and 4299 (Chifferklaver II:125-126) full
+size in one DECODE login and one vision call for sign overlap with R4282, ~$1". Intake gate:
+`riksarkivet-r4282-1628: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Fetch.** One `tools/decode_browser_login.js 4298 --fetch-page .../RecordsView/4299 --listen` run (one login; both
+RecordsView pages read for file names, then four explicit filesrv gets). DECODE metadata for both: Key, 1630-1639,
+"Simple substitution, Nomenclatures", Symbol Sets "Graphic signs, Numerical". All four PDFs served full size (real
+one-page PDFs, sha1s in `keys_r4298_r4299/manifest.json`; 80 dpi renders beside it, PDFs not committed).
+
+**What 4298 and 4299 are (vision call 1: 4298 p.1 + 4299 at 200 dpi; vision call 2: 4298 pp.2-3; all reading M).**
+The same key in two copies. 4298 p.2 is a modern archive cover: "1630-talet, 2 ex, Polsk klav med Sigismund
+Gyllenstierna (Nyckelord: Wilman)", shelf "II:98"(?); 4298 p.3 is the endorsed outer leaf ("Von ... [Gyllen]stierna(?)
+Ziffer"). The key (4298 p.1, 4299) is Polish: a reciprocal keyword alphabet, top row "W i l m a n b c d e f g" over
+bottom row "h k o p q r s t u x y z" (each letter swaps with the one in the other row: w-h, i-k, l-o, m-p, a-q, n-r,
+b-s, c-t, d-u, e-x, f-y, g-z); Roman numerals II-XXIIII for names and offices (Xiaze II, Krol III, Cesarz IIII,
+Krolewiec V, Papiez VI ... Polska XII, Imperium XIII ... Katolicy XXII, Ewangelicy XXIII); Arabic 15-44 for persons,
+places and months (Tylli XXIV, Gustaw 15, Bawarczyk 16, Saski 17, Brandeburczyk 18, Oxenstern 19, Warszawa 20,
+Krakow 21 ... Wilman 27, Januarius 29 ... December 40, Kazanowski 41 ... K. Wladislaw 44); marginal additions 45-49
+(Der Herr Feldherr(?), Gorny(?), Woiewod Derpt, Riga, Stockholm(?)).
+
+**Overlap with R4282: letter shapes only, not the commonest signs.** The key's cipher alphabet is the Latin alphabet
+itself, so all 19 lowercase Latin signs of R4282 (660 of 1,110 tokens) have a cell -- a trivial overlap, shared with
+any Latin-letter key. Of R4282's commonest eight (b 80, M 66, 7 63, k 61, q 53, 5 53, 4 51, L 47) only b, k and q are
+covered; R4282's single digits 4 5 7 8 (199 tokens) have no single-digit cell (the key's Arabic codes are two-digit
+name codes 15-49) and its Greek signs (M L F E T, 157 tokens) have none. The brief's condition for the known-key test
+(overlap covering the commonest signs) is not met, so the la18 test was not run: an inapplicable test, not a
+negative on this key. Language also argues against: the key's names are Polish and its nomenclator is for Polish
+affairs of the 1630s (Wladyslaw IV), while R4282's clear phrases are Latin (RIK-CRIBS).
+Beside GAPS3: key 4307 p.4 shared 16 signs / 456 tokens and scored real -3.617 vs permuted mean -3.553 (p95 -3.298),
+no read; 4298/4299 share 19 letter shapes / 660 tokens but none of R4282's digits or Greek signs, so no test.
+
+Grades: none claimed (rule 4; no reading). Requests: de-crypt.org about 9 (login page, submit, RecordsView/4298,
+RecordsView/4299, one auto-fetched thumbnail, four filesrv PDFs; 1.5-1.8 s apart), one login; no other host. Vision calls: 2.
+
+## Remaining gaps (FT4, 3 Oct 2026; updated GAPS, GAPS2, GAPS3, GAPS4, 3 Oct 2026)
 Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS, FT4, GAPS)
-- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); next: fetch and eye-check the remaining 14 letter/graphic-sign key records (4263, 4275, 4293, 4295, 4297, 4298, 4299, 4305, 4308, 4309, 4312, 4322, 4323, 4329), 1630s-dated first (4298, 4299, 4275, 4305), one login and one vision call per two records, ~$1 each
+- R4282 whole letter - blocker: not-attempted; Symbol Sets filter done (GAPS, 3 Oct 2026): 16 of 54 key records carry letter/graphic signs; 4327 tested on its 7 shared signs, no fit vs control (median of 2000 permutations); 4307 pp. 1-3 (GAPS2) a German name nomenclator, one shared sign; 4307 p.4 (GAPS3, 3 Oct 2026) a monoalphabetic reversed alphabet of Latin letter shapes, 16 shared signs / 456 tokens, no fit vs control (real -3.617 vs permuted mean -3.553, p95 -3.298, 0.65 of permutations >= real); 4298/4299 (GAPS4, 3 Oct 2026) one Polish reciprocal-keyword key ("Wilman", Gyllenstierna, 1630s) in two copies, Latin-letter cipher alphabet plus two-digit name codes: no cell for R4282's single digits or Greek signs, commonest signs not covered, test inapplicable; next: fetch and eye-check the remaining 12 letter/graphic-sign key records (4263, 4275, 4293, 4295, 4297, 4305, 4308, 4309, 4312, 4322, 4323, 4329), 1630s-dated first (4275, 4305), one login and one vision call per two records, ~$1 each
 - transcription reliability - blocker: not-attempted; single-pass Bourdeau transcription, no measured error; next: second blind pass on R4282's two pages via tools/iiif_lines.py --image (DECODE full-size served to this account, FT4), ~$5
 
 ## Escalation (FT4, 3 Oct 2026; updated GAPS, 3 Oct 2026)
 - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026)
 - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS, 2 Oct 2026), negative at resolution
-- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control), 4307 pp. 1-3 (GAPS2, name nomenclator, one shared sign), 4307 p.4 (GAPS3, reversed Latin-letter alphabet, 16 shared signs, no fit vs control) done; 14 other letter/graphic-sign key records left
+- [ ] known-keys: R4284 crib leaf (bRIK), R4280/R4281 (FT4, no overlap), 4327 (GAPS, partial overlap, no fit vs control), 4307 pp. 1-3 (GAPS2, name nomenclator, one shared sign), 4307 p.4 (GAPS3, reversed Latin-letter alphabet, 16 shared signs, no fit vs control), 4298/4299 (GAPS4, Polish keyword key, no digit or Greek cell, test inapplicable) done; 12 other letter/graphic-sign key records left
 - [ ] print: AOSB series II and Camerarius letters only phrase-searched (IA full text), not read page by page
 - [ ] key-rebuild: no partial key exists to rebuild from; homophonic annealing after a second transcription pass
 - [ ] image-check: second blind pass on the two R4282 pages and the R4284 key-test leaf
 - [n/a] retry: no earlier attempt failed on a fixable setting
-Verdict: keep going: 2 internal gaps; cheapest next: fetch the 1630s-dated letter/graphic-sign key records 4298 and 4299 (Chifferklaver II:125-126) full size in one DECODE login and one vision call for sign overlap with R4282, ~$1
+Verdict: keep going: 2 internal gaps; cheapest next: fetch the 1630s-dated letter/graphic-sign key records 4275 and 4305 full size in one DECODE login and one vision call for sign overlap with R4282, ~$1
