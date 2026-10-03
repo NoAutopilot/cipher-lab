@@ -557,3 +557,59 @@ Requests: de-crypt.org 13 after one login (record 1050, 1051, DocumentsList x2, 
 3 full-size images), 1.6 s apart, no challenge; account name not in any saved file. Vision calls 0.
 Next suggestion (not run): other Prussian chancery sibling keys of 1751-56 with a code range near 1-1650 (DECODE key
 records, GStA PK); the folder's 1763 cluster (range to ~3900) is the one a Michell-sized code could still fit, and it tested negative here.
+
+## FT4b: other Prussian sibling keys 1751-56 (FT4b-hellen-frederick-1752, account-4, 3 Oct 2026)
+
+Step run: the FT4 "Next suggestion": other Prussian chancery keys of 1751-56 with a code range near 1-1650.
+
+**What was listed.** I used the cached login-free DECODE key listing (`sources/decode/keys-all-2026-09-28-merged.tsv`, 6,324
+Key rows, plus `keys-na-p58-2026-10-02.tsv`; no fresh `decode_list.py` call) and Aymeloglu's DECODE catalogue scrape
+(`catalogue/decode-catalog.csv`, 10,106 rows, which has the sender/region field the listing lacks; shallow clone,
+grep only, no code copied; rule 8). There are 392 Key records dated 1740-1765. By holder/sender: the only rows
+naming Prussia or Berlin outside one BL volume are R2824 (Fagel 5345, 1746: Bourdeau rejected it as van Reede's
+Dutch key for the mission *to* Prussia) and Dresden R2332/R2429 (Saxon Dresden-Berlin keys of 1764-77, the wrong
+chancery and dates). **BL Add MS 32276 is the English Deciphering Branch's Prussian key volume** (DECODE region
+notes "Berlin", "Potzdam", "Prufsia"). It has 66 Key records running from 1722 to 1794, all N/A, mostly 2 pp. Those
+inside or next to the target dates:
+1751 R4369 (f.44), R4370 (f.46), R4373 (f.50); 1752 R4374 (f.52), R4380 (f.64); 1754 R4376 (f.56); 1756 R4377
+(f.58, Potzdam), R4378 (f.60), R4379 (f.62, Potzdam); 1761-62 R4381-R4385; 1764-65 R4387, R4389-R4391. In the other
+Deciphering Branch volumes the only Prussian row is R2881 (Add MS 32277 f.7, 1800, "Roy de Pfse").
+
+**Two candidates fetched.** I picked the two dated 1752, the year of R1953, whose range (to ~1650) the step names. I
+used one browser login (`tools/decode_browser_login.js`; certutil proxy-CA fix applied first) and wrote no account name to any file:
+- **R4380** (Add MS 32276 f.64, 1752; sender "Kniph_n", i.e. Knyphausen, Prussian envoy at Paris; receiver "Roy de
+  Prufse"; Cipher Type Unknown). On the image (P2+P3, one vision call) it is a Deciphering Branch **tally sheet, not
+  a key**: printed numbers 1-1000 in columns, each with lower-case letter marks (a-p, apparently one letter per
+  intercepted despatch the group occurred in). There are also cross-references in a 4001-4300 series and column-head offsets
+  (200/310/210/320...). It gives **no plaintext meaning for any code**, so no known-key test can be built from it.
+- **R4374** (Add MS 32276 f.52, 1752; sender "Michel", receiver "Roy de Prufse"; Simple substitution + Nomenclatures,
+  syllables). It is a full reconstructed code table, 1-1000 with French meanings and margin additions (P2+P3, one vision call).
+  The entries I could read at contact-sheet resolution match FT4's R1050-derived Michell key
+  (`sibling_michell/key_sibling.tsv`): 100 ant, 149 aussi, 201 affaire. So this is **the same Michell code** that FT4 already
+  tested against R1953 and found negative with its control (real -9.641 vs shuffle mean -9.367, p=0.695; positive
+  control power 1.00 at R1953's covered count). A second test of it would be the same test. I also checked R1953's own range against
+  this table on disk: 498 of 835 tokens (59.6%) are 1-1000, 336 are 1001-1650 and 1 is above, so a 1-1000 table could
+  not cover R1953 by itself anyway.
+
+**Result.** Neither fetched candidate gives a new key with meanings for any of the eight Hellen letters: R4380 has
+no meanings and R4374 is the code already tested. No test was run, so there are no numbers and no control.
+This is not a negative on the target (rule 3): no key was tested. Status stays `open`. Grade counts: H 0, C 0,
+S 0, M 0, I 0 (nothing read).
+
+**Next suggestion (not run).** The 1756 Potsdam sheets R4377 and R4379 (and R4378), for R1049 (7 Sept 1756,
+range to ~3100), and the three 1751 sheets R4369/R4370/R4373 (senders unknown until RecordsView is read), for R1953.
+Each one is only worth a test if its sheet carries meanings the way R4374 does, not tallies like R4380. Cheapest
+route: one login, RecordsView plus thumbnails for the six records (~14 requests, sender field and a thumbnail look,
+~USD 2). Then transcribe a meaning-bearing table with `tools/iiif_lines.py --image` column crops, 2 blind passes
++ 1 reconciliation, about 20 calls, ~USD 15. Then run FT4's `test_sibling.py` against it (value-shuffle x200, positive
+control power at the target's N).
+
+Images (not committed; re-fetch with `tools/decode_browser_login.js 4374 OUT --guess-fullsize --fetch-page
+.../RecordsView/4380,...ImagesList?showmaster=records&fk_id=4380`), sha1:
+R4374 P1-P4 9f36f952db0a3198f03e837a9954a7d23793e975, 04800426dd94387e492909a021828afbc37b35ee,
+09785cbfb7ed00b253b1e7ca454f565758cc69b4, f3a0d7f31aa4e78c973a59621d10e58e712586d4 (4375-4426 x 5625-5748 px);
+R4380 P1-P4 02a38d513fba4f2dad34877cb91e30197394d723, 975cea1c7cd5b15b703eafaaebefe26fd348f11a,
+f58f12cdcaf882e5f05449dc0d246777cb9bdfe9, 62461d15ca24b7017748f49bdcb7a1ceb9c04450 (4327-4448 x 5550-5611 px).
+
+Requests: de-crypt.org 22 after one login (RecordsView x2, DocumentsList x2 -- both "No records found", ImagesList x2,
+8 thumbnails, 8 full-size images), 1.7 s apart, no challenge. github.com 1 shallow clone. Vision calls 2 of 3.
