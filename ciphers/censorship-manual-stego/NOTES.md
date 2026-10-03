@@ -188,3 +188,25 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2-12, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `censorship manual steganogram KV 2/2424 Amsterdam map Morse solved` (shelfmark + the item) -- Cipherbrain 14 Oct 2016, 3 May 2017 (top-50 no.33) and 7 May 2017 "Censorship manual steganograms partially solved"; Futility Closet 16 May 2019; Wikipedia list of steganography techniques.
+2. `"Postal Censorship" "Brochure for Use of Overseas Censorships" steganography` (the manual's own title, quoted) -- no page about this item; general postal-censorship pages only (Wikipedia, encyclopedia.pub, British Online Archives "secret codes in the second world war").
+3. `Schmeh censorship manual fashion drawing Arras shorthand steganogram solution` (distinctive phrase) -- same Cipherbrain posts; also HNN "German spies fashioned messages in drawings of models", opiniojuris "Morse code in filigree?", alecmuffett.com (general press items, no reading).
+4. `ciphermysteries censorship manual steganography map Morse tram lines` (descriptive title + Cipher Mysteries) -- no Cipher Mysteries post on this item returned; Cipherbrain posts only.
+Site searches: Cipherbrain (queries 1, 3, 4); Cipher Mysteries (query 4: none found); `cryptiana censorship manual steganography WW2 fashion drawing` (Cryptiana: no cryptiana.blogspot.com or Tomokiyo page returned).
+Hits opened and threads read:
+- Cipherbrain 14 Oct 2016 "Hidden messages in a letter, a map and a fashion drawing", 10 comments (14 Oct 2016 - Sep 2023): Thomas reads the separate 1914 letter example (not part of this target); "m" (15 Oct 2016) finds the "aathut" -> "alles fertig" map fragment (already in this folder via Bourdeau); Bugfish (Sep 2023, two comments) agrees "Alles Fertig" is readable but "before and after that only partial" and links a marked-up map at forum.bugfish.eu/viewtopic.php?t=19 -- that host is unreachable from here (proxy CONNECT rejected; one Wayback CDX attempt, connection reset; not retried).
+- Cipherbrain 7 May 2017 "partially solved", 5 comments (Thomas Ernst x4, Thomas; 7 May - 6 Jun 2017): Gerry's "von aras" reading of the signature (shorthand half of mystery 1) and the "alles fertig" map fragment; Ernst's tentative cape/collar Morse letters ("EINE", "S", "TUE", "ND") are offered as guesses needing better images. No full carrier located for either picture.
+- Futility Closet 16 May 2019 "A Fashion Puzzle": restates Schmeh ("I could neither find the morse message nor the shorthand message ... It didn't help"); no solution.
+- Cipherbrain 3 May 2017 post and its 13 comments: on disk, read in full by bCEN (25 Sept 2026).
+Result: no full location of either Morse carrier found on the open web or in these comment threads; the two partial readings (shorthand "von aras"; map "alles fertig") are the ones already recorded in this folder. Requests: WebSearch 5; WebFetch scienceblogs.de 3, futilitycloset.com 1; forum.bugfish.eu 1 (refused by proxy); web.archive.org 1 (connection reset).
+
+## Premise check (GF-A2-12, 3 Oct 2026)
+
+(a) Decipherments the folder already mentions -- found, opened: the plaintexts themselves are printed in the manual (captions, pp.14 and 17, quoted above); what is unread is where and how they are hidden. The two partial locations are "von aras" in the signature (Gerry, Cipherbrain 7 May 2017) and "aathut"+11 -> "alles fertig" under the Raadhuisstraat band ("m", 15 Oct 2016; Bugfish, Sep 2023). No source places the rest of either Morse message: no full mapping found.
+(b) Other solvers' working files -- shallow clones 3 Oct 2026: dbourdeau/cyphersolver HEAD 810a777 targets/censorship (NOTES.md, profile.json "not solved / not read / fraction_read 0", crib.py, bands.py, marks_raad.py; already summarised above, MIT/CC BY, credited) -- no rendering of either carrier beyond the published fragment; aaymeloglu/unsolved-ciphers HEAD d2800bb: no file on this item. Bugfish's marked-up map (forum.bugfish.eu) would count here but is unreachable: found (Bourdeau, no reading) / unreachable (Bugfish).
+(c) Physical neighbours -- the manual's other pages: Bourdeau downloaded TNA's 115 images of KV 2/2424 and reports no gain in resolution; the manual's own explanatory text around pp.14-17 is quoted above and does not give the mark positions. No answer key or "solution" page is known in the brochure: not found (from the pages read by bCEN and Bourdeau).
+(d) Recipient's side -- not a letter; the "recipients" are the overseas censorship stations that used the brochure. Related KV/DEFE censorship files at TNA were not searched this pass (out of a gate-fix brief): not found / not searched.
