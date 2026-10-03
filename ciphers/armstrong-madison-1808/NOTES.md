@@ -3712,3 +3712,25 @@ Waits on the owner's Monroe Catalogue Online lookup (ASKS 97) for the Armstrong-
   its groups above 1600 (Bourdeau lists 1701, 1723) and test their overlap with the 20 Feb 1808 letter's value set --
   a two-letter value-overlap count against random value sets of the same size drawn from the same numeric range
   (a reordering control could not differ, rule 3), no reading. S.
+
+## Campaign step H67 (2026-10-03 05:32 UTC)
+
+New outside material: Bourdeau's 2 Oct gap list (dbourdeau/cyphersolver 841111b, targets/armstrong/NOTES.md) puts groups 1701
+and 1723, "values above 1600, as in the 20 Feb letter's code", in the 27 Dec 1807 letter. Fetched M34 roll 13 frame 0390 natively
+(NARA IIIF v3, `.../M34-013/M34-013-0390.jpg`, 3936x3328; 2 requests; full frame not kept, folder over 30 MB already -- re-fetch from
+that path; four band crops kept in h67/). The letter is the 27 Dec 1807 Duplicate in THE=972 (972 'the', 1001, 1105 ...) with period
+pencil glosses over nearly every numeral line (e.g. "to go farther than any other person, dare not avow his opinion of it";
+P.S. "there is no longer a doubt that the Emperor wished to get hold of the royal family of Portugal"). Two reads of every 12xx/17xx
+group (runner's own read of the crops; one blind Sonnet subagent): h67/reads.tsv. Firm 17xx in both passes: 1717 (x2), 1716 (x2,
+one glossed "of Aranjuez"); seven more are 12xx/17xx splits (the hand's 2 and 7 look alike). Bourdeau's 1723 was not seen as such
+(nearest: 1725/1225). These values sit inside THE=972 usage, which already tops out near 1687 in the tables on file, so the
+simplest reading is that THE=972 runs past 1700, not that this letter carries the target's code.
+
+## Campaign step H68 (2026-10-03 05:32 UTC)
+
+h68/overlap.py: overlap of f.0390's >1600 values with the target's 34 distinct values in 1601-1999, against 2,000 random sets of the
+same size from 1601-1800 (an order shuffle could not differ, rule 3). Firm set {1716,1717}: overlap 1 (1716), null mean 0.22,
+P(null>=obs) 0.207. Maximal set (every 17xx reading, 9 values): overlap 1, null mean 0.94, p99 3, P 0.648. **No overlap beyond
+chance; H68 fails its gate (p99).** H69 (align the glosses as known plaintext onto the target) is not licensed and is dropped. A
+by-product for whoever extends THE=972: f.0390 carries period glosses over 17xx groups (1716 'Aranjuez'?, 1717 in "and I wait",
+"and abandoned"), i.e. THE=972 entries above the tables' current ceiling -- out of this target's scope.
