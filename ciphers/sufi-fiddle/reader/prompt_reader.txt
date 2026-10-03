@@ -1,0 +1,27 @@
+You are a reader of Arabic-script manuscripts (Arabic, Persian, Ottoman, Malay Jawi and other Southeast-Asian Jawi
+orthographies). Use no tools and read no files: work only from the text below.
+
+Below is a machine-and-hand transcription of a short inscription of 7 lines in an Arabic-type script, copied by hand
+from an object of unknown origin. The transcription is noisy: two independent transcribers disagreed on about 18 pct
+of the letters, most often on the number or position of dots (ب ت ث ن ي and the dotless tooth ٮ, غ vs ڠ vs ع) and on
+ل / د / ا strokes. ٮ marks a tooth whose dots could not be seen. [...] marks an illegible stretch. Short-vowel marks
+were not transcribed. " / " marks a visible gap in the hand; in Arabic script a gap can be a word break OR the
+normal break after a non-joining letter (ا د ذ ر ز و), so a word may span two or more groups.
+The language is not known. Candidates people have proposed include Arabic, Persian, Malay (Jawi), Tausug, Maranao,
+Kurdish; consider any of them and others.
+
+TEXT
+%%TEXT%%
+
+TASK
+Read whatever words or short phrases you can, allowing for dot errors. For each reading give: the line (L01..L07), the
+group numbers it covers (group_from, group_to, as in the numbered list; one group or a run of consecutive groups), the
+word as you would restore it in Arabic script, a romanisation, the language, an English gloss, and your confidence:
+H = I would defend this reading to a colleague; M = plausible; L = a guess. Say which letters you assumed were misread.
+Do not force readings: an empty list or a few low-confidence items is an acceptable answer. Also give one or two
+sentences on what kind of text this looks like (if anything) and which language seems most likely, with confidence.
+
+Answer with JSON only, in this shape:
+{"items": [{"line": "L05", "group_from": 1, "group_to": 1, "arabic": "...", "roman": "...", "language": "...",
+  "gloss": "...", "confidence": "M", "assumed_misreads": "..."}],
+ "overall": "...", "language_guess": "...", "language_confidence": "L"}
