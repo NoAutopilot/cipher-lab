@@ -1,6 +1,7 @@
 # ra-morner-welin
 
 Status: open
+No standard edition exists for anonymous, unsigned letters; Google Books API full-text search by this worker (GF-A2B-2, 3 Oct 2026) for Welin/Östergren/Mörner/Esplunda + chiffer: 0 hits naming a cipher; one hit is the printed Esplunda inventory (Riksarkivet Meddelande, Google Books Kok4AAAAIAAJ), snippet "( Welin - Östergren ) 154 Brev i folioformat" (see Premise check).
 
 ## What this is
 
@@ -59,3 +60,49 @@ Copy-order (not digitised). REQUEST.md below drafts the Riksarkivet reading-room
 Requests this pass: data.riksarkivet.se 1 (this item; shared count with the other three targets in this
 worker's ROOM claim, batch total below), github.com 2 shallow clones (grepped, kept for the other three
 targets in this batch), WebSearch 1, no Google Books, no TNA, no DECODE login.
+
+## Web and blog check (GF-A2B-2, 3 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Mörner Welin Östergren brev i chiffer` (sender + recipient as catalogued; no date exists): Scandia article
+   (postal espionage), Stockholm University news on historical cryptology, the Heusner 1637 paper, a Jan Östergren
+   book record -- none about this bundle.
+2. `"SE/RA/720290" Esplunda Mörner chiffer` (shelfmark + cipher): a Riksarkivet arkis2dok PDF (Herrborum), Codex
+   Esplunda, Mörner biographies -- no hit on the item.
+3. `Adolf Göran Mörner Esplunda arkiv inkommande brev chiffer Welin` (folder title; no clear-text phrase exists):
+   Birger Mörner, Runeberg, museum objects (one a music-score cipher, unrelated) -- no hit.
+4. `Swedish enciphered letters Mörner Riksarkivet cipher unsigned Welin Östergren`: Uppsala S:t Barthélemy
+   collection volumes (Mörner-family letters, 1815), the UiO/ScienceNorway piece on AI-decoded letters, Heusner --
+   none names Welin/Östergren or Esplunda.
+5. Google Books API, 4 queries (status line): only the printed Esplunda inventory and a Norwegian order register.
+
+Blog site searches:
+- Cipherbrain + Cryptiana + Cipher Mysteries (combined domain filter, "Mörner Welin Östergren Esplunda chiffer"):
+  only unrelated scienceblogs.de pages (a Nils-Axel Mörner climate post, Notizblock murderer) -- nothing on this item.
+- Cipherbrain alone: "Schwedische Literatur-Wissenschaftlerin sucht Unterstützung beim Knacken einer Verschlüsselung"
+  (2015-04-03), opened with its comment thread: Clas Livijn's almanacs of 1800 and 1803 (Stockholm University),
+  read in the comments by "Kent"; no mention of Mörner, Welin, Östergren or Esplunda. Unrelated.
+- Cryptiana: no page returned on these terms (the combined search; the local snapshot grep of 24 Sept also empty).
+
+No plausible hit for this item. Requests: WebSearch 5 + 1 shared, Google Books API 4, scienceblogs.de 1.
+
+## Premise check (GF-A2B-2, 3 Oct 2026)
+
+- (a) Folder's own mentions: no decipherment, gloss, key or clear copy is mentioned in NOTES.md or REQUEST.md; no
+  spec. One premise is in doubt: the printed Esplunda inventory's snippet lists neighbouring volumes as
+  "D:o (Mörner, Carl Gabriel) 1794-1820", "1821-28" and then "( Welin - Östergren ) 154 Brev i folioformat", the
+  form of an alphabetical range of correspondents. "Welin - Östergren" is therefore probably the surname range W-Ö of
+  the private-person letters in volume 153, not a sender "Welin" writing to a recipient "Östergren" as this folder's
+  description reads it (inferred from one snippet; the inventory page itself not read). Not a decipherment; noted
+  for whoever orders the copy.
+- (b) Other solvers' working files: fresh shallow clones 3 Oct 2026 (Bourdeau e8b4287, Aymeloglu d2800bb),
+  `grep -rliwE "m[öo]rner|welin|[öo]stergren|esplunda"`: zero files in either. Not found.
+- (c) Physical neighbours: not digitised (Sök-API `onlyDigitisedMaterials: false`, 24 Sept 2026). Unreachable.
+- (d) Recipient side: the recipient is Count Adolf Göran Mörner (1773-1838) or his wife; no printed edition of their
+  incoming letters was found (web searches 3-4, Google Books). Not found.
+
+## While waiting
+
+Waiting on a copy order (REQUEST.md). The one action that depends on nobody: read the printed Esplunda inventory
+(Google Books Kok4AAAAIAAJ, Riksarkivet Meddelande) around volume 153 through further Books API snippet queries, to
+settle whether "Welin - Östergren" is a surname range and whether any other volume notes cipher letters or a key.
