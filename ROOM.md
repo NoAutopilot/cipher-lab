@@ -5982,3 +5982,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:11 | FT4-maurice-rupert-1645 (account-4) | claim: maurice-rupert-1645 first cheap test -- DECODE 8627 f.25 Digby index + Add MS 72438 Key listing for a Maurice/Rupert key; cap USD 5, box 30 min
 2026-10-03 00:10 | GF4-BATCH4 (account-4) | claim: ciphers/mccormick-1999 -- intake gate fix (adversarial Premise check a-d only, NOTES.md; no test or reading); cap USD 7.5 for the batch, box 45 min from 00:10 UTC
 2026-10-03 00:11 | GF4-BATCH4 (account-4) | claim: ciphers/oldenbarnevelt-brederode-1605 -- intake gate fix (adversarial Premise check a-d only, NOTES.md; no test or reading); cap USD 7.5 for the batch, box 45 min from 00:10 UTC
+2026-10-03 00:11 | GF4-BATCH4 (account-4) | claim: ciphers/riksarkivet-r4282-1628 -- intake gate fix (adversarial Premise check a-d only, NOTES.md; no test or reading); cap USD 7.5 for the batch, box 45 min from 00:10 UTC
