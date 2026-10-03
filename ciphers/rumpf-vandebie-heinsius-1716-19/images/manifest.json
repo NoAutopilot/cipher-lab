@@ -244,6 +244,111 @@
     "prominence": 20.0
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fagel1233_0003_L01.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.10.29_1233_0003.jpg",
+   "box": [
+    640,
+    39,
+    1400,
+    416
+   ],
+   "lines_in_crop": 10,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 116,
+    "distance": 22,
+    "prominence": 4.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fagel1233_0003_L02.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.10.29_1233_0003.jpg",
+   "box": [
+    640,
+    416,
+    1400,
+    713
+   ],
+   "lines_in_crop": 10,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 116,
+    "distance": 22,
+    "prominence": 4.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fagel1233_0003_L03.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.10.29_1233_0003.jpg",
+   "box": [
+    640,
+    713,
+    1400,
+    1045
+   ],
+   "lines_in_crop": 10,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 116,
+    "distance": 22,
+    "prominence": 4.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fagel1233_0003_L04.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.10.29_1233_0003.jpg",
+   "box": [
+    640,
+    1045,
+    1400,
+    1341
+   ],
+   "lines_in_crop": 10,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 116,
+    "distance": 22,
+    "prominence": 4.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "fagel1233_0003_L05.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.10.29_1233_0003.jpg",
+   "box": [
+    640,
+    1341,
+    1400,
+    1494
+   ],
+   "lines_in_crop": 4,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 116,
+    "distance": 22,
+    "prominence": 4.0
+   },
+   "date": "03 Oct 2026"
   }
  ]
 }

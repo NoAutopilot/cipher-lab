@@ -286,7 +286,44 @@ the 1-77 range, the shape of letter 142's homophonic design? Family resemblance 
 - Budget: at most 2 vision calls (one contact sheet of 2-11; one line-crop set of the one scan the sheet points at),
   at most 15 service.archief.nl requests.
 
+**Result: NO (nomenclator-only) for scans 2-11.** Scans 4-11 fetched once at 1400 px through the service.archief.nl
+IIIF image API (8 requests, 1.6 s apart, descriptive User-Agent; scans 2-3 were already on disk); `images/fagel1233/`
+now holds scans 1-12 and 25 (about 3 MB), and `fetched_orders` in its manifest is updated.
+- **Vision call 1** (Opus, own view): a 5x2 contact sheet of scans 2-11 at 560 px per scan (built locally, kept in the
+  scratchpad, not committed). Scan 2 is blank (front board and flyleaf). Scan 3's left page is blank; its right page
+  opens the book with a heading and a list whose codes start at 1. Scans 4-7 are two-column alphabetical lists of
+  Dutch words and phrases under section letters (D, E, G, H, K, M, N, O, R, T, U, W are visible), each word against a
+  code. Scans 8-11 are the name part (scan 8 headed "Duitsland": princes, the Emperor, ministers, troops, places), some
+  entries struck through and some added in another hand. Scans 8 and 9 look like the same opening photographed twice
+  (same layout and the same strikings). No page in 2-11 shows a table of single letters or syllables.
+- **Vision call 2** (Opus, own view): line crops of scan 3's right page, cut first with `tools/iiif_lines.py --image
+  images/fagel1233/NL-HaNA_1.10.29_1233_0003.jpg --region 640,0,760,1556 --prominence 4 --distance 22
+  --lines-per-crop 10` (44 lines, 5 crops `images/fagel1233_0003_L01..L05.jpg`, debug overlay
+  `fagel1233_0003_lines_debug.jpg`; a first cut at prominence 20 found only 8 lines in the faint ink and was discarded).
+  Crops L01-L03 stacked into one image were looked at. The heading reads **"Cyffer voor den Resident Mauricius"**.
+  Codes **1-67** (the range that holds letter 142's 1-77) belong to **Dutch words and phrases** in alphabetical order:
+  "Abt" 1, "aen" 2 and 3, "aen de" 4, "aen den" 5 ... "aen UE" 15 ... "aengaende" 21 ... "afgewend" 41, "agt" 42 ...
+  "al" 48 and 49, "alle" 50 and 51 ... "alleen" 67. Each code has a circumflex over it. Common words carry two codes
+  (aen, al, alle, aldaer, alhier), so the design gives homophones at word level, not letter level.
+- **Against the pre-registered criterion:** no single letters or syllables against numbers anywhere in scans 2-11,
+  and the 1-77 range is used for words. **NO, nomenclator-only** (scans 2-11; scans 13-24 not seen, apart from 12
+  from GAPS115). The 1743 book does not share letter 142's design (a French letter-level homophonic of about
+  64-77 signs, H1) on this evidence. That is a family-resemblance negative, not a test of any key against letter 142,
+  and it says nothing about the 1716 system, which is still unseen.
+- **Whose book.** The heading names the Resident Mauricius, while the NA unittitle (GAPS115) names Carel van Rumpf,
+  envoy to Sweden, 1743. The book reads as a code drawn up for a Resident Mauricius and filed, or reissued, with
+  Rumpf's 1743 papers. This is how it reads here, not an identification: which Mauricius it was and how the book came
+  to Rumpf is not checked.
+
+Requests: `service.archief.nl` 8 (IIIF image API). No other host. Vision calls 2 (own view, Opus, no subagents).
+Graded nothing; no token of letter 142 read.
+
+Next cheap step: none under this lead. The 1743 book is closed as a design source for letter 142. The route to a
+reading is unchanged: the NA originals of letters 309/446/455 (NA 3.01.19 inv. 2030/2044, not digitised, ASKS row 46 /
+`REQUEST.md`).
+
 ## While waiting
 
-- While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: look at scans 2-3 of NA 1.10.29 inv. 1233
-(on disk, `images/fagel1233/`) for a low-number letter/syllable table, one vision call; it depends on nobody.
+- While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: re-probe the two NA 3.01.19 item pages
+(`drupal-settings-json` availability, 2 requests) at the next pass in case they have been digitised; it depends on nobody.
+(The earlier while-waiting step, scans 2-3 of NA 1.10.29 inv. 1233, was run by GAPS120 on 3 Oct 2026: nomenclator-only.)
