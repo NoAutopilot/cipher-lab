@@ -1,0 +1,16 @@
+draw g 20 E 0 timedout False 4.6
+draw g 21 E 0 timedout False 32.9
+draw g 22 E 0 timedout False 18.2
+draw g 23 E 0 timedout False 22.9
+draw g 24 E 0 timedout False 31.6
+draw g 25 E 0 timedout False 115.5
+draw g 26 E 0 timedout False 19.0
+draw g 27 E 0 timedout False 27.4
+draw g 28 E 0 timedout False 3.4
+draw g 29 E 0 timedout False 29.3
+draw g 30 E 0 timedout False 24.5
+draw g 31 E 0 timedout False 86.1
+draw g 32 E 0 timedout False 3.4
+draw g 33 E 0 timedout False 114.5
+draw g 34 E 0 timedout False 28.9
+# draws 20-34 completed; the 590 s wrapper stopped the run during draws 35-39, which were re-run in ctrl_g_f213_dec_h2b.out
