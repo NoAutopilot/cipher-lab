@@ -129,7 +129,7 @@ canvas{display:block;max-width:none;height:auto}
 .fly{position:fixed;z-index:40;pointer-events:none;background:var(--tile);border-radius:4px;transition:transform .32s ease-in,opacity .32s ease-in;object-fit:contain}
 /* step 2 */
 #s2[hidden],#s1[hidden],#s2Empty[hidden],#s2Work[hidden]{display:none}
-.s2top{position:sticky;top:var(--barh,60px);z-index:4;background:var(--bg);display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.s2top{position:sticky;top:var(--bar0,60px);z-index:4;background:var(--bg);display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
 .bigt{width:104px;height:104px;flex:0 0 auto;background:var(--tile);border:2px solid var(--accent);border-radius:6px;display:grid;place-items:center;
   touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
 .bigt img{max-width:96px;max-height:96px;pointer-events:none;-webkit-user-drag:none}
@@ -349,7 +349,8 @@ function render(){
   $('prog').textContent = done + ' of ' + live.length + ' piles done';
   $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
   renderTray();
-  document.documentElement.style.setProperty('--barh', (document.querySelector('.bar').offsetHeight + 8) + 'px');
+  const bh = document.querySelector('.bar').offsetHeight;
+  document.documentElement.style.setProperty('--barh', (bh + 8) + 'px'); document.documentElement.style.setProperty('--bar0', bh + 'px');
   if (anchor){ const el = document.getElementById(anchor.id); if (el){ const dy = el.getBoundingClientRect().top - anchor.y; if (Math.abs(dy) > 1) window.scrollBy(0, dy); } }
   if (keep){ const el = document.getElementById(keep.id); if (el && el !== document.activeElement){ el.value = keep.v; el.focus({preventScroll: true});
     try { el.setSelectionRange(keep.a, keep.b); } catch(e){} } }

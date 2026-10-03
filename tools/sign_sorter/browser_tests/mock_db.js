@@ -86,7 +86,8 @@ async function hold(page, locator, ms = 650) {   // press and hold, then let go
   await touchOrMouse(page, 'down', x, y); await page.waitForTimeout(ms); await touchOrMouse(page, 'up', x, y); await page.waitForTimeout(150);
 }
 async function drag(page, from, to) {            // drag one element onto another, in small steps
-  await to.scrollIntoViewIfNeeded().catch(() => {}); const a = await from.boundingBox(), b = await to.boundingBox();
+  await to.evaluate(e => e.scrollIntoView({ block: 'center' })); await page.waitForTimeout(150);   // not under a sticky header
+  const a = await from.boundingBox(), b = await to.boundingBox();
   const x0 = a.x + a.width / 2, y0 = a.y + a.height / 2, x1 = b.x + b.width / 2, y1 = b.y + b.height / 2;
   await touchOrMouse(page, 'down', x0, y0);
   for (let i = 1; i <= 12; i++) { await touchOrMouse(page, 'move', x0 + (x1 - x0) * i / 12, y0 + (y1 - y0) * i / 12); await page.waitForTimeout(16); }

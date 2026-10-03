@@ -254,3 +254,21 @@ screen (no longer pinned on phones). Owner's request the same afternoon: nothing
 these: new sign" is one tap and the page names the pile (T51 -> T51-b, T51-c), offered first for the next tile.
 `run_all.sh` builds synthetic fixtures (`make_fixtures.py`) and runs every browser test; `test_qa.js` (80 checks) fails 30 on the old
 template and passes on the new one, and on the rebuilt Birago page.
+
+**3 Oct 2026 -- sign sorter: follow-up fixes and two-step flow** (worker for the parent, 17:03 UTC). Fixes found on the
+other real sorter pages: the template now starts with `<!doctype html>` (it ran in quirks mode, where id lookups ignore
+case, so Florence's piles "O" and "o" collided); pile element ids are case-safe (`domKey`; db document ids unchanged, so
+old saves still load); the cluster offer sits inside the open dialog instead of over its buttons (it hid Close on Din
+f.23r). Owner's request the same afternoon ("a single click takes them out ... a hold opens it ... then a section where
+I go through the letters with all the other piles"): the page is now two steps. Step 1, clean each pile: a tap takes a
+sign out into a "Taken out" tray at the bottom (tap it there to put it back), a press-and-hold (450 ms, touch or mouse,
+no browser menu, the lifted finger presses nothing in the dialog) opens the larger view, "View larger" on each pile does
+the same, "This pile is done" replaces "All one sign"; "Check these first" tiles are framed and their piles come first;
+the select mode and move bar are gone. Step 2, place them: one taken-out sign at a time, large, on its line, over a card
+per pile with sample tiles, sorted by likeness (a 16x16 ink vector per tile, computed in the browser) -- tap a card or
+drag the sign onto it (pointer events; the page scrolls near the edges), or "None of these: new sign" (auto-named),
+"Not a letter" (a NOT-LETTER pile marked not a letter), "Set aside", "Bad cut", "Put back". Saves go through the same
+moves collection (destination 'OUT' while waiting); `sign_sorter_apply.py` reports a sign taken out and never placed as
+`taken-out`, never silently kept. `test_qa.js` rewritten for the flow (tap, hold, tray, step-2 tap and drag on a phone
+via real touch events, undo in both steps, reload, races, refused saves); passes on the fixtures and on all six real
+pages (Birago 1572, Birago f.117, Birago confusion page, Florence c.127, Din f.23r, Debosnys).
