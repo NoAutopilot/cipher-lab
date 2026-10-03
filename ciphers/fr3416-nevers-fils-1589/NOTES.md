@@ -200,24 +200,6 @@ for this target (`ls specs | grep 3416` empty). AUDIT.md not edited (verifier FI
 changed, only the case (grade) of 9 L10 letters and the clear word before run 8 (Instruir, not Febvrier).
 Not found: nothing searched in print this job (transcription job only).
 
-## Remaining gaps
-Read so far: 71 of 102 figure tokens at H (70%); 31 M; clear text L01-L10 transcribed (1 H line, 6 mixed, 2 M)
-- L05 run (10 tokens M): looped 8 settled by the reconciler, but no second reader agrees - blocker: not-attempted; one more blind digit read of images/x2/f43x2_L05_p*.jpg told to treat "cl" as one glyph; next: one Opus vision call, ~$1.5
-- L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
-- Roman-numeral and overbar code words (ciiij) - blocker: not-attempted; not in this job's brief; next: transcribe the no.25 nomenclator from fr.3995 canvas f104, ~$2
-- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; not in this job's brief; next: transcribe f.38 figures + gloss from images/f46_* and align codes to gloss words, ~$3
-- upper letter above L01 and the line below L10 (clear text) - blocker: not-attempted; outside the crop region; next: iiif_lines.py on canvas 43 above y 3560 and below y 5360, two blind passes, ~$4
-
-## Escalation
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
-- [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter still to crop
-- [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
-- [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
-- [ ] key-rebuild: nomenclator part of no.25 still to transcribe (planned step above)
-- [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [ ] retry: one more blind read of L05 to clear rule 1 (planned step above)
-Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: L05 second blind digit read, ~$1.5
-
 ## FILS-NOMEN pre-registration (account 1, 3 Oct 2026, written 09:5x UTC before any read returned)
 
 Brief `.claude/briefs/runs/2026-10-03-acct1-fils-nomen.md`. Rules fixed before the reads:
@@ -231,3 +213,61 @@ Brief `.claude/briefs/runs/2026-10-03-acct1-fils-nomen.md`. Rules fixed before t
 3. f.35r code words: a code word in f35r is read through the nomenclator at H only if (a) its nomenclator entry is H and
    (b) the code is graded H on f.35r already (or read identically by both FILS-CLEAR clear passes); otherwise M. No
    meaning is chosen because it fits the sentence.
+
+## FILS-NOMEN results (account 1 for LANE-A1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-fils-nomen.md`. Intake gate re-run 09:44 UTC:
+`fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+Rules pre-registered above (commit c7f35c62) before any read returned.
+
+**(1) L05 second blind read.** One Opus read of `images/x2/f43x2_L05_p1-3.jpg` (crops only, told the looped "cl" is one
+glyph, no key, no committed digits): `43181987394579655416`, all 20 digits identical to the reconciled string. The reader
+gave an alternative at positions 4 (8 or 01), 5 (1 or a stroke of the 9), 7 (8 or 01/61), 13 (mark above the 7),
+15/20 (6 or 8), 16/17 (5 or 6). By rule 1 only pairs with no alternative move: **43, 39, 45 M -> H**; 18 19 87 79 65 54 16
+stay M (the 79 null vs 57 question is unchanged). Grades now (f35r_ciphertext.tsv): **H 74, M 28** of 102 (was 71/31).
+`decode_f35.py --check` exit 0. Statistics (seed 1, fr16): all tokens -1.150 rank 1/201 z 5.04 (unchanged); H tokens
+only 59 letters -1.020 rank 1/201 z 5.23 (shuffled max -1.544); positive control NV-03 f.38v -0.769 rank 1/201 z 5.66;
+shuffled-target control beats real 0/200; power at 0.239 error 11/20.
+
+**(2) no.25 nomenclator.** fr.3995 canvas f104 fetched once (region 930,800,3147,5357, native; table written sideways,
+rotated 90 deg clockwise locally), cut into 7 columns and then line bands. Commands (pasted):
+`curl .../iiif/ark:/12148/btv1b525085665/f104/930,800,3147,5357/full/0/native.jpg` (then PIL rotate -90, column crops
+x 180-750, 720-1460, 1420-2160, 2110-2870, 2830-3630, 3580-4400, 4350-5220), and per column
+`python3 tools/iiif_lines.py --image <col>.jpg --out ciphers/fr3416-nevers-fils-1589/images/no25 --prefix cN --lines-per-crop 9 --debug`
+-> 27 crops `images/no25/c1-c7_L*.jpg` (5.6 MB). Two blind Opus passes (A forward, B reverse order; crops only) ->
+`keys/no25_passes/passA.tsv`, `passB.tsv`; reconciliation `keys/build_no25_nomen.py` (+ `keys/no25_passes/settle.tsv`;
+`--check` exit 0) -> **`keys/key_no25_nomenclator.tsv`: 204 rows, 192 H (A=B), 12 M.** Layout: Noms gnaulx x-xliij
+(Duc ... Intelligence) and xliiij-lvij (Entreprise ... village); Villes lviij-lxxix (Paris ... Lion) and m[xx]-m[xx]ix
+(Dijon ... Laon); Prouinces as single letters a-z (Champaigne ... Angleterre); Noms Propres 1-51 with overbar (Duc de Parme
+... Mr la Guiche; 52-55 written with no name); Motz 56-99 with overbar (Ayme ... vous); Dames A, H, Q, R and three symbols.
+M rows: xvi Mons(r/e), xxviij (h)ommes darmes, xliij Inteligence, xlix tresue/trefue, lxix orleans and lxx Tours (both
+overwritten), 12 Royne de Na(uar)re, 31 Ml de Matignon, 34 Mr de Seure/Heure, 46 Mr le Conte de Granpre, 77 garnison/garrison,
+98 sus/suis. No third look was spent (the splits are spellings; none touches a code read on f.35r).
+
+**(3) Applied to f.35r** (`f35r_codewords.tsv`, written by the same script, rule 3):
+- L02 run 1 `ciiij`: the first glyph is the letter-hand x with a long lead-in tail (looked at on `images/f43_L02_s2.jpg`;
+  the table has no c-codes), so the code reads **xiiij = Seigneur** (nomenclator H) -> **grade M**, because the token is M
+  on f.35r and no second reader has given x. Run 1 then reads `.aisi.nlesauroit [Seigneur] .e`, M.
+- L10 tail `28` under an overbar: **28 = Ml de Biron** (nomenclator H) -> **grade M** (token M on f.35r; the 4 after it is
+  unexplained).
+No other overbar or Roman code word was found on the transcribed figure lines. The "97" over a group in the f.38 gloss
+(NV02-READ note) would read "recherche" (97, H) -- f.38 is not aligned; not used.
+Grades this job: H 74 / M 28 figure tokens; code words 0 H, 2 M. Not found in print: nothing searched (transcription job).
+
+## Remaining gaps
+Read so far: 74 of 102 figure tokens at H (73%); 28 M; nomenclator transcribed (204 rows, 192 H); 2 code words read at M
+- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; next: the glyph-atlas route (tools/glyph_atlas.py on this hand's 8/6/5 from the H runs) to settle them, ~$3
+- L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
+- code words ciiij (xiiij = Seigneur) and 28 (Ml de Biron) at M - blocker: not-attempted; one blind read of the L02 code word and the L10 overbar tail; next: one vision call on the two crops, ~$1.5
+- fr.3416 f.38 known-answer alignment of its word-level gloss - blocker: not-attempted; not in this job's brief; next: transcribe f.38 figures + gloss from images/f46_* and read its overbar codes through key_no25_nomenclator.tsv (the gloss "97" = recherche is a ready check), ~$3
+- upper letter above L01 and the line below L10 (clear text) - blocker: not-attempted; outside the crop region; next: iiif_lines.py on canvas 43 above y 3560 and below y 5360, two blind passes, ~$4
+
+## Escalation
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 crops cut, not yet aligned
+- [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter still to crop
+- [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
+- [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
+- [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
+- [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
+- [x] retry: second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split
+Verdict: keep going: 4 internal gaps (1 illegible); cheapest next: one blind read of the two code words, ~$1.5

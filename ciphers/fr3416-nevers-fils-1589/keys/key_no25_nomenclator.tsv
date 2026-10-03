@@ -1,0 +1,208 @@
+# key no.25 nomenclator, BnF fr.3995 canvas f104 (Gallica btv1b525085665, label 51r), table rotated 90 deg on the leaf.
+# Built by keys/build_no25_nomen.py (FILS-NOMEN, 3 Oct 2026) from two blind passes; grade H = A=B, M = split settled on the crop.
+# Arabic codes carry an overbar on the sheet (both passes); Roman, letter and symbol codes do not.
+code	meaning	grade	section	source	note
+x	Duc	H	Noms gnaulx	c1_L01 r1	
+xi	Marquis	H	Noms gnaulx	c1_L01 r2	
+xij	Conte	H	Noms gnaulx	c1_L01 r3	
+xiij	Baron	H	Noms gnaulx	c1_L01 r4	
+xiiij	Seigneur	H	Noms gnaulx	c1_L01 r5	
+xv	gentilhome	H	Noms gnaulx	c1_L01 r6	
+xvi	Mons^?	M	Noms gnaulx	c1_L01 r7	unsettled: A xvi=Mons^?, B xvi=Monsr
+xvij	Caral	H	Noms gnaulx	c1_L02 r1	
+xviij	Euesque	H	Noms gnaulx	c1_L02 r2	
+xix	Abbe	H	Noms gnaulx	c1_L02 r3	
+xx	Ambassadeur	H	Noms gnaulx	c1_L02 r4	
+xxi	Gouuerr	H	Noms gnaulx	c1_L02 r5	
+xxij	lieuten gnal	H	Noms gnaulx	c1_L02 r6	
+xxiij	Capne	H	Noms gnaulx	c1_L02 r7	
+xxiiij	lieuten	H	Noms gnaulx	c1_L02 r8	
+xxv	Enseigne	H	Noms gnaulx	c1_L02 r9	
+xxvi	soldatz	H	Noms gnaulx	c1_L03 r1	
+xxvij	gens de pied	H	Noms gnaulx	c1_L03 r2	
+xxviij	hommes darmes	M	Noms gnaulx	c1_L03 r3	unsettled: A xxviij=hommes darmes, B xxviij=homes darmes
+xxix	Cuirasses	H	Noms gnaulx	c1_L03 r4	
+xxx	cheuaux ligers	H	Noms gnaulx	c1_L03 r5	
+xxxi	Regiment	H	Noms gnaulx	c1_L03 r6	
+xxxij	Compagnee	H	Noms gnaulx	c1_L03 r7	
+xxxiij	francois	H	Noms gnaulx	c1_L03 r8	
+xxxiiij	Reistres	H	Noms gnaulx	c1_L03 r9	
+xxxv	Suisses	H	Noms gnaulx	c1_L04 r1	
+xxxvi	Allemans	H	Noms gnaulx	c1_L04 r2	
+xxxvij	Espagnolz	H	Noms gnaulx	c1_L04 r3	
+xxxviij	Anglois	H	Noms gnaulx	c1_L04 r4	
+xxxix	Italiens	H	Noms gnaulx	c1_L04 r5	
+xl	leuees	H	Noms gnaulx	c1_L04 r6	
+xli	artillerie	H	Noms gnaulx	c1_L04 r7	
+xlij	ligue	H	Noms gnaulx	c1_L04 r8	
+xliij	Inteligence	M	Noms gnaulx	c1_L04 r9	unsettled: A xliij=Inteligence, B xliij=Intelligence
+xliiij	Entreprise	H	Noms gnaulx / Villes	c2_L01 r1	
+xlv	Surprise	H	Noms gnaulx / Villes	c2_L01 r2	
+xlvi	mort	H	Noms gnaulx / Villes	c2_L01 r3	
+xlvij	deniers	H	Noms gnaulx / Villes	c2_L01 r4	
+xlviij	paix	H	Noms gnaulx / Villes	c2_L01 r5	
+xlix	tresue	M	Noms gnaulx / Villes	c2_L01 r6	unsettled: A xlix=tresue, B xlix=trefue
+l	guerre	H	Noms gnaulx / Villes	c2_L01 r7	
+li	catoliques	H	Noms gnaulx / Villes	c2_L01 r8	
+lij	Huguenotz	H	Noms gnaulx / Villes	c2_L02 r1	
+liij	Escheuins	H	Noms gnaulx / Villes	c2_L02 r2	
+liiij	habitans	H	Noms gnaulx / Villes	c2_L02 r3	
+lv	chau	H	Noms gnaulx / Villes	c2_L02 r4	
+lvi	ville	H	Noms gnaulx / Villes	c2_L02 r5	
+lvij	village	H	Noms gnaulx / Villes	c2_L02 r6	
+lviij	Paris	H	Noms gnaulx / Villes	c2_L02 r7	
+lix	Rouen	H	Noms gnaulx / Villes	c2_L03 r1	
+lx	Amiens	H	Noms gnaulx / Villes	c2_L03 r2	
+lxi	Abbeuille	H	Noms gnaulx / Villes	c2_L03 r3	
+lxij	Compiegne	H	Noms gnaulx / Villes	c2_L03 r4	
+lxiij	Sanlis	H	Noms gnaulx / Villes	c2_L03 r5	
+lxiiij	Pontoise	H	Noms gnaulx / Villes	c2_L03 r6	
+lxv	Corbeil	H	Noms gnaulx / Villes	c2_L03 r7	
+lxvi	Meleun	H	Noms gnaulx / Villes	c2_L03 r8	
+lxvij	Estampes	H	Noms gnaulx / Villes	c2_L03 r9	
+lxviij	Chartres	H	Noms gnaulx / Villes	c2_L04 r1	
+lxix	orleans	M	Noms gnaulx / Villes	c2_L04 r2	both passes note the "ix" overwritten in darker ink (a correction); what lies beneath unread
+lxx	Tours	M	Noms gnaulx / Villes	c2_L04 r3	both passes note a blot/overwrite in the middle (A lxx, alt lxix/lxiix; B lx?x, alt lxix/lxxx); lxx is the reconciler's reading, M
+lxxi	Amboise	H	Noms gnaulx / Villes	c2_L04 r4	
+lxxij	Blois	H	Noms gnaulx / Villes	c2_L04 r5	
+lxxiij	Gergeau	H	Noms gnaulx / Villes	c2_L04 r6	
+lxxiiij	Gien	H	Noms gnaulx / Villes	c2_L04 r7	
+lxxv	Bourges	H	Noms gnaulx / Villes	c2_L04 r8	
+lxxvi	La Charite	H	Villes / Prouinces	c3_L01 r1	
+lxxvij	Neuers	H	Villes / Prouinces	c3_L01 r2	
+lxxviij	Desize	H	Villes / Prouinces	c3_L01 r3	
+lxxix	Lion	H	Villes / Prouinces	c3_L01 r4	
+m[xx]	Dijon	H	Villes / Prouinces	c3_L01 r5	
+m[xx] i	Chaalons sur saune	H	Villes / Prouinces	c3_L01 r6	
+m[xx] ij	Langres	H	Villes / Prouinces	c3_L01 r7	
+m[xx] iij	Troies	H	Villes / Prouinces	c3_L01 r8	
+m[xx] iiij	Chaalons	H	Villes / Prouinces	c3_L01 r9	
+m[xx] v	Reimps	H	Villes / Prouinces	c3_L02 r1	
+m[xx] vj	Rethel	H	Villes / Prouinces	c3_L02 r2	
+m[xx] vij	Mesiere	H	Villes / Prouinces	c3_L02 r3	
+m[xx] viij	Sedam	H	Villes / Prouinces	c3_L02 r4	
+m[xx] ix	Laon	H	Villes / Prouinces	c3_L02 r5	
+a	Champaigne	H	Villes / Prouinces	c3_L02 r6	
+b	Normandie	H	Villes / Prouinces	c3_L02 r7	
+c	Picardie	H	Villes / Prouinces	c3_L02 r8	
+d	Bretaigne	H	Villes / Prouinces	c3_L03 r1	
+e	Poitou	H	Villes / Prouinces	c3_L03 r2	
+f	Guienne	H	Villes / Prouinces	c3_L03 r3	
+g	Languedoc	H	Villes / Prouinces	c3_L03 r4	
+h	Auuergne	H	Villes / Prouinces	c3_L03 r5	
+l	Prouance	H	Villes / Prouinces	c3_L03 r6	
+n	Daulphine	H	Villes / Prouinces	c3_L03 r7	
+p	Bourgongne	H	Villes / Prouinces	c3_L03 r8	
+q	Nyuernois	H	Villes / Prouinces	c3_L03 r9	
+r	Bourbonnois	H	Villes / Prouinces	c3_L04 r1	
+t	Berry	H	Villes / Prouinces	c3_L04 r2	
+u	Allemaigne	H	Villes / Prouinces	c3_L04 r3	
+x	Itallie	H	Villes / Prouinces	c3_L04 r4	
+y	flandres	H	Villes / Prouinces	c3_L04 r5	
+z	Angleterre	H	Villes / Prouinces	c3_L04 r6	
+1	Duc de Parme	H	Noms Propres	c4_L01 r1	
+2	D: de Lorrne	H	Noms Propres	c4_L01 r2	
+3	D: de Sauoye	H	Noms Propres	c4_L01 r3	
+4	Roy Despaigne	H	Noms Propres	c4_L01 r4	
+5	Empereur	H	Noms Propres	c4_L01 r5	
+6	Royne Dangleterre	H	Noms Propres	c4_L01 r6	
+7	Pape	H	Noms Propres	c4_L01 r7	
+8	Legat	H	Noms Propres	c4_L01 r8	
+9	Roy	H	Noms Propres	c4_L02 r1	
+10	Royne	H	Noms Propres	c4_L02 r2	
+11	Roy de nauarre	H	Noms Propres	c4_L02 r3	
+12	Royne de Na^re	M	Noms Propres	c4_L02 r4	unsettled: A 12=Royne de Na^re, B 12=Royne de nale
+13	C: de Bourbon	H	Noms Propres	c4_L02 r5	
+14	C: de Vendosme	H	Noms Propres	c4_L02 r6	
+15	C: de lenoncourt	H	Noms Propres	c4_L02 r7	
+16	Prince de Conty	H	Noms Propres	c4_L02 r8	
+17	Conte de soissons	H	Noms Propres	c4_L02 r9	
+18	Mr de Montper	H	Noms Propres	c4_L03 r1	
+19	Duc de neuers	H	Noms Propres	c4_L03 r2	
+20	D: de longlle	H	Noms Propres	c4_L03 r3	
+21	D: de Mercure	H	Noms Propres	c4_L03 r4	
+22	D: de Guise	H	Noms Propres	c4_L03 r5	
+23	D: de nemours	H	Noms Propres	c4_L03 r6	
+24	D: de Mayenne	H	Noms Propres	c4_L03 r7	
+25	D: Daumalle	H	Noms Propres	c4_L03 r8	
+26	D: Despernon	H	Noms Propres	c4_L03 r9	
+27	Marl de Montg	H	Noms Propres	c4_L04 r1	
+28	Ml de Biron	H	Noms Propres	c4_L04 r2	
+29	Ml de Retz	H	Noms Propres	c4_L04 r3	
+30	Ml Daumont	H	Noms Propres	c4_L04 r4	
+31	M^l de Matignon	M	Noms Propres	c4_L04 r5	unsettled: A 31=M^l de Matignon, B 31=Mal de Matignon
+32	Ml de Ioieuse	H	Noms Propres	c4_L04 r6	
+33	Chancellier	H	Noms Propres (cont.)	c5_L01 r1	
+34	Mr de Heure	M	Noms Propres (cont.)	c5_L01 r2	unsettled: A 34=Mr de Heure, B 34=Mr de Seure
+35	Mr de Beaulieu	H	Noms Propres (cont.)	c5_L01 r3	
+36	Mr de luxembourg	H	Noms Propres (cont.)	c5_L01 r4	
+37	Mr de Chastilon	H	Noms Propres (cont.)	c5_L01 r5	
+38	Mr de la Trimouille	H	Noms Propres (cont.)	c5_L01 r6	
+39	Mr de la noue	H	Noms Propres (cont.)	c5_L01 r7	
+40	Mr de Guitry	H	Noms Propres (cont.)	c5_L01 r8	
+41	Mr de Montigny	H	Noms Propres (cont.)	c5_L02 r1	
+42	Mr de Giury	H	Noms Propres (cont.)	c5_L02 r2	
+43	Mr Dentragues	H	Noms Propres (cont.)	c5_L02 r3	
+44	Mr de la Chastre	H	Noms Propres (cont.)	c5_L02 r4	
+45	Mr de Ballagny	H	Noms Propres (cont.)	c5_L02 r5	
+46	Mr le Conte de gran?re	M	Noms Propres (cont.)	c5_L02 r6	unsettled: A 46=Mr le Conte de gran?re, B 46=Mr le Conte de granpre
+47	Mr Dinteuille	H	Noms Propres (cont.)	c5_L02 r7	
+48	St Pol	H	Noms Propres (cont.)	c5_L02 r8	
+49	Godeffroy	H	Noms Propres (cont.)	c5_L02 r9	
+50	Mr Recol	H	Noms Propres (cont.)	c5_L03 r1	
+51	Mr la Guiche	H	Noms Propres (cont.)	c5_L03 r2	
+52		H	Noms Propres (cont.)	c5_L03 r3	
+53		H	Noms Propres (cont.)	c5_L03 r4	
+54		H	Noms Propres (cont.)	c5_L03 r5	
+55		H	Noms Propres (cont.)	c5_L03 r6	
+56	Ayme	H	Motz	c6_L01 r1	
+57	Amys	H	Motz	c6_L01 r2	
+58	auec	H	Motz	c6_L01 r3	
+59	auoir	H	Motz	c6_L01 r4	
+60	argent	H	Motz	c6_L01 r5	
+61	armee	H	Motz	c6_L01 r6	
+62	bone	H	Motz	c6_L01 r7	
+63	bien	H	Motz	c6_L01 r8	
+64	car	H	Motz	c6_L01 r9	
+65	come	H	Motz	c6_L02 r1	
+66	deffiance	H	Motz	c6_L02 r2	
+67	dissimule	H	Motz	c6_L02 r3	
+68	desespoir	H	Motz	c6_L02 r4	
+69	enuoye	H	Motz	c6_L02 r5	
+70	ennemis	H	Motz	c6_L02 r6	
+71	escrit	H	Motz	c6_L02 r7	
+72	en	H	Motz	c6_L02 r8	
+73	fait	H	Motz	c6_L02 r9	
+74	faire	H	Motz	c6_L03 r1	
+75	fault	H	Motz	c6_L03 r2	
+76	frere	H	Motz	c6_L03 r3	
+77	garnison	M	Motz	c6_L03 r4	unsettled: A 77=garnison, B 77=garrison
+78	Jour	H	Motz	c6_L03 r5	
+79	Je	H	Motz	c6_L03 r6	
+80	lre	H	Motz	c6_L03 r7	
+81	lon	H	Motz	c6_L03 r8	
+82	mon	H	Motz	c6_L03 r9	
+83	me	H	Motz	c6_L04 r1	
+84	ma	H	Motz	c6_L04 r2	
+85	ministre	H	Motz	c6_L04 r3	
+86	nouuelles	H	Motz	c6_L04 r4	
+87	ne	H	Motz	c6_L04 r5	
+88	nous	H	Motz	c6_L04 r6	
+89	non	H	Motz (cont.) / Dames	c7_L01 r1	
+90	pour	H	Motz (cont.) / Dames	c7_L01 r2	
+91	par	H	Motz (cont.) / Dames	c7_L01 r3	
+92	plus	H	Motz (cont.) / Dames	c7_L01 r4	
+93	que	H	Motz (cont.) / Dames	c7_L01 r5	
+94	qui	H	Motz (cont.) / Dames	c7_L01 r6	
+95	quant	H	Motz (cont.) / Dames	c7_L01 r7	
+96	ruyne	H	Motz (cont.) / Dames	c7_L01 r8	
+97	recherche	H	Motz (cont.) / Dames	c7_L02 r1	
+98	sus	M	Motz (cont.) / Dames	c7_L02 r2	unsettled: A 98=sus, B 98=suis
+99	vous	H	Motz (cont.) / Dames	c7_L02 r3	
+A	Madame de neuers	H	Motz (cont.) / Dames	c7_L02 r4	
+symbol ƆC (reversed C joined to C)	Me de Guise	H	Motz (cont.) / Dames	c7_L02 r5	both passes describe the same sign (A "two C back to back", B "reversed-C+C"); label normalised by the reconciler
+H	Me de nemours	H	Motz (cont.) / Dames	c7_L02 r6	
+Q	Me de Montper	H	Motz (cont.) / Dames	c7_L02 r7	
+R	Me Dumaine	H	Motz (cont.) / Dames	c7_L03 r1	
+symbol crossed x (x with a horizontal bar)	Me de Longueville douairiere	H	Motz (cont.) / Dames	c7_L03 r2	both passes describe the same sign; meaning A "Me de Long^lle Douairiere" = B "Me de longlle douairiere"
+symbol interlaced XX (W-like)	Me la Duchesse de Longueville	H	Motz (cont.) / Dames	c7_L03 r3	both passes describe the same sign; meaning A "Me la Duch^se de Long^lle" = B "Me la Ducsse de longlle"

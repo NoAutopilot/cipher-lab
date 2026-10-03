@@ -236,3 +236,5 @@ the result new, unread or first.
 the Boltanski step a job for the owner's desk or a library copy; it needed only the Books API with quoted phrases,
 because unquoted single words silently return 0. I recorded that behaviour above for the next verifier. The
 SECOND-OPINIONS-QUEUE row SO-NV02-F35 already exists, and the class did not change, so no new row was added.
+
+Propagation (FILS-NOMEN, 3 Oct 2026, rule 10): token grades on f.35r are now H 74 / M 28 of 102 (the safe sentence above says 62 H; FILS-CLEAR moved 9, FILS-NOMEN 3; no decoded letter changed); code words xiiij = Seigneur and 28 = Ml de Biron added at M via keys/key_no25_nomenclator.tsv.

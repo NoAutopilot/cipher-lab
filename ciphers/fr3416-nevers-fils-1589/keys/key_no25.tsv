@@ -1,6 +1,6 @@
 # key no.25, BnF fr.3995, Gallica btv1b525085665 canvas f104 (manifest label 51r; Tomokiyo's "no.25 (fol.50)", endorsement "Neuers 1589 ... chiffre" on f.50v and "Octobre 1589" on f.50r)
 # substitution alphabet and nulls only, read by NV02-READ 3 Oct 2026 from a native crop (region 300,0,1050,6157, rotated); grade H
-# nomenclator (Roman numerals = words/towns, letters = provinces, overbar figures = names/words, Dames symbols) not transcribed
+# nomenclator (Roman numerals = words/towns, letters = provinces, overbar figures = names/words, Dames symbols): keys/key_no25_nomenclator.tsv (FILS-NOMEN, 3 Oct 2026)
 code	value
 32	a
 34	a

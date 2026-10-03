@@ -1,0 +1,6 @@
+file	row	meaning	code	grade	note
+c7_L02	5	Me de Guise	symbol ƆC (reversed C joined to C)	H	both passes describe the same sign (A "two C back to back", B "reversed-C+C"); label normalised by the reconciler
+c7_L03	2	Me de Longueville douairiere	symbol crossed x (x with a horizontal bar)	H	both passes describe the same sign; meaning A "Me de Long^lle Douairiere" = B "Me de longlle douairiere"
+c7_L03	3	Me la Duchesse de Longueville	symbol interlaced XX (W-like)	H	both passes describe the same sign; meaning A "Me la Duch^se de Long^lle" = B "Me la Ducsse de longlle"
+c2_L04	2	orleans	lxix	M	both passes note the "ix" overwritten in darker ink (a correction); what lies beneath unread
+c2_L04	3	Tours	lxx	M	both passes note a blot/overwrite in the middle (A lxx, alt lxix/lxiix; B lx?x, alt lxix/lxxx); lxx is the reconciler's reading, M

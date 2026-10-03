@@ -1,0 +1,211 @@
+file	row_in_file	meaning	code	overbar	doubt
+c1_L01	header	Noms gnaulx			
+c1_L01	1	Duc	x	n	
+c1_L01	2	Marquis	xi	n	meaning: written "Marq̃uis"-like abbreviation, letters after Marq uncertain; code final stroke short i not j
+c1_L01	3	Conte	xij	n	
+c1_L01	4	Baron	xiij	n	
+c1_L01	5	Seigneur	xiiij	n	
+c1_L01	6	gentilhome	xv	n	meaning: h written S-shaped; m has abbreviation mark (gentilhomme); code v written in 8/б-like form
+c1_L01	7	Mons^?	xvi	n	meaning: superscript mark above/after Mons unclear (e or r; Monsr/Monseigneur abbreviation?)
+c1_L02	1	Car^al	xvij	n	
+c1_L02	2	Euesque	xviij	n	
+c1_L02	3	Abbe	xix	n	
+c1_L02	4	Ambassadeur	xx	n	
+c1_L02	5	Gouuer^r	xxi	n	
+c1_L02	6	Lieuten gnal	xxij	n	meaning: abbreviation marks over Lieuten and gnal (Lieutenant general)
+c1_L02	7	Cap^ne	xxiij	n	
+c1_L02	8	lieuten	xxiiij	n	meaning: abbreviation mark over final n
+c1_L02	9	Enseigne	xxv	n	
+c1_L03	1	soldatz	xxvi	n	
+c1_L03	2	gens de pied	xxvij	n	
+c1_L03	3	hommes darmes	xxviij	n	meaning: written "Somes" with S-shaped h, possibly "homes"
+c1_L03	4	Cuirasses	xxix	n	
+c1_L03	5	cheuaux ligers	xxx	n	
+c1_L03	6	Regiment	xxxi	n	
+c1_L03	7	Compagnee	xxxij	n	
+c1_L03	8	francois	xxxiij	n	
+c1_L03	9	Reistres	xxxiiij	n	
+c1_L04	1	Suisses	xxxv	n	
+c1_L04	2	Allemans	xxxvi	n	
+c1_L04	3	Espagnolz	xxxvij	n	
+c1_L04	4	Anglois	xxxviij	n	
+c1_L04	5	Italiens	xxxix	n	
+c1_L04	6	Leuee^s	xl	n	meaning: superscript after Leuee (s?)
+c1_L04	7	artillerie	xli	n	
+c1_L04	8	ligue	xlij	n	code: final ij joined, looks like "xln"; alt xln/xlii
+c1_L04	9	Inteligence	xliij	n	
+c2_L01	1	Entreprise	xliiij	n	
+c2_L01	2	Surprise	xlv	n	
+c2_L01	3	mort	xlvi	n	
+c2_L01	4	deniers	xlvij	n	
+c2_L01	5	paix	xlviij	n	
+c2_L01	6	tresue	xlix	n	meaning: tresue (= tresve), long s
+c2_L01	7	guerre	l	n	
+c2_L01	8	catoliques	li	n	
+c2_L02	1	Huguenotz	lij	n	meaning: H written S-shaped
+c2_L02	2	Escheuins	liij	n	
+c2_L02	3	Habitans	liiij	n	
+c2_L02	4	chau	lv	n	meaning: written "cSau", possibly abbreviated (chasteau?); letters uncertain
+c2_L02	5	ville	lvi	n	
+c2_L02	6	village	lvij	n	
+c2_L02	header	Villes			
+c2_L02	7	Paris	lviij	n	
+c2_L03	1	Rouen	lix	n	
+c2_L03	2	Amiens	lx	n	
+c2_L03	3	Abbeuille	lxi	n	
+c2_L03	4	Compiegne	lxij	n	
+c2_L03	5	Sanlis	lxiij	n	
+c2_L03	6	Pontoise	lxiiij	n	
+c2_L03	7	Corbeil	lxv	n	
+c2_L03	8	Meleun	lxvi	n	
+c2_L03	9	Estampes	lxvij	n	
+c2_L04	1	Chartres	lxviij	n	
+c2_L04	2	orleans	lxix	n	code: "ix" overwritten in darker ink (correction); underlying reading unknown
+c2_L04	3	Tours	lxx	n	code: middle written over/corrected, dot and stroke between the two x; alt lxix / lxiix
+c2_L04	4	Amboise	lxxi	n	
+c2_L04	5	Blois	lxxij	n	
+c2_L04	6	Gergeau	lxxiij	n	
+c2_L04	7	Gien	lxxiiij	n	
+c2_L04	8	Bourges	lxxv	n	
+c3_L01	1	La Charite	lxxvi	n	
+c3_L01	2	Neuers	lxxvij	n	
+c3_L01	3	Desize	lxxviij	n	
+c3_L01	4	Lion	lxxix	n	
+c3_L01	5	Dijon	m[xx]	n	m written with tail (ɱ-like)
+c3_L01	6	Chaalons sur saune	m[xx]i	n	
+c3_L01	7	Langres	m[xx]ij	n	
+c3_L01	8	Troies	m[xx]iij	n	meaning: o may be d ("Trdies")
+c3_L01	9	Chaalons	m[xx]iiij	n	
+c3_L02	1	Reimps	m[xx]v	n	superscript xx partly in previous slice (cut)
+c3_L02	2	Rethel	m[xx]vi	n	
+c3_L02	3	Mesiere	m[xx]vij	n	
+c3_L02	4	Sedam	m[xx]viij	n	
+c3_L02	5	Laon	m[xx]ix	n	
+c3_L02	header	Prouinces			
+c3_L02	6	Champaigne	a	n	
+c3_L02	7	Normandie	b	n	
+c3_L02	8	Picardie	c	n	
+c3_L03	1	Bretaigne	d	n	
+c3_L03	2	Poitou	e	n	
+c3_L03	3	Guienne	f	n	code: f or long s
+c3_L03	4	Languedoc	g	n	
+c3_L03	5	Auuergne	h	n	code: h in S-shaped form
+c3_L03	6	Prouance	l	n	code: l with foot; alt i/l (looks like the l of the numerals)
+c3_L03	7	Daulphine	n	n	
+c3_L03	8	Bourgongne	p	n	
+c3_L03	9	Nyuernois	q	n	
+c3_L04	1	Bourbonnois	r	n	
+c3_L04	2	Berry	t	n	
+c3_L04	3	Allemaigne	u	n	
+c3_L04	4	Itallie	x	n	
+c3_L04	5	Flandres	y	n	
+c3_L04	6	Angleterre	z	n	
+c4_L01	header	Noms Propres			
+c4_L01	1	Duc de Parme	1	y	
+c4_L01	2	D: de Lorr^ne	2	y	
+c4_L01	3	D: de Sauoye	3	y	
+c4_L01	4	Roy Despaigne	4	y	
+c4_L01	5	Empereur	5	y	
+c4_L01	6	Royne Dangleterre	6	y	
+c4_L01	7	Pape	7	y	
+c4_L01	8	Legat	8	y	cut at bottom of slice
+c4_L02	1	Roy	9	?	overbar not visible (slice top)
+c4_L02	2	Royne	10	y	
+c4_L02	3	Roy de Nauarre	11	y	
+c4_L02	4	Royne de Na^re	12	y	
+c4_L02	5	C: de Bourbon	13	y	
+c4_L02	6	C: de Vendosme	14	y	
+c4_L02	7	C: de Lenoncourt	15	y	
+c4_L02	8	Prince de Conty	16	y	
+c4_L02	9	Conte de Soissons	17	y	
+c4_L03	1	Mr de Montp^er	18	y	
+c4_L03	2	Duc de Neuers	19	y	
+c4_L03	3	D: de Long^lle	20	y	
+c4_L03	4	D: de Mercure	21	y	
+c4_L03	5	D: de Guise	22	y	meaning: ui written like "m"
+c4_L03	6	D: de Nemours	23	y	
+c4_L03	7	D: de Mayenne	24	y	
+c4_L03	8	D: Daumalle	25	y	
+c4_L03	9	D: Despernon	26	y	
+c4_L04	1	Mar^l de Mont^g	27	y	meaning: superscript l above Mar partly cut by slice top; superscript after Mont looks like g/9 (cut), alt reading unclear
+c4_L04	2	M^l de Biron	28	y	
+c4_L04	3	M^l de Retz	29	y	
+c4_L04	4	M^l Daumont	30	y	
+c4_L04	5	M^l de Matignon	31	y	
+c4_L04	6	M^l de Ioieuse	32	y	
+c5_L01	1	Chancellier	33	y	
+c5_L01	2	Mr de Heure	34	y	meaning: initial S-shaped letter = h-form or S (Seure/Heure)
+c5_L01	3	Mr de Beaulieu	35	y	
+c5_L01	4	Mr de luxembourg	36	y	
+c5_L01	5	Mr de Chastilon	37	y	
+c5_L01	6	Mr de la Trimouille	38	y	
+c5_L01	7	Mr de la noue	39	y	
+c5_L01	8	Mr de Guitry	40	y	
+c5_L02	1	Mr de Montigny	41	y	
+c5_L02	2	Mr de Giury	42	y	
+c5_L02	3	Mr Dentragues	43	y	
+c5_L02	4	Mr de la Chastre	44	y	
+c5_L02	5	Mr de Ballagny	45	y	
+c5_L02	6	Mr le Conte de gran?re	46	y	meaning: letters after "gran" obscured by paper fold (grandpre?)
+c5_L02	7	Mr Dinteuille	47	y	
+c5_L02	8	St Pol	48	y	
+c5_L02	9	Godeffroy	49	y	
+c5_L03	1	Mr Recol	50	y	meaning: c may be i (Reiol)
+c5_L03	2	Mr la Guiche	51	y	
+c5_L03	3		52	y	no meaning written
+c5_L03	4		53	y	no meaning written
+c5_L03	5		54	y	no meaning written
+c5_L03	6		55	y	no meaning written
+c6_L01	header	Motz			
+c6_L01	1	Ayme	56	y	
+c6_L01	2	Amys	57	y	
+c6_L01	3	auec	58	y	
+c6_L01	4	auoir	59	y	
+c6_L01	5	argent	60	y	
+c6_L01	6	armee	61	y	
+c6_L01	7	bone	62	y	
+c6_L01	8	bien	63	y	
+c6_L01	9	car	64	y	
+c6_L02	1	come	65	y	overbar at bottom of previous slice (cut)
+c6_L02	2	deffiance	66	y	
+c6_L02	3	dissimule	67	y	
+c6_L02	4	desespoir	68	y	
+c6_L02	5	enuoye	69	y	
+c6_L02	6	ennemis	70	y	
+c6_L02	7	escrit	71	y	
+c6_L02	8	en	72	y	
+c6_L02	9	fait	73	y	
+c6_L03	1	faire	74	y	
+c6_L03	2	fault	75	y	
+c6_L03	3	frere	76	y	
+c6_L03	4	garnison	77	y	
+c6_L03	5	Iour	78	y	
+c6_L03	6	Ie	79	y	
+c6_L03	7	lre	80	y	meaning: abbreviation mark over r (lettre)
+c6_L03	8	Lon	81	y	
+c6_L03	9	mon	82	y	
+c6_L04	1	me	83	y	
+c6_L04	2	ma	84	y	
+c6_L04	3	ministre	85	y	
+c6_L04	4	nouuelles	86	y	
+c6_L04	5	ne	87	y	
+c6_L04	6	nous	88	y	
+c7_L01	1	non	89	y	
+c7_L01	2	pour	90	y	
+c7_L01	3	par	91	y	
+c7_L01	4	plus	92	y	
+c7_L01	5	que	93	y	
+c7_L01	6	qui	94	y	
+c7_L01	7	quant	95	y	
+c7_L01	8	ruyne	96	y	
+c7_L02	1	recherche	97	y	meaning: h written S-shaped
+c7_L02	2	sus	98	y	
+c7_L02	3	vous	99	y	
+c7_L02	header	Dames			
+c7_L02	4	Madame de Neuers	A	n	
+c7_L02	5	Me de Guise	symbol: two C back to back (ↃC, like a crossed X)	n	symbol description
+c7_L02	6	Me de Nemours	H	n	
+c7_L02	7	Me de Montp^er	Q	n	
+c7_L03	1	Me Dumaine	R	n	
+c7_L03	2	Me de Long^lle Douairiere	symbol: x with horizontal stroke through (crossed x)	n	symbol description
+c7_L03	3	Me la Duch^se de Long^lle	symbol: W-like, two interlaced V (looks like XX/VV)	n	symbol description
