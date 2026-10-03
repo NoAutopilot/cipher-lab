@@ -1,0 +1,13 @@
+{
+ "source": "Nationaal Archief 2.01.08 inv. 189, service.archief.nl IIIF, fetched 3 Oct 2026 (GAPS81); header strips and 450-px views of other scans in scratch, not committed",
+ "files": [
+  {
+   "file": "inv189_s069_right_1500.jpg",
+   "scan": 69,
+   "region": "pct:50,0,50,100",
+   "width": 1500,
+   "bytes": 219527,
+   "sha256": "da0be576fe859c22bf57e76c47c1f5a60eff7528c11921fbd8a28e8606071b69"
+  }
+ ]
+}
