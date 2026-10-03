@@ -1,0 +1,34 @@
+line	pos	sign	conf	alt	note
+L01	1	S1	H		dot/dash at left then integral-shaped curl
+L01	2	MLH	H		
+L01	3	⇒	M	S14	drawn like '=>' two strokes plus head
+L01	4	S2	H		macron, stem, filled teardrop
+L01	5	S3	H	S18	open P; filled dot follows outside the bowl
+L01	6	S4	M	S18	filled dot sitting between P and triangle, could belong to P
+L01	7	S5	H		
+L01	8	D	H		
+L01	9	O	H		
+L01	10	S5	H		
+L01	11	S8	H		
+L02	1	S9	H		
+L02	2	S10	H		
+L02	3	S2	M	S4	stem with filled teardrop top but NO macron
+L02	4	S11	H		
+L02	5	S12	H		
+L02	6	S13	H		
+L02	7	MLH	H		
+L02	8	/	H		
+L02	9	e	H		
+L02	10	S14	H		
+L02	11	S15	H		
+L02	12	S16	H		
+L02	13	S17	H		
+L02	14	S16	H		
+L02	15	S3	H	S18	open P, no inner dot seen
+L02	16	S15	M	O	small circle with faint central dot
+L02	17	O	H		
+L03	1	S19	H		
+L03	2	O	H		
+L03	3	S20	H		
+L03	4	.	H		
+L03	5	|	H		

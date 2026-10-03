@@ -44,6 +44,14 @@
    "method": "ciphers/mlh-1976/charset_xref.py: 20 non-literal signs of the NOTES.md sign table, each with a candidate-glyph list from its shape description, matched against ASCII-1967 (94), EBCDIC S/360 (88), APL\\360 IBM 2741 typeball (106), ALGOL 68 Revised Report (98); control = 2000 random catalogues, each sign's candidate list replaced by a same-length random sample from a 1764-glyph Unicode pool, seed 1976",
    "result": "target vs control mean/p95: ASCII 13 vs 3.64/7; EBCDIC 11 vs 3.43/6; APL 18 vs 4.06/7; ALGOL68 13 vs 3.76/7; programming-specific (APL or ALGOL, not ASCII/EBCDIC) 5 vs 1.65/4, p=0.02 (S5, S11, S10, S14, S15). General-set excesses reflect generic shapes against a lenient, writer-biased null; programming-specific excess is weak. No letter-to-symbol mapping emerges, so test 3 has no input. Conditional on the single-pass transcription (rule 2).",
    "next": "second blind transcription pass + reconciliation, ~$4"
+  },
+  {
+   "test": "1b",
+   "date": "3 Oct 2026",
+   "worker": "GAPS135-mlh-1976 (account-4)",
+   "method": "second blind Opus pass over tools/iiif_lines.py line crops (images/tx2) against the S1-S20 catalogue only; tools/reconcile_passes.py vs pass A; reconciler settled splits by 2-of-3",
+   "result": "err_2reader 0.091 (30/33 agree); splits L02.3 S4/S2 (unsettled, focus.tsv), L02.15 S18->S3, L02.16 O->S15; reconciled symbol-only N=26 K=19 IC 0.0246; no reading",
+   "files": "ciphers/mlh-1976/tx2/"
   }
  ],
  "judge": {

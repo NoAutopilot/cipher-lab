@@ -1,0 +1,34 @@
+line	pos	sign	conf	alt	why
+L01	1	S1	H		A=B agree
+L01	2	MLH	H		A=B agree
+L01	3	⇒	H		A=B agree
+L01	4	S2	H		A=B agree
+L01	5	S3	H		A=B agree
+L01	6	S4	H		A=B agree
+L01	7	S5	H		A=B agree
+L01	8	D	H		A=B agree
+L01	9	O	H		A=B agree
+L01	10	S5	H		A=B agree
+L01	11	S8	H		A=B agree
+L02	1	S9	H		A=B agree
+L02	2	S10	H		A=B agree
+L02	3	S2	M	S4	unsettled: A S4, B S2(alt S4); recon sees stem + filled dot, NO macron -- fits neither label exactly; focus.tsv
+L02	4	S11	H		A=B agree
+L02	5	S12	H		A=B agree
+L02	6	S13	H		A=B agree
+L02	7	MLH	H		A=B agree
+L02	8	/	H		A=B agree
+L02	9	e	H		A=B agree
+L02	10	S14	H		A=B agree
+L02	11	S15	H		A=B agree
+L02	12	S16	H		A=B agree
+L02	13	S17	H		A=B agree
+L02	14	S16	H		A=B agree
+L02	15	S3	H	S18	2-of-3: B + reconciler, bowl open, no inner dot
+L02	16	S15	H	O	2-of-3: B + reconciler, centre dot visible in the bowl
+L02	17	O	H		A=B agree
+L03	1	S19	H		A=B agree
+L03	2	O	H		A=B agree
+L03	3	S20	H		A=B agree
+L03	4	.	H		A=B agree
+L03	5	|	H		A=B agree

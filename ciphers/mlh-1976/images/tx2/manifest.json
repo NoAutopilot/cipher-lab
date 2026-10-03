@@ -1,0 +1,67 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "mlh_L01.jpg",
+   "source_url": "",
+   "source_file": "MLH-Cryptogram.jpg",
+   "box": [
+    0,
+    3,
+    1000,
+    106
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 88,
+    "distance": 61,
+    "prominence": 15.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "mlh_L02.jpg",
+   "source_url": "",
+   "source_file": "MLH-Cryptogram.jpg",
+   "box": [
+    0,
+    106,
+    1000,
+    208
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 88,
+    "distance": 61,
+    "prominence": 15.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "mlh_L03.jpg",
+   "source_url": "",
+   "source_file": "MLH-Cryptogram.jpg",
+   "box": [
+    0,
+    208,
+    1000,
+    295
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 88,
+    "distance": 61,
+    "prominence": 15.0
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}

@@ -177,18 +177,55 @@ What this does and does not show:
   signs (D, O, P-variants, F, e) match every set equally. Cheap test 3 (judge decodes against English) therefore
   has no input and stays not runnable. No reading is claimed (rule 4: none).
 
-## Remaining gaps (GAPS131, 3 Oct 2026)
-Read so far: 0 of 33 tokens read (no reading; cheap tests 1-2 are catalogue and character-set tests, no mapping)
-- whole note (33 tokens) - blocker: not-attempted; sign table is a single blind pass (S2/S3/S18 may be one sign), see "Cheap test 1" above; next: second blind transcription pass of the existing crops + reconciliation, ~$4
-- letter-to-symbol mapping for cheap test 3 - blocker: too-short; 26 symbol tokens / 20 distinct, IC below both controls, and test 2 (GAPS131 above) yields no letter values
+## GAPS135-mlh-1976: second blind transcription pass + reconciliation (3 Oct 2026, account-4)
+
+Crops: `python3 tools/iiif_lines.py --image ciphers/mlh-1976/images/MLH-Cryptogram.jpg --out ciphers/mlh-1976/images/tx2 --prefix mlh --debug`
+-> "region 1000x295, 3 lines, 3 bands x 1 segments; pitch 88 distance 61 prominence 15.0; centres (region y): 54 159 258;
+wrote 3 crops" (debug overlay checked: one band per line, no line cut). The older crops in images/crops/ are named by
+pass A's own labels, so pass B was not shown them.
+
+Pass B: one blind Opus subagent call over images/tx2/mlh_L01-L03.jpg against the sign catalogue only (S1-S20 shape
+descriptions in label order, counts withheld, no prior transcription): `tx2/passB.tsv`. Pass A = `ciphertext.txt`
+(bMLH, 25 Sept) as `tx2/passA.tsv`. `tools/reconcile_passes.py tx2/passA.tsv tx2/passB.tsv --keep-dots --keep-plain`:
+**33/33 signs each, agree 30/33, err_2reader = 0.091** (L01 11/11, L02 14/17, L03 5/5). err_true not measurable: no
+benchmark item of this hand. All three splits are on named look-alike pairs, settled by the reconciler from an
+upscaled crop of line 2 under the look-alike 2-of-3 rule (a third reading matching A or B settles; otherwise unsettled):
+
+| tile | A | B | reconciler | result |
+|---|---|---|---|---|
+| L02.3 | S4 (dot) | S2 (alt S4) | stem with filled dot on top, no macron: fits neither exactly | UNSETTLED, kept S2 (M), focus.tsv |
+| L02.15 | S18 (P, dot in bowl) | S3 (open P) | bowl open, no inner dot | S3, 2-of-3 |
+| L02.16 | O | S15 (circle, centre dot) | centre dot visible | S15, 2-of-3 |
+
+Residual (2-of-3, agreement not accuracy) 1/33. `tools/lookalike_pass.py` was not run: its `confusion`/`packet` steps
+read per-tile agreement rows and a candidate sheet from a family atlas (Birago harvest format); `reconcile_passes.py`'s
+agreement.tsv here is a per-line summary (confusion read 0 pairs) and this item has no atlas, so the rule was applied
+by hand to the 3 tiles. What still splits goes to the owner's sorter: `tx2/focus.tsv` (3 questions: L02.3; an
+untranscribed small dot below-right of S10's foot, seen by pass B and the reconciler, read by neither pass as a sign;
+the dot after the L01 P, S3+S4 vs a loose S18).
+
+Reconciled stream (`tx2/ciphertext_reconciled.tsv`; ciphertext.txt left as transcribed by pass A, rule 1 of layout):
+- L01: S1 MLH ⇒ S2 S3 S4 S5 D O S5 S8
+- L02: S9 S10 S2 S11 S12 S13 MLH / e S14 S15 S16 S17 S16 S3 S15 O
+- L03: S19 O S20 . |
+
+Changes from pass A: S18 has no remaining occurrence (its one token is an open P, S3); one O is S15; the L02.3 dot is a
+dotted stem like S2 (no bar). Symbol-only stream N=26, K=19, IC=0.0246 (was K=20, 0.0277); full N=33, K=25, IC=0.0170.
+Still mostly hapax; the S2/S3/S18 collapse bMLH anticipated happened only for S18. No reading (rule 4: none).
+Cost: 1 vision subagent call (pass B) + 1 reconciliation by this worker = 2 priced units; 1 subagent.
+
+## Remaining gaps (GAPS135, 3 Oct 2026)
+Read so far: 0 of 33 tokens read (no reading; tests 1-2 and the second pass are transcription and character-set tests, no mapping)
+- three tiles the two passes and the reconciler leave open (L02.3, the dot under S10, the dot after the L01 P) - blocker: not-attempted; questions written to tx2/focus.tsv, no sorter page built or ASKS row filed yet; next: build a sign_sorter.py page from images/tx2 crops with --focus tx2/focus.tsv and file the never-blocking ASKS row, ~$1
+- letter-to-symbol mapping for cheap test 3 - blocker: too-short; 26 symbol tokens / 19 distinct after reconciliation, IC below both controls, and test 2 (GAPS131) yields no letter values
 - the ACA's printed context (The Cryptogram Jan-Feb 1976 and the 1978 issue Schrodel cites) - blocker: needs-physical-access; ACA members' back-issue archive, not online (Premise check (d) above)
 
-## Escalation (GAPS131, 3 Oct 2026)
+## Escalation (GAPS135, 3 Oct 2026)
 - [n/a] siblings: no other note from this sender is known
 - [n/a] clear-pages: the strip carries only MLH, e and slash in clear
 - [x] known-keys: test 2 (GAPS131) checked ASCII/EBCDIC/APL/ALGOL 68 glyph sets; weak programming-specific excess, no key
 - [ ] print: ACA Cryptogram back issues not opened; planned only if a member copy becomes reachable
 - [n/a] key-rebuild: no key material exists to rebuild from
-- [ ] image-check: second blind transcription pass on images/crops + reconciliation
+- [x] image-check: second blind pass + reconciliation (GAPS135), err_2reader 0.091, 3 tiles to the sorter
 - [n/a] retry: no earlier decode attempt exists to retry
-Verdict: keep going: 1 internal gaps; cheapest next: second blind transcription pass + reconciliation, ~$4
+Verdict: keep going: 1 internal gap; cheapest next: sorter page for the 3 focus tiles + ASKS row, ~$1
