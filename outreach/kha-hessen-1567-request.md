@@ -1,16 +1,30 @@
-status: needs-draft (3 Oct 2026, GAPS86): a public route now exists -- see ciphers/willem-van-hessen-1567/REQUEST.md "Update, 3 Oct 2026"; the 26 Sept "no address" finding below covered koninklijkhuis.nl only
-to: info@koninklijkeverzamelingen.nl (the submissionEmail of the Koninklijke Verzamelingen "Aanvraag inzage archieven" form, https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen/toestemmingsformulier/, read 3 Oct 2026)
-subject: (not drafted; no address to send to)
-target: ciphers/willem-van-hessen-1567 (ASKS 31: A 11/XIV B/15-43)
+status: drafted (3 Oct 2026 11:10 UTC, OUT-KHA, account-4). Needs the gate-7 OUT-CHECK pass before any send or SEND-QUEUE row. Was: needs-draft (3 Oct 2026, GAPS86; the 26 Sept "no address" note had tried only koninklijkhuis.nl)
+to: Koninklijke Verzamelingen, Den Haag -- info@koninklijkeverzamelingen.nl (the submissionEmail of the "Aanvraag inzage archieven" form, https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen/toestemmingsformulier/, read 3 Oct 2026 by GAPS86). The route page https://www.koninklijkeverzamelingen.nl/diensten/archiefonderzoek-aanvragen (read 3 Oct 2026 11:08 UTC by OUT-KHA, HTTP 200) confirms that requests go to the director of the Koninklijke Verzamelingen through that form and gives the post address Postbus 30412, 2500 GK Den Haag; it does not itself print the email address.
+subject: Request for a scan of KHA A11-XIVb-15-43 (Willem IV of Hesse to William of Orange, 28 January 1567)
+prior_contact: none in CONTRIBUTIONS.md (Recipient column, searched 3 Oct 2026 for koninklijkeverzamelingen / Huisarchief / KHA); the project mailbox was not searchable from this drafting session -- the parent searches Gmail (to:/from: info@koninklijkeverzamelingen.nl and the domain) before placing the draft (outreach/README.md rule 8). Related, not a thread with this recipient: ASKS row 67 asked the Huygens Instituut's WVO editor on 26 Sept 2026 how to approach the KHA (about other items); no answer recorded yet.
+targets: ciphers/willem-van-hessen-1567 (ASKS row 31)
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/willem-van-hessen-1567; request=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/willem-van-hessen-1567/REQUEST.md; record=https://www.koninklijkeverzamelingen.nl/archief/a/a11/a11-xiv/a11-xivb/a11-xivb-15-43/; wvo=https://resources.huygens.knaw.nl/wvo/app/brief?nr=1127; draft_pdf=https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01127.pdf; edition_checked=https://archive.org/details/archivesoucorre04housgoog (Groen van Prinsterer, Archives ou correspondance, 1e serie t.III, 1567 section, Lettres CCLIII-CCLXXXIX, table pp. xci-xcvi: letter not printed there)
+audit: none -- a copy request, no reading claimed (no AUDIT.md exists for this target; gates 1-2 do not apply to a request that claims no result).
+language: English only (no translation needed under outreach/README.md rule 7). If the parent prefers Dutch, the Dutch text goes above a separator with this English text beneath it.
 
-# No draft: Koninklijk Huisarchief has no public contact route found
+Dear Sir or Madam,
 
-Two koninklijkhuis.nl paths (`/onderwerpen/contact`, `/onderwerpen/koninklijk-huisarchief`) both return HTTP
-404, confirmed twice today (26 Sept 2026): once by verifier V-GATE2 at 17:58-18:00 UTC (NOTIFY.md) and again
-by this worker at approximately 18:57 UTC. No other public address for the Koninklijk Huisarchief was found in
-a plain web search restricted to koninklijkhuis.nl and rijksoverheid.nl domains this pass.
+I direct a small research project, cipher-lab, that studies unsolved historical ciphers; I write and send every message myself, while the reading of documents, the searches of editions and catalogues, and the checking of results are done by AI agents (Claude models) working in an open repository where every step is logged (https://github.com/NoAutopilot/cipher-lab). I am writing to ask whether a digital scan of one letter in the Koninklijk Huisarchief can be supplied, and at what fee.
 
-Per the job brief, this is not invented: the existing route is ASKS row 67, already asking Huygens Instituut's
-dr. Huysman (24 Sept 2026, reply 26 Sept 2026) for the correct way to reach the Koninklijk Huisarchief for
-A 11/XIV B/15-43 (this target) and the related Japikse copies (NOTIFY.md rows 8-9). No new email is drafted
-here; ASKS row 31 stays blocked pending that reply.
+The item is inventory A11, A11-XIVb-15-43: "Van Willem van Hessen", 28 January 1567 (Landgrave Wilhelm IV of Hesse-Kassel to William of Orange, from Kassel), https://www.koninklijkeverzamelingen.nl/archief/a/a11/a11-xiv/a11-xivb/a11-xivb-15-43/. Your record shows no scans for it, and the Huygens Instituut's database of William of Orange's correspondence (WVO letter 1127, https://resources.huygens.knaw.nl/wvo/app/brief?nr=1127) lists no image of the original either.
+
+The reason for the request: the WVO record notes that part of this original is in a cipher that has not been solved ("Een gedeelte van het origineel is in onopgelost cijferschrift"), and that the sender's draft in the Hessisches Staatsarchiv Marburg (Bestand 3II, Korr. 1567, f. 151r-152v) gives the complete text. The draft is online (https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01127.pdf). We would align the enciphered passage of the original with the corresponding passage of the draft, which should recover the cipher's key, or show where the fair copy departs from the draft. We have not found the letter printed: it is not in Groen van Prinsterer's Archives ou correspondance de la Maison d'Orange-Nassau, 1e série, t. III (1836), whose 1567 section we searched (https://archive.org/details/archivesoucorre04housgoog).
+
+My request is:
+
+1. A digital scan or photograph, at a resolution where the cipher signs can be read, of every page of A11-XIVb-15-43, including the enciphered passage, and of the undated, unsigned loose note that the WVO record describes as enclosed with it, if it is kept with the item.
+2. The fee for this, and how to pay it.
+3. If remote reproduction is not possible, the procedure for a reading-room visit, and whether the toestemmingsformulier on your website is the right first step for this.
+
+The purpose is scholarly research only, with no commercial use; any result would cite the Koninklijk Huisarchief with the credit line your inventory gives, and the request and its outcome are recorded in the repository folder for this letter (https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/willem-van-hessen-1567).
+
+Thank you for considering this.
+
+With kind regards,
+
+[SIGN-OFF]
