@@ -1033,7 +1033,7 @@ HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short p
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
 - f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, 3 Oct 2026): 10 relabels, key rank 2 -> 1, judge -1.723 -> -1.642 (FAIL), in-family control p 0.042; 7 S candidates + 3 conflicts with endorsed S tokens; S31/S32/S76 has no witness rule; verifier (VERIFY-CEPPO-WP, AUDIT.md): 7 accepted and applied (endorsed 113 -> 120), L04.41/L05.42 contested (t at M), L02.35 rejected; next: passC L04.39 (D reads a barred 8) and a glossed S76/S31 instance on f.36r/f.37r, ~$3
-- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; ff.27/39/82 (A1B-CEPPO-POUND) and fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36, 3 Oct 2026) searched: one occurrence of the pre-registered form (f.36r r36_L03 pos 30, labelled S84 by both earlier passes), gloss not legible to either blind reader, so it stays I under the pre-registration; next: scan the other glossed Birago leaves already on disk (`ciphers/birago-fr3252-1571-72/images/f47`, `f117`, read only) for a second glossed occurrence, then f.11v (never fetched, 1 Gallica region), ~$3.
+- f.11r, 12 I tokens (the pound sign read l from context) - blocker: no-key-material; every witness on disk or one fetch away is now searched: ff.27/39/82 (A1B-CEPPO-POUND), fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36: one occurrence, gloss not legible blind), fr.3252 f.47r (A1B-CEPPO-11V, 3 Oct 2026: 0 X_POUND labels in passA/passB/recon, and the leaf carries no interlinear gloss, so no glossed occurrence is possible), f.11v (A1B-CEPPO-11V: show-through of f.11r and a docket only, no cipher, no decipherment); stays I under PREREG c5412f90. f.117r is not a gloss source either (no slip or clear copy, birago Premise check (c)) and waits on the owner's sorter; reopens only with a new glossed Birago/Ceppo leaf.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
 ## Escalation (2 Oct 2026)
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 3 internal gaps; cheapest next: scan the glossed Birago leaves f.47/f.117 on disk for a second glossed pound form, ~$3
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.87 passC L04.39 and a glossed S76/S31 instance on f.36r/f.37r, ~$3
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1197,3 +1197,23 @@ Pre-registration unchanged: A1B-CEPPO-POUND's shape rule and promotion threshold
 - **Where not found:** f.36r all 17 bands of `c37_f36r_cipher.jpg` (only the one above), f.36v `c38_f36v_top`/`c38_f36v_mid`
   (the "2."/underlined angular signs present are the corner form, glossed s at least once, "il s[i]gnor"), f.37r
   `c38_f37r_cipher` (none), the slip (clear text only, no cipher). Not on disk: the parts of f.36v outside the two regions.
+
+## A1B-CEPPO-11V: f.11v fetched (show-through only) and fr.3252 f.47r searched for the pound form (3 Oct 2026)
+
+Pre-registration unchanged (PREREG c5412f90: promote the pound form only on >=2 glossed occurrences agreeing).
+- **f.11v.** `python3 tools/gallica_folio.py btv1b9060248g --folio 11 --side v --anchor 12=11r --anchor 36=35r --anchor 88=87r`
+  (fit canvas = folio + 1, residuals 0; one canvas per opening, f.11v = canvas 13 left page). Overview `f13/full/1600,`, then
+  `python3 tools/iiif_lines.py --ark btv1b9060248g --canvas 13 --region 660,2350,3500,380 --out <scratch>/f11v --prefix f11v --debug`
+  (native band over the cipher-looking lines; source and a mirrored, contrast-stretched crop kept in `harvest/f11v/`).
+  Found: the page carries mirrored show-through of f.11r -- the band reads correctly only when flipped ("Con la guerra",
+  "intendesi", the f.11r cipher runs) -- plus the f.11r signature flourish show-through, a BnF stamp and a faint docket at the
+  foot. No cipher of its own, no decipherment, no slip; the pound form cannot occur with an interlinear value here. One eye
+  (this worker), no subagent.
+- **fr.3252 f.47r.** Script locate on the birago folder's passes (read only): `harvest/f47/passA.tsv`, `passB.tsv`, `recon.tsv`
+  and `la/`, `ref/` carry 0 X_POUND labels although the blind brief offered it as an off-sheet id; recon has 23 S84 cells.
+  More decisive: f.47r has no interlinear gloss (birago NOTES.md Premise check (c), checked on the native line crops), so any
+  occurrence there would be unglossed and could not count toward the promotion rule. No crops cut, no vision call spent.
+  f.117r, f.144r, f.168 not touched (sorter).
+- **Result:** the 7 f.11r pound positions stay I; no decode, AUDIT.md or SECOND-OPINIONS-QUEUE change due. Gap line moved to
+  no-key-material: only a new glossed Birago/Ceppo leaf reopens it.
+Requests: gallica.bnf.fr 2 (overview + one native region), 0 subagents, 0 blind vision calls; own looks 3.
