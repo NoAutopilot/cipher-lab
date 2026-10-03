@@ -1,4 +1,4 @@
-open
+partial
 Gomberville, *Mémoires du duc de Nevers* (1665) seconde partie (Google Books H2eV4wAmIr0C) full-text searched by this worker (GF4-BATCH9, 3 Oct 2026) for Dinteville, Dinteuille, Dintevile (0 hits), Langres (10, pp.256-390, none this letter), "deux millions", Strasbourg, "armee lorraine" -- letter absent.
 
 **Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
