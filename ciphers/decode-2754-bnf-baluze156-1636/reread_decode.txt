@@ -1,0 +1,13 @@
+L01	[blot]=? x=V 12=? p=N f=P 6=? t=P r=A tt=D u=T o=? 7x=? 4=G 10=? 9=? e=?
+L02	n=O Z=T y=? 10=? p=N ll=E 9=? 7x=? 4=G t=P o=? e=?
+L03	n=O f=P 6=? h=S Φ=L 4=G p=N 9=? y=? u=T nn=E E=? tt=D ll=E
+L04	d=? o=? 4=G n=O 9=? ff=? 4=G E=? p=N C=L 9=? 9=? u=T ff=? ll=E r=A m=R c^=? o=? h=S Z=T p=N a=? g=S g=S
+L05	94=?
+L06	n=O tt=D [crossed-8]=? 4=G Z=T p=N
+L07	u=T nn=E ll=E ff=? 9=? 94=? 9=? b=M nn=E 4=G u=T [ſcr]=? p=N 9=? f=P c=? c^=?
+L08	9=? 7x=? 4=G t=P o=? p=N
+L09	9=? n=O 36=?
+L10	6=? 9=? tt=D g=S n=O b=M l=R u=T
+L11	x=V 9=? p=N u=T 4=G m=R
+L12	n=O Z=T p=N E=? p=N ll=E 9=? h=S o=? q=? t=P Φ=L c^=? y=? E=? 12=? m=R
+L13	9=? n=O ll=E Z=T g=S c^=? 9=? c^=?

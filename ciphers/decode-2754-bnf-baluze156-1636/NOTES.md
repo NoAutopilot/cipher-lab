@@ -694,17 +694,68 @@ Requests: gallica.bnf.fr 3 (1 page view at 1400 px, 1 info.json, 1 native region
 Suggestion only (Usage 7, not run): merge the f.146r and f.247 keys where they agree (about 30 signs) and re-score f.157r.
 It needs no vision call, but it will be informative only after the image check below.
 
-## Remaining gaps (FT4d, 3 Oct 2026)
-Read so far: 0 of 137 f.157r tokens read; five period/published keys tested negative (two Lasry, Servien 1632, f.146r 1636, f.247 1636 -- the last two apparently one table).
-- f.157r cipher runs (137 tokens) - blocker: not-attempted; no key reads it, and the two 1636 Sabran keys (one table) both sit at the shuffle median (f247_trial.tsv, fr4140_trial.tsv); next: re-read f.157r from iiif_lines crops against Sabran's own sign shapes (Pc, 7d, a+, 6/b, overbars; 2 blind passes + 1 reconcile), then re-score under the merged f.146r+f.247 table, ~$4
+## GAPS35: f.157r re-read and merged-table re-score (2 Oct 2026 brief, run 3 Oct 2026, account-4)
+
+This runs FT4d's Verdict step and nothing else. Intake gate (pasted): `decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines` (exit 0).
+
+**Pre-registered before any score** (commit 08c82083: `PREREG_reread.md`, `reread_trial.py`). The merged key is the kept
+rows of the f.146r and f.247 keys. A sign in one key keeps its value. A sign in both keeps its value where the two agree
+and is dropped where they differ (a I/N, d I/T, ff G/I, o H/S and y A/V conflict). P and Pc are both A. That leaves 31
+sign names. The control is 200 shuffled merged keys. Permuting the values changes every decoded letter, so the control
+can differ from the target on bits/char. The gate is the same as FT4b/FT4d.
+
+**Transcription.** Native region of Gallica btv1b9001409q canvas f161 (3900,250,3600,5400; one request), then
+`python3 tools/iiif_lines.py --image images/f157/src_ark_12148_btv1b9001409q_f161_3900_250_3600_5400.jpg --out images/f157
+--prefix f157r --centres 2025,3041,3126,3220,3315,3403,3505,3877,3976,4073,4171,4282,4771 --lines-per-crop 1 --top-margin 60
+--bottom-margin 40`. That gives 13 cipher lines and 26 crops. The two blind Opus passes received crops only, with a sign
+vocabulary named after Sabran's f.146r/f.247 shapes (Pc, 7d, a+, 6/b, Φ, E, overbars) and no values:
+`images/f157/passA_f157.tsv` (140 tokens) and `passB_f157.tsv` (138 tokens, read in reverse). Aligned agreement is
+**90.7%** (127/140). The worker reconciled the 11 disputes from the L02/L04/L11 crops (one look) into
+`ciphertext_reread.tsv` (139 tokens):
+- DC8's crossed 7 is a 7 with a cross-bar, not f.247's dotted 7d. It is named 7x.
+- L04's sign after p is a plain rounded C, not Pc.
+- L04 ends "a g g" and then plain "que".
+- The m with a large C-curl below (L04, L11, L12) stays m.
+- 6/b at L01 and 9/g at L01 stay grade M.
+
+The re-read changes the draft mainly by naming 7x, C and m-curl and by settling the L04 tail. It does not reveal any
+f.247 Pc or 7d sign in DC8.
+
+**Result** (`reread_trial.tsv`; `python3 reread_trial.py --check` exits 0):
+
+| row | covered | bits/char | share of 200 shuffled keys as good |
+|---|---|---|---|
+| A: 24 Sept draft under the merged key | 84 of 137 | 5.189 | 0.685 |
+| **B: 3 Oct re-read under the merged key (the test)** | 80 of 139 | **5.122** | **0.700** |
+| shuffled keys (B), median / best | | 4.886 / 4.072 | |
+| positive control: held-out French, B's run lengths, enciphered with the merged key | | **3.654** | 0.000 |
+
+The decode runs read `V NP PADT G OT NE GP OP SLGN TE DE GO G NL T EAR STN SS ...`. They contain no French word of 4+
+letters.
+
+**Verdict: negative, matched.** The merged Sabran 1636 table does not read f.157r on a fresh Opus transcription. The
+target sits above the shuffle median and the positive control is cleanly separated. This is the third failure of the same
+table, after f.146r and f.247 (rule 3, third-attempt clause). That table is now retired for f.157r. The transcription is
+not the limit: two blind passes agree at 90.7%, and the re-read moves the score by 0.07 bits/char. The table is the
+limit. "Mr de ch. g^r" most likely had his own table. Its exemplars would be among the fr.4141 letters (not online) or in
+a recipient-side fonds.
+
+Grades (rule 4): no reading claimed (0 H, 0 C, 0 S, 80 M mechanical, 0 I). Status word unchanged: **open**. Vision calls:
+2 blind passes plus 1 reconciliation look. Requests: gallica.bnf.fr 2 (1 info.json after one connection reset, 1 native
+region; browser UA). Report of what was found and where it was not found; no novelty class.
+
+## Remaining gaps (GAPS35, 3 Oct 2026)
+Read so far: 0 of 139 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, and the merged f.146r+f.247 table on the 3 Oct re-read: 5.122 bpc, 0.700 of shuffles as good, positive control 3.654).
+- f.157r cipher runs (139 tokens) - blocker: not-attempted; every reachable key is negative and Sabran's 1636 table is retired for this leaf (reread_trial.tsv); next: read Avenel's Richelieu Lettres t.V (and the Feb 1636 Sourdis/Vitry Marseille-Lérins plot correspondence) for a plain summary naming the Gascon informant and the Florence/Modena agents, then use it as a crib for a fresh homophonic solve with a matched control, ~$4
 - fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
 
-## Escalation (FT4d, 3 Oct 2026)
+## Escalation (GAPS35, 3 Oct 2026)
 - [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
-- [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636, all negative with matched controls
+- [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636 and their merge, all negative with matched controls
 - [ ] print: Avenel's Richelieu Lettres t.V, a plain summary of the Marseille/Lérins plot to use as a crib
-- [x] key-rebuild: f.247 interlinear table rebuilt (grade C, leaf control 0.787 vs p99 0.346), negative on f.157r
-- [ ] image-check: re-read f.157r against Sabran's own sign shapes (Pc, 7d, a+, 6/b, overbars), the planned next step
+- [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it
+- [x] image-check: f.157r re-read from native iiif_lines crops, 2 blind Opus passes 90.7% + reconciliation (GAPS35)
 - [n/a] retry: no transient failure to retry this pass
-Verdict: keep going: 1 internal gaps; cheapest next: re-read f.157r against Sabran's sign shapes and re-score under the merged f.146r+f.247 table, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: Avenel t.V crib for the Marseille/Lérins plot, then a crib-driven homophonic solve with a matched control, ~$4

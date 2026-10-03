@@ -1,0 +1,140 @@
+line	position	sign	confidence	note
+L01	1	[ink-blot]	L	blot right after s^r (superscript a above); sign underneath illegible
+L01	2	x	H	
+L01	3	12	H	
+L01	4	p	H	descender crossed
+L01	5	f	M	crossed f
+L01	6	6	M	looped top; could be b
+L01	7	t	H	
+L01	8	r	M	
+L01	9	tt	H	
+L01	10	u	M	wide u
+L01	11	o	H	
+L01	12	[eta-crossed]	M	n/eta with long descender crossed by horizontal bar
+L01	13	4	H	
+L01	14	10	H	
+L01	15	9	M	stroke across top; could be g
+L01	16	e	M	followed by line-end dash
+L02	1	n	H	
+L02	2	Z	H	
+L02	3	y	H	
+L02	4	10	H	
+L02	5	p	H	
+L02	6	ll	H	
+L02	7	9	H	
+L02	8	[eta-crossed]	M	same crossed-descender eta sign as L01
+L02	9	4	H	
+L02	10	t	H	
+L02	11	o	H	
+L02	12	e	M	before "amy"
+L03	1	n	H	
+L03	2	f	M	
+L03	3	6	H	
+L03	4	h	H	
+L03	5	Φ	H	
+L03	6	4	H	
+L03	7	p	H	descender crossed
+L03	8	9	H	before "amplement"
+L03	9	y	M	after "amplement"
+L03	10	u	H	
+L03	11	nn	H	
+L03	12	E	H	
+L03	13	tt	H	
+L03	14	ll	H	before ", Je n'espere"
+L04	1	d	H	after "sauve"
+L04	2	o	H	
+L04	3	4	H	
+L04	4	n	H	
+L04	5	9	H	
+L04	6	ff	M	before "audict"
+L04	7	4	H	after "audict"
+L04	8	E	H	
+L04	9	p	H	
+L04	10	c	M	rounded, possibly C
+L04	11	9	H	
+L04	12	9	M	could be q
+L04	13	u	H	
+L04	14	ff	M	
+L04	15	ll	H	
+L04	16	r	M	
+L04	17	m	M	large C-curl looping below m (same as L11/L12); before ", par"
+L04	18	c^	M	after "par"; mark over c
+L04	19	o	H	
+L04	20	h	H	
+L04	21	Z	M	
+L04	22	p	H	descender crossed
+L04	23	a	H	
+L04	24	9	M	dot above is from line above; followed by "qu..se" which may be plain text (not counted)
+L05	1	94	H	followed by a dot, before "mesmes"
+L06	1	n	H	after "dessaing de"
+L06	2	tt	H	
+L06	3	[crossed-8]	L	8/g-like loop struck through by two oblique strokes
+L06	4	4	M	
+L06	5	Z	M	
+L06	6	p	H	descender crossed; line-end dash follows
+L07	1	u	H	line start
+L07	2	nn	M	
+L07	3	ll	H	
+L07	4	ff	H	
+L07	5	9	H	followed by dot
+L07	6	94	H	dots on both sides
+L07	7	9	H	
+L07	8	b	M	looped ascender
+L07	9	nn	H	
+L07	10	4	H	
+L07	11	u	H	
+L07	12	[ſcr-group]	L	long-s-like stroke joined to small c and r; may be 2-3 tokens
+L07	13	p	H	descender crossed
+L07	14	9	H	
+L07	15	f	M	f with long horizontal crossbar
+L07	16	c	H	
+L07	17	c^	H	mark over c; before "cequel"
+L08	1	9	H	after "ledit"
+L08	2	[eta-crossed]	M	
+L08	3	4	H	
+L08	4	t	H	
+L08	5	o	H	
+L08	6	p	H	long curled descender
+L09	1	9	H	after "Munitions"
+L09	2	n	H	
+L09	3	36	H	
+L10	1	6	M	line start; could be b
+L10	2	9	H	
+L10	3	tt	H	
+L10	4	8	M	open figure-8 / g-like
+L10	5	n	H	
+L10	6	b	M	ascender crossed by a bar running into next sign
+L10	7	l	M	
+L10	8	u	H	before "et quilles"
+L11	1	x	H	after "Monsieur"
+L11	2	9	H	
+L11	3	p	H	descender crossed
+L11	4	u	H	
+L11	5	4	H	
+L11	6	m	M	large C-curl below; before "et de grandes"
+L12	1	n	H	after "M.r"
+L12	2	Z	M	
+L12	3	p	H	
+L12	4	E	H	
+L12	5	p	H	
+L12	6	ll	H	
+L12	7	9	H	
+L12	8	h	H	
+L12	9	o	H	
+L12	10	q	H	
+L12	11	t	H	
+L12	12	Φ	H	
+L12	13	c^	H	
+L12	14	y	H	
+L12	15	E	H	
+L12	16	12	H	
+L12	17	m	M	large C-curl below; before "avant"
+L13	1	9	H	after "leurs"
+L13	2	n	H	
+L13	3	ll	H	
+L13	4	Z	H	
+L13	5	g	M	descender crossed by a long flourish
+L13	6	c^	M	mark over c
+L13	7	9	H	
+L13	8	c^	M	mark over c; line-end dash follows
+#total 138
