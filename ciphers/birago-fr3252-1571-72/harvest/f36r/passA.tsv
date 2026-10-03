@@ -1,0 +1,246 @@
+passage	pos	sign_id	alt	conf	note
+r36n_L09	1	S45		M	
+r36n_L09	2	S94	S55	L	oval stem bar right
+r36n_L09	3	S47		M	open epsilon
+r36n_L09	4	S47		M	closed epsilon
+r36n_L09	5	S70		H	
+r36n_L09	6	S52		L	3 with vertical stroke
+r36n_L09	7	S17		M	
+r36n_L09	8	S52		M	
+r36n_L09	9	S88	S24	M	
+r36n_L09	10	S84		H	
+r36n_L09	11	S70		L	cut at edge
+r36n_L09	12	S56	S57	L	plus then curl, cut at left edge
+r36n_L09	13	S35		H	
+r36n_L09	14	X_THETA2		H	
+r36n_L09	15	S94	S55	M	
+r36n_L09	16	S52		M	
+r36n_L09	17	X_THETA2		H	
+r36n_L09	18	S80	S65	M	
+r36n_L09	19	S94	S55	L	no crossbar
+r36n_L09	20	S69	X_THETA2	M	single bar
+r36n_L09	21	S62		H	
+r36n_L09	22	X_THETA2		H	
+r36n_L09	23	S26		H	
+r36n_L09	24	S17	S31	M	
+r36n_L09	25	S95	S13	M	large oval with ornament
+r36n_L09	26	S70		H	
+r36n_L09	27	S73	S49	M	
+r36n_L09	28	S20		H	
+r36n_L09	29	S32		M	
+r36n_L09	30	S52		L	
+r36n_L09	31	S45		H	
+r36n_L09	32	S84		H	
+r36n_L09	33	S37		M	
+r36n_L09	34	S94	S55	L	P-like
+r36n_L09	35	S75		M	plus with dot
+r36n_L09	36	S80	S65	M	
+r36n_L09	37	S40		M	
+r36n_L09	38	S88	S24	M	
+r36n_L09	39	X_THETA2		H	
+r36n_L09	40	S45		H	
+r36n_L09	41	S22		M	
+r36n_L09	42	S70		H	
+r36n_L09	43	S26		M	
+r36n_L09	44	S80	S65	M	
+r36n_L10	1	S94	S55	M	
+r36n_L10	2	S45		H	
+r36n_L10	3	S16	S42	M	
+r36n_L10	4	S80	S65	M	
+r36n_L10	5	S73	S49	M	
+r36n_L10	6	S53		H	
+r36n_L10	7	S45		H	
+r36n_L10	8	X_NEW	S71	L	S-shaped
+r36n_L10	9	S17	S31	M	
+r36n_L10	10	S70		H	
+r36n_L10	11	S52		M	
+r36n_L10	12	S88	S24	L	cut at left edge
+r36n_L10	13	X_THETA2		H	
+r36n_L10	14	S80	S65	M	
+r36n_L10	15	S66	S17	M	
+r36n_L10	16	S24	S88	M	vertical through two bars, dot above
+r36n_L10	17	X_THETA2		H	
+r36n_L10	18	S94	S55	M	
+r36n_L10	19	S45		H	
+r36n_L10	20	S88	S24	M	
+r36n_L10	21	S75		M	shares bar with previous
+r36n_L10	22	S47		M	
+r36n_L10	23	S17		L	cut at right edge
+r36n_L10	24	S89		H	
+r36n_L10	25	S17	S66	M	
+r36n_L10	26	S40		M	
+r36n_L10	27	S84		H	
+r36n_L10	28	S70		H	
+r36n_L10	29	S37		M	
+r36n_L10	30	S62		H	
+r36n_L10	31	S89		H	
+r36n_L10	32	S24	S88	M	
+r36n_L10	33	S16	S42	M	
+r36n_L10	34	S52		L	cut at right edge
+r36n_L10	35	S74		M	
+r36n_L10	36	S17	S31	M	
+r36n_L10	37	S80	S65	M	
+r36n_L10	38	S74		M	
+r36n_L10	39	S24	S88	M	
+r36n_L10	40	S75		M	
+r36n_L10	41	S53		H	
+r36n_L10	42	S94	S55	M	
+r36n_L10	43	S34		M	
+r36n_L10	44	S84		H	
+r36n_L11	1	S88	S24	M	
+r36n_L11	2	S75		H	
+r36n_L11	3	X_NEW	S31	L	large Q with curled tail
+r36n_L11	4	S57	X_NEW	L	large curl
+r36n_L11	5	S24	S88	M	
+r36n_L11	6	S22		M	
+r36n_L11	7	X_NEW	S94	L	P with serif
+r36n_L11	8	S75		H	
+r36n_L11	9	S17		M	
+r36n_L11	10	S70		H	
+r36n_L11	11	S47		M	dot at right
+r36n_L11	12	S34		M	cut at left edge
+r36n_L11	13	S94	S55	M	
+r36n_L11	14	S17	S66	M	
+r36n_L11	15	S37		M	
+r36n_L11	16	S70		H	
+r36n_L11	17	S20		H	
+r36n_L11	18	S32		M	
+r36n_L11	19	S75		H	
+r36n_L11	20	S74		M	
+r36n_L11	21	S53		H	
+r36n_L11	22	S24	S88	M	
+r36n_L11	23	S62	S93	L	large loop, partly cut
+r36n_L11	24	S40		M	
+r36n_L11	25	S65		M	flourish top
+r36n_L11	26	S61		M	
+r36n_L11	27	S80	S65	M	
+r36n_L11	28	S47		M	
+r36n_L11	29	S75		H	
+r36n_L11	30	S73	S49	M	
+r36n_L11	31	S89		H	
+r36n_L11	32	S24	S88	M	
+r36n_L11	33	X_NEW	S31	L	Q cut at left edge
+r36n_L11	34	S34		M	
+r36n_L11	35	X_THETA2		H	
+r36n_L11	36	S17		M	
+r36n_L11	37	X_NEW		M	digit 4
+r36n_L11	38	S52		M	
+r36n_L11	39	X_THETA2		M	
+r36n_L11	40	S56		M	
+r36n_L11	41	S70		M	
+r36n_L12	1	S84		H	
+r36n_L12	2	X_NEW	S94	L	P with serif
+r36n_L12	3	S70		H	
+r36n_L12	4	S52		M	3 with vertical stroke
+r36n_L12	5	S17		M	
+r36n_L12	6	S54		M	
+r36n_L12	7	S45	S47	M	
+r36n_L12	8	S23		M	
+r36n_L12	9	S94	S55	M	
+r36n_L12	10	S80	S65	M	
+r36n_L12	11	S88	S24	M	
+r36n_L12	12	S70		L	cut across crop edge
+r36n_L12	13	S97		H	
+r36n_L12	14	S88	S24	M	
+r36n_L12	15	S47		M	
+r36n_L12	16	S40		M	
+r36n_L12	17	S93		L	large omega-like, tail
+r36n_L12	18	S73	S49	L	slash dot
+r36n_L12	19	S24	S88	M	
+r36n_L12	20	S57		M	
+r36n_L12	21	S75		H	
+r36n_L12	22	S56		M	
+r36n_L12	23	S47		M	
+r36n_L12	24	S75		H	
+r36n_L12	25	S94	S55	M	
+r36n_L12	26	S52		M	
+r36n_L12	27	X_THETA2		H	
+r36n_L12	28	S75		H	
+r36n_L12	29	S26		H	
+r36n_L12	30	S52		M	
+r36n_L12	31	S84		M	
+r36n_L12	32	S66	S17	M	
+r36n_L12	33	S75		M	cut at left edge
+r36n_L12	34	S16	S42	M	
+r36n_L12	35	S62		H	
+r36n_L12	36	S91	S58	L	loop with j tail
+r36n_L12	37	S34		M	
+r36n_L12	38	S84		L	small x
+r36n_L12	39	S40		M	
+r36n_L12	40	S75		H	
+r36n_L13	1	S94	S55	M	
+r36n_L13	2	S93		M	
+r36n_L13	3	S37		M	
+r36n_L13	4	S80	S65	M	
+r36n_L13	5	S32		M	
+r36n_L13	6	S45		H	
+r36n_L13	7	S56		M	
+r36n_L13	8	S73	S49	M	
+r36n_L13	9	S52		M	
+r36n_L13	10	S20		M	cut at right edge
+r36n_L13	11	S16	S42	M	
+r36n_L13	12	S45		H	
+r36n_L13	13	S84		H	
+r36n_L13	14	S37		M	
+r36n_L13	15	X_NEW	S94	L	P with serif
+r36n_L13	16	S75		H	
+r36n_L13	17	S57		M	
+r36n_L13	18	S65	S80	M	
+r36n_L13	19	S69	X_THETA2	L	bar shared with next sign
+r36n_L13	20	S88	S24	L	slash on shared bar
+r36n_L13	21	S17		L	cut at left edge
+r36n_L13	22	S22		M	
+r36n_L13	23	S70		H	
+r36n_L13	24	S40		M	
+r36n_L13	25	S45		H	
+r36n_L13	26	X_THETA2		M	
+r36n_L13	27	S34		M	
+r36n_L13	28	S88	S24	M	
+r36n_L13	29	S80	S65	M	
+r36n_L13	30	S31	S62	L	tall loop cut at right edge
+r36n_L13	31	S45		H	
+r36n_L13	32	S40		M	
+r36n_L13	33	S80	S65	M	
+r36n_L13	34	S75		H	
+r36n_L13	35	S66		M	
+r36n_L13	36	S16	S42	M	
+r36n_L13	37	S70		H	
+r36n_L13	38	S74		M	
+r36n_L14	1	S53		M	
+r36n_L14	2	X_THETA2		H	
+r36n_L14	3	S97		H	
+r36n_L14	4	S37		M	
+r36n_L14	5	S56		M	
+r36n_L14	6	S35		H	
+r36n_L14	7	S89		H	
+r36n_L14	8	S80	S65	M	
+r36n_L14	9	S45		H	
+r36n_L14	10	S74		M	
+r36n_L14	11	S75		H	
+r36n_L14	12	S26		H	
+r36n_L14	13	S52		M	
+r36n_L14	14	S20		H	
+r36n_L14	15	S47		M	
+r36n_L14	16	S52		M	
+r36n_L14	17	S74		M	
+r36n_L14	18	S88	S24	M	
+r36n_L14	19	S45		H	
+r36n_L14	20	X_NEW	S71	L	S-shaped, cut at left edge
+r36n_L14	21	S52		M	
+r36n_L14	22	S53		L	U-shape with stem
+r36n_L14	23	S80	S65	M	
+r36n_L14	24	S73	S49	M	
+r36n_L14	25	S62		H	
+r36n_L14	26	S23		M	
+r36n_L14	27	S26		H	
+r36n_L14	28	S75		H	
+r36n_L14	29	S13		M	theta with dot
+r36n_L14	30	S16	S42	M	
+r36n_L14	31	S17		M	
+r36n_L14	32	S47		M	
+r36n_L14	33	S45		H	
+r36n_L14	34	S37		M	
+r36n_L14	35	S75		H	
+r36n_L14	36	S74		M	
+r36n_L14	37	S80	S65	M	
+r36n_L14	38	S14		M	box

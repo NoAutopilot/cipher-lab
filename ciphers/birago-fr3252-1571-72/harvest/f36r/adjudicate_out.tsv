@@ -1,0 +1,39 @@
+line	pos	choice	conf	note
+r36n_L09	2	S94	H	female-sign with cross foot
+r36n_L09	19	S94	H	female-sign with tail
+r36n_L09	25	S95	L	round o, no clear inner mark
+r36n_L09	27	S49	M	slanted bar with dot below
+r36n_L09	36	S80	M	8 with line through
+r36n_L09	44	S80	H	8 with long line through
+r36n_L10	5	S49	M	slanted bar with dot
+r36n_L10	14	S80	M	8 with bar
+r36n_L10	15	S66	M	z with dot above
+r36n_L10	16	S24	L	double bar with vertical
+r36n_L10	21	S75	M	separate + after crossed bar
+r36n_L10	32	S24	M	double bar with vertical
+r36n_L10	33	S16	M	triangle with top tick
+r36n_L10	34	S52	L	partial 3 at crop edge
+r36n_L10	37	S80	H	8 with line
+r36n_L10	39	S24	M	double bar with vertical
+r36n_L11	3	S31	M	Q-like loop with tail
+r36n_L11	5	S24	M	double bar with vertical
+r36n_L11	22	S24	M	double bar with vertical before S62
+r36n_L11	30	S49	M	slanted bar with dot; a sign is present
+r36n_L11	31	S89	H	double horizontal bar; a sign is present
+r36n_L11	33	S31	L	Q-like loop at start of s4
+r36n_L11	34	NONE	L	nothing visible between Q-loop and S34
+r36n_L11	35	NONE	L	nothing visible between Q-loop and S34
+r36n_L12	6	S74	M	b with flag, no crossbar
+r36n_L12	12	S75	L	plus at segment boundary
+r36n_L12	16	S84	L	x with loop flourish
+r36n_L12	18	S49	M	small bar with dot after S93
+r36n_L12	20	NONE	M	only one crossed-bar sign before S57
+r36n_L12	37	S91	L	loop sign before S34
+r36n_L12	39	S42	L	plain x
+r36n_L13	8	S49	M	slanted bar with dot
+r36n_L13	18	S80	L	8 with bar through neck
+r36n_L13	26	X_THETA2	M	theta with long line through
+r36n_L13	36	S16	L	triangle
+r36n_L14	22	S53	M	phi-like with loop
+r36n_L14	24	S49	M	slanted bar with dot
+r36n_L14	38	S14	M	skewed square

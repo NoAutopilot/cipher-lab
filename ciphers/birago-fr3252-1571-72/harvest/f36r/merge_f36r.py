@@ -2,7 +2,8 @@
 """F36R-REREAD (3 Oct 2026): reconcile the two blind sign passes of f.36r rows r36n_L09-L14 (re-centred on the row-ink
 profile, cut_f36r.py) and splice them into the f.36-37 sign transcription in place of F36-READ's mis-cut r36_L09-L15.
 
-  python3 merge_f36r.py           # writes ciphertext_f36_v2.tsv (decode_key input), recon_r36n.tsv, passD_v2.tsv, reading_key_v2.txt, error.tsv
+  python3 merge_f36r.py           # writes ciphertext_f36_v2.tsv (decode_key input), recon_r36n.tsv, passD_v2.tsv, reading_key_v2.txt,
+                                  reading_key_v2_letters.txt (judge input), error.tsv
   python3 merge_f36r.py --check   # exit 1 if the committed outputs are stale (rule 7)
 
 Reconciliation is compare_f36.py's rule: ids aligned per row (difflib); agree -> id; one '?'/absent -> the other
@@ -36,6 +37,11 @@ def classify(sa, sb, st):
 def main(check):
     m = {e["id"]: e["value"] for e in json.load(open(MAP))}; m["X_THETA2"] = "r"
     A, B = load(HERE / "passA.tsv"), load(HERE / "passB.tsv")
+    adj = {}
+    if (HERE / "adjudicate_out.tsv").exists():  # one Sonnet reconciliation call on the crops (prompt_R.md); H/M only
+        for r in csv.DictReader(open(HERE / "adjudicate_out.tsv"), delimiter="\t"):
+            if r["conf"].strip() in ("H", "M") and r["choice"].strip() not in ("", "?"):
+                adj[(r["line"].strip(), int(r["pos"]))] = "" if r["choice"].strip() == "NONE" else r["choice"].strip()
     recon = ["line\tpos\tA\tB\tsign\tprinted"]; new = {}; per = {}; st_new = Counter()
     for line in sorted(set(A) | set(B)):
         a, b = A.get(line, []), B.get(line, []); st = Counter(); pairs = []
@@ -47,8 +53,11 @@ def main(check):
                 pairs += [(a[i1 + k] if i1 + k < i2 else "", b[j1 + k] if j1 + k < j2 else "") for k in range(n)]
         new[line] = []
         for p, (sa, sb) in enumerate(pairs, 1):
-            s = classify(sa, sb, st); new[line].append(s)
-            recon.append(f"{line}\t{p}\t{sa}\t{sb}\t{s}\t{m.get(s, '?')}")
+            s = classify(sa, sb, st)
+            if sa != sb and (line, p) in adj:  # reconciler's eye choice (after E is counted, so E stays the blind figure)
+                s = adj[(line, p)]
+            if s: new[line].append(s)
+            recon.append(f"{line}\t{p}\t{sa}\t{sb}\t{s or 'NONE'}\t{m.get(s, '?')}")
         per[line] = (len(a), len(b), len(pairs), st["agree"], st["one"], st["split"]); st_new.update(st)
     # kept rows of F36-READ, recounted from its recon.tsv
     st_old = Counter(); old_seq = {}
@@ -74,7 +83,8 @@ def main(check):
     ct = ["line\tpos\tsign\tconf"] + [f"{a}\t{b}\t{c}\t{'U' if c == '?' else 'M'}" for a, b, c in
                                         (x.split("\t") for x in passd[1:])]
     files = {"ciphertext_f36_v2.tsv": "\n".join(ct) + "\n", "recon_r36n.tsv": "\n".join(recon) + "\n", "passD_v2.tsv": "\n".join(passd) + "\n",
-             "reading_key_v2.txt": "\n".join(dec) + "\n", "error.tsv": "\n".join(err) + "\n"}
+             "reading_key_v2.txt": "\n".join(dec) + "\n", "error.tsv": "\n".join(err) + "\n",
+             "reading_key_v2_letters.txt": "".join(d.split("\t")[1].replace("_", "") for d in dec)}
     stale = [f for f, t in files.items() if not (HERE / f).exists() or (HERE / f).read_text() != t]
     if check:
         print("stale:" if stale else "OK, not stale", " ".join(stale)); sys.exit(1 if stale else 0)

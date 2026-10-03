@@ -892,3 +892,80 @@ Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs (the clerk gloss unrea
 - [x] image-check: f.36-37 gloss crops re-cut on row-ink centres (F36-GLOSS); regions are already Gallica native resolution; f.117r native crops; f.47r native re-cut
 - [ ] retry: f.36r r36n_L09-L14 sign re-read on the re-centred rows; f.117r power at a measured post-look-alike error
 Verdict: keep going: 9 internal gaps; cheapest next: re-read the f.36r r36n_L09-L14 sign rows (~$2), then the per-sign tile gloss read (~$8) once the rate limit reads allowed
+
+## F36R-REREAD (3 Oct 2026, account-3 orchestrator's worker): f.36r cipher rows r36n_L09-L14 recut and re-read
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-f36r-reread.md`. Disk only, 0 network requests. No gloss read. No class, no novelty wording.
+Files: `harvest/f36r/` -- `cut_f36r.py` (crops, gitignored), `prompt_{A,B,R}.md`, `pass{A,B}.tsv`, `adjudicate_{in,out}.tsv`,
+`merge_f36r.py` (`--check`) -> `recon_r36n.tsv`, `error.tsv`, `passD_v2.tsv`, `ciphertext_f36_v2.tsv`, `reading_key_v2*.txt`;
+`control_mech_s{1,2,3}.txt` (before reconciliation), `control_s{1,2,3}.txt` (after); `../../decode.json` -> `reading_f36_v2*.{txt,tsv}`.
+
+1. **Recut.** `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/witness_f36/c37_f36r_cipher.jpg --out <scratch>
+   --prefix r36 --debug` -> 17 centres, the same as F36-GLOSS (44 158 252 353 438 558 678 780 861 966 1068 1164 1271 1390 1490 1571 1682).
+   The debug overlay was checked by eye: each red centre line sits on a sign row; the lowest is the last cipher row. `cut_f36r.py` cut
+   profile bands 12-17 (= r36n_L09-L14) +-12 px, four non-overlapping 760-px segments, 2x: 24 crops, one main row per crop.
+2. **Passes.** Two blind Sonnet readers (sheet `sign_sheet_blind.png` + the 24 crops only, sign ids only): A 245 signs, B 244
+   (rows 44/44, 44/43, 41/41, 40/40, 38/38, 38/38). One Sonnet reconciliation call on the crops settled the 38 disagreements by shape
+   (`adjudicate_out.tsv`: 5 H, 21 M, 12 L; only H/M are applied; the error below is counted *before* it, so it is the blind figure).
+3. **What the old rows were.** The new rows decode like F36-READ's r36_L09-L13 one for one, and **r36_L14 and r36_L15 were the same manuscript
+   row read twice** (both decode "traf_eda...mesequemt..."; new r36n_L14 "tracredaamesequemta_e..."). F36-READ's 993 positions included a
+   duplicated row of ~38 signs; the spliced transcription has 947 (after reconciliation; 948 before).
+4. **Two-reader error** (`error.tsv`, rule as F36-READ: (split + one-sided) / positions):
+
+| scope | positions | agree | one-sided | split | E |
+|---|---|---|---|---|---|
+| r36n_L09-L14 (new) | 248 | 210 | 7 | 31 | **0.153** |
+| kept F36-READ rows | 700 | 467 | 40 | 193 | 0.333 |
+| whole letter | 948 | 677 | 47 | 224 | **0.286** |
+
+   Per row 0.079-0.227. Systematic splits: S24/S73 (5), S80/S65 (5), S73/S49 (4), S94/X_POUND (2), S16/S42 (2) -- the known look-alike pairs.
+5. **Control (rule 3)**, `decode_control.py passD_v2.tsv --shuffles 200 --windows 20 --err 0.286 --extra X_THETA2=r --seed N`, power at the
+   measured whole-letter error:
+
+| seed | input | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at 0.286 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | blind (before reconciliation) | 948 / 690 | -1.3919 | -2.0546 (0.114) | -1.7446 | 5.80 | 1/201 | 20/20, z median 5.86 (min 4.24) |
+| 2 | blind | 948 / 690 | -1.3919 | -2.0719 (0.115) | -1.7312 | 5.91 | 1/201 | 20/20, z median 6.43 (min 4.38) |
+| 3 | blind | 948 / 690 | -1.3919 | -2.0790 (0.099) | -1.7967 | 6.92 | 1/201 | 20/20, z median 6.16 (min 3.70) |
+| 1 | reconciled | 947 / 710 | -1.3696 | -2.0554 (0.110) | -1.7448 | 6.25 | 1/201 | 20/20, z median 6.71 (min 5.09) |
+| 2 | reconciled | 947 / 710 | -1.3696 | -2.0699 (0.108) | -1.7747 | 6.51 | 1/201 | 20/20, z median 6.55 (min 4.30) |
+| 3 | reconciled | 947 / 710 | -1.3696 | -2.0793 (0.091) | -1.7916 | 7.82 | 1/201 | 20/20, z median 6.64 (min 3.95) |
+
+   Against F36-READ (real -1.5051, z 4.59-5.11, power 19-20/20 at 0.33): the real-key score rises by 0.11-0.14 per letter and z by
+   about 1.2-2.7 with the same shuffle distribution, i.e. the recut rows read better under the printed key; the key stays control-backed.
+6. **decode_key** (`python3 tools/decode_key.py ciphers/birago-fr3252-1571-72 --check`, pasted): `harvest/f36r/ciphertext_f36_v2.tsv: tokens 947:
+   M 718, U 229` / `reading up to date`. `merge_f36r.py --check`: `OK, not stale`.
+7. **Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ciphers/birago-fr3252-1571-72/harvest/f36r/reading_key_v2_letters.txt`, pasted):
+```
+FAIL language: score=-1.487, null_p99=-1.777, real_p05=-0.929, real_median=-0.826, mode=both, N=710
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+   Up from -1.559 (F36-READ), still between null p99 and real p05: a third of the kept rows' signs are still unsettled or misread.
+8. **Grades (rule 4).** 947 positions: 19 null; 229 U (204 '?' + 25 X_NEW, no key value); 699 decoded: **10 C** (v36top_L01, unchanged), **689 M**;
+   0 H, 0 S. Not a reading. decode_key writes the 10 C as M (it has no C grade; the C is compare_f36.py's period-gloss match).
+   Fragments of the new rows (M, gist only): r36n_L11 "tempo...", r36n_L12 "...ueseresel...", r36n_L14 "...mesequemta..." ("me se que"?) -- not sentences.
+
+Subagent use: 3 Sonnet calls (2 blind passes + 1 reconciliation), as priced in the brief. One mishap: a `git stash -u` to push while pass B
+was still appending removed its first two rows; restored from the stash the same minute (row counts verified 44/43/41/40/38/38).
+
+## Remaining gaps (F36R-REREAD, 3 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs (two-reader E 0.286, key control-backed z 5.8-7.8, power 20/20); f.47r: 0 S of about 770; f.117r: 276 signs, all M/U.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles (each sign box with the band above it, from passD_v2 positions, 40 per grid image, the sign id printed under each), two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; r36_L01-L08, v36top, v36mid and r37 were read on HARVEST-D's eye grid, which the row-ink profile matched within 10-45 px there; next: one reconciliation call on their splits (as this job did for r36n), disk only, ~$1.5
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
+
+## Escalation (F36R-REREAD, 3 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ), the fr.3251 1572 group's sheet, maps, clerk key and controls used
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 whole letter (control-backed, F36-READ; re-run on the recut transcription, F36R-REREAD) and f.47r (NEVBIR-47); 1572 key on f.117r (z 3.2, judge FAIL); Nov 1571 system has no key
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles (running-line reads retired, F36-GLOSS); f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 decoy-null crib test
+- [x] image-check: f.36r rows r36n_L09-L14 recut on the row-ink profile and re-read (F36R-REREAD); f.36-37 gloss crops re-cut (F36-GLOSS); f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
+Verdict: keep going: 9 internal gaps; cheapest next: one reconciliation call on the kept f.36-37 rows' splits (~$1.5), then the per-sign tile gloss read (~$8) once the rate limit reads allowed
