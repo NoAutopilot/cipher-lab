@@ -1026,3 +1026,33 @@ as evidence either way. The next instrument works on pixels, not OCR lines: find
 column crop and test whether its left edge sits at the margin or at the hanging indent (the row is the unit, so OCR
 merges cannot hide a headword), calibrated on the same 33 groups with the same gate.
 Requests: archive.org 3 (metadata/files list, the hOCR file, page_numbers.json), 1.5 s apart. Vision calls 0, subagents 0.
+
+## Pixel indent counter (A1B-LIN-PIX, 3 Oct 2026) -- PRE-REGISTRATION (written and pushed before any scored run)
+
+Instrument: `ciphers/antt-linhares-chave/hocr/pixel_indent_count.py` (method in its docstring) on the page images
+already on disk (`images/book/*_leafNNNN_*.jpg`, 949 x 1076, exactly half the 400 dpi hOCR page). A different instrument
+from A1B-LIN-HOCR's: the unit is the pixel text row (row-ink profile of the column crop, rows split at minima when a
+run is over 1.6x the median height), and a row is a headword iff its left ink edge sits within T = 10 px of a
+skew-fitted margin line (hanging indent ~20 px at this scale). Column rules are blanked (vertical-window rule mask,
+a fitted slanted-line mask, and sliver skipping). hOCR is used only for the column borders and, to score a known word,
+for the y of the best-matching OCR word lying at the column's flush margin -- never for line segmentation, so the
+merged-line failure of A1B-LIN-HOCR cannot recur in the count itself. `tools/` was checked first (Usage 8):
+`iiif_lines.py` segments page lines by ink profile but has no columns or indent test; nothing else counts ranks.
+Parameters (T = 10, row threshold 4% of column width, split 1.6x, rule masks) were set on the tuning leaves 92-94,
+96-97, 100-103 only -- none is a calibration leaf or a target leaf (95, 255); their edges are bimodal at 0 and ~20 px.
+hOCR file: `newpocketdiction00viey_hocr.html` re-fetched once to the scratchpad (78.5 MB, not committed).
+
+Calibration: the same 33 groups (`hocr/calibration.tsv`). For each, the counter's rank of the pixel row holding the
+best hOCR match for the expected headword (ratio >= 0.5, and no other row within 0.02 of it) = hit if equal to the
+key's rank, MISS if different, unlocated if ratio < 0.5, a tie, or no row. **Gate: PASS iff MISS = 0 and unlocated <=
+3 (exact rank), the gate A1B-LIN-HOCR used.** No re-tuning after the calibration result; a FAIL stops the job and
+logs the counter "untestable by this instrument" on this scan (rule 3: second instrument, first attempt).
+What settles each gap (read only if the gate passes):
+- 83/2 (leaf 95 col 2, "cagar"): if the counter's rank-19 row is the "Cagar" row (located as above), the column-count
+  objection (LX-QAFIX's 18) is resolved for 28[3]219; the token stays **M**, since its grade rests on the caret digit's
+  shape, which this instrument does not see. If the column has fewer than 19 flush rows or "Cagar" sits at another
+  rank, 283219 goes to unresolved (U) at the column-count level.
+- 241/3 (leaf 255 col 3, "justa"): whichever of "Jus" / "Justa" the counter places at rank 15 is the reading, graded
+  **H** if it agrees with at least one earlier independent count (LX-DEC: Justa; LX-DEC's subagent and LX-QAFIX: Jus);
+  also reported: whether "Junto, prepos." heads col 3 as its own flush row.
+- If the relevant row is unlocated, that gap stays as it is and the job says so.
