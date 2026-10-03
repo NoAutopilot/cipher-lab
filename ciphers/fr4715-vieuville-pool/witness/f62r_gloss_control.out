@@ -1,0 +1,3 @@
+  span 60 23 83 84 25 30 23 1 -> messager | gloss emessagre
+  span 95 23 73 25 90 -> tenay | gloss fontenai
+letter spans used (C/M): 2; REAL mean ratio 0.796; permuted-key mean 0.239 p95 0.389 max 0.602; shuffles >= REAL 0/1000 (p 0.0010)

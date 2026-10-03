@@ -1,0 +1,7 @@
+# Word-code values read from the period interlinear glosses on no.39 f.62r (GAPS-fr4715-vieuville-pool-11, 3 Oct 2026).
+# The leaf cleared its own rule-3 control (scripts/f62r_gloss_control.py: letter-cipher gloss spans vs the printed letter key, REAL 0.796 vs permuted-key p95 0.389, 0/1000), so its word-code glosses may enter a key; each is glossed once on the leaf and placed just right of its barred group (adjacency), so none is above the grade of its own reading.
+# grade C = A and B agree on code and gloss; M = settled by the reconciler or legible in part (witness/f62r_glosses_reconciled.tsv). Not used by decode.json (as for key_wordcodes_f60r.tsv's values carried to no.44, the no.44 carry is in witness/f67r_wordcodes_context.tsv at M).
+sign	value	grade	class	count	source	note
+.14	Card de bourbon	C	person	1	f.62r interlinear gloss L14	right of the barred 14, over 'pour le visite'; A and B both H
+.13	Narre	M	person	1	f.62r interlinear gloss L18	right of the barred 13, over 'a L(imoges)'; A read the group 17, B and R 13 (hooked 3, code H); gloss A Narre, B Narrs, R Narre (looped e); 'Narre' is read as written, not expanded
+.52	Normandie	M	place	1	f.62r interlinear gloss L23-24	two strokes over 52 (unmarked 52 is the letter t in the printed key); right of 52 over 'par a'; A Normandie, B Novembr, R Normandie

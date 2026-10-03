@@ -1,0 +1,14 @@
+# fr4715-vieuville-pool no.39 f.62r interlinear glosses, reconciled (GAPS-fr4715-vieuville-pool-11, 3 Oct 2026). Passes A (forward) and B (reverse), Opus 5.5 blind; disputes settled by R (witness/f62r_gloss_recon.tsv).
+# gloss = as read by R (not normalised to any decode).
+# grade for this leaf (rule 4): C = A, B agree on code and gloss at H/M; M = legible in part or settled by R only; L = a few letters. kind: span = gloss over a letter-cipher run; word = gloss beside a barred/dotted word-code (placement right of the group, adjacency); insert = over clear text.
+site	code	mark	gloss	grade	kind	witnesses
+S1	60 23 83 84 25 30 23 1	none	e messagre	M	span	A ce messagre / B e messagu (digits 05 30 54) / R e messagre, digits as A plus 23 1; letter key: messager
+S5	95 23 73 25 90	none	fontenay	M	span	A fontarras / B fontenay / R fontenay, spanning 23-90 and touching 95 (R); scored as read against these five groups only
+S6	50 85 63	none	jitet	L	span	A ?ite? (63 50 85) / B jitet (50 05 63) / R jitet, run 30 63 50 85 63
+S7	2a 75	bar over 2a	estragier amo?au	L	word	A estrangers am?ab / B estragie? amo?u? / R estragier amo?au
+14	14	bar	Card de bourbon	C	word	A Car de bourbon H / B Card de bourbon H; right of the barred 14 over 'pour le visite'
+13	13	bar	Narre	M	word	A Narre over barred 17 / B Narrs over barred 13 / R 13 (code H, hooked 3), Narre (looped e); right of the bar, over 'a L(imoges)'
+52	52	two strokes	Normandie	M	word	A Normandie / B Novembr / R Normandie; right of 52 over 'par a'
+S4	G-sign	-	nav	M	word	A nav over barred 7 / B nav over Lavyan+G / R over -an of Lavyan and the G-sign, not over the barred 7
+S8	11	none	b de	M	insert	A b de / B bdx / R b de over 'qu', right of 11 (or ii); hand not settled
+S9	-	-	dit	M	insert	A, B dit over clear text between 'aultre/aubrie' and 'escript'
