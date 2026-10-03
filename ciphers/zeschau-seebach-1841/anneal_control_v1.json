@@ -1,0 +1,30 @@
+{
+ "mode": "control",
+ "K": 98,
+ "N_tokens": 2666,
+ "units": 98,
+ "inventory": 277,
+ "error_rate": 0.01,
+ "seeds": [
+  {
+   "seed": 2021,
+   "score": -3459.0,
+   "token_acc": 0.0696
+  },
+  {
+   "seed": 2022,
+   "score": -3460.4,
+   "token_acc": 0.0274
+  },
+  {
+   "seed": 2023,
+   "score": -3534.0,
+   "token_acc": 0.0
+  }
+ ],
+ "mean_token_acc": 0.0323,
+ "gate": 0.6,
+ "verdict": "CONTROL BELOW GATE",
+ "note": "attempt 1, summed log10 objective (PREREG-GAPS202 as first written); diagnostic: the control's own true key scores -3762.7 (4,274 letters, -0.88/letter) vs the annealer's best -3459.0, so the objective's optimum is not the true key (shorter decodes and over-fitted units score higher)",
+ "true_key_score": -3762.7
+}

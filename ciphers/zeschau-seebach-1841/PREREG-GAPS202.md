@@ -53,3 +53,13 @@ CC BY 4.0 text, credited); R5006 (GAPS175/179) and R5007 (GAPS190/196) are ours.
   this N (ARM-C1 rule).
 - Outcome wording: any reading is S at most where the control passed and M otherwise; pins I. A candidate that
   clears the judge AND whose shuffled twin FAILs gets a "reading ready" ROOM flag; no status change.
+
+## Addendum A (3 Oct 2026, 19:1x UTC, after control attempt 1, before attempt 2; target never run)
+Attempt 1 (as written above): control mean token accuracy 0.032 (seeds 0.070 / 0.027 / 0.000), CONTROL BELOW GATE;
+`anneal_control_v1.json`. Diagnostic: the control's own true key scores -3762.7 under the summed objective while the
+annealer reached -3459.0, so the search is not the limit, the objective is: a summed log-probability rewards decodes
+with fewer letters. One change only, nothing else touched (inventory, moves, seeds, gate, pins, corpora unchanged):
+objective J = (summed log10 4-gram probability / decoded letter count) x token count (length-neutral, same
+magnitude so the temperature schedule is unchanged). The true key's J is reported beside the annealer's. If attempt 2
+is also below the gate, the step is logged "untestable by this annealer at this N" (rule 3 repeated-attempt clause
+reached at the next try; no third tuning of the objective), target not run.
