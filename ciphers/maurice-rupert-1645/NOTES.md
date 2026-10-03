@@ -277,9 +277,9 @@ those 17 score worse than shuffled keys.** Status stays `open`.
   (4 for 8443, 2 for 8444; 13-14 MB each). Neither record has a document or transcription attached ("Documents 0").
   The metadata reads 8443 Author "P. R. (Prince Rupert?)", Receiver "Osborne"; 8444 Receiver "Hen?Osborne". The DECODE
   author/receiver fields look reversed against the BL catalogue (Osborne to Rupert); the leaves end "Your Highness's
-  most faithful ... servant, Hen. Osborne", dated Dover? (place unread). Committed: thumbnails, two 2400 px crops of
-  8443 P4 and `osborne/fullsize_sha1.txt`. The originals and the scrubbed-of-nothing HTML pages were not committed (the
-  account name is on them).
+  most faithful ... servant, Hen. Osborne", place and date line not transcribed. Committed: thumbnails, two 2400 px crops of
+  8443 P4 and `osborne/fullsize_sha1.txt`. The full-size originals and the two RecordsView pages were not committed (the
+  pages carry the account name).
 - **What they hold.** Letters in clear with numbered cipher passages, each with a **period interlinear decipherment**
   above the numbers. 8443 P4 (the second leaf's recto) carries most of it (about 20 cipher lines); 8443 P1 and 8444 P2
   carry a few more lines. Only 8443 P4 was read (vision cap 3: one overview, two crops). 8443 P1/P2 and 8444 P2 cipher
