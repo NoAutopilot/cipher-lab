@@ -705,3 +705,22 @@ queries, every plausible hit opened and its comment thread read (WebFetch; one r
 Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, never a
 novelty verdict, rule 10). The status word stays `blocked` (line 1) on the unread Ferrari 1999 essay, LOCAL-QUEUE.tsv
 row L33, not on this check.
+
+## Crib test on `suofratel` with a repeat control (A2-PAL, account 2, LANE-A2PUSH, 3 Oct 2026)
+
+Intake gate before work (01:21 UTC): `tools/intake_gate_check.py fr4687-paleologue-nevers` -> `fr4687-paleologue-nevers:
+blocked (line 1) -- already terminal, nothing to gate`, exit 0. Status word unchanged (`blocked`, Ferrari 1999, LOCAL-QUEUE L33);
+this step is the compute-only follow-up named at the end of "Full text: extras reconciled and solver rerun".
+
+**Pre-registration (written and pushed before any control or target run).** Script `solver/cribs_repeat.py`. Control:
+held-out Italian (`solver/control_heldout.txt`, unseen by `it16_train`), 540 letters, random homophonic key over the
+1x/2x + y-letter inventory, the target's line lengths, 10 % sign noise; a 9-letter window of its own plaintext on 9
+distinct units is copied 110 letters later with the same units, both copies protected from noise (as the target's anchor
+`17 9 6 10 20 4 y 3 18` is seen intact twice). Seeds 1, 2, 3 (it16_train model). Cribs: the true window, 11 wrong
+candidates (`cardinale francesco guglielmo monsignor suamaesta ilducadis monferrat lacorteet cheilrede nostrofra
+ostrofrat`, cribs.py's 20 cut for the 45-min box) and `suofratel` as a wrong crib. Each crib: 6 restarts x 150,000
+iterations, constrained score per unit. Statistic: rank of the focus crib and its margin over the best other crib.
+Control passes a seed if the true crib ranks 1st with margin >= 0.30/unit; gate met at >= 2 of 3 seeds. Target
+(it16_all model, the same 11 wrong cribs) runs only if the gate is met; `suofratel` reads only if it ranks 1st with
+margin >= 0.30/unit. The margin depends on the cipher text itself, so the control's number can differ from the target's.
+No token is graded unless both pass.
