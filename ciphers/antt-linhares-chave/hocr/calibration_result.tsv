@@ -1,0 +1,35 @@
+src	group	leaf	col	rank	headword	counter_rank	ratio	line_at_rank	verdict
+example	322212	236	1	2	Guerra	3	0.86	Gné^rra, s. f. war ; a/w the art	MISS
+example	313312	147	1	2	De	2	1.00	De, prep, from, of. Deaqui,	hit
+example	321118	225	1	8	Franco	8	1.00	Franco, a, adj. fiee from duties,	hit
+example	23812	48	1	2	Anao	2	0.86	An^õ, s. m. a dwarf. Set	hit
+example	311021	124	2	1	Com	24	1.00	ofCom, prep, with, tojretlier	MISS
+example	1412	14	1	2	Abicar	3	0.83	Abicàdo, a, part, of khiar.Es-	MISS
+example	3344325	362	3	25	Rustico	25	1.00	Rústico, a, adj. clownish, rus-	hit
+example	335422	372	2	2	Sillaba	2	1.00	Sillaba, s. f. a syllablp.	hit
+example	1811	18	1	1	Acaso	20	0.80	Acisr», 9. m. hazard, chanc€.	MISS
+example	3290219	306	2	19	Parecer	27	0.88	P.irddso, a, adj. iron-grey.	MISS
+example	3234124	248	1	24	Inevitavel	24	1.00	Inevitável, adj. laevitiible.	hit
+live	328928	305	2	8	Para	8	1.00	Pára, prep. for. Aquelle he	hit
+live	336227	380	2	7	Supprir	7	1.00	Supprir, V. a. to supply. —	hit
+live	328511	301	1	1	Ovo	1	0.57	Oro.s, m. an egp. Par ovos,	hit
+live	335412	372	1	2	Seu	2	0.57	Séii, Sua, (a pronoun posses-	hit
+live	3251217	265	2	17	Lugar	17	1.00	Lugar, s. m. a place ; al<o a vil-	hit
+live	3241220	255	2	20	Junto	20	1.00	Junto, a, adj. joined, puttoge-	hit
+live	325532	269	3	2	Mando	1	0.77	Mfindo, s. m. command, power.	MISS
+live	328521	301	2	1	Ouros	1	1.00	Ouros, Í. m. pi. the suite of	hit
+live	313211	146	1	1	D	2	1.00	-U» One of the mntes, suppos-	MISS
+live	322332	237	3	2	Hernia	2	0.83	Héniia, s. f. hernia. Hrnia	hit
+live	3350320	368	3	20	Segredo	10	1.00	Seftrír, v. a. to follow. ]	MISS
+live	260118	72	1	18	Ate	18	1.00	Até, preposition; till, even, up	hit
+live	328131	297	3	1	Odio	1	1.00	Odio, s. m. hatred.	hit
+live	326624	280	2	4	Ministerio	4	0.95	Minist/'rio, s. ni. ministry, ser-	hit
+live	3295112	311	1	12	Pela	12	1.00	Péla, prep. — Ptia raiuka, by	hit
+live	326223	276	2	3	Memoria	4	1.00	Memóiia, s. f. memorj-, or re-	MISS
+live	316211	176	1	1	Dormitar	1	1.00	Dormitar, v. u. to nod, to slum-	hit
+live	324726	261	2	6	Lhe	7	1.00	j Homem lhano, a downiight	MISS
+live	3293211	309	2	11	Pauperrimo	11	1.00	Paupérrimo, a, adj. verj' poor.	hit
+live	338326	401	2	6	Venablo	5	0.80	V'cnil, adj. venal, mercenary.	MISS
+live	322231	236	3	1	Habil	2	1.00	' words in Portujnie.-c.	MISS
+live	3250121	264	1	21	Logo	21	1.00	Logo, adv. presently. Aqui	hit
+# tol 20: hit 21, MISS 12, unlocated 0 of 33 -> FAIL
