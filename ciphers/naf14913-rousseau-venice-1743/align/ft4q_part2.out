@@ -1,0 +1,37 @@
+# part2 f249: 111 groups, 355 letters, 722 at group 76 (context 347 722 476); sublimit 10
+REAL 722=ti: E 1 (14.1 s); in slip True
+draw ti 0 lm E 0 timedout False 4.6
+draw ti 1 ep E 1 timedout True 108.8
+draw ti 2 rn E 1 timedout True 89.2
+draw ti 3 ur E 1 timedout True 99.5
+draw ti 4 ch E 1 timedout True 24.1
+draw ti 5 ai E 0 timedout False 5.8
+draw ti 6 uo E 1 timedout True 40.2
+draw ti 7 mo E 1 timedout True 29.8
+draw ti 8 ll E 0 timedout False 4.4
+draw ti 9 il E 1 timedout True 29.1
+draw ti 10 sd E 1 timedout True 25.2
+draw ti 11 eu E 1 timedout True 31.1
+draw ti 12 ru E 0 timedout False 4.3
+draw ti 13 fo E 1 timedout True 50.5
+draw ti 14 ay E 1 timedout True 33.6
+draw ti 15 nu E 1 timedout False 9.1
+draw ti 16 ar E 1 timedout True 78.8
+draw ti 17 nc E 1 timedout True 83.9
+draw ti 18 ta E 1 timedout True 38.5
+draw ti 19 tn E 1 timedout True 27.2
+CONTROL 722=ti: same-length random pins n=20: E=1 in 16 (share 0.800); unresolved counted high 15
+REAL 722=i: E 1 (26.7 s); in slip True
+draw i 0 h E 1 timedout True 27.3
+draw i 1 v E 1 timedout True 39.0
+draw i 2 u E 1 timedout False 23.0
+draw i 3 e E 1 timedout False 28.5
+draw i 4 o E 1 timedout False 25.4
+draw i 5 r E 1 timedout False 29.2
+draw i 6 m E 1 timedout True 97.0
+draw i 7 y E 1 timedout True 43.5
+draw i 8 n E 1 timedout False 29.3
+draw i 9 q E 1 timedout True 118.9
+draw i 10 b E 1 timedout True 119.5
+draw i 11 a E 1 timedout False 20.9
+# FT4q: stopped by the worker at 12:13 UTC after draw 11 of 20: 12 of 12 E=1 (7 resolved fits), so s_i >= 12/20 = 0.60 > 0.10 whatever draws 12-19 give; the registered non-test verdict for 722=i is fixed.
