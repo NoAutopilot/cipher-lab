@@ -21,3 +21,7 @@ Record snapshot: decode-2765-recordsview-2026-09-28.txt (the page's metadata blo
 - DECODE: RecordsView/2765 read directly (above). Siblings in the same volume also Decrypted: 2766 (f.79-83bis), 2767 (f.84-87).
 
 Requests: de-crypt.org 1; github.com 4 clones; web search 6.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no reading by this project: status found-solved (DECODE 2765 Decrypted, Tomokiyo's key); nothing of ours to judge. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

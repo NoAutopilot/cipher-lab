@@ -221,3 +221,7 @@ Next action that depends on nobody: re-view canvases 355-356 of btv1b10035540v a
 docket, any slip) through `tools/gallica_folio.py`/`tools/iiif_lines.py`, then a crib test of the three enciphered
 names against the Diet of Regensburg pensioners of 1664-65 (Fürstenberg circle, Rhine League envoys) named in
 Gravel's printed dispatches.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no reading: status open, passA.tsv transcription only, no decoding attempted (NOTES 'No decoding attempted'). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

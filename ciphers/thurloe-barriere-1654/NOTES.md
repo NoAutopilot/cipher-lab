@@ -714,3 +714,7 @@ only.
 minimum working time); this section's work (mark typing, reconciliation, the shuffle test, the marked
 permutation rerun, this write-up) finished at approximately the 51-minute mark, inside the box, having reached
 the brief's own stop condition (a clear numeric verdict on both live hypotheses named in the brief).
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no decoded text: the 30-code gloss key reads 120/400 tokens (coverage test only, no reading file), status closed-negative. Spec judge block switched to fr17 + language_also fr (SPEC-FR17 shape) so any later reading is judged under both. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

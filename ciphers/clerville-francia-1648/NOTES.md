@@ -74,3 +74,7 @@ DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and lat
 - (d) not found/unreachable: no French-side edition (Mazarin letters, Recueil des instructions) identified; a Gallica/IA search of the 27 April 1648 date with Este envoy names is the next step.
 
 Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

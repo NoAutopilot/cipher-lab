@@ -171,3 +171,7 @@ f.189ff., f.200ff., f.230ff.) are the same office's work 2-6 months later and ar
 Result: no plaintext of f.50 found; the blocker stays DECODE R2742 (login needed to see its documents). Status line
 unchanged.
 Requests: gallica.bnf.fr 5 (IIIF image, 200 each, 2 s apart); github.com shared clones.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no reading: status blocked (DECODE record question). Mazarin tome I circularity check therefore not run; it applies as soon as a reading exists. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

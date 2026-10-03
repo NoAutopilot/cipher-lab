@@ -87,3 +87,7 @@ Requests: de-crypt.org 25; archive.org 11 (be-api 12 fts calls incl. per-volume,
 
 Not found solved or deciphered in any source above (found where: none; not found in: the sources listed, searched 3 Oct 2026). Status stays `blocked`: the only unread piece is the images, which need a reading-room visit (REQUEST.md); not a novelty statement. While waiting: open Troyes Ms 2236 via CCFr/Calames for plain copies of the 1659 letters (no one else's reply needed), and grep Chéruel vols 4-7 by date.
 
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

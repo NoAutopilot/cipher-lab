@@ -345,3 +345,7 @@ Requests this pass: archive.org 5 (1 advancedsearch, 2 metadata, 2 djvu.txt), >=
 github.com 3 shallow clones (shared across this batch's three targets).
 
 Gate re-run (GF4-BATCH11, 3 Oct 2026): `clair571-estrades-1645: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status open, leaves not digitised (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

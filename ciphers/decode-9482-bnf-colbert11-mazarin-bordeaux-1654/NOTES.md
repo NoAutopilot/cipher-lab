@@ -57,3 +57,7 @@ reading. No novelty claim made or implied (rule 10); this is a verifier-scope ca
 
 DC6's `held_by` should be `bourdeau:bordeaux`, not `none`, and its status is found-solved, not an open
 transcription lead. See ROOM.md flag, 24 Sept 2026.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no reading by this project: status found-solved (Lasry 2025 per Cryptiana); nothing of ours to judge. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

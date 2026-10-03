@@ -168,3 +168,7 @@ not checked (not online). Not a decipherment of the item.
 Result: no plaintext of the instruction found in print or online; status line unchanged (`blocked`, waiting on the
 microfilm order).
 Requests: archive.org 1 advancedsearch + 2 `_djvu.txt` (one 500, not retried); github.com shared clones.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status blocked (not digitised, REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

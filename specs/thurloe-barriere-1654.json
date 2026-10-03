@@ -52,7 +52,9 @@
   }
  ],
  "judge": {
-  "language": "fr"
+  "language": "fr17",
+  "language_also": "fr",
+  "era_note": "fr17 (tools/data/fr17, 1617-1644 Richelieu/Peiresc/Chapelain/Mazarin letters, period spelling) is the nearest-era corpus for this 1654 letter (ten years past its last file); tools/data/fr17/README.md 'Use' says run both fr17 and the fr default (fr16) for a 1615-1665 French target and report both; a PASS under one and FAIL under the other is 'judge cannot decide'. Set by FR17-RJ2, 3 Oct 2026; no candidate reading is on disk for this target, so nothing has been judged under either."
  },
  "written": "25 Sept 2026, TX-BARRT (LANE TX), for .claude/briefs/runs/2026-09-25-lane-tx-barrt.md"
 }

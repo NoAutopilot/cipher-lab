@@ -90,3 +90,7 @@ Drop N4 from the board entirely; nothing here needs an access route, a copy orde
 If anyone wants to sanity-check DECODE record 2768 against Tomokiyo's nomenclature (a Bourdeau/Aymeloglu-
 style verification of an already-claimed solve), that is a much smaller, separate task and not this
 project's lane per README "What counts as a result".
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no reading by this project: status found-solved (Tomokiyo's key; DECODE 2768 Decrypted); nothing of ours to judge. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

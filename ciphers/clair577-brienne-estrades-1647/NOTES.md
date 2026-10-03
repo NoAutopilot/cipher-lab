@@ -40,3 +40,7 @@ Re-run by this worker; the HARVEST-B section above stands.
 - (d) Recipient's and sender's editions: the recipient's edition (Saint-Léger/Lemaire) was read as above and stops in 1646 for letters; d'Estrades's later *Lettres, mémoires et négociations* (1743) covers 1663 onward by title, not opened by this worker. Brienne's printed correspondence for 1647 was not found by the searches above; Mazarin's Lettres (Chéruel) was not searched for this date. Not found where read; the unopened editions are listed, not cleared.
 
 Next step (names the owner-side route): image of Clairambault 577 p.741 -- REQUEST.md in ../clair577-estrades-piombino-1647 item 2 / ASKS row 94, or a person asking Tomokiyo or Lasry for their image of the page.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status blocked. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

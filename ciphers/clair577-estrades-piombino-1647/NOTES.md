@@ -37,3 +37,7 @@ Re-opened, not copied from HARVEST-B: Tomokiyo's cryptiana.web.fc2.com/code/loui
 Verdict stays blocked: image. Next: REQUEST.md (ASKS row 94) or an email to Tomokiyo/Lasry for the p.521 image.
 
 Requests (CS-A2-N): cryptiana.web.fc2.com 1, archive.org 4, gallica.bnf.fr 4, github.com 2 clones.
+
+## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
+
+No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.

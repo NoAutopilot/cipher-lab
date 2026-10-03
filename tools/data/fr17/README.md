@@ -80,5 +80,24 @@ Circularity check before re-judging colbert26-lathuillerie-1644 and baluze103-le
 to June 1644, so grep the target's reading against `lettresducardina01maza.txt.gz` first; if it is printed there, judge
 with that file left out (`"corpora"` in the spec).
 
+## Re-judge, rest of the list (FR17-RJ2, 3 Oct 2026)
+
+None of the twelve remaining targets has a committed candidate reading, so no judge, shuffled-decode or per-fold run was made; nothing changed verdict. Already judged elsewhere: baluze156-1636 (REJUDGE-FR17), clair1067-brienne-poland-1646 and fr5160-letellier-1653 (SPEC-FR17), riksarkivet-r4282-1628 (GAPS65); colbert26-lathuillerie-1644 skipped (parked by the owner).
+
+| target | N | fr16 | fr17 | shuffled fr17 | verdict change | note |
+|---|---|---|---|---|---|---|
+| thurloe-barriere-1654 | -- | not run | not run | not run | none (no reading on disk) | spec judge block now fr17 + language_also fr; coverage test only, no reading file |
+| davaux-1633 | -- | not run | not run | not run | none (no reading on disk) | found-solved, no reading of ours |
+| arsenal6314-hanau-1635 | -- | not run | not run | not run | none (no reading on disk) | blocked, no ciphertext |
+| arsenal6334-longueville-1650-59 | -- | not run | not run | not run | none (no reading on disk) | blocked, no ciphertext |
+| baluze103-letellier-marca-1644 | -- | not run | not run | not run | none (no reading on disk) | blocked; Mazarin I circularity check waits for a reading |
+| clair571-estrades-1645 | -- | not run | not run | not run | none (no reading on disk) | open, not digitised |
+| clair577-brienne-estrades-1647 | -- | not run | not run | not run | none (no reading on disk) | blocked |
+| clair577-estrades-piombino-1647 | -- | not run | not run | not run | none (no reading on disk) | blocked |
+| clerville-francia-1648 | -- | not run | not run | not run | none (no reading on disk) | blocked |
+| decode-9482-bnf-colbert11-mazarin-bordeaux-1654 | -- | not run | not run | not run | none (no reading on disk) | found-solved, no reading of ours |
+| baluze178-croissy-mazarin-1660 | -- | not run | not run | not run | none (no reading on disk) | found-solved, no reading of ours |
+| decode-2678-bnf-colbert127-gravel-1665 | -- | not run | not run | not run | none (no reading on disk) | open, transcription only |
+
 Test: `tools/tests/test_judge_plaintext_lang_fr17.py` (held-out 1640 Chapelain passage past the cap passes; shuffled
 and random fail; corpus >= 5 files and >= 1M letters and does not contain the passage).
