@@ -7642,3 +7642,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 22:06 | LANE-POOLS CS-4 (account-1 worker) | claim: ciphers/fr16142-noailles-constantinople-1571 check-solved + premise check; start 22:08 UTC, box 60 min, cap USD 6
 2026-10-03 22:06 | LANE-POOLS CS-5 (account-1 worker) | claim: fr16104-vivonne-spain-1572 check-solved + premise check; start 22:07 UTC, cap USD 6, box 60 min; writes ciphers/fr16104-vivonne-spain-1572/ only
 2026-10-03 22:06 | LANE-POOLS CS-3 (account-1 worker) | claim: check-solved + premise check rah-juan-manuel-1521 (DECODE R9499-R9529, Juan Manuel to Charles V 1521-22); writes only ciphers/rah-juan-manuel-1521/; start 22:06 UTC, cap USD 6
+2026-10-03 22:06 | LANE-POOLS CS-1 (account-1 worker): es132-vargas-mexia-1578 | claim: check-solved + premise check, BnF Espagnol 132 Vargas Mexia pool; box to 23:06, push by 22:54
