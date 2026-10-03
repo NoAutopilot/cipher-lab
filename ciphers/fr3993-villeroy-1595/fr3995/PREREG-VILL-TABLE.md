@@ -20,3 +20,25 @@ Certification rule: a target sign (P pi, V varpi, Q theta, W infinity, T tau, R 
 value only if BOTH readers call it SAME (as VILL-SIGNS/VILL-NOMEN) and both read the same plaintext letter (or "null")
 for it. LIKE or one-reader-only = not certified. No reading of the target is committed from this job; any certified
 signs go to keys/ as M and the power re-run is a later job (signs_score.py method, gate 16/20).
+
+## Addendum A1B-VILL-57-44 (3 Oct 2026, ~17:05 UTC, committed before any crop of f162/f198-f200 is viewed)
+
+Brief .claude/briefs/runs/2026-10-03-acct1-a1b-vill-57-44.md, steps (k) then (j). Same certification rule as above
+(both readers SAME + same plaintext value, else not certified; certified signs go to keys/ as M only).
+
+(k) no.44 f.82v (canvas f162): native crops via iiif_lines of the right-hand symbol column (and the lower names block if its
+symbols fall in the same crop). Call 1: reader A (worker) looks at the crop beside images/f148r_ct_stack.jpg and lists, per
+table symbol, SAME / LIKE / NO against the target signs P pi, V varpi, Q theta, W infinity, T tau, R reversed c, L lambda,
+w, +, K. Only if A calls at least one SAME is call 2 spent: reader B (Sonnet subagent, blind to A) does the same. A sign
+called SAME by both, with both reading the same table entry for it, is certified at M (here a symbol means a word/name code,
+so a certified value is a code meaning, not a letter). Otherwise log "no target sign among no.44's symbols at native
+resolution" (search result, M).
+
+(j) no.57: one overview call on canvases f198-f200 (iiif_lines --debug reference copies, tiled) to locate the table. It is a
+family candidate only on the original rule (figure codes in the alphabet AND at least 2 of pi/varpi/theta/infinity). If a
+candidate: native crops of the rows carrying those signs, read blind twice (A worker, B Sonnet subagent) as above. Scoring
+(power check rank 1 of 201 with 20 synthetic French texts; coverage < 0.5 = "not testable") is run only if signs are certified
+and the resulting key covers >= 0.5 of the target; otherwise no score is computed.
+Vision budget for this job: at most 5 calls total; stop before any call that would cross 80 pct of USD 8 or of the 50-min box.
+Tool shelf: glyph_atlas.py (proven) not used -- a dozen table symbols against ten target signs is one visual comparison, not a
+segmentation/clustering job.
