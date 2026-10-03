@@ -6476,3 +6476,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 04:53 | A2-GRA5 (account 2, LANE-A2PUSH2) | claim: fr2980-gramont -- Verdict cheapest next step (clear-pages crib alignment of LP iv(3) 6244/6245 summaries vs f.30 ext); cap USD 3, box ends 05:33 UTC
 2026-10-03 04:53 | A2-COL16 (account 2, LANE-A2PUSH2) | claim: colbert26-lathuillerie-1644 -- Verdict step: anchor-split pairing vs control B; cap USD 2, box ends 05:23 UTC
 2026-10-03 04:53 | A2-DIN2 (account 2, LANE-A2PUSH2) | claim: fr3621-dinteville-1592 -- Verdict cheapest next step (f.130 transcription + key_syl.tsv decode vs shuffled-key control); cap USD 7, box ends 05:55 UTC
+2026-10-03 04:53 | A2-RAA10 (account 2, LANE-A2PUSH2) | claim: na-raad-azie-1800 -- Verdict cheapest next step (stronger bottom-digit statistic, POS power check first); cap USD 1.5, box ends 05:18 UTC
