@@ -18,6 +18,8 @@ Six-source sweep by this worker (session CX2-BRIT2), all queries and URLs logged
 
 ## Verdict
 
+**3 Oct 2026 (GAPS47):** still open, parked. BL Add MS 30305 has no Maurice letter and no 7 July 1645 item, but its f.86 "Keys to cyphers" (Charles I; Nicholas 1646-58) are undigitised; added to REQUEST.md. The Bodleian MSS Firth c. 6-8 record (Warburton's transcripts) is Anubis-blocked from the cloud: LOCAL-QUEUE L43. gaps_check: parked.
+
 **3 Oct 2026 (FT4f):** still open. The BL item lists of Add MS 18980-82, the current DECODE listing and all three Warburton volumes hold no key and no decipherment of this letter; the 7 July leaf is still not itemised. Next: Add MS 30305 and Bodleian Firth C6-C8 records (see the FT4f section).
 
 **3 Oct 2026 (FT4e):** still open. The Osborne key family is now read in full from the DECODE images (8443 P1 has no
@@ -447,24 +449,61 @@ Requests: searcharchives.bl.uk 5 (3 records, 2 searches), de-crypt.org 10 (3 ign
 decode_list page-1 fetches; no login), archive.org 7 (1 advancedsearch, 6 djvu.txt, one of which was HTTP 500), all
 >=2 s apart. Vision calls: 0.
 
-## Remaining gaps (FT4f, 3 Oct 2026)
+## GAPS47-maurice-rupert-1645 (3 Oct 2026, account-4)
+
+Run 3 Oct 2026, 07:13-07:20 UTC (`date -u`). This worker was spawned on the stale NEXT-STEPS.tsv row ("read the unread
+Osborne cipher lines 8443 P1/P2, 8444 P2"), but FT4e had already done that step (commit af264881, section above). So it
+ran the current Verdict step instead: the two secondary-witness catalogues that FT4f named. **Result: no 7 July 1645
+Maurice item, no decipherment and no Maurice-Rupert key found in either catalogue as far as the cloud reaches.
+Add MS 30305 does list two sets of "keys to cyphers" (f.86), and those are not reachable. Nothing was tested.**
+
+1. **BL Add MS 30305** (`searcharchives.bl.uk/catalog/040-002021962?format=json`, HTTP 200, the Scope & Content item list
+   read in full). Vol. I of Add MS 30305-30306, the Fairfax of Denton correspondence, ff.221. It holds Rupert letters
+   1644-1649: Digby to Rupert ff.63, 80 (1644, 1645); Nicholas to Rupert f.79 (1645); Richmond to Rupert f.80 (n.d.,
+   "Partly cipher"); Jermyn to Rupert f.88 (1644); Long to Rupert f.146 (1649); and **f.86, "Charles I of England: Keys
+   to cyphers" and "Sir Edward Nicholas ...: Keys to cyphers used by him: 1646-1658"**. **There is no Maurice letter in
+   the volume, and no 7 July 1645 item.** The record carries no "Digitised Content" line (the 18980-82 records do), so
+   f.86 has no online image. The keys are undated for Charles I and dated 1646-58 for Nicholas. Nicholas's 1645 key is
+   already excluded (the Cryptiana Nicholas-Rupert key, FT4f item 1). Whether a Charles I key on f.86 reaches the
+   letter's code range (up to about 398) is unknown without the leaf. On-disk DECODE harvest (`sources/decode/*.tsv`)
+   grepped for "30305": 0 records.
+2. **Bodleian MSS Firth c. 6-8.** What these are, from Google Books snippets (keyed API with `country=US`, 1 call):
+   "Prince Rupert papers, 3 vols. (MSS. Firth c. 6-8)" (Bodleian Curators' Annual Report 1902 and 1921), "The
+   transcripts of Rupert's correspondence made for Warburton" (*Journal of Sir Samuel Luke*, 1950), "Many printed in
+   Warburton's Memoirs of Prince Rupert" (*Student's Guide to the Manuscripts Relating to English History in the
+   Seventeenth Century in the Bodleian*, 1922). They are therefore most likely the very copy Warburton printed the 7 July
+   cipher from. A transcript could carry the transcriber's decipherment, but nothing found says it does. The holding
+   record could not be read: archives.bodleian.ox.ac.uk answered one curl and one headless-browser fetch with the Anubis
+   page "Making sure you're not a bot!" (the documented 26 Sept 2026 block), and was not retried. EMLO Solr: 0 docs for
+   "Firth" AND "Rupert" and 0 for Rupert AND Maurice AND 1645 (EMLO does not catalogue these volumes). **Filed as
+   LOCAL-QUEUE.tsv row L43** for the owner's desk runner: the record, its availability flag, and the 7 July 1645 folio.
+- **Grades:** none (rule 4). No reading was attempted. Rule 10: search results only, never a novelty verdict.
+
+Requests: searcharchives.bl.uk 4 (2 search attempts redirected or answered HTML, 1 search JSON, 1 record);
+archives.bodleian.ox.ac.uk 2 (1 curl, 1 browser, both Anubis); emlo.bodleian.ox.ac.uk 3; archive.org 1 advancedsearch
+(noise); www.googleapis.com 1. All at least 2 s apart. Vision calls: 0. de-crypt.org: 0, no login, because the step
+needed none.
+
+## Remaining gaps (FT4f, 3 Oct 2026; GAPS47 3 Oct 2026)
 Read so far: 0 of 93 tokens read at any grade. Keys tested: no. 118 (rank 80/201), Osborne P4 (rank 175/201), Osborne extended (rank 148/201), all with judge FAIL. NOTES FT4b, FT4d, FT4e.
 - The letter's own key, or a decipherment of the 7 July 1645 leaf, in Rupert's papers BL Add MS 18980-82 (the leaf is not itemised in the catalogue) - blocker: needs-physical-access; BL images have been offline since the 2023 cyberattack, and the copy order is ASKS row 56 / REQUEST.md. Every key reachable online was tested: Digby cabinet no. 118, the DECODE 8627 index, Osborne 8443/8444 in full, Cryptiana Nicholas-Rupert, Bourdeau's King-Queen SP106-5.
-- Secondary witnesses for the 7 July leaf, which the Add MS 18982 item list lacks (FT4f): Add MS 30305 (other Civil War letters to Rupert, via Bentley) and Bodleian MSS Firth C6-C8 (transcripts of letters to Rupert), named in the BL record's own notes - blocker: not-attempted; neither catalogue has been read for a 7 July 1645 Maurice item, a period decipherment or a key; next: read the BL record for Add MS 30305 (searcharchives JSON) and the Bodleian Archives & Manuscripts record for Firth C6-C8 (a desk-runner row if bot-checked), ~$1
+- Secondary witnesses for the 7 July leaf (GAPS47, 3 Oct 2026): BL Add MS 30305 is read from its catalogue record. It has no Maurice letter and no 7 July 1645 item. Bodleian MSS Firth c. 6-8, the transcripts of Rupert's letters made for Warburton - blocker: waiting-on LOCAL-QUEUE row L43; their holding record is Anubis-blocked from the cloud, so the owner's desk runner reads the Firth c. 6-8 record, its availability flag and the 7 July 1645 folio
+- The "Keys to cyphers" at BL Add MS 30305 f.86 (Charles I, undated; Nicholas 1646-58), which could hold a key covering this letter's codes - blocker: needs-physical-access; the record has no Digitised Content line, and BL images are offline since 2023. Added to REQUEST.md beside the ASKS row 56 BL copy order
 - Statistical key rebuild from the 93 tokens alone - blocker: too-short; 93 tokens with 63 distinct codes in a letters-plus-words nomenclator. The rule 3 controls on file show code+mark designs read only at pooled lengths (22-67% blind at N=720), so no solver can be expected to read this at N=93.
 
-## Escalation (FT4f, 3 Oct 2026)
-- [x] siblings: BL item lists of Add MS 18980-82 read (FT4f): no Maurice-Rupert cipher sibling, and DECODE has no 18980/18981 records and no 18982 keys; Digby-cabinet key index DECODE 8627 and key no. 118 (FT4/FT4b, excluded, control-backed); Add MS 18982 ff.95-96 is a different letter, Osborne 10 Nov (FT4c); Osborne 8443/8444 are read in full, see known-keys
+## Escalation (FT4f, 3 Oct 2026; GAPS47 3 Oct 2026)
+- [x] siblings: BL item lists of Add MS 18980-82 (FT4f) and Add MS 30305 (GAPS47) read: no Maurice-Rupert cipher sibling, and DECODE has no 18980/18981 records and no 18982 keys; Digby-cabinet key index DECODE 8627 and key no. 118 (FT4/FT4b, excluded, control-backed); Add MS 18982 ff.95-96 is a different letter, Osborne 10 Nov (FT4c); Osborne 8443/8444 are read in full, see known-keys
 - [x] clear-pages: the Osborne clear text (8443 P1, P2; 8444 P2) was read by FT4e and gives no crib for this letter; the letter's own clear tail ("Garrison ... Accordingly") is in ciphertext.txt
 - [retired] known-keys: the Osborne-Rupert sibling key was transferred by 4-gram vs shuffled-key control plus the judge, twice: FT4d rank 175/201, then FT4e with 40 more pairs rank 148/201, judge FAIL both times, coverage 17-19/93. Rule 3's third-attempt clause applies: untested-by-this-instrument, not refuted. It reopens only on new material, such as Osborne's own key sheet or a key reaching codes 290-398. Key no. 118, the Cryptiana Nicholas-Rupert key and King-Queen SP106-5 are excluded
 - [x] print: Warburton, Memoirs vol. iii pp.131-137, read at the page: the cipher is printed without a decipherment. FT4f grepped all three volumes and the vol. i calendar for this letter: no key, and no gloss beyond the clear text. CSP Domestic 1644-5 was full-text searched (LANE CX2)
 - [n/a] key-rebuild: 93 tokens is too short for a letters-plus-words nomenclator (gap above)
 - [x] image-check: Warburton's printed cipher matches ciphertext.txt group for group (LANE CX2). The manuscript leaf is not reachable (gap above)
 - [x] retry: the Osborne step was retried with the full remaining material (FT4e). The rule 7 checks pass: osborne_test.py, osborne_test2.py, decode_key.py --check
-Verdict: keep going: 1 internal gaps; cheapest next: read the Add MS 30305 BL record and the Bodleian Firth C6-C8 record for a 7 July 1645 Maurice item, ~$1
+Verdict: parked: every gap has an outside blocker
 
 ## While waiting
 
 - Scan the on-disk DECODE harvest (`sources/decode/records-*.tsv`, no login) and `KEY-OFFICES.tsv` for any key with
   Rupert or Maurice as party, dated 1644-46, that reaches codes up to about 400. Test any found with the shuffled-key
-  control, as key118_test.py does. Depends on nobody; about $1.
+  control, as key118_test.py does. Depends on nobody; about $1. (GAPS47, 3 Oct 2026: still unrun. The scan should also
+  look for any Charles I key of 1644-46 in the harvest or in KEY-OFFICES.tsv that could be the f.86 key of Add MS 30305.)

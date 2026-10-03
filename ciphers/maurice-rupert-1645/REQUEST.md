@@ -22,4 +22,10 @@ note found this date on the BL's manuscripts-requesting guide: the Library "is u
 copies from original manuscripts" unless a microfilm surrogate exists — ask about a surrogate before assuming
 a reading-room visit (Reader Pass) is the only route.
 
+**Addition (GAPS47, 3 Oct 2026):** if this order goes ahead, add **BL Add MS 30305, f.86** (r and v): "Charles I of
+England: Keys to cyphers" and "Sir Edward Nicholas: Keys to cyphers used by him: 1646-1658", from the BL catalogue record
+040-002021962, which has no digitised content. This volume also holds Rupert letters of 1644-1649, so a Charles I key
+on f.86 could cover the code range of this letter (up to about 398). It is the only unread key source named in a
+catalogue so far. The same route applies, quoting Add MS 30305, f.86.
+
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.
