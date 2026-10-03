@@ -194,3 +194,4 @@ LANE-ARM-A	account-1	.claude/briefs/runs/2026-10-03-acct3-lane-arm.md	Opus 5.5	6
 LANE-ARM-B	other	.claude/briefs/runs/2026-10-03-acct3-lane-arm.md	Opus 5.5	60	600	done 2026-10-03 19:59	2026-10-03 19:00	Armstrong-Madison 1808 (Tomokiyo ask): instruments (vocabulary-prior model, shorthand sorter); first SWEEP-OWN-2
 LANE-POOLS	account-1	.claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md	Opus 5.5	60	600	claimed session_01JKkb3fmtQCnwhMQpdmzT1H 2026-10-03 21:40	2026-10-03 20:35	new pooled candidates: scout + check-solved top 6 + first cheap tests
 LANE-IMAGES	other	.claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md	Opus 5.5	60	600	done 2026-10-03 22:16	2026-10-03 20:35	unblock needs-image targets with documented host routes
+LANE-READ2	other	.claude/briefs/runs/2026-10-03-acct3-lane-read2.md	Opus 5.5	60	600	queued	2026-10-03 22:32	read the images LANE-IMAGES unblocked: hellen key test, clair1161 transcription, siena, relabel needs-image folders
