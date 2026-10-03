@@ -1,5 +1,5 @@
 # Pre-registration 3: fr.4712 f.7r period interlinear pair as NEW MATERIAL (GAPS-fr4715-vieuville-pool-16, account-4)
-Written 3 Oct 2026 04:0x UTC (clock read), committed and pushed BEFORE the native image of f.7r is fetched or read.
+Written 3 Oct 2026 03:5x UTC (clock read 03:52), committed and pushed BEFORE the native image of f.7r is fetched or read.
 GAPS-14 (PREREG.md) and GAPS-15 (PREREG2.md) FAILed as registered and stay on record. The retired instrument was
 "our key71 transcription scored by token-subset match against a printed answer list"; this registration changes the
 material (period glosses on a leaf enciphered with key no.71, read blind by us) and the match rule (notation-normalized,
@@ -48,3 +48,4 @@ PASS: scorable >= 8, SHARE = match/(match+conflict) >= 0.80, REAL > p95 of both 
 - G2 PASS: no.44's slots not glossed on f.7r are read from key no.71 in the layer their mark selects, grade M (the
   slots' own marks are L/M), then decode_key --check must exit 0. G2 FAIL or NON-TEST: no slot read from the key.
 - Every f.7r word-code or name gloss that conflicts with our existing values is logged in HYPOTHESES.md.
+Interpretation fixed before any f.7r pass output was opened (03:56 UTC): rule (iii) is applied to the tokens of rule (i) as well as to the concatenations (so 'C. de vendosme' matches 'cardinal de Vendome'); see scripts/f4712_7r_gates.py nmatch.
