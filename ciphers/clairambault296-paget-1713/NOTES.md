@@ -112,6 +112,8 @@ gallica.bnf.fr, no archivesetmanuscrits.bnf.fr fetch. No subagents.
 ## Digitisation check (24 Sept 2026, LANE G2 worker O)
 
 **Digitised: yes**, ark `btv1b9000759b`, item at canvas not yet pinned (label checked: none -- see below).
+**[Correction, 3 Oct 2026, FT4-clairambault296-paget-1713: wrong. The finding aid lists "P. 249 Lettre en partie
+chiffrée de Paget" under the sub-unit Clairambault 297, not 296 -- see the FT4 section at the end. Not digitised.]**
 The archivesetmanuscrits finding aid (`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc138146`) marks its
 "Clairambault 296 (cote) • I Années 1572-1713" sub-unit `avecDaoGal` ("Consultable sur gallica"); the other
 three sub-units (297, 298, 299) are not marked. Our item, "Lettre en partie chiffrée de Paget," is at **p. 249**
@@ -541,3 +543,56 @@ Requests this pass: gallica.bnf.fr 2 (IIIF f28, f36 at 500 px); WebSearch 3 (+2 
 (nationalarchives.gov.uk); github.com clones shared with clair571.
 
 Gate re-run (GF4-BATCH11, 3 Oct 2026): `clairambault296-paget-1713: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+## FT4-clairambault296-paget-1713 (3 Oct 2026, account-4): the letter is in Clairambault 297, not 296
+
+**Finding aid re-read** (archivesetmanuscrits.bnf.fr/ark:/12148/cc138146, plain curl, HTTP 200, 69,950 bytes,
+read as text). The item list nests under four cote headings in this order: "Clairambault 296 • I Années 1572-1713"
+(d0e505; its last item P. 617, Du Dézert to Pontchartrain, 8 July 1713), then "Clairambault 297 • II Années
+1595-1742" (d0e934), then 298 (d0e1650), then 299 (d0e2423). **"P. 249 • Lettre en partie chiffrée de Paget
+(14 janvier 1713) ; orig." (component d0e1425) sits under Clairambault 297**, between P. 239 (proposal on
+nobility for wholesale merchants, Dec 1712) and "P. 261 et suiv., 313, 355 ... Lettres orig. ou autogr. adressées
+à Pontchartrain" (d0e1431). Only the 296 sub-unit carries the `avecDaoGal` "Consultable sur gallica" marker
+(three `avecDaoGal` strings in the page, all on d0e505); 297, 298 and 299 carry none.
+
+So the 24 Sept 2026 digitisation check misread the nesting: it took the letter for a 296 item. The "P. 249"
+citation is a page of Clairambault 297. That explains why f137 (stamped 249 in 296) showed unrelated print, and
+why six passes read all 316 canvases of btv1b9000759b without finding the letter. The folder name keeps
+"clairambault296" for continuity; the shelfmark is **BnF Clairambault 297, p. 249**.
+
+**Gallica SRU** (3 Oct 2026, 2 s apart): `dc.source all "Clairambault 297"` 0 records; same for 298 and 299,
+0 each. Positive control, the same query form for 296: 1 record, `btv1b9000759b`, dc:source "...Clairambault 296"
+-- the query form works. A looser `gallica all "Clairambault 297"` returns 1,739 records, of which the
+Clairambault-sourced ones in the first 50 are other volumes (454, 942, 421, 1025), none 297. **Clairambault 297 is
+not on Gallica**, which agrees with the finding aid's missing marker. No canvas to locate, so no
+`gallica_folio.py` run and no 1000-px look (0 vision calls).
+
+Premise check, weighed (GF4-BATCH11's flag): the volume is the Pontchartrain correspondence run of 1712-13
+(Marine-side letters to Pontchartrain at P. 261 ff., Castries, Phélypeaux, Roman mandements of 1713). That fits
+the sister folder's sender (Paget, French consul-designate at Genoa, memoire of April 1712, letters to
+"Monseigneur" in 1714, Clairambault 1225) better than William, 6th Baron Paget. Still inference, not established:
+the finding aid does not name the sender's office. If the letter is reproduced, try the 1714 key
+(ciphers/clairambault1225-paget-1714/key.tsv) on it first.
+
+Requests this pass: archivesetmanuscrits.bnf.fr 1; gallica.bnf.fr 5 (SRU), all >=2 s apart, no 403/429/challenge.
+
+## Remaining gaps (FT4-clairambault296-paget-1713, 3 Oct 2026)
+Read so far: 0 of the letter (no image of Clairambault 297 p. 249 exists online; 0 cipher signs transcribed)
+- whole letter (Clairambault 297 p. 249, 14 Jan 1713) - blocker: needs-physical-access; Clairambault 297 is not digitised (finding aid has no avecDaoGal marker on d0e934; Gallica SRU dc.source 0 records vs control 296 = 1), so the page needs a BnF reproduction order; next: the parent adds "Clairambault 297 p. 249" to the BnF quote batch already drafted for ASKS 49 (outreach/bnf-manuscrits-arsenal-quote-batch.md), ~$0.5
+
+## Escalation (3 Oct 2026)
+- [x] siblings: sister Paget folder clairambault1225-paget-1714 has a period decipherment and a 114-code key (PAGET-KEY, 2 Oct 2026), ready for this letter once imaged
+- [n/a] clear-pages: no image of the letter or its neighbours online to read
+- [n/a] known-keys: no ciphertext of this letter exists on disk to apply a key to; the 1714 key (clairambault1225-paget-1714/key.tsv) is the first test once the page is reproduced
+- [x] print: Wentworth Papers read (LANE CX); web, three blogs, both solver repositories and Cabinet Noir nothing (GF4-BATCH11)
+- [n/a] key-rebuild: nothing to rebuild from without the ciphertext itself
+- [x] image-check: finding aid read and Gallica SRU run with a control; Clairambault 297 not digitised; btv1b9000759b (296) swept 316/316
+- [n/a] retry: no failed fetch left; every request answered 200
+Verdict: parked: every gap has an outside blocker (the letter is in undigitised Clairambault 297; next step is the BnF reproduction order via the ASKS 49 batch)
+
+## While waiting (FT4-clairambault296-paget-1713, 3 Oct 2026)
+
+Waits on a BnF reproduction of Clairambault 297 p. 249 (to be folded into the ASKS 49 quote batch).
+
+- Apply the sister folder's 1714 Paget key to the 1714 letters' own unglossed spans and list which codes stay open, so the 1713 letter can be tested against a known residue the day it arrives. S, disk only.
+
