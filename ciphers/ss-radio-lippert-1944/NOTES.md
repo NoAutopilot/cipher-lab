@@ -1,4 +1,5 @@
 open
+Cipherbrain posts read in full by GF4-BATCH18 on 3 Oct 2026 (live re-fetch, scienceblogs.de): "Der verschlüsselte SS-Funkspruch" (15 Apr 2014, 14 comments), Top 50 no. 25 (7 Aug 2017, 28 comments), "Ungelöste Verschlüsselungen aus dem Zweiten Weltkrieg (2)" item 4 (4 Feb 2021, 28 comments): no decipherment; the 2017 and 2021 threads judge the form a collector's forgery.
 
 Intake (25 Sept 2026, LANE B3 worker bSSR, minimal check-solved per breadth.md's intake step):
 Cipherbrain post "The Top 50 unsolved encrypted messages: 25. The SS radio message" (7 Aug 2017)
@@ -93,3 +94,35 @@ the next holder: these two were not spaced >=2s apart, an oversight, flagged her
 silently passed over; no further requests to this host were made, so no retry/backoff was
 triggered and no complaint or block was seen).
 
+
+## Web and blog check (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch): (1) `SS radio message Lippert 1944 cipher Schmeh solved` -- Cipherbrain 2014 (German), 2017 (Top 50 no. 25), 2021 (German and English "Unsolved ciphertexts from World War II (2)"), plus an English Cipherbrain page "Unsolved: An encrypted radio message from the bugging service" (a different item); all unsolved; (2) `"SS-Funkspruch" Lippert 1944 verschlüsselt gelöst Fälschung` -- the 2014 post, a buradabiliyorum.com mirror of a Cipherbrain post, and **Forum der Wehrmacht thread 39936 "Verschlüsselter Funkspruch"** (20 Apr - 6 May 2014, 11 posts: Sarmatus, Karl Grohmann, Lobito060454, Huba, Joseph O., RolandP) -- read: no decipherment, "one would really have to obtain the code documentation" (Lobito060454), RolandP places Lippert as commander of the 10. SS-Pz.Div. supply troops; no forgery verdict there; (3) `"KSSY" "ALAP" SS radio message 1944 cipher` (the distinctive groups) -- only the Cipherbrain posts; (4) `SS radio message Lippert cipher solved Claude OR GPT OR AI 2026 Schmeh top 50 no. 25` (model-solve family) -- Vals AI/Fable Cyphral Distich (no. 28, another item) and the Sept 2026 GPT-6 Astra WWI ADFGVX and Enigma announcements (other items); no AI-solve claim for this item.
+Blog site searches and threads: Cipherbrain, all three posts live re-fetched and threads read: 2014 post (14 comments, 15-17 Apr 2014: stamp readings, Q-code guess via Oliver Helweg "ALAP = Ungarn/Budapest, KSSY Deckname", Schmeh's own "left column may be code-book text" -- guesses, no reading); Top 50 no. 25 (28 comments, 7 Aug 2017 - 31 May 2021: Michaela Ellguth's #3 gloss-guess "MASS = Marschbefehl ... QRLZ = Vereinigung mit H9 ... 27163 könnte das Datum sein" and Gerhard Strasser's #6 Hungary reading are interpretations without a method; #10-#27 Thomas, Ellguth, Gerd establish the forgery case -- Party eagle instead of Reichsadler, "Cublin" for Lublin on a Briefstempel, pre-1941 form, wrong rank abbreviations "StdF"/"UstuF", "Mi" in the date field; #28 Frank Gnegel, 31 May 2021, bought a near-identical forged "chiffrierter Funkspruch ... 1944" on eBay (seller xh81) for 20 euros); 2021 "Ungelöste ... (2)" item 4 (28 comments, 4-9 Feb 2021: The_Piper #17 "Die Nr. 4 ist kein Funkspruch, sondern ziemlich sicher eine Fälschung. Der verwendete Fantasie-Stempel findet sich ... auf Dokumenten, die als 'Andenken' für Sammler angeboten werden", agreed by Thomas, Gerd, Max Baertl #18/#24). klausschmeh.net `?s=Lippert`: Nothing Found; Cryptiana `search?q=Lippert`: no posts; Cipher Mysteries `?s=Lippert`: Nothing Found; Apeiron (one publication only, Koehler): nothing. Reddit r/codes (OAuth search `Lippert`: 0; `SS radio message`: 25 results, none this item).
+Solver repos (fresh shallow clones, 3 Oct 2026, deleted after): dbourdeau/cyphersolver HEAD 46f8056 (2 Oct 2026) -- research/top50/NOTES.md row 25 "low ... probably a forgery ... Treat as questionable before spending anything on it", plus the cached post (research/top50/arts/25.htm), no targets/ folder; aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026) -- no "lippert". DECODE: 0 hits for "lippert" in the on-disk listings (sources/decode/*.tsv).
+Requests: scienceblogs.de 3 (2 s apart, browser UA), klausschmeh.net 1, cryptiana.blogspot.com 1, ciphermysteries.com 1, apeiron.re shared (see sufi-fiddle), oauth.reddit.com 2, forum-der-wehrmacht.de 1 WebFetch, github.com shared clones; all >= 1.5 s apart.
+
+## Premise check (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions of a decipherment or clear copy: none; NOTES.md and the spec record only the forgery dispute and the thread's gloss-guesses.
+(b) Other solvers' working files: none -- Bourdeau a list row ("probably a forgery"), Aymeloglu nothing, no DECODE record; Forum der Wehrmacht 2014 thread gave up for want of the code documentation.
+(c) Physical neighbours: FIND (authenticity, not a reading) -- Gnegel's 2021 purchase of a near-identical forged "Funkspruch" from the same eBay seller line, and The_Piper's observation that the same fantasy stamp recurs on souvenir documents, make this a member of a family of collector fakes; a second specimen of the family is the strongest available comparison object. The original form is in Nick Gessler's private collection (Duke, web.duke.edu/isis/gessler/collections/cryptology.htm); provenance unknown per Schmeh 2014.
+(d) Recipient side: Michael Lippert's units (10. SS-Pz.Div. "Frundsberg" Jan-Feb 1943; SS-Freiwilligen-Grenadier-Brigade Landstorm Nederland from 1943/44) -- no period file of radio traffic to him located; not searched further (no cheap route).
+Result: no decipherment located; the authenticity question has gone from "disputed" (25 Sept intake) to a documented souvenir-forgery family (second specimen sold 2021). Status stays open per rule 5 (a forgery verdict is not a cryptanalytic negative and is not ours to grade from blog comments).
+
+## Verdict (GF4-BATCH18 (account-4), 3 Oct 2026)
+
+**open (unchanged), with the forgery flag strengthened.** No published or accepted decipherment located in the three Cipherbrain posts and their full threads (2014, 2017, 2021), the Forum der Wehrmacht 2014 thread, klausschmeh.net, Cryptiana, Cipher Mysteries, Apeiron, r/codes, DECODE listings, or either solver repository, searched 3 Oct 2026. Claimed-but-unaccepted interpretations: Ellguth 2017 (march-order gloss), Strasser 2017 (Hungary 1944), Helweg via Schmeh 2014 (Q-code / Budapest) -- recorded as claimed, none accepted.
+
+## While waiting (GF4-BATCH18, 3 Oct 2026)
+
+Nothing here waits on a person. The zero-dependency step: locate Gnegel's 2021 eBay specimen (ebay.de item 284276746819; try the Wayback CDX for that URL) and any other "chiffrierter Funkspruch 1944" listings from the same seller, and compare their cipher groups with ours -- identical or shuffled groups across specimens would settle the souvenir-forgery question without any cryptanalysis.
+
+## Intake gate (GF4-BATCH18, 3 Oct 2026)
+
+$ python3 tools/intake_gate_check.py ss-radio-lippert-1944
+ss-radio-lippert-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+
+$ python3 tools/next_steps.py --wait-only | grep ss-radio-lippert-1944
+(no line)
