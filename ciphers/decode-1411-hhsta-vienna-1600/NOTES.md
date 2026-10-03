@@ -342,3 +342,18 @@ Next step: pre-register r at residue 21 as an alternative table beside the froze
 and read the unused numerals (p.2 left lower half, p.2 right page) in two blind Opus passes and score both tables with the
 shuffled-target and shifted controls; report the gloss-text calibration beside de17 every time (or build a c.1600 German
 chancery corpus, ~12 min, V6-PTCORP pattern, so the judge can decide). ~USD 6. Status unchanged: open.
+
+## CORP-DE16 step: era-matched judge corpus de1600 built; gloss calibration (3 Oct 2026, account-4)
+
+Built `tools/data/de1600` (LANG_CORPORA "de1600"): six archive.org source-edition volumes printing German princely letters
+and chancery acts of 1575-1610 in their own spelling (Bezold, Briefe des Pfalzgrafen Johann Casimir I-II; four volumes of
+Briefe und Acten zur Geschichte des Dreissigjaehrigen Krieges), period-spelling filtered, 1.15M folded letters. Leave-one-file-
+out false-negative rate: N=176 30.5 pct blended, per fold 17.0-56.5 pct; N=62 23.9 pct, 15.0-44.5 pct (de17 at N=176: 38.9 pct,
+13.5-91.0 pct). Wide spread: a FAIL/PASS against de1600's real_p05 is of unknown reliability (rule 3). See its README.
+
+Calibration only (no decode scored): the leaf's own 62-letter gloss text scores -1.423 under de1600 (FAIL; real_p05 -0.917,
+null_p99 -1.731, letter-shuffled mean -2.111, max -1.773) against -1.524 under de17. Under every leave-one-out model it sits
+below 199-200 of 200 genuine held-out 62-letter windows. **The era corpus is not what was keeping the judge from deciding**:
+the gloss as transcribed is still far from period prose. The open r/z and h/s letterforms (GAPS150) and abbreviations in the
+transcription are the likelier limit. A gate on the decode should compare it with the gloss's own score and with the shuffled
+controls under de1600, not with real_p05 alone. Script: `tools/data/de1600/gloss_calibration.py`. Status unchanged: open.

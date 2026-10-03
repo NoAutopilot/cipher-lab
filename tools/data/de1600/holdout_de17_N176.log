@@ -1,0 +1,7 @@
+corpus=de17 held_out=dieverhandlungen01irme.txt.gz N=176 samples=200 real_p05=-0.855 false_negatives=27/200 (13.5%)
+corpus=de17 held_out=dieverhandlungen02irme.txt.gz N=176 samples=200 real_p05=-0.840 false_negatives=182/200 (91.0%)
+corpus=de17 held_out=dieverhandlungen03irme.txt.gz N=176 samples=200 real_p05=-0.849 false_negatives=64/200 (32.0%)
+corpus=de17 held_out=urkundenundacten1601berluoft.txt.gz N=176 samples=200 real_p05=-0.860 false_negatives=35/200 (17.5%)
+corpus=de17 held_out=urkundenundacte32kommgoog.txt.gz N=176 samples=200 real_p05=-0.848 false_negatives=81/200 (40.5%)
+corpus=de17 TOTAL false-negative rate: 389/1000 (38.9%)
+corpus=de17 per-fold spread: 13.5-91.0% (6.7x)

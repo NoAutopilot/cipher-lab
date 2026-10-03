@@ -190,6 +190,14 @@ LANG_CORPORA = {
     # de16; a spec opts in with "judge": {"language": "de17"}. See tools/data/de17/README.md (per-fold FN and spread).
     "de17": [DATA / "de17" / f"{i}.txt.gz" for i in ("dieverhandlungen01irme", "dieverhandlungen02irme",
              "dieverhandlungen03irme", "urkundenundacten1601berluoft", "urkundenundacte32kommgoog")],
+    # de1600 (3 Oct 2026, CORP-DE16, account-4): German princely letters and chancery acts of about 1575-1611 as printed in
+    # their own spelling by Bezold, Briefe des Pfalzgrafen Johann Casimir I-II (1575-1586) and four volumes of Briefe und
+    # Acten zur Geschichte des Dreissigjaehrigen Krieges (Stieve/Ritter, 1599-1611), period-spelling filtered (vnd, dz,
+    # seind, woellen, gnedig, nit, uff ...), each ~190k folded letters -- for decode-1411-hhsta-vienna-1600 (c.1575-1600
+    # Habsburg chancery), which de17 (1630-60) and de (de16, model-composed) do not era-match. "de" stays de16; a spec opts
+    # in with "judge": {"language": "de1600"}. Read tools/data/de1600/README.md (per-fold FN and spread at N=176/62) first.
+    "de1600": [DATA / "de1600" / f"{i}.txt.gz" for i in ("briefedespfalzgr01joha", "briefedespfalzgr02joha",
+               "bub_gb_zc4FAAAAQAAJ", "bub_gb_6M4FAAAAQAAJ", "briefeundactenz01mayrgoog", "bub_gb__s4FAAAAQAAJ")],
     # sv17 (3 Oct 2026, GAPS67, account-4): Swedish chancery letters of about 1620-1650 as printed in their own spelling in
     # Rikskansleren Axel Oxenstiernas skrifter och brefvexling (six archive.org volumes, 1888-97 Google scans), Latin and
     # German letters and editors' prose filtered out, å folded to a at build time, each capped at 450k folded letters --

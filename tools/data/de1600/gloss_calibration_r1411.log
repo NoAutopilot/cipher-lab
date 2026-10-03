@@ -1,0 +1,8 @@
+de17: FAIL gloss N=62 {'pass': False, 'score': -1.524, 'null_p99': -1.748, 'real_p05': -0.911, 'real_median': -0.756, 'mode': 'both', 'N': 62}; letter-shuffled mean -2.202 max -1.781
+de1600: FAIL gloss N=62 {'pass': False, 'score': -1.423, 'null_p99': -1.731, 'real_p05': -0.917, 'real_median': -0.769, 'mode': 'both', 'N': 62}; letter-shuffled mean -2.111 max -1.773
+de1600 LOO fold briefedespfalzgr01joha.txt.gz: gloss -1.442; held-out N=62 windows at or below it 0/200; lowest window -1.268
+de1600 LOO fold briefedespfalzgr02joha.txt.gz: gloss -1.472; held-out N=62 windows at or below it 1/200; lowest window -1.473
+de1600 LOO fold bub_gb_zc4FAAAAQAAJ.txt.gz: gloss -1.394; held-out N=62 windows at or below it 1/200; lowest window -1.478
+de1600 LOO fold bub_gb_6M4FAAAAQAAJ.txt.gz: gloss -1.417; held-out N=62 windows at or below it 0/200; lowest window -1.210
+de1600 LOO fold briefeundactenz01mayrgoog.txt.gz: gloss -1.474; held-out N=62 windows at or below it 1/200; lowest window -1.654
+de1600 LOO fold bub_gb__s4FAAAAQAAJ.txt.gz: gloss -1.468; held-out N=62 windows at or below it 0/200; lowest window -1.455

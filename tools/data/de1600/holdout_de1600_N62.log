@@ -1,0 +1,8 @@
+corpus=de1600 held_out=briefedespfalzgr01joha.txt.gz N=62 samples=200 real_p05=-0.961 false_negatives=33/200 (16.5%)
+corpus=de1600 held_out=briefedespfalzgr02joha.txt.gz N=62 samples=200 real_p05=-0.907 false_negatives=58/200 (29.0%)
+corpus=de1600 held_out=bub_gb_zc4FAAAAQAAJ.txt.gz N=62 samples=200 real_p05=-0.907 false_negatives=37/200 (18.5%)
+corpus=de1600 held_out=bub_gb_6M4FAAAAQAAJ.txt.gz N=62 samples=200 real_p05=-0.903 false_negatives=30/200 (15.0%)
+corpus=de1600 held_out=briefeundactenz01mayrgoog.txt.gz N=62 samples=200 real_p05=-0.892 false_negatives=89/200 (44.5%)
+corpus=de1600 held_out=bub_gb__s4FAAAAQAAJ.txt.gz N=62 samples=200 real_p05=-0.889 false_negatives=40/200 (20.0%)
+corpus=de1600 TOTAL false-negative rate: 287/1200 (23.9%)
+corpus=de1600 per-fold spread: 15.0-44.5% (3.0x)
