@@ -737,7 +737,7 @@ exit=0
 
 ## Premise check (GF4-BATCH6, 3 Oct 2026)
 
-Worker GF4-BATCH6 (account-4), 01:5x-02:0x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
+Worker GF4-BATCH6 (account-4), 01:46-01:5x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
 "## Premise check". No cryptanalysis, no transcription, no vision subagent call (the worker viewed three downscaled spreads itself).
 
 - **(a) Decipherments and plaintexts the folder already mentions -- FOUND (plaintext of this very item; no decipherment of the

@@ -2239,7 +2239,7 @@ flagged to the orchestrator in the ROOM.md done line rather than made here. Any 
 
 ## Premise check (GF4-BATCH6, 3 Oct 2026)
 
-Worker GF4-BATCH6 (account-4), 01:46-02:0x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
+Worker GF4-BATCH6 (account-4), 01:46-01:5x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
 "## Premise check": try to prove the item is already done, from material that exists before any reading. No cryptanalysis, no
 transcription, no vision call.
 

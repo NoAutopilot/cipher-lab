@@ -1,5 +1,5 @@
-partial
-
+found-solved
+Source of the prior decipherment: the contemporary interlinear decipherment written above every code group on the despatch itself (Spink sale 26066 lot 1184, images 06-07), the printed clear text in Gurwood, Dispatches vol. 9 (1834 pp.388-389; 1838 pp.392-393), and S. Tomokiyo, "Wellington's Polyalphabetic Cipher with a Dictionary Code", https://cryptiana.web.fc2.com/code/maitland.htm (8 Sept 2026, modified 19 Sept 2026; crediting Patrick Hayes and George Lasry), which reads all four strip runs. Status set found-solved by GF4-BATCH6, 3 Oct 2026, by the brief's rule (premise check below); was partial.
 Gurwood, *The Dispatches of Field Marshal the Duke of Wellington*, vol. 9 (1834 ed. pp. 388-389; 1838 ed. pp.
 392-393) read by this worker (OCR excerpts in `sources/gurwood/`, Internet Archive items
 `dispatchesoffie09welluoft` and `vol9dispatchesof00well`), matching the interlinear decipherment word for
@@ -425,3 +425,50 @@ Hayes/Lasry/Tomokiyo partial work already recorded above (Gurwood's printed clea
 interlinear reading are the plaintext, already on file at grade C and H). Status word unchanged: partial. Requests:
 scienceblogs.de 4, cryptiana.blogspot.com 2, cryptiana.web.fc2.com 1, ciphermysteries.com 2, spink.com 1,
 raw.githubusercontent.com 1, plus 8 web-search calls; no 403/429/challenge.
+
+## Premise check (GF4-BATCH6, 3 Oct 2026)
+
+Worker GF4-BATCH6 (account-4), 01:46-01:5x UTC 3 Oct 2026 by the clock. The adversarial pass of `.claude/briefs/check-solved.md`
+"## Premise check". No cryptanalysis, no transcription, no vision call.
+
+- **(a) Decipherments the folder already mentions -- FOUND (this very item).** (1) The clerk's interlinear decipherment on the
+  despatch (images 06-07): every one of the 73 code-group occurrences and the two "Alicant" strip runs carry a contemporary
+  reading (grade H in "Readings, graded per token"). (2) Gurwood vol. 9, both printings (`sources/gurwood/`, IA
+  dispatchesoffie09welluoft and vol9dispatchesof00well): the whole letter in clear, 81 of 81 reading words in manuscript order
+  (`check.py`); an IA full-text query today ("Villa Castin" Maitland cipher, be-api, 1 request, 101 hits) returns the Gurwood
+  volumes first, nothing else printing this despatch. (3) Tomokiyo's maitland.htm, re-fetched live today (1 request):
+  byte-identical to the snapshot `sources/cryptiana/web/maitland.htm` (13,510 bytes, "modified on 19 September 2026"): his
+  table of 56 code groups with readings, Keys 1-3 of the strip cipher (Key 1 credited to Hayes and Lasry), and the readings
+  Arevalo and "Vila Castin" for the two runs with no interlinear. The Cryptiana blog's own search for "Wellington" today (1
+  request): the 8 Sept 2026 post only, no later post on this item. So the plaintext of every cipher token of this item is
+  published, and a period decipherment sits on the document; what no source gives is the dictionary edition and the strip null /
+  permutation rule (key recovery, not reading).
+- **(b) Other solvers' working files -- not found.** Fresh shallow clones 3 Oct 2026 (dbourdeau/cyphersolver a4292cb;
+  aaymeloglu/unsolved-ciphers d2800bb), `grep -ril` maitland / wellington / scovell: Bourdeau has no folder for this item (hits
+  are Napoleon 1812 sources, the Urquhart "Maitland Club" edition, CSP Maitlands of the 1560s); Aymeloglu's SHORTLIST.md still
+  has only the pointer "Wellington's Peninsular War code (Sept 8 2026 post, worth a look)", no working file.
+- **(c) Physical neighbours -- not found beyond what is on file.** All 19 Spink lot photographs are on disk and identified
+  (`images/README.md`): 08-15 the Madrid 16/24/29 Aug 1812 despatches (clear text), 03-04 the ten strips and the wrapper "a Cypher
+  recd from Lord Wellington July 1812", 05 the group shot; no separate decipherment slip, no strip instruction, no corrected
+  alphabet photographed. The despatch's own verso (07) is the continuation and signature; the interlinear is on the cipher lines
+  themselves. Spink serves nothing above 1100 px, so "native resolution" here is 1100x248 (Failure log). The lot sold (GBP 42,000,
+  2 Oct read), so the unphotographed contents need the buyer (blocker needs-physical-access, Remaining gaps).
+- **(d) Recipient's side -- not found in print.** The recipient copy is this document (Maitland's papers, the lot itself), which
+  carries the decipherment. No printed edition of Maitland's or Bentinck's in-letters for Aug-Sept 1812 is known to the folder
+  (Bentinck papers, Nottingham Pw Jd, unprinted); Supplementary Despatches vol. 7 (sender side) was searched on 20 Sept (12
+  "cypher" hits, no dictionary). Not searched today: TNA WO 37 / WO 1 piece descriptions (already listed as a siblings gap).
+
+**Verdict:** (a) found -- a contemporary decipherment on the item plus the printed clear text (Gurwood) plus Tomokiyo's published
+reading of the strip runs: the plaintext of this very item is known, as the folder has recorded since 19-20 Sept. Per this job's
+brief the status word is set to `found-solved` with the sources on line 2. Flagged to the account-4 parent: the open work here
+is key recovery (the dictionary edition, ASKS row 101; the strip null rule), which `found-solved` does not close; "Remaining gaps"
+and "Escalation" above stay as the record. Rule 10: nothing here is new, first or unpublished.
+
+Requests this job (this target): cryptiana.web.fc2.com 1, cryptiana.blogspot.com 1, be-api.us.archive.org 1, WebSearch 1;
+github.com clones shared with the batch. No credentials.
+
+```
+$ python3 tools/intake_gate_check.py wellington-maitland-1812   # before: exit 1, no Premise check section
+wellington-maitland-1812: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
