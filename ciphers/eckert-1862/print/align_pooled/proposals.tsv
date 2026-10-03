@@ -1,50 +1,60 @@
 ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
 rampant	11	10	enemy	11	enemy:11	(the) enemy	agrees-key
 humming	12	8	richmond	12	richmond:12	Richmond	agrees-key
+andes	9	7	mcclellan	9	mcclellan:9	McClellan	agrees-key
 juno	10	7	gordousville	10	gordousville:10	Gordonsville	conflicts-key
 rampants	7	7	enemy	7	enemy:7	(the) enemy	agrees-key
+whistle	11	7	enemy	11	enemy:11	the enemy	agrees-key
 alden	9	6	banks	7	banks:7; halleck:2	Halleck/Banks	agrees-key
-andes	8	6	mcclellan	8	mcclellan:8	McClellan	agrees-key
 arctic	8	6	fremont	7	fremont:7; generals fremont:1	Fremont	agrees-key
+arno	8	5	banks	5	banks:5; halleck:3	Rosecrans/Banks/Halleck	agrees-key
 indus	8	5	fredericksburg	8	fredericksburg:8	Fredericksburg	agrees-key
 lather	6	5	james river	4	james river:4; james:2	Michigan/James River	agrees-key
-robin	5	5	division	5	division:5	division	agrees-key
+opal	5	5	winchester	5	winchester:5	Winchester	agrees-key
 wedding	5	5	transportation	3	transportation:3; battle:2	transportation/battle	agrees-key
 welsh	9	5	re enforcements	9	re enforcements:9	reinforcements	conflicts-key
-arno	7	4	banks	4	banks:4; halleck:3	Rosecrans/Banks/Halleck	agrees-key
+anthon	4	4	rosecrans	2	rosecrans:2; mcdowell:2	Banks/McDowell	conflicts-key
 jargon	9	4	charlottesville	9	charlottesville:9	Charlottesville	agrees-key
 panther	4	4	advance	4	advance:4	advance	agrees-key
 princess	5	4	artillery	5	artillery:5	artillery	agrees-key
 quadrant	6	4	cavalry	6	cavalry:6	cavalry	agrees-key
-whistle	7	4	enemy	7	enemy:7	the enemy	agrees-key
+robin	4	4	division	4	division:4	division	agrees-key
+virtue	5	4	grafton	3	grafton:3; artillery:2	Frederick/artillery	conflicts-key
 anthons	3	3	mcdowell	3	mcdowell:3		propose
 genoa	6	3	washington	6	washington:6	Washington	agrees-key
 jasper	3	3	winchester	3	winchester:3	Winchester	agrees-key
+merlin	4	3	virginia	2	virginia:2; maryland:1; va:1	Virginia	agrees-key
 quack	4	3	sigel	3	sigel:3; cannon:1	Sigel	agrees-key
 stanhope	3	3	flank	2	flank:2; shenandoah:1	flank/the Shenandoah	agrees-key
-wafer	4	3	regiments	4	regiments:4	regiment	conflicts-key
+twinkle	6	3	romney	6	romney:6	Romney	agrees-key
+whale	3	3	cavalry	3	cavalry:3	cavalry	agrees-key
+whist	3	3	regiments	3	regiments:3	regiment(s)	conflicts-key
 widow	4	3	re enforcements	2	re enforcements:2; telegraph:2	reinforcements	conflicts-key
 alvord	3	2	buell	2	buell:2; wool:1	Buell	agrees-key
-anthon	2	2	mcdowell	2	mcdowell:2	Banks/McDowell	agrees-key
 camden	4	2	banks	4	banks:4	Thomas/Banks	agrees-key
+damon	4	2	batteries	4	batteries:4		propose
+has	2	2	lias	1	lias:1; have:1		single
 have	2	2	are	1	are:1; had:1		single
 him	2	2	you	1	you:1; in in:1		single
 ingot	2	2	lynchburg	2	lynchburg:2	Lynchburg	agrees-key
 irving	2	2	yorktown	1	yorktown:1; a lincoln:1	Lincoln	conflicts-key
-japan	2	2	manassas	2	manassas:2		propose
+japan	2	2	manassas	2	manassas:2	Manassas	agrees-key
+legend	2	2	kentucky	2	kentucky:2	Kentucky	agrees-key
 lonesome	2	2	tennessee	2	tennessee:2	Tennessee	agrees-key
-merlin	3	2	virginia	2	virginia:2; va:1	Virginia	agrees-key
+negus	2	2	potomac	2	potomac:2	Potomac	agrees-key
 offal	2	2	richmond	2	richmond:2	Richmond	agrees-key
 one	2	2	our	1	our:1; i:1		single
-opal	2	2	winchester	2	winchester:2	Winchester	agrees-key
-pastor	2	2	battle	2	battle:2	St Louis	conflicts-key
-persian	3	2	army	3	army:3		propose
+pastor	2	2	battle	2	battle:2	St Louis/battle	agrees-key
+persian	3	2	army	3	army:3	army	agrees-key
 tambour	4	2	in fantry	4	in fantry:4	infantry	conflicts-key
-tarquin	2	2	movements	2	movements:2		propose
-virtue	2	2	artillery	2	artillery:2	Frederick/artillery	agrees-key
+tarquin	2	2	movements	2	movements:2	movements	agrees-key
+them	2	2	show	1	show:1; him:1		single
+vesper	2	2	new creek	2	new creek:2	Cumberland (Md.)	conflicts-key
+vomit	2	2	cumberland	1	cumberland:1; cavalry:1	Paw Paw	conflicts-key
 vulcan	3	2	railroad	2	railroad:2; headquarters wheeling va:1	headquarters/railroad	agrees-key
+wafer	2	2	regiments	2	regiments:2	regiment	conflicts-key
 wafers	2	2	regiments	2	regiments:2		propose
-whist	2	2	regiments	2	regiments:2	regiment(s)	conflicts-key
+yankee	2	2	transportation	2	transportation:2	(stores? transportation?)	conflicts-key
 again	1	1	at	1	at:1		single
 aldens	2	1	banks	2	banks:2		single
 alvords	1	1	wool	1	wool:1		single
@@ -52,27 +62,35 @@ are	1	1	is	1	is:1		single
 army	1	1	any	1	any:1		single
 asia	1	1	uix	1	uix:1		single
 badger	1	1	sigel	1	sigel:1		single
+bulerny	1	1	balcony	1	balcony:1		single
 carthage	2	1	cavalry	2	cavalry:2		single
-damon	1	1	batteries	1	batteries:1		single
+chester	3	1	attack	3	attack:3	Curtis	conflicts-key
 danube	1	1	mcdowell	1	mcdowell:1	McDowell	agrees-key
 danubes	2	1	mcdowell	2	mcdowell:2		single
 dawn	5	1	fort monroe	4	fort monroe:4; fort:1		single
 devon	2	1	norfolk	2	norfolk:2	Norfolk	agrees-key
+dimple	2	1	dumfries	2	dumfries:2		single
 dispatch	1	1	message	1	message:1		single
 eagle	2	1	fort monroe	2	fort monroe:2		single
+eddy	1	1	banks	1	banks:1		single
+emblem	1	1	occoquan	1	occoquan:1		single
+feb	1	1	of their men	1	of their men:1		single
 gem	1	1	baltimore	1	baltimore:1		single
 had	1	1	have	1	have:1		single
-has	1	1	have	1	have:1		single
+her	1	1	him	1	him:1		single
+here	1	1	him	1	him:1		single
 his	1	1	you	1	you:1		single
+humboldts	1	1	lander	1	lander:1		single
 important	1	1	supposed	1	supposed:1		single
 ingrate	1	1	williainsburg	1	williainsburg:1		single
 john	1	1	jno	1	jno:1		single
 kettle	1	1	newport news	1	newport news:1		single
 lantern	2	1	gordousville	2	gordousville:2		single
-legend	1	1	kentucky	1	kentucky:1	Kentucky	agrees-key
 limpid	1	1	potomac	1	potomac:1		single
 luna	1	1	shenandoah	1	shenandoah:1		single
 moment	1	1	minute	1	minute:1		single
+nutmeg	2	1	james	2	james:2		single
+occoquan	1	1	enemy	1	enemy:1		single
 ocean	1	1	washington	1	washington:1	Washington	agrees-key
 oyster	1	1	attack	1	attack:1		single
 pagans	2	1	batteries	2	batteries:2		single
@@ -83,29 +101,26 @@ peasant	1	1	cut off	1	cut off:1		single
 quadrons	1	1	me dowelfs	1	me dowelfs:1		single
 queen	1	1	banks	1	banks:1		single
 raven	2	1	defense	2	defense:2		single
-report	1	1	move	1	move:1		single
 return	1	1	nature	1	nature:1		single
 sable	1	1	washington	1	washington:1		single
 segments	1	1	gunboats	1	gunboats:1		single
 shylock	1	1	fall back	1	fall back:1	Nashville	conflicts-key
 tarquins	1	1	movements	1	movements:1		single
-them	1	1	him	1	him:1		single
 they	1	1	this	1	this:1		single
 trance	1	1	winchester	1	winchester:1		single
 trinity	1	1	louisa court house	1	louisa court house:1		single
-twinkle	2	1	romney	2	romney:2	Romney	agrees-key
+under	1	1	in	1	in:1		single
 ursa	1	1	pickets	1	pickets:1		single
 utterly	1	1	entirely	1	entirely:1		single
-vomit	1	1	cavalry	1	cavalry:1	Paw Paw	conflicts-key
+virtuo	1	1	grafton	1	grafton:1		single
+wag	1	1	batteries	1	batteries:1	batteries	agrees-key
 wayworn	1	1	army	1	army:1	army	agrees-key
-whale	1	1	cavalry	1	cavalry:1	cavalry	agrees-key
 wharf	1	1	in fantry	1	in fantry:1	infantry	conflicts-key
 wharton	1	1	division	1	division:1		single
+whig	1	1	advance	1	advance:1	advance	agrees-key
 whistles	1	1	enemy	1	enemy:1		single
-width	1	1	strength	1	strength:1		single
+width	1	1	force	1	force:1		single
 windham	1	1	enemy	1	enemy:1		single
 worst	1	1	rout	1	rout:1		single
-yankee	1	1	transportation	1	transportation:1	(stores? transportation?)	conflicts-key
 yellow	1	1	ammunition	1	ammunition:1		single
-you	1	1	i	1	i:1		single
 youth	1	1	arms	1	arms:1	arms	agrees-key

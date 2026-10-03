@@ -6,9 +6,9 @@ image; code words in [brackets] read by key.md's dated rule, grade per pages.tsv
 The Huntington Library, San Marino, California. Telegrams in these pages were not found in OR ser. I vols. 7, 9-12 by
 print/or_match.py (GAPS113); that is a search result, not a novelty verdict (rule 10).
 
-Pages 56, entries 120; key.md tokens C 95, I 37, M 114; oov 850.
+Pages 57, entries 122; key.md tokens C 120, I 41, M 97; oov 856.
 
-Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 vs real_p05 -0.831, null_p99 -2.14 -> FAIL (N 34979); shuffled_key_full score -1.029 vs real_p05 -0.832, null_p99 -2.14 -> FAIL (N 33129); real_windows score -1.135 vs real_p05 -0.845, null_p99 -2.118 -> FAIL (N 6197); shuffled_key_windows score -1.108 vs real_p05 -0.842, null_p99 -2.115 -> FAIL (N 5264)
+Judge (en corpus, fold caveat in the script docstring): real_full score -1.036 vs real_p05 -0.831, null_p99 -2.138 -> FAIL (N 35575); shuffled_key_full score -1.031 vs real_p05 -0.829, null_p99 -2.139 -> FAIL (N 33979); real_windows score -1.126 vs real_p05 -0.839, null_p99 -2.118 -> FAIL (N 6526); shuffled_key_windows score -1.098 vs real_p05 -0.835, null_p99 -2.123 -> FAIL (N 5884)
 
 ## 4960 Page_
 
@@ -28,7 +28,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 ## 4962 Page_
 
-*05 Feb*  Feb 5 ' 62 Capt Ambrose Thompson Send immediately by mail a report of your [(stores? transportation?)] on hand and the clothing & stores you require signed Stewart Van Vliet Brig General shine out fair sun
+*05 Feb*  Feb 5 ' 62 Capt Ambrose Thompson Send immediately by mail a report of your [transportation] on hand and the clothing & stores you require signed Stewart Van Vliet Brig General shine out fair sun
 
 *05 Feb*  Feb 5 ' 62 Genl Lander From the information recd here as to the strength of the [the enemy] at [Romney] & from the fact that he is establishing a telegraph line between [Winchester] & [Romney] it is supposed that he is determined to hold that place at all hazards . Under these circumstances the Comdg Genl desires me to enjoin the utmost caution upon you in your movements. As you are on the spot you can better see how favorable the occasion may be for a contest with the [the enemy] than the Comdg Genl but no desperate risks are to be incurred no uncertainty of result to be hazarded . The Generals designs are not such as to include any unnecessary hazard at this moment By command of [McClellan] signed James A Hardie Lt Col A D C
 
@@ -62,6 +62,12 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 *09 Feb*  Brig Genl Buell Feby 9 " 62 Louisville Ky [(an officer, cavalry)] will be ordered to report to you the regulars at Camp Chase will be ordered to report to you at once would you wish to see me in person signed [McClellan] Tell Tyler send Blunderbuss
 
+## 4976 Page_
+
+*10 Feb*  Feb 10 ' 62 For [Hunter] and General Lane [Leavenworth] Gen Lane [Leavenworth] My wish has been & is to avail the Govt of the services of both [Hunter] & Gen Lane & so far as possible to personally oblige both [Hunter] is the senior officer & must command when they serve together though in so far as he can consistently with the public service & his own honor oblige Genl Lane he will also oblige me. If they can not come to an amicable understanding Genl Lane must report to [Hunter] for duty according to the rules or decline the service signed [Lincoln] Bush please send far as possible in cipher
+
+*10 Feb*  Feb 10th 62 [Halleck] The President this morning nominated to the senate E A Hitchcock to be Major General of Volunteers signed John G Nicolay Private Secretary
+
 ## 4978 Page_
 
 *11 Feb*  Feb 11th 62 . 2 PM [Buell] Thirty five hundred Harpers Ferry Rifles caliber fifty eight with sword bayonet in first rate order are this day sent to you the regulars at Indianapolis and Captain Macfeely are ordered to you signed A V Colburn A A G  {time Sarah: 2 PM}
@@ -94,7 +100,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 ## 4985 Page_
 
-*15 Feb*  Gen J Hooker Feb 15 ' 62 Budds Ferry The Genl Commanding directs me to say to you that he thinks your [Curtis] had better if possible be upon all the damon at the same time as if you made the [Curtis] upon the lower one first the enemy would be upon the alert for some time at the upper damon The sooner you make the effort the better should all be ready and the weather propitious tonight would be better than any later time Should you not be able to get ready however he does not wish it hurried Everything must be carefully prepared and the most favorable time selected You may have strong reasons for making the [Curtis] upon the lower damon before attempting the others if so let me know You can be reinforced to any extent you may desire if you think it necessary Telegh your views at once Please telegh in cipher your understanding of this message separate from your views finis etc etc RB Marcy Chief of Staff
+*15 Feb*  Gen J Hooker Feb 15 ' 62 Budds Ferry The Genl Commanding directs me to say to you that he thinks your [Curtis] had better if possible be upon all the [batteries] at the same time as if you made the [Curtis] upon the lower one first the enemy would be upon the alert for some time at the upper [batteries] The sooner you make the effort the better should all be ready and the weather propitious tonight would be better than any later time Should you not be able to get ready however he does not wish it hurried Everything must be carefully prepared and the most favorable time selected You may have strong reasons for making the [Curtis] upon the lower [batteries] before attempting the others if so let me know You can be reinforced to any extent you may desire if you think it necessary Telegh your views at once Please telegh in cipher your understanding of this message separate from your views finis etc etc RB Marcy Chief of Staff
 
 ## 4992 Page_
 
@@ -140,7 +146,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 ## 5000 Page_
 
-*19 Feb*  Feb 19 ' 62 For [Lander] which in your opinion is the best road to move your command on [Winchester] If the road from Paw Paw to Bloomery Gap is a good one that route would suit the purposes of the Comdg Genl better than any other Please communicate your views to these Head Quarters by telegh in cipher as early as practicable what is the minimum amt of additional [(stores? transportation?)] you will require to make the movement indicated which will be a combined movement of other troops with your own & of which you will be advised in time R B Marcy Chief of Staff
+*19 Feb*  Feb 19 ' 62 For [Lander] which in your opinion is the best road to move your command on [Winchester] If the road from Paw Paw to Bloomery Gap is a good one that route would suit the purposes of the Comdg Genl better than any other Please communicate your views to these Head Quarters by telegh in cipher as early as practicable what is the minimum amt of additional [transportation] you will require to make the movement indicated which will be a combined movement of other troops with your own & of which you will be advised in time R B Marcy Chief of Staff
 
 *19 Feb*  For A G McKelvey care Maj Copeland Feb 19 62 Frederick You will go to Hancock and make your examination there & Jones to Williamsport & act there Procure the necessary orders for yourself & Jones from Major Copeland addressed to the Comdg Officer at these points Each of you will send your reports from these points by messenger as directed EJ Allen
 
@@ -302,7 +308,7 @@ Judge (en corpus, fold caveat in the script docstring): real_full score -1.037 v
 
 ## 5044 Page_
 
-*09 Mar*  Genl J Hooker March 9th 62 Budds Ferry Your dispatches regarding Whitings movement to Ellen received The Genl Comdg desires you & Capt Wyman to keep a sharp look out upon the damon opposite you & if you find they are abandoned or so feebly manned that you can destroy them without running any great risk do so Please communicate with Capt Wyman at once & hold yourself ready to seize the first favorable moment that presents itself Send back your spies as soon as possible & keep the Genl Comdg informed of everything that occurs finis etc RB Marcy Chief of Staff
+*09 Mar*  Genl J Hooker March 9th 62 Budds Ferry Your dispatches regarding Whitings movement to Ellen received The Genl Comdg desires you & Capt Wyman to keep a sharp look out upon the [batteries] opposite you & if you find they are abandoned or so feebly manned that you can destroy them without running any great risk do so Please communicate with Capt Wyman at once & hold yourself ready to seize the first favorable moment that presents itself Send back your spies as soon as possible & keep the Genl Comdg informed of everything that occurs finis etc RB Marcy Chief of Staff
 
 ## 5045 Page_
 

@@ -89,7 +89,7 @@ value in date and stay M.
 |---|---|---|---|---|
 | Alden | Halleck | C | 05 Feb-10 Mar 1862 | OR 7 p.584, 591, 624, 628; ledger addressee "St Louis" |
 | Alvord | Buell | C | 05 Feb-02 Mar 1862 | OR 7 p.593, 609, 626, 646 |
-| Andes | McClellan | C | 05 Feb-04 Jul 1862 | ledger p.[9] deletion; OR 7 passim |
+| Andes | McClellan | C | 01 Feb-04 Jul 1862 | ledger p.[9] deletion; OR 7 passim |
 | Anthon | Banks | I | 06 Feb 1862 | ledger p.[11]: plain telegram to Banks at Frederick repeats the coded one to "Anthon" |
 | Arno | Rosecrans | M | undated | received ledger mssEC 01 p.14: Wheeling telegram signed "Arthur"; sent ledger uses "Arno" |
 | Bagdad | Cullum | I | 20 Feb 1862 | ledger p.[49] coded and p.[51] plain versions of the same order |
@@ -99,7 +99,7 @@ value in date and stay M.
 | Chester | Curtis | C | 21 Feb 1862 | OR 7 p.646 (McClellan to Halleck 21 Feb 1862, "push Curtis beyond Bentonville") |
 | Cuba | (an officer, cavalry) | M | 07 Feb-10 Feb 1862 | ledger p.[17], [20] |
 | Devon | Norfolk | M | 21 Feb 1862 | ledger p.[55], Fort Monroe line; on p.[10] the same word stands with "Indianapolis" (Gov. Morton?), so two keys were in use |
-| Humboldt | Lander | M | 13 Feb-21 Feb 1862 | ledger p.[28], [29] "Humboldt was seriously ill" (Lander died 2 Mar 1862); but on p.[57] "Humboldt" is the plain Tennessee town (OR 7 p.646), so the eastern-line entries use a different meaning set |
+| Humboldt | Lander | M | 13 Feb-03 Mar 1862 | ledger p.[28], [29] "Humboldt was seriously ill" (Lander died 2 Mar 1862); but on p.[57] "Humboldt" is the plain Tennessee town (OR 7 p.646), so the eastern-line entries use a different meaning set |
 | Ingress | Thomas A. Scott, Asst. Sec. of War | C | 17 Feb 1862 | OR 7 p.628 |
 | Irving | Lincoln | C | 10 Feb-11 Jul 1862 | OR 8 p.551, OR 7 p.624 |
 | Jolly | (relay office, Cincinnati?) | M | 06 Feb-07 Feb 1862 | ledger p.[14] |
@@ -107,14 +107,14 @@ value in date and stay M.
 | Lamb | Kansas | I | 10 Feb-13 Feb 1862 | ledger p.[24], [26] (Lane's Kansas expedition) |
 | Lark | Indiana | C | 07 Feb 1862 | OR 7 p.593 |
 | Lather | Michigan | C | 07 Feb 1862 | OR 7 p.593 |
-| Legend | Kentucky | C | 17 Feb-08 Jun 1862 | OR 7 p.628 |
+| Legend | Kentucky | C | 07 Feb-08 Jun 1862 | OR 7 p.628 |
 | Lonesome | Tennessee | C | 07 Feb-08 Jun 1862 | OR 7 p.591, 626 |
 | Magnet | Arkansas | C | 21 Feb 1862 | OR 7 p.646 |
 | Mary | Tennessee River | I | 06 Feb 1862 | ledger p.[13] "expedition up the Mary ... Fort Henry" |
 | Merlin | Virginia | C | 05 Feb-17 Jun 1862 | OR 7 p.584 ("Western Virginia") |
 | Mystic | Green River | C | 16 Feb 1862 | OR 7 p.626 |
 | Myrtle | Cumberland River | C | 21 Feb 1862 | OR 7 p.646 |
-| Negus | Potomac | I | 15 Feb 1862 | ledger p.[31] "reserve whack of the youth of the negus" |
+| Negus | Potomac | I | 15 Feb-03 Mar 1862 | ledger p.[31] "reserve whack of the youth of the negus" |
 | Ocean | Washington | I | 11 Jul 1862 | received ledger mssEC 01 p.8, 13 address line "Andes Ocean"; Plum via Tomokiyo |
 | Opal | Winchester | M | 01 Feb-30 May 1862 | ledger p.[7], [45] |
 | Palate | Cairo | I | 20 Feb 1862 | ledger p.[48], [49] |
@@ -125,22 +125,22 @@ value in date and stay M.
 | Sermon | Bowling Green | C | 05 Feb-21 Feb 1862 | OR 7 p.584, 624, 626 |
 | Shylock | Nashville | C | 07 Feb-21 Feb 1862 | OR 7 p.591, 593, 624, 626, 646 |
 | Torrent | Memphis | C | 07 Feb-21 Feb 1862 | OR 7 p.591, 593, 646 |
-| Twinkle | Romney | I | 01 Feb-06 Feb 1862 | ledger p.[11]: plain telegram to Banks "Lander moving on Romney" repeats coded "Lander is moving on Twinkle" |
+| Twinkle | Romney | I | 01 Feb-03 Mar 1862 | ledger p.[11]: plain telegram to Banks "Lander moving on Romney" repeats coded "Lander is moving on Twinkle" |
 | Vesper | Cumberland (Md.) | M | 01 Feb-05 Feb 1862 | ledger p.[5], [6] (Lander's base) |
 | Virtue | Frederick | I | 01 Feb-07 Feb 1862 | ledger p.[6], [14] (Banks's headquarters) |
 | Vomit | Paw Paw | M | 13 Feb-15 Feb 1862 | ledger p.[28] |
-| wag | batteries | C | 13 Feb 1862 | OR 7 p.608 |
+| wag | batteries | C | 06 Feb-13 Feb 1862 | OR 7 p.608 |
 | wayworn | army | I | 07 Feb-03 Jul 1862 | ledger p.[17], [26], [42] |
 | whack | artillery | I | 06 Feb-15 Feb 1862 | ledger p.[12], [31] |
 | whale | cavalry | C | 13 Feb-27 Mar 1862 | OR 7 p.608 |
 | wharf | infantry | C | 13 Feb-27 Mar 1862 | OR 7 p.608 |
-| whig | advance | C | 16 Feb-21 Feb 1862 | OR 7 p.626, 646 |
+| whig | advance | C | 01 Feb-21 Feb 1862 | OR 7 p.626, 646 |
 | wean | threaten | C | 21 Feb 1862 | OR 7 p.646 ("seriously threaten Memphis") |
 | whist | regiment(s) | I | 01 Feb-27 Mar 1862 | ledger p.[5], [8], [40] |
 | whistle | the enemy | I | 01 Feb-16 Jun 1862 | ledger p.[5], [7], [33], [34] |
 | widow | reinforcements | C | 13 Feb-03 Jul 1862 | OR 11 pt3 p.286, OR 12 pt1 p.659 (ledger 5095, 5079, June 1862; GAPS122); was M "(troops sent, reinforcements?)" from ledger p.[26], [27] (Feb), which the print agrees with |
 | wreathe | gunboat(s) | C | 16 Feb-21 Feb 1862 | OR 7 p.624, 646 |
-| yankee | (stores? transportation?) | M | 01 Feb-20 Feb 1862 | ledger p.[7], [45] |
+| yankee | transportation | C | 01 Feb-20 Mar 1862 | ledger p.[7], [45]; OR 51 pt1 (ledger 5000, 19 Feb, "minimum amount of additional transportation") and OR 11 pt3 p.25 (ledger 5053, 20 Mar), two telegrams, GAPS153 pooled held-out; was M "(stores? transportation?)" |
 | youth | arms | I | 01 Feb-02 Mar 1862 | ledger p.[5], [6], [40] |
 | Arctic | Fremont | C | 25 May-16 Jun 1862 | OR 11 pt3 p.202, 205 (ledger 5069-5070, 31 May-1 June 1862; GAPS118 alignment, print/or_align.py) |
 | Genoa | Washington | C | 25 May-28 Jun 1862 | OR 11 pt3 p.217, 269 (ledger 5073-5074, 5092, June 1862; GAPS118); Feb entries use Ocean |
@@ -152,7 +152,7 @@ value in date and stay M.
 | princess | artillery | C | 06 Jun-21 Jul 1862 | OR 11 pt3 p.217, 260 (ledger 5073-5074, 5090, June 1862; GAPS118); Feb entries use whack (I) |
 | rampant | (the) enemy | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, 205, 269, 278, 325 (ledger 5058-5110, Apr-July 1862; GAPS118); Feb entries use whistle (I) |
 | rampants | (the) enemy | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.199, 202, 205, 269 (ledger 5064-5092, May-June 1862; GAPS118) |
-| robin | division | C | 08 Jun-21 Jul 1862 | OR 11 pt3 p.260, 326 (ledger 5090, 5110, June-July 1862; GAPS118) |
+| robin | division | C | 08 Jun-17 Jul 1862 | OR 11 pt3 p.260, 326 (ledger 5090, 5110, June-July 1862; GAPS118) |
 | wedding | transportation | C | 06 Apr-26 Jun 1862 | OR 11 pt3 p.217, 260 (ledger 5073, 5090, June 1862; GAPS118) |
 | welsh | reinforcements | C | 18 Jun-30 Jun 1862 | OR 11 pt3 p.232, 234, 258, 269, 270 (ledger 5085-5093, June 1862; GAPS118) |
 | Danube | McDowell | C | 02 May-29 May 1862 | OR 12 pt3 p.125, OR 12 pt1 p.533 (ledger 5060, 5064, May-June 1862; GAPS122); Anthon is also McDowell in the same months (GAPS118) |
@@ -188,6 +188,7 @@ value in date and stay M.
 | Persian | army | C | 21 Jun-28 Jun 1862 | OR 11 pt1 p.48, OR 11 pt3 p.269 (ledger 5089, 5092, two telegrams, 21 and 28 Jun 1862; GAPS147 pooled held-out) |
 | tarquin | movements | C | 25 May-26 Jun 1862 | OR 11 pt1 p.32, OR 11 pt3 p.260 (ledger 5063, 5090, two telegrams, 25 May and 26 Jun 1862; plural tarquins 5062; GAPS147 pooled held-out) |
 | Pastor | battle | C | 25 May-28 Jun 1862 | OR 11 pt1 p.31, OR 11 pt3 p.269 (ledger 5061, 5092, two telegrams, 25 May and 28 Jun 1862; GAPS147 pooled held-out); the Feb value is St Louis; dated split GAPS147 |
+| damon | batteries | C | 13 Feb-10 Mar 1862 | OR 51 pt1 (ledger 4985, 15 Feb, Marcy to Hooker, "upon all the batteries") and OR 5 p.524 (ledger 5044, 9 Mar), two telegrams, GAPS153 pooled held-out |
 
 Not code: "finis", "etc", "signed", and the chatty tails ("whats news", "cold day", "Im for the union",
 "hurry") are the operator's check or filler words; decode.py drops them from the reading.

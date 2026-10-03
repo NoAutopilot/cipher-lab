@@ -1,0 +1,32 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+opal	3	3	winchester	3	winchester:3	Winchester	agrees-key
+whistle	4	3	enemy	4	enemy:4	the enemy	agrees-key
+anthon	2	2	rosecrans	2	rosecrans:2	Banks/McDowell	conflicts-key
+negus	2	2	potomac	2	potomac:2	Potomac	agrees-key
+twinkle	4	2	romney	4	romney:4	Romney	agrees-key
+virtue	3	2	grafton	3	grafton:3	Frederick/artillery	conflicts-key
+whale	2	2	cavalry	2	cavalry:2	cavalry	agrees-key
+andes	1	1	mcclellan	1	mcclellan:1	McClellan	agrees-key
+bulerny	1	1	balcony	1	balcony:1		single
+chester	3	1	attack	3	attack:3	Curtis	conflicts-key
+damon	3	1	batteries	3	batteries:3		single
+dimple	2	1	dumfries	2	dumfries:2		single
+eddy	1	1	banks	1	banks:1		single
+emblem	1	1	occoquan	1	occoquan:1		single
+feb	1	1	of their men	1	of their men:1		single
+has	1	1	lias	1	lias:1		single
+her	1	1	him	1	him:1		single
+here	1	1	him	1	him:1		single
+humboldts	1	1	lander	1	lander:1		single
+lark	1	1	send it	1	send it:1	Indiana	conflicts-key
+legend	1	1	kentucky	1	kentucky:1	Kentucky	agrees-key
+merlin	1	1	maryland	1	maryland:1	Virginia	conflicts-key
+nutmeg	2	1	james	2	james:2		single
+under	1	1	in	1	in:1		single
+vesper	2	1	new creek	2	new creek:2	Cumberland (Md.)	conflicts-key
+virtuo	1	1	grafton	1	grafton:1		single
+vomit	1	1	cumberland	1	cumberland:1	Paw Paw	conflicts-key
+wag	1	1	batteries	1	batteries:1	batteries	agrees-key
+whig	1	1	advance	1	advance:1	advance	agrees-key
+whist	1	1	regiments	1	regiments:1	regiment(s)	conflicts-key
+yankee	1	1	transportation	1	transportation:1	(stores? transportation?)	conflicts-key
