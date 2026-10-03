@@ -137,3 +137,32 @@ wants the letter's context: Ribbeck, *FBPG* 12 (check whether it reaches 1672); 
 
 Requests this session: www.googleapis.com 11, be-api.us.archive.org 11, api.openalex.org 3, api.semanticscholar.org 3,
 all one at a time, >=1.2 s apart, no 429/403. Vision: 2 crop looks. No subagents.
+
+## Addendum: print check (GAPS188, account-4, 3 Oct 2026, 18:06-18:12 UTC)
+
+Ran `tools/print_check.py` with `phrases.txt` and `sources.tsv` (both in this folder). The output is in `print-check.tsv` and `print-check-hosts.tsv`.
+There were four target phrases: the clear prose at p2:7 ("hierbey signalirte dienste gethan"), the run-1 margin gloss
+("disgustirt und vertanin holstein"), the run-2 gloss as context-read I ("gott geb dass alles wol ablauft") and
+the p3:25-26 nomenclator glosses ("hertzog von ploen alliance kayser"). Each host also got a positive control. The first control was a sentence quoted
+verbatim from UA Friedrich Wilhelm (urkundenundacte30kommgoog: "Lincker abgefertigt, um zusammen mit dem Gesandten in
+Celle"). The second was the title of Ribbeck's Lincker article.
+
+| host | positive control | target phrases |
+|---|---|---|
+| IA listed item urkundenundacte30kommgoog (djvu text, exact + proximity) | read (1 exact) | 0/4 |
+| IA full text, all items (be-api) | read (2 items; Ribbeck title 11 items) | 0/3 no hits; "disgustirt..." not searched (HTTP 502, not retried) |
+| Google Books API (key, country=US) | read (4 volumes, UA Friedrich Wilhelm; Ribbeck title 2) | "disgustirt..." 0. The other three return only scattered-word matches, which are not phrase hits: "hierbey signalirte dienste gethan" gave 6 volumes, all the Allgemeines historisches Lexicon 1722/1730, and the snippets show the words in different entries (Castagno, etc.); "gott geb..." gave 312 and "hertzog von ploen..." 243 generic volumes |
+| OpenAlex (key, header) | **missed** (0 for both controls) | 0/4 + keywords 0. This is a non-test for phrases, because the control does not read |
+| Semantic Scholar (key) | not run (HTTP 429 after 3 requests, not retried) | 0/2 searched, rest not searched |
+| CrossRef (keywords) | n/a (keyword relevance only) | top 5 unrelated (Hessen-Kassel general) |
+
+**Ribbeck lead (AUDIT section 3, "date range not confirmed"): settled.** The IA full-text hits for the title give "Aus
+Berichten des hessischen Sekretärs Lincker am Berliner Hofe während der Jahre 1666-1669" (friedrichipreuss0000lfre;
+baclac_1007322804 "(1666-1669)"). So Ribbeck, *FBPG* 12, S. 465 ff., covers Lincker at Berlin in 1666-69. This letter was
+written at Hamburg in May 1672, so the article cannot contain it. UA Friedrich Wilhelm vol. (urkundenundacte30kommgoog) mentions Lincker in a later
+Danish mission (Celle, Stade) and the Plön duke, and no target phrase occurs in it.
+
+Result: no printed text of this letter's clear prose or of its glosses was located by this method on 3 Oct 2026. The
+class stays **N0**, because the decipherment is the period gloss on the leaf itself. Print adds no prior decipherment, and it also adds nothing
+that would change the class. Requests: be-api.us.archive.org 7 (incl. 1 to find Ribbeck's IA item), archive.org 2 (advancedsearch
+1, djvu download 1), www.googleapis.com 7, api.openalex.org 7, api.semanticscholar.org 3 (429), api.crossref.org 2.

@@ -1,0 +1,9 @@
+# hessen-daenemark-1672: distinctive phrases from the letter's clear prose and its period glosses (GAPS188, 3 Oct 2026)
+# target phrases (clear prose p2:7; run-1 margin gloss; run-2 gloss as context-read I; nomenclator glosses p3:25-26)
+hierbey signalirte dienste gethan
+disgustirt und vertanin holstein
+gott geb dass alles wol ablauft
+hertzog von ploen alliance kayser
+# POSITIVE CONTROLS (not the target): verbatim from UA Friedrich Wilhelm (urkundenundacte30kommgoog), and Ribbeck's title
+lincker abgefertigt um zusammen mit dem gesandten in celle
+aus berichten des hessischen sekretars lincker
