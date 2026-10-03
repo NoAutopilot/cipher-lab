@@ -55,3 +55,8 @@ Data conflict, rule 4 (not merged): barred 37. Key no.71 gives D. de Mayenne (br
 | f.7r period pair, flat-start interlinear_align vs Tomokiyo letters (G1) | Tomokiyo values permuted, 10,000 | mean 2.25, p99 5 | 5/32 | FAIL (tie with p99): leaf held, G2 key71 not run |
 Mechanical reconciliation only (no image check of marks or glosses); an image reconciliation of the same crops is new
 material for this instrument, not a re-tune.
+
+## G1 known-answer power check (GAPS83, 3 Oct 2026, account-4; PREREG4_g1power.md, 750d4ff0)
+| instrument | control (known answer) | target | verdict |
+|---|---|---|---|
+| flat-start interlinear_align, G1 A/S vs Tomokiyo (PASS S>=12, A/S>=0.70, A>perm p99) | synthetic f.7r glosses enciphered with Tomokiyo: K1 clean 1.000, K2 (word-codes 0.15, sub 0.10) 0.970, K3 (sub 0.20) 0.969 median, PASS 20/20 each | f.7r: GAPS-16 5/32 = 0.156, GAPS82 8/30 = 0.267 | gate reachable; target FAILs are real FAILs of the pairing as transcribed, not a non-test and not a key negative; no third reconciliation (rule 3); next instrument: fixed-key scoring vs permuted-key control |
