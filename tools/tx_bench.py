@@ -21,6 +21,10 @@ the error numerator. err_true = (wrong + inserted) / scored, with a Wilson 95% i
 Scope: catches misreads, missed signs and extra signs on positions where a known plain text forces the sign.
 It does NOT see a homophone swap (two signs of one value), nor errors on excluded positions, nor a segmentation
 error already in the reference transcription; err_true is therefore a lower bound on true sign error.
+--label-map MAP.tsv (columns from, to): rename sign labels before scoring, in the output, the reference sign and every
+truth-set member alike, so a reader that was given a coarser label inventory than the reconciler (one label for two
+glyphs the reconciler later split) is scored on glyph identity, not on notation (CLAUDE.md rule 3, PX-BRODEC). Report
+the mapped and unmapped scores side by side (TXB2, 3 Oct 2026).
 Exit 0 always on a clean score; exit 2 on bad input.
 """
 import argparse, csv, json, math, os, sys
@@ -82,6 +86,20 @@ def align(ref, truthsets, out):
     return path[::-1]
 
 
+def load_label_map(path):
+    return {r['from'].strip(): r['to'].strip() for r in read_tsv(path)}
+
+
+def map_truth(rows, lm):
+    out = []
+    for r in rows:
+        r = dict(r)
+        r['ref_sign'] = lm.get(r['ref_sign'], r['ref_sign'])
+        r['truth'] = '|'.join(sorted({lm.get(t, t) for t in r['truth'].split('|') if t}))
+        out.append(r)
+    return out
+
+
 def score_item(truth_rows, out_lines):
     by_line = defaultdict(list)
     for r in truth_rows:
@@ -132,17 +150,23 @@ def main(argv=None):
     ap.add_argument('--line-prefix')
     ap.add_argument('--top', type=int, default=8)
     ap.add_argument('--json', action='store_true')
+    ap.add_argument('--label-map', help='TSV from/to: rename labels in output, reference and truth before scoring')
     a = ap.parse_args(argv)
     if not os.path.exists(a.bench):
         print('tx_bench: no bench file %s' % a.bench, file=sys.stderr); return 2
     base = os.path.dirname(os.path.abspath(a.bench))
     out_lines = load_output(a.outputs, a.line_prefix)
+    lm = load_label_map(a.label_map) if a.label_map else None
+    if lm:
+        out_lines = {k: [lm.get(x, x) for x in v] for k, v in out_lines.items()}
     report, splits = [], defaultdict(lambda: [0, 0])
     for item in read_tsv(a.bench):
         if a.item and item['item'] not in a.item:
             continue
         tp = os.path.join(base, item['truth'])
         truth = read_tsv(tp)
+        if lm:
+            truth = map_truth(truth, lm)
         if not any(r['line'] in out_lines for r in truth):
             continue
         res = score_item(truth, out_lines)

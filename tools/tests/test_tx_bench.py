@@ -44,6 +44,24 @@ def test_scoring():
         assert rc == 2
 
 
+def test_label_map():
+    # reconciler split one instruction label into two (D and 4); a reader given only '4' is right under the map
+    with tempfile.TemporaryDirectory() as d:
+        _w(d, 't.truth.tsv', 'line\tpos\tref_sign\ttruth\tplain\tstatus\n'
+           'L1\t1\tD\tD\ta\tscored\nL1\t2\tq\tq\tq\tscored\nL1\t3\t4\t4\tl\tscored\n')
+        bench = _w(d, 'B.tsv', 'item\ttruth\tsplit\nit1\tt.truth.tsv\tdev\n')
+        o = _w(d, 'o.tsv', 'line\tpos\tsign\nL1\t1\t4\nL1\t2\tq\nL1\t3\t4\n')
+        rc, out = _run([o, '--bench', bench, '--json'])
+        assert rc == 0 and json.loads(out)['items'][0]['errors'] == 1
+        m = _w(d, 'm.tsv', '# c\nfrom\tto\nD\t4\n')
+        rc, out = _run([o, '--bench', bench, '--json', '--label-map', m])
+        assert rc == 0 and json.loads(out)['items'][0]['errors'] == 0
+        # a genuine misread stays wrong under the map
+        o2 = _w(d, 'o2.tsv', 'line\tpos\tsign\nL1\t1\tq\nL1\t2\tq\nL1\t3\t4\n')
+        rc, out = _run([o2, '--bench', bench, '--json', '--label-map', m])
+        assert json.loads(out)['items'][0]['errors'] == 1
+
+
 def test_wilson():
     lo, hi = tx_bench.wilson(0, 10)
     assert lo == 0.0 and 0.25 < hi < 0.35
@@ -62,4 +80,4 @@ def test_repo_bench_parses():
 
 
 if __name__ == '__main__':
-    test_scoring(); test_wilson(); test_repo_bench_parses(); print('ok')
+    test_scoring(); test_label_map(); test_wilson(); test_repo_bench_parses(); print('ok')

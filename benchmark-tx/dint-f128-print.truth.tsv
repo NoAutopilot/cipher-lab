@@ -1,0 +1,185 @@
+# dint-f128-print: fr.3621 f.128r reconciled read vs the 1882 Revue de Champagne print through key_print (agree==n>=2); built by benchmark-tx/build_dint128.py, rules benchmark-tx/PREREG-dint128.md
+line	pos	ref_sign	truth	plain	status
+f128_L02	1	z	z	m	scored
+f128_L02	2	v		a	excluded:key-row-n<2-or-conflicted
+f128_L02	3	y			excluded:null-or-unaligned
+f128_L02	4	a			excluded:null-or-unaligned
+f128_L02	5	p			excluded:null-or-unaligned
+f128_L02	6	3	3	d	scored
+f128_L02	7	L	L|p	i	scored
+f128_L02	8	zh	zh	t	scored
+f128_L03	1	II			excluded:null-or-unaligned
+f128_L03	2	D	D	a	scored
+f128_L03	3	al	al	u	scored
+f128_L03	4	y	y	o	scored
+f128_L03	5	p	L|p	i	scored
+f128_L03	6	w	c|w	r	scored
+f128_L03	7	m		u	excluded:key-row-n<2-or-conflicted
+f128_L03	8	o			excluded:null-or-unaligned
+f128_L03	9	al	al	u	scored
+f128_L03	10	#		d	excluded:conflict:c
+f128_L03	11	1			excluded:null-or-unaligned
+f128_L03	12	.	.|o	e	scored
+f128_L03	13	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L03	14	0		c	excluded:conflict:e
+f128_L03	15	0		e	excluded:key-row-n<2-or-conflicted
+f128_L03	16	f	f|r	n	scored
+f128_L03	17	3	3	d	scored
+f128_L03	18	c	c|w	r	scored
+f128_L03	19	1			excluded:null-or-unaligned
+f128_L03	20	.	.|o	e	scored
+f128_L03	21	D	D	a	scored
+f128_L03	22	9	9	g	scored
+f128_L03	23	1			excluded:null-or-unaligned
+f128_L03	24	.	.|o	e	scored
+f128_L03	25	f			excluded:null-or-unaligned
+f128_L03	26	r	f|r	n	scored
+f128_L03	27	0		e	excluded:key-row-n<2-or-conflicted
+f128_L03	28	#		d	excluded:conflict:c
+f128_L03	29	0		e	excluded:key-row-n<2-or-conflicted
+f128_L03	30	m		u	excluded:key-row-n<2-or-conflicted
+f128_L03	31	sq		x	excluded:conflict:s
+f128_L03	32	z	z	m	scored
+f128_L03	33	p	L|p	i	scored
+f128_L03	34	4	4	l	scored
+f128_L03	35	plus		l	excluded:single
+f128_L03	36	L	L|p	i	scored
+f128_L03	37	y	y	o	scored
+f128_L03	38	f	f|r	n	scored
+f128_L03	39	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L03	40	3	3	d	scored
+f128_L03	41	y	y	o	scored
+f128_L03	42	w	c|w	r	scored
+f128_L03	43	#		d	excluded:conflict:c
+f128_L03	44	0		e	excluded:key-row-n<2-or-conflicted
+f128_L03	45	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L03	46	0		p	excluded:conflict:e
+f128_L03	47	v		a	excluded:key-row-n<2-or-conflicted
+f128_L03	48	L	L|p	i	scored
+f128_L03	49	9	9	g	scored
+f128_L03	50	r	f|r	n	scored
+f128_L03	51	0		e	excluded:key-row-n<2-or-conflicted
+f128_L03	52	y			excluded:null-or-unaligned
+f128_L03	53	#			excluded:null-or-unaligned
+f128_L03	54	v		a	excluded:key-row-n<2-or-conflicted
+f128_L04	1	div		b	excluded:single
+f128_L04	2	0		e	excluded:key-row-n<2-or-conflicted
+f128_L04	3	0		s	excluded:conflict:e
+f128_L04	4	D	D	a	scored
+f128_L04	5	f	f|r	n	scored
+f128_L04	6	#		c	excluded:key-row-n<2-or-conflicted
+f128_L04	7	y	y	o	scored
+f128_L04	8	r	f|r	n	scored
+f128_L04	9	a		q	excluded:key-row-n<2-or-conflicted
+f128_L04	10	al	al	u	scored
+f128_L04	11	v		a	excluded:key-row-n<2-or-conflicted
+f128_L04	12	w	c|w	r	scored
+f128_L04	13	D	D	a	scored
+f128_L04	14	f	f|r	n	scored
+f128_L04	15	v		t	excluded:conflict:a
+f128_L04	16	0		e	excluded:key-row-n<2-or-conflicted
+f128_L04	17	#		c	excluded:key-row-n<2-or-conflicted
+f128_L04	18	1		i	excluded:conflict:e
+f128_L04	19	f	f|r	n	scored
+f128_L04	20	a		q	excluded:key-row-n<2-or-conflicted
+f128_L04	21	z	z	m	scored
+f128_L04	22	m		u	excluded:key-row-n<2-or-conflicted
+f128_L04	23	4	4	l	scored
+f128_L04	24	0		e	excluded:key-row-n<2-or-conflicted
+f128_L04	25	v		t	excluded:conflict:a
+f128_L04	26	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L04	27	#		c	excluded:key-row-n<2-or-conflicted
+f128_L04	28	T	T	h	scored
+f128_L04	29	v		a	excluded:key-row-n<2-or-conflicted
+f128_L04	30	w	c|w	r	scored
+f128_L04	31	9	9	g	scored
+f128_L04	32	1			excluded:null-or-unaligned
+f128_L04	33	.	.|o	e	scored
+f128_L04	34	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L04	35	a		q	excluded:key-row-n<2-or-conflicted
+f128_L04	36	m		u	excluded:key-row-n<2-or-conflicted
+f128_L04	37	L	L|p	i	scored
+f128_L04	38	#		d	excluded:conflict:c
+f128_L04	39	y	y	o	scored
+f128_L04	40	p	L|p	i	scored
+f128_L04	41	m		u	excluded:key-row-n<2-or-conflicted
+f128_L04	42	o	.|o	e	scored
+f128_L04	43	f	f|r	n	scored
+f128_L04	44	m		t	excluded:conflict:u
+f128_L04	45	h		p	excluded:single
+f128_L04	46	v		a	excluded:key-row-n<2-or-conflicted
+f128_L04	47	c	c|w	r	scored
+f128_L04	48	v		t	excluded:conflict:a
+f128_L04	49	L	L|p	i	scored
+f128_L04	50	c	c|w	r	scored
+f128_L04	51	#		d	excluded:conflict:c
+f128_L04	52	B		a	excluded:single
+f128_L04	53	f	f|r	n	scored
+f128_L04	54	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L04	55	m		t	excluded:conflict:u
+f128_L04	56	w	c|w	r	scored
+f128_L04	57	y	y	o	scored
+f128_L04	58	p	L|p	i	scored
+f128_L04	59	sq		s	excluded:key-row-n<2-or-conflicted
+f128_L05	1	1		i	excluded:conflict:e
+f128_L05	2	y	y	o	scored
+f128_L05	3	m		u	excluded:key-row-n<2-or-conflicted
+f128_L05	4	w	c|w	r	scored
+f128_L05	5	0		s	excluded:conflict:e
+f128_L05	6	0		e	excluded:key-row-n<2-or-conflicted
+f128_L05	7	v		t	excluded:conflict:a
+f128_L05	8	0		p	excluded:conflict:e
+f128_L05	9	w	c|w	r	scored
+f128_L05	10	1			excluded:null-or-unaligned
+f128_L05	11	.	.|o	e	scored
+f128_L05	12	f	f|r	n	scored
+f128_L05	13	3	3	d	scored
+f128_L05	14	c	c|w	r	scored
+f128_L05	15	0		e	excluded:key-row-n<2-or-conflicted
+f128_L05	16	4	4	l	scored
+f128_L05	17	1		e	excluded:key-row-n<2-or-conflicted
+f128_L05	18	#		c	excluded:key-row-n<2-or-conflicted
+f128_L05	19	T	T	h	scored
+f128_L05	20	1		e	excluded:key-row-n<2-or-conflicted
+f128_L05	21	z	z	m	scored
+f128_L05	22	p	L|p	i	scored
+f128_L05	23	f	f|r	n	scored
+f128_L05	24	#		d	excluded:conflict:c
+f128_L05	25	1			excluded:null-or-unaligned
+f128_L05	26	.	.|o	e	scored
+f128_L05	27	m		u	excluded:key-row-n<2-or-conflicted
+f128_L05	28	o	.|o	e	scored
+f128_L05	29	0		s	excluded:conflict:e
+f128_L05	30	y	y	o	scored
+f128_L05	31	a		ul	excluded:conflict:q
+f128_L05	32	f	f|r	n	scored
+f128_L05	33	v		a	excluded:key-row-n<2-or-conflicted
+f128_L05	34	1		i	excluded:conflict:e
+f128_L05	35	r	f|r	n	scored
+f128_L05	36	zh	zh	t	scored
+f128_L05	37	0			excluded:null-or-unaligned
+f128_L05	38	a		q	excluded:key-row-n<2-or-conflicted
+f128_L05	39	al	al	u	scored
+f128_L05	40	1			excluded:null-or-unaligned
+f128_L05	41	.	.|o	e	scored
+f128_L05	42	#		c	excluded:key-row-n<2-or-conflicted
+f128_L05	43	0		e	excluded:key-row-n<2-or-conflicted
+f128_L05	44	f	f|r	n	scored
+f128_L05	45	v		t	excluded:conflict:a
+f128_L05	46	#		c	excluded:key-row-n<2-or-conflicted
+f128_L05	47	T	T	h	scored
+f128_L05	48	1		e	excluded:key-row-n<2-or-conflicted
+f128_L05	49	m		u	excluded:key-row-n<2-or-conflicted
+f128_L05	50	v		a	excluded:key-row-n<2-or-conflicted
+f128_L05	51	al	al	u	scored
+f128_L05	52	sq		x	excluded:conflict:s
+f128_L05	53	3	3	d	scored
+f128_L05	54	1			excluded:null-or-unaligned
+f128_L05	55	.	.|o	e	scored
+f128_L05	56	0		s	excluded:conflict:e
+f128_L05	57	#		c	excluded:key-row-n<2-or-conflicted
+f128_L05	58	y	y	o	scored
+f128_L05	59	c			excluded:null-or-unaligned
+f128_L05	60	n		r	excluded:single
+f128_L05	61	1		t	excluded:conflict:e
+f128_L05	62	.	.|o	e	scored
