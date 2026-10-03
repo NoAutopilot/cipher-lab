@@ -1758,3 +1758,4 @@ the end of every wake.
 | 3 Oct 2026 | GF-A2-12 | session_01WTmnhP83pMN2KRreatF1GL | account 2 | Opus 5.5 | 4.71 | D | done 00:49: 4 gates 1->0 (moustier, scorpion, mlh, censorship); scorpion claimed plaintexts flagged (unaccepted). 516k uncached input again despite the keep-PDFs-on-disk line. |
 | 3 Oct 2026 | CS-A2-F | session_01A8Qyf44qEqUdLwCoYtRjxA | account 2 | Sonnet 5.5 | 1.80 | D | done 00:45 (efd925db): bl-sacchetti-nunzio-1623 open, gate 1->0; BL: mostly clear registers, cipher residue small, not digitised. |
 | 3 Oct 2026 | CS-A2-G | session_01Tgon93jNcv3tzUMj9iiQdC | account 2 | Sonnet 5.5 | 1.30 | D | done 00:43 (e5cbc872): bullet-tuscany-1944 stays partial, gate 1->0; nothing found. |
+| 3 Oct 2026 | A2-COS (via LANE-A2PUSH) | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | decode-1168 found-solved: R1168 = Berzeviczy 1914 no. CLV, period interlinear decipherment + clear Exemplum in the record |

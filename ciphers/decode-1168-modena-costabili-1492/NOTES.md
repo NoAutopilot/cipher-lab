@@ -1,7 +1,6 @@
 # Beltrame Costabili (Esztergom) to Eleonora d'Aragona, 20 March 1492, State Archives of Modena, Amb. Ung. b.2/21 no.8
 
-**Status: partial** (per DECODE's own status field — see below; extent of the existing partial decipherment
-not confirmed this pass).
+**Status: found-solved** (account-3 orchestrator, 3 Oct 2026 01:0x UTC, from A2-COS's identity check e7eade5f: R1168 = Berzeviczy 1914 no. CLV, printed in clear; the record itself holds a period interlinear decipherment and a clear Exemplum, f.13. Was: partial per DECODE's own status field.) Remaining optional step: period key by alignment to f.13 (A2-COS2, grade C).
 Berzeviczy, *Acta vitam Beatricis reginae Hungariae illustrantia* (MHH Diplomataria 39, 1914), no. CLV, pp. 216-219, read by this worker (GF-A2-10, 3 Oct 2026): prints a Costabili letter to the Duchess of Ferrara, Strigonii XX Martii 1492 (postscript XXIII Martii), from the Modena state archive, headed "Titkos írásjegyekkel írva" (written in secret characters), in clear Italian -- see "## Premise check" below.
 
 ## Item
