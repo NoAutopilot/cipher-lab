@@ -3,6 +3,7 @@
 status: partial
 novelty: E4 N4, E5 N4 (no prior decipherment located; AUDIT.md 'N4 set (LANE W2 worker E2)', 24 Sept 2026); E6 N1, E12 N1
 checked: 20 Sept 2026 (section 8 added; sections 1-7 as checked 19 Sept 2026)
+editions read (restated from AUDIT.md sections 1, 7-8 on 3 Oct 2026 for the intake gate; classes unchanged): Official Records ser. I vol 32 pt 3 p.498 (E6, word for word) and p.213 (the p.[47] entry read by the project blog), vol 33 p.279 (Butler's reply to E4); Butler Correspondence vol IV p.112 (E5's antecedent); Basler, Collected Works of Lincoln vol 7 pp.479-480 (E12); open web and blogs: section 'Web and blog check' below.
 target: QUEUE.md rank 1, "Thomas T. Eckert Papers, US Military Telegraph: ledgers of telegrams sent 'still in
 code', 1862-67 (Huntington mssEC 1-76)". Second pilot, recommended in ciphers/eckert-1862/NOTES.md section 5:
 one 1864 sent ledger read entry by entry against the filled-in cipher book the Huntington holds.
@@ -289,3 +290,31 @@ list if a person or a working JSTOR login runs it: `"Fox" AND "Butler" AND "Eric
 `"Tecumseh" AND "camels" AND Hatteras`; `Meigs AND Butler AND "cavalry depot" AND 1864`; `"Army of the James" AND
 Butler AND telegram AND April 1864`; `Eckert AND "Military Telegraph" AND cipher` (AUDIT.md "Toward N4, 24 Sept
 2026 (gap worker)" section 4).
+
+## Web and blog check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+Scope: an intake-gate fix only; this section adds to AUDIT.md's source-family log (rows 1-10, 20 and 24 Sept 2026) and changes no class there (E4 and E5 stand at the classes AUDIT.md gives them; E6 and E12 at N1).
+Plain web searches (WebSearch, 3 Oct 2026): (1) `Eckert telegraph ledger Huntington "Cipher No. 1" decoded Fox Butler April 1864` -- Huntington collection and Digital Library pages (Cipher Book #1 p.[22]), the OAC finding aid, Verso posts, the project blog's "ciphers" tag; nothing on E4 or any ledger p.49 entry; (2) `"Decoding the Civil War" Eckert ledger decoded telegrams Meigs Butler 1864 cipher solved` -- NHPRC report, Zooniverse project page, the project blog's "Telegram in Focus" category; nothing on E5; (3) `Union Army telegraph cipher ledger decoded AI 2026 Huntington Eckert` -- 2016 press (Slate, Smithsonian, InsideHook); no 2026 decoding announcement for the ledgers.
+Blog site searches: Cipherbrain (`?s=Eckert`): 2 posts -- "Tausende von verschlüsselten Telegrammen aus dem Sezessionskrieg warten auf ihre Entschlüsselung" (22 Jun 2016) and "A Cryptologic Travel Guide" (27 Aug 2014); the 2016 post and its 2 comments (Olivia von Westernhagen, 22 Jun 2016; Bernhard Gruber, 23 Jun 2016) were read: project announcement only, no decipherment of any entry; klausschmeh.net "Solved cryptogram" category (4 posts, 21 Sept-1 Oct 2026): none about Civil War telegrams; Cryptiana blog (`search?q=Eckert`): no posts (Tomokiyo's on-disk page `sources/cryptiana/web/civilwar1.htm` is already cited in section 1); Cipher Mysteries (`?s=Civil War telegram`): Nothing Found. The project's own blog (decodingthecivilwar.wordpress.com) was read for this item on 20 Sept 2026 (section 1, "Now, Jesse", the p.[47] entry); not re-read this pass.
+Model-solve and new-publication check: Apeiron (apeiron.re front page: no listing of solved items is served; nothing on this item); Cabinet Noir (github.com/el-descifrador/cabinet-noir, HEAD 47b6db9, 2 Oct 2026) grepped for `eckert`, `1864`: no hit; neither solver repository has an Eckert item (sources/solver-diffs/2026-10-03-bourdeau.tsv and 2026-10-03-aymeloglu.tsv carry no eckert row).
+Result: no decipherment or plaintext of the twenty read entries beyond what AUDIT.md already records was located by these queries on 3 Oct 2026 (a search result, not a novelty verdict, rule 10; AUDIT.md stays the only place a class is set).
+Requests: WebSearch 3, scienceblogs.de 2, cryptiana.blogspot.com 1, ciphermysteries.com 1, klausschmeh.net and apeiron.re shared with sp53-22-f52; all >=1.5 s apart.
+
+## Premise check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions: **found, already handled** -- the project blog's "Now, Jesse" (26 Jun 2017) read the p.[47] entry with the sister book mssEC 44 (section 1 correction); E6 and E12 were found in print by the verifier (AUDIT.md sections 7-8, N1). Nothing further mentioned in NOTES.md, AUDIT.md or `second-opinions/` is an unopened decipherment.
+(b) Other solvers' working files: **not found** -- neither Bourdeau's nor Aymeloglu's repository has an Eckert item (3 Oct 2026 diffs); the Zooniverse project's decoding phase was never launched (AUDIT.md section 12).
+(c) Physical neighbours: **partly read** -- the facing and neighbouring ledger pages are on the Huntington item pages the readings came from; the parallel sent ledger mssEC 18 (object 10074) has not been opened (section 2) and could hold a second copy of E4/E5 with the code words resolved; the sister cipher books mssEC 43/44 were opened for named pages only.
+(d) Recipient's side: **found, already logged** -- Butler's printed correspondence and OR vol 33 (the recipient's side for E4/E5) were read by the verifiers (AUDIT.md sections 5-6 and the 24 Sept second audit); the Meigs Papers and NARA RG 92/107 by finding aid (AUDIT.md "Toward N4").
+Verdict: no premise failure; status `partial` and every AUDIT.md class unchanged.
+
+## While waiting
+
+The one action that depends on nobody: open mssEC 18 (object 10074) at 21-22 Apr 1864 on the Huntington CONTENTdm API (`dmQuery` with the `CISOSEARCHALL` clause, Access playbook item 1) and check whether its copies of E4 and E5 resolve any of the unread code words; script and one page read, about USD 1-2.
+
+Gate after this pass (3 Oct 2026, GF4-BATCH20): `python3 tools/intake_gate_check.py eckert-1864`
+```
+eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
+`python3 tools/next_steps.py --wait-only | grep eckert-1864`: no line.

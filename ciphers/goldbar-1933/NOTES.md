@@ -49,3 +49,31 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026): (1) `Chinese gold bar cryptogram solved 2026` -- IACR pages (McCurley), Cipher Mysteries 2015 posts, Cipher Foundation pages, the voynich.fandom wiki; the result summary relays that "Milton Kim claimed to have a fully deciphered text ... on October 26, 2024" and uploaded it to GitHub on 4 Nov 2024; (2) `Milton Kim Chinese gold bars cryptograms deciphered GitHub International City Bank` -- same pages; names the repository github.com/milton6310/cgbCiphers; (3) `Chinese gold bar cipher solved Claude OR GPT OR AI` -- model-solve announcements for other items (Cyphral Distich, a Napoleonic letter, a 1918 German message); nothing claiming this item; (4) the most distinctive ciphertext string is in the thread read below (FEWGDRHDDEEUMFFTEEMJXZR); the item has no clear text to quote.
+Blog site searches: Cipherbrain post 49 (Schmeh, 11 Feb 2017) and its 11-comment thread to 28 Jun 2025 were already read on 25 Sept 2026 from `sources/schmeh/posts/49-goldbar.*` (section above; not re-fetched); klausschmeh.net `?s=gold bar`: no post on the item (only an iX article "Gold 2.0"), and the "Solved cryptogram" category (4 posts, 21 Sept-1 Oct 2026) does not include it; Cryptiana blog (`search?q=gold bar`): no posts; Cipher Mysteries (`?s=gold bar`): two posts, 15 and 19 Mar 2015.
+Comment threads read: Cipher Mysteries "Those Chinese Gold Bar Ciphers, once again..." (19 Mar 2015, 16 comments to 9 Jul 2025). Comments 13-15 are by Milton Kim. Comment 13 (26 Oct 2024) claims to have "fully deciphered" the cryptograms, giving one example: line 4, FEWGDRHDDEEUMFFTEEMJXZR, read as "OUSTGOVPBANKCTGOLEESVOG (or OUST GOV P BANK CT GOL EES VOG)", the last nine letters read backwards as "GOV SEE LOG"; he withholds the method pending contact from the bar's presumed owner. Comment 14 (4 Nov 2024) says the solution is on GitHub; comment 15 (27 May 2025) gives a court-docket link to a recording of oral argument in a suit between Bin Tao and Citibank. Comment 16 ("BREAKER", 9 Jul 2025) disputes Kim's claim (the same commenter as Cipherbrain comment #11 above, with a rival reading of his own). Neither blog author nor any other commenter accepts either claim.
+Model-solve and new-publication check: Apeiron (apeiron.re front page: no listing of solved items is served; nothing on this item); Cabinet Noir (github.com/el-descifrador/cabinet-noir, HEAD 47b6db9, 2 Oct 2026) grepped for `gold ?bar`, `1933`: no hit.
+Result: one claimed decipherment located (Milton Kim, Cipher Mysteries comment 13, 26 Oct 2024; full text said to be at github.com/milton6310/cgbCiphers, **not opened**: that repository is outside this session's GitHub scope). The status word stays `open`, for the parent to decide: the claim gives one line of purported plaintext but no method, nobody has accepted it, and it has to be weighed against the reading-independent flatness result above (chi-squared ~1.2 against a random-sampling mean of 25). Kim's claim and BREAKER's are both logged here as unverified claimed decipherments, not as solves. No other decipherment or plaintext of this item was located by these queries on 3 Oct 2026 (a search result, not a novelty verdict, rule 10).
+Requests: WebSearch 3, ciphermysteries.com 2, klausschmeh.net 2 (shared), cryptiana.blogspot.com 1, voynich.fandom.com 1 (HTTP 402, not retried), apeiron.re 1 (shared); all >=1.5 s apart.
+
+## Premise check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions: **found, two claims, neither verified** -- the BREAKER comment (Cipherbrain #11, 28 Jun 2025, "Old English Box Cipher"/rotating grille, self-published on Facebook) was already logged on 25 Sept 2026; Milton Kim's claim (above) was not in the folder until now. Bret Bowen's line-8 correction is a transcription note, not a reading.
+(b) Other solvers' working files: **found, not a decipherment** -- Bourdeau's `targets/goldbar/NOTES.md`, `analyse.py`, `readings.py` (15 Sept 2026): letter-count flatness and a check of the transcription against McCurley's photographs, no plaintext; Aymeloglu SHORTLIST.md line 105 dismisses it as hoax-risk with no attempt. Milton Kim's repository (github.com/milton6310/cgbCiphers) is a third solver's working file for this item and was **not read** this pass (outside this session's GitHub scope); it is the first thing to open.
+(c) Physical neighbours: **not applicable / found nothing new** -- the item is seven bars photographed on McCurley's IACR page (15 images); Bourdeau checked the lettering against the 7 legible casts. Each bar also carries Chinese text, which states the transaction (National City Bank, 3 Mar 1933, General Wang Jialie); it is a clear text beside the cipher, but neither McCurley nor the 2015 threads report it as a rendering of the Latin-letter strings.
+(d) Recipient's side: **not read** -- Kim's comment 15 points to court records of a Bin Tao v. Citibank suit (docket link in the comment, not opened this pass). A court filing could carry the claimant's own reading of the bars; the docket was not opened.
+Verdict: the "no message" premise (Bourdeau, bGLD) is contested by one unverified claimed decipherment; the parent decides whether that changes the status. Until Kim's repository is read, no further work on this item should assume it is unread.
+
+## While waiting
+
+The one action that depends on nobody: a session with github.com/milton6310/cgbCiphers in scope (or a plain archive.org/Wayback capture of the repository page) reads Kim's method and full plaintext and tests it against the line 4 example and the flatness result; about USD 1-2, one worker. The Bin Tao v. Citibank docket from comment 15 is the second, independent read.
+
+Gate after this pass (3 Oct 2026, GF4-BATCH20): `python3 tools/intake_gate_check.py goldbar-1933`
+```
+goldbar-1933: open (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
+`python3 tools/next_steps.py --wait-only | grep goldbar-1933`: no line.

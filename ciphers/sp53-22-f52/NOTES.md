@@ -42,3 +42,31 @@ their HEAD is still d2800bb (27 Sept 2026) and PR refs 1-25 are unchanged, so th
 TARGETS.md row 14 lists this item closed-negative on 16 Sept 2026, work private (no public folder or ciphertext).
 Class b (attempted and closed there). Their issue tracker could not be read from this session (HTTP 403 through the
 proxy). Row in sources/solver-diffs/2026-10-03-aymeloglu.tsv. Status line not changed here.
+
+## Web and blog check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026): (1) `"Spanish Spye" cipher SP 53/22 Mary Queen of Scots` -- TNA education page for SP 53/22 f.1, the Glasgow MQS project, Lasry/Biermann/Tomokiyo 2023 (the 1578-84 letters, a different set), Babington Plot pages; nothing on f.52; (2) `"Cifer with Spanish Spye" OR "Spanish spy" cipher Tomokiyo Chartley solved` -- Phelippes/Babington pages and the 1930s Spanish strip cipher (unrelated); nothing on f.52; (3) shelfmark + "cipher" is query 1; the item's own descriptive title is query 2's quoted phrase. The ciphertext is numerals only, so there is no distinctive clear-text phrase to search.
+Blog site searches: Cipherbrain (scienceblogs.de/klausis-krypto-kolumne `?s=Maria Stuart`): 5 posts, none about this item; klausschmeh.net (Schmeh's blog since 2026) `?s=Mary Stuart` and the "Solved cryptogram" category page (4 posts, 21 Sept-1 Oct 2026: ADFGVX, WWII Enigma, Copenhagen, Koehler): nothing on Mary Stuart ciphers; Cryptiana blog (cryptiana.blogspot.com `search?q=Mary Queen of Scots`): 19 posts 2019-2026, none naming SP53/22 or a "Spanish spy" cipher; Tomokiyo's on-disk pages (`sources/cryptiana/web/mary.htm:879-887`, `sources/cryptiana/web/unsolved-2026-09-24.htm:96-97`, zero requests): f.52 still listed as "a short undeciphered ciphertext" on the 24 Sept 2026 snapshot of his unsolved page; Cipher Mysteries (`?s=Mary Queen of Scots`): Nothing Found.
+Comment threads: no post about this item was found, so no thread to read.
+Model-solve and new-publication check: Apeiron (apeiron.re front page: no listing of solved items is served; nothing on this item); the Cabinet Noir repository (github.com/el-descifrador/cabinet-noir, shallow clone HEAD 47b6db9, 2 Oct 2026, 26 target folders, all French/Spanish/German 1568-1824 nomenclators) grepped for `sp ?53`, `spanish spy`, `spye`: no hit.
+Result: no decipherment or plaintext of this item located by these queries on 3 Oct 2026 (a search result, not a novelty verdict, rule 10). Status word unchanged.
+Requests: WebSearch 2, scienceblogs.de 1, klausschmeh.net 2, cryptiana.blogspot.com 1, ciphermysteries.com 1, apeiron.re 1, github.com 1 clone (shared with goldbar-1933 and eckert-1864); all >=1.5 s apart.
+
+## Premise check (GF4-BATCH20 (account-4), 3 Oct 2026)
+
+(a) Folder's own mentions: **not found** -- no decipherment, gloss or clear copy of f.52 is mentioned anywhere in NOTES.md, REQUEST.md or `specs/`. One premise flag, from Tomokiyo's own page: in this volume the other leaves are keys endorsed "Alphabet with <correspondent>" (f.50 "Alphabet with the B. of Rosse", f.54 "Alphabet with Tho. Throgmorton"), and f.52 is endorsed "Cifer with* Spanish Spye". Tomokiyo transcribes it as a short ciphertext, and both solvers attacked it as one; whether the leaf also carries a plain line or key (which would make it a key sheet, not a message) cannot be settled without the image (REQUEST.md item 1).
+(b) Other solvers' working files: **not found** -- Bourdeau's `targets/sp53/NOTES.md` (public) records homophonic annealing in four languages with matched 84-token controls also unsolved, no reading; Aymeloglu keeps the work private (TARGETS.md row 14: 61 key images tried, all negative). No rendering of f.52 under any key exists in either repository.
+(c) Physical neighbours: **unreachable** -- SP 53/22 is not digitised (REQUEST.md). From Tomokiyo's descriptions only: f.50 Bishop of Ross alphabet, f.51 a skipped number, f.53 a French nomenclator (Paget 83, Arundel 84, Morgan 85, Fontenay 86), f.54 Throckmorton's alphabet; none is described as a decipherment of f.52. The verso of f.52 is not described.
+(d) Recipient's side: **not found / not applicable** -- no correspondent is named beyond "Spanish spy"; CSP Scotland vol. 9 was full-text searched on 25 Sept 2026 (section above, no hit). A CSP Spain (Simancas) vol. 3 search would need a name to search for; none is known.
+Verdict: the premise holds as far as can be checked without the image; the item stays `open`.
+
+## While waiting
+
+The one action that depends on nobody: re-read Tomokiyo's live `unsolved.htm` and `mary.htm` entries for f.52 against the 24 Sept snapshots on disk (zero-cost diff), and check whether either page now gives an image reference for 092.jpg/093.jpg (the HTML comment on both entries), which would show what the leaf holds before the TNA copy order (REQUEST.md) is placed.
+
+Gate after this pass (3 Oct 2026, GF4-BATCH20): `python3 tools/intake_gate_check.py sp53-22-f52`
+```
+sp53-22-f52: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
+`python3 tools/next_steps.py --wait-only | grep sp53-22-f52`: no line.
