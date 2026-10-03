@@ -1,0 +1,29 @@
+line	set	real	n	hits
+1	C	2	3	48=c 51=de
+2	C	1	2	51=de
+3	C	0	1	
+4	C	0	0	
+5	C	0	1	
+6	C	1	1	24=n
+7	C	2	3	53=d 10=a
+8	C	3	5	22=m 51=de 25=p
+9	C	3	6	24=n 69=s 65=s
+10	C	0	1	
+11	C	0	0	
+1	all	4	9	48=c 23=n 54=du 21=e
+2	all	2	9	17=o 57=e
+3	all	3	16	96=r 21=e 30=s
+4	all	1	6	20=i
+5	all	2	5	21=e 30=s
+6	all	4	7	29=a 30=s 17=o 24=n
+7	all	3	16	17=o 13=d 29=a
+8	all	8	17	20=i 22=m 15=e 29=a 21=e 30=s 51=de 25=p
+9	all	5	19	24=n 32=o 69=s 20=i 21=e
+10	all	0	4	
+11	all	4	20	23=n 29=a 76=c 30=s
+
+set	real	n	ctrl	mean	p95	max	P(ctrl>=real)
+C	12	23	shuffled-gloss	7.01	10	14	0.0153
+C	12	23	f23-window	9.49	13	16	0.1775
+all	36	128	shuffled-gloss	27.77	33	41	0.0125
+all	36	128	f23-window	32.47	39	48	0.2190
