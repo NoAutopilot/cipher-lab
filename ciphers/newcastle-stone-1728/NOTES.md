@@ -1,4 +1,5 @@
-open
+found-solved
+No cipher in this item: TNA Discovery's own description of SP 36/9/118 (record C8106544, fetched by this worker 3 Oct 2026) gives the note's full text in clear -- Newcastle asking the King whether the Grimaldi paragraph should be "writ in cypher", with the King's answer -- and Coxe's *Memoirs of Sir Robert Walpole* (1800, vols 1-3) and *Memoirs of Horatio, Lord Walpole* (1808, vols 1-2) were grepped whole-volume by this worker (archive.org djvu full text) with no copy of the note.
 
 # Andrew Stone reporting Mr Stanhope and Walpole's private letter to the King — TNA SP 36/9/118
 
@@ -108,3 +109,62 @@ ASKS row 76, since 26 Sept 2026).
 - S: full-text search Coxe's two Walpole memoir volumes (already located, not yet searched) for 'second reading'/19 Dec 1728 -- tools/print_check.py.
 - S: run the three pending Google Books queries this NOTES.md already lists ("GB queries pending"), key+country=US, not yet run.
 - S: cross-check SP 36/37/44 (14 Nov 1735, same correspondent Andrew Stone, already scored N65) against this item's own content, not compared yet.
+
+## Check-solved re-run (GF4-BATCH13, account-4, 3 Oct 2026)
+
+Gate fix (the verdict lacked a logged web/blog pass; the Coxe full-text search was still undone). Per `.claude/briefs/check-solved.md`.
+
+1. **Holding catalogue, full description (the decisive find).** `tools/discovery_items.py "SP 36" "SP 36/9" "second reading"`
+   (TNA Discovery API, 1 request) returned SP 36/9/118, 1728 Dec. 19, id C8106544, description verbatim: "Folios 118-119. Note from
+   (Newcastle) to the King. Finding upon a second reading of Mr. Stanhope and Mr. Walpole's private letter, that the intelligence
+   about Mons. Grimaldi came from the Sicilian priests and the Auditor de Rota, and that Mr. Walpole desires it may be kept
+   secret, I have presumed to mention it only in general terms and proposed to write it in cypher. If your Majesty would have it
+   written out in cypher I humbly beg your Majesty will be pleased to honour me with your commands. The King's answer appended.
+   The secret being recommended as to what relates to Mr. Grimaldi it will be more proper to have that paragraph writ in
+   cypher." The item is a clear note about whether to cipher a paragraph of an outgoing despatch; it carries no ciphertext, and
+   its whole text is in the catalogue. The QUEUE row's "Andrew Stone" attribution is not in TNA's description (it reads
+   "(Newcastle)"); the 24 Sept notes already doubted it.
+2. **Editions (whole-volume grep, archive.org djvu, long-s OCR allowed for: "[sf]econd reading", "Soi[sf][sf]ons").** Coxe,
+   *Memoirs of the Life and Administration of Sir Robert Walpole* (1800 ed., `memoirsoflifeadm01coxeuoft`,
+   `memoirsoflifeadm02coxeuoft`, `memoirsoflifeadm03coxeuoft`) and Coxe, *Memoirs of Horatio, Lord Walpole* (1808,
+   `memoirsofhoratio01coxeuoft`, `memoirsofhoratio02coxeuoft`): queries "second reading" (7 hits, all parliamentary bill
+   readings), "private letter" (21 hits, none this note), "Dec. 19"/"December 19" (0), "Grimaldi" not needed after step 1,
+   "Andrew Stone"/"Mr. Stone" (7, all 1740s), "Soissons" (8 incl. OCR variants, narrative only). The note is not printed there.
+   Not read: the Camden Third Series volume *William Stanhope, later Lord Harrington, Horatio Walpole, Stephen Poyntz
+   1728-1730* (Cambridge Core, abstract only seen) -- immaterial here, since the item has no cipher to be printed deciphered.
+3. **Google Books API** (`"second reading" Stanhope Walpole "private letter" 1728`, key + country=US): 47 results, none this note
+   (History of Parliament, Mahon's History, booksellers' circulars).
+4. **Community lists, DECODE, Bourdeau, Aymeloglu:** as 24 Sept, no hit; not re-cloned.
+
+**Verdict: found-solved (F0).** There is nothing to decipher in SP 36/9/118: the note is in clear and its full text, with the
+King's answer, is in TNA's own catalogue description. The scout row read "cypher" in the description as a cipher item. The
+ciphered paragraph it talks about would sit in Newcastle's outgoing despatch to William Stanhope and Horatio Walpole at the
+Congress of Soissons of about 19-20 Dec 1728 (SP 78 or the Newcastle papers in BL Add MSS), a different item not checked here
+-- one-line suggestion for a scout, not a step of this folder. REQUEST.md's copy order is moot, and so are this target's
+queued JSTOR-QUEUE.tsv rows (left for the parent to waive; not edited here).
+
+Requests: discovery.nationalarchives.gov.uk 2 (one empty "Stanhope" query, one hit; >=2 s apart); archive.org 5 djvu (shared
+with the batch, 1.6 s apart); googleapis.com 1; WebSearch 4 + 3 blog-site searches.
+
+## Web and blog check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- Plain web: `Newcastle to George II 19 December 1728 Grimaldi Stanhope Walpole cypher` (Wikipedia pages, Chesterfield papers at
+  OAC, the Camden volume's abstract -- nothing on this note); `"SP 36/9" Newcastle King 1728 cypher` (TNA beta catalogue page
+  C8106544 for this item, same clear description as above; sibling SP 36/9 notes C8106550, C8106566); `"intelligence about Mons.
+  Grimaldi" OR "Sicilian priests" "Auditor de Rota" 1728` (Grimaldi biographies only); `Andrew Stone Newcastle note to the King
+  Stanhope Walpole private letter 1728` (Stone biographies; no item).
+- Cipherbrain (site:scienceblogs.de, `Newcastle 1728 Stanhope Walpole letter cipher Andrew Stone`): unrelated posts (Cheltenham
+  stones, pigpen) -- no hit.
+- Cryptiana (site:cryptiana.blogspot.com / cryptiana.web.fc2.com, `Newcastle Stanhope Walpole 1728 cipher`): no results.
+- Cipher Mysteries (site:ciphermysteries.com, same query): Beale, Gentlemen's cipher, d'Agapeyeff -- no hit.
+- Result: no blog or comment thread treats the item.
+
+## Premise check (GF4-BATCH13, account-4, 3 Oct 2026)
+
+- (a) Folder's own files: NOTES.md quotes the catalogue snippet "Finding upon a second reading..."; opening the full description
+  behind it (step 1 above) shows the item is clear text -- found (the premise that it is a cipher item fails).
+- (b) Other solvers' working files: none for this item in Bourdeau or Aymeloglu (24 Sept grep) -- not found.
+- (c) Physical neighbours: SP 36/9 is undigitised; the neighbouring catalogue entries are further clear Newcastle-to-King notes
+  (C8106550, C8106566, seen only as search titles) -- not opened; no image route.
+- (d) Recipient's side: the despatch to Stanhope and H. Walpole (the side where the cypher paragraph went) is a separate item --
+  not checked, named in the verdict as a scout suggestion.

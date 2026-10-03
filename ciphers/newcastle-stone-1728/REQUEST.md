@@ -1,3 +1,5 @@
+**Moot (3 Oct 2026, GF4-BATCH13):** SP 36/9/118 carries no cipher; its full clear text is in TNA's own description (NOTES.md). Do not order.
+
 # Request: newcastle-stone-1728 (N47)
 
 No personal data below; log the person's own archive request separately, by date and archive only, per
