@@ -1,0 +1,14 @@
+# BnF NAF 14913 f.265r (Gallica btv1b525174513 canvas 543), small slip in another hand pasted in, stamped "265", 14 written lines;
+# 265v blank. Clear text, laid out like the four Rousseau decipherment slips; taken as the period decipherment of the f.266r groups
+# (pairing at grade I: the slip opens "La Rep(e) de Venise", the groups open 52 605 22 739, read "la republique de venise" in f.213/f.249).
+# FT4q (account-4) 3 Oct 2026: native region 150,2450,3750,3050 cut by tools/iiif_lines.py (images/ft4q/f265r_L01-L13; the cut missed
+# physical line 7, read from the edges of L06_s2/L07_s1 and checked by the worker on f265r_lines_debug.jpg); one blind Opus 5.5 read
+# (align/ft4q_slip265_read.txt), reconciled by the worker on the debug overlay: "avoir {fair?} / fair" -> "avoit {f...} / fait" (I).
+# Diplomatic: "La Rep.e de Venise ayant appris que les Esp.ols / s'estoient avancés a oneilles {....} résolu{to} d'envoier / un corps
+# considerable de trouppes aux confins. / du Milanois mais que ayant depuis appris que / les Esp.ols. s'estoient retirés elle avoit {f...} /
+# fait marcher seulement 3 regimens pour couvrir / le Bressan et le Bergamasc. l'on m'a= / =jouté que si l'Armée combinée de l'infant /
+# penetre en piemont la mesme Rep.e est / dans la disposition de faire marcher un corps / de {Brescia} trouppes plus considerables audits /
+# {dit} confins et de faire de Brescia une / place d'Armes ou le provediteur General / Doit Establir sa residence."
+# Expanded for alignment (grade I, fixed before any gate): Rep.e -> Republique, Esp.ols -> Espagnols, 3 -> trois, struck words dropped,
+# "m'a= =jouté" joined as "ma jouté" (letters only). Uncertain: d'envoier (envoyer?), Bergamasc, provediteur.
+La Republique de Venise ayant appris que les Espagnols s'estoient avances a oneilles resolu d'envoier un corps considerable de trouppes aux confins du Milanois mais que ayant depuis appris que les Espagnols s'estoient retires elle avoit fait marcher seulement trois regimens pour couvrir le Bressan et le Bergamasc l'on m'a jouté que si l'Armee combinee de l'infant penetre en piemont la mesme Republique est dans la disposition de faire marcher un corps de trouppes plus considerables audits confins et de faire de Brescia une place d'Armes ou le provediteur General doit establir sa residence

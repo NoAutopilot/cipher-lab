@@ -1,0 +1,26 @@
+L01 [Un de mes amis ordinairement bien]
+L02 [informé me mande que] 52 605 22 739 813 597
+L03 63 170 300 121 369 123 810 271 10 298 33 186 755
+L04 493 14 35|33 44 114 713 144 312 668 22 176 581 347
+L05 481 121 124 718 697 63 813 213 248 597 63 170 300
+L06 121 369 123 180 722 180 121 506 311* 14 253 66 534|334
+L07 66 198 825 843 3* 180 750 217 121 242 276* 807 359
+L08 755 564 573 582 501 755 663|553 66 90 253 121 63 188
+L09 298 709 662 446 834 63 835 188 344 304 734 521
+L10 33 22 188 480 303 617 846 521 194 444 586 33 707
+L11 14 52 645 605 369 567 52 169 5 141 24 22 753 253
+L12 66 534 66 713 144 22 176 660 312 668 581 98 121
+L13 347 481 121 501 22 753 22 564 121 826 10 713
+L14 699 35|33 344 121 446 755 40 548 452 834 807 527
+L15 522 5 150* 636 66 287 180 835 213 24 664 [Si ces]
+L16 [arrangemens sont aussi fondés que j'ai lieu]
+# note: L03 group 5 written "3 69" with a wider gap after the 3; read as one group 369 (no dot between). Same group appears as 369 elsewhere (L06, L11).
+# note: L03 last group 755: small ink blot over the second 5; 755 most likely.
+# note: L04 and L14 group "35|33": second digit has a 5-like flag but is close in form to the writer's 3.
+# note: L06 group 311*: a faint oblique stroke under/after 311 (between 311 and 14); may be a stray pen stroke, not an underline.
+# note: L06 last group 534|334: first digit read as 5 (flagged form), cf. L12 534.
+# note: L07 group 3*: single digit 3 with an oblique stroke/underline beneath it.
+# note: L07 group 276*: oblique stroke/underline beneath the 76.
+# note: L08 group 663|553: first two digits written in an unusual open 'b'-like form, unlike the writer's usual 66; most likely 663.
+# note: L08 "63..188": double dot between 63 and 188; 63 written with a gap ("6 3").
+# note: L15 group 150*: underlined (curved stroke beneath).

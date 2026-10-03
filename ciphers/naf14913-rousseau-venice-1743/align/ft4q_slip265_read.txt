@@ -1,0 +1,20 @@
+L01 La Rep(e) de Venise ayant appris que les Esp(ols)
+L02 s'estoient avancés a oneilles {????} résolu{to}? d'envoier?
+L03 un corps considerable de trouppes aux confins.
+L04 du Milanois mais que ayant depuis appris que
+L05 les Esp(ols). s'estoient retirés elle avoir {fair?}
+L06 fair marcher seulement 3 regimens pour couvrir
+L06b le Bressan et le Bergamasc? . l'on m'a=
+L07 =jouté que si l'Armée combinée de l'infant
+L08 penetre en piemont la mesme Rep(e) est
+L09 dans la disposition de faire marcher un corps
+L10 de {Brescia} trouppes plus considerables audits
+L11 {dit} confins et de faire de Brescia une
+L12 place d'Armes ou le provediteur? General
+L13 Doit Establir sa residence.
+# note: the slip has 14 written lines, not 13. The crop set skips one physical line between crops L06 and L07: "le Bressan et le Bergamasc. l'on m'a=" is visible only as the lower edge of L06_s2 (right half) and the upper edge of L07_s1 (left half); it is given here as L06b. Crop labels L07-L13 are kept as cut, so slip line n = crop label n+1 from L07 on. Bergamasc read from two partial edges, hence the ?.
+# note: L11's line rises to the right; its end "Brescia une" also shows at the bottom edge of L10_s2, and the top edge of L11_s2 is the same line, not an extra one.
+# note: superscripts: Rep(e) = "Rep" with superscript e and a colon-like point (L01, L08) = Republique; Esp(ols) = "Esp" with superscript "ols" (L01), and in L05 "Esp" + "ols" under a tilde = Espagnols.
+# note: strike-outs: L02 a short word struck so heavily it is unreadable {????}; L02 "résoluto" with a stroke through the last letters, rendered résolu{to}? (stroke may cover only "o"); L05 a word struck and blotted at line end, read {fair?} (repeated as "fair" at the start of L06); L10 {Brescia} struck before "trouppes"; L11 {dit} struck at line start (completing "audits" at end of L10).
+# note: doubts: L02 "d'envoier" (possible "envoyer"; an ink dot sits on the o); L12 "provediteur" (could be "proveediteur"/"proveditteur", letters between v and d unclear). "s'estoient" in L05 is written with a final flourish for -nt. "elle:" in L05 has a colon-like point after it. "oneilles" = Oneille (Oneglia). "ou" in L12 carries no clear accent.
+EXPANDED: La Republique de Venise ayant appris que les Espagnols s'estoient avancés a oneilles resolu d'envoier un corps considerable de trouppes aux confins du Milanois mais que ayant depuis appris que les Espagnols s'estoient retirés elle avoir fair marcher seulement 3 regimens pour couvrir le Bressan et le Bergamasc. l'on m'a ajouté que si l'Armée combinée de l'infant penetre en piemont la mesme Republique est dans la disposition de faire marcher un corps de trouppes plus considerables audits confins et de faire de Brescia une place d'Armes ou le provediteur General doit establir sa residence.

@@ -1,0 +1,21 @@
+# BnF NAF 14913 f.266r (Gallica btv1b525174513 canvas 545), Lorenzi to Montaigu (clear letter, Florence, 1744), numeral passage after
+# the clear words "Un de mes amis ordinairement bien informé me mande que" and before "Si ces arrangemens sont aussi fondés que j'ai lieu".
+# FT4q (account-4) 3 Oct 2026: native region 450,1150,3950,3650 cut by tools/iiif_lines.py into images/ft4q/f266r_L01-L16 crops (native
+# deleted after cutting, re-derivable: images/images_manifest_full.tsv + regen_images.sh). Two blind Opus 5.5 passes, crops only
+# (align/ft4q_passA.txt, align/ft4q_passB.txt): 171 groups each, 171/171 first readings agree. a|b = an alternative one pass raised
+# (first = the agreed reading). Marks both passes saw: stroke under 3 and 276 (L07), under 150 (L15), faint stroke at 311 (L06, maybe stray);
+# double dot in "63..188" (L08); L03 369 written "3 69" (no dot; both passes read one group). Line 01 and 16 are clear text only.
+L02 52 605 22 739 813 597
+L03 63 170 300 121 369 123 810 271 10 298 33 186 755
+L04 493 14 35|33|55 44 114 713 144 312 668 22 176 581 347
+L05 481 121 124 718 697 63 813 213 248 597 63 170 300
+L06 121 369 123 180 722 180 121 506 311 14 253 66 534|334
+L07 66 198 825 843 3 180 750 217 121 242 276 807 359
+L08 755 564 573 582 501 755 663|553 66 90 253 121 63 188
+L09 298 709 662 446 834 63 835 188 344 304 734 521
+L10 33 22 188 480 303 617 846 521 194 444 586 33 707
+L11 14 52 645 605 369 567 52 169 5 141 24 22 753 253
+L12 66 534 66 713 144 22 176 660 312 668 581 98|978 121
+L13 347 481 121 501 22 753 22 564 121 826 10 713
+L14 699 35|33|55 344 121 446 755 40 548 452 834 807 527
+L15 522 5 150 636|696 66 287 180 835 213 24 664

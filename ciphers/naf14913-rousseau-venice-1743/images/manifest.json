@@ -33,10 +33,10 @@
  },
  "fetched": [
   {
-   "file": "f206r_full.png",
+   "file": "f206r_full.jpg",
    "date": "2026-09-24",
    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f425/full/full/0/native.jpg",
-   "note": "Screenshot of native.jpg (4718x6557) rendered by Chromium (browser_fetch.js), first attempt succeeded. Corner marked '206' in the ms., confirming the canvas mapping. Shows a pasted-in fragment of running French prose in an 18th-c. hand, clean and legible, NOT ciphertext: 'venitiens en faveur de la Reine de Hongrie et particulièrement de ceux les plus attachés aux intérêts de cette princesse et qu'ils auroient tout au plus continué de donner sous main des provisions a l'armée de M. le Prince de Lobkowitz.' This is consistent with the finding aid's description: this leaf carries Rousseau's own decipherment (the readable plaintext), not the original ciphertext, which is presumably in the ambassador's incoming correspondence elsewhere (not in this letterbook) or not preserved at all."
+   "note": "Screenshot of native.jpg (4718x6557) rendered by Chromium (browser_fetch.js), first attempt succeeded. Corner marked '206' in the ms., confirming the canvas mapping. Shows a pasted-in fragment of running French prose in an 18th-c. hand, clean and legible, NOT ciphertext: 'venitiens en faveur de la Reine de Hongrie et particulièrement de ceux les plus attachés aux intérêts de cette princesse et qu'ils auroient tout au plus continué de donner sous main des provisions a l'armée de M. le Prince de Lobkowitz.' This is consistent with the finding aid's description: this leaf carries Rousseau's own decipherment (the readable plaintext), not the original ciphertext, which is presumably in the ambassador's incoming correspondence elsewhere (not in this letterbook) or not preserved at all. [FT4q 3 Oct 2026: PNG converted to JPEG q88 at the same dimensions, AX2-SHRINK pattern]"
   }
  ],
  "iiif_lines": [
@@ -1983,5 +1983,9 @@
   "canvases": "553-558 (270r-272v), 564-574 (275v-280v); 559-563 (273r-275r) are FT4b/FT4h files",
   "offset": "canvas = page index + 14 (gallica_folio.py: f15-f592 1r..289v, k=14)",
   "contact_sheet": "lowres/sheet_270_280.jpg (22 pages, 380 px tiles)"
+ },
+ "ft4q_shrink": {
+  "date": "3 Oct 2026",
+  "deleted_native_regions": "images_manifest_full.tsv (sha256, source URL); regen_images.sh re-derives them; regen of the f514 region tested byte-identical before deletion"
  }
 }
