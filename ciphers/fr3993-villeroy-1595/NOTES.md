@@ -644,3 +644,36 @@ Next steps from this pass, cheapest first: (j) view no.57's table, presumably ca
 candidate whose description (symbol homophones, figures 1-72 for two-letter syllables) fits a figure+symbol letter, one overview
 plus, if it carries pi/theta/infinity, the two blind row reads PREREG-VILL-TABLE.md sets out (~$5); (k) a native crop of no.44's right-hand
 symbol column on f.82v (canvas f162) to settle whether any of its few symbols is a target sign (~$3). Both depend on nobody.
+## Homophonic family_run with K as null (A1-VILL-HOMO, account 1, 3 Oct 2026)
+
+Pre-registered in `fr3995/PREREG-VILL-HOMO.md` (commit 5b97baef, pushed before any run). Every sign and figure in
+Bourdeau's one-token-per-sign first pass (`bourdeau/ct_*.txt`) is treated as an unknown homophone for one letter;
+K (13 tokens, = f159 null N3 by two readers, VILL-NOMEN) is removed. Cipher `homo/cipher_noK.txt`: 25 lines,
+N = 740, 53 types. Spec `specs/fr3993-villeroy-1595.json` (new, written by this job). Tool: `tools/family_run.py
+--family homophonic --param profile=target --restarts 8 --corpus tools/data/fr16` (homophonic_anneal, French order-3).
+
+| run | control (fr16, N=740, K=53 allotted, target's own sign-count profile) | target best anneal score | judge (fr16, real_p05 -0.873, null_p99 -1.868) |
+|---|---|---|---|
+| real target, seed 1 | mean 0.764 over 3 seeds (0.981 / 0.358 / 0.953; scores -1548 / -1865 / -1622) -- gate 0.6 met | -1919.1 (8 restarts -1919 to -2000, no agreement) | **FAIL** -1.35, word cover 0.842 |
+| shuffled target (floor), seed 1 | 0.981 (one seed, the same seed-1 control) | -2000.4 | FAIL -1.404 |
+
+Reading the numbers: the control reads its own design at this N in 2 of 3 seeds, and when it reads, it scores
+-1548 to -1622; the one control seed that failed scored -1865. The real target's best (-1919) sits below even the
+failed control and only 81 points above the order-destroyed shuffle (-2000), and the decode shows no French by eye
+("laasenoteresedeleieis..."). Per the prereg: **control-backed negative for one-sign-one-letter homophonic substitution
+over Bourdeau's transcription with K as null** -- 0.764 control vs a FAIL target, both numbers above. Conditional on
+(a) Bourdeau's single unmeasured transcription pass (rule 2) and (b) the token model (one sign = one letter); it says
+nothing against a nomenclator with figure pairs as codes (LANE R4 N's ladder) or against a mixed letter/code table of the
+f159 kind. It agrees with LANE R4 N's hsolve result (homophonic control solves, target does not) with a different
+solver and with K removed. Grades: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+Caveats: the first run's judge step crashed (spec `judge.corpora` pointed at a directory; removed, the default fr = fr16
+file applies); the FAIL above is `tools/judge_plaintext.py specs/fr3993-villeroy-1595.json --file` on the same decode,
+run by hand. The control realised 45-48 distinct signs because singleton homophones are not always drawn (53 allotted;
+the target has 12 singletons). The shuffle floor ran with one control seed instead of three to stay inside the box
+(disclosed deviation; the gate was already met). Seed 2 at 0.358 shows the control is not near ceiling at this N, so a
+FAIL is informative but not overwhelming. Vision calls 0; network requests 0.
+
+Next (one line, for the lane): (j) the same family with figure pairs segmented as codes (Bourdeau seg 1x/2x) and the
+VILL-SIGNS certified signs pinned (L=r, w=m, +=x) via `--param pins` is the remaining untried variant of this instrument;
+otherwise (h) and (d) above stand.
