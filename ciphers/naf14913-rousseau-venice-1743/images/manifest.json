@@ -466,5 +466,127 @@
    },
    "date": "03 Oct 2026"
   }
+ ],
+ "lowres_check": [
+  {
+   "file": "lowres/v440_213v_1000.jpg",
+   "folio": "213v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f440/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v441_214r_1000.jpg",
+   "folio": "214r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f441/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v442_214v_1000.jpg",
+   "folio": "214v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f442/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v443_215r_1000.jpg",
+   "folio": "215r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f443/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v446_216v_1000.jpg",
+   "folio": "216v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f446/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v447_217r_1000.jpg",
+   "folio": "217r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f447/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v448_217v_1000.jpg",
+   "folio": "217v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f448/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v449_218r_1000.jpg",
+   "folio": "218r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f449/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v512_249v_1000.jpg",
+   "folio": "249v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f512/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v513_250r_1000.jpg",
+   "folio": "250r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f513/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v514_250v_1000.jpg",
+   "folio": "250v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f514/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v515_251r_1000.jpg",
+   "folio": "251r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f515/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v560_273v_1000.jpg",
+   "folio": "273v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f560/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v561_274r_1000.jpg",
+   "folio": "274r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f561/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v562_274v_1000.jpg",
+   "folio": "274v",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f562/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/v563_275r_1000.jpg",
+   "folio": "275r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f563/full/1000,/0/native.jpg",
+   "date": "2026-10-03",
+   "job": "FT4b"
+  },
+  {
+   "file": "lowres/sheet_214_217.jpg",
+   "note": "contact sheet, text block cropped 15-95% x, 4-97% y, 500 px per leaf; vision call 1"
+  },
+  {
+   "file": "lowres/sheet_250_274.jpg",
+   "note": "same, vision call 2"
+  }
  ]
 }

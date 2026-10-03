@@ -342,23 +342,83 @@ f.205v (last line) and f.207r (lines 1-5). No cryptanalysis: every meaning comes
 Not found in: Souchon 1915 p.268 (clear opening only), the phrase searches logged above (GF4-BATCH14). Rule 10: this
 reports what was read and where it was not found; no novelty class is assigned here.
 
-## Remaining gaps (FT4, 3 Oct 2026)
-Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41)
-- ff.214, 217, 250, 274 slips and their facing leaves - blocker: not-attempted; the finding aid names the slips, nobody has looked for numerals beside them; next: image check of the four slips and facing leaves at 1000 px, list which carry numerals, ~$1
-- M-graded splits of multi-group stretches (40 codes) and 336 - blocker: open-codes; each occurs once in this passage, only another passage under the same key can fix them
+## FT4b-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (FT4's Verdict): image check of the ff.214/217/250/274 slips and their facing leaves for numerals of the f.206
+key. No transcription. Canvases from `python3 tools/gallica_folio.py btv1b525174513 --folio N` (one constant offset,
+k=14 over f15-f592: recto canvas = 2N-1+14). 16 leaves fetched at 1000 px wide (`images/lowres/`, manifest entries
+`lowres_check`), cropped to the text block and set in two contact sheets of 8 (`sheet_214_217.jpg`,
+`sheet_250_274.jpg`, 500 px per leaf), one vision call each (2 of 2 allowed). What the sheets show, by leaf:
+
+| slip | leaf | what is on it (low-res view; group counts are line x groups-per-line estimates, not counts) |
+|---|---|---|
+| f.214 | 213v | numeral cipher, 3 lines at the top of the page (about 30 groups), then clear prose; the passage starts above, so it likely begins on 213r (not viewed) |
+| f.214 | 214r | pasted slip, clear French, headed "Du 1er fevrier 1744": "Par la conqueste des 2 Siciles la Rep. de Venise garantissoit la possession actuelle ..." (about 9 lines) |
+| f.214 | 214v, 215r | 214v: the slip's back (show-through only); 215r: clear prose, no numerals |
+| f.217 | 216v | numeral cipher, about 9 lines (roughly 85-95 groups) after the clear words "Ma derniere lettre de", then clear prose |
+| f.217 | 217r | pasted slip, clear French: "...Vienne, porte que la Rep. de Venise, considerant les grands troubles qui regnent par tout tachoit de se tenir dans un certain equilibre ..." (7 lines) -- the slip opens on the word the cipher passage needs ("Ma derniere lettre de / Vienne porte que") |
+| f.217 | 217v, 218r | 217v: the slip's back (show-through); 218r: clear prose, no numerals |
+| f.250 | 249v | numeral cipher, 4 lines at the top (about 50 groups), then clear prose ("Il arriva ici le soir du 26 ..."); may begin on 249r (not viewed) |
+| f.250 | 250r, 250v | slip, clear French on both sides ("...Gnal Maulli avoit ecrit ... secourir la Reine de H. de la maniere ..." continuing on 250v to "... connoissance de la Maison de Bourbon") |
+| f.250 | 251r | clear prose, end of a Lorenzi letter (signed), no numerals |
+| f.274 | 273v, 274r, 274v, 275r | no numerals seen on any; 274r is a full letter page ending "Lorenzi", no pasted slip distinguishable at this resolution; 275r a new letter, Florence 15 Aug 1744. Not located. |
+
+Same key, at grade M (read off the low-res sheet, not transcribed): values of FT4's C-graded codes appear in all three
+new passages -- 22 and 722 and 501 on 213v; 22, 66, 306 and 326 on 216v; 22, 66, 24, 722, 279, 306 and 208 on 249v -- and
+the hand, numeral size and dot separators match ff.205v/207r. So three more cipher+slip pairs exist under what looks
+like the f.206 key: f.216v<->f.217r (the largest, about 90 groups), f.249v(+249r?)<->f.250r-v, f.213v(+213r?)<->f.214r.
+f.274's pair was not found in these four leaves.
+
+Requests: gallica.bnf.fr 16 (IIIF image API, 1000 px, 1.6 s apart, all HTTP 200) + 0 manifest (cached). Vision: 2 calls.
+
+### Pre-registered gate for the f.206 key (written 3 Oct 2026, before any new passage is transcribed or scored)
+
+Applies to the next job (and any later one) that transcribes a new cipher+slip pair from this volume and scores the
+f.206 key against it. Fixed now so the threshold cannot be chosen after the numbers are seen.
+
+- **Unit and statistic.** Per new pair (one cipher passage against its own slip), take the occurrences in the new
+  passage of FT4's ten C-graded codes (22 de, 66 r, 279 plus, 581 au, 722 ti, 501 et, 31 la reine, 628 hongrie,
+  172 qu'ils, 379 interets). Run `align/consistency_search.py` (extended to take a pair and fixed values as
+  constraints) with every repeated code consistent and the C codes pinned to their f.206 values. **H =** the number of
+  pinned C-code occurrences in the best fully consistent exact-coverage segmentation of the slip (0 if none exists).
+- **Controls (both must be beaten).** (a) *Value permutation*: the same search with the ten f.206 values permuted
+  among the ten codes (200 permutations, derangements only); this changes which value is pinned where, so it can move
+  H. (b) *Pairing shuffle*: the new passage's group order shuffled (200 shuffles), the same pins; moves where the pins
+  fall. A shuffle or permutation that times out is counted as >= real (conservative, as FT4).
+- **Threshold.** PASS for the key on that pair: H >= 5 AND H > p95 of control (a) AND H > p95 of control (b). If the
+  new passage carries fewer than 5 occurrences of the ten C codes, the pair is a **non-test** of the key (power floor),
+  not a FAIL. FAIL on a pair with >= 5 occurrences: the f.206 key is not the key of that passage (different key or a
+  key change); C grades in key.tsv stay as they are for the f.205v/207r passage only, and the key is not applied to
+  other leaves.
+- **Per-leaf before merging** (rule 3, Szembek paragraph): a new pair's own repetition-consistent values enter key.tsv
+  only from a pair that PASSes; codes attested only on a non-test or FAIL pair stay out. A pooled re-run of FT4's
+  shuffle control over f.206 + the new pair(s) then decides whether M codes move to C.
+- **Order.** First pair to score: f.216v <-> f.217r (largest). Transcription per TRANSCRIPTION.md: line crops with
+  `tools/iiif_lines.py`, two blind passes per crop set, reconciliation as a priced unit.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, 3 Oct 2026)
+Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b)
+- f.216v <-> f.217r slip pair (about 90 groups) - blocker: not-attempted; located FT4b 3 Oct 2026, same key at grade M by sight; next: transcribe (iiif_lines crops, 2 blind passes + reconciliation) and score the f.206 key against the pre-registered gate above, ~$4
+- f.249v(+249r?) <-> f.250r-v and f.213v(+213r?) <-> f.214r pairs (about 50 and 30+ groups) - blocker: not-attempted; located FT4b, 249r and 213r not yet viewed; next: same as above after the f.216v pair, ~$3 each
+- f.274 slip's cipher passage - blocker: not-attempted; not on 273v/274r/274v/275r at 1000 px (FT4b); next: view 273r and 274r at native resolution for a pasted slip, ~$0.5
+- M-graded splits of multi-group stretches (40 codes) and 336 - blocker: open-codes; each occurs once in this passage, a second passage under the same key (now located) can fix them
 - Hatzenberger 2015 read - blocker: waiting-on ASKS row 76; Cairn is DataDome-blocked from the cloud, JSTOR reread stable/24719303 queued (CHECK-NAF)
 
-## Escalation (3 Oct 2026)
-- [ ] siblings: the four other slips (ff.214, 217, 250, 274) and their facing leaves, image check first
+## Escalation (3 Oct 2026; revised FT4b)
+- [x] siblings: ff.214/217/250/274 slips and facing leaves viewed at 1000 px (FT4b): three cipher+slip pairs found (216v/217r, 249v/250, 213v/214r), f.274's not found
 - [x] clear-pages: the f.206r slip is the clear text of this passage, used as the plain side
 - [n/a] known-keys: no Lorenzi-Montaigu key table found in Souchon or the solver repositories
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
-- [ ] retry: re-run consistency_search.py pooled over a second slip passage once one is found, to lift M codes
-Verdict: keep going: 2 internal gaps; cheapest next: image check of ff.214/217/250/274 slips and facing leaves for numerals of this key, ~$1
+- [ ] retry: score the f.206 key on f.216v<->f.217r under the pre-registered gate (FT4b), then pool to lift M codes
+Verdict: keep going: 4 internal gaps; cheapest next: transcribe f.216v cipher (about 90 groups) + f.217r slip and score the f.206 key against the pre-registered gate, ~$4
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
 "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. `python3 tools/decode_key.py
 ciphers/naf14913-rousseau-venice-1743 --check` -> "reading up to date", exit 0. Status open -> partial (one passage read at C/M).
+
+Checks (FT4b, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
+keep going: 4 internal gap(s), 1 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
+"partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. Status stays partial; no reading changed.
