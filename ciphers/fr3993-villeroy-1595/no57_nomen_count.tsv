@@ -1,0 +1,3 @@
+transcription	tokens	digit_tokens	greedy_3fig_100_353	greedy_token_share	exact3_runs_100_353	exact3_token_share	run_length_hist
+bourdeau	753	445	86	0.343	18	0.072	1:29,2:25,3:23,4:10,5:10,6:7,7:6,8:2,9:4,10:1,14:2,16:1,17:1
+tx2_passB	757	454	84	0.333	15	0.059	1:30,2:27,3:17,4:12,5:9,6:4,7:7,8:4,9:5,10:1,11:1,12:1,14:2,15:1

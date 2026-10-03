@@ -71,3 +71,40 @@ same key and the same power gate re-run at its own length/coverage; the report s
 on a transcription with 16.8 pct pass-to-pass disagreement and two omitted lines (ASKS 124).
 Vision budget: 4 subagent/look calls for the reads + 1 reconciliation look; stop before any call crossing 80 pct of USD 5.5 or of
 the 45-min box (18:44 UTC).
+
+## Addendum A1B-VILL-M (3 Oct 2026, 18:20 UTC, committed before any native crop of the f200 nomenclator columns is viewed)
+
+Brief .claude/briefs/runs/2026-10-03-acct1-a1b-vill-m.md, step (m). Step 1 done first (`no57_nomen_count.py` -> `no57_nomen_count.tsv`):
+greedy 3-figure groups reading 100-353 consume 0.343 (Bourdeau) / 0.333 (pass B) of all tokens; digit runs of exactly three reading
+100-353 are 18 / 15 (0.072 / 0.059 of tokens) -- both above the brief's ~5 pct stop line, so the read goes ahead. One 900-px locate look
+at canvases f199/f200 was taken before this addendum (layout only: the nomenclator is an alphabetical word list 99-353 in eight
+columns right of the Sillabes block on f200; no entry was transcribed from it).
+
+Codes to read (union of both transcriptions' greedy 3-figure codes, 57): 103 104 112 113 114 116 120 121 122 125 126 129 133 135 143
+145 148 151 152 153 162 170 171 172 173 175 176 190 191 192 194 196 197 200 201 202 203 204 207 208 212 213 217 220 221 241 254 262 268
+271 283 312 314 315 316 320 322.
+
+Reading. Crops only via `tools/iiif_lines.py --image <native f200 file> --region ...` (column strips 1-7 cut in vertical segments, never
+the page). Reader A = Sonnet subagent call 1; its file `fr3995/vill_m_readerA.tsv` (`code<TAB>word as written<TAB>conf`) is committed and
+pushed BEFORE reader B (a separate Sonnet subagent, not told A's answers, same crops, same code list) is spawned. A code is AGREED when both
+give the same code and the same word after normalisation (lower case, accents and punctuation stripped, first variant before " ou ").
+Agreed entries go to `keys/key_f200_no57_nomen.tsv` at grade M; others are grade I and decode to nothing. Vision budget: <= 4 calls
+(2 reads + at most 2 re-asks of illegible-crop problems); stop before a call that would cross 80 pct of USD 5.5 or of the box (19:01 UTC).
+
+Parse (registered). Inside each digit run, left to right: three digits reading 100-353 (first digit not 'o') = one nomenclator code
+(consumes 3 tokens; decodes to its agreed word, or to nothing if not agreed); otherwise VILL-L's 1-2-figure rule (two-figure code
+when in the key, else one-figure). Certified header signs as codes; other signs dropped. Key = VILL-L's 96 codes + agreed nomenclator.
+
+Coverage = tokens consumed by codes that decode to something (syll/double/sign/agreed nomen) over all tokens. Coverage < 0.5 -> "not
+testable", no score.
+
+Score. fr 4-gram model of tools/judge_plaintext.py on the decoded letters (word values lower-cased, letters only). Null: 200 keys
+with values permuted WITHIN class (syllable/double/sign values among those codes; nomenclator words among agreed nomenclator codes),
+so each null keeps the real key's unit lengths. Power control FIRST, per transcription: 20 synthetic French texts (word-tokenised
+from the same 'fr' corpora, accents stripped) enciphered with the combined key -- a corpus word equal to an agreed nomenclator word
+becomes its code, every other word is parsed greedily into the key's syllable/double/letter units (longest first; units absent
+become a dropped sign token) -- at the target's code count; the token stream goes through the same parse. Gate 16/20 rank 1,
+else "non-test" and the target is not scored. Target PASS = rank 1 of 201 and z >= 3; else FAIL, a control-backed negative only
+if the power gate passed. Disclosed secondary (unregistered for the verdict): power re-run with 10/17/25 pct of codes randomised.
+Both transcriptions scored as separate rows; both conditional on ASKS 124 (16.8 pct pass-to-pass disagreement, two omitted lines
+in Bourdeau's pass). A FAIL with power on both rows closes no.57 for this letter's transcription as it stands.
