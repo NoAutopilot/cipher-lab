@@ -1,4 +1,5 @@
 open
+LABW unit records (GAPS101, 3 Oct 2026): Bü 161 plink http://www.landesarchiv-bw.de/plink/?f=3-88062 "Enthält: Beilage: Chiffrierschlüssel" (key enclosed); Bü 165 plink .../?f=3-88066; no digitisation on either.
 Ruland, Graf Wolfgang Julius von Hohenlohe-Neuenstein, Archiv für hohenlohische Geschichte 2 (1870) pp. 271-290 read in full by this worker (GF-A2-7, 2 Oct 2026, PDF via a browser past the WLB Anubis check): Melchior, Pape, Köhler, the reports and any cipher absent.
 
 # Reports of Lic. Melchior and of Pape/Köhler to Graf Wolfgang Julius von Hohenlohe, partly ciphered — HZA Neuenstein
@@ -119,3 +120,43 @@ unreachable until a copy exists. (d) Recipient side: the recipient is Wolfgang J
 1870, read in full) mentions his chairing of the Franconian counts' college 1679-81 and his 1689 widowerhood and
 remarriage at Wilhermsdorf (plausible context for the Vienna "Hausangelegenheiten" mission), but no agents, reports or
 cipher. The senders' side (Lic. Melchior; Pape and Köhler) has no printed papers found. Not found.
+
+## GAPS101-hza-hohenlohe-1679 (3 Oct 2026, account-4)
+
+The NEXT-STEPS row (24 Sep) named step (1), the *Archiv für hohenlohische Geschichte* article read. That step was
+already done by GF-A2-7 on 2 Oct 2026 (status line and premise check above: Ruland 1870, pp. 271-290, read in full,
+reports and cipher not mentioned), so it was not repeated. Ran the next named step instead, (2): do the HZA Neuenstein
+units resolve to an LABW record and to images?
+
+Route: LABW online finding-aid system (www2.landesarchiv-bw.de/ofs21), plain curl with a browser UA, about 2 s apart.
+Findbuch Sf 35 "Wilhermsdorf I / 1650-1719" (bestand 19846; finding-aid permalink f=3-543), section "3. Graf Wolfgang
+Julius und Gräfin Franziska Barbara / 3.1. Persönliche Angelegenheiten und Korrespondenzen". Signature search, then the
+unit's print view (druckansicht.php):
+
+| Unit | id_titlaufn | Permalink (quoted from the record) | Titel / Enthält | Laufzeit | Umfang |
+|---|---|---|---|---|---|
+| Sf 35 Bü 161 | 974107 | http://www.landesarchiv-bw.de/plink/?f=3-88062 | Berichte (teilweise chiffriert) des Lic. Melchior an Graf Wolfgang Julius aus Wien, Prag und Straßburg. **Enthält: Beilage: Chiffrierschlüssel.** | 1679-1680 | 1 Fasz., Folio |
+| Sf 35 Bü 165 | 974111 | http://www.landesarchiv-bw.de/plink/?f=3-88066 | Berichte (teilweise chiffriert) der in Hausangelegenheiten nach Wien entsandten Diener Kanzleirat Johann Christoph Pape und Kammersekretär Georg Ludwig Köhler. | 1689 | 1 Fasz., Folio |
+
+Availability: neither record carries a digitisation link or image field; each offers only "Einheit in den Bestellkorb
+übernehmen" (an order basket). The LABW list "Findbücher mit digitalem Archivgut" (suche/findbuecher_dimag.php) names
+no Hohenlohe-Zentralarchiv finding aid. So: **undigitised, orderable through LABW's own order system** (the HZA is
+maintained by the Landesarchiv as a branch of the Staatsarchiv Ludwigsburg, per LABW's site and Wikipedia), not
+only by direct application to a private archive as REQUEST.md first assumed.
+
+Correction to the 24 Sept sweep: "Both finding-aid titles give no indication of an attached key" was read from the
+unit title only. The full unit record for **Bü 161 lists a key as an enclosure ("Beilage: Chiffrierschlüssel")**. Once
+a copy exists, Bü 161 is a key-application (recovery) job, not cryptanalysis. Whether the same key also serves Bü 165
+(1689, different senders) is untested. Neighbour noted: Bü 162 (Köhler's reports from Neuenstein, 1680-81), with no
+cipher in its title.
+
+Not found: a decipherment, plaintext or image of either unit. Requests: www2.landesarchiv-bw.de 10, WebSearch 1.
+No vision calls, no subagents.
+
+**Recommended next steps (refreshed 3 Oct 2026):** (1) [done 2 Oct, GF-A2-7] AfhG article; (2) [done 3 Oct, this
+section] LABW records: undigitised, orderable, Bü 161 encloses a key; (3) copy order for Bü 161 first, key leaf
+included (REQUEST.md, the owner's step), then Bü 165; nothing runnable in the cloud remains until copies exist.
+
+## While waiting
+
+- Search the LABW finding aids (ofs21 full-text search, Hohenlohe-Zentralarchiv scope) for other "Chiffre"/"Chiffrierschlüssel"/"chiffriert" units of Wolfgang Julius or his agents (1670-1698), and check each hit's record for a digitisation link; a digitised sibling key or a ciphered letter from the same agent would give a copy-free start. About 10-20 LABW requests, no vision, about USD 1.

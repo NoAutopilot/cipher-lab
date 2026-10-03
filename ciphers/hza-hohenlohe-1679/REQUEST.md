@@ -1,8 +1,7 @@
 # Copy request — HZA Neuenstein Sf 35 Bü 161 and Bü 165
 
 **Status:** waiting on you (a person needs to place/confirm this; not an archive-request draft an agent can
-send) — pending a re-check of whether this private house archive's finding aids resolve to an online image at
-all (see NOTES.md).
+send) — re-checked 3 Oct 2026: both units have LABW records and no images online (see NOTES.md).
 
 **What to request:** page copies (photographs or scans) of two bundles in the **Hohenlohe-Zentralarchiv
 Neuenstein**, Sf 35:
@@ -16,7 +15,10 @@ community list, DECODE record, or solver-repository entry for either bundle. One
 hohenlohische Geschichte's Wolfgang Julius article) is identified but not yet opened — worth checking before
 ordering.
 
-**Order via:** Hohenlohe-Zentralarchiv Neuenstein directly (a private house archive; not part of the state
-LABW reading-room network in the same way as the Generallandesarchiv or Staatsarchiv items).
+**Order via:** LABW's online order basket on each unit record (3 Oct 2026, GAPS101): Bü 161
+http://www.landesarchiv-bw.de/plink/?f=3-88062 (record lists "Beilage: Chiffrierschlüssel", a key enclosed:
+ask for the key leaf too), Bü 165 http://www.landesarchiv-bw.de/plink/?f=3-88066. Neither is digitised. The
+Hohenlohe-Zentralarchiv is house-owned but maintained by the Landesarchiv; reproduction terms may need the
+house's consent. Ask when ordering. Bü 161 first, since its key makes it a recovery job.
 
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.
