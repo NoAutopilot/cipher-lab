@@ -60,7 +60,7 @@ confirmed and the target is a duplicate, which may point to a different original
 **Copy status:** no online image located; `digitised: false` confirmed by direct record fetch (id C7774544).
 **Copy-order.** See REQUEST.md.
 
-**Recommended next steps (not run this pass):** (1) identify "Mr Stanning" — a Merchant Adventurers or Eastland
+**Recommended next steps (not run this pass):** (1) [run 3 Oct 2026 by GAPS126, not identified -- see the dated section at the end] identify "Mr Stanning" — a Merchant Adventurers or Eastland
 Company agent in the Baltic/German trade is plausible given the context, not checked this pass; (2) once
 imaged, compare f.284's cipher symbols against the deciphered stretches of ff.93/169/216 to test whether it is
 the same office key; (3) HMC reports for correspondents connected to the 1631 Swedish mission (not searched
@@ -88,3 +88,32 @@ Not found: no decipherment, plaintext or prior attempt for SP 81/37/284, and no 
 (b) Other solvers' working files: fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026) grepped for `stanning`, `SP.?81.?37`: zero matches in either (Aymeloglu cited, not copied). Not found.
 (c) Physical neighbours: no image online (`digitised: false`), so the leaves beside f.284 and any slip cannot be viewed -- unreachable. TNA Discovery (tools/discovery_items.py "SP 81" "SP 81/37" Stanning duplicate, 2 Oct 2026): "Stanning" matches only f.284; the duplicates in the piece are ff.93, 98, 145, 256 (Dorchester to Vane, 31 Dec 1631, the nearest catalogued item before f.284) and f.284 itself. No original of Stanning's paper and no decipher of it is catalogued in SP 81/37. Not found.
 (d) Recipient side: the paper presumably went to Vane or Dorchester. Dorchester's side: CSP Domestic 1629-1631 searched above (Stanning 0 hits). Vane's 1631-32 mission: no printed edition of his dispatches located (web search 4 and the 24 Sept sweep). The Swedish side (Oxenstierna's Rikskansleren Axel Oxenstiernas skrifter och brevväxling) was not searched this pass. Not found in what was read.
+
+## GAPS126-sp81-stanning-1631 (3 Oct 2026, account-4): identify "Mr Stanning"
+
+Step run: Recommended next step (1), identifying "Mr Stanning" from open sources so as to name the series where a
+sibling cipher letter, key or decipherment would sit. No vision, no subagents, no reading. Clock read 13:36 UTC.
+
+| Host | Query (variants Stanning / Stannyng / Stanninge / Staning / Stannings) | Result | Positive control |
+|---|---|---|---|
+| TNA Discovery API (`API/search/records`, dates 1620-1640) | each variant | the only State Papers hit is the target itself (SP 81/37/284); the rest are Chancery suits (C 2/ChasI/H36/9 Hele v Stanning; C 2/ChasI/L35/13 Leach v Stanninge; C 2/JasI/P13/14 Nicholas Standing alias Stanning; C 3/415/67 Robert Staninge, Myton, Yorks; C 8/84/88 William Staning, 1639, St Keyne/Duloe, Cornwall) and local deeds. None in SP 75, SP 95, SP 84 or SP 16 | the "Stanning" query itself returns the target (SP 81/37/284), so the search reaches this series |
+| Internet Archive be-api full text | each variant in CSP Domestic Charles I 1629-31 and 1631-33, plus both volumes' indexes (4 items, `sim_great-britain-public-record-1625-1649-domestic-series_*`) | 0 hits in all 4 items for every variant | "Henry Vane": hits in 3 of the 4 items (1631-33 text, 1631-33 index, 1629-31 text; 0 in the 1629-31 index) |
+| Internet Archive be-api, whole collection | "Mr. Stanning", "Mr Stanning" | 186 hits each, all 19th-20th century (fiction, a Lancashire parson, a jeweller); nothing 17th-century | n/a (whole-collection) |
+| Google Books API (key, `country=US`) | "Stanning" with Vane 1631 / Gustavus / Hamburg merchant 1631 / cipher / Sweden-Stralsund-Danzig / Hamilton / agent | 0 relevant: the hits are Stanning family names in later records (Royalist Composition Papers, Lancashire, 1640s-50s), the place Stanningley and 19th-20th-century items | "Henry Vane" Gustavus 1631: 257 hits, incl. HMC Duke of Hamilton MSS (1887) on the 1631 Hamilton expedition |
+| EMLO Solr (`solr/all/select`) | each variant | 0 records | "Vane": 137, including Sir Henry Vane 1589-1655 as a person record |
+
+**Result: not identified.** "Mr Stanning" is not found in any calendar, catalogue or index searched above as an agent,
+merchant or correspondent of 1631. The surname existed in England then (Chancery suits; a Cornish William Staning,
+1639), but nothing links any of these people to the German mission. So no other series can be named for a sibling
+letter, key or decipherment from the name. The nearest siblings stay the three same-piece folios TNA catalogues with
+contemporary decipher work (SP 81/37 ff.93, 169, 216; REQUEST.md). Rule 10: this is a search result, not a finding
+about the item.
+
+Requests: discovery.nationalarchives.gov.uk 8, be-api.us.archive.org 26, archive.org advancedsearch 1,
+www.googleapis.com 10, emlo.bodleian.ox.ac.uk 5; all one at a time, 1.6-2 s apart, no 429/403.
+
+**Next step (cheapest):** recommended step (3): an IA full-text and Google Books search of HMC reports for the 1631
+Swedish mission, starting with *The Manuscripts of the Duke of Hamilton* (HMC 11th Report app. VI, 1887). Hamilton led
+the 1631 British expedition to Gustavus Adolphus, and the volume calendars letters of 1631. Search it for Stanning and
+its variants, plus "cipher"/"cypher" on its 1631 pages. Cost: about USD 1, no vision. If that also fails, the target
+can be read only from the image, so step (2) waits on the copy order (REQUEST.md).
