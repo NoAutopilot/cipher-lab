@@ -749,3 +749,51 @@ Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4,
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 3 internal gaps; cheapest next: a sent-side second witness for Indus = Stanton and Luna = Missouri (mssEC 15 Feb-Mar pages against OR vols. 7-8), ~$1; then print/or_match.py over residue page 4979 (added 3 Oct 2026, GAPS181), ~$0.5
+
+## GAPS187-eckert-1862 (3 Oct 2026, account-4): page 4979 print-checked, SO-ECK-4992 phrases re-run
+
+- Page 4979 against OR ser. I vols. 5, 7, 8, 51 pt 1 (IA `_djvu.txt`, fetched once to scratch, not committed;
+  `print/or_match.py`, output `print/or_matches_4979.tsv`). Positive controls run in the same pass: page 4976 against
+  vol. 8 (38 shared 5-grams, p.551, as GAPS140) and page 4980 against vol. 7 (14, p.608, as or_matches.tsv). The page
+  text re-fetched is byte-identical to pages_manifest.tsv (648 chars, same sha256).
+  - Entry 2 (13 Feb, Marcy to Hooker, Budds Ferry, clear, no key.md token): printed, OR ser. I vol. 51 pt 1 p.498
+    (51 shared 5-grams; "six barges capable of carrying ... men will be sent you from here and ten barges"). Nothing to
+    grade; it is a clear relay already in print.
+  - Entry 1 (12 Feb 6 PM, McClellan to Halleck, "Retain the [Ohio] battery also the other troops for [Kansas] ..."):
+    not printed in vols. 5, 7, 8 or 51 pt 1 (0 5-grams at --min 1 beyond two formula hits on unrelated pages; phrase
+    grep, OCR line-joined, for "rather not hold", "if you can help it", "other troops for", "hold back the": 0).
+    Its *question* is printed: Halleck to McClellan, Saint Louis, 12 Feb 1862, 3 p.m., OR ser. I vol. 8 p.553: "Please
+    answer about Ohio battery and other troops ordered from this department to Kansas. Can I use them? I greatly need
+    them at this moment." McClellan's 6 PM entry answers it word for word in the clear parts ("battery also the other
+    troops for"), so the print supports Koran = Ohio and Lamb = Kansas on 12 Feb. Grades in the reading are left as
+    they are (Koran M, Lamb I, wharf M, Nancy I; C 2): this is a received-side context witness, not a coded twin, and
+    key.md is unchanged -- logged as a proposal: Koran = Ohio range 05-12 Feb (was 05-07), Lamb = Kansas second
+    witness (with GAPS171's 7 Mar received twin). wharf = infantry on 12 Feb (range starts 13 Feb) gets no support.
+  - Huntington transcription: the page text is the DCW volunteer transcription itself (CONTENTdm `text`); the decode
+    in print/residue/readings.md reproduces it token for token, no divergence to log.
+- SO-ECK-4992 (4992.3, 16 Feb, McClellan to Buell): reading unchanged after GAPS181's Andes/Dawn changes
+  (`decode.py --check` 0; readings.md line 117 still "how many in [Bowling Green] line"; 4992.3 is not on the Fort
+  Monroe line). `tools/print_check.py` re-run with five phrases (`print/phrases_4992.txt`, results
+  `print/print-check-4992.tsv`): IA item vol. 7, IA global full text and OpenAlex no hits for all five; Google Books and
+  CrossRef return only keyword (bag-of-words) matches, none relevant; Semantic Scholar and CrossRef partly 429
+  (unreachable for some rows). Positive control "why could not a gunboat run up" (T8, OR 7 p.624): 1 exact in vol. 7,
+  196 items IA-global. Local grep of vols. 5, 7, 8, 51 pt 1 for four of the phrases: 0. AUDIT.md and the SO row need no
+  change (rule 10 propagation: nothing changed). This is a search result, not a novelty verdict.
+- Requests: hdl.huntington.org 3, archive.org 4 (djvu) + 1, be-api 6, googleapis 5, openalex 5, s2 3, crossref 4. No
+  vision, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, GAPS187, 3 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 146, I 38, M 86 (print/residue)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 eastern and western telegrams is grepped and aligned (vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53; GAPS113-GAPS153), received ledgers mssEC 01-03 read (GAPS171, 0 coded twins), page 4979 print-checked (GAPS187: entry 2 in OR 51 pt1 p.498, entry 1 unprinted but its question in OR 8 p.553); the judge cannot decide on the residue (real -1.037 vs shuffled -1.031); next: fold the GAPS187 and GAPS171 range proposals (Koran = Ohio to 12 Feb; Lamb = Kansas; Luna = Missouri, Indus = Stanton) into key.md only after a sent-side second witness, by grepping mssEC 15 Feb-Mar pages for Indus/Luna/Koran/Lamb and checking each hit's date against OR vols. 7-8 (texts as fetched here), ~$1
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 863 oov tokens remain; most are one-telegram words no print or received twin narrows (GAPS140-GAPS171 logs); the table-change dates (Feb-Apr/May split points) are unwitnessed and settle only as gap 1 adds dated witnesses
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
+
+## Escalation (GAPS187, 3 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171): no coded twin of a residue entry; one received-side twin (7 Mar, OR 8 pp. 831-832) logged for Luna, Lamb, Indus
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3, ~$6)
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; page 4979 done 3 Oct 2026 (GAPS187); SO-ECK-4992 phrases re-run, unchanged
+- [ ] key-rebuild: range proposals pending a sent-side second witness (Koran, Lamb, Luna, Indus; gap 1, ~$1)
+- [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 3 internal gaps; cheapest next: sent-side second witness for Koran/Lamb/Luna/Indus in mssEC 15 Feb-Mar pages against OR vols. 7-8, ~$1; then the 1864 sent-ledger pilot against Cipher No. 1 (mssEC 41-46), ~$6
