@@ -1,0 +1,15 @@
+# f.89r (no.46, Birago to Nevers, 9 May 1571, clear) -- proper nouns and month names, reconciled by A1B-CEPPO-CRIB from
+# f89/passA_names.tsv + passB_names.tsv (blind Sonnet) checked on the iiif_lines debug overlay. Numbers are written as
+# digits (26, 13, 16, 25), not words, so none enter. Excluded as not names: Dominio, Consiglio, Tesaur. (office), S.Mta, E.V.
+Aprile        # L02 both H
+Pinarolo      # L03
+Francia       # L07 "Corona di Fran.za" (A Fraza, B Francia)
+Auuergna      # L09 both H
+Prouenza      # L09 both H
+Carmagnola    # L27, L35
+Rauello       # L29, L32 (A Rauello, B Pauello; overlay shows R: Revello)
+Dragonero     # L30
+Paesana       # L30
+Perosa        # L30
+Verzolo       # L31 (A Verzolo, B Verrolo)
+Suiceri       # L32 (A Juiceri, B Suiceri)

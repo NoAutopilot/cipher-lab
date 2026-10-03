@@ -1039,13 +1039,13 @@ on every folio.
 ## Escalation (2 Oct 2026)
 
 - [x] siblings: ff.27, 39, 82 (period decipherments) read as the calibration set (NEV-C2, NEV-C3, 27 Sept); fr.3252 f.36v (5 Apr 1571, with decipherment) gave the double-barred oval = r (HARVEST-D, 28 Sept).
-- [ ] clear-pages: f.21r's clear text is quoted in Pascal 1960 fn. 6 (VERIFY-CEPPO-D2-2) and f.89 (no.46), Birago to Nevers the same day as f.87, carries no cipher: neither has been used as a context crib for the M tokens next to it; planned step: read f.89 and f.21r clear text against the f.87/f.21v M runs, ~$3.
+- [x] clear-pages: f.89r (no.46, same day as f.87, read by two blind Sonnet passes) and f.21r (the clear text on disk from Pascal 1960 fn. 6 / VERIFY-CEPPO-D2-2) used as context cribs for the f.87 / f.21v runs (A1B-CEPPO-CRIB, 3 Oct 2026): 0 of 12 crib words matched in either run (shuffle p95 0, swap 0; planted-word power 0.69-0.70), no grade changes. f.89v (the letter's continuation) not read.
 - [x] known-keys: Tomokiyo's printed Ceppo-Nevers key (`keys/key_ceppo_nevers.tsv`, from fr.4702) applied to all four folios, rank 1/201 on each blind transcription.
 - [x] print: `tools/print_check.py` on the f.21v phrases (HARVEST-D2, `print-check.tsv`), no hit; two novelty audits per letter (AUDIT.md), N3.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.87 passC L04.39 and a glossed S76/S31 instance on f.36r/f.37r, ~$3
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.87 passC L04.39 and a glossed S76/S31 instance on f.36r/f.37r, ~$3; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1241,3 +1241,44 @@ matching rule; positive check before this section: on `reading_f87_tokens.tsv` i
   in an exceptions/notes file and decode re-run with `--check`; edits to sign values are not made by this step unless the
   matched letter is a value of a look-alike partner already named in NOTES.md (else logged as a lead, grade unchanged).
   Fail either arm: no grade changes, logged as a control-backed negative with both numbers.
+
+## A1B-CEPPO-CRIB: result -- no crib word from f.89r or f.21r is found in the f.87 or f.21v runs (3 Oct 2026)
+
+Pre-registration above (commit 44b7f901, pushed before any crib list existed).
+
+**f.89r read.** Gallica btv1b9060248g canvas 90 (right page = f.89r; the left page is f.88v, f.87's address leaf, with
+cipher show-through only). Crops: `python3 tools/iiif_lines.py --ark btv1b9060248g --canvas 90 --region
+4560,700,3560,4480 --out ciphers/ceppo-nevers-fr3251-1570s/harvest/f89 --prefix f89 --max-width 2400 --debug` (35
+lines x 2 segments; a first region clipped the right margin and was deleted unused). Two blind Sonnet passes
+(`harvest/f89/passA.tsv`, `passB.tsv`, each with a `_names.tsv`), reconciled by this worker for names only, against the
+debug overlay. The letter (dated by the finding aid 9 May 1571) answers Nevers's of 26 April, mentions Birago's packets
+from Pinerolo of 13 and 16 [April], and complains that the fortresses are left unpaid: money from Auvergne and Provence,
+the Tesoriere's account, the fortification of Carmagnola, the munitions, the garrisons at Revello ("Rauello"),
+Dragonero in Paesana, Perosa and Verzuolo, the Swiss guard. Clear text, grade as read by two passes; this worker did not
+reconcile the full text word by word (only the names, which is what the registered crib rule uses).
+
+**Crib lists** (`harvest/crib/cribs_f89.txt`: Aprile, Pinarolo, Francia, Auuergna, Prouenza, Carmagnola, Rauello,
+Dragonero, Paesana, Perosa, Verzolo, Suiceri; numbers are digits on the page, so none enter. `cribs_f21r.txt`: the 12
+words of >= 5 letters in the f.21r quotation, among them Vgonotti and Carmagnola).
+
+**Result** (`harvest/crib/crib_match.py`, seed 1, 1000 within-line shuffles):
+
+| run | crib list | T (words matched) | shuffle mean / p95 / max | swap list | swap T | gate |
+|---|---|---|---|---|---|---|
+| f.87 L01-L05 (204 tokens, 61 M, 4 U) | f.89r, 12 | **0** | 0.00 / 0 / 0 | f.21r | 0 | FAIL (T not > p95) |
+| f.21v L01-L11 (267 tokens) | f.21r, 12 | **0** | 0.00 / 0 / 1 | f.89r | 0 | FAIL |
+
+**Power (unregistered, added before reporting; `harvest/crib/plant_power.py`, 100 plants per word):** each crib word
+planted into the run at the run's own M fraction (0.32 f.87, 0.29 f.21v), with half the M letters wrong, is found
+**0.70** (f.87, 841/1200; per word 0.58-0.86) and **0.69** (f.21v, 826/1200) of the time. The plant leaves S tokens
+correct, so real power is lower wherever an S token is misread or the cipher spells a name differently.
+
+**Reading.** No name or place from the same-day clear letter, and no word of the f.21r passage, sits in the cipher runs
+within one or two M-token edits. With power about 0.7 per occurrence the test excludes the case of several of these
+words in the runs, not a single one. The cipher on f.87 may also carry what the clear letter does not (that is
+what cipher is for). **No token changes grade; no reading, AUDIT.md or SECOND-OPINIONS-QUEUE.tsv change**
+(rule 10 propagation not triggered). Rule 4 counts unchanged: f.87 S 139 / M 61 / U 4; f.21v as in Remaining gaps.
+
+Not done: f.89v (the letter continues: "quale due partite con-") not fetched; its names could enter a second crib list
+under the same rule, ~USD 2 (one region + 2 passes). Requests: gallica.bnf.fr 3 (1 overview to scratchpad, 2 regions).
+Vision: 2 Sonnet subagent passes (70 crops each), 2 own looks (overview, debug overlay).
