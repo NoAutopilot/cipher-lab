@@ -174,6 +174,14 @@ LANG_CORPORA = {
     # See tools/data/la17/README.md (per-fold false-negative rates and spread).
     "la17": [DATA / "la17" / f"{i}.txt.gz" for i in ("hugonisgrotiiepi00grot", "hugonisgrotiiad00oxengoog",
              "bub_gb_WTkBFjX6G_UC", "bub_gb_FK3cWikzFwsC", "bub_gb_mBpUAAAAcAAJ", "epistolaecelebe00grotgoog")],
+    # de17 (3 Oct 2026, GAPS62, account-4): German chancery and diplomatic documents of about 1630-1660 as printed in their
+    # own words by Irmer, Die Verhandlungen Schwedens ... mit Wallenstein 1631-1634 (3 vols, 1888-91) and two volumes of
+    # Urkunden und Actenstuecke zur Geschichte des Kurfuersten Friedrich Wilhelm (1640s-1650s; a third, bub_gb_PggKAAAAIAAJ,
+    # dropped for OCR and editorial regests), period-spelling filtered,
+    # each capped at 450k folded letters -- for riksarkivet-r4282-1628 (1628 Swedish court) tested as German. "de" stays
+    # de16; a spec opts in with "judge": {"language": "de17"}. See tools/data/de17/README.md (per-fold FN and spread).
+    "de17": [DATA / "de17" / f"{i}.txt.gz" for i in ("dieverhandlungen01irme", "dieverhandlungen02irme",
+             "dieverhandlungen03irme", "urkundenundacten1601berluoft", "urkundenundacte32kommgoog")],
     # es (25 Sept 2026, LANE R6 Y8): tools/data/es17/ -- early-17th-c. Spanish prose (Cervantes, Quevedo),
     # ~1.92M letters folded, built for espagnol142-mercy-1648 (a 1648 letter). See tools/data/es17/README.md.
     # es17c (25 Sept 2026, LANE R6 MJ): tools/data/es17c/ -- 1643-1647 Spanish court-newsletter prose

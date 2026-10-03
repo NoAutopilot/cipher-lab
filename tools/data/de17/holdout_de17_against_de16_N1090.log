@@ -1,0 +1,8 @@
+corpus=de17 held_out=dieverhandlungen01irme.txt.gz N=1090 samples=200 real_p05=-0.439 false_negatives=200/200 (100.0%)
+corpus=de17 held_out=dieverhandlungen02irme.txt.gz N=1090 samples=200 real_p05=-0.439 false_negatives=200/200 (100.0%)
+corpus=de17 held_out=dieverhandlungen03irme.txt.gz N=1090 samples=200 real_p05=-0.439 false_negatives=200/200 (100.0%)
+corpus=de17 held_out=urkundenundacten1601berluoft.txt.gz N=1090 samples=200 real_p05=-0.439 false_negatives=200/200 (100.0%)
+corpus=de17 held_out=urkundenundacte32kommgoog.txt.gz N=1090 samples=200 real_p05=-0.439 false_negatives=200/200 (100.0%)
+(all folds scored against one model built from: composed_enhg.txt)
+corpus=de17 TOTAL false-negative rate: 1000/1000 (100.0%)
+corpus=de17 per-fold spread: 100.0-100.0% (1.0x)
