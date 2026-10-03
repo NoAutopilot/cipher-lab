@@ -3395,6 +3395,11 @@
       "target": "birago-fr3252-1571-72",
       "title": "BnF fr.3252 f.47r (Birago to Nevers, 26 Apr 1571): printed Ceppo-Nevers key control-backed on the whole letter (rank 1/201, z 3.4-4.2, power 19-20/20 at two-reader error 0.33; NEVBIR-47, 2 Oct 2026); text word islands only, judge FAIL. f.117r (13 Mar 1572) under the 1572 key rank 1/201 z 3.21, not licensed.",
       "next": "NEVBIR-47C third reader on 257 split tiles (~USD 3), then a verifier; f.117 owner sorter or a fourth reader"
+    },
+    {
+      "target": "pollaky-1865-1875",
+      "title": "Ad 1 (16 May 1865, 10 signs): Laura's bars-x-dots rule beats matched N=10 controls on frame-bigram T (-1.1405 vs shuffled-sign p95 -1.2895, tail 0.002; power 0.981; GAPS160, 3 Oct 2026); no word clears its control, 10 letters M, no reading.",
+      "next": "print step to find the newspaper page and settle sign 04 (~USD 2), then a word-level crib test with random-sign controls"
     }
   ]
 }
