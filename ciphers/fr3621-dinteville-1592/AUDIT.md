@@ -346,3 +346,14 @@ Requests this session: gallica.bnf.fr 3 (info.json, one 808 px thumbnail read nu
 be-api.us.archive.org 9, archive.org 4 (advancedsearch 1, OCR 3), googleapis.com/books 10, api.openalex.org 5,
 api.semanticscholar.org 3 (2 x 429), api.archives-ouvertes.fr 3, persee.fr 1, arcsi.fr 3 (one 404 on a wrong path).
 Vision calls: 1. No decoding beyond the re-derivation and the controls. No credentials printed.
+
+## Propagation note (DIN-FIRM, 3 Oct 2026, rule 10)
+
+No reading or grade change. DIN-FIRM checked the strict rule's conflict rows sq and m one occurrence at a time
+(pre-registered, firm/PREREG.md). sq has 1 spelling conflict and 1 unexplained; m has 2 unexplained (m reads t in 'doiuent'
+and 'trois'). Neither row was promoted, so the licensed grades stay **C 177, M 311, U 39** (now decode.json job 4). The
+SECOND-OPINIONS-QUEUE row needs no update. Date: the foot of f269 (y 4180-5762, x 280-3640) carries no date line, so the
+date stays iij (Bourdeau) / iiij (prints), unread on the leaf. **Correction to the Second audit's Drouot line:** Drouot
+cites fr.4718 f.76 (Dinteville to Nevers, 8 July 1592) without calling it deciphered. The "lettre déchiffrée" is fr.4075
+f.37, on the 1589 Chaumont intrigue, writer unnamed. Gallica's Français 4075 (btv1b9060550k) is a 1613-41 Coeuvres copy
+volume, so that shelfmark does not fit as printed. See NOTES.md "DIN-FIRM".

@@ -1,0 +1,23 @@
+{
+ "conflicts": {
+  "sq": [
+   "spelling",
+   "unexplained"
+  ],
+  "m": [
+   "unexplained",
+   "unexplained"
+  ]
+ },
+ "promoted_rows": [],
+ "strict_grades_before": {
+  "C": 177,
+  "M": 311,
+  "U": 39
+ },
+ "strict_grades_after": {
+  "C": 177,
+  "M": 311,
+  "U": 39
+ }
+}

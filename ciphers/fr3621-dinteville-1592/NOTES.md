@@ -601,20 +601,71 @@ Nevers ("Le Conseil de Ville. Langres, 4 juillet 1592", IA revuedechampagn03unkn
 (1937), cites deciphered Dinteville letters elsewhere (8 July 1592; BnF fr.4718, fr.4075 f.37). Both ARCSI PDFs are now
 read, and neither concerns this letter. Boltanski 2006 is unreachable; it is the N4 blocker together with JSTOR.
 
-## Remaining gaps (VERIFY-DIN2, 3 Oct 2026; supersedes DIN-PRINT's list)
-Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; licensed C 177 / M 311 / U 39 (VERIFY-DIN2, AUDIT.md Second audit; pre-registered C 357, polyphones-at-M C 291), f130/print/reading.txt, decode.json job 3; f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468
-- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d) and v (a/t) are polyphones and v', 0' unkeyed; next: a word-division pass with # and v read in context and graded I, plus a per-occurrence check of the sq x / m t alignments (68 tokens), ~$4
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
-- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
-- Dinteville letters with period decipherments cited by Drouot 1937 (8 July 1592, BnF fr.4718; fr.4075 f.37) - blocker: not-attempted; found by VERIFY-DIN2; next: locate on Gallica and check whether the sign set matches f.128/f.130, ~$3
-- f.130 date (iij or iiij July) - blocker: not-attempted; VERIFY-DIN2's crop at y 3825-4000 was a body line; next: one Gallica region fetch of the f269 block y 4180-5340 and one look, ~$1.5
+## Date line, conflict rows, Drouot siblings (DIN-FIRM, account 3, 3 Oct 2026, 08:27-08:45 UTC)
 
-## Escalation (VERIFY-DIN2, 3 Oct 2026; supersedes DIN-PRINT's list)
+Brief `.claude/briefs/runs/2026-10-03-acct3-din-firm.md`. Step 2 rule pre-registered before any occurrence was read:
+`firm/PREREG.md` (commit 6364b03d).
+
+**1. Date: not settled; the date is not at the foot of f.130r.** One native region per the brief, canvas f269
+x 280-3640, y 4180-5340 (`images/src_..._f269_280_4180_3360_1160.jpg`, 8 line crops `images/f130_dateblk_L01..L08`),
+plus the rest of the leaf below it, y 5300-5762 (`images/src_..._f269_280_5300_3360_462.jpg`, `images/f130_datefoot_*`;
+info.json gives the canvas as 4040 x 5762). Looked at twice (vision calls 2 of 2): the tool's debug overlay of the
+4180-5340 block, then the native crops of its last two lines stacked over the foot's one written line. The block holds the
+end of the clear body, the closing "V[ost]re tres humble et obeissant serviteur", the signature "Dinteville" and a
+postscript at the left ("...Lorraine a laisse ... de Chaumont ... garnisons ... pour faciliter leur volte."). The
+postscript ends on the foot line, and below it the row profile is blank to the canvas edge. **No date line in x 280-3640,
+y 4180-5762.** Where it was not looked at: the left margin x 0-280 (the postscript is cut off there), the head of the
+leaf y 0-600, and y 1960-3825 except the 175 px strip at 3825. The headings keep 3 July as Bourdeau read it, with
+iiij (BnF 1868 catalogue, 1882 Revue) as the alternative. Nothing was corrected.
+
+**2. Conflict rows sq and m** (`firm/conflicts.tsv`, `firm/firm_grades.py --check`):
+
+| row | occurrence | print word | class | why |
+|---|---|---|---|---|
+| sq (s 7/9) | L03.1:30 | deux (`# 0 m sq`) | spelling | 'deus' is in tools/data/fr16 49 times (Catherine de Medicis: 'deus lestres', 'deus ou troys jours') |
+| sq | L05.1:51 | cheuaux (`# T 1 m v al sq`) | unexplained | the gloss has other text here; 'cheuaus'/'chevaus' 0 in fr16 (chevaux 46, chevaulx 32); the next sign, 3 = d, starts 'descorte', so it is not a slip |
+| m (u 8/10) | L04.1:43 | doiuent (`# y p m o f m h v c`) | unexplained | the t must sit between f = n and h = p, so m reads t here |
+| m | L04.1:54 | trois (`sq m w y p sq`) | unexplained | the gloss also reads 'trois', so m reads t again |
+
+**Neither row is promoted.** sq has one unexplained conflict. m reads t twice, in the print and in the gloss of
+'trois' alike, so it looks like a real u/t polyphone (or a sign the transcription merges) and stays M. **Strict grades
+unchanged: C 177, M 311, U 39.** decode.json job 4 (`f130/print/key_dk_strict.tsv`, `f130/print/reading_strict.txt`) now
+carries these grades, so `tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` reproduces them. The values are the
+same as job 3, which keeps the pre-registered grades (C 357).
+
+**3. Drouot (1937) siblings: the citations say less than VERIFY-DIN2's summary.** be-api phrase search of
+IA41551607_0002 found two citations:
+(a) "Dinteville au duc de Nevers, Langres, 8 juill. 1592, B.N., fr. 4718, f. 76", cited as an example of the
+"alarme navarriste". It is **not** called deciphered.
+(b) "l'intrigue de Chaumont en 1589 : ib., II, 281 ; B.N., fr. 4075, f. 37 (lettre déchiffrée) ; Dinteville au duc de
+Nevers, Langres, 3 sept. 1589, ...". This is a deciphered letter on the 1589 Chaumont affair, and the snippet does not
+name its writer.
+Gallica: SRU `dc.source all "Français 4718"` returns 0, so fr.4718 has no Gallica copy found by this search. That is a
+search result: its archivesetmanuscrits record and availability flag were not read. Gallica's **Français 4075** is
+btv1b9060550k, "copies ... adressés au marquis de Coeuvres ... de 1613 à 1641, Tome IX" (17th-century copies, 223
+canvases, none labelled with a folio). A 1589 deciphered letter does not fit that volume. Either Drouot's shelfmark is
+garbled in the OCR or print, or it is another fonds. f.37 was not located (no folio labels and no vision budget to anchor
+one). Neither letter was found carrying cipher plus decipherment. Manifest snapshot:
+`sources/gallica-manifests/btv1b9060550k.json`.
+
+Rule 7: `decode_key.py --check` (4 jobs) and `firm/firm_grades.py --check` both pass. Requests: gallica.bnf.fr 7 (2 region
+fetches, of which 1 was reset and retried once and the first used a malformed ark and returned HTTP 500; 2 info.json, of
+which 1 was reset; 5 SRU; 1 manifest), be-api.us.archive.org 9. Vision calls 2. Rule 10: no novelty claim.
+
+## Remaining gaps (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4, unchanged by DIN-FIRM's conflict check: sq and m not promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line absent from x 280-3640, y 4180-5762 of f269
+- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t) and m (u/t, DIN-FIRM) are polyphones, v' and 0' unkeyed; next: a word-division pass with #, v and m read in context and graded I, ~$4
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
+- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches; next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
+- Drouot-cited letters: fr.4718 f.76 (Dinteville to Nevers, 8 Jul 1592, not called deciphered) and "fr.4075 f.37" (1589 deciphered letter, writer unnamed, Gallica fr.4075 is a 1613-41 Coeuvres volume so the shelfmark does not fit) - blocker: not-attempted; shelfmark mismatch and no Gallica copy of fr.4718 found; next: read fr.4718's archivesetmanuscrits record and its availability flag, and Drouot's printed page for the 4075 citation (IA lending, a person's read), ~$2
+- f.130 date (iij or iiij July) - blocker: not-attempted; not in x 280-3640, y 4180-5762 (DIN-FIRM); next: one 808 px look at the whole of f269 to find the date line (left margin x 0-280, head y 0-600 or mid-leaf), then one native crop, ~$2
+
+## Escalation (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2)
-- [ ] clear-pages: fr.3623 f.23 decipherment and the Drouot-cited deciphered letters (fr.4718, fr.4075 f.37) not yet compared (planned steps above)
+- [ ] clear-pages: fr.3623 f.23 decipherment not yet compared; Drouot citations checked (DIN-FIRM): fr.4718 not found on Gallica, fr.4075 shelfmark mismatched (planned steps above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
-- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2)
-- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq/m checked per occurrence, not promoted (DIN-FIRM)
+- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2); foot of f269 viewed for the date (DIN-FIRM)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 5 internal gaps; cheapest next: one look at the f269 date block (~$1.5), then fr.3623 f.23's sign set for v' and 0' (~$4)
+Verdict: keep going: 5 internal gaps; cheapest next: one whole-leaf look at f269 to find the date line (~$2), then fr.3623 f.23's sign set for v' and 0' (~$4)

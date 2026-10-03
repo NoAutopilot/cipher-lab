@@ -1,0 +1,5 @@
+row	cipher_line	idx	key_value	print_letter	print_word	segment_signs	gloss_word	class	evidence
+sq	L03.1	30	s	x	deux	# 0 m sq (d e u x)	deux	spelling	period spelling 'deus' attested in tools/data/fr16 (49 hits, e.g. Catherine de Medicis 'deus lestres', 'deus ou troys jours'); # 0 m parse d e u under the key
+sq	L05.1	51	s	x	cheuaux	# T 1 m v al sq (c h e u a u x)		unexplained	gloss has a different text here ('vn chemin de fl'); 'cheuaus'/'chevaus' 0 hits in tools/data/fr16 (chevaux 46, chevaulx 32); next sign 3 = d begins 'descorte', so no slip; pre-registered rule not met
+m	L04.1	43	u	t	doiuent	# y p m o f m h v c (d o i u e n t p a r)	doibt	unexplained	the t of 'doiuent' must sit between f (n) and h (p); no neighbouring sign carries it and no spelling of the 3rd plural drops the t; m here reads t
+m	L04.1	54	u	t	trois	sq m w y p sq (s t r o i s)	trois	unexplained	gloss also 'trois'; t must sit between sq (s of 'dans') and w (r); m here reads t in print and gloss alike
