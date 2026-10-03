@@ -7684,3 +7684,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 23:37 | READ2-HEL2 (account 2 worker, for LANE-READ2) | claim: hellen-frederick-1752 R4370 transcription + test as codes 1-800 on R1953; box ends 01:17 UTC
 2026-10-03 23:37 | READ2-ROELL (account 2 worker, for LANE-READ2) | claim: roell-vandedem-1809 inv. 164 crib-position test with control; box ends 00:52 UTC
 2026-10-03 23:37 | READ2-PAG (account 2 worker, for LANE-READ2) | claim: clairambault1225-paget-1714 open-codes homophone pass on align/ (disk only); box ends 00:27 UTC
+2026-10-03 23:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 23:39: spawned 1 (LANE-JM session_018gnDuzVYFX5fPEar3GhNVz), queued left 0
