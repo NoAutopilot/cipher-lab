@@ -1,5 +1,5 @@
 folder	status	blocker	cost_band	near_row	last_touched	next_step	parallel	next_step_full_len
-aca-sanfelipe-duran-1718	blocked	needs-triage	?	n			--	0
+aca-sanfelipe-duran-1718	blocked	needs-triage	?	n	3 Oct 2026		--	0
 antt-linhares-chave	partial	needs-person	M	n	2 Oct 2026	A further retry is due after the column counts, the 829011 re-read and the cancelled group (m0001 done 2 Oct 2026, it changes no group) Verdict: keep going: 6 internal gaps (m0001 settled 2 Oct 2026,…		3871
 antt-msliv0638-brochado-1712	partial	needs-key	M	n	2 Oct 2026	Grades were never going to move the judge; the one value change moved it slightly down Verdict: keep going: 7 internal gaps (2 settled 2 Oct 2026 by NEXT-BRO: the judge calibration -- judge has power…		5564
 armstrong-madison-1808	open	needs-person	M	n	28 Sep	Hypothesis H58: audit the 29 shorthand line crops (images/shorthand/) that every glyph step used (B35 and its successors, H54, H55), after H55's registration put page-2 crops on the wrong lines.		338
@@ -10,19 +10,18 @@ arsenal6334-longueville-1650-59	blocked	needs-triage	?	n			--	0
 august-van-saksen-1561-64	partial	needs-key	M	n	2 Oct 2026	Next: ask Dresden for fol.	Run the solver pass on f.266v with key_53 (already built in this folder, never applied) to settle more of 53's 126 M-tokens. S, tools/decode_key.py.	2591
 baluze103-letellier-marca-1644	blocked	needs-triage	?	n	25 Sep		--	0
 belmesseri-napoli-1627	blocked	needs-image	M	n		- (d) not found/unreachable: the Spanish-side literature on the Carafa-Stigliano marriage (Sabbioneta/Gonzaga) was not opened; a search of Simancas/Sabbioneta studies for Este dispatches is the next…		449
-berthier-napoleon-1812	open	needs-person	M	n	2 Oct 2026	[ ] Spanish-campaign 1812 grand chiffre (Bouchaudy's images of the SHD table) against this page: transcribe the table rows for this page's ~200 distinct values from the four images, apply, value-over…		575
-birago-fr3252-1571-72	partial	needs-person	M	n	2 Oct 2026	- f.47r reader error 0.33 - blocker: not-attempted; two Sonnet passes with no H rows and no third eye (rate limit); next: blind third reader (Opus) on the 257 split tiles of harvest/f47/recon_norm_di…		1832
+birago-fr3252-1571-72	partial	needs-person	M	n	2 Oct 2026	- f.47r reader error 0.33 - blocker: not-attempted; third reader done (NEVBIR-47C); witness pair check done (CEPPO-WITNESS-PAIRS, 3 Oct 2026): R-8 and R-6 agree with the third reader on 28/28 and 39/…		2220
 birago-nevers-1571	open	runnable	M	n	25 Sep	Next: a decoy-null, joint-consistency crib test (~$2), or the dotted groups read as name codes, or a third letter in the same key.	--	1305
-bl-farnese-cipher	open	needs-triage	?	n			--	0
+bl-farnese-cipher	blocked	needs-person	S	n	3 Oct 2026	Stated next step (cheap, names the blocker): get Cardauns 1909 (Bd.		622
 bl-gualterio-1700	open	needs-triage	?	n	25 Sep		--	0
 bl-james-1669	open	runnable	M	n	25 Sep	If both come back negative, the ff.1-8 pairing (1669 letters plus their own partial name-key, in the same volume) is the cheapest solve in the volume per the QUEUE row's own assessment — a reading-ro…	--	580
-bl-portugal-bombay-1661	open	needs-triage	?	n			--	0
-bl-sacchetti-nunzio-1623	open	needs-triage	?	n	25 Sep		--	0
+bl-portugal-bombay-1661	blocked	needs-image	M	n	3 Oct 2026	Page text of those three seqs is the named next step (local runner / owner browser, Google Books id TfCPAAAAMAAJ or HathiTrust mdp.39015013259075; printed page = seq minus an unknown front-matter off…		1428
+bl-sacchetti-nunzio-1623	open	needs-triage	?	n	3 Oct 2026		--	0
 blitz-ciphers	open	runnable	S	n	2 Oct 2026	Next step: none cheap on the 581 signs in hand -- the target waits on new material (a transcription of pages 1-6's glyph script against a settled sign inventory, or a third page in the pages 7-8 alph…	--	410
 bne20211-ferdinand-1478	blocked	needs-triage	?	n			--	0
 borssele-heinsius-1714	open	needs-edition	M	n	25 Sep	**The very next step on this target, before any solver work, must be to view the actual leaf (H.A.	Re-read Veenendaal's edition (already on disk) for another footnote cross-referencing this "oplossing" by letter number, no leaf needed. S.	974
 bowes-walsingham-1583	partial	runnable	M	n	2 Oct 2026	Next step for the siblings: whether ff.201-203 or ff.69v-70r carry cipher beside the deciphered copy (a key witness for signs 15, 25 and 28) can only be settled from the leaves (BL reproduction reque…	--	2339
-bullet-tuscany-1944	partial	needs-triage	?	n	26 Sep		--	0
+bullet-tuscany-1944	partial	needs-triage	?	n	3 Oct 2026		--	0
 castelcicala-1816	partial	needs-key	M	n	2 Oct 2026	Verdict: keep going: 5 internal gaps; cheapest next: file an ASKS.md row and an owner-side (LOCAL-QUEUE.tsv) request for a reading or copy of BL Add MS 41525 f.38, the 1816-17 Castelcicala-Circello c…		4956
 catokwacopa-1875	partial	needs-key	M	n	2 Oct 2026	Verdict: keep going: 3 internal gaps; cheapest next: file a LOCAL-QUEUE.tsv bna-search row beside L13 for The Standard p.		3250
 censorship-manual-stego	open	runnable	M	n	25 Sep	## Next step (suggestion only, not run this pass)	--	49
@@ -35,23 +34,22 @@ clairambault1225-paget-1714	partial	needs-image	M	n	2 Oct 2026	Earlier (NEXT2-PA
 clairambault296-paget-1713	open	needs-image	S	n		Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row would need to name canvases 28 and 36 explicitly to get them read.	Retry canvases 28 and 36 fresh -- both failures were transient proxy-side resets, not a Gallica 403/429/challenge, on an ark otherwise fully reachable. S, plain fetch or tools/iiif_lines.py.	874
 clairambault528-bouillon-1713	blocked	needs-edition	M	n		edition) were not full-text searched -- budget-limited, flagged as the next step.	Full-text search Cardinal de Bouillon's own Mémoires (19th-c. ed.) on archive.org for this 1713 exile affair -- flagged as unrun. S, tools/print_check.py.	1999
 clerville-francia-1648	blocked	needs-image	M	n		- (d) not found/unreachable: no French-side edition (Mazarin letters, Recueil des instructions) identified; a Gallica/IA search of the 27 April 1648 date with Este envoy names is the next step.		525
-colbert26-lathuillerie-1644	partial	runnable	S	n	25 Sep	Verdict: keep going: 4 internal gaps; cheapest next: key_f23 C codes on canvas 30's transcribed glossed tokens vs its own gloss with a shuffled-gloss control, ~$1	--	162
+colbert26-lathuillerie-1644	partial	runnable	M	n	25 Sep	Verdict: keep going: 4 internal gaps; cheapest next: re-pair the 22 canvas 32 rows at word level by eye from images/crops/canvas32_full.jpg (A2-COL3 method, split only at visible gaps under one-to-on…	--	412
 courten-diary	open	runnable	S	n	2 Oct 2026	api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups).	--	346
 cylob-c1995	open	needs-triage	?	n	25 Sep		--	0
 debosnys-1883	open	runnable	S	n	25 Sep	**Against 200 NULL-HABIT draws** (the same ids with two favourite successors taken 25 pct of the time, at box level): real-N sits at the habit null's middle (median 13.8, p95 24.8, p 0.245), real-T l…	--	1444
 decode-1162-modena-ambung-1492	open	needs-key	M	n	2 Oct 2026	Follow-up (one line, not run here): correct the triage row's head_start cell for row 4 -- 1168 holds no key -- so the parent does not re-rank it on that premise; and the 1162/1168 pair is a two-lette…		323
-decode-1168-modena-costabili-1492	partial	runnable	S	n		QUEUE.md row **DC10** placed this in the "DECODE non-decrypted records with images" section (which pools both Non-decrypted and Partially-decrypted rows from the underlying crawl, per `sources/decode…	--	550
 decode-1411-hhsta-vienna-1600	open	needs-triage	?	n			--	0
 decode-2678-bnf-colbert127-gravel-1665	open	needs-triage	?	n			--	0
-decode-2754-bnf-baluze156-1636	open	runnable	M	n	2 Oct 2026	Next step for a future worker: match the cipher's doubled-letter tokens (tt, ll, nn, ff) against Lasry's letter-symbol table by shape, and/or search for a nomenclator with a different number range be…	--	1844
-decode-4450-bnf-fr20506-1525	open	runnable	M	n	2 Oct 2026	Follow-up for a later worker, not run here (out of scope): Biermann's fr.3022 f.50 "adizione nel zifra" is a period key-fragment candidate for the Ranzo system; check whether Bourdeau's `vasto1527/NO…	--	4703
+decode-2754-bnf-baluze156-1636	open	runnable	M	n	3 Oct 2026	**Next steps (not run, rule 7 of Usage).** (1) fr.4140 carries 17 more Sabran Genoa letters "avec chiffre et déchiffrement" (Sept-Dec 1636, ff.197-591, the later ones in fr.4141, which SRU did not fi…	--	723
+decode-4450-bnf-fr20506-1525	open	needs-person	M	n	2 Oct 2026	Next step for this target: the blocker stays Bourdeau's "no-key-material".		348
 decode-9970-simancas-1527	open	needs-triage	?	n			--	0
 della-torre-olanda-1690	blocked	needs-triage	?	n			--	0
 destaing-gerard-1779	open	needs-image	M	n	27 Sep	**U4: next step.** Both grammar-boundary candidates (U2) and the one-part test (U3) are now on file as leads, neither a reading nor a further negative on the code as a whole (the code itself is not s…	Build the period French dictionary headword list (tools/data has none yet) that U4 names as sharpening the one-part band test already coded in tools/freq.py --onepart-dict. M.	1060
-eckert-1862	partial	runnable	M	n		- Follow-up suggestion (verifier, 24 Sept 2026, not done): the reading.md summary sentence "the only variants are clerical" should be corrected by the solver lane to name the T10 variants (AUDIT.md s…	--	1100
+eckert-1862	partial	runnable	M	n		4 for Feb 1862) were not searched this pass; next: grep Papers of U.	--	1846
 eckert-1864	partial	needs-triage	?	n			--	0
 erba-2006	open	needs-triage	?	n	25 Sep		--	0
-esp318-sicilia-1503	open	runnable	M	n	2 Oct 2026	No other canvases (453-455) cropped in this job -- one sample page is enough for the image step; the next job cuts the remaining three.	--	1147
+esp318-sicilia-1503	open	needs-person	M	n	3 Oct 2026	VI index under Sicilia/Lanuza (LOCAL-QUEUE/HathiTrust page read), named in Premise check (d) - [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish)…	Depends on nobody: fetch the "Cifra del visorrey", BRAH 9/15 ff.1-6 (RAH OAI-PMH didl route, then `tools/browser_fetch.js	1089
 espagnol142-mercy-1648	partial	needs-person	M	n	27 Sep	183 (calendar); none prints f.22 (NOTES.md opening sections; Bourdeau snapshot NOTES.md "Print") - [x] key-rebuild: Y8 anneal, M2, held-29 anneals (H3), crib steps H41-H77, Bourdeau's digit-pair spli…	Run the homogeneity split (correspondent/date range within a tomo) `es17c7/README.md` names as the next cheap step, before trusting a further judge FAIL/PASS. M.	2687
 fair-game-2010	open	needs-triage	?	n	25 Sep		--	0
 florence-dieci-responsive	blocked	runnable	S	n		## Next steps (not done here, budget/window)	--	44
@@ -77,7 +75,7 @@ fr3993-villeroy-1595	open	needs-triage	?	n	24 Sep		--	0
 fr4687-paleologue-nevers	blocked	runnable	S	n	2 Oct 2026	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…	--	395
 fr4715-f61-mayenne-1592	partial	needs-edition	M	n	27-28 Sep	Refreshing it is the named next step in Remaining gaps.		3271
 fr4715-montholon-1589	open	needs-person	S	n	27 Sep	**Next step.** A fail keeps the BnF-capture route first (ASKS 79, a new capture of f.81r).	Merge call C's digit/letter reads (met G0/G1) with call D's dot flags (met G2) on the same four lines -- both already on disk, each cleared a different gate. M.	422
-fr4715-vieuville-pool	partial	needs-person	M	n	2 Oct 2026	## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026) - [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its per…		2220
+fr4715-vieuville-pool	partial	needs-person	M	n	3 Oct 2026	## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026) - [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its per…		2368
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…	--	310
 fr5761-election-1519	open	needs-edition	M	n		Next: a full-text search of Deutsche Reichstagsakten J.R.		2092
 fr7129-villeroy-bongars-1604	blocked	needs-image	M	n	27 Sep	**Next step (a different instrument, not a third crop pass):** transcribe a few f.260 lines with the clerk's own decipherment in view, aligned per sign by one careful reader and checked by a second,…	Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L.	500
@@ -88,35 +86,35 @@ harley-287-1587	partial	runnable	M	n	2 Oct 2026	Next step: view ff.84, 86-87 and
 heinsius-dopff-1702	open	runnable	S	n		Brief `.claude/briefs/runs/2026-09-24-lane-n2-csHU2.md` (LANE N2, follow-up to csHU).	--	234
 heinsius-hermitage-1704	open	needs-image	M	n	24 Sep	2317 (the candidate key) should be requested together, since comparing them is the actual next step, not two separate visits.	Re-read the edition's footnote for letter no. 251 (25 Mar 1704, inv.nr. 946) again -- it lacks "onopgelost," unlike 166/177/477, so it may already be solved in print. S.	629
 heinsius-vanhaersolte-1703	open	needs-image	M	n	24 Sep	The other 1432 "Haersolte" hits across the edition were not paged through; that is the next step for more siblings.		2731
-hellen-frederick-1752	open	needs-image	M	n	2 Oct 2026	Afschriften, ten dele in cijfer" (Hellen's successor at The Hague) is the next series on the same shelf, likewise without scans.		1805
+hellen-frederick-1752	open	needs-image	M	n	3 Oct 2026	Afschriften, ten dele in cijfer" (Hellen's successor at The Hague) is the next series on the same shelf, likewise without scans.		1805
 hessen-daenemark-1672	partial	needs-key	M	n	2 Oct 2026	Verdict: keep going: 4 internal gaps; cheapest next: the 3-page transcription and gloss pass (iiif_lines.py crops, 2 blind passes per page + 1 reconciliation) with key.tsv applied to every 2-digit gr…	Run the dedicated transcription pass named in Cheap test 1: build key.tsv from the legible glosses only (601=Dennemarck at grade C; more leads already named). M.	3772
 hstas-osiander-1627	open	needs-edition	S	n	24 Sep	395-403 (madoc.bib.uni-mannheim.de/60109, record page only, no full text there) -- a different, earlier Württemberg diary; whether it discusses Osiander's continuation is not known (next: read it, th…		1914
-huntington-blathwayt-madrid-1728	partial	runnable	S	n	24 Sep	Follow-ups (suggestions, not done): HMC *Polwarth* V (1961); TNA SP 36/13/129, SP 36/14/184 (Marchmont's covering letters from Cessnock, July/Aug 1729, "enclosures not forthcoming"), SP 54/19/98A-B (…	--	1162
+huntington-blathwayt-madrid-1728	partial	needs-key	M	n	24 Sep	The Newcastle Papers (BL Add MSS) and SP 94 (Spain) for 1728-29 were not searched (BL catalogue route limited since 2023); next: TNA Discovery API on SP 94/98-100 descriptions for "Paretti"/"Pareti",…		2081
 hza-hohenlohe-1679	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) read the *Archiv für hohenlohische Geschichte* Wolfgang Julius article for any mention of these reports, "Chiffre", Melchior, Pape or Köhler; (2) c…	--	529
 jan-van-nassau-1572-75	open	runnable	M	n	24 Sep	Next step for the body is unchanged from J7/WC-NASSAU-FIT2: a sibling letter in the "verendertte" key with a decipherment or a Groen clear text (the HStAM follow-up in the Marburg section, needs a pe…	--	579
-kaliningrad-2015	open	runnable	M	n	26 Sep	**Next steps.** Every convention-B Latin-alphabet language tried so far (German not tried at B; Russian S1/S3' already negative; nl/da/en/fr/it/es/pl/ru-s3 all now control-backed negatives) leaves Po…	--	1401
+kaliningrad-2015	open	runnable	S	n	26 Sep	**Next steps.** The convention-B homophonic sweep is now complete for every Latin-alphabet language on disk (de/nl/da/en/fr/it/es/pt/pl/ru-s3 control-backed negatives; lt below its own control gate a…	--	605
 koehler-1944	open	needs-person	S	n	27 Sep	`NEAR.md`'s koehler-1944 row and its named next steps (ASKS 55 NARA/Farago, ASKS 53 Cryptologia scan) are unchanged by this job -- read, not edited, since nothing here moves either.	Run the one remaining vig placement in GOLD-K4's grid (`--param modes=plaincipher,keycipher --param arith=beau`), a script-only unit needing no new material. S, tools/family_run.py.	488
 konstanz-talleyrand-sieyes-1798	open	needs-triage	?	n			--	0
 la-garde-1577	open	needs-key	M	n	26 Sep	**Where Y1's follow-ups stand:** (1) done (A2-LAG); (3) done here, read as far as this image allows.		209
 lambeth-bacon-649	open	needs-triage	?	n	2 Oct 2026		--	0
 lambeth-casenowe-1586	open	needs-triage	?	n	2 Oct 2026		--	0
 lodewijk-van-nassau-1573-74	partial	needs-key	M	n	2 Oct 2026	Gap 1's next step is a different instrument, the fr16 word-segmentation score under the same hidden-code gate per class, ~$3.		1568
-lope-hurtado-1522	partial	runnable	S	n	26 Sep	- Check whether Universitat de València holds a separate, longer 2017 doctoral deposit, or the 2024 book itself, under a different RODERIC handle -- named in NOTES as the next step, not yet run.	--	534
+lope-hurtado-1522	partial	needs-edition	M	n	26 Sep	with the 1524 alphabet" as an open step (his stated next step -> duplicate-effort risk for R9634).	Check whether Universitat de València holds a separate, longer 2017 doctoral deposit, or the 2024 book itself, under a different RODERIC handle -- named in NOTES as the next step, not yet run.	2033
 malsburg-hessen-1636	partial	needs-key	M	n	2 Oct 2026	1411, filed 2 Oct 2026); cheapest next: the three clear-page direct reads (f.12 "cifrat cela", f.14 foot, f.16 panel), ~$4.5, then key_crossmatch on the pool plus the marburg1635/Rabenhaupt/Heusner k…		4901
 matignon-mayenne-1586	partial	needs-image	M	n	2 Oct 2026	**Not reached (all 31 rows) and the named next step.** No image on disk for any of the 13 Cipher-1 leaves.		1060
-maurice-rupert-1645	open	needs-image	M	n	1 Oct 2026	- **Next step** (keep going; not blocked): find which 72438 Key record holds index no.		2742
-mccormick-1999	open	runnable	S	n	2 Oct 2026	Next cheap test: the 2 Oct "Named next step" above, rating the Tsuchimoto and Sadak tables (fetch the two Zenodo PDFs, apply to both notes, `tools/judge_plaintext.py specs/mccormick-1999.json` beside…	--	373
+maurice-rupert-1645	open	runnable	M	n	3 Oct 2026	- **Next step** (keep going, about $1.5): read the unread Osborne cipher lines (8443 P1/P2, 8444 P2) from the full-size images (re-fetch, one login; sha1s in `osborne/fullsize_sha1.txt`).	--	1218
+mccormick-1999	open	runnable	S	n	3 Oct 2026	Next cheap test: the 2 Oct "Named next step" above, rating the Tsuchimoto and Sadak tables (fetch the two Zenodo PDFs, apply to both notes, `tools/judge_plaintext.py specs/mccormick-1999.json` beside…	--	373
 mlh-1976	open	runnable	M	n	25 Sep	### Where this leaves cheap test 2 (spec's next step, not run this pass)	--	72
 moray-wood-1568	partial	needs-image	M	n	2 Oct 2026	GAPS4 (2 Oct 2026) then ran the two blind passes plus reconciliation (images/passes_2026-10-02.tsv): L1.5, L3.22, L4.4-5 settled, L4.5 Z2->Z5 applied; GAPS5 (2 Oct 2026) closed the residue with one b…	Done 2 Oct 2026 (GAPS15): the no.804 crib test is pre-registered (no804/PREREG.md, no804/no804_crib.py; positive control >= 0.975 to 30 pct sign error at 39-42 signs, false-pass 0).	5564
 mornington-1798	partial	needs-image	M	n	2 Oct 2026	A clear retained copy or a recipient's decipherment would give plaintext without imaging; next: one Sonnet worker on searcharchives.bl.uk JSON (Wellesley Papers Add MS, IOR/H, Board of Control) for t…		7480
 moustier-altars	open	runnable	M	n	25 Sep	Suggested follow-ups (one line each, not run): - A closer/better-lit photo of altar 2 (Moustier-212.jpg was too oblique) would help settle the `Λ`-vs-`A` question by eye rather than by cross-referenc…	--	620
-na-janssens-java-1811	partial	needs-person	M	n	2 Oct 2026	Planned after the 192 and No.4 merges: an LM-context fill with a matched control built from No.4's raw copy (204R) against its plain copy (208R-209), same design, language and hidden-code fraction, ~…	The one action that depends on nobody while LOCAL-QUEUE rows L31 (Paris search) and L35 (Collet 1910 footnotes) wait: the	7849
+na-janssens-java-1811	partial	needs-person	M	n	3 Oct 2026	Planned: an LM fill of the 56 unkeyed leaf-188 codes against the key's value vocabulary, same control and known-answer gate (method weak on real-word decoys, so expect few moves), disk only, ~$3 - [x…	The one action that depends on nobody while LOCAL-QUEUE rows L31 (Paris search) and L35 (Collet 1910 footnotes) wait: the	8848
 na-oldenbarnevelt-2442-1605	open	runnable	M	n		**Next steps, cheapest first (after A2-OLD2):** verifier session on B/C1 (rule 10, separate session); (a'') second full blind pass over B/C1 crops, ~$2; (d) era-matched early-17th-century Spanish jud…	--	263
-na-raad-azie-1800	open	runnable	M	n		**Next step** (~$3, breadth cap): `tools/family_run.py --family homophonic --param profile=target` on the same `data/masc/cells_370.txt` with nl20, control first, plus the same 3-seed `--shuffle-targ…	--	419
+na-raad-azie-1800	open	runnable	M	n		**Next steps, written, not run** (in cost order): 1.	--	1072
 na-schonenberg-1678-1716	partial	runnable	S	n	2 Oct 2026	No third disk-only instrument is known that does not reuse the same body text, so the next step is an image step (Verdict below).	--	863
-na-suriname-map-1781	partial	needs-person	M	n	2 Oct 2026	Cheapest next: the 2046 legend under the period key (iiif_lines crops of its legend and cartouche, 2 blind passes + 1 reconciliation, decode, align against crib_2042_legend.tsv; ~$9), then 2077 the s…		6936
+na-suriname-map-1781	partial	needs-person	M	n	3 Oct 2026	Cheapest next: the 2046 legend under the period key (iiif_lines crops of its legend and cartouche, 2 blind passes + 1 reconciliation, decode, align against crib_2042_legend.tsv; ~$9), then 2077 the s…		6936
 naf14913-rousseau-venice-1743	open	needs-person	S	n	26 Sep	The recommended next step ("a print-check worker with JSTOR/Cairn access reading the 2015 Archives de Philosophie article in full and checking Labro's 2012 edition") is really a paywalled-content rea…	S: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books/archive.org be-api -- only tried on JSTOR so far.	715
-nevers-birago-fr3251-1572	partial	runnable	M	n	2 Oct 2026	Next: the look-alike pass on the no.87 tiles labelled T50, T98, T52 and T46 against the crops with this map as crib (`tools/lookalike_pass.py`, 1-2 vision calls, ~$2), which decides whether T50-as-s…	--	859
+nevers-birago-fr3251-1572	partial	runnable	S	n	2 Oct 2026	**Follow-up (true error dropped).** The same shapes can hide under the same labels in the other letters: 26 tiles in `lookalike_87/no87_labels/followup_71_86_90.tsv` -- no.71 f.139v T50 x3; no.86 T50…	--	591
 newcastle-stone-1728	open	needs-image	S	n	26 Sep	**open**, stage 2 verified unsolved (conditional: Coxe's two 1798/1802 Walpole memoir volumes are named, readily available editions from exactly this circle and period that have not actually been ful…	S: full-text search Coxe's two Walpole memoir volumes (already located, not yet searched) for 'second reading'/19 Dec 1728 -- tools/print_check.py.	626
 nla-heinrich-braunschweig-1519	open	runnable	S	n	24 Sep	562's own catalogue wording) -- ADB/NDB on Heinrich der Mittlere, genealogy pages; nothing; (4) `Hildesheimer Stiftsfehde Chiffre verschlüsselter Brief Herzog Heinrich 1519 Schaumburg Graf` -- ADB Jo…	--	1491
 oldenbarnevelt-brederode-1605	open	needs-person	S	n	2 Oct 2026	**Named next step (one LOCAL-QUEUE.tsv row, drafted here, not filed):**		71
@@ -134,7 +132,7 @@ ra-vellingk-1713	open	needs-edition	M	n		- M: run tools/htrc_ef_headwords.py for
 rah-morillo-1817	partial	needs-key	M	n	2 Oct 2026	Still unopened: 1759 (server error twice), 3893, 3886 and item 1's leaf 2242 (gaps above) - [x] clear-pages: item 3's f.420r carries the period interlinear decipherment under all 21 groups (the key's…		3672
 rah-salazar-soria-sanchez-1524-28	blocked	runnable	S	n	26 Sep	A Google Books API search found only `NO_PAGES`/`PARTIAL` snippets of the same work and its 2024 published successor.	--	1071
 rayburn-2004	open	needs-triage	?	n	25 Sep		--	0
-riksarkivet-r4282-1628	open	needs-triage	?	n	2 Oct 2026		--	0
+riksarkivet-r4282-1628	open	needs-edition	M	n	3 Oct 2026	## Escalation (FT4, 3 Oct 2026) - [x] siblings: Bourdeau's 14-record bundle read in full (check-solved, 26 Sept 2026) - [x] clear-pages: R4282's four clear-Latin phrases dragged as cribs (RIK-CRIBS,…		836
 roell-vandedem-1809	open	runnable	L	n	2 Oct 2026	**Next step (priced; a worker with its own vision budget):** crib-position test of the large inv.	--	760
 rubin-1953	open	needs-triage	?	n	25 Sep		--	0
 rumpf-vandebie-heinsius-1716-19	open	runnable	M	n		Follow-up suggestions (one line each): (1) the NA originals of letters 309 (H.A.	--	423
@@ -142,7 +140,7 @@ sachsstaatsarchiv-manteuffel-1712	blocked	runnable	M	n		**Recommended next steps
 salvago-caraffa-1691	blocked	needs-triage	?	n			--	0
 sanguszkow-mniszech-dunin-1714	blocked	needs-triage	?	n			--	0
 scorpion-1991	open	runnable	M	n	25 Sep	## Follow-ups (one-line suggestions, not run this pass)	--	55
-siena-concistoro-2308	open	runnable	M	n	26 Sep	Next step (not run this pass): Bourdeau's own escalation log names "a single-hand re-transcription with a fixed sign inventory" as the way forward for both pools -- that needs the DECODE images, bloc…	--	216
+siena-concistoro-2308	open	needs-edition	M	n	26 Sep	We have not seen the images ourselves (full-size DECODE images were account-blocked when this folder was worked; A2-HDK, 2 Oct 2026, got one record's full image after a browser login -- a per-record…		2781
 sp105-paget-1693	open	needs-image	M	n		Next: read SOAS PP MS 4.02.27.01/.28.01 item lists for Stepney 1693-94 letters (catalogue, owner-side or a host that resolves).		2710
 sp35-townshend-key-1719	open	needs-triage	?	n	25 Sep		--	0
 sp36-ball-1745	open	needs-image	M	n	24 Sep	Next: check Lord Marischal's 30 Nov 1745 letter in print (e.g.		2646
@@ -187,4 +185,4 @@ wvo-hessen-1564	open	needs-edition	M	n	2 Oct 2026	Wilhelm's reply to 1109 (autum
 yogtze-1984	open	needs-triage	?	n	25 Sep		--	0
 zbz-busbecq-1587	open	needs-triage	?	n			--	0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	--	32
-# 188 rows -- needs-edition=13 needs-image=29 needs-key=12 needs-person=19 needs-triage=59 runnable=56
+# 186 rows -- needs-edition=16 needs-image=29 needs-key=13 needs-person=21 needs-triage=56 runnable=51
