@@ -403,3 +403,16 @@ Runs: ITER 1,000,000, seeds 1-6 for every arm; T0 also seeds 7-12 (noise referen
   c007 0.005 (s 2, g 33), c017 0.103 (51/7), c018 0.045 (23/23), c019 0.117 (60/8), c020 0.019 (5/14); no.20 files
   0.07-0.16 with g 1-7. So c018 and c020 look flipped wholly or partly, c017/c019 do not -- a counts hypothesis only,
   settled (or not) by the image look below.
+
+**c017-c020 image check (after the pre-registration, before reading any run).** Crops (scratch first, the five used copied to
+`images/fr2988_sg/` with manifest): `python3 tools/iiif_lines.py --ark btv1b9059908w --canvas 20 --region 900,150,3300,1250
+--out <scratch>/crops --prefix v20 --debug` and the same with `--canvas 18 --prefix v18` (Gallica view = canvas number; view 20
+= Bourdeau c020, view 18 = c018; first band is the line above his line 1). Read by this worker, own looks (5 crops), no blind
+subagent: the brief's 4 blind calls were not spent, to stay inside the cap -- grade M, one reader, labels seen. Result:
+- view 20 (c020): his g7, g346 (line 1), g327 (line 2) are all the compact closed 8 -- the s form settled by A1B-RANZO-2WIT.
+- view 18 (c018): his g44 (line 4) is the compact 8; his s153 (line 3) is a third form, a tall long-s, correctly labelled s.
+  So c018 mixes tall s (labelled s) and compact 8 (labelled g): the 23/23 split is consistent with that.
+- 4 of 4 sampled "g" labels on c018/c020 are the s-form compact 8; no open-bowl g was found in the sampled crops (not looked
+  for exhaustively). c017 and c019 (s share 0.103, 0.117) were not viewed: counts only.
+So the flip is not confined to c007: c018 and c020 carry it too (sample, M). Their full relabel needs every g token on those
+two pages checked (about 37 tokens, image), not done here; arm C2 prices its effect on the control.
