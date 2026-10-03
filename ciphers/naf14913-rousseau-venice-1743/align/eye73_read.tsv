@@ -1,0 +1,8 @@
+# FT4m blind Opus 5.5 subagent read (1 call, 3 Oct 2026), masked crops images/ft4m/eye_1..5.jpg; identities in eye73_mask.tsv (not shown to the reader)
+crop	identity	digits	confidence	alternative_digits	marks
+eye_1	decoy_426	42	high	-	none
+eye_2	decoy_368a	368	high	-	none (final 8 clipped at the right edge, stroke normal)
+eye_3	target_368b	368	high	-	none (separating dot follows, normal)
+eye_4	decoy_689	689	medium	68; 680	none
+eye_5	decoy_468	59	medium	58; 39	none (first glyph clipped at left edge)
+# reader: "Different in kind: none. All five groups are in the same ink density, size and baseline, with no strike-through, overwriting, dots under, erasure or unusual spacing."
