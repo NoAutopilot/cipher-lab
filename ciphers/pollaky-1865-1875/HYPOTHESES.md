@@ -46,3 +46,19 @@ in NOTES.md before scoring (commit f065906d).
 | minus address | 35 joined | -2.080 | -2.088 (0.048) | 0.320 | untestable |
 
 Status: untested-by-this-tool at N=36 with one repeated group (power < 0.5), not refuted.
+
+## Ad 2 (1871 telegram) = Baertl's digit-sum letter code (comment #1, 16 June 2017) -- GAPS169, 3 Oct 2026
+
+Statistic T: best mean trigram log10 score a fixed simple-substitution hill-climber (8 restarts x 1500 moves) reaches on
+the digit-sum sequence (27->26). Null: 200 uniform-random same-shape digit strings. Positive: 100 English windows of the
+same N through a random letter -> sum map. Script: scripts/baertl_digitsum.py (seed 169). Pre-registered in NOTES.md
+before scoring (commit 1ecd9062).
+
+| sequence | N | T target | null p95 (tail) | null median | positive median | power | verdict |
+|---|---|---|---|---|---|---|---|
+| our 36 sums | 36 | -0.9606 | -0.7747 (0.995) | -0.8479 | -0.8426 | 0.210 | non-test (ceiling) |
+| Baertl's 46 values | 46 | -0.8689 | -0.7674 (0.555) | -0.8608 | -0.8497 | 0.220 | non-test (ceiling) |
+
+Status: untested-by-this-tool at N=36-46 (null median within 0.01 of positive median), not refuted; instrument retired
+for this hypothesis. Baertl's own 46 values duplicate an 8-value run of the 36 sums and add two, and his reading maps
+sum 7 to both B and W.

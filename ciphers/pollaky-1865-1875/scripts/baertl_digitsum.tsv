@@ -1,0 +1,4 @@
+seq	N	K	T	null_p95	tail	null_med	pos_med	power	verdict
+S1 our 36 sums (27->26)	36	19	-0.9606	-0.7747	0.995	-0.8479	-0.8426	0.210	non-test (null at positive ceiling)
+S2 Baertl's 46 (27->26)	46	19	-0.8689	-0.7674	0.555	-0.8608	-0.8497	0.220	non-test (null at positive ceiling)
+B Baertl's reading as text	46		-1.0120	real-English p05 -1.0796	0.200	-0.9506			inside English
