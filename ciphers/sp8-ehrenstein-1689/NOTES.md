@@ -180,3 +180,54 @@ Requests: WebSearch 6; adelsvapen.com 2 (one 404); www.googleapis.com/books 6; d
 Next cheapest step: EMLO Solr query (gyldenstolpe-family catalogue, plain GET) for Ehrenstéen / Bernstorff letters
 of 1688-1690, about USD 1; then Arcinsys Niedersachsen search for the Bernstorff/Celle side (browser tool, about
 USD 2). The letter itself stays copy-order (REQUEST.md, `digitised: false`).
+
+## GAPS119 (3 Oct 2026, account-4): EMLO Solr probe, Gyldenstolpe / Ehrensteen / Bernstorff 1688-90
+
+Step run: GAPS114's named next step. The EMLO Solr endpoint (`emlo.bodleian.ox.ac.uk/solr/all/select`) was queried
+by plain GET, about 1.6 s apart. No vision, no subagents, no reading. Nothing here is a reading or a novelty verdict
+(rule 10).
+
+Positive control: `foaf_name:Gyldenstolpe*` returned 13 person records, among them **Nils Gyldenstolpe, 1642-1709**
+(200 works addressed to him). The free-text query `cipher OR cypher` returned 191 works across EMLO (for example
+"Wallis cipher books"), so a zero below is a real zero for this index and not a broken query. Both controls passed.
+
+| Query | Hits | What they are |
+|---|---|---|
+| Gyldenstolpe family catalogue (`cito_Catalog`), all works | 207 | letters to Nils from his brothers Daniel, Samuel, Carl, Gustaf and others, 1661-1680, plus 3 later ones (Samuel 4 Mar 1692; Carl 15 Jul and 18 Dec 1699) |
+| same catalogue, works dated 1688-1690 | 0 | -- |
+| same catalogue, cipher/cypher/chiffre/chiffer/ziffer/decipher* (free text) and cipher-like keywords | 0 / 0 | -- |
+| persons named Ehrenst* | 4 | Margareta (Nils's wife), Edvard Philipsson, Carl (1656-1702), **Lars Philip Ehrensteen (1662-1700)**: EMLO describes him as "Courtier in the Court of Charles XI ... Major in the Swedish Military; Commandant of the Ottersberg Castle". He wrote no works and received none; he is mentioned in 3 works |
+| works mentioning Lars Philip or Carl Ehrensteen | 6 | all are 1676-1679 family letters to Nils (Daniel, Carl). None is from 1687-91 |
+| works 1687-1691 naming Ehrenstein/Ehrensteen/Guldenstolp*/Gyldenstolp* (free text) | 0 | -- |
+| persons named Bernsdorf*/Bernstorf* | 2 | Andreas Gottlieb von Bernstorff, 1649-1726 (2 works addressed to him); Johann Hartvig Ernst (1712-1772) |
+| works linked to A. G. von Bernstorff | 2 | E. S. Cyprian to Bernstorff, 11 Sep 1719 and 25 Feb 1722: drafts at Forschungsbibliothek Gotha, Chart. A 425 and Chart. A 301. Not 1689 and not the Celle ministry |
+| Wallis cipher books catalogue, years present | 53 works, 1641-1658 only | no 1688-90 item, so no Wallis decipherment of this letter is catalogued in EMLO |
+
+Repositories and shelfmarks, read from the manifestation records. The Gyldenstolpe family manuscripts are held at
+**Uppsala universitetsbibliotek, Nordin collection** (sample: `Nordin 469:71`; the 1692/1699 letters are in `Nordin
+469` and `Nordin 470`; 206 Nordin shelfmarks among Uppsala's 300 EMLO manifestations). They are not at Riksarkivet,
+which GAPS114 had assumed. The printed copies are Sarasti-Wilenius 2015 (Latin letters of the Gyldenstolpe brothers,
+1661-1680) and Ström 2017. The `bibo_Note` field is empty on every Uppsala manifestation (0 of 300 carry one). The
+cipher, key and shelfmark information therefore comes from the work and manifestation fields above, not from a note.
+
+Found: the EMLO Gyldenstolpe corpus is the brothers' letters to Nils, almost all from 1661-1680, held at Uppsala
+(Nordin 469-470). It contains nothing from 1688-90, nothing from or to an Ehrensteen, and nothing that mentions a
+cipher or key. EMLO's Lars Philip Ehrensteen record adds his Ottersberg (Bremen-Verden) command, which is consistent
+with GAPS114's Lüneburg/Bremen service but does not settle the 1689 rank. EMLO has no Bernstorff material from 1689.
+Not found in EMLO: any sibling letter, key or decipherment for SP 8/6/65. This is a search result, not a novelty
+verdict (rule 10).
+
+Where a sibling would sit, named from these results only (none of them searched this pass):
+1. Uppsala UB, Nordin collection: the volumes next to Nordin 469-470, in case Nils Gyldenstolpe's incoming
+   letters for 1688-90 continue beyond what EMLO catalogues. EMLO's own coverage stops at 1680, so the volume list
+   in Uppsala's catalogue (Alvin / the UUB manuscript catalogue) is the place to check whether Nordin 469-470 run
+   into 1689.
+2. NLA Hannover (Celle Br. / Bernstorff Nachlass), unchanged from GAPS114. EMLO adds nothing for 1689 on the
+   Bernstorff side; its only Bernstorff manifestations are at Gotha and date from 1719-22.
+
+Requests: emlo.bodleian.ox.ac.uk 25 (Solr select, ~1.6 s apart). No vision, no subagents.
+
+Next cheapest step: check Uppsala UB's manuscript catalogue (Alvin, plain search) for the contents and date range
+of Nordin 469-470 and the neighbouring Nordin volumes holding Nils Gyldenstolpe's correspondence from 1688-90.
+Web/API only, about USD 1. Then the Arcinsys Niedersachsen search for the Bernstorff/Celle side (browser tool,
+about USD 2). The letter itself remains a copy order (REQUEST.md, `digitised: false`).
