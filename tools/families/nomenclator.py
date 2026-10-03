@@ -1001,16 +1001,316 @@ def solve_grammar(cipher_msgs, spec, seed, restarts, corpora, params):
     return dec, best_score, info
 
 
+# ---------------------------------------------------------------- vocabulary-prior, one-part-by-decade (H73)
+# H73 (3 Oct 2026, ciphers/armstrong-madison-1808/h73/PREREGISTRATION.md): Tomokiyo's "learn the vocabulary of a
+# sibling code", taken as an ORDER constraint. `vocab_order=1` assumes the book is one-part at decade level: the
+# target's decades, sorted by value, map in the same order onto one sibling maker's alphabetical whole-word list
+# (`prior=WE028|THE972`), and every value of a decade takes a word from that decade's window of the list
+# (`win` entries from the decade's base position). Moves: a per-value move inside the window and a whole-decade
+# block shift, both keeping every position of decade k below every position of decade k+1; particles are a Gibbs
+# move over the siblings' short-word entries that are also en18 function words. Score: the same word-trigram LM,
+# the duplicate penalty and the slot-order term. The control (`make_control_vocab`) re-encodes Bourdeau's
+# decodes of Armstrong's 15 and 22 Feb 1808 letters (words rebuilt from syllable fragments by `rebuild_words`)
+# into a synthetic code whose book is the OTHER sibling's list (`book=THE972|WE028`), alphabetical blocks of
+# `block` (6) entries per decade, members ranked by en18 frequency onto the target's slot order, decades on a
+# seed-dependent increasing subset of 10..199. `thin` (0-1) drops prior entries that are true book words until
+# that token coverage remains (the realistic-overlap control). Two-part (vocabulary only) is NOT offered: it is
+# ARM-C1's soft prior with one knob turned (prereg, same-instrument check).
+TABLES = {"WE028": "WE028.tsv", "THE972": "THE972_bourdeau.tsv"}
+CONTROL_LETTERS = ["armstrong_1808-02-15.txt", "armstrong_1808-02-22.txt"]
+
+
+def table_words(name, vocab):
+    """alphabetical whole-word entries of a sibling table that the LM knows (len >= 2)."""
+    out = set()
+    for line in open(os.path.join(CODES_DIR, TABLES[name]), encoding="utf-8"):
+        parts = line.rstrip("\n").split("\t")
+        if len(parts) >= 2 and parts[0].isdigit():
+            w = parts[1].strip().lower()
+            if re.fullmatch(r"[a-z]+", w) and len(w) >= 2 and w in vocab:
+                out.add(w)
+    return sorted(out)
+
+
+def rebuild_words(text, vocab):
+    """Bourdeau decode -> words. `{nnnn}` (unread) -> '*'; adjacent fragments are joined when the joined string is a
+    vocabulary word and not every fragment is one already (DP over each run, longest-known-word first)."""
+    text = re.sub(r"^==.*==\s*$", " ", text, flags=re.M)
+    raw = re.findall(r"\{\d+\}|[A-Za-z]+", text.replace("?", "").replace("*", ""))
+    out, run = [], []
+
+    def flush():
+        n = len(run)
+        best = [(0, None)] * (n + 1)
+        best[0] = (0, [])
+        for i in range(1, n + 1):
+            cands = []
+            for j in range(max(0, i - 6), i):
+                s = "".join(run[j:i])
+                if best[j][1] is None:
+                    continue
+                if i - j == 1:
+                    sc = 1.0 if s in vocab else 0.0
+                elif s in vocab and not all(f in vocab for f in run[j:i]):
+                    sc = 1.0 + 0.5 * (i - j)
+                else:
+                    continue
+                cands.append((best[j][0] + sc, best[j][1] + [s]))
+            best[i] = max(cands, key=lambda x: x[0])
+        out.extend(best[n][1])
+        run.clear()
+
+    for t in raw:
+        if t.startswith("{"):
+            flush()
+            out.append("*")
+        else:
+            run.append(t.lower())
+    flush()
+    return out
+
+
+def make_control_vocab(spec, seed, corpora, params):
+    rng = random.Random(seed * 104729 + 73)
+    lm = get_lm(corpora, _p(params, "vocab_min", 3))
+    ranked = [w for w, c in sorted(lm.freq.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab]
+    tgt = _split(params.get("target_msgs") or [])
+    n_coded = sum(1 for k, v in tgt if k != "W") or _p(params, "N", 369)
+    slot_order = slot_order_from(tgt) if tgt else SLOT_ORDER_DEFAULT
+    words = []
+    for f in params.get("letters") or CONTROL_LETTERS:
+        words += rebuild_words(open(os.path.join(CODES_DIR, "decodes", f), encoding="utf-8").read(), lm.vocab)
+    plist = ranked[:30] + [c for c in "abcdefghijklmnopqrstuvwxyz" if c not in ranked[:30]]
+    plist += [w for w in ranked[200:] if w not in plist and len(w) > 1][:99 - len(plist)]
+    pvals = list(range(1, 100))
+    rng.shuffle(pvals)
+    key = dict(zip(plist[:99], pvals))
+    blist = [w for w in table_words(params.get("book", "THE972"), lm.vocab) if w not in key]
+    bsz = _p(params, "block", 6)
+    blocks = [blist[i:i + bsz] for i in range(0, len(blist), bsz)]
+    decs = sorted(rng.sample(range(10, 200), min(len(blocks), 190)))
+    for d, blk in zip(decs, blocks):
+        for slot, w in zip(slot_order, sorted(blk, key=lambda w: (-lm.freq[w], w))):
+            key[w] = 10 * d + slot
+    cipher, plain, classes, last_wild, coded, oov = [], [], [], False, 0, 0
+    for w in words:
+        if coded >= n_coded:
+            break
+        if w in key:
+            v = key[w]
+            cipher.append(str(v)); plain.append(w); classes.append("P" if v < 100 else "B")
+            coded += 1; last_wild = False
+        else:
+            oov += 1
+            if not last_wild:
+                cipher.append("*"); plain.append("*"); classes.append("W"); last_wild = True
+    _LAST_CONTROL["classes"] = classes
+    btoks = [int(t) for t in cipher if t.isdigit() and int(t) >= 100]
+    bwords = [w for w, k in zip(plain, classes) if k == "B"]
+    cnt = Counter(t for t in cipher if t != "*")
+    prior = table_words(params.get("prior", "WE028"), lm.vocab)
+    pset = set(prior)
+    _LAST_CONTROL["stats"] = {
+        "coded": coded, "distinct": len(cnt), "singletons": sum(1 for c in cnt.values() if c == 1),
+        "particle_tokens": classes.count("P"), "book_tokens": len(btoks), "distinct_book": len(set(btoks)),
+        "oov_words": oov, "wild_tokens": classes.count("W"), "book_list": len(blist), "blocks": len(blocks),
+        "slot0_share": round(sum(1 for v in btoks if v % 10 == slot_order[0]) / max(1, len(btoks)), 3),
+        "prior_list": len(prior), "book_list_in_prior": round(len(pset & set(blist)) / max(1, len(blist)), 3),
+        "book_token_coverage": round(sum(1 for w in bwords if w in pset) / max(1, len(bwords)), 3),
+        "plain_words": len(words)}
+    print(f"  control build: {_LAST_CONTROL['stats']}")
+    return [cipher], " ".join(plain), corpora
+
+
+def solve_vocab(cipher_msgs, spec, seed, restarts, corpora, params):
+    lm = get_lm(corpora, _p(params, "vocab_min", 3))
+    toks = _split(cipher_msgs)
+    n = len(toks)
+    prior = table_words(params.get("prior", "WE028"), lm.vocab)
+    thin = float(params.get("thin", 0) or 0)
+    if thin and params.get("_truth_book"):  # realistic-overlap control only: drop true book words from the prior
+        rng0 = random.Random(seed * 31 + 7)
+        tb = [w for w in params["_truth_book"] if w in set(prior)]
+        tw = Counter(params["_truth_book"])
+        cov_all = sum(tw.values())
+        drop, have = set(), sum(tw[w] for w in set(tb))
+        for w in sorted(set(tb), key=lambda x: rng0.random()):
+            if have / cov_all <= thin:
+                break
+            drop.add(w); have -= tw[w]
+        prior = [w for w in prior if w not in drop]
+    fwset = set(sorted(lm.vocab, key=lambda w: -lm.freq[w])[:_p(params, "fw", 120)]) | set("abcdefghijklmnopqrstuvwxyz")
+    sib = set()
+    for nm_ in TABLES:
+        sib.update(table_words(nm_, lm.vocab))
+    plist = sorted((fwset & sib) | set("abcdefghijklmnopqrstuvwxyz"), key=lambda w: (-lm.freq[w], w))
+    P = [w for w in prior if w not in plist] if params.get("drop_particles_from_book", 1) else prior
+    slot_order = slot_order_from(toks)
+    slot_rank = {d: slot_order.index(d) for d in range(10)}
+    bsz = _p(params, "block", 6)
+    book_est = int(params.get("book_size") or 0) or bsz * len({v // 10 for k, v in toks if k == "B"})
+    win = max(bsz, int(round(2 * bsz * len(P) / max(1, book_est))))
+    sweeps, greedy = _p(params, "sweeps", 30), _p(params, "greedy", 3)
+    T0, T1, dup_w, slot_w = _p(params, "T0", 1.5), _p(params, "T1", 0.25), _p(params, "dup_w", 2.0), _p(params, "slot_w", 0.3)
+    occ = defaultdict(list)
+    for i, (k, v) in enumerate(toks):
+        if k != "W":
+            occ[v].append(i)
+    pvals = sorted(v for v in occ if v < 100)
+    decs = sorted({v // 10 for v in occ if v >= 100})
+    members = {d: sorted(v for v in occ if v >= 100 and v // 10 == d) for d in decs}
+    K = len(decs)
+
+    def lmsum(ws, idx):
+        s = 0.0
+        for i in idx:
+            a = ws[i - 2] if i >= 2 else "<s>"
+            b = ws[i - 1] if i >= 1 else "<s>"
+            s += lm.lp3(ws[i], a, b)
+        return s
+
+    def touched(vals):
+        idx = set()
+        for v in vals:
+            for i in occ[v]:
+                idx.update(j for j in (i, i + 1, i + 2) if j < n)
+        return sorted(idx)
+
+    def slot_term(d, pos):
+        s, ms = 0.0, members[d]
+        for x in range(len(ms)):
+            for y in range(x + 1, len(ms)):
+                r1, r2 = slot_rank[ms[x] % 10], slot_rank[ms[y] % 10]
+                f1, f2 = lm.freq[P[pos[ms[x]]]], lm.freq[P[pos[ms[y]]]]
+                if r1 != r2 and f1 != f2:
+                    s += slot_w if ((r1 < r2) == (f1 > f2)) else -slot_w
+        return s
+
+    def word_of(v, pos, pw):
+        return pw[v] if v < 100 else P[pos[v]]
+
+    def dup_pen(wc):
+        return -dup_w * sum(c - 1 for c in wc.values() if c > 1)
+
+    best = (None, -float("inf"), None, None)
+    rkeys, rscores = [], []
+    for r in range(max(1, restarts)):
+        rng = random.Random(seed * 7919 + r + 73)
+        pw = {}
+        for i_, v in enumerate(sorted(pvals, key=lambda v: -len(occ[v]))):
+            pw[v] = plist[i_] if i_ < len(plist) else rng.choice(plist)
+        pos, base = {}, {}
+        span = max(1, len(P) - win)
+        for k, d in enumerate(decs):
+            base[d] = int(round((k + 0.5) / K * span))
+            offs = rng.sample(range(win), min(win, len(members[d])))
+            for v, o in zip(members[d], offs):
+                pos[v] = min(len(P) - 1, base[d] + o)
+        # repair to strict decade order
+        last = -1
+        for d in decs:
+            for v in sorted(members[d], key=lambda v: pos[v]):
+                if pos[v] <= last:
+                    pos[v] = last + 1
+                last = max(last, pos[v])
+        for v in pos:
+            pos[v] = min(pos[v], len(P) - 1)
+        ws = [UNK if k == "W" else word_of(v, pos, pw) for k, v in toks]
+        wc = Counter(word_of(v, pos, pw) for v in occ)
+
+        def bounds(k):
+            lo = max((pos[v] for v in members[decs[k - 1]]), default=-1) if k > 0 else -1
+            hi = min((pos[v] for v in members[decs[k + 1]]), default=len(P)) if k + 1 < K else len(P)
+            return lo, hi
+
+        def pick(cands, scores, T):
+            if T > 0:
+                m = max(scores)
+                return rng.choices(range(len(cands)), [math.exp((s - m) / T) for s in scores])[0]
+            return max(range(len(cands)), key=scores.__getitem__)
+
+        def set_word(v, w):
+            wc[ws[occ[v][0]]] -= 1
+            wc[w] += 1
+            for i in occ[v]:
+                ws[i] = w
+
+        total = sweeps + greedy
+        for sw in range(total):
+            T = T0 * (T1 / T0) ** (sw / max(1, sweeps - 1)) if sw < sweeps else 0.0
+            # particles
+            order = list(pvals); rng.shuffle(order)
+            for v in order:
+                idx = touched([v]); cur = ws[occ[v][0]]
+                cands, scores = [], []
+                for w in plist:
+                    set_word(v, w)
+                    cands.append(w); scores.append(lmsum(ws, idx) - dup_w * max(0, wc[w] - 1))
+                set_word(v, cands[pick(cands, scores, T)]); pw[v] = ws[occ[v][0]]
+                _ = cur
+            # decades: block shift, then per-value moves
+            korder = list(range(K)); rng.shuffle(korder)
+            for k in korder:
+                d = decs[k]; ms = members[d]
+                lo, hi = bounds(k)
+                pmin, pmax = min(pos[v] for v in ms), max(pos[v] for v in ms)
+                deltas = [x for x in range(lo + 1 - pmin, hi - pmax) if abs(x) <= win]
+                if len(deltas) > 1:
+                    idx = touched(ms); old = {v: pos[v] for v in ms}
+                    scores = []
+                    for x in deltas:
+                        for v in ms:
+                            pos[v] = old[v] + x; set_word(v, P[pos[v]])
+                        scores.append(lmsum(ws, idx) + slot_term(d, pos) + dup_pen(wc))
+                    x = deltas[pick(deltas, scores, T)]
+                    for v in ms:
+                        pos[v] = old[v] + x; set_word(v, P[pos[v]])
+                for v in rng.sample(ms, len(ms)):
+                    others = [pos[u] for u in ms if u != v]
+                    lo2, hi2 = bounds(k)
+                    a_ = max(lo2 + 1, (max(others) - win + 1) if others else lo2 + 1)
+                    b_ = min(hi2 - 1, (min(others) + win - 1) if others else hi2 - 1)
+                    cands = [p for p in range(max(0, a_), min(len(P) - 1, b_) + 1) if p not in others]
+                    if len(cands) < 2:
+                        continue
+                    idx = touched([v]); scores = []
+                    for p in cands:
+                        pos[v] = p; set_word(v, P[p])
+                        scores.append(lmsum(ws, idx) + slot_term(d, pos) + dup_pen(wc))
+                    p = cands[pick(cands, scores, T)]
+                    pos[v] = p; set_word(v, P[p])
+            if len(lm.cache) > 3_000_000:
+                lm.cache.clear()
+        sc = lmsum(ws, range(n)) + dup_pen(wc) + sum(slot_term(d, pos) for d in decs)
+        print(f"    restart {r}: score {sc:.1f}")
+        key = {str(v): word_of(v, pos, pw) for v in occ}
+        rkeys.append(key); rscores.append(round(sc, 2))
+        if sc > best[1]:
+            best = (key, sc, r, dict(pos))
+    key = best[0]
+    dec = " ".join(key[str(v)] if k != "W" else "*" for k, v in toks)
+    info = {"family": "nomenclator", "mode": "vocab_order", "prior": params.get("prior", "WE028"), "prior_list": len(P),
+            "particle_prior": len(plist), "win": win, "book_est": book_est, "block": bsz, "thin": thin,
+            "seed": seed, "restarts": restarts, "sweeps": sweeps, "greedy": greedy, "decades": K,
+            "best_restart": best[2], "score_per_token": best[1] / max(1, n), "restart_keys": rkeys,
+            "restart_scores": rscores}
+    return dec, best[1], info
+
+
 _solve_plain, _make_control_plain = solve, make_control
 
 
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):  # noqa: F811
+    if int(params.get("vocab_order", 0) or 0):
+        return solve_vocab(cipher_msgs, spec, seed, restarts, corpora, params)
     if int(params.get("slot_grammar", 0) or 0):
         return solve_grammar(cipher_msgs, spec, seed, restarts, corpora, params)
     return _solve_plain(cipher_msgs, spec, seed, restarts, corpora, params)
 
 
 def make_control(spec, seed, corpora, params):  # noqa: F811
+    if int(params.get("vocab_order", 0) or 0):
+        return make_control_vocab(spec, seed, corpora, params)
     if int(params.get("slot_grammar", 0) or 0):
         return make_control_grammar(spec, seed, corpora, params)
     return _make_control_plain(spec, seed, corpora, params)
