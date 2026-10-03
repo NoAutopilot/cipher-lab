@@ -7291,3 +7291,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:52 | GAPS172-pollaky-1865-1875 (account-4) | claim: gap 1 print step on pollaky-1865-1875, cap USD 3, box 30 min
 2026-10-03 16:53 | GAPS173-zeschau-seebach-1841 (account-4) | claim: ciphers/zeschau-seebach-1841 Next step; files NOTES.md, REQUEST.md
 2026-10-03 16:53 | VERIFY-ROU121 (account-4 verifier) | claim: naf14913-rousseau-venice-1743 key row 121=s (FT4z) -- re-run ft4z_pool.py other seed n80, power check, prereg audit, independent 121 witnesses; script only; cap USD 3, box 16:54-17:24 UTC
+2026-10-03 16:53 | VERIFY-MANT (account-4) | claim: verifier sachsstaatsarchiv-manteuffel-1712 f.410 reading (GAPS162/166): re-derivation, control audit, tx spot check, novelty -> AUDIT.md; cap USD 6, box 16:54-17:39 UTC
