@@ -201,9 +201,9 @@ Read so far: unmeasured for the target as a whole: this folder holds no transcri
 - [ ] known-keys: Done: Bodley's R8497 key was tried and is a different alphabet. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no row for this target (their only Walsingham row is bowes-walsingham-1583), and design_prior.py has not been run. Not tried: the Elizabethan English keys DECODE catalogues for 1586-88, which no one in this repo has opened (R337 SP 106/1 f.74, 1588; R330 SP 106/1 f.50, 1587; R8367 Harley 290 f.256, 1588; R1819/R3822/R3823 SP 12/193 no.54, 1586; R338/R328/R933 SP 106/1, undated; R9260-R9262 Add MS 4136, 1560-1587; keys-all-2026-09-28-merged.tsv). One of them could be Burghley's April 1588 cipher for Cobham (Cryptiana elizabeth.htm l.536). Cobham's 25 May 1588 code-word list is word-for-word (l.539) and is unlikely to give numeric codes. The Wilkes key (BL Add MS 5935) for Needham was not consulted. Done 2 Oct 2026 (A2-HAR, second spawn): R337 (TNA SP 106/1 f.74, Croft's 1588 key: different alphabet, codes 100/60/20/50 for persons) and R8367 (Harley 290 f.256, a Davison-era code list: 42 = puritanes, 60 = Parma) give no value for 42, 22, 27, the square or the f.11 groups. Planned: the remaining catalogued keys (R330, R1819/R3822/R3823, R338/R328/R933, R9260-R9262) in one login, ~$2.5, then run design_prior.py
 - [x] print: no printed decipherment and no clear duplicate found. Searched: CSP Foreign vol.21 pt.3 pp.197-217 and pt.4 pp.199-212, read by us with a control name on each page (this NOTES.md, 25 Sept 2026); CSP Foreign vol.21 pt.4 March and May-June 1588 (Bourdeau); web, Cryptiana, DECODE status fields and Aymeloglu (23 and 25 Sept 2026). The vol.22 HTRC candidate page (scan 62) is unread, but vol.22 covers July-Dec 1588, after the latest letter (9 June). The print search for the Jesuit's name is a separate gap above
 - [ ] key-rebuild: Done by Bourdeau: the harley287 key was built by hand from clear-text cribs; for cobham1588, solve.py (word candidate sets, CSP 1588 word list, up to 2 edits) was run with loop 1 on f.88 only (cobham1588/NOTES.md l.175-190, Escalation). Done 2 Oct 2026 (NEXT-HAR): solve.py on the third-pass f.80r-81r, f.92r 1-10 and f.96v strings with the loop-1 values and -=b: 0 of 45 unread groups read; 5+ sign groups hit at the shuffled-null rate (0.125 vs 0.114) against a known-answer control of 0.877 rank-1 clean, 0.065 at 40 % sign error, so the bottleneck is the transcription or the sign values, not the word list. Done 2 Oct 2026 (A2-HAR4): rerun with A2-HAR3's reported constraints 8 in {c,d} and chi(X) = y: 0 of 45 unread groups changed (12 contain X or 8); 5+ sign groups 0.125 vs null 0.116, control 0.898 rank-1 clean; X = y is a non-test because solve.norm folds y into i. A third value-only pass is not proposed (rule 3); the next solve.py run waits on a sign-by-sign transcription. Not tried: a joint search over all runs with tools/homophonic_anneal.py, fixing the values from signs.tsv, after the R8491/R8494 glosses. tools/data has no Elizabethan English corpus (en16_repo is Thurloe, 1650s), so one would have to be built first (rule 3 era lesson). That search needs a matched control, and any negative from it is conditional on Bourdeau's transcription (rule 2), ~$5
-- [ ] image-check: this project has never seen a Harley 287 image; the folder holds no images and no transcription. Bourdeau read from DECODE full-resolution crops but kept no glyph-level transcription of ff.70r-72v, and f.96r/f.97r have none in runs.txt. Full-size DECODE access has been open to the project account since 28 Sept 2026 (ASKS 42). Planned: a two-pass sign-by-sign transcription of ff.70r-72v (~$22) and of f.96r/96v/97r (~$11), plus the line-G eye-check on f.39v (~$1.5), all from one login, with images kept in the scratchpad only
+- [ ] image-check: this project has never seen a Harley 287 image; the folder holds no images and no transcription. Bourdeau read from DECODE full-resolution crops but kept no glyph-level transcription of ff.70r-72v, and f.96r/f.97r have none in runs.txt. Full-size DECODE access has been open to the project account since 28 Sept 2026 (ASKS 42). Planned: a two-pass sign-by-sign transcription of ff.70r-72v (~$22) and of f.96r/96v/97r (~$11), plus the line-G eye-check on f.39v (~$1.5), all from one login, with images kept in the scratchpad only Update A2-HAR6 (3 Oct 2026): R8491 f.84r and R8494 f.90r pair crops are now in images/f84r, images/f90r (the glossed leaves, not the unread ones); the unread leaves still have none.
 - [ ] retry: Bourdeau's word-by-word full-resolution re-reading was done once for ff.80r, 81r, 92r and 96v and up to three times for f.88. Evidence: first pass; second pass at commit a3159f02; third pass at commit dcf0b032 (reading_ff80_92_96_full.md). His Escalation line "[ ] retry: not done" is out of date for that re-read. No gate was set, so rule 3's third-attempt clause does not retire it formally, but a fourth word-by-word re-read of f.88 is not proposed. What is untried is a different instrument: a blind sign-by-sign two-pass transcription (tools/reconcile_passes.py) and a rerun of solve.py with the key extended by the sibling glosses. Planned: rerun every unread run that way once the R8491/R8494 glosses and the transcriptions are in, then regrade
-Verdict: keep going: 10 internal gaps; cheapest next: redo A2-HAR3's R8491 f.84r / R8494 f.90r gloss-to-glyph mapping (its output was never pushed; A2-HAR4, 2 Oct 2026) in one DECODE login, commit gloss_pairs.tsv before any analysis, then tools/interlinear_align.py with a shuffled-alignment control, ~$7.5; the constrained solve.py rerun is done (no group read; chi = y untestable by solve.py), so no further value-only solve.py pass before a sign-by-sign transcription; the remaining catalogued keys for codes 42/22/27/f.11 (~$2.5) can ride the same DECODE login
+Verdict: keep going: 10 internal gaps; cheapest next: the R8491 f.84r / R8494 f.90r gloss transcription, now with crops, sign code, run_align.py (two controls) and a known-answer check all on main (A2-HAR6, 3 Oct 2026). Two blind passes into gloss/passA.tsv and passB.tsv from images/f84r and images/f90r (recut f.90r per cipher run first), reconcile into gloss/gloss_pairs.tsv, push it, then python3 gloss/run_align.py. Must run where the passes can write their files: A2-HAR6's passes were refused at the write by auto mode, ~$5.
 
 ## Web and blog check (GF-A2-2, 2 Oct 2026)
 
@@ -346,3 +346,49 @@ Next (the cheapest step that restores the lost input): redo A2-HAR3 and push it.
 full-size into the scratchpad, `tools/iiif_lines.py --image` line crops, gloss and cipher pairs written to
 `ciphers/harley-287-1587/gloss_pairs.tsv` and **committed before any analysis**, then interlinear_align.py with a
 shuffled-alignment control. About 5 calls at ~$1.5 (A2-HAR3 spent 5.95), ~$7.5.
+
+## Step A2-HAR6, 3 Oct 2026: pair crops and pipeline pushed; both blind passes refused at the file write
+
+Brief: .claude/briefs/runs/2026-10-03-acct2-a2-har6.md (LANE-A2PUSH2, account 2). Intake gate output, pasted before the work:
+
+    $ python3 tools/intake_gate_check.py harley-287-1587
+    harley-287-1587: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+    EXIT 0
+
+Done and on origin/main (each push checked with git log origin/main):
+- **Images.** One DECODE browser login (`tools/decode_browser_login.js 8491 images/decode --fetch-page RecordsView/8494
+  --guess-fullsize --max-files 20`, loggedIn true). All six full-size images came back real, with the same sha1s as A2-HAR
+  and A2-HAR5 (`images/decode_sha1.txt`). The 73 MB of full-size images are not committed; `images/README.md` says how to
+  re-fetch them. The saved RecordsView pages were deleted before the commit, so nothing carried the account name.
+- **Crops (commit 791beeec).** `images/f84r/` holds 15 gloss+cipher pair bands x 2 segments, cut with `tools/iiif_lines.py
+  --centres` set by eye, because the auto profile merged lines 6-7. `images/f90r/` holds 7 auto-detected three-line bands
+  x 2 segments, overlapping. The exact commands are in `images/README.md`.
+- **Pipeline (commit a6442f53).** `gloss/run_align.py`'s sign table was changed from A2-HAR5's undocumented shape code to
+  Bourdeau's documented code (the `solver/runs_bourdeau.txt` legend). A second, length-preserving control was added: each
+  pair keeps its own gloss, with the letters shuffled. That control can differ from the target on the consistency
+  statistic, because shuffling changes which letter sits over which sign.
+  `gloss/known_answer.py` checks the pipeline on a known answer: 11 synthetic pairs of the same shape (the f.84r gloss
+  wording, a random 28-sign key, 10% sign error). They read consistency **0.919**, against the pair-shuffled null at
+  mean 0.271, max 0.309, and the letter-shuffled null at mean 0.233, max 0.246. The tool can separate a real gloss from
+  both nulls at this size.
+- `gloss/PASS_PROMPT.md` is the blind-pass instruction.
+
+Not done: **`gloss_pairs.tsv` does not exist.** Two blind Sonnet passes (A and B) read every crop (44 images each) and
+drafted 46 and 35 rows. In both, the session's auto-mode safety check refused the one command that would have written
+the TSV, with the message that the check "could not evaluate" the action and that a retry or a reworked attempt would be
+refused the same way. Neither pass tried another route. I did not re-spawn the passes or write their drafts into the
+repository myself, since that would route around the refusal. So there is no reconciliation and no interlinear_align run
+on real data. Both passes reported low confidence:
+- On f.90r, the gloss-to-run pairing was ambiguous, because glosses sit above, below or between the cipher rows and the
+  three-line bands overlap.
+- On f.84r, several first signs and the s1/s2 overlap zones were unclear.
+
+Changes to the next attempt from that report:
+- Cut f.90r per cipher run (`--region` per run, gloss included), not in three-line bands.
+- Run the passes in a session where the write is allowed, outside auto mode or in a fresh session as the passes
+  suggested.
+
+Token grades: no token read (H 0, C 0, S 0, M 0, I 0). No reading changed, no judge run.
+Requests: de-crypt.org 1 login + 1 RecordsView (in the login call) + 13 fetches (1 RecordsView page, 12 images), 1.5 s
+apart, no 403/429. No other host. Vision calls: 2 blind passes (no output kept) + about 8 single-image reads by this worker
+to set crop centres.
