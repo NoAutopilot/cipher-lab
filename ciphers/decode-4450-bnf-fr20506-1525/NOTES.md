@@ -589,3 +589,71 @@ decode-2754). Next cheap test: none by cryptanalysis (Bourdeau's matched-control
 ~3,900 groups); the cheap step is material -- read the *Novarien* 1990 / Pietro Martire 1992 passage (Google
 Books snippet, ~$0.5) for where Gattinara's chancery cipher tables (Valdés, Rotulo) survive, i.e. Ranzo's table
 or a clear copy, the blocker Bourdeau names.
+
+## FT4: Novarien 1990 lead and a Molini 1836 clear-copy claim (account-4, 3 Oct 2026)
+
+Worker FT4-decode-4450-bnf-fr20506-1525 (account-4), 01:07-01:3x UTC. Intake gate run first: `decode-4450-bnf-fr20506-1525:
+open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Job: GF4-BATCH3's cheap step,
+"read Novarien 1990 snippet on Gattinara cipher handlers for Ranzo table/clear copy". **Result: no key table and no clear
+copy of this letter or its archetype (fr.2988 f.9) found. The Novarien lead is a false positive. Status stays `open`.**
+
+**1. Novarien 1990 / Pietro Martire 1992: false positive.** Google Books API (`country=US`, key) returns the full snippet:
+"... 1528 faceva da intermediario fra Gaspare Rotulo e Alonso de Valdés, segretario del Gattinara, per la **cifra di 468
+ducati e 244 maravedís**. Altro operatore di Borsa è Tomaso Fornari ... ASV - FAG ... Ranzo, cameriere di Mercurino Arborio
+di Gattinara, relativo alle entrate e alle spese del periodo 13 agosto 1527 - 31 maggio 1529, visto e saldato dal
+segretario Alfonso de Valdés". Here *cifra* means a sum of money, not a cipher, and the Ranzo document is an **account**
+(receipts and expenses, 13 Aug 1527 to 31 May 1529) in ASV-FAG (Archivio di Stato di Vercelli, Fondo Arborio di
+Gattinara). It is not a cipher table. The 1982 Vercelli conference volume *Mercurino Arborio di Gattinara, gran cancelliere
+di Carlo V* (GB id 7pkfAAAAMAAJ, no preview) describes the same item in its archive inventory: "1524-1529 (e 1522). Conti di
+Gerolamo Ranzo, cugino di M., concernenti quanto da lui operato come cameriere di M. (cc. 33)". This tells us that
+Gattinara's family papers survive at Vercelli (ASV-FAG). No snippet shows a cipher table there; queries for
+cifrario/cifre/"in cifra"/"lettere cifrate" together with Gattinara or the archive returned 0 hits (queries below).
+
+**2. Molini 1836: an old claim of a French "interpretation", checked and set aside.** Molini, *Documenti di storia
+italiana* vol. 2, "Omessi di copiare" (archive.org `documentidistor02moligoog` djvu, l.1031-1037; the same entry in
+`00moligoog` l.1086), under the old number 8513 (= fr.2988): "A c. 1. Lunga lettera tutta in cifra, firmata Hieronimo
+Ranzo. A c. 4 dello stesso volume sta la sua interpretrazione in francese, colla data di Roma 15 Dicembre 1526. Ivi a c. 9
+è altra lettera dello stesso parimente in cifra, ma senza l'interpetrazione." LANE CX's 25 Sept read of Molini missed this
+entry: its OCR breaks the name ("^ieroni>no/?afi«o"). Two points:
+- **Molini himself says the archetype of our copy (c. 9) has no interpretation.** That agrees with every later source.
+- For the c.1 letter, the 1868 BnF *Catalogue des manuscrits français* (Google Books snippet) describes f.4 as
+  "Double de lettres escriptes en chiffre par NICOLAS RAINCE ... De Romme, xve decembre 1526": a clear copy of letters
+  that the French envoy Raince had sent in cipher. It is not a decipherment of a letter signed by Ranzo. I looked at
+  Gallica `btv1b9059908w`, views 8-13 (600 px), and one crop of view 13. View 8 is blank; f.4r (view 9, stamped "4")
+  through view 13 hold about 4.5 pages of **clear French** in one cursive hand. The view 13 crop reads as Rome news
+  addressed to "Monseigneur" ("Le cardinal qui fut Colonne ... à Naples au conseil ... citations ... contre Sa S^te ...
+  Monseigneur, vous ay bien voulu advertir"). This is the voice of the French envoy in Rome writing to Montmorency.
+  Ranzo's code encodes **Italian**: Bourdeau's addition sheet `additione.json`, from fr.3022 f.50, reads "apresso", "cosa",
+  "al garbino". Ranzo also writes from the Imperial side. Molini's pairing of c.1 with c.4 is therefore most likely
+  his own guess from the two items sitting next to each other in the volume. (This is grade I: inferred from the
+  language, the voice and the catalogue title, with no token-level test.) In any case it bears on f.1-2, not f.9/f.136.
+  Bourdeau's `vasto1527/NOTES.md` (fresh sparse clone, 3 Oct 2026) never mentions f.4 or Raince.
+- A cheap test that would settle the f.2 question, not run here (outside this brief, and it needs a transcription of
+  f.4r-6r, about 1,100 words): Ranzo's code is an initial-letter code. If f.4 rendered f.2r-v (Bourdeau's
+  `ranzo_c006/007`, 834 groups), the base letters of f.2 would track the initials of the French words, compared against
+  a shuffled-pairing control (rule 3). The language argument above predicts a negative. The estimated cost is about $3
+  (2 transcription passes on line crops plus 1 reconciliation, Usage 6). Even a positive result would key Ranzo's
+  f.2 letter, not this one directly, though the shared code would carry over to f.9/f.136. Suggestion only.
+
+**No matched test run:** nothing was found that could serve as a key table or as a clear copy of this letter, so there
+was nothing to test against a control.
+
+Queries (Google Books API, `country=US`, key): `"Ranzo" Gattinara 1528 cifra` (2: Pietro Martire 1992, Novarien 1990,
+NO_PAGES); `Rotulo Valdés cifra Ranzo` (2, same); `Novarien Ranzo cifra` (1); `"Ranzo" Gattinara cifre OR cifrario OR "in
+cifra" OR chiffre` (0); `"Arborio di Gattinara" archivio Vercelli cifrario OR cifre OR "in cifra"` (0); `"Ranzo" Gattinara
+"cameriere"` (9: 1982 Vercelli volume, Cibrario 1861 x5, Memorie Accad. Torino 1897; all household offices, none about a
+cipher); `"gran cancelliere di Carlo V" Gattinara cifra OR cifre OR zifra OR "in cifra"` (4, irrelevant: wine statistics,
+bibliographies); `"Gerolamo Ranzo"` (no items); `"Girolamo Ranzo" cifra OR zifra OR cifre` (211, top 8 are Soranzo
+false positives); `Gattinara archivio "lettere in cifra" OR "lettere cifrate" OR "alfabeto" cifra 1528` (0); `"Hieronimo
+Ranzo" cifra OR zifra OR chiffre OR "en chiffre"` (12: the 1868 BnF catalogue fr.2988 entry, Molini 1836). Internet
+Archive advancedsearch `Novarien` (0) and `Ranzo cifra Gattinara` (0): the journal is not on IA, so there is no be-api
+full text to search.
+
+Requests: googleapis.com 12; archive.org 4 (2 advancedsearch, 2 `_djvu.txt`); gallica.bnf.fr 8 (1 manifest via
+`tools/gallica_folio.py`, 6 views at 500 px, 1 crop), all 200, >=1.6-2 s apart; github.com 1 (sparse clone of cyphersolver
+`targets/vasto1527`, grepped, not committed). Vision calls: 2 (contact sheet of views 8-13; view 13 crop). Rule 10: these
+are search results, not a novelty verdict.
+
+Next step for this target: the blocker stays Bourdeau's "no-key-material". New material could come from an inquiry to
+ASV Vercelli, Fondo Arborio di Gattinara, asking whether the chancellor's papers hold cipher tables for 1527-29
+(owner-side, an outreach draft). The cheaper desk-side option is the optional f.2/f.4 initial-letter test above (~$3).
