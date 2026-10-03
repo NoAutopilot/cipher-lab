@@ -73,6 +73,7 @@ fr.3995 nos.48-51 not testable (symbol-only, max coverage 0.409). Next: fr.3995 
 **Update, A1B-VILL-57-44, 3 Oct 2026:** (k) no.44's symbols (f162) carry no registered target sign (Delta SAME-class only, 5 tokens). (j) no.57's table is canvas f200: 22-letter symbol-homophone header + figure syllables 1-72, doubles 73-96, nomenclator 100-353; two blind readers agree on 9 target sign designs (keys/key_f200_no57_signs.tsv, M) but they cover 0.116 of the target (< 0.5, not testable, no score). Next: (l) read no.57's Sillabes/Lettres doubles grid (two blind reads, ~$5), then the coverage test; (d), (e') stand.
 **Update, A1B-VILL-ASSENT, 3 Oct 2026:** (d) as-sent search: no 16 Aug 1595 original was found on Villeroy's side. The closest is Bibliothèque de l'Institut, Godefroy 262 (Villeroy's secretariat file), nos.144-145: Nevers to Villeroy and to the King, "16 septembre" 1595, "Lettre en partie en chiffres" (SHF Annuaire-bulletin 1865 inventory, p.116). This is either a sibling cipher letter or our letter misdated (unsettled, M). It is not digitised (ASKS 123). Next: fr.3994 f.131 (Nevers's copy of Godefroy 145) on Gallica, to check whether it is in clear, which would give a plaintext pair, ~$1; then (l), (e').
 
+**Update, A1B-VILL-TX2, 3 Oct 2026:** (e') second pass measured. Bourdeau's ct_*.txt omits two whole cipher lines of f.148v (L09 "Car en 1214 1020 ...", L10 "2120793 ...": 64 signs by pass B), and on the 770 shared columns the two readers split 16.8% (> 10%, so no third machine pass; split pairs in tx2/focus_pairs.tsv for the owner's sorter, ASKS row). Bourdeau's per-sign error vs a blinded adjudication: 0.047 (95% 0.024-0.214) on the signs he read, plus 64/834 = 0.077 omitted. Every prior negative's control ran the target at 0% transcription error, so none brackets this: they are conditional on an incomplete pass, not design exclusions. Next: (e'') the owner's sorter on the split pairs, then a reconciled ciphertext with L09-L10 restored before any family is re-run.
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (catalogue item 277; `nevers1595/`
 working folder — full transcription, matched-control solver ladder across six unit models, Gomberville tome-2
 full-text search), CC BY 4.0 — prior attempt (not a solution). S. Tomokiyo, cryptiana *League* page (cited via
@@ -881,3 +882,56 @@ or in cipher, with one heading crop through `tools/iiif_lines.py`.
 
 Requests this pass: archivesetmanuscrits.bnf.fr 24, gallica.bnf.fr 4, www.googleapis.com 16, archive.org 7,
 bibnum.institutdefrance.fr 2, calames.abes.fr 3. Rule 10: a search result, not a novelty claim.
+
+## Measured second transcription pass (A1B-VILL-TX2, LANE-A1B, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-tx2.md`; pre-registered in `tx2/PREREG-VILL-TX2.md` (commit ded91100, before
+pass B). Pass A = Bourdeau's `bourdeau/ct_*.txt` (753 signs). Pass B = one blind Sonnet read per page block, label legend only.
+Crops (committed in `images/tx2/` with manifest and debug overlays, overlays checked; three regions re-cut after the first overlay):
+
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 161 --region 3800,880,3750,260  --out <scratch> --prefix f148r_A --max-width 2400 --overlap 150 --debug
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 161 --region 4300,4450,3300,900 --out <scratch> --prefix f148r_B --max-width 2400 --overlap 150 --debug
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 162 --region 600,480,3280,1300  --out <scratch> --prefix f148v_A --max-width 2400 --overlap 150 --debug
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 162 --region 600,2190,3280,330  --out <scratch> --prefix f148v_B --max-width 2400 --overlap 150 --debug
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 162 --region 4380,1360,3200,700 --out <scratch> --prefix f149r_A --max-width 1800 --overlap 200 --debug --distance 100 --lines-per-crop 8 --top-margin 40
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 162 --region 4380,3050,3200,760 --out <scratch> --prefix f149r_B --max-width 1800 --overlap 200 --debug --distance 90 --lines-per-crop 8 --top-margin 40
+
+(f.149r is cut as two-half blocks: its lines slope enough that fixed-y and `--follow-slope` line bands dropped a run tail.)
+
+**Omission found.** Pass A has no tokens for two cipher lines of f.148v: L09 (after "Car en", 24 signs by B) and L10 (whole line,
+40 signs by B; B's top-of-line read is low confidence, crop clipped). `tx2/passB_omitted_by_A.tsv`. Bourdeau's 753 is therefore
+about 817-834 signs on the leaf. These lines were held out of the agreement figure below.
+
+**Agreement** (`tools/reconcile_passes.py tx2/passA.tsv tx2/passB.tsv --method nw`, one row per page; B's "0" normalised to the
+legend's "o", 2 tokens): 641/770 columns = 0.832, **err_2reader 0.168** (f.148r 0.860, f.148v 0.804, f.149r 0.824). Over the 0.10
+gate: no third machine pass (TRANSCRIPTION.md). Split pairs, most frequent: 2/R 9, #/K 7, C/c 6, R/x 6, 1/i 6, V/w 5, V/W 5
+(`tx2/focus_pairs.tsv`, 52 pairs, 101 substitutions; 28 indels besides).
+
+**Settled sample** (pre-registered: seed 3993, 40 disagreement columns stratified ss 18 / ds 9 / indel 9 / dd 4, plus 20 agreed
+columns). Settled by one blinded Sonnet adjudicator on the same native crops (candidates shown in random order, pass identity
+hidden; brief allowed 1-2 calls, the worker's own vision was kept for the overlays). `tx2/settle_score.py` (`--check` exits 0)
+-> `tx2/settle_score.tsv`:
+
+| | A right | A wrong | cannot | note |
+|---|---|---|---|---|
+| disagreements (39; S50 o/0 notation excluded) | 18 | 7 | 14 | indels 6 of 9 cannot |
+| agreed (20) | 20 | 0 | 0 | |
+
+**Bourdeau per-sign error, err_adjudicated = 0.047 (95% 0.024-0.214)** on the signs he read (d 0.168 x 0.28 [0.143-0.476] +
+0.832 x 0.0 [0-0.161], corner bound), plus **0.077 omitted** (64/834). Pass B on the same basis: 0.121. This is error against a
+model adjudication, not `err_true`: there is no known answer for this hand, so no BENCHMARK-TX.tsv row (that file needs an
+independent known answer). Caveats: 36% of sampled disagreements could not be settled (biased toward indels, which A loses 2 of 3
+where settled); the adjudicator is a Sonnet reader like pass B, and the agreed sample of 20 cannot exclude hidden error above 0.16.
+
+**Rule 3 bracket (SALV-DIAG lesson).** Every prior negative on this target used the target transcription as exact: the family_run
+controls (A1-VILL-HOMO, A1B-VILL-PAIR, HYPOTHESES.md) and Bourdeau's own hsolve/hsyl controls enciphered clean synthetic text; the
+"reader err" column of the strip/table power gates (0.015-0.152) is the key-table reader's error, not the target's. So **no prior
+control brackets the target's measured error** (0.047 point, up to 0.21 upper, plus the 7.7% omission, which also breaks
+run-length/segmentation assumptions on f.148v). The negatives stand as conditional on Bourdeau's pass, not as design exclusions.
+
+Vision: 6 own image reads (2 page-locating views, 4 overlay/crop check sheets), 4 Sonnet subagent
+calls (3 reads + 1 adjudication). Requests: gallica.bnf.fr 18 (2 info.json, 2 page views, 14 region fetches).
+
+Verdict after A1B-VILL-TX2: `open`. Next: (e'') the owner settles the split pairs (#/K, 2/R, C/c, R/x, 1/i, V/W/w) in a sign sorter
+built from `images/tx2/` (ASKS row), then a reconciled ciphertext with f.148v L09-L10 restored; re-run families only after that,
+with controls injected at the measured error (~0.05-0.2).

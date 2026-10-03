@@ -1,0 +1,61 @@
+id	page	context_before	candidates	context_after
+S01	f148r	C 3 2 o W P	p (confirm or correct)	1 7 5 h X 4
+S02	f149r	2 1 R C m D	W | (no sign: the passes differ on whether a sign exists here)	T l L H U V
+S03	f148v	d N Q 2 1 3	2 (confirm or correct)	6 # K W o 1
+S04	f149r	2 o 1 6 P o	V | w	e U N Q 1 2
+S05	f148r	C R 1 6 y v	R | 2	o o 1 C P 1
+S06	f148v	o 3 1 2 l 1	2 (confirm or correct)	o z 2 1 2 6
+S07	f148v	x A U V 2 3	R | x	h C T x L P
+S08	f148r	4 1 9 4 d C	t (confirm or correct)	N d R T 2 o
+S09	f148r	3 1 9 o d C	R | e	1 6 y v R o
+S10	f148r	1 # 1 6 2 w	w | u	2 o 2 2 7 P
+S11	f148v	4 3 1 2 1 7	4 | (no sign: the passes differ on whether a sign exists here)	C o y c P 9
+S12	f148v	1 2 E x R o	U | v	2 o p N P K
+S13	f148v	o y o o W A	t | (no sign: the passes differ on whether a sign exists here)	H q : 7 2 7
+S14	f149r	2 o 2 1 B W	o | (no sign: the passes differ on whether a sign exists here)	7 7 u 1 2 2
+S15	f148v	2 o z 2 1 2	6 (confirm or correct)	o d 3 1 5 T
+S16	f148v	C c 7 t h W	R | x	2 6 2 f x T
+S17	f148r	7 N y o 6 1	2 (confirm or correct)	d e 7 2 4 1
+S18	f148v	3 1 5 T 1 4	3 | 7	1 2 1 7 4 C
+S19	f148v	1 2 2 1 a x	i | 1	9 4 2 o 3 5
+S20	f148r	8 3 9 X x o	o (confirm or correct)	d T U P V L
+S21	f149r	1 2 9 3 1 4	2 | 1	o 4 1 + 9 3
+S22	f149r	C T o 2 6 8	7 (confirm or correct)	9 2 o o d 4
+S23	f149r	T L K V d R	C | E	T o 2 6 8 7
+S24	f149r	7 3 2 o 7 5	(no sign: the passes differ on whether a sign exists here) | :	R 4 o 2 2 o
+S25	f148v	2 2 K x A U	V | W	2 3 R h C T
+S26	f148r	2 o d W Q 9	h (confirm or correct)	R 1 1 3 1 9
+S27	f148r	h 1 4 q c P	x | R	C l 1 5 U N
+S28	f148v	H q : 7 2 7	1 (confirm or correct)	2 2 1 a x 1
+S29	f148r	x 4 1 q : :	K | #	N 7 1 2 6 2
+S30	f148v	1 W 2 o R 1	(no sign: the passes differ on whether a sign exists here) | 4	9 U 2 o R
+S31	f149r	d o L 4 u U	R | x	C c 1 V 4 1
+S32	f148r	x h 4 w 4 1	1 (confirm or correct)	2 3 K I T N
+S33	f148r	U N Q W 2 V	R | 2	o v L 4 1 9
+S34	f149r	u U R C c 1	W | V	4 1 o 3 1 2
+S35	f148v	y o o W A t	i | H	q : 7 2 7 1
+S36	f149r	V 4 1 o 3 1	2 (confirm or correct)	9 3 1 4 1 o
+S37	f148r	1 6 2 m T o	o | W	1 2 1 # 1 6
+S38	f148r	j : z 1 4 5	K | #	: i 6 4 i 3
+S39	f148r	W P p 1 7 5	h (confirm or correct)	X 4 1 x D k
+S40	f148v	3 2 o T L Q	9 (confirm or correct)	i : Z D Q 1
+S41	f149r	V e U N Q 1	2 (confirm or correct)	1 4 9 5 B T
+S42	f148v	1 7 1 W 2 o	R | (no sign: the passes differ on whether a sign exists here)	1 4 9 U 2 o
+S43	f148v	1 2 1 7 4 C	d | o	y c P 9 2 o
+S44	f148v	l o d V Q o	1 | i	2 E x R o v
+S45	f148r	d c Q V l 1	4 (confirm or correct)	d R C 3 2 o
+S46	f148r	2 o 2 2 7 P	2 | R	o 1 5 1 2 5
+S47	f148r	6 2 m T o W	1 (confirm or correct)	2 1 # 1 6 2
+S48	f148r	K u 1 5 2 C	j | H	x 4 1 q : :
+S49	f148v	W 2 o R 1 4	3 | 9	U 2 o R
+S50	f148r	1 2 L h z o	o | 0	1 9 Q 1 7 o
+S51	f148v	o W A t H q	: (confirm or correct)	7 2 7 1 2 2
+S52	f149r	2 6 8 7 9 2	o | (no sign: the passes differ on whether a sign exists here)	o d 4 1 9 f
+S53	f148r	o U 2 o 8 L	R | x	2 2 1 5 T j
+S54	f149r	2 1 o o R h	i | 1	X 2 4 K A x
+S55	f148v	Q 2 1 3 2 6	# | (no sign: the passes differ on whether a sign exists here)	K W o 1 5 3
+S56	f149r	U 1 2 L 3 1	2 (confirm or correct)	1 R C m D W
+S57	f149r		7 (confirm or correct)	9 1 7 3 2 o
+S58	f149r	o Q e 1 3 5	u | U	1 2 L 3 1 2
+S59	f148r	4 1 9 2 o 7	N | 7	y o 6 1 2 d
+S60	f149r	4 1 9 f 3 l	# | K	D 1 7 6 2 o

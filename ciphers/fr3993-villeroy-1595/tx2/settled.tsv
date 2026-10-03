@@ -1,0 +1,61 @@
+id	verdict	reading	note
+S01	confirm	p	
+S02	opt2	- no glyph between delta and T l (clear text intervenes)	
+S03	confirm	2	
+S04	opt1	V	omega with top bar
+S05	opt1	R	
+S06	confirm	2	
+S07	opt1	R	
+S08	confirm	t	
+S09	opt2	e	two-bowl glyph differs from plain R
+S10	cannot		- second omega-like glyph ambiguous
+S11	cannot		- crop truncated at cipher line
+S12	opt2	v	cup without double bar
+S13	cannot		- glyphs after A unclear
+S14	opt1	o	three circles
+S15	confirm	6	
+S16	opt1	R	
+S17	confirm	2	
+S18	opt1	3	
+S19	cannot		- small glyph ambiguous i/1
+S20	confirm	o	
+S21	opt1	2	
+S22	confirm	7	
+S23	opt2	E	epsilon-like with lead dash
+S24	cannot		- single dot only
+S25	opt1	V	varpi with bar
+S26	confirm	h	
+S27	opt2	R	
+S28	confirm	1	
+S29	opt1	K	double-crossed glyph; K vs # moderate
+S30	cannot		- not located
+S31	opt1	R	
+S32	confirm	1	
+S33	opt1	R	
+S34	opt2	V	moderate
+S35	cannot		- glyphs after A unclear
+S36	confirm	2	
+S37	cannot		- T oo/W joined circles
+S38	opt1	K	moderate
+S39	confirm	h	
+S40	confirm	9	
+S41	confirm	2	
+S42	cannot		- not located
+S43	cannot		- crop truncated
+S44	opt2	i	dotted
+S45	confirm	4	
+S46	opt2	R	
+S47	confirm	1	
+S48	opt2	H	t with cross and hook; j glyph has left bar only
+S49	cannot		- not located
+S50	opt1	o	
+S51	confirm	:	
+S52	opt2	- only one circle before d	
+S53	opt1	R	
+S54	opt1	i	moderate
+S55	cannot		- single glyph, K/# identity unsettled
+S56	confirm	2	
+S57	confirm	7	
+S58	cannot		- u vs U unclear
+S59	opt1	N	
+S60	cannot		- overwritten glyph

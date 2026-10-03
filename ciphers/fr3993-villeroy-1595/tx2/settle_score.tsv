@@ -1,0 +1,20 @@
+stat	value
+columns	770
+agree	641
+err_2reader	0.168
+agr_A_right	20
+dis_A_right	18
+dis_A_wrong	7
+dis_cannot	14
+excluded_notation	1
+p_dis_A_wrong	0.28
+p_dis_ci	0.143-0.476
+p_agr_A_wrong	0.0
+p_agr_ci	-0.000-0.161
+err_adjudicated_A	0.047
+err_A_ci95	0.024-0.214
+err_adjudicated_B	0.121
+stratum_dd	A_right=1 A_wrong=1 cannot=1
+stratum_ds	A_right=4 A_wrong=2 cannot=3
+stratum_indel	A_right=1 A_wrong=2 cannot=6
+stratum_ss	A_right=12 A_wrong=2 cannot=4
