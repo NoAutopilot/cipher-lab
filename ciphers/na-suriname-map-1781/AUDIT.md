@@ -583,3 +583,12 @@ GAPS23's registered Regrade rule as stated (clause (i) yes; clause (ii) 6/6, and
 --check exit 0. GAPS23's gate re-run unchanged gives 0.765 (88/115) vs N1 p99 0.452 / N2 p99 0.278, PASS, identical to
 GAPS56 (the gate counts H only). Not new evidence. No second-opinion row is filed for this target. Blockers for stage 9 are
 unchanged (LOCAL-QUEUE L36, L41 queued). Re-class (if any) stays with a separate verifier (VERIFY5, when L36/L41 land).
+
+[GAPS64-na-suriname-map-1781, solver, account-4, 3 Oct 2026 -- item 4 propagation note, not a verifier pass.] Reading
+revised in 1 token: L10:66 (unkeyed [sigma], transcription M, decoded U) -> value e from the 2078 Nota entry b
+("Artillerie", final e), under GAPS23's registered Regrade rule as stated (clause (i) binds M only; clause (ii) 6/6;
+`passes/nota2078_gaps64/decide_l1066.tsv`). Its exceptions row is C, but decode_key caps it at M by its transcription conf,
+as with L11:17. 2077 is H 538 C 10 M 61 U 49, --check exit 0. GAPS23's gate re-run unchanged gives 0.765 (88/115) vs
+N1 p99 0.461 / N2 p99 0.270, PASS, same pooled score as FT4k (the gate counts H only). Not new evidence. The same class
+[sigma] now aligns to i (L11:17) and e (L10:66); both stay M. No other APPLY token is undecided. No second-opinion row is
+filed for this target. Stage 9 blockers unchanged (LOCAL-QUEUE L36, L41). Re-class (if any) stays with VERIFY5.

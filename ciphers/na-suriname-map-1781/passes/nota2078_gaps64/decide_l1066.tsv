@@ -1,0 +1,4 @@
+variant	value	grade	aligned_2078	clause_i	clause_ii	action	context
+A_as_stated	?	U	e	yes	yes	APPLY	L10:63=e(H)->e L10:64=r(H)->r L10:65=i(H)->i L11:0=c(H)->c L11:1=a(H)->a L11:2=s(H)->s
+B_C_counted	?	U	e	yes	yes	APPLY	L10:63=e(H)->e L10:64=r(H)->r L10:65=i(H)->i L11:0=c(H)->c L11:1=a(H)->a L11:2=s(H)->s
+C_gaps45_state	?	U	e	yes	yes	APPLY	L10:63=e(H)->e L10:64=r(H)->r L10:65=i(H)->i L11:0=c(H)->c L11:1=a(H)->a L11:2=s(H)->s
