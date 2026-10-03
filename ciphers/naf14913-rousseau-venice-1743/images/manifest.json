@@ -1974,5 +1974,14 @@
    "file": "lowres/sheet_250_274.jpg",
    "note": "same, vision call 2"
   }
- ]
+ ],
+ "ft4j_sweep_270_280": {
+  "date": "2026-10-03",
+  "by": "FT4j (account-4)",
+  "size": "1000 px wide",
+  "url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f{canvas}/full/1000,/0/native.jpg",
+  "canvases": "553-558 (270r-272v), 564-574 (275v-280v); 559-563 (273r-275r) are FT4b/FT4h files",
+  "offset": "canvas = page index + 14 (gallica_folio.py: f15-f592 1r..289v, k=14)",
+  "contact_sheet": "lowres/sheet_270_280.jpg (22 pages, 380 px tiles)"
+ }
 }
