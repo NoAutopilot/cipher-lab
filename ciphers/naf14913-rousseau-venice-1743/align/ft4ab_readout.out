@@ -1,0 +1,8 @@
+PAIR A F206+F216V release ['338'] pins ['#SEP', '121', '22', '581', '66']: exact True
+  readout R338 (F206 side): complete; feasible 8 ['t', 'ienttout', 'enttout', 'nttout', 'ttout', 'tout', 'ut', 'out']; UNIQUE False
+  readout 338 (F216V side): complete; feasible 1 ['tou']; UNIQUE True
+PAIR B F206+S1 release ['347', '534'] pins ['#SEP', '121', '22', '581', '66']: exact True
+  readout R347 (F206 side): complete; feasible 4 ['con', 'scon', 'uscon', 'luscon']; UNIQUE False
+  readout 347 (S1 side): complete; feasible 12 ['xconf', 'xconfi', 'x', 'xc', 'xco', 'xcon', 'xconfinsdumi', 'xconfinsdum', 'xconfinsdu', 'xconfinsd', 'xconfin', 'xconfins']; UNIQUE False
+  readout R534 (F206 side): complete; feasible 9 ['hes', 'attaches', 'ches', 'ttaches', 'aches', 'taches', 'es', 's', 'sattaches']; UNIQUE False
+  readout 534 (S1 side): complete; feasible 1 ['che']; UNIQUE True
