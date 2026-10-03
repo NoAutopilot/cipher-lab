@@ -1,0 +1,68 @@
+ITEM 1
+CIPHER DECODE: n f s q u h l h e e e n t e u [?] p l u s o s t e s e t q o u u
+PRINT: j'ay incontinent escript et mandé à une bonne partie de mes Capitaines qu'ilz ayent au plus tost à se trouver ès environs de Tiel pour estre en ces quartiers-là vous recepvoir,
+
+ITEM 2
+CIPHER DECODE: s t a u s o n t u o f a f f a [?] r e s p a r d e l et sur ce brief
+PRINT: diligence me veuillez au vray et tout ouvertement mander en quelle estat sont voz affaires par delà, et si en brieff vous ferez quelque assamblée, joinctement quel secours nous
+
+ITEM 3
+CIPHER DECODE: s d e s q u e l f m e u e f [?] f e i c u o u u f s t u r e _
+PRINT: debvoirs que vous faictes sans cesse, mais pour aultant que plusieurs moyens desquelz m'avez faict ouverture et lesquelz j'ay trouvé bien bon, sont toutesfois tirez en grande longueur,
+
+ITEM 4
+CIPHER DECODE: x o u t r o i s d i u e r s [?] e s u o i e s _ les p
+PRINT: ceste veue je puisse avoir absolute response de vous, et plustost par deux ou trois diverses voies. Depuis ce que dessus, est icy arrivé le présent porteur avec une lettre de mon frère
+
+ITEM 5
+CIPHER DECODE: g g o m l o f e r f o _ e t g [?] t r e s n e g e s s i g e s l
+PRINT: estroict pour la cavallerie, et toutesfois nous donnerons ordre de vous accommoder de bateaux et autres nécessités, le plus que sera possible, espérant aussy d'y aller moy-mesme.
+
+ITEM 6
+CIPHER DECODE: a n d e i s n o z f o s c e s [?] d e i s t a s s e z b a s n e
+PRINT: Eyndhoven, je ne fauldroye de y aller, comme aussy je ferois chasse plus grande, mais noz forces ne sont assez bastantes. Messeigneurs. Estant son Excellence ceste nuyct pour quelque
+
+ITEM 7
+CIPHER DECODE: t i r e r o i i maintenant auecq peu de peyne [?] h o r s e n n e m i e s t
+PRINT: actions est requise et que ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses
+
+ITEM 8
+CIPHER DECODE: u e t s o g g k h e r h u i e [?] l x q u o n p e u l t l quant au
+PRINT: pour eulx, et nous viendroit mal à propos. Or il le fault remectre à Dieu et soy aider du mieulx qu'on peult. Quant au Rittmaistre Schenk, il a par diverses fois esté sommé de passer
+
+ITEM 9
+CIPHER DECODE: s _ _ a s s e z e s t r o i c [?] p o u r l a uingt cheuaulxlegiers e t t o u t e
+PRINT: en ces quartiers-là vous recepvoir, oires que je crains que le pays y est assez estroict pour la cavallerie, et toutesfois nous donnerons ordre de vous accommoder de bateaux
+
+ITEM 10
+CIPHER DECODE: i e u l p q b o n p e u l t l [?] quant au sr eschange le escript a dordrecht ce _ apuril _ q u a
+PRINT: viendroit mal à propos. Or il le fault remectre à Dieu et soy aider du mieulx qu'on peult. Quant au Rittmaistre Schenk, il a par diverses fois esté sommé de passer oultre avecq ses
+
+ITEM 11
+CIPHER DECODE: n u r e _ g r a u e e t s n [?] ie uous affaires e t a y a n t r e c
+PRINT: venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer que voz lettres me sont esté plus que bien venues pour la peine
+
+ITEM 12
+CIPHER DECODE: p u i s l a r e n d k t i o n [?] d u d i c t harlem a r e c e u t
+PRINT: faulte de secours, pourroyent tomber entre ses mains; puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si grand escorne , perte, honte,
+
+ITEM 13
+CIPHER DECODE: n f r e s o s t r e f h e p _ [?] e n t r e _ g r e s e e s s
+PRINT: délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer que voz lettres me sont esté plus que bien
+
+ITEM 14
+CIPHER DECODE: g b o n s e c o u r s n o u s [?] t i r e r o i i maintenant auecq peu de peyne _
+PRINT: considérer combien la diligence en noz actions est requise et que ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies
+
+ITEM 15
+CIPHER DECODE: n t r e _ g r e s e e s s n [?] le bien de franoix lestat tant de ma sante que de bos affaires
+PRINT: venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel. Je vous puis asseurer que voz lettres me sont esté plus que bien venues pour la peine
+
+ITEM 16
+CIPHER DECODE: s o i e n t tomber entre bos mains puis que lui [?] b e p u i s l e r e n d k t
+PRINT: feroit aux aultres qui, par faulte de secours, pourroyent tomber entre ses mains; puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si
+
+ITEM 17
+CIPHER DECODE: o s t e z qui me faut encores fois uous prier que uingt [?] i n c o n t i n e n t c e s t
+PRINT: descouragées, désunies et esparses de tous costez; que me faict aultre fois vous prier que incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux ou
+

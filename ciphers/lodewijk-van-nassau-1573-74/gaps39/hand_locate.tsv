@@ -1,0 +1,15 @@
+letter	line	pos	code	kind	slot	decision
+5810	05810_p5_L08	1	140	band	-	drop: cipher leaves the print after "grand bruit" (print goes on "bruict par deça quant à la difficulté", cipher "le temps et la saison"); the right context matches only ~2950 print letters earlier, so no single print spot
+5810	05810_p6_L32	14	142	band	2515	left anchor ends "...peu de paine"; print goes on "hors de tous maulx"; cipher goes on "hors ennemies": slot between paine and hors
+5810	05810_p7_L02	5	149	band	2633	both anchors agree with gap 0: "vous prier que | incontinent"
+5811	05811_p1_L09	17	150	band	285	left anchor ends "...chemyn entre Grave et"; cipher "s n [?] ie uous" against print "Thiel, je vous"; slot inside/after Thiel
+5811	05811_p5_L08	2	139	band	270	left anchor ends "...prendre vostre che"; cipher "...f h e p _ [?] entre" against print "chemyn entre"; slot at the end of chemyn
+5811	05811_p5_L08	19	150	band	284	left anchor ends "...entre Grave et"; cipher "s n [?] le bien" against print "Thiel, je vous puis"; slot after Thiel
+5810	05810_p5_L08	2	138	cnull	-	drop: same spot as 140 above
+5810	05810_p5_L08	5	122	cnull	-	drop: same spot as 140 above
+5811	05811_p5_L13	19	127	cnull	509	both anchors, gap 0
+5811	05811_p2_L14	7	130	cnull	1045	both anchors, gap 0
+5810	05810_p7_L06	7	29	cletter	2716	left anchor 45, gap 0
+5811	05811_p5_L21	5	38	cletter	685	left anchor ends "accommoder"; cipher "e t g [?] t r e s" against print "de bateaux et autres"
+5811	05811_p2_L31	13	2	cletter	1597	left anchor ends "nozforces"; print "ne sont assez"
+5811	05811_p1_L22	13	32	cletter	622	left anchor ends "estroic"; print "estroict pour la cavallerie"
