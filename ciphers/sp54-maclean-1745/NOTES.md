@@ -236,18 +236,57 @@ correspondence, a year later. This is inferred, not checked against the image.
 Requests this job: be-api.us.archive.org 10 (fts, 1.6 s apart; one 502, not retried), archive.org 2 (Memorials djvu,
 Origins djvu; refetches, since the earlier session's copies were not on this container's disk). No WebSearch.
 
-## Remaining gaps (FT4-sp54-maclean-1745, 3 Oct 2026)
-Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk)
+## FT4b-sp54-maclean-1745 (3 Oct 2026, account-4): Lyon in Mourning vol. 1 read in full text
+
+**Route.** `archive.org/download/.../_djvu.txt` still returns HTTP 500, but the same file on the item's own data server
+does not: `https://ia800504.us.archive.org/18/items/lyoninmourningor01forbuoft/lyoninmourningor01forbuoft_djvu.txt` (the
+server and dir come from `archive.org/metadata/lyoninmourningor01forbuoft`) returned HTTP 200, 1,040,716 bytes, 19,538
+lines, printed pp. up to 382 (sha256 prefix fbf8d549dfd19b81; not committed, re-fetch by that URL). The whole volume was
+grepped after collapsing OCR whitespace. This is a full-text read by script, OCR-dependent, not a page-by-page read by eye.
+
+**Hits (whole volume).** Linlithgow 0; Burnet 3 (all Burnet of Monboddo, or Burnet's Close, Edinburgh; none is the Prince's
+alias); Barclay 2 (James Barclay in Elcho's men; R. Barclay of Dorking, an SHS list entry); "cypher" 3, "cipher" 0; Mac Lean 1,
+Castlehill 1, Blaw 0; Duke of Perth 22; Lord John Drummond 8; Murray of Broughton 7; Wednesday 11; voyage 16; signal(s) 3
+(none about the Prince's signals); intercept 2 (an unsigned letter produced at a 1746 trial, and a 1746 escape); Traquair 0;
+Balhaldy (all spellings) 0; Rotterdam 1 (an SHS list entry).
+
+- The three "cyphers" passages (pp. 99 and 311-312, foll. 177, 556-557) are 1746 French letters in cipher to the French
+  ambassador, which the Prince could not read. They are not SP 54/25/5 or 8B.
+- The one Mac Lean/Castlehill passage (p. 320, foll. 574-576) is the 1747 *Petition of George, Lord Rutherford* (Forbes's
+  note: George Durie of Grange, a disputed claimant to the title). He says he told the ministry at the end of April 1745
+  that a rising was planned, and that he "did upon the fifth of June last cause apprehend Sir Hector Mac Lean and George
+  Blair [i.e. Blaw] of Castlehill, by three o'clock in the morning, being informed they were to set out by five o'clock for
+  the Highlands of Scotland in order to raise all the clans they could influence". This is the passage the fts snippet
+  showed on 3 Oct; it now has a page. It is the informer's own account, and it says nothing of the papers' content.
+- No decipherment, clear copy or abstract of the letters seized on 5 June 1745 is printed in vol. 1. With vols 2 and 3
+  (25 Sept 2026), all three volumes of *The Lyon in Mourning* have now been searched by full text with no such print.
+  So the print-risk gap for this edition is closed as a search result: 0 hits, OCR-conditional, not a novelty verdict
+  (rule 10). The status word stays `open`; found-solved does not apply.
+
+**Crib list additions** (grades as in the FT4 table: C for what the source states, I for what we infer about the seized papers):
+
+| crib | where stated | grade for "in the seized papers" |
+|---|---|---|
+| "Highlands", "clans", raising the clans; a departure set for 5 a.m. on 5 June | Lyon vol. 1 p.320 (Rutherford petition) | C for the informer's account of the errand; I for the cipher letters |
+| end of April 1745 as the date the ministry was first warned | same page | C (petition); not expected in the letters |
+
+The planned crib test in the FT4 section is unchanged and still not run, because no ciphertext is on disk.
+
+Requests this job: archive.org 1 (metadata) and 2 (`/download/` page index and searchtext, both HTTP 500, not retried);
+ia800504.us.archive.org 1 (djvu.txt, 200). 2 s or more apart. No vision calls, no WebSearch.
+
+## Remaining gaps (FT4-sp54-maclean-1745, 3 Oct 2026; updated FT4b, 3 Oct 2026)
+Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk). Print risk, Lyon in Mourning vols 1-3: all searched in full text, the last on 3 Oct 2026 (FT4b); none prints the seized letters
 - SP 54/25/5 and 8B ciphertext - blocker: waiting-on ASKS row 57 (TNA page copy, REQUEST.md); not digitised on Discovery
-- print risk: Lyon in Mourning vol. 1 read only by fts snippets - blocker: not-attempted; vol. 1 reachable by be-api fts but the djvu file 500s; next: be-api fts for "Burnet" (502 today), "Drummond", "Perth" plus a person's read in the IA reader if a hit lands, ~$1
+- print risk: Browne's *History of the Highlands* vol. ii appendix (prints a "J. Barclay" letter, per the Memorials p.101 note) is unread - blocker: not-attempted; no session has looked for the volume yet; next: archive.org advancedsearch for Browne's History vol. ii, then grep its djvu for Barclay/Burnet/Maclean, ~$0.5
 - item-level description of SP 54/25/5 (are the "Barclay" letters among the three?) - blocker: not-attempted; the While waiting step of 3 Oct names it and nobody has run it; next: tools/discovery_items.py "SP 54" "SP 54/25", ~$0.5
 
 ## Escalation (FT4-sp54-maclean-1745, 3 Oct 2026)
 - [n/a] siblings: no sibling cipher letter on disk; the 1744 Murray-Burnet letters are in print only (Origins pp.60-66), used as known keys below
 - [x] clear-pages: Memorials pp.134-137, 157 give the Barclay letters' clear content (crib table above)
 - [ ] known-keys: Blaikie's printed 1744 Murray-Burnet numeric groups (Origins pp.60-66) are the planned overlap test, waiting on the transcription
-- [ ] print: Lyon vol. 1 fts for "Burnet", "Drummond", "Perth"; Browne's History vol. ii appendix (prints a "J. Barclay" letter, Memorials p.101 note) unread
+- [ ] print: Lyon in Mourning vols 1-3 all searched in full text (vol. 1 on 3 Oct 2026, FT4b), with no print of the seized letters; still unread: the appendix of Browne's History vol. ii (it prints a "J. Barclay" letter, per the Memorials p.101 note)
 - [n/a] key-rebuild: no ciphertext on disk to rebuild a key against
 - [n/a] image-check: no image of SP 54/25 is available; waiting on TNA copy
-- [ ] retry: Lyon vol. 1 "Burnet" fts query (502 on 3 Oct), once, on a later day
-Verdict: keep going: 2 internal gaps; cheapest next: tools/discovery_items.py "SP 54" "SP 54/25" for the item description, ~$0.5
+- [x] retry: the Lyon vol. 1 "Burnet" query is superseded by the full djvu read (3 Burnet hits, none is the alias)
+Verdict: keep going: 2 internal gaps; cheapest next: tools/discovery_items.py "SP 54" "SP 54/25" for the item description, ~$0.5; then the Browne vol. ii appendix grep, ~$0.5
