@@ -54,7 +54,7 @@ not about the accuracy of every word.
 - Plaintext as read (B): "la he dicho que solo desseo uer aca a V.Sª, i ella lo dessea harto, i se lamenta de uer los
   tiempos que corren, i me enuio el pesame delo de Siguença, porque hubo del mui buenas esperanças; i muchas ueces no
   pueden, i otras ueces no se atreuen a ablar al duque con ueras ... i assi no ai sino paciencia i hacer lo que
-  pudieremos conforme a los tiempos." (C1): "... i le besaua las manos. Estas dos cossas he hecho por ser tan
+  pudieremos comforme a los tiempos." (C1): "... i le besaua las manos. Estas dos cossas he hecho por ser tan
   conuinientes en esta occassion ... suplico a V.Sª me perdone quien decirlo a V.Sª pudiendolo callar. Uera V.Sª [?]la
   uerdad que procedo, i con quantos desseos de acertar a seruir a V.Sª i darle gusto en todo-".
 - Distinctive phrases: the 13 in `phrases.txt`; names Sigüenza, Vanegas, Pamplona, Mattheo de Burgos (A block context).
@@ -102,3 +102,10 @@ say "candidate reading" until (a'') the second full blind pass reconciles B/C1 a
 run. Missed by the solvers and now covered: the Staten-Generaal resolutions 1604-1606 and the holding archive's full
 EAD (whose catalogue convention, recording "gedecodeerd"/"sleutel" where present, is good evidence that no
 contemporary decipherment came in with the copy).
+
+**Propagation note, OLD-PASS2 (3 Oct 2026, rule 10 propagation; not a re-audit).** A second full blind pass over the
+B/C1 crops (NOTES.md section 11) changed one B token after settling against the crop: B line 10 `c7nf7rm8` ->
+`c7mf7rm8`, reading "conforme" -> "comforme" (same word, period spelling); the B quotation above and the queued
+SO-OLDEN-2442-BC1 prompt were updated to match. B line 7 `t7d7s` ("todos") is now graded M (first sign G-shaped,
+read as the `l7` ligature by the blind reader). Class and key source unchanged (N3, ours). Per-sign disagreement
+between the two readers: 12.1% (agreement, not accuracy).

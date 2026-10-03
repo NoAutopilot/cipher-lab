@@ -9,6 +9,7 @@ from collections import defaultdict
 
 def norm_tok(t):
     t = t.strip().lower()
+    t = re.sub(r"[,;:\-|' ]", '', t).replace('.^', '^')  # punctuation inside a V.Sa group (PREREG item 2)
     for pat in ('v.sa', 'vsa', '2s^a', '25^a', '2sa', '25a'):
         t = t.replace(pat, '@')
     t = re.sub(r"[,.;:\-|' ]", '', t)

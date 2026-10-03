@@ -828,7 +828,7 @@ pre-verifier steps pass; a ROOM.md `flag VERIFIER WANTED` line was posted for bl
 (whole letter S=246, M=17, I=23 of 286; no H or C: a cryptanalytic result, rule 4). Judge unchanged (FAIL, section 8).
 
 **Next steps, cheapest first (after A2-OLD2):** verifier session on B/C1 (rule 10, separate session); (a'') second full
-blind pass over B/C1 crops, ~$2; (d) era-matched early-17th-century Spanish judge corpus, ~$2; (a') crop-and-read pass on
+blind pass over B/C1 crops, ~$2 [done OLD-PASS2, 3 Oct 2026, section 11: 12.1% per-sign disagreement]; (d) era-matched early-17th-century Spanish judge corpus, ~$2; (a') crop-and-read pass on
 blocks A and C2, ~$4.
 
 ## 10. VERIFY-OLD, 3 Oct 2026: verifier on blocks B/C1 -- N3, key ours; status stays open
@@ -841,3 +841,74 @@ no "gedecodeerd"/"sleutel" note, unlike other entries) and the Resolutiën der S
 Precision note (postmortem): grade S in `reading_meta.txt` rests on the VX-CT03 control for the **key**; the B/C1
 per-token S grades are one reader's image confidence, so outward wording says "candidate reading" until (a'') and (d)
 are run. JSTOR rows (4, families i and ii) and `SECOND-OPINIONS-QUEUE.tsv` row SO-OLDEN-2442-BC1 queued.
+
+## 11. OLD-PASS2, 3 Oct 2026: second full blind pass over the B/C1 crops -- 12.1% per-sign disagreement; one sign changed; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-03-acct1-old-pass2.md` (LANE-A1, account 1), step (a'') only. Intake gate
+(`python3 tools/intake_gate_check.py na-oldenbarnevelt-2442-1605`, 10:22 UTC): `open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Rule, normalisation and figure pre-registered in
+`transcription/PREREG_OLD-PASS2.md` (commit b7772310, pushed before any pass was read).
+
+**Crops (committed, `images/crops_BC1/`, 50 files, 1.1 MB):**
+`python3 tools/iiif_lines.py --image images/002_8de1649f-efac-4956-9dbf-253653e2c7e7.jpg --region 3300,2300,1680,1200 --prefix B --top-margin 25 --bottom-margin 25 --max-width 900 --overlap 120 --out <dir> --debug`
+(B, 11 lines x 2) and
+`python3 tools/iiif_lines.py --image images/006_d027ee45-9cd0-44db-82cd-45ed3575eecb.jpg --region 200,120,2420,900 --centres 70,178,288,412,511,652,770 --prefix C1 --top-margin 30 --bottom-margin 30 --max-width 850 --overlap 120 --out <dir> --debug`
+(C1, 7 lines x 4; line 7 now cut by the tool with eye-given centres instead of by hand).
+
+**Blind pass.** Three subagent calls (B 1-6, B 7-11, C1 1-7), crops only, no key, no reading, no prior transcription;
+notation given: letters as letters, digit-shaped signs as digits, G-shaped ligature `l7`, superscript `^a`. Output
+`transcription/passE_blind_OLDPASS2.tsv` (142 tokens). Diff: `python3 transcription/diff_pass2.py ciphertext.tsv
+transcription/passE_blind_OLDPASS2.tsv` (normalisation of PREREG item 2 on both sides; one ordering fix before the
+final figure: punctuation is stripped before the `2s^a` -> `@` match, so the blind `2s.^a` normalises like `2s^a`, as
+item 2 intends).
+
+**Figure (pre-registered, agreement between two readers, not accuracy -- TRANSCRIPTION.md):**
+
+| block | signs (committed) | disagreements before settling | after settling |
+|---|---|---|---|
+| B | 370 | 51 (13.8%) | 50 (13.5%) |
+| C1 | 252 | 25 (9.9%) | 25 (9.9%) |
+| B+C1 | 622 | 76 (12.2%) | **75 (12.1%)** |
+
+Post hoc (not pre-registered, stated as such): most of B's gap is four systematic look-alike pairs where the blind
+reader named the glyph differently from the committed convention (9/q, f/p long descender, v/r, l/t). Folding those
+four pairs on both sides gives B 7.8% (29/370), C1 9.1% (23/252). This is a description of where the disagreement
+sits, not a replacement for the pre-registered figure.
+
+**Settling (PREREG item 4, by eye on the crops, contact sheets in the scratchpad).** Every disputed token was looked at;
+kept unless the crop clearly supported the blind sign:
+- Changed: B10 `c7nf7rm8` -> `c7mf7rm8` (the third sign has three minims like the `m` of `rm8`; both readers now see m;
+  decodes "comforme", period spelling, same word). Grade S kept.
+- Downgraded to M: B7 `t7d7s` ("todos"): the first sign is G-shaped, like the `l7` ligature of B2/B10/B11; the blind
+  reader read `l787s`. Kept as written, confidence `uncertain`.
+- Kept, crop supports the committed sign: B1 `d8ss87` (double long s), B2 `4rt7`, `t38mp7s`; B4 `h2b7`, `bv8n4s`;
+  B7 `4nd4n` (looped d, blind `84n84n`); B8 `d8 s2 g2st7` (∂, blind `88s2g2sl7`); B9 `d8c3rl8 n4d4`; B10 `q28`,
+  `p2d38r8m7s`; B11 `4 l7s`; C1 L2 `p7r` (long-descender p, blind `b7r`); C1 L3 `q28`, `t8ndr34`; C1 L6 `d8ss87s`;
+  C1 L7 `d8`, `s8r23r`, `g2st7`.
+- Already M before this pass and left M: C1 L1 `b8s424` (image shows a doubled long s, `b8ss424`?), C1 L4 `4ns3`
+  (blind `4nss3`), `s2pl3c7` (two descenders before l: blind `s2ssl3c7`, earlier blind check `52pp3c7`).
+
+**Decode and rule 7.** `python3 scripts/apply_key.py digit_key.json ciphertext.tsv --overrides overrides.tsv --out
+reading.txt --tokens reading_tokens.tsv --meta reading_meta.txt --check` -> `OK: reading.txt matches a fresh decode`.
+Reading change: one word ("conforme" -> "comforme"); carried into AUDIT.md (propagation note) and the queued
+SO-OLDEN-2442-BC1 prompt. Grade counts, whole letter (286 tokens): **S=245, M=18, I=23** (was 246/17/23). No H or C: a
+cryptanalytic result (rule 4).
+
+Judge (rule 7), whole letter:
+```
+python3 tools/judge_plaintext.py specs/na-oldenbarnevelt-2442-1605.json --file ciphers/na-oldenbarnevelt-2442-1605/reading.txt
+FAIL language: score=-1.209, null_p99=-1.986, real_p05=-0.827, real_median=-0.783, mode=both, N=1226
+ok   words: cover=0.798, min=0.5, real_text_median_cover=0.908
+FAIL - na-oldenbarnevelt-2442-1605 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Unchanged in substance from section 8 (-1.204); the corpus is not era-matched (step (d)).
+
+What this does and does not show: a second reader with no key reproduces 88% of the committed B/C1 signs (92% / 91%
+with the four look-alike pairs folded); the single-reader caveat of section 8 is now a two-reader agreement figure,
+still not an accuracy figure (no known-answer benchmark exists for this hand). Not found: no sign where the blind
+reader's reading forced a different word except the m/n of "comforme".
+
+**Verdict: open.** **Next steps, cheapest first (after OLD-PASS2):** (d) era-matched early-17th-century Spanish judge
+corpus (rule 3, es17c/pt18 lessons) before reading the judge FAIL as a verdict, ~$2; (a') crop-and-read pass on blocks
+A and C2 with the settled conventions, ~$4; optional: an owner sign-sorter check of the 9/q, f/p, v/r, l/t and G/t
+pairs on this hand, if a known-answer accuracy figure is wanted for B/C1.
