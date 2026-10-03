@@ -82,4 +82,4 @@ the figure block (`tools/iiif_lines.py --ark btv1b9058240c --canvas 43`), two bl
 transcribe key no.25 from fr.3995 f.50 (~USD 1.5), gate the key on the glossed siblings fr.3416 f.38 and fr.4715 ff.27,
 59, 68, 69 (known-answer control), then apply to f.35; ~USD 7.5. NV-03 (fr.4715 f.38, same key) folds into the same run.
 
-`python3 tools/next_steps.py --wait-only | grep fr3416-nevers-fils-1589` (NV-INTAKE, 3 Oct 2026, 03:29 UTC): no line.
+`python3 tools/next_steps.py --wait-only | grep fr3416-nevers-fils-1589` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.

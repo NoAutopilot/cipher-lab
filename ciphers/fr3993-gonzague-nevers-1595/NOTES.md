@@ -96,4 +96,4 @@ f.130 (one more pass, ~USD 1.5) and apply it with tools/decode_key.py, gated fir
 no.32, or fr.3982 f.51) as known-answer control; ~USD 7.5 total. View the facing page of c81 at native resolution first
 (premise (c) gap).
 
-`python3 tools/next_steps.py --wait-only | grep fr3993-gonzague-nevers-1595` (NV-INTAKE, 3 Oct 2026, 03:29 UTC): no line.
+`python3 tools/next_steps.py --wait-only | grep fr3993-gonzague-nevers-1595` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.

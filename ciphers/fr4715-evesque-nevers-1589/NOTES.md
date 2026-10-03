@@ -86,4 +86,4 @@ written-out decipherment, do the marks gloss the figures, is f.39 its decipherme
 ~USD 1.5 x 3 = ~USD 4.5, or fold into NV-02's run, which needs key no.25 anyway). If it stays open: two blind passes of
 the ~35 figures + reconciliation, then key no.25 with the glossed fr.4715 ff.27, 59, 68, 69 as known-answer control.
 
-`python3 tools/next_steps.py --wait-only | grep fr4715-evesque-nevers-1589` (NV-INTAKE, 3 Oct 2026, 03:29 UTC): no line.
+`python3 tools/next_steps.py --wait-only | grep fr4715-evesque-nevers-1589` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.

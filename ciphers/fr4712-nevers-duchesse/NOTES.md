@@ -98,4 +98,4 @@ both; no.2 only if both fail), then apply with tools/decode_key.py to `ciphertex
 Tomokiyo's 37 numbers and the "♀" sign (~USD 1.5). Expect little power at 37 tokens; a key with full coverage and French
 is the only result that would mean anything.
 
-`python3 tools/next_steps.py --wait-only | grep fr4712-nevers-duchesse` (NV-INTAKE, 3 Oct 2026, 03:29 UTC): no line.
+`python3 tools/next_steps.py --wait-only | grep fr4712-nevers-duchesse` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.
