@@ -604,11 +604,33 @@ for the upper range, `tools/interlinear_align.py`, then 0513 and f.409v can be k
 by token count (0540, 0576, 0549, 0534), whose glosses give the f.468-style independent check of Krauske's table.
 Requests: www.archiv.sachsen.de 9.
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026, GAPS189 3 Oct 2026, GAPS195 3 Oct 2026)
+## GAPS201-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): stride-10 y/n batch, Loc. 694/08 frames 0001-0501
+
+No transcription, no reading. Route as GAPS184/189: frames.tsv full-size URLs on www.archiv.sachsen.de (curl, browser UA,
+1.6 s apart): frames 0001, 0011, ..., 0501 (51) plus the positive control 0528 = **52 requests, all HTTP 200 image/jpeg**,
+4339x3865 each; sha256 prefixes in frame_batch_gaps201.tsv; images kept in scratch only (not committed). Each frame cut to one
+fixed window (2700x1820+760+900, ImageMagick; PIL absent) and scaled to 400 px, two 5x6 contact sheets (26 and 25 frames), each
+with 0528 as the in-sheet positive control. Vision: **3 reads by this worker, no subagents** (1 layout read of 0528 at 800 px to
+place the window, 2 sheets). Sensitivity: the 0528 control (light code block, ~5 lines at the foot of the right page) was only
+**faintly** recognisable at tile size -- weaker than GAPS184's ~500 px sheets -- and the fixed window clips leaves that sit off
+centre (0301, 0311, 0381 show one page), so "clear" below means no code-group line seen, not light cipher excluded.
+
+| class | frames |
+|---|---|
+| possible code groups (gloss and code range not determinable at this size) | 6: 0151, 0241, 0291, 0351, 0391, **0501** (most control-like: several dense lines at the foot of the right page) |
+| clear at this resolution | 44 |
+| archive cover sheet (Beiblatt: "Dieses Archivale umfasst die Blaetter 1-477") | 0001 |
+
+Result: **no frame classified glossed nomenclator-range** -- the screen cannot separate glossed from unglossed or letter-range
+from nomenclator-range at 400 px, so all six positives stay "?". Best new frame: 0501 (ff. ~400, Nov 1712, just before the
+0510-0580 pool). The stride-10 rate (6 possible of 50 in 0011-0501, against 9 of 22 sure in 0513-0576) agrees with the earlier
+reading that cipher concentrates in Nov-Dec 1712. Requests: www.archiv.sachsen.de 52.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026, GAPS189 3 Oct 2026, GAPS195 3 Oct 2026, GAPS201 3 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 47 of 894 report frames inventoried, 13 carry code groups (694/08 0510, 0511, 0579, 0580; GAPS184: 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576); print check closed for now (GAPS180, 3 Oct 2026: NASG, Acta Borussica I, Droysen IV.1, Haake 1902/1926/1939 and Rous 2016 searched with controls, no print of f.410; detail in AUDIT.md)
 - Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
-- f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: open-codes; frame 0528 (ff.422v-423) DONE (GAPS195, 3 Oct 2026: 93 tokens, passes 97.8% agree; per-leaf gate PASS on single-code glosses, S 0.118 vs shuffle p95 0.059, multi-code 0/15 vs p95 0.067; 6 codes into key.tsv, 98 107 754 864 879 C, 877 M; 73/82 conflict with Krauske logged; f.409v U 143 -> 141); the other 13 shared codes have no licensed value; next: more glossed nomenclator-range leaves via the 694/08 0001-0508 stride-10 y/n batch (~$2), then frame 0513 (unglossed, nomenclator) once more codes are keyed
-- Loc. 694/08 and /09 ciphered reports, 847 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 47 inventoried (A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026: 13 cipher, 3 possible; the Nov-Dec 1712 block 694/08 0510-0580 is the pool, ~41% of its frames carry code groups, mostly light); the 9 GAPS184 cipher frames classified (GAPS189, 3 Oct 2026: 7 glossed letter-range, 0528 glossed nomenclator-range, 0513 unglossed nomenclator-range; ranking in frame_rank_gaps189.tsv); next: after the 0528 job, a y/n batch of 694/08 0001-0508 at stride 10 (~$2), and the glossed letter-range frames 0540/0576 for a Krauske check against their glosses (~$5 each)
+- f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: open-codes; frame 0528 (ff.422v-423) DONE (GAPS195, 3 Oct 2026: 93 tokens, passes 97.8% agree; per-leaf gate PASS on single-code glosses, S 0.118 vs shuffle p95 0.059, multi-code 0/15 vs p95 0.067; 6 codes into key.tsv, 98 107 754 864 879 C, 877 M; 73/82 conflict with Krauske logged; f.409v U 143 -> 141); the other 13 shared codes have no licensed value; stride-10 batch of 694/08 0001-0501 DONE (GAPS201, 3 Oct 2026: 51 frames, 6 possible code-group frames 0151 0241 0291 0351 0391 0501, gloss/range not determinable at sheet size, control faint); next: native code-block crops of those 6 frames to classify glossed nomenclator-range (~$3, 2 vision calls), then frame 0513 (unglossed, nomenclator) once more codes are keyed
+- Loc. 694/08 and /09 ciphered reports, 847 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 98 inventoried (A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026: 13 cipher, 3 possible; GAPS201 3 Oct 2026: 51 more at stride 10 in 0001-0501, 6 possible; the Nov-Dec 1712 block 694/08 0510-0580 is the pool, ~41% of its frames carry code groups, mostly light); the 9 GAPS184 cipher frames classified (GAPS189, 3 Oct 2026: 7 glossed letter-range, 0528 glossed nomenclator-range, 0513 unglossed nomenclator-range; ranking in frame_rank_gaps189.tsv); next: native crops of the 6 GAPS201 possible frames (~$3), and the glossed letter-range frames 0540/0576 for a Krauske check against their glosses (~$5 each)
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
@@ -616,13 +638,13 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read)
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
-- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames classified at native (GAPS189, 3 Oct 2026: 8 glossed, 2 nomenclator-range); 0528 transcribed (GAPS195, 3 Oct 2026)
+- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames classified at native (GAPS189, 3 Oct 2026: 8 glossed, 2 nomenclator-range); 0528 transcribed (GAPS195, 3 Oct 2026); 0001-0501 stride 10 screened (GAPS201, 3 Oct 2026: 6 possible, 98 of 894 seen)
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; cheapest next: y/n batch of Loc. 694/08 frames 0001-0508 at stride 10 for further glossed nomenclator-range leaves (the 0528 multi-code glosses did not align, so more single-code glosses are what can key f.409v), ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: native code-block crops of Loc. 694/08 frames 0501, 0391, 0351, 0291, 0241, 0151 (GAPS201 possible code-group frames) to classify glossed nomenclator-range vs letter-range, ~$3, 2 vision calls
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Haake/Wackerbarth print check done (GAPS180). Frame inventory batch done (GAPS184: 26 frames, 9 cipher); the 9 classified (GAPS189). Frame 0528 transcribed and aligned (GAPS195). Depends on nobody: stride-10 y/n batch of 694/08 0001-0508, ~$2.
+- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Haake/Wackerbarth print check done (GAPS180). Frame inventory batch done (GAPS184: 26 frames, 9 cipher); the 9 classified (GAPS189). Frame 0528 transcribed and aligned (GAPS195). Stride-10 batch done (GAPS201: 6 possible). Depends on nobody: native crops of the 6 GAPS201 possible frames, ~$3.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 
