@@ -166,10 +166,59 @@ search result about the edition, not a finding about the item.
 
 Requests: archive.org (download) 2; one at a time, 1.6 s apart, no 429/403.
 
-## While waiting (3 Oct 2026, GAPS134)
+## GAPS139-sp81-stanning-1631 (3 Oct 2026, account-4): TNA Discovery sibling search, SP 75 / SP 82 / SP 95, 1631-32
 
-- TNA Discovery API item-level search of SP 75 (Denmark), SP 82 (Hamburg) and SP 95 (Sweden), 1631-32, for "cipher" /
-  "decipher" / "duplicate", to list any other cipher papers of the 1631-32 mission circuit (e.g. the Hamburg agent's)
-  that might share f.284's system. Positive control: the same query on SP 81/37 must return ff.93/169/216. No vision,
-  about USD 1. This depends on nobody. (The HMC Hamilton and Cowper routes to identifying Stanning are done: GAPS130,
-  GAPS134. Reading the item still waits on the copy order, REQUEST.md.)
+Step run: GAPS134's "While waiting" action. TNA Discovery API (`API/search/records`, `sps.recordSeries`, `sps.dateFrom`
+1631-01-01, `sps.dateTo` 1632-12-31), one term per call, 1.7 s apart, descriptive User-Agent. Keyword search sees only the
+item description, not a separate `note` field (tools/discovery_items.py docstring), so an item noted "Partly in cipher"
+only in its note is missed. No vision, no subagents, no reading of the item. Clock read 14:30 UTC.
+
+| Series | cipher | cypher | decipher | character | Coverage control ("letter", same dates) |
+|---|---|---|---|---|---|
+| SP 81 (German States) -- positive control | 3, **incl. SP 81/37/284 (the target)** | 0 | 6 | 0 | n/a |
+| SP 75 (Denmark) | 0 | 0 | 0 | 0 | 11 item-level hits (SP 75/12/*), so the series is catalogued at item level for these years |
+| SP 82 (Hamburg) | 0 | 0 | 0 | 0 | 3 (SP 82/7/f16, 1631 Nov 26; f22, c. Mar 1632) |
+| SP 95 (Sweden) | 0 | 0 | 0 | 0 | 3 (incl. SP 95/3/101, 1632 Aug 27/Sept 6) |
+
+The positive control passed: the SP 81 "cipher" query returns the target. SP 81 cipher/decipher items of 1631-32 (all
+by Vane, the mission's channel, beyond the three already in REQUEST.md):
+
+| Reference | Date | Description (TNA) | Decipher noted |
+|---|---|---|---|
+| SP 81/37/93 | 1631 Oct. 19 | Vane to 'my lord' with duplicate and decipher | yes |
+| SP 81/37/169 | 1631 Dec. 3 | Vane to Dorchester - 3 letters with decipher of one | yes |
+| SP 81/37/216 | 1631 Dec. 11/22 | Vane to [Dorchester], with portion deciphered | yes |
+| SP 81/38/76 | 1632 Feb. 20 | Vane to --- - decipher | yes |
+| SP 81/38/206 | 1632 May 22 | Vane to ---, and decipher | yes |
+| SP 81/38/250 | 1632 June 13/23 | Vane to Secretary of State - duplicate of despatch of 6/16 and extracts in cipher | no |
+| SP 81/39/88 | 1632 Sept. 6 | Vane to Coke - decipher, and duplicate | yes |
+| SP 81/39/402 | [? 1632] | 2 sheets of cipher [? fragments] | no |
+
+Follow-up terms, same dates (6 calls): "duplicate" and "Vane" in SP 75 / SP 82 / SP 95. SP 75 "duplicate": 8 items, all
+Averie (Joseph Averie, the Hamburg agent, filed in SP 75), Roe or [Vane] to Dorchester, 1631 (e.g. SP 75/12/220, 1631
+Oct. 9, "[Vane] to Dorchester - and duplicate, with addition"); none mentions cipher. SP 75 "Vane": 19 items, the Denmark
+leg of the mission (instructions SP 75/12/204, 210; credentials 198; Averie to Vane 1631-32; Vane to Anstruther and to
+Hamilton, 7 Oct 1631). SP 82: 0 and 0. SP 95 "Vane": 1 (SP 95/3/108, Dec 1632, Vane's speech to the King of Sweden).
+No Stanning in any description.
+
+**Result.** No cipher, cypher, decipher or character item in SP 75, SP 82 or SP 95 for 1631-32, by description. The
+three series are catalogued at item level for those years, so the zero is a search result, not a coverage gap. The
+limit is that a cipher noted only in an item's `note` field would not appear. The 1631-32 cipher traffic that TNA
+describes is all in SP 81 and all Vane's. **Sibling leads (same route or correspondents, not shown to share the key):**
+the five further Vane decipher items in SP 81/38-39 (ff.38/76, 38/206, 39/88; and the cipher-only 38/250, 39/402) join
+ff.93/169/216 as the pool that a key for Vane's mission cipher could be rebuilt from. Whether Stanning's paper used
+Vane's cipher is not known. The duplicate was filed in Vane's piece, which is the only link. Averie's duplicated
+letters to Dorchester and Vane (SP 75/12) are the nearest same-circuit traffic, but none is described as in cipher.
+Rule 10: a search result about the catalogue, not a finding about the item.
+
+Requests: discovery.nationalarchives.gov.uk 28 (16 term x series; 6 coverage: "letter" and "1631" per series, the "1631"
+probes returning 0; 6 follow-up); one at a time, 1.7 s apart, all HTTP 200, no 429/403.
+
+## While waiting (3 Oct 2026, GAPS139)
+
+- `tools/discovery_items.py --notes` over the SP 81/38 and SP 81/39 pieces (children + details, 1.6 s apart), to catch
+  1632 items noted "in cipher" only in the `note` field, and to fill out the Vane mission-cipher pool beyond the eight
+  described items above. Positive control: the run over SP 81/37 must flag f.284 and ff.93/169/216. No vision, about
+  USD 1 (a few hundred requests across two pieces: check the piece sizes first and keep to the host limit). This
+  depends on nobody. Reading the item and any key rebuild from the Vane pool still wait on the copy order (REQUEST.md);
+  the copy order could add the five SP 81/38-39 decipher folios when it goes.
