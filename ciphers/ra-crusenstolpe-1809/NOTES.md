@@ -2,6 +2,12 @@
 
 Status: open
 
+Editions searched for a printed copy (2 Oct 2026, full-text search of the Project Runeberg OCR for chiff/dechiff/
+spion/nyckel/Crusenstolpe/Ericsberg/1809): Crusenstolpe, *Portefeuille* Del 1-5 (1837-45; `portef`, pp. 1-end of all
+five volumes, 1809 items at Del 1 pp. 207-17 and Del 3 pp. 134-88, both clear text), Clason and af Petersens, *För
+hundra år sen* (1909; `cs100`, scans 0019-0270) and Crusenstolpe, *1720, 1772, 1809* (1836; `cmj1720`): no 1809 spy
+report, cipher document or decipherment printed. Detail in the OPEN and Premise check sections below.
+
 ## What this is
 
 Spy reports and cipher documents concerning the 1809 revolution (the coup against Gustav IV Adolf), held among
@@ -249,3 +255,59 @@ step is the owner-side one already filed (REQUEST.md copy order; Carlsson 1944 i
 
 Requests: runeberg.org 15 (all HTTP 200, 1.6 s apart, no 403/429/challenge), web search 9, no other host. Vision
 calls 0. Fetched text on disk once: `sources/runeberg/portef/` (manifest.tsv, 1.2 MB).
+
+## Premise check (GF4-BATCH2, account-4, 2-3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` "Premise check" (run 2 Oct 23:58 - 3 Oct 00:0x UTC), asked to
+prove the bundle's cipher documents are already read. Result first: **not found** -- no decipherment, clear copy or
+printed text of the cipher documents or spy reports in `SE/RA/720266/03/08/~/2,5` located by (a)-(d) (a search
+result, rule 10). Status stays `open`. The intake-gate fix this pass also made: the status line now carries the
+edition citation (lines 5-9), after grepping the three Runeberg texts the OPEN section named as its next step.
+
+**(a) Decipherments the folder mentions -- not found.** The folder mentions no decipherment of this bundle; the
+catalogue note says only "chiffer handlingar". The decipherments the folder's printed sources do contain were
+opened and are other items: Portefeuille Del 2 p.29, a Cederhielm dispatch of 4 July 1736 "skrifvet med chiffer",
+printed in clear (OPEN section); Crusenstolpe, *1720, 1772, 1809* (1836), scan 0336, "en de-chiffrerad depêche af
+år 1779, från Gustaf III till Svenska Ministern hos Hofvet i Preussen, General Zöge von Manteuffel" -- 1779, not
+1809. New full-text greps this pass (Runeberg `download.pl?mode=txtzip`, snapshots in `sources/runeberg/portef/`
+(Del 5 added), `sources/runeberg/cs100/`, `sources/runeberg/cmj1720/`, files matching per stem):
+Portefeuille Del 5 (1845) chiff 0, dechiff 0, spion 0, nyckel 1 (a door key, scan 0040), 1809 1; Clason-af
+Petersens 1909 (`cs100`) chiff 0, dechiff 0, spion 3, nyckel 1 (a chamberlain's key), 1809 71; `cmj1720` chiff 1
+(the 1779 dispatch), spion 2 (1830s-style comment on "spion-systemet", political spies in general), 1809 36. No 1809
+cipher document or spy-report text is printed in any of the three.
+
+**(b) Other solvers' working files -- not found.** Fresh shallow clones of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers (2 Oct 2026), repo-wide case-insensitive grep for `crusenstolpe|ericsberg|720266`:
+one hit, `cyphersolver/targets/lorraine1592/src/fr4.json`, a numeric false positive inside an n-gram table
+(`...0720266`). No working file, key or rendering touches this item (grep only, rule 8).
+
+**(c) Physical neighbours -- unreachable for the leaves; catalogue neighbours not cipher-flagged.** The volume is not
+digitised (`onlyDigitisedMaterials: false`), so no facing page or laid-in slip can be viewed. Riksarkivet API
+(`data.riksarkivet.se/api/records?text=Crusenstolpe`, 1 request after one TLS reset and a 15 s pause; 44 hits): the
+sibling volumes of the Crusenstolpe papers are ~/1 (J. M. Crusenstolpe, "rättfärdigad inför efterverlden", mostly
+protocol extracts), ~/2 (M. J. Crusenstolpe, drafts of justice reports 1824-25, copied news notices 1830-32,
+letters), ~/3 (copies of Adlerbrant's notes, 1840s), ~/4 and ~/5 (Fredrik and Carl Denis Crusenstolpe: a Swedish
+Koran translation, a memento journal 1840-41, appointment papers 1826-27); none names cipher. In the same archive's
+manuscript collection two 1809 volumes sit nearby: `SE/RA/720266/05/~/33` ("1809: Berättelse om revolutionen 1809
+(avskrift, 3 ex.)") and `SE/RA/720266/05/~/49` ("Några handlingar rörande revolutionen 1809. Förteckning i
+bunten"); neither is cipher-flagged and neither is digitised. Recorded for a copy order alongside ~/2,5, not opened.
+
+**(d) Recipient side -- not found for the bundle; one printed lead.** The spy reports' readers were either the
+king's government or the western-army conspirators. Royal side: Clason-af Petersens 1909 prints the court accounts
+(von Schoting, af Melin, von Greiff, von Hausswolff's letters); they describe police agents sent "för att utspionera"
+the western army in March 1809 (cs100 scans 0028, 0032, 0071; one agent was caught at Örebro) but print no report
+text. Conspirators' side: Google Books API (country=US, keyed), 5 queries: `"1809" revolutionen spionrapporter
+chiffer` 0; `Adlersparre "Handlingar rörande Sveriges" 1809 chiffer` 3 (Historisk tidskrift 1903; a catalogue entry
+"Handlingar rörande 1809 års Revolution", 1810, NO_PAGES); `Adlersparre 1809 "i chiffer" bref` 20, of which two are
+about 1809 cipher letters: C. A. Adlersparre, *1809 och 1810. Tidsbilder* (1850, Google id jspAAAAAcAAJ, full view):
+"... chiffer samt ett handbref från en schweitzare, Pollier, guvernör för prins Gustaf och f. d. drottningens
+förtrogne. Allt detta lemnades i händerna på Carl XIII ..."; and Svenskt biografiskt lexikon (1864), on a man
+questioned over a cipher matter, citing "ett bref, d. 15 Aug. 1809 skrifvet af konung Carl XIII till Georg
+Adlersparre (C. A. Adlersparre, 1809 och 1810. Tidsbilder, Del I s. 207)". Whether these 1809 cipher letters
+belong to the Crusenstolpe bundle cannot be judged from the catalogue note; they are a **lead for the folder**
+(the Adlersparre print, Del I around p. 207, is the recipient-side edition to read next, from a full-view copy),
+not a decipherment of this item. Its page text is served only by books.google.com (blocked from the cloud) unless a
+Runeberg or archive.org copy exists; not searched further this pass.
+
+Requests this pass: runeberg.org 3 (txtzip, all 200), data.riksarkivet.se 2 (1 TLS reset, 1 x 200), googleapis 5,
+github.com 2 shallow clones (shared with the hellen pass). No 403/429/challenge. Nothing read, graded or tested.
