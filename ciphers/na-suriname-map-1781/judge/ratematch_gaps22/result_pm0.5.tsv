@@ -1,0 +1,9 @@
+fold	held_out	n_corrupt	R_p05	R_median	Z_p99	thr	power	powered	target_N	target	target_pass	T_max	T_pass_rate
+0	beschryvingvangu01hart.txt.gz	606	-1.3598	-1.2606	-1.7916	-1.3598	1.0	True	605	-1.4954	False	-1.7486	0.0
+1	beschryvingvangu02hart.txt.gz	606	-1.5342	-1.2761	-1.8086	-1.5342	1.0	True	605	-1.5035	True	-1.7916	0.0
+2	bub_gb_mGdCAAAAcAAJ.txt.gz	606	-1.55	-1.3919	-1.8624	-1.55	1.0	True	605	-1.4992	True	-1.7769	0.0
+3	bataviaindeszelf02amst.txt.gz	606	-1.3567	-1.2749	-1.808	-1.3567	1.0	True	605	-1.4887	False	-1.7729	0.0
+4	beschryvingvanh00esch.txt.gz	606	-1.4201	-1.2851	-1.7971	-1.4201	1.0	True	605	-1.5016	False	-1.8152	0.0
+5	reizennaaceilon00roosgoog.txt.gz	606	-1.4953	-1.3405	-1.8429	-1.4953	1.0	True	605	-1.4866	True	-1.7617	0.0
+6	verzamelingvanst01vand.txt.gz	606	-1.4374	-1.3315	-1.8135	-1.4374	1.0	True	605	-1.4857	False	-1.7501	0.0
+# pm=0.5 samples=400 verdict: FAIL (3/7 powered folds); shuffled-target check clear
