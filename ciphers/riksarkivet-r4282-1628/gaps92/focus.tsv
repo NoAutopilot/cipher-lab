@@ -1,0 +1,4 @@
+crop	position	gaps92_AB	gaps38_reconciled	gaps38_line_pos	note
+lc_L02.jpg	16	theta	8	p2_L02:15	same scan as tx2/crops/p2_L02.jpg (pixel-identical); GAPS92 reads (A and B agree unless noted) differ from GAPS38 reconciled
+lc_L04.jpg	17	y^m	p m	p2_L04:16 p2_L04:18	same scan as tx2/crops/p2_L04.jpg (pixel-identical); GAPS92 reads (A and B agree unless noted) differ from GAPS38 reconciled
+lc_L07.jpg	14	z3	8	p2_L07:13	same scan as tx2/crops/p2_L07.jpg (pixel-identical); GAPS92 reads (A and B agree unless noted) differ from GAPS38 reconciled; A read 9, B z3, settled z3 by GAPS92 eye

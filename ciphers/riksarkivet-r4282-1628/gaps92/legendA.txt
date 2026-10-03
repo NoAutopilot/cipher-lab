@@ -1,0 +1,5 @@
+fheavy	heavy, blotted/double-stroked long f with cross stroke (L01 start of cipher)
+eps	epsilon / open 3 sitting on the baseline, no descender
+theta	small circle with a horizontal bar through it
+kappa	small k without ascender (kappa-like)
+alpha	Greek alpha / fish shape, like d with ascender curving back left

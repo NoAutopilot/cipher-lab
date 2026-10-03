@@ -1,0 +1,262 @@
+line	pos	sign	conf	note
+L01	1	[clear:Mittatur]	H	
+L01	2	[clear:nobis]	M	
+L01	3	[clear:responsum]	H	
+L01	4	/	H	
+L01	5	fbar	M	heavy f/long s with crossbar, possibly ff ligature
+L01	6	f	H	
+L01	7	b	H	looped ascender, or 6
+L01	8	m	H	
+L01	9	7	H	
+L01	10	o	H	
+L01	11	/	H	
+L01	12	eps	H	
+L01	13	4	H	
+L01	14	l	H	
+L01	15	mu	H	
+L01	16	r	H	
+L01	17	q	H	
+L01	18	5	H	
+L01	19	/	H	
+L01	20	b	M	looped ascender, or 6
+L01	21	phi	H	
+L01	22	n	H	
+L01	23	b	M	looped ascender, or 6
+L01	24	t	H	
+L01	25	mu	H	
+L01	26	q	H	
+L01	27	k	H	
+L02	1	b	H	looped ascender, or 6
+L02	2	b	M	looped ascender, or 6
+L02	3	p	H	
+L02	4	a	H	
+L02	5	d	H	
+L02	6	7	H	
+L02	7	r	H	
+L02	8	c	H	
+L02	9	/	H	
+L02	10	g	M	g with 3-like tail, or z3
+L02	11	u	H	
+L02	12	b	H	looped ascender, or 6
+L02	13	q	H	
+L02	14	o	H	
+L02	15	7	H	
+L02	16	theta	M	o with horizontal bar
+L02	17	/	H	
+L02	18	.	M	mid-line dot between words
+L02	19	/	H	
+L02	20	e	H	
+L02	21	mu	H	
+L02	22	r	H	
+L02	23	mu	H	
+L02	24	d	H	
+L02	25	c	H	
+L02	26	/	H	
+L02	27	m	H	
+L02	28	mu	H	
+L02	29	q	H	
+L02	30	lambda	H	
+L02	31	/	H	
+L02	32	5	H	
+L02	33	q	H	
+L02	34	mu	H	
+L02	35	n	H	
+L02	36	/	H	
+L02	37	lambda	H	
+L02	38	l	H	
+L02	39	8	H	
+L02	40	p	H	
+L02	41	lambda	H	
+L02	42	k	H	
+L02	43	g	M	g with 3-like tail, or z3
+L02	44	i	H	
+L03	1	o	H	
+L03	2	b	H	
+L03	3	g	M	or z3
+L03	4	d	H	
+L03	5	/	H	
+L03	6	k	H	
+L03	7	k	H	
+L03	8	4	H	
+L03	9	eps	H	
+L03	10	p	H	
+L03	11	7	H	
+L03	12	q	H	
+L03	13	r	H	
+L03	14	mu	H	
+L03	15	m	H	
+L03	16	/	H	
+L03	17	f	H	
+L03	18	d	H	
+L03	19	longs	H	
+L03	20	q	H	
+L03	21	b	H	
+L03	22	longs	H	
+L03	23	l	H	
+L03	24	lambda	H	
+L03	25	/	H	
+L03	26	b	H	
+L03	27	g	M	or z3
+L03	28	u	H	
+L03	29	phi	H	
+L03	30	4	H	
+L03	31	6	M	small closed loop, or s
+L03	32	lambda	H	
+L03	33	r	H	
+L03	34	x	H	
+L03	35	n	H	
+L03	36	alpha	M	or looped d
+L03	37	q	H	
+L03	38	lambda	H	
+L03	39	t	H	
+L03	40	5	H	
+L03	41	/	H	
+L03	42	b	H	
+L03	43	o	H	
+L03	44	a	H	
+L03	45	.	H	
+L04	1	f	H	
+L04	2	c	H	
+L04	3	h	H	
+L04	4	r	H	
+L04	5	q	H	
+L04	6	b	H	
+L04	7	t	H	
+L04	8	mu	H	
+L04	9	7	H	
+L04	10	x	H	
+L04	11	4	H	
+L04	12	i	H	
+L04	13	/	H	
+L04	14	r	H	
+L04	15	t	H	
+L04	16	b	H	
+L04	17	y^m	M	long thick descender with m above, or p^m
+L04	18	5	H	
+L04	19	/	H	
+L04	20	g	M	or z3
+L04	21	u	H	
+L04	22	f	H	
+L04	23	k	H	
+L04	24	k	H	
+L04	25	alpha	M	or looped d
+L04	26	l	H	
+L04	27	mu	H	
+L04	28	x	H	
+L04	29	5	H	
+L04	30	/	H	
+L04	31	g	M	or z3
+L04	32	q	H	
+L04	33	7	H	
+L04	34	a	H	
+L04	35	/	H	
+L04	36	5	H	
+L04	37	l	H	
+L04	38	alpha	H	or looped d
+L04	39	k	H	
+L04	40	t	H	
+L04	41	r	H	
+L04	42	x	H	
+L04	43	5	H	
+L04	44	o	H	
+L05	1	e	H	
+L05	2	d	H	
+L05	3	z3	M	or 3
+L05	4	t	H	
+L05	5	b	H	
+L05	6	/	H	
+L05	7	t	H	
+L05	8	a	H	
+L05	9	n	H	
+L05	10	mu	H	
+L05	11	7	H	
+L05	12	x	H	
+L05	13	4	H	
+L05	14	p	H	
+L05	15	b	H	
+L05	16	/	H	
+L05	17	phi	H	
+L05	18	a	H	
+L05	19	f	H	
+L05	20	4	H	
+L05	21	6	M	small closed loop, or s
+L05	22	/	H	
+L05	23	sqx	H	
+L05	24	g	M	or z3
+L05	25	c	H	
+L05	26	/	H	
+L05	27	t	H	
+L05	28	7	H	
+L05	29	/	H	
+L05	30	longs	H	
+L05	31	r	H	
+L05	32	r	H	
+L05	33	/	H	
+L05	34	b	H	
+L05	35	k	H	
+L05	36	t	H	
+L05	37	5	H	
+L05	38	m	H	
+L06	1	alpha	H	
+L06	2	5	M	small, or s
+L06	3	mu	H	
+L06	4	q	H	
+L06	5	7	H	
+L06	6	k	H	
+L06	7	a	H	
+L06	8	d	H	
+L06	9	7	H	
+L06	10	m	H	
+L06	11	/	H	
+L06	12	c	H	
+L06	13	f	H	
+L06	14	r	H	
+L06	15	p	H	
+L06	16	delta	H	
+L06	17	delta	H	
+L06	18	q	H	
+L06	19	r	H	
+L06	20	q	H	
+L06	21	7	H	
+L06	22	o	H	
+L06	23	a	H	
+L06	24	/	H	
+L06	25	z3	H	
+L06	26	6	M	small closed loop, or s
+L06	27	b	H	
+L06	28	/	H	
+L06	29	g	M	or z3
+L06	30	b	H	
+L06	31	r	H	
+L06	32	mu	H	
+L06	33	delta	H	
+L06	34	p	H	
+L06	35	b	H	
+L06	36	q	H	
+L06	37	l	H	
+L06	38	7	H	
+L06	39	a	H	
+L06	40	c	H	
+L07	1	n	H	
+L07	2	f	H	
+L07	3	a	H	
+L07	4	c	H	
+L07	5	6	M	small closed loop, or s
+L07	6	4	H	
+L07	7	t	H	
+L07	8	o	H	
+L07	9	lambda	H	
+L07	10	/	H	
+L07	11	l	H	
+L07	12	t	H	
+L07	13	7	H	
+L07	14	z3	L	small round 3, or eps
+L07	15	4	H	
+L07	16	q	H	
+L07	17	7	H	
+L07	18	k	H	
+L07	19	g	M	or z3
+L07	20	i	H	
+L07	21	7	H	
+L07	22	n	H	
+L07	23	f	H	

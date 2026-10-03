@@ -1,0 +1,161 @@
+{
+ "page": {
+  "tokens": 229,
+  "labels": 35,
+  "inventory": {
+   "b": 18,
+   "7": 15,
+   "q": 15,
+   "r": 13,
+   "M": 12,
+   "t": 11,
+   "k": 10,
+   "f": 9,
+   "5": 9,
+   "a": 9,
+   "g": 9,
+   "4": 8,
+   "o": 7,
+   "l": 7,
+   "c": 7,
+   "L": 7,
+   "n": 6,
+   "p": 6,
+   "D": 6,
+   "m": 5,
+   "8": 5,
+   "x": 5,
+   "A": 4,
+   "F": 3,
+   "u": 3,
+   "i": 3,
+   "S": 3,
+   "3": 3,
+   "T": 3,
+   "E": 2,
+   "e": 2,
+   "theta": 1,
+   "h": 1,
+   "y": 1,
+   "B": 1
+  }
+ },
+ "vs_r4282": {
+  "shared_labels": [
+   "3",
+   "4",
+   "5",
+   "7",
+   "8",
+   "A",
+   "B",
+   "D",
+   "E",
+   "F",
+   "L",
+   "M",
+   "S",
+   "T",
+   "a",
+   "b",
+   "c",
+   "e",
+   "f",
+   "g",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "q",
+   "r",
+   "t",
+   "u",
+   "x"
+  ],
+  "n_shared": 33,
+  "of_r4282_labels": 33,
+  "r4282_tokens_covered": 1088,
+  "r4282_coverage": 1.0,
+  "page_tokens_in_r4282_inventory": 0.9913,
+  "page_labels_not_in_r4282": [
+   "theta",
+   "y"
+  ],
+  "r4282_labels_absent_from_page": [],
+  "capitals_reached": [
+   "A",
+   "B",
+   "D",
+   "E",
+   "F",
+   "L",
+   "M",
+   "S",
+   "T"
+  ],
+  "unigram_cosine": 0.9747
+ },
+ "controls": {
+  "r4284_keytest_strip": {
+   "n_shared": 11,
+   "r4282_coverage": 0.355,
+   "unigram_cosine": 0.4358
+  },
+  "r4284_numeric_body": {
+   "n_shared": 5,
+   "r4282_coverage": 0.1954
+  },
+  "4307p4": "16 shared signs / 456 tokens (GAPS3)"
+ },
+ "calibration": {
+  "r4282_window_vs_rest_N229": {
+   "mean": 0.9398,
+   "p05": 0.8944,
+   "p95": 0.9677
+  },
+  "la17_latin_window_vs_r4282_N229": {
+   "mean": 0.4482,
+   "p05": 0.3973,
+   "p95": 0.4904
+  },
+  "page_cosine_rank_in_ceiling": 0.985,
+  "null_draws_ge_page": 0
+ },
+ "identity_vs_r4282_p2": {
+  "r4282_p2_signs": 230,
+  "page_signs": 229,
+  "sequence_ratio": 0.9847,
+  "differences": [
+   [
+    [
+     "theta"
+    ],
+    [
+     "8"
+    ]
+   ],
+   [
+    [
+     "y"
+    ],
+    [
+     "p",
+     "m"
+    ]
+   ],
+   [
+    [
+     "3"
+    ],
+    [
+     "8"
+    ]
+   ]
+  ],
+  "crops_pixel_identical_to_tx2_p2": "7 of 7"
+ }
+}

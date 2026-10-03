@@ -1,0 +1,11 @@
+line	col	A	B	flagged	crop
+L01	5	fheavy	-	A	
+L01	6	/	fbar	B	
+L02	17	-	/		
+L03	6	kappa	k	A	
+L03	31	8	6	AB	
+L04	24	kappa	k	A	
+L05	21	8	6	AB	
+L06	26	8	6	AB	
+L07	5	8	6	AB	
+L07	14	9	z3	AB	

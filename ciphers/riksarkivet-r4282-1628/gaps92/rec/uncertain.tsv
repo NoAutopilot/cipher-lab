@@ -1,0 +1,26 @@
+line	col	A	B	flagged	crop	both_conf
+L01	1	[clear:Mittatur]	[clear:Mittatur]	A		A:M/B:H
+L01	2	[clear:nobis]	[clear:nobis]	B		A:H/B:M
+L01	13	eps	eps	A		A:M/B:H
+L01	21	b	b	B		A:H/B:M
+L01	24	b	b	B		A:H/B:M
+L01	25	t	t	A		A:M/B:H
+L02	2	b	b	B		A:H/B:M
+L02	5	d	d	A		A:M/B:H
+L02	10	g	g	B		A:H/B:M
+L02	16	theta	theta	AB		A:M/B:M
+L02	23	d	d	A		A:M/B:H
+L02	42	g	g	B		A:H/B:M
+L03	3	g	g	B		A:H/B:M
+L03	9	eps	eps	A		A:M/B:H
+L03	27	g	g	B		A:H/B:M
+L03	36	alpha	alpha	B		A:H/B:M
+L04	17	y^m	y^m	AB		A:M/B:M
+L04	20	g	g	B		A:H/B:M
+L04	25	alpha	alpha	B		A:H/B:M
+L04	31	g	g	B		A:H/B:M
+L05	3	z3	z3	B		A:H/B:M
+L05	24	g	g	B		A:H/B:M
+L06	2	5	5	AB		A:M/B:M
+L06	29	g	g	B		A:H/B:M
+L07	19	g	g	B		A:H/B:M

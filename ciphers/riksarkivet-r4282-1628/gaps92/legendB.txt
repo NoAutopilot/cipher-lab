@@ -1,0 +1,4 @@
+fbar	heavy f / long s with a strong crossbar (possibly an ff ligature), L01 first cipher sign
+eps	epsilon / reversed-3 shape sitting on the baseline
+theta	small o crossed by a horizontal bar
+alpha	Greek alpha / fish shape with crossing tail, no tall ascender (distinct from looped d, which has a leftward-curving ascender and is labelled d)
