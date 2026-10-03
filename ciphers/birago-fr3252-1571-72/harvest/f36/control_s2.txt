@@ -17,8 +17,8 @@ v36top_L01	_arl__do_ecls_g_o___ml_quamict_emse_
 v36top_L02	_totdc_equemtic_mio____m____ou__tpar_
 v36top_L03	t_sid_o__t_l__e_etloriol__u__t__mpesas_
 v36top_L04	i_di__no_cmiteso_mefoftl_eto_m__e_e_e___t_d
-v36top_L05	esordecequ_ealtroueet_liogaetsc_u_rs
-v36top_L06	_qcietf__qqofeoip
+v36top_L05	eso_de__equ_eal__oueet_li_og_aets_____s
+v36top_L06	_qcietf___qqofe__i_
 v36mid_L01	e_omc__or__
 v36mid_L02	git_i_ade_tetmi_pe_s_uas_ma_d__e_lc_p___
 v36mid_L03	___lardps___r_aa_dri___sol__ct_duce_t_
@@ -28,5 +28,5 @@ v36mid_L06	ac__ell____epu_ar_eei___la_t__
 r37_L01	seco_ui_psf__eetdimu_itom_re_e_ulocl
 r37_L02	o_mcmiosc_em__arda
 
-TARGET: 993 signs, 23 nulls, 731 letters; real key -1.4850; 200 shuffled keys mean -2.0732 sd 0.1155 max -1.7481; z 5.09; rank 1 of 201
-POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.37: real key rank 1 in 20/20; z median 5.20 min 3.70
+TARGET: 993 signs, 18 nulls, 722 letters; real key -1.5051; 200 shuffled keys mean -2.0730 sd 0.1198 max -1.7155; z 4.74; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.33: real key rank 1 in 20/20; z median 5.51 min 4.53

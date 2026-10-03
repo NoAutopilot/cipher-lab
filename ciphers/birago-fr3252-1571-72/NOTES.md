@@ -752,8 +752,8 @@ with no overlap: `cut('../../../birago-fr3252-1571-72/harvest/f36/crops', 850, 0
 `.gitignore`). Passages: f.36r foot (r36 L01-L15), f.36v top 6 lines, f.36v middle 6, f.37r 2.
 
 **Passes.** Two blind Sonnet readers x two pages (4 calls; the sheet `sign_sheet_blind.png` with ids only, glosses visible), each
-asked for sign id + the clerk's letter above it. Rows: A r36 521, A v36 275, B r36 563, B v36 406.
-- **The readers could not read the interlinear gloss.** 1,686 of 1,765 gloss cells came back '?'; the few letters they gave
+asked for sign id + the clerk's letter above it. Rows: A r36 521, A v36 407, B r36 563, B v36 406.
+- **The readers could not read the interlinear gloss.** 1,810 of 1,897 gloss cells came back '?'; the few letters they gave
   do not spell Italian (A v36 L01 "zxdozlgnozud" where the gloss reads "parlandone il signor"). This is the second failure of Sonnet
   gloss reading on this leaf (HARVEST-D, 28 Sept, at 1x; this job at 2x). The gloss is legible to an Opus eye at 2x (HARVEST-D read
   line 1; this worker confirmed "parlandone il signor" on `v36top_L01` and "...signor Sau[oia]" running into s2), so the instrument
@@ -761,19 +761,19 @@ asked for sign id + the clerk's letter above it. Rows: A r36 521, A v36 275, B r
 - **f.36r line geometry is off.** From about L10 the r36 crop centres (HARVEST-D's eye-set grid) sit between two manuscript lines;
   reader A took L15 as prose, reader B made L14 and L15 the same row (reading_key.txt rows r36_L14/L15 are near-duplicates). The
   r36 lower lines are therefore double-counted or shifted by one; the count below includes that duplication.
-- Reconciliation (mechanical, `compare_f36.py`): ids aligned per line (difflib); agree 627, one-sided 144, split 222 -> '?'.
-  **Two-reader error E = (222 + 144) / 993 = 0.37** (used for the control; one-sided rows counted as error).
+- Reconciliation (mechanical, `compare_f36.py`): ids aligned per line (difflib); agree 663, one-sided 89, split 241 -> '?'.
+  **Two-reader error E = (241 + 89) / 993 = 0.33** (used for the control; one-sided rows counted as error).
 
-**Control (rule 3)** (`decode_control.py passD.tsv --shuffles 200 --windows 20 --err 0.37 --extra X_THETA2=r --seed N`):
+**Control (rule 3)** (`decode_control.py passD.tsv --shuffles 200 --windows 20 --err 0.33 --extra X_THETA2=r --seed N`):
 
-| seed | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at 0.37 |
+| seed | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at 0.33 |
 |---|---|---|---|---|---|---|---|
-| 1 | 993 / 731 | -1.4850 | -2.0613 (0.119) | -1.6801 | 4.84 | 1/201 | 20/20, z median 5.03 (min 3.47) |
-| 2 | 993 / 731 | -1.4850 | -2.0732 (0.116) | -1.7481 | 5.09 | 1/201 | 20/20, z median 5.20 (min 3.70) |
-| 3 | 993 / 731 | -1.4850 | -2.0769 (0.105) | -1.8083 | 5.66 | 1/201 | 19/20, z median 4.75 (min 3.68) |
+| 1 | 993 / 722 | -1.5051 | -2.0593 (0.121) | -1.7201 | 4.59 | 1/201 | 19/20, z median 5.93 (min 2.52) |
+| 2 | 993 / 722 | -1.5051 | -2.0730 (0.120) | -1.7155 | 4.74 | 1/201 | 20/20, z median 5.51 (min 4.53) |
+| 3 | 993 / 722 | -1.5051 | -2.0757 (0.112) | -1.7937 | 5.11 | 1/201 | 20/20, z median 5.70 (min 3.11) |
 
 The printed Ceppo-Nevers key (with X_THETA2 = r) is control-backed for the whole letter: rank 1 of 201 on every seed, margin over
-the best shuffle 0.20-0.32, power 19-20/20 at the same error.
+the best shuffle 0.21-0.29, power 19-20/20 at the same error.
 
 **Known-answer check against the period gloss** (HARVEST-D's eye read of f.36v line 1, 18 signs "parlandone il signor",
 `../ceppo-nevers-fr3251-1570s/harvest/witness_f36/alignment_pairs.tsv`, mapped to `v36top_L01` pos 1-18): of the 11 positions both
@@ -782,24 +782,24 @@ readers agree on, 10 decode to the gloss letter (a r l d o e l s g o; pos 12 via
 
 **Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ciphers/birago-fr3252-1571-72/harvest/f36/reading_key_letters.txt`, pasted):
 ```
-FAIL language: score=-1.55, null_p99=-1.781, real_p05=-0.917, real_median=-0.831, mode=both, N=731
+FAIL language: score=-1.559, null_p99=-1.754, real_p05=-0.915, real_median=-0.83, mode=both, N=722
 FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
 ```
 Above null p99, below real p05: what about a third of signs misread produces (same shape as f.47r, NEVBIR-47/47C).
 
-**Grades (rule 4).** 993 sign positions: 23 null; 254 unsettled (U); 716 decoded: **10 C** (v36top_L01, key value = period gloss),
-**706 M**; 0 H, 0 S. Not a reading. Fragments (M, gist only): r36_L01 "...[v]ostra ten..."; v36top_L01 "[p]arl[an]do[n]e ... s[i]g[n]o[r]",
+**Grades (rule 4).** 993 sign positions: 18 null; 268 unsettled (U); 707 decoded: **10 C** (v36top_L01, key value = period gloss),
+**697 M**; 0 H, 0 S. Not a reading. Fragments (M, gist only): r36_L01 "...[v]ostra ten..."; v36top_L01 "[p]arl[an]do[n]e ... s[i]g[n]o[r]",
 then "...qua..."; v36top_L04/05 "...esordece qu..." "altro"; r37_L02 "...arda". Not sentences.
 
 **Is the letter a period decipherment?** Every cipher passage carries the clerk's letter-by-letter gloss (HARVEST-D, confirmed on
 the crops this job). So yes: the plaintext of this letter exists on the leaf, in the clerk's hand, and the job of "reading" it
 is reading that gloss, not breaking anything. That is not done yet: 18 of about 990 glossed signs have been read.
 
-Subagent use: 4 Sonnet calls (~780k subagent tokens). Own session read `rate_limit allowed_warning` at 01:20 UTC after launch
+Subagent use: 4 Sonnet calls (~780k subagent tokens). Pass A v36 was still writing at the first reconciliation; all numbers here are from the final files. Own session read `rate_limit allowed_warning` at 01:20 UTC after launch
 (ROOM flag); no further subagent started.
 
 ## Remaining gaps (F36-READ, 3 Oct 2026)
-Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs; the key is control-backed (z 4.84-5.66, rank 1/201, power 19-20/20 at 0.37). f.47r: 0 S of about 770 (unchanged). f.117r: 276 signs, all M/U.
+Read so far: f.36-37: 10 C, 0 S of about 990 cipher signs; the key is control-backed (z 4.59-5.11, rank 1/201, power 19-20/20 at 0.33). f.47r: 0 S of about 770 (unchanged). f.117r: 276 signs, all M/U.
 - f.36-37 period gloss (about 970 glossed signs unread) - blocker: not-attempted; Sonnet gloss reading [retired] for this leaf (two attempts, 1x and 2x, both all-'?'); a different instrument is untried: Opus eye read of the gloss band, one line per call on 3x crops, transcribed as running Italian then aligned to the sign passes; next: Opus gloss read, 29 lines, ~$4 (wait until rate limit reads allowed)
 - f.36r lines L10-L15 crop geometry - blocker: not-attempted; HARVEST-D's eye-set centres drift between rows; next: re-centre with tools/iiif_lines.py --image c37_f36r_cipher.jpg (row ink profile), re-cut, ~$0.5
 - f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read (CEPPO-WITNESS-PAIRS has a pre-registered f.36v-top tally, 3 Oct), disk only, ~$2
