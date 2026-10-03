@@ -37,6 +37,7 @@ recipes() { cat <<'R'
 2042_legend_native.jpg	iiif	4.VEL 2042	4590,4010,1390,990	full
 2039_legend_native.jpg	iiif	4.VEL 2039	780,980,2100,2800	full
 2039_legend_right_native.jpg	iiif	4.VEL 2039	2800,980,1300,2800	full
+2039_remarque_native.jpg	iiif	4.VEL 2039	1180,6760,2500,800	full
 2061_battery_legend_native.jpg	iiif	4.VEL 2061	2800,820,2300,900	full
 2007a_nota_af_block.jpg	iiif	4.VEL 2007A	3900,2550,2300,1050	full
 2007a_remarque_af_block.jpg	iiif	4.VEL 2007A	300,5800,2500,900	full

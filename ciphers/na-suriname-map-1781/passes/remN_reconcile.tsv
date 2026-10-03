@@ -1,0 +1,19 @@
+# GAPS16-na-suriname-map-1781 (account-4), 2 Oct 2026: one blind Opus reconciliation call (shape only, no repo files) on the 14 disagreements of passes/remN_merged.tsv; L04 pos 23 decision set by the worker as noted.
+crop	pos	decision	conf	note
+remN_L02	9	DROP	H	only one x after [d-loop]; its dot is the [x-dot] already agreed at pos 8, then r follows directly
+remN_L02	15	r	M	thick left stem with short arm out to the right from its top, same as agreed r in this line; the 7 in 'fl[lambda]7a' has a top bar with a long diagonal from its right end
+remN_L02	55	s	M	x-height lowercase s, same size as the following a; no capital height
+remN_L03	0	[z-heavy]	L	heavy initial: blob base stroke, thick diagonal, top stroke with upturned flick, thin crossbar (like a crossed z); could also be read as a flourished X; no other occurrence to compare
+remN_L03	8	[s-loop]	L	small dark S-body with a short hooked top, barely above x-height; the [d-loop] in this hand has a tall arched ascender (cf. L02, L04 'y[d-loop]r'); a dashed rule crosses the sign
+remN_L04	10	[s-loop]	M	S-shape with a curl at the top and a curled bottom, unlike the plain s of L02 pos55; x-height, not capital
+remN_L04	23	DROP	M	worker's convention call (the reconciler left it open): pass A wrote this dot as punctuation <.>, so it is dropped as punctuation, not a sign. Reconciler: clear separate mid-height dot after r, before the hash; by the [x-dot] convention it might belong to r ([r-dot]) -- owner to decide on the convention
+remN_L04	58	6	M	round bowl with ascender rising from it to the upper right, like the agreed 6 in '& 6' later in the line; separate from the f-loop's own top loop; not o
+remN_L05	6	[pi]	M	horizontal top bar with two legs (thick left leg, right leg), like the pi in L04 'eg[pi]3'; a 7 has no left leg
+remN_L05	45	[a-tick]	M	a with a small z/3-like mark written above it, read as one sign; the mark is far smaller than a line-level 3 and sits over the a (A read '3 a', B read one [z-tick])
+remN_L05	46	x	H	x
+remN_L05	47	c	H	small open c between x and 5, clearly present (B right)
+remN_L05	48	5	H	5
+remN_L05	49	[f-loop]	H	long f looped above and below
+remN_L05	50	l	M	tall stem, top hook curls back left to the f's top loop, foot curls right; no h arch (not [h-loop])
+remN_L05	51-52	DROP	M	no separate u: the short minim after the l's foot is under the strike line and belongs to the [hash] ladder (about 4 struck verticals, same width as the [hash] in L02 'g3s[hash]f')
+remN_L05	seq	[d-loop] t | [a-tick] x c 5 [f-loop] l | [hash] [thorn] [lambda] 8	M	cluster decided: 6 signs between 't' and '[hash]' (pos 45-50); alternative if the superscript counts as its own sign: 3 a x c 5 [f-loop] l (7 signs)

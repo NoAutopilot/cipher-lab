@@ -26,7 +26,7 @@ line	pos	sign	value	grade
 2061_bat_L04	3	[MM]	stukgeschut	H
 2061_bat_L04	4	p	a	H
 2061_bat_L04	9	t	y	M
-2061_bat_L04	10	y	d	M
+2061_bat_L04	10	y	s	H
 2061_bat_L04	11	a	e	H
 2061_bat_L04	12	o	r	H
 2061_bat_L04	14	b	k|i	M
@@ -97,7 +97,7 @@ line	pos	sign	value	grade
 2061_bat_L06	19	m	i	H
 2061_bat_L06	20	d	b	H
 2061_bat_L06	21	p	a	M
-2061_bat_L06	22	y	d	M
+2061_bat_L06	22	y	s	M
 2061_bat_L06	23	λ	t	H
 2061_bat_L06	24	m	i	H
 2061_bat_L06	25	k	o	H
@@ -260,10 +260,10 @@ line	pos	sign	value	grade
 2061_bat_L10	22	r	t	H
 2061_bat_L10	23	o	r	M
 2061_bat_L10	24	b	k|i	M
-2061_bat_L10	26	g	g|l	M
+2061_bat_L10	26	g	p	M
 2061_bat_L10	27	[delta]	a	H
 2061_bat_L10	28	c	l	H
-2061_bat_L10	29	g	g|l	M
+2061_bat_L10	29	g	p	M
 2061_bat_L10	30	r	t	H
 2061_bat_L10	31	o	r	H
 2061_bat_L10	32	t	y	M

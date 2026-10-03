@@ -36,11 +36,11 @@ for c,lst in by.items():
 src=open('ciphertext_2039_remarque.tsv').read().splitlines()
 head=[l for l in src if l.startswith('#')]
 title=[l for l in src if l.startswith('2039_title')]
-new=[h for h in head if 'GAPS16' not in h]
-new.append('# GAPS16-na-suriname-map-1781 (account-4), 2 Oct 2026: the Remarque rows (2039_rem_*) are REPLACED by a native-resolution re-pass:')
-new.append('# images/2039_remarque_native.jpg (IIIF region 1180,6760,2500,800 of 11267x8656), crops images/crops_2039_remN (tools/iiif_lines.py),')
-new.append('# two blind Opus passes (passes/remN_passA.tsv, passB.tsv) aligned by passes/remN_merge.py, one blind reconciliation call')
-new.append('# (passes/remN_reconcile.tsv); built by passes/remN_build.py. The GAPS15 notes above about the Remarque describe the superseded draft.')
+new=[h for h in head if not h.startswith('# [G16]')]
+new.append('# [G16] GAPS16-na-suriname-map-1781 (account-4), 2 Oct 2026: the Remarque rows (2039_rem_*) are REPLACED by a native-resolution re-pass:')
+new.append('# [G16] images/2039_remarque_native.jpg (IIIF region 1180,6760,2500,800 of 11267x8656), crops images/crops_2039_remN (tools/iiif_lines.py),')
+new.append('# [G16] two blind Opus passes (passes/remN_passA.tsv, passB.tsv) aligned by passes/remN_merge.py, one blind reconciliation call')
+new.append('# [G16] (passes/remN_reconcile.tsv); built by passes/remN_build.py. The GAPS15 notes above about the Remarque describe the superseded draft.')
 new.append('line\tpos\tsign\tconf\tnote')
 new+=title+['\t'.join(map(str,r)) for r in rows]
 text='\n'.join(new)+'\n'

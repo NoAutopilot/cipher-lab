@@ -2,7 +2,7 @@
 # call's own neighbour shapes against ciphertext_2061_battery.tsv, and refs mapped through passes/signcmp_gaps15/blind_key.json.
 # Q1 = 2061 L04, Q2 = L06, Q3 = L10. Settle rule (brief.md): change only at conf >= 0.6 with a different-valued runner-up.
 query	token	reader_code	best_sheet_sign	conf	runner_up	conf2	settled
-Q1 10	2061_bat_L04:10	y	S row psi	0.75	D row tall v	0.1	yes: s (M, context 'yder' wanted d)
+Q1 10	2061_bat_L04:10	y	S row psi	0.75	D row tall v	0.1	yes: s (H; L04 then reads 'yser', iron, as L05/L06)
 Q1 15	2061_bat_L04:15	g	L row g	0.5	G row 9	0.35	no
 Q1 21	2061_bat_L04:21	g	L row g	0.5	G row 9	0.35	no
 Q1 24	2061_bat_L04:24	g	L row g	0.5	G row 9	0.35	no
