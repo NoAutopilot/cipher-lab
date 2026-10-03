@@ -1,0 +1,16 @@
+draw g 5 E 0 timedout False 32.4
+draw g 6 E 0 timedout False 25.7
+draw g 7 E 0 timedout False 51.7
+draw g 8 E 0 timedout False 10.4
+draw g 9 E 0 timedout False 77.6
+draw g 10 E 0 timedout False 11.1
+draw g 11 E 0 timedout False 4.3
+draw g 12 E 0 timedout False 6.1
+draw g 13 E 0 timedout False 37.5
+draw g 14 E 0 timedout False 27.6
+draw g 15 E 0 timedout False 4.7
+draw g 16 E 0 timedout False 9.0
+draw g 17 E 0 timedout False 37.7
+draw g 18 E 0 timedout False 6.4
+draw g 19 E 0 timedout False 5.1
+f213 g dec 5-19: E=1 in 0 of 15; unresolved 0; resolved fits 0 of 15; 347 s
