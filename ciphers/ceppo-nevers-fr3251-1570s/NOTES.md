@@ -1217,3 +1217,27 @@ Pre-registration unchanged (PREREG c5412f90: promote the pound form only on >=2 
 - **Result:** the 7 f.11r pound positions stay I; no decode, AUDIT.md or SECOND-OPINIONS-QUEUE change due. Gap line moved to
   no-key-material: only a new glossed Birago/Ceppo leaf reopens it.
 Requests: gallica.bnf.fr 2 (overview + one native region), 0 subagents, 0 blind vision calls; own looks 3.
+
+## A1B-CEPPO-CRIB: pre-registration (3 Oct 2026, written and pushed before any crib list exists or is read against a run)
+
+Step: Escalation "clear-pages" -- f.89 (no.46, Birago to Nevers, 9 May 1571, clear) and f.21r (clear first page of no.11)
+as context cribs for the M tokens of f.87 and f.21v. Tool: `harvest/crib/crib_match.py` (docstring gives the exact
+matching rule; positive check before this section: on `reading_f87_tokens.tsv` it finds the verifier-endorsed
+"giorno", "auanti" and "secre-amente" at cost 0-1, 0 of 50 shuffles).
+
+- **Candidate runs:** f.87 L01-L05 (`reading_f87_tokens.tsv`, as committed now) and f.21v L01-L11 (`reading_f21v_tokens.tsv`).
+- **Crib lists, extraction rule fixed now:** `crib/cribs_f89.txt` = every proper noun (person, place, office-holder's
+  name), month name and number written as a word in the reconciled f.89r clear text, >= 5 letters after folding; no
+  other words, chosen without looking at any run. `crib/cribs_f21r.txt` = every word of >= 5 letters in the f.21r clear
+  text on disk (AUDIT.md VERIFY-CEPPO-D2-2: "con le pratiche che tiene, maxime con Vgonotti, hauendoli per aderenti, et
+  intrinseche amici, oltra l'esser temuto da i principali ... di Carmagnola") -- no vision on f.21r.
+- **Match:** crib_match.py's rule: S letters fixed, only M/U/I tokens may be substituted, filled or dropped; cost <= 0
+  (5 letters), 1 (6-8), 2 (9+).
+- **Statistic and controls (rule 3):** T = distinct crib words matched in the run. Control 1: 1000 within-line shuffles
+  of token order (seed 1), p95 and p(>=T). Control 2 (swap): f.21r list against f.87, f.89 list against f.21v.
+  Positive control: the f.87 endorsed words above (already run, 3 of 3 found).
+- **Gate:** a run's crib support counts only if T > shuffle p95 AND T > the swap count for that run. Then, and only
+  then, a matched word with its own shuffle match rate < 0.05 moves the M tokens it uses (kept or edited) to S, recorded
+  in an exceptions/notes file and decode re-run with `--check`; edits to sign values are not made by this step unless the
+  matched letter is a value of a look-alike partner already named in NOTES.md (else logged as a lead, grade unchanged).
+  Fail either arm: no grade changes, logged as a control-backed negative with both numbers.
