@@ -745,17 +745,51 @@ Grades (rule 4): no reading claimed (0 H, 0 C, 0 S, 80 M mechanical, 0 I). Statu
 2 blind passes plus 1 reconciliation look. Requests: gallica.bnf.fr 2 (1 info.json after one connection reset, 1 native
 region; browser UA). Report of what was found and where it was not found; no novelty class.
 
-## Remaining gaps (GAPS35, 3 Oct 2026)
-Read so far: 0 of 139 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, and the merged f.146r+f.247 table on the 3 Oct re-read: 5.122 bpc, 0.700 of shuffles as good, positive control 3.654).
-- f.157r cipher runs (139 tokens) - blocker: not-attempted; every reachable key is negative and Sabran's 1636 table is retired for this leaf (reread_trial.tsv); next: read Avenel's Richelieu Lettres t.V (and the Feb 1636 Sourdis/Vitry Marseille-Lérins plot correspondence) for a plain summary naming the Gascon informant and the Florence/Modena agents, then use it as a crib for a fresh homophonic solve with a matched control, ~$4
+## GAPS40: Avenel t.V crib search (2 Oct 2026 brief, run 3 Oct 2026, account-4)
+
+This runs GAPS35's Verdict step and nothing else. Intake gate (pasted): `decode-2754-bnf-baluze156-1636: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Avenel prints no letter or summary of f.157r and no plaintext for its cipher runs.** Avenel, *Lettres, instructions
+diplomatiques et papiers d'Etat du cardinal de Richelieu* t.V (1863; covers 1635-37), Internet Archive
+`lettresinstructi05richuoft`, whole `_djvu.txt` OCR (3.0 MB) fetched once and searched by script on 3 Oct 2026:
+- The letters dated 28 Jan to 1 Mar 1636 (OCR lines 22964-23786: the galleys letter "Du ... janvier 1636", Chavigny
+  13 Feb, Angers presidial 21 Feb, the prince of Condé's memoir 16/23 Feb) were read in full. None concerns a Marseille plot,
+  a Gascon informant, Rocca Berti, Levanto, Morgues or Sabran's deputy at Turin.
+- Whole-volume search, text and analyses together: `Rocca` 0, `Levanto` 0, `Bossine` 0, `Guedoua` 0, `entreprise sur
+  Marseille` / `sur Marseille` 0, `Gascon` 1 (an aside on spelling, Nov 1635). `Marseille` has 6 hits, none on a plot
+  (Jean Casimir's arrest; powder stocks for the Lérins fleet; Turkish prisoners for the galleys). `Sabran` has 7 hits,
+  none of them on this letter. The volume's own Vitry/Harcourt letters (the Lérins and "desseing de M. de Vitry" letters,
+  OCR 41993-42006, 60124) name a secret Vitry design for April and "l'entreprise de Morgues", with no names.
+- Also searched, because the gap names the Sourdis/Vitry correspondence: *Correspondance de Henri d'Escoubleau de
+  Sourdis* (1839), Internet Archive `correspondanced00suegoog`, `01suegoog`, `02suegoog` (whole OCR, script search). No
+  Rocca, Levanto, Bossine or Marseille plot. One related context, not a crib: `01suegoog` OCR 4560-4615 prints Meuredor's
+  declaration against Vitry (June 1642). It says that from about October 1635 letters went from Cannes to an
+  officer at Morgues, and that a Nice notary who carried one reply to the governor of Sainte-Marguerite was later hanged
+  at Cannes. f.157r's plain text has a "No[...] banny de Nice nomme Levanto" carrying a letter to Vitry who was made
+  prisoner at Morgues. The two stories may overlap, but neither source names the Gascon informant or any word inside
+  f.157r's cipher runs.
+
+**No crib, so no crib-driven solve.** The step depended on a printed plain text or summary to supply cribs. None was
+found in the two named editions. So no crib test was pre-registered and nothing was scored. A crib invented from the plain
+context (for example guessing the informant's surname) would carry no evidence. The decoy-crib control the brief names
+would have had no real crib to compare against.
+
+Grades (rule 4): no reading claimed (0 H, 0 C, 0 S, 0 M, 0 I). Status word unchanged: **open**. Vision calls 0.
+Requests: archive.org 6 (2 advancedsearch, 4 `_djvu.txt` downloads, >=2 s apart); googleapis.com 0. Report of what was found and
+where it was not found; no novelty class.
+
+## Remaining gaps (GAPS40, 3 Oct 2026)
+Read so far: 0 of 139 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, and the merged f.146r+f.247 table: 5.122 bpc, 0.700 of shuffles as good, positive control 3.654); Avenel t.V and Sourdis Correspondance I-III give no crib (GAPS40).
+- f.157r cipher runs (139 tokens, 40 sign types) - blocker: not-attempted; every reachable key is negative, Sabran's 1636 table is retired for this leaf (reread_trial.tsv), and no printed crib exists in Avenel t.V or Sourdis (GAPS40); next: write specs/decode-2754-bnf-baluze156-1636.json (N=139, K=40, French; tools/data has fr16 and fr18 but no 17th-century French corpus, so check the era match per rule 3 before trusting the judge) and run tools/family_run.py --family homophonic with the matched control first. A CONTROL BELOW GATE there is the measured too-short blocker, ~$2
 - fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
 
-## Escalation (GAPS35, 3 Oct 2026)
+## Escalation (GAPS40, 3 Oct 2026)
 - [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
 - [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636 and their merge, all negative with matched controls
-- [ ] print: Avenel's Richelieu Lettres t.V, a plain summary of the Marseille/Lérins plot to use as a crib
+- [x] print: Avenel t.V whole-volume full-text search and Sourdis Correspondance I-III searched, no letter, summary or crib (GAPS40)
 - [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it
 - [x] image-check: f.157r re-read from native iiif_lines crops, 2 blind Opus passes 90.7% + reconciliation (GAPS35)
 - [n/a] retry: no transient failure to retry this pass
-Verdict: keep going: 1 internal gaps; cheapest next: Avenel t.V crib for the Marseille/Lérins plot, then a crib-driven homophonic solve with a matched control, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: spec plus blind homophonic family_run with matched control first at N=139 K=40 (expected to measure too-short), ~$2
