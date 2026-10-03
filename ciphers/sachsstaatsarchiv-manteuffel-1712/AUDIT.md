@@ -10,7 +10,7 @@ interlinear gloss (period hand) agrees with Krauske's key 17/17 (shuffled p99 5)
 
 | item | what | class | key | safe sentence |
 |---|---|---|---|---|
-| 694/08 f.410 lower block (file 0511), 216 code tokens | Krauske's table applied to an unglossed P.S. (Manteuffel to Flemming, Berlin, Nov 1712, from f.409's own heading per A2-SAX2) | **N3** | `published` (see Key source) | "Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior plaintext or decipherment of this passage was located after the search logged in AUDIT.md, which covered Acta Borussica *Behördenorganisation* vol. 1 (1894) only by word counts." |
+| 694/08 f.410 lower block (file 0511), 216 code tokens | Krauske's table applied to an unglossed P.S. (Manteuffel to Flemming, Berlin, Nov 1712, from f.409's own heading per A2-SAX2) | **N4** (AUDIT2-MANT, 3 Oct 2026; was N3, VERIFY-MANT; superseded safe sentence on the right, current one in "Second adversarial audit" below) | `published` (see Key source) | "Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior plaintext or decipherment of this passage was located after the search logged in AUDIT.md, which covered Acta Borussica *Behördenorganisation* vol. 1 (1894) only by word counts." |
 | 694/08 f.468, 20 code groups | groups carry a period interlinear decipherment on the leaf | **N0** | the leaf's own gloss; Krauske's table agrees 17/17 | "f.468's code groups are already deciphered between the lines in a hand that is probably period; Krauske's table reproduces those glosses." |
 | 694/08 f.467 glosses | period interlinear decipherment (used as judge calibration) | **N0** | the leaf's own gloss | "f.467 carries its own interlinear decipherment." |
 
@@ -120,3 +120,43 @@ whether Nr. 82 is the letter whose P.S. is f.409v-410.
 - "The judge is the limit" is supported only weakly by G, which is a names list and not register-matched. The reading-ready
   basis is the shuffled-key control, confirmed here at 0/100 under two shuffle designs.
 - No over-claim of novelty was found in the folder. Every solver section says "a search result, not a novelty verdict".
+
+## Second adversarial audit (AUDIT2-MANT, account-4, 3 Oct 2026, 17:11-17:25 UTC)
+
+A session separate from the solvers and from VERIFY-MANT. The job was to find the f.410 plaintext in print, starting from the
+N4 step VERIFY-MANT named (Acta Borussica *Behördenorganisation* I read page by page, not only by word counts). No decoding was done.
+
+| family | searched | result |
+|---|---|---|
+| (a) Acta Borussica *Behördenorganisation* I (1894, Schmoller & Krauske), the step VERIFY-MANT named | Internet Archive: nine `bub_gb_*` copies of the series, all djvu text fetched and identified. None is vol. I. `bub_gb_fnM5AQAAIAAJ` is vol. II (1714-20, printed 1898), and the others are vols. IV-IX. Google Books has **vol. I in full view** (`ESf8fHFG9ngC`, `IHM5AQAAIAAJ`, `wu-EWEtCN9sC`, `BlqBSdWlfOMC`, `H8WZD9dm0NQC`, `-y4jtRT_qxAC`). It was searched with the viewer's own search-inside endpoint (`books.google.com/books?id=ESf8fHFG9ngC&jscmd=SearchWithinVolume2&q=...`, JSON at HTTP 200, no captcha), which covers the whole volume's OCR. **Positive controls**: Manteuffel 20+ hits, and every report heading came back with its page: p. 204 (4 June 1712), 256-258 (19 Sept, 4, 7 and 23 Oct 1712), **285 (Nr. 82, Nov 1712, "Graf Dhona"; Nr. 83, 3 and 9 Dec 1712)**, 286, 307, 310 (Nr. 91, the *Nachschrift* of 26 Feb 1713), 321, 357, 359, 381 and 396. Other controls: "Prince Royal" 8 hits, Dhona 20+, Grumbkow 20+, "Chiffre" 4 (pp. 286, 287, 311, including Krauske's notes "Chiffre für Graf Christoph Dhona" and "Chiffre versehentlich statt 10 (= Blaspil)"). **Target terms**: Angleterre, d'Angleterre, Anglois, Anglais, Suedois, Suédois, Suède, Stettin, Stetin, contentement, Danemarc, Dannemarc, Whitworth and Witworth each gave **0**. "reine" gave 2 (p. 137, German "reine"; p. 312, the queen at a 1713 ceremony). "la paix" gave 1 (p. 258, "vivre en paix avec lui", Oct 1712, Krautt/Grumbkow). "son fils" gave 1 (p. 310, Friedrich I's deathbed "mon fils", 1713). "contraire" gave 3, of which p. 285 is Nr. 82 on Dhona's complaisance and does not match f.410. | **f.410's passage is not printed in vol. I.** The volume quotes Manteuffel only on court and administrative matters (Dhona, Ilgen, Grumbkow, Blaspil, Krautt, the King's household). The f.410 subjects (the Queen of England, the Swedes, peace, Stettin) do not occur in it at all. Nr. 91, the one printed *Nachschrift*, is Feb 1713 and on another subject. OCR-conditioned, but the controls hit every relevant report page. |
+| (a) Krauske's other prints | Google Books `inauthor:Krauske` returned 0 items. "Krauske Manteuffel Chiffre" returned only Acta Borussica I and unrelated newspapers. NASG 14-19 had already been grepped (A2-SAX) and was not re-run. | no other Krauske print on these reports or their cipher found |
+| (c) J. G. Droysen, *Geschichte der preußischen Politik* IV.1 (cited on Acta Borussica I p. 286 beside Nr. 82-83) | IA `droysen-geschichte-der-preussischen-politik-v-4-no-1` djvu text read by grep and by eye over the endnotes (Anmerkungen nos. 431-520). Manteuffel is quoted for 9 Feb 1712 (n. 431), 21 May 1712 (n. 485), July 1712 (n. 505), a memoir to Manteuffel on Stettin, mid-1712 (n. 510), 27 Jan 1713 (n. 518, "la reine" = the Prussian queen's illness), and 4, 8 and 19 Feb 1713 (nn. 519-520). The Toronto copy `p1geschichtederpre04droyuoft` was also checked (no Manteuffel; print_check no hits). | **no quotation from a Nov 1712 report and nothing matching f.410**. The Stettin memoir (n. 510) is the same topic, but its text differs. |
+| (e) print_check.py (5 phrases in `phrases.txt`, sources in `sources.tsv`) | IA global full text, Google Books, OpenAlex, CrossRef, HTRC on njp.32101065980920, and Droysen IV.1 | no hit on any phrase in a relevant source. The ia-global and gbooks "hits" are loose word-AND matches in unrelated books (Nevers 1665, Mazarin, Marie Stuart, Scandinavian histories). Semantic Scholar answered 429 after 2 phrases and was not retried. |
+| (b) scholarship on Flemming/Manteuffel | Google Books `inauthor:Haake Manteuffel Flemming` returned 0. "Manteuffel 'reine d'Angleterre' 1712 Berlin Flemming" returned 0. OpenAlex keywords returned the same titles VERIFY-MANT logged. | none. Haake's monographs and the 2016 Wackerbarth paper were still **not read in full**. |
+| JSTOR | VERIFY-MANT's 3 rows stand. No new row: they cover both families. | queued, non-blocking (rule 10 template) |
+
+No LOCAL-QUEUE row was written: vol. I was reachable in full view from the cloud, so the HathiTrust seq 434-440 read is not needed for this question.
+
+**Class: N4** (revised from N3). The principal edition that prints decoded Loc. 694 extracts, the edition made by the man who made
+the key, was searched in full text with passing controls, and it does not carry this passage. The standard narrative history,
+which quotes these reports, was read at its endnotes. NASG, the holding archive's records, DECODE, the solver repositories
+and the open indexes were covered by VERIFY-MANT and here. Not excluded: internal or unpublished work, Haake's Flemming
+monographs and the Wackerbarth paper (scholarship read only through search APIs), and the unanswered JSTOR rows. The key source
+stays `published` (Krauske's 1893 manuscript table, unprinted). It is not `ours`, so the "nearest equivalent of a first" wording does not apply.
+
+**Safe sentence (current):** "Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed
+cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24
+of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica,
+*Behördenorganisation* I (1894) or quoted in Droysen's *Geschichte der preußischen Politik* IV.1, searched in full text on
+3 Oct 2026 (log in AUDIT.md)."
+
+**Unsafe:** "first decipherment", "previously unread", "Krauske's key confirmed", "the reading is certain". The decode is partial
+(M 48, U 24), and the fr18 judge FAILs it (-1.038 vs real_p05 -0.99). Only the shuffled-key controls support it.
+
+Postmortem: VERIFY-MANT's note that "the 9 *Behördenorganisation* copies on archive.org are later volumes" holds, since vol. II and vols. IV-IX
+are there and vol. I is not. Its date "Nr. 82, Berlin 23 Nov 1712" was not re-read at the heading itself: the search snippet shows
+"... November 1712 ... Loc. 694. Graf Dhona" on p. 285, and the day number was cut off. The note is otherwise correct. Fixed `tools/print_check.py`
+l. 303, which crashed on an OpenAlex work with a null `display_name`.
+Requests: archive.org 24 (advancedsearch 3, metadata 7, djvu 13, print_check 1), books.google.com 37 (search-inside
+JSON, 1.6 s apart, no challenge), www.googleapis.com 12, be-api.us.archive.org 10, api.openalex.org 6, api.semanticscholar.org 4
+(429), api.crossref.org 1.

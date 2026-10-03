@@ -300,7 +300,7 @@ def check_openalex(queries, net, rows):
         if d is None:
             rows.append([label, 'openalex', f'not searched ({st})', '', url]); continue
         res = d.get('results', [])
-        det = '; '.join(f"{w.get('display_name', '')[:60]} ({w.get('publication_year')}) {w.get('doi') or w.get('id')}"
+        det = '; '.join(f"{(w.get('display_name') or '')[:60]} ({w.get('publication_year')}) {w.get('doi') or w.get('id')}"
                         for w in res)
         rows.append([label, 'openalex', f"{d.get('meta', {}).get('count', 0)} work(s)" if res else 'no hits', det, url])
 

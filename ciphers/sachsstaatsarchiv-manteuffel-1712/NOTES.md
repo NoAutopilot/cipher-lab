@@ -480,3 +480,6 @@ most likely compiled his table from such glosses (I), so it shows that the table
 separately test his work. (3) New lead: Acta Borussica *Behördenorganisation* I (1894, Schmoller & **O. Krauske**) prints
 decoded extracts of these Loc. 694 reports (Nr. 82, Berlin 23 Nov 1712, and others). Word counts show no "Angleterre" anywhere in
 the volume, so f.410's passage looks unprinted there; a page read of seq 434-440 (HathiTrust njp.32101065980920) is next.
+AUDIT2-MANT (3 Oct 2026): done another way. Vol. I is in full view on Google Books (ESf8fHFG9ngC), and it was searched in full text
+with passing controls (every Manteuffel report heading pp. 204-396 found). Angleterre, Suédois, Stettin and contentement are 0, and Droysen
+IV.1's endnotes quote no Nov 1712 report. AUDIT.md now gives N4, "no prior decipherment located"; see its second-audit section.
