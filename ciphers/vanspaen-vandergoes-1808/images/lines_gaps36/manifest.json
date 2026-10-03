@@ -566,6 +566,27 @@
     "prominence": 40.0
    },
    "date": "03 Oct 2026"
+  },
+  {
+   "crop": "s85top_L01.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_2.01.08_281_0085.jpg",
+   "box": [
+    2620,
+    1141,
+    5000,
+    1241
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 236,
+    "distance": 190,
+    "prominence": 30.0
+   },
+   "date": "03 Oct 2026"
   }
  ]
 }

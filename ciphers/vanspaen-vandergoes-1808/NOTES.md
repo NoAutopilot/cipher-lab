@@ -339,11 +339,53 @@ Step: the Verdict's cheapest step, batch 1 (137-139 + 75-99). Locate only; nothi
   host. Vision 2 (one contact sheet, one header-crop sheet). Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read;
   the two quoted first rows are for matching only).
 
+## GAPS36-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): scans 81-82/85 matched row by row to Bourdeau's transcription
+
+Step: the Verdict's cheapest step. Line crops cut from the committed natives with
+`python3 tools/iiif_lines.py --image images/NL-HaNA_2.01.08_281_0081.jpg --region 2420,760,2480,3500 --prefix s81
+--max-width 2480 --distance 190 --prominence 40 --out images/lines_gaps36 --debug` (likewise 0082 `600,380,2000,1450`
+s82; 0085 `2620,1250,2380,1950` s85, and `2620,1000,2380,400` s85top for the annex's first row, which the first 0085
+region missed): 28 crops, 1.1 MB. Two blind Opus passes over the crops only (A forward, B reverse order), neither shown
+Bourdeau's file, then a reconciliation by this worker from the crops. Files: `gaps36/reconciled.tsv` (the image reading),
+`gaps36/compare.py` (`--check` exits 0), `gaps36/compare.tsv`. Bourdeau's files snapshotted unmodified at
+`sources/cyphersolver/2026-10-03/spaen1808/` (HEAD a439937; credit D. Bourdeau, cyphersolver, CC BY 4.0).
+
+- **Identity confirmed.** The image's 26 figure rows (19 letter on scans 81-82, 7 annex on scan 85) are Bourdeau's 26
+  rows in the same order and line breaks. DECODE R1941's "14 Jan letter" is NA No 4 (Dusseldorf 12 Jan, received 14 Jan),
+  and its "15 Jan annex" is No 6.
+- **Pass agreement:** A and B gave the same groups on all 25 rows both read (296 groups). They differed only in "?"
+  alternatives and in one dash. Each pass's uncertain groups: 885?/548?/1197? (A); 387?/1138?/1339?/613?/1165?/548?/455?/
+  1197?/693?/1093? (B). The reconciler kept the shared reading at every one. Two remain open: 455 (middle digit
+  overwritten, 3/5) and 1197 (or 1191).
+- **Against Bourdeau: 283 of 303 of his groups agree (93.4%).** The image has 304 groups: 19 of his groups are read
+  differently, and one is missing from his row 13. He read them from DECODE's photographs of photocopies, so
+  rule 2 (image over transcription) applies:
+  - row 4 793->795; row 12 392->592; row 13 **134 missing** (image: ...373 134 1125...; his row 13 has 11 groups, the
+    image 12); row 15 306->506; row 16 293->493; row 17 62->64, 324->334, 275->375; row 18 541->511 (with a dash);
+    row 19 836->886, 457->455?; annex row 1 142->442; annex row 4 1075->1073, 462->464; annex row 5 1293->1093,
+    291->491, 391->521, 276->376; annex row 6 823->623, 142->442; annex row 7 275->375.
+  - In the confusions, his 2 is read as 4 or 3 eight times, 3 as 5 three times, and 1 as 4 twice. So the hand's 2/3/4
+    under photocopy is the weak point, more than the 3/5 his note warned of.
+  - Statistics that change: 442 now occurs twice in the annex (his 142 twice); 493 rises from 6 to 7; 375 occurs 3 times
+    in all (his 275 twice). The trigram 602 441 373 is unchanged (three times). The group 134 occurs twice: letter row
+    13 and the letter's last group.
+- **His uncertain groups:** his letter_groups.txt and annex_groups.txt carry no "?" mark (transcription.txt's header
+  says uncertain readings are marked "?", but none is). So there was no flagged group to settle. The image corrects
+  the 20 differences above instead.
+- **No decipherment, interlinear or marginal gloss** on scans 81, 82 or 85. Both passes and the reconciler saw only
+  show-through of figures from the verso (s81 L02-L06, s82 L03-L04), a few blots, and a colon after 785 and after
+  1165-. No key material on these leaves.
+- Annex closing, read from the crop: "Ik heb de eer met de volmaakste hoogagting te verblyven, / HoogEdele Gestrenge Heer,".
+- Grades: no plaintext reading, so H 0, C 0, S 0, M 0, I 0 (ciphertext only). Of the 304 image groups, 302 have
+  both passes agreeing and 2 are uncertain (455, 1197).
+- Vision calls: 2 blind passes + 1 reconciliation (the worker's own views of three composites). Requests: github.com 1
+  sparse clone (Bourdeau's files were not on disk); no archive host contacted.
+
 ## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26 and GAPS34, 3 Oct 2026)
-Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); nothing decoded
+Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 147 of 360 scans
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
-- identity check and the numbered sibling series - blocker: not-attempted; scans 81-82/85 not yet matched group by group to Bourdeau's letter_groups.txt/annex_groups.txt, and dispatches No 1-3 and 5 (siblings, possibly in the same figures) and scans 1-74 (fetched, not viewed) are unread; next: match the first and last row of each page against Bourdeau's transcription (no vision beyond the committed native images), ~$1, then view scans 1-74 at 450 px for No 1-3/5, ~$6
+- numbered sibling series - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36: 283/303 groups agree, 20 corrections from the image incl. one omitted group, no gloss on 81/82/85; image reading in gaps36/reconciled.tsv); dispatches No 1-3 and 5 (siblings, possibly in the same figures) and scans 1-74 (fetched, not viewed) are unread; next: view scans 1-74 at 450 px for No 1-3/5, ~$6
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; locate No 1-3 and 5 in inv. 281 (scans 1-74 unviewed) and check which are in figures
@@ -351,6 +393,6 @@ Read so far: 0 of 303 groups (228 letter + 75 annex, Bourdeau's transcription); 
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
 - [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
-- [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); a transcription check against Bourdeau's is the next use
+- [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: match scans 81-82 and 85 row by row against Bourdeau's letter_groups.txt and annex_groups.txt from the committed native images, ~$1, then scans 1-74 at 450 px for dispatches No 1-3 and 5, ~$6
+Verdict: keep going: 1 internal gap; cheapest next: view inv. 281 scans 1-74 at 450 px for dispatches No 1-3 and 5, ~$6, then read the clear January 1808 letters (83, 87, 89-94) for a crib
