@@ -282,3 +282,43 @@ $ python3 tools/intake_gate_check.py esp318-sicilia-1503
 esp318-sicilia-1503: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 (exit 0)
 ```
+
+## Premise check (GF4-BATCH3, account-4, 3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` (try to prove the item already done), before any first test.
+**Result: not found on (a) (b) (c); (d) one recipient-side edition not page-read (a gap, named below); status stays `open`.**
+
+- **(a) Decipherments the folder mentions -- not found.** The folder names three: Lasry's 2022 "approximate"
+  alphabet (item **95**, a different letter, Tomokiyo GL.htm), Parisi 2020's reading (item **5**, and Bourdeau's
+  partial no. 92), and the key sources Bergenroth's *Gran cifra* sheet (BNE MSS 20.211/52) and the "Cifra del
+  visorrey" (BRAH 9/15 ff.1-6). The last two are keys, not decipherments of no. 94. Bourdeau's copy of Galende
+  Díaz 1994 (`targets/esp318/lit/galende1994.txt`, grepped 3 Oct 2026) lists "Cifra del visorrey (folios 1 a 6)"
+  in an inventory (l.340) and nothing that reproduces it or reads a 1503 Messina letter. No interlinear or gloss on
+  ff.120r-121v (f.121v carries only the superscription, the seal and the endorsement "Del virrey de Siçilia en
+  çifra", Bourdeau `targets/esp318/NOTES.md` l.38-40: "There is no decipherment anywhere in the volume for nos.
+  93, 94 or 95").
+- **(b) Other solvers' working files -- not found.** Fresh shallow clone dbourdeau/cyphersolver main 2341682
+  (3 Oct 2026), `targets/esp318/`: working files exist for no. 92 (`ct92_*`, `f116_reading.md`), no. 93
+  (`ct93_eye.txt`, `solve93.py`) and no. 95 (`f122r_*`, `*95.py`) -- **nothing for no. 94** (no `f120`/`f121` text,
+  no rendering, no key run); his `keys/` holds only `cifra_general.json/.txt`, which his own notes exclude for 93/94
+  by code-initial range. Status line l.3: "nos. 94 and 95 f. 122v unread"; gaps l.275 "No. 94 ... blocker:
+  not-attempted; never transcribed". Aymeloglu (main d2800bb): nothing for Espagnol 318 no. 94.
+- **(c) Physical neighbours -- not found.** Gallica btv1b52503046q, 1400 px, 3 Oct 2026: canvas 451 (the page
+  facing f.120r) and canvas 456 (after f.121v) are both blank modern guard sheets of the binding (the volume mounts
+  each letter between blanks); no slip, no clear copy laid in. ff.120r-121v themselves are on disk (canvases
+  452-455). Item 95 (ff.122-122v, canvases 458-459) is a separate wholly-cipher 1497 piece, not a clear copy.
+- **(d) Recipient's side -- not found; one gap.** Recipient Ferdinand the Catholic. Bergenroth CSP Spain vol. I and
+  Supplement read in full above (no entry). Google Books API (`country=US`, key), interior phrases and names, not the
+  opening: `"Fernando de Andrada" Mesina 1503 virrey` (3: a 1994 biography of Fernando de Andrade, encyclopaedias),
+  `"virrey de Sicilia" "27 de abril de 1503"` (5: Cerignola narratives), `"commo esto passamos en anocheçiendo"`
+  (0), `"Lanuza" virrey Sicilia 1503 carta cifra` (1: *Los fondos documentales del archivo del reino de Aragón*
+  (2000), an inventory line "Cartas del virrey de Sicilia a don Juan de Lanuza. Otra de Claver en cifra" -- other
+  letters, a lead for sibling material, not this one). **Gap:** A. de la Torre, *Documentos sobre relaciones
+  internacionales de los Reyes Católicos* vol. VI (1498-1504, Madrid 1949-66), the recipient-side documentary
+  edition, is snippet-only; its index shows "Sicilia. 1498: 78-80, 188 ..." but two title-restricted queries for
+  "virrey de Sicilia"/Mesina 1503 returned 0, so whether it prints a register copy or summary of this letter is
+  unverified -- a LOCAL-QUEUE/HathiTrust page read of vol. VI's index under "Sicilia" and "Lanuza" settles it.
+
+Requests this pass: gallica.bnf.fr 2, googleapis.com 7, github.com (clone shared with decode-2754). Next cheap test
+(Bourdeau's own named step, unrun by anyone): two-pass transcription of ff.120r-121v from the crops already on disk,
+then Bergenroth's Gran-cifra list against it with a matched control.
