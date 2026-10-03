@@ -15,3 +15,18 @@ Script: scripts/bigram_prior.py (seed 156). Pre-registered in NOTES.md before sc
 | sib 1865 | 28 | 0.0185 | 0.0185 | 0.125 | 0.048 | 0.440 | below power both variants: no licence |
 
 Status of the hypothesis: untested-by-this-tool for design A (not refuted); open for design B.
+
+## Ad 1 (1865 sign script), Laura's bars-x-dots component rule -- GAPS160, 3 Oct 2026
+
+Statistic T: mean add-one bigram log10 prob of "timeto"+X+"shall" (clear frame as crib); W: word-segmentation coverage.
+Controls at N=10: A 2000 shuffled-sign orders, B 2000 random-sign strings over the rule's 21 cells, C 104 sibling
+rules. Positive control: 2000 corpus windows over a-u. Script: scripts/laura_rule.py (seed 160). Pre-registered in
+NOTES.md before scoring (commit 577aeea6).
+
+| text | X | target T | A p95 (tail) | B p95 (tail) | C rank | W vs B p95 | power (T / W) | verdict |
+|---|---|---|---|---|---|---|---|---|
+| ad 1, our table | bencabuchp | -1.1405 | -1.2895 (0.002) | -1.2026 (0.019) | 1/104 | 0.6 vs 0.6 | 0.981 / 0.868 | supported on T (design candidate); W does not clear |
+| ad 1, Laura's sign 04 | bendabuchp | -1.1074 | -1.2555 (0.001) | -1.2045 (0.005) | 1/104 | 0.5 vs 0.6 | same | same |
+
+Status: supported as a design candidate on letter-bigram order (post-hoc rule; C weak by construction); no word read,
+10 letters M.

@@ -1,0 +1,4 @@
+text	X	T	A_p95	A_tail	B_p95	B_tail	C_rank	C_n	W	WA_p95	WB_p95
+target-ours	bencabuchp	-1.1405	-1.2895	0.002	-1.2026	0.0185	1	104	0.6	0.5	0.6
+target-laura	bendabuchp	-1.1074	-1.2555	0.001	-1.2045	0.005	1	104	0.5	0.6	0.6
+positive	corpus a-u windows	median -1.0589	powerT 0.981		powerW 0.868
