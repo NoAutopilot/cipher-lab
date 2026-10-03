@@ -1,0 +1,12 @@
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec ciphers/riksarkivet-r4282-1628/gaps67/spec_gaps67.json slug riksarkivet-r4282-1628
+ciphertext: 32 message(s), N=1090 signs, K=34 distinct, tokens=tsv
+corpora: tools/data/sv17/rikskanslerenax00akadgoog.txt.gz, tools/data/sv17/rikskanslerenax00palagoog.txt.gz, tools/data/sv17/rikskanslerenax00styfgoog.txt.gz, tools/data/sv17/rikskanslerenax01palagoog.txt.gz, tools/data/sv17/rikskanslerenax02akadgoog.txt.gz, tools/data/sv17/rikskanslerenax03akadgoog.txt.gz
+control seeds [1, 2, 3, 4, 5], restarts 16, gate 0.6, params profile=target,noise=0
+row -> ciphers/riksarkivet-r4282-1628/HYPOTHESES.md; decode -> ciphers/riksarkivet-r4282-1628/families/homophonic-1-profile=target,noise=0-gaps67controlsv1.txt
+CONTROL seed 1: N=1090 K=34 recovery 0.986 score -2481.83
+CONTROL seed 2: N=1090 K=34 recovery 0.993 score -2384.53
+CONTROL seed 3: N=1090 K=34 recovery 0.989 score -2455.72
+CONTROL seed 4: N=1090 K=34 recovery 0.997 score -2253.53
+CONTROL seed 5: N=1090 K=34 recovery 1.000 score -2362.16
+CONTROL mean 0.993 gate 0.6 met; row appended to ciphers/riksarkivet-r4282-1628/HYPOTHESES.md

@@ -1,0 +1,9 @@
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)
+spec ciphers/riksarkivet-r4282-1628/gaps67/spec_gaps67.json slug riksarkivet-r4282-1628
+ciphertext: 32 message(s), N=1090 signs, K=34 distinct, tokens=tsv (target letters shuffled, seed 2, false-positive floor)
+corpora: tools/data/sv17/rikskanslerenax00akadgoog.txt.gz, tools/data/sv17/rikskanslerenax00palagoog.txt.gz, tools/data/sv17/rikskanslerenax00styfgoog.txt.gz, tools/data/sv17/rikskanslerenax01palagoog.txt.gz, tools/data/sv17/rikskanslerenax02akadgoog.txt.gz, tools/data/sv17/rikskanslerenax03akadgoog.txt.gz
+control seeds [1], restarts 16, gate 0.6, params profile=target,noise=0.034,shuffle_target=2
+row -> ciphers/riksarkivet-r4282-1628/HYPOTHESES.md; decode -> ciphers/riksarkivet-r4282-1628/families/homophonic-1-shuffle2-profile=target,noise=0.034-gaps67shuffledta.txt
+CONTROL seed 1: N=1090 K=34 recovery 0.929 score -2596.46
+TARGET best score -3329.540; decode -> ciphers/riksarkivet-r4282-1628/families/homophonic-1-shuffle2-profile=target,noise=0.034-gaps67shuffledta.txt; judge: FAIL language: score=-1.505, null_p99=-1.917, real_p05=-0.879, real_median=-0.815, mode=both, N=1090
+row appended to ciphers/riksarkivet-r4282-1628/HYPOTHESES.md

@@ -182,6 +182,14 @@ LANG_CORPORA = {
     # de16; a spec opts in with "judge": {"language": "de17"}. See tools/data/de17/README.md (per-fold FN and spread).
     "de17": [DATA / "de17" / f"{i}.txt.gz" for i in ("dieverhandlungen01irme", "dieverhandlungen02irme",
              "dieverhandlungen03irme", "urkundenundacten1601berluoft", "urkundenundacte32kommgoog")],
+    # sv17 (3 Oct 2026, GAPS67, account-4): Swedish chancery letters of about 1620-1650 as printed in their own spelling in
+    # Rikskansleren Axel Oxenstiernas skrifter och brefvexling (six archive.org volumes, 1888-97 Google scans), Latin and
+    # German letters and editors' prose filtered out, å folded to a at build time, each capped at 450k folded letters --
+    # for riksarkivet-r4282-1628 tested as Swedish. A spec opts in with "judge": {"language": "sv17"}. See
+    # tools/data/sv17/README.md (per-fold FN and spread).
+    "sv17": [DATA / "sv17" / f"{i}.txt.gz" for i in ("rikskanslerenax00akadgoog", "rikskanslerenax00palagoog",
+             "rikskanslerenax00styfgoog", "rikskanslerenax01palagoog", "rikskanslerenax02akadgoog",
+             "rikskanslerenax03akadgoog")],
     # es (25 Sept 2026, LANE R6 Y8): tools/data/es17/ -- early-17th-c. Spanish prose (Cervantes, Quevedo),
     # ~1.92M letters folded, built for espagnol142-mercy-1648 (a 1648 letter). See tools/data/es17/README.md.
     # es17c (25 Sept 2026, LANE R6 MJ): tools/data/es17c/ -- 1643-1647 Spanish court-newsletter prose

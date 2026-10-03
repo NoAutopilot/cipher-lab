@@ -1,0 +1,8 @@
+corpus=sv17 held_out=rikskanslerenax00akadgoog.txt.gz N=1090 samples=200 real_p05=-0.873 false_negatives=134/200 (67.0%)
+corpus=sv17 held_out=rikskanslerenax00palagoog.txt.gz N=1090 samples=200 real_p05=-0.888 false_negatives=97/200 (48.5%)
+corpus=sv17 held_out=rikskanslerenax00styfgoog.txt.gz N=1090 samples=200 real_p05=-0.893 false_negatives=64/200 (32.0%)
+corpus=sv17 held_out=rikskanslerenax01palagoog.txt.gz N=1090 samples=200 real_p05=-0.884 false_negatives=103/200 (51.5%)
+corpus=sv17 held_out=rikskanslerenax02akadgoog.txt.gz N=1090 samples=200 real_p05=-0.883 false_negatives=34/200 (17.0%)
+corpus=sv17 held_out=rikskanslerenax03akadgoog.txt.gz N=1090 samples=200 real_p05=-0.883 false_negatives=146/200 (73.0%)
+corpus=sv17 TOTAL false-negative rate: 578/1200 (48.2%)
+corpus=sv17 per-fold spread: 17.0-73.0% (4.3x)
