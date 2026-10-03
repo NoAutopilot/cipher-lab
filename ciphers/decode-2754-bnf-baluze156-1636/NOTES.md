@@ -575,3 +575,70 @@ row once a verifier has looked).
 Requests this pass: gallica.bnf.fr 13 (2 SRU, 1 manifest, 7 probe images at 1000-1400 px, 3 native regions; >= 1.5 s
 apart, browser UA, no 403/429), archivesetmanuscrits.bnf.fr 1. Subagents: 2 blind Opus passes. Cost: the
 orchestrator's get_session figure.
+
+## fr.4140 Sabran 1636 sign-inventory sweep (FT4c, account-4, 3 Oct 2026)
+
+Step (1) of FT4b's "Next steps": a shape-inventory sweep (no alignment, no reading) of Sabran's other 1636 cipher
+letters against f.157r's signs. Intake gate before work: `open (line 1) ... EXIT 0`.
+
+**Pre-registered before scoring** (commit e7df7e20, `PREREG_sweep.md`, `sweep_inventory.py`). The statistic is R, the
+share of DC8's 28 recurring sign classes (n >= 2) that appear in a letter's cipher. D counts how many of DC8's numerals
+9/7/12/10/94 appear. A letter is a candidate if R >= 0.921 and D >= 2. **Calibration result, run before any letter was
+read:** the three known non-keys already reach R 0.643 (f.146r, blind two-pass, D 0), 0.714 (Servien 1632, D 3) and
+0.821 (Lasry 1631, D 3). The draft gate, f.146r + 0.15, would have passed the Lasry non-key, so the gate was moved to
+the highest control + 0.10 in the same commit. In this family the shape inventory is close to its ceiling: Sabran's
+tables share their shapes and differ in their values.
+
+**Where the letters are.** Finding aid cc50537t (fetched 3 Oct 2026) lists 33 Genoa letters, ff.197-591, items
+144-176. Seventeen of them are "avec chiffre et déchiffrement", but the aid does not say which. It also lists f.247
+"Advis particullier du Sr de Sabran ... château de Final. Avec chiffre et déchiffrement". Folio stamps were read from
+one contact sheet of 41 corner crops (vision call 1). That sheet fixes f.198 = canvas 350, 200 = 352, 207 = 363,
+208 = 364, 213 = 371, 244 = 420, 245 = 421, 247 = 425, 254 = 436 and 262 = 448. The unstruck stamp is the aid's
+numbering. With the earlier anchors, `tools/gallica_folio.py` fits canvas = 1.71 x folio + 14 (inconsistent offsets,
+blank versos imaged), which puts fr.4140's last canvas (481) near f.273. **So about 24 of the 33 Genoa folios (276-591)
+are in fr.4141, which Gallica SRU does not return. Most of the 17 cipher letters cannot be reached from the cloud.**
+
+**Scored.**
+
+| unit | R | D | candidate |
+|---|---|---|---|
+| control f.146r (same family, not the key) | 0.643 | 0 | control |
+| control Servien 1632 (not the key) | 0.714 | 3 | control |
+| control Lasry fr.4134 1631 (not the key) | 0.821 | 3 | control |
+| f.247 Final advis (c425, one 1500 px look, grade M) | 0.679 | 0 | **no** |
+
+- **f.247** (vision call 2) has a mixed cipher with an **interlinear period decipherment** (glosses "Varigoti", "Loüan",
+  "Boneti", "au chasteau de Final", "trois cent hommes"). Its signs at this resolution are x, an epsilon-E, 3/z, o, r,
+  ll, tt, h, n, nn, u, d, a, p, g, y, b, c, 4, 6, Φ and t.
+- **f.207** (3 Sept, Genoa) and **f.254** (27 Sept, Genoa) were checked side by side in vision call 3. Both are plain
+  French on the recto with no cipher run, so neither has an inventory to score. Of the 17 cipher letters, at most 7
+  remain in fr.4140: ff.197, 203, 235, 238, 240 and 252 are not yet located (estimated canvases 351, 362, 416, 421,
+  425 and 446 drift by ±5), plus any cipher on the versos.
+- f.247 sits inside the control band (0.643-0.821) and shows none of DC8's numerals. That is the same picture as
+  f.146r, a same-family table with no sign of DC8's numeric codes. Under the pre-registered calibration limit this
+  is **no evidence for or against** f.247's table being f.157r's key. Shapes cannot separate Sabran's tables, which
+  is why f.146r shares 18 of 28 classes and still reads at the shuffle median.
+
+**Verdict.** The inventory sweep cannot do what step (1) asked of it. Calibrated against three known non-keys, the
+statistic has no headroom in this family, and the one reachable cipher letter scored inside the control band. Only
+a values test can tell Sabran's 1636 tables apart: rebuild a table from its cipher-plus-decipherment pairs, then run
+the f.157r trial, as FT4b did for f.146r. **f.247 is the best next leaf for that.** Its decipherment is interlinear,
+so it aligns more easily than f.146r/f.151r, it is Sabran's own work from the same months, and it shares DC8's x and
+epsilon-E, which f.146r lacks. Grades (rule 4): no reading claimed; inventories are grade M. Status word unchanged:
+**open**. Vision calls used: 3 of 4. Requests: gallica.bnf.fr 44 (41 corner crops, 3 page views; >= 1.6 s apart,
+browser UA, no 403/429), archivesetmanuscrits.bnf.fr 1. No subagents.
+
+## Remaining gaps (FT4c, 3 Oct 2026)
+Read so far: 0 of 137 f.157r tokens read; four period/published keys tested negative (two Lasry, Servien 1632, f.146r 1636).
+- f.157r cipher runs (137 tokens) - blocker: not-attempted; no key matches yet, sign inventory cannot discriminate (sweep_result.tsv); next: rebuild the f.247 Final-advis key from its interlinear decipherment (iiif_lines crops of canvas 425, 2 blind passes + reconcile, interlinear_align, leaf control) and run fr4140_trial-style test on f.157r, ~$5
+- fr.4141 Genoa cipher letters (ff.276-591, most of the 17) - blocker: not-attempted; Gallica SRU returned no record for Français 4141 (3 Oct 2026), and the catalogue sub-unit's own availability flag has not been read; next: read the BnF archivesetmanuscrits sub-unit FRBNFEAD000050537_a19860114 for a digitised-document link, else file a LOCAL-QUEUE row, ~$1
+
+## Escalation (FT4c, 3 Oct 2026)
+- [x] siblings: fr.4140 f.146r key and the f.247/207/254 sweep (this section)
+- [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
+- [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, all negative with matched controls
+- [ ] print: Avenel's Richelieu Lettres t.V, a plain summary of the Marseille/Lérins plot to use as a crib
+- [ ] key-rebuild: f.247's interlinear-deciphered table (planned next step)
+- [ ] image-check: re-read f.157r for overbars and 6/b, 4/crossed-tail-a against Sabran's own sign shapes
+- [n/a] retry: no transient failure to retry this pass
+Verdict: keep going: 2 internal gaps; cheapest next: read the fr.4141 catalogue sub-unit's availability flag (~$1), then rebuild the f.247 key from its interlinear decipherment and test it on f.157r, ~$5

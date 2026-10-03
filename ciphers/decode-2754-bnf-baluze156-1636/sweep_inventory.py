@@ -12,7 +12,8 @@ Controls: f.146r (blind two-pass inventory), Servien 1632 and Lasry fr.4134 1631
 their R values come from on-disk inventories and can differ from each other and from any letter.
 Letter inventories: sweep_inventories.tsv (letter, folio, canvas, signs space-separated, note).
 --check: exits 1 if sweep_result.tsv is stale."""
-import csv, sys, collections
+import csv, sys, collections, os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 NUM = {'9', '7', '12', '10', '94'}
 
 def rows(path):
