@@ -182,5 +182,47 @@ the sent entries is bound in mssEC 15 (172 page texts harvested 19 Sept). Pages 
 re-checked this pass), and the AUDIT.md verifier lists the Lincoln Collected Works, Sears' McClellan and
 Nicolay-Hay. Recipient-side papers for the unprinted residue (Halleck's, Buell's received telegrams; Papers of U. S.
 Grant vol. 4 for Feb 1862) were not searched this pass; next: grep Papers of U. S. Grant vol. 4 and OR vols. 9-12
-for the residue's dates, ~USD 1.5.
+for the residue's dates, ~USD 1.5. [Grant vol. 4 half done 3 Oct 2026, GAPS110 below: no hit; OR vols. 9-12 remain.]
 Not found-solved: the residue (about 296 entries) is not decoded in any source checked.
+
+## GAPS110-eckert-1862 (3 Oct 2026, account-4)
+
+Step run: the Premise check (d) next step, its first half -- Papers of Ulysses S. Grant vol. 4 (ed. Simon, 1972;
+covers 8 Jan-31 Mar 1862). Internet Archive item `papersofulyssess0004gran` (lending-only: `inlibrary`,
+`printdisabled`), so `_djvu.txt` is not served; searched with be-api full-text search
+(`be-api.us.archive.org/fts/v1/search?q=...&identifier=papersofulyssess0004gran`), 1.6 s apart, script-collected
+snippets only (be-api returns at most 5 highlight snippets per query and no real page number, per CLAUDE.md
+access item 3, so this is a presence/absence search, not a page-cited one).
+- Positive control: "unconditional and immediate surrender" (USG to Buckner, 16 Feb 1862) -> 1 hit, snippet
+  "No terms except an unconditional and immediate surrender can be accepted". The route reads this volume.
+- No hit (0 snippets): Eckert; Stager; "Ciphers Sent"; "Lincoln to"; "Lincoln to USG"; "Stanton to USG";
+  "Scott to USG"; the ledger's code words Alden, Alvord, Andes, Saffron, Shylock, Lonesome, Torrent, Sermon,
+  Merlin, Bangor, Bengal, Applause; T2's phrase "congratulate you upon the result".
+- Hits, read, none an mssEC 15 entry: "cipher" (5) and "cypher" (1) are all editorial source lines for Halleck's
+  own books ("Telegrams Sent in Cipher by Gen. Halleck", RG 393, Dept. of the Mo.) and one received telegram
+  ("operator will send to me in cypher if you desire it"); "McClellan to USG" (1) is 13 Jan 1862, before the
+  ledger opens (1 Feb); "Stanton to" (1) is Lincoln directing Stanton about Buell; "Thomas A. Scott" (5) are Scott's
+  own letters and telegrams from the West to Stanton and Foote (received side for Washington, not sent);
+  "War Department", the three Feb dates and "Dispatch received" return Grant-side material in the snippets seen.
+- Result: Papers of U. S. Grant vol. 4 prints no War Department telegram of Feb-Mar 1862 to Grant in the snippets
+  returned and none of the ledger's code words; it adds no known plaintext for the residue. The one lead it gives is
+  a different source: Halleck's own "Telegrams Sent in Cipher" books (NARA RG 393, Dept. of the Missouri) --
+  recorded, not pursued (brief scope). Limit: with 5 snippets per query, a date query cannot list every telegram
+  of that date; the negative is conditional on the query set above.
+- Requests: archive.org advancedsearch 1, be-api.us.archive.org 40. No vision, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries (about 3%), all ten N1 (section 4, AUDIT.md)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; no transcription of them is committed and their dates and recipients are not listed on disk (section 5); next: grep OR ser. I vols. 9-12 (IA full text) for Washington-sent telegrams of Feb-July 1862 and match them to the volunteer transcription of the residue pages, ~$1.5
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 60 distinct words seen in the first 60 pages, 31 fixed (section 5); only more print matches narrow the rest
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
+
+## Escalation (3 Oct 2026)
+- [ ] siblings: received ledgers mssEC 01-03 may show code words resolved (section 5 (b)); not yet read for that
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3)
+- [ ] print: OR vols. 7-8 done (ten matches); Papers of U. S. Grant vol. 4 done 3 Oct 2026, no hit; OR vols. 9-12 next
+- [ ] key-rebuild: extend the code-word table from new print matches (needs the print step first)
+- [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 3 internal gaps; cheapest next: grep OR ser. I vols. 9-12 for Washington-sent telegrams of Feb-July 1862, ~$1.5
