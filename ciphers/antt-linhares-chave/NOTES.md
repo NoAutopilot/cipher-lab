@@ -1006,7 +1006,7 @@ What settles each gap (read only if the gate passes):
   also reported: whether "Junto, prepos." heads col 3 as its own flush-left line.
 - If the counter's rank-15 or rank-19 line is unlocated/garbled, that gap stays as it is and the job says so.
 
-### Result (A1B-LIN-HOCR, 3 Oct 2026, 16:46 UTC): calibration FAIL -- counter not licensed, target columns not run
+### Result (A1B-LIN-HOCR, 3 Oct 2026, 16:44 UTC): calibration FAIL -- counter not licensed, target columns not run
 
 `python3 hocr/hocr_column_count.py <scratchpad>/newpocketdiction00viey_hocr.html --calibrate hocr/calibration.tsv`
 (output `hocr/calibration_result.tsv`, exit 1): **hit 21, MISS 12, unlocated 0 of 33 -> FAIL** at TOL 20. (The
