@@ -1,7 +1,7 @@
 # taurello-roma-1527
 
 Status: blocked
-Standard edition not opened: Ulysse Robert, "Philibert de Chalon, prince d'Orange 1502-1530. Lettres et documents" (Boletin RAH 1902, listed on cervantesvirtual.com, which is Cloudflare-blocked to this environment) and Sanuto/Pastor appendices were not read by this worker; archive.org full-text search (be-api) for Taurello+Orange+Vetralla returned 29 hits, none naming Pietr'Antonio Taurello's 24 June 1527 letter (hits were Murray handbooks and unrelated indexes), and the phrase "Pietrantonio Taurello" returned 0.
+Recipient-side edition opened 3 Oct 2026 (A2P4-TAUR): Ulysse Robert, "Philibert de Chalon, prince d'Orange, vice-roi de Naples, 18 mars 1502-3 août 1530" (Paris 1902), full OCR of both archive.org scans (philibertdechalo00robe, philibertdechal00robegoog) grepped for Taurello/Torello/Vetralla/24 juin: 0 hits. Sanuto, Pastor, Gayangos and the Boletin RAH series were not read. Earlier text of this line, now partly superseded: standard edition not opened: Ulysse Robert, "Philibert de Chalon, prince d'Orange 1502-1530. Lettres et documents" (Boletin RAH 1902, listed on cervantesvirtual.com, which is Cloudflare-blocked to this environment) and Sanuto/Pastor appendices were not read by this worker; archive.org full-text search (be-api) for Taurello+Orange+Vetralla returned 29 hits, none naming Pietr'Antonio Taurello's 24 June 1527 letter (hits were Murray handbooks and unrelated indexes), and the phrase "Pietrantonio Taurello" returned 0.
 
 ## What this is
 
@@ -79,3 +79,33 @@ DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and lat
 - (d) unreachable: the recipient-side edition (Robert, Lettres et documents) was not opened; cervantesvirtual.com blocked. Next: try the Robert volumes via archive.org/Google Books (country=US) for 24 June 1527 / Vetralla / Taurello.
 
 Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.
+
+
+## Robert volume check (A2P4-TAUR, 3 Oct 2026, 18:13-18:2x UTC)
+
+Route: archive.org advancedsearch (title query) found two scans of Robert 1902 (`philibertdechalo00robe`, `philibertdechal00robegoog`;
+also `philibertdechalo0000sois` is Soisson 2005, in copyright, not read). `_djvu.txt` fetched once each (1.41 MB, 1.38 MB) and grepped by script.
+Not the Boletin RAH 1902 serial printing; same author and title family, so whether the serial printing holds extra documents is untested.
+
+| Query (case-insensitive) | robe | robegoog |
+|---|---|---|
+| taurell / torell / vetralla | 0 | 0 |
+| "24 juin" / "juin 1527" | 0 | 0 |
+
+Positive/coverage control (OCR is readable and the volume covers the window): "juin 1527" absent, but dated June 1527 items are cited in robe
+("8 juin 1527", Milanesi recueil, l.5373/5890; "17 juin 1527", l.6205); "Chalon" 237 / 289 hits; "Ferrare|Este" 195 / 169; "chiffre" 19 / 17, of
+which two are Vienna "original avec chiffre et déchiffrement" source notes (l.10189, 10355: PA 95, Austrian archive, not the Este piece) and one
+the prince deciphering with Verona's help (l.12892). Limit: the control shows the book covers the period, not that it would print Taurello's
+letter if it existed; a miss is a result for this edition only.
+
+Google Books API (key, country=US), 3 requests: "Taurello Vetralla" 4 hits, none relevant (Annali meteorologici, Gazzetta, Bullettino telegrafico,
+and "Palaces of Lazio" 1991 with a Taurello index entry, a surname in an unrelated palace context, snippet only, not opened); "Taurello Orange 1527" 0;
+quoted Taurello + Philibert Chalon 0. Control for the API: the same key/country returned hits for other queries this session (route works).
+
+Requests: archive.org 6 (4 advancedsearch, 2 download; 2 s apart), googleapis 3. No vision calls, no cost beyond tokens.
+
+Remaining gaps (not read): Sanuto *Diarii* vols 45-46 (June 1527); Pastor appendices; Gayangos CSP Spain vol. 3; Boletin RAH serial printing of Robert; ASMo piece number check.
+Next: Sanuto Diarii full-text search for Taurello/Vetralla on archive.org (be-api), ~$0.5.
+
+Verdict: blocked (standing; Sanuto/Pastor/Gayangos unread). Robert 1902 does not print or mention the letter, Taurello or Vetralla (2 scans, OCR grep). This is a search result for the log,
+not a statement that nothing exists elsewhere; no image, key or decipherment has surfaced.
