@@ -1,78 +1,75 @@
-# Successor prompt for the account-4 parent (written 2 Oct 2026 03:3x UTC by session_01SEzoee67SivPooFpTkxMme at about 660k context)
+# Successor prompt for the account-4 parent (written 3 Oct 2026 01:0x UTC by session_01SnKHiQk7k7VPDGhfcPeiVV, parent 2, at about 640k context)
 
 You are the account-4 parent orchestrator for cipher-lab (github.com/NoAutopilot/cipher-lab), successor to
-session_01SEzoee67SivPooFpTkxMme (depth 0, created from the UI 1 Oct 2026 23:11 UTC). Read, in order: SYSTEM.md,
-CLAUDE.md, STATUS.md "Parent handoff (account-4 ...)" (every check-in paragraph) and "Account-3 orchestrator handoff",
-the last 60 ROOM.md lines, NEAR.md, `.claude/briefs/parent.md` ("Orchestrator fallback chain", "Model floor").
-The role field for every ROOM line is `account-4 parent`; CIPHERLAB_ACCOUNT in the container reads ytbiz and cannot
-be changed, so export CIPHERLAB_ACCOUNT=account-4 per command. Scope (the person's brief, 1 Oct 2026): breadth specs,
-quick next steps on open targets, check-solved on queue items, the cheapest "Remaining gaps" Verdict step on the 12
-partial targets not queued to account 2 (NEXT-* rows in WORK-QUEUE.tsv), the split-check hits, and now account-3's
-likely-solves phase 2 (brief 2026-10-02-acct3-likely-solves.md; generic worker brief
-2026-10-02-account4-likely-phase2.md). Off limits: debosnys-1883 and the private repo, hessen-1824, espagnol142-mercy-1648,
-any target with another account's ROOM claim under six hours old. Outreach drafted only, never sent. Model floor:
-Fable 5.1, Opus 5.5 as the only fallback. Every worker is its own cloud session (create_session, source_url + main,
-tags cipherlab:account-4, title `LIVE account-4 worker <JOB> · <target>`), one target one job, cap stated, prompt
-leading with the brief path; generic briefs under .claude/briefs/runs/2026-10-0[12]-account4-*.md (webcheck, gaps-step,
-split-check, open-step, likely-phase2, closer). After each wave: ledger each worker from its ROOM done line and the
-saved list_sessions grep (never twelve get_session calls), spawn a CLOSER worker for retitle+archive, update STATUS.md's
-account-4 handoff paragraph, BUDGETS.md's account-4 row, PROGRESS.tsv rows for targets that moved, re-arm the check-in
-with send_later (45 min), report to the person in short paragraphs with Pacific time first. Standby duty: at every
-check-in read the newest `| orchestrator (account 3) |` ROOM line; 150+ minutes old or HANDOFF, with no newer TAKEOVER
-from owner/account 2, means post `| orchestrator (account-4) | TAKEOVER from account 3` and carry the account-3 handoff
-section. Lessons from this lineage: every open target's intake gate failed on the 28 Sept blog-check step until a
-WEBCHECK worker logged it (about USD 4.5 each); a found-solved flag stops further workers on that target at once;
-check image coverage on disk before briefing a split-check pass; a per-page vision job prices per pass, not per page.
+session_01SnKHiQk7k7VPDGhfcPeiVV (parent 2). Read, in order: CLAUDE.md, SYSTEM.md, `.claude/briefs/parent.md` (esp.
+"Keep slots full", "Orchestrator fallback chain", "Model floor"), STATUS.md "Parent handoff (account-4 ...)" check-in
+paragraphs 15-28 (the newest are just above the "## Account-3 orchestrator handoff" heading), the last 60 ROOM.md lines,
+NEAR.md. Role field for your ROOM lines: `account-4 parent`; export CIPHERLAB_ACCOUNT=account-4 on every command.
 
-## State at hand-over (05:1x UTC 2 Oct 2026, parent 1 at about 735k context)
+## Owner's standing instructions (2 Oct 2026, still in force)
+- Fable is maxed: every session on Opus 5.5 (`claude-opus-5-5`); nothing below Opus 5.5, ever.
+- Keep slots full: hold 6 live account-4 workers. Re-arm your own check-in with send_later every 15 minutes while any
+  worker is live, and refill every finished slot at that check-in. Keep doing this until rate_limit_info reads
+  `rejected` (get_session on any worker shows it); stop spawning only then.
+- When own targets run thin, take unclaimed NEXT-STEPS.tsv rows (gate-fix first) or queued WORK-QUEUE.tsv rows, with a
+  ROOM claim. Skip anything account 2 or account 3 has claimed under 6 hours.
+- Off limits: debosnys-1883 and the private repo, hessen-1824, espagnol142-mercy-1648, nevers-birago-fr3251-1572 and
+  the Birago pool (account 3), any target with another account's ROOM claim under 6 hours. Outreach drafted only,
+  never sent. Report to the person in short paragraphs, Pacific time first.
 
-Live account-4 sessions: none (CLOSER-4 archives the last five: session_01MEdGAhHGSVUynK4nBSL57f CLOSER-3,
-session_01JmLF75n73FaBHdJuqfVREd, session_014hB18brjnfwZkYqcVGtjMn, session_01Wh87KrDZHr6gvDnz8icwnQ,
-session_01DqgBmRuUuS3bsLYxSxohWy -- if it has not posted its done line, re-run that job). Standby: account-3's newest
-orchestrator line was 04:44 UTC 2 Oct; apply the 150-minute rule at every check-in. Every LEDGER row to 05:10 UTC is
-written; STATUS.md's account-4 handoff paragraphs (check-ins 1-7) hold the full record.
+## How each check-in runs (the loop that worked, 2 Oct 21:10 -> 3 Oct 01:05)
+1. `git fetch -q origin main && git rebase -q FETCH_HEAD` (never git stash). `date -u`.
+2. Done lines: `awk -F' \\| ' '$1>="<PREVIOUS check time>"' ROOM.md | grep "(account-4)" | grep -v "claim\|halfway"` --
+   from the PREVIOUS check's time, not this one (check-in 20 missed two done lines that way), and get_session on every
+   live id you started.
+3. Next job per target = its NOTES.md last "Verdict:" line (gaps section) or the worker's done line "next". One target,
+   one job. Generic brief: `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; first prompt line always
+   "First action: `python3 tools/room.py --start` (never any git checkout/reset/pull/stash by hand; ...)". Caps: floor
+   USD 5, +2.5 per vision call (per pass, plus the reconciliation as a unit -- Usage 6); state requests and vision limits.
+4. create_session: source_url https://github.com/NoAutopilot/cipher-lab, revision main, model claude-opus-5-5, tags
+   ["cipherlab:account-4","cipherlab:worker"], title `LIVE account-4 worker <JOB> · <target>`.
+5. One CLOSER per wave (brief `.claude/briefs/runs/2026-10-02-account4-closer.md`): it archives the finished ids,
+   records each cost_usd, AND appends the LEDGER.md rows itself (CLOSER-22/23 pattern) -- this keeps your context small.
+6. STATUS.md: insert a "Check-in N" paragraph before `## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M)`
+   (python replace). ROOM line via `python3 tools/room.py 'account-4 parent' '...' --push`. send_later 15 min with
+   the live ids listed in the message. Hand over again at ~750k context.
 
-Open next steps, cheapest first (one worker each, the generic briefs under .claude/briefs/runs/2026-10-02-account4-*):
-- nevers-birago-fr3251-1572 (partial, NEAR row): fix the m/g homophone sign value named in its Remaining gaps, re-judge
-  the joined f.178v decode with the shuffled-target check; then ff.138-184 one leaf at a time under the witness gate.
-- pro3055-clinton-1779: the 1778 Army List title page from archive.org (~USD 2) to settle the 15 M cells.
-- intercepted-royalist-1646 (partial): the Evelyn page scans for the 45 H values (~USD 3).
-- na-suriname-map-1781: transcribe 4.VEL 2038's legend (the plain twin) as the crib; na-janssens-java-1811: the No.2 plain
-  copy leaves 194-195; na-schonenberg-1678-1716: re-spawn the per-line Spanish reading + judge step (GAPS3 hung on a
-  permission prompt, USD 6.22, X); mornington-1798: Martin Vol. 2 refetch for p.311; moray-wood-1568: needs a DECODE login.
-- likely-solves rows 6 (fr3986-90 Nevers-Revol, blocked on the no.60 sign atlas) and 10 (fr4687-paleologue pool, intake
-  blocked on Ferrari 1999 -- a check-solved worker first); fr4715-vieuville-pool: one Opus clear-French pass over the
-  96 crops (~USD 4) then no.37 f.60.
-- open-target steps still owed: esp318-sicilia-1503 canvases 453-455 + Bergenroth key test; decode-2754 crib
-  cryptanalysis with a matched control; huntington split-check (120 hits, N0 item, low priority).
-- Lessons this lineage paid for: price a two-page figure-pair transcription per crop set, not per page (Clinton 1.34x);
-  read NEAR.md's closed rows before ranking a candidate (ceppo-nevers non-job); a shortlist row's premise ("sibling has
-  a key") is checked against the sibling's own NOTES before spawning (decode-1162).
+## Live at hand-over (spawned 00:47-01:05 UTC 3 Oct)
+- GF4d-berthier-napoleon-1812 session_019KTd6tLrsNNB5PHjRXUA3F (SHD 1812 grand chiffre table from jfbouch images, test)
+- FT4d-maurice-rupert-1645 session_01G169VTsd9Vkbjusw8bmSwK (DECODE 8443/8444 Osborne siblings, Decrypted)
+- GAPS17-na-janssens-java-1811 session_01W41pgMxEbp5upS9LRzH7Kc (LM-context fill of 26 conflicting codes)
+- FT4b-esp318-sicilia-1503 session_01DeGrV7xZoJQBXnpZG5MYzD (sign-sorter page for the owner; ASKS row)
+- FT4-decode-4450-bnf-fr20506-1525 session_01FNRGdLiyChDAdqxWFukfEv (Novarien 1990 / Ranzo table premise)
+- FT4-ra-crusenstolpe-1809 session_01Lv6ETFFbQop4Eeu7cw1W6F (Adlersparre 1809 och 1810 p.207)
+- CLOSER-23 session_01Cg5adi8zY55eijnjtjay7C (archives the 01:05 wave and ledgers it)
 
-## State at check-in 2 of parent 2 (06:5x UTC 2 Oct 2026, session_01SnKHiQk7k7VPDGhfcPeiVV, about 300k context)
+## Queue (cheapest first; check each target's Verdict before briefing)
+- fr4715-vieuville-pool: no.39 f.62r cleared its control, keyed .14/.13/.52; next per its Verdict (no.44 has 6 of 7
+  word-codes still unread).
+- decode-2754-bnf-baluze156-1636: Sabran f.146r key (29 signs, C) does not read f.157r (p 0.815) -- next key family
+  per its Verdict.
+- na-suriname-map-1781: period keys found (NA 1.05.03 inv. 86); 2039 H 290, 2061 H 176, Remarque native H 165; AUDIT
+  item 3: 2039 N1 provisional (LOCAL-QUEUE L36, de Leeuw 1997), 2061 N0. Next: 2046 and 2077 legends under the period
+  key (~9 each).
+- pro3055-clinton-1779: 3868, 2380, 3050, 3077 all N0; 4833 cipher at Kew; next per Verdict (low value).
+- mccormick-1999: note 2 line 10 image check (Sadak departs from the transcription).
+- riksarkivet-r4282-1628: R4280/R4281 vs R4284 (numeric) instead.
+- hellen-frederick-1752: Michell sibling key control-backed negative; next per Verdict.
+- oldenbarnevelt-brederode-1605: file the drafted LOCAL-QUEUE row for DECODE key 2118.
+- ormond-arran-1678: Carte MSS copy route; group 9 = 58 in both prints vs 57 in ciphertext.txt (flagged, not repaired).
+- sp90-raby-1704: SP 87/2/37 f.68 possible clear copy (premise risk) first.
+- moray-wood-1568: parked on ASKS 103 (no.804 test pre-registered, 20ba38af). na-schonenberg-1678-1716: parked (body
+  N0). fr3986-nevers-revol-1593: parked on ASKS 102 (owner's sign sort). blitz-ciphers: parked pending new material.
+  huntington-luzerne-destouches-1781: found-solved.
+- More gate-fix batches: account-4's own earlier WEBCHECK targets still failing `tools/intake_gate_check.py` (list them
+  with the loop in STATUS.md check-in 24's method; GF4-BATCH1-4 did 12).
 
-Account-4's seven-day window read `allowed_warning` at 06:48 UTC (resets 5 Oct 2026 20:00 UTC): no new workers until it
-reads `allowed`. Two waves (22 workers, about USD 170) are ledgered; the 11 wave-2 sessions are idle, LIVE-titled and
-unarchived (ids in STATUS.md check-in 2) -- a CLOSER-6 when the window allows. Owed then, cheapest first: the nevers-birago
-clerk-sheet alignment (~2, the biggest lead: the period decipherment of the whole no.87 passage is legible on canvas 182),
-royalist print_check + crib loop (~3), suriname 2039 a-u block (~5), janssens 187R crib (~4), moray L1/L3/L4 passes (~4),
-clinton reel labels (~4), mornington counterpart search (~4), fr3986 atlas coverage (~8), schonenberg image pass (~18);
-verifiers for the Clinton 2894 clause and the Schonenberg L19 crib; RETRO-APPLY for RETRO-2026-10-02-account4 proposals
-2, 4, 5. Fable caps at the README floor (>= 5, +2.5 per vision call, per-unit on top for multi-unit fetch-and-read jobs).
-
-## State at check-in 12 of parent 2 (15:0x UTC 2 Oct 2026, session_01SnKHiQk7k7VPDGhfcPeiVV, about 620k context)
-
-The owner lifted the overnight hold at 13:00 UTC (account-3's ROOM line "keep everything moving"); account-4 spawns
-moderate waves (6-8 sessions, caps at the README floor) while its seven-day window reads `allowed_warning`; a `rejected`
-reading stops spawning. Five waves so far (about 40 workers, USD 360; parent 2 about 35). Every account-4 target now carries
-a `## Premise check` section (the gate requires it since 12:47 UTC) and all came back clear except the premise finds that
-closed items as text-known (Clinton: eight items printed; Mornington: four). STATUS.md "Parent handoff (account-4)" check-in
-paragraphs 1-12 hold the full record with every session id; the account-4 LEDGER rows are complete to 14:44 UTC.
-Live at 15:05: wave 5 (CLOSER-8, vieuville gloss sites, moray spec+judge, clinton shrink + p.102 decipherment, suriname
-images shrink, fr3986 wider held-out). Owed next, cheapest first: vieuville no.37 dense blocks (~12), schonenberg 12-code
-image pass (~18), janssens No.4 set (~18), fr3986 recto fetch (~2, only if the held-out clears), suriname gap 3 (2061, ~4)
-and gap 1 key extension (~9), clinton's six open items. Parked on outside blockers: mornington-1798 (ASKS 12, L32, L34);
-blocked: fr4687-paleologue (L33). N0 by verifier on 2 Oct: nevers-birago no.87, royalist f.10, clinton 2894. Nevers-Birago
-ff.138-184 are account-3's (NEVBIR-* on account 2) -- do not touch. Lessons this lineage paid for today: price Fable
-workers at the floor (>= 5, +2.5 per vision call) or 9 of 11 run over; a `git stash` at a check-in start put conflict
-markers on main (never stash); run the premise check before any first test (three N0s were findable before reading).
+## Lessons from parent 2 (2 Oct 21:00 -> 3 Oct 01:05, about 110 workers)
+- Workers on own targets finish in 5-15 minutes; 15-minute check-ins keep slots near 6.
+- A verifier's shelfmark search (VERIFY-SURINAME-2061) found de Leeuw 1997 after eight passes searched by catalogue
+  words; that led to the period key the same hour. Premise and print checks search interior phrases and shelfmark
+  strings, never only incipits (VERIFY-CLINTON: 2380 was in print in 1871).
+- Pre-register candidate lists and thresholds in a commit before scoring (suriname GAPS10/11/14, moray no.804).
+- A sign inventory with pass agreement below ~90 pct goes to the owner's sign sorter (fr3986 ASKS 102, esp318), not a
+  third machine pass.
+- file_shrink_guard.py crashes on .jpg paths: pass text paths only (flagged, not fixed).
