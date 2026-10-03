@@ -1,0 +1,25 @@
+line	set	real	n	hits
+B1	C	0	1	
+B2	C	3	3	22=m 12=c 24=n
+B3	C	4	5	10=a 36=ez 10=a 51=de
+B4	C	1	2	51=de
+B5	C	1	2	10=a
+T1	C	3	3	51=de 78=u 24=n
+T2	C	0	0	
+T3	C	4	4	10=a 36=ez 48=c 24=n
+T4	C	0	1	
+B1	all	2	7	30=s 15=e
+B2	all	5	13	20=i 23=n 32=o 22=m 23=n
+B3	all	8	16	17=o 10=a 36=ez 96=r 21=e 15=e 10=a 20=i
+B4	all	5	19	17=o 21=e 13=d 20=i 23=n
+B5	all	6	18	20=i 23=n 54=du 10=a 61=rge 23=n
+T1	all	5	14	51=de 32=o 11=n 15=e 20=i
+T2	all	5	10	30=s 68=s 30=s 21=e 30=s
+T3	all	7	19	10=a 36=ez 11=n 15=e 30=s 30=s 15=e
+T4	all	2	6	37=e 30=s
+
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas33	C	16	21	f23-window	11.50	14	18	0.0064	PASS
+canvas33	C	16	21	shuffled-gloss	9.54	13	16	0.0008	-
+canvas33	all	45	122	f23-window	31.55	38	47	0.0002	-
+canvas33	all	45	122	shuffled-gloss	28.69	35	43	0.0000	-

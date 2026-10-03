@@ -1,0 +1,10 @@
+line	tokens	gloss	note
+T1	51 81 32 11 15 23 31 11 75 96 78 23 26 24 20	demeure entre nous que lon veoid	A=B numerals (two runs split by clear 'Car j'entends'); A flags 15/13 and 11/41, settled 15 and 11 by eye; last gloss word veoid/verra (A verra, B veord), kept as read by eye 'veoid'
+T2	81 30 68 30 96 46 21 76 30 96	mes lettres que celles que vous	A=B numerals (two runs split by clear 'et mesme il court un bruit sourd'); B puts 'mes lettres' over 81 30 68 30, A calls it clear: kept as gloss (it sits above the run, left margin, between numeral rows)
+T3	88 10 26 36 11 46 32 15 30 31 75 48 32 30 34 29 24 23 31 54 15	auez receues de la cour ont este veues des	A=B numerals; B flags 15/13 36/38 29/20, settled as read; gloss 'auer'/'auez' read auez
+T4	26 37 30 51 30 56	Espagnolz	A=B numerals; A assigns 'Espagnolz' to T4 (sits above 26 37 30), B to T3: kept with T4 by position (gloss above its numerals)
+B1	52 30 31 12 44 15 29	distribuer	A=B
+B2	20 23 32 22 76 70 93 23 12 24 15 21 76 70	inutilement ponctuellement	A=B numerals (two runs split by clear 'il sera bon de me mander s'il vous plaist'); left word read Jnutilement by eye (B 'Jvstilement', A '[Ponctuellement]' at left): kept 'inutilement'; both runs end 76 70 under -ment
+B3	17 88 10 26 36 96 21 96 15 30 91 10 23 46 51 90 20 33	Sy vous auez quelque esperance de paix	A=B numerals (B flags 96/98, 91/94; settled as read); both passes call the line above clear text, kept as gloss by layout: numerals begin at the margin under it, and it is underlined small text like the other glosses
+B4	17 21 86 55 32 13 13 20 31 93 20 23 31 21 87 29 11 12 51 15 23	Sil ne fauldroit point tenir bride en main	A=B numerals (B flags 86/88 55/53 87/81 51/31, settled as read); 'cela paroissoit, je ne scay' is clear on the numeral line; the line above spans the numerals: kept as gloss by layout (passes called it clear)
+B5	80 20 23 79 75 52 30 31 12 44 87 54 52 31 10 29 61 23 31	pour la distribution dud argent	numerals A '29/61' as one hesitation, B '29 61' as two groups: two groups by eye (written tight); line above kept as gloss by layout (passes called it clear)
