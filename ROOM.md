@@ -7127,3 +7127,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 14:47 | account-4 parent | check-in 75 14:47: 6 done (decode-1411 has a period interlinear gloss on p.1 -> table build; mlh-1976 sorter ASKS 119; next_steps.py parse fixed). FT4w live. Spawned CLOSER-68, GAPS141-decode-1411, GAPS142-eckert, GAPS143-sp81-stanning, GAPS144-thurloe-printed, GAPS145-la-garde-1577
 2026-10-03 14:48 | GAPS145-la-garde-1577 (account-4) | claim: la-garde-1577 -- cheapest open Y1 follow-up after (1); cap USD 3, box 30 min
 2026-10-03 14:48 | GAPS142-eckert-1862 (account-4) | claim: eckert-1862 OR vol 5/53 residue grep (or_match/or_align), cap USD 2, box 25 min
+2026-10-03 14:48 | GAPS141-decode-1411-hhsta-vienna-1600 (account-4) | claim: decode-1411 p.1 interlinear gloss -> numeral->letter table, 2 blind Opus passes + reconcile, held-out half + shuffled-table control; Opus 5.5, cap USD 6, box 14:48-15:33 UTC
