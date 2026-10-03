@@ -455,3 +455,18 @@ row with grade `withdrawn` (kept, not deleted), `--check` OK. Figure tokens in `
 Side note, not acted on (outside the brief): both readers read L10's last figures as "...67 62 [·]1 4 et", which bears on
 the tail-past-the-blot gap (committed tokens there are M); it is one more datum for that gap, not a settlement.
 Grades this job: 0 tokens moved; 1 code word (M) withdrawn. Not found in print: nothing searched (transcription job).
+
+## A1B-FILS-XIIIJ pre-registration (account 1, 3 Oct 2026, written 17:21 UTC before the read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-xiiij.md`. One blind subagent read (Opus) of a tight crop
+of L02 run 1's code word (images/f43_L02_s2.jpg, x 1880-2090 of 2400, full height), question only "read the first glyph of
+this roman-numeral group", no candidate values, no key. Crop (pasted; tools/iiif_lines.py could not import numpy in this
+container, so PIL as the brief allows):
+`python3 -c "from PIL import Image; Image.open('ciphers/fr3416-nevers-fils-1589/images/f43_L02_s2.jpg').crop((1880,0,2090,115)).resize((840,460)).save('ciphers/fr3416-nevers-fils-1589/images/f43_L02_xiiij.jpg')"`
+Alternatives: x (-> xiiij = Seigneur), c (no c-codes in the table: unreadable code), v (viiij, a nomenclator row of its own).
+Grade rule (NOTES.md convention "words A=B are H", FILS-UPPER rule 2): the earlier blind read (FILS-F38) gave x at M with
+alternatives c/viiij. (G1) this read gives x as its single answer, no alternative named, confidence M or H -> the token
+moves M -> H (two independent blind reads agree on x) and the code word xiiij = Seigneur moves to H (key row H).
+(G2) x but with c or v named as a live alternative, or confidence L -> stays M. (G3) any other first glyph -> split,
+stays M, logged. Only G1 triggers a rebuild (`keys/build_no25_nomen.py --check`, `decode_f35.py --check`) and rule-10
+propagation to AUDIT.md (class N4 unchanged) and SECOND-OPINIONS-QUEUE.tsv rows for this target.
