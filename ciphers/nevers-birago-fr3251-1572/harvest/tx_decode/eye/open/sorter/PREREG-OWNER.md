@@ -5,7 +5,7 @@ Input: `owner-2026-10-03/` (the owner's PARTIAL sorter save; "doesn't mean they'
 via `d.get('data', d)` and a missing checked/ folder; no tool change needed) -> `owner_settled.tsv`.
 Status counts before scoring (from the tool's summary, not a score): kept 346, moved 68, taken-out 58, bad-cut 11, aside 5; T60 pile verdict "same".
 
-Tile -> position: per line, sorter tiles are aligned to the transcription positions by sequence alignment of the sorter's own labels to
+Tile -> position: where a line has as many tiles as positions, tile i = position i; otherwise sorter tiles are aligned to the transcription positions by sequence alignment of the sorter's own labels to
 the transcription signs (difflib), equal-length replace blocks mapped in order; f117 L09 lacks the tile for position 21 and f168 R03 lacks
 position 19 (both verified by alignment before this file was written).
 

@@ -1,0 +1,18 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "harvest/ciphertext_f144r.tsv",
+   "key": ["harvest/key_1572_sheet.tsv"],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/tx_decode/eye/open/sorter/exceptions_owner_f144r.tsv",
+   "reading": "harvest/tx_decode/eye/open/sorter/reading_f144r_owner.txt",
+   "tokens": "harvest/tx_decode/eye/open/sorter/reading_f144r_owner_tokens.tsv",
+   "null_values": ["NULL"],
+   "unknown_values": ["", "?"],
+   "uncertain_conf": ["M", "L"],
+   "exception_grade_overrides_conf": true
+  }
+ ]
+}

@@ -1,0 +1,489 @@
+sid	leaf	line	pos	tx_sign	base_value	base_grade	status	owner_sign	owner_value	change	grade	VERIFY	OPEN	OPEN144	EYE
+f117_L01_01	f117	L01	1	X_NEW	?	U	taken-out								
+f117_L01_02	f117	L01	2	X_NEW	?	U	taken-out					X_NEW			X_NEW
+f117_L01_03	f117	L01	3	X_NEW	?	U	kept	X_NEW							
+f117_L01_04	f117	L01	4	T54	m	S	kept	T54							
+f117_L01_05	f117	L01	5	T88	g	S	kept	T88				T88			T88
+f117_L01_06	f117	L01	6	T49	u	S	kept	T49							
+f117_L01_07	f117	L01	7	T25	i	S	kept	T25							
+f117_L01_08	f117	L01	8	T51	l	M	moved	T65	t	value	M	T51	T51		
+f117_L01_09	f117	L01	9	T37	a	S	kept	T37							
+f117_L01_10	f117	L01	10	T54	m	S	kept	T54				T54			T54
+f117_L01_11	f117	L01	11	X_NEW	?	U	taken-out								
+f117_L01_12	f117	L01	12	T33	u	S	kept	T33							
+f117_L01_13	f117	L01	13	T45	e	M	kept	T45				T45	T45		T45
+f117_L01_14	f117	L01	14	T58	l	S	kept	T58							
+f117_L01_15	f117	L01	15	T88	g	S	kept	T88							
+f117_L01_16	f117	L01	16	T49	u	S	kept	T49							
+f117_L01_17	f117	L01	17	T60	e	S	moved	T86	e			T86	T86		T86
+f117_L01_18	f117	L01	18	T76	n	M	kept	T76				T26	T76		
+f117_L01_19	f117	L01	19	T46	turino	M	kept	T46				X_NEW	OTHER		X_NEW
+f117_L01_20	f117	L01	20	T90	p	S	moved	T90-b	?	U	U	T90	T90		T90
+f117_L01_21	f117	L01	21	T98	s	S	bad-cut					T98	T98		T98
+f117_L01_22	f117	L01	22	T60	e	S	kept	T60				T86	T86		T86
+f117_L01_23	f117	L01	23	T60	n	M	moved	T33	u	value	M		T60		
+f117_L01_24	f117	L01	24	T33	u	S	taken-out								
+f117_L01_25	f117	L01	25	T85	a	S	kept	T85					T85		
+f117_L01_26	f117	L01	26	X_NEW	?	U	kept	X_S				X_S			
+f117_L01_27	f117	L01	27	T37	a	S	kept	T37							
+f117_L01_28	f117	L01	28	T83	r	M	kept	T83				T83	T83		
+f117_L01_29	f117	L01	29	T63	d	S	kept	T63					T63		
+f117_L01_30	f117	L01	30	T45	e	S	taken-out								
+f117_L02_01	f117	L02	1	T95	l	M	moved	T65	t	value	M	T95	T51		
+f117_L02_02	f117	L02	2	T85	a	M	kept	T85					T85		
+f117_L02_03	f117	L02	3	T60	e	M	moved	T86	e			T86	T86		
+f117_L02_04	f117	L02	4	T60	n	M	kept	T60					T60		
+f117_L02_05	f117	L02	5	T25	i	S	kept	T25							
+f117_L02_06	f117	L02	6	T76	n	M	kept	T76				T26	T26		
+f117_L02_07	f117	L02	7	T65	t	S	moved	T65-b	?	U	U	T65	T65		T65
+f117_L02_08	f117	L02	8	T45	e	S	kept	T45							
+f117_L02_09	f117	L02	9	T60	n	S	kept	T60					T60		
+f117_L02_10	f117	L02	10	T53	t	S	kept	T53							
+f117_L02_11	f117	L02	11	T80	i	S	kept	T80							
+f117_L02_12	f117	L02	12	T19	o	S	kept	T19					T19		
+f117_L02_13	f117	L02	13	T60	n	S	kept	T60				T60	T60		T60
+f117_L02_14	f117	L02	14	T18	d	M	kept	T18				T18	T18		T18
+f117_L02_15	f117	L02	15	T66	e	M	kept	T66					T76		
+f117_L02_16	f117	L02	16	T50	c	S	kept	T50							
+f117_L02_17	f117	L02	17	T19	o	S	kept	T19					T19		
+f117_L02_18	f117	L02	18	T60	n	S	kept	T60				T60	T60		T60
+f117_L02_19	f117	L02	19	T33	u	S	kept	T33							
+f117_L02_20	f117	L02	20	T45	e	S	kept	T45							
+f117_L02_21	f117	L02	21	T60	n	S	kept	T60					T60		
+f117_L02_22	f117	L02	22	T25	i	S	kept	T25							
+f117_L02_23	f117	L02	23	T81	b	M	kept	T81				T81	T81		T83
+f117_L02_24	f117	L02	24	T37	a	S	kept	T37							
+f117_L02_25	f117	L02	25	T49	u	S	kept	T49							
+f117_L02_26	f117	L02	26	T60	n	M	kept	T60				T86	T86		
+f117_L02_27	f117	L02	27	T98	s	M	kept	T18				T18	T18		
+f117_L02_28	f117	L02	28	X_NEW	?	U	moved	X_NEW-c	?						
+f117_L02_29	f117	L02	29	X_NEW	?	U	taken-out								
+f117_L03_01	f117	L03	1	T45	p	S	kept	T90				T90	T90		T90
+f117_L03_02	f117	L03	2	T55	o	S	kept	T55					T55		
+f117_L03_03	f117	L03	3	T33	u	S	kept	T33							
+f117_L03_04	f117	L03	4	T83	r	M	kept	T83				T83	T83		
+f117_L03_05	f117	L03	5	T95	s	M	kept	T95					T95		
+f117_L03_06	f117	L03	6	T33	u	S	kept	T33							
+f117_L03_07	f117	L03	7	T19	o	S	kept	T19					T19		
+f117_L03_08	f117	L03	8	T80	i	S	kept	T80							
+f117_L03_09	f117	L03	9	T83	r	M	kept	T83				T83	T81		T83
+f117_L03_10	f117	L03	10	T65	l	M	moved	T95-c	?	U	U	T95	T51		T95
+f117_L03_11	f117	L03	11	T60	e	M	kept	T86				T86	T86		
+f117_L03_12	f117	L03	12	T70	g	S	kept	T70					T70		
+f117_L03_13	f117	L03	13	T19	o	S	kept	T19					T19		
+f117_L03_14	f117	L03	14	T33	u	S	kept	T33							
+f117_L03_15	f117	L03	15	T60	e	S	kept	T86				T86	T86		T86
+f117_L03_16	f117	L03	16	T83	r	M	kept	T83				T83	T81		
+f117_L03_17	f117	L03	17	T60	n	S	kept	T60					T60		
+f117_L03_18	f117	L03	18	T66	e	S	kept	T66				T66	T76		T66
+f117_L03_19	f117	L03	19	X_NEW	?	U	moved	X_NEW-i	?						
+f117_L03_20	f117	L03	20	T66	e	S	kept	T66				T66			T66
+f117_L03_21	f117	L03	21	T60	n	S	kept	T60					T60		
+f117_L03_22	f117	L03	22	T65	t	S	moved	T60-c	?	U	U		T65		
+f117_L03_23	f117	L03	23	T98	d	S	kept	T18				T18	T18		T18
+f117_L03_24	f117	L03	24	T45	e	S	kept	T45					T45		
+f117_L03_25	f117	L03	25	X_NEW	?	U	kept	T46							
+f117_L03_26	f117	L03	26	X_S	?	U	kept	X_S							
+f117_L03_27	f117	L03	27	T81	?	M	aside					X_NEW	T84		X_NEW
+f117_L03_28	f117	L03	28	T90	p	S	kept	T90					T90		
+f117_L03_29	f117	L03	29	T52	i	S	taken-out						T52		
+f117_L03_30	f117	L03	30	X_NEW	?	U	kept	X_S				X_NEW			
+f117_L03_31	f117	L03	31	T83	r	S	moved	T81	b	value	S		T81		
+f117_L04_01	f117	L04	1	T50	c	S	kept	T50							
+f117_L04_02	f117	L04	2	T45	e	S	kept	T45							
+f117_L04_03	f117	L04	3	T88	g	S	kept	T88							
+f117_L04_04	f117	L04	4	T33	u	S	kept	T33							
+f117_L04_05	f117	L04	5	T80	i	S	kept	T80							
+f117_L04_06	f117	L04	6	T65	s	M	moved	T65	t	value	M	T95	T51		T95
+f117_L04_07	f117	L04	7	T60	e	S	kept	T86				T86	T86		T86
+f117_L04_08	f117	L04	8	T92	s	S	kept	T92							
+f117_L04_09	f117	L04	9	T65	t	S	moved	T60-c	?	U	U	T65	T65		T65
+f117_L04_10	f117	L04	10	T90	p	S	kept	T90							
+f117_L04_11	f117	L04	11	T45	e	S	kept	T45							
+f117_L04_12	f117	L04	12	T83	r	M	kept	T83				T83	T83		T83
+f117_L04_13	f117	L04	13	T98	s	S	kept	T98				T18	T98		T98
+f117_L04_14	f117	L04	14	T19	o	S	kept	T19					T19		
+f117_L04_15	f117	L04	15	X_NEW	?	U	kept	X_S				X_NEW			X_NEW
+f117_L04_16	f117	L04	16	T66	e	S	kept	T66							
+f117_L04_17	f117	L04	17	T88	g	S	kept	T88							
+f117_L04_18	f117	L04	18	T33	u	S	kept	T33							
+f117_L04_19	f117	L04	19	T96	i	S	kept	T96							
+f117_L04_20	f117	L04	20	T98	s	S	kept	T98					T98		
+f117_L04_21	f117	L04	21	T45	e	S	kept	T45							
+f117_L04_22	f117	L04	22	T83	r	M	kept	T83				T83	T83		
+f117_L04_23	f117	L04	23	T60	e	S	kept	T86				T86	T86		T86
+f117_L04_24	f117	L04	24	T60	n	M	kept	T60					T60		
+f117_L04_25	f117	L04	25	T18	d	S	kept	T18				T18	T18		T18
+f117_L04_26	f117	L04	26	T83	r	M	kept	T83				T83	T83		T83
+f117_L04_27	f117	L04	27	T19	o	S	kept	T19					T19		
+f117_L04_28	f117	L04	28	T80	i	S	kept	T80							
+f117_L04_29	f117	L04	29	T53	t	S	kept	T53							
+f117_L05_01	f117	L05	1	X_NEW	?	U	kept	X_S				X_S			
+f117_L05_02	f117	L05	2	T65	s	M	moved	T65	t	value	M	T95	T51		T95
+f117_L05_03	f117	L05	3	T33	u	S	kept	T33							
+f117_L05_04	f117	L05	4	T98	s	S	kept	T98					T98		
+f117_L05_05	f117	L05	5	T24	f	S	moved	T24-b	?	U	U				
+f117_L05_06	f117	L05	6	T37	a	S	kept	T37							
+f117_L05_07	f117	L05	7	T36	c	S	kept	T36					T36		
+f117_L05_08	f117	L05	8	T80	i	S	kept	T80							
+f117_L05_09	f117	L05	9	T64	l	S	kept	T64				T13	T13		T13
+f117_L05_10	f117	L05	10	T66	e	S	kept	T66							
+f117_L05_11	f117	L05	11	T29	et	S	kept	T29					T29		
+f117_L05_12	f117	L05	12	T65	s	S	kept	T95				T95	T95		T95
+f117_L05_13	f117	L05	13	X_NEW	?	U	taken-out					X_NEW			X_NEW
+f117_L05_14	f117	L05	14	T80	i	S	kept	T80							
+f117_L05_15	f117	L05	15	T60	n	S	kept	T60					T60		
+f117_L05_16	f117	L05	16	T98	d	M	taken-out					T18	T18		
+f117_L05_17	f117	L05	17	T45	e	S	kept	T45				T45			T45
+f117_L05_18	f117	L05	18	T65	l	M	kept	T65				T51	T51		
+f117_L05_19	f117	L05	19	T45	e	M	kept	T45					T45		
+f117_L05_20	f117	L05	20	X_NEW	?	U	kept	X_S				X_NEW			
+f117_L05_21	f117	L05	21	T66	e	S	kept	T66							
+f117_L05_22	f117	L05	22	T83	r	M	kept	T83				T83	T83		
+f117_L05_23	f117	L05	23	T65	t	S	moved	T60-c	?	U	U		T65		
+f117_L05_24	f117	L05	24	T19	o	S	kept	T19					T19		
+f117_L05_25	f117	L05	25	T33	u	S	kept	T33							
+f117_L05_26	f117	L05	26	X_NEW	?	U	taken-out					T27			T27
+f117_L05_27	f117	L05	27	T76	e	M	aside					T66	T76		T66
+f117_L05_28	f117	L05	28	T98	s	S	kept	T98					T98		
+f117_L05_29	f117	L05	29	X_NEW	?	U	taken-out								
+f117_L05_30	f117	L05	30	T45	e	S	taken-out								
+f117_L05_31	f117	L05	31	T95	s	S	kept	T95					T95		
+f117_L06_01	f117	L06	1	T98	s	S	kept	T98					T98		
+f117_L06_02	f117	L06	2	T80	i	S	kept	T80							
+f117_L06_03	f117	L06	3	T19	o	S	kept	T19					T19		
+f117_L06_04	f117	L06	4	T60	n	M	kept	T60					T60		
+f117_L06_05	f117	L06	5	T98	s	S	kept	T98					T98		
+f117_L06_06	f117	L06	6	T63	d	S	kept	T63					T63		
+f117_L06_07	f117	L06	7	T45	e	S	kept	T45							
+f117_L06_08	f117	L06	8	T92	s	S	kept	T92							
+f117_L06_09	f117	L06	9	T53	t	S	kept	T53							
+f117_L06_10	f117	L06	10	T83	r	M	kept	T83				T83	T83		
+f117_L06_11	f117	L06	11	T45	e	S	kept	T45							
+f117_L06_12	f117	L06	12	X_NEW	?	U	moved	X_NEW-f	?			X_S			X_NEW
+f117_L06_13	f117	L06	13	T65	l	M	kept	T65				T51	T51		
+f117_L06_14	f117	L06	14	T33	u	S	kept	T33							
+f117_L06_15	f117	L06	15	T98	s	S	kept	T98					T98		
+f117_L06_16	f117	L06	16	T66	e	S	kept	T66				T66			T66
+f117_L06_17	f117	L06	17	T60	n	S	kept	T60					T60		
+f117_L06_18	f117	L06	18	T45	e	M	kept	T90				T90	T90		T90
+f117_L06_19	f117	L06	19	T95	s	S	kept	T95					T95		
+f117_L06_20	f117	L06	20	T83	r	M	kept	T83				T83	T81		
+f117_L06_21	f117	L06	21	T60	e	M	kept	T60				T86	T86		T86
+f117_L06_22	f117	L06	22	T96	i	S	kept	T96							
+f117_L06_23	f117	L06	23	T64	l	M	aside					T13	T64		T13
+f117_L06_24	f117	L06	24	T45	e	M	kept	T45				T45	T45		T45
+f117_L06_25	f117	L06	25	T98	s	S	kept	T98					T98		
+f117_L06_26	f117	L06	26	T45	e	M	kept	T90				T90	T90		T90
+f117_L06_27	f117	L06	27	T66	e	S	kept	T66							
+f117_L06_28	f117	L06	28	T80	i	S	kept	T80							
+f117_L06_29	f117	L06	29	T66	e	S	kept	T66				T66			T66
+f117_L06_30	f117	L06	30	T66	e	S	kept	T66							
+f117_L06_31	f117	L06	31	T36	c	M	moved	T36-b	?	U	U	X_NEW	T98		T36
+f117_L07_01	f117	L07	1	T88	g	S	kept	T88							
+f117_L07_02	f117	L07	2	T33	u	S	kept	T33							
+f117_L07_03	f117	L07	3	T45	e	S	kept	T45					T45		
+f117_L07_04	f117	L07	4	T36	c	S	kept	T36							
+f117_L07_05	f117	L07	5	X_NEW	?	U	moved	X_NEW-g	?						
+f117_L07_06	f117	L07	6	T63	d	S	kept	T63					T63		
+f117_L07_07	f117	L07	7	T45	e	S	kept	T45					T45		
+f117_L07_08	f117	L07	8	T33	u	S	kept	T33				T33			T33
+f117_L07_09	f117	L07	9	T85	a	S	kept	T85					T85		
+f117_L07_10	f117	L07	10	T60	n	M	kept	T60				T60	T60		
+f117_L07_11	f117	L07	11	T53	t	S	kept	T53							
+f117_L07_12	f117	L07	12	T25	i	S	kept	T25							
+f117_L07_13	f117	L07	13	T60	n	S	moved	T86	e	value	S		T86		
+f117_L07_14	f117	L07	14	T49	u	S	kept	T49							
+f117_L07_15	f117	L07	15	T19	o	S	kept	T19					T19		
+f117_L07_16	f117	L07	16	T33	u	S	kept	T33							
+f117_L07_17	f117	L07	17	T92	s	M	kept	T92					T92		
+f117_L07_18	f117	L07	18	T98	s	S	kept	T98					T98		
+f117_L07_19	f117	L07	19	T49	u	S	kept	T49							
+f117_L07_20	f117	L07	20	X_K	?	U	kept	X_K							
+f117_L07_21	f117	L07	21	T65	s	M	kept	T65				T95	T51		T95
+f117_L07_22	f117	L07	22	T80	i	S	kept	T80							
+f117_L07_23	f117	L07	23	T60	n	M	moved	T86	e	value	S	T86	T86		
+f117_L07_24	f117	L07	24	T63	d	S	kept	T63					T63		
+f117_L07_25	f117	L07	25	T37	a	S	kept	T37							
+f117_L07_26	f117	L07	26	X_NEW	?	U	moved	X_NEW-e	?			X_NEW			X_NEW
+f117_L07_27	f117	L07	27	T98	s	M	kept	T98				X_NEW	T36		
+f117_L07_28	f117	L07	28	T60	e	S	bad-cut					T86	T86		T86
+f117_L07_29	f117	L07	29	T81	b	M	kept	T81				T83	T81		T83
+f117_L08_01	f117	L08	1	T29	et	S	kept	T29				T29			T29
+f117_L08_02	f117	L08	2	X_EQ	?	U	kept	X_EQ							
+f117_L08_03	f117	L08	3	T85	a	S	kept	T85					T85		
+f117_L08_04	f117	L08	4	T33	u	S	kept	T33							
+f117_L08_05	f117	L08	5	T19	o	S	kept	T19				T86	T19		T19
+f117_L08_06	f117	L08	6	T83	r	M	kept	T83				T83	T83		
+f117_L08_07	f117	L08	7	T80	i	S	kept	T80							
+f117_L08_08	f117	L08	8	T98	s	S	kept	T98					T98		
+f117_L08_09	f117	L08	9	T45	e	S	kept	T45					T45		
+f117_L08_10	f117	L08	10	T81	r	S	kept	T83				T83	T83		T83
+f117_L08_11	f117	L08	11	T50	c	S	kept	T50							
+f117_L08_12	f117	L08	12	T45	e	S	kept	T45					T45		
+f117_L08_13	f117	L08	13	T98	s	S	kept	T98					T98		
+f117_L08_14	f117	L08	14	T53	t	S	kept	T53							
+f117_L08_15	f117	L08	15	T37	a	S	kept	T37							
+f117_L08_16	f117	L08	16	X_NEW	?	U	moved	X_NEW-b	?						
+f117_L08_17	f117	L08	17	T37	a	S	kept	T37							
+f117_L08_18	f117	L08	18	T25	i	S	kept	T25							
+f117_L08_19	f117	L08	19	T83	r	M	kept	T83				T83	T83		T83
+f117_L08_20	f117	L08	20	T45	e	S	kept	T45							
+f117_L08_21	f117	L08	21	T98	s	S	kept	T98				T98	T98		T18
+f117_L08_22	f117	L08	22	T80	i	S	kept	T80							
+f117_L08_23	f117	L08	23	T65	l	M	kept	T65				T95	T51		
+f117_L08_24	f117	L08	24	T45	e	S	kept	T45							
+f117_L08_25	f117	L08	25	T76	n	S	kept	T76					T66		
+f117_L08_26	f117	L08	26	T45	e	S	kept	T45							
+f117_L08_27	f117	L08	27	T29	et	M	kept	T29				T29	T29		
+f117_L08_28	f117	L08	28	T53	t	S	kept	T53							
+f117_L09_01	f117	L09	1	X_NEW	?	U	moved	X_NEW-h	?						
+f117_L09_02	f117	L09	2	T45	e	S	kept	T45					T45		
+f117_L09_03	f117	L09	3	T92	s	S	kept	T92					T92		
+f117_L09_04	f117	L09	4	T55	o	S	kept	T55					T55		
+f117_L09_05	f117	L09	5	T80	i	S	kept	T80							
+f117_L09_06	f117	L09	6	T76	n	S	kept	T76					T76		
+f117_L09_07	f117	L09	7	T70	g	S	kept	T70					T70		
+f117_L09_08	f117	L09	8	T29	et	S	kept	T29							
+f117_L09_09	f117	L09	9	T98	s	S	bad-cut						T98		
+f117_L09_10	f117	L09	10	T80	i	S	taken-out								
+f117_L09_11	f117	L09	11	T65	s	M	moved	T80	i	value	M	T95	T51		T95
+f117_L09_12	f117	L09	12	T49	u	S	moved	T65	t	value	M				
+f117_L09_13	f117	L09	13	T19	o	S	taken-out						T19		
+f117_L09_14	f117	L09	14	T33	u	S	taken-out								
+f117_L09_15	f117	L09	15	T98	s	S	taken-out						T98		
+f117_L09_16	f117	L09	16	T92	s	S	kept	T92							
+f117_L09_17	f117	L09	17	T60	e	M	moved	T92	s	value	M	T86	T86		T86
+f117_L09_18	f117	L09	18	T54	m	S	kept	T54							
+f117_L09_19	f117	L09	19	T81	b	S	moved	T81-d	?	U	U		T81		
+f117_L09_20	f117	L09	20	T65	l	M	moved	T65-c	?	U	U	T95	T51		
+f117_L09_21	f117	L09	22	T45	e	S	taken-out								
+f117_L09_22	f117	L09	23	T65	t	S	moved	T45	e	value	M		T65		
+f117_L09_23	f117	L09	24	T85	a	S	kept	T85					T85		
+f117_L09_24	f117	L09	25	T60	n	S	moved	T85	a	value	M		T60		
+f117_L09_25	f117	L09	26	T53	t	S	kept	T53							
+f117_L09_26	f117	L09	27	T88	g	S	kept	T88							
+f117_L09_27	f117	L09	28	T33	u	S	taken-out					T33			T33
+f117_L09_28	f117	L09	29	T80	i	S	taken-out								
+f117_L09_29	f117	L09	30	T65	s	M	moved	T80	i	value	M	T95	T51		T95
+f117_L10_01	f117	L10	1	T83	r	M	kept	T83				T83	T83		
+f117_L10_02	f117	L10	2	T45	e	S	kept	T45							
+f117_L10_03	f117	L10	3	T33	u	S	kept	T33							
+f117_L10_04	f117	L10	4	T57	s	S	kept	T57					T57		
+f117_L10_05	f117	L10	5	T80	i	S	kept	T80				T80			T80
+f117_L10_06	f117	L10	6	T57	s	M	kept	T57				T57	T57		T57
+f117_L10_07	f117	L10	7	T60	e	M	kept	T60					T86		
+f117_L10_08	f117	L10	8	X_NEW	?	U	moved	T78-b	?						
+f117_L10_09	f117	L10	9	T84	quello	M	kept	T84					T84		
+f117_L10_10	f117	L10	10	T70	g	M	kept	UNREAD				T84	OTHER		T84
+f144r_L03_01	f144r	L03	1	T84	quello	M	kept	T84				T84		T84	T84
+f144r_L03_02	f144r	L03	2	X_NEW	?	U	kept	X_NEW							
+f144r_L03_03	f144r	L03	3	X_NEW	?	U	moved	X_NEW-d	?			T98			
+f144r_L03_04	f144r	L03	4	T54	m	M	kept	T54				T54		T54	T54
+f144r_L03_05	f144r	L03	5	T90	p	S	bad-cut							T90	
+f144r_L03_06	f144r	L03	6	T83	r	M	kept	T83				T83		T83	
+f144r_L03_07	f144r	L03	7	T80	i	S	kept	T80						T80	
+f144r_L03_08	f144r	L03	8	T42	m	M	aside					T42		T17	T42
+f144r_L03_09	f144r	L03	9	T37	a	S	kept	T37						T37	
+f144r_L03_10	f144r	L03	10	X_NEW	?	U	moved	T84	quello	value	M				
+f144r_L03_11	f144r	L03	11	T88	g	M	kept	T88				T88		T88	
+f144r_L04.1_01	f144r	L04.1	1	T66	e	M	kept	T66				T66		T66	T66
+f144r_L04.1_02	f144r	L04.1	2	T55	o	S	kept	T55				T55		T55	T55
+f144r_L04.1_03	f144r	L04.1	3	T81	b	M	kept	T81				T81		T81	T81
+f144r_L04.1_04	f144r	L04.1	4	T65	t	S	moved	T60-c	?	U	U			T65	
+f144r_L04.1_05	f144r	L04.1	5	T85	a	S	kept	T85						T85	
+f144r_L04.1_06	f144r	L04.1	6	T53	t	S	kept	T53							
+f144r_L04.1_07	f144r	L04.1	7	T60	n	S	moved	T86	e	value	S	T86		T86	T86
+f144r_L04.1_08	f144r	L04.1	8	T76	n	M	kept	T76						T76	
+f144r_L04.1_09	f144r	L04.1	9	X_NEW	?	U	taken-out								
+f144r_L04.1_10	f144r	L04.1	10	X_NEW	?	U	taken-out								
+f144r_L04.1_11	f144r	L04.1	11	T26	per	M	kept	T26				X_NEW		T76	
+f144r_L04.1_12	f144r	L04.1	12	T78	e	M	moved	T78-b	?	U	U			T86	
+f144r_L04.2_01	f144r	L04.2	1	T18	d	M	kept	T18						T18	
+f144r_L04.2_02	f144r	L04.2	2	T25	i	S	kept	T25						T25	
+f144r_L04.2_03	f144r	L04.2	3	T84	quello	M	kept	T84				T84		T84	T84
+f144r_L04.2_04	f144r	L04.2	4	T51	l	M	moved	T51-b	?	U	U	T51		T51	
+f144r_L04.2_05	f144r	L04.2	5	T95	s	S	moved	T95-b	?	U	U	T95		T95	T95
+f144r_L04.2_06	f144r	L04.2	6	X_NEW	?	U	moved	T81	b	value	M				
+f144r_L04.2_07	f144r	L04.2	7	X_NEW	?	U	taken-out					X_NEW			
+f144r_L04.2_08	f144r	L04.2	8	T83	r	M	moved	T81-c	?	U	U	T81		T81	
+f144r_L04.2_09	f144r	L04.2	9	T19	o	S	taken-out							T19	
+f144r_L04.2_10	f144r	L04.2	10	T57	s	S	kept	T57				T57		T57	T57
+f144r_L04.2_11	f144r	L04.2	11	T85	a	S	kept	T85						T85	
+f144r_L04.2_12	f144r	L04.2	12	X_NEW	?	U	taken-out								
+f144r_L05_01	f144r	L05	1	T65	t	M	bad-cut							T65	
+f144r_L05_02	f144r	L05	2	T56	h	S	kept	T56						T56	
+f144r_L05_03	f144r	L05	3	T45	e	S	taken-out							T45	
+f144r_L05_04	f144r	L05	4	X_NEW	?	U	taken-out								
+f144r_L05_05	f144r	L05	5	T52	i	M	kept	T52				T52		T52	T52
+f144r_L05_06	f144r	L05	6	T83	r	M	kept	T83						T83	
+f144r_L05_07	f144r	L05	7	T36	c	M	aside					T26		T76	T26
+f144r_L05_08	f144r	L05	8	T81	b	M	moved	T83	r	value	M	T81		T81	T81
+f144r_L05_09	f144r	L05	9	T19	o	S	taken-out							T19	
+f144r_L05_10	f144r	L05	10	T63	d	S	kept	T63						T63	
+f144r_L05_11	f144r	L05	11	T96	i	S	kept	T96						T96	
+f144r_L05_12	f144r	L05	12	T81	b	M	moved	T81-b	?	U	U	X_NEW		T81	X_NEW
+f144r_L05_13	f144r	L05	13	X_NEW	?	U	kept	X_NEW							
+f144r_L05_14	f144r	L05	14	X_NEW	?	U	taken-out								
+f144r_L05_15	f144r	L05	15	T37	a	S	kept	T37							
+f144r_L05_16	f144r	L05	16	T78	qual	S	kept	T78						T78	
+f144r_L05_17	f144r	L05	17	T50	c	S	kept	T50				T50		T50	T50
+f144r_L05_18	f144r	L05	18	T55	o	S	kept	T55						T55	
+f144r_L05_19	f144r	L05	19	T95	l	M	moved	T60-c	?	U	U	T95		T51	
+f144r_L05_20	f144r	L05	20	T42	m	M	kept	T42						T17	
+f144r_L05_21	f144r	L05	21	T45	e	M	kept	T45				T45		T45	T45
+f144r_L05_22	f144r	L05	22	T10	z	S	kept	T10						T10	
+f144r_L05_23	f144r	L05	23	T19	o	S	kept	T19						T19	
+f144r_L05_24	f144r	L05	24	T18	d	S	kept	T18						T18	
+f144r_L05_25	f144r	L05	25	T80	i	S	kept	T80						T80	
+f144r_L05_26	f144r	L05	26	T95	l	M	moved	T65	t	value	M	T95		T51	
+f144r_L05_27	f144r	L05	27	T66	e	M	moved	T66-b	?	U	U	T66		T66	
+f144r_L05_28	f144r	L05	28	T33	u	S	kept	T33						T33	
+f144r_L05_29	f144r	L05	29	X_NEW	?	U	moved	T81	b	value	M	X_NEW			
+f144r_L05_30	f144r	L05	30	T90	p	S	kept	T90						T90	
+f144r_L05_31	f144r	L05	31	T33	u	M	kept	T33				T33		T33	T33
+f144r_L05_32	f144r	L05	32	T83	r	S	kept	T83				T83		T83	T83
+f144r_L05_33	f144r	L05	33	T85	a	S	kept	T85						T85	
+f144r_L05_34	f144r	L05	34	T53	t	S	kept	T53						T53	
+f144r_L05_35	f144r	L05	35	T55	o	S	kept	T55						T55	
+f144r_L06_01	f144r	L06	1	T90	p	M	bad-cut					T90		T97	T90
+f144r_L06_02	f144r	L06	2	T42	m	S	bad-cut					T42		T42	T42
+f144r_L06_03	f144r	L06	3	T25	i	S	kept	T25							
+f144r_L06_04	f144r	L06	4	T33	u	S	taken-out							T33	
+f144r_L06_05	f144r	L06	5	T63	d	S	kept	T63						T63	
+f144r_L06_06	f144r	L06	6	T80	i	S	taken-out							T80	
+f144r_L06_07	f144r	L06	7	T36	c	S	moved	T80	i	value	M	T36		T36	T36
+f144r_L06_08	f144r	L06	8	T45	e	S	taken-out							T45	
+f144r_L06_09	f144r	L06	9	T18	d	M	kept	T18						T18	
+f144r_L06_10	f144r	L06	10	T80	i	S	taken-out								
+f144r_L06_11	f144r	L06	11	X_NEW	?	U	moved	T80	i	value	M	X_NEW			T63
+f144r_L06_12	f144r	L06	12	T83	r	M	kept	T83				T83		T83	T83
+f144r_L06_13	f144r	L06	13	T37	a	M	kept	T37						T37	
+f144r_L06_14	f144r	L06	14	T70	g	S	kept	T70						T70	
+f144r_L06_15	f144r	L06	15	T52	i	M	kept	T52						T52	
+f144r_L06_16	f144r	L06	16	T60	n	M	moved	T60-b	?	U	U			T60	
+f144r_L06_17	f144r	L06	17	T86	e	M	kept	T86						T86	
+f144r_L06_18	f144r	L06	18	T83	r	M	kept	T83				T83		T83	
+f144r_L06_19	f144r	L06	19	T19	o	S	taken-out							T19	
+f144r_L06_20	f144r	L06	20	X_NEW	?	U	taken-out					X_NEW			X_NEW
+f168_R02_01	f168	R02	1	T89	che	S	kept	T89				T89			T89
+f168_R02_02	f168	R02	2	T96	i	S	kept	T96							
+f168_R02_03	f168	R02	3	T98	s	S	taken-out								
+f168_R02_04	f168	R02	4	T25	i	S	kept	T25							
+f168_R02_05	f168	R02	5	T92	s	S	kept	T92							
+f168_R02_06	f168	R02	6	T37	a	S	kept	T37							
+f168_R02_07	f168	R02	7	T24	f	S	bad-cut					T83			T83
+f168_R02_08	f168	R02	8	T85	a	S	kept	T85					T85		
+f168_R02_09	f168	R02	9	T36	c	M	kept	T95				T95	T95		
+f168_R02_10	f168	R02	10	T33	u	S	kept	T33							
+f168_R02_11	f168	R02	11	T85	a	S	kept	T85					T85		
+f168_R02_12	f168	R02	12	T60	n	M	kept	T60					T60		
+f168_R02_13	f168	R02	13	T33	u	M	taken-out						T33		
+f168_R02_14	f168	R02	14	T85	a	S	kept	T85					T85		
+f168_R02_15	f168	R02	15	T53	t	S	kept	T53							
+f168_R02_16	f168	R02	16	T55	o	S	kept	T55					T55		
+f168_R02_17	f168	R02	17	X_NEW	m	S	kept	T17				T17	T17		T17
+f168_R02_18	f168	R02	18	T19	o	S	taken-out								
+f168_R02_19	f168	R02	19	T58	l	S	kept	T58							
+f168_R02_20	f168	R02	20	T65	t	S	bad-cut					T65			T65
+f168_R02_21	f168	R02	21	T19	o	S	taken-out								
+f168_R02_22	f168	R02	22	T36	c	S	moved	T60-c	?	U	U				
+f168_R02_23	f168	R02	23	T19	o	S	kept	T19							
+f168_R02_24	f168	R02	24	T76	n	S	kept	T76							
+f168_R02_25	f168	R02	25	T58	l	S	kept	T58							
+f168_R02_26	f168	R02	26	T19	o	S	taken-out					T19	T19		T19
+f168_R02_27	f168	R02	27	T97	r	M	kept	T97					T97		
+f168_R02_28	f168	R02	28	T52	i	S	kept	T52							
+f168_R02_29	f168	R02	29	T37	a	S	kept	T37							
+f168_R02_30	f168	R02	30	T51	l	S	kept	T51							
+f168_R02_31	f168	R02	31	T53	t	S	kept	T53							
+f168_R02_32	f168	R02	32	T45	e	S	taken-out								
+f168_R02_33	f168	R02	33	T64	h	M	kept	T38				T38	T38		
+f168_R02_34	f168	R02	34	T60	e	M	moved	T86	e			T86	T86		T60
+f168_R03_01	f168	R03	1	T92	s	S	kept	T92							
+f168_R03_02	f168	R03	2	T19	o	S	taken-out								
+f168_R03_03	f168	R03	3	T90	p	S	moved	T83	r	value	M				
+f168_R03_04	f168	R03	4	T24	r	M	moved	T85	a	value	M	T83	T24		T83
+f168_R03_05	f168	R03	5	T85	a	S	kept	T85					T85		
+f168_R03_06	f168	R03	6	T70	g	M	kept	T70				T70	T70		T70
+f168_R03_07	f168	R03	7	T90	p	S	moved	T85	a	value	M				
+f168_R03_08	f168	R03	8	T85	a	S	kept	T85					T85		
+f168_R03_09	f168	R03	9	T24	f	S	bad-cut						T24		
+f168_R03_10	f168	R03	10	T65	t	S	bad-cut								
+f168_R03_11	f168	R03	11	T25	i	S	kept	T25							
+f168_R03_12	f168	R03	12	X_NEW	?	U	taken-out								
+f168_R03_13	f168	R03	13	T92	s	S	kept	T92							
+f168_R03_14	f168	R03	14	T19	o	S	taken-out								
+f168_R03_15	f168	R03	15	T58	l	S	kept	T58							
+f168_R03_16	f168	R03	16	T66	e	M	moved	T95	s	value	S		T95		
+f168_R03_17	f168	R03	17	T56	r	M	kept	T97				T89	T97		T56
+f168_R03_18	f168	R03	18	T76	n	S	kept	T76				T76			T76
+f168_V01_01	f168	V01	1	T88	g	S	kept	T88							
+f168_V01_02	f168	V01	2	T33	u	S	taken-out						T33		
+f168_V01_03	f168	V01	3	T85	a	S	kept	T85							
+f168_V01_04	f168	V01	4	T60	n	S	moved	T85	a	value	M		T60		
+f168_V01_05	f168	V01	5	T53	t	S	kept	T53							
+f168_V01_06	f168	V01	6	T55	o	S	kept	T55					T55		
+f168_V01_07	f168	V01	7	T25	i	S	kept	T25							
+f168_V01_08	f168	V01	8	T58	l	S	kept	T58							
+f168_V01_09	f168	V01	9	T90	p	S	moved	T97	r	value	M	T90			T90
+f168_V01_10	f168	V01	10	T24	r	M	moved	T90	p	value	M	T83	T24		T83
+f168_V01_11	f168	V01	11	T55	o	S	kept	T55							
+f168_V01_12	f168	V01	12	T36	c	S	moved	T36-c	?	U	U		T36		
+f168_V01_13	f168	V01	13	T45	e	S	taken-out								
+f168_V02_01	f168	V02	1	T63	d	S	kept	T63					T63		
+f168_V02_02	f168	V02	2	T86	e	M	kept	T86				T86	T86		
+f168_V02_03	f168	V02	3	T97	r	M	kept	T97				T97	T97		T97
+f168_V02_04	f168	V02	4	T86	e	M	kept	T86				T86	T86		
+f168_V02_05	f168	V02	5	T98	s	S	taken-out								
+f168_V02_06	f168	V02	6	T80	i	S	kept	T80							
+f168_V02_07	f168	V02	7	X_NEW	?	U	taken-out								
+f168_V02_08	f168	V02	8	X_NEW	?	U	moved	T98	s	value	M				
+f168_V02_09	f168	V02	9	T98	s	S	taken-out								
+f168_V02_10	f168	V02	10	T25	i	S	kept	T25							
+f168_V02_11	f168	V02	11	T80	i	S	taken-out								
+f168_V02_12	f168	V02	12	X_NEW	?	U	taken-out								
+f168_V02_13	f168	V02	13	T53	t	S	kept	T53							
+f168_V02_14	f168	V02	14	T85	a	S	kept	T85							
+f168_V02_15	f168	V02	15	T60	n	S	moved	T60-c	?	U	U		T60		
+f168_V02_16	f168	V02	16	T65	t	S	moved	T19	o	value	M				
+f168_V02_17	f168	V02	17	T19	o	S	taken-out								
+f168_V02_18	f168	V02	18	X_EQ	?	U	kept	X_EQ							
+f168_V02_19	f168	V02	19	T37	a	S	kept	T37							
+f168_V02_20	f168	V02	20	T92	s	S	kept	T92							
+f168_V02_21	f168	V02	21	T53	t	S	kept	T53							
+f168_V02_22	f168	V02	22	T80	i	S	kept	T80							
+f168_V02_23	f168	V02	23	T63	d	S	kept	T63							
+f168_V02_24	f168	V02	24	T96	i	S	kept	T96							
+f168_V02_25	f168	V02	25	T52	i	S	kept	T52				T52	T52		T52
+f168_V02_26	f168	V02	26	T98	s	S	taken-out								
+f168_V02_27	f168	V02	27	T37	a	S	kept	T37							
+f168_V02_28	f168	V02	28	T85	a	S	kept	T85					T85		
+f168_V02_29	f168	V02	29	T54	m	S	kept	T54							
+f168_V02_30	f168	V02	30	T60	e	M	moved	T86	e			T86	T86		T60
+f168_V03_01	f168	V03	1	X_NEW	m	S	kept	T17				T17	T17		T17
+f168_V03_02	f168	V03	2	T85	a	S	kept	T85				T85	T85		T85
+f168_V03_03	f168	V03	3	T18	d	M	kept	T18					T18		
+f168_V03_04	f168	V03	4	T85	a	S	kept	T85					T85		
+f168_V03_05	f168	V03	5	X_NEW	?	U	taken-out					T27			T27
+f168_V03_06	f168	V03	6	T19	o	S	kept	T19							
+f168_V03_07	f168	V03	7	T92	s	S	kept	T92							
+f168_V03_08	f168	V03	8	T85	a	S	kept	T85					T85		
+f168_V03_09	f168	V03	9	T66	e	M	kept	T95				T66	T95		
+f168_V03_10	f168	V03	10	T49	l	M	moved	T65	t	value	M	T51	T95		T51
+f168_V03_11	f168	V03	11	T24	f	S	kept	T24							
+f168_V03_12	f168	V03	12	T45	e	S	taken-out								
+f168_V03_13	f168	V03	13	T24	f	S	moved	T24-c	?	U	U		T24		
+f168_V03_14	f168	V03	14	T19	u	M	taken-out					T33	T33		
+f168_V03_15	f168	V03	15	T25	i	S	kept	T25							
+f168_V03_16	f168	V03	16	X_NEW	?	U	taken-out					X_NEW			X_NEW
+f168_V03_17	f168	V03	17	T96	i	S	kept	T96							
+f168_V03_18	f168	V03	18	T52	i	S	kept	T52				T52	T52		T52
+f168_V03_19	f168	V03	19	T58	l	S	kept	T58							
+f168_V03_20	f168	V03	20	T52	i	S	kept	T52					T52		
+f168_V03_21	f168	V03	21	T24	f	S	kept	T24							
+f168_V03_22	f168	V03	22	T19	o	S	kept	T19							
+f168_V03_23	f168	V03	23	T70	g	M	kept	T84				T84	T84		T84
+f168_V03_24	f168	V03	24	X_NEW	?	U	taken-out								
+f168_V03_25	f168	V03	25	X_NEW	?	U	taken-out								
+f168_V03_26	f168	V03	26	T54	m	S	kept	T54							

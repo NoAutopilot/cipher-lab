@@ -2334,3 +2334,29 @@ Brief `.claude/briefs/runs/2026-10-03-acct3-bir-open.md` (section BIR-OPEN-144).
       after  FAIL language: score=-1.418, null_p99=-1.614, real_p05=-0.954, real_median=-0.817, mode=both, N=91
   The gain is partly circular (the lattice uses an Italian LM). This is a cryptanalytic result only: no reading, no novelty classed.
 Next: owner sign sorter on the appended f.144r rows (the orchestrator republishes); after the decisions, sign_sorter_apply + decode --check, ~$1.
+
+## BIR-OWNER (3 Oct 2026, account-3 worker): the owner's partial sign-sorter picks scored as a third reader on f.117r, f.168, f.144r
+Full record: `nevers-birago-fr3251-1572/harvest/tx_decode/eye/open/sorter/RESULTS-OWNER.md` (prereg 8bbb3861, pushed before any score).
+The owner's save (partial; the owner's words: "doesn't mean they're right") went through `tools/sign_sorter_apply.py` unchanged: 488 tiles, 68 moved,
+58 taken out, 11 bad cuts, 5 set aside. Grade rule: S where the owner's sign equals a blind instrument's read at that position (A1-BIR-VERIFY,
+BIR-OPEN, BIR-OPEN-144), M owner-only, U a move into a new pile. Gate: (b) the owner's picks must beat (a) the base and the p95 of (c), 200 random
+same-size change sets drawn from the lattice's top-k look-alikes.
+- f.117r: 24 changes (S 3, M 11, U 10). (b) is worse than the base and inside the control: FAIL.
+      a  FAIL language: score=-1.215, null_p99=-1.797, real_p05=-0.907, real_median=-0.791, mode=both, N=266
+      b  FAIL language: score=-1.32, null_p99=-1.776, real_p05=-0.893, real_median=-0.782, mode=both, N=256   (control p95 -1.234; rank 118/201)
+- f.168: 14 changes (S 1, M 9, U 4). (b) is worse than 198 of 200 random draws: FAIL.
+      a  FAIL language: score=-1.149, null_p99=-1.64, real_p05=-0.975, real_median=-0.821, mode=both, N=114
+      b  FAIL language: score=-1.418, null_p99=-1.622, real_p05=-0.992, real_median=-0.824, mode=both, N=111  (control p95 -1.146; rank 199/201)
+- f.144r: 17 changes (S 1, M 7, U 9). (b) beats the base and the control: PASS (rank 2/201). Applied in `.../sorter/decode_owner144.json`, decode
+  --check exit 0: H 0 C 0 S 39 M 32 I 0 U 19 (was S 42 M 34 U 14).
+      a  FAIL language: score=-1.418, null_p99=-1.614, real_p05=-0.954, real_median=-0.817, mode=both, N=91
+      b  FAIL language: score=-1.266, null_p99=-1.614, real_p05=-0.954, real_median=-0.817, mode=both, N=91   (control p95 -1.346)
+- Pooled: (a) -1.239, (b) -1.333, control p95 -1.255: FAIL. The owner's picks agree with the blind machine reads 1-5 times in 6-24 per leaf and
+  instrument. On the T65/T95/T51 conflicts the owner mostly gave a third answer (T65 or a new pile). Of the 25 focus tiles the owner touched 21
+  (15 moved, 5 aside, 1 bad cut). Those letter scores are averages over the 4-gram LM. The f.144r gain is on one leaf of three and still far
+  below real_p05.
+Cryptanalytic result only. No reading claimed, H 0 C 0, no novelty classed.
+Next: what to sort next, ranked by score gain in `.../sorter/sort_next.tsv`: f.144r L06.1 (bad cut, recut), L05.7 (aside), L04.1.1, L05.6;
+f.168 R03.6, V03.5, V03.23; f.117r gains are small (<=0.02). Also a native re-capture of the 11 bad-cut tiles. Per the README, a fourth look goes to the
+owner-only disagreements, the 11 M picks on f.117r and 9 on f.168. Sorting the new piles (T60-c holds 7 tiles across leaves: 4 from T65, 1 each from T95, T36 and T60) against the sheet
+would turn U back into values, ~$1 apply after the next save.
