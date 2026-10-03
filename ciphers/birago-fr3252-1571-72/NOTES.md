@@ -1404,3 +1404,12 @@ rank 1/201 among value-shuffled keys AND real score > shuffled p95.
 Licenses only that the real sign order carries the key's language signal beyond the position-shuffled null; no reading, no
 grade change (a separate verifier would be needed), nothing above S, no class. Next as before: the verifier pass on the lam-4
 changed positions against the crops (~$2 each).
+
+## A1-BIR-EYE (3 Oct 2026, account-1 worker for LANE-A1): f.117r lam-4 changed positions, blind eye check
+
+See `../nevers-birago-fr3251-1572/NOTES.md` "A1-BIR-EYE" and `.../harvest/tx_decode/eye/RESULTS.md`, pre-registered at
+632c8786 before any crop was shown. On f.117r one blind Opus reader picked the key-implied sign at 27 of the 32 positions
+the printed 1572 key's lam-4 decode changed, against 3 of 32 swap picks at decoy positions (binomial p 8.9e-21): **PASS**.
+There are 19 S candidates for a verifier (eye/score.json, `f117`). No grade was applied, no reading committed and no novelty
+classed. Next: a separate verifier on those 19 against the crops, ~$2.
+

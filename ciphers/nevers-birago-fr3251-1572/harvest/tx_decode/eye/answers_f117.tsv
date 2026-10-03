@@ -1,0 +1,65 @@
+qid	answer	conf	note
+f117-01	A	M	box with stem down but extra capped top bar, not plain T49
+f117-02	B	M	m with superscript a mark
+f117-03	B	M	single circle with vertical, base bar; not double loop
+f117-04	A	M	crossed filled blob, not an x
+f117-05	A	L	x with loop top, like other T83s
+f117-06	A	M	looped x with cross stroke
+f117-07	B	M	loop with crossed stem above
+f117-08	B	L	same looped-x shape as pos16 T83
+f117-09	B	M	single crossbar
+f117-10	A	L	triangle with bar and stem, not plain delta
+f117-11	A	H	small bare circle, no stem
+f117-12	B	H	D shape
+f117-13	B	M	double loop over crossed stem
+f117-14	A	M	double loop crossed stem
+f117-15	B	M	single crossbar
+f117-16	B	M	ink circle with stem down
+f117-17	B	L	single loop crossed P
+f117-18	B	M	q shape with straight stem
+f117-19	A	M	two crossbars
+f117-20	B	H	circle with stem up
+f117-21	B	H	epsilon joined to o
+f117-22	B	M	diamond on stem, same as pos4
+f117-23	B	H	clear double-stem bar sign
+f117-24	A	H	pi shape
+f117-25	B	M	single loop crossed P
+f117-26	A	M	single crossbar
+f117-27	A	M	single loop crossed P
+f117-28	A	M	looped x like pos6
+f117-29	A	M	q shape
+f117-30	B	M	single crossbar
+f117-31	B	M	d-like with tall looped ascender
+f117-32	A	M	single loop crossed P
+f117-33	B	M	stem below only, no top extension
+f117-34	A	M	two crossbars
+f117-35	A	L	9/q shape, partly cut
+f117-36	B	L	long s with bottom loop, unlike plain S
+f117-37	B	M	stem below circle only
+f117-38	A	L	looped x
+f117-39	B	H	double-stem on bar
+f117-40	A	H	X with parallel slash, as pos5
+f117-41	A	M	single crossbar
+f117-42	A	M	long s with small circle and dot
+f117-43	A	M	single loop crossed P
+f117-44	A	M	straight-stem q
+f117-45	B	L	9 with curving tail
+f117-46	B	M	q shape
+f117-47	A	M	circle with crossed stem on top
+f117-48	A	L	partly cut, loop with stem
+f117-49	A	L	circle with cross above, partly cut
+f117-50	A	H	circle with crossed stem
+f117-51	A	M	single crossbar
+f117-52	A	H	stem through top of circle
+f117-53	A	M	single loop crossed P
+f117-54	A	L	single crossbar, partly cut
+f117-55	A	L	cut at edge, appears single bar
+f117-56	B	H	stem extends above circle
+f117-57	A	M	looped x with cross
+f117-58	A	H	looped crossed x, no circle
+f117-59	A	M	no top extension
+f117-60	A	H	R shape
+f117-61	B	M	single loop crossed P
+f117-62	B	M	m with superscript a
+f117-63	A	L	single 8, not 86 pair
+f117-64	A	H	circle with stem up
