@@ -1,0 +1,40 @@
+# Birago 1571 no.24 fr.3252 f.36v L1 vs the clerk interlinear gloss (HARVEST-D read); built by benchmark-tx/build_ceppo.py
+line	pos	ref_sign	truth	plain	status
+v36top_L01	1	S16	S16|S57	p	scored
+v36top_L01	2	S45	S14|S45|S80|S97	a	scored
+v36top_L01	3	X_THETA2	S30|S32|S56|S60|X_THETA2	r	scored
+v36top_L01	4	S84	S40|S71|S84	l	scored
+v36top_L01	5	S80	S14|S45|S80|S97	a	scored
+v36top_L01	6	S30	S23|S49	n	scored
+v36top_L01	7	S89	S55|S89	d	scored
+v36top_L01	8	S62	S24|S62|S70	o	scored
+v36top_L01	9	S30	S23|S49	n	scored
+v36top_L01	10	S75	S35|S52|S75	e	excluded:gloss-conf-L
+v36top_L01	11	S17	S17|S34|S93	i	scored
+v36top_L01	12	S84	S40|S71|S84	l	scored
+v36top_L01	13	S26	S10|S26|S77|S91|S94	s	scored
+v36top_L01	14	S17	S17|S34|S93	i	excluded:gloss-conf-L
+v36top_L01	15	S13	S13	g	scored
+v36top_L01	16	S30	S23|S49	n	scored
+v36top_L01	17	S70	S24|S62|S70	o	scored
+v36top_L01	18	X_THETA2	S30|S32|S56|S60|X_THETA2	r	scored
+v36top_L01	19	S87			excluded:outside-gloss-span
+v36top_L01	20	S67			excluded:outside-gloss-span
+v36top_L01	21	S35			excluded:outside-gloss-span
+v36top_L01	22	S74			excluded:outside-gloss-span
+v36top_L01	23	S71			excluded:outside-gloss-span
+v36top_L01	24	S87			excluded:outside-gloss-span
+v36top_L01	25	S54			excluded:outside-gloss-span
+v36top_L01	26	S25			excluded:outside-gloss-span
+v36top_L01	27	S47			excluded:outside-gloss-span
+v36top_L01	28	S45			excluded:outside-gloss-span
+v36top_L01	29	S74			excluded:outside-gloss-span
+v36top_L01	30	S93			excluded:outside-gloss-span
+v36top_L01	31	S37			excluded:outside-gloss-span
+v36top_L01	32	S88			excluded:outside-gloss-span
+v36top_L01	33	S74			excluded:outside-gloss-span
+v36top_L01	34	S75			excluded:outside-gloss-span
+v36top_L01	35	S74			excluded:outside-gloss-span
+v36top_L01	36	S94			excluded:outside-gloss-span
+v36top_L01	37	S52			excluded:outside-gloss-span
+v36top_L01	38	S37			excluded:outside-gloss-span

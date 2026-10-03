@@ -15,14 +15,14 @@ The look-alike pass showed that agreement can rise while accuracy does not (LESS
 
 | # | Property | Target | Today (3 Oct 2026) |
 |---|---|---|---|
-| 1 | True per-sign error, measured against a known answer | <= 5% on symbol ciphers, <= 1% on digits | measured once or twice (no.87: 0.178 / 0.071); usually only two-reader agreement |
+| 1 | True per-sign error, measured against a known answer | <= 5% on symbol ciphers, <= 1% on digits | BENCHMARK-TX.tsv + `tools/tx_bench.py` (TX-BENCH, 3 Oct 2026). Held-out (eval) Birago no.87, 803 scored signs: single blind pass A 0.069 (0.053-0.088), pass B 0.100 (0.081-0.122), reconciled 0.053 (0.040-0.071), reconciled + NO87-LABELS relabels 0.045 (0.033-0.061); per leaf the reconciled read is 0.083 f.178r, 0.055 f.178v, 0.013 f.179r. Dev: f.36v gloss line 0.31-0.44 on 16 signs; Ceppo f.21v/f.87 single passes 0.04-0.13 on S spans. Value-level lower bounds (see Benchmark) |
 | 2 | Every transcription reports its error with the method named | always: `err_true` (benchmark-calibrated) or `err_2reader`, never "agreement" alone | mixed |
 | 3 | Signs are image tiles in one atlas per key family, not strings typed per letter | every symbol cipher | tools/glyph_atlas.py exists (Carpi, Salviati) but Birago/Ceppo/Florence used line reads |
 | 4 | Each sign carries top-k candidates with confidences | k=3 | one forced label |
 | 5 | Ambiguity is settled with the key and the language in the loop, and reported as such (grade S, never H) | key-constrained decode over the candidate lattice | transcription fixed first, decoded second |
 | 6 | A person's decision on one tile propagates to every tile of that cluster in every letter of the key family | always | sorter labels apply to one letter |
 | 7 | The sorter asks the person only the tiles whose answer moves the reading most, about 10-20 per session | ranked by expected change in key rank / judge score | all tiles shown in piles |
-| 8 | Cost per 100 signs known and falling | reported per job | not tracked |
+| 8 | Cost per 100 signs known and falling | reported per job | one figure on file: HARVEST-D2 (Ceppo f.21v + f.35 + f.87, 547 signs, two blind passes + reconcile + decode + controls, USD 35.90 on Fable) = about USD 6.6 per 100 signs, an upper bound since it includes decoding; no other transcription job ledgers its sign count (TX-BENCH, 3 Oct 2026) |
 
 ## The pipeline (target state; each step names its tool)
 
@@ -52,6 +52,32 @@ Birago no.87 (clerk sheet, canvas 182); Birago 1571 f.36v L1 (period gloss); Cep
 decode, the S-graded spans); colbert26 f.23/f.24 (interlinear keys); Mercy (H-graded spans); later Florence c.111/c.127.
 Splits: tune on some, report on held-out ones (BENCHMARK.tsv's own rule). A pipeline change is adopted only when it
 lowers held-out err_true.
+
+**Result (TX-BENCH, 3 Oct 2026).** Four items built, disk only (`benchmark-tx/build_birago87.py`, `build_ceppo.py` regenerate the
+truth files and the normalised pipeline outputs in `benchmark-tx/outputs/`). Truth for a sign = the set of signs whose key value is
+the plain letter the known answer gives at that position (a homophone swap is invisible, so every figure is a value-level lower
+bound on sign error); positions the known answer does not force (unaligned, off-sheet, key-split, uncertain span, M/I/U tokens) are
+excluded and counted. `python3 tools/tx_bench.py OUTPUT.tsv --bench BENCHMARK-TX.tsv` aligns each line to the reference by edit
+distance and reports wrong + deleted + inserted over scored, Wilson 95%, top confusions.
+
+| item | split | truth | scored / excluded | pass A | pass B | reconciled | after look-alike / labels |
+|---|---|---|---|---|---|---|---|
+| birago1572-no87 (f.178r-179r) | eval | clerk clear sheet, C | 803 / 50 | 0.069 | 0.100 | 0.053 | passD 0.049 (f.178r+f.179r only, 164 signs); labels 0.045 |
+| ceppo-f36v-gloss (fr.3252 f.36v L1) | dev | period interlinear gloss, C | 16 / 22 | 0.312 | 0.375 | 0.438 (`?` at splits) | passD 0.438 |
+| ceppo-f21v-S | dev | S tokens of the committed decode | 189 / 78 | 0.048 | 0.053 | passC 0.005; committed = truth source | -- |
+| ceppo-f87-S | dev | S tokens of the committed decode | 139 / 65 | 0.043 | 0.130 | passC 0.050; committed = truth source | -- |
+
+Top confusions on no.87 (reconciled): s<-T50 x7 (the curled Ce, fixed by the labels), d<-T98 x7 (the T18/T98 pair, still open),
+t<-T90 x3, e<-T76 x3, l<-T64 x2. What this says: on the held-out item the reconciled line read is at the 5% target and two
+readers' reconciliation roughly halves a single pass's error; the T98/T18 look-alike is now the largest remaining error source.
+The earlier 0.178/0.071 (LOOKALIKE-TOOL) counted letters outside matching blocks and included f.178r's uncertain opening; this
+scorer is per sign against the key-forced set, so the two are not comparable figures. Limits: the no.87 sheet was aligned on the
+reconciled sequence, so a segmentation error there is invisible and passC has a home advantage on segmentation; the Ceppo S items
+are not independent of their committed reading (only the single passes are scored there) and cover only signs read at H, so they
+understate error; the f.36v item is 16 signs. Not built: colbert26 f.23/f.24 (no raw reader passes on disk, and the gloss is
+word-level: the sign-level alignment agrees on 63 of 294 tokens), Mercy (no independent known answer: S under an annealed key).
+Next items: the f.36v gloss read beyond line 1 (F36-GLOSS bands) and the Florence c.111/c.127 glossed lines; and per TX-ATLAS-B72,
+no.87 stops being held-out if that job names clusters from the no.87 sheet -- its eval figure then needs another Birago 1572 item.
 
 ## Rules for every account (effective 3 Oct 2026)
 
