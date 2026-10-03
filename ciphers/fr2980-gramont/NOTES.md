@@ -1167,3 +1167,12 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 19
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
 Verdict: keep going: 2 internal gaps; cheapest next: siblings, locate fr.3038 no.19 (period decipherment of Gramont's 27 Feb 1530 Villandry letter, printed Le Grand III pp.391-393) and its cipher original on Gallica; if both exist, align them as known plaintext in the same key family to key the shared open codes (grade C for key values), ~$3
+
+## Interrupted (account 2 usage limit, 3 Oct 2026)
+
+- Role: A2-GRA7 (account 2, LANE-A2PUSH2, session_01Bdx5XaXVGRvDF8zAqG9EH7), spawned 05:30 UTC 3 Oct 2026; brief
+  .claude/briefs/runs/2026-10-03-acct2-a2-gra7.md (2d73ce47). No claim or done line in ROOM.md.
+- Committed: none (no commit in this folder after A2-GRA6's 95dbb432, checked 09:25 UTC); no orphaned pre-registration.
+- Unfinished step: locate fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) and its cipher
+  original on Gallica, check key family, align as known plaintext -- the Verdict line above is still this step.
+- May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.

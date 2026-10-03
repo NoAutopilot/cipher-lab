@@ -451,3 +451,19 @@ Brief: .claude/briefs/runs/2026-10-03-acct2-a2-har7.md (LANE-A2PUSH2, account 2)
   No reading changed, so no judge was run (no spec).
 - Requests: none to any host (no DECODE login; crops on disk sufficed). Vision calls: 2 blind passes + 1 reconciliation
   (this worker's own crop checks, 4 image reads).
+
+## Interrupted (account 2 usage limit, 3 Oct 2026)
+
+- A2-HAR8 (account 2, LANE-A2PUSH2, session_01F5vxGtQzEEETwsViBGh25G), spawned 05:30 UTC 3 Oct 2026; brief
+  .claude/briefs/runs/2026-10-03-acct2-a2-har8.md (2d73ce47). No claim or done line in ROOM.md. Committed: none (no
+  commit in this folder after A2-HAR7's 587ad9a2 at 05:27 UTC, checked 09:25 UTC); no orphaned pre-registration.
+  Unfinished step: rerun solver/run_nexthar.py with 8 = c/d (gloss/key_f84_f90.tsv) on the f.80r-81r, f.92r and f.96v
+  strings, control beside target (the Verdict line above is still this step).
+- A2-HAR3 (account 2, LANE-A2PUSH, session_01KLfk1EnuwELanBdc7AY5Zw), claim 22:10 UTC 2 Oct 2026, no done line;
+  LEDGER row D. Committed: none (its gloss pairs never landed, see A2-HAR4 above). Step since done by A2-HAR6/A2-HAR7
+  (791beeec, a6442f53, b0ef9801, 587ad9a2); nothing left to re-run under this role.
+- A2-HAR5 (account 2, LANE-A2PUSH, session_01S3oNgVLh7vdgCgtgyPVk7U), claim 23:04 UTC 2 Oct 2026, halfway 23:12, no
+  done line; LEDGER row X. Committed: eb8b231bc (gloss/run_align.py, "not yet run") -- a pre-registration without its
+  result at the time; the script was revised in a6442f53 (A2-HAR6) and run by A2-HAR7 (587ad9a2), so the orphan is
+  resolved. Nothing left to re-run under this role.
+- May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.

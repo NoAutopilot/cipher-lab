@@ -1448,3 +1448,12 @@ Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading
 - [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412; A2-COL4 margin postscript known-answer test: C 6/7 consistent, M2 5/5 vs control max 4, pooled p 0.076
 
 Verdict: keep going: 4 internal gaps; cheapest next: re-run siblings/anchor_split.py with canvas 54, 55, 56 added as cleared units (pre-registered as a new script copy, statistic, control B and gate unchanged), ~$0.3 (A2-COL17: 54, 55, 56 each PASS their own key_f23 C test; held-out 8/11 anchor candidates agree vs control-H p95 5, not a gate); then canvas 62-63 (La Haye, Jan-Feb 1648) numerals + gloss from line crops (tools/iiif_lines.py --image, two blind passes + one reconciliation, priced per pass), same per-canvas test, ~$3
+
+## Interrupted (account 2 usage limit, 3 Oct 2026)
+
+- Role: A2-COL18 (account 2, LANE-A2PUSH2, session_01NY3P2ciQ119oVa2duLBHn3), spawned 05:30 UTC 3 Oct 2026; brief
+  .claude/briefs/runs/2026-10-03-acct2-a2-col18.md (2d73ce47). No claim or done line in ROOM.md.
+- Committed: none (no commit in this folder after A2-COL17's 0e0e1bcd, checked 09:25 UTC); no orphaned pre-registration.
+- Unfinished step: re-run siblings/anchor_split.py with canvas 54, 55, 56 added as cleared units (new pre-registered
+  script copy, statistic, control B and gate unchanged) -- the Verdict line above is still this step.
+- May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.

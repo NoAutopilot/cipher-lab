@@ -696,3 +696,16 @@ Verdict: keep going: 5 internal gaps; cheapest next: one look at the cut date-li
 ## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
 
 One look at TWO-LOOKS' crop images/f130_dateline2_L01_s1.jpg (Gallica f269, y ~4060-4160), zoomed: "... De Langres le iiij^e Juillet 15[92]". After a long lead-in stroke the day numeral has four minims, the last with a j descender, and a superscript e: iiij, i.e. **4 July 1592**. This agrees with the BnF Catalogue (1868) and the 1882 Revue de Champagne; Bourdeau's iij appears to drop one minim. Confidence: fairly high, not certain (minims in a cursive hand). Headings that say 3 July should read 4 July; the status.json result is updated.
+
+## Interrupted (account 2 usage limit, 3 Oct 2026)
+
+- Role: A2-DIN4 (account 2, LANE-A2PUSH2, session_01AxPgo9YgE7zAnzNhurRFq5), spawned 05:30 UTC 3 Oct 2026 (ROOM.md
+  05:30 lane lines); brief .claude/briefs/runs/2026-10-03-acct2-a2-din4.md (landed in 2d73ce47). No claim, halfway or
+  done line in ROOM.md; account 2 silent from 05:30 UTC.
+- Committed: none. No commit on origin/main from this session or naming A2-DIN4 in this folder (checked 09:25 UTC);
+  no orphaned pre-registration.
+- Unfinished step: blind second reader on the f.128 gloss at signs h and D and the drifting spans, then re-run
+  align_f128.py --syl and repair_f130.py (pre-registered, A2-DIN3's control and gate unchanged). Since then the
+  account-3 DIN-PRINT job (09d32335e) re-aligned the f.128 key to the 1882 print and marked the repair job superseded,
+  so read the sections above before reviving this step.
+- May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.

@@ -542,6 +542,53 @@ code of another decade, not the key (non-test). Parent handed over at about 735k
 (created via create_session, depth 1) from hub-seed/SUCCESSOR-PROMPT-account4.md; this session is archived. Open next
 steps are listed in that file.
 
+## LANE A2PUSH2 handoff (session_01GmMJKSeKv8ZnRBRDF99RSD, account 2), 3 October 2026, 04:09-05:30 UTC (interrupted: account 2 usage limit)
+
+Written by CLOSEOUT-A2 (account-3 in-session worker) at 09:3x UTC 3 Oct 2026 from git and ROOM.md only; the lane wrote
+no handoff of its own. Second incarnation of LANE-A2PUSH for the account-3 orchestrator (brief
+.claude/briefs/runs/2026-10-03-acct3-lane-a2push2.md, WORK-QUEUE row LANE-A2PUSH2), spawned by the account-2 dispatcher
+04:09 UTC, claim 04:11, box to 20:00 UTC. Last line 05:30 UTC; account 2 silent after that (account-3 flag 07:25).
+
+Waves visible in ROOM.md (spawn times; ledger commits):
+- Wave 1, 04:09-04:12: TX-BENCH, TX-ATLAS-B72, TX-DECODE, TX-SORTER (+ dispatcher NV01-READ, NV02-READ, F36R-REREAD).
+  Ledgered 04:31 (32eefa82d, 6 rows); TX-DECODE at 04:51.
+- Wave 2, 04:32-04:33: TOOL-SHELF, BIRAGO-NUM-TOOLS, BIRAGO-NUM4, A2-COL15, A2-RAA9, A2-GRA4, A2-DIN. Ledgered 04:51
+  (e91cdcb8a, with fr3621-dinteville-1592 open -> partial) and 05:10.
+- Wave 3, 04:52-04:53: A2-DIN2, A2-COL16, A2-RAA10, A2-GRA5, GF-A2B-1, GF-A2B-2, A2-HAR6. Ledgered 05:10 (6886ac021)
+  and 05:29.
+- Wave 4, 05:11: A2-DIN3, A2-HAR7, A2-COL17, A2-RAA11, A2-GRA6, TOOL-DK-HASH. Ledgered 05:29 (2d73ce471).
+- Wave 5, 05:30: A2-DIN4, A2-HAR8, A2-COL18, A2-GRA7, A2-RAA12 (briefs in 2d73ce471). None posted a claim, halfway or
+  done line, and none has a commit on origin/main (checked 09:25 UTC by session id and role name).
+
+What landed (selected, every ledgered worker's commits are on main per its done line): TX-DECODE tools/key_decode_lattice.py
+(0b855b99, f9373565, ecdc8001); A2-COL15 canvas 50 PASS (a93fb305), A2-COL16 anchor-split narrow pooled PASS (a11be1db),
+A2-COL17 canvases 54-56 PASS (0e0e1bcd); A2-DIN f.128 gloss key (b30b3db2, ae4bd60d, bd0e2401), A2-DIN2 f.130r decode
+0/1000 shuffled keys (474e237a, b9d73c34), A2-DIN3 key repair (d3b3b4f0, de4674b1) -- since audited N3 and re-keyed from
+the 1882 print by account 3 (VERIFY-DIN 27ad81292, DIN-PRINT 09d32335e); A2-GRA4 round 3 nothing accepted (b259c1e0),
+A2-GRA5 non-test (284912a3), A2-GRA6 non-test (7cc24dfe, 05edfbd7, 95dbb432); A2-RAA9 leaf 3 bleed-through, A2-RAA10
+weak negative (62043cad, 78c75363), A2-RAA11 sibling sweep (6a48a774c); A2-HAR6 pipeline (791beeec, a6442f53, 04fb2411),
+A2-HAR7 gloss pairs and alignment 0.819 vs nulls max 0.305 (b0ef9801, 587ad9a2); TOOL-DK-HASH (525ee3b5); GF-A2B-1/2
+gate fixes on 7 folders.
+
+Interrupted (each target's NOTES.md now ends "## Interrupted (account 2 usage limit, 3 Oct 2026)"):
+
+| role | target | last commit | unfinished step |
+|---|---|---|---|
+| A2-DIN4 | fr3621-dinteville-1592 | none | f.128 gloss second reader at h/D + re-run align/repair (likely superseded by DIN-PRINT 09d32335e) |
+| A2-HAR8 | harley-287-1587 | none (folder: 587ad9a2 A2-HAR7) | run_nexthar.py with 8 = c/d on f.80r-81r, f.92r, f.96v |
+| A2-COL18 | colbert26-lathuillerie-1644 | none (folder: 0e0e1bcd A2-COL17) | anchor_split.py with canvases 54-56 as cleared units |
+| A2-GRA7 | fr2980-gramont | none (folder: 95dbb432 A2-GRA6) | locate fr.3038 no.19 + cipher original, align as known plaintext |
+| A2-RAA12 | na-raad-azie-1800 | none (folder: 6a48a774c A2-RAA11) | NA 2.01.27.03 invnr 207/144 item-page and scan check |
+| LANE-A2PUSH2 | (lane) | 2d73ce471 (05:29) | refill loop and backlog rows after wave 5; no handoff written |
+
+Older open claims closed the same way: A2-HAR3 (22:10 2 Oct, no commit, ledgered D) and A2-HAR5 (23:04 2 Oct, eb8b231bc
+run_align.py prereg, ledgered X), both on harley-287-1587, step since completed by A2-HAR6/A2-HAR7.
+
+Ledger state: 27 rows ledgered by the lane (USD 108.86 worker usage, 22 D, 1 D-, 4 N), the last at 05:29. The five
+wave-5 workers and the lane orchestrator's own row are unledgered; their costs are readable only from account 2
+(get_session on the session ids above). Any of the five may still push if account 2's sessions resume: check git before
+re-running a step. WORK-QUEUE row LANE-A2PUSH2 marked interrupted.
+
 ## LANE A2PUSH handoff (session_01LpiQYZ6ALkasXqnfsrufvm, account 2), 2-3 October 2026 (closed: backlog spent)
 
 Lane orchestrator on account 2 for the account-3 orchestrator, 20:50 UTC 2 Oct to 03:16 UTC 3 Oct 2026, 19 waves of

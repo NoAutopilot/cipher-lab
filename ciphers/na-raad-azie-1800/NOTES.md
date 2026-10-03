@@ -917,3 +917,12 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
 - [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
 Verdict: keep going: 0 internal gaps; cheapest next: item-page and digitisation check of 2.01.27.03 invnr 207 and 144 (secret Van Polanen/Meyer reports 1807-10) for any cipher leaves, ~$1 (A2-RAA11: the finding-aid sweep of every 2.01.27/2.01.28/2.10.01-03 toegang found no cipher-marked sibling)
+
+## Interrupted (account 2 usage limit, 3 Oct 2026)
+
+- Role: A2-RAA12 (account 2, LANE-A2PUSH2, session_012VcKAxA7VXY6qNKK4U93Y4), spawned 05:30 UTC 3 Oct 2026; brief
+  .claude/briefs/runs/2026-10-03-acct2-a2-raa12.md (2d73ce47). No claim or done line in ROOM.md.
+- Committed: none (no commit in this folder after A2-RAA11's 6a48a774c at 05:15 UTC, checked 09:25 UTC); no orphaned pre-registration.
+- Unfinished step: item-page and digitisation check of NA 2.01.27.03 invnr 207 and 144 for cipher leaves -- the
+  Verdict line above is still this step.
+- May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
