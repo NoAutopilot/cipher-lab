@@ -1,0 +1,16 @@
+f206: groups 62 letters 192 pins ['172', '22', '279', '31', '379', '501', '581', '628', '66', '722'] feasible(pins) True consistent(pins) True (0.0s, limit 200.0)
+f216v: groups 79 letters 245 pins ['22', '501', '66'] feasible(pins) True consistent(pins) True (22.2s, limit 200.0)
+f213-drop73: groups 83 letters 262 pins ['22', '501', '722'] feasible(pins) True consistent(pins) False (1.5s, limit 200.0)
+f213-full: groups 84 letters 262 pins ['22', '501', '722'] feasible(pins) True consistent(pins) False (0.7s, limit 200.0)
+f213-drop73 pins () consistent True
+f213-drop73 pins ('22',) consistent True
+f213-drop73 pins ('501',) consistent True
+f213-drop73 pins ('722',) consistent False
+f213-drop73 pins ('22', '501') consistent True
+f213-drop73 pins ('22', '722') consistent False
+f213-drop73 pins ('501', '722') consistent False
+f213-drop73 pins ('22', '501', '722') consistent False
+722 at (post-drop idx): [(18, ['90', '689', '24', '722', '573', '594', '52']), (77, ['90', '689', '24', '722', '121', '317', '52'])]
+"ti" in f214r slip at letter positions: [54, 240] of 262
+slip: parlaconquetedesdeuxsicilessilarepubliquedevenisegarantissoitlapossessionactuelledetoutslessouverainsquiontdesestatsdanscetteprovinceleroidesardaigneytrouveroitunautreavantageencequelespaisquiluiontetecedesparletraitedewormsluiseroientgarantisparlamemerepublique
+post-hoc single-drop scan, full f213 with pins 22/501/722 (15 s each): fits when dropping [] ; timeouts []
