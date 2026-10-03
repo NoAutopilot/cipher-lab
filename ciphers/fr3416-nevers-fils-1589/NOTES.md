@@ -482,3 +482,25 @@ and this reader named one (e / crop-edge), so the token **stays M** and xiiij = 
 SECOND-OPINIONS-QUEUE.tsv propagation due (no grade moved). The stated doubt is the crop's left edge, not the letter shape:
 my crop started at x 1880 and the reader could not see where the glyph's lead-in begins.
 Grades this job: 0 tokens moved; code word xiiij = Seigneur M (unchanged). Not found in print: nothing searched.
+
+## A1B-FILS-F38B pre-registration (account 1, 3 Oct 2026, written 17:4x UTC before any pass B read)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-fils-f38b.md`. Second attempt at the FILS-F38 test with changed input
+(a second blind pass of each stream + reconciliation + word placement), not a knob change. Rules fixed before reads:
+1. Crops: the same `images/f38g_L01-L04_s1/s2.jpg` (FILS-F38 command, pasted in that section); no re-cut.
+2. Pass FB (figures) and pass GB (gloss): one blind Sonnet subagent call each, crops only; never shown pass A, the
+   key, any decode or the f.35r reading. Same output columns as `f38_figures.tsv` / `f38_gloss.tsv`; pass GB also
+   names, per gloss word, the figure run(s) it stands over or "clear" when it stands over clear text.
+3. Reconciliation (by this worker, 1 unit, from the crops, before any decode is computed): `tools/reconcile_passes.py`
+   on the two figure passes per band; where A and B agree a digit is kept; where they disagree the crop decides, and
+   a position still unsettled takes pass B's digit only if B marked it confident, else pass A's (A was the pre-registered
+   input). Gloss: a word is kept when both passes read it (normalised as align_f38.py does, edit distance <= 2) or the
+   crop settles it; a word both passes call crossed out stays crossed out ('#'); a word placed over clear text (no
+   figure run beneath it, by either pass and confirmed on the crop) is dropped from the gloss input, since the
+   statistic is per band and a gloss over clear text cannot match the band's figures. Placement is decided from the
+   crops only, never from a decode.
+4. Scoring: `align_f38.py` byte-identical (cmp checked) run in a sub-folder `f38b/` holding the reconciled
+   `f38_figures.tsv` / `f38_gloss.tsv` and a symlink `keys -> ../keys`; same statistic, same controls (shuffled gloss
+   1000, shuffled key 200, seed 1), same gate: PASS only above the p95 of both. Anything else FAIL, both numbers given.
+5. Per rule 3's third-attempt clause: a FAIL here is the second at this test on the same two inputs; a third attempt
+   needs a different instrument or new material, not a third pass.
