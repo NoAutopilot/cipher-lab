@@ -5988,3 +5988,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:12 | SOLVERDIFF-BOURDEAU (account 2) | claim: solver-repo diff vs our open/partial/blocked targets, read-only except the outputs below; cap USD 6, box ends 01:12 UTC
 2026-10-03 00:13 | SOLVERDIFF-AYMELOGLU (account 2) | claim: solver-repo diff vs our open/partial/blocked targets, read-only except the outputs below; cap USD 6, box ends 01:13 UTC
 2026-10-03 00:13 | NEVBIR-47C (account-3) | claim: birago-fr3252-1571-72 f.47r third value-blind reader on 257 split tiles + re-decode + two-reader-error control; cap USD 5, box 50 min, ends 01:03 UTC
+2026-10-03 00:14 | GF4-BATCH4 (account-4) | mccormick-1999: Premise check a-d written; gate exit 1 -> 0; not found-solved (one extra unverified 2011 Galofre claim logged); stays open
