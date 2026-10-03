@@ -21,15 +21,15 @@ code	value	grade	source	note
 306	les	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 776	at	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 420	ta	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
-534	ches	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	776+420+534 = attaches
+534	ches	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	776+420+534 = attaches; FT4aa locator (PREREG-FT4aa, align/ft4aa_real.out): {347, 534} released together is the sole minimal <=2-release restoring F206+f.266r S1 exact fit (rule-4 conflict f.206 slip split vs S1; value and grade unchanged, pending VERIFY)
 65	cette	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 443	pr	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 24	in	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	read 24 or 21
 271	ces	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	was ce; re-split FT4d when 208 fixed at se (443..208 = princesse)
 208	se	C	pooled f.206+f.216v consistency (align/pooled_gate.py, FT4d gate PASS Hp 23)	forced jointly: f.206 princes|se, f.216v "de se tenir" (22 208); was M sse
 123	oient	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
-338	tout	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
-347	con	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
+338	tout	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	FT4aa locator (PREREG-FT4aa, align/ft4aa_real.out): the f.206 split value of 338 is the sole <=2-release site restoring F206+F216V exact fit (rule-4 conflict f.206 slip split vs f.216v/f.217r; value and grade unchanged, pending VERIFY)
+347	con	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	FT4aa locator (PREREG-FT4aa, align/ft4aa_real.out): {347, 534} released together is the sole minimal <=2-release restoring F206+f.266r S1 exact fit (rule-4 conflict f.206 slip split vs S1; value and grade unchanged, pending VERIFY)
 476	nu	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	
 781	e	C	pooled f.206+f.216v consistency (align/pooled_gate.py, FT4d gate PASS Hp 23)	forced jointly; 1 occurrence f.206, 2 f.216v
 824	don	M	split of a multi-group stretch of the f.206r slip by word/syllable boundary (inferred)	

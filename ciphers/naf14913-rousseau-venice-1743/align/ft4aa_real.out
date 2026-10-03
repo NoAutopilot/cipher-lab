@@ -1,0 +1,8 @@
+REAL pair A pins ['#SEP', '22', '581', '66'] shared ['10', '121', '208', '306', '338', '420', '444', '501', '781', '824']
+  0-release: nofit
+  single restoring ['338']; pair restoring (no single inside) []
+  MINIMAL <=2 restoring [('338',)] count 1; unresolved []
+REAL pair B pins ['#SEP', '22', '581', '66'] shared ['10', '114', '121', '123', '271', '347', '534', '722']
+  0-release: nofit
+  single restoring []; pair restoring (no single inside) [('347', '534', 'fit')]
+  MINIMAL <=2 restoring [('347', '534')] count 1; unresolved []
