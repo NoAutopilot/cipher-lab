@@ -781,7 +781,7 @@ possible (~$5). Both (d) and (e') stand. None of these depends on anyone else.
 
 ## As-sent search (A1B-VILL-ASSENT)
 
-Worker A1B-VILL-ASSENT, LANE-A1B, account 1, 3 Oct 2026, 17:19-17:40 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-assent.md`,
+Worker A1B-VILL-ASSENT, LANE-A1B, account 1, 3 Oct 2026, 17:19-17:35 UTC. Brief `.claude/briefs/runs/2026-10-03-acct1-a1b-vill-assent.md`,
 step (d). Search only: no vision call, no transcription, no reading.
 
 **Result: a received-side candidate was found, but its date does not match.** The Godefroy collection at the
@@ -869,11 +869,15 @@ or in cipher, with one heading crop through `tools/iiif_lines.py`.
    to Villeroy" itself.
 7. **bibnum.institutdefrance.fr**: 2 searches (above). **calames.abes.fr**: 3 requests (2 redirects, 1 404).
 
+**Late checks (same pass):**
+- Cinq Cents de Colbert 18 (Tome III, 1573-1595): its AeM record carries only Nevers 1614 and the Italian embassy.
+- Cinq Cents de Colbert 32: its AeM record carries only the Rome embassy. Neither has a 1595 Nevers-to-Villeroy letter.
+- Berger de Xivrey, *Lettres missives de Henri IV* vol. 4 (archive.org `recueildeslettre04henr`, djvu.txt): 0 hits for
+  "Godefroy" and no 16 Aug or 16 Sept 1595 Nevers letter.
+
 **Not done:**
-- Cinq Cents de Colbert 18 (Tome III, 1573-1595, Gallica btv1b10033955b) and 32 were not opened.
 - fr.15576 was not opened item by item.
 - Calames was not queried through its real search.
-- The *Lettres missives de Henri IV* vol. 4 footnotes were not searched for a "Godefroy 262" citation.
 
-Requests this pass: archivesetmanuscrits.bnf.fr 22, gallica.bnf.fr 4, www.googleapis.com 16, archive.org 5,
+Requests this pass: archivesetmanuscrits.bnf.fr 24, gallica.bnf.fr 4, www.googleapis.com 16, archive.org 7,
 bibnum.institutdefrance.fr 2, calames.abes.fr 3. Rule 10: a search result, not a novelty claim.
