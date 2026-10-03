@@ -1101,3 +1101,48 @@ power 20/20 in every seed, and the judge is better. That gives 7 M -> S candidat
 L03.6, L04.21 a) and 3 S tokens contested. **VERIFIER WANTED** (the in-family control passes only at p 0.042; the gloss reads
 and the tile locations are one eye each). Fragments (M, English gist only): L04 "...un giorno..." ("one day"; was "ungiornt"),
 L03 "...avendo..." ("having"), L05 "secre[t]amente" ("secretly", unchanged).
+
+## Premise check (A1B-CEPPO-POUND, 3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` "## Premise check", run 16:5x UTC, disk and two read-only clones.
+- **(a) Decipherments the folder already mentions -- found, none of the four targets.** Tomokiyo's printed Ceppo-Nevers key
+  (fr.4702 ff.36-37, `nevers_add1.png`) is a key, not a reading of fr.3251; his own note says it reads the fr.4702 letter
+  "but not quite". The three "(with decipherment)" witnesses ff.27, 39, 82 were opened (NEV-C2/C3, `images/manifest.json`):
+  f.27's gloss covers f.27's own passage only (illegible past ~6 letters); f.39 carries no gloss at all (f.39r-39v and the
+  facing f.40r checked at zoom); f.82's gloss covers f.82 only. fr.3252 f.36-37 (HARVEST-D) glosses its own letter.
+  Pascal 1960 (VERIFY-CEPPO-D2-2) quotes f.21r's clear text, not a reading of any cipher. No mentioned decipherment
+  covers f.11r, f.21v, f.35 or f.87.
+- **(b) Other solvers' working files -- not found.** Fresh read-only clones 3 Oct 2026: dbourdeau/cyphersolver a439937
+  (3 Oct 2026): `SOLVED_CATALOGUE.md` l.243 still lists "ff. 11, 21v, 35, 87 ... have no published reading";
+  `targets/birago/` works f.119 only and names ff.27/39/82 as siblings with decipherment; no apply-key script or rendering
+  for any Ceppo-Nevers folio (grep ceppo / 3251 / btv1b9060248g: only nevers.htm mirrors and the Gallica sweep index).
+  aaymeloglu/unsolved-ciphers d2800bb: grep ceppo / 3251 hits only DECODE record id 3251 (an unrelated 1911 postcard).
+- **(c) Physical neighbours -- not found (for f.11r).** Canvas 12 is the opening f.10v | f.11r (`images/f11r_canvas12.jpg`,
+  1000 px, INTAKE-3251; HARVEST-A's three native regions of canvas 12). No slip or clear copy was recorded on either page.
+  f.11v (canvas 13) has never been fetched: not checked here (brief is disk-only for this step); logged as a gap, not a find.
+  ff.21v/35/87 neighbours were viewed by HARVEST-C/D (overviews in `harvest/f*/manifest.json`); no decipherment recorded.
+- **(d) Recipient side -- not found.** Nevers' papers are the recipient's own archive (fr.3251 is in the Nevers collection);
+  no printed edition of Birago-Nevers letters exists (birago-nevers-1571 check-solved, two web searches); the recipient-side
+  print found so far is Pascal 1960 (clear text only) and Boltanski 2006 (unread in full, AUDIT.md). Nothing new located.
+Verdict: no find on (a)-(d); the item is not calibration or found-solved. The f.11r pound sign's value is not published
+in any source above.
+
+## A1B-CEPPO-POUND: pre-registration (3 Oct 2026, written before any gloss is read)
+
+Question: the interlinear value of the pound-shaped sign (f.11r, 7 positions, exceptions_f11.tsv: script-L / pound form,
+a lower-left loop, a crossbar, an upper loop rising to the right; `harvest/witness_f36/compare_f11pound_vs_witness_S84_S31.png`
+left panel) on the witnesses ff.27, 39, 82.
+- **Shape rule (what counts as the sign):** an upright script-L/£ form: closed lower loop at the baseline, a stem rising
+  to an upper loop or hook, and a horizontal crossing stroke through the stem. NOT the sign: the leaning S84 crossed-loop
+  (closed loops at both ends of a long horizontal), the S31 flourished-g (loop on top, tail curling back under), the hash
+  (#, S24/S88), the crossed d-oval.
+- **Script locate first:** no witness transcription carries a pound description; the one witness sign labelled m row 2
+  (the cell the pound sign was assigned to) is f.82 line2 pos23 ("small loop at top with a long tail sweeping right and
+  curling back under" = S31's printed shape, not the pound by its own note). Candidates are therefore located by eye on
+  the on-disk bands, crops cut, then two blind readers (no candidate value given) read the gloss above/below each crop.
+- **Promotion threshold:** the 7 f.11r pound positions (and the 5 other f.11r I tokens are NOT touched by this step) go
+  from I to C only if >=2 distinct witness occurrences of the sign each carry a legible gloss letter and both blind readers
+  give the same letter for each, all occurrences agreeing on one value. One glossed occurrence agreeing = stays I, noted as
+  support. Readers split, or occurrences disagree = stays I, logged as a split. Zero located occurrences = stays I; the
+  gap's next step moves to a different witness (fr.3252 f.36r/37r unscanned lines) or f.11v.
+- **Stop rule:** no vision call would cross 80 pct of the USD 4 cap.
