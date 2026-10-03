@@ -1,0 +1,14 @@
+TARGET: 12 cribs, 6 restarts x 150000 iters each
+  suofratel	-3.413	dutocuelomiscriueilaanoasuofrateleisoarisoltadifarle
+  cardinale	-4.070	eaaroalerobcoiialtesnorscardinaleftcrmitcreanetdnieu
+  francesco	-5.004	trsaarcoapofacirciomeuamfrancescolifaecifaosetinecol
+  guglielmo	-5.352	tulgrumoghigrinumaoceogcguglielmodaggsiaggoletaleion
+  monsignor	-5.031	uonnioornpemiiaooertgantmonsignordemnhiemnrnguesgira
+  suamaesta	-4.336	cusalutaargslaiutoaieraisuamaestacosahaosaasecomeaar
+  ilducadis	-4.846	rlddolisdraiocelieseandeilducadiseeideceidsdareuacso
+  monferrat	-4.591	eornioatnlimieaoaitcruncmonferratpimndeimntrreifreta
+  lacorteet	-4.379	saeciaetcmfliruaeitatocalacorteetdilcorilctetsiotrto
+  cheilrede	-5.239	nheeihdeefacilihdaesriescheilredegaceolaceeernairlet
+  nostrofra	-4.850	uofseorasegnerioriatoestnostrofralinstrinsafouitoral
+  ostrofrat	-5.006	isrtnsattpuononsaetmfetmostrofrateeotloeottrfierfotc
+TARGET: suofratel rank 1/12, margin +0.657 over best other (cardinale) -> PASS (gate: rank 1, margin >= 0.30)

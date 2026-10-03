@@ -724,3 +724,31 @@ Control passes a seed if the true crib ranks 1st with margin >= 0.30/unit; gate 
 (it16_all model, the same 11 wrong cribs) runs only if the gate is met; `suofratel` reads only if it ranks 1st with
 margin >= 0.30/unit. The margin depends on the cipher text itself, so the control's number can differ from the target's.
 No token is graded unless both pass.
+
+**Result (runs 01:25-01:43 UTC, `solver/runs_repeat/`).** Control first, then target; both numbers:
+
+| run | focus crib | rank | margin over best other | best other | focus score/unit |
+|---|---|---|---|---|---|
+| control seed 1 | `ichiorest` (true) | 1/13 | +1.199 | cardinale | -2.729 |
+| control seed 2 | `cheauanti` (true) | 1/13 | +0.680 | cheilrede | -3.124 |
+| control seed 3 | `econsider` (true) | 1/13 | +1.245 | cardinale | -2.700 |
+| **target** | `suofratel` | 1/12 | **+0.657** | cardinale | -3.413 |
+
+Control gate met (3 of 3 seeds, gate 2 of 3). The target's `suofratel` clears its pre-registered gate (rank 1, margin
+>= 0.30): its margin, +0.657, sits inside the control's true-crib range (+0.680 to +1.245), just below it. With 6
+restarts the 24 Sept test's 3-restart margin (+0.524 over `ostrofrat`'s neighbours) firms up.
+
+**What it does not show.** The text around the fixed crib still does not read
+(`dutocuelomiscriueilaanoasuofrateleisoarisoltadifarle`), and its score per unit (-3.413) stays below the controls'
+true-crib solves (-2.70 to -3.12) and barely above the unconstrained target solve (-3.484). The unconstrained solver
+already reads the anchor as `..saofrat..`, so the crib mostly agrees with the solver's own optimum, and the wrong cribs
+fight it; in the controls the unconstrained optimum is also close to the truth, so the control does not separate
+"right crib" from "crib that matches the solver's optimum on a text that is not Italian letters". That confound is
+untested. No token is graded S. Grade counts for this step: H 0, C 0, S 0, M 18 (the 9 anchor units at both
+occurrences read `s u o f r a t e l` as a candidate), I 0. This is a candidate, not a reading.
+
+Next step (compute only, ~10 min, ~USD 1): the confound control -- the same crib test on unit-shuffled target text
+(3 shuffles), with the crib set to whatever the unconstrained solve reads on a 9-unit repeat there; if such
+solver-optimum cribs also clear margin >= 0.30, the target's +0.657 means nothing. Only if they do not is the
+`suofratel` hypothesis worth a nomenclator-aware or Mantuan-model pass.
+Requests this step: none (compute only). Subagents/vision calls: 0.
