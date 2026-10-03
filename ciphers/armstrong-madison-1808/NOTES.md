@@ -3817,7 +3817,7 @@ alphabet by sorting tiles instead of typing a TSV. Offline build, no model read 
 
 ## H72 finding-aid retry (ARM-A-H72)
 
-3 Oct 2026, 19:22-19:36 UTC, ARM-A-H72 (account-1 worker for LANE-ARM-A, session_011LsfWjmjanzg358BoQzfKe). Brief
+3 Oct 2026, 19:22-19:35 UTC, ARM-A-H72 (account-1 worker for LANE-ARM-A, session_011LsfWjmjanzg358BoQzfKe). Brief
 `.claude/briefs/runs/2026-10-03-acct1-arma-h72-cat.md`; retries H65/H66 and the cloud parts of H34 (ASKS 83-86). Search
 result only: no reading, no class change, nothing graded. Saved pages under `sources/h72/`.
 
