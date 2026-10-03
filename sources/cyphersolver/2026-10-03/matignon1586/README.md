@@ -1,0 +1,1 @@
+Unmodified copies from github.com/dbourdeau/cyphersolver (MIT), HEAD 4d32ec9 (2026-10-02 21:07 -0500), targets/matignon1586/, fetched 3 Oct 2026 by GAPS2-matignon-mayenne-1586 (account-4). Used as the reference in ciphers/matignon-mayenne-1586/mu_leaf_agree.py. Credit: David Bourdeau.

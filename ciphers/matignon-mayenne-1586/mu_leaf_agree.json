@@ -1,0 +1,174 @@
+{
+ "job": "GAPS2-matignon-mayenne-1586",
+ "leaves": [
+  {
+   "control": [
+    {
+     "beam": 0.9123,
+     "first": 0.7193,
+     "null_max": 0.6667,
+     "null_mean": 0.5816,
+     "passed": true,
+     "seed": 1
+    },
+    {
+     "beam": 0.8467,
+     "first": 0.6467,
+     "null_max": 0.6667,
+     "null_mean": 0.6113,
+     "passed": true,
+     "seed": 2
+    },
+    {
+     "beam": 0.907,
+     "first": 0.5426,
+     "null_max": 0.5969,
+     "null_mean": 0.5326,
+     "passed": true,
+     "seed": 3
+    }
+   ],
+   "leaf": "f143r",
+   "m_n": 120,
+   "target": {
+    "A_beam": 0.85,
+    "A_first": 0.625,
+    "A_null_max": 0.6417,
+    "A_null_mean": 0.5875,
+    "beam_vs_first_changed": 51,
+    "null_choices_differ_mean": 48.1,
+    "null_choices_differ_min": 41,
+    "passed": true
+   },
+   "testable": true
+  },
+  {
+   "control": [
+    {
+     "beam": 0.8413,
+     "first": 0.7933,
+     "null_max": 0.7308,
+     "null_mean": 0.6863,
+     "passed": true,
+     "seed": 1
+    },
+    {
+     "beam": 0.8864,
+     "first": 0.6761,
+     "null_max": 0.6307,
+     "null_mean": 0.5736,
+     "passed": true,
+     "seed": 2
+    },
+    {
+     "beam": 0.8122,
+     "first": 0.6022,
+     "null_max": 0.6133,
+     "null_mean": 0.558,
+     "passed": true,
+     "seed": 3
+    }
+   ],
+   "leaf": "f143v",
+   "m_n": 143,
+   "target": {
+    "A_beam": 0.7972,
+    "A_first": 0.6923,
+    "A_null_max": 0.6573,
+    "A_null_mean": 0.5976,
+    "beam_vs_first_changed": 48,
+    "null_choices_differ_mean": 62.2,
+    "null_choices_differ_min": 53,
+    "passed": true
+   },
+   "testable": true
+  },
+  {
+   "control": [
+    {
+     "beam": 0.7273,
+     "first": 0.7468,
+     "null_max": 0.5779,
+     "null_mean": 0.5227,
+     "passed": true,
+     "seed": 1
+    },
+    {
+     "beam": 0.8052,
+     "first": 0.6494,
+     "null_max": 0.5584,
+     "null_mean": 0.5055,
+     "passed": true,
+     "seed": 2
+    },
+    {
+     "beam": 0.8829,
+     "first": 0.6306,
+     "null_max": 0.5856,
+     "null_mean": 0.5005,
+     "passed": true,
+     "seed": 3
+    }
+   ],
+   "leaf": "f154",
+   "m_n": 103,
+   "target": {
+    "A_beam": 0.7476,
+    "A_first": 0.6893,
+    "A_null_max": 0.5922,
+    "A_null_mean": 0.5277,
+    "beam_vs_first_changed": 37,
+    "null_choices_differ_mean": 52.6,
+    "null_choices_differ_min": 43,
+    "passed": true
+   },
+   "testable": true
+  },
+  {
+   "control": [
+    {
+     "beam": 0.7358,
+     "first": 0.7799,
+     "null_max": 0.6289,
+     "null_mean": 0.5742,
+     "passed": true,
+     "seed": 1
+    },
+    {
+     "beam": 0.8333,
+     "first": 0.7222,
+     "null_max": 0.6042,
+     "null_mean": 0.5347,
+     "passed": true,
+     "seed": 2
+    },
+    {
+     "beam": 0.8667,
+     "first": 0.6952,
+     "null_max": 0.619,
+     "null_mean": 0.5252,
+     "passed": true,
+     "seed": 3
+    }
+   ],
+   "leaf": "f173",
+   "m_n": 100,
+   "target": {
+    "A_beam": 0.78,
+    "A_first": 0.72,
+    "A_null_max": 0.68,
+    "A_null_mean": 0.6005,
+    "beam_vs_first_changed": 31,
+    "null_choices_differ_mean": 44.0,
+    "null_choices_differ_min": 37,
+    "passed": true
+   },
+   "testable": true
+  }
+ ],
+ "passed": 4,
+ "prereg": "mu_leaf_agree_prereg.md",
+ "reference": "Bourdeau 4d32ec9",
+ "testable": 4,
+ "verdict": "AGREEMENT SIGNAL"
+}
