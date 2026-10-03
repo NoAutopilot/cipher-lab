@@ -549,3 +549,47 @@ minuut, align clear text to cipher with `tools/interlinear_align.py`, build a gr
   shuffled-plain control (rule 3). The sibling 1069's key (same sender, same direction) is the candidate system to test.
 - Vision calls: 1 (this worker, 4-page 60 dpi composite). Subagents: 0. Hosts: resources.huygens.knaw.nl 1 request
   (the record page). The minuut PDF was already on disk.
+
+## GAPS78-willem-van-hessen-1567 (3 Oct 2026, account-4): sibling 1069 p2 lines 1-3 read, sign by sign, from fresh line crops
+
+Step run: the YX-HES69 successor step (NEXT-STEPS.tsv row, 2 Oct 2026): a fresh 600 dpi render, a grid overlay, then crops.
+Intake gate at start: `willem-van-hessen-1567: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+- `01069.pdf` re-fetched once (resources.huygens.knaw.nl, HTTP 200, 4,651,784 bytes, the same size as before); page index 1
+  rendered at 600 dpi with pymupdf (4961x7016). A grid overlay (250 px) put the cipher block at about x 1200-4800, y 100-5700.
+- Crops: `python3 tools/iiif_lines.py --image p2_600.png --region 1200,100,3600,5600 --out crops2 --prefix p2g --max-width 1300
+  --overlap 120 --top-margin 100 --bottom-margin 30 --only-lines 1,2,3 --debug` found 24 line bands (pitch 229 px; this
+  matches the 24 line-pairs counted by eye) and wrote 9 crops (3 lines x 3 segments). Without `--top-margin` the band is
+  centred on the cipher row and cuts off the gloss. The crops and their manifest are committed in `siblings/crops_p2/` (1.1 MB).
+  Lines 4-24 can be cut with the same command and `--only-lines`.
+- Two blind Opus subagent passes saw only the 9 crops. Pass A had the old g01-g12 atlas as a reference; pass B had no
+  atlas and used its own labels. A third (reconciliation) call was not spent. The account showed `allowed_warning`, so
+  this worker reconciled the passes itself, in `siblings/reconcile_p2_L01-03.tsv`.
+- **Agreement.** Sign counts are identical in both passes on all three lines (27 / 31 / 35 = 93 signs). The gloss
+  letter agrees on 83 of 93 positions (89.2%). The shape class agrees on 88 of 93 (94.6%). The splits are L01 p3 and p10,
+  and L03 p15, p17 and p21. Both passes found the same 4 positions on L02 with no gloss (p2 and p22-24).
+- **The old fragment was misaligned.** The 14-sign fragment of OX-WVH and YX-HES69 began at line 1 position 6, not
+  position 1. The 'mit' before 'Grumpachs' sits at positions 4-6. Its 'n' (g05, small o with hooked tail) is **m**: both
+  passes put m over that shape in 'mit' (p4) and in 'dreimal' (L03 p17). g05 is corrected in `glyphs_1069.tsv`.
+  The other 11 old values (t g r u p a c h s b e) are confirmed by both passes.
+- **Key.** `key_1069.tsv` was rebuilt and now has 31 sign classes, all grade H: both passes read the same period-gloss
+  letter over the same shape. The cipher is homophonic:
+  - a = X, 9 or double-cross; e = figure-8, flagged long-s or l-loop; i = gC ligature, III or Mars.
+  - The decipherer writes 'o' over 7 different shapes (T, minim, open-Pi, 4, 7, umbrella, Venus-with-crossbar), always at
+    a word boundary, so these read as nulls or word dividers. The umbrella carries a full stop once (L01 p27).
+  - The V sign carries an overlined 'FR' once: a code word, plausibly Frankreich, not checked against anything.
+  - Astronomical signs are used as letters: Mercury = n (7 occurrences), Jupiter = d, Mars = i.
+- **Gloss text through the key** (`reading_1069.txt`, regenerated; `check_1069.py --check` exits 0 twice in a row).
+  Grades per token: H 76, M 17, of 93. The check script now takes per-token overrides for split or unglossed signs.
+  - L01: "...?o?mit Grumpachs [oo] bewerbung."
+  - L02: "ist [o] FR nicht [o] garnichts [---] es ?igen"
+  - L03: "auch [oo] schon [o] dreimal hündert [o] u tausent"
+- **Not done:** p2 lines 4-24 and all of p3-p4. 1127's own ciphertext is still unimaged (REQUEST.md), so nothing here
+  was applied to the target.
+- **Comparison with 174 (from the earlier glyph-level description; no new look).** Several 1069 shapes (the astronomical
+  signs, III, 9, 4, 7) are not described in `key_174_nomenclator.tsv`. 174 also maps the Pi-like sign to f, where 1069
+  maps it to h. Both stay as earlier workers left them: the same workshop, not shown to be the same key.
+- **Next step:** cut the next three line bands (`--only-lines 4,5,6`, same command) and run the same 2 blind passes, with
+  the reconciliation done by the worker. That is about 2 Opus vision calls per 3 lines, and 7 rounds for the rest of p2.
+  The key grows with each round; the homophone count decides when it is complete enough to test against 1127 once
+  it is imaged.
+- Hosts: resources.huygens.knaw.nl 1 request. Subagents: 2 (Opus), 9 crops each, no full page sent.

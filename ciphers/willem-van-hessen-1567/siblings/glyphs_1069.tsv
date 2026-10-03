@@ -9,7 +9,7 @@ g01	capital-H-with-crossbar	t	H	siblings/crop_grumbachs.png (glyph 1, leftmost)	
 g02	backward-C-loop	g	H	siblings/crop_grumbachs.png (glyph 2)	= key_1069.tsv row 2
 g03	bold-dagger-crossbar	r	M	siblings/crop_grumbachs.png (glyph 3)	= key_1069.tsv row 3
 g04	double-hump-w-shape	u	M	siblings/crop_grumbachs.png (glyph 4)	= key_1069.tsv row 4
-g05	small-o-with-hooked-tail	n	M	siblings/crop_grumbachs.png (glyph 5)	= key_1069.tsv row 5
+g05	small-o-with-hooked-tail	m	H	siblings/crop_grumbachs.png (glyph 5)	= key_1069.tsv row 5
 g06	yogh-3-shape	p	M	siblings/crop_grumbachs.png (glyph 6)	= key_1069.tsv row 6
 g07	capital-X-cross	a	H	siblings/crop_grumbachs.png (glyph 7)	= key_1069.tsv row 7; SAME SHAPE as 174's alphabet 'a' homophone (key_174_nomenclator.tsv row 12, "X" of 3 homophones) -- one confirmed cross-system match
 g08	h-with-horizontal-bar	c	H	siblings/crop_grumbachs.png (glyph 8)	= key_1069.tsv row 8; SAME SHAPE as 174's alphabet 'c' ("h-with-crossbar", key_174_nomenclator.tsv row 14) -- second confirmed cross-system match
@@ -19,3 +19,4 @@ g11	closed-triangle (apex up)	b	M	siblings/atlas/g11_triangle.png	YX-HES69, 25 S
 g12	hook-loop / stacked-figure-8	e	M	siblings/atlas/g12_figure8.png	YX-HES69, 25 Sept 2026. Immediately follows g11 (b), gloss letter 'e' directly above. Shape also independently confirmed by both blind subagent passes (a "figure-eight"/"doubled loop" shape, seen twice, not matching g01-g10); letter assignment is this worker's own single read.
 ??	wide-T-crossbar (single vertical stem + wide top bar, no loop)	[null candidate]	M	siblings/atlas/null_cand_Tcross.png	YX-HES69, 25 Sept 2026. Immediately precedes g11; sits under the FIRST of a gloss "o o" pair. Not assigned a gXX code: not confirmed as a real letter-bearing sign (see NOTES.md -- "oo" here plausibly marks null signs, as in key_174_nomenclator.tsv's own "Nulla" row, not literal plaintext 'o'). One of the two blind subagent passes read this as a possible recurrence of g09 (pi-like); not resolved.
 ??	single vertical minim (short bare stroke)	[null candidate]	M	siblings/atlas/null_cand_Iminim.png	YX-HES69, 25 Sept 2026. Immediately precedes g11, follows the wide-T-crossbar; sits under the SECOND of the gloss "o o" pair. Same null-candidate caveat as above. Unusually simple for this system's invented signs -- flagged for a closer look (could be a stroke of an adjacent sign rather than standalone).
+# GAPS78, 3 Oct 2026: g05 corrected n -> m (two blind passes, 'mit' and 'Grumpachs'); the full p2 L1-3 sign classes (31 keyed, homophones, null signs) are in key_1069.tsv and reconcile_p2_L01-03.tsv, which supersede this atlas for those lines.

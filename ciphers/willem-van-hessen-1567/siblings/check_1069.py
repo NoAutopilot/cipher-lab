@@ -30,7 +30,7 @@ def load_ciphertext(path):
         for row in csv.DictReader(f, delimiter="\t"):
             if row["page"].startswith("#"):
                 continue
-            signs.append(row["sign_desc"])
+            signs.append((row["sign_desc"], row.get("value_override") or "", row.get("grade_override") or "", row["line"]))
     return signs
 
 
@@ -38,32 +38,38 @@ def regenerate():
     key = load_key(HERE / "key_1069.tsv")
     signs = load_ciphertext(HERE / "ciphertext_1069.tsv")
     letters, grades = [], []
-    for s in signs:
+    lines = {}
+    for s, ov, og, line in signs:
+        if ov:
+            lines.setdefault(line, []).append(ov)
+            letters.append(ov)
+            grades.append(og or "M")
+            continue
         if s not in key:
             letters.append("?")
             grades.append("?")
             continue
         value, grade = key[s]
+        lines.setdefault(line, []).append(value)
         letters.append(value)
         grades.append(grade)
-    plain = "".join(letters)
+    plain = " | ".join("".join(v) for _, v in sorted(lines.items(), key=lambda kv: int(kv[0])))
     counts = {g: grades.count(g) for g in sorted(set(grades))}
-    return plain, counts
+    return plain, counts, len(grades)
 
 
 def main():
-    plain, counts = regenerate()
+    plain, counts, n = regenerate()
     header = (
-        "# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 line 1, "
-        "confirmed fragment only -- 14 of an estimated 1000+ cipher signs across p2-p4 (see NOTES.md).\n"
+        "# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 lines 1-3, "
+        f"{n} signs of an estimated 1000+ across p2-p4 (GAPS78, 3 Oct 2026; see NOTES.md).\n"
         f"# grade counts: {counts}\n"
     )
     body = (
-        f'raw decode: "{plain}"\n'
-        'reading: "...mi[t] Gr(u/m)(n/mb)ach(s) [null candidate][null candidate]be..." -- signs 1-10 are the '
-        'same fragment as before (the "t" that ends "mit", then Grumbachs); signs 11-14 (YX-HES69, 25 Sept '
-        '2026) are two suspected null signs and the first two letters of the next word, read by this worker '
-        'as the start of "bewerdung"/"bewerbung" -- not previously read, see NOTES.md for grades and caveats.\n'
+        f'raw decode (lines joined by |; o = the decipherer\'s null mark, [-] = no gloss, ? = gloss split): "{plain}"\n'
+        'reading: "...?o?mit Grumpachs [oo] bewerbung. | ist [o] FR nicht [o] garnichts [---] es ?igen | auch [oo] schon '
+        '[o] dreimal hündert [o] u tausent" -- the decipherer\'s gloss read through the key; FR (overlined, over the V sign) '
+        'is a code word, plausibly Frankreich; see NOTES.md GAPS78 for grades and caveats.\n'
     )
     regenerated = header + body
 

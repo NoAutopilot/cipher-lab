@@ -1,0 +1,95 @@
+line	pos	sign_class	passA_shape	passB_label	glossA	glossB	settled_value	settled_grade	note
+# GAPS78 (account-4), 3 Oct 2026: two blind Opus passes on iiif_lines crops of 01069.pdf p2 (600 dpi), lines 1-3. settled_value/grade blank = both passes agree; value then comes from key_1069.tsv.
+1	1	H-crossbar-left	Ħ g01?	S1	s	d?	?	M	gloss s/d split
+1	2	venus-with-crossbar	Venus+bar	S2	o	o			
+1	3	barred-dagger-or-barred-yogh	f-dagger+loop	S3 (yogh+bar)	s	d?	?	M	shape and gloss split
+1	4	small-o-with-hooked-tail	o'	S4	m	m			
+1	5	g-C-ligature	gC	S5	i	i			
+1	6	capital-H-with-crossbar	cursive H	S6	t	t			
+1	7	backward-C-loop	alpha	S7	g	g			
+1	8	bold-dagger-crossbar	Ł	S8	r	?	r	M	B gloss faded
+1	9	double-hump-w-shape	w	S9	u	n/e	u	M	gloss split
+1	10	small-o-with-hooked-tail	o' hook	S10 (plain circle)	m	w/y	m	M	shape and gloss split; m fits Grum-
+1	11	yogh-3-shape	yogh+bar	S11	p	p			
+1	12	capital-X-cross	X	S12	a	a			
+1	13	h-with-horizontal-bar	ħ	S13	c	c			
+1	14	pi-like-capital-Π	II	S14	h	h			
+1	15	capital-R	R	S15	s	s			
+1	16	wide-T-crossbar	T	S16	o	o			
+1	17	single-vertical-minim	I	S17	o	o			
+1	18	closed-triangle	Δ	S18	b	b			
+1	19	hook-loop-figure8	8	S19	e	e			
+1	20	p-shape	p	S20	w	w			
+1	21	long-s-with-flag	ſ	S21	e	e			
+1	22	bold-dagger-crossbar	Ł	S8	r	r			
+1	23	closed-triangle	Δ	S22	b	b			
+1	24	open-8-with-tail	δ	S23	u	u			
+1	25	mercury	☿	S24	n	n			
+1	26	backward-C-loop	alpha	S7	g	g			
+1	27	umbrella-cross	umbrella+dot	S25	.	.	.	H	gloss is a full stop here
+2	1	triple-bar-III	III	S26	i	i			
+2	2	hooked-paren	small ℓ/ſ	S27 ( hooked	-	-	[-]	M	no gloss in either pass
+2	3	capital-R	R	S15	s	s			
+2	4	capital-H-with-crossbar	cursive H	S6	t	t			
+2	5	open-pi	⊓	S28	o	o			
+2	6	V-sign	V	S29	^FR^	^FR^			
+2	7	mercury	☿	S24	n	n			
+2	8	mars	♂	S30	i	i			
+2	9	h-with-horizontal-bar	ħ	S13	c	c			
+2	10	pi-like-capital-Π	II	S14	h	h			
+2	11	capital-H-with-crossbar	cursive H	S6	t	t			
+2	12	single-vertical-minim	1	S17	o	o			
+2	13	backward-C-loop	alpha	S7	g	g			
+2	14	nine	9	S31	a	a			
+2	15	bold-dagger-crossbar	Ł	S8	r	r			
+2	16	mercury	☿	S24	n	n			
+2	17	g-C-ligature	gC	S5	i	i			
+2	18	h-with-horizontal-bar	ħ	S13	c	c			
+2	19	pi-like-capital-Π	II	S14	h	h			
+2	20	capital-H-with-crossbar	cursive H	S6	t	t			
+2	21	capital-R	R	S15	ſ	ſ			
+2	22	nine	looped 9	S31	-	-	[-]	M	no gloss in either pass
+2	23	V-sign	V	S29	-	-	[-]	M	no gloss in either pass
+2	24	reversed-bracket	⊐	S32	-	-	[-]	M	no gloss in either pass
+2	25	hook-loop-figure8	8	S19	e	e			
+2	26	capital-R	R	S15	o?	s	s	M	gloss split (A low)
+2	27	theta-loop	looped 9 / ϑ	S34	e	l	?	M	gloss split e/l
+2	28	g-C-ligature	g(	S5	i	i			
+2	29	backward-C-loop	alpha	S7	g	g			
+2	30	l-loop	ℓ	S33	e	e			
+2	31	mercury	☿	S24	n	n			
+3	1	nine	9	S31	a	a			
+3	2	open-8-with-tail	δ	S23	u	u			
+3	3	h-with-horizontal-bar	ħ	S13	c	c			
+3	4	pi-like-capital-Π	II	S14	h	h			
+3	5	open-pi	Π	S28	o	o			
+3	6	four	4	S35	o	o			
+3	7	capital-R	R	S15	ſ	ſ			
+3	8	h-with-horizontal-bar	ħ	S13	c	c			
+3	9	pi-like-capital-Π	II	S14	h	h			
+3	10	seven	7	S36	o	o			
+3	11	mercury	☿	S24	n	n			
+3	12	umbrella-cross	umbrella	S25	o	o			
+3	13	jupiter	♃	S37	d	d			
+3	14	bold-dagger-crossbar	Ł	S8	r	r			
+3	15	reversed-rho-loop	reversed ϱ	S38 (ꝫ)	e	e	e	M	shape descriptions differ
+3	16	mars	♂	S30	i	i			
+3	17	small-o-with-hooked-tail	♂ with hooked tail	S4	m	m	m	M	A gives a different shape class
+3	18	double-cross	ǂ	S39	a	a			
+3	19	theta-loop	ϑ	S34	l	l			
+3	20	pi-like-capital-Π	II	S14	h	h			
+3	21	venus-loop-cross	Venus-like loop	S2	ü	ü	ü	M	B puts it with L01 p2 (glossed o)
+3	22	mercury	☿ horned	S24	n	n			
+3	23	jupiter	♃	S37	d	d			
+3	24	hook-loop-figure8	8	S19	e	e			
+3	25	bold-dagger-crossbar	Ł	S8	r	r			
+3	26	capital-H-with-crossbar	cursive H	S6	t	t			
+3	27	wide-T-crossbar	T	S16	o	o			
+3	28	plain-3	plain 3	S40	o/u	u	u	M	gloss faint
+3	29	capital-H-with-crossbar	cursive H looped tail	S41	t	t			
+3	30	nine	9	S31	a	a			
+3	31	open-8-with-tail	δ	S23	u	u			
+3	32	capital-R	R	S42 (K)	ſ	ſ			
+3	33	l-loop	ℓ	S33	e	e?	e	M	B low
+3	34	mercury	☿	S24	n	n			
+3	35	capital-H-with-crossbar	cursive H	S6	t	t?	t	M	B low

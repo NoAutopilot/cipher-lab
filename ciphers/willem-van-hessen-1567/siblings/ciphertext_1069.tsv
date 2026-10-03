@@ -1,21 +1,95 @@
-page	line	pos	sign_desc
-# The only stretch of briefnr 1069's cipher (KHAG B12,6, p2-p4) read with a confirmed sign->letter mapping
-# so far -- 10 signs on p2, line 1 (OX-WVH, 25 Sept 2026, from the tight crop crop_grumbachs.png). This is a
-# small fragment, not "the whole cipher exemplaar": p2 has roughly 23 more line-pairs, p3 about 24, p4 about
-# 13, all unread -- see NOTES.md OX-WV69 section. Positions are sequential within this fragment only, not an
-# absolute count from the start of the line (the line begins with 1-2 more, uncertain, letters before this
-# fragment's first sign -- see reconcile_p2line1.md).
-2	1	1	capital-H-with-crossbar
-2	1	2	backward-C-loop
-2	1	3	bold-dagger-crossbar
-2	1	4	double-hump-w-shape
-2	1	5	small-o-with-hooked-tail
-2	1	6	yogh-3-shape
-2	1	7	capital-X-cross
-2	1	8	h-with-horizontal-bar
-2	1	9	pi-like-capital-Π
-2	1	10	capital-R
-2	1	11	wide-T-crossbar
-2	1	12	single-vertical-minim
-2	1	13	closed-triangle
-2	1	14	hook-loop-figure8
+page	line	pos	sign_desc	value_override	grade_override
+# briefnr 1069 p2 lines 1-3, every sign, from reconcile_p2_L01-03.tsv (GAPS78, 3 Oct 2026; supersedes the 14-sign fragment of OX-WVH/YX-HES69, which started at line 1 pos 6). Overrides = passes disagreed or no gloss.
+2	1	1	H-crossbar-left	?	M
+2	1	2	venus-with-crossbar		
+2	1	3	barred-dagger-or-barred-yogh	?	M
+2	1	4	small-o-with-hooked-tail		
+2	1	5	g-C-ligature		
+2	1	6	capital-H-with-crossbar		
+2	1	7	backward-C-loop		
+2	1	8	bold-dagger-crossbar	r	M
+2	1	9	double-hump-w-shape	u	M
+2	1	10	small-o-with-hooked-tail	m	M
+2	1	11	yogh-3-shape		
+2	1	12	capital-X-cross		
+2	1	13	h-with-horizontal-bar		
+2	1	14	pi-like-capital-Π		
+2	1	15	capital-R		
+2	1	16	wide-T-crossbar		
+2	1	17	single-vertical-minim		
+2	1	18	closed-triangle		
+2	1	19	hook-loop-figure8		
+2	1	20	p-shape		
+2	1	21	long-s-with-flag		
+2	1	22	bold-dagger-crossbar		
+2	1	23	closed-triangle		
+2	1	24	open-8-with-tail		
+2	1	25	mercury		
+2	1	26	backward-C-loop		
+2	1	27	umbrella-cross	.	H
+2	2	1	triple-bar-III		
+2	2	2	hooked-paren	[-]	M
+2	2	3	capital-R		
+2	2	4	capital-H-with-crossbar		
+2	2	5	open-pi		
+2	2	6	V-sign		
+2	2	7	mercury		
+2	2	8	mars		
+2	2	9	h-with-horizontal-bar		
+2	2	10	pi-like-capital-Π		
+2	2	11	capital-H-with-crossbar		
+2	2	12	single-vertical-minim		
+2	2	13	backward-C-loop		
+2	2	14	nine		
+2	2	15	bold-dagger-crossbar		
+2	2	16	mercury		
+2	2	17	g-C-ligature		
+2	2	18	h-with-horizontal-bar		
+2	2	19	pi-like-capital-Π		
+2	2	20	capital-H-with-crossbar		
+2	2	21	capital-R		
+2	2	22	nine	[-]	M
+2	2	23	V-sign	[-]	M
+2	2	24	reversed-bracket	[-]	M
+2	2	25	hook-loop-figure8		
+2	2	26	capital-R	s	M
+2	2	27	theta-loop	?	M
+2	2	28	g-C-ligature		
+2	2	29	backward-C-loop		
+2	2	30	l-loop		
+2	2	31	mercury		
+2	3	1	nine		
+2	3	2	open-8-with-tail		
+2	3	3	h-with-horizontal-bar		
+2	3	4	pi-like-capital-Π		
+2	3	5	open-pi		
+2	3	6	four		
+2	3	7	capital-R		
+2	3	8	h-with-horizontal-bar		
+2	3	9	pi-like-capital-Π		
+2	3	10	seven		
+2	3	11	mercury		
+2	3	12	umbrella-cross		
+2	3	13	jupiter		
+2	3	14	bold-dagger-crossbar		
+2	3	15	reversed-rho-loop	e	M
+2	3	16	mars		
+2	3	17	small-o-with-hooked-tail	m	M
+2	3	18	double-cross		
+2	3	19	theta-loop		
+2	3	20	pi-like-capital-Π		
+2	3	21	venus-loop-cross	ü	M
+2	3	22	mercury		
+2	3	23	jupiter		
+2	3	24	hook-loop-figure8		
+2	3	25	bold-dagger-crossbar		
+2	3	26	capital-H-with-crossbar		
+2	3	27	wide-T-crossbar		
+2	3	28	plain-3	u	M
+2	3	29	capital-H-with-crossbar		
+2	3	30	nine		
+2	3	31	open-8-with-tail		
+2	3	32	capital-R		
+2	3	33	l-loop	e	M
+2	3	34	mercury		
+2	3	35	capital-H-with-crossbar	t	M

@@ -1,24 +1,40 @@
 sign_desc	value	grade	image_ref
-# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563, KHAG B 12,6 "origineel"), interlinear decipherment
-# in a contemporary hand above the cipher, siblings/01069_p2.png (and p3, p4), line 1 of p2 only, read this pass.
-# 'sign_desc' is a plain-language description of the hand-drawn glyph (not a Unicode transcription -- the system
-# is not in Unicode); see the image_ref crop for the actual shape. grade H = the gloss letter above the sign is
-# clearly and unambiguously written; M = gloss legible but the letter identification (or the underlying word
-# reading, e.g. m/n, b/p confusion) is uncertain. Word read as a whole: "...mit Gr(u/m)(n/mb)ach(s)" -- matches
-# Wilhelm von Grumbach, the outlawed knight at the center of the Grumbach Feud/siege of Gotha, the same affair
-# mentioned in the target's own WVO Inhoud field for 1127 (28 Jan 1567) -- consistent political context between
-# the sibling and the target, three-plus years apart.
-capital-H-with-crossbar	t	H	siblings/01069_p2.png (line 1, symbol 1, end of "mit")
-backward-C-loop	g	H	siblings/01069_p2.png (line 1, symbol 2, start of "Gr..ach")
-bold-dagger-crossbar	r	M	siblings/01069_p2.png (line 1, symbol 3)
-double-hump-w-shape	u	M	siblings/01069_p2.png (line 1, symbol 4; gloss could be u or the scribe's own uncertainty mark)
-small-o-with-hooked-tail	n	M	siblings/01069_p2.png (line 1, symbol 5; plausibly the decipherer's "m" misread by this worker, or vice versa)
-yogh-3-shape	p	M	siblings/01069_p2.png (line 1, symbol 6; plausibly "b" -- Grumbach not Grumpach)
-capital-X-cross	a	H	siblings/01069_p2.png (line 1, symbol 7)
-h-with-horizontal-bar	c	H	siblings/01069_p2.png (line 1, symbol 8)
-pi-like-capital-Π	h	H	siblings/01069_p2.png (line 1, symbol 9)
-capital-R	s	H	siblings/01069_p2.png (line 1, symbol 10, end of "...achs")
-wide-T-crossbar	[null candidate]	M	siblings/atlas/null_cand_Tcross.png (line 1, symbol 11, first of a gloss "o o" pair right after "achs" -- plausibly a null sign, not a literal plaintext letter; see NOTES.md YX-HES69 section)
-single-vertical-minim	[null candidate]	M	siblings/atlas/null_cand_Iminim.png (line 1, symbol 12, second of the "o o" pair)
-closed-triangle	b	M	siblings/atlas/g11_triangle.png (line 1, symbol 13, gloss "b" directly above -- start of a new word, read by this worker as "bewerdung"/"bewerbung")
-hook-loop-figure8	e	M	siblings/atlas/g12_figure8.png (line 1, symbol 14, gloss "e" directly above)
+# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563, KHAG B 12,6), sign -> letter from the contemporary
+# interlinear decipherment above the cipher. Rebuilt by GAPS78 (account-4), 3 Oct 2026, from two blind Opus passes over
+# iiif_lines crops of p2 lines 1-3 (reconcile_p2_L01-03.tsv): grade H = both passes read the same gloss letter over the same
+# shape class (a period key source, rule 4); classes seen only where the passes disagreed are not keyed here (per-token
+# overrides in ciphertext_1069.tsv). 'o' = the decipherer's null mark (always at a word boundary); '.' = full stop.
+# Correction: small-o-with-hooked-tail (old g05) is m, not n (it is the m of 'mit' and of 'Grumpachs'; the old 14-sign
+# fragment began at line 1 pos 6, so its 'mit' t was really pos 6). homophones: a = X/9/double-cross; e = 8/long-s-flag/l-loop;
+# i = gC/III/mars; o (null) = T/minim/open-pi/4/7/umbrella/venus-with-crossbar.
+V-sign	^FR^	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+backward-C-loop	g	H	siblings/reconcile_p2_L01-03.tsv (4 occurrence(s) p2 L1-3; = g02)
+bold-dagger-crossbar	r	H	siblings/reconcile_p2_L01-03.tsv (5 occurrence(s) p2 L1-3; = g03)
+capital-H-with-crossbar	t	H	siblings/reconcile_p2_L01-03.tsv (7 occurrence(s) p2 L1-3; = g01)
+capital-R	s	H	siblings/reconcile_p2_L01-03.tsv (6 occurrence(s) p2 L1-3; = g10)
+capital-X-cross	a	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3; = g07)
+closed-triangle	b	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3; = g11)
+double-cross	a	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+four	o	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+g-C-ligature	i	H	siblings/reconcile_p2_L01-03.tsv (3 occurrence(s) p2 L1-3)
+h-with-horizontal-bar	c	H	siblings/reconcile_p2_L01-03.tsv (5 occurrence(s) p2 L1-3; = g08)
+hook-loop-figure8	e	H	siblings/reconcile_p2_L01-03.tsv (3 occurrence(s) p2 L1-3; = g12)
+jupiter	d	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+l-loop	e	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+long-s-with-flag	e	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+mars	i	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+mercury	n	H	siblings/reconcile_p2_L01-03.tsv (7 occurrence(s) p2 L1-3)
+nine	a	H	siblings/reconcile_p2_L01-03.tsv (4 occurrence(s) p2 L1-3)
+open-8-with-tail	u	H	siblings/reconcile_p2_L01-03.tsv (3 occurrence(s) p2 L1-3)
+open-pi	o	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+p-shape	w	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+pi-like-capital-Π	h	H	siblings/reconcile_p2_L01-03.tsv (6 occurrence(s) p2 L1-3; = g09)
+seven	o	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+single-vertical-minim	o	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+small-o-with-hooked-tail	m	H	siblings/reconcile_p2_L01-03.tsv (3 occurrence(s) p2 L1-3; = g05)
+theta-loop	l	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+triple-bar-III	i	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+umbrella-cross	o	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+venus-with-crossbar	o	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3)
+wide-T-crossbar	o	H	siblings/reconcile_p2_L01-03.tsv (2 occurrence(s) p2 L1-3)
+yogh-3-shape	p	H	siblings/reconcile_p2_L01-03.tsv (1 occurrence(s) p2 L1-3; = g06)
