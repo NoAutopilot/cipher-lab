@@ -1,0 +1,93 @@
+{
+ "fetched": "2026-10-03",
+ "worker": "GAPS198-rah-morillo-1817 (account-4)",
+ "source": "OAI didl GetRecord 2242 -> imagen_id.do via tools/browser_fetch.js --binary; committed files are half-size re-encodes (folder 30 MB rule); native sha1 for re-fetch",
+ "items": [
+  {
+   "record_id": 2242,
+   "idImagen": 10075159,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075159",
+   "native_size": "2460x3299",
+   "native_bytes": 1069222,
+   "native_sha1": "52e7b89f3132a00fc908d358e24616a06664ceab",
+   "file": "10075159_half.jpg",
+   "file_size": "1230x1649",
+   "file_sha1": "f9a53edf07d98681a8290c998b905f42068f31fa",
+   "content": "f.32r: Enrile to Morillo, Madrid 15 Jul 1817, clear opening; foot: \"(Sigue en cifra, cuyo descifrado en el siguiente)\" then 2 lines of dot-separated numeral ciphertext"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075160,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075160",
+   "native_size": "2453x3253",
+   "native_bytes": 1164025,
+   "native_sha1": "bc5641379004600ffc827105fe7843b5c7feea5c",
+   "file": "10075160_half.jpg",
+   "file_size": "1226x1626",
+   "file_sha1": "5956c401fa9f950ae6e815dde013dcb9a9d8198d",
+   "content": "f.32v: ~17 lines of dot-separated numeral ciphertext (codes 1-20, 00, 120, 187, 400, a triangle sign), two later violet strike lines; then clear close \"Madrid 15 de Julio. P. Enrile\" and a clear postscript (Apodaca...)"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075161,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075161",
+   "native_size": "2476x3299",
+   "native_bytes": 1023085,
+   "native_sha1": "a8f7b8a2db86e7b2f266d120995c709a63abc681",
+   "file": "10075161_half.jpg",
+   "file_size": "1238x1649",
+   "file_sha1": "00b196bfee194c8b740199b274983f27927cc309",
+   "content": "f.33r: headed \"Descifrado\" (+ violet \"del doc.to 609\"), the decipherment written out as running clear text in brown ink; ends \"(vuelta)\""
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075163,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075163",
+   "native_size": "2476x3299",
+   "native_bytes": 1019445,
+   "native_sha1": "edcb1edd1f90184bbd0e40b3301cecd16e6de7ec",
+   "file": "10075163_half.jpg",
+   "file_size": "1238x1649",
+   "file_sha1": "b69c71ca4b785d70a02c30d81ad8460b60069642",
+   "content": "f.34r: 3 clear lines (end of postscript), rest blank"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075164,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075164",
+   "native_size": "2385x3235",
+   "native_bytes": 855478,
+   "native_sha1": "ea49478475f4ceef6f2b9ff83a1ee2083ee49924",
+   "file": "10075164_half.jpg",
+   "file_size": "1192x1617",
+   "file_sha1": "a7ead251f2d788dfc6e8390c9df8964d81108de9",
+   "content": "f.34v: blank but bleed-through; docket \"1817 Julio\" sideways"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10089848,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10089848",
+   "native_size": "2361x3235",
+   "native_bytes": 967060,
+   "native_sha1": "f49b82bd0f0c2c9b3161e903c008209ea941a593",
+   "file": "10089848_half.jpg",
+   "file_size": "1180x1617",
+   "file_sha1": "bbbb0cc7b717476d4246613d3ab9da686349cd1f",
+   "content": "f.36r: later folder cover \"Cartas del coronel Warleta...\" (9/7656), not part of the letter"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075162,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075162",
+   "file": null,
+   "content": "f.33v (presumed, between 33r and 34r): not fetched -- browser_fetch --binary returned no binary response on 2 calls (Anubis challenge flakiness, not a 401)"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10089847,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10089847",
+   "file": null,
+   "content": "f.35 (catalogue: folder note \"Francisco Warleta, marzo-octubre 1816\"): not fetched, same as above"
+  }
+ ]
+}
