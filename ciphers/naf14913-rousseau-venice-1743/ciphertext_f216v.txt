@@ -1,0 +1,11 @@
+# BnF NAF 14913 f.216v (Gallica btv1b525174513 canvas 446), numeral passage after the clear words "Ma derniere lettre de".
+# FT4c (account-4) 3 Oct 2026: one blind Opus pass on images/f216v_L01-L08 iiif_lines crops; agrees with the worker's
+# view of the debug overlay. a|b = unsettled reading (most likely first); 369 has a stroke beneath it in the MS.
+L01 742 139 781 63
+L02 52 605 22 739 312 627 306 681 121 724 95
+L03 461 121 468 180 232 617 317 338 420 562 5
+L04 22 208 284 567 713 193 781 468 767 564 240|24v
+L05 521|321 121 137 273 792 10 412 567 693 444 805
+L06 197 617 325 536 501 63 242 90 232 66 124
+L07 107 506 824 594 22 599 121 317 244 369|569 10
+L08 338 121 714 288 444 203 180 777 762

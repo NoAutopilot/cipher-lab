@@ -1,0 +1,5 @@
+# BnF NAF 14913 f.217r, slip pasted after f.216v (Gallica canvas 447), period decipherment. FT4c (account-4) 3 Oct 2026: one blind
+# Opus pass on images/f217r_L02-L09 crops. Diplomatic: "...Vienne, porte que la Rép.e de Venise, considerant les grands troubles
+# qui regnent / par tout tâchoit de se tenir dans un / certain équilibre pour ne s'exposer à / aucun danger en prenant quelque /
+# parti, et que pour gagner du tems / elle donnoit de bonnes paroles à tous, / sans rien conclurre avec personne./."  Rép.e expanded.
+Vienne porte que la Republique de Venise considerant les grands troubles qui regnent par tout tachoit de se tenir dans un certain equilibre pour ne s'exposer a aucun danger en prenant quelque parti et que pour gagner du tems elle donnoit de bonnes paroles a tous sans rien conclurre avec personne
