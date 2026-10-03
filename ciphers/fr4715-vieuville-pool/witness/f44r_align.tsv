@@ -1,0 +1,8 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+G1	0	7	num	7		pyz	single-segment
+G2	0	1	num	1		pag	single-segment
+G3	0	27	num	27		neuers	agrees
+G4	0	27	num	27		neuers	agrees
+G5	0	56	num	56		abbr	single-segment
+G7	0	53	num	53		aubligna	single-segment
+G8	0	38	num	38		vineur	single-segment

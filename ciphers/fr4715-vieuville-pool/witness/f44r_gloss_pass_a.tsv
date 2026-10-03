@@ -1,0 +1,38 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+A01	g01_s1,g01_s2	a	L	-	none	L	le 3 du	pnt a le 20	line 1: single open letter (a or o) in top margin above the word 'pnt' (present); no number beneath; may be a reference mark, not a gloss
+A02	g02_s2,g01_s2	pyz	L	9.7	bar	M	la ville estoit	avoir escript a	line 3: gloss written just right of the group, over the start of 'avoir'; first letter p (or b), middle y/g, last z/x/7; group is 9 and 7 separated by a dot, bar over the 7
+A03	g02_s2,g02_s3	papr	M	1	bar	H	avoir escript a	Et que si le	line 3: gloss starts right of the 1 (bar over the 1) over 'Et que'; last letter r or e (pape/papr)
+A04	g03_s3,g04_s3	Ne??br	L	27	bar	H	qu'il avoit pris a celluy (9	avoir envoye	line 6: gloss right of the barred 27, over 'avoir'; letters N, e/c, u/v, e/c, b (or long-s), r with long tail; same word as A07; '(9' sign precedes 27 unglossed
+A05	g05_s1	a	L	25 53 (?)	none	L	de me advertir 67	05 73 60	between lines 9 and 10: small 'a' hanging under a cancelled word of line 9 ('...ne sachant'); sits over the gap between 25 and 53 in the run 6725 5305 7360 2563 9512 3; may be a correction to line 9 rather than a gloss
+A06	g05_s1	?hm	L	05 73 (?)	none	L	6725 53	60 25 63	between lines 9 and 10, right of A05: looks like long-s/l + h + m; over 05 73 of the same run; same caveat as A05
+A07	g05_s2,g06_s2	Ne??br	L	27	bar	H	contenoit la lettre de	nay sceu	line 10: gloss right of the barred 27, over 'nay'; same letter shapes as A04
+A08	g07_s2,g08_s2	dumo	L	-	none	L	(9 les 1 moiss amon[?]	a sa Mte / a 78 21	line 15: small letters above the end of the word 'amon...' near the 1-bar group; no number directly beneath; may be a correction of the word
+A09	g08_s1	A?br	L	56	none	M	en ?? ?.h	m'a dit d'avantaige	line 16: gloss right of the group over 'ma'; group read 56 (secretary 5 like long s) or 86; first letter A, second b/l, then b, r
+A10	g08_s2,g07_s2	prin? d? ?vuy?	L	78 21	unclear	M	amon[?]. a	pour causer	gloss begins just right of 21 over 'pour causer', lying under 'sa Mte aucun (9 par'; reads prin + d/e + r/v + uy/ny + b-like final; 7 of 78 has a small curl; the bar near 21 is probably the underline of 'sa' above
+A11	g09_s1	aubligna	M	13	none	M	la bonne a(?)... a	qui n'en doibt	line 18: gloss starts over 'a' and runs over 13 and right; final letter a or y
+A12	g09_s3	vin?e?r	L	38	bar	H	qui	luy donnoit	line 18: gloss starts right of the barred 38 over 'luy'; v-i-n then c/e, e/u, r-like final with tail
+X01	g01_s3,g01_s2	-	-	45	two-dots	H	qui s'y va a	depuis le	line 1: one dot over each digit
+X02	g01_s1,g02_s1	-	-	71	bar	H	d'apvril	a parle a	line 2
+X03	g01_s1,g02_s1	-	-	15	bar	H	a parle a	Pequel(?) luy a dit	line 2
+X04	g01_s3,g02_s3	-	-	7	bar	H	courre la fortune de	Et ...	line 2
+X05	g02_s1,g03_s1	-	-	1	unclear	L	qu'il tenoit que la s?	ne sçavoit	line 4: horizontal stroke at top of 1 may be the 4 of 64 above
+X06	g03_s1,g02_s1	-	-	15	bar	H	Et quant puis	qu'il n'avoit escript	line 5
+X07	g03_s1,g03_s2	-	-	1	unclear	L	escript aussi	Mais qu'il	line 5: crossed by descender/crossbar of long s from line 4
+X08	g03_s3	-	-	1	unclear	L	cause que la s?	luy	line 5: stroke across top like X05
+X09	g03_s1,g04_s1	-	-	15	bar	H	Et que luy	cestoit	line 6
+X10	g06_s1	-	-	?5	bar	L	le	ensuyvant(?)	line 11 start: small 7/2 then a 5-like glyph with heavy bar
+X11	g06_s2	-	-	(9	bar	M	Mayenne dit	sont M...	line 11: the bracketed-9 sign, bar above; same sign unbarred at 'elus (9' and 'Ce (9 sa Mte'
+X12	g06_s3	-	-	1	bar	H	avoir escript a	luy	line 11
+X13	g07_s3	-	-	(9	bar	M	et	ne scavoit	line 13: bar with an L-shaped hook above the (9 sign
+X14	g07_s2,g08_s2	-	-	1	bar	H	Conwick(?) (9 les	moiss	line 15
+X15	g09_s1	-	-	715	bar	M	pour ceste effect(?)	Il a dit que	line 18: bar over the 15 part; may also be read 7 15
+X16	g09_s2,g10_s2	-	-	1 (in 73 3 5 1)	dot	L	59310 63 04 05 73 3 5	9 4 4 6	line 19: dot may be the i-form of 1
+X17	g10_s2	-	-	44 (in 1 9 4 4 6)	dot	L	73 3 5 1 9	6 1 6 3	line 19: dots over the two 4s
+X18	g10_s2	-	-	25 (in 6 2 3 2 5 0 5)	dot	L	1 6 2 3	0 5 1 2 3	line 19: single dot, digit assignment approximate
+X19	g10_s3	-	-	1/4 (in 7350 19 46 14 46)	dot	L	2325 7350	29 70 23	line 19: about four dots over 1, 4, 4, 2 of this stretch; per-digit assignment approximate
+X20	g10_s2,g10_s1	-	-	4 (in 23 14 6)	dot	L	65 40 23 1	6 5 7 3 5	line 20
+X21	g10_s2	-	-	3 (in 7 3 5)	dot	L	14 6 5	5 2 23	line 20
+X22	g10_s2	-	-	2 (in 5 2 23)	dot	L	7 3 5	23 73 95	line 20
+X23	g10_s2	-	-	97	dot	M	la qualite de	24 20 25	line 21: dot over 9
+X24	g10_s2	-	-	24	dot	M	de 97	20 25	line 21: dot over 2
+X25	g10_s2	-	-	20	dot	M	97 24	25 25 20	line 21: dot over 2

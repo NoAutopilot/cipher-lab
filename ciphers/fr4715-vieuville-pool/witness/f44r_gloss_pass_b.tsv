@@ -1,0 +1,31 @@
+id	crops	gloss	gloss_conf	code_under	code_mark	code_conf	before	after	note
+B01	f44r_g03_s3;f44r_g04_s3	Neuers	M	27	bar	H	celluy (9	mon[sieur]	gloss sits just above the bar over 27; 4th letter could be e/d; same name likely as B02
+B02	f44r_g05_s2;f44r_g06_s2	?eueur	L	27	bar	H	les ... de	nay sans	gloss written to the right of and slightly above 27 (offset right, over the bar end); letters look like the B01 gloss (Neuers?) but first letter unclear
+B03	f44r_g01_s2;f44r_g02_s2	pa?7	L	7	none	M	estoit (9.	avoir escript	small gloss above 7 in "(9.7"; last stroke may be a descender, could be pa?r / pag?
+B04	f44r_g02_s2;f44r_g02_s3	pagr	M	1	bar	H	escript a	Le qui	gloss above the bar over 1 ("a 1. le qui sy le deputé"); g02_s3 shows it at left edge as "paqr"/"pagr"
+B05	f44r_g08_s1	Abbr	M	86	two-dots	M	et ... ?	me dit davantage	gloss above 86 (dots above the 8/6 area); first letter could be A/Al; 'r' may be an abbreviation stroke (Abbé?)
+B06	f44r_g08_s2;f44r_g07_s2	prin? de ?au?	L	70 21	unclear	M	amonstr... a	pour	gloss spans from above 70 to above 21; read as 'prince de Vau..' but last word unclear
+B07	f44r_g09_s3	vin?eur	L	38	none	H	qui	luy donnoit	gloss sits between 'qui' and '38', just over the line; 4th letter could be c/t
+B08	f44r_g09_s1;f44r_g08_s1	au?ligny	L	53	none	M	a	Seu doibt(?)	gloss above 53; second/third letters u-f/s-l uncertain ('aufligny'/'ausligny')
+B09	f44r_g09_s1	a?u??	L	unclear	unclear	L	qui le	france/Sa pouvoir	small word in the interline under 'lettrance' (overlined); may belong to the line below (near '715'); not sure it is a gloss
+B10	f44r_g05_s1	?a Schm?	L	unclear	unclear	L	Or	ne scachant	interlinear writing below 'Or ne', above 'me advertir'; may be a correction in main hand rather than a gloss over a code
+B11	f44r_g01_s1	a	L	unclear	unclear	L	du pm	a le	isolated 'a' high above 'a le' at line-1 right; probably insertion, not over a number
+Y01	f44r_g01_s3;f44r_g02_s3	-	-	7	bar	H	fortune de	et ce	"la fortune de 7"
+Y02	f44r_g01_s1;f44r_g02_s1	-	-	71	bar	H	aquitte)	a parlé	"(10 ... acquitté) 71 a parlé"
+Y03	f44r_g01_s1;f44r_g02_s1	-	-	15	bar	M	parlé a	Seguel(?)	"a parlé a 15"
+Y04	f44r_g01_s2;f44r_g01_s3	-	-	45	two-dots	H	Ferra a	Depuis	two dots over 4
+Y05	f44r_g02_s1;f44r_g03_s1	-	-	1	bar	H	lassé(?)	ne scavoit	"lafft 1 ne"
+Y06	f44r_g03_s1;f44r_g03_s2	-	-	1	bar	H	aussi	M[ais]	"aussi 1 Mais quil"
+Y07	f44r_g03_s1	-	-	15	bar	H	puis	quil navoit	"depuis 15 quil"
+Y08	f44r_g03_s1;f44r_g03_s2	-	-	15	bar	H	luy	cestoit	"et que luy 15 c'estoit"
+Y09	f44r_g03_s3	-	-	1	bar	M	lest	luy	"que lest 1 luy aubliston"
+Y10	f44r_g05_s2	-	-	A?n?	bar	L	a	lui	large bar over an unclear group after 'a'; may be letters not digits
+Y11	f44r_g06_s1	-	-	27	bar	M	de	pourquoy(?)	"de 27 ..." line start
+Y12	f44r_g09_s1	-	-	715	two-dots	M	ses	Madin que	dots over 1; group may be 7 15
+Y13	f44r_g10_s3	-	-	73	bar	M	2325	50	bar is under (underline) not above
+Y14	f44r_g10_s2	-	-	73	bar	M	12325	50	same underline at right end of g10_s2 row 2 (overlap with Y13?)
+Y15	f44r_g10_s3;f44r_g10_s2	-	-	46	dot	M	19	144	dot over 4 in 194461
+Y16	f44r_g10_s2	-	-	24	dot	M	95	17	"2417461"
+Y17	f44r_g10_s2;f44r_g10_s3	-	-	46	dot	M	17	142	"74614 2"
+Y18	f44r_g10_s1	-	-	73	dot	L	(line start)	95	dot before/over 7 at start of g10 cipher row 1
+Y19	f44r_g10_s2	-	-	94	dot	L	19	46	dot cluster over 94/946 in row 1

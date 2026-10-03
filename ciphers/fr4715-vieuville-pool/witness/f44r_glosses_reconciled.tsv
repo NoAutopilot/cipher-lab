@@ -1,0 +1,12 @@
+# no.21 f.44r (Jerome de Montholon, Tours, 21 Oct 1589; Gallica btv1b52509819x f103) period interlinear glosses, L01-L20 (GAPS-fr4715-vieuville-pool-10, 2 Oct/3 Oct 2026, account-4).
+# Witnesses: A = witness/f44r_gloss_pass_a.tsv, B = witness/f44r_gloss_pass_b.tsv (two blind Opus 5.5 passes, 30 overlapping two-line band crops, scripts/cut_f44r_gloss_bands.py), R = witness/f44r_gloss_recon.tsv (one Opus 5.5 reconciliation on 3x site crops S1-S5, readings shown as X/Y), E = the worker's own look at 3x site crops (S1, S6, S7).
+# grade (rule 4): C = the gloss letters and the code agree in every witness; M = legible in part or one witness splits; L = a few letters or the code unsettled. Grades are for this leaf's gloss, not for no.44.
+site	line_band	code	mark	gloss	grade	witnesses	note
+G1	g01-g02	7	bar	pyz	L	A pyz L; B pa?7 L; R pyz M	the barred 7 after the bracketed 9; letters split between readers
+G2	g02	1	bar	pag?	M	A papr M; B pagr M; R pag? (own) L, last letter off the crop	p-a-g/p-r; candidates pape, page; code 1 (barred) H in all three
+G3	g03-g04	27	bar	Neuers	M	B Neuers M; A Ne??br L (same shapes at both sites); E Neuers	'celluy (9 27 auoir envoye'
+G4	g05-g06	27	bar	Neuers	M	B ?eueur L; A Ne??br L (same shapes as G3); E Neuers, offset right of the 27	'la lettre de 27, nay sceu'
+G5	g08	56	two-dots	Abbr	M	A A?br over 56 M; B Abbr over 86 M; R Abbr, 56	code 56 vs 86 settled 56 by R only (M)
+G6	g07-g08	7? 21	none	prin? d? ?vuy?	L	A prin? d? ?vuy? over 78 21; B prin? de ?au? over 70 21; R X gloss, code unsettled (crop cut)	spans two groups; not keyed
+G7	g09	53	none	aubligna	M	A aubligna over 13 M; B au?ligny over 53 L; R aubligna, 53 M; E read the first digit as 8 or 5	code 13 vs 53 settled 53 by R only; not no.44's .13
+G8	g09	38	bar	vin?eur	M	A vin?e?r over 38; B vin?eur over 38; R vin?eur, 38 H, bar	fourth letter g or long s
