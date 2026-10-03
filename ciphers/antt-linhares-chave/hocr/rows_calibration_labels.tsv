@@ -1,0 +1,52 @@
+column	headword	key_rank	sheet	row	label	first_word	note
+236/1	Guerra	2	A1	R01	OTHER	-	fragment: only partial text tops visible
+236/1	Guerra	2	A1	R02	FLUSH	Guérra,	
+236/1	Guerra	2	A1	R03	FLUSH	Guérra,	
+236/1	Guerra	2	A1	R04	INDENT	-	
+236/1	Guerra	2	A1	R05	INDENT	-	
+236/1	Guerra	2	A1	R06	INDENT	-	
+236/1	Guerra	2	A1	R07	FLUSH	Guerreár,	
+236/1	Guerra	2	A1	R08	FLUSH	Guerréiro,	
+236/1	Guerra	2	A1	R09	FLUSH	Guerréiro,	
+236/1	Guerra	2	A1	R10	FLUSH	Guía,	
+236/1	Guerra	2	A1	R11	INDENT	-	
+236/1	Guerra	2	A1	R12	FLUSH	Guíam,	
+236/3	Habil	1	A2	R01	OTHER	-	fragment/blank
+236/3	Habil	1	A2	R02-R10	OTHER	-	left edge cropped (column box started right of the margin); indent undeterminable, all 9 rows
+146/1	D	1	A3	R01	OTHER	-	blank/fragment
+146/1	D	1	A3	R02	OTHER	-	blank/faint fragment
+146/1	D	1	A3	R03	OTHER	-	top of large initial D (fragment)
+146/1	D	1	A3	R04	OTHER	-	large section initial D.
+146/1	D	1	A3	R05	OTHER	-	fragment: bottom of section initial
+146/1	D	1	A3	R06	OTHER	-	fragment: drop-cap D top with partial text
+146/1	D	1	A3	R07	OTHER	-	large initial D with "One of the mutes, suppos-" (drop-cap entry line)
+146/1	D	1	A3	R08	INDENT	-	
+146/1	D	1	A3	R09	INDENT	-	
+146/1	D	1	A3	R10	FLUSH	D'.	
+146/1	D	1	A3	R11	FLUSH	Da,	
+146/1	D	1	A3	R12	INDENT	-	
+146/1	D	1	A3	R13	INDENT	-	
+146/1	D	1	A3	R14	INDENT	-	
+146/1	D	1	A3	R15	FLUSH	Dáctylo,	
+276/2	Memoria	3	B1	R01	OTHER	-	blank
+276/2	Memoria	3	B1	R02-R03,R05-R15	OTHER	-	left edge cropped (column box started right of the margin), 13 rows
+276/2	Memoria	3	B1	R04	INDENT	-	
+261/2	Lhe	6	B2	R01	OTHER	-	blank/ink only at bottom edge
+261/2	Lhe	6	B2	R02	FLUSH	Léxicon	
+261/2	Lhe	6	B2	R03	INDENT	-	
+261/2	Lhe	6	B2	R04	FLUSH	Lha	
+261/2	Lhe	6	B2	R05	INDENT	-	
+261/2	Lhe	6	B2	R06	INDENT	-	
+261/2	Lhe	6	B2	R07	FLUSH	Lhanaménte	
+261/2	Lhe	6	B2	R08	FLUSH	Lhanéza	
+261/2	Lhe	6	B2	R09	FLUSH	Lháno	
+261/2	Lhe	6	B2	R10	INDENT	-	
+261/2	Lhe	6	B2	R11	INDENT	-	
+261/2	Lhe	6	B2	R12	FLUSH	Lhe	
+261/2	Lhe	6	B2	R13-R26	(see note)	-	R13-15 INDENT, R16 FLUSH Lhe, R17-19 INDENT, R20 FLUSH Lho, R21 INDENT, R22 FLUSH Lía, R23-24 INDENT, R25 FLUSH Liáça, R26 INDENT
+265/2	Lugar	17	C	R01	OTHER	-	fragment: only top half of a line visible
+265/2	Lugar	17	C	R02-R29	FLUSH rows	-	Luár Lubricár Lúbrico Luçám Lucérna Lúcido Lúcifer Lucifer Lúcio Lucrár Lucratívo Lúcro Luctuóso Lucubraçam Ludíbrio Lufáda Lugár (FLUSH at R02 R03 R04 R06 R08 R10 R12 R13 R15 R17 R18 R19 R22 R23 R24 R26 R29; other rows INDENT)
+265/2	Lugar	17	C	R30-R46	-	-	R39 FLUSH Lugaréjo, R41 Lúgubre, R42 Lúme, R45 Lumiár; rest INDENT
+255/2	Junto	20	D	R01	OTHER	-	fragment (only partial text, top edge)
+255/2	Junto	20	D	R02-R44	FLUSH rows	-	Julépe Julgádo Julgár Júlho Juliáno Junça Juncáda Juncádo Juacál Juncár Junco Jungír Júnho Junquílho Júnta Juntaménte Juntár Juntár-se Juntéira Júnto (FLUSH at R06 R08 R09 R12 R13 R15 R17 R19 R21 R23 R26 R29 R31 R32 R34 R38 R39 R41 R42 R44; other rows INDENT)
+255/2	Junto	20	D	R45-R46	-	-	R45 INDENT, R46 OTHER large section initial Y
