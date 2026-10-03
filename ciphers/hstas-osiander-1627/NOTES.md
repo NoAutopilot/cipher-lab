@@ -1,4 +1,5 @@
 open
+Sattler, *Geschichte des Herzogthums Würtenberg unter der Regierung der Herzogen*, Theil 6 and 7 (1774; IA `10003243bsb`, `10003244bsb`, the volumes covering 1608-1637), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text grep of both djvu OCR files for Osiander / Diarium / Tagebuch: one Osiander mention (Th. 7, his sermon cited in the 1628-29 regency dispute), no diary, no cipher; no printed edition of the diary itself is known (csDA2 24 Sept, GF-A2-7 2 Oct, this pass).
 
 # Lukas Osiander, "Diarium Rerum Wirtenbergicarum et Variarum" 1627-1630 — symbol cipher — HStA Stuttgart
 
@@ -120,3 +121,25 @@ collection, was not found (searches above, and csDA2's 24 Sept pass); the Kümpe
 untried lead. Not found.
 Gate note: the status line still lacks an edition citation because no printed edition of this diary is known to exist
 to read; that line is left as it is (this worker read no edition), so the target stays held at the intake gate.
+
+## Edition citation and new-publication check (GF4-BATCH19, 3 Oct 2026)
+
+No edition of J 7 Bü 66 exists to read (three passes now agree). The citation under the status word is the standard
+printed history of the duchy for these years, Christian Friedrich Sattler's *Geschichte des Herzogthums Würtenberg
+unter der Regierung der Herzogen* (Theil 6, 1608-28, and Theil 7, 1628-37, Ulm/Tübingen 1774; BSB scans on IA
+`10003243bsb` and `10003244bsb`), whose author was the ducal archivist and printed from the same Stuttgart archive:
+both `_djvu.txt` files fetched once and grepped (long-s forms `Oſiander`/`Ofiander` included) for Osiander, Diarium,
+Tagebuch, Pregizer. Result: Theil 7 once cites "D. Ofianders Predigt" in the 1628-29 regency dispute; nothing on a
+diary or a cipher. A search result for the log, not a novelty verdict (rule 10).
+Kümper, ZWLG 80 (2021) pp. 395-403 (GF-A2-7's lead on the Bidembach *Diarium Wirttembergicum*): the article PDF
+(journals.wlb-stuttgart.de/index.php/zwlg/article/download/6367/6256/11734) answers curl with WLB's Anubis page;
+the browser tool cleared the challenge but the server then started a download that neither `browser_fetch.js` nor
+one Playwright download handler captured (4 requests, stood down per the good-citizen rule). It concerns a different
+author's diary (Bidembach, d. 1622); next: a desk-browser read of its 9 pages for any mention of Osiander's
+continuation (LOCAL-QUEUE candidate, not filed here).
+**Cabinet Noir** (github.com/el-descifrador/cabinet-noir, HEAD 47b6db9, shallow clone 3 Oct 2026): 24 project
+folders, none Württemberg/Osiander/1627-30. **Apeiron** (apeiron.re front page): no publication list served; only
+known publication is Koehler. Solver repos re-grepped 3 Oct 2026 (Bourdeau HEAD a439937, Aymeloglu HEAD d2800bb):
+no osiander/pregizer hit. No decipherment or plaintext of the diary's cipher entries located on 3 Oct 2026.
+
+Gate re-run (GF4-BATCH19, 3 Oct 2026; supersedes the GF-A2-7 gate note above): `hstas-osiander-1627: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1).
