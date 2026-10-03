@@ -99,3 +99,21 @@ Tomokiyo's 37 numbers and the "♀" sign (~USD 1.5). Expect little power at 37 t
 is the only result that would mean anything.
 
 `python3 tools/next_steps.py --wait-only | grep fr4712-nevers-duchesse` (NV-INTAKE, 3 Oct 2026, run about 03:23 UTC by the container clock): no line.
+
+## DUCH-KEY1 (account 1 for LANE-A1, 3 Oct 2026, 09:44-09:55 UTC): leaf located, stopped on a tool denial
+
+- f.10r is **canvas 18, right-hand page** of btv1b9058289m (folio "10" written top right; checked on a 900 px view of
+  canvases 18-20, 3 Oct 2026). The NV-INTAKE guess "vues 16-18" holds at 18; Cabinet Noir's f.7r = vue 15 does not give
+  f.10 by a fixed offset (canvases are two-page openings; `tools/gallica_folio.py` reports 20 offsets for this ark).
+- The cipher sits in native region about x 4000-7500, y 2560-3100 (canvas 7987x5633): three lines, the third embedded
+  after "ce laquay ne ma falle", followed by a clear line "et neanmoins il dit ... ". Seen on the iiif_lines debug
+  overlay only (no subagent read, no number checked): the figures are written as **unspaced digit runs**, so Tomokiyo's
+  word-division into 37 numbers is itself a segmentation, not a transcription of spacing. The non-numeric sign he prints
+  "♀" looks on the overlay like a looped/crossed "8"-like sign opening lines 2 and 3; not settled.
+- Crops: `images/` holds an iiif_lines run whose region cut the first cipher line at the top
+  (region 4100,2750,3300,560); the next run should use `--region 4000,2560,3500,520`.
+- Stopped: a cleanup `rm` of that bad run was refused by the session's safety check (common tail: one denial = flag
+  and stop). Units (1) number check, (2) fr.3995 f.1 key (canvas f9, label '1r', 4293x6248), (3) scoring: not done.
+- Next: rerun the crop at the region above into a fresh `--prefix f10b`, two blind reads of the digit runs with
+  `tools/decode_key.py --split-check`-style segmentation left open (the split is part of the key test), then units (2)-(3)
+  as briefed; ~USD 6.
