@@ -836,3 +836,27 @@ The one action that depends on nobody: build an era-matched 1620s-1640s French c
 Richelieu's letters in Avenel t.IV-V, already on Internet Archive, or the Sourdis Correspondance) and record its per-fold
 false-negative spread (rule 3). The fr16 judge is not era-matched for 1636. Any reading of f.157r from a fr.4141 table
 would need this corpus. About 12 minutes, per V6-PTCORP. Suggestion only; not run here.
+
+## Re-judge under fr17 (REJUDGE-FR17, account-4, 3 Oct 2026 07:5x UTC)
+
+The fr17 corpus (`tools/data/fr17`, TOOL-FR17 commit 6a11a975) now exists. No reading of f.157r is claimed; the two
+mechanical decodes already judged above (DC8 under Tomokiyo's Servien-Sabran key, 100 letters; DC8 under the f.146r /
+fr.4140 key, 89 letters, letters rebuilt from `fr4140_decode.txt`, unknowns as breaks, prefix matches the string above)
+were re-scored with `tools/judge_plaintext.py <spec> --file <decode>`: once under the spec's own judge block (fr16, three
+files), once with the same spec switched to `"language": "fr17"` (corpora key dropped), and for reference once under
+the bare `"fr"` default (one fr16 file, the throwaway spec the earlier runs used; this is why the numbers above differ
+from the spec-block run). Outputs:
+
+```
+fr16 (spec block, 3 files)  servien: FAIL language: score=-1.61, null_p99=-1.537, real_p05=-1.063, real_median=-0.816, mode=both, N=100
+fr16 (spec block, 3 files)  fr4140:  FAIL language: score=-2.179, null_p99=-1.511, real_p05=-1.005, real_median=-0.814, mode=both, N=89
+fr17                        servien: FAIL language: score=-1.938, null_p99=-1.7, real_p05=-0.959, real_median=-0.782, mode=both, N=100
+fr17                        fr4140:  FAIL language: score=-2.264, null_p99=-1.736, real_p05=-0.914, real_median=-0.782, mode=both, N=89
+fr (default, 1 fr16 file)   servien: FAIL language: score=-1.755, null_p99=-1.711, real_p05=-0.948, real_median=-0.775, mode=both, N=100
+fr (default, 1 fr16 file)   fr4140:  FAIL language: score=-2.235, null_p99=-1.63, real_p05=-0.97, real_median=-0.791, mode=both, N=89
+```
+
+Verdict: both decodes FAIL under fr16 and fr17 alike, each below its corpus's letter-shuffle null_p99 -- no split, so
+not "judge cannot decide"; the era mismatch was not what failed them (as the earlier sections said). Nothing else
+changed: status, HYPOTHESES.md and AUDIT untouched. The spec's judge block still names fr16; switching a future
+reading to both fr17 and fr (tools/data/fr17/README.md "Use") is the next judge run's job.
