@@ -145,8 +145,31 @@ Requests: archive.org (metadata 3, download 3) 6, be-api.us.archive.org 8; one a
 Books, EMLO (GAPS126), and both Hamilton reports (this step). The item can only be read from its image, and step (2),
 the copy order for f.284 and the siblings ff.93/169/216 (REQUEST.md), needs the owner. See "While waiting".
 
-## While waiting (3 Oct 2026, GAPS130)
+## GAPS134-sp81-stanning-1631 (3 Oct 2026, account-4): HMC Cowper (Coke) MSS grep
 
-- grep the HMC Cowper (Coke) MSS vols 1-2 (HMC 12th Report app. I-II, 1888), which hold Secretary Coke's papers for
-  1631, from Internet Archive `_djvu.txt` for Stanning variants and for "cipher" on the 1631-32 Vane-mission pages.
-  Positive control: a Vane-to-Coke 1631 entry. No vision, about USD 1. This depends on nobody.
+Step run: GAPS130's "While waiting" action. Secretary Coke's papers for 1631, as calendared in *The Manuscripts of the
+Earl Cowper* (HMC 12th Report app. I-II, 1888), searched for "Mr Stanning", for cipher entries, and for the dates and
+correspondents of the SP 81/37 siblings (f.93 Vane, 19 Oct 1631; f.169 Vane to Dorchester, 3 Dec 1631; f.216 Vane to
+Dorchester, 11/22 Dec 1631). Script grep of the full text, fetched once. No vision, no subagents, no reading of the item.
+Clock read 14:12 UTC.
+
+| Edition (IA identifier) | Stanning / Stannyng / Staning / Stanninge / Stannings | cipher, cypher, decipher (1631-32 entries) | SP 81/37 sibling dates and correspondents | Positive control |
+|---|---|---|---|---|
+| Vol. 1 (1888), `manuscriptsofear01grea_0` (`_djvu.txt`, 1.92 MB; covers to May 1632) | 0 | 10 hits in the volume. Two fall in 1631: (a) p. 423, "1631", Coke's draft to Lord Conway on the intercepted letters of Du Molin and Short: "The deciphering of the letters is not yet perfected" (a French/Venetian intelligence matter, not the German mission); (b) p. 432, Sir Robert Anstruther to Coke, Vienna, June 1631: "I have no settled cypher with your honour". The rest are 1628-30 | none: no entry of 19 Oct, 3 Dec or 11/22 Dec 1631 from Vane; Vane's mission letters went to Dorchester, not Coke. The 1631 run has Anstruther (Vienna, 21 Oct O.S.), the Elector of Saxony's camp extract (10 Sept 1631, Breitenfeld) and naval and Irish business | Vane: 13 hits, incl. **1631, September 3, Bagshot, Sir H. Vane to Sir John Coke** (p. 440, the Bishop of Man vacancy, before Vane left for Germany); Vane to Coke from The Hague, 28 Mar 1630; Coke's copy letter of 16 May 1632 naming "the treaty now in hand by Sir H. Vane" |
+| Vol. 2 (1888), `manuscriptsofear02grea_1` (`_djvu.txt`, 1.91 MB; starts 1632-3) | 0 | 3 hits, none 1631-32 (1630s-40s) | out of range (1631 occurs 3 times, all retrospective) | Vane: 18 hits, 1633-42 |
+
+**Result: not found.** No Stanning variant in either Cowper volume, and no Coke-side copy or decipher of a Vane mission
+letter of Oct-Dec 1631. Both volumes passed the positive control: Vane-Coke letters, including the 3 Sept 1631 Bagshot
+entry, are found in the same text. The two 1631 cipher mentions concern other channels (Du Molin's intercepts; Anstruther
+at Vienna, who says he had no cipher with Coke). They are not a key or decipherment for SP 81/37/284. Rule 10: this is a
+search result about the edition, not a finding about the item.
+
+Requests: archive.org (download) 2; one at a time, 1.6 s apart, no 429/403.
+
+## While waiting (3 Oct 2026, GAPS134)
+
+- TNA Discovery API item-level search of SP 75 (Denmark), SP 82 (Hamburg) and SP 95 (Sweden), 1631-32, for "cipher" /
+  "decipher" / "duplicate", to list any other cipher papers of the 1631-32 mission circuit (e.g. the Hamburg agent's)
+  that might share f.284's system. Positive control: the same query on SP 81/37 must return ff.93/169/216. No vision,
+  about USD 1. This depends on nobody. (The HMC Hamilton and Cowper routes to identifying Stanning are done: GAPS130,
+  GAPS134. Reading the item still waits on the copy order, REQUEST.md.)
