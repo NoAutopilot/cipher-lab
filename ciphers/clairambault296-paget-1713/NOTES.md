@@ -481,3 +481,63 @@ a challenge or a content gap; ASKS row 51 unresolved).
 
 - Retry canvases 28 and 36 fresh -- both failures were transient proxy-side resets, not a Gallica 403/429/challenge, on an ark otherwise fully reachable. S, plain fetch or tools/iiif_lines.py.
 - Re-read the archivesetmanuscrits finding aid for this shelfmark to check whether Paget's 14 Jan 1713 letter is mis-cataloged to a different ark/volume in the same Clairambault run, given 314/316 canvases already read blank. S.
+
+## Web and blog check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `Paget 14 janvier 1713 lettre chiffrée Pontchartrain Clairambault 296` (sender + recipient + date + shelfmark): the BnF finding aid
+   cc138146, neighbouring Clairambault finding aids, Persée's Pontchartrain authority page, an AE Nantes inventory PDF, Depping's *Correspondance
+   administrative* IV contents page (Persée), and a LAC record of a Clairambault letter to the Conseil de Marine. No discussion of this letter.
+2. `"Lettre en partie chiffrée de Paget"` (the catalogue's own phrase; there is no clear text or decode): the finding aid is the only real hit,
+   the rest is "maladie de Paget" noise.
+3. `Lord Paget 1713 cipher letter Pontchartrain` (English form): Wikipedia pages for Thomas, Charles and William (6th Baron) Paget and
+   Pontchartrain. Also TNA's blog post "Hidden in plain sight: an undeciphered letter from Louis XIV's France", which I opened: it is Perwich to Arlington,
+   9 Apr 1670, SP 78/129 f.180r, still undeciphered. Unrelated.
+4. Descriptive title: query 2 is the folder title's own wording.
+Blog site searches: scienceblogs.de (`Paget 1713 Chiffre OR Clairambault OR Noailles Flandre`) returned the Catinat, Soglia and Dorabella posts,
+none on Paget. The search tool's summary also named a "Français 6204, 1688-1713" cipher collection, but no listed post carries it and it is not
+followed up here. cryptiana.blogspot.com + cryptiana.web.fc2.com (`Paget 1713 OR ... cipher`): no indexed hit. The local snapshot's "Paget" hits are
+all Charles Paget (1580s) or modern telegrams. ciphermysteries.com (`Paget 1713 cipher ...`): no relevant hit. Also grepped
+github.com/el-descifrador/cabinet-noir (Descifrado, *Cabinet Noir* v1.0, 29 Sept 2026, CC BY 4.0; HEAD 47b6db9) for "paget", "pontchartrain",
+"clairambault 29[6-9]", "btv1b9000759b", "cc138146": 0. Result: nothing found.
+
+## Premise check (GF4-BATCH11, account-4, 3 Oct 2026)
+
+- (a) Folder's own mentions -- not found, but one premise corrected. The folder mentions no decipherment of this letter. The sister folder
+  ciphers/clairambault1225-paget-1714 now has a period interlinear decipherment of the 1714 Paget letters and a 114-code key rebuilt from it
+  (PAGET-KEY, 2 Oct 2026; 21 stable codes). Its notes show that Paget writing in French from Genoa to an unnamed "Monseigneur", asking for his
+  consular *expéditions* for Sardinia and citing a memoire he had sent in April 1712. That sender is a consul-designate in the Marine's network,
+  which fits a 14 Jan 1713 letter to Pontchartrain (the Marine) much better than William, 6th Baron Paget, who died in London on 26 Feb 1713.
+  **The Baron Paget identification above (24-25 Sept 2026) is therefore doubtful and should be read as unconfirmed.** If the letter is found,
+  the 1714 key is the first thing to try on it (same sender, one year earlier).
+- (b) Other solvers' working files -- not found. Fresh shallow clones on 3 Oct 2026: cyphersolver (HEAD 4aedb40) carries only the sister
+  item, as one BnF description line in research/gallica_sweep/sru_chiffre_desc.json (Clair 1225, "lettres autogr. de Paget, avec chiffre,
+  1714"). It has nothing for Clair 296, cc138146 or btv1b9000759b. unsolved-ciphers (HEAD d2800bb): 0. Cabinet Noir: 0.
+- (c) Physical neighbours -- not found. Canvases f28 and f36, unread since 25 Sept 2026, were fetched on 3 Oct 2026 (500 px, HTTP 200
+  first attempt each). Both are the backs of folded printed sheets with the print showing through, and carry no manuscript (canvas_sweep.tsv
+  rows updated). **All 316 canvases of ark btv1b9000759b are now eye-checked.** The letter is not in this digitised volume. The ark is
+  Clairambault 296 alone (manifest Shelfmark "Clairambault 296", title "I Années 1572-1713"), so the letter is probably in 297-299 of the
+  finding aid's run or not digitised (see While waiting).
+- (d) Recipient side -- not found. Pontchartrain's office: no printed edition of incoming consular letters for 1713 is known. Depping's
+  *Correspondance administrative* surfaced only as a contents page and was not read. The Marine B7 originals are LOCAL-QUEUE L11 (sister
+  target). Sender side: Wentworth Papers read (LANE CX), but that edition fits only the now-doubtful Baron Paget identification.
+Result: no prior decipherment or print located; still open. This is a search result, not a novelty verdict (rule 10).
+
+## Verdict (GF4-BATCH11, 3 Oct 2026)
+
+**open** (unchanged). Edition read: *The Wentworth Papers 1705-1739* (Cartwright 1883, archive.org wentworthpapers00stra, full text, control
+"Utrecht" 18 hits): no ciphered letter of 14 Jan 1713. The Premise check weakens that edition's relevance, because the sender is more probably
+the French consul-designate Paget of the 1714 letters. Open web, the three blogs, both solver repositories and Cabinet Noir: nothing. The
+Gallica ark btv1b9000759b is now fully read (316/316) without the letter. ASKS row 51's two-canvas question is answered (for the parent to close).
+
+## While waiting (GF4-BATCH11, 3 Oct 2026)
+
+Waits on finding which volume of Clairambault 296-299 holds the letter. ark btv1b9000759b (316/316 read) does not.
+
+- Gallica SRU `dc.source all "Clairambault 297"` / 298 / 299 (the query form proven on Clair 349, clair571 NOTES): find the other volumes' arks,
+  then match the finding aid's own volume for the 14 Jan 1713 item. S, curl.
+
+Requests this pass: gallica.bnf.fr 2 (IIIF f28, f36 at 500 px); WebSearch 3 (+2 blog searches shared with clair1161); WebFetch 1
+(nationalarchives.gov.uk); github.com clones shared with clair571.
+
+Gate re-run (GF4-BATCH11, 3 Oct 2026): `clairambault296-paget-1713: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).

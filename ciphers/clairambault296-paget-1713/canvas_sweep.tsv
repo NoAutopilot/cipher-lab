@@ -261,9 +261,9 @@ canvas	class	note
 274	print	printed pamphlet "TRAICTIER" text continues
 285	print	printed verse text (Latin/French)
 26	print	heraldic table of Ordre du Saint-Esprit chapter members continues (c22-39 run)
-28	FAILED TWICE, not retried (connection reset)	not read
+28	print (verso/back of folded printed sheet, heraldic-table print showing through; no manuscript)	GF4-BATCH11 3 Oct 2026, 500 px, first attempt
 30	print	heraldic table continues, engraved blazon/seal
-36	FAILED TWICE, not retried (connection reset)	not read
+36	print (verso/back of folded printed sheet, oval engraving and table print showing through; no manuscript)	GF4-BATCH11 3 Oct 2026, 500 px, first attempt
 38	print	near-blank pamphlet leaves, transition before "La Gloire du Valdegrace"
 40	print	printed title page "LA GLOIRE DU VALDEGRACE" (A Paris imprint)
 46	print	printed verse pamphlet text continues
