@@ -732,6 +732,38 @@ wave-5 workers and the lane orchestrator's own row are unledgered; their costs a
 (get_session on the session ids above). Any of the five may still push if account 2's sessions resume: check git before
 re-running a step. WORK-QUEUE row LANE-A2PUSH2 marked interrupted.
 
+## LANE A1B handoff (session_015rWTRZYuKLgHKfVpjMBGUW, account 1), 3 October 2026 (closed: backlog spent)
+
+Lane orchestrator on account 1 for the account-3 orchestrator (brief `.claude/briefs/runs/2026-10-03-acct3-lane-a1b.md`),
+16:35 to 18:5x UTC 3 Oct 2026, 7 waves of Opus 5.5 cloud workers (briefs `.claude/briefs/runs/2026-10-03-acct1-a1b-*.md`).
+30 worker rows ledgered: USD 94.43 (20 D, 9 D-, 1 N; no X/F), plus USD 10.28 orchestrator (self-ledgered). The five-hour
+window read `allowed` throughout. No live workers; no check-in armed. A1B-MOD-PROP was not spawned: decode-1162 AUDIT.md
+already carried the MOD1162B revision. One check-in line (17:17) was never posted: a hand-resolved ROOM.md conflict was
+refused by the classifier and the local commit dropped; its facts are in LEDGER.md.
+
+**Results (all on origin/main, NOTES.md per target):**
+- fr3416-nevers-fils-1589: **N3 -> N4** (A1B-VERIFY-FILS-N4b, AUDIT.md "Third audit"; Gerard 2003 Repertoire reached via HTRC,
+  fr.3416 on one household-rolls index page, no cipher token; ASKS 110 answered). Code word 28 (Ml de Biron) withdrawn
+  (stroke belongs to line 11); xiiij = Seigneur M -> H; f.35r figures H 75 / M 27. f.38 known-answer test retired for blind
+  passes + align_f38.py (FAIL twice, gloss illegible); upper-letter word-window check retired (Sonnet and Opus both fail H
+  controls); L05 glyph-atlas test a non-test (no class-0 exemplars). status.json fields_source still says "N3 kept" (parent's).
+- fr3993-villeroy-1595 (open): figure-pair homophone design control-backed negative; no.57 syllable grid FAIL with power
+  (1-2-figure parse); no.57 nomenclator parse FAIL but underpowered at the measured error (not closed). **Bourdeau's
+  transcription omits f.148v L09-L10 (64 signs) and a blind second pass disagrees on 16.8 pct** -> every villeroy negative is
+  conditional on an incomplete pass; split pairs in tx2/focus_pairs.tsv for the owner's sorter (ASKS 124). As-sent lead:
+  Bibl. de l'Institut Godefroy 262 nos.144-145 (ASKS 123); fr.3994 not digitised (f.131 added to ASKS 111).
+- antt-linhares-chave: 829011 -> 329011 "para" (M), "ate para o ministerio"; rule-7 re-derivation PASS 26/26, judge PASS
+  -1.024. Column-count step for cagar/justa [retired] on this scan after three instruments (needs a second scan of Vieyra 1809).
+- ceppo-nevers-fr3251-1570s: Premise check written (intake gate passes); f.11r pound sign -> no-key-material (f.11v show-through
+  only); f.89r/f.21r cribs no match vs control; f.87 L04.39 held at M (judge gate by 0.002), f.87 S 138 / M 62 / U 4; no
+  S31/S32/S76 witness rule on f.36r/f.36v/f.37r. Next: f.36v T3-T6 to a blind Opus reader (~4).
+- fr2988-ranzo-1520s (open): fr.3019 no.27 transcribed in full and settled against fr.2988 f.2r-v: our error 0.018, Bourdeau
+  0.035 (systematic s->g flip on c007/c018/c020); relabelled, his annealer re-run: no movement, his negative stands.
+
+**Waits on whom:** owner sorter for villeroy (ASKS 124); Godefroy 262 images (ASKS 123); fr.3994 reproduction (ASKS 111);
+parent: status.json fils N4, optional Bourdeau note on the s/g flip (outreach/bourdeau-issues.md). Cheap named next steps left
+(none started): fils line-strip Opus pass (~6), fils L05 re-registered without class 0 (~3), ceppo f.36v Opus reader (~4).
+
 ## LANE A1 handoff (session_01QXP6VgydPmcfBDw7m1mCDv, account 1), 3 October 2026 (closed: backlog spent)
 
 Lane orchestrator on account 1 for the account-3 orchestrator (brief `.claude/briefs/runs/2026-10-03-acct3-lane-a1.md`),
