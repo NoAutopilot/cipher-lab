@@ -1,0 +1,106 @@
+{
+ "r4282": {
+  "tokens": 1090,
+  "labels": 34,
+  "multi_glyph_token_share": 0.0,
+  "digit_labels": [
+   "3",
+   "4",
+   "5",
+   "7",
+   "8"
+  ],
+  "capital_labels": [
+   "A",
+   "B",
+   "D",
+   "E",
+   "F",
+   "L",
+   "M",
+   "S",
+   "T"
+  ]
+ },
+ "r4284_body": {
+  "tokens": 754,
+  "distinct_codes": 108,
+  "code_min": 2,
+  "code_max": 1493,
+  "multi_glyph_token_share": 0.882,
+  "glyph_inventory": {
+   "0": 100,
+   "1": 252,
+   "2": 116,
+   "3": 209,
+   "4": 142,
+   "5": 151,
+   "6": 103,
+   "7": 184,
+   "8": 85,
+   "9": 124
+  },
+  "single_digit_codes": {
+   "2": 14,
+   "3": 3,
+   "4": 8,
+   "5": 19,
+   "6": 5,
+   "7": 1,
+   "8": 10,
+   "9": 29
+  },
+  "letter_or_capital_signs": 0,
+  "vs_r4282_glyph_level": {
+   "shared_labels": [
+    "3",
+    "4",
+    "5",
+    "7",
+    "8"
+   ],
+   "n_shared": 5,
+   "r4282_tokens_covered": 213,
+   "r4282_coverage": 0.1954
+  },
+  "vs_r4282_as_standalone_single_digit_codes": {
+   "shared_labels": [
+    "3",
+    "4",
+    "5",
+    "7",
+    "8"
+   ],
+   "n_shared": 5,
+   "r4282_tokens_covered": 213,
+   "r4282_coverage": 0.1954
+  },
+  "r4282_capitals_reached": []
+ },
+ "control_r4284_keytest_strip": {
+  "tokens": 73,
+  "labels": 17,
+  "shared_labels": [
+   "3",
+   "a",
+   "b",
+   "c",
+   "e",
+   "g",
+   "i",
+   "k",
+   "l",
+   "p",
+   "t"
+  ],
+  "n_shared": 11,
+  "r4282_tokens_covered": 387,
+  "r4282_coverage": 0.355
+ },
+ "control_key_records_on_file": {
+  "4307p4": "16 shared signs / 456 tokens (GAPS3)",
+  "4327": "7 shared signs (GAPS)",
+  "4263": "5-9 shared signs / 121-221 tokens (GAPS30)",
+  "4275": "4-7 shared signs / 81-157 tokens (GAPS27)"
+ }
+}
