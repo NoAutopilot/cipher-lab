@@ -1,0 +1,288 @@
+{
+ "R1": [
+  "R_Ok",
+  "o",
+  "images/inv86_0003_left_native.jpg",
+  [
+   100,
+   2105,
+   165,
+   2165
+  ]
+ ],
+ "R2": [
+  "R_Adelta",
+  "a",
+  "images/inv86_0003_left_native.jpg",
+  [
+   215,
+   475,
+   295,
+   535
+  ]
+ ],
+ "R3": [
+  "R_Lc",
+  "l",
+  "images/inv86_0003_left_native.jpg",
+  [
+   225,
+   1705,
+   285,
+   1765
+  ]
+ ],
+ "R4": [
+  "R_Dv",
+  "d",
+  "images/inv86_0003_left_native.jpg",
+  [
+   205,
+   825,
+   265,
+   895
+  ]
+ ],
+ "R5": [
+  "R_Iff",
+  "i",
+  "images/inv86_0003_left_native.jpg",
+  [
+   115,
+   1380,
+   190,
+   1565
+  ]
+ ],
+ "R6": [
+  "R_Qx",
+  "q",
+  "images/inv86_0003_left_native.jpg",
+  [
+   80,
+   2380,
+   185,
+   2475
+  ]
+ ],
+ "R7": [
+  "R_Lg",
+  "l",
+  "images/inv86_0003_left_native.jpg",
+  [
+   135,
+   1715,
+   205,
+   1815
+  ]
+ ],
+ "R8": [
+  "R_Pq",
+  "p",
+  "images/inv86_0003_left_native.jpg",
+  [
+   195,
+   2210,
+   260,
+   2340
+  ]
+ ],
+ "R9": [
+  "R_Ax",
+  "a",
+  "images/inv86_0003_left_native.jpg",
+  [
+   410,
+   465,
+   475,
+   530
+  ]
+ ],
+ "R10": [
+  "R_Im",
+  "i",
+  "images/inv86_0003_left_native.jpg",
+  [
+   245,
+   1425,
+   315,
+   1495
+  ]
+ ],
+ "R11": [
+  "R_Tr",
+  "t",
+  "images/inv86_0003_left_native.jpg",
+  [
+   115,
+   2730,
+   185,
+   2795
+  ]
+ ],
+ "R12": [
+  "R_Nij",
+  "n",
+  "images/inv86_0003_left_native.jpg",
+  [
+   70,
+   1930,
+   195,
+   2110
+  ]
+ ],
+ "R13": [
+  "R_B6",
+  "b",
+  "images/inv86_0003_left_native.jpg",
+  [
+   255,
+   575,
+   345,
+   655
+  ]
+ ],
+ "R14": [
+  "R_Yt",
+  "y",
+  "images/inv86_0003_left_native.jpg",
+  [
+   115,
+   3175,
+   185,
+   3245
+  ]
+ ],
+ "R15": [
+  "R_Sps",
+  "s",
+  "images/inv86_0003_left_native.jpg",
+  [
+   205,
+   2610,
+   295,
+   2705
+  ]
+ ],
+ "R16": [
+  "R_S6",
+  "s",
+  "images/inv86_0003_left_native.jpg",
+  [
+   115,
+   2615,
+   180,
+   2685
+  ]
+ ],
+ "R17": [
+  "R_Nl",
+  "n",
+  "images/inv86_0003_left_native.jpg",
+  [
+   195,
+   1945,
+   250,
+   2040
+  ]
+ ],
+ "R18": [
+  "R_My",
+  "m",
+  "images/inv86_0003_left_native.jpg",
+  [
+   95,
+   1790,
+   205,
+   1915
+  ]
+ ],
+ "R19": [
+  "R_Bd",
+  "b",
+  "images/inv86_0003_left_native.jpg",
+  [
+   185,
+   570,
+   255,
+   650
+  ]
+ ],
+ "R20": [
+  "R_DW",
+  "d",
+  "images/inv86_0003_left_native.jpg",
+  [
+   260,
+   825,
+   345,
+   900
+  ]
+ ],
+ "R21": [
+  "R_Nh",
+  "n",
+  "images/inv86_0003_left_native.jpg",
+  [
+   255,
+   1945,
+   335,
+   2040
+  ]
+ ],
+ "R22": [
+  "R_G9",
+  "g",
+  "images/inv86_0003_left_native.jpg",
+  [
+   170,
+   1195,
+   245,
+   1290
+  ]
+ ],
+ "R23": [
+  "R_Kb",
+  "k",
+  "images/inv86_0003_left_native.jpg",
+  [
+   145,
+   1595,
+   215,
+   1665
+  ]
+ ],
+ "R24": [
+  "R_I8",
+  "i",
+  "images/inv86_0003_left_native.jpg",
+  [
+   315,
+   1425,
+   385,
+   1495
+  ]
+ ],
+ "R25": [
+  "R_Ap",
+  "a",
+  "images/inv86_0003_left_native.jpg",
+  [
+   295,
+   470,
+   380,
+   560
+  ]
+ ],
+ "R26": [
+  "R_Cs",
+  "c",
+  "images/inv86_0003_left_native.jpg",
+  [
+   185,
+   710,
+   275,
+   810
+  ]
+ ]
+}
