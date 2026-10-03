@@ -1,0 +1,1 @@
+Owner sorter decisions, Birago sign sorter (https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s), dumped 3 Oct 2026 18:3x UTC by the account-3 orchestrator: moves/ (142), piles/ (1), newpiles/ (26), checked/ (0). Partial sort. signs.tsv/labels.tsv = the joined inputs the page was built from. Owner: "doesn't mean they're right" -- a third reader, see ../README.md.
