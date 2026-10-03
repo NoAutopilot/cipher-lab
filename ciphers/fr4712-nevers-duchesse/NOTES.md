@@ -264,3 +264,15 @@ contact sheet (`images/contact_c16-21_808.jpg`, `images/contact_c22_808.jpg`), t
   material for those codes) and the only route this target has found to f.10r: a known-plaintext crib rather than more
   ciphertext for a power control.
 - Not done (outside the brief): transcription of f.13r and any leaf after f.13 (f.13v onward, canvas f23+).
+
+## DUCH-F13 (account-1 worker for LANE-A1, 3 Oct 2026, from 10:58 UTC): f.13r glossed codes as a crib for f.10r
+
+Pre-registration `PREREG_duchf13.md` (commit 1d4fcd95, before any f.13r read).
+
+**Hand condition (prereg (c)), recorded 11:05 UTC before `f13_carry.py` was first run.** Side by side: f.10r's crop
+`images/f10b/f10c_L01_s1.jpg` and f.13r's line crops. f.10r's clear words ("ce laquay ne ma falle") are a light, small,
+fast cursive; f.13r's body is a larger, heavier hand. The decisive sign is the figure 8: f.10r writes it as an open
+ɑ-form (its "82 82" reads "ɑ2 ɑ2"), f.13r writes a closed looped 8 in ".82." and ".58.". Layout also differs (f.10r unbroken
+digit runs, f.13r single dotted codes in prose). **Judged: not shown to be the same writer (undecided, leaning different).**
+So condition (c) is not met and every carried value is graded **M**, not C (`HAND_SAME = None` in `f13_carry.py`).
+Date window: both undated, same volume, same addressee -- recorded as unverifiable.
