@@ -1,0 +1,13 @@
+# c262 cipher block (crops images/c262ci_L01-L13), Sonnet blind pass A, FT-D 3 Oct 2026, glyph ids in Tomokiyo-table terms (key.tsv).
+# Pass note: the 13 crops are 93 px slices of lines sloping ~2.9 deg; the pass stitched/deskewed and found 11 real lines (L01 right part and L11 left part cut). 19 bare ? plus many trailing-? guesses; '#' glyphs left as o1/e2?.
+L01	? u1 o1/e2? u1 p1 l1 l2 o1/e2? n1? e1? W:roy? a1 ? ? ? ? ? ?
+L02	o1/e2? o5 o1/e2? r1 r2 e1 m2? x1? o1/e2? u1 o1/e2? u1 l2 d2 r1 o1/e2? z1 e1 m1 p2 o1/e2? W:roy? c1 h1 o1/e2? r2 l2 a1 n1? o5 p1 o1/e2? n1? D1 m1? l2 p1? d1? o1/e2? r1? N3? ?
+L03	d2 o1/e2? W:roy? g2 o1/e2? n1? W:les? d2 o1/e2? g2 W:roy? ? o1/e2? r1 d1? m1? d2 p1 n1? a1 o5 p1 o1/e2? n1? y1? l1
+L04	p2 o1/e2? s1? d2 o1/e2? n1? o5 l2 o1/e2? o5 o1/e2? m2 r2 ? W:que? l2 a2 f2 a1 r1? c1 ? W:le? o1/e2? p1 o1/e2? u1 o1/e2? r1 a1 d2 n2? c1 o1/e2? n2? W:roy? o5 o1/e2? d2 o1/e2? d2? m1? a2 ?
+L05	p1 l2 n1? ? f2 a1 c1? l2 d2 r1 a2 p1 a1 W:roy? m1 l2 W:que? o1/e2? n1? d2 o1/e2? r1 m1 c1 d2 o1/e2? d2 o1/e2? c1 a1 o2 l2 a2 W:par o5 i3 o1/e2? W:ont? f2 o1/e2? r1? o5 m1?
+L06	p1 l2 W:ont? W:faire? r1 a1 y1 W:que p1 l2 y1 o5? r1 o1/e2? u1 p1 o1/e2? c1 o1/e2? g2? p1 m1 p1 c1 p1 W:roy? i1? c1 o1/e2? ? m1 d1 l2 o1/e2? W:roy? d2 o1/e2? d1? p1 o1/e2? n1?
+L07	s1? d2 o1/e2? x1? a1 l2 c1 W:ont? a1 d2 p1 r1 m1? d2 c1 r1 p1 c1 h1? o1/e2? W:roy? D1 o1/e2? W:roy? s1 d2 o1/e2? p1 r1 l2 o1/e2? p1 o5 o1/e2? b1? n1? o5 r1 u1 o5 o1/e2? W:roy?
+L08	s1 o1/e2? r1 a3 o1/e2? W:les? W:qui l2 W:roy? o1/e2? m2 d1 l2 o1/e2? u1? n2? o1/e2? n1? l2 o1/e2? n2? r1 f2 m1? r1 o1/e2? p1 o5 p2 l2 a1 p1 W:les? p1 r1 d2 o1/e2? l2 o1/e2? W:roy?
+L09	o1/e2? n1? l2 a2 p1 W:roy? D1 o1/e2? r1 p1 o1/e2? p1 r1 W:que? l2 W:que? W:roy? a1 n1 p2 o1/e2? b1? W:les? s1 W:roy? p1 n2 o1/e2? W:les? a3 p1 m1 o1/e2? r1 o1/e2? p1 o1/e2? n1? o5
+L10	p1 a1 W:roy? a3 a2 n2 o5 l2 a2 r1 m1? p1 W:faire? o5 a1 o5 p1 r1 n1? W:qui n2 z1 n1? o1/e2? W:roy? m1? r1 m1? o5 p1 r1 a1 W:roy? W:les? m1? n1? o5 y1? ? ?
+L11	W:que? ? r1 l2 a2 p1 o1/e2? r1 o5 o1/e2? d2 o1/e2? W:le? p1 r1 ? ?

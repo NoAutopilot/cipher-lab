@@ -1,0 +1,29 @@
+{
+ "lines": 11,
+ "cipher_tokens": 392,
+ "letter_glyph_ids": 31,
+ "gloss_letters": 315,
+ "real": 0.3307,
+ "shuffle_mean": 0.1362,
+ "shuffle_p95": 0.1875,
+ "shuffle_max": 0.2083,
+ "rank": 1,
+ "of": 201,
+ "gloss_order_null_mean": 0.1649,
+ "gloss_order_null_p95": 0.2214,
+ "gloss_order_null_max": 0.2526,
+ "gloss_order_rank": 1,
+ "decode": {
+  "L01": "uouplloneroya",
+  "L02": "ooorremxououldrozemporoychorlanoponmlpdor",
+  "L03": "doroygonlesdogroyordmdpnaoponyl",
+  "L04": "posdonolooomrquelafarcleopouoradnconroyoododma",
+  "L05": "plnfacldraparoymlqueondormcdodocaolaparoioontforom",
+  "L06": "plontfairerayqueplyoroupocogpmpcproyicomdloroydodpon",
+  "L07": "sdoxalcontadprmdcrpchoroyoroysdoprlopoobnoruooroy",
+  "L08": "soraolesquilroyomdlounonlonrfmropoplaplesprdoloroy",
+  "L09": "onlaproyorpoprquelqueroyanpoblessroypnolesapmoropono",
+  "L10": "paroyaanolarmpfaireoaoprnquinznoroymrmopraroylesmnoy",
+  "L11": "querlaporoodolepr"
+ }
+}

@@ -1,0 +1,7 @@
+Gate written 3 Oct 2026 22:53 UTC by FT-D, after pass A's scores and BEFORE pass B's output was seen.
+(Pass A's own gate was not pre-registered: its numbers are reported as exploratory.)
+Known-answer gate for test 0 (key + transcription on c262 against its period margin gloss):
+  PASS if pass B's decode beats the maximum of BOTH 200-draw nulls (key-shuffle and gloss-word-order) at both '#' resolutions (e and o);
+  otherwise "non-test at this transcription error" (CLAUDE.md rule 3 calibration paragraph) and no target leaf is scored.
+A PASS licenses only "the published key plus a Sonnet glyph pass carries the gloss's sequence above chance on this block"; it
+does not make the decode readable (pass A's letter similarity to the gloss is 0.32-0.33).
