@@ -7398,3 +7398,36 @@ are a namesake, not the Saluzzo governor, and carry period decipherments (DECODE
 **fr.3251 f.35 (no.18, 15 Nov 1570).** HARVEST-D2 (28 Sept) read its two lines under the printed key and
 VERIFY-CEPPO-D2-1 audited it (AUDIT.md "f.35": key rank 1/201 z 5.0-6.0, scope none, scraps only). It has no
 PROGRESS.tsv row. The cheapest add is that row, copied from AUDIT.md (0 S endorsed of 76, claim scope none), not a fresh read.
+
+## Nevers vein (3 Oct 2026)
+
+Scout only (NEVERS-VEIN, account-3 parent worker; brief `.claude/briefs/runs/2026-10-03-acct3-nevers-vein.md`). Source:
+Tomokiyo's catalogue of the Nevers collection, `sources/cryptiana/web/nevers.htm` (local mirror; credit Satoshi
+Tomokiyo for every key named here), parsed by script into 136 (key, letter, folio, date, status-word) rows, plus his
+`league.htm` and `henryiv.htm`. Each row was checked against `ciphers/`, QUEUE.md, `sources/solver-diffs/` and a shallow
+clone of dbourdeau/cyphersolver (3 Oct 2026), then against the **BnF finding-aid item descriptions** ("avec chiffre"
+vs "avec chiffre et déchiffrement"): fr.3974-3995 and fr.4715 from the copies already in `sources/bnf-aem/`, fr.3416
+(cc49887h) and fr.4712 (cc57762j) fetched. That catalogue test is the main result: almost every letter Tomokiyo lists
+under a key carries the office's own decipherment, so the vein is narrow. Full table: `NEVERS-VEIN.tsv` (9 kept rows,
+the rest dropped with reasons). Not solved, not transcribed, no class.
+
+Kept, by expected value (key in hand x unglossed letter x online x pool of glossed siblings for a known-answer control):
+
+| Row | Letter | Key | Online / leaf | Cipher size, gloss (low-res) | First-test suggestion |
+|---|---|---|---|---|---|
+| NV-01 | fr.3993 ff.71r-72r, Charles de Gonzague-Clèves to Nevers, 2 Aug 1595 (BnF: "avec chiffre", no déchiffrement) | no.70 | btv1b9059229n c80-81 (stamp 72 seen) | ~2 lines on 71v + ~10 lines on 72r, ~200 two-digit; no gloss seen | Intake + premise check, then rebuild no.70 from fr.3995 f.130, score it first on glossed siblings fr.3982 f.51 and fr.3993 f.254 (known-answer gate), then apply to ff.71v-72r; ~4 |
+| NV-02 | fr.3416 f.35r, Nevers to his son (BnF: "avec chiffre") | no.25 | btv1b9058240c c43 right (stamp 35; B/W microfilm) | 6-7 lines of figures at foot, ~125 two-digit; no gloss seen; 35v unchecked | Same pattern with the largest control pool (fr.3416 f.38, fr.4715 ff.27, 59, 68, 69, all glossed); check 35v first; ~4 |
+| NV-03 | fr.4715 f.38, "Evesque" to Nevers, 17 Nov 1589 (BnF: "Lettre avec chiffre") | no.25 | btv1b52509819x c91-92 | 38r-38v in clear French, ~2 lines of figures at foot of 38v (~35 two-digit); a few marks over the figures | Settle premise (c) at full res (is the clear text the period decipherment?) before any key work; fold into NV-02's run if it stays open; ~1 |
+| NV-04 | fr.3984 f.198, Sillery to Nevers, 25 Jul 1593 (BnF: "avec chiffre") | no.40 | btv1b9060633d, canvas not located (printed pamphlets interleaved) | unchecked; Tomokiyo: no.40 "decodes the undeciphered portions" | Check-solved first: search Tomokiyo's other pages and blog for a printed reading (found-solved risk), then locate the leaf; ~2 |
+| NV-05 | fr.15575 ff.228, 233; fr.15576 f.2 (Brussels, Archduke Ernest, 5 Jan 1595) | Syllabic Numerical Cipher 1592 (Nevers no.31/no.54) | btv1b90637788, btv1b9063777v, canvases not located | unchecked | Grep Tomokiyo's Spanish pages for these folios, then locate leaves and test for gloss; pool of 3; ~2 |
+
+Also kept but blocked from the cloud: NV-06 fr.3615 (eight Henri IV/Potier de Gesvres letters under no.36, f.90
+"partially undeciphered"; Gallica SRU 0 records; check *Lettres missives de Henri IV* for clear texts before any
+reproduction request), NV-07 fr.3633 ff.3, 22, 24, 122 and NV-08 fr.3616 (holding records read: "Réserver", no Gallica
+link; fr.3633 f.22 would be a third witness for the Vieuville-Nevers key of `fr4715-vieuville-pool`), and NV-09 fr.4712
+f.10 (37 numbers transcribed by Tomokiyo, Nevers to the duchess, key unidentified; cheap but too short to carry a
+negative).
+
+Two slips in Tomokiyo's page for whoever cites it: Pisany's Verona letter is fr.**3983** ff.11, 13 (nevers.htm prints
+fr.3883; BnF item 3-4 confirms 3983, with déchiffrement), and Maisse's letter of 27 Nov 1593 is fr.3987 f.**157**
+(nevers.htm prints f.197; league.htm and BnF item 82 give 157).
