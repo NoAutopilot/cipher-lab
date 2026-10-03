@@ -1,0 +1,10 @@
+line	pos	sign	conf	gloss	gloss_grade	note
+2	1	605	H	K. Dennemarck	C	image 0003, crop p2_L01; both passes 605 H; gloss above in the bold hand, both read K. Dennemar(c)k (K. = Kön.); context "misverständnüß zwischen 605. und 651."
+3	1	651	M	Cur Brandenburg	C	crop p2_L02; both passes 651 M (third digit a long stroke, alt 657); gloss in left margin, both Curbrandenburg
+7	1	625	M	[unread margin gloss]	U	crop p2_L04; both passes 625 (in-text alt 620/623), and the margin repeats "625" clearly; margin gloss two Kurrent words in the bold hand, passes split (A gesandschaffter?/..hold, B y?rkestelr?/Ahl?feldt?), reconciler on a 2x zoom reads ?-?-?-?-stelt / ?-?-?-bel: unread. Context "und hat 625. hierbey signalirte dienste gethan" (a person)
+9	1	653	H	Cur Brand.	C	crop p2_L05; both passes 653 H; gloss above, both Cur Brand(b). abbreviated; 651 and 653 both glossed Kurbrandenburg: two codes for one meaning (homophone or variant), M
+17	1	229	M	Berlin	C	crop p2_L09; both passes 229 M (2s written r-shaped); gloss Berlin, both passes; in key 255's 180-407 range but key 255 reads 229 = Frankreich: conflict, key 255 nomenclator does not read it
+25	1	651	H	Curbrandenburg	C	crop p2_L13; both passes 651 H; gloss above-left, both Curbrandenb(urg); second occurrence of 651 on this page, same gloss
+25	2	690	M	Bleinenk?fl	M	crop p2_L13; both passes read 650 (M; A alt 656/659, B alt 690/630); RECONCILER override to 690 at M: on a 2x native zoom the middle glyph is a loop with a long descender to the lower right, the same descending 9 as page 1's 690 (p1_L11), and the bold gloss above is the same word as page 1's (B-l-e-i-[n]-e-n-k-[o/e]-[f/s]-l, middle letters partly struck): 690 recurs p1+p2 with one gloss; name unidentified, so M
+28	1	774	H	Holland	C	crop p2_L14; both passes 774 H; gloss Holland, both
+28	2	775	H	Gen. Staden	C	crop p2_L14; both passes 775 (B alt 773); gloss Gen. Staden (General-Staaten), both
