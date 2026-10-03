@@ -169,19 +169,57 @@ already terminal, nothing to gate` (exit 0).
 - Requests: de-crypt.org 1 login + 1 probe + 32 ImagesList pages + 39 full-size images (73 in all, including the login
   page and RecordsView/3758). No other host.
 
+## Step of 3 Oct 2026: c. 111 / c. 127 pairing check (A2-FLO2, account 2, LANE-A2PUSH)
+
+Runs the first clause of A2-FLO's handed-on step ("confirm the pairing from the images on disk"). Intake gate output,
+pasted before the step: `florence-dieci-responsive: blocked (line 1) -- already terminal, nothing to gate` (exit 0).
+
+- **Method.** The two committed full-size images only (`images/IMG_R3765_I23024_P.jpg`, c. 111, 4016 x 6016;
+  `images/IMG_R3766_I23025_P.jpg`, c. 127, 4010 x 4440): one 1400 px view of each leaf and one native-resolution crop of
+  each leaf's last lines (4 image reads by this worker, no subagent, no network). Every observation is grade M.
+- **The pair holds** on every point the step named:
+  - *Opening.* Both leaves open with the same clear words, "Magnifici etc. Io mi credetti avendo scritto a Neri Capponi
+    della buona dispositione che io trovava in messer ...", and the clear lines that follow on c. 127 (about lines 1-5,
+    13-17 and the last 8) recur on c. 111 in the same order.
+  - *Date and place.* c. 111 ends "data al Guasto Aymone(?) a dì xxvi dicembre 1430"; c. 127's last line reads
+    "al Guasto Aymone(?) a dì xxvi ... 1430" before the subscription. Same day and place as far as this hand can be
+    read at this scale.
+  - *Sender.* c. 127's subscription runs into a group of cipher signs after "servitor ... S. d. V." (the name is in
+    cipher); c. 111's subscription has "S. d. V." followed by a name in clear ("Tomaso ...", second word uncertain) --
+    the written-out form of that cipher group. The sender's name is not read here (grade M, not transcribed).
+  - *Length.* c. 127 is about 44 lines, of which about 24 are wholly or mainly cipher (about lines 6-8 and 18-38 in the
+    1400 px view, plus the cipher subscription); c. 111 is about 29 lines wholly in clear in a smaller hand, which fits
+    a full clear text of c. 127 with the cipher stretches written out.
+  - c. 111 also carries its own stamp "N° 102" (top right; foliation 111 bottom right) besides the later pencil note
+    "Decifrato della lettera al N° 115"; c. 127 is stamped "N° 115" (foliation 127). c. 111 is a separately numbered
+    item: a period decipherment (or clear copy) filed thirteen items before the cipher original.
+- **Cipher shape seen** (for the next pass; not a transcription): a symbol script of roughly 40-60 forms (circled
+  letters, barred and doubled strokes, triangles, Greek-like and numeral-like forms), with a ÷-like sign very frequent
+  -- possibly a null or a word separator, untested. No key table on either leaf.
+- **Stopped here, not transcribed.** The rest of the handed-on step (two blind transcription passes of c. 127 from
+  line crops, reconciliation, alignment with tools/interlinear_align.py, key.tsv) is deep work, and CLAUDE.md Pipeline 2's
+  intake gate bars deep work on a target whose check-solved verdict has not read the standard edition: this folder's
+  status is `blocked` for that reason (Job 3 above), and A2-FLO's own gap line gates the filza 8 pass on the check-solved
+  verdict. `tools/intake_gate_check.py` exits 0 only because `blocked` is terminal for it, not because the gate is met.
+  Flagged to LANE-A2PUSH. The step also needs a unit nobody priced: a clear-text pass of c. 111 (small cursive hand),
+  the plaintext the alignment needs, on top of 2 cipher passes + 1 reconciliation over about 24 cipher lines.
+- The pair gives check-solved concrete search handles: a letter to the Dieci of 26 Dec 1430 dated "al Guasto Aymone"
+  (reading uncertain), naming Neri Capponi, subscribed "Tomaso ...", with a period decipherment filed at filza 8 c. 111.
+- Requests: none (images on disk). Vision: 4 image reads, 0 subagents.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - check-solved for the Responsive series (filze 7/8/9/22) - blocker: not-attempted; the 24 Sept verdict is `blocked` for want of an edition or calendar read (Job 3 above), and no premise check has run; next: check-solved + premise check (Guasti, Tomokiyo's Italian pages, Google Books, the Somogyi 2016 citation, now with c. 111's 1430 date and the filza 8 stamps as search handles), ~$4
-- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; gated on the check-solved verdict above (intake gate); next: line crops of c. 111 and c. 127 (tools/iiif_lines.py --image), two blind passes + reconciliation, then a plain/cipher alignment with its shuffle control, ~$8
+- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing of c. 111 (clear, stamped N° 102) with c. 127 (cipher, N° 115) confirmed from the images on disk (same opening, same 26 Dec 1430 date and place, the c. 111 subscription writes out the cipher signature of c. 127; step of 3 Oct 2026, A2-FLO2), transcription not begun because the intake gate needs the check-solved verdict first; next: after check-solved, line crops of c. 127 and c. 111 (tools/iiif_lines.py --image), 2 blind cipher passes + 1 reconciliation + 1 clear-text pass of c. 111, then tools/interlinear_align.py with a gloss-shuffle control, ~$8
 - filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
 ## Escalation (3 Oct 2026, A2-FLO)
 - [ ] siblings: the 31 imaged records are siblings of each other; Bourdeau's florence1429/1414 keys (filze 1-3) not yet tried here
-- [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026; not yet aligned
+- [x] clear-pages: c. 111 found labelled as the decipherment of the letter stamped N° 115 (c. 127), step of 3 Oct 2026 (A2-FLO); pairing confirmed from the images (opening, date, place, subscription), step of 3 Oct 2026 (A2-FLO2); not yet transcribed or aligned
 - [ ] known-keys: Gabbrielli keys 3/4 (filza 7, sources/florence/keys/58-5.pdf, 58-6.pdf) against filza 7 leaves, after check-solved
 - [ ] print: check-solved has not read an edition or calendar of the Responsive series (Job 3); planned as the next step
 - [ ] key-rebuild: from the c. 111 / c. 127 pair once aligned
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 3 internal gaps; cheapest next: check-solved + premise check on the Responsive series (Guasti, Tomokiyo, Google Books, Somogyi 2016, with the 1430 date and filza 8 stamps as handles), ~$4
+Verdict: keep going: 3 internal gaps; cheapest next: check-solved + premise check on the Responsive series (Guasti, Tomokiyo, Google Books, Somogyi 2016), now with the c. 111/c. 127 pair as handle (26 Dec 1430, Neri Capponi, subscription 'Tomaso ...'), ~$4; then the filza 8 transcription and alignment, ~$8
