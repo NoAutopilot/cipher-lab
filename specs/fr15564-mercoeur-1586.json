@@ -2,7 +2,9 @@
  "slug": "fr15564-mercoeur-1586",
  "name": "Anonymous to the Duc de Mercoeur, 'ce xxvj juin' c.1586, BnF fr. 15564 f.151 (canvas f164 of ark btv1b9064027v): nine short cipher spans inside clear French",
  "date": "1586-06-26",
- "language_candidates": ["fr"],
+ "language_candidates": [
+  "fr"
+ ],
  "ciphertext": "ciphers/fr15564-mercoeur-1586/ciphertext_draft.tsv (MERC151B reconciled read; pass with --cipher)",
  "ciphertext_source": "MERC151 read 1 + MERC151B blind read 2 of iiif_lines.py crops, reconciled from the crops (3 Oct 2026)",
  "alphabet": "ad-hoc ASCII shape labels (MERC151 legend in f151_read1.tsv header); about 41 types",
@@ -14,6 +16,19 @@
   "homophonic matched control at the reconciled N, K (family_run.py --control-only), MERC151B",
   "Lasry key cells order test vs value-permuted keys (partial_key_test.py --cells), MERC151B"
  ],
- "judge": {"language": "fr", "note": "fr = tools/data/fr16 (Catherine de Medicis letters), era-matched to 1586"},
- "cheap_test_done": []
+ "judge": {
+  "language": "fr",
+  "note": "fr = tools/data/fr16 (Catherine de Medicis letters), era-matched to 1586"
+ },
+ "cheap_test_done": [
+  {
+   "date": "2026-10-03",
+   "worker": "MERC151B (account 2)",
+   "test": "homophonic matched control, control only, N=220 K=48 fr16 3 seeds; Lasry cells order test 500 permuted keys",
+   "target": "not run (control below gate at noise 0.30); Lasry cells gain 0.0962 vs p95 0.1364, FAIL",
+   "control": "clean 0.742 (gate met); noise 0.30 0.148 (not met); shuffled-target cells control clean",
+   "verdict": "too-short for homophonic at N=220 under measured 28.8% reader disagreement; next: sign sorter + error sweep",
+   "cost_usd": "orchestrator to read get_session"
+  }
+ ]
 }

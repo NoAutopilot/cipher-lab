@@ -1,0 +1,66 @@
+line	col	A	B	decision	conf	reason
+S1	1	2	3	A	M	z-shape with flat foot, digit 2
+S1	2	P	p	B	L	p bowl, no clear stem strike
+S1	5	6	hp	B	H	tall stem, top hook, foot loop
+S2	3	v	r	B	M	pointed check-mark sign, not round v
+S2	19	E	x	B	H	small x/star, epsilon is col15
+S2	22	2	&	B	L	small looped knot with tail
+S2	25	G	S	B	M	S-hook with closed lower loop
+S2	27	b	th	B	H	slanted oval with crossbar, theta
+S2	32	8	Tb	B	H	T-topped stem with foot loop
+S2	38	y	n	B	M	eta, right leg descends
+S2	40	3	oc	B	M	reversed c with inner dot
+S3	1	=	-	A	L	double bar after advertys, light ink
+S3	2	G	hp	B	M	same tall looped sign as S1.5
+S3	5	o	-	DROP	H	no sign between m and square
+S3	8	3	oc	B	M	reversed c with inner dot
+S3	19	#	+	B	M	single-bar cross with knot
+S3	21	v	r	B	L	pointed check-mark, same as S2.3
+S3	32	b	th	B	H	theta oval with bar
+S3	34	-	oc	B	M	reversed c after ff present
+S3	35	3	L	B	M	long descending stroke before yogh
+S4	1	P	p	B	L	p, strike not distinguishable
+S4	4	b	6	B	H	hooked-top single bowl, digit 6
+S4	9	y	n	A	M	left tail curls down like y
+S4	13	b	6	B	M	same hooked-top 6 as col4
+S4	14	s	5	B	M	flat top stroke then bowl
+S4	18	#	+	B	M	single-bar cross with tick
+S4	24	#	+	B	M	single-bar cross, one stem
+S4	26	6	th	B	H	theta oval with bar
+S4	28	p	+	other:P	M	p bowl with crossbar on stem
+S5	1	L	-	DROP	M	clear "si", text ink
+S5	2	i	-	DROP	M	clear "si", dotted i
+S5	5	3	oc	B	M	reversed c with inner dot
+S5	9	v	r	B	M	pointed check-mark after beta
+S5	13	-	L	B	L	long slanted stroke before u
+S5	14	n	u	B	M	open u shape
+S5	18	y	n	B	M	eta, right leg descends
+S5	19	G	hp	B	M	tall looped sign, as S1.5
+S6	7	-	th	B	H	theta after phi clearly present
+S6	8	6	u	B	M	u/upsilon shape, not 6
+S6	10	s	5	B	L	small flat-topped 5-like sign
+S7	3	6	th	B	H	theta oval with bar
+S7	8	3	oc	B	M	reversed c with inner dot
+S7	11	#	q	B	H	q with foot bar, as S5.3
+S7	12	#	+	B	M	single-bar cross with tick
+S7	17	s	5	A	L	s with top hook, curved
+S7	18	Q	&	B	H	dark knot with tail
+S7	20	g	e	A	M	e-like head, looped descender
+S7	22	v	-	DROP	M	only one check sign before x
+S7	29	g	9	B	M	single bowl, same as S8.17
+S8	1	m	-	DROP	L	m in clear ductus "pensé m"
+S8	2	f	q	A	M	phi: loop on long stem
+S8	6	8	K	B	H	ornate quatrefoil knot
+S8	10	3	oc	B	M	reversed c with inner dot
+S8	11	6	th	B	H	theta oval with bar
+S8	17	g	9	B	M	9 beside double-bowl g
+S8	26	#	f	B	L	filled bowl on single stem
+S9	1	#	ff	B	H	crossed doubled long-s, as S3.12
+S9	3	6	th	B	H	theta oval with bar
+S9	10	-	oc	B	M	reversed c with top curl
+S9	12	y	-	DROP	M	A split oc/3 pair differently
+S9	13	#	f	B	L	filled bowl on stem, as S8.26
+S9	14	#	+	B	L	cross with small bowl; alt P
+S9	16	f	L	B	M	long-s-like with curl
+S1b	1	-	e	B	L	looped e before ordinal "me"
+S1b	2	-	e	B	L	second e; cipher date, not numeral

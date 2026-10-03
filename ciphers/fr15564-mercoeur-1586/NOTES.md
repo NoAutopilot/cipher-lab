@@ -146,3 +146,50 @@ S9 precedes "en qui nous esperons beaucoup"), but a crib loop needs its own matc
 Next step that depends on nobody: a second blind read of the six f.151 crops and a reconcile against
 `f151_read1.tsv` (2 Opus calls, ~USD 3), then the rule-3 control above (`family_run.py` homophonic, N=220, K=41,
 fr16, offline, ~USD 1) before any target run; a control below gate logs f.151 as too-short for that family.
+
+## Second read, reconciliation, homophonic control and Lasry cells test (MERC151B, 3 Oct 2026)
+
+Pre-registered before any score: `PREREG-MERC151B.md` + `lasry_cells_f151.tsv` (commit f4b2bb42), spec
+`specs/fr15564-mercoeur-1586.json` (ed86ac1d). Intake gate 15:18 UTC: `fr15564-mercoeur-1586: blocked (line 1) --
+already terminal, nothing to gate`, exit 0. No new crops (the six MERC151 crops, made with the `tools/iiif_lines.py`
+command above); two vision units: one blind read, one image-only reconciliation (Opus subagents).
+
+**Transcription.** Blind read 2 (`passes/f151_read2.tsv`, did not see read 1): 219 signs, 10 spans, 47 labels (its S2,
+the "ee" in "du ee^me de ce mois", is a span read 1 did not count; renamed S1b in `passes/f151_read2_mapped.tsv`).
+`python3 tools/reconcile_passes.py passes/f151_read1_long.tsv passes/f151_read2_mapped.tsv` -> 161/226 aligned columns
+agree, **71.2%; err_2reader 28.8%** (agreement, not accuracy; TRANSCRIPTION.md). Reconciler settled all 65 columns
+from the crops (`passes/f151_decisions.tsv`): B 52, A 6, other 1, DROP 6; read 1 had lumped several shapes under one
+label (its G, 3, b, y, v, s, # each covered two signs). Settled read `ciphertext_draft.tsv`: **N = 220, K = 48**
+(grades: H 15, M 188, L 17; S1b kept as cipher at L). Above 10% two-reader disagreement and an unsettled inventory,
+so by Usage 6 the next transcription step is the sign sorter, not a third machine pass.
+
+**Rule-3 control (control only; target NOT run).** `tools/family_run.py ... --family homophonic --control-only
+--seeds 3 --restarts 8 --gate 0.6 --cipher ciphertext_draft.tsv --param profile=target`, corpus fr16:
+
+| control | N | K | mean recovery (range) | gate 0.6 |
+|---|---|---|---|---|
+| noise 0 (clean) | 220 | 48 | 0.742 (0.409-0.977) | met |
+| noise 0.30 (brackets err_2reader 0.288, pre-registered) | 220 | 48 | 0.148 (0.109-0.191) | not met |
+| target | -- | -- | not run in this job | -- |
+
+Pre-registered verdict: the noise-matched control is below gate, so **f.151 is too-short for the homophonic family at
+N = 220 under its measured reader disagreement** (rule 5 blocker class too-short, conditional on transcription error).
+The clean control reads, so this is a transcription-error limit, not a pure length limit: a read whose measured error
+falls to where the control crosses the gate (between 0 and 0.30, not swept) would reopen a target run (~USD 1).
+
+**Lasry key cells test (disk only).** `tools/partial_key_test.py --cells lasry_cells_f151.tsv --draft
+ciphertext_draft.tsv --lang fr --keys 500 --within 10 --width 400 --min-run 4 --seed 342 --key-seed 3420`: 19 runs, 95
+keyed signs; order gain **0.0962** vs 500 value-permuted keys mean -0.0410, **p95 0.1364**, 55/500 >= real -> **no
+order signal (FAIL)**. Shuffled-target control (`--shuffle-target 1`): gain 0.0516 vs p95 0.1488, no signal (control
+clean). Conditional on glyph matching by the key file's own descriptions (no shared atlas, M) and on a 2-reader draft:
+consistent with Lasry's report that f.151 does not read under this key, not an independent proof of it.
+
+Not found: any French reading of f.151 under the Lasry fr.15564 letter key as matched here. Report only; no novelty
+classification (rule 10).
+
+## While waiting (updated MERC151B, 3 Oct 2026)
+
+Next step that depends on nobody: a shared-scale glyph sheet of f.151's 48 labels beside the Lasry key image (one
+vision unit, ~USD 2) to replace description matching; the owner's sign sorter pass (Usage 6, >10% disagreement) to
+settle the inventory and lower the measured error, after which the homophonic control is swept 0.05-0.25 and the target
+run if a noise-matched control meets 0.6 (~USD 1). Status stays `blocked`.
