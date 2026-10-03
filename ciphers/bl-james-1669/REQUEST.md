@@ -24,4 +24,8 @@ original manuscripts" except from an existing surrogate (microfilm), so the repl
 be seen in person with a Reader Pass (`bl.libguides.com/reference-services/manuscripts/requesting-items`) —
 ask whether a microfilm surrogate exists for Add MS 21483 before assuming a reading-room visit is required.
 
+**Add f.36 (GAPS97, 3 Oct 2026):** the BL catalogue record (032-002033865, read by GF-A2-5 on 2 Oct 2026) lists
+item 11, f.36, "Key to a cipher, endorsed 'Cypher with the Duke of Ormond'", in the same volume. It is a second
+candidate key for ff.1-8 and is a single leaf, so request **ff.1-8 and f.36** together.
+
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.

@@ -165,3 +165,48 @@ as a second physical route.
 (d) Recipient side: James (recipient) -- Clarke's *Life of James the Second* vol.1 1669 section, read by LANE CX
 (25 Sept 2026, above), nothing; CSP Domestic 1668-69, nothing. Ormonde-side (HMC Ormonde) not searched this pass.
 Not found.
+
+## GAPS97-bl-james-1669 (3 Oct 2026, account-4)
+
+NEXT-STEPS row (25 Sept): "the ff.1-8 pairing ... a reading-room request for just those eight folios". That step is
+already done: REQUEST.md (ZX2-ASK, 25 Sept 2026) and ASKS row 56 (BL copy orders, batched) carry it, and no images
+have come back (folder holds no images/; BL image service dead since the 2023 cyberattack). Intake gate before
+work: `bl-james-1669: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+Cheap copy-free steps run instead:
+1. **NLI microfilm route (MS_UR_008017).** `catalogue.nli.ie/Search/Results?lookfor=21483` and
+   `sources.nli.ie/Record/MS_UR_008017` both answered HTTP 403 with a Cloudflare challenge page (1 request each, not
+   retried, per the good-citizen rule). Whether the microfilm is digitised is not settled from the cloud.
+2. **Known keys on disk.** `sources/cryptiana/` holds Ormond-side keys (charlesii2.htm "Ormond-Longford Cipher 1",
+   1680; ormonde.htm, Ormonde-Clanricarde) and `ciphers/ormond-arran-1678/keys/`; none is dated 1669 or is a
+   Duke of York-Ormond key, so the f.36 "Cypher with the Duke of Ormond" is not on disk. In any case, no ciphertext of
+   ff.1-8 is on disk to apply a key to.
+3. **Ormonde-side print (Premise check (d)'s unsearched item).** Eight HMC *Ormonde* calendar volumes fetched as
+   archive.org `_djvu.txt` (cu31924091754071, -054063, -053966, -054055, -054048, -054089, -054097, -054030; 8
+   requests, 1.6 s apart). Every cipher/cypher hit (127 in all) is checked by script against a +-25-line window for
+   "Duke of York", "Royal Highness", 1668 or 1669. There are only two window matches, and neither is this item. One is
+   a 1651 letter in n.s. vol. 1. The other is the editor's introduction to n.s. vol. 3 (cu31924091754055, correspondence
+   1660-75), which says Anglesey's cipher letters to Ormond carry Ormond's own decipher. Those letters are calendared
+   at pp.64-124 and date from 1663-64, not 1669. Control: the same volume has 21 cipher hits and a 1669 run of letters
+   (Ormond correspondence June-Dec 1669, its djvu lines 18964-19529). No cipher word appears inside that 1669 run.
+   Result: no 1669 Duke of York cipher letter or decipherment found in HMC Ormonde (search result, rule 10). This does
+   not test whether Ormond's own papers (Carte MSS, Bodleian) hold the f.36 key's counterpart.
+
+## Remaining gaps (GAPS97, 3 Oct 2026)
+Read so far: 0 of 8 folios (no image of ff.1-8 on disk; nothing transcribed)
+- ff.1-8 (1669 letters and their partial name-key) - blocker: waiting-on ASKS row 56 (BL copy order, REQUEST.md); not digitised, BL images offline since 2023, NLI microfilm MS_UR_008017 catalogue Cloudflare-blocked from the cloud
+- f.36 "Cypher with the Duke of Ormond" (second key in the volume) - blocker: waiting-on ASKS row 56 (same BL order would need f.36 added); not on disk in any published source checked
+
+## Escalation (3 Oct 2026)
+- [n/a] siblings: the volume's other items (1685-88) are undigitised, same BL blocker as ff.1-8
+- [n/a] clear-pages: no page of the volume is on disk to read
+- [x] known-keys: Cryptiana Ormond keys and ormond-arran-1678 keys checked, none dated 1669 or Duke of York-Ormond (GAPS97)
+- [x] print: Clarke Life of James II, CSP Dom 1668-69 (LANE CX); HMC Ormonde 8 vols (GAPS97); all negative
+- [n/a] key-rebuild: no ciphertext on disk to rebuild a key from
+- [x] image-check: BL images offline since 2023; NLI catalogue Cloudflare 403 (GAPS97)
+- [n/a] retry: nothing has been attempted on the ciphertext yet
+Verdict: parked: every gap has an outside blocker
+
+## While waiting
+f.36 has been added to REQUEST.md's folio list (GAPS97, done). The one action that depends on nobody: search the
+Bodleian Carte MSS calendar/EMLO for an Ormond-side copy of the 1669 Duke of York-Ormond cipher, ~USD 1 (the
+counterpart of f.36; if found, it gives the key without the BL order).
