@@ -1,0 +1,21 @@
+draw 20 E 0 timedout False
+draw 21 E 1 timedout True
+draw 22 E 1 timedout True
+draw 23 E 1 timedout True
+draw 24 E 1 timedout True
+draw 25 E 0 timedout False
+draw 26 E 0 timedout False
+draw 27 E 1 timedout True
+draw 28 E 1 timedout True
+draw 29 E 0 timedout False
+draw 30 E 1 timedout True
+draw 31 E 0 timedout False
+draw 32 E 1 timedout True
+draw 33 E 1 timedout True
+draw 34 E 0 timedout False
+draw 35 E 0 timedout False
+draw 36 E 1 timedout True
+draw 37 E 1 timedout True
+draw 38 E 1 timedout True
+draw 39 E 1 timedout True
+half 20-39: E=1 in 13 of 20; timeouts 13; resolved fits 0 of 7; 315 s

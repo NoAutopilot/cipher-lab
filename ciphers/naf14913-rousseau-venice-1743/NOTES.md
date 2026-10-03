@@ -680,9 +680,29 @@ the control draws at 60 s instead of 15 s (amendment in `align/PREREG-FT4i.md`, 
 
 Not found in: ff.270-280 (f.274 pair). No print or phrase search was run this step. Rule 10: no novelty class here.
 
-## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, FT4g, FT4h, FT4i, FT4j, 3 Oct 2026)
+## FT4k-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (FT4j's Verdict, first item): f.249/f.250 control (g) only, under `align/PREREG-FT4i.md` as amended (FT4j, e27ad9dc: 60 s per
+draw; nothing else changed). `align/ctrl_g_only.py` imports `one_edit.py` unchanged and rebuilds the registered draws exactly
+(random.Random(3) consumes the 40 (s) word shuffles first, then the 40 (g) group shuffles, as `one_edit.main()` does); draws run
+single-worker under Pool(4), as registered. Foreground, two halves with a push after the first (15384644): draws 0-19 08:27-08:33 UTC
+(`align/ctrl_g_f249_60s_h1.out`, 355 s), draws 20-39 08:33-08:39 UTC (`align/ctrl_g_f249_60s_h2.out`, 315 s); pooled
+`align/ctrl_g_f249_60s_pooled.out`.
+- **Control (g), n 40:** E=1 in 28 (0.700), all 28 are timeouts counted high; **0 of 12 resolved draws fit** (half 1: 15 timeouts, 0/5;
+  half 2: 13 timeouts, 0/7). With FT4j's (s) (37 of 40 timeouts, 0 of 3 resolved fit), the f.249 gate is complete: E_real = 1, shares
+  s 0.925 and g 0.700 -> **GATE NON-INFORMATIVE by the registered rule** (> 0.05).
+- **Both pairs together at 60 s:** 0 of 79 resolved control draws fit with one edit (f213 s 0/40, g 0/24; f249 s 0/3, g 0/12), against
+  E_real = 1 on both real pairs; but 81 of 160 draws are unresolved and the registered rule counts them as fits. Descriptive only; no pass.
+- Rule 3: the 60 s amendment is the second time-only setting of this instrument; resolved draws rose (f249 g 12 resolved where FT4i
+  resolved none), so the instrument is not retired, but a third time-only increase is not the next step (FT4j): the next step is a
+  pre-registered amendment that changes how draws are solved or scored. Not written here (outside this step's brief).
+- Key and grades: no change (registered key rule). Requests: PyPI only (ortools in a fresh container). Vision calls 0. Subagents 0.
+
+Not found in: none searched this step. Rule 10: no novelty class here.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, FT4g, FT4h, FT4i, FT4j, FT4k, 3 Oct 2026)
 Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced); pooled f.206+f.216v gate PASS (FT4d, Hp 23 vs p95 18 / 0): 208 se and 781 e to C, reading C 23 M 39
-- f.249r-v <-> f.250r-v pair (111 groups) - blocker: open-codes; transcribed and scored FT4e. Both gates are non-tests: the pair has no repetition-consistent fit (proved with no pins). FT4g eye check confirmed 253, 242 and 66 at all 7 occurrences. The strict-consistency instrument is [retired] for this pair. FT4i one-edit CP-SAT: E 1, with 9 of 223 single edits fitting, all at 253/242/66/52 or a dropped group before groups 26-28; gate NON-INFORMATIVE because the controls timed out (0 resolved draws); FT4j at 60 s: (s) 0 of 3 resolved draws fit, 37 timeouts; (g) not scored (harness time limit); next: (g) at 60 s in its own box (~10 min CPU), then a pre-registered multi-worker or resolved-only amendment, script only, ~$1
+- f.249r-v <-> f.250r-v pair (111 groups) - blocker: open-codes; transcribed and scored FT4e. Both gates are non-tests: the pair has no repetition-consistent fit (proved with no pins). FT4g eye check confirmed 253, 242 and 66 at all 7 occurrences. The strict-consistency instrument is [retired] for this pair. FT4i one-edit CP-SAT: E 1, with 9 of 223 single edits fitting, all at 253/242/66/52 or a dropped group before groups 26-28; gate NON-INFORMATIVE because the controls timed out (0 resolved draws); FT4j at 60 s: (s) 0 of 3 resolved draws fit, 37 timeouts; (g) not scored (harness time limit); FT4k (g) at 60 s: 28/40 timeouts, 0 of 12 resolved draws fit, gate NON-INFORMATIVE (s 0.925, g 0.700); next: a pre-registered amendment for the unresolved draws on both pairs (multi-worker draws or a resolved-only statistic with stated power), script only, ~$1
 - f.213r-v <-> f.214r pair (84 groups) - blocker: open-codes; transcribed and scored FT4h (83/84 blind agreement). The strict gate gave H 0 with no fit even without pins (non-test). FT4i one-edit CP-SAT: E 1, with exactly 1 of 169 single edits fitting, W at group 73 (the second 368, f.213v L02); controls 0 of 42 resolved draws fit, but timeouts counted high made the gate NON-INFORMATIVE; FT4j at 60 s: (s) 0/40 with all draws resolved, (g) 16/40 timeouts and 0 of 24 resolved draws fit; still NON-INFORMATIVE by the registered rule; next: a pre-registered amendment for the (g) draws (4 workers per draw, separate box), then (on PASS) an eye check of f.213v L02 "368", script only, ~$1
 - 172 qu'ils vs qu'il - blocker: open-codes; FT4e: 172 = quils forces 208 = e on f.249 against 208's C "se" (0 joint chunks); 172's C grade rests on f.206 alone
 - f.274 slip's cipher passage - blocker: not-attempted; FT4h native view: ff.273r-274r are one complete clear Lorenzi letter of 8 Aug 1744, with 0 numeral groups, no slip, no interlinear text, and 274v blank. The finding aid's f.274 pair is not on ff.273-275 as bound; FT4j 1000 px sweep of ff.270-280 (22 pages): clear Lorenzi letters, 25 July-29 Aug 1744, no numerals, no slip; next: a 300 px sweep of ff.250-269 and 281-290 for a displaced slip, ~$1
@@ -696,8 +716,8 @@ Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
-- [x] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); f.249/f.250 scored FT4e as a non-test (pair infeasible as transcribed); FT4g eye check confirmed 253/242/66, and both gates re-run unchanged gave identical results (strict-consistency instrument [retired] for this pair); FT4i one-edit CP-SAT fitter on f.213 and f.249: both fit with one edit (f.213 only at group 73, 368), gate NON-INFORMATIVE (controls timed out); FT4j at 60 s: still NON-INFORMATIVE (f213: 0 of 64 resolved control draws fit; f249 (g) unscored); ff.270-280 swept, no f.274 pair
-Verdict: keep going: 5 internal gaps; cheapest next: f.249 control (g) at 60 s in its own box (script only, ~$1); then a pre-registered amendment for the unresolved shuffled draws on both pairs (multi-worker draws or a resolved-only statistic, ~$1); then a 300 px sweep of ff.250-269/281-290 for the f.274 slip, ~$1.
+- [x] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); f.249/f.250 scored FT4e as a non-test (pair infeasible as transcribed); FT4g eye check confirmed 253/242/66, and both gates re-run unchanged gave identical results (strict-consistency instrument [retired] for this pair); FT4i one-edit CP-SAT fitter on f.213 and f.249: both fit with one edit (f.213 only at group 73, 368), gate NON-INFORMATIVE (controls timed out); FT4j at 60 s: still NON-INFORMATIVE (f213: 0 of 64 resolved control draws fit; f249 (g) unscored); FT4k f249 (g) at 60 s: 0 of 12 resolved fit, gate NON-INFORMATIVE (0 of 79 resolved control draws fit across both pairs); ff.270-280 swept, no f.274 pair
+Verdict: keep going: 5 internal gaps; cheapest next: a pre-registered amendment for the unresolved shuffled draws on both pairs (multi-worker draws or a resolved-only statistic, ~$1); then a 300 px sweep of ff.250-269/281-290 for the f.274 slip, ~$1.
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
@@ -731,4 +751,7 @@ Checks (FT4i, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice
 `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
 
 Checks (FT4j, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 0 step(s) untried", exit 0;
+`python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
+
+Checks (FT4k, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 0 step(s) untried", exit 0;
 `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
