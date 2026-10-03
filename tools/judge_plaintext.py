@@ -9,6 +9,7 @@ Usage:
   python3 tools/judge_plaintext.py specs/koehler-1944.json --text "DER ANGRIFF ..."        one candidate
   python3 tools/judge_plaintext.py specs/koehler-1944.json --file candidate.txt [--json]  from a file
   python3 tools/judge_plaintext.py --selftest                                              offline test
+  python3 tools/judge_plaintext.py --holdout F1 F2 ... --N 1066 [--alphabet ru-s3-soft]      rule 3 fold check
 
 Checks, all read from the spec's "judge" block (missing keys are skipped):
   length        exact letter count ("letters": N) or a range ("letters_min"/"letters_max"), letters only (a-z after folding)
@@ -408,14 +409,61 @@ def selftest():
     print("selftest ok: real text PASS, shuffled FAIL (language), missing crib FAIL, line form check ok")
 
 
+def holdout(files, N, samples=200, alphabet=None, seed=1):
+    """Leave-one-file-out real-prose false-negative check (CLAUDE.md rule 3 fold-count paragraph; A2P4-KAL5, 3 Oct 2026).
+
+    The shared form of the 16 tools/data/*/holdout_check.py copies, with the judge-block alphabet: for each file, build
+    the model from the OTHER files, take that model's own real_p05 as judge() does, and score `samples` N-letter windows
+    of the held-out file; a window at or below real_p05 is a false negative. Returns (per-fold rows, blended rate,
+    held-out score list). A fold shorter than N + 1 letters is skipped and reported."""
+    global _ALPHA
+    prev = _ALPHA
+    _ALPHA = _resolve_alphabet(alphabet)
+    try:
+        texts = {f: read_corpus(f) for f in files}
+        rows, held_scores, tot_fn, tot = [], [], 0, 0
+        for f in files:
+            model = NgramModel([texts[g] for g in files if g != f])
+            real, _null, _cov = model.controls(N, samples=samples, seed=seed)
+            r05 = pct(real, 0.05)
+            held = fold(texts[f])
+            if len(held) <= N:
+                rows.append({"file": Path(f).name, "letters": len(held), "skipped": True}); continue
+            rnd = random.Random(seed + 1); sc = []
+            for _ in range(samples):
+                j = rnd.randrange(0, len(held) - N)
+                sc.append(model.score(held[j:j + N]))
+            fn = sum(1 for x in sc if x <= r05)
+            tot_fn += fn; tot += len(sc); held_scores += sc
+            rows.append({"file": Path(f).name, "letters": len(held), "real_p05": round(r05, 3), "fn": fn, "n": len(sc),
+                         "fn_pct": round(100 * fn / len(sc), 1), "held_p05": round(pct(sorted(sc), 0.05), 3),
+                         "held_min": round(min(sc), 3)})
+        return rows, (100 * tot_fn / tot if tot else float("nan")), sorted(held_scores)
+    finally:
+        _ALPHA = prev
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("spec", nargs="?")
     ap.add_argument("--text"); ap.add_argument("--file"); ap.add_argument("--json", action="store_true")
     ap.add_argument("--selftest", action="store_true")
+    ap.add_argument("--holdout", nargs="+", metavar="FILE", help="leave-one-file-out false-negative check over these "
+                    "corpus files (no spec needed): per-fold rate, blended rate, spread, held-out p05/p01/min")
+    ap.add_argument("--N", type=int, default=1000, help="--holdout window length in folded letters")
+    ap.add_argument("--samples", type=int, default=200, help="--holdout windows per fold and real_p05 control samples")
+    ap.add_argument("--alphabet", help="--holdout plaintext alphabet (judge-block 'alphabet' name or literal)")
     a = ap.parse_args()
     if a.selftest:
         selftest(); return
+    if a.holdout:
+        rows, blend, hs = holdout(a.holdout, a.N, a.samples, a.alphabet)
+        for r in rows:
+            print("\t".join(f"{k}={v}" for k, v in r.items()), flush=True)
+        fp = [r["fn_pct"] for r in rows if not r.get("skipped")]
+        print(f"N={a.N} samples={a.samples} folds={len(fp)} blended_fn={blend:.1f}% spread={min(fp):.1f}-{max(fp):.1f}% "
+              f"held_out_p05={pct(hs, 0.05):.3f} p01={pct(hs, 0.01):.3f} min={hs[0]:.3f}")
+        return
     if not a.spec or not (a.text or a.file):
         ap.error("spec and --text or --file are required")
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
