@@ -1,0 +1,427 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f7r_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    210,
+    2400,
+    549
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    210,
+    3500,
+    549
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    489,
+    2400,
+    848
+   ],
+   "lines_in_crop": 3,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    489,
+    3500,
+    848
+   ],
+   "lines_in_crop": 3,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    788,
+    2400,
+    1145
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    788,
+    3500,
+    1145
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    1085,
+    2400,
+    1458
+   ],
+   "lines_in_crop": 3,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    1085,
+    3500,
+    1458
+   ],
+   "lines_in_crop": 3,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L05_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    1398,
+    2400,
+    1770
+   ],
+   "lines_in_crop": 3,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L05_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    1398,
+    3500,
+    1770
+   ],
+   "lines_in_crop": 3,
+   "band": 5,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L06_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    1710,
+    2400,
+    2088
+   ],
+   "lines_in_crop": 3,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L06_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    1710,
+    3500,
+    2088
+   ],
+   "lines_in_crop": 3,
+   "band": 6,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L07_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    2028,
+    2400,
+    2404
+   ],
+   "lines_in_crop": 3,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L07_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    2028,
+    3500,
+    2404
+   ],
+   "lines_in_crop": 3,
+   "band": 7,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L08_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    2344,
+    2400,
+    2720
+   ],
+   "lines_in_crop": 3,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L08_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    2344,
+    3500,
+    2720
+   ],
+   "lines_in_crop": 3,
+   "band": 8,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L09_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    2660,
+    2400,
+    3010
+   ],
+   "lines_in_crop": 3,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L09_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    2660,
+    3500,
+    3010
+   ],
+   "lines_in_crop": 3,
+   "band": 9,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L10_s1.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    0,
+    2950,
+    2400,
+    3318
+   ],
+   "lines_in_crop": 3,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f7r_L10_s2.jpg",
+   "source_url": "",
+   "source_file": "f7r_region.jpg",
+   "box": [
+    1100,
+    2950,
+    3500,
+    3318
+   ],
+   "lines_in_crop": 3,
+   "band": 10,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 101,
+    "distance": 70,
+    "prominence": 212.5
+   },
+   "date": "03 Oct 2026"
+  }
+ ],
+ "source": {
+  "f7r_region.jpg": "not committed (size); regenerate: https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058289m/f15/4300,550,3500,4600/full/0/native.jpg then tools/iiif_lines.py --image f7r_region.jpg --out . --prefix f7r --lines-per-crop 3 --top-margin 30 --bottom-margin 30 (bands 11-14 are clear text, deleted)"
+ }
+}
