@@ -1,0 +1,8 @@
+# BnF NAF 14913 f.250r-v, slip in Rousseau's hand pasted after f.249v (Gallica canvases 513, 514), period decipherment of ff.249r-v.
+# FT4e (account-4) 3 Oct 2026: pass A (worker, 1000 px views) + pass B (one blind Opus subagent on images/f250r_L01-L12, f250v_L01-02); agree.
+# Diplomatic: "Le G.nal Marulli avoit écrit à sa Cour que quelques mouvemens / qu'il se fût donnés pour engager la / la Rep.e de Venise
+# à secourir / la Reine de H. de la manière / dont il avoit été chargé, il desespéroit néantmoins d'y pouvoir / reussir n'ayant pu obtenir
+# que / des espérances que la Rép.e continuera de fournir sécrétement à cette P.ce les secours qui se / pourront dérober le plus à la /
+# connoissance de la Maison de Bourbon ./."  For alignment (fixed before scoring): G.nal -> general, Rep.e/Rép.e -> republique,
+# H. -> hongrie, P.ce -> princesse; the line-break dittography "la / la" kept once.
+le general marulli avoit ecrit a sa cour que quelques mouvemens quil se fut donnes pour engager la republique de venise a secourir la reine de hongrie de la maniere dont il avoit ete charge il desesperoit neantmoins dy pouvoir reussir nayant pu obtenir que des esperances que la republique continuera de fournir secretement a cette princesse les secours qui se pourront derober le plus a la connoissance de la maison de bourbon

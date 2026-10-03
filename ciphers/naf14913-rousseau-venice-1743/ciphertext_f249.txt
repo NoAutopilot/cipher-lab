@@ -1,0 +1,15 @@
+# BnF NAF 14913 ff.249r-249v (Gallica btv1b525174513 canvases 511, 512), Lorenzi to Montaigu, Florence 30 May 1744; numeral passage
+# after the clear words "...vous citer mande par sa derniere que" (f.249r foot) running onto the top of f.249v (before "Il arriva ici le soir du 26").
+# FT4e (account-4) 3 Oct 2026: pass A (worker, iiif_lines debug overlays) + pass B (one blind Opus subagent on images/f249r_L01-L05,
+# f249v_L01-L04 crops). 111 groups; A/B agree on 108; disputes: f249r L03 253|255 (repeats with L01's 253 -> reconciled on
+# images/recon_strip3.jpg: same flat-top final 3 as L01, 253), L05 33|35 and f249v L01 833|835 (neither a C code nor a repeat, left a|b).
+# Underlines in the MS under 311 (L02, L04), 86 (double), 442, 599 (pass B note). a|b = unsettled, first is used.
+Lr1 755 527 253
+Lr2 447 188 767 311 14 23 10 287 276 63 325 294 95 348
+Lr3 217 121 172 208 59 14 824 121 242 253 66 52 605 22
+Lr4 739 10 208 276 359 31 22 628 22 52 653 622 488 311
+Lr5 14 369 781 828 66 268 488 746 79 594 290 33|35 484
+Lv1 404 180 382 833|835 66 24 813 753 785 359 63 746 79 679
+Lv2 63 52 605 347 722 476 689 22 632 807 589 179 825
+Lv3 843 10 65 86 306 208 276 121 468 208 242 219 70 405
+Lv4 114 755 279 10 52 112 121 673 22 119 442 599
