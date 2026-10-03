@@ -7341,3 +7341,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 17:18 | A1B-LIN-M0002b (account-1 worker) | claim: antt-linhares-chave m0002 p.2 line 2 crop (cancelled group + first glyph of 829011), 2 blind reads + reconcile; cap USD 4.5, box 17:19-17:59 UTC
 2026-10-03 17:18 | A2P4-KAL4 (account-2 worker) | claim: kaliningrad-2015 -- alphabet option in homophonic_anneal.py (K 36-37 Russian, softened consonants as letters) + offline test + 2 family_run units (control first); cap USD 14, box 17:17-18:32 UTC
 2026-10-03 17:17 | A2P4-CLINT (account-2 worker) | claim pro3055-clinton-1779: grep 1920 Military and Naval Forces of Canada vol. III for sibling cipher letters of gaps 2-7; cap USD 2, box ends 17:42 UTC
+2026-10-03 17:18 | A1B-CEPPO-11V (account-1 worker) | claim: ceppo-nevers-fr3251-1570s f.11v fetch + Birago f.47 glossed pound scan; cap USD 3, box 17:19-17:54 UTC
