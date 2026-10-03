@@ -203,5 +203,18 @@ finally:
     kx._EXTRA_HEADER_CACHE.clear()
     _shutil.rmtree(_tmp_root, ignore_errors=True)
 
+# BIRAGO-NUM-TOOLS, 3 Oct 2026: CT_SKIP_FILES drops an as-transcribed file the tiers cannot tokenise (Tomokiyo's
+# f.119, 8 whitespace 'signs') and must NOT drop its sibling replacement or any other ciphertext in the folder.
+_kept_ct, _dropped_ct = kx.find_ciphertext_files()
+_kept_rel = {str(Path(p).relative_to(kx.ROOT)) for p in _kept_ct}
+_dropped_rel = {str(Path(p[0]).relative_to(kx.ROOT)) for p in _dropped_ct}
+for _skip, _repl in kx.CT_SKIP_FILES.items():
+    if (kx.ROOT / _skip).exists():
+        check(f'CT_SKIP_FILES: {_skip} is dropped from the sweep', _skip in _dropped_rel and _skip not in _kept_rel)
+    if (kx.ROOT / _repl).exists():
+        check(f'CT_SKIP_FILES: its replacement {_repl} is kept', _repl in _kept_rel)
+check('CT_SKIP_FILES: an ordinary ciphertext elsewhere is still kept',
+      any(r.startswith('ciphers/fr2980-gramont/ciphertext') for r in _kept_rel))
+
 print('key_crossmatch:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

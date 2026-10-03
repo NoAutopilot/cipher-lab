@@ -1,0 +1,7 @@
+gate stat_min 3.292
+ncell=40 seed=1 phase_acc=0.969 | true-phase n=255 cov=1.00 stat=18.51 hit | em-phase n=256 cov=1.00 stat=16.72 hit
+ncell=40 seed=2 phase_acc=0.902 | true-phase n=255 cov=1.00 stat=9.63 hit | em-phase n=259 cov=0.97 stat=9.07 hit
+ncell=40 seed=3 phase_acc=0.922 | true-phase n=255 cov=1.00 stat=16.05 hit | em-phase n=256 cov=0.98 stat=14.92 hit
+ncell=55 seed=1 phase_acc=0.675 | true-phase n=255 cov=1.00 stat=11.10 hit | em-phase n=259 cov=0.96 stat=7.23 hit
+ncell=55 seed=2 phase_acc=0.898 | true-phase n=255 cov=1.00 stat=15.27 hit | em-phase n=258 cov=0.99 stat=9.89 hit
+ncell=55 seed=3 phase_acc=0.792 | true-phase n=255 cov=1.00 stat=15.23 hit | em-phase n=257 cov=0.95 stat=9.45 hit

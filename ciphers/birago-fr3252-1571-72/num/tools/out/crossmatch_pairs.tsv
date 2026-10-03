@@ -1,0 +1,133 @@
+ciphertext_path	ct_status	key_path	key_office	key_years	key_lang	design	coverage	n_tokens	score	z_shuffled	z_valuefreq	stat	pass_real	pass_null	dictword_share	rank_of_this_key_for_ct	known_pair	verdict
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/axmerge3/key_full_v2.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.876	274	-1.9914	2.54	-0.67	2.54	False	False	0.125		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_full.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.876	274	-1.9914	2.48	-0.54	2.48	False	False	0.125		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/key_f23.tsv	?	1644	fr	nomenclator	0.745	274	-1.7417	-0.43	2.16	2.16	False	True	0.651		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/jan-van-nassau-1572-75/key_5549.tsv	?	1572-1575	fr	nomenclator	0.876	274	-1.9914	2.09	-0.26	2.09	False	False	0.125		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.876	274	-1.9914	2.09	-0.26	2.09	False	False	0.125		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/siblings/key_refit.tsv	?	1644	fr	nomenclator	0.781	274	-1.7942	0.25	2.04	2.04	False	True	0.641		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_wc30.tsv	?	1644	fr	nomenclator	0.781	274	-1.7942	0.25	2.04	2.04	False	True	0.641		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_w.tsv	?	1644	fr	nomenclator	0.781	274	-1.7645	-0.37	1.66	1.66	False	True	0.681		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_7206.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.701	274	-2.0665	1.63	-0.86	1.63	False	False	0.198		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_joint4.tsv	?	1644	fr	nomenclator	0.807	274	-1.7355	-0.04	1.55	1.55	False	True	0.673		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_5801.tsv	Nassau -> Willem van Oranje	1573-1574	fr	homophonic	0.847	274	-1.8432	0.24	1.55	1.55	False	False	0.651		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/key_f23.tsv	?	1644	fr	nomenclator	0.646	240	-1.647	-0.65	1.51	1.51	False	True	0.708		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/siblings/key_refit.tsv	?	1644	fr	nomenclator	0.671	240	-1.6512	0.58	1.47	1.47	False	True	0.689		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_wc30.tsv	?	1644	fr	nomenclator	0.671	240	-1.6512	0.58	1.47	1.47	False	True	0.689		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_4614.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.708	274	-2.0796	1.42	-0.19	1.42	False	False	0.247		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/hessen-daenemark-1672/key.tsv	?	1672	nl	nomenclator	0.876	274	-1.708	-0.83	1.38	1.38	False	False	0.085		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/jan-van-nassau-1572-75/key_1572.tsv	?	1572-1575	fr	nomenclator	0.742	240	-1.4651	0.24	1.33	1.33	False	True	0.697		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/hessen-daenemark-1672/key.tsv	?	1672	nl	nomenclator	0.833	240	-1.706	-0.5	1.26	1.26	False	False	0.05		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_w.tsv	?	1644	fr	nomenclator	0.667	240	-1.6078	0.49	1.0	1.0	False	True	0.711		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/interlinear/key_f23_phrase.tsv	?	1644	fr	nomenclator	0.646	240	-1.5326	0.98	-0.82	0.98	False	True	0.728		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert26-lathuillerie-1644/siblings/key_refit_joint4.tsv	?	1644	fr	nomenclator	0.742	240	-1.54	0.65	0.87	0.87	False	True	0.75		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr3416-nevers-fils-1589/keys/key_no25.tsv	?	1589	fr	homophonic	0.646	274	-2.2148	-0.47	0.72	0.72	False	False	0.585		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr3993-gonzague-nevers-1595/keys/key_no70.tsv	?	1595	fr	nomenclator	0.596	240	-1.5848	0.72	-0.42	0.72	False	True	0.634		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert26-lathuillerie-1644/interlinear/key_f23_phrase.tsv	?	1644	fr	nomenclator	0.745	274	-1.5377	0.71	-1.06	0.71	False	True	0.768		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/jan-van-nassau-1572-75/key_1572.tsv	?	1572-1575	fr	nomenclator	0.821	274	-1.4197	0.48	0.5	0.5	False	True	0.708		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr3993-gonzague-nevers-1595/keys/key_no70.tsv	?	1595	fr	nomenclator	0.577	274	-1.6267	0.29	-0.45	0.29	False	True	0.627		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_5801.tsv	Nassau -> Willem van Oranje	1573-1574	fr	homophonic	0.808	240	-1.8315	0.07	0.2	0.2	False	True	0.639		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr3416-nevers-fils-1589/keys/key_no25.tsv	?	1589	fr	homophonic	0.658	240	-2.2585	-0.66	0.16	0.16	False	False	0.543		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/axmerge3/key_full_v2.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.833	240	-2.1912	0.08	-1.27	0.08	False	False	0.12		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr3625-lauriere-1593/key57/key57.tsv	Laurière -> Nevers	1593	fr	unknown	0.825	274	-9.9	0.0		0.0	False	False	0.0		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr3625-lauriere-1593/key57/key57.tsv	Laurière -> Nevers	1593	fr	unknown	0.779	240	-9.9	0.0		0.0	False	False	0.0		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-montholon-1589/witness_f24_full/key_real.tsv	?	1589	fr	nomenclator	0.712	274	-9.9	0.0		0.0	False	False	0.0		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-montholon-1589/witness_f24_full/key_real.tsv	?	1589	fr	nomenclator	0.642	240	-9.9	0.0		0.0	False	False	0.0		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/malsburg-hessen-1636/keys/key_519.tsv	?	1636	de	unknown	0.832	274	-9.9	0.0		0.0	False	False	0.0		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/malsburg-hessen-1636/keys/key_519.tsv	?	1636	de	unknown	0.779	240	-9.9	0.0		0.0	False	False	0.0		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_fauconberg.tsv	?	1742	en16	nomenclator	0.526	274	-9.9	0.0		0.0	False	False	0.0		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_montagu_extended.tsv	?	1742	en16	nomenclator	0.726	274	-9.9	0.0		0.0	False	False	0.0		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_montagu_extended.tsv	?	1742	en16	nomenclator	0.708	240	-9.9	0.0		0.0	False	False	0.0		no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_steele.tsv	?	1742	en16	nomenclator	0.529	274	-9.9	0.0		0.0	False	False	0.0		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_full.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.833	240	-2.1912	-0.18	-0.54	-0.18	False	False	0.12		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/jan-van-nassau-1572-75/key_5549.tsv	?	1572-1575	fr	nomenclator	0.833	240	-2.1912	-0.86	-0.32	-0.32	False	False	0.12		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.833	240	-2.1912	-0.86	-0.32	-0.32	False	False	0.12		no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_4614.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.65	240	-2.3787	-1.59	-0.81	-0.81	False	False	0.276		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_7206.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.679	240	-2.2835	-0.87	-1.17	-0.87	False	False	0.233		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_7205.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.828	274	-2.0724	-0.95	-1.45	-0.95	False	False	0.404		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_5799.tsv	Nassau -> Willem van Oranje	1573-1574	fr	homophonic	0.555	274	-1.8537	-1.26	-2.55	-1.26	False	False	0.647		no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_7205.tsv	Nassau -> Willem van Oranje	1573-1574	fr	nomenclator	0.775	240	-2.1462	-1.41	-1.69	-1.41	False	False	0.48		no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/antt-fcc-costacabral-1865/key.tsv	?	1865	pt	nomenclator	0.04	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/antt-fcc-costacabral-1865/key.tsv	?	1865	pt	nomenclator	0.05	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/antt-linhares-chave/key.tsv	?	?	pt	nomenclator	0.0	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/antt-linhares-chave/key.tsv	?	?	pt	nomenclator	0.0	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/antt-linhares-chave/key_example.tsv	?	?	pt	unknown	0.0	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/antt-linhares-chave/key_example.tsv	?	?	pt	unknown	0.017	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/berthier-napoleon-1812/shd1812/key_shd1812.tsv	?	2026	fr	unknown	0.109	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/berthier-napoleon-1812/shd1812/key_shd1812.tsv	?	2026	fr	unknown	0.087	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/bowes-walsingham-1583/key.tsv	Robert Bowes -> Walsingham	1580-1583	?	monoalphabetic	0.339	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/bowes-walsingham-1583/key.tsv	Robert Bowes -> Walsingham	1580-1583	?	monoalphabetic	0.263	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/castelcicala-1816/key.tsv	?	1816	it	nomenclator	0.135	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/castelcicala-1816/key.tsv	?	1816	it	nomenclator	0.113	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/clair1108-duvergier/key_1696.tsv	?	?	fr	nomenclator	0.391	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/clair1108-duvergier/key_1696.tsv	?	?	fr	nomenclator	0.342	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/clairambault1225-paget-1714/key.tsv	?	2026	fr	nomenclator	0.343	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/clairambault1225-paget-1714/key.tsv	?	2026	fr	nomenclator	0.329	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/colbert155-beziers-1670/keys/key_colbert_croissy_1668.tsv	?	1670	?	nomenclator	0.77	274									no	no_corpus
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/colbert155-beziers-1670/keys/key_colbert_croissy_1668.tsv	?	1670	?	nomenclator	0.713	240									no	no_corpus
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/espagnol142-mercy-1648/key.tsv	?	2026	fr	homophonic	0.354	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/espagnol142-mercy-1648/key.tsv	?	2026	fr	homophonic	0.283	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv	?	1589	fr	homophonic	0.427	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv	?	1589	fr	homophonic	0.379	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-montholon-1589/witness/key_rows_calibration.tsv	?	1589	fr	homophonic	0.427	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-montholon-1589/witness/key_rows_calibration.tsv	?	1589	fr	homophonic	0.379	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-montholon-1589/witness/key_rows_calibration_v2.tsv	?	1589	fr	homophonic	0.427	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-montholon-1589/witness/key_rows_calibration_v2.tsv	?	1589	fr	homophonic	0.379	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-montholon-1589/witness_f24/key_real.tsv	?	1589	fr	nomenclator	0.434	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-montholon-1589/witness_f24/key_real.tsv	?	1589	fr	nomenclator	0.367	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr4715-vieuville-pool/key_wordcodes_f51r.tsv	?	1590	fr	code	0.015	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr4715-vieuville-pool/key_wordcodes_f51r.tsv	?	1590	fr	code	0.029	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274_names.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	fr	unknown	0.365	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274_names.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	fr	unknown	0.333	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/hellen-frederick-1752/sibling_michell/key_sibling.tsv	?	2026	?	code	0.175	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/hellen-frederick-1752/sibling_michell/key_sibling.tsv	?	2026	?	code	0.179	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/huntington-blathwayt-madrid-1728/key.tsv	?	1725-1729	fr	code	0.376	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/huntington-blathwayt-madrid-1728/key.tsv	?	1725-1729	fr	code	0.258	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/huntington-luzerne-destouches-1781/key.tsv	La Luzerne -> Destouches	1781	fr	nomenclator	0.208	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/huntington-luzerne-destouches-1781/key.tsv	La Luzerne -> Destouches	1781	fr	nomenclator	0.233	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/huntington-luzerne-destouches-1781/key_tomokiyo.tsv	La Luzerne -> Destouches	1781	fr	unknown	0.051	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/huntington-luzerne-destouches-1781/key_tomokiyo.tsv	La Luzerne -> Destouches	1781	fr	unknown	0.087	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/intercepted-royalist-1646/key.tsv	?	1646	?	code	0.099	274									no	no_corpus
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/intercepted-royalist-1646/key.tsv	?	1646	?	code	0.067	240									no	no_corpus
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_5799.tsv	Nassau -> Willem van Oranje	1573-1574	fr	homophonic	0.438	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/lodewijk-van-nassau-1573-74/key_5801_adj.tsv	Nassau -> Willem van Oranje	1573-1574	fr	code	0.0	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/lodewijk-van-nassau-1573-74/key_5801_adj.tsv	Nassau -> Willem van Oranje	1573-1574	fr	code	0.0	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/maurice-rupert-1645/key118.tsv	Prince Maurice -> Prince Rupert	1645	?	nomenclator	0.792	274									no	no_corpus
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/maurice-rupert-1645/key118.tsv	Prince Maurice -> Prince Rupert	1645	?	nomenclator	0.713	240									no	no_corpus
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/na-janssens-java-1811/key.tsv	?	1811	fr	nomenclator	0.208	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/na-janssens-java-1811/key.tsv	?	1811	fr	nomenclator	0.25	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/naf14913-rousseau-venice-1743/key.tsv	?	1743	fr	nomenclator	0.08	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/naf14913-rousseau-venice-1743/key.tsv	?	1743	fr	nomenclator	0.075	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/orange-nassau-1572/key_nepveu.tsv	?	1572	fr	monoalphabetic	0.277	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/orange-nassau-1572/key_nepveu.tsv	?	1572	fr	monoalphabetic	0.296	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/oxenstierna-gustav-adolf-1632/key.tsv	Oxenstierna, Gustav II Adolf -> Axel Oxenstierna	1632	fr	homophonic	0.405	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/oxenstierna-gustav-adolf-1632/key.tsv	Oxenstierna, Gustav II Adolf -> Axel Oxenstierna	1632	fr	homophonic	0.433	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/rah-morillo-1817/key_5186.tsv	?	1817-1820	?	monoalphabetic	0.124	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/rah-morillo-1817/key_5186.tsv	?	1817-1820	?	monoalphabetic	0.129	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/szembek-bk1560/key.tsv	?	?	it	monoalphabetic	0.423	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/szembek-bk1560/key.tsv	?	?	it	monoalphabetic	0.371	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/szembek-bk1560/key_direct.tsv	?	?	it	unknown	0.339	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/szembek-bk1560/key_direct.tsv	?	?	it	unknown	0.296	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_blake.tsv	?	1742	en16	nomenclator	0.113	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_blake.tsv	?	1742	en16	nomenclator	0.113	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_blake_extended.tsv	?	1742	en16	nomenclator	0.409	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_blake_extended.tsv	?	1742	en16	nomenclator	0.292	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_burton.tsv	?	1742	en16	nomenclator	0.04	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_burton.tsv	?	1742	en16	nomenclator	0.008	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_butler.tsv	?	1742	en16	nomenclator	0.281	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_butler.tsv	?	1742	en16	nomenclator	0.267	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_downing.tsv	?	1742	en16	nomenclator	0.153	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_downing.tsv	?	1742	en16	nomenclator	0.113	240									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_fauconberg.tsv	?	1742	en16	nomenclator	0.425	240									no	unusable-key
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_johnson1.tsv	?	1742	en16	nomenclator	0.131	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_johnson1.tsv	?	1742	en16	nomenclator	0.113	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_johnson2.tsv	?	1742	en16	nomenclator	0.109	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_johnson2.tsv	?	1742	en16	nomenclator	0.075	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_lockhart.tsv	?	1742	en16	nomenclator	0.066	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_lockhart.tsv	?	1742	en16	nomenclator	0.05	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/key_montagu.tsv	?	1742	en16	nomenclator	0.04	274									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_montagu.tsv	?	1742	en16	nomenclator	0.062	240									no	unusable-key
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/key_steele.tsv	?	1742	en16	nomenclator	0.454	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	ciphers/thurloe-printed/pool_1654/key_stamford.tsv	?	1742	en16	nomenclator	0.453	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	ciphers/thurloe-printed/pool_1654/key_stamford.tsv	?	1742	en16	nomenclator	0.342	240									no	none
+ciphers/birago-fr3252-1571-72/num/ciphertext_f100_pairs.txt	partial	tools/data/uscodes-1800/key_legation_madrid_1807.tsv	US legation at Madrid (George W. Erving, secretary/charge d'affaires) -> James Madison, Secretary of State	1806-1807	en	code	0.263	274									no	none
+ciphers/birago-nevers-1571/ciphertext_f119_pairs.txt	open	tools/data/uscodes-1800/key_legation_madrid_1807.tsv	US legation at Madrid (George W. Erving, secretary/charge d'affaires) -> James Madison, Secretary of State	1806-1807	en	code	0.254	240									no	none

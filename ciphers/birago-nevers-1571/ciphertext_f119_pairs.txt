@@ -1,0 +1,11 @@
+# f.119 (fr.3251, 13 Nov 1571), Bourdeau ct2 transcription (cyphersolver, MIT / CC BY 4.0): two-digit code tokens, derived by num/tools/make_ct_pairs.py (BIRAGO-NUM-TOOLS, 3 Oct 2026)
+# phase from num/pooled_tokens.txt (unsettled, ~10-30% phase error); strays dropped; marked groups in place; wavy sign / clear text = line break. 240 tokens. Not a transcription: regenerate, do not edit.
+76 25 91 50 89 40 32 48 93 24 89 93 15 48 59 00 13 2 0 58 12 51 24 19 93 80 01 36 51 8 29 94 27 36 15 93 92 85 93 94 4 15 51 24 01 53 51 35 42 40 04 00 08 00 59 54 80 41 90 90 05 44 93 40 15 19 46 15 05 48 05 92 34
+29 54 81 48 4 15 91 93 2 15 39 59 48 94 39
+43
+39 15 30 39 08 12 94 51 24 89 82 95 44 91 53 34 15 09 01 44 03 15 39 85 80 34 08 51 98 85 19 82 43 93 59 09 8 94 54 08 59 40 10 29 48 12 19 08 05 12 45 12 80 12 54 41 55 91 93 04 19 24 05 48 10
+40 00 80 51 24 01 50 20 10 44 04 01 00 54 49 01 19 01 50 54 4 24 03 90 94 40 12 15 05 44 81 48 22 43 15 48 99 27 21 90 85 93 80
+15 08 93 49 89 09 01
+39 54 48 59 7 40 8 2 19 08 54 49 74 01 93
+05 93 45 12 84 2 19 08 59 80 12 15 08 52 85 93 82 15 05 44
+76
