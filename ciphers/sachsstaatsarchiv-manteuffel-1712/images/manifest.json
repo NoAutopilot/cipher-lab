@@ -1,0 +1,89 @@
+{
+ "shelfmark": "SächsStA-D 10026 Geheimes Kabinett, Loc. 00694/10",
+ "images": [
+  {
+   "file": "0001.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0001.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4339,
+   "height": 3865,
+   "bytes": 1480853,
+   "sha256": "942b0ffe01e734368f21fb04d7a5c515ea52ce6576aa171fed1a11ed94675add",
+   "content": "microfilm frame 0002: Beiblatt (archive sheet), 'umfasst die Blaetter 1-5'",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0002.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0002.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4333,
+   "height": 3871,
+   "bytes": 1517087,
+   "sha256": "ca0df1bb42cafbf589e6fe13272ae8e3e2582f72b64f79b909a583948019a783",
+   "content": "frame 0003: binding (Einband), title 'Chiffern in Schreiben Manteuffels an Flemming 1712 f.', Locat 694/10",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0003.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0003.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4339,
+   "height": 3866,
+   "bytes": 1534195,
+   "sha256": "a4421f6f3dabcfe02b440e07b34999e8b4a3f13ff04d55dec5c8a12e3e41d3ff",
+   "content": "frame 0004: f.1 title 'Chiffern-Aufloesungen zu Berichten Manteuffels an Flemming aus den Jahren 1712, 1713 (angefertigt von Dr. Krauske 1893)'",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0004.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0004.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4339,
+   "height": 3865,
+   "bytes": 1523996,
+   "sha256": "795002f1cc9e9e970c6593b3179b192cdbcc1a88a7f2f5622f30ec2161b9aa1e",
+   "content": "frame 0005: f.2 heading citing Hauptstaatsarchiv Dresden vol. CXLV und CXLVI, Loc. 694/8-9; code table 1-35",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0005.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0005.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4345,
+   "height": 3860,
+   "bytes": 1528088,
+   "sha256": "bc321db5bc7525d6b267dcca2a483190e35c73f3024bd941ec187851ad801610",
+   "content": "frame 0006: f.3 code table 36-84",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0006.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0006.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4339,
+   "height": 3865,
+   "bytes": 1494780,
+   "sha256": "61a7f3f2a662aa018eec54089b430db7e35aa8b893f82225c99cfa6789e16ab4",
+   "content": "frame 0007: f.4 code table 85-120 and 150-217 (names, titles)",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  },
+  {
+   "file": "0007.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/96698908-5fa7-4fb6-ae66-bf4617f6e401/fullsize/0007.jpg",
+   "record": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=96698908-5fa7-4fb6-ae66-bf4617f6e401",
+   "width": 4339,
+   "height": 3866,
+   "bytes": 1532773,
+   "sha256": "529773813552884934fa73e3437307123acad35ce9246953e84984a9cd0fd257",
+   "content": "frame 0008: f.5 code table 224-401 and composite numbers (names, places, words)",
+   "fetched": "2026-10-03",
+   "by": "A2-SAX"
+  }
+ ]
+}
