@@ -164,3 +164,5 @@ TX-BENCH	other	.claude/briefs/runs/2026-10-03-acct3-tx-bench.md	Opus 5.5	10	70	q
 TX-ATLAS-B72	other	.claude/briefs/runs/2026-10-03-acct3-tx-atlas-b72.md	Opus 5.5	15	90	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
 TX-DECODE	other	.claude/briefs/runs/2026-10-03-acct3-tx-decode.md	Opus 5.5	10	75	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
 TX-SORTER	other	.claude/briefs/runs/2026-10-03-acct3-tx-sorter.md	Opus 5.5	8	60	queued	2026-10-03 03:51	transcription standard build (TRANSCRIPTION.md); any account may run it
+TOOL-SHELF	other	.claude/briefs/runs/2026-10-03-acct3-tool-shelf.md	Opus 5.5	6	50	queued	2026-10-03 03:57	make built tools findable at briefing (SYSTEM.md shelf + tools/tool_shelf.py + brief rule)
+BIRAGO-NUM-TOOLS	other	.claude/briefs/runs/2026-10-03-acct3-birago-num-tools.md	Opus 5.5	8	60	queued	2026-10-03 03:57	key_crossmatch + seg_homophonic + cipher_page_detector (fr.3251/3252/3995) on the Birago numerical system
