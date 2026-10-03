@@ -1,0 +1,362 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f32r_L01.jpg",
+   "source_url": "",
+   "source_file": "10075159.jpg",
+   "box": [
+    0,
+    3077,
+    2460,
+    3163
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 87,
+    "distance": 60,
+    "prominence": 369.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32r_L02.jpg",
+   "source_url": "",
+   "source_file": "10075159.jpg",
+   "box": [
+    0,
+    3163,
+    2460,
+    3249
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 87,
+    "distance": 60,
+    "prominence": 369.0
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L01.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    34,
+    2453,
+    170
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L02.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    170,
+    2453,
+    305
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L03.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    305,
+    2453,
+    440
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L04.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    440,
+    2453,
+    574
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L05.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    574,
+    2453,
+    689
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L06.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    689,
+    2453,
+    811
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L07.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    811,
+    2453,
+    959
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L08.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    959,
+    2453,
+    1128
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L09.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    1128,
+    2453,
+    1276
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L10.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    1276,
+    2453,
+    1407
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L11.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    1407,
+    2453,
+    1562
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f32v_L12.jpg",
+   "source_url": "",
+   "source_file": "10075160.jpg",
+   "box": [
+    0,
+    1562,
+    2453,
+    1690
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 133,
+    "distance": 93,
+    "prominence": 133.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f33vslip_L01.jpg",
+   "source_url": "",
+   "source_file": "10075162.jpg",
+   "box": [
+    0,
+    1801,
+    2453,
+    2286
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 165,
+    "distance": 115,
+    "prominence": 78.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f33vslip_L02.jpg",
+   "source_url": "",
+   "source_file": "10075162.jpg",
+   "box": [
+    0,
+    2286,
+    2453,
+    2745
+   ],
+   "lines_in_crop": 3,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 165,
+    "distance": 115,
+    "prominence": 78.5
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "f33vslip_L03.jpg",
+   "source_url": "",
+   "source_file": "10075162.jpg",
+   "box": [
+    0,
+    2745,
+    2453,
+    3320
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 165,
+    "distance": 115,
+    "prominence": 78.5
+   },
+   "date": "03 Oct 2026"
+  }
+ ],
+ "note": "GAPS203, 3 Oct 2026: line crops cut from the native RAH images (sha1 in images/gaps198/manifest.json) with tools/iiif_lines.py --image NATIVE --region R --out DIR --prefix P --max-width 2460; regions: f32r 0,3030,2460,269 (10075159); f32v 0,30,2453,1660 (10075160); f33vslip 0,1760,2453,1560 --lines-per-crop 3 (10075162). Crops not committed (folder 30 MB rule); re-fetch the natives by images/gaps198/manifest.json urls and re-run."
+}

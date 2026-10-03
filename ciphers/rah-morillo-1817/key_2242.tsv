@@ -1,0 +1,26 @@
+# Key for item 1 (RAH record 2242, Enrile to Morillo, 15 Jul 1817), read from the leaf's own period
+# Descifrado (slip at the foot of f.33v) by align_2242.py: grade C (known plaintext, rule 4).
+# 17 = s and also z (porraso) and c before e/i (operasiones); 19 and 20 = u/v; 400 = ga.
+code	value	grade	count	agree	note
+00	a	C	27	27	
+1	d	C	9	9	
+2	e	C	36	36	
+4	g	C	1	1	
+5	h	C	4	4	
+6	i	C	14	14	
+9	l	C	11	11	
+10	m	C	6	6	
+11	n	C	16	15	
+12	o	M	1	1	single occurrence where o is otherwise 13 (25x); possibly a miswritten 13 (both passes read 12, M)
+13	o	C	25	25	
+14	p	C	10	10	
+15	q	C	5	5	
+16	r	C	16	16	
+17	s	C	17	15	
+18	t	C	13	13	
+19	u	C	10	9	
+20	u	C	2	1	
+120	b	C	5	5	
+187	c	C	7	6	
+400	ga	C	1	1	
+TRI	y	C	4	4	

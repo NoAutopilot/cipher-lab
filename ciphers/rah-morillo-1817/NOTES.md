@@ -1,4 +1,4 @@
-partial
+partial GAPS203-rah-morillo-1817 (3 Oct 2026, account-4): item 1's numeral block on its own leaf (record 2242, f.32r-v) keyed from the leaf's period Descifrado (key_2242.tsv; `decode_key.py --check` C 237 / M 3 of 240); its plaintext is the 1908 print's, so item 1 stays found-solved.
 
 Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 found-solved (V9-MOR, AUDIT.md, 26 Sept 2026: N0, plaintext in print in Portuguesa en Carabobo, 2021, p.37 n.100; key period). Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3). GAPS-rah-morillo-1817 (2 Oct 2026, account-4): the 2021 print's words are folded into key_5186.tsv and exceptions.tsv (build_key_5186.py), and `tools/decode_key.py --check` now prints C 90 / M 7 / U 0 of 97 (section "GAPS-rah-morillo-1817" below); open-web and blog comment-thread check logged at the end of this file, no decipherment or plaintext beyond the 2021 print located.
 
@@ -845,12 +845,70 @@ manifest.json; folder 29 MB). Vision calls: 1 (6-image contact sheet). Requests:
 imagen_id.do 12 `browser_fetch.js --binary` calls (8 first pass, 4 single retries; each call may retry navigation
 internally; an earlier batch of 8 failed at the container's TLS store before reaching the host); no other host.
 
+## GAPS203-rah-morillo-1817 (3 Oct 2026, account-4): item 1's key from the leaf's own Descifrado
+
+Step (Verdict line of 3 Oct): re-fetch f.33v, crop, two blind numeral passes + reconcile, read the Descifrado, align to a
+grade-C key with the per-leaf shuffle control, then try the key on the folder's other ciphertext.
+
+- **Fetch.** f.33v (idImagen 10075162) answered on the first call this time (`tools/browser_fetch.js --binary`, native
+  2453x3768, sha1 0ab71e4e...); f.32r and f.32v re-fetched natively (sha1 = the GAPS198 manifest); f.33r failed (no
+  binary response after the tool's retries; its committed half-size copy was enough, it is not the Descifrado of this
+  block, see below). Half-size f.33v added to `images/gaps198/` (manifest has native size and sha1); folder 29.97 MB.
+- **What the Descifrado is.** f.33v carries, at the top, the end of the f.33r text ("... de estos particulares"), and
+  at the foot a **pasted slip**: "No siento que hayan batido à la torre, sino el como, y el sitio, ¿pues que mas podian
+  desear? ... Multiplicar correos y apretar sobre q. todo se pierde." The violet note on f.32v ("ojo aqui el
+  descifrado", arrow) points to it, and its three paragraphs match the cipher block's three indented paragraphs. The
+  f.33r(-v top) text ("Yo creo q. he hecho quanto esta de mi parte ... de estos particulares") is printed by Rodriguez
+  Villa t.III p.331-332 under the same "(1) Lo que sigue en cifra" mark, but **its ciphertext is not on this leaf**: the
+  numeral block of f.32r-v is the slip's text only. (The violet "No" before the first group on f.32r is an archivist's
+  mark, not cipher.)
+- **Crops** (pasted command, regions in `gaps203/crops_manifest.json`; crops not committed, 30 MB rule):
+  `python3 tools/iiif_lines.py --image <native 10075159|10075160|10075162> --region <R> --out <dir> --prefix f32r|f32v|f33vslip --max-width 2460`
+  -> 2 + 12 numeral line crops, 3 Descifrado bands.
+- **Numerals.** Two blind Opus passes per page (4 calls; `gaps203/passA.tsv`, `passB.tsv`), `tools/reconcile_passes.py`:
+  244/246 agree (99.2%). The two splits settled on the native image (1 reconcile unit): f32r_L01 col 10 = 15 (B), col 13
+  = 5 (both passes misread it as 9/8; it is this hand's 5, as in "5 00 120" = hab-); the 5 groups under the ink blot of
+  f32v_L01 (187.1?.1.13 struck) are the encipherer's own cancellation and are not carried. 240 tokens in
+  `ciphertext_2242.tsv`.
+- **Descifrado read**: 1 Opus pass (`gaps203/descifrado_slip.txt`), 10 lines. Two words the pass marked unsure follow
+  the cipher and the 1908 print: "tanta" (pass: "ternura{?}"; the cipher reads 18 00 11 18 00 = t-a-n-t-a) and "que"
+  (pass: "q.l{?}").
+- **Key** (`align_2242.py`, hand-paired DP + hard EM, the interlinear_align shape; that tool's --code-prefix mode cannot
+  give code 400 two letters): a letter cipher, one sign per letter, no word breaks, rr and ll written once, spelled by
+  sound: a 00, b 120, c 187, d 1, e 2, g 4, h 5, i 6, l 9, m 10, n 11, o 13 (and 12 once, M), p 14, q 15, r 16,
+  s 17 (also z in "porraso" and c in "operasiones"), t 18, u/v 19 and 20, y triangle, "ga" 400 (`key_2242.tsv`,
+  22 codes).
+- **Control (rule 3, the Szembek per-leaf paragraph)**: recurring-code majority-agreement 0.975 real against 0.234
+  mean / 0.257 p95 / 0.262 max for the same EM on the Descifrado with its word order shuffled within each paragraph
+  (20 seeds). The pairing clears its control decisively; nothing is held.
+- **Reading** (`tools/decode_key.py . --check`, exit 0): `reading_2242.txt`, 240 tokens **C 237 / M 3 / H 0 / S 0 / I 0 / U 0**.
+  M: f32v_L02 pos 11 (187 = c where the Descifrado has s: "decear"), f32v_L10 pos 17 (11 = n where it has s:
+  "coreon y" for "correos y"), and the single 12. Reads "no siento que hayan batido a la tore sino el como y el sitio
+  pues que mas podian decear un poraso ali se resiente en todas partes y rompe el nudo de las operasiones me encarga u
+  que hable con energia con tanta he hablado que lo sabra u a su tiempo multiplicar coreon y apretar sobre que todo se
+  pierde". This plaintext is in print (Rodriguez Villa t.III, 1908, p.332; item 1 is found-solved): what this step adds is
+  the key; the plaintext was already in print.
+- **Judge** (rule 7): `python3 tools/judge_plaintext.py specs/rah-morillo-1817.json --file <reading, letters only>`:
+  `FAIL language: score=-0.944, null_p99=-1.813, real_p05=-0.921, real_median=-0.812, mode=both, N=241`. The leaf's own
+  Descifrado through the same judge: `FAIL language: score=-0.899, null_p99=-1.832, real_p05=-0.894, real_median=-0.812,
+  mode=both, N=245`. The genuine period text itself misses the gate, so at this length and register the judge cannot
+  decide (the ZX-DEC349 shape); the reading's C grade rests on the Descifrado, not on the judge.
+- **Payoff test, the key on the folder's other ciphertext**: the only other ciphertext on disk is item 3's block
+  (ciphertext_5186.tsv, 1820, Herrera). key_2242 keys 27 of its 97 tokens and gives the key_5186 letter at 0 of them:
+  a different key (no design check needed: 1817 Enrile letter cipher vs 1820 Herrera 1-56 table). No other numeral
+  text in records 1306/1487/1957/3886/3893/4332/4537/5195 was keyed by it (none of those carries this notation: the
+  Ministerio nomenclator, Aldama's tally glyphs, or clear letters, NX-MOR4/GAPS192). So the key reads nothing beyond
+  its own leaf yet.
+- Vision calls: 5 Opus (2+2 numeral, 1 Descifrado) + 1 reconcile unit (3 zooms read by the worker). Requests:
+  bibliotecadigital.rah.es imagen_id.do 4 `browser_fetch.js --binary` calls (3 binary, 1 failed after internal
+  retries); archive.org 1 (Rodriguez Villa t.III djvu text, scratch only); no other host.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: item 3, 90 of 97 cipher tokens at C (92.8%), 7 M, 0 U (`tools/decode_key.py --check` on 2 Oct 2026 after GAPS-rah-morillo-1817 folded the 2021 print into key_5186.tsv and exceptions.tsv; was C 86 / M 5 / U 6 by AUDIT.md section 3); all 21 groups carry a period gloss word, and the block's plaintext is in print (Portuguesa en Carabobo, 2021, p.37 n.100). Item 1 is read from print only (Rodriguez Villa t.3, 1908, cipher passages marked); its leaf (record 2242) was never imaged (images/manifest.json holds records 1306, 1487, 1957, 4332, 4537, 5186 and 5195 only), so its cipher tokens are unmeasured. Item 2 is a clear letter; its enclosed key table is unread.
+Read so far: item 3, 90 of 97 cipher tokens at C (92.8%), 7 M, 0 U (`tools/decode_key.py --check` on 2 Oct 2026 after GAPS-rah-morillo-1817 folded the 2021 print into key_5186.tsv and exceptions.tsv; was C 86 / M 5 / U 6 by AUDIT.md section 3); all 21 groups carry a period gloss word, and the block's plaintext is in print (Portuguesa en Carabobo, 2021, p.37 n.100). Item 1: its leaf's numeral block (record 2242, f.32r foot + f.32v) reads 240 tokens, C 237 / M 3 (`decode_key.py --check`, 3 Oct 2026, GAPS203; key from the leaf's own Descifrado); the letter's earlier cipher passage (RV t.III p.331-332) has no ciphertext on the leaf. Item 2 is a clear letter; its enclosed key table is unread.
 Done 2 Oct 2026 (GAPS-rah-morillo-1817, section above): the former first gap -- the 6 U tokens and r5g1's M token -- is closed by the print fold-in: 26 = v, 28 = j, 10 = g at C; r5g1 position 1 C under "Bolivar"; sign 22 does not hold as one value (l / y / ll from three print words) and is logged M with each print letter in exceptions.tsv; sign 30 (j in dijo, g in Guayana) is untestable at this N and stays j with the conflict recorded and r4g2 position 0 at M; exceptions.tsv carries V9's split; `decode_key.py --check` C 90 / M 7 / U 0, exit 0.
 Done 3 Oct 2026 (GAPS2-rah-morillo-1817, section above): the image check -- clear line reads "mueben" (print "reciben" not on the leaf); r2g2 gloss is bari-nit-?-s, no "Caimital"; r4g2 and r5g2 gloss letters split from the earlier reads (M kept); the row-1 margin mark is a "5" over a bar with a flourish, not a three-numeral r-i-o group, excluded from the 97; C 90 / M 7 / U 0 unchanged, `--check` exit 0.
 - item 3, the 7 M tokens (r2g2 positions 5 and 7, sign 22 at r2g4/r4g2/r6g1, r4g2 position 0, r5g2 position 1) - blocker: open-codes; each is a single-occurrence conflict between period witnesses (the sign, read identically by three numeral passes; the interlinear gloss, now read by three eye passes that split at r4g2 position 0 and r5g2 position 1; the 2021 print, which GAPS2 found is not a character-level witness at r2g2 or the clear line), logged in exceptions.tsv with every witness; this leaf has no further occurrence to narrow them (GAPS2-rah-morillo-1817 section, 3 Oct 2026)
-- item 1, leaf 2242 (RAH 9/7658 ff.32-34, Enrile to Morillo, 15 Jul 1817) - blocker: not-attempted; fetched 3 Oct 2026 (GAPS198-rah-morillo-1817 section): f.32r foot and f.32v carry about 19 lines of dot-separated numeral ciphertext and f.33r(-v) the period "Descifrado" as running clear text, no key table; f.33v (10075162) not fetched (2 calls, no binary response); next: fetch f.33v once more, cut line crops of f.32r-v and f.33r-v (`tools/iiif_lines.py --image`), two blind numeral passes + one reconciliation, then align the numerals to the Descifrado (and RV t.III doc. 609 as second witness) with `tools/interlinear_align.py` for a grade-C key, ~$8
+- item 1, the ciphertext of the f.33r(-v top) Descifrado ("Yo creo q. he hecho quanto ... de estos particulares", printed RV t.III p.331-332 as cipher) - blocker: not-attempted; done 3 Oct 2026 (GAPS203-rah-morillo-1817 section): the f.32r-v numeral block (240 tokens) is the pasted slip's text only, keyed from it at C 237 / M 3 (key_2242.tsv, control 0.975 vs shuffle p95 0.257); the earlier passage's ciphertext is not on ff.32-34; next: fetch the one unfetched image of record 2242 (f.35, idImagen 10089847) once to exclude it, then search the RAH Morillo fonds for a separate Enrile cipher sheet of July 1817 (catalogue search "Enrile" 1817), ~$1.5
 - item 2, the enclosed key table ("la adjunta clave", 19 Nov 1817), other RAH-side copies - blocker: needs-physical-access; the table is absent from the copybook copy, record 1957 (3 images, NX-MOR), and from Rodriguez Villa t.3, but the second copy, record 1759 (9/7656 f.524-524v), returned a Tomcat error page twice and was never seen, and records 3893 (Morales acknowledges receipt of a key, 19 Sept 1819) and 3886 (Morales on Montero's oficios and the key used, 10 Sept 1819) were not fetched, past NX-MOR4's 4-candidate cap (rederiv_transfer/candidates.tsv); 3 Oct 2026 (GAPS186-rah-morillo-1817): OAI didl metadata for all three answered (1759: 2 images, a copy, printed RV t.III doc. 655; 3893: 3 images; 3886: 2 images; idImagen ids in the GAPS186 section); 3 Oct 2026 (GAPS192-rah-morillo-1817 section): 3893 and 3886 fetched (5 images), all clear 1819 letters, no table, no ciphertext; 1759's two images refused by the RAH server (401 error page, twice), and its catalogue says it is the copy printed in Rodriguez Villa t.III doc. 655 without a table; blocker: needs-physical-access (record 1759 refused online; a reproduction request to the RAH is the only route)
 - item 2, the original letter and enclosure as received by the Ministerio de la Guerra - blocker: waiting-on LOCAL-QUEUE L48; the RAH holds only Morillo's retained copies; done 3 Oct 2026 (GAPS3-rah-morillo-1817 section): Aymeloglu's cached PARES sweep (catalogue/pares-*.jsonl, commit d2800bb2, 1115 units) has no Morillo, Enrile, Herrera or Costa Firme unit and no Nov 1817 unit, but it covers only AGI ESTADO, AHN DIVERSOS-COLECCIONES and AHNOB BAENA for 1810-25 and was queried by cipher words only, never "clave" or a name, so the received original is unsearched rather than absent; PARES is dead from the cloud; 3 Oct 2026 (GAPS186-rah-morillo-1817): the PARES search is filed as LOCAL-QUEUE.tsv row L48 for the owner's browser (control 'Morillo' first; 'Morillo' AND 'clave'/'cifra'; 'Morillo' 1817-11 to 1818-06 in AGS Secretaría de Guerra and AGI Caracas/Santa Fe/Estado; 'Calabozo' 1817); blocker: waiting-on LOCAL-QUEUE L48
 
@@ -861,12 +919,12 @@ Done 3 Oct 2026 (GAPS2-rah-morillo-1817, section above): the image check -- clea
 - [x] print: Rodriguez Villa t.1-t.4 (IA djvu and Google Books search-inside with controls), Contreras 1988, Stoan 1974, Blanco y Azpurua, O'Leary Memorias, Lecuna, `print_check.py` with its global IA pass, OpenAlex, Semantic Scholar, CrossRef and 4 JSTOR rows (all done 26 Sept): item 1 printed 1908, item 3's plaintext printed 2021 (Portuguesa en Carabobo p.37 n.100), item 2's letter printed without its enclosure; no printing of the 1817 key table found
 - [x] key-rebuild: done 2 Oct 2026 (GAPS-rah-morillo-1817): the 2021 print folded into key_5186.tsv via build_key_5186.py (26 = v, 28 = j, 10 = g at C; BOX = u confirmed in three more words), exceptions.tsv written for V9's split plus the three sign-22 positions; merged-sign tests: 22 = l|y|ll does not hold as one value (M), 30 = g/j untestable at one word each (M at r4g2); C 90 / M 7 / U 0
 - [x] image-check: done 3 Oct 2026 (GAPS2-rah-morillo-1817): gloss letters at r2g2/r4g2/r5g2, the clear line and the row-1 margin mark read blind on native crops and reconciled against the print, C 90 / M 7 / U 0 unchanged; before that, the numerals were read by three passes (NX-MOR2 two blind, NX-MOR3 a third, 0 differences), all agreeing and none failing a gate, so the numeral read is settled rather than retired, and a fourth numeral pass is not proposed; planned: re-read the interlinear gloss letters at r2g2/r4g2/r5g2, the clear-text "mueven"/"reciben" and the row-1 margin mark against the print ("Caimital", "Guayana", "seguro", "reciben", "rio") on native crops
-- [ ] retry: the key-rebuild and image-check reruns are done (`decode_key.py --check` 2 and 3 Oct 2026, C 90 / M 7 / U 0, no token regraded, margin mark not a group); planned: leaf 2242 carries numerals (GAPS198, 3 Oct 2026): align them to the leaf's own Descifrado (f.33r-v) for a grade-C key and decode
-Verdict: keep going: 2 internal gaps, 1 needs physical access (RAH record 1759, refused online), 1 waiting on LOCAL-QUEUE L48 (PARES, owner's browser); cheapest next: item 1, leaf 2242 -- re-fetch f.33v (idImagen 10075162), crop f.32r-v/f.33r-v, two blind numeral passes + reconciliation, align to the period Descifrado with `tools/interlinear_align.py` (grade C), ~$8 (leaf fetched 3 Oct 2026, GAPS198: numerals present, no key table)
+- [x] retry: the key-rebuild and image-check reruns are done (`decode_key.py --check` 2 and 3 Oct 2026, C 90 / M 7 / U 0, no token regraded, margin mark not a group); leaf 2242's numerals aligned to the leaf's own Descifrado (the pasted slip on f.33v) on 3 Oct 2026 (GAPS203): key_2242.tsv, C 237 / M 3 of 240, `--check` exit 0; the key does not read item 3 (0 of 27 keyed tokens agree with key_5186)
+Verdict: keep going: 2 internal gaps, 1 needs physical access (RAH record 1759, refused online), 1 waiting on LOCAL-QUEUE L48 (PARES, owner's browser); cheapest next: item 1, fetch f.35 of record 2242 (idImagen 10089847) once and search the RAH Morillo fonds for the separate July 1817 Enrile cipher sheet behind the f.33r Descifrado, ~$1.5 (GAPS203, 3 Oct 2026: the f.32r-v block is keyed, C 237 / M 3)
 
 ## While waiting
 
-- item 1, leaf 2242: re-fetch f.33v (idImagen 10075162), cut line crops of f.32r-v and f.33r-v, two blind numeral passes + reconciliation, align to the leaf's own Descifrado with `tools/interlinear_align.py`, ~$8; depends on nobody while LOCAL-QUEUE L48 (PARES, owner's browser) is open. Leaf fetched 3 Oct 2026 (GAPS198): numerals + period Descifrado, no key table.
+- item 1: fetch f.35 of record 2242 (idImagen 10089847) once, then a RAH catalogue search for an Enrile cipher sheet of July 1817 that carries the f.33r passage's ciphertext; key_2242.tsv (GAPS203, 3 Oct 2026) would read it at C if it is the same cipher; ~$1.5; depends on nobody while LOCAL-QUEUE L48 (PARES, owner's browser) is open.
 
 ## Web and blog check (GAPS-rah-morillo-1817, 2 Oct 2026)
 

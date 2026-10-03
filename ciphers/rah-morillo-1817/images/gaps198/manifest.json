@@ -88,6 +88,18 @@
    "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10089847",
    "file": null,
    "content": "f.35 (catalogue: folder note \"Francisco Warleta, marzo-octubre 1816\"): not fetched, same as above"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10075162,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10075162",
+   "native_size": "2453x3768",
+   "native_bytes": 1236722,
+   "native_sha1": "0ab71e4e481e931b24721ac11a9d3502dd53fdaa",
+   "file": "10075162_half.jpg",
+   "file_size": "1226x1884",
+   "file_sha1": "b1e5de1bcd2f59f5b34e58faca20798b6d71fa2b",
+   "content": "f.33v: continuation of the f.33r Descifrado (top, to 'de estos particulares'); pasted slip at the foot = the Descifrado of the f.32r-v numeral block ('No siento que hayan batido ... todo se pierde'); fetched GAPS203, 3 Oct 2026"
   }
  ]
 }
