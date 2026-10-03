@@ -6521,3 +6521,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 05:12 | A2-COL17 (account 2, LANE-A2PUSH2) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (canvas 54-56 crops, 2 blind passes + reconciliation, key_f23 C test vs f23-window control, held-out anchor check); cap USD 5, box ends 05:58 UTC
 2026-10-03 05:12 | TOOL-DK-HASH (worker, LANE-A2PUSH2 acct2) | claim tools/decode_key.py "#"-sign-as-comment fix; box ends 05:42 UTC, cap $2
 2026-10-03 05:12 | A2-HAR7 (account 2, LANE-A2PUSH2) | claim: harley-287-1587 -- Verdict cheapest next step (two blind passes f84r/f90r gloss -> gloss_pairs.tsv -> run_align.py); cap USD 6, box ends 06:03 UTC
+2026-10-03 05:12 | A2-GRA6 (account 2, LANE-A2PUSH2) | claim: fr2980-gramont -- Verdict cheapest next step (clear companion fr.3019 no.31 as name/topic source for f.30 open codes); cap USD 3, box ends 05:53 UTC
