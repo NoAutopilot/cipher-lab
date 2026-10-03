@@ -6,7 +6,8 @@
 
 Inputs: ciphertext.tsv (line, pos, sign, conf; 1168 sign labels), gloss.tsv (line, gloss, kind: letters|code),
 the 1168 key (../decode-1168-modena-costabili-1492/key.tsv). G = sum LCS(decoded, gloss) / sum keyed signs over
-'letters' groups. Control: 1000 draws, values permuted within grade band (C among C, M among M), seeds 0..999.
+'letters' groups. Control: 1000 draws, values permuted within grade band (C among C, M among M), seeds 0..999;
+MOD1162B adds the same control at fresh seeds 1000..1999 (PREREG-MOD1162B.md).
 J (judge, it16dip) on the real decode and on the first 500 draws: descriptive only.
 """
 import csv, json, random, sys
@@ -104,6 +105,14 @@ def main():
             vs = [vals[s] for s in ss]; rnd.shuffle(vs); d.update(zip(ss, vs))
         ctrl.append(G(d, groups, gloss)[0]); draws.append(d)
     cs = sorted(ctrl); p99 = cs[int(0.99 * 999)]
+    # MOD1162B (PREREG-MOD1162B.md): the same control at fresh seeds 1000..1999
+    fresh = []
+    for seed in range(1000, 2000):
+        rnd = random.Random(seed); d = {}
+        for b, ss in bands.items():
+            vs = [vals[s] for s in ss]; rnd.shuffle(vs); d.update(zip(ss, vs))
+        fresh.append(G(d, groups, gloss)[0])
+    fs = sorted(fresh)
     signs = [s for ln, ss in groups.items() if gloss.get(ln, ("", ""))[1] == "letters" for s in ss]
     cover = sum(1 for s in signs if s in vals) / len(signs) if signs else 0.0
     from judge_plaintext import NgramModel, LANG_CORPORA, read_corpus
@@ -116,6 +125,9 @@ def main():
     res = {"G_real": round(g_real, 4), "G_ctrl_mean": round(sum(ctrl) / len(ctrl), 4), "G_ctrl_p99": round(p99, 4),
            "G_ctrl_max": round(cs[-1], 4), "p_emp": round(sum(1 for c in ctrl if c >= g_real) / len(ctrl), 4),
            "gate": "PASS" if (g_real > p99 and g_real >= 0.5) else "FAIL",
+           "G_ctrl_fresh_mean": round(sum(fresh) / len(fresh), 4), "G_ctrl_fresh_p99": round(fs[int(0.99 * 999)], 4),
+           "G_ctrl_fresh_max": round(fs[-1], 4), "p_emp_fresh": round(sum(1 for c in fresh if c >= g_real) / len(fresh), 4),
+           "gate_fresh": "PASS" if (g_real > fs[int(0.99 * 999)] and g_real >= 0.5) else "FAIL",
            "coverage": round(cover, 4), "letter_signs": len(signs),
            "J_real": round(j_real, 3), "J_ctrl_median": round(j_ctrl[250], 3), "J_ctrl_p95": round(j_ctrl[int(0.95 * 499)], 3),
            "J_gloss": round(gloss_j, 3),

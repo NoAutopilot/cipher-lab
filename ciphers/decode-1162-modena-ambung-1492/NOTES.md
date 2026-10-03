@@ -412,3 +412,82 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 32, S 10, M 27, I 
 - [x] image-check: full-size DECODE images on hand, MOD1162 3 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: reconcile the collided labels by eye over crops L01/L05/L06/L08 and re-run score_g.py, ~$1.5
+
+## MOD1162B: collided sign labels settled where the image allows (account-2 worker, LANE-A2PUSH3, 3 Oct 2026, 14:39-14:5x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-03-acct2-mod1162b.md`. Pre-registration `PREREG-MOD1162B.md`, commit b928f2db, pushed before
+any label change. Rule: a label changes or loses its '?' only when its shape on a native crop matches that label and not a
+competing one, AND a reader (pass A, pass B or the MOD1162 reconciliation) already gave that label. A changed label grades at
+most S. The band-shuffle control is re-run at fresh seeds 1000..1999. The settled G is descriptive, because this worker had
+seen the key and the gloss; the gate of record stays the raw-pass figures.
+
+**Image.** MOD1162's crops were in its scratchpad only, and the committed 1400-px JPEG is too coarse for sign shapes (about 10 px
+per sign). So one DECODE browser login, 14:42 UTC (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 1162 <scratch>
+--fetch 'https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1162_I5837_P1.png' --max-files 1 --delay 1800`) re-fetched
+the full-size p.1 PNG. Its sha1 1a49a5f9... matches `images/manifest.json` fullsize_3oct. Kept in scratch. A plain curl
+of the same URL first returned the 17,947-byte placeholder, so it was not retried. Requests: de-crypt.org 1 login + 1 page + 1 file,
+plus 1 curl. Crops, the MOD1162 command unchanged: `python3 tools/iiif_lines.py --image IMG_R1162_I5837_P1.png --out <scratch>/full
+--region 370,650,1963,2250 --centres 128,509,594,691,1049,1146,1554,2013,2110 --prefix p1 --lines-per-crop 1 --top-margin 75
+--bottom-margin 35 --debug`. Tight sub-crops of each cipher run (native px, autocontrast, 2x) were read by this worker's eye in
+8 views. No subagent was used.
+
+**What the native crops show.** This hand writes three distinct descender shapes: (i) a bowl with a straight descender
+(L05_1 pos3 "q", L06_1 pos1, L08_1 pos5, L08_3 pos3, and the conf-blank q of L06_3), (ii) a sigma-like sign with a tail
+(L01_1 pos6, L05_2 pos1; it reads e under "gouerno" and "estima"), and (iii) a g with a hooked descender (L01_1 pos5). The 1168
+label set has only `g` and `q` for these, and 1168's own notes already say `q` "very likely covers two or three different
+signs". 1168's committed crops (`images/c*.jpg`, 1800 px across a whole page) are too small to give a tile for each shape.
+So none of the g/q signs passes condition 1. All 8 keep '?' and stay M. Splitting them is a change to the
+key's sign inventory, not a re-transcription.
+
+**Settled (8 signs):**
+| token | was | now | why |
+|---|---|---|---|
+| L01_1 pos1 | a ? | a | clear a shape (bowl and tail) |
+| L05_2 pos3, L06_3 pos10 | z ? | z | "2"-shaped z; A "2" and B "z" are one sign under two names (MOD1162) |
+| L06_2 pos1 | e ? | e | ". e ." visible in the crop; pass B's label; still unglossed, so M by its exception row |
+| L08_3 pos1, pos2 | y ?, a ? | y, a | clear shapes. Whether "y a" belongs to the group under "ne comp..." is unchanged and not settled here |
+| L05_3 pos3, L08_2 pos3 | z ? | 3 | "3"-shaped, as pass A read it. It matches 1168's ". 3 0 ." code, so `T o 3 o` is a code group. Changed label, so at most S: L05_3 pos3 C -> S in `exceptions.tsv`; L08_2 pos3 stays I |
+Unchanged '?': the 8 g/q signs above and the three ". s ." codes (L03, L04, L07; graded by exception).
+
+**Result (rule 3, both numbers side by side; `score_g.py` now also writes the fresh-seed control, `--check` exits 0):**
+| ciphertext | G target | control mean | control p99 | control max | gate |
+|---|---|---|---|---|---|
+| settled (seeds 0..999) | 0.729 | 0.419 | 0.525 | 0.559 | PASS |
+| settled (fresh seeds 1000..1999) | 0.729 | 0.420 | 0.525 | 0.576 | PASS |
+| raw pass B (gate of record, MOD1162) | 0.645 | -- | 0.484 | 0.516 | PASS |
+G does not move. Every letter-group label was kept, so the decoded letters are identical and the bias the pre-registration
+names had nothing to act on. Only conf flags and the two code-group labels changed.
+
+**Judge (pasted, unchanged input of 59 letters):**
+```
+FAIL language: score=-1.34, null_p99=-1.504, real_p05=-0.989, real_median=-0.808, mode=both, N=59
+FAIL - decode-1162-modena-ambung-1492 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Next to it, from the same model: the leaf's own period gloss scores -1.134, and shuffled-key decodes have a median of -1.838 and a p95 of -1.512.
+As in MOD1162, the judge cannot decide at this length (rule 3 gloss paragraph). It is not a negative.
+
+**Reading** (`python3 tools/decode_key.py ciphers/decode-1162-modena-ambung-1492 --check`: "reading up to date"): tokens 77:
+**H 0, C 33, S 12, M 24, I 5, U 3** (was C 32, S 10, M 27). Moved: L01_1 pos1 M->C; L08_3 pos1 M->C; L05_2 pos3 M->S;
+L05_3 pos3 C->S (changed label). The reading text itself is unchanged.
+
+**Joint alignment (optional unit) not run.** `tools/interlinear_align.py` over 1162+1168 pairs would align the same collided
+labels. It cannot split `q`/`g` into the three shapes, so its output would repeat the collision. The next step that can is
+a split inventory (below).
+
+Not classified for novelty (rule 10). Reading ready for the verifier (VERIFY-MOD1162, account 3, claimed 14:38 UTC).
+
+## Remaining gaps (MOD1162B, 3 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); 8 of the earlier 19 conf-'?' signs settled by MOD1162B; verso has no cipher (DECODE doc 3593 and image 2)
+- the g/q/sigma shape split (8 signs still '?', M) - blocker: not-attempted; MOD1162B found three shapes in this hand under two labels, and 1168's committed crops are too small to give a tile for each; next: cut native per-sign tiles of the three shapes from 1162 p.1 and 1168 f.12r (both full PNGs fetchable with one DECODE login) into the owner's sign sorter for a joint 1162+1168 inventory, then re-key 1168 with the split labels (align/run_align.py) and re-run score_g.py and decode_key.py here, ~$3
+- the clear text of the letter (about 35 lines, DECODE doc 3593 is a rough transcription with many '?') - blocker: not-attempted; not needed for the cipher test, needed for a full edition of the letter; next: one transcription pass of the clear lines from the 9 crops plus re-cut full-line crops, ~$3
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed (its label is now settled by MOD1162B, its value is not)
+
+## Escalation (MOD1162B, 3 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: verso and the clear lines read by DECODE doc 3593 (rough), fetched MOD1162 3 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: split the g/q/sigma label into three signs across 1162+1168 (native tiles, sign sorter), then re-key; a joint interlinear_align run over the unsplit labels would repeat the collision (MOD1162B), so it is not the step
+- [x] image-check: full-size p.1 re-fetched and read at native resolution, MOD1162B 3 Oct 2026
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: native tiles of the three g/q/sigma shapes from 1162 p.1 and 1168 f.12r into the sign sorter, then re-key and re-score, ~$3

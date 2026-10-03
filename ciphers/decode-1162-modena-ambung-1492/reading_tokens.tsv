@@ -1,5 +1,5 @@
 line	pos	sign	conf	value	grade
-p1L01_1	1	a	?	i	M
+p1L01_1	1	a		i	C
 p1L01_1	2	g	?	l	M
 p1L01_1	3	c		p	M
 p1L01_1	4	b		o	C
@@ -19,13 +19,13 @@ p1L05_1	3	q	?	e	M
 p1L05_1	4	+		a	C
 p1L05_2	1	g	?	l	M
 p1L05_2	2	TT		s	C
-p1L05_2	3	z	?	t	M
+p1L05_2	3	z		t	S
 p1L05_2	4	a		i	C
 p1L05_2	5	8		m	S
 p1L05_2	6	+		a	C
 p1L05_3	1	T		[d arciuescouo]	C
 p1L05_3	2	o			C
-p1L05_3	3	z	?		C
+p1L05_3	3	3			S
 p1L05_3	4	o			C
 p1L06_1	1	g	?	l	M
 p1L06_1	2	b		o	M
@@ -39,7 +39,7 @@ p1L06_1	9	a		i	C
 p1L06_1	10	t		?	U
 p1L06_1	11	y		n	C
 p1L06_1	12	b		o	C
-p1L06_2	1	e	?	[?]	M
+p1L06_2	1	e		[?]	M
 p1L06_3	1	a		i	C
 p1L06_3	2	y		n	C
 p1L06_3	3	c		p	S
@@ -49,7 +49,7 @@ p1L06_3	6	q		e	M
 p1L06_3	7	a		i	M
 p1L06_3	8	c		p	S
 p1L06_3	9	1		t	M
-p1L06_3	10	z	?	t	M
+p1L06_3	10	z		t	M
 p1L06_3	11	a		i	C
 p1L06_3	12	b		o	C
 p1L07_1	1	s	?	[sua Mta]	C
@@ -63,10 +63,10 @@ p1L08_1	7	a		i	C
 p1L08_1	8	t		?	U
 p1L08_2	1	T		[d arciuescouo]	I
 p1L08_2	2	o			I
-p1L08_2	3	z	?		I
+p1L08_2	3	3			I
 p1L08_2	4	o			I
-p1L08_3	1	y	?	n	M
-p1L08_3	2	a	?	i	M
+p1L08_3	1	y		n	C
+p1L08_3	2	a		i	M
 p1L08_3	3	q	?	e	M
 p1L08_3	4	b		o	C
 p1L08_3	5	8		m	S
