@@ -1,0 +1,28 @@
+{
+ "lines": 10,
+ "cipher_tokens": 392,
+ "letter_glyph_ids": 34,
+ "gloss_letters": 315,
+ "real": 0.1928,
+ "shuffle_mean": 0.1462,
+ "shuffle_p95": 0.2149,
+ "shuffle_max": 0.2342,
+ "rank": 25,
+ "of": 201,
+ "gloss_order_null_mean": 0.1471,
+ "gloss_order_null_p95": 0.2259,
+ "gloss_order_null_max": 0.259,
+ "gloss_order_rank": 41,
+ "decode": {
+  "L01": "ueuplleuoqueallerpremcnereuflaudrequiparqy",
+  "L02": "oerreimebassaeulxrzeequecnerlamopemeliberoe",
+  "L03": "xequegeusxegeerrexmmaeiemsl",
+  "L04": "pesxemoleoemrglafarcqueeieueraxcegoexexea",
+  "L05": "rilmefalxraiaquelqueemxercxexecaolaoieferee",
+  "L06": "ilraqueiloreuecegpiciqueceblequexebiem",
+  "L07": "yxemalcaxirexericiequeequesxemelmpoeemoeuoeque",
+  "L08": "seraeslqueembleuemlerfcreioplaisirxeleque",
+  "L09": "emlaiqueerieirquelquequeamueesyqueinesaiereimo",
+  "L10": "iaqueaanolarcioaoiemquilzuequeereoiraquesemo"
+ }
+}

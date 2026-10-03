@@ -1,0 +1,123 @@
+line	pos	passC	passD	recon	basis
+L01	8	n1	u1	n1	rule
+L01	9	t2	o5	t2	rule
+L01	10	W:roy	W:que	W:le	rule
+L01	14	m1	e3	e3	rule
+L01	24		e3	e3	one-reader
+L01	25	n1	u1	n1	rule
+L01	29	n1	u1	n1	rule
+L01	32	m1	e3	e3	rule
+L01	33		W:qui	W:qui	one-reader
+L02	2	t2	o5	t2	rule
+L02	6		e1	e1	one-reader
+L02	8	n1	m1	n1	rule
+L02	10	W:ont	W:bassa	W:ont	C-default(M)
+L02	19	m1		e3	one-reader
+L02	20	p2		p2	one-reader
+L02	22	W:roy	W:que	W:le	rule
+L02	24		n1	n1	one-reader
+L02	29	n1	m1	n1	rule
+L02	30	t2	o5	t2	rule
+L02	33	u1	m1	u1	C-default(M)
+L02	35	m1	e3	e3	rule
+L02	38	d1	b1	d1	rule
+L02	41		o5	t2	one-reader
+L02	42	o1/e2	e3	o1/e2	C-default(M)
+L03	3	W:roy	W:que	W:le	rule
+L03	7	o3	s2	s2	rule
+L03	12		o1/e2	o1/e2	one-reader
+L03	16	m1	e3	e3	rule
+L03	18	i2	m2	i2	C-default(M)
+L03	19	n1	m1	n1	rule
+L03	21	t2	e1	t2	C-default(M)
+L03	24	n1	m1	n1	rule
+L03	25	o3	s2	s2	rule
+L04	6	n1	m1	n1	rule
+L04	7	t2	o5	t2	rule
+L04	10	t2	o5	t2	rule
+L04	20		r1	r1	one-reader
+L04	23		W:que	W:que	one-reader
+L04	24	W:roy	o1/e2	W:le	rule
+L04	32	y1		y1	one-reader
+L04	35	y1		y1	one-reader
+L04	37	t2	o5	t2	rule
+L04	42	m1	e3	e3	rule
+L05	4	n1	m1	n1	rule
+L05	8	y1		y1	one-reader
+L05	15	W:roy	W:que	W:le	rule
+L05	16	m1		e3	one-reader
+L05	18	W:roy	W:que	W:le	rule
+L05	20	n1	m1	n1	rule
+L05	24	m1		e3	one-reader
+L05	35	W:par		W:par	one-reader
+L05	36	t2	o5	t2	rule
+L05	43	t2	e1	t2	C-default(M)
+L05	44	m1	e3	e3	rule
+L06	4	y1		y1	one-reader
+L06	7	y1		y1	one-reader
+L06	11	y1		y1	one-reader
+L06	12	t2	o5	t2	rule
+L06	16	y1		y1	one-reader
+L06	20	f2	g2	f2	C-default(M)
+L06	22	m1		e3	one-reader
+L06	26		W:que	W:que	one-reader
+L06	27	W:roy		W:le	one-reader
+L06	31	m1		e3	one-reader
+L06	32	d1	b1	d1	rule
+L06	35	W:roy	W:que	W:le	rule
+L06	38	d1	b1	d1	rule
+L06	41	n1	m1	n1	rule
+L07	13	m1	e3	e3	rule
+L07	15	m1	e3	e3	rule
+L07	19	h1	i3	h1	C-default(M)
+L07	21	W:roy	W:que	W:le	rule
+L07	24	W:roy	W:que	W:le	rule
+L07	28	p1	m2	p1	C-default(M)
+L07	31		m3	m3	one-reader
+L07	33	t2	o5	t2	rule
+L07	36	n1	m1	n1	rule
+L07	37	t2	o5	t2	rule
+L07	40	t2	o5	t2	rule
+L07	42	W:roy	W:que	W:le	rule
+L08	6	o3	s2	s2	rule
+L08	9	W:roy	W:que	W:le	rule
+L08	12	d1	b1	d1	rule
+L08	16	y1		y1	one-reader
+L08	18	n1	m1	n1	rule
+L08	21	y1		y1	one-reader
+L08	24		c1	c1	one-reader
+L08	28	t2	o5	t2	rule
+L08	33	o3	s2	s2	rule
+L08	40	W:roy	W:que	W:le	rule
+L09	2	n1	m1	n1	rule
+L09	6	W:roy	W:que	W:le	rule
+L09	17	W:roy	W:que	W:le	rule
+L09	19	n1	m1	n1	rule
+L09	22	m1	e3	e3	rule
+L09	23	o3	s2	s2	rule
+L09	24	s1	y1	s1	C-default(M)
+L09	25	W:roy	W:que	W:le	rule
+L09	29	o3	s2	s2	rule
+L09	32	m1		e3	one-reader
+L09	37				one-reader
+L09	38	n1	m1	n1	rule
+L09	39	t2	o5	t2	rule
+L10	1		i2	i2	one-reader
+L10	3	W:roy	W:que	W:le	rule
+L10	7	t2	o5	t2	rule
+L10	13	y1		y1	one-reader
+L10	14	t2	o5	t2	rule
+L10	16	t2	o5	t2	rule
+L10	19		m1	e3	one-reader
+L10	20	n1	W:qui	n1	C-default(M)
+L10	21		l2	l2	one-reader
+L10	23	n1	u1	n1	rule
+L10	25	W:roy	W:que	W:le	rule
+L10	26	m1	e3	e3	rule
+L10	28	m1	e3	e3	rule
+L10	29	t2	o5	t2	rule
+L10	33	W:roy	W:que	W:le	rule
+L10	35		e3	e3	one-reader
+L10	37	n1		n1	one-reader
+L10	38	t2	o5	t2	rule
+L10	41	l1	D2	l1	C-default(M)

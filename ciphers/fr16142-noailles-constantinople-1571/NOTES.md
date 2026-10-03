@@ -161,3 +161,67 @@ ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_
   wrote 20 crops and ciphers/fr16142-noailles-constantinople-1571/images/manifest.json
 ```
 Centres were read from the row ink profile of the left 500 px of the block (where the lines start; FT-D's fixed-y `--centres` cut without `--follow-slope` was the fault). Lines rise ~160-200 px across the block (slope -0.045 to -0.058, ~2.6-3.3 deg), more than one pitch (122 px): every crop is now a sheared strip on its own line. Overlay and the 20 crops checked by eye: one text row per crop. L03 (the short line ending in a flourish) fitted flat on 6 peaks and its _s2 strip caught the end of L04; `c262rc_L03_s2.jpg` was cut to x<760 (after the flourish). Every _s2 crop carries corner ticks at x=130, the end of its overlap with _s1 (manifest note).
+
+**Passes** (2 Sonnet subagent calls, blind to each other and to FT-D's passes, crop paths + Tomokiyo's table image only; prompt
+kept in the worker's scratchpad; raw files `witness/c262rc_passC_raw.tsv`, `witness/c262rc_passD_raw.tsv`; the scored files only
+collapse each `?{description}` to a bare `?`, the same for both). C 390 tokens, D 392. `tools/reconcile_passes.py`: agree 273/395
+aligned columns = 69.1%, **err_2reader 30.9%** (122 disagreement columns). Most splits are one glyph named two ways throughout
+(D: box-on-stem = W:que, 6-with-cross = o5, 2-with-stem-circle = m1/u1, loop-S = e3 vs C's m1, cup-on-stem s2 vs C's o3), so the
+error is in naming signs against the table, not in the cutting. Reconciliation (`witness/c262rc_recon.tsv`, log
+`witness/c262rc_recon_log.tsv`, by this worker before any decode of C or D was printed, gloss not consulted): glyph rulings from the
+table image -- 2-with-stem-circle = n1, 6-with-cross-above = t2 (row 2 under t, so key.tsv's s3 "b-crossed" sits in the t column;
+noted, key.tsv not changed), box hanging from the top bar with the stem running down = W:le (roy has a cross above its box), loop-S = e3,
+cup-on-stem = s2, theta-with-tail = d1; 74 columns by rule, 36 one-reader signs kept, 12 one-off splits to pass C (M). 384 signs.
+
+**Same gate, re-run once** (`scripts/test0.py` and `gloss.tsv` unchanged, `git diff` clean; gate pass pre-registered in
+`witness/gate_recut.txt` before either output was seen = pass D, the counterpart of FT-D's pass B):
+
+| text | '#' | real | key-shuffle max (rank /201) | gloss-order max (rank /201) | N tokens | gate |
+|---|---|---|---|---|---|---|
+| **D (gate pass)** | e | **0.1928** | 0.2342 (25) | 0.2590 (41) | 392 | **FAIL** |
+| **D (gate pass)** | o | **0.1736** | 0.2507 (64) | 0.2231 (22) | 392 | **FAIL** |
+| reconciled | e | 0.4548 | 0.2658 (1) | 0.2904 (1) | 384 | beats both |
+| reconciled | o | 0.3973 | 0.2575 (1) | 0.3233 (1) | 384 | beats both |
+| C (blind, not gated) | e | 0.4176 | 0.2473 (1) | 0.3379 (1) | 390 | beats both |
+| C (blind, not gated) | o | 0.3846 | 0.2308 (1) | 0.2637 (1) | 390 | beats both |
+
+(FT-D on the old crops: pass B 0.2799, rank 1 / rank 6.) **Verdict, as pre-registered: the known-answer gate FAILS on the gate pass
+-- non-test at this transcription error; the target (c510-516) was not scored.** Reported beside it, not substituted for it: one
+blind pass (C) and the reconciled text clear both nulls' maxima at both '#' resolutions, the highest scores this block has given
+(reconciled 0.45 vs FT-D's best 0.33). Reading what differs: the two readers on the same new crops split 31% and land on opposite
+sides of the gate, so the re-cut removed the cutting fault but the gate now measures which reader named the look-alike glyphs right;
+the reconciled text's pass rests on this worker's glyph rulings (not blind, and a single reconciler), so it licenses nothing alone.
+Interpretation of the reconciled decode, not a graded reading: L08 "...plaisir..." beside the gloss's "plaisir" two lines later; no
+token is graded above M (rule 4).
+
+**Rule 3 third-attempt clause.** This is the second attempt at the c262 known-answer gate, with only the crops changed; it failed on
+the gate pass. A third attempt at the same c262 known answer is not another re-cut and not a third Sonnet pass on these crops: it
+needs a different instrument (a settled glyph inventory -- `tools/glyph_atlas.py` exemplars per Tomokiyo row put to the person in
+the sign sorter, TRANSCRIPTION.md steps 2-4, so readers name signs from settled labels rather than from the table image) or new
+material (a second glossed leaf, e.g. c257-266 neighbours, scored with a gate pre-registered on its own blind pass).
+
+Requests: cryptiana.web.fc2.com 2 (henryiii.htm + CharlesIX_Acqs2.png, image kept out of the repo); gallica.bnf.fr 0 (native c262
+already on disk). Calls: 2 Sonnet passes + this worker's reconciliation (3 units).
+
+## Remaining gaps (NX-RECUT, 3 Oct 2026)
+Read so far: 351 of 353 canvases surveyed at 400 px; c262 block transcribed 4 times (2 on old crops, 2 on re-cut crops) + 1 reconciliation; known-answer gate failed twice on the pre-registered pass; 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (readers split 31% on the same crops) - blocker: not-attempted; the c262 known-answer gate cannot be retried without it (rule 3 third-attempt clause retired the table-image Sonnet pass for this gate, NX-RECUT); next: glyph_atlas exemplars per table row from c262 + a duplicata pair into the sign sorter for the person to settle, then blind passes against the settled labels, ~$6
+- July 1574 letter c510-516 (bulk of the open signs) undecoded - blocker: not-attempted; waits on a known-answer PASS; next: day read at native resolution, Charrière 7/16 July 1574 excerpts and Dupuy 521 matched by date, ~$2
+- Gloss presence on 31 C/P pages judged only at 400 px - blocker: not-attempted; the open-sign count depends on it; next: native look at the 'unclear' rows of letters_coverage.tsv, ~$1
+- Dupuy 521 extracts not aligned to fr.16142 letters - blocker: not-attempted; decides whether c510-516 is really open; next: index its despatch dates (CS-4 gap, still open), ~$3
+
+## Escalation (NX-RECUT, 3 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv): same plaintext enciphered twice
+- [ ] clear-pages: Dupuy 521 and Charrière 7/16 July 1574 excerpts against c510-516; planned step: match by date
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 read and the July 1574 excerpts located (3 Oct 2026)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut with --follow-slope, one row per crop, checked by eye (NX-RECUT)
+- [ ] retry: known-answer with settled glyph labels (sign sorter) or on a second glossed leaf; planned step: glyph_atlas + sorter sheet
+Verdict: keep going: 4 internal gaps; cheapest next: native look at unclear-gloss rows, ~$1; the known-answer retry needs the sorter first
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (NX-RECUT):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
