@@ -349,3 +349,35 @@ Gate re-run (GF4-BATCH11, 3 Oct 2026): `clair571-estrades-1645: open (line 1) --
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no ciphertext or reading: status open, leaves not digitised (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## DECODE key records 9430 / 9431 / 9432 (IMG-DECODE2, account 2 worker for LANE-IMAGES, 3 Oct 2026)
+
+This folder holds the images for all clair* targets: `keys_decode/manifest.json`. The clair577-* folders point here. One
+browser login (`tools/decode_browser_login.js ... --listen`, shared with siena-concistoro-2308) fetched RecordsView and every
+full-size image for the three key records. **Full size was served for all 12 images, and none was forbidden.png.** The images are
+not committed. Every record says "The image is not in the public domain. Publishing it is only possible with the permission of
+the Library." They stay in the worker's scratchpad, and the manifest carries the sha1s and the re-fetch command.
+
+| record | DECODE holder field | dates | author field | Additional Information | images (native px) |
+|---|---|---|---|---|---|
+| 9430 | Clairambault 577, p 1 | 1647 | -- | "Ciphers for Italy (Chiffres pour l'Italie)." | 5 PNG, I44601 P1-P5 (1800-2149 x 3005-3035) |
+| 9431 | Clairambault 574, p 4-5 | 1645-1649 | Henri Brasset | "Chiffre employé par Henri Brasset. Key used by Henri Brasset." | 2 PNG, I44607 P1-P2 (1653x2339) |
+| 9432 | Clairambault 580, p 89-95 | 1655-1668 | Madame d'Estrades | "Chiffre de Madame d'Estrades. Key of Madame d'Estrades." | 5 PNG, two image groups I44610 P1-P3 + I44614 P1-P2 (1653x2339) |
+
+All three records: Type Key, Status N/A, Cipher Type "Simple substitution", Symbol Sets Alphabet + Numerical, "Private
+Ciphertext: True", created 18 Jan 2025 by DECODE user pabogi. Every key-metadata field (nomenclature size and the rest) is empty.
+
+Image-type check: one vision call on a contact sheet at about 250 px per image. Nothing was transcribed or graded.
+- 9430: P1 is a ruled table that looks like a nomenclator (number columns beside name columns), with folio "1". P2 is a mostly
+  blank leaf with a short centred heading, folio "3". P3-P4 are dense ruled nomenclator tables. P5 is a nearly blank leaf.
+- 9431: two facing pages. Each has a cipher-alphabet header row (letters with signs or numbers under them), and nomenclator name
+  lists with numbers below. P2 has a right-hand column of short notes. It could not be read at this size.
+- 9432: five ruled list pages, most of them faint, in two image groups. I44610 P2 has a short heading block, and I44614 P2 has a
+  dated-looking heading. Neither was read at this size.
+Whether any of these keys fits the 1645 letter at Clair 575 p.1209 is the open question. It cannot be tested until that leaf's
+image arrives (REQUEST.md). Next step that depends on nobody (not run, out of brief): transcribe 9431, the Brasset key dated
+1645-1649 and the closest to this letter, from the full-size images into `keys_decode/9431_key.tsv`, with two passes on line
+crops. Cost about USD 3-4.
+
+Requests: see siena-concistoro-2308/NOTES.md "Image check (IMG-DECODE2)". The job made 52 de-crypt.org requests, 15 of them
+for these three records (3 RecordsView + 12 full size).

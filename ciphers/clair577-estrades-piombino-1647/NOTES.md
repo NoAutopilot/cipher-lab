@@ -41,3 +41,12 @@ Requests (CS-A2-N): cryptiana.web.fc2.com 1, archive.org 4, gallica.bnf.fr 4, gi
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## DECODE 9430 key images (IMG-DECODE2, 3 Oct 2026)
+
+Pointer only. DECODE record 9430 (Clairambault 577 p.1, 1647, "Ciphers for Italy (Chiffres pour l'Italie)", five full-size
+images) and its siblings 9431 (Clair 574, Brasset) and 9432 (Clair 580, Mme d'Estrades) were fetched in one login on 3 Oct
+2026. Full size was served, and none was forbidden.png. The images are not committed. The record fields, the per-image sha1s
+and the re-fetch command are in `ciphers/clair571-estrades-1645/keys_decode/manifest.json` and in that folder's NOTES.md
+section "DECODE key records 9430 / 9431 / 9432". This folder's own leaf (Clair 577, see REQUEST.md / NOTES above) has still not
+been seen, so nothing has been applied to it.

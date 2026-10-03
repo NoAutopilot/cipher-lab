@@ -274,3 +274,47 @@ Verdict of this pass: no decipherment of any piece this folder holds open; statu
 ciphermysteries.com 2 (1 WebFetch post, 1 WebFetch site search; 1 curl refused, not retried), be-api.us.archive.org 1.
 
 `python3 tools/intake_gate_check.py siena-concistoro-2308` after both sections (3 Oct 2026, GF-A2-11): `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
+
+## Image check (IMG-DECODE2, account 2 worker for LANE-IMAGES, 3 Oct 2026)
+
+This closes the gap "We have not seen the images ourselves" in (c) above. Route that worked: one headless-browser login,
+`tools/decode_browser_login.js 4795 <scratch> --max-files 0 --listen CMDFILE`, then `page`/`get` lines with absolute URLs. One
+login served this target and the three Clairambault key records (clair571-estrades-1645/keys_decode/). R-numbers come from
+Bourdeau's piece table (dbourdeau/cyphersolver `targets/siena1421/NOTES.md`, commit a439937, read 3 Oct 2026). No.17 is R4805
+there ("20 Aug 1528 ... questa cifra è quella di Balìa"), and nos. 6, 20 and 23 are R4795, R4808 and R4811.
+
+| no. | record | DECODE name | pages (record) | images served | native px |
+|---|---|---|---|---|---|
+| 6 | R4795 | Concistoro_2308_49 | 1 | 2 (P1, P2) | 4000x2248 |
+| 7 | R4796 | Concistoro_2308_50 | 2 | 2 | 2248x4000 |
+| 9 | R4798 | Concistoro_2308_52 | 1 | 2 | 4000x2248 |
+| 11 | R4800 | Concistoro_2308_54 | 1 | 2 | 4000x2248 |
+| 15 | R4803 | Concistoro_2308_57 | 8 | 8 | 2248x4000 |
+| 17 | R4805 | Concistoro_2308_59 | 1 | 2 | 2248x4000 |
+| 19 | R4807 | Concistoro_2308_61 | 1 | 1 (unnumbered `_P`) | 4000x2248 |
+| 20 | R4808 | Concistoro_2308_62 | 1 | 1 | 4000x2248 |
+| 21 | R4809 | Concistoro_2308_63 | 1 | 1 | 4000x2248 |
+| 23 | R4811 | Concistoro_2308_65 | 1 | 1 | 2248x4000 |
+| 24 | R4812 | Concistoro_2308_66 | 2 | 2 | 2248x4000 |
+
+RecordsView fields are the same on all eleven: Italy, Siena, State Archives of Siena; Type Cipher; Status N/A; Cipher Type
+Unknown; Symbol Sets "Graphic signs, Alphabet, Numerical"; no date, author, sender or receiver; access "Authentication
+required"; created 31 Mar 2023. Additional Information is empty, so there is no licence line on these Siena records (the
+Clairambault key records carry DECODE's "not in the public domain" sentence). **Full size was served for all 24 images, and
+none was forbidden.png** (sha1s, URLs and sizes are in `images/manifest.json`). The images are not committed: they stay in the
+worker's scratchpad under the LANE-IMAGES rule for DECODE images, and the manifest gives the re-fetch command.
+
+Image-type check: one vision call on a contact sheet of all 24 images at about 250 px each. No transcription, nothing graded.
+At that size every record looks the way Bourdeau's table describes it. Nos. 6, 20 and 23 are pages densely written from edge
+to edge. No. 24 is two dense pages, and its P1 has a short block lower down (his "dorse"). Nos. 9 and 21 are narrow slips or
+short letters. No. 11 is a folded letter with an address panel (P1) and a written face (P2). No. 15 is eight written pages. No.
+17 is a written page and a folded outer leaf. No. 19 is a strip that is part clear and part sign-runs. No. 7 is a long page,
+with a docket on its P2. Contact-sheet resolution cannot tell cipher signs from clear script on most pages, so this check only
+confirms that the pieces are what the catalogue says. It is not a check of Bourdeau's transcripts. Next step that this enables
+(not run, out of brief): read Bourdeau's `no06`/`no20`/`no23`/`no24p2` transcripts against these images line by line. That
+would give a reader-error figure for the pooled-pair negatives above (CLAUDE.md rule 3, error bracket), at about USD 3-4 per
+pair with line crops (`tools/iiif_lines.py --image`).
+
+Requests: de-crypt.org 52 for the whole job (login flow 2; RecordsView 14 = 11 Siena + 3 Clairambault; full size 36 = 24 Siena
++ 12 Clairambault), 1.7 s apart, no challenge, one login. Thumbnails and ImagesList pages were not fetched. Vision calls: 2 in the
+job, 1 for this target.

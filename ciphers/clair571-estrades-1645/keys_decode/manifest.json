@@ -1,0 +1,180 @@
+{
+ "source": "DECODE (de-crypt.org), fetched 3 Oct 2026 by IMG-DECODE2 (account 2, for LANE-IMAGES) after one browser login",
+ "committed": "none: every record page says 'The image is not in the public domain. Publishing it is only possible with the permission of the Library.' -- manifest only",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js <record> OUT --max-files 0 --listen CMDFILE, then append 'get <url>' lines (absolute filesrv URLs) to CMDFILE; one login per session",
+ "records": [
+  "https://de-crypt.org/decrypt-web/RecordsView/9430",
+  "https://de-crypt.org/decrypt-web/RecordsView/9431",
+  "https://de-crypt.org/decrypt-web/RecordsView/9432"
+ ],
+ "files": [
+  {
+   "record": 9430,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9430_I44601_P1.png",
+   "native_px": [
+    2115,
+    3005
+   ],
+   "sha1": "6c123b1255dd20d81903f5c26d5b07a11229e43a",
+   "bytes": 4469131,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 577 p.1, 1647, \"Ciphers for Italy (Chiffres pour l'Italie)\""
+  },
+  {
+   "record": 9430,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9430_I44601_P2.png",
+   "native_px": [
+    1800,
+    3005
+   ],
+   "sha1": "9d44ded8d6fc3a2f9469c6a9d6048cf70cd147f4",
+   "bytes": 2938641,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 577 p.1, 1647, \"Ciphers for Italy (Chiffres pour l'Italie)\""
+  },
+  {
+   "record": 9430,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9430_I44601_P3.png",
+   "native_px": [
+    2092,
+    3016
+   ],
+   "sha1": "42fc7c5bcc5a859b3b9cff34179cf1395c6b8187",
+   "bytes": 4943622,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 577 p.1, 1647, \"Ciphers for Italy (Chiffres pour l'Italie)\""
+  },
+  {
+   "record": 9430,
+   "page": "4",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9430_I44601_P4.png",
+   "native_px": [
+    2128,
+    3026
+   ],
+   "sha1": "9c56034d1a9e0c3d253bd0a2aae728b3871148e1",
+   "bytes": 4869850,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 577 p.1, 1647, \"Ciphers for Italy (Chiffres pour l'Italie)\""
+  },
+  {
+   "record": 9430,
+   "page": "5",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9430_I44601_P5.png",
+   "native_px": [
+    2149,
+    3035
+   ],
+   "sha1": "4361a3098f133a128cd37f593b363d4792d0f5a8",
+   "bytes": 4128234,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 577 p.1, 1647, \"Ciphers for Italy (Chiffres pour l'Italie)\""
+  },
+  {
+   "record": 9431,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9431_I44607_P1.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "234fdce587955e741b89fbdd6d5fc9f32d71e3c2",
+   "bytes": 2762221,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 574 p.4-5, 1645-1649, \"Chiffre employé par Henri Brasset\""
+  },
+  {
+   "record": 9431,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9431_I44607_P2.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "16c5a0a4c740a1f86f49e50ce1452d388e8c9093",
+   "bytes": 2774019,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 574 p.4-5, 1645-1649, \"Chiffre employé par Henri Brasset\""
+  },
+  {
+   "record": 9432,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9432_I44610_P1.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "40a1d32381de55f11b8a14423ccf0ce93992dd3d",
+   "bytes": 2129295,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  },
+  {
+   "record": 9432,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9432_I44610_P2.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "b20e2a2cabb9956e063929f947e83ba26b0a0cc3",
+   "bytes": 2148336,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  },
+  {
+   "record": 9432,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9432_I44610_P3.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "9fbb900c71354ccb177a15dce5d086c3393d6e7a",
+   "bytes": 6231708,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  },
+  {
+   "record": 9432,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9432_I44614_P1.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "ee1b6cf3b33381e7e98db92ab9531267210350ef",
+   "bytes": 2018917,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  },
+  {
+   "record": 9432,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9432_I44614_P2.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "cf61856403d37b9500d9905e36796646e914c71a",
+   "bytes": 3945208,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  }
+ ]
+}

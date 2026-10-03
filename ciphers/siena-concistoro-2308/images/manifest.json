@@ -1,0 +1,381 @@
+{
+ "source": "DECODE (de-crypt.org), fetched 3 Oct 2026 by IMG-DECODE2 (account 2, for LANE-IMAGES) after one browser login",
+ "committed": "none: images kept in the worker's scratchpad, out of the public repository (LANE-IMAGES rule for DECODE images, IMG-DECODE1 3 Oct 2026). These eleven Siena RecordsView pages carry no licence line of their own (Additional Information empty); the archive's permission is still needed before any image is published",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js <record> OUT --max-files 0 --listen CMDFILE, then append 'get <url>' lines (absolute filesrv URLs) to CMDFILE; one login per session",
+ "piece_map_source": "Bourdeau, dbourdeau/cyphersolver targets/siena1421/NOTES.md piece table (commit a43993754e2edd5bdc159bb5859a3d3ff78b7d98, read 3 Oct 2026)",
+ "records": [
+  "https://de-crypt.org/decrypt-web/RecordsView/4795",
+  "https://de-crypt.org/decrypt-web/RecordsView/4796",
+  "https://de-crypt.org/decrypt-web/RecordsView/4798",
+  "https://de-crypt.org/decrypt-web/RecordsView/4800",
+  "https://de-crypt.org/decrypt-web/RecordsView/4803",
+  "https://de-crypt.org/decrypt-web/RecordsView/4805",
+  "https://de-crypt.org/decrypt-web/RecordsView/4807",
+  "https://de-crypt.org/decrypt-web/RecordsView/4808",
+  "https://de-crypt.org/decrypt-web/RecordsView/4809",
+  "https://de-crypt.org/decrypt-web/RecordsView/4811",
+  "https://de-crypt.org/decrypt-web/RecordsView/4812"
+ ],
+ "files": [
+  {
+   "record": 4795,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4795_I27934_P1.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "6690500ba2829b3a343c97a320fb93245502ffe8",
+   "bytes": 833298,
+   "forbidden_png": false,
+   "bourdeau_no": "6",
+   "decode_name": "Concistoro_2308_49"
+  },
+  {
+   "record": 4795,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4795_I27934_P2.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "42fe4ffc8dea34a7815e1f792e3fc9794382a9dc",
+   "bytes": 1042164,
+   "forbidden_png": false,
+   "bourdeau_no": "6",
+   "decode_name": "Concistoro_2308_49"
+  },
+  {
+   "record": 4796,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4796_I27935_P1.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "2b12f15a494de37be251cbc13476d8db12032471",
+   "bytes": 1001284,
+   "forbidden_png": false,
+   "bourdeau_no": "7",
+   "decode_name": "Concistoro_2308_50"
+  },
+  {
+   "record": 4796,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4796_I27935_P2.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "4cd4d9960b5e5b8cf330d5c89803d93f3369642c",
+   "bytes": 855289,
+   "forbidden_png": false,
+   "bourdeau_no": "7",
+   "decode_name": "Concistoro_2308_50"
+  },
+  {
+   "record": 4798,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4798_I27941_P1.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "7ea4374566851021426901693a1c8a44905e8013",
+   "bytes": 764501,
+   "forbidden_png": false,
+   "bourdeau_no": "9",
+   "decode_name": "Concistoro_2308_52"
+  },
+  {
+   "record": 4798,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4798_I27941_P2.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "ca4a848a1b2880111e011c0794e4cf8062277027",
+   "bytes": 693893,
+   "forbidden_png": false,
+   "bourdeau_no": "9",
+   "decode_name": "Concistoro_2308_52"
+  },
+  {
+   "record": 4800,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4800_I27945_P1.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "282b808f58b9d781b4c1e9635e18076a5d0a90b9",
+   "bytes": 694926,
+   "forbidden_png": false,
+   "bourdeau_no": "11",
+   "decode_name": "Concistoro_2308_54"
+  },
+  {
+   "record": 4800,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4800_I27945_P2.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "3f7710e740d744d46b8a05ff46d6ccc54de8ea6c",
+   "bytes": 803040,
+   "forbidden_png": false,
+   "bourdeau_no": "11",
+   "decode_name": "Concistoro_2308_54"
+  },
+  {
+   "record": 4803,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P1.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "811e63d9f2eb55dbc51942abaf3f906dc5c5cd46",
+   "bytes": 1162000,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P2.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "71b6b062a64dc7a2f1335a6f220731ca651f6f62",
+   "bytes": 1156263,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P3.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "8e6219c61bdf72ec3ced1162ad584d7a81800ace",
+   "bytes": 1169870,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "4",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P4.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "2585d5fc830e23b65c97999238d50046b32a80a4",
+   "bytes": 1128317,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "5",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P5.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "d2ca694da989bf6b5ebe1499e12a5ffefb495656",
+   "bytes": 1076750,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "6",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P6.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "0148d2e4dcbfad5bd2852e515a4915744baf8d01",
+   "bytes": 1076796,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "7",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P7.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "1c3922a81c598c87ce2b1f236026a20ab26e8483",
+   "bytes": 1068555,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4803,
+   "page": "8",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4803_I27950_P8.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "17705d219de7384697c0a1a66135f9dd6d943425",
+   "bytes": 934950,
+   "forbidden_png": false,
+   "bourdeau_no": "15",
+   "decode_name": "Concistoro_2308_57"
+  },
+  {
+   "record": 4805,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4805_I27962_P1.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "aa1d7aab16e8cbdbd8306c74773f63bca28392b3",
+   "bytes": 852893,
+   "forbidden_png": false,
+   "bourdeau_no": "17",
+   "decode_name": "Concistoro_2308_59"
+  },
+  {
+   "record": 4805,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4805_I27962_P2.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "5e81c276988c4c585ebcf3de2efdd5ebc7d2a621",
+   "bytes": 792704,
+   "forbidden_png": false,
+   "bourdeau_no": "17",
+   "decode_name": "Concistoro_2308_59"
+  },
+  {
+   "record": 4807,
+   "page": "(single, unnumbered)",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4807_I27970_P.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "0d16697fe18a8aa8739e8b0069f21d170411a6b1",
+   "bytes": 4336390,
+   "forbidden_png": false,
+   "bourdeau_no": "19",
+   "decode_name": "Concistoro_2308_61"
+  },
+  {
+   "record": 4808,
+   "page": "(single, unnumbered)",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4808_I27971_P.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "46e2948b6fb19e1885e517b5677082211d03c49b",
+   "bytes": 1048217,
+   "forbidden_png": false,
+   "bourdeau_no": "20",
+   "decode_name": "Concistoro_2308_62"
+  },
+  {
+   "record": 4809,
+   "page": "(single, unnumbered)",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4809_I27972_P.jpg",
+   "native_px": [
+    4000,
+    2248
+   ],
+   "sha1": "abe608fba20c599285504765226d5f824edf34b3",
+   "bytes": 801758,
+   "forbidden_png": false,
+   "bourdeau_no": "21",
+   "decode_name": "Concistoro_2308_63"
+  },
+  {
+   "record": 4811,
+   "page": "(single, unnumbered)",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4811_I27977_P.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "c279817706e16a7a45c4edcf661afc0d081436e6",
+   "bytes": 1214020,
+   "forbidden_png": false,
+   "bourdeau_no": "23",
+   "decode_name": "Concistoro_2308_65"
+  },
+  {
+   "record": 4812,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4812_I27978_P1.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "761f227d98b6366ead1eb2f01350ce0c040ad600",
+   "bytes": 779262,
+   "forbidden_png": false,
+   "bourdeau_no": "24",
+   "decode_name": "Concistoro_2308_66"
+  },
+  {
+   "record": 4812,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4812_I27978_P2.jpg",
+   "native_px": [
+    2248,
+    4000
+   ],
+   "sha1": "0185a43dcf2a4bb6cfd541ac670bde4729889705",
+   "bytes": 933925,
+   "forbidden_png": false,
+   "bourdeau_no": "24",
+   "decode_name": "Concistoro_2308_66"
+  }
+ ]
+}
