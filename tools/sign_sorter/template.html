@@ -1,3 +1,4 @@
+<!doctype html>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__TITLE__</title>
 <style>
@@ -100,6 +101,7 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
 #offer{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:640px;margin:0 auto;background:var(--surface);color:var(--ink);
   border:2px solid var(--accent);border-radius:8px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
 #offer .tiles{margin:0}
+#offer.inbox{position:static;max-width:none;margin:0;box-shadow:none}
 #offer .t{--sz:40px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -168,7 +170,10 @@ const baseCount = Object.fromEntries(basePiles.map(p => [p.id, p.items.length]))
 const baseFam = {}; basePiles.forEach(p => { baseFam[p.family] = (baseFam[p.family] || 0) + p.items.length; });
 const famOrder = Object.keys(baseFam).sort((a, b) => baseFam[b] - baseFam[a] || a.localeCompare(b));
 const pileOf = sid => (moves[sid] && moves[sid] !== 'ASIDE') ? moves[sid] : homeOf[sid];   // the pile a tile is shown in
-const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
+const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');   // db document ids (kept as they were: saved docs use them)
+// DOM ids: capitals are escaped too, so piles "O" and "o" never share an element id (selectors and some lookups can
+// ignore case, e.g. in quirks mode), and "_" always starts an escape, so two different pile names never map to one id.
+const domKey = id => id.replace(/[^a-z0-9-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
 const sel = id => selected[id] || (selected[id] = new Set());
 
@@ -246,8 +251,8 @@ function render(){
     try { el.setSelectionRange(keep.a, keep.b); } catch(e){} } }
 }
 function jumpTo(id){
-  let t = document.getElementById('pile_' + key(id));
-  if (!t && document.getElementById('show').value !== 'all'){ document.getElementById('show').value = 'all'; render(); t = document.getElementById('pile_' + key(id)); }
+  let t = document.getElementById('pile_' + domKey(id));
+  if (!t && document.getElementById('show').value !== 'all'){ document.getElementById('show').value = 'all'; render(); t = document.getElementById('pile_' + domKey(id)); }
   if (!t) return;
   t.scrollIntoView({block: 'start'}); t.classList.add('flash'); setTimeout(() => t.classList.remove('flash'), 1600);
 }
@@ -275,7 +280,7 @@ function pileEl(p, piles){
   ct.textContent = p.members.length + ' tiles' + (aside.length ? ', ' + aside.length + ' set aside' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'one sign' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
-  ph.append(nm, ct, chip); el.append(ph); el.id = 'pile_' + key(p.id);
+  ph.append(nm, ct, chip); el.append(ph); el.id = 'pile_' + domKey(p.id);
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
     near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
@@ -287,7 +292,7 @@ function pileEl(p, piles){
   if (chosen.size){
     const mb = document.createElement('div'); mb.className = 'movebar';
     const lab = document.createElement('strong'); lab.textContent = chosen.size + (chosen.size === 1 ? ' tile' : ' tiles') + ' selected (\u2713). Not saved until you choose:';
-    const dest = document.createElement('select'); dest.id = 'd_' + key(p.id); dest.setAttribute('aria-label', 'Move selected tiles to');
+    const dest = document.createElement('select'); dest.id = 'd_' + domKey(p.id); dest.setAttribute('aria-label', 'Move selected tiles to');
     const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Move to…'; dest.append(o0);
     piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
       .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); dest.append(o); });
@@ -302,12 +307,12 @@ function pileEl(p, piles){
   const acts = document.createElement('div'); acts.className = 'acts';
   const bSame = btn('All one sign', s.verdict === 'same' && !s.merge_into, () => { s.verdict = s.verdict === 'same' ? null : 'same'; s.merge_into = null; save(p.id); render(); });
   const bMark = btn('Not a letter', s.verdict === 'mark', () => { s.verdict = s.verdict === 'mark' ? null : 'mark'; s.merge_into = null; save(p.id); render(); });
-  const mg = document.createElement('select'); mg.id = 'm_' + key(p.id); mg.setAttribute('aria-label', 'Same sign as another pile');
+  const mg = document.createElement('select'); mg.id = 'm_' + domKey(p.id); mg.setAttribute('aria-label', 'Same sign as another pile');
   const g0 = document.createElement('option'); g0.value = ''; g0.textContent = 'Same sign as…'; mg.append(g0);
   piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
     .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); if (s.merge_into === q.id) o.selected = true; mg.append(o); });
   mg.onchange = () => { s.merge_into = mg.value || null; if (s.merge_into) s.verdict = null; save(p.id); render(); };
-  const note = document.createElement('input'); note.type = 'text'; note.id = 'n_' + key(p.id); note.placeholder = 'Note (optional)'; note.value = s.note || '';
+  const note = document.createElement('input'); note.type = 'text'; note.id = 'n_' + domKey(p.id); note.placeholder = 'Note (optional)'; note.value = s.note || '';
   note.onchange = () => { s.note = note.value; save(p.id); };
   acts.append(bSame, bMark, mg, note);
   el.append(acts);
@@ -347,7 +352,10 @@ function moveSel(from, to){
 // the family on this page) to the same pile. Saved as per-tile moves (old apply works unchanged) plus one 'clusters'
 // doc, which sign_sorter_apply.py --atlas-labels writes into the family atlas.
 let offerState = null;
-function hideOffer(){ document.getElementById('offer').hidden = true; offerState = null; }
+function hideOffer(){ const o = document.getElementById('offer'); o.hidden = true; offerState = null; o.classList.remove('inbox'); document.querySelector('.wrap').append(o); }
+// with the dialog open, the offer sits inside it (as a fixed bar it covered the dialog's buttons, Close included: Din f.23r)
+function placeOffer(){ const o = document.getElementById('offer'); if (document.getElementById('ctx').hidden) return;
+  o.classList.add('inbox'); document.getElementById('ctxMsg').after(o); }
 function offerCluster(sids, to){
   hideOffer();
   if (to === 'ASIDE' || to === 'BAD-CUT' || !sids.length) return;
@@ -363,7 +371,7 @@ function offerCluster(sids, to){
   const w = document.getElementById('offerTiles'); w.textContent = '';
   rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = 'data:image/png;base64,' + itemBySid[s].img; b.append(im); w.append(b); });
   if (rest.length > 12) w.append('+' + (rest.length - 12));
-  document.getElementById('offer').hidden = false;
+  document.getElementById('offer').hidden = false; placeOffer();
 }
 function applyCluster(){
   const o = offerState; if (!o) return; hideOffer();
@@ -541,7 +549,7 @@ document.getElementById('ctxBad').onclick = () => {   // tile box cut in the wro
 document.getElementById('ctxNewB').onclick = () => ctxMove(makePile(ctxPid === 'BAD-CUT' ? homeOf[ctxSid] : ctxPid));
 document.addEventListener('keydown', e => { if (document.getElementById('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
-const closeCtx = () => { document.getElementById('ctx').hidden = true; };
+const closeCtx = () => { document.getElementById('ctx').hidden = true; const o = document.getElementById('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); };
 document.getElementById('ctxClose').onclick = closeCtx;
 document.getElementById('ctxX').onclick = closeCtx;
 document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };

@@ -15,6 +15,8 @@ async function open(b, vp, opts) {
   const errs = []; page.on('pageerror', e => errs.push(e.message)); page.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
   await page.goto(PAGE); await page.waitForTimeout((opts && opts.connectMs || 600) + 400); return { ctx, store, page, errs };
 }
+// pile element selector, the way the page itself builds the id (domKey: case-safe, any characters)
+const pileSel = (page, id) => page.evaluate(id => '#pile_' + (typeof domKey === 'function' ? domKey(id) : key(id)), id);
 const focusSids = page => page.evaluate(() => [...document.querySelectorAll('#focusTiles > div')].map(d => d.dataset.sid || d.querySelector('img').alt));
 const bracketVisible = page => page.evaluate(() => { const c = document.getElementById('ctxC'), cv = c.parentElement, it = itemBySid[ctxSid], [x, , w] = it.b;
   const im = pageImgs[it.p], x0 = Math.max(0, x - 180), x1 = Math.min(im.naturalWidth, x + w + 180), css = c.getBoundingClientRect().width;
@@ -37,13 +39,16 @@ const bracketVisible = page => page.evaluate(() => { const c = document.getEleme
       ok('phone: "Check these first" box is not a 2,000 px column of captions', lay.fh < 1000, Math.round(lay.fh)); }
     const caps = await page.evaluate(() => [...document.querySelectorAll('#focusTiles .fcap')].map(e => e.textContent));
     ok(tag + ': focus captions are the question, not a cut-off note', caps.length && caps.every(c => c && !/\]$/.test(c)), caps.filter(c => /\]$/.test(c)).join(' | '));
+    const clash = await page.evaluate(() => { const seen = {}; let n = 0; document.querySelectorAll('.pile').forEach(e => { const k = e.id.toLowerCase(); if (seen[k]) n++; seen[k] = 1; }); return n; });
+    ok(tag + ': no two piles share an element id, even ignoring case ("O" and "o")', clash === 0, clash);
     // 2. focus tile opens on itself, question shown, stepping, zoom, brackets in view
-    await page.locator('#focusTiles .t').nth(3).click(); await page.waitForTimeout(200);
-    ok(tag + ': focus tile opens on that tile', (await page.textContent('#ctxT')).includes(F[3]), await page.textContent('#ctxT'));
-    ok(tag + ': position reads 4 of ' + F.length, (await page.textContent('#ctxPos')).startsWith('4 of ' + F.length), await page.textContent('#ctxPos'));
-    ok(tag + ': the question is shown in the dialog', await page.isVisible('#ctxQ') && (await page.textContent('#ctxQ')).length > 10);
-    await page.click('#ctxNext'); ok(tag + ': Next goes to the 5th focus tile', (await page.textContent('#ctxT')).includes(F[4]) && (await page.textContent('#ctxPos')).startsWith('5 of'));
-    await page.click('#ctxPrev'); ok(tag + ': Previous goes back', (await page.textContent('#ctxT')).includes(F[3]));
+    const j0 = Math.min(3, F.length - 2);
+    await page.locator('#focusTiles .t').nth(j0).click(); await page.waitForTimeout(200);
+    ok(tag + ': focus tile opens on that tile', (await page.textContent('#ctxT')).includes(F[j0]), await page.textContent('#ctxT'));
+    ok(tag + ': position reads ' + (j0 + 1) + ' of ' + F.length, (await page.textContent('#ctxPos')).startsWith((j0 + 1) + ' of ' + F.length), await page.textContent('#ctxPos'));
+    ok(tag + ': the question is shown in the dialog', await page.isVisible('#ctxQ') && (await page.textContent('#ctxQ')).length > 3);
+    await page.click('#ctxNext'); ok(tag + ': Next goes to the next focus tile', (await page.textContent('#ctxT')).includes(F[j0 + 1]) && (await page.textContent('#ctxPos')).startsWith((j0 + 2) + ' of'));
+    await page.click('#ctxPrev'); ok(tag + ': Previous goes back', (await page.textContent('#ctxT')).includes(F[j0]));
     ok(tag + ': bracketed sign in view at zoom 3', await bracketVisible(page));
     const w3 = await page.evaluate(() => document.getElementById('ctxC').getBoundingClientRect().width);
     await page.fill('#ctxZ', '6'); await page.dispatchEvent('#ctxZ', 'input'); await page.waitForTimeout(100);
@@ -69,41 +74,50 @@ const bracketVisible = page => page.evaluate(() => { const c = document.getEleme
     // backdrop closes
     await page.locator('#focusTiles .t').nth(0).click(); await page.mouse.click(vp.viewport.width - 3, vp.viewport.height - 3);
     ok(tag + ': tapping the backdrop closes the dialog', await page.locator('#ctx').isHidden());
-    // 3. decisions from the dialog
-    await page.locator('#focusTiles .t').nth(0).click();
+    // 3. decisions from the dialog, walking a list of 7+ tiles: the focus list if it is long enough, else the biggest pile
+    const fromFocus = F.length >= 7;
+    let bigPile = null;
+    if (fromFocus) await page.locator('#focusTiles .t').nth(0).click();
+    else { bigPile = await page.evaluate(() => basePiles.map(p => p.id).sort((a, b) => membersOf(b).length - membersOf(a).length)[0]);
+      await page.click('#modeCtx'); await page.locator((await pileSel(page, bigPile)) + ' .tiles .t').first().click(); await page.evaluate(() => setMode('sel')); }
+    const L = await page.evaluate(() => ctxList.slice());
+    ok(tag + ': a list of 7+ tiles to walk (' + (fromFocus ? 'focus' : 'pile ' + bigPile) + ')', L.length >= 7, L.length);
     const dest = await page.evaluate(() => document.getElementById('ctxDest').options[1].value);
     const cntBefore = await page.evaluate(d => membersOf(d).length, dest);
     await page.selectOption('#ctxDest', dest);
-    ok(tag + ': move from the dialog lands in the pile', await page.evaluate(([s, d]) => moves[s] === d && membersOf(d).length, [F[0], dest]) === cntBefore + 1);
-    ok(tag + ': dialog moved on to the next focus tile', (await page.textContent('#ctxT')).includes(F[1]));
-    await page.click('#ctxAside'); ok(tag + ': Set aside', await page.evaluate(s => moves[s], F[1]) === 'ASIDE');
-    await page.click('#ctxBad'); ok(tag + ': Bad cut', await page.evaluate(s => moves[s], F[2]) === 'BAD-CUT');
+    ok(tag + ': move from the dialog lands in the pile', await page.evaluate(([s, d]) => moves[s] === d && membersOf(d).length, [L[0], dest]) === cntBefore + 1);
+    ok(tag + ': dialog moved on to the next tile in the list', (await page.textContent('#ctxT')).includes(L[1]));
+    await page.click('#ctxAside'); ok(tag + ': Set aside', await page.evaluate(s => moves[s], L[1]) === 'ASIDE');
+    await page.click('#ctxBad'); ok(tag + ': Bad cut', await page.evaluate(s => moves[s], L[2]) === 'BAD-CUT');
     ok(tag + ': no text box to type a pile name', (await page.locator('#ctx input[type=text]').count()) === 0);
-    const home3 = await page.evaluate(s => homeOf[s], F[3]);
-    await page.click('#ctxNewB'); const np1 = await page.evaluate(s => moves[s], F[3]);
-    ok(tag + ': one tap makes a new pile, named by the page', np1 === home3 + '-b', np1);
+    const want3 = await page.evaluate(() => nextPileName(pileOf(ctxSid)));
+    await page.click('#ctxNewB'); const np1 = await page.evaluate(s => moves[s], L[3]);
+    ok(tag + ': one tap makes a new pile, named by the page', np1 === want3, np1 + ' vs ' + want3);
     ok(tag + ': the new pile is offered first for the next tile', (await page.evaluate(() => document.getElementById('ctxDest').options[1].value)) === np1);
     ok(tag + ': there is a way to say "this tile is in the right pile"', await page.isVisible('#ctxKeep'));
-    if (await page.isVisible('#ctxKeep')) { await page.click('#ctxKeep'); ok(tag + ': keep records the tile and moves on', (await page.textContent('#ctxT')).includes(F[5])); }
-    await page.click('#ctxUndo'); ok(tag + ': dialog Undo shows the undone tile again', (await page.textContent('#ctxT')).includes(F[4]));
+    if (await page.isVisible('#ctxKeep')) { await page.click('#ctxKeep'); ok(tag + ': keep records the tile and moves on', (await page.textContent('#ctxT')).includes(L[5])); }
+    await page.click('#ctxUndo'); ok(tag + ': dialog Undo shows the undone tile again', (await page.textContent('#ctxT')).includes(L[4]));
     if (await page.isVisible('#ctxKeep')) await page.click('#ctxKeep');
     await page.click('#ctxClose');
-    const caps5 = await page.evaluate(() => [...document.querySelectorAll('#focusTiles > div')].slice(0, 5).map(d => d.querySelector('.t').classList.contains('done')));
-    ok(tag + ': answered focus tiles are marked', caps5.every(Boolean), JSON.stringify(caps5));
-    // last tile of the list
+    if (fromFocus) { const caps5 = await page.evaluate(() => [...document.querySelectorAll('#focusTiles > div')].slice(0, 5).map(d => d.querySelector('.t').classList.contains('done')));
+      ok(tag + ': answered focus tiles are marked', caps5.every(Boolean), JSON.stringify(caps5)); }
+    // last tile of the focus list: Keep, then a move, both stay on it and say it was the last
+    const last = F[F.length - 1];
     await page.locator('#focusTiles .t').nth(F.length - 1).click();
+    if (await page.isVisible('#ctxKeep')) { await page.click('#ctxKeep');
+      ok(tag + ': Keep on the last focus tile stays on it and says it was the last', (await page.textContent('#ctxT')).includes(last) && /last tile/.test(await page.textContent('#ctxMsg'))); }
     const dl = await page.evaluate(() => document.getElementById('ctxDest').options[1].value); await page.selectOption('#ctxDest', dl);
-    ok(tag + ': moving the last tile keeps it shown, says so', (await page.textContent('#ctxT')).includes(F[F.length - 1]) && /last tile/.test(await page.textContent('#ctxMsg')));
+    ok(tag + ': moving the last tile keeps it shown, says so', (await page.textContent('#ctxT')).includes(last) && /last tile/.test(await page.textContent('#ctxMsg')));
     await page.click('#ctxClose');
     // 4. select mode in a pile: page does not reshuffle, the pile stays put
     const pid = await page.evaluate(() => [...document.querySelectorAll('.pile')].map(e => e.querySelector('.pid').textContent).find(id => membersOf(id).length >= 4 && byBase[id] && !statusOf(id)));
-    const el = page.locator('#pile_' + pid.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_'));
+    const el = page.locator(await pileSel(page, pid));
     await el.evaluate(e => window.scrollTo(0, e.getBoundingClientRect().top + scrollY - 150));
     const order0 = await page.evaluate(() => [...document.querySelectorAll('.pile .pid')].map(e => e.textContent).join());
     const y0 = await el.evaluate(e => e.getBoundingClientRect().top);
     for (let i = 0; i < 3; i++) await el.locator('.tiles .t:not(.sel)').first().click();
     ok(tag + ': 3 tiles selected', (await el.locator('.t.sel').count()) === 3);
-    const far = await page.evaluate(p => { const me = byBase[p].family; return basePiles.find(q => q.family !== me).id; }, pid);
+    const far = await page.evaluate(p => { const me = byBase[p].family; return (basePiles.find(q => q.family !== me) || basePiles.find(q => q.id !== p)).id; }, pid);
     await el.locator('.movebar select').selectOption(far); await page.waitForTimeout(100);
     ok(tag + ': families and piles keep their order after a move', order0 === await page.evaluate(() => [...document.querySelectorAll('.pile .pid')].map(e => e.textContent).join()));
     ok(tag + ': the pile you worked on stays where it was on screen', Math.abs(await el.evaluate(e => e.getBoundingClientRect().top) - y0) < 3);
@@ -111,27 +125,27 @@ const bracketVisible = page => page.evaluate(() => { const c = document.getEleme
     for (let i = 0; i < 2; i++) await el.locator('.tiles .t:not(.sel)').first().click();
     ok(tag + ': pile move bar has no name box to fill', (await el.locator('.movebar input').count()) === 0);
     const prevAuto = await page.evaluate(p => Object.keys(newPiles).filter(n => n.startsWith(p + '-')), pid);
+    const want = await page.evaluate(p => nextPileName(p), pid);
     await el.locator('.movebar button', { hasText: 'New pile' }).click(); await page.waitForTimeout(100);
     const auto = await page.evaluate((a) => Object.keys(newPiles).filter(n => n.startsWith(a.p + '-') && !a.b.includes(n)).map(n => [n, membersOf(n).length]), {p: pid, b: prevAuto});
-    const want = pid + '-' + 'bcdefghijklmnopqrstuvwxyz'[prevAuto.length];
     ok(tag + ': "New pile" in the pile view makes the next auto name (' + want + ') with the 2 tiles', auto.length === 1 && auto[0][0] === want && auto[0][1] === 2, JSON.stringify(auto));
     // verdict + progress
     await el.locator('.acts button', { hasText: 'All one sign' }).click();
     ok(tag + ': All one sign counts in the progress', /^1 of/.test(await page.textContent('#prog')), await page.textContent('#prog'));
     // typing a note survives a snapshot from another device
     const note = el.locator('.acts input[type=text]'); await note.click(); await note.type('half a no');
-    await store.external(page, 'moves', 'zz_other', { sid: F[6], from: 'x', to: dest }); await page.waitForTimeout(200);
+    await store.external(page, 'moves', 'zz_other', { sid: await page.evaluate(L => Object.keys(itemBySid).find(x => !L.includes(x) && !moves[x]), L), from: 'x', to: dest }); await page.waitForTimeout(200);
     ok(tag + ': a note being typed survives an update from another device', (await page.evaluate(() => document.activeElement.value)) === 'half a no');
     await page.keyboard.type('te'); await page.keyboard.press('Tab');
     // jump to pile from "Possibly similar" while that pile is filtered out of view
     const pr = await page.evaluate(() => { const p = basePiles.find(q => !statusOf(q.id) && membersOf(q.id).length && q.near && q.near.length && byBase[q.near[0]] && !statusOf(q.near[0]) && membersOf(q.near[0]).length); return p ? [p.id, p.near[0]] : null; });
     if (pr) {
-      const k = id => '#pile_' + id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
-      await page.locator(k(pr[1]) + ' .acts button', { hasText: 'All one sign' }).click();
+      const k1 = await pileSel(page, pr[1]), k0 = await pileSel(page, pr[0]);
+      await page.locator(k1 + ' .acts button', { hasText: 'All one sign' }).click();
       await page.selectOption('#show', 'todo');
-      await page.locator(k(pr[0]) + ' .near button', { hasText: new RegExp('^' + pr[1] + '$') }).click(); await page.waitForTimeout(100);
+      await page.locator(k0 + ' .near button', { hasText: new RegExp('^' + pr[1] + '$') }).click(); await page.waitForTimeout(100);
       const r = await page.evaluate(id => { const e = document.querySelector(id); if (!e) return null; const t = e.getBoundingClientRect().top;
-        return { t, bar: Math.max(0, document.querySelector('.bar').getBoundingClientRect().bottom) }; }, k(pr[1]));
+        return { t, bar: Math.max(0, document.querySelector('.bar').getBoundingClientRect().bottom) }; }, k1);
       ok(tag + ': "Possibly similar" jump reaches a pile hidden by the Show filter, not under the toolbar', r && r.t >= r.bar - 1 && r.t < vp.viewport.height / 2, JSON.stringify(r));
       await page.selectOption('#show', 'all');
     }
