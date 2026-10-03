@@ -3009,6 +3009,30 @@
         "AUDIT.md AUDIT2-NEVBIR-90R"
       ],
       "reading_version": "NEVBIR-184 + NEVBIR-185"
+    },
+    {
+      "date": "3 Oct 2026",
+      "kind": "recovery",
+      "key": "period",
+      "novelty": "N3",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3621-dinteville-1592",
+      "fields_source": "fr3621-dinteville-1592/AUDIT.md, VERIFY-DIN and \"Second audit\" (VERIFY-DIN2)",
+      "document_id": "BnF fr.3621 f.130r (no.116), Joachim de Dinteville to the Duke of Nevers, Langres, 3/4 July 1592",
+      "title": "BnF fr.3621 f.130r, Dinteville to the Duke of Nevers, Langres, 3/4 July 1592: cipher passages read with a period key rebuilt from the sibling letter f.128 and its 1882 printed plaintext",
+      "grade": "N3 (VERIFY-DIN, VERIFY-DIN2), key period (rebuilt by aligning the f.128 cipher to its plaintext printed in Revue de Champagne et de Brie XII, 1882, p.340). 527 tokens: C 177 M 311 U 39, no H, no S (strict rule). f.130 decode fr16 -1.271 vs 0/3000 free and 0/3000 frequency-banded shuffles; wrong-text control 0/20. Judge not passed as a reading.",
+      "line": "Fragmentary reading (our interpretation): keeping the town in the king's obedience, the forces outside will serve, provide and withdraw since there is honour to lose; no prior decipherment of the cipher passages located (3 Oct 2026); the letter's clear parts are summarised in the 1882 Revue.",
+      "completeness": "177/527 at C (strict); 291 under the solver's conservative rule",
+      "unresolved_spans": "311 M (incl. polyphones # and v), 39 U (v', 0', two new signs absent from f.128)",
+      "audit_refs": [
+        "AUDIT.md VERIFY-DIN",
+        "AUDIT.md Second audit (VERIFY-DIN2)"
+      ],
+      "reading_version": "DIN-PRINT (09d32335)"
     }
   ],
   "lanes": [
@@ -3353,11 +3377,6 @@
       "target": "birago-fr3252-1571-72",
       "title": "BnF fr.3252 f.47r (Birago to Nevers, 26 Apr 1571): printed Ceppo-Nevers key control-backed on the whole letter (rank 1/201, z 3.4-4.2, power 19-20/20 at two-reader error 0.33; NEVBIR-47, 2 Oct 2026); text word islands only, judge FAIL. f.117r (13 Mar 1572) under the 1572 key rank 1/201 z 3.21, not licensed.",
       "next": "NEVBIR-47C third reader on 257 split tiles (~USD 3), then a verifier; f.117 owner sorter or a fourth reader"
-    },
-    {
-      "target": "fr3621-dinteville-1592",
-      "title": "BnF fr.3621 f.130r (Dinteville to Nevers, Langres 3/4 July 1592): key rebuilt from the 1882 printed plaintext of sibling f.128 (print alignment 0.831 vs p95 0.33) reads f.130r at fr16 -1.271, 0/1000 free and frequency-banded shuffles (DIN-PRINT, 3 Oct 2026); C 291 M 197 U 39 (conservative); VERIFY-DIN N3.",
-      "next": "second verifier on f130/print/reading.txt (VERIFY-DIN2), then fr.3623 f.23 sign set for v' and 0'"
     }
   ]
 }
