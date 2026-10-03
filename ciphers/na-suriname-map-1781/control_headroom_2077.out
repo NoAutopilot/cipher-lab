@@ -1,0 +1,2 @@
+plain-positive full: letters 359 (target cipher tokens 658, plain letters total 359); real 17; shuffled-order null mean 0.12, p95 1, max 2; null >= real 0/1000; HEADROOM
+plain-positive matched: letters 359 (target cipher tokens 658, plain letters total 359); real 17; shuffled-order null mean 0.12, p95 1, max 2; null >= real 0/1000; HEADROOM

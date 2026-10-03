@@ -7,6 +7,13 @@ M=list(csv.DictReader(open('passes/leg2077_merged.tsv'),delimiter='\t'))
 R={}
 for r in csv.DictReader((l for l in open('passes/leg2077_reconcile.tsv') if not l.startswith('#')),delimiter='\t'):
     if r['pos'].strip().isdigit(): R[(r['crop'].strip(),int(r['pos']))]=r
+    elif r['crop'].strip()=='NAME': R[('NAME',r['pos'].strip())]=r
+# GAPS20 (3 Oct 2026): the reconciler's three NAME answers (Part 2 of the brief) rename a neutral shape name to the key's own
+# shape name when it answered yes (DIGIT7 -> 7, TALLV -> [v-tall]); an OTHER answer leaves the neutral name (unkeyed).
+REN={}
+for nm,yes,to in (('r-rot','DIGIT7','7'),('c-curl','TALLV','[v-tall]'),('kappa','LETTERk','k')):
+    d=R.get(('NAME',nm))
+    if d and d['decision'].strip()==yes: REN['['+nm+']']=to
 by={}
 for r in M: by.setdefault(r['crop'],[]).append(r)
 rows=[]
@@ -31,6 +38,7 @@ for c,lst in by.items():
             out.append((dec,'H' if d['conf'].strip()=='H' else 'M',r['note']+'; reconciled '+d['conf'].strip()+': '+d['note']))
         else: out.append((r['sign'],'H',''))
     for j,(s,g,n) in enumerate(out):
+        if s in REN: n=(n+'; ' if n else '')+'NAME '+s+'->'+REN[s]; s=REN[s]
         if s.startswith('<') and s.endswith('>'): s='w:'+s[1:-1]
         rows.append((LINE[c],j,s,g,n))
 head=['# NA 4.VEL 2077 (Plan van de fortress Zelandia, 1781): title cartouche 3 lines, plain heading, the mixed plain/cipher',

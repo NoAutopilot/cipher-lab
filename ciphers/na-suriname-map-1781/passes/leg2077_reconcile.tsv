@@ -1,0 +1,78 @@
+crop	pos	decision	conf	note
+leg77_L01	4	A	M	ezh-like glyph with a small dot to its left after h-loop
+leg77_L01	7	B	H	clear dot between psi and lambda
+leg77_L01	17	B	M	q-like bowl with stroke through descender after w 3
+leg77_L01	27	B	M	small dot visible between lambda and pi
+leg77_L02	5	A	M	6-like bowl leaning right, same shape as line-initial sigma
+leg77_L02	17	A	M	bowl with tall ascender hooking right (delta-like), not curling back left as the d-loop at pos 23
+leg77_L02	24	A	M	plain small r after d-loop, not the 7-like r-rot
+leg77_L02	29	A	M	small round a, not a hollow triangle
+leg77_L03	0	B	M	line-initial bowl whose ascender curls back to the left
+leg77_L03	1	SAME f-loop=s-loop	M	use [f-loop]; looped long f/s, no distinct second shape seen across lines
+leg77_L03	3	A	M	small open c after 3
+leg77_L03	15	B	M	6-like bowl with dot above, followed by a separate delta
+leg77_L03	16	B	H	separate hollow triangle visible before l
+leg77_L05	4	A	M	small round s after hash
+leg77_L05	9	B	M	7-like rotated r before u-dots
+leg77_L05	18	B	M	x in repeated u-dots delta g x sequence; dot(s) seen on same word in L08/L14; take x-dots for consistency
+leg77_L05	20	A	M	hollow triangle with a stroke beneath (possibly underline/ruling)
+leg77_L05	21	B	M	curly looped shape similar to entry c c-curl
+leg77_L05	24	B	M	same shape as the 5 in L01 '5 delta h'
+leg77_L05	56	A	M	ezh-like glyph with dot, as in L01 pos4 before l
+leg77_L05	63	A	M	small round s after psi
+leg77_L05	64	SAME f-loop=s-loop	M	use [f-loop]
+leg77_L05	65	A	M	5-like with flag top
+leg77_L06	5	A	M	plain r in 'a g r o'
+leg77_L06	7	A	M	small round s
+leg77_L06	8	SAME f-loop=s-loop	M	use [f-loop]
+leg77_L06	34	A	M	plain r after h-loop
+leg77_L06	35	A	M	bowl with tall ascender hooked right; possible mark above not clear
+leg77_L06	39	B	M	6-like bowl leaning right between o and s
+leg77_L06	40	A	M	short round s, not long looped s
+leg77_L07	16	A	M	period-like mark after Mon
+leg77_L08	0	A	M	ditto/comma mark precedes teerings
+leg77_L08	6	B	M	x with dot visible
+leg77_L08	23	B	M	6-like bowl leaning right after v
+leg77_L08	38	B	M	6-like bowl leaning right after g
+leg77_L08	50	B	M	inverted V with bar after hash
+leg77_L09	1	A	M	small round s between l and h-loop
+leg77_L09	37	B	M	lambda-like stroke, no base; map line crosses it
+leg77_L10	5	B	M	s with dot below
+leg77_L10	19	B	M	d with ascender curling left; map line crosses it
+leg77_L10	29	B	M	inverted V with bar after hash, as L08 pos50
+leg77_L10	45	A	M	3-like glyph after w-tilde
+leg77_L10	46	B	M	curly tall looped shape, same as p-entry first glyph, not a trident
+leg77_L10	50	B	M	d-hook-like bowl with dot/loop above
+leg77_L10	52	B	M	5-like shape after hash
+leg77_L10	66	B	M	6-like bowl before closing ditto mark
+leg77_L11	17	B	M	6-like bowl leaning right
+leg77_L11	41	B	M	6/sigma ambiguous bowl after f-loop; leans right
+leg77_L11	60	A	M	small round s after c-curl
+leg77_L11	61	A	M	long looped f/s present, crossed by map diagonal
+leg77_L12	4	B	M	reads Cöps; no separate r seen
+leg77_L12	21	A	M	Q-like bowl with stroke through descender
+leg77_L13	11	A	M	ampersand-like shape with superscript o over a bar
+leg77_L14	0	A	M	comma after gebouw
+leg77_L14	9	B	M	x in repeated u-dots delta g x word; take x-dots as L08
+leg77_L14	40	B	M	bowl with tall ascender hooked right
+leg77_L14	42	A	M	3-like after h-loop
+leg77_L15	7	B	M	6-like bowl leaning right before p
+leg77_L16	0	A	M	ditto/comma mark at line start
+leg77_L17	1	A	H	one hyphenated word Cipiers=wooning
+leg77_L17	2	A	H	no separate word; woning is part of pos1
+leg77_L17	7	SAME @=[c-at]	M	use <@>; c enclosing a small c/a, @-like
+leg77_L18	1	SAME γ.=y.	M	use <γ.>; y-like shape; label sequence alpha @ gamma delta
+leg77_L18	2	B	M	underlined M-like/MM shape
+leg77_L18	29	B	M	6-like bowl leaning right
+leg77_L19	2	B	M	6-like bowl leaning right
+leg77_L19	6	A	M	small round s after psi
+leg77_L19	22	B	M	6-like bowl leaning right
+leg77_L19	23	A	H	separate hollow triangle before h-loop
+leg77_L19	28	B	M	trident before c-curl
+leg77_L19	30	B -	M	no extra glyph seen between c-curl and m
+leg77_L19	35	SAME η.=ŋ.	M	use <η.>; n with long right descender, tick above
+leg77_L19	36	A	H	period after Citerne
+leg77_L20	8	A	M	small round s after lambda
+NAME	r-rot	DIGIT7	M	7-shaped: short top bar with descending stroke, matches '9 7 4 3 7 0' style in L15; distinct from plain r
+NAME	kappa	OTHER	M	x-height kappa-like shape (no tall ascender), not a lowercase k
+NAME	c-curl	TALLV	M	v whose left stroke rises high and loops over, curling into the right stroke
