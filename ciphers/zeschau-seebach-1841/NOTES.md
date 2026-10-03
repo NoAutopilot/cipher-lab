@@ -353,10 +353,41 @@ Requests: de-crypt.org 1 login + 1 RecordsView + 2 thumbnails + 2 full-size = ab
 navigation before the cert fix). No other host. Vision: 3 by this session (overview, overlay, reconcile montage),
 plus 2 Opus subagent passes.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, 3 Oct 2026)
+## GAPS202-zeschau-seebach-1841 (3 Oct 2026, account-4)
+
+Step run: the Verdict line's "seeded syllabary annealer on R5005+R5006+R5007 with its matched synthetic control".
+Pre-registered in `PREREG-GAPS202.md` (c2aa1fee, before any run; Addendum A 2f2c3a95, after control attempt 1 and
+before attempt 2). Script `anneal_syllabary.py` (numpy); `--check` re-runs the control and exits 0. 0 vision calls,
+no network. R5005 digits are Bourdeau's transcription (dbourdeau/cyphersolver, MIT / CC BY 4.0).
+
+- Pool as parsed: R5005 1,846 pairs (Bourdeau's per-line phases; 3,692 of its 3,969 digits fall in whole pairs),
+  R5006 345, R5007 475 = **2,666 tokens, K = 98 codes**. French model (fr19, 4 novels) on R5005+R5006, German
+  (de19, 2 books) on R5007; one held-out book per language feeds the control's plaintext. de1600 not used (wrong
+  era); neither corpus is diplomatic register. The brief asked for a German control; 4,661 of the 5,612 digits are
+  French, so the control matches the pool's French/German mix (stated in the prereg).
+- Matched control: a synthetic one-code-per-unit syllabary of the same K = 98 (26 letters + Bourdeau's 4
+  multi-letter pin units + the commonest bigrams/trigrams), held-out French/German text at the same token count per
+  letter, 1 pct digit errors, the 7 pin units held fixed exactly as Bourdeau's 7 are in the target. 277-unit search
+  inventory, 4 restarts x 30,000 moves, seeds 2021-2023. Gate: mean token accuracy >= 0.60.
+
+| attempt | objective | control token accuracy (3 seeds) | mean | true key's score vs annealer's best | verdict |
+|---|---|---|---|---|---|
+| 1 | summed log10 4-gram | 0.070 / 0.027 / 0.000 | **0.032** | -3762.7 vs -3459.0 | CONTROL BELOW GATE |
+| 2 (Addendum A) | length-neutral (per letter x tokens) | 0.000 / 0.000 / 0.000 | **0.000** | -2347.1 vs about -1972 | CONTROL BELOW GATE |
+
+- **Target not run** (`python3 anneal_syllabary.py target` exits 1, "CONTROL BELOW GATE"). No shuffled-target run,
+  no judge run, no reading: 0 tokens graded. The pins remain Bourdeau's grade-I values.
+- What the numbers say: both times the annealer scored the control *higher* than the control's own true key, so the
+  search is not what fails, the objective is: at N = 2,666 tokens and K = 98 free codes over a 277-unit inventory, a
+  letter-4-gram score has optima that are not the key (attempt 1 rewards short decodes, attempt 2 long frequent
+  trigrams). Logged "untested-by-this-tool at this N" (rule 3 repeated-attempt clause, as the addendum fixed in
+  advance; no third tuning of the objective), not a negative about the cipher. Files: `anneal_control_v1.json`,
+  `anneal_control.json`, HYPOTHESES.md rows GAPS202 a/b.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026)
 Read so far: 1,643 digits transcribed (R5006 whole, 692; R5007 whole cipher body, 951 = 603 left + 348 right, GAPS190/196) of about 2,500-3,000 on R5006-R5008; R5007 p.1 holds no cipher (GAPS190); 0 tokens read
 - R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179/190/196); next: check each R5008 page for cipher on an overview first (R5007 p.1 had none), then one cipher page per worker as GAPS190/196 (1 login, iiif_lines crops, 2 blind Opus passes per half-page + 1 reconcile), ~$4-6 a page, about $10 for R5008
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, T1 0.886 vs control mean 0.760, p 0.0005) and on R5007 (GAPS196, T1 0.838 vs control mean 0.752, p95 0.789, p 0.0005, power 200/200 at N=951; pin coverage n.s. both times); next: a syllabary annealer seeded with Bourdeau's 7 pins on R5005+R5006+R5007 (5,612 digits: 3,969 + 692 + 951) with its matched synthetic-syllabary control at the same N and design, ~$3; rerun `crib_test.py` on R5008 once transcribed
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); the letter-4-gram syllabary annealer is retired at this N (GAPS202: matched control 0.032 then 0.000 token accuracy vs gate 0.60, both times the annealer out-scored the control's own true key, target not run); next: a different instrument -- a crib-anchored search on R5008's known sentence frame (Bourdeau, What would move it item 3) once R5008 is transcribed, or a word-segmentation objective with its own control first, ~$3; rerun `crib_test.py` on R5008 once transcribed
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -364,10 +395,10 @@ Read so far: 1,643 digits transcribed (R5006 whole, 692; R5007 whole cipher body
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools can be merged; next a seeded syllabary annealer on R5005+R5006+R5007 with a matched control, then R5008
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; the letter-4-gram annealer failed its matched control twice (GAPS202, 0.032 / 0.000 vs gate 0.60, retired for that instrument); next a different instrument: crib-anchored search on R5008's sentence frame after R5008 is transcribed
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps (R5007 fully transcribed by GAPS190/196, 951 digits, two-pass agreement 99.0%/98.9%; crib test on R5007 by GAPS196, same pair profile as R5005, p 0.0005, power 200/200); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: seeded syllabary annealer on R5005+R5006+R5007 with its matched synthetic control, ~$3, or transcribe R5008 (overview first), ~$10
+Verdict: keep going: 2 internal gaps (GAPS202's 4-gram syllabary annealer failed its matched control twice, 0.032 then 0.000 vs gate 0.60, target not run -- a non-test, not a negative); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: transcribe R5008 (overview first, then one cipher page per worker), ~$10, which also feeds the crib-anchored key search on its known sentence frame
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 

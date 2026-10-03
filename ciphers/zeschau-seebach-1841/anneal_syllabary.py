@@ -3,7 +3,7 @@
 
 Usage: python3 anneal_syllabary.py control            synthetic French/German syllabary at the pool's N and K
        python3 anneal_syllabary.py target [--shuffled] only after the control cleared the 0.60 gate
-       python3 anneal_syllabary.py --check             exits 1 if a committed anneal_*.json is stale (rule 7)
+       python3 anneal_syllabary.py --check             re-runs the control; exits 1 if anneal_control.json is stale (rule 7)
 R5005 digits: Bourdeau's transcription (dbourdeau/cyphersolver, MIT / CC BY 4.0). Pins = his 7 gloss values, grade I.
 Needs numpy. Writes anneal_<mode>.json (and anneal_<mode>_decode_<lang>.txt for target modes).
 """
@@ -231,8 +231,11 @@ def target(out, shuffled):
 
 
 if __name__ == "__main__":
-    if "--check" in sys.argv:
-        sys.exit(0 if (HERE / "anneal_control.json").exists() else 1)
+    if "--check" in sys.argv:  # re-runs the control (~45 s) and compares with the committed json
+        import tempfile
+        tmp = Path(tempfile.mkdtemp()) / "anneal_control.json"
+        control(tmp)
+        sys.exit(0 if tmp.read_text() == (HERE / "anneal_control.json").read_text() else 1)
     mode = sys.argv[1]
     if mode == "control":
         control(HERE / "anneal_control.json")

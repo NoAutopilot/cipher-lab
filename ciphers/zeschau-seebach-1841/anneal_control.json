@@ -1,0 +1,29 @@
+{
+ "mode": "control",
+ "K": 98,
+ "N_tokens": 2666,
+ "units": 98,
+ "inventory": 277,
+ "error_rate": 0.01,
+ "true_key_J": -2347.1,
+ "seeds": [
+  {
+   "seed": 2021,
+   "J": -1979.2,
+   "token_acc": 0.0
+  },
+  {
+   "seed": 2022,
+   "J": -1972.4,
+   "token_acc": 0.0
+  },
+  {
+   "seed": 2023,
+   "J": -1969.7,
+   "token_acc": 0.0
+  }
+ ],
+ "mean_token_acc": 0.0,
+ "gate": 0.6,
+ "verdict": "CONTROL BELOW GATE"
+}
