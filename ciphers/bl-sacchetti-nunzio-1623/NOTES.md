@@ -1,5 +1,5 @@
 open
-Pastor, *History of the Popes* vol. XXVIII (Urban VIII, archive.org `historyofpopes0000ludw_z2c4`), full-text searched by this worker (be-api fts, control "Olivares" 1 hit confirming the search functions): "Sacchetti" returns his 1624 Spain-nuncio appointment and instruction (p. ~530 by the index's own numbering) but no co-occurrence with "cipher"/"cypher" in any of the 5 returned snippets, and the volume's 5 "cipher" snippets all name later nuncios (Bagno, Pallotto, Pamfili, Monti, all post-1626) — no hit places a ciphered Sacchetti dispatch in print.
+Pastor, *History of the Popes* vol. XXVIII (archive.org `historyofpopes0000ludw_z2c4`) and Döllinger, *Akademische Vorträge* I (1888, archive.org `11534489bsb`), each full-text searched by this worker on 3 Oct 2026 (be-api fts, "Sacchetti" 1 hit each, "cipher" in Pastor naming only Bagno, Pamfili, Monti and Pallotto), plus the BL catalogue records for Add MS 8693-8698 (searcharchives.bl.uk JSON) read in full by this worker: no printed edition of the registers located, and the BL describes volumes I-IV as registers copied in the Curia with clear Italian incipits and only "some letters still in cipher" (Add MS 8697), see Premise check.
 
 ## Check-solved (LANE CX, 25 Sept 2026)
 
@@ -101,3 +101,45 @@ Italian scholarship and journal literature.
 3. Not digitised (per QUEUE row); BL Imaging quote is the fallback route once (1)-(2) are exhausted — draft a
    REQUEST.md line if this target is promoted further, not done this sweep (six registers is a large ask to
    quote sight-unseen).
+
+## Web and blog check (CS-A2-F, 3 Oct 2026)
+
+Run for LANE-A2PUSH (account 2), 3 Oct 2026, 00:41-01:05 UTC.
+
+(a) Plain web searches, five (WebSearch, standard):
+1. `Sacchetti nuncio Spain 1624 1625 Barberini cipher dispatches decipherment` -- hits: the BL's own records (032-002029577, 036-002029578, 040-002029579..584), SNAC Barberini Taddeo, Yale Beinecke "Instruttione a Monsig. Sacchetti" (digital.library.yale.edu/catalog/33096754). No decipherment, edition or blog post.
+2. `"Add MS 8693" Sacchetti British Library cifre` -- BL records again; TNA Discovery pages for unrelated BL collections; nothing on a decipherment.
+3. `"Sacchetti" nunziatura di Spagna 1624-1626 edizione dispacci cifra Barberini Madrid` -- BL records, Folger catalogue record 223267 and SNAC; no printed edition of the dispatches.
+4. `Registro di cifre Segreteria di Stato Urbano VIII Nuntio di Spagna Vescovo di Gravina Sacchetti` -- BL and Yale records only.
+5. `site:scienceblogs.de Sacchetti OR site:cryptiana.blogspot.com Sacchetti OR site:ciphermysteries.com Sacchetti nuncio` -- Wikipedia (Giulio Cesare Sacchetti), Yale, unrelated ciphermysteries posts (Simonetta, Voynich).
+(The 25 Sept section also ran the model-solve query with "solves" + Claude/GPT: no hit.)
+
+(b) Blog site searches, by the sites' own search URLs (curl, descriptive UA):
+- Cipher Mysteries `ciphermysteries.com/?s=Sacchetti`: HTTP 200, "Nothing Found".
+- Cipherbrain `scienceblogs.de/klausis-krypto-kolumne/?s=Sacchetti`: HTTP 200, page carries the `no-results` marker.
+- Cryptiana blog `cryptiana.blogspot.com/search?q=Sacchetti`: HTTP 200, "no results" text, no post list.
+
+(c) Opened: BL records (below) and the Yale Beinecke record titles. No blog post exists, so no comment thread was read.
+
+Other sources this pass: DECODE listing (cached `sources/decode/records-non-decrypted-2026-09-24-diff.tsv`) has no Sacchetti record; the only matches are tag lists on BL Add MS 72438 ff. 9-10 (our own target labels). Bourdeau: `sources/solver-diffs/2026-10-03-bourdeau.tsv` row bl-sacchetti-nunzio-1623 "no match, different item". Aymeloglu: `2026-10-03-aymeloglu.tsv` no row for it. Fresh clones not made; these are the 3 Oct 2026 diffs of the two repositories.
+
+Requests: searcharchives.bl.uk 11 (2 s apart, all 200; first 2 attempts returned 301 because the `/catalog.json` path was wrong), archive.org 1 advancedsearch, be-api.us.archive.org 6, ciphermysteries.com 2, scienceblogs.de 2, cryptiana.blogspot.com 2, WebSearch 5.
+
+## Premise check (CS-A2-F, 3 Oct 2026)
+
+**(a) The folder's own mentions: found, and it changes the picture.** The BL records (`searcharchives.bl.uk/catalog/<id>`, Accept: application/json, read 3 Oct 2026):
+- 032-002029577 (Add MS 8693-8698): "Copies, partly in cipher ... The six-volume registers were copied in the Papal Curia upon his return to Rome on 10 Aug. 1626 (see 8695, f. 1)". Digitised Content field empty. Access text: "Please request the physical items ... online collection item request form" (not a viewer link).
+- 040-002029579 (8693): title "Registro di cifre alla Segreteria di Stato ... del Nuntio di Spagna"; incipit and explicit are clear Italian ("Al Signor Cardinale Barbarino / Alle Cifre di Vostra Illustrissima con lettere dei 12 e 13 Marzo"). It says a passage is quoted "from the present MS" in Döllinger, Akademische Vorträge I (1888), p. 258, a report of 16 Jan 1625.
+- 040-002029582 (8696, vol. IV): "Registro di Cifre della Segreteria di Stato ... al Nuntio di Spagna"; incipit clear Italian ("La principal cagione di quello si scrive a Vostra Signoria").
+- 040-002029583 (8697, vol. V): "Some letters still in cipher."
+- 8694, 8695, 8698: no cipher statement in the catalogue text.
+So the registers are Curia copies in which the "cifre" (cipher dispatches) already stand in clear Italian; the catalogue names only a residue in vol. V as still in cipher. Whether any cipher groups are inside 8693-8696 is not stated. This is catalogue text, not a view of the leaves. The earlier framing of the target (six volumes "partly in cipher") is the shelfmark-level phrase.
+**(b) Other solvers' working files: not found.** Bourdeau and Aymeloglu diffs list no work on this item.
+**(c) Physical neighbours / facing pages: unreachable.** Not digitised per the record; no image to view. Gate: only a copy order or visit can show which leaves, if any, carry cipher groups.
+**(d) Recipient side: found, partial.** Döllinger 1888 (fts hit "Aus dem Codex des Britischen Museums Nr. 8693; Sacchetti, Nunziatura di Spagna") prints a German rendering of a clear passage from 8693 (Olivares to the nuncio); Pastor XXVIII cites Casanatense and Vatican copies of the Instruction. Neither prints cipher groups or a decipherment. Barberini-side editions (Vatican Barb. lat. nunciature series) not searched this pass.
+
+Consequence for later work (not a novelty claim): before any money goes on a copy order, ask the BL for the folio list of the "still in cipher" letters in Add MS 8697 (REQUEST.md already asks for a scope note); most of 8693-8696 may be readable plain text, so the cryptanalytic content is probably small.
+
+## Verdict (CS-A2-F, 3 Oct 2026)
+
+`open`, now with a web and blog check and a premise check. Search results only; no decipherment or edition of these registers was located by this worker in the sources above.
