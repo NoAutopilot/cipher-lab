@@ -650,6 +650,21 @@ pass by crop count, not by pass (FILS-NOMEN 1.2x); send trial crops to the scrat
 (DUCH-KEY1 stopped on a denied rm); never `git stash` around a NOTES.md rebase (TXD-HOLDOUT's one denial); a power gate before
 transcription saved two keys' worth of work (DUCH-KEY4, VILL-7280, VILL-SIGNS stopped at the gate as designed).
 
+**Wave 7-8 addendum (11:30-12:30 UTC, rows queued by the account-3 orchestrator in WORK-QUEUE; brief
+`.claude/briefs/runs/2026-10-03-acct3-a1-wave7.md`).** Five more workers, USD 20.42 (2 D, 2 D-, 1 N). Lane totals:
+36 worker rows, USD 107.52 (25 D, 3 D-, 1 F, 7 N); orchestrator about USD 16.5.
+- Birago/Nevers (account-3 campaign): A1-POSNULL -- the printed 1572 key at lam 4 beats >= 200 position-shuffled lattices on
+  f.117r, f.168 (0/200 reach rank 1) and f.144r (thin, 2/200). A1-BIR-EYE -- a blind reader picks the key-implied sign over
+  decoys at the lattice-changed positions on all three leaves (pooled 39/55 vs 4/55). A1-BIR-VERIFY (separate session) --
+  f.117r re-cut at the original band and an ambiguity-matched decoy arm added: 19/19 f.117r and 5/5 f.168 candidates kept and
+  applied at S (decode --check 0), f.144r's 4 dropped; grades f.117r S179 M74 U26, f.168 S90 M22 U10, f.144r S40 M36 U14;
+  judge still FAILs on all three. No reading committed, no class.
+- fr3993-villeroy-1595: A1-VILL-TABLE -- fr.3995 nos.44/45/52/56 carry no pi/theta/infinity family (no.57 on canvases f198-f200
+  unviewed); A1-VILL-HOMO -- control-backed negative for one-sign-one-letter homophonic (control 0.764 vs gate 0.6, target judge
+  FAIL -1.35 vs -0.873); figure-pair codes untested.
+- Tool: tools/work_queue.py truncated WORK-QUEUE.tsv on a trailing-tab row (41ecb2c4, restored 56efdee8); fixed by the
+  account-3 orchestrator (temp-file write, test added).
+
 **Open next steps (all wait on someone, or are campaign-size):** owner -- ASKS 110 (Repertoire page), 111 (fr.3994 f.134
 reproduction), 112 (f.23r sorter), 113 (fr4712 same-hand look), 78 (fr.4718 fols. 17/21/40); after the f.23r sort, the 6-line
 f.23r alignment (~USD 30-48); fr3993 (h) a later fr.3995 table with pi/theta/infinity, (i) homophonic family_run with K as null
