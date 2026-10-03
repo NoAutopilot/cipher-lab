@@ -54,3 +54,10 @@ line	pos	value	grade	reason
 2077_L20	13	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
 2077_L20	20	y	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 11/11 mapped instances R22 (Nieuw Y row tau) 0.6, runner-up R27 (n) 0.15
 2077_L20	21	b	H	GAPS21 blind shape call 1 (passes/signcmp_gaps21): class-level (prereg rule >=2/3 met), instance not in call 1; 4/4 mapped instances R4 (Nieuw B row looped d) 0.6, runner-up R15 (I row 8) 0.45
+2077_L10	61	l	C	GAPS23 2078 Nota parallel (passes/nota2078_gaps23, prereg 5c306ccd, gate PASS 0.696 vs N1 p99 0.446 / N2 p99 0.277): 2077 q ~ 2078 b 'Artillerie Casserne en Monteerings Kamer', g|l aligned to l with 3+3 H neighbours matching
+2077_L11	17	i	C	GAPS23 2078 Nota parallel: 2077 q ~ 2078 b, unkeyed [sigma] aligned to i with H neighbours matching (transcription conf M, so decode_key caps it at M)
+2077_L12	26	l	C	GAPS23 2078 Nota parallel: 2077 u ~ 2078 d 'Laboratorium van d'Artillerie', g|l aligned to l with H neighbours matching
+2077_L12	48	l	C	GAPS23 2078 Nota parallel: 2077 u ~ 2078 d, g|l aligned to l with H neighbours matching
+2077_L13	3	e	C	GAPS23 2078 Nota parallel: 2077 u ~ 2078 d, unkeyed [d-hook] aligned to e with H neighbours matching
+2077_L12	10	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n 'Bakkerÿ, defect', k|i aligned to k with H neighbours matching
+2077_L12	11	k	C	GAPS23 2078 Nota parallel: 2077 t ~ 2078 n, k|i aligned to k with H neighbours matching

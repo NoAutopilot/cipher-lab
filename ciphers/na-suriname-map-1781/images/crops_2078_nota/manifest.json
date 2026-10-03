@@ -1,0 +1,319 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "nota78_L01.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    103,
+    560,
+    219
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L02.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    219,
+    560,
+    301
+   ],
+   "lines_in_crop": 2,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L03.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    301,
+    560,
+    392
+   ],
+   "lines_in_crop": 2,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L04.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    392,
+    560,
+    486
+   ],
+   "lines_in_crop": 2,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L05.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    486,
+    560,
+    572
+   ],
+   "lines_in_crop": 2,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L06.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    572,
+    560,
+    653
+   ],
+   "lines_in_crop": 2,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L07.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    653,
+    560,
+    750
+   ],
+   "lines_in_crop": 2,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L08.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    750,
+    560,
+    836
+   ],
+   "lines_in_crop": 2,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L09.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    836,
+    560,
+    933
+   ],
+   "lines_in_crop": 2,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L10.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    933,
+    560,
+    1037
+   ],
+   "lines_in_crop": 2,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L11.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    1037,
+    560,
+    1135
+   ],
+   "lines_in_crop": 2,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L12.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    1135,
+    560,
+    1221
+   ],
+   "lines_in_crop": 2,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L13.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    1221,
+    560,
+    1306
+   ],
+   "lines_in_crop": 2,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L14.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    1306,
+    560,
+    1385
+   ],
+   "lines_in_crop": 2,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  },
+  {
+   "crop": "nota78_L15.jpg",
+   "source_url": "",
+   "source_file": "2078_nota_native.jpg",
+   "box": [
+    40,
+    1385,
+    560,
+    1474
+   ],
+   "lines_in_crop": 2,
+   "band": 15,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 45,
+    "distance": 31,
+    "prominence": 36.3
+   },
+   "date": "03 Oct 2026"
+  }
+ ]
+}
