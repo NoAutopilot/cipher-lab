@@ -111,9 +111,10 @@ interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions
 
 ## While waiting
 
-Next action that depends on nobody: freeze a corrected residue table (gloss letters z and s re-read as the period
-letterforms r and h, decided from the GAPS141 gloss crops by a blind pass, before any new numeral is read), then test
-it on numerals not yet used (p.2 left lower half, p.2 right page) with the same three controls (see GAPS146 below).
+Next action that depends on nobody (GAPS157, 3 Oct 2026): pre-register r at residue 21 as an alternative table beside the
+frozen one, then cut and read the unused numerals (p.2 left lower half, p.2 right page) in two blind Opus passes and test
+both tables against the shuffled-target and shifted-rule controls only (controls-vs-decode, no language-judge gate: the
+judge is retired for this leaf, GAPS157). The language reading itself waits on ASKS row 120 (a person's read of the gloss).
 
 ## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
 
@@ -357,3 +358,33 @@ below 199-200 of 200 genuine held-out 62-letter windows. **The era corpus is not
 the gloss as transcribed is still far from period prose. The open r/z and h/s letterforms (GAPS150) and abbreviations in the
 transcription are the likelier limit. A gate on the decode should compare it with the gloss's own score and with the shuffled
 controls under de1600, not with real_p05 alone. Script: `tools/data/de1600/gloss_calibration.py`. Status unchanged: open.
+
+## GAPS157 step: one spelling normalisation on corpus, gloss and decode; registered verdict C (3 Oct 2026, account-4)
+
+Pre-registration `gaps157/PREREG-GAPS157.md` (commit 7c9169ee) pushed before any normalised score. Normalisation N
+(`gaps157/score157.py` `norm`): the judge's fold (case, accents, ss, abbreviation marks and all non-letters removed), then
+v->u, j->i, y->i, and every run of one letter collapsed to one; applied identically to every corpus file before the 4-gram
+model is built, to the gloss (62 -> 61 letters), to the frozen-table decode (176 -> 167), to 200 shuffled-target decodes
+(seed 157) and to the 23 shifted-rule decodes. No letter value of the frozen table changed. `--check` exits 0.
+
+| corpus, form | gloss score | gloss real_p05 | real windows <= gloss | gloss letter-shuffled p99 | decode | decode real_p05 | shuffled-target p99 (>= decode) | shifted max (>= decode) |
+|---|---|---|---|---|---|---|---|---|
+| de1600 raw | -1.423 | -0.917 | 0/200 | -1.803 | -1.635 | -0.876 | -2.008 (0/200) | -2.004 (0/23) |
+| de1600 normalised | -1.310 | -0.912 | 0/200 | -1.731 | -1.592 | -0.858 | -1.925 (0/200) | -2.044 (0/23) |
+| de17 raw | -1.524 | -0.911 | 0/200 | -1.859 | -1.551 | -0.854 | -2.005 (0/200) | -1.980 (0/23) |
+| de17 normalised | -1.473 | -0.907 | 0/200 | -1.786 | -1.546 | -0.885 | -1.937 (0/200) | -2.050 (0/23) |
+
+Normalisation lifts the gloss by 0.11 (de1600) and 0.05 (de17) and the decode by 0.04 and 0.01, but the leaf's own period
+gloss still sits below every one of 200 genuine windows of its length under both corpora, about 0.4 below real_p05.
+**Registered verdict C: the judge cannot recognise this leaf's text even normalised.** Spelling convention (u/v, i/j, y,
+doubled letters, abbreviation marks) is not the gap; the remaining suspects are letter identities in the gloss
+transcription itself (r/z, h/s, GAPS150) and the gloss being too short or too abbreviated to be prose to a 4-gram model.
+The language judge is retired as a gate for this leaf (rule 3 third-attempt clause: de17, de1600, de1600 normalised, all
+on the same gloss, every number moving together but none near the gate) -- untested-by-this-tool, not a negative. The
+decode beats its shuffled-target and shifted-rule controls by 0.33-0.45 under all four settings (0/200, 0/23), as in
+GAPS146/GAPS150; that licenses only "the frozen table is better than its own permutations", not a reading.
+
+Next instrument: a person's read of the 62-letter gloss (ASKS row 120: what German words the five gloss lines spell, and
+whether the letters read z and s are r and h), not a further machine pass. Token grades unchanged: H 0, C 0 new, S 0,
+M 176, I 0; gloss pairs C 54 / M 8. No reading-ready flag. Vision: 0. Requests: none. Status unchanged: open.
+

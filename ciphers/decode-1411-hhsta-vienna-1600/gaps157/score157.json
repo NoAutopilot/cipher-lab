@@ -1,0 +1,111 @@
+{
+ "de1600_raw": {
+  "gloss": {
+   "N": 62,
+   "score": -1.4229,
+   "real_p05": -0.9172,
+   "real_p01": -1.0059,
+   "real_median": -0.7689,
+   "null_p99": -1.7309,
+   "real_le_gloss": 0,
+   "letter_shuffled_mean": -2.1068,
+   "letter_shuffled_p99": -1.8032,
+   "clears_p05": false
+  },
+  "decode": {
+   "N": 176,
+   "score": -1.6347,
+   "real_p05": -0.876,
+   "null_p99": -1.8955,
+   "real_le_decode": 0,
+   "shuffled_target_mean": -2.1522,
+   "shuffled_target_p99": -2.0077,
+   "shuffled_ge_decode": 0,
+   "shifted_max": -2.0042,
+   "shifted_ge_decode": 0,
+   "passes_A": false
+  }
+ },
+ "de1600_norm": {
+  "gloss": {
+   "N": 61,
+   "score": -1.3104,
+   "real_p05": -0.9119,
+   "real_p01": -1.1755,
+   "real_median": -0.7658,
+   "null_p99": -1.7056,
+   "real_le_gloss": 0,
+   "letter_shuffled_mean": -2.0355,
+   "letter_shuffled_p99": -1.7313,
+   "clears_p05": false
+  },
+  "decode": {
+   "N": 167,
+   "score": -1.5917,
+   "real_p05": -0.8576,
+   "null_p99": -1.7852,
+   "real_le_decode": 0,
+   "shuffled_target_mean": -2.0785,
+   "shuffled_target_p99": -1.9247,
+   "shuffled_ge_decode": 0,
+   "shifted_max": -2.0438,
+   "shifted_ge_decode": 0,
+   "passes_A": false
+  }
+ },
+ "de17_raw": {
+  "gloss": {
+   "N": 62,
+   "score": -1.5239,
+   "real_p05": -0.9108,
+   "real_p01": -1.056,
+   "real_median": -0.7556,
+   "null_p99": -1.7483,
+   "real_le_gloss": 0,
+   "letter_shuffled_mean": -2.1649,
+   "letter_shuffled_p99": -1.8593,
+   "clears_p05": false
+  },
+  "decode": {
+   "N": 176,
+   "score": -1.551,
+   "real_p05": -0.8538,
+   "null_p99": -1.8888,
+   "real_le_decode": 0,
+   "shuffled_target_mean": -2.2181,
+   "shuffled_target_p99": -2.0048,
+   "shuffled_ge_decode": 0,
+   "shifted_max": -1.9798,
+   "shifted_ge_decode": 0,
+   "passes_A": false
+  }
+ },
+ "de17_norm": {
+  "gloss": {
+   "N": 61,
+   "score": -1.4733,
+   "real_p05": -0.9068,
+   "real_p01": -0.9679,
+   "real_median": -0.7565,
+   "null_p99": -1.7087,
+   "real_le_gloss": 0,
+   "letter_shuffled_mean": -2.0946,
+   "letter_shuffled_p99": -1.7864,
+   "clears_p05": false
+  },
+  "decode": {
+   "N": 167,
+   "score": -1.5459,
+   "real_p05": -0.8847,
+   "null_p99": -1.8965,
+   "real_le_decode": 0,
+   "shuffled_target_mean": -2.1406,
+   "shuffled_target_p99": -1.937,
+   "shuffled_ge_decode": 0,
+   "shifted_max": -2.0503,
+   "shifted_ge_decode": 0,
+   "passes_A": false
+  }
+ },
+ "verdict": "C: judge cannot recognise this leaf's text even normalised"
+}
