@@ -343,6 +343,31 @@ clone of Bourdeau's target folder). Vision calls: 2 blind Sonnet passes plus the
 sub-crops read in this session). Rule 10: no novelty claim. This is an alignment of a period gloss that DECODE R9450
 already marks Decrypted.
 
+## f.130r transcription and key_syl decode: PRE-REGISTRATION (A2-DIN2, account 2, 3 Oct 2026, written 05:03 UTC before any scoring)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-din2.md` (LANE-A2PUSH2). Intake gate pasted:
+```
+$ python3 tools/intake_gate_check.py fr3621-dinteville-1592
+fr3621-dinteville-1592: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+Fixed before the transcription is reconciled or any decode is scored:
+- Ciphertext: `f130/ciphertext.tsv`, reconciled from two blind Sonnet passes (`f130/passA.tsv`, `passB.tsv`) on the
+  tools/iiif_lines.py crops `images/f130_L*_s*.jpg`, in the f.128 label set (`f130/pass_instructions.md`). Signs absent
+  from the f.128 inventory (`f128/gloss_pairs.tsv`) are flagged in `f130/inventory.tsv`.
+- Key: `f128/key_syl.tsv` unchanged (sign -> top letter). Grade per token: C where the key row has agree >= 3 and
+  agree/n >= 0.5 AND the sign is settled (both passes agree, or reconciled without doubt); M otherwise (weak key row,
+  or a reconciled split); U where the sign is not in the key.
+- Statistic: mean log10 4-gram probability per letter (tools/judge_plaintext.py NgramModel, fr16 corpus = the three
+  files in tools/data/fr16, n=4, k=0.01) over all 4-letter windows lying wholly inside runs of keyed signs (an unkeyed
+  sign or a clear word breaks the run). Secondary, reported but not a gate: greedy word cover (NgramModel.cover) of the
+  same runs, letters-weighted.
+- Control: 1000 shuffled keys (seed 20261003): the key's letter values permuted among its signs (same letter multiset,
+  same keyed positions, same run structure), decoded and scored identically. The statistic depends on which sign carries
+  which letter, so the control can differ from the target. Gate: real > shuffled p95 (one-sided). Report real, shuffled
+  mean, p95, max and rank. A pass means "the f.128 key reads f.130 better than its own shuffles", not a reading.
+- Script: `f130/score_f130.py` (`--check` regenerates the committed outputs).
+
 ## Remaining gaps (A2-DIN, 3 Oct 2026)
 Read so far: f.130 0 of about 420 signs read; f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
 - f.130 cipher passages (about 420 signs) - blocker: not-attempted; the f.128 key exists at C only for about 17 signs and f.130 is not transcribed (f128/key_syl.tsv); next: transcribe f.130 (Gallica canvas f269, 2 line-crop passes + reconciliation in this label set) and apply key_syl.tsv with a shuffled-key control, ~$7
