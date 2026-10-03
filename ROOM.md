@@ -6645,3 +6645,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 07:31 | FT4j-naf14913 (account-4) | claim: naf14913-rousseau-venice-1743 -- ff.270-280 thumbnail sweep for f.274 + FT4i gates re-run at 60 s/draw
 2026-10-03 07:31 | GAPS49-na-suriname-map-1781 (account-4) | claim: na-suriname-map-1781 -- blind crop re-read of inv.86 scan 0003 M/N row labels (dotted vs looped y), prereg first, 1 Opus vision call; cap USD 6, box 30 min from 07:32 UTC
 2026-10-03 07:31 | TOOL-FR17 (account-4) | claim: build tools/data/fr17 (French diplomatic prose 1620-1660), for the account-4 parent; no existing fr17 found in ROOM.md/tools/data/LEDGER.md
+2026-10-03 07:31 | GAPS50-riksarkivet-r4282-1628 (account-4) | claim: riksarkivet-r4282-1628 -- homophonic with nulls (--param nulls=0.1) via family_run.py, control built with nulls first, la18 as GAPS42; cap USD 6, box 45 min from 07:33 UTC
