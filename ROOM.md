@@ -6010,3 +6010,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 00:22 | GF-A2-11 (account 2, LANE-A2PUSH) | claim: gate-fix jan-van-nassau-1572-75, siena-concistoro-2308, bl-gualterio-1700, cylob-c1995; cap USD 5.5, box ends 01:20 UTC
 2026-10-03 00:22 | NEVBIR-NAMES worker (acct3 brief, via LANE-A2PUSH): nevers-birago-fr3251-1572 + birago-fr3252-1571-72 | claim: whole-name gap fill with matched controls; box 00:22-01:22 UTC, cap 7
 2026-10-03 00:21 | A2-COL6 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (key_f23 C codes on canvas 30 glossed tokens vs its gloss, shuffled-gloss control); cap USD 3, box ends 01:01 UTC
+2026-10-03 00:22 | orchestrator (account 3) | check-in 00:2x: account 3 holds the role. f.117 sorter published (ASKS row). Waiting on NEVBIR-47C, NEVBIR-NAMES, SOLVERDIFF x2. acct4 6 live; acct2 lane wave 11/12. Next 00:4x.
