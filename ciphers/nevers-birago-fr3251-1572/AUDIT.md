@@ -943,3 +943,36 @@ first/new/novel/unread/previously/unpublished/solved/cracked/never). The one nea
 (Andrea) in an 1898 *Bollettino storico-bibliografico subalpino* letter series; worth a look by the next reader of the
 Piedmontese Birago correspondence, not a prior print of this letter. Still owed (not blocking): the JSTOR rows, the DBI
 entry, the 19 T83-shaped tiles' value-blind check.
+
+# Reader-label ruling on no.87 T50 and T46 tiles (VERIFY-BIRAGO-SMALL, 3 Oct 2026)
+
+Verifier: worker VERIFY-BIRAGO-SMALL (account 2 for the account-3 orchestrator, Opus 5.5), a session separate from the
+solver BIRAGO-SMALL (2a750ceb). Brief `.claude/briefs/runs/2026-10-02-acct3-verify-birago-small.md`, item 2. Disk only:
+0 requests, 0 subagents. **Nothing applied**: `harvest/ciphertext_f178*.tsv`, `f179r.tsv`, the keys and the firm counts are
+unchanged. This section is the ruling the next decode applies. No class change.
+
+**Method.** The solver's own read was not value-blind. This verifier rebuilt the 12 T50/T46 tiles as a shuffled montage
+with panel letters only (no line, position, label or sheet value): `harvest/lookalike_87/verify_blind/mk.py` (seed 4417,
+ImageMagick; regenerates byte-identical `key.tsv`). Each panel was read by shape before `key.tsv` was opened; the read is in
+`verify_blind/blind_read.tsv`. Limit: this verifier had read the solver's NOTES section first, so it knew the class counts
+to expect (7 + 1, and 2 + 1 + 1); it did not know which panel was which tile.
+
+**Result: 12 of 12 shapes agree with the solver.**
+
+| tile(s) | sheet | shape read blind | ruling for the next decode |
+|---|---|---|---|
+| f178v L01.23, L03.4, L04.4, L05.25, L07.29, L08.10, L10.5 (T50) | s x7 | curled "Ce": omega with a c-hook lead, no tall tail (L07.29 at the gutter edge, readable) | **upheld**: relabel X_CE, an off-sheet sign. Value s is grade C from the clerk sheet (7/7 on no.87), not from the printed table. |
+| f178v L20.7 (T50) | c | omega with the tall S-tail, the T50 sheet cell | **upheld**: stays T50 = c (printed value). The variant key's T50 = s row (`harvest/key_1572_clerkvar.tsv`) is not a sign-level rule and should not be used. |
+| f178r L03.22 (T46) | turino | "86" | **upheld**: stays T46 (printed "86" = turino). |
+| f178v L19.22 (T46) | re | a single 8 | **upheld**: relabel X_8, value unset (U). |
+| f178v L15.24-25 (T46, T46) | c / atholici | "88", two 8s written as one group | **upheld on shape, label amended**: one token X_88, not two X_8 tokens. The printed table writes its name codes as two-digit groups (85 carmagnola, 86 turino, 89 bugonotti); the sheet's "c" + "atholici" over the pair reads as one word, so "88" is most likely a further two-digit name code for "cattolici". Value: unset in the key until a second occurrence or a print supports it; the sheet's word is C for this one occurrence only. |
+
+Error on these 12 tiles against the clerk sheet, if the ruling is applied: before 10 wrong (7 T50 + 3 T46), after 0 wrong
+(7 X_CE at s, 1 X_88 at "cattolici" if the one-occurrence C value is used, else 1 U; 1 X_8 U). The solver's T52 and T98
+findings were outside this brief and are not ruled on here (T52 is the key conflict already logged; T98/T18 is with the
+owner's sorter).
+
+**For the next decode.** Apply by `exceptions` rows or a relabel in passC/passD with basis "VERIFY-BIRAGO-SMALL 3 Oct 2026",
+then `tools/decode_key.py --check`, the decode_control at fresh seeds and the judge, before any firm count moves. Open next
+step (the solver's, unchanged, ~$2): look for the "Ce" shape under T50 or T92 labels in nos.71/86/90, where T50 = c is
+needed by "per conto", "domestico", "confusion".

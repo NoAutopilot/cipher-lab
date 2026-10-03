@@ -1,0 +1,15 @@
+# VERIFY-BIRAGO-SMALL, 3 Oct 2026. Read from the shuffled montage (panel letters only; no line, pos, label or sheet value shown) BEFORE
+# key.tsv was opened. Not fully blind: the verifier had read BIRAGO-SMALL's NOTES section first, so it knew the class counts to expect.
+panel	shape_read	line	pos	passC	sheet	BIRAGO-SMALL label	agree
+A	curled Ce (omega with c-hook lead, no tall tail)	f178v_L04	4	T50	s	X_CE	yes
+B	curled Ce	f178v_L05	25	T50	s	X_CE	yes
+C	88 (two 8s, one group)	f178v_L15	24	T46	c	X_8	shape yes; label ruled X_88 one group (AUDIT)
+D	88 (same pair, other token)	f178v_L15	25	T46	atholici	X_8	shape yes; label ruled X_88 one group (AUDIT)
+E	curled Ce	f178v_L10	5	T50	s	X_CE	yes
+F	curled Ce	f178v_L01	23	T50	s	X_CE	yes
+G	86 (window cut low; the 8 6 group is on the visible band)	f178r_L03	22	T46	turino	T46	yes
+H	curled Ce at the gutter edge	f178v_L07	29	T50	s	X_CE	yes
+I	curled Ce	f178v_L08	10	T50	s	X_CE	yes
+J	single 8 (B 8 #)	f178v_L19	22	T46	re	X_8	yes
+K	omega with the tall S-tail (the T50 cell)	f178v_L20	7	T50	c	T50	yes
+L	curled Ce	f178v_L03	4	T50	s	X_CE	yes

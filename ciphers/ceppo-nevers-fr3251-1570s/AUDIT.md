@@ -968,3 +968,44 @@ Unsafe: "f.21v deciphered"; "auanti qualche" as clean words; any continuous tran
   Add "intencione" when you next touch the prompt.
 - Next steps: L11.17 (section 4, ~$1); then the S65/S80 settle that NOTES.md already names, which would also firm up
   "auanti".
+
+# AUDIT: f.21v L11.17 relabel S73 -> S49 (VERIFY-BIRAGO-SMALL, 3 Oct 2026)
+
+Verifier: worker VERIFY-BIRAGO-SMALL (account 2 for the account-3 orchestrator, Opus 5.5), a session separate from the
+solver BIRAGO-SMALL (2a750ceb). Brief `.claude/briefs/runs/2026-10-02-acct3-verify-birago-small.md`, item 1. Clock read
+00:01 UTC at start. Disk only: 0 requests, 0 subagents. No decoding beyond re-derivation. No class change.
+
+**Shape.** `harvest/f21v/lookalike/verify/f21v_L11_17_dottedslash.jpg` read by eye next to
+`witness_crops/f36r_L4_curledlambda_a_dottedslash_n.jpg` (the glossed fr.3252 form) and the sheet cells on
+`harvest/sign_sheet_blind.png`. The tile is a diagonal slash with one dot above-left and one below-right, no other stroke:
+the same form as the witness instance glossed n, and the same form as L01.15, L03.7, L03.10, L03.14 already endorsed in the
+155 (section 1 above). One point this verifier adds: the printed sheet's null **S73 is a different drawing**, a slash
+*crossed by a vertical stroke*, with dots (the adjudicator's note at L01.15, "no crossing bar (S73 has one)", and the cell
+itself). The tile has no crossing stroke. S49 and S30 on the sheet are horizontal dotted bars (÷); Birago's diagonal form
+is closer to them than to S73's crossed form. So the label rests on two things: the glossed witness form (n), and the
+absence of S73's distinguishing stroke.
+
+**The second check (unglossed dotted slash in the witness): still not done systematically.** Two cited 2x witness crops
+were looked at (`witness_f36/cited/r36_L12_s1.jpg`, `r36_L02_s2.jpg`): the one diagonal dotted slash seen (end of r36_L02_s2)
+carries a gloss mark above it, and the crossed dagger-like forms on r36_L12_s1 are a different shape. No unglossed diagonal
+dotted slash was found in those two crops; two crops are not a scan of the witness. The caveat VERIFY-CEPPO-SPLITS put on the
+four L01/L03 tiles applies here unchanged, no more and no less.
+
+**Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s --check`: "reading up to date";
+f.21v I 7, M 66, S 189, U 5 (f.11r, f.35, f.87 unchanged). L11 reads `t·mfatto[et]l·eramenfadificulta`; the endorsed
+"fatto et" and "fa dificu[l]ta" are untouched. "eramen" is not endorsed as a word.
+
+**Control.** The solver's decode_control at seeds 1-2 (z 6.43 / 6.95, rank 1/201, power 20/20) moves by +0.0014 on the key
+score; it cannot tell null from n (the solver says the same). Not re-run here: on this axis the control cannot decide, and
+the decision rests on the shape (rule 3, "a control that cannot vary on the axis").
+
+**Decision.** Endorsed. L11.17 was not in the 146 strict base (both raw passes read S73, at L and M), so it enters the
+verifier-rule count the way the nine CEPPO-SPLITS tiles did: **f.21v endorsed S 155 -> 156 of 267** (solver rule 189).
+Grades endorsed, f.21v: S 156 (verifier rule), M 93, oval-as-r 8, I 7, U 3. H 0, C 0. Cryptanalytic result with a
+published key. Class unchanged: **N3**, key `published`, text `unknown`. No passage added to the safe sentence.
+
+## For the orchestrator (VERIFY-BIRAGO-SMALL, item 1)
+
+- Verdict: **endorsed**, 155 -> **156**. PROGRESS.tsv "Birago f.21v" set to 156 from this section. status.json is yours.
+- Still open (unchanged): a systematic scan of the fr.3252 witness for an unglossed diagonal dotted slash, which would be
+  the one finding that reopens all five dotted-slash tiles (L01.15, L03.7, L03.10, L03.14, L11.17) together.
