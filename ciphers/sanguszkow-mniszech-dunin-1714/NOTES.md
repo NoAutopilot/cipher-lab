@@ -358,18 +358,37 @@ anneal has no power at this length; this is a non-test, not a negative.
 Requests per host: archive.org 23 (advancedsearch 9, metadata 7, _djvu.txt downloads 7), pl.wikisource.org 5 (API
 search; two returned non-JSON, abandoned for IA), raw.githubusercontent.com 2. Subagent calls: 0. Cost: see the lane ledger.
 
-## Remaining gaps (A3V3-SANGP, 4 Oct 2026)
+## Key test 2: crib-assisted homophonic (crib-drag on the repeats), control first (RUN3-SANG, 4 Oct 2026, 09:05-09:2x UTC)
+
+**Result: CONTROL BELOW GATE (mean 0.257, range 0.039-0.388, gate 0.6, pre-registered in `crib/PREREG.md`, commit
+358bfabf, before any run); target not run. Nothing read: H 0 C 0 S 0 M 0 I 0.** Status stays `open`.
+
+Instrument: `tools/family_run.py specs/sanguszkow-mniszech-dunin-1714.json --family homophonic --seeds 3 --restarts 8
+--param profile=target --param crib=drag` (new `crib=drag` option in `tools/families/homophonic.py`, offline test
+`tools/tests/test_homophonic_cribdrag.py`; the pre-option default fixture in `test_homophonic_alphabet.py` (a) still
+passes). The repeats R6 = 22.118.82.36.31.81 (x3) and R2 = 15.20 (x8) are pinned in turn to the top 200 pl18 6-grams and
+top 40 bigrams by a short anneal, best pair pinned for the full anneal; the control carries one planted 6-sign repeat x3
+and one 2-sign repeat x8 (same crib kind and count). Per seed (HYPOTHESES.md H3): the drag found the planted bigram 2/3
+("ie"), the planted 6-gram 0/3 (they were names: obadwa, warsza[wa], orlows[ki]). Diagnostics (control-only, not gates):
+with the planted strings added to the candidate lists the 6-gram still never reached stage 1's top 5 (0/3; mean 0.250),
+so at N=232 the n-gram score cannot pick the right 6-gram even when offered it; with the true crib pinned outright
+(`crib/oracle_ceiling.py`) the same design reads 0.845/0.478/0.694, mean 0.672. **A correct crib of this size would read
+the control; choosing it by score does not.** The crib must come from outside the statistics (a known plaintext or a
+sister letter in the same key), or N must grow. Clear anchors were used for the language only: none sits next to a
+repeat in a way that fixes letters without a guess. Requests: none (offline). Subagent calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (RUN3-SANG, 4 Oct 2026)
 Read so far: 0 of 232 cipher tokens read; 232 of 232 transcribed (ciphertext.tsv, err_2reader 0.000, 231/232 with Bourdeau)
-- R7524 all 232 cipher tokens - blocker: not-attempted; the Potocka key is excluded (control-backed, HYPOTHESES.md H1) and blind homophonic annealing is a non-test at N=232/K=77 (CONTROL BELOW GATE, H2); next: crib-assisted nomenclator/homophonic run seeded with the repeats (15.20 x8, 22.118.82.36.31.81 x3) and the clear-anchor context, control matched on the same crib count, ~$6
-- A sister letter in the same key (to lengthen N past the control's power line) - blocker: needs-physical-access; teka 290 neighbours and Dunin's Kórnik papers (BK 417, microfilm only) are not online (A3V2-SANGCS); next: owner desk search of szukajwarchiwach for Mniszech letters 1713-1715 in the Sanguszko archive, ~$0 here
+- R7524 all 232 cipher tokens - blocker: no-key-material; the Potocka key is excluded (control-backed, H1), blind homophonic is a non-test at N=232/K=77 (H2), and crib-drag on the repeats is untested-by-this-tool at N=232 (H3: control 0.257 < 0.6, the true crib never ranks top 5 even when offered; a correct crib would read, ceiling 0.672); the next instrument needs an externally justified crib or more ciphertext in the same key -- see the sister-letter row
+- A sister letter in the same key (to lengthen N past the control's power line, or to supply a crib) - blocker: needs-physical-access; teka 290 neighbours and Dunin's Kórnik papers (BK 417, microfilm only) are not online (A3V2-SANGCS); next: owner desk search of szukajwarchiwach for Mniszech letters 1713-1715 in the Sanguszko archive, ~$0 here
 - Identity of the archive record for the copy order (ASKS 125) - blocker: waiting-on ASKS 125 re-wording by the lane/owner; the 1714.05.02 record is a different letter (refuted, A3V2-SANGCS), nothing here depends on it; next: lane edits ASKS 125, ~$0
 
-## Escalation (4 Oct 2026, refreshed A3V3-SANGP)
+## Escalation (4 Oct 2026, refreshed RUN3-SANG)
 - [x] siblings: Bourdeau's potocka1714 folder read in full (4 Oct 2026); R7515, R7460, R7461 do not fit per his check; R7523/R7525 are different letters.
 - [x] clear-pages: P1 clear lines and P3 clear leaves seen at native resolution (A3V2-SANG); the clear anchors inside the cipher lines transcribed as [PLAIN] tokens (A3V2-SANGTX).
 - [x] known-keys: Potocka key trial-decoded with key-right/key-wrong controls and shuffled null: control-backed negative (A3V3-SANGP, HYPOTHESES.md H1); Sanguszko key records excluded by Bourdeau.
 - [x] print: check-solved re-run with the leaf's date and place, six sources, no edition or decipherment (A3V2-SANGCS, 4 Oct 2026).
-- [ ] key-rebuild: design_prior run (multi-sign nearest, nomenclator/syllabary layer likely, A3V3-SANGP); blind homophonic is a non-test at this N; next: crib-assisted run with a crib-matched control.
+- [retired] key-rebuild: blind homophonic anneal (H2) and crib-drag by n-gram score (H3, tools/families/homophonic.py crib=drag) both CONTROL BELOW GATE at N=232; instrument: homophonic_anneal with score-chosen cribs; reopens only with an external crib or a sister letter in the same key.
 - [x] image-check: DECODE full-size served, 4 Oct 2026 (A3V2-SANG), three 300-dpi JPEGs, cipher legible; transcribed at 300 dpi (A3V2-SANGTX).
-- [ ] retry: crib-assisted nomenclator/homophonic attack (repeats + clear-anchor context) with a control matched on N, K and crib count, pl18 corpus.
-Verdict: keep going: 1 internal gap (crib-assisted key rebuild, ~$6) plus 2 outside blockers; cheapest next: crib-assisted run with matched control, ~$6
+- [x] retry: crib-assisted homophonic attack with a control matched on N, K, design and crib count, pl18 (RUN3-SANG, H3): CONTROL BELOW GATE, target not run.
+Verdict: parked: every unread piece is blocked from outside the session (no-key-material until a sister letter or an external crib; sister letters need-physical-access); next new-material step is the owner-side szukajwarchiwach search, ~$0 here

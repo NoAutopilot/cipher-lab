@@ -59,7 +59,20 @@ homophonic_anneal.set_alphabet before the control and the solve -- a name from h
 (ru-s3p-soft 35 letters, ru-s3-soft 37: Russian with each softened consonant its own letter) or a literal string.
 The corpus must already be written in that alphabet (tools/data/ru19_soft); fold keeps only its characters,
 case-sensitive. Absent (or "default") is byte-for-byte the old 24-letter behaviour. The judge needs the same
-alphabet in the spec's judge block ("alphabet": the same NAME or CHARS). Test: tools/tests/test_homophonic_alphabet.py."""
+alphabet in the spec's judge block ("alphabet": the same NAME or CHARS). Test: tools/tests/test_homophonic_alphabet.py.
+
+crib=drag (RUN3-SANG, 4 Oct 2026, sanguszkow-mniszech-dunin-1714): a crib-assisted run seeded from the cipher's own
+exact sign repeats. Solver: R6 = the most frequent sign 6-gram (count >= 3), R2 = the most frequent sign bigram
+(count >= 3) with no sign in R6; the top m6 (200) corpus 6-letter strings are pinned on R6 one at a time (short anneal,
+drag_iters 8000), the best `keep` (5) are crossed with the top m2 (40) corpus bigrams on R2, and the best-scoring pair
+is pinned for the full anneal. Control: the window is redrawn (up to 2000 tries) until it holds a 6-letter string x>=3
+and a bigram x>=8, and those occurrences are given identical signs (one 6-sign repeat x3, one 2-sign repeat x8 planted),
+so the control carries the target's crib count and kind. crib_oracle=1 (control-only diagnostic, never a gate for a
+target) appends the planted strings to the candidate lists, separating "truth not in the list" from "scoring cannot
+pick it". info carries the chosen cribs, and for a control
+`crib_right`. Must catch: a crib-drag whose wrong pin pulls the anneal off (control recovery falls). Must NOT change:
+crib absent is byte-for-byte the old behaviour. Test: tools/tests/test_homophonic_cribdrag.py."""
+import json
 import math
 import random
 import re
@@ -216,7 +229,11 @@ def make_control(spec, seed, corpora, params):
                   seed, "".join(info["merged"]) or "-", info["merged_share"], info["M"], info["n_null"],
                   info["null_types"], len(set(seq)), info["ceiling"]))
         return [seq], plain, [info["rest"]]
-    plain, rest = draw_window(text, N, seed, lambda w: len(set(w)) <= K)
+    if params.get("crib", "") == "drag":
+        plain, rest = draw_window(text, N, seed, lambda w: len(set(w)) <= K and _plant_targets(w) is not None,
+                                  tries=2000)
+    else:
+        plain, rest = draw_window(text, N, seed, lambda w: len(set(w)) <= K)
     model = ha.Model([rest], _p(params, "order", 3))
     noise = float(params.get("noise", 0) or 0)
     profile = params.get("profile", "")
@@ -225,9 +242,121 @@ def make_control(spec, seed, corpora, params):
         seq, p, truth = _make_control_profile(plain, K, N, model, seed, target_counts)
     else:
         seq, p, truth = ha.make_control(plain, K, N, model, seed)
+    if params.get("crib", "") == "drag":
+        global _LAST_PLANT
+        seq = _plant(seq, p)
+        g, _, b, _ = _plant_targets(p)
+        _LAST_PLANT = (g, b, seq, p)
     if noise:
         seq = _inject_noise(seq, noise, target_counts, seed)
     return [seq], p, [rest]
+
+
+def _plant_targets(w, n6=3, n2=8):
+    """crib=drag control: (6-gram, its start positions, bigram, its positions outside the 6-gram occurrences) when
+    the window holds a 6-letter string >= n6 times (non-overlapping) and a bigram >= n2 times outside it, else None."""
+    c6 = Counter(w[i:i + 6] for i in range(len(w) - 5))
+    for g, _ in c6.most_common(5):
+        starts, last = [], -6
+        for i in range(len(w) - 5):
+            if w[i:i + 6] == g and i >= last + 6:
+                starts.append(i); last = i
+        if len(starts) < n6:
+            continue
+        cover = {j for i in starts for j in range(i, i + 6)}
+        c2 = Counter(w[i:i + 2] for i in range(len(w) - 1) if i not in cover and i + 1 not in cover
+                     and not set(w[i:i + 2]) & set(g))
+        for b, _ in c2.most_common(3):
+            ps, last = [], -2
+            for i in range(len(w) - 1):
+                if w[i:i + 2] == b and i not in cover and i + 1 not in cover and i >= last + 2:
+                    ps.append(i); last = i
+            if len(ps) >= n2:
+                return g, starts[:n6], b, ps[:n2]
+    return None
+
+
+def _plant(seq, plain):
+    g, s6, b, s2 = _plant_targets(plain)
+    seq = list(seq)
+    for i in s6[1:]:
+        seq[i:i + 6] = seq[s6[0]:s6[0] + 6]
+    for i in s2[1:]:
+        seq[i:i + 2] = seq[s2[0]:s2[0] + 2]
+    return seq
+
+
+def _top_repeat(seq, n, exclude=()):
+    c = Counter(tuple(seq[i:i + n]) for i in range(len(seq) - n + 1))
+    for g, k in c.most_common():
+        if k < 3:
+            return None
+        if not set(g) & set(exclude):
+            return g
+    return None
+
+
+def _consistent(signs, word):
+    m = {}
+    for s, a in zip(signs, word):
+        if m.setdefault(s, a) != a:
+            return False
+    return True
+
+
+def _crib_drag(seq, model, corp, seed, restarts, params):
+    """crib=drag solver (module docstring). Returns (score, key, info)."""
+    rng = random.Random(seed + 77)
+    it_s, keep = _p(params, "drag_iters", 8000), _p(params, "keep", 5)
+    uw = _p(params, "uni_weight", 1.0)
+    r6 = _top_repeat(seq, 6)
+    r2 = _top_repeat(seq, 2, exclude=r6 or ())
+    alpha = set(model.freq)
+    c6 = Counter(corp[i:i + 6] for i in range(len(corp) - 5))
+    c2 = Counter(corp[i:i + 2] for i in range(len(corp) - 1))
+    info = {"R6": " ".join(r6) if r6 else None, "R2": " ".join(r2) if r2 else None}
+    stage1 = []
+    if r6:
+        cands = [w for w, _ in c6.most_common(4 * _p(params, "m6", 200)) if set(w) <= alpha and _consistent(r6, w)]
+        cands = cands[:_p(params, "m6", 200)]
+        if params.get("crib_oracle") and _LAST_PLANT is not None and _LAST_PLANT[2] == seq and _LAST_PLANT[0] not in cands:
+            cands.append(_LAST_PLANT[0])  # diagnostic only (control): is the candidate list or the scoring the limit?
+        for w in cands:
+            fx = dict(zip(r6, w))
+            sc, _ = ha.anneal(seq, model, it_s, rng, uw, fixed=fx)
+            stage1.append((sc, w))
+        stage1.sort(reverse=True)
+    best6 = [w for _, w in stage1[:keep]] or [None]
+    stage2 = []
+    c2l = [b for b, _ in c2.most_common(4 * _p(params, "m2", 40)) if set(b) <= alpha]
+    if params.get("crib_oracle") and _LAST_PLANT is not None and _LAST_PLANT[2] == seq and _LAST_PLANT[1] not in c2l:
+        c2l.insert(0, _LAST_PLANT[1])
+    for w in best6:
+        base = dict(zip(r6, w)) if w else {}
+        if not r2:
+            stage2.append((stage1[0][0] if stage1 else 0.0, w, None)); continue
+        n2 = 0
+        for b in c2l:
+            if not _consistent(r2, b):
+                continue
+            n2 += 1
+            if n2 > _p(params, "m2", 40):
+                break
+            fx = dict(base); fx.update(zip(r2, b))
+            sc, _ = ha.anneal(seq, model, it_s, rng, uw, fixed=fx)
+            stage2.append((sc, w, b))
+    stage2.sort(key=lambda x: -x[0])
+    _, w, b = stage2[0]
+    fx = {}
+    if w:
+        fx.update(zip(r6, w))
+    if b:
+        fx.update(zip(r2, b))
+    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, uw, fixed=fx)
+    info.update({"crib6": w, "crib2": b, "stage1_top": [(round(x, 1), y) for x, y in stage1[:keep]],
+                 "stage2_top": [(round(x, 1), y, z) for x, y, z in stage2[:5]], "n_pinned_tokens":
+                 sum(1 for x in seq if x in fx)})
+    return res[0][0], res[0][1], info
 
 
 def _make_control_merged(text, N, K, seed, params, target_counts):
@@ -351,6 +480,7 @@ def split_decode(dec, msgs):
 
 
 _LAST_UNITS = None
+_LAST_PLANT = None
 
 
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
@@ -381,6 +511,21 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         wl = {w: dict(Counter(key[f"{w}#{i}"] for i, x in enumerate(seq) if x == w)) for w in wild if w in seq}
         return dec, sc, {"restart_scores": [round(r[0], 1) for r in res],
                          "key": {k: v for k, v in key.items() if "#" not in k}, "wild_letters": wl}
+    if params.get("crib", "") == "drag":
+        corp = ha.fold("\n".join(corpora))
+        global _LAST_PLANT
+        sc, key, info = _crib_drag(seq, model, corp, seed, restarts, params)
+        if _LAST_PLANT is not None and _LAST_PLANT[2] == seq:  # a control: report whether the drag found the plant
+            g, b, _, p = _LAST_PLANT
+            fx = {x for x in seq if (info["R6"] and x in info["R6"].split()) or (info["R2"] and x in info["R2"].split())}
+            info["planted"] = (g, b)
+            info["crib_right"] = (info["crib6"] == g, info["crib2"] == b)
+            un = [(key[x], a) for x, a in zip(seq, p) if x not in fx]
+            info["unpinned_recovery"] = round(sum(1 for u, v in un if u == v) / max(1, len(un)), 3)
+        _LAST_PLANT = None
+        print("crib=drag:", json.dumps({k: v for k, v in info.items()}, ensure_ascii=False, default=str)[:900])
+        info["key"] = key
+        return "".join(key[x] for x in seq), sc, info
     res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
     sc, key = res[0]
     return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}

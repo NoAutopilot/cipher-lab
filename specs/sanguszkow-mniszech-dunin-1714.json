@@ -57,6 +57,24 @@
    ],
    "target": "not run",
    "verdict": "CONTROL BELOW GATE (0.6): homophonic annealing has no power at N=232/K=77; non-test, not a negative"
+  },
+  {
+   "test": 3,
+   "date": "4 Oct 2026",
+   "by": "RUN3-SANG (LANE-RUN3, account 1)",
+   "method": "tools/family_run.py --family homophonic --param profile=target --param crib=drag, N=232 K=77 pl18, seeds 1-3, restarts 8; control carries one 6-sign repeat x3 and one 2-sign repeat x8; PREREG ciphers/sanguszkow-mniszech-dunin-1714/crib/PREREG.md (358bfabf)",
+   "control_mean": 0.257,
+   "control_range": [
+    0.039,
+    0.388
+   ],
+   "target": "not run",
+   "diagnostics": {
+    "crib_oracle_in_list_mean": 0.25,
+    "true_6gram_top5": "0/3",
+    "true_crib_pinned_ceiling_mean": 0.672
+   },
+   "verdict": "CONTROL BELOW GATE (0.6): crib-drag by n-gram score untested-by-this-tool at N=232; a correct crib would read (ceiling 0.672) but the score cannot choose it; next needs an external crib or a sister letter"
   }
  ]
 }
