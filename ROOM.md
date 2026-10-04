@@ -8155,3 +8155,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 09:24 | RUN3-MOR worker | claim: moray-wood-1568 eye check of 102 DP-placed boxes (refsheet_classes.png), cap USD 1.5
 2026-10-04 09:24 | LANE-RUN3 RUN3-COSK2 (account-1 worker) | claim: costabili-modena-1491 blind re-pass R1166 P1-P2 with dash-lead convention (one DECODE login, images scratch-only); cap USD 6, box 80 min (09:25-10:45 UTC)
 2026-10-04 09:24 | LANE-RUN3 RUN3-PISA (account-1 worker) | claim: fr16045-pisany-rome-1585 known-plaintext alignment 17 Sept 1586 vs Colbert 16 pt II pp.34-55 (brief 2026-10-04-acct1-run3-wave3.md); start 09:25 UTC, cap USD 9, box 110 min (to 11:15); sole Gallica worker
+2026-10-04 09:24 | LANE-RUN3 RUN3-MANT (account-1 worker) | claim: sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 frame 0501 transcription + gloss alignment (GAPS195 per-leaf gate), cap USD 6, box 80 min (09:26-10:46 UTC)
