@@ -38,3 +38,15 @@ this may fail if the sheet's base blank rate is low; that outcome is logged as N
 - **FAIL -> R4386 retired as the 1763 key (instrument: blank-cell test)**: S >= null p05 (and power OK).
 - Otherwise: inconclusive, logged with the numbers; no third pass.
 No threshold is changed after the cells are read.
+
+## Addendum A (13:2x UTC by date -u, after the layout look, before any cell is read; tiles not yet cut)
+- Images: one DECODE browser login, R4386 P1-P4 full size to scratch (P2/P3 sha1 a9b8eda3..., cde8d04b..., the same as N7-HELDK).
+- Attribution fixed from the full-size heads: each printed column carries two entries per row, a letter string or name immediately
+  RIGHT of printed n, and a right-aligned word immediately LEFT of the next printed column's number. The heads 120, 130, ..., 190 stand
+  over the right-aligned entries left of printed 201-300, ..., 901-1000; so **code 1000+n (n 201-1000) = the entry LEFT of printed n**.
+  Alphabet check (by eye, not a cell read): left of 201 starts "zero, zero, a, ab ...", left of 501 "debiter", left of 601
+  "empressement", left of 801 "honneur", left of 901 "le Sieur", left of 1000 "munitions", and the column under head 200 (right of
+  printed 1-100) continues "m'y, mystere, n ..." -- one alphabetical run 1201-2100, so the 1201-2000 band is unambiguous. (Printed
+  1101-1200 by hand in column 2 carry names right of the number; not in the band.)
+- Geometry in `crop_cells.py` (one 3-row band per cell, red arrow on the row, at the right edge, next to the printed number); checked on
+  20 layout cells (debug tile, scratch) before the cell list was cut. "zero" = Z, counted F as registered.
