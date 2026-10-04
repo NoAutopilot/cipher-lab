@@ -29,7 +29,8 @@ RULES63 = {frozenset(('3', 'z')): '3', frozenset(('P', 'p')): 'p',
 RULES = {**rv.RULES, **rv.RULES54, **RULES63}
 PAGES_A = ('f190r', 'f190v', 'f191r', 'f191v')  # N6-VIV63 (gate run on these alone: tx/viv63_test.py)
 PAGES_B = ('f192r', 'f192v', 'f193r')  # N6-VIV63B (PREREG-N6VIV63B.md; tx/viv63b_test.py)
-PAGES = PAGES_A + PAGES_B
+PAGES_C = ('f193v', 'f194r')  # N6-VIV63C (PREREG-N6VIV63C.md; tx/viv63c_test.py; f.194r = page lines 1-4, 11-20, tx/viv63c_f194r_compose.py)
+PAGES = PAGES_A + PAGES_B + PAGES_C
 
 
 def page_tokens(page):
