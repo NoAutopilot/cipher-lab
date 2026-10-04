@@ -1,0 +1,6 @@
+line	col	A	B	flagged	crop	both_conf
+L01	2	3	3	A		A:M/B:H
+L04	50	P	P	A		A:M/B:H
+L17	55	n	n	B		A:H/B:M
+L34	29	S	S	B		A:H/B:M
+L35	4	t	t	B		A:H/B:M

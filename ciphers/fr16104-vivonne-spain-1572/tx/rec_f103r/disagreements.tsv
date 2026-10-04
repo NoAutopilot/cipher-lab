@@ -1,0 +1,207 @@
+line	col	A	B	flagged	crop
+L01	5	-	:		
+L01	9	q	g	A	
+L01	16	-	V		
+L01	24	2	-	A	
+L01	25	P	π	B	
+L01	27	R	n	A	
+L01	43	-	:		
+L01	52	-	:		
+L02	16	c	o	A	
+L02	33	-	V		
+L02	36	i	-	A	
+L03	9	h	tz	AB	
+L03	52	-	V		
+L04	16	y	n		
+L04	17	R	2	AB	
+L04	21	y	n		
+L04	30	S	d		
+L04	36	o	-		
+L04	38	J	j		
+L04	51	o	-		
+L05	6	z	3		
+L05	15	S	2	AB	
+L05	35	-	:		
+L05	56	p	4		
+L06	5	S	-	A	
+L06	6	t	b	AB	
+L06	7	y	6	A	
+L06	16	y	n		
+L06	21	y	n		
+L06	31	h	k		
+L06	38	-	V		
+L06	40	p	-		
+L06	51	o	a		
+L07	12	g	e	A	
+L07	19	m	-		
+L07	20	w	-	A	
+L07	21	o	-	A	
+L07	22	#	-		
+L07	23	g	-		
+L07	24	tz	-		
+L07	26	z	-	A	
+L07	27	#		B	
+L07	36	R	r		
+L07	40	h	k	A	
+L07	44	S	d		
+L07	55	V	b	B	
+L07	61	o	-		
+L07	63	-	S		
+L08	18	-	V		
+L08	22	z	3		
+L08	43	o	c		
+L08	46	y	V		
+L08	58	tz	3		
+L09	15	p	-		
+L09	18	g	e		
+L09	34	-	V		
+L09	46	{curl}	-		
+L09	48	z	x		
+L09	56	3	e	A	
+L09	61	-	tz		
+L10	27	-	o		
+L10	37	3	z	B	
+L10	55	p	4	A	
+L11	3	@	c	A	
+L11	7	6	b		
+L11	13	@	c		
+L11	19	-	:		
+L11	22	-	V		
+L11	24	-	o		
+L11	51	-	:		
+L11	55	y	n		
+L12	4	@	c	A	
+L12	6	-	x		
+L12	10	-	V		
+L12	31	-	V		
+L13	6	-	#		
+L13	7	H	V	AB	
+L13	12	3	-	A	
+L13	24	m	-		
+L14	27	-	a		
+L14	31	y	n		
+L14	39	d	S		
+L14	43	o	e		
+L14	52	y	n		
+L15	3	3	2		
+L15	24	-	a		
+L15	47	-	V		
+L15	50	3	2		
+L16	16	-	y		
+L16	17	V	o		
+L16	20	-	y		
+L16	50	3	z		
+L17	3	-	V		
+L17	17	-	V		
+L17	29	3	z		
+L17	31	h	k		
+L17	34		e	A	
+L17	35	y	4		
+L17	45	-	:		
+L17	52	c	@		
+L17	58	8	-		
+L18	16	-	a		
+L18	20	h	k		
+L18	34	3	2		
+L18	49	-	y		
+L18	50	V	o		
+L19	7	8	-		
+L19	15	3	7		
+L19	21	-	4		
+L19	29	-	a		
+L19	39	g	4		
+L19	46	8	d		
+L19	47	Z	L	AB	
+L20	28	3	z		
+L20	32	-	V		
+L20	42	p	4		
+L20	44	-	y		
+L20	50	:	-		
+L21	30	3	z		
+L21	37	3	z		
+L21	44	-	V		
+L21	47	:	-		
+L22	14	-	V		
+L22	19	-	V		
+L22	21	o	-		
+L22	30	-	L		
+L22	31	Z	V		
+L22	41	3	z		
+L23	7	:	-		
+L23	12	V	b		
+L23	20	3	z		
+L23	41	-	c		
+L23	42	to	o		
+L23	56	3	-	A	
+L23	57	L	2	AB	
+L24	4	y	V		
+L24	26	c	@		
+L24	32	-	V		
+L24	44	:	-		
+L24	55	8	-		
+L25	8	-	d		
+L25	12	-	p		
+L25	22	-	S		
+L25	23	-	g		
+L25	25	-	tz		
+L25	26	-	:		
+L25	27	-	:		
+L25	28	-	#		
+L25	29	-	m		
+L25	30	-	#		
+L25	45	{curl}	L		
+L25	59	p	4		
+L26	1	-	:		
+L26	12	p	4		
+L26	13	p	f		
+L26	23	p	4		
+L26	31	c	@		
+L28	7	g	f		
+L28	24	8	-		
+L28	27	-	a		
+L28	45	3	2		
+L29	9	-	L		
+L29	10	to	o		
+L29	49	3	2		
+L30	12	-	to	B	
+L30	13	t	S	A	
+L30	30	:	-		
+L30	34	3	f	A	
+L30	46	-	a		
+L31	12	-	f		
+L31	14	S	V		
+L31	20	3	2		
+L31	29	-	f		
+L31	30	-	V		
+L31	33	g	c		
+L31	43	Z	L	B	
+L32	49	c	@		
+L33	11	3	2		
+L33	15	-	V		
+L33	19	3	2		
+L33	24	-	o		
+L33	26	y	-		
+L33	28	Z	L		
+L34	4	z	x		
+L35	7	p	-		
+L35	12	d	l		
+L35	15	p	4		
+L35	26	p	f		
+L35	27	p	f		
+L35	33	{curl}	d	B	
+L35	34	i	e	AB	
+L35	36	h	k	A	
+L35	38	-	V		
+L35	41	g	e		
+L35	43	8	-		
+L35	46	3	z		
+L35	49	h	k		
+L35	51	#	-		
+L36	35	p	g		
+L36	47	c	@		
+L37	1	-	V		
+L37	9	3	2		
+L37	15	-	o		
+L37	18	3	2		
+L37	50	{flourish	-		
+L37	51	cross}	{flourish}	B	
