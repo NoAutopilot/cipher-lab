@@ -1,0 +1,14 @@
+statistic	value
+flags	possessive=True guard=True
+unassigned_entries	192
+unassigned_print_matched	78
+known_answer_print_matched	287
+known_answer_decided	267
+known_answer_right	257/267 = 0.963
+known_answer_decided_rotated_window	212/287
+known_answer_right_rotated_window	188
+gate_acc>=0.85_and_decided>=20	PASS
+unassigned_decided	41/78 (1: 15, 2: 26)
+unassigned_decided_rotated_window	38/78
+gate_control_decided<=half_real	FAIL
+assignment_used	no

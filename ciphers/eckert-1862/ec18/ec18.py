@@ -458,7 +458,7 @@ def assign(argv):
             f"known_answer_decided\t{len(kdec)}", f"known_answer_right\t{kok}/{len(kdec)} = {acc:.3f}",
             f"known_answer_decided_rotated_window\t{sum(x != '?' for x in kctl)}/{len(known)}",
             f"known_answer_right_rotated_window\t{sum(1 for (i, b, _), c in zip(kres, kctl) if c == b)}",
-            f"gate_acc>=0.85_and_decided>=20\t{'PASS' if use else 'FAIL'}",
+            f"gate_acc>=0.85_and_decided>=20\t{'PASS' if acc >= 0.85 and len(kdec) >= 20 else 'FAIL'}",
             f"unassigned_decided\t{sum(x != '?' for x in ud)}/{len(unk)} (1: {ud.count('1')}, 2: {ud.count('2')})",
             f"unassigned_decided_rotated_window\t{sum(x != '?' for x in uctl)}/{len(unk)}",
             f"gate_control_decided<=half_real\t{'PASS' if ctl_ok else 'FAIL'}",
