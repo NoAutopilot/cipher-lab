@@ -4105,3 +4105,36 @@ ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothin
   ra-karlxi, na-raad-azie, fr16144) -- regenerate NEXT-STEPS.tsv before the next lane reads it.
 - Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
   "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
+
+## LANE RUN3 handoff (session_01PkVXjeSKs1t8vGeWp7Upd8, account 1), 4 October 2026 (closed 10:0x UTC: lane budget spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run3.md`; worker briefs `2026-10-04-acct1-run3-wave1.md` .. `-wave4.md`. 18 workers USD 50.93
+(16 D, 2 D-), orchestrator ~4.7; all archived, no check-in armed. Nothing promoted; no status.json/NEAR.md/QUEUE.md change (account 3 promotes).
+- **fr16045-pisany-rome-1585 -- known-answer PASS (RUN3-PISD + RUN3-PISA).** Colbert 16 pt II clear copies located for 9/11 Sept, 17 Sept,
+  4 Nov 1586 and probably 24 Mar 1587 (18 Jun 1588 not found). 17 Sept 1586, f.244r vs Colbert pp.49-50: Tomokiyo's 1586 table (Vivonne5,
+  captioned 1586-1587) decode agrees with the clear copy 0.677 vs key-shuffle p99 0.352 / order p99 0.425, both blind passes pass, positive
+  control 5/5 at err_2reader 0.284; 26 table cells confirmed, 4 disagree. `sorter/known_answer_hints.tsv` written for the published f.75 sorter
+  (account 3: fold into the sorter page if useful). Next: the 4 Nov 1586 pair, or the f.75 re-run after the owner sort.
+- **es132-vargas-mexia-1578 (RUN3-ES41, RUN3-ESSHR).** cabinet-noir still 47b6db9. f.41r '?' settlement FAILED its control (17/20 < 18), not
+  applied. f.41v (rest of the 29 Apr 1578 letter) Cipher 3 gate PASS on both blind passes with positive control, err_2reader 33%, S 359 M 125
+  U 62. images folder 33 -> ~17 MB with regen script; tools/iiif_lines.py 30 MB guard no longer deletes tracked src_* (offline test). Still for
+  account 3: f.41r/f.41v promotion or verifier decision (never this lane: not our audit).
+- **clair1161-avis-flandre-1688 (RUN3-C1161R7, C1161MS, C1161R7B).** rule 7 SAME twice; 10-seed consensus PASS 0.334 vs shuffled max 0.122
+  moved 7=i to S (C353 S1908 M1114 U33); 3 S signs contradicted by the consensus (qb=e, 4=e, S=n) -- info only. Reading text unchanged; any
+  AUDIT.md/SECOND-OPINIONS row needs the grade change carried (rule 10 propagation) -- account 3's verifier lane.
+- **sachsstaatsarchiv-manteuffel-1712 (RUN3-MANT).** frame 0501 leaf gate PASS (0.400 vs p95 0.200, N 5); 770 Manteuffel C, 865 Prince Royal M
+  into key.tsv; multi-code class tied its control, kept out. Next: settle 4 witness diffs + word pairing ~$3.
+- **costabili-modena-1491 (RUN3-COST, COSK, COSK2).** No printed text of the four 1491 letters (IA, Vestigia; Vestigia 2955/2977 = R1165/R1166
+  dates). R1166 interlinear key: 15-18 values all M (14 agree / 2 disagree / 2 new vs decode-1168); blind B failed twice, line-crop passes
+  retired for C (rule 3); next: group-level crops ~$4.
+- **rah-juan-manuel-1521 (RUN3-RJM, RJM2).** CSP date map: 16/28 records calendared. CSP no.393 = R9501 calendars a contemporary deciphering at
+  RAH Salazar A.23 (index: ff.34-36 cipher 7 Mar 1522, ff.37-38 "Texto descifrado"); not digitised -> add to the RAH Salazar copy order (ASKS 68),
+  account 3's call.
+- **eckert-1862 (RUN3-ECK62).** possessive option + CollisionGuard in decode.py (off by default; 6/9 collisions, 0/198 false); book assignment
+  failed its control, not used. Next: image check of Lehigh/weigh/white entries ~$4.
+- **sanguszkow-mniszech-dunin-1714 (RUN3-SANG).** crib-drag homophonic control 0.257 < 0.6, CONTROL BELOW GATE; key-rebuild [retired]; parked on
+  a sister letter or an external crib.
+- **moray-wood-1568 (RUN3-MOR, MOR2).** refsheet 11/102 boxes off (10.8%); fix needs the full-size R8345 P4 (one DECODE login, ~$0.5-1).
+- **ra-karlxi-fullmakt-1677 (RUN3-KARL).** 13 more scans, 0 hits; open unchanged (row was already run by RUN1-KARL).
+- Sorter inputs (brief job 3): none built this lane -- the two POOLS2 sorters were already published by account 3; Pisany known-answer hints added.
+- Retrospective: LEDGER rows since the last retrospective likely past 12 (19 LANE-RUN3 rows) -- account 3.
