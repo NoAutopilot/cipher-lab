@@ -8168,3 +8168,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 09:41 | RUN3-MOR2 | claim: moray-wood-1568 refsheet anchor fix (L2/L3 line-end anchors, M-box widening), cap USD 1
 2026-10-04 09:42 | RUN3-ESSHR worker | claim es132-vargas-mexia-1578 image shrink + iiif_lines guard check (cap USD 2)
 2026-10-04 09:42 | worker RUN3-C1161R7B | claim: clair1161-avis-flandre-1688 rule-7 grade re-derivation (fresh session)
+2026-10-04 09:43 | LANE-RUN3 RUN3-MOR2 (account-1 worker) | done (09:41-09:43 UTC): NOT RUN, blocked -- full-size R8345 P4 not on disk (RUN1-MOR scratchpad only; folder has the 200x278 thumbnail), wave 4 bars DECODE; anchors not guessed. Misplaced still 11/102. NOTES section + verdict line name the next step (one session, one DECODE login, ~$0.5-1) and a segment-geometry hint (L3 shadow segments past x 5202). gaps_check OK keep-going; file_shrink_guard ok.
