@@ -1,0 +1,2 @@
+# BIR-CCE2 (4 Oct 2026): the 37 per-class glyph views (8 MB) are regenerable from cut_tiles.py; the target folder is already over the 30 MB image line
+views/
