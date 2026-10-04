@@ -128,24 +128,50 @@ Requests: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2; gallica.bnf.fr
 >= 1.6 s apart, no 403/429/challenge; above the playbook's "a few hundred per host" guide -- the first plan of 305 canvases was cut
 to 234 and later re-fetches were 4-14 at a time). Subagents: 2 Sonnet calls.
 
+## RUN2-BAL (account 1 worker, LANE-RUN2), 4 Oct 2026, 03:49 UTC on
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md` job RUN2-BAL. No transcription, no decode, no novelty class.
+Intake gate re-run 03:49 UTC: `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+Method: the cipher canvases of the six "reader-partial" letters fetched whole at 2400 px wide (native 4776 x 6947; Gallica IIIF
+`/f<canvas>/full/2400,/0/native.jpg`, 1-2 requests per letter), cut locally into three overlapping horizontal bands and read by this
+worker for words above every numeral run. Images kept in scratchpad, not committed (re-fetch: the URLs above, canvases below).
+
+| letter | canvases viewed | cipher lines seen | interlinear | not viewed |
+|---|---|---|---|---|
+| 167 f.74 | 154, 155 | ~24 + ~19 | present over every run (phrase-level gloss) | c153 |
+| 167 f.127 | 260, 261 | ~15 + ~20 | present; two short trailing runs on c260 (~2 and ~4 groups) with nothing directly above, gloss possibly carried from the line above | c262 |
+| 167 f.157 | 320 | 3 | present | -- |
+| 167 f.205 | 417, 418 | 1 + ~9 | present (sparse second hand, some words written below the run) | -- |
+| 168 f.156 | 326 | ~10 | present (names) | -- |
+| 168 f.170 | 354, 355 | 2 + ~4 short runs | present | c356 |
+
+Result: all six "partial" rows are **present**. The 450 px reader's "partial" came from the gloss being phrase-level (one phrase above
+several groups) and from short single-code runs; no bare run of more than ~4 groups was seen. At most ~6 groups (167 f.127, c260) may lack
+a gloss of their own. Updated tally of the 66 cipher letters: interlinear present 61, absent 5 (unchanged: 168 f.246-247; 169 ff.52, 97,
+142; 170 ff.228-230). Open groups: the ~49 bare lines (~490-690 groups, point ~600) of the five bare passages, plus <= ~6 groups on 167
+f.127 c260; total point estimate ~600 (unchanged within rounding). survey.tsv: new column `native_look_run2bal`; existing cells untouched.
+Three canvases not viewed (167 c153, c262; 168 c356) under the 2-request-per-letter limit; on each the 450 px reader already saw glosses
+over most runs.
+Requests: gallica.bnf.fr 11 (1 info.json + 10 images, one at a time, >= 1.7 s apart, no 403/429/challenge). Subagents: 0.
+
 ## While waiting
 Nothing external is awaited. Action depending on nobody: native-resolution crops of the five bare passages (168 f.247r; 169 ff.52,
-97, 142; 170 ff.228-230) and the bare-run check of the six "partial" letters.
+97, 142; 170 ff.228-230).
 
-## Remaining gaps (RUN1-BAL leaf survey, 4 Oct 2026)
-Read so far: 55 of 66 cipher letters carry a period interlinear decipherment on the leaf (survey.tsv, 450 px); 5 bare, 6 unverified.
-- Five bare passages (168 f.247r; 169 ff.52, 97, 142; 170 ff.228-230; ~49 lines, ~600 groups) - blocker: not-attempted; the period key exists (Tomokiyo's table, images/louisxiii_davaux.png) and Tomokiyo quotes fragments only; next: native crops (tools/iiif_lines.py) + two blind passes + key application with tools/decode_key.py, per-pass priced, ~$5
-- Six "partial" letters (167 ff.74, 127, 157, 205; 168 ff.156, 170) - blocker: not-attempted; bare runs not verified at 450 px; next: native-resolution look at each cipher run for words above, script-led crops, ~$1
+## Remaining gaps (RUN1-BAL leaf survey, 4 Oct 2026; RUN2-BAL update 4 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment on the leaf (survey.tsv; the six former "partial" rows checked at 2400 px by RUN2-BAL); 5 bare.
+- Five bare passages (168 f.247r; 169 ff.52, 97, 142; 170 ff.228-230; ~49 lines, ~600 groups; plus <= ~6 possibly unglossed groups on 167 f.127 c260) - blocker: not-attempted; the period key exists (Tomokiyo's table, images/louisxiii_davaux.png) and Tomokiyo quotes fragments only; next: native crops (tools/iiif_lines.py) + two blind passes + key application with tools/decode_key.py, per-pass priced, ~$5
 - Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census; next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
 
 ## Escalation (4 Oct 2026)
 - [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
-- [x] clear-pages: leaf survey done; 55 of 66 cipher letters carry a period interlinear decipherment
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment
 - [x] known-keys: Tomokiyo's D'Avaux cipher table fetched to images/louisxiii_davaux.png, credited
 - [x] print: Avenel VI whole-volume grep; no edition of these despatches found; Avenel V and AAE not read
 - [ ] key-rebuild: not needed; apply Tomokiyo's key to the five bare passages first
-- [ ] image-check: native-resolution crops of the five bare passages and six partial letters still to do
+- [ ] image-check: six partial letters done at 2400 px (RUN2-BAL, all present); native-resolution crops of the five bare passages still to do
 - [ ] retry: n/a until the bare passages are cropped
-Verdict: keep going: 3 internal gaps; cheapest next: native look at the six partial letters, ~$1, then the five bare passages, ~$5
+Verdict: keep going: 2 internal gaps; cheapest next: the five bare passages (native crops + two blind passes + Tomokiyo key), ~$5
 
 Gate output (RUN1-BAL, 4 Oct 2026): `gaps_check.py: OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 3 step(s) untried` (exit 0).
+Gate output (RUN2-BAL, 4 Oct 2026): `OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 3 step(s) untried` (exit 0).
