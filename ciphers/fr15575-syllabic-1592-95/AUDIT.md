@@ -118,3 +118,9 @@ Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 
 The f.228 L01-L04 reading (H 77, M 9, U 49) is unchanged. Its known-answer gate was re-scored under a pre-registered
 addendum (f228/PREREG-ADDENDUM-N8.md) with the leaf's gloss re-read by two blind passes: S 0.674 vs value-shuffled p99
 0.233, PASS (NV05E's registered FAIL, 0.430 vs 0.186, stays on record). Class N0 and key source `period` unchanged.
+
+## Revision after AUDIT (N8-NV05B, 4 Oct 2026)
+The f.228 reading grew from L01-L04 to L01-L08 (L05-L08: 154 tokens, H 81, M 17, U 56; `f228/reading_b2.txt`, decode.json
+job 2). Its own known-answer gate (f228/PREREG-ADDENDUM-N8B.md) FAILed: S 0.439 vs value-shuffled p99 0.204, short of the
+0.60 floor; pooled L01-L08 0.549 (ungated). Class N0 and key source `period` unchanged; the safe sentence's L01-L04 numbers
+stand as updated by N8-NV05 (0.674 vs 0.233, PASS); L05-L08 is reported as above, not as a pass.

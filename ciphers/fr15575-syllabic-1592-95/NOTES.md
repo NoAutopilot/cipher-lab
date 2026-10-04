@@ -483,3 +483,96 @@ Read so far: f.228 L01-L04 of ~47 lines (135 tokens: H 77, M 9, U 49), scored ag
 - [x] image-check: native gloss crops of f.228 L01-L04 read by two passes (N8-NV05)
 - [x] retry: the NV05E gloss FAIL was retried with a pre-registered addendum (one change, the gloss read) and PASSed
 Verdict: keep going: 3 internal gaps; cheapest next: f.228 L05-L08 batch (5 units, ~$7.5: crops, 2 cipher + 2 gloss passes, reconcile) against its own gloss; then fr.15576 f.2 gloss alignment (~$9, grade C); the no.54 nomenclator (~$6) for the code-word groups
+
+## f.228 L05-L08 batch against its own gloss (N8-NV05B, account-2 worker for LANE-NEAR8, 4 Oct 2026 16:41-17:0x UTC)
+
+Pre-registration `f228/PREREG-ADDENDUM-N8B.md` (commit 8ebcf71f, 16:43 UTC) pushed before any crop was cut or read:
+same statistic, normalisation, key, tokeniser, value-shuffled control (1000, seed 1) and gate (S > p99 AND S >= 0.60)
+as PREREG.md + PREREG-ADDENDUM-N8; gated number = L05-L08 alone; pooled L01-L08 reported ungated; the line-placement rule
+from crop geometry (a gloss word belongs to Ln iff it lies above Ln's bold cipher line and below L(n-1)'s, same column
+span; gloss readers given each segment's bold-line opening signs from cipher pass A as an anchor).
+
+**Crops** (one native region fetched once; geometry checked on a 1600 px overview and a contact sheet before any read;
+`--follow-slope` because the lines drift 69-111 px across the leaf; band names L01-L04 in `f228/images/b2/` = leaf L05-L08):
+
+    $ python3 tools/iiif_lines.py --ark btv1b90637788 --canvas 235 --region 5250,1150,3700,800 \
+        --out ciphers/fr15575-syllabic-1592-95/f228/images/b2 --prefix f228b2 --columns 0:2950 --centres 116,231,351,462 \
+        --lines-per-crop 1 --max-width 1900 --overlap 150 --follow-slope 300 --slope-local --slope-margin 45 --debug
+    ... (cached): region 3700x800, 4 lines, 4 bands x 2 segments ... drift +69/+111/+74/+90 px ... wrote 8 crops
+
+(A first cut at `--slope-margin 30` clipped the tops of the L05 gloss; re-cut at 45 from the cached region before any read.)
+
+**Reads.** Cipher A, cipher B (blind Sonnet, one call each on the 8 crops; `f228/passA_b2.tsv`, `passB_b2.tsv` verbatim):
+err_2reader = 13/171 tokens = 0.076 (agreement, not accuracy). Gloss GA, GB (blind Sonnet, one call each, anchors given;
+`f228/gloss_b2_passGA.tsv`, `gloss_b2_passGB.tsv` verbatim). GB returned three lines only, and its "L07" is the
+"para conocer ... S.M. donde mi mandase" line, which on crop `f228b2_L03_s*.jpg` lies BELOW L07's bold line, above L08's:
+by the registered rule it is L08's gloss, and GB has no L07 read. Both gloss passes called their reads low-confidence.
+**Reconciliation** (this worker, on the crops): cipher disagreements settled from glyph shape (L05 "965" with an
+underlined 5, "2n76"; L07 "56 9 24" with the 9 written apart; L08 "88705 4224"; letter groups), 14 runs graded M
+(`f228/build_ciphertext_b2.py`). Gloss: words settled only where the glyph decided ("saluacion", "cardara", "ussengano",
+"tengo", "seruir"); every other split -> [..]; single-pass words kept only where the crop shows the same word shape; no
+word neither pass read added (`f228/gloss_b2_diplomatic.tsv` -> `f228/build_gloss_b2.py`, the N8 fixed rule imported ->
+`f228/gloss_b2.tsv`). Subagent calls: 4 Sonnet (A, B, GA, GB) + the worker's reconciliation = 5 units as priced.
+
+**Decode** (`tools/decode_key.py ciphers/fr15575-syllabic-1592-95/f228`, decode.json job 2 -> `f228/reading_b2.txt`,
+`--check` exit 0). L05-L08 tokens 154: **H 81, C 0, S 0, M 17, I 0, U 56** (syllables from the period sheet H per VERIFY-NV05;
+U = letter signs, marks and code-word groups outside the syllabary). Pooled L01-L08: 289 tokens, H 158, M 26, U 105.
+
+    L05	mi sa ua ci [n] ma da me se [^] po [y] to da [^] su [pa] que te ga pa ci [n] ci [c] [9] si [:] ua xe [5] [+] que [ho] lo qui [2] [n] re
+    L06	ia xi ga [8] [(] ce ta fa po [y] go [/] [^] [n] [n] ga no mu no [4] de pe sa [:] que lo ha go [(] qui yu [nun] [fos] si [6] [n] [^] ca sa [:]
+    L07	me [9] da [:] gi to [^] no si [:] uo de [Vuz] [fal] mi [tim] [mil] la sa ue mi ia ma me ha da do [n] te di mi [n] to
+    L08	[∞] [o] [2] co no ce [:] que la te go [∞] [o] [2] se [:] ui [:] [(] ia do de me ma da re [fo] se [e] mu ri [n] do mi [,] ue quu [5] hi da [c] cu
+
+**Score** (`python3 f228/score_b2.py`, `f228/score_b2.tsv`, `--check`):
+
+| | S real key | value-shuffled control (1000, seed 1) | gate |
+|---|---|---|---|
+| **L05-L08 (registered)** | **0.439 (43/98)** | mean 0.140, p99 0.204, max 0.225; 0 >= real | **FAIL** (> p99, < 0.60) |
+| pooled L01-L08 (ungated) | 0.549 (101/184) | mean 0.148, p99 0.201, max 0.212; 0 >= real | (would FAIL) |
+| per line L05/L06/L07/L08 | 11/25, 12/24, 6/23, 14/26 | | |
+
+**Gate: FAIL as pre-registered.** The key beats its null by a wide margin (0 of 1000 shuffles reach even half the real S),
+but the 0.60 floor is not met. Sensitivity, disclosed, not the registered number: GA alone 0.531 vs p99 0.235; GB alone
+(three lines, L07 unglossed) 0.286 vs p99 0.153. The reconciled gloss is short where both reads failed: L07's gloss
+holds 28 letters against 23 scored tokens, L05's and L06's lose their middles to [..]. The worker's look at the crops
+after scoring (not a re-score): the decode runs "mi sa[l]ua ci[o]n ma[n]da ... po[r] to[d]as su[s] ... que te[n]ga" (L05),
+"... que lo [t]e[n]go ..." (L06), "... [t]a[m]bie[n] me ha dado [e]n te[n]di mi[e]n to" (L07), "... co no ce[r] que la te[n]go ...
+[d]o[n]de me ma[n]da re ... mi[l] ue[zes]" (L08) -- the same pattern as L01-L04, where the first gloss read FAILed and the
+blind re-read PASSed. That is an untested explanation here; the registered FAIL stands.
+
+**Rule-3 note.** This is the first attempt at B2 with this instrument; it does not retire it. But the same knob (another
+blind gloss read with the same prompt) was what turned L01-L04, and repeating it at the same N without a change of
+instrument would be the third-attempt shape, so the named next step changes the instrument: one call per band (one
+gloss line per call, its bold line's opening signs as anchor), and the `--views` multi-view vote of TRANSCRIPTION.md
+(pad, s125, contrast) for the gloss crops, voted with `tools/reconcile_passes.py --vote`, pre-registered as an addendum.
+
+**Content (gloss words read by both passes or settled, H; L05-L08):** "... manda mas ... sus cartas que tenga por ...
+trabaje que ... / S.M. q[ue] que lo cardara por servi[ci]o ... muy grande pensar que lo tengo ... ningun ... / ... de otro ... mi
+... tambien ... entendimiento / para conocer que lo tengo para seruir [a] S.M. donde mi mandase ... sea ... mil vezes al dia".
+English gist (interpretation, not a reading): the writer protests service to the King -- "... to know that I have it in
+order to serve His Majesty wherever he may command me ... a thousand times a day". No date, sender or recipient read.
+
+AUDIT.md (N0): a dated "Revision after AUDIT" note added (the reading grew by L05-L08). No SECOND-OPINIONS-QUEUE.tsv row
+for this target (grep, 4 Oct 2026). Status line ("blocked", flagged stale by N8-NV05) left for the lane; not edited.
+Requests: gallica.bnf.fr 1 (native region 5250,1150,3700,800 of canvas 235, fetched once by iiif_lines.py). Not done:
+L09+ (brief), f.233, fr.15576 f.2, the nomenclator.
+
+## Remaining gaps (N8-NV05B, 4 Oct 2026)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (S 0.674 vs p99 0.233), L05-L08 gate FAIL (S 0.439 vs p99 0.204, floor 0.60), pooled 0.549 ungated; f.233 and fr.15576 f.2 unread.
+- edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
+- f.228 L05-L08 gloss re-read - blocker: not-attempted; the registered FAIL rests on a thin reconciled gloss (GB dropped L07); next: per-band gloss calls (one line each, anchored) + `--views` pad/s125/contrast vote via reconcile_passes.py --vote, pre-registered addendum, ~$4.5
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- target decode fr.15576 f.2 - blocker: not-attempted; a 3-digit system outside no.54 with a period interlined decipherment; next: gloss (2 passes) + ~25 cipher lines aligned with tools/interlinear_align.py (grade C), ~$9
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; next: after the L05-L08 gloss instrument is settled, 4-line batches at 5 units (~$7.5) each; f.233 the same
+
+## Escalation (N8-NV05B, 4 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the edition entry names the liasse
+- [ ] known-keys: fr.3995 no.54 syllabary control-checked (NV05C fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL at the floor, > null); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [ ] print: Lefèvre IV and van Durme entries to read in full (LOCAL-QUEUE L47)
+- [n/a] key-rebuild: the period key sheet exists and reads the target leaf far above its null
+- [ ] image-check: f.228 L05-L08 gloss by per-band calls + multi-view vote (different instrument from the two one-call passes)
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 4 internal gaps; cheapest next: f.228 L05-L08 gloss re-read by per-band anchored calls + --views vote under a pre-registered addendum (~$4.5); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)

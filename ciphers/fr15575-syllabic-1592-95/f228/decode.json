@@ -1,3 +1,29 @@
-{"note": "NV05E: key no.54 syllabary (key_syllabary.tsv = the 95 coded syllable rows of ../key_no54.tsv, unedited, as NV05C) applied to fr.15575 f.228 L01-L04. Non-code signs (letter signs, nomenclator groups) are unkeyed.",
- "jobs": [{"ciphertext": "ciphertext.tsv", "key": "key_syllabary.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
-   "format": "tsv", "style": "spaced", "uncertain_conf": ["M", "S"]}]}
+{
+ "note": "NV05E: key no.54 syllabary (key_syllabary.tsv = the 95 coded syllable rows of ../key_no54.tsv, unedited, as NV05C) applied to fr.15575 f.228 L01-L04. Non-code signs (letter signs, nomenclator groups) are unkeyed. Job 2 (N8-NV05B): L05-L08, ciphertext_b2.tsv.",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "key_syllabary.tsv",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "format": "tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M",
+    "S"
+   ]
+  },
+  {
+   "ciphertext": "ciphertext_b2.tsv",
+   "key": "key_syllabary.tsv",
+   "reading": "reading_b2.txt",
+   "tokens": "reading_b2_tokens.tsv",
+   "format": "tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M",
+    "S"
+   ]
+  }
+ ]
+}
