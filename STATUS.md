@@ -3837,3 +3837,37 @@ finished; no check-in armed. Two new NEAR.md rows, both `partial`, both cryptana
   status `blocked` (Tomokiyo Bongars paper unread).
 - Brief lessons: two planned controls were order-blind (a frequency test; a shuffled-key control for a gloss match) and were replaced before
   spend; a decode convention living only in a build script's docstring fails rule 7 by construction.
+
+## LANE RUN1 handoff (session_01S2B94d18voz7j6uJYybsgr, account 1), 4 October 2026 (closed 02:1x UTC: lane cap reached)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near3-run1.md` (LANE-RUN1); worker briefs `.claude/briefs/runs/2026-10-04-acct1-run1-wave1.md`,
+`2026-10-04-acct1-run1-wave2.md`. 12 worker sessions, USD 51.14 (D 6, D- 5, X 1), orchestrator ~5.5; lane ~56.6 of 60. All archived, no
+check-in armed. Nothing promoted; no status.json/NEAR.md change; no novelty claimed (rule 10).
+- **rah-juan-manuel-1521** (job 1): `tools/glyph_atlas.py segment --cursive` + offline test (RUN1-SEG). Pre-registered acceptance on R9528 f.194
+  narrow PASS (19/27 lines within 25% = 0.704, gate 0.70). Sorter over f.194 + f.199 + R9501 f.34: 1,781 tiles, 80 clusters, 3 named at C;
+  published by account 3 (ASKS 138), DECODE-derived tiles removed from the tree. Next waits on the owner's sort, then the held-out gate once.
+- **es132-vargas-mexia-1578** (job 2, RUN1-ES132): Teulet's 19 Sept 1578 paragraph = f.90v L10-26; Cp.30 blind decode vs Teulet 0.925/0.918
+  vs key-shuffle p99 0.39 and wrong-paragraph p99 0.35 (PASS). Unprinted f.90v remainder and f.119r beat token-order/key nulls under an es16
+  judge whose own held-out FN is 61-70% (weak support only). Grades f.90v C217 M188 U48, f.119r M330 U33, no H. Next: f.89r-91r, f.119v
+  upper, f.120r (letters outside cabinet-noir's list).
+- **clairambault1225-paget-1714** (RUN1-PAG): new `tools/gibbs_align.py` (collapsed Gibbs; a different instrument from interlinear_align, whose
+  fifth configuration rule 3 had closed). Control 0.808/0.731 PASS, held-out 0.521/0.681 vs p95 0.07 PASS; 6 codes M->S, 7 disagreements with
+  key.tsv logged not applied. Decode H 64 S 31 M 397 I 7 U 6. Suggestion: a tool_shelf.tsv row for gibbs_align.py.
+- **fr16142-noailles-constantinople-1571** (RUN1-NX): c510-516 (7 July 1574) = Dupuy 521 ff.221R-226R, text-confirmed by eye -> not open; a
+  ~9,750-sign known-plaintext pair once the sorter settles glyphs. Gloss presence settled on the 31 unclear pages; dupuy521_dates.tsv.
+- **fr16144-savary-lancosme-1588** (RUN1-SAV): c251-252 margin-glossed (not open); Tomokiyo table matched to the 120 sorter piles as focus hints
+  (sorter/tomokiyo_pile_match.tsv); 1587 original not in 9 BnF volumes, next fr.17020 ff.372-382.
+- **harley-287-1587** (RUN1-HAR): 8=c/d changes no token; gloss-masked f.84r G1 PASS, G2 FAIL -> 8=d to M; core values reproduced.
+- **moray-wood-1568** (RUN1-MOR): no.804 reference sheet ready for the SP 52/15 leaf (ASKS 103).
+- **fr16104-vivonne-spain-1572** (RUN1-VIV2): Mousset xlviii is about fr.16109/16110; fr.16105 4 June 1573 leaf + letter count still undone.
+- **na-raad-azie-1800** (RUN1-RAA): inv 207/144 digitised (167 scans), 4-leaf sample only; full sweep next. **ra-karlxi-fullmakt-1677**
+  (RUN1-KARL): both recipient-side editions searched, 0 hits, open.
+- **baluze167-davaux-1637** (RUN1-BAL): Tomokiyo key PNG fetched (credited); Baluze 171 is on Gallica (btv1b90014126, from microfilm MF 10609); survey.tsv over 67 letters:
+  55 interlinear, 6 reader-partial (unverified), 5 bare = exactly Tomokiyo's undeciphered five (168 f.247r; 169 ff.52, 97, 142; 170 ff.228-230), ~600
+  groups open, not the scout's ~5,000 -- this is not a pool. Next: native check of the 6 partials, then the 5 bare letters under Tomokiyo's key.
+  1.36x cap; 391 Gallica requests (over the few-hundred guide, logged).
+- Released, not run: fr3151-seure-1558 RUN1-SEU (wave2 brief, cap 6) -- any lane may take it.
+- Lessons: (1) `tools/room.py "<role>" '<text>' --push <paths>` pushes ROOM.md only and drops the paths -- the wave-1 brief missed main and one
+  worker stopped (X); push files with a separate `--push <paths>` and check `git status` before spawning. (2) An index job over a volume is
+  priced per opening read, not as one unit (RUN1-NX 2.6x cap, 296 Gallica requests). (3) DECODE-derived sorter tiles never go in git, even
+  small ones (account 3 removed RUN1-SEG's); my brief wrongly allowed them.
