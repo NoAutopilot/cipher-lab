@@ -2651,3 +2651,22 @@ Read so far: P4 406 of 424 sign tokens at H or C (95.8%), 12 M, 6 U (reading_P4.
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); all five sibling cipher pages and both printed decipherments read from the page image (A3V2-THURBT, N8-THUR, 4 Oct 2026)
 - [x] retry: one-vote boundary test v3-full on the image-read siblings PASSed its pre-registered gate (K 68.8% / 83.6%, W 0%); 67 and 153 M -> C, 84 re-read "although" at M (N8-THUR, 4 Oct 2026)
 Verdict: keep going: 2 internal gaps (the 32/33/38 regrade against Tomokiyo's table, the P3/P10 open codes); cheapest next: the 32/33/38 key-source regrade, ~$1; also owed by the lane: a rule-7 fresh re-derivation of reading_P4.txt and the status.json depth_pct update (94.8 -> 95.8)
+
+## N8-THUR2 -- key-source regrade of codes 32/33/38 against Tomokiyo's Stamford table (4 Oct 2026, account 2, for LANE-NEAR8)
+
+**PREREG (written and pushed 17:1x UTC by date -u, before any key, script or grade change).**
+- Scope: P4's M-graded letter values 32 (x, x1 in P4), 33 (w, x6), 38 (q, x2). Code 1 (i, x3) is outside scope (no cell in the table;
+  the table starts at 2) and stays M. No other code is regraded by this job (47 r agrees but does not occur in P4; the C-graded values
+  that also agree are not touched -- a follow-up, not this brief).
+- Witness: Tomokiyo's published key image `sources/cryptiana/web/stamford.jpg` (sha1 209214db..., fetched GAPS148, 3 Oct 2026;
+  credited to Satoshi Tomokiyo, Cryptiana, thurloe.htm #Stamford, "William Stamford's cipher (1655)"), read by this worker directly
+  from the unmodified image (row 3: 31 y, 32 x, 33 w, 34 u/v, 35 t, 36 s, 37 r, 38 q), same cells as GAPS148's two vision reads.
+- Rule: a code becomes H (key source: `published`, Tomokiyo) only where his cell gives the same value as `pool_1654/key_stamford.tsv`.
+  Where they conflict the code stays at its current grade and the conflict is logged per rule 4's H-conflict paragraph (witnesses
+  named, never settled by majority). This is the same mechanism `decode_stamford.py` already uses for his E values 12 and 25 (H).
+- Stated before applying: H here means "a published modern key gives this value", not independent corroboration of our alignment.
+  GAPS148 noted his table was very probably reconstructed from the same printed sibling decipherments; and the period decipherments
+  themselves split on 33 (w 18, u 7, m 2, t 1 of 28 printed votes) -- that dissent is recorded beside the regrade, not erased by it.
+- Expected outcome if all three agree: P4 H 64 -> 73, M 12 -> 3, C 342 and U 6 unchanged, no letter of the reading changes.
+- Checks after: `python3 pool_1654/decode_stamford.py --check` exit 0; AUDIT.md revision note and SO-THURLOE-P4 row carry the new counts
+  (rule 10 propagation). Not done here: the rule-7 fresh re-derivation (separate session N8-THR7), status.json (flagged to the lane).
