@@ -116,8 +116,8 @@ addition (c)).
    offers a lead for 1752, but no matching decipherment has been retrieved."* His audit corrected transcription
    errors (stray question marks turned into definite digits, a duplicated three-line passage on R1953 image
    13448 wrongly deleted as a transcription artefact) but found no key. He names the same Fagel inv. 5206 lead
-   this row is nominated on, and reports it as **not yet retrieved** as of his last update — this worker is the
-   first to open the NA viewer for it (below).
+   this row is nominated on, and reports it as **not yet retrieved** as of his last update — no earlier pass in this
+   repository had opened the NA viewer for it (below; wording corrected by verifier NEAR3-VHEL, 4 Oct 2026, rule 10).
 2. **Standard printed edition — actually read.** *Politische Correspondenz Friedrichs des Großen*, vols. 9 and
    10 (Frederick's own outgoing letters, covering Jan 1752 onward), archive.org `politischecorres09fred` and
    `politischecorres10fred`, full-text searched (`be-api.us.archive.org/fts/v1/search?q=Hellen&identifier=...`)
@@ -229,6 +229,9 @@ volume; opening it shows the Hellen sub-series here only starts in October. This
 Dutch/English decipherment, so a plausible explanation is that this Fagel decrypted-letters series for Hellen
 only begins once his traffic started being broken, several months after the 4 Jan 1752 letter was sent -- not
 that the 1752 letter is filed elsewhere in this same box.
+[Verifier NEAR3-VHEL, 4 Oct 2026: this explanation is contradicted by De Leeuw 2000 ch. 8 n.32. English-deciphered
+copies of Hellen's letters from 30 Oct to 28 Dec 1751 are in NA Fagel inv. 5177, and that volume has no Hellen letter
+between 28 Dec 1751 and 8 Sept 1752. See AUDIT.md section 3d. The finding that inv. 5206 starts on 24 Oct 1752 stands.]
 
 **Not further pursued, out of this brief's scope:** whether the *same* cipher system is used across inv. 5206's
 run (Oct 1752-Jul 1753+) as in R1953 (4 Jan 1752) -- if so, one of these deciphered letters could still key the
@@ -937,6 +940,18 @@ PMI over the order shuffle; a key that is right should raise both statistics. Th
 grade anything. No combined key or reading was built (PREREG item 7); **R4369's reading stands unchanged** (H 152 / S 304 / M 16 /
 U 374). Calls: 4 Sonnet subagent passes; my own reads: 2 page overviews, 2 crop checks, 1 reconciliation montage. Report what was
 found and where it was not found: R1953's codes 1-800 have no reading from R4369, R4370 or R4372.
+
+## Verifier NEAR3-VHEL (4 Oct 2026): AUDIT.md written, class N3, key source period
+
+Separate verifier session (account 2, for LANE-NEAR3). No decoding. Class **N3** for the R1953 partial reading (456 of 846
+tokens carry a key value: H 152, S 304; U 374). No printed plaintext and no period decipherment of the 4 Jan 1752 despatch
+were located after a logged search across families a-g. The most likely holdings were checked: Politische Correspondenz
+vol. 9 (replies to 31 Dec, 11 and 14 Jan, none to 4 Jan); De Leeuw 2000, all chapters; the BL and TNA catalogues; and
+NA Fagel inv. 5177 (Hellen decipherments run to No 37, 28 Dec 1751, then none until 8 Sept 1752) and inv. 5206. Not
+covered item by item: GStA PK (the receiving side) and the English decypher series. Full log, safe and unsafe sentences
+and postmortem are in `AUDIT.md`. Phrase search: `phrases.txt`, `sources.tsv` -> `print-check.tsv`.
+Suggestion for the lane (not run): Fagel inv. 5177's clear decipherments of Hellen's letters of Oct-Dec 1751 (scans ~2-93)
+are the nearest same-writer context, and possibly same-code known plaintext, for codes 1-800; contact sheet first, ~$3.
 
 ## Remaining gaps (NEAR3-HEL4, 4 Oct 2026)
 Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)

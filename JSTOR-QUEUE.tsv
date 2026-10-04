@@ -198,3 +198,7 @@ sources/desenclos	"Transposer pour mieux transporter" AND chiffrement	2026-10-04
 sources/desenclos	"L'espionnage espagnol dans la France des guerres de Religion"	2026-10-04	queued	
 sources/desenclos	Desenclos AND ("Espagnol 144" OR "fr. 3251" OR "fr. 2980" OR "fr. 20140" OR "Dupuy 452" OR "Dupuy 468" OR "fr. 3416" OR "fr. 3621" OR "Clairambault 349" OR "fr. 5160")	2026-10-04	queued	
 ciphers/espagnol142-mercy-1648	Desenclos AND (Mercy OR "Espagnol 144") AND 1648	2026-10-04	queued	
+ciphers/hellen-frederick-1752	"von der Hellen" AND (Haag OR Hague OR "La Haye") AND 1752 AND (chiffre OR cipher OR Geheimschrift OR decipher)	2026-10-04	queued	
+ciphers/hellen-frederick-1752	Hellen AND Lyonet AND (Prussian OR Pruisisch OR preußisch) AND (code OR cijfer OR cipher)	2026-10-04	queued	
+ciphers/hellen-frederick-1752	"la proposition d'une nouvelle" AND Hellen	2026-10-04	queued	
+ciphers/hellen-frederick-1752	"réduction des troupes" AND Hellen AND 1752	2026-10-04	queued	

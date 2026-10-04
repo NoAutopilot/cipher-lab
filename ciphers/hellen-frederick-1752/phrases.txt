@@ -1,0 +1,9 @@
+# NEAR3-VHEL (verifier, 4 Oct 2026): runs of H/S words from key_r4369/reading_R1953.txt, joined where the decode splits syllables.
+# Partial reading (codes 1-800 unread), so phrases are short; a hit needs Hellen/1752 context to count.
+si feu prince d'Orange
+a rejette la proposition d'une nouvelle
+de renouveller le traite
+sur les exhortations de S.M.
+le prince Louis
+qu'il se flattoit toujours
+la reduction des troupes
