@@ -486,3 +486,22 @@ di a". Not searched in print in this job; f.44/f.46 (same date, cabinet-noir) no
 Requests: gallica.bnf.fr 5 (one 900 px canvas 39, one info.json, three native-region fetches of the same region: the tool re-fetched after
 its own 30 MB downscale); github.com 1 shallow clone. Subagent calls: 1 Opus (settle read), 2 Sonnet (blind passes). No credentials used.
 Report only; no novelty classification made.
+
+## Images under 30 MB (RUN3-ESSHR, LANE-RUN3 account 1, 4 Oct 2026, 09:42-09:5x UTC by `date -u`)
+- images/ was 33.4 MB (464 files: 435 line crops 20.2 MB, 16 debug overlays 6.4 MB, 11 src_* regions 6.3 MB, 2 manifests). Shrunk the
+  AX2-SHRINK way: `images_manifest_full.tsv` lists every file (path, bytes, sha1, kind, Gallica source or regen command, cited_by from a
+  filename/stem grep of every text file in this folder, status). 325 files (17.9 MB) were deleted: only files with no filename citation
+  **and** a byte-identical re-cut from the committed native src_* region (`tools/iiif_lines.py --image <src> --follow-slope 300
+  --slope-margin 40 --debug`, the NOTES commands above minus the fetch): 382 of 383 files across 10 pages re-cut identically; the one
+  that did not (f119v_L12, the separate --centres re-cut) is kept. Kept: every filename-cited crop (51 f41r crops cited by
+  run2/settle_f41r_items.tsv, f119v_L02 etc.), all f41v crops (their src is a 1600 px reference copy, so no local re-cut), dup93/, all
+  src_* and both manifests. Folder now about 17 MB. Nothing fetched. Originals in git history at 351e2659.
+- `./regen_images.sh local [PREFIX]` restores crops offline in seconds (tested on f91r: sha1 match, then removed again);
+  `./regen_images.sh check` re-verifies every page (expected one DIFF, f119v_L12); `fetch f41v|f93r..f95r` refetches a Gallica region.
+  Cited full pages were already JPEG, so no conversion was needed. Note the passes TSVs name lines (L01) rather than crop files, so a
+  transcription re-check of a deleted line runs `local` first.
+- images/manifest.json repaired: 389 entries named `*_ref1600.jpg` reference copies that were not on disk (the native copies had been
+  restored after the iiif_lines 30 MB guard downscaled them in RUN3-ES41's worktree) while f41v named a native file that was not on disk;
+  each `source_file` now names the file present, with `source_file_downscaled` set to match.
+- tools/iiif_lines.py guard bug (RUN3-ES41's report) reproduced offline and fixed: the guard now skips any src_*.jpg tracked by git
+  (tools/tests/test_iiif_lines.py item 7 fails before the fix, passes after).

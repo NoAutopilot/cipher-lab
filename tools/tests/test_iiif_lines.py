@@ -7,6 +7,7 @@
    that region (checked by eye on the --debug overlay, 24 Sept 2026).
 3. --groups (4) and --follow-slope (5, MONT-RECROP: a sloping line a fixed-y cut loses and a sloped cut keeps).
 6. Size cap: with the cap lowered, the fetched reference copy is downscaled and renamed, the crops are not.
+7. Size cap must not touch a src_* copy already tracked by git (RUN3-ESSHR, 4 Oct 2026).
 Run: python3 tools/tests/test_iiif_lines.py"""
 import contextlib, io, json, os, random, shutil, sys, tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -123,6 +124,18 @@ try:
     files = os.listdir(out)
     check('src_test_full_ref1600.jpg' in files and 'src_test_full.jpg' not in files, 'reference copy downscaled and renamed')
     check(Image.open(os.path.join(out, 'cap_L01_s1.jpg')).width == 2400, 'crops kept at native resolution')
+    # 7. RUN3-ESSHR (4 Oct 2026): a src_* copy committed to git is never downscaled or removed by the guard.
+    gout = os.path.join(tmp, 'git'); os.makedirs(gout)
+    shutil.copy(page, os.path.join(gout, 'src_test_full.jpg'))
+    import subprocess
+    subprocess.run(['git', 'init', '-q'], cwd=gout, check=True)
+    subprocess.run(['git', 'add', 'src_test_full.jpg'], cwd=gout, check=True)
+    r = run('--image', os.path.join(gout, 'src_test_full.jpg'), '--out', gout, '--prefix', 'g')
+    files = os.listdir(gout)
+    check('src_test_full.jpg' in files and 'src_test_full_ref1600.jpg' not in files
+          and Image.open(os.path.join(gout, 'src_test_full.jpg')).width == W, 'tracked src_* left untouched by the 30 MB guard')
+    man = json.load(open(os.path.join(gout, 'manifest.json')))
+    check(all(not e.get('source_file_downscaled') for e in man['iiif_lines']), 'manifest does not mark the tracked copy downscaled')
 finally:
     shutil.rmtree(tmp)
 print('iiif_lines:', 'all tests pass' if not fails else f'{fails} failures')

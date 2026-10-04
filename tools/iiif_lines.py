@@ -30,7 +30,8 @@ Steps:
   5. OUT/manifest.json gains one entry per crop under the key "iiif_lines" (source URL, source file, box in native
      page coordinates, crop path, date); entries for the same crop path are replaced, other keys are left alone.
   6. If OUT is over 30 MB afterwards, the reference copies this script fetched (src_*.jpg) are downscaled to 1600 px
-     wide, renamed *_ref1600.jpg and marked so in the manifest (a later run refetches the native region); crops are never downscaled.
+     wide, renamed *_ref1600.jpg and marked so in the manifest (a later run refetches the native region); crops are never downscaled,
+     and a src_*.jpg already committed to git is never touched (RUN3-ESSHR, 4 Oct 2026).
   --centres y1,y2,... gives the line centres (region y px) by eye and skips step 3, for a short block whose profile the
      autocorrelation misreads (check the --debug overlay first; GAPS4-nevers-birago, 2 Oct 2026).
   --debug writes OUT/<prefix>_lines_debug.jpg: the region at 1600 px wide with centres (red) and band edges (blue).
@@ -64,7 +65,7 @@ Steps:
 Test: python3 tools/tests/test_iiif_lines.py (views: tools/tests/test_iiif_views.py) (offline: a synthetic page with a known line count and pitch, and the
 committed native image of fr.20140 f.36r, whose box 1300,1770,3400,210 holds one cipher line).
 """
-import argparse, json, os, re, sys, time, urllib.error, urllib.request, zlib
+import argparse, json, os, re, subprocess, sys, time, urllib.error, urllib.request, zlib
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -266,6 +267,17 @@ def gap_histogram(gray, top, bot, x0, x1, ink, core=0.55):
 
 def folder_size(d):
     return sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(d) for f in fs)
+
+
+def git_tracked(path):
+    """True when PATH is committed in a git checkout. The 30 MB guard never downscales a tracked src_* copy: doing so
+    deleted committed native references in a worktree (RUN3-ES41, 4 Oct 2026) and left the manifest naming *_ref1600
+    files that were later restored to their native names; shrink a committed folder the AX2-SHRINK way instead."""
+    try:
+        return subprocess.run(['git', 'ls-files', '--error-unmatch', os.path.basename(path)], cwd=os.path.dirname(os.path.abspath(path)),
+                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
+    except OSError:
+        return False
 
 
 def update_manifest(out, entries, downscaled=()):
@@ -547,7 +559,7 @@ def main(argv=None):
             if f.startswith('src_') and f.endswith('.jpg'):
                 p = os.path.join(a.out, f)
                 r = Image.open(p)
-                if r.width > 1600 and not f.endswith('_ref1600.jpg'):
+                if r.width > 1600 and not f.endswith('_ref1600.jpg') and not git_tracked(p):
                     ref = f[:-4] + '_ref1600.jpg'      # renamed, so a later run refetches the native region
                     r.convert('RGB').resize((1600, int(r.height * 1600 / r.width))).save(os.path.join(a.out, ref),
                                                                                           quality=75)
