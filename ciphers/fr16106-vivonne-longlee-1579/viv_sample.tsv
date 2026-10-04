@@ -1,0 +1,58 @@
+volume	canvas	class	note
+16106	230	other	Spanish/Portuguese-succession list (f.222-223)
+16106	246	other	Spanish plain
+16106	262	other	Spanish plain
+16106	278	other	Spanish plain
+16106	294	other	Spanish plain
+16106	310	other	Spanish plain
+16106	326	other	1579 Spanish plain heading
+16106	342	plain	French letter, plain, dated Oct 1579
+16106	358	other	19 Oct 1579 Spanish (Vazquez)
+16106	374	dense_cipher	two full cipher pages, signed De Madrid
+16106	390	other	Spanish plain
+16107	12	plain	French plain
+16107	31	partial_cipher	one short cipher page; right page heading "Du sr de St Gouard au Roy" 31 Jan 1580
+16107	50	dense_cipher	two full cipher pages
+16107	69	partial_cipher	plain page with cipher passages; Feb 1580
+16107	88	plain	plain letter to Villeroy, Feb 1580
+16107	107	dense_cipher	two full cipher pages
+16107	126	decipherment	cipher strip top-left; right page "Dechifre de la precedente" 8 Mar 1580
+16107	145	plain	plain, crossed-out draft
+16107	164	blank	blank/address leaf
+16107	183	plain	plain
+16107	202	plain	plain, April 1580
+16107	221	decipherment	"Dechifre de la precedente" 20 Apr 1580
+16107	240	dense_cipher	two full cipher pages
+16107	259	plain	plain, clerk hand with marginal numbers
+16107	278	dense_cipher	two full cipher pages
+16107	297	blank	address leaf
+16107	316	other	Spanish plain
+16107	335	blank	faint show-through
+16107	354	plain	French to the Queen, 4 Sept 1580
+16107	373	plain	plain draft
+16108	14	other	Spanish plain 27 Feb 1581
+16108	36	unreadable	faint, damp
+16108	58	plain	plain
+16108	80	dense_cipher	two full cipher pages
+16108	102	dense_cipher	two full cipher pages
+16108	124	partial_cipher	cipher strip at top plus signature
+16108	146	other	Spanish plain 23 Sept 1581
+16108	168	decipherment	"Dechifrement de la precedente" 8 Nov 1581, cipher lines at ends
+16108	190	blank	blank
+16108	212	plain	plain
+16108	234	plain	plain with cipher marks in margin
+16108	256	dense_cipher	two full cipher pages (digit/symbol alphabet)
+16108	278	plain	plain with numerals in text
+16108	300	plain	plain
+16108	322	dense_cipher	two full cipher pages
+16108	344	plain	plain
+16108	366	plain	plain, signed July 1582
+16108	388	dense_cipher	two full cipher pages
+16108	410	blank	blank
+16108	432	dense_cipher	two full cipher pages
+16108	454	decipherment	"Dechifre de la precedente" 23 Oct 1582
+16108	476	plain	plain
+16107	108	dense_cipher	adjacent probe (not in the random sample)
+16107	241	dense_cipher	adjacent probe (not in the random sample)
+16108	257	dense_cipher	adjacent probe (not in the random sample)
+16108	433	dense_cipher	adjacent probe; cipher with clear closing lines Oct 1582

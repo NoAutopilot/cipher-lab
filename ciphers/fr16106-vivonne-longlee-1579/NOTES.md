@@ -23,28 +23,53 @@ Tomokiyo (henryiii.htm, on disk) sentence on this pool: "At least from 1579 (BnF
 ## Leaf sample (this worker, Gallica IIIF, 12 canvases at 700 px, 2 manifests + 12 images, 4 Oct 2026)
 fr.16107 canvases 60, 120, 180, 250, 300, 350: c60 full cipher page facing a plain-text page (decipherment); c120 two cipher pages, second one partly cipher; c250 two cipher pages with marginal marks; c180, c300, c350 plain or blank. fr.16108 c60, 140, 300, 380, 450 plain/Spanish enclosures or plain letters ending "De Madrid ..."; c220 two dense cipher pages (about 22 lines). 4 of 12 canvases carry cipher, about 700-900 signs per cipher page by eye (est.). No letter was matched to a decipherment leaf by folio, so "on-leaf decipherment" for a given letter rests on Gachard's counts, not on this sample.
 
-## Web and blog check (CS-1, 4 Oct 2026)
-Not run by web search engine in this job (no WebSearch call made); what was checked: Tomokiyo henryiii.htm on disk (grep Vivonne/Saint-Gouard/Longlée: lines 197-237, 269-289, 978-979, quoted above); Mousset, Gachard II and d'Ars full text on IA. Blogs (Cipherbrain, Cryptiana blog, Cipher Mysteries) and DECODE, Bourdeau/Aymeloglu clones: NOT searched here; the sibling CS-5 log in ciphers/fr16104-vivonne-spain-1572/NOTES.md (3 Oct 2026) found no Vivonne/Longlée hit in either solver repository, three blogs or web search, which is cited, not repeated. next: five plain searches and three blog site searches for "Longlée chiffre" / shelfmarks fr.16107-16110, ~$0.5.
+## Web and blog check (CS-1 + VIV-M, 4 Oct 2026)
+CS-1 (earlier, kept): Tomokiyo henryiii.htm on disk; Mousset, Gachard II and d'Ars full text on IA; sibling CS-5 log in fr16104 (3 Oct 2026) cited.
+VIV-M, 4 Oct 2026 06:4x-06:5x UTC (this section completes what CS-1 skipped; every query and hit):
+- On-disk greps (no network) for Vivonne / Longl[ée]e / Saint-Gouard / 16107 / 16108 in sources/cyphersolver (three dated snapshots 1-3 Oct 2026, Bourdeau's repository), sources/bourdeau, sources/cyphersolver-site, sources/ciphermysteries, sources/decode (record listings of 24 Sept 2026: 0 lines naming Vivonne or Longlee in decrypted or non-decrypted lists), sources/cryptiana, sources/solver-diffs (Aymeloglu diff 23 Sept 2026): no hit about this pool in any solver or DECODE file; only Tomokiyo henryiii.htm and its image list (IMAGE-QUEUE.tsv rows 193, 198-199, 622-632, images henryiii_Vivonne1-6 / Longlee1 / LongleeSig, none a decipherment by a modern solver) and a BL shelfmark that is a Japanese book (16107.h.14, noise).
+- WebSearch 1: "Longlée cipher Vivonne Saint-Gouard Henri III Spain ambassador cipher BnF fr.16107 deciphered": Wikipedia (Jean de Vivonne, Pierre de Ségusson), Gallica fr.16110 record, BnF archivesetmanuscrits cc462349, Project MUSE review of Diplomatie et espionnage (Garnier) -- no decipherment of the cipher.
+- WebSearch 2: "Longlée OR Longlee cipher Henri III Madrid fr. 16108 OR fr.16107": the same set plus larrycbeck/cyphersolver (a GitHub copy named like Bourdeau's repository, only the title was returned; not opened this job, not one of the two repositories named in CLAUDE.md rule 1) and a Oxford French History article citing fr.16108 -- no decipherment.
+- WebSearch 3 (domain-restricted to cryptiana.web.fc2.com, scienceblogs.de, ciphermysteries.com, cipherbrain.blogspot.com, de-crypt.org): "cryptiana Henri III Longlée Vivonne cipher": two unrelated posts (Cipher Mysteries 2016 fifteenth-century cryptography; Klausis Krypto Kolumne on a Henri II cipher device) -- nothing about Vivonne or Longlée; the search tool's index of these sites is thin, so this is a search result for the log, not proof of absence.
+- Not done: Cipherbrain and Cryptiana-blog comment threads opened one by one; a live DECODE record search (login-free listing only, 24 Sept snapshot); github.com/larrycbeck/cyphersolver (next: one fetch of its README, ~$0.1); Google Books / IA full-text for Mousset's table words in a phrase search (print_check not run).
+Result: no decipherment of any Vivonne 1579-82 or Longlee 1583-88 cipher letter found in solver repositories, DECODE listing snapshots, blogs or web search by these methods (a search result, not a novelty verdict).
 
 ## Premise check (CS-1, 4 Oct 2026)
 (a) folder's own notes: no folder before this; sibling folder fr16104 states Tomokiyo's table image henryiii_Vivonne1.png is for 1572-74 only; found: Tomokiyo's Longlée table image (henryiii_Longlee1.png) not on disk.
-(b) other solvers' working files: not searched this job; CS-5 and RUN1-VIV2 report none in Bourdeau/Aymeloglu: not found (cited).
+(b) other solvers' working files: VIV-M 4 Oct 2026 grepped the on-disk Bourdeau snapshots, Aymeloglu diff and DECODE listings, no Vivonne/Longlée hit (Web and blog check above); earlier: CS-5 and RUN1-VIV2 report none in Bourdeau/Aymeloglu: not found (cited).
 (c) physical neighbours: Gachard double-numbering = clerk's decipherment follows each ciphered letter (54 in fr.16107/16108); sample canvas 60 of fr.16107 shows a decipherment facing a cipher page: found. Not measured for individual letters.
 (d) recipient side: Mousset prints Longlée's dispatches (recipient-side editions: Lettres de Henri III for the King's replies, Baguenault de Puchesse for Catherine's letters to Longlée per Mousset p.liv, not opened): partly reached.
 
-## Remaining gaps (finish-or-blocker pass, 4 Oct 2026)
-Read so far: unmeasured per letter (Gachard counts only: 54 of an unknown number of Vivonne cipher letters 1580-82 carry a clerk's decipherment; Longlée 1583-88 about 88+ dispatches printed in Mousset); no letter was opened and matched.
-- Vivonne cipher letters 1580-82 without a decipherment leaf - blocker: not-attempted; Gachard counts only letters with a decipherment, no leaf was matched; next: bisect fr.16107/16108 by canvas to list cipher letters and their facing decipherment, 25 contact-sheet units, ~$3
-- fr.16106 ff.207+ 1579 letters - blocker: not-attempted; Gachard lists dates but no folios for 1579, nothing opened; next: read Gachard p.456-460 dates against canvases, ~$1
-- Mousset page-to-letter map (OCR table of letters, printed pages, cipher originals) - blocker: not-attempted; the OCR table of letters exists in the djvu text but was not parsed; next: parse the printed table of contents into a TSV, ~$0.5
-## Escalation (4 Oct 2026)
-- [ ] siblings: fr16104 folder (1572-74 cipher, different table) is a sibling, not merged
-- [ ] clear-pages: Vivonne letters carry facing decipherments; match by folio, planned above
-- [x] known-keys: Mousset's Longlée table pp.lviii-lix is a published key; Tomokiyo's image
+
+## Mousset table of letters and Vivonne residual (VIV-M, 4 Oct 2026)
+**Mousset TSV.** `mousset_letters.tsv` (script `mousset_parse.py`, input IA dpchesdiplom00longuoft djvu, one fetch, 1.4 MB): 126 source lines (one per printed letter/copy), of which 80 carry an OCR-readable date, 52 name an official decipherment, volumes fr.16108 (ff.380-382) / 16109 / 16110 plus Archives nationales and printed-edition sources. Printed page is blank: the djvu has no reliable page numbers and its OCR'd Table chronologique is column-scrambled (dates, addressees, dépôt, pages split into separate lines), so djvu_line locates the letter. All OCR-derived, grade I; the date column is partial. It is Longlée's series from 3 Sept 1582 (printed in clear in Mousset); it carries no Vivonne 1579-82 letters beyond the 3 Sept 1582 pair.
+
+**Prediction from Gachard failed as a method.** Gachard II's Table de concordance lists for this period only 12 Nov 1579 (Saint-Gouard to the king, p.456) and 7 Jan 1580 (p.560); there is no per-letter list for 1580-82 beyond the counts in the volume headings (26 letters with double numbers in fr.16107, 28 in fr.16108), so "predict which cipher letters lack a decipherment leaf" could not be done from his dates. Measured by sampling instead.
+
+**Sample (Gallica IIIF, 600 px, contact sheets in images/sheet01-11, table in `viv_sample.tsv`).** One canvas = an opening of two pages (all canvases labelled NP). 53 canvases at a fixed stride (fr.16106 c230-390 step 16, n=11; fr.16107 c12-373 step 19, n=20; fr.16108 c14-476 step 22, n=22) plus 4 adjacent probes (fr.16107 c108, c241; fr.16108 c257, c433) outside the sample. Requests: manifests 3 (cached), images 57, spaced 2.2 s, all HTTP 200; no other Gallica worker running.
+| Volume (canvases) | n | dense cipher (two full cipher pages) | partial cipher | clerk's decipherment ("Dechifre de la precedente") | plain/Spanish/blank |
+|---|---|---|---|---|---|
+| fr.16106 f.207+ (c215-391, about 177; f.207 about c215 since c230 = f.222-223) | 11 | 1 (c374, f.~334-335 pages, no decipherment facing) | 0 | 0 | 10 |
+| fr.16107 (380) | 20 | 4 (c50, c107, c240, c278) | 2 | 2 (c126 8 Mar 1580, c221 20 Apr 1580) | 12 |
+| fr.16108 (487) | 22 | 6 (c80, c102, c256, c322, c388, c432) | 1 | 2 (c168 8 Nov 1581, c454 23 Oct 1582) | 13 |
+Reading the sheets: a ciphered letter runs 2-3+ canvases (c107+c108, c240+c241, c256+c257, c432+c433 all dense), so each deciphered letter costs several canvases of cipher and the clerk's plain copy sits after it, not facing it. fr.16108 c256/c322/c388/c432 use a digit-and-mark alphabet, fr.16107 and fr.16108 c80/c102 a letter-form mark alphabet (two systems in the volume pair, as Tomokiyo notes for Vivonne's switch of table; not matched here).
+**Estimates (point, 95% Wilson interval on the sample).** Dense-cipher canvases: fr.16107 20% (8-41%) = about 76 (30-156); fr.16108 27% (13-48%) = about 133 (63-234); fr.16106 f.207+ 9% (2-38%) of about 177 = about 16 (3-67): about 225 canvases, about 450 cipher pages. Signs per cipher page about 700-1,100 (by eye from the 600 px sheets, about 28 lines x 25-40 signs; not counted by 3-line sample on native images, grade I). Clerk's plain copies: 4 of 42 canvases in fr.16107/16108 (9.5%, 3-23%) = about 82 canvases (26-200). If a plain copy takes about 0.6 the canvases of the cipher it renders (assumption, unmeasured), the in-volume decipherments cover about 137 of the 225 dense canvases, leaving about 90 canvases = about 175 pages = **about 120-190k signs with no decipherment leaf in the volumes (point estimate; the interval reaches 0)** -- the sample cannot say which letters, and Gachard's 54 double-numbered letters bound the glossed side, not the open side.
+**What is not known:** which letters lack a clerk's copy (needs the 90-odd cipher canvases identified letter by letter, about 150-200 more canvas requests); the plain-copy/cipher length ratio; whether the letter-form and digit alphabets are two tables (Tomokiyo's Longlée/Vivonne table image not on disk).
+
+Pool bar: PASS (measured estimate, sample-based, n=57 canvases: about 225 dense cipher canvases = about 450 pages = about 315-500k signs in the pool, about 120-190k with no decipherment leaf; the 95% interval on the unglossed part includes 0, so the bar is passed on the point estimate and not on the lower bound; per-letter matching is the next step)
+Cheapest first test (named, not run): a grade-C key by `tools/interlinear_align.py` from one in-volume pair -- fr.16107 c107-c108 (cipher, f.102ff) against the clerk's copy that follows (decipherment pages c126 is the nearest seen, "Dechifre de la precedente" 8 Mar 1580; locate the exact plain copy by bisecting c109-c126), two blind transcription passes of the cipher by crops (`tools/iiif_lines.py`, one letter, ~USD 3) plus its plain copy, matched control = shuffled-alignment null, ~USD 6 in all.
+
+## Remaining gaps (VIV-M, 4 Oct 2026)
+Read so far: 57 canvases of three volumes at 600 px (a sample, no cipher transcribed); Mousset's 126 printed source lines listed; web/blog check done.
+- Which Vivonne cipher letters 1580-82 (fr.16107/16108) and 1579 (fr.16106 f.207+) lack a clerk's decipherment - blocker: not-attempted; the sample gives only a density estimate; next: walk the dense-cipher runs and the "Dechifre" pages (bisect canvas runs, about 150-200 canvases at 600 px, 2.2 s apart, ~USD 4)
+- First cheap test on one cipher/plain pair (see "Cheapest first test") - blocker: not-attempted; the plain copy of the chosen letter is not yet located; next: locate the plain copy of fr.16107 c107-108 by bisection, ~USD 6 with control
+- Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; OCR of the table is scrambled; next: read the dates from each letter's own heading by a second script pass or the page images, ~USD 0.5
+- github.com/larrycbeck/cyphersolver and Cipherbrain/Cryptiana comment threads not opened - blocker: not-attempted; only titles were returned by search; next: one README fetch, ~USD 0.1
+## Escalation (VIV-M, 4 Oct 2026)
+- [ ] siblings: fr16104 folder (1572-74 cipher, Tomokiyo's Vivonne1 table) is a sibling, not merged and not written
+- [ ] clear-pages: clerk's plain copies exist after ciphered letters (c126, c168, c221, c454 seen); matching by letter planned above
+- [x] known-keys: Mousset pp.lviii-lix reconstruction and Tomokiyo's table image; image not on disk
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; Lettres de Henri III not opened
 - [n/a] key-rebuild: no reading attempted under this brief
-- [ ] image-check: 12 canvases viewed at 700 px only
+- [x] image-check: 57 canvases viewed at 600 px as contact sheets (class table in viv_sample.tsv)
 - [ ] retry: nothing tried yet
-Verdict: keep going: 3 internal gaps; cheapest next: Mousset table of letters to TSV, ~$0.5
-
-Pool bar: FAIL (open est. signs not shown to reach 2,000; Longlée 1583-90 is printed, Vivonne 1580-82 cipher letters carry on-volume decipherments; unflagged residual unmeasured, estimate below 2,000 is unproven)
+Verdict: keep going: 4 internal gaps; cheapest next: locate the plain copy of fr.16107 c107-108 and run the interlinear_align first test, ~USD 6
