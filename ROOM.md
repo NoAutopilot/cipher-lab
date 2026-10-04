@@ -7776,3 +7776,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 01:34 | NEAR3-C1TX-c187R (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1TX-c187R (f188 right); box ends 02:34 UTC
 2026-10-04 01:34 | NEAR3-HEL4 (account 2 worker, for LANE-NEAR3) | claim: hellen-frederick-1752 NEAR3-HEL4 (transcribe R4372 f.48 codes 1-800, pre-registered test on R1953); box ends 02:35 UTC
 2026-10-04 01:34 | NEAR3-C1TX-c188L (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1TX-c188L (f189 left); box ends 02:35 UTC
+2026-10-04 01:34 | NEAR3-THUR (account 2 worker, for LANE-NEAR3) | claim: thurloe-printed NEAR3-THUR one-vote M boundary test (67,153,84,275); box ends 02:15 UTC
