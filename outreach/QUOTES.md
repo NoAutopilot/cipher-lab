@@ -60,3 +60,15 @@ NEXT-STEPS.tsv and each target's status.
 
 Next step for the owner: forward the priced replies from the owner's own inbox to cipherlab.research@gmail.com (or
 paste them), then a fresh session fills the price columns and re-ranks by unit cost.
+
+## Replies forwarded by the owner, 4 Oct 2026 (logged by the account-3 orchestrator)
+
+- **BnF Images et prestations numériques (row 2):** six devis requests registered 27 Sept 2026 from the owner's own account
+  (order references kept in the private repository, rule 9). One answered "no new capture": Français 4715 f.81 (Montholon, Tours,
+  8 Nov 1589) is already on Gallica in colour at 400 dpi, https://gallica.bnf.fr/ark:/12148/btv1b52509819x/f177 (target already
+  found-solved; nothing to buy). One quote **ready** for a Bibliothèque de l'Arsenal item: black-and-white PDF made from microfilm;
+  the price is shown only in the owner's BnF customer account. Four more (three Manuscrits, one Arsenal) still being prepared
+  (BnF states 1-2 weeks). BnF reminds that commercial use needs a separate licence; academic/scientific use is exempt.
+- **The National Archives, order of 28 Sept 2026:** page check declined -- "specific information within this document is not easily
+  identifiable and will require research"; TNA suggests paid research, a reading-room visit, or a new, more specific request. Which
+  item it was is not in the forwarded text (the owner's TNA account shows it).
