@@ -3903,7 +3903,7 @@ GAPS209 rah-morillo-1817 (2.45, N): f.35 is a pencil folder divider with no ciph
 GAPS210 naf14913-rousseau (5.27, D-, half met): ff.1r-205r swept, with controls 30/30 and the negative control 0/30. Numeral passages flagged at ff.165r-v and ff.197v-198r (M). ff.290-392 are not swept yet; next is native transcription of the 4 flagged pages, ~4.
 GAPS211 pollaky-1865-1875 (1.38, D): T' gave p 0.254 against controls with power 0.65/0.45 at p<0.001 and FPR 0.05. The test is valid; nothing was detected at the design's 3-12 omission budget.
 
-## LANE A3V handoff (session_01L3BKXmCyQsJpiWCWD9nGz6, account 3), 4 October 2026 (open since 02:4x UTC)
+## LANE A3V handoff (session_01L3BKXmCyQsJpiWCWD9nGz6, account 3), 4 October 2026 (closed 04:1x UTC: backlog of audits spent)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/runs/2026-10-04-acct3-a3v-wave*.md`. Lane cap 60.
 
@@ -3921,9 +3921,13 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/
 | A3V-VPAG | clairambault1225-paget-1714 1st audit | session_013Wg9wEwLFyx36vVUCvih4U | 6 | D 2.63 | N0 (leaves' own interlinear decipherment); writer Pierre Paget, consul at Genoa |
 | A3V-V2BIR | f.117r/f.168/f.144r/f.47r 2nd audits + claim scope | session_01PRtvLuJkLtZ9oKybGgPXGa | 6 | D 3.07 | **f.117r N4, counts** (pending rule-7); f.47r/f.144r/f.168 classes, not counted (no text) |
 | A3V-RD168 | f.168 rule-7 re-derivation | session_01H5uHwYAjrzLgQwC9jSH2zR | 3 | D 1.40 | SAME 122/122 |
-| A3V-RD117P | rule-7 f.117r + Paget current | session_014ZN1WdX3JCf5Jdwr2tVhBr | 4 | live | |
+| A3V-RD117P | rule-7 f.117r + Paget current | session_014ZN1WdX3JCf5Jdwr2tVhBr | 4 | D 2.09 | both SAME (279/279, 505/505) |
 
-Open: A3V-RD117P live (last job). Workers ledgered 39.61 at 03:5x. For the parent: hellen R1953 now has two N3 audits -- status.json result entry (key period, claim_scope recovered-passages, 456/846). f.144v ~24-sign run untranscribed (a unit). Morillo 4 key signs `ours` (AUDIT 2, not applied to status.json). Research note for the owner: research/TRANSCRIPTION-PRACTICE-2026-10-04.md.
+Closed 04:1x UTC. 16 workers 41.70 (all D) + orchestrator 10.72 = 52.42 of 60. No check-in armed.
+
+**Counts (two audits at N3+, rule-7 passed):** hellen-frederick-1752 R1953 (N3 x2, key period, H 152 S 304 of 846; N4 gate = GStA PK I. HA Rep. 96 Nr. 38 G-H, not digitised -> archive request) and birago-fr3252-1571-72 f.117r no.77 (N3 -> N4, key published Tomokiyo 1572, S 190/279, French passages on Carmagnola; rule-7 SAME).
+**Audited, not counted:** N0 confirmed by second audits -- nevers-birago no.87/f.152r/f.162, royalist 1646 f.10, Clinton 2894, Morillo 5186; first audits N0 -- NV-01 Gonzague, fr3252 f.36, Paget 1714; janssens leaf 188 N1 (Collet 1910 prints part); f.47r N3 / f.144r N4 / f.168 N4 are search classes without a reading (claim-scope ruling, AUDIT 3 / AUDIT 13).
+**Open items for the parent / next lane:** (1) status.json result entries for hellen R1953 and f.117r; (2) f.144v carries an untranscribed ~24-sign no.73 cipher run (unit, ~2); (3) Morillo: 4 key signs print-aligned = `ours` (AUDIT 2, not applied to status.json); (4) Clinton earliest print Brymner 1888, credit in status.json/CONTRIBUTIONS if cited; (5) no.87: [turino] where clerk sheet has catholici, [quello] where ggio -- found, not applied; (6) Paget metadata: writer Pierre Paget, French acting consul at Genoa/Cagliari, not Lord Paget (NOTES/PROGRESS name); (7) f.117r spec ciphertext pointer stale (277 vs 279 rows); (8) Paget gibbs_codes vs key.tsv disagree on 8 codes (u/v), next key pass; (9) owner decision pending: reading-depth scale D0-D4 beside the N-class (unique solve = N3+ and D2+), proposed in chat 4 Oct; (10) research/TRANSCRIPTION-PRACTICE-2026-10-04.md top-5 transcription additions, not yet in TRANSCRIPTION.md build plan.
 
 ## LANE NEAR3 handoff (session_01Au8dSL1TXFoCk5P5opEMVv, account 2), 4 October 2026 (closed 03:0x UTC: budget spent)
 
