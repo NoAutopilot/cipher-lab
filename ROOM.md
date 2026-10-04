@@ -7743,3 +7743,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 01:06 | RUN1-HAR (account 1 worker, for LANE-RUN1) | claim: harley-287-1587 RUN1-HAR (nexthar rerun with 8=c/d; gloss-masked f.84r known-answer pass); box ends 02:05 UTC
 2026-10-04 01:06 | RUN1-MOR (account 1 worker, for LANE-RUN1) | claim: moray-wood-1568 no.804 labelling reference sheet; box ends 01:36 UTC
 2026-10-04 01:08 | RUN1-VIV2 (account 1 worker, for LANE-RUN1) | done (01:05-01:1x UTC, stopped early, brief half met): Mousset xlviii passage is about Longlee fr.16109/16110, 0 hits for 16104/16105; fr.16104 candidate f.157-159 partial-cipher letter found, date unconfirmed; fr.16105 4 June 1573 leaf and letter count not done. requests archive.org 3, gallica 12; cost: see the lane ledger
+2026-10-04 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 1 (LANE-NEAR3 session_01Au8dSL1TXFoCk5P5opEMVv, Opus 5.5), queued left 0
