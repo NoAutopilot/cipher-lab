@@ -1315,3 +1315,18 @@ Read so far: 0 of 1,094 signs (no key or crib has read any sign; bRIK, RIK-CRIBS
 - [x] image-check: R4282 two pages done (GAPS38, 3 Oct 2026, 3.4% two-reader disagreement, reconciled); R4284 key-test leaf done (GAPS79, 3 Oct 2026: DECODE PDF image, 22.5% two-reader disagreement vs Bourdeau, reconciled to 7.0% unsettled, focus.tsv for the sorter); the corrected strip used as a crib key on R4282 (GAPS85, 3 Oct 2026): FAIL both arms, p 0.88/0.93, positive control 5/5; R4282 p2 read twice more blind via R4284's I25750 (GAPS92, 3 Oct 2026, 3.0% two-reader disagreement, 3 slots differ from GAPS38)
 - [n/a] retry: no earlier attempt failed on a fixable setting
 Verdict: parked: every gap has an outside blocker (no-key-material for the letter, the print step now done via L46; the Owner sign sorter's answer on gaps92/focus.tsv and r4284_leaf/focus.tsv; otherwise new material, a second letter in this sign system or a period key); key-rebuild [retired] (GAPS95, 3 Oct 2026); status stays open (rule 5; L46 answered 4 Oct 2026, DESK-LAND)
+
+## Desk read, AOSB ser. I Band 4 (Bref 1628-1629, 1909), HathiTrust mdp.39015028586363 (owner's browser, 4 Oct 2026)
+Found full view by ILL-SWEEP (HathiTrust bibliographic API, series OCLC 4445306); searched by the owner in HathiTrust's
+"Search in this text", screenshots pasted to the account-3 orchestrator 4 Oct 2026 ~19:5x UTC. Search result, not a negative
+about the cipher (rule 10).
+- `futurus status`: no phrase hit; the two words occur separately on p. 791 (treaty text: "conditionibus in Ducatu
+  Prussiae ... status", "quis ... futurus sit"). Not R4282's phrase.
+- `expensas`: p. 662 (Latin letter on the Ducal Prussia sequestration: "sumptus et immensas expensas facere cogatur"). Not R4282's context.
+- `Camerarius` (contents list): Oxenstierna's letters TO Ludvig Camerarius, "svensk resident i Haag", printed in this volume:
+  no. 96 Elbing 14 April 1628 (p. 115); no. 143 Elbing 25 July 1628 (p. 194); no. 165 Copenhagen 17 Sept 1628 (p. 229);
+  no. 402 Elbing 6 June 1629 (p. 516).
+- `dubitatur`, `chiffer`: hits not shown in the pasted screenshots (owner to confirm counts).
+Next (desk, ~5 min): screenshot pp. 115, 194 and 229 (the three 1628 letters to Camerarius) -- R4284 is labelled "Legat ...
+till L. Camerarius bref for 1628", so a printed 1628 Oxenstierna-Camerarius letter mentioning a cipher, a key or the phrases
+above would be the first link between R4282 and a known correspondence.
