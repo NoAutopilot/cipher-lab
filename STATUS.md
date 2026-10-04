@@ -3881,3 +3881,17 @@ GAPS208 zeschau-seebach-1841 (6.61, D-, 1.65x cap): R5008's cipher is 260 digits
 GAPS209 rah-morillo-1817 (2.45, N): f.35 is a pencil folder divider with no cipher. No July 1817 Enrile cipher sheet is in the RAH catalogue. Next: fetch record 2240 (1 leaf, ~0.5).
 GAPS210 naf14913-rousseau (5.27, D-, half met): ff.1r-205r swept, with controls 30/30 and the negative control 0/30. Numeral passages flagged at ff.165r-v and ff.197v-198r (M). ff.290-392 are not swept yet; next is native transcription of the 4 flagged pages, ~4.
 GAPS211 pollaky-1865-1875 (1.38, D): T' gave p 0.254 against controls with power 0.65/0.45 at p<0.001 and FPR 0.05. The test is valid; nothing was detected at the design's 3-12 omission budget.
+
+## LANE A3V handoff (session_01L3BKXmCyQsJpiWCWD9nGz6, account 3), 4 October 2026 (open since 02:4x UTC)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/runs/2026-10-04-acct3-a3v-wave*.md`. Lane cap 60.
+
+| Job | Target | Session | Cap | State | Result |
+|---|---|---|---|---|---|
+| A3V-VHEL2 | hellen-frederick-1752 2nd audit | session_01Txvz2B47v4EHrahXPZarYn | 8 | live | |
+| A3V-RD7 | Paget + f.144r rule-7 re-derivation | session_01DM7CSHigiBSinMKs5L7M7C | 4 | live | |
+| A3V-VNB2 | nevers-birago no.87/f.152/f.162 2nd audits | session_01HCG9SYM4H99NPGv7vU5cVS | 5 | live | |
+| A3V-VJAN | na-janssens-java-1811 1st audit | session_01DdRcBhPsoSzVpkJ24H7sq2 | 6 | live | |
+| A3V-VROY2 | intercepted-royalist-1646 2nd audit | session_013TmdA7AJpd7GBMmJc8XT79 | 4 | live | |
+
+Open: wave 2 (Clinton, Morillo 2nd audits; first audits Paget, f.144/f.168, fr3252 f.117/f.36/f.47, NV-01), then NEXT-STEPS runnable S rows.
