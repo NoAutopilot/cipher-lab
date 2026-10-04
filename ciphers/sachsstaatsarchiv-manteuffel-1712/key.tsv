@@ -149,6 +149,7 @@ code	value	grade	source	note
 327	Rom	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: Kurrent
 355	u|un|une	M	Krauske 1893, Loc. 694/10 f.5	passes agree
 356	deux	C	Krauske 1893, Loc. 694/10 f.5	passes agree
+371	il	M	clear-vs-cipher witness pair: frame 0501 right page 'Il a parle fort confidemment' (clear) vs Loc. 694/08 f.409v L10 '371. a parle fort confidemment' (cipher); RUN4-MANT2 4 Oct 2026, f0501/clear_cipher_pairs.tsv P1	attested once (stays M, PREREG-MANT2 rule 5); the copyist may have enciphered the person meant (Taube or Brahe, the sentence before) rather than the pronoun
 376	l'envoyé	C	Krauske 1893, Loc. 694/10 f.5	passes agree
 378	le secrétaire	C	Krauske 1893, Loc. 694/10 f.5	passes agree
 380	la paix	C	Krauske 1893, Loc. 694/10 f.5	passes agree

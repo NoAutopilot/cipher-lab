@@ -1,0 +1,11 @@
+# Code runs written in cipher in BOTH witnesses at the same place (no clear-vs-cipher pair; group-for-group agreement), RUN4-MANT2 4 Oct 2026, worker zooms
+place	0501	f409r_or_f409v	agreement	variants
+'de la facon de Mons.' / 'de Mons.'	770	f409r 770	1/1	-
+'les sentimens de Mons.'	73	f409r 73	1/1	-
+'les discours que'	401 6[partial] 515 579 139 115 612 452 156 867 549 402 237 180 612	f409r 401 69 515 579 139 115 bir 452 156 867 549 402 237 180 bir	14/14 + partial	0501's dropped gutter group reads '6y'=69 on f.409r (I, digits low); bir=612 at 2 more slots (3 in all with f409v L11)
+'selon leur convention'	230 100 115 588 273 494	f409r 230 100 115 586 273 94	4/6	588/586, 494/94 (f.409r 586 overwritten; 0501 'uy4')
+'m'a dit que si l'on'	770	f409r 770	1/1	-
+'le raisonnement de'	865	f409r 865	1/1	digits 865 confirmed on f.409r (the 805/865 doubt, key.tsv 865 note)
+'a Mons./Msr.'	403 228 111 149 612 583 401	f409v_L11 403 228 111 149 bir 583 401	7/7	-
+'c'est'	553 716 417 646 84 406 108 515 485 492 281 402 519	f409v_L13 same with 287	12/13	281/287 (RUN4-MANT, unsettled)
+'que les'	342 583 240 825	f409v_L14 342 583 240 825	4/4	-
