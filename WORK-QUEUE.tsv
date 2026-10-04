@@ -205,3 +205,4 @@ LANE-NEAR4	other	.claude/briefs/runs/2026-10-04-acct3-lane-near4.md	Opus 5.5	60	
 TX-VIEWS	other	.claude/briefs/runs/2026-10-04-acct3-tx-additions.md	Opus 5.5	8	75	queued	2026-10-04 04:15	multi-view voting (iiif_lines --views, reconcile N passes); research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1; owner approved
 TX-AGREEAUDIT	other	.claude/briefs/runs/2026-10-04-acct3-tx-additions.md	Opus 5.5	5	50	queued	2026-10-04 04:15	audit of agreed signs with planted-error control (lookalike_pass audit); research #2
 TX-ALTS	other	.claude/briefs/runs/2026-10-04-acct3-tx-additions.md	Opus 5.5	5	50	queued	2026-10-04 04:15	a/b? alternatives into the decode lattice (reconcile --keep-alts); research #3
+LANE-POOLS2	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md	Opus 5.5	60	600	queued	2026-10-04 04:50	untested pools (Longlee 1579-88, Throckmorton 1559-63, Pisany 1585-88, Costabili 1491-93) + es132 Cipher 3 first test
