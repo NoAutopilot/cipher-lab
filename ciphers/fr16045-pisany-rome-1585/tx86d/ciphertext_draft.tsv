@@ -1,0 +1,625 @@
+line	position	sign	confidence	alt	why
+L01	1	T16	M	B:T63	differ
+L01	2	T02	H		agree
+L02	1	T01	H		agree
+L02	2	T49	M		agree-flagged
+L02	3	T19	M	B:T55	differ
+L02	4	T16	H		agree
+L02	5	T33	H		agree
+L02	6	T51	H		agree
+L02	7	T05	H		agree
+L02	8	/	H		agree
+L02	9	T62	H		agree
+L02	10	/	H		agree
+L02	11	T64	M	B:T22	differ
+L02	12	T64	H		agree
+L02	13	T33	H		agree
+L02	14	T09	H		agree
+L02	15	T41	M	B:T37	differ
+L02	16	/	H		agree
+L02	17	T03	M	B:-	gap
+L02	18	T65	M	B:?[Jc]	differ
+L02	19	T05	M	B:T40	differ
+L02	20	T13	H		agree
+L02	21	T35	H		agree
+L02	22	T37	H		agree
+L02	23	/	H		agree
+L02	24	T55	M	A:-	gap
+L02	25	T16	M	A:-	gap
+L02	26	T23	M	A:-	gap
+L02	27	T17	M	A:-	gap
+L02	28	T40	M	A:-	gap
+L02	29	T43	M	A:-	gap
+L02	30	T19	M	B:T44	differ
+L02	31	T16	H		agree
+L02	32	T23	H		agree
+L02	33	T47	M	B:T17	differ
+L02	34	T40	H		agree
+L02	35	T43	H		agree
+L02	36	T44	H		agree
+L02	37	T05	M	A:-	gap
+L02	38	/	M	A:-	gap
+L02	39	T26	M	A:-	gap
+L02	40	T12	M	A:-	gap
+L02	41	T48	M	A:-	gap
+L02	42	T33	M	A:-	gap
+L02	43	T57	M	A:-	gap
+L02	44	/	M	A:-	gap
+L02	45	T26	M	A:-	gap
+L02	46	T17	M	A:-	gap
+L02	47	T13	M	A:-	gap
+L02	48	T35	M	A:-	gap
+L02	49	T43	M	A:-	gap
+L02	50	T22	M	A:-	gap
+L02	51	T54	M	A:-	gap
+L02	52	T26	M	A:-	gap
+L02	53	T25	M	A:-	gap
+L02	54	T54	M	A:-	gap
+L02	55	T33	M	A:-	gap
+L02	56	T49	M	A:-	gap
+L02	57	/	M	A:-	gap
+L03	1	T30	H		agree
+L03	2	T69	H		agree
+L03	3	/	H		agree
+L03	4	T25	H		agree
+L03	5	T68	H		agree
+L03	6	/	H		agree
+L03	7	T40	H		agree
+L03	8	T46	H		agree
+L03	9	T13	H		agree
+L03	10	T43	H		agree
+L03	11	T41	H		agree
+L03	12	/	H		agree
+L03	13	T64	H		agree
+L03	14	T26	H		agree
+L03	15	/	H		agree
+L03	16	T47	H		agree
+L03	17	T01	H		agree
+L03	18	T43	H		agree
+L03	19	T44	H		agree
+L03	20	T48	M	A:-	gap
+L03	21	T26	M	A:-	gap
+L03	22	/	M	A:-	gap
+L03	23	T09	M	A:-	gap
+L03	24	T41	M	A:-	gap
+L03	25	/	M	A:-	gap
+L03	26	T25	M	A:-	gap
+L03	27	T05	H		agree
+L03	28	/	M	A:-	gap
+L03	29	T35	M	A:-	gap
+L03	30	T26	H		agree
+L03	31	T16	M	A:-	gap
+L03	32	T30	M	A:-	gap
+L03	33	/	H		agree
+L03	34	T46	M	A:-	gap
+L03	35	T33	M	A:-	gap
+L03	36	T49	M	A:-	gap
+L03	37	T13	M	A:-	gap
+L03	38	T09	M	B:T43	differ
+L03	39	T41	H		agree
+L03	40	/	H		agree
+L03	41	T31	M	A:-	gap
+L03	42	T25	H		agree
+L03	43	T26	M	A:-	gap
+L03	44	T17	M	A:-	gap
+L03	45	T35	M	A:-	gap
+L03	46	T33	M	A:-	gap
+L04	1	T49	H		agree
+L04	2	T05	H		agree
+L04	3	/	H		agree
+L04	4	T26	H		agree
+L04	5	T12	H		agree
+L04	6	T33	H		agree
+L04	7	T35	M	B:-	gap
+L04	8	T41	H		agree
+L04	9	T18	M	B:-	gap
+L04	10	T19	M	B:-	gap
+L04	11	T32	M	B:T36	differ
+L04	12	T01	M	B:T54	differ
+L04	13	T16	H		agree
+L04	14	T01	H		agree
+L04	15	T12	H		agree
+L04	16	T25	H		agree
+L04	17	/	H		agree
+L04	18	T04	H		agree
+L04	19	T01	H		agree
+L04	20	T32	M	B:T57	differ
+L04	21	T02	M	B:?[diamond]	differ
+L04	22	T26	H		agree
+L04	23	T16	H		agree
+L04	24	/	H		agree
+L04	25	T12	H		agree
+L04	26	T33	H		agree
+L04	27	T32	M	B:T57	differ
+L04	28	T43	M	B:T37	differ
+L05	1	T01	M	A:-	gap
+L05	2	T31	H		agree
+L05	3	T33	H		agree
+L05	4	T01	M	A:-	gap
+L05	5	T18	M	B:T26	differ
+L05	6	T26	H		agree
+L05	7	T62	H		agree
+L05	8	T53	H		agree
+L05	9	/	H		agree
+L05	10	T64	H		agree
+L05	11	T16	H		agree
+L05	12	T41	H		agree
+L05	13	T02	H		agree
+L05	14	T05	M	B:T48	differ
+L05	15	T26	H		agree
+L05	16	T12	H		agree
+L05	17	/	H		agree
+L05	18	T40	H		agree
+L05	19	T46	H		agree
+L05	20	T13	M	A:-	gap
+L05	21	T01	H		agree
+L05	22	T32	M	B:T57	differ
+L05	23	T41	H		agree
+L05	24	/	H		agree
+L05	25	T23	H		agree
+L05	26	T47	M	B:T13	differ
+L05	27	T64	M	B:T54	differ
+L05	28	T25	H		agree
+L05	29	T41	H		agree
+L05	30	T30	M	B:-	gap
+L05	31	T69	M	B:-	gap
+L05	32	/	M	B:-	gap
+L05	33	T04	M	B:-	gap
+L05	34	T50	M	B:-	gap
+L05	35	T12	M	B:-	gap
+L05	36	T43	M	B:-	gap
+L05	37	/	M	B:-	gap
+L05	38	T05	M	B:-	gap
+L05	39	T10	M	B:-	gap
+L05	40	/	M	B:-	gap
+L05	41	T46	M	B:-	gap
+L05	42	T26	M	B:-	gap
+L05	43	T46	M	B:-	gap
+L05	44	T50	M	B:-	gap
+L05	45	T47	M	B:-	gap
+L05	46	T25	M	B:-	gap
+L05	47	T16	M	B:-	gap
+L06	1	T10	M	B:-	gap
+L06	2	T43	M	B:-	gap
+L06	3	T26	M	B:-	gap
+L06	4	T46	M	B:-	gap
+L06	5	T03	M	B:T30	differ
+L06	6	T46	M	B:T69	differ
+L06	7	T11	M	B:T25	differ
+L06	8	T41	H		agree
+L06	9	T16	M	B:-	gap
+L06	10	/	H		agree
+L06	11	T04	M	A:-	gap
+L06	12	T33	M	B:T31	differ
+L06	13	T40	M	B:T12	differ
+L06	14	T43	H		agree
+L06	15	/	M	A:-	gap
+L06	16	T46	M	B:T48	differ
+L06	17	T01	M	B:T10	differ
+L06	18	T12	M	B:/	differ
+L06	19	T18	M	B:T17	differ
+L06	20	T43	M	B:T26	differ
+L06	21	T30	M	B:T46	differ
+L06	22	T23	M	B:T31	differ
+L06	23	T05	M	B:T17	differ
+L06	24	T49	M	B:T25	differ
+L06	25	T01	M	B:T16	differ
+L06	26	T12	M	B:T33	differ
+L07	1	T33	M	B:T48	differ
+L07	2	T16	M	B:T43	differ
+L07	3	T26	H		agree
+L07	4	T17	M	A:-	gap
+L07	5	T35	M	B:T54	differ
+L07	6	T16	M	B:T46	differ
+L07	7	T30	H		agree
+L07	8	T16	M	A:-	gap
+L07	9	/	H		agree
+L07	10	T33	M	A:-	gap
+L07	11	T40	M	A:-	gap
+L07	12	T43	M	A:-	gap
+L07	13	T46	M	A:-	gap
+L07	14	T01	M	A:-	gap
+L07	15	T12	M	A:-	gap
+L07	16	T18	M	A:-	gap
+L07	17	T41	M	A:-	gap
+L07	18	T37	M	A:-	gap
+L07	19	T09	M	B:T30	differ
+L07	20	T26	M	B:T23	differ
+L07	21	T05	H		agree
+L07	22	T49	M	A:-	gap
+L07	23	T01	M	A:-	gap
+L07	24	T12	M	A:-	gap
+L07	25	T33	M	A:-	gap
+L07	26	T37	M	A:-	gap
+L07	27	T46	M	B:T12	differ
+L07	28	T18	H		agree
+L07	29	/	H		agree
+L07	30	T57	M	A:-	gap
+L07	31	T57	M	A:-	gap
+L07	32	T25	M	A:-	gap
+L07	33	T26	M	A:-	gap
+L07	34	T31	H		agree
+L07	35	T54	M	A:-	gap
+L07	36	/	M	A:-	gap
+L07	37	T44	M	B:T18	differ
+L07	38	T43	M	B:T13	differ
+L07	39	T35	M	B:T31	differ
+L07	40	T41	M	B:T37	differ
+L07	41	/	M	B:T62	differ
+L07	42	T53	M	B:T25	differ
+L07	43	T26	H		agree
+L07	44	T46	M	A:-	gap
+L07	45	T30	M	B:T33	differ
+L07	46	T58	M	B:T12	differ
+L08	1	T31	M	B:-	gap
+L08	2	/	M	B:T33	differ
+L08	3	T12	M	B:T16	differ
+L08	4	T26	H		agree
+L08	5	/	M	B:-	gap
+L08	6	T58	M	B:-	gap
+L08	7	T25	M	B:T35	differ
+L08	8	T41	M	B:T16	differ
+L08	9	T46	M	B:T30	differ
+L08	10	T03	M	B:T16	differ
+L08	11	T33	H		agree
+L08	12	T51	M	B:-	gap
+L08	13	T16	M	B:T31	differ
+L08	14	T43	M	B:T54	differ
+L08	15	T35	M	B:T05	differ
+L08	16	T33	M	B:T26	differ
+L08	17	T05	H		agree
+L08	18	T17	M	A:-	gap
+L08	19	T18	H		agree
+L08	20	T55	M	B:-	gap
+L08	21	/	H		agree
+L08	22	T01	M	B:T31	differ
+L08	23	T46	M	B:T58	differ
+L08	24	T23	M	B:T43	differ
+L08	25	T12	M	B:T35	differ
+L08	26	T41	H		agree
+L08	27	/	M	B:-	gap
+L08	28	T43	M	B:T53	differ
+L08	29	T10	M	B:T26	differ
+L08	30	T30	H		agree
+L08	31	T46	M	B:-	gap
+L08	32	T49	M	B:-	gap
+L08	33	T47	M	B:-	gap
+L08	34	T50	M	B:-	gap
+L08	35	T46	M	B:-	gap
+L08	36	T44	M	B:-	gap
+L08	37	T55	M	B:-	gap
+L08	38	T41	M	B:T58	differ
+L09	1	T51	M	B:-	gap
+L09	2	T41	H		agree
+L09	3	T12	M	B:-	gap
+L09	4	T33	M	B:T14	differ
+L09	5	T26	H		agree
+L09	6	T03	M	B:-	gap
+L09	7	T16	M	B:-	gap
+L09	8	T41	M	B:-	gap
+L09	9	T18	M	B:-	gap
+L09	10	/	H		agree
+L09	11	T53	M	B:T12	differ
+L09	12	T64	M	B:T26	differ
+L09	13	T39	M	B:/	differ
+L09	14	T09	M	B:T58	differ
+L09	15	T26	M	B:T25	differ
+L09	16	T05	M	B:T17	differ
+L09	17	T46	H		agree
+L09	18	T18	H		agree
+L09	19	T41	M	B:-	gap
+L09	20	T50	M	B:-	gap
+L09	21	T55	M	B:-	gap
+L09	22	T26	M	B:T22	differ
+L09	23	/	H		agree
+L09	24	T10	M	A:-	gap
+L09	25	T04	M	B:T25	differ
+L09	26	T50	M	B:T17	differ
+L09	27	T05	M	B:T42	differ
+L09	28	T43	H		agree
+L09	29	T03	M	B:-	gap
+L09	30	T26	M	B:T41	differ
+L09	31	/	H		agree
+L09	32	T53	M	B:-	gap
+L09	33	T58	M	B:T25	differ
+L09	34	T03	M	B:T64	differ
+L09	35	T26	H		agree
+L09	36	T30	M	A:-	gap
+L09	37	T41	M	B:T52	differ
+L10	1	T03	M	B:-	gap
+L10	2	T41	M	B:-	gap
+L10	3	T46	M	B:-	gap
+L10	4	T16	M	B:T44	differ
+L10	5	T26	H		agree
+L10	6	T18	M	B:-	gap
+L10	7	T41	M	B:-	gap
+L10	8	/	M	B:-	gap
+L10	9	T25	M	B:-	gap
+L10	10	T05	H		agree
+L10	11	T57	M	B:-	gap
+L10	12	T25	M	B:-	gap
+L10	13	T26	M	B:-	gap
+L10	14	T31	M	B:-	gap
+L10	15	/	M	B:-	gap
+L10	16	T25	M	B:-	gap
+L10	17	T41	M	B:-	gap
+L10	18	T40	M	B:-	gap
+L10	19	T03	M	B:-	gap
+L10	20	T50	M	B:-	gap
+L10	21	T49	M	B:-	gap
+L10	22	T26	M	B:-	gap
+L10	23	/	M	B:-	gap
+L10	24	T03	M	B:-	gap
+L10	25	T16	M	B:-	gap
+L10	26	T50	M	B:-	gap
+L10	27	T49	M	B:-	gap
+L10	28	T01	M	B:-	gap
+L10	29	T12	M	B:-	gap
+L10	30	T41	M	B:-	gap
+L10	31	/	M	B:-	gap
+L10	32	T62	M	B:-	gap
+L10	33	T64	M	B:-	gap
+L10	34	T39	M	B:-	gap
+L10	35	/	M	B:-	gap
+L10	36	T01	M	B:T48	differ
+L10	37	T02	M	B:T33	differ
+L10	38	T26	H		agree
+L10	39	T01	M	B:-	gap
+L10	40	T46	M	B:-	gap
+L10	41	T03	M	B:-	gap
+L10	42	T50	M	B:T17	differ
+L10	43	T55	M	B:T38	differ
+L10	44	T13	M	B:T45	differ
+L10	45	T25	M	B:T43	differ
+L10	46	T26	M	B:T68	differ
+L11	1	T09	M	B:-	gap
+L11	2	T33	M	B:-	gap
+L11	3	T18	M	B:-	gap
+L11	4	T01	M	B:-	gap
+L11	5	T41	M	B:-	gap
+L11	6	/	M	B:-	gap
+L11	7	T43	M	B:-	gap
+L11	8	T12	M	B:-	gap
+L11	9	T18	M	B:-	gap
+L11	10	T41	M	B:-	gap
+L11	11	T44	M	B:-	gap
+L11	12	T05	M	B:-	gap
+L11	13	T26	H		agree
+L11	14	T12	M	B:-	gap
+L11	15	T35	M	B:T13	differ
+L11	16	T26	H		agree
+L11	17	T41	M	B:-	gap
+L11	18	T03	M	B:-	gap
+L11	19	T50	M	B:-	gap
+L11	20	T11	M	B:T10	differ
+L11	21	T41	M	B:T46	differ
+L11	22	T40	M	B:T44	differ
+L11	23	T13	M	B:T03	differ
+L11	24	T18	M	B:T44	differ
+L11	25	T55	M	B:T03	differ
+L11	26	T13	M	B:T16	differ
+L11	27	T18	M	B:T31	differ
+L11	28	T12	M	B:/	differ
+L11	29	T25	H		agree
+L11	30	T56	M	B:-	gap
+L11	31	T57	M	B:-	gap
+L11	32	T35	M	B:-	gap
+L11	33	T26	M	B:T41	differ
+L11	34	/	M	B:T17	differ
+L11	35	T01	M	B:T03	differ
+L11	36	T46	H		agree
+L11	37	T44	M	A:-	gap
+L11	38	T26	H		agree
+L11	39	T35	M	B:-	gap
+L11	40	/	M	B:-	gap
+L11	41	T03	M	B:-	gap
+L11	42	T41	H		agree
+L11	43	T44	M	B:-	gap
+L11	44	T26	H		agree
+L11	45	T25	M	B:T43	differ
+L11	46	T68	M	B:T44	differ
+L11	47	/	M	B:T26	differ
+L11	48	T41	M	B:T56	differ
+L11	49	T37	M	B:T26	differ
+L12	1	T03	M	B:T64	differ
+L12	2	T16	M	B:T46	differ
+L12	3	T26	H		agree
+L12	4	T01	M	B:-	gap
+L12	5	T47	M	B:T16	differ
+L12	6	T02	M	B:T23	differ
+L12	7	T50	M	B:T13	differ
+L12	8	T43	H		agree
+L12	9	T41	H		agree
+L12	10	T57	M	B:-	gap
+L12	11	T18	M	B:-	gap
+L12	12	T16	M	B:-	gap
+L12	13	T04	M	B:T44	differ
+L12	14	T33	M	B:T05	differ
+L12	15	T01	M	B:/	differ
+L12	16	T30	M	B:T25	differ
+L12	17	T23	H		agree
+L12	18	T03	M	B:-	gap
+L12	19	T16	M	B:-	gap
+L12	20	T26	M	B:-	gap
+L12	21	T01	M	B:-	gap
+L12	22	T12	M	B:-	gap
+L12	23	T35	H		agree
+L12	24	T41	M	B:-	gap
+L12	25	T47	M	B:-	gap
+L12	26	T47	M	B:-	gap
+L12	27	T25	M	B:-	gap
+L12	28	T40	M	B:-	gap
+L12	29	T25	M	B:-	gap
+L12	30	T26	H		agree
+L12	31	T10	M	B:-	gap
+L12	32	T46	M	B:-	gap
+L12	33	T20	M	B:T28	differ
+L12	34	T26	H		agree
+L12	35	T64	M	A:-	gap
+L12	36	T11	M	B:T16	differ
+L12	37	T02	M	B:T12	differ
+L12	38	T33	H		agree
+L12	39	T37	M	A:-	gap
+L12	40	T46	M	B:T26	differ
+L12	41	T35	M	B:T04	differ
+L13	1	T49	M	B:-	gap
+L13	2	T12	M	B:-	gap
+L13	3	T33	M	B:-	gap
+L13	4	T69	M	B:T17	differ
+L13	5	T01	M	B:T46	differ
+L13	6	T16	H		agree
+L13	7	T64	M	B:-	gap
+L13	8	T41	M	B:-	gap
+L13	9	T23	M	B:-	gap
+L13	10	T12	M	B:-	gap
+L13	11	T18	M	B:-	gap
+L13	12	/	M	B:-	gap
+L13	13	T19	M	B:-	gap
+L13	14	T62	M	B:-	gap
+L13	15	T13	M	B:-	gap
+L13	16	T26	H		agree
+L13	17	T16	M	B:T01	differ
+L13	18	T40	H		agree
+L13	19	T18	M	B:-	gap
+L13	20	T56	M	B:-	gap
+L13	21	T26	M	B:T02	differ
+L13	22	T57	M	B:T31	differ
+L13	23	T41	H		agree
+L13	24	T46	M	B:-	gap
+L13	25	T40	M	B:-	gap
+L13	26	T18	M	B:-	gap
+L13	27	T56	M	B:-	gap
+L13	28	T26	M	B:-	gap
+L13	29	T57	H		agree
+L13	30	T41	M	B:-	gap
+L13	31	T46	M	B:-	gap
+L13	32	T40	M	B:-	gap
+L13	33	T18	M	B:-	gap
+L13	34	T19	M	B:-	gap
+L13	35	T33	H		agree
+L13	36	T55	M	B:-	gap
+L13	37	T50	M	B:-	gap
+L13	38	T46	M	B:-	gap
+L13	39	T12	M	B:T37	differ
+L13	40	T05	M	B:T16	differ
+L13	41	T57	M	B:T40	differ
+L13	42	T01	H		agree
+L13	43	T19	M	B:-	gap
+L13	44	T43	M	B:T26	differ
+L13	45	T33	H		agree
+L13	46	T32	M	B:-	gap
+L13	47	/	M	B:T23	differ
+L13	48	T25	M	B:T16	differ
+L13	49	T41	M	B:T26	differ
+L13	50	T03	M	B:T01	differ
+L13	51	T26	M	B:T12	differ
+L14	1	T55	M	B:-	gap
+L14	2	T62	M	B:-	gap
+L14	3	T55	M	B:T23	differ
+L14	4	T40	M	B:T16	differ
+L14	5	T26	H		agree
+L14	6	T01	M	A:-	gap
+L14	7	T46	M	B:T12	differ
+L14	8	T44	M	B:T57	differ
+L14	9	T41	H		agree
+L14	10	T40	M	A:-	gap
+L14	11	T39	M	B:T02	differ
+L14	12	/	M	B:T25	differ
+L14	13	T04	M	B:T17	differ
+L14	14	T41	M	B:T25	differ
+L14	15	T50	M	B:T26	differ
+L14	16	T05	M	B:T10	differ
+L14	17	T16	M	B:T46	differ
+L14	18	T01	M	B:T25	differ
+L14	19	T12	M	B:T26	differ
+L14	20	T19	M	B:T39	differ
+L14	21	/	M	B:T02	differ
+L14	22	T62	M	B:T33	differ
+L14	23	T03	M	B:T46	differ
+L14	24	T26	M	B:T35	differ
+L14	25	T30	M	B:T41	differ
+L15	1	T19	M	B:-	gap
+L15	2	/	M	B:T37	differ
+L15	3	T62	M	B:T12	differ
+L15	4	T03	M	B:T18	differ
+L15	5	T26	M	B:T01	differ
+L15	6	T30	M	B:T16	differ
+L15	7	T01	H		agree
+L15	8	T09	M	B:T31	differ
+L15	9	T47	M	B:T33	differ
+L15	10	T40	M	B:T12	differ
+L15	11	T18	H		agree
+L15	12	T19	M	B:-	gap
+L15	13	/	H		agree
+L15	14	T40	M	B:-	gap
+L15	15	T43	M	B:-	gap
+L15	16	T31	M	B:-	gap
+L15	17	T26	M	B:-	gap
+L15	18	T03	M	B:-	gap
+L15	19	T16	M	B:-	gap
+L15	20	T41	M	B:-	gap
+L15	21	T18	M	B:-	gap
+L15	22	T16	H		agree
+L15	23	T30	M	B:T62	differ
+L15	24	T32	M	B:T13	differ
+L15	25	T26	H		agree
+L15	26	/	M	B:T16	differ
+L15	27	T47	M	B:T17	differ
+L15	28	T33	H		agree
+L15	29	T46	M	B:-	gap
+L15	30	T49	M	B:-	gap
+L15	31	T37	M	B:-	gap
+L15	32	T13	M	B:-	gap
+L15	33	T23	M	B:-	gap
+L15	34	T46	M	B:-	gap
+L15	35	/	M	B:-	gap
+L15	36	T31	M	B:T01	differ
+L15	37	T26	H		agree
+L15	38	T46	M	B:-	gap
+L15	39	T44	M	B:T57	differ
+L15	40	T41	H		agree
+L15	41	T11	M	B:-	gap
+L15	42	T05	M	B:-	gap
+L15	43	T12	M	B:-	gap
+L15	44	T43	M	B:-	gap
+L15	45	/	M	B:-	gap
+L15	46	T47	M	B:-	gap
+L15	47	T33	M	B:-	gap
+L15	48	T46	H		agree
+L15	49	T44	M	B:-	gap
+L15	50	T55	M	B:-	gap
+L15	51	T26	M	B:-	gap
+L15	52	T40	M	B:-	gap
+L15	53	T35	M	B:-	gap
+L15	54	T05	M	B:-	gap
+L15	55	T16	M	B:-	gap
+L15	56	T26	M	B:-	gap
+L15	57	T04	M	B:-	gap
+L15	58	T50	M	B:-	gap
+L15	59	T12	M	B:-	gap
+L15	60	T32	M	B:-	gap
+L15	61	T33	M	B:-	gap
+L15	62	T12	M	B:-	gap
+L15	63	T03	M	B:-	gap
+L16	1	T33	M	A:-	gap
+L16	2	T26	M	A:-	gap
+L16	3	T57	M	A:-	gap
+L16	4	T41	M	A:-	gap
+L16	5	T46	M	A:-	gap
+L16	6	T17	M	A:-	gap
+L16	7	T18	M	A:-	gap
+L16	8	T46	M	A:-	gap
+L16	9	T50	M	A:-	gap
+L16	10	T31	M	A:-	gap
+L16	11	T46	M	A:-	gap
+L16	12	T12	M	A:-	gap
+L16	13	T05	M	A:-	gap
+L16	14	T57	M	A:-	gap
+L16	15	T01	M	A:-	gap
+L16	16	T31	M	A:-	gap
+L16	17	T33	M	A:-	gap
+L16	18	T57	M	A:-	gap
+L16	19	/	M	A:-	gap
+L16	20	T25	M	A:-	gap
+L16	21	T41	M	A:-	gap
+L16	22	T26	M	A:-	gap

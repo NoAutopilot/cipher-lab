@@ -224,3 +224,58 @@ Read so far: 1 of 16 letters' cipher tested end to end (17 Sept 1586: f.244r 9 l
 - [x] image-check: f.244v/f.245r native crops cut, f.245r re-cut after a slope-tracker defect, montages checked
 - [ ] retry: test1.py on sorter-settled 1585 labels; kp86 pipeline on f.246-247 and the 8 Sept / 4 Nov 1586 / 24 Mar 1587 letters
 Verdict: keep going: 8 internal gaps; cheapest next: T31 cell vs the interlinear gloss ~$0.5; most valuable next: the 4 Nov 1586 and 8 Sept 1586 letters with key86 against the Colbert copy, ~$4 each
+
+## Known-answer test kp86d: 4 Nov 1586, f.275r vs Colbert 16 pt II pp.121-123 (RUN4-PIS2, 4 Oct 2026, 11:17-11:5x UTC)
+- Leaves: fr.16045 c556-c573 viewed once at 700 px. canvas = 2 x folio + 12 holds (c562 carries folio 275). c556-c561
+  (f.272r-f.274v) clear; cipher on c562 (f.275r, lower half: 1 sign pair + 14 lines), c563-c568 (f.275v-f.278r, dense cipher
+  with interlinear letters and margin notes on most pages) and the head of c569; c570-c572 clear (signature c572), c573 blank.
+- Clear copy located: Colbert c479 p.121 l.14 "et ay trouve que le Pape estoit bien fort travaille ..." (the original's clear
+  "... je me suis esclarcy du doute auquel i'estois, et" = p.121 l.13-14) through c480 p.123; RUN3-PISD's "pp.110 ff."
+  heading is on c474, so the copy of the cipher passage on f.275r is pp.121-122. Text read from 1400 px images:
+  kp86d/colbert_p121_123.txt (c476-c478 = pp.114-119 read only to locate it: cardinal promotion, not the cipher passage).
+- Crops: `python3 tools/iiif_lines.py --ark btv1b9060906j --canvas 562 --region 900,2600,2850,2520 --out ciphers/fr16045-pisany-rome-1585/images --prefix f275r --debug --max-width 1600 --overlap 100`
+  (15 bands auto-detected, overlay checked by eye; L01 clear + 2 signs, L07/L08 carry the clear "Mais croyant que Monsieur
+  de / Luxembourg").
+- PREREG kp86d/PREREG_kp86d.md pushed (4575b0f9) before the passes. Two blind Sonnet passes (tx86d/PASS_BRIEF86d.md), one call
+  each over all 30 crops: A 471 signs (0 `?`), B 388 (2 `?`, and 16 rows for 15 lines -- B's line breaks drift). Both readers
+  reported their own pass as rough (matching by overall shape, L07-L15 approximate). tools/reconcile_passes.py: agree
+  152/624 = 24.4%, **err_2reader 0.756**; kp86d/reconcile_d.py (RUN3 rules unchanged) -> tx86d/ciphertext_f275r.tsv
+  (152 agreed, 302 one-reader-only, 169 B's label, 1 pair rule).
+- **Result (kp86d/kp86d.py --err 0.756 -> kp86d_result.json): NON-TEST (positive control fails), both arms.**
+  Arm A (key86 as published): reconciled 570 tokens, nw_score 0.536 vs key-shuffle p99 0.468 / order p99 0.487; blind A alone
+  0.630 (p99 0.463 / 0.490); blind B alone 0.631 (0.472 / 0.503). Arm B (PIS1 remap): 0.557 (0.467 / 0.484); A 0.644; B 0.661.
+  Positive control at e=0.756: 0/5 seeds in either arm (scores 0.41-0.44 vs own key-shuffle p99 0.44-0.46).
+  Reading per PREREG: the gate is NON-TEST, not a PASS, although every target score (reconciled and each blind pass) is above
+  both nulls. The control failing while the target clears shows err_2reader 0.756 overstates each reader's own error here
+  (one call per reader over 30 crops; B's rows drift by a line, so the pairwise alignment counts misplaced lines as
+  disagreement). Each blind pass alone clears both p99s by 0.13-0.17: suggestive, not licensed by this test.
+  Arm B scores above A on all three files (0.557 vs 0.536 reconciled): reported beside A, nothing enters key86.tsv.
+- Reading: reading_f275r_M.txt / reading_f275r_tokens.tsv by `tools/decode_key.py . --ciphertext tx86d/ciphertext_f275r.tsv --key key86.tsv --reading reading_f275r_M.txt --tokens reading_f275r_tokens.tsv`;
+  `--check` "reading up to date". Tool counts 570 H (= published-key sign read) and 54 U. Under rule 4 every token is held
+  at M (gate NON-TEST, so no C promotion); about 398 decoded letters (0.536 x 742) align identically with the copy,
+  descriptive only. L03 decodes "l entreprise d Angleterre a u o i e" beside the copy's "l'entreprise d'Angleterre avoit
+  este faillie" (word signs plus letters; descriptive). Plaintext is the period clear copy, already on Gallica; no claim of
+  a new reading.
+- Requests: Gallica 25 (18 contact views fr.16045, 5 Colbert canvases, 1 info.json, 1 native region), all 200, >= 2 s apart.
+
+## Remaining gaps (RUN4-PIS2, 4 Oct 2026)
+Read so far: f.244r known-answer PASS (RUN3-PISA); f.275r kp86d NON-TEST at err_2reader 0.756 (target above both nulls); f.244v/f.245r: RUN4-PIS1's kp86b/kp86c (see its section); f.75 (1585) NON-TEST.
+- f.275r re-pass at lower reader error - blocker: not-attempted; cap of this brief spent on the first pair; next: new pre-registered kp86e with per-line subagent calls (or 4 calls of ~4 lines per reader) on the same f275r crops so line breaks cannot drift, then kp86d.py unchanged on the new files at the new err, ~$6
+- 4 Nov 1586 remaining cipher f.275v-f.278r and the f.278v head (c563-c569, about 7 dense pages) vs Colbert pp.122 ff. - blocker: not-attempted; waits on kp86e showing the per-line pass shape works; next: same pipeline page by page (copy pages c480-c483 to locate), ~$5 per page
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: owner sorter page for the f.75 crops, then test1.py unchanged, ~$1
+- 24 Mar 1587 (f.297-303, c606-c618 by the offset) vs Colbert pp.324 ff. - blocker: not-attempted; outside this brief; next: view, crop, kp86 pipeline, ~$4
+- key86 cell corrections (T31, T45, T47, T49, T57) - blocker: not-attempted; arm B scores are not yet licensed (kp86d NON-TEST); next: decide from kp86b/kp86c and kp86e arm B, ~$0
+- 18 June 1588 letters (fr.16046 ff.165, 179) not located in Colbert 16 pt II - blocker: not-attempted; outside this brief; next: read headings on Colbert c812-c840, <= 8 requests, ~$0.5
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+Re-create scratch (not committed): contact views `curl .../btv1b9060906j/f{556..573}/full/700,/0/native.jpg`; Colbert
+`.../btv1b100341061/f{476..480}/full/1400,/0/native.jpg` (descriptive UA, >= 2 s apart).
+## Escalation (RUN4-PIS2, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II pp.121-123 located as the clear copy of f.275r and used as known plaintext
+- [x] clear-pages: f.272r-f.274v clear; cipher pages of the 4 Nov letter mapped (c562-c569)
+- [x] known-keys: key86 PASS on f.244r; NON-TEST on f.275r at err 0.756 with the target above both nulls
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: key86 cell corrections, arm B scores pending a licensed test
+- [x] image-check: f.275r native crops cut and checked
+- [ ] retry: kp86e per-line passes on f.275r; then the remaining 4 Nov pages
+Verdict: keep going: 8 internal gaps; cheapest next: Colbert 1588 headings ~$0.5; most valuable next: kp86e per-line re-pass of f.275r, ~$6
