@@ -16,6 +16,8 @@ negotiation. Key: Satoshi Tomokiyo's published 1572-74 Vivonne key (https://cryp
 Under it we read only fragments of the cipher part: "de Poulougne", "toute extraordinaire et non usitée", "le prince
 d'Orange", "commandeur" (five times), "Flandres", "trois marchands", "nombre de chevaulx ... artillerie", "les troubles
 ou par doulceur d'un pardon général et bien ample", "vigilant et curieux", "toute diligence", "bientost en Flandres".
+(Revised 4 Oct 2026, after the audit: f.194r lines 5-10, earlier left unread, are now transcribed and decoded; the whole
+cipher part ff.190r-194r is now read under the key, with the same result -- fragments only, no continuous reading.)
 - Audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr16104-vivonne-spain-1572/AUDIT.md
   (section "AUDIT 3 -- ink piece 63"). Searched: Gachard II, d'Ars, Kervyn de Lettenhove (Les Huguenots et les Gueux
   I-VI), Lettres de Catherine de Médicis IV, Groen van Prinsterer IV, Internet Archive / Google Books / OpenAlex.

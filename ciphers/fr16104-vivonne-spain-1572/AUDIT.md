@@ -336,3 +336,12 @@ Key: **published** (S. Tomokiyo, credited). Text: unknown.
   read for 10 Oct 1573, ~$1 of runner time; D2 needs the solvers' named steps (the "co_tandeur" / y / single-o key questions and a
   lookalike pass on r/z, 2/z, c/e, 6/b with overlap dedup, ~$7) and then a clause above about 42 letters without repairs.
 - Second opinion: row SO-VIV63 queued (second-opinions/PROMPT-chatgpt-viv63.md).
+
+### Revision after AUDIT 3 (N7-VIV63G, 4 Oct 2026, LANE-NEAR7 worker, account 2) -- the solver's change, not a re-audit
+- What changed: f.194r page lines 5-10, previously dropped (straddled crop), were re-cut flat and read by two blind passes (err_2reader 0.168) and
+  inserted as f.194r rows L05-L10 (NOTES "N7-VIV63G"; PREREG-N7VIV63G.md before any pass or decode). No other line, label rule or key cell changed.
+- Tokens: whole piece 15,461 -> 15,762 (+301); H 11,932 -> 12,151 (77.2% -> 77.1%), M 2,288 -> 2,329, U 1,241 -> 1,282.
+- Gates re-run (tx/viv63g_result.json): new lines b2 -1.599 vs p99 -1.742 PASS (controls subsampled to 260 letters pass with headroom); whole piece
+  -1.548 vs p99 -1.836 PASS; specificity real margin 0.288 vs wrong-key p99 0.064 PASS (43/200 wrong keys pass bare b2).
+- Longest all-H gap-free stretch in the new lines: 11 letters. The class (N3) and the depth (D1) above are **not altered** by this note; a depth
+  re-check is a verifier's step.

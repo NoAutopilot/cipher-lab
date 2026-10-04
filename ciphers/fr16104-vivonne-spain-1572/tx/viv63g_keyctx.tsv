@@ -1,0 +1,20 @@
+code	role	key_value	ink40_n	ink40_aligned_top5	ink63_n	left_codes_top4	right_codes_top4	left2_right2_top5	fill_top3	fill_top_is_key
+y	question	h	260	l:19,r:18,h:17,t:17,e:16	564	m:88,::48,s:44,y:39	o:119,m:102,p:64,s:62	re._e:5,es._e:4,en._a:4,er._e:4,cc.oo:4	l:+0,i:-94,n:-246 (n_win 470)	no
+o	question	-	54	s:7,e:7,c:4,u:4,o:3	238	y:119,d:26,m:25,z:8	m:91,s:45,tz:17,d:13	eh.es:3,sh.es:3,ul.ie:3,eh.ai:3,ih.eu:3	i:+0,l:-81,s:-313 (n_win 225)	-
+c	question	-	86	u:12,l:9,a:8,r:5,t:5	194	m:46,x:21,n:18,s:11	s:38,g:29,m:23,d:16	de.ou:3,it.ar:3,ae.ui:3,nt.re:3,re.ri:3	l:+0,p:-71,i:-82 (n_win 192)	-
+V	question	-	147	n:14,l:13,s:12,t:11,m:8	179	m:70,tz:18,oo:13,^:12	m:58,y:23,s:22,d:21	di.ai:3,ce.es:3,eo.ou:3,.he:3,te.u:2	n:+0,s:-100,l:-112 (n_win 173)	-
+e	question	-	10	i:2,u:1,r:1,s:1,l:1	161	d:50,m:24,z:12,R:8	n:40,s:25,l:18,d:14	co.ta:18,ho.t_:3,ho.ta:2,st._h:2,it.oi:2	n:+0,l:-13,i:-24 (n_win 148)	-
+2	question	-	55	p:5,a:5,l:4,u:4,m:4	97	m:30,n:10,to:9,x:6	m:39,s:13,d:10,tz:8	ce.ec:2,he.oi:2,de.en:2,it.ai:1,ot.ar:1	l:+0,n:-31,s:-43 (n_win 96)	-
+r	question	-	0	-	85	n:14,p:13,oo:7,::7	m:12,z:8,::7,d:6	la.ee:1,et.cr:1,ou.es:1,tt.oa:1,el.a_:1	i:+0,e:-12,l:-31 (n_win 79)	-
+m	known-answer (held out)	e	859	e:645,i:20,a:19,u:16,s:16	2379	g:262,z:262,::201,tz:166	x:371,p:288,g:197,d:191	_a.nt:16,cc.st:16,oi.nt:14,h_.ur:10,nt.nd:10	e:+0,i:-1139,a:-2129 (n_win 1961)	yes
+x	known-answer (held out)	s	202	s:118,o:9,n:7,r:6,e:6	647	m:371,tz:64,oo:36,d:26	m:80,tz:63,#:62,n:50	ce.te:10,ae.ae:7,qe.el:7,on.er:7,ce.ae:5	s:+0,n:-301,l:-318 (n_win 608)	yes
+g	known-answer (held out)	r	305	r:167,s:12,u:11,t:8,l:8	884	m:197,oo:87,#:83,s:78	m:262,s:131,d:108,tz:47	ai.es:8,se.ui:8,_a.ti:6,cc.oa:6,sg.an:6	r:+0,l:-568,i:-776 (n_win 817)	yes
+a	known-answer (held out)	u	100	u:64,s:5,a:4,d:3,l:3	366	m:54,s:40,d:27,p:22	d:78,m:40,tz:30,g:22	_a.oi:5,ea.oi:3,en.oa:3,da.oi:3,re.ce:2	i:+0,l:-58,s:-180 (n_win 352)	no
+R	known-answer (held out)	t	60	t:36,c:4,r:3,y:2,l:2	219	p:37,tz:27,x:22,::18	m:38,$:17,s:14,d:13	ou.eo:4,en.en:3,en.te:2,en.:2,oi.au:2	i:+0,t:-5,l:-22 (n_win 200)	no
+j	known-answer (held out)	l	49	l:30,u:3,r:3,m:2,d:2	106	m:35,tz:20,oo:14,s:11	m:40,s:16,d:9,tz:8	ou.ou:3,ae.eo:3,au.at:2,cu.ie:2,ai._a:2	l:+0,n:-64,t:-68 (n_win 105)	yes
+3	known-answer (held out)	d	116	d:43,m:13,l:6,p:6,r:5	280	m:51,p:28,g:19,z:18	m:123,d:30,s:23,oo:22	an.eu:5,an.e_:3,ne.eo:3,on.e_:2,ne.eh:2	l:+0,s:-58,d:-67 (n_win 269)	no
+6	known-answer (held out)	l	97	l:45,m:6,t:6,e:6,s:5	270	tz:71,oo:58,m:40,S:15	to:42,m:31,s:23,#:20	ae.qa:11,ou._i:5,au.qa:4,au.tr:4,se.qa:4	l:+0,i:-190,r:-195 (n_win 259)	yes
+L	known-answer (held out)	r	30	r:12,e:5,t:3,l:2,q:1	81	tz:18,c:11,m:10,g:6	d:14,z:7,s:7,g:5	oi._a:2,st.oa:2,un.en:1,t_.ra:1,_e.oa:1	i:+0,n:-27,l:-31 (n_win 74)	no
+to	known-answer (held out)	q	33	q:10,n:4,e:2,h:1,m:1	96	6:42,m:9,x:6,#:5	z:32,a:10,2:9,d:6	el.ae:16,ul.io:2,el.se:2,el._e:2,ul.ae:2	l:+0,i:-39,e:-71 (n_win 89)	no
+h	known-answer (held out)	d	27	d:11,l:2,m:2,p:1,a:1	80	p:33,g:11,s:8,m:8	m:35,g:16,tz:5,oo:5	en.re:4,an.re:3,en.ra:3,an.ea:3,an.e_:2	d:+0,t:-7,l:-12 (n_win 79)	yes
+k	known-answer (held out)	d	33	d:12,c:2,t:1,o:1,m:1	165	p:47,m:23,g:11,s:11	m:45,tz:35,g:20,oo:16	en.re:12,an.es:4,ea.ue:3,an.eu:3,en.qu:3	d:+0,l:-94,i:-129 (n_win 160)	yes

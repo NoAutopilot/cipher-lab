@@ -1264,3 +1264,112 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 Verdict: keep going: 14 internal gaps; cheapest next: ink 54 key question on the key image, ~$0.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
 
 Gate output (N7-VIV53L, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 14 internal gap(s), 1 step(s) untried`; `tx/viv53L_decode.py --check`: reading_piece53_L.tsv up to date; viv53/viv54/viv63/viv54L `--check` up to date
+
+## N7-VIV63G (4 Oct 2026, LANE-NEAR7 worker, account 2): ink 63 f.194r lines 5-10, whole-piece gates re-run, key-questions context table
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near7-wave1.md "N7-VIV63G". Claimed 12:37 UTC, box to 13:53 UTC. PREREG-N7VIV63G.md pushed c8c6983d before any
+crop, pass or decode. Units stated in ROOM.md before the first subagent call (2 blind Sonnet passes + 1 script reconciliation; table by script).
+
+**Crop** (1 Gallica request: c199 native region 4800,200,2950,2700, the N6-VIV63C region; crops gitignored, manifest committed):
+```
+# region rotated -1.4 deg (PIL BICUBIC, fill 255, no expand); rows 840-1530 saved as f194r_mid_rot.jpg (a first try at rows 770-1450 caught
+# page line 4 on top and cut line 10 off: seen on the overlay, discarded before any pass), then
+$ python3 tools/iiif_lines.py --image f194r_mid_rot.jpg --out crops --prefix c199_f194r_mid --distance 80 --max-width 1100 --overlap 150 --debug
+  f194r_mid_rot.jpg (local): region 2950x690, 6 lines, 6 bands x 3 segments; pitch 114 distance 80 prominence 260.2
+  centres (region y): 57 172 286 396 516 632; wrote 18 crops   (manifest: images/p63/manifest_f194r_mid.json)
+```
+Overlay checked by eye before any pass: one written line per band. Page-line identity: band 1 begins "to z m o m d" (= the old top-cut L05, which the
+old cut had straddled) and band 6 is the line directly above the low block's L01 ("d d n tz b @ ..."). Same-row pass A/B similarity 0.80-0.92 against
+0.16-0.32 off the diagonal: the two readers read the same line in every band (the N6-VIV63C failure, readers on different lines, is absent).
+Two blind Sonnet passes (tx/f194r_mid_pass{A,B}.tsv) frozen at b8a6ebde, composed as f.194r rows L05-L10 by tx/viv63c_f194r_compose.py (extended; rows
+L01-L04 and L11-L20 unchanged), then tx/viv63_clean.py f194r, tools/reconcile_passes.py, tx/viv63_decode.py. No new label rule.
+| new lines | signs A / B | agree (nw) | err_2reader | H / M / U |
+|---|---|---|---|---|
+| f.194r L05-L10 | 301 / 307 | 258/310 = 83.2% | 0.168 | 219 / 41 / 41 (301 tokens) |
+Whole piece before -> after: 15,461 -> **15,762 tokens; H 11,932 -> 12,151 (0.772 -> 0.771), M 2,288 -> 2,329, U 1,241 -> 1,282.** f.194r reconcile now
+20 lines, agreement 80.8% (819/1014). `tx/viv63_decode.py --check` up to date; viv53/viv54 `--check` unchanged and up to date.
+
+**Gates (PREREG-N7VIV63G.md; tx/viv63g_test.py = viv63c_test.py with the new set f.194r L05-L10 and '-G' seed tags; tx/viv63g_result.json; ~6 min).**
+| arm | letters | s | b2 null p99 | null median | verdict |
+|---|---|---|---|---|---|
+| C1 f.103r full | 1,770 | -1.715 | -1.909 | -1.962 | passes, headroom (reproduces N6-VIV63) |
+| C2 ink 54 full | 1,793 | -1.658 | -1.829 | -1.878 | passes, headroom (reproduces N6-VIV63) |
+| C1 subsampled to 260 letters | 260 | -1.644 | -1.779 | -1.917 | passes, headroom |
+| C2 subsampled to 260 letters | 260 | -1.579 | -1.707 | -1.859 | passes, headroom |
+| (i) new lines f.194r L5-10 | 260 | **-1.599** | -1.742 | -1.894 | **PASS** |
+| (ii) whole piece ff.190r-194r | 14,480 | **-1.548** | -1.836 | -1.851 | **PASS** |
+**Specificity** (registered rule unchanged; 200 wrong keys, seed 20260967-spec-G): 43 of 200 (21.5%) pass bare b2; wrong-key margin median -0.023,
+p95 +0.040, p99 **+0.064**, max +0.122; real margin **+0.288** -> **PASS**. (Different wrong-key draws from N6-VIV63C's, so its p99 0.048 / max 0.078
+are not reproduced; the real margin is.) This is a re-run of the existing gates on a piece that is ~98% already gated, not a fresh test.
+
+**Reading of the new lines** (decoded, verbatim; by eye, interpretation, not a gate): L05 "qae_eochentunggentilho_t_bgen_esho_t_deconridanc_" [... un
+gentilhom(me) ... de confidanc(e)], L06 "..._ectdutroubleqriaestin" [... du trouble ...], L08 "...dauoit...", L09 "...ccesteocba_ioneturrendre..."
+[... ceste oc(c)asion et ... rendre]. Longest all-H, gap-free decoded stretch in the new lines: **11 letters** ("deconridanc", L05; then "leqriaestin"
+L06 11, "etauosloit" L08 10). Nothing near the ~42-letter authentication distance (AUDIT 2 4a); depth is not this job's to set.
+
+**Key-questions context table** (tx/viv63g_keyctx.py, writes tx/viv63g_keyctx.tsv, `--check`; PREREG-N7VIV63G "not a gate"; **proposals only, key.tsv
+untouched**). ink40 = letters the clerk decipherment aligns to the code (tx/key_support.py's DP); ink63 n = occurrences in reading_piece63.tsv;
+context = decoded 2 letters either side; fill = each letter a-z substituted at every ink-63 position, 4-gram (fr16) gain over the window, top 3.
+| code | role | key value | ink40 n | ink40 aligned top5 | ink63 n | context top5 | fill top3 | fill top = key |
+|---|---|---|---|---|---|---|---|---|
+| y | question | h | 260 | l:19,r:18,h:17,t:17,e:16 | 564 | re._e:5,es._e:4,en._a:4,er._e:4,cc.oo:4 | l:+0,i:-94,n:-246 (n_win 470) | no |
+| o | question | - | 54 | s:7,e:7,c:4,u:4,o:3 | 238 | eh.es:3,sh.es:3,ul.ie:3,eh.ai:3,ih.eu:3 | i:+0,l:-81,s:-313 (n_win 225) | - |
+| c | question | - | 86 | u:12,l:9,a:8,r:5,t:5 | 194 | de.ou:3,it.ar:3,ae.ui:3,nt.re:3,re.ri:3 | l:+0,p:-71,i:-82 (n_win 192) | - |
+| V | question | - | 147 | n:14,l:13,s:12,t:11,m:8 | 179 | di.ai:3,ce.es:3,eo.ou:3,.he:3,te.u:2 | n:+0,s:-100,l:-112 (n_win 173) | - |
+| e | question | - | 10 | i:2,u:1,r:1,s:1,l:1 | 161 | co.ta:18,ho.t_:3,ho.ta:2,st._h:2,it.oi:2 | n:+0,l:-13,i:-24 (n_win 148) | - |
+| 2 | question | - | 55 | p:5,a:5,l:4,u:4,m:4 | 97 | ce.ec:2,he.oi:2,de.en:2,it.ai:1,ot.ar:1 | l:+0,n:-31,s:-43 (n_win 96) | - |
+| r | question | - | 0 | - | 85 | la.ee:1,et.cr:1,ou.es:1,tt.oa:1,el.a_:1 | i:+0,e:-12,l:-31 (n_win 79) | - |
+| m | known-answer (held out) | e | 859 | e:645,i:20,a:19,u:16,s:16 | 2379 | _a.nt:16,cc.st:16,oi.nt:14,h_.ur:10,nt.nd:10 | e:+0,i:-1139,a:-2129 (n_win 1961) | yes |
+| x | known-answer (held out) | s | 202 | s:118,o:9,n:7,r:6,e:6 | 647 | ce.te:10,ae.ae:7,qe.el:7,on.er:7,ce.ae:5 | s:+0,n:-301,l:-318 (n_win 608) | yes |
+| g | known-answer (held out) | r | 305 | r:167,s:12,u:11,t:8,l:8 | 884 | ai.es:8,se.ui:8,_a.ti:6,cc.oa:6,sg.an:6 | r:+0,l:-568,i:-776 (n_win 817) | yes |
+| a | known-answer (held out) | u | 100 | u:64,s:5,a:4,d:3,l:3 | 366 | _a.oi:5,ea.oi:3,en.oa:3,da.oi:3,re.ce:2 | i:+0,l:-58,s:-180 (n_win 352) | no |
+| R | known-answer (held out) | t | 60 | t:36,c:4,r:3,y:2,l:2 | 219 | ou.eo:4,en.en:3,en.te:2,en.:2,oi.au:2 | i:+0,t:-5,l:-22 (n_win 200) | no |
+| j | known-answer (held out) | l | 49 | l:30,u:3,r:3,m:2,d:2 | 106 | ou.ou:3,ae.eo:3,au.at:2,cu.ie:2,ai._a:2 | l:+0,n:-64,t:-68 (n_win 105) | yes |
+| 3 | known-answer (held out) | d | 116 | d:43,m:13,l:6,p:6,r:5 | 280 | an.eu:5,an.e_:3,ne.eo:3,on.e_:2,ne.eh:2 | l:+0,s:-58,d:-67 (n_win 269) | no |
+| 6 | known-answer (held out) | l | 97 | l:45,m:6,t:6,e:6,s:5 | 270 | ae.qa:11,ou._i:5,au.qa:4,au.tr:4,se.qa:4 | l:+0,i:-190,r:-195 (n_win 259) | yes |
+| L | known-answer (held out) | r | 30 | r:12,e:5,t:3,l:2,q:1 | 81 | oi._a:2,st.oa:2,un.en:1,t_.ra:1,_e.oa:1 | i:+0,n:-27,l:-31 (n_win 74) | no |
+| to | known-answer (held out) | q | 33 | q:10,n:4,e:2,h:1,m:1 | 96 | el.ae:16,ul.io:2,el.se:2,el._e:2,ul.ae:2 | l:+0,i:-39,e:-71 (n_win 89) | no |
+| h | known-answer (held out) | d | 27 | d:11,l:2,m:2,p:1,a:1 | 80 | en.re:4,an.re:3,en.ra:3,an.ea:3,an.e_:2 | d:+0,t:-7,l:-12 (n_win 79) | yes |
+| k | known-answer (held out) | d | 33 | d:12,c:2,t:1,o:1,m:1 | 165 | en.re:12,an.es:4,ea.ue:3,an.eu:3,en.qu:3 | d:+0,l:-94,i:-129 (n_win 160) | yes |
+
+**Method check (known answer, held out):** the fill's top letter is the key's own value for 3/3 high-frequency codes (m, x, g; 600-2,000 windows) but only
+**5/9 at the question codes' own N** (74-352 windows: j, 6, h, k right; a, R, 3, L, to wrong), and every miss lands on **i or l**. So the proposals y->l,
+o->i, c->l, 2->l, r->i fall exactly inside the method's bias and are **not evidence** at this N. Weak proposals that sit outside that bias: **V -> n** (fill
+n, margin 100; ink 40 aligns n:14 top but diffuse) and e -> n (margin only 13). For **y** the ink-40 alignment (l:19, r:18, h:17) and the fill (l) agree on l over
+the key's h, which is the strongest of the seven but still M (diffuse alignment, biased method). **e**'s dominant context "co.ta" (18x) is the
+"co_tandeur" [commandeur] pattern: no single letter in that slot gives the French (the fill's n gives "contandeur"), which points to e being a sign for
+"m(m)" or an abbreviation, or to a misread of the following t -- a question for Tomokiyo's key image (cells m, n), not settled here (rule 4: never the
+reading that decodes better). None of these is applied anywhere; a key change is a separate graded step with its own PREREG and control.
+
+Requests: gallica.bnf.fr 1 (one native region). Subagent calls: 2 Sonnet (blind passes A, B). print_check not run (no new stretch >= 20 letters).
+Cost: see the lane ledger. Report: what was found is above; no printed plaintext of these lines was searched for beyond the existing AUDIT 3 log. Novelty not classified.
+**Result line: piece 63 whole-piece gates re-run after f.194r L5-10: PASS** (b2 (i) and (ii) with both controls passing with headroom, specificity PASS).
+
+## Remaining gaps (N7-VIV63G refresh, 4 Oct 2026; supersedes the N7-VIV53L list above, all its other lines kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53
+ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
+N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; Flament, L'ambassade du marquis de Saint-Gouard en Espagne 1572-1574 (1996, OCLC 988579745) and Ribera (2007) unread, fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: a LOCAL-QUEUE row for Flament and Ribera on 10 Oct 1573 (interlibrary or the owner's browser), ~$1
+- tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
+- ink 63 key questions (y, single o, c, V, e, 2, r) - blocker: not-attempted; context table done (N7-VIV63G, tx/viv63g_keyctx.tsv): the 4-gram fill is right on only 5/9 held-out codes at this N and biased to i/l, so only y->l (alignment + fill agree), V->n and e as an "m(m)" sign in "co_tandeur" stand as weak proposals; next: read cells h, l, m, n of Tomokiyo's key image (henryiii_Vivonne1.png) for a y-like l homophone, a V-like n and an e-like m/mm sign, then a PREREG'd key-change step with the wrong-key control, ~$1.5
+- ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
+- ink 53 audit (depth re-check) - blocker: not-attempted; AUDIT 2 (VIV53-A1) set N3 / D1; the N7-VIV53L re-decode passes b2 + wrong-key again (PREREG-N7VIV53L) but no repair-free stretch reaches ~42 letters (longest 20); next: verifier session (account 3) on reading_piece53_L.tsv, ~$5
+- ink 53 residual label questions - blocker: not-attempted; 82 split tiles left UNSETTLED by the 2-of-3 rule and 270 one-reader gaps never re-read (tx/lookalike53L/*/focus.tsv), the ': :'-as-null alternative, and "rauldhoit" (f.171r L15, where French wants "pourroit") unresolved (N7-VIV53L); next: owner's sign sorter on the focus files, or a window re-read of the gap tiles (tx/viv53L_windows.py extended to gaps), ~$2
+- ink 54 clean reading - blocker: not-attempted; window look-alike pass done (residual 0.134), true-error audit a non-test, no stretch near ~42 letters (N7-VIV54L); next: owner's sign sorter on tx/lookalike54/*_focus.tsv (275 questions) or a window-instrument audit (lookalike_pass.py audit + viv53L_windows.py audit), ~$1.5
+- ink 54 key question "to z" (qae) - blocker: not-attempted; 13 occurrences, no reader split, ink 40 alignment never gives u for z (N7-VIV54L); next: read Tomokiyo's cell u / q on henryiii_Vivonne1.png for a z-like homophone or a "qu" sign, ~$0.5
+- ink 54 audit (depth re-check) - blocker: not-attempted; b2 + wrong-key PASS on the re-decode (PREREG-N7VIV54L); next: verifier session (account 3), ~$5
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N7-VIV63G; from the N7-VIV53L list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars, Catherine IV-V, Groen IV read; Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit and key question (lookalike pass done, N7-VIV54L)
+Verdict: keep going: 13 internal gaps; cheapest next: ink 54 key question on the key image, ~$0.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
