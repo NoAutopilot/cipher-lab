@@ -1032,3 +1032,76 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched fully keyed mssEC 18 entries were not; next: image-reconcile them with the eckert-1864 method, ~$4
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: C-grade alignment of the 26 print-matched fully keyed mssEC 18 entries against OR, ~$3
+
+## A3V3-ECKC-eckert-1862 (4 Oct 2026, account 3 worker for LANE-A3V3): C-grade alignment of the 26 print-matched mssEC 18 entries against OR
+
+Step run: A3V3-ECK2's next step. Script `ec18/ec18_align.py DATA_DIR OR_DIR --write|--check` (`--check` exit 0 twice in a
+row; imports ec18.py and ciphers/eckert-1864/decode.py, no private copy). Method: the folder's or_align.py method (word-level
+difflib diff of the decoded entry against the OR text from 120 words before the match anchor to 400 after; both sides are
+English words, so tools/interlinear_align.py, which aligns cipher groups to letters, does not fit). Each keyed token is
+AGREE (the print fixes it: grade C), CONFLICT (at most 3 ledger words opposite at most 4 other printed words), COLLISION
+(the code word itself stands in the print: the clerk wrote the word in clear and the lookup over-read it), PARTIAL or
+UNFIXED (opposite nothing or a long misaligned block; keeps its key grade). Name meanings are scored on the surname, time
+and numeral meanings on their digits/number words. Outputs: `ec18/align_tokens.tsv` (every keyed token, plus plain words
+opposite other printed words), `ec18/align_entries.tsv`, `ec18/align_summary.tsv`. Data: the same vol18.json (sha256
+cb162574..., matches pilot1864/manifest.tsv) and the 16 OR files named in the two matches files (all sha256 match
+or_volumes.tsv); not committed.
+- Agreement, target vs control side by side (rule 3; the control changes only the print window, so it can fail
+  differently): keyed word tokens AGREE 209/281 = 0.744 against the entry's own OR telegram, 48/281 = 0.171 against a
+  different OR telegram of the same week (nearest dated heading 1-3 days from the entry's date, > 700 words from the true
+  anchor, same volume); per entry the target beats its control in 26 of 26 (per-entry rates in align_entries.tsv: target
+  0.43-1.00, control 0.00-0.67). Before the three key additions below (which this same alignment supplied, so they are
+  circular here) and before the possessive fix: 202/274 = 0.737 vs 47/274 = 0.172. Numerals: 12/37 agree (most numeral
+  tokens are the date and time heads, which the print sets in digits above the telegram and the window often misaligns).
+- Grades of the 26 entries' keyed tokens after alignment: C 221 (print fixes the key value), H 156 (key row only: print
+  window misaligned, or no printed counterpart, or punctuation/signature, which OR's OCR punctuation cannot score),
+  I 6, M 0. The 4 CONFLICT + 9 COLLISION + 7 PARTIAL tokens keep their key grade and are listed here, not resolved.
+- Collisions (the code word is an English word the clerk wrote in clear; the decode over-read it), 9: whack (in
+  "bush whack hers" = bushwhackers), white (OR "write"; a volunteer misreading of "write" or the code word for Report),
+  summit, animals, persons, subject, opinion, passed, Hotel ("beat Hotel" = "be at a hotel"), John ("John sons" =
+  Johnson's); plus Dodge (written in clear, key.md Dodge = McMinnville) in 9947.505 and 10020.609 by inspection. These
+  are reading errors of the decode on the volunteer text, not key errors: "H" on such a token means only that the key row
+  is H (as A3V3-ECK18 already warned).
+- Key value vs print, data conflicts (rule 4; two witnesses disagree, not settled by this job): Lehigh, key.md
+  p.17 l.6 (mssEC 41) = Maj Gen S. A. Hurlbut, read by 9947.505 (27 Jan 1865, Halleck to Dodge, St Louis) where OR I/48
+  pt 1 p.646 prints "general Canby"; lehigh in 10020.609 (24 May 1865, Grant to Pope) where OR I/48 pt 2 p.573 prints
+  "can be" ("as soon as transportation can be provided"); weigh (key.md Threaten) in 9965.539 where OR I/46 pt 2 p.727
+  prints "on the way" (a homophone in clear is as likely). Four further CONFLICTs (Morgan, Magic, plank, Brown) sit in date/
+  time heads and are window misalignments by inspection (Brown = 1 against "i 1865", OCR for "1, 1865").
+- Possessives: decode.py's lookup does not strip "'s", so ec18.py leaves Kettle's, Javelin's, lantern's, flora's unread
+  (key-no2.md has Kettle = Longstreet, Javelin = Lee, Lantern = Augur, Flora = Sherman, all H); the aligner strips it and
+  the print confirms all four (C). Follow-up: an option in ciphers/eckert-1864/decode.py, with a test, ~$1.
+- Key additions (grade C, one witness each, conditional on the volunteer transcription; values the key lacked and the print
+  fixes): key.md section 7 "Handle = Maj Gen J. B. Hood (Confederate)" (9864.317, 13 Oct 1864, OR I/39 pt 3 p.249 "any
+  forces that Hood may send north"); key-no2.md section 8 "Harry = Washington" (9902.402, 30 Nov 1864, OR I/43 pt 2 p.708
+  "left for Washington") and "author = Chattahoochee" (9680.31, 27 Feb 1864, OR I/32 pt 2 p.478 "north of the
+  Chattahoochee River"). Other plain-replaced words in align_tokens.tsv (Kearney in a tail outside the print; "pot." =
+  private; Kay Leet, a signature tail where OR prints a different signer) are not code words or are not fixed by print. eckert-1864
+  decode.py --check and decode_no2.py --check stay current after the additions; ec18.py outputs re-written (see below).
+- OR pages are OCR running heads, not checked against the page image. Not done: no image check of any entry (the
+  collisions and the Lehigh conflict are the first things an image check should settle); the 192 unassigned entries.
+  0 vision, 0 subagents.
+- Regenerated after the key additions (rule 7; each `--check` was current before the additions and stale after): `ec18.py
+  --write` (book 1: fully keyed grades H 370 C 2; meanings in print 1773/2647 = 0.670 vs control 0.380; OR matches 14 vs
+  permuted unchanged) and `--book 2 --write` (H 253 C 8 I 7; 0.716 vs 0.414; 9902.402 now shares 11 5-grams with OR
+  instead of 9), `pilot1864/pilot.py --write` (pages.tsv: mssEC 18 page S-rates up 0.4-0.7 points where Handle occurs),
+  then `ec18_align.py --write`; all five `--check` current, eckert-1864 `decode.py --check` and `decode_no2.py --check`
+  current. Requests: hdl.huntington.org 3 (vol18, vol19, vol15 dmQuery), archive.org 48 `_djvu.txt` (all sha256 match
+  or_volumes.tsv), >= 1.6 s apart.
+
+## Remaining gaps (finish-or-blocker pass, A3V3-ECKC, 4 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR vols. 32-49) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text; the 26 print-matched ones aligned to OR: keyed tokens C 221, H 156, I 6 (A3V3-ECKC: 0.744 agree vs 0.171 same-week control, 26/26 entries above control)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books and the 26 print-matched entries aligned to OR (A3V3-ECK18, A3V3-ECK2, A3V3-ECKC); 9 collisions (plain English words over-read as code) and the Lehigh / weigh key-vs-print conflicts open; next: decode.py possessive option ("Kettle's") plus a collision guard (a code word left plain when the clear reading fits the surrounding words), with an offline test, then re-run ec18.py, ~$2
+- 192 unassigned mssEC 18 entries (no punctuation or signature marker) - blocker: not-attempted; the book rule needs a No. 1 or No. 2 marker word and these carry none; next: assign a book by which key's meanings match print better on the 71-73 print-matched ones (ec18.py option), ~$2
+
+## Escalation (A3V3-ECKC, 4 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); mssEC 18 book-2 entries read with key-no2.md 4 Oct 2026 (A3V3-ECK2); the 192 unassigned entries not yet tried against both books; next: ec18.py book assignment by print agreement, ~$2
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; OR ser. I vols. 32-49 done for mssEC 18 (A3V3-ECK18, A3V3-ECK2); the 26 matches aligned word by word (A3V3-ECKC)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); residue regenerated (GAPS197); Handle (key.md), Harry and author (key-no2.md) added at C from the OR alignment (A3V3-ECKC)
+- [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched fully keyed mssEC 18 entries were not; first the 9 collisions and the Lehigh (9947.505, 10020.609) and weigh (9965.539) conflicts; next: image-reconcile those entries with the eckert-1864 method, ~$4
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: decode.py possessive option and collision guard, then re-run ec18.py, ~$2

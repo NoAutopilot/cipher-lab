@@ -2,9 +2,9 @@
 
 Derived by ec18.py from the Decoding the Civil War volunteer transcription (not reconciled against the page image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/key-no2.md (mssEC 47). Brackets are key-no2.md meanings with that row's grade; words outside brackets are as the volunteers wrote them. Not a novelty claim (rule 10).
 
-**9680.31** (Page 14, 1864-02-27; H 27 C 0 I 0 M 0; print: OR ser. I vol. 32.2 p. 478 (OCR running head), 31 shared 5-grams)
+**9680.31** (Page 14, 1864-02-27; H 27 C 1 I 0 M 0; print: OR ser. I vol. 32.2 p. 478 (OCR running head), 31 shared 5-grams)
 
-[Washington] {time: 1.30 PM} [27] For [Maj Genl U S Grant] The [Wisconsin] [Regiment] is ordered to [Nashville] as requested others will be so ordered as fast as reported ready unless you should wish other wise [.] much anxiety is felt here about flora's [Movement] [,] We have nothing office all since the [8] [.] [Rebel] accounts represent his [Force]'s as far [South] as Quit - man but say nothing of any [Movement] on [Selma] [.] it is [Report] that [Johnston] has ordered the [Evacuation] of the part of [Georgia] [North] of author [River]  {tail: [signed] [Maj Gen H W Halleck] End}
+[Washington] {time: 1.30 PM} [27] For [Maj Genl U S Grant] The [Wisconsin] [Regiment] is ordered to [Nashville] as requested others will be so ordered as fast as reported ready unless you should wish other wise [.] much anxiety is felt here about flora's [Movement] [,] We have nothing office all since the [8] [.] [Rebel] accounts represent his [Force]'s as far [South] as Quit - man but say nothing of any [Movement] on [Selma] [.] it is [Report] that [Johnston] has ordered the [Evacuation] of the part of [Georgia] [North] of [Chattahoochee] [River]  {tail: [signed] [Maj Gen H W Halleck] End}
 
 **9681.34** (Page 15, 1864-03-03; H 12 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -50,9 +50,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 1.30 PM} [18] For [Sheridan P H] [.] your [McLamores Cove] of yesterday received [.] [Scout (-ed, -ing)]'s have been directed to go out [Tomorrow] morning and use every effort to obtain [Information] from [Gordonsville] and vicinity stick They [Will be] Kept active  {tail: [signed] [McCallum D C] Kay Leet Asst. [Adjutant General]}
 
-**9902.402** (Page 236, 1864-11-30; H 12 C 1 I 0 M 0; print: OR ser. I vol. 43.2 p. 708 (OCR running head), 9 shared 5-grams)
+**9902.402** (Page 236, 1864-11-30; H 12 C 2 I 0 M 0; print: OR ser. I vol. 43.2 p. 708 (OCR running head), 11 shared 5-grams)
 
-{time: 4 PM} [30] For [Potomac] Have any [Of the] [6] [Corps] [Left] for Harry [?] Please [Telegraph (-ed, -ing)] when each [Division] leaves in [Order] that we may be ready to receive them  {tail: [signed] [H W Halleck] born}
+{time: 4 PM} [30] For [Potomac] Have any [Of the] [6] [Corps] [Left] for [Washington] [?] Please [Telegraph (-ed, -ing)] when each [Division] leaves in [Order] that we may be ready to receive them  {tail: [signed] [H W Halleck] born}
 
 **9910.424** (Page 244, 1864-12-08; H 9 C 1 I 0 M 0; print: OR ser. I vol. 45.2 p. 75 (OCR running head), 11 shared 5-grams)
 

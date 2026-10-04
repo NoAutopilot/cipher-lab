@@ -38,9 +38,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 [4] to [Colonel]  {tail: [signed] Chf [Quartermaster] ---- Please send here immedy all the Weaslers that can possibly be spared from your place ---- They are needed at once ---- answer and give the names of those you send [signed] D H Rucker potato}
 
-**9864.317** (Page 198, 1864-10-13; H 13 C 0 I 0 M 0; print: OR ser. I vol. 39.3 p. 249 (OCR running head), 6 shared 5-grams)
+**9864.317** (Page 198, 1864-10-13; H 13 C 1 I 0 M 0; print: OR ser. I vol. 39.3 p. 249 (OCR running head), 6 shared 5-grams)
 
-{time: 11.30 AM} [13] for [Maj Genl J. M. Schofield] [Louisville] [.] all [Force]'s that can possible be spared from [Kentucky] should be sent to [Maj Gen Geo. H. Thomas] at [Nashville] to enable him to meet any [Force]'s that Handle may send [North]  {tail: [signed] [General-in-Chief] send copy to Kearney where ever he may be}
+{time: 11.30 AM} [13] for [Maj Genl J. M. Schofield] [Louisville] [.] all [Force]'s that can possible be spared from [Kentucky] should be sent to [Maj Gen Geo. H. Thomas] at [Nashville] to enable him to meet any [Force]'s that [Maj Gen J. B. Hood (Confederate)] may send [North]  {tail: [signed] [General-in-Chief] send copy to Kearney where ever he may be}
 
 **9866.320** (Page 200, 1864-10-13; H 6 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -58,9 +58,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 11 AM} [29] to [Colonel] R C  {tail: [signed] [Quartermaster] [Monroe] Please send here immediately every [Available] [Steam]er and propel her you have [In the] service at your [Post] that canby spared Answer at once and give the names of those you send DH Rucker BrGen}
 
-**9908.417** (Page 242, 1864-12-06; H 12 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
+**9908.417** (Page 242, 1864-12-06; H 12 C 1 I 0 M 0; no OR ser. I vols. 32-49 match)
 
-[Washington] [6] {time: 10 AM} To [Command = Er (-ed, -ing)]ing Officer at [Vicksburg] You will make every posse able exert shun to [Destroy (-ed, -ing)] the [Mobile] and [Ohio] [Rail Road] by which Handles [Army] is now supplied  {tail: [signed] [General-in-Chief]}
+[Washington] [6] {time: 10 AM} To [Command = Er (-ed, -ing)]ing Officer at [Vicksburg] You will make every posse able exert shun to [Destroy (-ed, -ing)] the [Mobile] and [Ohio] [Rail Road] by which [Maj Gen J. B. Hood (Confederate)]'s [Army] is now supplied  {tail: [signed] [General-in-Chief]}
 
 **9911.425** (Page 245, 1864-12-09; H 20 C 0 I 0 M 0; print: OR ser. I vol. 45.2 p. 114 (OCR running head), 27 shared 5-grams)
 

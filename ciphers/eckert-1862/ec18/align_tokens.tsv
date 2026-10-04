@@ -1,0 +1,415 @@
+id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	printed
+9673.15	1	32.2	347	target	0	Grapes	Washington	H	word	UNFIXED	their several boats and
+9673.15	1	32.2	347	target	2	Postpone	7 (numeral)	H	numeral	UNFIXED	their several boats and
+9673.15	1	32.2	347	target	3	Viola	12.30 (time word)	H	time	UNFIXED	their several boats and
+9673.15	1	32.2	347	target	5	Juno	Maj Genl U.S. Grant	H	word	AGREE	
+9673.15	1	32.2	347	target	6	Empress	Nashville	H	word	AGREE	
+9673.15	1	32.2	347	target	11	Talbot	Movement	H	word	AGREE	
+9673.15	1	32.2	347	target	13	Europe	Mobile	H	word	AGREE	
+9673.15	1	32.2	347	target	17	Knapsack	Maj Gen W. T. Sherman	H	word	UNFIXED	halleck general in cliief hdqrs first cav div dept of the cumberland
+9673.15	1	32.2	347	target	18	yoke	Signature	H	sig	NOTSCORED	
+9673.15	1	32.2	347	target	19	Benjamin	General in Chief	H	word	UNFIXED	
+9744.111	1	34.4	28	target	0	Henrietta	2.30 PM (time word)	H	time	AGREE	
+9744.111	1	34.4	28	target	1	Harrow	20 (numeral)	H	numeral	UNFIXED	p m major general
+9744.111	1	34.4	28	target	2	plaster	5 (numeral)	H	numeral	UNFIXED	p m major general
+9744.111	1	34.4	28	target	5	Mellow	Maj Gen Fredk Steele	H	word	PARTIAL	p m major general
+9744.111	1	34.4	28	target	6	zebra	Period	H	punct	NOTSCORED	
+9744.111	1	34.4	28	target	10	Indians	General-in-Chief	H	word	UNFIXED	
+9744.111	1	34.4	28	target	12	stomach	Left	H	word	AGREE	
+9744.111	1	34.4	28	target	13	Agnew	Kansas	H	word	AGREE	
+9744.111	1	34.4	28	target	15	Indian	General-in-Chief	H	word	UNFIXED	
+9744.111	1	34.4	28	target	21	zodiac	Period	H	punct	NOTSCORED	
+9744.111	1	34.4	28	target	31	Agnew	Kansas	H	word	AGREE	
+9744.111	1	34.4	28	target	33	Walrus	Signature	H	sig	NOTSCORED	
+9744.111	1	34.4	28	target	34	Jew	General-in-Chief	H	word	UNFIXED	
+9765.139	1	34.4	536	target	0	Nelly	8.30 PM (time word)	H	time	UNFIXED	the orders given by you to captain hunter are fully approved i
+9765.139	1	34.4	536	target	2	Moon	Maj Gen W. S. Rosecrans	H	word	AGREE	
+9765.139	1	34.4	536	target	3	Geneva	St Louis	H	word	AGREE	
+9765.139	1	34.4	536	target	10	Shelby	General	H	word	UNFIXED	
+9765.139	1	34.4	536	target	20	whack	Towards	H	word	COLLISION	bushwhackers
+9765.139	1	34.4	536	target	21	hers			plain-replaced	CONFLICT	bushwhackers
+9765.139	1	34.4	536	target	25	white	Report	H	word	COLLISION	write
+9765.139	1	34.4	536	target	28	walrus	Signature	H	sig	NOTSCORED	
+9765.139	1	34.4	536	target	29	Bologna	President U.S.	H	word	AGREE	
+9816.215	1	38.5	409	target	0	Growl	Washington	H	word	UNFIXED	iiush forward daily by parallels and make the inside of atlanta too
+9816.215	1	38.5	409	target	2	Plunder	7 (numeral)	H	numeral	UNFIXED	iiush forward daily by parallels and make the inside of atlanta too
+9816.215	1	38.5	409	target	3	Reliance	10.30 PM (time word)	H	time	PARTIAL	iiush forward daily by parallels and make the inside of atlanta too
+9816.215	1	38.5	409	target	5	Kidnap	Maj Gen W. T. Sherman	H	word	AGREE	
+9816.215	1	38.5	409	target	6	Shelby	General	H	word	UNFIXED	
+9816.215	1	38.5	409	target	17	whisky	Troops	H	word	AGREE	
+9816.215	1	38.5	409	target	24	Polka	Command = Er (-ed, -ing)	H	word	AGREE	
+9816.215	1	38.5	409	target	25	youth	Signature	H	sig	NOTSCORED	
+9816.215	1	38.5	409	target	26	Italy	General-in-Chief	H	word	UNFIXED	
+9864.317	1	39.3	249	target	0	Florence	11.30 AM (time word)	H	time	AGREE	
+9864.317	1	39.3	249	target	1	Fever	13 (numeral)	H	numeral	UNFIXED	a
+9864.317	1	39.3	249	target	3	Kiss	Maj Genl J. M. Schofield	H	word	AGREE	
+9864.317	1	39.3	249	target	4	Dragon	Louisville	H	word	AGREE	louisvillcj ky
+9864.317	1	39.3	249	target	5	zebra	Period	H	punct	NOTSCORED	
+9864.317	1	39.3	249	target	7	Salems	Force	H	word	AGREE	forces tliat
+9864.317	1	39.3	249	target	8	that			plain-replaced	CONFLICT	forces tliat
+9864.317	1	39.3	249	target	14	Aurora	Kentucky	H	word	AGREE	
+9864.317	1	39.3	249	target	19	Lady	Maj Gen Geo. H. Thomas	H	word	PARTIAL	general
+9864.317	1	39.3	249	target	21	Embrace	Nashville	H	word	AGREE	kashville
+9864.317	1	39.3	249	target	28	Saints	Force	H	word	AGREE	forces
+9864.317	1	39.3	249	target	30	Handle	Maj Gen J. B. Hood (Confederate)	C	word	AGREE	
+9864.317	1	39.3	249	target	33	torrent	North	H	word	AGREE	
+9864.317	1	39.3	249	target	34	walrus	Signature	H	sig	NOTSCORED	
+9864.317	1	39.3	249	target	35	Jordan	General-in-Chief	H	word	UNFIXED	
+9864.317	1	39.3	249	target	39	kearney			plain-replaced	CONFLICT	inform you what
+9864.317	1	39.3	249	target	40	where			plain-replaced	CONFLICT	inform you what
+9864.317	1	39.3	249	target	41	ever			plain-replaced	CONFLICT	inform you what
+9878.351	1	39.3	476	target	0	Growl	Washington	H	word	AGREE	
+9878.351	1	39.3	476	target	1	francis	12 (time word)	H	time	UNFIXED	october 28 1864 1 40 a m major general
+9878.351	1	39.3	476	target	2	lantern	Maj Gen Geo. H. Thomas	H	word	PARTIAL	october 28 1864 1 40 a m major general
+9878.351	1	39.3	476	target	3	John	Maj Genl U.S. Grant	H	word	AGREE	
+9878.351	1	39.3	476	target	6	moon	Maj Gen W. S. Rosecrans	H	word	AGREE	general bosecrans
+9878.351	1	39.3	476	target	10	Webb	Reinforcements	H	word	AGREE	re enforce ments
+9878.351	1	39.3	476	target	12	Ripley	East	H	word	AGREE	eastx ort
+9878.351	1	39.3	476	target	19	rampants	Follow (-ed, -ing)	H	word	AGREE	follows
+9878.351	1	39.3	476	target	31	Grapes	Washington	H	word	AGREE	
+9878.351	1	39.3	476	target	32	pebble	3 (numeral)	H	numeral	AGREE	three
+9878.351	1	39.3	476	target	34	pension	4 (numeral)	H	numeral	AGREE	four
+9878.351	1	39.3	476	target	37	plainfield	Communicate (-ed, -ing)	H	word	AGREE	communi cate
+9878.351	1	39.3	476	target	39	Moscow	Maj Gen W. S. Rosecrans	H	word	AGREE	
+9878.351	1	39.3	476	target	40	walrus	Signature	H	sig	NOTSCORED	
+9878.351	1	39.3	476	target	41	Jonah	General-in-Chief	H	word	UNFIXED	
+9885.368	1	43.2	528	target	0	Harvard	Winchester	H	word	AGREE	
+9885.368	1	43.2	528	target	1	Emily	10 AM (time word)	H	time	AGREE	
+9885.368	1	43.2	528	target	2	peach	2 (numeral)	H	numeral	UNFIXED	a m received 5 40 p m general j h
+9885.368	1	43.2	528	target	4	Palate	Brigadier General	H	word	UNFIXED	
+9885.368	1	43.2	528	target	6	Camel	Harpers Ferry	H	word	AGREE	harper 1
+9885.368	1	43.2	528	target	7	Unity	Period	H	punct	NOTSCORED	
+9885.368	1	43.2	528	target	9	will			plain-replaced	CONFLICT	v ll
+9885.368	1	43.2	528	target	14	panther	Brigade	H	word	AGREE	
+9885.368	1	43.2	528	target	16	pacific	Cavalry	H	word	AGREE	
+9885.368	1	43.2	528	target	18	summit	Impregnable	H	word	COLLISION	summit
+9885.368	1	43.2	528	target	19	Vernon	Point	H	word	AGREE	
+9885.368	1	43.2	528	target	28	wiley	Road	H	word	AGREE	
+9885.368	1	43.2	528	target	36	Randolph	Engineer	H	word	AGREE	
+9885.368	1	43.2	528	target	39	youth	Signature	H	sig	NOTSCORED	
+9885.368	1	43.2	528	target	40	Nabob	P. H. Sheriden	H	word	AGREE	sheridan major general wheeling november 2 1864 received 4 25 p m
+9911.425	1	45.2	114	target	0	Grapes	Washington	H	word	UNFIXED	grant viz please telegraph order relieving him general
+9911.425	1	45.2	114	target	1	Elizabeth	10.30 AM (time word)	H	time	UNFIXED	grant viz please telegraph order relieving him general
+9911.425	1	45.2	114	target	2	Pony	9 (numeral)	H	numeral	UNFIXED	grant viz please telegraph order relieving him general
+9911.425	1	45.2	114	target	4	Lady	Maj Gen Geo. H. Thomas	H	word	PARTIAL	grant viz please telegraph order relieving him general
+9911.425	1	45.2	114	target	5	zebra	Period	H	punct	NOTSCORED	
+9911.425	1	45.2	114	target	6	John	Maj Genl U.S. Grant	H	word	AGREE	
+9911.425	1	45.2	114	target	17	Oiling	Attack (-ed, -ing)	H	word	AGREE	
+9911.425	1	45.2	114	target	19	Ridge	Enemy	H	word	AGREE	
+9911.425	1	45.2	114	target	20	unity	Period	H	punct	NOTSCORED	
+9911.425	1	45.2	114	target	25	Shelby	General	H	word	UNFIXED	
+9911.425	1	45.2	114	target	26	will			plain-replaced	CONFLICT	general yvilson
+9911.425	1	45.2	114	target	27	soon			plain-replaced	CONFLICT	general yvilson
+9911.425	1	45.2	114	target	31	Panama	Cavalry	H	word	AGREE	
+9911.425	1	45.2	114	target	36	domes			plain-replaced	CONFLICT	doomsday
+9911.425	1	45.2	114	target	44	zodiac	Period	H	punct	NOTSCORED	
+9911.425	1	45.2	114	target	55	Moscow	Maj Gen W. S. Rosecrans	H	word	AGREE	eosecrans
+9911.425	1	45.2	114	target	59	Pekin	Comma	H	punct	NOTSCORED	
+9911.425	1	45.2	114	target	63	animals	Monroe	H	word	COLLISION	animals
+9911.425	1	45.2	114	target	70	zebra	Period	H	punct	NOTSCORED	
+9911.425	1	45.2	114	target	71	Wicks	Report	H	word	AGREE	eeports
+9911.425	1	45.2	114	target	79	Shaker	Forage (-ed, -ing)	H	word	AGREE	
+9911.425	1	45.2	114	target	80	yoke	Signature	H	sig	NOTSCORED	
+9911.425	1	45.2	114	target	81	Italy	General-in-Chief	H	word	UNFIXED	
+9947.505	1	48.1	646	target	0	Growl	Washington	H	word	AGREE	
+9947.505	1	48.1	646	target	1	Helen	2 PM (time word)	H	time	UNFIXED	d c january 27 1865 major general dodge saint louis
+9947.505	1	48.1	646	target	2	harsh	20 (numeral)	H	numeral	UNFIXED	d c january 27 1865 major general dodge saint louis
+9947.505	1	48.1	646	target	3	plunder	7 (numeral)	H	numeral	UNFIXED	d c january 27 1865 major general dodge saint louis
+9947.505	1	48.1	646	target	5	Taunton	Major	H	word	UNFIXED	
+9947.505	1	48.1	646	target	6	Shelter	General	H	word	UNFIXED	
+9947.505	1	48.1	646	target	7	Dodge	McMinnville	H	word	UNFIXED	d c january 27 1865 major general dodge saint louis
+9947.505	1	48.1	646	target	9	Panama	Cavalry	H	word	AGREE	
+9947.505	1	48.1	646	target	15	Lehigh	Maj Gen S. A. Hurlbut	H	word	CONFLICT	general canby
+9947.505	1	48.1	646	target	20	Pacific	Cavalry	H	word	AGREE	
+9947.505	1	48.1	646	target	21	Quotient	Depot	H	word	AGREE	
+9947.505	1	48.1	646	target	23	Gaul	St Louis	H	word	AGREE	
+9947.505	1	48.1	646	target	24	youth	Signature	H	sig	NOTSCORED	
+9947.505	1	48.1	646	target	25	Italy	General-in-Chief	H	word	UNFIXED	
+9965.539	1	46.2	727	target	0	Henrietta	2.30 PM (time word)	H	time	AGREE	
+9965.539	1	46.2	727	target	1	Shelby	General	H	word	UNFIXED	
+9965.539	1	46.2	727	target	3	zodiac	Period	H	punct	NOTSCORED	
+9965.539	1	46.2	727	target	5	whip	Regiment	H	word	AGREE	
+9965.539	1	46.2	727	target	7	nuptial	Artillery	H	word	AGREE	
+9965.539	1	46.2	727	target	11	opal	Army	H	word	AGREE	
+9965.539	1	46.2	727	target	12	torch	Of the	H	word	AGREE	
+9965.539	1	46.2	727	target	13	Attica	Potomac	H	word	AGREE	
+9965.539	1	46.2	727	target	18	rip			plain-replaced	CONFLICT	replace
+9965.539	1	46.2	727	target	21	modest	90 (numeral)	H	numeral	AGREE	ninety first
+9965.539	1	46.2	727	target	22	plug	1 (numeral)	H	numeral	AGREE	ninety first
+9965.539	1	46.2	727	target	23	Amos	New York	H	word	AGREE	
+9965.539	1	46.2	727	target	30	weigh	Threaten (-ed, -ing)	H	word	CONFLICT	way
+9965.539	1	46.2	727	target	31	unity	Period	H	punct	NOTSCORED	
+9965.539	1	46.2	727	target	33	nutmeg	Available	H	word	AGREE	
+9965.539	1	46.2	727	target	34	whisky	Troops	H	word	AGREE	
+9965.539	1	46.2	727	target	40	John	Maj Genl U.S. Grant	H	word	AGREE	
+9965.539	1	46.2	727	target	41	youth	Signature	H	sig	NOTSCORED	
+9965.539	1	46.2	727	target	42	Benjamin	General in Chief	H	word	UNFIXED	
+10002.578	1	48.2	278	target	0	Rosalie	9 PM (time word)	H	time	AGREE	
+10002.578	1	48.2	278	target	1	plug	1 (numeral)	H	numeral	UNFIXED	p m received 2 d major general pope
+10002.578	1	48.2	278	target	8	wales	Rations	H	word	AGREE	preparations
+10002.578	1	48.2	278	target	10	paxton	Camp	H	word	AGREE	campaign
+10002.578	1	48.2	278	target	11	paining			plain-replaced	CONFLICT	campaign
+10002.578	1	48.2	278	target	12	Wilson	West	H	word	AGREE	
+10002.578	1	48.2	278	target	13	torch	Of the	H	word	AGREE	
+10002.578	1	48.2	278	target	14	Argyle	Mississippi	H	word	AGREE	
+10002.578	1	48.2	278	target	18	unity	Period	H	punct	NOTSCORED	
+10002.578	1	48.2	278	target	20	hang	Kirby Smith	H	word	AGREE	
+10002.578	1	48.2	278	target	26	saint	Force	H	word	AGREE	
+10002.578	1	48.2	278	target	36	Wilson	West	H	word	AGREE	
+10002.578	1	48.2	278	target	37	torch	Of the	H	word	AGREE	
+10002.578	1	48.2	278	target	38	Argyle	Mississippi	H	word	AGREE	
+10002.578	1	48.2	278	target	39	webster	Signature	H	sig	NOTSCORED	
+10002.578	1	48.2	278	target	40	Japan	Maj Genl U.S. Grant	H	word	AGREE	
+10020.609	1	48.2	573	target	0	Eugenia	9.30 AM (time word)	H	time	AGREE	
+10020.609	1	48.2	573	target	1	harsh	20 (numeral)	H	numeral	UNFIXED	a m major general
+10020.609	1	48.2	573	target	2	pension	4 (numeral)	H	numeral	UNFIXED	a m major general
+10020.609	1	48.2	573	target	5	unity	Period	H	punct	NOTSCORED	
+10020.609	1	48.2	573	target	6	Shelby	General	H	word	UNFIXED	
+10020.609	1	48.2	573	target	7	Dodge	McMinnville	H	word	UNFIXED	saint louis mo general dodge
+10020.609	1	48.2	573	target	11	nuptial	Artillery	H	word	AGREE	
+10020.609	1	48.2	573	target	19	spit	Men	H	word	AGREE	
+10020.609	1	48.2	573	target	23	zebra	Period	H	punct	NOTSCORED	
+10020.609	1	48.2	573	target	28	panama	Cavalry	H	word	AGREE	
+10020.609	1	48.2	573	target	31	persia	As soon as	H	word	AGREE	
+10020.609	1	48.2	573	target	32	wherry	Transportation	H	word	AGREE	
+10020.609	1	48.2	573	target	33	lehigh	Maj Gen S. A. Hurlbut	H	word	CONFLICT	can be
+10020.609	1	48.2	573	target	35	walrus	Signature	H	sig	NOTSCORED	
+10020.609	1	48.2	573	target	36	Juno	Maj Genl U.S. Grant	H	word	AGREE	
+10026.621	1	48.2	716	target	0	Emily	10 AM (time word)	H	time	AGREE	
+10026.621	1	48.2	716	target	2	Plug	1 (numeral)	H	numeral	UNFIXED	a m maj gen
+10026.621	1	48.2	716	target	4	Monster	Maj Gen J. J. Reynolds	H	word	AGREE	
+10026.621	1	48.2	716	target	5	zebra	Period	H	punct	NOTSCORED	
+10026.621	1	48.2	716	target	6	whisky	Troops	H	word	AGREE	
+10026.621	1	48.2	716	target	13	Knapsacks	Maj Gen W. T. Sherman	H	word	AGREE	
+10026.621	1	48.2	716	target	14	Oyster	Army	H	word	AGREE	
+10026.621	1	48.2	716	target	15	Persia	As soon as	H	word	AGREE	
+10026.621	1	48.2	716	target	19	paid			plain-replaced	CONFLICT	iiaid
+10026.621	1	48.2	716	target	31	whiff	Troops	H	word	AGREE	
+10026.621	1	48.2	716	target	32	unity	Period	H	punct	NOTSCORED	
+10026.621	1	48.2	716	target	46	youth	Signature	H	sig	NOTSCORED	
+10026.621	1	48.2	716	target	47	John	Maj Genl U.S. Grant	H	word	AGREE	
+10026.621	1	48.2	716	target	49	pardon	Battle	H	word	UNFIXED	lieutenant general headquarters department of arkansas little boejc ark june 1 1865
+10027.623	1	48.2	716	target	0	Emily	10 AM (time word)	H	time	AGREE	
+10027.623	1	48.2	716	target	1	plank	2 (numeral)	H	numeral	CONFLICT	a m major general
+10027.623	1	48.2	716	target	2	for			plain-replaced	CONFLICT	a m major general
+10027.623	1	48.2	716	target	4	unity	Period	H	punct	NOTSCORED	
+10027.623	1	48.2	716	target	11	niggards	Arms	H	word	AGREE	
+10027.623	1	48.2	716	target	14	persons	5 (numeral)	H	numeral	COLLISION	persons
+10027.623	1	48.2	716	target	20	spark	Government	H	word	AGREE	
+10027.623	1	48.2	716	target	22	tower	Over the	H	word	AGREE	
+10027.623	1	48.2	716	target	29	nuisance	Arms	H	word	AGREE	
+10027.623	1	48.2	716	target	35	Shark	Government	H	word	AGREE	
+10027.623	1	48.2	716	target	36	walrus	Signature	H	sig	NOTSCORED	
+10027.623	1	48.2	716	target	37	Jupiter	Maj Genl U.S. Grant	H	word	AGREE	geant lieutenant general chap lx correspondence etc union 731 first indorsement eespectfully
+10027.623	1	48.2	716	target	38	zebra	Period	H	punct	NOTSCORED	
+10027.623	1	48.2	716	target	43	Infant	Secretary of War	H	word	AGREE	
+10027.623	1	48.2	716	target	49	webster	Signature	H	sig	NOTSCORED	
+10027.623	1	48.2	716	target	50	Japan	Maj Genl U.S. Grant	H	word	AGREE	
+10027.623	1	48.2	716	target	51	zodiac	Period	H	punct	NOTSCORED	
+10027.623	1	48.2	716	target	53	Indus	Secretary of War	H	word	AGREE	
+9680.31	2	32.2	478	target	0	Huron	Washington	H	word	UNFIXED	until the fate of general sherman is fully known the difficulties of
+9680.31	2	32.2	478	target	1	Harriet	1.30 PM (time word)	H	time	UNFIXED	until the fate of general sherman is fully known the difficulties of
+9680.31	2	32.2	478	target	2	Oliver	20 (numeral)	H	numeral	UNFIXED	until the fate of general sherman is fully known the difficulties of
+9680.31	2	32.2	478	target	3	Cushing	7 (numeral)	H	numeral	UNFIXED	until the fate of general sherman is fully known the difficulties of
+9680.31	2	32.2	478	target	5	Belly	Maj Genl U S Grant	H	word	AGREE	
+9680.31	2	32.2	478	target	7	Belgrade	Wisconsin	H	word	AGREE	
+9680.31	2	32.2	478	target	8	Wayne	Regiment	H	word	AGREE	
+9680.31	2	32.2	478	target	12	Gaul	Nashville	H	word	AGREE	
+9680.31	2	32.2	478	target	31	yardstick	Period	H	punct	NOTSCORED	
+9680.31	2	32.2	478	target	38	flora	Maj Gen W T Sherman	H	word	AGREE	
+9680.31	2	32.2	478	target	39	Supper	Movement	H	word	AGREE	s movements
+9680.31	2	32.2	478	target	40	pike	Comma	H	punct	NOTSCORED	
+9680.31	2	32.2	478	target	45	all			plain-replaced	CONFLICT	official
+9680.31	2	32.2	478	target	48	Fisher	8 (numeral)	H	numeral	AGREE	
+9680.31	2	32.2	478	target	49	Tulip	Period	H	punct	NOTSCORED	
+9680.31	2	32.2	478	target	50	Violet	Rebel	H	word	AGREE	
+9680.31	2	32.2	478	target	54	Saints	Force	H	word	AGREE	forces
+9680.31	2	32.2	478	target	57	wick	South	H	word	AGREE	
+9680.31	2	32.2	478	target	66	Surgery	Movement	H	word	AGREE	
+9680.31	2	32.2	478	target	68	Harvard	Selma	H	word	AGREE	
+9680.31	2	32.2	478	target	69	Tulip	Period	H	punct	NOTSCORED	
+9680.31	2	32.2	478	target	72	Watson	Report	H	word	AGREE	reported
+9680.31	2	32.2	478	target	74	Java	Johnston	H	word	AGREE	
+9680.31	2	32.2	478	target	78	reptile	Evacuation	H	word	AGREE	
+9680.31	2	32.2	478	target	80	the			plain-replaced	CONFLICT	that
+9680.31	2	32.2	478	target	83	abortion	Georgia	H	word	AGREE	
+9680.31	2	32.2	478	target	84	spoon	North	H	word	AGREE	
+9680.31	2	32.2	478	target	86	author	Chattahoochee	C	word	AGREE	chatta hoochee
+9680.31	2	32.2	478	target	87	wafer	River	H	word	AGREE	
+9680.31	2	32.2	478	target	88	windham	Signed	H	sig	NOTSCORED	
+9680.31	2	32.2	478	target	89	behead	Maj Gen H W Halleck	H	word	AGREE	
+9729.85	2	34.3	409	target	0	Hang	Washington	H	word	UNFIXED	morrow morning will occupy germanna ely s and culpeper mine fords by
+9729.85	2	34.3	409	target	1	Benton	3 (numeral)	H	numeral	UNFIXED	morrow morning will occupy germanna ely s and culpeper mine fords by
+9729.85	2	34.3	409	target	2	Job	May	H	word	UNFIXED	morrow morning will occupy germanna ely s and culpeper mine fords by
+9729.85	2	34.3	409	target	3	Fanny	11 AM (time word)	H	time	UNFIXED	morrow morning will occupy germanna ely s and culpeper mine fords by
+9729.85	2	34.3	409	target	5	Chart	Lieut Gen U.S. Grant	H	word	AGREE	
+9729.85	2	34.3	409	target	6	Chester	Culpepper	H	word	AGREE	lieutenant general washington may 3 18 g 4 11 a m lieutenant
+9729.85	2	34.3	409	target	7	Tulip	Period	H	punct	NOTSCORED	
+9729.85	2	34.3	409	target	16	whimpered	Telegraph (-ed, -ing)	H	word	AGREE	telegraphed
+9729.85	2	34.3	409	target	18	Blubber	Cairo	H	word	AGREE	
+9729.85	2	34.3	409	target	23	Spark	General	H	word	UNFIXED	
+9729.85	2	34.3	409	target	26	done			plain-replaced	CONFLICT	down
+9729.85	2	34.3	409	target	28	Wafer	River	H	word	AGREE	
+9729.85	2	34.3	409	target	30	Job	May	H	word	AGREE	
+9729.85	2	34.3	409	target	31	Brown	1 (numeral)	H	numeral	AGREE	
+9729.85	2	34.3	409	target	32	yard	Period	I	punct	NOTSCORED	
+9729.85	2	34.3	409	target	34	color	President U.S.	H	word	AGREE	
+9729.85	2	34.3	409	target	38	whims	telegram	C	word	AGREE	telegrams
+9729.85	2	34.3	409	target	47	subject	Protect	H	word	COLLISION	subject
+9729.85	2	34.3	409	target	54	yacht	Period	H	punct	NOTSCORED	
+9729.85	2	34.3	409	target	61	Yawl	Signed	H	sig	NOTSCORED	
+9729.85	2	34.3	409	target	62	Lady	H W Halleck	H	word	AGREE	
+9798.182	2	37.2	382	target	0	Julia	4 PM (time word)	H	time	UNFIXED	his present front particularly from richmond without attacking forti fications the enemy
+9798.182	2	37.2	382	target	1	Morgan	19 (numeral)	H	numeral	UNFIXED	his present front particularly from richmond without attacking forti fications the enemy
+9798.182	2	37.2	382	target	3	Chart	Lieut Gen U.S. Grant	H	word	AGREE	
+9798.182	2	37.2	382	target	4	tulip	Period	H	punct	NOTSCORED	
+9798.182	2	37.2	382	target	8	opinion	Field	H	word	COLLISION	the opinion
+9798.182	2	37.2	382	target	11	Webb	Regiment	H	word	AGREE	
+9798.182	2	37.2	382	target	13	Simms	Heavy	H	word	AGREE	
+9798.182	2	37.2	382	target	14	Pagan	Artillery	H	word	AGREE	
+9798.182	2	37.2	382	target	20	Shark	General	H	word	UNFIXED	
+9798.182	2	37.2	382	target	21	Watkins	Right	H	word	AGREE	general wright
+9798.182	2	37.2	382	target	26	panther	As soon as	H	word	AGREE	
+9798.182	2	37.2	382	target	35	wherry	To day	H	word	AGREE	
+9798.182	2	37.2	382	target	38	welch	Signature	H	sig	NOTSCORED	
+9798.182	2	37.2	382	target	39	Lamb	H W Halleck	H	word	AGREE	
+9823.230	2	42.2	291	target	0	hang	Washington	H	word	AGREE	
+9823.230	2	42.2	291	target	1	Emily	10 AM (time word)	H	time	AGREE	
+9823.230	2	42.2	291	target	2	Morgan	19 (numeral)	H	numeral	CONFLICT	a m lieut gen
+9823.230	2	42.2	291	target	3	Magic	Grant U S	H	word	CONFLICT	a m lieut gen
+9823.230	2	42.2	291	target	4	Allen	1 (numeral)	H	numeral	AGREE	grant one
+9823.230	2	42.2	291	target	6	lantern	Augur C C	H	word	AGREE	
+9823.230	2	42.2	291	target	7	warps	Scout (-ed, -ing)	H	word	AGREE	s scouts
+9823.230	2	42.2	291	target	9	that			plain-replaced	CONFLICT	tliat
+9823.230	2	42.2	291	target	10	Kettle	Longstreet	H	word	AGREE	
+9823.230	2	42.2	291	target	11	pelham	Corps	H	word	AGREE	
+9823.230	2	42.2	291	target	15	Javelin	Lee	H	word	AGREE	
+9823.230	2	42.2	291	target	16	pedlar	Cavalry	H	word	AGREE	
+9823.230	2	42.2	291	target	18	passed	Fire	H	word	COLLISION	passed
+9823.230	2	42.2	291	target	20	Carroll	Culpepper	H	word	AGREE	culpeper
+9823.230	2	42.2	291	target	25	Sweden	Join	H	word	AGREE	
+9823.230	2	42.2	291	target	27	tulip	Period	H	punct	NOTSCORED	
+9823.230	2	42.2	291	target	29	Spencer	Information	H	word	AGREE	
+9823.230	2	42.2	291	target	36	to			plain-replaced	CONFLICT	heretofore
+9823.230	2	42.2	291	target	41	yard	Period	I	punct	NOTSCORED	
+9823.230	2	42.2	291	target	47	rabbit	Enemy	H	word	AGREE	
+9823.230	2	42.2	291	target	50	Swimming	Strong	H	word	AGREE	
+9823.230	2	42.2	291	target	52	Negus	Sheridan P H	H	word	AGREE	sher idan
+9823.230	2	42.2	291	target	55	Embrace	General in Chief	H	word	UNFIXED	
+9823.230	2	42.2	291	target	58	lady	H W Halleck	H	word	AGREE	
+9837.257	2	41.3	71	target	0	Elizabeth	10.30 AM (time word)	H	time	UNFIXED	sent i wish the march to be made via albuquerque and as
+9837.257	2	41.3	71	target	1	Fisher	8 (numeral)	H	numeral	AGREE	
+9837.257	2	41.3	71	target	2	Magic	Grant U S	H	word	AGREE	
+9837.257	2	41.3	71	target	3	tulip	Period	H	punct	NOTSCORED	
+9837.257	2	41.3	71	target	4	whim	telegram	C	word	AGREE	
+9837.257	2	41.3	71	target	11	Harding	Smith A.J.	H	word	AGREE	
+9837.257	2	41.3	71	target	13	Black	Cairo	H	word	AGREE	
+9837.257	2	41.3	71	target	15	Flora	Maj Gen W T Sherman	H	word	AGREE	
+9837.257	2	41.3	71	target	20	Whim	telegram	C	word	AGREE	
+9837.257	2	41.3	71	target	27	Lady	H W Halleck	H	word	AGREE	
+9848.277	2	39.2	434	target	0	Helen	2 PM (time word)	H	time	UNFIXED	n ga chap li lexington sejytcmher 31 1861 brig gen a 0
+9848.277	2	39.2	434	target	1	Nelson	20 (numeral)	H	numeral	UNFIXED	n ga chap li lexington sejytcmher 31 1861 brig gen a 0
+9848.277	2	39.2	434	target	2	Brown	1 (numeral)	H	numeral	UNFIXED	n ga chap li lexington sejytcmher 31 1861 brig gen a 0
+9848.277	2	39.2	434	target	3	Chart	Lieut Gen U.S. Grant	H	word	AGREE	
+9848.277	2	39.2	434	target	4	Bridle	City Point	H	word	AGREE	
+9848.277	2	39.2	434	target	5	stick			plain-replaced	CONFLICT	va
+9848.277	2	39.2	434	target	8	Wayne	Regiment	H	word	AGREE	
+9848.277	2	39.2	434	target	9	was			plain-replaced	CONFLICT	avas
+9848.277	2	39.2	434	target	15	John	Imboden	H	word	COLLISION	johnson s
+9848.277	2	39.2	434	target	17	spafford	Island	H	word	AGREE	
+9848.277	2	39.2	434	target	20	shallow	Guard (-ed, -ing)	H	word	AGREE	
+9848.277	2	39.2	434	target	22	sample	Prisoners	H	word	AGREE	j risoners
+9848.277	2	39.2	434	target	26	violet	Rebel	H	word	AGREE	
+9848.277	2	39.2	434	target	30	a			plain-replaced	CONFLICT	canada
+9848.277	2	39.2	434	target	31	day			plain-replaced	CONFLICT	canada
+9848.277	2	39.2	434	target	32	yard	Period	I	punct	NOTSCORED	
+9848.277	2	39.2	434	target	37	Waylands	Regiment	H	word	AGREE	regiments
+9848.277	2	39.2	434	target	45	surgery	Movement	H	word	AGREE	the movements
+9848.277	2	39.2	434	target	47	Negus	Sheridan P H	H	word	AGREE	
+9848.277	2	39.2	434	target	48	Tulip	Period	H	punct	NOTSCORED	
+9848.277	2	39.2	434	target	60	Shylock	In the	H	word	AGREE	
+9848.277	2	39.2	434	target	61	umber	Pursuit	H	word	AGREE	
+9848.277	2	39.2	434	target	62	Talbot	Of the	H	word	AGREE	
+9848.277	2	39.2	434	target	63	Robin	Enemy	H	word	AGREE	
+9848.277	2	39.2	434	target	77	Brimstone	City Point	H	word	AGREE	
+9848.277	2	39.2	434	target	78	Yawl	Signed	H	sig	NOTSCORED	
+9848.277	2	39.2	434	target	79	Embrace	General in Chief	H	word	UNFIXED	
+9898.393	2	43.2	640	target	0	Harriet	1.30 PM (time word)	H	time	UNFIXED	a m maj gen
+9898.393	2	43.2	640	target	1	Mason	18 (numeral)	H	numeral	UNFIXED	a m maj gen
+9898.393	2	43.2	640	target	3	Negus	Sheridan P H	H	word	UNFIXED	a m maj gen
+9898.393	2	43.2	640	target	4	Tulip	Period	H	punct	NOTSCORED	
+9898.393	2	43.2	640	target	6	despatch	McLamores Cove	H	word	UNFIXED	information scouts who left richmond yesterday afternoon state that the day before
+9898.393	2	43.2	640	target	10	Yard	Period	I	punct	NOTSCORED	
+9898.393	2	43.2	640	target	11	Wardens	Scout (-ed, -ing)	H	word	AGREE	scouts
+9898.393	2	43.2	640	target	18	wedlock	Tomorrow	H	word	AGREE	to morrow
+9898.393	2	43.2	640	target	26	Spencer	Information	H	word	AGREE	
+9898.393	2	43.2	640	target	28	Charity	Gordonsville	H	word	AGREE	gordon sville
+9898.393	2	43.2	640	target	33	trifle	Will be	H	word	AGREE	
+9898.393	2	43.2	640	target	36	windham	Signed	H	sig	NOTSCORED	
+9898.393	2	43.2	640	target	37	George	McCallum D C	H	word	UNFIXED	geo k leet captain and assistant adjutant general kernstown va november 18
+9898.393	2	43.2	640	target	38	kay			plain-replaced	CONFLICT	kingsbuby jr assistant
+9898.393	2	43.2	640	target	39	leet			plain-replaced	CONFLICT	kingsbuby jr assistant
+9898.393	2	43.2	640	target	40	asst			plain-replaced	CONFLICT	kingsbuby jr assistant
+9898.393	2	43.2	640	target	41	Basket	Adjutant General	H	word	AGREE	
+9902.402	2	43.2	708	target	0	Julia	4 PM (time word)	H	time	AGREE	
+9902.402	2	43.2	708	target	1	Ogden	30 (numeral)	H	numeral	UNFIXED	p m major general sheridan kernstown
+9902.402	2	43.2	708	target	3	Argus	Potomac	H	word	UNFIXED	p m major general sheridan kernstown
+9902.402	2	43.2	708	target	6	Talbot	Of the	H	word	AGREE	
+9902.402	2	43.2	708	target	7	Dawson	6 (numeral)	H	numeral	AGREE	sixth
+9902.402	2	43.2	708	target	8	Pelton	Corps	H	word	AGREE	
+9902.402	2	43.2	708	target	9	Stephen	Left	H	word	AGREE	
+9902.402	2	43.2	708	target	11	Harry	Washington	C	word	AGREE	
+9902.402	2	43.2	708	target	12	Stanhope	Interrogation	H	punct	NOTSCORED	
+9902.402	2	43.2	708	target	14	Whimper	Telegraph (-ed, -ing)	H	word	AGREE	
+9902.402	2	43.2	708	target	17	Queen	Division	H	word	AGREE	
+9902.402	2	43.2	708	target	20	repeat	Order	C	word	AGREE	
+9902.402	2	43.2	708	target	29	yawl	Signed	H	sig	NOTSCORED	
+9902.402	2	43.2	708	target	30	Lamb	H W Halleck	H	word	AGREE	
+9910.424	2	45.2	75	target	0	Rosetta	9 PM (time word)	H	time	UNFIXED	that can properly go they had probably better be sent to louisville
+9910.424	2	45.2	75	target	1	crowd	Lieut Gen U.S. Grant	H	word	AGREE	
+9910.424	2	45.2	75	target	4	nuisance	Thomas Geo H	H	word	PARTIAL	
+9910.424	2	45.2	75	target	7	prospect	Command (-ed, -ing)	H	word	AGREE	
+9910.424	2	45.2	75	target	10	repeat	Order	C	word	AGREE	
+9910.424	2	45.2	75	target	11	pike	Comma	H	punct	NOTSCORED	
+9910.424	2	45.2	75	target	13	Brown	1 (numeral)	H	numeral	AGREE	one
+9910.424	2	45.2	75	target	27	brown	1 (numeral)	H	numeral	AGREE	one
+9910.424	2	45.2	75	target	36	niggard	Thomas Geo H	H	word	PARTIAL	removal
+9910.424	2	45.2	75	target	37	removed			plain-replaced	CONFLICT	removal
+9910.424	2	45.2	75	target	38	comet	Maj Genl H W Halleck	H	word	AGREE	
+9961.531	2	49.1	742	target	0	Helen	2 PM (time word)	H	time	UNFIXED	department of kentucky headquarters at louisville maj g m bascom assistant adjutant
+9961.531	2	49.1	742	target	1	Mason	18 (numeral)	H	numeral	AGREE	
+9961.531	2	49.1	742	target	3	Mastiff	Canby Ed R S	H	word	UNFIXED	1865 brig gen w d whipple assistant adjutant general in obedience to
+9961.531	2	49.1	742	target	4	tulip	Period	H	punct	NOTSCORED	
+9961.531	2	49.1	742	target	15	savory	From the	H	word	AGREE	
+9961.531	2	49.1	742	target	18	Galway	Mobile	H	word	AGREE	
+9961.531	2	49.1	742	target	25	wayworn	Transportation	H	word	AGREE	
+9961.531	2	49.1	742	target	26	yard	Period	I	punct	NOTSCORED	
+9961.531	2	49.1	742	target	27	your			plain-replaced	CONFLICT	yoi
+9961.531	2	49.1	742	target	28	rusty	Forage (-ed, -ing)	H	word	AGREE	
+9961.531	2	49.1	742	target	32	Agnew	Mississippi	H	word	AGREE	
+9961.531	2	49.1	742	target	38	Ginger	New Orleans	H	word	AGREE	ne
+9961.531	2	49.1	742	target	45	wiley	Signature	H	sig	NOTSCORED	
+9961.531	2	49.1	742	target	46	Buggy	Quarter[?] Master General	H	word	UNFIXED	horses shall always be groomed except in dormy weather condition of transportation
+10010.593	2	46.3	1161	target	0	Rosetta	9 PM (time word)	H	time	UNFIXED	military division and assigning him to general command west of the mississippi
+10010.593	2	46.3	1161	target	1	lady	H W Halleck	H	word	AGREE	
+10010.593	2	46.3	1161	target	2	yacht	Period	H	punct	NOTSCORED	
+10010.593	2	46.3	1161	target	3	Madrid	Grant U S	H	word	AGREE	
+10010.593	2	46.3	1161	target	12	tulip	Period	H	punct	NOTSCORED	
+10010.593	2	46.3	1161	target	20	beat			plain-replaced	CONFLICT	be
+10010.593	2	46.3	1161	target	22	Hotel	Weldon	H	word	COLLISION	a hotel
+10010.593	2	46.3	1161	target	31	pot			plain-replaced	CONFLICT	private
+10010.593	2	46.3	1161	target	33	yard	Period	I	punct	NOTSCORED	
+10010.593	2	46.3	1161	target	48	write			plain-replaced	CONFLICT	invite
+10010.593	2	46.3	1161	target	58	Costume	Secretary of War	H	word	AGREE	
+10027.622	2	48.2	713	target	0	Hunter	Washington	H	word	AGREE	
+10027.622	2	48.2	713	target	1	Luke	June	H	word	AGREE	
+10027.622	2	48.2	713	target	2	Brown	1 (numeral)	H	numeral	CONFLICT	i 1865
+10027.622	2	48.2	713	target	3	Elizabeth	10.30 AM (time word)	H	time	AGREE	
+10027.622	2	48.2	713	target	5	Farmer	Maj Gen E R S Canby	H	word	AGREE	
+10027.622	2	48.2	713	target	6	yacht	Period	H	punct	NOTSCORED	
+10027.622	2	48.2	713	target	13	Berlin	Mississippi	H	word	AGREE	
+10027.622	2	48.2	713	target	18	Quotient	Department	H	word	AGREE	depart ment
+10027.622	2	48.2	713	target	19	Tulip	Period	H	punct	NOTSCORED	
+10027.622	2	48.2	713	target	22	as			plain-replaced	CONFLICT	assign
+10027.622	2	48.2	713	target	30	prospect	Command (-ed, -ing)	H	word	AGREE	
+10027.622	2	48.2	713	target	34	chart	Lieut Gen U.S. Grant	H	word	AGREE	

@@ -1806,3 +1806,5 @@ route-page reading of "Yard".
 | reswindling | removing | I | N2-B: "re" + Swindling (Swindle = Move, p.22 l.22 L); OR I/34 pt 3 p.331 "removing General Banks" |
 | whim | telegram | C | N2-B "Your whim of 10.30": OR I/34 pt 3 p.331 "Your telegram of 10.30 a. m."; the ledger uses "whims" the same way on page 9 (15 Feb 1864) |
 | Chumb | Maj Gen N P Banks | M | N2-B; the book's word is Cherub (p.13 l.25 R) or Lapland (p.18 l.3 L); the clerk wrote "Chumb"; OR "General Banks" |
+| Harry | Washington | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9902.402 (30 Nov 1864, to Sheridan) "Left for Harry [?]" = OR I/43 pt 2 p.708 (OCR running head) "left for Washington"; the book gives Huron/Hang = Washington (p.16 l.18); one witness, conditional on the volunteer transcription |
+| author | Chattahoochee | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9680.31 (27 Feb 1864, to Grant) "North of author River" = OR I/32 pt 2 p.478 (OCR running head) "north of the Chattahoochee River"; one witness, conditional on the volunteer transcription |

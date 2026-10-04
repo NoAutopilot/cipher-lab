@@ -1292,3 +1292,4 @@ printed in mssEC 41, with the grade the evidence allows.
 | Nansy | south | C | OR I/41 pt 4 p.294, "driven south of Fort Scott" = E17; written "Nansy", probably the clerk's slip for Waxy = South |
 | mangled | telegraphed | C | OR I/37 pt 1 p.525 = E9, "General Grant telegraphed last evening"; both passes read "mangled", a slip for "wrangled" |
 | Brenton | (Assistant) Secretary of the Navy, the tail "Asst Brenton Fox" = Asst. Sec. G. V. Fox | M | E4; Butler's reply to Fox, OR I/33 p.279, fixes the correspondent but not the word |
+| Handle | Maj Gen J. B. Hood (Confederate) | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9864.317 (13 Oct 1864, to Schofield) "meet any forces that Handle may send North" = OR I/39 pt 3 p.249 (OCR running head) "any forces that Hood may send north"; one witness, conditional on the volunteer transcription |

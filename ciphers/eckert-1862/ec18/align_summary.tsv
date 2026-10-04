@@ -1,0 +1,12 @@
+statistic	value
+entries	26
+keyed_word_tokens_scored	281
+target_agree	209/281 = 0.744
+target_conflict	4
+target_unfixed	52
+target_partial	7
+target_collision	9
+control_agree	48/281 = 0.171
+entries_target_rate_above_control	26/26
+numerals_agree	12/37
+grades_after_all_tokens	H 156, C 221, I 6, M 0
