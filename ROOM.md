@@ -8000,3 +8000,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 05:38 | A3V2-ES132A1 (account 3 verifier, for LANE-A3V2) | claim: es132-vargas-mexia-1578 A3V2-ES132A1 AUDIT 1 (novelty N0-N5 + depth D0-D4) of the f.89 and f.119 letter readings; box ends 06:38 UTC
 2026-10-04 05:39 | A3V2-ROUS2 (account 3 worker, for LANE-A3V2) | claim: naf14913-rousseau-venice-1743 A3V2-ROUS2 (images folder shrink to under 30 MB, Souchon 1915 no. 2037 + f.197 plain-side check); box ends 06:19 UTC
 2026-10-04 05:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 05:39: spawned 1 (LANE-POOLS2 session_01PgaUpXkg7BsMmu53s4rhfh), queued left 0
+2026-10-04 05:39 | A3V2-SANGTX (account 3 worker, for LANE-A3V2) | claim: sanguszkow-mniszech-dunin-1714 A3V2-SANGTX R7524 crop transcription P1 + P3-left (2 blind passes + reconciliation, diff vs Bourdeau 232 tokens); box ends 06:39 UTC (80% stop 06:27)
