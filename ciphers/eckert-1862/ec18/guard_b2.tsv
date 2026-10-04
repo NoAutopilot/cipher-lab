@@ -1,0 +1,441 @@
+id	word_index	code_word	meaning	rule
+9668.3	6	Benjamin	Secretary of Navy	B
+9668.3	7	Saint	Force	B
+9669.4	37	desired	Lookout Valley	B
+9670.7	14	Harpers	Trenton	B
+9670.7	19	subject	Protect	B
+9672.11	6	wick	South	J
+9673.14	44	battle	Maj Gen H W Halleck	B
+9674.16	23	rank	Has been sent	B
+9676.22	25	collected	Harrison	B
+9678.28	42	John	Imboden	B
+9678.28	51	John	Imboden	B
+9681.32	33	desire	Lookout Valley	B
+9683.36	83	staff	Station	B
+9685.41	15	author	Chattahoochee	B
+9686.43	44	respect	Mask	B
+9687.45	31	desires	Lookout Valley	B
+9687.45	59	opinion	Field	B
+9687.46	53	Fulton	Potter E E	B
+9687.46	60	subject	Protect	B
+9688.48	44	Ridge	Equipment	B
+9688.48	118	Black	Cairo	B
+9688.48	245	collecting	Harrison	B
+9688.48	250	Chester	Culpepper	B
+9690.49	72	collected	Harrison	B
+9691.51	20	learned	Design	B
+9691.52	73	desired	Lookout Valley	B
+9692.53	42	subject	Protect	B
+9692.53	81	Staff	Station	B
+9693.54	79	subject	Protect	B
+9693.54	129	Gallant	Across	B
+9694.56	18	United	Re-enforce (-ed, -ing)	B
+9694.56	33	Annapolis	Carr	B
+9695.57	115	Annapolis	Carr	B
+9697.61	71	business	Browns Ferry	B
+9698.62	51	learn	Design	B
+9703.69	170	shelter	Helping	B
+9709.70	55	Washington	Wounded	B
+9710.71	78	hasten	Assault	B
+9710.71	267	hasten	Assault	B
+9710.71	468	John	Imboden	B
+9715.73	41	United	Re-enforce (-ed, -ing)	B
+9715.73	214	presumed	Hotly [?]	B
+9715.73	340	drilled	Larkinsville	B
+9718.75	9	Fox	McMinnville	B
+9720.76	328	King	Marmaduke	J
+9724.78	66	Sulphur	Junction	B
+9724.78	182	Staff	Station	B
+9728.82	34	Sandy	Feint	B
+9729.85	48	subject	Protect	B
+9734.96	64	Shelter	Helping	B
+9734.96	72	Ridge	Equipment	B
+9734.96	78	respect	Mask	B
+9735.98	33	John	Imboden	B
+9736.100	104	Lock	Dix Jno A	J
+9737.101	54	Falmouth	Osterhaus J P	B
+9738.104	28	collect	Harrison	B
+9738.104	49	substance	Should have been	B
+9739.105	25	desire	Lookout Valley	B
+9740.106	89	ridge	Equipment	B
+9740.107	66	planting	Communicate (-ed, -ing) [#]	B
+9740.107	168	ridge	Equipment	B
+9743.109	32	Pickets	Demoralize (-ed, -ing)	B
+9744.112	38	White	South	B
+9744.112	128	dispute	Shellmound	B
+9745.113	114	pass	Fire	J
+9745.113	118	learn	Design	B
+9746.114	29	federal	Conasauga River	B
+9746.114	43	flood	Duck Creek	B
+9746.114	45	Washington	Wounded	B
+9746.115	19	Mud	Rosecrans W S	B
+9747.116	52	presume	Hotly [?]	B
+9747.116	96	white	South	B
+9748.117	11	White	South	B
+9749.118	64	presumed	Hotly [?]	B
+9750.119	13	White	South	B
+9750.119	26	Bermuda	Virginia	B
+9751.121	30	Benjamin	Secretary of Navy	B
+9752.122	21	White	South	B
+9752.122	33	presume	Hotly [?]	B
+9753.125	3	Submit	Progress	B
+9753.125	8	Washington	Wounded	B
+9753.125	25	Shelter	Helping	B
+9753.125	76	White	South	B
+9754.126	23	drill	Larkinsville	B
+9755.127	51	rebellion	Importance	B
+9757.129	18	desire	Lookout Valley	B
+9757.129	36	rank	Has been sent	B
+9759.131	11	Subject	Protect	B
+9761.133	18	telegraph	Withdraw	B
+9761.133	32	express	Tyners Station	B
+9763.136	72	powder	Heights	B
+9764.138	20	collect	Harrison	B
+9765.139	20	whack	Troops	J
+9767.143	39	presume	Hotly [?]	B
+9768.144	14	ordnance	After the	B
+9768.144	15	business	Browns Ferry	B
+9768.145	18	respect	Mask	B
+9769.146	19	Guns	Maj Gen J G Foster	B
+9770.149	7	Carroll	Culpepper	B
+9771.150	11	Jackson	Spears J.G.	B
+9772.152	2	John	Imboden	B
+9772.152	83	telegraph	Withdraw	B
+9773.153	21	learn	Design	B
+9773.153	33	telegraph	Withdraw	B
+9773.153	46	learn	Design	B
+9777.156	7	opinion	Field	B
+9777.157	71	Shelby	Harbor	B
+9777.157	130	collected	Harrison	B
+9777.157	155	collecting	Harrison	B
+9778.158	38	united	Re-enforce (-ed, -ing)	B
+9778.158	41	America	Chickamunga [sic]	B
+9778.159	18	drilled	Larkinsville	B
+9779.160	15	respect	Mask	B
+9780.161	44	George	McCallum D C	J
+9780.162	29	passed	Fire	B
+9782.166	14	Wallace	River	B
+9784.168	25	question	Defend (-ed, -ing) [#]	B
+9784.168	229	passing	Fire	B
+9785.169	39	passing	Fire	B
+9787.170	65	Ridge	Equipment	B
+9788.171	46	battle	Maj Gen H W Halleck	B
+9790.173	6	ridge	Equipment	B
+9791.174	33	ridge	Equipment	B
+9791.175	73	close	Eastport	B
+9791.175	83	passed	Fire	B
+9794.177	329	passed	Fire	B
+9797.179	88	rank	Has been sent	B
+9798.181	7	learned	Design	B
+9798.182	8	opinion	Field	B
+9799.184	5	Barnard	President of U.S.	B
+9801.189	12	desires	Lookout Valley	B
+9802.191	13	Shelter	Helping	B
+9802.191	70	rank	Has been sent	B
+9802.192	38	Chester	Culpepper	B
+9805.196	11	Ridge	Equipment	B
+9805.196	29	presumed	Hotly [?]	B
+9805.196	184	presume	Hotly [?]	B
+9807.200	48	presume	Hotly [?]	B
+9807.200	134	opinion	Field	B
+9807.200	149	presume	Hotly [?]	B
+9807.200	164	endeavor	Tuckers Station	B
+9808.201	7	Picketed	Demoralize (-ed, -ing)	B
+9809.203	104	concerned	Gordons Mill	B
+9809.203	312	shelter	Helping	B
+9809.203	316	ridge	Equipment	B
+9809.203	322	Yankees	Thursday	B
+9809.203	344	watched	Scatter (-ed, -ing)	B
+9809.203	355	Yankee	Thursday	B
+9812.209	7	desired	Lookout Valley	B
+9812.209	66	telegraph	Withdraw	B
+9815.213	44	Shelby	Harbor	B
+9819.223	64	watch	Scatter (-ed, -ing)	J
+9820.224	68	business	Browns Ferry	B
+9820.225	14	subject	Protect	B
+9822.229	12	respect	Mask	B
+9822.229	206	respect	Mask	B
+9823.230	18	passed	Fire	B
+9823.231	24	passed	Fire	B
+9823.232	42	watched	Scatter (-ed, -ing)	B
+9824.233	9	express	Tyners Station	B
+9826.237	218	torch	Pursue (-ed, -ing)	B
+9829.242	22	Fox	McMinnville	B
+9829.242	29	Fox	McMinnville	B
+9829.242	35	subject	Protect	B
+9830.243	39	Watch	Scatter (-ed, -ing)	B
+9831.245	57	bearing	Bridgeport	B
+9833.250	25	passing	Fire	B
+9833.250	41	passing	Fire	B
+9835.253	15	watch	Scatter (-ed, -ing)	B
+9836.254	10	Jackson	Spears J.G.	B
+9838.258	78	ridge	Equipment	B
+9840.260	34	Mud	Rosecrans W S	B
+9840.260	41	Mud	Rosecrans W S	B
+9841.263	7	shoals	Harass (-ed, -ing)	B
+9841.263	27	bear	Bridgeport	B
+9842.266	45	George	McCallum D C	J
+9842.266	70	close	Eastport	B
+9842.266	147	substance	Should have been	B
+9843.269	43	John	Imboden	B
+9844.270	11	subjects	Protect	B
+9844.271	1	Benjamin	Secretary of Navy	B
+9848.277	15	John	Imboden	J
+9848.278	3	Woodbury	Monday	B
+9848.278	83	opinion	Field	B
+9849.282	34	hastened	Assault	B
+9850.284	9	rank	Has been sent	B
+9852.290	13	Shelby	Harbor	B
+9854.292	23	Learning	Design	B
+9854.292	28	suffering	Produce	B
+9854.292	78	business	Browns Ferry	B
+9854.293	11	Shelby	Harbor	B
+9854.293	12	Stephen	Left	J
+9855.294	27	collected	Harrison	B
+9856.296	131	passed	Fire	B
+9857.298	51	hasten	Assault	B
+9858.301	48	Fox	McMinnville	B
+9859.303	17	Washington	Wounded	B
+9859.304	20	Wilsons	Drove in our Pickets	B
+9860.308	49	squadron	North	B
+9861.310	11	Sandy	Feint	B
+9862.312	54	measures	Engage	B
+9863.313	17	white	South	B
+9863.313	62	Fox	McMinnville	B
+9865.318	26	King	Marmaduke	B
+9865.318	52	collect	Harrison	B
+9865.318	98	Shelter	Helping	B
+9865.318	104	ordnance	After the	B
+9865.319	5	substance	Should have been	B
+9865.319	34	Shannon	Gap	J
+9866.320	11	marks	July	B
+9867.323	66	respect	Mask	B
+9867.324	24	Shelby	Harbor	B
+9867.324	43	Cedar	Elizabeth City	B
+9867.324	46	planted	Communicate (-ed, -ing) [#]	B
+9867.324	96	staff	Station	B
+9867.324	99	Shelby	Harbor	B
+9867.324	112	ridge	Equipment	B
+9867.324	117	Cedar	Elizabeth City	B
+9869.327	11	Taylor	Outpost	B
+9869.330	45	Shelby	Harbor	B
+9871.335	14	Columbia	Clarksburg	B
+9872.337	133	desire	Lookout Valley	B
+9873.338	21	Drill	Larkinsville	B
+9873.340	7	manifest	Execute (struck: Manifest, written Execute)	B
+9873.340	23	collected	Harrison	B
+9873.340	52	collected	Harrison	B
+9875.344	68	Question	Defend (-ed, -ing) [#]	B
+9875.344	73	staff	Station	B
+9875.344	80	rank	Has been sent	B
+9875.344	100	Question	Defend (-ed, -ing) [#]	B
+9876.346	74	reward	Follow (-ed, -ing) [#]	B
+9876.346	81	question	Defend (-ed, -ing) [#]	B
+9880.359	26	Shelter	Helping	B
+9880.359	30	spring	In the mean time [?]	J
+9880.359	36	John	Imboden	B
+9883.363	54	Drill	Larkinsville	B
+9885.368	18	summit	Marine	B
+9886.371	8	Staff	Station	B
+9886.371	10	John	Imboden	B
+9888.375	49	Madrid	Grant U S	B
+9889.376	47	Madrid	Grant U S	B
+9890.380	87	learn	Design	B
+9890.380	163	learn	Design	B
+9890.380	207	collect	Harrison	B
+9892.381	57	opinion	Field	B
+9892.381	100	subject	Protect	B
+9892.382	30	Kings	Marmaduke	B
+9893.383	18	collect	Harrison	B
+9893.383	64	collected	Harrison	B
+9894.385	29	question	Defend (-ed, -ing) [#]	B
+9894.385	99	close	Eastport	J
+9895.386	32	close	Eastport	J
+9895.386	42	bearing	Bridgeport	B
+9896.388	10	Shelby	Harbor	B
+9896.388	63	desire	Lookout Valley	B
+9896.389	38	desires	Lookout Valley	B
+9897.390	25	John	Imboden	B
+9898.394	17	George	McCallum D C	J
+9899.395	89	John	Imboden	B
+9899.395	101	suffering	Produce	B
+9900.397	19	subject	Protect	B
+9902.403	43	subject	Protect	B
+9902.404	38	Mud	Rosecrans W S	B
+9903.405	34	Fox	McMinnville	B
+9904.408	11	Shelter	Helping	B
+9904.408	19	passes	Fire	B
+9906.414	32	Shelter	Helping	B
+9911.425	19	Ridge	Equipment	B
+9912.428	48	closed	Eastport	B
+9913.429	34	Relay	Effect (-ed, -ing) [#]	B
+9914.431	50	expressed	Tyners Station	B
+9914.431	125	Staff	Station	B
+9915.433	12	collected	Harrison	B
+9915.433	77	subject	Protect	B
+9918.439	73	passed	Fire	B
+9919.442	22	concerning	Gordons Mill	B
+9920.444	38	submit	Progress	B
+9920.445	42	Shelter	Helping	B
+9920.445	117	Ridge	Equipment	B
+9920.445	160	gallant	Across	B
+9920.445	214	desire	Lookout Valley	B
+9922.448	40	Fox	McMinnville	B
+9923.451	3	shelter	Helping	B
+9923.451	30	gallant	Across	B
+9925.453	23	collected	Harrison	B
+9927.455	46	flag	Acton [sic, ? Action]	B
+9928.457	35	fox	McMinnville	B
+9928.459	7	Webster	Surrounding	B
+9929.461	54	business	Browns Ferry	B
+9930.463	17	belmont	Dodge	B
+9931.468	34	rain	March	B
+9932.470	20	Shelter	Helping	B
+9933.471	43	regret	Mass	B
+9933.471	90	endeavor	Tuckers Station	B
+9935.474	12	flag	Acton [sic, ? Action]	B
+9935.475	35	Annapolis	Carr	B
+9935.475	53	close	Eastport	B
+9935.475	78	pass	Fire	J
+9937.479	33	collect	Harrison	B
+9937.479	56	John	Imboden	B
+9938.482	26	white	South	B
+9939.485	25	snow	Intercept (-ed, -ing)	B
+9941.490	16	Webster	Surrounding	B
+9943.495	33	Staff	Station	B
+9944.497	52	powder	Heights	B
+9945.500	58	ashland	Neuse	B
+9946.501	58	Staff	Station	B
+9946.502	36	Richard	Embark (-ed, -ing)	B
+9948.506	37	measures	Engage	B
+9949.509	85	presume	Hotly [?]	B
+9949.509	138	passed	Fire	B
+9950.511	33	Washington	Wounded	B
+9951.514	7	dodge	Lafayette	B
+9954.519	70	Shelter	Helping	B
+9954.519	98	subject	Protect	B
+9954.520	19	Annapolis	Carr	B
+9957.526	12	America	Chickamunga [sic]	B
+9958.527	12	snow	Intercept (-ed, -ing)	B
+9958.527	41	learn	Design	B
+9959.529	7	learned	Design	B
+9959.529	128	Black	Cairo	J
+9960.530	33	oats	Abandon (-ed, -ing)	B
+9962.534	36	submit	Progress	B
+9963.535	14	white	South	B
+9965.539	40	John	Imboden	B
+9966.542	66	guns	Maj Gen J G Foster	B
+9966.542	495	question	Defend (-ed, -ing) [#]	B
+9969.543	194	learn	Design	B
+9970.544	58	respect	Mask	B
+9973.548	9	respect	Mask	B
+9973.548	38	subject	Protect	B
+9974.549	34	Warwick	Recruit	B
+9974.549	74	subject	Protect	B
+9974.549	125	Warwick	Recruit	B
+9974.549	153	Warwick	Recruit	B
+9974.549	187	subject	Protect	B
+9977.554	34	subject	Protect	B
+9978.555	26	learn	Design	B
+9982.560	44	respect	Mask	B
+9983.561	83	Bear	Bridgeport	B
+9983.561	158	desired	Lookout Valley	B
+9984.562	78	opinion	Field	B
+9987.566	14	learn	Design	B
+9989.568	3	Shelter	Helping	B
+9989.568	53	measures	Engage	B
+9989.569	52	manifested	Execute (struck: Manifest, written Execute)	B
+9989.569	127	desire	Lookout Valley	B
+9989.569	182	Madrid	Grant U S	B
+9989.569	237	Carroll	Culpepper	B
+9991.570	116	confederate	Kellys " [ditto = Ferry]	B
+9991.570	134	staff	Station	B
+9991.571	6	Campbell	Harker	B
+9991.571	206	subject	Protect	B
+9993.572	25	desire	Lookout Valley	B
+9993.572	117	Shelter	Helping	B
+9993.572	124	John	Imboden	B
+9993.572	217	Louisville	Turchin J B	B
+9993.572	226	shelter	Helping	B
+9995.573	58	hang	Washington	B
+9998.576	3	John	Imboden	B
+9998.576	51	John	Imboden	B
+9998.576	88	hasten	Assault	B
+9998.576	106	humble	Attempt	B
+9998.576	482	trade	Picket (-ed, -ing)	B
+10001.577	115	interest	Captain	B
+10003.579	21	Washington	Wounded	B
+10003.580	32	close	Eastport	J
+10004.581	45	respect	Mask	B
+10004.581	47	reward	Follow (-ed, -ing) [#]	B
+10004.581	57	reward	Follow (-ed, -ing) [#]	B
+10004.581	145	reward	Follow (-ed, -ing) [#]	B
+10005.583	30	King	Marmaduke	B
+10005.584	19	John	Imboden	B
+10005.584	59	close	Eastport	B
+10008.589	70	Brandy	Charlottsville [sic]	B
+10008.589	78	Galena	Milledgeville	B
+10009.591	134	John	Imboden	B
+10010.594	21	Shelby	Harbor	B
+10010.594	64	ridge	Equipment	B
+10012.597	6	white	South	B
+10014.600	7	children	Grenada	B
+10015.602	38	negroes	Steidman [sic] J B	B
+10016.603	14	John	Imboden	B
+10017.605	38	measures	Engage	B
+10023.617	16	respects	Mask	B
+10023.617	49	express	Tyners Station	B
+10029.627	1	Battle	Maj Gen H W Halleck	B
+10030.629	17	measures	Engage	B
+10030.629	59	respect	Mask	B
+10031.632	25	John	Imboden	B
+10031.632	32	staff	Station	B
+10032.633	30	rank	Has been sent	B
+10032.634	129	regret	Mass	B
+10034.635	4	Shelter	Helping	B
+10037.637	32	watch	Scatter (-ed, -ing)	B
+10037.637	54	disbursing	Pealers Mill	B
+10037.637	121	United	Re-enforce (-ed, -ing)	B
+10037.637	123	disbursing	Pealers Mill	B
+10037.637	155	disbursing	Pealers Mill	B
+10037.637	196	disbursing	Pealers Mill	B
+10037.637	247	Washington	Wounded	B
+10037.637	322	confederate	Kellys " [ditto = Ferry]	B
+10037.637	432	respect	Mask	B
+10040.638	41	desire	Lookout Valley	B
+10041.640	193	measures	Engage	B
+10041.640	260	desire	Lookout Valley	B
+10041.640	356	desire	Lookout Valley	B
+10043.641	30	close	Eastport	J
+10043.642	48	bearing	Bridgeport	B
+10046.645	41	business	Browns Ferry	B
+10047.647	33	John	Imboden	B
+10047.647	76	ashland	Neuse	B
+10047.647	79	desire	Lookout Valley	B
+10048.648	18	Washington	Wounded	B
+10048.649	44	united	Re-enforce (-ed, -ing)	B
+10048.649	133	negro	Steidman [sic] J B	B
+10048.649	311	confess	Graysville Station	B
+10048.649	343	reward	Follow (-ed, -ing) [#]	B
+10048.649	616	subject	Protect	B
+10053.650	41	King	Marmaduke	B
+10053.650	119	clear	Chickamauga Hill	B
+10053.650	142	desire	Lookout Valley	B
+10053.650	147	reward	Follow (-ed, -ing) [#]	B
+10055.653	34	close	Eastport	J
+10055.653	39	Jackson	Spears J.G.	B
+10055.653	82	Shelby	Harbor	B
+10055.653	98	Shelter	Helping	B
+10058.658	50	John	Imboden	B
+10058.658	153	Bishop	Atlanta	B
+10058.658	231	clear	Chickamauga Hill	B
+10058.658	298	questions	Defend (-ed, -ing) [#]	B
+10058.658	429	questions	Defend (-ed, -ing) [#]	B
+10061.659	23	close	Eastport	B
+10061.659	24	watch	Scatter (-ed, -ing)	B
+10061.660	35	concerning	Gordons Mill	B
+10062.661	93	John	Imboden	B
+10062.661	100	desires	Lookout Valley	B
+10064.665	13	questions	Defend (-ed, -ing) [#]	B
+10065.666	7	John	Imboden	B
+10065.666	13	learn	Design	B
