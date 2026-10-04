@@ -19,7 +19,7 @@ async function open(b, vp, opts) {
   await page.goto(PAGE); await page.waitForTimeout((opts && opts.connectMs || 600) + 400); return { ctx, store, page, errs };
 }
 const focusSids = page => page.evaluate(() => [...document.querySelectorAll('#focusTiles > div')].map(d => d.dataset.sid));
-const bracketVisible = (page, cid = 'ctxC') => page.evaluate(cid => { const c = document.getElementById(cid), cv = c.parentElement, sid = cid === 'ctxC' ? ctxSid : s2Cur, it = itemBySid[sid], [x, , w] = it.b;
+const bracketVisible = (page, cid = 'ctxC') => page.evaluate(cid => { const c = document.getElementById(cid), cv = c.parentElement, sid = cid === 'ctxC' ? ctxSid : s2Cur, it = itemBySid[sid], [x, , w] = it.b.map(v => v * (DATA.pageScale || 1));
   const im = pageImgs[it.p], x0 = Math.max(0, x - 180), x1 = Math.min(im.naturalWidth, x + w + 180), css = c.getBoundingClientRect().width;
   const mid = ((x - x0) + w / 2) * css / (x1 - x0); return mid >= cv.scrollLeft && mid <= cv.scrollLeft + cv.clientWidth; }, cid);
 // a pile with enough tiles to work on, not settled, from the original piles

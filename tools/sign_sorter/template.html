@@ -252,7 +252,7 @@ const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_'
 const domKey = id => id.replace(/[^a-z0-9-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
 const $ = id => document.getElementById(id);
-const imgSrc = sid => 'data:image/png;base64,' + itemBySid[sid].img;
+const imgSrc = sid => 'data:' + (DATA.tileMime || 'image/png') + ';base64,' + itemBySid[sid].img;
 
 // New piles are named by the page (owner: "I don't want to add names"): the pile the tile came from plus -b, -c, ...
 function nextPileName(from){
@@ -683,12 +683,12 @@ function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:i
 // draw a tile's line into canvas c; alive() says whether that tile is still the one wanted (a late page image must not
 // paint over the tile now shown). Phone: zoom 3 fits the line to the width and the zoom scales from there.
 function drawLine(sid, c, z, alive){
-  const it = itemBySid[sid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
+  const it = itemBySid[sid]; const ps = DATA.pageScale || 1; const [x, y, w, h] = it.b.map(v => v * ps); const im = pageImg(it.p);
   const draw = () => {
     if (!alive()) return;
     // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
     // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
-    const halfW = Math.round(w / 2 + Math.max(w * 0.6, 2400 / Math.pow(1.8, z - 1))), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
+    const halfW = Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1))), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
     const y0 = Math.max(0, y - padY), y1 = Math.min(im.naturalHeight, y + h + padY);

@@ -34,6 +34,18 @@ with tempfile.TemporaryDirectory() as d:
     check('oddness present', all('d' in it for p in data['piles'] for it in p['items']))
     check('page image embedded', 'p1' in data['pages'])
     html = ss.render(data, 'Test <Sorter>', 'Lede & more')
+    # --- N4-NXS (4 Oct 2026): size options for long letters ---
+    import base64, io
+    small = ss.build(str(d / 'signs.tsv'), str(d / 'labels.tsv'), str(d / 'pages'), str(d / 'marks.tsv'),
+                     thumb=32, tile_q=50, page_scale=0.5, page_q=40)
+    t = base64.b64decode(small['piles'][0]['items'][0]['img'])
+    pg = Image.open(io.BytesIO(base64.b64decode(small['pages']['p1'])))
+    check('size options: JPEG tiles <= 32 px, page halved, mime and scale recorded',
+          t[:2] == b'\xff\xd8' and max(Image.open(io.BytesIO(t)).size) <= 32 and pg.size == (100, 50)
+          and small['tileMime'] == 'image/jpeg' and small['pageScale'] == 0.5
+          and small['piles'][0]['items'][0]['b'] == next(p for p in data['piles'] if p['id'] == small['piles'][0]['id'])['items'][0]['b'])
+    check('defaults unchanged: PNG tiles, full-size page', data['tileMime'] == 'image/png' and data['pageScale'] == 1.0
+          and base64.b64decode(data['piles'][0]['items'][0]['img'])[:4] == b'\x89PNG')
     check('placeholders filled and escaped', '__DATA__' not in html and '__TITLE__' not in html and '__LEDE__' not in html
           and 'Test &lt;Sorter&gt;' in html and 'Lede &amp; more' in html)
     # --- TX-SORTER (3 Oct 2026): clusters, rank box, confusion fallback ---

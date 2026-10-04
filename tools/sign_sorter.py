@@ -57,6 +57,10 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
   Must NOT be read as: a probability that the label is wrong, or a decode score. The confusion score is a triage
   order; only a lattice score (--rank) speaks for the reading, and even that ranks, it does not grade.
 
+Size (N4-NXS, 4 Oct 2026): the page embeds every tile and every page image, so a long letter overruns the Artifact's
+16 MB (Noailles c510-516, 9,863 tiles: 92 MB at the defaults). --thumb, --tile-quality (greyscale JPEG tiles) and --page-scale /
+--page-quality (smaller context images; the page scales the boxes by DATA.pageScale) bring it down; the build prints the size.
+
 Never feed it restricted material (a holder's scans under RESTRICTED.md): the page carries the images.
 """
 import argparse, base64, csv, io, json, math, os, sys
@@ -83,7 +87,7 @@ def read_clusters(path):
     return out
 
 
-def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None):
+def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None, tile_q=None, page_scale=1.0, page_q=82):
     from PIL import Image, ImageOps
     signs = {r['sid']: r for r in tsv(signs_p)}
     labels = tsv(labels_p)
@@ -129,7 +133,9 @@ def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None):
         mu = sum(v) / len(v); sd = math.sqrt(sum((a - mu) ** 2 for a in v) / len(v)) or 1
         vecs[r['sid']] = [(a - mu) / sd for a in v]
         c.thumbnail((thumb, thumb), Image.LANCZOS)
-        buf = io.BytesIO(); c.save(buf, 'PNG', optimize=True)
+        buf = io.BytesIO()
+        if tile_q: c.save(buf, 'JPEG', quality=tile_q, optimize=True)
+        else: c.save(buf, 'PNG', optimize=True)
         item = {'sid': r['sid'], 'img': base64.b64encode(buf.getvalue()).decode(), 'p': p, 'b': [x0, y0, x1 - x0, y1 - y0]}
         cid = (clusters or {}).get(r['sid']) or r.get('cluster')
         if cid:
@@ -155,10 +161,13 @@ def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None):
     page_img = {}
     for p, im in pages.items():
         if im is None: continue
-        buf = io.BytesIO(); im.save(buf, 'JPEG', quality=82, optimize=True)
+        if page_scale != 1.0:
+            im = im.resize((max(1, round(im.width * page_scale)), max(1, round(im.height * page_scale))), Image.LANCZOS)
+        buf = io.BytesIO(); im.save(buf, 'JPEG', quality=page_q, optimize=True)
         page_img[p] = base64.b64encode(buf.getvalue()).decode()
     return {'piles': [{'id': k, 'family': fam[k], 'items': v, 'near': near.get(k, [])} for k, v in piles.items()],
-            'skipped': len(skipped), 'pages': page_img, '_vecs': vecs}
+            'skipped': len(skipped), 'pages': page_img, '_vecs': vecs,
+            'tileMime': 'image/jpeg' if tile_q else 'image/png', 'pageScale': page_scale}
 
 
 def auto_clusters(data, k, seed=7):
@@ -353,6 +362,10 @@ def main(argv=None):
                     'Settle the alphabet: which piles are one sign, which tiles sit in the wrong pile, and which '
                     'marks are not letters at all.')
     ap.add_argument('--data-out')
+    ap.add_argument('--thumb', type=int, default=96, help='tile thumbnail size in px (default 96)')
+    ap.add_argument('--tile-quality', type=int, help='store tiles as greyscale JPEG at this quality (default: PNG); for large letters')
+    ap.add_argument('--page-scale', type=float, default=1.0, help='scale the embedded context page images (boxes are scaled in the page)')
+    ap.add_argument('--page-quality', type=int, default=82, help='JPEG quality of the embedded context page images')
     ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
     ap.add_argument('--focus-note', default='')
     g = ap.add_mutually_exclusive_group()
@@ -378,7 +391,8 @@ def main(argv=None):
         if not a.atlas_topk:
             ap.error('--rank-lattice with no file needs --atlas-topk')
         a.rank_lattice = a.atlas_topk
-    data = build(a.signs, a.labels, a.pages, a.marks, clusters=read_clusters(a.clusters) if a.clusters else None)
+    data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
+                 tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
     if a.auto_clusters:
         auto_clusters(data, a.auto_clusters)
     elif any('c' in it for p in data['piles'] for it in p['items']):
