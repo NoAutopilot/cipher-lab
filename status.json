@@ -3428,6 +3428,35 @@
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "4 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N3",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16104-vivonne-spain-1572",
+      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 1 (VIV54-A1, account 3)",
+      "document_id": "BnF fr.16104 f.173r-v (ink 54): Jean de Vivonne, sr de Saint-Gouard, to Charles IX, Madrid, 7 Sept 1572",
+      "title": "Saint-Gouard to Charles IX, 7 Sept 1572 (BnF fr.16104 f.173r-v): French fragments read under Tomokiyo's published 1572-74 key",
+      "grade": "N3 (one audit), key published (S. Tomokiyo, credited). 1,990 tokens: H 1475, M 318, U 197; gloss gate 0.609 vs shuffled-key p95 0.354 and position-null p95 0.454; judge not a gate; rule-7 --check up to date.",
+      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of Saint-Gouard's cipher letter to Charles IX of 7 September 1572 (BnF fr.16104 f.173r-v); the letter's own interlinear words agree with the decode where they stand. No printed plaintext or separate decipherment of this letter was located in the editions searched.",
+      "text": "unknown",
+      "depth": "D1",
+      "depth_pct": 74.1,
+      "depth_unread": {
+        "names_codes": "not identified (197 U labels outside key.tsv; no nomenclator in key.tsv)",
+        "other": "318 M"
+      },
+      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + interlinear-gloss gate with shuffled-key and position nulls (VIV54-A1); no content check",
+      "depth_note": "H 1475 of 1990; longest French runs 20-25 letters, each needing word division and 1-2 repairs",
+      "depth_by": "session_0148TCAZw5nwPA6aFDTnaAyP",
+      "depth_date": "4 Oct 2026",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
