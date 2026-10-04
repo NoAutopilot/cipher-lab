@@ -56,3 +56,15 @@ on the re-decode.
 ## Units (cap USD 4.5, box 12:17-13:36 UTC)
 Scripts: prep, confusion, packet x2, audit, reconcile, decode, tests. Subagent calls: 1 re-read per page (f.173r, f.173v; crops of the
 flagged lines only + the candidate sheet), 1 audit re-read, ~USD 1.2 each; 1 reconciliation by this worker (script + listing) = 4 units.
+
+## Addendum A (12:3x UTC, pushed BEFORE the second-instrument re-reads; the re-decode, stretch lists and gate (iv) on the first instrument's
+## output were already computed and are reported as they stand)
+The first instrument's three calls (packet prompt f.173r, f.173v; audit) returned echo re-reads: each reader said it defaulted to the shown
+passC label (f.173r 65 M + 130 L, f.173v 176 L, audit 80 L). They are VOID as reads; all their rows enter reconcile at conf L except f.173r
+L04.2 and L04.5, which the reader said it looked at (tx/lookalike54/viv54L_f173r_reread_used.tsv). Audit: NON-TEST (catch 0/4).
+Second instrument (N7-VIV53L's, a different instrument, not a retry of the first): tx/viv54L_windows.py -> per-tile windows of every
+**split** tile (f.173r 86, f.173v 74), candidates alphabetical, the committed label never shown; one Sonnet call per page. One-pass gaps are
+not re-read and stay UNSETTLED/M. Rule L2 unchanged: `lookalike_pass.py reconcile` 2-of-3 on the window re-read (tiles =
+viv54L_<page>_splits_tiles.tsv), gap tiles keep the first instrument's (void) outcome. tx/viv54L_decode.py will read the window passD when
+it exists. Gate (iv) and the stretch lists are re-run on that re-decode and reported beside the first-instrument numbers. The audit is not
+re-run (no unit left); the true-error estimate stays a NON-TEST in this job.
