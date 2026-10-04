@@ -1,0 +1,94 @@
+{
+ "page": "f52r",
+ "prereg": "PREREG_c3_test1.md",
+ "positive_control_f90v_unprinted": {
+  "passA": {
+   "letters": 318,
+   "S_b": -1.064,
+   "order_p99": -1.419,
+   "order_median": -1.514,
+   "key_p99": -1.837,
+   "gate_b": true,
+   "judge_null_p99": -1.947,
+   "judge_real_p05": -0.792,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 320,
+   "S_b": -1.112,
+   "order_p99": -1.418,
+   "order_median": -1.528,
+   "key_p99": -1.797,
+   "gate_b": true,
+   "judge_null_p99": -1.938,
+   "judge_real_p05": -0.781,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 322,
+   "S_b": -1.048,
+   "order_p99": -1.396,
+   "order_median": -1.517,
+   "key_p99": -1.801,
+   "gate_b": true,
+   "judge_null_p99": -1.941,
+   "judge_real_p05": -0.794,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "target": {
+  "err_2reader": "115/410",
+  "err_2reader_frac": 0.28,
+  "passA": {
+   "letters": 721,
+   "S_b": -1.372,
+   "order_p99": -1.518,
+   "order_median": -1.601,
+   "key_p99": -1.844,
+   "gate_b": true,
+   "judge_null_p99": -2.01,
+   "judge_real_p05": -0.779,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 692,
+   "S_b": -1.339,
+   "order_p99": -1.508,
+   "order_median": -1.57,
+   "key_p99": -1.86,
+   "gate_b": true,
+   "judge_null_p99": -1.985,
+   "judge_real_p05": -0.78,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 727,
+   "S_b": -1.347,
+   "order_p99": -1.513,
+   "order_median": -1.59,
+   "key_p99": -1.844,
+   "gate_b": true,
+   "judge_null_p99": -1.983,
+   "judge_real_p05": -0.781,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "grades_reconciled": {
+  "H": 0,
+  "C": 0,
+  "S": 292,
+  "M": 100,
+  "I": 0,
+  "U": 15
+ },
+ "dropped_shape_tokens": {
+  "marks": 3,
+  "clear": 2
+ }
+}
