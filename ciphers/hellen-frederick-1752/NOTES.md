@@ -972,3 +972,82 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: pre-registered diagnosis of R4372's bigram-only signal on R1953, ~$5
+
+## N4-HEL5 (4 Oct 2026): NA Fagel inv. 5177, Hellen's 1751 decipherments as known plaintext (account 2 worker for LANE-NEAR4)
+
+Step run: NEAR3-VHEL's suggestion and A2.5's lead (De Leeuw 2000 ch. 8 n.32: English-deciphered copies of Hellen's letters
+No 1-37, 30 Oct-28 Dec 1751, are in NA Fagel inv. 5177). Question: does 5177 carry Hellen's cipher beside the decipherments,
+so that a pair could give known plaintext for codes 1-800?
+
+**Catalogue record (step 1).** https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5177 (4 Oct 2026 04:18 UTC):
+`drupal-settings-json` -> `viewer.response`: unitid 5177, unittitle "1751-1752", **availability "DIGITALIZED"**, isDownloadable
+true, 187 scans (file NL-HaNA_1.10.29_5177_0001.jpg ff.). Saved verbatim as `fagel5177/manifest_na5177.json`. Images through
+the `iiif` URL of each scan on service.archief.nl (IIIF Image API).
+
+**Volume map (step 2).** Odd scans 1-101 fetched at 700 px wide (51 requests), six contact sheets of 9 spreads each read (6
+vision calls); seven header strips (scans 51, 53, 57, 59, 61, 65, 67, top 32% at 1600 px) read in the same sixth call budget
+(one montage; 6 vision calls in total). Per-scan table: `fagel5177/letters.tsv`. What the volume holds in scans 1-101:
+- **Hellen's letters to Frederick and Frederick's replies "Au Sr de Hellen", Oct-Dec 1751, in French clear text only** (scans
+  5-49 and 67-93): headed "Mr de Hellen au Roi de Prusse, à la Haye le 9 Nov 1751" (35), "Ad Relat. 26, la Haye ce 19 Nov
+  1751" with a P.S. "Le Greffier Fagel &c." (67), numbered "No 3x" headers in December (73, 79, 81) up to No 37 of 28 Dec
+  (89, AUDIT 1); replies "Roy de Prusse au Sr de Hellen", Berlin/Potsdam, Nov-Dec 1751, signed "Federic" (13, 17, 19, 25, 27,
+  39, 49, 69, 71, 77, 91), several with an endorsement slip on the facing page (17, 23, 31, 41, 49). The copies leave **dotted
+  blanks** ("que . . . . a fait", "Mons. D . . . .") where a group was not read. **No cipher group, no interlinear and no
+  facing cipher text appears on any Hellen page seen.**
+- **Scans 51-65: a different correspondent's cipher, 1753.** Scan 51 is a covering note ("J'ai l'honneur de vous renvoier les
+  Papiers que vous m'avez addressez hier au soir, parceque j'attens incessamment le Dechifre d'Angleterre ...") above a few
+  lines of 3-digit groups; 53-65 are pages of 3-digit groups only, with a "Fagel 336" slip at 53 and the header "**No 59, le
+  14 Novembre 1753, B. à St C.**" at 61 -- letters of "B." to "St C." (probably the French envoy Bonnac to Saint-Contest; the
+  names are inferred from the initials, not read), bound into the 1751 run. Not Hellen; groups without decipherment.
+- **Scans 95-101: Frederick to Michell (London), Dec 1751, in 4-digit groups** ("Au Sr Michell à Londres", signed "Federic"),
+  with a covering note at 95. Not Hellen (Michell's code; cf. DECODE R1955/R1957, Frederick to Michell 28 Dec 1751,
+  Non-decrypted).
+Even scans 2-100 were not fetched (a letter that starts on an even scan has no header in this table); scans 102-187 were read
+by AUDIT 1/AUDIT 2 (1752 Nos 71+, blanks).
+
+**Ciphertexts elsewhere (step 3).** DECODE, login-free: the on-disk listings (`sources/decode/records-decrypted-2026-09-24.tsv`,
+`records-non-decrypted-2026-09-24.tsv`, which includes "Partially decrypted"; 2,546 rows) plus a fresh `tools/decode_list.py
+--status n/a` crawl today (700 of 718 N/A records; the last page returned no rows) have **no Hellen/Ellen record dated before
+4 Jan 1752**: the only Hellen ciphers are R1953 (1752) and R1045-R1049/R1060/R1061 (1756, 1763), all KHA Prins Willem V inv.
+196. No BL Add MS 32xxx Newcastle intercept of Hellen appears in any status. The 1751 KHA records are Michell's (R1051 decrypted,
+R1955/R1957 Frederick to Michell 28 Dec 1751). Neighbouring Fagel volumes: AUDIT 2 already read the full finding aid (only 5177
+and 5206 can hold Hellen decipherments of 1751-52); not repeated. **So no surviving 1751 Hellen ciphertext was located in 5177,
+in DECODE (all four statuses) or in the Fagel series; the pairing test of step 3 (PREREG, held-out gate, interlinear_align) has
+nothing to pair and was not run.**
+
+**Can the 1751 plaintexts serve as cribs for R1953 (step 4)?** Partly, and only as context, not as code-value pairs. They are
+the same writer to the same recipient in the same weeks: No 37 is dated 28 Dec 1751, R1953 is dated 4 Jan 1752, one week
+later, and the replies of Frederick in the run answer the same reports. The topics overlap with what R4369 already reads in
+R1953 (`phrases.txt`): the death of the Prince of Orange and the regency (scan 43 "la mort du Prince d'Orange"; R1953 "si feu
+prince d'Orange"), the troop reduction (scan 15 "réduction des troupes"; R1953 "la reduction des troupes"), the Greffier Fagel
+(scan 67) and the treaty negotiations (scans 15-19). What they cannot give is a code for any word: with no ciphertext of these
+letters, nothing aligns. Two uses remain for a later job: (a) a writer- and week-matched French corpus (some 25 Hellen pages
+and 15 reply pages in scans 5-93) for the codes 1-800 key-rebuild's language model and for an era/writer-matched judge corpus
+(CLAUDE.md rule 3, the pt18 lesson), and (b) phrase cribs placed where R1953's decoded context (codes 801+) leaves a gap
+whose neighbours match a phrase in the 1751 run -- probabilistic, graded M at best, and needing the key-rebuild's own control.
+The dotted blanks also show London's 1751 decipherment left some groups unread; with no ciphertext beside them, which codes
+those were cannot be said.
+
+Requests: www.nationaalarchief.nl 1 (item page), service.archief.nl 58 (51 low-res scans + 7 header strips), de-crypt.org 16
+(N/A listing pages, no login); all one at a time, >= 1.6-1.7 s apart, no 403/429/challenge. Subagent calls: 0. Vision calls: 6.
+Images stay in the scratchpad (NA scans; re-fetchable from the manifest). Report what was found and where it was not found:
+no Hellen 1751 ciphertext in 5177 (scans 1-101, odd scans), in DECODE's four status listings, or in the Fagel finding aid.
+Lead for another target (Usage 7, not run): 5177 scans 95-101 copy Frederick's Dec 1751 cipher letters to Michell, and
+DECODE R1955/R1957 (Frederick to Michell, 28 Dec 1751) are Non-decrypted; Michell's key is on file (`sibling_michell/`).
+
+## Remaining gaps (N4-HEL5, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; R4370 and R4372 both fail the pre-registered test (READ2-HEL2, NEAR3-HEL4), R4372 with a bigram-only signal; no 1751 Hellen ciphertext survives beside Fagel 5177's clear copies, so that volume gives context, not code values (N4-HEL5); next: a pre-registered diagnosis of R4372's bigram signal, then a cryptanalytic key-rebuild of 1-800 with its own control, using the 5177 clear pages (scans 5-93) as a writer- and week-matched corpus, ~$5 then ~$10
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500 with "la Haye", no holder) not yet tested; R4372 LR100 gave R1049 a uni-only p 0.010 (secondary, not gated); next: transcribe R4376 P3 and test on R1049 with R4372 as a pre-registered second candidate, ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370 nor R4372 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (N4-HEL5, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); no ciphertext of those letters survives in 5177, DECODE or the Fagel series, so they are context only, not a crib for R1953 itself
+- [x] known-keys: R4369 transcribed and tested, reads R1953; R4370 and R4372 transcribed and tested, neither reads codes 1-800
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, needs its own control); first diagnose R4372's bigram-only signal; the 5177 clear pages are the matched corpus
+- [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: pre-registered diagnosis of R4372's bigram-only signal on R1953, ~$5

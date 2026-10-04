@@ -1,0 +1,55 @@
+# NA Fagel 1.10.29 inv. 5177, scans 1-101 (odd scans read at 700 px on six contact sheets; seven header strips at 1600 px), N4-HEL5, 4 Oct 2026.
+# Even scans were not fetched; a letter starting on an even scan is missed. "No" and "date" are as read at that resolution; "?" = not legible there.
+# form: clear = French clear text only (dotted blanks "....." where a group was left unread); cipher = numeric groups only; cover = a covering note.
+scan	No	date	writer_recipient	form	note
+1	-	-	-	cover	binding, label "Fagel ... 5177"
+3	-	-	-	blank	flyleaves
+5	?	? Oct-Nov 1751	Hellen to Frederick	clear	body pages, no header on this spread; dotted blanks
+7	?	?	Hellen to Frederick	clear	ends "Je suis ... Hellen"
+9	?	?	Hellen to Frederick	clear	dotted blanks at upper right ("que . . . . a fait")
+11	?	?	Hellen to Frederick	clear	ends "de Hellen"
+13	-	?	Frederick to Hellen	clear	reply, signed "Federic"
+15	?	?	Hellen to Frederick	clear	dotted blanks ("Mons. D . . . .")
+17	-	Berlin ?? Nov 1751	Frederick to Hellen	clear	header "Copie ... Roi de Prusse au Sr de Hellen"; left: endorsement slip
+19	-	?	Frederick to Hellen	clear	signed "Federic"
+21	?	?	Hellen to Frederick	clear	body
+23	?	?	Hellen to Frederick	clear	ends "de Hellen"; left: endorsement slip
+25	-	?	Frederick to Hellen	clear	signed "Federic"
+27	-	Berlin ?? Nov 1751	Frederick to Hellen	clear	header "Roy de Prusse a Mr de Hellen"
+29	?	?	Hellen to Frederick	clear	body
+31	-	-	-	cover	endorsement slip only
+33	?	?	Hellen to Frederick	clear	body, dotted blanks
+35	?	la Haye 9 Nov 1751	Hellen to Frederick	clear	header "Mr de Hellen au Roi de Prusse"; left page ends "de Hellen"
+37	?	?	Hellen to Frederick	clear	body
+39	-	Potsdam ? Nov 1751	Frederick to Hellen	clear	left ends "de Hellen"; right signed "Federic"
+41	-	-	-	cover	endorsement slip only
+43	?	?	Hellen to Frederick	clear	body ("la mort du Prince d'Orange")
+45	?	?	Hellen to Frederick	clear	body
+47	?	?	Hellen to Frederick	clear	body, dotted blanks
+49	-	Berlin 30 Nov 1751	Frederick to Hellen	clear	header "Roi de Prusse au Sr de Hellen"; endorsement slip
+51	-	? Dec 1753	decipherer's covering note	cover	"J'ai l'honneur de vous renvoier les Papiers que vous m'avez addressez hier au soir, parceque j'attens incessamment le Dechifre d'Angleterre"; 3-digit groups below
+53	-	? Nov 1753	B. (to St C.)	cipher	3-digit groups only; slip "Fagel 336"; not Hellen
+55	-	1753	B. to St C.	cipher	3-digit groups
+57	-	? 1753	B. to St C.	cipher	note at top "Cette feuille ... accompagnoit ... de B."
+59	-	1753	B. to St C.	cipher	3-digit groups
+61	59	14 Nov 1753	B. a St C.	cipher	header "No 59, le 14 Novembre 1753, B. a St C."
+63	-	1753	B. to St C.	cipher	3-digit groups
+65	-	1753	B. to St C.	cipher	3-digit groups, ends with flourish
+67	Ad Relat. 26	la Haye 19 Nov 1751	Hellen to Frederick	clear	P.S. "Le Greffier Fagel &c."; dotted blanks
+69	-	? Dec 1751	Frederick to Hellen	clear	header "Au Sr de Hellen"
+71	-	? Nov/Dec 1751	Frederick to Hellen	clear	header "Au Sr de Hellen"
+73	3?	? Dec 1751	Hellen to Frederick	clear	header "No 3?", Sire
+75	-	? Dec 1751	Hellen to Frederick	clear	continuation, dated at foot
+77	-	? Dec 1751	Frederick to Hellen	clear	header "Au Sr de Hellen"
+79	3?	? Dec 1751	Hellen to Frederick	clear	header "No 3?", Sire
+81	3?	? Dec 1751	Hellen to Frederick	clear	header "No 3?, Lettre du Sr de H."
+83	-	? Dec 1751	Hellen to Frederick	clear	P.S.
+85	-	-	Hellen to Frederick	clear	body
+87	-	-	Hellen to Frederick	clear	body end
+89	37	28 Dec 1751	Hellen to Frederick	clear	(AUDIT 1 read) "Lettre du Sr H."
+91	-	? Dec 1751	Frederick to Hellen	clear	"Au Sr de H." (AUDIT 1: 24 Dec)
+93	36	24 Dec 1751	Hellen to Frederick	clear	(AUDIT 1 read)
+95	-	? Dec 1751	Michell (London) correspondence	cover+cipher	covering note "Monsieur ..." plus 4-digit groups; not Hellen
+97	-	? Dec 1751	Frederick to Michell	cipher	4-digit groups, signed "Federic"; not Hellen
+99	-	Berlin ?? Dec 1751	Frederick to Michell	cipher	header "Au Sr Michell a Londres"; 4-digit groups; not Hellen
+101	-	? Dec 1751	Frederick to Michell	cipher	groups with signature "Federic"; not Hellen
