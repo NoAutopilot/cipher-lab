@@ -8167,3 +8167,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 09:41 | orchestrator (account 3) | check-in 09:4x: LANE-NEAR5 closed; LANE-NEAR6 queued for account 2 (Vivonne pieces 52/53/63 with the proven key). NOX-ALN: owner merges alone do not lock the alignment (control-backed FAIL), but owner labels + one extra merge k014->k077 lock on post hoc -> NOX-CONFIRM session_01RwgyUJh7k6Eb1ydTGEiof5 pre-registered confirmation with a specificity control. RUN3: Manteuffel +1 C code (770 Manteuffel); clair1161 consensus 1 M->S. Mailbox quiet.
 2026-10-04 09:41 | RUN3-MOR2 | claim: moray-wood-1568 refsheet anchor fix (L2/L3 line-end anchors, M-box widening), cap USD 1
 2026-10-04 09:42 | RUN3-ESSHR worker | claim es132-vargas-mexia-1578 image shrink + iiif_lines guard check (cap USD 2)
+2026-10-04 09:42 | worker RUN3-C1161R7B | claim: clair1161-avis-flandre-1688 rule-7 grade re-derivation (fresh session)
