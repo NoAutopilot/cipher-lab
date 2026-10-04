@@ -72,5 +72,16 @@ try:
 except SystemExit as e:
     check(e.code not in (0, None), f"unrecognised confidence label 'sortof' exits non-zero (code {e.code!r})")
 
+# TX-ALTS --keep-alts: 'a/b?' aligns on its first choice and every alternative reaches lattice.tsv
+A2 = w('A2.tsv', ['a', 'b/x?', 'c'], confs=['H', 'M', 'H'])
+B2 = w('B2.tsv', ['a', 'b', 'c'])
+r = rp.main([A2, B2, '--keep-alts', '--no-write'])
+check(r['agree'] == 3, f"a/b? token aligns on its first choice under --keep-alts (agree {r['agree']}/3)")
+lat2 = {(l, c): float(s) for l, p_, c, s in r['lattice'] if p_ == '2'}
+check(set(c for _, c in lat2) == {'b', 'x'} and lat2[('L1', 'b')] > lat2[('L1', 'x')] > 0,
+      f"lattice keeps the alternative x beside b at position 2 (got {lat2})")
+r = rp.main([A2, B2, '--no-write'])
+check(r['agree'] == 2, f"without --keep-alts 'b/x' stays one literal sign, as before (agree {r['agree']}/3)")
+
 print('reconcile_passes:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

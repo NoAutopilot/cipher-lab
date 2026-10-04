@@ -37,6 +37,12 @@ pass token's exact reading for its canonical value before alignment, applied to 
 (malsburg-hessen-1636's bMALG glyph_map.tsv: a reading pass calling the same stroke 'i' in one line and '1' in
 another stops looking like a disagreement).
 
+--keep-alts (TX-ALTS, 4 Oct 2026; DECRYPT convention, Megyesi HistoCrypt 2020): a token written 'a/b?' (or 'a/b/c?')
+is first choice 'a' (used for alignment and the draft) with alternatives 'b', 'c'; a long-format 'alt' column may hold
+more, separated by '/'. Writes lattice.tsv (line, pos, cand, score: the draft's own positions; every pass's sign at
+reader weight H 1.0 / M 0.6 / L 0.3 and every alternative at 0.3 x that weight, normalised, nothing cut) in the top-k
+format tools/key_decode_lattice.py decode reads. Without --keep-alts a '/' token is one literal sign, as before.
+
 Alignment: per line, pass B (and C) aligned to pass A, the reference, by Needleman-Wunsch over signs (match +1,
 mismatch -1, gap -1), or by difflib's matching blocks with --method difflib (the measure fr2980-gramont
 reconcile_f30.py printed). Agreement = aligned columns where every pass has the same sign / columns.
@@ -74,6 +80,10 @@ import argparse, collections, difflib, os, re, sys
 FLAG_CONF = {'M', 'L'}
 CONF_ALIASES = {'h': 'H', 'high': 'H', 'm': 'M', 'med': 'M', 'medium': 'M', 'l': 'L', 'low': 'L'}
 CONF_RANK = {'H': 3, 'M': 2, 'L': 1}
+# --keep-alts lattice weights: the same pre-registered rule as tools/key_decode_lattice.py from-passes (reader weight
+# H 1.0 / M 0.6 / L 0.3, an alternative 0.3 x the reader's weight), no confusion spread, no floor, no top-k cut.
+LAT_CONF_W = {'H': 1.0, 'M': 0.6, 'L': 0.3}
+LAT_ALT_F = 0.3
 
 
 def norm_conf(label, path, line_id):
@@ -126,6 +136,7 @@ def load_pass(path, a):
         si = next(head.index(n) for n in ('sign', 'token', 'group', 'code') if n in head)
         ki = next((head.index(n) for n in ('conf', 'confidence') if n in head), None)
         gi = head.index('gloss') if 'gloss' in head else None
+        ai = head.index('alt') if getattr(a, 'keep_alts', False) and 'alt' in head else None
         has_gloss = gi is not None
         body = sorted(((r[ci], int(r[pi]), i, r) for i, r in enumerate(rows[1:]) if len(r) > si),
                       key=lambda x: x[2])
@@ -134,12 +145,19 @@ def load_pass(path, a):
             level = norm_conf(raw_conf, path, ln) if raw_conf is not None else 'H'
             gloss = r[gi].strip() if gi is not None and gi < len(r) else ''
             toks = list(r[si]) if a.split_chars and not r[si].startswith('[') else [r[si]]
+            col_alts = [x.strip() for x in r[ai].split('/') if x.strip()] if ai is not None and ai < len(r) else []
             for t in toks:
                 s = norm_sign(t, a)
                 if s:
                     sign, sign_flagged = s
+                    alts = []
+                    if getattr(a, 'keep_alts', False):
+                        if '/' in sign and not sign.startswith('['):
+                            parts = [x for x in sign.split('/') if x]
+                            sign, alts = (parts[0], parts[1:]) if parts else ('?', [])
+                        alts = [x for x in dict.fromkeys(alts + col_alts) if x != sign]
                     lv = 'M' if sign_flagged and level == 'H' else level
-                    out.setdefault(line_key(ln, a), []).append((sign, lv, gloss))
+                    out.setdefault(line_key(ln, a), []).append((sign, lv, gloss, tuple(alts)))
     else:
         for r in rows:
             if r[0] in ('row', 'line'):
@@ -150,7 +168,11 @@ def load_pass(path, a):
                     s = norm_sign(c if not a.split_chars else c + ('?' if t.endswith('?') else ''), a)
                     if s:
                         sign, sign_flagged = s
-                        out[line_key(r[0], a)].append((sign, 'M' if sign_flagged else 'H', ''))
+                        alts = ()
+                        if getattr(a, 'keep_alts', False) and '/' in sign:
+                            parts = [x for x in sign.split('/') if x]
+                            sign, alts = parts[0], tuple(x for x in parts[1:] if x != parts[0])
+                        out[line_key(r[0], a)].append((sign, 'M' if sign_flagged else 'H', '', alts))
     return out, has_gloss
 
 
@@ -276,6 +298,9 @@ def main(argv=None):
                      help='normalised confidence levels (subset of H,M,L) that mark a sign flagged')
     ap.add_argument('--rows', action='store_true', help='print one line per manuscript line')
     ap.add_argument('--no-write', action='store_true', help='print only (used by the test)')
+    ap.add_argument('--keep-alts', action='store_true',
+                    help="parse a/b? tokens (and an alt column) as first choice + alternatives and write lattice.tsv "
+                         "(line, pos, cand, score) carrying every alternative, for tools/key_decode_lattice.py decode")
     ap.add_argument('--sign-map', dest='sign_map_file',
                      help='TSV pass_reading<TAB>canonical[...]; substitutes each raw pass token before alignment')
     ap.add_argument('--vote', action='store_true', help='also write vote.tsv: plurality sign and vote share per column')
@@ -295,7 +320,7 @@ def main(argv=None):
     lines = list(P[0]) + [l for p in P[1:] for l in p if l not in P[0]]
     lines = list(dict.fromkeys(lines))
     crops = sorted(os.listdir(a.crops)) if a.crops and os.path.isdir(a.crops) else []
-    dis, draft, uncertain, agr_rows = [], [], [], []
+    dis, draft, uncertain, agr_rows, lattice = [], [], [], [], []
     tot_agree = tot_cols = 0
     tot_gloss_agree = tot_gloss_cols = 0
     for ln in lines:
@@ -336,6 +361,18 @@ def main(argv=None):
             if same and conf != 'H':
                 both_conf = '/'.join(f'{n_}:{lv}' for n_, lv in zip(names, levels))
                 uncertain.append([ln, str(k)] + signs + [''.join(flagged), crop, both_conf])
+            if a.keep_alts:
+                mass = collections.defaultdict(float)
+                for x in c:
+                    if x is None:
+                        continue
+                    wgt = LAT_CONF_W[x[1]]
+                    mass[x[0]] += wgt
+                    for alt in (x[3] if len(x) > 3 else ()):
+                        mass[alt] += LAT_ALT_F * wgt
+                tot = sum(mass.values())
+                for cand, m in sorted(mass.items(), key=lambda kv: -kv[1]):
+                    lattice.append([ln, str(pos), cand, f'{m / tot:.4f}'])
             if any_gloss:
                 glosses = [x[2] if x else None for x in c]     # None = no token here in that pass, '' = token, no gloss
                 non_gap = [g for g in glosses if g is not None]
@@ -377,8 +414,11 @@ def main(argv=None):
     corr_rows = []
     if a.err_truth:
         corr_rows = err_corr(a, P, names, vote_rows if a.vote else None)
+    if a.keep_alts:
+        print(f"lattice: {len(draft)} positions, {len(lattice)} candidates, "
+              f"{sum(1 for k in collections.Counter((r[0], r[1]) for r in lattice).values() if k > 1)} with alternatives")
     if a.no_write:
-        return dict(votes=vote_rows, err_corr=corr_rows, agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft, uncertain=uncertain,
+        return dict(lattice=lattice, votes=vote_rows, err_corr=corr_rows, agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft, uncertain=uncertain,
                      agreed_h=agreed_h, gloss_agree=tot_gloss_agree, gloss_cols=tot_gloss_cols)
     out = a.out_dir or os.path.dirname(os.path.abspath(a.passes[0]))
     os.makedirs(out, exist_ok=True)
@@ -397,6 +437,8 @@ def main(argv=None):
         w('vote.tsv', ['line', 'pos', 'sign', 'vote_share', 'votes', 'n_passes'], vote_rows); written.append('vote.tsv')
     if a.err_truth:
         w('err_corr.tsv', CORR_HEAD, [[str(x) for x in r] for r in corr_rows]); written.append('err_corr.tsv')
+    if a.keep_alts:
+        w('lattice.tsv', ['line', 'pos', 'cand', 'score'], lattice); written.append('lattice.tsv')
     print('wrote', ', '.join(os.path.join(out, f) for f in written))
     return 0
 

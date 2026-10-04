@@ -2360,3 +2360,36 @@ Next: what to sort next, ranked by score gain in `.../sorter/sort_next.tsv`: f.1
 f.168 R03.6, V03.5, V03.23; f.117r gains are small (<=0.02). Also a native re-capture of the 11 bad-cut tiles. Per the README, a fourth look goes to the
 owner-only disagreements, the 11 M picks on f.117r and 9 on f.168. Sorting the new piles (T60-c holds 7 tiles across leaves: 4 from T65, 1 each from T95, T36 and T60) against the sheet
 would turn U back into values, ~$1 apply after the next save.
+
+## TX-ALTS (4 Oct 2026, account-3 lane A3V parent worker): a/b? alternatives carried into the decode lattice -- not adopted
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-tx-additions.md` (TX-ALTS; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #3).
+Gates pre-registered in `harvest/tx_alts/PREREG.md` before any new pass or decode. No reading, no class, status unchanged.
+Tool: `--keep-alts` on `tools/key_decode_lattice.py from-passes` and `tools/reconcile_passes.py` (a sign written `a/b?`
+is first choice a + alternative b; every reader-written alternative is exempt from the 0.02 floor and the top-4 cut).
+Default paths unchanged: `sh tx_decode/run.sh` regenerates TX-DECODE's files byte for byte. Two Sonnet subagent vision
+calls (one per page, line crops only, the existing 9 crops each) under the a/b? pass rule (`harvest/tx_alts/pass_brief_alts.md`),
+blind, value-blind. Everything regenerates: `python3 tx_alts/test2.py` (from harvest/) -> `tx_alts/test2.json`.
+
+**Test 1 (disk only), existing A/B passes with --keep-alts:** truth in lattice 27/97 (unchanged: the old passes' `alt`
+entries were never being cut); lam 4 err_true 0.0712 (60/843, unchanged).
+
+**Test 2, f178r L01-03 + f179r L01-03 (179 truth-aligned signs), pass N under the a/b? rule beside the existing pass B:**
+
+| lattice | top-1 wrong+U | truth in lattice at top-1 errors | lam 4 err_true (wrong / wrong+U) | lam 1 err_true |
+|---|---|---|---|---|
+| CURRENT (A, B) | 27 | 2 / 27 | 0.045 / 0.151 | 0.084 / 0.196 |
+| FIRST (N first choice only, B) | 38 | 13 / 38 | 0.056 / 0.156 | 0.078 / 0.196 |
+| ALTS (N with every alternative, B; --keep-alts) | 35 | 12 / 35 (0.34) | 0.061 / 0.156 | 0.089 / 0.196 |
+
+Paired, same signs: ALTS vs FIRST at lam 4 **0 fixed / 0 broken** (p 1.0); at lam 1 3 / 3 (p 0.66). ALTS vs CURRENT at
+lam 4 0 / 1. **G1 FAILS** (0.34 < 0.50), **G2 FAILS** (no paired gain): not adopted, per the research note's own rule
+("coverage alone with no err_true gain counts as not adopted"). The rule did change what the reader writes: of pass N's
+own first-choice errors, the truth sits in N's own written alternatives at 12 of 29 (f178r 7/19, f179r 5/10), against
+0 of 18 for the old pass A's `alt` column on the same lines. But N's first choice was worse than A's (29 vs 18 errors),
+B's errors carry no alternatives, and the key + language model at lam 4 did not use the extra candidates. Limits, stated
+in PREREG before the run: six lines, about 27-38 errors, one pass per page, so a null is low-power, not a negative of the
+rule; and the f178r crops cut each line's tail at the bottom edge (the reader read L01/L02 tails from the next line's
+crop and lost L03 after pos 24), which inflates N's error on f178r. Cost of the vision step: 2 Sonnet calls.
+Next (one line, not done): if retried, read a/b? on both passes (A and B) of a whole letter so both readers' errors carry
+alternatives, with f178r re-cut (`tools/iiif_lines.py --debug`, taller region for the slope); same gates.

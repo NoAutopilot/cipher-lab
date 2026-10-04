@@ -31,6 +31,9 @@ Subcommands
                ciphertext TSV: line, pos, sign), each pass line is aligned to the ref line by difflib and the ref's
                positions are the lattice skeleton (the ref's own signs are NOT used as candidates); without it, pass A is
                the skeleton and B is aligned onto it.
+               --keep-alts (TX-ALTS, 4 Oct 2026): a sign_id written `a/b?` (DECRYPT convention) is first choice a with
+               alternative b at the alt weight, and every reader-written alternative stays in the lattice (exempt from
+               the 0.02 floor and the top-4 cut). Without it, a/b? is still parsed but alternatives may be cut.
   decode       topk.tsv --key key.tsv (--lang L | --corpus F...) [--truth truth.tsv] [--shuffles N] [--power-err E]
                [--out-prefix P] writes P.decode.tsv (line pos top1 chosen value prior changed), P.plain.txt, P.json.
 
@@ -98,14 +101,34 @@ def read_topk(p):
 
 
 # ---------------------------------------------------------------- lattice synthesis
-def reader_mass(row, nb):
+def split_cands(row):
+    """(first sign, [alternatives], conf) from one pass row. TX-ALTS (4 Oct 2026): a sign_id written in the DECRYPT
+    convention (Megyesi 2020) `a/b?` or `a/b/c?` is read as first choice `a` with alternatives `b`, `c`; the `alt`
+    column may also hold several cells separated by '/'. A trailing '?' caps conf H at M (as reconcile_passes REC-CONF).
+    A plain sign_id with no '/' parses exactly as before."""
+    raw = (row.get("sign_id") or "").strip()
+    conf = (row.get("conf") or "").strip()
+    if raw.endswith("?") and len(raw) > 1:
+        raw = raw[:-1]
+        if conf == "H":
+            conf = "M"
+    parts = [x.strip() for x in raw.split("/")] if "/" in raw else [raw]
+    first = parts[0] or "?"
+    alts = [x for x in parts[1:] if x]
+    alts += [x.strip() for x in (row.get("alt") or "").split("/") if x.strip()]
+    alts = [x for x in dict.fromkeys(alts) if x != first]
+    return first, alts, conf
+
+
+def reader_mass(row, nb, alts_out=None):
     out = defaultdict(float)
-    s = (row.get("sign_id") or "").strip() or "?"
-    w = CONF_W.get((row.get("conf") or "").strip(), 0.6)
+    s, alts, conf = split_cands(row)
+    w = CONF_W.get(conf, 0.6)
     out[s] += w
-    alt = (row.get("alt") or "").strip()
-    if alt and alt != s:
+    for alt in alts:
         out[alt] += ALT_F * w
+        if alts_out is not None:
+            alts_out.add(alt)
     near = sorted(nb.get(s, {}).items(), key=lambda kv: -kv[1])[:3]
     tot = sum(n for _, n in near)
     for b, n in near:
@@ -113,14 +136,19 @@ def reader_mass(row, nb):
     return out
 
 
-def finish(mass):
+def finish(mass, keep=()):
+    """normalise; drop < MIN_P; keep top TOPK. Candidates in `keep` (reader-written alternatives under --keep-alts)
+    are exempt from the floor and the cut."""
     t = sum(mass.values())
     if t <= 0:
         return {"?": 1.0}
     c = {k: v / t for k, v in mass.items() if v / t >= MIN_P}
     c = dict(sorted(c.items(), key=lambda kv: -kv[1])[:TOPK])
+    for k in keep:
+        if k in mass and mass[k] > 0:
+            c[k] = mass[k] / t
     t = sum(c.values())
-    return {k: v / t for k, v in c.items()}
+    return {k: v / t for k, v in sorted(c.items(), key=lambda kv: -kv[1])}
 
 
 def align(skel, other):
@@ -148,7 +176,7 @@ def short(line):
     return line.split("_")[-1]
 
 
-def from_passes(pa, pb, ref, nb):
+def from_passes(pa, pb, ref, nb, keep_alts=False):
     A, B = read_pass(pa), read_pass(pb)
     rows = []
     if ref:
@@ -157,17 +185,18 @@ def from_passes(pa, pb, ref, nb):
         key_of = {ln: short(ln) for ln in order}
     else:
         order = list(A)  # pass A file order
-        skel_of = {ln: [r["sign_id"] for r in A[ln]] for ln in order}
+        skel_of = {ln: [split_cands(r)[0] for r in A[ln]] for ln in order}
         key_of = {ln: ln for ln in order}
     stats = {"positions": 0, "no_reader": 0, "one_reader": 0}
     for ln in order:
         skel = skel_of[ln]; mass = [defaultdict(float) for _ in skel]; seen = [0] * len(skel)
+        keep = [set() for _ in skel]
         for P in (A, B):
             prow = P.get(key_of[ln], [])
-            m = align(skel, [r["sign_id"] for r in prow])
+            m = align(skel, [split_cands(r)[0] for r in prow])
             for j, r in enumerate(prow):
                 if j in m:
-                    for k, v in reader_mass(r, nb).items():
+                    for k, v in reader_mass(r, nb, keep[m[j]] if keep_alts else None).items():
                         mass[m[j]][k] += v
                     seen[m[j]] += 1
         for i, ms in enumerate(mass):
@@ -176,7 +205,9 @@ def from_passes(pa, pb, ref, nb):
                 stats["no_reader"] += 1
             elif seen[i] == 1:
                 stats["one_reader"] += 1
-            for c, p in finish(ms).items():
+            if keep[i]:
+                stats["alt_positions"] = stats.get("alt_positions", 0) + 1
+            for c, p in finish(ms, keep[i]).items():
                 rows.append((ln, i + 1, c, p))
     return rows, stats
 
@@ -379,7 +410,7 @@ def cmd_decode(args):
 
 
 def cmd_from_passes(args):
-    rows, stats = from_passes(args.passA, args.passB, args.ref, read_confusion(args.confusion))
+    rows, stats = from_passes(args.passA, args.passB, args.ref, read_confusion(args.confusion), args.keep_alts)
     write_topk(rows, args.out)
     print(json.dumps(stats))
 
@@ -390,6 +421,9 @@ def main(argv=None):
     f = sub.add_parser("from-passes", help="synthesize a top-k TSV from two blind passes")
     f.add_argument("passA"); f.add_argument("passB")
     f.add_argument("--ref"); f.add_argument("--confusion"); f.add_argument("--out", required=True)
+    f.add_argument("--keep-alts", action="store_true",
+                   help="keep every reader-written alternative (a/b? or the alt column) in the lattice, exempt from "
+                        "the 0.02 floor and the top-4 cut (TX-ALTS)")
     d = sub.add_parser("decode", help="lattice decode + controls")
     d.add_argument("topk"); d.add_argument("--key", required=True)
     d.add_argument("--lang", default="it"); d.add_argument("--corpus", nargs="*")

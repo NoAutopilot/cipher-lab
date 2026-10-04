@@ -60,6 +60,28 @@ def test_unknown_sign_does_not_crash():
     assert len(seq) == 2
 
 
+def test_split_cands_decrypt_convention():
+    # TX-ALTS: 'a/b?' -> first a, alternative b, H capped at M; plain signs parse as before
+    assert K.split_cands({"sign_id": "T18/T98?", "conf": "H"}) == ("T18", ["T98"], "M")
+    assert K.split_cands({"sign_id": "T45/T89/T86?", "alt": "T90", "conf": "L"}) == ("T45", ["T89", "T86", "T90"], "L")
+    assert K.split_cands({"sign_id": "T33", "alt": "T19", "conf": "H"}) == ("T33", ["T19"], "H")
+    assert K.split_cands({"sign_id": "?", "conf": "L"}) == ("?", [], "L")
+
+
+def test_keep_alts_exempts_alternatives_from_cut():
+    # a weak alternative falls under the 0.02 floor / top-4 cut by default but survives with keep
+    nb = {"A": {"B": 5.0, "C": 4.0, "D": 3.0}}
+    keep = set()
+    mass = K.reader_mass({"sign_id": "A/E?", "conf": "L"}, nb, keep)
+    for _ in range(3):
+        for k, v in K.reader_mass({"sign_id": "A", "conf": "H"}, nb).items():
+            mass[k] += v
+    assert keep == {"E"}
+    assert "E" not in K.finish(mass)
+    m = K.finish(mass, keep)
+    assert "E" in m and abs(sum(m.values()) - 1) < 1e-9 and max(m, key=m.get) == "A"
+
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"):

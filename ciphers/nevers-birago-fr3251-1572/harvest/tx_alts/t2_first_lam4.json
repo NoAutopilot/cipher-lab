@@ -1,0 +1,24 @@
+{
+ "positions": 186,
+ "lam": 4.0,
+ "beam": 64,
+ "bonus": 0.8282259419798,
+ "unk_cost": -0.5,
+ "changed": 14,
+ "score_top1": -1.2938245073242614,
+ "score_lattice": -1.0548103295901887,
+ "truth_top1": {
+  "aligned": 179,
+  "wrong": 21,
+  "unvalued": 17,
+  "err": 0.11731843575418995,
+  "err_with_U": 0.2122905027932961
+ },
+ "truth_lattice": {
+  "aligned": 179,
+  "wrong": 10,
+  "unvalued": 18,
+  "err": 0.055865921787709494,
+  "err_with_U": 0.1564245810055866
+ }
+}

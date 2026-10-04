@@ -1,0 +1,100 @@
+{
+ "CURRENT": {
+  "positions": 186,
+  "aligned": 179,
+  "top1_errors": 27,
+  "truth_in_lattice_at_top1_errors": 2,
+  "mean_cands": 2.56,
+  "lam4": {
+   "changed": 3,
+   "aligned": 179,
+   "wrong": 8,
+   "unvalued": 19,
+   "err": 0.0446927374301676,
+   "err_with_U": 0.15083798882681565
+  },
+  "lam1": {
+   "changed": 19,
+   "aligned": 179,
+   "wrong": 15,
+   "unvalued": 20,
+   "err": 0.08379888268156424,
+   "err_with_U": 0.19553072625698323
+  }
+ },
+ "FIRST": {
+  "positions": 186,
+  "aligned": 179,
+  "top1_errors": 38,
+  "truth_in_lattice_at_top1_errors": 13,
+  "mean_cands": 2.58,
+  "lam4": {
+   "changed": 14,
+   "aligned": 179,
+   "wrong": 10,
+   "unvalued": 18,
+   "err": 0.055865921787709494,
+   "err_with_U": 0.1564245810055866
+  },
+  "lam1": {
+   "changed": 31,
+   "aligned": 179,
+   "wrong": 14,
+   "unvalued": 21,
+   "err": 0.0782122905027933,
+   "err_with_U": 0.19553072625698323
+  }
+ },
+ "ALTS": {
+  "positions": 186,
+  "aligned": 179,
+  "top1_errors": 35,
+  "truth_in_lattice_at_top1_errors": 12,
+  "mean_cands": 2.59,
+  "lam4": {
+   "changed": 13,
+   "aligned": 179,
+   "wrong": 11,
+   "unvalued": 17,
+   "err": 0.061452513966480445,
+   "err_with_U": 0.1564245810055866
+  },
+  "lam1": {
+   "changed": 29,
+   "aligned": 179,
+   "wrong": 16,
+   "unvalued": 19,
+   "err": 0.0893854748603352,
+   "err_with_U": 0.19553072625698323
+  }
+ },
+ "paired_ALTS_vs_FIRST": {
+  "4": {
+   "fixed": 0,
+   "broken": 0,
+   "p_one_sided": 1.0
+  },
+  "1": {
+   "fixed": 3,
+   "broken": 3,
+   "p_one_sided": 0.6562
+  }
+ },
+ "paired_ALTS_vs_CURRENT": {
+  "4": {
+   "fixed": 0,
+   "broken": 1,
+   "p_one_sided": 1.0
+  },
+  "1": {
+   "fixed": 3,
+   "broken": 3,
+   "p_one_sided": 0.6562
+  }
+ },
+ "paired_ALTSlam4_vs_FIRSTtop1": {
+  "fixed": 10,
+  "broken": 0,
+  "p_one_sided": 0.001
+ }
+}
