@@ -4,7 +4,7 @@ Common rules: the "Common to every job below" section of `.claude/briefs/runs/20
 is the one clair1161 job that edits NOTES.md, NEAR.md, status.json `near`, ciphertext.tsv, key.tsv and the reading (nobody else is on the
 folder while it runs). Intake gate for clair1161 pasted 01:1x UTC in the wave-1 file (partial, exit 0).
 
-## NEAR3-C1POOL -- clair1161-avis-flandre-1688: held-out test on the new leaves, merge, pooled re-anneal (Opus; cap USD 12; box 75 min; disk only)
+## NEAR3-C1POOL -- clair1161-avis-flandre-1688: held-out test on the new leaves, merge, pooled re-anneal (Opus; cap USD 9; box 70 min; disk only)
 Why: four more leaves of the same "Avis" are now transcribed (c186L, c187L, c187R, c188L; `tx/<leaf>_rec.tsv`, `reports/NEAR3-C1TX-*.md`)
 beside c185R + c186R block (924 signs). The current key.tsv was built WITHOUT them, so they are a held-out test of it before anything is
 re-annealed. Read every `reports/NEAR3-*.md` first (C1RD PASS; C1LOOSE FAIL and its three cautions; C1SPLIT's merged/split recommendation;
@@ -16,7 +16,10 @@ unless more glossed material appears (check the four new leaves' reports for any
    (a) held-out test: decode the ~new leaves' signs (all four pooled, and per leaf) with the CURRENT key.tsv; statistic = fr16 judge score
        (`tools/judge_plaintext.py`, the same spec) AND word cover; controls that can differ: (i) the same key applied to each leaf's
        ORDER-shuffled signs (20 seeds), (ii) the 20 order-shuffled-ciphertext anneal keys already in `glossctl/key_shuf*.tsv` applied to the
-       UNshuffled new leaves. PASS when the real decode beats the max of (ii) and the p95 of (i) on the pooled new leaves. New shapes with no
+       UNshuffled new leaves. PASS when the real decode beats the max of (ii) and the p95 of (i) on the pooled new leaves.
+       Report the pooled figure twice: all four leaves, and without c188L (its err_2reader is 0.181, above TRANSCRIPTION.md's 0.10 line,
+       framing errors from sloped lines; its focus.tsv waits on a sorter pass). c188L's report also flags c187R for the same slope check:
+       note it, do not re-transcribe. The gate uses the all-four figure; the without-c188L figure is reported beside it. New shapes with no
        key value count as unkeyed in all arms equally.
    (b) pooled re-anneal: the same recipe (homophonic_anneal restarts 32, fr16 order 3) on all six leaves -- **seeds 1-5, keep the best
        anneal score** (C1SPLIT found single-seed results sensitive to any stream change; same 5 seeds in every control arm) -- holding only the 6 C signs
