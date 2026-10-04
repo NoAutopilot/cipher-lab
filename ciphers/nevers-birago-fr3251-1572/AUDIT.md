@@ -1103,3 +1103,91 @@ calls: 0.
    one `[quello]` token in no.87 as checks for the sheet-alignment step.
 
 SECOND-OPINIONS-QUEUE.tsv: no row is filed, because these items are N0 (rows are for N3 or better).
+
+# AUDIT 12 (A3V-VNB1, 4 Oct 2026): f.144r (no.73) and f.168 (no.85)
+
+Verifier: A3V-VNB1 (account 3 worker, for LANE-A3V), brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave2.md` job A3V-VNB1. First
+audits of both items. This session is separate from every solver of them (NEVBIR-144, NEVBIR-168, NEVBIR-POOL, NEVBIR-LOOKALIKE,
+TX-DECODE, NEVBIR-ERRTRUE, TXD-HOLDOUT, BIR-OPEN, BIR-OPEN-144, BIR-APPLY, BIR-OWNER) and from A3V-RD7. Clock: `date -u` 03:12 UTC at
+start, 4 Oct 2026. Nothing was decoded; key, ciphertexts and readings untouched.
+
+**Gate.** `RD7-2026-10-04-f144r.md` (A3V-RD7, 4 Oct 2026): the fresh re-derivation of the f.144r owner reading differs on 0 of 90
+tokens against 32 M-graded tokens, verdict SAME. Both items are therefore audited (the "held: rule-7" branch does not apply).
+
+## Step 1: extraction
+
+| item | sender / recipient / place / date | ciphertext | reading under audit | grades (rule 4) | judge |
+|---|---|---|---|---|---|
+| no.73, f.144r (Gallica btv1b9060248g canvas 146, right page), one run L03-L06 | Lodovico Birago to Louis de Gonzague, duc de Nevers, Saluzzo, 27 Mar 1572 | `harvest/ciphertext_f144r.tsv`, 90 signs (`harvest/f144r/passC.tsv`, two blind readers + adjudicator) | `harvest/tx_decode/eye/open/sorter/reading_f144r_owner.txt` (BIR-OWNER, 3 Oct; A3V-RD7 SAME) | H 0 C 0 **S 39** M 32 I 0 U 19 of 90 (firm = S, 43%) | FAIL -1.266 vs real_p05 -0.954 |
+| no.85, f.168r L02-L03 + f.168v L01-L03 (canvases 171 right, 172 left) | same, Saluzzo, 29 Jul 1572 | `harvest/tx_decode/eye/verify/ciphertext_f168_top1.tsv`, 122 tokens | `harvest/tx_decode/eye/apply/reading_f168_apply.txt` (BIR-APPLY, 3 Oct) | H 0 C 0 **S 92** M 20 I 0 U 10 of 122 (firm 75%) | FAIL -1.15 vs real_p05 -0.992 |
+
+Key for both: Tomokiyo's reconstruction of the 1572 Nevers-Birago table (cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251)
+plus T42=m fitted by us from no.87's clerk sheet (GAPS3). **Key source: published.**
+
+What the firm (S) letters say, joined as the files give them (M in capitals, U as ·):
+- f.144r: `QUELLO··MpRiMaQUELLOG / EoB·ateN··PER· / DiQUELLO··B··osa· / The·IRCRodi···aqualco·MEzodiT·uBpUrato / PmiudiIeDiIRAgI·ERo·`.
+  **No readable phrase.** The S letters are isolated letters and syllables ("qual co", "osa", "di"); every word sign is M. Nothing
+  here can be quoted as text.
+- f.168: `[che]isisafaCuaNUatomoltoconloRialteHE / sopRaGpafti·solERn· / guantoilpRoce / dEREsi··sii·tanto·astidiisaamE /
+  maDa·osaELfefUi·iilifoG··m`. Readable S stretches: "molto con lo..", "quanto il proce[dere]" (the clear text after it is
+  "...considerato il procedere suo" on f.168v -- see the crop), "tanto", "sopra". Short, common words; no sentence.
+
+The solvers' own search log for these two letters: the Premise check and NOTES.md table (c) (2 Oct) on canvases 146/147 and 171;
+NEVBIR-168's whole-opening look (canvases 171, 172; no slip). The audit families searched for the folder's other items
+(sections above, 2-4 Oct) cover the same print (Mémoires de Nevers 1665 both parts, BnF catalogue, Italian editions, Catherine de
+Médicis vol. 4, Segre 1901, open indexes); I did not repeat their queries, but extended them with these two letters' dates, names
+and prose.
+
+## Step 2: search (4 Oct 2026, 03:13-03:19 UTC)
+
+| family | searched | result |
+|---|---|---|
+| (d) holding archive: the openings themselves, by eye | `images/f144r_canvas146.jpg` (f.143v / f.144r), `images/f144v_145r_canvas147.jpg` (f.144v / f.145r), `images/f168r_canvas171.jpg` (f.167v / f.168r), `harvest/f168r/c172_1600.jpg` (f.168v / f.169r), all on disk; plus one new native crop of canvas 147 left, IIIF `pct:15,15,37,18` (scratch, not committed) | **No slip, interlinear gloss or laid-in sheet** on any of the four openings. f.143v is an address leaf ("Al Ill.mo et Ecc.mo S.r mio sempre oss.mo il S.r Duca di Nevers ..."); f.145r ends the letter "Da Saluzzo alli 27 di marzo 1572" with Birago's signature; f.167v's three-line foot note is clear prose (NEVBIR-168); f.169r is a faint, different item. The N0 route (a decipherment of this very item) is absent for both. **New, found not applied:** f.144v carries a **second cipher run of no.73**, about 24 signs over two lines near the top of the left page (about L05-L06): "Io no so quello [signs] ... [signs] possendone dir male con verità, come farò sempre constare ogni volta ne sij avisato". It is untranscribed and unread; NOTES.md table (c) of 2 Oct calls f.144v-145r "plain" (corrected there by a dated bracket). The class below covers f.144r only |
+| (a) canonical catalogue | BnF finding aid cc49712p and the printed *Catalogue des manuscrits français* entry, as read by the first audits (both silent on any decipherment for nos.73 and 85: "Lettre, avec chiffre"); not re-fetched | no decipherment recorded |
+| (b) recipient's edition | Gomberville, *Mémoires de Monsieur le duc de Nevers* (1665), Gallica ContentSearch, Partie 1 `bpt6k6435941k` / Partie 2 `bpt6k9738856z`: "Mars 1572" (quoted) 0/0, "Iuillet 1572" 0/0, "Juillet 1572" 0/0, Scotia 0/0, Adrets 0/0, Pignerol 48/5, Birague 29/4 (positive control: the term answers) | every Birague hit is Carles de Birague (the 1574 Pignerol/Savigliano restitution), the Chancellor René, or Sacremore; **no letter of Lodovico Birago** and no text of nos.73 or 85. Consistent with the earlier audits' searches of both parts |
+| (b) Italian editions / (e) phrase search on the letters' own clear prose | `tools/print_check.py --only ia-global,gbooks` on 8 prose phrases read by eye on the crops (scratch phrases file, not phrases.txt, since they are not decoded text): "servandosi hora del mese", "possendone dir male con verita", "Bernardino Scotia", "non mancaro fare ogni opera per scoprirlo", "Bellagarda venne davanti hieri a Carmagnola", "la persona del baron des Adres", "mi sono smenticato scrivere al re", "di trecento franchi il mese"; 4 Google Books 503s retried once by hand with the phrase quoted | IA full text: 0 for 7 of 8; "Bernardino Scotia" 8 loose items (Guazzo's dialogues and letters, a Casale archive miscellany), not these letters. Google Books: loose matches only (Petrarch commentaries, 19th-c. Carmagnola histories, 20th-c. prose using "trecento franchi il mese", *Grande dizionario della lingua italiana* twice, no snippet). **No print of either letter located**, clear or cipher |
+| (e) phrase search on the decoded text | not run: the f.144r S letters form no phrase, and the f.168 S stretches ("molto con lo", "quanto il proce", "tanto", "sopra") are too short and common for a phrase search to discriminate. phrases.txt not extended (brief: H/C/S runs only; none qualifies) | -- |
+| (f) Tomokiyo | `sources/cryptiana/web/nevers.htm` (mirror, 1 Oct; the live page was fetched by A3V-VNB2 today and matched it) | lists "f.144 (no.73) Saluzzo, 27 March 1572" and "f.168 (no.85) Saluzzo, 29 July 1572" with no "(with decipherment)" mark and no plaintext |
+| (f) solver repositories | github.com/dbourdeau/cyphersolver cloned shallow (head a439937, 3 Oct 2026 01:07 -0500), grep birago / 3251 | `SOLVED_CATALOGUE.md` l.243: "Birago and Ceppo to Nevers ... Read in part (checked 22 Sept 2026) ... ff. 11, 21v, 35, 87, 138-174, 184 ... have no published reading". `targets/birago/` is f.119 (1571, figure cipher); no file for f.144 or f.168. aaymeloglu/unsolved-ciphers: the first audits' clone (head 27 Sept) taken as logged |
+| (g) scholarship | OpenAlex (keyed) "Lodovico Birago Saluzzo" (4), "Birago Nevers 1572 letters" (3); CrossRef "Lodovico Birago lettere Nevers Saluzzo" (top 5) | nothing on these letters (indexes of names, architecture, other Biragos). Earlier S2/CORE/HAL/Persée passes taken as logged |
+| (g) JSTOR | rows 155, 205-208 cover other months and phrases; added 3 rows: family (i) Birago/Nevers + marzo/luglio 1572 + cipher keyword; family (ii) "possendone dir male" and "Bellagarda venne davanti" (bare, no cipher keyword) | queued |
+
+Unreachable: Google Books 503 on 4 of 8 print_check calls (one manual retry each answered). Requests: be-api.us.archive.org 8,
+www.googleapis.com 13 (8 + 5 manual), gallica.bnf.fr 15 (14 ContentSearch + 1 IIIF crop), github.com 1 (clone), api.openalex.org 2,
+api.crossref.org 1. No credentials printed. Subagent calls: 0.
+
+## Step 3: classification
+
+| item | scope | class | key | prior plaintext | prior decipherment | evidence | confidence |
+|---|---|---|---|---|---|---|---|
+| no.73, f.144r run, 90 signs (Saluzzo, 27 Mar 1572) | the f.144r run only; **not** the f.144v run (unread) | **N4** | published (Tomokiyo; T42=m ours) | none located | none located: no slip on canvases 146-147; Tomokiyo and Bourdeau list f.144 as unread | the readable text is nil (S 39 isolated letters, no phrase, judge FAIL); the class says only that no prior decipherment was found | moderate on the search; the reading itself is not a reading |
+| no.85, f.168r + f.168v runs, 122 tokens (Saluzzo, 29 Jul 1572) | both runs | **N4** | published (Tomokiyo; T42=m ours) | none located | none located: no slip on canvases 171-172; Tomokiyo and Bourdeau list it as unread | fragmentary cryptanalytic reading (S 92 of 122, a few common words, judge FAIL) | moderate on the search; low on the reading |
+
+N4, not N3: the principal editions (both parts of the 1665 Mémoires searched inside with an answering control term, the BnF
+catalogue, Tomokiyo's page, Bourdeau's catalogue and repository) are covered, the same coverage on which AUDIT2-NEVBIR raised
+nos.71/86/90 to N4. Internal or unpublished work is not excluded: Bourdeau's catalogue says the group is "read in part" by him with
+"no published reading", and his partial work could include these folios. Not N5: no archive or specialist confirmation.
+
+**Safe sentence (both items).** "Under Satoshi Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, the cipher runs
+of Lodovico Birago's letters of 27 March 1572 (BnF fr.3251 f.144r, no.73) and 29 July 1572 (f.168, no.85) give only a fragmentary
+cryptanalytic reading (no letter graded from a key source or a plain text; a language judge fails both). No prior decipherment of
+either passage was located, on the leaves or in print; Bourdeau lists these folios among those he has read in part without
+publishing a reading."
+
+**Unsafe sentence.** "We deciphered Birago's letters of March and July 1572", or "first decipherment" of either: there is no
+reading to speak of on f.144r, f.168 reads in common-word fragments only, the key is Tomokiyo's, and Bourdeau's unpublished partial
+work is not excluded. Any quotation of f.144r "text" is unsafe.
+
+## Step 4: postmortem
+
+1. **Missed cipher run.** NOTES.md table (c) (PREMISE-NEVBIR, 2 Oct) called f.144v-145r "plain"; f.144v (about L05-L06) carries a second
+   cipher run of no.73 (crop above). Bracketed dated correction added to the table row; the f.168 row of the same table already
+   had its omission (the f.168v run) corrected in NEVBIR-168's own section and gets a bracket pointer too. Found, not applied: the
+   f.144v run is a new unit for the orchestrator (transcription, then the same key), not a verifier task.
+2. **Over-claim check.** I grepped this folder's NOTES.md, the PROGRESS.tsv rows "Birago 1572 f.144" and "Birago 1572 f.168", and
+   NEAR.md for first/new/novel/unread/unpublished/solved/cracked. The PROGRESS rows and BIR-* sections say "cryptanalytic result
+   only, no reading claimed"; no over-claim found. The PROGRESS audit-1 cells move to x from this section.
+3. **Rule 7.** A3V-RD7 re-derived f.144r (SAME). f.168's reading was not re-derived in a fresh session; `decode_key.py --check` on
+   `decode_apply.json` is BIR-APPLY's (exit 0). A rule-7 fresh re-derivation of f.168 is still owed before any stage-9 move.
+4. **Second opinions.** Rule 10 requires a SECOND-OPINIONS-QUEUE row at N3 or better; one row SO-NEVBIR-144-168 covers both
+   items (`second-opinions/PROMPT-chatgpt-f144r-f168.md`), framed as a print search, since there is no reading to judge.
