@@ -1,0 +1,146 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+53L_f170v	f170v_L01	17	r	r	2	split	split	r,2,y,P	# # d	# : m		
+53L_f170v	f170v_L01	31	{cross}	{cross}	S	split	split	{cross},S,{AF}	P tz p	o p m		
+53L_f170v	f170v_L01	46	z	z	3	split	split	z,3,2	# tz P	P tz d		
+53L_f170v	f170v_L01	50	S	S	b	split	split	S,b,d,P	P tz d	L		
+53L_f170v	f170v_L01	51	L	L	P	split	split	L,P,2	tz d S			
+53L_f170v	f170v_L02	10	{curl}	{curl}	g	split	split	{curl},g	V m @	d y #		
+53L_f170v	f170v_L02	15	d	d	c	split	split	d,c,S,V	y # @	: : d		
+53L_f170v	f170v_L02	16	:	:	l	split	split	:,l,#,S	# @ d	: d P		
+53L_f170v	f170v_L02	19	P	P	x	split	split	P,x,r,#	: : d	S P #		
+53L_f170v	f170v_L02	35	{curl}	{curl}	g	split	split	{curl},g	y m x	d y :		
+53L_f170v	f170v_L03	11	z	z	L	split	split	z,L,3,2	: : 7	P m y		
+53L_f170v	f170v_L03	27	y	y	g	split	split	y,g,r	@ V #	m x S		
+53L_f170v	f170v_L03	35	r	r	y	split	split	r,y,P	m p a	y d p		
+53L_f170v	f170v_L03	43	y	y	g	split	split	y,g,r	p k a	P x		
+53L_f170v	f170v_L04	10	V	V	d	split	split	V,d,@	p m d	o o m		
+53L_f170v	f170v_L04	13	m	m	S	split	split	m,S,3	V o o	: : d		
+53L_f170v	f170v_L04	20	S	S	P	split	split	S,P,d	t tz 3	o o d		
+53L_f170v	f170v_L04	26	z	z	3	split	split	z,3,2	d tz #	d p x		
+53L_f170v	f170v_L05	1	z	z	3	split	split	z,3,2		d p #		
+53L_f170v	f170v_L05	29	z	z	3	split	split	z,3,2	: : m	m p #		
+53L_f170v	f170v_L06	1	d	d	S	split	split	d,S,V		P y 4		
+53L_f170v	f170v_L06	4	4	4	t	split	split	4,t,+,p	d P y	z m p		
+53L_f170v	f170v_L06	9	r	r	y	split	split	r,y,P	m p #	p m L		
+53L_f170v	f170v_L06	15	d	d	S	split	split	d,S,V	L d z	o o g		
+53L_f170v	f170v_L07	3	d	d	t	split	split	d,t,S,V	z m	m x d		
+53L_f170v	f170v_L07	27	o	o	c	split	split	o,c,a	m a x	m o o		
+53L_f170v	f170v_L08	4	r	r	2	split	split	r,2,y,P	o o d	6 z g		
+53L_f170v	f170v_L08	13	V	V	:	split	split	V,:,@,d	m p #	P p m		
+53L_f170v	f170v_L08	15	p	p	@	split	split	p,@,4,r	# V P	m L P		
+53L_f170v	f170v_L08	21	r	r	S	split	split	r,S,y,P	P a y	t o r		
+53L_f170v	f170v_L08	22	t	t	to	split	split	t,to,4,:	a y r	o r tz		
+53L_f170v	f170v_L08	24	r	r	P	split	split	r,P,y	r t o	tz d S		
+53L_f170v	f170v_L09	6	j	j	7	split	split	j,7,y	S m y	m L z		
+53L_f170v	f170v_L09	12	d	d	S	split	split	d,S,V	z P tz	a P z		
+53L_f170v	f170v_L09	20	r	r	y	split	split	r,y,P	m p #	p m x		
+53L_f170v	f170v_L09	23	x	x	{star}	split	split	x,{star},z,2	r p m	m # y		
+53L_f170v	f170v_L09	30	z	z	tz	split	split	z,tz,3,2	p m S	m p z		
+53L_f170v	f170v_L09	33	z	z	3	split	split	z,3,2	z m p	m p S		
+53L_f170v	f170v_L09	37	z	z	w	split	split	z,w,3,2	m p S	m p		
+53L_f170v	f170v_L09	39	p	p	x	split	split	p,x,4,r	S z m			
+53L_f170v	f170v_L10	16	r	r	y	split	split	r,y,P	d tz #	p m #		
+53L_f170v	f170v_L10	23	z	z	3	split	split	z,3,2	d x #	tz D p		
+53L_f170v	f170v_L10	26	p	p	{swash}	split	split	p,{swash},4,r	z tz D	tz z o		
+53L_f170v	f170v_L10	28	z	z	3	split	split	z,3,2	D p tz	o o j		
+53L_f170v	f170v_L10	31	j	j	7	split	split	j,7,y	z o o	m g P		
+53L_f170v	f170v_L11	3	d	d	8	split	split	d,8,S,V	m S	p : :		
+53L_f170v	f170v_L11	26	@	@	c	split	split	@,c,V,A	tz m p	l P P		
+53L_f170v	f170v_L11	35	j	j	7	split	split	j,7,y	o d z	P z d		
+53L_f170v	f170v_L11	37	z	z	3	split	split	z,3,2	z j P	d p d		
+53L_f170v	f170v_L12	16	z	z	x	split	split	z,x,3,2	m tz P	o o d		
+53L_f170v	f170v_L12	21	j	j	S	split	split	j,S,7,y	o d z	o o P		
+53L_f170v	f170v_L12	25	c	c	a	split	split	c,a,o	o o P	P tz S		
+53L_f170v	f170v_L12	27	tz	tz	6	split	split	tz,6,z,p	P c P	S x m		
+53L_f170v	f170v_L12	28	S	S	y	split	split	S,y,d,P	c P tz	x m L		
+53L_f170v	f170v_L12	36	j	j	7	split	split	j,7,y	p : :	o P tz		
+53L_f170v	f170v_L12	37	o	o	6	split	split	o,6,c,a	: : j	P tz :		
+53L_f170v	f170v_L12	46	j	j	y	split	split	j,y,7	: : m	m		
+53L_f170v	f170v_L13	5	o	o	to	split	split	o,to,c,a	tz p S	p m :		
+53L_f170v	f170v_L13	14	d	d	y	split	split	d,y,S,V	m o o	m p #		
+53L_f170v	f170v_L13	19	z	z	3	split	split	z,3,2	p # tz	z m a		
+53L_f170v	f170v_L13	27	z	z	x	split	split	z,x,3,2	# @ m	m 6 to		
+53L_f170v	f170v_L13	31	z	z	x	split	split	z,x,3,2	m 6 to	m d a		
+53L_f170v	f170v_L13	35	A	A	S	split	split	A,S,@,:	m d a	S tz d		
+53L_f170v	f170v_L14	25	z	z	t	split	split	z,t,3,2	m p m	m p #		
+53L_f170v	f170v_L14	37	D	D	y	split	split	D,y	S z tz	m p #		
+53L_f170v	f170v_L15	3	S	S	t	split	split	S,t,d,P	m p	to x m		
+53L_f170v	f170v_L15	11	a	a	c	split	split	a,c,u	to x m	m o d		
+53L_f170v	f170v_L15	14	d	d	o	split	split	d,o,S,V	a m o	g m #		
+53L_f170v	f170v_L15	22	d	d	x	split	split	d,x,S,V	a d r	: : d		
+53L_f170v	f170v_L15	23	:	:	S	split	split	:,S,#	d r d	: d x		
+53L_f170v	f170v_L15	27	r	r	6	split	split	r,6,y,P	: d x	6 o o		
+53L_f170v	f170v_L15	40	z	z	3	split	split	z,3,2	r o o	m a m		
+53L_f170v	f170v_L16	11	z	z	3	split	split	z,3,2	x m d	m d m		
+53L_f170v	f170v_L16	38	j	j	y	split	split	j,y,7	: : m	P S y		
+53L_f170v	f170v_L17	1	z	z	3	split	split	z,3,2		m o o		
+53L_f170v	f170v_L17	6	tz	tz	to	split	split	tz,to,z,p	o o 6	z d z		
+53L_f170v	f170v_L17	7	z	z	3	split	split	z,3,2	o 6 tz	d z m		
+53L_f170v	f170v_L17	12	S	S	d	split	split	S,d,P	z m p	to x tz		
+53L_f170v	f170v_L17	19	z	z	3	split	split	z,3,2	m x #	m p p		
+53L_f170v	f170v_L17	25	r	r	p	split	split	r,p,y,P	p m y	m o o		
+53L_f170v	f170v_L17	30	z	z	3	split	split	z,3,2	o o g	d o o		
+53L_f170v	f170v_L17	37	r	r	to	split	split	r,to,y,P	p m L	m p d		
+53L_f170v	f170v_L18	13	a	a	o	split	split	a,o,u,c	to x m	P g #		
+53L_f170v	f170v_L18	26	a	a	c	split	split	a,c,u	# g m	g tz d		
+53L_f170v	f170v_L18	35	z	z	3	split	split	z,3,2	S m #	d tz p		
+53L_f170v	f170v_L18	39	4	4	t	split	split	4,t,+,p	d tz p	d z m		
+53L_f170v	f170v_L18	41	z	z	3	split	split	z,3,2	p 4 d	m		
+53L_f170v	f170v_L19	1	o	o	c	split	split	o,c,a		m o o		
+53L_f170v	f170v_L19	13	r	r	y	split	split	r,y,P	d m y	m o o		
+53L_f170v	f170v_L19	19	j	j	y	split	split	j,y,7	o d x	z g d		
+53L_f170v	f170v_L19	20	z	z	3	split	split	z,3,2	d x j	g d tz		
+53L_f170v	f170v_L19	25	p	p	t	split	split	p,t,4,r	d tz m	# : :		
+53L_f170v	f170v_L19	35	0	0	to	split	split	0,to	g m 5	d m p		
+53L_f170v	f170v_L20	24	z	z	x	split	split	z,x,3,2	x tz d	g d P		
+53L_f170v	f170v_L21	15	r	r	y	split	split	r,y,P	P p #	d o o		
+53L_f170v	f170v_L21	23	{curl}	{curl}	g	split	split	{curl},g	m a x	d tz S		
+53L_f170v	f170v_L21	26	S	S	d	split	split	S,d,P	{curl} d tz	f tz m		
+53L_f170v	f170v_L21	27	f	f	g	split	split	f,g,4,6	d tz S	tz m p		
+53L_f170v	f170v_L21	33	z	z	3	split	split	z,3,2	p m #	tz S tz		
+53L_f170v	f170v_L21	35	S	S	d	split	split	S,d,P	# z tz	tz 3 a		
+53L_f170v	f170v_L22	19	r	r	p	split	split	r,p,y,P	P z y	m d m		
+53L_f170v	f170v_L22	30	z	z	3	split	split	z,3,2	: : 7	o o L		
+53L_f170v	f170v_L22	38	S	S	d	split	split	S,d,P	z m #	d p P		
+53L_f170v	f170v_L23	2	y	y	g	split	split	y,g,r	d	tz # m		
+53L_f170v	f170v_L23	6	r	r	y	split	split	r,y,P	tz # m	p m z		
+53L_f170v	f170v_L23	9	z	z	3	split	split	z,3,2	r p m	m a m		
+53L_f170v	f170v_L23	11	a	a	c	split	split	a,c,u	m z m	m g z		
+53L_f170v	f170v_L23	14	z	z	3	split	split	z,3,2	a m g	m : :		
+53L_f170v	f170v_L23	22	S	S	d	split	split	S,d,P	y m Z	d r p		
+53L_f170v	f170v_L23	24	r	r	y	split	split	r,y,P	Z S d	p k d		
+53L_f170v	f170v_L23	31	S	S	d	split	split	S,d,P	tz 6 @	d p #		
+53L_f170v	f170v_L24	9	a	a	o	split	split	a,o,u,c	# m p	P tz m		
+53L_f170v	f170v_L24	18	tz	tz	p	split	split	tz,p,z	m z #	m z m		
+53L_f170v	f170v_L24	22	P	P	y	split	split	P,y,r,#	m z m	p r m		
+53L_f170v	f170v_L25	6	j	j	y	split	split	j,y,7	to x m	m d P		
+53L_f170v	f170v_L25	35	z	z	3	split	split	z,3,2	m x #	m P P		
+53L_f170v	f170v_L25	37	P	P	#	split	split	P,#,r	# z m	P tz :		
+53L_f170v	f170v_L26	1	{curl}	{curl}	g	split	split	{curl},g		d p #		
+53L_f170v	f170v_L26	12	r	r	y	split	split	r,y,P	6 tz L	m S g		
+53L_f170v	f170v_L26	22	tz	tz	z	split	split	tz,z,p	: # m	: : #		
+53L_f170v	f170v_L26	36	j	j	y	split	split	j,y,7	: : a	tz m g		
+53L_f170v	f170v_L26	45	z	z	2	split	split	z,2,3	m p #	7		
+53L_f170v	f170v_L27	2	r	r	y	split	split	r,y,P	{curl}	m g d		
+53L_f170v	f170v_L27	8	z	z	3	split	split	z,3,2	d p #	tz z L		
+53L_f170v	f170v_L27	14	r	r	y	split	split	r,y,P	L m a	P # g		
+53L_f170v	f170v_L27	31	X	X	{X-cross}	split	split	X,{X-cross}	: 7 a	P r g		
+53L_f170v	f170v_L27	33	r	r	a	split	split	r,a,y,P	a X P	g tz p		
+53L_f170v	f170v_L28	8	P	P	y	split	split	P,y,r,#	tz m r	# a z		
+53L_f170v	f170v_L28	14	P	P	S	split	split	P,S,r,#	z P d	m o o		
+53L_f170v	f170v_L28	24	r	r	#	split	split	r,#,y,P	m y P	: z P		
+53L_f170v	f170v_L28	25	:	:	p	split	split	:,p,#,S	y P r	z P z		
+53L_f170v	f170v_L28	26	z	z	S	split	split	z,S,3,2	P r :	P z m		
+53L_f170v	f170v_L28	27	P	P	p	split	split	P,p,r,#	r : z	z m r		
+53L_f170v	f170v_L28	28	z	z	o	split	split	z,o,3,2	: z P	m r m		
+53L_f170v	f170v_L28	29	m	m	o	split	split	m,o,3,S	z P z	r m o		
+53L_f170v	f170v_L28	30	r	r	p	split	split	r,p,y,P	P z m	m o o		
+53L_f170v	f170v_L28	38	g	g	#	split	split	g,#,y,{curl}	7 2 p	m z o		
+53L_f170v	f170v_L28	44	m	m	d	split	split	m,d,3,S	o o L	P		
+53L_f170v	f170v_L28	45	P	P	z	split	split	P,z,r,#	o L m			
+53L_f170v	f170v_L29	3	r	r	y	split	split	r,y,P	m #	P o o		
+53L_f170v	f170v_L29	4	P	P	p	split	split	P,p,r,#	m # r	o o z		
+53L_f170v	f170v_L29	14	r	r	P	split	split	r,P,y	p # a	y # tz		
+53L_f170v	f170v_L29	22	j	j	7	split	split	j,7,y	: o o	tz m g		
+53L_f170v	f170v_L29	29	z	z	2	split	split	z,2,3	m g m	m p #		
+53L_f170v	f170v_L29	43	r	r	y	split	split	r,y,P	p # m	p m x		

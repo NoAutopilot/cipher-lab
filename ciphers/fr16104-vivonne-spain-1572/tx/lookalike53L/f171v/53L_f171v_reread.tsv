@@ -1,0 +1,78 @@
+passage	pos	label	conf	second	note
+f171v_L01	2	tz	M		t with z-like descender
+f171v_L01	20	g	M	y	looped bowl with descender loop
+f171v_L01	21	:	H		first of two dots
+f171v_L01	22	:	H		second of two dots
+f171v_L01	23	7	H	j	clear digit 7 with top bar
+f171v_L01	26	:	M		dot after m-like glyph, label offset
+f171v_L01	27	:	M		dot, label offset
+f171v_L01	46	X_NEW	L	r	tall stroke with left blob, d-like
+f171v_L02	12	d	M	S	tall stroke with left blob, same as neighbours
+f171v_L02	21	d	M	S	tall stroke with left blob after cross sign
+f171v_L02	25	@	H	A	large curl on left of a-body
+f171v_L02	41	d	M	S	tall stroke with left blob
+f171v_L02	45	6	M	f	small closed loop 6 after long s
+f171v_L03	1	z	M	3	flat top bar then curved tail
+f171v_L03	28	:	M		single dot after @
+f171v_L03	29	d	M	S	tall stroke blob sign, big arc is line above
+f171v_L03	36	:	M		dot after x
+f171v_L04	31	d	M	S	tall stroke with left blob
+f171v_L04	34	@	H	A	big left curling loop
+f171v_L04	48	r	M	P	r-like with n hump
+f171v_L05	13	d	M	S	tall stroke with left blob
+f171v_L05	26	o	M	to	small round o
+f171v_L06	7	d	M	S	tall stroke with left blob
+f171v_L06	8	d	M	S	tall stroke with left blob
+f171v_L06	44	c	M	e	small open c-stroke
+f171v_L07	26	z	M	3	flat top bar curved tail
+f171v_L07	41	d	M	x	big loop sign with sweeping upper stroke
+f171v_L07	43	L	H	l	L with hooked ascender
+f171v_L07	47	3	M	z	curly top swash with descender
+f171v_L07	49	P	H		two uprights with top bar
+f171v_L08	5	u	M	c	two open strokes
+f171v_L08	24	f	M	4	diagonal stroke with crossbar
+f171v_L08	26	j	M	J	hooked descender below line
+f171v_L08	42	z	M	3	flat top bar curved tail
+f171v_L09	14	tz	H		t crossed with z descender
+f171v_L09	40	z	M	3	flat top with curl
+f171v_L10	21	z	M	7	hooked top, curved tail
+f171v_L10	28	@	L	p	big loop sign, loop on right
+f171v_L10	33	g	H		looped descender g
+f171v_L10	42	r	L	p	h-like with small loop
+f171v_L11	22	r	M	p	r-like with n hump
+f171v_L11	24	y	H		swash y with lead-in stroke
+f171v_L11	31	6	L	@	loop with leading 6 stroke
+f171v_L11	45	o	M	a	small round sign with tail
+f171v_L12	5	z	M	3	flat top, hook
+f171v_L12	17	r	M	P	r-like at end of word
+f171v_L12	18	V	M	@	long diagonal stroke into loop
+f171v_L12	21	g	H		looped descender g
+f171v_L12	40	g	M	y	lead-in with descender loop
+f171v_L13	1	B	M	S	tall thick stroke with 3-like top
+f171v_L13	12	d	M	S	tall stroke with left blob
+f171v_L13	34	z	M	3	hooked flat top, tail
+f171v_L14	1	r	M	j	tall stroke with hooks
+f171v_L14	5	d	M	S	tall stroke with bottom blob
+f171v_L14	36	V	M	@	long diagonal stroke into loop
+f171v_L15	27	:	M		first dot
+f171v_L15	28	:	M		second dot
+f171v_L15	31	6	M	4	small closed loop with dot on 4 stroke
+f171v_L16	4	V	M	@	long diagonal stroke into loop
+f171v_L16	5	p	L	r	small loop at end of V, hard to separate
+f171v_L16	13	3	L	z	hooked part of compound sign
+f171v_L16	14	tz	L	t	compound t sign, position uncertain
+f171v_L16	30	X_NEW	L		j-like hooked sign
+f171v_L16	44	g	M	y	q-like bowl with tail
+f171v_L18	10	:	H		second dot
+f171v_L18	17	V	M	d	long diagonal stroke into loop
+f171v_L18	43	V	M	@	long diagonal stroke into loop
+f171v_L19	17	S	M	f	tall curved stroke after g
+f171v_L19	44	V	M	@	long diagonal stroke into loop
+f171v_L20	3	c	M	@	small open curl
+f171v_L20	7	@	M		ring loop with cross stroke
+f171v_L20	9	2	M	z	curled top hook with tail
+f171v_L20	18	r	L	p	curl sign between p and d
+f171v_L21	6	t	L	:	L-like flourish with dot
+f171v_L21	12	y	H		swash y with lead-in
+f171v_L21	25	S	M	P	tall curved stroke
+f171v_L21	26	:	M		dot at line end

@@ -1,0 +1,58 @@
+passage	pos	label	conf	second	note
+f171r_L01	4	P	H		pi shape two uprights top bar
+f171r_L01	10	2	M	y	flat top bar with curl, z-like 2
+f171r_L01	21	d	L	S	tall straight stroke with bowl and loop at foot, hard to separate
+f171r_L01	34	P	H		pi two uprights top bar between g and tz
+f171r_L02	22	{swash}	M	S	tall double-stroked swash loop
+f171r_L03	31	V	L	r	V-like stroke joined with r-like hook after #
+f171r_L04	26	u	M	a	tiny open two-stroke form
+f171r_L04	36	3	M	z	z-like with curled descender, top slightly rounded
+f171r_L04	44	{sweep}	M	H	z-like with long looping sweep at end of line
+f171r_L05	1	z	M	3	flat top bar with descender loop
+f171r_L05	9	{omega}	M	a	small open omega-like form
+f171r_L05	10	P	H		pi two uprights top bar
+f171r_L05	37	tz	H	z	t joined to z descender
+f171r_L05	41	j	M	z	dotted j-like descender after tz
+f171r_L06	4	a	M	c	small a with open top
+f171r_L06	20	L	H		L with horizontal foot
+f171r_L06	29	{AF}	M	{cross}	A with crossbar and f-like flourish, heavy ink
+f171r_L06	44	g	M	y	g with hook tail
+f171r_L07	23	d	M	{hook}	round body with large hooked ascender
+f171r_L07	32	g	M	y	g with crossbar
+f171r_L08	41	g	M	{curl}	g with long horizontal bar to right
+f171r_L09	25	l	L	k	c-prefixed stroke, k or l unclear
+f171r_L10	32	g	M	y	g with crossbar between pi and k
+f171r_L11	20	a	M	u	small round a
+f171r_L11	49	g	M	y	g with crossbar
+f171r_L12	17	2	M	z	2 with flat top and curved base
+f171r_L12	23	6	H		digit 6 round loop
+f171r_L12	32	g	M	y	g with crossbar
+f171r_L13	20	y	L	p	swash tail near estimate, uncertain
+f171r_L13	22	tz	M	p	t with crossed stem over z-descender
+f171r_L13	32	{X}	M	{cross}	large X crossing with top bar
+f171r_L15	1	3	M	z	z-like with curled foot
+f171r_L15	10	3	M	z	3 with descender under pi
+f171r_L15	32	3	M	z	3 with descender
+f171r_L16	20	Z	M	z	large Z with looped foot
+f171r_L16	41	{curl}	L	g	7-like hooked stroke between dot pairs
+f171r_L17	5	2	M	z	question-mark-like top with flat
+f171r_L17	23	3	M	z	3 with dot above
+f171r_L17	39	P	M	2	two horizontal bars joined, pi-like
+f171r_L18	1	3	L	s	small s/3 with descender at line start
+f171r_L18	10	g	M	y	g with crossbar
+f171r_L18	33	3	H		round-topped 3 with descender
+f171r_L19	4	3	H		round-topped 3 with descender
+f171r_L19	8	2	M	z	2 with flat top bar
+f171r_L19	36	y	M	r	swash y with tail
+f171r_L20	4	z	M	3	flat-topped z with curl
+f171r_L20	25	c	M	a	small open c
+f171r_L20	26	P	H		pi shape
+f171r_L20	46	@	M	R	large loop curling on left
+f171r_L21	13	+	M	4	cross with crossed descender
+f171r_L22	9	3	M	z	3 with descender
+f171r_L24	34	P	M	r	pi-like with short legs
+f171r_L24	35	x	M	z	small x
+f171r_L26	30	H	M	{H}	H with swash
+f171r_L26	32	@	M		large curling loop with small letters
+f171r_L26	36	V	L	@	stroke with hook near tall stem, unclear
+f171r_L28	23	y	L	z	swash y with tail, smudged
