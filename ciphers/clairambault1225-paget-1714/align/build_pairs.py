@@ -37,7 +37,7 @@ PAIRS = [
     ('P20', 'f65R', [80], "pour Reyne d'Espagne a toutes les belles", {}, []),
     ('P21', 'f66L', [1], "qualites qu'on", {}, []),
     ('P22', 'f66L', [7, 25], "Elle achevera sa 22e annee le 25 Octobre prochain", {}, [25, 31]),
-    ('P23', 'f66L', [44, 77, 96], "ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde "
+    ('P23', 'f66L', [44, 77, 96], "nee le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde "
                                    "Le Visage Rond Les traits fins et", {51: '97'}, []),
     ('P24', 'f66L', [112], "la taille belle", {}, []),
     ('P25', 'f66L', [121, 124], "Moyenne beaucoup", {125: '33'}, []),

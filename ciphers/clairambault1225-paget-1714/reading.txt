@@ -1,5 +1,5 @@
 # clairambault1225-paget-1714 (BnF Clairambault 1225, Paget letters 1714), key.tsv applied by tools/decode_key.py (NEXT2-PAG; regraded PAGET-KEY, 2 Oct 2026)
-# cipher tokens 505: H 50, C 0, S 79, M 363, I 7, U 6. H = key value equals the period-gloss chunk the alignment puts over this very token
+# cipher tokens 505: H 50, C 0, S 77, M 365, I 7, U 6. H = key value equals the period-gloss chunk the alignment puts over this very token
 # (the period interlinear decipherment of that group; align/align_all.tsv via votes.tsv), on a code whose value holds in >=2
 # aligned occurrences; C = keyed token with no aligned chunk of its own, value from the code's other occurrences; M = own
 # chunk disagrees, single-attestation or unsettled code, or an uncertain digit; I = cipher numeral repeating the gloss's numeral;

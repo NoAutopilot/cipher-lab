@@ -138,7 +138,7 @@ f66L	4	41	H	ce	M
 f66L	7	99	H	le	M
 f66L	8	56	H	l	M
 f66L	9	32	H	c	M
-f66L	10	126	H	he	S
+f66L	10	126	H	he	M
 f66L	11	244	H	ve	M
 f66L	12	211	H	at	M
 f66L	13	220	H	sa	M
@@ -164,7 +164,7 @@ f66L	44	175	H	ne	S
 f66L	45	34	H	de	M
 f66L	46	146	H	le	M
 f66L	47	165	H	me	M
-f66L	48	158	H	mo	M
+f66L	48	158	H	mo	S
 f66L	49	38	H	a	M
 f66L	50	46	H	s	M
 f66L	51	95	H	e	M
@@ -226,7 +226,7 @@ f66L	170	4	H	?	U
 f66L	171	19	H	?	U
 f66L	172	600	M	?	U
 f66L	181	155	H	ma	H
-f66L	182	86	H	dame	S
+f66L	182	86	H	dame	M
 f66L	183	145	H	la	M
 f66L	184	90	H	du	M
 f66L	185	32	H	c	M
@@ -454,7 +454,7 @@ f66R	237	30	H	a	M
 f66R	238	147	H	li	H
 f66R	239	233	H	te	H
 f66R	250	155	H	ma	H
-f66R	251	86	H	dame	S
+f66R	251	86	H	dame	M
 f66R	252	145	H	la	M
 f66R	253	90	H	du	M
 f66R	254	32	H	c	M

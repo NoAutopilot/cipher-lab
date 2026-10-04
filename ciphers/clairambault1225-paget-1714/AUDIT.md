@@ -170,3 +170,14 @@ N0 and D1: not a unique solve; no SECOND-OPINIONS-QUEUE row; **no AUDIT 2 due.**
 Postmortem: no over-claiming sentence in the folder. status.json `results` row "Paget from Genoa, 1714: first cryptanalytic attempt
 negative" (25 Sept) is stale -- it describes "four interlinear glosses" and a failed crib attack, before NEXT-PAG found the gloss over
 501/505 tokens; depth fields added there with a verifier note, title left for the parent to replace.
+
+## R5. Propagation after A3V3-PAGR (4 Oct 2026, 06:4x UTC; rule 10, written by the solver-side worker A3V3-PAGR, not a verifier)
+
+The reading changed after R1-R4 in grades only (no value text): per token **H 50, S 77, M 365, I 7, U 6** (was S 79, M 363); firm
+**127/505 (25.1%)**, Letter 1 42/97 (43.3%, unchanged), Letter 2 85/408 (20.8%). Cause: the P23 gloss fix "ne" -> "nee" (R2 finding 5)
+re-ran settle7.py's seed-0 Gibbs path: 158 f66L:48 M -> S (mo 10/10 seeds now), 126 f66L:10 and 86 f66L:182, f66R:251 S -> M
+(he 5/10, dame 6/10 seeds). R2 findings 1-4 (77 ce, 20 qui, 84 cette, 34 e, 38 i) were tested with a pre-registered firm-neighbour pin
+(`align/PREREG_pagr.md`, `align/pin_pagr.txt`): known-answer gate FAIL (11 pinned of 129, all right) -> not applied, still M. Finding 6
+was already applied before R2. Depth stays D1 (status.json depth_pct 25.5 -> 25.1). Class unchanged (N0). Safe sentence: replace
+"129 of 505 tokens firmly (H 50, S 79)" by **"127 of 505 tokens firmly (H 50, S 77)"**. No SECOND-OPINIONS-QUEUE.tsv row exists for this
+target. A rule-7 re-derivation of this state is owed (RD7 after A3V3-PAGR).
