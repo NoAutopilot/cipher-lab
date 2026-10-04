@@ -660,5 +660,19 @@
     "committed": false
    }
   ]
+ },
+ "full_size_fetched_2026-10-04_run4": {
+  "worker": "RUN4-MOR (account 1, LANE-RUN4)",
+  "login": "tools/decode_browser_login.js 8345 <scratchpad> --max-files 1 --delay 1600 --fetch https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P4.jpg: one login, succeeded",
+  "files": [
+   {
+    "record": "DECODE R8345",
+    "file": "IMG_R8345_I38545_P4.jpg",
+    "bytes": 15358430,
+    "sha1": "a4e848953a3afca88f015e0e8efe1395aea137af",
+    "note": "identical to the 2 Oct 2026 fetch; scratchpad only, never committed (BL image)"
+   }
+  ],
+  "requests_de_crypt_org": "login GET+POST, RecordsView, 1 file"
  }
 }

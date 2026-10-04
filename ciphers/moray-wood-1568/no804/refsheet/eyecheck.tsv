@@ -16,3 +16,23 @@ L2.38	A	wide	triangle cut at the left edge, offset; recognisable
 L2.39	Z3	wide	z cut at the top, offset; recognisable
 L2.42	r	wide	r plus the following triangle in one box (merged 2:1)
 L2.21	P	wide	P plus a following x in one box
+# RUN4-MOR re-check, 4 Oct 2026 (~10:52 UTC container clock), after align_boxes.py --eye (eye anchors read on full-size P4, sha1 a4e84895...): the 11 flagged boxes, the 4 wide ones and L1.14/L1.40/L1.41 (the only other boxes the anchors moved; 18 boxes moved in all, every one looked at)
+# position	label	recheck	note
+L2.43	A	ok	triangle, left corner trimmed by the 2:1 midpoint cut of seg 39 (r+A merged); recognisable
+L2.44	N	ok	xn-shape, as L3.39
+L2.45	o	ok	o (seg 41); seg 42 is page edge, now unmatched
+L3.41	F	ok	long f (seg 37 left half; seg 37 is f+N merged)
+L3.42	N	ok	xn-shape (seg 37 right half), f flourish at top-left
+L3.43	Zh	ok	crossed z (seg 38); segs 39-44 fold shadow, unmatched
+L1.15	x	ok	x (seg 13 right half; seg 13 is o+x merged; GAPS5 anchor 14 overridden)
+L2.22	N	ok	n with the tail of P at its left (eye-set box x 3268-3350)
+L1.16	M	ok	loop + 7-hook (segs 14+15)
+L1.43	M	ok	loop + tail (seg 40); Z5's slash at the left edge
+L1.42	Z5	ok	slashed z (seg 39; GAPS5 anchor (40,L) overridden)
+L2.38	A	ok	triangle
+L2.39	Z3	ok	z
+L2.42	r	ok	r with the left edge of A
+L2.21	P	ok	P (eye-set box x 3212-3278), no longer with the n
+L1.41	A	ok	triangle (seg 38 right half); was the slashed z before
+L1.40	r	ok	r (seg 38 left half)
+L1.14	o	ok	o with the left edge of x

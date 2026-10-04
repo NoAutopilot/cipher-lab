@@ -7,7 +7,13 @@ Validated against the 32 position->segment pairs GAPS5 fixed by eye against its 
 (images/pairs_sheets_2026-10-02.py, which numbers glyphs per line without the '|' rows); the agreement count is printed and written to the output header.
 The anchors are hard constraints by default (penalty 5.0 per miss); --free runs without them and is the validation
 figure (26/32 on 4 Oct 2026: the free DP drifts by one or two segments late in L1 and L3, where GAPS5 found merged cuts).
-usage: python3 align_boxes.py [--free] > boxes.tsv"""
+--eye (RUN4-MOR, 4 Oct 2026) adds the eye anchors read on the full-size P4 (sha1 a4e84895...) at the line ends and at the
+boxes RUN3-MOR flagged (no804/refsheet/eyecheck.tsv); they override GAPS5's where both exist (two cases, both boxes RUN3-MOR
+flagged wrong/clipped: GAPS5 'L1.14' 14 -- seg 13 is o+x merged, seg 14 the loop of M; GAPS5 'L1.38' (40,'L') -- seg 38 is r+A
+merged, seg 39 the slashed z (Z5), seg 40 the whole M), and two eye-set boxes replace the DP box
+where the GAPS5 segmentation cut a glyph in two (L2.21 P / L2.22 N). L3 segments 39-44 are fold shadow and stay unmatched.
+--m-left PX (default 0) widens every M box leftward by PX, for the loop of M when it sits in the preceding segment.
+usage: python3 align_boxes.py [--free] [--eye] [--m-left PX] > boxes.tsv"""
 import json, statistics, os
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 G = json.load(open(f'{D}/images/pairs_glyph_boxes_2026-10-02.json'))
@@ -17,9 +23,17 @@ ANCH = {'L1.5': 5, 'L1.8': 8, 'L1.10': 10, 'L1.11': 11, 'L1.14': 14, 'L1.17': 17
         'L1.25': 25, 'L1.27': 27, 'L1.30': 32, 'L1.31': 33, 'L1.34': 36, 'L1.38': (40, 'L'), 'L1.40': 41, 'L1.41': 42,
         'L1.44': 45, 'L2.30': 29, 'L3.3': 3, 'L3.4': 4, 'L3.7': 7, 'L3.14': 15, 'L3.25': 26, 'L3.27': 28, 'L3.28': 29,
         'L3.30': 31, 'L3.31': 32, 'L3.33': 34, 'L3.35': 36, 'L4.1': 1, 'L4.4': 4}
+# RUN4-MOR eye anchors (glyph numbering as ANCH), read on the full-size P4 image 4 Oct 2026
+EYE = {'L1.13': (13, 'L'), 'L1.14': (13, 'R'), 'L1.15': 14, 'L1.36': (38, 'L'), 'L1.37': (38, 'R'), 'L1.38': 39, 'L1.39': 40,
+       'L2.38': 37, 'L2.39': 38, 'L2.40': (39, 'L'), 'L2.41': (39, 'R'), 'L2.42': 40, 'L2.43': 41,
+       'L3.36': (37, 'L'), 'L3.37': (37, 'R'), 'L3.38': 38}
+EYEBOX = {'L2.21': (3212, 3278), 'L2.22': (3268, 3350)}  # x0, x1 on P4; y from the line band
 INF = 1e9
 import sys
 HARD = '--free' not in sys.argv
+GAPS5 = dict(ANCH)
+if '--eye' in sys.argv: ANCH = {**ANCH, **EYE}
+MLEFT = int(sys.argv[sys.argv.index('--m-left') + 1]) if '--m-left' in sys.argv else 0
 def align(L, gidx):
     toks = [(r[1], r[2]) for r in rows if r[0] == L]
     segs = G[L]['glyphs']; n, m = len(toks), len(segs)
@@ -67,14 +81,17 @@ for L in ['L1', 'L2', 'L3', 'L4']:
     for r in rows:  # GAPS5 numbers glyphs per line ignoring '|' rows; ciphertext.tsv's pos counts them
         if r[0] == L and r[2] != '|': g += 1; gidx[f'{L}.{r[1]}'] = f'{L}.{g}'
     for (pos, sign), sg, box, k in align(L, gidx):
+        if '--eye' in sys.argv and gidx[f'{L}.{pos}'] in EYEBOX: box = [EYEBOX[gidx[f'{L}.{pos}']][0], box[1], EYEBOX[gidx[f'{L}.{pos}']][1], box[3]]; k = 'eye'
+        if sign == 'M' and MLEFT: box = [box[0] - MLEFT] + list(box[1:])
         res.append((f'{L}.{pos}', sign, sg, box, k))
 ok = tot = 0; bad = []
 for p, s, sg, box, k in res:
-    if gidx[p] in ANCH:
-        tot += 1; a = ANCH[gidx[p]]; got = sg[0] if len(sg) == 1 else sg
+    if gidx[p] in GAPS5:
+        tot += 1; a = GAPS5[gidx[p]]; got = sg[0] if len(sg) == 1 else sg
         if got == a or (isinstance(a, int) and a in sg): ok += 1
         else: bad.append(f'{p}:{got}!={a}')
-print(f'# align_boxes.py (RUN1-MOR 4 Oct 2026){" anchors as constraints" if HARD else " --free (anchors not used)"}: {len(res)} positions; GAPS5 eye anchors agree {ok}/{tot}' + (f'; disagree {bad}' if bad else ''))
+eok = sum(1 for p, s, sg, box, k in res if gidx[p] in EYE and (sg[0] if len(sg) == 1 else sg) in (EYE[gidx[p]], [EYE[gidx[p]]]) or (gidx[p] in EYE and isinstance(EYE[gidx[p]], int) and EYE[gidx[p]] in sg))
+print(f'# align_boxes.py (RUN1-MOR 4 Oct 2026){" anchors as constraints" if HARD else " --free (anchors not used)"}: {len(res)} positions; GAPS5 eye anchors agree {ok}/{tot}' + (f'; disagree {bad}' if bad else '') + (f'; --eye (RUN4-MOR) anchors met {eok}/{len(EYE)}, eye boxes {len(EYEBOX)}' if '--eye' in sys.argv else '') + (f'; --m-left {MLEFT}' if MLEFT else ''))
 print('position\tglyph_no\tsign\tsegments\tmode\tx0\ty0\tx1\ty1')
 for p, s, sg, box, k in res:
     print(p, gidx[p], s, ','.join(str(x) if isinstance(x, int) else f'{x[0]}{x[1]}' for x in sg), k, *box, sep='\t')
