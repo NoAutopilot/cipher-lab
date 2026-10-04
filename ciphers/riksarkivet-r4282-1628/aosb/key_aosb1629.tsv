@@ -1,0 +1,105 @@
+value	meaning	class	n	n_majority	others	grade	source
+12	a	letter	17	17		C	AOSB I:4 pp.341-342 fn alignment
+13	d	letter	4	3	m:1	C	AOSB I:4 pp.341-342 fn alignment
+14	g	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+16	n	letter	21	21		C	AOSB I:4 pp.341-342 fn alignment
+17	q	letter	7	7		C	AOSB I:4 pp.341-342 fn alignment
+18	t	letter	30	23	d:7	C	AOSB I:4 pp.341-342 fn alignment
+19	x	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+20	a	letter	19	18	e:1	C	AOSB I:4 pp.341-342 fn alignment
+21	d	letter	5	5		C	AOSB I:4 pp.341-342 fn alignment
+22	g	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+24	n	letter	8	8		C	AOSB I:4 pp.341-342 fn alignment
+26	t	letter	11	10	u:1	C	AOSB I:4 pp.341-342 fn alignment
+28	a	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+29	d	letter	5	5		C	AOSB I:4 pp.341-342 fn alignment
+30	n	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+32	n	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+34	t	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+36	b	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+37	e	letter	16	16		C	AOSB I:4 pp.341-342 fn alignment
+38	h	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+39	l	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+40	o	letter	9	9		C	AOSB I:4 pp.341-342 fn alignment
+41	r	letter	9	9		C	AOSB I:4 pp.341-342 fn alignment
+42	u	letter	22	20	v:2	C	AOSB I:4 pp.341-342 fn alignment
+43	i	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+44	b	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+45	e	letter	12	12		C	AOSB I:4 pp.341-342 fn alignment
+46	h	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+47	l	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+48	o	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+49	r	letter	9	9		C	AOSB I:4 pp.341-342 fn alignment
+50	u	letter	14	10	v:4	C	AOSB I:4 pp.341-342 fn alignment
+53	e	letter	14	14		C	AOSB I:4 pp.341-342 fn alignment
+55	l	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+56	o	letter	7	7		C	AOSB I:4 pp.341-342 fn alignment
+57	r	letter	14	12	e:1,s:1	C	AOSB I:4 pp.341-342 fn alignment
+58	u	letter	12	7	e:5	C	AOSB I:4 pp.341-342 fn alignment
+60	c	letter	16	16		C	AOSB I:4 pp.341-342 fn alignment
+61	f	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+62	i	letter	31	30	j:1	C	AOSB I:4 pp.341-342 fn alignment
+63	m	letter	14	14		C	AOSB I:4 pp.341-342 fn alignment
+64	p	letter	8	8		C	AOSB I:4 pp.341-342 fn alignment
+65	s	letter	28	28		C	AOSB I:4 pp.341-342 fn alignment
+68	m	letter	10	6	c:4	C	AOSB I:4 pp.341-342 fn alignment
+69	f	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+70	i	letter	19	19		C	AOSB I:4 pp.341-342 fn alignment
+71	m	letter	4	4		C	AOSB I:4 pp.341-342 fn alignment
+72	p	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+73	s	letter	6	6		C	AOSB I:4 pp.341-342 fn alignment
+76	c	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+77	f	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+78	i	letter	14	12	s:2	C	AOSB I:4 pp.341-342 fn alignment
+79	m	letter	4	4		C	AOSB I:4 pp.341-342 fn alignment
+80	p	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+81	s	letter	7	7		C	AOSB I:4 pp.341-342 fn alignment
+82	n	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+84	t	letter	5	4	u:1	C	AOSB I:4 pp.341-342 fn alignment
+86	b	letter	4	4		C	AOSB I:4 pp.341-342 fn alignment
+87	e	letter	12	12		C	AOSB I:4 pp.341-342 fn alignment
+88	h	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+89	l	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+91	s	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+?7	e	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+F	t	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+M	n	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+N	m	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+O	l	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+Q	i	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+R	h	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+V	e	letter	3	3		C	AOSB I:4 pp.341-342 fn alignment
+Z	a	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+Θ	u	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+Λ	c	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+γ	i	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+λ	e	letter	2	2		C	AOSB I:4 pp.341-342 fn alignment
+П	m	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+Ц	p	letter	1	1		C	AOSB I:4 pp.341-342 fn alignment
+211	armis	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+374	consiliis	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+401	convenire	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+484	destinata	word	2	2		C	AOSB I:4 pp.341-342 fn alignment
+591	electio	word	3	3		C	AOSB I:4 pp.341-342 fn alignment
+895	intellexeris	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+900	intermittas	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+959	legatus	word	2	2		C	AOSB I:4 pp.341-342 fn alignment
+1195	obtulisse	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1209	opportunitate	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1294	perspexeris	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1369	principem	word	3	3		C	AOSB I:4 pp.341-342 fn alignment
+1421	rex (regem/regis)	word	3	3		C	AOSB I:4 pp.341-342 fn alignment
+1440	responsum	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1520	statu	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1775	princeps transylvaniae	word	3	3		C	AOSB I:4 pp.341-342 fn alignment
+1782	hungari	word	0	0		C	edition fn10 only (copy reads Hungarorum; not in the cipher)
+1784	siculi	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1837	regis poloniae	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1839	poloniam	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1856	moschus	word	2	2		C	AOSB I:4 pp.341-342 fn alignment
+1887	rex poloniae	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1973	polonos	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+1974	turca	word	2	2		C	AOSB I:4 pp.341-342 fn alignment
+1980	tartarus	word	2	2		C	AOSB I:4 pp.341-342 fn alignment
+1981	tartari	word	1	1		C	AOSB I:4 pp.341-342 fn alignment
+8?7	inclinare	word	1	1		M	AOSB I:4 pp.341-342 fn alignment

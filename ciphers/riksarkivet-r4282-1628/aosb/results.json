@@ -1,0 +1,54 @@
+{
+ "prereg": "aosb/PREREG-AOSB-PAIRS.md",
+ "control_lofo": {
+  "S": -1.0556,
+  "C": 0.9566,
+  "letters_scored": 830,
+  "null_mean": -1.5703,
+  "null_p99": -1.4839,
+  "null_max": -1.4701,
+  "real_p05": -0.9918,
+  "share_null_ge_S": 0.0,
+  "verdict": "WEAK"
+ },
+ "r4284": {
+  "S": -2.2261,
+  "C": 0.6776,
+  "letters_scored": 273,
+  "null_mean": -1.9986,
+  "null_p99": -1.6704,
+  "null_max": -1.5687,
+  "real_p05": -1.0065,
+  "share_null_ge_S": 0.96,
+  "verdict": "NO FIT"
+ },
+ "control_power_at_target_letters": {
+  "letters": 273,
+  "subsets": 20,
+  "pass_share": 1.0,
+  "S_min": -1.0909,
+  "S_max": -0.995
+ },
+ "r4282_exact": {
+  "S": null,
+  "C": 0.044,
+  "letters_scored": 0,
+  "null_mean": null,
+  "null_p99": null,
+  "null_max": null,
+  "real_p05": null,
+  "share_null_ge_S": null,
+  "verdict": "inapplicable (C < 0.5)"
+ },
+ "r4282_optimistic": {
+  "S": -2.0632,
+  "C": 0.267,
+  "letters_scored": 8,
+  "null_mean": -1.5816,
+  "null_p99": -0.6006,
+  "null_max": -0.3532,
+  "real_p05": null,
+  "share_null_ge_S": 0.82,
+  "verdict": "inapplicable (C < 0.5)"
+ }
+}

@@ -137,3 +137,14 @@ Scripts: gaps53/share_bound.py (--check exits 0); timing rows gaps53/control_cal
 | periodic, P=2, phase reset per line | 2000 permutations | - | TVD 0.135 vs p95 0.160, p 0.36 | no separation |
 | periodic, P=3-8, continuous phase | 2000 permutations each (no positive control run at P>2) | - | no P reaches p95 (lowest P=5: dIC p 0.074, TVD p 0.157) | no separation |
 | periodic_masc solver (family_run.py rows above) | la17, P=2, 3.4% error 3x8 / clean 3x16x200k | 0.101 / 0.181, below gate 0.6 | not run | non-test by this tool |
+
+## AOSB-PAIRS (4 Oct 2026, account 3): fixed-key crossmatch of the 1629 Oxenstierna-Strasburg table (AOSB I:4 letter 231)
+
+Pre-registered in `aosb/PREREG-AOSB-PAIRS.md` before scoring; `aosb/aosb_crossmatch.py --check` re-derives `aosb/results.json`.
+la17 4-gram mean log10/letter, runs >= 4 letters; null = 200 within-class meaning permutations.
+
+| date (UTC) | family | CONTROL (LOFO on the 16 AOSB footnotes) | CONTROL at target size | TARGET | verdict |
+|---|---|---|---|---|---|
+| 4 Oct 2026 | fixed key key_aosb1629.tsv | C 0.957, S -1.056 vs null p99 -1.484 (0/200 >=), real p05 -0.992 | 20/20 subsets of 273 letters pass (S -1.09 to -0.995) | R4284 body: C 0.678, S -2.226 vs null mean -1.999 / p99 -1.670 (0.96 >= real) | NO FIT (control-backed) |
+| 4 Oct 2026 | fixed key, exact shared signs | same | -- | R4282: C 0.044 (lambda only) | inapplicable (C < 0.5) |
+| 4 Oct 2026 | fixed key, capitals -> lowercase shapes | same | -- | R4282: C 0.267, 8 letters | inapplicable (C < 0.5) |
