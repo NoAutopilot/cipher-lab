@@ -4,6 +4,7 @@
   python3 tools/glyph_atlas.py segment --page NAME=IMAGE[@x0,y0,x1,y1] [--page ...] --out DIR [--debug]
   python3 tools/glyph_atlas.py cluster --out DIR [--k 60] [--k-marks 16]
   python3 tools/glyph_atlas.py atlas --out DIR --labels labels.json [--per 10] [--prefer PAGE]
+  python3 tools/glyph_atlas.py atlas --out DIR --from-truth TOKENS.tsv --per 6 --spread --exclude-leaf PAGE [--canonical SHEET.png]
   python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--exclude-page] [--strips DIR2]
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
@@ -44,6 +45,15 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
 cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log relative height and width, PCA(40),
          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
+atlas    --from-truth TOKENS.tsv [--per 6 --spread --exclude-leaf PAGE ... --codes @FILE --canonical SHEET.png --grid 110x110x9]
+         (TX-SHEET, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #4, the palaeographer's alphabet): a per-hand
+         exemplar sheet for line-read passes. TOKENS.tsv names securely read boxes (sid, code, optional grade; --grades
+         filters). Per code, --per tiles from those boxes, never from an --exclude-leaf page (the eval item): with --spread
+         the medoid then farthest-point picks over the classify features (allographs, cramped and wide forms), else the
+         nearest the mean; --trim (0.2) first drops the farthest share of each code's tiles (mis-reads, mis-alignments). Each row: the code, the canonical print shape (--canonical, if given), then the hand's tiles;
+         a code with fewer than --min-secure secure tiles keeps the print shape only. --rows-per-sheet codes per image
+         (one subagent call each): DIR/<prefix>_NN.png plus <prefix>.tsv (code, n_secure, shown, exemplar sids).
+         Page images come from crops/ or, when that gitignored copy is gone, from pages.json.
 atlas    labels.json {"signs": {"<cluster>": "CODE"|"_"}, "marks": {"<cluster>": "MARK"|"_"},
                       "desc": {"CODE": "short description"}}; "_" = not a cipher sign (plain letters, noise).
          Writes DIR/atlas.tsv (code, desc, count, pages, exemplar sign ids, attribute marks seen) and DIR/atlas.png:
@@ -413,6 +423,10 @@ def cmd_cluster(a):
 
 
 def cmd_atlas(a):
+    if a.from_truth:
+        return cmd_atlas_truth(a)
+    if not a.labels:
+        sys.exit('atlas needs --labels (or --from-truth)')
     L = json.load(open(a.labels))
     signs = {r['sid']: r for r in read(a.out, 'signs.tsv')}
     marks = {r['mid']: r for r in read(a.out, 'marks.tsv')}
@@ -467,6 +481,125 @@ def cmd_atlas(a):
         for r in rows_out:
             f.write('\t'.join(r) + '\n')
     print(f'{len(rows_out)} codes, {sum(int(r[2]) for r in rows_out)} signs labelled')
+
+
+def _page_grey(out, page, cache):
+    """crops/<page>.png from 'segment'; when that gitignored copy is gone, the page image named in pages.json."""
+    if page not in cache:
+        cp = os.path.join(out, 'crops', page + '.png')
+        g = cv2.imread(cp, cv2.IMREAD_GRAYSCALE) if os.path.exists(cp) else None
+        if g is None:
+            info = json.load(open(os.path.join(out, 'pages.json'))).get(page, {})
+            g = cv2.imread(info.get('image', ''), cv2.IMREAD_GRAYSCALE)
+            if g is not None and info.get('box'):
+                x0, y0, x1, y1 = info['box']
+                g = g[y0:y1, x0:x1]
+        if g is None:
+            sys.exit(f'no image for page {page}: run segment again (crops/) or fix pages.json')
+        cache[page] = g
+    return cache[page]
+
+
+def _tile(g, r, cell):
+    x, y, w, h = (int(r[k]) for k in 'xywh')
+    m = int(0.2 * max(w, h)); top = int(0.6 * max(w, h))      # keep the marks (dots, ticks) above the sign
+    sub = g[max(0, y - top):y + h + m, max(0, x - m):x + w + m]
+    sc = min((cell - 6) / sub.shape[1], (cell - 6) / sub.shape[0], 3.0)
+    sub = cv2.resize(sub, (max(1, int(sub.shape[1] * sc)), max(1, int(sub.shape[0] * sc))), interpolation=cv2.INTER_CUBIC)
+    t = np.full((cell, cell), 255, np.uint8)
+    y0, x0 = (cell - sub.shape[0]) // 2, (cell - sub.shape[1]) // 2
+    t[y0:y0 + sub.shape[0], x0:x0 + sub.shape[1]] = sub
+    return t
+
+
+def pick_spread(X, per, spread, trim=0.0):
+    """Indices of `per` rows of X: the medoid first (the row nearest the mean), then with spread each next row is the
+    one farthest from all picked so far (farthest-point sampling over HOG + log size: allographs, cramped and wide
+    forms), without spread the next-nearest to the mean. trim: with 5+ rows, the farthest `trim` share from the mean
+    is dropped first, so the spread does not reach for a mis-read or mis-aligned tile (TX-SHEET: a phi in the T86 row)."""
+    if trim and len(X) >= 5:
+        keep = np.argsort(np.linalg.norm(X - X.mean(0), axis=1))[:max(per, int(round(len(X) * (1 - trim))))]
+        return [int(keep[k]) for k in pick_spread(X[keep], per, spread)]
+    if len(X) <= per:
+        return list(np.argsort(np.linalg.norm(X - X.mean(0), axis=1)))
+    d0 = np.linalg.norm(X - X.mean(0), axis=1)
+    if not spread:
+        return list(np.argsort(d0)[:per])
+    pick = [int(np.argmin(d0))]
+    dmin = np.linalg.norm(X - X[pick[0]], axis=1)
+    while len(pick) < per:
+        j = int(np.argmax(dmin)); pick.append(j)
+        dmin = np.minimum(dmin, np.linalg.norm(X - X[j], axis=1))
+    return pick
+
+
+def cmd_atlas_truth(a):
+    """atlas --from-truth: the per-hand exemplar sheet (the palaeographer's alphabet, TX-SHEET 4 Oct 2026)."""
+    signs = read(a.out, 'signs.tsv')
+    idx = {r['sid']: i for i, r in enumerate(signs)}
+    excl = set(a.exclude_leaf or [])
+    by = collections.defaultdict(list)
+    skipped = collections.Counter()
+    for r in csv.DictReader(open(a.from_truth), delimiter='\t'):
+        sid, c = r['sid'], r['code']
+        if sid not in idx:
+            skipped['unknown sid'] += 1; continue
+        if signs[idx[sid]]['page'] in excl:
+            skipped['excluded leaf'] += 1; continue
+        if a.grades and r.get('grade', '') not in a.grades:
+            skipped['grade'] += 1; continue
+        by[c].append(idx[sid])
+    if a.codes:
+        codes = [x.strip() for x in (open(a.codes[1:]).read().split() if a.codes.startswith('@') else a.codes.split(','))
+                 if x.strip()]
+    else:
+        codes = sorted(by)
+    canon = {}
+    if a.canonical:
+        cw, ch, nc = (int(v) for v in a.grid.lower().split('x'))
+        im = cv2.imread(a.canonical, cv2.IMREAD_GRAYSCALE)
+        for n, c in enumerate(sorted(codes)):      # the canonical sheet lays its cells out in sorted code order
+            gx, gy = (n % nc) * cw, (n // nc) * ch
+            canon[c] = im[gy + 24:gy + ch - 2, gx + 2:gx + cw - 2]   # below the cell's printed id
+    bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
+    X = feats(bm, signs, pca_scale='shared')
+    cell, cache = a.cell, {}
+    rows_tsv, strips = [], []
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    for c in codes:
+        ids = by.get(c, [])
+        use = len(ids) >= a.min_secure
+        pick = [ids[k] for k in pick_spread(X[ids], a.per, a.spread, a.trim)] if use else []
+        strip = np.full((cell, (a.per + 2) * cell + 12), 255, np.uint8)
+        cv2.putText(strip, c, (4, cell // 2), font, 0.8, 0, 2)
+        cv2.putText(strip, 'print' if c in canon else '', (4, cell // 2 + 22), font, 0.4, 90, 1)
+        if c in canon:
+            cc = canon[c]
+            sc = min((cell - 6) / cc.shape[1], (cell - 6) / cc.shape[0])
+            cc = cv2.resize(cc, (max(1, int(cc.shape[1] * sc)), max(1, int(cc.shape[0] * sc))), interpolation=cv2.INTER_AREA)
+            y0, x0 = (cell - cc.shape[0]) // 2, cell + (cell - cc.shape[1]) // 2
+            strip[y0:y0 + cc.shape[0], x0:x0 + cc.shape[1]] = cc
+        cv2.line(strip, (2 * cell + 5, 4), (2 * cell + 5, cell - 4), 120, 2)      # print | the hand
+        for k, i in enumerate(pick):
+            t = _tile(_page_grey(a.out, signs[i]['page'], cache), signs[i], cell)
+            x0 = (k + 2) * cell + 12
+            strip[:, x0:x0 + cell] = np.minimum(strip[:, x0:x0 + cell], t)
+            cv2.rectangle(strip, (x0, 0), (x0 + cell - 1, cell - 1), 200, 1)
+        cv2.line(strip, (0, cell - 1), (strip.shape[1], cell - 1), 150, 1)
+        strips.append(strip)
+        rows_tsv.append([c, str(len(ids)), 'hand' if use else 'print-only', ','.join(signs[i]['sid'] for i in pick)])
+    made = []
+    for s0 in range(0, len(strips), a.rows_per_sheet):
+        p = os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}_{s0 // a.rows_per_sheet + 1:02d}.png')
+        cv2.imwrite(p, np.vstack(strips[s0:s0 + a.rows_per_sheet]))
+        made.append(p)
+    with open(os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}.tsv'), 'w') as f:
+        f.write('code\tn_secure\tshown\texemplars\n')
+        for r in rows_tsv:
+            f.write('\t'.join(r) + '\n')
+    nh = sum(r[2] == 'hand' for r in rows_tsv)
+    print(f'{len(codes)} codes: {nh} with {a.per}-tile hand rows (>= {a.min_secure} secure), {len(codes) - nh} print-only; '
+          f'skipped {dict(skipped)} -> {", ".join(made)}')
 
 
 def cmd_crop(a):
@@ -659,8 +792,22 @@ def main(argv=None):
     c.add_argument('--split', action='append', help="re-split one cluster: s52:3 (sign cluster 52 into 3), m10:2")
     t = sp.add_parser('atlas')
     t.add_argument('--out', required=True)
-    t.add_argument('--labels', required=True)
+    t.add_argument('--labels', help='labels.json (cluster-named atlas); not needed with --from-truth')
     t.add_argument('--per', type=int, default=10)
+    t.add_argument('--from-truth', help='TSV with sid, code [, grade]: securely read boxes; writes the per-hand exemplar '
+                                        'sheet instead of the cluster atlas (TX-SHEET, see the docstring)')
+    t.add_argument('--spread', action='store_true', help='--from-truth: pick tiles by farthest-point spread, not nearest the mean')
+    t.add_argument('--trim', type=float, default=0.2, help='--from-truth: drop this farthest share of a code\'s tiles before picking (0.2)')
+    t.add_argument('--exclude-leaf', action='append', help='--from-truth: page never used for exemplars (the eval leaves), repeatable')
+    t.add_argument('--grades', help='--from-truth: keep only rows whose grade is in this string (e.g. CHS)')
+    t.add_argument('--codes', help='--from-truth: every code to show, comma list or @file (default: the codes in the TSV)')
+    t.add_argument('--min-secure', type=int, default=2, help='--from-truth: fewer secure tiles than this -> the print shape only (2)')
+    t.add_argument('--canonical', help='--from-truth: the canonical sign sheet PNG (cells in sorted --codes order)')
+    t.add_argument('--grid', default='110x110x9', help='--from-truth: canonical cell width x height x columns (110x110x9)')
+    t.add_argument('--cell', type=int, default=96, help='--from-truth: tile size in px (96)')
+    t.add_argument('--rows-per-sheet', type=int, default=13, help='--from-truth: codes per sheet image, one subagent call (13)')
+    t.add_argument('--sheet-dir', help='--from-truth: where the sheets go (default --out)')
+    t.add_argument('--sheet-prefix', default='sheet_truth', help='--from-truth: file prefix (sheet_truth)')
     t.add_argument('--prefer', action='append', help='take exemplars from this page first (a native-resolution page)')
     k = sp.add_parser('classify')
     k.add_argument('--out', required=True)
