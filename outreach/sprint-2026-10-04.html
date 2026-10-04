@@ -1,0 +1,126 @@
+<title>Owner Sprint, 4 October</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, grouped by urgency; each task is a tickable row with a time estimate and one link. */
+:root{
+  --bg:#f6f7f4; --surface:#ffffff; --fg:#1d2420; --muted:#5d6a63; --line:#d9ded9;
+  --accent:#2f6b55; --accent-soft:#e3efe9; --warn:#9a5b12; --warn-soft:#f6ecdc; --done:#8a958f;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2320; --fg:#e4ebe7; --muted:#9aa8a1; --line:#2e3833;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --warn:#e2ae66; --warn-soft:#33281a; --done:#66726c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2320; --fg:#e4ebe7; --muted:#9aa8a1; --line:#2e3833;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --warn:#e2ae66; --warn-soft:#33281a; --done:#66726c; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body)}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:28px}
+header{display:grid;gap:6px}
+h1{font:600 clamp(1.7rem,5vw,2.3rem)/1.1 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0}
+.meter{display:flex;align-items:center;gap:10px;font:500 .85rem var(--mono);color:var(--muted)}
+.bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+section{display:grid;gap:10px}
+h2{font:600 .78rem var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0;display:flex;gap:8px;align-items:center}
+h2 .tag{font:500 .7rem var(--mono);letter-spacing:0;text-transform:none;padding:2px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+h2 .tag.warn{background:var(--warn-soft);color:var(--warn)}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
+li input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent)}
+li .t{font-weight:600;min-width:0}
+li .min{font:500 .75rem var(--mono);color:var(--muted);margin-left:6px;white-space:nowrap}
+li .d{grid-column:2;color:var(--muted);font-size:.93rem;min-width:0;overflow-wrap:anywhere}
+li .d a{color:var(--accent)}
+li .d code{font:500 .82rem var(--mono);background:var(--bg);padding:1px 5px;border-radius:4px}
+li.done{opacity:.6}
+li.done .t{text-decoration:line-through;color:var(--done)}
+li.wait .t::after{content:" · not ready yet";font-weight:400;color:var(--warn);font-size:.85rem}
+input:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{color:var(--muted);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Your sprint, 4 October</h1>
+  <p class="sub">Everything that needs a person, in order. Ticks stay on this device. Updated 6:10 pm PDT, 3 Oct.</p>
+  <div class="meter"><span id="count">0 of 0</span><div class="bar"><i id="fill"></i></div></div>
+</header>
+
+<section>
+  <h2>Tonight <span class="tag warn">time-sensitive</span></h2>
+  <ol>
+    <li id="r-confirm"><input type="checkbox" id="c-confirm" aria-labelledby="t-confirm"><span class="t" id="t-confirm">Confirm one sentence in the BnF reply<span class="min">1 min</span></span>
+      <span class="d">It says "Cipher Lab" is your personal, unfunded project with no link to the CipherLab company. Tell me yes, or what to change.</span></li>
+    <li id="r-bnf" class="wait"><input type="checkbox" id="c-bnf" aria-labelledby="t-bnf"><span class="t" id="t-bnf">Reply to the BnF in your own thread<span class="min">3 min</span></span>
+      <span class="d">Draft: <code>outreach/bnf-mercy-reply-2026-10-04.md</code> (French, English beneath). Reply to their message about Espagnol 144 from your own account. Wait for my "checked" note first.</span></li>
+    <li id="r-des" class="wait"><input type="checkbox" id="c-des" aria-labelledby="t-des"><span class="t" id="t-des">Email Dr Camille Desenclos<span class="min">3 min</span></span>
+      <span class="d">Send after the BnF reply. Draft: <code>outreach/desenclos-intro.md</code>, an offer of help only. Copy her address from <a href="https://chssc.u-picardie.fr/camille-desenclos">her university page</a>.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Sort signs <span class="tag">moves readings forward</span></h2>
+  <ol>
+    <li id="r-bir"><input type="checkbox" id="c-bir" aria-labelledby="t-bir"><span class="t" id="t-bir">Birago 1572, round 2<span class="min">10 min</span></span>
+      <span class="d">Your first sort helped f.144. Finish the rest: <a href="https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s">open sorter</a> (ASKS 118).</span></li>
+    <li id="r-arm"><input type="checkbox" id="c-arm" aria-labelledby="t-arm"><span class="t" id="t-arm">Armstrong to Madison 1808 shorthand<span class="min">15 min</span></span>
+      <span class="d">Tomokiyo's target. <a href="https://claude.ai/artifact/R9GrLoF1ajudygVjo4d17N">open sorter</a> (ASKS 128).</span></li>
+    <li id="r-sav"><input type="checkbox" id="c-sav" aria-labelledby="t-sav"><span class="t" id="t-sav">Savary de Lancosme 1587<span class="min">15 min</span></span>
+      <span class="d">The one unread letter, 7,113 signs. Start with "Check these first". <a href="https://claude.ai/artifact/FDkHh2hqX826r9fdxwXFAF">open sorter</a> (ASKS 137).</span></li>
+    <li id="r-more"><input type="checkbox" id="c-more" aria-labelledby="t-more"><span class="t" id="t-more">Smaller sorters, any order<span class="min">5 min each</span></span>
+      <span class="d"><a href="https://claude.ai/artifact/6MT1CLAbNx3iTMpa1yzSCJ">MLH 1976</a> · <a href="https://claude.ai/artifact/RxURcDEas5VU11B95kVoJo">Dinteville f.23r</a> · <a href="https://claude.ai/artifact/U2VPJbNVAm5S5u4ThNTbU1">Florence 1430</a> · <a href="https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL">Sicily 1503</a> · <a href="https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb">Revol 1593</a></span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Send <span class="tag">drafts checked</span></h2>
+  <ol>
+    <li id="r-sendq"><input type="checkbox" id="c-sendq" aria-labelledby="t-sendq"><span class="t" id="t-sendq">Unstick the 6 archive quote requests<span class="min">5 min</span></span>
+      <span class="d">Queued since 26 Sept, none marked sent: Clements, British Library, Belgian State Archives, Dutch National Archives, Dresden, Kansas. Restart your ChatGPT send runner, or tell me if you already sent them.</span></li>
+    <li id="r-fbs"><input type="checkbox" id="c-fbs" aria-labelledby="t-fbs"><span class="t" id="t-fbs">Francis Bacon Society<span class="min">3 min</span></span>
+      <span class="d">Asks whether Mrs Pott's 1896 decipherment of a letter to Anthony Bacon survives. Draft: <code>outreach/francis-bacon-society-pott-1896.md</code>. Address in the draft.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Your machine <span class="tag">local runner</span></h2>
+  <ol>
+    <li id="r-local"><input type="checkbox" id="c-local" aria-labelledby="t-local"><span class="t" id="t-local">Run the JSTOR and local queues once<span class="min">20 min, mostly waiting</span></span>
+      <span class="d">New rows: five Desenclos chapters that aren't open online, and the Kolosova 2017 thesis (Juan Manuel 1521 letters).</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Optional <span class="tag">costs money or can wait</span></h2>
+  <ol>
+    <li id="r-tna"><input type="checkbox" id="c-tna" aria-labelledby="t-tna"><span class="t" id="t-tna">TNA copy order: Wroth's key sheet<span class="min">5 min, paid</span></span>
+      <span class="d">Draft: <code>outreach/tna-sp81-wroth-copy.md</code> (ASKS 121).</span></li>
+    <li id="r-copies"><input type="checkbox" id="c-copies" aria-labelledby="t-copies"><span class="t" id="t-copies">Other archive copy orders<span class="min">when you like</span></span>
+      <span class="d">Each unblocks one target, none blocks current work: ASKS 116, 117, 125, 129 to 136 (Neuenstein, Sigmaringen, Kraków, Modena, Turin, Genoa, Stockholm, BL, TNA, Lambeth, Karlsruhe).</span></li>
+    <li id="r-dups"><input type="checkbox" id="c-dups" aria-labelledby="t-dups"><span class="t" id="t-dups">Delete the 5 duplicate sorter pages?<span class="min">1 min</span></span>
+      <span class="d">Accidental copies from earlier republishing. Say "delete them" and I will; nothing depends on them.</span></li>
+  </ol>
+</section>
+
+<footer>Ask me in chat for the next update; this page changes when I republish it.</footer>
+</div>
+
+<script>
+(function(){
+  const KEY='sprint-2026-10-04';
+  let state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){state={}}
+  const boxes=[...document.querySelectorAll('li input[type=checkbox]')];
+  function render(){
+    let n=0;
+    boxes.forEach(b=>{b.checked=!!state[b.id];b.closest('li').classList.toggle('done',b.checked);if(b.checked)n++;});
+    document.getElementById('count').textContent=n+' of '+boxes.length+' done';
+    document.getElementById('fill').style.width=(boxes.length?100*n/boxes.length:0)+'%';
+  }
+  boxes.forEach(b=>b.addEventListener('change',()=>{state[b.id]=b.checked;try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}render();}));
+  render();
+})();
+</script>
