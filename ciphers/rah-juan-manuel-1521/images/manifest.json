@@ -1,0 +1,103 @@
+{
+ "decode_images": [
+  {
+   "file": "IMG_R9528_I44887_P1.jpg",
+   "sha1": "a0a4087b10a2c35d0d4f0faa0c61e15894ef8ab2",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9528_I44887_P1.jpg",
+   "record": "R9528",
+   "folio": "",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9528_I44887_P2.jpg",
+   "sha1": "9710dd1eb70b9e5c0f6956e28fdd26c7a9c6c12b",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9528_I44887_P2.jpg",
+   "record": "R9528",
+   "folio": "f.194 (cipher)",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9528_I44887_P3.jpg",
+   "sha1": "00df55ebd3abfe54f9b2fabcb558dc16ebb84079",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9528_I44887_P3.jpg",
+   "record": "R9528",
+   "folio": "f.197 (clerk's decipherment)",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9528_I44887_P4.jpg",
+   "sha1": "2abd097c7ccfe35750fd0109a65ab3bceffcafc0",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9528_I44887_P4.jpg",
+   "record": "R9528",
+   "folio": "",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9529_I44892_P1.jpg",
+   "sha1": "4a8bf6906e5ffdda367340e2c612bac830de66f3",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9529_I44892_P1.jpg",
+   "record": "R9529",
+   "folio": "f.201 (clerk's decipherment; 'Claro' marks clear passages)",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9529_I44892_P2.jpg",
+   "sha1": "b7f659f689b0d1918c87a72283f2f41dacb2b5db",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9529_I44892_P2.jpg",
+   "record": "R9529",
+   "folio": "f.199 (cipher, mixed with clear lines)",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9529_I44892_P3.jpg",
+   "sha1": "ff4b081001671f10992b8d249e826b7572f8359a",
+   "size_px": [
+    3528,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9529_I44892_P3.jpg",
+   "record": "R9529",
+   "folio": "f.199v-200 (cipher continues; not used)",
+   "fetched": "04 Oct 2026 00:05 UTC",
+   "by": "JM-ALPHA",
+   "committed": false
+  }
+ ],
+ "note": "DECODE full-size images kept in the session scratchpad only (not public domain); one browser login, 16 requests to de-crypt.org. Crop boxes: crops_jmalpha_manifest.json."
+}

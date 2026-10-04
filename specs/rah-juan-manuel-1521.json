@@ -2,7 +2,9 @@
  "slug": "rah-juan-manuel-1521",
  "name": "Juan Manuel (imperial ambassador, Rome) to Charles V, 1522 -- BRAH Salazar 9/23-9/24, DECODE R9499-R9529 (28 letters); first test on R9501 (7 Mar 1522, no period decipherment in the record) with R9528 (18 Jun 1522) as known answer",
  "date": "1 March - 19 June 1522 (Tomokiyo's list; DECODE date field 1521-1522)",
- "language_candidates": ["es"],
+ "language_candidates": [
+  "es"
+ ],
  "ciphertext": "see ciphers/rah-juan-manuel-1521/ciphertext_f34.tsv (R9501 f.34 lines 1-14) and ciphertext_f194.tsv (R9528 f.194 lines 1-14); 3-letter Latin code groups (nomenclator) mixed with non-Latin alphabet symbols, written '#'",
  "ciphertext_source": "one blind Sonnet pass per page on tools/iiif_lines.py crops of DECODE full-size images IMG_R9501_I44762_P1 and IMG_R9528_I44887_P2 (fetched 3 Oct 2026 22:26 UTC, one browser login; images not committed, DECODE material not public domain); single pass, rough by the reader's own caveat, symbols not segmented",
  "alphabet": "nomenclator codes: lowercase Latin groups of 2-3 letters (Tomokiyo table, ~196 rows); letter alphabet: non-Latin symbols plus some letters, NOT on disk (Tomokiyo's page gives no letter table)",
@@ -25,6 +27,16 @@
    "target": "R9501 f.34 lines 1-14: 100 of 153 plain-letter groups are table codes (0.654; f.194 0.703 -- descriptive, shuffle-invariant); attested-bigram share of adjacent decoded code words 0.725 (29/40 pairs) vs 200 permuted tables mean 0.091 sd 0.061 p95 0.200 max 0.325, rank 1 of 201",
    "control": "known answer R9528 f.194 vs f.197 gloss: LCS precision 0.525 (N 118 decoded words, 202 gloss words) vs permuted mean 0.118 sd 0.026 p95 0.170 max 0.226, rank 1 of 201; same bigram statistic on f.194 0.545 (N 55 pairs) vs p95 0.182",
    "verdict": "the table passes: it reads the known page well above every permuted table at this rough transcription, and the unglossed R9501 page scores as high on the bigram statistic as the glossed page (0.725 vs 0.545) and above every permuted table, so R9501 is in the same nomenclator. Caveats: the null is a uniform value permutation, so a table that merely maps frequent codes to function words would also beat it (a frequency-matched null is not run); es17c is a 1640s corpus (no 16th-c. Spanish corpus); the alphabet layer (about half the signs) is unread, so no running plaintext exists. Next: test 1.",
+   "status_after": "partial"
+  },
+  {
+   "test": 1,
+   "date": "4 Oct 2026",
+   "worker": "LANE-JM JM-ALPHA (account-1 worker)",
+   "method": "ciphers/rah-juan-manuel-1521/scripts/test1.py; 2 blind Sonnet passes per cipher page (f.194, f.199) on tools/iiif_lines.py --follow-slope crops with a shared sign inventory (passes/inventory.md), 1 Sonnet gloss read (f.197 lines 16-31, f.201 whole); tools/interlinear_align.py hard-EM (new --code-chunk / --word-code-prefix options) with Tomokiyo's code words as clear anchors; glyph_atlas tried first and failed on this hand (median component 4 px, bleed-through)",
+   "control": "in sample R9528 f.194 vs f.197: 13 symbol labels valued (6 at C with >=2 agreeing occurrences: Z r 12/30, R s 21/26, A a 18/25, K y 6/10, 9 e 5/5, 4 de 2/6); self-agreement 0.487 (N 150 symbol tokens); 161/249 code words matched by the gloss; err_2reader 0.231",
+   "target": "held out R9529 f.199 vs f.201 (gate witness/gate_alpha.txt pushed in 8fa9f180 before f.201 entered the folder): S = 0.049 (N 82 symbol tokens) vs 200 value-permuted alphabets mean 0.015 p95 0.037 max 0.061, rank 10 of 201; floor 0.24 -- FAIL; held-out alignment anchored only 44/117 code words; err_2reader 0.421 (pass B skipped one crop)",
+   "verdict": "FAIL of the pre-registered gate, logged as untested at this transcription error (held-out reader error 0.42, twice the in-sample page's; label set not stable across pages: f.194 passes used K where f.199 pass A used Q for what is probably one sign). The in-sample values stay C (f.194/f.197 only) or M; none reaches S. Next: settle the sign inventory in the sign sorter (owner) or a third, label-anchored pass on f.199 with reference tiles from f.194, then rerun the same gate unchanged.",
    "status_after": "partial"
   }
  ],

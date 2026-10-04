@@ -147,3 +147,108 @@ Question: is any of the 28 letters already deciphered or printed in clear? Resul
 5. Bergenroth/Gayangos Supplement (1868) and Mattingly's Further Supplement (1940): not located on IA (3 searches; one djvu 404, one guess 503). Unreachable, not a negative.
 Requests: dialnet 2, gredos 3, roderic 2, tdx 1, ciencia.gob.es 2, archive.org ~12, googleapis ~20, wayback 1.
 Consequence for the target: no letter shown to be in clear; premise check stays open on Kolosova. Keep-going step: obtain the thesis annex (owner/LOCAL-QUEUE row for Teseo PDF from the owner's machine, since the cloud route fails TLS; quote the probe line) and grep it. Until then any reading of R9501 is a cryptanalytic result and a possible known-answer collision with an edited letter should be checked first.
+
+## Test 1 (JM-ALPHA, 4 Oct 2026, 00:04-00:2x UTC)
+Brief: .claude/briefs/runs/2026-10-03-acct1-jm-alpha.md (LANE-JM job 2a). Opus worker, Sonnet subagents (5 calls). Premise:
+JM-K found none of the 28 letters printed in clear in what was reachable; Kolosova 2017 (thesis annex) stayed unreachable, so
+everything below is conditional on that annex not already editing R9528/R9529.
+
+Material: one DECODE browser login, 16 requests to de-crypt.org (RecordsView 9528 + 9529, 7 thumbnails, 7 full-size images:
+R9528 P1-P4, R9529 P1-P3 = f.201 / f.199 / f.199v-200). Images in the scratchpad only; sha1s in images/manifest.json.
+R9529's f.199 is not all cipher: about 12 of its 26 lines are written in clear Spanish among the cipher, and f.201 deciphers
+only the cipher stretches, writing "Claro" where a clear passage was left out. f.194 also carries one clear line (L18-20 area).
+
+Crops (pasted):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9528_I44887_P2.jpg --region 1860,200,1620,2200 --out <scratch>/crops --prefix f194 --follow-slope 300 --slope-margin 22 --debug
+  wrote 31 crops   (pitch 62; 4 bands doubled onto one line: a=560/562, 625/630, 1347/1353, 1482/1489 -> 27 distinct lines, all text lines covered; duplicates dropped in test1.py DUP)
+$ python3 tools/iiif_lines.py --image IMG_R9529_I44892_P2.jpg --region 1860,180,1620,2200 --out <scratch>/crops --prefix f199 --follow-slope 300 --distance 48 --slope-margin 22 --debug
+  wrote 27 crops   (default run found pitch 38 = two bands per line; --distance 48 fixed it; L27 blank margin)
+$ python3 tools/iiif_lines.py --image IMG_R9529_I44892_P1.jpg --region 1880,180,1600,2200 --out <scratch>/crops --prefix f201 --follow-slope 300 --slope-margin 15 --debug
+  wrote 24 crops
+$ python3 tools/iiif_lines.py --image IMG_R9528_I44887_P3.jpg --region 1880,180,1620,2250 --out <scratch>/crops --prefix f197 --follow-slope 300 --slope-margin 15 --debug
+  wrote 33 crops
+```
+Overlays checked by eye (f.194, f.199). Crop boxes and slope fits: images/crops_jmalpha_manifest.json.
+
+Atlas route (TRANSCRIPTION.md steps 2-5): `tools/glyph_atlas.py segment --page f194=<f194 region> ; cluster --k 80` gave 3240
+"signs" with median height 4 px: the bleed-through from the verso and the joined cursive break into fragments, and most ink on
+the page is Latin code letters, not alphabet symbols. Sheet 00 inspected: clusters are stroke fragments. Abandoned after about
+5 minutes; no atlas committed. Fallback per the brief: two blind Sonnet passes per cipher page against a shared inventory
+(passes/inventory.md, 15 labels + ?n), pass B read in reverse line order; reconciliation by script (no third reader).
+
+| page | passes | err_2reader (tokens) | agreed symbol tokens | split symbol tokens |
+|---|---|---|---|---|
+| R9528 f.194 (27 lines) | A, B | 0.231 (403 of 524 agree) | 150 | 88 |
+| R9529 f.199 (26 lines) | A, B | 0.421 (197 of 340) | 91 | 114 |
+err_true: not measured (no BENCHMARK-TX row for this hand). Both well above TRANSCRIPTION.md's 5% target. f.199 pass B did not open
+crop L12 (its own report); its ?1/?2 and pass A's Q/K labels are not tied to f.194's, so the label set is not stable across pages.
+Gloss: one Sonnet read of f.197 lines 16-31 (passes/gloss_f197_rest.tsv) and f.201 (passes/gloss_f201.tsv, 22 lines); single
+pass, many [?].
+
+Alignment (tools/interlinear_align.py, options added this job: `--code-chunk N` lets a --code-prefix symbol take up to N letters
+(a syllable sign), `--word-code-prefix P` marks a code group missing from Tomokiyo's table as a word code learned from the gloss;
+offline tests added in tools/tests/test_interlinear_align.py, `ok`). One pair per page: table codes as their words
+(--clear-consumes anchors), symbols @LABEL (0-2 letters), unknown groups %group (0-10 letters), null cost -1.0.
+
+In sample, R9528 f.194 vs f.197 (alphabet.tsv): 161 of 249 code words land on their own word in the gloss; 150 symbol tokens,
+13 labels valued; self-agreement 0.487.
+
+| sign | letter | agree / occurrences | grade |
+|---|---|---|---|
+| R (small raised ro-like sign) | s | 21 / 26 | C |
+| A (alpha) | a | 18 / 25 | C |
+| Z (yogh-like, tail below line) | r | 12 / 30 | C |
+| K (cross / dagger sign) | y | 6 / 10 | C |
+| 9 | e | 5 / 5 | C |
+| 4 | de | 2 / 6 | C |
+| F (long s with loop) | i | 3 / 20 -- mostly takes no letter: probably a null | M |
+| T, V, X, 3, E, 7 | d, ne, an, d, on, i | 1 each | M |
+Grades: C = from the clerk's decipherment, in sample, at least two agreeing occurrences; M otherwise. No H; no S (gate below).
+
+Held out, R9529 f.199 vs f.201. Gate pre-registered in witness/gate_alpha.txt, committed and pushed in 8fa9f180 before
+passes/gloss_f201.tsv entered the folder. Statistic S = share of f.199 symbol tokens whose chunk from a no-prior alignment
+against f.201 equals the R9528 value; null = 200 value-permuted alphabets (the alignment is fixed, the values move, so the
+permutation can change S); gate = S > null max AND S >= 0.24.
+
+| statistic | real | null mean / p95 / max (200) | rank | N | verdict |
+|---|---|---|---|---|---|
+| S, held-out symbol agreement | 0.049 | 0.015 / 0.037 / 0.061 | 10 of 201 | 82 symbol tokens | FAIL (below the null max and the 0.24 floor) |
+| code words anchored (description) | 44 / 117 | -- | -- | -- | -- |
+
+Diagnosis, after the gate (not a re-test): the held-out alignment itself does not hold. Only 44 of 117 decoded code words land
+on their gloss word, and no label repeats a chunk more than twice on f.199 (A: y 2, a 1, gr 1 ...; R: s 2, na 1 ...). The
+decoded code words do follow the clerk's text in order (line 1-3: "digo en ... de la carta ... mayo que ... la veni da del ...
+por ... en lo del", against f.201 "digo en respuesta de la carta de vuestra magestad del ultimo de março que no se ... la venida
+del papa por ... pero yo en lo del capelo"), so the nomenclator reads R9529; the letter layer is what the transcription cannot
+carry yet. Rule 3 matched-control note: the held-out page's reader error (0.42) is about twice the in-sample page's (0.23) and
+the label inventory was not fixed across pages, so this FAIL is logged as **untested at this transcription error**, not as a
+refutation of the alphabet. First attempt with this instrument (rule 3's third-attempt clause not reached).
+
+Reproduce: `python3 scripts/test1.py` (writes results_test1.json, alphabet.tsv, ciphertext_f194_reconciled.tsv,
+ciphertext_f199_reconciled.tsv); `python3 scripts/test1.py --check` exits 1 if stale (ran: up to date).
+Judge: not run. There is no running plaintext candidate, because the letter layer failed its held-out gate.
+Not done: job 2b (R9501 passes and key test), named below; no sorter sheet; R9529's f.199v-200 cipher (P3) fetched but not read.
+
+## Remaining gaps (JM-ALPHA, 4 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S
+- Letter alphabet held out - blocker: not-attempted; test 1 FAILed its gate at reader error 0.42 with an unstable label set; next: settle the sign inventory (tools/sign_sorter.py sheet over f.194 + f.199 symbol tiles, owner sorts) or a third, label-anchored Sonnet pass on f.199 with f.194 reference crops per label, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: not-attempted; two passes only; next: reconciliation pass from the image on the 88 + 114 split symbol tokens (disagreements listed by line in the reconciled TSVs as ~), ~$3
+- R9501 (no period decipherment) passes and key test (job 2b) - blocker: not-attempted; outside this brief; next: two blind passes on R9501 f.34 with the same inventory, decode with alphabet.tsv + Tomokiyo, judge, ~$5 (only worth running after the held-out gate passes)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); the lane orchestrator may extend L17 to name the 28 Juan Manuel dates; without it every reading stays a cryptanalytic result
+- CSP Spain II entries mapped to R-records by date - blocker: not-attempted; not in this brief; next: one script over BHO pp.384-470, ~$1
+
+## Escalation (JM-ALPHA, 4 Oct 2026)
+- [ ] siblings: planned step: compare with Sanchez records of equal length (ciphers/rah-salazar-soria-sanchez-1524-28, Bourdeau sanchez1522) for symbol-shape and table fit
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117 code words)
+- [x] print: CSP Spain II read whole (abstracts only); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images fetched 4 Oct 2026 (sha1 in images/manifest.json), crops and overlays checked
+- [ ] retry: planned step: settle the sign labels (sorter or label-anchored third pass) and rerun the same held-out gate
+Verdict: keep going: 4 internal gaps; cheapest next: CSP date map ~$1, then the label-anchored f.199 pass and gate rerun ~$4
+
+```
+$ python3 tools/gaps_check.py rah-juan-manuel-1521
+OK keep-going rah-juan-manuel-1521: keep going: 4 internal gap(s), 2 step(s) untried
+```

@@ -24,5 +24,17 @@
   "max_tokens": 340,
   "symbols_agreed": 91,
   "symbols_split": 114
+ },
+ "heldout_f199": {
+  "N_symbol_tokens": 82,
+  "S_real": 0.0488,
+  "code_words": 117,
+  "code_words_matched": 44,
+  "null_max": 0.061,
+  "null_mean": 0.015,
+  "null_p95": 0.0366,
+  "of": 201,
+  "rank": 10,
+  "symbol_tokens_all": 91
  }
 }
