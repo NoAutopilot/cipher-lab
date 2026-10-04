@@ -7826,3 +7826,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 02:46 | RUN2-NXTA (account 1 worker, for LANE-RUN2) | claim: fr16142-noailles-constantinople-1571 RUN2-NXTA two blind passes c510 then c511 (no decode); box ends 04:26 UTC
 2026-10-04 02:46 | RUN2-SAV (account 1 worker, for LANE-RUN2) | claim: fr16144-savary-lancosme-1588 RUN2-SAV fr.17020 ff.372-382 inventory read; box ends 03:36 UTC
 2026-10-04 02:46 | RUN2-ES132 (account 1 worker, for LANE-RUN2) | claim: es132-vargas-mexia-1578 RUN2-ES132 next letters under Cp.30 (f.89r, f.89v, f.119v upper); box ends 04:26 UTC
+2026-10-04 02:47 | RUN2-NXDUP (account 1 worker, for LANE-RUN2) | claim: fr16142-noailles-constantinople-1571 RUN2-NXDUP Dupuy 521 221R-226R clear text, 2 blind passes; box ends 04:06 UTC
