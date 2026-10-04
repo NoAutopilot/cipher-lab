@@ -1,0 +1,8 @@
+Reader B (N8-SEU, 4 Oct 2026): one blind Sonnet subagent call on images/kp/f81R_L01..L20_s1/s2.jpg, no access to reader A.
+Self-rated CONFIDENCE 0.35 ("half-images overlap and are low contrast ... shape labels s10-s25 are one-off guesses").
+s1 hatched bar / slashed double bar; s2 lying figure-eight (may be oo); s3 tall stroke / long-s with hook (ff-like flag);
+s4 caret / up-arrow with crossbar; s5 c-like curl with tail; s6 struck oval lens with diagonal; s7 round scroll with flourish;
+s8 "mm" arch ligature; s9 looped w/v (W-like); s10 Q-like loop; s11 small reversed-c hook with stroke; s12 arch with cross on top;
+s13 backwards 5 with bar; s14 "Ar" ligature with bar; s15 pennant triangle-with-tail; s16 hooked s with dot; s17 crossed loop (fi-like);
+s18 long down-right tail; s19 reverse-S hook; s20 bold closed loop with tail; s21 slashed A-like; s22 small k with tail; s23 nine with flag;
+s24 reversed backslash curl; s25 nested C curves. Other labels as given in the prompt (# cross-hatch, ∆ triangle, * star, + cross, = double bar).
