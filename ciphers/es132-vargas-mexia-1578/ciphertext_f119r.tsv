@@ -1,0 +1,26 @@
+# BnF Espagnol 132 f.119r (Gallica btv1b10032556x canvas 116, right page, region 3350,1850,2950,2850), 20 lines (L01 = "Qual ...",
+# first cipher line after the clear opening; L09 ends paragraph 1). Philip II to Vargas Mexia, Madrid 15 Oct 1578, Cp.30; not printed.
+# Transcribed 4 Oct 2026 (RUN1-ES132): two blind Sonnet passes (passes/f119r_passA.tsv, passB.tsv), normalised by passnorm.py;
+# the 62 A/B disagreements settled by a third blind Sonnet call from the crops only (passes/f119r_arbitration.tsv; it saw no key,
+# no text), NOT by this worker, so the decode's Spanish-ness never chose between readings (gate (b) stays uncontaminated).
+line	tokens
+L01	{Qual} 6. 15ρ@s 33+@n 7σ@s 7ρ@s 28 4_@l 16. 16ρ 22σ 10@l 21. 18@s 6σ 18 6. 15ρ 21. 16. 12+
+L02	25σ 10 6. 6. 29σ@m 6. 20+ 15+ 30+ 23σ 15.@2 11+ 22+ 38 21. 24.@n 11+ 20ρ@m 23σ
+L03	{Su} 23.@m 25 17+ 6. 15+ 28? 17. 29+@s 6. 15+ 67+@s 16+ 32. 6+ 7ρ@n 24ρ 6ρ 3 23ρ?
+L04	4@l {gil} 6. 15+@s {lo} 18 30_σ 15+? 10 20+ 13+@m 10ρ@n? {pam}+ 7ρ@n {Sa} y 6ρ 23.
+L05	22+ 8σ 4@n 21. 23σ 4@l 33+ #? 15. 17ρ 18@s 12+ 30_+ 22. 16+@s 4@n 4@s 24. 1+ 25ρ 17ρ
+L06	7⊣ 22. 13@s 6. 16ρ 25.@m 15ρ 6+ 23σ 4@l 18@s 15ρ 10 7ρ@m 6+ 22. 15. 20ρ 32. 13@s
+L07	13@m 4@n 36. 24. 17σ 4@n 6ρ y 10 15+@m 11+@n 6ρ 15+ 12+ 7ρ@n 6. 29σ@m 21. 17ρ 24. 17.
+L08	13 64 21. 6. 24+ {Ham} 23. 28 22+ 18@l 25σ 6+@n 6ρ y 7+ 28.@n 6ρ 6. 23⊣ 28ρ?
+L09	21. 4@s 15ρ 21. 7ρ@n 25σ 3? 17. /
+L10	{Qam} 16. 20. 23+ 6.@l 35ρ@n 7σ 20σ 18 21. 6. 29σ@s 23. 12+ 6+ 6ρ 4@n 3 23+@2
+L11	25σ 15+@2 10 15+@s 35. 6σ 7+@s 6. 17ρ 7. 21+ 43+ 23. 24+? {quam} {ne} 23ρ
+L12	y {quam} 25. 22σ 23σ 16σ 21. 31.@s 7 22+ {de} 4.@n {gum}+ 0+@s 8 y 23σ 15ρ@s
+L13	17ρ 30_.@s 9σ@s 23. 12+@n 10 25 17+ 6ρ 7ρ@n 4 31_. 22ρ {Com} 23. 18 10ρ 17.@m?
+L14	28 22. 23σ@s 24σ@m 10 4@s 24+ 24.@l 20.@s 24+ {d} {de} 4@s 31σ 25σ@s 23. 15ρ 12+
+L15	25σ 10@n 20. 6σ 6ρ 23. 22σ 10 6. {pam} 16ρ 16.@n 24ρ 6+ 23ρ 30. 24ρ 6ρ
+L16	21. 4@l 6σ@s 12σ 29σ 3 23.@2 22ρ@s 36ρ y 23. 25. 22ρ 94 4@n 15ρ@s 21. 23. 12+@n
+L17	10 36. 25σ 6ρ 10 13@n 36ρ 6ρ 29σ@m 25 17+ 24+@n 34+ 25. 10ρ@n? 29ρ 17+
+L18	28 23ρ 30. 4@s 24ρ 12ρ@l 11+ 22. 28ρ {pam} 21. 23σ 18@s 20+ 22.@s
+L19	7 6 3 22. 21. 12+ 6. 10 35ρ 25. 7+@m 15. 12 30_. 13@s y 10 17σ 16. 13@s
+L20	6. 16σ 0+ 7ρ@n 15+ {bmi} 21. 15+ 16+ 24. 22σ 10 22. 21σ 3 22. /

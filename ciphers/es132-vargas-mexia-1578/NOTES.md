@@ -37,8 +37,7 @@ Quote (cabinet-noir README, es132-vargas-mexia): "30 premières lectures avec cl
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
-- f.119 rest (119r, 120r) and f.89-92 decode with Cp.30, locate Teulet's 19 Sept paragraph in f.89 - blocker: not-attempted; f.119v lower paragraph done in test 0; next: test 1 (2 blind passes per page), ~$5 per page
-- Non-ceiling statistic for an unprinted Cp.30 paragraph - blocker: not-attempted; word-cover is at ceiling (null mean 0.92) and es17 judge false-negatives Teulet's own 1578 text; next: build an es16 corpus from Teulet vol.5 + Gachard Spanish letters (~12 min, V6-PTCORP pattern) or score by bigram LM vs shuffled keys, ~$2
+- f.89 letter pages f.89r, f.89v, f.90r, f.91r and f.119 letter pages f.119v upper, f.120r decode with Cp.30 - blocker: not-attempted; test 1 (4 Oct 2026) did f.90v (Teulet's 19 Sept paragraph located there, L10-L26) and f.119r; next: same pipeline per page (crops, 2 blind passes, blind arbitration, test1.py), ~$2 per page
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
 - About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; keys published, Gallica images answer, cabinet-noir may reach them first; next: re-check its git log, pick letters outside its list, ~$6 per 5 letters
 - 3-5 open Cipher 4 (Perez) letters f.87, 157, 179, 136?, 148? - blocker: not-attempted; Cipher 4 table is Tomokiyo's PNG not on disk (IMAGE-QUEUE spanish3vargas*.png); next: fetch the PNGs or use cabinet-noir cle/cipher4_codes_perez.tsv, ~$1
@@ -49,14 +48,14 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [x] siblings: cabinet-noir es132-vargas-mexia read (30 letters, cle/ files); Bourdeau and Aymeloglu have no folder
 - [x] clear-pages: f.169 and f.177 viewed (canvases 166, 174), clerk's decipherments; other facing pages not viewed
 - [x] known-keys: Cp.30 (Alcocer 1921, Devos 1950), Cipher 2 and Cipher 4 (Tomokiyo, Devos) recorded, not applied
-- [x] print: Teulet 15 Oct 1578 = f.119v lower paragraph (test 0, known answer 0.90-0.92 blind); 19 Sept paragraph in f.89 not yet located; Mignet appendix E and CODOIN not located
+- [x] print: Teulet 15 Oct 1578 = f.119v lower paragraph (test 0, known answer 0.90-0.92 blind); 19 Sept paragraph = f.90v L10-L26 (test 1, 4 Oct 2026: blind S_a 0.925/0.918 vs null p99 <= 0.395); Mignet appendix E and CODOIN not located
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [ ] retry: catalogue record 403 and blog threads are the planned retries
-Verdict: keep going: 7 internal gaps; cheapest next: test 1, rest of f.119 + f.89 decode, ~$5 per page
+Verdict: keep going: 6 internal gaps; cheapest next: the remaining pages of the f.89 and f.119 letters with the test 1 pipeline, ~$2 per page
 
 ## While waiting
-Nothing waits on a person: the action that depends on nobody is test 1 (rest of f.119, f.89) above.
+Nothing waits on a person: the action that depends on nobody is the remaining pages of the f.89 and f.119 letters (test 1 pipeline) above.
 
 ## Requests by host (CS-1)
 gallica.bnf.fr 4 images; archive.org 6 advancedsearch + 4 djvu downloads; github.com 3 shallow clones (2 solver repos earlier + cabinet-noir; one WebFetch); de-crypt.org 1 browser login + 12 fetches; WebSearch 9; archivesetmanuscrits.bnf.fr 1 (403, not retried). No credentials printed. Report only; no novelty classification made.
@@ -110,3 +109,41 @@ Read 3 Oct 2026 (fresh shallow clone, depth 50, 12 commits total). Credit: githu
 - Not read there (open in our table): 30 Cipher 3 folios (incl. f.89 and f.119, the two Teulet "Déchiffr. officiel" candidates, neither in their list), 3-5 Cipher 4 (87, 157, 179, 136?, 148?), f.273, f.26-27 (they also leave f.26r uncounted). f.3-4 is Tomokiyo's, f.169/f.177 are clerk clear copies.
 - Consequence: the 30 CN letters are found-solved candidates for those letters (a verifier classifies, rule 10); only the 30+5+2 open folios stay targets. Dates of the open letters are not in this folder's table, so the TSV leaves them blank (next: read dates from Tomokiyo's TOC, no cost beyond disk).
 - Note: "n°39" in CN's table is a result number (f.71), unrelated to our open folio 39.
+
+## Test 1 (LANE-RUN1 RUN1-ES132, account 1, 4 Oct 2026, 00:47-01:0x UTC by the container clock)
+Gate: `python3 tools/intake_gate_check.py es132-vargas-mexia-1578` -> "es132-vargas-mexia-1578: partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0.
+Scope: `cabinet_noir_map.tsv` rows 89 and 119 both `cn_read = no`; neither page dropped. Pre-registration `PREREG_test1.md` committed and pushed (e8c71b2a) before any f.90v/f.119r decode.
+**Where Teulet's 19 Sept 1578 text is.** The f.89 letter runs f.89r-f.91r (canvases 86-88; signed "De Madrid a xix de Sept.e MDLXXVIII"); Teulet vol.5 pp.161-162 (Simancas B.47 n.8, "Déchiffr. officiel"; `teulet_19sep1578.txt`, IA relationspolitiq05teul djvu lines 7922-7943) prints ONE paragraph of it, the Scotland paragraph, which is f.90v L10-L26 ("de [ho] es lo que pa-sa-tes con el [Bul] de [Dul] y se-ña-la..." = "De consideracion es lo que passastes con el embaxador de Escocia, y señaladamente ..."). As with f.119, the rest of the letter is not in Teulet. [ho] = "consideracion" by position only (C-context, one occurrence).
+es16 corpus: `es16/build_es16.py` keeps Teulet vol.5 Spanish paragraphs (844 of 3,936 OCR paragraphs, 695,390 chars), cuts the known-answer window (19 Sept-27 Oct 1578), 5 chronological folds. Leave-one-file-out (`tools/judge_plaintext.py --holdout`): N=300 blended false-negative 60.7% (folds 48.5-66.5%); N=600 70.3% (65.5-76.5%). The standard judge line (real_p05) is therefore unusable with this corpus (its in-sample real_p05 sits far above held-out prose); as pre-registered it is reported, not gated. One source volume, 5 folds: reliability of any real_p05 verdict here is unknown (rule 3 es17c lesson). The gate (b) statistic is relative to decode-level nulls instead.
+Crops (pasted):
+```
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 88 --region 280,850,3000,3950 --out ciphers/es132-vargas-mexia-1578/images --prefix f90v --follow-slope 300 --slope-margin 40 --debug
+ -> region 3000x3950, 27 lines, 27 bands x 2 segments; pitch 134; slopes -0.008..-0.036; wrote 54 crops
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 116 --region 3350,1850,2950,2850 --out ciphers/es132-vargas-mexia-1578/images --prefix f119r --follow-slope 300 --slope-margin 40 --debug
+ -> region 2950x2850, 20 lines, 20 bands x 2 segments; pitch 134; wrote 40 crops
+```
+Both overlays checked by eye (f90v 27 = 9 + 17 Teulet lines + 1; f119r L01 = "Qual ..." to L20; L09 = short paragraph end). No duplicated band this time.
+Transcription: 2 blind Sonnet passes per page (crop paths only, no key, no text). Notation normalised mechanically by `passnorm.py` for both passes alike ('e'->ρ, 'ι'->⊣, trailing '6' on base+6 >= 38 -> σ, mark order). The ι map was first ι->σ and was revised to ι->⊣ after the first scoring run, from the glyph (test 0's reconciled 2⊣); the numbers below are all from the revised map, and pass A has no ι so its numbers did not move.
+err_2reader (token level after normalisation): **f.90v 62/457 = 13.6%**; **f.119r 82/366 = 22.4%** (mostly ρ vs σ on one tail shape).
+Reconciliation: f.90v unprinted lines L01-L09, L27 settled by this worker from the crops; f.90v Teulet lines L10-L26: A/B agreement kept, every disagreement kept as pass A's token marked '?', never settled by eye (this worker had read Teulet). f.119r: all 62 disagreements settled by a third blind Sonnet call from the crops only (`passes/f119r_arbitration.tsv`: 44 B, 13 A, 5 own, 9 still '?'), so neither the decode's Spanish-ness nor this worker chose between readings.
+
+Results (`python3 test1.py`; `--check` exits 1 if stale; `test1_result.json`). Nulls computed before the target in each run.
+| page / part | text | statistic | real | null 1 (p99) | null 2 (p99) | gate |
+|---|---|---|---|---|---|---|
+| f.90v Teulet lines (a) | blind pass A | S_a char-align | 0.925 (tokens 217/249 = 0.871) | key shuffles 0.391 | wrong-Teulet windows 0.347 (501) | PASS |
+| f.90v Teulet lines (a) | blind pass B | S_a | 0.918 (218/250 = 0.872) | 0.395 | 0.352 | PASS |
+| f.90v unprinted L01-L09, L27 (b) | blind pass A | S_b es16 4-gram | -1.064 (318 letters) | token-order shuffles -1.419 | key shuffles -1.837 | PASS |
+| f.90v unprinted (b) | blind pass B | S_b | -1.112 (320) | -1.418 | -1.797 | PASS |
+| f.90v unprinted (b) | reconciled | S_b | -1.048 (322) | -1.396 | -1.801 | PASS |
+| f.90v Teulet lines, calibration (b) | pass A / B | S_b | -1.229 / -1.277 | -1.432 / -1.428 | -1.910 / -1.896 | PASS (gate (b) has power at this N) |
+| f.119r all 20 lines (b) | blind pass A | S_b | -1.268 (708) | -1.427 | -1.861 | PASS |
+| f.119r (b) | blind pass B | S_b | -1.228 (700) | -1.446 | -1.867 | PASS |
+| f.119r (b) | reconciled | S_b | -1.158 (703) | -1.435 | -1.861 | PASS |
+| f.119v (supplementary, not pre-registered: test 0's page re-scored) | pass A / B (a) | S_a | 0.941 / 0.932 | 0.485 / 0.483 | 0.532 / 0.524 | PASS |
+| f.119v unprinted L02-L06 (b) | pass A / B | S_b | -1.376 / -1.239 (120 letters) | -1.463 / -1.358 | -1.748 / -1.731 | PASS (narrow on pass A) |
+ARM-C1: the median token-order-shuffled decode FAILs the standard judge on every page and pass (it sits near -1.50 against a judge null_p99 near -1.95 and real_p05 near -0.78), so the judge is not voided by the shuffled target. But the standard judge FAILs every real decode too, including the known-answer decode and (per the holdout) most real held-out Teulet prose, so judge PASS/FAIL says nothing here; only the pre-registered decode-level gate is read.
+Orthogonality (rule 3): token-order shuffles change the 4-gram contexts across syllable joins, key shuffles change the letters, wrong-Teulet windows change the reference; each can and does move its statistic (the shuffled values above differ from the real ones). The order shuffle keeps within-token syllables, so it is the closer null, as stated in the PREREG.
+Grades (rule 4, reconciled text, `test1_result.json` grades_reconciled): f.90v H 0, C 217 (key tokens agreeing with Teulet's printed decipherment), S 0, M 188, I 0, U 48 (codes, cursive words, unreadable). f.119r H 0, C 0, S 0, M 330, I 0, U 33. No H or C on the unprinted text: key-applied, cryptanalytic result only. Code values: none assigned beyond test 0's C-context [Bul]/[Dul]/[Val]; cabinet-noir complements not consulted in this job.
+Readings: `reading_f90v.txt`, `reading_f119r.txt` (bracketed = unread code). Sense, not graded, by eye: f.90v L09 "lo que toca a la naue-ga-cion de las indias", L27 "... haueis hecho en lo del trigo"; f.119r L10-L20 "me pesa del principio que dezis se ha dado en esa villa a las predicas ... y resistir a esta tempestad ... que el [Rey?] hiziese rostro y severo en los que se han atrevido a introduzir una tan grave ... con la [code] que la materia requiere". Reported as found; not searched in print in this job beyond Teulet vol.5 (not in Teulet: these lines are outside both printed paragraphs).
+Not done (pacing, Usage 7): f.89r, f.89v, f.90r, f.91r, f.119v upper paragraph, f.120r; the spec's `cheap_test_done` (specs/ is outside this job's write scope: suggestion for the lane orchestrator to copy the table above).
+Requests: archive.org 3 (1 download 500, 1 metadata, 1 datanode djvu); gallica.bnf.fr 11 (7 x 1000 px canvases, 2 info.json, 2 native regions). No credentials used. Subagent calls: 5 Sonnet (4 blind passes + 1 arbitration).

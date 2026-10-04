@@ -1,0 +1,35 @@
+# BnF Espagnol 132 f.90v (Gallica btv1b10032556x canvas 88, left page, region 280,850,3000,3950), 27 lines.
+# Philip II to Juan de Vargas Mexia, Madrid, 19 Sept 1578 (letter f.89r-91r), Cp.30. Transcribed 4 Oct 2026 (RUN1-ES132):
+# two blind Sonnet passes (passes/f90v_passA.tsv, f90v_passB.tsv), notation-normalised by passnorm.py, reconciled by this worker.
+# L01-L09 and L27 (unprinted): every A/B disagreement settled from the crops by eye (worker had read Teulet's 19 Sept text,
+# which does NOT cover these lines). L10-L26 (Teulet's printed paragraph): A/B agreement kept; at every disagreement pass A's
+# token is kept and marked '?' -- NOT settled by eye, so the reconciler's knowledge of Teulet cannot leak into these lines.
+# Notation as ciphertext.tsv; {6/2} {2/3} = stacked fraction-like groups in L05 (unread).
+line	tokens
+L01	2⊣ 3 {quam} 8σ 4@n 65+@r 17ρ@s 6. 15ρ 21. 18@s 6σ 27ρ 10 21. 6σ 3 11.
+L02	15⊣? 13@s 4@s 63+ 6. 15+ 17+ 18@s 6. 13@n 6σ 10@s 21. 23. 24ρ 16+ 22ρ@n 10 25?
+L03	23+@2 15ρ@s {Jam} y 6. 15+ 21. 23. 10@r 16+ 25+@n {Qom} 24ρ@r 17+@r 10 22ρ? 8@n?
+L04	21+ 7ρ@n 2ρ@r 16. 10 10 21. 15ρ@2 23. 12+ 12. 7ρ 15+ 37+ 21. 12+ 20
+L05	22.@s {6/2} {2/3} 7σ 6ρ 7ρ@n 25. 17σ@m y 24.@r 17. 13 7⊣ y 6+ 6ρ 6. 23+ 8.@m
+L06	6ρ 15ρ 6. 16+@s 21. 23. 20⊣ 6σ 3 22. 7.@r 7+ 6.@s 24+ 16+ 24. 22σ? 20?
+L07	6. 65+@r 15ρ 24+@n 4@n 1+ {de} 42 15ρ 12+ 25. 13@s 12. 7ρ y 10 6ρ@n 6.
+L08	2⊣ 3 4@l {qua} 6σ 3 11ρ 15⊣ 13@s 28 23σ 20ρ 32σ 10 23.@r 6.
+L09	{Qom} 15ρ 21. 24ρ 7+ 10 15+ 17+ 25. 11+ 7σ 18@n 6. 15+ 13@n 6σ 10@s
+L10	6. {ho}? 4@s 15ρ 21. 20+ 23+@2 24.@s 7ρ@n? 4@l {Bul} 6. {Dul} y 23. 17+ 15+
+L11	15ρ 21. 10 20σ@n? 24+ 13@s 21. 23. 20ρ 32σ 10 12+ 29.@r 4@l 8σ 10@n 6ρ
+L12	7+@s 6. 8σ@l 25+ 18 10 a 21.@l 68+@s 7ρ@n? 15+ y {im}? y 71 8σ 4@r 24+ 21
+L13	29σ? y 62 23. 16σ 22+ 22+ 28 22. 23ρ 25. 22+ 25ρ 21. 16
+L14	25.@n 11+ y 10 23⊣? 118+@s? 6@3? 23. 18@s 6+ 22+ 65 6. 15ρ 25ρ y 22.
+L15	36. 24. 17σ 4@n 6ρ 10@l {qua} {bul} 7ρ@n 10 23. 11⊣? 22+@r 25. 21. 6
+L16	0+ 23. 12+ 22+ 4σ 23. 20⊣ 663? 22. 4@l 72 6. 23⊣? 67+@s y 23.
+L17	8σ? 4@n 21. 16. 65. 13@s 23σ 3 23.@2? 6σ@s 18 15ρ@s 6. 11⊣? 13 23+
+L18	29.@n 10 15ρ 20ρ@r 4 15+@2? 28 23σ 24σ 3 17. 24ρ 6+ 28σ? 10 10@l
+L19	11. 17. 22σ 6. {bum} 4@n 10 21.@l 68+@s 28 7ρ@n 21. 7+? 3? 28 a 21?
+L20	y 4@n 4σ 10 15ρ 21. 18@s 10 20σ@n? 24ρ 4@l {qua} {Bul} 6. 10@n? 244?
+L21	6. 16⊣? 10 22+@s 15. 20ρ 32. 13@s 6. 29σ? 21. 67 6ρ@n 8.@m 17+@r 6σ 11?
+L22	6. 16.@n 6⊣? 7+ 4@n {Na} 6. 15. y? {im}? 21. 6. 55 15. 25ρ 12+ 12.
+L23	4σ 12+ 20ρ 6σ 6ρ {zum} 21. 23. 15. 6. {dom} 15. 4@s 36? 285?
+L24	y 4@l 8σ? 18. 10 16+@n 6+@r 21. 10 35σ 3 24. 4@l {sem} 12+@s 24+
+L25	8+@m 15ρ 15⊣? 16. 13ρ@r y 16+@s 35.@s 24ρ 21. 23. 20⊣ 6σ 3 22. 25ρ
+L26	16σ 24σ 22. 13@s 16σ 35_σ 3 11ρ? 10@l 22. 7+ 25 6ρ 21. 23ρ 25. 1?
+L27	{Quam} 79+ {Ra} 12+ 25. 13@s 12. 7ρ 4@n 15ρ 6.@l 36σ? 11ρ {Rom}
