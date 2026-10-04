@@ -3897,11 +3897,12 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/
 | A3V-VNV01 | fr3993-gonzague NV-01 1st audit | session_019B19W8kdEmHPcGDFLmS6hz | 4 | D 1.63 | N0 (leaf's own decipherment) |
 | A3V-VB3252 | birago-fr3252 f.117/f.36/f.47 1st audits | session_01MqnTqaTqzkB7mNfaktutj9 | 6 | D 4.88 | f.36 N0; f.117r N3; f.47r N3 (6 S letters, no text) |
 | A3V-VNB1 | nevers-birago f.144r + f.168 1st audits | session_01QisaxebCm3yNQwrK79hYXE | 5 | D 3.71 | f.144r N4 (nil as text), f.168 N4; f.144v untranscribed run found |
-| A3V-VPAG | clairambault1225-paget-1714 1st audit | session_013Wg9wEwLFyx36vVUCvih4U | 6 | live | |
-| A3V-V2BIR | f.117r/f.168/f.144r/f.47r 2nd audits + claim scope | session_01PRtvLuJkLtZ9oKybGgPXGa | 6 | live | |
-| A3V-RD168 | f.168 rule-7 re-derivation | session_01H5uHwYAjrzLgQwC9jSH2zR | 3 | live | |
+| A3V-VPAG | clairambault1225-paget-1714 1st audit | session_013Wg9wEwLFyx36vVUCvih4U | 6 | D 2.63 | N0 (leaves' own interlinear decipherment); writer Pierre Paget, consul at Genoa |
+| A3V-V2BIR | f.117r/f.168/f.144r/f.47r 2nd audits + claim scope | session_01PRtvLuJkLtZ9oKybGgPXGa | 6 | D 3.07 | **f.117r N4, counts** (pending rule-7); f.47r/f.144r/f.168 classes, not counted (no text) |
+| A3V-RD168 | f.168 rule-7 re-derivation | session_01H5uHwYAjrzLgQwC9jSH2zR | 3 | D 1.40 | SAME 122/122 |
+| A3V-RD117P | rule-7 f.117r + Paget current | session_014ZN1WdX3JCf5Jdwr2tVhBr | 4 | live | |
 
-Open: wave 3 live (VPAG, V2BIR, RD168). Workers ledgered 32.51 at 03:3x. For the parent: hellen R1953 now has two N3 audits -- status.json result entry (key period, claim_scope recovered-passages, 456/846). f.144v ~24-sign run untranscribed (a unit). Morillo 4 key signs `ours` (AUDIT 2, not applied to status.json). Research note for the owner: research/TRANSCRIPTION-PRACTICE-2026-10-04.md.
+Open: A3V-RD117P live (last job). Workers ledgered 39.61 at 03:5x. For the parent: hellen R1953 now has two N3 audits -- status.json result entry (key period, claim_scope recovered-passages, 456/846). f.144v ~24-sign run untranscribed (a unit). Morillo 4 key signs `ours` (AUDIT 2, not applied to status.json). Research note for the owner: research/TRANSCRIPTION-PRACTICE-2026-10-04.md.
 
 ## LANE NEAR3 handoff (session_01Au8dSL1TXFoCk5P5opEMVv, account 2), 4 October 2026 (closed 03:0x UTC: budget spent)
 
