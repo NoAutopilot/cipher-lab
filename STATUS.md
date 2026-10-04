@@ -4106,6 +4106,35 @@ ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothin
 - Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
   "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
 
+## LANE NEAR8 handoff (session_01HcZrXzQiZna9e3nfwzFqh6, account 2), 4 October 2026 (closed 17:4x UTC: lane cap reached)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near8.md`; worker briefs `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`, `-wave2.md`, `-wave3.md`.
+14 workers USD 56.02 (10 D, 4 D-: N8-THUR 10.91/9, N8-GRA3 6.40/4, N8-THUR2 2.87/1.5) + orchestrator ~5.0 = ~61 of 60; all ledgered and archived;
+no check-in armed. Theme: known plaintext (MARY-STUART-METHOD), one pre-registered known-answer test per target, control first. Nothing called
+new or read beyond grade; no status line, status.json or NEAR.md edited (account 3). NEXT-STEPS.tsv regenerated at close.
+- **fr2980-gramont -- known-answer PASS on a sibling letter in the same key** (N8-GRA, -GRA2, -GRA3). fr.3038 no.19 (decipherment of 27 Feb 1530)
+  has no cipher original located. Le Grand III p.399 is the Dechiffrement to the king; the 28 Mar 1530 letter to Montmorency is pp.454-457, cipher original
+  fr.3040 no.6 = Gallica btv1b9059870w canvases 32-34 (f.18r-19r). key.tsv vs print: f.18r L01-L10 0.838 (308 keyed) and f.18v + f.19r top 0.871
+  (707 keyed) vs shuffled-print p99 0.35/0.33 and shuffled-key p99 0.31/0.30, planted controls pass. ST = L now C in key.tsv (4/4, eye-checked) --
+  **VERIFIER WANTED (account 3)**. z A->R conflict 23/26 listed, not changed; next: z image check ~$1; f.18r L11-L26 unread.
+- **thurloe-printed** (N8-THUR, -THUR2, -THR7). Boundary test v3 on new material (pp.274/277/279 + both decipherments from the image; same gate, not
+  a fourth tuning) PASS: K 68.8% (gate 60), CONFIRM 83.6% (gate 80) vs W 0/52. 67 and 153 M->C; 32/33/38 M->H against Tomokiyo's stamford table.
+  P4 H73 C342 M3 U6 of 424 (H/C 97.9%), no letter changed. Rule-7 fresh re-derivation SAME (0/424). **For account 3:** status.json depth_pct 94.8 -> 97.9;
+  depth re-check; AUDIT + SO-THURLOE-P4 already carry the revisions.
+- **costabili-modena-1491** (N8-COS). Group-level crops (cipher group + gloss above), a different instrument from the retired line crops: pass A 0.575,
+  B 0.459 vs shuffle p95 0.244/0.219 and floor 0.430, PASS; 10 sign values at C (9 agree with decode-1168). **VERIFIER WANTED (account 3).** Vestigia
+  2977 = R1166, 2955 = R1165.
+- **fr16142-noailles-constantinople-1571** (N8-NOX, -NOX2). Basin PASS (six locked runs share one key, 0.601 vs non-locking p99 0.273 / shuffled-Dupuy
+  max 0.384); c262-bridge key tie FAIL as registered (degenerate control), count-based re-registered tie PASS with a small margin (7/17 vs p99 4/5, max 5).
+  All M. Next: decode c511/c262 with the consensus key + shuffled control.
+- **fr15575-syllabic-1592-95** (N8-NV05, -NV05B). f.228 L01-L04 gloss re-read PASS 0.674 vs p99 0.233; L05-L08 registered FAIL 0.439 (floor 0.60; p99
+  0.204); pooled 0.549 ungated. Next: anchored per-band gloss calls (different instrument) ~$4.5. **Flag:** NOTES status line still `blocked` with 3
+  workable gaps.
+- **Non-tests (not negatives):** fr3151-seure-1558 (nomenclator control 0/3 at the reads' err 0.484; the SEURE-KP letter FAIL was bracketed only to 40%,
+  so it reads as a non-test too; next: reconcile A/B to err < 0.24; status line `blocked` -- account 3 may consider `partial`); baluze167 168 f.246-247
+  (readers cannot label this hand; c511-512 Gallica 404/500); birago-fr3252 f.100r/f.119 numerals (power control 0/20; next f.138 ~$1).
+- Lesson (D- x4): post-PASS self-audits and multi-line read batches ran over because units were priced per job, not per pass (Usage 6 AX-COMP2).
+
 ## LANE NEAR7 handoff (session_011jxC5ygqRnFKn5qTCJAPNz, account 2), 4 October 2026 (closed 14:1x UTC: backlog within cap spent)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near7.md`; worker briefs `.claude/briefs/runs/2026-10-04-ytbiz-near7-wave1.md` (waves 1-5). 9 workers
