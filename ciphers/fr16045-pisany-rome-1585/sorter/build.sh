@@ -6,9 +6,14 @@ O=$1; T=ciphers/fr16045-pisany-rome-1585; mkdir -p "$O"
 # PIS-RECUT (4 Oct 2026): deskewed strips, one tile per sign cut from its own ink (recut.py; the v2 cut is signs_v2.tsv,
 # made by build_inputs.py + tighten_tiles.py, kept for the record and no longer run here).
 python3 $T/sorter/recut.py
-python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labels.tsv --pages $T/sorter/pages \
-  --focus $T/sorter/focus.tsv --auto-clusters 4 \
-  --focus-note "Tiles whose cut did not line up with either machine reader's column, the most frequent shapes first (at most two per shape): each started in the pile its shape most often sits in, so check that pile. Each tile is one sign cut from its own ink on a straightened line; a tile that still holds two signs or half of one goes to BAD-CUT." \
+python3 $T/sorter/small_pile.py
+python3 -c "import sys;L=open(sys.argv[1]).read().split(chr(10));o=[]
+for l in [x for x in L if x][:30]:
+  sid,cap=l.split(chr(9),1); o.append(sid+chr(9)+cap.split(';')[0].split(':',1)[-1].strip()+'. Right pile, another sign, or a bad cut?')
+open(sys.argv[2],'w').write(chr(10).join(o)+chr(10))" $T/sorter/focus.tsv $T/sorter/focus30.tsv   # 30 most useful, one-line captions (owner: efficient)
+python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labels_small.tsv --pages $T/sorter/pages \
+  --focus $T/sorter/focus30.tsv --auto-clusters 4 \
+  --focus-note "Tiles the machine readers did not line up with, most frequent shapes first. Each started in the pile its shape most often sits in." \
   --title "Pisany 1585 Sign Sorter" \
   --lede "BnF fr.16045 f.75r (Gallica canvas 156), Pisany to Henry III, Rome, 17 June 1585: 1,290 tiles from 22 straightened cipher lines, one sign per tile. Piles start from two blind machine readers who agreed on only 57% of signs: a plain name (S15) is a sign both read the same, S10/S41 a split, +1r a sign only one reader saw. Pile names are cells of the published 1585 table, shape labels, not letters. Merge piles that are one sign, split piles that mix two, move single tiles, set aside non-signs and bad cuts." \
   --thumb 80 --tile-quality 60 --page-scale 0.5 --page-quality 50 \
