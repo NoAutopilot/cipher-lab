@@ -1,0 +1,19 @@
+Pre-registered gate, JM-ALPHA test 1 held-out (rah-juan-manuel-1521), written 04 Oct 2026 00:18 UTC, committed and pushed BEFORE
+passes/gloss_f201.tsv (the clerk's decipherment of R9529 f.199) is placed in this folder or scored.
+(f.201 was transcribed by a Sonnet pass into the session scratchpad; this worker has not compared it with any
+decode and has not run the held-out branch of scripts/test1.py.)
+
+Alphabet under test: alphabet.tsv as committed with this file (13 labels, from R9528 f.194 vs f.197; all 13 rows,
+C and M alike, are used).
+Statistic S: share of R9529 f.199 symbol tokens (reconciled A/B passes, labels present in alphabet.tsv) whose chunk,
+from tools/interlinear_align.py's hard-EM alignment of f.199 against the f.201 gloss run with NO prior (the same
+aligner settings as the in-sample run: --code-prefix @ --word-code-prefix % --clear-consumes --code-chunk 2,
+null cost -1.0, max chunk 10, nomenclator codes as clear anchors), equals the R9528 alphabet value of that label.
+Only symbol positions count, so the nomenclator layer cannot carry S (it only anchors the alignment).
+N = the number of such f.199 symbol tokens, as the script reports it (not known at the time of writing).
+Null: 200 alphabets with the R9528 values permuted among the 13 labels (random.Random(seed).shuffle, seeds 1..200);
+the alignment is fixed, the values move, so the permutation CAN change S (rule 3 orthogonality).
+Gate: PASS iff S_real > max(null) AND S_real >= 0.24 (absolute floor = half the in-sample self-agreement 0.487 on
+f.194, N=150). Anything else is FAIL; a FAIL keeps every alphabet value at C (in-sample) or M, never S.
+Rule 3 matched-control note: the held-out page has the higher reader error (f.199 err_2reader 0.421 vs f.194 0.231),
+so a FAIL at this error is "untested at this transcription error", not a refutation of the alphabet.

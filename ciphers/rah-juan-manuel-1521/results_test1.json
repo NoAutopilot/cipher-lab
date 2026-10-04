@@ -1,0 +1,28 @@
+{
+ "f194": {
+  "agree_tokens": 403,
+  "err_2reader": 0.2309,
+  "lines": 27,
+  "max_tokens": 524,
+  "symbols_agreed": 150,
+  "symbols_split": 88
+ },
+ "f194_align": {
+  "code_words": 249,
+  "code_words_matched": 161,
+  "gloss_letters": 1751,
+  "insample_n": 150,
+  "insample_symbol_selfagree": 0.4867,
+  "labels": 13,
+  "labels_with_value": 13,
+  "symbol_tokens": 150
+ },
+ "f199": {
+  "agree_tokens": 197,
+  "err_2reader": 0.4206,
+  "lines": 27,
+  "max_tokens": 340,
+  "symbols_agreed": 91,
+  "symbols_split": 114
+ }
+}

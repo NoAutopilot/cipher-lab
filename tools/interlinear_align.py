@@ -77,6 +77,13 @@ agreement against the same run on the codes in shuffled order. Without either fl
 --keep-fs (2 Oct 2026, NEVBIR-87ALIGN, nevers-birago-fr3251-1572): the f == s fold exists for OCR of a printed
 long s; a clear sheet read by eye from a manuscript has no long-s confusion, and a cipher with distinct f and s
 signs needs the two kept apart in the counts. Default unchanged.
+
+--code-chunk N (4 Oct 2026, JM-ALPHA, rah-juan-manuel-1521): with --code-prefix, let a prefixed code take up to N
+plain letters instead of 0-1, for a letter alphabet that may also carry syllable signs (Juan Manuel 1522: symbols
+among word codes; the word codes are written into the pairs as their decoded clear words with --clear-consumes).
+Default 1 reproduces the --code-prefix behaviour exactly. --word-code-prefix P (same job): with --code-prefix, a token
+marked P (e.g. "%kig", a code group missing from the published table) is a word code taking 0..--max-chunk letters,
+learned from the plain text like an above-floor numeral; its value keeps the prefix in the key.
 """
 import csv
 import itertools
@@ -145,6 +152,8 @@ def cmd_pairs(djvu, first, last, out):
 MAX_DIGITS = 3      # --digits
 WORD_PRIOR = False  # --word-prior
 FOLD_FS = True      # --keep-fs turns this off
+CODE_CHUNK = 1      # --code-chunk N: a --code-prefix code may take up to N plain letters (default 1)
+WORD_PFX = None     # --word-code-prefix P: with --code-prefix, a token marked P is a word code (0..--max-chunk letters)
 
 
 def classify_token(tok, code_prefix=None):
@@ -153,6 +162,8 @@ def classify_token(tok, code_prefix=None):
     numeral, a word in clear, or any token not marked as a code in --code-prefix mode),
     doubtful (value None)."""
     if code_prefix is not None:
+        if WORD_PFX and tok.startswith(WORD_PFX):
+            return 'num', WORD_PFX + tok[len(WORD_PFX):]
         if tok.startswith(code_prefix):
             return 'code', tok[len(code_prefix):]
         return 'clear', None
@@ -235,8 +246,8 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null
             elif kind == 'clear':
                 lens = [0]
             elif kind == 'code':
-                lens = [0, 1]  # always floor: --code-prefix mode has no word/name codes
-            elif kind == 'num' and val < floor:
+                lens = range(0, CODE_CHUNK + 1)  # floor by default (0-1); --code-chunk N for a syllable sign
+            elif kind == 'num' and not isinstance(val, str) and val < floor:
                 lens = [0, 1]
             else:
                 lens = range(0, max_chunk + 1)
@@ -455,6 +466,14 @@ if __name__ == '__main__':
         if '--word-prior' in a:
             WORD_PRIOR = True
             a = [x for x in a if x != '--word-prior']
+        if '--word-code-prefix' in a:
+            k = a.index('--word-code-prefix')
+            WORD_PFX = a[k + 1]
+            del a[k:k + 2]
+        if '--code-chunk' in a:
+            k = a.index('--code-chunk')
+            CODE_CHUNK = int(a[k + 1])
+            del a[k:k + 2]
         if '--keep-fs' in a:
             FOLD_FS = False
             a = [x for x in a if x != '--keep-fs']

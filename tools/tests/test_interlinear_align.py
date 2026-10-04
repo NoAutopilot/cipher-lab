@@ -110,6 +110,19 @@ def main():
     assert km['9']['agree'] == '2' and km['9']['others'] == 's:1', km
     kd = run(mix, '--floor', '100')
     assert kd['9']['agree'] == '3' and kd['9']['others'] == '', kd
+    # --code-chunk 2 (JM-ALPHA, 4 Oct 2026): a prefixed sign @S standing for the syllable 'en' between clear words;
+    # with the default (0-1 letters) it can never read 'en'
+    cc_pairs = [['1', 'que en el', '1', 'que @S el'], ['2', 'de en la', '2', 'de @S la'],
+                ['3', 'yo en su', '3', 'yo @S su']]
+    kc = run(cc_pairs, '--code-prefix', '@', '--clear-consumes', '--code-chunk', '2', '--null-cost', '0')
+    assert kc['S']['meaning'] == 'en', kc
+    kc1 = run(cc_pairs, '--code-prefix', '@', '--clear-consumes', '--null-cost', '0')
+    assert kc1.get('S', {}).get('meaning') != 'en', kc1
+    # --word-code-prefix %: a word code missing from the table (%k) learns its word from the plain text
+    wc2 = [['1', 'que alla en el', '1', 'que %k @S el'], ['2', 'de alla en la', '2', 'de %k @S la']]
+    kw = run(wc2, '--code-prefix', '@', '--word-code-prefix', '%', '--clear-consumes', '--code-chunk', '2',
+             '--null-cost', '0')
+    assert kw['%k']['meaning'] == 'alla' and kw['S']['meaning'] == 'en', kw
     print('ok')
 
 
