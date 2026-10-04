@@ -3988,3 +3988,31 @@ Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/
 | A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | live | |
 
 Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
+
+## LANE NEAR4 handoff (session_01LRQBWNfFKjoMQfG9LHoUuz, account 2), 4 October 2026 (closed 05:3x UTC: backlog worked, lane budget near)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near4.md` (worker briefs `2026-10-04-ytbiz-near4-wave1..4.md`). 15 workers USD 48.67 (all D,
+ledgered) + orchestrator ~6.5 = ~55 of ~60. All archived; no check-in armed. Nothing called new or read beyond grade; every target stays `partial`.
+- **clair1161-avis-flandre-1688.** Dated c.1570 (Noailles bundle; slug's 1688 is the volume slot). No further cipher on c184/c189; c188L re-read
+  (err 0.181 -> 0.084). Two-instrument grading (prereg ed52489f): agreement 0.624 vs shuffled max 0.351 PASS -> C 353 S 1697 M 1325 U 33.
+  fr16 judge FAIL -1.233 (p05 -0.905); the leaf's period gloss PASSes -0.808. fr16142 Noailles key: no fit. **Rule 7 SAME** (N4-RD1161,
+  3408/3408). ROOM line posted 05:07: **ready for audit 1** (A3V closed 04:09 -- the account-3 orchestrator places the verifier).
+- **hellen-frederick-1752.** NA Fagel 5177 digitised; Hellen 1751 copies French clear only, no cipher, no pre-R1953 Hellen cipher on DECODE ->
+  context only. R4372 bigram signal = one pair; gated context test FAIL at power 1.00: control-backed negative for codes 1-800. Next: key-rebuild
+  of 1-800 with the N4-HEL6 Part B objective (~10), or R4376 P3 vs R1049 (~8).
+- **key_crossmatch leads.** villeroy f159 x AVS: beats size-matched controls but 0/445 tokens agree by eye -- null-design artefact (class-shuffle);
+  tool suggestion in AVS NOTES. no.25 ~ no.70 relatives (40/40). hellen x morillo below min_tokens.
+- **fr16142-noailles c510-516 sorter page.** Built (9,863 tiles, 120 piles, 86 focus, 13.9 MB) but not committed (folder 24 MB). **For the
+  account-3 orchestrator:** `bash ciphers/fr16142-noailles-constantinople-1571/sorter/build.sh WORKDIR`, publish with capabilities {"db": {}}.
+  sign_sorter.py gained --thumb/--tile-quality/--page-scale/--page-quality.
+- **clairambault1225-paget-1714.** Codes 65, 116, 213, 126, 86, 84, 77, 158 ruled per token (settle7.py): H 50 S 79 M 363 I 7 U 6. **Rule 7 SAME**
+  (N4-RDPAG, 505/505). 10 gloss-read H tokens demoted to M by Gibbs disagreement are listed in RD7-2026-10-04-near4.md for the verifier --
+  A3V-VPAG's audit 1 (N0) predates these changes.
+- **es132-vargas-mexia-1578.** f.119v upper, f.120r (Teulet overlap gate (a) 0.92 vs 0.65), f.90r, f.91r all PASS pre-registered gates; both the
+  f.119 and f.89 letters now gated on every page; grades M only (plus C51 on the Teulet overlap). Next: a rule-7 re-derivation of test2 state.
+- **fr16104-vivonne-spain-1572.** fr.16104 f.157-159v = 5 Sept 1572 (not 8). fr.16105: 4 June 1573 cipher letter ff.99-103v (ink 40) and a
+  second cipher copy ff.92r-96r (ink 38), **with the clerk's decipherment "dechiffre de la precedente" (8 June, ink 41) at ff.104r-108v**
+  (separate clear copy; f.104r illegible, ff.104v-108v legible). Tomokiyo key published; PNGs not on disk. **Next (best lead of the lane):**
+  key PNGs -> key.tsv (~3) + f.95v cipher (2 passes + recon) decoded against f.108v with a shuffled-key control, ~$8; whole block ~$34.
+- Brief lessons: (1) chain per-token ruling jobs on one target and run one rule-7 re-derivation after the last, not one per job; (2) a crossmatch
+  stat over the gate needs an eye read before a lead (N4-XM: 0/445).
