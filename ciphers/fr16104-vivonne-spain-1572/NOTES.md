@@ -758,7 +758,7 @@ U 646 of 6,866 tokens (N6-VIV63). Pieces with no decipherment located: fr.16105 
 - [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171r, ff.190r-191v (N5-VIV54, N6-VIV53, N6-VIV63)
 - [ ] retry: ink 63 ff.192r-194r read (pre-registered amendment first); ink 53 f.171v read and a fresh pre-registered check on independent material; ink 54 lookalike pass
-Verdict: keep going: 10 internal gaps; cheapest next: ink 63 key questions (y, single o, c, V, 2) as a context table, ~$3, then ink 63 ff.192r-194r, ~$10
+Verdict: keep going: 11 internal gaps; cheapest next: ink 63 key questions (y, single o, c, V, 2) as a context table, ~$3, then ink 63 ff.192r-194r, ~$10
 
 Gate output (N6-VIV63, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 10 internal gap(s), 1 step(s) untried`; `tx/viv63_decode.py --check`: reading_piece63.tsv + rec files up to date; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date
 
@@ -936,7 +936,7 @@ f.171v and the whole piece, wrong-key specificity PASS (real 0.176 vs p99 0.051)
 - ink 63 audit 1 - blocker: not-attempted; b2 (new + whole) + wrong-key gates passed (PREREG-N6VIV63B); next: verifier session (novelty + depth, as VIV54-A1) on ff.190r-193r, ~$9
 - ink 63 key questions (the "h_" pattern) - blocker: not-attempted; codes y (M) and single o (U) sit where French wants "qu"/"l", and c, V, e, 2, r are unread labels (1,089 U tokens over ff.190r-193r); next: a code-context table of y, o, c, V, 2 against ink 40's decipherment alignment (tx/key_support.py) and these reads, proposals only, ~$3
 - ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z, c/e (ff.190r-191v) and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
-- ink 53 audit 1 - blocker: not-attempted; b2 + wrong-key gates passed (PREREG-N6VIV53B); next: verifier session (novelty + depth, as VIV54-A1), ~$9
+- inks 53/54 N4 - blocker: not-attempted; audit 1 done for both (54: VIV54-A1 AUDIT 1; 53: VIV53-A1 AUDIT 2, N3, D1 fragments read, key published); next: a LOCAL-QUEUE row for the owner's browser to read Ribera (2007) note 139 and RQH 35 (1884) in full, ~$1; audit 1 of 53 done 4 Oct 2026 (VIV53-A1, AUDIT.md AUDIT 2: N3, D1 fragments read, key published)
 - ink 53 label questions - blocker: not-attempted; the ': :' pair decodes as a doubled c (N6-VIV53), f.171v splits S/d (7) and 3/z (7) left at pass A; next: tools/lookalike_pass.py on those pairs of ff.170r-171v, ': :' as one sign proposal, re-decode, ~$3
 - ink 54 clean reading - blocker: not-attempted; err_2reader 0.19-0.22 and the ': :' pair read as two signs leave long unreadable stretches; next: a third pass / tools/lookalike_pass.py on the split signs of f.173r-v, the ': :' pair as one sign, re-decode, ~$4
 - Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
@@ -953,6 +953,6 @@ f.171v and the whole piece, wrong-key specificity PASS (real 0.176 vs p99 0.051)
 - [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-193r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B)
 - [ ] retry: ink 63 ff.193v-194r read; ink 63 and 53 label questions (lookalike pass, overlap dedup); ink 54 lookalike pass
-Verdict: keep going: 11 internal gaps; cheapest next: ink 63 ff.193v-194r passes, ~$5, then audits 1 of inks 63 and 53 (verifier), ~$9 each
+Verdict: keep going: 11 internal gaps; cheapest next: ink 63 ff.193v-194r passes, ~$5 (N6-VIV63C running), then audit 1 of ink 63 (verifier), ~$9
 
 Gate output (N6-VIV63B, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 11 internal gap(s), 1 step(s) untried`; `tx/viv63_decode.py --check`: reading_piece63.tsv + rec files up to date; `tx/viv54_decode.py --check` and `tx/viv53_decode.py --check`: up to date; tracked folder 27.7 MB (crops gitignored, manifest committed)
