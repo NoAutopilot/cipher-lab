@@ -1,0 +1,3 @@
+tx86/ciphertext_f244r.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6771, 'keyshuffle_p99': 0.3517, 'order_p99': 0.4254, 'above_both': True}
+tx86/passA.tsv {'tokens': 366, 'dropped': 52, 'decoded_letters': 412, 'score': 0.6869, 'keyshuffle_p99': 0.3664, 'order_p99': 0.4539, 'above_both': True}
+tx86/passB.tsv {'tokens': 394, 'dropped': 0, 'decoded_letters': 433, 'score': 0.7021, 'keyshuffle_p99': 0.35, 'order_p99': 0.4342, 'above_both': True}
