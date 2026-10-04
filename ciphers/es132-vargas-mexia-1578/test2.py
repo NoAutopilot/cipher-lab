@@ -120,7 +120,9 @@ def gate_a(page, cfg, key, shuf, corpus):
 
 
 C3_PAGES = {'f41r': ['L%02d' % i for i in range(1, 41)], 'f41v': ['L%02d' % i for i in range(1, 41)],
-            'f50v': ['L%02d' % i for i in range(1, 41)]}  # f41v: RUN3-ES41, PREREG_c3_f41v.md; f50v: RUN4-ES41V, PREREG_c3_f50v.md
+            'f50v': ['L%02d' % i for i in range(1, 41)],
+            'f51r': ['L%02d' % i for i in range(1, 41)], 'f50r': ['L%02d' % i for i in range(1, 41)]}
+# f41v: RUN3-ES41, PREREG_c3_f41v.md; f50v: RUN4-ES41V, PREREG_c3_f50v.md; f51r/f50r: RUN4-ES50, PREREG_c3_f50r51r.md (one page run)
 F90V_UNPRINTED = ['L%02d' % i for i in range(1, 10)] + ['L27']
 
 
