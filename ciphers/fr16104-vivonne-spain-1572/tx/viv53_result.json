@@ -1,0 +1,68 @@
+{
+ "a": {
+  "S_a": 0.577,
+  "per_gloss": [
+   0.571,
+   0.778,
+   0.5,
+   0.4,
+   0.5,
+   0.714
+  ],
+  "null_median": 0.262,
+  "null_p95": 0.353,
+  "pass": false
+ },
+ "b": {
+  "candidate": {
+   "checks": {
+    "language": {
+     "pass": false,
+     "score": -1.678,
+     "null_p99": -1.762,
+     "real_p05": -0.904,
+     "real_median": -0.813,
+     "mode": "both",
+     "N": 3438
+    },
+    "words": {
+     "pass": true,
+     "cover": 0.766,
+     "min": 0.5,
+     "real_text_median_cover": 0.958
+    }
+   },
+   "pass": false
+  },
+  "positive_control_f103r": {
+   "checks": {
+    "language": {
+     "pass": false,
+     "score": -1.714,
+     "null_p99": -1.728,
+     "real_p05": -0.927,
+     "real_median": -0.813,
+     "mode": "both",
+     "N": 1770
+    },
+    "words": {
+     "pass": true,
+     "cover": 0.709,
+     "min": 0.5,
+     "real_text_median_cover": 0.959
+    }
+   },
+   "pass": false
+  },
+  "shuffled_key_score_median": -2.133,
+  "shuffled_key_score_p99": -1.757,
+  "shuffled_key_judge_passes": 0,
+  "verdict": "judge not a gate (positive control FAILs)"
+ },
+ "letters": {
+  "candidate": 3438,
+  "control": 1770
+ },
+ "draws": 200,
+ "seed": 20260957
+}

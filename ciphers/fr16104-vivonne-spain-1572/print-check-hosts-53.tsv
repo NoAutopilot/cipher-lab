@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	2	blocked: HTTP 429 on https://api.crossref.org/works?rows=5&query.bibliographic=grand%20bien%20qui%20en%20adviendroit
+api.openalex.org	5	ok
+api.semanticscholar.org	5	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22inutile%20de%20negotier%22
+archive.org	1	ok
+be-api.us.archive.org	5	ok
+www.googleapis.com	5	ok (some errors)

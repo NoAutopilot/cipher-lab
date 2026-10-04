@@ -1,0 +1,6 @@
+# N6-VIV53: decoded phrases of ink 53 (5 Sept 1572, Saint-Gouard to the duc d'Anjou), key.tsv decode, spelling normalised by eye
+de contradiction il ne pourroit doubter
+grand bien qui en adviendroit
+bonne intention
+bon chrestien s'il est bien
+inutile de negotier
