@@ -3979,12 +3979,14 @@ Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/
 | job | target | session | cap | state | result |
 |---|---|---|---|---|---|
 | A3V2-ES7 | es132-vargas-mexia-1578 f.89/f.119 rule-7 + print check | session_013jTRPpSrbGSPGu7dfFXQxN | 3 | done 6.27 | rule-7 SAME 2842/2842 (9 pages); print check: 2 phrase hits are other texts (Cabrera 1625, CODOIN 103), no Vargas Mexia 1578 hit |
-| A3V2-C1161A1 | clair1161-avis-flandre-1688 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | live | |
+| A3V2-C1161A1 | clair1161-avis-flandre-1688 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | done 9.17 | N3 (key ours), D1 fragments read (C+S 60.7%, longest run 12) -> not a unique solve; no AUDIT 2 due |
 | A3V2-THUR275 | thurloe-printed JUNK_LINE 275 | session_01EnvJP6tAmF4zMw7g7NoLsn | 1.5 | done 3.68 | key 60->59 (275 dropped), control 92.3-92.8%, P4 reading byte-identical |
 | A3V2-MERCY15 | espagnol142-mercy-1648 15 = z at M | session_01W9jPft6xA3NHCebgaKvxYN | 1.5 | done 3.51 | 2 tokens changed, grades unchanged S 488 M 41; AUDIT.md + SO prompt propagated |
 | A3V2-SANG | sanguszkow-mniszech-dunin-1714 R7524 full-size re-test | session_01FgJFpdBRqoNqjBg6xGDkHj | 1.5 | done 4.19 | full-size route open (3 JPEGs, scratch only), cipher legible, leaf 16 Mar 1714 Dukla (I) |
-| A3V2-ROUS | naf14913-rousseau-venice-1743 ff.165r-v, 197v-198r | session_01PBr3sq9Kk4jT1NKJkJeP7p | 8 | live | |
-| A3V2-ES132C4 | es132 Cipher 4 table, catalogue flag, blog threads | session_01Vs1i1ZVe4zT1x5V6ZafBb7 | 4 | live | |
+| A3V2-ROUS | naf14913-rousseau-venice-1743 ff.165r-v, 197v-198r | session_01PBr3sq9Kk4jT1NKJkJeP7p | 8 | done 17.49 | 168 + 296 groups transcribed; no plain side -> f.206 gate non-test; no key change; images 35 MB |
+| A3V2-ES132C4 | es132 Cipher 4 table, catalogue flag, blog threads | session_01Vs1i1ZVe4zT1x5V6ZafBb7 | 4 | done 5.24 | Tomokiyo Cipher 4 PNG on disk; cabinet-noir has transcribed f.87/157/179; catalogue 200 |
+| A3V2-ES132A1 | es132 f.89/f.119 AUDIT 1 | session_017yq89oC9evay2SUWfHvMM3 | 9 | live | |
+| A3V2-ROUS2 | naf14913 Souchon no. 2037 + images < 30 MB | session_01HWbf6HC5ZxMgHY5L1sd6WF | 5 | live | |
 | A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | live | |
 
 Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
