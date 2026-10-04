@@ -1,0 +1,36 @@
+{
+ "control": {
+  "n": 30,
+  "p1_true": 30,
+  "p2_true": 30,
+  "both_true": 30,
+  "gate_24": true,
+  "p1_counts": {
+   "machine": 30
+  },
+  "p2_counts": {
+   "machine": 30
+  }
+ },
+ "targets": {
+  "all": {
+   "unresolved": 108,
+   "untestable (empty strip)": 1
+  },
+  "f117": {
+   "unresolved": 30
+  },
+  "f144r": {
+   "unresolved": 26,
+   "untestable (empty strip)": 1
+  },
+  "f168": {
+   "unresolved": 52
+  }
+ },
+ "target_grades": {
+  "reconciled": 108,
+  "": 1
+ },
+ "splits": 108
+}
