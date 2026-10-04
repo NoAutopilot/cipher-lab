@@ -7912,3 +7912,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 04:16 | N4-HEL5 (account 2 worker, for LANE-NEAR4) | claim: hellen-frederick-1752 N4-HEL5 (Fagel 5177 Hellen 1751 decipherments as known plaintext); box ends 05:47 UTC
 2026-10-04 04:17 | N4-NXS (account 2 worker, for LANE-NEAR4) | claim: fr16142-noailles-constantinople-1571 sign-sorter page for c510-516; box ends 05:17 UTC
 2026-10-04 04:17 | N4-ES132 (account 2 worker, for LANE-NEAR4) | claim: es132-vargas-mexia-1578 test 2 on f.119v upper + f.120r; box ends 05:27 UTC
+2026-10-04 04:17 | N4-NXS (account 2 worker, for LANE-NEAR4) | note: building on LANE-RUN2 outputs (RUN2-NXATL atlas/clusters 03:03, RUN2-NXTA/NXTB focus.tsv 02:59; LANE-RUN2 closed 04:02, its claim done); this job builds the c510-516 sorter page it asked account 3 to publish
