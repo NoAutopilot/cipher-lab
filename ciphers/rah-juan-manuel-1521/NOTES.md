@@ -230,9 +230,63 @@ ciphertext_f199_reconciled.tsv); `python3 scripts/test1.py --check` exits 1 if s
 Judge: not run. There is no running plaintext candidate, because the letter layer failed its held-out gate.
 Not done: job 2b (R9501 passes and key test), named below; no sorter sheet; R9529's f.199v-200 cipher (P3) fetched but not read.
 
+## Segmenter and sorter sheet (RUN1-SEG, 4 Oct 2026, 00:48-01:0x UTC)
+Brief: .claude/briefs/runs/2026-10-04-acct1-run1-wave1.md job RUN1-SEG. Opus worker, no subagent calls (the exemplar-sheet
+look was done by the worker itself). Intake gate re-run: `rah-juan-manuel-1521: partial (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Material: one DECODE browser login, 4 requests to de-crypt.org
+(login + record page 9528 + 3 full-size images: R9528 P2, R9529 P2, R9501 P1; sha1s match images/manifest.json, R9501 P1
+added there). Images in the scratchpad only.
+
+Tool: `tools/glyph_atlas.py segment --cursive` (new option, docstring and --help; offline synthetic test in
+tools/tests/test_glyph_atlas.py: a joined minim line with broken pen joins, two touching code words and a faint mirrored
+ghost -- default mode 23 boxes, --cursive 18 = planted 18; all earlier tests still pass). Per line strip: ghost floor on each
+component's darkest pixels and per pixel, x-height from the core band of the row profile (peak sought in the strip's middle
+half), sign candidates = runs of core-band ink columns joined across gaps under 0.7 xh, groups over 4 xh split at column-ink
+minima. Defaults set on R9529 f.199 only (cipher-only lines 11 of 15 within 25%).
+
+Crops (pasted; same commands as JM-ALPHA for f.194 / f.199, R9501's region from images/crops_f34_manifest.json):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9528_I44887_P2.jpg --region 1860,200,1620,2200 --out <scratch>/crops --prefix f194 --follow-slope 300 --slope-margin 22 --debug
+  wrote 31 crops (pitch 62)
+$ python3 tools/iiif_lines.py --image IMG_R9529_I44892_P2.jpg --region 1860,180,1620,2200 --out <scratch>/crops --prefix f199 --follow-slope 300 --distance 48 --slope-margin 22 --debug
+  wrote 27 crops (pitch 68)
+$ python3 tools/iiif_lines.py --image IMG_R9501_I44762_P1.jpg --region 1820,205,1570,1870 --out <scratch>/crops --prefix f34 --follow-slope 300 --slope-margin 22 --debug
+  wrote 30 crops (pitch 62); overlay checked by eye, 30 text lines
+```
+
+Acceptance, pre-registered in sorter/PREREG_seg.md (pushed e251b723 before the f.194 run):
+
+| measure (R9528 f.194, 27 lines) | result | gate | |
+|---|---|---|---|
+| lines with box count within +-25% of the mean pass A/B token count | 19 of 27 = 0.704 | >= 0.70 | pass (narrowly) |
+| same, lines where A and B give the same count | 8 of 12 = 0.667 | (reported) | |
+| boxes / reference tokens | 556 / 519.5 (+7%) | (reported) | |
+| median box height / page x-height (22 px) | 60 px = 2.73 x | >= 0.6 x | pass |
+Verdict PASS, no tuning round used (sorter/accept_f194.json, `sorter/seg_accept.py`). After the gate one robustness fix
+was made (x-height peak sought in the strip's middle half: R9501 L26's band had locked onto the line above); the f.194
+numbers are identical with it (re-run). By eye the boxes are word-sized for code words, but a code word with a tall first
+letter (long s, q, g) is often cut after that letter (`sof` -> `s|of`), so boxes are over-split, not under-split.
+Not a known-answer measure: box counts agree with the readers' counts, which says nothing about where each box falls.
+
+Sorter: 83 strips (f.194 27, f.199 26, R9501 f.34 30) -> 1,781 boxes, `cluster --k 80` -> 80 shape clusters, 79 piles
+(two Z clusters share one name). `sorter/index.html` 8.6 MB (strips posterised: paper to white, ink in 4 levels), folder
+11 MB. Named at C only where the exemplar sheet (sorter/sheets/) shows a pile dominated by one of JM-ALPHA's six C signs:
+cluster 62 Z=r (9/9), 78 Z=r (11/15), 68 R=s (about 10/12) -- the value is the clerk's (f.197, JM-ALPHA), the pile-to-sign
+link is a by-eye proposal (sorter/pile_names_byeye.tsv), not a settled label; 77 piles unnamed. Not named: 9 (7/13 in
+cluster 54, under the 60% bar), A (mixed with looped d), K and 4 (no dominant pile seen). Code-word piles noted, not named
+(sof 13/63/52, gap 25/73, qid 76, ges 79/32; F, probably a null, nearly pure in 21). Focus: 21 tiles from 7 mixed piles
+(sorter/focus.tsv). A positional transfer of the passes' labels onto boxes was tried and dropped (only 2 lines with equal
+counts on both passes and the boxes, 24 boxes, and their widths showed even those were not aligned).
+Rebuild: `DEC=<images> W=<scratch> sh ciphers/rah-juan-manuel-1521/sorter/build.sh`. Not decoded; held-out gate not rerun.
+For the account-3 orchestrator: publish sorter/index.html with capabilities {"db": {}} and add the ASKS row (ROOM flag).
+```
+$ python3 tools/gaps_check.py rah-juan-manuel-1521   (RUN1-SEG)
+OK keep-going rah-juan-manuel-1521: keep going: 4 internal gap(s), 2 step(s) untried
+```
+
 ## Remaining gaps (JM-ALPHA, 4 Oct 2026)
 Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S
-- Letter alphabet held out - blocker: not-attempted; test 1 FAILed its gate at reader error 0.42 with an unstable label set; next: settle the sign inventory (tools/sign_sorter.py sheet over f.194 + f.199 symbol tiles, owner sorts) or a third, label-anchored Sonnet pass on f.199 with f.194 reference crops per label, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
+- Letter alphabet held out - blocker: not-attempted; sorter/index.html built (RUN1-SEG: 1,781 tiles, 79 piles, 3 named), not yet published or sorted -- account 3 publishes it and files the ASKS row, after which this gap is waiting-on that row; test 1 FAILed its gate at reader error 0.42 with an unstable label set; next: the owner's sort, sign_sorter_apply.py, a label-anchored f.199 pass, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
 - Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: not-attempted; two passes only; next: reconciliation pass from the image on the 88 + 114 split symbol tokens (disagreements listed by line in the reconciled TSVs as ~), ~$3
 - R9501 (no period decipherment) passes and key test (job 2b) - blocker: not-attempted; outside this brief; next: two blind passes on R9501 f.34 with the same inventory, decode with alphabet.tsv + Tomokiyo, judge, ~$5 (only worth running after the held-out gate passes)
 - Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); the lane orchestrator may extend L17 to name the 28 Juan Manuel dates; without it every reading stays a cryptanalytic result
@@ -245,7 +299,7 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] print: CSP Spain II read whole (abstracts only); Kolosova annex waiting on a local fetch (gap above)
 - [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
 - [x] image-check: R9528 and R9529 full-size images fetched 4 Oct 2026 (sha1 in images/manifest.json), crops and overlays checked
-- [ ] retry: planned step: settle the sign labels (sorter or label-anchored third pass) and rerun the same held-out gate
+- [ ] retry: planned step: settle the sign labels (sorter built by RUN1-SEG, waiting on the owner's sort; or a label-anchored third pass) and rerun the same held-out gate
 Verdict: keep going: 4 internal gaps; cheapest next: CSP date map ~$1, then the label-anchored f.199 pass and gate rerun ~$4
 
 ```

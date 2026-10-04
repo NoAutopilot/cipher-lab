@@ -29,7 +29,8 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
             lighter than any written stroke, so it fails this test even when the binarisation keeps it;
             pixels of a kept component lighter than --ghost-px are dropped too (ghost ink that touches a real stroke);
          2. x-height xh = the height of the core band, the contiguous rows round the row-profile peak (ghost-filtered
-            ink, 3-row smoothing) carrying at least --core x the peak; every threshold below is in units of xh;
+            ink, 3-row smoothing; the peak is sought in the middle half of the strip, where a line crop centres its
+            own line) carrying at least --core x the peak; every threshold below is in units of xh;
          3. ink outside the core band +- --band x xh is cleared (neighbour lines' tails clipped into the strip), and
             components whose longer side is under --min-side x xh are dropped;
          4. sign candidates are runs of columns carrying ink inside the core band, runs closer than --gap x xh joined
@@ -214,7 +215,8 @@ def _cursive_strip(name, grey, norm, ink, li, yoff, a):
     prof = kept.sum(axis=1).astype(float)
     from scipy.ndimage import uniform_filter1d
     prof = uniform_filter1d(prof, 3)
-    pk = int(np.argmax(prof))
+    q = len(prof) // 4          # the strip's own line is centred in it (iiif_lines); neighbours' edges lie outside
+    pk = q + int(np.argmax(prof[q:len(prof) - q])) if len(prof) >= 8 else int(np.argmax(prof))
     lo = hi = pk
     while lo > 0 and prof[lo - 1] >= a.core * prof[pk]:
         lo -= 1
