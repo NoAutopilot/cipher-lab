@@ -371,7 +371,7 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e, err 
 - 4 Nov 1586 remaining cipher f.275v-f.278r and the f.278v head (c563-c569, about 7 dense pages) vs Colbert pp.122 ff. - blocker: not-attempted; outside this brief; the per-line reader shape works (kp86e, kp87a); next: same pipeline page by page, one reader call per line (copy pages c480-c483 to locate), ~$8 per dense page at ~0.35 per call
 - key86 T31 cell (table m; f.244r page o; f.275r readers' T31 mostly s) - blocker: not-attempted; outside this brief; next: image comparison of the T31-labelled tokens on f.244r vs f.275r (kp86e/t31_witness.tsv) against the table cell, then the period interlinear letters over f.244v/f.245r T31 tokens, ~$1
 - key86 cell corrections (T45, T47, T49, T57) - blocker: not-attempted; arm B beats arm A on f.244v/f.245r and f.275r by 0.008-0.020, not a separate test; next: pre-registered held-out test (fit on the 17 Sept pages, test on f.275r and f.301v, disk only), ~$1
-- 24 Mar 1587, unviewed leaves c607-c608, c610-c611, c613, c617 - blocker: not-attempted; next: 700 px contact views (6 requests) for more cipher in this letter, ~$0.5
+- 24 Mar 1587, unviewed leaves c607-c608, c610-c611, c613, c617 - blocker: not-attempted; outside this brief (RUN5-PIS87 cap spent); next: 700 px contact views (6 requests) for more cipher in this letter, ~$0.5
 - 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II (jumps from 3 May to 5 Oct 1588, RUN5-PIS87); next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
 - 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: re-read f.75 with the per-line reader shape, then test1.py unchanged, ~$5
 - 17 Sept 1586 second letter (f.246-247) and 8 Sept 1586 (f.228-234) vs Colbert - blocker: not-attempted; outside this brief; next: same per-line pipeline, ~$8 per dense page
@@ -385,4 +385,4 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e, err 
 - [ ] key-rebuild: T31 cell (HYPOTHESES.md) and the T45/T47/T49/T57 remap, held-out test not yet run
 - [x] image-check: f.275r re-cut one line per band, montage checked
 - [ ] retry: per-line pipeline on f.275v-f.278r, f.75 and the other 1586-87 letters; Brienne for June 1588
-Verdict: keep going: 9 internal gaps; cheapest next: T31 image comparison ~$1; most valuable next: the remaining 4 Nov 1586 pages with the per-line reader shape, ~$8 per page
+Verdict: keep going: 8 internal gaps; cheapest next: T31 image comparison ~$1; most valuable next: the remaining 4 Nov 1586 pages with the per-line reader shape, ~$8 per page
