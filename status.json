@@ -3236,15 +3236,6 @@
   "headline": "27 Sept 2026, 14:23 UTC: the board now counts documents, not rows, from per-result fields; each count is at N3 or better after two verifier audits unless stated. 18 documents with recovered passages: partial readings of cipher passages with no prior decipherment located (Gramont f.29r and f.30r-v, Danzay f.35-36, the Saxony enclosures WVO 53, 57 and 126, Lodewijk van Nassau's WVO 4610-4616, Jan van Nassau's WVO 5551, two blanks in WVO 5797, Stamford 1655, three Blathwayt items, the Linhares fragment and the Mercy instruction). 2 completed readings: the Eckert telegrams of 21 and 22 Apr 1864. 1 key to a text already in print: Van Beuningen to De Witt, 1657. 6 catalogue contributions and corrections carrying a verifier's class, among them the Digby cipher paper identified as Wheatstone's 1862 decipherment. 4 of these documents were read with our own key and no earlier decipherment found. N4 means the principal sources were searched; archival or internal work is not excluded.",
   "sidequests": [
     {
-      "title": "Grants applications",
-      "asked": "24 Sept 2026 13:36 UTC",
-      "state": "waiting on you",
-      "result": "Six grant applications drafted in the private repository. OpenAI Researcher Access submitted by the owner 24 Sept 2026. Anthropic AI for Science (up to $20,000 credits) and Anthropic External Researcher Access ($1,000 credits) are both drafted, review 5 Oct 2026.",
-      "next": "Owner submits NCIS membership first (this week, gives an affiliation and letters of introduction), then fills the personal fields on the two Anthropic forms before the 5 Oct review; submission is on the owner's own machine, never from a cloud session.",
-      "link": "outreach/grants-applications.md",
-      "session": ""
-    },
-    {
       "title": "Momentum restart: LANE R5 and LANE N4",
       "asked": "24 Sept 2026 18:48 UTC",
       "state": "blocked",
