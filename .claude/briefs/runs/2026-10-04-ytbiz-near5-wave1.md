@@ -96,3 +96,23 @@ R4370 and R4372 are retired for 1-800 (rule 3); this is a different instrument (
 3. Only if the control passes: run on codes 1-800, report values that recur stably across seeds as S candidates (never H), per-code with
    occurrence counts; refresh the reading only for tokens whose value is stable across all seeds and fit their context in both directions.
 NOTES "N5-HEL7", HYPOTHESES.md row (target and control side by side), NEAR.md row Evidence/Last-touched, near_check, gaps_check OK line.
+
+## N5-VIV54 -- fr16104-vivonne-spain-1572: read ink piece 54 (7 Sept 1572, to the King, f.173r-v) with key.tsv (Opus; cap USD 12; box 120 min)
+Written 08:3x UTC after N5-VIVTAB (ROOM 08:11, 4c21ddc7): piece 54 has no decipherment located (piece_table.tsv row; f.174 = its address
+leaf; not in Gachard II). fr.16104 = btv1b9009609w, canvases 187-188 (c188/c189 two captures of one opening -- check). About 50 cipher lines:
+f.173r below 3 plain lines, f.173v ~25 lines, then plain closing. A few cipher groups carry small interlinear words: a period gloss.
+Units: 2 pages x (2 blind Sonnet passes + 1 reconciliation) = 6 units at ~USD 1.5 + 1 gloss crop look; state it in NOTES before the first call.
+Reuse N5-VIVK's tx/SIGNS.md, crop settings (it found --follow-slope bands duplicate lines: check the overlay, use --centres if needed) and scripts.
+0. Premise: Gachard II (IA labibliothquen02gachuoft djvu, on disk route) grep for "7 septembre 1572"; Catherine de Medicis Lettres IV for a reply
+   naming a 7 Sept letter; one look at c189-190 for a "dechiffre". If a decipherment or printed plaintext of 54 turns up, record it and stop.
+1. Crops + passes + reconciliation; err_2reader per page. Read the interlinear words at native resolution and record them per cipher group.
+2. PREREG-N5VIV54.md pushed before decoding: (a) gloss check -- key.tsv decode of the glossed groups vs the clerk's interlinear words, with a
+   shuffled-key null (200 draws); (b) `tools/judge_plaintext.py` (fr16 spec; state the corpus era per rule 3) on the decode vs 200 shuffled-key
+   decodes of the same transcription, with N5-VIVK's held-out f.103r decode scored through the same judge as a positive control of the same
+   hand, key and similar length (if the positive control itself FAILs the judge, the judge is not a gate here -- say so, do not use it).
+   Pass rules stated before running.
+3. Decode reproducibly (rule 7 --check), grade per token (rule 4; key source published, values checked against period plaintext in N5-VIVK;
+   say which grade and why; M for the 4 M codes and unsettled reader splits). Counts.
+4. print_check on 5-10 distinctive decoded phrases. Report what was found and where it was not found; do not classify novelty.
+5. NOTES "N5-VIV54", reading + script, Remaining gaps / Escalation refresh, gaps_check OK line. ROOM done line for LANE-NEAR5 with gate numbers
+   beside controls; if a gate passes, "fr16104-vivonne-spain-1572 piece 54 ready for audit 1" in the same line.
