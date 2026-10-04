@@ -202,3 +202,7 @@ ciphers/hellen-frederick-1752	"von der Hellen" AND (Haag OR Hague OR "La Haye") 
 ciphers/hellen-frederick-1752	Hellen AND Lyonet AND (Prussian OR Pruisisch OR preußisch) AND (code OR cijfer OR cipher)	2026-10-04	queued	
 ciphers/hellen-frederick-1752	"la proposition d'une nouvelle" AND Hellen	2026-10-04	queued	
 ciphers/hellen-frederick-1752	"réduction des troupes" AND Hellen AND 1752	2026-10-04	queued	
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("giugno 1572" OR "juin 1572" OR "settembre 1572" OR "septembre 1572" OR "Bellaguarda" OR "Bellegarde") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
+ciphers/nevers-birago-fr3251-1572	"levarmi la reputatione"	2026-10-04	queued	
+ciphers/nevers-birago-fr3251-1572	"ho scorto qua che"	2026-10-04	queued	
+ciphers/nevers-birago-fr3251-1572	"retrenchiamento sopra questa gente"	2026-10-04	queued	

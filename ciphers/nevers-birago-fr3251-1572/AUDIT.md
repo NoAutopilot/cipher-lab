@@ -991,3 +991,115 @@ JSTOR prints or discusses Birago's 1572 cipher letters or their decipherment. Cl
 condition is now met for this target).
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+---
+
+# AUDIT 11 (A3V-VNB2, 4 Oct 2026): second audits of no.87, f.152r (no.77), f.162 (no.82)
+
+Verifier: A3V-VNB2 (account 3 worker, for LANE-A3V), brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave1.md` job A3V-VNB2.
+This session is separate from every solver of these items (LIKELY-3, GAPS-GAPS4, NEVBIR-87ALIGN, NEVBIR-152, NEVBIR-162) and from
+their first verifiers (VERIFY-NEVBIR-1572, -152, -82). Clock: `date -u` 02:53 UTC at start, 4 Oct 2026. Nothing was decoded,
+and key.tsv, the ciphertexts and the readings were not changed. The brief set two tests. (1) Is each N0 basis real? I looked at
+the slip and sheet crops myself and compared 10 positions of each against the committed reading. (2) Is the plaintext also in
+*print*? That would not change N0, but the earliest citation matters for credit.
+
+## Verdict
+
+| item | class | was | key | prior plaintext | prior decipherment | earliest citation | confidence |
+|---|---|---|---|---|---|---|---|
+| no.87 passage, ff.178r foot-179r head, 853 signs (Saluzzo, 8 Sept 1572) | **N0** confirmed | N0 | published (Tomokiyo; T42=m fitted by us) | yes, in the MS: the clerk's clear decipherment laid in on canvas 182. Not in print (searched below) | yes, twice: the 1572 clerk's sheet, and Tomokiyo's key reconstruction made from it | the clerk's sheet itself (1572, BnF fr.3251, Gallica btv1b9060248g canvas 182). Then Tomokiyo, cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251 ("can be reconstructed from the decipherment attached to no.87"). The page reads "First posted on 28 August 2017. Last modified on 8 February 2023"; the date of the fr.3251 section itself could not be fixed (Wayback CDX unreachable, below) | high |
+| no.77 run, f.152r, 97 signs (9 June 1572) | **N0** confirmed | N0 | published | yes, in the MS: a later-hand slip on f.151v, partial (dots for unread signs). Not in print | yes, the slip | the slip (BnF fr.3251 f.151v, Gallica canvas 154 left), pasted before the Gallica capture; hand and date unsettled. No print located | high |
+| no.82 line, f.162, 25 signs (27 June 1572) | **N0** confirmed | N0 | published (run 1); the slip alone for run 2's name code | yes, in the MS: a later-hand slip on f.161v, fair copy of both runs. Not in print | yes, the slip | the slip (BnF fr.3251 f.161v, Gallica canvas 164 left). No print located | high |
+
+No class moves. Text for status.json: "decipherment in MS", not `known` (print), for all three, as the first audits said. Key
+source: `published` (Tomokiyo, credited) for all three.
+
+**Safe sentences.** The three first-audit safe sentences stand unchanged. One sentence covering all three, if needed: "Using
+Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we re-deciphered three cipher passages in Lodovico Birago's
+1572 letters to the duc de Nevers (BnF fr.3251, nos.77, 82 and 87) from blind sign transcriptions. Each agrees with a
+decipherment already filed with the letter in the manuscript: a contemporary clerk's sheet for no.87, and later-hand slips for
+nos.77 and 82. We found none of the three in print."
+
+**Unsafe sentence.** "We deciphered three of Birago's 1572 letters", or any use of first, new, previously unread or
+unpublished. All three were already deciphered in the volume, and the key is Tomokiyo's.
+
+## Test 1: is each N0 basis real? (by eye, this session)
+
+**Slips.** I read both slips before opening their TSVs.
+- `harvest/f152r/slip_f151v_c154_1350_750_2350_1050.jpg` (squared paper): "che io disimuli poiche [struck: sen ua a leuar..o.asione]
+  / sen.aaleu..o.asione a / ap.ns..o di leuarmi la reputa.ione ..c.ermi / incompromesa la l onore".
+- `harvest/f162r/slip_f161v_c164_1400_3450_2100_800.jpg` (plain paper): "ho scorto quà che [monsignore di S. Andre], / quale è tutta
+  cosi di [M. di Bellaguarda],".
+
+Both match `decipherment_slip.tsv` letter for letter, including the struck line, the dots and the slip writer's own "cosi". Both
+are decipherments of these exact passages and are not our product: the f.151v slip leaves dots where our reading has letters, and
+the f.161v slip gives a name code we cannot key. N0 basis real for both.
+
+**No.87 sheet.** I read two crops blind: `harvest/f179r_sheet/dec_L07_s1.jpg` "ente, dalla casa de mem..." and `dec_L10_s2.jpg`
+"...ua ma^ta se uole, assicurare, ques...". Both agree with `decipherment_sheet.tsv` L07 and L10. The hand (long s, superscript
+"ta" in "ma^ta", the "car.la" abbreviation) is a 16th-century secretary italic. It is not the later hand of the two slips. N0
+basis real.
+
+**10 positions each, slip/sheet vs committed reading** (`harvest/reading_f152r.txt`, `reading_f162r.txt`, `reading_f178v.txt`;
+= same letters, ~ same word with letter-level differences, x disagree):
+
+| # | no.87 sheet -> decode (f.178v) | | no.77 slip -> decode | | no.82 slip -> decode | |
+|---|---|---|---|---|---|---|
+| 1 | per incaminarsi -> [per]incaminarsi | = | che -> [che] | = | m | = |
+| 2 | uolta di guascogna subito hauto -> uoltadiguascognasubitohauto | = | io -> io | = | o | = |
+| 3 | questa noua si eri tornato -> guestanouasieritornato | ~ (q/g) | disimuli -> disimuli | = | n | = |
+| 4 | piu se ne e partito di modi -> piuseneepartitodimodi | = | poiche -> goi[che] | ~ (p/g) | s | = |
+| 5 | principalmente dalla casa -> principalmentedalacasa | = | sen.a -> sgn·a | ~ (e/g; dot = our ·) | i g n o | = |
+| 6 | de memoransi hauendo -> dememoransihauendo | = | aleu.. -> alcun | ~ (e/c) | r -> b | x |
+| 7 | e necessario che -> enecesario[che] | = | o.asione -> sotasione | ~ (dot = t) | e d i | = |
+| 8 | se uole assicurare -> seuoseasicurare | ~ (l/s) | leuarmi la reputa.ione -> leuarmilareputatione | = (dot filled t) | s a n | = |
+| 9 | in confusione il baron de s adres -> inconfusionei·barondesadres | ~ (l/·) | incompromesa -> incompromesi | ~ (a/i) | d r | = |
+| 10 | anche catholici altrimenti -> an[che][turino][turino]altri / menti | **x** | la l'onore -> lhonore | ~ | e | = |
+
+Counts: no.87 6 = / 3 ~ / 1 x; no.77 4 = / 6 ~ / 0 x; no.82 9 = / 0 ~ / 1 x (the r -> b that NEVBIR-162 already logged as T81). Every
+item reproduces its prior decipherment over most positions. The differences are consistent letter swaps (p/g, e/g, l/s), the
+reader confusions the confusion table already records. They are not different text. N0 holds for all three.
+
+**Found, not applied** (verifiers do not decode or edit the key):
+1. no.87, f.178v L15: where the clerk's sheet (L12) has "anche catholici altrimenti", the decode has two word-codes, both read
+   `[turino]`. So either the code-table entry the decode uses for those two signs is wrong for this letter, or the sheet's
+   "catholici" is spelled out in letters that our transcription took for a code sign. This is the one whole-word disagreement in
+   ten. It is for whoever next touches the no.87 sheet alignment (`tools/interlinear_align.py`, the first audit's named next step):
+   check the two tokens on the image and against Tomokiyo's code list.
+2. no.87, f.178v L19: the sheet's "seruiggio del Il Re ndimeno" sits against "serui[quello]iodil·nsimeno". The decode has a
+   `[quello]` code where the sheet has the letters "ggio". This is the same kind of check as item 1. I did not count it in the
+   10 positions.
+
+## Test 2: is there a print? (search log, 4 Oct 2026)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical catalogue | BnF printed *Catalogue des manuscrits français* (IA `p1cataloguegnr02bibluoft`), be-api fts inside the item: "LODOVICO BIRAGO", "dechiffrement" Birago, "8 di settembre 1572", "VIII di settembre 1572" | the fr.3251 entries read "Lettre, avec chiffre, de Lodovico Birago". The volume does write "avec chiffre et déchiffrement" for other items (e.g. nos.20, 37), but not for these letters. The catalogue is silent on all three laid-in decipherments, as the first audits found online in cc49712p |
+| (b) recipient's edition, both parts | Gomberville, *Les Mémoires de Monsieur le duc de Nevers* (1665), Gallica ContentSearch in Partie 1 `bpt6k6435941k` and Partie 2 `bpt6k9738856z`. Queries: Bellegarde (8 / 2), "Saint Andre" (211 / 348, loose), "Sainct André" (29 / 19), Bellaguarda (0 / 0), Carmagnolle (30 / 3), Memoransi (0 / 0), Hugonots (1 / 0), "Septembre 1572" (44 / 37), "Iuin 1572" (11 / 10). Partie 1 also: "Birague 1572" (12), Ludouic (10). I read the snippets of every Bellegarde, Carmagnolle, "Septembre 1572" and "Iuin 1572" hit. I looked at the two snippetless pages, Partie 1 views 209 and 630, at 900 px | **no Birago letter of June or September 1572, and no text from nos.77, 82 or 87.** The Bellegarde hits are the Maréchal's 1574-79 Saluces affairs. Carmagnolle is the 1574 Pignerol/Savigliano restitution and the 1588 surprise. Birague is Carles and René de Birague. View 209 is an edict article that dates a clause to "24. Aoust 1572". View 630 is Walsingham's letter from Paris, 14 Sept 1572. This confirms and extends AUDIT2-NEVBIR's search of both parts, which used other terms |
+| (b) Italian editions of Birago's letters | Google Books (keyed, country=US): "lettere di Lodovico Birago" (329, loose; top 5 are Mazzuchelli's *Scrittori d'Italia* 1760); "Lodovico Birago" lettere Nevers (4: BnF catalogue 1868/1895, *Storia della riforma in Piemonte* 1982 on letters *to* Birago, an unrelated bibliography). The first try of this query got Google's "Service temporarily unavailable"; one retry answered. IA fts: "lettere di Lodovico Birago" 0; "Lodovico Birago" lettere duca di Nevers edizione: 60 loose hits, top items Savio's *Saluzzo e i suoi vescovi* and histories of western Italy | no edition of Lodovico Birago's letters located |
+| (c) documentary editions | covered by (b) and by the first audits (Catherine de Médicis vol. 4, Segre 1901, Historiae Patriae Monumenta) | -- |
+| (d) holding archive | Gallica crops on disk for canvases 154, 164 and 182 (test 1) | the N0 bases |
+| (e) phrase search on sheet/slip text, run here for the first time | IA fts and Google Books: "dalla casa de Memoransi", "il castello di Carmagnola et quello de Ravelli", "assicurare questo paese" (no.87); "levarmi la reputatione", "in compromesso l'honore" Birago (no.77); "ho scorto qua che monsignore di S. Andre" (no.82) | IA: 0 for all except "assicurare questo paese" (6: a 1856 travel diary, quarantine edicts, newspapers 1849/1937) and "in compromesso l'honore" Birago (1: a papal-diplomacy volume naming "Ludovico Birago" in a payment, not this letter). Google Books: loose word matches only (Roscoe's *Lorenzo de' Medici*, *Mercurio veridico* 1648, Francesco Birago's *Opere cavalleresche* 1686). None is these letters |
+| (f) Tomokiyo, live | cryptiana.web.fc2.com/code/nevers.htm fetched once: the text matches the local mirror (`sources/cryptiana/web/nevers.htm`, 1 Oct 2026). `unsolved.htm` (local) l.227-228 | Tomokiyo prints the 1572 key table and names no.87 as its source decipherment. He prints no plaintext of nos.77, 82 or 87 and does not mention the f.151v or f.161v slips. Solver repositories: the first audits' clones (cyphersolver head 1 Oct, unsolved-ciphers head 27 Sept 2026) taken as logged |
+| (f) Tomokiyo, page history | Wayback CDX `web.archive.org/cdx/search/cdx?url=cryptiana.web.fc2.com/code/nevers.htm` | **unreachable** (TLS connection reset, twice). The date the fr.3251 section first appeared is not fixed |
+| (g) scholarship | OpenAlex (keyed) "Birago Nevers cipher" (1), "Birago Nevers decipherment 1572" (2); CrossRef "Birago Nevers 1572" (top 5: reference-work entries on other Biragos) | nothing on these letters. The first audits' OpenAlex, S2, CORE, HAL and Persée passes are taken as logged |
+| (g) JSTOR | 11 rows already answered on 3 Oct 2026 (`JSTOR-QUEUE.tsv`), no relevant hit. Family (i) "Birago AND Nevers AND 1572 AND cipher" covers all three items; family (ii) "baron de Sadres" and "casa di Momoransi" AND Birago are no.87 phrases. I added 4 rows: family (i) for June/September 1572 and Bellaguarda; family (ii) "levarmi la reputatione" (no.77), "ho scorto qua che" (no.82), "retrenchiamento sopra questa gente" (no.87) | queued. None could lower N0 |
+
+Requests: gallica.bnf.fr 22 (20 ContentSearch, 2 IIIF images), be-api.us.archive.org 12, googleapis.com 9, api.openalex.org 2,
+api.crossref.org 1, cryptiana.web.fc2.com 2 (one 302 redirect), web.archive.org 2 (both reset). No credentials printed. Subagent
+calls: 0.
+
+## Postmortem
+
+1. **The N0 bases hold.** All three are real decipherments of these exact passages, and none of them was produced by us. The 10-position
+   checks show our readings reproduce them up to known reader confusions.
+2. **Earliest citation, for credit.** For no.87 it is the 1572 clerk's sheet in the manuscript, then Tomokiyo's key (page first
+   posted 2017, last modified 8 Feb 2023; the section's own date is not fixed). For nos.77 and 82 it is the undated later-hand
+   slips, and no print exists. No Italian or French print of any of the three texts was located. NOTES.md and PROGRESS.tsv credit
+   lines should name the clerk's sheet and the slips as the prior decipherments, as they do.
+3. **No over-claim found.** I grepped the PROGRESS rows for these three items and the NEAR.md row for
+   first/new/novel/unread/unpublished/solved/cracked. The only hits are "unread" for the *other* 1572 letters, which is correct.
+4. **Two code-level disagreements with the clerk's sheet** (test 1, found not applied). They point to two `[turino]` tokens and
+   one `[quello]` token in no.87 as checks for the sheet-alignment step.
+
+SECOND-OPINIONS-QUEUE.tsv: no row is filed, because these items are N0 (rows are for N3 or better).
