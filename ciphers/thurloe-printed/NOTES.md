@@ -2568,3 +2568,22 @@ Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026); pp.275 and 278 transcribed from the page image for the boundary test (A3V2-THURBT, 4 Oct 2026)
 - [ ] retry: one-vote boundary test, djvu-OCR instrument retired (v1/v2); v3 on a two-page image transcription FAILed by one occurrence (A3V2-THURBT); planned: the same test with the remaining three cipher pages and the two decipherment paragraphs transcribed from the image (new material, same instrument)
 Verdict: keep going: 2 internal gaps; cheapest next: the boundary test on the remaining three cipher pages and the two decipherment paragraphs transcribed from the image, ~$8
+
+## N8-THUR (4 Oct 2026)
+
+Brief: LANE-NEAR8 wave 1 (`.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`, N8-THUR), account 2 worker, 16:16-17:48 UTC box:
+the A3V2-THURBT Verdict step -- boundary test v3 on the remaining three cipher pages (274, 277, 279) and the two printed
+decipherment paragraphs, from the page image. This is **not a fourth tuning**: PREREG v3's statistic, thresholds, skip rule,
+seeds and gate are unchanged; the step is new material read by the same image instrument, the one further step the v3 section
+allowed. The djvu-OCR instrument stays retired. Pre-registration: PREREG.md "v3 addendum" (pushed 5c5ff2c0, 16:2x UTC, before
+any crop, read or run).
+
+**Units, stated before the first subagent call (16:3x UTC).** Leaves 284/286/287/289/290 fetched at native 2365x4074 (iiif.archive.org,
+5 requests, each first answered by a 302 to the jp2 path, then followed with -L; 5 x 200). Crop step run and checked on the
+`--debug` overlays: `python3 tools/iiif_lines.py --image ciphers/thurloe-printed/images/collectionofstat03thur_leaf0NNN_pPPP.jpg
+--out ciphers/thurloe-printed/images --prefix pPPP --debug` for PPP = 274, 276, 277, 279, 280 (60, 51, 52, 58, 52 bands). Cipher
+crops: p274_L09-L60 (52), p277_L46-L52 (7 crops, 8 printed lines), p279_L02-L13 (12). Plain crops: P5+P6 = p275_L35-L58 + p276_L02-L40
+(stop at "whether you have received them or no."); P7 = p279_L14-L58 + p280_L02-L18 (stop at "Yorkshire."). Planned calls: cipher
+3 pages x 2 blind Sonnet passes = 6, plain 2 paragraphs x 1 Sonnet read = 2: **8 subagent calls at ~USD 0.5 each (line crops,
+8-52 lines per call)** + 5 worker units (3 reconciliations, 2 plain checks) at ~USD 0.4 = ~USD 6 of the USD 9 cap; the job stops
+before any unit that would cross 80% of the cap or the box.
