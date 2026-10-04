@@ -57,9 +57,11 @@ for ln in sorted(set(A) | set(B)):
             r += q(a[i1:i2]); tally['default'] = tally.get('default', 0) + max(i2 - i1, j2 - j1)
     out.append(ln + '\t' + ' '.join(r))
 HDR1 = {'f41r': '# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, right page, region 3500,1300,3150,3800), 30 bands = 30 lines.',
-        'f41v': '# BnF Espagnol 132 f.41v (Gallica btv1b10032556x canvas 39, left page, region 650,850,2700,4300, --centres), 31 bands = 31 lines.'}
+        'f41v': '# BnF Espagnol 132 f.41v (Gallica btv1b10032556x canvas 39, left page, region 650,850,2700,4300, --centres), 31 bands = 31 lines.',
+        'f50v': '# BnF Espagnol 132 f.50v (Gallica btv1b10032556x canvas 48, left page, region 800,850,2750,3450), 27 bands = 27 lines.'}  # RUN4-ES41V
+LETTER = {'f50v': '# Philip II to Juan de Vargas Mexia, Bosque de Segovia, 7 or 14 June 1578 (Tomokiyo TOC no.25-29 group, f.50 = no.25), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.'}
 hdr = [HDR1[PAGE],
-       '# Philip II to Juan de Vargas Mexia, Madrid, 29 April 1578 (Tomokiyo TOC no.21), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.',
+       LETTER.get(PAGE, '# Philip II to Juan de Vargas Mexia, Madrid, 29 April 1578 (Tomokiyo TOC no.21), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.'),
        f'# Two blind Sonnet passes (passes/{PAGE}_passA/B.tsv, notation run2/pass_prompt_{PAGE}.md), normalised by test2.load_pass,',
        '# reconciled by run2/reconcile_f41r.py (ES132-C3, 4 Oct 2026) by shape rules R1-R7. ? = not settled by eye. rules: ' +
        ' '.join(f'{k}={v}' for k, v in sorted(tally.items()))]
