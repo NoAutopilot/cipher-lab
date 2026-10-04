@@ -1,4 +1,5 @@
-found-solved
+partial
+Status revised 4 Oct 2026 ~19:0x UTC (account-3 orchestrator): found-solved (SEURE-WEB) withdrawn. SEURE-DEC pinned fos 84-87 by eye and found no interlinear, marginal or separate decipher; the sentence Potter 2014 prints as deciphered is clear text on fo. 85r l.1-5, so his "in cipher, with decipher" does not show a printed decipherment of the cipher passages. Open question: whether Serrao 1969 (Arq. Centro Cultural Port. 1, 455-458) or Falgairolle 1896 prints them (LOCAL-QUEUE L53).
 Potter, A Knight of Malta at the Court of Elizabeth I (Camden 5th ser. 45, 2014), introduction footnotes on de Seure's Lisbon despatches, read by this worker (Cambridge Core PDF + Google Books snippet QtbeBgAAQBAJ): fr. 3151 fo. 84-87 is cited 'in cipher, with decipher' and a deciphered sentence is printed (SEURE-WEB section below).
 
 
