@@ -8388,3 +8388,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 16:40 | N8-COS (account 2 worker, for LANE-NEAR8) | claim: costabili-modena-1491 N8-COS (group-level crops R1166 P1-P2 vs period decipherment for C grade); box ends 17:56 UTC
 2026-10-04 16:40 | N8-GRA2 (account 2 worker, for LANE-NEAR8) | claim: fr2980-gramont N8-GRA2 (Le Grand III p.399 vs fr.3040 f.18 no.6); box ends 17:42 UTC
 2026-10-04 16:40 | N8-NOX (account 2 worker, for LANE-NEAR8) | claim: fr16142-noailles-constantinople-1571 N8-NOX pre-registered basin test of the locked-on alignment runs (pairwise key agreement vs matched null), then key_learned vs key.tsv only on PASS; disk only; box ends 17:25 UTC
+2026-10-04 16:41 | N8-NV05B (account 2 worker, for LANE-NEAR8) | claim: fr15575-syllabic-1592-95 f.228 L05-L08 batch vs gloss; box ends 17:56 UTC
