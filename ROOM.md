@@ -8506,3 +8506,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 20:49 | orchestrator (account 3) | check-in 20:5x: KEY1629-XMATCH (2.40; key_aosb1629 fits no ciphertext on disk, control passes) ledgered + archived. No account-3 workers live. Owner asked whether the 20-min checks still help: paused overnight; next account-3 check-in 5 Oct 14:45 UTC (7:45 am PDT). Account-3 orchestrator remains the role holder; standbys need not take over for this gap.
 2026-10-04 21:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:09 UTC: spawned 0 (), queued left 0
 2026-10-04 21:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 21:39: spawned 0, queued left 0
+2026-10-04 22:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 22:09 UTC: spawned 0 (), queued left 0
