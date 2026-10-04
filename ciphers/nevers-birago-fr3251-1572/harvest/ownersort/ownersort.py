@@ -17,6 +17,13 @@ H = os.path.dirname(os.path.abspath(__file__))
 NEW_UNKNOWN = '--new-piles-unknown' in sys.argv
 if NEW_UNKNOWN:
     H = os.path.join(H, 'v2'); os.makedirs(H, exist_ok=True)
+# --only-sids FILE (BIR-ADJ, 4 Oct 2026): only moved tiles whose sid is listed in FILE (a TSV with a `sid` column) count as owner
+# changes in step 3; every other move = no change. Outputs go to v3_adj/ (or v3_adj_<name>/ with --tag NAME).
+ONLY = None
+if '--only-sids' in sys.argv:
+    ONLY = {r['sid'] for r in csv.DictReader(open(sys.argv[sys.argv.index('--only-sids') + 1]), delimiter='\t')}
+    H = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v3_adj' + ('_' + sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else ''))
+    os.makedirs(H, exist_ok=True)
 N = 'ciphers/nevers-birago-fr3251-1572'; E = N + '/harvest/tx_decode/eye'; S3252 = 'ciphers/birago-fr3252-1571-72'
 SEED = 20261004; NCTL = 200; NPOW = 50; KS = (1, 2, 3, 5)
 def tsv(p): return list(csv.DictReader(open(p), delimiter='\t'))
@@ -194,6 +201,7 @@ def step3(splits):
     changes = defaultdict(list); rows = []
     for sid, s in sorted(settled.items()):
         if s['status'] != 'moved' or sid not in sid2pos: continue  # PREREG: kept / aside / bad-cut = no change
+        if ONLY is not None and sid not in ONLY: continue  # BIR-ADJ: only adjudicated owner-right moves
         lf, ln, pos = sid2pos[sid]; b = base[lf][(ln, pos)]; P = s['new_sign']; X = fam(P)
         if P != X and verdict.get(P, '').startswith('SUPPORTED'): v = '?'
         else: v = '?' if (NEW_UNKNOWN and P != X) else key.get(X, '?')
@@ -235,7 +243,7 @@ def step3(splits):
         open(H + f'/text_a_{lf}.txt', 'w').write(ta + '\n'); open(H + f'/text_b_{lf}.txt', 'w').write(tb + '\n')
     pcs = sorted(x / nb for x in pc)
     out['pooled'] = dict(a=round(pa / na, 4), b=round(pb / nb, 4), c_p95=round(jp.pct(pcs, 0.95), 4), PASS=bool(pb / nb > pa / na and pb / nb > jp.pct(pcs, 0.95)))
-    cols = list(rows[0])
+    cols = list(rows[0]) if rows else ['sid']
     with open(H + '/changes.tsv', 'w') as f:
         f.write('\t'.join(cols) + '\n')
         for r in rows: f.write('\t'.join(str(r[c]) for c in cols) + '\n')
