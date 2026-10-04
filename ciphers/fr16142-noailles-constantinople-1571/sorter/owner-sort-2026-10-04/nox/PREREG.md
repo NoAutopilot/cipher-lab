@@ -1,4 +1,4 @@
-# NOX-OWNERSORT pre-registration (account 3 worker, 4 Oct 2026, written ~07:40 UTC before any statistic is computed)
+# NOX-OWNERSORT pre-registration (account 3 worker, 4 Oct 2026, committed 07:33:02 UTC (0da5f9b6) before any statistic was computed; the draft line said "~07:40", an unchecked estimate, corrected here)
 
 Input: `../settled_labels.tsv`, `../summary.json` (owner's quick pass: 18 pile merges, 36 moves, 4 bad cuts).
 Readers: RUN2-NXTA passA/passB (c510, 37 lines) and RUN2-NXTB passA/passB (c516 18 lines, c515 L01-L20), each pass kept separate.
@@ -34,3 +34,12 @@ plaintext under key.tsv, ranked by n x (second share); plus kNN split share from
 not the own cluster). Tiles: in those piles plus the moved/merged piles, tiles where the readers agree on a label that
 is not the pile's majority and decodes differently, ranked by (2 readers agree) x (letters differ) x (1 - own kNN share).
 At most 3 piles + 40 tiles -> next_targets.tsv.
+
+## Deviations, logged after the run (4 Oct 2026, 07:4x UTC)
+1. Added after seeing step 1: a sibling check (two source piles merged into the same target compared with each other, same
+   statistic and null). Not pre-registered; reported as supplementary.
+2. Step 3's pre-registered rule on P1 found no mixed pile (no pile reaches 25% second share: P1 placement is too noisy).
+   The owner list is ranked on P2 instead (EM placement, partly circular: it sharpens each cluster toward one label, so it
+   under- rather than over-finds mixtures), with the share threshold dropped; labelled exploratory in next_targets.tsv.
+   One pile slot goes to the merge whose sibling sources disagree on both placements (k026/k076 -> k060).
+3. Reader label '?' (no reading) treated as unknown, like '?{...}', in the letters-differ test.

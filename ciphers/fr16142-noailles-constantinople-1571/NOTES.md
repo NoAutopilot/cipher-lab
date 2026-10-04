@@ -558,3 +558,68 @@ Verdict: keep going: 4 internal gaps (1 waiting on the sort); cheapest next: lin
 ```
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 ```
+
+## NOX-OWNERSORT (4 Oct 2026)
+Account-3 worker for the account-3 orchestrator, 07:31-07:4x UTC; brief `.claude/briefs/runs/2026-10-04-acct3-nox-ownersort.md`.
+Input: the owner's quick pass (`sorter/owner-sort-2026-10-04/`: 18 pile merges over 1,835 tiles, 36 moves, 4 bad cuts). Pre-registered
+in `sorter/owner-sort-2026-10-04/nox/PREREG.md` (commit 0da5f9b6, 07:33 UTC, before any statistic; three deviations logged there).
+Script `nox/nox_ownersort.py` (`--check` exits 0). No decode, no reading; the owner's piles are a third reader, not ground truth.
+
+Reader signs (RUN2-NXTA c510, RUN2-NXTB c516 + c515 L01-L20, each pass separately) were placed on atlas tiles two ways: P1 the
+build's label-blind same-fraction rule (about +-2 tiles, so noisy), P2 a per-line alignment scored by hard-EM P(label|cluster)
+(sharper, partly circular). Statistic per merge: chance that a reader gives a tile in pile a and a tile in pile b the same label,
+against 64 size-matched pile pairs.
+
+**Step 1, per merge** (`nox/merges.tsv`): P1 (pre-registered decision) corroborated 3, weak 5, not corroborated 6, readers silent 4;
+P2 corroborated 9, weak 3, silent 6. Read together:
+- held up: k029, k042, k106 (both placements); k013, k056 -> k107 (the a2 pile), k088, k116 -> k091 (o1/e2), k093 -> k098,
+  k094 -> k064 (also c262's labels, S 0.59) on P2; k018 and k037 -> k115 by the sibling check (both read a1, P2 100th pct;
+  k115 itself has no reader signs).
+- doubtful: **k026 / k076 -> k060** (the two sources share no reader label on either placement, 0th pct; c262 supports k076 ~ k060,
+  so k026 is the suspect); **k104 -> k034** (P1 not corroborated, P2 S 0.009).
+- readers cannot judge: k009, k083 -> k065 and k080 -> k000 sit in the hash family (r1 vs o1/e2), the shapes the readers
+  themselves split on (RUN2-NXTA focus.tsv); k002 -> k035 weak, too few reader signs on P2.
+
+**Step 2, transcription error** (`nox/impurity.tsv`): err_true not measurable (no fr16142 row in BENCHMARK-TX.tsv). err_2reader is
+unchanged by a sort (41.8% c510, 46-57% c515/c516 raw; the sort relabels tiles, not reader passes). Pile impurity against the 963
+(P1) / 1,040 (P2) signs both passes of a reader agree on: **before 0.690 -> after 0.688 (P1), 0.163 -> 0.170 (P2)**. 200 random sets
+of 18 size-matched merges raise it by 0.013 (P1, p05 0.008) and 0.079 (P2, p05 0.058); **0 of 200 random sets do as well as the
+owner** on either placement. So the merges are real (they join piles of the same sign), but they cut the pile count (120 -> 108)
+without lowering impurity, and impurity is what RUN2-NXALN's aligner needs below ~25% (its design control fails at ~40%).
+
+**Step 3, what is left** (`nox/next_targets.tsv`, 3 piles + 40 tiles): the pre-registered P1 rule found no mixed pile (placement too
+noisy); ranked on P2 instead (exploratory). Piles: **k065** (now 498 tiles; 41 agreed signs split r1 19 / o1/e2 13), **k079**
+(o1/e2 7 / t2 5), **k060** (re-check the k026/k076 merge). Tiles: 40 where both passes of a reader agree on a label of a different
+letter from the pile's majority, weighted to tiles whose own atlas neighbours vote elsewhere (14 in k065, 6 in k000, 6 in k079,
+5 in k060). How much impurity the readers can see as removable: top 3 piles 9.4 points (P1) / 3.8 (P2); c262's provisional names put
+the top 3 clusters at 11.7 and the top 10 at 25.5 of its 40.7%.
+
+**Verdict for the owner:** deeper sorting would help only as splitting, not merging, and only in a few places: the 18 merges were
+right (better than every random control) but left impurity where it was, and what the readers still see mixed sits in the hash
+family (k065, k000) and k079, plus one doubtful merge (k026 into k060). Cheapest first: re-run `run2/nxaln/nxaln.py target` on the
+settled labels (~$1) to measure where the aligner now stands; then a short split pass on next_targets.tsv (3 piles + 40 tiles,
+about 10-15 minutes of the owner's time) and re-measure.
+
+## Remaining gaps (NOX-OWNERSORT, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters); owner quick sort folded in and checked against both readers (merges real, impurity unchanged); 0 open leaves decoded
+- Cluster impurity (~40% from c262) too high for the stream aligner; the owner's merges did not lower it (0.690 -> 0.688 on P1) - blocker: not-attempted; next: re-run `run2/nxaln/nxaln.py target` unchanged on `sorter/owner-sort-2026-10-04/settled_labels.tsv`, ~$1, then the owner's split pass on `nox/next_targets.tsv` if it still fails, ~$1 to rebuild the page
+- c510-516 alignment by line reads (instrument 2: train c510, held-out c516 + c515 L01-L20) not run - blocker: not-attempted; next: same pipeline with a 40%-noise 41-symbol and design control first, ~$2
+- c511 not transcribed by readers (segmented only, run2/nxatl) - blocker: not-attempted; next: two passes against settled sorter labels, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; not in this brief; next: one native look per pair at the clear lead-in words, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not in this brief; next: grep Charrière III and the Lepanto relations for its clear opening, ~$1
+
+## Escalation (NOX-OWNERSORT, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed (RUN2-NXDUP) and aligned whole to c510-516 (RUN2-NXALN, non-test at the atlas's noise)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); c510-516 native line bands (RUN2-NXATL); owner sort of the atlas piles (4 Oct 2026, checked by NOX-OWNERSORT)
+- [ ] retry: the same pre-registered alignment on the owner's settled labels; planned step: re-run `run2/nxaln/nxaln.py target` on `sorter/owner-sort-2026-10-04/settled_labels.tsv`
+Verdict: keep going: 4 internal gaps; cheapest next: re-run nxaln.py on the settled labels, ~$1
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (NOX-OWNERSORT):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

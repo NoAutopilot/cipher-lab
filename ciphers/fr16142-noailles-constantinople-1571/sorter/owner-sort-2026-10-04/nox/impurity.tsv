@@ -1,0 +1,4 @@
+# NOX-OWNERSORT step 2: pile impurity vs signs both passes of one reader agree on; control = 200 random 18-merge sets
+placement	n_agreed	before	after	H_before	H_after	delta	ctrl_mean	ctrl_p05	ctrl_p50	share_ctrl_le_owner
+P1	963	0.690	0.688	2.566	2.775	-0.001	0.013	0.008	0.013	0.000
+P2	1040	0.163	0.170	0.530	0.621	0.007	0.079	0.058	0.079	0.000
