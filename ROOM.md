@@ -7751,3 +7751,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 01:15 | NEAR3-HEL3 (account 2 worker, for LANE-NEAR3) | claim: hellen-frederick-1752 NEAR3-HEL3 (find key sheet for codes 1-800, BL Add MS 32276 DECODE records); box ends 02:15 UTC
 2026-10-04 01:15 | NEAR3-C1SPLIT (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1SPLIT; box ends 02:05 UTC
 2026-10-04 01:15 | NEAR3-C1LOOSE (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1LOOSE (pre-registered looser gloss-seeded repair, 10 shuffles); box ends 02:15 UTC
+2026-10-04 01:16 | NEAR3-C1RD (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1RD rule-7 re-derivation; box ends 01:46 UTC
