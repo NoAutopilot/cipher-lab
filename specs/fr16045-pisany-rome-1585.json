@@ -1,0 +1,45 @@
+{
+ "slug": "fr16045-pisany-rome-1585",
+ "name": "Jean de Vivonne, marquis de Pisany, French ambassador in Rome, cipher dispatches to Henri III, 1585 (BnF fr.16045)",
+ "date": "1585",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "tx/ciphertext_draft.tsv (f.75 = canvas 156, 22 cipher lines; two blind Sonnet passes tx/passA.tsv, tx/passB.tsv over the value-blind labels tx/SIGNSHEET.png / tx/SIGNS.md, aligned by tools/reconcile_passes.py (agree 57.0%, err_2reader 0.430; 480 columns unreconciled, draft takes the tool's choice))",
+ "ciphertext_source": "BnF fr.16045 (Gallica ark btv1b9060906j), canvas 156 (f.75r, letter of 17 June 1585), IIIF native region 680,1830,3060,3520 cut by tools/iiif_lines.py --follow-slope (L08 s2 and L09 re-cut by images/fix_f75_L08_L09.py), fetched 4 Oct 2026 (PIS-T)",
+ "alphabet": "letter-form mark cipher: Tomokiyo's 1585 table gives 56 letter homophones (b and c share shapes), 11 word signs (de car est la le mais pour que qui quel votre) and 3 nulls; key.tsv labels S01-S67",
+ "constraints": [
+  "published key: Tomokiyo, cryptiana henryiii.htm 'Vivonne's Cipher (1585)', henryiii_Vivonne4.png, listed for the 9 letters of 1585 (fr.16045 ff.50-121)",
+  "clear lines inside the same letters (c144, c156, c252) are an internal crib; partial marginal/interlinear glosses on c134 and c252",
+  "~7,000 open cipher signs in the 1585 letters (PIS-M, floor of a stride-6 sample)"
+ ],
+ "cheap_tests_in_order": [
+  "1 (PIS-T): Tomokiyo's 1585 table on f.75, fr16 4-gram judge vs value-shuffled key and token-order nulls, synthetic positive control at the measured reader error (PREREG_test1.md)",
+  "2: same on f.121 (c252) with its marginal/interlinear gloss as a known-answer check of the table and of the transcription",
+  "3: settle the sign inventory in the owner's sign sorter if two passes split > 10%"
+ ],
+ "matched_control": "Catherine de Medicis t.2 windows (held out of the 4-gram model) of the target's letter count, enciphered with key.tsv, sign noise at e = err_2reader, 5 seeds, same nulls and gate (test1.py)",
+ "judge": {
+  "language": "fr",
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresindites00marg_djvu.txt.gz"
+  ],
+  "corpus_note": "fr16 is era-matched (1560s-1600s court letters). Held-out fold check (judge_plaintext.py --holdout, N=1000, 200 samples, 4 Oct 2026 PIS-T): blended false-negative 28.0%, per fold 11.0% (Catherine t.1) / 71.5% (Catherine t.2) / 1.5% (Marguerite), held-out p05 -1.058: three folds, 48x spread, so the absolute real_p05 check is of unknown reliability (rule 3); test 1 gates on nulls instead",
+  "min_word_cover": 0.5
+ },
+ "value": "a 1585 pool of ~7,000 signs under one published table; 1586-88 letters have a 17th-century fair copy in Melanges de Colbert 16",
+ "written": "4 Oct 2026, LANE-POOLS2 PIS-T (account 1)",
+ "cheap_test_done": [
+  {
+   "test": "1 (Tomokiyo 1585 table on f.75, PREREG_test1.md)",
+   "date": "4 Oct 2026",
+   "worker": "LANE-POOLS2 PIS-T (account-1)",
+   "method": "f.75 canvas 156, 22 lines, 2 blind Sonnet passes (1,049 / 1,087 signs), err_2reader 0.430; fr16 4-gram (Catherine t.1 + Marguerite) vs value-shuffled key x1000 and order shuffle x500",
+   "target": "draft -1.625 vs key-shuffle p99 -1.337 / order p99 -1.764 (pass A -1.622, pass B -1.454; both below key-shuffle p99)",
+   "control": "Catherine t.2 held out, same N 1,196 letters, key.tsv, sign noise e=0.430: 0/5 seeds pass",
+   "verdict": "NON-TEST (control below gate at the measured reader error; inventory unsettled); next: owner sign sorter on the f.75 crops, then re-run test1.py unchanged"
+  }
+ ]
+}

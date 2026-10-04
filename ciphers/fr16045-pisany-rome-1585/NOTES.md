@@ -45,20 +45,30 @@ Solver repositories (shallow clones of dbourdeau/cyphersolver and aaymeloglu/uns
 (c) physical neighbours: fr.16045 canvas 150 (f.72 of 1585, native 800 px look) shows cipher with no marginal/interlinear gloss; canvas 240 faded blank-ish verso; the 1586 f.244 margin gloss is Tomokiyo's report, not viewed here. Colbert 16 is the bound neighbour copy: found.
 (d) recipient side: Henri III's own replies are in Gallica btv1b100338962 (1588) and Catherine de Médicis 8-10 (to Pisany); no printed dispatch: not found. Vatican/Italian copies unsearched.
 
-## Remaining gaps (PIS-M, 4 Oct 2026)
-Read so far: 0 of 16 letters; cipher signs measured about 7,000 (1585) plus about 1,000 (1588 f.179); 0 H/C/S tokens.
-- 1585 letters (9) - blocker: not-attempted; the Vivonne4 table image is not on disk and no test has been run; next: fetch Tomokiyo's Vivonne4 table image and run the key-on-f.75/f.121 judge test with shuffled-key control, ~$3-4
-- 1586-88 letters (7) matched to Colbert 16 pt II by date - blocker: not-attempted; Colbert gives mid-letter pages with no header date at 400-1500 px; next: read the date/closing lines of spreads near interpolated canvases (8 Sept 1586 about c425-435, 17 Sept about c440-450, 4 Nov about c480-490, 24 Mar 1587 about c540-570, 18 Jun 1588 about c770) and the dispatch's opening words in the original, ~$1.5
-- Anticona mémoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud, the lane orchestrator queues one fetch of p.105; next: LOCAL-QUEUE row, ~$0
+## Test 1: Tomokiyo's 1585 table on f.75 (PIS-T, 4 Oct 2026)
+- Table: henryiii.htm l.276-279 puts `henryiii_Vivonne4.png` directly after the 1585 letter list (ff.50-121), so Vivonne4 = the 1585 table; Vivonne5 = 1586-87 with the f.244 specimen; Vivonne6 = June 1588. IMAGE-QUEUE.tsv rows 198-199 carry captions shifted by one paragraph (not edited: sources/). Image already on disk unmodified, 563x202 PNG, 80,733 B, sha256 478094330f5a9de8...; row added to sources/cryptiana/keys/IMAGE-PICK.tsv. Transcribed to key.tsv (67 labels S01-S67: 56 letter homophones with b/c sharing two shapes, 11 word signs, 3 nulls; grade: published key, Tomokiyo; cells cut by tx/keycells.py into the value-blind tx/SIGNSHEET.png).
+- Page: f.75r = canvas 156 (17 June 1585), 22 cipher lines below the clear opening (the cipher tail of clear line 6 not cut). Crops: `python3 tools/iiif_lines.py --ark btv1b9060906j --canvas 156 --region 680,1830,3060,3520 --out ciphers/fr16045-pisany-rome-1585/images --prefix f75 --debug --centres 135,276,...,3137 --follow-slope 400 --max-width 1600 --overlap 100` -> 44 crops; the slope tracker jumped L08 s2 and L09 onto the line above (faint line across the stain), re-cut by images/fix_f75_L08_L09.py (fixed slope 0.05); overlay and montage checked by eye. 1 Gallica image request + 1 info.json + 1 overview (3 requests).
+- Passes: two blind Sonnet passes (tx/PASS_BRIEF.md, values withheld): A 1,049 signs (0 unmatched), B 1,087 (8 unmatched). `tools/reconcile_passes.py`: agree 635/1,115 = 57.0%, **err_2reader 0.430**; 480 disagreement columns. Both readers name the same confusable sets (S15/S40/S13/S61 6-b-e forms; S10/S41/S02 q/9; S36/S42/S23 3-forms; S46/S48/S25 x-forms). Inventory unsettled. The 480 columns were not reconciled by a model: at > 10% disagreement TRANSCRIPTION.md sends the next pass to the owner's sign sorter, not a further machine pass.
+- PREREG_test1.md pushed (f71d4557) before any decode; test1.py -> test1_result.json. fr16 held-out fold check at N=1000: blended FN 28.0%, folds 11.0 / 71.5 / 1.5% (unknown reliability for an absolute gate; the gate is relative to nulls).
+- Result: draft (1,113 signs, 1,196 letters) score -1.625 vs key-shuffle p99 -1.337 / order-shuffle p99 -1.764 -> below the key-shuffle null; pass A -1.622 (p99 -1.337 / -1.775), pass B -1.454 (-1.346 / -1.668). Positive control (Catherine t.2 held out, same N, key.tsv, noise e=0.430): 0/5 seeds pass (scores -1.62 to -1.73 vs own key-shuffle p99 -1.59 to -1.62). **Verdict: NON-TEST** (control fails at the measured reader error). Not a negative on the table. Decoded strings show isolated words (pour, que, qui, est from word signs) but no French run.
+- Reading: reading_f75_M.txt / reading_f75_tokens.tsv by `tools/decode_key.py ... --ciphertext tx/ciphertext_draft.tsv --key key.tsv`, `--check` "reading up to date". All 1,115 tokens are grade M under this brief (the tool's H column means only that both readers agreed on a published-key sign); 2 U; 0 H/C/S. No claim of a reading.
+- Note for the next test: the target sits far below its own key-shuffle p99 while the synthetic control sits near its own; at e=0.43 neither number licenses anything.
+
+## Remaining gaps (PIS-T, 4 Oct 2026)
+Read so far: 0 of 16 letters; f.75 transcribed twice (1,049/1,087 signs, err_2reader 0.430); 0 H/C/S tokens.
+- 1585 letters (9) - blocker: not-attempted; test 1 is a NON-TEST at err_2reader 0.43 and no sorter page exists yet for the f.75 crops; next: tools/sign_sorter.py page for f.75 with focus S15/S40/S13/S61, S10/S41/S02, S36/S42/S23, S46/S48/S25 (lane orchestrator files the ASKS row), then re-run test1.py unchanged, ~$1
+- f.121 (c252) glossed passage as a known-answer check of table and transcription - blocker: not-attempted; outside this brief; next: crops of the glossed lines + gloss read, compare key decode with the clerk's words, ~$3
+- 1586-88 letters (7) matched to Colbert 16 pt II by date - blocker: not-attempted; outside this brief; next: read date/closing lines near interpolated canvases (8 Sept 1586 about c425-435, 17 Sept about c440-450, 4 Nov about c480-490, 24 Mar 1587 about c540-570, 18 Jun 1588 about c770), ~$1.5
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row, ~$0
 ## Escalation (4 Oct 2026)
 - [ ] siblings: Colbert 16 pt II / Brienne 354-356 per-letter match, planned step above
 - [x] clear-pages: 38 canvases of fr.16045 viewed; clear lines inside the letters noted as an internal crib
-- [x] known-keys: Tomokiyo's three tables are the keys; image not on disk; test not yet run
+- [x] known-keys: Tomokiyo's 1585 table transcribed (key.tsv) and tested on f.75: NON-TEST at err 0.43
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
-- [n/a] key-rebuild: no reading attempted under this brief
-- [x] image-check: later-letter start pages and fr.16046 c336/c364 viewed
-- [ ] retry: nothing to retry
-Verdict: keep going: 3 internal gaps; cheapest next: Colbert date-line reads for the 7 later letters, ~$1.5
+- [ ] key-rebuild: f.121 gloss as a known-answer check of the published table, step above
+- [x] image-check: f.75 native crops cut and checked; later-letter start pages and fr.16046 c336/c364 viewed
+- [ ] retry: test1.py on sorter-settled labels once the sorter pass exists
+Verdict: keep going: 4 internal gaps; cheapest next: Colbert date-line reads, ~$1.5
 
 ## While waiting
 The one action that depends on nobody: bisect Colbert 16 part II (canvases 417-885) for the five 1586-87 and two June 1588 dates and record page numbers.

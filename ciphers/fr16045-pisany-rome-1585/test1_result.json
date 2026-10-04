@@ -1,0 +1,74 @@
+{
+ "prereg": "PREREG_test1.md",
+ "err_2reader": 0.43,
+ "target": {
+  "file": "ciphertext_draft.tsv",
+  "signs": 1113,
+  "dropped": 2,
+  "letters": 1196,
+  "score": -1.6245,
+  "keyshuffle_p99": -1.3366,
+  "order_p99": -1.7637,
+  "pass": false
+ },
+ "passA": {
+  "signs": 1049,
+  "dropped": 0,
+  "score": -1.6218,
+  "keyshuffle_p99": -1.3372,
+  "order_p99": -1.775,
+  "pass": false
+ },
+ "passB": {
+  "signs": 1079,
+  "dropped": 8,
+  "score": -1.4544,
+  "keyshuffle_p99": -1.3459,
+  "order_p99": -1.6679,
+  "pass": false
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "score": -1.6482,
+    "keyshuffle_p99": -1.6197,
+    "order_p99": -1.8298,
+    "pass": false
+   },
+   {
+    "seed": 1,
+    "score": -1.6481,
+    "keyshuffle_p99": -1.6217,
+    "order_p99": -1.777,
+    "pass": false
+   },
+   {
+    "seed": 2,
+    "score": -1.7254,
+    "keyshuffle_p99": -1.6143,
+    "order_p99": -1.7832,
+    "pass": false
+   },
+   {
+    "seed": 3,
+    "score": -1.617,
+    "keyshuffle_p99": -1.6062,
+    "order_p99": -1.7405,
+    "pass": false
+   },
+   {
+    "seed": 4,
+    "score": -1.6813,
+    "keyshuffle_p99": -1.5944,
+    "order_p99": -1.7597,
+    "pass": false
+   }
+  ],
+  "passed": 0,
+  "pass": false,
+  "e": 0.43,
+  "N": 1196
+ },
+ "verdict": "NON-TEST (positive control failed)"
+}
