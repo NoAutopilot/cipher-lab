@@ -158,6 +158,9 @@ canvas{display:block;max-width:none;height:auto}
 .card .smp img:hover{border-color:var(--accent)}
 .card .smp img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .card .put{font-size:.75rem;color:var(--accent);font-weight:600}
+.card .cid.grab{cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
+.card .cid.grab::after{content:' \2725';color:var(--muted);font-weight:400}
+.pileghost{width:auto;height:auto;padding:6px 10px;font-family:var(--f-mono);font-weight:600;color:var(--ink);background:var(--accent-soft)}
 .card.home{border-style:dashed}
 .card.over{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
 .ghost{position:fixed;z-index:50;pointer-events:none;width:72px;height:72px;object-fit:contain;background:var(--tile);border:2px solid var(--accent);border-radius:6px;opacity:.9;box-shadow:0 6px 18px rgba(0,0,0,.3)}
@@ -204,7 +207,7 @@ body.traypad #offer{bottom:100px}
   </section>
   <section id="s2" hidden aria-label="Step 2: place the taken-out signs">
     <h2 class="ftitle">Put each taken-out sign where it belongs</h2>
-    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger. <b>Drag a small picture</b> onto another pile to move that tile (on a phone: press it a moment, then drag).</p>
+    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger. <b>Drag a small picture</b> onto another pile to move that tile; <b>drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: press a moment, then drag).</p>
     <div id="s2Empty" class="donebox" hidden><strong>Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
     <div id="s2Work" hidden>
       <div class="s2stick" id="s2Stick">
@@ -588,7 +591,7 @@ function renderS2(){
   const cards = $('cards'); cards.textContent = '';
   if (!vecDone){ cards.textContent = 'Sorting the piles by likeness…'; return; }
   const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id)}))
-    .filter(p => p.members.length || p.isNew || p.id === homeOf[sid])
+    .filter(p => (p.members.length || p.isNew || p.id === homeOf[sid]) && !(state[p.id] && state[p.id].merge_into))
     .map(p => ({...p, score: likeness(sid, p.members) + (p.family === it.fam ? 0.08 : 0)}))
     .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id));
   ps.forEach(p => { const c = document.createElement('button'); c.type = 'button'; c.className = 'card' + (p.id === homeOf[sid] ? ' home' : ''); c.dataset.pile = p.id;
@@ -598,11 +601,42 @@ function renderS2(){
     p.members.slice().sort((a, b) => (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.src = imgSrc(m); im.draggable = false;
       im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; picDrag(im, m); smp.append(im); });
     const put = document.createElement('span'); put.className = 'put'; put.textContent = 'Tap here to put the sign in ' + p.id;
+    h.title = 'Drag this name onto another pile to merge the whole pile into it'; h.classList.add('grab'); cardDrag(h, p.id);
     c.append(h, n, smp, put); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
     c.onclick = () => place(p.id);
     cards.append(c); });
 }
 // drag a small picture from one pile card onto another: moves that tile (mouse: just drag; touch: press 1/4 s, then drag)
+// drag a pile card by its name onto another card: the whole pile is the same sign (state.merge_into, the same record as
+// step 1's 'Same sign as...'); owner, 4 Oct 2026. Mouse: just drag; touch: press 1/4 s, then drag. One Undo in the message line.
+function cardDrag(h, pid){
+  let d = null;
+  const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
+  const start = () => { d.on = true; clearTimeout(d.t); try { h.setPointerCapture(d.id); } catch (er) {}
+    const g = document.createElement('div'); g.className = 'ghost pileghost'; g.textContent = pid + ' (' + membersOf(pid).length + ')'; document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
+  const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 40) + 'px'; d.ghost.style.top = (d.y - 20) + 'px'; }
+    const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pid) c.classList.add('over'); d.over = c; } };
+  const loop = () => { if (!d) return; const top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 40;
+    if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
+  h.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
+    if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
+  h.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on){ if (Math.hypot(d.x - d.sx, d.y - d.sy) > 8){ if (d.mouse) start(); else { clearTimeout(d.t); d = null; } } return; } e.preventDefault(); });
+  h.addEventListener('touchmove', e => { if (d && d.on) e.preventDefault(); }, {passive: false});
+  const end = (e, drop) => { if (!d) return; const dd = d; d = null; clearTimeout(dd.t); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('over');
+    const c = drop && cardAt(e.clientX, e.clientY); if (!c || c.dataset.pile === pid) return; mergePile(pid, c.dataset.pile); };
+  h.addEventListener('pointerup', e => end(e, true)); h.addEventListener('pointercancel', e => end(e, false));
+  h.addEventListener('contextmenu', e => e.preventDefault());
+}
+function mergePile(from, to){
+  const s = st(from), prev = {verdict: s.verdict, merge_into: s.merge_into};
+  s.merge_into = to; s.verdict = null; save(from); render();
+  const m = $('s2Msg'); m.textContent = 'Merged pile ' + from + ' (' + membersOf(from).length + ' tiles) into ' + to + '. ';
+  const u = document.createElement('button'); u.type = 'button'; u.textContent = 'Undo merge';
+  u.onclick = () => { const t = st(from); t.merge_into = prev.merge_into; t.verdict = prev.verdict; save(from); render(); $('s2Msg').textContent = 'Undid the merge of ' + from + '.'; };
+  m.append(u);
+}
 function picDrag(im, sid){
   let d = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
