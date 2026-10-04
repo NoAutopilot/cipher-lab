@@ -26,3 +26,16 @@ Held-out: recover from tokens of lines 1-11 only; score S on lines 12-22 against
 vs N1 on lines 12-22. Grades: C where a pile's value is the plurality of >=5 aligned gloss letters with >=60% agreement and
 the held-out check passed; else M. Nothing H (no key sheet); no grade above the reading's own.
 Stop point: first test = one line of c370 decoded with the proposed table, shown as is; no full decode of c370-c375.
+
+## Amendment 1 (06:39 UTC, before any alignment has been run; clock read)
+The c380 gloss turned out to be the decipherment Charriere IV quotes (p.638 note, Lancosme's letter of 23 Dec 1587): gloss
+phrases read on the leaf ("ont voulu accuser", "la malice ... presomption", "perroz lesquels a", "leur authorite", "fermer
+l'esglise") follow his text word for word. The margin's own readable fragments are too broken for alignment (line beginnings
+lost in the gutter; my partial read of gloss lines 1-18 is in savt/gloss_c380_partial.txt). So:
+- G = savt/print_charriere_c380.txt (normalized as above). It starts at gloss line ~10, i.e. beside cipher line ~5-6 and runs
+  to "a l'honneur de V. M." near the page end (gloss line ~44 "nous ny vinssions" visible on the leaf); cipher lines 1-4/5 carry
+  text not printed by Charriere (gloss lines 1-9: "humblement", "la deputaz", "de fait", "ont viole" ...).
+- Primary statistic changes to S_loc = Smith-Waterman local alignment score of the whole c380 D against G (same +2/-1/-2/0
+  scoring), because the start of G inside D is not known to the line. The pre-registered semi-global S is also reported, on D
+  restricted to cipher lines 6-22 (the first full line beside which "malice" stands on the leaf). Same nulls, same gate
+  (target > max of 200 draws of each null), same positive control (built from G at the length of the D used).
