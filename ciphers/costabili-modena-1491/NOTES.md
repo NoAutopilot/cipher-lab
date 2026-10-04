@@ -171,3 +171,17 @@ Verdict: keep going: 4 internal gaps; cheapest next: Vestigia image map for 2955
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
     intake_gate_check: costabili-modena-1491: partial (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0)
+
+## R1166 P1-P2 group-level crops (N8-COS, 4 Oct 2026, from 16:40 UTC by date -u)
+
+Pre-registration pushed first: `align/PREREG-N8-COS.md` (3d0fde2b), before any crop was cut or read. Images: one DECODE browser login
+(`tools/decode_browser_login.js 1166 <scratch> --guess-fullsize --max-files 10 --delay 1800`), 4 pages to the scratchpad only, P1-P4 sha1 =
+`images_manifest.tsv`; nothing committed. Crop step (the command, run before any reader call): `python3 ciphers/costabili-modena-1491/align/n8cos_cut.py`
+(run in the scratch folder holding `dec/` and `boxes_view.tsv`) -> 32 group crops (21 P1, 16 P2 drawn, 5 dropped as empty or code-only after a contact-sheet check of
+the crop geometry; dropped before any read), boxes in page pixels in `align/n8cos_boxes.tsv`. Each box holds a gloss word or phrase and the cipher
+group(s) under it; where one gloss phrase spans several groups (e.g. "tuti Li termini sono") the box holds the phrase and its groups (deviation from
+"one group" in the PREREG, stated before the read). Boxes chosen from 1/1.06-scale grid views of the page geometry; this worker has seen the RUN3-COSK
+reconciled readings, but the readers get no value, gloss text or key.
+Units stated before the first call: 2 blind Sonnet reader calls (pass A page order, pass B reverse; each over all 32 group crops, total crop area
+below one page of line crops) + 1 reconciliation by this worker = 3 units at ~USD 1.2 each (~3.6 of the 6 cap); the Vestigia 2955/2977 image map (~1)
+only after, if the cap allows.
