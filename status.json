@@ -2335,9 +2335,9 @@
         "other": "3 M (was 16; N8-THUR boundary v3 + N8-THUR2 codes 32/33/38 M->H, 4 Oct 2026); eleven lines of p.188 partly incoherent"
       },
       "depth_sentence": "Stamford writes in cipher that the matter came to his knowledge 'by meere chance' and 'without the least injunction of secrecy'.",
-      "depth_check": "period key from Birch's printed decipherments of Stamford's 20 and 30 March 1655 letters, agreeing with Tomokiyo's table",
-      "depth_note": "H 64 + C 338 of 424; D3 withheld: partly incoherent lines on p.188",
-      "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
+      "depth_check": "period key from Birch's printed decipherments of Stamford's 20 and 30 March 1655 letters, agreeing with Tomokiyo's table; content of the readable cipher matched by the office's 30 March decipherment restating it (THUR-P4-DEPTH)",
+      "depth_note": "H 73 + C 342 of 424 (97.9% by token); D3 withheld (THUR-P4-DEPTH, 4 Oct 2026): p.188 lines 53-61, 144 of 424 numerals, interleaved in the print itself with 29 non-numeral tokens ('am.' x7, never in the siblings) and does not read; cause (compositor-set signs or Stamford's own faulty encipherment) needs the MS Rawl. A. 24 leaf; about 66% of cipher tokens read as text",
+      "depth_by": "session_01K9c1K8rfNLTaMgr9GhQLmG",
       "depth_date": "4 Oct 2026",
       "decode_status": "Partially decrypted"
     },

@@ -997,3 +997,45 @@ reconstruction of the system very probably from the same printed sibling deciphe
 records a published key's agreement, not independent corroboration; the period decipherments themselves split on 33
 (w 18, u 7, m 2, t 1 of 28 votes). The N-class and safe sentence stand; counts in the N8-THUR revision above are superseded.
 Not re-verified by a verifier session; the rule-7 fresh re-derivation is N8-THR7's. See NOTES.md "N8-THUR2".
+
+## Depth re-check, P4 (THUR-P4-DEPTH, account 3 verifier, 4 Oct 2026, 17:3x-17:5x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-04-acct3-thur-p4-depth.md`. I did not solve P4 or set its first depth. No decoding,
+no key or reading change. Reading under check: `pool_1654/reading_P4.txt` as of N8-THUR2 (H 73, C 342, S 0, M 3, U 6 of
+424; 97.9% H/C; rule-7 re-derivation SAME, N8-THR7). Question: D2 or D3 (rule 4a), and whether the "partly incoherent
+lines on p.188" are a reading gap or the letter's own wording.
+
+**What the page image shows.** I read `images/collectionofstat03thur_leaf0198_p188_crop_blockA.jpg` against
+`P4/image_transcription.tsv` lines 50-61: the transcription matches the print token for token. The incoherence is
+therefore not an OCR or transcription artefact of ours. In printed lines 53-61 Birch sets **29 non-numeral tokens inside
+the numeral stream** (by, it, in, it, and, at, the, the, the, am, am., it., in., that, by, am., by, and, am., thousand,
+armes, am, and, in, and, is, in, am., at) against **144 numerals** (34% of P4's 424 cipher tokens). Several carry the
+same full stop the printer gives each numeral ("19. am. 16. 12. 158." "39. it. 6. in. 12."), and **"am" occurs 7 times
+here and never next to a numeral in the 1,508 sibling tokens** (P5+P6, P7, `pool_1654/tokens.tsv`). In the sibling
+letters the clear words mixed into the numerals read as English with their cipher neighbours ("of {my engaging} in this
+{general rising}", P5+P6 djvu 22923); in P4 lines 53-61 they do not ("{tha} by {the} it {eis} in {ca} it {seat}").
+
+**Against the sibling decipherments.** The coherent cipher of P4 is corroborated in substance by the office's own
+decipherment of the 30 March letter (Birch III pp.274-275), where Stamford "set[s] down the substance of my former
+letters": P4 "it is come to my knowledge by meere chance ... the person I got it from taking it for granted upon his
+meeting me as hee thought stealing out of {England}" against P5 "I came to the knowledge of it thus ... one that knew me,
+who finding me stealing, as he thought, from England, took it for granted"; P4 "{general rising}" and "{...siderable}"
+against P5 "the most considerable persons ... in this general rising". That is a non-statistical external check of the
+parts that read, from an H-grade source. It does not reach lines 53-61: neither printed decipherment restates "a
+thousand armes" or the stretch around it closely enough to align.
+
+**Cause of the incoherence: not settled.** Two explanations fit the print and neither is excluded: (a) the 29 tokens are
+Birch's compositor's rendering of cipher signs he could not set (then they are unread cipher tokens outside our 424,
+probably code signs); (b) Stamford's own encipherment is faulty here -- his clear text on p.189 says he wrote in haste,
+"I doe not verry well know my selfe whether it bee true written or noe", and calls the cipher "very imperfect". Either
+way the gap is not in our key or our transcription (the per-token letter grades stand), but it is a gap in what reads:
+about a third of the cipher, in one block, gives letters and no sentence. Only the leaf (Bodleian MS Rawl. A. 24, unseen;
+needs-physical-access or a reproduction) can say which.
+
+**Depth: D2 (unchanged).** D3 needs >=80% of cipher tokens H/C/S **with the gaps mostly names/codes**: the token share
+passes (97.9%) but the main gap is a 144-numeral stretch that does not read, not a residue of names or codes, so a
+"largely deciphered" sentence would over-claim. Outward wording stays "partially deciphered (about 66%)" for what
+reads as text -- 280 of 424 cipher tokens lie outside lines 53-61 -- or "partially deciphered" with the 97.9% token
+figure stated as a token grade, never as a share read. depth_pct in status.json stays the token figure (97.9) with this
+note. What would raise it: the MS leaf showing what Birch set as "am"/"it"/"in" (route: Bodleian reproduction order,
+ASKS/LOCAL-QUEUE L19 line), then a re-check. N-class unchanged (N4, not re-examined here).
