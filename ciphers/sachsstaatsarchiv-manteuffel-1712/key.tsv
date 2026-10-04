@@ -162,3 +162,5 @@ code	value	grade	source	note
 864	le Roi de Prusse	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	4 single-code glosses; Krauske 230/252/257 also le Roi de Prusse
 877	Bartholdi	M	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	2 occurrences; gloss partly cut / letters doubtful in the passes (Bartholdi, Rattolti?, Wratislau?)
 879	Hannovre	C	period interlinear gloss, Loc. 694/08 f.422v (frame 0528), GAPS195 3 Oct 2026	1 single-code gloss; also inside the f.423 run glossed '... et Hannovre'
+770	Manteuffel	C	period interlinear gloss, Loc. 694/08 frame 0501, RUN3-MANT 4 Oct 2026	2 single-code glosses "manteuffel" (both passes); per-leaf gate PASS (f0501/PREREG-MANT0501.md)
+865	le Prince Royal	M	period interlinear gloss, Loc. 694/08 frame 0501, RUN3-MANT 4 Oct 2026	1 single-code gloss "Pr: Royal" (C as a gloss); code digits M: both blind passes 805, zoom and GAPS207 865; beside 864 le Roi de Prusse (0528)

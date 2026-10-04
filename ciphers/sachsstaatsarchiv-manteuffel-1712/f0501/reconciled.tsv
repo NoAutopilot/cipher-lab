@@ -1,0 +1,13 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	left	L_L01	770	manteuffel	C	both passes; gloss clear
+2	left	L_L02	73	Ilgen	C	A 'Hen?', B 'Hyen?'; zoom reads Ilgen (as GAPS207 and 0528)
+3	left	L_L02+L_L03	401 515 579 139 115 612 452 156 867 549 402 237 180 612	le Pr Royal a tenu au feldmarechal qui la debite	M	run starts '401.6' at the left page's right edge (a partial group '6' at the gutter, dropped, not readable); 'le' over 401; rest of gloss on the interlinear line over 515...612 (B saw 'Pr Royal' and 'a tenu au' over the first groups; A missed the gloss). Hand's 9 is y-shaped: 57y=579, 13y=139 (A 134, B 134), 54y=549. Both passes 13/13 groups after 401 with digit doubts only
+4	left	L_L03+L_L04	230 100 115 588 273 494	comme la sienne	C	gloss 'comme' over 100.115, 'la sienne' over 588.273; last group 'uy4' read 494 (M); A placed gloss over 230 100, B over 588-494
+5	left	L_L05	770	manteuffel	C	both passes
+6	left	L_L06	865	Pr Royal	C	gloss 'Pr: Royal'; digits 8-6-5 on the zoom (A 805, B 805?, GAPS207 865); middle digit M
+7	right	R_L01	403 228 111	le Comte Wartensleben	C	both passes; 111 written as three strokes
+8	right	R_L02	149 612 583 401	-	-	unglossed, both passes
+9	right	R_L03	553 716 417 646 84 406 108	qu'un troisieme appelle	M	partial gloss: 'qu'un' over 553, 'troisieme' over 716.417, 'appelle' over 646; 84.406.108 unglossed (likely the name). A read 'nouveau', B 'troisieme'; zoom: troisieme
+10	right	R_L04	515 485 492 281 402 519	propose la paix	C	A 'monsr le prince' (approx), B 'propos le paix'; zoom 'propose la paix' (GAPS207 'proposer la paix'); 281 (A 241, B 281); last 51y=519
+11	right	R_L04	342	-	-	unglossed single group at line end; may continue into run 12
+12	right	R_L05	583 240 825	generaux suedois	C	gloss over the whole run (A 'generaux', B 'generaux [?]', GAPS207 'generaux suedois'); 825 final digit M

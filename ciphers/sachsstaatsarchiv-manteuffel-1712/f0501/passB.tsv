@@ -1,0 +1,14 @@
+crop	codes	gloss	before	after	notes
+R_L05	515 485 492 281 402 514	propos[ition?] le paix	line start	et faire en sorte que le	492/442; 281/241; 514/519; 515/516
+R_L05	583 240 825?	generaux [?]	line start	cmblaffeat en quelque maniere avoir	583/593; 240/290; 825/821
+R_L03	553 716 417 646 84 406 108	qu'un troisieme appelle	affaires hedoises, cest	line end	'qu'un troisieme' over 553-716, 'appelle' over 417-646; 417/419; 646/640; 716/710
+R_L04	342	-	que le	line end	342 could be 542; not underlined
+R_L02	149 612 583 401	-	line start	Il luy a temoigne	612/642; 583/593; 401/407
+R_L01	403 228 111	le Comte Wartensleben	Le premier va, dit on, a Vienne... a Mons.	line end	403/405; 228/223; 111 or III
+L_L06	805?	Pr. Royal (or Dr Royal)	de	y a donne occasion	805/865/803
+L_L05	770	manteuffel	line start	m a dit que s'il	770/710/779
+L_L04	230 100 115 588 273 494?	comme la sienne	convention	line end	gloss over 588 273 494; 230/250; 494/444/474
+L_L03	515 574 134 115 612 452 156 867? 549 402 237 180 612	Pr. Royal (over first groups); 'a tenu au ...' interlinear	que 401	selon ton	574/571; 134/139; 452/482; 156/158; 867/807/869; 549/540; 237/231; 180/190; 612/642
+L_L03	73	Hyen?	de Mons.	et les discours que	73/75
+L_L03	401 6?	-	les discours que	continues next line	truncated at crop edge
+L_L01	770	manteuffel	de Mons.	qui l'a ecrite a la Hate pour refuter	770/710
