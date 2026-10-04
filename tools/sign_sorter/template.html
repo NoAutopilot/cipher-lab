@@ -136,12 +136,14 @@ canvas{display:block;max-width:none;height:auto}
 .s2info{min-width:0;flex:1 1 auto}
 .s2info strong{display:block;overflow-wrap:anywhere}
 #s2 .cv{margin-top:10px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin-top:10px}
 .card{display:grid;gap:4px;text-align:left;padding:8px;border:2px solid var(--line);border-radius:6px;background:var(--surface);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}
 .card .cid{font-family:var(--f-mono);font-weight:600;overflow-wrap:anywhere}
 .card .cnt{font-size:.75rem}
-.card .smp{display:flex;gap:3px}
-.card .smp img{width:32px;height:32px;object-fit:contain;background:var(--tile);border-radius:2px;pointer-events:none;-webkit-user-drag:none}
+.card .smp{display:flex;flex-wrap:wrap;gap:4px}
+.card .smp img{width:var(--csz,60px);height:var(--csz,60px);object-fit:contain;background:var(--tile);border-radius:3px;border:2px solid transparent;cursor:zoom-in;-webkit-user-drag:none}
+.card .smp img:hover{border-color:var(--accent)}
+.card .put{font-size:.75rem;color:var(--accent);font-weight:600}
 .card.home{border-style:dashed}
 .card.over{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
 .ghost{position:fixed;z-index:50;pointer-events:none;width:72px;height:72px;object-fit:contain;background:var(--tile);border:2px solid var(--accent);border-radius:6px;opacity:.9;box-shadow:0 6px 18px rgba(0,0,0,.3)}
@@ -187,7 +189,7 @@ body.traypad #offer{bottom:100px}
   </section>
   <section id="s2" hidden aria-label="Step 2: place the taken-out signs">
     <h2 class="ftitle">Put each taken-out sign where it belongs</h2>
-    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap</b> the pile. The closest-looking piles come first.</p>
+    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger; from there you can move any of its tiles.</p>
     <div id="s2Empty" class="donebox" hidden><strong>Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
     <div id="s2Work" hidden>
       <div class="s2top">
@@ -517,8 +519,10 @@ function renderS2(){
     const h = document.createElement('span'); h.className = 'cid'; h.textContent = p.id;
     const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.id === homeOf[sid] ? ' · where it came from' : p.isNew ? ' · new pile' : '');
     const smp = document.createElement('span'); smp.className = 'smp';
-    p.members.slice().sort((a, b) => (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 4).forEach(m => { const im = document.createElement('img'); im.alt = ''; im.src = imgSrc(m); im.draggable = false; smp.append(im); });
-    c.append(h, n, smp); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
+    p.members.slice().sort((a, b) => (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.src = imgSrc(m); im.draggable = false;
+      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; smp.append(im); });
+    const put = document.createElement('span'); put.className = 'put'; put.textContent = 'Tap here to put the sign in ' + p.id;
+    c.append(h, n, smp, put); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
     c.onclick = () => place(p.id);
     cards.append(c); });
 }

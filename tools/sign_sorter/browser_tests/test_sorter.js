@@ -15,7 +15,7 @@ const { chromium } = require('playwright'); const mock = require('./mock_db');
   console.log('stored OUT moves:', outs, '| tray:', await page.textContent('#trayN'), '| X header:', await x.locator('.cnt').textContent());
   await page.click('#trayGo'); await page.waitForTimeout(500);
   const first = await page.evaluate(() => s2Cur); const card = await page.locator('.card').first().getAttribute('data-pile');
-  await page.locator('.card').first().click(); await page.click('#s2New'); await page.waitForTimeout(800);
+  await page.locator('.card .cid').first().click(); await page.click('#s2New'); await page.waitForTimeout(800);
   const st = await page.evaluate(() => ({ moves, np: Object.keys(newPiles) }));
   console.log('placed', first, 'in', st.moves[first] || '(home)', '| card was', card, '| new piles:', st.np);
   await page.click('#tab1'); await x.locator('.acts button', { hasText: 'This pile is done' }).click(); await page.waitForTimeout(600);
