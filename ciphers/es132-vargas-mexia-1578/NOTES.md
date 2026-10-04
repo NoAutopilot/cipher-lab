@@ -58,7 +58,7 @@ Requests by host: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2 (one br
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
 - The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due**. The duplicate copy f.93r-f.95r is transcribed and aligned (A3V3-ES9396) and **43 of the 113 '?' tokens are settled from it** (A3V3-ES132S, 4 Oct 2026, PREREG_dupsettle.md, section below: 25 flags removed where both duplicate blind reads confirm, 18 tokens replaced by the duplicate's isolated 1:1 token; control 48/50 firm tokens unchanged); **70 '?' remain**; a fresh rule-7 re-derivation of the settled f.89 pages is owed (not done by the settling worker) - blocker: not-attempted; next: rule-7 re-derivation after A3V3-ES132S (fresh session, spec + key + test2.py/settle_dup.py --check), ~$2; then the 30 non-isolated and 10 non-agreed candidates in dup_settled.tsv by a two-crop look (f.89 crop vs duplicate crop), ~$3
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
-- About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; f.41r done (Cipher 3 pool test 1, ES132-C3 4 Oct 2026: gate (b) PASS on both blind passes, control passing in the same run; err_2reader 30.6%, 105/526 tokens '?'); f.41v (rest of the same letter, if cipher) and the other ~28 not started; cabinet-noir still at 47b6db9 (4 Oct 2026 06:2x UTC); next: f.41r '?' settlement from the crops (81 default-flagged spans, ~$1.5), then the next letter by the same route (`test2.py --page`, add the page to C3_PAGES), ~$4.5 per page
+- About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; f.41r and f.41v done (gate (b) PASS on both blind passes with the control passing in the same run: ES132-C3 and RUN3-ES41, 4 Oct 2026; err_2reader 30.6% / 33.0%, '?' 105/526 and 162/546); the f.41r crop settlement failed its own control by one item (RUN3-ES41: 17/20 vs 18) and was not applied, so the error rate of this hand is the limit now; f.42r-f.43 (rest of the letter, canvas 39 right) and the other ~28 letters not started; cabinet-noir still at 47b6db9 (4 Oct 2026 08:4x UTC); next: lookalike pass (`tools/lookalike_pass.py`) on f.41r/f.41v's disagreements before any further machine settlement (~$3), then f.42r by the same route (`test2.py --page`, add to C3_PAGES), ~$4.5 per page
 - 3 open Cipher 4 (Perez) letters f.87, 157, 179 (f.136/148 probably clear per the BnF record) - blocker: not-attempted; table now on disk (sources/cryptiana/web/spanish3vargas4.png, A3V2-ES132C4 4 Oct 2026) and cabinet-noir's code hypotheses cited, but cabinet-noir's own cle/ file shows it has already transcribed and partly read all three (contexts from f.87r/v, f.157r, f.179v-180r), so a reading here would likely duplicate theirs; next: re-check cabinet-noir's git log for f087/f157/f179 folders before any work, then (only if still absent) build key.tsv from the PNG and read f.87 (2 blind passes + reconciliation on line crops), ~$4
 - Sibling pool BL Add MS 28421 (further undeciphered Vargas Mexia letters, Tomokiyo blog 23 June 2024) - blocker: not-attempted; outside this target's volume, for the scout (QUEUE.md), not this folder; next: one BL catalogue lookup (searcharchives.bl.uk JSON) to size it, ~$0.5
 
@@ -70,7 +70,7 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [x] retry: catalogue record fetched (curl + browser UA, 200; digitised, Gallica btv1b10032556x, MF 8506) and the three blog threads opened (A3V2-ES132C4, 4 Oct 2026): no reading claim found
-Verdict: keep going: 5 internal gaps; Cipher 3 pool test 1 (f.41r) PASS on file (ES132-C3, 4 Oct 2026); cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings) and 43/113 '?' tokens are settled from it (A3V3-ES132S, control 48/50 unchanged); next the rule-7 re-derivation owed after A3V3-ES132S (~$2), then a two-crop look at the 40 unsettled candidates (~$3)
+Verdict: keep going: 5 internal gaps; Cipher 3 pool f.41r and f.41v gate (b) PASS on file (ES132-C3, RUN3-ES41, 4 Oct 2026; f.41r settlement control FAIL, not applied); cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings) and 43/113 '?' tokens are settled from it (A3V3-ES132S, control 48/50 unchanged); next the rule-7 re-derivation owed after A3V3-ES132S (~$2), then a two-crop look at the 40 unsettled candidates (~$3)
 
 ## While waiting
 Nothing waits on a person: the f.89 '?' settlement from the duplicate is applied (A3V3-ES132S, 4 Oct 2026); the action that depends on nobody is now the fresh rule-7 re-derivation of the settled f.89 pages, then the next open Cipher 3 letters outside cabinet-noir's list.
@@ -434,3 +434,55 @@ Grades (rule 4, per PREREG: S where the page gate passes on both blind passes an
 Reading `reading_f41r.txt`. Sense by eye, not graded (decode quoted literally, syllables spaced): L11 "[158] [258] [238] ta do a e ba xa dor de fra ci a que a qui" (embaxador de Francia que aqui), L13 "de fran ci a y fran de [5]" (Francia y Flandes?), L16 "pa t el cos ti go de los re be de [5]" (castigo de los rebeldes?), L21 "ti ni o pe re f pa t e tra tar de ta ma ie ri a" ([Anto]nio Perez ... tratar de ta[l] ma[t]eria?), L23 "y el di co el ba xa dor tor no a fro po ner la mi [5] ma", L28 "dar io bre la re y na de yn gra te ra" (la reyna de Ynglaterra). Reported as found; not searched in print in this job; f.44/f.46 (same date, cabinet-noir) not compared.
 Not done: f.41v (continuation, if cipher; not viewed); settlement of the 81 default-flagged spans.
 Requests: gallica.bnf.fr 8 (6 x 900 px canvases, 1 info.json, 1 native region); github.com 1 shallow clone. Subagent calls: 2 Sonnet (blind passes). No credentials used. Report only; no novelty classification made.
+
+## f.41r settlement + f.41v (RUN3-ES41, LANE-RUN3 account 1, 4 Oct 2026, 08:47-09:xx UTC by the container clock)
+Brief `.claude/briefs/runs/2026-10-04-acct1-run3-wave1.md` section RUN3-ES41. f.89/f.119/f.93-96 files and AUDIT.md untouched.
+Step 1. cabinet-noir fresh shallow clone (08:4x UTC): `git log -1` = `47b6db9 2026-10-02 14:15:15 +0000 Version 1.2.1` (unchanged); es132 folder list
+unchanged (30 folders; no f037, f041, f079). Nothing dropped from `cabinet_noir_map.tsv`.
+Step 2. f.41r default-flag settlement. Rule pre-registered and pushed before any read: `PREREG_f41r_settle.md` (367f3428; a clarification
+restricting decoys to digit tokens pushed with the items, d915332b, before the read). The 81 default tokens = 56 units (44 one-to-one A/B
+pairs + 12 unequal spans; `run2/f41r_units.tsv`, written by `run2/reconcile_f41r.py`, which now writes `ciphertext_f41r_pre.tsv`, byte-identical
+to the ES132-C3 stream). One blind Opus subagent read `run2/settle_f41r_items.tsv` (76 items: the 56 units + 20 decoys, shuffled, options in
+random order, crops only, no key) -> `run2/settle_f41r_reads.tsv`; `settle_f41r.py --apply` -> `f41r_settle_result.json`, `run2/f41r_settled.tsv`.
+**Control (20 firm tokens vs a look-alike decoy): firm picked at high confidence 17/20, at low 3/20; decoy picked 0/20 at any confidence.
+Gate (>= 18/20 firm-high AND <= 1/20 decoy-high): FAIL (by one item).** Per the PREREG nothing is applied: `ciphertext_f41r.tsv` = the _pre
+stream plus one header line saying so; the 56 reads stay as image-check pointers in `run2/f41r_settled.tsv` (S1 high-confidence 11 units, S2
+low 36, S3 "other" 9; side A 23 / B 24 / other 9). Not re-gated after the fact (the reader never chose a decoy, but the gate counts confidence
+too, and was fixed before the read).
+Scoring before/after (test2.py --page f41r, unchanged): identical, since nothing was applied: reconciled S_b -1.266 vs order p99 -1.483 /
+key p99 -1.832 (PASS); blind A -1.375 / B -1.388 (PASS); positive control f.90v reconciled -1.048 vs -1.396 / -1.801 (PASS).
+`c3_test1_f41r_result_pre.json` = the committed result; `test2.py --page f41r --check` and `settle_f41r.py --check` "OK". Grades unchanged:
+H 0, C 0, S 393, M 95, I 0, U 35. '?' tokens stay 105.
+Step 3. Next page: **f.41v** (the brief's first choice; canvas 39 left, 31 full cipher lines, verso of f.41r, same letter of 29 April 1578;
+`PREREG_c3_f41v.md` pushed c8384ba4 before any decode, statistic/nulls/gate/control/grades = PREREG_c3_test1.md unchanged). Crops (pasted):
+```
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 39 --region 650,850,2700,4300 --out ciphers/es132-vargas-mexia-1578/images --prefix f41v --follow-slope 300 --slope-margin 40 --max-width 1450 --centres 241,365,495,609,731,869,985,1100,1226,1358,1499,1644,1775,1913,2064,2190,2334,2462,2597,2732,2856,3012,3143,3269,3405,3547,3679,3803,3929,4055,4177 --debug
+ -> 31 lines, 31 bands x 2 segments; wrote 62 crops (1450 px wide)
+```
+Automatic detection first gave 29 bands with a duplicate (L28/L29 at the same y; the lines slope about -0.05, ~150 px drift over the
+region); the centres are the 31 row-ink peaks of the region's left 500 px (script), checked by eye on a contact sheet (L01/02/10/11/20/21/
+30/31) and L15 full width. Side effect logged: the tool's 30 MB guard deleted nine committed `src_*` reference images in the working tree
+(restored from git before committing; the native f.39 source is not committed, re-fetchable from the region URL).
+2 blind Sonnet passes (`run2/pass_prompt_f41v.md`) -> `passes/f41v_passA.tsv` (546 tokens), `_passB.tsv` (517). **err_2reader 183/554 = 33.0%**
+(f.41r 30.6%; above one tenth: per TRANSCRIPTION.md the next transcription step for this hand is the lookalike pass / owner sorter, not a
+third machine pass). Pass A's reader flagged L17 (short line) and L30 as least reliable. Reconciliation (third unit): `run2/reconcile_f41r.py
+--page f41v`, f.41r's rules applied mechanically: R1-R6 fired 0 times, R7 17, default 166 -> `ciphertext_f41v.tsv` 31 lines, 546 tokens,
+162 flagged '?'. (f.41r's shape rules do not transfer: the two readers' confusions on this page are different ones.)
+Decode (`test2.py --page f41v`, `c3_test1_f41v_result.json`, nulls first, positive control in the same run):
+| text | letters | S_b | order-shuffle p99 | key-shuffle p99 | gate (b) |
+|---|---|---|---|---|---|
+| f.41v blind pass A | 872 | -1.456 | -1.647 | -1.896 | PASS |
+| f.41v blind pass B | 804 | -1.407 | -1.630 | -1.908 | PASS |
+| f.41v reconciled | 877 | -1.446 | -1.623 | -1.886 | PASS |
+| positive control f.90v unprinted, A / B / reconciled | 318 / 320 / 322 | -1.064 / -1.112 / -1.048 | -1.419 / -1.418 / -1.396 | -1.837 / -1.797 / -1.801 | PASS |
+Margins over the order null 0.19 / 0.22 on the blind passes (f.41r 0.16 / 0.16). Standard judge fails every real decode and the ARM-C1
+shuffled-median check is False on target and control (reported, not gated, as in tests 1-2).
+Grades (rule 4, per PREREG): H 0, C 0, **S 359, M 125**, I 0, U 62. Page-level gate, not per-token verification; no H or C: cryptanalytic
+(key-applied) result. Rule 7: `test2.py --page f41v --check`, `test2.py --check`, `test1.py --check` all "OK: committed outputs match".
+Reading `reading_f41v.txt`. Sense by eye, not graded (decode quoted literally): L03 "y a don e ba xa dor le res a ce" (embaxador), L04 "an ti ni o
+pe re c" (Antonio Perez), L06 "de di os y bi en", L14 "con es to an to ni o p pe re c me di a", L16 "le res pon di e", L23 "ne go ci o",
+L26-27 "pa ra cas ti go de ... re be [l]de[s]" (cf. f.41r L16 "castigo de los rebeldes"), L29 "el ba xa dor", L31 "an xo ni o pe re c el o tro
+di a". Not searched in print in this job; f.44/f.46 (same date, cabinet-noir) not compared.
+Requests: gallica.bnf.fr 5 (one 900 px canvas 39, one info.json, three native-region fetches of the same region: the tool re-fetched after
+its own 30 MB downscale); github.com 1 shallow clone. Subagent calls: 1 Opus (settle read), 2 Sonnet (blind passes). No credentials used.
+Report only; no novelty classification made.
