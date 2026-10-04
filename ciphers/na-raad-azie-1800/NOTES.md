@@ -916,7 +916,7 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
 - [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
-Verdict: keep going: 0 internal gaps; cheapest next: item-page and digitisation check of 2.01.27.03 invnr 207 and 144 (secret Van Polanen/Meyer reports 1807-10) for any cipher leaves, ~$1 (A2-RAA11: the finding-aid sweep of every 2.01.27/2.01.28/2.10.01-03 toegang found no cipher-marked sibling)
+Verdict: keep going: 0 internal gaps; cheapest next: full thumbnail sweep of the 167 digitised leaves of 2.01.27.03 invnr 207 (118) and 144 (49) for numeral/symbol runs (RUN1-RAA 4 Oct 2026: both DIGITALIZED, 4 leaves sampled, no cipher seen), ~$1.5, needs a request cap above 25 (A2-RAA11: the finding-aid sweep of every 2.01.27/2.01.28/2.10.01-03 toegang found no cipher-marked sibling)
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
@@ -926,3 +926,18 @@ Verdict: keep going: 0 internal gaps; cheapest next: item-page and digitisation 
 - Unfinished step: item-page and digitisation check of NA 2.01.27.03 invnr 207 and 144 for cipher leaves -- the
   Verdict line above is still this step.
 - May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
+
+## Item-page check, NA 2.01.27.03 invnr 207 and 144 (RUN1-RAA, 4 Oct 2026)
+Route: item page `www.nationaalarchief.nl/onderzoeken/archief/2.01.27.03/invnr/N` (HTTP 200 both), embedded `drupal-settings-json` ->
+`viewer.response` (a JSON string; parse twice), not the visible "Scan" text. Result: **invnr 207 `availability: DIGITALIZED`, 118 scans**
+(NL-HaNA_2.01.27.03_207_0001..); **invnr 144 `DIGITALIZED`, 49 scans**. All 167 scan ids and labels: `data/finding_aids/item_scans_207_144.tsv`.
+Look: reduced-size (600 px wide, IIIF `service.archief.nl/iip/iipsrv?IIIF=<path>.jp2/full/600,/0/default.jpg`) leaves, 2 per item:
+207 leaves 21 and 71, 144 leaves 11 and 31. Seen: Dutch longhand prose (207 l.21, 71: numbered paragraphs; 144 l.31: a letter
+dated at Batavia 1805 [date read at 600 px, uncertain]; 144 l.11: blank/verso). No numeral groups, symbol runs or cipher
+grids on the 4 leaves seen. **Not found:** any cipher leaf -- but 4 of 167 leaves is a 2.4% sample, so this is NOT a negative for the
+two inventory numbers; it shows only that they are digitised and openable. A first attempt with a malformed IIIF URL (double
+slash) cost 19 wasted 404 requests, which used most of the 25-request allowance (hence 4 leaves, not a contact sheet of ~20).
+Grades: H 0, C 0, S 0, M 0, I 0. Requests: www.nationaalarchief.nl 2, service.archief.nl 23 (19 x 404 + 4 x 200); vision 1 (one 4-leaf sheet).
+
+Next (one line): open all 167 leaves as 200 px thumbs via the `thumbnail` URLs in the TSV (~167 requests, needs a brief
+raising the 25-request cap, >=3 s apart) and flag numeral-heavy leaves with `tools/htrc_numeral_pages.py`-style density or by eye.
