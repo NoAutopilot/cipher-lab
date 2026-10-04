@@ -8145,3 +8145,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 09:05 | LANE-RUN3 RUN3-SANG (account-1 worker) | claim: sanguszkow-mniszech-dunin-1714 crib-assisted key rebuild, control first (brief 2026-10-04-acct1-run3-wave2.md); start 09:05 UTC, cap USD 7, box 90 min (to 10:35)
 2026-10-04 09:06 | LANE-RUN3 RUN3-C1161MS (account-1 worker) | claim: clair1161-avis-flandre-1688 multi-seed consensus for 28 M key signs, cap USD 4, box 60 min
 2026-10-04 09:06 | LANE-RUN3 RUN3-COSK (account-1 worker) | claim: costabili-modena-1491 R1166 P1 key rebuild from interlinear (one DECODE login, images scratch-only); cap USD 7, box 90 min (09:07-10:37 UTC)
+2026-10-04 09:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 09:09 UTC: spawned 0 (), queued left 0
