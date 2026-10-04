@@ -1,0 +1,28 @@
+passage	runs	ms_marks	glyph_tokens	where
+p1a	p1-L04a	1	1	1480 _ 35
+p1b	p1-L05a	5	5	240 _ 384
+p1c	p1-L06a	8	8	98 _ 388
+p1d	p1-L07b	0	1	38 _ 1141 (ms: superscript ^ on 38, not a mark)
+p1x	p1-L07a	0	0	56 _ 200 (flourish before 200; neither source counts it)
+p1e	p1-L09a,p1-L10a	22	32	61 45 _ 48 1360 (holds the group 13; ms also reads a closing '31?')
+p1f	p1-L12a,p1-L13a	35	39	28 14 _ 44 176
+p1g	p1-L17a	8	10	1170 1842 _ 41 1250
+p1h	p1-L17b	3	3	17 _ 1210
+p2a	p2-L02a,p2-L03a,p2-L04a	20	25	18 1801 _ 78 1364
+p2b	p2-L04b	5	8	101 421 _ 17 86
+p2c	p2-L05a	6	5	1017 18 _ 1248 1430
+p2d	p2-L07a	1	1	1267 18 1 _ 45 147
+p2e	p2-L07b,p2-L08a	13	14	147 1158 _ 48 1240
+p2f	p2-L11a	8	8	17 1894 _ 13 230
+p2g	p2-L11b	5	6	230 481 _ 1110 1267
+p2h	p2-L12a	1	1	364 17 _ 1480 1762
+p2i	p2-L14a	5	6	230 1540 _ 1161 14
+p3a	p3-L01a	5	5	1480 760 _ 47 570
+p3b	p3-L01b,p3-L02a	3	4	1254 1 _ 58 620
+p3c	p3-L03a	6	8	460 365 _ 17 561
+p3d	p3-L04a,p3-L05a	12	20	14 740 _ 67 780 (ms reads a numeral 3 inside: '740 * 3 * * * *')
+p3e	p3-L06a	2	2	780 1364 _ 1170 1841
+p3f	p3-L07a	9	9	1870 5 _ 160 240
+p3g	p3-L08a,p3-L09a	9	9	1107 1764 _ 1472 21
+p3h	p3-L12a,p3-L13a	25	27	1208 141 _ 1130 164
+p4a	p4-L04a	1	0	page 4 line 4 head _ 5 (glyphs.tsv stops at page 3)
