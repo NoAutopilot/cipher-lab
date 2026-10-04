@@ -1,0 +1,14 @@
+line	col	A	B	flagged	crop
+L01	9	z	-	A	
+L01	10	e	K	A	
+L01	26	e	-	A	
+L04	8	z	e		
+L04	24	+	4		
+L05	4	z	dia	A	
+L05	8	-	iii	B	
+L05	14	z	dia		
+L06	4	z	dia	A	
+L06	20	L	eloop		
+L07	14	iib	iii		
+L07	21	qb	4		
+L08	23	iib	iii		

@@ -1,0 +1,11 @@
+# c186L decoded under key.tsv as committed on 4 Oct 2026 (READ2-C1161B gloss-repaired anneal key) -- FOR INFORMATION ONLY.
+# Ungraded, not a reading (NEAR3-C1TX-c186L). '?' = sign not in key.tsv: ['NEW1']
+L01	aultrescfoseseeleecraiutneruei
+L02	leeuseneutfoupeuplie
+L03	?onriloeieegouueluiuriiceprinc
+L04	adoauulportulaysetnilacoutieee
+L05	taui?mieetsouipariicafoutee
+L06	couiiuueleieentenlrcul?cnlee
+L07	iileursuieiseeooueniouulseu
+L08	etueuouleustledopriucieiulx
+L09	aussiireencoreseuifpailuiee
