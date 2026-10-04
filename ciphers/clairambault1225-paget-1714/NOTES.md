@@ -1057,3 +1057,61 @@ Read so far: token level H 64, S 31, M 397, I 7, U 6 of 505 (firm 95), tools/dec
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
 - [x] retry: tools/decode_key.py --check exit 0 after the Gibbs pass: H 64 S 31 M 397 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: settle the 7 codes where tools/gibbs_align.py and tools/interlinear_align.py disagree, per token from both segmentations, ~$1
+
+## RUN2-PAG (4 Oct 2026): the 7 codes where gibbs_align and interlinear_align disagree, settled per token
+
+Intake gate (re-run): `clairambault1225-paget-1714: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`,
+exit 0. Disk only: no network request, no vision call, no subagent; the segmentations on disk were enough (no crop was missing).
+- **Table** `align/settle7.py` -> `align/settle7.tsv` (every occurrence of 31, 45, 48, 97, 148, 176, 204: pair, page, hard-EM chunk
+  from align_all.tsv, the token's own chunk in the per-letter seed-0 Gibbs run that passed PREREG_seg2.md held-out, a pooled Gibbs
+  run, the gloss, and both tools' segmentation of the whole pair) and `align/settle7_rulings.tsv` (54 occurrences, one ruling each).
+  Deterministic; `--check` also fails if an S ruling is missing from exceptions.tsv.
+- **Rule** (as briefed): S where the token's own Gibbs chunk equals the held-out-passed code value and the gloss word, with its firm
+  (H/C/S) neighbours, admits it; otherwise M. No H. Three tokens whose own chunk agrees were demoted by eye (DEMOTE in the script):
+  97 in "en secret" (f65L 52) and "en 2e Nopces" (f66L 289), where "en" could sit on an unsettled neighbour; 176 in "genie"
+  (f66R 285), where ni needs 116 = ge against key.tsv's 116 = g (C).
+- **What the context shows.** The hard-EM values were mostly one-letter boundary slips that firm neighbours expose:
+  "Labbe" = 145 la (S) + 31 + 67 be (H), so 31 = b, not ab (ab gives "laabbe"); 31 = b also reads "Octo|b|re", "b|lo|n|de",
+  "b|elle" (x3). "Lomeliny" = la b be **lo** me li **ni**; "blonde" again gives 148 = lo. 176 = ni in Venise (ve H, se S), unique,
+  Dernier. 45 = r in verra, personnes, portion, penetrer (t S, re S), air, Farnese (ne S, se S), charmes, toujours, Labarque.
+  48 = u in une/Jeune (ne S), un, unique, vente, toujours. 204 = que in "que 36", "que 35" (205 = qui C sits before it), unique,
+  Labarque. 97 = en in "vente" (te H) and "en avoir".
+
+| code | key was | now | occurrences | S | M (why) |
+|---|---|---|---|---|---|
+| 31 | ab | b | 8 | 8 | 0 |
+| 45 | ar | r | 15 | 11 | 4 (donnent: nt; Parme: 201 = par already, 45 extra; Dernier idx 2: own chunk "eder"; le Roy d'Espagne) |
+| 48 | une | u | 12 | 9 | 3 (donnent une: une at run end; epousa: a; le Roy: le) |
+| 97 | e | en | 7 | 2 | 5 (en secret, en 2e: not pinned; mil: 1692 run unaligned; d'Infans: gloss "in"; n'ait: null) |
+| 148 | le | lo | 2 | 2 | 0 |
+| 176 | en | ni | 5 | 4 | 1 (genie: 116 conflict) |
+| 204 | ue | que | 5 | 4 | 1 (qu'on: own chunk "quon") |
+| total | | | 54 | 40 | 14 |
+
+- **Key.** The 7 rows of key.tsv take the Gibbs value at grade M with an "unsettled per token" note (so every token not ruled S stays
+  M); the 40 S tokens enter exceptions.tsv at grade S, value = code value, reason citing settle7_rulings.tsv. f66L 51 (ciphertext 95,
+  pair 97 by the image override already in exceptions.tsv) is ruled M and its existing exception row is untouched.
+- **Decode** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: `ciphertext.tsv: tokens 505: H 64, I 7, M 357,
+  S 71, U 6` / `reading up to date`. Per token (rule 4): **H 64, C 0, S 71, M 357, I 7, U 6** of 505 (was S 31, M 397); firm 135.
+  tools/tests/test_decode_key.py: same 3 failures as before the change (antt-linhares-chave, rah-canada-1869 drift), checked with
+  the change stashed.
+- Not done (Usage 7): code 65 also reads "ab" over a "Labbe" (f61L 147) and is outside these seven; and 116 (g, C) vs "ge" in
+  "genie"/"Visage" is a neighbour conflict this job did not settle.
+- Requests: none. Subagents: none.
+- `python3 tools/gaps_check.py clairambault1225-paget-1714`: `OK keep-going clairambault1225-paget-1714: keep going: 1 internal gap(s), 0 step(s) untried`
+
+## Remaining gaps (RUN2-PAG, 4 Oct 2026)
+Read so far: token level H 64, S 71, M 357, I 7, U 6 of 505 (firm 135), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 357 M tokens (mostly single-attestation codes; the 7 Gibbs/hard-EM disagreements are settled per token, 40 S and 14 M, align/settle7_rulings.tsv) - blocker: open-codes; two instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS) and the per-token pass done; a code seen once cannot be held in both letters by either; next: the same per-token reading for code 65 and the 116 g/ge conflict, ~$1
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (RUN2-PAG, 4 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS 0.521/0.681 vs p95 0.066/0.067; RUN2-PAG per-token rulings on its 7 disagreements with interlinear_align: 40 S, 14 M; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: tools/decode_key.py --check exit 0 after RUN2-PAG: H 64 S 71 M 357 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 65 ("ab" over "Labbe") and the 116 g/ge neighbour conflict, ~$1

@@ -2,7 +2,7 @@ code	value	grade	source	note
 2	pr	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 20	ui	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 30	a	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/9 aligned occurrences agree (L1 0, L2 2); others ad:1,ag:1,al:1,ia:1,na:1,r:1,ri:1
-31	ab	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 3/8 aligned occurrences agree (L1 3, L2 0); others el:3,les:1,o:1
+31	b	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was ab from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 32	c	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 3/15 aligned occurrences agree (L1 0, L2 3); others du:2,ee:2,avec:1,ces:1,de:1,l:1,ni:1,pr:1,r:1,rm:1; Gibbs pass S (RUN1-PAG, 4 Oct 2026): tools/gibbs_align.py gives the same value in each letter alone, PREREG_seg2.md gate PASS
 33	as	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/4 aligned occurrences agree (L1 0, L2 0); others coup:1,de:1,vis:1
 34	de	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/17 aligned occurrences agree (L1 0, L2 2); others ce:1,e:1,ed:1,ee:1,ep:1,ie:1,l:1,le:1,nce:1,re:1,rie:1,rs:1,te:1,ter:1,us:1
@@ -13,10 +13,10 @@ code	value	grade	source	note
 41	ce	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/17 aligned occurrences agree (L1 0, L2 0); others d:1,do:1,er:1,est:1,et:1,il:1,in:1,le:1,n:1,nes:1,nf:1,que:1,quon:1,ra:1,fi:1,son:1
 42	nn	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 43	e	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/3 aligned occurrences agree (L1 0, L2 0); others ob:1,pr:1
-45	ar	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/15 aligned occurrences agree (L1 0, L2 0); others ce:1,d:1,de:1,desp:1,ent:1,ir:1,o:1,per:1,rq:1,rra:1,rt:1,fa:1,tr:1,yq:1
+45	r	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was ar from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 46	s	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 9/37 aligned occurrences agree (L1 3, L2 6); others es:3,ans:2,ce:2,les:2,so:2,bi:1,de:1,e:1,en:1,is:1,le:1,n:1,nce:1,ns:1,rond:1,sse:1,te:1,to:1,tra:1,tte:1,us:1,ux:1
 47	t	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/5 aligned occurrences agree (L1 1, L2 1); others it:1,p:1,tr:1; Gibbs pass S (RUN1-PAG, 4 Oct 2026): tools/gibbs_align.py gives the same value in each letter alone, PREREG_seg2.md gate PASS
-48	une	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 4/12 aligned occurrences agree (L1 0, L2 4); others u:2,it:1,j:1,le:1,o:1,sa:1,un:1
+48	u	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was une from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 50	re	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others ye:1
 51	ali	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others vo:1
 52	et	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	3/5 aligned occurrences agree (L1 0, L2 3); others la:1,r:1
@@ -41,7 +41,7 @@ code	value	grade	source	note
 89	or	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others uy:1
 90	du	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	5/10 aligned occurrences agree (L1 1, L2 4); others la:2,duc:1,er:1,uc:1
 96	d	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/5 aligned occurrences agree (L1 0, L2 0); others en:1,es:1,ne:1,tre:1
-97	e	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/7 aligned occurrences agree (L1 1, L2 1); others en:2,d:1,eu:1,mil:1
+97	en	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was e from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 99	le	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/6 aligned occurrences agree (L1 0, L2 2); others bel:1,e:1,el:1,qua:1
 100	eux	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/3 aligned occurrences agree (L1 0, L2 0); others p:1,ux:1
 103	sp	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
@@ -57,7 +57,7 @@ code	value	grade	source	note
 145	la	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 5/12 aligned occurrences agree (L1 1, L2 4); others l:3,me:2,e:1,ta:1; Gibbs pass S (RUN1-PAG, 4 Oct 2026): tools/gibbs_align.py gives the same value in each letter alone, PREREG_seg2.md gate PASS
 146	le	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 8/20 aligned occurrences agree (L1 4, L2 4); others a:1,age:1,b:1,ce:1,en:1,les:1,ma:1,me:1,pri:1,qui:1,ur:1,ut:1; homophone pass S (READ2-PAG, 3 Oct 2026): same value as each letter's own top chunk, C1 PASS
 147	li	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	4/6 aligned occurrences agree (L1 2, L2 2); others i:2
-148	le	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others lo:1
+148	lo	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was le from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 155	ma	H	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	4/7 aligned occurrences agree (L1 0, L2 4); others le:1,n:1,pas:1
 156	me	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/8 aligned occurrences agree (L1 0, L2 2); others ar:1,l:1,la:1,pa:1,rme:1,tte:1
 157	six	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
@@ -69,7 +69,7 @@ code	value	grade	source	note
 168	me	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 174	na	C	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	2/4 aligned occurrences agree (L1 0, L2 2); others le:1,rme:1
 175	ne	S	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 4/16 aligned occurrences agree (L1 3, L2 1); others pr:2,a:1,b:1,enne:1,gr:1,nn:1,oi:1,rn:1,sa:1,t:1,yne:1; Gibbs pass S (RUN1-PAG, 4 Oct 2026): tools/gibbs_align.py gives the same value in each letter alone, PREREG_seg2.md gate PASS
-176	en	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/5 aligned occurrences agree (L1 0, L2 0); others iq:1,ni:1,ny:1,ue:1
+176	ni	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was en from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 177	nop	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 178	ou	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 184	nue	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
@@ -83,7 +83,7 @@ code	value	grade	source	note
 198	in	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/6 aligned occurrences agree (L1 0, L2 2); others nce:2,pr:1,pri:1
 200	na	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 1/2 aligned occurrences agree (L1 0, L2 0); others st:1
 201	p	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/5 aligned occurrences agree (L1 0, L2 2); others pa:2,de:1
-204	ue	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled: 2/5 aligned occurrences agree (L1 1, L2 1); others on:1,que:1,qui:1
+204	que	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	unsettled per token -- RUN2-PAG 4 Oct 2026: value from tools/gibbs_align.py (RUN1-PAG, held in both letters; was ue from interlinear_align); S per token only through exceptions.tsv (align/settle7_rulings.tsv), other tokens M
 205	qui	C	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	2/4 aligned occurrences agree (L1 0, L2 2); others nt:1,pa:1
 206	tes	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -
 208	qu	M	period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)	single attestation: 1/1 aligned occurrences agree (L1 0, L2 0); others -

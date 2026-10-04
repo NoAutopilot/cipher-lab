@@ -1,0 +1,55 @@
+code	value	pair	line	position	gibbs_chunk	hardEM_chunk	gloss	ruling	why
+31	b	P01	f60R	31	b	ab	Labbe Lomeliny	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P10	f61L	105	b	ab	Labbe	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P14	f61L	200	b	ab	Labbe	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P20	f65R	92	b	les	pour Reyne d'Espagne a toutes les belles	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P22	f66L	35	b	o	Elle achevera sa 22e annee le 25 Octobre prochain	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P23	f66L	83	b	el	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P24	f66L	117	b	el	la taille belle	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+31	b	P30	f66L	233	b	el	belle Education	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P04	f60R	77	r	rq	Labarque	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P05	f61L	36	r	rra	on verra quelques personnes a Genes	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P05	f61L	40	r	per	on verra quelques personnes a Genes	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P07	f61L	72	r	tr	pour traitter avec eux	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P11	f61L	124	r	rt	une portion	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P16	f65L	42	r	ce	penetrer ce qui	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P26	f66L	141	r	ir	d'Esprit et un air	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P29	f66L	227	nt	ent	luy donnent une	M	own Gibbs chunk 'nt' is not the code value
+45	r	P33	f66L	299	r	fa	en 2e Nopces le Prince Francois Farnese	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P34	f66L	316		ar	le Duc de Parme Regnant frere du deffunct	M	own Gibbs chunk '' is not the code value
+45	r	P38	f66R	11	eder	yq	quoyque ce Dernier Duc n'ait que 36	M	own Gibbs chunk 'eder' is not the code value
+45	r	P38	f66R	14	r	d	quoyque ce Dernier Duc n'ait que 36	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P47	f66R	187	r	de	sont charmes de la voir epouser	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+45	r	P48	f66R	203	esp	desp	le Roy d'Espagne	M	own Gibbs chunk 'esp' is not the code value
+45	r	P53	f66R	277	r	o	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P11	f61L	121	u	u	une portion	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P15	f61R	30	u	v	a la vente de cette isle	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P26	f66L	137	u	it	d'Esprit et un air	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P29	f66L	228	une	une	luy donnent une	M	own Gibbs chunk 'une' is not the code value
+48	u	P32	f66L	279	a	sa	M le Duc de Parme son Mari epousa	M	own Gibbs chunk 'a' is not the code value
+48	u	P43	f66R	108	u	une	la Jeune Princesse	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P45	f66R	145	u	un	unique	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P48	f66R	201	lero	le	le Roy d'Espagne	M	own Gibbs chunk 'lero' is not the code value
+48	u	P51	f66R	231	u	une	une grande Partialite	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P53	f66R	274	u	o	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P53	f66R	276	u	j	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+48	u	P54	f66R	304	u	une	Jeune Princesse	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+97	en	P15	f61R	31	en	en	a la vente de cette isle	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+97	en	P17	f65L	52	en	e	en secret	M	gloss "en secret": 221 se, 32 c, 212 re, 47 t (all S) pin "secret"; en lies on 222/191/46/221/97 and Gibbs makes four of them null to put it on 97 -- not pinned
+97	en	P23	f66L	51	quat	mil	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	M	own Gibbs chunk 'quat' is not the code value
+97	en	P33	f66L	289	en	e	en 2e Nopces le Prince Francois Farnese	M	gloss "en 2e Nopces": en could sit on 220 (unsettled, key sa) with 97 null, or on 97 -- not pinned
+97	en	P35	f66L	346	in	eu	Elle n'a pas eu d'Infans	M	own Gibbs chunk 'in' is not the code value
+97	en	P36	f66L	360	en	en	en avoir se	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+97	en	P38	f66R	18		d	quoyque ce Dernier Duc n'ait que 36	M	own Gibbs chunk '' is not the code value
+148	lo	P01	f60R	33	lo	lo	Labbe Lomeliny	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+148	lo	P23	f66L	84	lo	le	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+176	ni	P01	f60R	36	ni	ny	Labbe Lomeliny	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+176	ni	P02	f60R	45	ni	ni	Venise	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+176	ni	P38	f66R	12	ni	ue	quoyque ce Dernier Duc n'ait que 36	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+176	ni	P45	f66R	146	ni	iq	unique	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+176	ni	P53	f66R	285	ni	en	a toujours este de genie Allemand	M	gloss "genie": ni needs 116 = ge, but key.tsv has 116 = g (grade C); neighbour conflict, not settled here
+204	que	P04	f60R	78	que	ue	Labarque	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+204	que	P19	f65R	72	quon	on	de cette Princesse qu'on	M	own Gibbs chunk 'quon' is not the code value
+204	que	P38	f66R	22	que	que	quoyque ce Dernier Duc n'ait que 36	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+204	que	P40	f66R	62	que	qui	frere du Duc de Parme qui n'a que 35 ans Mais	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+204	que	P45	f66R	147	que	ue	unique	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
