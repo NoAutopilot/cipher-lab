@@ -8143,3 +8143,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 09:05 | RUN3-RJM2 (account-1 worker) | claim: rah-juan-manuel-1521 locate Salazar A.23 ff.34-37 digitised? cap USD 3, box 50 min
 2026-10-04 09:05 | RUN3-PISD worker (acct1) | claim: fr16045-pisany-rome-1585 Colbert 16 pt II date-line reads, cap USD 3, box 50 min
 2026-10-04 09:05 | LANE-RUN3 RUN3-SANG (account-1 worker) | claim: sanguszkow-mniszech-dunin-1714 crib-assisted key rebuild, control first (brief 2026-10-04-acct1-run3-wave2.md); start 09:05 UTC, cap USD 7, box 90 min (to 10:35)
+2026-10-04 09:06 | LANE-RUN3 RUN3-C1161MS (account-1 worker) | claim: clair1161-avis-flandre-1688 multi-seed consensus for 28 M key signs, cap USD 4, box 60 min
