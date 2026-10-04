@@ -349,7 +349,7 @@ Read so far: 117 S, 16 M, 1 I of 134 glyphs (Aymeloglu's key applied to the tran
 - [x] key-rebuild: done by Aymeloglu (held-value re-annealing, key-shuffle z=17.0, controls 1 of 4 read); no Scots corpus in tools/data
 - [x] image-check: one primed pass (GAPS3), two blind passes plus reconciliation (GAPS4), native-resolution pair read (GAPS5), all 2 Oct 2026
 - [ ] retry: edit key.tsv after the no.804 crib test and rerun tools/decode_key.py --check, regrading the 16 M and 1 I tokens per rule 4
-Verdict: keep going: 1 internal gaps; reference sheet built 4 Oct 2026 (RUN1-MOR, no804/refsheet/); eye check done 4 Oct 2026 (RUN3-MOR: 11/102 unusable, 10.8%); cheapest next: line-end anchors + M-box widening in align_boxes.py, rebuild, re-check flagged boxes, ~$0.5; the SP 52/15 leaf waits on its existing order row (103)
+Verdict: keep going: 1 internal gaps; reference sheet built 4 Oct 2026 (RUN1-MOR, no804/refsheet/); eye check done 4 Oct 2026 (RUN3-MOR: 11/102 unusable, 10.8%); cheapest next: line-end anchors + M-box widening in align_boxes.py, rebuild, re-check flagged boxes, ~$0.5, in ONE session that also fetches full-size DECODE R8345 P4 (one browser login; RUN3-MOR2 4 Oct 2026 found it not on disk and its wave barred DECODE); the SP 52/15 leaf waits on its existing order row (103)
 
 ## RUN3-MOR eye check of the 102 DP-placed boxes (4 Oct 2026, ~09:3x UTC container clock)
 
@@ -359,3 +359,9 @@ Result first: **11 of 102 DP-placed boxes are unusable (10.8%), above the 10% li
 - 4 wide/offset but recognisable (not counted): L2.38, L2.39, L2.42, L2.21.
 - Anchored box seen in passing (not in the 102): L1.41 labelled A shows a z-like sign with a slash, not the triangle -- worth a second look at the GAPS5 anchor 'L1.41': 42.
 - Fix: add eye anchors at the line ends (L2.40-L2.45 and L3.38-L3.43 from the image, plus L1.15 and L2.22) to ANCH in align_boxes.py, widen M boxes leftward to take in the loop (a per-sign margin or a 1:2 move for M), re-run align_boxes.py and build_refsheet.py, and re-check only the flagged boxes; ~$0.5. No reading or regrade done (brief).
+
+## RUN3-MOR2 refsheet anchor fix (4 Oct 2026, 09:42 UTC container clock): not run, blocked on the image
+Result first: **nothing changed; align_boxes.py, boxes.tsv and the sheets are as RUN1-MOR/RUN3-MOR left them; misplaced count still 11/102 (10.8%).**
+- The fix needs the full-size P4 image (IMG_R8345_I38545_P4.jpg) twice: to read the L2.40-45 / L3.38-43 / L1.15 / L2.22 anchors by eye, and to re-cut the crops for build_refsheet.py. It is not on disk: RUN1-MOR kept it in its own scratchpad (sha1 in images/manifest.json), the folder holds only the 200x278 thumbnail TH_..._P4.jpg, and wave 4 of LANE-RUN3 barred DECODE. Anchors were not guessed from segment geometry (that would be an I-grade repair of the box map, rule 4).
+- Geometry hint for the next worker (from images/pairs_glyph_boxes_2026-10-02.json only, no image): L2 has 42 segments for 43 glyphs, with a 155 px gap before its last segment (x 5063->5218); L3 has 44 segments for 38 glyphs and a 298 px gap after segment 38 (x 4904->5202), i.e. the six L3 segments past x 5202 are where RUN3-MOR saw the fold/shadow -- the GAPS5 segmentation likely took shadow for ink there, so the L3 line-end anchors will probably sit at or before segment 38, with segments 39-44 skipped.
+- Next: one session with one DECODE browser login, fetch P4 to scratch, add the anchors to ANCH and a left margin for M (the loop sits in the preceding box at L1.16, L1.43), re-run align_boxes.py > boxes.tsv, re-cut tiles, build_refsheet.py, eye-check the 11 flagged boxes; ~$0.5-1.
