@@ -1,0 +1,377 @@
+passage	pos	sign_id	alt	conf	note
+L11	1	T89	T76	H	q-bowl with straight descender ending in a small loop; before: line start
+L11	2	T33		H	double vertical on a base bar
+L11	3	T19		H	pi
+L11	4	T51	T95	H	p with a bar through the descender
+L11	5	T76	T89	M	plain q, straight descender
+L11	6	T92		H	omega
+L11	7	T45	T36	M	o with a stroke rising from the top
+L11	8	T60		H	hash
+L11	9	T10		H	o-o joined by a bar
+L11	10	T85		H	plus, equal arms
+L11	11	T56	T27	M	loop top-left, descending stroke, curled tail to the right
+L11	12	T37		H	theta, barred
+L11	13	T33		H	double vertical on a base bar
+L11	14	T45	T36	M	o with a stroke rising above
+L11	15	T83		H	two back-to-back loops with a bar (ae-like)
+L11	16	T86		H	H with a crossbar through
+L11	17	T80		H	D with a curl
+L11	18	T19		H	pi
+L11	19	T24		H	epsilon
+L11	20	T19		H	pi
+L11	21	T83		H	ae-like barred
+L11	22	X_NEW	T85	M	lowercase t shape: short crossbar, curved foot
+L11	23	T37		H	theta
+L11	24	T63		H	V
+L11	25	T80		H	D
+L11	26	T90	T84	H	o with a cross above
+L11	27	T55		H	F-like, two bars
+L11	28	T53		H	infinity / double loop
+L11	29	T86		H	barred H
+L11	30	T83		H	ae-like barred
+L11	31	T51	T95	M	p with bar(s) through the descender, near margin
+L11	32	X_S	T96	L	tall hooked stroke at the margin edge, long-s like; partly cut; after: line end
+L12	1	T97	T46	M	open 8-like figure with tail (ss/beta shape); before: line start
+L12	2	T24	T96	M	z-like curl with lower loop (cursive ezh)
+L12	3	T54		H	R with flourish
+L12	4	T45	T36	M	o with a stroke rising above
+L12	5	T63		H	V
+L12	6	T96		M	tall l-loop with a curl
+L12	7	T37		H	theta
+L12	8	T97	T46	M	open 8-like figure with tail
+L12	9	T86		H	barred H
+L12	10	T26		H	9-shape with a hook (oj)
+L12	11	T19		H	pi
+L12	12	T86		H	barred H
+L12	13	T60		H	hash
+L12	14	T86		H	barred H
+L12	15	T36	T45	H	o with a stem down (rho)
+L12	16	T45	T36	M	o with a stroke rising above
+L12	17	T57		H	diamond with a tail
+L12	18	T37		H	theta
+L12	19	T83		H	ae-like barred
+L12	20	T80		H	D
+L12	21	T19		H	pi
+L12	22	T89	T76	M	small upper loop, slash, lower loop (percent-like)
+L12	23	X_A	T85	M	capital A with a crossed stroke fused to its right leg; could be A followed by T85
+L12	24	T98	T45	H	o with a vertical through it, above and below
+L12	25	T45	T36	M	o with a stroke rising above
+L12	26	T33		H	double vertical on base
+L12	27	T19		H	pi
+L12	28	T51	T95	H	p with a bar through the descender
+L12	29	T45	T36	M	o with a stroke rising above
+L12	30	T37		H	theta
+L12	31	T57		H	diamond with a tail
+L12	32	X_S	T96	L	tall hooked stroke at the margin edge, long-s like; partly cut; after: line end
+L13	1	T36	T45	M	o with a stem down, dot above it; before: line start
+L13	2	T33		H	double vertical on base
+L13	3	T97	T46	M	open 8-like figure with tail
+L13	4	T37		H	theta
+L13	5	T97	T46	M	open 8-like figure with tail
+L13	6	T86		H	barred H
+L13	7	T70		M	triangle with a diagonal slash through it
+L13	8	T90	T84	H	o with a cross above
+L13	9	T37		H	theta
+L13	10	T45	T36	M	o with a stroke rising above
+L13	11	T92		H	omega
+L13	12	T86		H	barred H
+L13	13	T90	T84	H	o with a cross above
+L13	14	T83		H	ae-like barred
+L13	15	T19		H	pi
+L13	16	T33		H	double vertical on base
+L13	17	T86		H	barred H
+L13	18	T63		H	V
+L13	19	T37		H	theta
+L13	20	T18	T98	M	loop with a stem down through the middle (phi/q-like)
+L13	21	T37		H	theta
+L13	22	T58		H	B with flourish
+L13	23	T65		H	loop with a cross below
+L13	24	T83		H	ae-like barred
+L13	25	T96		M	tall l-loop, tick above
+L13	26	T37		H	theta
+L13	27	T64	T13	M	m with a rho-shaped tail hanging from the last stroke
+L13	28	T70		H	triangle
+L13	29	T19		H	pi; after: line end
+L14	1	T45	T36	M	o with a stroke rising above; before: line start
+L14	2	T83		H	ae-like barred
+L14	3	T60		H	hash
+L14	4	T96		M	tall l-loop with a tick above
+L14	5	T89	T76	M	percent-like: small loop, slash, lower loop
+L14	6	T49	T52	M	vertical with a cross at the top and a 3-shape to its right
+L14	7	T98	T45	H	o with a vertical through it
+L14	8	T96		M	tall l-loop with a tick above
+L14	9	T37		H	theta
+L14	10	T60		H	hash
+L14	11	T19		H	pi
+L14	12	T60		H	hash
+L14	13	T45	T36	M	o with a stroke rising above
+L14	14	T92		H	omega
+L14	15	T33		H	double vertical on base
+L14	16	T52		H	n with a 3-shaped tail
+L14	17	X_EQ		H	two short parallel horizontal strokes
+L14	18	T83		H	ae-like barred
+L14	19	T37		H	theta
+L14	20	T53		H	infinity
+L14	21	T45	T36	M	o with a stroke rising above
+L14	22	T13	T64	H	m with a tilde above and a dot after
+L14	23	T19		H	pi
+L14	24	T60		H	hash
+L14	25	T45	T36	M	o with a stroke rising above
+L14	26	T63		H	V
+L14	27	T86		H	barred H; after: line end
+L15	1	T90	T84	H	o with a cross above; before: line start
+L15	2	T45	T36	M	o with a stroke rising above
+L15	3	T60		H	hash
+L15	4	T63		H	V
+L15	5	T45	T36	M	o with a stroke rising above
+L15	6	T60		H	hash
+L15	7	T53		H	infinity
+L15	8	T96		M	tall l-loop with a tick
+L15	9	T18	T98	M	loop with stem down the middle
+L15	10	T37		H	theta
+L15	11	T51	T95	H	p with bars through the descender
+L15	12	T33		H	double vertical on base
+L15	13	T96		M	tall l-loop with a tick
+L15	14	T29	T24	H	epsilon followed by a small o
+L15	15	T89	T76	M	percent-like: small loop, slash, lower loop
+L15	16	T92		H	omega
+L15	17	T96		M	tall l-loop
+L15	18	T37		H	theta
+L15	19	T60		H	hash
+L15	20	T19		H	pi
+L15	21	T37		H	theta
+L15	22	T60		H	hash
+L15	23	T89	T76	M	percent-like: small loop, slash, lower loop
+L15	24	T46	T11	M	two 8-shaped glyphs side by side, read as the pair cell
+L15	25	T85		H	plus
+L15	26	T58		H	B with flourish
+L15	27	T53		H	infinity
+L15	28	T83		H	ae-like barred
+L15	29	T80		H	D; after: line end
+L16	1	X_NEW	T85	M	lowercase t shape: short crossbar, curved foot; before: line start
+L16	2	T45	T36	M	o with a stroke rising above
+L16	3	T76	T89	M	plain q, straight descender
+L16	4	T65		H	loop with a cross below
+L16	5	T25		H	lambda
+L16	6	T92		H	omega
+L16	7	T37		H	theta
+L16	8	T83		H	ae-like barred
+L16	9	T45	T36	M	o with a stroke rising above
+L16	10	T54		H	R
+L16	11	T19		H	pi
+L16	12	T98	T45	H	o with a vertical through it
+L16	13	T45	T36	M	o with a stroke rising above
+L16	14	X_NEW	T85	M	lowercase t shape
+L16	15	T90	T84	H	o with a cross above
+L16	16	T97	T46	M	open 8-like figure with tail
+L16	17	T45	T36	M	o with a stroke rising above
+L16	18	T25		H	lambda
+L16	19	T60		H	hash
+L16	20	T36	T45	H	o with a stem down (rho)
+L16	21	T19		H	pi
+L16	22	T60		H	hash
+L16	23	T24		H	epsilon
+L16	24	T33		H	double vertical on base
+L16	25	T98	T45	H	o with a vertical through it
+L16	26	T96		M	tall l-loop with a tick
+L16	27	T19		H	pi
+L16	28	T60		H	hash
+L16	29	T45	T36	M	o with a stroke rising above
+L16	30	T25		H	lambda
+L16	31	T27	T66	L	question-mark-like curl at the margin edge; partly cut; after: line end
+L17	1	T81		H	plain x; before: line start
+L17	2	T37		H	theta
+L17	3	T83		H	ae-like barred
+L17	4	T19		H	pi
+L17	5	T60		H	hash
+L17	6	T63		H	V
+L17	7	T86		H	barred H
+L17	8	T92		H	omega
+L17	9	T37		H	theta
+L17	10	T63		H	V
+L17	11	T83		H	ae-like barred
+L17	12	T45	T36	M	o with a stroke rising above
+L17	13	T92		H	omega
+L17	14	T52	T27	M	rounded 2-like curl with a 3-shape below right
+L17	15	T89	T76	M	percent-like: small loop, slash, lower loop
+L17	16	T92		H	omega
+L17	17	T45	T36	M	o with a stroke rising above
+L17	18	T83		H	ae-like barred
+L17	19	T45	T36	M	o with a stroke rising above
+L17	20	T76	T26	H	9/g shape, open tail curving left
+L17	21	T63		H	V
+L17	22	T85		H	plus
+L17	23	T33		H	double vertical on base
+L17	24	T81		H	plain x
+L17	25	T45	T36	M	o with a stroke rising above
+L17	26	T63		H	V
+L17	27	T96		M	tall l-loop
+L17	28	T45	T36	M	o with a stroke rising above
+L17	29	X_EQ		L	two short horizontal strokes at the margin edge, partly cut; after: line end
+L18	1	T53		H	infinity; before: line start
+L18	2	T80		H	D
+L18	3	T57		H	diamond with a tail
+L18	4	T96		M	tall l-loop with a tick
+L18	5	T54		H	R
+L18	6	T19		H	pi
+L18	7	T29	T24	H	epsilon followed by a small o
+L18	8	T65		H	loop with a cross below
+L18	9	T83		H	ae-like barred
+L18	10	T19		H	pi
+L18	11	T33		H	double vertical on base
+L18	12	T80		H	D
+L18	13	T81		H	plain x
+L18	14	T55		H	F-like, two bars
+L18	15	T60		H	hash
+L18	16	T52		H	n with a 3-shaped tail
+L18	17	T53		H	infinity
+L18	18	T49		H	box-topped stem (P-like)
+L18	19	T89	T27	M	small upper bowl with a closed lower loop (g/8 shape)
+L18	20	T19		H	pi
+L18	21	T84	T90	H	cross above a down-pointing triangle
+L18	22	T89	T76	M	percent-like: small loop, slash, lower loop
+L18	23	T96		M	tall l-loop
+L18	24	T55		H	F-like, two bars
+L18	25	T70		H	triangle
+L18	26	T58		H	B
+L18	27	T96		M	tall l-loop; after: line end
+L19	1	T36	T45	H	o with a stem down (rho); before: line start
+L19	2	T19		H	pi
+L19	3	X_NEW	T85	M	lowercase t shape
+L19	4	T85		H	plus
+L19	5	T60		H	hash
+L19	6	T18	T98	M	loop with stem down the middle
+L19	7	T52		H	n with a 3-shaped tail
+L19	8	T26		H	oj
+L19	9	T25		H	lambda
+L19	10	T58		H	B
+L19	11	T92		H	omega
+L19	12	T86		H	barred H
+L19	13	T83		H	ae-like barred
+L19	14	T33		H	double vertical on base
+L19	15	T25		H	lambda
+L19	16	T56		H	4-shape with curled tail
+L19	17	T80		H	D
+L19	18	T19		H	pi
+L19	19	T63		H	V
+L19	20	T96		M	tall l-loop
+L19	21	T58		H	B
+L19	22	T46	T97	M	single 8-shaped glyph
+L19	23	T60		H	hash
+L19	24	T18	T98	M	loop with stem down the middle
+L19	25	T96		M	tall l-loop
+L19	26	T54		H	R
+L19	27	T45	T36	M	o with a stroke rising above
+L19	28	T60		H	hash
+L19	29	T19		H	pi; after: line end
+L20	1	T49	T52	M	vertical with a cross at the top and a 3-shape to its right; before: line start
+L20	2	T92		H	omega
+L20	3	T25		H	lambda
+L20	4	T90	T84	H	o with a cross above
+L20	5	T33		H	double vertical on base
+L20	6	T52		H	n with a 3-shaped tail
+L20	7	T50	T92	H	omega with a tall s-stroke
+L20	8	T55		H	F-like, two bars
+L20	9	T76	T26	H	9/g shape, open tail
+L20	10	T53		H	infinity
+L20	11	T86		H	barred H
+L20	12	T76	T26	H	9/g shape, open tail
+L20	13	T45	T36	M	o with a stroke rising above
+L20	14	T83		H	ae-like barred
+L20	15	T76	T89	M	plain q, straight descender
+L20	16	T37		H	theta
+L20	17	T13	T64	H	m with a tilde above and a dot
+L20	18	T45	T36	M	o with a stroke rising above
+L20	19	T33		H	double vertical on base
+L20	20	T19		H	pi
+L20	21	T58		H	B
+L20	22	T53		H	infinity
+L20	23	T86		H	barred H
+L20	24	X_NEW	T85	M	lowercase t shape
+L20	25	T45	T36	M	o with a stroke rising above
+L20	26	T36	T45	H	o with a stem down (rho)
+L20	27	T19		L	pi, cut by the margin; after: line end
+L21	1	T18	T98	M	loop with stem down the middle; before: line start
+L21	2	T96		M	tall l-loop with a tick
+L21	3	X_NEW	T85	M	lowercase t shape
+L21	4	T19		H	pi
+L21	5	T92		H	omega
+L21	6	T53		H	infinity
+L21	7	T83		H	ae-like barred
+L21	8	T37		H	theta
+L21	9	T97	T46	M	open 8-like figure with tail
+L21	10	T45	T36	M	o with a stroke rising above
+L21	11	T49		H	box-topped stem (P-like)
+L21	12	T60		H	hash
+L21	13	T85		H	plus
+L21	14	T70		H	triangle
+L21	15	T83		H	ae-like barred
+L21	16	T85		H	plus
+L21	17	T60		H	hash
+L21	18	X_NEW	T85	M	lowercase t shape
+L21	19	T37		H	theta
+L21	20	T58		H	B
+L21	21	T76	T89	M	plain q, straight descender with a foot
+L21	22	T76	T89	M	plain q, straight descender
+L21	23	T19		H	pi
+L21	24	T60		H	hash
+L21	25	T53		H	infinity
+L21	26	T45	T36	M	o with a stroke rising above
+L21	27	T60		H	hash; after: line end
+L22	1	T53		H	infinity; before: line start
+L22	2	T60		H	hash
+L22	3	T38	T64	H	rounded m / closed-m shape
+L22	4	T37		H	theta
+L22	5	T63		H	V
+L22	6	T96		M	tall l-loop with a tick
+L22	7	T70		H	triangle with a dot inside
+L22	8	T45	T36	M	o with a stroke rising above
+L22	9	X_NEW	T96	L	cursive d: bowl with a tall ascender on the right
+L22	10	T45	T36	M	o with a stroke rising above
+L22	11	T89	T27	M	small upper bowl with a closed lower loop (g/8 shape)
+L22	12	T19		H	pi
+L22	13	T92		H	omega
+L22	14	T45	T36	M	o with a stroke rising above
+L22	15	T70		H	triangle
+L22	16	T33		H	double vertical on base
+L22	17	T25		H	lambda
+L22	18	T53		H	infinity
+L22	19	T19		H	pi
+L22	20	T25		H	lambda
+L22	21	T60		H	hash
+L22	22	X_S		H	plain s
+L22	23	T88		H	lone o
+L22	24	T90	T84	M	bar across the top of a stem with a b-like loop at the bottom
+L22	25	T85		H	plus
+L22	26	T57		H	diamond with a tail
+L22	27	T37		H	theta
+L22	28	T80		H	D; after: line end
+L23	1	T90	T84	H	o with a cross above; before: line start
+L23	2	T80		H	D
+L23	3	T33		H	double vertical on base
+L23	4	T36	T45	H	o with a stem down (rho)
+L23	5	T19		H	pi
+L23	6	T76	T26	H	9/g shape, open tail
+L23	7	T85		H	plus
+L23	8	T58		H	B
+L23	9	T53		H	infinity
+L23	10	T83		H	ae-like barred
+L23	11	T25		H	lambda
+L23	12	T26		H	oj
+L23	13	T84	T90	H	cross above a down-pointing triangle
+L23	14	T80		L	D-like with a heavy ink blot filling the bowl
+L23	15	T60		H	hash
+L23	16	T53		H	infinity
+L23	17	T45	T36	M	o with a stroke rising above
+L23	18	T60		H	hash
+L23	19	T63		H	V
+L23	20	T19		H	pi
+L23	21	T18	T98	M	loop with stem down the middle
+L23	22	T96		M	tall l-loop
+L23	23	X_NEW	T85	M	lowercase t shape
+L23	24	T85		H	plus
+L23	25	T76	T26	H	9/g shape, open tail
+L23	26	T25		H	lambda
+L23	27	T45	T36	M	o with a stroke rising above
+L23	28	T83		H	ae-like barred
+L23	29	T85	T86	L	plus, cut by the margin; after: line end
