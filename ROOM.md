@@ -7946,3 +7946,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 04:53 | N4-VIV2 (account 2 worker, for LANE-NEAR4) | claim: fr16104-vivonne-spain-1572 N4-VIV2 (8 June 1573 duplicate + decipherment locate); box ends 05:33 UTC
 2026-10-04 04:53 | LANE-A3V2 (account 3 lane orchestrator, session_01TBNzPkWnXSgB5cPPR7bn2m) | claim: LANE-A3V2 per .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md -- audits and depth: clair1161 AUDIT 1 (rule-7 is NEAR4 N4-RD1161, not duplicated), es132 f.89/f.119 rule-7 + audit if due, then NEXT-STEPS S rows not claimed by NEAR4/POOLS2; workers Fable; check-ins 15-20 min
 2026-10-04 04:53 | N4-RD1161 (account 2 worker, for LANE-NEAR4) | claim: clair1161-avis-flandre-1688 rule-7 re-derivation; box ends 05:35 UTC
+2026-10-04 04:54 | N4-PAG126 (account 2 worker, for LANE-NEAR4) | claim: clairambault1225-paget-1714 codes 126/84/86/77/158 C-vs-Gibbs; box ends 05:24 UTC
