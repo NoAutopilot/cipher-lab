@@ -909,14 +909,14 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - bottom-digit order (vowel-column hypothesis) - blocker: too-short; A2-RAA8 vowel-bigram a non-test (POS 9/20); A2-RAA10 vowel-trigram met the registered 18/20 gate but post-hoc power is 27/40 on fresh windows (pooled 61/80), target p 0.209 = weak negative only; the label-free cross-cell MI passes 19/20 ALT and does not discriminate; reopens with a sibling letter (pooled N)
 
 ## Escalation (3 Oct 2026, A2-RAA7)
-- [ ] siblings: no cipher-marked sibling in any NA finding aid of the 2.01.27 series (.01-.07), 2.01.28.01-03, 2.10.01-03 or 1.04.17 (VX-N03 25 Sept; A2-RAA11 3 Oct 2026, data/finding_aids/manifest.tsv); only 2.01.27.05 invnr 12 (Janssens 1811, VX-N02) is cipher-marked, a different correspondence; untried: item-page check of 2.01.27.03 invnr 207/144 (secret Van Polanen/Meyer reports 1807-10, not described as cipher) for digitised cipher leaves
+- [x] siblings: no cipher-marked sibling in any NA finding aid of the 2.01.27 series (.01-.07), 2.01.28.01-03, 2.10.01-03 or 1.04.17 (VX-N03 25 Sept; A2-RAA11 3 Oct 2026, data/finding_aids/manifest.tsv); only 2.01.27.05 invnr 12 (Janssens 1811, VX-N02) is cipher-marked, a different correspondence; the one uncatalogued lead, 2.01.27.03 invnr 207/144 (secret Van Polanen/Meyer reports 1807-10), swept leaf by leaf, all 167 digitised leaves: no cipher leaf seen (RUN4-RAA 4 Oct 2026, data/finding_aids/thumb_sweep_207_144.tsv)
 - [x] clear-pages: clear words around the grid used as cribs, strict mode no anchor, homophonic mode control fails (A2-RAA7)
 - [x] known-keys: invnr 317 Grasveld 1799 code tested against 209, negative by design mismatch (VX-CS06, A2-RAA)
 - [x] print: Colenbrander Gedenkstukken and the finding aids read, no print of the letter (VX-CS06)
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
 - [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
-Verdict: keep going: 0 internal gaps; cheapest next: full thumbnail sweep of the 167 digitised leaves of 2.01.27.03 invnr 207 (118) and 144 (49) for numeral/symbol runs (RUN1-RAA 4 Oct 2026: both DIGITALIZED, 4 leaves sampled, no cipher seen), ~$1.5, needs a request cap above 25 (A2-RAA11: the finding-aid sweep of every 2.01.27/2.01.28/2.10.01-03 toegang found no cipher-marked sibling)
+Verdict: parked: 0 internal gaps; both gaps too-short (N=370) and every escalation step done or retired; the sibling search ended with the 167-leaf sweep of 2.01.27.03 invnr 207/144 (RUN4-RAA 4 Oct 2026, no cipher leaf seen); reopens only with new material (a second cipher letter of this correspondence, e.g. from a correspondent's own papers or an uncatalogued bundle)
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
@@ -941,3 +941,40 @@ Grades: H 0, C 0, S 0, M 0, I 0. Requests: www.nationaalarchief.nl 2, service.ar
 
 Next (one line): open all 167 leaves as 200 px thumbs via the `thumbnail` URLs in the TSV (~167 requests, needs a brief
 raising the 25-request cap, >=3 s apart) and flag numeral-heavy leaves with `tools/htrc_numeral_pages.py`-style density or by eye.
+
+## Thumbnail sweep, NA 2.01.27.03 invnr 207 and 144 (RUN4-RAA, 4 Oct 2026)
+Route: the two item pages (`www.nationaalarchief.nl/onderzoeken/archief/2.01.27.03/invnr/N`, `drupal-settings-json` ->
+`viewer.response` -> scans[].iiif) gave all 167 IIIF ids; each leaf fetched once at 600 px wide
+(`service.archief.nl/iip/iipsrv?IIIF=<path>.jp2/full/600,/0/default.jpg`, sequential, >= 1.6 s apart) to the session scratchpad.
+All 167 returned HTTP 200. Manifest (leaf, label, URL, bytes, detector score, eyed): `data/finding_aids/thumb_sweep_207_144.tsv`.
+Images not committed; re-create with the URL column (one request per leaf).
+
+Detector: `tools/numeral_page_detect.py` (new, offline test `tools/tests/test_numeral_page_detect.py`): per text line,
+connected-component separation x share of digit-shaped components; page score = mean of its top-5 lines, best of the two page
+halves of a spread. Calibration (same 600 px width):
+
+| set | images | score |
+|---|---|---|
+| positive control, this folder | 2.01.27.02 invnr 209 leaf 2 (paired digit rows) | 0.499 |
+| positive controls, another NA folder | na-janssens-java-1811 leaves 190, 188, 198 (digit-group dispatches, 2.01.27.05 invnr 12) | 0.484, 0.337, 0.336 |
+| negatives, this folder | 209 leaf 1, leaf 4 (Dutch prose) | 0.074, 0.053 |
+| the 4 leaves RUN1-RAA had already seen (prose / blank) | 207 l.21, 207 l.71, 144 l.31, 144 l.11 | 0.013, 0.000, 0.061, 0.800 |
+
+The detector separates prose from digit pages, but blank or show-through leaves can score high (144 l.11, 0.800), so
+it is a triage, not a verdict. Target distribution: 3 leaves above the weakest positive control (144 l.43 0.993, l.13 0.891,
+l.11 0.800), 207 l.28 0.329 just below it, 10 at >= 0.21, the rest <= 0.19.
+
+Eye check (this worker, two contact sheets of the top 11 at 560 px, then 144 l.43 at native size beside the
+Janssens 188 cipher page at 300 px, which reads plainly as digit groups at that size): every one of the 11 is Dutch longhand
+prose, a letter, or blank: 144 l.43 is a heavily crossed-out draft with rotated marginal notes and a short column of small sums
+at the foot (arithmetic, not groups); 144 l.13, 21, 26 letter text; 144 l.11 and l.5 blank versos beside letters dated at Batavia;
+144 l.17 a letter with a faint verso; 207 l.28, 18 signed letters (Blok); 207 l.7 letter; 207 l.61 a short covering letter dated
+Amsterdam 1809.
+
+**Not found:** no cipher leaf (no digit-group rows, symbol rows or code-over-gloss page) in the 167 digitised leaves of invnr 207
+and 144; detector control: the 4 positive cipher pages score 0.34-0.50 against 0.00-0.07 for prose, and every target leaf scoring at
+or above the weakest positive (4 leaves) plus the next 7 were eyed. This rules out a full or half page of cipher; it does not rule out
+a single coded line or a code number quoted inside prose (one line cannot move the top-5 mean, and 600 px is too small to read it).
+
+Grades: H 0, C 0, S 0, M 0, I 0. Requests: www.nationaalarchief.nl 2, service.archief.nl 168 (1 test + 167 leaves, all 200).
+Vision: 3 looks (two 6-tile sheets, one check sheet).
