@@ -1,0 +1,164 @@
+line	pos	sign	conf	value	grade
+L03	1	L:l?	?	l	M
+L03	2	L:e?	?	e	M
+L03	3	41'		le	H
+L03	4	42'		li	H
+L03	5	L:e		e	H
+L03	6	L:u		u	H
+L03	7	L:o		o	H
+L03	8	L:u		u	H
+L03	9	43'		lo	H
+L03	10	L:n		n	H
+L03	11	29:?	?	traitte	M
+L03	12	65'		ra	H
+L03	13	40'		la	H
+L03	14	55'		pa	H
+L03	15	L:i		i	H
+L03	16	L:x		x	H
+L03	17	3:		general	H
+L03	18	41'		le	H
+R2	2	93'		des	H
+R2	3	26'		ge	H
+R2	4	L:n		n	H
+R2	5	L:s		s	H
+R2	6	65'		ra	H
+R2	7	L:i		i	H
+R2	8	73'		so	H
+R2	9	L:n		n	H
+R2	10	L:n		n	H
+R2	11	L:a		a	H
+R2	12	L:b		b	H
+R2	13	41'		le	H
+R2	14	L:s		s	H
+L01	3	19'		du	H
+L01	4	65'		ra	H
+L01	5	13'		co	H
+L01	6	12'		ci	H
+L04	1	4'?	?	bi	I
+L04	2	L:s		s	H
+L04	3	76'		te	H
+L04	4	L:r		r	H
+L04	5	21'		fe	H
+L04	6	L:l?	?	l	M
+L04	7	L:d?	?	d	M
+L05	1	73'		so	H
+L05	2	L:n		n	H
+L05	3	23:		prince	H
+L07	1	41'		le	H
+L07	2	92'		dit	H
+L07	3	4'?	?	bi	I
+L07	4	L:s		s	H
+L07	5	76'		te	H
+L07	6	L:r		r	H
+L07	7	21'		fe	H
+L07	8	L:l?	?	l	M
+L07	9	L:t?	?	t	M
+L07	15	42'		li	H
+L08	0	75'		ta	H
+L08	1	42'		li	H
+L08	2	L:e		e	H
+L01	1	41'		le	H
+L01	2	L:g		g	H
+L01	3	65'		ra	H
+L02	0	L:n		n	H
+L02	1	L:d?	?	d	M
+L02	2	71'		se	H
+L02	3	L:i		i	H
+L02	4	L:g?	?	g	M
+L02	5	51'		ne	H
+L02	6	L:u		u	H
+L02	7	L:r		r	H
+L03	1	40'		la	H
+L03	2	L:f?	?	f	M
+L03	3	100'		faire	I
+L03	4	16'		de	H
+L03	5	65'		ra	H
+L03	6	13'		co	H
+L03	7	12'		ci	H
+L04	1	40'		la	H
+L04	2	81'		ve	H
+L04	3	L:u		u	H
+L04	4	16'		de	H
+L04	5	11'		ce	H
+L04	6	23:		prince	H
+L01	0	72'		si	H
+L01	1	L:l		l	H
+L01	2	51'		ne	H
+L01	3	77'		ti	H
+L01	4	95'		en	H
+L01	5	L:t		t	H
+L01	6	60'		qua	H
+L01	7	9:		luy	H
+L01	8	22:		pro	H
+L01	9	46'		me	H
+L01	10	L:t		t	H
+L01	11	L:t		t	H
+L01	12	66'		re	H
+L01	13	40'		la	H
+L01	14	76'		te	H
+L01	15	L:r		r	H
+L01	16	66'		re	H
+L02	0	16'		de	H
+L02	1	72'		si	H
+L02	2	L:x?	?	x	M
+L02	3	47'		mi	H
+L02	4	L:l		l	H
+L02	5	42'		li	H
+L02	6	L:u		u	H
+L02	7	66'		re	H
+L02	8	L:s		s	H
+L02	9	16'		de	H
+L02	10	66'		re	H
+L02	11	81'		ve	H
+L02	12	54'		nu	H
+L02	13	70'		sa	H
+L02	14	L:n		n	H
+L02	15	L:s		s	H
+L02	16	9:		luy	H
+L02	17	16'		de	H
+L03	0	L:f?	?	f	M
+L03	1	20'		fa	H
+L03	2	L:l		l	H
+L03	3	61'		que	H
+L03	4	L:r		r	H
+L03	5	11'		ce	H
+L03	6	L:t		t	H
+L03	7	76'		te	H
+L03	8	73'		so	H
+L03	9	L:m?	?	m	M
+L03	10	46'		me	H
+L03	11	74'		su	H
+L03	12	L:r		r	H
+L03	13	70'		sa	H
+L03	14	56'		pe	H
+L03	15	L:n		n	H
+L03	16	32:		tion	H
+L04	0	19:?	?	pour	M
+L04	1	41'		le	H
+L04	2	100'		faire	I
+L04	3	66'		re	H
+L04	4	73'		so	H
+L04	5	L:u		u	H
+L04	6	L:d?	?	d	M
+L04	7	66'		re	H
+L04	8	L:a?	?	a	M
+L04	9	66'		re	H
+L04	10	81'		ve	H
+L04	11	52'		ni	H
+L04	12	L:r		r	H
+L04	13	95'		en	H
+L04	14	L:f?	?	f	M
+L04	15	65'		ra	H
+L04	16	L:n		n	H
+L05	0	11'		ce	H
+L05	6	33:		vous	H
+L05	7	L:a?	?	a	M
+L05	8	L:l		l	H
+L05	9	42'		li	H
+L05	10	L:e		e	H
+L05	11	L:s		s	H
+L05	12	39'		ju	H
+L05	13	L:s		s	H
+L05	14	61'		que	H
+L06	0	L:s		s	H
+L06	1	40'		la	H

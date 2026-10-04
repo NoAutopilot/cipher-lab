@@ -1,0 +1,5 @@
+# Period interlinear decipherment over the known-answer runs of Baluze 167 f.157r (c320), read by this worker from images/crops/b167f157_*.
+# The gloss is phrase-level; per-token expected values below are the gloss phrase split along the cipher tokens.
+line	gloss
+167f157 L03	le lieu ou l'on traitera la paix generale
+167f157 R2	des gens raisonnables

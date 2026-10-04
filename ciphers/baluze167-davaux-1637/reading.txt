@@ -1,0 +1,20 @@
+# Baluze 167 f.157 (known-answer) and the bare passages of Baluze 169 ff.52-53, 97-98, 142, read with Tomokiyo's
+# D'Avaux table (published key, credited). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check
+# Grades: H 141, I 4, M 18
+167f157 L03	CONCERNE l e le li e u o u lo n traitte ra la pa i x general le
+167f157 R2	AFFAIRE A des ge n s ra i so n n a b le s
+169f53 L01	QUANT A L'AFFAIRE du ra co ci
+169f53 L04	SUJET bi s te r fe l d N'EST PLUS
+169f53 L05	VERS so n prince
+169f53 L07	DEÇA le dit bi s te r fe l t A PRIS SON CHEMIN PAR li
+169f53 L08	ta li e
+169f98 L01	QUE le g ra
+169f98 L02	n d se i g ne u r Y ARRIUERA
+169f98 L03	FACILITER la f faire de ra co ci
+169f98 L04	DEMANDE la ve u de ce prince
+169f142 L01	si l ne ti en t qua luy pro me t t re la te r re
+169f142 L02	de si x mi l li u re s de re ve nu sa n s luy de
+169f142 L03	f fa l que r ce t te so m me su r sa pe n tion
+169f142 L04	pour le faire re so u d re a re ve ni r en f ra n
+169f142 L05	ce SA MA.TE TROUUE BON QUE vous a l li e s ju s que
+169f142 L06	s la

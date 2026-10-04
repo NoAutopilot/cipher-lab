@@ -175,3 +175,71 @@ Verdict: keep going: 2 internal gaps; cheapest next: the five bare passages (nat
 
 Gate output (RUN1-BAL, 4 Oct 2026): `gaps_check.py: OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 3 step(s) untried` (exit 0).
 Gate output (RUN2-BAL, 4 Oct 2026): `OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 3 step(s) untried` (exit 0).
+
+## A3V3-BALB (account 3 worker, LANE-A3V3), 4 Oct 2026, 06:16 UTC on
+
+Brief: `.claude/briefs/runs/2026-10-04-acct3-a3v3-wave1.md` job A3V3-BALB. Intake gate pasted by the lane (exit 0). No novelty class.
+
+**Key.** `key.tsv` = Tomokiyo's D'Avaux table (images/louisxiii_davaux.png, published key, credited; Cryptiana louisxiii.htm).
+Sign classes as his table gives them: number + acute = syllable/short word (1-98); + diaeresis = word (2-73); + overbar =
+name (1-99); no mark = place column; letter signs (1-4 homophones per letter) labelled `L:x` by shape against his top-left
+block. Grades: H for his plain values; M for his bracketed values ([gu], [mu], [hi], [ji], [quu], [tu], [vu]), his two red
+values (5 r, 7 y) and "(null?)". Key source for the AUDIT field: `published` (Tomokiyo). Whether he rebuilt it from the
+period interlinear decipherments of these volumes is not stated on his page; his specimen list is these same letters, so
+that is likely but unconfirmed -- H here means "read from a key source" (rule 4), not "period key sheet". Two codes not in
+his table were inferred from context, grade I: 100' = faire (169 f.97 "l'af-faire de Racoci", f.142 "pour le faire
+resoudre"), 4' = bi (169 f.53 "Bisterfeld" twice; his 1-7 column skips 4).
+
+**Crops.** `tools/iiif_lines.py --ark <ark> --canvas N --region x,y,w,h --prefix P --out images/crops --debug` for six regions
+(167 c320 x2, 168 c510, 169 c110, c200, c288); overlays checked; crops and manifest in images/crops/ (6.4 MB).
+
+**Known-answer check first (rule 3).** Baluze 167 f.157r (c320) has two short cipher runs under a period interlinear gloss
+("le lieu ou l'on traitera la paix generale"; "des gens raisonnables"). `python3 known_answer.py`: real agreement 29/29
+(numeral codes 14/14), shuffled-key null (values permuted within each sign class, 2000 draws) mean 0.031, p99 0.207.
+Caveat: the 15 letter-sign labels on this leaf were assigned by this worker with the gloss visible, so only the 14/14
+numeral figure is a clean test; every letter-sign shape the gloss fixes (n, e, u, o, i, x, s, a, b) matches the sign under the
+same letter in Tomokiyo's block, which is what licensed labelling the bare passages by his block.
+
+**Passes.** Pass A: one blind Sonnet subagent per passage (4 calls: 167 f.157, 169 f.53, f.98, f.142), numerals only usable --
+it labelled no letter sign ("could not match to the key table"). Pass B: this worker, from the same crops, not blind to
+Tomokiyo's quoted fragments. Numerals: A and B agree on the code number for every numeral A read; A misses or differs on
+diacritic marks (acute vs none) on about a third of numerals and read two letter signs as numerals (169 f.98: "2" for the
+g-sign, "24" for the g-sign with 4). Pass A did not cover 169 f.53 L07-08 (outside the crop); those two lines are pass B
+only (from the 1400 px canvas). 168 f.247r was cropped but not passed (see gaps).
+
+**Reading** (`reading.txt`, `reading_tokens.tsv`; `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` exit 0;
+163 tokens incl. clear words: H 141, I 4, M 18). Bare passages, cipher text only:
+- 169 f.52-53 (La Barde, c110): "du Racoci" ... "Bisterfeld n'est plus en france mais s'en est retourne vers son prince" ...
+  "ledit Bisterfel[d/t] a pris son chemin par l'Italie".
+- 169 f.97-98 (Chavigny, St-Quentin 26 July 1639, c200): "que le grand seigneur y arriuera bien tost ce qui pourra faciliter
+  l'affaire de Racoci en ce qu'il demande la veu[e] de ce prince".
+- 169 f.142 (Chavigny, Lyon Oct 1639, c288): "s'il ne tient qu'a luy promettre la terre de six mil livres de revenu sans luy
+  defalquer cette somme sur sa pention pour le faire resoudre a revenir en france ... Sa Ma.te trouve bon que vous alliez
+  jusques la".
+Where it was found: every one of these cipher strings is what Tomokiyo already quotes for these leaves (louisxiii.htm: "du
+Racaci", "Bisterfeld", "son prince", "ledit Bisterfelds", "l'Italie"; "le grand seigneur", "l'a[f]faire de Racoci", "la veu de
+ce prince"; the f.142 sentence and "vous alliez jusques la"). For these three letters his "fragments" are in fact the whole of
+the cipher text on the leaf; this run reproduces his readings with a per-token grade and a regenerable script, and fixes his
+"Racaci" to "Racoci" (13' = co, both letters) and his "* f falquer" to "de-f-falquer" (16' de + f-sign + 20' fa). No judge run:
+the folder has no spec in specs/.
+
+Requests: gallica.bnf.fr 14 (5 canvases at 1400 px, 2 region probes, 3 info.json, 6 native regions; one at a time, >= 1.6 s,
+no 403/429). Subagents: 4 Sonnet calls.
+
+## Remaining gaps (A3V3-BALB, 4 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv); of the 5 bare passages, 3 (169 ff.52-53,
+97-98, 142) are now read in full with the published key (reading.txt, H 141 I 4 M 18 incl. clear words), matching Tomokiyo's
+quotes.
+- 168 f.246-247 bare passage - blocker: not-attempted; a different hand (d'Avaux's side, duplicata) with letter-sign shapes that do not match the 1637-39 secretaries' forms; c510 L01-L02 cropped (images/crops/b168f247_*), c508-509 not cropped although Tomokiyo's second fragment ("de ne consentir aucune suspension d'armes ...") is not on c510; next: crop c508-510 cipher lines, build a letter-sign glossary for this hand from Tomokiyo's two quoted fragments (grade C for the shape map), one blind pass + reconcile, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups), larger than this job's cap allowed after the known-answer step; next: tools/iiif_lines.py crops of c239-241 (Baluze 170 openings), one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census; next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (4 Oct 2026, A3V3-BALB)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 (numerals 14/14) vs shuffled null p99 0.207
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: not needed for 169; 168 f.247's hand needs its own letter-sign glossary
+- [ ] image-check: 168 c508-509 and 170 c239-241 native crops still to do
+- [ ] retry: n/a
+Verdict: keep going: 3 internal gaps; cheapest next: 168 f.246-247 crops + hand glossary + pass, ~$3, then 170 ff.228-230, ~$6

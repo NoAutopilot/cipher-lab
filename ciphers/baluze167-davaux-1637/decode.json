@@ -1,0 +1,5 @@
+{"jobs": [{"ciphertext": "ciphertext.txt", "format": "pipe", "key": "key.tsv", "style": "spaced",
+  "reading": "reading.txt", "tokens": "reading_tokens.tsv", "m_sources": [], "m_words": ["red in his table", "bracketed"],
+  "header": ["# Baluze 167 f.157 (known-answer) and the bare passages of Baluze 169 ff.52-53, 97-98, 142, read with Tomokiyo's",
+             "# D'Avaux table (published key, credited). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+             "# Grades: {grades_sorted}"]}]}

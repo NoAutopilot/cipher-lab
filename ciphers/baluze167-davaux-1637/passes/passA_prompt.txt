@@ -1,0 +1,17 @@
+You are a blind transcriber of a 1637-1639 French diplomatic letter partly written in a numeric cipher (BnF Baluze). Do NOT decode, do NOT guess meanings, do NOT read any words written small ABOVE the cipher (ignore interlinear writing entirely).
+
+Reference: the cipher key table image /home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/louisxiii_davaux.png (Tomokiyo). Use ONLY its top-left block: the row "a b c d ... z" with 1-4 handwritten letter-substitute signs under each letter. Look at it once.
+
+Crops (one manuscript line per Lxx, split into overlapping left/right segments s1/s2 that share ~150 px, so do not double-count tokens in the overlap), all in /home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/ :
+FILES
+
+Transcribe every cipher token in reading order, line by line. Token forms:
+- a number with an acute/apostrophe-like stroke above it: write it like 72'   (the stroke may sit over either digit)
+- a number with two dots (diaeresis) above: 22:
+- a number with a bar over it: 16=
+- a number with no mark: 16
+- a handwritten letter-substitute sign (not a number, not ordinary French): write L:x where x is the letter it sits under in the key table's top-left block; if unsure write L:?(short shape description) or L:x|y for two candidates.
+- ordinary French words written in clear between cipher runs: write them inside braces as one item, e.g. {Sa Ma.te trouve bon que}
+Mark any token you are unsure of with a trailing ? (e.g. 76'?).
+
+Output ONLY a TSV written to OUTFILE with header `line	tokens` and one row per line (tokens separated by single spaces), then reply with that same TSV and one sentence on the hardest tokens. No other commentary.

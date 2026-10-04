@@ -1,0 +1,21 @@
+# Reconciled cipher transcription (A3V3-BALB, 4 Oct 2026). Pass A: one blind Sonnet subagent per passage (numerals; it could not
+# match letter signs); pass B: this worker from the native line crops (images/crops/*_lines_debug.jpg), not blind to Tomokiyo's
+# quoted fragments. Forms: N' acute, N: diaeresis, N= overbar, N no mark; L:x = letter sign under x in Tomokiyo's table;
+# w:word = clear word; trailing ? = uncertain sign. 167f157 is the known-answer leaf (period interlinear gloss in gloss.tsv).
+167f157 L03 | w:concerne L:l? L:e? 41' 42' L:e L:u L:o L:u 43' L:n 29:? 65' 40' 55' L:i L:x 3: 41'
+167f157 R2 | w:affaire w:a 93' 26' L:n L:s 65' L:i 73' L:n L:n L:a L:b 41' L:s
+169f53 L01 | w:Quant w:a w:l'affaire 19' 65' 13' 12'
+169f53 L04 | w:Sujet 4'? L:s 76' L:r 21' L:l? L:d? w:n'est w:plus
+169f53 L05 | w:vers 73' L:n 23:
+169f53 L07 | w:deça 41' 92' 4'? L:s 76' L:r 21' L:l? L:t? w:a w:pris w:son w:chemin w:par 42'
+169f53 L08 | 75' 42' L:e
+169f98 L01 | w:que 41' L:g 65'
+169f98 L02 | L:n L:d? 71' L:i L:g? 51' L:u L:r w:y w:arriuera
+169f98 L03 | w:faciliter 40' L:f? 100' 16' 65' 13' 12'
+169f98 L04 | w:demande 40' 81' L:u 16' 11' 23:
+169f142 L01 | 72' L:l 51' 77' 95' L:t 60' 9: 22: 46' L:t L:t 66' 40' 76' L:r 66'
+169f142 L02 | 16' 72' L:x? 47' L:l 42' L:u 66' L:s 16' 66' 81' 54' 70' L:n L:s 9: 16'
+169f142 L03 | L:f? 20' L:l 61' L:r 11' L:t 76' 73' L:m? 46' 74' L:r 70' 56' L:n 32:
+169f142 L04 | 19:? 41' 100' 66' 73' L:u L:d? 66' L:a? 66' 81' 52' L:r 95' L:f? 65' L:n
+169f142 L05 | 11' w:Sa w:Ma.te w:trouue w:bon w:que 33: L:a? L:l 42' L:e L:s 39' L:s 61'
+169f142 L06 | L:s 40'
