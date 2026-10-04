@@ -55,3 +55,11 @@ At least one arm passes -> key.tsv for this target: Tomokiyo values, with C coun
 disagreements listed and not settled by majority (rule 4); stop (fr.16104 ff.157-159v is wave 2).
 Both fail -> numbers to HYPOTHESES.md as a known-plaintext test, next step named, stop.
 Script: tx/vivk_test.py (committed with the result). Transcription error is reported per page as err_2reader.
+
+## Amendment 1 (4 Oct 2026, before any decode of f.103r exists or is compared)
+Training-side evidence only: the Tomokiyo decode of f.102r (rec draft) reads "particularitez du siege et du secours ...
+conte de Montgommery" and "avoit tres bien considere" (f.106r lines 2-6 of the decipherment) about 14 cipher lines into
+f.102r, preceded by "nulle esperance" / "reconciliation", which are not on ff.106r-106v. So f.102r starts on f.105v.
+The plaintext is widened by that one page (the brief's allowance): dec_norm.txt = ff.105v-108v (canvas 109 left -
+112 left), same normalization. Nothing else changes (anchor rule, statistic, arms, nulls, pass rule).
+Cipher reconciliation (tx/reconcile_vivk.py) uses only label rules fixed on f.102r/f.102v crops before any f.103r decode.
