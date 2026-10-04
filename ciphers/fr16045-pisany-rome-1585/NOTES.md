@@ -422,3 +422,117 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e); 24 
 - [x] image-check: T31 tokens compared with the table cells (images/t31_compare.jpg)
 - [ ] retry: per-line pipeline on f.302v, f.275v-f.278r, f.75 and the other 1586-87 letters; Brienne for June 1588
 Verdict: keep going: 8 internal gaps; cheapest next: T31 shape relabel ~$1; most valuable next: f.302v against the Colbert copy, ~$5
+
+## Inventory (PIS1-INV, 4 Oct 2026, 16:48-17:3x UTC)
+Brief: .claude/briefs/runs/2026-10-04-acct1-pis1-wave1.md "PIS1-INV" (LANE-PIS1, account 1). Gallica only, 300 requests, all HTTP 200, no
+challenge, one at a time, >= 2.2 s apart: block of 230 (fr.16045 c258-c662 every 2nd canvas at 360 px = 203; fr.16046 c1-c43 every 3rd = 15;
+4 fr.16046 probes at 700 px; 1 ranged manifest request; 6 verso fills c471-c477/c505/c507 and c508 at 900 px), then after the PIS1-275V
+fetch-done line 49 verso fills, 19 Colbert 16 pt II openings at 1000 px and 2 date-line crops (c626 head, c640 foot). Every URL with its
+reading: images/manifest_pis1inv.tsv. 25 contact sheets (12 per sheet, canvas burned in) read by this worker, no subagent; sheets and
+thumbnails in scratch only (re-fetch from the manifest).
+Limits of the method. 360 px tells cipher (figure/symbol lines) from clear reliably on this volume (c470, c504 obvious) but cannot count
+lines exactly: line counts are +-3. The block saw rectos only (even canvases); versos were filled only around Pisany's letters to the King and
+the cipher letters (49 fills). Versos of the July-Aug 1585 Saint-Gouard letters, the Feb 1586 Bologna and July 1586 letters, the 22 Sept and
+6/7 Oct 1586 letters and the letters to Villeroy were not viewed (cipher there would be missed). Archivist's date headings were read at 360 px;
+day numbers are uncertain where marked "?".
+Canvas-folio: ink folios read on the images give canvas = 2 x folio + 8 for f.125-f.209 (c258-c426), a duplicated run at c428-c437 (c434 and
+c436 repeat c428 and c430, ink 211/212), and canvas = 2 x folio + 12 from f.213 (c438) to f.322 (c658); c662 last canvas, blank.
+fr.16046: c4 is "Le Marq. de Pisany au Roy, 4 janvier 1588" (ink f.1), c16 "Le Card. de Joyeuse a la Reine, [?] janvier 1588", c34 Pisany au
+Roy 1588, c40 a minute of 3 Feb 1588. **fr.16046 holds no 1587 letter**; its 1587/1588 boundary is its first leaf.
+
+Findings:
+1. **f.248r-v (c508-c509) is a period decipherment.** f.248r is headed in the archivist's hand "17 Septemb. 1586" and in the leaf's own hand
+   "dechiffre de la precedente"; line 1 reads "...ant hier avec moy le Cardinal de S(te) Croix le..." (900 px, faint ink), which is the opening
+   of the second 17 Sept letter in the Colbert copy (c445 p.52 l.15: "Sire / Dudit jour / Disnant hier avec moy le Cardinal de Saincte Croix,
+   le Pape l'envoya querir"). The cipher it deciphers is f.246r (about 26 lines), f.246v (about 24) and f.247r (about 10, signed "17 Sept
+   1586"). Two witnesses of the same plaintext beside about 60 cipher lines. (RUN3-PISD's guess that this letter was copied as the tail of the
+   first, p.51-55 "Tout a cette heure", is corrected: p.51 l.8 "Tout a cette heure Monsieur le Cardinal m'est venu trouver" ends the first
+   letter; the second has its own heading on p.52.)
+2. **9 Sept 1586 letter (f.228-234) carries about 78 cipher lines over ten pages, with left-margin glosses** on f.228v, f.231v and f.233v
+   (second hand; whether a full decipherment or notes was not read at 360 px). The archivist dates it 9 Sept (Tomokiyo "8 Sept"); the Colbert
+   heading at p.13 reads "xi", and the next copied letter begins "le ix(e) de ce mois", so the pair holds.
+3. After f.121, every cipher passage seen in fr.16045 is in a letter that has a Colbert copy (9 Sept, both 17 Sept letters, 4 Nov 1586, 24 Mar
+   1587). No cipher was seen on any viewed leaf of the 1585 letters after f.121 (July-Dec 1585), the Jan-Mar 1586 Rome letters, the Feb 1586
+   Bologna letters, 26 Aug 1586, 22 Sept, 6-7 Oct and 18 Nov 1586, 10 Mar 1587 or 4 Apr 1587. So the uncopied cipher material (job 3) is the
+   1585 letters ff.50-121 (PIS-M) and 18 June 1588 (fr.16046 f.179), not later 1586-87 letters.
+4. Gaps in the originals: the Colbert copy has dispatches of 6 Oct (p.67), 11 Oct (p.90), 21 Oct (cited at p.110), 17 Nov (p.138), 2 Dec 1586
+   (p.162), 4 Apr and 11 Apr 1587 (pp.344, 369), and runs to the end of 1587 (p.685); fr.16045 has no original for Dec 1586-Feb 1587 or for any
+   letter to the King after 4 Apr 1587 (only Pisany to Villeroy 27 July 1587, f.316-317). Where those originals are is not known here.
+5. The f.307-314 letter: archivist's head "7 avril 1587" (c626, 1400 px crop), but the letter's own date line (c640) reads "De Rome ce iiij(e)?
+   Avril 1587", and Colbert has "Du quatriesme avril ensuivant, par Verdelet" (c591 p.344) with the 11 Apr letter (c603 p.369) recalling "le
+   quatriesme du present": paired as 4 Apr, probable.
+
+Table (Pisany's own letters, fr.16045 f.125 onward; letters by others in the volume -- Villeroy's and the King's drafts to him, Luxembourg,
+La Bordere?, the envoy at Turin, cardinals -- are listed in the manifest, not here). Colbert page = 2 x canvas - 834..838; "confirmed" = heading
+read on that canvas (this job or RUN3-PISD), "interpolated" = from neighbouring headings only.
+| Letter (date on the leaf) | fr.16045 folios / canvases | Cipher canvases seen, est. lines | Colbert canvas / page | Status |
+|---|---|---|---|---|
+| 1585 ff.50-121 (9 letters, Tomokiyo; PIS-M table above) | ff.50-121, c106-c258 | about 7,000 signs (PIS-M) | none (copy starts 26 Aug 1586) | no copy; f.75 NON-TEST (PIS-T) |
+| St-Goard au Roy, 2? July 1585 | f.126-127, c260-c262 | none (rectos) | none | no copy |
+| St-Goard a la Reine, July 1585 | f.128, c264 | none | none | no copy |
+| St-Goard au Roy, July 1585 | f.129, c266 | none | none | no copy |
+| St-Goard a Villeroy, July / 3 Aug / 19? Aug 1585 | f.131, f.135-136, f.159 | none | none | no copy |
+| Pisany au Roy, 18 Dec 1585 | f.175-183, c358-c374 (versos filled) | none | none | no copy |
+| Pisany a Villeroy, 18 Dec, 30 Dec 1585 | f.184-188 | none (rectos) | none | no copy |
+| Pisany au Roy, 15 Jan 1586 | f.189-197, c386-c402 (versos filled) | none | none | no copy |
+| Pisany a Villeroy, 16 Jan, 23 Jan (x2) 1586 | f.199-203 | none (rectos) | none | no copy |
+| Pisany au Roy / a la Reine, Feb 1586, Bologna | f.205-208, c418-c424 | none (rectos) | none | no copy |
+| Pisany a Villeroy, Mar 1586 | f.209, c426 | none | none | no copy |
+| Pisany au Roy, 25 Mar 1586 | f.211-212, c428-c431 (dup. c434-c437) | none | none | no copy |
+| Pisany a Villeroy, 25 Mar 1586; a la Reine, Mar 1586 | f.213, f.215 | none (rectos) | none | no copy |
+| Pisany au Roy, 2? June 1586 | f.217, c446 | none (recto) | none | no copy |
+| Pisany au Roy / a la Reine, 5 July 1586 | f.221-223, c454-c458 | none (rectos) | none | no copy |
+| Pisany au Roy, 26 Aug 1586 | f.225-227, c462-c467 (versos filled) | none | c417-c423, pp.1-12 (confirmed RUN3-PISD: c423 p.12 closes it) | paired, no cipher |
+| **Pisany au Roy, 9 Sept 1586** | f.228-234, c468-c481 (all leaves) | c469 f.228v ~15; c470 f.229r ~14; c471 ~3; c472 ~4; c473 ~5; c474 ~6; c475 f.231v ~14; c478 ~4; c479 f.233v ~10; c480 ~3: **about 78 lines**, margin glosses on f.228v/231v/233v | c423-c434, pp.13-34 (heading "Du xi(e) Septembre" confirmed RUN3-PISD) | paired, not run |
+| Pisany a Villeroy, 9 Sept 1586 (autograph) | f.235-236, c482-c484 | none (rectos) | not expected (copy is of dispatches to the King and Queen mother) | no copy expected |
+| Pisany au Roy, 17 Sept 1586 (first) | f.240-245, c492-c502 | c500 f.244r ~10 (kp86), f.244v (RUN4), c502 f.245r ~6 (RUN4) | c434-c445, pp.34-52 (confirmed) | PASS done (kp86, kp86b) |
+| **Pisany au Roy, 17 Sept 1586 (second, "Dudit jour")** | f.246-247, c504-c507; decipherment f.248r-v c508-c509 | c504 f.246r ~26; c505 f.246v ~24; c506 f.247r ~10: **about 60 lines** | c445-c446, pp.52-55 (heading confirmed this job) | paired, not run; + period decipherment on the leaf |
+| Pisany au Roy, 22 Sept 1586 | f.252 (start not seen; f.250r-v is Luxembourg's), c516 | none (rectos) | c448 p.59 "Du xxii(e) Septembre" (confirmed RUN3-PISD) | paired, no cipher seen |
+| Pisany au Roy, 22 Sept 1586 (second) | f.254-256, c520-c524 (versos 521/523 filled) | none | c452 p.66 "Au Roy / Dudit jour" (confirmed this job; pairing by order, probable) | paired, no cipher seen |
+| Pisany au Roy, 6 Oct 1586 | f.260, c532 | none | c452 p.67 "Du vi(e) octobre" starts a 23-page dispatch to p.90; the one-page f.260 is not identified within it | probable, no cipher seen |
+| Pisany au Roy, 7 Oct 1586 | f.262-263, c536-c538 | none | inside pp.67-90 by date (no 7 Oct heading seen at c452/456/460/464) | interpolated, no cipher seen |
+| **Pisany au Roy, 4 Nov 1586** | f.272-280, c556-c573 | c562 f.275r ~14 (kp86e); f.275v-f.278v dense (RUN5-PIS4/NOTES, c563-c569, PIS1-275V on f.275v); c564 f.276r ~18; c566 f.277r ~26; c568 f.278r ~25; c570 f.279r ~7: **rectos f.276-279 about 76 lines plus 4 dense versos** | c474-c487, pp.110-~136; next "Au Roy" (17 Nov) heading at c488 p.138 (confirmed this job) | PASS done on f.275r; rest paired, not run (f.275v in PIS1-275V) |
+| Pisany a Villeroy, 5? / 18 Nov 1586 (x2) | f.282-286 | none (rectos) | not expected | no copy expected |
+| Pisany au Roy, 10 Mar 1587 | f.288-295, c588-c603 (versos filled) | none | c568 p.298 "Du dixiesme mars ensuivant" (confirmed this job) to p.323 | paired, no cipher |
+| **St-Goard au Roy, 24 Mar 1587** | f.297-303, c606-c618 | c615 f.301v ~9 (kp87a); c617 f.302v ~12 (PIS1-302) | c581-c590, pp.324-~343 (confirmed RUN3-PISD) | PASS done on f.301v; f.302v in PIS1-302 |
+| St-Goard a la Reine, 24 Mar 1587 | f.305, c622 | none | about p.343 (interpolated: 4 Apr heading at c591 p.344) | interpolated, no cipher |
+| Pisany au Roy, 4 Apr 1587 (archivist "7 avril") | f.307-314, c626-c641 (versos filled) | none | c591-c603, pp.344-368 "Du quatriesme avril" (confirmed this job) | paired, no cipher |
+| Pisany a la Reine, 4/7 Apr 1587 | f.315, c642 | none | not located | -- |
+| Pisany a Villeroy, 27 July 1587 | f.316-317, c644-c646 | none | not expected | no copy expected |
+| 18 June 1588 (Tomokiyo, fr.16046 ff.165, 179) | fr.16046 c336, c364 | c364 ~22 (PIS-M) | not in the copy (RUN5-PIS87) | no copy |
+
+Ranked next page jobs (lines are cipher lines at +-3 from 360 px; price per line = 2 reader calls x USD 0.35 + reconciliation per page):
+Job 2 (letters with a copy), by cipher lines:
+1. 17 Sept 1586 second letter: f.246r ~26, f.246v ~24, f.247r ~10 (about 60 lines, 3 pages) vs Colbert pp.52-55 (c445-c446) **and** the leaf's
+   own period decipherment f.248r-v -- a second witness for the gate (normalise the two to one convention first, rule 3 PX-BRODEC). Highest value.
+2. 4 Nov 1586 continuation: f.275v (PIS1-275V running), then f.276r ~18, f.276v, f.277r ~26, f.277v, f.278r ~25, f.278v, f.279r ~7 vs Colbert
+   pp.122-~136 (c480-c487).
+3. 9 Sept 1586: f.228v ~15, f.229r ~14, f.229v ~3, f.230r ~4, f.230v ~5, f.231r ~6, f.231v ~14, f.233r ~4, f.233v ~10, f.234r ~3 (about 78
+   lines, ten pages) vs Colbert pp.13-34 (c423-c434); read the margin glosses on f.228v/f.231v/f.233v first (they may be a second witness).
+4. 24 Mar 1587 f.302v ~12 (PIS1-302 running).
+Job 3 (no copy): the 1585 letters ff.50-121 (PIS-M: f.63 ~28 lines on c132-c134, f.75 ~47+ lines c156-c166, f.121 ~39 lines c252-c256 with
+glosses, f.50 ~10, f.69 ~12+, f.105 ~7), after the key is grown on job 2; then fr.16046 f.179 (~22 lines, 18 June 1588).
+Requests: Gallica 300 (manifest), 0 other hosts. Subagent calls: 0.
+
+## Remaining gaps (PIS1-INV, 4 Oct 2026; merges RUN5-PIS4's list)
+Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r; 24 Mar 1587 f.301v: 5 pages known-answer PASS, about 50 of about 380 cipher lines located in 1586-87 (the inventory above) plus about 7,000 signs of 1585 unread.
+- 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
+- 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; f.275v is in PIS1-275V; next: same per-line pipeline page by page, ~$12 per dense page
+- 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
+- 24 Mar 1587 f.302v vs Colbert pp.339-341 - blocker: not-attempted; running in PIS1-302 (same wave); next: PIS1-302's own report, ~$0
+- key86 T31 label and T45/T47/T49/T57 remap - blocker: not-attempted; running in PIS1-KEY (same wave); next: PIS1-KEY's report, ~$0
+- Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief's 230+30 request budget; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II; next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
+- Originals of the Dec 1586-Feb 1587 and Apr-Dec 1587 dispatches (copied in Colbert, absent from fr.16045/16046) - blocker: not-attempted; outside this brief; next: BnF finding aid search for other Pisany volumes (fr. or Cinq Cents de Colbert), ~$1
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (PIS1-INV, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II paired letter by letter (11 letters matched to a heading read on the copy, 6 of them by this job; table above); fr.16046 checked (no 1587)
+- [x] clear-pages: every Pisany letter to the King in fr.16045 after f.121 inventoried; versos of the cipher letters and of the long clear letters filled
+- [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.275r, f.301v; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: T31 relabel and remap (PIS1-KEY running); the f.246-247 letter with its f.248 decipherment is the next key-growing page set
+- [x] image-check: f.248r read at 900 px (decipherment heading); c626/c640 date lines at 1400 px
+- [ ] retry: per-line pipeline on f.246-247, f.276-279, f.228-234; 1585 letters after the key grows
+Verdict: keep going: 10 internal gaps; cheapest next: verso fills ~$1; most valuable next: 17 Sept 1586 f.246-247 vs Colbert pp.52-55 and the f.248 decipherment, ~$45

@@ -1,0 +1,302 @@
+# PIS1-INV (LANE-PIS1, account 1), 4 Oct 2026 16:48-17:22 UTC. Every Gallica request this job made, in order. Thumbnails/views kept in scratch, not committed: re-fetch any row with curl -A 'Mozilla/5.0' -o OUT '<url>'. ink_folio = folio number read on the image (v = verso, inferred).
+volume	canvas	http	url	kind	ink_folio	class	observation
+f16046	3	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f3/full/700,/0/default.jpg	probe			
+f16046	40	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f40/full/700,/0/default.jpg	probe			1588 minute, 3 Feb 1588
+f16046	90	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f90/full/700,/0/default.jpg	probe			
+f16046	150	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f150/full/700,/0/default.jpg	probe			
+f16045	-	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/manifest.json	manifest (ranged, 1 request)			
+f16045	258	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f258/full/360,/0/default.jpg	block	125	blank	f.125 r blank (end of f.121 letter)
+f16045	260	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f260/full/360,/0/default.jpg	block	126	clear	Le Sr de St Goard au Roy, date margin "2? juillet 1585"
+f16045	262	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f262/full/360,/0/default.jpg	block	127	clear	cont.
+f16045	264	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f264/full/360,/0/default.jpg	block	128	clear	Le Sr de St Goard a la Royne, signed, 1585
+f16045	266	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f266/full/360,/0/default.jpg	block	129	clear	Le Sr de St Goard au Roy (start, dense clear)
+f16045	268	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f268/full/360,/0/default.jpg	block	130	blank	
+f16045	270	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f270/full/360,/0/default.jpg	block	131	clear	du Sr de St Goard a M. de Villeroy, signed, juillet 1585
+f16045	272	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f272/full/360,/0/default.jpg	block	132	blank	
+f16045	274	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f274/full/360,/0/default.jpg	block	133	clear	Dern(ier) juillet 1585 letter (other hand) a la Royne
+f16045	276	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f276/full/360,/0/default.jpg	block	134	blank	
+f16045	278	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f278/full/360,/0/default.jpg	block	135	clear	3 aout 1585 "du Sr de St Goard a M. de Villeroy"
+f16045	280	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f280/full/360,/0/default.jpg	block	136	clear	end of letter, "5 aout 1585"? signed
+f16045	282	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f282/full/360,/0/default.jpg	block	137	clear	M. de Villeroy au Sr de St Goard Amb. a Rome (incoming), Aug 1585
+f16045	284	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f284/full/360,/0/default.jpg	block	138	clear	cont.
+f16045	286	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f286/full/360,/0/default.jpg	block	139	clear	cont.
+f16045	288	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f288/full/360,/0/default.jpg	block	140	clear	cont.
+f16045	290	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f290/full/360,/0/default.jpg	block	141	clear	cont.
+f16045	292	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f292/full/360,/0/default.jpg	block	142	clear	cont.
+f16045	294	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f294/full/360,/0/default.jpg	block	143	clear	end, signed
+f16045	296	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f296/full/360,/0/default.jpg	block	144	blank	
+f16045	298	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f298/full/360,/0/default.jpg	block	145	clear	M. de Villeroy au Sr de St Goard Amb. a Rome (incoming draft hand)
+f16045	300	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f300/full/360,/0/default.jpg	block	146	clear	cont. draft
+f16045	302	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f302/full/360,/0/default.jpg	block	147	clear	cont. draft
+f16045	304	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f304/full/360,/0/default.jpg	block	148	clear	cont. draft
+f16045	306	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f306/full/360,/0/default.jpg	block	149	clear	Villeroy draft cont.
+f16045	308	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f308/full/360,/0/default.jpg	block	150	clear	Villeroy draft cont.
+f16045	310	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f310/full/360,/0/default.jpg	block	151	clear	Villeroy draft cont.
+f16045	312	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f312/full/360,/0/default.jpg	block	152	clear	Villeroy draft cont.
+f16045	314	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f314/full/360,/0/default.jpg	block	153	clear	Villeroy draft end
+f16045	316	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f316/full/360,/0/default.jpg	block	154	clear	Lettre de [another envoy] a M. de Villeroy, Aug 1585 (not Pisany)
+f16045	318	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f318/full/360,/0/default.jpg	block	155	clear	cont., signed
+f16045	320	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f320/full/360,/0/default.jpg	block	156	clear	Le Roy au Sr de St Goard Amb. a Rome draft, "8? aout 1585" (incoming)
+f16045	322	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f322/full/360,/0/default.jpg	block	157	clear	Le Roy au Sr de St Goard Amb. a Rome, "17 aout 1585" (incoming, fair copy)
+f16045	324	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f324/full/360,/0/default.jpg	block	158	blank	
+f16045	326	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f326/full/360,/0/default.jpg	block	159	clear	Le Sr de St Goard a M. de Villeroy, "19? aout 1585", single page
+f16045	328	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f328/full/360,/0/default.jpg	block	160	blank	
+f16045	330	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f330/full/360,/0/default.jpg	block	161	clear	Le Sr de la Bordere? a M. de St Goard?, "26 aout 1585", Rome (other sender)
+f16045	332	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f332/full/360,/0/default.jpg	block	162	blank	
+f16045	334	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f334/full/360,/0/default.jpg	block	163	clear	same sender, "27 aout 1585", Rome
+f16045	336	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f336/full/360,/0/default.jpg	block	164	clear	cont.
+f16045	338	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f338/full/360,/0/default.jpg	block	165	clear	end, signed "Rome 27 aout 1585"
+f16045	340	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f340/full/360,/0/default.jpg	block	166	clear	Lettre de [?] a la Reine, "20 novembre 1585"
+f16045	342	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f342/full/360,/0/default.jpg	block	167	clear	cont., dated "Rome ... Novembre 1585"
+f16045	344	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f344/full/360,/0/default.jpg	block	168	clear	Le Sr [Sauve?] de Turin au Roy, "29 novembre 1585", Turin (other sender)
+f16045	346	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f346/full/360,/0/default.jpg	block	169	blank	
+f16045	348	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f348/full/360,/0/default.jpg	block	170	clear	same, Turin, a la Reine, 29 Nov 1585
+f16045	350	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f350/full/360,/0/default.jpg	block	171	blank	
+f16045	352	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f352/full/360,/0/default.jpg	block	172	clear	M. de Villeroy a M. l'Ev. de [Turin?] draft, "1 decembre 1585" (other)
+f16045	354	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f354/full/360,/0/default.jpg	block	173	clear	draft cont.
+f16045	356	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f356/full/360,/0/default.jpg	block	174	clear	draft cont.
+f16045	358	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f358/full/360,/0/default.jpg	block	175	clear	Le Sr marquis de Pisany au Roy, "18 decembre 1585", Rome (start)
+f16045	360	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f360/full/360,/0/default.jpg	block	176	clear	cont.
+f16045	362	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f362/full/360,/0/default.jpg	block	177	clear	cont.
+f16045	364	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f364/full/360,/0/default.jpg	block	178	clear	cont.
+f16045	366	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f366/full/360,/0/default.jpg	block	179	clear	cont.
+f16045	368	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f368/full/360,/0/default.jpg	block	180	clear	cont.
+f16045	370	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f370/full/360,/0/default.jpg	block	181	clear	cont.
+f16045	372	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f372/full/360,/0/default.jpg	block	182	clear	cont.
+f16045	374	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f374/full/360,/0/default.jpg	block	183	clear	end, signed, "18 decembre 1585"
+f16045	376	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f376/full/360,/0/default.jpg	block	184	clear	Pisany a M. de Villeroy, "18 decembre 1585"
+f16045	378	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f378/full/360,/0/default.jpg	block	185	clear	cont., closing lines
+f16045	380	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f380/full/360,/0/default.jpg	block	186	clear	end, signed "Marquis de Pisany", "Dec 1585"
+f16045	382	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f382/full/360,/0/default.jpg	block	187	clear	Pisany a M. de Villeroy, "30 decembre 1585"
+f16045	384	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f384/full/360,/0/default.jpg	block	188	clear	end, signed, "xxx Decembre 1585"
+f16045	386	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f386/full/360,/0/default.jpg	block	189	clear	Pisany au Roy, "15 janvier 1586", Rome (start)
+f16045	388	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f388/full/360,/0/default.jpg	block	190	clear	cont.
+f16045	390	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f390/full/360,/0/default.jpg	block	191	clear	cont.
+f16045	392	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f392/full/360,/0/default.jpg	block	192	clear	cont.
+f16045	394	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f394/full/360,/0/default.jpg	block	193	clear	cont.
+f16045	396	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f396/full/360,/0/default.jpg	block	194	clear	cont.
+f16045	398	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f398/full/360,/0/default.jpg	block	195	clear	cont.
+f16045	400	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f400/full/360,/0/default.jpg	block	196	clear	cont.
+f16045	402	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f402/full/360,/0/default.jpg	block	197	clear	end, signed "Rome ... janvier 1586"
+f16045	404	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f404/full/360,/0/default.jpg	block	198	blank	
+f16045	406	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f406/full/360,/0/default.jpg	block	199	clear	Pisany a M. de Villeroy, "16 janvier 1586", Rome
+f16045	408	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f408/full/360,/0/default.jpg	block	200	clear	end, signed, "25? janvier 1586"
+f16045	410	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f410/full/360,/0/default.jpg	block	201	clear	Pisany a M. de Villeroy, "23 janvier 1586" (draft-like, crossings)
+f16045	412	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f412/full/360,/0/default.jpg	block	202	blank	
+f16045	414	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f414/full/360,/0/default.jpg	block	203	clear	Pisany a M. de Villeroy, "23 janvier 1586"
+f16045	416	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f416/full/360,/0/default.jpg	block	204	blank	
+f16045	418	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f418/full/360,/0/default.jpg	block	205	clear	Pisany au Roy, "? fevrier 1586", Bologne
+f16045	420	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f420/full/360,/0/default.jpg	block	206	clear	end, signed, Bologne fevrier 1586
+f16045	422	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f422/full/360,/0/default.jpg	block	207	clear	Pisany a la Reine, "? fevrier 1586", Bologne
+f16045	424	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f424/full/360,/0/default.jpg	block	208	clear	end, signed, Bologne 1586
+f16045	426	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f426/full/360,/0/default.jpg	block	209	clear	Pisany a M. de Villeroy, "? mars 1586", Rome
+f16045	428	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f428/full/360,/0/default.jpg	block	211	clear	Pisany au Roy, "25 mars 1586", Rome (start)
+f16045	430	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f430/full/360,/0/default.jpg	block	212	clear	end, signed "Rome ... Mars 1586"
+f16045	432	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f432/full/360,/0/default.jpg	block	210?	blank	
+f16045	434	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f434/full/360,/0/default.jpg	block	211	clear	DUPLICATE image of c428 (same leaf, ink 211)
+f16045	436	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f436/full/360,/0/default.jpg	block	212	clear	DUPLICATE image of c430
+f16045	438	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f438/full/360,/0/default.jpg	block	213	clear	Pisany a M. de Villeroy, "25 mars 1586", Rome
+f16045	440	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f440/full/360,/0/default.jpg	block	214	blank	
+f16045	442	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f442/full/360,/0/default.jpg	block	215	clear	Pisany a la Reine, Mars 1586
+f16045	444	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f444/full/360,/0/default.jpg	block	216	blank	
+f16045	446	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f446/full/360,/0/default.jpg	block	217	clear	Le Marq. de Pisany au Roy, "2? juin 1586" (other hand, large)
+f16045	448	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f448/full/360,/0/default.jpg	block	218	blank	
+f16045	450	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f450/full/360,/0/default.jpg	block	219	clear	? juillet 1586, Rome, heading note re Bologne/Ferrare (not a dispatch to the King?)
+f16045	452	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f452/full/360,/0/default.jpg	block	220	blank	
+f16045	454	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f454/full/360,/0/default.jpg	block	221	clear	Le Marq. de Pisany au Roy, "5 juillet 1586", [Turin?]
+f16045	456	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f456/full/360,/0/default.jpg	block	222	clear	end, signed "5 juillet 1586"
+f16045	458	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f458/full/360,/0/default.jpg	block	223	clear	Le Marq. de Pisany a la Reine, "5 juillet 1586"
+f16045	460	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f460/full/360,/0/default.jpg	block	224	blank	
+f16045	462	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f462/full/360,/0/default.jpg	block	225	clear	Le Marq. de Pisany au Roy, "26 aout 1586", Rome (= Colbert p.1)
+f16045	464	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f464/full/360,/0/default.jpg	block	226	clear	cont.
+f16045	466	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f466/full/360,/0/default.jpg	block	227	clear	end, signed "26 aout 1586"
+f16045	468	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f468/full/360,/0/default.jpg	block	228	clear	Le Marq. de Pisany au Roy, "9 septembre 1586", Rome (Tomokiyo "8 Sept f.228")
+f16045	470	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f470/full/360,/0/default.jpg	block	229	mixed	CIPHER: about 5 lines at top, 4 mid, 5 at foot (about 14 cipher lines)
+f16045	472	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f472/full/360,/0/default.jpg	block	230	mixed	CIPHER: about 3-4 lines at foot
+f16045	474	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f474/full/360,/0/default.jpg	block	231	mixed	CIPHER: about 3 lines mid, 3 at foot (about 6)
+f16045	476	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f476/full/360,/0/default.jpg	block	232	clear	
+f16045	478	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f478/full/360,/0/default.jpg	block	233	mixed	CIPHER: about 4 lines mid
+f16045	480	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f480/full/360,/0/default.jpg	block	234	mixed	CIPHER: about 3 lines at top; signed "9 Septembre 1586"
+f16045	482	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f482/full/360,/0/default.jpg	block	235	clear	Le Marquis de Pisany a M. de Villeroy, "9? septembre 1586" (autograph)
+f16045	484	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f484/full/360,/0/default.jpg	block	236	clear	cont. autograph
+f16045	486	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f486/full/360,/0/default.jpg	block	237	blank	
+f16045	488	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f488/full/360,/0/default.jpg	block	238	clear	Pisany a M. de Villeroy (Sept 1586)
+f16045	490	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f490/full/360,/0/default.jpg	block	239	blank	
+f16045	492	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f492/full/360,/0/default.jpg	block	240	clear	Le Marq. de Pisany au Roy, "17 septembre 1586", Rome (start)
+f16045	494	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f494/full/360,/0/default.jpg	block	241	clear	cont.
+f16045	496	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f496/full/360,/0/default.jpg	block	242	clear	cont.
+f16045	498	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f498/full/360,/0/default.jpg	block	243	clear	cont.
+f16045	500	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f500/full/360,/0/default.jpg	block	244	mixed	CIPHER about 10 lines (f.244r, read: kp86)
+f16045	502	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f502/full/360,/0/default.jpg	block	245	mixed	CIPHER about 6 lines at top (f.245r, read: RUN4-PIS1); signed "17 Sept 1586"
+f16045	504	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f504/full/360,/0/default.jpg	block	246	cipher	CIPHER full page about 26 lines (second 17 Sept letter, f.246r) -- not read
+f16045	506	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f506/full/360,/0/default.jpg	block	247	mixed	CIPHER about 10 lines, signed "17 Sept 1586" (f.247r) -- not read
+f16045	508	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f508/full/360,/0/default.jpg	block	248	clear?	faint page headed "17 septembre 1586 ..." -- possibly a decipherment/extract; check at higher res
+f16045	510	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f510/full/360,/0/default.jpg	block	249	blank	
+f16045	512	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f512/full/360,/0/default.jpg	block	250	clear	[Pisany] au Roy, "? septembre 1586", Rome (start; 22 Sept letter)
+f16045	514	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f514/full/360,/0/default.jpg	block	251	blank	
+f16045	516	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f516/full/360,/0/default.jpg	block	252	clear	end, signed "22 Sept 1586"
+f16045	518	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f518/full/360,/0/default.jpg	block	253	blank	
+f16045	520	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f520/full/360,/0/default.jpg	block	254	clear	[Pisany] au Roy (start)
+f16045	522	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f522/full/360,/0/default.jpg	block	255	clear	cont.
+f16045	524	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f524/full/360,/0/default.jpg	block	256	clear	end, signed "Rome 22 Sept 1586"
+f16045	526	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f526/full/360,/0/default.jpg	block	257	blank	
+f16045	528	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f528/full/360,/0/default.jpg	block	258	clear	M. de Luxembourg au Roy, "22 septembre 1586", Rome (other sender)
+f16045	530	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f530/full/360,/0/default.jpg	block	259	blank	
+f16045	532	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f532/full/360,/0/default.jpg	block	260	clear	Le Marq. de Pisany au Roy, "6 octobre 1586", single page, signed
+f16045	534	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f534/full/360,/0/default.jpg	block	261	blank	
+f16045	536	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f536/full/360,/0/default.jpg	block	262	clear	Le Marq. de Pisany au Roy, "7 octobre 1586" (start)
+f16045	538	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f538/full/360,/0/default.jpg	block	263	clear	end, signed "7 octobre 1586"
+f16045	540	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f540/full/360,/0/default.jpg	block	264	clear	Le Roy au Marq. de Pisany, "4? oct 1586" draft (incoming)
+f16045	542	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f542/full/360,/0/default.jpg	block	265	clear	draft cont.
+f16045	544	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f544/full/360,/0/default.jpg	block	266	clear	draft cont.
+f16045	546	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f546/full/360,/0/default.jpg	block	267	clear	Roy draft cont. (incoming)
+f16045	548	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f548/full/360,/0/default.jpg	block	268	clear	draft cont.
+f16045	550	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f550/full/360,/0/default.jpg	block	269	clear	draft cont.
+f16045	552	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f552/full/360,/0/default.jpg	block	270	clear	draft end
+f16045	554	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f554/full/360,/0/default.jpg	block	271	blank	
+f16045	556	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f556/full/360,/0/default.jpg	block	272	clear	Le Marq. de Pisany au Roy, "4 novembre 1586", Rome (start)
+f16045	558	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f558/full/360,/0/default.jpg	block	273	clear	cont.
+f16045	560	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f560/full/360,/0/default.jpg	block	274	clear	cont.
+f16045	562	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f562/full/360,/0/default.jpg	block	275	mixed	CIPHER about 14 lines lower half (f.275r, read: kp86e)
+f16045	564	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f564/full/360,/0/default.jpg	block	276	mixed	CIPHER about 6 lines top + about 12 lower (about 18)
+f16045	566	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f566/full/360,/0/default.jpg	block	277	cipher	CIPHER nearly full page, about 26 lines with a few clear lines
+f16045	568	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f568/full/360,/0/default.jpg	block	278	cipher	CIPHER nearly full page, about 25 lines
+f16045	570	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f570/full/360,/0/default.jpg	block	279	mixed	CIPHER about 6-7 lines at top (f.279r), rest clear
+f16045	572	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f572/full/360,/0/default.jpg	block	280	clear	end, signed "Rome 4 Novembre 1586"
+f16045	574	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f574/full/360,/0/default.jpg	block	281	blank	
+f16045	576	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f576/full/360,/0/default.jpg	block	282	clear	Le Marq. de Pisany a M. de Villeroy, "5? novembre 1586" (autograph)
+f16045	578	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f578/full/360,/0/default.jpg	block	283	clear	end, signed "... novembre 1586"
+f16045	580	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f580/full/360,/0/default.jpg	block	284	clear	Pisany a M. de Villeroy, "18 novembre 1586" (autograph, margin note)
+f16045	582	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f582/full/360,/0/default.jpg	block	285	clear	end, signed "18 Novembre 1586"
+f16045	584	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f584/full/360,/0/default.jpg	block	286	clear	Pisany a M. de Villeroy, "18 novembre 1586", single page signed
+f16045	586	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f586/full/360,/0/default.jpg	block	287	blank	
+f16045	588	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f588/full/360,/0/default.jpg	block	288	clear	Le Marq. de Pisany au Roy, "10 mars 1587", Rome (start)
+f16045	590	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f590/full/360,/0/default.jpg	block	289	clear	cont.
+f16045	592	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f592/full/360,/0/default.jpg	block	290	clear	cont.
+f16045	594	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f594/full/360,/0/default.jpg	block	291	clear	cont.
+f16045	596	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f596/full/360,/0/default.jpg	block	292	clear	cont.
+f16045	598	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f598/full/360,/0/default.jpg	block	293	clear	cont.
+f16045	600	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f600/full/360,/0/default.jpg	block	294	clear	cont.
+f16045	602	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f602/full/360,/0/default.jpg	block	295	clear	end, signed "Rome 10? Mars 1587", marginal postscript
+f16045	604	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f604/full/360,/0/default.jpg	block	296	blank	
+f16045	606	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f606/full/360,/0/default.jpg	block	297	clear	Le Sr de St Goard Amb. a Rome au Roy, "24 mars 1587" (start)
+f16045	608	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f608/full/360,/0/default.jpg	block	298	clear	
+f16045	610	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f610/full/360,/0/default.jpg	block	299	clear	
+f16045	612	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f612/full/360,/0/default.jpg	block	300	clear	
+f16045	614	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f614/full/360,/0/default.jpg	block	301	clear	f.301r clear (cipher on f.301v c615, read: kp87a)
+f16045	616	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f616/full/360,/0/default.jpg	block	302	clear	f.302r clear (cipher on f.302v c617, PIS1-302)
+f16045	618	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f618/full/360,/0/default.jpg	block	303	clear	end, signed "24 Mars 1587"
+f16045	620	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f620/full/360,/0/default.jpg	block	304	blank	
+f16045	622	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f622/full/360,/0/default.jpg	block	305	clear	Le Sr de St Goard Amb. a Rome a la Reine, "24 mars 1587"
+f16045	624	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f624/full/360,/0/default.jpg	block	306	blank	
+f16045	626	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f626/full/360,/0/default.jpg	block	307	clear	Le Marq. de Pisany au Roy, "7 avril 1587", Rome (start)
+f16045	628	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f628/full/360,/0/default.jpg	block	308	clear	cont.
+f16045	630	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f630/full/360,/0/default.jpg	block	309	clear	cont.
+f16045	632	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f632/full/360,/0/default.jpg	block	310	clear	cont.
+f16045	634	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f634/full/360,/0/default.jpg	block	311	clear	cont.
+f16045	636	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f636/full/360,/0/default.jpg	block	312	clear	cont.
+f16045	638	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f638/full/360,/0/default.jpg	block	313	clear	cont.
+f16045	640	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f640/full/360,/0/default.jpg	block	314	clear	end, signed "7 Avril 1587"
+f16045	642	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f642/full/360,/0/default.jpg	block	315	clear	Le Marq. de Pisany a la Reine, "7 avril 1587"
+f16045	644	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f644/full/360,/0/default.jpg	block	316	clear	Le Marq. de Pisany a M. de Villeroy, "27 juillet 1587" (autograph)
+f16045	646	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f646/full/360,/0/default.jpg	block	317	clear	end, signed "27 juillet 1587"
+f16045	648	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f648/full/360,/0/default.jpg	block	318?	blank	
+f16045	650	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f650/full/360,/0/default.jpg	block	318	clear	Le Cardinal [?] au Roy, "7 [?] 1587", Rome (other sender)
+f16045	652	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f652/full/360,/0/default.jpg	block	319	blank	
+f16045	654	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f654/full/360,/0/default.jpg	block	320	clear	Le Cardinal de [?] au Roy 1587, faint (other sender)
+f16045	656	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f656/full/360,/0/default.jpg	block	321	clear	faint/blank, a few lines at foot
+f16045	658	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f658/full/360,/0/default.jpg	block	322	clear	Minute de lettre du Roy ... a M. de ... (other)
+f16045	660	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f660/full/360,/0/default.jpg	block	323	blank	
+f16045	662	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f662/full/360,/0/default.jpg	block	-	blank	end of volume
+f16046	1	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f1/full/360,/0/default.jpg	block			
+f16046	4	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f4/full/360,/0/default.jpg	block			
+f16046	7	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f7/full/360,/0/default.jpg	block			
+f16046	10	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f10/full/360,/0/default.jpg	block			
+f16046	13	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f13/full/360,/0/default.jpg	block			
+f16046	16	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f16/full/360,/0/default.jpg	block			
+f16046	19	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f19/full/360,/0/default.jpg	block			
+f16046	22	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f22/full/360,/0/default.jpg	block			
+f16046	25	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f25/full/360,/0/default.jpg	block			
+f16046	28	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f28/full/360,/0/default.jpg	block			
+f16046	31	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f31/full/360,/0/default.jpg	block			
+f16046	34	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f34/full/360,/0/default.jpg	block			
+f16046	37	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f37/full/360,/0/default.jpg	block			
+f16046	40	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f40/full/360,/0/default.jpg	block			
+f16046	43	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b90609054/f43/full/360,/0/default.jpg	block			
+f16045	505	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f505/full/360,/0/default.jpg	block	246v	cipher	CIPHER full page about 24 lines (fill)
+f16045	507	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f507/full/360,/0/default.jpg	block	247v	blank	address/endorsement (fill)
+f16045	471	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f471/full/360,/0/default.jpg	block	229v	mixed	CIPHER about 2-3 lines (fill)
+f16045	473	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f473/full/360,/0/default.jpg	block	230v	mixed	CIPHER about 4-5 lines mid (fill)
+f16045	475	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f475/full/360,/0/default.jpg	block	231v	mixed	CIPHER about 14 lines, left-margin glosses (fill)
+f16045	477	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f477/full/360,/0/default.jpg	block	232v	clear	(fill)
+f16045	508	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f508/full/900,/0/default.jpg	view 900px	248	clear?	faint page headed "17 septembre 1586 ..." -- possibly a decipherment/extract; check at higher res
+f16045	469	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f469/full/360,/0/default.jpg	fill	228v	mixed	CIPHER about 15 lines with left-margin glosses (fill)
+f16045	479	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f479/full/360,/0/default.jpg	fill	233v	mixed	CIPHER about 10 lines lower half, margin notes (fill)
+f16045	481	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f481/full/360,/0/default.jpg	fill	234v	blank	address leaf (fill)
+f16045	499	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f499/full/360,/0/default.jpg	fill	243v	clear	(fill)
+f16045	509	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f509/full/360,/0/default.jpg	fill	248v	clear	faint clear text about 15 lines: continuation of the "dechiffre de la precedente" (fill)
+f16045	571	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f571/full/360,/0/default.jpg	fill	279v	clear	(fill)
+f16045	463	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f463/full/360,/0/default.jpg	fill	225v	clear	(fill)
+f16045	465	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f465/full/360,/0/default.jpg	fill	226v	clear	(fill)
+f16045	467	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f467/full/360,/0/default.jpg	fill	227v	blank	address (fill)
+f16045	513	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f513/full/360,/0/default.jpg	fill	250v	clear	end of a Luxembourg letter, signed "Francois de Luxembourg", Sept 1586 -> f.250 is Luxembourg's, not Pisany's (fill)
+f16045	521	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f521/full/360,/0/default.jpg	fill	254v	clear	(fill)
+f16045	523	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f523/full/360,/0/default.jpg	fill	255v	clear	(fill)
+f16045	533	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f533/full/360,/0/default.jpg	fill	260v	blank	(fill)
+f16045	537	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f537/full/360,/0/default.jpg	fill	262v	clear	(fill)
+f16045	573	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f573/full/360,/0/default.jpg	fill	280v	blank	address (fill)
+f16045	589	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f589/full/360,/0/default.jpg	fill	288v	clear	(fill)
+f16045	591	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f591/full/360,/0/default.jpg	fill	289v	clear	(fill)
+f16045	593	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f593/full/360,/0/default.jpg	fill	290v	clear	(fill)
+f16045	595	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f595/full/360,/0/default.jpg	fill	291v	clear	(fill)
+f16045	597	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f597/full/360,/0/default.jpg	fill	292v	clear	(fill)
+f16045	599	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f599/full/360,/0/default.jpg	fill	293v	clear	(fill)
+f16045	601	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f601/full/360,/0/default.jpg	fill	294v	clear	(fill)
+f16045	603	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f603/full/360,/0/default.jpg	fill	295v	blank	(fill)
+f16045	627	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f627/full/360,/0/default.jpg	fill	307v	clear	(fill)
+f16045	629	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f629/full/360,/0/default.jpg	fill	308v	clear	(fill)
+f16045	631	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f631/full/360,/0/default.jpg	fill	309v	clear	(fill)
+f16045	633	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f633/full/360,/0/default.jpg	fill	310v	clear	(fill)
+f16045	635	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f635/full/360,/0/default.jpg	fill	311v	clear	(fill)
+f16045	637	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f637/full/360,/0/default.jpg	fill	312v	clear	(fill)
+f16045	639	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f639/full/360,/0/default.jpg	fill	313v	clear	(fill)
+f16045	641	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f641/full/360,/0/default.jpg	fill	314v	blank	address (fill)
+f16045	359	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f359/full/360,/0/default.jpg	fill	175v	clear	(fill)
+f16045	361	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f361/full/360,/0/default.jpg	fill	176v	clear	(fill)
+f16045	363	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f363/full/360,/0/default.jpg	fill	177v	clear	(fill)
+f16045	365	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f365/full/360,/0/default.jpg	fill	178v	clear	(fill)
+f16045	367	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f367/full/360,/0/default.jpg	fill	179v	clear	(fill)
+f16045	369	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f369/full/360,/0/default.jpg	fill	180v	clear	(fill)
+f16045	371	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f371/full/360,/0/default.jpg	fill	181v	clear	(fill)
+f16045	373	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f373/full/360,/0/default.jpg	fill	182v	clear	(fill)
+f16045	387	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f387/full/360,/0/default.jpg	fill	189v	clear	(fill)
+f16045	389	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f389/full/360,/0/default.jpg	fill	190v	clear	(fill)
+f16045	391	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f391/full/360,/0/default.jpg	fill	191v	clear	(fill)
+f16045	393	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f393/full/360,/0/default.jpg	fill	192v	clear	(fill)
+f16045	395	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f395/full/360,/0/default.jpg	fill	193v	clear	(fill)
+f16045	397	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f397/full/360,/0/default.jpg	fill	194v	clear	(fill)
+f16045	399	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f399/full/360,/0/default.jpg	fill	195v	clear	(fill)
+f16045	401	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f401/full/360,/0/default.jpg	fill	196v	clear	(fill)
+f16045	429	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f429/full/360,/0/default.jpg	fill	210v	clear	(fill; c428-c431 vs c434-c437 duplicate run)
+f16045	431	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f431/full/360,/0/default.jpg	fill	211v?	clear	(fill), date line at foot
+colbert	444	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f444/full/1000,/0/default.jpg	colbert heading read			
+colbert	445	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f445/full/1000,/0/default.jpg	colbert heading read			
+colbert	452	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f452/full/1000,/0/default.jpg	colbert heading read			
+colbert	456	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f456/full/1000,/0/default.jpg	colbert heading read			
+colbert	460	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f460/full/1000,/0/default.jpg	colbert heading read			
+colbert	464	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f464/full/1000,/0/default.jpg	colbert heading read			
+colbert	482	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f482/full/1000,/0/default.jpg	colbert heading read			
+colbert	484	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f484/full/1000,/0/default.jpg	colbert heading read			
+colbert	568	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f568/full/1000,/0/default.jpg	colbert heading read			
+colbert	572	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f572/full/1000,/0/default.jpg	colbert heading read			
+colbert	576	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f576/full/1000,/0/default.jpg	colbert heading read			
+colbert	591	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f591/full/1000,/0/default.jpg	colbert heading read			
+colbert	594	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f594/full/1000,/0/default.jpg	colbert heading read			
+colbert	597	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f597/full/1000,/0/default.jpg	colbert heading read			
+colbert	488	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f488/full/1000,/0/default.jpg	colbert heading read			
+colbert	490	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f490/full/1000,/0/default.jpg	colbert heading read			
+colbert	600	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f600/full/1000,/0/default.jpg	colbert heading read			
+colbert	603	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f603/full/1000,/0/default.jpg	colbert heading read			
+colbert	606	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f606/full/1000,/0/default.jpg	colbert heading read			
+f16045	626	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f626/pct:0,0,100,14/1400,/0/default.jpg	date-crop	307	clear	Le Marq. de Pisany au Roy, "7 avril 1587", Rome (start)
+f16045	640	200	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f640/pct:0,70,100,30/1400,/0/default.jpg	date-crop	314	clear	end, signed "7 Avril 1587"
