@@ -1,0 +1,6 @@
+utc	control	seed	value	note
+2026-10-03 23:59	target	-	0.5941	block 220 signs, gloss 170 letters
+2026-10-03 23:59	b_windows	1	p95=0.3353	n=200 mean=0.2350 max=0.3824 corpus letters 3625970
+2026-10-03 23:59	a_shuffled_anneal	1	0.2824	anneal score -2539.2, 41s
+2026-10-03 23:59	a_shuffled_anneal	2	0.2765	anneal score -2546.6, 41s
+2026-10-04 00:00	a_shuffled_anneal	3	0.2471	anneal score -2500.2, 39s
