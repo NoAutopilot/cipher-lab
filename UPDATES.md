@@ -286,3 +286,8 @@ a non-statistical external check and a rule-7 re-derivation. Gate: `tools/depth_
 results from 4 Oct on must carry a depth; 23 legacy counted results listed ungraded until the re-grade job DEPTH-REGRADE lands).
 Evidence: research/DECIPHERMENT-STANDARDS-2026-10-04.md (DECODE statuses, Copiale/Z340/Lasry acceptance, Shannon/Shapiro
 authentication distance, TEI). Trigger: LANE-A3V found three N3-N4 classes with no text behind them (Birago f.47r, f.144r, f.168).
+
+- 4 Oct 2026 11:1x UTC -- RETRO-2026-10-04-acct1 P1 (tool part, RUN4-RAPPLY): `tools/next_steps.py` reads a prose "## While waiting" paragraph (also one sharing the heading's block) when no bullet exists, skipping a paragraph that opens "[done"; three offline tests. `--wait-only` 47 -> 35. The 34-folder backfill is a separate job, not applied here.
+- 4 Oct 2026 11:1x UTC -- RETRO-2026-10-04-acct1 P2 (RUN4-RAPPLY): `tools/brief_price_check.py` floor_check prints "FLOOR <job> <model> cap <c> < <floor>" (Fable 5, Opus 2.5) and exits 1; offline test (A3V2-THUR275 fails, RUN4-PIS1/Sonnet/no-cap pass); README "Fable floor" names the FLOOR line; SYSTEM.md row updated.
+- 4 Oct 2026 11:1x UTC -- RETRO-2026-10-04-acct1 P3 (RUN4-RAPPLY): `.claude/briefs/parent.md` "Keep slots full": send_later re-armed at 10 min while S-band workers are live (or the earliest expected finish), 15 min otherwise. hub-seed/ not touched (account 4's).
+- 4 Oct 2026 11:1x UTC -- RETRO-2026-10-04-acct1 P5 (RUN4-RAPPLY): `.claude/briefs/README.md` common tail gains "Scratchpad hand-off": trial crops to the scratchpad, never under ciphers/; anything the next step needs that cannot be committed goes into Remaining gaps with the command that re-creates it. P4 (account-4 CLOSERs) not applied: for the account-4 parent / owner.

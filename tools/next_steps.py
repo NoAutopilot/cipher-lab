@@ -254,7 +254,7 @@ def extract_while_waiting(text):
 
     Job WAIT-CHECK (27 Sept 2026): a blocked target's next step often depends on an archive or a
     person, but the folder can still name a parallel action that depends on nobody -- written as
-    its own '## While waiting' NOTES.md section, one bullet per action. "Newest" follows the same
+    its own '## While waiting' NOTES.md section, one bullet or one paragraph per action. "Newest" follows the same
     convention as `extract_next_step()`: a heading carrying a dated section timestamp wins over an
     undated one; among undated sections (or when none carry a date), the last one in file order
     wins, since a NOTES.md is appended to over time.
@@ -276,6 +276,16 @@ def extract_while_waiting(text):
             m = BULLET_RE.match(line.strip())
             if m:
                 return m.group(1).strip()
+    # No bullet: take the section's first prose paragraph (which may share the heading's block when
+    # no blank line follows the heading), unless it is marked done. RETRO-2026-10-04-acct1 P1: 13 of
+    # 47 wait-only rows had a prose section the bullet-only reader could not see.
+    tail = blocks[section_idx].strip().splitlines()[1:]
+    for block in (["\n".join(tail)] if tail else []) + blocks[section_idx + 1:]:
+        if _is_heading(block):
+            break
+        flat = " ".join(block.split())
+        if flat and not flat.lower().startswith("[done"):
+            return flat
     return ""
 
 

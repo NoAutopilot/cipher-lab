@@ -52,6 +52,25 @@ def main():
         if rc != want:
             print(f"FAIL: {name}: want rc={want}, got rc={rc} ({why})")
             fails += 1
+    # Floor check (RETRO-2026-10-04-acct1 P2).
+    floor_cases = [
+        ("A3V2-THUR275 Fable 1.5 (fail)",
+         "## A3V2-THUR275 -- thurloe-printed: JUNK_LINE running-head fix and key regeneration (Fable; cap USD 1.5; "
+         "box 30 min)\nFix the running head.\n", [("A3V2-THUR275", "Fable", 1.5, 5.0)]),
+        ("RUN4-PIS1 Opus 7 (pass)",
+         "## RUN4-PIS1 -- fr16045-pisany-rome-1585: kp86 (Opus 5.5; cap USD 7; box 120 min)\nRead.\n", []),
+        ("Sonnet cap 1 (pass)",
+         "## SW-X -- sweep (Sonnet; cap USD 1; box 20 min)\nSweep.\n", []),
+        ("no cap (pass)",
+         "## NC-X -- a job with Opus named but no cap figure\nDo it.\n", []),
+        ("Opus 2 in body (fail)",
+         "## OB-X -- a short job\nOpus 5.5, cap $2, box 20 min.\n", [("OB-X", "Opus", 2.0, 2.5)]),
+    ]
+    for name, text, want in floor_cases:
+        got = b.floor_check(text)
+        if got != want:
+            print(f"FAIL: floor {name}: want {want}, got {got}")
+            fails += 1
     out = subprocess.run([sys.executable, os.path.join(ROOT, "tools/brief_price_check.py"), "--summary", F36],
                          capture_output=True, text=True)
     if out.returncode != 1 or "summary: 1 briefs" not in out.stdout:

@@ -7,6 +7,9 @@ gloss read, transcribe / transcription pass, iiif_lines, vision call) but has no
     vision calls: <N> x USD <r> [+ <k> reconciliation] = <X>
 and, when one exists, X greater than the brief's "Cap USD <c>" / "Cap $<c>" (exit 1 either way). Also catches a
 line whose own arithmetic is wrong ((N + k) x r differs from X by more than 1 cent).
+Floor check (RETRO-2026-10-04-acct1 P2, see floor_check()): per '## JOB' section, a named Fable or Opus model whose
+cap is under its floor (Fable 5, Opus 2.5) prints "FLOOR <job> <model> cap <c> < <floor>" and exits 1. Must NOT
+block: no model or no cap in the section, a Sonnet job at any cap, a cap at or above the floor.
 Must NOT block: a brief with no image step (a gate-fix, a print check, a family_run on disk data, a brief that
 only reads an existing transcription file), or a brief that says "no images" / "disk only" with no blind-pass or
 transcribe verb (tests cover both, plus F36-GLOSS's own text as the failing case). A worker's report wording
@@ -31,6 +34,27 @@ NOIMG = re.compile(r'\bno images?\b|\bdisk only\b', re.I)
 NOIMG_OVERRIDE = re.compile(r'blind (?:pass|read)|\btranscribe[sd]?\b|transcription pass', re.I)
 OPUS_UNMEASURED = re.compile(r'Opus rate unmeasured', re.I)
 CAP = re.compile(r'\bCap (?:USD ?|\$)?([\d.]+)', re.I)
+
+# Model-cap floors (RETRO-2026-10-04-acct1 P2). Fable: README "Fable floor" (2 Oct). Opus: window p10/p25/median cost
+# 1.49/1.83/2.56 over 578 non-CLOSER rows; 13 of the 17 jobs briefed below these floors on 4 Oct ran over cap.
+FLOORS = {'fable': 5.0, 'opus': 2.5}
+SECTION = re.compile(r'^#{2,3} +(\S+).*$', re.M)
+MODEL = re.compile(r'\b(Fable|Opus|Sonnet)\b', re.I)
+SCAP = re.compile(r'\bcap (?:USD ?|\$)?([\d.]+)', re.I)
+
+
+def floor_check(text, floors=FLOORS):
+    """Per '## JOB -- ...' heading (or its first 200 body characters): a named model whose cap is under its floor.
+    Catches A3V2-THUR275 '(Fable; cap USD 1.5; ...)'. Must NOT block: a heading with no model or no cap, a Sonnet
+    job at any cap, a Fable job at 5 or more."""
+    out = []
+    for m in SECTION.finditer(text):
+        head, body = m.group(0), text[m.end():m.end() + 400].split('\n## ')[0]
+        mm = MODEL.search(head) or MODEL.search(body[:200])
+        cm = SCAP.search(head) or SCAP.search(body[:200])
+        if mm and cm and mm.group(1).lower() in floors and float(cm.group(1).rstrip('.')) < floors[mm.group(1).lower()]:
+            out.append((m.group(1), mm.group(1), float(cm.group(1).rstrip('.')), floors[mm.group(1).lower()]))
+    return out
 
 
 def check(text):
@@ -60,10 +84,14 @@ def main(argv):
     worst, counts = 0, {'ok': 0, 'fail': 0, 'no-image': 0}
     for p in paths:
         with open(p, encoding='utf-8') as f:
-            rc, why, kind = check(f.read())
+            text = f.read()
+        rc, why, kind = check(text)
         worst = max(worst, rc)
         counts[kind] += 1
         print(f'{p}: {"FAIL" if rc else "ok"} -- {why}')
+        for job, model, c, fl in floor_check(text):
+            print(f'FLOOR {job} {model} cap {c:g} < {fl:g}')
+            worst = 1
     if summary:
         print(f'summary: {len(paths)} briefs, {counts["ok"]} ok (image step priced), '
               f'{counts["no-image"]} ok (no image step), {counts["fail"]} FAIL')

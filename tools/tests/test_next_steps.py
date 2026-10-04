@@ -309,6 +309,50 @@ def test_parallel_column_filled_from_while_waiting_section(tmp_path):
     assert [r["folder"] for r in missing] == ["third-target"]
 
 
+PROSE_WAITING_HEAD = """t
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+## While waiting, 3 Oct 2026
+
+Run the homophonic family control at the target's N while the image request stands.
+"""
+
+PROSE_WAITING_SAME_BLOCK = """t
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+## While waiting
+Score the sibling letter with the judge; it needs no one.
+"""
+
+PROSE_WAITING_DONE = """t
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+## While waiting
+
+[done 3 Oct 2026, X] the sibling was scored; nothing else depends on nobody.
+"""
+
+
+def test_while_waiting_prose_paragraph_after_blank_line():
+    """RETRO-2026-10-04-acct1 P1: a prose section (no bullet) fills `parallel`."""
+    step = ns.extract_while_waiting(PROSE_WAITING_HEAD)
+    assert step == "Run the homophonic family control at the target's N while the image request stands."
+
+
+def test_while_waiting_prose_in_heading_block():
+    """RETRO-2026-10-04-acct1 P1: prose with no blank line after the heading is still read."""
+    step = ns.extract_while_waiting(PROSE_WAITING_SAME_BLOCK)
+    assert step == "Score the sibling letter with the judge; it needs no one."
+
+
+def test_while_waiting_done_paragraph_leaves_row_wait_only():
+    """RETRO-2026-10-04-acct1 P1: a section whose only paragraph opens '[done' gives "" (stays wait-only)."""
+    assert ns.extract_while_waiting(PROSE_WAITING_DONE) == ""
+
+
 def test_while_waiting_prefers_newest_dated_section():
     step = ns.extract_while_waiting(BLOCKED_TWO_WAITING_SECTIONS_NOTES)
     assert "judge on the sibling" in step
