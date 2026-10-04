@@ -7953,3 +7953,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 04:57 | A3V2-C1161A1 (account 3 verifier, for LANE-A3V2) | claim: clair1161-avis-flandre-1688 A3V2-C1161A1 verifier audit 1 (N-class + depth, AUDIT.md); box ends 06:11 UTC
 2026-10-04 04:57 | A3V2-THUR275 (account 3 worker, for LANE-A3V2) | claim: thurloe-printed A3V2-THUR275 (JUNK_LINE running-head fix, key_stamford regeneration); box ends 05:27 UTC
 2026-10-04 04:57 | A3V2-MERCY15 (account 3 worker, for LANE-A3V2) | claim: espagnol142-mercy-1648 A3V2-MERCY15 code 15 n -> z at M (both occurrences), decode --check, AUDIT/SO propagation; box ends 05:27 UTC
+2026-10-04 04:58 | A3V2-SANG (account 3 worker, for LANE-A3V2) | claim: sanguszkow-mniszech-dunin-1714 A3V2-SANG DECODE R7524 full-size re-test, one login; box ends 05:23 UTC
