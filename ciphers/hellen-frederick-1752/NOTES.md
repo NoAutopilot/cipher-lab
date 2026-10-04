@@ -232,6 +232,9 @@ that the 1752 letter is filed elsewhere in this same box.
 [Verifier NEAR3-VHEL, 4 Oct 2026: this explanation is contradicted by De Leeuw 2000 ch. 8 n.32. English-deciphered
 copies of Hellen's letters from 30 Oct to 28 Dec 1751 are in NA Fagel inv. 5177, and that volume has no Hellen letter
 between 28 Dec 1751 and 8 Sept 1752. See AUDIT.md section 3d. The finding that inv. 5206 starts on 24 Oct 1752 stands.]
+[Verifier A3V-VHEL2, 4 Oct 2026: the register's own 1752 numbering is already at No 71 on 5 Sept 1752 (5177 scan 108), so
+some 33-70 numbered intercepts of Jan-Aug 1752 are in neither 5177 nor 5206 (no other Fagel volume covers 1752; finding aid
+read in full). The King's file of Hellen's 1752 reports is GStA PK I. HA Rep. 96 Nr. 38 G-H, not digitised. AUDIT.md, AUDIT 2.]
 
 **Not further pursued, out of this brief's scope:** whether the *same* cipher system is used across inv. 5206's
 run (Oct 1752-Jul 1753+) as in R1953 (4 Jan 1752) -- if so, one of these deciphered letters could still key the
