@@ -1,0 +1,29 @@
+{
+ "positions": 169,
+ "answered": 169,
+ "missing": [],
+ "classes": {
+  "OTHER/H": 1,
+  "OTHER/L": 10,
+  "OTHER/M": 31,
+  "SIGMA/H": 4,
+  "SIGMA/M": 5,
+  "UNSURE/L": 16,
+  "ZED/H": 13,
+  "ZED/L": 31,
+  "ZED/M": 58
+ },
+ "after_to": 18,
+ "after_to_sigma_HM": 3,
+ "other": 151,
+ "other_sigma_HM": 6,
+ "sigma_HM_by_label": {
+  "R|to": 1,
+  "x|other": 1,
+  "x|to": 1,
+  "z|other": 5,
+  "z|to": 1
+ },
+ "check": "NON-TEST",
+ "relabelled": 0
+}
