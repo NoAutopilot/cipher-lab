@@ -101,7 +101,7 @@ say. Confidence in N3: high for "not in the editions read"; medium overall, beca
 unknown and Lauer is unread.
 
 - **Safe sentence:** "A key recovered by cryptanalysis (ours) decodes the six 'Advis de flandres' cipher leaves in BnF
-  Clairambault 1161 (c. 1570, Noailles bundle; 3,389 signs) at grades C/S on about 61% of the signs, in fragments rather
+  Clairambault 1161 (c. 1570, Noailles bundle; 3,389 signs) at grades C/S on about 67% of the signs [61% before the 4 Oct 2026 sign-7 regrade; section 4 addendum], in fragments rather
   than running text; the leaf's own contemporary marginal gloss is a period decipherment of one 220-sign block and
   agrees with the recovered key on 0.59 of its letters against a shuffled-order maximum of 0.31; no prior plaintext or
   decipherment was located after the search logged in AUDIT.md (N3)."
@@ -136,6 +136,20 @@ row and, at D1, is not counted). Outward wording: "fragments read", never "parti
 
 **Unique solve (N3+ and D2+): no.** No SECOND-OPINIONS-QUEUE.tsv row is added (the N3 is real, the D2 is not).
 
+**Addendum, 4 Oct 2026 10:4x UTC (RUN4-C1161AU, LANE-RUN4, verifier hat; rule 10 propagation clause).** RUN3-C1161MS
+(commit 4eb718e8) moved key sign `7` (= i, 211 tokens) from M to S on a 10-seed consensus PASS (0.334 vs shuffled max 0.122); no
+letter value changed. key.tsv is now C 6 / S 16 / M 27 signs (was S 15 / M 28), so key coverage reads 22 of 49 at C/S, 27 M.
+Token counts from the committed `reading_tokens.tsv` (re-counted by this verifier, no decoding): H / C / S = 0 / 353 / 1,908 =
+**2,261 of 3,375 = 67.0%** at C or better; M 1,114 (33.0%). Longest contiguous C/S run (same method as the table: broken at line
+ends) is now **16** tokens (c188L L10 "eiiruiereiceroia"), then 14 (c187R L11 "icyeelaiiruier"), 13, 12; 15 runs >= 10, 1 >= 15;
+median 2. The longer runs come from the newly S `i` filling gaps in i-heavy stretches and do not read as French; none approaches
+the authentication distance. External check (gloss 0.594) and judge (FAIL -1.233) are unchanged because the letters are unchanged.
+**Depth stays D1 ("fragments read")**: rule 4a's D2 test (a clause above the authentication distance plus a true content sentence)
+is no nearer; nothing here raises it. `tools/depth_check.py` (status.json gate) exit 0, no row flagged for this target. status.json
+still carries `depth_pct 60.7` and the old `depth_check` run figure: handed to the account that owns status.json (this worker's
+brief bars it), new values `depth_pct 67.0`, `depth_check "period-gloss letter agreement 0.594 on one 220-sign block; judge FAIL;
+longest C/S run 16 (non-French)"`. No SECOND-OPINIONS-QUEUE.tsv row for clair1161 (grep, 10:4x UTC): nothing to propagate or file.
+
 ## 5. Rule 7 (re-derivation by N4-RD1161, LANE-NEAR4)
 
 `RD7-2026-10-04.md` (N4-RD1161, account 2, 04:53-05:08 UTC, commits 9f8c28be / 755d6b79; read by this verifier at 05:12 UTC
@@ -145,6 +159,11 @@ against 1325 M allowed), and re-ran instrument 2's eight anneals (8/8 key files 
 max 0.351 reproduced). Its scope note holds for this audit too: the re-derivation checks the pipeline from transcription to
 reading, not the transcription against the images, and not whether instrument 2's recipe is the right one. The classes above
 are therefore **not provisional**; depth D1 does not depend on it.
+
+**Addendum, 4 Oct 2026 10:4x UTC (RUN4-C1161AU).** After the sign-7 regrade, RUN3-C1161R7B (fresh session, account 1, started
+09:42 UTC; `RD7-2026-10-04-run3b.md`, copies in `rederive/run3b_reading*`) re-derived the regraded reading: `tokens 3408: C 353,
+M 1114, S 1908, U 33`, byte-identical to the committed reading.txt / reading_tokens.tsv, `--check` exit 0, **SAME**; against run 3
+exactly the 211 sign-7 tokens differ, grade M -> S only. Rule 7 holds for the current reading; the classes stay not provisional.
 
 ## 6. Postmortem and corrections
 

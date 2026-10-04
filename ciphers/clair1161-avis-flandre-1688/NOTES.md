@@ -1519,3 +1519,9 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further seed sweep of the same anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: gloss-and-judge value test of the contrary consensus letters, ~$3
+
+## RUN4-C1161AU (4 Oct 2026, verifier hat)
+AUDIT.md propagation of the sign-7 regrade (rule 10): sections 4 and 5 carry dated addenda (C/S 67.0%, key 22/49 at C/S, longest
+C/S run 16 and non-French; rule 7 SAME per RD7-2026-10-04-run3b.md); the section 3 safe sentence now reads "about 67%". Depth stays
+D1. status.json `depth_pct` 60.7 -> 67.0 handed to the status.json owner. No SECOND-OPINIONS-QUEUE.tsv row exists for this target.
+The remaining gaps and escalation are unchanged from RUN3-C1161R7B above.
