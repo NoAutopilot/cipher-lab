@@ -41,7 +41,8 @@ The look-alike pass showed that agreement can rise while accuracy does not (LESS
 8. **Measure**: `tools/tx_bench.py` (to build, TX-BENCH) scores any pipeline output against BENCHMARK-TX.tsv and
    prints err_true per sign class; a job's NOTES.md pastes that line.
 
-LLM line reading (two blind passes + `tools/reconcile_passes.py` + `tools/lookalike_pass.py`) stays the fallback for
+LLM line reading (two blind passes + `tools/reconcile_passes.py` + `tools/lookalike_pass.py`, its re-reads cut with `windows`, never the
+echo-prone `packet`/`audit` line-crop prompts: 7/7 copied passC on Vivonne, N7-LKTOOL 4 Oct 2026) stays the fallback for
 pages the segmenter cannot cut (joined hands, digits run together) and for numeral ciphers, and it must still report
 err_true where a benchmark item of the same hand exists.
 

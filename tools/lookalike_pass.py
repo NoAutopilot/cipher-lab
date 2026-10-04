@@ -41,6 +41,24 @@ candidate signs, and fold that re-read in by a fixed 2-of-3 rule. Promoted from 
       the audit is a non-test unless catch >= 0.80 (rule 3; exit 3 when it misses). With --truth (a BENCHMARK-TX truth
       file, line/pos/truth/status), reports flags on agreed-and-wrong vs agreed-and-right unplanted items and the
       paired count fixed / broken if every flag were applied; --out-corrected writes C with those relabels.
+  windows (--tiles T.tsv | --items I.tsv) --passc C.tsv (--manifest M.json [--crop-pattern '*_{line}_s*'] | --crops-glob G)
+          --out DIR [--run NAME] [--status split] [--half 6.5] [--scale 2] [--per 6] [--ink 110] [--ink-min 2] [--desc D.tsv]
+      (N7-LKTOOL, 4 Oct 2026; promoted from ciphers/fr16104-vivonne-spain-1572/tx/viv53L_windows.py and viv54L_windows.py)
+      The re-read instrument that worked when packet's and audit's prompts did not: those show whole line crops plus the
+      passC labels, and drew 7/7 Sonnet re-reads on Vivonne inks 53/54 that copied passC instead of reading shapes (voided,
+      about half of both jobs' spend). Here each tile (--tiles, rows of --status, default 'split') or audit item (--items)
+      gets its own window: the line's segments are stitched on source x (manifest box[0]), the inked span a..b is the first
+      and last column with >= --ink-min pixels darker than --ink, the sign's x is estimated as a + (pos - 0.5)(b - a)/n
+      (n = the line's sign count in passC), and +-HALF sign widths are cut, upscaled, with red ticks at the estimate.
+      Windows go --per to a montage captioned with the tile id ("passage.pos") or "item N"; the prompt gives the 3 labels
+      before and after (to find the sign) and the candidates in ALPHABETICAL order, never the tile's own label. Writes
+      DIR/win/<run>_NN.png, <run>_prompt.md and, for --tiles, <run>_tiles.tsv (the input rows filtered, same columns,
+      for `reconcile --tiles`); for --items the answer rows are keyed by item for `audit-score --items <the audit items>`.
+      Not for: estimating where a sign is on a badly sloped or unevenly spaced line (the x estimate assumes even spacing;
+      the prompt tells the reader it can be off by 1-3 signs) -- re-cut such lines first (iiif_lines.py --follow-slope).
+  ECHO WARNING (packet, audit): their default prompt shows the committed labels; --hide-passc withholds them (packet: no
+  line sequences, candidates alphabetical; audit: [n:?] brackets). A re-read that agrees with passC everywhere is an echo,
+  not a confirmation.
   (The brief named `reconcile --passA --passB`; reader A's and B's aligned labels reach reconcile through the tiles
   file the packet wrote from the agreement alignment, so the raw passes are not re-aligned here.)
 
@@ -52,7 +70,8 @@ two passes split on more than about a tenth of signs because the alphabet is uns
 (CLAUDE.md Usage 6), and this pass would only make three machine readers agree on a wrong sheet. Nor for a single-pass
 transcription (no A/B split to vote on), nor as a source of S grades on its own: its residual is agreement, not truth.
 
-Offline test: python3 tools/tests/test_lookalike_pass.py
+Offline tests: python3 tools/tests/test_lookalike_pass.py; python3 tools/tests/test_lookalike_audit.py;
+python3 tools/tests/test_lookalike_windows.py
 """
 import argparse, collections, csv, json, os, sys
 from pathlib import Path
@@ -92,6 +111,9 @@ def confusion(files, out, targets=()):
     return dict(pairs_read=tot, swaps=sum(cnt.values()), distinct=len(cnt))
 
 
+ECHO_NOTE = '<!-- operator note (N7-LKTOOL, 4 Oct 2026): this prompt shows the committed label sequence and whole line crops; it drew\n7/7 Sonnet re-reads that echoed passC on Vivonne inks 53/54 (voided). Prefer `windows` (per-tile crops, label hidden) or\n--hide-passc, and treat a re-read that agrees with passC everywhere as an echo, not a confirmation. -->\n'
+
+
 PROMPT = """# Look-alike re-read, {run} (value-blind)
 
 You are re-reading {n} sign tiles of a symbol-cipher transcription. Two earlier readers disagreed on some of them, or
@@ -101,21 +123,19 @@ labelled by id. You are never told what any sign means; do not guess letters or 
 Line crops (read these images): {crops}
 Candidate sheet (ids only): {sheet}
 
-For each tile below, find the sign at that passage and position (the passC sequence of the line is given for
-orientation; 'before'/'after' are the neighbouring labels) and pick the candidate id whose shape it is.
+For each tile below, find the sign at that passage and position ({orient}'before'/'after' are the neighbouring
+labels) and pick the candidate id whose shape it is. Labels shown anywhere here are earlier readers' and may be wrong:
+judge the shape in the image, never copy a label.
 Answer one TSV row per tile, header: passage<TAB>pos<TAB>label<TAB>conf<TAB>second<TAB>note
   label  one of the tile's candidates, X_NEW if none fits, or SPLIT:a|b if you cannot choose between two
   conf   H (clear), M (probable), L (guess); second = your runner-up id or empty; note = the shape feature you used.
 
 Tiles (passage, pos, candidates, before | after):
 {tiles}
-
-Line sequences (passC, for orientation only):
-{seqs}
-"""
+{seqs}"""
 
 
-def packet(agreement, conf_path, passc, top, crops, sheet, sheet_map, out, run, cell=110, cols=9):
+def packet(agreement, conf_path, passc, top, crops, sheet, sheet_map, out, run, cell=110, cols=9, hide_passc=False):
     from PIL import Image
     conf = _read(conf_path)
     toplabs = {x for r in conf[:top] for x in (r['label_a'], r['label_b'])}
@@ -165,11 +185,14 @@ def packet(agreement, conf_path, passc, top, crops, sheet, sheet_map, out, run, 
     for p in pc:
         seqs.setdefault(p['passage'], []).append(p['sign_id'])
     crop_list = sorted(str(p.resolve()) for p in Path(crops).glob('*.jpg') if 'debug' not in p.name) if crops else []
+    cfmt = (lambda c: ','.join(sorted(c.split(',')))) if hide_passc else (lambda c: c)
     txt = PROMPT.format(run=run, n=len(tiles), crops=', '.join(crop_list) or '(none given)', sheet=os.path.abspath(cand_png),
-                        tiles='\n'.join(f"{t['passage']}\t{t['pos']}\t{t['candidates']}\t{t['before']} | {t['after']}"
+                        orient='' if hide_passc else 'the passC sequence of the line is given for orientation; ',
+                        tiles='\n'.join(f"{t['passage']}\t{t['pos']}\t{cfmt(t['candidates'])}\t{t['before']} | {t['after']}"
                                         for t in tiles),
-                        seqs='\n'.join(f'{k}: {" ".join(v)}' for k, v in seqs.items()))
-    open(os.path.join(out, f'{run}_prompt.md'), 'w').write(txt)
+                        seqs='' if hide_passc else '\nLine sequences (passC, for orientation only):\n' +
+                        '\n'.join(f'{k}: {" ".join(v)}' for k, v in seqs.items()) + '\n')
+    open(os.path.join(out, f'{run}_prompt.md'), 'w').write(('' if hide_passc else ECHO_NOTE) + txt)
     return dict(signs=len(pc), tiles=len(tiles), split=sum(t['why'] == 'split' for t in tiles), cands=len(ids))
 
 
@@ -271,7 +294,8 @@ AUDIT_PROMPT = """# Proofreading audit, {run} (value-blind)
 
 You are proofreading {n} signs of a symbol-cipher transcription against the manuscript. The reading below is what the
 transcription currently says; some of it may be wrong. For each bracketed position, look at the sign in the line crop
-and pick, from the listed candidate ids, the one whose shape it is -- whether or not it is the label the reading shows.
+and pick, from the listed candidate ids, the one whose shape it is -- whether or not it is the label the reading shows;
+never copy a label from the reading.
 You are never told what any sign means; do not guess letters or words.
 
 Line crops (read these images; s1, s2, s3 are left, middle, right thirds of one line): {crops}
@@ -290,7 +314,7 @@ The reading (bracketed [item:label] = positions to audit):
 
 
 def audit(passa, passb, passc, conf_path, sample, plant, seed, k, include, crops_glob, sheet, sheet_map, out, run,
-          cell=110, cols=9, lines=None):
+          cell=110, cols=9, lines=None, hide_passc=False):
     import random, re
     rng = random.Random(seed)
     A, B, C = _norm(passa), _norm(passb), _norm(passc)
@@ -327,7 +351,7 @@ def audit(passa, passb, passc, conf_path, sample, plant, seed, k, include, crops
     for ln, pos, s in C:
         if (ln, pos) in shown_map:
             n, sh = shown_map[(ln, pos)]
-            seqs.setdefault(ln, []).append(f'[{n}:{sh}]')
+            seqs.setdefault(ln, []).append(f'[{n}:?]' if hide_passc else f'[{n}:{sh}]')
         else:
             seqs.setdefault(ln, []).append(s)
     used_lines = list(dict.fromkeys(it['line'] for it in sorted(items, key=lambda t: (t['line'], t['pos']))))
@@ -358,9 +382,171 @@ def audit(passa, passb, passc, conf_path, sample, plant, seed, k, include, crops
         items='\n'.join(f"{it['item']}\t{it['line']}\t{it['pos']}\t{it['candidates']}\t{ctx[it['item']][0]} | "
                         f"{ctx[it['item']][1]}" for it in sorted(items, key=lambda t: t['item'])),
         seqs='\n'.join(f'{ln}: {" ".join(seqs[ln])}' for ln in used_lines))
-    open(os.path.join(out, f'{run}_audit_prompt.md'), 'w').write(txt)
+    open(os.path.join(out, f'{run}_audit_prompt.md'), 'w').write(('' if hide_passc else ECHO_NOTE) + txt)
     return dict(signs=len(C), agreed=len(pool), items=len(items), forced=len(picked) - min(sample, len(rest)),
                 planted=nplant, lines=len(used_lines), crops=len(crops), cands=len(have))
+
+
+WIN_PROMPT = """# Look-alike re-read by window, {run} (value-blind)
+
+{n} {what}. Each has its own window image: open the montages below IN ORDER ({per} windows each, captioned in blue with the
+{cap}). In each window the red ticks top and bottom mark the ESTIMATED position of the sign (the estimate can be off by 1-3
+signs). Find the sign using the labels of the 3 signs before and after it, then decide which candidate's SHAPE it is.{plant}
+The candidate list is alphabetical; nothing tells you which is "right". You are never told what any sign means; do not guess
+letters or words.
+
+Montages: {pngs}
+
+Answer one TSV row per {unit}, header: {header}
+  label = one candidate id, X_NEW if none fits, SPLIT:a|b if you cannot choose; conf H clear / M probable / L guess (use L
+  whenever you could not find the sign in its window); second = runner-up or empty; note = the shape feature you SAW.
+
+{listhead}
+{rows}
+"""
+
+
+def _line_strips(manifest, crops_glob, pattern):
+    """line id -> callable returning the stitched grey strip. With a manifest (tools/iiif_lines.py manifest.json:
+    'iiif_lines' entries with 'crop' relative to the manifest's folder and 'box' = source x0,y0,x1,y1), a line's
+    segments are those whose file name matches PATTERN.format(line=ID) and are pasted at their source x offset; without
+    one, CROPS_GLOB.format(line=ID) segments are abutted in name order."""
+    import fnmatch, glob as _g
+    from PIL import Image
+    ents = []
+    if manifest:
+        m = json.load(open(manifest)); base = os.path.dirname(os.path.abspath(manifest))
+        ents = [(e['box'][0] if e.get('box') else None, os.path.join(base, e['crop'])) for e in m.get('iiif_lines', m)
+                if 'debug' not in e['crop']]
+
+    def build(ln):
+        if manifest:
+            segs = [(x, f) for x, f in ents if fnmatch.fnmatch(os.path.basename(f), pattern.format(line=ln))]
+            segs = sorted(segs) if all(x is not None for x, _ in segs) else [(None, f) for _, f in sorted(segs, key=lambda t: t[1])]
+        else:
+            segs = [(None, f) for f in sorted(_g.glob(crops_glob.format(line=ln))) if 'debug' not in f]
+        if not segs:
+            sys.exit(f'windows: no crop segments found for line {ln}')
+        ims, off = [], 0
+        x0 = segs[0][0]
+        for x, f in segs:
+            im = Image.open(f).convert('L')
+            ims.append(((x - x0) if x is not None else off, im)); off += im.width
+        S = Image.new('L', (max(o + im.width for o, im in ims), max(im.height for _, im in ims)), 255)
+        for o, im in ims:
+            S.paste(im, (o, 0))
+        return S
+    return build
+
+
+def _ink_extent(S, ink, ink_min):
+    """First and last column of S with at least INK_MIN pixels darker than INK (the inked span of the line)."""
+    W, H = S.size
+    data = S.tobytes()
+    cols = [x for x in range(W) if sum(1 for y in range(H) if data[y * W + x] < ink) >= ink_min]
+    return (cols[0], cols[-1]) if cols else (0, W)
+
+
+def _window(S, a, b, nsigns, pos, half, scale):
+    """Window of +-HALF sign widths around the estimated x of sign POS (1-based) of NSIGNS spread evenly over the inked
+    span a..b, upscaled SCALE x, with red ticks top and bottom at the estimate."""
+    from PIL import ImageDraw
+    sw = (b - a) / max(1, nsigns)
+    x = a + (pos - 0.5) * sw
+    lo, hi = int(max(0, x - half * sw)), int(min(S.width, x + half * sw))
+    w = S.crop((lo, 0, hi, S.height)).convert('RGB')
+    w = w.resize((w.width * scale, w.height * scale))
+    dr = ImageDraw.Draw(w); tx = int((x - lo) * scale)
+    dr.line((tx, 0, tx, 14), fill='red', width=3); dr.line((tx, w.height - 14, tx, w.height), fill='red', width=3)
+    return w
+
+
+def _montages(wins, d, stem, per):
+    from PIL import Image, ImageDraw, ImageFont
+    try:
+        font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 22)
+    except OSError:
+        font = ImageFont.load_default()
+    pngs = []
+    for k in range(0, len(wins), per):
+        grp = wins[k:k + per]
+        M = Image.new('RGB', (max(w.width for _, w in grp), sum(w.height + 34 for _, w in grp)), 'white')
+        dr = ImageDraw.Draw(M); y = 0
+        for tid, w in grp:
+            dr.text((6, y + 4), tid, fill='blue', font=font); M.paste(w, (0, y + 32)); y += w.height + 34
+        p = os.path.join(d, f'{stem}{k // per + 1:02d}.png'); M.save(p); pngs.append(os.path.abspath(p))
+    return pngs
+
+
+def _desc(p):
+    """id -> shape description from a TSV (id<TAB>description) or a JSON object; empty without a file."""
+    if not p:
+        return {}
+    if p.endswith('.json'):
+        return json.load(open(p))
+    return {r[0]: r[1] for r in csv.reader(open(p, newline=''), delimiter='\t') if len(r) >= 2 and not r[0].startswith('#')}
+
+
+def windows(passc, out, tiles=None, items=None, manifest=None, crops_glob='', pattern='*_{line}_s*', run=None,
+            status='split', half=6.5, scale=2, per=6, ink=110, ink_min=2, desc=None):
+    if bool(tiles) == bool(items):
+        sys.exit('windows: give exactly one of --tiles (a packet tiles file) or --items (an audit items file)')
+    if not manifest and not crops_glob:
+        sys.exit('windows: give --manifest (iiif_lines manifest.json) or --crops-glob')
+    C = _norm(passc)
+    nline, seqs = collections.Counter(), collections.defaultdict(list)
+    for ln, pos, s in C:
+        nline[ln] += 1; seqs[ln].append(s)
+    D = _desc(desc)
+    build, strips, wins, rows = _line_strips(manifest, crops_glob, pattern), {}, [], []
+
+    def win(ln, pos):
+        if ln not in nline:
+            sys.exit(f'windows: line {ln} is not in the passC file')
+        if ln not in strips:
+            S = build(ln); strips[ln] = (S,) + _ink_extent(S, ink, ink_min)
+        S, a, b = strips[ln]
+        return _window(S, a, b, nline[ln], pos, half, scale)
+
+    def cands(field):   # alphabetical, so the order never singles out the current reading
+        cs = sorted({x for x in field.split(',') if x})
+        return '; '.join(f"{c} = {D.get(c, c.strip('{}') + ' (free description)')}" if D else c for c in cs)
+    os.makedirs(os.path.join(out, 'win'), exist_ok=True)
+    if tiles:
+        T = _read(tiles)
+        sel = [t for t in T if status == 'all' or t['status'] in status.split(',')]
+        run = run or ((T[0]['run'] + '_win') if T and T[0].get('run') else 'win')
+        tout = os.path.join(out, f'{run}_tiles.tsv')
+        if os.path.abspath(tout) == os.path.abspath(tiles):
+            sys.exit('windows: --run would overwrite the input tiles file; pick another --run')
+        for t in sel:
+            wins.append((f"{t['passage']}.{t['pos']}", win(t['passage'], int(t['pos']))))
+            rows.append(f"{t['passage']}\t{t['pos']}\tbefore: {t['before']} | after: {t['after']}\tcandidates: "
+                        f"{cands(t['candidates'])}")
+        if sel:
+            _write(tout, sel, list(T[0]))
+        what, cap, unit, header = ('tiles', 'tile id passage.pos', 'tile',
+                                   'passage<TAB>pos<TAB>label<TAB>conf<TAB>second<TAB>note')
+        listhead, plant, n = 'Tiles (passage, pos, context, candidates):', '', len(sel)
+    else:
+        I = sorted(_read(items), key=lambda r: int(r['item']))
+        run = run or ((I[0]['run'] + '_audit_win') if I and I[0].get('run') else 'audit_win')
+        shown = {(it['line'], int(it['pos'])): it['shown'] for it in I}
+        for it in I:
+            ln, pos = it['line'], int(it['pos'])
+            wins.append((f"item {it['item']}", win(ln, pos)))
+            seq = [shown.get((ln, i + 1), s) for i, s in enumerate(seqs[ln])]
+            rows.append(f"{it['item']}\tbefore: {' '.join(seq[max(0, pos - 4):pos - 1])} | after: "
+                        f"{' '.join(seq[pos:pos + 3])}\tcandidates: {cands(it['candidates'])}")
+        what, cap, unit, header = ('items', 'item number ("item N")', 'item',
+                                   'item<TAB>label<TAB>conf<TAB>second<TAB>note')
+        listhead, n = 'Items (item, context, candidates):', len(I)
+        plant = ' Some items are deliberately wrong in the reading around them; judge only the shape.'
+    pngs = _montages(wins, os.path.join(out, 'win'), f'{run}_', per) if wins else []
+    txt = WIN_PROMPT.format(run=run, n=n, what=what, per=per, cap=cap, plant=plant, pngs=', '.join(pngs) or '(none)',
+                            unit=unit, header=header, listhead=listhead, rows='\n'.join(rows))
+    open(os.path.join(out, f'{run}_prompt.md'), 'w').write(txt)
+    return dict(mode='tiles' if tiles else 'items', windows=len(wins), montages=len(pngs), lines=len(strips), run=run)
 
 
 def _truthset(p):
@@ -422,18 +608,20 @@ def main(argv=None):
     c = sp.add_parser('confusion', help='label swaps across two-reader alignments')
     c.add_argument('agreement', nargs='+'); c.add_argument('--out', required=True)
     c.add_argument('--target', action='append', default=[], help='leaf folder name counted in n_target (repeatable)')
-    p = sp.add_parser('packet', help='flag tiles, cut the candidate sheet, write the value-blind prompt')
+    p = sp.add_parser('packet', help='flag tiles, cut the candidate sheet, write the value-blind prompt (ECHO-PRONE: prefer windows or --hide-passc)')
     p.add_argument('--agreement', required=True); p.add_argument('--confusion', required=True)
     p.add_argument('--passc', help='default: passC.tsv beside the agreement file')
     p.add_argument('--top', type=int, default=10); p.add_argument('--crops', default='')
     p.add_argument('--sheet', required=True); p.add_argument('--sheet-map', required=True)
     p.add_argument('--out', required=True); p.add_argument('--run')
     p.add_argument('--cell', type=int, default=110); p.add_argument('--cols', type=int, default=9)
+    p.add_argument('--hide-passc', action='store_true', help='drop the passC line sequences and list candidates '
+                   'alphabetically (the default prompt is ECHO-PRONE: 7/7 Sonnet re-reads copied passC, N7-VIV53L/54L)')
     r = sp.add_parser('reconcile', help='fold the re-read in by the fixed 2-of-3 rule')
     r.add_argument('--tiles', required=True); r.add_argument('--passc', required=True)
     r.add_argument('--reread', required=True); r.add_argument('--out', required=True)
     r.add_argument('--alt'); r.add_argument('--focus'); r.add_argument('--run')
-    au = sp.add_parser('audit', help='re-check signs both readers agreed on, with planted known errors (TX-AGREEAUDIT)')
+    au = sp.add_parser('audit', help='re-check signs both readers agreed on, with planted known errors (TX-AGREEAUDIT; ECHO-PRONE: prefer windows --items or --hide-passc)')
     au.add_argument('--passa', required=True); au.add_argument('--passb', required=True)
     au.add_argument('--passc', required=True); au.add_argument('--confusion', required=True)
     au.add_argument('--sample', type=int, required=True); au.add_argument('--plant', type=float, default=0.05)
@@ -444,14 +632,37 @@ def main(argv=None):
     au.add_argument('--out', required=True); au.add_argument('--run', default='audit')
     au.add_argument('--cell', type=int, default=110); au.add_argument('--cols', type=int, default=9)
     au.add_argument('--lines', help='regex on line ids: audit only these lines (one vision call per line group)')
+    au.add_argument('--hide-passc', action='store_true', help='bracket audited positions as [n:?], not [n:label] (the '
+                    'default prompt is ECHO-PRONE, N7-VIV53L/54L; planted catch then tests reading, not disagreeing)')
+    w = sp.add_parser('windows', help='per-tile window montages, label hidden: the re-read instrument that did not echo')
+    w.add_argument('--tiles', help='a packet <run>_tiles.tsv (re-read tiles; writes the filtered <run>_tiles.tsv for reconcile)')
+    w.add_argument('--items', help='an audit <run>_audit_items.tsv (audit windows; score with audit-score as usual)')
+    w.add_argument('--passc', required=True, help='the committed sequence (line/pos/sign or passage/pos/sign_id): sign counts per line')
+    w.add_argument('--manifest', help='tools/iiif_lines.py manifest.json: segments stitched on their source x (box[0])')
+    w.add_argument('--crop-pattern', default='*_{line}_s*', help="file-name glob of a line's segments in the manifest "
+                   "(default '*_{line}_s*'; e.g. '*_f173r_{line}_s*' when line ids omit the page)")
+    w.add_argument('--crops-glob', default='', help="without --manifest: 'DIR/{line}_s?.jpg', segments abutted in name order")
+    w.add_argument('--out', required=True); w.add_argument('--run', help="default: the input's run + '_win' / '_audit_win'")
+    w.add_argument('--status', default='split', help="tiles statuses to window, comma-separated, or 'all' (default split: "
+                   "a one-reader gap has no A/B pair for the 2-of-3 rule)")
+    w.add_argument('--half', type=float, default=6.5, help='window half-width in estimated sign widths (default 6.5)')
+    w.add_argument('--scale', type=int, default=2, help='upscale factor (default 2)')
+    w.add_argument('--per', type=int, default=6, help='windows per montage image (default 6)')
+    w.add_argument('--ink', type=int, default=110, help='grey level below which a pixel is ink (default 110)')
+    w.add_argument('--ink-min', type=int, default=2, help='ink pixels for a column to count as inked (default 2)')
+    w.add_argument('--desc', help='candidate shape descriptions: TSV id<TAB>description, or a JSON object')
     sc = sp.add_parser('audit-score', help='score an audit re-read: planted catch gate, flags vs a truth file')
     sc.add_argument('--items', required=True); sc.add_argument('--reread', required=True)
     sc.add_argument('--truth'); sc.add_argument('--passc'); sc.add_argument('--out-corrected')
     sc.add_argument('--gate', type=float, default=0.80)
     a = ap.parse_args(argv)
+    if a.cmd == 'windows':
+        res = windows(a.passc, a.out, a.tiles, a.items, a.manifest, a.crops_glob, a.crop_pattern, a.run, a.status,
+                      a.half, a.scale, a.per, a.ink, a.ink_min, a.desc)
+        print(json.dumps(res)); return res
     if a.cmd == 'audit':
         res = audit(a.passa, a.passb, a.passc, a.confusion, a.sample, a.plant, a.seed, a.k, a.include, a.crops_glob,
-                    a.sheet, a.sheet_map, a.out, a.run, a.cell, a.cols, a.lines)
+                    a.sheet, a.sheet_map, a.out, a.run, a.cell, a.cols, a.lines, a.hide_passc)
         print(json.dumps(res)); return res
     if a.cmd == 'audit-score':
         res = audit_score(a.items, a.reread, a.truth, a.passc, a.out_corrected, a.gate)
@@ -464,7 +675,7 @@ def main(argv=None):
     elif a.cmd == 'packet':
         passc = a.passc or os.path.join(os.path.dirname(a.agreement), 'passC.tsv')
         res = packet(a.agreement, a.confusion, passc, a.top, a.crops, a.sheet, a.sheet_map, a.out,
-                     a.run or Path(a.agreement).parent.name, a.cell, a.cols)
+                     a.run or Path(a.agreement).parent.name, a.cell, a.cols, a.hide_passc)
     else:
         res = reconcile(a.tiles, a.passc, a.reread, a.out, a.alt, a.focus, a.run)
     print(json.dumps(res))

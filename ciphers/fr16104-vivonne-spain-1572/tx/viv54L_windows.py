@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Promoted (N7-LKTOOL, 4 Oct 2026): tools/lookalike_pass.py `windows` (--tiles / --items) is this instrument as a shared tool;
+# kept in place because its output is cited. New work uses the tool, not this script.
 """N7-VIV54L: the second look-alike instrument for ink 54 -- per-tile window montages, reusing tx/viv53L_windows.py (N7-VIV53L's
 window/strip/boxes/DESC, imported, not copied) on images/ (f.173r-v crops, images/manifest.json).
 

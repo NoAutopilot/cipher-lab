@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Promoted (N7-LKTOOL, 4 Oct 2026): tools/lookalike_pass.py `windows` (--tiles / --items) is this instrument as a shared tool;
+# kept in place because its output is cited. New work uses the tool, not this script.
 """N7-VIV53L: per-tile window montages for the look-alike re-read (second instrument, after the first four calls echoed passC).
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv53L_windows.py PAGE
