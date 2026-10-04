@@ -422,3 +422,30 @@ N5-VIVK). Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 
 Verdict: keep going: 6 internal gaps; cheapest next: native crop of fr.16104 f.173r-v (ink 54) interlinear words, then read ink 54 with key.tsv, ~$1 + ~$6
 
 Gate output (N5-VIVTAB, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 6 internal gap(s), 1 step(s) untried`
+
+## N5-VIV54 (4 Oct 2026, LANE-NEAR5 worker, account 2): ink piece 54 (7 Sept 1572, to the King, fr.16104 f.173r-v) read with key.tsv
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near5-wave1.md "N5-VIV54". Started 08:35 UTC, box to 10:35 UTC.
+
+**Step 0, premise (08:40 UTC).** Gachard II (IA labibliothquen02gachuoft djvu.txt, fetched once to scratch): grep for "septembre 1572"
+gives only L (5 Sept, "sans") and the 12 Sept letter (his n.: filed as LIX-LX among 1573) and LV-LVI (19 Sept); no 7 Sept 1572 entry.
+La Ferrière, Catherine IV (sources/ia-fulltext/print-check/lettresdecatheri04cathuoft_djvu.txt.gz): grep for "septiesme", "du vii",
+"7 septembre" and all 30+ "Gouard" hits -- no reply or note naming a Saint-Gouard letter of 7 Sept 1572 (its p.108 note dates his first
+post-St-Bartholomew report to 19 Sept). Leaves: c189 (1000 px) is a second capture of the c188 opening (f.173v | f.174r blank); c190 is
+f.174v (address, endorsed "7 septembre 1572") | f.175r (ink 55, 19 Sept). No "dechiffre" leaf; no printed plaintext located. Proceed.
+
+**Layout (c187, c188 at 1600 px).** f.173r: docket "7 Septembre 1572", heading "du S^r de S^t gouard au Roy", ink 54; two and a half plain
+lines ("Sire, j'ay receu la depesche de v^re ma^te par le courrier Johan ... Monsieur ... receu par le roy de ... celle qu'il luy a pleu
+me [escrire] du ... d'aoust") then cipher to the foot (L04-L27); f.173v: 20 cipher lines, then the plain closing "Sire, je supplie le
+Createur donner a v^re ma^te ... de Madril ce vij^e de Sept 1572", signed. Interlinear words above some groups on both pages.
+
+**Crops** (debug overlays checked: f.173r L01 is the initial's flourish / show-through, not a line; L02-L27 one band per written line,
+no duplicate bands; f.173v L01-L20 one band per line):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 187 --region 4150,1180,3750,3800 --out ciphers/fr16104-vivonne-spain-1572/images --prefix c187_f173r --follow-slope 400 --distance 90 --max-width 1600 --overlap 150 --debug
+  region 3750x3800, 27 lines, 27 bands x 3 segments; pitch 138 distance 90 prominence 258.4; wrote 81 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 188 --region 1250,750,3050,2900 --out ciphers/fr16104-vivonne-spain-1572/images --prefix c188_f173v --follow-slope 400 --distance 90 --max-width 1600 --overlap 150 --debug
+  region 3050x2900, 20 lines, 20 bands x 2 segments; pitch 133 distance 90 prominence 226.7; wrote 40 crops
+```
+**Units, stated before the first subagent call:** 2 pages x (2 blind Sonnet passes + 1 reconciliation) = 6 units at ~USD 1.5 (N5-VIVK rate),
++ 1 gloss look at native resolution by this worker = ~USD 10.5 of the 12 cap; reconciliation is tx/reconcile_vivk.py's label rules plus
+this worker's eye on listed splits only.
