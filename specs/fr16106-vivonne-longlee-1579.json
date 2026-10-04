@@ -1,0 +1,41 @@
+{
+ "slug": "fr16106-vivonne-longlee-1579",
+ "name": "Jean de Vivonne, sieur de Saint-Gouard, French ambassador in Madrid, cipher dispatches to Henri III and Catherine de Medicis 1579-82 (the table later left to Longlee)",
+ "date": "1579-1582",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "tx/passA.tsv and tx/passB.tsv (fr.16107 c107 left page, f.101v, 32 lines, 1,307 / 1,273 signs, two blind Sonnet passes, labels tx/SIGNS.md); unreconciled, err_2reader 0.576",
+ "ciphertext_source": "BnF fr.16107 (Gallica ark btv1b9009661v), canvas 107 left page, IIIF native crops via tools/iiif_lines.py, fetched 4 Oct 2026 (VIV-T); letter of 2 Mar 1580 Saint-Gouard to the King, c107-c109 left (f.101v-103v)",
+ "alphabet": "letter-form mark system (fr.16107 and fr.16108 c80/c102): about 30-40 distinct marks (x, doubled long-s, H/#, t, =, dots, Greek- and figure-like signs); the digit-and-mark system of fr.16108 c256/c322/c388/c432 is a second system not used in this pair. Inventory unsettled (provisional tx/SIGNS.md).",
+ "constraints": [
+  "clerk's plain copy 'Dechiffre de la precedente' follows the cipher letter in the volume: fr.16107 c110 right (f.105r) for the 2 Mar 1580 letter (VIV-T); Gachard II counts 26 such pairs in fr.16107 and 28 in fr.16108",
+  "Tomokiyo: Vivonne used this table from 1579 to end 1582 and left it to Longlee; Mousset 1912 pp.lviii-lix reconstructs Longlee's cipher (published key, not on disk as a table)",
+  "~90 dense cipher canvases estimated without a decipherment leaf (VIV-M, interval reaching 0)"
+ ],
+ "cheap_tests_in_order": [
+  "1 (run, VIV-T): grade-C key by tools/stream_align (interlinear_align stream) from one in-volume pair, held-out known-answer test vs value-shuffle and wrong-window nulls, with a matched power control at the measured transcription error (PREREG_test1.md)",
+  "2: settle the sign inventory in the owner's sign sorter (two machine passes split 58%), then re-run test 1 on the settled labels",
+  "3: Mousset pp.lviii-lix table applied to the same page (published key) as a key check",
+  "4: fitted key on one unglossed letter, judge fr16 vs a shuffled-key null"
+ ],
+ "matched_control": "synthetic homophonic encipherment of the same clear letters with pass A's symbol count, symbol noise at e=0.576 and e=0.10, 20% of clear words dropped for the fitter, same split/fit/statistic/nulls/gate, 5 seeds (test1.py)",
+ "cheap_test_done": [
+  {
+   "test": "1 (held-out known-answer test of a stream_align key, PREREG_test1.md)",
+   "date": "4 Oct 2026",
+   "worker": "LANE-POOLS2 VIV-T (account-1)",
+   "method": "fr.16107 c107 left (f.101v, 2 Mar 1580) vs clerk copy c110 right (f.105r); 2 blind Sonnet passes, err_2reader 0.576; fit L01-L20, held-out L21-L32; nulls value-shuffle x1000 and wrong-window x347",
+   "target": "pass A 0.370 vs value-shuffle p99 0.396 / wrong-window p99 0.385 (pass B 0.355 vs 0.407/0.405)",
+   "control": "matched synthetic homophonic, same K and length, 20% clear words dropped: e=0.576 0/5 seeds PASS; e=0.10 3/5 PASS (0.69-0.72 vs nulls ~0.39)",
+   "verdict": "NON-TEST (control below gate at the measured reader error); next: owner sign sorter on c107 crops, full read of the copy, re-run on the whole letter"
+  }
+ ],
+ "judge": {
+  "language": "fr",
+  "corpus": "tools/data/fr16 (Lettres de Catherine de Medicis t.1-2, Marguerite de Valois letters; 16th-century French court/diplomatic register): era-matched for 1580",
+  "min_word_cover": 0.5
+ },
+ "value": "a period-key pool of ~450 cipher pages (VIV-M estimate) with in-volume clerk copies for calibration; Longlee 1583-88 already printed in clear by Mousset",
+ "written": "4 Oct 2026, LANE-POOLS2 VIV-T (account 1)"
+}
