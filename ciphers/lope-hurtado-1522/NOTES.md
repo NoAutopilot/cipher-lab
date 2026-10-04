@@ -533,3 +533,20 @@ R9634 (ff. 14-16) is recorded by anyone.
 letters to the Emperor (nos. 416/422, 454-455, 467, 497, 609, 610); no September 1522 entry matching R9634 was
 named by bCSLOP's whole-volume grep. Not found-solved for R9634; R9646/R9649 were already logged as read in part by
 Bourdeau (no new flag).
+
+## Remaining gaps (GAPSFIX, 4 Oct 2026)
+Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolver, credited, Job bLOP step 1): R9649 86/89 (97%), R9646 99/118 (84%); R9634 (ff. 14-16, about 6 pages) has no transcription anywhere.
+- R9634 transcription and decode with the full accumulated key - blocker: not-attempted; "What would actually move this target" item 1; Bourdeau's own NOTES line 657 names the same step (duplicate-effort risk, check his repo first); next: one DECODE browser login with `--guess-fullsize` (A2-HDK precedent, record 4692), line crops, two passes + reconcile, apply key_codes.tsv + R9649 values (cost estimated, not in the folder), ~$6
+- R9649 vs CSP Spain II no. 497 identity, and Bourdeau's own "no clear version" line for R9649 - blocker: not-attempted; check-solved above and Premise check (b) leave both unsettled; next: compare CSP no. 497's calendared text with read_r9649.md and his NOTES line 600 (disk + one clone), ~$0.5
+- R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
+- Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 - blocker: waiting-on LOCAL-QUEUE.tsv row L17 and ASKS row 74; L17 is the owner's read of Kolosova 2017/2024, row 74 the RODERIC request-a-copy form, which takes the requester's own details (rule 9)
+
+## Escalation (GAPSFIX, 4 Oct 2026)
+- [ ] siblings: BNE MSS/18697/29 and MSS/20212/27 (aaymeloglu bne-ranked.md) unread by either project; next: BNE catalogue/digital-collections check
+- [x] clear-pages: R9644's and R9649's contemporary clear copies used by Bourdeau for the key (Job bLOP step 1)
+- [ ] known-keys: Kolosova Ko.7/Ko.10 reconstructions (LOCAL-QUEUE L17), not opened
+- [x] print: CSP Spain II grepped whole-volume (bCSLOP); no. 497 flagged, not yet compared
+- [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
+- [ ] image-check: R9634 full-size via DECODE `--guess-fullsize` (re-test per record before assuming blocked)
+- [n/a] retry: no attempt of ours on any of the three records to retry
+Verdict: keep going: 2 internal gaps; cheapest next: compare CSP Spain II no. 497 with Bourdeau's read_r9649.md, ~$0.5

@@ -174,3 +174,18 @@ proof (rule 10: no novelty claim).
   resolution by this worker. No companion slip reported anywhere read (second-opinions lead 3).
 - (d) recipient side: not applicable; no addressee or edition series exists (QM is a reader's guess).
 Verdict: nothing found that makes the item calibration or found-solved; status stays `partial` (NEAR.md row).
+
+## Remaining gaps (GAPSFIX, 4 Oct 2026)
+Read so far: 0 of 44 body letters read (0 H, 0 C); header QM and footer 605YZ/FF unread except as readers' guesses (Premise check above). Excluded with passing controls: the forum "solution", Caesar and 93 header/footer-derived keys (spec `cheap_test_done` 1-2).
+- 44-letter body under periodic keys (period 2-8) and machine systems (M-209 by structure, Conclusion above) - blocker: too-short; family_run.py periodic_vigenere control 5.3-6.1% against gate 0.6 at N=44 (NEAR.md row, cheap_test_done 2), and 44 letters are too few to test M-209 pins/lugs (cheap_test_done 1)
+- native-resolution image and the RSUA/RSUAI length dispute (second-opinion lead 4) plus the findspot/companion route (forumfree thread, lead 1, did not load) - blocker: not-attempted; the press photo was never opened at native resolution (Premise check (c)); next: fetch the Cipherbrain Bullet-Cipher.png once and eye-check the last group and every letter against Schmeh's transcription, plus one fetch of metaldetector.forumfree.it/?t=70205379, ~$1
+
+## Escalation (GAPSFIX, 4 Oct 2026)
+- [n/a] siblings: no companion slip reported in any source read (second-opinion lead 3)
+- [n/a] clear-pages: single slip, no clear text or addressee series exists
+- [x] known-keys: header/footer-derived keys and Caesar excluded with passing control (cheap_test_done 2)
+- [n/a] print: a 2015 find, no printed edition or calendar exists (Web and blog check)
+- [n/a] key-rebuild: no decipherment, key list or period material to rebuild from
+- [ ] image-check: native-resolution read of the press photo (RSUA vs RSUAI), and the forumfree thread for further photographs
+- [x] retry: indicator-system lookup (bBUL3) after the two cheap tests; no system licensed a new test at N=44
+Verdict: keep going: 1 internal gaps; cheapest next: native-resolution image check of the photo + forumfree thread fetch, ~$1

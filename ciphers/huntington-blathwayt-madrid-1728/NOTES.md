@@ -376,3 +376,20 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the TNA Discovery API search this folder names -- SP 94 and SP 98-100 descriptions for 1728-29 for "Paretti"/"Pareti", ~$0.5.
+
+## Remaining gaps (GAPSFIX, 4 Oct 2026)
+Read so far: 129 of 172 target tokens at C (75.0%; R17 table: BLA184 3/7, BLA186 20/24, BLA191 p5 106/141), M 22, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
+- 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R17 "What is left" names the method; next: context-fill pass with a matched control (blank the same share of glossed BLA185 and score), any fill graded S only if the control passes (cost estimated, not in the folder), ~$3
+- group 849 ("monsieur", one gloss) and the 7-as-'>'/')' check on the glossed training pages - blocker: not-attempted; R17 and V3a suggestion; next: crop the BLA188 gloss column and the disputed 7/3 columns from the 1200 px disk copies and eye-check, ~$0.5
+- BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
+- a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
+
+## Escalation (GAPSFIX, 4 Oct 2026)
+- [x] siblings: six glossed items (BLA179, 185, 188, 189, 190, 194) are the key source (R17 key.tsv, leave-one-out 0.68-0.91)
+- [x] clear-pages: BLA186's clear text located in print (Rose 1831 ii 414-415), cipher omitted there as "(Cypher.)"
+- [x] known-keys: the run's own period glosses give the key (395 groups, grade C)
+- [ ] print: TNA SP 94/98-100 and SP 36 descriptions; HMC Polwarth V (1961) for a decipherment of BLA191(a)
+- [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
+- [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages
+- [ ] retry: context-fill of the 21 unkeyed groups with a BLA185 blanking control
+Verdict: keep going: 4 internal gaps; cheapest next: TNA Discovery API search for Paretti in SP 94/36, ~$0.5

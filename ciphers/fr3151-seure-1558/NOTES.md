@@ -1,4 +1,4 @@
-blocked
+partial
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. Ribier's *Lettres et

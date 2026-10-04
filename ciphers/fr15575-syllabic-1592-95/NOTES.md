@@ -1,4 +1,4 @@
-blocked
+partial
 Lefèvre, Correspondance de Philippe II sur les affaires des Pays-Bas, 2e partie, t. IV (1592-1598, 1960; Google Books FYAgAQAAMAAJ) and van Durme, Les Archives générales de Simancas et l'histoire de la Belgique (1964; 3ZU-AQAAIAAJ) were full-text searched by this worker ("5 janvier 1595" + Ernest / Bruxelles / Fuentes), but only API snippets came back: both calendar Ernest-to-the-King letters dated Bruxelles, 5 janvier 1595 (Lefèvre near p. 277), and neither page could be opened from the cloud (books.google page view is captcha-blocked), so whether fr.15576 f.2 is one of them is not settled.
 
 NV05-CS (account-2 worker, LANE-A2PUSH3), 3 Oct 2026 14:20-15:00 UTC. Source row: NEVERS-VEIN.tsv NV-05.

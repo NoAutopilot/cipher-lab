@@ -318,3 +318,20 @@ eckert-1864: partial (line 3) -- edition/page or full-text-search citation found
 exit 0
 ```
 `python3 tools/next_steps.py --wait-only | grep eckert-1864`: no line.
+
+## Remaining gaps (GAPSFIX, 4 Oct 2026)
+Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 3 Beckwith/Kimber entries in Cipher No. 2 (section 8); the rest of the ledger untranscribed.
+- E4/E5 second copies in the parallel sent ledger mssEC 18 (object 10074) - blocker: not-attempted; section 2 and Premise check (c): never opened; next: Huntington CONTENTdm `CISOSEARCHALL` query for 21-22 Apr 1864 and one page read ("While waiting"), ~$1.5
+- the other seven selected Beckwith/Kimber/Caldwell entries (Cipher No. 2) - blocker: not-attempted; section 8 "Not done"; next: two transcription passes of those entries and decode_no2.py with key-no2.md (cost estimated from section 4's 20-entry pass, not measured), ~$4
+- corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
+- Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
+
+## Escalation (GAPSFIX, 4 Oct 2026)
+- [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); the parallel sent ledger mssEC 18 not yet opened (While waiting step)
+- [x] clear-pages: OR prints matched for 17 of 20 entries as the check (section 4)
+- [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
+- [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
+- [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries
+- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026)
+- [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
+Verdict: keep going: 3 internal gaps; cheapest next: mssEC 18 copies of E4/E5 via CONTENTdm, ~$1.5
