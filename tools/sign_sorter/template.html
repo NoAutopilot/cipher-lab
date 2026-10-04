@@ -89,6 +89,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 #ctxBigW{display:flex;justify-content:center;background:var(--tile);border-radius:6px;padding:8px}
 #ctxBig{width:auto;height:min(42vh,320px);max-width:100%;object-fit:contain;image-rendering:auto}
 .pile.new{border-style:dashed}
+.pile{content-visibility:auto;contain-intrinsic-size:auto 220px}
 #focus{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
 .ftitle{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0}
 .fcap{font-size:.72rem;color:var(--muted);text-align:center;max-width:var(--sz)}
@@ -446,7 +447,7 @@ function pileEl(p, piles){
 function approveTile(sid, pid, undoIt){
   const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
   if (undoIt) delete checked[sid]; else checked[sid] = pid; saveCheck(sid); hideOffer();
-  note_(undoIt ? 'Took back the approval of ' + sid + '.' : 'Approved ' + sid + ' in pile ' + pid + '.'); render();
+  note_(undoIt ? 'Took back the approval of ' + sid + '.' : 'Approved ' + sid + ' in pile ' + pid + '.'); renderSome([pid]);
 }
 let tapMode = 'out'; try { if (localStorage.getItem('sorterTapMode') === 'look') tapMode = 'look'; } catch (e) {}
 function setTapMode(m){ tapMode = m; try { localStorage.setItem('sorterTapMode', m); } catch (e) {}
@@ -462,13 +463,35 @@ function setDest(sid, to){
   saveMove(sid);
 }
 function takeOut(sid, el){
-  const from = el ? el.getBoundingClientRect() : null;
+  const from = el ? el.getBoundingClientRect() : null, was = pileOf(sid);
   remember([sid]); setDest(sid, 'OUT'); hideOffer();
   note_('Took ' + sid + ' out of pile ' + homeOf[sid] + '. Tap it in the tray to put it back.');
-  render(); if (from) fly(sid, from);
+  renderSome([was]); if (from) fly(sid, from);
 }
 function putBack(sid){
-  remember([sid]); setDest(sid, homeOf[sid]); note_('Put ' + sid + ' back in pile ' + homeOf[sid] + '.'); render();
+  remember([sid]); setDest(sid, homeOf[sid]); note_('Put ' + sid + ' back in pile ' + homeOf[sid] + '.'); renderSome([homeOf[sid]]);
+}
+// Large letters (Noailles, 9,865 tiles; owner 4 Oct 2026: a noticeable delay on every tap): a step-1 tap re-draws only the
+// piles it touched, the meter and the tray, instead of the whole list. Anything it cannot place (a pile not on screen, a pile
+// that just emptied or appeared, another step) falls back to the full render().
+function renderSome(ids){
+  if (step !== 1) return render();
+  const piles = allPiles();
+  for (const id of new Set(ids)){
+    const el = document.getElementById('pile_' + domKey(id)); const p = piles.find(q => q.id === id);
+    if (!el || !p) return render();
+    const members = membersOf(id); if (!members.length && !asideOf(id).length) return render();
+    const openM = !!el.querySelector('details[open]'); const ne = pileEl({...p, members}, piles);
+    if (openM){ const d = ne.querySelector('details'); if (d) d.open = true; }
+    el.replaceWith(ne);
+  }
+  updateMeter(piles); renderTray();
+}
+function updateMeter(piles){
+  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
+  const done = live.filter(p => statusOf(p.id)).length;
+  $('prog').textContent = done + ' of ' + live.length + ' piles done';
+  $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
 }
 function fly(sid, r){   // the tile shrinks into the tray, so the person sees where it went
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -508,7 +531,7 @@ function trayDrag(b, sid){
   const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
     const p = drop && pileAt(e.clientX, e.clientY); if (!p) return; const to = p.dataset.pile;
-    remember([sid]); setDest(sid, to); note_('Put ' + sid + ' in pile ' + to + '.'); render(); offerCluster([sid], to); };
+    remember([sid]); setDest(sid, to); note_('Put ' + sid + ' in pile ' + to + '.'); renderSome([to]); offerCluster([sid], to); };
   b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
 }
 
