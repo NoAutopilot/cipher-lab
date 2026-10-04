@@ -1,0 +1,440 @@
+line	position	sign	confidence	alt	why
+L01	1	T31	M	B:?[alpha]	differ
+L01	2	T70	M	B:?[S-bar]	differ
+L01	3	T43	H		agree
+L01	4	T26	H		agree
+L01	5	T46	M		agree-flagged
+L01	6	?[crossed-f]	M	A:-	gap
+L01	7	T19	M	B:T58	differ
+L01	8	T44	M	B:T33	differ
+L01	9	T59	M	B:T30	differ
+L01	10	/	H		agree
+L01	11	T58	H		agree
+L01	12	T73	M	B:?[double-cross]	differ
+L01	13	/	H		agree
+L01	14	T18	M		agree-flagged
+L01	15	T16	M	B:T17	differ
+L01	16	T33	M	B:T18	differ
+L01	17	T11	M		agree-flagged
+L01	18	T13	M	B:?[q]	differ
+L01	19	T41	H		agree
+L01	20	/	H		agree
+L01	21	T12	M	B:T56	differ
+L01	22	T31	M		agree-flagged
+L01	23	T36	M	B:?[x]	differ
+L01	24	T26	M		agree-flagged
+L02	1	T46	M		agree-flagged
+L02	2	T18	M	B:T33	differ
+L02	3	T12	H		agree
+L02	4	T25	H		agree
+L02	5	T26	H		agree
+L02	6	/	H		agree
+L02	7	?[x]	H		agree
+L02	8	T43	H		agree
+L02	9	T10	H		agree
+L02	10	T46	M	B:T05	differ
+L02	11	T57	H		agree
+L02	12	/	H		agree
+L02	13	T12	H		agree
+L02	14	T26	H		agree
+L02	15	?[boxcross]	M	B:-	gap
+L02	16	T41	M	B:/	differ
+L02	17	T63	M	B:T62	differ
+L02	18	T40	M	B:T16	differ
+L02	19	T46	M	B:T17	differ
+L02	20	T46	M		agree-flagged
+L02	21	T01	H		agree
+L02	22	T25	H		agree
+L02	23	T41	H		agree
+L02	24	/	H		agree
+L02	25	T23	H		agree
+L02	26	T38	M	B:T13	differ
+L02	27	T70	M	B:T42	differ
+L02	28	/	H		agree
+L02	29	T25	H		agree
+L02	30	T26	H		agree
+L02	31	T46	M	B:T17	differ
+L02	32	T05	H		agree
+L02	33	T12	H		agree
+L02	34	T18	H		agree
+L02	35	T63	M	B:T16	differ
+L02	36	T26	H		agree
+L02	37	T43	H		agree
+L02	38	T41	H		agree
+L02	39	T12	H		agree
+L02	40	T09	H		agree
+L02	41	T63	M	B:T16	differ
+L02	42	/	H		agree
+L02	43	T23	H		agree
+L02	44	T73	H		agree
+L03	1	T46	H		agree
+L03	2	T26	H		agree
+L03	3	T49	H		agree
+L03	4	T29	M	B:T09	differ
+L03	5	T26	H		agree
+L03	6	T46	H		agree
+L03	7	T16	M		agree-flagged
+L03	8	T40	M	A:-	gap
+L03	9	T17	M		agree-flagged
+L03	10	/	H		agree
+L03	11	T20	H		agree
+L03	12	T26	H		agree
+L03	13	?[c]	M	A:-	gap
+L03	14	?[diamond-d]	M	B:T07	differ
+L03	15	T46	H		agree
+L03	16	T49	M	B:-	gap
+L03	17	T13	M	B:-	gap
+L03	18	T26	M	B:T58	differ
+L03	19	/	H		agree
+L03	20	T10	H		agree
+L03	21	T46	H		agree
+L03	22	T30	H		agree
+L03	23	T49	M	B:T58	differ
+L03	24	T24	M		agree-flagged
+L03	25	T18	M	B:-	gap
+L03	26	T12	M	B:T01	differ
+L03	27	T13	M	B:T23	differ
+L03	28	T12	M	B:T39	differ
+L03	29	T70	M	B:?[flourish]	differ
+L03	30	T01	H		agree
+L03	31	T26	H		agree
+L03	32	T12	H		agree
+L03	33	T18	M	B:T01	differ
+L03	34	T41	H		agree
+L03	35	T57	M		agree-flagged
+L03	36	T25	H		agree
+L03	37	T16	M		agree-flagged
+L03	38	T26	H		agree
+L03	39	/	H		agree
+L03	40	T62	H		agree
+L03	41	T41	H		agree
+L03	42	T46	M		agree-flagged
+L03	43	?[c]	M	A:-	gap
+L04	1	/	M	A:-	gap
+L04	2	T26	M	A:-	gap
+L04	3	T46	M	A:-	gap
+L04	4	T30	M	A:-	gap
+L04	5	T40	M		agree-flagged
+L04	6	/	H		agree
+L04	7	T30	M	A:-	gap
+L04	8	T33	M	A:-	gap
+L04	9	T12	H		agree
+L04	10	T33	M	B:?[bighook]	differ
+L04	11	T12	H		agree
+L04	12	T01	H		agree
+L04	13	T70	M	B:T16	differ
+L04	14	T18	H		agree
+L04	15	T01	H		agree
+L04	16	T12	H		agree
+L04	17	T18	H		agree
+L04	18	T16	M		agree-flagged
+L04	19	T25	H		agree
+L04	20	T26	H		agree
+L04	21	T41	H		agree
+L04	22	T56	H		agree
+L04	23	T30	H		agree
+L04	24	T04	M		agree-flagged
+L04	25	/	M	B:-	gap
+L04	26	T25	H		agree
+L04	27	T24	M		agree-flagged
+L04	28	T50	M	B:/	differ
+L04	29	T43	H		agree
+L04	30	T30	H		agree
+L04	31	T64	H		agree
+L04	32	T18	H		agree
+L04	33	T16	H		agree
+L04	34	T31	M	B:T50	differ
+L04	35	T13	H		agree
+L04	36	T73	M	B:T42	differ
+L04	37	T01	H		agree
+L04	38	T31	H		agree
+L04	39	T01	H		agree
+L04	40	T35	M		agree-flagged
+L05	1	T23	H		agree
+L05	2	T33	H		agree
+L05	3	T01	M		agree-flagged
+L05	4	T16	M	B:?[m]	differ
+L05	5	T31	H		agree
+L05	6	T11	H		agree
+L05	7	T57	M	A:-	gap
+L05	8	T26	H		agree
+L05	9	T35	M		agree-flagged
+L05	10	T01	M		agree-flagged
+L05	11	T58	H		agree
+L05	12	T46	M		agree-flagged
+L05	13	T16	M	B:?[m]	differ
+L05	14	/	H		agree
+L05	15	T69	H		agree
+L05	16	T54	M	B:?[curl]	differ
+L05	17	T26	H		agree
+L05	18	T26	H		agree
+L05	19	T25	H		agree
+L05	20	T01	H		agree
+L05	21	T12	H		agree
+L05	22	/	H		agree
+L05	23	T41	M	A:-	gap
+L05	24	T53	M	B:T23	differ
+L05	25	T19	M	B:?[H]	differ
+L05	26	T18	M	B:T33	differ
+L05	27	T50	H		agree
+L05	28	T12	H		agree
+L05	29	T57	H		agree
+L05	30	T26	H		agree
+L05	31	T43	H		agree
+L05	32	T46	M		agree-flagged
+L05	33	T18	M	B:T33	differ
+L05	34	T41	H		agree
+L05	35	/	H		agree
+L05	36	T02	M	B:T03	differ
+L05	37	T30	H		agree
+L05	38	T01	H		agree
+L05	39	T43	H		agree
+L05	40	T40	M	B:?[m]	differ
+L05	41	T26	H		agree
+L05	42	T21	M	B:?[t]	differ
+L06	1	T16	M	B:-	gap
+L06	2	T39	M	B:-	gap
+L06	3	T01	H		agree
+L06	4	T66	M	A:-	gap
+L06	5	T55	M	B:T16	differ
+L06	6	T25	H		agree
+L06	7	T26	H		agree
+L06	8	?[Zflag]	M	B:T03	differ
+L06	9	T31	M		agree-flagged
+L06	10	T54	M	B:?[r]	differ
+L06	11	T46	H		agree
+L06	12	T12	H		agree
+L06	13	T05	H		agree
+L06	14	T35	M	B:T24	differ
+L06	15	T01	H		agree
+L06	16	T18	H		agree
+L06	17	T09	H		agree
+L06	18	T18	H		agree
+L06	19	T12	H		agree
+L06	20	/	H		agree
+L06	21	T23	H		agree
+L06	22	T46	H		agree
+L06	23	T26	H		agree
+L06	24	T35	M	B:T24	differ
+L06	25	?[four]	M	B:T73	differ
+L06	26	T19	M	B:T54	differ
+L06	27	T40	H		agree
+L06	28	/	H		agree
+L06	29	T26	H		agree
+L06	30	T46	H		agree
+L06	31	T24	M	B:T20	differ
+L06	32	/	H		agree
+L06	33	T63	M	B:-	gap
+L06	34	T30	M	B:?[mo]	differ
+L06	35	T39	H		agree
+L06	36	T26	H		agree
+L06	37	T46	M	B:T40	differ
+L06	38	T41	H		agree
+L06	39	T40	H		agree
+L06	40	/	H		agree
+L06	41	T18	H		agree
+L06	42	T09	M	B:-	gap
+L06	43	T09	H		agree
+L06	44	T65	M	B:T18	differ
+L07	1	T29	M	B:-	gap
+L07	2	T26	H		agree
+L07	3	T46	M		agree-flagged
+L07	4	T30	H		agree
+L07	5	T33	M		agree-flagged
+L07	6	T01	M		agree-flagged
+L07	7	T54	M	A:-	gap
+L07	8	T40	H		agree
+L07	9	T26	M	B:-	gap
+L07	10	T26	M		agree-flagged
+L07	11	T01	M		agree-flagged
+L07	12	?[loop]	M	A:-	gap
+L07	13	T70	M	A:-	gap
+L07	14	?[bar-hook]	M	B:T26	differ
+L07	15	T25	M	B:T29	differ
+L07	16	T09	H		agree
+L07	17	T16	M	B:-	gap
+L07	18	T46	M	B:T55	differ
+L07	19	T19	M		agree-flagged
+L07	20	T46	H		agree
+L07	21	T33	M	B:T47	differ
+L07	22	T09	M	B:T48	differ
+L07	23	T26	H		agree
+L07	24	T12	H		agree
+L07	25	T25	H		agree
+L07	26	T41	H		agree
+L07	27	T40	H		agree
+L07	28	T01	H		agree
+L07	29	T19	M	B:T47	differ
+L07	30	T12	M	B:T56	differ
+L07	31	T40	M	B:T05	differ
+L07	32	/	H		agree
+L07	33	T25	H		agree
+L07	34	T26	H		agree
+L07	35	T58	M	B:T63	differ
+L07	36	T30	M	B:T39	differ
+L07	37	/	H		agree
+L07	38	T26	H		agree
+L07	39	T18	M	B:T33	differ
+L07	40	T57	M	B:T72	differ
+L08	1	T30	M	B:T29	differ
+L08	2	T46	M	B:T13	differ
+L08	3	T13	H		agree
+L08	4	T30	H		agree
+L08	5	T44	M	B:T21	differ
+L08	6	T26	H		agree
+L08	7	/	H		agree
+L08	8	T18	M	B:T11	differ
+L08	9	T16	M		agree-flagged
+L08	10	T26	H		agree
+L08	11	T40	H		agree
+L08	12	T04	H		agree
+L08	13	T46	M	B:T13	differ
+L08	14	T73	M	B:T11	differ
+L08	15	T39	H		agree
+L08	16	T10	H		agree
+L08	17	T41	H		agree
+L08	18	T46	M	B:T13	differ
+L08	19	T26	H		agree
+L08	20	T12	H		agree
+L08	21	T43	H		agree
+L08	22	/	M	B:-	gap
+L08	23	T11	M		agree-flagged
+L08	24	T26	H		agree
+L08	25	/	H		agree
+L08	26	T20	M		agree-flagged
+L08	27	T25	H		agree
+L08	28	T31	M		agree-flagged
+L08	29	T50	M		agree-flagged
+L08	30	T18	M	B:T09	differ
+L08	31	T26	H		agree
+L08	32	T16	M	A:-	gap
+L08	33	T40	M	B:T13	differ
+L08	34	/	H		agree
+L08	35	T46	M	B:T13	differ
+L08	36	T43	H		agree
+L08	37	T09	M		agree-flagged
+L08	38	T41	H		agree
+L08	39	/	H		agree
+L08	40	T30	H		agree
+L08	41	T46	M	B:T13	differ
+L08	42	T58	M	B:T21	differ
+L08	43	T25	H		agree
+L08	44	T29	M		agree-flagged
+L09	1	T62	H		agree
+L09	2	T30	H		agree
+L09	3	T58	H		agree
+L09	4	/	H		agree
+L09	5	T12	H		agree
+L09	6	T26	H		agree
+L09	7	T40	H		agree
+L09	8	T41	H		agree
+L09	9	T47	M		agree-flagged
+L09	10	T48	M	B:T09	differ
+L09	11	T26	H		agree
+L09	12	/	H		agree
+L09	13	T25	M	B:T20	differ
+L09	14	T41	H		agree
+L09	15	?[long-s]	M	B:T01	differ
+L09	16	T47	M		agree-flagged
+L09	17	T13	H		agree
+L09	18	T16	H		agree
+L09	19	T05	H		agree
+L09	20	T12	H		agree
+L09	21	T24	M	B:T35	differ
+L09	22	T26	H		agree
+L09	23	/	H		agree
+L09	24	T62	H		agree
+L09	25	T23	H		agree
+L09	26	T50	M	B:T46	differ
+L09	27	T18	H		agree
+L09	28	T56	M	B:T01	differ
+L09	29	T12	H		agree
+L09	30	T18	H		agree
+L09	31	T62	H		agree
+L09	32	T30	H		agree
+L09	33	T58	H		agree
+L09	34	/	H		agree
+L09	35	T26	H		agree
+L09	36	T12	H		agree
+L09	37	T70	M	B:T38	differ
+L09	38	T41	H		agree
+L09	39	T71	M	B:?[t]	differ
+L09	40	T23	H		agree
+L10	1	T64	H		agree
+L10	2	T01	H		agree
+L10	3	T12	H		agree
+L10	4	T43	H		agree
+L10	5	/	H		agree
+L10	6	T18	H		agree
+L10	7	T31	H		agree
+L10	8	T46	M		agree-flagged
+L10	9	T43	H		agree
+L10	10	T24	M		agree-flagged
+L10	11	T11	M		agree-flagged
+L10	12	T50	H		agree
+L10	13	T12	H		agree
+L10	14	T25	M	B:T60	differ
+L10	15	T26	H		agree
+L10	16	/	H		agree
+L10	17	T03	H		agree
+L10	18	T26	H		agree
+L10	19	T02	M	B:T28	differ
+L10	20	T18	H		agree
+L10	21	T26	M	A:-	gap
+L10	22	T50	M	B:T31	differ
+L10	23	T13	H		agree
+L10	24	T09	H		agree
+L10	25	T12	H		agree
+L10	26	T43	H		agree
+L10	27	T50	M	B:T31	differ
+L10	28	T57	M		agree-flagged
+L10	29	/	H		agree
+L10	30	T43	H		agree
+L10	31	T10	H		agree
+L10	32	T04	M	B:T57	differ
+L10	33	T26	H		agree
+L10	34	T44	M		agree-flagged
+L10	35	T41	H		agree
+L10	36	T18	H		agree
+L10	37	T26	H		agree
+L10	38	?[edge-stroke]	M	B:-	gap
+L11	1	T30	H		agree
+L11	2	T26	H		agree
+L11	3	?[m]	M	B:T16	differ
+L11	4	T31	H		agree
+L11	5	?[r]	M	B:-	gap
+L11	6	?[T]	M	B:T05	differ
+L11	7	/	M	B:T44	differ
+L11	8	?[longs]	M	B:T01	differ
+L11	9	T42	M		agree-flagged
+L11	10	T01	M	B:T05	differ
+L11	11	T40	H		agree
+L11	12	T05	M	B:-	gap
+L11	13	T10	M	B:T50	differ
+L11	14	T54	M	B:T01	differ
+L11	15	T73	M	B:T14	differ
+L11	16	?[q]	M	B:T40	differ
+L11	17	T31	M	B:T35	differ
+L11	18	T50	M		agree-flagged
+L11	19	?[q]	M	B:T64	differ
+L11	20	T40	M	B:T19	differ
+L11	21	T33	M	B:T13	differ
+L11	22	T07	M	B:T05	differ
+L11	23	T58	M	B:T01	differ
+L11	24	T36	H		agree
+L11	25	T09	H		agree
+L11	26	T43	H		agree
+L11	27	T26	H		agree
+L11	28	T59	M	B:T71	differ
+L11	29	T41	H		agree
+L11	30	T30	H		agree
+L11	31	T26	H		agree
+L11	32	T12	H		agree
+L11	33	T23	H		agree
+L11	34	T73	M		agree-flagged
+L11	35	T43	H		agree
+L11	36	T36	M		agree-flagged
+L11	37	T50	M	B:-	gap
+L11	38	T05	M	B:T64	differ
+L11	39	T09	M		agree-flagged
+L11	40	T20	M	B:T40	differ

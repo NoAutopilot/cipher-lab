@@ -46,3 +46,16 @@ Standing unchanged: key86.tsv untouched, every T31 token stays M (rule 4: the sh
 crop resolution, not the clear copy deciding each token). Next: re-label the T31 tokens of f.244r/f.275r by shape
 (loop -> T45, x+o -> T36) as a pre-registered relabel of the existing tsv files, then re-run kp86b/kp86e arm A
 unchanged and see whether these tokens move to C, disk only, ~$1.
+
+### kp87b witness (PIS1-302, 4 Oct 2026): f.302v alignment against the Colbert copy, cells the PASS contradicts
+From kp87b's arm-A alignment (tx87b/ciphertext_f302v.tsv vs kp87b/colbert_p341_342.txt, err_2reader 0.335; per-sign
+aligned copy letters by the same band_dp as kp87b/cgrades87b.py). Witness only; key86.tsv unchanged.
+- T57 (table la): 0 of 6 C; aligned copy letters n 4, u 2 -- agrees with REMAP_B's T57 -> n (kp86d).
+- T47 (table m): 0 of 4 C; aligned f 2, e 1 -- agrees with REMAP_B's T47 -> f.
+- T40 (table a): 0 of 12 C; aligned s 5, r 1, o 1 -- new on this page; may be a reader-label merge (cf. T31) rather
+  than a table error; not seen on f.301v/f.275r as a conflict. Next: image compare of the f.302v T40 tokens with the
+  table's a and s cells, disk only.
+- T31 (table m): 9 tokens, aligned m 3, o 3, t 1, r 1: still split. Rule 4: every T31 token stays M (3 that
+  cgrades87b scores C are counted M in NOTES).
+Arm B (key86 + REMAP_B) scored 0.621 vs arm A 0.590 on the reconciled page (blind A 0.571 vs 0.553, blind B 0.630
+vs 0.598): B above A on a fourth page, by 0.017-0.032. Still not a held-out test (PIS1-KEY's job).

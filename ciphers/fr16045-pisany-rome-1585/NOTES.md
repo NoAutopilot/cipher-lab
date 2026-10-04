@@ -536,3 +536,65 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r; 24 Mar 1587
 - [x] image-check: f.248r read at 900 px (decipherment heading); c626/c640 date lines at 1400 px
 - [ ] retry: per-line pipeline on f.246-247, f.276-279, f.228-234; 1585 letters after the key grows
 Verdict: keep going: 10 internal gaps; cheapest next: verso fills ~$1; most valuable next: 17 Sept 1586 f.246-247 vs Colbert pp.52-55 and the f.248 decipherment, ~$45
+
+## kp87b: 24 Mar 1587, f.302v vs Colbert 16 pt II pp.341-342, with the margin gloss (PIS1-302, 4 Oct 2026, 16:47-17:3x UTC)
+- Clear copy located: the f.302v cipher follows the clear "Il m'a bien asseure de n'y faire autre chose que ce qu'elle
+  commandera" and is Colbert c589 **p.341 l.20** "Je suis le plus trompe homme du monde si l'on ne persuade au Pape ..." to
+  c590 **p.342 l.10** "... si je ne l'en advisois." (then "Pour l'Indult", clear on the leaf too) -- not pp.339-341 as
+  inferred; pp.339-340 are f.302r's clear paragraphs. kp87b/colbert_p341_342.txt (read at 1400 px by this worker).
+- Margin gloss (period decipherment, second hand, left margin of f.302v, 19 lines): read by this worker at native
+  resolution before any pass: kp87b/gloss_f302v.txt (literal) and gloss_f302v_expanded.txt (abbreviations expanded).
+  It runs the same passage as the copy, with two differences noted before scoring: "qu'il a mo?ins?" where the copy has
+  "plus" (doubtful reading), and no "sinon" before "autant" (possibly lost at the margin edge).
+- Crops: 11 lines, PREREG kp87b/PREREG_kp87b.md (command pasted there; L10 re-cut fixed-y) pushed 372d2927 before any
+  pass. Passes: 2 blind Sonnet readers x 11 lines = 22 calls, one line per call (tx87b/PASS_BRIEF87b.md; rows in
+  tx87b/rowsA|rowsB). reconcile_passes.py: A 421 signs, B 422, **agree 292/439 = 66.5%, err_2reader 0.335** (f.301v
+  0.192; this page is fainter and stained). kp86d/reconcile_d.py tx87b unchanged -> tx87b/ciphertext_f302v.tsv.
+- **Result (kp87b/kp87b.py -> kp87a.py unchanged, kp87b_result.json): PASS.** Arm A (key86 as published): reconciled
+  378 key tokens, nw_score **0.590** vs key-shuffle p99 0.389 (mean 0.340) / order p99 0.464 (mean 0.419); blind A 0.553
+  (0.398 / 0.457), blind B 0.598 (0.396 / 0.467). Positive control at e=0.335: 5/5 seeds. Arm B (PIS1 remap): 0.621
+  (0.391 / 0.466), blind A 0.571, blind B 0.630, control 5/5; reported beside A, nothing enters key86.tsv.
+- Gloss witness (not gating): W1 gloss vs copy nw_score **0.944** vs order-shuffle p99 0.447 (485 gloss letters): the
+  gloss and the Colbert copy are the same text. W2 decode vs gloss 0.586 vs key-shuffle p99 0.365 / order p99 0.435: the
+  decode also aligns with the leaf's own period decipherment.
+- Reading: reading_f302v_M.txt / reading_f302v_tokens.tsv by `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585 --ciphertext tx87b/ciphertext_f302v.tsv --key key86.tsv --reading reading_f302v_M.txt --tokens reading_f302v_tokens.tsv`;
+  `--check` "reading up to date" (tool: H 378 = published-key sign read, U 61 incl. `/`). Rule-4 grades
+  (kp87b/cgrades87b.py = kp87a/cgrades87.py, paths changed -> kp87b/grades_f302v.tsv): script C 230, M 143, U 29 of 402
+  sign tokens; with the 3 T31 tokens it scores C held at M (HYPOTHESES.md T31 log): **C 227, M 146, U 29**; 281 of 476
+  decoded letters identical with the copy; 0 S, 0 I. Key published (Tomokiyo), plaintext the period copy and the leaf's
+  own margin gloss: a known-answer confirmation of the 1586-87 table on a third page of this letter, not a decipherment;
+  no claim of a new reading.
+- Judge (rule 7): `python3 tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file ciphers/fr16045-pisany-rome-1585/reading_f302v_M.txt`
+  -> `FAIL language: score=-1.405, null_p99=-1.728, real_p05=-0.93, real_median=-0.813, mode=both, N=591` / `ok words:
+  cover=0.824` / `FAIL`. Between noise and prose, as on f.275r (146 M tokens, 1-for-1 output); the known-answer gate is
+  the test here.
+- key86 cells the alignment contradicts (HYPOTHESES.md "kp87b witness"): T57 -> n and T47 -> f (agree with REMAP_B),
+  T40 (table a) aligns to s 5 of 7 (new, possibly a label merge), T31 still split (m 3, o 3).
+- Requests: Gallica 7 (c617 1000 px, info.json, native cipher region, native gloss region; Colbert c588-c590 at 1400 px),
+  all 200, >= 2 s apart; 0 other hosts. Subagent calls: 22 Sonnet (reconciliation by script, no model unit used).
+  Scratch (not committed): native sources, re-fetch
+  https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f617/1380,2080,2544,1720/full/0/default.jpg and
+  .../f617/380,2200,1100,1600/full/0/default.jpg.
+
+## Remaining gaps (PIS1-302, 4 Oct 2026; merges PIS1-INV's list)
+Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r; 24 Mar 1587 f.301v and f.302v (kp87b, err 0.335, C 227 / M 146): 6 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST. The 24 Mar 1587 letter's cipher (f.301v, f.302v) is fully tested; the inventory (PIS1-INV) locates the rest.
+- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
+- 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
+- 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; f.275v is in PIS1-275V; next: same per-line pipeline page by page, ~$12 per dense page
+- 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
+- key86 T31 label and T45/T47/T49/T57 remap - blocker: not-attempted; running in PIS1-KEY (same wave); kp87b adds a fourth page where arm B beats A (HYPOTHESES.md "kp87b witness"); next: PIS1-KEY's report, ~$0
+- Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II; next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
+- Originals of the Dec 1586-Feb 1587 and Apr-Dec 1587 dispatches (copied in Colbert, absent from fr.16045/16046) - blocker: not-attempted; outside this brief; next: BnF finding aid search for other Pisany volumes (fr. or Cinq Cents de Colbert), ~$1
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (PIS1-302, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II clear copies paired with f.244r, f.244v/f.245r, f.275r, f.301v and f.302v (pp.341-342)
+- [x] clear-pages: every leaf of the 24 Mar 1587 letter viewed; both cipher pages tested
+- [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.275r, f.301v, f.302v; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: T31 relabel, T45/T47/T49/T57 remap (PIS1-KEY), T40 image compare
+- [x] image-check: f.302v cut one line per band, montage checked; margin gloss read at native resolution
+- [ ] retry: per-line pipeline on f.246-247, f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
+Verdict: keep going: 10 internal gaps; cheapest next: T40 image compare ~$1; most valuable next: 17 Sept 1586 f.246-247 vs Colbert pp.52-55 and the f.248 decipherment, ~$45
