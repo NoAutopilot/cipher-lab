@@ -221,3 +221,7 @@ ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("aprile 1571" OR "avr
 ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("mars 1572" OR "marzo 1572") AND ("Carmagnola" OR "Carmagnole") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
 ciphers/birago-fr3252-1571-72	"intention de convenir" AND ("Birague" OR "Saluces")	2026-10-04	queued	
 ciphers/birago-fr3252-1571-72	"parlandone il signor" AND ("Birago" OR "Saluzzo")	2026-10-04	queued	
+ciphers/clairambault1225-paget-1714	"Paget" AND ("Gênes" OR "Genoa" OR "Cagliari") AND 1714 AND (chiffre OR cipher OR consul)	2026-10-04	queued	
+ciphers/clairambault1225-paget-1714	"Paget" AND ("princesse de Parme" OR "Farnese") AND (consul OR chiffre)	2026-10-04	queued	
+ciphers/clairambault1225-paget-1714	"a toujours esté de genie Allemand"	2026-10-04	queued	
+ciphers/clairambault1225-paget-1714	"le Prince Antoine de Parme" "35 ans"	2026-10-04	queued	
