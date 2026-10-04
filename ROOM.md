@@ -8451,3 +8451,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 17:54 | LANE-PIS1 PIS1-KEY2 (account-1 worker) | claim: fr16045-pisany-rome-1585 finish PIS1-KEY (f.275r T31 relabel run + NOTES write-up), disk only, cap 3
 2026-10-04 17:55 | GAPSFIX (acct3 worker) | claim: gaps sections for bullet-tuscany-1944, eckert-1864, huntington-blathwayt-madrid-1728, lope-hurtado-1522; fr15575 + fr3151-seure status lines; disk only, cap 4
 2026-10-04 17:55 | C1161-JOINT9 (acct3 worker) | claim: clair1161-avis-flandre-1688 joint test of nine LOLO proposals (prereg first), disk only, cap 2.5
+2026-10-04 17:56 | RD7-PAGR (acct3 worker) | claim: clairambault1225-paget-1714 rule-7 re-derivation after A3V3-PAGR; disk only; cap 2.5, box 30 min
