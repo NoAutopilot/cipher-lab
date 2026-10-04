@@ -67,3 +67,20 @@ before the blind passes and the f.120r reconciliation are done, and any f.120r l
 agreement, disagreements kept as pass A's token marked '?' (test 1's rule for f.90v's Teulet lines).
 Units: 2 blind Sonnet passes per page (crop paths only, never the key, Teulet or any reading) + 1 reconciliation by this worker = 3 units
 per page, ~USD 2.5 per page (test 2's rate); cap USD 6, box ends 05:27 UTC; f.120r is not started if it would cross 80% of either.
+
+## Amendment 2 (N4-ES132B, LANE-NEAR4, account 2, 4 Oct 2026, written 04:37 UTC by date -u before any f.90r or f.91r crop or decode)
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave2.md` job N4-ES132B. Pages: **f.90r** (canvas 87 right, the f.89 letter's
+second recto, page key `f90r`) then **f.91r** (canvas 88 right, the letter's last page before/with the dating line "De Madrid a xix de
+Sept.e MDLXXVIII", page key `f91r`); both added to `test2.py` PAGES (lines L01-L40), no other change to statistic, nulls, seeds,
+gate (b), calibration rule (< 250 key letters -> same-length f.90v known-answer prefix), err_2reader or grading.
+Scope check: `cabinet_noir_map.tsv` row 89 `cn_read = no`; fresh depth-5 clone of el-descifrador/cabinet-noir 4 Oct 2026 04:36 UTC:
+last commit still 47b6db9 (2 Oct 2026), es132-vargas-mexia/ (32 entries) has no f089/f090/f091 folder.
+Printed overlap: Teulet vol.5 pp.161-162 prints one paragraph of this letter = f.90v L10-L26 (test 1). f.90r precedes it and f.91r
+follows f.90v L27 (unprinted, "... en lo del trigo"), so both pages are expected to fall under (b) only. Overlap clause (as amendment 1):
+if a decode shows any line of f.90r or f.91r continuing Teulet's printed 19 Sept 1578 paragraph (`teulet_19sep1578.txt`), those lines
+are scored under (a) exactly as PREREG_test1.md (a) and excluded from (b), reconciled only by A/B agreement (pass A's token marked '?'
+on splits). This worker does not read `teulet_19sep1578.txt` or `reading_f90v.txt` before both pages' blind passes and reconciliations
+are done.
+Units: 2 blind Sonnet passes per page (crop paths only, never the key, Teulet or any reading) + 1 reconciliation by this worker =
+3 units per page, ~USD 2.5 per page (test 2's rate); cap USD 6, box ends 05:35 UTC; f.91r is not started if it would cross 80% of
+either (box: not started after 05:11 UTC).
