@@ -9,6 +9,10 @@ slower, quote-based process. See `NOTES.md` for the full catalogue findings behi
 1. **f.11** — the folio already identified (19 Sept 2026 scout) as the likely contemporary decipher of f.10's
    letter, or at minimum more of Digby key no. 129. This is the first thing to request; it directly finishes
    f.10's partial reading.
+   **Correction, 4 Oct 2026 (A3V-VROY2, AUDIT.md audit 2 finding 2):** the BL's own catalogue entry
+   (searcharchives.bl.uk/catalog/040-001967027) reads "ff. 11r-v; Letter of King Charles I to James Butler, 1st
+   Marquess of Ormond ... n.d. [1645, after 27 Feb]. Endorsed as a copy of the King's letter to Ormond." f.11 is
+   not f.10's decipherment; the premise of this item is withdrawn, the priority is the orchestrator's call.
 2. **ff.100-101, 102-103, 105-106, 108-109** — catalogued as further royalist cipher-key items in this volume
    ("unidentified royalist keys" at 105-106 and 108-109; King & Queen at 100-101; Digby/Walsingham at 102-103).
    None of these have been matched to a name or tried against f.9 or f.10 yet. Any could be the rest of key

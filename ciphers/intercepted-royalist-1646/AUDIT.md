@@ -118,3 +118,94 @@ this target (the rest of key 129, or f.11's possible decipher) would need.
 Nothing to post as a reading. If anything goes to Aymeloglu, it is a contribution note (the shuffled-key control
 numbers, the image check of his Evelyn values, 141 = de, and the OCR-vs-page digits 422/162/356 that he already read
 correctly), through the outreach gates, never as a reading of ours.
+
+# AUDIT 2 (A3V-VROY2, 4 Oct 2026): f.10 partial reading
+
+Verifier: A3V-VROY2 (account 3 worker for LANE-A3V; brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave1.md`),
+4 Oct 2026, 02:53-03:01 UTC. A separate session from the solvers (LIKELY-9, GAPS, GAPS2) and from audit 1
+(VERIFY-ROYALIST-1646). Its job was to test audit 1's N0 adversarially, not to protect it.
+
+**Claim under audit:** audit 1's verdict, N0, key source published: the f.10 partial reading is Aymeloglu's own key
+applied to his own transcription (his `apply_key.py`).
+
+## Verdict
+
+| item | class | prior plaintext | prior decipherment | key source | evidence quality / confidence |
+|---|---|---|---|---|---|
+| f.10, partial reading (192 of 735 cipher tokens carry a key value) | **N0, confirmed** | no full plaintext located (no period or printed decipherment found in any family below) | **yes, of this very item, at the same partial level**: A. Aymeloglu, github.com/aaymeloglu/unsolved-ciphers `royalist-1646/` (key identified and partial key, commit 16ec608, 16 Sept 2026; folder last changed c1f25e4, 18 Sept 2026; repository HEAD d2800bb2, 27 Sept 2026, which is the commit our transcription quotes) | **published** (Aymeloglu's modern reconstruction of the period key no. 129, credited) | high: reproduced token for token this session (below); search negative is a search result |
+| f.9 | not classified | -- | -- | -- | nothing read (12/151 letter tokens, no signal) |
+
+**Credit line.** A. Aymeloglu, *Intercepted royalist letters, May 1646 (BL Add MS 72438 ff. 9-10): key identified,
+partial reading*, github.com/aaymeloglu/unsolved-ciphers, folder `royalist-1646/` (work of 16 Sept 2026, commit
+16ec608; solvers ported 18 Sept 2026, c1f25e4; cited at HEAD d2800bb2, 27 Sept 2026). Repository has no licence:
+cited, no code copied (rule 8).
+
+**Safe sentence (unchanged from audit 1, one figure added).** "A. Aymeloglu identified BL Add MS 72438 f.10 (13 May
+1646) as Digby-cabinet key no. 129 and published a partial reading (unsolved-ciphers, 16-27 Sept 2026). We reproduced
+it (731 of 735 tokens identical), found that his key beats 20 value-shuffled copies of itself on f.10 (rank 1 of 21),
+and checked the key's Evelyn-derived values against the page images of Evelyn's *Diary and Correspondence* iv 178-179
+(38 of 66 rows match, shuffled mean 0.5). About three quarters of the letter (543 of 735 cipher tokens) still has no
+key value; no full decipherment located."
+
+**Unsafe sentence.** "We read (or deciphered) the 13 May 1646 letter to Charles I" -- or any wording that makes the
+partial reading ours, or implies f.11 or any other leaf holds its contemporary decipherment (see finding 2).
+
+## Step 1: reproduction test (the N0 basis)
+
+Cloned github.com/aaymeloglu/unsolved-ciphers to the scratchpad only (HEAD d2800bb2, 27 Sept 2026 22:57 -0500; the
+`royalist-1646/` folder's last commit is c1f25e4, 18 Sept 2026). Ran his own renderer unmodified:
+`python3 apply_key.py key129.txt f10_ct.txt` (exit 0). Parsed his output (clear text in [brackets] dropped,
+`<n>` = unkeyed) and compared token by token against our committed `reading_f10_tokens.tsv` (clear rows dropped):
+
+| | count |
+|---|---|
+| cipher tokens, his / ours | 735 / 735 (signs agree at every position) |
+| identical (value or both unkeyed) | **731** (U 543, C 160, I 12, M 10, H 6) |
+| differ | **4**: 111 = "were" at 9:29 and 10:41 (unkeyed in his key129.txt, "were" C here from GAPS2's Evelyn page read); 351 at 8:13 and 11:22 ("my?" in his rendering, "my" C here from the Evelyn page) |
+| keyed tokens, his / ours | 190 / 192 |
+
+Our own `python3 tools/decode_key.py ciphers/intercepted-royalist-1646 --check` (origin/main 0629ef40): "f10_ct.tsv:
+tokens 735: C 164, H 6, I 12, M 10, U 543 ... reading up to date". So the reading is his, plus two values and two
+grade upgrades from our image check of his own named witness. N0 stands.
+
+## Step 2: independent search log (4 Oct 2026, 02:54-03:00 UTC)
+
+Audit 1's families (CSPD 1645-7, Bruce, Nicholas Papers i, Evelyn iv, Cary i, HMC Portland i, Clarendon calendar i,
+IA global, Google Books, OpenAlex, S2, DECODE, Cryptiana, both solver repositories) are not repeated; this pass
+searched what audit 1 did not.
+
+| family | searched (this session) | result |
+|---|---|---|
+| (a) canonical series | Thurloe State Papers i (1742, `bim_eighteenth-century_a-collection-of-the-stat_thurloe-john_1742_1`); *State Papers collected by Edward Earl of Clarendon* (`10622705bsb`, 150 mentions of 1646); Calendar of the Committee for Compounding (`cu31924024797890`): `tools/print_check.py --only ia`, 8 phrases (madame vantelet, madame de brederode, madame dona, comfort and encourage your majesty, resolved to expect your majesty, done noe great hurt, averse were extream, have done no great hurt god preserve), plus a direct grep of each djvu text for Vantelet/Ventelet, Weckherlin, "13 May 1646" | no hits. Thurloe's 22 "Brederode" are unrelated Dutch affairs; Clarendon SP: no Vantelet, no decipherment of a 13 May 1646 letter |
+| (b) sender/recipient correspondence | *Letters of Queen Henrietta Maria* (Green 1857, `lettersofqueenhe00henr`); Montereul correspondence ii (`diplomaticcorres02mont`); vol. i (`diplomaticcorres01mont` djvu HTTP 500; alternate copy `diplomaticcorres01montiala` searched instead) | no phrase hits; Green's one "Ventelet" is a 1629 errand, Davenant hits are 1642-46 messenger mentions, none quoting this letter. Sender unknown, so no sender edition |
+| (c) documentary editions | Commons Journal iv on British History Online, read from the page (`commons-jrnl/vol4/pp553-555`, HTTP 200): "Die Lunae, 25 Maii, 1646. A Letter from Sir Thomas Fairfax ... of 22 Maii 1646, with several intercepted Letters inclosed, was this Day read ... Ordered, That the several intercepted Letters in Characters be delivered over to Sir Walter Erle; to the end the said Letters in Cypher may be decyphered. And the said Letters were delivered to Sir Walter Erle accordingly; being Five in Number." pp555-556 (26 May) has no report. The 30 May report (Erle on Nicholas to Ashburnham, 15 May, per Aymeloglu's README) was not reached (page navigation failed, stopped after 3 requests), so cited, not re-verified; Montereul i alternate copy (`diplomaticcorres01montiala`) searched: no hits | a Parliamentary decipherment of five May 1646 intercepts was ordered; none of f.10 located in print. If Erle's decipher of f.10 was made, it would be a manuscript, not an edition |
+| (d) holding archive | BL catalogue JSON, searcharchives.bl.uk/catalog/040-001967027?format=json (HTTP 200): "f. 10r: Intercepted letter to King Charles I, 13 May 1646. Largely in (undecoded) cipher." and **"ff. 11r-v; Letter of King Charles I to James Butler, 1st Marquess of Ormond, Lord Lieutenant of Ireland. n.d. [1645, after 27 Feb]. Endorsed as a copy of the King's letter to Ormond."** Deciphered or partly decoded leaves in the volume are ff.1, 4, 5-6, 7, 12-13, 14-15, 19, 107 ("partially decoded, n.d.", DECODE 8728, already known Decrypted), 171 ("limited deciphering, n.d.") | f.10 still undecoded at the holding archive; **f.11 is not a decipherment of f.10** (finding 2) |
+| (e) full text | Google Books API (keyed, `country=US`): "Add MS 72438" (3 volumes: Turnbull, *Prince Rupert of the Rhine* 2025; Britland, *Women Writing in a Time of War, 1642-1689* 2025; Gentles, *The English Revolution and the Wars in the Three Kingdoms* 2014; all snippets bibliography entries); "Vantelet" "Brederode" 1646 (0); "Davenant" "13 May 1646" (Clarendon calendar and unrelated); "letter to the King" "13 May 1646" cipher (HMC/Lords MSS, unrelated); "Weckherlin" intercepted 1646 (Leibniz volume, Erle/Weckherlin background only); Britland + Weckherlin/Vantelet + cipher (0); 3 queries HTTP 503 (unsearched) | no quotation or decipherment of f.10 in any snippet. Whether Britland 2025 or Turnbull 2025 discuss f.10 in their text is not determinable from snippets (PARTIAL view); both cite the volume only in bibliographies as far as seen |
+| (f) solver repositories | aaymeloglu/unsolved-ciphers re-cloned (the N0 source); Bourdeau's repository not re-cloned (audit 1, 2 Oct, 34e0fc89: no reading) | as audit 1 |
+| (g) scholarship | OpenAlex (keyed): "Weckherlin cipher" (5), "Weckherlin decipherer parliament" (4), "intercepted royalist letters 1646 cipher Henrietta Maria" (4). Read in full: Carlton, "An Anglo-Dutch Power Couple", *Early Modern Low Countries* 2025 (doi 10.51750/emlc19227, OA PDF): cites Add MS 72438 ff.76r and 89v (Heenvliet's key) and Add MS 33596 f.38v, never f.10. Ellis, *Military intelligence operations during the first English Civil War 1642-1646* (Southampton PhD 2010, eprints 361576): PDF HTTP 403, unsearched. CrossRef "Weckherlin cipher intercepted 1646": 5 rows, reference-work entries only. JSTOR: audit 1 already queued one row in each family (JSTOR-QUEUE.tsv rows 139-140, both `queued`), so none added | no work on this letter's decipherment located; Ellis unreachable |
+
+Requests this session: github.com 1 clone; archive.org 8 + be-api.us.archive.org 8; www.british-history.ac.uk 6 (3 of them a failed next-page walk); searcharchives.bl.uk 1;
+www.googleapis.com 16 (3 HTTP 503, plus 6 wasted no-op volume calls by a script error, no result used);
+api.openalex.org 4; api.crossref.org 1; emlc-journal.org 1; eprints.soton.ac.uk 1 (403, not retried). Subagent
+calls: 0. Downloaded djvu texts are cached under `sources/ia-fulltext/print-check/` by print_check.py.
+
+## Step 4: postmortem and corrections
+
+1. **Audit 1's diff description is stale in two details, not in substance.** It said the two 111 = "were" tokens were
+   M; key.tsv now grades 111 C (source evelyn-img, GAPS2), and the token file agrees. It said 351 "my?" was one grade
+   mark; it is two tokens (8:13, 11:22). Totals unchanged (190 vs 192 keyed). Corrected here; audit 1's text left as
+   written.
+2. **f.11 is not the contemporary decipherment of f.10 -- found, partly applied.** NOTES.md (the "Remaining gaps"
+   line "the contemporary decipher of f.10 (f.11; ...)") and REQUEST.md item 1 ("f.11 -- ... the likely contemporary
+   decipher of f.10's letter ... directly finishes f.10's partial reading") rest on Aymeloglu's guess ("not a DECODE
+   record, so probably plaintext, possibly Weckherlin's decipher of f. 10"). The BL's own catalogue entry says
+   ff.11r-v is a copy of Charles I to Ormond, [1645]. A dated note is appended to both places (no line removed); the
+   order priority itself is the orchestrator's call. The other leads in that gap line (Bodleian Tanner MSS 59-60,
+   TNA SP 16/514) are untouched by this finding.
+3. **Over-claim grep.** No sentence in the folder calls the reading ours, new, first or solved; the NEAR.md row and
+   the PROGRESS.tsv note say N0 and Aymeloglu's. Nothing to correct beyond finding 2.
+4. **No SECOND-OPINIONS-QUEUE.tsv row** owed (N0, below N3).
+5. **Leads for the solver side, not run (Usage 7):** Bodleian Clarendon MS 95 (Heenvliet's Hague letter-book
+   1642-51, 567 letters, per Carlton n.51) is a Hague-court source in the same circle as f.10's names (Brederode,
+   Dona, Vantelet, "Mylord"); BL Add MS 33596 ("Royalist cipher keys", f.38v per Carlton) is a royalist key
+   collection not yet in NOTES.md. Neither is a decipherment of f.10.
