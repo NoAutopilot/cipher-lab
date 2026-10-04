@@ -463,3 +463,68 @@ Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-rea
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85, no material quality gain on item 43's leaves
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gaps; cheapest next: 44-clear vs 43-cipher alignment with word/name codes allowed plus matched nomenclator control and a second f81R reader, ~$4
+
+## N8-SEU: nomenclator-model alignment, matched control, second f81R reader (4 Oct 2026, account 2)
+
+Worker N8-SEU (LANE-NEAR8, account 2, Opus 5.5; reader subagent Sonnet), brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`.
+Same pair as SEURE-KP (f85R clear L01-08, 407 letters, vs f81R cipher L01-20), different alignment model, so this is not
+a re-tuning of the letter model (rule 3 third-attempt clause not engaged). Pre-registration `kp/PREREG-N8.md`, pushed
+7e3ff54c after reader B returned and before err_2reader or any score. Script `kp/nom_test.py` (imports
+`tools/interlinear_align.run_align`, `--code-prefix @` + `--word-code-prefix %`: numerals >= 12 are word/name codes taking
+0..8 letters, every other sign 0-1 letter; default null cost). `python3 kp/nom_test.py P.txt f81R_cipher_read.tsv
+f81R_cipher_readB.tsv result_n8.json --err 0,0.242,0.484 --nulls 0,0.10 --ctl-seeds 3 --ctl-draws 20 --draws 200`;
+log `kp/nom_run.log`, numbers `kp/result_n8.json`.
+
+**Second reader.** One blind Sonnet call on the existing `images/kp/f81R_L01..L20` crops (no access to reader A):
+`kp/f81R_cipher_readB.tsv`, 451 signs, 95 labels, self-rated 0.35 (legend `kp/f81R_cipher_readB_legend.txt`).
+`kp/err2.py` (method in PREREG-N8): **err_2reader = 0.484** after a greedy 1:1 mapping of ad-hoc labels (11 pairs),
+0.631 by label identity alone (`kp/err2.json`). Numerals >= 12: 11 in A (2.4%), 13 in B.
+
+**Matched nomenclator control (ran first).** P enciphered with numeral word codes 12-100 on its most frequent words to
+A's 2.4% code share, letters homophonic over K = 72, at null share 0% / 10% and injected sign error 0 / e2/2 / e2;
+3 keys x 20 shuffled-gloss draws per cell.
+
+| control cell | S* per key | pass (S* > own null p95 and max) |
+|---|---|---|
+| 0% nulls, 0 error | 0.992 / 0.995 / 0.995 | 3/3 |
+| 0% nulls, 0.242 error | 0.266 / 0.438 / 0.752 | 2/3 |
+| 0% nulls, 0.484 error (= e2) | 0.228 / 0.271 / 0.258 | **0/3** |
+| 10% nulls, 0 / 0.242 / 0.484 error | 0.246-0.263 / 0.237-0.280 / 0.229-0.256 | **0/3 at every level** |
+
+**Target vs nulls (200 draws each).**
+
+| reader | S* (S_r at r = 0.85 / 1.00 / 1.13) | shuffled null mean / p95 / max | rotated null mean / p95 / max | gate |
+|---|---|---|---|---|
+| A (Opus, SEURE-KP) | 0.226 (0.197 / 0.226 / 0.224) | 0.234 / 0.254 / 0.266 | 0.234 / 0.252 / 0.269 | no |
+| B (Sonnet, this job) | 0.228 (0.228 / 0.189 / 0.224) | 0.217 / 0.238 / 0.257 | 0.222 / 0.248 / 0.254 | no |
+
+**Result: non-test at this reader error (PREREG-N8 power condition), not a negative.** Neither reader's alignment beats
+its nulls (A sits below its null mean; B 0.228 vs p95 0.238), but the design-matched control passes 0/3 at the measured
+two-reader disagreement (0.484) and only 2/3 at half of it, so the instrument has no power at the reads' own error. The
+10%-null arm fails even at 0% error: `run_align` at its default null cost does not recover a cipher with interspersed
+nulls at this N, so null-bearing designs are untested by this tool here (an instrument limit, not a target finding).
+**Bearing on SEURE-KP (3 Oct):** its letter-model control was bracketed at 40% error, below the 48.4% now measured between
+two readers of the same crops; under rule 3's SALV-DIAG paragraph its FAIL is drawn from an error band the reads cannot
+back up and is better read as a non-test too (its own section is left as written; flagged here for the lane).
+No key fragment drafted; key.tsv / decode --check not run (the gate governs them). Not found: any alignment of f85R's
+clear prose to f81R's cipher above the shuffled or rotated null under either model or either reader. Vision: 1 Sonnet
+subagent call (40 half-line crops, one leaf); 0 network requests.
+Suggestion (one line, not done): lower the f81R reader error first (the owner's sign sorter on f81R tiles, or a
+reconciliation pass with the two reads), then re-run `kp/nom_test.py` unchanged; separately, a null-tolerant aligner
+setting (null cost ~-1) needs its own 10%-null control before any target run.
+
+## Remaining gaps (N8-SEU, 4 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-reader drafted at 42.9% agreement, diagnostic only; f81R L01-20 read twice (A 461 signs, B 451 signs, err_2reader 0.484) and f85R L01-08 clear (407 letters) in kp/, diagnostic only.
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%, NOTES sections above), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, f85R-f87R) - blocker: not-attempted; known-plaintext alignment of f85R clear vs f81R cipher is a non-test at the reads' measured error (letter model SEURE-KP, nomenclator model N8-SEU: matched control 0/3 at err_2reader 0.484, kp/result_n8.json); next: reconcile readers A and B on the f81R crops (or a sign-sorter pass on f81R tiles) to bring err below ~0.24 where the control passes 2/3, then re-run kp/nom_test.py unchanged, ~$3
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located (six-source log above; Bourdeau: known keys not tried)
+
+## Escalation (N8-SEU, 4 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102): not sign-identical; f81R/f85R openers identical in clear (SEURE-KP)
+- [ ] clear-pages: 44's clear opening vs 43's cipher tried under the letter model (SEURE-KP) and the nomenclator model (N8-SEU); both non-tests at err_2reader 0.484; needs a lower-error f81R read
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [n/a] print: Ribier and Francisque-Michel read in full, neither prints these letters
+- [n/a] key-rebuild: no decipherment, key sheet or deciphered copy found to rebuild from
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85, no material quality gain on item 43's leaves
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gaps; cheapest next: reconcile f81R readers A/B (or sorter pass) to err < ~0.24, then re-run kp/nom_test.py unchanged, ~$3
