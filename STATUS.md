@@ -3973,7 +3973,8 @@ recovered-passages per the brief (old value kept in `claim_scope_was`). Per-item
 text rather than names/codes (Gramont f.29r 94%, Thurloe P4 95%, Linhares 88%, Gramont f.30 85%, no.86 83%) and for Mercy (92%:
 no external check and no authentication distance on file).
 
-## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3, depth 2), 4 October 2026 (opened 04:53 UTC; closed 05:5x UTC on seven_day allowed_warning)
+## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3), 4 October 2026 (opened 04:53 UTC; live)
+State: CLOSED 05:5x UTC on seven_day allowed_warning (lane orchestrator at depth 2); heading kept for the push guard.
 Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; waves .claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md, -wave2.md (with amendments). Fable workers.
 
 | job | target | session | cap | cost | result |
