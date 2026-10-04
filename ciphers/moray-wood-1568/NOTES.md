@@ -350,3 +350,12 @@ Read so far: 117 S, 16 M, 1 I of 134 glyphs (Aymeloglu's key applied to the tran
 - [x] image-check: one primed pass (GAPS3), two blind passes plus reconciliation (GAPS4), native-resolution pair read (GAPS5), all 2 Oct 2026
 - [ ] retry: edit key.tsv after the no.804 crib test and rerun tools/decode_key.py --check, regrading the 16 M and 1 I tokens per rule 4
 Verdict: keep going: 1 internal gaps; reference sheet built 4 Oct 2026 (RUN1-MOR, no804/refsheet/); cheapest next: one eye check of the 102 DP-placed boxes on no804/refsheet/refsheet_classes.png, ~$0.5; the SP 52/15 leaf waits on its existing order row (103)
+
+## RUN3-MOR eye check of the 102 DP-placed boxes (4 Oct 2026, ~09:3x UTC container clock)
+
+Result first: **11 of 102 DP-placed boxes are unusable (10.8%), above the 10% line, so refsheet_classes.png is not yet fit for labelling as it stands.** One eye look at the sheet at native resolution (three bands; 0 subagents); every flagged box is in no804/refsheet/eyecheck.tsv with its reason.
+- 7 wrong (another glyph or blank paper): L2.43, L2.44, L2.45, L3.41, L3.42, L3.43, L1.15. Six of the seven sit at the ends of lines 2 and 3: the DP drifts there once no GAPS5 anchor remains (L2's last anchor is L2.30, L3's is L3.35), and at L3.42-43 it runs onto the blank margin/fold.
+- 4 clipped (only a fragment of the right glyph): L2.22, L1.16, L1.43 (M's loop outside the box, both times), L1.42.
+- 4 wide/offset but recognisable (not counted): L2.38, L2.39, L2.42, L2.21.
+- Anchored box seen in passing (not in the 102): L1.41 labelled A shows a z-like sign with a slash, not the triangle -- worth a second look at the GAPS5 anchor 'L1.41': 42.
+- Fix: add eye anchors at the line ends (L2.40-L2.45 and L3.38-L3.43 from the image, plus L1.15 and L2.22) to ANCH in align_boxes.py, widen M boxes leftward to take in the loop (a per-sign margin or a 1:2 move for M), re-run align_boxes.py and build_refsheet.py, and re-check only the flagged boxes; ~$0.5. No reading or regrade done (brief).

@@ -1,0 +1,18 @@
+# RUN3-MOR eye check, 4 Oct 2026, of refsheet_classes.png (one look at native-res bands; 102 DP-placed boxes, 32 GAPS5-anchored not graded)
+# kind: wrong = box shows another glyph or blank paper; clipped = right glyph not recognisable (only a fragment in the box); wide = right glyph plus a neighbour (usable)
+position	label	kind	why
+L2.43	A	wrong	box shows an N-shape (xi-like), not the triangle; line-end drift L2
+L2.44	N	wrong	box shows an o-shape, not N; line-end drift L2
+L2.45	o	wrong	blank paper / page edge, no glyph
+L3.41	F	wrong	box shows a Zh-shape (crossed z), not f; line-end drift L3
+L3.42	N	wrong	blank paper with fold/shadow, no glyph
+L3.43	Zh	wrong	blank paper with fold/shadow, no glyph
+L1.15	x	wrong	box shows a looped e/o-shape, not the x-cross
+L2.22	N	clipped	only one vertical stroke in the box; N not recognisable
+L1.16	M	clipped	only the trailing 7-hook; the loop of M (cf L2.33, L2.40, L3.10) is outside the box
+L1.43	M	clipped	only the trailing 7-hook; loop outside the box
+L1.42	Z5	clipped	fragment of a looped stroke; Z5's z-body not in the box (M-graded token, cf L1.26, L4.5)
+L2.38	A	wide	triangle cut at the left edge, offset; recognisable
+L2.39	Z3	wide	z cut at the top, offset; recognisable
+L2.42	r	wide	r plus the following triangle in one box (merged 2:1)
+L2.21	P	wide	P plus a following x in one box
