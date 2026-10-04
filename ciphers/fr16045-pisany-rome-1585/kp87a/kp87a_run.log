@@ -1,0 +1,1 @@
+tx87/ciphertext_f301v.tsv {'tokens': 315, 'dropped': 15, 'decoded_letters': 384, 'score': 0.6302, 'keyshuffle_p99': 0.3959, 'keyshuffle_mean': 0.3467, 'order_p99': 0.4766, 'order_mean': 0.4251, 'above_both': True}
