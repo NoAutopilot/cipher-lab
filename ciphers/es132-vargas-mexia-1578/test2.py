@@ -3,6 +3,7 @@
 
 Pages f.89r, f.89v (f.89 letter, 19 Sept 1578), f.119v upper and f.120r L05-L08 (amendment 1), none printed by Teulet: gate (b);
 f.120r L01-L04 continue Teulet's 15 Oct 1578 paragraph: gate (a) as PREREG_test1 (a), function gate_a (amendment 1).
+f.90r and f.91r (f.89 letter, amendment 2, N4-ES132B): gate (b).
 S_b (es16 4-gram, test1's model) vs 200 token-order shuffles (ARM-C1) and 200 key shuffles, nulls first; gate S_b > p99 of both.
 Calibration for pages under 250 key letters: same-length prefix of test 1's f.90v known-answer lines (blind passes).
 
@@ -30,6 +31,8 @@ PAGES = {
     'f89v': dict(lines=['L%02d' % i for i in range(1, 41)]),
     'f119vU': dict(lines=['L%02d' % i for i in range(1, 30)]),
     'f120r': dict(lines=['L%02d' % i for i in range(5, 30)]),  # amendment 1 (N4-ES132, 4 Oct 2026): L05-L08 unprinted -> (b)
+    'f90r': dict(lines=['L%02d' % i for i in range(1, 41)]),  # amendment 2 (N4-ES132B, 4 Oct 2026)
+    'f91r': dict(lines=['L%02d' % i for i in range(1, 41)]),  # amendment 2 (N4-ES132B, 4 Oct 2026)
 }
 # amendment 1 overlap clause: f.120r L01-L04 continue Teulet's printed 15 Oct 1578 paragraph -> gate (a) exactly as PREREG_test1 (a)
 A_PAGES = {

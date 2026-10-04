@@ -68,7 +68,7 @@ agreement, disagreements kept as pass A's token marked '?' (test 1's rule for f.
 Units: 2 blind Sonnet passes per page (crop paths only, never the key, Teulet or any reading) + 1 reconciliation by this worker = 3 units
 per page, ~USD 2.5 per page (test 2's rate); cap USD 6, box ends 05:27 UTC; f.120r is not started if it would cross 80% of either.
 
-## Amendment 2 (N4-ES132B, LANE-NEAR4, account 2, 4 Oct 2026, written 04:37 UTC by date -u before any f.90r or f.91r crop or decode)
+## Amendment 2 (N4-ES132B, LANE-NEAR4, account 2, 4 Oct 2026, written 04:36 UTC by date -u before any f.90r or f.91r crop or decode)
 Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave2.md` job N4-ES132B. Pages: **f.90r** (canvas 87 right, the f.89 letter's
 second recto, page key `f90r`) then **f.91r** (canvas 88 right, the letter's last page before/with the dating line "De Madrid a xix de
 Sept.e MDLXXVIII", page key `f91r`); both added to `test2.py` PAGES (lines L01-L40), no other change to statistic, nulls, seeds,
