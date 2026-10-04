@@ -1,4 +1,4 @@
-# PREREG-MANT0501 (4 Oct 2026, written ~09:35 UTC by the clock, RUN3-MANT, account 1), before any pass or statistic
+# PREREG-MANT0501 (4 Oct 2026, written 09:26 UTC by the clock, RUN3-MANT, account 1), before any pass or statistic
 
 Leaf: SHStA Dresden 10026 Loc. 694/08, film frame 0501 (sha256 prefix b27f0809877381af, as GAPS207). Material: crops from
 `tools/iiif_lines.py --image` (one crop per code line, gloss margin above), two blind Sonnet passes, reconciled by the worker
