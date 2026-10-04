@@ -1,0 +1,107 @@
+{
+ "statistic": "T'",
+ "n_letter_lines": 24,
+ "T_obs": -35.046,
+ "perms": 20000,
+ "seed": 205,
+ "p": 0.253987,
+ "omission": "3-12",
+ "controls": {
+  "P-coin": {
+   "texts": 20,
+   "perms_each": 2000,
+   "p_median": 0.0005,
+   "share_p_lt_0.001": 0.65,
+   "share_p_lt_0.05": 0.9
+  },
+  "P-half": {
+   "texts": 20,
+   "perms_each": 2000,
+   "p_median": 0.0015,
+   "share_p_lt_0.001": 0.45,
+   "share_p_lt_0.05": 0.95
+  },
+  "U-half": {
+   "texts": 20,
+   "perms_each": 2000,
+   "p_median": 0.53373,
+   "share_p_lt_0.001": 0.0,
+   "share_p_lt_0.05": 0.05
+  }
+ },
+ "power": 0.65,
+ "fpr_U_half": 0.05,
+ "valid": true,
+ "verdict": "not detected",
+ "bands_descriptive": {
+  "3-5": {
+   "P-coin": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.0005,
+    "share_p_lt_0.001": 0.8,
+    "share_p_lt_0.05": 0.9
+   },
+   "P-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.0005,
+    "share_p_lt_0.001": 1.0,
+    "share_p_lt_0.05": 1.0
+   },
+   "U-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.54473,
+    "share_p_lt_0.001": 0.0,
+    "share_p_lt_0.05": 0.0
+   }
+  },
+  "6-8": {
+   "P-coin": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.0005,
+    "share_p_lt_0.001": 0.7,
+    "share_p_lt_0.05": 1.0
+   },
+   "P-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.002,
+    "share_p_lt_0.001": 0.5,
+    "share_p_lt_0.05": 1.0
+   },
+   "U-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.52024,
+    "share_p_lt_0.001": 0.0,
+    "share_p_lt_0.05": 0.0
+   }
+  },
+  "9-12": {
+   "P-coin": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.0035,
+    "share_p_lt_0.001": 0.4,
+    "share_p_lt_0.05": 0.9
+   },
+   "P-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.0015,
+    "share_p_lt_0.001": 0.5,
+    "share_p_lt_0.05": 1.0
+   },
+   "U-half": {
+    "texts": 10,
+    "perms_each": 2000,
+    "p_median": 0.61119,
+    "share_p_lt_0.001": 0.0,
+    "share_p_lt_0.05": 0.1
+   }
+  }
+ }
+}
