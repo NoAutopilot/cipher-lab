@@ -1,0 +1,1287 @@
+line	position	sign	confidence	alt	why
+L01	1	{curl}	H		agree
+L01	2	d	H		agree
+L01	3	y	H		agree
+L01	4	#	H		agree
+L01	5	tz	H		agree
+L01	6	P	H		agree
+L01	7	tz	H		agree
+L01	8	m	H		agree
+L01	9	L	H		agree
+L01	10	tz	H		agree
+L01	11	6	H		agree
+L01	12	m	H		agree
+L01	13	x	H		agree
+L01	14	#	H		agree
+L01	15	#	H		agree
+L01	16	d	H		agree
+L01	17	r	M	B:2	differ
+L01	18	#	H		agree
+L01	19	:	H		agree
+L01	20	m	H		agree
+L01	21	y	H		agree
+L01	22	#	M	B:-	gap
+L01	23	P	M	B:-	gap
+L01	24	tz	M	B:-	gap
+L01	25	p	M	B:-	gap
+L01	26	P	M	B:-	gap
+L01	27	#	H		agree
+L01	28	P	H		agree
+L01	29	tz	H		agree
+L01	30	p	H		agree
+L01	31	{cross}	M	B:S	differ
+L01	32	o	H		agree
+L01	33	p	H		agree
+L01	34	m	H		agree
+L01	35	o	H		agree
+L01	36	P	H		agree
+L01	37	y	H		agree
+L01	38	#	H		agree
+L01	39	d	H		agree
+L01	40	tz	H		agree
+L01	41	m	H		agree
+L01	42	p	H		agree
+L01	43	#	H		agree
+L01	44	tz	H		agree
+L01	45	P	H		agree
+L01	46	z	M	B:3	differ
+L01	47	P	H		agree
+L01	48	tz	H		agree
+L01	49	d	M	A:-	gap
+L01	50	S	M	B:b	differ
+L01	51	L	M	B:P	differ
+L02	1	m	H		agree
+L02	2	x	H		agree
+L02	3	#	H		agree
+L02	4	y	H		agree
+L02	5	m	H		agree
+L02	6	P	H		agree
+L02	7	V	H		agree
+L02	8	m	H		agree
+L02	9	@	H		agree
+L02	10	{curl}	M	B:g	differ
+L02	11	d	H		agree
+L02	12	y	H		agree
+L02	13	#	H		agree
+L02	14	@	H		agree
+L02	15	d	M	B:c	differ
+L02	16	:	M	B:l	differ
+L02	17	:	H		agree
+L02	18	d	H		agree
+L02	19	P	M	B:x	differ
+L02	20	S	H		agree
+L02	21	P	H		agree
+L02	22	#	H		agree
+L02	23	y	H		agree
+L02	24	m	H		agree
+L02	25	#	H		agree
+L02	26	d	H		agree
+L02	27	r	H		agree
+L02	28	#	H		agree
+L02	29	m	H		agree
+L02	30	x	H		agree
+L02	31	V	H		agree
+L02	32	y	M	A:-	gap
+L02	33	m	H		agree
+L02	34	x	H		agree
+L02	35	{curl}	M	B:g	differ
+L02	36	d	H		agree
+L02	37	y	H		agree
+L02	38	:	M	B:-	gap
+L02	39	:	H		agree
+L02	40	m	H		agree
+L02	41	d	H		agree
+L02	42	z	H		agree
+L02	43	o	H		agree
+L02	44	o	H		agree
+L02	45	k	H		agree
+L02	46	o	H		agree
+L02	47	o	H		agree
+L02	48	:	H		agree
+L03	1	3	H		agree
+L03	2	P	H		agree
+L03	3	V	M	B:-	gap
+L03	4	y	H		agree
+L03	5	o	H		agree
+L03	6	o	H		agree
+L03	7	m	H		agree
+L03	8	:	H		agree
+L03	9	:	H		agree
+L03	10	7	H		agree
+L03	11	z	M	B:L	differ
+L03	12	P	H		agree
+L03	13	m	H		agree
+L03	14	y	H		agree
+L03	15	tz	H		agree
+L03	16	#	H		agree
+L03	17	d	H		agree
+L03	18	tz	H		agree
+L03	19	#	H		agree
+L03	20	x	H		agree
+L03	21	z	H		agree
+L03	22	z	H		agree
+L03	23	R	H		agree
+L03	24	@	H		agree
+L03	25	V	M	B:-	gap
+L03	26	#	H		agree
+L03	27	y	M	B:g	differ
+L03	28	m	H		agree
+L03	29	x	H		agree
+L03	30	S	H		agree
+L03	31	tz	H		agree
+L03	32	m	H		agree
+L03	33	p	H		agree
+L03	34	a	H		agree
+L03	35	r	M	B:y	differ
+L03	36	y	H		agree
+L03	37	d	H		agree
+L03	38	p	H		agree
+L03	39	m	H		agree
+L03	40	p	H		agree
+L03	41	k	H		agree
+L03	42	a	H		agree
+L03	43	y	M	B:g	differ
+L03	44	P	H		agree
+L03	45	x	H		agree
+L04	1	o	H		agree
+L04	2	o	H		agree
+L04	3	m	H		agree
+L04	4	o	H		agree
+L04	5	o	H		agree
+L04	6	y	M	A:-	gap
+L04	7	p	M	A:-	gap
+L04	8	m	M	A:-	gap
+L04	9	d	M	A:-	gap
+L04	10	V	M	B:d	differ
+L04	11	o	H		agree
+L04	12	o	H		agree
+L04	13	m	M	B:S	differ
+L04	14	:	H		agree
+L04	15	:	H		agree
+L04	16	d	M	A:-	gap
+L04	17	t	M	A:-	gap
+L04	18	tz	M	A:-	gap
+L04	19	3	M	A:-	gap
+L04	20	S	M	B:P	differ
+L04	21	o	H		agree
+L04	22	o	H		agree
+L04	23	d	H		agree
+L04	24	tz	H		agree
+L04	25	#	H		agree
+L04	26	z	M	B:3	differ
+L04	27	d	H		agree
+L04	28	p	H		agree
+L04	29	x	H		agree
+L04	30	#	H		agree
+L04	31	g	H		agree
+L04	32	m	H		agree
+L04	33	@	H		agree
+L04	34	m	H		agree
+L04	35	#	H		agree
+L04	36	V	M	B:y	differ
+L04	37	p	H		agree
+L04	38	m	H		agree
+L04	39	d	H		agree
+L04	40	#	H		agree
+L04	41	m	H		agree
+L04	42	y	H		agree
+L04	43	z	M	A:-	gap
+L04	44	P	H		agree
+L04	45	m	H		agree
+L05	1	z	M	B:3	differ
+L05	2	d	H		agree
+L05	3	p	H		agree
+L05	4	#	H		agree
+L05	5	tz	H		agree
+L05	6	6	H		agree
+L05	7	P	H		agree
+L05	8	o	H		agree
+L05	9	o	H		agree
+L05	10	d	H		agree
+L05	11	tz	H		agree
+L05	12	#	H		agree
+L05	13	a	H		agree
+L05	14	@	H		agree
+L05	15	m	H		agree
+L05	16	P	H		agree
+L05	17	d	H		agree
+L05	18	m	H		agree
+L05	19	:	M	B:-	gap
+L05	20	:	H		agree
+L05	21	d	H		agree
+L05	22	e	H		agree
+L05	23	n	H		agree
+L05	24	m	H		agree
+L05	25	p	H		agree
+L05	26	:	H		agree
+L05	27	:	H		agree
+L05	28	m	H		agree
+L05	29	z	M	B:3	differ
+L05	30	m	H		agree
+L05	31	p	H		agree
+L05	32	#	H		agree
+L05	33	z	H		agree
+L05	34	m	H		agree
+L05	35	d	H		agree
+L05	36	#	H		agree
+L05	37	g	H		agree
+L05	38	d	H		agree
+L05	39	o	H		agree
+L05	40	o	H		agree
+L05	41	S	H		agree
+L05	42	6	H		agree
+L05	43	m	H		agree
+L05	44	d	H		agree
+L06	1	d	M	B:S	differ
+L06	2	P	H		agree
+L06	3	y	H		agree
+L06	4	4	M	B:t	differ
+L06	5	z	H		agree
+L06	6	m	H		agree
+L06	7	p	H		agree
+L06	8	#	H		agree
+L06	9	r	M	B:y	differ
+L06	10	p	H		agree
+L06	11	m	H		agree
+L06	12	L	H		agree
+L06	13	d	H		agree
+L06	14	z	H		agree
+L06	15	d	M	B:S	differ
+L06	16	o	H		agree
+L06	17	o	H		agree
+L06	18	g	H		agree
+L06	19	r	M	B:x	differ
+L06	20	P	H		agree
+L06	21	e	H		agree
+L06	22	g	H		agree
+L06	23	d	H		agree
+L06	24	p	H		agree
+L06	25	#	H		agree
+L06	26	tz	H		agree
+L06	27	m	H		agree
+L06	28	g	H		agree
+L06	29	m	H		agree
+L06	30	c	H		agree
+L06	31	l	H		agree
+L06	32	m	H		agree
+L06	33	x	H		agree
+L06	34	o	H		agree
+L06	35	m	H		agree
+L06	36	x	H		agree
+L06	37	:	H		agree
+L06	38	:	H		agree
+L06	39	y	H		agree
+L06	40	m	H		agree
+L06	41	L	H		agree
+L06	42	:	H		agree
+L06	43	:	H		agree
+L06	44	m	H		agree
+L06	45	a	H		agree
+L07	1	z	H		agree
+L07	2	m	H		agree
+L07	3	d	M	B:t	differ
+L07	4	m	H		agree
+L07	5	x	H		agree
+L07	6	d	H		agree
+L07	7	a	H		agree
+L07	8	S	H		agree
+L07	9	tz	H		agree
+L07	10	m	H		agree
+L07	11	:	H		agree
+L07	12	:	H		agree
+L07	13	#	H		agree
+L07	14	@	H		agree
+L07	15	d	H		agree
+L07	16	o	H		agree
+L07	17	o	H		agree
+L07	18	P	H		agree
+L07	19	o	H		agree
+L07	20	o	H		agree
+L07	21	6	H		agree
+L07	22	#	H		agree
+L07	23	y	H		agree
+L07	24	m	H		agree
+L07	25	a	M	A:-	gap
+L07	26	x	H		agree
+L07	27	o	M	B:c	differ
+L07	28	m	H		agree
+L07	29	o	H		agree
+L07	30	o	H		agree
+L07	31	tz	H		agree
+L07	32	:	H		agree
+L07	33	o	H		agree
+L07	34	P	H		agree
+L07	35	g	H		agree
+L07	36	:	H		agree
+L07	37	:	H		agree
+L07	38	7	H		agree
+L07	39	L	M	A:-	gap
+L07	40	:	H		agree
+L07	41	:	H		agree
+L07	42	y	H		agree
+L07	43	m	H		agree
+L07	44	x	H		agree
+L07	45	P	H		agree
+L07	46	tz	H		agree
+L07	47	p	H		agree
+L08	1	o	H		agree
+L08	2	o	H		agree
+L08	3	d	H		agree
+L08	4	r	M	B:2	differ
+L08	5	6	H		agree
+L08	6	z	H		agree
+L08	7	g	H		agree
+L08	8	d	H		agree
+L08	9	tz	H		agree
+L08	10	m	H		agree
+L08	11	p	H		agree
+L08	12	#	H		agree
+L08	13	V	M	B::	differ
+L08	14	P	H		agree
+L08	15	p	M	B:@	differ
+L08	16	m	H		agree
+L08	17	L	H		agree
+L08	18	P	H		agree
+L08	19	a	H		agree
+L08	20	y	M	A:-	gap
+L08	21	r	M	B:S	differ
+L08	22	t	M	B:to	differ
+L08	23	o	H		agree
+L08	24	r	M	B:P	differ
+L08	25	tz	H		agree
+L08	26	d	H		agree
+L08	27	S	H		agree
+L08	28	P	H		agree
+L08	29	@	H		agree
+L08	30	m	H		agree
+L08	31	p	H		agree
+L08	32	g	H		agree
+L08	33	P	H		agree
+L08	34	o	H		agree
+L08	35	o	H		agree
+L08	36	m	H		agree
+L08	37	a	H		agree
+L08	38	g	H		agree
+L08	39	z	H		agree
+L08	40	m	H		agree
+L08	41	d	H		agree
+L09	1	g	H		agree
+L09	2	m	H		agree
+L09	3	S	H		agree
+L09	4	m	H		agree
+L09	5	y	M	A:-	gap
+L09	6	j	M	B:7	differ
+L09	7	m	H		agree
+L09	8	L	H		agree
+L09	9	z	H		agree
+L09	10	P	H		agree
+L09	11	tz	H		agree
+L09	12	d	M	B:S	differ
+L09	13	a	H		agree
+L09	14	P	H		agree
+L09	15	z	H		agree
+L09	16	z	H		agree
+L09	17	m	H		agree
+L09	18	p	H		agree
+L09	19	#	H		agree
+L09	20	r	M	B:y	differ
+L09	21	p	H		agree
+L09	22	m	H		agree
+L09	23	x	M	B:{star}	differ
+L09	24	m	H		agree
+L09	25	#	M	A:-	gap
+L09	26	y	M	A:-	gap
+L09	27	p	H		agree
+L09	28	m	M	A:-	gap
+L09	29	S	M	A:-	gap
+L09	30	z	M	B:tz	differ
+L09	31	m	H		agree
+L09	32	p	H		agree
+L09	33	z	M	B:3	differ
+L09	34	m	H		agree
+L09	35	p	H		agree
+L09	36	S	M	B:-	gap
+L09	37	z	M	B:w	differ
+L09	38	m	H		agree
+L09	39	p	M	B:x	differ
+L10	1	P	H		agree
+L10	2	#	H		agree
+L10	3	P	H		agree
+L10	4	tz	H		agree
+L10	5	g	H		agree
+L10	6	m	H		agree
+L10	7	d	H		agree
+L10	8	tz	H		agree
+L10	9	6	H		agree
+L10	10	P	H		agree
+L10	11	o	H		agree
+L10	12	o	H		agree
+L10	13	d	H		agree
+L10	14	tz	H		agree
+L10	15	#	H		agree
+L10	16	r	M	B:y	differ
+L10	17	p	H		agree
+L10	18	m	H		agree
+L10	19	#	H		agree
+L10	20	d	H		agree
+L10	21	r	M	B:x	differ
+L10	22	#	H		agree
+L10	23	z	M	B:3	differ
+L10	24	tz	H		agree
+L10	25	D	M	B:-	gap
+L10	26	p	M	B:{swash}	differ
+L10	27	tz	H		agree
+L10	28	z	M	B:3	differ
+L10	29	o	H		agree
+L10	30	o	H		agree
+L10	31	j	M	B:7	differ
+L10	32	m	H		agree
+L10	33	g	H		agree
+L10	34	P	H		agree
+L10	35	tz	H		agree
+L10	36	d	H		agree
+L10	37	r	H		agree
+L10	38	p	H		agree
+L10	39	t	H		agree
+L10	40	:	H		agree
+L10	41	:	H		agree
+L10	42	d	H		agree
+L10	43	e	H		agree
+L10	44	n	H		agree
+L11	1	m	H		agree
+L11	2	S	H		agree
+L11	3	d	M	B:8	differ
+L11	4	p	H		agree
+L11	5	:	H		agree
+L11	6	:	H		agree
+L11	7	y	H		agree
+L11	8	g	H		agree
+L11	9	m	H		agree
+L11	10	x	H		agree
+L11	11	#	H		agree
+L11	12	tz	H		agree
+L11	13	m	H		agree
+L11	14	p	H		agree
+L11	15	@	M	A:-	gap
+L11	16	m	H		agree
+L11	17	r	M	B:x	differ
+L11	18	tz	H		agree
+L11	19	m	H		agree
+L11	20	x	H		agree
+L11	21	#	H		agree
+L11	22	S	H		agree
+L11	23	tz	H		agree
+L11	24	m	H		agree
+L11	25	p	H		agree
+L11	26	@	M	B:c	differ
+L11	27	l	H		agree
+L11	28	P	M	B:-	gap
+L11	29	P	H		agree
+L11	30	6	H		agree
+L11	31	o	H		agree
+L11	32	o	H		agree
+L11	33	d	H		agree
+L11	34	z	H		agree
+L11	35	j	M	B:7	differ
+L11	36	P	H		agree
+L11	37	z	M	B:3	differ
+L11	38	d	H		agree
+L11	39	p	H		agree
+L11	40	d	H		agree
+L11	41	m	H		agree
+L11	42	tz	H		agree
+L12	1	f	H		agree
+L12	2	p	H		agree
+L12	3	m	H		agree
+L12	4	o	M	B:-	gap
+L12	5	o	H		agree
+L12	6	g	H		agree
+L12	7	f	M	A:-	gap
+L12	8	:	H		agree
+L12	9	:	H		agree
+L12	10	d	H		agree
+L12	11	e	H		agree
+L12	12	n	H		agree
+L12	13	m	H		agree
+L12	14	tz	H		agree
+L12	15	P	H		agree
+L12	16	z	M	B:x	differ
+L12	17	o	H		agree
+L12	18	o	H		agree
+L12	19	d	H		agree
+L12	20	r	M	B:z	differ
+L12	21	j	M	B:S	differ
+L12	22	o	H		agree
+L12	23	o	H		agree
+L12	24	P	M	A:-	gap
+L12	25	c	M	B:a	differ
+L12	26	P	H		agree
+L12	27	tz	M	B:6	differ
+L12	28	S	M	B:y	differ
+L12	29	r	M	B:x	differ
+L12	30	m	H		agree
+L12	31	L	H		agree
+L12	32	m	H		agree
+L12	33	p	H		agree
+L12	34	:	H		agree
+L12	35	:	H		agree
+L12	36	j	M	B:7	differ
+L12	37	o	M	B:6	differ
+L12	38	P	H		agree
+L12	39	tz	H		agree
+L12	40	:	H		agree
+L12	41	#	H		agree
+L12	42	r	M	B:z	differ
+L12	43	:	H		agree
+L12	44	:	H		agree
+L12	45	m	H		agree
+L12	46	j	M	B:y	differ
+L12	47	m	H		agree
+L13	1	g	H		agree
+L13	2	tz	H		agree
+L13	3	p	H		agree
+L13	4	S	M	B:-	gap
+L13	5	o	M	B:to	differ
+L13	6	p	H		agree
+L13	7	m	H		agree
+L13	8	:	M	B:-	gap
+L13	9	:	H		agree
+L13	10	g	H		agree
+L13	11	m	H		agree
+L13	12	o	H		agree
+L13	13	o	H		agree
+L13	14	d	M	B:y	differ
+L13	15	m	H		agree
+L13	16	p	H		agree
+L13	17	#	H		agree
+L13	18	tz	M	A:-	gap
+L13	19	z	M	B:3	differ
+L13	20	z	H		agree
+L13	21	m	H		agree
+L13	22	a	H		agree
+L13	23	x	H		agree
+L13	24	#	H		agree
+L13	25	@	M	A:-	gap
+L13	26	m	H		agree
+L13	27	z	M	B:x	differ
+L13	28	m	H		agree
+L13	29	6	H		agree
+L13	30	to	H		agree
+L13	31	z	M	B:x	differ
+L13	32	m	H		agree
+L13	33	d	H		agree
+L13	34	a	M	A:-	gap
+L13	35	A	M	B:S	differ
+L13	36	S	H		agree
+L13	37	tz	H		agree
+L13	38	d	H		agree
+L13	39	p	H		agree
+L13	40	to	H		agree
+L13	41	r	M	B:x	differ
+L13	42	tz	H		agree
+L14	1	g	H		agree
+L14	2	m	H		agree
+L14	3	p	H		agree
+L14	4	k	H		agree
+L14	5	tz	H		agree
+L14	6	x	H		agree
+L14	7	#	H		agree
+L14	8	d	H		agree
+L14	9	r	M	B:x	differ
+L14	10	S	H		agree
+L14	11	:	H		agree
+L14	12	d	H		agree
+L14	13	p	H		agree
+L14	14	a	H		agree
+L14	15	#	H		agree
+L14	16	m	H		agree
+L14	17	6	H		agree
+L14	18	@	H		agree
+L14	19	m	H		agree
+L14	20	o	H		agree
+L14	21	o	H		agree
+L14	22	m	H		agree
+L14	23	p	H		agree
+L14	24	m	H		agree
+L14	25	z	M	B:t	differ
+L14	26	m	H		agree
+L14	27	p	H		agree
+L14	28	#	H		agree
+L14	29	@	H		agree
+L14	30	o	H		agree
+L14	31	o	H		agree
+L14	32	d	H		agree
+L14	33	r	M	B:x	differ
+L14	34	S	H		agree
+L14	35	z	H		agree
+L14	36	tz	H		agree
+L14	37	D	M	B:y	differ
+L14	38	m	H		agree
+L14	39	p	H		agree
+L14	40	#	H		agree
+L15	1	m	H		agree
+L15	2	p	H		agree
+L15	3	S	M	B:t	differ
+L15	4	to	H		agree
+L15	5	r	M	B:x	differ
+L15	6	m	H		agree
+L15	7	6	H		agree
+L15	8	to	H		agree
+L15	9	r	M	B:x	differ
+L15	10	m	H		agree
+L15	11	a	M	B:c	differ
+L15	12	m	H		agree
+L15	13	o	H		agree
+L15	14	d	M	B:o	differ
+L15	15	g	H		agree
+L15	16	m	H		agree
+L15	17	#	H		agree
+L15	18	a	H		agree
+L15	19	a	H		agree
+L15	20	d	H		agree
+L15	21	r	M	B:-	gap
+L15	22	d	M	B:x	differ
+L15	23	:	M	B:S	differ
+L15	24	:	H		agree
+L15	25	d	H		agree
+L15	26	x	M	A:-	gap
+L15	27	r	M	B:6	differ
+L15	28	6	H		agree
+L15	29	o	H		agree
+L15	30	o	H		agree
+L15	31	d	M	B:-	gap
+L15	32	S	H		agree
+L15	33	tz	H		agree
+L15	34	m	H		agree
+L15	35	@	H		agree
+L15	36	P	H		agree
+L15	37	r	M	B:-	gap
+L15	38	o	H		agree
+L15	39	o	H		agree
+L15	40	z	M	B:3	differ
+L15	41	m	H		agree
+L15	42	a	H		agree
+L15	43	m	H		agree
+L15	44	p	H		agree
+L15	45	#	H		agree
+L16	1	P	H		agree
+L16	2	o	H		agree
+L16	3	o	H		agree
+L16	4	m	H		agree
+L16	5	:	H		agree
+L16	6	:	H		agree
+L16	7	to	H		agree
+L16	8	r	M	B:x	differ
+L16	9	m	H		agree
+L16	10	d	H		agree
+L16	11	z	M	B:3	differ
+L16	12	m	H		agree
+L16	13	d	H		agree
+L16	14	m	H		agree
+L16	15	t	M	A:-	gap
+L16	16	p	H		agree
+L16	17	:	H		agree
+L16	18	:	H		agree
+L16	19	a	H		agree
+L16	20	d	H		agree
+L16	21	m	H		agree
+L16	22	x	H		agree
+L16	23	tz	H		agree
+L16	24	m	H		agree
+L16	25	#	H		agree
+L16	26	tz	H		agree
+L16	27	m	H		agree
+L16	28	p	H		agree
+L16	29	k	H		agree
+L16	30	g	H		agree
+L16	31	P	H		agree
+L16	32	z	H		agree
+L16	33	m	H		agree
+L16	34	p	H		agree
+L16	35	:	H		agree
+L16	36	:	H		agree
+L16	37	m	H		agree
+L16	38	j	M	B:y	differ
+L16	39	P	H		agree
+L16	40	S	H		agree
+L16	41	y	M	A:-	gap
+L16	42	m	H		agree
+L16	43	d	M	A:-	gap
+L17	1	z	M	B:3	differ
+L17	2	m	H		agree
+L17	3	o	H		agree
+L17	4	o	H		agree
+L17	5	6	H		agree
+L17	6	tz	M	B:to	differ
+L17	7	z	M	B:3	differ
+L17	8	d	H		agree
+L17	9	r	M	B:z	differ
+L17	10	m	H		agree
+L17	11	p	H		agree
+L17	12	S	M	B:d	differ
+L17	13	to	H		agree
+L17	14	r	M	B:x	differ
+L17	15	tz	H		agree
+L17	16	m	H		agree
+L17	17	x	H		agree
+L17	18	#	H		agree
+L17	19	z	M	B:3	differ
+L17	20	m	H		agree
+L17	21	p	M	A:-	gap
+L17	22	p	H		agree
+L17	23	m	H		agree
+L17	24	y	M	A:-	gap
+L17	25	r	M	B:p	differ
+L17	26	m	H		agree
+L17	27	o	H		agree
+L17	28	o	H		agree
+L17	29	g	H		agree
+L17	30	z	M	B:3	differ
+L17	31	d	H		agree
+L17	32	o	H		agree
+L17	33	o	H		agree
+L17	34	p	H		agree
+L17	35	m	H		agree
+L17	36	L	H		agree
+L17	37	r	M	B:to	differ
+L17	38	m	H		agree
+L17	39	p	H		agree
+L17	40	d	H		agree
+L17	41	m	H		agree
+L17	42	L	H		agree
+L18	1	a	H		agree
+L18	2	P	H		agree
+L18	3	z	H		agree
+L18	4	m	H		agree
+L18	5	@	H		agree
+L18	6	to	H		agree
+L18	7	r	M	B:x	differ
+L18	8	m	H		agree
+L18	9	6	H		agree
+L18	10	to	H		agree
+L18	11	r	M	B:x	differ
+L18	12	m	H		agree
+L18	13	a	M	B:o	differ
+L18	14	P	H		agree
+L18	15	g	H		agree
+L18	16	#	H		agree
+L18	17	S	H		agree
+L18	18	d	H		agree
+L18	19	m	H		agree
+L18	20	x	H		agree
+L18	21	m	H		agree
+L18	22	p	H		agree
+L18	23	#	H		agree
+L18	24	g	H		agree
+L18	25	m	H		agree
+L18	26	a	M	B:c	differ
+L18	27	g	H		agree
+L18	28	tz	H		agree
+L18	29	d	H		agree
+L18	30	m	H		agree
+L18	31	d	H		agree
+L18	32	S	M	B:-	gap
+L18	33	m	H		agree
+L18	34	#	H		agree
+L18	35	z	M	B:3	differ
+L18	36	d	H		agree
+L18	37	tz	H		agree
+L18	38	p	H		agree
+L18	39	4	M	B:t	differ
+L18	40	d	H		agree
+L18	41	z	M	B:3	differ
+L18	42	m	H		agree
+L19	1	o	M	B:c	differ
+L19	2	m	H		agree
+L19	3	o	H		agree
+L19	4	o	H		agree
+L19	5	g	H		agree
+L19	6	S	H		agree
+L19	7	tz	H		agree
+L19	8	6	H		agree
+L19	9	@	H		agree
+L19	10	d	H		agree
+L19	11	m	H		agree
+L19	12	y	M	A:-	gap
+L19	13	r	M	B:y	differ
+L19	14	m	H		agree
+L19	15	o	H		agree
+L19	16	o	H		agree
+L19	17	d	H		agree
+L19	18	r	M	B:x	differ
+L19	19	j	M	B:y	differ
+L19	20	z	M	B:3	differ
+L19	21	g	H		agree
+L19	22	d	H		agree
+L19	23	tz	H		agree
+L19	24	m	H		agree
+L19	25	p	M	B:t	differ
+L19	26	#	H		agree
+L19	27	:	H		agree
+L19	28	:	H		agree
+L19	29	g	H		agree
+L19	30	d	H		agree
+L19	31	z	H		agree
+L19	32	g	H		agree
+L19	33	m	H		agree
+L19	34	5	M	B:-	gap
+L19	35	0	M	B:to	differ
+L19	36	d	H		agree
+L19	37	m	H		agree
+L19	38	p	H		agree
+L19	39	a	H		agree
+L19	40	g	H		agree
+L19	41	tz	H		agree
+L20	1	m	H		agree
+L20	2	p	H		agree
+L20	3	#	H		agree
+L20	4	P	H		agree
+L20	5	o	H		agree
+L20	6	o	H		agree
+L20	7	d	H		agree
+L20	8	r	M	B:x	differ
+L20	9	d	H		agree
+L20	10	S	H		agree
+L20	11	tz	H		agree
+L20	12	m	H		agree
+L20	13	tz	H		agree
+L20	14	L	H		agree
+L20	15	P	H		agree
+L20	16	z	H		agree
+L20	17	#	H		agree
+L20	18	d	H		agree
+L20	19	o	H		agree
+L20	20	o	H		agree
+L20	21	x	H		agree
+L20	22	tz	H		agree
+L20	23	d	H		agree
+L20	24	z	M	B:x	differ
+L20	25	g	H		agree
+L20	26	d	M	A:-	gap
+L20	27	P	H		agree
+L20	28	o	H		agree
+L20	29	o	H		agree
+L20	30	c	M	A:-	gap
+L20	31	m	H		agree
+L20	32	g	H		agree
+L20	33	P	H		agree
+L20	34	o	H		agree
+L20	35	o	H		agree
+L20	36	m	H		agree
+L20	37	:	H		agree
+L20	38	:	H		agree
+L20	39	to	H		agree
+L20	40	r	M	B:x	differ
+L20	41	m	H		agree
+L20	42	d	H		agree
+L21	1	m	H		agree
+L21	2	o	H		agree
+L21	3	o	H		agree
+L21	4	6	H		agree
+L21	5	to	H		agree
+L21	6	p	H		agree
+L21	7	P	H		agree
+L21	8	y	H		agree
+L21	9	#	H		agree
+L21	10	m	H		agree
+L21	11	L	H		agree
+L21	12	P	H		agree
+L21	13	p	H		agree
+L21	14	#	H		agree
+L21	15	r	M	B:y	differ
+L21	16	d	H		agree
+L21	17	o	H		agree
+L21	18	o	H		agree
+L21	19	#	H		agree
+L21	20	m	H		agree
+L21	21	a	H		agree
+L21	22	x	H		agree
+L21	23	{curl}	M	B:g	differ
+L21	24	d	H		agree
+L21	25	tz	H		agree
+L21	26	S	M	B:d	differ
+L21	27	f	M	B:g	differ
+L21	28	tz	H		agree
+L21	29	m	H		agree
+L21	30	p	H		agree
+L21	31	m	H		agree
+L21	32	#	H		agree
+L21	33	z	M	B:3	differ
+L21	34	tz	H		agree
+L21	35	S	M	B:d	differ
+L21	36	tz	H		agree
+L21	37	3	M	A:-	gap
+L21	38	a	H		agree
+L21	39	6	H		agree
+L21	40	P	H		agree
+L21	41	p	H		agree
+L21	42	#	H		agree
+L22	1	P	H		agree
+L22	2	o	H		agree
+L22	3	o	H		agree
+L22	4	#	H		agree
+L22	5	P	H		agree
+L22	6	p	H		agree
+L22	7	#	H		agree
+L22	8	a	H		agree
+L22	9	tz	H		agree
+L22	10	m	H		agree
+L22	11	o	H		agree
+L22	12	o	H		agree
+L22	13	m	H		agree
+L22	14	6	H		agree
+L22	15	o	H		agree
+L22	16	P	H		agree
+L22	17	z	H		agree
+L22	18	y	M	A:-	gap
+L22	19	r	M	B:p	differ
+L22	20	m	H		agree
+L22	21	d	H		agree
+L22	22	m	H		agree
+L22	23	g	H		agree
+L22	24	o	H		agree
+L22	25	o	H		agree
+L22	26	tz	H		agree
+L22	27	:	H		agree
+L22	28	:	H		agree
+L22	29	7	H		agree
+L22	30	z	M	B:3	differ
+L22	31	o	H		agree
+L22	32	o	H		agree
+L22	33	L	H		agree
+L22	34	d	H		agree
+L22	35	z	H		agree
+L22	36	m	H		agree
+L22	37	#	H		agree
+L22	38	S	M	B:d	differ
+L22	39	d	H		agree
+L22	40	p	H		agree
+L22	41	P	H		agree
+L22	42	a	H		agree
+L22	43	tz	H		agree
+L22	44	y	M	A:-	gap
+L23	1	d	H		agree
+L23	2	y	M	B:g	differ
+L23	3	tz	H		agree
+L23	4	#	H		agree
+L23	5	m	H		agree
+L23	6	r	M	B:y	differ
+L23	7	p	H		agree
+L23	8	m	H		agree
+L23	9	z	M	B:3	differ
+L23	10	m	H		agree
+L23	11	a	M	B:c	differ
+L23	12	m	H		agree
+L23	13	g	H		agree
+L23	14	z	M	B:3	differ
+L23	15	m	H		agree
+L23	16	:	M	B:-	gap
+L23	17	:	H		agree
+L23	18	#	H		agree
+L23	19	y	H		agree
+L23	20	m	H		agree
+L23	21	Z	H		agree
+L23	22	S	M	B:d	differ
+L23	23	d	H		agree
+L23	24	r	M	B:y	differ
+L23	25	p	H		agree
+L23	26	k	M	A:-	gap
+L23	27	d	H		agree
+L23	28	tz	H		agree
+L23	29	6	H		agree
+L23	30	@	H		agree
+L23	31	S	M	B:d	differ
+L23	32	d	H		agree
+L23	33	p	H		agree
+L23	34	#	H		agree
+L23	35	m	H		agree
+L23	36	to	H		agree
+L23	37	#	H		agree
+L23	38	y	H		agree
+L23	39	m	H		agree
+L23	40	d	H		agree
+L24	1	z	H		agree
+L24	2	m	H		agree
+L24	3	z	H		agree
+L24	4	m	H		agree
+L24	5	p	H		agree
+L24	6	#	H		agree
+L24	7	m	H		agree
+L24	8	p	H		agree
+L24	9	a	M	B:o	differ
+L24	10	P	H		agree
+L24	11	tz	H		agree
+L24	12	m	M	B:-	gap
+L24	13	P	M	B:-	gap
+L24	14	z	M	B:-	gap
+L24	15	m	M	B:-	gap
+L24	16	z	M	B:-	gap
+L24	17	#	M	B:-	gap
+L24	18	tz	M	B:p	differ
+L24	19	m	H		agree
+L24	20	z	H		agree
+L24	21	m	H		agree
+L24	22	P	M	B:y	differ
+L24	23	p	H		agree
+L24	24	r	M	B:-	gap
+L24	25	m	H		agree
+L24	26	o	H		agree
+L24	27	o	H		agree
+L24	28	g	M	A:-	gap
+L24	29	f	H		agree
+L24	30	S	H		agree
+L24	31	P	H		agree
+L24	32	P	H		agree
+L24	33	#	M	A:-	gap
+L24	34	P	H		agree
+L24	35	tz	H		agree
+L24	36	L	H		agree
+L24	37	m	H		agree
+L24	38	d	H		agree
+L24	39	z	M	B:-	gap
+L24	40	m	M	B:-	gap
+L24	41	z	H		agree
+L24	42	m	H		agree
+L24	43	g	H		agree
+L24	44	P	M	B:-	gap
+L24	45	d	H		agree
+L24	46	P	H		agree
+L24	47	p	M	A:-	gap
+L24	48	k	H		agree
+L24	49	g	H		agree
+L24	50	m	H		agree
+L24	51	x	H		agree
+L24	52	o	H		agree
+L24	53	o	H		agree
+L24	54	d	H		agree
+L24	55	z	H		agree
+L24	56	P	H		agree
+L25	1	p	H		agree
+L25	2	#	H		agree
+L25	3	to	H		agree
+L25	4	r	M	B:x	differ
+L25	5	m	H		agree
+L25	6	j	M	B:y	differ
+L25	7	m	H		agree
+L25	8	d	H		agree
+L25	9	P	H		agree
+L25	10	k	H		agree
+L25	11	o	H		agree
+L25	12	o	H		agree
+L25	13	P	H		agree
+L25	14	p	H		agree
+L25	15	:	H		agree
+L25	16	:	H		agree
+L25	17	m	M	B:-	gap
+L25	18	p	M	B:-	gap
+L25	19	#	M	B:-	gap
+L25	20	a	M	B:-	gap
+L25	21	m	H		agree
+L25	22	p	H		agree
+L25	23	#	H		agree
+L25	24	a	H		agree
+L25	25	m	H		agree
+L25	26	o	H		agree
+L25	27	o	H		agree
+L25	28	c	H		agree
+L25	29	l	H		agree
+L25	30	:	H		agree
+L25	31	:	H		agree
+L25	32	m	H		agree
+L25	33	x	H		agree
+L25	34	#	H		agree
+L25	35	z	M	B:3	differ
+L25	36	m	H		agree
+L25	37	P	M	B:#	differ
+L25	38	P	H		agree
+L25	39	tz	H		agree
+L25	40	:	H		agree
+L25	41	:	H		agree
+L25	42	#	H		agree
+L25	43	m	H		agree
+L25	44	tz	H		agree
+L25	45	6	H		agree
+L25	46	@	H		agree
+L26	1	{curl}	M	B:g	differ
+L26	2	d	H		agree
+L26	3	p	H		agree
+L26	4	#	H		agree
+L26	5	:	H		agree
+L26	6	:	H		agree
+L26	7	d	H		agree
+L26	8	r	M	B:x	differ
+L26	9	6	H		agree
+L26	10	tz	H		agree
+L26	11	L	H		agree
+L26	12	r	M	B:y	differ
+L26	13	m	H		agree
+L26	14	S	H		agree
+L26	15	g	H		agree
+L26	16	a	H		agree
+L26	17	tz	M	B:-	gap
+L26	18	:	M	B:-	gap
+L26	19	:	M	B:-	gap
+L26	20	#	M	B:-	gap
+L26	21	m	M	B:-	gap
+L26	22	tz	M	B:z	differ
+L26	23	:	H		agree
+L26	24	:	H		agree
+L26	25	#	H		agree
+L26	26	m	H		agree
+L26	27	#	H		agree
+L26	28	a	H		agree
+L26	29	P	H		agree
+L26	30	y	H		agree
+L26	31	#	H		agree
+L26	32	tz	H		agree
+L26	33	:	H		agree
+L26	34	:	H		agree
+L26	35	a	H		agree
+L26	36	j	M	B:y	differ
+L26	37	tz	H		agree
+L26	38	m	H		agree
+L26	39	g	H		agree
+L26	40	m	H		agree
+L26	41	z	H		agree
+L26	42	m	H		agree
+L26	43	p	H		agree
+L26	44	#	H		agree
+L26	45	z	M	B:2	differ
+L26	46	7	H		agree
+L27	1	{curl}	M	B:-	gap
+L27	2	r	M	B:y	differ
+L27	3	m	H		agree
+L27	4	g	H		agree
+L27	5	d	H		agree
+L27	6	p	H		agree
+L27	7	#	H		agree
+L27	8	z	M	B:3	differ
+L27	9	tz	H		agree
+L27	10	z	M	B:-	gap
+L27	11	L	H		agree
+L27	12	m	H		agree
+L27	13	a	H		agree
+L27	14	r	M	B:y	differ
+L27	15	P	H		agree
+L27	16	#	M	B:-	gap
+L27	17	g	H		agree
+L27	18	tz	H		agree
+L27	19	m	M	B:-	gap
+L27	20	p	M	B:-	gap
+L27	21	:	M	B:-	gap
+L27	22	:	M	B:-	gap
+L27	23	7	M	B:-	gap
+L27	24	z	M	B:-	gap
+L27	25	m	H		agree
+L27	26	p	H		agree
+L27	27	:	H		agree
+L27	28	:	H		agree
+L27	29	7	H		agree
+L27	30	a	H		agree
+L27	31	X	M	B:{X-cross}	differ
+L27	32	P	H		agree
+L27	33	r	M	B:a	differ
+L27	34	g	H		agree
+L27	35	tz	H		agree
+L27	36	p	H		agree
+L27	37	d	H		agree
+L27	38	m	H		agree
+L27	39	d	H		agree
+L27	40	a	H		agree
+L27	41	g	H		agree
+L27	42	P	H		agree
+L27	43	d	H		agree
+L27	44	z	H		agree
+L27	45	m	H		agree
+L27	46	p	H		agree
+L28	1	:	H		agree
+L28	2	:	H		agree
+L28	3	7	H		agree
+L28	4	a	H		agree
+L28	5	tz	H		agree
+L28	6	m	H		agree
+L28	7	r	M	B:-	gap
+L28	8	P	M	B:y	differ
+L28	9	#	H		agree
+L28	10	a	H		agree
+L28	11	z	H		agree
+L28	12	P	H		agree
+L28	13	d	M	B:-	gap
+L28	14	P	M	B:S	differ
+L28	15	m	H		agree
+L28	16	o	H		agree
+L28	17	o	H		agree
+L28	18	g	H		agree
+L28	19	m	H		agree
+L28	20	z	H		agree
+L28	21	m	H		agree
+L28	22	y	M	A:-	gap
+L28	23	P	M	A:-	gap
+L28	24	r	M	B:#	differ
+L28	25	:	M	B:p	differ
+L28	26	z	M	B:S	differ
+L28	27	P	M	B:p	differ
+L28	28	z	M	B:o	differ
+L28	29	m	M	B:o	differ
+L28	30	r	M	B:p	differ
+L28	31	m	H		agree
+L28	32	o	H		agree
+L28	33	o	H		agree
+L28	34	d	M	A:-	gap
+L28	35	7	M	A:-	gap
+L28	36	2	M	A:-	gap
+L28	37	p	M	A:-	gap
+L28	38	g	M	B:#	differ
+L28	39	m	H		agree
+L28	40	z	H		agree
+L28	41	o	M	A:-	gap
+L28	42	o	M	A:-	gap
+L28	43	L	M	A:-	gap
+L28	44	m	M	B:d	differ
+L28	45	P	M	B:z	differ
+L29	1	m	H		agree
+L29	2	#	H		agree
+L29	3	r	M	B:y	differ
+L29	4	P	M	B:p	differ
+L29	5	o	H		agree
+L29	6	o	H		agree
+L29	7	z	H		agree
+L29	8	P	H		agree
+L29	9	z	H		agree
+L29	10	P	H		agree
+L29	11	p	H		agree
+L29	12	#	H		agree
+L29	13	a	H		agree
+L29	14	r	M	B:P	differ
+L29	15	y	H		agree
+L29	16	#	H		agree
+L29	17	tz	H		agree
+L29	18	:	H		agree
+L29	19	:	H		agree
+L29	20	o	H		agree
+L29	21	o	H		agree
+L29	22	j	M	B:7	differ
+L29	23	tz	H		agree
+L29	24	m	M	A:-	gap
+L29	25	g	M	A:-	gap
+L29	26	m	H		agree
+L29	27	g	H		agree
+L29	28	m	H		agree
+L29	29	z	M	B:2	differ
+L29	30	m	H		agree
+L29	31	p	H		agree
+L29	32	#	H		agree
+L29	33	y	H		agree
+L29	34	m	H		agree
+L29	35	o	H		agree
+L29	36	g	H		agree
+L29	37	m	H		agree
+L29	38	d	H		agree
+L29	39	m	H		agree
+L29	40	p	H		agree
+L29	41	#	H		agree
+L29	42	m	H		agree
+L29	43	r	M	B:y	differ
+L29	44	p	H		agree
+L29	45	m	H		agree
+L29	46	x	H		agree
