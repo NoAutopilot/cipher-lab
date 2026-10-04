@@ -646,3 +646,489 @@ Read so far: 924 of an estimated ~2,500 cipher signs transcribed (c185R 704, c18
 - [ ] image-check: q/ls and S splits unsettled; next: split test as in Remaining gaps
 - [n/a] retry: anneal already reads above its matched control and both gloss controls
 Verdict: keep going: 4 internal gaps; cheapest next: rule 7 re-derivation, ~$3
+
+## NEAR3-C1RD rule-7 re-derivation (4 Oct 2026)
+Fresh session, read only the brief, CLAUDE.md rules 4 and 7, spec, ciphertext.tsv, key.tsv, decode_key.py --help (no decode.json exists; NOTES.md, HYPOTHESES.md, reading*, glossctl/ not opened before step 2 was written).
+Convention used (from spec/key/decode_key help alone): clear words ([PLAIN:..]) and '/' are not cipher tokens; value and grade from key.tsv; conf != H downgrades to M; unkeyed = '?'/U.
+Script: `rederive/rederive_c1rd.py` -> `rederive/rederive_c1rd.txt` (924 cipher tokens: C 97, S 675, M 152, U 0).
+
+`python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688 --check`:
+```
+ciphertext.tsv: tokens 939: C 97, M 152, S 675, U 15
+reading up to date
+exit=0
+```
+(939 = 924 cipher tokens + 15 non-cipher rows graded U by the tool: the clear words and '/'.)
+
+Diff against `reading_tokens.tsv` (opened after step 2), token by token on line, pos, sign, value and grade: 924 agree, 0 differ. Grades C 97 / S 675 / M 152 match the committed header.
+Verdict: PASS (rule 7). This checks that the committed reading regenerates from ciphertext.tsv + key.tsv; it says nothing about whether the key is right (rule 10). key.tsv and the reading were not edited. Subagent calls: 0; requests: 0 (disk only).
+
+## NEAR3-C1LOOSE (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3, brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave1.md`. Box 01:15-02:15 UTC; done 01:3x.
+Disk only, no network, no subagent calls. Pre-registration `tx/PREREG_loose.md` (commit 32dd3ba0, pushed before any run).
+Script `glossctl/loose.py` (imports `repair.align` and `glossctl` unchanged); rows `glossctl/loose.tsv`, log `glossctl/loose_run.log`,
+keys `glossctl/loose_real_key.tsv`, `glossctl/loose_shufN_key.tsv` (column `unrepaired` = the value before any repair).
+Tool shelf ("gloss-seeded key repair with a shuffled-gloss control"): nothing fits -- `key_repair.py` is retired (rule 3, Nassau)
+and is a code-by-code repair without a gloss alignment; the other hits are running-key / seeded-code / key-order tools.
+The procedure reuses READ2-C1161B's own `repair.py`.
+
+**Setup as pre-registered.** Alignment = repair.py's edit-distance DP of the 220-sign c186R block to the 170 gloss letters, cost key
+= the unrepaired READ2-C1161 key (rebuilt from key.tsv's "was 'x'" sources; checked: block vs gloss 0.594). Rule: >= 3 aligned
+occurrences and majority letter >= 60%. Re-anneal homophonic_anneal seed 1, restarts 32, fr16 order 3, 924-sign stream. Control: same
+procedure with the gloss shuffled within itself, seeds 1-10. Gate: real c185R judge > max of 10 shuffles AND > -1.128.
+
+| run | signs held | held != unrepaired key | anneal score | block vs real gloss | c185R judge language (fr16, N 704) |
+|---|---|---|---|---|---|
+| **real gloss, loose** | 13 | 0 | -2277.4 | 0.588 | **-1.146** (FAIL; cover 0.908) |
+| shuffled 1 | 5 | 0 | -2278.4 | 0.594 | **-1.130** (best control) |
+| shuffled 2 | 8 | 3 | -2492.2 | 0.565 | -1.309 |
+| shuffled 3 | 3 | 0 | -2277.9 | 0.588 | -1.143 |
+| shuffled 4 | 5 | 0 | -2277.8 | 0.588 | -1.150 |
+| shuffled 5 | 2 | 0 | -2350.4 | 0.288 | -1.179 |
+| shuffled 6 | 4 | 0 | -2280.0 | 0.565 | -1.144 |
+| shuffled 7 | 5 | 0 | -2278.7 | 0.588 | -1.145 |
+| shuffled 8 | 4 | 0 | -2284.1 | 0.594 | -1.133 |
+| shuffled 9 | 2 | 0 | -2278.7 | 0.600 | -1.133 |
+| shuffled 10 | 3 | 0 | -2281.6 | 0.582 | -1.145 |
+| strict real repair (READ2-C1161B, reference) | 6 | 0 | -2278.5 | 0.612 | -1.128 |
+
+Thresholds: null_p99 -1.70, real_p05 -0.949. Shuffled controls: max -1.130, median -1.145, mean -1.161.
+
+**Pre-registered outcome: FAIL.** Target -1.146 vs best control -1.130 (and vs strict -1.128): the real-gloss loose repair is below
+both, and sits at the control median. Block vs gloss is also not higher than the controls (0.588 vs 0.565-0.600, excluding shuf5).
+
+**Signs held (real gloss):** + = e (15/18), 4 = o (8/9), 9 = s (2/3), d = n (5/5), e = p (7/7), iii = e (5/6), p = c (3/3), qb = a (9/12),
+th = s (5/7), w = i (5/6), wb = l (6/8), y = r (6/7), z = t (3/4). All 13 already had these values in the unrepaired key: as in the
+strict run, the repair confirms, it corrects nothing. The strict rule's a = u, ee = y and sd = g fall below the >= 3 floor here.
+**Signs that moved in the re-anneal (real gloss), from -> to:** 6r i->l, 8 l->d, K u->f, L b->i, c f->d, dia i->l, iib d->l, l r->n,
+tz l->a, vdash d->t, x a->u (11). Per run in `loose.tsv` column `moved_vs_unrepaired`.
+
+**What the controls show beyond the gate (read these before the pooled job).**
+1. *The alignment cannot propose a correction.* Its cost is 0 only where the key already gives the gloss letter, so the majority
+   letter of a sign's aligned occurrences is, in practice, the key's own letter: 9 of 10 shuffled glosses also held only signs whose
+   value equals the key (column 4). A held set is a subset of the key's values chosen by a gloss-driven filter; it can raise or lower
+   the anneal's free-sign choices, not fix a wrong sign. A third pass with a different threshold on this alignment would be the same
+   instrument (rule 3, third-attempt clause): the next instrument is an alignment whose cost does not read the key (e.g.
+   `tools/interlinear_align.py`'s hard-EM over the block/gloss pair, grade C from the gloss alone), or more glossed material.
+2. *The same moves recur whatever the gloss.* 8 l->d, vdash d->t, iib d->l, K u->f, L b->*, l r->*, x a->*, tz l->* appear in the real
+   run and in most shuffled runs. They are the anneal's own second basin once any few signs are held, not gloss evidence. That covers
+   the 10 signs READ2-C1161B's strict repair moved (8 l->d, K u->f, L b->n, c f->s, iib d->l, l r->s, phi s->l, tz l->e, vdash d->t,
+   x a->s), now in key.tsv at grade S: they carry no support from the gloss.
+3. *The strict-rule margin is inside this 10-shuffle band.* The strict repair's -1.128 beat its own 3 shuffles (-1.177..-1.243), but
+   three of these ten loose-rule shuffles reach -1.130, -1.133, -1.133. These are different-rule controls, so this does not formally
+   re-test the strict rule, but with 10 seeds a +0.002 to +0.005 margin is not distinguishable from holding an arbitrary few key-agreeing
+   signs. Suggestion for the lane (not done here, no brief): re-run the strict rule with 10 shuffles before the pooled job relies on
+   the strict repair's 10 moved signs.
+
+key.tsv and the reading were not touched. Recommendation for the pooled re-anneal: do not adopt the loose-rule key; treat the 10
+strict-repair moves as unsupported by the gloss (S, same as any anneal value).
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none (disk only).
+Subagent calls: 0. Cost: see the lane ledger.
+
+## NEAR3-C1SPLIT (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3. Brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave1.md`. Claim 01:15 UTC; runs 01:20-01:31 UTC
+(container clock). Disk only, no network, no subagent calls. Two crop looks by this worker: the c186R block's 16 line crops
+stacked, and a 53-snippet grid of the c185R `S`. Pre-registration `split/PREREG_split.md`, commit e6b33c38, pushed
+before any run. Script `split/split.py`; occurrence assignment `split/assign.tsv`; rows `split/results.tsv`;
+keys `split/<run>_key.tsv`. ciphertext.tsv, key.tsv and the reading are untouched.
+
+**How each occurrence was assigned.**
+- q/ls: pass B separates them. The 9 c185R occurrences reconciled as `q` where pass B read `ls` (7 q|ls, 1 S|ls, 1 p|ls in
+  tx/c185R_rec/disagreements.tsv; L21's two columns are offset by one) became `qL`. The other 20 `q` are unchanged.
+- S: neither pass separates them in the block (both write `S`). Assigned by eye from the stacked block crops: 7 open
+  5-like -> `S5` (L03, L04 x2, L05, L06 3rd, L07 3rd, L08 2nd). 7 looped g-like stay `S`; the L07 2nd is graded M.
+  The c185R snippet grid shows both shapes on c185R too, e.g. "+ S 4 S a" on L02, one of each. But the snippets were
+  cut at x-positions estimated from token index. They were not reliable enough to label all 53 occurrences. So the S
+  split was tested on the block only, and the 53 c185R `S` stay merged.
+
+**Recipe.** Each run used homophonic_anneal.solve on the 924-sign stream: fr16 order 3, restarts 32, iters 40000,
+seed 1, blind. The merged rerun reproduces key.tsv's anneal exactly: score -2281.4, gloss 0.5941, the
+same as READ2-C1161 and READ2-C1161B. So the baseline is the current key's own recipe.
+
+| run | K | anneal score | gloss match (c186R block) | c185R judge | new symbol's letter |
+|---|---|---|---|---|---|
+| merged (baseline) | 49 | -2281.4 | **0.5941** | **-1.155** | - |
+| **qls split** (9 q -> qL) | 50 | -2360.7 | 0.3059 | -1.217 | qL = i, same as q (ls = e) |
+| placebo-qls 1-5 (w, o, e, 9, p; 9 c185R occurrences each) | 50 | -2396.8, -2380.7, -2329.9, -2272.2, -2330.4 | 0.247, 0.165, 0.435, 0.582, 0.259; **p80 0.4353** | -1.222, -1.215, -1.157, -1.157, -1.169; **p80 -1.157** | - |
+| **S split** (7 block S -> S5) | 50 | -2278.6 | 0.5824 | -1.143 | S5 = u, same as S |
+| placebo-S 1-5 (+, 7, 4, th, qb; 7 block occurrences each) | 50 | -2343.8, -2314.9, -2368.1, -2322.6, -2324.3 | 0.112, 0.318, 0.200, 0.177, 0.271; **p80 0.2706** | -1.186, -1.200, -1.186, -1.228, -1.183; **p80 -1.186** | - |
+
+(p80 = the 4th smallest of 5, as pre-registered.) judge thresholds on c185R: null_p99 -1.70, real_p05 -0.949 (N=704); every row FAILs the judge.
+
+**Against the pre-registration.**
+- q/ls: **FAIL**. The gloss match is 0.306, against 0.594 merged and 0.435 placebo p80. The c185R judge is -1.217,
+  against -1.155 merged and -1.157 placebo p80. The split loses on both statistics, against both the baseline and the
+  placebo.
+- S: **FAIL**. The gloss match is 0.582, against 0.594 merged: it loses to merged by 0.012, though it beats placebo p80
+  0.271. The c185R judge is -1.143, which beats merged -1.155 and placebo p80 -1.186. The gate needs both statistics,
+  so the split fails.
+
+**What else the runs show (not the gate).**
+- In both real splits the anneal gave the new symbol the same letter as its parent: qL = q = i, and S5 = S = u. With
+  one free letter more, the decipherment did not want to separate either pair.
+- The S split stays close to the merged optimum: anneal score -2278.6 vs -2281.4, gloss 0.582 vs 0.594. Every S
+  placebo falls far from it: scores -2315 to -2368, gloss 0.11-0.32. So treating the two S shapes as one sign is
+  consistent with the key; a split of the same size elsewhere breaks it.
+- The seed-1 anneal is sensitive to any change in the stream. 9 of 10 placebos and the qls split ended in a worse
+  local optimum. That makes a single-seed comparison a coarse instrument. The pre-registration fixed seed 1, and no
+  other seeds were run.
+
+**Recommendation for the pooled re-anneal job: keep both pairs merged.** For q/ls this follows reconciliation's
+choice, which was q. For the S shapes, keep one sign `S`. When c186L, c187L/R and c188L are transcribed, still record
+the 5-like vs looped shape per occurrence (for example `S` plus a shape note). Then a pooled split test can be rerun at
+higher N without another crop look. On c185R the shape is not recorded per occurrence. Recording it would need a
+per-sign crop look, which this job did not do.
+
+Report what was found and where it was not found: no outside source was searched; novelty is not classified here.
+
+## NEAR3-C1TX-c186L (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3, brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave1.md`; clock 01:16 UTC at claim.
+Written here, not in NOTES.md, per the brief (five clair1161 jobs in parallel); the lane folds it in.
+
+**Leaf.** c186L = IIIF f187, left mounted leaf, native region 100,50,3400,2000 (ark btv1b90010063; NOTES.md "IMG-GALLICA1").
+It is a whole short block, not only "the lower part" as IMG-GALLICA1 guessed from the thumbnail: **9 lines** of cipher
+(2 lines, a gap, then 7 lines), no clear words, no heading or gloss visible in the region.
+
+**Route and crop command** (pasted before any subagent call):
+`python3 tools/iiif_lines.py --ark btv1b90010063 --canvas 187 --region 100,50,3400,2000 --out ciphers/clair1161-avis-flandre-1688/images --prefix c186L --bottom-margin 75 --debug`
+found 10 bands, two of them wrong (a spurious band on the leaf's top edge, and the close-set first two lines -- pitch ~85 px
+against ~140 px below -- merged into one centred on line 2's descenders). Re-cut from the cached source with centres read by
+eye from the overlay: `... --centres 548,633,984,1126,1271,1394,1528,1668,1808 --top-margin 15 --bottom-margin 75
+--max-width 1300 --overlap 100 --debug` -> 9 lines x 3 segments = 27 crops `images/c186L_L01..L09_s1..s3.jpg` + overlay
+`images/c186L_lines_debug.jpg`, re-encoded JPEG q75 at the same dimensions (1.8 MB). The `src_*` native region was deleted
+after cropping; its URL stays in `images/manifest.json` (each c186L entry carries a `source_file_note`). Stale manifest rows
+from the first cut (L10) removed.
+
+**Requests:** gallica.bnf.fr 1 (one native region, descriptive UA, no challenge). **Subagent calls (Sonnet): 2** (pass A,
+pass B; each saw only the 27 crop paths and `tx/labels_v2.md`; B worked bottom-up). Reconciliation by this worker from 9
+crop views (the third priced unit). Glyph atlas (TRANSCRIPTION.md step 2) not run: the brief names the line-read fallback
+for this job; the family atlas belongs with the pooled job once all four leaves are cut.
+
+**Signs and error.**
+
+| | lines | signs | vs reconciled |
+|---|---|---|---|
+| pass A | 9 | 247 (raw) | 13/246 = 0.053 |
+| pass B | 9 | 246 | 0/246 (see note) |
+| reconciled `tx/c186L_rec.tsv` | 9 | **246** | -- |
+
+**err_2reader = 13/248 aligned columns = 0.052** (`tools/reconcile_passes.py`, nw; 235 agree, 13 split; per line 0.889-1.000).
+Below 0.10, so no look-alike pass was run. err_true not measurable: no benchmark item of this hand. Note: every one of the 13
+splits was settled from the crop in B's favour (L05 col 8: B's extra `iii` kept), so "B vs reconciled = 0" is not an
+independent accuracy figure; it says A's errors were mostly segmentation of compound signs (`z e` for one `K`, an extra `e`
+after a `z`) and `z` for the blob-centred cross `dia` (3 of 13).
+
+Settlements (line/col of `tx/c186L_rec/disagreements.tsv`): L01 9-10 `z e`->`K` (one sign); L01 26 A's extra `e` dropped;
+L04 8 `e`; L04 24 `4`; L05 4 and 14 `dia`; L05 8 `iii` (the "um" after `to` = `w iii`, M); L06 4 `dia`; L06 20 `eloop` (same
+shape as the agreed `eloop` later in the line, not `L`); L07 14 and L08 23 `iii` (three strokes with a bar; labels_v2 puts
+barred and unbarred three-strokes under `iii` -- they may be two signs, see below); L07 21 `4` (M).
+
+**Shapes outside labels_v2.**
+- `s` (both passes wrote it as NEW: a small flat-topped s, mostly paired `s s` at line ends, and before `z` as `s z`):
+  normalised to `s`, the symbol already in `tx/stream_all.txt` (21 occurrences) and `tx/c185R_rec.tsv`, which labels_v2's
+  table omits. 7 occurrences (L01 x2, L04 x3, L05, L08).
+- **`NEW1`** (provisional): a small v / rotunda hook followed by a long horizontal bar, `v—`. 3 occurrences: L03 col 1
+  (line start), L05 col 5 (before `to`), L06 col 25 (before `eloop`); crops `c186L_L03_s1`, `c186L_L05_s1`/`s2`,
+  `c186L_L06_s3`. It may be the `vdash` of c185R pass B (2 occurrences in stream_all, keyed `t` after READ2-C1161B) --
+  not merged here; the pooled job or the sorter decides.
+- For the split test / sorter: the three-stroke sign appears both bare (`iii`, L05, L07 col 13) and with a long bar through
+  it (L07 col 14, L08 col 23); labels_v2 lumps them.
+
+**Decode for information only** (`tx/c186L_decode_info.txt`, key.tsv as committed, ungraded, not a reading; NEW1 = `?`):
+letter runs such as `aultres` (L01), `peuple` (L02), `princ` (L03), `port` (L04), `leurs` (L07), `encore`, `aussi` (L09)
+appear unprompted; the rest is not word-segmentable. No judge run (not a reading).
+
+**Not done:** no edit to `ciphertext.tsv`, `key.tsv`, `tx/stream_all.txt`, NOTES.md or NEAR.md (the pooled job merges);
+no look-alike pass (err_2reader under 0.10).
+
+## NEAR3-C1TX-c187L (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3. Brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave1.md`, job NEAR3-C1TX-<LEAF> with
+LEAF = c187L. Clock: claim 01:15 UTC; reconciliation done by 01:25 UTC (box 60 min). Leaf: IIIF f188 (canvas c187) left leaf,
+headed "Autres advis".
+
+**Route.** `python3 tools/iiif_lines.py --ark btv1b90010063 --canvas 188 --region 100,1200,3250,4450 --out
+ciphers/clair1161-avis-flandre-1688/images --prefix c187L --bottom-margin 75 --debug` (one native fetch). I checked the overlay
+and a stack of every band by eye. L01 is the clear heading "Autres advis". L02-L17 are paragraph 1 (16 lines) and L18-L27 are
+paragraph 2 (10 lines). Each band holds one whole line. The next line's tops show at the bottom edge, and the passes were told
+to ignore them. The default segments overlapped by 1550 px (s1 x 0-2400, s2 x 850-3250), which invites double reading. So I re-cut
+from the cached native file, with no second request, with `--max-width 1700 --overlap 150`. That gives s1 x 0-1700 and s2 x 1550-3250,
+27 bands x 2 = 54 crops. The crops were re-encoded as grayscale JPEG q75 at the same dimensions (4.2 MB). The `src_*` native file was
+removed from the folder and is not committed (sha1 kept in the worker's scratchpad). Its URL is in `images/manifest.json` under
+`iiif_lines`. Requests: gallica.bnf.fr 1 (a native region, descriptive UA, no challenge).
+
+**Tool shelf** (`tools/tool_shelf.py "transcribe a 16th-century French pen-sign symbol cipher from line crops"`). It offers
+`glyph_atlas.py` (proven) first. Not used: the brief names line reads, as for c185R/c186R, and no atlas exists for this hand. On
+the one benchmark where both were measured (Birago no.87), atlas top-1 read 0.162 against 0.040 for line reads (TRANSCRIPTION.md row 3).
+TRANSCRIPTION.md asks for a family atlas before line reads when a key family has siblings. Building one for the six clair1161 leaves is
+for the pooled job, not this one.
+
+**Subagent calls (Sonnet): 3.** Pass A was 1 call. Pass B took 2 calls: the first call failed on an API safeguard error before
+writing anything, and the second ran with the same prompt plus a one-line context sentence. Each pass saw only the crop paths
+and `tx/labels_v2.md`, and the prompt is in this report's commit as `tx/c187L_pass_prompt.md`. I did the reconciliation from
+the crops myself (5 composite views), with no subagent.
+
+**Numbers.**
+
+| item | value |
+|---|---|
+| lines | 26 cipher lines (L02-L27) |
+| tokens reconciled | 725, of which 713 are cipher signs and 12 are clear words (PLAIN:) |
+| err_2reader (pass A vs B, `tools/reconcile_passes.py`, nw) | 69/733 = **0.094** (under 0.10, so no look-alike pass was run) |
+| single pass vs reconciled | A 38/728 = 0.052, B 39/731 = 0.053. Upper bounds: they count A's provisional NEW labels as differences. |
+| confidence in tx/c187L_rec_long.tsv | H 685, M 40 |
+| err_true | not measurable: no benchmark item of this hand |
+
+Files: `tx/c187L_passA.tsv`, `tx/c187L_passB.tsv`, `tx/c187L_rec/` (reconcile_passes output), `tx/c187L_rec.tsv` (wide, same
+columns as `tx/c185R_rec.tsv`), `tx/c187L_rec_long.tsv` (line/pos/sign/conf/note, with ids `c187L_Lnn` ready for the pooled
+merge), and `tx/c187L_reconcile.py`, which holds every settlement with its reason and regenerates both rec files.
+
+**Settlements and conventions** (each one is listed in `tx/c187L_reconcile.py`):
+- Pass A's `NEW:5hook` (6x, always followed by z) is the small s of the `s z` pair that c185R already reads. It is settled as `s`.
+- Pass A's `NEW:v-bar` (4x) is c185R's `vdash`. The L10 line-initial `NEW:triangle`, which both passes read, is c185R's `tri`.
+  Both labels are already in key.tsv.
+- `0` is written as `o`, following ciphertext.tsv, which has no `0`.
+- `6r` is one sign, the "6z" shape: pass B's `6 z` was settled to pass A's `6r` 3x. The "6y" shape at L23 is kept as `6 7` (M).
+- Pass A's `sqc` was pass B's `2` 6x. Each of these is the arc-hooked 2 of labels_v2, so it is settled as `2`. The true open
+  square `sqc` (L06, L15, L26, where both passes agree) is kept.
+- In this hand `p` is drawn with a crossbar through the stem. Pass B read two of these as `+ p` (L16), and pass A's single `p`
+  was kept.
+- Count shift: `2` occurs 9 times in 713 signs here against 1 in the 924 signs of c185R+c186R. Either this leaf uses the
+  sign more, or the earlier leaves read it as something else. The pooled job should check this.
+
+**New shapes:** `NEW1`, one occurrence. It is an open arc "(" at L24 pos 9, before `o th e`, on crop `images/c187L_L24_s1.jpg`
+about x 830-900. Pass B read it as `2?`. It is not forced into an existing label.
+
+**Clear words inside the cipher** (all grade M): L03 "pour" at the line end; L04 "Disant(z) cete ?ugte"; L08 "Cet Dandre?
+fermeu?" at the line start; L18 a large initial plus "m", and "tout"; L27 "amou[r?]" at the line end.
+
+**Decode for information** (`tx/c187L_decode_info.txt`). This is ungraded and not a reading. The leaf is decoded under the current
+key.tsv, which was annealed on c185R+c186R only. This leaf took no part in fitting that key, but I did not run a control.
+By eye, the output has runs of French: "aultres ...", "per secret", "espai[g]nol", "pretext", "plus",
+"encore ... apres", "princip(a)ulx", "anllois", "trois". A held-out judge score of this decode with a shuffled-key control
+would be a cheap check of the key. It was not in this brief, so I did not run it.
+
+Not done (brief): ciphertext.tsv, key.tsv and tx/stream_all.txt were not edited. No lookalike pass was needed (err_2reader < 0.10).
+No sorter focus list. The `S` shape merge and q/ls stay as in labels_v2 (NEAR3-C1SPLIT's question).
+
+## NEAR3-C1TX-c187R (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3. Briefs: `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave2.md` (wave-2 change: crops plus overlay
+must total <= 1.5 MB) and the wave-1 job NEAR3-C1TX-<LEAF> with LEAF = c187R. This section is written here, not in NOTES.md, per the
+brief; the lane folds it in. Clock: claim at 01:34 UTC, reconciliation done at 01:42 UTC, box 60 min.
+
+**Leaf.** c187R = IIIF f188, the right mounted leaf, native region 3950,50,3150,4650 (ark btv1b90010063; NOTES.md "IMG-GALLICA1").
+It has **26 cipher lines**: paragraph 1 is L01-L08, and paragraph 2 is L09-L26. Paragraph 2 opens with a large initial and the clear
+date "Juil 23". The leaf ends "... 6r q monsr", with "monsr" in clear script. Old foliation "164" and "187" are top right, and a BIBLIOTHEQUE ROYALE
+stamp is below the text.
+
+**Route and crop command**, pasted before any subagent call:
+`python3 tools/iiif_lines.py --ark btv1b90010063 --canvas 188 --region 3950,50,3150,4650 --out ciphers/clair1161-avis-flandre-1688/images --prefix c187R --bottom-margin 75 --debug`
+- The run found 29 bands. Three of them were not text: the folio number at y 69 and the stamp at y 4303 and 4578.
+- The default segments overlapped by 1650 px.
+- **Side effect, reverted.** With the native file on disk, the folder was over 30 MB, so the tool's size guard downscaled the
+  *committed* `src_*` files of f186 and f187 (another leaf's sources) and rewrote their manifest entries. I restored both files and
+  `manifest.json` from git and removed the `_ref1600` copies, so no other leaf's file changed. A lane should know that running
+  `iiif_lines.py --out` into this folder while it sits near 30 MB touches other leaves' committed sources. Writing to a scratchpad
+  `--out` avoids that.
+- **Re-cut.** Row-ink profiles over the left, middle and right thirds show the lines slope up to the right by 60-90 px across the
+  region. The tool's single centre at y 2831 fell between two lines. I re-cut into the scratchpad from a second native fetch (the
+  first native file had been downscaled by the guard), using the middle-third centres:
+  `... --out <scratchpad>/cut --prefix c187R --centres 358,469,598,721,843,976,1102,1230,1551,1677,1813,1937,2069,2187,2335,2457,2603,2727,2878,3028,3166,3309,3437,3583,3709,3851 --bottom-margin 75 --max-width 1700 --overlap 150 --follow-slope 400 --debug`
+  This gave 26 lines x 2 segments = 52 sheared strips (s1 x 0-1700, s2 x 1550-3150), with drift fitted per line (-17 to -93 px).
+  Every line was checked by eye on the reconciliation views. The two passes both read L07 and L08 as distinct lines.
+- **Size.** Crops are committed as grayscale JPEG **q35 at the same dimensions**: q60 gave 2.41 MB and q40 gave 1.75 MB including
+  the overlay. The overlay is resized to 1000 px, q50. The total is 1.43 MB. The `src_*` native file is not committed; each manifest
+  entry carries its `source_url` and a `source_file_note`. q35 is legible at reading size (checked on L03_s2).
+- **Folder.** Tracked files total 29.15 MB after c188L's crops (ad631ae3) and these. This is under the 29.5 MB line, but there is
+  little room left for the pooled job.
+
+**Requests:** gallica.bnf.fr 2 (native region twice, 2 s apart, descriptive UA, no challenge). **Subagent calls (Sonnet): 2.**
+Pass A read top-down and pass B bottom-up. Each saw only the 52 crop paths and `tx/labels_v2.md`, through the prompt in
+`tx/c187R_pass_prompt.md`. I did the reconciliation from 12 two-line composite views plus one single crop, with no subagent.
+
+**Numbers.**
+
+| item | value |
+|---|---|
+| lines | 26 |
+| tokens reconciled (`tx/c187R_rec.tsv`) | 745: 740 cipher signs + 5 clear tokens (Juil, 23, toute x2, monsr) |
+| err_2reader (A vs B, `tools/reconcile_passes.py --keep-plain`, nw) | **57/751 = 0.076**; 53/751 = 0.071 without the 4 notational `0`/`o` columns. Under 0.10, so no look-alike pass was run. |
+| single pass vs reconciled | A 38/749 = 0.051, B 29/747 = 0.039. These are upper bounds: they count provisional NEW labels and `0`/`o` as differences. |
+| confidence (`tx/c187R_rec_long.tsv`) | H 697, M 48 |
+| err_true | not measurable: there is no benchmark item for this hand |
+
+Files: `tx/c187R_passA.tsv` and `tx/c187R_passB.tsv`; `tx/c187R_rec/` (reconcile_passes output); `tx/c187R_rec.tsv` (wide, same columns as
+`tx/c185R_rec.tsv`); `tx/c187R_rec_long.tsv` (ids `c187R_Lnn` for the pooled merge). `tx/c187R_reconcile.py` holds every settlement with
+its reason and regenerates both rec files.
+
+**Settlements and conventions** (all 57 are in `tx/c187R_reconcile.py`):
+- **sqc, 7 occurrences.** A read `iib` and B read `sqc` 7 times (L05, L06, L14, L15, L20, L23). On the crop the sign is the small
+  open square that follows `wb` almost every time ("wb ⊏"), so it was settled as `sqc`.
+- **K, 6 occurrences.** A read `rot` and B read `K` for the ornate crossed "Rs" sign 6 times (L04, L12, L13 line-initial, L14,
+  L18). It was settled as `K` (M). The "p⁸"-shaped crossed 8 at L06 and L11 (A `8`, B `rot`) was settled as `rot` (M), the same
+  shape the passes agreed as `rot` at L25.
+- **vdash, 2 occurrences.** The v-with-long-bar (L03 end, L12 start) is `vdash`, as in c186L NEW1 and c187L.
+- **Crossed p.** A crossed `p` is one sign, `p` (L01, L02), following c187L.
+- **Small looped l, 4 occurrences.** The small looped ℓ (L03, L12 x2, L16 initial) is `l` (M). The passes split it as `l`/`c`/`f`.
+- **Smaller settlements.** L04's line-initial `th` was missed by A. The barred three-stroke at L04 is `iii`; c186L flagged barred and
+  bare `iii` as perhaps two signs, and it is barred here too. L07's `tz` is a bar over a 3-body. L10's `th` carries a dot above (M).
+  L18 col 22 is `eloop`, the same crossed loop the passes agreed as `eloop` at L12. L19 has no `+` between `4` and `d` on the crop.
+  L26 col 23 is a barred `z`.
+- **Notation.** `0` is written as `o`.
+
+**New shapes** (provisional labels, not forced into labels_v2):
+- **`NEW_c187R_2`, 3 occurrences:** an "xe"/fish ligature, an x-like crossing run straight into an e. It is at L22 col 24 (crop
+  `c187R_L22_s2`, after `p`), L25 col 8 (`c187R_L25_s1`, after `p`) and L26 col 6 (`c187R_L26_s1`, after `th`). Pass A read `x e`
+  each time, and pass B read `K`, `rot` and `K`. I set it as one sign because the stroke is continuous. It may be a K variant; the
+  pooled job or the sorter should decide.
+- **`NEW_c187R_1`, 1 occurrence:** a flat bar with an ink blob, at L04 col 25 (`c187R_L04_s2`, before `4 4 qb`). It may be a heavily
+  inked sign or a blot.
+- **`NEW_c187R_blot`, 1 occurrence:** a large ink blot covering one sign, at L20 col 5 (`c187R_L20_s1`, between `a` and `sqc`). It is
+  illegible on this image.
+- **Not new.** Neither c186L's NEW1 (it is `vdash` here) nor c187L's NEW1 (the open arc at L24) was seen as such on this leaf.
+- **Recorded for the pooled job, not settled here:**
+  - `s` (the 5-hook) occurs 4 times, 3 of them in `s z` (L08, L18, L20), as in c186L and c187L; `ss` occurs 6 times.
+  - The arc-hooked `2` does **not** occur at all on c187R (0 in 740 signs). c187L had 9 in 713, while c185R+c186R had 1 in 924. So
+    c187L's count stands alone.
+  - `S` occurrences are not split by shape (NEAR3-C1SPLIT recommends keeping them merged).
+
+**Clear words inside the cipher** (all grade M): L09 "Juil" with a large decorative initial, then "23", as a date heading for paragraph 2;
+L17 and L24 "toute" (both passes partly read it as "tour"); L26 "monsr" at the line end. These were kept as `PLAIN:` tokens.
+
+**Decode for information** (`tx/c187R_decode_info.txt`). It is ungraded and not a reading. The leaf is decoded under the current
+key.tsv, which was annealed on c185R+c186R only. This leaf took no part in fitting the key, and no control was run. `ss` is split to
+`s s`, and the NEW labels and `/` are left unkeyed.
+- Runs of French show up unprompted: "ceulx" (L05, L06, L15, L23), "aultres" (L10, L17), "plus" (L11), "trois" (L09),
+  "leur conseil et tout" (L20), "accroire" (L19), "conseil" (L20), "lesd ... ostel" (L26).
+- The rest is not segmentable by eye.
+- A held-out judge run of this decode against a shuffled-key control would be a cheap check. It was not in this brief, so I did not
+  run it.
+
+**Not done (brief):** no edit to ciphertext.tsv, key.tsv, tx/stream_all.txt, NOTES.md or NEAR.md. No look-alike pass (err_2reader
+< 0.10). No sorter focus list. No glyph atlas: the brief names line reads, and the family atlas belongs with the pooled job.
+
+## NEAR3-C1TX-c188L (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3. Brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave2.md` (job NEAR3-C1TX-<LEAF>,
+LEAF = c188L), pointing to the wave-1 job of the same name. Clock: claim 01:35 UTC, reconciliation finished 01:52 UTC
+(box 60 min). Written here, not in NOTES.md, per the brief; the lane folds it in.
+
+**Leaf.** c188L = IIIF f189, left leaf, native region 100,50,3150,4600 (ark btv1b90010063; NOTES.md "IMG-GALLICA1").
+It holds **27 lines** of cipher, continuous from top to bottom. There is no heading. The only clear writing is one small
+word at the end of L14 ("curou?", read M). Below L27 the leaf is blank apart from the library stamp.
+
+**Route and crops.**
+- The crop command, pasted before any subagent call:
+  `python3 tools/iiif_lines.py --ark btv1b90010063 --canvas 189 --region 100,50,3150,4600 --out
+  ciphers/clair1161-avis-flandre-1688/images --prefix c188L --bottom-margin 75 --debug`.
+  - It found 28 bands, with spurious centres at y 81 and 4568, so the bands straddled two lines.
+  - **Side effect on other leaves' files.** Because the folder was over 30 MB on disk, the tool shrank two committed
+    reference images from other leaves (`src_..._f186_...`, `src_..._f187_...`) to 1600 px "_ref1600" copies, and
+    rewrote their manifest rows. It also downscaled this job's own native file. I restored both files and their manifest
+    rows from git before committing. **The lane should know the tool does this whenever several leaves crop into one
+    folder.**
+- I fetched the region a second time into the scratchpad (not committed; sha1 dd16bb37cd08eaf2c35b4d955dcc62de31fa9a80).
+  I re-cut it with centres set by eye: `python3 tools/iiif_lines.py --image <native> --out <scratchpad>/crops --prefix
+  c188L --centres 280,420,600,720,850,990,1140,1260,1390,1530,1660,1800,1920,2050,2190,2330,2460,2580,2710,2850,2980,3130,
+  3270,3400,3540,3670,3800 --top-margin 15 --bottom-margin 75 --max-width 1700 --overlap 150 --debug`.
+  That gives 27 lines x 2 segments. The two blind passes read these crops (q95, in the scratchpad).
+- **Those level crops were still wrong.** The lines on this leaf rise about 0.05-0.08 px per px to the right, some
+  110-170 px across the leaf. A level band therefore holds its own line on the left, and on the right the end of the
+  line cut at the top plus the next line in full. Both passes reported this.
+- For the reconciliation I cut **slope-following crops** with `tx/c188L_slopecrop.py`. It tracks each line strip by
+  strip on the ink profile and cuts 3 segments per line (x 450-1500, 1350-2400, 2250-3150), 81 crops.
+- These are the committed crops: `images/c188L_L01..L27_s1..s3.jpg` plus an overlay of the boxes,
+  `images/c188L_lines_debug.jpg`. They are grayscale JPEG q30 at native size, **1.34 MB** in all, under the brief's
+  1.5 MB.
+- The first-cut crops pushed in ad631ae3 are removed in this commit, along with their manifest rows. They can be
+  regenerated with the commands above.
+- The script reproduces the committed boxes exactly from the native region. The committed folder is about 27.8 MiB.
+
+**Requests.** gallica.bnf.fr: 2. The first was the iiif_lines fetch; the second was a refetch after the tool had
+downscaled its own copy. Both used a descriptive UA, with no challenge.
+
+**Subagent calls (Sonnet): 2.** Pass A and pass B, run in parallel. Each saw only `tx/labels_v2.md` and the 54
+level crop paths, with the prompt in `tx/c188L_pass_prompt.md`. Pass B worked bottom-up. I did the reconciliation from
+27 three-segment line composites plus 4 detail views. That is the third priced unit; no third pass was run.
+
+**Numbers.**
+
+| item | value |
+|---|---|
+| lines | 27 |
+| pass A / pass B signs | 730 / 750 |
+| reconciled `tx/c188L_rec.tsv` | **752 cipher signs** + 1 clear word (PLAIN:curou?), conf H 634, M 119 |
+| err_2reader, raw (`reconcile_passes.py`, nw) | 156/758 = 0.206 |
+| err_2reader after `tx/c188L_signmap.tsv` (ε->e, 0->o, NEW:v-bar->vdash, NEW:triangle->tri: spelling, not reading) | **137/758 = 0.181** |
+| of which one uniform convention split (A tz / B z on the same shape, every time) | 35; the rest 102/758 = 0.135 |
+| pass vs reconciled (same sign map) | A 119/760 = 0.157 (35 of them the tz/z convention), B 63/762 = 0.083 |
+| err_true | not measurable: no benchmark item of this hand |
+
+Most of the split comes from the level crops, not from look-alike signs:
+- L04 and L18 are 10 signs short in pass A, because the line's right half was cut off in its crop.
+- Several splits are one sign that a pass read twice in the overlap.
+- **One error was shared by both passes and so did not show up as a split.** Both gave L16's line end
+  (`e wb S th w + a y th`) to L15 and left out L15's real end (`iii 7 7 th K w + S 9`). I fixed this from the slope crops
+  (grade M, one reader).
+- I checked every line end against the slope crops; the other 25 match the passes.
+
+**Look-alike pass not run.** The brief asks for `tools/lookalike_pass.py` when err_2reader is over 0.10, but the tool
+does not fit this leaf: it needs a blind sheet of sign tiles (glyph atlas) and a confusion table, and no atlas exists for
+this hand. It also re-reads only tiles that look alike, while this split comes mostly from the line framing. I wrote the
+residual questions as a sorter focus list instead (`tx/c188L_focus.tsv`, sid<TAB>question, 8 rows). No third full pass
+was run.
+
+**Settlements** (each is in `tx/c188L_reconcile.py` with its reason; 86 positional decisions, a tz/z rule and two
+line-end corrections):
+- **tz/z.** The shape is a barred z with a small raised loop on top. I settled all 35 as `z`, grade M, the label the
+  earlier leaves use for this shape (c185R: z 48, tz 6; c187L: z 48, tz 1). Whether it differs from the plain barred z is
+  focus row 1.
+- **iii/iib.** Settled by stroke count where I looked. Barred three-stroke groups (iii) are the usual form
+  (L02, L15, L16, L17, L22, L23), and a two-stroke `#` (iib) occurs too (L12 three times, L19). The two unviewed cases
+  keep A (M). This is the same two-form question c186L raised.
+- **The raised hook before q.** Pass A read f, pass B e or 7. I settled e (M where unclear), which is c187L's c/e
+  convention.
+- **`s z` pair** read as `s` (5-hook), as c186L and c187L did.
+- **phi vs q** on the bowl with the stem through it: phi (M).
+- **The e-looped K** at L07 and L17 is one sign, K (M).
+- **A merged with B.** Pass B's `NEW:v-bar` (L25) = `vdash` and `NEW:triangle` (L25) = `tri`, the c187L conventions.
+- **Signs dropped.** A's extra `a` before y at L02 and L05: the y glyph is drawn as a+y. Also overlap doubles at L05,
+  L06, L08, L16, L20 and L23. The "ls" in L20 is L19's long-s descender.
+
+**Shapes outside labels_v2** (provisional names; the c186L/c187L `NEW1` labels do not fit them):
+- `NEW_c188L_1`: a closed D-loop under a long arched over-bar. 3 occurrences: L01 x2 (slope crop c188L_L01_s1/s2) and
+  L19 (c188L_L19_s2).
+- `NEW_c188L_2`: a small caret ^. 2 occurrences: L01 before `a` (c188L_L01_s3) and L17 before `S` (c188L_L17_s2).
+  Pass B named it NEW:caret; pass A read `a`.
+- `NEW_c188L_3`: a large open C enclosing a barred z. 4 occurrences: L05 (s2), L09 (s3), L11 (s3) and L24 (s1).
+  - The passes read it as eloop, tz, or `eloop z`.
+  - **L09 and L11 share the run `7 7 a sqc 3 7 NEW_c188L_3 y 4 q th`.**
+  - In the information decode below it falls where a t would fit ("...rois" twice). In the current key, z = t. It may
+    therefore be a form of z, but that is not settled.
+- c186L's `NEW1` (v with long bar) is the `vdash` at L25 here. c187L's open-arc `NEW1` does not occur.
+
+**Decode for information only** (`tx/c188L_decode_info.txt`). It is ungraded and not a reading: the leaf is decoded
+under the current key.tsv, which was annealed on c185R+c186R only, and no control was run. decode_key's own count:
+C 78, S 561, M 111, U 9 (the U are the NEW_c188L_* signs).
+- Runs of French appear unprompted: "entreulx", "tous le", "conseil", "assisti", "pareile des", "plusieurs aultres",
+  "persoune", "couuert", "eulx et", "croire".
+- Much of the rest does not segment into words.
+- A held-out judge score with a shuffled-key control would be the cheap check of the key on this leaf. It was not in
+  this brief.
+
+**Files:** `tx/c188L_passA.tsv`, `tx/c188L_passB.tsv`, `tx/c188L_signmap.tsv`, `tx/c188L_rec/` (reconcile_passes
+output), `tx/c188L_rec.tsv` (wide), `tx/c188L_rec_long.tsv` (ids `c188L_Lnn`, line/pos/sign/conf/note),
+`tx/c188L_reconcile.py` (regenerates both rec files), `tx/c188L_slopecrop.py`, `tx/c188L_focus.tsv`,
+`tx/c188L_decode_info.txt`, `tx/c188L_pass_prompt.md`.
+
+**Not done** (per the brief): no edit to ciphertext.tsv, key.tsv, tx/stream_all.txt, NOTES.md or NEAR.md; no judge
+run; no third pass.
+
+**Next step for the pooled job.** Before merging, re-read L15/L16 and the 119 M-graded signs against the slope crops,
+or run two fresh blind passes on the slope crops (2 Sonnet calls at about the per-pass rate of this job), so that
+err_2reader measures reading rather than framing.

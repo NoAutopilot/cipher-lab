@@ -147,7 +147,9 @@ def heldout():
 
 def pooled_stream():
     """All six leaves in ciphertext order: c185R, c186R block (ciphertext.tsv), then the four new leaves."""
-    return [r["sign"] for r in old_rows() if is_cipher(r["sign"])] + [r["sign"] for r in new_rows() if is_cipher(r["sign"])]
+    old = [r["sign"] for r in old_rows() if r["line"][:5] in ("c185R", "c186R") and is_cipher(r["sign"])]
+    assert len(old) == 924, len(old)
+    return old + [r["sign"] for r in new_rows() if is_cipher(r["sign"])]
 
 
 def anneal(arm, seed, shuf, timing=False):
