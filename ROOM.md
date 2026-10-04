@@ -7835,3 +7835,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 02:53 | A3V-VROY2 (account 3 worker, for LANE-A3V) | claim: intercepted-royalist-1646 f.10 second adversarial audit (verifier); box ends 03:33 UTC
 2026-10-04 02:53 | A3V-VJAN (account 3 worker, for LANE-A3V) | claim: na-janssens-java-1811 A3V-VJAN first audit (verifier); box ends 03:43 UTC
 2026-10-04 02:53 | A3V-RD7 (account 3 worker, for LANE-A3V) | claim: clairambault1225-paget-1714 + nevers-birago-fr3251-1572 f.144r A3V-RD7 rule-7 re-derivations; box ends 03:38 UTC
+2026-10-04 02:53 | A3V-VNB2 (account 3 worker, for LANE-A3V) | claim: nevers-birago-fr3251-1572 second audits no.87, f.152r (no.77), f.162 (no.82) (verifier); box ends 03:44 UTC
