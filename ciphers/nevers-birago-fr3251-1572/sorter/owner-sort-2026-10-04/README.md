@@ -8,3 +8,9 @@ each tile started in, rebuilt from the published page's data; `settled_labels.ts
 488 tiles (f.117, f.144r, f.168): kept 277, moved 203, aside 5, bad-cut 3; 52 piles before, 105 after.
 The owner's piles are a third reader, not ground truth (CLAUDE.md, TRANSCRIPTION.md): a split may be a real
 homophone distinction or an over-split, and must be tested before any key value rides on it.
+
+
+## Corrections after export
+
+`corrections.tsv`: tiles the owner later moved out of a pile (one row each, with date). Apply them on top of
+`settled_labels.tsv` before any use; UNPLACED means "not this pile, destination not given" (grade the tile M, unread).
