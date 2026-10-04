@@ -1361,3 +1361,55 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: pre-registered blank-cell test of R4388 (codes 2001-3900) on the 1763 pool, ~$4
+
+## N7-HELBC (4 Oct 2026): pre-registered blank-cell test of R4388 (f.79, codes 2001-3900) on the 1763 letters (account 2 worker for LANE-NEAR7)
+
+Step run: N7-HELDK's named next. PREREG `key_r4388/PREREG-N7HELBC.md` pushed 1c8e6c67 before the images were fetched; the cell list
+(`cells.tsv`, 270 target + 100 null codes, seed 4388) cf957cfd before reading; addendum A (a "zero" sub-state, geometry) 7832fb26/8e6b86fc
+before any pass result. One DECODE browser login (`--guess-fullsize`), R4388 P1-P4 full size to scratch only (not committed; same sha1s as
+N7-HELDK). Units stated in ROOM before the first subagent call: 2 blind Sonnet passes (one call each over 24 tiles of 16 three-row bands,
+`key_r4388/crop_cells.py`) + 1 reconciliation by this worker.
+
+**Target set.** The six 1763 letters, clean all-digit tokens only: 396 tokens / 270 distinct codes in 2001-3900 (the brief's "~180" was
+an estimate; 270 stated in the PREREG before reading).
+
+**Reading.** err_2reader 29/350 = 0.083 (classes F+Z / B / X; 20 cells `?` for pass A). The strip bands (3001-3100) were cut 2-3 rows off
+by my strip geometry (both readers said so), so all 24 strip cells in the list were re-read by me from an aligned full-resolution view of
+the strip (flag `r`, note in `settle.tsv`); the other 29 disagreements were settled from their crops. Six cells carry only an ink blot
+after the number (X: 2407, 2491, 2520, 2593, 2760, 2853). Result per cell: `key_r4388/cells_read.tsv` (A, B, settled state, flag).
+
+**Result** (`python3 key_r4388/blank_test.py --score`, output in `key_r4388/score.txt`):
+
+| | S (blank-cell token share) | null at random code positions (100 cells, p0) | null p01 / p05 / median | control R4369 on R1953 at N=396, p95 / p99 | verdict |
+|---|---|---|---|---|---|
+| X as filled (primary) | 125/396 = **0.316** | 0.340 | 0.260 / 0.283 / 0.338 | 0.048 / 0.056 (power OK) | **FAIL** |
+| X as blank (sensitivity) | 129/396 = 0.326 | 0.370 | 0.288 / 0.311 / 0.369 | 0.048 / 0.056 | FAIL |
+
+Strip 3001-3100 alone (not gated): 11/28 = 0.393, the same figure N7-HELDK saw by one reader. Not gated: 28 of the 270 target cells and 7
+of the 100 null cells carry the word "zero" (38 of 396 target tokens on "zero" cells).
+
+**Verdict (pre-registered rule): FAIL -- R4388 is retired as the key of the 1763 letters (instrument: blank-cell test).** The 1763 tokens
+fall on blank cells at the sheet's own base rate (0.316 vs null median 0.338); a key that enciphered them would leave about 3-6% (control
+p99 0.056 at the same N). Rule 3: the control can differ on this statistic (it sits ~5x lower) and does. No full transcription of R4388.
+
+**Where it was not found:** R4388 does not carry the 1763 code values (this test); no docket, holder or date on R4386/R4388 (N7-HELDK).
+Untried: R4386 (alphabetical 1201-2200, names point to 1764+) under the same instrument on the 1201-2000 band (63 distinct codes / 121 clean
+tokens; control power to be re-checked at that N), ~$3, low prior. Requests: de-crypt.org about 10 (1 login + RecordsView 4388 + 4 thumbnails + 4 full-size), no
+challenge. Subagent calls: 2 (Sonnet). Cost: see the lane ledger.
+
+## Remaining gaps (N7-HELBC, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); the context-fit anneal over fr18 bigrams is untestable at this N (N5-HEL7); next: transcribe Fagel 5177's clear Hellen pages (scans 5-93, two blind passes + reconciliation) as a writer- and week-matched phrase corpus, then a pre-registered phrase-crib placement in the R4369-decoded gaps with its own held-out control, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), the 1756 sheets R4377-R4379 are tallies/empty or Michel's, and no record in R4381-R4408 is dated 1756 or names Hellen (N6-HEL81); no further Add MS 32276 record remains unopened
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: not-attempted; R4388 (f.79, 2001-3900) retired by the pre-registered blank-cell test (S 0.316 vs null median 0.338, control p99 0.056; N7-HELBC); next: the same blank-cell test of R4386 (f.75, alphabetical 1201-2200, names point to 1764+) on the 63 distinct 1201-2000 codes (121 clean tokens), one login + 2 blind passes + reconciliation, ~$3, low prior
+
+## Escalation (N7-HELBC, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all Add MS 32276 records looked at, up to f.56 (NEAR3-HEL3), R4381-R4408 by metadata and thumbnails (N6-HEL81), R4386 and R4388 at full size (N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); context only, not a crib for R1953 itself
+- [ ] known-keys: R4369 reads R1953; R4370 and R4372 retired for codes 1-800; R4376 fails on R1049 (N6-HEL76); R4388 fails the blank-cell test on the 1763 letters (N7-HELBC); R4386 untested (blank-cell test, ~$3)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: the fr18-bigram context-fit anneal is untestable at this N (N5-HEL7); untried instrument: phrase-crib placement from a transcribed Fagel 5177 writer-matched corpus, with its own held-out control
+- [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: blank-cell test of R4386 on the 1763 1201-2000 band, ~$3 (low prior); larger: Fagel 5177 phrase corpus for codes 1-800, ~$12

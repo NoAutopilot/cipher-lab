@@ -131,3 +131,10 @@ nulls ("zero") dropped from gated keys. Pass = uni value-shuffle p and bi order-
 | period key R4376 R0 | 70 / -9.529 vs -9.730 (0.350) / -1.090 vs -1.018 (0.485) | 1.00 / 0.90 | FAIL |
 | period key R4376 R100 | 91 / -9.870 vs -9.599 (0.695) / -1.204 vs -1.076 (1.000) | 1.00 / 0.97 | FAIL |
 | period key R4376 LR100 | 145 / -9.905 vs -9.602 (0.830) / -1.159 vs -1.086 (0.840) | 1.00 / 1.00 | FAIL |
+
+## N7-HELBC (4 Oct 2026): blank-cell test, R4388 (f.79, codes 2001-3900) on the 1763 letters (PREREG-N7HELBC, 1c8e6c67)
+
+| family | target S (token share on blank cells, N=396) | null (random code positions) p01 / p05 / median | control (R4369 on R1953, N=396) p95 / p99 | verdict |
+|---|---|---|---|---|
+| period key R4388, X as filled | 0.316 | 0.260 / 0.283 / 0.338 | 0.048 / 0.056 | FAIL (retired) |
+| period key R4388, X as blank | 0.326 | 0.288 / 0.311 / 0.369 | 0.048 / 0.056 | FAIL |
