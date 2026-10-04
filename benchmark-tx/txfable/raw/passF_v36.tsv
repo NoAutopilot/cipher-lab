@@ -1,0 +1,41 @@
+passage	pos	sign_id	alt	conf	gloss	gconf	note
+v36top_L01	1	S16		M	p	L	line start; plain triangle, no crossing stroke visible; tall p/l-like stroke above-left
+v36top_L01	2	S45		H	?	L	C with inner dot; caret-like mark (^) above
+v36top_L01	3	S60	S69	M	n	H	oval crossed by one long horizontal bar; the bar runs on through signs 4-5
+v36top_L01	4	S84	S40	M	l	M	x with loop, crossed by the long bar; tall l above
+v36top_L01	5	S80	S65	M	a	M	8 with the same bar through it
+v36top_L01	6	S30	S49	M	x	M	dot-slash-dot; gloss looks like x (could be r)
+v36top_L01	7	S89		H	d	H	double bar
+v36top_L01	8	S62		H	o	H	beta
+v36top_L01	9	S30	S49	M	n	H	dot-slash-dot
+v36top_L01	10	S75		H	?	L	plus; mark above looks like ( and two ticks, maybe c or e
+v36top_L01	11	S17	S66	M	?	L	z/2 shape cut at crop edge of s1; two small ticks above
+v36top_L01	12	S40	S84	M	l	M	s2 start; large x with descending tail
+v36top_L01	13	S17	S31	L	s	M	2-shape sitting on a long underbar; dot after it at baseline not counted
+v36top_L01	14	S31		M	?	L	2 with long sweeping tail down-left; blot above-left, tick above
+v36top_L01	15	S13	S95	M	g	M	round 0
+v36top_L01	16	S30	S49	M	n	H	dot-slash-dot
+v36top_L01	17	S42	S84	M	o	M	x crossed by a long bar running on through sign 18
+v36top_L01	18	S60		M	z	M	oval crossed by the bar; gloss z or 2; dot after at baseline not counted
+v36top_L01	19	X_NEW		L	-	L	small o with a short bar/hook to the right at top (sigma-like)
+v36top_L01	20	S67		M	x	M	f with tail
+v36top_L01	21	S25		H	-	L	n
+v36top_L01	22	S95		M	?	L	small o followed by comma; cursive gloss group above o and 6 reads like 'sauj' or 'scuy'
+v36top_L01	23	S77	S74	M	?	L	6; end of s2
+v36top_L01	24	X_NEW		L	-	L	s3 start; long-s-like stroke with a comma below, nothing on sheet
+v36top_L01	25	X_NEW		L	-	L	sigma-like o with right hook, same as pos 19
+v36top_L01	26	S54	S37	M	?	L	b/6 with a crossbar; f-like flourish above
+v36top_L01	27	S25		H	?	L	n; small tick above
+v36top_L01	28	S47	S45	L	-	L	e with a hook/stroke
+v36top_L01	29	S47		M	u	L	e with crossbar; ii/u mark above
+v36top_L01	30	S45	S47	M	a	M	c, no dot seen
+v36top_L01	31	S77	S37	M	-	L	6 leaning
+v36top_L01	32	S93	S22	M	s	L	omega with rising tail; long-s-like gloss above
+v36top_L01	33	S37	S20	L	e	L	tall descending stroke joined to a right bowl (like a delta/b); could also be read as two signs long-s + S57
+v36top_L01	34	S75		H	o	M	plus
+v36top_L01	35	S37	S74	M	ad	L	b with flourished top; gloss looks like ad or ac
+v36top_L01	36	S75		H	?	L	plus; two ticks above; end of s3
+v36top_L01	37	S54	S37	M	-	L	s4 start; b/6 with crossbar
+v36top_L01	38	S13	S95	M	d	M	round 0; d-like letter above
+v36top_L01	39	S52		H	?	L	3; two ticks with a wavy stroke above
+v36top_L01	40	S13	S95	M	?	L	round 0; check/v-like mark above; closing bracket ) after it; line end
