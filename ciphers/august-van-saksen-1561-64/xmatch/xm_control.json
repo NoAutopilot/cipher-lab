@@ -1,0 +1,185 @@
+{
+ "relaxed": "amendment A",
+ "rows": [
+  {
+   "key": "ciphers/dupuy468-anhalt/key_from_gloss.tsv",
+   "lang": "la",
+   "letters": 23,
+   "ct": "ciphertext_58_sample.tsv",
+   "own_lang": {
+    "cov": 0.422,
+    "stat": -0.54,
+    "z_ng": -0.54,
+    "z_vf": -0.69,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.422,
+    "stat": 0.39,
+    "z_ng": 0.39,
+    "z_vf": -1.17,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/dupuy468-anhalt/key_from_gloss.tsv",
+   "lang": "la",
+   "letters": 23,
+   "ct": "ciphertext_74.tsv",
+   "own_lang": {
+    "cov": 0.411,
+    "stat": -0.37,
+    "z_ng": -0.37,
+    "z_vf": -0.55,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.411,
+    "stat": 0.06,
+    "z_ng": 0.06,
+    "z_vf": -1.19,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/dupuy468-anhalt/key_from_gloss.tsv",
+   "lang": "la",
+   "letters": 23,
+   "ct": "ciphertext_57.tsv",
+   "own_lang": {
+    "cov": 0.43,
+    "stat": -0.7,
+    "z_ng": -0.85,
+    "z_vf": -0.7,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.43,
+    "stat": 0.68,
+    "z_ng": 0.68,
+    "z_vf": -1.08,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/decode-1168-modena-costabili-1492/key.tsv",
+   "lang": "it",
+   "letters": 25,
+   "ct": "ciphertext_58_sample.tsv",
+   "own_lang": {
+    "cov": 0.452,
+    "stat": 0.14,
+    "z_ng": 0.14,
+    "z_vf": -0.84,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.452,
+    "stat": -0.5,
+    "z_ng": -0.5,
+    "z_vf": -0.79,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/decode-1168-modena-costabili-1492/key.tsv",
+   "lang": "it",
+   "letters": 25,
+   "ct": "ciphertext_74.tsv",
+   "own_lang": {
+    "cov": 0.394,
+    "stat": -0.19,
+    "z_ng": -0.19,
+    "z_vf": -0.77,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.394,
+    "stat": -0.8,
+    "z_ng": -1.21,
+    "z_vf": -0.8,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/decode-1168-modena-costabili-1492/key.tsv",
+   "lang": "it",
+   "letters": 25,
+   "ct": "ciphertext_57.tsv",
+   "own_lang": {
+    "cov": 0.483,
+    "stat": -0.25,
+    "z_ng": -0.25,
+    "z_vf": -0.97,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.483,
+    "stat": -1.0,
+    "z_ng": -1.09,
+    "z_vf": -1.0,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/na-suriname-map-1781/key_period_codes.tsv",
+   "lang": "nl",
+   "letters": 49,
+   "ct": "ciphertext_58_sample.tsv",
+   "own_lang": {
+    "cov": 0.399,
+    "stat": 1.93,
+    "z_ng": -2.31,
+    "z_vf": 1.93,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.399,
+    "stat": 0.82,
+    "z_ng": 0.65,
+    "z_vf": 0.82,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/na-suriname-map-1781/key_period_codes.tsv",
+   "lang": "nl",
+   "letters": 49,
+   "ct": "ciphertext_74.tsv",
+   "own_lang": {
+    "cov": 0.355,
+    "stat": 1.88,
+    "z_ng": -1.68,
+    "z_vf": 1.88,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.355,
+    "stat": 0.89,
+    "z_ng": 0.27,
+    "z_vf": 0.89,
+    "verdict": "none"
+   }
+  },
+  {
+   "key": "ciphers/na-suriname-map-1781/key_period_codes.tsv",
+   "lang": "nl",
+   "letters": 49,
+   "ct": "ciphertext_57.tsv",
+   "own_lang": {
+    "cov": 0.39,
+    "stat": 1.47,
+    "z_ng": -2.0,
+    "z_vf": 1.47,
+    "verdict": "none"
+   },
+   "f159_lang": {
+    "cov": 0.39,
+    "stat": 0.24,
+    "z_ng": 0.09,
+    "z_vf": 0.24,
+    "verdict": "none"
+   }
+  }
+ ]
+}

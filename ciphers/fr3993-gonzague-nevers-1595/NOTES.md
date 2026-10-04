@@ -208,3 +208,11 @@ Verdict: keep going: 2 internal gaps; cheapest next: gloss-only pass on the 72r 
 ## Status (account-3 orchestrator, 3 Oct 2026 04:4x UTC)
 
 `found-solved`: NV01-READ (c0fd6127) found a period interlinear decipherment above every cipher line (f.72r, f.71v foot), as with decode-1168-modena-costabili-1492. Our key-no.70 decode (H 180 M 1 U 8, z 14.4 vs 200 shuffled keys) agrees with it; it stands as a known-answer control for key no.70, not a new reading.
+
+## N4-XM (4 Oct 2026, account 2 worker for LANE-NEAR4)
+key_crossmatch nightly 4 Oct 02:54 (repeat of 3 Oct): fr3416-nevers-fils-1589 `keys/key_no25.tsv` reads this
+ciphertext_tokens.tsv at stat 6.0, cov 0.963, n 189. Same key family, not a separate lead: compared code by code with
+`keys/key_no70.tsv`, the 40 letter codes shared by both tables give the same letter in all 40; no.70 adds 14 c,
+17 d, 39 l, 49 qu, 59 f, 69 p, 79 m on codes that are nulls ("-") in no.25 and marks the other nulls NULL, and only
+code 15 (a null in no.25) is absent from no.70 -- no.70 is no.25 extended (a relative, as Tomokiyo's no.70 entry
+says), not the same table; the hit is expected for any no.70 text.

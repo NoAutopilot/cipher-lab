@@ -1068,3 +1068,11 @@ contacted. Rule 10: this is a search log; it makes no novelty claim.
 rah-morillo-1817: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## N4-XM (4 Oct 2026, account 2 worker for LANE-NEAR4)
+key_crossmatch nightly 4 Oct 02:54: hellen-frederick-1752 `key_r4370/key_decode.tsv` reaches stat 5.17 (cov 0.571) on
+`rederiv/ciphertext_rederiv.tsv`, but that text is 21 tokens, below the gate's min_tokens 100
+(`tools/data/key_crossmatch_gate.json`): at that length the calibration found no stat that separated verified pairs
+from the shuffled-key null (one verified pair, lodewijk 5797 at n=73, sits at 3.29 and jan-van-nassau 5551 at n=32 at
+-0.58), so the tool labels it 'short' -- a number with no calibrated meaning, and an 1817 Spanish ciphertext under a
+1751-52 key from the Hellen-Frederick correspondence is not a lead on it.

@@ -1066,3 +1066,27 @@ Verdict after A1B-VILL-M: `open`. No.57 under the combined 1-2/3-figure parse: p
 Bourdeau non-test (power 15/20); at the measured transcription error the power drops to 10-12/20, so no.57 is **not closed** for this
 letter. Next, cheapest first: (e'') the owner's sign-sorter settlement (ASKS 124) and a reconciled ciphertext, then re-run
 `no57_score.py` and `no57_nomen_score.py` (both scripts take the transcription as input; ~$1); (d) stands.
+
+## N4-XM (this folder's key f159 as a cross-match lead of 4 Oct 2026 02:53, account 2 worker for LANE-NEAR4, 4 Oct 2026)
+Lead: `ciphers/fr3993-villeroy-1595/keys/key_f159_letters.tsv` (fr.3995 f159 letter strip) reaching the calibrated
+key_crossmatch gate (stat >= 3.292) on AVS ciphertext_58_sample / 74 / 57. Pre-registered in
+`ciphers/august-van-saksen-1561-64/xmatch/PREREG.md` (commit fff1002d; amendment A ed5e6de1 before any control
+statistic), script `xmatch/xm_control.py`, numbers `xmatch/xm_control.json`, eye read `xmatch/eye74.tsv`.
+Target vs control, same tool functions (`pair_stats`, 20 class-shuffled keys, seed 0): f159 reproduces the nightly
+exactly, stat 8.66 / 7.22 / 6.48 (cov 0.565 / 0.515 / 0.573; all from the letter 4-gram z, value-frequency z only
+2.0 / 1.96 / 1.71). Size-matched control: no other letter-alphabet key of 20-58 letters on disk (84 checked) reaches
+coverage 0.5 on any of the three texts, so under amendment A the three real distinct-folder keys with the highest
+coverage were scored with the floor bypassed: dupuy468-anhalt key_from_gloss (cov 0.41-0.43) stat -0.70 to -0.37;
+decode-1168-modena-costabili key (0.39-0.48) -0.25 to 0.14; na-suriname-map key_period_codes (0.36-0.40) 1.47 to
+1.93 (under f159's fr model: all <= 0.89). By the pre-registered rule the lead survives the size-matched control
+(control max 1.93 vs gate 3.292). Read by eye: f159 covers only 8 AVS sign types (1, 3-8 and V) and sends all
+445 covered ct74 tokens to four letters (o, i, l, t); under AVS's own key_74 the same tokens are e, a, n, l, h, c,
+b, r. Agreement letter for letter: 0 of 30 (first 30 tokens) and 0 of 445 (all covered tokens). The first 60
+tokens decode under key_74 as "die drey thausent spanier welche unser K dem frantzosen zhulff sickt..." and under
+f159 as "..o.to..lo..oi...oi.ot.oillo.i.ot.." -- no text. f159 is a homophonic letter alphabet (figures 1-19 as
+homophones of a b c d e i l o; named symbols for the other letters) whose figures overlap the AVS notation by
+form only. Verdict: the tool's statistic reaches the gate and the size-matched controls do not, but the eye read
+shows no shared alphabet; the stat is driven by a key that puts only frequent letters (o, i, l, t) on the few AVS
+signs it covers, which the class-shuffled null (it moves q, x, y, z onto those figures too) cannot match. Not a
+lead. Suggestion for the tool (one line, not done): add a minimum count of distinct covered sign types, or shuffle
+the null only among the codes the ciphertext actually covers. Requests: none (offline). Subagent calls: 0.
