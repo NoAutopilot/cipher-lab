@@ -45,7 +45,12 @@ def djvu_lines():
         return f.read().split("\n")
 
 
-JUNK_LINE = re.compile(r"^\s*\d\s+(I\s+)?[A-Za-z]+\s*$|STATE\s+PAPERS|THURLOE\s+ESQ|^\s*\d{1,3}\s*$|^\s*[A-Z]?[a-z]{0,2}\.?\s*:?\s*$")
+# Birch's running heads: "188 STATE PAPERS OF" / "JOHN THURLOE ESQ; &c. 189", which the OCR also renders as
+# spaced capitals ("J  O  N  H     T  H  U  R  L  O  E    E  S  Q.  &c,  275", djvu 23013): a run of five or more
+# single capital letters, each a token of its own, never occurs in a cipher or decipherment line (A3V2-THUR275,
+# 4 Oct 2026; before this the page number 275 entered P5+P6's cipher stream and took one alignment vote).
+JUNK_LINE = re.compile(r"^\s*\d\s+(I\s+)?[A-Za-z]+\s*$|STATE\s+PAPERS|THURLOE\s+ESQ|^\s*\d{1,3}\s*$|^\s*[A-Z]?[a-z]{0,2}\.?\s*:?\s*$"
+                       r"|(?:(?:^|\s)[A-Z]\s+){4}[A-Z](?:\s|$)")
 JUNK_SUB = [
     re.compile(r"Vol\.\s+\S+\.?(\s+\d+\s+[A-Z])?"),
     re.compile(r"\b[Pp][-.]\s*\d[\d\s',]*[-.]"),

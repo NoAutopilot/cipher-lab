@@ -2418,3 +2418,67 @@ Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
 - [ ] retry: one-vote boundary test, djvu-OCR instrument retired (boundary_test.py v1/v2, coverage below gate twice); planned: same test on a page-image transcription of the P5+P6 / P7 cipher lines
 Verdict: keep going: 3 internal gaps; cheapest next: JUNK_LINE running-head fix and key regeneration (275), ~$1
+
+## A3V2-THUR275 (4 Oct 2026)
+
+Brief: LANE-A3V2 wave 1 (`.claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md`, A3V2-THUR275), account 3 worker, 04:56-05:1x
+UTC: the NEAR3-THUR gap "key_stamford.tsv entries 275 and 84" -- add Birch's spaced-capital running heads to
+`pool_1654/align_stamford.JUNK_LINE`, regenerate the key and its control, `decode_stamford.py --check`. Disk only.
+
+**Before any change**: `python3 pool_1654/decode_stamford.py --check` on the committed files -> `ok` (exit 0, 2m54).
+
+**Change** (`align_stamford.py`, extended in place, commented at the pattern): one clause added to `JUNK_LINE`,
+`(?:(?:^|\s)[A-Z]\s+){4}[A-Z](?:\s|$)` -- a line carrying five or more single capital letters each as its own token.
+Scope check against the three letters' djvu spans (P4, P5+P6, P7, cipher and plain): exactly **one** line changes
+status, djvu 23013 `J  O  N  H     T  H  U  R  L  O  E    E  S  Q.  &c,  275` (Birch vol. 3 p.275's running head, the
+line NEAR3-THUR's furniture check named). Volume-wide the clause newly drops 51 lines, all running heads or spaced
+titles ("O F  T H E", "J O H N  T H U R L O E  E S Q^ &c. 5.5", "B R I S T O L."), none a cipher or decipherment line.
+
+**Key, before -> after** (`pool_1654/key_stamford.tsv`, 60 -> 59 rows): entry **275 that (1/1, M) dropped**, as
+expected; **84 noticeofandalthough (1/1, M) unchanged** (left as the brief says); **no meaning and no grade changed**
+on any entry (12 and 25 stay H, every C stays C). Twelve letter entries moved by one vote where the P5+P6 alignment
+re-routed around the removed line (2, 6, 12, 17, 18, 22, 25, 28, 35, 40, 42; shares within 0.01-0.03), and the
+circled-dot sign @ lost its two spurious chunks ("for", "granted": 10/12, 0.83 -> 10/10, 1.00).
+
+**Control, before -> after** (`pool_1654/control_stamford.tsv`, rule 3, same statistic both sides):
+
+| direction | letter tokens | right | wrong | unkeyed | share right of keyed |
+|---|---|---|---|---|---|
+| key from P5_P6 -> P7 (before) | 832 | 768 | 60 | 4 | 0.928 |
+| key from P5_P6 -> P7 (after) | 832 | 768 | 60 | 4 | 0.928 |
+| key from P7 -> P5_P6 (before) | 662 | 620 | 40 | 2 | 0.939 |
+| key from P7 -> P5_P6 (after) | 671 | 621 | 48 | 2 | 0.928 |
+
+The P7 -> P5+P6 direction now scores 9 more P5+P6 numerals as letters (the DP no longer spends nulls around the
+running head), 1 more right and 8 more wrong: the control band is **92.3-92.8%**, not the 92-94% written at s.16
+(the upper figure rested on the leak). The P5+P6 -> P7 direction is unchanged, as it must be (P7's spans had no
+spaced-capital line; its own heads were already caught).
+
+**P4**: `reading_P4.txt` regenerated **byte-identical** (git shows it unmodified): no P4 token's value or grade
+changed, H 64 C 338 S 0 M 16 U 6 of 424 stands, no rule-7 re-derivation is owed by this change.
+`python3 pool_1654/decode_stamford.py --check` after the change -> `ok: key_stamford.tsv, control_stamford.tsv,
+reading_P4.txt match` (exit 0, 2m51).
+
+Not touched: `pool_1654/boundary/results.tsv` / `results_v2.tsv` record the retired v1/v2 runs, whose 275 target row
+("REFUTE-furniture", djvu 23013) was produced *before* this fix; `boundary_test.py` imports `A.JUNK_LINE`, so its
+`--check` would now find that row gone -- the files are the pre-registered record of the retired instrument, not a
+reading, and were left as they are (one-line suggestion: if the instrument is ever re-run on a page-image
+transcription, regenerate both files then). AUDIT.md's postmortem row naming entries 84 and 275 is history, unchanged.
+Requests: none (disk only; all hosts 0). Vision calls 0. Subagents 0. No novelty class (rule 10).
+
+## Remaining gaps (A3V2-THUR275, 4 Oct 2026)
+Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.txt; byte-identical after the key regeneration); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4 one-vote M entries 67 (x3) and 153 (x1), and the sibling-only one-vote M entry 84 (4-word chunk; by eye "although"; not in P4, unchanged by the regenerated alignment) - blocker: not-attempted; boundary_test.py on djvu OCR retired after v1/v2 (K coverage 32.5%/48.8% < 60%, NEAR3-THUR); next: re-run the same pre-registered test on a page-image transcription of the P5+P6 / P7 cipher lines (archive.org collectionofstat03thur, pp. 274-280) to lift context coverage, ~$4
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (A3V2-THUR275, 4 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92.3-92.8% after the running-head fix (s.16; A3V2-THUR275)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): agrees on 32/33/38/47, conflict on 27 (not in P4), no entry for 143/70/1/67/153
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); running-head numeral 275 dropped via JUNK_LINE and key regenerated, P4 reading unchanged (A3V2-THUR275, 4 Oct 2026)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
+- [ ] retry: one-vote boundary test, djvu-OCR instrument retired (boundary_test.py v1/v2, coverage below gate twice); planned: same test on a page-image transcription of the P5+P6 / P7 cipher lines
+Verdict: keep going: 2 internal gaps; cheapest next: the one-vote boundary test (67, 153, 84) on a page-image transcription of the P5+P6 / P7 cipher lines, ~$4
