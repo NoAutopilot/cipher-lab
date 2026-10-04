@@ -998,3 +998,62 @@ Read so far: token level H 64, S 8, M 420, I 7, U 6 of 505 (firm 72), tools/deco
 - [x] retry: tools/decode_key.py --check exit 0 after the homophone pass (READ2-PAG): H 64 S 8 M 420 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: a different segmentation instrument for the 420 M tokens (tool_shelf first, per-letter held-out control as in align/PREREG_homophone.md), ~$6
 
+
+## RUN1-PAG (4 Oct 2026): a different segmentation instrument for the M tokens
+
+Intake gate (re-run): `clairambault1225-paget-1714: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`,
+exit 0. Disk only: no network request, no vision call, no subagent.
+Tool shelf (`tools/tool_shelf.py "segment cipher group run against interlinear gloss / homophone code values"`, pasted in part):
+`[controlled-only] interlinear_align.py ... last: READ2-PAG ... 3 Oct 2026` / `[controlled-only] seg_homophonic.py ... unseparated digit
+cipher with no key` / `[weak] cipher_page_detector.py` / `[controlled-only] families/seeded_code.py` / `[proven] glyph_atlas.py`. None
+is a non-hard-EM gloss segmenter (seg_homophonic splits unseparated digits with no gloss), so a new shared tool was written.
+- **Instrument** `tools/gibbs_align.py` (Usage 8: shared tool, `--help`, offline test `tools/tests/test_gibbs_align.py`: synthetic
+  homophonic syllabary with nulls and inserted words, planted values recovered 1.000 on the true pairing, 0.028 shuffled; SYSTEM.md row
+  added). A collapsed Gibbs sampler: each code's chunk distribution has a Dirichlet-process prior (chunk-length prior x the gloss's own
+  letter unigrams), each pair's chunk boundaries are sampled forward-filter backward-sample given all other pairs, nulls are length-0
+  chunks under the prior, letters the decipherer added are an explicit insertion state; values are posterior modes over the kept
+  sweeps. It takes nothing from the earlier alignments and is not hard-EM, so rule 3's third-attempt clause on interlinear_align does
+  not cover it.
+- **Pre-registration** `align/PREREG_seg2.md`, pushed as 6b029b41 before any run: tool defaults (not tuned); held-out agreement as
+  READ2-PAG C1 (each letter sampled alone); step 1 matched known-answer control first (synthetic gloss on the real code runs of both
+  letters, 10% nulls, Zipf-weighted 60-chunk inventory so codes share values, 15% runs with an inserted word; gate mean >= 0.50 both
+  directions); step 2 per-letter gloss shuffle, 200 seeds (it can differ: the statistic depends on which gloss lies over which run);
+  gate above shuffle p95 both directions; per-code promotion M -> S only when the value held in both letters equals key.tsv's value.
+- **Result** (`align/gibbs_pass.py` -> `align/gibbs_pass.txt`, `align/gibbs_codes.tsv`; deterministic seeds, `--check`):
+
+| step | L1 -> L2 | L2 -> L1 | gate | codes held in both letters |
+|---|---|---|---|---|
+| matched known-answer control, 10 synthetic seeds | mean 0.808 (min 0.548) | mean 0.731 (min 0.429) | PASS | planted-value recovery 0.980 |
+| target vs per-letter gloss shuffle, 200 seeds | 110/211 = 0.521 / mean 0.015 / p95 0.066 | 47/69 = 0.681 / mean 0.016 / p95 0.067 | PASS | 18 / mean 0.2 / p95 1 |
+
+  For comparison, the hard-EM aligner under the same statistic (READ2-PAG C1) gave 0.179 / 0.191 and 4 codes. 18 codes, 18 distinct
+  values (no homophone set among them). Against key.tsv: 5 equal an existing H row (87 de, 90 du, 147 li, 233 te, 244 ve); **6 equal
+  an M row and become S** (32 c, 47 t, 145 la, 175 ne, 212 re, 221 se; note "Gibbs pass S", align/make_key.py); **7 differ** and are
+  logged, not changed (two instruments disagreeing is not a value): 31 b (key ab), 45 r (ar), 48 u (une), 97 en (e), 148 lo (le),
+  176 ni (en), 204 que (ue). Most of the seven are boundary shifts of one letter (ab/b, ar/r, ue/que), which is what the two
+  instruments segment differently.
+- **Decode** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: `ciphertext.tsv: tokens 505: H 64, I 7, M 397,
+  S 31, U 6` / `reading up to date`. Per token (rule 4): **H 64, C 0, S 31, M 397, I 7, U 6** of 505 (was H 64, S 8, M 420); firm
+  (H+C+S) 95. The 23 new S tokens are tokens of the six promoted codes whose own aligned chunk agrees or is absent; their tokens with
+  a disagreeing chunk stay M. decode.json gains s_words "Gibbs pass S"; tools/tests/decode_configs/clairambault1225-paget-1714.json
+  updated to match (test_decode_key.py: the 3 remaining failures are the antt-linhares-chave and rah-canada-1869 drift NEXT2-PAG logged).
+- Judge: not run -- no specs/clairambault1225-paget-1714.json. Rule 10: values described only as read from the period interlinear
+  decipherment, or chosen by a pre-registered test (S). Requests: none. Subagents: none.
+- Suggestion (Usage 7, not done): the 7 disagreeing codes could be settled per token by reading each one's own chunk against both
+  instruments' segmentations of the same pair (align/align_all.tsv vs a full-data gibbs_align run); ~$1.
+
+## Remaining gaps (RUN1-PAG, 4 Oct 2026)
+Read so far: token level H 64, S 31, M 397, I 7, U 6 of 505 (firm 95), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 397 M tokens (mostly single-attestation codes, plus the 7 codes where the Gibbs pass and the aligner disagree: 31, 45, 48, 97, 148, 176, 204) - blocker: open-codes; two instruments now run (tools/interlinear_align.py, four tests; tools/gibbs_align.py, PREREG_seg2.md PASS 0.521/0.681 vs p95 0.066/0.067, 18 codes vs p95 1); a code seen once cannot be held in both letters by either; next: settle the 7 disagreeing codes per token from both segmentations, ~$1
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (RUN1-PAG, 4 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: second instrument tools/gibbs_align.py (RUN1-PAG): matched control PASS 0.808/0.731, target PASS 0.521/0.681 vs shuffle p95 0.066/0.067, 18 codes vs p95 1; 6 codes M -> S, 7 disagreements logged; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: tools/decode_key.py --check exit 0 after the Gibbs pass: H 64 S 31 M 397 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: settle the 7 codes where tools/gibbs_align.py and tools/interlinear_align.py disagree, per token from both segmentations, ~$1

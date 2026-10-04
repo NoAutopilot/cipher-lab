@@ -28,7 +28,7 @@
     "# aligned occurrences; C = keyed token with no aligned chunk of its own, value from the code's other occurrences; M = own",
     "# chunk disagrees, single-attestation or unsettled code, or an uncertain digit; I = cipher numeral repeating the gloss's numeral;",
     "# U = code not in key.tsv. Both letters cleared per-letter controls first (align/per_letter.txt). Clear text is printed as",
-    "# transcribed. The run-level plaintext of the cipher passages is the period interlinear decipherment (align/pairs.tsv plain_raw). S = value chosen by the READ2-PAG homophone pass (align/PREREG_homophone.md, align/homophone_pass.txt), token chunk agreeing or absent."
+    "# transcribed. The run-level plaintext of the cipher passages is the period interlinear decipherment (align/pairs.tsv plain_raw). S = value chosen by the READ2-PAG homophone pass (align/PREREG_homophone.md, align/homophone_pass.txt), token chunk agreeing or absent. Also S: value held in each letter alone by the RUN1-PAG Gibbs segmentation pass (align/PREREG_seg2.md, align/gibbs_pass.txt), same chunk-agreeing-or-absent rule."
    ],
    "disagree_grade": "M",
    "m_words": [
@@ -36,7 +36,8 @@
     "unsettled"
    ],
    "s_words": [
-    "homophone pass S"
+    "homophone pass S",
+    "Gibbs pass S"
    ]
   }
  ]
