@@ -493,7 +493,7 @@
    "lines_in_crop": 1,
    "band": 4,
    "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "method": "hand shear (run2/nxtb/shear_L04.py): y = 515 - 0.0225*x region px, half-height 85; --follow-slope tracked the ink smear (L05) twice",
    "params": {
     "pitch_autocorr": 0,
     "distance": 0,
@@ -539,7 +539,7 @@
    "lines_in_crop": 1,
    "band": 4,
    "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "method": "hand shear (run2/nxtb/shear_L04.py): y = 515 - 0.0225*x region px, half-height 85; --follow-slope tracked the ink smear (L05) twice",
    "params": {
     "pitch_autocorr": 0,
     "distance": 0,

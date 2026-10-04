@@ -1,0 +1,80 @@
+sign_a	sign_b	columns_split	example_line_col	note
+o1/e2	r1	8	c516a_L02:29	two table labels
+X:2+	n1	8	c516a_L03:8	two table labels
+e3	u1	6	c516b_L02:27	two table labels
+X:Lhook	e3	5	c516a_L02:16	two table labels
+W:qui	o2	5	c516b_L07:20	two table labels
+X:Yhook	X:hbar	5	c516b_L09:25	two table labels
+i1	l1	5	c516b_L10:4	two table labels
+-	?{blot}	4	c516b_L06:20	one reader skipped or added a sign (segmentation)
+l1	m1	4	c516b_L08:1	two table labels
+?{d-cross}	t2	4	c516b_L08:12	unnamed shape vs table label
+l2	m2	4	c516b_L09:17	two table labels
+-	e3	3	c516a_L01:30	one reader skipped or added a sign (segmentation)
+N2	n1	3	c516a_L02:2	two table labels
+?{q-cross}	y1	3	c516b_L03:7	unnamed shape vs table label
+b1	d1	3	c516b_L09:26	two table labels
+a1	n2	2	c516a_L01:12	two table labels
+c1	y1	2	c516a_L03:15	two table labels
+-	N4	2	c516a_L03:25	one reader skipped or added a sign (segmentation)
+e3	p2	2	c516b_L01:7	two table labels
+d1	t2	2	c516b_L02:12	two table labels
+p2	r2	2	c516b_L05:5	two table labels
+-	o1/e2	2	c516b_L05:27	one reader skipped or added a sign (segmentation)
+-	N1	2	c516b_L06:7	one reader skipped or added a sign (segmentation)
+n1	y1	2	c516b_L08:3	two table labels
+a3	t1	2	c516b_L08:20	two table labels
+?{cup-bar}	?{u-bar}	2	c516b_L10:9	unnamed shape vs table label
+e3	n1	1	c516a_L01:5	two table labels
+-	?{loop}	1	c516a_L01:15	one reader skipped or added a sign (segmentation)
+-	?{tick}	1	c516a_L01:16	one reader skipped or added a sign (segmentation)
+-	X:Lhook	1	c516a_L01:19	one reader skipped or added a sign (segmentation)
+a2	i1	1	c516a_L01:22	two table labels
+?{theta-small}	b1	1	c516a_L01:23	unnamed shape vs table label
+-	a2	1	c516a_L01:26	one reader skipped or added a sign (segmentation)
+?{circle-bar}	i1	1	c516a_L01:27	unnamed shape vs table label
+?{bar-swash}	e3	1	c516a_L01:31	unnamed shape vs table label
+?{dotted-T}	i2	1	c516a_L02:1	unnamed shape vs table label
+?{small-hash-box}	?{small-ticks}	1	c516a_L02:14	unnamed shape vs table label
+X:hbar	o2	1	c516a_L02:15	two table labels
+?{box-bar}	X:hbar	1	c516a_L03:19	unnamed shape vs table label
+X:Lhook	o1/e2	1	c516a_L03:22	two table labels
+N2	e1	1	c516a_L03:26	two table labels
+N5	e3	1	c516a_L03:27	two table labels
+X:Lhook	t1	1	c516a_L03:28	two table labels
+-	X:hbar	1	c516b_L01:16	one reader skipped or added a sign (segmentation)
+X:hbar	o1/e2	1	c516b_L01:19	two table labels
+?{F-bar}	p1	1	c516b_L02:29	unnamed shape vs table label
+N	N14	1	c516b_L03:4	two table labels
+-	?{3-bar-hash}	1	c516b_L03:13	one reader skipped or added a sign (segmentation)
+o1/e2	y1	1	c516b_L03:16	two table labels
+?{q-cross}	X:2+	1	c516b_L03:17	unnamed shape vs table label
+?{box-curl}	X:Lhook	1	c516b_L04:8	unnamed shape vs table label
+?{blot}	p1	1	c516b_L05:8	unnamed shape vs table label
+-	N	1	c516b_L05:24	one reader skipped or added a sign (segmentation)
+N14	X:hbar	1	c516b_L05:25	two table labels
+n1	o3	1	c516b_L07:2	two table labels
+?{B-script}	?{B-shape}	1	c516b_L07:17	unnamed shape vs table label
+?{9-tail}	c1	1	c516b_L09:10	unnamed shape vs table label
+n1	u1	1	c516b_L10:3	two table labels
+-	u1	1	c516b_L10:16	one reader skipped or added a sign (segmentation)
+?{P-loop}	X:Lhook	1	c516b_L10:21	unnamed shape vs table label
+X:Lhook	X:Yhook	1	c516b_L10:23	two table labels
+?{b-2p}	n1	1	c516b_L11:16	unnamed shape vs table label
+-	m1	1	c516b_L12:4	one reader skipped or added a sign (segmentation)
+-	i1	1	c516b_L12:6	one reader skipped or added a sign (segmentation)
+?{box-arrow}	?{box-bar}	1	c516b_L12:7	unnamed shape vs table label
+?{box-4}	W:roy	1	c516b_L12:19	unnamed shape vs table label
+-	?{2}	1	c516b_L12:30	one reader skipped or added a sign (segmentation)
+?{d-tick}	e1	1	c516b_L13:15	unnamed shape vs table label
+?{E-rev}	q2	1	c516b_L13:21	unnamed shape vs table label
+?{d-cross}	e1	1	c516b_L13:30	unnamed shape vs table label
+N1	X:Yhook	1	c516b_L14:10	two table labels
+N3	t2	1	c516b_L14:14	two table labels
+?{r-tail}	n1	1	c516b_L14:27	unnamed shape vs table label
+?{1}	a1	1	c516b_L15:10	unnamed shape vs table label
+?{oo-bar}	l1	1	c516b_L15:12	unnamed shape vs table label
+?{lambda}	N8	1	c516b_L15:13	unnamed shape vs table label
+-	N14	1	c516b_L15:20	one reader skipped or added a sign (segmentation)
+N11	u1	1	c516b_L15:21	two table labels
+Landrouct]	Landrout]	1	c516b_L15:23	two table labels

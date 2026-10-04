@@ -1,0 +1,526 @@
+line	position	sign	confidence	alt	why
+c516a_L01	1	o1/e2	H		agree
+c516a_L01	2	t2	H		agree
+c516a_L01	3	e1	H		agree
+c516a_L01	4	?{L-bar-hook}	M	B:?{bar-gamma}	differ
+c516a_L01	5	e3	M	B:q1	differ
+c516a_L01	6	i1	H		agree
+c516a_L01	7	n1	M	B:q1	differ
+c516a_L01	8	t2	H		agree
+c516a_L01	9	?{8}	M	B:W:de	differ
+c516a_L01	10	n1	M	B:q1	differ
+c516a_L01	11	o1/e2	H		agree
+c516a_L01	12	?{A}	M	B:a1	differ
+c516a_L01	13	c1	H		agree
+c516a_L01	14	o1/e2	M	B:-	gap
+c516a_L01	15	?{loop}	M	B:-	gap
+c516a_L01	16	?{tick}	M	B:?{small-hash}	differ
+c516a_L01	17	e3	M		agree-flagged
+c516a_L01	18	?{psi-cup}	M	B:-	gap
+c516a_L01	19	?{L-bar}	M	B:?{bar-psi}	differ
+c516a_L01	20	?{d-alpha}	M	B:?{alpha-tail}	differ
+c516a_L01	21	?{3-bar-hash}	M	B:?{hash3}	differ
+c516a_L01	22	i1	M	B:a2	differ
+c516a_L01	23	?{theta-small}	M	B:b1	differ
+c516a_L01	24	a1	H		agree
+c516a_L01	25	?{h-y}	M	A:-	gap
+c516a_L01	26	?{h-flag}	M	B:a2	differ
+c516a_L01	27	i1	M	B:?{circle-bar}	differ
+c516a_L01	28	?{h-flag}	M	B:?{h-y}	differ
+c516a_L01	29	a1	H		agree
+c516a_L01	30	?{bar-S}	M	B:-	gap
+c516a_L01	31	?{S-tail}	M	B:?{bar-swash}	differ
+c516a_L01	32	o1/e2	H		agree
+c516a_L02	1	i2	M	B:?{dotted-T}	differ
+c516a_L02	2	N2	M	B:n1	differ
+c516a_L02	3	?{f-S}	M	B:?{fs-swash}	differ
+c516a_L02	4	o1/e2	M	B:?{small-hash}	differ
+c516a_L02	5	?{3-bar-hash}	M	B:?{hash3}	differ
+c516a_L02	6	a1	H		agree
+c516a_L02	7	n1	M	B:q1	differ
+c516a_L02	8	c2	H		agree
+c516a_L02	9	?{H-bar}	M	B:?{hash-bar}	differ
+c516a_L02	10	o1/e2	M	B:?{small-hash}	differ
+c516a_L02	11	p1	M	B:W:par	differ
+c516a_L02	12	W:le	H		agree
+c516a_L02	13	p1	M	B:W:par	differ
+c516a_L02	14	?{small-ticks}	M	B:?{small-hash-box}	differ
+c516a_L02	15	?{pi-bar}	M	B:?{bar-pi}	differ
+c516a_L02	16	?{3-S}	M	B:?{bar-gamma}	differ
+c516a_L02	17	o1/e2	H		agree
+c516a_L02	18	?{psi-cup}	M	B:?{psi}	differ
+c516a_L02	19	o1/e2	M	B:?{small-hash}	differ
+c516a_L02	20	p1	M	B:W:par	differ
+c516a_L02	21	?{f-S}	M	B:?{fs-swash}	differ
+c516a_L02	22	a2	H		agree
+c516a_L02	23	n1	M	B:q1	differ
+c516a_L02	24	p1	M	B:W:par	differ
+c516a_L02	25	o1/e2	M	B:?{small-hash}	differ
+c516a_L02	26	n1	M	B:q1	differ
+c516a_L02	27	t2	H		agree
+c516a_L02	28	i1	H		agree
+c516a_L02	29	o1/e2	M	B:?{hash3}	differ
+c516a_L03	1	?{3-bar-hash}	M	B:?{hash3}	differ
+c516a_L03	2	?{S-hook}	M	B:?{s-hook}	differ
+c516a_L03	3	p1	M	B:W:par	differ
+c516a_L03	4	?{h-flag}	M	B:?{h-bar}	differ
+c516a_L03	5	a1	H		agree
+c516a_L03	6	i1	H		agree
+c516a_L03	7	p1	M	B:W:par	differ
+c516a_L03	8	?{2-cross}	M	B:n1	differ
+c516a_L03	9	o1/e2	M	B:?{small-hash}	differ
+c516a_L03	10	n1	M	B:q1	differ
+c516a_L03	11	?{S-hook}	M	B:?{s-hook}	differ
+c516a_L03	12	W:le	H		agree
+c516a_L03	13	p1	M	B:W:par	differ
+c516a_L03	14	?{d-alpha}	M	B:?{alpha-tail}	differ
+c516a_L03	15	y1	M	B:c1	differ
+c516a_L03	16	y1	M	B:c1	differ
+c516a_L03	17	o1/e2	H		agree
+c516a_L03	18	n1	M	B:-	gap
+c516a_L03	19	?{pi-bar}	M	B:-	gap
+c516a_L03	20	p1	M	B:q1	differ
+c516a_L03	21	?{S-tail}	M	B:?{box-bar}	differ
+c516a_L03	22	o1/e2	M	B:W:par	differ
+c516a_L03	23	?{S-hook}	M	B:?{bar-gamma}	differ
+c516a_L03	24	p1	M	B:?{s-hook}	differ
+c516a_L03	25	N4	M	B:W:par	differ
+c516a_L03	26	N2	M	B:e1	differ
+c516a_L03	27	?{S-tail}	M	B:N5	differ
+c516a_L03	28	?{alpha-bar}	M	B:?{bar-gamma}	differ
+c516b_L01	1	?{8}	M	B:W:de	differ
+c516b_L01	2	p1	M	B:W:par	differ
+c516b_L01	3	?{pi-bar}	M	B:?{h-bar}	differ
+c516b_L01	4	o1/e2	H		agree
+c516b_L01	5	n1	M	B:q1	differ
+c516b_L01	6	p1	M	B:W:par	differ
+c516b_L01	7	p2	M	B:e3	differ
+c516b_L01	8	?{2-cross}	M	B:n1	differ
+c516b_L01	9	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L01	10	a2	H		agree
+c516b_L01	11	t2	H		agree
+c516b_L01	12	?{2-cross}	M	B:-	gap
+c516b_L01	13	?{q-loop}	M	B:-	gap
+c516b_L01	14	n1	H		agree
+c516b_L01	15	?{phi-tail}	M	A:-	gap
+c516b_L01	16	p1	M	B:q1	differ
+c516b_L01	17	?{pi-bar}	M	B:W:par	differ
+c516b_L01	18	p1	M	B:W:par	differ
+c516b_L01	19	?{L-hook}	M	B:?{bar-gamma}	differ
+c516b_L01	20	o1/e2	M	B:?{h-bar}	differ
+c516b_L01	21	p1	M	B:W:par	differ
+c516b_L01	22	?{pi-bar}	M	B:?{h-bar}	differ
+c516b_L01	23	o1/e2	H		agree
+c516b_L01	24	n1	M	B:q1	differ
+c516b_L01	25	t2	H		agree
+c516b_L01	26	?{o-hook}	M	B:?{circle-hook}	differ
+c516b_L01	27	e1	H		agree
+c516b_L01	28	?{psi-cup}	M	B:?{psi}	differ
+c516b_L01	29	a2	H		agree
+c516b_L01	30	p2	M	B:e3	differ
+c516b_L01	31	o1/e2	M	B:?{small-hash}	differ
+c516b_L01	32	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L02	1	?{psi-cup}	M	B:?{psi}	differ
+c516b_L02	2	o1/e2	H		agree
+c516b_L02	3	n1	M	B:q1	differ
+c516b_L02	4	?{A}	M	B:?{A-caret}	differ
+c516b_L02	5	e1	H		agree
+c516b_L02	6	?{Y-hook}	M	B:?{tilde-y}	differ
+c516b_L02	7	?{psi-cup}	M	B:?{psi}	differ
+c516b_L02	8	o1/e2	H		agree
+c516b_L02	9	n1	M	B:q1	differ
+c516b_L02	10	?{f-S}	M	B:?{fs-swash}	differ
+c516b_L02	11	a2	H		agree
+c516b_L02	12	d1	M	B:t2	differ
+c516b_L02	13	W:le	H		agree
+c516b_L02	14	p1	M	B:W:par	differ
+c516b_L02	15	p1	M	B:W:par	differ
+c516b_L02	16	?{pi}	H		agree
+c516b_L02	17	W:le	H		agree
+c516b_L02	18	p1	M	B:W:par	differ
+c516b_L02	19	W:le	H		agree
+c516b_L02	20	?{psi-cup}	M	B:-	gap
+c516b_L02	21	?{h-flag}	M	B:?{psi}	differ
+c516b_L02	22	?{2-cross}	M	B:?{h-y}	differ
+c516b_L02	23	n1	H		agree
+c516b_L02	24	q1	M	A:-	gap
+c516b_L02	25	i1	H		agree
+c516b_L02	26	?{psi-cup}	M	B:?{psi}	differ
+c516b_L02	27	t2	H		agree
+c516b_L02	28	?{o-hook}	M	B:e3	differ
+c516b_L02	29	o1/e2	M	B:?{small-hash}	differ
+c516b_L02	30	?{F-bar}	M	B:W:par	differ
+c516b_L03	1	?{8}	M	B:W:de	differ
+c516b_L03	2	?{S-tail}	M	B:?{bar-gamma}	differ
+c516b_L03	3	o1/e2	H		agree
+c516b_L03	4	N14	M	B:N	differ
+c516b_L03	5	?{S-tail}	M	B:?{bar-gamma}	differ
+c516b_L03	6	o1/e2	H		agree
+c516b_L03	7	y1	M	B:-	gap
+c516b_L03	8	?{psi-cup}	M	B:?{q-cross}	differ
+c516b_L03	9	?{2-cross}	M	B:?{psi}	differ
+c516b_L03	10	n1	H		agree
+c516b_L03	11	q1	M	A:-	gap
+c516b_L03	12	p1	M	B:W:par	differ
+c516b_L03	13	?{d-alpha}	M	B:?{alpha-tail}	differ
+c516b_L03	14	?{3-bar-hash}	M	B:?{small-hash}	differ
+c516b_L03	15	o1/e2	H		agree
+c516b_L03	16	o1/e2	H		agree
+c516b_L03	17	y1	M	B:-	gap
+c516b_L03	18	?{2-cross}	M	B:?{q-cross}	differ
+c516b_L03	19	N2	M	B:n1	differ
+c516b_L03	20	?{theta-bar}	H		agree
+c516b_L03	21	?{2-cross}	M	B:n1	differ
+c516b_L03	22	o1/e2	M	B:?{small-hash}	differ
+c516b_L03	23	n1	M	B:q1	differ
+c516b_L03	24	?{L-bar-hook}	M	B:?{bar-gamma}	differ
+c516b_L03	25	?{psi-cup}	M	B:?{psi}	differ
+c516b_L03	26	o1/e2	H		agree
+c516b_L03	27	n1	M	B:q1	differ
+c516b_L03	28	?{A}	M	B:?{A-caret}	differ
+c516b_L03	29	o1/e2	M	B:?{small-hash}	differ
+c516b_L03	30	?{o-hook}	M	B:e3	differ
+c516b_L04	1	o1/e2	M	B:?{small-hash}	differ
+c516b_L04	2	?{A}	M	B:?{A-caret}	differ
+c516b_L04	3	a2	H		agree
+c516b_L04	4	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L04	5	d1	M	B:t2	differ
+c516b_L04	6	?{o-hook}	M	B:e3	differ
+c516b_L04	7	o1/e2	M	B:?{small-hash}	differ
+c516b_L04	8	?{L-bar}	M	B:?{box-curl}	differ
+c516b_L04	9	a1	H		agree
+c516b_L04	10	?{h-flag}	M	B:?{h-bar}	differ
+c516b_L04	11	o1/e2	M	B:?{hash3}	differ
+c516b_L04	12	n1	M	B:q1	differ
+c516b_L04	13	?{box-cross}	H		agree
+c516b_L04	14	?{8}	M	B:W:de	differ
+c516b_L04	15	c1	H		agree
+c516b_L04	16	c1	H		agree
+c516b_L04	17	a2	H		agree
+c516b_L04	18	?{h-flag}	M	B:?{h-y}	differ
+c516b_L04	19	a1	H		agree
+c516b_L04	20	i1	H		agree
+c516b_L04	21	p1	M	B:W:par	differ
+c516b_L04	22	?{2-cross}	M	B:n1	differ
+c516b_L04	23	o1/e2	M	B:?{small-hash}	differ
+c516b_L04	24	n1	M	B:q1	differ
+c516b_L04	25	?{d-alpha}	M	B:?{alpha-tail}	differ
+c516b_L04	26	y1	M	B:?{q-cross}	differ
+c516b_L04	27	o1/e2	M	B:?{small-hash}	differ
+c516b_L04	28	?{psi-cup}	M	B:?{psi}	differ
+c516b_L04	29	?{h-flag}	M	B:?{h-bar}	differ
+c516b_L04	30	l1	M	B:?{inf}	differ
+c516b_L04	31	a2	H		agree
+c516b_L05	1	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L05	2	c1	H		agree
+c516b_L05	3	y1	M	B:?{q-cross}	differ
+c516b_L05	4	?{bar-psi}	H		agree
+c516b_L05	5	p2	M	B:?{e-loop}	differ
+c516b_L05	6	a1	H		agree
+c516b_L05	7	?{psi-cup}	M	B:?{psi}	differ
+c516b_L05	8	?{blot}	M	B:W:par	differ
+c516b_L05	9	?{blot}	H		agree
+c516b_L05	10	o1/e2	H		agree
+c516b_L05	11	n1	M	B:q1	differ
+c516b_L05	12	l1	M	B:?{inf}	differ
+c516b_L05	13	l1	M	B:?{inf}	differ
+c516b_L05	14	a2	H		agree
+c516b_L05	15	?{S-tail}	M	B:?{bar-gamma}	differ
+c516b_L05	16	o1/e2	M	B:?{small-hash}	differ
+c516b_L05	17	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L05	18	i1	H		agree
+c516b_L05	19	t2	H		agree
+c516b_L05	20	e1	H		agree
+c516b_L05	21	?{8}	M	B:W:de	differ
+c516b_L05	22	?{S-tail}	M	B:?{bar-gamma}	differ
+c516b_L05	23	o1/e2	H		agree
+c516b_L05	24	N	M	A:-	gap
+c516b_L05	25	?{h-bar}	M	A:-	gap
+c516b_L05	26	N14	M	B:?{h-bar}	differ
+c516b_L05	27	?{h-flag}	M	B:o1/e2	differ
+c516b_L06	1	?{h-flag}	M	B:?{h-y}	differ
+c516b_L06	2	?{S-hook}	M	B:?{s-hook}	differ
+c516b_L06	3	a2	H		agree
+c516b_L06	4	n1	M	B:-	gap
+c516b_L06	5	?{8}	M	B:q1	differ
+c516b_L06	6	?{S-hook}	M	B:W:de	differ
+c516b_L06	7	N1	M	B:?{s-hook}	differ
+c516b_L06	8	N2	M	B:n1	differ
+c516b_L06	9	?{omega}	H		agree
+c516b_L06	10	?{Y-hook}	M	B:?{tilde-y}	differ
+c516b_L06	11	?{psi-cup}	M	B:?{psi}	differ
+c516b_L06	12	o1/e2	H		agree
+c516b_L06	13	?{2-cross}	M	B:-	gap
+c516b_L06	14	p1	M	B:n1	differ
+c516b_L06	15	?{h-flag}	M	B:W:par	differ
+c516b_L06	16	o1/e2	M	B:?{h-bar}	differ
+c516b_L06	17	o1/e2	H		agree
+c516b_L06	18	n1	M	B:q1	differ
+c516b_L06	19	t2	H		agree
+c516b_L06	20	?{blot}	M	B:-	gap
+c516b_L06	21	?{blot}	M	B:-	gap
+c516b_L06	22	?{blot}	M	B:-	gap
+c516b_L06	23	?{blot}	M	B:-	gap
+c516b_L06	24	?{blot}	H		agree
+c516b_L06	25	p2	M	B:?{e-loop}	differ
+c516b_L06	26	?{3-bar-hash}	M	B:?{hash3}	differ
+c516b_L07	1	p1	H		agree
+c516b_L07	2	o3	M	B:q1	differ
+c516b_L07	3	?{4-bar}	M	B:W:par	differ
+c516b_L07	4	s2	H		agree
+c516b_L07	5	?{2+}	H		agree
+c516b_L07	6	e3	H		agree
+c516b_L07	7	e1	H		agree
+c516b_L07	8	W:de	H		agree
+c516b_L07	9	o1/e2	M	B:?{III}	differ
+c516b_L07	10	?{S-hook}	H		agree
+c516b_L07	11	c2	H		agree
+c516b_L07	12	?{2+}	H		agree
+c516b_L07	13	e3	H		agree
+c516b_L07	14	o1/e2	H		agree
+c516b_L07	15	a1	H		agree
+c516b_L07	16	?{2+}	H		agree
+c516b_L07	17	?{B-shape}	M	B:?{B-script}	differ
+c516b_L07	18	N1	M		agree-flagged
+c516b_L07	19	o1/e2	H		agree
+c516b_L07	20	W:qui	M	B:?{pi}	differ
+c516b_L07	21	s2	H		agree
+c516b_L07	22	o1/e2	H		agree
+c516b_L07	23	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L07	24	?{omega-S}	M	B:?{omega-hook}	differ
+c516b_L07	25	?{2+o}	H		agree
+c516b_L07	26	?{2+}	H		agree
+c516b_L07	27	e1	H		agree
+c516b_L08	1	l1	M	B:m1	differ
+c516b_L08	2	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L08	3	q1	M	B:y1	differ
+c516b_L08	4	a1	H		agree
+c516b_L08	5	q1	M	B:y1	differ
+c516b_L08	6	o1/e2	H		agree
+c516b_L08	7	s2	H		agree
+c516b_L08	8	N1	M		agree-flagged
+c516b_L08	9	o1/e2	M	B:?{III}	differ
+c516b_L08	10	?{2+}	H		agree
+c516b_L08	11	p1	H		agree
+c516b_L08	12	?{d-cross}	M	B:t2	differ
+c516b_L08	13	W:qui	M	B:?{pi}	differ
+c516b_L08	14	?{theta-ticks}	H		agree
+c516b_L08	15	a1	H		agree
+c516b_L08	16	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L08	17	s2	H		agree
+c516b_L08	18	?{4-bar}	M	B:W:par	differ
+c516b_L08	19	?{2+}	H		agree
+c516b_L08	20	?{alpha}	M	B:a3	differ
+c516b_L08	21	o1/e2	H		agree
+c516b_L08	22	s2	H		agree
+c516b_L08	23	?{alpha}	M	B:a3	differ
+c516b_L08	24	?{Gamma-bar}	M	B:?{corner-hook}	differ
+c516b_L08	25	l1	M	B:m1	differ
+c516b_L08	26	p1	H		agree
+c516b_L08	27	o1/e2	H		agree
+c516b_L08	28	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L08	29	?{d-cross}	M	B:t2	differ
+c516b_L09	1	?{A-bar}	M	B:a1	differ
+c516b_L09	2	a2	H		agree
+c516b_L09	3	?{2+}	H		agree
+c516b_L09	4	s2	H		agree
+c516b_L09	5	?{d-cross}	M	B:t2	differ
+c516b_L09	6	e3	H		agree
+c516b_L09	7	e1	H		agree
+c516b_L09	8	o1/e2	H		agree
+c516b_L09	9	N1	M		agree-flagged
+c516b_L09	10	c1	M	B:?{9-tail}	differ
+c516b_L09	11	a2	H		agree
+c516b_L09	12	s2	H		agree
+c516b_L09	13	?{2+}	H		agree
+c516b_L09	14	o1/e2	H		agree
+c516b_L09	15	n1	M		agree-flagged
+c516b_L09	16	W:qui	M	B:?{pi}	differ
+c516b_L09	17	l2	M	B:m2	differ
+c516b_L09	18	N1	M		agree-flagged
+c516b_L09	19	o1/e2	H		agree
+c516b_L09	20	n1	H		agree
+c516b_L09	21	W:qui	M	B:?{pi}	differ
+c516b_L09	22	?{Gamma}	M	B:?{corner-hook}	differ
+c516b_L09	23	s2	H		agree
+c516b_L09	24	o1/e2	H		agree
+c516b_L09	25	?{y-loop}	M	B:?{Ч}	differ
+c516b_L09	26	d1	M	B:b1	differ
+c516b_L09	27	W:le	M		agree-flagged
+c516b_L09	28	o1/e2	M	B:?{III}	differ
+c516b_L09	29	?{S}	M	B:?{S-hook}	differ
+c516b_L10	1	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L10	2	o1/e2	H		agree
+c516b_L10	3	n1	M	B:?{omega-hook}	differ
+c516b_L10	4	i1	M	B:l1	differ
+c516b_L10	5	e3	H		agree
+c516b_L10	6	a2	H		agree
+c516b_L10	7	W:de	H		agree
+c516b_L10	8	s2	H		agree
+c516b_L10	9	?{u-bar}	M	B:?{cup-bar}	differ
+c516b_L10	10	a2	H		agree
+c516b_L10	11	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L10	12	o1/e2	H		agree
+c516b_L10	13	?{omega-S}	M	B:?{omega-hook}	differ
+c516b_L10	14	e3	H		agree
+c516b_L10	15	W:de	H		agree
+c516b_L10	16	?{omega-hook}	M	A:-	gap
+c516b_L10	17	o1/e2	H		agree
+c516b_L10	18	?{w-loop}	H		agree
+c516b_L10	19	a1	H		agree
+c516b_L10	20	?{u-bar}	M	B:?{cup-bar}	differ
+c516b_L10	21	?{L-hook}	M	B:?{P-loop}	differ
+c516b_L10	22	?{4-bar}	M	B:W:par	differ
+c516b_L10	23	?{Y-open}	M	B:?{gamma-hook}	differ
+c516b_L10	24	s2	H		agree
+c516b_L10	25	o1/e2	H		agree
+c516b_L10	26	o1/e2	M	B:?{III}	differ
+c516b_L10	27	?{omega-S}	M	B:?{omega-hook}	differ
+c516b_L10	28	i1	M	B:l1	differ
+c516b_L10	29	c1	M		agree-flagged
+c516b_L10	30	e1	H		agree
+c516b_L11	1	W:le	M		agree-flagged
+c516b_L11	2	?{4-bar}	M	B:W:par	differ
+c516b_L11	3	?{y-loop}	M	B:?{Ч}	differ
+c516b_L11	4	?{2+}	H		agree
+c516b_L11	5	n1	H		agree
+c516b_L11	6	i1	M	B:l1	differ
+c516b_L11	7	s2	H		agree
+c516b_L11	8	?{d-cross}	M	B:t2	differ
+c516b_L11	9	e3	H		agree
+c516b_L11	10	o1/e2	H		agree
+c516b_L11	11	?{4-bar}	M	B:W:par	differ
+c516b_L11	12	d1	M	B:b1	differ
+c516b_L11	13	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L11	14	W:roy	M		agree-flagged
+c516b_L11	15	s2	H		agree
+c516b_L11	16	n1	M	B:?{b-2p}	differ
+c516b_L11	17	?{y-loop}	M	B:?{Ч}	differ
+c516b_L11	18	o1/e2	H		agree
+c516b_L11	19	o1/e2	M	B:?{III}	differ
+c516b_L11	20	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L11	21	o1/e2	H		agree
+c516b_L11	22	?{2+}	H		agree
+c516b_L11	23	l2	M	B:m2	differ
+c516b_L11	24	W:le	M		agree-flagged
+c516b_L11	25	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L11	26	s2	H		agree
+c516b_L11	27	o1/e2	H		agree
+c516b_L11	28	?{S}	H		agree
+c516b_L11	29	?{2+o}	H		agree
+c516b_L12	1	d1	M		agree-flagged
+c516b_L12	2	?{2+}	H		agree
+c516b_L12	3	p1	H		agree
+c516b_L12	4	m1	M	A:-	gap
+c516b_L12	5	l1	H		agree
+c516b_L12	6	i1	M	B:-	gap
+c516b_L12	7	?{box-bar}	M	B:?{box-arrow}	differ
+c516b_L12	8	o1/e2	H		agree
+c516b_L12	9	n1	H		agree
+c516b_L12	10	?{4-bar}	M	B:W:par	differ
+c516b_L12	11	a1	H		agree
+c516b_L12	12	W:le	M		agree-flagged
+c516b_L12	13	n1	H		agree
+c516b_L12	14	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L12	15	o1/e2	H		agree
+c516b_L12	16	q1	M		agree-flagged
+c516b_L12	17	?{S-hook}	M	A:-	gap
+c516b_L12	18	e3	H		agree
+c516b_L12	19	?{box-4}	M	B:?{box-cross}	differ
+c516b_L12	20	W:de	H		agree
+c516b_L12	21	c1	M		agree-flagged
+c516b_L12	22	a2	H		agree
+c516b_L12	23	?{Y-open}	M	B:?{Y-hook}	differ
+c516b_L12	24	W:le	M		agree-flagged
+c516b_L12	25	n1	H		agree
+c516b_L12	26	o1/e2	M	B:?{III}	differ
+c516b_L12	27	?{2+}	H		agree
+c516b_L12	28	N1	M	A:-	gap
+c516b_L12	29	?{2-bar}	H		agree
+c516b_L12	30	?{2}	M	B:-	gap
+c516b_L12	31	i1	M	B:l1	differ
+c516b_L12	32	e3	H		agree
+c516b_L13	1	s2	H		agree
+c516b_L13	2	o1/e2	H		agree
+c516b_L13	3	l2	M	B:m2	differ
+c516b_L13	4	o1/e2	H		agree
+c516b_L13	5	n1	H		agree
+c516b_L13	6	l1	M	B:m1	differ
+c516b_L13	7	a2	H		agree
+c516b_L13	8	o1/e2	H		agree
+c516b_L13	9	o1/e2	H		agree
+c516b_L13	10	n1	H		agree
+c516b_L13	11	c2	H		agree
+c516b_L13	12	a2	H		agree
+c516b_L13	13	n1	H		agree
+c516b_L13	14	c1	M		agree-flagged
+c516b_L13	15	?{d-tick}	M	B:e1	differ
+c516b_L13	16	W:de	H		agree
+c516b_L13	17	W:le	M		agree-flagged
+c516b_L13	18	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L13	19	e3	H		agree
+c516b_L13	20	?{4-bar}	M	B:W:par	differ
+c516b_L13	21	?{E-rev}	M	B:q2	differ
+c516b_L13	22	a2	H		agree
+c516b_L13	23	?{4-bar}	M	B:W:par	differ
+c516b_L13	24	s2	H		agree
+c516b_L13	25	?{2+}	H		agree
+c516b_L13	26	o1/e2	H		agree
+c516b_L13	27	n1	H		agree
+c516b_L13	28	?{4-bar}	M	B:W:par	differ
+c516b_L13	29	o1/e2	H		agree
+c516b_L13	30	?{d-cross}	M	B:e1	differ
+c516b_L14	1	d1	M		agree-flagged
+c516b_L14	2	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L14	3	W:de	H		agree
+c516b_L14	4	s2	H		agree
+c516b_L14	5	?{2+}	H		agree
+c516b_L14	6	e3	H		agree
+c516b_L14	7	?{Gamma}	M	B:?{corner-hook}	differ
+c516b_L14	8	l1	M	B:m1	differ
+c516b_L14	9	?{10}	M	B:z1	differ
+c516b_L14	10	?{y-loop}	M	B:N1	differ
+c516b_L14	11	o1/e2	H		agree
+c516b_L14	12	n1	H		agree
+c516b_L14	13	s2	H		agree
+c516b_L14	14	N3	M	B:t2	differ
+c516b_L14	15	e3	H		agree
+c516b_L14	16	?{2+o}	H		agree
+c516b_L14	17	?{alpha}	M	B:?{alpha-hook}	differ
+c516b_L14	18	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L14	19	o1/e2	H		agree
+c516b_L14	20	i1	M	B:l1	differ
+c516b_L14	21	e3	H		agree
+c516b_L14	22	W:qui	M	B:?{pi}	differ
+c516b_L14	23	?{theta-ticks}	H		agree
+c516b_L14	24	o1/e2	H		agree
+c516b_L14	25	?{4-bar}	M	B:W:par	differ
+c516b_L14	26	N1	M		agree-flagged
+c516b_L14	27	?{r-tail}	M	B:n1	differ
+c516b_L14	28	o1/e2	H		agree
+c516b_L14	29	s2	H		agree
+c516b_L14	30	?{S}	M	B:?{S-cross}	differ
+c516b_L14	31	?{4-bar}	M	B:W:par	differ
+c516b_L15	1	?{y-loop}	M	B:?{Ч-tail}	differ
+c516b_L15	2	s2	H		agree
+c516b_L15	3	?{H-bar}	M	B:?{H-hash}	differ
+c516b_L15	4	N1	M		agree-flagged
+c516b_L15	5	c1	H		agree
+c516b_L15	6	o1/e2	H		agree
+c516b_L15	7	d1	M	B:b1	differ
+c516b_L15	8	?{2+o}	H		agree
+c516b_L15	9	?{y-loop}	M	B:?{Ч}	differ
+c516b_L15	10	?{1}	M	B:a1	differ
+c516b_L15	11	l2	M	B:m2	differ
+c516b_L15	12	?{inf-dash}	M	B:?{oo-bar}	differ
+c516b_L15	13	?{lambda}	M	B:N8	differ
+c516b_L15	14	N3	H		agree
+c516b_L15	15	N4	M	B:-	gap
+c516b_L15	16	N13	H		agree
+c516b_L15	17	N3	H		agree
+c516b_L15	18	N2	H		agree
+c516b_L15	19	N12	H		agree
+c516b_L15	20	N14	M	B:-	gap
+c516b_L15	21	?{angle-omega}	M	B:N11	differ
+c516b_L15	22	sera	H		agree
+c516b_L15	23	Landrouct]	M	B:Landrout]	differ

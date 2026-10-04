@@ -1,0 +1,18 @@
+c516a_L01	o1/e2 t2 e1 ?{L-bar-hook} e3 i1 n1 t2 ?{8} n1 o1/e2 ?{A} c1 o1/e2? ?{loop} ?{tick} e3? ?{psi-cup} ?{L-bar} ?{d-alpha} ?{3-bar-hash} i1 ?{theta-small} a1 ?{h-flag} i1 ?{h-flag} a1 ?{bar-S} ?{S-tail} o1/e2
+c516a_L02	i2? N2 ?{f-S} o1/e2? ?{3-bar-hash} a1 n1 c2 ?{H-bar} o1/e2? p1 W:le p1 ?{small-ticks} ?{pi-bar} ?{3-S} o1/e2 ?{psi-cup} o1/e2? p1 ?{f-S} a2 n1 p1 o1/e2? n1 t2 i1 o1/e2?
+c516a_L03	?{3-bar-hash} ?{S-hook} p1 ?{h-flag} a1 i1 p1 ?{2-cross} o1/e2? n1 ?{S-hook} W:le p1 ?{d-alpha} y1 y1 o1/e2 n1 ?{pi-bar} p1 ?{S-tail} o1/e2? ?{S-hook} p1 N4 N2 ?{S-tail} ?{alpha-bar}
+c516b_L01	?{8} p1 ?{pi-bar} o1/e2 n1 p1 p2? ?{2-cross} ?{3-bar-hash} a2 t2 ?{2-cross} ?{q-loop} n1 p1 ?{pi-bar} p1 ?{L-hook} o1/e2? p1 ?{pi-bar} o1/e2 n1 t2 ?{o-hook} e1 ?{psi-cup} a2 p2? o1/e2? ?{3-bar-hash}
+c516b_L02	?{psi-cup} o1/e2 n1 ?{A} e1 ?{Y-hook} ?{psi-cup} o1/e2 n1 ?{f-S} a2 d1 W:le p1 p1 ?{pi} W:le p1 W:le ?{psi-cup} ?{h-flag} ?{2-cross} n1 i1 ?{psi-cup} t2 ?{o-hook} o1/e2? ?{F-bar}
+c516b_L03	?{8} ?{S-tail} o1/e2 N14? ?{S-tail} o1/e2 y1 ?{psi-cup} ?{2-cross} n1 p1 ?{d-alpha} ?{3-bar-hash}? o1/e2 o1/e2 y1 ?{2-cross} N2 ?{theta-bar} ?{2-cross} o1/e2? n1 ?{L-bar-hook} ?{psi-cup} o1/e2 n1 ?{A} o1/e2? ?{o-hook}
+c516b_L04	o1/e2? ?{A} a2 ?{3-bar-hash} d1 ?{o-hook} o1/e2? ?{L-bar} a1 ?{h-flag} o1/e2 n1 ?{box-cross} ?{8} c1 c1 a2 ?{h-flag} a1 i1 p1 ?{2-cross} o1/e2? n1 ?{d-alpha} y1 o1/e2? ?{psi-cup} ?{h-flag} l1 a2
+c516b_L05	?{3-bar-hash} c1 y1 ?{bar-psi} p2? a1 ?{psi-cup} ?{blot} ?{blot} o1/e2 n1 l1 l1 a2 ?{S-tail} o1/e2? ?{3-bar-hash} i1 t2 e1 ?{8} ?{S-tail} o1/e2 N14? ?{h-flag}
+c516b_L06	?{h-flag} ?{S-hook} a2 n1 ?{8} ?{S-hook} N1 N2 ?{omega} ?{Y-hook} ?{psi-cup} o1/e2 ?{2-cross} p1 ?{h-flag} o1/e2? o1/e2 n1 t2 ?{blot} ?{blot} ?{blot} ?{blot} ?{blot} p2? ?{3-bar-hash}
+c516b_L07	p1 o3? ?{4-bar} s2 ?{2+} e3 e1 W:de o1/e2 ?{S-hook} c2 ?{2+} e3 o1/e2 a1 ?{2+} ?{B-shape} N1? o1/e2 W:qui? s2 o1/e2 ?{H-bar} ?{omega-S} ?{2+o} ?{2+} e1
+c516b_L08	l1 ?{H-bar} q1? a1 q1? o1/e2 s2 N1 o1/e2 ?{2+} p1 ?{d-cross} W:qui? ?{theta-ticks} a1 ?{H-bar} s2 ?{4-bar} ?{2+} ?{alpha} o1/e2 s2 ?{alpha} ?{Gamma-bar} l1 p1 o1/e2 ?{H-bar} ?{d-cross}
+c516b_L09	?{A-bar} a2 ?{2+} s2 ?{d-cross} e3 e1 o1/e2 N1 c1 a2 s2 ?{2+} o1/e2 n1 W:qui? l2 N1 o1/e2 n1 W:qui? ?{Gamma} s2 o1/e2 ?{y-loop} d1? W:le o1/e2 ?{S}
+c516b_L10	?{H-bar} o1/e2 n1 i1 e3 a2 W:de s2 ?{u-bar} a2 ?{H-bar} o1/e2 ?{omega-S} e3 W:de o1/e2 ?{w-loop} a1 ?{u-bar} ?{L-hook} ?{4-bar} ?{Y-open} s2 o1/e2 o1/e2 ?{omega-S} i1 c1 e1
+c516b_L11	W:le ?{4-bar} ?{y-loop} ?{2+} n1 i1 s2 ?{d-cross} e3 o1/e2 ?{4-bar} d1? ?{H-bar} W:roy? s2 n1 ?{y-loop} o1/e2 o1/e2 ?{H-bar} o1/e2 ?{2+} l2 W:le ?{H-bar} s2 o1/e2 ?{S} ?{2+o}
+c516b_L12	d1? ?{2+} p1 l1 i1 ?{box-bar} o1/e2 n1 ?{4-bar} a1 W:le n1 ?{H-bar} o1/e2 q1? e3 ?{box-4} W:de c1 a2 ?{Y-open} W:le n1 o1/e2 ?{2+} ?{2-bar} ?{2} i1 e3
+c516b_L13	s2 o1/e2 l2 o1/e2 n1 l1 a2 o1/e2 o1/e2 n1 c2 a2 n1 c1 ?{d-tick} W:de W:le ?{H-bar} e3 ?{4-bar} ?{E-rev} a2 ?{4-bar} s2 ?{2+} o1/e2 n1 ?{4-bar} o1/e2 ?{d-cross}
+c516b_L14	d1? ?{H-bar} W:de s2 ?{2+} e3 ?{Gamma} l1 ?{10} ?{y-loop} o1/e2 n1 s2 N3? e3 ?{2+o} ?{alpha} ?{H-bar} o1/e2 i1 e3 W:qui? ?{theta-ticks} o1/e2 ?{4-bar} N1 ?{r-tail} o1/e2 s2 ?{S} ?{4-bar}
+c516b_L15	?{y-loop} s2 ?{H-bar} N1 c1 o1/e2 d1? ?{2+o} ?{y-loop} ?{1} l2 ?{inf-dash} ?{lambda} N3 N4 N13 N3 N2 N12 N14? ?{angle-omega} [PLAIN:u sera Landrouct]

@@ -1,0 +1,18 @@
+c516a_L01	o1/e2 t2 e1 ?{bar-gamma} q1? i1 q1? t2 W:de q1? o1/e2 a1 c1 ?{small-hash} e3 ?{bar-psi} ?{alpha-tail} ?{hash3} a2 b1? a1 ?{h-y} a2 ?{circle-bar} ?{h-y} a1 ?{bar-swash} o1/e2
+c516a_L02	?{dotted-T} n1 ?{fs-swash} ?{small-hash} ?{hash3} a1 q1? c2 ?{hash-bar} ?{small-hash} W:par? W:le W:par? ?{small-hash-box} ?{bar-pi} ?{bar-gamma} o1/e2 ?{psi} ?{small-hash} W:par? ?{fs-swash} a2 q1? W:par? ?{small-hash} q1? t2 i1 ?{hash3}
+c516a_L03	?{hash3} ?{s-hook} W:par? ?{h-bar} a1 i1 W:par? n1? ?{small-hash} q1? ?{s-hook} W:le W:par? ?{alpha-tail} c1 c1 o1/e2 q1? ?{box-bar} W:par? ?{bar-gamma} ?{s-hook} W:par? e1 N5? ?{bar-gamma}
+c516b_L01	W:de W:par? ?{h-bar} o1/e2 q1? W:par? e3? n1 ?{hash3} a2 t2 n1 ?{phi-tail} q1? W:par? W:par? ?{bar-gamma} ?{h-bar} W:par? ?{h-bar} o1/e2 q1? t2 ?{circle-hook} e1 ?{psi} a2 e3? ?{small-hash} ?{hash3}
+c516b_L02	?{psi} o1/e2 q1? ?{A-caret} e1 ?{tilde-y} ?{psi} o1/e2 q1? ?{fs-swash} a2 t2 W:le W:par? W:par? ?{pi} W:le W:par? W:le ?{psi} ?{h-y} n1 q1? i1 ?{psi} t2 e3 ?{small-hash} W:par?
+c516b_L03	W:de ?{bar-gamma} o1/e2 N? ?{bar-gamma} o1/e2 ?{q-cross} ?{psi} n1 q1? W:par? ?{alpha-tail} ?{small-hash} o1/e2 o1/e2 ?{q-cross} n1 ?{theta-bar} n1 ?{small-hash} q1? ?{bar-gamma} ?{psi} o1/e2 q1? ?{A-caret} ?{small-hash} e3
+c516b_L04	?{small-hash} ?{A-caret} a2 ?{hash3} t2 e3 ?{small-hash} ?{box-curl} a1 ?{h-bar} ?{hash3} q1? ?{box-cross} W:de c1 c1 a2 ?{h-y} a1 i1 W:par? n1 ?{small-hash} q1? ?{alpha-tail} ?{q-cross} ?{small-hash} ?{psi} ?{h-bar} ?{inf} a2
+c516b_L05	?{hash3} c1 ?{q-cross} ?{bar-psi} ?{e-loop} a1 ?{psi} W:par? ?{blot} o1/e2 q1? ?{inf} ?{inf} a2 ?{bar-gamma} ?{small-hash} ?{hash3} i1 t2 e1 W:de ?{bar-gamma} o1/e2 N? ?{h-bar} ?{h-bar} o1/e2
+c516b_L06	?{h-y} ?{s-hook} a2 q1? W:de ?{s-hook} n1 ?{omega} ?{tilde-y} ?{psi} o1/e2 n1? W:par? ?{h-bar} o1/e2 q1? t2 ?{blot} ?{e-loop} ?{hash3}
+c516b_L07	p1 q1? W:par? s2 ?{2+} e3 e1 W:de ?{III} ?{S-hook} c2 ?{2+} e3 o1/e2 a1 ?{2+} ?{B-script} N1? o1/e2 ?{pi} s2 o1/e2 ?{H-hash} ?{omega-hook} ?{2+o} ?{2+} e1
+c516b_L08	m1 ?{H-hash} y1? a1 y1? o1/e2 s2 N1? ?{III} ?{2+} p1 t2 ?{pi} ?{theta-ticks} a1 ?{H-hash} s2 W:par? ?{2+} a3 o1/e2 s2 a3 ?{corner-hook} m1 p1 o1/e2 ?{H-hash} t2
+c516b_L09	a1? a2 ?{2+} s2 t2 e3 e1 o1/e2 N1? ?{9-tail} a2 s2 ?{2+} o1/e2 n1? ?{pi} m2 N1? o1/e2 n1 ?{pi} ?{corner-hook} s2 o1/e2 ?{Ч} b1 W:le? ?{III} ?{S-hook}
+c516b_L10	?{H-hash} o1/e2 ?{omega-hook} l1 e3 a2 W:de s2 ?{cup-bar} a2 ?{H-hash} o1/e2 ?{omega-hook} e3 W:de ?{omega-hook} o1/e2 ?{w-loop} a1 ?{cup-bar} ?{P-loop} W:par? ?{gamma-hook} s2 o1/e2 ?{III} ?{omega-hook} l1 c1? e1
+c516b_L11	W:le? W:par? ?{Ч} ?{2+} n1 l1 s2 t2 e3 o1/e2 W:par? b1 ?{H-hash} W:roy? s2 ?{b-2p} ?{Ч} o1/e2 ?{III} ?{H-hash} o1/e2 ?{2+} m2 W:le? ?{H-hash} s2 o1/e2 ?{S} ?{2+o}
+c516b_L12	d1? ?{2+} p1 m1 l1 ?{box-arrow} o1/e2 n1 W:par? a1 W:le? n1 ?{H-hash} o1/e2 q1? ?{S-hook} e3 ?{box-cross} W:de c1? a2 ?{Y-hook} W:le? n1 ?{III} ?{2+} N1? ?{2-bar} l1 e3
+c516b_L13	s2 o1/e2 m2 o1/e2 n1 m1 a2 o1/e2 o1/e2 n1 c2 a2 n1 c1? e1 W:de W:le? ?{H-hash} e3 W:par? q2? a2 W:par? s2 ?{2+} o1/e2 n1 W:par? o1/e2 e1
+c516b_L14	d1? ?{H-hash} W:de s2 ?{2+} e3 ?{corner-hook} m1 z1 N1? o1/e2 n1 s2 t2? e3 ?{2+o} ?{alpha-hook} ?{H-hash} o1/e2 l1 e3 ?{pi} ?{theta-ticks} o1/e2 W:par? N1? n1? o1/e2 s2 ?{S-cross} W:par?
+c516b_L15	?{Ч-tail} s2 ?{H-hash} N1? c1 o1/e2 b1 ?{2+o} ?{Ч} a1? m2 ?{oo-bar} N8 N3 N13 N3 N2 N12 N11 [PLAIN:Qu sera Landrout]

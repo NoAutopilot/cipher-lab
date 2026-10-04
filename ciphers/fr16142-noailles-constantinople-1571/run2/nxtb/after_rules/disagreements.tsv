@@ -1,0 +1,146 @@
+line	col	A	B	flagged	crop
+c516a_L01	5	e3	n1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	12	n2	a1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	15	?{loop}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	16	?{tick}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	19	X:Lhook	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	22	i1	a2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	23	?{theta-small}	b1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	26	-	a2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	27	i1	?{circle-bar}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	30	e3	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L01	31	e3	?{bar-swash}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L01_s2.jpg
+c516a_L02	1	i2	?{dotted-T}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L02	2	N2	n1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L02	14	?{small-ticks}	?{small-hash-box}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L02	15	X:hbar	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L02	16	e3	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L02	29	o1/e2	r1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L02_s2.jpg
+c516a_L03	8	X:2+	n1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	15	y1	c1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	16	y1	c1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	19	X:hbar	?{box-bar}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	21	e3	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	22	o1/e2	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	25	N4	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	26	N2	e1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	27	e3	N5	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516a_L03	28	t1	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516a_L03_s2.jpg
+c516b_L01	7	p2	e3	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L01	8	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L01	12	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L01	16	X:hbar	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L01	19	o1/e2	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L01	29	p2	e3	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L01_s2.jpg
+c516b_L02	12	d1	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s2.jpg
+c516b_L02	22	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s2.jpg
+c516b_L02	27	u1	e3	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s2.jpg
+c516b_L02	29	?{F-bar}	p1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L02_s2.jpg
+c516b_L03	2	e3	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	4	N14	N	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	5	e3	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	7	y1	?{q-cross}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	9	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	13	?{3-bar-hash}	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	16	y1	o1/e2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	17	X:2+	?{q-cross}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	18	N2	n1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	20	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L03	29	u1	e3	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L03_s2.jpg
+c516b_L04	5	d1	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L04	6	u1	e3	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L04	8	X:Lhook	?{box-curl}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L04	11	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L04	22	X:2+	n1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L04	26	y1	?{q-cross}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L04_s2.jpg
+c516b_L05	3	y1	?{q-cross}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	5	p2	r2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	8	?{blot}	p1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	15	e3	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	22	e3	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	24	-	N	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	25	N14	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L05	27	-	o1/e2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L05_s2.jpg
+c516b_L06	7	N1	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	8	N2	n1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	13	X:2+	n1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	16	o1/e2	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	20	?{blot}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	21	?{blot}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	22	?{blot}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	23	?{blot}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L06	25	p2	r2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L06_s2.jpg
+c516b_L07	2	o3	n1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s2.jpg
+c516b_L07	9	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s2.jpg
+c516b_L07	17	?{B-shape}	?{B-script}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s2.jpg
+c516b_L07	20	W:qui	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s2.jpg
+c516b_L07	24	e3	u1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L07_s2.jpg
+c516b_L08	1	l1	m1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	3	n1	y1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	5	n1	y1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	9	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	12	?{d-cross}	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	13	W:qui	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	20	t1	a3	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	23	t1	a3	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	25	l1	m1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L08	29	?{d-cross}	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L08_s2.jpg
+c516b_L09	1	n2	a1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	5	?{d-cross}	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	10	c1	?{9-tail}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	16	W:qui	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	17	l2	m2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	21	W:qui	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	25	X:Yhook	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	26	d1	b1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L09	28	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L09_s2.jpg
+c516b_L10	3	n1	u1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	4	i1	l1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	9	?{u-bar}	?{cup-bar}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	13	e3	u1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	16	-	u1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	20	?{u-bar}	?{cup-bar}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	21	X:Lhook	?{P-loop}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	23	X:Yhook	X:Lhook	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	26	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	27	e3	u1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L10	28	i1	l1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L10_s2.jpg
+c516b_L11	3	X:Yhook	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	6	i1	l1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	8	?{d-cross}	t2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	12	d1	b1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	16	n1	?{b-2p}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	17	X:Yhook	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	19	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L11	23	l2	m2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L11_s2.jpg
+c516b_L12	4	-	m1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	6	i1	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	7	?{box-bar}	?{box-arrow}		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	17	-	e3	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	19	?{box-4}	W:roy	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	26	o1/e2	r1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	28	-	N1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	30	?{2}	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L12	31	i1	l1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L12_s2.jpg
+c516b_L13	3	l2	m2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s2.jpg
+c516b_L13	6	l1	m1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s2.jpg
+c516b_L13	15	?{d-tick}	e1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s2.jpg
+c516b_L13	21	?{E-rev}	q2	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s2.jpg
+c516b_L13	30	?{d-cross}	e1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L13_s2.jpg
+c516b_L14	8	l1	m1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L14	10	X:Yhook	N1	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L14	14	N3	t2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L14	20	i1	l1		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L14	22	W:qui	o2	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L14	27	?{r-tail}	n1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L14_s2.jpg
+c516b_L15	1	X:Yhook	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	7	d1	b1	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	9	X:Yhook	X:hbar	AB	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	10	?{1}	a1	B	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	11	l2	m2		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	12	l1	?{oo-bar}	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	13	?{lambda}	N8		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	15	N4	-		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	20	N14	-	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	21	u1	N11	A	ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
+c516b_L15	23	Landrouct]	Landrout]		ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s1.jpg,ciphers/fr16142-noailles-constantinople-1571/run2/nxtb/crops/c516b_L15_s2.jpg
