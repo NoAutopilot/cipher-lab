@@ -70,3 +70,13 @@ on the other pages; not a held-out test (that is PIS1-KEY's). key86.tsv unchange
 Arm A PASS (0.639 vs p99 0.431 / 0.494, control 5/5 at err 0.268). T31 (table m): 7 tokens, aligned o 2, m 2, a 1, s 1, gap 1
 (kp86g/t31_witness.tsv): still split; all T31 tokens M. Arm B above A by 0.025 (reconciled), 0.010 / 0.026 (blind A / B): the
 same small margin as on the other pages; not a held-out test (PIS1-KEY's). key86.tsv unchanged.
+
+## PIS1-KEY held-out remap and T31 relabel (PIS1-KEY, finished by PIS1-KEY2, 4 Oct 2026)
+Pre-registered pis1key/PREREG_pis1key.md; details NOTES.md "key86 T31 relabel and held-out remap".
+| hypothesis | instrument | control | target | verdict |
+|---|---|---|---|---|
+| T45->u, T47->f, T57->n (fit on f.244r+f.244v/f.245r) | pis1key.py remap, held out f.275r / f.301v | kp86d control 5/5 / 5/5 at e 0.215 / 0.192 | 0.656 / 0.663 vs arm A 0.647 / 0.630; degenerate all-e 0.643 / **0.644** | joint gate FAIL (G3 on f.301v); key86 unchanged; retired for this instrument |
+| T31 tokens are page signs T45 (f.244r) / T36 (f.275r) | pis1key.py relabel, arm A | f.244r 5/5; f.275r not re-run (kp86e 5/5) | f.244r 0.677->0.695, f.275r 0.647->0.657, above both p99s | SUPPORTED in aggregate; tokens stay M; key86 T31 = m unchanged |
+Witnesses beside it, not key changes: PIS1-302 f.302v (kp87b) T57 -> n 4 of 6, T47 -> f 2 of 4, T40 (table a) -> s 5 of 7 aligned
+(section "kp87b witness"); PIS1-275V f.275v (kp86f) T31 aligned o 5, e 4, m 3, i 1 (section "kp86f witness"). T57 -> n is also the
+one cell that alone beats arm A on both held-out pages (0.654, 0.658), but the per-cell rule needs the joint gate, which failed.

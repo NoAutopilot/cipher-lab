@@ -713,7 +713,47 @@ Brief: .claude/briefs/runs/2026-10-04-acct1-pis1-wave2.md "PIS1-247" (LANE-PIS1,
   Colbert c445 and c446 at 1400 px, info.json c506 and c509, native regions of c506 and c509); 0 other hosts. Subagent calls: 18
   Sonnet. c508 (f.248r) was fetched but not read in this job (scratch only).
 
-## Remaining gaps (PIS1-247, 4 Oct 2026; merges PIS1-275V's list)
+## key86 T31 relabel and held-out remap (PIS1-KEY, finished by PIS1-KEY2)
+PIS1-KEY (4 Oct 2026, 17:0x-17:52 UTC) pre-registered both parts in pis1key/PREREG_pis1key.md and pushed it before any score, then ran
+the held-out remap and the f.244r half of the relabel (commit 3b72eca0). The lane orchestrator archived it while it was writing this
+section; PIS1-KEY2 (17:54-18:3x UTC by date -u) re-ran the relabel step unchanged (`python3 pis1key/pis1key.py relabel`, scripts
+kp86/kp86.py and kp86d/kp86d.py imported unchanged, seeds as pre-registered) to get the f.275r half, and wrote this up. No gate changed,
+nothing re-fitted, no vision calls, no network.
+
+**(b) Held-out remap T45/T47/T49/T57 (pis1key/remap_result.json, remap_run.log, key86_proposals.tsv): joint gate FAIL.**
+- Fit on the 17 Sept 1586 pages (f.244r + f.244v/f.245r): F 1.258 (key86) -> 1.310, remap T45 o->u, T47 m->f, T57 la->n; T49 stays s.
+  This is the old arm B without T31.
+- Held out f.275r: arm A 0.647, remap 0.656 (p99 0.467 / 0.496), degenerate all-e 0.643; G1-G4 pass (control 5/5 at e=0.215).
+- Held out f.301v: arm A 0.630, remap 0.663 (p99 0.396 / 0.479), control 5/5 at e=0.192, but the **degenerate remap scores 0.644,
+  above arm A**: G3 FAILs (pre-registered: if the degenerate remap clears G1, the gain is not attributed to the cells' true values).
+- Random remaps of the same four cells (200): gain over arm A mean -0.003 / +0.010, p95 0.002 / **0.017** (f.275r / f.301v); the fitted
+  remap's gain (0.009 / 0.033) sits inside the random range on f.275r's scale and only about twice the f.301v p95.
+- Single cells: T57->n alone beats arm A on both held-out pages (0.654, 0.658), T45->u and T47->f do not (f.275r unchanged). No cell
+  passes, since the per-cell rule requires the joint gate. **key86.tsv unchanged.**
+
+**(a) T31 shape relabel (pis1key/relabel_run.log; transcriptions under pis1key/tx_relabel/, committed files untouched).**
+| page (arm A, key86 unchanged) | file | old nw_score | new | key-shuffle p99 old/new | order p99 old/new |
+|---|---|---|---|---|---|
+| f.244r (T31 -> T45, err 0.284) | reconciled | 0.677 | **0.695** | 0.352 / 0.351 | 0.425 / 0.432 |
+| | blind A | 0.687 | 0.694 | 0.366 / 0.366 | 0.454 / 0.456 |
+| | blind B | 0.702 | 0.721 | 0.350 / 0.351 | 0.434 / 0.437 |
+| f.275r (T31 -> T36, err 0.215) | reconciled | 0.647 | **0.657** | 0.468 / 0.467 | 0.497 / 0.497 |
+| | blind A | 0.631 | 0.639 | 0.468 / 0.466 | 0.488 / 0.494 |
+| | blind B | 0.659 | not run | | |
+- f.244r positive control (kp86.py's, unchanged key): 5/5. f.275r control, blind B, the descriptive T31+T30 merge-cut variant and
+  relabel_result.json were not produced: the run was killed by the session's background time limit at 18:25 with the box at 80%
+  (Remaining gaps). The f.275r control does not depend on the relabel (same key, PREREG (a)); kp86e's control at e=0.215 was 5/5.
+- By the pre-registered reading: the reconciled score rises on both pages and stays above both p99s, so the relabel is **SUPPORTED**
+  (both blind passes that ran also rise). As pre-registered, this changes nothing in key86.tsv (T31 = m stays as published),
+  nothing in the committed transcriptions, and every T31 token stays M: an aggregate gain of 0.010-0.018 does not settle each token.
+  No regrade (key86.tsv did not change).
+
+Standing: key86.tsv unchanged; readings and grades unchanged. Witnesses (PIS1-302's T57/T47/T40, PIS1-275V's T31) are logged in
+HYPOTHESES.md "PIS1-KEY held-out remap and T31 relabel", not as key changes.
+Report: found -- remap gate FAIL (G3, f.301v), T31 relabel supported on f.244r and f.275r reconciled; not found -- any cell that clears
+its own pre-registered gate. Requests: 0 network. Subagent calls: 0.
+
+## Remaining gaps (PIS1-KEY2, 4 Oct 2026; merges PIS1-247's list)
 Read so far: 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
 - f.248r-v period decipherment as a scored second witness for the whole second 17 Sept letter (f.248v lines 10-20 read by PIS1-247 for the f.247r passage only, by a reader who had the Colbert text in view) - blocker: not-attempted; outside this brief; next: a blind read of f.248r + f.248v at native resolution by a Sonnet reader without the copy (one line per call, ~40 lines), then the normalised agreement with Colbert as an independent figure, ~$15
@@ -722,19 +762,21 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp8
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
 - f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
-- key86 T31 label and T45/T47/T49/T57 remap - blocker: not-attempted; running in PIS1-KEY (same wave); kp87b adds a fourth page where arm B beats A (HYPOTHESES.md "kp87b witness"); next: PIS1-KEY's report, ~$0
+- key86 T31 cell: relabel SUPPORTED on f.244r and f.275r (reconciled), but key86 m stands and every T31 token stays M - blocker: not-attempted; a token-level relabel needs each T31 token's own crop checked against the T45 / T36 table cells (PREREG_pis1key.md (a)); next: per-token crop compare, 11 tokens on f.244r + 13 on f.275r, disk only, ~$2
+- PIS1-KEY relabel descriptives not produced (f.275r blind B relabel, T31+T30 merge-cut variant, f.275r positive control, relabel_result.json) - blocker: not-attempted; run killed by the session's background time limit, box at 80%; next: `python3 pis1key/pis1key.py relabel` with no time limit (about 35 min CPU), ~$0.5
+- key86 T45/T47/T49/T57 cells - blocker: not-attempted; held-out remap joint gate FAILed (G3 on f.301v: the all-e degenerate remap also beats arm A), so nw_score coordinate-ascent remapping (pis1key.py remap) is retired for this hypothesis (rule 3); a different instrument is open; next: per-token crop compare of the T45/T47/T57 tokens on f.275r/f.301v/f.302v against the table cells, disk only, ~$2
 - Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
 - 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
 - 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II; next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
 - Originals of the Dec 1586-Feb 1587 and Apr-Dec 1587 dispatches (copied in Colbert, absent from fr.16045/16046) - blocker: not-attempted; outside this brief; next: BnF finding aid search for other Pisany volumes (fr. or Cinq Cents de Colbert), ~$1
 - f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
 - Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
-## Escalation (PIS1-247, 4 Oct 2026)
+## Escalation (PIS1-KEY2, 4 Oct 2026)
 - [x] siblings: Colbert 16 pt II clear copies paired with f.244r, f.244v/f.245r, f.247r, f.275r, f.275v, f.301v and f.302v; f.248v period decipherment located beside f.247r
 - [x] clear-pages: f.247r mapped (9 cipher lines, then clear "Nous sommes prests ...", closing, date 17 Sept 1586)
 - [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.247r, f.275r, f.275v, f.301v, f.302v; 1585 table NON-TEST on f.75
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
-- [ ] key-rebuild: T31 relabel, T45/T47/T49/T57 remap (PIS1-KEY), T40 image compare
+- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate (per-token crop check open); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15; f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 13 internal gaps; cheapest next: f.275v block B lines 12-15, ~$3.5; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 14 internal gaps; cheapest next: f.275v block B lines 12-15, ~$3.5; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
