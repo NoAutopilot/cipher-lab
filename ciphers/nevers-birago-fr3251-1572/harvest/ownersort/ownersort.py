@@ -38,6 +38,18 @@ LEAF = {'f117': dict(tx=E + '/verify/ciphertext_f117_top1.tsv', tok=E + '/apply/
 COMMITTED = {'f117': E + '/apply/reading_f117_apply_tokens.tsv', 'f168': E + '/apply/reading_f168_apply_tokens.tsv',
              'f144r': E + '/open/sorter/reading_f144r_owner_tokens.tsv'}
 settled = {r['sid']: r for r in tsv(N + '/sorter/owner-sort-2026-10-04/settled_labels.tsv')}
+# --corrections FILE / --pile-values FILE (BIR87-ALIGN, 4 Oct 2026): FILE 1 replaces settled_labels.tsv (the corrected labels,
+# harvest/bir87align/settled_corrected.tsv); FILE 2 (TSV pile, value) gives a clerk-alignment C value per owner pile, used in step 3
+# for every kept or moved tile in that pile (instead of the family key value or '?'); with --pv-moved-only, moved tiles only
+# (BIR-OWNERSORT's kept = no change rule). Outputs go to v4_<--tag or bir87>/.
+PV = {}
+if '--corrections' in sys.argv:
+    settled = {r['sid']: r for r in tsv(sys.argv[sys.argv.index('--corrections') + 1])}
+if '--pile-values' in sys.argv:
+    PV = {r['pile']: r['value'] for r in tsv(sys.argv[sys.argv.index('--pile-values') + 1])}
+if '--corrections' in sys.argv or PV:
+    H = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4_' + (sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else 'bir87'))
+    os.makedirs(H, exist_ok=True)
 def fam(p): return p.rsplit('-', 1)[0] if p and '-' in p and len(p.rsplit('-', 1)[1]) == 1 else p
 
 def align(a, b):
@@ -200,11 +212,13 @@ def step3(splits):
             if oa.get(r['qid']): inst[(r['leaf'], r['passage'], int(r['pos']))][name] = oa[r['qid']]
     changes = defaultdict(list); rows = []
     for sid, s in sorted(settled.items()):
-        if s['status'] != 'moved' or sid not in sid2pos: continue  # PREREG: kept / aside / bad-cut = no change
+        if sid not in sid2pos: continue
+        if s['status'] != 'moved' and not (s['status'] == 'kept' and s['new_sign'] in PV and '--pv-moved-only' not in sys.argv): continue  # PREREG: kept / aside / bad-cut = no change
         if ONLY is not None and sid not in ONLY: continue  # BIR-ADJ: only adjudicated owner-right moves
         lf, ln, pos = sid2pos[sid]; b = base[lf][(ln, pos)]; P = s['new_sign']; X = fam(P)
         if P != X and verdict.get(P, '').startswith('SUPPORTED'): v = '?'
         else: v = '?' if (NEW_UNKNOWN and P != X) else key.get(X, '?')
+        if P in PV: v = PV[P]
         if v == b['value']: continue
         ins = inst.get((lf, ln, pos), {})
         agree = any(ins.get(k) == X for k in ('VERIFY', 'OPEN', 'OPEN144'))

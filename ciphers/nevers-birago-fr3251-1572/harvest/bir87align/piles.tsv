@@ -1,0 +1,20 @@
+seq	pile	code	tokens	aligned_n	value	agree	share	null_max_share	above_null	grade
+cipher_owner	T19	2006	36	36	o	31	0.861	0.306	True	C
+cipher_owner	T24-b	2008	6	6	f	3	0.5	0.667	False	M
+cipher_owner	T33	2011	1	1	u	1	1.0	1.0	False	no evidence
+cipher_owner	T37	2001	42	42	a	29	0.69	0.317	True	C
+cipher_owner	T45	2002	54	52	e	43	0.827	0.278	True	C
+cipher_owner	T60	2003	43	43	n	37	0.86	0.214	True	C
+cipher_owner	T60-d	2005	1	1	g	1	1.0	1.0	False	no evidence
+cipher_owner	T85	2012	1	1	a	1	1.0	1.0	False	no evidence
+cipher_owner	T85-b	2009	1	1	a	1	1.0	1.0	False	no evidence
+cipher_owner	T86	2010	2	2	n	1	0.5	1.0	False	M
+cipher_owner	T89-b	7007	10	10	che	4	0.4	0.2	True	M
+cipher_owner	X_NEW-l	2004	7	7	o	6	0.857	0.571	True	C
+cipher_moved	T24-b	2004	3	3	f	2	0.667	0.667	False	M
+cipher_moved	T33	2006	1	1	u	1	1.0	1.0	False	no evidence
+cipher_moved	T37	2002	6	6	a	5	0.833	0.5	True	C
+cipher_moved	T60	2003	5	5	n	4	0.8	0.4	True	C
+cipher_moved	T60-d	2001	1	1	g	1	1.0	1.0	False	no evidence
+cipher_moved	T85	2007	1	1	a	1	1.0	1.0	False	no evidence
+cipher_moved	T85-b	2005	1	1	a	1	1.0	1.0	False	no evidence

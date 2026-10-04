@@ -1,0 +1,6 @@
+pile	clerk_value	grade	n	agree	share	null_max_share	printed_family_value	relation	proposal
+T19	o	C	36	31	0.861	0.306	o	equals printed	none (confirms printed value at C for this owner pile)
+T37	a	C	42	29	0.69	0.317	a	equals printed	none (confirms printed value at C for this owner pile)
+T45	e	C	52	43	0.827	0.278	e	equals printed	none (confirms printed value at C for this owner pile)
+T60	n	C	43	37	0.86	0.214	n	equals printed	none (confirms printed value at C for this owner pile)
+X_NEW-l	o	C	7	6	0.857	0.571	(X_NEW-l: T19 family members)	same as T19 pile (o, C)	over-split: merge X_NEW-l into T19 recommended (not applied)

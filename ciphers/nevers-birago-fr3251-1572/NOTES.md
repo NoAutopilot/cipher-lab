@@ -2479,3 +2479,22 @@ M-grade ROOM line for a verifier. The no.87 observation (none of the three gloss
 in the Ceppo cell of its shape) is logged M against contamination on no.87, not a rule-3 negative. Second attempt with a
 changed instrument: a third shape-map -> n-gram-gain run is not licensed (rule 3); only a no.87-independent known answer or
 more committed tokens for the 1-4-occurrence signs would be a different instrument. Details: `cce2/RESULTS.md`.
+
+## BIR87-ALIGN (4 Oct 2026, account-3 worker): clerk-sheet alignment of no.87 under the owner's own piles
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir87-align.md`; files `harvest/bir87align/` (PREREG.md at 8a78f226 before any run,
+RESULTS.md, piles.tsv, proposals_C.tsv, disagreements.tsv). Disk only: 0 requests, 0 vision calls. Status stays `partial`; no class,
+no novelty wording (rule 10). Instrument: `tools/interlinear_align.py` exactly as NEVBIR-87ALIGN, each owner pile one unseeded code.
+- Sequence: 205 of 853 no.87 tokens carry the owner's pile (186 kept, 18 moved, 1 not-letter), 648 the atlas/line-read label.
+  4 Oct sort corrections (7 tiles) applied to `harvest/bir87align/settled_corrected.tsv`.
+- Alignment: owner piles 0.848 'agrees' vs shuffled-sheet max 0.338 (committed labels re-run 0.896 vs 0.376; moves only 0.890 vs 0.374).
+  C values: T45 e 43/52, T60 n 37/43, T37 a 29/42, T19 o 31/36, X_NEW-l o 6/7 -- every one equals the printed value of its family.
+  T19 vs X_NEW-l = over-split (merge recommended, not applied; the no.87 X_NEW-l tiles are the sorter's seed). Every other split:
+  no evidence (1 tile or no C). No real homophone split supported.
+- The clerk sides with the committed label on 30 of the 53 tiles the sorter's seed re-piled and the owner left in place (pile: 1).
+- Re-decode (C values, corrections, BIR-OWNER control): f.117r -1.337 (p95 -1.296, rank 39), f.144r -1.655 (p95 -1.472, rank 61),
+  f.168 -1.583 (p95 -1.293, rank 194), pooled FAIL; judge FAIL on all three (f.144r below its shuffled null p99 -1.584). The gate does
+  not move. f.144r's v2 PASS is lost to the owner's own 7 corrections (corrections only: -1.638), not to the C values.
+- Found: no key-value error for any pile no.87 can test, so the shape-vs-value conflict of BIR-ADJ is not a key-value question for
+  those piles. Not found: evidence on the small new piles absent from no.87. Nothing applied; key, exceptions and readings unchanged.
+  Next: BIR-ADJ's tile-to-position mapping check (~USD 2); a verifier on this alignment.

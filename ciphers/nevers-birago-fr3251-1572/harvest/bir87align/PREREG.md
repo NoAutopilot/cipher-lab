@@ -1,4 +1,4 @@
-# BIR87-ALIGN pre-registration (4 Oct 2026, 16:1x UTC, account-3 worker; pushed before any alignment run)
+# BIR87-ALIGN pre-registration (4 Oct 2026, 15:5x UTC, account-3 worker; pushed before any alignment run)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-bir87-align.md`. Disk only, no LM in steps 1-2.
 
