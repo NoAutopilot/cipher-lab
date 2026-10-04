@@ -1,0 +1,29 @@
+2026-10-04 15:38	ctl	c187L	2658	-7279.3	-2.71219	a=u p=c d=n	22	144s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/clair1161-avis-flandre-1688/two/lolo_diag.py", line 217, in lolo_one
+    return [time.strftime("%Y-%m-%d %H:%M", time.gmtime()), arm, drop, len(seq), f"{sc:.1f}", f"{l4only(key):.5f}",
+                                                                                                 ^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/clair1161-avis-flandre-1688/two/lolo_diag.py", line 30, in l4only
+    return ra.L4("".join(key[s] for s in ra.SEQ))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/clair1161-avis-flandre-1688/two/lolo_diag.py", line 30, in <genexpr>
+    return ra.L4("".join(key[s] for s in ra.SEQ))
+                         ~~~^^^
+KeyError: 'Sorn'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/clair1161-avis-flandre-1688/two/lolo_diag.py", line 294, in <module>
+    lolo_run(a.arm, a.procs)
+  File "/home/user/cipher-lab/ciphers/clair1161-avis-flandre-1688/two/lolo_diag.py", line 227, in lolo_run
+    for row in pool.imap_unordered(lolo_one, [(arm, d) for d in LEAVES]):
+  File "/usr/lib/python3.11/multiprocessing/pool.py", line 873, in next
+    raise value
+KeyError: 'Sorn'

@@ -1791,3 +1791,53 @@ Headroom (rule 3, as pre-registered): this is a licence gate, and its blind base
 the full stream (step 1, D5); the pass says the held 4-gram anneal recovers known C values in this context with 50% of
 tokens free, which the same-design synthetic (D4, 32/32) predicted. It does not say the free signs' values are right.
 Control-arm free signs (`two/lolo/lolo_ctl_signs.tsv`, 32 free): 22-24 of them differ from key.tsv in every stream.
+
+**Target arm (6 streams, `two/lolo/lolo_tgt_signs.tsv`).** Every stream's key coincides with its control-arm key (the control
+recovered a/p/d exactly, so the two arms sit in the same optimum): 22-24 of the 29 free signs differ from key.tsv in every
+stream, L4 -2.666 to -2.712 over the full stream. Per sign (A = key.tsv, B = consensus at >= 5/6, dL4 = B vs A over K*,
+null = 50-context shuffled-value p95):
+
+| decision | signs (tokens) | consensus / leaves / dL4 / null p95 |
+|---|---|---|
+| **proposal M** (B != A, consensus, dL4 > 0 and > null) | K f->s (28); iib l->d (36); l s->f (12); ls e->m (40); o n->m (77); rot r->h (16); spiralG h->n (1); to m->s (6); x s->f (11) | K s 5/6 0.0422/0.0296; iib d 5/6 0.0098/0.0062; l f 6/6 0.0083/0.0042; ls m 5/6 0.0118/0.0110; o m 6/6 0.0076/0.0053; rot h 5/6 0.0079/0.0030; spiralG n 5/6 0.00275/0.00266; to s 5/6 0.0062/0.0041; x f 6/6 0.0112/0.0020 |
+| key.tsv value is the leaf-stable optimum (B == A, A beats its best alternative beyond the null) | th s (208), z t (189), 4 o (224) | th 6/6 0.0978/0.0842; z 6/6 0.0923/0.0650; 4 6/6 0.0463/0.0262 |
+| consensus but dL4 below its null (no proposal) | 2 u, 8 u, eloop e (6/6), sqc e (6/6), tz l (6/6), vdash d (6/6), S n (5/6: 0.0446 vs 0.0527, the nearest miss) | -- |
+| no consensus (<= 4/6) | 6, 6r, L, Sorn, blot, c, dia, phi, psi, rc | leaf-driven: these flip when one leaf is dropped |
+
+**Grades and what the proposals are.** All nine are **proposals graded M**; nothing enters key.tsv (decode_key --check
+below: reading unchanged). They are the leaf-stable 4-gram optimum given the held C/S signs, not a reading: step 1's D6
+puts that optimum at the 4-gram score of genuine French with about 14% of signs misread, against a measured two-reader
+error of 8-10%, so a share of the stream is still not French under any key found. Two things make them worth a next test
+rather than a shrug: (i) they move 227 tokens off e/n/s/l onto m, d, f, h, which key.tsv almost lacks -- under the nine,
+m goes 0.2% -> 3.5% of tokens (French about 3%), d 0.9% -> 2.0%, e 18.0% -> 16.8%, f unchanged (K loses f, l and x gain it) --
+but n falls 4.5% -> 2.2%, further below French (about 7%), so the letter balance is only partly repaired; (ii) six of them
+(K, iib, l, ls, o, x) are the same letters stage 1 reached on the full stream in step 1 (D5) and that the nc2 run's
+dispersed votes leaned to (SCORE-NC2: o m4, ls m3, iib x3/d2) -- three instruments with different pathologies agree on
+where the mass should go, which is still not a control-backed reading of any one sign.
+
+Rule 3 bookkeeping: the retired joint re-anneal (cover; nc2) stays retired; this run is its stage 1 alone under leaf
+streams, a different instrument by the component the diagnosis removed, licensed by a same-design synthetic (D4) and a
+3/3 planted control; one attempt, no tuning. HYPOTHESES.md row appended.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
+Subagent calls: 0. Cost: see the orchestrator's get_session. Suggested follow-up (not run, outside this brief): decode
+under key.tsv + the nine proposals and re-run the c186R gloss match (`two/glossjudge.py`, key.tsv reads 0.594-0.612 vs
+shuffled max 0.312) and the fr16 judge -- the one independent text on the leaf decides between key.tsv and the
+proposals where the 4-gram objective cannot.
+
+## Remaining gaps (C1161-LOLO, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Gloss/judge per sign undecided (RUN4-C1161GJ); word-cover and nc2 joint re-anneals NON-TEST (RUN5-C1161RA, SCORE-NC2); stage-1-only leave-one-leaf-out anneal (C1161-LOLO) GATE PASS 3/3, nine M-sign value proposals (grade M, not in key.tsv), three key.tsv values confirmed leaf-stable.
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S - blocker: not-attempted; nine proposals (K s, iib d, l f, ls m, o m, rot h, spiralG n, to s, x f) and three confirmations (th, z, 4) from C1161-LOLO, graded M because the optimum still scores like French at ~14% misread (two/lolo/noise.tsv); 10 signs leaf-driven (no 5/6 consensus); next: decode under key.tsv + the nine proposals and re-run the c186R gloss match and fr16 judge against key.tsv's own (two/glossjudge.py), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; either transcription error above the two-reader figure (agreement is not accuracy), a wrong held value, or a design element (code groups, nulls: the decode has no b and few d/m); next: a key-constrained lookalike pass on the highest-token free signs (th 208, z 189, S 275, 4 224) against the native crops, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-LOLO, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624), 10-seed consensus PASS (0.334 vs 0.122); per-sign gloss/judge undecided (RUN4-C1161GJ); word-cover and nc2 joint re-anneals retired (NON-TEST 0/3 both); stage-1-only leave-one-leaf-out anneal GATE PASS 3/3 with nine M proposals (C1161-LOLO); next: gloss match + judge of the nine proposals vs key.tsv, as in Remaining gaps
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps; and a lookalike pass on th/z/S/4 for the error gap, as in Remaining gaps
+- [n/a] retry: a further seed sweep or W/threshold change of the same anneal is not a different instrument
+Verdict: keep going: 3 internal gaps; cheapest next: gloss match + fr16 judge of the nine C1161-LOLO proposals against key.tsv, ~$2

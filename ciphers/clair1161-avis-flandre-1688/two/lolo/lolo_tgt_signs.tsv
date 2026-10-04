@@ -1,0 +1,30 @@
+sign	tokens	A	grade	consensus	leaves_agree	votes	kind	vs	dL4	null_p95	clears	decision
+2	10	r	M	u	5	u5 n1	change	u	0.00455	0.00715	0	no proposal
+6	26	e	M	-	4	e4 n1 l1	confirm	n	0.00302	0.01284	0	no proposal
+6r	36	i	M	-	4	u4 t1 l1	confirm	l	0.00253	0.01490	0	no proposal
+8	31	d	M	u	5	u5 n1	change	u	0.00808	0.01987	0	no proposal
+K	28	f	M	s	5	s5 u1	change	s	0.04218	0.02963	1	proposal M: f->s
+L	7	n	M	-	3	d3 u1 n1 r1	confirm	s	-0.00046	0.00252	0	no proposal
+Sorn	1	h	M	-	4	h4 b1	confirm	e	0.00111	0.00153	0	no proposal
+blot	1	q	M	-	4	u4 q1	confirm	u	-0.00153	0.00174	0	no proposal
+c	4	s	M	-	3	u3 n1 e1 l1	confirm	n	-0.00198	0.00191	0	no proposal
+dia	11	i	M	-	4	t4 i1 s1	confirm	t	-0.00019	0.00630	0	no proposal
+eloop	36	c	M	e	6	e6	change	e	0.01860	0.01941	0	no proposal
+iib	36	l	M	d	5	d5 e1	change	d	0.00983	0.00617	1	proposal M: l->d
+l	12	s	M	f	6	f6	change	f	0.00833	0.00424	1	proposal M: s->f
+ls	40	e	M	m	5	m5 e1	change	m	0.01179	0.01103	1	proposal M: e->m
+o	77	n	M	m	6	m6	change	m	0.00757	0.00531	1	proposal M: n->m
+phi	49	l	M	-	4	t4 n1 s1	confirm	t	-0.02504	-0.00409	0	no proposal
+psi	9	r	M	-	4	r4 s1 d1	confirm	s	0.00046	0.00558	0	no proposal
+rc	17	e	M	-	4	s4 d2	confirm	s	-0.00708	0.00740	0	no proposal
+rot	16	r	M	h	5	h5 s1	change	h	0.00792	0.00299	1	proposal M: r->h
+spiralG	1	h	M	n	5	n5	change	n	0.00275	0.00266	1	proposal M: h->n
+sqc	18	x	M	e	6	e6	change	e	0.01339	0.01486	0	no proposal
+th	208	s	M	s	6	s6	confirm	t	0.09781	0.08416	1	key.tsv value is the leaf-stable optimum
+to	6	m	M	s	5	s5 d1	change	s	0.00615	0.00411	1	proposal M: m->s
+tz	20	e	M	l	6	l6	change	l	0.00780	0.01140	0	no proposal
+vdash	8	t	M	d	6	d6	change	d	0.00009	0.00147	0	no proposal
+x	11	s	M	f	6	f6	change	f	0.01120	0.00201	1	proposal M: s->f
+z	189	t	M	t	6	t6	confirm	s	0.09228	0.06504	1	key.tsv value is the leaf-stable optimum
+4	224	o	S	o	6	o6	confirm	e	0.04626	0.02623	1	key.tsv value is the leaf-stable optimum
+S	275	u	S	n	5	n5 u1	change	n	0.04463	0.05269	0	no proposal
