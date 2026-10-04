@@ -1,0 +1,54 @@
+{
+ "prereg": "PREREG_dupsettle.md",
+ "candidates": 119,
+ "decisions": {
+  "flag-removed": 25,
+  "keep:R3a-not-isolated": 30,
+  "replaced": 18,
+  "keep:R1-not-agreed": 10,
+  "not-applied:teulet-f90v-known-answer": 36
+ },
+ "settled_unprinted": 43,
+ "settled_now_key_decodable": 35,
+ "control_50": {
+  "n": 50,
+  "replaced": 2,
+  "unchanged_share": 0.96
+ },
+ "control_all_firm": {
+  "n": 1218,
+  "replaced": 75,
+  "unchanged_share": 0.9384
+ },
+ "control_gate_pass": true,
+ "grades_after_per_page": {
+  "f89r": {
+   "after": {
+    "M": 408,
+    "U": 37,
+    "q": 24
+   }
+  },
+  "f89v": {
+   "after": {
+    "M": 386,
+    "U": 42,
+    "q": 26
+   }
+  },
+  "f90r": {
+   "after": {
+    "M": 430,
+    "U": 64,
+    "q": 18
+   }
+  },
+  "f91r": {
+   "after": {
+    "M": 113,
+    "U": 7,
+    "q": 2
+   }
+  }
+ }
+}

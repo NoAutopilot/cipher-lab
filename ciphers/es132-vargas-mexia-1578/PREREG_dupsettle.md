@@ -1,4 +1,4 @@
-# PREREG dup-settle -- es132-vargas-mexia-1578: settling the f.89 letter's '?' tokens from the f.93-95 duplicate (A3V3-ES132S, account 3 worker for LANE-A3V3, 4 Oct 2026, written 06:4x UTC by `date -u`, before any settlement is computed or applied)
+# PREREG dup-settle -- es132-vargas-mexia-1578: settling the f.89 letter's '?' tokens from the f.93-95 duplicate (A3V3-ES132S, account 3 worker for LANE-A3V3, 4 Oct 2026, written 06:38 UTC by `date -u`, before any settlement is computed or applied)
 
 Brief: `.claude/briefs/runs/2026-10-04-acct3-a3v3-wave2.md` section A3V3-ES132S. Input: `dup_settlements.tsv` / `dup_align.tsv` as committed by
 A3V3-ES9396 (frozen copies `dup_settlements_pre.tsv`, `dup_align_pre.tsv`, byte-identical, so the rule reads the pre-settlement state after
