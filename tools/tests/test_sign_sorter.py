@@ -100,4 +100,17 @@ with tempfile.TemporaryDirectory() as d:
     (d / 'pages.json').write_text(json.dumps({'p1': {'image': str(d / 'pages' / 'p1.png'), 'box': None}}))
     dj = ss.build(str(d / 'signs.tsv'), str(d / 'labels.tsv'), str(d / 'pages.json'))
     check('--pages takes a glyph_atlas pages.json', sum(len(p['items']) for p in dj['piles']) == 2 and 'p1' in dj['pages'])
+    # --- BIR87-SORTER (4 Oct 2026): --refs marks locked reference tiles (and drops any cluster id); others untouched ---
+    (d / 'rs.tsv').write_text('sid\tpage\tx\ty\tw\th\ns1\tp1\t20\t40\t21\t31\ns2\tp1\t100\t40\t21\t31\n')
+    (d / 'rl.tsv').write_text('sid\tsign\tfamily\ns1\tX-DOT\tX\ns2\tX\tX\n')   # (signs.tsv was rewritten by the --atlas-topk test)
+    dr = ss.build(str(d / 'rs.tsv'), str(d / 'rl.tsv'), str(d / 'pages'), clusters={'s1': 'k1', 's2': 'k1'})
+    n = ss.mark_refs(dr, ['s1', 'nope'])
+    its = {it['sid']: it for p in dr['piles'] for it in p['items']}
+    check('--refs: one tile flagged r=1 with no cluster id, the other keeps its cluster and no flag',
+          n == 1 and its['s1'].get('r') == 1 and 'c' not in its['s1'] and 'r' not in its['s2'] and its['s2'].get('c') == 'k1')
+    (d / 'refs.tsv').write_text('sid\ns1\n')
+    out = d / 'refs.html'
+    ss.main(['--signs', str(d / 'rs.tsv'), '--labels', str(d / 'rl.tsv'), '--pages', str(d / 'pages'),
+             '--refs', str(d / 'refs.tsv'), '--title', 'T', '--out', str(out)])
+    check('--refs reaches the page data', '"r": 1' in out.read_text())
 print('FAILED' if fails else 'ALL PASS'); sys.exit(1 if fails else 0)

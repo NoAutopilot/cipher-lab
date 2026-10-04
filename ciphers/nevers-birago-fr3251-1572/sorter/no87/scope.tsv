@@ -1,0 +1,41 @@
+family	no87_tiles	owner_piles	scope
+T45	65	T24|T36|T45|T45-b|T45-c|T45-d|T65	on page
+T37	63	T24|T37|T37-b|T37-c|T81|T83|T92	on page
+T60	54	T33|T60|T60-b|T60-c|T85|T86|T92	on page
+T19	53	T19|T19-b|T19-c|T49|T66|T83|T85|T90|T97|X_NEW-l	on page
+T83	49	T63|T83|T92	not split
+T86	45	T86	not split
+T53	35	T53|T60|T85	not split
+T33	32	T19|T24|T25|T33|T33-b|T85|T88	split, over cap
+T85	29	T24|T60-c|T85|T85-b|T85-c|T86	split, over cap
+T96	29	T63|T96|T96-b|T96-c|X_NEW-l	split, over cap
+T76	29	T36|T76	not split
+T90	28	T42-b|T83|T85|T90|T97	not split
+T58	26	T19|T25|T58|T97|X_NEW-l	not split
+T50	26	T50	not split
+T25	25	T25|T25-b|T33|T36-c|T65|T80	split, over cap
+T63	22	T33|T63|T81	not split
+T80	18	T18|T33|T80|T80-b|T81-b|T98	split, over cap
+T18	18	T18|T18-b|T45	split, over cap
+T36	18	T36|T36-b|T36-c|T60-b|T60-c|T80	split, over cap
+T42	16	T42|T42-b	split, over cap
+T13	15		not split
+T89	12	T89-b	on page
+T98	12	T18|T25|T29|T33|T60-b|T98|T98-b	split, over cap
+T65	12	T19|T45|T60-c|T65|T65-b|T65-c|T80|T97	split, over cap
+T55	10	T53|T55|T83	not split
+T97	9	T97|T97-c	split, over cap
+T95	9	T65|T95|T95-b|T95-c	split, over cap
+T54	9	T54|T81-d|T86	not split
+T57	8	T57|T57-b	split, over cap
+T52	8	T19|T52-b|T52-c|T58|T70|T92	split, over cap
+T26	8	T26	not split
+T70	8	T37|T70|T90	not split
+T64	6	T64	not split
+T29	6	T29|T92	not split
+T17	5	T17	not split
+T38	5	T38	not split
+T49	5	T49|T65	not split
+T81	5	T81|T81-b|T81-c|T81-d|T83	split, over cap
+T27	3		not split
+T24	1	T24|T24-b|T24-c|T60-c|T85|T90	on page

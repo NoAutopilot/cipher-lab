@@ -37,6 +37,11 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
               --rank-lattice also takes these files (or with no file named, uses them): candidates k1..k3 ('_' dropped),
               weights s1..s3 renormalised, lattice line = <page>_<line>, and the tile id is the box id.
   --atlas     the family atlas labels.json the decisions are meant for (shown on the page and kept in the data).
+  --refs      TSV with a sid column (BIR87-SORTER, 4 Oct 2026): tiles the person already sorted on an earlier page, put in
+              --labels under the pile the person chose and shown locked, with a check mark, as reference examples for
+              sorting new tiles into the person's own piles. They cannot be taken out, moved, dragged or given a cluster;
+              tap shows them on their line. Leave them out of the --labels file given to sign_sorter_apply.py, so the
+              apply step never writes them (ciphers/nevers-birago-fr3251-1572/sorter/no87/README.md).
   --rank      TSV sid, score[, alt[, why[, detail]]]: tile value scores (expected change in the key rank or decode if the tile
               flips between its top-2 labels; tools/key_decode_lattice.py output where it exists). The top 20 by
               score fill a "Most useful first" box at the top of the page.
@@ -344,6 +349,16 @@ def rank_from_confusion(data, conf_rows, focus_sids=(), cap=20):
     return out[:cap]
 
 
+def mark_refs(data, sids):
+    """--refs: flag tiles as locked reference examples (item 'r': 1, no cluster id). Returns the number flagged."""
+    sids, n = set(sids), 0
+    for p in data['piles']:
+        for it in p['items']:
+            if it['sid'] in sids:
+                it['r'] = 1; it.pop('c', None); n += 1
+    return n
+
+
 def render(data, title, lede):
     t = open(TEMPLATE).read()
     esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -368,6 +383,7 @@ def main(argv=None):
     ap.add_argument('--page-quality', type=int, default=82, help='JPEG quality of the embedded context page images')
     ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
     ap.add_argument('--focus-note', default='')
+    ap.add_argument('--refs', help='TSV with a sid column: tiles the person already sorted, shown locked as reference examples')
     g = ap.add_mutually_exclusive_group()
     g.add_argument('--clusters', help='TSV sid<TAB>cluster, or glyph_atlas clusters.tsv: cluster-level decisions')
     g.add_argument('--auto-clusters', type=int, metavar='K', help='provisional shape clusters inside each pile (no atlas yet)')
@@ -393,6 +409,8 @@ def main(argv=None):
         a.rank_lattice = a.atlas_topk
     data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
                  tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
+    if a.refs:
+        mark_refs(data, [r['sid'] for r in tsv(a.refs)])
     if a.auto_clusters:
         auto_clusters(data, a.auto_clusters)
     elif any('c' in it for p in data['piles'] for it in p['items']):

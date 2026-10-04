@@ -93,18 +93,18 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     const pid = await workPile(page); const sel = await pileSel(page, pid); const el = page.locator(sel);
     await el.scrollIntoViewIfNeeded(); await el.evaluate(e => window.scrollTo(0, e.getBoundingClientRect().top + scrollY - 150));
     const order0 = await page.evaluate(() => [...document.querySelectorAll('.pile .pid')].map(e => e.textContent).join());
-    const y0 = await el.evaluate(e => e.getBoundingClientRect().top), n0 = await el.locator('.tiles .t').count();
-    const s1 = await el.locator('.tiles .t').nth(1).getAttribute('data-sid');
-    await el.locator('.tiles .t').nth(1).click(); await page.waitForTimeout(150);
-    ok(tag + ': a tap takes the sign out of its pile', await page.evaluate(s => moves[s], s1) === 'OUT' && (await el.locator('.tiles .t').count()) === n0 - 1);
+    const y0 = await el.evaluate(e => e.getBoundingClientRect().top), n0 = await el.locator('.tiles .t:not(.ref)').count();
+    const s1 = await el.locator('.tiles .t:not(.ref)').nth(1).getAttribute('data-sid');
+    await el.locator('.tiles .t:not(.ref)').nth(1).click(); await page.waitForTimeout(150);
+    ok(tag + ': a tap takes the sign out of its pile', await page.evaluate(s => moves[s], s1) === 'OUT' && (await el.locator('.tiles .t:not(.ref)').count()) === n0 - 1);
     ok(tag + ': ...into the "Taken out" tray, with a count on step 2', await page.isVisible('#tray') && (await page.textContent('#trayN')) === '1' && (await page.textContent('#outN')) === '1');
     ok(tag + ': families and piles keep their order after a take-out', order0 === await page.evaluate(() => [...document.querySelectorAll('.pile .pid')].map(e => e.textContent).join()));
     ok(tag + ': the pile stays where it was on screen', Math.abs(await el.evaluate(e => e.getBoundingClientRect().top) - y0) < 3);
     await page.locator('#trayTiles .t').first().click(); await page.waitForTimeout(100);
     ok(tag + ': tapping it in the tray puts it back', await page.evaluate(s => moves[s], s1) === undefined && !(await page.isVisible('#tray')));
-    await page.locator(sel + ' .tiles .t').nth(1).click(); await page.click('#undo');
+    await page.locator(sel + ' .tiles .t:not(.ref)').nth(1).click(); await page.click('#undo');
     ok(tag + ': toolbar Undo puts a taken-out sign back', await page.evaluate(s => moves[s], s1) === undefined);
-    const h = el.locator('.tiles .t').nth(2); const hs = await h.getAttribute('data-sid');
+    const h = el.locator('.tiles .t:not(.ref)').nth(2); const hs = await h.getAttribute('data-sid');
     await page.evaluate(() => { window.__cm = []; });
     await mock.hold(page, h);
     ok(tag + ': holding a sign opens the larger view on it', await page.isVisible('#ctx') && (await page.textContent('#ctxT')).includes(hs), await page.textContent('#ctxT'));
@@ -167,7 +167,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     // 6. STEP 2: take out three more, then place them by tap, by drag, by "new sign"; undo; done state
     await page.evaluate(() => window.scrollTo(0, 0));
     const pid2 = await workPile(page), sel2 = await pileSel(page, pid2);
-    for (let i = 0; i < 3; i++) { await page.locator(sel2 + ' .tiles .t').first().click(); await page.waitForTimeout(60); }
+    for (let i = 0; i < 3; i++) { await page.locator(sel2 + ' .tiles .t:not(.ref)').first().click(); await page.waitForTimeout(60); }
     const waiting = await page.evaluate(() => outList());
     ok(tag + ': tray holds the taken-out signs', waiting.length >= 4, waiting.length);
     await page.click('#trayGo'); await page.waitForTimeout(600);
@@ -216,7 +216,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     ok(tag + ': when the tray is empty step 2 says so', await page.isVisible('#s2Empty') && (await page.textContent('#outN')) === '0');
     await page.click('#s2Back'); ok(tag + ': back to step 1', await page.isVisible('#s1') && !(await page.isVisible('#s2')));
     // one sign left in the tray, never placed: after reload it is still waiting (and apply reads it as taken-out)
-    await page.locator(sel2 + ' .tiles .t').first().click();
+    await page.locator(sel2 + ' .tiles .t:not(.ref)').first().click();
     // 7. persistence
     await settle(page); await page.waitForTimeout(800);
     const before = await S(page);
@@ -230,30 +230,30 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
   }
   // race: take-out + undo of one tile in quick succession, ten times, on a store whose writes can land out of order
   { const { ctx, store, page } = await open(b, DESK, { minMs: 5, maxMs: 60, setMinMs: 300, setMaxMs: 600 });
-    const s0 = await page.locator('#list .t').first().getAttribute('data-sid');
-    for (let i = 0; i < 10; i++) { await page.locator('#list .t[data-sid="' + s0 + '"]').click(); await page.click('#undo'); }
+    const s0 = await page.locator('#list .t:not(.ref)').first().getAttribute('data-sid');
+    for (let i = 0; i < 10; i++) { await page.locator('#list .t:not(.ref)[data-sid="' + s0 + '"]').click(); await page.click('#undo'); }
     await page.waitForTimeout(2500);
     ok('race: take-out+undo x10 leaves no stray move in the store', !Object.values(store.docs.moves || {}).some(m => m.sid === s0), JSON.stringify(store.docs.moves));
     await ctx.close(); }
   // decisions made before storage answers are kept
   { const { ctx, store, page } = await open(b, DESK, { connectMs: 2500 });
     await page.goto(PAGE); await page.waitForTimeout(300);
-    await page.locator('#list .t').first().click();
+    await page.locator('#list .t:not(.ref)').first().click();
     await page.waitForTimeout(3500);
     ok('early: a take-out made while storage is connecting is saved', Object.keys(store.docs.moves || {}).length === 1);
     await ctx.close(); }
   // a refused save is visible, and can be retried
   { const { ctx, store, page } = await open(b, DESK);
     store.failNext(2);
-    await page.locator('#list .t').first().click(); await page.waitForTimeout(1500);
+    await page.locator('#list .t:not(.ref)').first().click(); await page.waitForTimeout(1500);
     ok('fail: a refused save says so', /Not saved/.test(await page.textContent('#save')), await page.textContent('#save'));
-    await page.locator('#list .t').first().click(); await page.waitForTimeout(1200);
+    await page.locator('#list .t:not(.ref)').first().click(); await page.waitForTimeout(1200);
     ok('fail: a later good save does not leave "Saving 1..." stuck', !/Saving/.test(await page.textContent('#save')), await page.textContent('#save'));
     if (await page.isVisible('#retry')) await page.click('#retry');
     await page.waitForTimeout(1200);
     ok('fail: after Try again everything is in the store', Object.keys(store.docs.moves || {}).length === 2 && /All changes saved/.test(await page.textContent('#save')), await page.textContent('#save'));
-    store.failNext(2); await page.locator('#list .t').nth(2).click(); await page.waitForTimeout(100);
-    await mock.hold(page, page.locator('#list .t').nth(3)); await page.waitForTimeout(1300);
+    store.failNext(2); await page.locator('#list .t:not(.ref)').nth(2).click(); await page.waitForTimeout(100);
+    await mock.hold(page, page.locator('#list .t:not(.ref)').nth(3)); await page.waitForTimeout(1300);
     ok('fail: ...and says so inside the open dialog, where the person is working', await page.isVisible('#ctxErr') && /Not saved/.test(await page.textContent('#ctxErr')));
     await ctx.close(); }
   await b.close();
