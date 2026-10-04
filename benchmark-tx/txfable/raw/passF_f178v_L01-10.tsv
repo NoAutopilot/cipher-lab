@@ -1,0 +1,290 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T18		H	phi, circle with vertical through; line start
+L01	2	T37		H	theta with horizontal bar
+L01	3	T49	T51	M	p with horizontal bar through descender
+L01	4	T19		H	pi
+L01	5	T83	T29	M	x with left hook (epsilon-x)
+L01	6	T52		H	n with hooked descender
+L01	7	T85		H	plus
+L01	8	T51	T49	M	f/p with bar, second of its kind on line
+L01	9	T53		H	double o
+L01	10	T45		H	b with loop at base, tall stem
+L01	11	T38		H	rounded m
+L01	12	T86		H	double-barred cross; sits in s1/s2 overlap, counted once
+L01	13	T26	T76	M	o with hooked j (oj)
+L01	14	T96		H	cursive l loop
+L01	15	T60		H	hash
+L01	16	T36		H	lollipop circle on stem
+L01	17	T85		H	plus
+L01	18	T54		H	cursive R
+L01	19	T80		H	D
+L01	20	T60		H	hash
+L01	21	T37		H	theta with bar
+L01	22	T83	T29	M	hooked epsilon-x shape; in s2/s3 overlap, counted once
+L01	23	T92		H	omega
+L01	24	T25		H	lambda
+L01	25	T85		H	plus
+L01	26	T13		H	m with tilde
+L01	27	T37		H	theta with bar; line end
+L02	1	T33		H	two verticals on base line; line start
+L02	2	T19		H	pi
+L02	3	T58		H	B
+L02	4	T53		H	double o
+L02	5	T85		H	plus
+L02	6	T63		H	V
+L02	7	T25		M	cursive lambda with looped top
+L02	8	T42		H	T with hook, tick above
+L02	9	T78		M	box-shaped bracket on stem, no plus visible
+L02	10	T37		H	theta with bar
+L02	11	T18		H	phi
+L02	12	T36		H	lollipop
+L02	13	T19		H	pi; in s1/s2 overlap, counted once
+L02	14	T70		H	triangle
+L02	15	T60		H	hash
+L02	16	T37		H	theta with bar
+L02	17	T18		H	phi
+L02	18	T33		H	two verticals on base
+L02	19	T81		H	x
+L02	20	T96		H	cursive l
+L02	21	T53		H	double o
+L02	22	T19		H	pi; in s2/s3 overlap, counted once
+L02	23	T64		H	angular m
+L02	24	T37		H	theta with bar
+L02	25	T33		H	two verticals on base
+L02	26	T53		H	double o
+L02	27	T19		H	pi; line end
+L03	1	T88		H	small o; line start
+L03	2	T33		H	two verticals on base
+L03	3	T86		H	double-barred cross
+L03	4	T92		H	omega
+L03	5	T53		H	double o
+L03	6	T37		H	theta with bar
+L03	7	T76		H	9/g
+L03	8	T19		H	pi
+L03	9	T33		H	two verticals on base
+L03	10	T37		H	theta with bar
+L03	11	T18		H	phi
+L03	12	T25		H	lambda with tick above
+L03	13	T45		H	b with tick above; in s1/s2 overlap
+L03	14	T83	T29	M	epsilon-x
+L03	15	T25		H	lambda
+L03	16	T53		H	double o
+L03	17	T19		H	pi
+L03	18	T89	T97	M	8 with loop
+L03	19	T60		H	hash
+L03	20	T85		H	plus
+L03	21	T53		H	double o
+L03	22	T19		H	pi; in s2/s3 overlap
+L03	23	T37		H	theta with bar
+L03	24	T11		M	8S pair, no apostrophe seen
+L03	25	T60		H	hash
+L03	26	T86		H	double-barred cross; line end
+L04	1	T90		H	barred 5/b shape; line start
+L04	2	T25		H	lambda
+L04	3	T33		H	two verticals on base
+L04	4	T92		H	omega
+L04	5	T86		H	double-barred cross
+L04	6	T76		H	9/g
+L04	7	T45		H	b with loop at base
+L04	8	T86		H	double-barred cross
+L04	9	T90		H	barred 5/b shape
+L04	10	T37		H	theta with bar
+L04	11	T89	T97	M	8 with loop
+L04	12	T53		H	double o
+L04	13	T96		H	cursive l; s1/s2 overlap
+L04	14	T65		H	phi with crossbar below (op)
+L04	15	T19		H	pi
+L04	16	T18		H	phi
+L04	17	T96		H	cursive l
+L04	18	T54		H	cursive R
+L04	19	T19		H	pi
+L04	20	T18		H	phi
+L04	21	T52		H	n with hooked descender
+L04	22	T89		H	8 with small loop lower right
+L04	23	T86		H	double-barred cross; s2/s3 overlap
+L04	24	T57		H	diamond with tail
+L04	25	T86		H	double-barred cross
+L04	26	T60		H	hash
+L04	27	T18		H	phi
+L04	28	T52		H	n with hooked descender; line end
+L05	1	T26	T76	M	q-shape, 9 with straight tail; line start
+L05	2	T57		H	diamond with tail
+L05	3	T55		H	F with extra bar
+L05	4	T90		H	barred 5/b with bar at top
+L05	5	T58		H	B
+L05	6	T37		H	theta with bar
+L05	7	T17		M	c/t with crossbar at top
+L05	8	T19		H	pi
+L05	9	T13		H	m with tilde
+L05	10	T25		H	lambda
+L05	11	T86		H	double-barred cross
+L05	12	T63		H	V
+L05	13	T45		H	circle on stem with tick (b)
+L05	14	T13		H	m with tilde, a dot follows it (not counted as a sign); s1/s2 overlap
+L05	15	T85		H	plus
+L05	16	T19		H	pi
+L05	17	X_K		H	Latin capital K, no cell
+L05	18	T45		H	b with tick above
+L05	19	T76		H	9/g
+L05	20	T25		H	lambda
+L05	21	T19		H	pi
+L05	22	T60		H	hash
+L05	23	T86		H	double-barred cross; s2/s3 overlap
+L05	24	T89		H	8 with lower loop
+L05	25	T92		H	omega
+L05	26	T19		H	pi
+L05	27	T76		H	9/g
+L05	28	T52		H	n with hooked descender
+L05	29	T54		H	cursive R
+L05	30	T37		H	theta with bar
+L05	31	T76		H	9/g; line end
+L06	1	T53		H	double o; line start
+L06	2	T45		H	b with tick above
+L06	3	T60		H	hash
+L06	4	T86		H	double-barred cross
+L06	5	T76		H	9/g
+L06	6	T63		H	V
+L06	7	T19		H	pi
+L06	8	T29		H	epsilon-o
+L06	9	T24		H	epsilon
+L06	10	T37		H	theta with bar
+L06	11	T33		H	two verticals on base
+L06	12	T19		H	pi
+L06	13	T83	T29	M	epsilon-x
+L06	14	T80		H	D; s1/s2 overlap
+L06	15	T10		H	o-o joined
+L06	16	T37		H	theta with bar
+L06	17	T60		H	hash
+L06	18	T36		H	lollipop
+L06	19	T55		H	F with extra bar
+L06	20	T65		H	phi with crossbar below
+L06	21	T33		H	two verticals on base
+L06	22	T27		H	3 with curled tail
+L06	23	T80		H	D
+L06	24	T58		H	B; s2/s3 overlap
+L06	25	T80		H	D
+L06	26	T15		M	89 pair, no apostrophe seen
+L06	27	T29		H	epsilon-o
+L06	28	T63		H	V
+L06	29	T45		H	b with tick; line end
+L07	1	T90		H	barred circle-stem; line start
+L07	2	T86		H	double-barred cross
+L07	3	T60		H	hash
+L07	4	T18		H	phi
+L07	5	T86		H	double-barred cross
+L07	6	T60		H	hash
+L07	7	T63		H	V
+L07	8	T19		H	pi
+L07	9	T90		H	barred circle-stem, bar at top
+L07	10	T83	T29	M	epsilon-x
+L07	11	T80		H	D
+L07	12	T76		H	9/g
+L07	13	T36		H	lollipop
+L07	14	T96		H	cursive l; s1/s2 overlap
+L07	15	T90		H	barred circle-stem with tick
+L07	16	T37		H	theta with bar
+L07	17	T58		H	B
+L07	18	T54		H	cursive R
+L07	19	T86		H	double-barred cross
+L07	20	T60		H	hash
+L07	21	T53		H	double o
+L07	22	T86		H	double-barred cross
+L07	23	T18		H	phi
+L07	24	T85		H	plus; s2/s3 overlap
+L07	25	T13		H	m with tilde, dot after
+L07	26	T37		H	theta with bar
+L07	27	T36		H	lollipop
+L07	28	T85		H	plus
+L07	29	T92		H	omega
+L07	30	T37		M	theta with bar, partly cut by crop edge; line end
+L08	1	T63		H	V; line start
+L08	2	T86		H	double-barred cross
+L08	3	T17		M	cursive t / c with crossbar
+L08	4	T45		H	b with tick above
+L08	5	T17		M	cursive t / c with crossbar
+L08	6	T19		H	pi
+L08	7	T83	T29	M	epsilon-x
+L08	8	T85		H	plus
+L08	9	T60		H	hash
+L08	10	T92		H	omega
+L08	11	T80		H	D
+L08	12	T64		H	angular m
+L08	13	T37		H	theta with bar; s1/s2 overlap
+L08	14	T33		H	two verticals on base
+L08	15	T45		H	b with tick above
+L08	16	T60		H	hash
+L08	17	T18		H	phi
+L08	18	T19		H	pi
+L08	19	T25		H	lambda
+L08	20	T51	T49	M	f/p with double bar at foot
+L08	21	T36		H	lollipop
+L08	22	T85		H	plus
+L08	23	T98	T18	M	narrow phi
+L08	24	T65		H	phi with crossbar below; s2/s3 overlap
+L08	25	T45		H	b with tick above
+L08	26	T13		H	m with tilde (a-like superscript) and dot
+L08	27	T55		H	F with extra bar
+L08	28	T18		H	phi
+L08	29	T96		H	cursive l
+L08	30	T11		H	8S pair with apostrophe tick before; line end
+L09	1	T29		H	epsilon-o; line start
+L09	2	T84		H	plus over triangle/circle
+L09	3	T18		H	phi
+L09	4	T96		H	cursive l
+L09	5	T83	T29	M	epsilon-x
+L09	6	T37		H	theta with bar
+L09	7	T33		H	two verticals on base
+L09	8	T86		H	double-barred cross
+L09	9	T13		H	m with tilde and dot
+L09	10	T52		H	n with hooked 3-like descender
+L09	11	T60		H	hash; s1/s2 overlap
+L09	12	T45		H	b with tick above
+L09	13	T13		H	m with tilde and dot
+L09	14	T86		H	double-barred cross
+L09	15	T54		H	cursive R
+L09	16	T37		H	theta with bar
+L09	17	T60		H	hash
+L09	18	T80		H	D
+L09	19	T19		H	pi
+L09	20	T78		M	box-shaped bracket on stem, no plus visible
+L09	21	T86		H	double-barred cross; s2/s3 overlap
+L09	22	T58		H	B
+L09	23	T85		H	plus
+L09	24	T90		H	barred circle-stem, bar at top
+L09	25	T25		H	lambda
+L09	26	T33		H	two verticals on base
+L09	27	T90		H	barred circle-stem
+L09	28	T37		H	theta with bar
+L09	29	T89	T97	L	8-like, cut by dark crop edge; line end
+L10	1	T53		H	double o; line start
+L10	2	T86		H	double-barred cross
+L10	3	T18		H	phi
+L10	4	T26	T76	M	q-shape, 9 with straight tail
+L10	5	T92		H	omega
+L10	6	T19		H	pi
+L10	7	T58		H	B
+L10	8	T36		H	lollipop
+L10	9	T85		H	plus
+L10	10	T53		H	double o
+L10	11	T96		H	cursive l
+L10	12	T98	T18	M	narrow phi
+L10	13	T55		H	F with extra bar; s1/s2 overlap
+L10	14	T60		H	hash
+L10	15	T55		H	F with extra bar
+L10	16	T15		M	89 pair, no apostrophe seen
+L10	17	T86		H	double-barred cross
+L10	18	T70		H	triangle
+L10	19	T58		H	B
+L10	20	T96		H	cursive l
+L10	21	T60		H	hash
+L10	22	T45		H	b with tick above
+L10	23	T90		H	barred circle-stem
+L10	24	T33		H	two verticals on base; s2/s3 overlap
+L10	25	T19		H	pi
+L10	26	T24		H	epsilon
+L10	27	T37		H	theta with bar
+L10	28	T83	T29	M	epsilon-x
+L10	29	T45		H	b with tick above
+L10	30	T36		M	lollipop / p-like
+L10	31	T96		H	cursive l
+L10	32	?		L	partial vertical stroke cut by crop edge, possibly apostrophe of a following pair; line end
