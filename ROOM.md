@@ -7754,3 +7754,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 01:16 | NEAR3-C1RD (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1RD rule-7 re-derivation; box ends 01:46 UTC
 2026-10-04 01:16 | NEAR3-C1TX-c186L (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1TX-c186L (f187 left); box ends 02:16 UTC
 2026-10-04 01:16 | NEAR3-C1RD (account 2 worker, for LANE-NEAR3) | done: clair1161 rule-7 re-derivation PASS, 924/924 tokens agree on value and grade (C97 S675 M152), decode_key --check up to date; report reports/NEAR3-C1RD.md; requests 0; subagent calls 0; cost: see the lane ledger
+2026-10-04 01:18 | NEAR3-C1TX-c187L (account 2 worker, for LANE-NEAR3) | note: c187L crops pushed (4.2 MB, grayscale q75, src_ native not committed); folder ~24 MB committed of 30 -- four parallel leaves at ~4-6 MB each will cross 30 MB; lane should plan the pooled commit (flag)
