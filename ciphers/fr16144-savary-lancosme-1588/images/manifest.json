@@ -11704,5 +11704,25 @@
 "local": false
 }
 }
+],
+"tomokiyo": [
+{
+"file": "images/tomokiyo/henryiii_Savary.png",
+"source": "https://cryptiana.web.fc2.com/code/henryiii_Savary.png",
+"page": "https://cryptiana.web.fc2.com/code/henryiii.htm",
+"credit": "Satoshi Tomokiyo, Cryptiana: table 'Savary's Cipher (1588)'",
+"fetched": "2026-10-04",
+"sha1": "e31502b170a741876144c80866465ca4522504c0",
+"size": "648x247"
+},
+{
+"file": "images/tomokiyo/henryiii_SavarySig.png",
+"source": "https://cryptiana.web.fc2.com/code/henryiii_SavarySig.png",
+"page": "https://cryptiana.web.fc2.com/code/henryiii.htm",
+"credit": "Satoshi Tomokiyo, Cryptiana: Lancosme's signature, BnF fr.16144 f.123v",
+"fetched": "2026-10-04",
+"sha1": "5671023d7db74b49a98ff755449f9fa643477a2d",
+"size": "896x236"
+}
 ]
 }

@@ -193,3 +193,69 @@ Read so far: 0 of ~5,000 open signs; sign inventory segmented (7,113 tiles in 12
 - [n/a] retry: no host failed (the 7 HTTP 500s were a malformed URL of mine, corrected)
 Verdict: keep going: 4 internal gaps; cheapest next: one 1000 px look at c251-252, ~$0.2; the real next step is Tomokiyo's table matched to the sorter piles, ~$1, then test 0
 gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 4 internal gap(s), 2 step(s) untried`
+
+## RUN1-SAV three cheap steps (LANE-RUN1, account-1 worker, 4 Oct 2026 00:46-01:0x UTC by the container clock)
+Brief: .claude/briefs/runs/2026-10-04-acct1-run1-wave1.md, job RUN1-SAV. No transcription, no decode, no test 0 (brief).
+Intake gate (re-run, pasted): `fr16144-savary-lancosme-1588: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**1. L14, c251-c252 at 1000 px (two IIIF views + two date-line crops).** c251 is f.123r (pencil "123"), c252 f.123v. A letter
+that opens in clear (Malta, "grand Seigneur", "Soliman ... capitaine de la porte du Basa de la Mer") and runs into cipher
+mid-line: about 21 cipher lines on c251 and about 10 on c252, ~45 signs a line by eye -> est ~1,300 signs (estimate, not a
+count). **Glossed: yes.** Both pages carry a left-margin decipherment column in a cursive hand running beside the cipher lines
+(c251 about 26 margin lines, c252 about 15), the same layout as c380. Closing in clear on c252: "... du Pera lez Constantinople
+le xxx^e d'Apvril 1586", signed Lancosme (the signature Tomokiyo reproduces from f.123v). Charrière IV prints a Lancosme letter
+"Constantinople, 30 Apr 1586" -- date match only, text not collated. So L14 is a glossed 1586 letter, not an open one, and the
+shapes visible in its cipher (26, ⊣, ⊥, ⊔, 7, 8, Δ) are the shapes of Tomokiyo's table. survey.tsv row L14 not edited
+(the per-unit table is the survey worker's file); the open count does not change: one open letter, L25 (c370-c375).
+
+**2. Tomokiyo's table vs the 120 sorter piles.** Fetched once: `images/tomokiyo/henryiii_Savary.png` (table "Savary's Cipher
+(1588)") and `henryiii_SavarySig.png` (f.123v signature), from cryptiana.web.fc2.com/code/ (henryiii.htm), 4 Oct 2026, sha1s in
+images/manifest.json ("tomokiyo"). Credit: Satoshi Tomokiyo, Cryptiana. The table gives a-z (2-4 homophones each, a few with
+"?"), 7 nulls, 3 "double" signs (double the preceding letter), and word signs avec, ent, est, et, il, les, par, pour, que, V.M.,
+ce, de. Exemplar sheets (8 tiles per pile, from the tiles embedded in sorter/index.html; scratch only) were read by this worker's
+own eye (Opus), not a Sonnet call. Result `sorter/tomokiyo_pile_match.tsv`: of 120 piles, **25 high, 33 medium, 22 low, 40 none**
+(fragments, clear-text/gloss tiles, strokes). High fits: 26=r (k013, k073), T=o (k007, k056, k091), ⊣=n (k001, k042, k088),
+⊥=n (k100, k115), 7=a (k023, k087, k110), 8=a (k102), 6=e (k004, k021, k049, k082), 9=e (k005, k094), e-loop=e (k074),
+Δ=f (k069), ∞=s (k065), ⊔=de (k050). Table signs with no clear pile: f "▽", h "S"-shapes, q, s "∴" (k062 dots possible),
+m "40,". One pile shape not in the table: k096 "ПL". Caveats: the table is Tomokiyo's for the 1588 letters; L25 is dated
+29 Apr 1587 and L14 30 Apr 1586 -- that they use the same table is shape agreement seen by eye, not established; Tomokiyo also
+writes that Berthier (1585-86) used Germigny's cipher, a different table. The TSV is focus hints for the owner's sort, never
+applied as labels; nothing was decoded.
+
+**3. The duplicata's original (BnF archivesetmanuscrits, catalogue only).** Searches (POST resultatRechercheSimple.html):
+"Lancosme 1587" -> 2 hits (fr.16144; NAF 28674 bis, a genealogical index); "Lancosme" -> 20 hits. Records read:
+- fr.16142-16145 (ark:/12148/cc46255z; Harlay 248 (2-5)), fr.16144 component (FRBNFEAD000046255_d0e185): "Jacques Savary, sr de
+  Lancosme, novembre 1585-octobre 1586 (f.76 et suiv.), — et avril 1587-avril 1588 (f.182, etc.)"; f.182 = c370, so the
+  catalogue places the 1587 run's start at this duplicata. "Un dépouillement détaillé de ces volumes se trouve dans le ms.
+  français 17020, f.372-382" (not opened; next).
+- fr.16146-16149 (ark:/12148/cc462566; Harlay 248 (6-9)): 1605-1624 (exceptions 1592, 1597, 1607, 1614, 1618, 1621, 1632) --
+  no 1587. fr.16141: treaties 1528-1634 (not despatches).
+- fr.16171 (ark:/12148/cc462694, Gallica btv1b90612889): copies on Lancosme's embassy "1585-1586" only (instruction, letters,
+  Histoire des Turcs f.31, harangue 1586 f.58) -- 1587 not named.
+- fr.7161 (ark:/12148/cc564328, Gallica btv1b90606142): 17th-c. copies, embassies 1572-1632 incl. Lancosme; no per-letter list
+  in the record.
+- fr.20982 (component FRBNFEAD000051973_d0e153, Gallica btv1b90621302): Lancosme 1585 (fol.211) only.
+- fr.3919 no.24: copy of Lancosme to the King, 22 Oct 1588 (ark:/12148/cc50365m/cd0e381) -- not 1587.
+- Arsenal Ms-4769: printed "Instruction et letres de l'ambassade du sr de Lancosme ... 1585" (ark:/12148/cc85046x/cd0e1253).
+**Not found:** no catalogue record names a Lancosme letter of 29 Apr 1587 or its original outside fr.16144. Not searched: the
+recipient-side (Villeroy/court) papers, fr.17020 ff.372-382 itself, fr.7161 page by page.
+
+Requests: cryptiana.web.fc2.com 4 (2 HTTP 302 on http://, 2 x 200 on https://); gallica.bnf.fr 4 (c251, c252 at 1000 px, two
+date crops of c252, all 200); archivesetmanuscrits.bnf.fr 12 (home, 5 searches, 5 records/components, 1 record), all 200, >=2 s apart.
+
+## Remaining gaps (finish-or-blocker pass, 4 Oct 2026, RUN1-SAV)
+Read so far: 0 of ~5,000 open signs (L25 only; L14 is now known glossed); Tomokiyo's table matched to piles as proposals (25 high).
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply (publish sorter/index.html and file the ASKS row, flagged in ROOM.md 3 Oct 2026); tomokiyo_pile_match.tsv is ready as focus hints for it
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: not-attempted; test 0 needs named signs; next: table recovery by aligning the c380 margin gloss (and L14's c251-252 gloss) to segmented boxes, seeded by Tomokiyo's table as a hypothesis with the shuffled-table control, ~$9
+- the duplicata's original - blocker: not-attempted; catalogue search found none; next: read fr.17020 ff.372-382 (the detailed inventory) on Gallica, ~$1
+
+## Escalation (4 Oct 2026, RUN1-SAV)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv); L14 c251-252 now seen glossed (30 Apr 1586)
+- [x] clear-pages: c380 and c251-252 margin glosses located, not transcribed
+- [x] known-keys: Tomokiyo's 1588 table fetched and matched to the 120 piles as proposals (tomokiyo_pile_match.tsv); not applied
+- [x] print: Charrière IV whole volume grepped (no 1587 letter); Boucher's Lettres de Henri III 1587-88 not read
+- [ ] key-rebuild: test 0 not run (needs named signs); next: gloss-to-box alignment seeded by Tomokiyo's table, with control, ~$9
+- [x] image-check: c370-c375, c380 native; c251-252 at 1000 px
+- [n/a] retry: no host failed (cryptiana 302s were http->https redirects)
+Verdict: keep going: 2 internal gaps; cheapest next: fr.17020 ff.372-382 inventory, ~$1; the real next step is test 0 seeded by the Tomokiyo match once the sort is done (or with the table as a hypothesis), ~$9
+gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 2 internal gap(s), 1 step(s) untried`

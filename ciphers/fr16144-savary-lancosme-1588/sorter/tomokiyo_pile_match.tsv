@@ -1,0 +1,126 @@
+# Proposal only (RUN1-SAV, 4 Oct 2026): sorter piles (k000-k119, SV-SORT, c370-c375 + c380) matched BY EYE to Tomokiyo's table "Savary's Cipher (1588)",
+# cryptiana.web.fc2.com/code/henryiii_Savary.png (henryiii.htm, Satoshi Tomokiyo; copy in images/tomokiyo/, fetched 4 Oct 2026). Focus hints for the owner's sort,
+# NOT settled labels, NOT applied. Tomokiyo's table is for the 1588 letters; c370-c375 is dated 29 Apr 1587 -- same cipher not established, only shape agreement.
+# confidence: high = the pile's tiles show one clean shape that occurs once in the table; med = shape fits but the table has a near look-alike or the pile is mixed;
+# low = rough fit; none = no table sign proposed (fragment, clear-text/gloss tile, or not in table). One Opus eye pass over 4 exemplar sheets (8 tiles/pile).
+pile	n	proposed_table_sign	value_per_tomokiyo	confidence	note
+k000	156	ꝩ / 8-with-tail	x?	low	x column row 2 shape; also near k030/k032
+k001	42	⊣	n	high	same as k042, k088 (split pile)
+k002	57	ɣ (tailed)	i?	low	mixed with fragments
+k003	38	-	-	none	fragments/dots
+k004	127	6	e	high	same as k021, k049, k082
+k005	139	9	e	high	same as k094
+k006	54	ʒ / Z	l?	med	l column row 3 "Z"; could be s "ʒ"
+k007	88	T	o	high	same as k056, k091; k020 is T with dot
+k008	72	-	-	none	slanting strokes/fragments
+k009	66	x (open)	y	med	table i row 1 "ɤ" is a near look-alike; same as k047, k060, k080
+k010	62	-	-	none	clear-text or gloss fragments
+k011	63	-	-	none	thin strokes, bad cuts
+k012	71	ᑕ / curly C	t	med	t row 1; also k044, k054, k066, k092
+k013	105	26	r	high	same as k073
+k014	58	ŧ (4 with bar)	b	med	b row 2; c/d have 4-with-bars variants -- check k014 vs k055 vs k099 vs k111
+k015	57	^~ (wave hat)	g	low	mixed; see k068
+k016	78	ɔ (with dot)	l	med	l row 2; same as k064, k071
+k017	34	-	-	none	clear-text/gloss tiles
+k018	102	6 with hook	e?	low	6 variant or "6," with stop; check against k004
+k019	39	-	-	none	clear-text/gloss tiles
+k020	67	T.	o	med	T followed by a dot/stop (bad cut)
+k021	58	6	e	high	see k004
+k022	34	#	avec / ent	low	mixed: #, ###, x
+k023	106	7	a	high	same as k087, k110
+k024	115	ɤ / v	i	med	i row 2 "v"; same as k089, k104
+k025	74	-	-	none	thin strokes
+k026	78	2	p	high	p row 2; same as k070
+k027	53	τ	double	med	"double" column row 2 (doubles the preceding letter, per Tomokiyo)
+k028	35	-	-	none	strokes
+k029	68	⊥ (mixed)	n	low	mixed pile, some ⊥
+k030	55	ꝩ / 8-with-slash	x?	low	x column; see k000, k032
+k031	31	-	-	none	joined groups
+k032	68	ꝩ	x?	low	see k000
+k033	61	ω / w	u	med	u row 2-3
+k034	28	-	-	none	clear-text tiles
+k035	80	Ⓖ (G in circle + stroke)	m or et	low	m row 3 Ⓖ vs "et" @: decide by size; same as k084, k086, k097
+k036	61	‿ (long breve)	-	none	stroke, possibly a mark over a sign
+k037	40	-	-	none	mixed
+k038	36	-	-	none	noise
+k039	68	-	-	none	mixed
+k040	28	-	-	none	mixed
+k041	39	# / ###	avec / ent	med	"avec" # and "ent" ###; also ⊏⊏ shapes
+k042	60	⊣	n	high	see k001
+k043	43	ʒ	s	med	s row 2-3; same as k063
+k044	51	ᑕ	t	low	see k012
+k045	77	-	-	none	fragments (SV-SORT focus group k037/k039/k040/k045/k090)
+k046	37	6	e	med	see k004
+k047	80	x	y	med	see k009
+k048	54	4	b	med	b row 1; mixed
+k049	62	6	e	high	see k004
+k050	101	⊔	de	high	"de" word sign
+k051	63	-	-	none	mixed
+k052	35	-	-	none	gloss/clear tiles
+k053	70	-	-	none	mixed (8, 2, 26, x)
+k054	67	ᑕ	t	med	see k012
+k055	53	4h (4 with bar and stem)	c	med	c row 1; same family as k099, k111
+k056	82	T	o	high	see k007
+k057	55	Ψ	o or V.M.	low	o row 2 "ψ" vs V.M. "Ψ▭"; check for a following box
+k058	49	‡ (vertical with two bars)	est?	low	"est" sign or null "Ч"; check
+k059	27	ω + 2	pour?	low	joined
+k060	75	x	y	med	see k009
+k061	51	ɔ / ˀ	-	none	hooks, maybe a ")" part
+k062	41	-	-	none	dots (possibly s "∴")
+k063	55	ʒ	s	med	see k043
+k064	52	ɔ	l	med	see k016
+k065	31	∞	s	high	s row 4 "∞-"
+k066	57	ᑕ	t	med	see k012
+k067	62	▭ / =	m	low	m row 1-2 "▭", "≈"; mixed
+k068	56	^~	g	med	g row 2
+k069	60	Δ	f	high	f row 2 "△"
+k070	50	2	p	med	see k026
+k071	39	ɔ	l	med	see k016
+k072	33	-	-	none	mixed
+k073	114	26	r	high	see k013
+k074	51	ℓ / e-loop	e	high	e row 3
+k075	42	-	-	none	mixed
+k076	44	-	-	none	mixed
+k077	39	y	ce	med	"ce" word sign
+k078	47	-	-	none	noise/gutter
+k079	42	⊥	n	med	see k100
+k080	53	x	y	med	see k009
+k081	53	6	e	med	see k004
+k082	74	6	e	high	see k004
+k083	50	-	-	none	hooks
+k084	54	Ⓖ	m or et	low	see k035
+k085	41	A	g	med	g row 3 "A"; some tiles Δ (f)
+k086	31	Ⓖ	m or et	low	see k035
+k087	93	7	a	high	see k023
+k088	56	⊣	n	high	see k001
+k089	60	ɤ / v	i	med	see k024
+k090	80	-	-	none	fragments
+k091	71	T	o	high	see k007
+k092	46	ᑕ	t	low	see k012
+k093	48	-	-	none	gloss tiles
+k094	127	9	e	high	see k005
+k095	29	-	-	none	strokes
+k096	33	ПL	-	none	not in Tomokiyo's table; open question for the sort
+k097	35	Ⓖ	m or et	low	see k035
+k098	54	ʊ / 0	-	none	not matched
+k099	76	4h (barred)	c or d	med	c/d rows; see k055, k111
+k100	68	⊥	n	high	n row 2; same as k115
+k101	41	-	-	none	strokes
+k102	42	8	a	high	a row 2
+k103	34	-	-	none	joined groups
+k104	70	ɤ / v	i	med	see k024
+k105	61	-	-	none	gloss tiles
+k106	35	-	-	none	strokes
+k107	19	-	-	none	dots
+k108	52	-	-	none	noise
+k109	53	ψ / #	que?	low	mixed
+k110	75	7	a	high	see k023
+k111	49	4 with two bars	d	med	d row 1; see k055, k099
+k112	48	3	r	med	r row 2
+k113	62	T / 7	o or a	low	mixed T and 7
+k114	28	ω + 2	pour?	low	joined
+k115	82	⊥	n	high	see k100
+k116	55	-	-	none	gloss tiles
+k117	86	‡ with loop (ꝑ)	est or null	low	"est" sign is a looped cross; nulls include "Ч"
+k118	36	-	-	none	strokes
+k119	55	-	-	none	thin strokes
