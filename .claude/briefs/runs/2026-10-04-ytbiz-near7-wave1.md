@@ -84,3 +84,17 @@ tools/tests/ (synthetic crops). Add to `packet`'s and `audit`'s --help and the p
 with an `--hide-passc` option if cheap. Leave the two private scripts in place (their output is cited) with a header line pointing at the tool,
 as interlinear_align did. Update SYSTEM.md's row for the tool and TRANSCRIPTION.md's look-alike line in one sentence. Run tools/tests for the tool
 + system_map_check + file_shrink_guard. Do not re-run any Vivonne read. Report what changed.
+
+## Wave 4 (added 13:2x UTC by LANE-NEAR7)
+
+### N7-VIV54Q -- fr16104 ink 54 key question "to z" = qae (Opus; cap USD 2; box 40 min; disk + at most 2 Gallica/cryptiana requests)
+NOTES gap line (N7-VIV54L): 13 occurrences of "to z" read "qae", no reader split, ink 40's alignment never gives u for z. Read Tomokiyo's key image
+(henryiii_Vivonne1.png on disk, or sources/cryptiana) for the cells of u, q and any z-like homophone or "qu" sign; compare the ink 54 crops of the
+13 occurrences at native resolution (crops only) against the key-image sign. Write the finding as a key question with evidence; key.tsv changes
+only if the key image itself shows the cell (then grade H, regenerate reading_piece54_L with --check and say what moved). No other edits.
+
+### N7-HEL86 -- hellen-frederick-1752: the same pre-registered blank-cell test on R4386 (Opus; cap USD 3.5; box 50 min)
+NOTES N7-HELBC named it: R4386 (f.75, alphabetical one-part 1201-2200, names 1764+), 1201-2000 band, 63 codes / 121 1763 tokens; low prior. Copy
+PREREG-N7HELBC's rule (statistic, null, control subsampled to N=121, pass rule) as PREREG-N7HEL86 before reading; one DECODE login, images to
+scratch only, scrub the account name; 2 blind Sonnet passes over the target + null cells only + reconciliation. Verdict candidate/retired; gaps
+refresh + gaps_check OK; NEAR row Evidence/Last-touched + near_check.
