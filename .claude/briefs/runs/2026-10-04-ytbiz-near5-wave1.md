@@ -70,3 +70,29 @@ first and state units x rate in NOTES before the first subagent call; stop befor
 5. NOTES "N5-VIV5S", reading file + script, Remaining gaps / Escalation refresh, gaps_check OK line; status.json untouched (orchestrator).
    ROOM done line for LANE-NEAR5 with the judge numbers beside the controls; if the judge passes, add "fr16104-vivonne-spain-1572 ready for
    audit 1" in the same line.
+
+## N5-VIVTAB -- fr16104-vivonne-spain-1572: per-letter table of fr.16104/16105, which cipher pieces lack a clerk decipherment (Opus; cap USD 5; box 60 min)
+Written 07:4x UTC after N5-VIV5S (ROOM 07:02, 95bf17e0): Gachard's "sans le dechiffrement" flag was wrong for both letters it named; the
+5 Sept 1572 letter's decipherment is ff.162r-163r. The pool's value now rests on whether ANY cipher piece in fr.16104/16105 lacks a clerk leaf.
+1. f.164 letter to the Queen, 5 Sept 1572 (old piece 52, full cipher): Gachard II entry (IA labibliothquen02gachuoft djvu, already used) and
+   the leaves after it (canvases ~178-186) for a "dechiffre de la precedente".
+2. One 1200 px pass over every canvas of fr.16104 (btv1b9009609w, 324) and fr.16105 (btv1b9009663p, 249) not already described in NOTES,
+   by contact sheets (several openings per image read, as N4-VIV3 did; no subagent transcription), building `piece_table.tsv`: canvas,
+   folio, old ink piece no., docket date, addressee, cipher (none/partial/full), "dechiffre" leaf (canvas or none), note. Requests one at
+   a time >= 2 s, <= 300 Gallica requests total; if the per-sheet vision budget would cross 80% of cap, stop and table what is done.
+3. Result: the list of cipher pieces with no decipherment leaf (with estimated cipher lines), each a candidate for a later read with key.tsv.
+   NOTES "N5-VIVTAB", Remaining gaps / Escalation refresh, gaps_check OK line. Report what was found and where it was not found.
+
+## N5-HEL7 -- hellen-frederick-1752: key-rebuild of codes 1-800 by context, control first (Opus; cap USD 10; box 90 min)
+Read NOTES "N4-HEL6" (Part B statistic, its held-out R4369 positive control, the out-of-vocabulary note) and the LANE-NEAR5 gaps refresh.
+R4370 and R4372 are retired for 1-800 (rule 3); this is a different instrument (cryptanalytic, grade S at best). Disk only.
+1. PREREG-HEL7.md pushed before any target run: objective = N4-HEL6 Part B junction PMI (fix the OOV scoring at the unseen floor first, as
+   N4-HEL6's tool note says, with an offline test), assignment space = a value per code 1-800 drawn from a candidate vocabulary you fix in
+   the PREREG (e.g. fr18 + Fagel 5177 clear pages' top-N words/syllables), anneal settings, seeds.
+2. CONTROL FIRST (rule 3 + CLAUDE.md "subsample the positive control"): blank R4369's own 801+ values on a code set matched to the target
+   (same token count, same distinct-code count and occurrence profile as the 1-800 codes in R1953), rebuild them with the same anneal, and
+   score recovery (exact value) against R4369. Gate stated in the PREREG (e.g. recovery >= 3x the shuffled-assignment baseline AND >= 0.20).
+   If the control misses its gate: stop, log "untestable by this instrument at this N" in HYPOTHESES.md, no target run.
+3. Only if the control passes: run on codes 1-800, report values that recur stably across seeds as S candidates (never H), per-code with
+   occurrence counts; refresh the reading only for tokens whose value is stable across all seeds and fit their context in both directions.
+NOTES "N5-HEL7", HYPOTHESES.md row (target and control side by side), NEAR.md row Evidence/Last-touched, near_check, gaps_check OK line.
