@@ -143,3 +143,7 @@ known publication is Koehler. Solver repos re-grepped 3 Oct 2026 (Bourdeau HEAD 
 no osiander/pregizer hit. No decipherment or plaintext of the diary's cipher entries located on 3 Oct 2026.
 
 Gate re-run (GF4-BATCH19, 3 Oct 2026; supersedes the GF-A2-7 gate note above): `hstas-osiander-1627: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: recommended step (2), still unrun -- re-test LABW's online viewer for HStAS J 7 Bue 66 directly (one or two requests) to settle whether the diary is digitised before any copy order; ~$0.5 (estimate). The Bidembach-diary article read stays a desk-browser (LOCAL-QUEUE candidate) step.

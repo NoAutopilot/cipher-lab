@@ -528,3 +528,7 @@ chapter 5). 0 comments about this item.
 Result: no decipherment or plaintext of any D623 cipher item located by these queries on 2 Oct 2026 (a search result,
 not a novelty verdict, rule 10). Status word unchanged. Requests: scienceblogs.de 2, ciphermysteries.com 2,
 cryptiana.blogspot.com 2, lifeofwellington.co.uk 1, web-search engine 10.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the key and every cipher image wait on ASKS row 12 (the BL order, REQUEST.md amendment of 2 Oct 2026), the Ingram body read on LOCAL-QUEUE L32 and the Melville-side finding aids on LOCAL-QUEUE L34; the counterpart search, the crib set and the both-forms print grep are done (GAPS4).

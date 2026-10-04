@@ -512,3 +512,7 @@ so the rubbed interlinear is the recipient-side decipherment. The other directio
 decipherments, in the foreign ministry's holdings) is not digitised as far as this pass found and was not searched by
 shelfmark. No printed Saxon or Russian documentary series for 1841-43 prints these dispatches (print search above).
 No find in (a)-(d) makes the item calibration or found-solved.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the Verdict's cheapest next -- rerun crib_test.py on R5008 (German, 260 digits; re-check power at this N first), ~$1, then the crib-anchored key search on R5008's sentence frame with its own control first, ~$3. Check Bourdeau's stated next step first (duplicate-effort risk, GAPS185).

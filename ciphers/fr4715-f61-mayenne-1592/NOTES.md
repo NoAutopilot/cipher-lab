@@ -6403,3 +6403,7 @@ Separate session from A2-F61R. Read in full: the eleven line sheets `images/f61s
   diplomatiques*, vol. 7), is a common formula in a 17th-century edition and is not taken as this letter. The Google Books and OpenAlex counts
   are loose-match volumes. A search result, not a novelty verdict (rule 10). The phrase list predates the reconciled reading. Refreshing it is
   the named next step in Remaining gaps.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the Remaining gap 'print search on f.61r's full clear text' -- refresh phrases.txt with the reconciled, normalised phrases of scripts/f61r_clear_reading.tsv (the y-for-n forms normalised per scripts/f61r_clear_corrections.tsv) and re-run tools/print_check.py, ~$0.5. LOCAL-QUEUE L30 and ASKS 88/89/93 stay the outside blockers for the sign gaps.

@@ -136,3 +136,7 @@ Pastor, Geschichte der Paepste IV.2 Anhang: no identifier located in this job; n
 
 Result: in Sanuto vol. XLV the term Taurello is absent and the letter is not printed or reported in the snippets read; Vetralla appears only in other correspondents' June camp letters. No change to the check-solved verdict: `blocked` stands (Pastor, Gayangos, Boletin RAH, vol. 46 mapping unread). Next: map vol. 46's identifier (scan 22 or 01 heads), read vol. XLII's Taurello passage (id 05, line 41313 of its djvu) to see whether it ties him to Pietro Antonio.
 Requests: archive.org advancedsearch 2, metadata 6, download 1; be-api fts about 400 (over the usual few hundred; all 1.6 s apart, one at a time). No subagent calls.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the last pass's named next -- map Sanuto vol. 46's archive.org identifier (scan 22 or 01 heads) and read vol. XLII's Taurello passage (id 05, line 41313 of its djvu) to see whether it ties him to Pietro Antonio, ~$0.5 (estimate); keep be-api requests to a few dozen this time (the last pass used about 400).

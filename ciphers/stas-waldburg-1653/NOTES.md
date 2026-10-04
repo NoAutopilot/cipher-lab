@@ -244,3 +244,7 @@ first probes 302/404); www.googleapis.com (Books) 22 (one 503, not retried); ope
 8 letters, undigitised, orderable through LABW's order basket (permalink above). One while-waiting action that depends on
 nobody: none cheap remains online; the copy is the blocker. Status unchanged (`open`): a catalogued decipherment inside
 the unit is not a printed decipherment, so this is not found-solved; any reading from it would be key source `period`.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the folder's own GAPS pass found no cheap online action left; the unit (catalogued "mit Aufloesung der Geheimschrift", 8 letters, undigitised) waits on the copy order, ASKS row 117 / REQUEST.md.

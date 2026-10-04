@@ -230,3 +230,7 @@ digitised, REQUEST.md / ASKS row 46) and BL Add MS 61202 (Dopff-Marlborough, par
 offline since 2023). A Marlborough-side edition of the 1702 letters that this grep did not cover (Snyder,
 *Marlborough-Godolphin Correspondence*; van 't Hoff, *Correspondence of Marlborough and Heinsius*) is a further
 print check, ~USD 1, if anyone wants it.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the further print check this folder names -- a full-text search of the Marlborough-side editions of the 1702 letters not yet grepped (Snyder, Marlborough-Godolphin Correspondence; van 't Hoff, Correspondence of Marlborough and Heinsius) for Dopff's cipher passages, ~$1. The originals (H.A. 756, ASKS row 46) and BL Add MS 61202 stay the outside blockers.

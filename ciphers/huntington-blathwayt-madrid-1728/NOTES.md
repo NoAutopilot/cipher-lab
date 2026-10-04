@@ -372,3 +372,7 @@ consideration of a stipend". The 1729 Port Ste Marie reports to Newcastle/Townsh
 reports. The Newcastle Papers (BL Add MSS) and SP 94 (Spain) for 1728-29 were not searched (BL catalogue route
 limited since 2023); next: TNA Discovery API on SP 94/98-100 descriptions for "Paretti"/"Pareti", ~USD 0.5.
 Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found in any source checked.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the TNA Discovery API search this folder names -- SP 94 and SP 98-100 descriptions for 1728-29 for "Paretti"/"Pareti", ~$0.5.

@@ -107,3 +107,7 @@ Requests: be-api.us.archive.org 11 (incl. 4 identifier-scoped), googleapis.com b
 Verdict (update): blocked, unchanged. No printed edition, plaintext or decipherment of the target located in these sources; this is a search result for the log, limited to snippet-level full text on Internet Archive volumes and one Google Books query. Not searched: Historisk tidskrift's own full volumes for 1755-64 diplomatic notes beyond snippets, the Riksarkivet's own publication series Meddelanden other volumes, Hattarnas-era Rikskansliets printings, and Svenskt diplomatariums later series.
 Next step: read `meddelandenfrns05riksgoog` accession entry at page level (leaf locator needed; person's reader if lending-only) to see which Riksarkivet volume holds the Sillen-addressed Celsing letters, then a copy-order via REQUEST.md.
 While waiting: grep Staf 1977 (legationspredikanterna) full text for "Sillen" in the Celsing section once a loan or full view is available; independent of the copy order.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: check archive.org availability of `meddelandenfrns05riksgoog` (a Google-scan item) and, if its full text is open, grep its _djvu.txt for Celsing/Sillen to read the accession entry naming the Riksarkivet volume; only if the item is lending-only does the read become a person's (the folder's own condition); ~$0.5 (estimate). The copy order follows from that volume number.

@@ -589,3 +589,7 @@ key -- not done by this worker either.
 Brandenburg, Saxony): no German edition (Deutsche Reichstagsakten, Jungere Reihe vol. 1, the 1519 election volume)
 was opened by this worker; Mignet and Le Glay (French side) were read by full-text search (top of this file) without
 the key. Next: a full-text search of Deutsche Reichstagsakten J.R. I for "chiffre"/"Ziffer" + Moltzan/Cordier, ~$1.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the step pass (d) names -- a full-text search (archive.org be-api, Google Books API with country=US) of Deutsche Reichstagsakten, Juengere Reihe vol. 1 (the 1519 election volume) for 'chiffre'/'Ziffer' with Moltzan/Cordier, ~$1.

@@ -90,3 +90,7 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - [x] image-check: 57 canvases sampled; c107-c112 viewed; c107 cut to native line crops
 - [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3)
 Verdict: keep going: 7 internal gaps; cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then a full read of the copy, then test 1 re-run at power on the whole letter, ~$8 plus owner time
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the known-keys rung (Escalation [ ] known-keys) -- read Mousset 1912 pp.lviii-lix (the printed Longlee/Vivonne table) from the IA djvu and page images into a table on disk and apply it to f.101v as a published-key check, ~$1. The owner sign sorter on the c107 crops stays the only person-side step.

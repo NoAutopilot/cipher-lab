@@ -848,3 +848,7 @@ Next step (not crib-test tuning): none cheap in compute on the present transcrip
 on Ferrari 1999 (LOCAL-QUEUE L33); a different instrument for `suofratel` would be a nomenclator-aware solve (the
 1x/2x + y inventory read as code groups, not letters) with its own matched control first, ~USD 3, only if a lane brief
 names it. Requests this step: none (compute only, no network). Subagents/vision calls: 0.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the different instrument this folder names for `suofratel` -- a nomenclator-aware solve reading the 1x/2x + y inventory as code groups, not letters, with its own matched control run first (tools/family_run.py discipline), ~$3, once a lane brief names it. Ferrari 1999 (LOCAL-QUEUE L33) stays the outside blocker for the status word.

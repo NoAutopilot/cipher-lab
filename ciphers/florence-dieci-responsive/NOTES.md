@@ -507,3 +507,7 @@ archive.org 3 (advancedsearch 1, `_djvu.txt` 2); www.googleapis.com 2; github.co
 
 ## Intake gate output (CS-A2-K)
 `florence-dieci-responsive: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0, run 3 Oct 2026 after the edits)
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the Verdict's cheapest next -- glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5, then the sign-sorter build for filza 7 c.70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells), ~$1.5. Only the owner's sort itself (ASKS 107, never blocking) waits on a person.

@@ -270,3 +270,7 @@ In parallel, steps (2)-(4) of GAPS129 stand: Siebert 1968/71 (print only), the A
 
 Requests: services.dnb.de 1, www.wallstein-verlag.de 2, wallstein-open-library.de 1 (redirected), library.oapen.org 1
 (403), directory.doabooks.org 1 (403). No googleapis, no vision, no subagents.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: GAPS129 step (3), the Arcinsys Niedersachsen re-test for NLA BU L 1 Nr. 548/562 (online availability flag, quoted, before any copy order), ~$0.5 (estimate). The Bei der Wieden / Bohnenkamp read is a library or purchase read (about EUR 28, the owner decides).

@@ -550,3 +550,7 @@ L<next>	browser-check	ciphers/oldenbarnevelt-brederode-1605	OLD-DKEY (2 Oct 2026
 Requests this section: resources.huygens.knaw.nl 15 (9 page fetches, 6 searches, all >= 2.2 s, descriptive UA, no 403/429); github.com 2 shallow clones. No logins.
 
 Next cheap test: file the drafted OLD-DKEY LOCAL-QUEUE row (above): the owner's DECODE browser copy of record 2118 (NA 1.01.02 inv. 6894, States-General key, "1620 -") and one line saying whether it maps names to Arabic numerals in the 30-741 range.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: open DECODE record 2118 (NA 1.01.02 inv. 6894, States-General key, "1620 -") ourselves -- RecordsView pages are public (N6-HEL81, 4 Oct 2026) and a full-size image has been served after one browser login (A2-HDK, 2 Oct 2026) -- and say whether it maps names to Arabic numerals in the 30-741 range; image to scratch, never committed; ~$1 (estimate). This replaces waiting on the drafted OLD-DKEY LOCAL-QUEUE row unless the image is refused.

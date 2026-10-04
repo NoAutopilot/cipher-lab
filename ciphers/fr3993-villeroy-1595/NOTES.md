@@ -1090,3 +1090,7 @@ shows no shared alphabet; the stat is driven by a key that puts only frequent le
 signs it covers, which the class-shuffled null (it moves q, x, y, z onto those figures too) cannot match. Not a
 lead. Suggestion for the tool (one line, not done): add a minimum count of distinct covered sign types, or shuffle
 the null only among the codes the ciphertext actually covers. Requests: none (offline). Subagent calls: 0.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the next steps are the owner's sign-sorter settlement of the cipher runs (ASKS 124; readers split 16.8% of 770 signs, so no further machine pass or solver variant on this transcription, per the A1B-VILL-994 verdict) and the two reproductions for the f.131 / Godefroy 145 pair (ASKS 111, ASKS 123).

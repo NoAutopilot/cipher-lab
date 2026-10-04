@@ -185,3 +185,7 @@ read SOAS PP MS 4.02.27.01/.28.01 item lists for Stepney 1693-94 letters (catalo
 
 ## Discovery availability flag (IMG-AUDIT, 3 Oct 2026)
 TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), C6822030 (SP 105/60/135v), C6822068 (SP 105/60/168): `digitised` = False for all three. Requests: discovery.nationalarchives.gov.uk 3.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: try a host that resolves for the SOAS item lists of PP MS 4.02.27.01/.28.01 (Stepney 1693-94 letters) -- one reachability test of the SOAS archives catalogue from the cloud, then the item lists; owner-side only if it does not resolve (the folder's own wording); ~$0.5 (estimate). The three SP 105/60 folios are not digitised (IMG-AUDIT).

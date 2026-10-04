@@ -330,3 +330,7 @@ Hessian archive's own cipher-key records (Archivportal-D, above) were unreachabl
 prints 1109 (WVO's Brongegevens lists none). Wilhelm's reply to 1109 (autumn 1564), which might paraphrase the
 enciphered news, was not looked for in WVO this pass; next: a WVO search for Hessen -> Oranje letters Oct-Dec 1564,
 ~3 requests, ~$0.3.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: a WVO search for Hessen -> Oranje letters of Oct-Dec 1564 (Wilhelm's reply to 1109, which might paraphrase the enciphered news), ~3 requests, ~$0.3.

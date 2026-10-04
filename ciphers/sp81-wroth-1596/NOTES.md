@@ -161,3 +161,7 @@ Copy-order draft: `outreach/tna-sp81-wroth-copy.md` (TNA "Order a copy" route an
 ## Verdict (3 Oct 2026, A2P4-WROTH2)
 
 **open.** Outside blocker: no image (`digitised: false`); waiting on the owner's TNA copy order, ASKS row 121 (draft `outreach/tna-sp81-wroth-copy.md`, after its gate-7 check). Next step once images arrive, ~USD 1.5: read whether fo. 239 is a key only, then check 8/29 and 8/31 for cipher passages and apply the key (intake gate first).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the Wernham Analysis no. 331 read and the TNA Discovery searches are done; the key enclosure (SP 81/7/239) and the SP 81/8 cipher letters are not digitised and wait on the owner's TNA copy order, ASKS row 121 (draft outreach/tna-sp81-wroth-copy.md, after its gate-7 check).

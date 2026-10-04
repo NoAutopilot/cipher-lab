@@ -2183,3 +2183,7 @@ Requests this check: www.googleapis.com 3, archive.org 1, be-api.us.archive.org 
 
 Checks (FT4k, 3 Oct 2026): `python3 tools/gaps_check.py na-suriname-map-1781` -> "OK keep-going na-suriname-map-1781: keep going: 5 internal gap(s), 5 step(s) untried", exit 0;
 `python3 tools/decode_key.py ciphers/na-suriname-map-1781 --check` -> "ciphertext_2077_legend.tsv: tokens 658: C 10, H 538, M 60, U 50 / reading up to date", exit 0. Status stays partial.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the Verdict's cheapest next -- one blind same-hand look at L08:51 / L10:30 "noo[l]e" and the [sigma] i/e split (L11:17 vs L10:66) as single-sign crops in one call, ~$4, 1 vision call. Stage 9 (VERIFY5) stays blocked on LOCAL-QUEUE L36/L41.

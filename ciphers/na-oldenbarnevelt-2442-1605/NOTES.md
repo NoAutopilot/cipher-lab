@@ -966,3 +966,7 @@ settled conventions, ~$4; (d') a tighter era corpus if a judge PASS/FAIL is want
 state letters, all 19th-century printings (one register, one printing kind), fold-checked the same way, ~$5; optional: an
 owner sign-sorter check of the 9/q, f/p, v/r, l/t and G/t pairs on this hand, if a known-answer accuracy figure is wanted
 for B/C1.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: step (a') of the latest Verdict (after OLD-ES17A) -- the crop-and-read pass on blocks A and C2 with the settled conventions (tools/iiif_lines.py crops first, per-pass pricing), ~$4.

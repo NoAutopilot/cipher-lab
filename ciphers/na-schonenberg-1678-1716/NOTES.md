@@ -871,3 +871,7 @@ Premise verdict: no prior decipherment, clear copy or printed plaintext of NA 1.
 
 ## Verifier (VERIFY-SCHONENBERG, account-4, 2 Oct 2026)
 AUDIT.md written: body L01-L14 and L18 **N0** (the leaf's own interlinear period decipherment; key `period`), L19 **N2** (plaintext = the clear address on the same leaf; the code-to-address mapping is `ours`); leaf N0, no SECOND-OPINIONS row (below N3). Rule-7 re-derivation by a fresh session: decode_key --check exit 0 and an independent re-application of key.tsv + exceptions.tsv agree at all 281 tokens (0 differences beyond the M-graded tokens). Correction (no text deleted): the VX-RD01 section's "L18 and L19 ... no gloss on the leaf" and its 19-letter judge "PASS" are superseded by the GAPS sections (L18 glossed "forma."; the 28-letter closing string FAILs); reading.txt's header ("U = code never seen", "L18-L19 carry NO gloss") is stale decode.json text, for the solver to regenerate. Unreached: Herrero Sánchez, *Hispania* 76/253 (2016) 445-472 (TLS failure from the cloud), and the 2016 Utrecht thesis (403).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the Verdict is parked -- 7 groups illegible at the native image's limit and 3 line-start NULLs with no key material; reopened only by new material (a second Schonenberg letter in this key, or a higher-resolution scan of NA 1.02.04 inv.63). The verifier's re-derivation and AUDIT.md are already on disk (rederivation_report.md, AUDIT.md).
