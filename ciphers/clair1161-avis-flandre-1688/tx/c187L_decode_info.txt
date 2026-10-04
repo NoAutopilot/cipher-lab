@@ -1,0 +1,28 @@
+# NEAR3-C1TX-c187L, 4 Oct 2026: tx/c187L_rec.tsv (ss split to s s, PLAIN kept) decoded under the CURRENT key.tsv for information only.
+# Ungraded, NOT a reading (brief step 5): the key was annealed on c185R+c186R only; this leaf is not in it. Command: tools/decode_key.py . --ciphertext <rec as long tsv> --key key.tsv
+c187L_L02	n e c i i r o e y u e o d i i u o u u e a u a i n e r e e s e t
+c187L_L03	p e r s e c r e t t i n e u t e t r o y s f i e u i POUR
+c187L_L04	i n a l r e l e n e s p a i l u e [/] DISANT CETE ?UGTE e
+c187L_L05	o o r i u o u t i n e a u e c e e s t a u l t r e s u a i s
+c187L_L06	f e a u l x e t l e s i a e f e n i i u t a l g e r e
+c187L_L07	n a u o r i s e l i e s i s r o s l u d o r e a u p e r o
+c187L_L08	CET D DANDRE? FERMEU? o o c e u o u t e e l i r l a r l e u t
+c187L_L09	l u e e u i u u l u d o e s p a i l u i e l t r o y s e i
+c187L_L10	q u a t r i c e u s n i l l u c a t r e e e e l r e e s i a u
+c187L_L11	e t e r s g e u i u e i s i i n e u r a g t r a a u u e r
+c187L_L12	o u t p r e s t i a p e t i t s u t e r i a l a d o i
+c187L_L13	l a n i e i n i e t o u t i g s e n i l e t o p l u i e
+c187L_L14	f e u r e e e u t p a s s e l p a r i i c a s o u i c i e
+c187L_L15	p r e t e x t i o o r s e o u t a n l l o y s l l e u u
+c187L_L16	i e r i u c o u t i u a u t l i c y a u e e n c e e t i
+c187L_L17	p l u s a c r e i r i e e a u l t r e n e u t e [/]
+c187L_L18	L M n l e s TOUT e t s o u t e n d e r o i a u l e e f o
+c187L_L19	t a u i t f u y p l u s o n u e u u r p a r n i l e s
+c187L_L20	a n l l o i s o o r u e s e u r e u t o u c e e s l s e u
+c187L_L21	o u t e n c o r e s t a u a u t c i g e p a r c y a p r e s
+c187L_L22	e t a u t i n u u l r e t r a u c f e e e u t e t a i i o p
+c187L_L23	i i e n r r o i s e i s e n l a n a i s o u i i n e c i i
+c187L_L24	r o i u e i i e [NEW1] n s p e r n p l a t c t o r l i u a i r i e
+c187L_L25	l o u t l e s d o r a n l l o i s e e e s n e s l e s
+c187L_L26	p r i u c i p a u l x o s s i c s e r s i i l a d o e l a e i
+c187L_L27	n u r e u r e u t n e r u e i l e e u s e n i u t AMOU

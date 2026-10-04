@@ -1,0 +1,70 @@
+line	col	A	B	flagged	crop
+L02	31	NEW:5hook	s		
+L04	5	y	S	B	
+L04	9	d	dia	B	
+L04	21	PLAIN:v?g?e	PLAIN:?ugte		
+L05	10	o	0		
+L05	18	NEW:v-bar	rot	B	
+L05	23	o	-		
+L06	7	NEW:5hook	s		
+L06	15	K	dia		
+L06	24	sd	S		
+L07	1	L	eloop	B	
+L07	14	c	e		
+L07	15	2	z		
+L08	1	PLAIN:et	PLAIN:Et	AB	
+L08	3	PLAIN:an	PLAIN:ans	AB	
+L08	4	PLAIN:	PLAIN:pe	AB	
+L08	5	PLAIN:fermen	PLAIN:fermem	B	
+L09	14	th	dia	B	
+L09	26	+	-		
+L10	19	sqc	2		
+L10	23	sqc	2	B	
+L11	1	NEW:5hook	s		
+L11	21	sd	S		
+L11	23	rot	eloop		
+L12	11	c	e		
+L12	21	-	6		
+L12	22	6r	z		
+L13	7	o	0		
+L13	15	sd	S		
+L13	27	dia	+		
+L14	16	c	e		
+L15	11	sqc	2		
+L15	13	+	-		
+L15	28	a	c	B	
+L16	7	-	+		
+L16	18	-	+		
+L16	24	-	+		
+L16	28	NEW:5hook	s		
+L16	30	-	6		
+L16	31	6r	z		
+L17	11	q	p		
+L18	8	NEW:5hook	s		
+L19	5	NEW:v-bar	rot	B	
+L19	19	sqc	2		
+L19	20	c	e		
+L19	27	dia	th		
+L20	10	sqc	2		
+L20	13	c	l		
+L21	11	NEW:v-bar	rot		
+L21	21	c	e		
+L21	22	qb	q		
+L21	27	c	e		
+L22	7	o	0		
+L22	24	NEW:5hook	s		
+L23	5	z	2	B	
+L23	10	6	-		
+L23	11	7	6r		
+L23	12	th	dia		
+L23	25	K	f	B	
+L23	28	-	6		
+L23	29	6r	z		
+L24	9	NEW:arc	2	B	
+L24	11	th	-		
+L24	16	c	e		
+L24	21	NEW:v-bar	rot	B	
+L25	10	sqc	2		
+L25	18	iii	iib		
+L26	13	c	l		
+L27	15	x	w		

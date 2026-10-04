@@ -1,0 +1,12 @@
+line	col	A	B	flagged	crop	both_conf
+L02	24	q	q	B		A:H/B:M
+L04	7	phi	phi	B		A:H/B:M
+L04	10	3	3	B		A:H/B:M
+L07	22	rot	rot	B		A:H/B:M
+L07	23	ls	ls	B		A:H/B:M
+L17	23	ls	ls	A		A:M/B:H
+L18	2	PLAIN:m	PLAIN:m	AB		A:M/B:M
+L18	3	L	L	B		A:H/B:M
+L22	18	K	K	B		A:H/B:M
+L23	26	3	3	B		A:H/B:M
+L27	26	PLAIN:amou	PLAIN:amou	A		A:M/B:H
