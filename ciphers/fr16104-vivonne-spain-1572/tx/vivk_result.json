@@ -1,0 +1,346 @@
+{
+ "n_train": 3524,
+ "n_held": 1945,
+ "n_letters": 9554,
+ "j0": 1265,
+ "anchor_score": 0.463,
+ "train_matched_pairs": 2863,
+ "jend": 4823,
+ "held_letters": 4781,
+ "armA": {
+  "real": 0.4339,
+  "coverage_held": 0.993,
+  "null_key_median": 0.3761,
+  "null_key_p95": 0.4278,
+  "null_order_median": 0.4272,
+  "null_order_p95": 0.4483,
+  "verdict": "FAIL"
+ },
+ "armB": {
+  "real": 0.5445,
+  "coverage_held": 0.91,
+  "null_key_median": 0.2882,
+  "null_key_p95": 0.3399,
+  "null_order_median": 0.3481,
+  "null_order_p95": 0.362,
+  "verdict": "PASS"
+ },
+ "agreement_A_vs_T": {
+  "compared": 30,
+  "agree": 2,
+  "disagreements": [
+   "#: A=e T=t (n=221)",
+   "3: A=u T=d (n=48)",
+   "4: A=r T=g (n=34)",
+   "6: A=a T=l (n=56)",
+   "7: A=a T=e (n=7)",
+   ":: A=e T=c (n=187)",
+   "@: A=d T=q (n=48)",
+   "A: A=y T=c (n=3)",
+   "L: A=u T=r (n=19)",
+   "R: A=s T=t (n=38)",
+   "S: A=e T=b (n=47)",
+   "a: A=t T=u (n=71)",
+   "b: A=e T=z (n=7)",
+   "f: A=a T=l (n=16)",
+   "g: A=t T=r (n=176)",
+   "h: A=t T=d (n=9)",
+   "j: A=t T=l (n=35)",
+   "k: A=r T=d (n=24)",
+   "m: A=s T=e (n=545)",
+   "n: A=i T=t (n=9)",
+   "oo: A=n T=u (n=183)",
+   "p: A=i T=n (n=144)",
+   "s: A=s T=a (n=216)",
+   "to: A=s T=q (n=21)",
+   "tz: A=e T=i (n=284)",
+   "x: A=q T=s (n=142)",
+   "y: A=e T=h (n=203)",
+   "z: A=e T=a (n=126)"
+  ]
+ },
+ "keyA": {
+  "#": [
+   "e",
+   179,
+   0.45
+  ],
+  "&]": [
+   "i",
+   1,
+   1.0
+  ],
+  "2": [
+   "n",
+   33,
+   0.55
+  ],
+  "3": [
+   "u",
+   33,
+   0.67
+  ],
+  "4": [
+   "r",
+   23,
+   0.43
+  ],
+  "6": [
+   "a",
+   38,
+   0.68
+  ],
+  "7": [
+   "a",
+   7,
+   0.43
+  ],
+  ":": [
+   "e",
+   154,
+   0.37
+  ],
+  "@": [
+   "d",
+   40,
+   0.3
+  ],
+  "A": [
+   "y",
+   3,
+   0.67
+  ],
+  "H": [
+   "i",
+   1,
+   1.0
+  ],
+  "Il": [
+   "u",
+   1,
+   1.0
+  ],
+  "J": [
+   "i",
+   1,
+   1.0
+  ],
+  "L": [
+   "u",
+   14,
+   0.5
+  ],
+  "P": [
+   "a",
+   21,
+   0.57
+  ],
+  "R": [
+   "s",
+   26,
+   0.69
+  ],
+  "S": [
+   "e",
+   34,
+   0.29
+  ],
+  "V": [
+   "a",
+   68,
+   0.26
+  ],
+  "Z": [
+   "c",
+   6,
+   0.5
+  ],
+  "a": [
+   "t",
+   61,
+   0.28
+  ],
+  "b": [
+   "e",
+   6,
+   0.5
+  ],
+  "c": [
+   "p",
+   30,
+   0.33
+  ],
+  "d": [
+   "o",
+   278,
+   0.24
+  ],
+  "e": [
+   "l",
+   1,
+   1.0
+  ],
+  "et]": [
+   "a",
+   1,
+   1.0
+  ],
+  "f": [
+   "a",
+   14,
+   0.36
+  ],
+  "ff": [
+   "o",
+   1,
+   1.0
+  ],
+  "g": [
+   "t",
+   144,
+   0.25
+  ],
+  "h": [
+   "t",
+   4,
+   0.5
+  ],
+  "he": [
+   "l",
+   1,
+   1.0
+  ],
+  "he]": [
+   "l",
+   1,
+   1.0
+  ],
+  "j": [
+   "t",
+   32,
+   0.47
+  ],
+  "k": [
+   "r",
+   14,
+   0.5
+  ],
+  "l": [
+   "r",
+   1,
+   1.0
+  ],
+  "m": [
+   "s",
+   464,
+   0.18
+  ],
+  "n": [
+   "i",
+   8,
+   0.25
+  ],
+  "non": [
+   "s",
+   1,
+   1.0
+  ],
+  "non]": [
+   "p",
+   3,
+   0.67
+  ],
+  "o": [
+   "a",
+   23,
+   0.48
+  ],
+  "oo": [
+   "n",
+   135,
+   0.33
+  ],
+  "p": [
+   "i",
+   125,
+   0.46
+  ],
+  "s": [
+   "s",
+   174,
+   0.21
+  ],
+  "t": [
+   "u",
+   7,
+   0.86
+  ],
+  "to": [
+   "s",
+   12,
+   0.75
+  ],
+  "tz": [
+   "e",
+   225,
+   0.28
+  ],
+  "v": [
+   "e",
+   1,
+   1.0
+  ],
+  "x": [
+   "q",
+   122,
+   0.2
+  ],
+  "y": [
+   "e",
+   174,
+   0.22
+  ],
+  "z": [
+   "e",
+   108,
+   0.22
+  ],
+  "{box}": [
+   "e",
+   1,
+   1.0
+  ],
+  "{curl}": [
+   "f",
+   3,
+   1.0
+  ],
+  "{dash}": [
+   "p",
+   1,
+   1.0
+  ],
+  "{ff}": [
+   "z",
+   1,
+   1.0
+  ],
+  "{flourish}": [
+   "n",
+   1,
+   1.0
+  ],
+  "{omega}": [
+   "m",
+   1,
+   1.0
+  ],
+  "{scribble}": [
+   "d",
+   1,
+   1.0
+  ]
+ },
+ "decA_held": "pdueeesodsestsqaesnteenaisuonisoyeoeoitseespeteeueestesisnoeattoeqspsnasieteetsoeenaes.neqtsusaesuseqeaqsteenateaaeetesqusoeuenetsaeteesaeeaoeisusqateosaesoaeteeduueeteoaatseeoleseolesteseesieartsqaoinusueiusttoasseetsateosesenaseeetoteeilesseenaeesqeeeaeonqeontqusqaeeisaeteesteueeeeueeoleseolessastonattoesisaeieeaastetstaeesaeatopodseqpeeustotenis.aeteseeuonaoeestottoyeeeoieoeeaisastoeeapeouaeptoeodsooeesteeaeneeaonetstaesqeeetssqaeteesqoesiousoesoeesoeneeeuoaaitsteetsnsaeueonoaesqeairaoeqfseeqoiesiuaeiteesoenqstneeesusoestsponaaeoeenoeuusaettsteoeeesqoisieiousdsqsasnseadoteeieesaeaeotraaeeiestsoetueasusisuseeoleeitsteesdsqneeaenqpaeetetesteeessiaeeeeoiseiteeeoiuseesoespteeeeedsnsdeiiautuueasqeeaenssaeesoeseeontsusneqeteoeqonsneetseontqrsnasrsioeeadteolesosqeeoooeqaestseaolesdeeusaeoiseteestesaesirdtenisqeeestnudsqeeneaesuetotrrsirsrsisusoeeoeasaeesneeteeeesiesirtssoetsetsoeuasusaesnttsansseaesntesanoustoieeieesqueaensenpsnsae.adoiesoesertsaasdtpettoiuesrtsseeasueaetsnttsoeeoeastndsnsae.aisqsteueaeptroeodeestpteittsretuspne.ceeesopteeeeesnsosopeeraotsqroiesatstetoueoeaeepseeeeoipeesoreeeednsandsieesoeseeonteoiesitousenuoueeeeeoaeeeedsqspetuoitteieesqueaensaeaedsqstseucenusanoussisopeeraoasesrerneeeessatteieeouoesopstsoeeenoeueespseteeeeestoieduupeteesoserasntqeteeasenpsqsa.aesoeenoetseeoeasitsde.nousneeipoaeaisntsnsieeteeeeeseteeeeesoneeesfpsnaeustseeoieeetesteuteiisaeasoqesioenseepsqso.enaseeoiteeeoiousasqesnttoeseteesteeqeise.adtusoetustoesissetsuseeestoesieeonseesuseesaisistontsteeoeiesonesoqotesqustsuoioeteieesqensuueirestosneqoieuepstuseesosoeeedtqeanstaeeeoieeinstaeeesotsusaestpetaaeetoteeseespctstoeesatireonteoneosnateeqpeieniseseeoioeteeeeoienseepsqsoeesqqneeseeedueeqaeoiueastatescaeuonisantssopsteieesnoetoetsiesirtseanapeteeeeonesotoeqesisoeeeeeessnsiteieatstioeepotsisaesteesqeiieetsqf.itiaeste.adunteeepteieessoesonoeontqsoenueeissaeieeeteenseepsqsoeonsaaeeestesueeoeaasdueaesinsepenstuseesqaseesaeesd..",
+ "decB_held": ".q.tcceoqebeles.heurba.antdouneocboiondecce.brtircceuieneuoaldroisq.eu.entrbireoii..he.uisredelieretsilsertbuldbllbircesdeozdbutre.brtie.ba.ointdes.rioe.heo.brtiqdrhhuaollrecco.htho.heuietienb..res.o.udedbnderuo.eeztre.rioeaebu.ecibuortbn.ceetbu.ciesctiltousioursdes.bine.brcceub.hiccdcco.heho.heq.euouldroient.hnbi..erbler.bie.b.ro.oqets.icderortune..trieatdou.oittroudocbbionbozilne.eroit..bodlb.rozoqeoobierbc.huablouiler.hesccbrtes.brhhesoieno.eoieocceotuiccdollnrerbireue.irtouo.hesbanglois.eaisontendlbnditeobuseruiccedeozele.oul.bocbuoirde.brdelboiccesontnbnodeqeselq.eiaqortbncce.h.bougllibnttreohudbledentdecco.hbndercceqes.ic.hus.lbirbuierbcceen.hbccontinubtiondecceote.rbticcqe.e.t.t.drdrilestbliuee.cceoteccourtdeuistrcoisouq.btreioursdeulqgenotilquho.heoesccooois.herez.o.heqhbdeltonetrcceuie.tendquhunestcceludqesitub.hedilordgengegentdeoccoh.e.hheuhbrbictentendreeotretreobd.ede.heurue.ueet.heurbe.uodedonhbnccesdblcuebu.e.eli.lqonteotebdre..equ.brdondiegueeth.edb.bdeurdeoccoh.eduqe.eli.lneserbdblb.rgozoqcceu.rbndregbrde.ui..bcceo.rbticcq.eoeo.big.olesdonte.rerbrodboz.hb.etition.hheodicctque.uqencceoteccourtontenuodeburodccbtho.hiccqese.brdonrrbnccesdb.hue.h.bqeseleir.hude.uodeeneo.big.olettgbduicctee.rrbnccodoieo.ereoccbuoircce.qtrbiccterontqdr.brhheoeig.eurstucclebu.esel..heobbuoireccoaaendeqi.uode.bin.olb.neure.entbrbicctetrbiccttoutcce..eultderecconcciliertdrbnneetleosienobuecc.eseo.bulqcconditionodelesieurroaetuccerbisbnti.lqudeobrderoientetredeccteroienttoutccerqtie.nentuourerbiobnttouteosortesderedonotrbnccesbuq.dbngieroq.isontdc.erdecceoeotbtqusilueultccontinuerlbbheoredelier.brl.hbrorccecce..reroite.ungiourtoutoeulrbis.bntunehecconoilibtionbuecc.eseoccessubiecctqdbis.hondb.eu.rhe..bdoune.uleeo.erbncceuoaloirentendreb.ul.brtictouteoroisieneoccbacceq.enrinilrernoit.orenelierccesbnnbires..ndn.heri.lqduditt.rincceeottouoiourseotudibnte.bnccblbbuecc.eseotoute.hibertedbiob..eqdbltenuet.bueudecces.ecce.iteq.."
+}

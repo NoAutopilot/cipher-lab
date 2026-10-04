@@ -1,0 +1,31 @@
+code	meaning	grade	source	n_aligned	n_match	top_aligned	note
+s	a	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	201	131	a:131,o:11,e:10	col a row 1 "s"
+P	a	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	25	14	a:14,e:4,m:2	col a row 2 pi-sign; Tomokiyo col m row 1 has a similar "II": label P read as a (ambiguity noted)
+z	a	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	124	77	a:77,r:8,i:7	col a row 3 flat z
+S	b	M	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	160	20	a:43,b:20,e:20	col b long s; NOT top-aligned (top a:43,b:20,e:20): label likely merges glyphs or misread in the passes (S/s split, swash y, b); listed, not settled (rule 4)
+:	c	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	269	71	c:71,s:25,u:19	col c two dots
+A	c	M	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	5	2	c:2,p:1,a:1	col c row 5 capital A; NOT top-aligned (top c:2,p:1,a:1): label likely merges glyphs or misread in the passes (S/s split, swash y, b); listed, not settled (rule 4)
+h	d	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	24	11	d:11,l:2,m:2	col d row 1
+k	d	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	25	12	d:12,c:2,t:1	col d row 2
+3	d	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	102	43	d:43,m:13,l:6	col d row 3 round-topped 3 (row 4 is a 3/z-like sign with flourish, not separately labelled)
+m	e	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	795	645	e:645,i:20,a:19	col e row 1
+7	e	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	8	4	e:4,a:1,t:1	col e row 2
+4	g	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	36	8	g:8,s:5,a:3	col g row 3
+y	h	M	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	203	17	l:19,r:18,h:17	col h row 1; NOT top-aligned (top l:19,r:18,h:17): label likely merges glyphs or misread in the passes (S/s split, swash y, b); listed, not settled (rule 4)
+tz	i	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	379	256	i:256,r:21,u:16	col i row 1 "t3" join
+f	l	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	25	13	l:13,m:2,r:2	col l row 1
+6	l	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	85	45	l:45,m:6,t:6	col l row 2 (a circled 6 also stands in col p; label 6 read as l)
+j	l	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	48	30	l:30,u:3,r:3	col l row 5
+p	n	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	227	153	n:153,u:10,f:8	col n row 1
+n	t	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	8	4	t:4,f:1,i:1	col t row 2
+d	o	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	446	262	o:262,s:28,e:26	col o row 1 (round d / delta)
+to	q	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	27	10	q:10,n:4,e:2	col q row 1
+@	q	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	63	18	q:18,t:6,a:6	col q row 5 looped sign; Tomokiyo col z row 1 is a circled a: label @ read as q (ambiguity noted)
+g	r	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	271	167	r:167,s:12,u:11	col r row 1
+L	r	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	28	12	r:12,e:5,t:3	col r row 2
+x	s	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	187	118	s:118,o:9,n:7	col s row 1
+#	t	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	304	201	t:201,e:15,a:14	col t row 1
+R	t	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	52	36	t:36,c:4,r:3	col t row 3 "rt"-like sign
+oo	u	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	255	172	u:172,i:10,r:9	col u row 1 "oo" (passes write o o; collapsed to oo before decoding, PREREG)
+a	u	C	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	92	64	u:64,s:5,a:4	col u row 2
+b	z	M	published key (Tomokiyo, henryiii_Vivonne1.png); support: clerk decipherment fr.16105 ff.105v-108v	13	0	s:4,r:3,e:1	col z row 2; NOT top-aligned (top s:4,r:3,e:1): label likely merges glyphs or misread in the passes (S/s split, swash y, b); listed, not settled (rule 4)

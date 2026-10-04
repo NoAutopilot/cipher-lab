@@ -190,3 +190,94 @@ Read so far: 26 of at least 28 flagged cipher letters (about 93%) carry a period
 - [x] image-check: canvases 95-101 viewed at 1200 px; f.104r at native resolution with contrast stretch (illegible) (N4-VIV3)
 - [ ] retry: ink 38's first leaf (canvas 94 or earlier) not yet viewed to see the "38" itself; one 1200 px request
 Verdict: keep going: 3 internal gaps; cheapest next: Tomokiyo key PNGs to key.tsv + f.95v cipher page decoded against f.108v's read paragraph with a shuffled-key control, ~$8
+
+## N5-VIVK (4 Oct 2026, LANE-NEAR5 worker, account 2): known-plaintext test of the 4 June 1573 cipher letter (ink 40) against its clerk decipherment (ink 41)
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near5-wave1.md "N5-VIVK". Intake gate rc=0 (pasted by LANE-NEAR5). PREREG-N5VIVK.md pushed
+(4410086c) before any decode of f.103r existed; amendment 1 (a52d5574, plaintext widened to f.105v on training-side evidence) also before.
+
+**Key on disk.** Tomokiyo's key images fetched once from cryptiana.web.fc2.com/code/ into sources/cryptiana/web/ (unmodified:
+henryiii_Vivonne1.png = the April 1572 - Nov 1574 Saint-Gouard cipher; Vivonne2-6 = later ciphers, VivonneSig = a signature, kept for
+completeness). key_tomokiyo.tsv = Vivonne1's alphabet mapped by eye onto the transcription labels of tx/SIGNS.md (30 codes; a few of
+Tomokiyo's homophones and nulls have no separate label). Key source: `published` (S. Tomokiyo, Cryptiana, henryiii.htm "Vivonne in Spain").
+
+**Crops** (pasted per CLAUDE.md Usage 6; debug overlays checked, red centres on the lines; a first 2400 px-segment cut was discarded
+because its two segments overlapped by ~1750 px):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 105 --region 4820,380,2950,4850 --out ciphers/fr16104-vivonne-spain-1572/images --prefix c105_f102r --follow-slope 400 --distance 60 --max-width 1600 --overlap 150 --debug
+  region 2950x4850, 37 lines, 37 bands x 2 segments; pitch 112 distance 60 prominence 186.2; wrote 74 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 106 --region 1200,520,2980,4500 --out ciphers/fr16104-vivonne-spain-1572/images --prefix c106_f102v --follow-slope 400 --distance 60 --max-width 1600 --overlap 150 --debug
+  region 2980x4500, 37 lines, 37 bands x 2 segments; pitch 111 distance 60 prominence 192.3; wrote 74 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 106 --region 4950,300,3050,4700 --out ciphers/fr16104-vivonne-spain-1572/images --prefix c106_f103r --follow-slope 400 --distance 60 --max-width 1600 --overlap 150 --debug
+  region 3050x4700, 40 lines, 40 bands x 2 segments; pitch 104 distance 60 prominence 205.5; wrote 80 crops (L38-L40 = plain subscription "Je baise ...", excluded)
+```
+Slope-tracked bands produced duplicate lines (readers marked DUP: f.102r L14; f.102v L31, L33, L37; f.103r L27) -- so up to five real
+lines may be missing from the transcription (not re-cut; see gaps). Decipherment pages ff.105v-108v (canvas 109 left - 112 left): line
+detection missed lines on the widely spaced hand and would have pushed images/ past 30 MB, so they were read from scratch strips
+(native region fetch, 7-8 horizontal strips cut at ink minima, each in two halves with 400 px shared), not committed; regenerate with
+the regions L=700,150,3600,5650 / R=4200,150,3950,5650 at native size.
+
+**Cipher transcription** (two blind Sonnet passes per page, `tools/reconcile_passes.py`, then tx/reconcile_vivk.py: six label rules
+settled by eye on f.102r/f.102v crops -- S/s -> s, c/: -> :, 4/{t} -> 4, y/V -> y, z/r -> z, x/r -> x -- all other splits left at pass A):
+| page | signs (reconciled) | err_2reader (DUP lines excluded) | splits settled by rule | splits left at pass A | one-pass gaps |
+|---|---|---|---|---|---|
+| f.102r | 1849 | 0.083 | 26 | 66 | 61 |
+| f.102v | 1862 | 0.226 | 125 | 121 | 175 |
+| f.103r | 2034 | 0.101 | 2 | 105 | 98 |
+err_2reader is two-reader disagreement, not err_true (no benchmark item for this hand). f.102v's high figure is mostly one reader
+writing S for the short s throughout; after the label rule the residual is about 0.16.
+
+**Plaintext** (two blind Sonnet passes per page, merged by tx/merge_dec.py: A/B word agreement 0.66-0.71 per page -- the clerk's hand is
+hard; normalized per PREREG to tx/dec_norm.txt, 9,554 letters, ff.105v-108v). Not an edition-quality reading: about a third of the words
+differ between the two passes.
+
+**Result (tx/vivk_test.py, PREREG statistic, 200 draws per null, rng 20261004; tx/vivk_result.json):**
+anchor j0 = 1265 (score 0.463; f.102r begins about 92% of the way down f.105v); training 3,524 codes; held-out f.103r 1,945 codes; H = 4,781 letters.
+| arm | real | coverage of f.103r codes | shuffled-key null median / p95 | shuffled-order null median / p95 | verdict |
+|---|---|---|---|---|---|
+| A: stream_align from flat start on f.102r+f.102v, key frozen | 0.434 | 0.993 | 0.376 / 0.428 | 0.427 / 0.448 | FAIL |
+| B: Tomokiyo's published key, no training | 0.545 | 0.910 | 0.288 / 0.340 | 0.348 / 0.362 | PASS |
+No null median near ceiling (all < 0.43), so neither arm is void. Arm A's frozen key agrees with Tomokiyo's on 2 of 30 codes with >= 3
+training occurrences (list in vivk_result.json): the learner did not lock on, so its "disagreements" are not data conflicts. A post-hoc
+diagnostic (tx/vivk_diag_slope.py, NOT pre-registered, no gate) restarted it at the observed 1.52 letters per sign instead of 1.0: 0 of 30
+agree. Arm A is logged as **untested-by-this-tool** (tools/stream_align.py, flat start, on a noisy two-sided transcription with ~1.5 plaintext
+letters per cipher sign), not as evidence against the key.
+By eye (interpretation, not a gate): Arm B's held-out decode of the last lines of f.103r reads "... ung iour tout seul faisant une reconciliation
+avecques ses subiectz mais l'on ... nulle esperance voulloir entendre a nul partie ... le filz dudict prince est tousiours estudiant en Alcala
+avecques toute liberte ... de ses necessitez", which is the decipherment's closing paragraph on f.108v (N4-VIV2). So the cipher block ends where
+the decipherment ends, and the decipherment is the plaintext of ff.100-103r (no longer only grade I).
+
+**key.tsv** (tx/key_support.py, reproducible): Tomokiyo's 30 values; each code's support = how often the decipherment letter aligned to it (whole
+stream f.102r-103r against dec_norm[j0:], same DP as nw_score) equals the value. 4,487 keyed signs aligned, 2,616 match (0.583, a floor: both
+transcriptions are noisy). 26 codes graded C (the key value is the top aligned letter, >= 3 matches), 4 graded M and listed, not settled (rule 4):
+S=b (top aligned a: one pass wrote S for the short s), y=h (aligned l/r/h about evenly: the y label likely merges the swash lead-in glyph with y),
+b=z (0 of 13) and A=c (2 of 5, top aligned c tied with p and a -- too few to grade). Codes outside the key: V 147, c 86, 2 55, o 54 (others under 15) -- labels the readers used for glyphs
+Tomokiyo's table names differently or for nulls; not mapped.
+Grade counts for the held-out page under Arm B (published key, checked against the decipherment): no H; C-supported values cover 0.91 of f.103r's codes;
+this is a check of the published key against the period decipherment, not a reading of an unread text.
+
+Not done (brief step 5: stop here): applying key.tsv to fr.16104 ff.157-159v (wave 2); ink 38 (ff.92r-95v) not touched.
+Requests: gallica.bnf.fr about 27 (2 x 1600 px openings c105/c106, 4 x c109-c112, 1 info.json, 15 native regions incl. re-fetches after the
+tool downscaled its cached sources, 1 connection reset on c112 not retried until later), all >= 2 s apart; cryptiana.web.fc2.com 7 (1.6 s apart).
+Subagent calls: 20 Sonnet (6 cipher passes, 14 decipherment passes). Cost: see the lane ledger.
+
+## Remaining gaps (N5-VIVK refresh, 4 Oct 2026)
+Read so far: 26 of at least 28 flagged cipher letters carry a period decipherment per Gachard; ink 40 (ff.100-103r) is now checked against its
+decipherment ink 41 with Tomokiyo's published key (held-out PASS, N5-VIVK); ink 38 (ff.92r-95v) is its twin copy; fr.16104 ff.157-159v (5 Sept 1572)
+has no decipherment located; unflagged cipher letters unmeasured.
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) - blocker: not-attempted; key.tsv now checked on ink 40 (N5-VIVK); next: crops + two blind passes per page against tx/SIGNS.md (fix the S/s and y labels first), decode with tools/decode_key.py or tx/key_support.py's decode, judge fr16, ~$12
+- Transcription labels S, y, b, V, c, 2 - blocker: not-attempted; the four M codes and the unmapped labels come from the passes' inventory, not the key; next: one look-alike pass (tools/lookalike_pass.py) on f.102v/f.103r crops for those labels, then re-run tx/key_support.py, ~$3
+- Missing duplicate-band lines (up to 5 lines, the DUP rows) - blocker: not-attempted; the slope-tracked bands fitted the same line twice; next: re-cut those bands with --centres from the debug overlays, one pass each, ~$2
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Unflagged cipher letters and letters lacking a clerk's leaf - blocker: not-attempted; Gachard's flags cover only the letters he analysed; next: one 1200 px pass over fr.16104/16105 with a per-letter table, ~$3
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N5-VIVK)
+- [x] siblings: ink 38 located (N4-VIV3); ink 40 vs ink 41 aligned (N5-VIVK); fr.16106 f.207+ Longlée pool is scout row P2-B
+- [x] clear-pages: decipherment ff.104-108v is the plaintext of ff.100-103r (N5-VIVK: f.103r's last lines read as f.108v's last paragraph under the published key)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk (key_tomokiyo.tsv, key.tsv) and held-out PASS against the period decipherment (N5-VIVK, 0.545 vs null p95 0.362)
+- [x] print: Gachard II, d'Ars, Catherine IV-V, Groen IV read (see top)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes; slope diagnostic 0 of 30); a published key exists
+- [x] image-check: canvases 95-101, 105-106, 109-112 viewed; f.104r illegible (N4-VIV3)
+- [ ] retry: fr.16104 ff.157-159v with key.tsv (wave 2 of LANE-NEAR5)
+Verdict: keep going: 4 internal gaps; cheapest next: fr.16104 ff.157-159v transcribed against tx/SIGNS.md and decoded with key.tsv, ~$12
+
+Gate output (N5-VIVK, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 4 internal gap(s), 1 step(s) untried`
