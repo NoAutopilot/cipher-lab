@@ -3104,6 +3104,24 @@
       "grade": "N3 (two audits), key period. 846 tokens: H 152, S 304, M 16, U 374; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846.",
       "line": "Using a period key sheet in the British Library (Add MS 32276 f.44, DECODE R4369), values assigned to 456 of 846 code groups of Hellen's 4 Jan 1752 despatch; no printed plaintext or period decipherment located in the searched editions; the Berlin file GStA PK I. HA Rep. 96 Nr. 38 G-H was not read.",
       "text": "unknown"
+    },
+    {
+      "date": "4 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N4",
+      "claim_scope": "recovered passages (fragments)",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/birago-fr3252-1571-72",
+      "fields_source": "birago-fr3252-1571-72/AUDIT.md: AUDIT 2 (A3V-VB3252, N3) and AUDIT 3 (A3V-V2BIR, N4, claim scope); rule-7 RD7-2026-10-04-f117.md SAME",
+      "document_id": "BnF fr.3252 f.117r (no.77): Lodovico Birago to the duc de Nevers, 13 March 1572",
+      "title": "Birago to Nevers, 13 Mar 1572 (BnF fr.3252 f.117r): French fragments read under Tomokiyo's published 1572 Nevers-Birago key",
+      "grade": "N4 (two audits), key published (S. Tomokiyo, credited). 279 signs: S 190, M 63, U 26 (S only where two blind instruments agree); judge FAIL; rule-7 279/279.",
+      "line": "Under Satoshi Tomokiyo's published 1572 Nevers-Birago key, about two thirds of the 279 cipher signs of Birago's letter of 13 March 1572 (BnF fr.3252 f.117r) read at grade S, giving French fragments ('intention de convenir', 'poursuivre le gouvernement', 'favoriser ces affaires'); the text still fails a language judge. No prior decipherment located.",
+      "text": "unknown"
     }
   ],
   "lanes": [
