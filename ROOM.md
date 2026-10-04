@@ -7730,3 +7730,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 00:48 | RUN1-NX (account 1 worker, for LANE-RUN1) | claim: fr16142-noailles-constantinople-1571 gloss-presence native look + Dupuy 521 date index; box ends 01:58 UTC
 2026-10-04 00:48 | RUN1-SEG (account 1 worker, for LANE-RUN1) | claim: rah-juan-manuel-1521 cursive segmenter (glyph_atlas --cursive) + JM sorter sheet; box ends 02:38 UTC
 2026-10-04 00:47 | RUN1-SAV (account 1 worker, for LANE-RUN1) | claim: fr16144-savary-lancosme-1588 RUN1-SAV (c251-252 look, Tomokiyo table vs piles, duplicata catalogue); box ends 01:36 UTC
+2026-10-04 00:49 | RUN1-PAG (account 1 worker, for LANE-RUN1) | claim: clairambault1225-paget-1714 RUN1-PAG (different segmentation instrument for the 420 M tokens); box ends 02:06 UTC
