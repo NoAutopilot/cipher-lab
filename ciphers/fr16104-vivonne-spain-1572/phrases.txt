@@ -1,0 +1,7 @@
+# N5-VIV54: decoded phrases from ink 54 (fr.16104 f.173r-v, 7 Sept 1572), worker's word division of the key.tsv decode
+toute diligence de faire
+tousiours ont doubte
+partisan contre
+de munition
+dict avoir
+saint gouard septembre 1572 chiffre

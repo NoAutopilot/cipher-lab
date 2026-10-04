@@ -449,3 +449,72 @@ $ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 188 --region 1250,750
 **Units, stated before the first subagent call:** 2 pages x (2 blind Sonnet passes + 1 reconciliation) = 6 units at ~USD 1.5 (N5-VIVK rate),
 + 1 gloss look at native resolution by this worker = ~USD 10.5 of the 12 cap; reconciliation is tx/reconcile_vivk.py's label rules plus
 this worker's eye on listed splits only.
+
+**Transcription** (4 blind Sonnet calls, one per page per pass, crop paths only; tx/viv54_clean.py drops [PLAIN:] stretches and writes pass
+A's π as P; `tools/reconcile_passes.py` on the _c passes; tx/reconcile_vivk.py f173r f173v --viv54 = N5-VIVK's rules + one rule settled by
+eye on f.173r L05 s1-s2: ':' vs 'o' for the small solid dots -> ':'; N5-VIVK's f102r/f102v/f103r outputs regenerate unchanged):
+| page | lines | signs (reconciled) | err_2reader | splits settled by rule | splits left at pass A | one-pass gaps |
+|---|---|---|---|---|---|---|
+| f.173r | 24 cipher-bearing (L04-L27) | 1118 | 0.223 | 50 | 89 | 112 |
+| f.173v | 20 | 934 | 0.193 (0.150 without L19-L20, which pass B could not read) | 4 | 74 | 102 |
+f.173r L02/L03 crops are near-identical (mean pixel difference 5.5; no other neighbouring pair under 8): both are the plain "Monsieur ..."
+line, so the plain "Sire, j'ay receu ..." line has no crop of its own -- no cipher lost. err_2reader is reader disagreement, not err_true.
+
+**Interlinear words** (read by this worker at native resolution BEFORE any decode, 14 native strips; tx/glosses54.tsv): f.173r "n e le ..." and
+"napaud?" over L07, "au faict" over L08's first group, "en ainsi" over L18; f.173v "nostre royau..?" over L08, "il ... peult/vault" over L11,
+"peup" over L17, "e partisan contre" over L19. Four further marks are cipher signs written above the line with a caret ("Km", "^p", f.173r
+L19/L23/L24): corrections of the cipher, not glosses. Several others are illegible (rows use=no).
+
+**Gates (PREREG-N5VIV54.md, pushed d0c73a87 before any decode; tx/viv54_test.py, seed 20260958, 200 draws; tx/viv54_result.json):**
+| gate | target (ink 54 under key.tsv) | control / null | verdict |
+|---|---|---|---|
+| (a) gloss check, mean LCS(gloss, decode window)/len | **0.609** (per gloss 1.00, 0.50, 0.71, 0.57, 0.27, 0.71, 0.50, 0.60) | shuffled-key null median 0.271, p95 0.354 | **PASS** (> p95 and >= 0.60; null not near ceiling) |
+| (b) fr16 judge, 4-gram score per letter | -1.658 (N 1793; word cover 0.795) | positive control f.103r under key.tsv: -1.714, **FAILs** the judge (real_p05 -0.927); shuffled-key decodes median -2.120, p99 -1.767, 0/200 PASS | **judge not a gate** (rule 1 of the PREREG) |
+Caveats on (a), stated plainly: the PREREG text says "7 rows" but the frozen tx/glosses54.tsv carries 8 use=yes rows; the statistic ran on the
+8 frozen rows as the PREREG's procedure says. The margin over the null is wide (0.609 vs p95 0.354), the 0.60 floor is met by 0.009 only:
+dropping the best gloss ("nele", 1.00) gives 0.553 (descriptive, not a gate). (b): the judge cannot tell the known-good f.103r decode (same
+hand, key, length) from real text at this transcription noise, so its FAIL on ink 54 says nothing; descriptively ink 54 scores above the f.103r
+control and above every shuffled-key decode.
+
+**Reading** (tx/viv54_decode.py writes reading_piece54.tsv, `--check` passes; piece54_decode.txt = letters only). 1,990 tokens: **H 1,475**
+(both readers agree or a label rule settled it, code graded C in key.tsv), **M 318** (an M code S/y/b/A, or an unsettled split / one-pass gap),
+**U 197** (code not in key.tsv: V, c, 2, o ...); no C, no S. H here = read with a published key (Tomokiyo) whose values the clerk decipherment
+checked on ink 40 (N5-VIVK), not a period decipherment of this letter. Stretches that read as French by eye (interpretation, not a gate):
+f.173r L09 "...dangier...", L19 "...el grand...", L21 "toute [d]iligence de [f]aire ... toute", L22 "...[m]unition...", L25 "...[l]iberation...",
+L26 "c'est au..."; f.173v L03 "tousiours ont doubte que c'este...", L05 "grand ... est ... dict avoir", L19 "...contre..." directly under the
+gloss "partisan contre". The ': :' dot pair seems to stand for one c (decode "dicct", "ccest"): two readers wrote each dot as a sign, so the
+decode doubles c; not corrected (would be a change to the key's labels, a later job). Most lines are still letter salad between such stretches.
+
+**print_check** (phrases.txt, sources.tsv: Gachard II, Catherine IV, d'Ars, Groen IV; print-check.tsv): the listed sources hit only generic
+words ("dict avoir", "munition du roi") in unrelated passages; the global searches return hundreds of generic hits for each common phrase. One
+Google Books hit worth a look: Kervyn de Lettenhove, *Les Huguenots et les Gueux 1572-1576* (1884), for "saint gouard septembre 1572 chiffre"
+-- not opened. Report: no printed plaintext of ink 54 found in the sources named; not found by this method on 4 Oct 2026. Novelty not classified.
+
+Requests: gallica.bnf.fr 21 (c187, c188 at 1600 px; c189, c190 at 1000 px; 2 native regions by iiif_lines; 1 info.json; 14 native gloss
+strips + 3 re-fetches wider), one at a time >= 2 s apart; archive.org 1 (Gachard II djvu) + print_check's archive.org 2, be-api 6,
+googleapis 6, openalex 6, semanticscholar 6, crossref 6. Subagent calls: 4 Sonnet. Cost: see the lane ledger.
+
+## Remaining gaps (N5-VIV54 refresh, 4 Oct 2026)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 (7 Sept 1572) read with key.tsv, gloss
+check PASS (0.609 vs null p95 0.354), judge not a gate, H 1,475 / M 318 / U 197 of 1,990 tokens, much of it still unreadable letter strings.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53 (and 38, whose twin is deciphered).
+- ink 54 clean reading - blocker: not-attempted; err_2reader 0.19-0.22 and the ': :' pair read as two signs leave long unreadable stretches; next: a third pass / tools/lookalike_pass.py on the split signs of f.173r-v, the ': :' pair as one sign, re-decode, ~$4
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise; next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- Kervyn de Lettenhove, Les Huguenots et les Gueux (1884) - blocker: not-attempted; Google Books hit for Saint-Gouard Sept 1572; next: find the IA copy and grep for "7 septembre" / "Saint-Gouard", ~$1
+- fr.16105 ink 63 (10 Oct 1573) cipher block ff.190r-194r - blocker: not-attempted; no decipherment in the volume (N5-VIVTAB); next: crops + two blind passes per page against tx/SIGNS.md, decode with key.tsv, ~$15-20
+- fr.16104 inks 52, 53 (5 Sept 1572) - blocker: not-attempted; no decipherment beside them (N5-VIVTAB); next: look at c179/c181/c185, then read 53 (~100 lines) with key.tsv, ~$8
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N5-VIV54)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; ink 54's own interlinear words used as a gloss check (N5-VIV54)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to ink 54, gloss check PASS (N5-VIV54)
+- [x] print: Gachard II, d'Ars, Catherine IV-V, Groen IV read; print_check on ink 54 phrases (N5-VIV54)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; f.173r-v at native resolution (N5-VIV54)
+- [ ] retry: ink 54 re-transcribed (lookalike pass, ': :' as one sign) and re-decoded; fr.16105 ink 63 read with key.tsv
+Verdict: keep going: 7 internal gaps; cheapest next: Kervyn (1884) grep, ~$1, then a lookalike pass on ink 54, ~$4
+
+Gate output (N5-VIV54, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 7 internal gap(s), 1 step(s) untried`; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date
