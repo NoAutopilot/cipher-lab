@@ -50,11 +50,21 @@ Steps:
      follows that fit end to end (band height unchanged, plus --slope-margin px above and below). The fit (a, b, peaks
      kept) goes into each manifest entry. --slope-local refits each segment to the peaks within one window of it, for a
      line that curves (f.81r L03: flat for the first segment, then descending). Off by default: without it the cut is exactly as before.
+  --views N|LIST [--views-of CROP ...] (TX-VIEWS, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1, #10, #14):
+     write altered views of every crop for multi-view voting, OUT/views/<view>/<crop name>, one manifest entry each under
+     "iiif_lines_views". N takes the first N of the default order pad,s125,warp,s080,contrast; LIST names them. pad = the
+     content shifted inside a background-coloured margin (left 8%, top 20%, right 2%, bottom 5% of the crop); s080 / s125 =
+     LANCZOS rescale 0.8 / 1.25 (capped under 2500 px wide); warp = a small smooth elastic warp (random displacement on a
+     coarse grid, about one control point per 90 px, amplitude 2.5 px, bilinearly upsampled; seeded from the crop name, so a
+     re-run is byte-identical); contrast = a 1st-99th percentile luminance stretch. The pixels are the same information in
+     every view: these are presentations for independent blind reads whose errors are less correlated, never enhancement
+     claims. --views-of takes existing crop files (no fetch, no line detection) -- the usual way to add views to crops a
+     target already has. Vote the reads with tools/reconcile_passes.py --vote [--err-truth].
 
-Test: python3 tools/tests/test_iiif_lines.py (offline: a synthetic page with a known line count and pitch, and the
+Test: python3 tools/tests/test_iiif_lines.py (views: tools/tests/test_iiif_views.py) (offline: a synthetic page with a known line count and pitch, and the
 committed native image of fr.20140 f.36r, whose box 1300,1770,3400,210 holds one cipher line).
 """
-import argparse, json, os, re, sys, time, urllib.error, urllib.request
+import argparse, json, os, re, sys, time, urllib.error, urllib.request, zlib
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -272,6 +282,100 @@ def update_manifest(out, entries, downscaled=()):
     json.dump(man, open(path, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     return path
 
+VIEW_ORDER = ('pad', 's125', 'warp', 's080', 'contrast')
+
+
+def _background(arr):
+    edge = np.concatenate([arr[0].reshape(-1, arr.shape[-1]), arr[-1].reshape(-1, arr.shape[-1]),
+                           arr[:, 0].reshape(-1, arr.shape[-1]), arr[:, -1].reshape(-1, arr.shape[-1])])
+    return tuple(int(v) for v in np.median(edge, axis=0))
+
+
+def _bilinear(arr, yy, xx):
+    h, w = arr.shape[:2]
+    xx = np.clip(xx, 0, w - 1.001); yy = np.clip(yy, 0, h - 1.001)
+    x0 = np.floor(xx).astype(int); y0 = np.floor(yy).astype(int)
+    fx = (xx - x0)[..., None]; fy = (yy - y0)[..., None]
+    a = arr.astype(np.float32)
+    top = a[y0, x0] * (1 - fx) + a[y0, x0 + 1] * fx
+    bot = a[y0 + 1, x0] * (1 - fx) + a[y0 + 1, x0 + 1] * fx
+    return np.clip(top * (1 - fy) + bot * fy + 0.5, 0, 255).astype(np.uint8)
+
+
+def make_view(img, view, seed=0):
+    """One altered view of a crop (PIL RGB in, PIL RGB out); see --views in the module docstring."""
+    img = img.convert('RGB')
+    w, h = img.size
+    if view == 'pad':
+        l, t, r, b = int(0.08 * w), int(0.20 * h), int(0.02 * w), int(0.05 * h)
+        out = Image.new('RGB', (w + l + r, h + t + b), _background(np.asarray(img)))
+        out.paste(img, (l, t))
+        return out
+    if view in ('s080', 's125'):
+        f = 0.8 if view == 's080' else 1.25
+        nw_ = min(int(round(w * f)), 2499)
+        f = nw_ / w
+        return img.resize((nw_, max(1, int(round(h * f)))), Image.LANCZOS)
+    if view == 'warp':
+        rng = np.random.default_rng(seed)
+        gx, gy = max(2, w // 90 + 1), max(2, h // 90 + 1)
+        fields = []
+        for _ in range(2):
+            g = rng.normal(0, 2.5, (gy, gx)).astype(np.float32)
+            fields.append(np.asarray(Image.fromarray(g, mode='F').resize((w, h), Image.BILINEAR)))
+        yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+        return Image.fromarray(_bilinear(np.asarray(img), yy + fields[1], xx + fields[0]))
+    if view == 'contrast':
+        a = np.asarray(img).astype(np.float32)
+        lum = a.mean(axis=2)
+        lo, hi = np.percentile(lum, 1), np.percentile(lum, 99)
+        if hi - lo < 1:
+            return img.copy()
+        return Image.fromarray(np.clip((a - lo) * 255.0 / (hi - lo), 0, 255).astype(np.uint8))
+    raise ValueError(f'unknown view {view!r} (known: {", ".join(VIEW_ORDER)})')
+
+
+def parse_views(spec):
+    if spec is None:
+        return []
+    if spec.isdigit():
+        n = int(spec)
+        if not 1 <= n <= len(VIEW_ORDER):
+            raise ValueError(f'--views N must be 1..{len(VIEW_ORDER)}')
+        return list(VIEW_ORDER[:n])
+    vs = [v.strip() for v in spec.split(',') if v.strip()]
+    for v in vs:
+        if v not in VIEW_ORDER:
+            raise ValueError(f'unknown view {v!r} (known: {", ".join(VIEW_ORDER)})')
+    return vs
+
+
+def write_views(crop_paths, views, out, quality=85):
+    """Write OUT/views/<view>/<name> for every crop and view; returns manifest entries."""
+    entries, date = [], time.strftime('%d %b %Y', time.gmtime())
+    for p in crop_paths:
+        name = os.path.basename(p)
+        im = Image.open(p)
+        for v in views:
+            d = os.path.join(out, 'views', v)
+            os.makedirs(d, exist_ok=True)
+            vi = make_view(im, v, seed=zlib.crc32(name.encode()))
+            vi.save(os.path.join(d, name), quality=quality)
+            entries.append(dict(crop=f'views/{v}/{name}', view=v, from_crop=os.path.relpath(p, out), size=list(vi.size),
+                                method=f'tools/iiif_lines.py --views {v}', date=date))
+    return entries
+
+
+def update_views_manifest(out, entries):
+    path = os.path.join(out, 'manifest.json')
+    man = json.load(open(path, encoding='utf-8')) if os.path.exists(path) else {}
+    if isinstance(man, list):
+        man = {'entries': man}
+    cur = [e for e in man.get('iiif_lines_views', []) if e['crop'] not in {x['crop'] for x in entries}]
+    man['iiif_lines_views'] = cur + entries
+    json.dump(man, open(path, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    return path
+
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -309,7 +413,23 @@ def main(argv=None):
     ap.add_argument('--centres', help='comma list of line centres (region y px) given by eye, skipping detection: for a '
                                       'short block whose ink profile the autocorrelation misreads (GAPS4-nevers-birago, 2 Oct 2026: '
                                       'three tall cipher lines under a prose tail read as pitch 100 and five lines)')
+    ap.add_argument('--views', help='N or a comma list of pad,s125,warp,s080,contrast: also write altered views of '
+                                    'every crop to OUT/views/<view>/ for multi-view voting (TX-VIEWS)')
+    ap.add_argument('--views-of', nargs='+', metavar='CROP',
+                    help='with --views: make views of these existing crop files only (no fetch, no line detection)')
     a = ap.parse_args(argv)
+    try:
+        views = parse_views(a.views)
+    except ValueError as e:
+        ap.error(str(e))
+    if a.views_of:
+        if not views:
+            ap.error('--views-of needs --views')
+        os.makedirs(a.out, exist_ok=True)
+        ve = write_views(a.views_of, views, a.out, a.quality)
+        mp = update_views_manifest(a.out, ve)
+        print(f'  wrote {len(ve)} views ({",".join(views)}) of {len(a.views_of)} crops under {a.out}/views and {mp}')
+        return dict(views=ve)
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
     os.makedirs(a.out, exist_ok=True)
@@ -439,6 +559,10 @@ def main(argv=None):
             print('  WARNING: folder still over 30 MB; keep the manifest and a sample, note where the rest re-fetches')
     mp = update_manifest(a.out, entries, set(shrunk))
     print(f'  wrote {len(entries)} crops and {mp}')
+    if views:
+        ve = write_views([os.path.join(a.out, e['crop']) for e in entries], views, a.out, a.quality)
+        update_views_manifest(a.out, ve)
+        print(f'  wrote {len(ve)} views ({",".join(views)}) under {a.out}/views')
     return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits)
 
 
