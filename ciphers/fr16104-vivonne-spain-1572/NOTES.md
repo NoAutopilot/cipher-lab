@@ -615,7 +615,7 @@ Images: crops and source regions kept out of git (images/p53/.gitignore); manife
 crop commands above.
 
 ## N6-VIV63 (4 Oct 2026, LANE-NEAR6 worker, account 2): fr.16105 ink 63 (10 Oct 1573, to the King, ff.190r-194r) read with key.tsv
-Brief: .claude/briefs/runs/2026-10-04-ytbiz-near6-wave1.md "N6-VIV63". Started 10:15 UTC, box to 14:14 UTC. Section in progress.
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near6-wave1.md "N6-VIV63". Started 10:15 UTC, box to 14:14 UTC.
 
 **Step 0, premise (10:17 UTC).** Gachard II (labibliothquen02gachuoft djvu.txt, on disk) LXIII, "Au roi. Madrid, 10 octobre 1573 (En partie
 chiffrée, sans le déchiffrement)", pp.435-436: his summary covers only the plain part (audience of 22 Sept, passport for the King of Poland,
@@ -651,6 +651,63 @@ $ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 197 --region 1250,520
 done; ff.192r-194r (4.5 pages) go to Remaining gaps with their cost. Reconciliation = tools/reconcile_passes.py + tx/reconcile_vivk.py's label
 rules (+ RULES54) + this worker's eye on listed splits only.
 
+**Transcription** (8 blind Sonnet calls, one per page per pass, crop paths only, prompt: SIGNS.md + the page's crops, overlap signs once,
+DUP/[PLAIN:] marks; tx/viv63_clean.py; `tools/reconcile_passes.py` on the _c passes; tx/viv63_decode.py applies tx/reconcile_vivk.py's RULES +
+RULES54 + five rules settled by this worker's eye on crops BEFORE any decode, listed in its header: 3/z -> 3 (f.191r L01 s1 pos 6, 26: the sign
+with a descender is SIGNS.md's 3, the flat z sits on the line), P/p -> p (f.191r L04 s1 pos 10, 14: p with a crossed descender), and R/r, R/n,
+n/r -> R/n (f.190v L01 s1 pos 15, f.191v L05 s1 pos 5: the "rt"-like sign; key.tsv reads R and n both as t, so no decoded letter changes).
+Not settled: r/z (f.190r L05 s1 pos 12 is a small r-rotunda, not the flat z), 2/z, c/e, h/k. Both readers wrote the plain "Il non" on f.190v L01
+and L17 as four signs ("H n o n"); the clean step removes it (crop checked: ordinary script), as on f.190r L02 and f.191v L09/L22 where they
+marked it plain. f.190r L01 and the head of L02 are plain (the readers' [PLAIN:...] reads only; not transcribed here).
+| page | bands (cipher) | signs A / B | err_2reader | splits settled by rule | splits left at pass A | one-pass gaps |
+|---|---|---|---|---|---|---|
+| f.190r | 35 (34) | 1683 / 1692 | 0.134 | 54 | 106 | 71 |
+| f.190v | 34 (33; L10 DUP in both) | 1711 / 1713 | 0.211 | 194 | 111 | 62 |
+| f.191r | 36 (36) | 1816 / 1828 | 0.156 | 99 | 101 | 92 |
+| f.191v | 35 (35) | 1823 / 1839 | 0.102 | 56 | 78 | 56 |
+err_2reader = 1 - two-reader agreement from tools/reconcile_passes.py; reader disagreement, not err_true (no benchmark item for this hand).
+
+**Gates (PREREG-N6VIV63.md, pushed cb382868 before any decode; tx/viv63_test.py, seed 20260967, 200 draws each; tx/viv63_result.json):**
+s = mean log10 4-gram probability per letter (fr16 NgramModel), RELATIVE to nulls of the same decode.
+| arm | C1 f.103r (1,770 letters) | C2 ink 54 (1,793) | target ink 63 ff.190r-191v (6,220) | verdict |
+|---|---|---|---|---|
+| b1 vs shuffled-key null p99 | -1.715 vs **-1.674: FAILs** | -1.658 vs -1.824 pass | -1.514 vs -1.792 | **not a gate** (rule 1: positive control C1 fails) |
+| b2 vs letter-order-shuffle null p99 | -1.715 vs -1.909 pass | -1.658 vs -1.829 pass | **-1.514 vs -1.824** | **PASS** (both controls pass with headroom; null medians -1.962 / -1.878 / -1.856) |
+Per page (descriptive, each about the controls' length): b2 f.190r -1.489 vs -1.730, f.190v -1.638 vs -1.856, f.191r -1.441 vs -1.797, f.191v
+-1.490 vs -1.820: every page passes alone; b1 every page passes too. Word cover 0.814 (C1 0.709, C2 0.795). The target scores above both
+controls, consistent with its lower reader disagreement.
+Post-hoc diagnostic, NOT pre-registered, no gate (tx/viv63_diag_wrongkey.py, tx/viv63_diag_wrongkey.json): 50 wrong (shuffled) keys run through
+b2 exactly as the target: 5 of 50 pass b2, margin median -0.029, max +0.061; the real key's margin is +0.311. So b2 has a ~10% false-pass rate at
+this length on its own, and the key.tsv decode sits about five times the best wrong key's margin above its null. Stated plainly so the audit can
+weigh it: b2 passed as registered; the diagnostic says the margin, not the bare pass, is what separates it from wrong keys.
+
+**Reading** (tx/viv63_decode.py writes reading_piece63.tsv and the four tx/<page>_rec.tsv; `--check` passes; piece63_decode.txt = letters only).
+6,866 tokens: **H 5,551** (0.808), **M 669**, **U 646**; no C, no S. Per page H/M/U: f.190r 1348/144/162, f.190v 1330/209/114, f.191r 1414/159/212,
+f.191v 1459/157/158. H = both readers agree (or a label rule settled it) AND the code is graded C in key.tsv: key-source grading (Tomokiyo's
+published key, values checked against the clerk decipherment of ink 40 in N5-VIVK), not legibility and not a period decipherment of this letter.
+U codes: c 115, V 102, single o 99, e 81, 2 67, r 59, l 25 (labels outside key.tsv).
+Stretches that read as French by eye (interpretation, not a gate; the decoded string verbatim, '_' = unread code, then a reading in brackets):
+f.190r L04 "ctionde_oulouigneet" [-ction de Poulougne et], L10 "touteenthaordi_aireet_onuzitee" [toute extraordinaire et non usitée], L08
+"seconiunctureuce" [ceste conjuncture], L31 "duroaders_oulouig_eet" [du roy ... Poulougne et]; f.190v L05 "cestoiten_bueurdutadorange" [c'estoit en
+... d'Orange], L32 "tresgrande", L33-34 "co_tandeur" x3, "cardinah" [cardinal ... commandeur?]; f.191r L01 "duco_tandeur", L02
+"__rlandreseta_resu_sieurs" [Flandres et après plusieurs], L10 "ungtresgrande", L11 "dangier", L19 "garderuneboune_ort" [garder une bonne porte?],
+L20 "aonsieurdesauoa" [Monsieur de Savoie?]; f.191v L01 "trois_archandqge_euoiz" [trois marchands genevois], L02 "constantingentilh..." [Constantin
+gentilh(omme)], L19 "_oabredecheuaulq_rhhartilerieet" [nombre de chevaulx ... artillerie et], L26-27 "lestroublesou_arh_ardoulceurdun_arhd|
+oncgenerah_etbienaa_le" [les troubles ou par douceur d'un pardon general et bien ample]. Between such stretches many lines are still letter salad.
+The recurring "h_" (codes
+"y o m" 27x, "y o s" 24x) sits where French wants "qu"/"l": the M code y and the single o (U) look like the place to start the next key review
+(suggestion only; key.tsv untouched).
+
+**print_check** (phrases_63.txt, 8 phrases; sources.tsv as on file incl. Kervyn III; output pc63/print-check-63.tsv, pc63/print-check-hosts.tsv,
+kept apart from the sister job's print-check.tsv): exact hits only for "le prince dorange" in unrelated passages (Gachard II on 1568; Groen IV;
+Kervyn III, on Henri III); ia-global, Google Books, OpenAlex and CrossRef return keyword-relevance lists (e.g. Granvelle's Correspondance for
+"pardon general et bien ample", not opened), no quoted match to any decoded phrase; Semantic Scholar 429 after 7 calls (stopped, not retried).
+Caveat: phrase 3 ("le prince dorange") and phrase 1's "extra" go beyond the decoded letters (f.190v L05 decodes "...dutadorange", no "prince"); they are weak search keys. Report: no printed plaintext of ink 63's cipher found in the sources named; not found by this method on 4 Oct 2026. Novelty not classified.
+
+Requests: gallica.bnf.fr 15 (c195-c200 at 1600 px, 2 info.json, 7 native regions incl. 2 re-cuts), one at a time >= 2 s apart; print_check:
+archive.org 1, be-api 8, googleapis 8, openalex 8, crossref 8, semanticscholar 7 (429). Subagent calls: 8 Sonnet (2 per page). Cost: see the lane
+ledger. Stopped at 4 of 8.5 pages as planned in the unit statement above.
+
 ## Remaining gaps (N6-VIV53 refresh, 4 Oct 2026)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (0.609 vs null
 p95 0.354, N5-VIV54); ink 53 ff.170r-171r read with key.tsv, gloss check FAIL as registered (0.577 vs null p95 0.353, floor 0.60; N6-VIV53), H 2,856 /
@@ -675,3 +732,32 @@ whose twin is deciphered).
 - [ ] retry: ink 53 f.171v read and a fresh pre-registered check on independent material; ink 54 lookalike pass; fr.16105 ink 63 (N6-VIV63)
 Verdict: keep going: 7 internal gaps; cheapest next: ink 53 f.171v passes + its interlinear words read before decoding, ~$4
 Gate output (N6-VIV53, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 7 internal gap(s), 1 step(s) untried`; `tx/viv53_decode.py --check`: reading_piece53.tsv up to date; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date
+
+## Remaining gaps (N6-VIV63 refresh, 4 Oct 2026; merges the N6-VIV53 refresh above, both kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (0.609 vs null
+p95 0.354, N5-VIV54); ink 53 ff.170r-171r read, gloss check FAIL at its 0.60 floor (0.577 vs null p95 0.353, N6-VIV53); ink 63 ff.190r-191v (4 of ~8.5
+cipher pages) read with key.tsv, order gate b2 PASS (-1.514 vs null p99 -1.824; controls f.103r and ink 54 pass b2), b1 not a gate, H 5,551 / M 669 /
+U 646 of 6,866 tokens (N6-VIV63). Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 ff.192r-194r (4.5 cipher pages, ~160 lines; f.194r cipher ends ~L21) - blocker: not-attempted; stopped at 4 pages for the cap as planned (N6-VIV63); next: crops with the same iiif_lines settings (c197 right, c198 L/R, c199 L/R; canvas c = f.(c-6)v | f.(c-5)r), 2 blind passes per page, extend tx/viv63_decode.py PAGES, a pre-registered amendment of PREREG-N6VIV63 before decoding them, ~$10
+- ink 63 key questions (the "h_" pattern) - blocker: not-attempted; codes y (M) and single o (U) sit where French wants "qu"/"l" ("y o m" 27x, "y o s" 24x), and c, V, e, 2, r are unread labels (646 U tokens); next: a code-context table of y, o, c, V, 2 against ink 40's decipherment alignment (tx/key_support.py) and these reads, proposals only, key.tsv changed only by a separate graded step, ~$3
+- ink 63 r/z, 2/z, c/e splits - blocker: not-attempted; left at pass A (M); next: tools/lookalike_pass.py on those sign pairs of ff.190r-191v, re-decode, ~$3
+- ink 53 f.171v (18 cipher lines) - blocker: not-attempted; crops cut (images/p53, manifest), stopped for the cap (N6-VIV53); next: 2 blind passes + reconciliation, extend tx/viv53_decode.py PAGES, re-run viv53_test.py descriptively (the PREREG gate is spent), ~$4
+- ink 53 gloss gate under 0.60 - blocker: not-attempted; the gate failed its floor, not its null; a second test needs a different instrument or new material (rule 3), not a re-run with moved windows; next: a fresh pre-registered check on independent material -- the f.171v interlinear words (if any, read before decoding) or a lookalike pass (tools/lookalike_pass.py) on the split signs 4/+/p, a/u, z/3 with the gate fixed in advance, ~$4
+- ink 54 clean reading - blocker: not-attempted; err_2reader 0.19-0.22 and the ': :' pair read as two signs leave long unreadable stretches; next: a third pass / tools/lookalike_pass.py on the split signs of f.173r-v, the ': :' pair as one sign, re-decode, ~$4
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N6-VIV63)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171r read (N6-VIV53); ink 63 ff.190r-191v read (N6-VIV63)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars, Catherine IV-V, Groen IV read; Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171r, ff.190r-191v (N5-VIV54, N6-VIV53, N6-VIV63)
+- [ ] retry: ink 63 ff.192r-194r read (pre-registered amendment first); ink 53 f.171v read and a fresh pre-registered check on independent material; ink 54 lookalike pass
+Verdict: keep going: 10 internal gaps; cheapest next: ink 63 key questions (y, single o, c, V, 2) as a context table, ~$3, then ink 63 ff.192r-194r, ~$10
+
+Gate output (N6-VIV63, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 10 internal gap(s), 1 step(s) untried`; `tx/viv63_decode.py --check`: reading_piece63.tsv + rec files up to date; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date

@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	8	ok
+api.openalex.org	8	ok
+api.semanticscholar.org	7	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22nombre%20de%20cheuaulx%20artillerie%22
+archive.org	1	ok
+be-api.us.archive.org	8	ok
+www.googleapis.com	8	ok
