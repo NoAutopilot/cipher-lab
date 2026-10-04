@@ -1739,7 +1739,8 @@
       "depth_note": "C 247 of 300; D4 withheld: 53 M letter tokens",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "decode_status": "Partially decrypted",
+      "text": "unknown"
     },
     {
       "date": "24 Sept 2026",
@@ -2534,7 +2535,8 @@
       "depth_note": "C 214 of 240 at the audits (reading_126.txt now C 234, M 6); D4 withheld: M tokens remain",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "decode_status": "Partially decrypted",
+      "text": "unknown"
     },
     {
       "date": "24 Sept 2026",
@@ -2986,7 +2988,8 @@
       "depth_note": "S 488 of 529 in the current reading.txt (audited S 496 of 522)",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "decode_status": "Partially decrypted",
+      "text": "unknown"
     },
     {
       "date": "25 Sept 2026",
@@ -3088,7 +3091,8 @@
       "depth_note": "S 53 of 135",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "29 Sept 2026",
@@ -3124,7 +3128,8 @@
       "depth_note": "S 155 of 267",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "29 Sept 2026",
@@ -3160,7 +3165,8 @@
       "depth_note": "S 120 of 205",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "2 Oct 2026",
@@ -3195,7 +3201,8 @@
       "depth_note": "S 116 of 161",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "2 Oct 2026",
@@ -3231,7 +3238,8 @@
       "depth_note": "S 629 of 759; D3 withheld: most lines do not read through",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "decode_status": "Partially decrypted",
+      "text": "unknown"
     },
     {
       "date": "2 Oct 2026",
@@ -3269,7 +3277,8 @@
       "depth_note": "S 730 of 966",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "decode_status": "Partially decrypted",
+      "text": "unknown"
     },
     {
       "date": "3 Oct 2026",
@@ -3304,7 +3313,8 @@
       "depth_note": "C 177 of 527 strict",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "3 Oct 2026",
@@ -3333,7 +3343,8 @@
       "depth_note": "H 75 of 102 figure tokens",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "3 Oct 2026",
@@ -3367,7 +3378,8 @@
       "depth_note": "C 144 of 216",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
-      "decode_status": "Non-decrypted"
+      "decode_status": "Non-decrypted",
+      "text": "unknown"
     },
     {
       "date": "4 Oct 2026",

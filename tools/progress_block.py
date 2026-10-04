@@ -10,12 +10,19 @@ Catches: a row whose bar or stage marks were typed from memory (the 2 Oct 2026 A
 second audit, board count and send). Must NOT block: a row with total 0 (found-solved or not yet transcribed) renders
 its note instead of a bar; a row with an unknown mark is rendered as `?` and reported, never dropped.
 
+K cell and T column (KEYSOURCE-COL, 4 Oct 2026, owner's "do we denote when we make the key?"): when K is x or ~ and the
+row's `ksrc` is set, the K cell shows whose key it is -- o ours, p period, b published, P period + ours, B published + ours,
+M published + period, ? not recorded; K '.' stays '.'. The T column after S is `txt`: k plaintext known (in print or on
+the leaf), n not located in print (N3+), ? not recorded. A row without these columns renders ? (old TSVs still load).
+
 Usage: python3 tools/progress_block.py [--tsv PROGRESS.tsv] [--check]   (--check exits 1 on a malformed row)
 """
 import argparse, csv, sys
 
 STAGES = ["F", "K", "R", "1", "2", "C", "S"]
 MARKS = {"x", "~", "."}
+KSRC = {"o": "o", "p": "p", "b": "b", "p+o": "P", "b+o": "B", "b+p": "M", "?": "?", "-": "?", "": "?"}
+TXT = {"k", "n", "?"}
 
 
 def load(path):
@@ -27,7 +34,7 @@ def load(path):
 def render(rows):
     out, problems = [], []
     w = max([len(r["name"]) for r in rows] + [10]) + 1
-    out.append(" " * (1 + w + 1 + 12 + 1 + 10 + 7) + " ".join(STAGES))
+    out.append(" " * (1 + w + 1 + 12 + 1 + 10 + 7) + " ".join(STAGES) + " T")
     for r in rows:
         star = "*" if r.get("sent_star", "").strip() == "*" else " "
         try:
@@ -41,7 +48,17 @@ def render(rows):
             if m not in MARKS:
                 problems.append(f"{r.get('name')}: stage {s} mark {m!r}")
                 m = "?"
+            if s == "K" and m in ("x", "~"):
+                ks = (r.get("ksrc") or "").strip()
+                if ks not in KSRC:
+                    problems.append(f"{r.get('name')}: ksrc {ks!r}")
+                m = KSRC.get(ks, "?")
             marks.append(m)
+        t = (r.get("txt") or "?").strip() or "?"
+        if t not in TXT:
+            problems.append(f"{r.get('name')}: txt {t!r}")
+            t = "?"
+        marks.append(t)
         if total <= 0:
             out.append(f"{star}{r['name']:<{w}} {r.get('note', '').strip()}")
             continue
@@ -53,7 +70,9 @@ def render(rows):
             line += "   (" + r["note"].strip() + ")"
         out.append(line)
     out.append("")
-    out.append("F Found  K Key  R Read  1 Audit 1  2 Audit 2  C Counted  S Sent")
+    out.append("F Found  K Key  R Read  1 Audit 1  2 Audit 2  C Counted  S Sent  T Text")
+    out.append("K key: o ours, p period, b published (P period+ours, B published+ours, M published+period, ? unrecorded); "
+               "T text: k known (in print or on the leaf), n not found in print, ? unrecorded")
     out.append("x done  ~ partial  . not yet   # = 10% of tokens read firmly   * = finding already emailed/posted")
     return "\n".join(out), problems
 
