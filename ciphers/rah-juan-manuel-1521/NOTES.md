@@ -306,3 +306,48 @@ Verdict: keep going: 4 internal gaps; cheapest next: CSP date map ~$1, then the 
 $ python3 tools/gaps_check.py rah-juan-manuel-1521
 OK keep-going rah-juan-manuel-1521: keep going: 4 internal gap(s), 2 step(s) untried
 ```
+
+## CSP Spain II date map (RUN3-RJM, 4 Oct 2026, 08:4x-08:5x UTC)
+Brief: .claude/briefs/runs/2026-10-04-acct1-run3-wave1.md, job RUN3-RJM. `scripts/csp_date_map.py --cache DIR` fetched
+British History Online, Calendar of State Papers, Spain vol. II (Bergenroth 1866), pages pp381-386 to pp463-481 (10 pages,
+plus the volume index page; 11 requests to www.british-history.ac.uk, 1.6 s apart, all HTTP 200; cache kept in the
+session scratchpad, not committed), parsed every entry heading, and matched the 28 records (dates and decipherment folios
+from Tomokiyo's list, sources/cryptiana/web/AlonsoSanchez.htm) by Salazar volume (A.23 = BRAH 9/23, A.24 = 9/24, confirmed
+by R9524: Tomokiyo 9/24 f.120, CSP A.24 ff.120-125) plus the CSP folio range containing the decipherment folio, and by the
+entry's closing date line. Output: `csp_date_map.tsv` (one row per record: CSP number, BHO page, Salazar reference,
+closing date, match basis, CSP's form line).
+
+Result: **16 of 28 records have a CSP abstract**, 14 matched on folio and date together, 2 on date only (R9499 = no.392,
+A.23 ff.1-3 vs Tomokiyo's decipherment f.5; R9501 = no.393, A.23 ff.34-37, no decipherment folio to test):
+R9499 (392), R9501 (393), R9503 (394), R9504 (395), R9508 (398), R9510 (399), R9513 (401), R9514 (403), R9517 (406),
+R9518 (408), R9519 (410), R9520 (414), R9523 (417), R9524 (418, "Rome, last day of May 1522" = 31 May, settling
+Tomokiyo's "31?"), R9525 (421), R9528 (428). **12 records have none**: R9500, R9502, R9506, R9507, R9511, R9512, R9515,
+R9516, R9521, R9526, R9527, R9529; a closing-date phrase grep of the same pages (e.g. "18th of March", "11th of June")
+found no Juan Manuel entry for any of them, and no Juan Manuel entry in nos. 392-430 is left unmatched. This is a
+print-check result for the log (abstracts are English editorial summaries, not printed plaintext), and covers the main
+volume only; Gayangos's Supplement to vols. I-II was not searched (not located, as before).
+
+Corrections and leads, from the CSP form lines: (1) R9501 is no.**393** in BHO's numbering, as Tomokiyo says; the
+"no.390" in the Pool table above came from the IA OCR and is wrong (no.390 is A.22 f.273, an earlier letter). (2) CSP
+describes no.393 (R9501) as "Spanish. Autograph. Contemporary deciphering. pp. 5." -- five pages at A.23 ff.34-37,
+against three images in DECODE R9501: a period decipherment of R9501 is calendared as existing in the Salazar volume but
+is not in the DECODE record (Tomokiyo predicted as much). (3) no.395 (R9504) is "Autograph in cipher." with no
+"Contemporary deciphering", although Tomokiyo reads R9504's decipherment on f.66; an editorial omission or a different
+leaf, not resolved here. Nothing was decoded in this job.
+
+## Remaining gaps (RUN3-RJM, 4 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S; CSP Spain II abstracts located for 16 of 28 records (csp_date_map.tsv)
+- Letter alphabet held out - blocker: not-attempted; sorter/index.html built (RUN1-SEG: 1,781 tiles, 79 piles, 3 named), not yet published or sorted -- account 3 publishes it and files the ASKS row, after which this gap is waiting-on that row; test 1 FAILed its gate at reader error 0.42 with an unstable label set; next: the owner's sort, sign_sorter_apply.py, a label-anchored f.199 pass, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: not-attempted; two passes only; next: reconciliation pass from the image on the 88 + 114 split symbol tokens (disagreements listed by line in the reconciled TSVs as ~), ~$3
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; outside this brief; next: two blind passes on R9501 f.34 with the same inventory, decode with alphabet.tsv + Tomokiyo, judge, ~$5 (only worth running after the held-out gate passes); CSP no.393 calendars a 5-page "Contemporary deciphering" at Salazar A.23 ff.34-37, so the period decipherment pages exist at RAH outside the DECODE record (a reproduction request would make R9501 a key-source item)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); the lane orchestrator may extend L17 to name the 28 Juan Manuel dates; without it every reading stays a cryptanalytic result
+
+## Escalation (RUN3-RJM, 4 Oct 2026)
+- [ ] siblings: planned step: compare with Sanchez records of equal length (ciphers/rah-salazar-soria-sanchez-1524-28, Bourdeau sanchez1522) for symbol-shape and table fit
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117 code words)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images fetched 4 Oct 2026 (sha1 in images/manifest.json), crops and overlays checked
+- [ ] retry: planned step: settle the sign labels (sorter built by RUN1-SEG, waiting on the owner's sort; or a label-anchored third pass) and rerun the same held-out gate
+Verdict: keep going: 3 internal gaps; cheapest next: the label-anchored f.199 pass and gate rerun ~$4
