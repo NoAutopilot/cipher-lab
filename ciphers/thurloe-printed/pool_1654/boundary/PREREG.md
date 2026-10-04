@@ -94,3 +94,31 @@ licenses nothing.
   material for the same instrument), not another knob.
 - v1/v2 regenerated 4 Oct 2026 after A3V2-THUR275's JUNK_LINE change (the 275 target row is gone, one K occurrence at
   djvu 23015 lost its left context: v1 K 26 -> 25 verdicts, v2 48.8% -> 47.5%); both `--check` clean again.
+
+## v3 addendum: remaining pages (N8-THUR, LANE-NEAR8 account 2 worker, 4 Oct 2026, written 16:3x UTC before any new crop, read or run)
+This is the one further step the v3 section allows ("the same test on the remaining three pages (new material for the same
+instrument), not another knob"). It is **not a fourth tuning**: no threshold, statistic, window, skip rule, seed, sampling
+procedure or gate changes; the djvu-OCR instrument stays retired. What is new is material read by the same instrument
+(page image -> `tools/iiif_lines.py` line crops -> two blind passes -> reconcile):
+- Cipher side: the remaining three cipher pages, p.274 (leaf 284; replaces djvu 22886-23012, P5+P6's first page, carrying 84's
+  context), p.277 (leaf 287; replaces djvu 23233-23248, P7's first lines) and p.279 (leaf 289; replaces djvu 23327-23347, P7's
+  last cipher lines). With pp.275/278 already transcribed, every cipher line of both letters is then image-read.
+- Plain side: the two printed decipherment paragraphs ("The same letter decypherd"), P5+P6 = p.275 lower + p.276 (djvu
+  23066-23144) and P7 = p.279 lower + p.280 (djvu 23351-23422), each read once from line crops by one blind Sonnet pass and
+  checked by the worker against the crops (the brief's unit: 1 read + check). The transcribed lines replace the djvu lines in
+  the plain span; `A.JUNK_LINE`/`A.JUNK_SUB`/`A.plain_words`/`norm` apply to them unchanged. This is the same image-for-OCR
+  instrument change v3 made on the cipher side, applied to the side A3V2-THURBT's diagnosis named as the limit; Birch's own
+  modernised spelling stays (it is the printed text, not an OCR error), so it is not a correction of the test toward the claim.
+- Switch: `--txplain` (reads `tx/plain_pages.tsv`); the registered run is `boundary_test.py --skip --tx --txplain`, writing
+  `results_tx_full.tsv`; `results_tx.tsv` (v3 as run by A3V2-THURBT) is left as recorded.
+- Reported, side by side: (a) **pooled v3-full** (all five cipher pages + both decipherment paragraphs image-read; this is the
+  gated number) and (b) **new-only** -- the K/W occurrences whose cipher line is on pp.274/277/279 (descriptive, licenses
+  nothing on its own). Also descriptive, to show which half moved the numbers: `--skip --tx` with the five cipher pages but
+  OCR plain side.
+- K/W are re-drawn by the registered procedure (seeds 0/1) from the new unit stream, as v3 did. Written down before the run:
+  this is a second look at a gate that failed by one occurrence, so a PASS here is reported with that history; the new-only
+  split is printed so a reader can see whether the new material, not the redraw, carries any change.
+- Gate and outcomes unchanged: K verdicts >= 60% of K, K CONFIRM >= 80% of verdicts, W false-CONFIRM <= 10% of verdicts.
+  PASS: a target's CONFIRM licenses lifting its key entry from M to S (one vote + a gated control), nothing more; REFUTE
+  licenses dropping the entry; INCONCLUSIVE leaves it M. FAIL: non-test, no grade or key change, and this instrument is
+  closed for these entries ("untestable by this method at this N", rule 3 third-attempt clause) -- no further page exists.
