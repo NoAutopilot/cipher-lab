@@ -1,0 +1,111 @@
+item	label	conf	second	note
+1	T76	H		shape
+2	T19	H		shape
+3	T45	H		shape
+4	T80	H		shape
+5	T45	M		shape
+6	T98	M	T18	shape
+7	T37	H		shape
+8	T36	H		shape
+9	T70	H		shape
+10	T45	M		shape
+11	T19	H		shape
+12	X_S	H		shape
+13	T90	H		shape
+14	T55	H		shape
+15	T19	H		shape
+16	T76	M	T26	shape
+17	T83	H		shape
+18	T92	M	T50	shape
+19	T53	H		shape
+20	X_NEW	M		shape
+21	T33	H		shape
+22	T53	H		shape
+23	T45	H		shape
+24	T60	L	T86	shape
+25	T19	H		shape
+26	T60	L	T86	shape
+27	T98	L	T18	shape
+28	T60	M	T86	shape
+29	T19	H		shape
+30	T90	H		shape
+31	T33	H		shape
+32	T58	H		shape
+33	T65	H		shape
+34	T33	H		shape
+35	T76	M		shape
+36	T86	H		shape
+37	T86	L	T60	shape
+38	T85	H		shape
+39	T60	M	T86	shape
+40	T33	H		shape
+41	T53	H		shape
+42	T45	H		shape
+43	T53	H		shape
+44	T63	H		shape
+45	T53	H		shape
+46	T86	H		shape
+47	T33	H		shape
+48	T90	M		shape
+49	T25	H		shape
+50	T70	H		shape
+51	T60	M	T86	shape
+52	T54	H		shape
+53	T98	L	T18	shape
+54	T96	H		shape
+55	T42	H		shape
+56	T96	H		shape
+57	T53	H		shape
+58	T19	H		shape
+59	T92	L	T50	shape
+60	T96	H		shape
+61	T53	H		shape
+62	T18	L	T98	shape
+63	T80	M		shape
+64	T65	M	T95	shape
+65	T60	L	T86	shape
+66	T19	H		shape
+67	T85	H		shape
+68	T60	M	T86	shape
+69	T76	M		shape
+70	T54	H		shape
+71	T86	H		shape
+72	T27	M		shape
+73	T86	H		shape
+74	T26	M	T76	shape
+75	T37	H		shape
+76	T96	H		shape
+77	T57	H		shape
+78	T33	H		shape
+79	T76	M	T26	shape
+80	T55	H		shape
+81	T54	H		shape
+82	T13	H		shape
+83	T80	H		shape
+84	T58	H		shape
+85	T19	H		shape
+86	T37	H		shape
+87	T92	M	T50	shape
+88	T58	H		shape
+89	T98	L	T18	shape
+90	T37	H		shape
+91	T33	H		shape
+92	T86	H		shape
+93	T96	H		shape
+94	T86	L	T60	shape
+95	T58	H		shape
+96	T86	L	T60	shape
+97	T37	H		shape
+98	T86	H		shape
+99	T37	L		shape
+100	T56	M	T97	shape
+101	T45	M		shape
+102	T45	M		shape
+103	T66	M		shape
+104	T63	H		shape
+105	T90	H		shape
+106	T60	L	T86	shape
+107	T83	H		shape
+108	T58	H		shape
+109	T19	H		shape
+110	T85	H		shape

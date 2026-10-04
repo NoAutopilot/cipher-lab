@@ -1,0 +1,91 @@
+item	label	conf	second	note
+1	T86	M	T60	thin H-form
+2	T98	M	T18	ellipse with through stem
+3	T60	M	T86	even grid
+4	T33	H		inverted T base
+5	T96	H		hooked l
+6	T13	M	T64	m with tilde flourish
+7	T53	H		double loop
+8	T53	H		double loop
+9	T58	H		B
+10	T19	H		pi
+11	X_EQ	H		double bar
+12	T98	M	T18	ellipse with stem
+13	T45	H		loop on stem
+14	T86	M	T60	H-form
+15	T33	H		inverted T base
+16	T19	H		pi
+17	T96	H		hooked l
+18	T96	H		hooked l with dot
+19	T37	H		barred theta
+20	T60	M	T86	grid
+21	T53	H		double loop
+22	T70	H		triangle
+23	T33	H		inverted T base
+24	T45	M	T89	loop on stem
+25	T33	H		inverted T base
+26	T81	H		x
+27	T96	M		hooked l
+28	T98	M	T18	ellipse with stem
+29	T76	H		g with tail
+30	T92	H		open omega
+31	T80	H		D
+32	T45	H		loop on stem
+33	T89	M	T45	b with tail hook
+34	T96	H		hooked l
+35	T45	M		loop on stem
+36	T85	H		plus
+37	T98	M	T18	ellipse with stem
+38	T96	H		hooked l
+39	T85	H		plus
+40	T96	H		hooked l
+41	T53	H		double loop
+42	T92	H		omega
+43	T83	H		ae-like cross
+44	T52	M	T64	n with tail
+45	T65	H		Phi with cross base
+46	T45	H		loop on stem
+47	T19	H		pi
+48	T97	M	T56	scribbled 8
+49	T60	M	T86	grid
+50	T45	H		loop on stem
+51	T76	L	T27	q with base bar
+52	T24	H		epsilon
+53	T45	H		loop on stem
+54	T80	H		D
+55	T60	M	T86	grid
+56	T97	M	T56	scribbled 8
+57	T37	H		barred theta
+58	T24	H		epsilon
+59	T76	M	T27	9 shape
+60	T26	H		oj
+61	T84	H		triangle down with cross
+62	T19	H		pi
+63	T63	H		V
+64	T25	H		lambda
+65	T19	H		pi
+66	T53	H		double loop
+67	T42	M		t with hook
+68	T45	M		loop on stem
+69	T83	M	X_NEW	cross-like
+70	T19	H		pi
+71	T45	H		loop on stem
+72	T65	H		Phi with cross base
+73	T80	H		D
+74	T86	M	T60	H-form
+75	T45	M	T89	loop on stem
+76	T92	H		omega
+77	T90	H		cross over loop
+78	T19	H		pi
+79	X_NEW	H		d-shaped
+80	T42	M		t with hook
+81	T60	M	T86	grid
+82	T45	H		loop on stem
+83	T46	M	X_NEW	figure 8
+84	T33	H		inverted T base
+85	T13	M	T64	m with tilde flourish
+86	T90	H		cross over loop
+87	T85	H		plus
+88	T89	M	T45	b with tail hook
+89	T76	H		g with tail
+90	T57	M	X_NEW	diamond with tail
