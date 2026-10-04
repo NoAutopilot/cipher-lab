@@ -1,0 +1,9 @@
+# N6-VIV63: decoded phrases from ink 63 (fr.16105 ff.190r-191v, 10 Oct 1573) under key.tsv; spelling as decoded, gaps bridged only at word breaks
+extraordinaire et non usitee
+du roy de poulougne
+le prince dorange
+trois marchands geneuois
+constantin gentilhomme
+pardon general et bien ample
+nombre de cheuaulx artillerie
+par douceur dun pardon general

@@ -1,0 +1,127 @@
+{
+ "seed": 20260967,
+ "draws": 200,
+ "C1_f103r": {
+  "letters": 1770,
+  "s": -1.7145,
+  "cover": 0.709,
+  "b1": {
+   "null_median": -2.1135,
+   "null_p99": -1.6741,
+   "pass": false,
+   "headroom_ok": false
+  },
+  "b2": {
+   "null_median": -1.962,
+   "null_p99": -1.9094,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_ink54": {
+  "letters": 1793,
+  "s": -1.658,
+  "cover": 0.795,
+  "b1": {
+   "null_median": -2.1418,
+   "null_p99": -1.8237,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8784,
+   "null_p99": -1.829,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "target": {
+  "letters": 6220,
+  "s": -1.5136,
+  "cover": 0.814,
+  "b1": {
+   "null_median": -2.1225,
+   "null_p99": -1.7916,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8563,
+   "null_p99": -1.8243,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "per_page": {
+  "f190r": {
+   "letters": 1492,
+   "s": -1.4888,
+   "cover": 0.847,
+   "b1": {
+    "null_median": -2.1433,
+    "null_p99": -1.813,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.7832,
+    "null_p99": -1.7301,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f190v": {
+   "letters": 1539,
+   "s": -1.6377,
+   "cover": 0.763,
+   "b1": {
+    "null_median": -2.1287,
+    "null_p99": -1.7979,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.9126,
+    "null_p99": -1.8557,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f191r": {
+   "letters": 1573,
+   "s": -1.4411,
+   "cover": 0.826,
+   "b1": {
+    "null_median": -2.1426,
+    "null_p99": -1.8311,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8511,
+    "null_p99": -1.7972,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f191v": {
+   "letters": 1616,
+   "s": -1.4897,
+   "cover": 0.82,
+   "b1": {
+    "null_median": -2.143,
+    "null_p99": -1.8374,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8774,
+    "null_p99": -1.82,
+    "pass": true,
+    "headroom_ok": true
+   }
+  }
+ },
+ "verdict_b1": "not a gate (positive control fails or no headroom)",
+ "verdict_b2": "PASS"
+}
