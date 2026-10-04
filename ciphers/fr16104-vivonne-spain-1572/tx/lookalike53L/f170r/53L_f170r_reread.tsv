@@ -1,0 +1,114 @@
+passage	pos	label	conf	second	note
+f170r_L01	3	4	M	+	crossed-stem hook sign after the curl sign
+f170r_L01	6	H	M	@	crossbar sign inside the big loop
+f170r_L01	7	non	M	z	n-o-n group after the loop; tick estimate off
+f170r_L01	10	3	L	z	right edge cut, z-like with tail
+f170r_L01	26	g	M		g with looped descender
+f170r_L01	28	u	M	a	small two-stroke sign between d and d
+f170r_L02	2	{loop}	M	@	big open loop only; no a seen
+f170r_L02	20	p	M	4	p bowl with crossed stem
+f170r_L02	29	2	M	L	top curl, diagonal, flat base
+f170r_L02	32	p	M	4	p bowl with crossed stem
+f170r_L02	50	p	M	4	p bowl with crossed stem
+f170r_L02	54	z	M	2	flat top bar zigzag
+f170r_L03	8	u	M	a	small two-stroke sign
+f170r_L03	9	p	M	4	p with dot at bowl
+f170r_L03	12	p	M	4	p bowl crossed stem
+f170r_L03	22	2	L	z	looped top zigzag
+f170r_L03	38	2	M	L	top curl diagonal flat base
+f170r_L03	39	u	M	a	small two-stroke sign
+f170r_L03	46	2	M	z	looped top then flat tail
+f170r_L04	8	3	M	z	round top with descender curl
+f170r_L04	32	4	H		open triangle 4 on stem
+f170r_L05	6	a	M	c	small round sign open top
+f170r_L05	9	u	M	a	small two-stroke sign
+f170r_L05	14	3	M	z	round-topped descender curl
+f170r_L05	19	p	M	4	p bowl crossed stem
+f170r_L05	32	2	L	r	bar sign with flat base
+f170r_L05	40	u	M	a	small two-stroke sign
+f170r_L06	38	u	M	a	small two-stroke sign
+f170r_L06	49	A	M	a	pointed-top A shape at line end
+f170r_L07	5	B	M	S	beta-like sign with descender and bowl
+f170r_L07	11	II	M	P	flat double-bar sign
+f170r_L07	14	4	L	+	heavy ink wedge, smudged
+f170r_L07	17	4	M	p	open 4 with stem
+f170r_L07	19	g	H	y	g with hooked descender
+f170r_L07	20	3	H	z	round top descender curl
+f170r_L07	30	p	M	4	p bowl crossed stem
+f170r_L07	43	p	M	+	p bowl crossed stem
+f170r_L07	44	4	H	p	clear 4
+f170r_L07	46	g	H	y	g with hooked descender
+f170r_L07	48	u	M	a	small two-stroke sign
+f170r_L08	8	g	L	o	small round head with swash descender
+f170r_L08	14	p	M	4	p bowl crossed stem
+f170r_L08	17	p	M	4	p bowl crossed stem
+f170r_L08	27	d	L	S	looped top zigzag; nearest candidate by context
+f170r_L08	30	p	M	4	p bowl crossed stem
+f170r_L08	32	u	M	a	small two-stroke sign
+f170r_L08	50	6	M	b	round bowl with top loop
+f170r_L09	1	2	M	z	looped top zigzag
+f170r_L09	5	p	M	4	p bowl crossed stem
+f170r_L09	6	3	M	z	round-topped descender
+f170r_L09	9	c	M	a	small open arc
+f170r_L09	13	p	M	4	p bowl crossed stem
+f170r_L09	20	Z	M	z	zigzag Z with swash
+f170r_L09	29	p	M	4	p bowl crossed stem
+f170r_L09	31	c	M	a	small open arc
+f170r_L09	33	p	M	4	p bowl crossed stem
+f170r_L09	44	3	H	z	round top with descender curl
+f170r_L10	1	+	M	4	cross with long stem
+f170r_L10	3	p	M	4	p bowl crossed stem
+f170r_L10	15	p	M	4	p bowl crossed stem
+f170r_L10	17	6	M	b	dotted round 6
+f170r_L10	31	p	M	4	p bowl crossed stem
+f170r_L10	40	u	M	a	small two-stroke sign
+f170r_L11	1	u	M	a	small two-stroke sign
+f170r_L11	27	z	M	2	flat top bar zigzag
+f170r_L11	36	4	H	p	clear 4
+f170r_L11	42	3	H	z	round top descender
+f170r_L11	46	2	M	z	looped top zigzag
+f170r_L12	1	4	H	p	clear 4 with stem
+f170r_L12	30	g	M	{curl}	small bowl with swash descender
+f170r_L12	34	u	M	c	small two-stroke sign
+f170r_L13	1	j	L	g	hook descender cut by seal stamp
+f170r_L13	9	4	H	p	clear 4 after p
+f170r_L13	26	II	M	2	flat double bars
+f170r_L13	39	g	M	y	g with hook descender
+f170r_L13	44	c	M	a	small open arc
+f170r_L13	46	g	M	y	g with descender
+f170r_L14	5	4	M	p	4 with bowl and stem
+f170r_L14	13	+	L	4	crossbar on d stem
+f170r_L14	33	x	M	z	x-like sign with bars
+f170r_L15	1	2	L	l	bold looped curl at line start
+f170r_L15	4	c	M	a	small open arc
+f170r_L15	14	p	M	4	p bowl crossed stem
+f170r_L15	21	a	M	c	small a-like arc with hook
+f170r_L15	27	p	M	+	heavy crossed p
+f170r_L15	29	4	H	p	clear 4
+f170r_L15	40	+	M	4	cross sign with smudge
+f170r_L16	8	a	M	u	small two-hump sign
+f170r_L16	13	II	M	P	flat double bars
+f170r_L16	29	x	M	2	x-like bar sign
+f170r_L16	46	p	M	4	p heavy bowl crossed stem
+f170r_L19	8	p	M	4	p bowl crossed stem
+f170r_L19	18	m	L	u	three-stroke small sign
+f170r_L19	19	u	M	c	small two-stroke sign
+f170r_L19	29	z	M	2	small flat zigzag with bar
+f170r_L19	42	p	M	+	p bowl crossed stem before 4
+f170r_L20	10	tz	H	z	t joined to z descender
+f170r_L20	34	g	M	y	g with swash descender
+f170r_L20	39	u	M	c	small two-stroke sign
+f170r_L20	45	X_NEW	M		zigzag z-like sign not matching a c u
+f170r_L21	1	u	M	c	small two-stroke sign
+f170r_L21	3	g	M	y	slanted g with bar
+f170r_L21	11	p	M	4	p bowl crossed stem
+f170r_L21	34	u	M	c	small two-stroke sign
+f170r_L21	42	z	M	2	small flat zigzag
+f170r_L21	55	3	L	#	zigzag z-like at line end
+f170r_L22	2	c	L	a	second half of the two-part small sign
+f170r_L22	3	p	M	+	p with dot at bowl
+f170r_L22	6	r	L	4	merged into big round-topped 3; no separate sign found
+f170r_L22	15	u	M	c	small two-stroke sign
+f170r_L22	21	u	M	a	small two-stroke sign
+f170r_L22	45	II	M	2	flat bars
+f170r_L22	46	u	M	a	small two-stroke sign

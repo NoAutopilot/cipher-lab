@@ -1,0 +1,1070 @@
+passage	pos	sign_id	conf	note	question
+f170r_L01	1	X		passC	
+f170r_L01	2	{curl}		passC	
+f170r_L01	3	4	M	lookalike 2-of-3	
+f170r_L01	4	p		passC	
+f170r_L01	5	{loop-gt}		passC	
+f170r_L01	6	H	M	lookalike 2-of-3	
+f170r_L01	7	non	M	lookalike 2-of-3	
+f170r_L01	8	m		passC	
+f170r_L01	9	#		passC	
+f170r_L01	10	z		lookalike UNSETTLED	f170r_L01.10: readers z/3, look-alike 3 (L); which of 3, z?
+f170r_L01	11	P		passC	
+f170r_L01	12	#		passC	
+f170r_L01	13	P		passC	
+f170r_L01	14	:		passC	
+f170r_L01	15	y		passC	
+f170r_L01	16	m		passC	
+f170r_L01	17	g		passC	
+f170r_L01	18	P		passC	
+f170r_L01	19	s		passC	
+f170r_L01	20	a		passC	
+f170r_L01	21	6		passC	
+f170r_L01	22	#		passC	
+f170r_L01	23	g		passC	
+f170r_L01	24	m		passC	
+f170r_L01	25	a		passC	
+f170r_L01	26	g	M	lookalike 2-of-3	
+f170r_L01	27	d		passC	
+f170r_L01	28	a		lookalike UNSETTLED	f170r_L01.28: readers a/d, look-alike u (M); which of a, d, u?
+f170r_L01	29	d		passC	
+f170r_L01	30	@		passC	
+f170r_L01	31	P		passC	
+f170r_L01	32	:		passC	
+f170r_L01	33	:		passC	
+f170r_L01	34	m		passC	
+f170r_L01	35	j		passC	
+f170r_L01	36	m		passC	
+f170r_L01	37	i		passC	
+f170r_L01	38	tz		passC	
+f170r_L01	39	p		passC	
+f170r_L02	1	{big		passC	
+f170r_L02	2	{loop}	M	lookalike 2-of-3	
+f170r_L02	3	z		passC	
+f170r_L02	4	m		passC	
+f170r_L02	5	:		passC	
+f170r_L02	6	y		passC	
+f170r_L02	7	m		passC	
+f170r_L02	8	g		passC	
+f170r_L02	9	:		passC	
+f170r_L02	10	:		passC	
+f170r_L02	11	y		passC	
+f170r_L02	12	m		passC	
+f170r_L02	13	g		passC	
+f170r_L02	14	d		passC	
+f170r_L02	15	A		passC	
+f170r_L02	16	s		passC	
+f170r_L02	17	d		passC	
+f170r_L02	18	tz		passC	
+f170r_L02	19	d		passC	
+f170r_L02	20	4		lookalike UNSETTLED	f170r_L02.20: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L02	21	z		passC	
+f170r_L02	22	m		passC	
+f170r_L02	23	y		passC	
+f170r_L02	24	m		passC	
+f170r_L02	25	d		passC	
+f170r_L02	26	g		passC	
+f170r_L02	27	P		passC	
+f170r_L02	28	tz		passC	
+f170r_L02	29	2	M	lookalike 2-of-3	
+f170r_L02	30	m		passC	
+f170r_L02	31	m		passC	
+f170r_L02	32	4		lookalike UNSETTLED	f170r_L02.32: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L02	33	#		passC	
+f170r_L02	34	g		passC	
+f170r_L02	35	m		passC	
+f170r_L02	36	g		passC	
+f170r_L02	37	c		passC	
+f170r_L02	38	6		passC	
+f170r_L02	39	o		passC	
+f170r_L02	40	o		passC	
+f170r_L02	41	d		passC	
+f170r_L02	42	P		passC	
+f170r_L02	43	o		passC	
+f170r_L02	44	o		passC	
+f170r_L02	45	P		passC	
+f170r_L02	46	p		passC	
+f170r_L02	47	#		passC	
+f170r_L02	48	:		passC	
+f170r_L02	49	m		passC	
+f170r_L02	50	4		lookalike UNSETTLED	f170r_L02.50: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L02	51	:		passC	
+f170r_L02	52	d		passC	
+f170r_L02	53	p		passC	
+f170r_L02	54	z	M	lookalike 2-of-3	
+f170r_L02	55	m		passC	
+f170r_L03	1	@		passC	
+f170r_L03	2	d		passC	
+f170r_L03	3	P		passC	
+f170r_L03	4	#		passC	
+f170r_L03	5	tz		passC	
+f170r_L03	6	d		passC	
+f170r_L03	7	4		passC	
+f170r_L03	8	a		lookalike UNSETTLED	f170r_L03.8: readers a/+, look-alike u (M); which of +, a, u?
+f170r_L03	9	4		lookalike UNSETTLED	f170r_L03.9: readers 4/u, look-alike p (M); which of 4, p, u?
+f170r_L03	10	p		passC	
+f170r_L03	11	d		passC	
+f170r_L03	12	4		lookalike UNSETTLED	f170r_L03.12: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L03	13	z		passC	
+f170r_L03	14	m		passC	
+f170r_L03	15	:		passC	
+f170r_L03	16	:		passC	
+f170r_L03	17	d		passC	
+f170r_L03	18	r		passC	
+f170r_L03	19	#		passC	
+f170r_L03	20	y		passC	
+f170r_L03	21	a		passC	
+f170r_L03	22	3		lookalike UNSETTLED	f170r_L03.22: readers 3/2, look-alike 2 (L); which of 2, 3, z?
+f170r_L03	23	m		passC	
+f170r_L03	24	P		passC	
+f170r_L03	25	:		passC	
+f170r_L03	26	m		passC	
+f170r_L03	27	j		passC	
+f170r_L03	28	m		passC	
+f170r_L03	29	g		passC	
+f170r_L03	30	tz		passC	
+f170r_L03	31	p		passC	
+f170r_L03	32	k		passC	
+f170r_L03	33	P		passC	
+f170r_L03	34	o		passC	
+f170r_L03	35	o		passC	
+f170r_L03	36	d		passC	
+f170r_L03	37	tz		passC	
+f170r_L03	38	2	M	lookalike 2-of-3	
+f170r_L03	39	u	M	lookalike 2-of-3	
+f170r_L03	40	6		passC	
+f170r_L03	41	o		passC	
+f170r_L03	42	o		passC	
+f170r_L03	43	d		passC	
+f170r_L03	44	z		passC	
+f170r_L03	45	m		passC	
+f170r_L03	46	2	M	lookalike 2-of-3	
+f170r_L03	47	P		passC	
+f170r_L03	48	#		passC	
+f170r_L03	49	tz		passC	
+f170r_L04	1	m		passC	
+f170r_L04	2	g		passC	
+f170r_L04	3	m		passC	
+f170r_L04	4	z		passC	
+f170r_L04	5	m		passC	
+f170r_L04	6	p		passC	
+f170r_L04	7	m		passC	
+f170r_L04	8	3	M	lookalike 2-of-3	
+f170r_L04	9	m		passC	
+f170r_L04	10	d		passC	
+f170r_L04	11	o		passC	
+f170r_L04	12	o		passC	
+f170r_L04	13	y		passC	
+f170r_L04	14	m		passC	
+f170r_L04	15	g		passC	
+f170r_L04	16	tz		passC	
+f170r_L04	17	:		passC	
+f170r_L04	18	:		passC	
+f170r_L04	19	z		passC	
+f170r_L04	20	tz		passC	
+f170r_L04	21	p		passC	
+f170r_L04	22	a		passC	
+f170r_L04	23	#		passC	
+f170r_L04	24	tz		passC	
+f170r_L04	25	j		passC	
+f170r_L04	26	m		passC	
+f170r_L04	27	P		passC	
+f170r_L04	28	p		passC	
+f170r_L04	29	m		passC	
+f170r_L04	30	p		passC	
+f170r_L04	31	m		passC	
+f170r_L04	32	4	H	lookalike 2-of-3	
+f170r_L04	33	d		passC	
+f170r_L04	34	#		passC	
+f170r_L04	35	tz		passC	
+f170r_L04	36	m		passC	
+f170r_L04	37	L		passC	
+f170r_L04	38	@		passC	
+f170r_L04	39	m		passC	
+f170r_L04	40	2		passC	
+f170r_L04	41	m		passC	
+f170r_L04	42	6		passC	
+f170r_L04	43	to		passC	
+f170r_L04	44	a		passC	
+f170r_L04	45	m		passC	
+f170r_L05	1	:		passC	
+f170r_L05	2	:		passC	
+f170r_L05	3	P		passC	
+f170r_L05	4	d		passC	
+f170r_L05	5	P		passC	
+f170r_L05	6	o		lookalike UNSETTLED	f170r_L05.6: readers o/c, look-alike a (M); which of a, c, o?
+f170r_L05	7	g		passC	
+f170r_L05	8	d		passC	
+f170r_L05	9	u	M	lookalike 2-of-3	
+f170r_L05	10	d		passC	
+f170r_L05	11	@		passC	
+f170r_L05	12	m		passC	
+f170r_L05	13	#		passC	
+f170r_L05	14	3	M	lookalike 2-of-3	
+f170r_L05	15	m		passC	
+f170r_L05	16	:		passC	
+f170r_L05	17	:		passC	
+f170r_L05	18	d		passC	
+f170r_L05	19	4		lookalike UNSETTLED	f170r_L05.19: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L05	20	d		passC	
+f170r_L05	21	m		passC	
+f170r_L05	22	to		passC	
+f170r_L05	23	a		passC	
+f170r_L05	24	P		passC	
+f170r_L05	25	p		passC	
+f170r_L05	26	:		passC	
+f170r_L05	27	:		passC	
+f170r_L05	28	7		passC	
+f170r_L05	29	P		passC	
+f170r_L05	30	@		passC	
+f170r_L05	31	m		passC	
+f170r_L05	32	r		lookalike UNSETTLED	f170r_L05.32: readers r/2, look-alike 2 (L); which of 2, r?
+f170r_L05	33	d		passC	
+f170r_L05	34	z		passC	
+f170r_L05	35	tz		passC	
+f170r_L05	36	m		passC	
+f170r_L05	37	p		passC	
+f170r_L05	38	P		passC	
+f170r_L05	39	z		passC	
+f170r_L05	40	u	M	lookalike 2-of-3	
+f170r_L05	41	g		passC	
+f170r_L05	42	d		passC	
+f170r_L05	43	#		passC	
+f170r_L05	44	tz		passC	
+f170r_L05	45	#		passC	
+f170r_L05	46	m		passC	
+f170r_L05	47	:		passC	
+f170r_L05	48	:		passC	
+f170r_L05	49	d		passC	
+f170r_L06	1	{dash}		passC	
+f170r_L06	2	e		passC	
+f170r_L06	3	n		passC	
+f170r_L06	4	m		passC	
+f170r_L06	5	o		passC	
+f170r_L06	6	o		passC	
+f170r_L06	7	m		passC	
+f170r_L06	8	@		passC	
+f170r_L06	9	P		passC	
+f170r_L06	10	a		passC	
+f170r_L06	11	d		passC	
+f170r_L06	12	x		passC	
+f170r_L06	13	#		passC	
+f170r_L06	14	g		passC	
+f170r_L06	15	m		passC	
+f170r_L06	16	P		passC	
+f170r_L06	17	y		passC	
+f170r_L06	18	y		passC	
+f170r_L06	19	#		passC	
+f170r_L06	20	m		passC	
+f170r_L06	21	d		passC	
+f170r_L06	22	o		passC	
+f170r_L06	23	m		passC	
+f170r_L06	24	c		passC	
+f170r_L06	25	P		passC	
+f170r_L06	26	g		passC	
+f170r_L06	27	y		passC	
+f170r_L06	28	p		passC	
+f170r_L06	29	P		passC	
+f170r_L06	30	y		passC	
+f170r_L06	31	y		passC	
+f170r_L06	32	m		passC	
+f170r_L06	33	:		passC	
+f170r_L06	34	:		passC	
+f170r_L06	35	#		passC	
+f170r_L06	36	g		passC	
+f170r_L06	37	m		passC	
+f170r_L06	38	u	M	lookalike 2-of-3	
+f170r_L06	39	tz		passC	
+f170r_L06	40	m		passC	
+f170r_L06	41	4		passC	
+f170r_L06	42	p		passC	
+f170r_L06	43	g		passC	
+f170r_L06	44	P		passC	
+f170r_L06	45	tz		passC	
+f170r_L06	46	:		passC	
+f170r_L06	47	:		passC	
+f170r_L06	48	#		passC	
+f170r_L06	49	A	M	lookalike 2-of-3	
+f170r_L07	1	P		passC	
+f170r_L07	2	y		passC	
+f170r_L07	3	y		passC	
+f170r_L07	4	P		passC	
+f170r_L07	5	B	M	lookalike 2-of-3	
+f170r_L07	6	@		passC	
+f170r_L07	7	m		passC	
+f170r_L07	8	a		passC	
+f170r_L07	9	tz		passC	
+f170r_L07	10	:		passC	
+f170r_L07	11	II	M	lookalike 2-of-3	
+f170r_L07	12	m		passC	
+f170r_L07	13	p		passC	
+f170r_L07	14	4		lookalike UNSETTLED	f170r_L07.14: readers 4/a, look-alike 4 (L); which of +, 4, a?
+f170r_L07	15	m		passC	
+f170r_L07	16	p		passC	
+f170r_L07	17	4	M	lookalike 2-of-3	
+f170r_L07	18	P		passC	
+f170r_L07	19	g	H	lookalike 2-of-3	
+f170r_L07	20	3	H	lookalike 2-of-3	
+f170r_L07	21	m		passC	
+f170r_L07	22	L		passC	
+f170r_L07	23	P		passC	
+f170r_L07	24	y		passC	
+f170r_L07	25	y		passC	
+f170r_L07	26	o		passC	
+f170r_L07	27	o		passC	
+f170r_L07	28	z		passC	
+f170r_L07	29	m		passC	
+f170r_L07	30	p	M	lookalike 2-of-3	
+f170r_L07	31	g		passC	
+f170r_L07	32	P		passC	
+f170r_L07	33	tz		passC	
+f170r_L07	34	L		passC	
+f170r_L07	35	m		passC	
+f170r_L07	36	a		passC	
+f170r_L07	37	6		passC	
+f170r_L07	38	o		passC	
+f170r_L07	39	o		passC	
+f170r_L07	40	d		passC	
+f170r_L07	41	6		passC	
+f170r_L07	42	d		passC	
+f170r_L07	43	4		lookalike UNSETTLED	f170r_L07.43: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L07	44	4	H	lookalike 2-of-3	
+f170r_L07	45	a		passC	
+f170r_L07	46	g	H	lookalike 2-of-3	
+f170r_L07	47	d		passC	
+f170r_L07	48	u	M	lookalike 2-of-3	
+f170r_L07	49	d		passC	
+f170r_L07	50	@		passC	
+f170r_L08	1	m		passC	
+f170r_L08	2	#		passC	
+f170r_L08	3	y		passC	
+f170r_L08	4	y		passC	
+f170r_L08	5	o		passC	
+f170r_L08	6	o		passC	
+f170r_L08	7	z		passC	
+f170r_L08	8	c		lookalike UNSETTLED	f170r_L08.8: readers c/g, look-alike g (L); which of c, g, o?
+f170r_L08	9	m		passC	
+f170r_L08	10	g		passC	
+f170r_L08	11	P		passC	
+f170r_L08	12	z		passC	
+f170r_L08	13	m		passC	
+f170r_L08	14	p	M	lookalike 2-of-3	
+f170r_L08	15	#		passC	
+f170r_L08	16	m		passC	
+f170r_L08	17	p	M	lookalike 2-of-3	
+f170r_L08	18	k		passC	
+f170r_L08	19	y		passC	
+f170r_L08	20	m		passC	
+f170r_L08	21	d		passC	
+f170r_L08	22	m		passC	
+f170r_L08	23	o		passC	
+f170r_L08	24	o		passC	
+f170r_L08	25	j		passC	
+f170r_L08	26	m		passC	
+f170r_L08	27	d		lookalike UNSETTLED	f170r_L08.27: readers d/n, look-alike d (L); which of S, d, n?
+f170r_L08	28	2		passC	
+f170r_L08	29	m		passC	
+f170r_L08	30	p	M	lookalike 2-of-3	
+f170r_L08	31	#		passC	
+f170r_L08	32	u	M	lookalike 2-of-3	
+f170r_L08	33	:		passC	
+f170r_L08	34	:		passC	
+f170r_L08	35	m		passC	
+f170r_L08	36	6		passC	
+f170r_L08	37	3		passC	
+f170r_L08	38	p		passC	
+f170r_L08	39	:		passC	
+f170r_L08	40	:		passC	
+f170r_L08	41	7		passC	
+f170r_L08	42	Z		passC	
+f170r_L08	43	y		passC	
+f170r_L08	44	y		passC	
+f170r_L08	45	p		passC	
+f170r_L08	46	a		passC	
+f170r_L08	47	z		passC	
+f170r_L08	48	P		passC	
+f170r_L08	49	c		passC	
+f170r_L08	50	6	M	lookalike 2-of-3	
+f170r_L08	51	m		passC	
+f170r_L08	52	a		passC	
+f170r_L09	1	2	M	lookalike 2-of-3	
+f170r_L09	2	m		passC	
+f170r_L09	3	2		passC	
+f170r_L09	4	m		passC	
+f170r_L09	5	p	M	lookalike 2-of-3	
+f170r_L09	6	3	M	lookalike 2-of-3	
+f170r_L09	7	m		passC	
+f170r_L09	8	L		passC	
+f170r_L09	9	c	M	lookalike 2-of-3	
+f170r_L09	10	l		passC	
+f170r_L09	11	d		passC	
+f170r_L09	12	m		passC	
+f170r_L09	13	p	M	lookalike 2-of-3	
+f170r_L09	14	#		passC	
+f170r_L09	15	tz		passC	
+f170r_L09	16	L		passC	
+f170r_L09	17	:		passC	
+f170r_L09	18	:		passC	
+f170r_L09	19	m		passC	
+f170r_L09	20	Z	M	lookalike 2-of-3	
+f170r_L09	21	@		passC	
+f170r_L09	22	P		passC	
+f170r_L09	23	o		passC	
+f170r_L09	24	o		passC	
+f170r_L09	25	g		passC	
+f170r_L09	26	d		passC	
+f170r_L09	27	tz		passC	
+f170r_L09	28	m		passC	
+f170r_L09	29	p	M	lookalike 2-of-3	
+f170r_L09	30	#		passC	
+f170r_L09	31	c	M	lookalike 2-of-3	
+f170r_L09	32	m		passC	
+f170r_L09	33	p	M	lookalike 2-of-3	
+f170r_L09	34	d		passC	
+f170r_L09	35	m		passC	
+f170r_L09	36	P		passC	
+f170r_L09	37	o		passC	
+f170r_L09	38	o		passC	
+f170r_L09	39	g		passC	
+f170r_L09	40	P		passC	
+f170r_L09	41	tz		passC	
+f170r_L09	42	:		passC	
+f170r_L09	43	#		passC	
+f170r_L09	44	3	H	lookalike 2-of-3	
+f170r_L09	45	m		passC	
+f170r_L10	1	+	M	lookalike 2-of-3	
+f170r_L10	2	m		passC	
+f170r_L10	3	p	M	lookalike 2-of-3	
+f170r_L10	4	6		passC	
+f170r_L10	5	tz		passC	
+f170r_L10	6	d		passC	
+f170r_L10	7	tz		passC	
+f170r_L10	8	6		passC	
+f170r_L10	9	p		passC	
+f170r_L10	10	tz		passC	
+f170r_L10	11	P		passC	
+f170r_L10	12	g		passC	
+f170r_L10	13	tz		passC	
+f170r_L10	14	m		passC	
+f170r_L10	15	p	M	lookalike 2-of-3	
+f170r_L10	16	o		passC	
+f170r_L10	17	6	M	lookalike 2-of-3	
+f170r_L10	18	:		passC	
+f170r_L10	19	o		passC	
+f170r_L10	20	o		passC	
+f170r_L10	21	x		passC	
+f170r_L10	22	o		passC	
+f170r_L10	23	o		passC	
+f170r_L10	24	g		passC	
+f170r_L10	25	P		passC	
+f170r_L10	26	z		passC	
+f170r_L10	27	5		passC	
+f170r_L10	28	o		passC	
+f170r_L10	29	d		passC	
+f170r_L10	30	d		passC	
+f170r_L10	31	p	M	lookalike 2-of-3	
+f170r_L10	32	#		passC	
+f170r_L10	33	z		passC	
+f170r_L10	34	o		passC	
+f170r_L10	35	o		passC	
+f170r_L10	36	#		passC	
+f170r_L10	37	d		passC	
+f170r_L10	38	r		passC	
+f170r_L10	39	#		passC	
+f170r_L10	40	u	M	lookalike 2-of-3	
+f170r_L10	41	m		passC	
+f170r_L10	42	y		passC	
+f170r_L10	43	d		passC	
+f170r_L10	44	a		passC	
+f170r_L10	45	P		passC	
+f170r_L10	46	k		passC	
+f170r_L10	47	m		passC	
+f170r_L10	48	@		passC	
+f170r_L11	1	u	M	lookalike 2-of-3	
+f170r_L11	2	y		passC	
+f170r_L11	3	y		passC	
+f170r_L11	4	m		passC	
+f170r_L11	5	#		passC	
+f170r_L11	6	d		passC	
+f170r_L11	7	o		passC	
+f170r_L11	8	o		passC	
+f170r_L11	9	#		passC	
+f170r_L11	10	:		passC	
+f170r_L11	11	:		passC	
+f170r_L11	12	7		passC	
+f170r_L11	13	g		passC	
+f170r_L11	14	P		passC	
+f170r_L11	15	tz		passC	
+f170r_L11	16	d		passC	
+f170r_L11	17	d		passC	
+f170r_L11	18	tz		passC	
+f170r_L11	19	#		passC	
+f170r_L11	20	P		passC	
+f170r_L11	21	o		passC	
+f170r_L11	22	o		passC	
+f170r_L11	23	m		passC	
+f170r_L11	24	:		passC	
+f170r_L11	25	:		passC	
+f170r_L11	26	to		passC	
+f170r_L11	27	z	M	lookalike 2-of-3	
+f170r_L11	28	m		passC	
+f170r_L11	29	d		passC	
+f170r_L11	30	tz		passC	
+f170r_L11	31	p		passC	
+f170r_L11	32	#		passC	
+f170r_L11	33	m		passC	
+f170r_L11	34	j		passC	
+f170r_L11	35	tz		passC	
+f170r_L11	36	4	H	lookalike 2-of-3	
+f170r_L11	37	m		passC	
+f170r_L11	38	p		passC	
+f170r_L11	39	:		passC	
+f170r_L11	40	:		passC	
+f170r_L11	41	7		passC	
+f170r_L11	42	3	H	lookalike 2-of-3	
+f170r_L11	43	m		passC	
+f170r_L11	44	d		passC	
+f170r_L11	45	P		passC	
+f170r_L11	46	2	M	lookalike 2-of-3	
+f170r_L11	47	P		passC	
+f170r_L12	1	4	H	lookalike 2-of-3	
+f170r_L12	2	m		passC	
+f170r_L12	3	x		passC	
+f170r_L12	4	#		passC	
+f170r_L12	5	m		passC	
+f170r_L12	6	2		passC	
+f170r_L12	7	P		passC	
+f170r_L12	8	tz		passC	
+f170r_L12	9	d		passC	
+f170r_L12	10	y		passC	
+f170r_L12	11	y		passC	
+f170r_L12	12	m		passC	
+f170r_L12	13	L		passC	
+f170r_L12	14	d		passC	
+f170r_L12	15	z		passC	
+f170r_L12	16	y		passC	
+f170r_L12	17	y		passC	
+f170r_L12	18	m		passC	
+f170r_L12	19	z		passC	
+f170r_L12	20	tz		passC	
+f170r_L12	21	d		passC	
+f170r_L12	22	tz		passC	
+f170r_L12	23	2		passC	
+f170r_L12	24	o		passC	
+f170r_L12	25	o		passC	
+f170r_L12	26	6		passC	
+f170r_L12	27	y		passC	
+f170r_L12	28	y		passC	
+f170r_L12	29	m		passC	
+f170r_L12	30	g	M	lookalike 2-of-3	
+f170r_L12	31	d		passC	
+f170r_L12	32	g		passC	
+f170r_L12	33	#		passC	
+f170r_L12	34	u	M	lookalike 2-of-3	
+f170r_L12	35	g		passC	
+f170r_L12	36	a		passC	
+f170r_L12	37	z		passC	
+f170r_L12	38	m		passC	
+f170r_L12	39	P		passC	
+f170r_L12	40	m		passC	
+f170r_L12	41	p		passC	
+f170r_L12	42	#		passC	
+f170r_L12	43	m		passC	
+f170r_L12	44	#		passC	
+f170r_L12	45	to		passC	
+f170r_L12	46	2		passC	
+f170r_L12	47	m		passC	
+f170r_L13	1	j		lookalike UNSETTLED	f170r_L13.1: readers j/g, look-alike j (L); which of g, j?
+f170r_L13	2	to		passC	
+f170r_L13	3	2		passC	
+f170r_L13	4	m		passC	
+f170r_L13	5	d		passC	
+f170r_L13	6	o		passC	
+f170r_L13	7	o		passC	
+f170r_L13	8	p		passC	
+f170r_L13	9	4	H	lookalike 2-of-3	
+f170r_L13	10	d		passC	
+f170r_L13	11	z		passC	
+f170r_L13	12	m		passC	
+f170r_L13	13	d		passC	
+f170r_L13	14	m		passC	
+f170r_L13	15	x		passC	
+f170r_L13	16	2		passC	
+f170r_L13	17	tz		passC	
+f170r_L13	18	tz		passC	
+f170r_L13	19	p		passC	
+f170r_L13	20	tz		passC	
+f170r_L13	21	x		passC	
+f170r_L13	22	#		passC	
+f170r_L13	23	g		passC	
+f170r_L13	24	m		passC	
+f170r_L13	25	x		passC	
+f170r_L13	26	II	M	lookalike 2-of-3	
+f170r_L13	27	P		passC	
+f170r_L13	28	tz		passC	
+f170r_L13	29	d		passC	
+f170r_L13	30	y		passC	
+f170r_L13	31	y		passC	
+f170r_L13	32	m		passC	
+f170r_L13	33	d		passC	
+f170r_L13	34	P		passC	
+f170r_L13	35	o		passC	
+f170r_L13	36	o		passC	
+f170r_L13	37	6		passC	
+f170r_L13	38	#		passC	
+f170r_L13	39	g	M	lookalike 2-of-3	
+f170r_L13	40	m		passC	
+f170r_L13	41	d		passC	
+f170r_L13	42	m		passC	
+f170r_L13	43	p		passC	
+f170r_L13	44	c	M	lookalike 2-of-3	
+f170r_L13	45	P		passC	
+f170r_L13	46	g	M	lookalike 2-of-3	
+f170r_L13	47	y		passC	
+f170r_L13	48	y		passC	
+f170r_L13	49	m		passC	
+f170r_L13	50	p		passC	
+f170r_L13	51	#		passC	
+f170r_L14	1	d		passC	
+f170r_L14	2	m		passC	
+f170r_L14	3	y		passC	
+f170r_L14	4	d		passC	
+f170r_L14	5	4	M	lookalike 2-of-3	
+f170r_L14	6	y		passC	
+f170r_L14	7	y		passC	
+f170r_L14	8	m		passC	
+f170r_L14	9	o		passC	
+f170r_L14	10	o		passC	
+f170r_L14	11	g		passC	
+f170r_L14	12	d		passC	
+f170r_L14	13	4		lookalike UNSETTLED	f170r_L14.13: readers 4/+, look-alike + (L); which of +, 4?
+f170r_L14	14	c		passC	
+f170r_L14	15	P		passC	
+f170r_L14	16	V		passC	
+f170r_L14	17	y		passC	
+f170r_L14	18	tz		passC	
+f170r_L14	19	d		passC	
+f170r_L14	20	p		passC	
+f170r_L14	21	d		passC	
+f170r_L14	22	P		passC	
+f170r_L14	23	o		passC	
+f170r_L14	24	o		passC	
+f170r_L14	25	m		passC	
+f170r_L14	26	:		passC	
+f170r_L14	27	:		passC	
+f170r_L14	28	y		passC	
+f170r_L14	29	y		passC	
+f170r_L14	30	m		passC	
+f170r_L14	31	x		passC	
+f170r_L14	32	m		passC	
+f170r_L14	33	x	M	lookalike 2-of-3	
+f170r_L14	34	m		passC	
+f170r_L14	35	6		passC	
+f170r_L14	36	@		passC	
+f170r_L14	37	tz		passC	
+f170r_L14	38	m		passC	
+f170r_L14	39	p		passC	
+f170r_L14	40	:		passC	
+f170r_L14	41	:		passC	
+f170r_L14	42	m		passC	
+f170r_L14	43	z		passC	
+f170r_L14	44	m		passC	
+f170r_L14	45	2		passC	
+f170r_L14	46	d		passC	
+f170r_L14	47	o		passC	
+f170r_L14	48	o		passC	
+f170r_L14	49	g		passC	
+f170r_L14	50	m		passC	
+f170r_L14	51	:		passC	
+f170r_L14	52	:		passC	
+f170r_L14	53	d		passC	
+f170r_L15	1	l		lookalike UNSETTLED	f170r_L15.1: readers l/2, look-alike 2 (L); which of 2, l?
+f170r_L15	2	y		passC	
+f170r_L15	3	#		passC	
+f170r_L15	4	c	M	lookalike 2-of-3	
+f170r_L15	5	l		passC	
+f170r_L15	6	y		passC	
+f170r_L15	7	y		passC	
+f170r_L15	8	m		passC	
+f170r_L15	9	o		passC	
+f170r_L15	10	o		passC	
+f170r_L15	11	g		passC	
+f170r_L15	12	2		passC	
+f170r_L15	13	d		passC	
+f170r_L15	14	4		lookalike UNSETTLED	f170r_L15.14: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L15	15	p		passC	
+f170r_L15	16	x		passC	
+f170r_L15	17	#		passC	
+f170r_L15	18	y		passC	
+f170r_L15	19	m		passC	
+f170r_L15	20	L		passC	
+f170r_L15	21	a	M	lookalike 2-of-3	
+f170r_L15	22	:		passC	
+f170r_L15	23	:		passC	
+f170r_L15	24	7		passC	
+f170r_L15	25	d		passC	
+f170r_L15	26	d		passC	
+f170r_L15	27	4		lookalike UNSETTLED	f170r_L15.27: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L15	28	#		passC	
+f170r_L15	29	4	H	lookalike 2-of-3	
+f170r_L15	30	m		passC	
+f170r_L15	31	p		passC	
+f170r_L15	32	d		passC	
+f170r_L15	33	d		passC	
+f170r_L15	34	P		passC	
+f170r_L15	35	p		passC	
+f170r_L15	36	d		passC	
+f170r_L15	37	tz		passC	
+f170r_L15	38	o		passC	
+f170r_L15	39	o		passC	
+f170r_L15	40	+	M	lookalike 2-of-3	
+f170r_L15	41	m		passC	
+f170r_L15	42	2		passC	
+f170r_L15	43	m		passC	
+f170r_L15	44	p		passC	
+f170r_L15	45	#		passC	
+f170r_L15	46	d		passC	
+f170r_L15	47	tz		passC	
+f170r_L15	48	6		passC	
+f170r_L15	49	@		passC	
+f170r_L16	1	c		passC	
+f170r_L16	2	m		passC	
+f170r_L16	3	p		passC	
+f170r_L16	4	d		passC	
+f170r_L16	5	m		passC	
+f170r_L16	6	p		passC	
+f170r_L16	7	#		passC	
+f170r_L16	8	a	M	lookalike 2-of-3	
+f170r_L16	9	d		passC	
+f170r_L16	10	tz		passC	
+f170r_L16	11	d		passC	
+f170r_L16	12	P		passC	
+f170r_L16	13	II	M	lookalike 2-of-3	
+f170r_L16	14	4		passC	
+f170r_L16	15	m		passC	
+f170r_L16	16	x		passC	
+f170r_L16	17	#		passC	
+f170r_L16	18	m		passC	
+f170r_L16	19	m		passC	
+f170r_L16	20	o		passC	
+f170r_L16	21	o		passC	
+f170r_L16	22	x		passC	
+f170r_L16	23	#		passC	
+f170r_L16	24	m		passC	
+f170r_L16	25	o		passC	
+f170r_L16	26	o		passC	
+f170r_L16	27	@		passC	
+f170r_L16	28	m		passC	
+f170r_L16	29	x	M	lookalike 2-of-3	
+f170r_L16	30	m		passC	
+f170r_L16	31	j		passC	
+f170r_L16	32	to		passC	
+f170r_L16	33	2		passC	
+f170r_L16	34	m		passC	
+f170r_L16	35	tz		passC	
+f170r_L16	36	p		passC	
+f170r_L16	37	#		passC	
+f170r_L16	38	m		passC	
+f170r_L16	39	p		passC	
+f170r_L16	40	#		passC	
+f170r_L16	41	tz		passC	
+f170r_L16	42	d		passC	
+f170r_L16	43	p		passC	
+f170r_L16	44	z		passC	
+f170r_L16	45	m		passC	
+f170r_L16	46	p	M	lookalike 2-of-3	
+f170r_L17	1	#		passC	
+f170r_L17	2	g		passC	
+f170r_L17	3	m		passC	
+f170r_L17	4	L		passC	
+f170r_L17	5	m		passC	
+f170r_L17	6	p		passC	
+f170r_L17	7	:		passC	
+f170r_L17	8	:		passC	
+f170r_L17	9	7		passC	
+f170r_L17	10	c		passC	
+f170r_L17	11	P		passC	
+f170r_L17	12	y		passC	
+f170r_L17	13	#		passC	
+f170r_L17	14	tz		passC	
+f170r_L17	15	d		passC	
+f170r_L17	16	tz		passC	
+f170r_L17	17	d		passC	
+f170r_L17	18	o		passC	
+f170r_L17	19	o		passC	
+f170r_L17	20	x		passC	
+f170r_L17	21	#		passC	
+f170r_L17	22	m		passC	
+f170r_L17	23	x		passC	
+f170r_L17	24	#		passC	
+f170r_L17	25	m		passC	
+f170r_L17	26	P		passC	
+f170r_L17	27	:		passC	
+f170r_L17	28	:		passC	
+f170r_L17	29	m		passC	
+f170r_L17	30	d		passC	
+f170r_L17	31	y		passC	
+f170r_L17	32	m		passC	
+f170r_L17	33	a		passC	
+f170r_L17	34	g		passC	
+f170r_L17	35	m		passC	
+f170r_L17	36	d		passC	
+f170r_L17	37	5		passC	
+f170r_L17	38	#		passC	
+f170r_L17	39	P		passC	
+f170r_L17	40	o		passC	
+f170r_L17	41	o		passC	
+f170r_L17	42	m		passC	
+f170r_L17	43	:		passC	
+f170r_L17	44	:		passC	
+f170r_L17	45	to		passC	
+f170r_L17	46	2		passC	
+f170r_L17	47	m		passC	
+f170r_L18	1	:		passC	
+f170r_L18	2	:		passC	
+f170r_L18	3	m		passC	
+f170r_L18	4	x		passC	
+f170r_L18	5	#		passC	
+f170r_L18	6	m		passC	
+f170r_L18	7	a		passC	
+f170r_L18	8	m		passC	
+f170r_L18	9	#		passC	
+f170r_L18	10	tz		passC	
+f170r_L18	11	#		passC	
+f170r_L18	12	m		passC	
+f170r_L18	13	#		passC	
+f170r_L18	14	g		passC	
+f170r_L18	15	d		passC	
+f170r_L18	16	2		passC	
+f170r_L18	17	4		passC	
+f170r_L18	18	6		passC	
+f170r_L18	19	m		passC	
+f170r_L18	20	d		passC	
+f170r_L18	21	P		passC	
+f170r_L18	22	p		passC	
+f170r_L18	23	d		passC	
+f170r_L18	24	P		passC	
+f170r_L18	25	k		passC	
+f170r_L18	26	o		passC	
+f170r_L18	27	o		passC	
+f170r_L18	28	m		passC	
+f170r_L18	29	o		passC	
+f170r_L18	30	o		passC	
+f170r_L18	31	y		passC	
+f170r_L18	32	y		passC	
+f170r_L18	33	P		passC	
+f170r_L18	34	to		passC	
+f170r_L18	35	2		passC	
+f170r_L18	36	m		passC	
+f170r_L18	37	j		passC	
+f170r_L18	38	m		passC	
+f170r_L18	39	d		passC	
+f170r_L18	40	m		passC	
+f170r_L18	41	p		passC	
+f170r_L18	42	g		passC	
+f170r_L18	43	a		passC	
+f170r_L18	44	tz		passC	
+f170r_L18	45	P		passC	
+f170r_L18	46	p		passC	
+f170r_L18	47	#		passC	
+f170r_L19	1	d		passC	
+f170r_L19	2	m		passC	
+f170r_L19	3	a		passC	
+f170r_L19	4	j		passC	
+f170r_L19	5	m		passC	
+f170r_L19	6	2		passC	
+f170r_L19	7	m		passC	
+f170r_L19	8	p	M	lookalike 2-of-3	
+f170r_L19	9	#		passC	
+f170r_L19	10	z		passC	
+f170r_L19	11	m		passC	
+f170r_L19	12	a		passC	
+f170r_L19	13	P		passC	
+f170r_L19	14	p		passC	
+f170r_L19	15	#		passC	
+f170r_L19	16	y		passC	
+f170r_L19	17	y		passC	
+f170r_L19	18	m		lookalike UNSETTLED	f170r_L19.18: readers m/u, look-alike m (L); which of m, u?
+f170r_L19	19	u	M	lookalike 2-of-3	
+f170r_L19	20	g		passC	
+f170r_L19	21	m		passC	
+f170r_L19	22	o		passC	
+f170r_L19	23	o		passC	
+f170r_L19	24	d		passC	
+f170r_L19	25	x		passC	
+f170r_L19	26	#		passC	
+f170r_L19	27	z		passC	
+f170r_L19	28	m		passC	
+f170r_L19	29	z	M	lookalike 2-of-3	
+f170r_L19	30	d		passC	
+f170r_L19	31	p		passC	
+f170r_L19	32	d		passC	
+f170r_L19	33	tz		passC	
+f170r_L19	34	m		passC	
+f170r_L19	35	a		passC	
+f170r_L19	36	g		passC	
+f170r_L19	37	z		passC	
+f170r_L19	38	m		passC	
+f170r_L19	39	y		passC	
+f170r_L19	40	y		passC	
+f170r_L19	41	d		passC	
+f170r_L19	42	4		lookalike UNSETTLED	f170r_L19.42: readers 4/+, look-alike p (M); which of +, 4, p?
+f170r_L19	43	4		passC	
+f170r_L19	44	a		passC	
+f170r_L19	45	m		passC	
+f170r_L19	46	a		passC	
+f170r_L19	47	tz		passC	
+f170r_L20	1	j		passC	
+f170r_L20	2	m		passC	
+f170r_L20	3	tz		passC	
+f170r_L20	4	6		passC	
+f170r_L20	5	@		passC	
+f170r_L20	6	P		passC	
+f170r_L20	7	o		passC	
+f170r_L20	8	o		passC	
+f170r_L20	9	d		passC	
+f170r_L20	10	tz	H	lookalike 2-of-3	
+f170r_L20	11	m		passC	
+f170r_L20	12	p		passC	
+f170r_L20	13	#		passC	
+f170r_L20	14	m		passC	
+f170r_L20	15	x		passC	
+f170r_L20	16	#		passC	
+f170r_L20	17	m		passC	
+f170r_L20	18	:		passC	
+f170r_L20	19	:		passC	
+f170r_L20	20	d		passC	
+f170r_L20	21	p		passC	
+f170r_L20	22	#		passC	
+f170r_L20	23	y		passC	
+f170r_L20	24	P		passC	
+f170r_L20	25	tz		passC	
+f170r_L20	26	p		passC	
+f170r_L20	27	:		passC	
+f170r_L20	28	:		passC	
+f170r_L20	29	#		passC	
+f170r_L20	30	@		passC	
+f170r_L20	31	d		passC	
+f170r_L20	32	m		passC	
+f170r_L20	33	a		passC	
+f170r_L20	34	g	M	lookalike 2-of-3	
+f170r_L20	35	m		passC	
+f170r_L20	36	:		passC	
+f170r_L20	37	:		passC	
+f170r_L20	38	tz		passC	
+f170r_L20	39	u	M	lookalike 2-of-3	
+f170r_L20	40	tz		passC	
+f170r_L20	41	#		passC	
+f170r_L20	42	m		passC	
+f170r_L20	43	L		passC	
+f170r_L20	44	P		passC	
+f170r_L20	45	a		lookalike UNSETTLED	f170r_L20.45: readers a/u, look-alike X_NEW (M); which of X_NEW, a, u?
+f170r_L20	46	P		passC	
+f170r_L20	47	p		passC	
+f170r_L20	48	#		passC	
+f170r_L21	1	a		lookalike UNSETTLED	f170r_L21.1: readers a/c, look-alike u (M); which of a, c, u?
+f170r_L21	2	P		passC	
+f170r_L21	3	g	M	lookalike 2-of-3	
+f170r_L21	4	:		passC	
+f170r_L21	5	:		passC	
+f170r_L21	6	7		passC	
+f170r_L21	7	z		passC	
+f170r_L21	8	d		passC	
+f170r_L21	9	z		passC	
+f170r_L21	10	m		passC	
+f170r_L21	11	p	M	lookalike 2-of-3	
+f170r_L21	12	m		passC	
+f170r_L21	13	x		passC	
+f170r_L21	14	#		passC	
+f170r_L21	15	m		passC	
+f170r_L21	16	a		passC	
+f170r_L21	17	6		passC	
+f170r_L21	18	o		passC	
+f170r_L21	19	o		passC	
+f170r_L21	20	x		passC	
+f170r_L21	21	#		passC	
+f170r_L21	22	d		passC	
+f170r_L21	23	x		passC	
+f170r_L21	24	#		passC	
+f170r_L21	25	z		passC	
+f170r_L21	26	m		passC	
+f170r_L21	27	p		passC	
+f170r_L21	28	p		passC	
+f170r_L21	29	P		passC	
+f170r_L21	30	tz		passC	
+f170r_L21	31	:		passC	
+f170r_L21	32	:		passC	
+f170r_L21	33	R		passC	
+f170r_L21	34	a		lookalike UNSETTLED	f170r_L21.34: readers a/c, look-alike u (M); which of a, c, u?
+f170r_L21	35	P		passC	
+f170r_L21	36	g		passC	
+f170r_L21	37	y		passC	
+f170r_L21	38	y		passC	
+f170r_L21	39	m		passC	
+f170r_L21	40	P		passC	
+f170r_L21	41	d		passC	
+f170r_L21	42	z	M	lookalike 2-of-3	
+f170r_L21	43	m		passC	
+f170r_L21	44	p		passC	
+f170r_L21	45	z		passC	
+f170r_L21	46	o		passC	
+f170r_L21	47	o		passC	
+f170r_L21	48	7		passC	
+f170r_L21	49	d		passC	
+f170r_L21	50	z		passC	
+f170r_L21	51	tz		passC	
+f170r_L21	52	#		passC	
+f170r_L21	53	m		passC	
+f170r_L21	54	2		passC	
+f170r_L21	55	#		lookalike UNSETTLED	f170r_L21.55: readers #/3, look-alike 3 (L); which of #, 3?
+f170r_L22	1	a		passC	
+f170r_L22	2	c		lookalike UNSETTLED	f170r_L22.2: readers c/u, look-alike c (L); which of a, c, u?
+f170r_L22	3	p	M	lookalike 2-of-3	
+f170r_L22	4	d		passC	
+f170r_L22	5	4		passC	
+f170r_L22	6	p		lookalike UNSETTLED	f170r_L22.6: readers p/+, look-alike r (L); which of +, 4, p, r?
+f170r_L22	7	z		passC	
+f170r_L22	8	o		passC	
+f170r_L22	9	o		passC	
+f170r_L22	10	y		passC	
+f170r_L22	11	y		passC	
+f170r_L22	12	m		passC	
+f170r_L22	13	a		passC	
+f170r_L22	14	g		passC	
+f170r_L22	15	a		lookalike UNSETTLED	f170r_L22.15: readers a/c, look-alike u (M); which of a, c, u?
+f170r_L22	16	P		passC	
+f170r_L22	17	g		passC	
+f170r_L22	18	:		passC	
+f170r_L22	19	:		passC	
+f170r_L22	20	7		passC	
+f170r_L22	21	u	M	lookalike 2-of-3	
+f170r_L22	22	d		passC	
+f170r_L22	23	tz		passC	
+f170r_L22	24	y		passC	
+f170r_L22	25	y		passC	
+f170r_L22	26	d		passC	
+f170r_L22	27	p		passC	
+f170r_L22	28	y		passC	
+f170r_L22	29	y		passC	
+f170r_L22	30	m		passC	
+f170r_L22	31	a		passC	
+f170r_L22	32	g		passC	
+f170r_L22	33	m		passC	
+f170r_L22	34	a		passC	
+f170r_L22	35	x		passC	
+f170r_L22	36	#		passC	
+f170r_L22	37	z		passC	
+f170r_L22	38	d		passC	
+f170r_L22	39	o		passC	
+f170r_L22	40	o		passC	
+f170r_L22	41	p		passC	
+f170r_L22	42	m		passC	
+f170r_L22	43	#		passC	
+f170r_L22	44	m		passC	
+f170r_L22	45	II	M	lookalike 2-of-3	
+f170r_L22	46	u	M	lookalike 2-of-3	
+f170r_L22	47	d		passC	
+f170r_L22	48	z		passC	
+f170r_L22	49	m		passC	
+f170r_L22	50	d		passC	
+f170r_L22	51	7		passC	

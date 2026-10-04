@@ -1,0 +1,101 @@
+item	label	conf	second	note
+1	d	H		round body with ascender curling back left
+2	#	H		double-crossed sign after x
+3	g	H		closed bowl with looped descender
+4	d	H		round bodied d-curl after bold b-like stroke
+5	:	H		second of two dots
+6	o	M		small round oval
+7	tz	H		t with z-like descender before 6
+8	:	H		first of two dots
+9	o	M		small round oval in run of o
+10	P	H		pi-like two uprights with top bar
+11	m	M		three humps with tail
+12	d	M	S	tall stroke with small loop foot after m
+13	m	H		three humps
+14	m	H		three humps before L
+15	#	H		double-crossed sign
+16	P	M	#	pi-like bars between m and m
+17	d	H		round body ascender curl
+18	a	H		plain a before tz
+19	:	H		first of two dots
+20	tz	H		t joined to z descender
+21	p	H		p with descender after m
+22	g	H		g with hooked descender
+23	g	M	y	g-like with hooked tail after y
+24	p	H		p with descender before #
+25	p	H		p with descender after m
+26	g	M	y	g with flourished tail after m
+27	g	M		hooked descender g after a
+28	g	M	y	g-like with descender
+29	#	H		double-crossed sign between pi and r
+30	P	M		pi-like between p and g
+31	o	M	a	small round loop before 6
+32	X_NEW	L	7	L-like horizontal-foot stroke after oo, not matching candidates
+33	d	H		round d after # and tall d-glyph
+34	tz	H		t joined to z descender
+35	z	M	3	flat z-like after pi
+36	4	H		crossed descender 4 after p
+37	3	M		round-topped 3 at line start
+38	d	H		round d after ##
+39	tz	H		t with z descender after g
+40	m	M		m after curl at line end
+41	l	H		plain l after c-like stroke
+42	#	H		double-crossed after g
+43	r	L	p	thin stroke before m, unclear
+44	#	H		double-crossed after x
+45	tz	H		t with z descender
+46	d	H		round d after oo
+47	r	M	y	r-like with loop before d
+48	m	H		three humps before 2
+49	o	H		small round o
+50	o	H		small round o before o m 6
+51	:	H		dot before # m
+52	a	M	o	a-like after o before g
+53	tz	H		t with z descender
+54	a	H		plain a after y m
+55	:	H		first of two dots
+56	tz	H		t with z descender
+57	m	H		three humps
+58	m	H		three humps
+59	o	H		small round o
+60	6	H		digit 6 after m
+61	o	H		small round o
+62	m	H		three humps after L
+63	P	H		pi-like after 6
+64	p	H		p with descender after m
+65	k	H		k with loop shoulder
+66	#	H		double-crossed after m
+67	#	H		double-crossed after oo
+68	o	H		small round o
+69	d	H		round d after #
+70	:	H		two dots
+71	j	H		j with descender hook
+72	m	H		three humps after x
+73	u	M	c	two open strokes small
+74	g	H		g closed bowl after u-like
+75	d	M	S	tall stroke with small loop foot
+76	y	M	r	swash y with lead-in stroke
+77	to	H		joined t plus closed loop
+78	p	H		p with descender before 4
+79	P	M		pi-like bars
+80	:	H		second of two dots
+81	r	L	P	big swash loop stroke after pi
+82	V	M	d	big swash backslash stroke curling into o
+83	tz	H		t with z descender
+84	m	H		three humps
+85	#	H		double-crossed after x
+86	m	H		three humps between 2 and p
+87	m	H		three humps after #
+88	S	H		long thick tall stroke no crossbar
+89	o	H		small round o
+90	j	H		j with descender hook
+91	d	M	S	tall stroke with loop foot, window position unclear
+92	#	H		double-crossed after two dots
+93	d	M	S	tall stroke with loop foot after g
+94	V	H		long diagonal backslash stroke
+95	m	H		three humps
+96	p	H		p with descender
+97	d	H		round d after #
+98	S	M	d	tall long stroke with hooked top before d p
+99	z	H		flat-topped small z between o o pairs
+100	g	H		g with hooked descender
