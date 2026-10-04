@@ -18,10 +18,13 @@ unless more glossed material appears (check the four new leaves' reports for any
        ORDER-shuffled signs (20 seeds), (ii) the 20 order-shuffled-ciphertext anneal keys already in `glossctl/key_shuf*.tsv` applied to the
        UNshuffled new leaves. PASS when the real decode beats the max of (ii) and the p95 of (i) on the pooled new leaves. New shapes with no
        key value count as unkeyed in all arms equally.
-   (b) pooled re-anneal: the same recipe (homophonic_anneal seed 1, restarts 32, fr16 order 3) on all six leaves, holding only the 6 C signs
-       of READ2-C1161B (not the 10 strict-repair moves, per C1LOOSE), with C1SPLIT's recommended split/merge; gate = block-vs-gloss match
-       (the c186R block is inside the stream) beats the same anneal on order-shuffled pooled ciphertext (10 seeds, max) AND the c185R judge of
+   (b) pooled re-anneal: the same recipe (homophonic_anneal restarts 32, fr16 order 3) on all six leaves -- **seeds 1-5, keep the best
+       anneal score** (C1SPLIT found single-seed results sensitive to any stream change; same 5 seeds in every control arm) -- holding only the 6 C signs
+       of READ2-C1161B (not the 10 strict-repair moves, per C1LOOSE), with both look-alike pairs MERGED (C1SPLIT: q/ls and S splits both FAIL); gate = block-vs-gloss match
+       (the c186R block is inside the stream) beats the same anneal on order-shuffled pooled ciphertext (5 shuffle seeds, each annealed with seeds 1-2, best per shuffle; gate = max over the 5) AND the c185R judge of
        the pooled key is at least the current key's -1.136 (state exactly).
+   Time one anneal on the pooled stream first; if it exceeds 2 min, lower restarts for EVERY arm alike and write the number into the
+   pre-registration before running any arm (15 anneals in all; stop before one that would cross 80% of the box, reporting what ran).
 2. Run (a); paste numbers. Then merge: `ciphertext.tsv` gains the four leaves' reconciled rows (as transcribed, never repaired; NEW* labels
    kept as their own signs; same columns), and `tx/stream_all.txt` regenerated.
 3. Run (b) serially. Adopt the pooled key into key.tsv ONLY if (b) PASSes (grades: C for the 6, S for annealed, M where the pass marked M);
