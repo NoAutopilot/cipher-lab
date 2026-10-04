@@ -12,6 +12,9 @@ images/p63/manifest_f194r_low.json) and read by two further blind passes. So: ro
 tx/f194r_low_pass{A,B}.tsv L01-L10 renumbered. Pass A joins pass A, B joins B (each line still read by two independent blind readers).
 A '[...]' nested inside a '[PLAIN:...]' (low pass A L10, the plain close) is rewritten '(...)' so tx/viv63_clean.py removes the whole
 plain stretch; no sign is changed.
+N7-VIV63G (4 Oct 2026, PREREG-N7VIV63G.md): page lines 5-10 re-cut flat from the same region deskewed -1.4 deg (rows 840-1530; crops
+c199_f194r_mid_LNN, 3 segments; images/p63/manifest_f194r_mid.json) and read by two more blind Sonnet passes, tx/f194r_mid_pass{A,B}.tsv
+L01-L06, inserted here as rows L05-L10 (A joins A, B joins B). Rows L01-L04 and L11-L20 unchanged.
 """
 import re
 import os
@@ -22,6 +25,10 @@ for p in 'AB':
         r = ln.rstrip('\n').split('\t', 1)
         if r[0].startswith('L') and int(r[0][1:]) <= 4:
             rows.append(f'{r[0]}\t{r[1] if len(r) > 1 else ""}')
+    for ln in open(os.path.join(HERE, f'f194r_mid_pass{p}.tsv'), encoding='utf-8'):
+        r = ln.rstrip('\n').split('\t', 1)
+        if r[0].startswith('L'):
+            rows.append(f'L{int(r[0][1:]) + 4:02d}\t{r[1] if len(r) > 1 else ""}')
     for ln in open(os.path.join(HERE, f'f194r_low_pass{p}.tsv'), encoding='utf-8'):
         r = ln.rstrip('\n').split('\t', 1)
         if r[0].startswith('L'):
