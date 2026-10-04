@@ -29,3 +29,20 @@ test settles the cell; arm B's remap T31->o stays a fitted label remap reported 
 settle it: an image comparison of the T31-labelled tokens on f.244r (L03 tok 6, L09 tok 21/27/31) against those on f.275r
 (t31_witness.tsv rows) and against the table cell, then the period interlinear letters over f.244v L02-L03 / f.245r
 L04-L05 where they stand over a T31 token.
+
+### T31 image compare (RUN5-PIS4, 4 Oct 2026, one look by the worker, no subagent)
+Crops on disk only (f244r_L03_s1/s2, f244r_L09_s2, f275rL_L04_s2, f275rL_L05_s1) beside the table cells of
+henryiii_Vivonne5.png: images/t31_compare.jpg (p1-p4 f.244r, q1-q2 f.275r, t31/t36/t45 table cells).
+- f.244r, 4 of 4 T31-labelled tokens looked at (L03 tok 6, 26, 36; L09 tok 31): one shape, an x whose right arm
+  closes in a loop (a flattened "p"/rho form). It is not the table's bare x under m (T31); it is closest to the
+  table's circled loop sign under o (T45). The copy reads o at these places.
+- f.275r, 2 of 2 looked at (L04 the x before T30 near the line end; L05 tok 1): a crossed x with a hooked arm,
+  followed at once by a small o. That is the table's s cell "x with o" (T36, circled with r2); the readers cut it
+  into T31 + T30. The copy reads s at both places.
+- So the page signs are **two shapes**, neither the bare table x: the label T31 as the readers used it merges a
+  T45-like loop form (o) on f.244r and a T36 x+o form (s) on f.275r. The table cell (T31 = m) is not contradicted
+  by any token looked at; the "conflict" reads as a reader-label merge, not a table error.
+Standing unchanged: key86.tsv untouched, every T31 token stays M (rule 4: the shape match is an eye read at
+crop resolution, not the clear copy deciding each token). Next: re-label the T31 tokens of f.244r/f.275r by shape
+(loop -> T45, x+o -> T36) as a pre-registered relabel of the existing tsv files, then re-run kp86b/kp86e arm A
+unchanged and see whether these tokens move to C, disk only, ~$1.

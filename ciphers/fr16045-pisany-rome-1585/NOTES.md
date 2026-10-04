@@ -386,3 +386,39 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e, err 
 - [x] image-check: f.275r re-cut one line per band, montage checked
 - [ ] retry: per-line pipeline on f.275v-f.278r, f.75 and the other 1586-87 letters; Brienne for June 1588
 Verdict: keep going: 8 internal gaps; cheapest next: T31 image comparison ~$1; most valuable next: the remaining 4 Nov 1586 pages with the per-line reader shape, ~$8 per page
+
+## 24 Mar 1587 contact views and T31 image compare (RUN5-PIS4, 4 Oct 2026, 13:37-13:4x UTC)
+- (a) Unviewed leaves of the 24 Mar 1587 letter, 700 px (canvas = 2 x folio + 12; c608 carries "298", c610 "299", which
+  holds the offset): c607 (f.297v) clear; c608 (f.298r) clear; c610 (f.299r) clear; c611 (f.299v) clear; c613 (f.300v)
+  clear; **c617 (f.302v) cipher**: about 12 lines of cipher (about 500 signs at ~45 per line) in mid-page, after clear
+  text ending "... qui ... commandera" and before the clear "Pour l'Indult qu'elle me commande pourchasser po(ur) les
+  Cardinaux francois ..."; the left margin beside the block carries a period decipherment in a second hand (as on
+  f.301v). No blank leaf. So the 24 Mar 1587 letter has cipher on f.301v (read, kp87a) and f.302v (not read).
+  Colbert page for f.302v: not on disk (kp87a/colbert_p338_339.txt ends at p.339 "... repliquer ce que dessus");
+  by order it should follow p.339 (pp.339-341 inferred, not seen).
+- (b) T31 image compare: HYPOTHESES.md "T31 image compare". f.244r T31 tokens (4/4) are a loop form like the table's T45
+  (o); f.275r T31 tokens (2/2) are the table's T36 x+o (s), cut in two by the readers. Two shapes; the table cell m is
+  not contradicted. key86.tsv unchanged; T31 stays M. images/t31_compare.jpg.
+- Requests: Gallica 6 (c607, c608, c610, c611, c613, c617 at 700 px), all 200, >= 2.5 s apart; 0 other hosts. Subagent
+  calls: 0. Contact views kept in scratch (re-fetch command in images/manifest_pism.tsv).
+
+## Remaining gaps (RUN5-PIS4, 4 Oct 2026; merges RUN5-PIS3's list)
+Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e); 24 Mar 1587 f.301v (kp87a): all known-answer PASS with Tomokiyo's 1586-87 table against the Colbert clear copy; f.75 (1585) NON-TEST. 24 Mar 1587 leaves all viewed: cipher on f.301v and f.302v only.
+- 24 Mar 1587 f.302v (c617, about 12 lines) vs Colbert pp.339-341 - blocker: not-attempted; outside this brief; next: fetch Colbert c588-c589 to locate the passage, iiif_lines crops of c617, per-line two-reader pipeline as kp87a, ~$5
+- 4 Nov 1586 remaining cipher f.275v-f.278r and the f.278v head (c563-c569, about 7 dense pages) vs Colbert pp.122 ff. - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page (copy pages c480-c483 to locate), ~$8 per dense page
+- key86 T31 label (two page shapes: loop form ~T45 on f.244r, x+o = T36 on f.275r) - blocker: not-attempted; outside this brief; next: pre-registered shape relabel of the T31 tokens in tx86/ciphertext_f244r.tsv and tx86e/ciphertext_f275r.tsv, re-run kp86b/kp86e arm A unchanged, disk only, ~$1
+- key86 cell corrections (T45, T47, T49, T57) - blocker: not-attempted; arm B beats arm A by 0.008-0.020, not a separate test; next: pre-registered held-out test (fit on the 17 Sept pages, test on f.275r and f.301v, disk only), ~$1
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II; next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: re-read f.75 with the per-line reader shape, then test1.py unchanged, ~$5
+- 17 Sept 1586 second letter (f.246-247) and 8 Sept 1586 (f.228-234) vs Colbert - blocker: not-attempted; outside this brief; next: same per-line pipeline, ~$8 per dense page
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (RUN5-PIS4, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II clear copies paired with f.244r, f.244v/f.245r, f.275r and f.301v
+- [x] clear-pages: every leaf of the 24 Mar 1587 letter viewed (c606-c618); 17 Sept and 4 Nov 1586 mapped
+- [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.275r, f.301v; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: T31 shape relabel (two shapes found) and the T45/T47/T49/T57 remap, held-out test not yet run
+- [x] image-check: T31 tokens compared with the table cells (images/t31_compare.jpg)
+- [ ] retry: per-line pipeline on f.302v, f.275v-f.278r, f.75 and the other 1586-87 letters; Brienne for June 1588
+Verdict: keep going: 8 internal gaps; cheapest next: T31 shape relabel ~$1; most valuable next: f.302v against the Colbert copy, ~$5
