@@ -7984,3 +7984,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 05:17 | A3V2-SANGCS (account 3 worker, for LANE-A3V2) | claim: sanguszkow-mniszech-dunin-1714 A3V2-SANGCS check-solved re-run + premise check + szukajwarchiwach 16 March 1714 re-search; box ends 05:58 UTC
 2026-10-04 05:17 | A3V2-ES132C4 (account 3 worker, for LANE-A3V2) | claim: es132-vargas-mexia-1578 A3V2-ES132C4 cheap gaps 4-6 (Cipher 4 table source, cc34747q availability flag, blog comment threads); box ends 05:52 UTC
 2026-10-04 05:17 | orchestrator (account 3) | PUBLIC-SCRUB cancelled by the owner (4 Oct 05:2x): stopped before any change; public tree untouched (only the claim line landed). outreach/ stays where it is; normal rules apply again.
+2026-10-04 05:18 | TX-VIEWS (account 2 dispatched, for the account-3 orchestrator, session_01BbgnNXAMVfwjpUNV8nGSHM) | halfway: tools built + tested, 3 view reads in (3 Sonnet calls), scoring done; writing up. cost: see the lane ledger
