@@ -1,0 +1,28 @@
+row	codes
+L01	qb th rot + d c 4 y z eloop? 7 o p + z 4 7 o d? 7 7 NEW:caret a 4 q + S z rc?
+L02	eloop? rc? + p 4 S y a eloop? iii c qb a 4 phi w th + eloop? c qb y wb q?
+L03	th a y e wb S th 7 7 th rc? qb 7 w z qb S z eloop? 7 7 p 6r q? 8 4 q? th e
+L04	S w wb tz q 7 7 c qb p 4 S 4 4 qb a 4 ee z 6r q? 7 7 wb w 7 q? y 3
+L05	+ d z y + a wb z? 7 7 eloop? z S + y z 4 a th wb + phi 6r y qb d phi w +
+L06	y th iii s z qb 6r q p qb S th 3 ss wb + th 8 4 eloop? p 4 d 9 + w wb
+L07	w + y th 7 7 p 3 8 4 y 4 qb? iii y 4 ee S q? ee e + d p 4 y q? 9
+L08	z 4 a th w S z w o dia 7 7 eloop? z 7 7 z + wb tz q? qb rot 4 th 3 rc? 3
+L09	th 4 S z qb th 9 + o 7 wb + eloop? z 7 7 a z? 3 7 eloop? z y 4 q th e 4 ee
+L10	7 7 6 0 iib w o qb d p rot + 7 7 y S w + y 3 7 p + y 4 q qb rc?
+L11	box th 9 w th z q? qb p rot qb th p S S q? 7 7 a z? 3 7 eloop? z y 4 q th rot + S
+L12	y + th iib S 6 7 z qb S z 7 o iib 4 d S + phi 4 y iib y q? qb rc?
+L13	e qb y + w wb + S 3 th + 9 o 4 z w 4 S th s z th + 7 o y 4 q + S z
+L14	z 4 e qb y p q qb e y + th ss 7 o qb th rc? + S y + phi wb qb PLAIN:curou?
+L15	e + y th 4 S d 3 iii 6r qb z 7 7 wb S q iii 7 7 th rc? w + S 9?
+L16	e qb y 7 7 p qb iii q e 4 wb tz w p + phi? e wb S th w + a y th
+L17	box a wb z y + 9 th + o 7 wb qb NEW:caret S + th p rc? 4 th + 9 iii ee e iii f
+L18	ee? S z qb o + S q? 7 7 S qb S z q? a wb z? qb S 7 7 y S w + y iii
+L19	p 4 S th + w wb 4 4 d z w S iib y + S z S S phi rot 4 ls o q 7 7
+L20	7 + wb tz q qb e iii e qb y box d p q? 7 6 ss wb e qb th 9 box e S 7 wb w?
+L21	ss o 3 d z 7 7 a qb S z z 4 a z 7 6 ls 4 S 7 7 s z wb qb 6r 4 q
+L22	qb q box S z wb + th o qb w S th wb w + q? th iii 7 6 S w th qb w phi 3
+L23	p 4 a S + y z 7 7 e + a y 7 7 th z y q? p 4 d sd S + S iii 6?
+L24	o + S z iii eloop? z 4 a th p + S wb z? s z wb 4 S z S + a ss p + ee
+L25	wb? 4 w 7 iib 6r y + ss wb ss phi + d z w wb rot 4 ls o q 7 7 NEW:filled-triangle S qb
+L26	w z q 3 7 qb a wb z y q? phi y qb S z th + w phi S + a y 7 7 p + e qb q
+L27	s z 4 8 + y 4 q y + qb S S sd p rot qb th 8 S o 4 4 q + d qb S y

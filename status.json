@@ -3765,10 +3765,10 @@
     },
     {
       "target": "clair1161-avis-flandre-1688",
-      "title": "Clairambault 1161 Avis de Flandre: 3391 signs on six leaves; key fitted on two leaves reads the four unseen leaves above shuffled-key and shuffled-order controls (fr16 -1.268 vs -1.425 / -1.581, NEAR3-C1POOL); block-gloss match 0.612 vs shuffled max 0.265; judge FAIL (real_p05 -0.910); pooled re-anneal FAIL its c185R gate; C 360 / S 2670 / M 343 / U 37",
-      "next": "update the spec stream and brief a rule-7 re-derivation (~$0.5 + $3); key_crossmatch.py vs KEY-OFFICES.tsv (~$2); two fresh blind passes on c188L slope crops (~$4)",
-      "lane": "LANE-NEAR3 (account 2)",
-      "touched": "4 Oct 2026 02:4x"
+      "title": "Clairambault 1161 Avis de Flandre, c. 1570 (Noailles bundle; slug's 1688 is the volume slot): 3389 signs, six leaves. N4-C1 (4 Oct): c188L re-passed to err_2reader 0.084; c184/c189 no continuation; two-instrument test (prereg ed52489f): a blind anneal on the four leaves key.tsv never saw agrees with key.tsv on 0.624 of tokens vs shuffled-order max 0.351 (PASS; seed 2 0.288, seed 3 0.565) -> 15 signs S, 28 M, 6 C; reading C 353 / S 1697 / M 1325 / U 33; judge FAIL -1.233 (real_p05 -0.905) while the leaf's own period gloss PASSes -0.808 (shuffles -1.86..-1.99); fr16142 Noailles-Dax key shape test 2/16 vs p99 3, NO FIT",
+      "next": "rule-7 re-derivation of the merged reading (~$3, LANE-NEAR4); multi-seed consensus instrument for the 28 M signs (~$3); sorter/split test for 7 new shapes (~$3)",
+      "lane": "LANE-NEAR4 (account 2)",
+      "touched": "4 Oct 2026 04:3x"
     }
   ]
 }

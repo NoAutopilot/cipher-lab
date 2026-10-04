@@ -1,0 +1,65 @@
+line	col	A	B	flagged	crop
+L01	3	K	rot		
+L01	6	f	c		
+L01	19	tz	d	B	
+L01	27	th	S		
+L01	29	K	rc	B	
+L02	1	-	eloop	B	
+L02	2	K	rc	B	
+L02	4	d	p		
+L02	11	f	c		
+L02	20	e	c		
+L02	22	a	y		
+L03	11	K	rc	B	
+L03	15	tz	z		
+L03	28	-	th		
+L03	29	K	e		
+L04	4	K	tz		
+L04	8	f	c		
+L05	8	sqc	z	B	
+L05	11	-	eloop	B	
+L05	12	ee	z		
+L05	22	th	phi		
+L06	4	-	s		
+L06	5	6r	z		
+L06	20	ee	eloop	B	
+L07	21	-	e		
+L08	10	+	dia		
+L08	14	-	z		
+L08	20	K	tz		
+L08	22	p	qb		
+L08	23	K	rot		
+L08	27	K	rc	B	
+L09	14	-	z		
+L09	18	sqc	z	B	
+L09	22	-	z		
+L09	27	f	e		
+L10	11	z	-		
+L10	12	8	rot		
+L10	29	f	rc	B	
+L11	10	K	rot		
+L11	20	sqc	z	B	
+L11	24	-	z		
+L11	29	K	rot		
+L12	26	f	rc	B	
+L13	8	8	S		
+L13	15	ee	z		
+L14	16	q	qb		
+L14	18	K	rc	B	
+L14	26	-	PLAIN:curou	B	
+L15	22	K	rc	B	
+L16	13	K	tz		
+L17	19	K	rc	B	
+L17	26	-	e		
+L17	27	iib	iii		
+L18	1	f	ee	B	
+L18	18	sqc	z	B	
+L19	22	K	rot		
+L20	4	K	tz		
+L24	6	-	eloop	B	
+L24	7	ee	z		
+L24	15	sqc	z	B	
+L25	18	K	rot		
+L25	25	a	tri		
+L27	5	p	+		
+L27	16	K	rot		

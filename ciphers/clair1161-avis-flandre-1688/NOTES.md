@@ -1233,3 +1233,183 @@ Read so far: 3391 cipher signs transcribed, every cipher leaf and block IMG-GALL
 - [ ] image-check: c188L framing and c187R slope unsettled, seven provisional new shapes; next: two fresh blind passes on c188L slope crops
 - [n/a] retry: pooled re-anneal ran five seeds; a sixth seed of the same recipe is not a different instrument
 Verdict: keep going: 5 internal gaps; cheapest next: spec stream update, ~$0.5
+## N4-C1 (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR4, brief `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave1.md` (job N4-C1). Claim 04:16 UTC, box
+to 06:06 UTC (container clock). Pre-registration `tx/PREREG_two_instr.md` (commit ed52489f, pushed before either statistic).
+Scripts `two/two_instr.py` (instrument 2, agreement, grading, the Noailles shape-key test), `tx/c188L_rerec.py` (c188L re-pass merge).
+
+**Dating and the slug.** The "1688" in the slug is the volume's chronological slot ("Année 1688", the 31 Dec 1688 Saint-Esprit
+promotion that follows the bundle; Check-solved and Y7 above), not the item's date. The cipher leaves sit in the Noailles bundle
+beside c188R, a clear letter signed "Noailles e. d'Acqs", Paris, [20?] Dec 1570 (IMG-GALLICA1; seen again on the committed 1200 px
+grid this pass). The spec's own date ("c. 1570, by the neighbouring clear letter; the item itself is undated") stands. The slug is a
+catalogue artefact; it is not renamed here (folder renames touch every register).
+
+**1(a) Leaves.** On `images/contact_sheets/c185-188_1200px_grid.jpg`: c185L is a clear "Copie du Certificat" of 27 Aug 1707 (no
+cipher); c188R is the clear 1570 letter (a short clear note in its left margin, no cipher run). Two new 1200 px views (gallica.bnf.fr
+2 requests, descriptive UA, 2.5 s apart, both 200): **c184 (IIIF f185)** is two clear pages of 1707 certificates (Meyssac,
+"Gaffard", foliated 161 and "2733"), no cipher; **c189 (IIIF f190)** is a faded verso, foliated 166, carrying only show-through of a
+clear letter, a stamp and a few pen strokes; no cipher. No continuation of the cipher run on either side: the group is c185R-c188L.
+
+**1(b) c187R slope check.** NEAR3-C1TX-c187R already cut c187R with `--follow-slope 400` (drift fitted per line, -17 to -93 px), so the
+committed crops are the slope crops. Checked by eye on three lines' right halves (L03_s2, L14_s2, L22_s2) and one left half (L22_s1),
+stacked in one view: each crop holds one whole line, centred, ascenders and descenders inside, neighbours cut at the edges only;
+L03_s2 ends "... 4 o +", the overlay's line end. Framing does not differ from what a slope cut gives, so no re-pass (c187R
+err_2reader 0.076 stands). No subagent call, no request.
+
+**1(c) c188L re-pass.** The NEAR3 crop step was already run and committed (`tx/c188L_slopecrop.py`, 81 slope crops), so the passes
+read those committed crops; the prompt is `tx/c188L_slope_pass_prompt.md` (3 segments per line; tz written only when the raised
+loop is seen). Subagent calls (Sonnet): 2, pass C top-down and pass D bottom-up, run in parallel. Neither saw the earlier passes or
+the reconciled file.
+
+| item | value |
+|---|---|
+| pass C / pass D signs | 748 / 759 |
+| **err_2reader C vs D** (`tools/reconcile_passes.py`, nw, sign map `tx/c188L_signmap2.tsv`: ε->e, 0->o, caret->NEW_c188L_2, triangle->tri) | **64/760 = 0.084** (was 0.181 with the level-crop passes A/B); target <= 0.10 met |
+| three-way, C + D + NEAR3 reconciled (`tx/c188L_rec3/`) | 683 of 766 columns agree in all three; 83 differ, 10 of them three ways |
+| merged `tx/c188L_rec2_long.tsv` (`tx/c188L_rerec.py`) | 750 cipher signs + 1 clear word, H 573 / M 178; differs from NEAR3's reconciled file at 16 positions |
+| each pass vs merged | C 713/751 = 0.949, D 721/761 = 0.947 |
+
+- The merge rule was fixed in the script's docstring before it ran: a 2-of-3 majority over C, D and NEAR3's file. Where all three
+  differ, NEAR3's eye-settled sign is kept. A sign is H only where all three agree at H.
+- Seven of the 10 three-way columns are the raised hook (f/c/e, settled e as before) or NEW_c188L_3 (ee/z/C-z). The other three
+  are th/phi/dia and +/dia/th at L05 and L08, and tz/d/D-loop at L01.
+- **tz vs z (focus row 1).** Both fresh passes were told to write tz only where they saw the raised loop. They wrote z 40 and 53
+  times, tz only 2 and 4. That supports NEAR3's settlement as z. The question matters for reading, since key.tsv has z=t and tz=e.
+- **L02 start.** The committed crop `c188L_L02_s1` frames L01 and cuts L02 at its bottom edge, as pass D reported. I checked this on
+  a stacked L01-L03 view. Both fresh passes lost L02's first signs. NEAR3's `6r y +` is kept at M: the cut tops are consistent with it.
+- **Merged into ciphertext.tsv.** The c188L rows were 760 and are now 758: `ss` is written as `s s`, the pool.py convention, and
+  each row carries the note `N4-C1 re-pass: ...`. ciphertext.tsv now holds 3434 rows and **3389 cipher signs, 57 types**.
+  tx/stream_all.txt is regenerated. The spec stream is updated to these 3389 signs (gap "spec stream"). The old 924-sign stream is
+  kept verbatim as `ciphertext_v1_924`, because glossctl.py reads `ciphertext` and its rows were run on the 924. Folder: see the
+  done line.
+
+**2. Two instruments (PREREG `tx/PREREG_two_instr.md`, pushed ed52489f before any statistic).**
+- Instrument 1 = key.tsv: the strict-repair key, fitted on c185R and the c186R block.
+- Instrument 2 = a blind homophonic anneal on the four non-training leaves only (c186L, c187L, c187R, c188L; N 2465, K 54).
+  Recipe: fr16 order 3, restarts 32, iters 40000, seed 1, nothing held. It never saw c185R, the block or key.tsv.
+- Control = the same recipe on the four-leaf stream order-shuffled, shuffles 1-5.
+- Statistic A = token-weighted agreement of the two keys over the six-leaf stream. It excludes the 6 C signs and any sign either
+  key lacks: 2989 tokens, 40 types.
+- The anneals ran 04:26-04:28 UTC, four at a time, about 73 s each. Rows are in `two/anneal.tsv` and `two/agree.tsv`.
+
+| key compared with key.tsv | anneal score | A (tokens) | A (types) | A on c185R+c186R only (823 tokens) |
+|---|---|---|---|---|
+| **instrument 2, real seed 1 (pre-registered)** | -6397.9 | **0.624** | 0.375 (15/40) | 0.603 |
+| real seed 2 (stability only) | -6626.0 | 0.288 | 0.175 | 0.267 |
+| real seed 3 (stability only) | **-6300.9** | 0.565 | 0.275 | 0.566 |
+| shuffled 1 / 2 / 3 / 4 / 5 | -7160.6 / -7158.5 / -7214.8 / -7180.2 / -7176.4 | 0.351 / 0.148 / 0.034 / 0.280 / 0.033 | 0.15 / 0.10 / 0.05 / 0.15 / 0.05 | 0.322 / 0.129 / 0.034 / 0.256 / 0.035 |
+
+**Gate: PASS**, 0.624 vs shuffled max 0.351.
+- A key annealed only on the four leaves that key.tsv never saw gives the same letter as key.tsv for the 15 most-shared signs. They
+  cover 62% of the tokens, well above what sign frequency alone gives (shuffled order: 0.03-0.35).
+- **Caveats, read with the gate.**
+  - Seed sensitivity is large. Seed 2 fell into a worse basin, at score -6626 and A 0.288, inside the control range.
+  - Seed 3 reached a better anneal score than seed 1 (-6300.9). It agrees with key.tsv on some signs that seed 1 does not: 7=i,
+    th=s, z=t. It disagrees on others where seed 1 agrees: S, 4, q.
+  - The pre-registered single seed decides the grades. A 3-seed consensus instrument would be a different, stricter rule. It was
+    not pre-registered, so it is not applied.
+- Of the 6 C signs, instrument 2 agrees on 3 (a=u, d=n, e=p) and differs on 3 (ee y/i, p c/t, sd g/i). Their C grade comes from
+  the gloss and is unchanged.
+
+**Grades applied** (`python3 two/two_instr.py grade`; each source cell carries the N4-C1 note and instrument 2's letter):
+- key.tsv now has **S 15, M 28, C 6**.
+- The S signs are + e, 3 e, 4 o, 9 s, S u, box a, f n, iii e, q i, qb a, s e, tri q, w i, wb l, y r. Instrument 2 gives a different
+  letter for each of the 28 M signs, or has none for it. The M signs include 7, th, z, p, o, phi, ls, iib, eloop, 6r, 8 and K.
+- `python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688` gives `tokens 3408: C 353, M 1325, S 1697, U 33`.
+- `--check` gives "reading up to date", exit 0.
+- Per leaf (C/S/M/U):
+
+| leaf | C | S | M | U |
+|---|---|---|---|---|
+| c185R | 74 | 304 | 326 | 2 |
+| c186R | 23 | 104 | 93 | 13 |
+| c186L | 34 | 140 | 69 | 3 |
+| c187L | 70 | 404 | 243 | 3 |
+| c187R | 81 | 386 | 272 | 7 |
+| c188L | 71 | 359 | 322 | 5 |
+
+  U counts the clear words and `/` as well as the unkeyed NEW_* shapes.
+- Before this pass, every non-C keyed sign was S on one anneal alone. 1325 tokens now drop to M. **No letter value changed.**
+
+**3. Judge (fr16).**
+- Why fr16 and not fr17: the 1570 dating holds. The leaves are mounted in the same bundle as the dated 1570
+  Dax letter. Nothing on the leaves points to the 1688 slot. fr16 = Catherine de Medicis and Marguerite letters, the same decade
+  and the same court-letter register (rule 3 era note).
+- `python3 tools/judge_plaintext.py specs/clair1161-avis-flandre-1688.json --file ciphers/clair1161-avis-flandre-1688/reading.txt`:
+```
+FAIL language: score=-1.3, null_p99=-1.751, real_p05=-0.913, real_median=-0.823, mode=both, N=3913
+ok   words: cover=0.878, min=0.5, real_text_median_cover=0.957
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+  The judge folds reading.txt's line ids ("c185R_L01" ...) into the letters, hence N 3913. The clean letters-only decode of the
+  3389 signs (`two/full_decode.txt`) gives:
+```
+FAIL language: score=-1.233, null_p99=-1.758, real_p05=-0.905, real_median=-0.82, mode=both, N=3375
+ok   words: cover=0.901, min=0.5, real_text_median_cover=0.957
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+- **Period gloss through the same judge** (rule 3 period-gloss paragraph). The c186R marginal gloss is 170 letters, from
+  `align/pairs_c186R_v0.tsv`. It scored against the c186R block decode under key.tsv and three letter-shuffles of the gloss:
+
+| text | N | language score | judge |
+|---|---|---|---|
+| c186R gloss (period clear text) | 170 | **-0.808** (real_p05 -0.975, null_p99 -1.60) | **PASS** |
+| c186R block decoded under key.tsv | 220 | -1.154 (real_p05 -1.002, null_p99 -1.629) | FAIL |
+| gloss letter-shuffled, seeds 1/2/3 | 170 | -1.993 / -1.864 / -1.981 | FAIL |
+
+  Unlike ZX-DEC349, the leaf's own period text scores at the judge's real-prose median. So the judge is calibrated for this
+  register at this length, and the decode's FAIL is not a corpus artefact. It reads as what the grades say: a key right on its
+  frequent signs (S), wrong or unsettled on many others (M). The decode sits about midway between the gloss and the shuffled nulls.
+
+**4. Known keys.**
+- `tools/key_crossmatch.py --help` was read. The tool matches code labels, and neither folder's labels are shared with ours: ours
+  are private pen-sign names (tx/labels_v2.md). fr16142's key.tsv is Tomokiyo's table worded as glyph descriptions, and
+  fr16142's `run2/nxaln/key_learned.tsv` uses atlas cluster ids (k000...), with its own gate FAIL. A label-level sweep could only
+  report "coverage < 0.5". KEY-OFFICES.tsv has no Noailles/Dax row (grep 0). fr3151-noailles-1558 and fr3151-seure-1558 have no key
+  file. So the pre-registered shape-level test was run instead.
+- **The test.** 16 glyphs were matched by description between Tomokiyo's fr16142 table (Noailles, bishop of Dax, Constantinople
+  Dec 1571-1574) and labels_v2. The statistic counts how many of them carry Tomokiyo's letter in key.tsv (`two/tomokiyo.tsv`).
+- **Result: 2/16** (e = p, ls = e). The permutation null over key.tsv's values (10,000, seed 1) has mean 0.76 and p99 3, with
+  P(null >= 2) = 0.18. Instrument 2: 1/16. **Gate: NO FIT.**
+- On the worded descriptions, the Constantinople key's letters are not this key's letters. Tomokiyo's table image, which is not on
+  disk, is the authority; this FAIL is conditional on the worded glyph descriptions.
+- The two alphabets share shape stock: caret, fish, triangle, D-loop, a crossed iii, 7, 4. Sign values, though, are what a key
+  is, and those do not match.
+- Before writing the mapping, I had seen several key.tsv values in this file's earlier sections. The mapping was fixed from shape
+  words only, and it gives our key 2 matches.
+
+**Gist (interpretation, not a reading).** This reads the S and C letters of the decode by eye, with M letters filling gaps. It is
+not graded and not checked against any source.
+- c185R: news of "les aultres prisonniers", an enterprise ("entreprinse ... seraient par ... executee"), "beaucoup", things
+  "descouvertes" and "reportees a la cour", "ce qui sera execute", "a croire", "au roy", "le peuple", "justice", "dissimulation".
+- c186R block, consistent with its own gloss: letters written several times to the queen, the matter of "la religion en ce
+  royaulme", Spain, the people, "en plus grand repos".
+- c187R (headed by the clear date "Juil 23"): "avoir", "ceulx", "aultres", "leur conseil et tout", "pensions", "au roy" and
+  "a croire" again, "soldats"(?).
+- In English: intelligence reports, in cipher, on prisoners, a planned enterprise and its discovery, reports carried to the court,
+  religion in the kingdom and relations with Spain, and the state of the people. The c186R clear heading, "Advis de flandres", names
+  them as news from Flanders.
+
+Report what was found and where it was not found:
+- No outside source was searched beyond the two Gallica thumbnails. Novelty is not classified.
+- Requests: gallica.bnf.fr 2.
+- Subagent calls: 2 (c188L passes C and D). The reconciliation was this worker's own unit.
+- Cost: see the lane ledger.
+
+## Remaining gaps (N4-C1, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv with two-instrument grades: C 353, S 1697, M 1325, U 33 tokens; 0 H.
+- 28 M-graded key signs (7, th, z, p, o, phi, ls, iib, eloop, 6r, 8, K ...) - blocker: not-attempted; the two instruments disagree on them and seed 3 agrees with key.tsv on 7, th, z where seed 1 does not; next: a pre-registered multi-seed consensus instrument 2 (seeds 1-10 on the four leaves, majority letter per sign) with the same shuffled-order control, ~$3
+- rule 7 re-derivation of the merged reading - blocker: not-attempted; reading grades and c188L changed this pass; next: a fresh session re-derives from the spec and key.tsv with tools/decode_key.py --check (LANE-NEAR4 briefs it), ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (N4-C1, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.594 (shuffled max 0.312); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument agreement PASS (0.624 vs shuffled max 0.351) graded 15 signs S; next: multi-seed consensus instrument for the 28 M signs
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further single-seed pooled anneal is not a different instrument
+Verdict: keep going: 3 internal gaps; cheapest next: rule 7 re-derivation, ~$3

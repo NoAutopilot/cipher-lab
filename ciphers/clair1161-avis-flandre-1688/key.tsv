@@ -1,50 +1,50 @@
 sign	value	grade	source
-+	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-2	r	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-3	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-4	o	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-6	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-6r	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-7	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-8	d	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'l'
-9	s	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-K	f	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'u'
-L	n	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'b'
-S	u	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-Sorn	h	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
++	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+2	r	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'i'
+3	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+4	o	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+6	e	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'n'
+6r	i	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'd'
+7	i	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'e'
+8	d	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'l' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'c'
+9	s	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+K	f	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'u' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'c'
+L	n	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'b' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 's'
+S	u	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+Sorn	h	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 has no value (sign absent from the four leaves)
 a	u	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
-blot	q	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-box	a	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-c	s	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'f'
+blot	q	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 has no value (sign absent from the four leaves)
+box	a	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+c	s	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'f' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'g'
 d	n	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
-dia	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
+dia	i	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'r'
 e	p	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
 ee	y	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
-eloop	c	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-f	n	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-iib	l	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'd'
-iii	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-l	s	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'r'
-ls	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-o	n	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
+eloop	c	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'l'
+f	n	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+iib	l	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'd' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'd'
+iii	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+l	s	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'r' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'f'
+ls	e	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'm'
+o	n	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 't'
 p	c	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
-phi	l	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 's'
-psi	r	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-q	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-qb	a	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-rc	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-rot	r	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-s	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
+phi	l	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 's' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 's'
+psi	r	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'z'
+q	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+qb	a	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+rc	e	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'r'
+rot	r	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'm'
+s	e	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
 sd	g	C	c186R period marginal gloss, aligned to the block (READ2-C1161B gloss-seeded repair, 4 Oct 2026); every aligned occurrence agrees
-spiralG	h	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-sqc	x	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-th	s	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-to	m	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-tri	q	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-tz	e	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'l'
-vdash	t	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'd'
-w	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-wb	l	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-x	s	S	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'a'
-y	r	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
-z	t	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram
+spiralG	h	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 has no value (sign absent from the four leaves)
+sqc	x	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 't'
+th	s	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'n'
+to	m	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'e'
+tri	q	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+tz	e	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'l' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'l'
+vdash	t	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'd' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'c'
+w	i	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+wb	l	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+x	s	M	READ2-C1161B re-anneal with the 6 gloss-fixed signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3); was 'a' || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 'f'
+y	r	S	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 (four-leaf blind anneal seed 1) agrees
+z	t	M	family_run.py homophonic seed 1 restarts 32 noise 0.10 (READ2-C1161, 3 Oct 2026); blind anneal, fr16 4-gram || N4-C1 two-instrument grade (tx/PREREG_two_instr.md): instrument 2 reads 's'

@@ -1,0 +1,84 @@
+line	col	A	B	C	flagged	crop
+L01	3	K	rot	K		
+L01	5	d	d	NEW_c188L_1	C	
+L01	6	f	c	e	C	
+L01	15	z	z	2	C	
+L01	19	tz	d	NEW_c188L_1	BC	
+L01	25	q	q	qb		
+L01	27	th	S	S		
+L01	29	K	rc	rc	BC	
+L02	1	-	eloop	-	B	
+L02	2	-	-	6r		
+L02	3	-	-	y		
+L02	4	-	-	+		
+L02	5	K	rc	K	B	
+L02	7	d	p	p		
+L02	14	f	c	e		
+L02	23	e	c	e		
+L02	25	a	y	y		
+L03	11	K	rc	K	B	
+L03	15	tz	z	z	C	
+L03	28	-	th	-		
+L03	29	K	e	K		
+L04	4	K	tz	tz	C	
+L04	8	f	c	e	C	
+L05	8	sqc	z	sqc	BC	
+L05	11	-	eloop	-	B	
+L05	12	ee	z	NEW_c188L_3	C	
+L05	22	th	phi	dia		
+L06	4	-	s	-		
+L06	5	-	-	s		
+L06	6	6r	z	z		
+L06	21	ee	eloop	eloop	B	
+L07	13	qb	qb	q	B	
+L07	20	ee	ee	K	C	
+L07	21	-	e	-		
+L08	10	+	dia	th	C	
+L08	14	-	z	-		
+L08	20	K	tz	tz		
+L08	22	p	qb	p		
+L08	23	K	rot	rot	C	
+L08	27	K	rc	K	B	
+L09	14	-	z	-		
+L09	18	sqc	z	sqc	BC	
+L09	21	eloop	eloop	NEW_c188L_3	BC	
+L09	22	-	z	-		
+L09	27	f	e	e		
+L10	5	iib	iib	iii	C	
+L10	11	z	-	-		
+L10	12	8	rot	rot		
+L10	29	f	rc	rc	BC	
+L11	10	K	rot	rot		
+L11	20	sqc	z	sqc	BC	
+L11	23	eloop	eloop	NEW_c188L_3	BC	
+L11	24	-	z	-		
+L11	29	K	rot	rot		
+L12	26	f	rc	rc	BC	
+L13	8	8	S	8	C	
+L13	15	ee	z	z	C	
+L14	1	z	z	2	C	
+L14	16	q	qb	qb		
+L14	18	K	rc	K	B	
+L14	26	-	PLAIN:curou	-	B	
+L14	27	-	-	PLAIN:curou	C	
+L15	22	K	rc	K	BC	
+L16	13	K	tz	tz		
+L17	19	K	rc	K	BC	
+L17	20	-	-	e		
+L17	26	ee	ee	K	C	
+L17	27	-	e	-		
+L17	28	iib	iii	iii		
+L18	1	f	ee	e	BC	
+L18	18	sqc	z	sqc	BC	
+L19	10	d	d	NEW_c188L_1	C	
+L19	22	K	rot	rot		
+L20	4	K	tz	tz		
+L23	28	6	6	6r	B	
+L24	6	-	eloop	-	B	
+L24	7	ee	z	NEW_c188L_3	C	
+L24	15	sqc	z	sqc	BC	
+L25	1	wb	wb	vdash	AB	
+L25	18	K	rot	rot		
+L25	25	a	tri	tri		
+L27	5	p	+	p		
+L27	16	K	rot	rot		
