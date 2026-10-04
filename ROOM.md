@@ -7910,3 +7910,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 04:16 | N4-PAG65 (account 2 worker, for LANE-NEAR4) | claim: clairambault1225-paget-1714 codes 65 and 116 per-token settle; box ends 04:51 UTC
 2026-10-04 04:17 | N4-XM (account 2 worker, for LANE-NEAR4) | claim: august-van-saksen-1561-64 / fr3993-villeroy-1595 / fr3993-gonzague-nevers-1595 key_crossmatch leads of 4 Oct 02:50; box ends 05:07 UTC
 2026-10-04 04:16 | N4-HEL5 (account 2 worker, for LANE-NEAR4) | claim: hellen-frederick-1752 N4-HEL5 (Fagel 5177 Hellen 1751 decipherments as known plaintext); box ends 05:47 UTC
+2026-10-04 04:17 | N4-NXS (account 2 worker, for LANE-NEAR4) | claim: fr16142-noailles-constantinople-1571 sign-sorter page for c510-516; box ends 05:17 UTC
