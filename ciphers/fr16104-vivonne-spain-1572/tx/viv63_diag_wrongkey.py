@@ -10,7 +10,7 @@ import viv63_test as t, viv63_decode as v63, viv54_decode as vd, judge_plaintext
 
 k = {c: v for c, (v, g) in vd.key().items()}
 m = jp.NgramModel([jp.read_corpus(p) for p in t.FR16])
-seq = [c for _, _, s in v63.lines() for c, _ in s]
+seq = [c for _, _, s in v63.lines(v63.PAGES_A) for c, _ in s]
 codes = sorted(k); rng = random.Random('20260967-diag'); rows = []
 for _ in range(50):
     v = [k[c] for c in codes]; rng.shuffle(v); km = dict(zip(codes, v))

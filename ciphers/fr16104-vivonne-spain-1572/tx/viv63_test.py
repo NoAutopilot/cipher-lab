@@ -48,11 +48,11 @@ def main():
     res = {'seed': SEED, 'draws': draws}
     res['C1_f103r'], _ = run(model, k, c1, draws, 'C1')
     res['C2_ink54'], _ = run(model, k, c2, draws, 'C2')
-    L = v63.lines()
+    L = v63.lines(v63.PAGES_A)
     tgt = [c for _, _, seq in L for c, _ in seq]
     res['target'], cand = run(model, k, tgt, draws, 'T')
     res['per_page'] = {}
-    for page in v63.PAGES:
+    for page in v63.PAGES_A:
         res['per_page'][page], _ = run(model, k, [c for p, _, seq in L if p == page for c, _ in seq], draws, page)
     for b in ('b1', 'b2'):
         gate = all(res[c][b]['pass'] and res[c][b]['headroom_ok'] for c in ('C1_f103r', 'C2_ink54'))

@@ -27,7 +27,9 @@ import reconcile_vivk as rv  # noqa: E402
 RULES63 = {frozenset(('3', 'z')): '3', frozenset(('P', 'p')): 'p',
            frozenset(('R', 'r')): 'R', frozenset(('R', 'n')): 'R', frozenset(('n', 'r')): 'n'}
 RULES = {**rv.RULES, **rv.RULES54, **RULES63}
-PAGES = ('f190r', 'f190v', 'f191r', 'f191v')
+PAGES_A = ('f190r', 'f190v', 'f191r', 'f191v')  # N6-VIV63 (gate run on these alone: tx/viv63_test.py)
+PAGES_B = ('f192r', 'f192v', 'f193r')  # N6-VIV63B (PREREG-N6VIV63B.md; tx/viv63b_test.py)
+PAGES = PAGES_A + PAGES_B
 
 
 def page_tokens(page):
@@ -65,8 +67,8 @@ def page_tokens(page):
     return out, wide, stats
 
 
-def lines():
-    return [(page, line, seq) for page in PAGES for line, seq in sorted(page_tokens(page)[0].items())]
+def lines(pages=PAGES):
+    return [(page, line, seq) for page in pages for line, seq in sorted(page_tokens(page)[0].items())]
 
 
 def build():
