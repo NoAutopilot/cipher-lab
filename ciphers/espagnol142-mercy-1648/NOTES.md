@@ -2723,19 +2723,56 @@ Proposal (a) above, run. Brief `.claude/briefs/runs/2026-10-02-acct3-mercy-c15.m
     "iuz[g]a" at v04:19 only. v04:19 is still a low-confidence glyph (link 1 above).
 - **Grades.** No change: 529 tokens, H 0, C 0, S 488, M 41, I 0.
 
-## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
+## Code 15 applied (4 Oct 2026, A3V2-MERCY15)
+
+Worker A3V2-MERCY15 (account 3, for LANE-A3V2, brief `.claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md`), 04:56-05:0x
+UTC (`date -u`). The lane's decision on proposal (b)'s value change alone (verdict line of 2 Oct 2026): **`key.tsv` 15 n
+-> z at grade M, both occurrences**, on the evidence already on file and nothing new -- the table layout (even 10-32 a-n,
+2-8 o-u, so 11 x 13 y 15 z; R965 p7 of the same office puts x y z right after o-u) and "iuz[g]a" at v04:17-19 with one
+gutter token restored. v04:11 stays 32 on the two blind reads (MERCY-C15), so no "direction"/"direztion" is formed and
+none is claimed: v04:9-13 reads "...no la direzt non..." and is still no word. c (M) stays weaker ("iuc[g]a").
+
+- **Applied.** `key.tsv` row 15 (value, grade M unchanged, source and note rewritten); `python3 tools/decode_key.py
+  ciphers/espagnol142-mercy-1648` then `--check` -> "reading up to date", exit 0.
+- **Diff old vs new reading (rule 7):** exactly the two code-15 tokens changed, v04:9 n -> z (M) and v04:19 n -> z (M);
+  `reading.txt` line v04 `NOLADIRENTNONYSIIUN` -> `NOLADIREZTNONYSIIUZ`; every other token identical. Counts unchanged:
+  529 code tokens, H 0, C 0, S 488, M 41, I 0, U 0 (15 was already M).
+- **Judge (rule 7, pasted):**
+
+```
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1349, min=200, max=1000000000
+FAIL language: score=-1.025, null_p99=-1.923, real_p05=-0.875, real_median=-0.813, mode=both, N=1349
+FAIL - espagnol142-mercy-1648 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+  -1.025 against -1.018 under 15 = n: inside the -1.017..-1.025 band the 2 Oct synthesis already measured for every
+  code-15 variant ("the full-text judge cannot move on two letters out of 1349"); still a FAIL against the default `es`
+  corpus (rule 3, es17c paragraph: of unknown reliability), reported as a FAIL. No evidence for or against z.
+- **Grades.** 15 = z: M (a proposal that fits the table and one restored word; not a reading). v04:9 and v04:19 M.
+  "juzga" at v04:17-19 + gutter: M for the letters read, I for the restored g, conditional on v04:19 being a 15 (two
+  blind reads, low confidence). Rule 10 (proposal (d)): any outward sentence says "15 proposed as z at grade M", never
+  "15 = z" bare.
+- **Propagated (rule 10):** AUDIT.md "Reading revised: code 15 n -> z at M (4 Oct 2026)" (safe sentence re-read: no
+  word of it changes, counts unchanged); `second-opinions/PROMPT-chatgpt.md` correction block (it quotes the reading;
+  the `SECOND-OPINIONS-QUEUE.tsv` row SO-MERCY-F22 is `checked` and quotes no reading, left as is).
+- **Owed, not done here (brief did not name it):** `rederive/reading_fresh.txt` (the rule-7 fresh re-derivation) predates
+  this change and now differs at the two M tokens; a fresh re-derivation from spec + key would show the same two-token
+  diff, within the M-graded count (41), so it does not send the reading back, but the file is stale until re-run.
+
+## Remaining gaps (finish-or-blocker pass, 2 Oct 2026, refreshed 4 Oct 2026)
 Read so far: 521 of 529 code tokens (98.5%) read as Spanish words, 8 open in v04 (positions 9-13, 17-19); v04:6-19 glyphs confirmed by two blind reads, 2 Oct 2026; NOTES.md "Bourdeau corrections folded in (1 Oct 2026)", `reading_tokens.tsv` (H 0, C 0, S 488, M 41; the two box signs are counted as read but render as `_`); briefed as 1 Oct, clock 2 Oct 2026 (rule 6)
-- code 15's value (both occurrences) - blocker: open-codes; two tokens. The best value is z (M), from the table layout and "iuz[g]a"; c and n are weaker. Neither key-angle nor crib-angle letter model separates the candidates within its own control (`code15/key/key15_out.txt`, `code15/crib/control_ranks.tsv`), and the Brussels register holds no matching key (H17). v04:11 read 32 and v04:9 read 15 on two blind reads (MERCY-C15, `code15/blind/reads.tsv`), so "direction" has no image support. Raised only by new material (a sibling letter in this key with 15 in a readable word) or by resolving the v04:11 and v04:19 glyphs
+- code 15's value (both occurrences) - blocker: open-codes; two tokens. Now z at grade M in `key.tsv` (applied 4 Oct 2026, A3V2-MERCY15, on the table layout and "iuz[g]a" at v04:19; n and c weaker, both M). Neither key-angle nor crib-angle letter model separates the candidates within its own control (`code15/key/key15_out.txt`, `code15/crib/control_ranks.tsv`), the full-text judge cannot move on two letters (-1.025 vs -1.018), and the Brussels register holds no matching key (H17). v04:11 read 32 and v04:9 read 15 on two blind reads (MERCY-C15, `code15/blind/reads.tsv`), so "direction" has no image support and v04:9-13 is no word under any value. Lifted above M only by new material: a sibling letter in this key with 15 in a readable word (siblings sweep negative, `siblings_1648_hunt.md`; the AGR SEE 15 April 1648 instruction waits on ASKS row 60 / SEND-QUEUE S3), or the gutter capture of f.22v (ASKS row 81) showing the token after v04:19 is 22 (g), which would make "juzga" a read word and take v04:19's value to S
 - v04:19 (half-cut 15) and the token(s) lost after it in the gutter, expected 22 (g) - blocker: waiting-on ASKS row 81 (gutter capture of f.22v, riding on the BnF batch of ASKS row 78, quotes awaited); H80: the disk image is already Gallica's native size
 - letters lost in the gutter of f.22v, v01-v12 (Bourdeau `lost_edge.tsv`: about 18 restored by sense, not counted as read; the v05/v06 "conuenient[e ...]ar otra" and v06/v07 "gente de [?] que" junctions are unrecovered) - blocker: waiting-on ASKS row 81 (the same capture; its stated value of "one token" understates this)
 - the box name sign, r07 and r09 (2 tokens) - blocker: no-key-material; identified as Saint-Ibal at grade I from the clear f.21r sibling (fold-in "Names"), but no table gives a value for the boxed sign (H17: no boxed 101 in DECODE 958-965), so `key.tsv` keeps `_`
 
-## Escalation (2 Oct 2026)
+## Escalation (2 Oct 2026, refreshed 4 Oct 2026)
 - [x] siblings: Gallica/BnF pool sweep negative (M3, H38, `siblings.tsv`); clear sibling instruction f.21r (13 Apr 1648) read and used for the Saint-Ibal parallel (fold-in 1 Oct 2026), f.20r (8 Feb 1648) cited by Bourdeau, not re-read here; the 15 April 1648 instruction in Brussels (AGR SEE t. LXIV f.16) is waiting on ASKS row 60 / SEND-QUEUE S3; MERCY-SIB (2 Oct 2026, `siblings_1648_hunt.md`): no other cipher piece of the 1648 mission found with an image online -- AGR SEE (AGATHA T 100 EAD, 2,896 items, none with a digital object; Lonchay's t. LXIV lies in inv. 238-260, part not resolvable; Mercy/Galarreta 1648 correspondence inv. 576/578), Urkunden und Actenstuecke (earlier passes), Europeana, cached PARES sweep (no AGS Estado Flandes 1648 rows); GStA PK and Archivportal-D unreachable from the cloud
 - [x] clear-pages: the f.21r clear text is the parallel for "que el [box] uenga con uos para que nos informe"; f.22r's clear overview read for spelling (ç in "negociaçion", "Operaçiones"; image angle 1-2 Oct 2026); no clear minute or draft of the 6 June 1648 instruction found (Lonchay-Cuvelier-Lefèvre IV no. 183 is a calendar only, per Bourdeau's snapshot)
 - [x] known-keys: DECODE 958-965 (AGR SEE inv.nr. 2, "chiffres 1647-98") read in full size, best agreement 7/28, no period key for this letter (H17, 28 Sept 2026); design sibling R958 (H16); R965 p7 places x y z right after o-u = 2-8, a design point for 15 = z, not a key
 - [x] print: Le Clerc 1725 III-IV, Acta Pacis Westphalicae II B (ends 19 May 1648), Lonchay 1896 p. 445 n. 2, Lonchay-Cuvelier-Lefèvre IV no. 183 (calendar); none prints f.22 (NOTES.md opening sections; Bourdeau snapshot NOTES.md "Print")
 - [x] key-rebuild: Y8 anneal, M2, held-29 anneals (H3), crib steps H41-H77, Bourdeau's digit-pair splits (fold-in 1 Oct); code 15 swept with two letter models, each with a known-answer control, plus a window judge (1-2 Oct 2026): no value licensed above M, best z
 - [x] image-check: out-of-range and doubtful tokens re-read on the native images (fold-in 1 Oct 2026, `bcheck/`); v04:6-19 read blind twice on an unlabelled shuffled sheet with six controls (MERCY-C15, 2 Oct 2026, `code15/blind/`): 14/14 agree with ciphertext.tsv, v04:11 = 32
-- [x] retry: reading regenerated after the fold-in (`tools/decode_key.py --check`: "reading up to date", 529 tokens); v04 re-decoded under 15 = n, c, z and with v04:11 = 31 (`code15/crib/judge_variants.tsv`); not applied pending the blind reads
-Verdict: keep going: 1 internal gaps; cheapest next: the orchestrator's rule-7 decision on proposal (b)'s value change alone (15 n -> z at M, "direztion" unattested, v04:11 now 32 blind), ~$1
+- [x] retry: reading regenerated after the fold-in (`tools/decode_key.py --check`: "reading up to date", 529 tokens); v04 re-decoded under 15 = n, c, z and with v04:11 = 31 (`code15/crib/judge_variants.tsv`); after the blind reads (MERCY-C15) the value change alone applied 4 Oct 2026 (15 n -> z at M, A3V2-MERCY15; `--check` exit 0, two tokens changed, judge -1.025 FAIL as before), v04:11 left at 32
+Verdict: keep going: 1 internal gaps; cheapest next: re-run the rule-7 fresh re-derivation (`rederive/`) against the 4 Oct 2026 key so the committed file matches, ~$1; code 15 itself is open-codes at M, lifted only by ASKS row 81 (gutter) or a sibling with 15 in a readable word

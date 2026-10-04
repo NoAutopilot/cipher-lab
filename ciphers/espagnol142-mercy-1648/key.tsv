@@ -11,7 +11,7 @@ code	letter	grade	source	note
 12	b	S	Y8 anneal	brandenburg (2x), embian, hombres
 13	y	S	M2 correction	Y8 s; image v02 'ma-y-or', y que (r08), y se con(siguiese) (v11), con esta y les (r19), Cheureuse y del (r07), della y que (v03), otra y se (v11)
 14	c	S	Y8 anneal	con, cartas, creencia, condiciones, corra, elector, Cleues, Cheureuse; eight glyphs transcribed 19 (r06:14, r14:7, r16:3, r16:6, r17:5, v01:15) or [MARK:frac] (v01:6) are this open 14 on the image (exceptions.tsv)
-15	n	M	Y8 anneal	2 occurrences, both in an unread stretch (v04)
+15	z	M	LANE-A3V2 decision, 4 Oct 2026	2 occurrences, both in the unread stretch v04 (v04:9, v04:19); n (Y8 anneal, no word, corpus-dependent: s on es17) replaced by z at grade M on the table layout (even 10-32 a-n, 2-8 o-u, so 11 x 13 y 15 z; R965 p7 of the same office puts x y z right after o-u) and "iuz[g]a" at v04:17-19 with one gutter token restored; v04:11 stays 32 on two blind reads (MERCY-C15, code15/blind/reads.tsv), so no "direction"/"direztion" is formed or claimed; c also M and weaker (iuc[g]a). NOTES.md "Code 15 (v04), 2 Oct 2026" and "Code 15 applied (4 Oct 2026)"
 16	d	S	Y8 anneal	de (many), brandenburg, condiciones, duquesa
 17	a	S	Y8 anneal	cartas, para, brandenburg, campagna, mas, tanta
 18	e	S	Y8 anneal	de, que, elector, creencia, leuanten (commonest code)
