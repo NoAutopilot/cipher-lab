@@ -28,3 +28,19 @@ gate (PREREG-GAPS195, f423_0528/shuffle_control.tsv). Multi-code chunks were not
 | 4 Oct 2026 RUN4-MANT | whole-word code pairing on frame 0501's glossed multi-code runs (C3 C4 C7 C9[4 codes] C10 C12), PREREG-MANT-WORD (90d63000) | control: gloss-string permutation across runs, 200 draws seed 409: S_word mean 0.274, p95 0.500 | target: S_word 1/4 = 0.250 (at most 1 of 115/402/515/612 consistent under any cut; best cut: 402 'la') | HELD, below the shuffle mean; nothing into key.tsv. 515 is consistent as the chunk 'pr' (RUN3-MANT) but not as a word (Pr / propose): codes in this range are sub-word units, so a whole-word instrument cannot read them. Multi-code class: letter-chunk alignment (interlinear_align.py) failed on 0528 and tied on 0501; whole-word pairing, a different instrument, also fails on 0501. Both instruments are spent on the glossed material in hand; the next step needs new material (more glossed duplicates of these passages) or a sub-word instrument with a stated control, not a re-run. |
 | 4 Oct 2026 RUN4-MANT2 | clear-vs-cipher witness diff, 0501 vs f.409r/f.409v (PREREG-MANT2 3cd76938) | known-answer: no code inside either pair is in key.tsv, so no check possible; 9 cipher-in-both runs agree 44/48 groups (variants 588/586, 494/94, 281/287) | 2 pairs: P1 371 = "Il" (single, once, M, into key.tsv); P2 161.583.237.932 = "affaires suedoises" (chunk, once, M, no per-code split) | hypothesis, not licensed: 583 ~ "suedois/Suede" -- it sits in 3 runs, 2 of them over "suedois(es)" (P2; 0501 gloss 583.240.825 "generaux suedois") and the 3rd (149.612.583.401) right after "le Comte Wartensleben"; position conflict (2nd of 4 vs 1st of 3), so no value until a 3rd clear or glossed attestation |
 | 4 Oct 2026 RUN4-MANT3 | clear-vs-cipher witness diff, 0500/0502 vs f.409r/f.409v (PREREG-MANT3 eefcc308) | known-answer on the copy's glosses: 864 Roi de Prusse agree 2/2, 865 Prince Royal agree (run-level), letter runs L33-L35 agree; 21 cipher-in-both runs 146/165 groups | 0 pairs (no clear-vs-cipher slot); 371 = il stays M; 583 ~ suedois untested here (583 only inside runs cipher in both) |
+
+### RUN5-MANT6 (4 Oct 2026): per-unit re-grade of codes resting on frame 0501
+
+Frame 0501 ties its own shuffle control under the PREREG-MANT5 normalisation (single-code S 0.200 = p95 0.200; RUN5-MANT5,
+f0500_0502/shuffle_control_norm_0501.tsv), so under rule 3's per-unit merge clause no code attested only there keeps a grade
+above M. Leaf status: 0528 PASS (GAPS195), 0502 PASS (RUN5-MANT5), 0500 HELD (N floor), 0501 TIE. Codes listed by script from
+key.tsv's source column (rows naming frame 0501):
+
+| code | value | grade before | witnesses (leaf, kind, leaf gate) | independent cleared support? | grade after |
+|---|---|---|---|---|---|
+| 770 | Manteuffel | C | 0501 single-code gloss x2 (TIE); f.409r cipher-in-both runs 770 = 770 x2 (witness copy, run level, no gloss) | none: not on 0502 or 0528; Krauske's Manteuffel is 160 (and letter codes 13, 31 = m), not 770 | **M** (held pending a cleared leaf or a 2nd clear attestation) |
+| 865 | le Prince Royal | M | 0501 single-code gloss "Pr: Royal" (TIE); 0500 run-level gloss "Prince Royal" over 840.865 (HELD, N floor); f.409r digits 865 | none | M (unchanged) |
+| 371 | il | M | 0501 clear vs f.409v cipher (clear-vs-cipher pair P1, RUN4-MANT2; not the gloss gate) | none | M (unchanged; once-attested rule already held it) |
+
+Grades in key.tsv: before C 129, M 39; after C 128, M 40. Code 770 does not occur in ciphertext.tsv, so reading token counts are
+unchanged (C 202, M 84, U 137 of 423). Not a refutation: two agreeing single-code glosses on one leaf are held, not dropped.
