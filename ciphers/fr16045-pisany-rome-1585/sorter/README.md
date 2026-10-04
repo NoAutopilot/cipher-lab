@@ -58,6 +58,6 @@ ink-profile blobs to the readers' column COUNT; and the sloping lines put the li
   their shape cluster (k-means, 60 clusters over the page, `clusters.tsv`) mostly holds; the focus box (40) is those,
   most frequent shapes first, at most two per shape.
 - Spot check (20 random tiles, seed 20261004, eye on the overlay): 17/20 hold exactly one sign (one half sign, one
-  half X, one d+3 pair). Build: 59 piles, 1,290 tiles, 2.0 MB page; sorter browser tests run on it.
+  half X, one d+3 pair). Build: 59 piles, 1,290 tiles, 2.0 MB page. `run_all.sh` with the page: 13/14 suites ok; test_qa fails only its "no page errors" check, on the synthetic fixture as well as this page, from ERR_CERT_AUTHORITY_INVALID (Google Fonts through the container proxy, as v2): environment, not the page.
 - The v2 cut is kept for the record: `signs_v2.tsv`, `signs_tight_v2.tsv`, `labels_v2.tsv`, `focus_v2.tsv` (their x/y refer
   to the v2 sloped `pages/`, in git history before this commit). No owner moves were made on v2, so nothing to carry over.
