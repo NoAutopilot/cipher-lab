@@ -50,3 +50,17 @@ targets and to the controls alike; the controls decide whether the test may chan
 Expected effect on P4 (whose 3 tokens of 67 and 1 of 153 are the only P4 tokens of these codes; 84 and 275 do not
 occur in P4): at most M 16 -> 12 and C 338 -> 342; no letter of the reading changes. `decode_stamford.py --check`
 must exit 0 after the change, and the two cross-letter control shares (92.3%, 93.7%) are reported before and after.
+
+## v1 result (run 4 Oct 2026, 01:39 UTC) and v2 pre-registration (written before v2 was run)
+v1 (`python3 boundary_test.py`, `results.tsv`): K 80 occurrences, 26 reach a verdict (**32.5%, below the 60% gate**),
+CONFIRM 23/26 = 88.5%; W 80, 22 verdicts, false-CONFIRM 0/22 = 0.0%. **Gate FAIL: v1 is a non-test, no grade or key
+change.** v1 target verdicts (seen, logged, not acted on): 67 CONFIRM (gap "aengland", edit 1), 275 REFUTE-furniture
+(running head "JOHN THURLOE ESQ. &c, 275"), 84 INCONCLUSIVE (left not located), 153 INCONCLUSIVE (left context too
+short). Cause of the low coverage: 36 of 80 K occurrences stop at an OCR-unreadable or unkeyed token within 10 letters.
+
+**v2 (one change, `--skip 2`):** while building a context, up to 2 unreadable ('?') or unkeyed numeral tokens per side
+are skipped (contribute no letters) instead of ending the context; the 25% cost limit absorbs the missing letters.
+Everything else -- MIN_CTX 10, cost 25%, window 60, uniqueness 5, verdict thresholds, the same K and W samples (same
+seeds), the gate (K verdicts >= 60%, K CONFIRM >= 80%, W false-CONFIRM <= 10%) and the outcome rules -- is unchanged.
+v2 writes `results_v2.tsv`. If v2 also fails its gate, the boundary test is logged "untestable by this method at
+this OCR quality" (rule 3, second attempt at an unchanged approach) and no third tuning is run.

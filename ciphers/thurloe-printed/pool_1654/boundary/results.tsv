@@ -1,0 +1,165 @@
+group	letter	djvu_line	code	meaning	verdict	left	right	gap	note
+target	P5_P6	22921	84	noticeosandalthough	INCONCLUSIVE	attakosand	alltiingssume		left not located
+target	P5_P6	23013	275	that	REFUTE-furniture				J  O  N  H     T  H  U  R  L  O  E    E  S  Q.  &c,  275
+target	P5_P6	23015	67	england	CONFIRM	ihadbeenin	abowtthese	aengland	edit 1
+target	P7	23297	153	thecaualiers	INCONCLUSIVE		knewieiihould		context too short
+K	P5_P6	22894	158	designs	CONFIRM	considerthatin	omkthisnat	designs	edit 0
+K	P5_P6	22901	130	generalrising	INCONCLUSIVE	inthissixe	andtheother		left not located
+K	P5_P6	22913	130	generalrising	CONFIRM	tomeosthis	iconsessethen	generalrising	edit 0
+K	P5_P6	23015	158	designs	CONFIRM	abowtthese	whichiperceiuing	designs	edit 0
+K	P5_P6	23015	81	which	CONFIRM	esedesigns	iperceiuing	which	edit 0
+K	P5_P6	23019	81	which	CONFIRM	akeinhimbi	meanesigott	which	edit 0
+K	P7	23238	130	generalrising	INCONCLUSIVE		beingsuchtroopesasi		context too short
+K	P7	23253	130	generalrising	INCONCLUSIVE	thimintrds	andsoetake		left not unique
+K	P7	23256	81	which	REFUTE-gap	aitohimonl	torendermi	i	edit 4
+K	P7	23289	85	haue	INCONCLUSIVE	whereipmai	ehehonourparti		right not located
+K	P7	23292	158	designs	INCONCLUSIVE		shalcometo		context too short
+K	P7	23295	83	with	INCONCLUSIVE	omerhieher			context too short
+K	P7	23308	83	with	CONFIRM	lkemideace	thelordprotector	with	edit 0
+K	P7	23313	81	which	CONFIRM	toeakeaboae	shohldcarr	twhich	edit 1
+K	P7	23316	83	with	REFUTE-gap	ertmeeting	thethelordprotector		edit 4
+K	P7	23319	81	which	INCONCLUSIVE	tohimaster			context too short
+K	P7	23320	83	with	INCONCLUSIVE	dillatissiedmd			context too short
+K	P7	23321	85	haue	INCONCLUSIVE		heldtohimin		context too short
+K	P7	23337	85	haue	INCONCLUSIVE	thatsormerli	hadcorrespondence		left not located
+K	P7	23338	83	with	INCONCLUSIVE	correspondence	ouereonwhitehall		right not located
+K	P7	23253	35	t	INCONCLUSIVE	engagingagains			context too short
+K	P7	23258	28	i	CONFIRM	disatissadlioninsomeosh	sowneparti	i	edit 0
+K	P5_P6	22900	22	g	CONFIRM	apprehensionosmien	agininthis	g	edit 0
+K	P5_P6	23016	40	o	INCONCLUSIVE				context too short
+K	P7	23292	34	u	INCONCLUSIVE	sehedertic			context too short
+K	P7	23289	25	e	INCONCLUSIVE	eipmaihaue			context too short
+K	P7	23256	43	m	CONFIRM	miselsethe	orecapable	m	edit 0
+K	P5_P6	23029	6	i	INCONCLUSIVE		nlondmnboth		context too short
+K	P7	23288	17	c	CONFIRM	rinsomepla	einlondonw	c	edit 0
+K	P7	23239	35	t	INCONCLUSIVE				context too short
+K	P7	23305	26	s	CONFIRM	whethermide	igneincomi	s	edit 0
+K	P5_P6	22946	25	e	REFUTE-gap	ithatknewm	ewhosindin		edit 1
+K	P7	23291	43	m	INCONCLUSIVE	owntoshhat	orewhitehall		right not located
+K	P5_P6	22930	40	o	INCONCLUSIVE	leastbesorel			context too short
+K	P5_P6	23019	12	e	INCONCLUSIVE		rhebeingon		context too short
+K	P5_P6	22930	41	n	CONFIRM	leastbesorelo	donbeedisa	n	edit 0
+K	P5_P6	22919	40	o	INCONCLUSIVE	busineslew	uldbeemupon		right not located
+K	P7	23310	35	t	INCONCLUSIVE	shouldbeknowne			context too short
+K	P5_P6	23015	25	e	CONFIRM	thatihadbe	ninengland	e	edit 0
+K	P7	23294	3	l	INCONCLUSIVE		seandcolonel		context too short
+K	P7	23337	28	i	INCONCLUSIVE	therebeani	nteearmiparliament		right not located
+K	P7	23306	19	a	CONFIRM	tomlkemide	cewiththelordprotector	a	edit 0
+K	P5_P6	22930	16	d	INCONCLUSIVE	beedisarme	thensuchai		right not located
+K	P5_P6	23029	36	s	INCONCLUSIVE	abletoemploi			context too short
+K	P5_P6	22920	41	n	INCONCLUSIVE	certaineknowledge	attakosand		right not located
+K	P7	23340	37	r	INCONCLUSIVE		designisas		context too short
+K	P5_P6	22913	26	s	CONFIRM	theboktomeo	thisgeneralrising	s	edit 0
+K	P7	23319	43	m	INCONCLUSIVE	ucemeetohi	asterwhich		left not located
+K	P5_P6	23051	30	a	INCONCLUSIVE	callaismarch			context too short
+K	P7	23288	37	r	INCONCLUSIVE		insomeplac		context too short
+K	P7	23297	12	e	INCONCLUSIVE	iihouldbel	ssenewesab		left not unique
+K	P5_P6	22920	30	a	INCONCLUSIVE		kosandnoticeosandalthough		context too short
+K	P7	23238	19	a	INCONCLUSIVE	surewillnot			context too short
+K	P7	23262	39	p	CONFIRM	eetobeehis	risoneratl	p	edit 0
+K	P5_P6	23031	35	t	INCONCLUSIVE		saswillbeusesuu		context too short
+K	P7	23309	10	g	INCONCLUSIVE		ainsthimin		context too short
+K	P7	23313	7	h	CONFIRM	boaewhichs	ohldcarrim	h	edit 0
+K	P5_P6	22944	34	u	CONFIRM	edgeositth	satwilandi	u	edit 0
+K	P7	23296	25	e	INCONCLUSIVE	osbeingmad			context too short
+K	P7	23278	40	o	INCONCLUSIVE	osouertonc			context too short
+K	P7	23293	29	d	CONFIRM	towiknowle	geandnextthat	d	edit 0
+K	P5_P6	23016	23	h	INCONCLUSIVE				context too short
+K	P5_P6	22909	41	n	INCONCLUSIVE	eeosmiagai	ewhichicannot		left not located
+K	P7	23296	18	b	INCONCLUSIVE		eingmadeap		context too short
+K	P5_P6	22894	42	n	CONFIRM	isiwereinlo	donwhichiou	n	edit 0
+K	P5_P6	22918	25	e	INCONCLUSIVE	andthosewhoi	apthisbusinesle		right not located
+K	P7	23339	37	r	INCONCLUSIVE		eedbesoreh		context too short
+K	P7	23255	23	h	INCONCLUSIVE	ingtosaito	imonlwhich		right not located
+K	P7	23338	25	e	INCONCLUSIVE	correspondencewithou			context too short
+K	P7	23316	43	m	INCONCLUSIVE	shaladoint			context too short
+K	P7	23311	19	a	INCONCLUSIVE	iwhodassei	tdouerbieh		left not located
+K	P5_P6	22891	2	m	INCONCLUSIVE	lastwastoco			context too short
+K	P7	23309	6	i	INCONCLUSIVE	engagedaga			context too short
+K	P7	23290	12	e	INCONCLUSIVE	partisomtim			context too short
+K	P5_P6	23059	3	l	INCONCLUSIVE	stillatmidde			context too short
+K	P5_P6	22999	25	e	INCONCLUSIVE	nohimbeing			context too short
+K	P7	23340	6	i	INCONCLUSIVE	onerdesign	sasaslikel		left not unique
+K	P5_P6	23033	18	b	CONFIRM	gowtosthis	usinesandthe	b	edit 0
+K	P7	23321	23	h	CONFIRM	haueheldto	iminsinelet	h	edit 0
+K	P5_P6	22909	12	e	INCONCLUSIVE	eosmiagain	whichicannot		left not located
+W	P5_P6	22894	158	haue	REFUTE-gap	considerthatin	omkthisnat	designs	edit 7
+W	P5_P6	22901	130	designs	INCONCLUSIVE	inthissixe	andtheother		left not located
+W	P5_P6	22913	130	which	REFUTE-gap	tomeosthis	iconsessethen	generalrising	edit 12
+W	P5_P6	23015	158	generalrising	REFUTE-gap	abowtthese	whichiperceiuing	designs	edit 10
+W	P5_P6	23015	81	with	INCONCLUSIVE	esedesigns	iperceiuing	which	edit 2
+W	P5_P6	23019	81	with	INCONCLUSIVE	akeinhimbi	meanesigott	which	edit 2
+W	P7	23238	130	with	INCONCLUSIVE		beingsuchtroopesasi		context too short
+W	P7	23253	130	with	INCONCLUSIVE	thimintrds	andsoetake		left not unique
+W	P7	23256	81	generalrising	REFUTE-gap	aitohimonl	torendermi	i	edit 12
+W	P7	23289	85	designs	INCONCLUSIVE	whereipmai	ehehonourparti		right not located
+W	P7	23292	158	with	INCONCLUSIVE		shalcometo		context too short
+W	P7	23295	83	designs	INCONCLUSIVE	omerhieher			context too short
+W	P7	23308	83	which	INCONCLUSIVE	lkemideace	thelordprotector	with	edit 2
+W	P7	23313	81	with	INCONCLUSIVE	toeakeaboae	shohldcarr	twhich	edit 3
+W	P7	23316	83	designs	REFUTE-gap	ertmeeting	thethelordprotector		edit 7
+W	P7	23319	81	with	INCONCLUSIVE	tohimaster			context too short
+W	P7	23320	83	haue	INCONCLUSIVE	dillatissiedmd			context too short
+W	P7	23321	85	generalrising	INCONCLUSIVE		heldtohimin		context too short
+W	P7	23337	85	designs	INCONCLUSIVE	thatsormerli	hadcorrespondence		left not located
+W	P7	23338	83	haue	INCONCLUSIVE	correspondence	ouereonwhitehall		right not located
+W	P7	23253	35	a	INCONCLUSIVE	engagingagains			context too short
+W	P7	23258	28	a	REFUTE-gap	disatissadlioninsomeosh	sowneparti	i	edit 1
+W	P5_P6	22900	22	a	REFUTE-gap	apprehensionosmien	agininthis	g	edit 1
+W	P5_P6	23016	40	a	INCONCLUSIVE				context too short
+W	P7	23292	34	o	INCONCLUSIVE	sehedertic			context too short
+W	P7	23289	25	i	INCONCLUSIVE	eipmaihaue			context too short
+W	P7	23256	43	r	REFUTE-gap	miselsethe	orecapable	m	edit 1
+W	P5_P6	23029	6	a	INCONCLUSIVE		nlondmnboth		context too short
+W	P7	23288	17	u	REFUTE-gap	rinsomepla	einlondonw	c	edit 1
+W	P7	23239	35	i	INCONCLUSIVE				context too short
+W	P7	23305	26	r	REFUTE-gap	whethermide	igneincomi	s	edit 1
+W	P5_P6	22946	25	t	REFUTE-gap	ithatknewm	ewhosindin		edit 1
+W	P7	23291	43	i	INCONCLUSIVE	owntoshhat	orewhitehall		right not located
+W	P5_P6	22930	40	n	INCONCLUSIVE	leastbesorel			context too short
+W	P5_P6	23019	12	k	INCONCLUSIVE		rhebeingon		context too short
+W	P5_P6	22930	41	i	REFUTE-gap	leastbesorelo	donbeedisa	n	edit 1
+W	P5_P6	22919	40	s	INCONCLUSIVE	busineslew	uldbeemupon		right not located
+W	P7	23310	35	l	INCONCLUSIVE	shouldbeknowne			context too short
+W	P5_P6	23015	25	a	REFUTE-gap	thatihadbe	ninengland	e	edit 1
+W	P7	23294	3	r	INCONCLUSIVE		seandcolonel		context too short
+W	P7	23337	28	d	INCONCLUSIVE	therebeani	nteearmiparliament		right not located
+W	P7	23306	19	h	REFUTE-gap	tomlkemide	cewiththelordprotector	a	edit 1
+W	P5_P6	22930	16	m	INCONCLUSIVE	beedisarme	thensuchai		right not located
+W	P5_P6	23029	36	d	INCONCLUSIVE	abletoemploi			context too short
+W	P5_P6	22920	41	m	INCONCLUSIVE	certaineknowledge	attakosand		right not located
+W	P7	23340	37	u	INCONCLUSIVE		designisas		context too short
+W	P5_P6	22913	26	p	REFUTE-gap	theboktomeo	thisgeneralrising	s	edit 1
+W	P7	23319	43	u	INCONCLUSIVE	ucemeetohi	asterwhich		left not located
+W	P5_P6	23051	30	i	INCONCLUSIVE	callaismarch			context too short
+W	P7	23288	37	l	INCONCLUSIVE		insomeplac		context too short
+W	P7	23297	12	m	INCONCLUSIVE	iihouldbel	ssenewesab		left not unique
+W	P5_P6	22920	30	t	INCONCLUSIVE		kosandnoticeosandalthough		context too short
+W	P7	23238	19	u	INCONCLUSIVE	surewillnot			context too short
+W	P7	23262	39	o	REFUTE-gap	eetobeehis	risoneratl	p	edit 1
+W	P5_P6	23031	35	b	INCONCLUSIVE		saswillbeusesuu		context too short
+W	P7	23309	10	t	INCONCLUSIVE		ainsthimin		context too short
+W	P7	23313	7	k	REFUTE-gap	boaewhichs	ohldcarrim	h	edit 1
+W	P5_P6	22944	34	o	REFUTE-gap	edgeositth	satwilandi	u	edit 1
+W	P7	23296	25	r	INCONCLUSIVE	osbeingmad			context too short
+W	P7	23278	40	g	INCONCLUSIVE	osouertonc			context too short
+W	P7	23293	29	o	REFUTE-gap	towiknowle	geandnextthat	d	edit 1
+W	P5_P6	23016	23	o	INCONCLUSIVE				context too short
+W	P5_P6	22909	41	c	INCONCLUSIVE	eeosmiagai	ewhichicannot		left not located
+W	P7	23296	18	s	INCONCLUSIVE		eingmadeap		context too short
+W	P5_P6	22894	42	u	REFUTE-gap	isiwereinlo	donwhichiou	n	edit 1
+W	P5_P6	22918	25	d	INCONCLUSIVE	andthosewhoi	apthisbusinesle		right not located
+W	P7	23339	37	g	INCONCLUSIVE		eedbesoreh		context too short
+W	P7	23255	23	u	INCONCLUSIVE	ingtosaito	imonlwhich		right not located
+W	P7	23338	25	p	INCONCLUSIVE	correspondencewithou			context too short
+W	P7	23316	43	o	INCONCLUSIVE	shaladoint			context too short
+W	P7	23311	19	t	INCONCLUSIVE	iwhodassei	tdouerbieh		left not located
+W	P5_P6	22891	2	a	INCONCLUSIVE	lastwastoco			context too short
+W	P7	23309	6	t	INCONCLUSIVE	engagedaga			context too short
+W	P7	23290	12	b	INCONCLUSIVE	partisomtim			context too short
+W	P5_P6	23059	3	m	INCONCLUSIVE	stillatmidde			context too short
+W	P5_P6	22999	25	p	INCONCLUSIVE	nohimbeing			context too short
+W	P7	23340	6	g	INCONCLUSIVE	onerdesign	sasaslikel		left not unique
+W	P5_P6	23033	18	h	REFUTE-gap	gowtosthis	usinesandthe	b	edit 1
+W	P7	23321	23	u	REFUTE-gap	haueheldto	iminsinelet	h	edit 1
+W	P5_P6	22909	12	k	INCONCLUSIVE	eosmiagain	whichicannot		left not located
