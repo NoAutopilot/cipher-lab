@@ -120,3 +120,14 @@ Script key_rebuild/rebuild.py (`--check`), output rebuild_output.txt; seeds 1-3;
 | anneal, arm L (log conditional bigram) | not run | 0.034 / 0.023 / 0.033 (mean 0.030; ceiling 0.71) | 0.0058 | same | CONTROL BELOW GATE |
 
 Result: untestable by this instrument (context-fit anneal over fr18 top-800 bigrams) at this N; not a negative about codes 1-800.
+
+## N6-HEL76 (4 Oct 2026): R4376 (BL Add MS 32276 f.56, docket 1754) P3 as a key for R1049 (7 Sept 1756)
+PREREG `key_r4376/PREREG.md` (a6f0668b, before the image fetch). `sibling_michell/test_sibling.py --key key_r4376/key_<X>.tsv --seed 1 --oov-floor`;
+nulls ("zero") dropped from gated keys. Pass = uni value-shuffle p and bi order-shuffle p both <= 0.0125, power >= 0.8.
+
+| family | target R1049: covered / uni real vs shuffle mean (p) / bi real vs order-shuffle mean (p) | control (fr18 prose encoded with this key, subsampled to R1049's covered count and pair count): power uni / bi | verdict |
+|---|---|---|---|
+| period key R4376 L | 121 / -9.572 vs -9.349 (0.705) / -0.910 vs -1.042 (0.155) | 1.00 / 0.98 | FAIL |
+| period key R4376 R0 | 70 / -9.529 vs -9.730 (0.350) / -1.090 vs -1.018 (0.485) | 1.00 / 0.90 | FAIL |
+| period key R4376 R100 | 91 / -9.870 vs -9.599 (0.695) / -1.204 vs -1.076 (1.000) | 1.00 / 0.97 | FAIL |
+| period key R4376 LR100 | 145 / -9.905 vs -9.602 (0.830) / -1.159 vs -1.086 (0.840) | 1.00 / 1.00 | FAIL |

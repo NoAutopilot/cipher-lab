@@ -1188,3 +1188,70 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: transcribe R4376 P3 and test it on R1049 with a matched control, ~$8
+
+## N6-HEL76 (4 Oct 2026): R4376 (f.56, 1754) P3 transcribed and tested on R1049 (7 Sept 1756) (account 2 worker for LANE-NEAR6)
+
+Step run: the N5-HEL7 verdict's cheapest next. **Pre-registration** `key_r4376/PREREG.md` (commit a6f0668b) was pushed before the image
+was fetched. It copies NEAR3-HEL4's method (four attributions, k = 4, uni value-shuffle + bi order-shuffle, power from fr18 prose encoded
+with the key and subsampled to R1049's own covered count and pair count). Two changes, both stated before any run: "zero" nulls are
+dropped from the gated keys (N4-HEL6), and the bigram uses N5-HEL7's OOV floor (`test_sibling.py --key ... --oov-floor`, an option added
+in commit 622ce49c; the default is unchanged). R4370 and R4372 were not used (retired).
+**Route:** one DECODE browser login (`tools/decode_browser_login.js 4376 <scratchpad> --delay 1700 --max-files 1 --fetch <P3 filesrv URL>`).
+P3 sha1 84ef4ad7... matches `images/decode/manifest.json`. The image stays in the scratchpad (not public domain), and the account name
+is in no file. Requests: de-crypt.org about 5 (login page, submit, landing, RecordsView/4376, 1 image), 1.7 s apart, no challenge; no
+other host.
+
+**What the sheet is.** P3 carries codes 1-500 in five blocks of 100 on the same kind of printed form as R4369/R4372. There are left
+entries plus right-aligned right entries ending in a dash. A strip LEFT of block 1-100 holds right entries whose dashes point at codes
+1-100, and the right page edge shows a 501-600 number column whose own entries are cut off. The sheet is densely filled with "zero"
+nulls (78 cells). Names in it include Newcastle, Holdernesse, Guy Dickens, Colloredo, Bestuchef (?), "le Ministere", "la France",
+"la G.de Bret.g", "Hollandois", "pays bas", "la Haye", "Livres St.g", "le R.y d'Ang.re" and "elect.r d'Han.re", which point to an
+Anglo-Austrian-Russian context of the mid-1750s. No holder is named.
+**Transcription.** Crops: `python3 tools/iiif_lines.py --image <P3 file> --out <scratchpad>/crops --region <x>,250,<w>,5100 --centres
+500,1500,2500,3480,4500 --prefix P3_c<b> --debug`, once per block (x/w 230/1040, 1250/780, 2000/770, 2740/780, 3480/951). That gave
+25 crops of 20 rows each, all cut before any subagent call. Two blind Sonnet passes (the second in reverse block order) saw only the
+crop paths. Code-keyed diff (letters only): **err_2reader 0.113 (70/617 cells; raw 78)**. Most splits are about which row a right entry
+sits on, or are cut 501-600 stubs. I settled 41 cells (row placements included) from two strip montages and one crop (e.g. 268 "p", 115 R "le Ministere",
+222/223 R "est"/"royaume", 98/99 R "propre"/"~convenable", 89 "Livres St.g"). The other 29 take one pass's cell at grade M.
+`key_r4376/key.tsv`: 480 rows, 609 cells, **H 507 / M 102**. err_true is not measurable (no benchmark item of this hand). Conventions
+are in `key_r4376/README.md`.
+**Gate B (coverage):** LR100 covers 145 R1049 tokens (L 121, R0 70, R100 91). The gate (54) is met.
+
+**Test** (seed 1; full rows in `key_r4376/test_key_*.txt` and HYPOTHESES.md):
+
+| R4376 key on R1049 | covered | uni real / shuffle mean | uni p | pairs | bi real / order-shuffle mean | bi order p | power uni / bi | verdict |
+|---|---|---|---|---|---|---|---|---|
+| L | 121 | -9.572 / -9.349 | 0.705 | 21 | -0.910 / -1.042 | 0.155 | 1.00 / 0.98 | fail |
+| R0 | 70 | -9.529 / -9.730 | 0.350 | 9 | -1.090 / -1.018 | 0.485 | 1.00 / 0.90 | fail |
+| R100 | 91 | -9.870 / -9.599 | 0.695 | 14 | -1.204 / -1.076 | 1.000 | 1.00 / 0.97 | fail |
+| LR100 | 145 | -9.905 / -9.602 | 0.830 | 35 | -1.159 / -1.086 | 0.840 | 1.00 / 1.00 | fail |
+| *for scale: R4369 LR100 on R1953 (READ2-HEL)* | 470 | -7.017 / -9.157 | 0.000 | | -0.361 / -0.694 | 0.000 | 1.00 / 1.00 | pass |
+
+With nulls kept (`key_<X>_z`, reported, not gated), R1049's uni p is 0.64-0.89 and its bi order p 0.14-1.00. Seed 2 was not run,
+because a pass has to hold on both seeds and seed 1 already fails. Secondary rows (not gated): the only cell at or under 0.0125 among
+the other seven letters is R0 on R1953, bi order p 0.000 on 9 pairs. Its uni p there is 0.915, so it fails, and R1953's codes 1-500
+belong to a different, 1751 key series in any case.
+
+**Result.** At power 0.90-1.00, no attribution of R4376 reads R1049: **R4376 is not the key of the 7 Sept 1756 letter** (a pre-registered,
+control-backed FAIL, conditional on DECODE's transcription of R1049, rule 2). R1049 now has no reading from R4369, R4372 or R4376.
+No reading was built (PREREG item 6). Calls: 2 Sonnet subagent passes, plus my own reads (1 page overview, 1 crop check, 2
+reconciliation montages, 1 detail crop). Report what was found and where it was not found: R1049's codes 1-600 have no key on R4376 P3.
+The sheet's names (Newcastle, Holdernesse, Colloredo, Guy Dickens) suggest an English-Austrian table of about 1754. That is inference,
+not tested. It is the reading of a next step (a holder search), not a conclusion.
+
+## Remaining gaps (N6-HEL76, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); the context-fit anneal over fr18 bigrams is untestable at this N (N5-HEL7: control R_w 0.010 / 0.030 against a 0.20 gate, ceiling 0.71); next: transcribe Fagel 5177's clear Hellen pages (scans 5-93, two blind passes + reconciliation) as a writer- and week-matched phrase corpus, then a pre-registered phrase-crib placement in the R4369-decoded gaps with its own held-out control, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4369, R4372 and R4376 (N6-HEL76: LR100 uni p 0.830, bi order p 0.840 at power 1.00) do not read it; next: open the post-1756 Add MS 32276 key records R4381-R4408 (contact sheet first, as NEAR3-HEL3) for a table that carries R1049's codes, ~$4
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370, R4372 nor R4376 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (N6-HEL76, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); no ciphertext of those letters survives, so they are context only, not a crib for R1953 itself
+- [ ] known-keys: R4369 reads R1953; R4370 and R4372 retired for codes 1-800; R4376 tested on R1049 and fails (N6-HEL76); the post-1756 Add MS 32276 records R4381-R4408 are not yet looked at for R1049 and the 1763 letters
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: the fr18-bigram context-fit anneal was tried with its control first and is untestable at this N (N5-HEL7, control R_w 0.010 / 0.030 vs gate 0.20); untried instrument: phrase-crib placement from a transcribed Fagel 5177 writer-matched corpus, with its own held-out control
+- [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: open the post-1756 Add MS 32276 key records R4381-R4408 (contact sheet first) for R1049 and the 1763 letters, ~$4

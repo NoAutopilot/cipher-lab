@@ -1,0 +1,464 @@
+code	value	grade	source
+1	sa	S	R4376 right entry of row -99, attributed +100
+2	je	S	R4376 right entry of row -98, attributed +100
+5	larras?	M	R4376 right entry of row -95, attributed +100
+6	des	S	R4376 right entry of row -94, attributed +100
+7	gis?	M	R4376 right entry of row -93, attributed +100
+8	celui	S	R4376 right entry of row -92, attributed +100
+9	vailler	S	R4376 right entry of row -91, attributed +100
+12	devenir	S	R4376 right entry of row -88, attributed +100
+13	nnovre	S	R4376 right entry of row -87, attributed +100
+15	r	S	R4376 right entry of row -85, attributed +100
+17	ce qui	S	R4376 right entry of row -83, attributed +100
+19	je	S	R4376 right entry of row -81, attributed +100
+20	ecembre	S	R4376 right entry of row -80, attributed +100
+21	considerer	H	R4376 left entry
+22	r	S	R4376 right entry of row -78, attributed +100
+23	zero	S	R4376 right entry of row -77, attributed +100
+24	oposition	M	R4376 right entry of row -76, attributed +100
+25	baron	S	R4376 right entry of row -75, attributed +100
+26	arriver	H	R4376 left entry
+27	maginer?	M	R4376 right entry of row -73, attributed +100
+28	lever	M	R4376 right entry of row -72, attributed +100
+29	nent	S	R4376 right entry of row -71, attributed +100
+30	no	S	R4376 right entry of row -70, attributed +100
+31	Hollande	M	R4376 right entry of row -69, attributed +100
+32	entrainer	H	R4376 left entry
+33	mois	S	R4376 right entry of row -67, attributed +100
+34	il	S	R4376 right entry of row -66, attributed +100
+35	ses	S	R4376 right entry of row -65, attributed +100
+36	zero	S	R4376 right entry of row -64, attributed +100
+37	zero	S	R4376 right entry of row -63, attributed +100
+39	par	S	R4376 right entry of row -61, attributed +100
+40	elon	M	R4376 right entry of row -60, attributed +100
+41	tion	S	R4376 right entry of row -59, attributed +100
+42	que	S	R4376 right entry of row -58, attributed +100
+43	le	S	R4376 right entry of row -57, attributed +100
+44	17	S	R4376 right entry of row -56, attributed +100
+45	cependant	S	R4376 right entry of row -55, attributed +100
+47	bourg	S	R4376 right entry of row -53, attributed +100
+49	zero	H	R4376 left entry
+50	pour	S	R4376 right entry of row -50, attributed +100
+51	roy..	M	R4376 right entry of row -49, attributed +100
+53	oit	S	R4376 right entry of row -47, attributed +100
+54	Du	S	R4376 right entry of row -46, attributed +100
+55	ses	H	R4376 left entry
+56	zero	H	R4376 left entry
+58	Zero	H	R4376 left entry
+59	zero	H	R4376 left entry
+60	mais	S	R4376 right entry of row -40, attributed +100
+61	regner	S	R4376 right entry of row -39, attributed +100
+62	Zero	H	R4376 left entry
+63	zero	H	R4376 left entry
+64	laration	S	R4376 right entry of row -36, attributed +100
+65	Zero	H	R4376 left entry
+66	beaucoup	S	R4376 right entry of row -34, attributed +100
+67	mitie	S	R4376 right entry of row -33, attributed +100
+68	servir	H	R4376 left entry
+69	ren....	H	R4376 left entry
+71	fournir	S	R4376 right entry of row -29, attributed +100
+72	foible	S	R4376 right entry of row -28, attributed +100
+74	elect.r d'Han.re	M	R4376 right entry of row -26, attributed +100
+75	lib....	S	R4376 right entry of row -25, attributed +100
+76	sur.	S	R4376 right entry of row -24, attributed +100
+77	nu	S	R4376 right entry of row -23, attributed +100
+79	moment	S	R4376 right entry of row -21, attributed +100
+80	zero	S	R4376 right entry of row -20, attributed +100
+81	zero	S	R4376 right entry of row -19, attributed +100
+82	nement	M	R4376 right entry of row -18, attributed +100
+83	a	H	R4376 left entry
+84	Zero	H	R4376 left entry
+85	en	S	R4376 right entry of row -15, attributed +100
+86	zero	S	R4376 right entry of row -14, attributed +100
+87	Septembre	H	R4376 left entry
+88	u.v.re	S	R4376 right entry of row -12, attributed +100
+89	et	S	R4376 right entry of row -11, attributed +100
+90	r	S	R4376 right entry of row -10, attributed +100
+92	ca	S	R4376 right entry of row -8, attributed +100
+93	fi	S	R4376 right entry of row -7, attributed +100
+94	Bengale	H	R4376 left entry
+95	seur	S	R4376 right entry of row -5, attributed +100
+96	autriche	H	R4376 left entry
+100	lement	S	R4376 right entry of row 0, attributed +100
+102	r	H	R4376 left entry
+103	vous me	S	R4376 right entry of row 3, attributed +100
+106	s	S	R4376 right entry of row 6, attributed +100
+107	je veux bien v.di	M	R4376 right entry of row 7, attributed +100
+109	nes	S	R4376 right entry of row 9, attributed +100
+110	representer?	M	R4376 right entry of row 10, attributed +100
+111	wi?	M	R4376 right entry of row 11, attributed +100
+112	promettre	S	R4376 right entry of row 12, attributed +100
+113	aux	S	R4376 right entry of row 13, attributed +100
+114	lettres	S	R4376 right entry of row 14, attributed +100
+115	e / zero	H	R4376 left entry
+116	faire	S	R4376 right entry of row 16, attributed +100
+117	j'ai	H	R4376 left entry
+118	moi	S	R4376 right entry of row 18, attributed +100
+119	service	H	R4376 left entry
+120	se?	M	R4376 right entry of row 20, attributed +100
+121	zero	S	R4376 right entry of row 21, attributed +100
+122	Newcastle	S	R4376 right entry of row 22, attributed +100
+123	zero	S	R4376 right entry of row 23, attributed +100
+124	zero	S	R4376 right entry of row 24, attributed +100
+125	Zero	S	R4376 right entry of row 25, attributed +100
+126	petersbourg	H	R4376 left entry
+127	oi	S	R4376 right entry of row 27, attributed +100
+128	entre	H	R4376 left entry
+129	lui	M	R4376 right entry of row 29, attributed +100
+130	experience	H	R4376 left entry
+131	b	S	R4376 right entry of row 31, attributed +100
+132	zero	S	R4376 right entry of row 32, attributed +100
+133	Zero	S	R4376 right entry of row 33, attributed +100
+134	es	S	R4376 right entry of row 34, attributed +100
+135	n	S	R4376 right entry of row 35, attributed +100
+136	zero	S	R4376 right entry of row 36, attributed +100
+137	r	H	R4376 left entry
+138	l	H	R4376 left entry
+139	entre	S	R4376 right entry of row 39, attributed +100
+140	usage	H	R4376 left entry
+141	faisoient	S	R4376 right entry of row 41, attributed +100
+142	celle	S	R4376 right entry of row 42, attributed +100
+145	flatter	S	R4376 right entry of row 45, attributed +100
+147	sieur de	S	R4376 right entry of row 47, attributed +100
+148	je	S	R4376 right entry of row 48, attributed +100
+149	au	H	R4376 left entry
+150	insister	S	R4376 right entry of row 50, attributed +100
+151	subsides	S	R4376 right entry of row 51, attributed +100
+152	voyage	S	R4376 right entry of row 52, attributed +100
+153	ce que	S	R4376 right entry of row 53, attributed +100
+154	zero	H	R4376 left entry
+155	ni?	M	R4376 right entry of row 55, attributed +100
+156	zero	H	R4376 left entry
+157	transporter, trans	S	R4376 right entry of row 57, attributed +100
+158	zero	H	R4376 left entry
+160	si	S	R4376 right entry of row 60, attributed +100
+161	contraire	S	R4376 right entry of row 61, attributed +100
+162	proposer	S	R4376 right entry of row 62, attributed +100
+163	leurs	S	R4376 right entry of row 63, attributed +100
+164	execute	S	R4376 right entry of row 64, attributed +100
+165	vienne	S	R4376 right entry of row 65, attributed +100
+166	moins	S	R4376 right entry of row 66, attributed +100
+167	Zero	S	R4376 right entry of row 67, attributed +100
+168	Zero	S	R4376 right entry of row 68, attributed +100
+169	zero	S	R4376 right entry of row 69, attributed +100
+171	zero	S	R4376 right entry of row 71, attributed +100
+172	peu	H	R4376 left entry
+174	zero	S	R4376 right entry of row 74, attributed +100
+176	q	S	R4376 right entry of row 76, attributed +100
+177	Artillerie	H	R4376 left entry
+178	fait	S	R4376 right entry of row 78, attributed +100
+179	m'en / me	S	R4376 right entry of row 79, attributed +100
+180	ordre	H	R4376 left entry
+181	orient	S	R4376 right entry of row 81, attributed +100
+182	cent	S	R4376 right entry of row 82, attributed +100
+183	retarder	S	R4376 right entry of row 83, attributed +100
+186	consta.....	M	R4376 right entry of row 86, attributed +100
+190	declarer	S	R4376 right entry of row 90, attributed +100
+191	conclure	S	R4376 right entry of row 91, attributed +100
+192	devien.	S	R4376 right entry of row 92, attributed +100
+193	harangue	S	R4376 right entry of row 93, attributed +100
+195	ce qui	S	R4376 right entry of row 95, attributed +100
+196	immediatement	M	R4376 right entry of row 96, attributed +100
+197	flotte Angloise	S	R4376 right entry of row 97, attributed +100
+198	propre	S	R4376 right entry of row 98, attributed +100
+199	zero	H	R4376 left entry
+200	zero	H	R4376 left entry
+201	zero	H	R4376 left entry
+203	garder	H	R4376 left entry
+204	plaisir	H	R4376 left entry
+206	agi.	H	R4376 left entry
+208	dire cacher	H	R4376 left entry
+209	alors	H	R4376 left entry
+210	solide	H	R4376 left entry
+212	communiquer.	H	R4376 left entry
+213	l'pais?	M	R4376 left entry
+215	le Ministere	S	R4376 right entry of row 115, attributed +100
+216	che.	H	R4376 left entry
+220	ez	H	R4376 left entry
+222	Newcastle	S	R4376 right entry of row 122, attributed +100
+223	protester	H	R4376 left entry
+224	imperiale	H	R4376 left entry
+225	Novembre	H	R4376 left entry
+227	ju	H	R4376 left entry
+228	Guy Dickens?	M	R4376 right entry of row 128, attributed +100
+230	etoient	H	R4376 left entry
+231	toujours	H	R4376 left entry
+233	Holdernesse	S	R4376 right entry of row 133, attributed +100
+234	bestuchef?	M	R4376 right entry of row 134, attributed +100
+237	puissance	H	R4376 left entry
+238	employer	H	R4376 left entry
+240	Colloredo	S	R4376 right entry of row 140, attributed +100
+242	la France	S	R4376 right entry of row 142, attributed +100
+244	dif?	M	R4376 left entry
+245	gle	H	R4376 left entry
+246	o?	M	R4376 left entry
+249	meme	H	R4376 left entry
+251	encore	H	R4376 left entry
+252	juger	H	R4376 left entry
+253	ra	H	R4376 left entry
+254	monsieur led?	M	R4376 left entry
+256	cho	H	R4376 left entry
+258	uniquement	S	R4376 right entry of row 158, attributed +100
+260	defendre	H	R4376 left entry
+262	somme	H	R4376 left entry
+263	ye	H	R4376 left entry
+266	hazard	H	R4376 left entry
+268	p	H	R4376 left entry
+269	coup	H	R4376 left entry
+271	suffit	H	R4376 left entry
+272	frere	H	R4376 left entry
+273	ic	H	R4376 left entry
+274	partie	H	R4376 left entry
+276	seigneur	H	R4376 left entry
+278	difficile	H	R4376 left entry
+281	.ant	H	R4376 left entry
+282	etrangers	H	R4376 left entry
+283	nouvelles	H	R4376 left entry
+286	russie,n	H	R4376 left entry
+288	zero	H	R4376 left entry
+289	zero	H	R4376 left entry
+290	divers	H	R4376 left entry
+291	amitie	H	R4376 left entry
+292	cla	H	R4376 left entry
+297	ren.	H	R4376 left entry
+299	parader	H	R4376 left entry
+300	contre	S	R4376 right entry of row 200, attributed +100
+301	barriere	S	R4376 right entry of row 201, attributed +100
+302	persuade	M	R4376 right entry of row 202, attributed +100
+304	jo	S	R4376 right entry of row 204, attributed +100
+305	plustot	M	R4376 left entry
+307	obtenir/demander?	M	R4376 right entry of row 207, attributed +100
+308	hesse cassel	H	R4376 left entry
+309	il	S	R4376 right entry of row 209, attributed +100
+310	zero	S	R4376 right entry of row 210, attributed +100
+311	zero	S	R4376 right entry of row 211, attributed +100
+312	avec	H	R4376 left entry
+313	ut	H	R4376 left entry
+314	faudra?	M	R4376 right entry of row 214, attributed +100
+315	vous	S	R4376 right entry of row 215, attributed +100
+316	zero	S	R4376 right entry of row 216, attributed +100
+317	zero	S	R4376 right entry of row 217, attributed +100
+318	p	S	R4376 right entry of row 218, attributed +100
+319	a	S	R4376 right entry of row 219, attributed +100
+320	m	S	R4376 right entry of row 220, attributed +100
+321	complimen	M	R4376 left entry
+322	est	S	R4376 right entry of row 222, attributed +100
+323	royaume	S	R4376 right entry of row 223, attributed +100
+324	mon	S	R4376 right entry of row 224, attributed +100
+325	courier	H	R4376 left entry
+326	27.	H	R4376 left entry
+327	30	S	R4376 right entry of row 227, attributed +100
+329	vienne	S	R4376 right entry of row 229, attributed +100
+330	zero	S	R4376 right entry of row 230, attributed +100
+333	russien,sus.dit	H	R4376 left entry
+334	reserve?	M	R4376 right entry of row 234, attributed +100
+335	devoit	S	R4376 right entry of row 235, attributed +100
+337	perte....	S	R4376 right entry of row 237, attributed +100
+338	succez	S	R4376 right entry of row 238, attributed +100
+339	ce....	S	R4376 right entry of row 239, attributed +100
+340	mort	H	R4376 left entry
+341	une	H	R4376 left entry
+342	doit	H	R4376 left entry
+343	ient....	S	R4376 right entry of row 243, attributed +100
+344	t	S	R4376 right entry of row 244, attributed +100
+345	fois	S	R4376 right entry of row 245, attributed +100
+346	obliger	H	R4376 left entry
+347	engager	H	R4376 left entry
+348	vrai	S	R4376 right entry of row 248, attributed +100
+349	Imperatrice	S	R4376 right entry of row 249, attributed +100
+351	impression	H	R4376 left entry
+353	nd	S	R4376 right entry of row 253, attributed +100
+355	ze ro	S	R4376 right entry of row 255, attributed +100
+356	prendre	S	R4376 right entry of row 256, attributed +100
+357	donc	S	R4376 right entry of row 257, attributed +100
+358	n	H	R4376 left entry
+359	di	S	R4376 right entry of row 259, attributed +100
+360	politique	S	R4376 right entry of row 260, attributed +100
+361	tre	H	R4376 left entry
+362	gno	S	R4376 right entry of row 262, attributed +100
+363	deja	H	R4376 left entry
+364	heureux	S	R4376 right entry of row 264, attributed +100
+365	voudrois / veux	S	R4376 right entry of row 265, attributed +100
+366	faire	H	R4376 left entry
+367	particulierem.t	M	R4376 left entry
+368	tro	S	R4376 right entry of row 268, attributed +100
+369	suis,	H	R4376 left entry
+370	et	S	R4376 right entry of row 270, attributed +100
+372	ainsi	H	R4376 left entry
+376	fort	S	R4376 right entry of row 276, attributed +100
+377	sce.	S	R4376 right entry of row 277, attributed +100
+378	pas	S	R4376 right entry of row 278, attributed +100
+379	informer	S	R4376 right entry of row 279, attributed +100
+381	tour	H	R4376 left entry
+382	princesse	S	R4376 right entry of row 282, attributed +100
+383	bla	S	R4376 right entry of row 283, attributed +100
+384	suposer	S	R4376 right entry of row 284, attributed +100
+385	zero	S	R4376 right entry of row 285, attributed +100
+387	pense	S	R4376 right entry of row 287, attributed +100
+388	non / obstant	S	R4376 right entry of row 288, attributed +100
+390	zero	S	R4376 right entry of row 290, attributed +100
+391	chi	H	R4376 left entry
+392	compagnie	H	R4376 left entry
+393	allarme	S	R4376 right entry of row 293, attributed +100
+394	ambassad.r	M	R4376 left entry
+395	guerre	S	R4376 right entry of row 295, attributed +100
+397	zero	M	R4376 right entry of row 297, attributed +100
+398	fet	M	R4376 right entry of row 298, attributed +100
+399	zero	S	R4376 right entry of row 299, attributed +100
+401	langage	S	R4376 right entry of row 301, attributed +100
+402	pais bas	H	R4376 left entry
+403	ont	S	R4376 right entry of row 303, attributed +100
+404	cologne	S	R4376 right entry of row 304, attributed +100
+405	ont, auront	H	R4376 left entry
+406	bru	S	R4376 right entry of row 306, attributed +100
+407	dont	S	R4376 right entry of row 307, attributed +100
+408	Angleterre	S	R4376 right entry of row 308, attributed +100
+409	dit	S	R4376 right entry of row 309, attributed +100
+410	recu	H	R4376 left entry
+411	voudroit	S	R4376 right entry of row 311, attributed +100
+412	qu'il	S	R4376 right entry of row 312, attributed +100
+413	provi...	H	R4376 left entry
+414	par raport aux	M	R4376 right entry of row 314, attributed +100
+415	gra	S	R4376 right entry of row 315, attributed +100
+416	j'ai appris	M	R4376 right entry of row 316, attributed +100
+417	etonner	H	R4376 left entry
+418	augmenter	S	R4376 right entry of row 318, attributed +100
+419	caractere	S	R4376 right entry of row 319, attributed +100
+420	afin de	S	R4376 right entry of row 320, attributed +100
+421	ts	M	R4376 right entry of row 321, attributed +100
+422	zero	H	R4376 left entry
+423	zero	H	R4376 left entry
+424	zero	H	R4376 left entry
+425	changement	H	R4376 left entry
+427	mecontent	S	R4376 right entry of row 327, attributed +100
+428	re	H	R4376 left entry
+431	preliminaire	M	R4376 right entry of row 331, attributed +100
+432	sur ce q	S	R4376 right entry of row 332, attributed +100
+433	conce..B.	M	R4376 right entry of row 333, attributed +100
+434	le R.y d'Ang.re	M	R4376 right entry of row 334, attributed +100
+435	fort	S	R4376 right entry of row 335, attributed +100
+436	tout	H	R4376 left entry
+438	bli	S	R4376 right entry of row 338, attributed +100
+439	general	H	R4376 left entry
+440	maitre	S	R4376 right entry of row 340, attributed +100
+441	chu	H	R4376 left entry
+442	au	S	R4376 right entry of row 342, attributed +100
+443	zero	S	R4376 right entry of row 343, attributed +100
+444	opposer, sauper?	M	R4376 right entry of row 344, attributed +100
+445	combiner	S	R4376 right entry of row 345, attributed +100
+446	jour	S	R4376 right entry of row 346, attributed +100
+447	malheur	S	R4376 right entry of row 347, attributed +100
+448	to	H	R4376 left entry
+450	onze	S	R4376 right entry of row 350, attributed +100
+451	frontieres, proche	H	R4376 left entry
+452	tot	S	R4376 right entry of row 352, attributed +100
+453	sejour	H	R4376 left entry
+454	risque	S	R4376 right entry of row 354, attributed +100
+457	auroit	H	R4376 left entry
+459	her.	H	R4376 left entry
+460	puissent	H	R4376 left entry
+463	cour	H	R4376 left entry
+465	meme	H	R4376 left entry
+466	laquelle	H	R4376 left entry
+467	etre	H	R4376 left entry
+468	nous	H	R4376 left entry
+471	jusqu'a....	H	R4376 left entry
+472	zero	H	R4376 left entry
+473	zero	H	R4376 left entry
+474	Zero	H	R4376 left entry
+475	dix	H	R4376 left entry
+477	pourtant	H	R4376 left entry
+478	avis	H	R4376 left entry
+479	rechargera	M	R4376 left entry
+480	Guy Dickens	S	R4376 right entry of row 380, attributed +100
+481	res	H	R4376 left entry
+482	un	H	R4376 left entry
+484	d	H	R4376 left entry
+485	Holdernesse	M	R4376 right entry of row 385, attributed +100
+486	gens	H	R4376 left entry
+487	vent	H	R4376 left entry
+488	s'est	H	R4376 left entry
+489	zero	H	R4376 left entry
+490	impo..	H	R4376 left entry
+492	la G.de Bret.g	M	R4376 right entry of row 392, attributed +100
+493	m,	H	R4376 left entry
+495	Colloredo	S	R4376 right entry of row 395, attributed +100
+496	publie	H	R4376 left entry
+498	plusieurs	H	R4376 left entry
+503	s	M	R4376 left entry
+505	a	M	R4376 left entry
+508	p	M	R4376 left entry
+510	n	M	R4376 left entry
+511	a	M	R4376 left entry
+514	e	M	R4376 left entry
+515	a	M	R4376 left entry
+516	n	M	R4376 left entry
+517	z	M	R4376 left entry
+518	z	M	R4376 left entry
+519	p	M	R4376 left entry
+520	dou..	S	R4376 right entry of row 420, attributed +100
+521	annee	S	R4376 right entry of row 421, attributed +100
+522	du	S	R4376 right entry of row 422, attributed +100
+524	b	M	R4376 left entry
+525	soit	S	R4376 right entry of row 425, attributed +100
+526	Hollandois	S	R4376 right entry of row 426, attributed +100
+527	avis	S	R4376 right entry of row 427, attributed +100
+528	ja	S	R4376 right entry of row 428, attributed +100
+529	p	M	R4376 left entry
+530	voul...	S	R4376 right entry of row 430, attributed +100
+531	euf?	M	R4376 right entry of row 431, attributed +100
+533	fraix	S	R4376 right entry of row 433, attributed +100
+534	i	M	R4376 left entry
+535	tacher	S	R4376 right entry of row 435, attributed +100
+536	able	S	R4376 right entry of row 436, attributed +100
+537	a	M	R4376 left entry
+538	l'	S	R4376 right entry of row 438, attributed +100
+539	croire	S	R4376 right entry of row 439, attributed +100
+540	pris	S	R4376 right entry of row 440, attributed +100
+541	zero	S	R4376 right entry of row 441, attributed +100
+542	d	M	R4376 left entry
+543	fort	S	R4376 right entry of row 443, attributed +100
+546	ete	S	R4376 right entry of row 446, attributed +100
+547	nos	S	R4376 right entry of row 447, attributed +100
+548	fier	S	R4376 right entry of row 448, attributed +100
+549	cou	M	R4376 left entry
+550	veiller	S	R4376 right entry of row 450, attributed +100
+552	commander	S	R4376 right entry of row 452, attributed +100
+554	bre	S	R4376 right entry of row 454, attributed +100
+555	c	M	R4376 left entry
+556	filles	S	R4376 right entry of row 456, attributed +100
+557	dans	S	R4376 right entry of row 457, attributed +100
+558	i	S	R4376 right entry of row 458, attributed +100
+559	quoique	S	R4376 right entry of row 459, attributed +100
+560	touchant	S	R4376 right entry of row 460, attributed +100
+561	rgient?	M	R4376 right entry of row 461, attributed +100
+562	noti..	S	R4376 right entry of row 462, attributed +100
+563	ex	S	R4376 right entry of row 463, attributed +100
+565	voulois	S	R4376 right entry of row 465, attributed +100
+567	zero	S	R4376 right entry of row 467, attributed +100
+568	dou..	S	R4376 right entry of row 468, attributed +100
+569	marque	S	R4376 right entry of row 469, attributed +100
+570	dra	S	R4376 right entry of row 470, attributed +100
+571	crois	S	R4376 right entry of row 471, attributed +100
+572	je	S	R4376 right entry of row 472, attributed +100
+573	g	M	R4376 left entry
+574	tant	S	R4376 right entry of row 474, attributed +100
+575	z	S	R4376 right entry of row 475, attributed +100
+577	s	M	R4376 left entry
+578	fant	S	R4376 right entry of row 478, attributed +100
+579	voir	M	R4376 right entry of row 479, attributed +100
+581	françois	S	R4376 right entry of row 481, attributed +100
+583	secret	S	R4376 right entry of row 483, attributed +100
+584	ad	S	R4376 right entry of row 484, attributed +100
+585	surprise	S	R4376 right entry of row 485, attributed +100
+586	conclure	S	R4376 right entry of row 486, attributed +100
+587	trouver	S	R4376 right entry of row 487, attributed +100
+589	ladessus	M	R4376 right entry of row 489, attributed +100
+591	etois	S	R4376 right entry of row 491, attributed +100
+593	ant	S	R4376 right entry of row 493, attributed +100
+594	dis	S	R4376 right entry of row 494, attributed +100
+595	constantinople	M	R4376 right entry of row 495, attributed +100
+596	deja	S	R4376 right entry of row 496, attributed +100
+597	rien	S	R4376 right entry of row 497, attributed +100
+598	donner	S	R4376 right entry of row 498, attributed +100
+599	tombent	S	R4376 right entry of row 499, attributed +100
