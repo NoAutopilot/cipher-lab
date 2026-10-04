@@ -8479,3 +8479,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 19:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 19:09 UTC: spawned 0 (), queued left 0
 2026-10-04 19:20 | ILL-SWEEP (acct3 worker) | claim: ILL batch for owner WCCLS card -- harvest printed works not online from NOTES/AUDIT/REQUEST/ASKS/LOCAL-QUEUE/JSTOR-QUEUE, write outreach/ill-sweep-2026-10-04.md; disk + light catalogue lookups; cap USD 4, box 40 min
 2026-10-04 19:24 | DESK-LAND (acct3 worker) | claim: land outreach/local-runner/DESK-2026-10-04.md (LOCAL-QUEUE L45-L52, JSTOR J1-J25) into queues + 7 target folders; disk only, cap 4, box 40 min
+2026-10-04 19:27 | SORTER-NUDGE (acct3 worker) | claim: sign sorter "Fix the cut" (recut edit mode, recuts db, apply tool, browser test) + republish Longlee and Pisany f.75 sorters only; cap USD 8, box 60 min
