@@ -1152,21 +1152,68 @@ the 27 Feb Villandry letter) not located. Novelty not classified (rule 10).
 Requests this pass: gallica.bnf.fr 5 (1 info.json; 2 region fetches with a doubled ark prefix, HTTP 500, my error; 2 region fetches,
 200), 1.5 s+ apart, no challenge. Vision calls: 2 (Sonnet, one per pass, line crops only).
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026)
+## fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) and its cipher original: located / not located (N8-GRA, account 2, 4 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`, job N8-GRA (the Verdict's cheapest next step; A2-GRA7 left no commit,
+checked `git log origin/main` before work). Intake gate pasted by LANE-NEAR8: `fr2980-gramont: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`. The brief's branch: if the cipher original is not on Gallica or not this key family,
+stop and record where it was looked; PREREG, crops and transcription only if both exist.
+
+**The decipherment: located.** BnF finding aid `archivesetmanuscrits.bnf.fr/ark:/12148/cc494971` (Français 3038), fetched 4 Oct 2026:
+"Fol. 42 - 19 Déchiffrement de la lettre de G[abriel] de Granmont, evesque de Tarbe... à monseigneur de Villandry,... A Boulongne, le
+XXVIIe jour de febvrier" (component `cd0e363`). Gallica `ark:/12148/btv1b9060036k` (193 canvases, every label 'NP', so
+`tools/gallica_folio.py` cannot map folios; anchors found by eye): canvas 74 = f.46r (no.21, Brion to Madame, Suze, folio number "46"
+visible), canvas 66 = f.41v (address "Monsr le grant maistre", back of no.18), **canvas 68 = f.42r**, the decipherment, about 30 lines
+of clear French in one hand, clause breaks marked with "(", signed "Vre ... serviteur G. de Gramont, ev. de Tarbe", margin "Chiffre"
+and a later archival heading "Italie"; canvas 69 = f.42v, endorsement "Dechiffrement de la lettre ... Monsr de Villandry"; canvas 70 =
+f.43r, blank. **No cipher sign on either side of the leaf** (f.42r top half viewed at about 2x, rest at sheet scale): it is a clean
+fair copy of the plaintext, not an interlinear decipherment.
+
+**The cipher original: not located.** Where looked, 4 Oct 2026:
+- BnF archivesetmanuscrits full-text search (headless Chromium, the home-page box, because the result list is JavaScript-loaded; the
+  `champSimple=` GET form returns "Aucun résultat" for anything): "Granmont febvrier" 1 hit (no.19 itself); "Tarbe Villandry" 3 (fr.2980
+  nos.21, 22 and fr.3038 no.19); "Tarbe chiffre" 7 (fr.2980 nos.21, 22; fr.3040 nos.5, 6; fr.3091 no.23; plus name facets) -- no letter in
+  cipher dated Boulogne 27 Feb; "Boulongne febvrier chiffre" and "Granmont chiffre" 0. The second audit's own queries (AUDIT.md, Raince
+  test: "Gramont Tarbe chiffre", "Tarbe déchiffrement", "evesque de Tarbe" 41 hits) also found none.
+- Tomokiyo's and Lasry's lists of Gramont cipher letters (`sources/cryptiana/web/francis.htm`, `GL.htm`, cached): fr.3040 nos.4-6,
+  fr.3091 no.23, fr.3071 no.7, Clair.330 f.53, fr.3019 f.20, fr.2980 nos.21-22. None is dated 27 Feb 1530.
+- DECODE non-decrypted list on disk (`sources/decode/records-non-decrypted-2026-09-24-diff.tsv`): Gramont-tagged BnF records are
+  fr.3071 f.17, fr.3053 ff.77/85, fr.3045 ff.28/42, fr.3040 ff.16/18/68 -- none of them this letter by the catalogue dates above.
+- LP iv(3) 6245 calendars the letter with "The original was in cipher" (print-check section above); it gives no shelfmark for a cipher
+  original. The decipherment leaf is the only witness the catalogues hold.
+So the pair the brief needed does not exist in any catalogue reached, and no key-family check, PREREG, crop or transcription was run
+(brief's stop branch). This is a search result about where the cipher original is, not a negative on the reading: no grade, key row or
+reading changed; `decode.py --check` untouched.
+
+**Named for the Verdict (not run, one line):** the same pair shape exists for the 28 March 1530 Boulogne letter: fr.3040 f.18 no.6,
+"Lettre, en chiffre, de G. de Gramont ... au grant maistre ... A Boulongne, le XXVIIIme jour de mars" (Tomokiyo: Gramont's Cipher
+(1530), this folder's key family; on Gallica), and Le Grand III p.399, which Ehses cites for Gramont, Bologna, 27 March 1530
+(AUDIT.md, documentary editions). If Le Grand III p.399 prints that same letter (date and recipient to be checked on the MDZ scan
+bsb10280117 first, one page), the two are known plaintext in the same key and could give C to codes they share with f.30.
+
+**Where not searched:** archives outside the BnF (the cipher original could have stayed with Villandry's papers; none located);
+BnF Dupuy and NAF series beyond the finding-aid full-text search. Novelty not classified (rule 10).
+Requests this pass: archivesetmanuscrits.bnf.fr 7 (1 curl ark page, 1 curl GET search, 5 browser searches; one browser run failed
+mid-navigation, not retried for that query); gallica.bnf.fr 25 (1 manifest via gallica_folio.py; 19 IIIF Image API requests, of which f74 served twice, one info.json
+answered 500 and the other 16 answered 404 "ark is unknown" -- the IIIF host refused this ark's other canvases throughout; then 5
+`.highres` fetches, all 200),
+at least 1.6 s apart, no challenge. Vision calls: 3 image views by this worker, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
 - f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base; a names test against the clear companion fr.3019 no.31 (A2-GRA6, 3 Oct 2026, f84_names_test.tsv) is a non-test (power control 0/3) and its post-hoc no-identity variant gives no credible name (HASH -> TREBYA only, an edge-letter bias)
 - f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: open-codes; round 3 of the hidden-sign test with ehx = T in the base accepts no sign change (A2-GRA4, 3 Oct 2026, test_f30r_top_round3.tsv) and the instrument is retired for these hypotheses (third run); the 3 losing ehx occurrences are ehx by shape on their crops
 
 ## Escalation (A2-GRA, 2 Oct 2026)
-- [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
+- [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071; fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) located on Gallica (btv1b9060036k canvas 68 = f.42r, clear only) but its cipher original is in no catalogue reached (N8-GRA, 4 Oct 2026), so that pair cannot be aligned; the 28 March pair (fr.3040 f.18 no.6 vs Le Grand III p.399) is untried
 - [x] clear-pages: no clear text of these letters known; the LP iv(3) 6244/6245 summaries are other letters (Bologna, Feb 1530, English paraphrase), cannot give C by construction and are not on disk (A2-GRA5, 3 Oct 2026, non-test); fr.3019 no.31 (Gramont, Rome 15 May 1530, in clear) read from Gallica by two blind passes (A2-GRA6, 3 Oct 2026, f84_passes.md): Italian field news (Rangone at Piacenza, the count of Gaiazzo? to the pope), no topic overlap with f.30; its 19-name list fits no open code (registered test non-test, power 0/3; post-hoc variant only HASH -> TREBYA, rejected as bias)
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: siblings, locate fr.3038 no.19 (period decipherment of Gramont's 27 Feb 1530 Villandry letter, printed Le Grand III pp.391-393) and its cipher original on Gallica; if both exist, align them as known plaintext in the same key family to key the shared open codes (grade C for key values), ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: siblings, check that Le Grand III p.399 (MDZ bsb10280117) prints Gramont's Boulogne 27/28 March 1530 letter to the grand maître, and if so align it with its cipher original fr.3040 f.18 no.6 (Gallica, Gramont's Cipher (1530), this key family) as known plaintext to key the shared open codes (grade C for key values), ~$3 (fr.3038 no.19 has no cipher original located, N8-GRA, 4 Oct 2026)
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
