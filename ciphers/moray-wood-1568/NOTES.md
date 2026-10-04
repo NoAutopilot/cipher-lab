@@ -349,7 +349,7 @@ Read so far: 117 S, 16 M, 1 I of 134 glyphs (Aymeloglu's key applied to the tran
 - [x] key-rebuild: done by Aymeloglu (held-value re-annealing, key-shuffle z=17.0, controls 1 of 4 read); no Scots corpus in tools/data
 - [x] image-check: one primed pass (GAPS3), two blind passes plus reconciliation (GAPS4), native-resolution pair read (GAPS5), all 2 Oct 2026
 - [ ] retry: edit key.tsv after the no.804 crib test and rerun tools/decode_key.py --check, regrading the 16 M and 1 I tokens per rule 4
-Verdict: keep going: 1 internal gaps; reference sheet built 4 Oct 2026 (RUN1-MOR, no804/refsheet/); cheapest next: one eye check of the 102 DP-placed boxes on no804/refsheet/refsheet_classes.png, ~$0.5; the SP 52/15 leaf waits on its existing order row (103)
+Verdict: keep going: 1 internal gaps; reference sheet built 4 Oct 2026 (RUN1-MOR, no804/refsheet/); eye check done 4 Oct 2026 (RUN3-MOR: 11/102 unusable, 10.8%); cheapest next: line-end anchors + M-box widening in align_boxes.py, rebuild, re-check flagged boxes, ~$0.5; the SP 52/15 leaf waits on its existing order row (103)
 
 ## RUN3-MOR eye check of the 102 DP-placed boxes (4 Oct 2026, ~09:3x UTC container clock)
 
