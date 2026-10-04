@@ -51,3 +51,16 @@ Judge on the (b) texts, for the record:
 ## Step 4: recut list (`recut.tsv`)
 8 tiles, no value guessed: bad-cut f117 L01.21, f144r L05.13, f168 V02.7; aside f117 L03.27, L05.27, L06.23, f144r L03.8, f168 V01.1,
 each with its `tools/iiif_lines.py` recut command (f.117r ark btv1b9060232m canvas 118; f.144r/f.168 ark btv1b9060248g canvases 146, 171-172).
+
+## Re-score, orchestrator, 4 Oct 2026 (owner challenged the verdict)
+Scoring flaw in v1: a pile the owner started with "None of these: new sign" is named by the page after the tile's *old* pile
+(T60-c, X_NEW-l, ...), and `fam()` scored it as that old pile's letter. 37 of 136 changes came from such piles; 9 of them
+(T60-c: 6 T65 tiles, 1 T60) were filled mostly from other piles. `ownersort.py --new-piles-unknown` scores those piles '?'
+(an owner-only new sign) and writes `v2/`. Result: **f.144r PASS** (b -1.376 > base -1.418 and > control p95 -1.441,
+rank 5/201); f.117 FAIL (rank 69/201, indistinguishable from random change sets); f.168 FAIL (rank 201/201).
+Caveats on what the remaining FAILs can say: every base text already FAILs the judge (about -1.2 vs real_p05 -0.9), so
+the gate compares two unreadable texts; and f.168 is the leaf where the 1572 key was never licensed (rank 13-36/201),
+so "worse under this key" there is weak evidence against the sort. Tile-to-position mapping checked: the published start
+pile equals the base sign at the mapped position for 251/277 (f.117), 87/90 (f.144r), 113/121 (f.168) tiles.
+v1's "nothing applied" stands until a per-tile adjudication (value-blind image check of the 109 tiles where the owner
+overrode two agreeing machine readers) says who is right tile by tile.

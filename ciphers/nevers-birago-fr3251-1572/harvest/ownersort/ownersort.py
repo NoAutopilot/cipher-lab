@@ -11,6 +11,12 @@ from multiprocessing import Pool
 sys.path.insert(0, 'tools')
 import judge_plaintext as jp
 H = os.path.dirname(os.path.abspath(__file__))
+# --new-piles-unknown (orchestrator re-score, 4 Oct 2026): a pile the owner started with 'None of these: new sign' is named by the
+# page after the tile's old pile (T60-c), not after a sign; v1 scored it as that old pile's letter. With this flag such a pile
+# reads '?' (an owner-only new sign) and outputs go to v2/.
+NEW_UNKNOWN = '--new-piles-unknown' in sys.argv
+if NEW_UNKNOWN:
+    H = os.path.join(H, 'v2'); os.makedirs(H, exist_ok=True)
 N = 'ciphers/nevers-birago-fr3251-1572'; E = N + '/harvest/tx_decode/eye'; S3252 = 'ciphers/birago-fr3252-1571-72'
 SEED = 20261004; NCTL = 200; NPOW = 50; KS = (1, 2, 3, 5)
 def tsv(p): return list(csv.DictReader(open(p), delimiter='\t'))
@@ -190,7 +196,7 @@ def step3(splits):
         if s['status'] != 'moved' or sid not in sid2pos: continue  # PREREG: kept / aside / bad-cut = no change
         lf, ln, pos = sid2pos[sid]; b = base[lf][(ln, pos)]; P = s['new_sign']; X = fam(P)
         if P != X and verdict.get(P, '').startswith('SUPPORTED'): v = '?'
-        else: v = key.get(X, '?')
+        else: v = '?' if (NEW_UNKNOWN and P != X) else key.get(X, '?')
         if v == b['value']: continue
         ins = inst.get((lf, ln, pos), {})
         agree = any(ins.get(k) == X for k in ('VERIFY', 'OPEN', 'OPEN144'))
