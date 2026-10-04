@@ -1,0 +1,46 @@
+# BIR-CCE step 1, 4 Oct 2026: value-blind shape map of 1572 off-sheet/conflict signs to Ceppo-Nevers table cells.
+# One Sonnet vision read (montage_ceppo.png headers removed, montage_1572.png ids only, plus text descriptions for pool classes); no value or plaintext shown.
+# Pushed before any Ceppo value was looked up. Caveat: same-day use of both keys by one clerk is NOT established here.
+sign_1572	query	source	ceppo_cell	confidence	second	note
+T42	Q01	tile f144r_L05_20	C35	L	C05	plain cursive t; only t-stem in C35 which has extra 3
+T42-b	Q02	tile f144r_L06_01	none		C04	bracket/I-bar with thick foot; no match
+T42-b	Q03	tile f144r_L06_02	C38	L	C23	6/b-like flagged stem
+T50	Q04	tile f144r_L05_17	none		C03	thick hooked comma stroke
+T95	Q05	tile f168_R03_16	C39	M	C08	stem with loop top and crossbar foot (female-sign construction)
+T95	Q06	tile f168_R02_09	C39	L	C08	same family, p-like top
+T95	Q07	tile f168_V03_09	C39	L	C08	stem with dot/loop, cropped
+T95	Q08	tile f144r_L04.2_03	C08	M	C39	loop top with cross and hook
+T95-b	Q09	tile f144r_L04.2_05	none		C14	cross with slash and small o; no exact
+X_NEW	Q10	tile f144r_L03_02	C04	L		box with dot inside
+X_NEW	Q11	tile f168_V03_24	C04	L		box with dot, blurred
+X_NEW	Q12	tile f144r_L04.2_04	none		C04	box with diagonal slash and base line
+X_NEW-c	Q13	tile f144r_L04.1_09	none		C26	digit-4 like
+X_NEW-c	Q14	tile f144r_L04.1_10	C40	M		L-shape with foot stroke
+X_NEW-d	Q15	tile f144r_L03_03	C39	M	C08	circle on stem with crossbar foot
+X_NEW-j	Q16	tile f168_V03_25	C48	M		stacked loops like 8
+X_NEW-l	Q17	tile f144r_L04.2_07	none			pi shape
+X_NEW-l	Q18	tile f168_R02_19	none			T/capital gamma shape
+X_NEW-l	Q19	tile f168_R02_18	none			T-like with hook
+X_NEW-l	Q20	tile f168_R03_01	none			pi shape
+X_NEW-o	Q21	tile f168_V03_05	C15	L	C13	small circle with dot
+X_NEW-p	Q22	tile f144r_L04.2_12	none			flourish strokes
+X_NEW-q	Q23	tile f144r_L03_01	none			box on stand with top cross
+X_NEW-r	Q24	tile f144r_L05_14	none		C04	box with slash between flanking marks
+X_8	D_8	text description	C48	H		plain 8
+X_4	D_4	text description	none			no 4 in reference
+X_7	D_7	text description	none		C53	no plain 7
+X_SQ	D_SQ	text description	C04	L		box shape
+X_TRI	D_TRI	text description	C45	L	C31	triangle-ish
+X_STAR	D_STAR	text description	none			no star
+X_AE	D_AE	text description	C46	M	C20	epsilon-like with tail
+X_T	D_T	text description	none		C35	no plain t
+X_T3	D_T3	text description	C35	H		t-stem with 3
+X_MA	D_MA	text description	C10	M		m with raised dot/a
+X_CC	D_CC	text description	C03	M		c with curl
+X_BB	D_BB	text description	C05	L	C23	b stem; crossbar uncertain
+X_PCT	D_PCT	text description	C25	M		obelus-like dash with dots
+X_EQ	D_EQ	text description	C09	H		two parallel strokes
+X_S	D_S	text description	none			no plain long-s
+X_K	D_K	text description	none			no K
+X_A	D_A	text description	C26	L		small lambda/A-like
+X_CE	D_CE	text description	C41	M	C44	c-hook lead into omega double loop

@@ -1,0 +1,43 @@
+query	cell	confidence	second	note
+Q01	C35	L	C05	plain cursive t; only t-stem in C35 which has extra 3
+Q02	none		C04	bracket/I-bar with thick foot; no match
+Q03	C38	L	C23	6/b-like flagged stem
+Q04	none		C03	thick hooked comma stroke
+Q05	C39	M	C08	stem with loop top and crossbar foot (female-sign construction)
+Q06	C39	L	C08	same family, p-like top
+Q07	C39	L	C08	stem with dot/loop, cropped
+Q08	C08	M	C39	loop top with cross and hook
+Q09	none		C14	cross with slash and small o; no exact
+Q10	C04	L		box with dot inside
+Q11	C04	L		box with dot, blurred
+Q12	none		C04	box with diagonal slash and base line
+Q13	none		C26	digit-4 like
+Q14	C40	M		L-shape with foot stroke
+Q15	C39	M	C08	circle on stem with crossbar foot
+Q16	C48	M		stacked loops like 8
+Q17	none			pi shape
+Q18	none			T/capital gamma shape
+Q19	none			T-like with hook
+Q20	none			pi shape
+Q21	C15	L	C13	small circle with dot
+Q22	none			flourish strokes
+Q23	none			box on stand with top cross
+Q24	none		C04	box with slash between flanking marks
+D_8	C48	H		plain 8
+D_4	none			no 4 in reference
+D_7	none		C53	no plain 7
+D_SQ	C04	L		box shape
+D_TRI	C45	L	C31	triangle-ish
+D_STAR	none			no star
+D_AE	C46	M	C20	epsilon-like with tail
+D_T	none		C35	no plain t
+D_T3	C35	H		t-stem with 3
+D_MA	C10	M		m with raised dot/a
+D_CC	C03	M		c with curl
+D_BB	C05	L	C23	b stem; crossbar uncertain
+D_PCT	C25	M		obelus-like dash with dots
+D_EQ	C09	H		two parallel strokes
+D_S	none			no plain long-s
+D_K	none			no K
+D_A	C26	L		small lambda/A-like
+D_CE	C41	M	C44	c-hook lead into omega double loop
