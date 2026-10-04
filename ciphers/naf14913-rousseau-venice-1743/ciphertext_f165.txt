@@ -1,5 +1,8 @@
 # BnF NAF 14913 ff.165r-165v (Gallica btv1b525174513 canvases 343, 344), Lorenzi to Montaigu, Florence, 21 Sept 1743 (red
 # edition number 2037 on f.165r = Souchon 1915 no. 2037, inferred from the f.206/no. 2047 pattern, not checked in print this job);
+# A3V2-ROUS2 (4 Oct 2026) checked in print: Souchon 1915 p.267 lists the 21 Sept 1743 letter as N° 2031 (date line only) and his
+# N° 2037 is the letter of 2 Nov 1743 -- the red corner number is not Souchon's numbering, or the 1000 px read of it is off; no
+# decipherment or regest of this passage is printed (NOTES.md A3V2-ROUS2).
 # numeral passage after the clear words "...la negociation, dont il avoit parle, entamee entre cette" (f.165r, three lines at the foot)
 # running onto the head of f.165v (11 lines), before the clear "Je crois que M. le Mis Mari a eu ces memes avis". No slip and no
 # interlinear gloss on ff.164v-166r at native resolution (A3V2-ROUS, 4 Oct 2026) -- no plain side.
