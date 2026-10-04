@@ -1,0 +1,29 @@
+record	folio	date	holder_header	code_range	filled	fits	why
+4381	f.66	1761	Kniph_n, Michel -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; simple subst+nomencl; P1 docket (2 lines, illegible at 200px), P2-P3 dense 5-band table, P4 blank	y	none	London envoys (Knyphausen/Michell), 1761; not Hague, not 1756/1763
+4382	f.68	1761	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket (1 line, illegible), P2-P3 dense 5-band table	y	none	1761 by DECODE date; no holder; two table pages ~1000 codes at most, short of R1049 (to ~3100) and 1763 (to ~3900)
+4383	f.70	1761	? -> Roi de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket (illegible), P2-P3 dense 5-band table	y	none	1761; no Hellen header readable; range short of 1763's ~3900
+4384	f.72	1762	Hertzberg -> Kniph_n (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; 1 page: P1 docket, P2 running lines (not a ruled number table)	n	none	Berlin->London 1762; not a filled numeric table
+4385	f.73	1762	Kniph_n -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 stained docket (3 lines), P2-P3 dense table	y	none	London 1762
+4386	f.75	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; homophonic+nomencl; P1 docket (1 line), P2-P3 dense table	y	1763?	positional only: bound between f.73 (1762) and f.77 (1764); undated, unnamed; header and range unreadable at thumbnail size
+4387	f.77	1764	Bandouin? -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket, P2-P3 dense table	y	none	1764, after the last 1763 letter (5 Jul 1763); not Hellen
+4388	f.79	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; simple subst+nomencl; P1 blank-looking, P2-P3 dense table	y	1763?	positional only: between f.77 (1764) and f.81 (1764); weaker than R4386
+4389	f.81	1764	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; homophonic+nomencl; P1 docket (2 lines), P2-P3 table	y	none	1764
+4390	f.83	1764-1765	Bandouin? -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket, P2-P3 table	y	none	1764-65, Bandouin?
+4391	f.85	1765	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; 11 pages of handwritten number/word lists (working lists, not the printed form)	y	none	1765
+4392	f.91	1766	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; nomenclator; P1 docket (1 line), P2-P3 table	y	none	1766
+4393	f.93	1781	Thulemeyer -> Comte de Lusi (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; table	y	none	1781
+4394	f.95	1767	Thulemeyer -> Koepken (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; table	y	none	1767
+4395	f.97	1769	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; table	y	none	1769
+4396	f.99	1769	Roy de Prufse -> Malzan? (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket (3 lines), P2-P3 dense table	y	none	1769
+4397	f.101	1770	Maltzan -> Rollin, Thulemeyer (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 sparse table	y	none	1770
+4398	f.103	1770	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; 11 pages of working lists / notes	y	none	1770
+4399	f.109	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 table	y	none	bound among 1770-1784 records
+4400	f.111	1784	Lusi -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; 6 images: P1 docket, blank ruled P2, docket, table	y	none	1784
+4401	f.113	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 dense table	y	none	bound among 1784-1789 records
+4402	f.115	1789	Gen. Schlieffen -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 sparse table	y	none	1789
+4403	f.117	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 table	y	none	bound among 1789 records
+4404	f.119	1789	Alvensleben -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 table	y	none	1789
+4405	f.121	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 table	y	none	bound among 1789-1791 records
+4406	f.123	1724-1844	no sender/receiver (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P2-P3 table	y	none	bound among 1789-1794 records
+4407	f.125	1791	Rehern? -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket, P2-P3 dense table	y	none	1791
+4408	f.127	1794	Jacobi -> Roy de Prufse (DECODE RecordsView, public; docket not legible at 200px)	not readable at thumbnail size; P1 docket, P2-P3 table, red stamp P4	y	none	1794

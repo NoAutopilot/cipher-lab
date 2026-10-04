@@ -1255,3 +1255,48 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: open the post-1756 Add MS 32276 key records R4381-R4408 (contact sheet first) for R1049 and the 1763 letters, ~$4
+
+## N6-HEL81 (4 Oct 2026): contact sheet of Add MS 32276 key records R4381-R4408 for R1049 and the 1763 letters (account 2 worker for LANE-NEAR6)
+
+Step run: N6-HEL76's named cheapest next. Intake gate `python3 tools/intake_gate_check.py hellen-frederick-1752` rc=0:
+`hellen-frederick-1752: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+No transcription, test or grades in this job. **No login**: DECODE's RecordsView pages turned out to be public (sender, receiver,
+cipher type, start year and the 200px `TH_IMG_*` thumbnails all serve without an account), so the 28 RecordsView pages and their 128
+thumbnails were fetched with plain curl (de-crypt.org, 155 requests, 1.7 s apart, no challenge; no other host). Thumbnails stay in the
+scratchpad. Result per record: `key_search/R4381-R4408.tsv`.
+
+**What was found.** No record in R4381-R4408 names Hellen/Ellen, and none carries a DECODE date of 1756 or 1763. Named holders: Knyphausen
+(and Michell) in London 1761-62 (R4381, R4385), Hertzberg to Knyphausen 1762 (R4384, running text, not a table), Bandouin? 1764-65
+(R4387, R4390), Thulemeyer 1767/1781, Maltzan 1769-70, Lusi 1784, Schlieffen, Alvensleben 1789, Rehern? 1791, Jacobi 1794. Eight records
+are undated/unnamed (R4382, R4386, R4388, R4399, R4401, R4403, R4405, R4406). Almost every record is the same two-page printed form
+(five bands per page, as R4369/R4372), i.e. about 1000 codes per record by the R4369 precedent (801-1796 on two pages); R4391 and R4398
+(1765, 1770) are 11-page handwritten working lists. **Dockets and band heads are not legible at 200 px** (checked at 3x enlargement),
+so no header, holder or code range could be read from a thumbnail.
+**Fit.** Code ranges needed: R1049 median 701, 98th percentile 1990, max 3113; the 1763 letters medians 918-1242, 98th pct 3623-3812,
+max ~3920 (stray 5627/9858). No single two-page record can cover the 1763 range; a fit would be one record of a multi-record set, as
+R4372+R4369 were for 1752. **R1049 (1756): no candidate here** -- the 1756 sheets are R4377-R4379 (ff.58-62, already looked at), and
+everything from f.66 on is 1761 or later. **1763 letters: two positional candidates only**, R4386 (f.75, homophonic nomenclator, no
+sender/receiver/date) bound between 1762 (f.73) and 1764 (f.77), and more weakly R4388 (f.79). Nothing in the metadata or the thumbnails
+ties either to Hellen or to 1763, so no full-size fetch was made (the brief allows one only for a record that fits).
+**Where it was not found:** RecordsView metadata and thumbnails of all 28 records R4381-R4408 (no Hellen, no 1756/1763 date).
+
+**Next (not run):** one DECODE browser login fetching full-size P1 docket and P2 top band of R4386 and R4388 only (4 images), to read the
+docket/holder and the band-head code range -- a contact-sheet read, no transcription, ~$3. Transcription follows only if a docket names
+Hellen or La Haye and a band head reaches above 1800.
+
+## Remaining gaps (N6-HEL81, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); the context-fit anneal over fr18 bigrams is untestable at this N (N5-HEL7); next: transcribe Fagel 5177's clear Hellen pages (scans 5-93, two blind passes + reconciliation) as a writer- and week-matched phrase corpus, then a pre-registered phrase-crib placement in the R4369-decoded gaps with its own held-out control, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), the 1756 sheets R4377-R4379 are tallies/empty or Michel's, and no record in R4381-R4408 is dated 1756 or names Hellen (N6-HEL81); no further Add MS 32276 record remains unopened
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: not-attempted; no Hellen or 1763 record in R4381-R4408 by metadata and thumbnails (N6-HEL81), but undated R4386 (f.75, between 1762 and 1764) and R4388 (f.79) are unread positional candidates; next: one DECODE login, full-size P1 docket + P2 top band of R4386 and R4388 (4 images), read holder and code range, ~$3
+
+## Escalation (N6-HEL81, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all Add MS 32276 records looked at, up to f.56 (NEAR3-HEL3) and R4381-R4408 by metadata and thumbnails (N6-HEL81)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); context only, not a crib for R1953 itself
+- [ ] known-keys: R4369 reads R1953; R4370 and R4372 retired for codes 1-800; R4376 fails on R1049 (N6-HEL76); R4386/R4388 full-size dockets not yet read for the 1763 letters (N6-HEL81)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: the fr18-bigram context-fit anneal is untestable at this N (N5-HEL7); untried instrument: phrase-crib placement from a transcribed Fagel 5177 writer-matched corpus, with its own held-out control
+- [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: one DECODE login for the full-size dockets and band heads of R4386 and R4388 (1763 candidates by binding position), ~$3
