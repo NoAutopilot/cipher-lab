@@ -984,3 +984,16 @@ of the sibling letters P5+P6 / P7 read from the page image. Key entries 67 (engl
 control is unchanged (92.8% / 92.8%). Every count "C 338, M 16" quoted above (s.2 safe sentence, depth row) is superseded by
 these counts; the N-class and its safe sentence otherwise stand. Not re-verified by a verifier session (rule 7's fresh
 re-derivation is the lane's to schedule). See NOTES.md "N8-THUR".
+
+## Revision after AUDIT (N8-THUR2, 4 Oct 2026; rule 10 propagation)
+
+P4: the M-graded letter values 32 (x), 33 (w) and 38 (q) are regraded **M -> H** under a rule pre-registered in NOTES.md
+("N8-THUR2", pushed 3774a327 before the change): H where Tomokiyo's published Stamford table (`sources/cryptiana/web/stamford.jpg`,
+credited to Satoshi Tomokiyo, Cryptiana) gives the same value as `pool_1654/key_stamford.tsv`; all three agree, no conflict.
+Key source for these nine tokens: `published` (Tomokiyo), as for 12/25 (e) before. P4 now **H 73, C 342, S 0, M 3, U 6 of 424**
+(was H 64, M 12); H/C 415/424 = 97.9%. **No letter of the reading changed** (token-by-token diff of `reading_P4.txt`: readings
+identical, 9 grades moved); `decode_stamford.py --check` exit 0; control unchanged. Caveat kept with the grade: his table is a
+reconstruction of the system very probably from the same printed sibling decipherments (second audit (e) above), so H here
+records a published key's agreement, not independent corroboration; the period decipherments themselves split on 33
+(w 18, u 7, m 2, t 1 of 28 votes). The N-class and safe sentence stand; counts in the N8-THUR revision above are superseded.
+Not re-verified by a verifier session; the rule-7 fresh re-derivation is N8-THR7's. See NOTES.md "N8-THUR2".

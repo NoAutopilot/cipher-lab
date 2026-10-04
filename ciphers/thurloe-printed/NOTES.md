@@ -2685,3 +2685,33 @@ Verdict: keep going: 2 internal gaps (the 32/33/38 regrade against Tomokiyo's ta
   committed reading is reproducible and current, not that the transcription or the alignment is right.
 - Flag (not done here): status.json depth_pct for thurloe-printed 94.8 -> 95.8 (406/424 H+C, N8-THUR's own counts, reproduced here);
   N8-THUR2's regrade, if it lands, moves H/M (64/12 -> 73/3 expected) without changing any letter, so H+C share is unchanged.
+**Result (17:2x UTC).** Cells read from the unmodified image: 32 x, 33 w, 38 q, each equal to `key_stamford.tsv` -> all three
+**M -> H** by the pre-registered rule; no conflict, so nothing logged under rule 4's H-conflict paragraph (the period-decipherment
+dissent on 33, u 7 of 28 votes, is recorded in the PREREG above and in AUDIT.md). `decode_stamford.py` adds 32/33/38 to
+`TOMOKIYO_H` (beside 12/25); regenerated, then `python3 pool_1654/decode_stamford.py --check`:
+`ok: key_stamford.tsv, control_stamford.tsv, reading_P4.txt match`. P4: **H 73, C 342, S 0, M 3, U 6 of 424** (was H 64, M 12);
+H/C 415/424 = 97.9% (was 95.8%). Token-by-token diff of `reading_P4.txt` against the previous commit: every token's reading
+identical, 9 grades moved (6 x 33, 2 x 38, 1 x 32), no letter changed; the M marks `(w?)`, `(q?)`, `(x?)` go. Control unchanged.
+`pool_1654/tomokiyo_compare.tsv` grade column updated; AUDIT.md "Revision after AUDIT (N8-THUR2)" and the SO-THURLOE-P4 row carry
+the new counts (rule 10). The only remaining M tokens are code 1 'i' (x3, one printed vote, no cell in his table).
+Flags for the lane: status.json depth_pct for P4 is now 97.9 (H/C share; was flagged 94.8 -> 95.8 by N8-THUR, now 97.9), not edited
+here; N8-THR7 (landed during this job, derived from d82c5e43, the pre-regrade key) re-derived byte-identically; its note that the regrade leaves the H+C share unchanged does not hold -- M -> H moves 9 tokens into H+C (406 -> 415 of 424); no letter changes, so its 0-differing-token result stands for the letters. Follow-up (one line, not done): the C-graded values his table also
+agrees on (2-43 except 27) could carry the same published-key note; it would not change any letter or the H/C share.
+Requests: none (disk only). Subagent calls: 0. Vision reads: 1 (the image, by this worker). Cost: see the lane ledger.
+
+## Remaining gaps (N8-THUR2, 4 Oct 2026)
+Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4's remaining 3 M tokens are code 1 'i' (x3, one printed vote) - blocker: no-key-material; not in Tomokiyo's table (it starts at 2, GAPS148, N8-THUR2) and no other sibling occurrence on disk
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (N8-THUR2, 4 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92.3-92.8% after the running-head fix (s.16; A3V2-THUR275)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148); 32/33/38 regraded M -> H against it under a pre-registered rule (N8-THUR2, 4 Oct 2026); conflict on 27 (not in P4); no entry for 143/70/1
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); running-head numeral 275 dropped via JUNK_LINE and key regenerated, P4 reading unchanged (A3V2-THUR275, 4 Oct 2026)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); all five sibling cipher pages and both printed decipherments read from the page image (A3V2-THURBT, N8-THUR, 4 Oct 2026)
+- [x] retry: one-vote boundary test v3-full on the image-read siblings PASSed its pre-registered gate (K 68.8% / 83.6%, W 0%); 67 and 153 M -> C, 84 re-read "although" at M (N8-THUR, 4 Oct 2026)
+Verdict: keep going: 1 internal gap (the P3/P10 open codes); cheapest next: the rule-7 fresh re-derivation of reading_P4.txt (N8-THR7, separate session), ~$2; also owed by the lane: the status.json depth_pct update (now 97.9)

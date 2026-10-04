@@ -1,9 +1,9 @@
 code	key_stamford_tsv	grade	tomokiyo_stamford_jpg	verdict	P4_occurrences
 143	(absent)	U	not shown (table ends at 60, no code words)	leaves unread	1
 70	(absent)	U	not shown (table ends at 60)	leaves unread	1
-33	w	M	w	confirms value	6
-38	q	M	q	confirms value	2
-32	x	M	x	confirms value	1
+33	w	H	w	confirms value; M->H by N8-THUR2 PREREG (published key, Tomokiyo)	6
+38	q	H	q	confirms value; M->H by N8-THUR2 PREREG (published key, Tomokiyo)	2
+32	x	H	x	confirms value; M->H by N8-THUR2 PREREG (published key, Tomokiyo)	1
 1	i	M	not shown (row 1 starts at 2)	leaves	3
 67	england	M	not shown (no code words in image)	leaves	3
 153	thecavaliers	M	not shown	leaves	1

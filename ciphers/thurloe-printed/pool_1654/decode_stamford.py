@@ -6,7 +6,8 @@
 
 Key: align_stamford.py aligns P5+P6 (30 March) and P7 (20 March) with Birch's printed
 decipherments; every meaning is grade C (known plaintext), except Tomokiyo's E values 12 and 25
-(grade H, sources/cryptiana/web/thurloe.htm #Stamford). Control (rule 3, on real data): key from
+(grade H, sources/cryptiana/web/thurloe.htm #Stamford), and 32/33/38 where his stamford.jpg
+agrees (N8-THUR2). Control (rule 3, on real data): key from
 one letter alone decodes the other letter's numerals blind, scored against that letter's own
 alignment with its printed decipherment. P4 (13 March) has no printed decipherment; its numerals are
 decoded with the full key and graded per token.
@@ -29,6 +30,10 @@ import align_stamford as A
 HERE = Path(__file__).resolve().parent
 IMAGE_TSV = HERE.parent / "P4" / "image_transcription.tsv"
 TOMOKIYO_H = {12: "e", 25: "e"}
+# N8-THUR2 (4 Oct 2026, PREREG in ../NOTES.md "N8-THUR2", pushed 3774a327 before this change): P4's M-graded letter values
+# 32/33/38 regraded H where Tomokiyo's stamford.jpg cell (row 3: 32 x, 33 w, 38 q) equals the aligned value; a conflict would
+# leave the grade as it was (rule 4). Published modern key, credited; not independent of the printed siblings (GAPS148).
+TOMOKIYO_H.update({32: "x", 33: "w", 38: "q"})
 MIN_VOTES, MIN_SHARE = 3, 0.7
 # boundary test v3-full (boundary/PREREG.md v1 outcome rules, applied by N8-THUR, 4 Oct 2026, after the gate PASSed on
 # boundary/results_tx_full.tsv: K 55/80 verdicts, K CONFIRM 46/55 = 83.6%, W false-CONFIRM 0/52):
