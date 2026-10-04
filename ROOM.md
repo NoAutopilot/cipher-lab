@@ -8478,3 +8478,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 19:05 | orchestrator (account 3) | note fr3151-seure-1558 L53: WorldCat record for Arquivos do Centro Cultural Portugues vols 1-3 (Paris, Gulbenkian, 1969-1972) = OCLC 490240802 (one holder: College de France); Serrao 1969 pp.455-458 via owner ILL with this OCLC number, optional.
 2026-10-04 19:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 19:09 UTC: spawned 0 (), queued left 0
 2026-10-04 19:20 | ILL-SWEEP (acct3 worker) | claim: ILL batch for owner WCCLS card -- harvest printed works not online from NOTES/AUDIT/REQUEST/ASKS/LOCAL-QUEUE/JSTOR-QUEUE, write outreach/ill-sweep-2026-10-04.md; disk + light catalogue lookups; cap USD 4, box 40 min
+2026-10-04 19:24 | DESK-LAND (acct3 worker) | claim: land outreach/local-runner/DESK-2026-10-04.md (LOCAL-QUEUE L45-L52, JSTOR J1-J25) into queues + 7 target folders; disk only, cap 4, box 40 min
