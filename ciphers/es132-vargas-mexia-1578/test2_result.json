@@ -272,8 +272,140 @@
    }
   }
  },
+ "f90r": {
+  "err_2reader": "67/495",
+  "err_2reader_frac": 0.135,
+  "passA": {
+   "letters": 863,
+   "S_b": -1.131,
+   "order_p99": -1.393,
+   "order_median": -1.45,
+   "key_p99": -1.832,
+   "gate_b": true,
+   "judge_null_p99": -1.998,
+   "judge_real_p05": -0.771,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 891,
+   "S_b": -1.121,
+   "order_p99": -1.384,
+   "order_median": -1.45,
+   "key_p99": -1.825,
+   "gate_b": true,
+   "judge_null_p99": -2.0,
+   "judge_real_p05": -0.776,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 899,
+   "S_b": -1.08,
+   "order_p99": -1.367,
+   "order_median": -1.43,
+   "key_p99": -1.825,
+   "gate_b": true,
+   "judge_null_p99": -1.996,
+   "judge_real_p05": -0.772,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "grades_reconciled": {
+   "H": 0,
+   "C": 0,
+   "S": 0,
+   "M": 429,
+   "I": 0,
+   "U": 65
+  }
+ },
+ "f91r": {
+  "err_2reader": "12/122",
+  "err_2reader_frac": 0.098,
+  "passA": {
+   "letters": 218,
+   "S_b": -1.222,
+   "order_p99": -1.396,
+   "order_median": -1.513,
+   "key_p99": -1.759,
+   "gate_b": true,
+   "judge_null_p99": -1.892,
+   "judge_real_p05": -0.806,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false,
+   "calib_f90v_prefix": {
+    "letters": 219,
+    "S_b": -1.189,
+    "order_p99": -1.321,
+    "order_median": -1.489,
+    "key_p99": -1.804,
+    "gate_b": true,
+    "judge_null_p99": -1.907,
+    "judge_real_p05": -0.8,
+    "judge_pass": false,
+    "armc1_shuffled_median_judge_pass": false
+   }
+  },
+  "passB": {
+   "letters": 218,
+   "S_b": -1.211,
+   "order_p99": -1.325,
+   "order_median": -1.449,
+   "key_p99": -1.725,
+   "gate_b": true,
+   "judge_null_p99": -1.892,
+   "judge_real_p05": -0.806,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false,
+   "calib_f90v_prefix": {
+    "letters": 219,
+    "S_b": -1.257,
+    "order_p99": -1.393,
+    "order_median": -1.499,
+    "key_p99": -1.811,
+    "gate_b": true,
+    "judge_null_p99": -1.907,
+    "judge_real_p05": -0.8,
+    "judge_pass": false,
+    "armc1_shuffled_median_judge_pass": false
+   }
+  },
+  "reconciled": {
+   "letters": 222,
+   "S_b": -1.212,
+   "order_p99": -1.344,
+   "order_median": -1.455,
+   "key_p99": -1.767,
+   "gate_b": true,
+   "judge_null_p99": -1.911,
+   "judge_real_p05": -0.795,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false,
+   "calib_f90v_prefix": {
+    "letters": 222,
+    "S_b": -1.191,
+    "order_p99": -1.374,
+    "order_median": -1.484,
+    "key_p99": -1.821,
+    "gate_b": true,
+    "judge_null_p99": -1.911,
+    "judge_real_p05": -0.795,
+    "judge_pass": false,
+    "armc1_shuffled_median_judge_pass": false
+   }
+  },
+  "grades_reconciled": {
+   "H": 0,
+   "C": 0,
+   "S": 0,
+   "M": 113,
+   "I": 0,
+   "U": 7
+  }
+ },
  "dropped_shape_tokens": {
-  "marks": 135,
+  "marks": 188,
   "clear": 2
  }
 }

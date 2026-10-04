@@ -1,0 +1,59 @@
+line	op	A_pos	A	B
+L01	replace	6	28	24σ
+L02	replace	4	{y}	y
+L02	replace	8	35+	35+@m
+L02	replace	11	15ρ@s	15ρ
+L02	replace	19	10.	10
+L04	replace	2	30_σ	30σ
+L04	replace	7	{y}	y
+L04	replace	10	{y}	y
+L05	replace	13	20σ@r	20ρ@r
+L06	replace	9	2σ@r	2ρ@r
+L07	replace	5	{y}	y
+L08	replace	4	15.	15.@s
+L08	replace	8	13@m	13
+L08	replace	12	{y}	y
+L09	replace	6	201	20+
+L10	replace	3	11@n	17@n
+L10	replace	7	15+ 60@s {y}	15+@s {lo} y
+L10	replace	15	{y}	y
+L10	replace	17	357 7.	35ρ
+L11	replace	8	17σ@m	17σ@r
+L11	replace	11	24	24.@r
+L11	replace	13	22ρ	22σ
+L11	replace	18	22	22.@s
+L12	replace	6	6.@s 7.@r	6.@r 7.
+L12	replace	9	{Xum} {y}	{Qum} y
+L12	replace	12	115	11σ
+L13	replace	5	{y}	y
+L13	replace	7	25ρ	25ρ@s
+L13	replace	19	4@s	4@r
+L14	replace	15	{y}	y
+L14	insert	19		1.
+L15	replace	2	22.@s	22
+L15	replace	13	20σ@r	20ρ@r
+L15	replace	16	13@n 20σ@r	13 20ρ@r
+L17	replace	12	{y}	y
+L17	insert	18		6?
+L18	replace	1	15.	25.
+L18	replace	7	6ρ	6σ
+L18	replace	12	{y}	y
+L19	replace	14	7ρ@n	7ρ
+L21	replace	2	{y}	y
+L22	replace	11	111	11+
+L22	replace	15	{gi}	91@s
+L23	replace	3	30_σ	30σ
+L23	replace	11	20σ@r	20ρ@r
+L24	replace	2	15+@n	15+
+L24	replace	4	{y}	y
+L25	replace	2	33.@s	33
+L25	replace	5	28σ	28ρ
+L25	replace	7	25ρ@r	15ρ@r
+L25	replace	12	20σ	20ρ
+L25	replace	14	22.@n	22
+L26	replace	1	{y}	y
+L26	replace	6	201	20+
+L26	replace	9	22.@n	22
+L26	replace	19	25+ 4	15+ 4@l
+L27	replace	11	17ρ@m {y}	17ρ@r y
+L27	replace	18	15+@2	15+@s /
