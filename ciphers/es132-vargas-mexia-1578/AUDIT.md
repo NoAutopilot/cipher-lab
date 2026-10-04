@@ -140,3 +140,14 @@ paragraphs are N0, and the unprinted text reads at D1.
   4 Oct 2026 05:4x UTC), so nothing to propagate; the parent creates the entry from this file.
 - `JSTOR-QUEUE.tsv`: 4 rows appended (two per family), status queued. A queued row never blocks the class (CLAUDE.md
   verifier template step 2).
+
+## 5. Propagation (rule 10): reading revised after this AUDIT (A3V3-ES132S, 4 Oct 2026, 06:4x UTC by `date -u`)
+The f.89 letter's transcription changed after this file was written: 43 of its 113 '?' tokens were settled from the f.93-95 duplicate copy
+(PREREG_dupsettle.md, settle_dup.py, dup_settled.tsv; NOTES.md section "Duplicate settlement"): 25 flags removed, 18 tokens replaced, all
+on the unprinted pages f.89r, f.89v, f.90r, f.91r; f.90v (the printed paragraph, C text) is untouched. Effect on this file's numbers: the
+f.89 unprinted part is now **1,525 M + 198 U** (was 1,526 M + 197 U; f.89r 410/35 -> 408/37, f.90r 429/65 -> 430/64); the C part (217) and the
+letter total (about 1,940 tokens) are unchanged, so the depth percentages (about 11% / 12%) and D2 (C text) / D1 (N3 text) stand; every
+settled token is M, so no N3 text moves toward S. Gate (b) still passes on every settled page (S_b f.89r -1.109, f.89v -1.177, f.90r -1.073).
+The class (N0 printed / N3 unprinted), the safe sentence ("about 1,940 ... cipher tokens", "graded M only") and the unsafe sentence need no
+change. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 4 Oct 2026), so nothing to propagate there. A fresh rule-7
+re-derivation of the settled pages is owed (RD7-2026-10-04.md predates the settlement).

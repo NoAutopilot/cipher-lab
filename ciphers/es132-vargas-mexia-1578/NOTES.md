@@ -56,7 +56,7 @@ Requests by host: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2 (one br
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, refreshed 4 Oct 2026 A3V2-ES132C4)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
-- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due**. The duplicate copy f.93r-f.95r is now transcribed and aligned (A3V3-ES9396, 4 Oct 2026, section below): 83 of the 113 '?' tokens meet an unflagged duplicate token (29 confirm, 54 proposals in `dup_settlements.tsv`, not applied) - blocker: not-attempted; next: a rule-7 job that settles the 54 proposals from the images of both copies (each proposal is a two-crop look; the A3V3-ES9396 sample showed many 'base' differences are the clerk's re-encipherment, not reader error, so a proposal is applied only where the f.89 image itself supports it), regenerates the readings and re-runs test2/RD7 --check, ~$4
+- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due**. The duplicate copy f.93r-f.95r is transcribed and aligned (A3V3-ES9396) and **43 of the 113 '?' tokens are settled from it** (A3V3-ES132S, 4 Oct 2026, PREREG_dupsettle.md, section below: 25 flags removed where both duplicate blind reads confirm, 18 tokens replaced by the duplicate's isolated 1:1 token; control 48/50 firm tokens unchanged); **70 '?' remain**; a fresh rule-7 re-derivation of the settled f.89 pages is owed (not done by the settling worker) - blocker: not-attempted; next: rule-7 re-derivation after A3V3-ES132S (fresh session, spec + key + test2.py/settle_dup.py --check), ~$2; then the 30 non-isolated and 10 non-agreed candidates in dup_settled.tsv by a two-crop look (f.89 crop vs duplicate crop), ~$3
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
 - About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; f.41r done (Cipher 3 pool test 1, ES132-C3 4 Oct 2026: gate (b) PASS on both blind passes, control passing in the same run; err_2reader 30.6%, 105/526 tokens '?'); f.41v (rest of the same letter, if cipher) and the other ~28 not started; cabinet-noir still at 47b6db9 (4 Oct 2026 06:2x UTC); next: f.41r '?' settlement from the crops (81 default-flagged spans, ~$1.5), then the next letter by the same route (`test2.py --page`, add the page to C3_PAGES), ~$4.5 per page
 - 3 open Cipher 4 (Perez) letters f.87, 157, 179 (f.136/148 probably clear per the BnF record) - blocker: not-attempted; table now on disk (sources/cryptiana/web/spanish3vargas4.png, A3V2-ES132C4 4 Oct 2026) and cabinet-noir's code hypotheses cited, but cabinet-noir's own cle/ file shows it has already transcribed and partly read all three (contexts from f.87r/v, f.157r, f.179v-180r), so a reading here would likely duplicate theirs; next: re-check cabinet-noir's git log for f087/f157/f179 folders before any work, then (only if still absent) build key.tsv from the PNG and read f.87 (2 blind passes + reconciliation on line crops), ~$4
@@ -70,10 +70,10 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [x] retry: catalogue record fetched (curl + browser UA, 200; digitised, Gallica btv1b10032556x, MF 8506) and the three blog threads opened (A3V2-ES132C4, 4 Oct 2026): no reading claim found
-Verdict: keep going: 5 internal gaps; Cipher 3 pool test 1 (f.41r) PASS on file (ES132-C3, 4 Oct 2026); cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings, 83/113 '?' tokens met); next the rule-7 settlement job on dup_settlements.tsv (~$4)
+Verdict: keep going: 5 internal gaps; Cipher 3 pool test 1 (f.41r) PASS on file (ES132-C3, 4 Oct 2026); cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings) and 43/113 '?' tokens are settled from it (A3V3-ES132S, control 48/50 unchanged); next the rule-7 re-derivation owed after A3V3-ES132S (~$2), then a two-crop look at the 40 unsettled candidates (~$3)
 
 ## While waiting
-Nothing waits on a person: the rule-7 re-derivation and print check of the f.89/f.119 letters are done (A3V2-ES7, 4 Oct 2026, RD7-2026-10-04.md); the action that depends on nobody is now the verifier audit of those readings, then the next open Cipher 3 letters outside cabinet-noir's list.
+Nothing waits on a person: the f.89 '?' settlement from the duplicate is applied (A3V3-ES132S, 4 Oct 2026); the action that depends on nobody is now the fresh rule-7 re-derivation of the settled f.89 pages, then the next open Cipher 3 letters outside cabinet-noir's list.
 
 ## Requests by host (CS-1)
 gallica.bnf.fr 4 images; archive.org 6 advancedsearch + 4 djvu downloads; github.com 3 shallow clones (2 solver repos earlier + cabinet-noir; one WebFetch); de-crypt.org 1 browser login + 12 fetches; WebSearch 9; archivesetmanuscrits.bnf.fr 1 (403, not retried). No credentials printed. Report only; no novelty classification made.
@@ -355,6 +355,44 @@ one only where the f.89 image itself supports the duplicate's token.
 
 Requests: gallica.bnf.fr 11 (6 x 1200 px canvases 89-94, 5 native regions). Subagent calls: 10 Sonnet (blind passes); reconciliation
 and alignment by this worker. No credentials used. Report only; no novelty classification.
+
+## Duplicate settlement of the f.89 '?' tokens (A3V3-ES132S, account 3, 4 Oct 2026, 06:35-06:4x UTC by `date -u`)
+Brief: `.claude/briefs/runs/2026-10-04-acct3-a3v3-wave2.md` section A3V3-ES132S. Rule pre-registered and pushed before any settlement was
+computed: `PREREG_dupsettle.md` (commit 7c98044a, with frozen copies `dup_settlements_pre.tsv` / `dup_align_pre.tsv` of A3V3-ES9396's
+alignment). Script `settle_dup.py` (`--check` exit 0); per-candidate decisions in `dup_settled.tsv` (old token, duplicate token, decision,
+new token), summary `dup_settle_result.json`.
+
+**Rule** (summary; the PREREG is the text): R1 the duplicate token was written by both blind readers (an `equal` opcode of passes A/B, no
+reconciler decision); R2 same token / same decoded text (align_dup's clerk-variant and notation classes) + R1 -> the '?' flag is removed, the
+f.89 token is kept; R3 a differing token + R1 + (a) the pair is an isolated 1:1 substitution (both neighbouring aligned pairs are anchors) +
+(b) the duplicate token is not one of its notation-side forms (14, 0, R) -> the f.89 token is replaced. Only the unprinted pages f.89r, f.89v,
+f.90r, f.91r; the 36 f.90v (Teulet known-answer) candidates are not applied, so test 1's calibration is untouched.
+
+**Control** (rule 3; replacements depend on token identity, R1 and isolation, so the control can differ): 50 firm (unflagged) f.89 tokens
+aligned to an unflagged duplicate token (seed 1578), run through R1-R3 as if flagged: **48/50 unchanged = 96.0% (gate >= 95%: PASS)**.
+Beside it, the whole firm population: **1,143/1,218 unchanged = 93.8%** -- below 95%: the 50-token sample passes only narrowly and the
+population rate says the rule would replace about 6% of tokens that were already firm. Read the 18 replacements accordingly: they move a
+'?' token toward the duplicate where both copies' readers agree on the duplicate side, but about one in sixteen such moves on firm tokens
+would be a clerk variant or a duplicate-side misreading, not a correction. No image look was made (not in the brief).
+
+**Result on the 83 unprinted candidates:** 25 flag-removed (R2), 18 replaced (R3), 30 kept (R3a not isolated: re-segmented windows), 10
+kept (R1: the duplicate token was a reconciler decision). **'?' tokens 113 -> 70** (f.89r 44 -> 24, f.89v 36 -> 26, f.90r 31 -> 18, f.91r
+2 -> 2); of the 43 settled, 35 are key-decodable syllables and 8 are code/unreadable (U). Replacements (f.89 -> duplicate): 6.@s->6.,
+17+@2->17+@l, 6ρ->{a}, 13+->131, 13->13@l, 28->26 (x2), 7σ->7+, 16σ->16+, 11σ->16+@n, 12σ->12, 17ρ@n->17ρ, {pam}+@s->{pam}+, 7ρ->7ρ@n,
+60->10@s, 13@n->13@l, 15+@n->15+, 25+->15+.
+
+**Grades** (rule 4; settled tokens M, never above the pages' own grade; test2_result.json):
+| page | before M / U / '?' | after M / U / '?' | S_b reconciled before -> after (gate (b)) |
+|---|---|---|---|
+| f.89r | 410 / 35 / 44 | 408 / 37 / 24 | -1.116 -> -1.109 (PASS) |
+| f.89v | 386 / 42 / 36 | 386 / 42 / 26 | -1.176 -> -1.177 (PASS) |
+| f.90r | 429 / 65 / 31 | 430 / 64 / 18 | -1.080 -> -1.073 (PASS) |
+| f.91r | 113 / 7 / 2 | 113 / 7 / 2 | -1.212 -> -1.212 (PASS) |
+H 0, C 0, S 0 on these pages before and after (cryptanalytic, key-applied result). After the settlement `align_dup.py` was re-run (its
+`dup_settlements.tsv` now lists only the remaining candidates; the pre-settlement state is in the `_pre` files), `test2.py` regenerated
+`reading_f89r/f89v/f90r.txt`; `settle_dup.py --check`, `align_dup.py --check`, `test2.py --check`, `test1.py --check`, `test0.py --check`
+all exit 0. **A fresh rule-7 re-derivation of the f.89 pages is owed after A3V3-ES132S; this worker did not do it.**
+Requests: none (no network). Subagent calls: 0. Report only; no novelty classification.
 
 ## Cipher 3 pool test 1 (ES132-C3, LANE-POOLS2 account 1, 4 Oct 2026, 06:23-06:3x UTC by the container clock)
 Brief `.claude/briefs/runs/2026-10-04-acct1-pools2-es132c3.md`. f.89/f.119/f.93-96 files and AUDIT.md untouched.
