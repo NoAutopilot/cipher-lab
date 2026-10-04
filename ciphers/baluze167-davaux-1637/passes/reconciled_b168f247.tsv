@@ -1,0 +1,8 @@
+line	tokens
+# N8-BAL reconciliation (worker, NOT blind to the fragments): A or B token per position, ? where they disagree and the crop does not settle it
+# P1: B (A has fewer tokens; f agrees); P2: A structure, 416' per A, disputed signs ?; Q1: B (A did not read the s2 tail); Q2: A structure 41' 7 b m f i t, then B 59 (crop shows digits 5 9), final 1'/61' ?
+P1	{Jay sceu du} 96 L:? L:f L:w L:? L:?
+P2	416' L:? L:? L:d 416' {lequel disna lautre iour}
+Q1	{a un point de consequence} 96 L:? L:? L:? L:t 5 L:b L:b L:b 61 33: 95 L:? L:d L:b L:b L:t
+Q2	41' 7 L:b L:m L:f L:i L:t 59 L:p L:t L:b ? {Les Ducs de Saxe}
+Q3	{la france}

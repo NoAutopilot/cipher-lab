@@ -243,3 +243,71 @@ quotes.
 - [ ] image-check: 168 c508-509 and 170 c239-241 native crops still to do
 - [ ] retry: n/a
 Verdict: keep going: 3 internal gaps; cheapest next: 168 f.246-247 crops + hand glossary + pass, ~$3, then 170 ff.228-230, ~$6
+
+## N8-BAL (account 2 worker, for LANE-NEAR8), 4 Oct 2026, 16:15-16:3x UTC
+
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md` job N8-BAL. Intake gate pasted by the lane (exit 0). No novelty class.
+PREREG `n8bal/PREREG-N8BAL.md` + scorer `n8bal/score_f247.py` + positive control `n8bal/planted_control.py` pushed (fc597be1, 16:18 UTC)
+before any new image was fetched or any pass scored. Known answer: Tomokiyo's two quoted fragments for 168 f.246 (F1 "c'est ce qu'on
+pouvoit desirer dudit Salvius pour ce regard"; F2 "de ne consentir aucune suspension d'armes quand on viendra a traiter si ce n'est
+que le"), never shown to a reader.
+
+**Where the cipher is.** Canvases 508-510 viewed at 1000 px (native 3701 x 5490 on c509; scale differs from the c510 crop of
+A3V3-BALB). f.246r (c508): clear, "Duplicata", no cipher. f.246v (c509): one run of ~6 groups after "Jay sceu du" (a name, the
+subject of "lequel disna l'autre iour chez luy"). f.247r (c510): one run of ~25 tokens between "a un point de consequence" and "Les
+Ducs de Saxe Lauenbourg"; the last word of the page ("isuy"/"ilfuy") is probably clear. f.247v and on (c511, c512): Gallica image
+API HTTP 404, info.json HTTP 500 (16:19 UTC, one retry each, then stopped). F2 is not on c508-510; it is most likely on f.247v.
+No glossed letter in this hand was found on the leaf (it is bare); none was searched for elsewhere (survey.tsv covers only
+Tomokiyo's listed folios, all in the 1637-39 secretaries' hands), so the letter-sign glossary step had no input.
+
+**Crops** (pasted):
+`python3 tools/iiif_lines.py --ark btv1b9001503k --canvas 509 --region 550,1980,3100,300 --prefix b168f246v --out ciphers/baluze167-davaux-1637/images/crops --debug` -> 2 lines, 4 crops;
+`python3 tools/iiif_lines.py --ark btv1b9001503k --canvas 510 --region 2800,4330,880,200 --prefix b168f247end --out ... --debug` -> 1 crop;
+c510 L01-L02 reused from A3V3-BALB (b168f247_*). Two earlier mis-placed c509 cuts were deleted with their manifest entries.
+
+**Passes.** A and B: blind Sonnet, one call each over all 5 rows (letter-sign block of Tomokiyo's table as reference, no fragment
+text), returned as text: `passes/passA_b168f247.tsv`, `passes/passB_b168f247.tsv`. Both read the numerals (96, 5, 41, 59/5, 416)
+but neither could match this hand's letter signs to the table (they look like Latin p, v, d, t, b, y, m): A 31 tokens, B 39; A did not
+read the s2 tail of c510 L01 (61 33: 95 y d b b t). Reconciliation by this worker (`passes/reconciled_b168f247.tsv`, NOT blind):
+A or B per token, `?` where they disagree and the crop does not settle it; choices logged in the file header.
+
+**Score** (`cd n8bal; python3 score_f247.py ../passes/{passA,passB,reconciled}_b168f247.tsv`):
+| transcription | pooled agreement | F1 | F2 | shuffled-key null mean / p99 | gate |
+|---|---|---|---|---|---|
+| pass A (blind) | 8/44 = 0.182 | 2/11 | 6/33 | 0.196 / 0.338 | FAIL |
+| pass B (blind) | 12/52 = 0.231 | 0/10 | 12/42 | 0.137 / 0.275 | FAIL |
+| reconciled | 6/54 = 0.111 | 1/12 | 5/42 | 0.156 / 0.300 | FAIL |
+| planted control (PREREG) | 1.000 / 0.903 / 0.824 / 0.717 at 0/10/20/30% token error | | | | |
+
+**Reading of the result: a non-test, not a negative on the key** (rule 3, the Salviati SALV-DIAG paragraph). Of the reconciled
+transcription's 40 cipher tokens only 21 have a key value (19 are unread `?` letter signs, 96/5 with no mark, or 416'); the
+planted control was run only up to 30% token error, and this transcription sits at about 50% unresolved before any misreading is
+counted, outside the control's bracket. F2 is very likely not on the leaves read (f.247v unreachable), so its 33-42 "overlapping"
+letters are the fitting alignment placing it on unrelated text. F1 overlaps at most 10-12 letters. The figures show the readers cannot
+label this hand's letter signs against Tomokiyo's block; they say nothing about whether Tomokiyo's key opens f.246-247.
+One structural note (not used in the score): A and B both read a triple sign "b b b" and "d b b t"; under Tomokiyo's letter block a
+tripled letter is not French, so either this hand's letter-sign forms are not those of his block or the signs are something else
+(nulls, a doubling sign). That is what a hand glossary would settle.
+
+Requests: gallica.bnf.fr 12 (5 canvases at 1000 px of which 2 failed + 1 retry, 1 manifest, 3 info.json of which 2 failed, 4 region
+fetches of which 2 were mis-addressed (HTTP 500/400 from an `ark:` prefix and an out-of-range box) and 2 served; one at a time, >= 2 s).
+Subagents: 2 Sonnet calls.
+
+## Remaining gaps (N8-BAL, 4 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv); of the 5 bare passages, 3 (169 ff.52-53,
+97-98, 142) are read in full with the published key (reading.txt). 168 f.246-247: cipher located and transcribed for numerals only;
+the known-answer test is a non-test (letter signs of this hand unlabelled).
+- 168 f.246-247 bare passage - blocker: not-attempted; this hand's letter signs cannot be labelled from Tomokiyo's block by blind readers and no glossed letter in this hand has been located; f.247v (c511-512) answered Gallica 404/500 on 4 Oct 2026; next: re-fetch c511-512 on a later day, then search Baluze 167-171 for another duplicata in this secretary's hand that carries an interlinear gloss (hand glossary, blind to Tomokiyo's quote), then re-run n8bal/score_f247.py under PREREG-N8BAL unchanged, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census; next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (4 Oct 2026, N8-BAL)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); 168 f.246-247 known-answer a non-test (N8-BAL)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: 168 f.247's hand needs its own letter-sign glossary from a glossed letter in the same hand
+- [ ] image-check: 168 c511-512 (f.247v) unreachable 4 Oct 2026; 170 c239-241 native crops still to do
+- [ ] retry: c511-512 on a later day
+Verdict: keep going: 3 internal gaps; cheapest next: re-fetch 168 c511-512 and look for a glossed letter in the f.246 hand, ~$3, then 170 ff.228-230, ~$6
+Gate output (N8-BAL, 4 Oct 2026): `OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 3 step(s) untried` (exit 0); decode_key --check: reading up to date (exit 0; f.246-247 not added to ciphertext.txt, numerals-only transcription kept in passes/).

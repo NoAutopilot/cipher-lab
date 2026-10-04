@@ -1,4 +1,4 @@
-# PREREG N8-BAL -- Baluze 168 f.246-247 bare passage vs Tomokiyo's quoted fragments (4 Oct 2026, written 16:3x UTC, pushed before any new image fetch or score)
+# PREREG N8-BAL -- Baluze 168 f.246-247 bare passage vs Tomokiyo's quoted fragments (4 Oct 2026, written 16:1x UTC, pushed before any new image fetch or score)
 
 Worker N8-BAL (account 2, for LANE-NEAR8), brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md` job N8-BAL.
 
