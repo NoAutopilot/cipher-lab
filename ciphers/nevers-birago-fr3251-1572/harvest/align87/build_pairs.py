@@ -24,6 +24,10 @@ H = Path(__file__).resolve().parent.parent
 WORD = {"T11", "T15", "T26", "T29", "T46", "T78", "T84", "T89"}
 ap = argparse.ArgumentParser(); ap.add_argument("--shuffle-words", type=int); ap.add_argument("--shift", action="store_true")
 ap.add_argument("--out", default=str(Path(__file__).resolve().parent / "pairs.tsv")); ap.add_argument("--codes")
+# --cipher-dir DIR (BIR87-ALIGN, 4 Oct 2026): read ciphertext_<fol>.tsv from DIR instead of harvest/. A sign written "P:<pile>"
+# there is an owner pile (sorter/no87): one code per pile, 2000 + k (0/1 letter), or 7000 + k when the pile's family is a word
+# sign (any chunk), so each pile's value comes from its own tiles. Committed files carry no "P:" sign: default output unchanged.
+ap.add_argument("--cipher-dir")
 a = ap.parse_args()
 
 sheet = " ".join(r["text"] for r in csv.DictReader(open(H / "f179r_sheet/decipherment_sheet.tsv"), delimiter="\t"))
@@ -45,11 +49,18 @@ if a.shuffle_words is not None:
     spans = out
 
 rows, codes, k = [], [], 0
+CD = Path(a.cipher_dir) if a.cipher_dir else H
+pile = {}
 for (fol, span) in zip(("f178r", "f178v", "f179r"), spans):
     toks = []
-    for r in csv.DictReader(open(H / f"ciphertext_{fol}.tsv"), delimiter="\t"):
+    for r in csv.DictReader(open(CD / f"ciphertext_{fol}.tsv"), delimiter="\t"):
         s = r["sign"].strip()
-        if s in WORD:
+        if s.startswith("P:"):
+            if s not in pile:
+                fam = s[2:].split("-")[0]
+                pile[s] = (7000 if fam in WORD else 2000) + len(pile) + 1
+            c = pile[s]
+        elif s in WORD:
             c = 6000 + int(s[1:])
         elif re.fullmatch(r"T\d+", s):
             c = int(s[1:])

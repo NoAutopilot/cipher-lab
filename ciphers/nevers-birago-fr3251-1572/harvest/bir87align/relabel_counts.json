@@ -1,0 +1,53 @@
+{
+ "cipher_owner": {
+  "tile_no_token": 31,
+  "owner_kept": 186,
+  "owner_moved": 18,
+  "tile_not_1to1_2:1": 4,
+  "owner_not-letter": 1,
+  "tile_bad-cut_kept_committed": 3,
+  "tile_not_1to1_1:2": 5,
+  "tokens": 853,
+  "tokens_owner_labelled": 205,
+  "tokens_atlas_or_lineread": 648,
+  "piles": {
+   "P:T37": 42,
+   "P:T45": 54,
+   "P:T60": 43,
+   "P:X_NEW-l": 7,
+   "P:T60-d": 1,
+   "P:T19": 36,
+   "P:T89-b": 10,
+   "X_NOTLETTER": 1,
+   "P:T24-b": 6,
+   "P:T85-b": 1,
+   "P:T86": 2,
+   "P:T33": 1,
+   "P:T85": 1
+  }
+ },
+ "cipher_moved": {
+  "tile_no_token": 31,
+  "tile_kept_kept_committed": 186,
+  "owner_moved": 18,
+  "tile_not_1to1_2:1": 4,
+  "owner_not-letter": 1,
+  "tile_bad-cut_kept_committed": 3,
+  "tile_not_1to1_1:2": 5,
+  "tokens": 853,
+  "tokens_owner_labelled": 19,
+  "tokens_atlas_or_lineread": 834,
+  "piles": {
+   "P:T60-d": 1,
+   "P:T37": 6,
+   "P:T60": 5,
+   "X_NOTLETTER": 1,
+   "P:T24-b": 3,
+   "P:T85-b": 1,
+   "P:T33": 1,
+   "P:T85": 1
+  }
+ },
+ "corrections_applied": 7,
+ "corrections_rows": 8
+}
