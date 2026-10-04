@@ -1,4 +1,4 @@
-# N4-XM pre-registration (4 Oct 2026, written 04:2x UTC before any control statistic was computed)
+# N4-XM pre-registration (4 Oct 2026, written 04:18 UTC before any control statistic was computed)
 
 Worker N4-XM (account 2, for LANE-NEAR4), brief `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave1.md` section N4-XM.
 
@@ -36,7 +36,7 @@ Either way the result is about the tool's statistic, not a reading. The by-eye r
 under f159 and under AVS's own key_74.tsv, letter-for-letter agreement count) is reported beside it and does
 not change the rule above.
 
-## Amendment A (04:3x UTC, after the selection step, before any control statistic was computed)
+## Amendment A (04:19 UTC, after the selection step, before any control statistic was computed)
 The selection step ran (`xm_control.py`) and found 0 qualifying keys: of every letter-alphabet key of 20-58 letters
 on disk outside the two folders, none reaches coverage 0.5 on even one of the three AVS ciphertexts (highest:
 decode-1168-modena-costabili-1492/key.tsv 0.45/0.39/0.48; dupuy468-anhalt/key_from_gloss.tsv 0.42/0.41/0.43;
