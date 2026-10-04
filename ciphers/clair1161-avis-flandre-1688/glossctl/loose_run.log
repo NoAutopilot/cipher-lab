@@ -1,0 +1,11 @@
+2026-10-04 01:18	real	13	0	-2277.4	0.5882	-1.146	31s	FAIL language -1.146 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.908
+2026-10-04 01:18	shuf1	5	0	-2278.4	0.5941	-1.13	42s	FAIL language -1.13 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.913
+2026-10-04 01:19	shuf2	8	3	-2492.2	0.5647	-1.309	43s	FAIL language -1.309 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.892
+2026-10-04 01:20	shuf3	3	0	-2277.9	0.5882	-1.143	44s	FAIL language -1.143 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.905
+2026-10-04 01:21	shuf4	5	0	-2277.8	0.5882	-1.15	42s	FAIL language -1.15 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.909
+2026-10-04 01:21	shuf5	2	0	-2350.4	0.2882	-1.179	44s	FAIL language -1.179 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.908
+2026-10-04 01:22	shuf6	4	0	-2280.0	0.5647	-1.144	41s	FAIL language -1.144 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.909
+2026-10-04 01:23	shuf7	5	0	-2278.7	0.5882	-1.145	43s	FAIL language -1.145 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.908
+2026-10-04 01:23	shuf8	4	0	-2284.1	0.5941	-1.133	41s	FAIL language -1.133 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.912
+2026-10-04 01:24	shuf9	2	0	-2278.7	0.6000	-1.133	44s	FAIL language -1.133 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.912
+2026-10-04 01:25	shuf10	3	0	-2281.6	0.5824	-1.145	43s	FAIL language -1.145 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.912
