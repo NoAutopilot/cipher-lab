@@ -297,3 +297,63 @@ Read so far: 0 of ~5,000 open signs (L25 only; L14 is known glossed); Tomokiyo's
 - [n/a] retry: no host failed
 Verdict: keep going: 1 internal gap; cheapest next: test 0 seeded by the Tomokiyo match once the sort is done (or with the table as a hypothesis), ~$9
 gaps_check (RUN2-SAV): `OK keep-going fr16144-savary-lancosme-1588: keep going: 1 internal gap(s), 1 step(s) untried`
+
+## A3V3-SAVT: table test against the c380 gloss (LANE-A3V3, account-3 worker, 4 Oct 2026 06:36-06:4x UTC by the container clock)
+Brief: .claude/briefs/runs/2026-10-04-acct3-a3v3-wave2.md, job A3V3-SAVT. Pre-registration committed before any alignment:
+`savt/PREREG.md` (09a6eff4), amendment 1 (29ea2f98, before alignment), amendment 2 (853c7f53, held-out split, before recovery).
+
+**Found: the c380 gloss is in print.** The c380 (f.187r) margin gloss phrases read on the leaf -- "[..]ont voulu accuser",
+"la malice et presomption", "[..]perroz lesquels a", "[..] leur authorite", "m'ont voulu fermer l'eglise", "[..]reduire a ce
+poinct" (`savt/gloss_c380_partial.txt`, gloss lines 1-18, grade M) -- follow word for word the passage Charrière IV quotes from
+Lancosme's letter of **23 Dec 1587** (pp.638-639 note, "M. de Lancosme avait écrit, le 23 décembre ..."; IA
+ngociationsdel04charuoft djvu text lines 50447-50478), from "Je n'avois point voulu accuser la malice ..." to "... garantir à
+l'honneur de V. M." So the c380 letter is 23 Dec 1587 and its later part is printed; gloss lines 1-9 ("humblement", "la
+deputaz", "de fait", "ont violé") precede the printed extract and were not found in Charrière (not searched elsewhere). The
+print (OCR repaired by hand) is `savt/print_charriere_c380.txt` and is the plain side G used (amendment 1): the margin itself
+is too broken by the gutter to align.
+
+**Test (rule 3; `python3 savt/align.py`, offline, 200 draws per null).** D = c380's 932 SV-SORT tokens decoded with the seed
+table (Tomokiyo pile match, RUN1-SAV; 32.6% of D's letters are wildcards from unmatched piles).
+| statistic | target | N1 shuffled table (mean / max) | N2 pile-label shuffle (mean / max) | positive control (min, 20 draws) | gate |
+|---|---|---|---|---|---|
+| S_loc (Smith-Waterman, whole page vs G) | 31 | 13.9 / 20 | 14.2 / 20 | 628 | PASS |
+| S_semi (identity, lines 6-22 vs G) | 0.406 | 0.292 / 0.349 | 0.286 / 0.314 | 0.676 | PASS |
+Both nulls vary on both statistics (they move D's letters / order), and the positive control passes, so the PASS is a test.
+Reading: the seed table carries real signal on this leaf, but weakly -- identity 0.41 against a 0.29 null mean is far below a
+reading (the positive control with 30% errors sits at 0.72), consistent with the over-split, noisy piles (bad cuts, merged
+signs) rather than with a wrong table.
+
+**Table recovery (hard-EM, `python3 savt/recover.py`): held-out FAIL.** Fit on lines 6-14, test on 15-22: recovered table
+0.359 vs seed table 0.441 vs N1 (200 shuffles of the recovered table) max 0.367 -- the EM over-fits the fit lines and reads
+worse than its seed on held-out text. Per PREREG, no pile gets C. `savt/table_proposed.tsv` therefore keeps the seed value for
+each pile (**80 piles M, 37 none**) and lists per-pile evidence from the seed alignment (aligned n, confirmations, top 3 gloss
+letters) beside the EM value for reference. Best-supported seed values (seed alignment, optimistic because the alignment
+maximises matches): k005 = e 25/28, k112 = r 12/16, k056 = o 11/15, k007 = o 9/9, k012 = t 8/9, k023 = a 6/7, k026 = p 6/7,
+k035 = m 6/7, k042 = n 6/6. A split worth the owner's sort: k018 ("6 with hook", seed e) aligns e 8 / l 6 of 17.
+
+**Stop point: one line of c370 with the proposed table** (`python3 savt/c370_line_test.py --line 5`; line 3 was also printed):
+line 5, 58 tokens, 18 unmapped: `in??dceestnrb?a?rgt??l??i?iu?lcee?????emauec?deilce?eeptre?eesionom` -- not readable French;
+line 3, 69 tokens, 22 unmapped: `?lgdt?ceonregnemque?lm?m??pt?????t?le?nauecen?oya???ox?yayrmdec?eondelarbque???`. As expected
+from a 0.41-identity table on unsettled piles: the c370 test does not read. Not a negative on the cipher: the instrument
+(pile labels) is below the level where a correct table would read, which the positive control quantifies.
+
+Grades: nothing read on c370 (0 H, 0 C, 0 S); table values all M. Requests: gallica.bnf.fr 3 (c380 at 1500 px, info.json,
+one native gloss region; 2 s apart, all 200); archive.org 1 (Charrière IV djvu text). Subagent calls: 0 (gloss read by this
+worker, Opus). Images in scratch only, not committed.
+
+## Remaining gaps (finish-or-blocker pass, 4 Oct 2026, A3V3-SAVT)
+Read so far: 0 of ~5,000 open signs on L25 (c370-c375); seed table tested against c380's printed decipherment (PASS, weak), recovery held-out FAIL.
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply (publish sorter/index.html and file the ASKS row, flagged in ROOM.md 3 Oct 2026); tomokiyo_pile_match.tsv and savt/table_proposed.tsv (per-pile evidence, k018 split) are the focus hints
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: waiting-on the account-3 orchestrator's reply (the owner sort of sorter/index.html, flagged in ROOM.md 3 Oct 2026); the table test cannot read c370 on over-split piles (seed identity 0.41 vs positive control 0.72); next after the sort: rerun `savt/align.py` on settled labels (same PREREG), then decode c370 with the table if held-out passes, ~$4
+- the duplicata's original (fr.17020 ff.372-382 inventory) - blocker: needs-physical-access; fr.17020 is not digitised (RUN2-SAV)
+
+## Escalation (4 Oct 2026, A3V3-SAVT)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv); L14 c251-252 glossed (30 Apr 1586)
+- [x] clear-pages: c380 gloss identified with Charrière IV pp.638-639 (23 Dec 1587) and used as the plain side
+- [x] known-keys: Tomokiyo's 1588 table tested on c380 against the print (PASS both statistics, weak signal)
+- [x] print: Charrière IV whole volume grepped; the c380 letter (23 Dec 1587) found quoted in part pp.638-639
+- [retired] key-rebuild: hard-EM gloss alignment on SV-SORT piles (savt/recover.py) failed its held-out; reopens only with the settled alphabet (new material)
+- [x] image-check: c370-c375, c380 native; c380 gloss region native (A3V3-SAVT)
+- [n/a] retry: no host failed
+Verdict: parked: every gap waits on the owner's sort or physical access; cheapest next after the sort: rerun savt/align.py on settled labels, ~$4
+gaps_check (A3V3-SAVT): `OK parked fr16144-savary-lancosme-1588: parked: 3 gap(s), all outside blockers`

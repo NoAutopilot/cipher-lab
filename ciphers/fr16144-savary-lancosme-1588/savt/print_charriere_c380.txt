@@ -1,4 +1,4 @@
-# Charriere, Negociations de la France dans le Levant IV (1860), p.638 note (IA ngociationsdel04charuoft djvu text, lines 50447-50478),
+# Charriere, Negociations de la France dans le Levant IV (1860), pp.638-639 note (IA ngociationsdel04charuoft djvu text, lines 50447-50478),
 # quoting "M. de Lancosme avait ecrit, le 23 decembre [1587] ...". OCR repaired by hand (A3V3-SAVT, 4 Oct 2026); spelling as printed.
 # Matched to the c380 (f.187r) margin gloss by phrases read on the leaf: gloss l.10 "[..]ont voulu accuser", l.11 "la malice ... presomption",
 # l.12 "[..]perroz lesquels a", l.13 "[..] de leur authorite", l.14 "m'ont voulu fermer l'esglise".

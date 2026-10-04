@@ -1,0 +1,122 @@
+# A3V3-SAVT proposed pile -> letter table (c380, fr.16144 f.187r), hard-EM vs Charriere IV p.638 print of the 23 Dec 1587 letter.
+# grade C: >=5 aligned gloss letters, plurality >=60%, held-out passed; else M. HELD-OUT FAILED (recovery.json): proposed = seed value, all M.
+# seedaln_* = evidence from the seed-table alignment of lines 6-22 (alignment chosen to maximise matches: confirm counts are optimistic).
+# Piles are SV-SORT over-split clusters, not a settled alphabet: proposals for the owner sort, not labels.
+pile	n_tokens_c380	seed_value	proposed	seedaln_n	seedaln_confirm	seedaln_confirm_share	seedaln_top3	em_value(heldout_failed)	em_aligned_n	em_plurality_share	grade
+k000	25	x	x	12	0	0.0	s:8 q:2 u:1	s	18	0.944	M
+k001	2	n	n	1	0	0.0	i:1	n	1	1.0	M
+k002	7	i	i	5	2	0.4	i:2 e:1 a:1	t	4	0.25	M
+k003	2	-	?	1	0	0.0	s:1	?	1	1.0	-
+k004	0	e	e	0	0	0.0		e	0	0.0	M
+k005	43	e	e	28	25	0.893	e:25 i:1 a:1	e	23	0.826	M
+k006	3	l	l	1	0	0.0	s:1	l	1	1.0	M
+k007	16	o	o	9	9	1.0	o:9	o	10	0.9	M
+k008	6	-	?	1	0	0.0	i:1	?	1	1.0	-
+k009	16	y	y	7	3	0.429	y:3 n:2 s:1	y	10	0.4	M
+k010	2	-	?	2	0	0.0	u:2	?	2	1.0	-
+k011	28	-	?	25	0	0.0	e:6 i:4 t:4	e	21	0.429	-
+k012	11	t	t	9	8	0.889	t:8 c:1	t	10	0.9	M
+k013	6	r	r	4	3	0.75	r:3 c:1	r	4	1.0	M
+k014	11	b	b	8	2	0.25	c:2 b:2 y:1	c	8	0.625	M
+k015	16	g	g	9	1	0.111	i:2 n:2 o:1	i	11	0.545	M
+k016	5	l	l	3	2	0.667	l:2 e:1	l	4	0.75	M
+k017	1	-	?	1	0	0.0	u:1	?	1	1.0	-
+k018	31	e	e	17	8	0.471	e:8 l:6 r:1	l	20	0.8	M
+k019	7	-	?	7	0	0.0	l:2 u:2 m:1	u	5	1.0	-
+k020	2	o	o	1	1	1.0	o:1	o	1	1.0	M
+k021	2	e	e	1	0	0.0	h:1	e	1	1.0	M
+k022	4	auec	auec	7	0	0.0	u:2 e:2 t:1	auec	9	0.222	M
+k023	8	a	a	7	6	0.857	a:6 q:1	a	7	1.0	M
+k024	5	i	i	2	1	0.5	t:1 i:1	o	4	0.75	M
+k025	70	-	?	51	0	0.0	e:9 u:7 i:5	e	40	0.45	-
+k026	13	p	p	7	6	0.857	p:6 n:1	p	8	1.0	M
+k027	2	DOUBLE	DOUBLE	0	0	0.0		DOUBLE	0	0.0	M
+k028	8	-	?	2	0	0.0	h:1 e:1	h	1	1.0	-
+k029	1	n	n	0	0	0.0		n	0	0.0	M
+k030	10	x	x	3	0	0.0	s:1 t:1 a:1	s	5	0.6	M
+k031	3	-	?	3	0	0.0	m:1 u:1 s:1	c	3	0.333	-
+k032	7	x	x	4	0	0.0	d:1 o:1 s:1	d	6	0.333	M
+k033	4	u	u	3	3	1.0	u:3	u	4	0.75	M
+k034	15	-	?	13	0	0.0	q:4 s:3 u:2	q	12	0.583	-
+k035	9	m	m	7	6	0.857	m:6 q:1	m	6	1.0	M
+k037	8	-	?	5	0	0.0	e:3 r:1 n:1	e	5	0.8	-
+k038	4	-	?	2	0	0.0	t:1 i:1	?	2	0.5	-
+k039	9	-	?	7	0	0.0	l:2 p:1 a:1	p	4	0.25	-
+k040	1	-	?	0	0	0.0		?	0	0.0	-
+k041	2	auec	auec	7	1	0.143	u:2 a:1 r:1	auec	6	0.333	M
+k042	7	n	n	6	6	1.0	n:6	n	7	1.0	M
+k043	0	s	s	0	0	0.0		s	0	0.0	M
+k044	0	t	t	0	0	0.0		t	0	0.0	M
+k045	9	-	?	6	0	0.0	s:3 g:1 e:1	s	3	0.667	-
+k046	1	e	e	1	1	1.0	e:1	e	0	0.0	M
+k047	7	y	y	1	0	0.0	i:1	i	4	1.0	M
+k048	6	b	b	2	0	0.0	c:1 e:1	b	2	0.5	M
+k049	4	e	e	2	1	0.5	f:1 e:1	f	3	0.333	M
+k050	9	de	de	7	3	0.429	d:3 e:3 q:1	de	6	0.5	M
+k051	34	-	?	21	0	0.0	t:4 u:4 q:3	t	19	0.368	-
+k052	4	-	?	3	0	0.0	i:1 e:1 q:1	i	2	0.5	-
+k053	11	-	?	9	0	0.0	l:2 u:2 r:1	l	7	0.286	-
+k054	2	t	t	1	1	1.0	t:1	t	2	1.0	M
+k055	5	c	c	1	1	1.0	c:1	c	2	0.5	M
+k056	27	o	o	15	11	0.733	o:11 s:2 r:1	o	15	0.8	M
+k057	3	o	o	1	0	0.0	e:1	o	2	0.5	M
+k058	7	est	est	6	1	0.167	s:2 e:1 o:1	est	6	0.333	M
+k059	22	pour	pour	34	0	0.0	u:12 o:4 s:4	pour	34	0.471	M
+k060	18	y	y	12	0	0.0	i:7 n:1 o:1	i	16	0.938	M
+k061	8	-	?	5	0	0.0	n:1 e:1 c:1	e	2	0.5	-
+k062	5	-	?	1	0	0.0	e:1	?	1	1.0	-
+k063	5	s	s	5	1	0.2	s:1 f:1 q:1	e	5	0.4	M
+k064	1	l	l	1	1	1.0	l:1	l	1	1.0	M
+k065	4	s	s	3	0	0.0	c:1 b:1 n:1	c	3	0.333	M
+k066	4	t	t	3	2	0.667	t:2 e:1	t	3	0.333	M
+k067	4	m	m	3	1	0.333	c:1 d:1 m:1	c	4	0.75	M
+k068	5	g	g	2	2	1.0	g:2	g	3	0.667	M
+k069	4	f	f	2	2	1.0	f:2	f	2	1.0	M
+k070	2	p	p	2	0	0.0	l:2	p	2	1.0	M
+k071	1	l	l	1	1	1.0	l:1	l	1	1.0	M
+k072	2	-	?	2	0	0.0	q:1 d:1	?	1	1.0	-
+k073	9	r	r	4	3	0.75	r:3 i:1	r	5	0.6	M
+k074	14	e	e	13	7	0.538	e:7 t:2 c:2	e	9	0.333	M
+k075	5	-	?	2	0	0.0	o:1 u:1	?	2	0.5	-
+k076	5	-	?	2	0	0.0	i:1 t:1	?	0	0.0	-
+k077	2	ce	ce	0	0	0.0		ce	0	0.0	M
+k078	11	-	?	8	0	0.0	c:2 a:1 i:1	c	7	0.429	-
+k079	2	n	n	1	1	1.0	n:1	n	1	1.0	M
+k080	4	y	y	1	0	0.0	s:1	y	1	1.0	M
+k081	0	e	e	0	0	0.0		e	0	0.0	M
+k082	8	e	e	5	2	0.4	e:2 a:1 i:1	e	5	0.6	M
+k083	7	-	?	3	0	0.0	s:2 l:1	s	2	1.0	-
+k084	1	m	m	1	1	1.0	m:1	m	1	1.0	M
+k085	1	g	g	1	1	1.0	g:1	g	1	1.0	M
+k086	7	m	m	5	3	0.6	m:3 y:1 i:1	i	5	0.4	M
+k087	15	a	a	9	5	0.556	a:5 u:2 l:1	a	12	0.667	M
+k088	4	n	n	4	2	0.5	n:2 o:1 i:1	n	3	1.0	M
+k089	3	i	i	2	1	0.5	s:1 i:1	i	2	0.5	M
+k090	4	-	?	3	0	0.0	u:1 n:1 e:1	u	3	0.667	-
+k091	0	o	o	0	0	0.0		o	0	0.0	M
+k092	9	t	t	7	2	0.286	t:2 s:2 m:1	s	5	0.6	M
+k093	5	-	?	4	0	0.0	u:2 e:1 s:1	u	4	0.5	-
+k094	1	e	e	0	0	0.0		e	0	0.0	M
+k095	3	-	?	2	0	0.0	p:1 r:1	?	2	0.5	-
+k096	6	-	?	5	0	0.0	r:1 e:1 u:1	i	4	0.75	-
+k097	7	m	m	2	0	0.0	r:1 a:1	t	5	1.0	M
+k098	3	-	?	1	0	0.0	u:1	?	1	1.0	-
+k099	6	c	c	4	2	0.5	c:2 g:1 u:1	g	4	0.25	M
+k100	4	n	n	2	2	1.0	n:2	n	2	1.0	M
+k102	5	a	a	4	4	1.0	a:4	a	3	0.667	M
+k103	4	-	?	3	0	0.0	p:1 i:1 t:1	p	3	0.333	-
+k104	1	i	i	1	1	1.0	i:1	i	1	1.0	M
+k105	3	-	?	3	0	0.0	u:2 s:1	u	3	0.667	-
+k107	2	-	?	1	0	0.0	q:1	?	1	1.0	-
+k108	16	-	?	11	0	0.0	s:3 t:2 e:2	s	11	0.455	-
+k109	5	que	que	9	0	0.0	s:3 a:2 e:1	que	7	0.286	M
+k110	9	a	a	6	4	0.667	a:4 o:1 n:1	a	5	0.8	M
+k111	2	d	d	1	0	0.0	u:1	d	1	1.0	M
+k112	23	r	r	16	12	0.75	r:12 d:1 a:1	r	15	0.8	M
+k113	3	o	o	2	1	0.5	i:1 o:1	o	2	0.5	M
+k114	7	pour	pour	8	0	0.0	u:4 o:2 d:1	pour	9	0.333	M
+k115	0	n	n	0	0	0.0		n	0	0.0	M
+k116	5	-	?	2	0	0.0	u:1 e:1	?	2	0.5	-
+k117	13	est	est	13	4	0.308	s:4 e:4 t:3	est	9	0.333	M
+k118	2	-	?	2	0	0.0	q:1 a:1	?	2	0.5	-
+k119	40	-	?	24	0	0.0	e:6 l:4 t:2	e	29	0.586	-
