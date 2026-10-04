@@ -52,3 +52,82 @@ relabelled there, so there is nothing to endorse.
 ## For the orchestrator (VERIFY-CEPPO-WP, f.47r)
 - Verdict: **6 accepted**, endorsed S 0 -> 6. PROGRESS.tsv "Birago 1571 fr.3252 f.47" set from this section. status.json is yours.
 - Still open: S74 = m by elimination (a legible gloss over a blob-6 on f.36r/f.37r would settle R-6), and S76/S91 has no rule.
+
+# AUDIT 2 (A3V-VB3252, 4 Oct 2026): fr.3252 no.77 (f.117r), no.24 (f.36-37), no.30 (f.47r) -- first novelty audits
+
+Verifier: worker A3V-VB3252 (account 3, for LANE-A3V), brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave2.md`; a session separate
+from every solver of these letters (NEVBIR-3252/-B, NEVBIR-117C, NEVBIR-47/47C, F36-READ, F36-GLOSS, F36R-REREAD, A1-BIR-*, BIR-*) and
+from VERIFY-CEPPO-WP above, which assigned no class. Clock 03:12-03:2x UTC by `date -u`. No decoding, no change to key, ciphertext or
+reading. Section 1 above (VERIFY-CEPPO-WP) is untouched.
+
+## 1. Extract (from the folder, per item)
+
+| item | date, place | sender -> recipient | lang | cipher signs | firm portion (rule 4) | key | gloss on the leaf |
+|---|---|---|---|---|---|---|---|
+| no.24, f.36r-37r (Gallica btv1b9060232m canvases 37-38) | Saluzzo, 5 Apr 1571 | Lodovico Birago -> Louis de Gonzague, duc de Nevers | Italian | 947 (F36R-REREAD) | **10 C of 947 (1.1%)**: v36top_L01 "parlandone il signor" positions where both readers agree and the printed key = the clerk's gloss; 689 M, 229 U, 19 null; 0 H, 0 S | Ceppo-Nevers, printed by Tomokiyo (reconstructed by him from fr.4702 ff.36-37, a different volume); control-backed z 5.8-7.8 | **yes: the clerk's letter-by-letter interlinear decipherment on every passage** |
+| no.30, f.47r (canvas 48) | Saluzzo, 26 Apr 1571 | Birago -> Nevers | Italian | 771 | **S 6 of 771 (0.8%)**: six upright-hash tiles = o (VERIFY-CEPPO-WP); M 751, U 13 | Ceppo-Nevers printed (Tomokiyo); z 4.56-5.31 | none |
+| no.77, f.117r (canvas 118) | Saluces, 13 Mar 1572 | Birago -> Nevers | French (secretary hand) | 279 | **S 190 of 279 (68%)** (BIR-APPLY: A1-BIR-VERIFY and BIR-OPEN agree, or base S); M 63, U 26; 0 H, 0 C | Nevers-Birago 1572, printed by Tomokiyo (from fr.3251 no.87's attached decipherment); posnull PASS | none |
+
+Readings audited: f.117r `../nevers-birago-fr3251-1572/harvest/tx_decode/eye/apply/reading_f117_apply.txt` (judge FAIL -1.224 vs real_p05
+-0.899); f.36 `harvest/f36r/reading_key_v2*` (judge FAIL -1.487 vs -0.929); f.47r `harvest/witness_pairs/f47_reading_passE_*` (judge FAIL
+-1.524 vs -0.906). Distinctive firm runs: f.117r "intention de conuenir", "poursuoir le gouerne[ment]", "deuant nous", "[et] fauoriser ces
+affaires", "s'il vous sembl[e]", "[quello]" and the word codes turino/carmagnola; f.36 "parlandone il signor"; f.47r none (six isolated o).
+What the solvers searched: NOTES.md "Check-solved", "Web and blog check", "Premise check" (NEVBIR-3252, 2 Oct 2026); HARVEST-D intake
+(`../ceppo-nevers-fr3251-1570s/NOTES.md`, 28 Sept 2026).
+
+## 2. Independent search (4 Oct 2026; request counts per host at the end)
+
+| family | what was searched, by this verifier | result |
+|---|---|---|
+| **N0 basis, f.36, by eye** | `../ceppo-nevers-fr3251-1570s/harvest/witness_f36/c38_f36v_top.jpg` (via `harvest/witness_pairs/w36v_x1000_y120.jpg`), `c37_f36r_cipher.jpg` (crop x1200-2200, y1250-1720, the lower rows) and `c38_f37r_cipher.jpg` viewed at native resolution | **Gloss present over every cipher row viewed on all three leaves** (f.36r lower rows, f.36v top, f.37r both lines): small cursive letters above each sign, e.g. f.36v top "t o d ... s s", "o s l"; f.37r "n u ... s s". The gloss is the period decipherment of this very letter. |
+| No gloss on f.117r and f.47r, by eye | `images/c118.jpg` (whole opening), `images/f117/f117_L04_s2.jpg`, `images/f47/f47_L05_s1.jpg` | No interlinear letters, no marginal key, facing f.116v is an address leaf; agrees with Premise (c). |
+| (a) canonical series / catalogue | **Printed BnF inventory**: *Catalogue des manuscrits français. Ancien fonds*, t. II (Paris 1874; nos 3131-4835), full text from IA `p1cataloguegnr02bibluoft` (`_djvu.txt`, OCR prints the shelfmark as "5232"; neighbours Anc. 8740/8760 place it), entry ending on p. 160 | Read whole entry (items 1-107). **no.24: "Lettre, avec chiffre et déchiffrement, de « Lodovico Birago » au « duca di Nevers,... Da Saluzzo, li 5 aprile 1571 ». En italien. (Fol. 36.)"**; no.30: "Lettre, avec chiffre, ... Da Saluzzo, li 26 aprile 1571 ... (Fol. 47.)"; no.67: "avec chiffre" (Fol. 100); **no.77: "Lettre, avec chiffre, de « Lodovico Birago,... à monseigneur le duc de Nyvernois,... De Saluces, le xiiime mars 1572 ». (Fol. 117.)"**. The catalogue prints the decipherment's existence for no.24 only, and no plaintext for any item. Earlier files cited the BnF online notice (via Bourdeau's sweep), never this printed page. |
+| (b) recipient's printed correspondence | Gomberville, *Les Mémoires de Monsieur le duc de Nevers* (1665), Gallica ContentSearch on Partie 1 `bpt6k6435941k` and Partie 2 `bpt6k9738856z`, terms **Birague, Carmagnole, Saluces** (the solver used 1571, Birago, Lodouico and month strings) | P1: Birague 29 hits -- all Carles/Charles de Birague (1574 restitution of Pignerol etc., PAG_109-150) or the chancellor René (PAG_340, 448, 503); Carmagnole 3 (Savoy's 1588 seizure, PAG_882-905); Saluces 46 (1574 restitution documents). P2: Birague 4 (Sacremore, chancellor), Carmagnole 3 (1588), Saluces 11. **No Lodovico/Ludovic Birago letter of 1571-72 in either part.** |
+| (b) sender's printed correspondence | Google Books API `"Lodovico Birago" lettere` (51 vols; Mazzuchelli *Scrittori d'Italia* 1760; Aretino *Lettere* -- letters *to* Birago); IA full text `"Lodovico Birago" Nevers` (137 items; the printed catalogue, Savio *Saluzzo e i suoi vescovi* 1911, Gabotto's Piedmontese poet study, Promis/Manno-type notices) | No edition of Lodovico Birago's letters to Nevers located. Savio 1911 (IA `saluzzoeisuoives00saviuoft`) mentions Birago's receptions for Nevers and his death (28 Dec 1572); no letter text. |
+| (c) documentary editions | *Lettres de Catherine de Médicis* t.4 (VERIFY-NEVBIR-90REST, 2 Oct, not repeated); IA full text `"Ludovic de Birague" Nevers 1572` (247 items: Monluc *Commentaires*, Registres de la Compagnie des pasteurs, Michaud-Poujoulat collections) and `"Birague" "Carmagnole" Nevers` (Du Bellay/Martin du Bellay mémoires, Lettres sur la cour) | Snippets name Ludovic de Birague's governorship; none prints or summarises the three letters. Not opened page by page (fts snippets only). |
+| (d) holding archive | BnF: printed catalogue above; online notice (as quoted in NOTES.md Sources); Gallica images | The holding institution records a decipherment for no.24 only. Not contacted. |
+| (e) full text IA / HathiTrust / Google Books | `tools/print_check.py . --phrases phrases.txt --only ia-global,gbooks,openalex,crossref` (8 phrases, `phrases.txt` written this session from S/C runs: intention de convenir, poursuivre le gouvernement, favoriser ces affaires, devant nous, Carmagnole Birague 1572, Ludovic de Birague Saluces, Lodovico Birago Saluzzo 1571, parlandone il signor) | "favoriser ces affaires", "Carmagnole Birague 1572", "Ludovic de Birague Saluces", "Lodovico Birago Saluzzo 1571": IA no hits; the generic phrases (intention de convenir, poursuivre le gouvernement, devant nous, parlandone il signor) hit only modern or unrelated texts. Google Books: 2 of 8 queries HTTP 503 ("favoriser ces affaires", "Carmagnole Birague 1572"), not retried; IA and OpenAlex answered both (no hits). HathiTrust full text: unreachable from the cloud (CLAUDE.md host table), not tried. Output not committed (scratch). |
+| (f) solver repositories, cipher blogs | Fresh shallow clones 4 Oct: dbourdeau/cyphersolver a439937 (3 Oct), aaymeloglu/unsolved-ciphers d2800bb; grep 3252, birago, birague, btv1b9060232m. Tomokiyo local mirror `sources/cryptiana/web/` grep birag/3252/Ceppo | Bourdeau: only `research/gallica_sweep/bnf_candidates.txt` l.274 (candidate row, 3 items, no reading). Aymeloglu: DECODE catalogue rows for Lodovico Birago are fr.3619/3621/3623 (1591-92), none fr.3252. Tomokiyo: nevers.htm lists fr.3251 Birago letters and the Ceppo key from **fr.4702** ff.36-37 (Cesare Ceppo's letters); fr.3252 absent. The coincidence of folio numbers (fr.4702 ff.36-37 vs fr.3252 ff.36-37) was checked: the folder's images come from fr.3252's ark (manifest URLs), the leaf is addressed to Nevers with endorsement "5 aprile 1571", and the 1874 catalogue lists Ceppo's letters as a different series -- two different items. DECODE: not re-queried (no login; NEVBIR-3252's 2 Oct live query `x_c_holder LIKE 3252` = 0 records stands). |
+| (g) scholarship | OpenAlex (keyed) "Lodovico Birago" (31), "Ludovico Birago Saluzzo" (10), "Birago Nevers Saluzzo" (2); CrossRef bibliographic query; HAL `"Birague" AND (Saluces OR Nevers)` (0); Semantic Scholar keyed query returned no data (one call, not retried) | Nothing on these letters. Titles of possible background value only: *Altri che hanno servito Francia* (CdlM 2023, doi 10.4000/cdlm.16642); "Le difficoltà politiche e finanziarie degli ultimi anni di dominio" (2015). Treccani DBI life: URL guess returned a generic page; HARVEST-D's 28 Sept finding (it cites fr.3252 among sources, no letter text) is not re-verified here. |
+| JSTOR | No row existed for this folder. Appended 4 rows (2 per family) to `JSTOR-QUEUE.tsv`: (i) Birago/Birague + 1571/1572 dates + Saluzzo/Saluces + cipher keyword, twice; (ii) bare quoted phrases "intention de convenir" with Birague/Saluces, and "parlandone il signor" with Birago/Saluzzo, no cipher keyword | queued; does not block the classes below (CLAUDE.md verifier template). |
+
+## 3. Classification
+
+| item | class | prior plaintext | prior decipherment | evidence | confidence | key source |
+|---|---|---|---|---|---|---|
+| **no.24, f.36-37** | **N0** | yes -- on the leaf, in the clerk's interlinear hand (manuscript, not print) | **yes**: the period decipherment written over every cipher passage (seen by this verifier on all three leaves), recorded in print as "avec chiffre et déchiffrement" in the BnF *Catalogue des manuscrits français, Ancien fonds* t. II (1874), fr.3252 no.24 | the leaf itself + the 1874 printed catalogue | high | our decode: `published` (Tomokiyo's Ceppo-Nevers key, from fr.4702); the 10 C tokens: `period` (the clerk's gloss); text: known (on the leaf) |
+| **no.77, f.117r** | **N3** (firm portion only: S 190 of 279 tokens, 68%; not a licensed reading -- judge FAIL) | none located | none located (catalogue says "avec chiffre" only; no gloss on the leaf) | search above: recipient's 1665 edition both parts, printed BnF catalogue, Tomokiyo, both solver repos, IA/GB/OpenAlex/CrossRef/HAL phrase and name searches | medium (JSTOR queued; Italian/Turin archives and the Charles IX / Catherine registers for Saluces in Mar 1572 not covered; HathiTrust full text unreachable) | `published` (Tomokiyo's 1572 Nevers-Birago key); the transcription corrections are ours, the key is not |
+| **no.30, f.47r** | **N3** (firm portion only: S 6 of 771 tokens, 0.8%, six isolated letters o -- no readable text) | none located | none located (catalogue "avec chiffre" only; no gloss) | same search | medium; the class records a search result only -- there is no text to describe | `published` (Tomokiyo's Ceppo-Nevers key) |
+
+**Safe sentences.**
+- no.24: "Birago's letter of 5 April 1571 (BnF fr.3252 ff.36-37) was deciphered at the time: a clerk wrote the plaintext letter by letter
+  over every cipher passage, and the BnF's 1874 printed catalogue records it as 'avec chiffre et déchiffrement'. We have read 10 of its
+  947 cipher signs against that gloss; the rest of the gloss is not yet transcribed."
+- no.77: "Under Tomokiyo's published 1572 key, about two thirds of the 279 cipher signs of Birago's letter of 13 March 1572 (BnF fr.3252
+  f.117r) are read at grade S, giving French fragments about Carmagnola and an agreement to be favoured; the text still fails a language
+  judge. No prior decipherment was located (search log in AUDIT.md, 4 Oct 2026)."
+- no.30: "No decipherment of Birago's letter of 26 April 1571 (BnF fr.3252 f.47r) was located; we have no reading of it beyond six
+  isolated letters."
+
+**Unsafe sentences** (do not use): "first reading of Birago's 1572 letter" / "previously unread" (rule 10: N3, and the f.117r text fails the
+judge); "we deciphered Birago's 5 April 1571 letter" (N0: the clerk did, in 1571, and our 10 C come from his gloss); "the f.47r letter is
+read" (6 of 771 signs).
+
+## 4. Postmortem
+
+- **Found:** the printed BnF catalogue (1874, t. II, fr.3252 entry) had not been cited by any earlier pass; it independently confirms the
+  N0 basis for no.24 ("avec chiffre et déchiffrement") and that nos.30, 67 and 77 carry no catalogued decipherment. Added to the search
+  log here; NOTES.md is not edited (append-only AUDIT; a later NOTES pass may cite it).
+- **Over-claim check:** NOTES.md, PROGRESS.tsv rows (f.117, f.36, f.47) and NEAR.md row searched for new/first/unread/unpublished wording
+  about the text: none found ("unread" in NOTES refers to unread gloss signs, accurate). F36-READ already says the letter is a period
+  decipherment. No correction needed.
+- **Found, not applied (for the orchestrator):** (1) the PROGRESS.tsv f.36 row should carry `text: known` / key `period` for the C tokens
+  when status.json is updated; (2) NEAR.md's birago row describes f.47r and f.117r but not that f.36 is N0 -- its value as a known-answer
+  witness, not as a result, should be stated there if the row is next edited.
+- Requests this session: be-api.us.archive.org 27 (8 via print_check + 19 fts snippet queries), archive.org 6 (advancedsearch 1,
+  metadata 4, `_djvu.txt` 1), gallica.bnf.fr 6 (ContentSearch), www.googleapis.com 13 (8 via print_check, 2 of them HTTP 503; 5 direct),
+  api.openalex.org 11, api.crossref.org 9, api.archives-ouvertes.fr 1, api.semanticscholar.org 1, www.treccani.it 1, github.com 2 clones.
+  Subagents: 0.
+- Queues: `SECOND-OPINIONS-QUEUE.tsv` row SO-BIR3252-117-47 (f.117r and f.47r, N3; prompt `second-opinions/PROMPT-chatgpt-f117-f47.md`);
+  none for no.24 (N0). `JSTOR-QUEUE.tsv` 4 rows as above. PROGRESS.tsv audit-1 column set to x on the f.117, f.36 and f.47 rows from
+  this section. `phrases.txt` added (the eight phrases of family (e)).

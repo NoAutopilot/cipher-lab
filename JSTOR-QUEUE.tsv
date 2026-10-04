@@ -217,3 +217,7 @@ ciphers/pro3055-clinton-1779	"supposed to have sailed about the 3d May"	2026-10-
 ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("marzo 1572" OR "mars 1572" OR "luglio 1572" OR "juillet 1572" OR "Pinerolo" OR "Carmagnola") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
 ciphers/nevers-birago-fr3251-1572	"possendone dir male"	2026-10-04	queued	
 ciphers/nevers-birago-fr3251-1572	"Bellagarda venne davanti"	2026-10-04	queued	
+ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("aprile 1571" OR "avril 1571") AND ("Saluzzo" OR "Saluces") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
+ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("mars 1572" OR "marzo 1572") AND ("Carmagnola" OR "Carmagnole") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
+ciphers/birago-fr3252-1571-72	"intention de convenir" AND ("Birague" OR "Saluces")	2026-10-04	queued	
+ciphers/birago-fr3252-1571-72	"parlandone il signor" AND ("Birago" OR "Saluzzo")	2026-10-04	queued	
