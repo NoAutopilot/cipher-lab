@@ -1,4 +1,4 @@
 RUN1-PAG Gibbs segmentation pass (PREREG_seg2.md); tools/gibbs_align.py defaults {'iters': 200, 'alpha': 1.0, 'max_chunk': 4, 'ins': 0.02, 'len_weights': (0.05, 0.3, 0.4, 0.18, 0.07), 't0': 3.0}
-step 1 matched known-answer control (10 synthetic seeds on the real code runs): held-out L1->L2 mean 0.808 (min 0.548), L2->L1 mean 0.731 (min 0.429); planted-value recovery (pooled, codes n>=2) mean 0.980 -> CONTROL PASS
-step 2 target: L1->L2 110/211 = 0.521 vs shuffle mean 0.015 p95 0.066; L2->L1 47/69 = 0.681 vs shuffle mean 0.016 p95 0.067 -> PASS; codes supported both directions 18 vs shuffle mean 0.2 p95 1 -> above
+step 1 matched known-answer control (10 synthetic seeds on the real code runs): held-out L1->L2 mean 0.810 (min 0.548), L2->L1 mean 0.747 (min 0.429); planted-value recovery (pooled, codes n>=2) mean 0.974 -> CONTROL PASS
+step 2 target: L1->L2 106/210 = 0.505 vs shuffle mean 0.015 p95 0.060; L2->L1 47/65 = 0.723 vs shuffle mean 0.016 p95 0.071 -> PASS; codes supported both directions 18 vs shuffle mean 0.2 p95 1 -> above
 homophony read-off: 18 codes -> 18 distinct values; values with >1 code: none

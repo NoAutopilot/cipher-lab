@@ -1221,7 +1221,7 @@ Read so far: token level H 50, S 79, M 363, I 7, U 6 of 505 (firm 129), tools/de
 - [x] retry: tools/decode_key.py --check exit 0 after N4-PAG126: H 50 S 79 M 363 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: rule-7 re-derivation of the N4-PAG65 + N4-PAG213 + N4-PAG126 state (LANE-NEAR4 briefs it), ~$2
 
-## A3V3-PAGR (4 Oct 2026, 06:35-07:0x UTC): per-token rulings on the A3V3-PAGA findings
+## A3V3-PAGR (4 Oct 2026, 06:35-06:5x UTC): per-token rulings on the A3V3-PAGA findings
 
 Brief: `.claude/briefs/runs/2026-10-04-acct3-a3v3-wave2.md` section A3V3-PAGR (LANE-A3V3, account 3). Disk only: no network request,
 no vision call, no subagent. Pre-registration `align/PREREG_pagr.md`, pushed as 161fc920 before any run.
@@ -1256,6 +1256,12 @@ no vision call, no subagent. Pre-registration `align/PREREG_pagr.md`, pushed as 
 - Pre-existing, not from this job: `align/build_votes.py --check` (STALE exceptions.tsv) and `align/make_key.py --check` (exit 1) both
   fail at 161fc920 already (checked in a clean worktree): the settle7 rows and key edits since RUN2-PAG were made after those
   generators; they are no longer the source of truth for exceptions.tsv/key.tsv.
+- **Held-out Gibbs pass re-run on the corrected pairs** (`align/gibbs_pass.py`, PREREG_seg2.md settings unchanged; its --check was
+  STALE after the gloss fix): control PASS (0.810/0.747, recovery 0.974; was 0.808/0.731, 0.980); target L1->L2 106/210 = 0.505 vs
+  shuffle p95 0.060, L2->L1 47/65 = 0.723 vs p95 0.071 -> **PASS** (was 0.521/0.681); 18 codes both directions vs p95 1 (unchanged).
+  gibbs_codes.tsv: **97 en is no longer held in both letters**, 240 ion now is (already H in key.tsv, nothing to promote). settle7.py's
+  GIBBS value for 97 cites gibbs_codes.tsv; its 2 S tokens (still own-chunk en under settle7's rule) now rest on a per-letter value only,
+  like 65/116/213 -- flagged for the lane, not changed here (Usage 7).
 - **rule-7 owed after A3V3-PAGR**: a fresh session re-derives this state (not done here, per the brief).
 - Requests: none. Subagents: none.
 
