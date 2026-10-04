@@ -737,3 +737,62 @@ Verdict: keep going: 6 internal gaps; cheapest next: pre-registered basin test o
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## N8-NOX basin test (4 Oct 2026)
+LANE-NEAR8 worker N8-NOX (account 2), 16:40-16:5x UTC by `date -u`; brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave2.md`.
+Pre-registered in `sorter/owner-sort-2026-10-04/aln/PREREG-BASIN.md` (commit 29a256ef, 16:42 UTC, before any statistic). Script
+`aln/basin.py` (imports nox_aln / confirm / nxaln / stream_align unchanged); keys `aln/results/basin_keys.json` (79 learned keys),
+numbers `aln/results/basin_summary.json`; `python3 aln/basin.py check` exits 0 (six locked keys re-learned identically). Disk only:
+requests 0, subagents 0. No reading is claimed; every value stays grade M; key.tsv unchanged.
+
+**Step 1, basin (PASS).** The six locked runs (alt 04, 05, 06, 08, 12, 14; held-out 0.53-0.63) learn largely one key: mean pairwise
+agreement over shared piles (102-106 per pair) **S = 0.601** (token-weighted 0.730; with the k014->k077 target as a 7th run 0.617;
+pairs 0.40-0.91). Matched nulls, same N of six runs and same inventory family: **N1 non-locking** (every 6-subset of the 12 runs that
+failed NOX-CONFIRM's gate, 924 subsets) mean 0.207, **p99 0.273** (max 0.285); **N2 shuffled Dupuy** (the six locked merges re-learned
+against word-shuffled Dupuy 221R-226R, 10 seeds) mean 0.294, **max 0.384**. S beats both -> PASS. In plain words: the lock-on is a
+property of the c510-513 stream against Dupuy 221R-226R, not of any one merge; the locked runs converge on a common key, the failing
+runs and the shuffled-text runs do not.
+
+**Step 2, key_learned vs key.tsv via the c262 bridge (FAIL on the registered rule).** The only bridge from atlas piles to Tomokiyo's
+key is `run2/nxatl/cluster_provisional_names.tsv` (c262 tile majority under key.tsv, itself grade M). 17 piles qualify; the locked
+consensus (>= 4 of 6 runs) exists on 11, and agrees with the provisional letter on **6 of 11, K = 0.545**: k022 e, k053 s, k060 l,
+k073 t, k102 d, k115 a agree; k021 d (prov. x), k045 x (f), k071 m (e), k086 r (y), k117 e (n) do not. Null (a) value permutation
+p99 0.364 -> passed; null (b) non-locking 6-subsets' consensus p99 **1.000** (mean 0.701) -> not passed, so FAIL as registered.
+Caveat on null (b), found after scoring and not used to override it: the non-locking subsets reach a >= 4-of-6 majority on only
+2.2 of the 17 piles on average (0-6; 10 subsets none), mostly the high-frequency piles k115 a, k053 s, k022 e, so their share is a
+ratio over 1-3 piles and sits near 1.0 by small N. Counted as hits instead (exploratory): locked 6, non-locking mean 1.3, max 3. The
+registered null had no power at this consensus size (the rule-3 "control that cannot fail differently" shape in a milder form); this
+step is "judge cannot decide at 11 piles", not a negative on the basin's key.
+
+**Verdict.** Step 1 PASS: the basin has one common key (S 0.601 vs N1 p99 0.273, N2 max 0.384). Step 2 FAIL as registered (K 0.545
+vs permutation p99 0.364 passed, non-locking p99 1.000 not passed), with a null that was degenerate at this N. Nothing promoted;
+every value grade M. One-line suggestion (not done): re-register step 2 with a count-based statistic (hits among piles where the
+locked consensus exists, null = the same count for the non-locking runs' own keys taken one run at a time, and a shuffled-Dupuy arm),
+or widen the bridge by placing c262 tiles under the owner's labels so more than 17 piles carry a key.tsv value, ~$1.
+
+## Remaining gaps (N8-NOX, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX step 1 PASS, S 0.601 vs nulls 0.273/0.384); 0 open leaves decoded
+- Basin key not yet tied to Tomokiyo's key: N8-NOX step 2 FAIL as registered (6/11 piles agree, permutation p99 passed, non-locking null degenerate at 1-3 piles) - blocker: not-attempted; next: re-registered count-based step 2 with a shuffled-Dupuy arm, or a wider c262 bridge under the owner's labels, ~$1
+- Decode of a leaf not aligned to Dupuy with the basin consensus key not run - blocker: not-attempted; next: after the key is tied to key.tsv, decode c511 or c262 with the consensus key and judge it, ~$2
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; next: one native look per pair, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (N8-NOX, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [ ] key tie: basin consensus vs key.tsv; planned step: re-registered count-based step 2 or a wider c262 bridge
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: pre-registered confirmation of k014->k077 (NOX-CONFIRM, FAIL as specific) and basin test (N8-NOX, PASS)
+Verdict: keep going: 6 internal gaps; cheapest next: re-registered count-based key tie of the basin consensus to key.tsv, ~$1
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (N8-NOX):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
