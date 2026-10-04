@@ -1,0 +1,8 @@
+{"source": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k", "date": "4 Oct 2026", "by": "SEURE-DEC",
+ "files": {
+  "c86R_top.jpg": "f86/4200,150,3500,800/2200,/0/native.jpg  (fo. 85r lines 1-5, Potter's sentence in clear)",
+  "c85_corner.jpg": "f85/6400,0,1533,700/1000,/0/native.jpg  (fo. 84, old 219)",
+  "c86_corner.jpg": "f86/6400,0,1533,700/1000,/0/native.jpg  (fo. 85)",
+  "c87_corner.jpg": "f87/6800,0,1133,700/full/0/native.jpg  (fo. 87, old 221 struck)",
+  "c88_corner.jpg": "f88/6400,0,1533,700/1000,/0/native.jpg  (fo. 88, old 22? struck)"},
+ "viewed_not_kept": ["f84..f88 full/2000,", "f86/900,1400,3000,1400/1800, (fo. 84v cipher, no interlinear)"]}

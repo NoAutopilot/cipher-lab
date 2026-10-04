@@ -625,3 +625,69 @@ same decipher's key before any further cryptanalysis.
 
 Intake gate after this pass (pasted, 4 Oct 2026): `python3 tools/intake_gate_check.py fr3151-seure-1558` ->
 `fr3151-seure-1558: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+## SEURE-DEC: where is Potter's "decipher"? (account 3, 4 Oct 2026, 18:39-18:5x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-seure-dec.md`. No cryptanalysis, no key rebuild. Gallica 10 requests
+(IIIF image API, descriptive UA, >=2 s apart, all HTTP 200): canvases 84-88 whole at 2000 px, top-right corners of
+canvases 85/86/87/88 (folio numbers), canvas 86 left-leaf mid cipher block at 1800 px, canvas 86 right-leaf top lines
+at 2200 px. Evidence crops kept in `images/dec/` (412 KB).
+
+**Folios pinned by eye** (modern foliation, ink, top right of each right leaf; struck older foliation beside it):
+c84R = fo. 83 (blank but for show-through and an endorsement), **c85R = fo. 84** (old 219), **c86R = fo. 85** (no old
+number seen), **c87R = fo. 87** (old 221 struck), c88R = fo. 88 (old 22[4?] struck). Each canvas is an opening, so
+fo. Nv = canvas N+2 left leaf: 84r c85R, 84v c86L, 85r c86R, 85v c87L, 87r c87R. **The modern foliation skips 86**;
+the old foliation runs 219 (84) -> 221 (87) with no gap, so on this evidence fo. 86 is a numbering slip, not a missing
+leaf (M: old number on fo. 85 not read). `tools/gallica_folio.py` anchors: 85=84r, 86=85r, 87=87r (not a linear map
+at the 85/87 skip).
+So Potter's fos 84-87 = item 44 exactly (docket c85L "Autre lettre du dict commandeur de Seure au mesme Roy"; c88L is the
+next item's docket, Guise to Henri II).
+
+**What the leaves carry.** fo. 84r: 21 lines clear ("Sire, Je vous escrivis par ma derniere ... d'octobre ... Anthoine
+Galuan"), then ~16 lines cipher to the foot; fo. 84v: ~37 lines cipher, then 7 lines clear ("La Royne Marie laissa plus de
+quatre cens mille escuz ..."); fo. 85r: ~32 lines clear; fo. 85v: ~17 lines clear; fo. 87r: 4 lines clear ("Diego
+Dazevedo gentilhomme Castellan ..."), ~18 lines cipher, 2 lines clear, the closing formula "De Lisbonne le [xij]e de
+decembre 1558", ~13 lines cipher postscript, signature. **No interlinear decipher** over any cipher line (the 1800 px
+crop of fo. 84v shows lines packed with no writing between them, and no lighter or later hand), **no marginal
+decipher** (margins carry only paragraph marks), and no separate decipher sheet among canvases 84-88.
+
+**Potter's quoted sentence is clear text in the original, not a decipher.** fo. 85r lines 1-5 (c86R, crop
+`images/dec/c86R_top.jpg`, read by eye at M): "Et par la [?] v[ost]re Ma[jes]te poult assez evidemment congnoistre
+combien, suyvant ce que je vous en ay aultresfoys escript, il seroit aisé d'oster a v[ost]re ennemy ce grant
+soullaigement qu'il a de ce monde de dela, ou p[our] myeulx dire tout le nerf et tout le moyen qu'il a desormais de
+maintenir la guerre contre vous." Same secretary hand as the rest of the letter, written in the line, not over cipher. This
+is Potter's printed "decipher" word for word. It follows the cipher block of fo. 84r-v after 7 clear lines, so it is not
+even the line that the cipher block ends on.
+
+**Item 44 as a deciphered copy of item 43?** Not on this evidence: 44 is itself a signed original with its own cipher
+blocks (fo. 84r-v, 87r) and its own cipher postscript, which GAPS102 found not sign-identical to 43's (~370 vs ~530
+signs). Gross structure does track: both open with the same clear "Sire, Je vous escrivis ... d'octobre" line, both close
+with the same formula and date, and 43's ~4 pages of continuous cipher (f81R-f83L) are of the order of 44's 5 written
+pages of mixed clear and cipher. That fits "the same dispatch sent twice, 43 enciphered throughout, 44 partly in
+clear", which is SEURE-KP's span hypothesis. It makes 44's clear passages candidate plaintext for parts of 43. It does
+not make 44 a decipher, and it says nothing about what 44's own cipher blocks say.
+
+**Result.** No period decipher is located on fos 84-87 (canvases 85-87) or on the neighbouring canvases 84 and 88. Potter's
+"in cipher, with decipher" is best read as "partly in cipher, partly in clear". The sentence he prints is from the clear
+part. **FLAG for the orchestrator/verifier:** SEURE-WEB's `found-solved` rests on that phrase. On the leaves, no cipher
+passage of fo. 84-87 is shown deciphered anywhere. The status line is left as written; this worker does not set status.
+Serrão 1969 and Falgairolle 1896 may still print a decipherment from another witness (the St Petersburg / fr. 6638
+copies), so the question stays open until one is opened. Not found: any interlinear, marginal or separate decipher on canvases 84-88;
+any old foliation on fo. 85.
+
+## Remaining gaps (SEURE-DEC, 4 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); diagnostic reads only (kp/, f75L); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; no decipher on fos 84-87 (SEURE-DEC: canvases 84-88 viewed, Potter's sentence is clear text on fo. 85r); 44-clear vs 43-cipher alignment a non-test at err_2reader 0.484 (N8-SEU); next: reconcile f81R readers A/B to err < ~0.24 and re-run kp/nom_test.py unchanged, ~$3
+- printed decipherment, if any - blocker: not-attempted; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened, no LOCAL-QUEUE row yet (SEURE-WEB); they may print the letters from the St Petersburg / fr. 6638 copies; next: orchestrator queues a LOCAL-QUEUE row for both, ~$0.3
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (SEURE-DEC, 4 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [ ] clear-pages: 44's clear text vs 43's cipher, letter and nomenclator models both non-tests at err_2reader 0.484; needs a lower-error f81R read
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC); Potter's "decipher" sentence is clear text on fo. 85r
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 2 internal gaps; cheapest next: reconcile f81R readers A/B to err < ~0.24, then re-run kp/nom_test.py unchanged, ~$3
