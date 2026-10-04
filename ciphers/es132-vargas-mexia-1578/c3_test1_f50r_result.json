@@ -40,8 +40,8 @@
   }
  },
  "target": {
-  "err_2reader": "184/460",
-  "err_2reader_frac": 0.4,
+  "err_2reader": "72/460",
+  "err_2reader_frac": 0.157,
   "passA": {
    "letters": 864,
    "S_b": -1.219,
@@ -55,26 +55,26 @@
    "armc1_shuffled_median_judge_pass": false
   },
   "passB": {
-   "letters": 679,
-   "S_b": -1.77,
-   "order_p99": -1.773,
-   "order_median": -1.861,
-   "key_p99": -1.95,
+   "letters": 849,
+   "S_b": -1.259,
+   "order_p99": -1.476,
+   "order_median": -1.535,
+   "key_p99": -1.869,
    "gate_b": true,
-   "judge_null_p99": -2.001,
-   "judge_real_p05": -0.788,
+   "judge_null_p99": -1.996,
+   "judge_real_p05": -0.784,
    "judge_pass": false,
    "armc1_shuffled_median_judge_pass": false
   },
   "reconciled": {
-   "letters": 865,
-   "S_b": -1.227,
-   "order_p99": -1.445,
-   "order_median": -1.499,
-   "key_p99": -1.842,
+   "letters": 870,
+   "S_b": -1.214,
+   "order_p99": -1.435,
+   "order_median": -1.488,
+   "key_p99": -1.834,
    "gate_b": true,
-   "judge_null_p99": -1.989,
-   "judge_real_p05": -0.778,
+   "judge_null_p99": -2.008,
+   "judge_real_p05": -0.779,
    "judge_pass": false,
    "armc1_shuffled_median_judge_pass": false
   }
@@ -82,13 +82,13 @@
  "grades_reconciled": {
   "H": 0,
   "C": 0,
-  "S": 255,
-  "M": 167,
+  "S": 364,
+  "M": 58,
   "I": 0,
   "U": 30
  },
  "dropped_shape_tokens": {
-  "marks": 15,
+  "marks": 17,
   "clear": 4
  }
 }

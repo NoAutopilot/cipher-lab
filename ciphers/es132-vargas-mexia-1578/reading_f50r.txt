@@ -1,6 +1,6 @@
-L01	ro do [V] c [H?] [lρ] [l] do xe xe xe x
-L02	y x do p y par ti [71] lar [.?] me [124] por
-L03	la de ps [.?] y qs [.?] he ui to lo que pa sas te en a que lar lar ga
+L01	ro do [V] c [H] [lρ] [l] do xe xe xe x
+L02	y x do p y par ti [71] lar [.?] me [124?] por
+L03	la de ps [.?] y qs [.?] he ui to lo que pa sas tes en a que lar lar ga
 L04	pra ti ca con la d ma ee so bre lo de [61?] que de a lan son
 L05	y de s pa es con el se cre ta u o ui le fo y cer ca de a que la car
 L06	ta de de tan ge s que os mos tro de par te de sos di es y lo
@@ -9,16 +9,16 @@ L08	uer tir me con la par ti [71] la u da d que lo a ue ys he co
 L09	con que me he ha la do pra ue u do pa ta lo que el [{bul}] de [{pel}_]
 L10	ha tra ta do co mi [114ρ?] de par te de sa di so bre la mi ma
 L11	ga te u as el tl me ha ue u do [55] a han brar y di ca me que
-L12	el di cri ti a u si mo y [67?] ma dre han he co to dos las
-L13	[{xom}] s po si [30_.?] i pa ta di ur [.?] tir a ma s de a lan son
-L14	de la co sa de [{mil}] y de sa y da a la y la di u [71@l?] ta de
+L12	el di cri ti a u si mo y [67] ma dre han he co to dos las
+L13	[{xom}] s po si [30_.] i pa ta di ur [.?] tir a ma s de a lan son
+L14	de las co sa de [{mil}] y de sa y da a la y la di u [71@l?] ta de
 L15	que ens to la la uan pe ta que ha u an to do quan to en si [213] se
 L16	pa ta de s ui ar le y pa ta que se ui e se que e ta co sa m y
-L17	con tra sa uo lan ta d y por a ti s a la tor can har tas [201]
+L17	con tra sa uo lan ta d y por a ti s a lar tor can har tas [201]
 L18	la bra y ta zo he s di zi en do que de tal ma h ta si en te el
-L19	di lo que sa hr ma ho ha ze que es ta de zer mi ha do t an do
+L19	di lo que sa her ma ho ha ze que es ta de zer mi ha do t an do
 L20	ho a pra ue cen to dos los [{xom}] [?] de ne go ci a ci on pa t a par
-L21	tar le de la de tr mi ha ci on en que es ta de u sar de l me di o
+L21	tar le de la de ter mi ha ci on en que es ta de u sar de l me di o
 L22	de la q er za pa ta el fe me di o de lo [67] pon ga en u es go
 L23	las co sas de sa [68] de lo t al an te ue ee bi en que se le ha de
 L24	se gir [161] co da no [?]
