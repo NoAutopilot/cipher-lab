@@ -3982,5 +3982,6 @@ Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/
 | A3V2-C1161A1 | clair1161-avis-flandre-1688 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | live | |
 | A3V2-THUR275 | thurloe-printed JUNK_LINE 275 | session_01EnvJP6tAmF4zMw7g7NoLsn | 1.5 | live | |
 | A3V2-MERCY15 | espagnol142-mercy-1648 15 = z at M | session_01W9jPft6xA3NHCebgaKvxYN | 1.5 | live | |
+| A3V2-SANG | sanguszkow-mniszech-dunin-1714 R7524 full-size re-test | session_01FgJFpdBRqoNqjBg6xGDkHj | 1.5 | live | |
 
 Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
