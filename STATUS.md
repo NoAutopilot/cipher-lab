@@ -3895,3 +3895,35 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/
 | A3V-VROY2 | intercepted-royalist-1646 2nd audit | session_013TmdA7AJpd7GBMmJc8XT79 | 4 | live | |
 
 Open: wave 2 (Clinton, Morillo 2nd audits; first audits Paget, f.144/f.168, fr3252 f.117/f.36/f.47, NV-01), then NEXT-STEPS runnable S rows.
+
+## LANE NEAR3 handoff (session_01Au8dSL1TXFoCk5P5opEMVv, account 2), 4 October 2026 (closed 03:0x UTC: budget spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near3-run1.md` (worker briefs `2026-10-04-ytbiz-near3-wave1/2/3.md`, `-verifier-hellen.md`).
+13 workers, USD 57.82 (ledgered), orchestrator ~7.3; lane ~65 (over the ~60 lane figure by ~5: c188L re-crop and the verifier). All archived; no check-in armed. Nothing called new or read beyond
+grade; both near rows stay `partial`.
+- **hellen-frederick-1752.** HEL3: 63 Add MS 32276 DECODE key records listed, 25 opened; only R4369 names Hellen. HEL4: R4372 (f.48, same
+  form/hand, codes 1-800) transcribed (err 0.052/0.113) and pre-registered-tested on R1953: FAIL all 4 attributions at power 1.00 (LR100 uni
+  -10.035 vs shuffle -10.137, p 0.375), like R4370. R4369 reading (H 152 S 304 M 16 U 374) unchanged. VHEL (verifier): AUDIT.md **N3**, key
+  `period`, partial; SO-HEL-R1953 + 4 JSTOR rows queued; Berlin (GStA PK) unreachable. **Next:** NA Fagel inv. 5177 (De Leeuw n.32) holds
+  English/Lyonet decipherments of Hellen letters No 1-37 (30 Oct-28 Dec 1751) -- if those carry cipher beside plain, a known-plaintext
+  recovery of codes 1-800 (interlinear/C grade); check the scans and whether the ciphertexts survive (DECODE or NA). R4376 P3 (f.56, 1754,
+  French 1-500, la Haye) is the candidate for R1049 (1756).
+- **clair1161-avis-flandre-1688.** C1RD rule 7 PASS 924/924. C1LOOSE looser gloss repair pre-registered FAIL (c185R judge -1.146 vs best of 10
+  shuffled-gloss -1.130); the key-cost alignment can only confirm key values; strict repair's 10 moved signs have no gloss support.
+  C1SPLIT: q/ls and S splits both FAIL vs placebo, kept merged. Four more leaves transcribed: c186L 246 signs (err 0.052), c187L 713 (0.094),
+  c187R 740 (0.076), c188L 752 (0.181, sloped lines; focus.tsv for the sorter; c187R flagged for the same slope check). C1POOL: held-out test **PASS** (pre-registered): key.tsv, fitted only on c185R+c186R, on the 4 new leaves (2,467 signs)
+  reads fr16 -1.268 / cover 0.897 vs shuffled-key max -1.425 / 0.863 and order-shuffled p95 -1.581 / 0.816 (without c188L -1.274, PASS);
+  the judge itself still FAILs (real_p05 -0.910). Pooled 5-seed re-anneal FAIL (gloss 0.612 vs shuffled max 0.265, but c185R judge
+  -1.225 < -1.128): key.tsv unchanged. ciphertext.tsv merged (3,391 signs, 57 types), reading regenerated (C 360 S 2670 M 343 U 37,
+  --check exit 0, full judge -1.232 FAIL); 7 reports folded into NOTES.md; folder shrunk to 24.6 MB. **Next:** update the spec's stream
+  to the merged 3,391 signs, then a rule-7 fresh re-derivation (~3; not run, lane budget spent); key_crossmatch.py against KEY-OFFICES
+  (~2); c188L slope-crop re-pass or the sorter on its focus.tsv; the gloss-alignment key-rebuild step is [retired] (strict, loose,
+  interlinear_align).
+- thurloe-printed (THUR): one-vote M boundary test pre-registered FAIL on coverage (48.8% vs 60%), OCR boundary instrument retired; next: the
+  JUNK_LINE fix for the 275 running-head leak (~1).
+- taurello-roma-1527 (TAUR): Sanuto Diarii XLV 0 Taurello/Torello hits (controls hit); vol 46 id and Pastor appendix unmapped; blocked.
+  Over-volume note: ~400 be-api requests.
+- Brief lessons: (1) four parallel transcription jobs on one 20 MB folder needed a per-job MB cap -- iiif_lines' own size guard downscaled
+  committed src_* files once (reverted); (2) iiif_lines level bands lose sloped lines' right halves (c188L) -- a slope option on the shared
+  tool would help (Usage 8); (3) parallel jobs on one target wrote to reports/<JOB>.md, not NOTES.md, and the lane folded them: no
+  rebase conflicts.
