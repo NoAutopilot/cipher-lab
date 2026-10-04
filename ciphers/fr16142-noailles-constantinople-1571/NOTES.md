@@ -712,7 +712,7 @@ same piles (pairwise agreement of `decode(counts)` vs a matched null)? If they d
 of any one merge, and its common key is the thing to grade; ~$1.
 
 ## Remaining gaps (NOX-CONFIRM, 4 Oct 2026)
-Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner locks onto Dupuy 221R-226R on owner labels + k014->k077 (held-out 0.630, all nulls passed, exploratory); 0 open leaves decoded
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner locks onto Dupuy 221R-226R on owner labels + k014->k077 (held-out 0.630, all nulls passed at 3 fresh seeds; NOX-CONFIRM: not specific to that merge, 8/20 alternatives also lock on); 0 open leaves decoded
 - Lock-on basin not characterised: NOX-CONFIRM found it is not specific to k014->k077 (8/20 nearest single merges also lock on, 6 at 0.53-0.63, same path end ~5,734) - blocker: not-attempted; next: pre-registered basin test (do the six locked runs learn one common key vs a matched null?), ~$1; and the owner's look at k014 vs k077 (and k017) on the page
 - Key from the locked-on alignment not extracted or graded - blocker: not-attempted; next: after the basin test, key_learned from `aln/results/full_pair_k014_k077_counts.tsv` vs key.tsv (Tomokiyo) agreement, then decode a leaf not aligned to Dupuy, ~$2
 - c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
