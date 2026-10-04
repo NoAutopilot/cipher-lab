@@ -1,0 +1,667 @@
+    An early French digit cipher: deciphering a letter from the King of
+                  France to the Duke of Nevers (1592)
+             Camille Desenclos                                         George Lasry
+     University of Picardie Jules-Verne                           The DECRYPT Project
+      camille.desenclos@u-picardie.fr                             george.lasry@gmail.com
+
+Abstract                                                   It would certainly have been possible to
+                                                        directly compare this letter with the cipher tables
+We deciphered a single letter written in 1592 by        that are preserved in the BnF collections.
+Henry IV, King of France, to Louis de Gonzague,         However, the use of digits makes comparisons
+Duke of Nevers, held in the Bibliothèque Nationale de   more complex, or at least more time-consuming
+France (BnF). The ciphertext mostly consists of         than symbols which are easier to spot in cipher
+contiguous digits, and demonstrates an early use of     tables. Another approach has therefore been
+digit ciphers in 16th-century France. In this letter,
+Henri IV exposes some parts of his current military
+                                                        chosen: deciphering the letter with cryptanalytic
+strategy against the Catholic League. After             methods (and thus contributing to the DECRYPT
+deciphering the letter, we were able to locate the      project), and then comparing the reconstructed
+original cipher table in another BnF manuscript,        key with the preserved tables. This approach also
+illustrating how codebreaking may assist historical     has the advantage of questioning the use of
+research both to reconstruct the content of encrypted   cipher keys: for instance, are all the characters
+letters and to identify anonymous cipher tables.        well represented in the table? As shown in
+                                                        Pierrot et al. (2023), the decryption of letters and,
+1     Introduction                                      more broadly, the collaboration between
+Louis de Gonzague, Duke of Nevers played an             cryptographers and historians not only gives
+important role in the French early modern               access to the content of a letter, but also provides
+history, particularly because of his political and      a better understanding of how a cipher works and
+diplomatic activity during the French Wars of           was used in practice and contributes to the
+Religion (Boltanski, 2006). Moreover, he was            consolidation of the development and application
+one of the main players in cryptographic practice       of modern codebreaking techniques. This paper
+in the last two decades of the 16th century:            describes each stage of this collaborative effort.
+dozens of manuscripts (now preserved at the             In Section 2, we present the letter, its writer and
+BnF) contain encrypted letters addressed to or          recipient and their correspondence. In Section 3,
+written by the Duke of Nevers, and one of them          we describe how we deciphered the letter, and in
+(BnF, fr. 3995) even contains 68 cipher tables          Section 4, we compare the reconstructed key
+which were used by him.                                 with the original cipher table which we later
+                                                        found in the BnF. In Section 5, we present the
+While the letters of the Duke of Nevers are well        deciphered letter and the analysis of its contents.
+known to historians (Boltanski, 2006; Le Person,        We summarize our findings in Section 6.
+2002; Le Roux, 2000; Wolfe, 1988), and the
+majority of these letters has been deciphered as
+                                                        2     A sensitive correspondence at the
+soon as they were received by the recipient (see
+for instance the interlinear decipherment in the             end of the French Religion Wars
+letter from Henri IV to the Duke of Nevers (19          Since August 1589 and Henri IV’s accession to
+April 1591) at BnF, fr. 3615, fol. 52), one letter      the throne, many noblemen rallied the new King,
+written by Henri IV to the Duke of Nevers stands        while the Catholic League, with the support of
+out in this corpus. Not only hasn’t been this letter    Spain, kept fighting and denying any acceptance
+deciphered (or at least its original decipherment       of Henri IV as the legitimate King of France. In
+hasn’t been preserved along with the letter) but,       September 1592, Henri IV whom many cities
+above all, the cipher did not match the one used        including Paris still refused to surrender, was
+in the other encrypted letters from the French          thus campaigning against the Catholic League’s
+King to the Duke.                                       armies. In 1591, after reconquering Noyon,
+among other cities, Henri IV tried from                         letter, allows us to qualify it as a partial
+November 1591 to April 1592 to besiege Rouen,                   duplicate: the same letter has already been sent to
+without any success, due to the help of Spanish                 the Duke of Nevers through another way.
+armies led by the Duke of Parma, governor of the                However, when sending it again, a postscript has
+Spanish Netherlands. However, the situation                     been added to it, making our letter both a
+started improving for the new King as the royal                 duplicate and a unique letter. As of today, the
+armies gained some successes both East and                      initial version of this duplicate hasn’t been
+South of the Kingdom. The King was then in                      found. On the contrary, we have been able to
+Noyon and, notably, tried to prevent any Spanish                locate two copies of the first letter (which
+assistance to the League’s armies, in Picardy (led              doesn’t contain the postscript) in BnF, fr. 3615,
+by the Duke of Aumale) and in Brittany (led by                  fol. 89 and in BnF, fr. 4003, fol. 10-11. The first
+the Duke of Mercœur).                                           copy is only identified as a “12 September” letter
+                                                                and is, moreover, preserved along letters from
+To contribute to this reconquest of his own                     1591. In addition, a copy, not of the whole
+Kingdom, Henri IV could rely, among others, on                  duplicate, but only of the postscript, has been
+the Duke of Nevers whose catholicity however                    found in BnF, fr. 4003, fol. 172.
+made him long hesitant between his faith (and
+rallying the League) and his loyalty to the French              The first page of the letter was almost fully
+Monarchy. Despite some acquaintances with the                   encrypted, without any decipherment, whereas
+League in the late 1580’s, Nevers didn’t join the               the second page was surprisingly in cleartext. If
+League, but he didn’t rally immediately, at least               the use of ciphers for the first page makes
+in an official way, to the new King either                      perfectly sense as detailed above (neither the
+(Boltanski, 2006). In May 1590, Nevers finally                  sickness of the French King nor the military
+rallied to Henri IV and acted for him in three                  strategy can be broadly known by the Catholic
+different ways: fighting against the Catholic                   League), ciphers could have been used of protect
+League in his lands (duchy of Nevers) and the                   military information in the second page. Some
+lands of his son (government of Champagne),                     hypotheses can be formulated to explain the
+encouraging his clients to rally to the King, and               sudden end of ciphertext with a new page.
+helping the negotiations with some moderate                     Unlike the information on the first page, the one
+representative of the League.                                   on the second page could have been already
+                                                                more broadly spread within the French Kingdom.
+Many letters from Henry IV to the Duke of                       It may also have been written in cleartext to
+Nevers from this specific period have been                      threaten any opponent in case of interception and
+preserved in the BnF. In particular, the                        demonstrate the French King’s military
+“Manuscrit français 3620” (fr. 3620) especially                 preparation. It could finally be a way to preserve
+contains 73 letters from the King to the Duke                   information by splitting the writing process: a
+from May 1590 to February 1593. However,                        confident clerk who knows the cipher and copies
+only the letter written on 1592, September 12                   it by writing the first page; another clerk who
+(folios 70-71) is encrypted (see Appendix 1). It                writes the second page. The apparent difference
+presents itself as a two-page text (folio 70 recto              between the handwritings (the cleartext within
+and verso) and an address (folio 71 verso).                     the ciphertext vs the cleartext in page 2) seems to
+According to the handwriting, the letter has been               confirm this hypothesis but without excluding
+written by one or several clerks (from the                      the other ones.
+Secretary of State for War) and then signed both
+by the King and by his Secretary of State for War               Finally, the cipher in use in this letter mostly
+and “Maison du roi”, Martin Ruzé de Beaulieu.                   consists of continuous segments of digits,
+A later marginal addition at the top of the letter              making cryptanalysis more challenging. There
+(probably added when receiving the letter or                    are occasional short segments of cleartext. A few
+soon after1), as well as a mention within the                   of the digits have a o-looking diacritic on top.
+
+
+1
+  Additional mentions are often written by one of the
+recipient’s clerks on margins or on the back of letters. They   above. Theses mentions are mostly written to help with mail
+identify the sender, the date (the sending and sometimes the    management (reading, classifying).
+                                                                2
+receiving date), and the nature of the document (duplicate,       These copies have been compared to our transcription
+copy). Sometimes a short abstract of the letter is written      after decipherment. There is a perfect match.
+3       Deciphering the letter                                    highly challenging, and to date, no method exists
+                                                                  to do that automatically.6
+Homophonic ciphers in 16th-century France
+usually consisted of a set of symbols to represent                Lasry et al. (2021) had shown that in several
+letters of the alphabet – more than one per letter,               cases of papal ciphers, groups of digits
+as well as a nomenclature with symbols                            representing nomenclature elements (e.g., words,
+representing common words, persons, places,                       places, or people) would always start with the
+punctuation signs (Desenclos, 2021). Those                        same digit and would be longer than the
+ciphers often included nulls, which have no                       homophones (groups of digits representing
+meaning and should be ignored when                                letters of the alphabets), e.g., three digits vs. two
+deciphering an encrypted message. In the 1590s,                   digits. Accordingly, we then assumed that
+French diplomatic letters (Monts de Savasse,                      nomenclature elements in the current cipher were
+2004) and, even more, other letters from Henri                    encoded with three digits and always started with
+IV to the Duke of Nevers3 are still encrypted in                  the digit 1, while homophones consisted of two
+that way. None of these letters, however, used                    digits, and would not start with the digit 1.7
+the same cipher as the 1592 letter; it remains thus
+the only use we have found so far of this cipher                  This assumption, which later turned out to be
+table.                                                            only partially correct, was quite useful. Not only
+                                                                  could we consistently decompose segments
+Despite the use of digits (Latin and/or Greek                     between cleartext parts, but also single lines of
+characters and/or symbols are the most                            digits, or segments between the beginning of a
+commonly used at that time in France), we                         line and a cleartext segment on that line.8 We
+assumed that the 1592 letter from Henri IV to the                 then transcribed the resulting groups of digits
+Duke of Nevers might have been encrypted with                     (742 groups in total), and fed them into an
+a homophonic cipher, with or without a                            algorithm which recovers the key of a
+nomenclature. The first challenge was to                          homophonic cipher from ciphertext only (Kopal,
+decompose the contiguous segments of digits                       2019), obtaining meaningful fragments of
+into groups of digits, each group representing a                  Middle French text. With additional manual
+letter of the alphabet, a combination of letters, a               processing, we were able to recover the full key,
+word, a person, a place, or a null. This process is               shown in Appendix 2.
+trivial if it is known, upfront, that all those
+groups of digits have the same number of digits,                  Our assumption about groups of three digits
+e.g., two digits. In such a case, the length of any               which start with 1 representing nomenclature
+segment of digits between two segments of                         elements (words, places, people) or nulls, while
+cleartext should be even (divisible by two). We                   useful, turned out to be mostly wrong. While
+determined that this was not the case with this                   121, 124, and 130 indeed are nulls, the other
+ciphertext.4                                                      groups with three digits are homophones, e.g.,
+                                                                  100, 101, and 102 representing P, or 106, 107,
+Next, we assumed that one of the digits (0 to 9)                  and 08 representing R. The symbols with a “o”
+might be a null symbol. After removing the digit                  on top were found to represent doubled
+presumed to be a null, we would expect the                        consonants, e.g. LL or SS. Also, we found that
+length of the digits segments between the                         the letter E was represented by ten homophones,
+cleartext parts to be even.5 As this experiment                   the letter A by eight homophones, I and V by
+did not yield any result, it became apparent that                 seven each. Curiously, the writer used only two
+the groups may have a variable number of digits,                  homophones for O, but we suspected that the
+maybe some groups having two digits (10, 11,                      original table would have included ten
+etc.) and some having 3 digits (100, 101, etc.).
+The task of decomposing segments of continuous
+digits into groups of digits in such a case is
+
+3                                                                 6
+  110 letters from Henri IV to the Duke of Nevers (1589-             For more details on such variable-length homophonic
+1594), including 9 encrypted letters, can also be found in        ciphers, see (Lasry et al., 2021).
+BnF, fr. 3615 and fr. 3626.                                       7
+                                                                    At this stage, we ignored the digits with a “o” on top.
+4                                                                 8
+  Neither was the length of those segments divisible by             If the clerk enciphering the letter would not split the digits
+three, assuming that all groups of digits contain three digits.   of a single homophone into two lines. This assumption
+5
+  Or divisible by three.                                          turned out to be correct.
+homophones for each vowel.9 One group, 51                      have been expected given that it was recovered
+with a dot on top, was assumed to be a place,                  from a short letter with only 742 groups. As
+which could be interpreted (“Picardye”) only                   expected, in the original table there are 10
+after finding the original table.                              homophones for each vowel (A, E, I/J, O, U/V).
+                                                               There are three homophones per consonant,
+4      An original digit cipher                                except for X, Y, and Z which have only two. The
+                                                               original table also lists additional groups for
+Taking advantage of the reconstructed key, we
+                                                               nulls and for doubled consonants.
+were able to local the original cipher table in the
+BnF, fr. 3995, fol. 141, shown in Appendix 3 and
+                                                               The 1592-cipher also includes symbols for
+now referred to as the 1592-cipher. Although this
+                                                               names of people (“Noms”), cities (“Villes”), and
+letter could have been deciphered by comparing
+                                                               provinces (“Provinces”), but used only once
+it with all the cipher tables held at the BnF or by
+                                                               (“Picardye”) in the letter, although there are
+looking for copies of the letter, the current work
+                                                               several names and places spelled out in cipher.
+had two benefits. Firstly, the table on fol. 141
+                                                               However, this isn’t a misusage of the cipher table
+was not identified as a “cipher between the King
+                                                               but the result of one of the limitations of any
+of France and the Duke of Nevers” but as a
+                                                               cipher table. Cipher tables are indeed conceived
+“chiffre commun entre messieurs les secrétaires
+                                                               at one specific time and had to consider both the
+d’Estat et messieurs du conseil. Pour bailler à
+                                                               time situation (names and places that are the
+monsieur de Nevers” [transl.: common cipher
+                                                               most subject to be frequently used) and usability.
+between the Secretaries of State and the
+                                                               This final criterion is even more important in a
+members of the Council. To be given to the Duke
+                                                               war context when letters must be encrypted and
+of Nevers]. If this mention doesn’t date the
+                                                               deciphered quickly and when names of places
+cipher, its creation date can be put between May
+                                                               are as important as names of persons but cannot
+1590 (death of the previous cardinal de Bourbon
+                                                               always be anticipated. It is thus understandable
+who wouldn’t have been listed in the
+                                                               not a have a symbol for Sancy’s name (Nicolas
+nomenclature along with Henri IV’s supports)
+                                                               de Harlay, sieur de Sancy has been one of the
+and June 1592 (death of François de Bourbon,
+                                                               King’s representatives towards European
+Duke of Montpensier). According to Nevers’
+                                                               protestant princes and helps as well in
+position (he is one of the members of the
+                                                               negotiations within the Kingdom). On the
+Council), this sharing makes perfect sense;
+                                                               contrary, the absence of any symbol for Charles
+sharing a similar cipher between several people
+                                                               de Lorraine, Duke of Aumale, governor of
+certainly weakens the security granted by the
+                                                               Picardy and one of the Catholic League’s
+encryption but it eases and shortens the writing
+                                                               leaders, is more surprising. As Aumale’s name is
+and encryption process. It questions mostly about
+                                                               present in the nomenclature of the 1591-cipher
+the possible use of such a cipher: was it intended
+                                                               used between the King and the Duke, the use of
+to be used for global correspondence (the same
+                                                               the 1592-cipher raises some questions.
+letter written and sent to every member of the
+Council) and/or for specific correspondence (any
+                                                               The nature of our letter as a duplicate could be a
+correspondence with any member of the
+                                                               reason. To secure the contents as much as
+Council)? This letter would indicate the later use
+                                                               possible, using another cipher can level up the
+but doesn’t explain why the 1592-cipher was
+                                                               difficulty of cryptanalysis and preventing the
+used when a specific cipher between the King
+                                                               understanding of the letter as a duplicate of a
+and the Duke already existed (the 1591-cipher,
+                                                               previous one. As both the King and the Duke
+see above).
+                                                               already possessed the 1592-cipher, it was easier
+                                                               to use it again without putting at jeopardy a new
+In fact, having deciphered a letter encrypted with
+                                                               cipher table by sending it via unsecure roads. In
+the 1592-cipher not only demonstrates how the
+                                                               fact, the reason for this change of cipher doesn’t
+cipher was used in practice but also helps to
+                                                               seem much to be linked to the military context
+understand how and why the 1592-cipher has
+                                                               but to the writing context. All the encrypted
+been used for this letter. The reconstructed key is
+                                                               letters from the King to the Duke, from 1591
+essentially correct, but incomplete, as would
+                                                               (BnF, fr. 3615, fol. 52) to 1594 (BnF, fr. 3626,
+                                                               fol. 53) have been countersigned by Louis Potier
+9
+  For example, A is represented by 90 to 93 as well as by 96   de Gesvres and thus encrypted and written by his
+to 99. We were expecting that A should be represented by
+the full range of 90 to 99, including the missing 94 and 95.
+                                                               clerks. In contrast, the 1592 letter has been
+countersigned by Martin Ruzé de Beaulieu. We          1591-cipher isn’t higher than the 1592-cipher.
+may thus assume that Ruzé didn’t have access to       The size of the nomenclature is quite the same:
+Potier’s cipher table (1591-cipher) and needed        59 names for each and only a dozen of common
+then to use the only table he already possessed       words in supplement in the 1591-cipher. In fact,
+and could use with the Duke of Nevers, in this        although the 1591-cipher seems more secure as it
+case the common table between Secretaries of          relies on more different features, the 1592-cipher
+State and members of the Council.                     provides a higher degree of cryptographic
+                                                      security, as the digits were written continuously
+As for the 1592 letter, we have been able to find     without any visual clue as to how to separate
+back the cipher table (1591-cipher) used for the      them into groups.
+encrypted letters from the King to the Duke that
+have been countersigned by Potier and encrypted       Moreover, the 1592-cipher and its use, even if
+by his clerks; it can be found in BnF, fr. 3995,      limited, confirm the expansion, in France, of an
+fol. 67 and it is shown in Appendix 4. According      encryption experiment - digit ciphers - at the turn
+to a mention on the previous folio, this cipher       of the 1590’s. Although ciphers still use letters
+was used between the King and the Duke of             and symbols (Monts de Savasse, 2004), they
+Nevers and had been created in January 1591.          quickly rationalize themselves by using digits
+Unlike the 1592-cipher but like the vast majority     (Desenclos, 2021). In fact, several exclusively
+of ciphers that have been created at the same         digit ciphers have been created and/or used and
+time for King’s correspondence (Monts de              some of them have been created slightly earlier
+Savasse, 2004), the 1591-cipher consists mostly       than we initially thought. At least 23 encrypted
+of graphical symbols, except for double letters       letters (using only digits) are sent to the Duke of
+and common words which employ groups of               Nevers in 1589-1591 (BnF, fr. 3422, fr. 3614,
+digits. Vowels have five or six homophones (vs.       fr. 3616, fr. 3623, fr. 3633, fr. 3634, fr. 3646,
+10 in the digit cipher), and three homophones per     fr. 3976, fr. 3977) and one of them was written to
+consonant. Unlike the 1592-cipher, this one           François de Montholon, keeper of the seals of
+proposes encryption options for common words          Henri III.15 However, in the BnF collections, we
+(here entitled “monosylabes”), for double letters     have found only two instances of the use of digit
+and for the intitulatios. These later encryption      ciphers in France in the 1580’s/1590’s: some of
+options were often used, especially during            Nevers’       correspondence,       and     another
+French Wars of Religion but they were rarely          correspondence from Spain.16 In these years, the
+mentioned on cipher tables. In fact, there is the     Duke of Nevers uses digit ciphers with the
+only example in BnF, fr. 3995 (68 cipher tables),     French Monarchy (like Montholon or
+and only two provide encryption options for the       La Vieuville17 but the latter belongs as well to
+intitulatios but on the attached guidelines rather    Nevers’ patronage), with Italians such as the
+than directly on the cipher tables. Finally, the      Duke of Mantua18 and Camillo Volta, his agent
+most interesting feature of the 1591-cipher is the    in Rome19, or with his wife.20 Moreover, several
+use of false plaintext words to represent names       cipher tables, using only digits, have been
+and words, such as les10 to represent the city        identified in the BnF, fr. 3995, and all belong to
+Metz, or ny11 for word estrangers12. False            the Duke of Nevers. The 1592-cipher is thus, for
+plaintext words like tout13 or ce14 are also          now, the only documented example of a cipher
+employed as nulls, resulting in a mix between
+traditional ciphers and jargons. But unlike           15
+                                                         BnF, fr. 3614, fol. 89, 20 April 1589.
+common jargons, rather than metaphorical words        16
+                                                         BnF, fr. 3977, fol. 130, letter from Bernardino de
+(plants, animals, names from the Bible, etc.),        Mendoza to the duke of Parma, 17 April 1589.
+common words are used, that can be easily             17
+                                                         BnF, fr. 3977, fol. 191, letter from La Vieuville to the
+confused with other parts of the letter, especially   duke of Nevers, 13 August 1589.
+                                                      18
+if there is only a single word on the middle of          BnF, fr. 3646, fol. 93, 10 November 1589.
+                                                      19
+ciphertext. However, the global security of the          The French manuscript 4689 held for example 16 letters
+                                                      from Camillo Volta to the Duke of Nevers from 1585 to
+                                                      1589. They are written in Italian and use only digits in their
+10
+                                                      encryption.
+   Plural of the.                                     20
+11
+                                                         BnF, fr. 3634, fol. 63. The letter may be earlier than 1589
+   Middle French spelling for ni (neither).           but we can only estimate its date between 1587 and 1592.
+12
+   Strangers.                                         Two cipher tables (digits only) for the correspondence
+13
+   All.                                               between the duke and its wife can be found in BnF, fr. 3995,
+14
+   This.                                              fol. 2 and 10.
+which has certainly been used by the Duke of                     these digit ciphers even though he is one of the
+Nevers but has been created neither by him nor                   main actors of the French cryptographic
+for its sole use as it was intended for the                      practices.
+members of the King’s Council. Moreover, three
+letters written by Armand de Gontaut, Duke of                    At this point, we can only affirm that using digit
+Biron, to Henri IV in 28 September and 7                         ciphers remains until the mid-1590’s, without
+October 1591 (BnF, fr. 3645, fol. 15 and 33) and                 overshadowing the common use of Latin/Greek
+by de Jean de Chaumont, sieur de Guitry, Jean                    letters and symbols, or combining them with
+de Gontaut-Biron, baron de Salagnac and Jean                     digits (e.g., mostly digits but some Latin letters
+de Vivonne, marquis de Pisani to Henri IV in 9                   as in BnF, fr. 3625). From this period, we can
+November 1591 (BnF, fr. 3645, fol. 92) confirm                   only find some very intermittent uses of digits
+the shared use of this 1592-cipher. Not only is                  until a new experiment in the 1610’s and their
+this cipher used beyond the sole entourage of the                systematic use in the mid-17th century.
+Duke of Nevers but it is one of the rare examples
+of a shared use between several people of the                    5     The deciphered letter
+same cipher.
+                                                                 As often while deciphering early modern letters,
+                                                                 the encrypted parts don’t hide some state secrets
+However, we don’t know yet if the use of digit
+                                                                 and this letter is no exception. Moreover, this one
+ciphers had been introduced by the Duke of
+                                                                 doesn’t differ from the regular letters that the
+Nevers, the Monarchy, or by the Catholic League
+                                                                 King was sending, especially at war, and that
+with whom the Duke of Nevers held an
+                                                                 consisted mainly of status reports from the King.
+encrypted correspondence in the late 1580’s.21
+                                                                 As a member of the Council, Nevers needed
+Another cipher table, probably produced in
+                                                                 indeed to be kept informed, so that he could still
+1589-1590 and using only digits except for 3
+                                                                 fight against the League’s armies and reinsure
+symbols (BnF, fr. 3413, fol. 109), weakens this
+                                                                 some noblemen about the King’s intention.
+last hypothesis as names of both Protestants and
+Catholics are mixed in the nomenclator. The
+                                                                 The letter starts thus with some information
+presence of the names of Italian princes (Mantua,
+                                                                 about the King’s health. If this is quite common,
+Parma, etc.), still in the nomenclator, suggests a
+                                                                 it is here particularly significant as a fever has
+link with the Duke of Nevers but this table
+                                                                 delayed the King’s departure towards the North
+equally fulfills the needs of the French monarchy
+                                                                 of his Kingdom. The main part of the encrypted
+and rationalizing the cipher by using digits might
+                                                                 text, however, reports about the military strategy
+be a suggestion from François Viète, Henri IV’s
+                                                                 of both the King and the Duke of Nevers,
+main cryptographer whose work made him aware
+                                                                 according to the information the latter provided
+of the advantages of digit ciphers. However,
+                                                                 to the King and conversely. As extra protection,
+without excluding the two other hypotheses,
+                                                                 in addition to the encryption, no specific
+Nevers’ letters, as well as a 1562 letter from the
+                                                                 information (name, location) is given except for
+Duchess of Mantua to the Duke of Nevers (her
+                                                                 the location of the rebel armies. As they are the
+son)22 provides evidence at least of his
+                                                                 ones that would like to intercept the letter, it
+significant role in the broader diffusion of digit
+                                                                 won’t harm the King’s interests if this
+ciphers in France and a strong Italian influence23.
+                                                                 information was discovered.
+Nevertheless, relying on the analysis of Nevers’
+ciphers and his use of digit cipher requires some
+                                                                 The second part of the letter (in cleartext) keeps
+caution: Nevers’s letters and cipher tables form
+                                                                 going with the status report, now elaborating on
+the main part of the letters and cipher tables that
+                                                                 the League’s military situation and making clear
+we have found and identified yet for the 1580’s
+                                                                 the King’s effort to oppose it. In fact, the
+and 1590’s. As the research project is still
+                                                                 information in cleartext does not portray the
+ongoing, the Duke of Nevers cannot be
+                                                                 League in an advantageous light (which explains
+considered as the sole or main user and creator of
+                                                                 the absence of encryption): their armies in
+21
+                                                                 Picardy would be diminished, the King’s officer
+   See for example BnF, fr. 3976.
+22                                                               prepared to face them. Moreover, the Spanish
+   BnF, fr. 4687, fol. 5, 10 January 1562.
+23
+   If the recent publications and current research haven’t
+                                                                 army wouldn’t be able to help them as
+revealed an important use of digit cipher in France, their use   Coeverden has been taken back by the Dutch
+in Italy, moreover much earlier, has been demonstrated. See      armies as part of the Eighty Years War. The
+Meister (1906) and Lasry and al. (2021).
+letter, whose full transcription is given above,              d’Esparnay29 et autres lieux de mon pais de
+ends with two pieces of information: the King’s               Champagne, nous voyans esloignez, j’escris aux
+recovery and the late arrival of the Duke of                  sieurs de Thommasin30, de Vignolles31, à ma
+Bouillon to the King’s camp. As the King isn’t                court de parlement32 et de madite ville de
+sick anymore and Bouillon would have arrived                  Challons qu’ilz soyent diligens à se garder de
+before the letter could be intercepted, this isn’t            surprise et qu’ilz s’asseurent de mon brief retour
+confidential and is thus mentioned in clear: none             comme je le leur ay promis. Les nouvelles du
+of this could be used by the Catholic League                  Pais Bas continuent la prise de Couverden33 et la
+against the King or the Duke.                                 deffaicte des trois regimens de lansquenetz et de
+                                                              la cavallerie qui estoit envoyée pour le secourir
+Transcription24                                               s’il est ainsy le duc de Parme34 ne peult
+                                                              entreprendre de venir en mon royaume de plus
+[Mention marginale en haut de la lettre]                      de trois moys ; j’ay adverty mon cousin le
+Dupplicata horsmis ce qui est adjousté à la fin               cardinal de Bourbon35, les sieurs de mon conseil
+                                                              et do36 de se trouver aujourd’huy ou demain à
+Mon cousin,                                                   Senlis afin de les y prendre et de les mener avec
+                                                              moy à Meleun37 où il me tarde que je ne sois
+Je pensois monter à cheval ce matin pour aller à              desja arrivé.
+Chauny25 et retourner dès ce soir en ceste ville              Priant, sur ce, Nostre Seigneur, qu’il vous ayt,
+pour en partir demain et me rendre lundy à                    mon cousin en sa sainte et digne garde. Escrit à
+Crecy26 mais une grosse fievre m’a pris et me                 Noyon le XIIe jour de septembre 1592.
+tient il y a quatorze heures sans apparence de                                                    [Signé] Henry
+diminution ni que les medecins sache[n]t dire
+quelle elle sera à ce soir ou demain matin je vous            Mon cousin, depuis la presente escritte et fermée
+en mandray des nouvelles.                                     qui est le dupplicata de celle que je vous ay
+                                                              envoyée par une aultre voye et que j’ay gardée
+Cependant je trouve tres bon vostre advés27 de                jusques à ce jourd’huy pour la vous faire tenir
+passer mon armee où vous m’avez escrit pour les               par ceste commodité, ma fievre, graces à Dieu,
+raisons que vous me mandez et pour oster tout                 m’a quicté du tout et espere qu’elle ne me
+umbrage à celuy duquel vous m’avez envoyé le                  reprendra plus de façon que je partiray demain
+double de la lettre qu’il m’escrit au subjet de               sans faillir pour me rendre en mon armée suivant
+laquelle je vous asseure n'avoir jamais pensé                 ce que je vous ay mandé. Encores fusse je party
+comme je le luy fais entendre par ma response et              dès aujourd’huy si mon cousin le duc de
+mande encores au sieur de Sancy qui est de ses                Bouillon38 fust arrivé hier comme je l’attendois
+amis de le luy dire de ma part. Vous pouvez                   pour donner ordre à noz garnison mais s’estant
+executer vostre desseing sans peril car le duc                voulu purger il ne sera icy que tantost.
+d’Aumalle s’est retiré avec toutes les forces d[e]                                                [Signé] Henry
+Picardye en telle diligence qu’il n’a osé sejourner                                                [Signé] Ruzé
+en aucun lieu que une heure à La Fere; encores a
+il laissé de ses plumes à la garnison de Chauny.
+                                                              29 Epernay, Marne, France.
+
+Le reste de leur armée est fort diminué et s’est              30 Philippe de Thomassin, governor of Châlons.
+
+logé le long de la riviere d’Esne28 tirant de                 31 Bertrand de Vignoles, governor of Épernay.
+                                                              32 Since 1589, the magistrates who have stayed faithful to
+Soissons à Retheil. Toutesfois de peur qu’elle
+                                                              the King (and not to the Catholic League) have settled in
+n’entrepreigne quelque chose ou qu’elle donne                 Tours for one part and in Châlons for this other part.
+allarme à ceux de mes villes de Challons,                     33
+                                                                 Coeverden, Drenthe, Netherlands. It doesn’t concern the
+                                                              French Wars of Religion but the Eighty Year’s War that
+                                                              opposed Spain to the rebel Norther Provinces of the
+24                                                            Netherlands. In early September 1592, Coeverden has been
+   The parts in italics are in clear and the text have been
+edited according to the rules in Barbiche 1980.               taken back by the rebel armies.
+25 Chauny, Aisne, France. It’s 20 km away from Noyon          34 Alexander Farnese, Duke of Parma and governor of the
+
+where the King is staying.                                    Spanish Netherlands.
+26                                                            35
+   Crécy-sur-Serre, Aisne, France. It is 50km away from          Charles II of Bourbon, cardinal de Bourbon since 1590.
+Noyon and mostly close to La Fère (which is mentioned         36
+                                                                 It is either a writing mistake or a symbol that hasn’t been
+later in the letter).                                         written in the nomenclature.
+27 To be understood as “advis”.                               37 Melun, Seine-et-Marne, France.
+28 To be understood as “Aisne”.                               38 Henri de La Tour d’Auvergne, Duke of Bouillon.
+Translation                                          With this, praying Our Lord to keep you, my
+                                                     cousin, in his holy and worthy guard. Written at
+[Marginal note above the letter] Duplicate except    Noyon, the twelfth day of September 1592.
+for what is added at the end.                                                         [Signed] Henry
+
+My cousin,                                           My cousin, since writing and sealing the current
+                                                     letter which is a duplicate of the letter I had sent
+I thought of riding this morning to Chauny and       you via another channel and that I had kept until
+going back from this city already from this          today in order to hand it over to you with this
+evening, and leaving Crecy on Monday, but I          commodity, my fever, thanks God, has gone, and
+have caught a high fever which started 14 hours      I hope it will not return so that I can without
+ago, without any sign of abating, and the            fault leave tomorrow to join my army as I had
+physicians not knowing whether it will continue      informed you. Also, I would have departed today
+until this evening or tomorrow morning. I will       if my cousin the Duke of Bouillon had arrived
+update you on this.                                  yesterday as I was expecting to assume the
+                                                     command of my garrison, but having wanted to
+Nevertheless, I found highly appropriate your        purge himself, this will not happen soon.
+advice to move my army to the place you wrote                                            [Signed] Henry
+to me, for the reasons you mentioned and to                                               [Signed] Ruzé
+avoid any suspicion from the person from which
+you have sent me a duplicate of a letter, about      6      Conclusion
+the topic which I assure you of never thinking of,
+                                                     With a systematic survey of encrypted
+as I asserted in my response, and having asked
+                                                     documents as well as cipher tables in archives
+Sieur of Sancy, who is one of his friends, to
+                                                     and libraries, it is sometimes possible to match
+convey to him on my behalf. You will be able to
+                                                     an encrypted letter with its original cipher table,
+carry your designs without any risk as the Duke
+                                                     even if cipher tables were not systematically
+of Aumalle has retired with all his forces from
+                                                     preserved by their users nor passed to archives
+Picardy, so diligently that he has not dared to
+                                                     and libraries. If deciphering can be performed
+stay in any place rather that one hour in La Fere
+                                                     without the original cipher table, it helps
+and he has lost some men while facing the
+                                                     accurately decipher the document and sometimes
+garrison of Chauny.
+                                                     better identify its origins.39 For this letter, it
+                                                     allowed us to understand the reason for this
+The remainder of their army is significantly
+                                                     uncommon use of a digit cipher in the
+diminished and has taken position along the
+                                                     correspondence between the King and the Duke
+Aisne rive, from Soissons to Rethel. However, out
+                                                     as well as the dissemination of digit ciphers in
+of concern that it [this army] main underact
+                                                     France at the end of 16th century and to
+some action or that it may cause my people in the
+                                                     document an effective shared use of a same
+cities of Chalons, Epernay, and other places in
+                                                     cipher between, at least, 6 persons.
+my Champagne country to be alarmed, seeing us
+afar, I am writing to the sieurs de Thommasin, de
+                                                     In terms of cryptanalysis, digit ciphers,
+Vignolles, to the court of my parlement, and of
+                                                     especially when documents consist of contiguous
+the said city of Challons that they must be
+                                                     segments of digits, present more challenges, as
+diligently avoid being surprised, and that the
+                                                     opposed to homophonic ciphers employing
+should be confident of my return soon, as I have
+                                                     graphical symbols, which can be compared more
+promised to them. The news from the Low
+                                                     easily. In this work, finding the original cipher
+Countries follows the capture of Coeverden and
+                                                     table was much easier after deciphering the letter
+the defeat of the three regiments of Lansquenets
+                                                     using cryptanalytic means.
+and of the cavalry sent to save it, so that the
+Duke of Parma will not be able to enter my           Finally, the main challenge in cryptanalysis was
+realm the next three months. I have instructed my    the fact that the homophones have variable
+cousin the Cardinal de Bourbon, the members of       lengths, and a breakthrough was possible only
+my council, and ‘do’ to be today or tomorrow in
+Senlis to take them and bring them to me to
+                                                     39
+Melun where I soon arrive soon.                         Especially if the encrypted document does not mention
+                                                     the sender or recipient in cleartext, and those can be
+                                                     identified only after the document is deciphered.
+via lucky guesses and trial-and-errors. A generic           Proceedings of the 6th International Conference on
+algorithm to decompose contiguous sequences of              Historical Cryptology, 148-1459.
+digits would be helpful in solving other similar          Nicolas Le Roux, 2000. La faveur du roi : mignons et
+challenging cases.40                                        courtisans au temps des derniers Valois (vers
+                                                            1547-vers 1589). Seyssel, Éditions Champ-Vallon.
+As for the historical part, while it hasn’t led to a      Jacques de Monts de Savasse (ed.), 2004. L’Europe
+breakthrough in the understanding of the French              d’Henri IV : la correspondance diplomatique du
+Wars of Religion, it has enabled us to lay the               secrétaire d’État Louis de Revol, 1588-1593.
+foundations for a better understanding of some               Grenoble, Presses universitaires de Grenoble.
+cryptographic issues in times of civil war.
+                                                          Michael Wolfe, 1988. “Piety and political allegiance:
+                                                            the duc de Nevers and the protestant Henri IV,
+Funding
+                                                            1589-93”, French history, 2:1, 1-21.
+The work of one of the authors has been
+supported by the Swedish Research Council,
+grant 2018-06074, DECRYPT – Decryption of
+Historical Manuscripts.
+
+References
+Bernard Barbiche, 1980. Conseils pour l’édition des
+  documents français de l’époque moderne
+  [http://theleme.enc.sorbonne.fr/cours/edition_epoq
+  ue_moderne/edition_des_textes]
+Arianne Boltanski, 2006. Les ducs de Nevers et l’État
+  royal : genèse d’un compromis (ca 1550-ca 1600).
+  Genève, Droz.
+Camille Desenclos, 2021. Écrire le secret quoditien.
+  Pratiques de la cryptographie au sein de la
+  diplomatie française (XVIe siècle – premier XVIIe
+  siècle), in Guido Braun and Susanne Lachenicht
+  (ed.), Spies, espionnage and secret diplomacy in
+  the early modern period. Stuttgart, Kohlhammer,
+  85-103.
+Nils Kopal, 2019. Cryptanalysis of homophonic
+   substitution ciphers using simulated annealing with
+   fixed temperature, in Proceedings of the 2nd
+   International     Conference      on     Historical
+   Cryptology, 107-116.
+George Lasry, Béata Megyesi and Nils Kopal, 2021.
+  Deciphering papal ciphers from the 16th to the
+  18th Century, Cryptologia, 45:6, 479-540.
+Aloys Meister. 1906. Die Geheimschrift im Dienste
+  der Päpstlichen Kurie von Ihren Anfängen bis zum
+  Ende des XVI. Jahrhunderts, volume 11. F.
+  Schöningh, Paderborn, 1906.
+
+Xavier    Le Person,     2002.     « Practiques »    et
+  « practiqueurs » : la vie politique à la fin du règne
+  de Henri III (1584-1589). Genève, Droz.
+Cécile Pierrot, Camille Desenclos, Pierrick Gaudry
+  and Paul Zimmermann, 2023. Deciphering Charles
+  Quint (A diplomatic letter from 1547), in
+
+
+
+40
+     For additional examples, see Lasry & al, 2021.
+Appendix 1 – Letter from Henri IV to the Duke of Nevers, 12 September 1592
+(beginning of the first page)
+
+
+
+
+                               Source: BnF, fr. 3620, fol. 70
+
+
+
+Appendix 2 – The reconstructed key of the 1592 cipher
+
+
+
+
+                                   Source: The authors
+Appendix 3 – The 1592 cipher - “Chiffre commun entre messieurs les secrétaires d’Estat
+et messieurs du conseil. Pour bailler à monsieur de Nevers” (ca. 1590-1592)
+
+
+
+
+                          Source: BnF, fr. 3995, fol. 141 (©Gallica)
+
+Appendix 4 – The 1591 cipher used between Henri IV and the Duke of Nevers, January
+1591
+
+
+
+
+                          Source: BnF, fr. 3995, fol. 67 (©Gallica)
+

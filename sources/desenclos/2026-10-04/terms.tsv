@@ -1,0 +1,16 @@
+target	regex	what
+espagnol142-mercy-1648	Espagnol ?14[234]|Esp\. ?14[234]|Mercy|Barneton|Saint-?Ibal|Burgsdorf|L[ée]opold[- ]Guillaume|Leopold Wilhelm|juin 1648|June 1648	shelfmark, recipient, place, names, sender, date
+ceppo-nevers-fr3251-1570s	\b3251\b|Ceppo	shelfmark, sender
+nevers-birago-fr3251-1572	\b3251\b|Birago|Saluces|Saluzzo	shelfmark, sender, place
+fr3416-nevers-fils-1589	\b3416\b|Rethelois|Rethel	shelfmark, recipient
+fr3621-dinteville-1592	\b3621\b|Dinteville|Langres	shelfmark, sender, place
+fr2980-gramont	\b2980\b|Gramont|Grammont|Villandry|[ée]v[êe]que de Tarbes|Tarbes	shelfmark, sender, recipient
+fr20140-danzay-1557	\b20140\b|Danzay|Dan[cç]ay|Dantzai|Copenhag|cardinal de Lorraine	shelfmark, sender, place, recipient
+dupuy452-carpi-1520	Dupuy 452|Carpi|Raince	shelfmark, sender
+dupuy468-anhalt	Dupuy 468|L[uü]nebo?urg|Moltzan|1518	shelfmark, names, date
+clair349-este-guise-1556	Clairambault ?349|\bEste\b|Ferrare|Guise.{0,40}1556	shelfmark, names
+clair1067-brienne-poland-1646	Clairambault ?1067|Brienne	shelfmark, recipient
+clair1108-duvergier	Clairambault ?1108|Duvergier|Du Vergier	shelfmark, sender
+fr15575-syllabic-1592-95	\b1557[56]\b|syllab	shelfmark, design
+fr4715-f61-mayenne-1592	\b4715\b|Mayenne.{0,60}1592	shelfmark, sender
+fr5160-letellier-1653	\b5160\b|Le ?Tellier	shelfmark, sender

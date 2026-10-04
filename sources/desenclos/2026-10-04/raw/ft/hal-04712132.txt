@@ -1,0 +1,827 @@
+        Au-delà de toute diplomatie : la constitution de réseaux
+       parallèles protestants et érudits entre France et Empire au
+                          début du XVIIe siècle
+                                                Camille Desenclos
+
+
+
+      To cite this version:
+     Camille Desenclos. Au-delà de toute diplomatie : la constitution de réseaux parallèles protestants et éru-
+     dits entre France et Empire au début du XVIIe siècle. Revue d’histoire du protestantisme, 2016, 1 (4). ⟨hal-
+     04712132⟩
+
+
+
+
+                                        HAL Id: hal-04712132
+                              https://hal.science/hal-04712132v1
+                                            Submitted on 2 Oct 2024
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+                                        Copyright - All rights reserved
+Au-delà de toute diplomatie : la constitution de réseaux parallèles protestants et érudits entre
+                            France et Empire au début du XVIIe siècle
+
+
+                                                                                                   Camille Desenclos
+                                                                                         Université de Haute-Alsace
+
+
+
+
+      À l'image de l'ensemble de la diplomatie française dans le Saint-Empire, les résidents français
+auprès des princes protestants au début du                       XVIIe siècle     souffrent d'un réel désintérêt
+historiographique de ce côté du Rhin. Le plus connu d'entre eux, Jacques Bongars, résident entre
+1589 et 1611, doit sa renommée, non à son action diplomatique, pourtant remarquable, mais à son
+intense activité épistolaire1 et littéraire au sein de la nouvelle République des lettres de l'humanisme
+tardif. Un constat similaire peut être dressé pour Jean Hotman, résident à Düsseldorf entre 1609 et
+1614, dont la production littéraire vient de faire l'objet d'une monographie outre-Rhin 2, mais dont
+l'activité diplomatique et plus largement la biographie demeurent méconnues en France 3. Depuis les
+articles de Ferdinand Schickler4, rédigés à l'occasion de l'entrée des manuscrits Hotman à la
+bibliothèque de la société d'histoire du protestantisme français en 1868 5, Hotman n'a plus fait l'objet
+d'une étude approfondie6. Plus encore, Étienne de Sainte-Catherine, dernier résident auprès de
+l'électeur palatin entre 1612 et 1620, n'avait reçu, jusqu'à récemment 7, les honneurs des
+historiographies française comme germanophone. Son identification même fut longtemps sujette à
+
+
+1   La correspondance de Bongars se compte encore par milliers de lettres. Pour une liste complète de ses
+    correspondances, voir Ruth KOHLNDORFER-FRIES, Diplomatie und Gelehrtenrepublik : die Kontakte des
+    französischen Gesandten Jacques Bongars (1554-1612), Tübingen, Max Niemeyer, 2009, p. 8-12.
+2   Mona GARLOFF, Irenik, Gelehrsamkeit und Politik : Jean Hotman und der europäische Religionskonflikt um 1600,
+    Göttingen, Vandenhoeck & Ruprecht, 2014.
+3   Hotman est au mieux mentionné aux détours d'une étude sur son père, François Hotman, ou sur la famille Hotman
+    quand il ne s'agit pas d'une étude sur son activité littéraire et érudite (Robert DESCIMON, « La réconciliation des
+    Hotman protestants et catholiques (des années 1580 aux années 1630) », De Michel de L'Hospital à l'édit de
+    Nantes : politique et religion face aux Églises, dir. Thierry Wanegffelen, Clermont-Ferrand, Presses Universitaires
+    Blaise-Pascal, 2002, p. 529-562).
+4   Fernand SCHICKLER, « Hotman Villiers et son temps », Bulletin de la société d'histoire du protestantisme français,
+    t. 17 (1886), p. 97-111, p. 145-1616, p. 401-413, p. 464-476 et p. 513-533.
+5   Les manuscrits y sont entrés suite à un don de M. Bouverie Pusey (Fernand SCHICKLER, « Hotman Villiers et son
+    temps », op. cit., p. 98). Outre le caractère désormais ancien, et parfois inexact, de l'étude de Fernand Schickler, le
+    souci constant de l'auteur de réhabiliter Hotman (ibid., p. 97-98), l'amène à conclure une étude biographique fort
+    partiale qui s'achève par ailleurs avec le début de la résidence de Hotman dans l'Empire.
+6   Publié en 1603, le traité de Hotman, premier traité d'art diplomatique rédigé en français, a su susciter l'intérêt des
+    historiens de la diplomatie (Lucien BEĹ Y, « La polémique autour de l'Ambassadeur de Jean Hotman : culture et
+    diplomatie au temps de la paix de Lyon », Cahiers d'histoire, t. 46-2 (2001)) sans néanmoins que l'étude ne soit
+    étendue à sa biographie personnelle et politique.
+7   Camille DESENCLOS, Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au
+    début de la guerre de Trente Ans (1617-1624), thèse de doctorat, histoire moderne, École nationale des chartes /
+    Université Paris-Sorbonne, 2014. Centrée sur la politique étrangère de la France au début de la guerre de Trente
+    Ans, cette thèse n'évoque cependant que brièvement l'activité diplomatique de Sainte-Catherine avant avril 1617.
+
+                                                            1
+confusion, Victor-Lucien Tapié, l'ayant identifié comme Jean-Claude Le Lieur, sieur de Sainte-
+Catherine8, probablement sur le fondement d'une identification fournie par d'anciennes notices de la
+Bibliothèque nationale de France9. Si son identification comme Étienne de Sainte-Catherine est
+désormais actée, sa biographie demeure peu connue et sujette à de nombreuses lacunes10.
+Au-delà d'une forme de désintérêt, le décalage entre les historiographies françaises et
+germanophones tient à l'attention, récente, accordée par la seconde à l'humanisme tardif 11 et à ses
+liens avec la Konfessionspolitik12. Ces nouvelles études, indispensables à la redécouverte d'une
+société protestante érudite au coeur des échanges européens, s'attardent néanmoins peu sur l'aspect
+diplomatique des réseaux ainsi établis. Si ceux de Bongars et de Hotman, pour leur seule part
+littéraire cependant, ont été reconstitués, leur dimension politique et diplomatique reste à étudier 13.
+Par leur ampleur européenne, par la qualité de leurs correspondants, ces réseaux dépassent en effet
+largement les cercles personnels et érudits, traditionnels de l'humanisme tardif, pour se parer d'une
+dimension politique revendiquée ou sous-jacente et née d'une véritable porosité entre réseaux
+informationnels et réseaux personnels.
+
+
+Retrouver l'unité des correspondances
+       Au regard du sort subi par nombre de papiers d'agents diplomatiques, la conservation des
+papiers et de la bibliothèque de Jacques Bongars est sans commune mesure et directement liée à
+l'aura dont bénéficiait le résident français lors de sa mort 14. Plus largement, la production épistolaire
+
+8    Victor-Lucien TAPIÉ, La politique étrangère de la France et le début de la guerre de Trente Ans (1616-1621), Paris,
+     Victor Leroux, 1934, p. 53.
+9    Voir par exemple la notice du manuscrit Dupuy 927 présentant l'instruction délivrée à Sainte-Catherine en 1609
+     pour son envoi auprès de l'électrice palatine. Le catalogue de la Bibliothèque nationale de France identifie pourtant
+     Sainte-Catherine comme Étienne de Sainte-Catherine dans d'autres notices.
+10   Camille DESENCLOS, Les mots du pouvoir... op. cit., p. 114-115.
+11   Voir notamment l'introduction de la monographie d'Axel Walter sur Lingelsheim qui après un bilan
+     historiographique s'efforce de définir ce qu'est l'humanisme tardif (Axel WALTER, Späthumanismus und
+     Konfessionspolitik... op. cit., p. 7-40).
+12   Aux monographies sur Bongars et Hotman, il faut ajouter celles d'Axel Walter et de Gundula Caspary sur Georg
+     Michael Lingelsheim et Melchior Goldast : Axel WALTER, Späthumanismus und Konfessionspolitk : die
+     europäische Gelehrtenrepublik um 1600 im Spiegel der Korrespondenzen Georg Michael Lingelsheims, Tübingen,
+     Max Niemeyer, 2004 ; Gundula CASPARY, Späthumanismus und Reichspatriotismus : Melchior Goldast und seine
+     Editionen zur Reichsverfassungsgeschichte, Göttingen, Vandenhoeck & Ruprecht, 2006.
+13   Si l'ouvrage de Ruth Kohlndorfer-Fries s'attache à présenter à la fois une biographie de Jacques Bongars,
+     notamment avec une étude de son action en tant que représentant diplomatique du roi dans l'Empire, l'aspect
+     novateur de son travail repose essentiellement sur la reconstitution de son réseau épistolaire. L'objectif
+     d'études – l'insertion de Bongars dans la République des lettres – conduit Ruth Kohlndorfer-Fries à étudier Bongars
+     sous l'angle de l'érudition davantage que sous celui de l'exercice diplomatique.
+     Plus encore, la monographie de Mona Garloff sur Hotman est essentiellement consacrée à la position irénique de
+     Hotman et à la production littéraire qui en a découlé. Mona Garloff omet ainsi entièrement la correspondance
+     entretenue par Hotman avec Plessen et conservée au sein des archives diplomatiques.
+14   Sa correspondance politique et diplomatique est conservée, à quelques exceptions près, à la Bibliothèque nationale
+     de France sous le nom Mémoires de Jacques Bongars au sein des manuscrits français 7125-7132 (Camille
+     DESENCLOS, Charles-Éloi VIAL, « La parole diplomatique sous Henri IV à travers les Mémoires de Jacques
+     Bongars », Revue de la BnF, t. 48 (2014), p. 76). Sa correspondance érudite et personnelle quant à elle se trouve
+
+                                                            2
+des résidents français auprès des princes protestants de l'Empire, notamment leur correspondance
+passive, diplomatique comme personnelle, offre une appréciable ampleur et cohérence, malgré des
+lacunes persistantes dans les papiers de Hotman et Sainte-Catherine. Seuls quatre manuscrits, parmi
+les dix manuscrits constitués à partir des papiers d'Étienne de Sainte-Catherine 15, recèlent une
+correspondance personnelle, non imposée par sa charge diplomatique16. Ces trois-cent dépêches
+personnelles, rédigées par trente-cinq correspondants distincts, ne doivent cependant faire oublier
+l'irrégularité de leur conservation : cent-seize dépêches émanent d'un même correspondant, Georg
+Michael Lingelsheim, alors que vingt-deux correspondants voient leurs échanges réduits à une ou
+deux dépêches. Pour certains de ces épistoliers, leurs dépêches ne résultent nullement d'un échange
+suivi mais de simples offres de service ou de recommandation. Pour les autres, elles se conçoivent
+sur un temps plus long, involontairement fractionné, voire nié, par une conservation profondément
+lacunaire. La seule dépêche conservée de Mathurin Gueretin, agent de l'électeur palatin à la Cour de
+France, à Sainte-Catherine, fait ainsi état, en guise d'ouverture, d'une relation déjà établie 17, ce que
+des mentions antérieures, présentes dans des correspondances tierces, confirme18. Un constat
+similaire s'applique, au moins, à trois autres correspondances, avec Wolrad von Plessen, Jacques
+Margeret et Pierre Mareschal, que l'état actuel de conservation présente à l'historien comme
+ponctuelle (deux dépêches conservées ou moins).
+
+
+
+
+     essentiellement à Bern avec sa bibliothèque ainsi qu'à la Staats- und Universitätsbibliothek d'Hambourg (Ruth
+     KOHLNDORFER-FRIES, Diplomatie und Gelehrtenrepublik... op. cit., p. 10).
+15   BnF, fr. 4113-4122. Sur l'histoire de ces manuscrits, voir Camille DESENCLOS, Les mots du pouvoir... op. cit., t. 1,
+     p. 31.
+16   BnF, fr. 4116-4119, fr. 4122. Bien que certains agents comme Samuel Spifame, sieur de Bisseaux, ambassadeur en
+     Angleterre entre 1610 et 1614, Jean de Thuméry, sieur de Boissise, ambassadeur en Angleterre (1598-1602) puis
+     aux Provinces-Unies (1617-1618) ou même Henri de Schomberg, ambassadeur extraordinaire auprès des princes
+     protestants (1617), s'insèrent également dans le réseau général, leurs correspondances avec Sainte-Catherine ou
+     Hotman sont dictées par les seuls impératifs diplomatiques et sont donc exclues des données numériques établies
+     dans le présent article.
+17   « J'ay à vous donner icy conte de la reception des vostres du 27 et dernier de febvrier et 7 e du present les 19, 21 et
+     22. […] Vous aurez veu par les miennes, depuis celles dont vous m'accusez la reception, ce que je vous saurois dire
+     par cette-ci de voz affaires particulieres » (BnF, fr. 4116, fol. 99, Gueretin à Sainte-Catherine, Paris, 24 mars 1620).
+18   « Outre ce que Monsieur Gueretin vous escrit » (BnF, fr. 4116, fol. 60, Girard à Sainte-Catherine, Paris, 22 juin
+     1617).
+
+                                                              3
+          Thysius
+
+             Sault
+
+           Plessen
+
+            Montz
+
+        Mareschal
+
+          La Haye
+
+       La Blanque
+
+             Justel
+
+      Gyllenhielm
+
+            Girard
+
+         Flavigny
+
+       Du Moulin
+
+           Curion
+
+         Clasquin
+
+  Buwinckhausen
+
+          Branthe
+
+             Bigot
+
+          Aerssen
+                      0        5          10          15         20          25         30          35          40
+
+ [Fig. 1] Nombre de dépêches, par correspondant, conservées et envoyées par Sainte-Catherine19
+
+
+La correspondance personnelle de Jean Hotman20 est frappée par cette même irrégularité de
+conservation que l'éparpillement des dépêches à la fois entre la bibliothèque de la Société d'histoire
+du protestantisme français21, les Archives diplomatiques22 et la Bibliothèque nationale de France et
+au sein des fonds de cette dernière institution 23 vient encore accroître. Cumulés, ces trois fonds
+
+19 Pour permettre une visualisation plus pertinente des petites correspondances, les 116 dépêches de Lingelsheim n'ont
+   pas été insérées.
+20 Comme pour Sainte-Catherine, la correspondance passive de Hotman avec l'autorité royale pendant sa résidence
+   dans l'Empire (BnF, fr. 4030) a été exclue des analyses quantitatives.
+21 BSHPF, Ms. 10, V-VII.
+22 Arch. Dipl., CP, Palatinat-Deux-Ponts 2-4.
+23 Hormis le manuscrit latin 8586, probablement constitué par Hotman lui-même, toutes les autres dépêches de
+   Hotman conservées à la Bibliothèque nationale de France, et non adressées au roi ou au secrétaire d'État des
+   Affaires étrangères, ont été éparpillées entre divers recueils au gré des correspondants ou des sujets : fr. 3808,
+   fr. 4115, Dupuy 16, Dupuy 34, Dupuy 268, Dupuy 348, NAF 5130, NAF 5154.
+
+                                                           4
+émanent seulement de vingt-huit épistoliers, dont trois agents diplomatiques français (Benjamin
+Aubéry du Maurier, ambassadeur aux Provinces-Unies, Nicolas de Baugy, résident auprès de
+l'empereur et Étienne de Sainte-Catherine), alors que les mentions présentes dans l'ensemble des
+dépêches ont permis de reconstituer un réseau de cinquante-quatre membres. Bien au-delà des
+quatre correspondances de Sainte-Catherine, ce sont vingt-six correspondances qui nous échappent
+pour Hotman et sont réduites à de simples mentions indirectes, frêles témoins d'une relation, plus
+encore de sa nature ou de son évolution. Pour les vingt-huit autres épistoliers, leurs dépêches
+souffrent des mêmes disparités de conservation que celles adressées à Sainte-Catherine : une seule
+dépêche pour Caspar Meusch, secrétaire du landgrave de Hesse, deux pour Johannes de Laurelli,
+conseiller privé du landgrave de Hesse, etc.24. Même la correspondance de Wolrad von Plessen,
+conseiller palatin, pourtant forte de plus de quatre-vingt dépêches, n'est exempte de lacunes,
+notamment pour ses premières années : la première dépêche, conservée aux Archives
+diplomatiques, fait état d'une correspondance antérieure, renouée à l'occasion du retour de Plessen à
+Heidelberg25. Aucune dépêche antérieure à avril 1611 n'a cependant été retrouvée, ni aux Archives
+diplomatiques, ni dans aucune autre institution de conservation. La perte de quelques dépêches au
+sein d'une correspondance suivie peut certes aisément être surmontée, mais celle de la dépêche à
+l'origine de la prise de correspondance entrave plus durablement la compréhension du réseau et de
+ses modalités de construction.
+Des compléments ou précisions ne peuvent être trouvées dans les correspondances des résidents
+avec le pouvoir royal26. Nombre de leurs correspondants faisant également office d'informateurs, les
+résidents s'attachent à conserver leur anonymat. Seules les relations officielles avec les principaux
+interlocuteurs diplomatiques de l'Empire sont évoquées dans leurs dépêches27 et s'inscrivent dans
+une communication consciente d'informations28. Elles sont surtout motivées, dans ce cadre, par le
+seul exercice d'une charge diplomatique et non par une relation personnelle, pouvant se surimposer
+aux besoins diplomatiques de leur souverain.
+L'effort de complétude dans la reconstitution de ce réseau polycéphale se heurte à la difficulté de
+
+24 L'inventaire après-décès de Hotman qui mentionne « vingt quatre tant reliez qu'en liasse qui sont manuscriptz qu'il
+   a faictz concernans les affaires generalles de l'Europe » rend ces lacunes plus probantes encore (AN,
+   MC/ET/XCVIII/121 ; cité par Robert DESCIMON, « La réconciliation des Hotman protestants et catholiques... » op.
+   cit., p. 541)
+25 « Renouer soigneusement nostre correspondence et l'entrecours reciproque de noz lettres » (Arch. Dipl., CP,
+   Palatinat 1, fol. 131, Plessen à Hotman, Heidelberg, 8 avril 1613).
+26 BnF, fr. 4030 (correspondance passive de Hotman) ; fr. 4119 et fr. 4121(correspondance passive de Sainte-
+   Catherine) ; fr. 15920-15931 (correspondance active de Hotman et Sainte-Catherine).
+27 « J'entens que mes deux correspondans sont en voiage asscavoir monsieur de Plessen vers l'Archiduc Maximilien
+   avec son maistre l'administrateur de Heydelberg […] et le sieur de Buwinkausen d'un autre costé de la part des
+   Unis » (BnF, fr. 15924, fol. 33, Düsseldorf, 25 février 1612).
+28 « Monsieur de Buwinkausen m'escrit vous avoir donné advis » (BnF, fr. 15924, fol. 12, Hotman à Puisieux,
+   Düsseldorf, 15 janvier 1612).
+
+                                                          5
+retranscrire, visuellement, l'évolution, chronologique et géographique de chacune de ces relations.
+Certaines sont ponctuelles, d'autres suivies ; certaines sont liées au seul exercice diplomatique,
+d'autres sont antérieures à l'obtention d'une charge diplomatique dans l'Empire, d'autres encore se
+poursuivent après le retour en France du résident, soit autant d'éléments qui participent de la vie de
+ces réseaux, soumis aux aléas politiques, diplomatiques, voire personnels, sans qu'il ne soit encore
+possible, à ce stade des recherches, d'en évaluer avec précision l'évolution et l'interdépendance avec
+celle du contexte européen. Il n'a pas non plus été possible de rendre visible ici la variété des
+relations nouées par les résidents français : relation restituée grâce à une correspondance conservée,
+intégralement ou partiellement, mention par un tiers avec toute leur complexité d'interprétation. Peu
+de mentions font clairement état d'une correspondance. Le plus souvent, elles consistent en des
+demandes de salutations ou de transmissions d'information. Rien ne permet d'en connaître les
+implications épistolaires, sociales ou politiques : simple salutation à une connaissance commune,
+témoignage d'amitié, reconnaissance d'une correspondance ponctuelle ou suivie.
+Seuls un croisement incessant des sources et une retranscription de toute mention de connaissance
+ou de correspondance peuvent permettre de s'approcher d'une reconstitution fidèle et complète des
+échanges. À ce jour, cette reconstitution s'appuie sur les correspondances, en lien avec l'Empire soit
+par l'appartenance sociale ou politique de l'épistolier, soit par sa résidence physique outre-Rhin 29,
+conservées en France, les correspondances déjà éditées et en lien direct avec Hotman ou Sainte-
+Catherine30 ainsi que sur les réseaux déjà reconstitués par Ruth Kohlndorfer-Fries et Axel Walter
+dans le cadre de leurs monographies sur Bongars et Hotman. Elle a pour objectif d'intégrer par la
+suite les correspondances conservées à l'étranger, à destination d'autres pôles que l'Empire et enfin
+les correspondances entre les autres membres de ces réseaux tels que Jacques-Auguste de Thou,
+Isaac Casaubon ou Philippe Duplessis-Mornay, qui constituent autant de sources indirectes sur la
+pratique épistolaire, sociale et politique des résidents français.
+
+
+                  [Fig. 2]Réseaux franco-impériaux de Hotman et de Sainte-Catherine
+
+
+Une intégration immédiate dans les réseaux protestants
+
+29 Les années anglaises de Jean Hotman ont donné lieu à une correspondance abondante, conservée à la British
+   Library et à la Bibliothèque nationale de France (voir notamment Guillaume POSTHUMUS MEYJES, Jean Hotman's
+   English Connection, Amsterdam, Koninklijke Nederlandse Akademie van Wetenschappen, 1990 ; Correspondance
+   inédite de Robert Dudley, comte de Leycester et de François et Jean Hotman, éd. P. J. Block, Haarlem, Loosjes,
+   1911). De la même manière, les liens de Sainte-Catherine avec la Suisse et la Suède n'ont pas été intégrés dans cette
+   étude.
+30 The correspondence of Hugo Grotius, éd. P.C. Molhuysen, B.L. Meulenbroeck, P.P. Witkam et al., Amsterdam,
+   Huygens Instituut, 2009, http://grotius.huygens.knaw.nl/years; V. cl. Gulielmi Camdeni et illustrium virorum ad G.
+   Camedenum epistolae..., Londres, Richard Chriswell, 1691 ; Isaaci Casauboni epistolae insertis ad easdem
+   responsionibus..., Amsterdam, Casparis Fritsch et Michaelis Böhm, 1709.
+
+                                                           6
+       L'intégration de Hotman et de Sainte-Catherine, dès le début de leur résidence, dans la société
+calviniste érudite de l'Empire ne fait aucun doute et ce sans pouvoir être attribuée à la qualité, bien
+que réelle, de leur pratique diplomatique. En décembre 1612, quelques mois à peine après le début
+de sa résidence auprès de l'électeur palatin, Sainte-Catherine devient le parrain de l'un des enfants
+de Lingelsheim31. Plus encore, en avril 1611, avant son départ de la Cour, Sainte-Catherine
+entretient une correspondance avec Benjamin Buwinckhausen de Walmerode, conseiller du duc de
+Wurtemberg, qui n'hésite pas à s'adresser au futur résident français comme à « un beau et parfaict
+amy »32. Conseiller du roi, Sainte-Catherine a été successivement envoyé en Suède (1605-1606),
+aux Provinces-Unies pour assister le président Jeannin dans sa négociation (1607-1608)33, puis vers
+la duchesse de Deux-Ponts et son fils (1609)34. Bien qu'aucune correspondance antérieure à 1612
+n'ait été conservée et ne puisse le confirmer, ces envois permirent certainement à Sainte-Catherine
+de nouer nombre de contacts avec la société calviniste impériale et plaident en faveur d'une
+insertion progressive mais préalable à sa résidence auprès de l'électeur palatin.
+La correspondance de Hotman, telle qu'elle a été conservée, ne permet pas non plus de reconstruire
+précisément la chronologie de son insertion dans cette société calviniste impériale. Les premières
+dépêches conservées, adressées par Hieronymus Curion, conseiller privé du landgrave de Hesse, à
+Hotman datent de 1610, soit près d'un an après son arrivée à Düsseldorf. Contrairement à Sainte-
+Catherine, Hotman n'a pas conduit ou assisté d'autres missions diplomatiques dans l'Empire avant sa
+résidence auprès des princes protestants. Son service auprès d'Amias Paulet, ancien ambassadeur
+anglais à Paris35, et Robert Dudley, comte de Leicester36, l'a néanmoins conduit aux Pays-Bas avant
+
+31 « Nous sommes si estroitement ensemble qu'il m'a fait l'honneur de lever du baptesme mon filz dont luy suis
+   grandement obligé » (BSHPF, ms 10 V, fol. 10, Hotman à Lingelsheim, Düsseldorf, 20 décembre 1612). Quelques
+   années plus tard, Philémon Clasquin, conseiller du landgrave de Hesse, demandera à son tour à Sainte-Catherine
+   d'être le parrain de sa fille (BnF, fr. 4117, fol. 121, Clasquin à Sainte-Catherine, Stuttgart, 30 décembre 1623).
+32 BnF, fr. 4117, fol. 43, Buwinckhausen à Sainte-Catherine, Stuttgart, 20 avril 1611.
+33 Madeleine HAEHL, Les affaires étrangères au temps de Richelieu : le secrétariat d'État, les agents diplomatiques
+   (1624-1642), Paris, Direction des Archives/Ministère des Affaires étrangères, 2006, p. 281. Première, courte, notice
+   réalisée sur Sainte-Catherine, celle-ci n'est pas exempte de quelques inexactitudes, liées au caractère encore
+   nébuleux de la biographie du résident français. Madeleine Haehl omet ainsi la mission confiée à Sainte-Catherine
+   dans l'Empire en 1609 et date la fin de sa résidence en 1628, Sainte-Catherine demeurant présent dans certains états
+   des gages malgré un rappel dès juin 1620. Enfin, une quittance adressée à Sainte-Catherine pour financer son envoi
+   en France à la demande du président Jeannin, alors à La Haye, permet de dater le début de la mission de Sainte-
+   Catherine aux Provinces-Unies en 1607 et non 1608 (BnF, Pièces Originales 2746 ; cité par Sven ANDOLF, Relation
+   du royaume de Suède... op. cit., p. 10).
+34 Instruction donnée à Sainte-Catherine : BnF, Dupuy 927, fol. 116v-125, novembre 1609. Cette copie, comme les
+   autres copies présentes à la BnF, remplace au fil du texte le nom de Sainte-Catherine par celui de Badouere. La
+   confusion s'explique par l'envoi rapproché des deux hommes dans des régions voisines, Badouere étant envoyé à
+   Düsseldorf le 6 août 1609 (BnF, fr. 23514, fol. 221-228, « Instruction au sieur Badouere allant en Allemagne le VIe
+   aoust 1609 », s.l., 6 août 1619). Malgré cette confusion et l'absence de toute correspondance liée à cet envoi, celui-
+   ci est également attesté par l'Histoire universelle (Histoire universelle de Jaques-Auguste de Thou avec la suite par
+   Nicolas Rigault..., Bâle, Jean-Louis Brandmuller, 1742, t. 10, p. 276).
+35 Mona GARLOFF, Irenik, Gelehrsamkeit und Politik... op. cit., p. 49.
+36 Fernand SCHICKLER, « Hotman et son temps », op. cit., p. 102-103 ; Mona GARLOFF, Irenik, Gelehrsamkeit und
+   Politik... op. cit., p. 50. Sur le séjour anglais de Hotman, voir plus largement, Guillaume POSTHUMUS MEYJES, Jean
+
+                                                            7
+de rejoindre le service du roi et accompagner, comme secrétaire, son oncle, François de
+Mortefontaine, envoyé en 1597 comme ambassadeur à Soleure37. Bien que n'ayant jamais résidé
+dans l'Empire pour l'exercice d'une charge diplomatique ou l'accomplissement de ses études 38,
+Hotman fait preuve d'une réelle proximité avec certains membres de la société palatine, et ce
+plusieurs années avant son envoi comme résident, comme en témoigne une dépêche de Bongars à
+Joachim Camerarius le Jeune en juin 1598 : « J'ai vu Monsieur Hottoman en partant de Basle. Il
+vous fait ses complimens. L'écrit touchant la messe, que vous aviez envoyé pour lui, a été trouvé
+par Monsieur Othomare »39. Fondée, originellement, non sur les qualités propres de Hotman, cette
+insertion dans la société calviniste semble être la conséquence directe de la haute réputation dans
+laquelle est tenu son père, François Hotman. Humaniste et juriste reconnu 40, François Hotman
+entretient une large correspondance au-delà des frontières du royaume, notamment avec le
+landgrave Georges Ier de Hesse-Darmstadt, qui lui verse une pension 41 en contrepartie de rapports
+informationnels réguliers42. Profitant de la faveur dont bénéficie son père, Jean Hotman offrira à
+plusieurs reprises, en 1583 puis en 1593, son service au nouveau landgrave, Maurice de Hesse, sans
+succès toutefois43. Si l'aura de François Hotman constitue un utile, bien qu'insuffisant, sésame pour
+Jean Hotman, son profond attachement aux idées calvinistes, confession partagée par l'électeur
+palatin, les Provinces-Unies et depuis 1605 par le landgrave de Hesse 44, lui ouvre les portes de cette
+société impériale dont il partage les principales préoccupations45.
+
+   Hotman's English Connection... op. cit.
+37 Mona GARLOFF, Irenik, Gelehrsamkeit und Politik... op. cit., p. 57. Ferdinand Schickler fait également mention de
+   diverses missions de Hotman en Allemagne aux côtés de Bongars au tournant du XVIIe siècle (Fernand SCHICKLER,
+   « Hotman et son temps », op. cit., p. 108). Rien dans les sources, ni même dans les monographies de Mona Garloff
+   et de Ruth Kohlndorfer-Fries ne vient confirmer cette assertion.
+38 Hotman n'a pas fait son droit au sein des principales universités impériales, comme Bongars (Ruth KOHLNDORFER-
+   FRIES, Diplomatie und Gelehrtenrepublik... op. cit., p. 21), mais à Genève puis à Bourges (Mona GARLOFF, Irenik,
+   Gelehrsamkeit und Politik... op. cit., p. 43).
+39 Lettres de Jaques de Bongars, resident et ambassadeur du roi Henri IV vers les electeurs, princes et Etats
+   protestants d'Allemagne en latin et en françois, La Haye, Adrian Moetjens, 1695, p. 621, Bongars à Camerarius,
+   Strasbourg, 1er juin 1598 ; cité par Ruth KOHLNDORFER-FRIES, Diplomatie und Gelehrtenrepublik... op. cit.,
+   p. 154n.
+40 Donald KELLEY, François Hotman : a revolutionary's ordeal, Princeton, Princeton University Press, 1973.
+41 Thomas NICKLAS, « Repenser la politique : Visions protestantes au lendemain de la Saint-Barthélemy », Bulletin de
+   la société de l'histoire du protestantisme français, t. 153 (avril-mai-juin 2007), p. 166.
+42 François Hotman a également été envoyé pour le compte d'Antoine de Bourbon aux côtés de l'ambassadeur de
+   Charles IX, Jacques d'Angennes, seigneur de Rambouillet (Matthieu GELLARD, Une reine épistolaire : lettres et
+   pouvoir au temps de Catherine de Médicis, Paris, Garnier, 2014, p. 206). La participation diplomatique de Hotman
+   étant encore peu connue, il est difficile d'estimer l'influence de cet envoi sur ses amitiés impériales.
+43 Hessische Staatsarchiv Marburg (HStAM), 4 f Frankreich 578 (1583) ; HStAM, 4 f Frankreich (1593) ; cité par
+   Mona Garloff, Irenik, Gelehrsamkeit und Politik... op. cit., p. 187-188. Les dépêches originales n'ont pu être
+   consultées dans le cadre de cet article.
+44 Thomas NICKLAS, « Repenser la politique » op. cit., p. 167.
+45 Cette assimilation entre confession de l'agent diplomatique et confession du prince auprès duquel une résidence est
+   établie est une constante de la diplomatie française au début de XVIIe siècle. Elle permet de ménager les
+   susceptibilités politiques et confessionnelles des princes et facilite ainsi la prise d'informations et d'influence (Jean
+   HOTMAN, L'ambassadeur, Paris, s.n., 1603, p. 7-9).
+
+                                                             8
+Bien que moins impliqué dans la définition d'un protestantisme royal qui concilierait coexistence
+confessionnelle et fidélité au roi dans la lignée des Politiques, Sainte-Catherine fait preuve d'un
+attachement aux idées et intérêts calvinistes similaire dans son intensité mais ancré davantage dans
+une réalité quotidienne, à l'image de sa correspondance régulière avec Louis de La Haye 46 et
+Girard47 sur la situation huguenote. Il n'est alors guère surprenant de voir apparaître parmi les
+correspondants de Sainte-Catherine quelques ministres protestants comme Pierre du Moulin 48,
+premier pasteur du temple de Charenton ou Jacques de Jaucourt, sieur de Rouvray, député général
+des Églises réformées à la Cour49. En sus de ces relations, ponctuelles mais pleines de sens, Sainte-
+Catherine lui-même paraît disposer d'une place de choix au sein de la communauté huguenote :
+« Plusieurs gens d'honneur de la religion nous voyans ainsy mal-menez s'adviserent de s'aider, pour
+nostre avancement, des cognoissances et amitiez qu'ils ont en Allemagne, envoyans plusieurs lettres
+de recommandation et tesmoignages dont quelques uns de celles quy viennent de meilleure part
+s'addressent à vous, Monsieur, à cause de vostre reputation et du reng que vous tenez »50. Cinq
+dépêches conservées lui sont adressées, non comme représentant du roi mais comme membre de la
+communauté huguenote, le plus souvent pour une recommandation à l'occasion d'un voyage, ou
+plutôt d'un exil, dans l'Empire à l'image de ce gentilhomme nouvellement converti, La Garde, qui
+s'en remet à lui pour fuir sa famille.
+Prolongement de ces attachements politiques et confessionnelles51, l'humanisme tardif achève de
+donner sens à l'immensité de ces réseaux entre France et Empire. Les correspondances de Sainte-
+Catherine se ressentent certes peu de sa fréquentation de certains des principaux membres de cette
+nouvelle République des Lettres comme Lingelsheim ; les sujets de ses dépêches demeurent
+politiques, diplomatiques, confessionnels ou personnels. Seules deux mentions littéraires
+ressortent : les transmissions à Lingelsheim en 1622 d'un livre de Grotius 52 et à Philémon Clasquin
+en 162653 des mémoires de Duplessis-Mornay54 ainsi que de la traduction de l'histoire des
+
+46 Il s'agit peut-être Louis de La Haye, orfèvre du roi et ancien garde ordinaire des bagues de la reine Marguerite de
+   Valois.
+47 Girard est au service de Mathurin Gueretin, résident à Paris pour l'électeur palatin (BnF, fr. 4116, fol. 76, Girard à
+   Sainte-Catherine, Paris, 15 février 1618).
+48 BnF, fr. 4116, fol. 85. Sur Pierre du Moulin, voir Lucien RIMBAULT, Pierre du Moulin (1568-1658), un pasteur
+   classique à l'âge classique : étude de théologie pastorale sur des documents inédits, Paris, Vrin, 1966.
+49 BnF, fr. 4116, fol. 27-30
+50 BnF, fr. 4117 fol. 138-139, La Garde à Sainte-Catherine, Dourlach, 12 août 1619.
+51 Späthumanismus und reformierte Konfession : Theologie, Jurisprudenz und Philosophie in Heidelbeg an der
+   Wende zum 17. Jahrhundert, dir. Christoph Strohm, Joseph Freedman et al., Tübingen, Mohr Siebeck, 2006.
+52 BnF, fr. 4122, fol. 110, Lingelsheim à Sainte-Catherine, Strasbourg, 13 octobre 1622.
+53 BnF, fr. 4117, fol. 130, Clasquin à Sainte-Catherine, s.l., 27 janvier 1626.
+54 Mémoires de messire Philippes de Mornay, seigneur du Plessis Marli, baron de la Forest sur Sevre etc., conseiller
+   du roi en ses conseils d'Estat et privé, […] contenans divers discours, instructions, lettres et depesches par lui
+   dressées ou escrites aux rois, roines, princes, princesses, seigneurs et plusieurs grands personnages de la
+   Chrestienté depuis l'an CIƆIƆLXXII jusques à l'an CIƆIƆLXXXIX ; ensemble quelques lettres des dessusdits audit sieur
+   du Plessis, La Forest, J. Bureau, 1625.
+
+                                                           9
+différends entre Venise et Paul V de Fra Paolo55. Moins flamboyant, l'humanisme de Sainte-
+Catherine n'en est pas moins véritable, par la qualité de ses relations et lectures, par ses fréquentes
+sollicitations auprès de Pierre Mareschal, libraire à Heidelberg, pour obtenir les derniers ouvrages56.
+Hotman, comme Lingelsheim ou Bongars, fait quant à lui partie des figures actives de l'humanisme
+tardif depuis son arrivée à Oxford en 158057. Sans pouvoir être compté parmi les auteurs les plus
+prolifiques ou renommés de ce début du XVIIe siècle, Hotman s'emploie activement au sein de cette
+République des Lettres par le biais de traductions 58, d'éditions59 et de publications propres comme
+L'ambassadeur60 ou le Syllabus aliquot synodorum et colloquiorum, véritable bibliographie
+contemporaine61. L'activité de Hotman s'avère tout aussi remarquable sur le plan épistolaire,
+correspondant, en français ou en latin, avec les grandes figures de l'humanisme tardif comme Hugo
+Grotius62 ou Jacques-Auguste de Thou63. Cette double activité humaniste entre en parfaite résonance
+avec l'activité diplomatique de Hotman. Si la rédaction de son traité L'ambassadeur, directement
+inspirée de ses connaissances, observations et expériences anglaises, en est la manifestation la plus
+évidente, la correspondance entre Hotman et de Thou offre un témoignage plus courant de l'extrême
+porosité entre la collecte d'informations dans le cadre de l'exercice diplomatique et la transmission
+d'informations à des correspondants extérieurs au réseau diplomatique officiel. De Thou oeuvrant à
+son Historia sui temporis64, Hotman lui transmet tout opuscule, livret ou information qu'il juge
+susceptible de contribuer à cet effort de documentation et d'écriture universelles 65. Malgré une
+orientation érudite claire – les références à l'Historia sui temporis et recommandations de lectures
+émaillent les dépêches de Hotman –, les considérations politiques demeurent sous-jacentes.
+Expression d'une inquiétude réelle face aux bouleversements politico-confessionnels, ces
+
+55 Histoire des differens entre le pape Paul V et la République de Venise ès années 1605, 1606 et 1607. Traduite
+   d'Italien de françois, Paris, Bouillerot, 1625.
+56 BnF, fr. 4116, fol. 91, Mareschal à Sainte-Catherine, Heidelberg, 4 décembre 1621.
+57 Guillaume POSTHUMUS MEYJES, Jean Hotman's English Connection, op. cit., p. 7.
+58 Hotman traduit notamment le Basilikon Doron du roi Jacques VI d'Écosse en français en 1603. Voir sur le travail de
+   Hotman comme traducteur, Marie-Céline DANIEL, « A diplomat and a translator : Jean Hotman and the good use of
+   translations for a soft diplomacy », Caliban, t. 53 (2015), p. 35-50.
+59 Hotman a édité les œuvres inédites de son père, François Hotman, et de son oncle, Jean Hotman d'Infandic, dont
+   certaines furent rassemblées en même recueil en 1617 : Opuscules françoises, Paris, Veuve M. Guillemot, 1617.
+60 Jean HOTMAN, L'ambassadeur, s.l., s.n., 1603.
+61 Jean HOTMAN, Syllabus aliquot synodorum et colloquiorum..., s.l., s.n., 1628 ; voir Mona GARLOFF, Irenik,
+   Gelehrsamkeit und Politik... op. cit., p. 208-211.
+62 BnF, Lat. 8586 et Dupuy 16. Voir également l'édition réalisée par le Huygens Instituut: The correspondence of
+   Hugo Grotius, éd. P.C. Molhuysen, B.L. Meulenbroeck, P.P. Witkam et al., Amsterdam, Huygens Instituut, 2009
+   [http://grotius.huygens.knaw.nl/years].
+63 BnF, Dupuy 830, fol. 129-138 ; lat. 8586, fol. 351-352 : lettres de Hotman à de Thou (1609-1613).
+64 Jacques-Auguste de Thou : écriture et condition robine, Paris : PUPS, 2007 ; Robert DESCIMON, « Jacques Auguste
+   de Thou (1553-1617) : une rupture intellectuelle, politique et sociale », Revue de l'histoire des religions, t. 226/3
+   (2009), p. 485-495.
+65 BnF, Dupuy 830, fol. 136, Hotman à De Thou, Düsseldorf, 1er février 1613. Hotman est par ailleurs à l'origine de la
+   première traduction de la préface de l'Historio sui temporis (Préface de monsieur le president de Thou sur la
+   premiere partie de son Histoire, mise en François par le sieur de V.H., Paris, Pierre Le Bret, 1604).
+
+                                                          10
+considérations révèlent une vision commune aux deux hommes et à nombre de leurs
+correspondants – le protestantisme royal que professe Hotman n'est guère éloigné du catholicisme
+royal de de Thou et de son entourage 66 – autour de laquelle peut se développer un véritable échange
+européen d'informations et d'opinions.
+
+
+      L'ampleur des échanges dépasse néanmoins la seule érudition politique ou historique et oblige
+à s'interroger sur leur influence dans la prise de décision politique et diplomatique. Pour une grande
+majorité, ces épistoliers sont conseillers d'État, membres influents des principales institutions de
+leur État. Au-delà de la correspondance entre Hotman et de Thou qui pose comme réalité la porosité
+entre rapports diplomatiques officiels et échanges érudits, une porosité plus large entre exercice
+diplomatique, préoccupations confessionnelles et réseaux politico-érudits paraît tout aussi inévitable
+tant les liens entre les résidents français et certains ministres impériaux paraissent étroits. Les
+ministres les plus influents de la partie calviniste de l'Empire – Georg Michael Lingelsheim,
+Andreas Paul, Wolrad von Plessen, conseillers de l'électeur palatin, Hieronymus Curion, conseiller
+du landgrave de Hesse, Benjamin Buwinckhausen, seigneur de Walmerode, conseiller du duc de
+Wurtemberg, etc. – correspondent avec Hotman, Sainte-Catherine et avant eux Bongars. À ces
+ministres, il faut ajouter nombre d'agents diplomatiques étrangers comme Mathurin Gueretin ou
+Adolph von Borstel, agents à Paris respectivement pour l'électeur palatin et les princes unis, ou
+encore Pieter Cornelisz Brederode, agent des Provinces-Unies à Heidelberg. Atouts indiscutables
+par l'accès privilégié à l'information que de semblables relations octroient, ces relations ne furent
+jamais reprochés à Hotman ou à Sainte-Catherine.
+La qualité et l'ampleur des réseaux d'informations et d'influence demeure la préoccupation
+principale du secrétaire d'État des Affaires étrangères. En ce sens, Hotman et Sainte-Catherine,
+malgré l'ancrage résolument personnel de leurs réseaux, satisfont entièrement aux besoins de la
+diplomatie française : Sainte-Catherine entretient quarante-quatre relations et Hotman cinquante-
+quatre. Leurs réseaux se distinguent néanmoins par leur extrême imbrication. Seuls six
+correspondants ne sont pas rattachés à un autre membre du réseau – Jacques de Jaucourt, sieur de
+Rouvray, Charles de Marconnay, sieur de Chasteauneuf, Christophe Justel, La Garde, Kolb et
+Montz – et tous sont l'auteur d'une unique dépêche, n'appelant aucune relation suivie mais
+uniquement un soutien ponctuel et les plaçant de fait à la marge de ce réseau. Seul Rouvray semble
+entretenir une correspondance plus régulière avec Sainte-Catherine en l'informant de la situation
+huguenote67. Pour tous les autres correspondants, les relations sont suivies et étroitement
+66 Robert DESCIMON, « La bibliothèque de Jean Hotman de Villiers », Conflits politiques, controverses religieuses, dir.
+   Ouzi Elyada, Jacques Le Brun, Paris, Éditions de l'ÉHESS, 2002, p. 212.
+67 Trois dépêches, rédigées entre 1612 et 1614, ont été conservées (BnF, fr. 4116, fol. 27-31).
+
+                                                          11
+imbriquées, obligeant à les considérer comme l'expression multiple d'une même société épistolaire.
+Les membres de cette société ne communiquent pas tous entre eux mais s'organisent autour de
+communautés d'intérêts ou d'activités, qui interagissent par l'intermédiaire d'un ou plusieurs de leurs
+membres et dont le point de convergence se trouve dans une culture, ou érudition, politique
+bienveillante à l'égard de la cause protestante.
+
+
+
+  [Fig. 3] Origine géographique des correspondants impériaux de Hotman et de Sainte-Catherine
+
+Présente dans toute la partie nord de l'Europe (Angleterre, France, Provinces-Unies, Empire et
+Suisse), cette société s'articule, outre-Rhin, autour des principaux pôles politiques de l'Empire
+calviniste – le Palatinat du Rhin, le landgraviat de Hesse et plus modestement les électorat de
+Brandebourg, par le biais du duché de Clèves, et duché de Wurtemberg – , jusqu'en 1621 et
+l'invasion du Palatinat qui modifie le centre de gravité de celle-ci au profit de la Suisse et des
+Provinces-Unies. Sur les 300 dépêches de Sainte-Catherine n'émanant pas directement de l'autorité
+royale, aucune n'émane d'autres parties de l'Europe, au profit d'une concentration forte, et logique,
+dans l'Empire (215 dépêches). Les 85 autres dépêches proviennent quant à elle du royaume de
+France (45 dépêches)68, du royaume de Suède (37 dépêches)69 et des cantons suisses (3 dépêches)70.
+Si les correspondants suédois de Sainte-Catherine interagissent peu, les autres correspondants
+français comme suisses participent de l'animation de cette société épistolaire. Delisle, diplomate
+suisse et auteur des trois dépêches émanant de l'espace helvétique, demeure régulièrement à Paris
+où il est envoyé pour représenter les intérêts des cantons. Gueretin, Girard et Borstel sont
+directement au service de l'électeur palatin et des princes unis. Par ailleurs, les autres
+correspondants parisiens de Sainte-Catherine, hormis Pierre Jeannin et le sieur de Montz, dont nous
+ignorons tout, sont calvinistes et pour certains actifs au sein de la société huguenote. L'inscription
+confessionnelle est réelle et complète une appartenance territoriale et politique double, résolument
+entre France et Empire.
+
+
+68 13 dépêches de Girard (BnF, fr. 4116, fol. 59-81) ; 12 dépêches de Louis de La Haye (BnF, fr. 4116, fol. 46-58) ; 3
+   dépêches de Gaspard Coignet de la Thuillerie (BnF, fr. 4116, fol. 32-36) ; 3 dépêches de Jacques de Jaucourt, sieur
+   de Rouvray (BnF, fr. 4116, fol. 27-30) ; 1 dépêche de Beaulieu (BnF, fr. 4116, fol. 83) ; 1 dépêche de Bigot (BnF,
+   fr. 4116, fol. 94) ; 1 dépêche de Pierre Du Moulin (BnF, fr. 4116, fol. 85) ; 1 dépêche de Mathurin Gueretin (BnF,
+   fr. 4116, fol. 99) ; 1 dépêche de Christophe Justel (BnF, fr. 4116, fol. 93) ; 1 dépêche de La Garde (BnF, fr. 4117,
+   fol. 138) ; 1 dépêche de Charles de Marconnay, sieur de Chasteauneuf (BnF, fr. 4116, fol. 38) ; 1 dépêche de Montz
+   (BnF, fr. 4116, fol. 98).
+69 31 dépêches de Jean de la Blanque, consul français à Dantzig (BnF, fr. 4117, fol. 8-41) ; 3 dépêches de Jacob de la
+   Gardie, grand connétable de Suède (BnF, fr. 4117, fol. 4-6) ; 1 dépêche de Carl Gyllenhielm, fils naturel de
+   Charles IX de Suède (BnF, fr. 4117, fol. 142) ; 1 dépêche de Theophilus Homodei, médecin et ancien ambassadeur
+   suédois aux Provinces-Unies (BnF, fr. 4117, fol. 144) ; 1 dépêche de Thomas Fabricius, pasteur à Dantzig (BnF,
+   fr. 4117, fol. 146).
+70 BnF, fr. 4116, fol. 40-44.
+
+                                                          12
+Tout comme Sainte-Catherine, Hotman s'insère parfaitement dans la territorialité de cette société
+épistolaire, avec un spectre géographique toutefois plus étendu 71. Ses correspondances sont de la
+même manière dirigées vers le Palatinat, le landgraviat de Hesse ainsi que vers la Cour de France
+mais tiennent compte de la diversité des autres centres décisionnels et érudits de l'Empire (duché de
+Clèves, électorat de Cologne, etc.). Le cœur du réseau demeure cependant identique à celui de
+Sainte-Catherine. Le lieu de résidence de Hotman, à Düsseldorf, conjugué à un contexte
+diplomatique délicat, la crise de Juliers-Clèves72, contribuent à expliquer l'ancrage plus
+septentrional du réseau de Hotman. Leurs réseaux parisiens, quant à eux, diffèrent plus largement,
+malgré quelques permanences autour des ambassadeurs impériaux et révèlent en filigrane la place
+des deux résidents au sein de cette société : Sainte-Catherine est un membre actif de la communauté
+huguenote, Hotman de la République des Lettres.
+
+
+
+      Une permanence épistolaire après la résidence diplomatique
+      Plus encore que la qualité de l'insertion des résidents français dans ces sociétés calvinistes
+impériales, sa pérennité est remarquable. Les correspondances établies dans l'Empire par Jacques
+Bongars lors de son envoi comme résident en 1589 perdurent après son retour en France et sont
+reprises, pour partie, par Hotman et Sainte-Catherine. Pas un conseiller influent de l'Union
+n'échappe à cette véritable toile tissée progressivement depuis l'avènement de Henri IV.
+Lingelsheim, Gueretin, Plessen, Curion, Malapert, Widemarker, D'Athènes, tous font l'objet d'une
+correspondance ou de relations suivies avec Hotman, Sainte-Catherine ou parfois avec chacun
+d'eux. Les correspondances avec les principaux conseillers ainsi qu'avec les informateurs
+pensionnés sont attachées à la charge et non à l'homme qui l'exerce. Toutes les relations de Bongars
+ne sont cependant pas reprises par se successeurs et n'ont pas vocation à l'être. Certaines relations
+personnelles disparaissent totalement, tandis que d'autres sont maintenues par Bongars lui-même 73.
+Construit par un agent sur le fondement de besoins politiques, celui-ci s'appuie sur une structure
+fixe mais se déploie en appui à certaines qualités personnelles, voire à un attachement à la personne
+même du résident. L'absence de continuité dans le lieu de résidence – Bongars réside entre
+Francfort et Strasbourg, Hotman à Düsseldorf et Sainte-Catherine à Heidelberg – oblige plus
+71 Ses correspondances font également apparaître un troisième centre épistolaire en Angleterre, non représenté ici,
+   conséquence directe de ses premières charges (Guillaume POSTHUMUS MEYJES, Jean Hotman's English
+   Connection, op. cit.).
+72 Alison ANDERSON, On the verge of war : international relations and the Jülich-Kleve succession crisis (1609-
+   1614), Boston, Humanities Press, 1999.
+73 Ruth KOHLNDORFER-FRIES, Diplomatie und Gelehrtenrepublik ... op. cit., p. 83. Contrairement à Sainte-Catherine
+   et Hotman, le maintien des correspondances impériales de Bongars est encouragé et mis à profit, lors de son retour
+   en 1609, par Henri IV, puis par Marie de Médicis qui, dans le cadre de la crise de succession des duchés de Juliers
+   et de Clèves, cherche à conserver les liens établis par le feu souverain.
+
+                                                         13
+encore à une réinvention partielle mais permanente des correspondances.
+
+Le rappel de Sainte-Catherine en 1620 suite au refus du roi de France de reconnaître à l'électeur
+palatin le titre de roi de Bohême 74 remet en question cette semi-permanence du réseau diplomatique
+français dans la partie protestante de l'Empire. Malgré le maintien d'un informateur régulier en
+Hanau, Caspar-Simon de Masan75, aucun résident ne vient prendre la suite de Sainte-Catherine, y
+compris auprès d'un autre potentat de l'Union76. Des relations entre la France et l'Empire perdurent,
+sous une autre forme toutefois. Sur les vingt-cinq relations établies par Sainte-Catherine pendant sa
+résidence, dix-huit survivent à son retour en France, tandis que les sept autres n'avaient aucune
+vocation à s'inscrire dans la durée (demandes ponctuelles) ou ont subi le décès du correspondant
+comme ce fut le cas pour Curion. Plus encore, deux nouvelles relations se font jour, avec Delisle et
+Clasquin, et des correspondances viennent remplacer des relations jusqu'alors fondées sur l'oralité.
+Ne pouvant plus communiquer de vive voix, les « amis » de Heidelberg doivent désormais recourir
+à la lettre pour poursuivre leurs échanges avec Sainte-Catherine. Ainsi voit-on éclore dès le mois de
+mai 1620 une correspondance fournie entre Lingelsheim et Sainte-Catherine 77. Si, dans ce cas,
+l'éloignement de Sainte-Catherine est clairement à l'origine du recours au média épistolaire et
+poursuit une relation déjà établie, dans d'autres cas le lien est plus délicat à affirmer. La première
+dépêche de Philémon Clasquin, secrétaire du duc de Wurtemberg, en date du 28 mars 1621, aborde
+en première intention nombre de sujets politiques sans se référer à une quelconque prise initiale de
+contact78. Malgré la suggestion implicite d'une correspondance ancienne entre les deux hommes, il
+est impossible de situer avec précision l'origine de cette relation en amont ou en aval de la résidence
+de Sainte-Catherine auprès de l'électeur palatin. Le maintien intégral des correspondances de
+Sainte-Catherine est néanmoins exceptionnel, suggérant une dimension personnelle pour chacune
+d'entre elles et laissant entrevoir d'éventuels manques (informateurs ponctuels) qui augmenteraient
+d'autant un réseau déjà considérable au regard de l'enjeu diplomatique relatif que représente le
+Palatinat. Dans des proportions plus traditionnelles,Hotman voit son réseau amputé de plus de deux
+tiers de ses correspondants au profit d'un recentrage autour des principaux ministres, par ailleurs
+membres de l'humanisme tardif : Lingelsheim, Plessen, Borstel, Buwinckhausen, etc.. Les relations
+fondées sur le seul besoin d'information comme avec Nicolas Malapert, prennent fin avec sa
+résidence, tandis que les relations personnelles, construites autour d'intérêts politique ou
+74   Camille DESENCLOS, Les mots du pouvoir... op. cit., t. 1, p. 434-435.
+75   Ibid., t. 1, p. 119.
+76   La France tourne désormais ses regards vers le catholique duc de Bavière (ibid., t. 1, p. 530-542).
+77   BnF, fr. 4122, 124 dépêches (1620-1626).
+78   « Par Monsieur de Buwinckhausen, vous aurez appris de mon retour icy […]. J'ay fort particulierement parlé de
+     vous et de vos affaires à Monsieur le duc de Deux Ponts, […] de mesmes aussi à Monsieur de Buwinckhausen avec
+     lequel vous avez une bonne occasion de parler librement car je scay qu'il faict estat de vostre personne » (BnF,
+     fr. 4117, fol. 113, Clasquin à Sainte-Catherine, Stuttgart, 28 mars 1621).
+
+                                                         14
+confessionnels communs perdurent et bénéficient d'une liberté nouvelle.
+
+
+
+      En aucun cas, le maintien des réseaux de Sainte-Catherine et de Hotman ne paraît être le
+résultat d'une sollicitation royale. Ni le roi, ni le secrétaire d'État des Affaires étrangères ne
+semblent avoir saisi l'opportunité de pallier à l'absence d'une nouvelle résidence par le maintien de
+liens épistolaires. Les demandes répétées de Sainte-Catherine pour obtenir une nouvelle mission au
+service du roi, et restées sans réponse, semblent exprimer au contraire un désintérêt royal pour
+l'Union protestante et ne plaident guère en faveur de bonnes relations entre les anciens résidents et
+le secrétaire d'État, encore moins d'échanges suivis 79. Plus encore, Hotman, dans des sollicitations
+similaires à celles de Sainte-Catherine, informe le secrétaire d'État du maintien de ses réseaux
+épistolaires, qu'il justifie par son intention de poursuivre son service envers le roi 80. La demande de
+Puisieux, en mars 1619, de transmettre une dépêche du roi au landgrave de Hesse 81 inciterait à
+croire à une véritable relation nouée entre Hotman et le secrétaire d'État, voire à une survivance de
+ses réseaux dans le giron français. Cependant, seule une dépêche de Puisieux adressée à Hotman a
+été conservée et les autres dépêches entre Hotman et le landgrave de Hesse ne mentionnent
+nullement d'autres transmissions similaires. Si rôle d'intermédiaire il y eût, celui-ci a été accompli à
+la requête des princes protestants. En 1624, le landgrave de Hesse fait appel à Hotman, ainsi qu'à
+Borstel, pour assister, à la Cour de France, l'agent extraordinaire chargé de la défense de ses
+intérêts, notamment par le maintien de sa pension 82. De la même manière, l'électeur de Brandebourg
+recourt à Hotman pour représenter, régulièrement au roi l'état de ses affaires dans les pays de Clèves
+et de Juliers83.
+
+Alors que Hotman et Sainte-Catherine paraissent exclus du système diplomatique français depuis
+leur retour en France, les contacts avec la Cour demeurent, notamment avec Pierre Jeannin et Henri
+de Schomberg, comte de Nanteuil, tous deux mentionnés dans leur correspondance passive.
+Omniprésent dans la vie politique depuis l'accession au trône de Henri IV, Pierre Jeannin jouit d'une
+aura sans égale, y compris en matière de politique étrangère, plus encore après la mort de Villeroy
+qui fait de lui, avec le chancelier de Sillery, le dernier dépositaire de l'héritage politique de
+
+
+79 BnF, fr. 4114, fol. 218v, Sainte-Catherine à Puisieux, s.l., s.d.
+80 BnF, fr. 15926, fol. 193, Hotman à Puisieux, Paris, 29 août 1614 ; BnF, fr. 15928, fol. 220, Hotman à Villeroy, s.l.,
+   11 octobre 1617.
+81 « J'ay receu par ce porteur voz lettres du VIIIe de ce mois qui acompagnoient celles que Monsieur le landgrave a
+   escript au roy du contenu desquelles j'ay rendu compte à Sa Majesté qui a voulu y faire la responce cy joincte »
+   (BnF, fr. 4030, fol. 299, Puisieux à Hotman, Orléans, 11 mai 1619).
+82 HStAM, Frankreich 1255, Borstel à Maurice de Hesse, Paris, 30 octobre 1624.
+83 BnF, fr. 15929, fol. 335, Jean III Sigismond de Brandebourg à Puisieux, Clèves, 20 août 1619.
+
+                                                          15
+Henri IV84. Sa charge de surintendant des finances le rend plus incontournable encore, notamment
+pour toute demande de remboursement des sommes avancées par les princes protestants à Henri IV.
+Buwinckhausen demande ainsi en avril 1619 à Sainte-Catherine de recommander Louis-Frédéric de
+Wurtemberg, comte de Montbéliard et frère du duc de Wurtemberg, auprès de Jeannin, le comte
+venant en France à la fois pour obtenir le règlement du différend l'opposant aux Pays-Bas au sujet
+du comté de Montbéliard, et le remboursement des dettes contractées par Henri IV auprès de son
+père, le feu duc Frédéric Ier de Wurtemberg85. Schomberg, quant à lui, a noué quelques utiles
+relations86 à l'occasion de son envoi auprès des princes protestants en 161687 et jouit également
+d'une certaine influence à la Cour, comme le reconnaît Hotman : « Monsieur de Schomberg y peut
+beaucoup pour estre en grand credit pres Sa Majesté. Un mot d'exhortation de Vostre Altesse envers
+mondit sieur de Schomberg luy serviroit d'un coup d'espron, sachant combien il honore Vostre
+Altesse »88. Par la recherche d'un contact suivi, voire d'une écoute, de la part de Jeannin et de
+Schomberg, Hotman comme les ministres protestants s'efforcent de contourner, ou apaiser, la
+politique de Puisieux, jugée peu propice aux intérêts de l'Union protestante. Plessen en 1618 et
+Buwinckhausen en décembre 1621 demandent pour l'un à Hotman de faire part à Schomberg et à
+Puisieux de son opinion sur la situation dans l'Empire89 et pour l'autre à Sainte-Catherine de
+discourir avec Schomberg, Jeannin et Jean de Thuméry, sieur de Boissise, ancien ambassadeur
+français aux Provinces-Unies, sur les desseins espagnols à l'égard des Grisons et de lui transmettre
+en retour leur opinion90. Au-delà des recherches d'influence, ces demandes révèlent une certaine
+facilité d'accès, voire bienveillance de la part du président Jeannin à l'égard des anciens résidents
+comme des instigateurs de ces demandes.
+
+Si Sainte-Catherine joue un rôle politique passif, répondant simplement aux sollicitations de ses
+correspondants sans prendre l'initiative d'autres intercessions, l'activité de Hotman en faveur des
+intérêts protestants dépasse le cadre des seules sollicitations d'appui ou d'assistance et tend à le
+placer désormais hors du système diplomatique français. Hotman ne devient pas pour autant un
+agent au service des princes de l'Union protestante. En aucun cas, il ne remet en question l'autorité
+du roi mais cherche à orienter la politique étrangère française dans un sens qu'il juge plus conforme
+
+84 Voir notamment la citation que Henri Ballande reprend de la correspondance du nonce Ottavio Corsini à
+   Grégoire XV : « C'est au chancelier et au président, comme les plus âgés qu'il marque le plus d'égards. Tant qu'ils
+   seront à la Cour, il sera impossible de convaincre le roi si les deux conseillers lui donnent un avis contraire » (Henri
+   BALLANDE, Rebelle et conseiller de trois souverains : le président Jeannin 1542-1623, Paris, Barre-Dayez, 1981,
+   p. 252).
+85 BnF, fr. 4117, fol. 83, Buwinckhausen à Sainte-Catherine, Stuttgart, 26 avril 1619.
+86 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 151, Plessen à Hotman, s.l., 22 janvier 1618.
+87 Victor-Lucien TAPIÉ, La politique étrangère de la France... op. cit., p. 44-50.
+88 HStAM, Frankreich 1246, Hotman à Maurice de Hesse, Paris, 1er avril 1622.
+89 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 167, Plessen à Hotman, s.l., 3 avril 1618.
+90 BnF, fr. 4117, fol. 98, Buwinckhausen à Sainte-Catherine, Stuttgart, 22 décembre 1621.
+
+                                                           16
+aux intérêts du royaume et de son souverain. Face à l'imminence d'une élection impériale, Hotman
+s'entremet auprès du Conseil du roi en octobre 1617 en faveur de la candidature du duc de
+Bavière91, face à l'archiduc Ferdinand de Styrie, membre de la maison de Habsbourg, tant à la
+demande de l'Union que par propre conviction. De lui-même, « sans charge et par pure affection au
+commun bien »92, il tente de représenter et favoriser l'opinion palatine en démontrant la nécessité et
+utilité de cette entreprise qui n'a d'autre but que de priver la maison de Habsbourg d'une nouvelle
+couronne impériale93. Les discours de Hotman sont cependant dédaignés par Villeroy qui y oppose
+rapidement une fin de non-recevoir94. Le duc de Luynes, auquel Hotman avait transmis un mémoire
+similaire en septembre 161795, semble quant à lui n'avoir jamais donné suite aux sollicitations de
+l'ancien résident. L'absence de toute mention des discours de Hotman ou de leur audience dans les
+dépêches de Puisieux aux agents diplomatiques en poste révèle l'absence d'écoute dont souffre les
+tentatives répétées de Hotman. La disgrâce dans laquelle ce dernier est tombé auprès de Villeroy
+pour avoir tenté d'influencer la politique étrangère en faveur du parti protestant et avoir fait preuve
+de partialité dans l'exercice de son ancienne charge de résident 96 ne facilite guère ses menées en
+faveur de l'Union. Face à l'impossibilité pour Hotman d'accéder à la sphère décisionnelle, Plessen
+met fin à sa collaboration avec Hotman, devenu trop encombrant pour la diplomatie palatine, qui
+recherche désormais le soutien de l'Angleterre97.
+
+Isolé au sein de l'appareil diplomatique français ou voix d'une cause dépassant les frontières du
+royaume de France, Hotman révèle à lui seul toute la complexité du statut de ces résidents lors de
+leur retour à la Cour. Membres de réseaux politiques, confessionnels et érudits denses, leur activité
+ne peut qu'être épistolaire et indirecte en l'absence de toute charge officielle auprès du roi. La
+possible influence de Hotman est d'autant plus délicate à estimer que Sainte-Catherine s'est
+rapidement retiré de la vie de Cour, malgré quelques intercessions ponctuelles à la demande de
+ministres de l'Union. Aussi, le réseau maintenu par Sainte-Catherine n'a pas de finalité politique,
+directe du moins. Les considérations politiques sont présentes dans ses dépêches ; Lingelsheim
+relate dans chacune de ses dépêches l'évolution de la situation de l'Empire mais sous la forme
+
+91 Camille DESENCLOS, Les mots du pouvoir... op. cit., p. 417-425.
+92 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 207, Plessen à Hotman, s.l., 25 octobre 1617.
+93 BnF, fr. 15928, fol. 220, Hotman à Villeroy, s.l., 11 octobre 1617. Une copie du mémoire transmis à Villeroy pour
+   cette occasion se trouve à la Bibliothèque de l'Institut (Godefroy 487, fol. 242-246).
+94 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 206, Plessen à Hotman, s.l., 25 septembre 1617.
+95 Ibid.
+96 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 158, Plessen à Hotman, s.l., 17 février 1618. Cette accusation fait
+   certainement suite aux plaintes du duc de Neubourg en mars 1614 contre lesquelles Hotman se défend
+   immédiatement auprès de Puisieux : « Je commanceray par l'advis qu'il vous a pleu me donner […] de la plainte
+   qu'a fait faire de moy Monsieur le Palatin de Neubourg mesmes par monsieur son pere qui ne me vid oncques,
+   autant en fait-il de tous ceux qui n'espousent son party et ses opinions » (BnF, fr. 15926, fol. 92, Hotman à Puisieux,
+   Düsseldorf, 26 avril 1614).
+97 Arch. Dipl., CP, Palatinat-Deux-Ponts 3, fol. 181, Plessen à Hotman, s.l., 4 juillet 1618.
+
+                                                           17
+traditionnelle de transmission d'informations, sans prise active de position. Certaines dépêches,
+comme celles de Clasquin, sont cependant exemptes de toute connotation personnelle et s'apparent
+à de véritables dépêches informationnelles échangées entre deux conseillers en exercice. Bien que
+non utilisé, de prime abord, par une diplomatie, un circuit parallèle d'information se maintient au
+profit des protestants de l'Empire, créant une véritable communauté informationnelle, politique et
+calviniste entre la France et l'Empire dont l'intérêt tient autant à influencer les autres diplomaties
+qu'à faire circuler une information d'une qualité précieuse dans un contexte européen troublé et peu
+favorable à la cause protestante.
+
+
+
+      Outils secondaires du pouvoir royal pour maintenir une influence indirecte dans l'Empire ou
+des princes protestants pour défendre leur cause, échanges éclairés d'opinion ou expressions de la
+curiosité générale sur la situation du temps, telle est la question qui se pose à la lecture des
+correspondances de Jean Hotman et d'Étienne de Sainte-Catherine. Bien qu'appliquée à Hubert
+Languet, l'analyse de Béatrice Nicollier-De Weck prend encore tout son sens pour ce début de
+XVIIe siècle : « Peut-on tenter de comprendre quel était le ciment de ce réseau international ? Au
+
+delà des relations amicales, des échanges d'informations, de graines botaniques ou de livres, quels
+étaient les points communs entre ces hommes, qui les poussaient à communiquer et à rester en
+contact, quelles que soient les distances qui les séparaient ? À une telle question, on ne peut
+répondre que de manière très nuancée : chacun de ceux qui participaient, d'une manière ou d'une
+autre à ces échanges à travers l'Europe, avait ses propres raisons de s'intéresser à ce milieu »98. Cela
+est d'autant plus vrai pour un réseau dont aucun épicentre ne peut être observé, a fortiori lorsque les
+réseaux s'entremêlent : réseaux diplomatiques, réseaux calvinistes, réseaux humanistes, réseaux
+personnels. Considérer l'ensemble comme un seul réseau serait une erreur. Sa définition comme une
+société politique et érudite serait plus juste, comme prolongement et adaptation des grands réseaux
+réformés et érudits établis dans la seconde moitié du XVIe siècle. Comme une société, les
+divergences d'intérêts, d'opinions et même d'actions sont réelles. Pourtant, elle se définit par une
+identité commune : celle d'une vision éclairée de la situation européenne, une vision transcendant
+les confessions au profit d'une vision renouvelée de l'État et de l'Europe.
+
+
+
+
+98 Béatrice NICOLLIER-DE WECK, Hubert Languet, 1518-1581 : un réseau politique international de Melanchthon à
+   Guillaume d'Orange, Genève, Droz, 1995, p. 457.
+
+                                                      18
+

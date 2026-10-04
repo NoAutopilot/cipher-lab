@@ -1,0 +1,684 @@
+       The BACK IN TIME Project : A User-Centred Platform for
+                 Encrypted Historical Documents
+    Cécile Pierrot, Benjamin Kiessling, Thibault Clérice, Camille Desenclos, Gaspard
+                         Damoiseau-Malraux, Michaël Mera, Hassen Aguili
+
+
+
+      To cite this version:
+     Cécile Pierrot, Benjamin Kiessling, Thibault Clérice, Camille Desenclos, Gaspard Damoiseau-Malraux, et al..
+     The BACK IN TIME Project : A User-Centred Platform for Encrypted Historical Documents. HistoCrypt 2026
+     - 9th HistoCrypt conference, Jun 2026, Amiens, France. ⟨hal-05727769⟩
+
+
+
+
+                                        HAL Id: hal-05727769
+                              https://hal.science/hal-05727769v1
+                                           Submitted on 26 Aug 2026
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+           Distributed under a Creative Commons CC BY 4.0 - Attribution - International License
+                             The BACK IN T IME Project
+               A User-Centred Platform for Encrypted Historical Documents
+
+
+      Cécile Pierrot                  Camille Desenclos                      Michaël Mera
+  Inria, Nancy, France∗              Université de Picardie               Inria, Nancy, France∗
+  cecile.pierrot@inria.fr            Inria, Nancy, France∗                 michael.mera@inria.fr
+                                 camille.desenclos@u-picardie.fr
+
+
+  Benjamin Kiessling         Gaspard Damoiseau-Malraux                        Hassen Aguili
+   Inria, Paris, France     Sorbonne Université, CNRS, LIP6                 Inria, Paris, France
+benjamin.kiessling@inria.fr     & Inria, Nancy, France∗                    hassen.aguili@inria.fr
+                                       gaspard.dama@lip6.fr
+                                                                                ∗
+    Thibault Clérice                                                                is the short for:
+   Inria, Paris, France                                                      Université de Lorraine
+ thibault.clerice@inria.fr                                                    CNRS, Inria, LORIA
+                                                                            F- 54000 Nancy, France
+
+
+
+
+                Abstract                                  lished scholarly practices. Initial imple-
+                                                          mentations will focus on Western Euro-
+Since the Late Middle Ages, sensitive cor-                pean scripts and languages, as well as on
+respondence (political, diplomatic, mili-                 manually encrypted documents (up to the
+tary, etc.) has frequently been encrypted.                early 20th century), reflecting the team’s
+Thousands of these documents now lie                      expertise and easier access to these docu-
+in archives and libraries, yet they remain                ments.
+largely beyond the reach of humanities re-
+searchers. The sheer volume and com-              1       Introduction
+plexity of these materials render both man-
+                                                  While working with historical documents, espe-
+ual cryptanalysis and manual analysis im-
+                                                  cially historical correspondence, humanities re-
+practical, if not impossible. Although
+                                                  searchers may encounter encrypted materials.
+recent advances in historical cryptanaly-
+                                                  These documents are unfortunately scattered and
+sis and artificial intelligence have enabled
+                                                  poorly identified within archives and libraries,
+partial automation, existing tools remain
+                                                  and no systematic study of their volume and na-
+ill-suited to the needs and practices of hu-
+                                                  ture has yet been conducted. Existing works
+manities researchers. The BACK IN T IME
+                                                  and projects suggest there may be thousands of
+project was established in late 2024 to ad-
+                                                  encrypted documents, and correspondence of all
+dress these challenges. It seeks an alter-
+                                                  types may have been encrypted, from diplomacy
+native approach to automation that places
+                                                  to intimacy (Láng, 2018; Héder and Megyesi,
+the end user – namely, the humanities re-
+                                                  2022; Tomokiyo, 2018). However, the presence of
+searcher – at the centre of the system’s de-
+                                                  ciphertext does not necessarily prevent access to a
+sign. In this paper, we articulate our vi-
+                                                  document’s content. Many encrypted documents
+sion for a user-centred assistive platform
+                                                  have been preserved alongside the recipient’s de-
+intended to bridge the current gap: we
+                                                  cryption, such as plaintext annotations in the mar-
+highlight how the guiding principles iden-
+                                                  gins, between lines, or on separate sheets.1 In
+tified by the project team can be used to
+combine computer vision, cryptanalysis,               1
+                                                       No systematic study has been conducted on decryption.
+and historical expertise into a user-centred      According to our research, although it is unlikely that more
+                                                  than 1-2% of the encrypted documents never had a decryption
+design that makes historical cryptanalysis        (primarily intercepted letters with unsuccessful cryptanaly-
+both accessible and compatible with estab-        sis), a significant portion (10-15%) has not been preserved
+cases where plaintext is missing, the content may               of encrypted documents and architects of histori-
+still be recovered (Desenclos and Lasry, 2025):                 cal research questions, humanities researchers still
+it is possible to use the cipher key, provided the              face a fragmented ecosystem of tools and methods
+relevant key has both survived and been correctly               that, save for a few highly specialised experts with
+identified. However, matching ciphertexts to their              extensive cross-disciplinary knowledge, they can-
+cipher keys requires significant time, extensive                not use due to a lack of technical computer skills
+knowledge of archival repositories, and often de-               and unfamiliarity with historical ciphers.
+pends on chance, as well-identified and preserved                  To enable humanities researchers to access the
+cipher keys are uncommon.2 Even when keys are                   content of encrypted documents and better under-
+available or recovered, the subsequent manual de-               stand encryption practices and systems, an alter-
+cryption remains laborious and time-consuming,3                 native approach is required. Since its inception
+particularly when handling larger or multiple cor-              in late 2024, the BACK IN T IME project has in-
+pora.                                                           vestigated the benefits of designing an automated
+   When part of the corpus contains both cipher-                yet user-centred cryptanalysis process. Alongside
+text and the corresponding plaintext, an alterna-               the development of tools for automated decryp-
+tive for humanities researchers is to reconstruct               tion, the core of the BACK IN T IME project is the
+the cipher key themselves and then decrypt the                  realisation of a user-centred pipeline that enables
+remaining ciphertext. Although applied in sev-                  the end-user – the humanities scholar – to process
+eral works (Stix, 1934 1936; Greenough, 1997;                   encrypted documents autonomously. In this paper,
+Monts de Savasse et al., 2004; Domnina, 2018;                   we reassert the importance of this goal and outline
+Pierrot et al., 2025; Benavent, 2025), this ap-                 our findings about the core principles that will ulti-
+proach is also highly time-consuming, may re-                   mately enable the development of such a pipeline.
+quire prior knowledge of cipher key structures,
+and poses a real problem when the corpus is                     2     Goals
+large and/or when there are only a few short ci-
+                                                                The BACK IN T IME project aims to address both
+phertexts/plaintexts. Besides, it becomes outright
+                                                                the significant technical challenges presented by
+impossible in the presence of a ciphertext alone
+                                                                automated historical document decryption (tech-
+(without a cipher key or plaintext) or of a cipher-
+                                                                nical tools) and the prerequisites for autonomous
+text with some short plaintext but a complex or
+                                                                usability by humanities researchers (user-centred
+unknown encryption system.
+                                                                pipeline) simultaneously. The latter aspect is the
+   Some tools (e.g., CTTS, CrypTool) can al-
+                                                                main methodological basis of the project, driven
+ready assist manual cryptanalysis depending on
+                                                                by the fact that such collaboration is a funda-
+the length and complexity of the ciphertext, while
+                                                                mental precondition for the very creation of valid,
+some works have investigated how to match cipher
+                                                                usable and used research tools. Humanities re-
+keys with ciphertexts (Pettersson and Megyesi,
+                                                                searchers are indeed uniquely positioned to further
+2019) or ciphertexts with their plaintext (Bruton
+                                                                the development of automated decryption by pro-
+and Megyesi, 2025). In each case, the process re-
+                                                                viding relevant ciphertexts, high-quality, accurate
+mains a complex combination of automated tech-
+                                                                and structured historical metadata (such as date,
+niques that are guided and supplemented by hu-
+                                                                language, origin, and historical context), and valu-
+man intervention, and require expert knowledge.
+                                                                able feedback both on the transcription (palaeog-
+A first attempt to create a global pipeline was car-
+                                                                raphy) and on the reconstructed plaintext (histor-
+ried out by the D ECRYPT project (Héder et al.,
+                                                                ical and linguistic accuracy). To encourage this
+2024); however, this effort could not be com-
+                                                                complementary expertise, the project values de-
+pleted. Despite their role as primary providers
+                                                                veloping a platform that serves as a collaborative
+alongside or close to its decryption (plaintext) and requires   hub for end-users and the diverse communities in-
+cryptanalysis.                                                  volved in the automation process.
+    2
+      Many cipher keys are actually matched to their cipher-
+texts thanks to cryptanalysis. (Kopal and Waldispühl, 2021;
+Desenclos and Lasry, 2024)
+                                                                2.1    The Platform’s Design Principles
+    3
+      According to the experiments we conducted, a researcher   Along with studying existing software and de-
+unfamiliar with historical ciphers will need, on average, 1
+hour and 45 minutes to decrypt one fully encrypted page (ap-    veloping new tools for automated decryption, we
+prox. 30 lines)                                                 identified the following core principles for a plat-
+                                       DECRYPTION PIPELINE
+   DATA                                                                                                DATA
+COLLECTION                                                                                         EXPLOITATION
+                          TRANSCRIPTION          CRYPTANALYSIS         POST-PROCESSING
+
+
+
+
+               Figure 1: The standard pipeline for the processing of encrypted documents.
+
+
+form centred on end users.                               and its integration within the humanities ecosys-
+                                                         tem requires tools that are grounded in both vo-
+End-to-End: A significant barrier to the
+                                                         cabulary and methodology in existing scholarly
+widespread adoption of computational methods
+                                                         norms, tools that provide accessible and intro-
+for processing encrypted documents is the frag-
+                                                         spectable outputs at every stage of the transcrip-
+mentation of available tools, each designed to
+                                                         tion and cryptanalysis process. Within the BACK
+address only isolated stages of the processing
+                                                         IN T IME platform, cryptanalysis algorithms and
+pipeline. Furthermore, some specific components,
+                                                         computer vision AI models, for example, will be
+such as ciphertext character recognition, remain
+                                                         handled internally and not exposed to the end-user.
+important research challenges and are not yet fully
+                                                         Of course, this is not to say that the user will
+automated tasks (Souibgui et al., 2023; Fornés et
+                                                         be passive during the process, but rather that the
+al., 2024). While this disjointed landscape may
+                                                         feedback will be requested in terms that match the
+be navigable for experts already well-acquainted
+                                                         user’s background, e.g. Are the following charac-
+with historical cryptography and its necessary
+                                                         ters correctly identified? or Is the following text
+processing steps, it presents an almost insur-
+                                                         correct in the language of the message? among
+mountable obstacle for novice and occasional
+                                                         others.
+users.
+   To address this fragmentation, we suggest in-
+tegrating our tools and providing a single user-
+                                                         User-in-the-loop: Designing a fully automated
+facing interface that spans the entire pipeline. This
+                                                         process for the decryption of historical documents
+end-to-end design ensures that users can concen-
+                                                         poses significant challenges for both computer vi-
+trate on their primary domain of expertise, specif-
+                                                         sion and cryptanalysis. At the time of writing,
+ically the collection of historical documents and
+                                                         no such comprehensive system exists. To address
+the interpretation of reconstructed plaintext, which
+                                                         these challenges, the user will need to be fully in-
+are situated at the input and output sides of the
+                                                         volved, assisting and guiding the process. Rather
+pipeline (see Figure 1). The complexity of the
+                                                         than waiting until the end of each pipeline step to
+intermediate steps should be abstracted away to
+                                                         query the user’s (dis)approval, it is critical to de-
+create a unified workflow designed specifically for
+                                                         sign a workflow that actively and regularly col-
+humanities researchers (without a technical back-
+                                                         lects feedback throughout the entire processing
+ground).
+                                                         pipeline. It allows for a more fine-grained and dy-
+User-centred: While a single interface already           namic parameterisation of the pipeline, as high-
+enhances consistency, it must also provide a clear       lighted in subsection 3.3. However, while design-
+and intuitive workflow for a wide target audience        ing such a workflow requires abstracting away the
+without prior knowledge in historical cryptogra-         technical intricacies of computer vision and crypt-
+phy. In practice, this workflow must transpose           analysis, it is equally important to let users un-
+the specialised terminology and abstract away al-        derstand the role of each functional block. This
+gorithmic details. An informal survey conducted          enables them to better identify error sources and
+among humanities researchers (history, literature)       apply their expertise (linguistic, historical) to redi-
+has shown that successful use of such a platform         rect the process in the right direction when needed.
+Modular: Given the extreme heterogeneity of            methods and data must be scrutinised, adapted,
+encrypted historical documents, the assumption         and extended by diverse communities. By re-
+that a single algorithm or AI model could uni-         leasing the source code developed throughout this
+versally address such diversity is unrealistic. As     project, we aim to facilitate reuse, critical as-
+such, the workflow is built upon the foundational      sessment, and incremental improvement across all
+principle of modularity. Rejecting a monolithic        kinds of expertise (history, computer vision, crypt-
+architecture with fixed implementations and gen-       analysis, etc.). Beyond providing open access to
+eral models, the platform is designed to integrate     the code, we plan to host a free instance of the
+a diverse array of interchangeable modules. Each       platform in order to lower the barrier to entry for
+module targets a specific situation, such as a par-    users who lack the technical infrastructure or ex-
+ticular encryption system, secondary security de-      pertise to deploy such tools themselves.
+vices (nulls, nomenclature, etc.), ciphertext char-
+acter sets, plaintext script and language, allowing    Responsible Data Management: Beyond mere
+the workflow to be dynamically configured to suit      compliance with the European General Data Pro-
+the specific requirements of each document or cor-     tection Regulation, we need to establish a rigor-
+pus.                                                   ous data management policy designed to ensure
+                                                       users maintain absolute stewardship over their ma-
+Resilient: Despite its recent growth, there are        terials. The platform should operate on a strict
+still gaps in the current research that will in-       non-retention basis by default: all uploaded doc-
+evitably lead to failures on the platform. Due to      uments remain the exclusive property of the user
+a lack of metadata or knowledge, some types or         and are neither stored, redistributed, nor utilised
+parts of encryption systems may not be correctly       by the project without authorisation.
+identified by the automated process or, due to the        Conversely, researchers may choose to con-
+rarity or complexity of some encryption systems,       tribute their research artefacts (transcriptions,
+no generic cryptanalysis algorithm would work on       cryptanalysis, recovered cipher keys) to the com-
+them. Some encrypted documents present interlin-       munity, but only through a conscious, explicit opt-
+ear plaintext that the computer vision algorithms      in mechanism. This commitment to user auton-
+might not correctly recognise during segmenta-         omy is critical for building trust, particularly given
+tion, or ciphertext characters that the algorithms     that archival materials may be subject to restrictive
+might not correctly identify. As such, there will      reproduction and dissemination rights. Through
+be documents that cannot be successfully handled       these principles, the project ensures that the user
+by any of the modules provided on the BACK IN          remains the sole arbiter of how their data is shared
+T IME platform. Rather than trying to solve ev-        and valued.
+erything within our funded time, we only address
+                                                       2.2   Community-Driven Development and
+the most recurring challenges (ciphertext charac-
+                                                             Open Challenges:
+ter sets and encryption systems) and design a plat-
+form to gracefully handle failure cases. In case of    User-centred or not, the pipeline needs to rely on
+failure, the type of problem encountered should be     technical expertise from diverse technical fields.
+automatically reported to the project team, and the    But, if the BACK IN T IME project involves the
+particular use case will be analysed with the user     development of specialised software tools, these
+to identify its specificities. In the longer term, a   tools actually aim to simplify the creation of expert
+dedicated expert module that solves the problem        modules, allowing the specific problem-solving
+could be developed to increase the platform’s cov-     strategies of computer scientists and cryptogra-
+erage.                                                 phers to be integrated directly into the historian’s
+                                                       workspace. By lowering the barrier to techni-
+Open Source, Free, Transparent: We strongly            cal contributions, we aim to transform the plat-
+believe that only an open-source and freely ac-        form into a nexus where these distinct forms of
+cessible ecosystem can foster durable, sustained       expertise can coalesce into a shared methodology.
+progress in research. Open science is not merely       We posit that the complexity of historical, espe-
+a matter of transparency, but a prerequisite for re-   cially automated, cryptanalysis cannot be resolved
+producibility, collective validation, and long-term    solely through the research methodology of a sin-
+impact, especially in interdisciplinary fields where   gle domain. Instead, it requires a synergistic ap-
+proach that converges the distinct inputs of crypt-       and identifiable. In such a framework, a failure is
+analysts, computer vision experts, and historians         indeed an informative signal, rather than a techni-
+into a unified operational framework.                     cal glitch. In its current state, history of cryptol-
+   To encourage and support this collective dy-           ogy can only provide an incomplete taxonomy of
+namic, we drew inspiration from existing initia-          encryption practices and systems. Therefore, fail-
+tives that use challenges to leverage external ex-        ures of proven algorithms are more generally hints
+pertise to advance some research questions and            of limitations of the taxonomy itself, rather than of
+challenges in the specific field of historical cryp-      the effectiveness of said algorithms.
+tography.4 These challenges have proved their                Failures indicate that the material deviates from
+value. In the BACK IN T IME project, we intend            expected norms, whether in its visual structure
+to propose different kinds of challenges, such as         (rare or badly formed ciphertext characters), cryp-
+code-breaking tasks on synthetic data, to calibrate       tographic logic, or language (encryption errors, di-
+cryptanalysis algorithms more precisely. How-             alect, etc.). Hence, this signal serves as a heuristic
+ever, our main focus will be on encouraging hu-           for discovery, highlighting the necessity for a dual
+manities researchers to submit their own chal-            research effort: the development of more robust
+lenges (e.g. an encrypted document that they can-         computational methods capable of handling out-
+not decrypt) to the platform. We hope to achieve          liers, and deeper historical research to better de-
+several goals in this way: bringing humanities re-        scribe and categorise the vast diversity of extant
+searchers to the platform (as active contributors         sources.
+and not as passive users) even before the release            This diagnostic approach is particularly criti-
+of the full automation pipeline, enabling the con-        cal given that current computational methods are
+tinuous refinement of transcription and cryptanal-        rarely systematically evaluated against the full di-
+ysis algorithms (multiple examples and valuable           versity of historical material. This lack of com-
+feedback), and addressing specific cryptographic          prehensive benchmarking is understandable, stem-
+challenges (unknown or rare encryption systems,           ming from the scarcity of representative datasets
+rare ciphertext characters, etc.). Moreover, these        and the genuine heterogeneity of real-world en-
+challenges will enable researchers to identify the        cryption practices. By systematically capturing
+most effective solutions for specific tasks within        these failure cases, the platform enables a finer-
+our automation decryption pipeline.                       grained analysis of algorithmic boundaries. It al-
+   By fostering collaboration around well-defined         lows researchers to relate performance not just to
+problems, the challenges will help verify that the        abstract metrics but to concrete document prop-
+pipeline remains aligned with the state of the art        erties, such as ciphertext character sets or layout
+and users’ needs while benefiting from the collec-        characteristics, thereby transforming implicit al-
+tive intelligence of its diverse members. More-           gorithmic limitations into explicit and actionable
+over, by prioritising the construction of open,           research questions.
+community-driven infrastructures, we ensure that
+methodological advances are not lost when the             3     User-centred Pipeline
+project ends, but remain accessible and verifiable.
+                                                          The platform we envision aims to provide a strict
+This shared ecosystem is essential to the field’s
+                                                          separation of concerns between the interactions
+long-term sustainability.
+                                                          exposed to the end-user and the decisions involv-
+2.3   Studying the Gap in Current Research                ing domain-specific automation tools and algo-
+                                                          rithms. To guarantee this separation, we structure
+As outlined in subsection 2.1, the platform must be       the platform using a layered architecture, as shown
+designed with resilience and modularity in mind,          in Figure 2.
+to avoid enforcing a one-size-fits-all model and in-
+stead to make processing errors explicitly visible        3.1    User Interface
+    4
+      Many websites propose cryptanalysis challenges      At the very top of the layered architecture, the user
+(e.g., https://mysterytwister.org/) or unsolved cryp-     interface displays a unified workflow decoupled
+tograms (e.g., https://crypto.hcportal.eu/dashboard/      from the underlying algorithms and expert mod-
+cryptograms). More recently, challenges dedicated to
+Handwriting Recognition of Historical Ciphers have also   ules involved in the automated decryption pro-
+arisen (Fornés et al., 2024).                             cess. This will let the user focus on the various
+   DATA                                       USER INTERFACE                                    DATA
+COLLECTION                                                                                  EXPLOITATION
+
+
+                                                                  ?
+
+
+                                                                  ?
+
+
+
+
+                                                               feedback
+                                                               requests
+  ABSTRACTION LAYER
+                                   metadata
+
+
+
+
+  EXPERTS MODULES
+
+
+
+
+                    Figure 2: The layered architecture for the user-centred platform.
+
+
+outputs rather than the mechanisms that drive the      eration, the user will also have the option to obtain
+transcription and cryptanalysis. For instance, in      specific, workable outputs to independently anal-
+terms of the final result, it should not matter to     yse the ciphertext characters (classification, fre-
+the user which type of AI model, which crypt-          quency statistics, visualisation of usage) as well
+analysis algorithm or combination of algorithms        as the encryption system (reconstructed cipher key
+has been used to perform the decryption. On the        and parameters).
+contrary, it should matter to the user to get clas-
+sification both of the ciphertext characters and of    3.2   Expert Modules
+the encryption system, as well as to know whether      The collection of expert modules resides at the
+the plaintext has been reconstructed by pure crypt-    bottom of the layered architecture, serving as the
+analysis, by matching an already stored cipher key     platform’s foundational engine. The primary role
+or by matching existing plaintext.                     of an expert module is to encapsulate specific tech-
+   More specifically, the user interface integrates    nical logic required to solve a standalone task,
+the entire pipeline and presents it to the user as     such as performing cryptanalysis on a specific ci-
+an iterative workflow: Starting from a digitised       pher type or segmenting lines of text from a noisy
+version of the encrypted document (e.g. per-           image. These modules are typically implemented
+sonal photo, online digitised documents), the doc-     as wrappers around existing methods developed
+ument’s text is progressively extracted (segmenta-     by domain experts, such as cryptologists or com-
+tion then transcription), cryptanalysed and refined    puter vision specialists, integrating diverse exter-
+into a final usable plaintext alongside the recon-     nal software into a unified ecosystem.
+structed cipher key. This iterative workflow is sus-      To ensure seamless integration, each module
+tained by the user, who responds to feedback re-       must adhere to a standardised interface. However,
+quests from the underlying layers, allowing the        because no single algorithm can handle the vast
+platform to gradually refine the result while col-     diversity of historical documents and encryption
+lecting additional metadata. At each stage and it-     methods, strict scope declarations are mandatory.
+These declarations act as machine-readable con-        after a faster heuristic has failed.
+tracts that specify the exact prerequisites for the       Crucially, the abstraction layer is also respon-
+module’s operation. For instance, a cryptanaly-        sible for data synthesis. It must harmonise the
+sis module must explicitly state which encryption      raw, often technical outputs from various modules
+systems it supports (e.g., homophonic ciphers) and     into a coherent structure that the User Interface
+the valid ranges for key parameters. Similarly, an     can render. By presenting synthesised and read-
+image processing module designed for handwrit-         able results to the user for validation, the abstrac-
+ing recognition might restrict its scope to specific   tion layer creates a feedback loop: if the user re-
+script types, such as Roman numerals or abstract       jects a result, the layer can interpret this as a con-
+symbols, while rejecting printed text.                 straint update, triggering a new search for alterna-
+   This modularisation presents a significant op-      tive modules or requesting specific input to unlock
+portunity for standardisation. By forcing domain       advanced processing paths.
+experts to formalise the capabilities and limita-
+tions of each tool via scope declarations, the plat-   4       Related Work
+form creates a definitive list of criteria for algo-
+rithm evaluation. Furthermore, as these modules        The BACK IN T IME project is neither the first
+are deployed against real-world data, their scope      nor the only one dedicated to the processing of
+definitions can be iteratively refined, narrowing      encrypted historical documents. Key initiatives
+the gap between theoretical capability and prac-       paved the way for identifying major methodolog-
+tical application.                                     ical challenges and research questions and facil-
+                                                       itated the development of a few pioneer tools.
+                                                       While the insights and outcomes of these efforts
+3.3   Abstraction Layer
+                                                       have deeply informed our conceptual framework,
+The abstraction layer functions as intelligent mid-    BACK IN T IME does not intend to duplicate or
+dleware connecting the high-level user interface       repackage existing tools. Instead, to ensure the
+(subsection 3.1) with the low-level expert modules     end-user remains the focal point of the global
+(subsection 3.2). Its primary responsibility is or-    pipeline, the project explores an alternative de-
+chestration: it must interpret the current state of    sign strategy. This entails the development of
+the document processing, identify blocking issues      novel tools from the ground up, while strategi-
+(such as unknown or uncommon encryption sys-           cally incorporating and adapting established algo-
+tems, poorly recognised or overlooked ciphertext       rithms, e.g., eScriptorium’s layout analysis func-
+characters, unintelligible reconstructed plaintext),   tionality (Kiessling, 2020), and capitalising on re-
+and dynamically select the most appropriate ex-        cent technical advancements in machine learning,
+pert modules to resolve them.                          newly combined cryptanalysis algorithms, as well
+   This selection process relies heavily on the        as the latest work on the history of cryptology to
+scope declarations provided by the underlying          overcome the limitations identified with the cur-
+modules. The abstraction layer matches the             rent research landscape.
+metadata and features of the encrypted document           The following overview examines initiatives
+against the available modules to determine eligi-      such as the D ECRYPT (Megyesi et al., 2020) and
+bility. For a simple encrypted document (easily        D ESCRYPT (Megyesi et al., 2025) projects as
+identifiable encryption system, one or a few se-       well as existing tools and environments, including
+curity devices), this may involve only a linear se-    CrypTool25 for cryptographic experimentation,
+quence of calls: segmentation, followed by recog-      Cryptool transcriber and Solver (CTTS)6 for man-
+nition, followed by cryptanalysis, etc. However,       ual transcription and cryptanalysis, and eScripto-
+for a complex encrypted document (with a par-          rium7 (Kiessling et al., 2019) and Transkribus8 for
+tially or non-identified encryption system or mul-     large-scale transcription. By analysing these con-
+tiple security devices), the abstraction layer em-     tributions, we identify their respective strengths
+ploys sophisticated resolution strategies. It may      and limitations, thereby clarifying how our ap-
+act as a competitive orchestrator, invoking multi-         5
+                                                             https://www.cryptool.org/en/ct2/
+ple cryptanalysis modules in parallel to compare           6
+                                                             https://www.cryptool.org/en/ctts/
+their outputs, or it may apply a fallback strategy,        7
+                                                             https://escriptorium.inria.fr/
+                                                           8
+trying a computationally expensive algorithm only            https://www.transkribus.org/fr
+proach builds upon and diverges from the existing           as Transcripttool,10 impose comparable technical
+landscape.                                                  barriers. This overhead, combined with interfaces
+                                                            that presuppose prior knowledge of cryptography,
+Historical Cryptanalysis Projects. Since the                e.g., requiring the user to select specific cipher pa-
+mid-2010s, a few initiatives have emerged to ad-            rameters before analysis, renders these tools, on
+vance the computational analysis of encrypted his-          their own, unsuitable for humanities researchers
+torical documents, most notably the D ECRYPT                whose primary objective is recovering document
+project (Megyesi et al., 2020). These efforts have          content rather than acquiring expertise in histori-
+significantly advanced the study of history of cryp-        cal cryptography. However, to ensure compliance
+tology and structured the field of historical cryp-         with all the platform’s design principles (subsec-
+tography by developing and integrating a wide ar-           tion 2.1) and to integrate the latest technical and
+ray of tools and resources. As does BACK IN                 methodological advances, new tools (transcription
+T IME, the D ECRYPT project addresses the pri-              and cryptanalysis) will be designed for the BACK
+mary stages of processing encrypted documents,              IN T IME pipeline.
+with research activities ranging from data collec-
+                                                            Community Resources and Datasets. Part
+tion (via the D ECODE database) to cryptanalysis.
+                                                            of the D ECRYPT ecosystem, the D ECODE
+The final phase of D ECRYPT (Héder et al., 2024),
+                                                            database (Héder and Megyesi, 2022) is a
+as well as the workflow of the new D ESCRYPT
+                                                            unique example of a collaborative and searchable
+program9 , envisions linking their various tools and
+                                                            database of encrypted documents and cipher keys.
+resources into a unified pipeline. However, this
+                                                            By making such materials available, it has enabled
+integrated workflow has not yet been fully re-
+                                                            a more systematic analysis of encryption practices
+alised (Héder et al., 2024). Furthermore, the pro-
+                                                            and systems across time (Megyesi et al., 2021).
+posed architecture assumes a more linear pipeline,
+                                                            Such work will not be integrated within BACK
+applying modules one after another, which con-
+                                                            IN T IME: the aims are different – the humani-
+trasts with the iterative and exploratory process of-
+                                                            ties researchers are directly providing encrypted
+ten required by humanities researchers. The BACK
+                                                            documents they need to decrypt and/or analyse
+IN T IME team pursues a very different strategy. By
+                                                            – and D ECODE is already widely acknowledged
+prioritising a unified platform from the outset, we
+                                                            as the main repository for encrypted documents
+aim to demonstrate that placing a user-centred, it-
+                                                            and cipher keys. Similarly, large-scale histori-
+erative workflow at the centre of the architecture
+                                                            cal corpora such as HistCORP11 (Pettersson and
+yields genuine benefits for developing new tools
+                                                            Megyesi, 2018) play a crucial role by offering cu-
+and integrating them into research practices.
+                                                            rated resources that support comparative and con-
+   Further, even though D ECRYPT has undeniably             textual analyses in historical research. Although
+demonstrated the feasibility of applying computa-           neither D ECODE nor HistCORP will be integrated
+tional methods to historical ciphers, particularly          into the BACK IN T IME architecture, they pro-
+by developing algorithmic approaches for crypt-             vide a foundational data layer that complements
+analysis and establishing experimental frame-               the data our team already collected, resulting in a
+works for transcription, its software ecosystem re-         diverse corpus for training and evaluating our tran-
+mains primarily designed for expert use. Key                scription and cryptanalysis tools.
+tools provide robust environments for cryptanal-
+ysis but are distributed as standalone executables          Transcription Platforms for Historical (non-
+requiring specific technical environments. For in-          encrypted) Documents. Platforms such as eS-
+stance, CrypTool Transcriber & Solver (CTTS)                criptorium (Kiessling et al., 2019) and Transkribus
+is a Java-based desktop application that requires           have reshaped the field of digital humanities, un-
+command-line interaction and manual configura-              locking large-scale transcription of handwritten
+tion, with documentation hosted on GitLab, a plat-          manuscripts. Driven by advances in deep learn-
+form unfamiliar to most humanities scholars. Sim-           ing, they have significantly lowered the barrier to
+ilarly, tools for semi-automatic transcription, such        producing accurate transcriptions from digitised
+                                                              10
+                                                                 https://github.com/decrypt-project/
+   9                                                        transcripttool
+    https://descrypt.org/ The D ESCRYPT project
+                                                              11
+reuses and extends the tools and expertise of D ECRYPT to        https://www2.lingfil.uu.se/person/pettersson/
+cover rare scripts and low-resource texts.                  histcorp/
+handwritten texts.                                          this project does not intend to solve every kind
+   However, the specific nature of encrypted doc-           of cryptogram and will first focus on the most
+uments introduces fundamental challenges be-                commonly used ciphertext character sets and en-
+yond the scope of standard transcription plat-              cryption systems, it aims to make continuous im-
+forms. First, modern handwritten text recogni-              provements using a federated approach that brings
+tion architectures rely heavily on linguistic mod-          together all researchers working with encrypted
+elling to compensate for visual ambiguity12 an ap-          historical documents. The ultimate goal is to
+proach that fails when applied to ciphertexts de-           enable humanities researchers to engage directly
+signed specifically to maximise entropy and elim-           with cryptographic sources at scale, thereby trans-
+inate predictable lexical patterns. Second, cipher-         forming encrypted documents from marginal cu-
+text characters can differ significantly from cleart-       riosities into fully exploitable historical evidence.
+ext scripts in their visual composition, necessitat-
+ing the creation of substantial new ground-truth            Aknowledgement
+datasets to train models on non-standard charac-
+                                                            This work received government funding managed
+ter sets. Finally, whereas standard models depend
+                                                            by the French National Research Agency (ANR)
+on fixed character inventories and closed classifi-
+                                                            under France 2030, reference number ANR-24-
+cation layers, symbolic ciphertext characters often
+                                                            RRII-0002, named Back In Time project and op-
+operate as open or semi-open sets, which some
+                                                            erated by the Inria Quadrant Programme (PIQ).
+have approached by returning to basics and char-
+acter classification (Siglidis et al., 2024).
+   Consequently, while we cannot use transcrip-             References
+tion platforms out of the box, BACK IN T IME
+adopts a hybrid strategy. It integrates the eScripto-       Júlia Benavent. 2025. La escritura secreta en Europa
+                                                               en el siglo XVI. Estudios románicos, 34:11–189.
+rium infrastructure specifically for its state-of-the-
+art layout analysis and line segmentation capabil-          Micaella Bruton and Beáta Megyesi.              2025.
+ities (the first stage of the transcription pipeline).        From Statistics to Neural Networks: Enhancing
+However, it replaces the subsequent text recogni-             Ciphertext-Plaintext Alignment in Historical Substi-
+                                                              tution Ciphers for Automatic Key Extraction. In
+tion block with its own specialised modules de-               Proceedings of the 8th International Conference on
+signed to handle the visual complexity and linguis-           Historical Cryptology, HistoCrypt 2025, pages 18–
+tic entropy of encrypted script.                              26. Linköping University Electronic Press.
+
+5   Conclusion                                              Camille Desenclos and George Lasry. 2024. An early
+                                                              French digit cipher: deciphering a letter from the
+The BACK IN T IME project certainly addresses                 King of France to the Duke of Nevers (1592). In
+already-identified issues, such as the transcrip-             Proceedings of the 7th International Conference on
+                                                              Historical Cryptology (HistoCrypt 2024), pages 46–
+tion of encrypted documents, their cryptanaly-
+                                                              56. Tartu University Library.
+sis, and the development of an automated de-
+cryption pipeline. Some initiatives already ded-            Camille Desenclos and George Lasry. 2025. Crypt-
+icate resources to some of these issues, but of-              analytic and historical challenges with unidentified
+fer a fragmented, hardly usable ecosystem for hu-             encrypted documents from the early modern era. In
+                                                              Proceedings of the 8th International Conference on
+manities researchers. However, beyond designing               Historical Cryptology, HistoCrypt 2025, pages 41–
+new tools, it plans to explore a different, user-             51. Linköping University Electronic Press.
+centred approach by revising the classical pipeline
+and rebuilding each stage to fit the needs of the           Ekaterina Domnina. 2018. Nicodemo Tranchedini’s
+                                                              Diplomatic Cipher: New Evidence. In Proceed-
+end user: humanities scholars. We hope this will              ings of the 1th International Conference on Histori-
+reinforce automation efforts while being progres-             cal Cryptology (HistoCrypt 2018), pages 3–7. Tartu
+sively integrated into the toolbox of humanities re-          University Library.
+searchers who can benefit from and could more
+                                                            Alicia Fornés, Jialuo Chen, Pau Torras, Carles Badal,
+often contribute to historical cryptography. While            Beáta Megyesi, Michelle Waldispühl, Nils Kopal,
+   12
+      TrOCR (Li et al., 2023) includes a language trans-      and George Lasry. 2024. ICDAR 2024 Competition
+former after a visual one, PyLaia (Tarride et al., 2024),     on Handwriting Recognition of Historical Ciphers.
+while older, provides connector for small language models     In Document Analysis and Recognition - ICDAR
+KenLM (Heafield, 2011).                                       2024, pages 332–344. Springer Nature Switzerland.
+H. Paul Greenough.       1997. Cryptanalysis of           Beáta Megyesi, Alica Fornés, Mihaly Héder, Raphaela
+  the Swedish HC-9. A Known-Plaintext Approach.             Heil, Nils Kopal, Benedek Láng, Rune Rattenborg,
+  Cryptologia, 21(4):353–367.                               and Michelle Waldispühl. 2025. Decipherment
+                                                            of Historical Manuscripts with Unknown or Rare
+Kenneth Heafield. 2011. KenLM: Faster and smaller           Writings: The DESCRYPT Project. In Proceed-
+  language model queries. In Proceedings of the Sixth       ings of the 8th International Conference on Histor-
+  Workshop on Statistical Machine Translation, pages        ical Cryptology, HistoCrypt 2025, pages 101–105.
+  187–197. Association for Computational Linguis-           Linköping University Electronic Press.
+  tics.
+                                                          Jacques de Monts de Savasse, Yves Soulingeas, and
+Mihály Héder and Beáta Megyesi. 2022. The DE-                Stéphane Gal. 2004. L’Europe d’Henri IV. La corre-
+  CODE Database of Historical Ciphers and Keys:              spondance diplomatique du Secrétaire d’Etat Louis
+  Version 2. In Proceedings of the 5th International         de Revol (1558-1593). Presses Universitaires de
+  Conference on Historical Cryptology (HistoCrypt            Grenoble.
+  2022), pages 111–114. Tartu University Library.
+                                                          Eva Pettersson and Beáta Megyesi. 2018. The
+Mihály Héder, Alicia Fornés, Nils Kopal, Ferenc             HistCorp Collection of Historical Corpora and Re-
+  Szigeti, and Beáta Megyesi. 2024. Supporting His-         sources. Digital Humanities in the Nordic and
+  torical Cryptology: The Decrypt Pipeline. In Pro-         Baltic Countries Publications (DHN2018), 1:306–
+  ceedings of the 7th International Conference on His-      320.
+  torical Cryptology (HistoCrypt 2024). Tartu Univer-     Eva Pettersson and Beáta Megyesi. 2019. Matching
+  sity Library.                                             Keys and Encrypted Manuscripts. In Proceedings of
+                                                            the 22nd Nordic Conference on Computational Lin-
+Benjamin Kiessling, Robin Tissot, Peter Stokes, and         guistics, pages 253–261. Tartu University Library.
+  Daniel Stokl Ben Ezra. 2019. eScriptorium:
+  An Open Source Platform for Historical Document         Cécile Pierrot, Gaspard Damoiseau-Malraux, Paul
+  Analysis. In 2019 International Conference on Doc-        Mekhail, Olivier Chaline, and Ludovic Perret. 2025.
+  ument Analysis and Recognition Workshops (IC-             A Caribbean Directory-based Encryption during the
+  DARW), volume 2, pages 19–19. IEEE Computer               American War of Independence. In Proceedings
+  Society.                                                  of the 8th International Conference on Histori-
+                                                            cal Cryptology, HistoCrypt 2025, pages 122–132.
+Benjamin Kiessling. 2020. A modular region and              Linköping University Electronic Press.
+  text line layout analysis system. In 2020 17th In-
+  ternational Conference on Frontiers in Handwriting      Ioannis Siglidis, Nicolas Gonthier, Julien Gaubil, Tom
+  Recognition (ICFHR), pages 313–318. IEEE.                  Monnier, and Mathieu Aubry. 2024. The learnable
+                                                             typewriter: a generative approach to text analysis.
+Nils Kopal and Michelle Waldispühl. 2021. Decipher-          In International Conference on Document Analysis
+  ing three diplomatic letters sent by Maximilian II in      and Recognition, pages 297–314. Springer, ICDAR.
+  1575. Cryptologia, 46(2):103–127.
+                                                          Mohamed Ali Souibgui, Pau Torras, Jialuo Chen, and
+Benedek Láng. 2018. Real Life Cryptology: Ciphers          Alicia Forné s. 2023. An Evaluation of Handwritten
+  and Secrets in Early Modern Hungary. Amsterdam           Text Recognition Methods for Historical Ciphered
+  University Press.                                        Manuscripts. In Proceedings of the 7th Interna-
+                                                           tional Workshop on Historical Document Imaging
+Minghao Li, Tengchao Lv, Jingye Chen, Lei Cui,             and Processing, page 7–12. Association for Com-
+  Yijuan Lu, Dinei Florencio, Cha Zhang, Zhoujun           puting Machinery.
+  Li, and Furu Wei. 2023. TrOCR: Transformer-
+                                                          Franz Stix. 1934–1936. Die Geheimschriftenschlüs-
+  Based Optical Character Recognition with Pre-
+                                                            sel der Kabinetskanzlei des Kaiser. Nachrichten von
+  trained Models. In Proceedings of the AAAI confer-
+                                                            der Gesellschaft der Wissenschaften zu Göttingen
+  ence on artificial intelligence, pages 13094–13102.
+                                                            Philologisch-Historische Klasse, 1–2:207–226 and
+                                                            61–70.
+Beáta Megyesi, Bernhard Esslinger, Alicia Fornés,
+  Nils Kopal, Benedek Láng, George Lasry, Karl            Solène Tarride, Yoann Schneider, Marie Generali-
+  De Leeuw, Eva Pettersson, Arno Wacker, and                Lince, Mélodie Boillet, Bastien Abadie, and
+  Michelle Waldispühl. 2020. Decryption of histor-          Christopher Kermorvant. 2024. Improving Auto-
+  ical manuscripts: the DECRYPT project. Cryptolo-          matic Text Recognition with Language Models in
+  gia, 44(6):545–559.                                       the PyLaia Open-Source Library. In International
+                                                            Conference on Document Analysis and Recogni-
+Béata Megyesi, Crina Tudor, Benedek Láng, and Anna          tion (ICDAR 2024), pages 387–404. Springer Nature
+  Lehofer. 2021. Key Design in the Early Modern             Switzerland.
+  Era in Europe. In Proceedings of the 4th Inter-
+  national Conference on Historical Cryptology (His-      Satoshi Tomokiyo. 2018. Cryptiana: Articles on His-
+  toCrypt 2021), pages 121–130. Tartu University Li-        torical Cryptography.
+  brary.
+

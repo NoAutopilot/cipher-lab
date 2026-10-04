@@ -1117,3 +1117,5 @@ p-value; the weight comes from four instruments concordant at 12 windows of 12 (
 Residual caveat, carried: A_PLAIN_IL (the capital 'Il') still reads N, so the reader's O class is shown only for lower-case in-word script.
 Verdict: endorsed; next: F61-FAMILY merges `L02 0 insert LL` into `scripts/f61_positions_corrections.tsv` and re-runs the meter (expected 12 / 59 /
 1 / 28 of 100, spans 55/55), ~$1. Novelty not touched (no reading changes).
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

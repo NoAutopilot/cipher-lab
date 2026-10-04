@@ -1,0 +1,597 @@
+        Unsealing the Secret: Rebuilding the Renaissance French
+                   Cryptographic Sources (1530-1630)
+                                                Camille Desenclos
+
+
+
+      To cite this version:
+     Camille Desenclos. Unsealing the Secret: Rebuilding the Renaissance French Cryptographic Sources (1530-
+     1630). 1st International Conference on Historical Cryptology HistoCrypt 2018, Jun 2018, Uppsala (Suède),
+     Sweden. ⟨hal-04712231⟩
+
+
+
+
+                                        HAL Id: hal-04712231
+                              https://hal.science/hal-04712231v1
+                                            Submitted on 2 Oct 2024
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+                                              HAL Authorization
+          Unsealing the Secret: Rebuilding the Renaissance French
+                    Cryptographic Sources (1530-1630)
+
+
+                                         Camille Desenclos
+                                         CRÉSAT (EA-3436)
+                                      Université de Haute-Alsace
+                                   camille.desenclos@uha.fr
+
+                     Abstract                         17th century – has entailed the development of
+                                                      new strategies and tools for the protection of
+    Neither political nor diplomatic historians can   information. The more the circulation of
+    avoid working with enciphered sources.            diplomatic correspondences increased, the more
+    However, we mostly study their content and        ciphers became essential. During the 16th century,
+    not their writing processes. In the wake of a     enciphered letters thus progressed from an
+    new history of political information, ciphers     extraordinary use to common practice by the
+    and, more broadly, cryptographic usages,          French diplomacy. In addition to this increased
+    practices and cultures should be embraced by      usage in diplomatic correspondence, the political
+    historians. By considering cryptographic
+                                                      and religious disorders within the French
+    sources as significant witnesses of a culture
+    of political information, we can no longer        Kingdom during the second half of the
+    look at them as information repositories or       16th century led high-ranking but rebellious
+    instances for cryptanalysis but as complex        noblemen to make use of ciphers, too, in order to
+    scientific and political objects.                 cover up their intentions and plots to their King
+    In that respect, Renaissance French ciphers       and his spies.
+    form perfect study objects. They are not yet         Although ciphers cannot be distinguished from
+    as complex and technical as in the mid-           epistolary writing nor from the political or
+    seventeenth or eighteenth century and show a      diplomatic writing usages, they have been
+    representative variety of goals (political or     neglected by French historians for a long time.
+    diplomatic), systems (jargon, simple
+                                                      The importance of ciphers for the protection of
+    substitution, homophonic substitution, …)
+    and usages. As any other early modern             information was recognized, but their
+    source, however, cryptographic sources are        functioning as well as their writing processes are
+    dispersed, incomplete and, sometimes, hardly      still ignored, as ciphers were studied only in an
+    understandable at first sight. By studying        intellectual and not material perspective. By
+    many ciphering tables, by observing               studying them only for their content rather than
+    encryption and decipherment practices within      considering them as significant objects, ciphers
+    a correspondence, by matching the                 could not be entirely understood and were
+    enciphered letters and the related ciphering      narrowed to their ability to protect information
+    table, by comparing cryptographic systems,        and secrets (Tallon, 2010). Thus studies
+    we hope to rebuild, at least partly, the          dedicated at most a few pages, nay a couple of
+    Renaissance French cryptographic practices.
+                                                      lines, to ciphers and cryptographic usages and
+1     Introduction                                    practices, mostly in addition to a presentation of
+                                                      the various ways of transmission: postal routes,
+Anyone who works on Renaissance political or          special couriers … (Martin, 2010). Ciphers were
+diplomatic correspondences has faced, at least        not only exclusively associated with the
+once, ciphers or enciphered letters. The Kingdom      protection of information but with diplomacy
+of France, as any other European state, has           also, at the expense of a wider analysis of the
+provided favorable conditions to the rise of a        cryptographic practices and usages within the
+wide, diverse and frequent cryptographic              French administration and high nobility,
+practice. The implementation of permanent             especially during political, social and/or religious
+diplomatic representations all over                   disorders. However, French history, with its wars
+Europe – there were twelve French permanent           of religion, provides significant examples to be
+diplomatic agents at the beginning of the             analyzed by historians.
+    While historians have not yet seized on the                Renaissance cryptography as a significant
+subject, historical cryptography and even more                 practice in French political writing.
+historical cryptanalysis (Nachef et al., 2016)
+arouse more interest. The history of cryptography              2      French Cryptographic Treatises
+has been clearly studied more than once.
+                                                               A study of Renaissance French cryptographic
+However, those noteworthy but international
+                                                               uses and practices faces some difficulties in
+studies embrace its whole history. Yet the main
+                                                               regard to the absence and/or dispersion of
+focus relies on the modern era (Kahn, 1996)
+                                                               sources. Many enciphered letters, even some
+and/or on cryptographic theoretical treatises.
+                                                               ciphering tables, have been preserved, but
+Although this global perspective allows for the
+                                                               without their related documentation. Ciphering
+better understanding of each step of the
+                                                               tables1 did not document the way they were used,
+cryptographic evolution, French cryptographic
+                                                               and neither did diplomatic instructions describe
+practices during the 16th century until Rossignol's
+                                                               the way ciphers had to be employed. The basic
+works are, at best, briefly mentioned in these
+                                                               principles appear to be obvious. In most cases,
+global analyses. These studies do not present the
+                                                               ciphers rely on homophonic substitutions. But
+cryptographic patterns in detail and thus cannot
+                                                               when a plain-text letter could be represented by
+meet the needs of historians. If some studies
+                                                               two or three cipher-text characters, how was the
+have indeed been devoted to Renaissance
+                                                               cipher-text character chosen? Their concrete
+practical cryptography (Devos, 1950; Monts-de-
+                                                               functioning stays unclear as it was probably
+Savasse, 1997), they only describe the ciphers
+                                                               explained orally before the correspondence or the
+and cipher-text characters and/or focus on very
+                                                               embassy started. Moreover, we cannot find any
+specific case studies. They certainly promote a
+                                                               recommendation about the nature of information
+better knowledge of general processes and
+                                                               which had to be enciphered, the required
+c r y p t o g r a p h i c s e m a nt i cs . Thi s r em ai ns
+                                                               proportion of cipher-text within letters, and so
+nevertheless technical and narrowly focused
+                                                               on. Cryptographic practice relied certainly on a
+knowledge, far from the expectations and needs
+                                                               subjective interpretation by each user, but many
+of historians. The impact of encrypting letters on
+                                                               aspects were common to Renaissance political
+the writing and circulation of information does
+                                                               and diplomatic society.
+not seem to have been noticeable in diplomatic
+                                                                  Moreover, no secondary sources have
+or political history. Nevertheless, some historians
+                                                               apparently been preserved in the French archives
+(Ribera, 2007; Hugon, 2004) proceed from
+                                                               or libraries. The diplomatic treatises, which have
+diplomatic history to an early modern history of
+                                                               become the main sources about the process of
+political information. They analyze indeed
+                                                               political writing, never describe the
+ciphers in relation to their concrete uses as ways
+                                                               cryptographic uses and practices nor the
+to write and protect political information. By
+                                                               influence of encryption on diplomatic writing. As
+considering both their technical and political
+                                                               a technical process, which belonged to the daily
+dimensions, ciphers can become a new object of
+                                                               diplomatic routine, encryption was apparently
+study within a new field cutting across
+                                                               not considered as part of the art of diplomacy.
+boundaries: the history of information. The
+                                                               Some general recommendations were expressed
+presence of cipher-text and plain-text in one and
+                                                               in later works only (Callières, 1716). Callière's
+a same letter reveals the essential balance
+                                                               treatise dedicated almost two pages to
+between public and private spheres, public
+                                                               cryptography, even if the main concern remained
+decisions and secret actions. Beyond secrecy,
+                                                               the diverse and general ways to protect
+elaborating stronger ciphers as well as encrypting
+                                                               information. Neither the purpose of encryption
+a portion of text resulted from the same decision:
+                                                               nor the functioning of ciphers were mentioned.
+protecting what could be valuable information.
+                                                               Only the strategies to protect information were
+But what caused the French cryptographic
+                                                               introduced. François de Callières did not mention
+practices to evolve? The increasing circulation of
+                                                               the encryption process and its technical
+information? The structuring of diplomatic and
+                                                               implementation. In addition to the technical
+intelligence systems? Was secrecy more needed?
+                                                               aspects of cryptographic practices that were not
+Or did the political writing process itself evolve?
+The aim of this paper will thus be to demonstrate              1
+                                                                A few ciphering tables present a quick documentation,
+the methodological and historical benefits of
+                                                               mostly about the use of specific cipher-text characters.
+matching the history of cryptography with the
+                                                               However, they are more the exception to the rule than actual
+history of information and to reposition                       documentation.
+part of the art of diplomacy, this information                   cryptographic writing, which needed to be fast
+needed to remain secret. Otherwise it would help                 and simple, after all. Through its many
+other countries to break the French ciphers. That                examples4 Brulart de Léon's treatise describes
+can easily – though only partly – explain the                    cryptographic mechanisms, recommended
+silence of these theoretical works.                              cipher-text characters, and so on. Following
+   Cryptographic treatises could therefore be                    Cicco Simonetta's work, this treatise went
+useful sources both to learn how Renaissance                     further. It presents practical encryption processes
+people understood the encryption process and                     which should enhance the protection of
+how and why they used it. The first such work,                   information such as not leaving any space within
+written in French, was nevertheless published                    the cipher-text; frequently using cipher-text
+only at the very end of the 16 th century                        characters without any value (so-called nulls) so
+(Vigenère, 1586). Blaise de Vigenère – like                      that rarely used characters would not lead to their
+François Viète a few years after him – was in the                value or nature; disguising the frequency of
+service of the French King for several years.                    cipher-text characters, and so on. Brulart de Léon
+Their proximity to centers of power suggests an                  thus proposed concrete rules for encryption. By
+influence or even a participation in the                         following these recommendations, the writer
+conception of ciphering tables. However, these                   could hide the origin of his letter and prevent any
+treatises seem to have remained strictly                         interception. Brulart de Léon, as Cicco Simonetta
+theoretical, even though some rare                               before him, probably dedicated his work to the
+implementations could be observed, at least in                   state office. As a former diplomat, Brulart de
+the 17th century (De Leeuw 2015). They                           Léon5 claimed to take advantage of his own
+conceived complex cryptographic systems, but                     diplomatic experience and to propose various
+they cannot be considered as practical encryption                solutions to the main issues of the daily
+manuals. Vigenère's work did indeed describe                     encryption practice that he himself has been
+theoretical cryptographic mechanisms and tried                   fa c e d. But e ve n if Brula rt de Lé on' s
+to conceive of a perfect, unbreakable, and thus                  recommendations paid better heed to the
+almost ideal cipher2. Although Vigenère's work                   concrete diplomatic needs, they remained
+was clearly not intended for regular users but                   complex, constraining and hardly compatible
+only for other scholars or scientists, noblemen                  with the speed requested by diplomatic writing.
+and diplomats could not use Vigenère's                           Whatever its initial or real goal, Brulart de
+proposals, anyway, because of their lacks of                     Léon's work has stayed off the record. Only the
+mathematical skills and their restricted writing                 original handwritten version has been preserved,
+time. Yet if these works strictly remained                       and no written or printed copy has apparently
+theoretical and had no influence on the                          been produced. Furthermore, its form looks more
+cryptographic practice, Vigenère or Viète knew                   like a personal memorandum: there is no
+real-life cryptography though not as authors of                  introduction and no inscription; the work has
+cryptographic treatises but rather by working                    been preserved in the same manuscript along
+directly with the regular creators of ciphers while              with other personal notes and memorandums. If
+decrypting enciphered letters for the Duke of                    Brulart de Léon's work was used by the state
+Nevers (Vigenère) or for the French King                         office, it would have been preserved with the
+(Viète).                                                         state office archives. Anyway, just like any other
+   Several technical diplomatic treatises,                       theoretical cryptographic treatise, Brulart de
+however, such as Traicté des chiffres by Charles                 Léon's manuscript highlights only one aspect of
+Brulart de Léon (circa 1630)3 intended to provide                cryptographic practice. It describes the technical
+practical solutions to the issues of daily                       aspects (how to choose cipher-text characters
+2
+  Blaise de Vigenère explained it quite clearly in his           3
+                                                                     French National Library, fr. 17538, fol. 48sq.
+dedicace to Antoine Séguier: “Ce traicté donques sera de
+semblables usages de chiffres, diversifiez en plusieurs          4
+                                                                   Brulart de Léon's treatise, however, does not only present
+manieres; tant pour incidemment parcourir ce qui se              standard methods but also rare systems like a ciphering
+presentera à propos de ces beaux et cachez mysteres,             wheel.
+adombrez sous l'escorce de l'escriture; que pour à l'imitation
+                                                                 5
+de cela en trasser beaucoup de rares et à peu de gens              Brulart de Léon has been ambassador to the Republic of
+divulguez artifices […] et la plus grand' part provenans de      Venice from 1611 to 1620, then extraordinary ambassador
+nostre forge et meditation; non encore que nous scachions        to the city of Avignon (1625) and to Switzerland (1628-
+touchez jusques icy d'aucun” (Vigenère, 1586, page 4).           1630).
+while conceiving ciphering tables, how to write            tricky. They are rarely preserved within the same
+cipher-text while drafting a letter) and tried to          manuscript (or box) along with the related
+improve them in order to increase the protection           enciphered letters. For example, the cipher of
+of information. But it never questions general             Jean Hotman, the French resident to the Holy
+aspects: what kind of information has to be                Roman Empire between 1609 and 1614, can be
+enciphered? Why? According to which                        found in the French National Library within the
+principles? How were the ciphering tables used             manuscript fr. 4030. On the other hand, his
+and how were encryption and decipherment                   enciphered correspondence with the French King
+operated?                                                  is now kept in manuscripts fr. 15924 to fr. 15930.
+                                                           M o r e o v e r, t h e m a n i f o l d R e n a i s s a n c e
+3      What About Primary Sources?                         denominations for the ciphering tables
+                                                           (“jargon”7, “cipher”8, “key”9...) and the absence
+Unlike their contemporary documentation about
+                                                           of any name and/or date on the verso or on the
+the cryptographic uses and practices, a
+                                                           top of the ciphering tables seem to prevent
+substantial amount of Renaissance French
+                                                           historians from identifying the origins and usages
+enciphered letters has been preserved. By
+                                                           of these tables. Even more, the Renaissance
+chance, most of them have survived with their
+                                                           designations often mix tables and enciphered
+deciphered text (in margins, between the lines or
+                                                           letters. Both can be designated as ciphers
+on a separate sheet). However, even if letters,
+                                                           (“chiffres”)10. Thus identifying the right typology
+like no other sources, transcribe perfectly the
+                                                           of the cryptographic sources and matching
+Renaissance cryptographic culture and practices,
+                                                           enciphered letters to their related ciphering tables
+enciphered letters present to historians a major
+                                                           are real issues for historians.
+issue. Not all letters contain a decipherment or, at
+                                                              We have counted the cryptographic sources
+least, their separate deciphered text has been lost.
+                                                           which were already described and identified at
+That can prevent the reading and understanding
+                                                           the French National Library. In 2014, the catalog
+of the content of such sources.
+                                                           mentioned only 60 ciphering tables, a great deal
+   Upon receipt the state office systematically
+                                                           less than their actual holdings. In fact, only one
+wrote the decipherment on the letter so that the
+                                                           fifth of the manuscripts are fully described in the
+state secretary could more easily read the whole
+                                                           catalog. In addition to cursory descriptions of the
+piece. But if the recipient deciphered the letter
+                                                           other manuscripts, some mistakes and omissions
+himself, there was no need to rewrite the
+                                                           (some bibliographic records were written in the
+deciphered text on the original letter. The
+                                                           19th century) have distorted these results, which
+separate sheet on which the recipient processed
+                                                           do not represent the diversity of political and
+the decipherment could easily be lost, deleted or
+                                                           diplomatic sources. Most of the diplomatic
+even integrated into another set of documents.
+                                                           correspondences, for example, are only described
+The original enciphered letter thus becomes
+                                                           i n a f e w w o r d s 11. A s us ual , pr i m a r y
+unreadable for historians without the ciphering
+table or cryptanalytic skills. Many letters still          7
+                                                             French National Library, Cinq-Cent Colbert 474, fol. 1:
+have kept their secrets6.
+                                                           “Jargon au deschifre” [Deciphering jargon].
+   For several letters, however, their related
+ciphering tables still exist. Although they should         8
+                                                            French National Library, fr. 4053, fol. 57: “Chiffre de
+be deleted at the end of each embassy or long-             monseigneur le marechal” [Cipher of M. the marshal].
+term correspondence, they have often been
+preserved, sometimes by the state office itself,           9
+                                                             French National Library, fr. 3629, fol. 42: “Clef pour
+and are now one of the most reliable sources of            deschiffrer les lettres de Madame de Raiz” [Deciphering key
+cryptographic uses and mechanisms. More than               for the letters of Ms. de Raiz].
+enciphered letters, ciphering tables make the              10
+                                                             French National Library, fr. 3634, fol. 5: “Chiffre reçu le
+understanding of the cryptographic systems and
+                                                           dernier octobre à Meun par le duc de Nevers” [Cipher
+their contextual or structural adaptations easier.         which was received the last day of October in Meun by the
+However, the ciphering tables have faced                   duke of Nevers]. This cipher is thus a fully enciphered letter
+different fates and their identification can be            written to the Duke of Nevers.
+
+6                                                          11
+  No letter from Henri IV to François Savary de Brèves,        The manuscript fr. 16113, for example, is labelled
+French ambassador to the Ottoman Empire, can be read, as   “Dépêches originales adressées à la Cour par divers
+the decipherment has not been written directly on the      ambassadeurs et agents français en Espagne” [Original
+enciphered letters (French National Library, fr. 3541).    letters from several French ambassadors and agents in Spain
+cryptographic sources are widely dispersed,                    correspondences or reports) is systematically
+poorly described or identified, or even                        checked. So far, 179 ciphering tables and more
+completely missing.                                            than 2 100 enciphered letters (including circa
+   Because of the need to access and analyze                   200 non-deciphered letters) have been found and
+cryptographic primary sources materially and                   described. At this stage, we presume that 50 non-
+intellectually, a long-term research project is                deciphered letters, and probably more in the
+currently conducted in collaboration with the                  future, could be deciphered. Wherever possible,
+French National Library in order to re-establish a             this identification work leads to the correction of
+direct contact with Renaissance French                         some incomplete bibliographic records. In
+cryptographic sources. The French National                     addition we mention the presence of cipher-text
+Library counts as the main repository for                      and/or decipherment, add dates and names if they
+political and diplomatic sources (until the mid-               can be restored, and so on. Nevertheless, only the
+1620's). According to the Renaissance archival                 bibliographic records which already present a
+practices, almost all diplomatic correspondences               full description will be corrected. The aim of this
+and reports before 1626 have made their way to                 project is not to completely describe the political
+the French National Library, along with several                and diplomatic collections at the French National
+political correspondences from the second half of              Library but to re-connect the cryptographic
+the 16th century. Both kinds of sources are now                sources to each other.
+preserved in the collections of “manuscrits                       Thanks to this identification work, we should
+français” [French manuscripts] and “nouvelles                  be able to cross-check ciphering tables and
+acquisitions françaises” [French new                           enciphered letters and link the letters to their
+acquisitions]. The “collection d'érudits”                      related tables. Each enciphered letter whose
+[scholars' collection] presents exceptional                    ciphering table has not yet been found, will be
+documents, too12. In fact, a major part of the                 compared to the anonymous ciphering tables.
+French cryptographic sources (before the 1630's)               The cross-checking (through cryptographic
+is kept at the French National Library and forms               systems and no more by names) will not be
+a vast and representative corpus of Renaissance                successful for each enciphered letter. More
+cryptographic uses and practices, even if further              enciphered letters from different writers than
+research in the French National Archives and in                ciphering tables have been preserved.
+the French Diplomatic Archives will be                         Nevertheless, some ciphering tables, if still
+mandatory. By studying the remaining ciphering                 missing, could be reconstructed thanks to the
+tables, by observing actual encryption practices,              decipherment in the letters. By comparing the
+by analyzing additions on the verso or top of                  cipher-text and the deciphered text, the
+ciphering tables, by comparing cryptographic                   cryptographic patterns could be understood and
+systems, we hope to rebuild, at least partly, the              restored to a great extent.
+Renaissance French cryptographic practices, uses
+and cultures. In that perspective, comparisons                 4     First Results
+with other European cryptographic practices
+                                                               Our first results, though still incomplete, have
+through case studies or similar projects such as
+                                                               confirmed the real necessity to embrace
+the one conducted by Benedek Lang (2018) on
+                                                               cryptographic sources as material objects and to
+Hungarian Early Modern cryptographic
+                                                               look at them in a broader perspective. They are
+practices, could lead to a useful, if not essential,
+                                                               not only the implementation of cryptographic
+distinction between European, “national” and
+                                                               patterns, which could interest the history of
+contextual cryptographic patterns.
+                                                               sciences or technology, but a true testimony of a
+   As a first step in this ongoing project, we are
+                                                               culture of political information. Facing only the
+locating, identifying and dating every preserved
+                                                               technical mechanisms is not enough. Of course,
+ciphering table and enciphered letter. Every
+                                                               both the history of technology and the history of
+manuscript whose description suggests
+                                                               sciences are essential to the understanding of the
+cryptographic documents (mention of original
+                                                               technical mechanisms and their evolutions. The
+to the French Court]. However, it contains a ciphering table   cryptographic sources, however, deserve to be
+of André de Cochefilet, baron of Vaucelas, ambassador to       s ubje c te d to diffe re nt a pproa c he s and
+Spain from 1609 to 1615.                                       methodologies in order to merely surpass
+                                                               political history or the history of technology.
+12
+  The manuscript Clairambault 360 for example preserves        More than any other political source,
+the ciphering table of Henri IV and Maurice of Hesse.
+cryptographic ones do indeed involve political,               both were indeed designated as “chiffre” only. In
+diplomatic, scientific, social and cultural history.          the future, however, we must find out if both
+   Identifying cryptographic sources at the                   ciphering and deciphering tables were conceived
+French National Library has required prior                    and written systematically, as they will be
+research. In order to prevent hypotheses based on             beginning with Rossignol, or if the existence of
+better known, but modern, practices and uses, we              one or the other relied on specific uses or users.
+first needed to reassess the Renaissance patterns:               Beyond the denominations, defining
+which words referred to ciphers and                           similarities between the cryptographic processes
+cryptographic practices? Did these                            is essential for the upcoming cross-checks. If the
+denominations possess any specific value?                     French cryptographic systems were mostly based
+Specific words can already be highlighted:                    on substitution, they became more complex and
+“jargon”, “chiffre” [cipher], “clef” [key],                   rational during the 16th century. At the beginning
+“deschiffre” [deciphered text], “table”. The word             of the 16th century, ciphers only presented few
+“jargon” especially referred systematically to the            cipher-text characters (simple substitution and
+same object and practice: a ciphering table using             limited nomenclator). In the second half of the
+a substitution system, by words and not by                    16th century, though, especially from the 1580's,
+characters (for example: the word rose for the                homophonic substitution was introduced (two to
+French King). Such tables were never called                   five cipher-text characters for one single plain-
+anything else but “jargon”. On the contrary, the              text letter), nomenclators were extended (around
+word “chiffre” had many uses. If the main use,                one hundred words on an average) and new
+according to our modern practice, concerned                   cipher-text characters appeared: characters
+ciphering tables, fully enciphered reports or                 without any value, canceling characters,
+anonymous letters were sometimes designated                   repeating characters 14. These improvements,
+(on the verso) as “chiffres”, too. The origin of              however, did not go as far as the theoretical
+this confusion could be related to the use, by                recommendations of cryptographers were
+diplomats mostly, of the expression “en chiffre”              concerned. A large majority of ciphers, even in
+[with cipher]. Moreover, if “deschiffre” is an                the 1620's, still relied on homophonic
+early modern word for both decipherment and                   substitution, much simpler for diplomats and
+deciphered text, the cipher-text was hardly ever              noblemen.
+designated by “chiffre” but by “en chiffre” [with                The fast technical evolution of French
+cipher/enciphered]. The denominations of                      cryptographic practices makes the identification
+cryptographic tools and productions were not yet              of ciphering tables easier and confers to our
+standardized: marginal mentions rarely described              study an extra historical perspective. For each
+the typology of documents in detail but provided              ciphering table, its main features are highlighted
+names or dates13. These mentions aimed to make                and analyzed: enciphering pattern (simple
+the identification of the document easier and                 substitution, homophonic substitution, jargon,
+quicker for the state office, the diplomats or more           nomenclators), type of cipher-text characters
+generally its recipient. Ciphering tables were                (Latin and/or Greek alphabet and/or numbers
+often sent as attachment or handed over in                    and/or symbols). Most of the time, a careful
+person; there was then no need for any additional             analysis can lead to a precise dating (to within
+mentions. At last, the expression “ciphering                  one or two decades at most). In addition to this
+table” comes from modern usages. Renaissance                  first analysis, we get a closer look at the cipher-
+cryptography was not yet practiced as an applied              text characters as they give us the best clues for
+science. It still relied on a spontaneous approach            the cross-checking stage. In the same way that
+as shown by the alphabetical and thematic                     encryption patterns have been improved, the
+organization within ciphering tables. Everyone                form of the cipher-text characters has become
+had to be able to use such tables, even without               more and more rational and easy to generate so
+any cryptographic or algorithmic knowledge.                   that they can be written and read faster. From
+Thus the distinction between ciphering tables and             symbols or highly-modified Latin characters15,
+deciphering tables was probably spontaneous;
+                                                              14
+                                                                  See for example, French National Library, fr. 3668,
+13
+  French National Library, fr. 3462, n.f.: “Chiffre reformé   fol. 72: Cipher of the count of Tillières and the French King,
+pour Levant duquel a esté envoyé un double à Monsieur de      1625.
+Breves ambassadeur en avril 1604” [Modified cipher for the
+                                                              15
+Levant whose duplicate has been sent to M. de Breves,           See, for example, French National Library, fr. 3329, fol. 2:
+ambassador in April 1604].                                    Cipher of Jacques d'Humières and François de Balzac.
+cipher-text characters were increasingly                (few lines, one page or the whole letter) will help
+transformed into numbers. Symbolic characters,          to better understand the needs for writing secret
+which are easy to spot, are thus a specific feature     information.
+of the first half of the 16th century, even if, until      Diplomacy was obviously the main, and by
+the 1580's, some examples, mostly in political          the way first, user of ciphers. The oldest
+ciphers, can still be found. From the 1560's on,        enciphered letter which so far we have found in
+however, symbols gradually disappeared and              the French National Library, dates from 1526 and
+were replaced by numbers or Latin or Greek              comes from a French diplomatic agent in
+characters. Therefore the presence of symbols           Rome16. A vast majority of enciphered letters
+within a cipher is a significant clue about the         from the first half of the 16th century and beyond
+date or, for ciphers after 1590, a real specific        that from the first decades of the 17th century
+feature. Nomenclators finally help dating the           comes from the diplomatic practice. However, if
+ciphering tables. The names within the                  ciphers were an essential tool for diplomacy, they
+nomenclators represented indeed the main                were not used systematically and on a daily
+noblemen, ministers, clergymen or diplomats             basis. Not every diplomatic agent was provided
+from a specific time. For example, the                  with a ciphering table. Only the high-ranking
+anonymous ciphering table in the manuscript             diplomats possessed one or several such
+fr. 3329 can be dated from 1574-1577 as the             instruments. In fact, ciphering tables replicated
+nomenclator includes the marshal of Montluc.            the diplomatic hierarchy. On the contrary, the
+Blaise de Montluc had been appointed marshal in         political use of ciphers was not based on
+1574 and died in 1577. Such a precise dating is         hierarchy but only on needs, as it was not linked
+of course not always possible, especially for the       to professional or temporary tenure. Although
+oldest ciphers which did not use large                  ciphers were only used by the French diplomacy
+nomenclators. A date range can still be defined in      during the first half of the 16th century, the
+those cases. At last, nomenclators, as well as the      French nobility started to also use ciphers during
+improvements of the cryptographic patterns and          the second half of the 16th century. Noblemen did
+characters, inform on the circumstances of their        not yet use ciphers for personal matters (Lang,
+usage. A high proportion of foreign names               2014) but only for political purposes. Far from
+reveals a diplomatic use, and if a country, for         being anecdotal this use increased from the end
+instance Spain, is more represented, it is highly       of the 1570's and became more diversified in its
+likely the cipher was used by a French                  practices and the origin of its users. That reveals
+ambassador to Spain.                                    how deeply ciphers were interwoven with the
+    But whatever its rise, cryptography is not used     custom of political writing. The agitated political
+in every Renaissance correspondence. The                context in France substantially explains this
+operation remained arduous both for writers and         evolution: noblemen were watched by the royal
+readers and was limited to what was considered          power, French or foreign factions were watching
+as crucial or secret information. Thus the              each other …. Thus ciphers became essential to
+presence and amount of cipher-text reveal the           the political correspondence: they protected
+significant political value of the text. However,       information, reputation and sometimes physical
+this was not representative of a specific time.         integrity. Further counts and identifications will
+Fully enciphered letters were already written in        insert these examples from the 1580's in a
+the first half of the 16th century, and an integral     broader perspective. The corpus that is finally
+encryption never became a standard. In addition         expected should provide some more information
+to their long and arduous writing, ciphers did not      about the proportion of each use (political or
+need to be systematical but, on the contrary, had       diplomatic). We hope thereby to be able to
+to adapt themselves as much as possible to the          predict more precisely the motivations for the
+evolving contextual needs: diplomatic conflict,         political use of ciphers and confirm, or
+war, insecure postal routes, and so on.                 invalidate, the current example of the 1580's. The
+Information was not by nature secret; only the          political use of ciphers could be permanent or
+collecting of information and/or its use within a       strictly limited to momentary needs (mostly
+given context made its veiling inevitable. In the       during disorders).
+future, these usage hypotheses will require             16
+                                                           French National Library, fr. 2984: letters from Nicolas
+broader statistics, but the persistent general
+                                                        Raincé to Anne de Montmorency. Nicolas Raincé was the
+writing patterns seem logical for now. Moreover,
+                                                        secretary of Jean du Bellay, cardinal and French
+the amount of cipher-text within a given letter         representative in Rome.
+Anyway, political ciphers were not as advanced       practiced in Renaissance France. We aim to
+as their diplomatic counterparts. The needs were     bridge a substantial divide between the
+very different: users were not “professional”        production and collect of information and the
+agents; they had not been trained and this           decision-making process: the material process of
+political use was still rather new. Above all the    the writing of political information. From then
+main need remained speed, before safety. Except      we could re-build a history of Renaissance
+in some rare cases like Vigenère who served the      French cryptography, not only in the perspective
+Duke of Nevers in the 1580's, cryptographers         of the history of sciences but also as part of a
+served the French King, not other noblemen. The      global history of information.
+reduced complexity of their ciphering tables was
+completely logical: there were more symbols;         Acknowledgments
+nomenclators were shorter, and homophonic
+substitution was less advanced. The differences      Part of the project has been supported by a Mark
+between political ciphers, mostly the ones during    Pigott Research Grant (2015). We would like to
+the Catholic League, and diplomatic ciphers          thank Gerhard F. Straßer and the anonymous
+reveal how French diplomacy mastered the             reviewers for their valuable comments,
+cryptographic practice and did its best to meet      suggestions and help with grammatical and
+the agents' daily needs by constantly improving      lexical issues.
+the protection of information and facilitating the
+encryption and decipherment operations.              References
+Renaissance French diplomacy acted like a            François de Callières. 1716. De la manière de
+laboratory in which ciphers and their                  négocier avec les souverains. La Compagnie,
+implementation were constantly tested and              Amsterdam.
+improved. Its practices and patterns were then       Jean-Pierre Devos. 1950. Les chiffres de Philippe II
+reused in wider circles, few years or decades           (1555-1598) et du Despacho universal durant le
+after their conception by the French diplomacy.         XVIIe siècle. Académie royale de Belgique,
+                                                        Bruxelles.
+5     Conclusion
+                                                     Alain Hugon. 2004. Au service du Roi Catholique,
+Two essential elements have been highlighted           “honorables ambassadeurs” et “divins espions”:
+during these first years of our research project:      représentations diplomatiques et service secret
+                                                       dans les relations hispano-françaises de 1598 à
+the need for a methodology which is adapted to
+                                                       1635. Casa de Velasquez, Madrid.
+the cryptographic features (in order to proceed
+successfully to the identification, analysis and     David Kahn. 1996. The Codebreakers. Simon and
+cross-checking of our ongoing corpus) as well as       Schuster, New York.
+the need for studying not only the ciphers but the   Benedek Lang. 2014. “People's Secrets: Towards a
+general context in which they were employed. If        Social History of Early Modern Cryptography”. In
+this research project is far from completion,          The Sixteenth Century Journal. 45.2: 291-308.
+some hypotheses can be stated about the general      Benedek Lang. 2018. “Real-Life Cryptology:
+uses and issues of cryptography within the             Enciphering Practice in Early Modern Hungary”.
+political and diplomatic society of the French         In Katherine Ellison and Susan Kim (eds), A
+Renaissance. Building on these first results and       Material History of Medieval and Early Modern
+future findings, we aim to study the encryption        Ciphers: Cryptography and the History of
+mechanisms and their improvements until                Literacy. Routledge, New York/London, pages
+cryptography became an applied science. We will        223-240.
+thus be able to observe the intellectual evolution   Karl de Leeuw. 2014. “Books, Science, and the Rise
+of French cryptography: its increased use in           of the Black Chambers in Early Modern Europe”.
+political and diplomatic correspondences; the          In Anne-Simone Rous and Martin Mulsow (dir.),
+dichotomy between the practiced cryptography           Geheime Post: Kryptologie und Steganographie
+and its theory; the variations between the             der diplomatischen Korrespondenz europaïscher
+diplomatic or political cryptographic uses. We         Höfe während der Frühen Neuzeit. Duncker &
+hope to highlight the adaptation of ciphers to         Humblot, Berlin, pages 87-99.
+geographical locations and/or to political and       Claire Martin. 2010. Mémoires de Benjamin Aubéry
+diplomatic context and finally to understand the       du Maurier, ambassadeur protestant de Louis XIII
+refinement and complexity of cryptography as           (1566-1636). Droz, Genève.
+Jacques de Monts-de-Savasse, “Les chiffres de la           Jean-Michel Ribera. 2007. Diplomatie et espionnage:
+   correspondance diplomatique des ambassadeurs               les ambassadeurs du roi de France auprès de
+   d'Henri IV en l'année 1590”. In Pierre Albert (dir.).      Philippe II du traité du Cateau-Cambrésis (1559)
+   1997. Correspondance jadis et naguère: congrès             à la mort de Henri III (1589). Honoré Champion,
+   national des sociétés historiques et scientifiques.        Paris.
+   Comité des travaux historiques et scientifiques.
+                                                           Alain Tallon. 2010. L'Europe au XVIe siècle: États et
+   Paris, pages 219-228.
+                                                             relations internationales. Presses universitaires de
+Valérie Nachef, Jacques Patarin and Armel Dubois-            France, Paris.
+  Nayt. 2016. “Mary of Guise's Enciphered Letters”.
+                                                           Blaise de Vigenère. 1586. Traicté des chiffres ou
+  In Peter Y. A. Ryan, David Naccache and Jean-
+                                                             secretes manieres d'escrire. Abel L'Angelier, Paris.
+  Jacques Quisquater (eds.). The New Codebreakers:
+  Essays Dedicated to David Kahn on the Occasion
+  of His 85th Birthday. Springer, Berlin, pages 3-24.
+

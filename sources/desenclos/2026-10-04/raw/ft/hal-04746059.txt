@@ -1,0 +1,946 @@
+       La rébellion comme outil de légitimation de la diplomatie
+          française dans l’Empire (années 1590 - années 1620)
+                                                Camille Desenclos
+
+
+
+      To cite this version:
+     Camille Desenclos. La rébellion comme outil de légitimation de la diplomatie française dans l’Empire (années
+     1590 - années 1620). Matthieu Gellard; Fabrice Micallef. Diplomaties rebelles: Huguenots, Malcontents et
+     Ligueurs sur la scène internationale (1562-1629), Presses universitaires de Rennes, 2022, 978-2-7535-8642-0.
+     ⟨hal-04746059⟩
+
+
+
+
+                                        HAL Id: hal-04746059
+                              https://hal.science/hal-04746059v1
+                                           Submitted on 21 Oct 2024
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+    Distributed under a Creative Commons CC BY-NC-ND 4.0 - Attribution - Non-commercial use - No
+                                 Derivative Works - International License
+   La rébellion comme outil de légitimation de la diplomatie française dans l’Empire ?
+                             (Années 1590 – Années 1620)
+
+
+
+
+Rébellion et service du roi constituent a priori deux actions incompatibles. Or, en 1589, alors
+que nombre de serviteurs de Henri III sont maintenus dans leurs fonctions diplomatiques1, le
+personnel navarrais, pourtant considéré comme rebelle pendant une majeure partie de la
+décennie 1580, cohabite puis s’impose dans la partie protestante de l’Empire en lieu et place
+de l’ancien personnel royal2. L’accession de Henri de Navarre au trône de France conduit en
+effet à une inversion de la perspective, du moins dans certains territoires étrangers3 : les
+anciens rebelles huguenots sont immédiatement considérés comme de loyaux serviteurs
+tandis que les anciens agents royaux doivent témoigner de leur fidélité à l’égard de Henri IV4
+sans pour autant bénéficier d’une légitimité similaire5. Si le glissement opéré fait sens sur le
+plan de la politique intérieure – pour les protestants, l’accession au trône de Henri de Navarre
+rend caduque toute désobéissance au roi, leur permet de concilier service du roi et service de
+
+
+
+1 GELLARD Matthieu, Une reine épistolaire. Lettres et pouvoir au temps de Catherine de Médicis, Paris, Garnier, 2015,
+
+p. 235-236.
+
+2 DESENCLOS Camille, « Loyaux serviteurs ou fidèles huguenots ? Servir le roi auprès des princes protestants de
+
+l’Empire (1589-1620) », in Jérémie FOA, Matthieu GELLARD et Bertrand HAAN (dir.), Servir le prince en temps de
+guerres civiles dans l’Europe des XVIe-XVIIe siècles, à paraître.
+
+3 Si Philippe de Canaye, seigneur de Fresnes, et Jacques Bongars, tous deux anciens agents navarrais, poursuivent
+
+sans interruption leurs missions, désormais au service du nouveau roi, l’intégration immédiate des protestants,
+et notamment des anciens conseillers navarrais, sans être une exception, n’est pas systématique (BENEDICT Philip,
+« French protestants in the Service of the Crown », in Gerlinde HUBER-REBENICH (dir.), Jacques Bongars (1554-
+1612). Gelehrter und Diplomat im Zeitalter des Konfessionalismus, Tübingen, Mohr Siebeck, 2015, p. 12-13).
+
+4 L’inversion de la perspective ne va pas jusqu’à qualifier les agents royaux de rebelles. Seuls ceux refusant de
+
+reconnaître Henri de Navarre comme roi de France en viennent grossir les rangs, et ce pour une proportion
+assez réduite (GELLARD Matthieu, Une reine épistolaire, op. cit., p. 236).
+
+5 Schomberg se plaint d’être considéré comme « traistre à la Couronne de France » pour ne pas obtenir une
+
+assistance suffisante au roi en argent et en armes (Schomberg à Revol, Strasbourg, 10 juillet 1590, MONTS DE
+SAVASSE Jacques de, GAL Stéphane et SOULINGEAS Yves (dir.), L’Europe d’Henri IV : la correspondance diplomatique
+du secrétaire d’État Louis de Revol, 1588-1593, Grenoble, Presses universitaires de Grenoble, 2004, p. 176) et fait
+l’objet de nombreuses méfiances et cabales, notamment de la part de Jean-Casimir du Palatinat. Certaines sont
+néanmoins davantage mues par les circonstances militaires et politiques que par son service passé à Henri III ou
+par ses sympathies ligueuses (DESENCLOS C., « Loyaux serviteurs ou fidèles huguenots ?… », art. cité.).
+Dieu et suscite l’espoir de temps nouveaux6, tandis que le renforcement de la Ligue facilite le
+report des accusations de rébellion sur cette dernière –, le caractère immédiat de ce transfert
+de légitimité, tout comme l’occultation totale de l’ancienne posture de rébellion dans les
+discours diplomatiques ne sont pas anodins. Bien que les traités diffusés dans la décennie
+1580 aient contribué à éloigner le parti huguenot d’un positionnement rebelle7, les agents
+désormais au service du roi n’en appartiennent pas moins à une diplomatie anciennement
+rebelle et concurrente de la diplomatie royale. Pour résoudre ce paradoxe – la qualification de
+rébellion constitue normalement un facteur de délégitimation –, l’hypothèse la plus courante a
+longtemps été celle d’une transformation de l’ancienne rébellion huguenote en outil de
+légitimation de la présence diplomatique auprès des princes protestants de l’Empire. Bien que
+séduisante, et partiellement exacte, cette dernière hypothèse ne tient pas compte de la
+pluralité et de la division des princes protestants qui ne soutenaient pas tous Henri de
+Navarre, tend à exagérer le processus de confessionnalisation des relations internationales, à
+minimiser les répercussions de la consolidation de l’autorité royale sur la diplomatie française
+dans l’Empire mais surtout à ne pas distinguer les moyens de l’action diplomatique (acteurs,
+réseaux et discours) – certes issus de la diplomatie navarraise – de son esprit, embrassant lui
+pleinement les ressorts d’une diplomatie royale.
+
+De rebelle à royale, la diplomatie navarraise dépositaire de la légitimité
+
+        Si les diplomaties rebelles bouleversent traditionnellement le jeu diplomatique, dans le
+cas de l’Empire, la diplomatie navarraise, pourtant sans nul doute rebelle8, le structure
+
+
+
+6 Rapidement    ces espoirs sont déçus, Henri IV n’accédant pas aux revendications protestantes et semblant
+accorder la primauté à la religion catholique dont il a promis s’instruire (CABANEL Patrick, Histoire des protestants
+en France, XVIe-XXIe siècle, Paris, Fayard, 2012, p. 327-332).
+
+7 Témoigner de la légitimité de leur action tout en se défendant de toute trahison constitue les fondements des
+
+argumentaires rebelles (SALINERO Gregorio, « Les voix de la rébellion moderne », in Gregorio SALINERO, Manuela
+ÁGUEDA GARCIA GARRIDO, Radu G. PAUN (dir.), Paradigmes rebelles. Pratiques et cultures de la désobéissance à
+l’époque moderne, Bruxelles, Peter Lang, 2018, p. 36-37). Dans le cas du parti huguenot néanmoins, plus encore à
+partir de 1584, il s’agit certes de témoigner de la légitimité de son action mais surtout d’opérer un
+rassemblement qui dépasse le seul cadre confessionnel et prépare l’accession au pouvoir de Henri de Navarre
+(DAUSSY Hugues, « Les huguenots entre l’obéissance au roi et l’obéissance à Dieu », Nouvelle revue du seizième
+siècle, n° 22, 2004, p. 49-69). Pour autant, les traités monarchomaques appelant notamment à la résistance
+armée ne disparaissent pas dès 1584 (MELLET Paul-Alexis, Les traités monarchomaques. Confusion des temps,
+résistance armée et monarchie parfaite (1560-1600), Genève, Droz, 2007, p. 194-201) et illustrent l’ambiguïté du
+positionnement huguenot dans la deuxième moitié de la décennie 1580.
+
+8 Voir dans ce volume DAUSSY Hugues, « D’une diplomatie rebelle à une diplomatie royale : les balbutiements de
+
+la politique internationale huguenote pendant les premières guerres civiles » ; et plus largement DAUSSY Hugues,
+Le parti huguenot. Chronique d’une désillusion (1557-1572), Genève, Droz, 2014, p. 673-721 et BEIDERBECK
+davantage qu’elle ne le brouille. Comme la diplomatie royale9, ses contacts avec les princes de
+l’Empire passent uniquement par des ambassades extraordinaires menées par des agents
+(Jacques de Ségur-Pardaillan10 puis Jacques Bongars11) qui tendent à faire de la partie
+occidentale de l’Empire leur principal champ d’exercice et donnent progressivement lieu à
+une première structuration, voire spécialisation territoriale, de la diplomatie navarraise. Plus
+encore, l’impression laissée par la diplomatie navarraise est celle d’une diplomatie ni perçue
+ni considérée comme rebelle par les princes protestants de l’Empire12. Certes, la première
+mission conduite par Ségur-Pardaillan en 1583 est un échec, l’électeur de Saxe refusant dans
+un premier temps de recevoir l’émissaire navarrais13 et le soutien militaire n’étant obtenu,
+après d’importantes longueurs, qu’auprès de quelques princes14. Pour autant, l’intensité de
+l’activité diplomatique déployée par les agents navarrais crée, dans les faits, une permanence
+diplomatique auprès des princes protestants, qui sans être officielle n’en est pas moins réelle.
+Davantage présente dans l’Empire que la diplomatie royale et de mieux en mieux reçue, la
+diplomatie navarraise dispose à la fin des années 1580 d’une assise plus large et de relations
+
+
+
+
+Friedrich, Zwischen Religionskrieg, Reichskrise und europäischem Hegemoniekampf. Heinrich IV. von Frankreich
+und die protestantischen Reichsstände, Berlin, Berliner Wissenschafts-Verlag, 2005.
+
+9 La diplomatie royale dans l’Empire est encore peu développée. Seuls deux agents, Gaspard de Schomberg
+
+(partie occidentale) et Guillaume Ancel (empereur) y représentent le roi, et ce pendant toute la décennie 1580.
+Contrairement à Schomberg, Ancel jouit du statut de résident et s’insère dans une pratique diplomatique plus
+institutionnalisée, la représentation française à la Cour impériale ayant été instituée en 1560 (FONTVIEILLE
+Damien, « Bâtir une alliance franco-impériale dans les années 1560. Bernardin Bochetel et les débuts de la
+représentation diplomatique régulière française dans l’Empire », Revue d’histoire diplomatique, 2019/3, p. 227-
+249). Pour autant, bien qu’assurant, pour le roi de France, une veille informationnelle sur l’ensemble de l’Empire,
+Ancel n’intervient pas dans la partie occidentale de l’Empire et concentre son action sur la Cour impériale.
+
+10 BRETEAU Violaine, Les ambassades de Jacques de Ségur-Pardaillan (1583-1589), mémoire de master en histoire
+
+moderne sous la direction de Hugues DAUSSY, Université du Maine, 2008.
+
+11 KOHLNDORFER-FRIES Ruth, Diplomatie und Gelehrtenrepublik : die Kontakte des französischen Gesandten Jacques
+
+Bongars (1554-1612), Tübingen, Niemeyer, 2009, p. 48-52.
+
+12 La recherche de légitimité, pourtant propre aux diplomaties rebelles, paraît davantage avoir été l’apanage de la
+
+diplomatie royale qui doit régulièrement se justifier, plus encore après la promulgation de l’édit de Nemours
+(Henri III à La Verrière, [Paris], 23 juillet 1585, copie, BnF, Ms. Fr. 17990, f° 81). De fait, si la légitimité
+institutionnelle n’est accordée ni immédiatement, ni systématiquement à la diplomatie navarraise, la légitimité
+politique de son action ne lui est pas déniée et lui permet de s’ancrer progressivement auprès de certains
+potentats.
+
+13 DAUSSY Hugues, Les huguenots et le roi : le combat politique de Philippe Duplessis-Mornay, Genève, Droz, p. 214.
+
+
+14 Ibid., p. 348-350.
+plus solides avec certains princes, qu’elles soient diplomatiques, confessionnelles15 ou encore
+personnelles.
+
+           Pendant toute la décennie 1580, Henri III est en effet représenté, dans la partie
+occidentale de l’Empire16 , par le seul Gaspard de Schomberg17 , et ce de manière ni
+institutionnalisée18 ni permanente – sa présence outre-Rhin demeure ponctuelle, Schomberg
+séjournant de manière presque continue aux frontières du royaume. De fait, bien que
+destinataire de trois instructions (été 158019, hiver 158520, printemps 158921), Schomberg
+appartient moins à la diplomatie, même extraordinaire, qu’à l’armée royale, ce qui provoque
+une complexe porosité entre les exercices diplomatique et militaire, entre surveillance
+intérieure et extérieure des menées rebelles. Lui-même se qualifie, outre de conseiller d’État
+au conseil privé du roi, de « grand maistre de camp des gens de guerre allemans entretenuz
+pour le service de Sa Majesté » en 158022 puis en 1588 de « grand mareschal des Allemans
+
+
+
+
+15 Dénes Harai souligne l’importance de cet argument confessionnel pour gagner les princes protestants à la
+
+cause navarraise dans les années 1580 mais rappelle, avec justesse, la mobilisation d’autres modalités
+argumentatives : financières (sommes d’argent pour financer les levées) comme politiques (proposition en 1588
+d’un mariage entre Charlotte de La Marck, duchesse de Bouillon, et Frédéric IV ou Christian d’Anhalt) (HARAI
+Dénes, Grands serviteurs de petits États. Les conseillers de Navarre et de Transylvanie (XVIe-XVIIe siècles), Rennes,
+Presses universitaires de Rennes, 2012, p. 200).
+
+16 Cette faiblesse dans la représentation est, partiellement, compensée par l’utilisation ponctuelle de relais
+épistolaires, comme Philippe de Senneton, sieur de la Verrière et lieutenant général pour le roi à Metz, encouragé
+en 1585 à correspondre avec le landgrave de Hesse (Henri III à La Verrière, [Paris], 23 juillet 1585, copie, BnF,
+Ms. Fr. 17990, f° 81).
+
+17 PROFFIT Timothée, Gaspard de Schomberg : homme de guerre, diplomate et négociateur de la paix (1540-1599),
+
+mémoire de maîtrise en histoire moderne sous la direction de Denis CROUZET, Université Paris-Sorbonne, 2004 ;
+DESENCLOS C., « Loyaux serviteurs ou fidèles huguenots ?… », art. cité.
+
+18 Malgré l’existence de liens anciens entre les princes de l’Empire et le roi de France, les relations entretenues
+
+par Schomberg demeurent fondées sur la seule situation conjoncturelle du royaume de France et, de fait, ce
+dernier ne dispose pas du statut d’ambassadeur ou de résident.
+
+19 « Instruction baillée à monsieur de Schomberg allant en Allemagne », s. l., 7 avril 1580, copie, BnF, Dupuy 927,
+
+f° 18.
+
+20 « Instruction au sieur de Schombert s’en allant vers les princes d’Allemaigne », s. l., 21 octobre 1585, copie,
+
+BnF, Ms. Fr. 17990, f° 88.
+
+21 « Instruction au sieur de Chombert allant de present en Allemaigne pour le service de Sa Majesté », Tours, 12
+
+mai 1589, copie, BnF, Cinq-Cents de Colbert 11, f° 34.
+
+22 Constitution d’une rente par Gaspard de Schomberg, 26 janvier 1580, Archives Nationales [dorénavant AN],
+
+8 AP 1, n.f.
+entretenuz pour le service du roy23 ». Schomberg présente certes les discours royaux à
+certains princes de l’Empire (Jean-Casimir du Palatinat, Jean Ier de Deux-Ponts, Auguste Ier
+puis Christian Ier de Saxe, Jean II Georges de Brandebourg, etc.), afin de contrer les discours
+navarrais auxquels certains comme Jean-Casimir offrent déjà une oreille attentive24, et mène
+auprès d’eux certaines négociations. S’il incarne en cela les modalités traditionnellement
+déployées face à une diplomatie rebelle, ses dépêches rappellent avec force la prééminence de
+la dimension militaire de ses missions25, s’inscrivant sinon dans le champ de la diplomatie de
+guerre, dans celui d’une surintendance des affaires militaires sur la frontière orientale du
+royaume de France. Le contraste est alors saisissant avec les dépêches rédigées dans le même
+temps par Guillaume Ancel, résident pour le roi auprès de l’empereur, et qui, elles, surveillent
+et détaillent aussi longuement que régulièrement les négociations menées par les émissaires
+navarrais (princes rencontrées, contenu des discussions) tout en s’efforçant d’obtenir l’appui
+de l’empereur pour favoriser les levées royales et/ou interdire les levées huguenotes26.
+Véritables révélateurs de l’appréhension contemporaine des missions de Schomberg, ces
+dépêches les passent sous silence et le placent plus encore en marge du réseau diplomatique27.
+
+         Néanmoins, malgré la nature composite des missions de Schomberg et bien que les
+instructions destinées aux territoires impériaux demeurent peu nombreuses (six au total
+entre janvier 1580 et août 1589), ces dernières ne sont pas moins éloquentes quant au
+
+23 Procuration donnée à François Daignet par Gaspard de Schomberg et Jeanne Chastaigner, 17 décembre 1588,
+
+AN, 8 AP 1, n.f.
+
+24 Infirmant l’idée d’une totale confessionnalisation de la politique étrangère, certains princes protestants de
+
+l’Empire, comme Georges-Jean du Palatinat, soutiennent le roi de France contre tous les rebelles, que ce soit le
+parti ligueur ou le parti huguenot (Georges-Jean du Palatinat à Henri III, Lützelstein, 8 avril 1587, BnF,
+Ms. Fr. 3314, f° 24) et dénoncent ce qu’ils estiment être des complots d’autres princes, notamment de Jean-
+Casimir du Palatinat, pour soutenir non le roi mais le parti huguenot (Georges-Jean du Palatinat à Henri III,
+Lützelstein, 29 mai 1587, BnF, Ms. Fr. 3314, f° 29). Le soutien de Georges-Jean du Palatinat, aussi conjoncturel
+que motivé par l’espoir d’une pension et de la protection du roi, n’est néanmoins guère pris en bonne part par le
+roi de France qui ne lui accorde pas sa confiance.
+
+25 Les dépêches de Schomberg, rédigées en 1587, se concentrent majoritairement sur les levées qu’il mène au
+
+nom du roi ainsi que sur les divers succès des armées alliées (voir par exemple Schomberg à Henri III, Nancy,
+29 août 1587, BnF, Ms. Fr. 4734, f° 271).
+
+26 BnF, Ms. Fr. 3393, Ms. Fr. 15572, Ms. Fr. 18989 et Cinq-Cents de Colbert 398. Voir par exemple Ancel à Villeroy,
+
+Prague, 7 janvier 1586, BnF, Ms. Fr. 18989, f° 385.
+
+27 Dans les 46 dépêches adressées par Ancel au pouvoir royal entre le 24 mars 1587 et le 9 août 1588 et
+
+conservées dans le manuscrit français 3393 (BnF), Schomberg est mentionné seulement deux fois alors que les
+menées navarraises le sont quatorze fois. La première mention notamment le place sans ambiguïté sur le strict
+plan militaire, l’associant uniquement aux levées qu’il effectue au nom du roi (Ancel à Henri III, Prague, 16 juin
+1587, BnF, Ms. Fr. 3393, f° 32).
+positionnement de la diplomatie royale à l’égard de la diplomatie huguenote. Sur les trois
+instructions délivrées à Schomberg (1580, 1585 et 1589), seule l’instruction de 158528
+dénonce la diplomatie navarraise comme menant des levées auxquelles il convient de
+s’opposer. Cet affrontement diplomatique, toujours indirect par négociations, princes ou
+surveillances interposés et renforcé par le déploiement depuis quelques années de vastes
+ambassades navarraises dans l’Europe protestante, s’observe encore dans l’instruction de
+Philippe de Senneton, sieur de La Verrière, envoyé en 1586 auprès de l’électeur de Saxe29 ainsi
+que dans l’instruction d’Ancel, envoyé en 1586 auprès de divers princes de l’Empire (évêque
+de Strasbourg, Jean-Casimir du Palatinat, électeurs ecclésiastiques) 30, comme dans les
+dépêches de Schomberg en 158731. Ces dernières comme les instructions ne font néanmoins
+que suggérer la nature rebelle des menées navarraises. Le vocabulaire de l’obéissance est
+amplement mobilisé mais jamais ces menées ne sont formellement qualifiées de rebelles :
+« Affin que par ce moyen estans [le roi de Navarre et le prince de Condé] destituez de l’appuy
+qu’ilz reserchent de l’Allemaigne, ilz se resolvent tant plustost d’obeyr et se ranger à la
+voluncté de Sa Majesté et d’ambrasser une pacification à leur evident proffict et utilité et du
+general de ce royaume sans que les troubles y soient plus fomentez32. »
+
+         Dès 1588 cependant, les dépêches révèlent l’émergence d’une nouvelle surveillance
+réalisée par les agents royaux présents dans l’Empire, celle des troupes levées en faveur de la
+Ligue33, bien qu’Ancel réfute alors encore la qualification, et même l’existence, d’une rébellion
+ligueuse contre le roi34. Ce mouvement aboutit en 1589 dans l’instruction délivrée à
+
+
+28 « Instruction au sieur de Schombert s’en allant vers les princes d’Allemaigne », s. l., 21 octobre 1585, copie,
+
+BnF, Ms. Fr. 17990, f° 88.
+
+29 « Instruction baillée au sieur de la Verriere s’en allant vers monsieur le duc de Saxe sur l’occasion de la mort du
+
+feu duc Auguste », Paris, 12 mai 1586, copie, BnF, Ms. Fr. 17990, f° 104.
+
+30 Bien que l’instruction soit signée par le roi, les deux champs, correspondant au nom de l’émissaire et à la date
+
+(jour et mois), n’ont pas été remplis. L’instruction étant conservée au sein de la correspondance d’Ancel et
+pouvant correspondre à une mission menée à l’occasion d’un voyage de retour entre Paris et Prague (sa
+correspondance s’interrompt entre mai et novembre 1586 ce qui semble renforcer cette hypothèse d’un retour
+momentané à la Cour de France), l’attribution de cette instruction à Ancel paraît plausible.
+
+31 Voir par exemple Schomberg à Henri III, Sarreguemines, 13 juin 1587, BnF, Ms. Fr. 3314, f° 67.
+
+
+32 « Instruction baillée au sieur de la Verriere s’en allant vers monsieur le duc de Saxe sur l’occasion de la mort du
+
+feu duc Auguste », Paris, 12 mai 1586, copie, BnF, Ms. Fr. 17990, f° 104.
+
+33 Aucune dépêche postérieure à février 1588 n’a pu être retrouvée pour Schomberg, ne permettant pas de
+
+confirmer ce glissement opéré dans la correspondance d’Ancel.
+
+34 Ancel à Henri III, Prague, 12 juillet 1588, BnF, Ms. Fr. 3393, f° 99.
+Schomberg qui renverse définitivement la perspective en portant l’opprobre sur la Ligue35,
+tandis que celle de Baradat, envoyé au même temps vers le duc de Deux-Ponts, n’hésite pas à
+détailler amplement les raisons ayant conduit le roi à « chastier les feuz duc et cardinal de
+Guise 36 ». Plus encore, la Ligue, désormais cible de dénonciations similaires à celles
+prononcées antérieurement contre le parti huguenot, est qualifiée explicitement de
+« rébellion », dans les deux instructions (Schomberg et Baradat), tandis que la trêve et alliance
+avec Henri de Navarre est célébrée. Cette évolution dans les discours royaux, comme
+navarrais37, octroie une première légitimité monarchique à la diplomatie navarraise qui passe
+ainsi du statut de diplomatie rebelle à celui de diplomatie parallèle aux intérêts convergents38
+et lui permet de se situer dès août 1589 dans la continuité des actions récemment menées par
+ses soins mais également par la diplomatie royale. Néanmoins, alors que la diplomatie
+navarraise se concentrait, selon une logique majoritairement confessionnelle, sur les seuls
+potentats protestants, la diplomatie royale incluait l’ensemble des princes de l’Empire, sans
+distinction de confession et, de fait, s’appuyait majoritairement sur une représentation auprès
+de l’empereur39. Cette dissymétrie entre les deux diplomaties favorise l’intégration de
+l’ancienne diplomatie navarraise à la diplomatie royale – aucune concurrence majeure ne
+s’observe entre les deux réseaux diplomatiques : le réseau navarrais est bien plus influent
+dans la partie occidentale de l’Empire et à l’inverse absent des territoires catholiques et
+notamment de la cour impériale – mais donne naissance davantage à une juxtaposition qu’à
+
+
+
+35 « Instruction au sieur de Chombert allant de present en Allemaigne pour le service de Sa Majesté », Tours, 12
+
+mai 1589, copie, BnF, Cinq-Cents de Colbert 11, f° 34.
+
+36 « Instruction au sieur de Baradat allant en Allemagne », s.l., [mai] 1589, copie, BnF, Ms. Fr. 16201, f° 47.
+
+
+37 Les arguments utilisés comme la nécessité de ne permettre un trop grand renforcement de la maison de
+
+Habsbourg se retrouvent dans les argumentaires navarrais (DAUSSY H., Les huguenots et le roi…, op. cit., p. 278-
+282) après avoir été développés antérieurement par la diplomatie royale (« Instruction baillée à monsieur de
+Schomberg allant en Allemagne », s. l., 7 avril 1580, copie, BnF, Dupuy 927, f° 18).
+
+38 Lesdeux diplomaties conservent néanmoins leur identité propre, Bongars étant notamment chargé de
+rassurer les princes protestants quant aux intentions de Henri de Navarre suite au rapprochement avec Henri III,
+et envoient chacune leurs émissaires (Bongars pour la diplomatie navarraise, Schomberg et Baradat pour la
+diplomatie royale). Bongars et Baradat se rencontrent néanmoins à Halle et incarnent le rapprochement
+progressif entre les deux diplomaties (KOHLNDORFER-FRIES R., Diplomatie und Gelehrtenrepublik…, op. cit., p. 52).
+
+39 Si Schomberg poursuit le dialogue avec les électeurs ecclésiastiques vers lesquels il est, entre autres, envoyé en
+
+mars 1590, son rappel sonne le glas d’échanges directs avec ceux-ci, la réception d’ambassadeurs protestants
+s’avérant impossible. Bongars transmet certes les dépêches du roi aux électeurs ecclésiastiques (Bongars à
+Henri IV, Francfort, 24 juin 1601, BnF, Ms. Fr. 23196, f° 238) mais progressivement les relations diplomatiques
+avec ces derniers est confiée à l’ambassadeur, catholique, auprès des Archiducs de Flandres, révélant une
+nouvelle fois les limites de cette fusion entre les systèmes navarrais et royaux à l’échelle de l’Empire.
+une réelle fusion. La diplomatie navarraise absorbe et se substitue à l’ancienne diplomatie
+royale pour les territoires protestants de l’Empire, mais la résidence auprès de l’empereur
+demeure inchangée dans son personnel.
+
+        De fait, pendant la décennie 1590, et même jusqu’à la fin du règne de Henri IV, la
+diplomatie française à destination des princes protestants de l’Empire s’apparente davantage
+à une diplomatie princière voire personnelle qu’à une diplomatie attachée à l’institution
+monarchique40. Au-delà des spécificités propres à l’Empire, sa structure reprend les schémas
+développés par la diplomatie navarraise, et donc par une diplomatie rebelle. Ainsi, malgré la
+fin des guerres civiles et de la guerre contre l’Espagne, Bongars continue de représenter le roi
+non comme résident mais comme ambassadeur extraordinaire que les besoins et
+circonstances amènent à séjourner de manière presque permanente dans l’Empire mais
+auprès de villes et potentats différents41. La nature de ses missions évolue certes, en accord
+avec la politique étrangère henricienne, mais son statut, tout comme son rapport aux princes
+protestants, demeure plus proche de celui de Ségur-Pardaillan que de celui de Schomberg. S’il
+demeure présent dans la structure du réseau diplomatique français dans l’Empire, l’héritage
+rebelle paraît néanmoins disparaître dans le choix des acteurs au profit de nouveaux critères,
+néanmoins compatibles avec une appartenance passée au parti rebelle huguenot ou du moins
+se situant dans sa droite ligne. La loyauté envers Henri IV tout comme la confession
+protestante étaient certes au cœur du parti huguenot mais lui préexistaient. L’héritage rebelle,
+conjoncturel, peut ainsi s’effacer tout en préservant des fondements prompts à faciliter
+l’acceptation d’une représentation diplomatique par les princes protestants de l’Empire. Ainsi,
+venant en appui de Bongars, présent dans l’Empire jusqu’en 1611, Jean Hotman se voit confier
+en 1609 une mission d’information puis de négociation pour le roi de France. Or, Hotman
+n’est nullement issu de l’ancienne diplomatie navarraise et, bien qu’il soit né en 1552, ne
+semble pas même avoir pris part aux guerres civiles, étant au service de nobles anglais entre
+1579 et 1590 comme précepteur puis comme interprète, notamment pour Robert Dudley,
+
+
+
+40 S’il convient de ne pas généraliser ou de se laisser abuser par l’expression régulière de liens personnels
+
+d’amitié dans les dépêches, nombreuses sont les marques de relations, si ce n’est personnelles du moins
+privilégiées entre Henri IV et certains potentats comme le landgrave de Hesse (Correspondance inédite de Henri
+IV, roi de France et de Navarre, avec Maurice-le-Savant, landgrave de Hesse, éd. Christophe de ROMMEL, Paris, Jules
+Renouard, 1840).
+
+41 DESENCLOS Camille, « Diplomate, huguenot ou humaniste ? Le modèle de l’agent français auprès des princes
+
+protestants de l’Empire (1589-1620), in Indravati FELICITE (dir.), L’Identité du diplomate (Moyen Âge – XIXe siècle).
+Métier ou noble loisir ?, Paris, Classiques Garnier, 2020, p. 32-33.
+comte de Leicester42. Bien que cette dernière fonction l’amène à séjourner à la Cour
+d’Angleterre, que Robert Dudley entretienne de réguliers contacts avec les principaux chefs
+huguenots43, et qu’au service de Robert Devereux, comte d’Essex, après la mort de Robert
+Dudley, il accompagne en 1589 dans le cadre d’une mission diplomatique en Écosse, Archibald
+Douglas et Paul Choart de Buzanval, alors émissaire de Henri de Navarre44, Hotman, sans être
+étranger au parti huguenot ni à ses menées, n’en est pas directement acteur. Pourtant, il
+devient en 1585 conseiller et maître des requêtes du roi de Navarre45. Hotman étant alors au
+service de Robert Dudley, l’obtention de cette charge paraît être due aux services rendus par
+son père François Hotman, qui accède simultanément à cette même charge, et à la volonté de
+Henri de Navarre de s’attacher durablement les services de la famille Hotman. De ce fait,
+conjuguée à la confession calviniste de Jean Hotman et à sa bonne connaissance des milieux
+protestants germaniques grâce à son père, mais également à ses propres contacts avec la
+République des Lettres, cette charge navarraise, bien qu’honorifique, lui permet, en 1609, de
+voir sa légitimité reconnue par le pouvoir royal comme par les princes protestants de
+l’Empire. Le faible nombre de représentants permanents ne permet néanmoins pas de
+généraliser le rôle d’un service passé, direct ou familial, à Henri de Navarre comme outil de
+légitimation. Dernier représentant permanent dans l’Empire avant la rupture de 1621
+suscitée par la guerre de Trente Ans, Étienne de Sainte-Catherine est sans nul doute calviniste
+et également bien introduit dans les milieux protestants, tant en France que dans l’Empire,
+mais en l’absence de toute information personnelle à son sujet 46 , l’utilisation d’une
+appartenance ou familiarité avec l’ancien parti navarrais comme outil de légitimation ne peut
+être confirmée. Par ailleurs, si certains éléments comme la confession demeurent, la
+
+
+
+42 GARLOFF Mona, Irenik, Gelehrsamkeit und Politik. Jean Hotman und der europäische Religionskonflikt um 1600,
+
+Göttingen, V & R, 2014, p. 49-51.
+
+43 Correspondance inédite de Robert Dudley, comte de Leycester, et de François et Jean Hotman, éd. P.J. Blok,
+
+Haarlem, Les heritiers Loosjes, 1911, p. 87.
+
+44 GARLOFF M., Irenik, Gelehrsamkeit und Politik… op. cit.., p. 51.
+
+
+45 Ibid., p. 51. En 1585, alors présent en France, Hotman aurait envisagé d’entrer au service de Henri de Navarre,
+
+avant de suivre finalement Robert Dudley aux Pays-Bas où celui-ci vient d’être nommé pour secourir les
+Néerlandais contre Philippe II (Correspondance inédite de Robert Dudley…, op. cit., p. 91).
+
+46 Si le parcours antérieur de Sainte-Catherine est moins connu , son ample insertion dans les réseaux
+protestants tant français qu’européens lui permet, aux yeux des princes de l’Empire, de jouir de cette même
+image positive que les anciens serviteurs de Henri IV (DESENCLOS Camille, « Au-delà de toute diplomatie : la
+constitution de réseaux parallèles protestants et érudits entre France et Empire au début du XVIIe siècle », Revue
+d'histoire du protestantisme, n° 4, 2016, p. 531-553).
+légitimation de l’action diplomatique française dans l’Empire repose désormais moins sur la
+participation commune à la défense de la cause protestante que sur l’affirmation, puis la
+réactivation, du rôle d’arbitre de la Chrétienté, endossé par Henri IV47. La diplomatie
+protestante dans l’Empire efface par là tout rapport direct avec les rébellions qu’elle
+surplombe désormais tant dans les faits – l’image d'Henri IV comme « arbitre de la
+Chrétienté » est sciemment réutilisée, traduite en actes et abondamment diffusée dès les
+premières années du règne de Louis XIII48, notamment pour le règlement définitif de l’affaire
+de Juliers – que dans les discours des agents comme des princes protestants49.
+
+De l’autre côté du miroir : gérer la rébellion
+
+         Tandis que la rébellion huguenote se dissout dans une diplomatie dont l’ancrage
+politique et confessionnel a renforcé et étendu sa légitimité auprès des princes protestants de
+l’Empire, le vocabulaire de la rébellion demeure mobilisé, en réaction aux troubles qui agitent
+le royaume de France ou l’Empire, et témoigne de la transformation réelle, tant des rôles que
+des discours, de l’ancienne diplomatie rebelle navarraise en une diplomatie royale.
+Immédiatement après l’accession au trône de Henri IV, les premières dépêches adressées aux
+princes protestants de l’Empire ne font nulle mention du précédent statut du nouveau roi,
+prince rebelle pour les uns, chef légitime pour les autres. Le vocabulaire de la rébellion sert
+désormais à désigner la Ligue. Participant de l’affirmation de l’autorité royale de Henri IV,
+l’opprobre jetée sur la Ligue est davantage performative, car à l’exception de Schomberg qui
+est également envoyé vers les électeurs ecclésiastiques, les princes destinataires des
+ambassades henriciennes sont tous protestants. S’il convient de ne pas systématiser le soutien
+accordé à Henri IV par ces derniers, ceux-ci ne sont guère la cible de la diplomatie ligueuse.
+Aucune concurrence diplomatique n’étant à dénoncer, il s’agit moins de légitimer la
+diplomatie royale ou même la poursuite de la guerre civile que de donner plus de force aux
+
+
+47 Christian Kampmann date l'apparition, ou du moins l'utilisation plus fréquente, de l'expression à partir des
+
+années 1607-1608 pour les publications imprimées au sein du royaume (KAMPMANN Christian, Arbiter und
+Friedensstiftung : die Auseinandersetzung um den politischen Schiedsrichter im Europa der Frühen Neuzeit,
+Paderborn, Verlag Ferdinand Schöningh, 2001, p. 97) et à partir des années 1608-1609 pour les discours tenus
+aux ambassadeurs étrangers présents à la Cour (ibid., p. 103).
+
+48 Ibid., p. 120-121 et p. 126-140.
+
+
+49 Maurice de Hesse à Louis XIII, Melsungen, 3 décembre 1618, BnF, Ms. Fr. 15928, f° 519. Signe de l'importance
+
+et propagation de cette image dans la partie occidentale de l'Empire, on trouve également des références au rang
+d'arbitre tenu par Henri IV jusque dans les nouvelles à la main transmises par les agents diplomatiques
+(« Extraict et substance de deux lettres », Cologne et Clèves, 24 janvier et 2 février 1618, BnF, Ms. Fr. 15928,
+f° 303).
+demandes de soutien, tout en insistant sur la continuité monarchique prompte à renforcer
+l’autorité royale, comme dans cette lettre que Henri de La Tour, vicomte de Turenne, est
+chargé de remettre à Christian IV, roi de Danemark, de la part de Henri IV : « Vous avez peu
+entendre la violente et grande rebellion qui s’esleva en ce royaume contre le feu roy dernier
+deceddé nostre tres cher seigneur et frere apres la mort du feu duc de Guize et laquelle a
+tousjours continué contre nous depuis nostre advenement à ceste couronne50. » Recourant à
+un vocabulaire particulièrement fort pour une dépêche officielle pouvant être rendue
+publique, celle-ci recourt une seconde fois au terme de rébellion, cette fois-ci comme
+synonyme direct de la Ligue (« Paris, capitalle du royaume et de ladite rebellion51 »). Au-delà
+de la continuité diplomatique que créent ces discours52, la qualification de la Ligue comme
+rébellion, à des fins évidentes de délégitimation, se retrouve systématiquement dans chaque
+instruction délivrée en vue d’une mission auprès de potentats protestants, dans ou hors de
+l’Empire en 1590 et 159153. Ces références à la rébellion ligueuse disparaissent néanmoins
+dès lors que dépêches ou instructions sortent du cadre strict des territoires protestants et
+confirment l’aspect performatif de ces discours accusatoires. Dans une dépêche dressée à
+Wolgang von Dalberg, archevêque et électeur de Mayence en mars 159054, la référence aux
+guerres civiles est claire mais le vocabulaire de la rébellion n’est pas directement mobilisé,
+s’agissant d’obtenir le soutien, ou du moins la neutralité de l’électeur, sans se l’aliéner en
+dénonçant de manière trop virulente les menées ligueuses, qui se réclament de la défense du
+catholicisme, et en l’accusant indirectement de soutenir une rébellion. Néanmoins, quel que
+soit le destinataire, catholique ou protestant, des discours, le recours au terme de rébellion
+disparaît complètement dès 1593. Alors que les instructions délivrées à Henri de La Tour en
+octobre 1590 et à Buzanval en 1591 qualifient encore la Ligue de rébellion, le terme est
+
+
+50 Henri IV à Christian IV de Danemark, Gisors, 27 octobre 1590, BnF, Ms. Fr. 7125, f° 2.
+
+
+51 Ibid.
+
+
+52 La qualification de la Ligue comme rébellion s’observe déjà dans les dernières instructions délivrées par
+
+Henri III (« Instruction au sieur de Chombert allant de present en Allemaigne pour le service de Sa Majesté »,
+Tours, 12 mai 1589, copie, BnF, Cinq-Cents de Colbert 11, f° 34).
+
+53 Voir notamment l’instruction délivrée à Henri de La Tour, vicomte de Turenne, qui qualifie à trois reprises les
+
+ligueurs de rebelles (« Instruction baillée à Monsieur de Bouillon pour aller en Angleterre, Pais Bas et
+Allemaigne », Gisors, octobre 1590, copie, BnF, Cinq-Cents de Colbert 31, f° 111).
+
+54 Henri IV à Wolgang von Dalberg, s. l., mars 1590, copie, BnF, Ms. Fr. 13966, f° 54. Le même constat – un
+
+vocabulaire fort mais qui ne recourt jamais au terme de rébellion – peut être dressé pour les dépêches adressées
+aux électeurs de Cologne et de Trèves (Henri IV à Johann von Schönenberg. s. l., mars 1590, copie, BnF, Ms.
+Fr. 13966, f° 55 ; Henri IV à Ernest de Bavière, s. l., mars 1590, copie, BnF, Ms. Fr. 13966, f° 55).
+absent dans les instructions délivrées à Bongars en 1593 puis en 1594. Le ralliement
+progressif des ligueurs explique en grande partie ce changement discursif55. Les instructions
+suivantes, à destination des princes protestants de l’Empire, poursuivent cette sémantique
+non plus de la rébellion mais de la guerre, exprimant la transformation d’une guerre civile
+avec des soutiens extérieurs en une guerre extérieure56 avec quelques soutiens dans le
+royaume que la diplomatie henricienne dénonce par ailleurs comme entretenus par l’Espagne
+à seule fin de servir de prétexte à son ingérence dans les affaires françaises57.
+
+        Le retour de la paix dans le royaume de France en 1598 ne fait pas disparaître le terme
+de rébellion. Chaque révolte réactive discours et vocabulaires propres à l’opposition armée, y
+compris le terme de rébellion, à des fins de délégitimation des menées jugées contraires au
+pouvoir royal. Ainsi, la guerre de la Mère et du Fils donne occasion à Puisieux de demander à
+ses agents, notamment à Étienne de Sainte-Catherine, résident auprès de l’électeur palatin, de
+tout faire pour s’opposer aux éventuelles menées de Marie de Médicis, soit de s’opposer à une
+nouvelle diplomatie rebelle : « Si [le mal] passoit plus avant comme il seroit à craindre que
+noz brouillons n’allassent cercher apuy et assistance dehors, aussy faudroit il veiller qu’ilz ne
+l’y peussent recevoir et principallement du costé d’Allemagne où les intelligences de Monsieur
+de Bouillon pourroient ayder à leur fournir des gens de guerre. À quoy, ce sera à vous de
+prendre garde soigneusement et nous advertir de tout ce qui se passera pour ce subject, et des
+troupes de reistres ou lansquenetz qui s’y leveront et les destournans et empeschans avec
+toute la dexterité que vous pourrez et mesmes en faisant scavoir aux princes amys et alliez de
+ceste Couronne combien Sa Majesté prendroit cest affaire à cœur, et le juste subject qu’elle a
+de procedder contre ses subjectz, qui manqueront au respect et à l’obeissance qui luy est deue
+avec le desir qu’elle a de donner tout contantement à la royne sa mere en ce qu’elle pourra, et
+se promect bien en ceste occasion que si Monsieur l’ellecteur palatin a à favoriser quelque
+party, ce sera plustost celuy de Sa Majesté que non pas de ses subjectz rebelles et luy
+tesmoignera en ces occurrences les effectz de son amitié et affection ancienne de ses
+
+
+
+55 Henri IV à Ernest de Bavière, s. l., mars 1590, copie, Bibliothèque municipale d’Orléans, Ms 537, f° 1.
+
+
+56 Dès 1595, les instructions inversent les acteurs, évoquant d’abord les « force et dessins du roy d’Espagne »
+
+avant de faire mention de « ses adherans » (Instruction donnée à Bongars, Paris, 2 février 1595, BnF, Ms.
+Fr. 7126, f° 47).
+
+57 « Guerre  qu’ilz continuoient ou pour mieux dire le roy d’Espagne soubz leur nom contre Sa Majesté »
+(« Instruction que le roy a advisé de bailler au sieur Bongars l’envoyant en Allemagne afin qu’il ait à se conduire
+en l’execution de la charge que Sa Majesté a trouvé bon de luy commettre de ce costé là selon qu’il est contenu cy
+apres », Laon, 6 août 1593, BnF, Ms. Fr. 7126, f° 51).
+predecesseurs envers ceste couronne58. » Néanmoins, malgré les craintes ici exprimées par
+Puisieux, aucune tentative, directe ou indirecte, de soutien ne semble avoir été portée par le
+parti de la reine-mère auprès des princes protestants de l’Empire59. De fait, les modalités de
+lutte déployées par le pouvoir royal ne sont nullement spécifiques à l’Empire : le discours est
+similaire à tous les agents60 et reprend les ressorts traditionnels de la diplomatie royale pour
+contrer l’appel aux puissances étrangères formulé par une diplomatie rebelle.
+
+        La gestion de certaines rébellions s’avère néanmoins plus délicate pour la diplomatie
+française, en raison des facteurs confessionnels pouvant y être associés et donner lieu à la
+réactivation d’anciens réseaux rebelles huguenots en lien avec les princes protestants de
+l’Empire. L’affaire du duc de Bouillon en 1606 notamment illustre la fragilité du
+positionnement des agents français tant face au pouvoir royal qu’aux princes de l’Empire61. La
+réaction royale à cette révolte politique est en effet analysée par Bongars, comme par les
+princes protestants, comme une potentielle attaque contre le parti huguenot, à travers la
+figure de l’un de ses chefs. Bongars ne manque alors pas de faire part au roi de son inquiétude
+et reprend certains discours tenus dans l’Empire laissant croire à une nouvelle persécution
+des protestants62, tandis que l’électeur palatin s’avère peu satisfait des menaces portées au
+nom du roi par Robert Harlay de Montglat en cas de levées en faveur dudit duc dont il est
+pourtant l’allié63. Bongars ne soutient certes pas le duc de Bouillon mais tend à remettre en
+question la légitimité de l’action royale, ce qui teinte plus encore ses discours d’un air de
+subversion : « Je ne doibs pas pour tant dissimuler à Vostre Majesté qu’on en fait des discours
+comme si elle alloit à toute bride persecuter ceux de la religion, lesquels ont jusques à present
+vescu soubs son aesle en toute liberté et seureté. J’espere que les effects dementiront ces
+
+
+
+58 Puisieux à Sainte-Catherine, Paris, 2 mars 1619, BnF, Ms. Fr. 4121, f° 225.
+
+
+59 Aucun contact entre les princes protestants et une diplomatie rebelle n’est mentionné dans les dépêches de
+
+Sainte-Catherine. À l’inverse, les dépêches de Péricard évoquent, assez logiquement, ses actions pour surveiller
+et interdire les levées effectuées au profit du parti rebelle sur les terres de l’Archiduc, du duc de Lorraine ou
+encore de l’électeur de Cologne et même pour s’opposer aux recherches effectuées par ledit parti à la Cour
+archiducale (voir par exemple Péricard à Puisieux, Bruxelles, 11 avril 1619, BnF, Ms. Fr 16132., f° 111).
+
+60 Cette demande n’est pas restreinte aux princes protestants de l’Empire. Les mêmes commandements sont
+
+notamment délivrés à Jean de Péricard, résident français auprès des Archiducs (Péricard à Puisieux, Bruxelles,
+11 avril 1619, BnF, Ms. Fr. 16132, f° 111).
+
+61 KOHLNDORFER-FRIES R., Diplomatie und Gelehrtenrepublik…, op. cit., p. 70-75.
+
+
+62 Bongars à Villeroy, Metz, 23 mars 1606, BnF, Ms. Fr. 15920, f° 57.
+
+
+63 Bongars à Henri IV, Metz, 21 mars 1606, BnF, Ms. Fr. 15920, f° 55.
+discours et qu’elle continuant la bonté et clemence qui luy est naturelle et ordinaire, deferera
+quelque chose aux princes et seigneurs estrangers desquels mondit seigneur de Bouillon est
+allié qui ont par le passé fait de bons services à Vostre Majesté et sont pour luy en faire de plus
+grands à l’avenir. Je ne scay pas leurs conseils mais la rigueur de laquelle on dict que Vostre
+Majesté veult user ne peult qu’elle n’apporte de grandes alterations et distractions et il n’y en
+a desja que trop. C’est l’avantage des ennemys de Vostre Majesté et du repos public, c’est la
+breche par laquelle ils entreront sur nous pour nous desfaire et ruiner64. » Le pouvoir royal
+goûte assez peu de voir l’un de ses représentants relayer des discours qu’il s’efforce alors de
+combattre par les armes. Immédiatement, Bongars voit donc la qualité de son service remis en
+cause65 tout comme la pertinence de ses jugements66. Cette disgrâce est néanmoins de courte
+durée. Grâce à des excuses67 et à l’intercession de Villeroy, Bongars n’est pas rappelé et voit
+même, dès juin, son service confirmé, dans un esprit de conciliation68, et plus largement
+d’oubli des fautes69, similaire au pardon accordé à Bouillon. Toutefois, cette affaire, bien
+qu’amplifiée par la liberté de parole et la franchise peu communes dont Bongars fait preuve
+dans ses dépêches, révèle le difficile équilibre auquel les agents français sont contraints : ils
+sont encouragés par le pouvoir royal dans leurs amitiés protestantes afin de se ménager la
+faveur des princes protestants ou du moins un accès facilité à l’information70, mais ces amitiés
+
+
+
+
+64 Bongars à Henri IV, Strasbourg, 26 février 1606, BnF, Ms. Fr. 15920, f° 37.
+
+
+65 « Vous estes tres mal informé de la justice de l’entreprise en laquelle la desobeissance et ingratitude du duc de
+
+Bouillon m’a engagé ny de la consequence d’icelle, laquelle vous ne regardez et considerez que d’un œil, non par
+faulte d’affection et fidellité en mon endroict et à vostre patrie (car j’ay trop esprouvé l’une et l’autre pour en
+doubter) mais pour l’aprehention que vous avez des accidens qui peuvent naistre de ceste execution au prejudice
+de la cause commune » (Henri IV à Bongars, Reims, 25 mars 1606, BnF, Ms. Fr. 7131, f° 40).
+
+66 Villeroy à Bongars, s. l., 5 avril 1606, BnF, Ms. Fr. 7131, f° 43.
+
+
+67 Villeroy à Bongars, s. l., 5 avril 1606, BnF, Ms Fr. 15920, f° 65.
+
+
+68 MARCHAND Romain, « Conciliation et réconciliation : un exemple politique, l’affaire Biron-Bouillon, 1602-
+1606 », in Franck COLLARD et Monique COTTRET (dir.), Conciliation, réconciliation aux temps médiévaux et
+modernes, Nanterre, Presses universitaires de Paris Nanterre, 2012, p. 141-160.
+
+69 « Vous pouvez faire estat que Sa Majesté oublira ce qui s’est passé et qu’il ne lui demeurera aucune souvenance
+
+de son indignation et davantage aura à plaisir de vous gratifier en recognoissance voz services quant l’occasion
+s’en presentera » (Villeroy à Bongars, Fontainebleau, 12 mai 1606, BnF, Ms. Fr. 7131, f° 50).
+
+70 DESENCLOS Camille, « Diplomate, huguenot ou humaniste ?… », art. cité.
+portent aussi en elles la suspicion d’une partialité voire d’un soutien systématique à toute
+rébellion71.
+
+        Pourtant, quelles que puissent être les accusations à leur égard, jamais les agents
+français ne s’imposent comme d’absolus défenseurs des intérêts des princes protestants de
+l’Empire et se conçoivent d’abord et avant tout comme serviteurs du roi ; si l’effort pour
+concilier les deux est réel, cette conciliation ne s’apparente nullement à un compromis ou
+même à une compromission. Ces agents sont certes protestants mais tout comme il serait faux
+de considérer, dans le royaume de France, les protestants comme nécessairement rebelles à
+leur roi, les agents français dans l’Empire ne sont ni les animateurs ni même les relais d’un
+parti huguenot qui serait fondamentalement rebelle. Une réelle distance avec le parti
+huguenot s’observe même dans certaines dépêches, du moins adressées au pouvoir royal.
+Mettant ainsi en pratique l’irénisme qu’il développe dans ses ouvrages, Hotman n’hésite pas à
+critiquer les demandes formulées par l’assemblée de la Rochelle en septembre 1612 qu’il juge
+« hors de saison et de raison72 ». Cette mise à distance, nécessaire à l’exercice diplomatique,
+s’observe également à l’égard des princes protestants de l’Empire, jugés peu fiables, en
+perpétuelle division et incapables de s’allier et d’assurer ainsi la stabilité de l’Empire, de
+défendre la religion protestante et dans certains cas, de faire face à la maison de Habsbourg.
+Qu’ils soient spontanés ou calculés, sincères ou motivés par la volonté de se conformer aux
+orientations de la politique royale, ces jugements constituent à la fois des sources
+d’information pour le pouvoir royal quant à la situation dans l’Empire mais également un
+moyen pour les agents de mettre en valeur leur capacité à évaluer de manière objective les
+territoires dont ils ont la charge et donc à servir le roi. Les agents renforcent ces discours par
+de régulières dénégations d’être partial ou trop favorable aux princes protestants73, qu’il
+s’agisse de nuancer des propos qui pourraient paraître relever d’une tentative d’influence de
+
+
+
+
+71 Bongars n’est pas le seul agent diplomatique à faire l’objet de méfiances quant à sa trop grande familiarité avec
+
+les princes protestants. Le rappel de Hotman en 1614 est notamment dû à des accusations de partialité, en
+faveur de l’électeur de Brandebourg, de la part du duc de Neubourg (DESENCLOS C., « Loyaux serviteurs ou fidèles
+huguenots ?… », art. cité).
+
+72 Hotman à Puisieux, Düsseldorf, 6 janvier 1613, BnF, Ms. Fr. 15925, f° 10.
+
+
+73 « Je ne repete point cecy à Vostre Majesté pour affection particuliere que j’aye audit prince d’Anhalt duquel
+
+j’aurois plus tost occasion de me plaindre pour mon particulier, mais pour le seul zele que j’ay au service de
+Vostre Majesté » (Bongars à Henri IV, Francfort, 12 février 1601, BnF, Ms. Fr. 23196, f° 241).
+leur part ou de la part des princes protestants et susciter l’ire du pouvoir royal ou de
+répondre à des accusations formulées à leur encontre74.
+
+         Les princes protestants eux-mêmes apportent un soutien assez limité aux mouvements
+et révoltes huguenotes, bien loin du secours, militaire et financier, dont avait pu
+précédemment bénéficier Henri de Navarre. Cette aide se limite désormais à quelques
+intercessions ponctuelles en faveur de chefs huguenots ou de revendications portées par les
+assemblées. Le contexte général a changé : la restauration de l’autorité monarchique opérée
+par Henri IV a replacé le royaume de France sur la scène internationale, tandis que les
+relations des princes protestants avec l’empereur ne cessent de se dégrader. Bien que la
+période de régence ne soit pas la plus propice à des actions diplomatiques, et encore moins
+militaires, d’envergure, le roi de France constitue pour les princes protestants un allié
+essentiel qu’ils ne peuvent se permettre de perdre. L’attachement de princes protestants
+allemands à la coexistence confessionnelle, instituée par l’édit de Nantes, contribue également
+à cette modération. Ainsi, se plaignant, à l’issue de la diète impériale, de certaines pratiques
+ayant pour objectif « une domination absolue, point limitée et l’extirpation du Saint
+Evangile », Johann Zobel, conseiller du landgrave de Hesse75, loue, dans une dépêche qu’il
+adresse à Hotman, la stabilité du royaume de France et l’attribue à l’édit de Nantes : « En
+France nous trouvons que le bon accord qu’il y a entre les deux religions et la main que leurs
+Majestés y tiennent est le seul moyen de la conservation de ceste couronne76. »
+
+         Chaque nouvelle révolte est donc suivie outre-Rhin avec attention pour veiller à ce que
+les droits dont bénéficient les protestants ne soient pas remis en cause, mais surtout pour se
+prémunir d’un nouvel affaiblissement du royaume de France qui les priverait d’un appui
+puissant contre la maison d’Autriche. Georg-Michael von Lingelsheim, conseiller de l’électeur
+
+
+
+
+74 « Je vous remercie tres humblement, Monsieur, du soin qu’il vous a pleu avoir d’esclaircir la calomnie de
+
+laquelle on m’avoit chargé à Rome » (Bongars à Villeroy, Francfort, 17 février 1601, BnF, Ms. Fr. 23196, f° 249).
+L’objet exact de ladite calomnie demeure néanmoins obscur, Villeroy faisant simplement référence à un avis reçu
+de Rome et transmettant la recherche qui lui a été faite sur ce sujet (Villeroy à Hotman, Dun, 25 janvier 1601,
+BnF, Ms. Fr. 7129, f° 98).
+
+75 Pour une première approche du rôle politique et diplomatique de Johann Zobel, voir KOHLNDORFER-FRIES R.,
+
+Diplomatie und Gelehrtenrepublik…, op. cit., p. 193-195.
+
+76
+      Zobel à Hotman, Kassel, 3 décembre 1613, Bibliothèque du protestantisme français [désormais BPF], Ms 10 V,
+     f° 36.
+palatin77, fait ainsi part du mécontentement suscité par la révolte en 1612 de Henri de Rohan,
+dont les connexions sont pourtant nombreuses outre-Rhin, et qu’il accuse de vouloir établir
+« un estat dedans l’estat du royaume78 ». La dépêche étant adressée, de manière privée, par
+Lingelsheim à Hotman et donc la parole étant a priori plus libre, il est peu probable qu’il
+s’agisse là de contenter le roi de France mais bien de rappeler l’obéissance que Lingelsheim
+estime devoir être rendue à Louis XIII. Une dépêche de Sainte-Catherine, alors chargé de
+représenter à Jean II de Deux-Ponts, administrateur du Palatinat, le souhait du roi de ne pas le
+voir favoriser les « mauvayse cause et pretentions mal fondées [des ducs de Rohan et Soubise]
+au prejudice des obligations qu’il [le prince d’Anhalt] ha vers leurs Majestés79 », fait
+néanmoins état d’un rapport bien plus ambigu de certains princes aux remuements du duc de
+Rohan. En effet, la réponse du duc de Deux-Ponts commence par rappeler son alliance,
+ancienne, avec Rohan80, suggérant une primauté des alliances protestantes. Plus encore, s’il
+promet de ne pas le soutenir militairement, il n’en condamne pas directement la rébellion
+mais fait simplement état de son déplaisir et de « conseils pour les disposer à ce qui est de
+leur devoyr vers leurs Majesté et la tranquilité commune de la France laquelle luy est aussy
+chere que celle du Saint Empire sa propre patrye81 ». Quelques semaines plus tard, face à la
+poursuite des troubles, le discours du duc de Deux-Ponts est bien plus tranché, du moins tel
+qu’il le tient devant Sainte-Catherine, à qui il indique avoir écrit à Rohan et Soubise pour les
+inciter à revenir à l’obéissance82. La suspicion perdure néanmoins avec l’envoi en France de
+Jean Durand, conseiller de l’électeur palatin, suspecté d’avoir fait parvenir des armes au duc
+de Rohan83, ce que l’électeur palatin doit nier en recourant au traditionnel argumentaire,
+
+
+
+
+77 WALTER Axel, Späthumanismus und Konfessionspolitik: die europäische Gelehrtenrepublik um 1600 im Spiegel
+
+der Korrespondenzen Georg Michael Lingelheims, Tübingen, Max Niemeyer, 2004.
+
+78 Lingelsheim à Hotman, Heidelberg, 28 novembre 1612, BPF, Ms 10 V, f° 7.
+
+
+79 Sainte-Catherine à Villeroy, Heidelberg, 2 août 1612, BnF, Ms. Fr. 15924, f° 163.
+
+
+80 Jean II de Deux-Ponts a épousé en 1604 Catherine de Rohan, sœur de Henri II de Rohan, décédée en 1607.
+
+
+81 Sainte-Catherine à Villeroy, Heidelberg, 2 août 1612, BnF, Ms. Fr. 15924, f° 163.
+
+
+82 Sainte-Catherine à Villeroy, Heidelberg, 9 septembre 1612, BnF, Ms. Fr. 15924, f° 192.
+
+
+83 La suspicion est d’autant plus aisée que Jean Durand est le frère de Samuel Durand, pasteur de Charenton, et
+
+de Daniel Durand, sieur de Hautefontaine, ancien gouverneur et homme de confiance des ducs de Rohan et de
+Soubise. Hautefontaine constitue le seul acteur de cette rébellion, hors instigateurs, à être mentionné à plusieurs
+reprises dans les dépêches de Sainte-Catherine, essentiellement pour dénoncer la violence de ses actions (Sainte-
+Catherine à Puisieux, Heidelberg, 17 janvier 1613, BnF, Ms. Fr. 15925, f° 17).
+davantage rhétorique que performatif, de fidélité et affection envers le roi84. Ces événements
+soulignent, dans la droite lignée de l’affaire de Bouillon, le maintien de diplomaties princières,
+certes non permanentes, entre chefs huguenots et princes protestants de l’Empire. L’une
+d’entre elles s’est incarnée dans la diplomatie royale avec l’accession au trône de Henri de
+Navarre, mais d’autres perdurent, entraînant, selon les circonstances, un surplus d’influence
+pour la diplomatie royale ou à l’inverse une potentielle menace en cas de réactivation de
+certains de ces réseaux, souvent parallèles, parfois convergents avec la diplomatie royale ou à
+l'inverse rebelles.
+
+           Mobilisées dans le cadre de révoltes majoritairement politiques, ces diplomaties
+princières, pour le début du XVIIe siècle, mériteraient davantage la qualification de
+diplomaties parallèles. Au gré des circonstances et selon un schéma non linéaire, elles se
+croisent (diplomaties auxiliaires) ou se heurtent (diplomaties rebelles) avec la diplomatie
+royale, puis prennent une tout autre dimension avec la reprise des guerres de Religion dans
+les années 1620. Durant ces conflits, l’appel aux puissances étrangères concerne néanmoins
+peu l’Empire, mais davantage l’Angleterre et les Provinces-Unies85. Ainsi, alors que Sainte-
+Catherine est régulièrement sollicité au cours de sa résidence à Heidelberg par des huguenots
+en exil, sa correspondance avec Lingelsheim s’avère particulièrement silencieuse quant à la
+reprise des guerres de Religion86. Si leur déroulement est amplement suivi, les propos
+demeurent informationnels et ne révèlent aucune interaction entre la diplomatie huguenote
+et les anciens agents français ou même les princes protestants de l’Empire. En réalité, les
+circonstances rendent caduque toute comparaison ou même mise en perspective avec les
+années 1580-1590. L’activation des réseaux huguenots dans l’Empire s’avère sinon
+impossible, du moins peu pertinente. Aux prises avec l’empereur depuis l’élection de
+Frédéric V comme roi de Bohême et même en déroute, pour partie, depuis la bataille de la
+Montagne Blanche en novembre 1620, les princes protestants recherchent davantage des
+soutiens qu’ils ne sont en capacité d’en fournir. Aucune mesure contre une éventuelle
+diplomatie rebelle n’a donc besoin d’être déployée dans l’Empire. Les commandements de
+Puisieux ne font ainsi nulle référence à la surveillance de levées, comme le révèle sa dépêche
+adressée à Masan, chargé d’affaires pour le roi de France auprès du comte de Hanau, le 22
+
+
+84 Ibid.
+
+
+85 Voir dans ce volume, WAELE Michel de, « “Nos huguenots ont icy cabale puissante” : les huguenots, l'Angleterre
+
+et les Provinces-Unies (1621-1622) ».
+
+86 DESENCLOS Camille, « Loyaux serviteurs ou fidèles huguenots ?… », art. cité.
+juillet 162187. Puisieux y exprime le mécontentement du roi à l’égard de ceux qui se
+comportent comme des rebelles, et non à l’égard de l’ensemble des protestants, déplaçant
+vers le champ politique et non confessionnel la discussion, du moins dans la mesure où le
+destinataire s’inscrit dans la partie protestante de l’Empire. Autrefois soutenue par les princes
+protestants de l’Empire dans sa défense du protestantisme puis, à partir de 1589, dans sa lutte
+contre les rebelles ligueurs, la diplomatie royale dans l’Empire, dont tant les discours, les
+acteurs que les structures s’inscrivaient depuis 1589 dans la continuité de la diplomatie
+navarraise, s’écarte désormais de l’héritage henricien. Les rébellions huguenotes sont
+dorénavant combattues tandis que le soutien aux princes protestants de l’Empire, devenus
+officiellement rebelles à l’empereur, s’amenuise progressivement. S’il ne s’agit ni d’une
+rupture – l’investissement diplomatique français dans l’Empire a toujours été relatif, porté par
+la personnalité des agents et l’attachement de certains princes à Henri IV, et ne disparaît pas
+complètement grâce à l’entretien d’un chargé d’affaires en la personne de Caspar-Simon de
+Masan – ni de la fin de l’alliance entre les princes protestants et le royaume de France, le
+rapport à la rébellion s’est lui aussi déconfessionnalisé et la diplomatie navarraise pleinement
+devenue diplomatie royale dans ses choix politiques.
+
+
+
+
+Conclusion
+
+        La diplomatie auprès des princes protestants de l’Empire ayant connu un essor
+immédiat et sans pareil avec l’accession de Henri IV au trône, l’assise rebelle de l’action
+diplomatique paraît, de prime abord, évidente. Dans les faits, le rôle de la rébellion, présente
+ou passée, dans l’action des agents royaux dans l’Empire est bien plus ténu : tout en
+participant à la construction de la nouvelle diplomatie royale, que ce soit dans ses actions, ses
+acteurs ou ses discours, l’appartenance à la rébellion navarraise ne constitue nullement un
+facteur essentiel de légitimation après 1589. Pour autant, questionner le rapport entretenu
+avec la rébellion par la diplomatie royale, véritable prolongement de la diplomatie navarraise,
+permet de révéler la persistance, consciemment entretenue, de la représentation de l’agent
+protestant attaché à la personne de Henri de Navarre et plus largement à la défense de la
+cause protestante. Or, si l’ensemble des agents dans l’Empire, pour sa partie protestante, est
+
+
+
+87 Comme toute la correspondance passive de Masan, cette dépêche n’a pu être retrouvée. Masan en fait
+néanmoins un bref résumé dans sa dépêche en réponse (Masan à Puisieux, s. l., 16 août 1621, BnF, Ms. Fr. 15931,
+f° 341).
+profondément attaché à leur confession calviniste et n’hésite pas à défendre leurs
+coreligionnaires, aucun ne fait clairement état d’un soutien aux communautés huguenotes en
+cas de rébellion face au roi. Outre leur statut volontairement peu défini et la forte
+personnalisation de l’exercice diplomatique (trois agents seulement en trois décennies) qui
+octroient à ces derniers une plus grande latitude, prompte à favoriser prises de position et
+d’influence ambiguës comme dans le cas de Bongars mais sans possibilité de généralisation,
+plusieurs facteurs contribuent à nuancer le jugement initial.
+
+       La réactivation des guerres de Religion intervient dans un contexte déjà fort peu
+favorable aux diplomates protestants, tous rappelés en France à l’exception de Benjamin
+Aubéry du Maurier, en poste aux Provinces-Unies jusqu’en 1624. Par ailleurs, ni Hotman ni
+Sainte-Catherine n’ont jamais représenté une diplomatie rebelle ; à l’inverse, ils ont été
+exposés à une diplomatie rebelle, celle des princes protestants qui n’acceptent plus l’autorité
+de l’empereur ou qui souhaitent apporter leur soutien, sous couvert de médiation, aux
+huguenots. Enfin, une grande majorité des correspondances conservées et donc mobilisées
+pour cette étude sont des correspondances officielles, échangées avec le pouvoir royal ou
+entre agents du roi. Jamais ces dernières, octroyant pourtant une plus grande liberté
+d’expression, ne paraissent avoir été utilisées à des fins de défense des intérêts du parti
+huguenot, les rares mentions de la situation française étant purement informationnelles et
+appelant au retour de la paix. S’il y eut tentative d’influence confessionnelle ou même
+participation à des rébellions huguenotes contre le roi, celles-ci sont passées par des réseaux
+personnels dont nous n’avons plus trace. Ce positionnement de plus en plus monarchique, et
+ce malgré les suspicions dont ils sont toujours l’objet, des agents face aux rébellions permet en
+réalité de distinguer deux types de diplomatie : la diplomatie rebelle, soit rebelle au souverain
+et dont la raison d’être disparaît avec la rébellion, et la diplomatie issue d’une rébellion, c’est-
+à-dire fidèle au prince rebelle devenu roi avec réactivation conjoncturelle des discours ayant
+permis l’obtention de soutiens lors de la rébellion passée. Si la seconde constitue le
+prolongement de la première, la porosité demeure limitée et de fait, dès 1589, la diplomatie
+henricienne, bien que conservant son personnel et son itinérance, adopte les discours tout
+comme le positionnement de la diplomatie royale. Bien moins qu’une posture dans le cas de
+l’Empire, la rébellion constitue un outil discursif contextuel utilisé tour à tour pour faire
+ressortir la concordance politique ou confessionnelle avec certains princes ou, à l’inverse,
+pour discréditer ceux qui ne correspondent plus aux orientations politiques de la diplomatie
+française.
+               Camille Desenclos
+
+Université de Picardie Jules Verne
+

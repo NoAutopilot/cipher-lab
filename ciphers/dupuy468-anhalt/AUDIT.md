@@ -326,3 +326,5 @@ reattribution was made in print in 1896 and is not this project's; the date is 2
 The reviewer's two cautions stand: the gloss hand is "probably contemporary chancery", not established, until a hand
 comparison; and the regenerated line r04 applies the Mecklenburg word-sign where the gloss reads "dux", so that line
 must never be quoted without the exception (see NOTES.md and ASSIGNMENTS row 25).
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

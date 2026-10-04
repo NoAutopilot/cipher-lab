@@ -1,0 +1,418 @@
+Navigation [#nav] – Plan du site [http://journals.openedition.org/trajectoires/?page=map]
+ 
+ 
+ 
+
+#  Trajectoires [http://journals.openedition.org/trajectoires] 
+ 
+ Revue de la jeune recherche franco-allemande 
+ 
+ 
+ 
+ 
+Accueil [index.html]Numéros [55]9 [1518]SynThèses [1689]Les mots du pouvoir : la communic...
+ 
+ 
+ 
+ 
+  
+    Chercher 
+  
+ 
+ 
+ 
+Sommaire [1518] - Document précédent [1690] - Document suivant [1692]
+ 
+ 
+9 | 2015
+
+Mensonge et manipulation [1518]
+ 
+ 
+SynThèses
+ 
+ 
+
+# Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624)
+ 
+Thèse de doctorat en histoire moderne, sous la direction d’Olivier Poncet, École nationale des chartes / Université Paris-Sorbonne, soutenue le 6 décembre 2014
+ 
+ 
+ Camille Desenclos
+ 
+ 
+https://doi.org/10.4000/trajectoires.1701 [https://doi.org/10.4000/trajectoires.1701]
+ 
+ 
+ 
+Texte [#text] | Citation [#quotation] | Auteur [#authors]
+ 
+ 
+
+## Texte intégral
+ 
+PDF [./pdf/1701] Partager par e-mail [                mailto:?subject=Les%20mots%20du%20pouvoir%C2%A0%3A%20la%20communication%20politique%20de%20la%20France%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20de%20la%20guerre%20de%20Trente%20Ans%20%281617-1624%29&body=Les%20mots%20du%20pouvoir%C2%A0%3A%20la%20communication%20politique%20de%20la%20France%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20de%20la%20guerre%20de%20Trente%20Ans%20%281617-1624%29%20%0ATrajectoires%20%0Ahttp%3A%2F%2Fjournals.openedition.org%2Ftrajectoires%2F1701%20%0A%0A%27%27%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Camille%20Desenclos%2C%20%C2%AB%20Les%20mots%20du%20pouvoir%C2%A0%3A%20la%20communication%20politique%20de%20la%20France%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20de%20la%20guerre%20de%20Trente%20Ans%20%281617-1624%29%20%C2%BB%2C%20%20Trajectoires%20%5BEn%20ligne%5D%2C%209%20%7C%202015%2C%20mis%20en%20ligne%20le%2015%20d%C3%A9cembre%202015%2C%20consult%C3%A9%20le%2004%20octobre%202026.%20URL%20%3A%20http%3A%2F%2Fjournals.openedition.org%2Ftrajectoires%2F1701%20%0A%20%20%20%20%20%20%20%20]
+ 
+ 
+1camille.desenclos@uha.fr [mailto:camille.desenclos@uha.fr]
+ 
+2Étudier l'exercice personnel par Pierre Brulart, vicomte de Puisieux, de la charge de secrétaire d'État aux Affaires étrangères en France entre avril 1617 et février 1624 et le Saint-Empire au début de la guerre de Trente Ans, tous deux délaissés par l'historiographie, nécessitait de faire appel à une nouvelle méthodologie, capable de se démarquer de l'œuvre référence de Victor-Lucien Tapié (La politique étrangère de la France et le début de la guerre de Trente Ans (1616-1621), 1934). Les simples faits devaient être dépassés afin de pouvoir s'interroger sur l'efficacité réelle de la politique étrangère française et sur les moyens mis à sa disposition. En revenant au sens premier de la communication, celui d'un processus physique et intellectuel de transmission, la communication politique a pu être définie comme l'utilisation politique de l'information, dans ou hors des frontières, pour servir les intérêts du roi. Ainsi peut-on embrasser plus largement le cadre européen de la politique étrangère, prendre en compte les discours comme les actes et mesurer l'influence réelle d'une politique sur un territoire donné.
+ 
+3La diplomatie française peut s'appuyer, au début du XVIIème siècle, sur une bonne connaissance politique de l'Empire, malgré une appréhension théorique des institutions impériales parfois approximative et une représentation cartographique encore balbutiante. Parallèlement, la structure diplomatique offre une assise solide à l'exercice communicationnel. Profondément personnalisée, celle-ci se déploie au-delà du simple rapport roi / secrétaire d'État / agents. Réseau diplomatique, réseau officiel, réseau informationnel, tout est mis en place pour garantir efficacité et qualité grâce à une assise non strictement territoriale mais adaptée aux enjeux géopolitiques. Chaque prince influent est la cible d'une correspondance directe ou indirecte. Certaines zones sont cependant moins sujettes à l'influence française et la non-utilisation de certains réseaux, comme le réseau politico-érudit rhénan, interroge sur la capacité du pouvoir à se saisir de tous les outils à sa disposition. Quels que soient ces errements conjoncturels, la structure de la communication politique française dans l'Empire demeure solide tant dans le processus de collecte de l'information que dans sa défense de l'image du souverain, s'adaptant autant que possible à ce territoire peu propice au développement de la politique étrangère française.
+ 
+4Conditionnant étroitement son efficacité, les supports physiques de son expression ont fait l'objet de la seconde partie de cette thèse. La dépêche permet d'identifier et d'analyser l'ensemble du processus conduisant de l'événement à la publication d'un discours élaboré par le pouvoir royal : communication simple dans le cas de comptes rendus diplomatiques, communication politique dans les dépêches officielles où la forme jouit parfois d'une valeur supérieure à celle du contenu et retranscrit la hiérarchie européenne revendiquée par chaque potentat. De ce fait, protéger la correspondance est indispensable. Diverses stratégies, postales et cryptographiques, partagées par l'ensemble de la diplomatie européenne, sont adaptées aux circonstances et besoins diplomatiques français dans l'Empire. Le chiffre ne sert ainsi pas tant à dissimuler des informations factuelles que l'action qui a permis sa collecte, rappellant que la communication politique est à la fois une transmission, interne à la diplomatie française, qu'il importe de celer aux yeux du monde et une transmission ouverte, conforme au discours officiel que la France tente de diffuser à l'échelle de l'Empire. En contrepoint à la correspondance, l'imprimé offre une autre voie de communication dont la forme, tout comme la diffusion, est plus mouvante encore. Rarement, les occasionnels, petites feuilles imprimées d'une vingtaine de pages ou moins, font la critique du pouvoir royal. Rarement également, ils diffusent une vision de la situation extérieure contraire aux discours tenus par la diplomatie française. Pour autant, la question d'un contrôle réel du pouvoir royal reste posée, en l'absence de preuves, mais surtout en l'absence de véritables publications en dehors des frontières. Le pouvoir maîtrise la diffusion d'occasionnels déjà imprimés mais ne parvient pas à diffuser l'information elle-même. L'apparent contrôle est plutôt à porter au crédit d'un désintérêt impérial pour la situation française qui laisse quelques imprimés français traverser les frontières.
+ 
+5La dernière partie de cette thèse enfin observe l'application concrète de cette structure communicative en suivant pas à pas l'évolution de la politique étrangère lors des premières années de la guerre de Trente Ans. L'étude a été découpée en quatre périodes chronologiques, de taille inégale, mais représentant chacune un enjeu politique distinct : la revendication royale initiale d'une position d'arbitre, l'hésitation face aux élections de 1619, l'ambassade extraordinaire menée par le duc d'Angoulême et la recomposition politique avec le rapprochement bavarois et l'opposition croissante face l'Espagne. La politique étrangère menée par Puisieux, profondément pragmatique, a parfois pêché par excès d'optimisme, à l'égard de ses capacités, de sa force de persuasion et de la bonne volonté adverse. La communication politique ne peut devenir efficace que si elle dispose d'un potentiel appui militaire, lorsqu'elle émane d'un État dont la puissance et l'ambition dépassent les frontières. Pour porter ses fruits, la communication politique doit se faire entendre de son destinataire. Ensuite seulement interviennent l'acceptation ou la discussion. Tel a été le principal souci de la France au début de la guerre de Trente Ans.
+ 
+Haut de page [#compterendu-1701]
+ 
+ 
+
+## Pour citer cet article
+ 
+
+### Référence électronique
+ 
+ Camille Desenclos, « Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624) », Trajectoires [En ligne], 9 | 2015, mis en ligne le 15 décembre 2015, consulté le 04 octobre 2026. URL : http://journals.openedition.org/trajectoires/1701 ; DOI : https://doi.org/10.4000/trajectoires.1701
+Haut de page [#compterendu-1701]
+ 
+ 
+
+## Auteur
+ 
+
+### Camille Desenclos [1235]
+ 
+ 
+ IDREF : https://idref.fr/187410100 [https://idref.fr/187410100]
+ 
+ VIAF : http://viaf.org/viaf/10153651729455782841 [http://viaf.org/viaf/10153651729455782841]
+ 
+ ISNI : https://isni.org/isni/000000046821016X [https://isni.org/isni/000000046821016X]
+ 
+ 
+
+#### Articles du même auteur
+ 
+ 
+ 
+Enjeux et perspectives de la représentation diplomatique française dans le Saint-Empire au début du XVIIe siècle [1227]  [Texte intégral] 
+ 
+Paru dans Trajectoires, 7 | 2013 [1073]
+ 
+ 
+Haut de page [#compterendu-1701]
+ 
+ 
+
+## Droits d’auteur
+ 
+ [https://creativecommons.org/licenses/by-nc-sa/4.0/]
+ 
+Le texte seul est utilisable sous licence CC BY-NC-SA 4.0 [https://creativecommons.org/licenses/by-nc-sa/4.0/]. Les autres éléments (illustrations, fichiers annexes importés) sont susceptibles d’être soumis à des autorisations d’usage spécifiques.
+Haut de page [#compterendu-1701]
+
+ 
+Sommaire [1518] - Document précédent [1690] - Document suivant [1692]
+
+ 
+ 
+ 
+
+# Navigation
+ 
+ 
+
+## Index
+ 
+ 
+Auteurs [33]
+ 
+Mots-clés [38]
+ 
+Géographique [40]
+ 
+Chronologique [41]
+ 
+ 
+ 
+ 
+
+## Numéros en texte intégral
+ 
+ 
+19 | 2026
+
+Contexte(s) : conceptions et usages de la notion de contexte dans les pratiques d’interprétation et de traduction [12912]
+ 
+18 | 2025
+
+L’image face au langage [10892]
+ 
+17 | 2024
+
+État(s) d’exception en transformation [9949]
+ 
+16 | 2023
+
+Écrire l'exil [8404]
+ 
+15 | 2022
+
+Les rapports de pouvoir en littérature [7162]
+ 
+14 | 2021
+
+Queering German Studies [5609]
+ 
+13 | 2020
+
+Intrus [4586]
+ 
+Hors série n°4 | 2020
+
+Politique de la non-identité [3660]
+ 
+12 | 2019
+
+La nature mise en scène [2675]
+ 
+11 | 2018
+
+Non ! Nein ! Manifestations et traductions du refus [2449]
+ 
+Hors série 3 | 2017
+
+Pratiques de frontière [2338]
+ 
+Hors série 2 | 2017
+
+Comtes et abbayes dans le monde franc [2178]
+ 
+10 | 2016
+
+Excès et sobriété [1969]
+ 
+Hors série 1 | 2016
+
+Identités en mouvement [1832]
+ 
+9 | 2015
+
+Mensonge et manipulation [1518]
+ 
+8 | 2014
+
+Figures d’autorité [1278]
+ 
+7 | 2013
+
+La condition animale [1073]
+ 
+6 | 2012
+
+Penser le (non-)travail [868]
+ 
+5 | 2011
+
+Repenser le conflit [661]
+ 
+4 | 2010
+
+Postkolonial [473]
+ 
+3 | 2009
+
+Mondes en narration [60]
+ 
+2 | 2008
+
+Frontières en question [59]
+ 
+1 | 2007
+
+Masculin - féminin [58]
+ 
+ 
+
+## Tous les numéros [55]
+ 
+ 
+ 
+
+## La revue
+ 
+ 
+Présentation [5526]
+ 
+Rédaction [166]
+ 
+Comité scientifique [168]
+ 
+Procédure de sélection et d’évaluation des contributions [5552]
+ 
+Conseils aux auteur.e.s et protocole rédactionnel [472]
+ 
+ 
+
+## Appel à contributions
+ 
+ 
+Appels en cours [5531]
+ 
+Appels clos [5534]
+ 
+ 
+
+## Informations
+ 
+ 
+Contacts [169]
+ 
+Mentions légales et crédits [437]
+ 
+Politiques de publication [http://journals.openedition.org/trajectoires?page=informations]
+ 
+ 
+ 
+ 
+
+## Suivez-nous
+ 
+ 
+ Flux RSS [http://journals.openedition.org/trajectoires/backend]
+ 
+ 
+ 
+ 
+
+## Lettres d’information
+ 
+ 
+La Lettre d’OpenEdition [http://newsletter.openedition.org]
+ 
+ 
+ 
+ 
+
+## Affiliations/partenaires
+ 
+ 
+ [http://www.ciera.fr]
+ 
+ [https://doaj.org/toc/1961-9057]
+ 
+ [http://journals.openedition.org/]
+ 
+ 
+
+ 
+ 
+ISSN électronique 1961-9057
+ 
+Voir la notice dans le catalogue OpenEdition [https://catalogues.openedition.org/journals/5646] 
+ 
+Plan du site [http://journals.openedition.org/trajectoires/?page=map] – Contacts [169] – Mentions légales et crédits [437] – Flux de syndication [http://journals.openedition.org/trajectoires/?page=backend]
+ 
+CGU d’OpenEdition Journals [https://journals.openedition.org/13280] – Politique de confidentialité [https://www.openedition.org/19362] – Gestion des cookies [https://www.openedition.org/37235] – Signaler un problème [https://www.openedition.org/41101]
+ 
+Nous adhérons à OpenEdition [http://journals.openedition.org/] – Édité avec Lodel [http://www.lodel.org/] – Accès réservé [http://journals.openedition.org/trajectoires/lodel/]
+ 
+
+                   
+
+ 
+ 
+ 
+   
+    Rechercher dans OpenEdition Search 
+Vous allez être redirigé vers OpenEdition Search
+  
+  Dans tout OpenEdition 
+ 
+   Dans Trajectoires 
+ Rechercher   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+   Français  [#] 
+ 
+Deutsch [/trajectoires/1701?lang=de]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Partager   [#] 
+ 
+ Facebook [https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjournals.openedition.org%2F%2Ftrajectoires%2F1701&title=%3Cspan+xml%3Alang%3D%22fr%22+lang%3D%22fr%22%3ELes+mots+du+pouvoir%C2%A0%3A+la+communication+politique+de+la+France+dans+le+Saint-Empire+au+d%C3%A9but+de+la+guerre+de+Trente+Ans+%281617-1624%29%3C%2Fspan%3E] 
+ 
+ Twitter [http://twitter.com/share?text=%3Cspan+xml%3Alang%3D%22fr%22+lang%3D%22fr%22%3ELes+mots+du+pouvoir%C2%A0%3A+la+communication+politique+de+la+France+dans+le+Saint-Empire+au+d%C3%A9but+de+la+guerre+de+Trente+Ans+%281617-1624%29%3C%2Fspan%3E&url=https%3A%2F%2Fjournals.openedition.org%2F%2Ftrajectoires%2F1701&via=OpenEditionActu] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ">   [/] 
+ 
+ 
+    
+ 
+  
+ 
+ Accueil [https://journals.openedition.org] 
+ 
+ Catalogue des 676 revues [https://catalogues.openedition.org/journals] 
+ 
+   OpenEdition Search   [javascript:;] 
+ 
+ 
+  Tout OpenEdition   
+ 
+ 
+ 
+ 
+ 
+  
+ 
+
+ 
+   Français  
+ 
+Deutsch [/trajectoires/1701?lang=de]
+ 
+ 
+ Portail de ressources électroniques en sciences humaines et sociales 
+ OpenEdition [https://www.openedition.org] 
+ Nos plateformes 
+ OpenEdition Books [https://books.openedition.org] OpenEdition Journals [https://journals.openedition.org] Hypotheses [https://hypotheses.org] Calenda [https://calenda.org] 
+Bibliothèques et institutions
+ OpenEdition Freemium [https://www.openedition.org/14043] 
+ Nos services 
+ OpenEdition Search [https://search.openedition.org] La lettre d'OpenEdition [https://newsletter.openedition.org] 
+ Suivez-nous 
+    [https://www.facebook.com/openedition]    [https://twitter.com/OpenEditionActu]   [https://www.openedition.org/backend] 
+ 
+  
+ 
+ 
+    OpenEdition Books                      Calenda                    Hypothèses                OpenEdition Journals                         OpenEdition                            OpenEdition Search

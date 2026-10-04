@@ -476,3 +476,5 @@ reading is a cryptanalytic result, not confirmed by a key or a clear copy."
 `SECOND-OPINIONS-QUEUE.tsv` row SO-MERCY-F22 is `checked` (PR 16) and its own cells quote no reading, so it is left
 as is; its prompt file `second-opinions/PROMPT-chatgpt.md`, which does quote the reading, carries a dated correction
 block and the current reading.
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

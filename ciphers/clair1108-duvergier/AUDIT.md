@@ -148,3 +148,5 @@ Requests: www.googleapis.com 20 (19 volume queries, 1 volume record), books.goog
 fetch refused 403, not retried), archive.org 11 (4 advancedsearch, 7 djvu downloads, one 500), be-api.us.archive.org 3,
 api.openalex.org 2 (errors), api.crossref.org 1, api.semanticscholar.org 1, api.archives-ouvertes.fr 1. No gallica.bnf.fr,
 no logins, no subagents.
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

@@ -1,0 +1,1180 @@
+Navigation [#nav] – Plan du site [http://journals.openedition.org/acrh/?page=map]
+ 
+ 
+ 
+
+#  L’Atelier du Centre de recherches historiques [http://journals.openedition.org/acrh] 
+ 
+ Revue électronique du CRH 
+ 
+ 
+ 
+ 
+Accueil [index.html]L’Atelier du CRH [246]29 [30733]« Ne sçachant que c'est de trahis...
+ 
+ 
+ 
+ 
+  
+    Chercher 
+  
+ 
+ 
+ 
+Sommaire [30733] - Document précédent [30735] - Document suivant [30758]
+ 
+ 
+29 | 2024
+
+Trahir : figures sociales de la déloyauté (XVIIe-XXe siècle) [30733]
+ 
+
+# « Ne sçachant que c'est de trahison ny infidelité » : fidélités multiples et conflits de loyauté au sein de la diplomatie française dans le Saint-Empire (années 1590 - années 1620)
+ 
+ 
+“Ne sçachant que c'est de trahison ny infidelité”: Multiple Allegiances and Conflicts of Loyalty within French Diplomacy in the Holy Roman Empire (1590s - 1620s)
+ 
+ 
+ 
+ Camille Desenclos
+ 
+ 
+https://doi.org/10.4000/11xj6 [https://doi.org/10.4000/11xj6]
+ 
+ 
+ 
+Résumé [#abstract] | Index [#entries] | Plan [#toc] | Texte [#text] | Notes [#notes] | Citation [#quotation] | Auteur [#authors]
+ 
+ 
+
+## Résumés
+ 
+Français [#abstract-30748-fr] English [#abstract-30748-en] 
+ 
+ 
+« Honorable espion », le diplomate sert son souverain en faisant preuve à la fois d’une fidélité absolue à son égard et de transgression morale au sein de sa cour de résidence (corruption, espionnage, désinformation). Cet équilibre, plus précaire encore compte tenu de la marge de manœuvre générée par l’éloignement, semble être maîtrisé par les agents diplomatiques, y compris dans des contextes aussi troublés que la fin des guerres de Religion ou les débuts de la guerre de Trente Ans. Pourtant, certains agents, comme Jean Péricard, ambassadeur auprès des Archiducs de Flandres (1616-1624), sont accusés de trahison, en raison de leur fidélité, réelle ou supposée, à un patron lui-même accusé de trahison. Inversement, Étienne de Sainte-Catherine, résident auprès de l’électeur palatin (1612-1620), cherchant à passer au service du duc de Wurtemberg, n’est nullement accusé de trahison. À partir des parcours des agents diplomatiques français dans l’Empire, il s’agit donc d’interroger les diverses configurations et articulations de la fidélité au sein du service diplomatique à travers l’appréciation des fautes qui leur sont imputées
+ 
+ 
+ 
+As “honorable spies”, diplomats must be capable of moral transgression to serve their sovereign (corruption, espionage, disinformation), while at the same time demonstrating absolute fidelity to him. This balance, even more precarious given the autonomy by remoteness, seems to be mastered by diplomats, even in such troubled contexts as the end of the Religion Wars or the beginning of the Thirty Years’ War. Yet some diplomats, such as Jean Péricard, ambassador to the Archdukes of Flanders (1616-1624), were accused of treason because of their, real or supposed, fidelity to a patron who was himself accused of treason. Conversely, Étienne de Sainte-Catherine, resident to the Palatine Elector (1612-1620), while seeking to serve the Duke of Württemberg, was not accused of treason. Based on the specific cases of French diplomats in the Holy Roman Empire, this paper will examine the various configurations and articulations of fidelity within the diplomatic service, by assessing their attributed misconducts, from infidelity to treason
+ 
+Haut de page [#article-30748]
+ 
+ 
+
+## Entrées d’index
+ 
+ 
+
+### Mots-clés : 
+fidélité [30825], loyauté [30830], trahison [5098], diplomatie [13938], Saint-Empire [16974], France [743]
+ 
+ 
+
+### Keywords: 
+Fidelity [30835], Loyalty [30840], Treason [30845], Diplomacy [30850], Holy Roman Empire [17019], France [803]
+Haut de page [#article-30748]
+ 
+ 
+
+## Plan
+ 
+Une fidélité implicite au cœur de l’action diplomatique [#tocto1n1]
+ 
+Une loyauté contractuelle et temporaire [#tocto1n2]
+ 
+Trahir par fidélité ? [#tocto1n3]
+ 
+Collaborer avec l’étranger sans trahir [#tocto1n4]
+ 
+Conclusion [#tocto1n5]
+Haut de page [#article-30748]
+ 
+ 
+
+## Texte intégral
+ 
+PDF [./pdf/30748] Partager par e-mail [                mailto:?subject=%C2%AB%C2%A0Ne%20s%C3%A7achant%20que%20c%27est%20de%20trahison%20ny%20infidelit%C3%A9%C2%A0%C2%BB%C2%A0%3A%20fid%C3%A9lit%C3%A9s%20multiples%20et%20conflits%20de%20loyaut%C3%A9%20au%20sein%20de%20la%20diplomatie%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20%28ann%C3%A9es%201590%20-%20ann%C3%A9es%201620%29&body=%C2%AB%C2%A0Ne%20s%C3%A7achant%20que%20c%27est%20de%20trahison%20ny%20infidelit%C3%A9%C2%A0%C2%BB%C2%A0%3A%20fid%C3%A9lit%C3%A9s%20multiples%20et%20conflits%20de%20loyaut%C3%A9%20au%20sein%20de%20la%20diplomatie%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20%28ann%C3%A9es%201590%20-%20ann%C3%A9es%201620%29%20%0AL%E2%80%99Atelier%20du%20Centre%20de%20recherches%20historiques%20%0Ahttp%3A%2F%2Fjournals.openedition.org%2Facrh%2F30748%20%0A%0A%C2%AB%C2%A0Honorable%20espion%C2%A0%C2%BB%2C%20le%20diplomate%20sert%20son%20souverain%20en%20faisant%20preuve%20%C3%A0%20la%20fois%20d%E2%80%99une%20fid%C3%A9lit%C3%A9%20absolue%20%C3%A0%20son%20%C3%A9gard%20et%20de%20transgression%20morale%20au%20sein%20de%20sa%20cour%20de%20r%C3%A9sidence%20%28corruption%2C%20espionnage%2C%20d%C3%A9sinformation%29.%20Cet%20%C3%A9quilibre%2C%20plus%20pr%C3%A9caire%20encore%20compte%20tenu%20de%20la%20marge%20de%20man%C5%93uvre%20g%C3%A9n%C3%A9r%C3%A9e%20par%20l%E2%80%99%C3%A9loignement%2C%20semble%20%C3%AAtre%20ma%C3%AEtris%C3%A9%20par%20les%20agents%20diplomatiques%2C%20y%20compris%20dans%20des%20contextes%20aussi%20troubl%C3%A9s%20que%20la%20fin%20des%20guerres%20de%20Religion%20ou%20les%20d%C3%A9buts%20de%20la%20guerre%20de%20Trente%C2%A0Ans.%20Pourtant...%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Camille%20Desenclos%2C%20%C2%AB%20%C2%AB%C2%A0Ne%20s%C3%A7achant%20que%20c%27est%20de%20trahison%20ny%20infidelit%C3%A9%C2%A0%C2%BB%C2%A0%3A%20fid%C3%A9lit%C3%A9s%20multiples%20et%20conflits%20de%20loyaut%C3%A9%20au%20sein%20de%20la%20diplomatie%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20%28ann%C3%A9es%201590%20-%20ann%C3%A9es%201620%29%20%C2%BB%2C%20%20L%E2%80%99Atelier%20du%20Centre%20de%20recherches%20historiques%20%5BEn%20ligne%5D%2C%2029%20%7C%202024%2C%20mis%20en%20ligne%20le%2003%20juillet%202024%2C%20consult%C3%A9%20le%2004%20octobre%202026.%20URL%20%3A%20http%3A%2F%2Fjournals.openedition.org%2Facrh%2F30748%20%3B%20DOI%20%3A%2010.4000%2F11xj6%20%0A%20%20%20%20%20%20%20%20]
+ 
+ 
+Il est vray qu’il n’y a gueres charge publique où l’on mente davantage et quelquefois par le commandement du maistre et pour le bien de son service comme je diray tantost. J’en ay veu qui par une habitude de mentir, de gens veritables devenoient en fin menteurs fort asseurez 
+
+Jean Hotman, L’ambassadeur, s.l., s.n., 1603, p. 45.
+ 
+ 
+ 
+1 Bien que les termes de diplomatie et de diplomate ne soient pas utilisés dans les sources du début (...) [#ftn1]
+ 
+2 Dante Fedele, Naissance de la diplomatie moderne (xiiie-xviie siècle). L’ambassadeur au croisement (...) [#ftn2]
+ 
+ 
+1Comme le souligne ici Jean Hotman, la collecte d’informations, l’espionnage mais aussi la négociation obligent à un équilibre délicat, parfois instable, conduisant à briser la confiance d’un groupe soumis à observation, à espionnage voire à manipulation (la cour où l’on réside) pour mieux respecter le serment prêté à l’égard d’un autre groupe (la cour que l’on sert). Par cette pratique, le diplomate1 [#ftn1] sert le souverain qui l’envoie et lui transmet toutes les informations nécessaires au gouvernement du royaume, quitte à dissimuler, mentir ou manipuler. Naturellement, de tels procédés ne peuvent se tenir à destination du souverain, du secrétaire d’État ou d’autres représentants du souverain. Plus encore, toute transmission, sans permission, d’informations en dehors de ce groupe, toute transmission délibérée de fausses informations au pouvoir royal et plus largement toute inexécution des commandements royaux constitue une triple rupture de la promesse initiale de service : celle de la mission confiée, de la fidélité due au roi et de la loyauté envers la Couronne. Ces transgressions, volontaires ou non, sont alors qualifiées de désobéissance, d’infidélité ou encore de trahison, mais sans qu’une définition précise n’en soit donnée ni dans les dépêches ni dans les traités d’art diplomatique. Ceux-ci suggèrent que l’infidélité se manifesterait par des comportements inconvenants (discours non contrôlés, mœurs légères, etc.), et la trahison par une proximité trop grande avec des princes étrangers. Une gradation surtout est suggérée : l’infidélité constituerait une simple transgression, temporaire et par négligence ou imprudence, tandis que la trahison ferait suite à une violation du devoir de fidélité, à la divulgation de secrets2 [#ftn2]. Cette gradation, tout comme la qualification des fautes, demeure néanmoins fluctuante dans son appréhension par les contemporains.
+ 
+ 
+ 
+ 
+3 Parmi la bibliographie relative à la conception et expression d’une fidélité et aux liens de client (...) [#ftn3]
+ 
+4 La question du service soutend une grande partie de l’historiographie relative à l’État et aux inst (...) [#ftn4]
+ 
+5 Dante Fedele, Naissance de la diplomatie moderne (xiiie - xviie siècle). L’ambassadeur au croisemen (...) [#ftn5]
+ 
+6 Les cas les plus célèbres pour cette période ne concernent pas des diplomates au service du roi de (...) [#ftn6]
+ 
+ 
+2De la même manière, la fidélité3 [#ftn3] constitue une donnée difficilement quantifiable et qualifiable, dont les contours se confondent, mais sans toujours coïncider pleinement, avec ceux du service4 [#ftn4] et de l’obéissance, et surtout dont les configurations sont à la fois multiples, variables et parfois purement théoriques. Pourtant, pour les diplomates, il demeure essentiel de faire preuve d’une fidélité et obéissance constantes au service du roi et de les faire reconnaître comme telles afin d’obtenir et conserver la confiance du pouvoir royal. Les délais de transmission des dépêches s’accordant mal avec la temporalité de l’action diplomatique, les diplomates se voient en effet octroyer une marge de manœuvre dont l’amplitude coïncide certes avec leur éloignement, leur connaissance des territoires et la qualité passée de leurs services mais qui les place dans un équilibre précaire entre prise d’initiative et infidélité, sinon au roi, du moins aux commandements reçus lorsque ceux-ci manquent ou sont transmis après que le diplomate a été contraint d’agir ou de discourir. Elle rend également indispensable l’envoi de rapports réguliers au pouvoir royal, seul moyen de répondre à l’inévitable suspicion créée par l’éloignement, à l’absence de tout contrôle immédiat sur les actions des diplomates et à la crainte d’une vision progressivement faussée des événements en cas de contact prolongé avec une Cour étrangère5 [#ftn5]. Cet équilibre semble avoir été trouvé par les diplomates français dont peu d’entre eux sont accusés publiquement de trahison ou d’infidélité6 [#ftn6]. Inversement, le nombre de diplomates devant combattre des suspicions à leur égard se révèle, à la lecture des dépêches, bien plus important. Ces cas suggèrent en réalité une appréhension plus nuancée et surtout variable de la trahison, et en creux de la fidélité.
+ 
+ 
+ 
+ 
+7 Si depuis 1598, les Pays-Bas sont pleinement souverains, tout en demeurant terre d’Empire, leur ind (...) [#ftn7]
+ 
+8 En 1583, le Palatinat se convertit au calvinisme, suivi en 1605 par le landgraviat de Hesse puis pa (...) [#ftn8]
+ 
+9 Sur la diplomatie française dans l’Empire, voir notamment Rainer Babel, La France et l’Allemagne à (...) [#ftn9]
+ 
+10 En 1606, Jacques Bongars, résident auprès des princes protestants de l’Empire, se voit menacer de r (...) [#ftn10]
+ 
+11 Antoine Furetière, « Trahison », dans Dictionnaire universel contenant generalement tous les mots f (...) [#ftn11]
+ 
+ 
+3Cet article se propose donc d’étudier la délicate articulation des fidélités, conduisant parfois à des conflits de loyauté, par le prisme des accusations formulées à l’encontre des diplomates français dans le Saint-Empire et des justifications fournies par ceux-ci. L’Empire les confronte en effet à des configurations multiples, parfois mouvantes et rarement concordantes tant sur le plan institutionnel – suzeraineté de l’empereur, souveraineté temporaire des Pays-Bas7 [#ftn7], immédiateté impériale pour certains états, etc. – que confessionnel – si, depuis 1555 et la paix d’Augsbourg, le luthéranisme est autorisé dans l’Empire selon un principe non de coexistence mais de bipartition confessionnelle, nombre de princes, par ailleurs alliés de la France, se sont récemment convertis au calvinisme8 [#ftn8]. Par ailleurs, pour la période 1589-1624, la diplomatie française dispose, pour la première fois, de deux à quatre représentants permanents, au statut et à la chronologie variés9 [#ftn9] : un résident auprès de l’empereur (Guillaume Ancel ; Nicolas de Baugy) présent sur toute la période étudiée ; un ambassadeur extraordinaire auprès des princes protestants de l’Empire, devenu dans les faits représentant permanent (Jacques Bongars ; Jean Hotman) de 1590 à 1614 ; un résident auprès de l’électeur palatin (Étienne de Sainte-Catherine) de 1612 à 1620 ; un ambassadeur auprès des Archiducs (Antoine Le Fèvre, seigneur de La Boderie ; Matthieu Brulart de Berny ; Charles de l’Aubespine, abbé de Préaux ; Jean de Péricard) depuis 1598. Or, sur ces dix agents, quatre d’entre eux sont suspectés d’infidélité ou voient leurs différentes fidélités se disjoindre10 [#ftn10]. Aucun n’a sciemment détourné les commandements royaux, mais tous sont accusés d’avoir mis en danger les intérêts de la Couronne, suggérant une appréhension de la trahison, en contexte diplomatique, fondée sur le défaut de représentation, l’atteinte à l’autorité et à la réputation du roi et donc à la fois sur le crime d’honneur par « défaut de fidélité à son prince11 [#ftn11] » et sur la rupture de service.
+ 
+ 
+
+# Une fidélité implicite au cœur de l’action diplomatique [#tocfrom1n1]
+ 
+ 
+ 
+12 À la suite des travaux pionniers de Lucien Bély pour l’époque moderne, l’histoire diplomatique s’in (...) [#ftn12]
+ 
+13 Dante Fedele, Naissance de la diplomatie moderne (xiiie - xviie siècle). L’ambassadeur au croisemen (...) [#ftn13]
+ 
+14 Ibid., p. 701.
+ 
+ 
+4Tant il paraît évident que la loyauté de l’agent envoyé à l’étranger pour représenter le roi et défendre ses intérêts a été préalablement éprouvée et ne saurait fléchir dans l’exercice de cette charge, la fidélité comme la loyauté constituent un impensé de la pratique diplomatique que ce soit dans les sources ou dans l’historiographie12 [#ftn12], à l’exception notable de l’ouvrage de Dante Fedele, fondé néanmoins sur les seuls « traités sur l’ambassadeur13 [#ftn13] ». Malgré l’apparition, encore récente, de la diplomatie ordinaire, a fortiori pour le royaume de France, les contemporains ne se sont nullement attachés à délimiter, par des documents normatifs, le périmètre du diplomate que ce soit dans ses missions, ses pratiques ou sa loyauté. Seules les instructions, écrites et orales, ainsi que les dépêches formulent les attentes à l’égard des diplomates et se concentrent, très majoritairement, sur les discours à tenir et les informations à collecter. Le vocabulaire employé dans les dépêches et plus encore les traités d’art diplomatique rappellent certes le caractère indispensable de la fidélité, érigée au rang de vertu14 [#ftn14] ; néanmoins, quels que soient les exemples mobilisés par les traités, ces derniers ne constituent pas des manuels de conduite pour les diplomates et contribuent davantage à la construction d’une figure du diplomate idéal, indépendamment des configurations institutionnelles, politiques, sociales et confessionnelles de chaque État.
+ 
+ 
+ 
+ 
+15 Damien Fontvieille, Le clan Bochetel. Au service de la couronne de France (xve - xviie siècle, Pari (...) [#ftn15]
+ 
+ 
+5Dans les faits, les attentes à l’égard des diplomates semblent reposer sur une simple transposition des normes implicites applicables jusqu’alors aux serviteurs du roi exerçant à l’intérieur des frontières du royaume. Le service du roi à l’étranger s’articulant étroitement avec le service du roi à l’intérieur du royaume – absence de formation spécifique, charges diplomatiques comme préalable à une charge auprès du roi ou comme reconnaissance d’un service, intrication des politiques intérieure et extérieure, etc. –, il paraît logique que les règles de conduite demeurent dictées par le code d’honneur afférent. Au-delà du contexte spécifique à la pratique diplomatique, là se trouve la difficulté de l’exercice : le service constitue davantage une réalité vécue et dont la perception, tout comme la définition, repose sur les acteurs eux-mêmes. Or, ceux-ci s’appuient sur une conception individuelle, voire patrimoniale dans le cas de certaines dynasties de conseillers, du service, mais développent également, de manière parallèle mais non concurrentielle, une conception étatique, complétant voire dépassant la simple fidélité au roi au profit d’une loyauté monarchique, destinée à assurer non seulement la continuité de l’État mais aussi sa prospérité, notamment par la défense des intérêts de la Couronne, dans le cas de charges diplomatiques15 [#ftn15].
+ 
+ 
+ 
+ 
+16 Comme le souligne Niels F. May, la mission de représentation de l’ambassadeur est double : à la foi (...) [#ftn16]
+ 
+17 « L’ambassadeur est inutile, et mesme dangereux, s’il n’a pour son maistre une fidelité incorruptib (...) [#ftn17]
+ 
+18 Stéphane Péquignot, « Les ambassadeurs dans les miroirs des princes en Occident au Moyen Âge », dan (...) [#ftn18]
+ 
+19 Comme le souligne Wicquefort, cette fidélité doit avoir été précédemment éprouvée par d’autres char (...) [#ftn19]
+ 
+ 
+6Jusqu’alors théorique par la seule expression de l’attachement au souverain et à la Couronne, le service se pare en effet, dès l’obtention d’une charge diplomatique, d’une dimension non seulement exécutoire mais aussi transcendante. L’agent n’agit plus comme (fidèle) sujet ni même comme simple serviteur du roi mais comme prolongement de la personne du roi : il incarne le roi dans toute sa puissance et donne corps à ses discours ; il doit le représenter16 [#ftn16] et l’informer. Une fidélité absolue est donc nécessaire afin d’assurer l’obéissance du diplomate et la confiance dans ses actions. Plus encore que des qualités curiales, politiques ou même de représentation, la fidélité, la loyauté et la capacité à inspirer (mais aussi conserver) la confiance du prince constituent les principales qualités recherchées pour une mission diplomatique17 [#ftn17] et plus largement les principaux critères de recrutement18 [#ftn18] sur le fondement soit d’expériences antérieures ayant permis d’attester de la fidélité au roi19 [#ftn19], soit de recommandations d’un ou plusieurs individus dont la fidélité au roi a, elle, déjà été éprouvée.
+ 
+ 
+
+# Une loyauté contractuelle [#tocfrom1n2]20 [#ftn20] et temporaire [#tocfrom1n2]
+ 
+ 
+ 
+20 La notion de contrat constitue souvent un dispositif commode pour définir les relations entre deux (...) [#ftn20]
+ 
+21 Sharon Kettering, Patrons, Brokers and Clients in Seventeenth-Century France, Oxford, Oxford Univer (...) [#ftn21]
+ 
+ 
+7Si le clientélisme constitue pour le patron non seulement un outil de pouvoir mais aussi de gouvernement21 [#ftn21], il constitue pour les clients un témoignage de leurs qualités et de leur fidélité. En l’absence de formation dédiée à la pratique diplomatique, l’appartenance à une clientèle ou à une parentèle peut permettre d’accéder à une première charge afin d’acquérir une première expérience diplomatique. À la fidélité au roi, s’ajoute donc la fidélité au patron selon un double phénomène d’imbrication qui rend possible ces fidélités multiples, – l’agent est fidèle au souverain et à son patron, lui-même étant fidèle au souverain – mais cela met aussi en danger l’agent en cas de disjonction entre ces fidélités.
+ 
+ 
+ 
+ 
+22 Voir parmi les études récentes sur ce sujet, Damien Fontvieille, Le clan Bochetel. Au service de la (...) [#ftn22]
+ 
+23 Si Brulart de Berny est également l’oncle de Puisieux, ce dernier n’a pas encore obtenu la survivan (...) [#ftn23]
+ 
+24 Archives nationales [désormais AN], MC/ET/CV/168, cession par Henri de Lorraine, duc de Guise, des (...) [#ftn24]
+ 
+25 Soutien de Marie de Médicis depuis la régence, la maison de Guise rejoint la coalition des Grands à (...) [#ftn25]
+ 
+ 
+8Malgré sa relative jeunesse, le secrétariat d’État des Affaires étrangères, du moins sous la forme instaurée par le règlement du 1er janvier 1589, continue de s’appuyer sur des logiques de clientèle ou de clan au début du xviie siècle22 [#ftn22]. Les Brulart – Pierre Brulart, seigneur de Puisieux obtient en 1606 la survivance de la charge de secrétaire d’État des Affaires étrangères – fournissent ainsi plusieurs ambassadeurs comme Charles Brulart, prieur de Léon, ambassadeur à Venise (1612-1620) ou Noël Brulart de Sillery, ambassadeur à Rome (1622-1624). Le phénomène néanmoins dépasse la seule parentèle des secrétaires d’État. Les trois premières décennies de l’ambassade française auprès des Archiducs illustrent cette multiplicité des fidélités, tant dans leur nombre que dans leur origine. Antoine Le Fèvre, seigneur de La Boderie, ambassadeur à Bruxelles de 1598 à 1603, doit certainement sa nomination à ses services passés comme secrétaire d’ambassade à Rome pour Jean de Vivonne, marquis de Pisani. Son successeur, de 1604 à 1610, Matthieu Brulart de Berny est le frère de Nicolas Brulart de Sillery, alors négociateur récurrent pour Henri IV et futur garde des sceaux – il en devient coadjuteur quelques mois après l’envoi de Berny23 [#ftn23]à Bruxelles. De même, Charles de L’Aubespine, abbé de Préaux, ambassadeur auprès des Archiducs de 1611 à 1616, est le fils de Guillaume de L’Aubespine, agent pour le roi en Angleterre dans les années 1580, mais aussi neveu par alliance de Nicolas Neufville de Villeroy, secrétaire d’État des Affaires étrangères depuis 1594. Jean de Péricard enfin appartient à la clientèle des Guise24 [#ftn24] et il est fort probable que la reine-mère ait cherché à remercier ladite maison de son ralliement en pleine révolte des Grands en nommant ambassadeur l’un de ses plus fidèles serviteurs25 [#ftn25]. L’appartenance active à une clientèle, même différente de celle du secrétaire d’État des Affaires étrangères, ne vient ici nullement en opposition mais en appui du service au roi. Elle permet si ce n’est d’attester de la fidélité du futur agent, du moins d’en obtenir la fidélité momentanée en favorisant, comme dans le cas de Péricard, une clientèle concurrente mais indispensable à la consolidation d’un pouvoir royal alors affaibli.
+ 
+ 
+ 
+ 
+26 Pour les agents français dans l’Empire, la correspondance principale est entretenue, pour la périod (...) [#ftn26]
+ 
+27 Bien que la démarche procède de la démonstration attendue de fidélité à chaque changement de secrét (...) [#ftn27]
+ 
+ 
+9À cette seconde fidélité qui, à tout moment, peut se dissocier de la fidélité au roi, s’ajoute une troisième forme d’obligation, induite par l’obtention d’une charge, ici diplomatique. Quel que soit son patron, l’agent diplomatique entretient, obligatoirement, avec le secrétaire d’État des Affaires étrangères une relation fondée moins sur la fidélité (dans une conception similaire à celle qui se développe avec le roi et le patron) que sur la confiance et l’obéissance. Réputée absolue pendant toute la durée de la charge diplomatique, cette relation surpasse les liens de clan ou de clientèle qui pouvaient préalablement exister, y compris entre l’agent et le secrétaire d’État. Principal interlocuteur du diplomate – les lettres du roi émanent également de ses bureaux26 [#ftn26] –, le secrétaire d’État doit avoir confiance dans les rapports que lui adresse l’agent (complétude des rapports, fiabilité de l’analyse, etc.) ; en retour, il doit susciter la confiance de l’agent qui ne lui est acquise que par la confiance que le roi lui accorde en lui confiant la gestion des Affaires étrangères. Essentielle au fonctionnement diplomatique27 [#ftn27], la loyauté envers le secrétaire d’État est ainsi due moins au secrétaire d’État qu’à ce qu’il représente. Pour autant, si cela témoigne sans ambiguïté d’une forme de service de l’État, les assurances de fidélité et d’obéissance demeurent attachées aux individualités. Plus encore, contrairement aux relations de fidélité précédemment mentionnées, cette relation est non seulement vécue comme contractuelle mais surtout soumise à une double limitation temporelle : celle de la charge diplomatique et celle de la charge de secrétaire d’État.
+ 
+ 
+ 
+ 
+28 Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (...) [#ftn28]
+ 
+29 Jérémie Ferrer-Bartomeu, L’État à la lettre. Écrit politique et société administrative en France au (...) [#ftn29]
+ 
+ 
+10Les années 1610 voient ainsi plusieurs secrétaires d’État des Affaires étrangères se succéder voire coexister : Nicolas de Neufville, seigneur de Villeroy (décembre 1594-décembre 1617), Pierre Brulart, vicomte de Puisieux (mars 1606-août 1616 / avril 1617-février 1624), Claude Mangot (août-novembre 1616), Armand-Jean du Plessis, évêque de Luçon et futur cardinal de Richelieu (novembre 1616-avril 1617). Si Villeroy et Puisieux travaillent en relative bonne intelligence, le second ayant obtenu la survivance de la charge du premier en 1606, il n’en va pas de même avec Mangot puis avec Richelieu, avec lesquels Villeroy partage techniquement une charge dont il n’a pas été formellement écarté. Ainsi, certains ambassadeurs comme Benjamin Aubéry du Maurier, ambassadeur aux Provinces-Unies28 [#ftn28] continuent à écrire à Villeroy et non à Mangot ou, plus tard, à Richelieu29 [#ftn29] sans que cela ne soit considéré comme une forme d’infidélité. En août 1616, Du Maurier écrit les mots suivants à Villeroy : 
+ 
+ 
+ 
+ 
+ 
+30 BnF, Clairambault 368, fol. 81, Du Maurier à Villeroy, 22 août 1616.
+ 
+ 
+Je vous reitere les tres humbles graces que je doy aux asseurances dont il vous plaist m’honorer de la protection de leurs Majestez et la vostre, que je ne demeriteray jamais par infidelité ny desobeissance30 [#ftn30]. 
+ 
+ 
+ 
+ 
+ 
+31 Du Maurier est alors menacé par la délicate situation aux Provinces-Unies et par les nombreuses tra (...) [#ftn31]
+ 
+ 
+11S’il s’agit ici surtout d’obtenir son maintien dans sa charge31 [#ftn31], le discours tenu par Du Maurier n’en est pas moins révélateur du rôle du secrétaire d’État dans la gestion des charges diplomatiques et des deux qualités attendues d’un agent, de la part d’un secrétaire d’État – loyauté et obéissance –, tandis que le rapport au roi se fonde sur la fidélité. Il rappelle par ailleurs que ni la loyauté à l’égard du secrétaire d’État ni la fidélité au roi ne sont purement gratuites et reposent sur la protection que l’un et l’autre sont en mesure de lui accorder.
+ 
+ 
+ 
+ 
+32 En juillet 1616, ordre est donné aux ambassadeurs de ne plus correspondre avec Puisieux mais unique (...) [#ftn32]
+ 
+33 Du Maurier rappelle que Jacques Aubéry, avocat du roi au parlement de Paris et lieutenant civil au (...) [#ftn33]
+ 
+34 BnF, Clairambault 368, fol. 111, Du Maurier à Mangot, 28 août 1616.
+ 
+35 Arch. dipl., CP, Hollande 7, fol. 466, Du Maurier à Richelieu, 16 décembre 1616 ; cité par Claire M (...) [#ftn35]
+ 
+ 
+12Le maintien de Villeroy en sa charge – Mangot et Richelieu sont nommés par commission – et surtout l’absence de toute accusation contre Villeroy32 [#ftn32] rendent possibles cette double correspondance et cette loyauté, non seulement double mais aussi ambivalente. Dès la mi-juillet 1616, Du Maurier a en effet anticipé l’obtention d’une charge par Mangot et lui écrit pour faire état de sa « rejouissance extreme » à l’annonce de sa nomination et de sa « fidèle obéissance », et lui rappeler les liens qu’ils entretiendraient33 [#ftn33]. Quelques semaines plus tard, dès la nouvelle de la nomination de Mangot confirmée, Du Maurier réitère son contentement34 [#ftn34] et tente ainsi d’obtenir rapidement une utile protection contre les accusations de prévarication dont il cherche à se défendre. De même, lors de la nomination de Richelieu comme secrétaire d’État des Affaires étrangères en novembre 1616 pour remplacer Mangot, qui vient d’obtenir la garde des sceaux, Du Maurier lui promet service et fidélité35 [#ftn35]. Pourtant, lors de la reprise officielle de sa correspondance avec Villeroy en mai 1617, Du Maurier égratigne fortement Richelieu et le gouvernement Mangot, loué quelques mois plus tôt :
+ 
+ 
+ 
+ 
+ 
+36 BnF, fr. 15957, fol. 199, Du Maurier à Villeroy, 4 mai 1617.
+ 
+ 
+Je vous diray comme cette charge a esté faicte du tout à tastons depuis huict moys en ça, n’ayant receu que peu ou point d’instructions ny d’advis de ce qui se passoit, tellement que je n’ay encores peu scavoir si j’y ay bien ou mal faict [...]. Si Sa Majesté en a eu quelque mecontentement je vous supplye tres humblement l’asseurer qu’il n’est precedé de faute d’affection ny de fidelité à son service […]36 [#ftn36].
+ 
+ 
+ 
+ 
+ 
+37 Claire Martin, Mémoires de Benjamin Aubéry du Maurier, op. cit., p. 123.
+ 
+ 
+13Grâce à l’expression absolue et systématique de la fidélité au roi, à la réitération de l’offre de service37 [#ftn37] et à l’évolution de la faveur royale, ces déclarations successives, en apparente contradiction les unes avec les autres, ne sont pas considérées comme telles par le pouvoir royal. La relation individuelle nouée avec le secrétaire d’État, essentielle à l’exercice diplomatique mais aussi au maintien dans la charge, s’efface devant la fidélité au roi mais aussi à l’institution incarnée par le secrétaire d’État.
+ 
+ 
+ 
+ 
+38 BnF, Clairambault 368, fol.239, Baugy à Mangot, 15 septembre 1616.
+ 
+39 Arch. dipl., CP, Allemagne 5, fol. 248, Baugy à Richelieu, 24 décembre 1616.
+ 
+40 Alors que Baugy se présentait comme le « tres humble et obeissant serviteur » en écrivant à Villero (...) [#ftn40]
+ 
+41 Peu prestigieuse eu égard à l’éloignement géographique et au luxe mesuré de la cour impériale, la r (...) [#ftn41]
+ 
+ 
+14La primauté du service au roi et à l’État par rapport à la loyauté, temporaire et individuelle, au secrétaire d'État s’observe avec plus de force chez d’autres agents comme Nicolas de Baugy, résident auprès de l’empereur, qui dans ses premières dépêches adressées à Mangot38 [#ftn38] et à Richelieu39 [#ftn39] ne mobilise pas la sémantique de la fidélité. Au-delà du rappel de l’ancienneté de son service comme représentant du roi à la Cour impériale, Baugy se place en position de force face à des secrétaires d’État inexpérimentés : grâce à son long service et à sa connaissance des enjeux complexes de l’Empire, Baugy n’a plus besoin de prouver sa loyauté à la Couronne et celle-ci ne peut souffrir d’aucune remise en cause, les secrétaires d’État n’étant que des instruments de la volonté du roi. Plus encore, dans ses dépêches à Mangot, la sémantique de l’obéissance disparaît de la formule de courtoisie finale40 [#ftn40], suggérant une défiance à l’égard du secrétaire d’État. Par-là, Baugy rappelle qu’il n’est tenu d’obéir qu’aux commandements du roi et que seuls les intérêts de la Couronne doivent être la préoccupation des diplomates. Si le style lapidaire de Baugy – ses dépêches prennent davantage la forme de rapports – et le caractère très spécifique de la résidence auprès de l’empereur – la longue résidence de Baugy auprès de l’empereur s’explique tant par ses qualités que par la difficulté de lui trouver un remplaçant41 [#ftn41] – obligent à nuancer ce constat, ses déclarations tout comme cette modification temporaire dans le formulaire diplomatique de la dépêche mettent en valeur la nécessité pour le secrétaire d’État de susciter la loyauté chez les agents diplomatiques mais aussi l’absence de concordance qui peut s’opérer entre la fidélité au roi et la loyauté envers le secrétaire d’État.
+ 
+ 
+ 
+ 
+42 BnF, fr. 15928, fol. 83, Sainte-Catherine à Villeroy, 18 mai 1617.
+ 
+ 
+15La disgrâce de Richelieu étant entraînée par celle de Concini et conduisant au retour de Villeroy et de Puisieux, le positionnement des agents est très différent en avril 1617 de ce qu’il a pu être en août 1616 ou en novembre 1616. Comme Du Maurier, tous prennent immédiatement leurs distances avec le gouvernement Mangot, constitué sous l’égide de l’ancien favori, et n’hésitent pas à critiquer les modalités de gestion des Affaires étrangères depuis août 1616, afin de ne pas subir à leur tour une disgrâce. Dès lors que la confiance du roi est retirée au secrétaire d’État ou à tout autre membre du gouvernement, la loyauté que les agents lui doivent n’a plus lieu d’être et peut (doit) immédiatement être reportée soit sur le roi lui-même soit sur le nouveau secrétaire d’État. Cette apparente versatilité, loin de constituer un manque de constance voire de crédibilité de la part des agents diplomatiques, est en réalité essentielle. Elle permet de témoigner de la qualité de l’information reçue par l’agent et de sa capacité à l’analyser pour servir au mieux le roi ; elle constitue surtout un dispositif discursif indispensable pour attester de la constance de sa loyauté envers la Couronne. Ainsi, Étienne de Sainte-Catherine, résident auprès de l’électeur palatin, loue ce retour « pour ramener heureusement au port le vaisseau agitté et prest à faire naufrage entre les escueils de nos divisions » et ne manque pas de détailler l’ensemble des accusations formulées par les princes protestants de l’Empire à l’égard de Concini42 [#ftn42]. Ces discours néanmoins sont aisés à tenir : l’information a été transmise à Sainte-Catherine directement par le pouvoir royal et celui-ci ne tient pas sa charge du gouvernement Mangot. Jean de Péricard, ambassadeur auprès des Archiducs, au contraire se voit doublement exposé à la fin du mois d’avril 1617. Non seulement, il a été nommé sous l’égide de Mangot en septembre 1616 mais l’information de la mort de Concini a circulé à Bruxelles avant l’arrivée de tout courrier royal.
+ 
+ 
+ 
+ 
+43 Cette lettre semble avoir été envoyée à l’ensemble du corps diplomatique alors en poste. Voir pour (...) [#ftn43]
+ 
+44 BnF, fr. 15928, fol. 77, Baugy à Villeroy, 13 mai 1617.
+ 
+45 Malgré la circulation de l’information à Venise avant l’arrivée du courrier royal, la prudence n’es (...) [#ftn45]
+ 
+ 
+16Tous les agents diplomatiques ont en effet été informés le 24 avril 1617 par une lettre du roi justifiant l’arrestation, et la mort, de Concini et détaillant les changements subséquents au sein des Affaires étrangères43 [#ftn43]. Il est alors aisé pour les agents diplomatiques d’adopter, dans leurs dépêches mais aussi au sein de leur cour de résidence, les discours les plus conformes à la volonté royale. Malgré les délais de transmission – Nicolas de Baugy, résident auprès de l’empereur, ne reçoit cette lettre que le 9 mai44 [#ftn44] –, les lettres royales semblent être les premières à apporter la nouvelle à Heidelberg comme à Prague. Au contraire, la lettre du roi parvient à Péricard après la lettre de Ferdinand de Boisschot, ambassadeur des Archiducs à Paris. Pris à défaut, Péricard doit, dans un premier temps, défendre la réputation du roi face aux divers jugements étrangers de ce coup de Majesté45 [#ftn45].
+ 
+ 
+
+# Trahir par fidélité ? [#tocfrom1n3]
+ 
+ 
+ 
+46 BnF, fr. 16125, fol. 317, Péricard à Villeroy, 27 avril 1617. Seul l’ambassadeur d’Espagne reste si (...) [#ftn46]
+ 
+47 BnF, fr. 17891, fol. 55, Péricard à Louis XIII, 3 mai 1617.
+ 
+48 Péricard lui-même interprète cette rétrogradation comme une sanction à son égard (BnF, fr. 16125, f (...) [#ftn48]
+ 
+49 BnF, fr. 16131, fol. 176, Péricard à Puisieux, 12 octobre 1617.
+ 
+50 L’intelligence avec l’étranger, et notamment avec des ministres des Archiducs, faisant partie des m (...) [#ftn50]
+ 
+ 
+17Contrairement aux autres agents, Péricard effectue certes les témoignages de fidélité attendus, dans sa première dépêche adressée à Villeroy, mais n’émet aucun jugement quant aux qualités passées du gouvernement Mangot46 [#ftn46]. Ce n’est que quelques jours plus tard qu’il fait référence à « l’usurpation et ambition du maréchal d’Ancre47 [#ftn47] ». Néanmoins, la majeure partie de sa dépêche contient surtout des plaintes quant à la modification soudaine dans la suscription (résident et non plus ambassadeur) dans les dépêches qui lui sont adressées par le pouvoir royal. Si cette modification pourrait résulter d’une simple erreur, en lien avec le changement de personnel au sein des Affaires étrangères, le maintien de cette suscription dans les dépêches suivantes accrédite l’hypothèse d’une suspicion immédiate ne permettant plus son maintien au rang d’ambassadeur48 [#ftn48]. Les conséquences de cette rétrogradation sont néanmoins minimes : ni les Archiducs ni les ministres et ambassadeurs présents à la cour bruxelloise n’en ont connaissance49 [#ftn49] et Péricard n’est pas sermonné pour cette dissimulation ni même contraint de signifier aux Archiducs sa rétrogradation, ce qui souligne non seulement la nature individuelle de la rétrogradation – une sanction contre Péricard – mais aussi le délicat équilibre que le pouvoir royal doit maintenir aux Pays-Bas. La rétrogradation d’un agent diplomatique constitue en effet le plus souvent la conséquence d’une dégradation des relations entre les deux souverains, tandis que le maintien d’un agent dans lequel la confiance du pouvoir royal est amoindrie pourrait être interprété au mieux comme un désengagement, au pire comme une offense. Le crédit dont dispose Péricard à la cour archiducale, joint à la délicatesse des relations avec les Pays-Bas50 [#ftn50] explique le maintien de Péricard tout comme l’absence de toute publicité autour de sa rétrogradation. Ni le pouvoir royal ni Péricard n’ont d’intérêt à ce que cela soit su au risque de s’aliéner, le premier les Archiducs, le second le pouvoir royal.
+ 
+ 
+ 
+ 
+51 Pour l’Empire, on peut notamment penser à Urbain de Laval, seigneur de Boisdauphin, principal lieut (...) [#ftn51]
+ 
+52 BnF, fr. 17300, fol. 216, déposition de Jean de Péricard lors de l’information faite par Pierre Mic (...) [#ftn52]
+ 
+53 Jean-Marie Constant, Les Guise, Paris Hachette, 1984, p. 11.
+ 
+ 
+18Péricard est surtout le seul diplomate, au printemps 1617, à voir sa capacité à servir les intérêts de la Couronne immédiatement questionnée. Cette suspicion, sinon de trahison directe, du moins d’infidélité, peut certes être attribuée au contexte de sa nomination ou à la connaissance de sa correspondance entretenue avec Concini mais son immédiateté interroge et il serait tentant de l’attribuer à son passé ligueur. Certes, Péricard est loin d’être le seul ligueur ayant ensuite obtenu une charge diplomatique51 [#ftn51] et au regard notamment du passé ligueur de Villeroy, une semblable méfiance paraît peu probable, du moins sur le seul motif d’une appartenance à la Ligue. Plusieurs actions antérieures de Péricard néanmoins font écho à la situation d’avril 1617. Secrétaire personnel et intendant de Henri de Guise, Péricard avait été immédiatement arrêté et interrogé après l’assassinat de ce dernier en décembre 158852 [#ftn52]. Nombre de témoignages avaient alors fait état de preuves l’incriminant et attestant de sa fidélité absolue au duc de Guise tandis que le bruit avait couru que Péricard aurait fait brûler la boite contenant des preuves de complicités internes comme étrangères53 [#ftn53]. Cependant, à aucun moment son passé ligueur n’est utilisé pour mettre en doute sa fidélité au roi. Alors qu’une mémoire de la trahison ou de la désobéissance est indispensable au service du roi afin de ne confier une charge à un agent dont la fidélité a déjà vacillé, les actions menées dans le contexte particulier des guerres de Religion jouissent, encore en 1617, du pardon accordé par Henri IV.
+ 
+ 
+ 
+19Les dépêches du pouvoir royal n’ayant pas été conservées, les raisons exactes de cette dégradation demeurent inconnues. Cependant, l’expression de suspicions à l’encontre de Péricard dépasse la temporalité resserrée de sa rétrogradation. Quelques semaines après, il doit se justifier d’une « indiscrétion » qu’il aurait commise en montrant aux Archiducs des lettres du roi au sujet de la mort de Concini :
+ 
+ 
+ 
+ 
+ 
+54 BnF, fr. 16131, fol. 51, Péricard à Puisieux, 30 mai 1617.
+ 
+ 
+Je dis donc, Monsieur, par la consideration des discours estravagans, meilleurs à taire qu’à exprimer, qui ont couru parmy ces nations estrangeres dont cette province et particulierment cette cour est remplie, qui a esté un service tres signalé de les assoupir par la veue d’une lettre plus forte que ma parole en laquelle vous ne verrez ny remarquerez rien à celer ny retenir, la function de ceste legation ne se faisant par lettres mutueles entre les princes souverains mais seulement par l’organe des ambassadeurs, il y a des choses à observer du tout differentes des aultres qui doivent estre remises à leur jugement et conduite. Je vous supplie donc tres humblement, Monsieur, vouloir prendre la peine de relever la mauvaise opinion que je veoy par voz lettres du xxii avoir esté prise de moy, la franchise dont j’ay usé en cela estant plustost à louer par la consideration de l’utilité et reputation et pour d’aultres raisons trop chatouilleuses à escrire54 [#ftn54].
+ 
+ 
+ 
+ 
+ 
+55 Chapitre du procez faict à la memoire de Conchino Conchini nagueres mareschal de France et à Leonor (...) [#ftn55]
+ 
+56 Sur le procès de Concino Concini et Léonora Galigai, voir Hélène Duccini, Concini. Grandeur et misè (...) [#ftn56]
+ 
+ 
+20Si l’accusation paraît sans fondement à Péricard, l’action qui en est à l’origine constitue bien un manquement et même une incompréhension des fondements du service diplomatique. Certes, certaines dépêches du roi sont rédigées de telle sorte qu’elles puissent être rendues publiques ; cependant, Péricard en communique ici une, sans commandement explicite, et ce à un souverain étranger. Une telle communication peut aisément être interprétée, au mieux comme un défaut de service, au pire comme une intelligence avec l’étranger, d’autant plus maladroite que Péricard est alors suspecté d’avoir aidé Concini à nouer des intelligences étrangères, notamment aux Pays-Bas55 [#ftn55]. S’il n’est ensuite plus question de cette affaire dans les dépêches, Péricard fait de nouveau état, un mois plus tard, de suspicions à son égard, émanant cette fois-ci de l’avocat général du roi au parlement de Paris, Louis Servin, sur le fondement de la découverte de certaines de ses lettres parmi les papiers de Concini et de l’utilisation de celles-ci dans le cadre du procès de Concini56 [#ftn56].
+ 
+ 
+ 
+ 
+57 Concini ayant été jugé coupable de crime de lèse-majesté et haute trahison, les membres de son gouv (...) [#ftn57]
+ 
+58 Sur le détail des accusations formulées à l’encontre de Concini mais aussi sur le contenu de ces pi (...) [#ftn58]
+ 
+59 Chapitre du procez, op. cit., p. 4-5. Sans exclure l’hypothèse d’une correspondance parallèle à la (...) [#ftn59]
+ 
+60 Janna Tytgat, Ferdinand de Boisschot, een ambassadeur van de Aartshertogen te Parijs, 1617-1620, mé (...) [#ftn60]
+ 
+61 BnF, fr. 16131, fol. 94, Péricard à Puisieux, 29 juin 1617.
+ 
+62 Kevin Dekoster, Ambassadeur Jean de Péricard in Brussel (1616-1621). Een studie van de Frans-Habsbu (...) [#ftn62]
+ 
+ 
+21Les accusations dont fait l’objet Péricard procèdent en effet d’un double mouvement : une suspicion initiale de la part du pouvoir royal, similaire à celle dont l’ensemble du personnel associé à la figure de Concini fait l’objet57 [#ftn57], une suspicion prolongée eu égard aux pièces mobilisées lors du procès58 [#ftn58]. Certaines, comme une lettre rédigée par Péricard le 27 janvier 1617, le concernent directement59 [#ftn59] et le présentent comme un véritable intermédiaire entre Concini et les Pays-Bas. Sur ce fondement, Péricard est accusé d’avoir noué des intelligences étrangères défavorables à la Couronne et contraires au service dû60 [#ftn60]. En juin 1617, les conclusions de Servin l’« envelope[nt] par ung adjournement personnel » à cause des lettres qu’il a écrites à Concini et donnent lieu à d’intenses rumeurs de révocation à Paris61 [#ftn61]. Péricard se justifie pourtant d’avoir été un fidèle serviteur du roi, soulignant les nombreuses prises de contact, qu’il a déclinées depuis avril 1617, de la part d’anciens fidèles de Concini62 [#ftn62]. Plus encore, il ne cesse de requérir protection et intercession auprès du secrétaire d’État des Affaires étrangères afin de mettre fin à ces accusations :
+ 
+ 
+ 
+ 
+ 
+63 BnF, fr. 16131, fol. 88, Péricard à Puisieux, 22 juin 1617.
+ 
+ 
+Ces assaultz sont insupportables à un homme de bien qui a fidelement servy, je vous supplie tres humblement encor une foys de vouloir faire qu’il plaise au roy escrire à Monsieur le procureur general et audit sieur Servyn et à monsieur le premier president et à messieurs Courtin et Deslandes que Sa Majesté a tout contentement de mon service […] attendu que je n’ay rien fait qu’en vertu des lettres et commandements de Sa Majesté durant les troubles, n’estant raisonnable que je soys exposé à la passion et vengeance de ceux que j’ay desservy en pensant faire le service du roy. Ne permetez Monsieur qu’il se decrete adjournement personnel contre moy puisque je ne suys coulpable et faictes s’il vous plaist que mes lettres soyent apportées au roy et qu’elles soyent veues et jugées par Sa Majesté et messieurs de son Conseil plus secret qui en sont juges capables et […] je n’ay jamais eu d’intelligence secrete avec le marechal ny chiffre pour la conduire et si je luy ay escrit avec humilité et paroles de submission, je ne pouvoy faire aultrement63 [#ftn63].
+ 
+ 
+ 
+ 
+ 
+64 Sur l’articulation entre fidélité et conscience, voir Dante Fedele, Naissance de la diplomatie mode (...) [#ftn64]
+ 
+65 Cette articulation entre fidélité/obéissance et prudence/adaptation aux circonstance est d’autant p (...) [#ftn65]
+ 
+ 
+22La stratégie de défense de Péricard repose alors sur trois arguments récurrents : l’exécution des commandements royaux qui lui étaient transmis par Concini et auxquels il ne pouvait qu’obéir ; la nature de l’exercice diplomatique obligeant à de nombreux contacts et amitiés avec des ministres et souverains étrangers ; l’inimité personnelle que Servin lui porte. Si le dernier point constitue une manœuvre claire de décrédibilisation de l’adversaire, les deux premiers éléments soulignent l’équilibre précaire dans lequel se trouvent les diplomates ainsi que la difficulté effective d’agir selon sa conscience et les intérêts de la Couronne lorsque les commandements sont susceptibles d’y contrevenir64 [#ftn64]. Cette dernière appréciation repose cependant sur la seule faculté de discernement du diplomate65 [#ftn65] et présente donc un risque important d’accusations de désobéissance voire de trahison. Dans le cas de Péricard, ce débat intérieur quant à la justesse des commandements ne semble pas avoir eu lieu – et là se situe le réel fondement des accusations à son égard –, l’ambassadeur français demeurant convaincu de n’avoir rien fait qui contrevienne aux commandements reçus ni aux intérêts de la Couronne. La dépêche du 7 juillet 1617, dernière mention par Péricard de ces suspicions, vient alors rappeler avec force le cadre particulièrement mouvant de l’action diplomatique mais aussi de la fidélité :
+ 
+ 
+ 
+ 
+ 
+66 BnF, fr. 16131, fol. 98, Péricard à Puisieux, 7 juillet 1617.
+ 
+ 
+Je suis donc abandonné, Monsieur, et exposé en proye à Monsieur Servyn et à Messieurs du Parlement qui ne sçavent pas la verité de mes services ny l’usage et les formes de l’employ et execution des commandens du roy en cette legation qui ne peult estre que par communication et intelligence avec les estrangers puisque j’y suys envoyé et que c’est le premier article de mon instruction de conserver leur amitié, ce qui ne se pouvoit faire qu’en traictant et establissant celle des deux personnes qui tenoient en leurs mains l’authorité et le pouvoir absolu des deux souverains, comme chascun sçait que le mareschal le possedoit en France et le marquis Spinola par deça et ne se trouvera autre chose traictée que pour le service du roy conforme à ses commandemens, ne sçachant que c’est de trahison ny infidelité […]. Les despesches que j’en feiz au roy et à Monsieur de Villeroy justifient assez ma fidelité et le contraire de telles impostures et menteries66 [#ftn66].
+ 
+ 
+ 
+ 
+ 
+67 BnF, fr. 16131, fol. 52, Péricard à [Villeroy], 24 mai 1617.
+ 
+68 Ernest de Bouteiller, Eugène Heppe, Correspondance politique adressée au magistrat de Strasbourg pa (...) [#ftn68]
+ 
+ 
+23Si à la seule lueur des dépêches envoyées par Péricard et des mentions faites par les autres ambassadeurs il n’est pas possible de déterminer si Péricard a intrigué avec Concini, le parlement de Paris n’est pas le seul à accuser Péricard. Ce dernier doit également faire face aux plaintes du duc de Vendôme, l’un des acteurs de la révolte des Grands contre Concini, « pour quelques lettres miennes interceptées durant ces troubles dont il se sera offensé67 [#ftn67] » ainsi qu’aux accusations directes de la femme de Concini, Léonora Galigai68 [#ftn68].
+ 
+ 
+ 
+ 
+69 BnF, fr. 16131, fol. 100, Péricard à Puisieux, 15 juillet 1617.
+ 
+70 BnF, fr. 16131, fol. 103, Péricard à Puisieux, 17 juillet 1617.
+ 
+71 Luigi de Staffani (éd.), La nunziatura di Francia del cardinale Guido Bentivoglio. Lettere a Scipio (...) [#ftn71]
+ 
+72 Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (...) [#ftn72]
+ 
+73 Janna Tytgat, Ferdinand de Boisschot, een ambassadeur van de Aartshertogen te Parijs, 1617-1620, mé (...) [#ftn73]
+ 
+74 Lucienne van Meerbeeck (éd.), Correspondance des nonces Gesualdo, Morra, Sanseverino avec la Secrét (...) [#ftn74]
+ 
+ 
+24L’affaire se clôt en juillet avec la reconnaissance par le roi de France des bons services de Péricard69 [#ftn69]. Si les rumeurs persistent à la fois à Paris et à Bruxelles, Péricard dispose désormais de solides arguments, avec la confirmation de sa charge, pour les combattre, notamment à la cour des Archiducs70 [#ftn70]. Par ailleurs, l’ampleur de ces suspicions doit être mesurée à l’aune de leur publicité. Le nonce à Paris71 [#ftn71] comme les autres agents diplomatiques français n’y font aucune référence dans leurs dépêches, y compris Du Maurier, dont les relations avec Péricard sont pourtant difficiles72 [#ftn72]. En sus de l’ambassadeur flamand à Paris73 [#ftn73], seul le nonce à Bruxelles fait état dans ses dépêches des soupçons d’intelligence avec Concini et confirme le caractère public, mais limité à la Cour archiducale, des menaces qui pèsent sur Péricard74 [#ftn74], suspecté non d’avoir failli aux commandements royaux mais d’avoir failli dans la défense des intérêts de la Couronne en correspondant avec le favori et/ou en accédant à ses demandes de mise en relation avec des ministres étrangers.
+ 
+ 
+
+# Collaborer avec l’étranger sans trahir [#tocfrom1n4]
+ 
+ 
+ 
+75 Sur la multiplicité des liens (fidélité, clientélisme, amitié, etc.) entretenus par les ambassadeur (...) [#ftn75]
+ 
+76 Camille Desenclos, « Diplomate huguenot ou humaniste ? Le modèle de l’agent français auprès des pri (...) [#ftn76]
+ 
+ 
+25La loyauté monarchique demeure en effet délicate à définir dans ses modalités de mise en œuvre par les diplomates, en contact permanent avec l’étranger. Qualifiées d’amitiés lorsqu’elles coïncident avec les intérêts de la Couronne, d’intelligences lorsqu’elles en divergent, ces relations sont pourtant essentielles à l’exercice diplomatique qu’il s’agisse de collecter l’information, de la diffuser, de négocier, d’influer, soit pour agir en diplomate75 [#ftn75]. Dans le cas des agents français auprès des princes protestants de l’Empire cependant76 [#ftn76], ces relations ne sont pas créées pour l’exercice diplomatique mais y préexistent et se superposent à la fidélité au patron, au secrétaire d’État et à la Couronne. Si cette articulation demeure commune à l’époque moderne, leur dimension internationale oblige les agents à une articulation plus fine de celles-ci, afin d’éviter toute accusation de trahison, et surtout à une justification constante de la primauté accordée à la fidélité au roi.
+ 
+ 
+ 
+ 
+77 Camille Desenclos, « Au-delà de toute diplomatie : la constitution de réseaux parallèles protestant (...) [#ftn77]
+ 
+ 
+26Jean Hotman, ambassadeur extraordinaire (mais permanent) auprès des princes protestants, ou Étienne de Sainte-Catherine, résident auprès de l’électeur palatin, entretiennent en effet correspondances et liens personnels avec nombre de conseillers et ministres dans l’Empire, et ce indépendamment de l’exercice de leur charge77 [#ftn77]. Cette proximité forte avec des ministres étrangers pose la question de la porosité entre l’exercice diplomatique, les préoccupations confessionnelles et les intérêts politiques de ces princes auxquels les deux diplomates sont particulièrement sensibles. Pour autant, ces derniers ne sont pas inquiétés dans leur pratique diplomatique et ces relations constituent probablement l’une des motivations de leur recrutement par le pouvoir royal afin d’assurer une présence, épistolaire, auprès des principaux états protestants de l’Empire et d’en obtenir et nourrir la confiance. Il est en effet impossible pour la diplomatie française d’entretenir résidents, chargés d’affaire ou même pensionnaires dans chacun des états de l’Empire à la fois pour des raisons politiques – non souverains, ces états ne peuvent pas envoyer d’ambassadeurs de plein exercice ; la résidence auprès de l’électeur palatin ne repose ainsi sur aucune réciprocité, officielle, et ne peut donc constituer qu’une exception – mais aussi financières. En ce sens, Hotman et Sainte-Catherine, malgré l’ancrage résolument personnel de leurs réseaux, satisfont aux besoins contextuels de la diplomatie française. Le risque encouru d’une divulgation d’informations, d’une prise indirecte de parti de la part des agents français est alors moindre à l’égard des bénéfices que le pouvoir royal peut retirer de ces deux résidences qui disposent par ailleurs d’une marge de manœuvre politique et diplomatique relativement faible. Pour autant, il ne s’agit pas ici de conditionner le degré de fidélité au degré de service pouvant être offert dans la défense des intérêts de la Couronne.
+ 
+ 
+ 
+ 
+78 Camille Desenclos, « Loyaux serviteurs ou fidèles huguenots ? Servir le roi auprès des princes prot (...) [#ftn78]
+ 
+79 Alison D. Anderson, On the Verge of War: International Relations and the Jülich-Kleve Succession Cr (...) [#ftn79]
+ 
+80 BnF, fr. 4030, fol. 283, Marie de Médicis à Hotman, 27 mai 1614.
+ 
+81 BnF, fr. 15926, fol. 179, Hotman à Puisieux, 29 juillet 1614 ; cité par Alison D. Anderson, On the (...) [#ftn81]
+ 
+ 
+27Si Hotman est rappelé en 1614, cela n’est pas lié à ses amitiés outre-Rhin mais à des accusations étrangères de partialité. Envoyé initialement dans l’Empire par le duc de Bouillon puis missionné par le pouvoir royal à des fins d’information, Hotman a été très rapidement chargé de représenter les discours royaux auprès des deux partis78 [#ftn78] se disputant la succession des duchés de Clèves et de Juliers79 [#ftn79]. L’apparente impossibilité d’un accommodement entre Jean III Sigismond, électeur protestant de Brandebourg et Philippe-Louis, duc protestant de Neubourg mais dont le fils et héritier s’est converti au catholicisme en 1613, paraît être la cause la plus évidente, et surtout rendue publique, de ce rappel et permet de justifier à la fois le rappel de Hotman et l’absence d’envoi immédiat d’un autre agent français, a fortiori avec la présence depuis 1612 d’Étienne de Sainte-Catherine comme résident auprès de l’électeur palatin. Marie de Médicis, dans sa lettre de congé adressée à Hotman, fait ainsi état de sa volonté de s’informer plus particulièrement de la situation en rappelant Hotman auprès d’elle afin de pouvoir prendre « les conseilz et resolutions que nous jugerons utiles à leur bien et repos pour les leur departir aux occasions qui se presenteront80 [#ftn80] ». Hotman lui-même reconnaîtra, auprès de Puisieux du moins, que sa présence n’était plus souhaitable, créant des tensions supplémentaires au sein d’une situation déjà proche de la rupture81 [#ftn81]. Ces tensions néanmoins sont autant externes qu’internes à la diplomatie française et obligent à repenser, partiellement, les motifs de son rappel.
+ 
+ 
+28Hotman fait en effet l’objet de plaintes de la part de Wolfgang-Guillaume de Neubourg, plaintes relayées par son père, Philippe-Louis, duc de Neubourg :
+ 
+ 
+ 
+ 
+82 BnF, fr. 15926, fol. 92, Hotman à Puisieux, 26 avril 1614.
+ 
+ 
+Je commanceray par l’advis qu’il vous a pleu me donner […] de la plainte qu’a fait faire de moy Monsieur le palatin de Neubourg, mesmes par monsieur son pere qui ne me vid oncques, autant en fait-il de tous ceux qui n’espousent son party et ses opinions, ne prenant point pour office fait à luy ce qui se fait en commun pour tous les deux, et ne souffre mesmes pas que l’on demeure neutre […], moins certes que l’on luy die ses veritez, fasché quand on s’apperçoit de ses desseins, lesquels neantmoins il fait assez veoir par l’opposition continuelle qu’il fait sur si foibles raisons à l’installation de son compagnon82 [#ftn82].
+ 
+ 
+ 
+ 
+ 
+83 Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 158, Plessen à Hotman, 17 février 1618.
+ 
+84 Péricard et Du Maurier s’accusent régulièrement de partialité en faveur soit des catholiques soit d (...) [#ftn84]
+ 
+85 Si Philippe-Louis de Neubourg ne s’est pas converti au catholicisme, contrairement à son fils, il a (...) [#ftn85]
+ 
+ 
+29Cependant, il est également suspecté de partialité dans l’exercice de sa charge par Villeroy83 [#ftn83]. Si, sur le fondement des seules dépêches de Hotman, il est difficile de donner foi aux accusations du duc de Neubourg, le ton particulièrement libre de Hotman dans ses dépêches de 1614 lève toute ambiguïté quant à son opinion personnelle, particulièrement en défaveur des menées à la fois de Neubourg, des Archiducs et de l’Espagne (désormais soutiens des prétentions du duc). Alors que de semblables accusations sont ponctuellement formulées à l’encontre des agents diplomatiques84 [#ftn84], la provenance de ces accusations85 [#ftn85], conjuguée à la politique étrangère de la régente, cherchant à imposer sa médiation dans cette crise, conduisent à rappeler Hotman dont non la fidélité au roi mais sa capacité à défendre les intérêts de la Couronne est ainsi remise en question. La perte de confiance résulte moins de la pratique diplomatique mise en œuvre que de sa réception et de son adéquation avec les intérêts du moment : quels que soient les liens, passés ou actuels, entre le royaume de France et l’électorat de Brandebourg, une apparente neutralité est indispensable à la conclusion d’un accord entre les deux partis. Or, par ses discours, Hotman non seulement suggère une prise de parti du roi de France mais aussi un manquement à sa parole, celle de faire office de médiateur entre les deux partis.
+ 
+ 
+ 
+ 
+86 Ibid., p. 57.
+ 
+87 Le fils aîné de Jean Hotman, Robert, est gentilhomme ordinaire du duc de Rohan (AN, Y 165, insinuat (...) [#ftn87]
+ 
+ 
+30Cette perte de confiance à l’égard de Hotman est aggravée par la disjonction de sa fidélité au roi et de sa fidélité à son patron. Outre ses liens avec le duc de Bouillon, Hotman est proche des maisons de Condé86 [#ftn86] et de Rohan87 [#ftn87] ; il subit ainsi fort probablement sa proximité avec Condé, dont l’opposition à la politique menée par la régente vient de se concrétiser par la publication d’un manifeste. L’appartenance, même théorique, à une autre clientèle fournit matière aux soupçons, tend à conforter les accusations de partialité et surtout témoigne non seulement de la fragilité du modèle de service diplomatique développé dans l’Empire – celui-ci s’appuie sur des agents protestants aux compétences spécifiques dont la loyauté est régulièrement questionnée par d’autres princes voire par d’autres agents français, catholiques, et dont l’envoi comme le rappel constituent des outils politiques permettant de s’adapter à la reconfiguration régulière des équilibres dans l’Empire et dans le royaume de France –, mais aussi de la difficulté pour un agent de conduire une négociation qui doit se faire au bénéfice des intérêts et de la réputation du roi et qui doit ici être à la fois favorable aux catholiques, non hostile à la maison de Habsbourg et favorable aux protestants, principaux alliés du roi dans les territoires de l’Empire et principaux opposant de l’empereur.
+ 
+ 
+ 
+ 
+88 Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 142, Plessen à Hotman, 25 septembre 1617.
+ 
+89 Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 144, Plessen à Hotman, 25 octobre 1617.
+ 
+ 
+31Si Hotman n’est formellement accusé ni de trahison ni de désobéissance, il subit une réelle sanction : sa fidélité n’étant plus assurée, il n’est plus possible de l’employer au service du roi. Malgré ses demandes et propositions répétées de faire bénéficier le pouvoir royal de sa connaissance de l’Empire, Hotman se voit systématiquement opposer un refus. Face à l’imminence d’une élection impériale, il écrit ainsi au Conseil du roi en septembre 1617 en faveur d’une candidature du duc de Bavière, face à l’archiduc Ferdinand de Styrie, membre de la maison de Habsbourg, tant à la demande de l’Union que par propre conviction. Néanmoins, si Villeroy assure être certain que Hotman procède en cela en fidèle serviteur du roi, soucieux des intérêts du royaume, ses offres n’en sont pas moins repoussées88 [#ftn88]. Hotman ayant présenté l’ensemble « sans charge et par pure affection au commun bien »89 [#ftn89] et n’étant alors formellement employé au service du roi, il ne peut être accusé ni de trahison ni d’infidélité et continue dans les semaines et mois suivants, à l’incitation de Wolrad von Plessen, conseiller de l’électeur palatin, de représenter au Conseil les avantages d’un soutien à une candidature bavaroise. L’itération de ces offices semble néanmoins éroder la faible confiance encore accordée à Hotman ainsi que son accès aux membres du Conseil et amplifier la défaveur amorcée par la suspicion de partialité dans l’affaire de Clèves-Juliers. Aucune autre tentative similaire n’est de nouveau évoquée dans la correspondance entretenue avec Plessen.
+ 
+ 
+ 
+ 
+90 Des quatre diplomates dans l’Empire suspectés, aucun n’obtient ensuite une nouvelle charge. D’autre (...) [#ftn90]
+ 
+91 En 1614, seuls deux postes accueillent des diplomates protestants : les Provinces-Unies avec Benjam (...) [#ftn91]
+ 
+ 
+32Hotman révèle à lui seul la complexité de l’exercice diplomatique mais aussi le délicat devenir de ces diplomates90 [#ftn90]. Alors que sa confession ne lui permet que difficilement de prétendre d’autres charges diplomatiques91 [#ftn91], ces accusations de tentative d’influence sur des négociations puis sur la politique étrangère française l’excluent définitivement du vivier dans lequel le roi puise pour entretenir, par le biais de représentations diplomatiques ou de correspondances, les liens d’amitié avec les princes protestants et faciliter la collecte d’information. Si dans le cas de Hotman la rupture de confiance s’effectue en deux temps, elle rappelle le périlleux équilibre auquel les diplomates, a fortiori les diplomates français auprès des princes protestants de l’Empire, doivent se livrer : susciter la confiance des princes par une communauté d’intérêts, facilitée par une confession commune, par une intense activité épistolaire (mêlant tout à la fois diplomatie, humanisme et intérêts privés) ; faire bénéficier le roi d’un accès privilégié à l’information et d’une expertise dans les affaires dans l’Empire ; demeurer fiable dans la collecte, le traitement et la transmission de l’information. Il ne s’agit alors pas tant d’éviter toute partialité que d’éviter la partialité de l’agent qui doit se présenter sous un jour soit favorable soit neutre en fonction des interlocuteurs. Si la politique du roi nécessite une prise de parti, celle-ci doit prendre forme de manière suffisamment affirmée pour contenter les alliés, mais de manière suffisamment subtile pour ne s’aliéner d’autres princes. Hotman est ainsi accusé moins d’avoir voulu favoriser les protestants que d’avoir échoué à maintenir l’apparence d’une neutralité française. De même, ce n’est sa politique pro-protestante qui le dessert mais la temporalité avec laquelle il tente de la faire adopter par le pouvoir royal. Il n’est alors nul temps pour la France de s’opposer ouvertement à la maison de Habsbourg.
+ 
+ 
+ 
+ 
+92 BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [décembre 1621], brouillon.
+ 
+93 BnF, fr. 4114, fol. 219, Sainte-Catherine à Castille, [décembre 1621], brouillon. Ancien ambassadeu (...) [#ftn93]
+ 
+94 BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [décembre 1621], brouillon. Remplacé à sa dem (...) [#ftn94]
+ 
+95 BnF, fr. 4114, fol. 216, Sainte-Catherine à La Gardie, [1626].
+ 
+96 BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [1621].
+ 
+97 Cette possibilité est indirectement reconnue par Wicquefort qui comparant un ambassadeur quittant l (...) [#ftn97]
+ 
+98 Guillaume Posthumus Meyjes, Jean Hotman’s English Connection, Amsterdam, Koninklijke Nederlandse Ak (...) [#ftn98]
+ 
+99 Dans un mémoire, probablement rédigé en 1617 et relatif à ses années passées au service du comte de (...) [#ftn99]
+ 
+ 
+33Si cette adaptation permanente à l’évolution des intérêts de la Couronne ne cesse de redessiner les contours de l’action diplomatique et du rapport entretenu aux amitiés étrangères, elle s’inscrit dans une seconde temporalité : celle de la charge diplomatique, au-delà de laquelle nulle loyauté ne peut être requise. Pour autant, même s’il n’est plus employé par le roi, il n’est pas possible d’entrer au service d’un autre souverain, au risque d’être accusé de trahison. À la recherche d’une pension lors de son retour en France, éventuellement liée à une mission d’information ou de conseil, à défaut de pouvoir accomplir de nouvelles missions à l’étranger compte tenu de son âge avancé, Sainte-Catherine sollicite ainsi la permission d’accepter une offre de pension de la part du duc de Wurtemberg92 [#ftn92]. Bien que la mention de cette offre cherche clairement à influencer la décision en faveur d’une pension versée par le roi de France, elle n’en est pas moins réelle. Sainte-Catherine sollicite également les avis de Pierre de Castille93 [#ftn93] et se prévaut des conseils de Pierre Jeannin94 [#ftn94] afin d’appuyer sa demande et lui donner toute légitimité en cas d’acceptation. En 1626, n’ayant donné suite à la proposition renouvelée du duc deWurtemberg sans que les sources n’en donnent les raisons, Sainte-Catherine écrit à Jacob de La Gardie, conseiller du roi de Suède et gouverneur de Livonie, pour lui demander de s’entremettre en sa faveur. Sainte-Catherine propose alors un « fidelle, honnorable et utille service95 [#ftn95] » au roi de Suède en échange d’une pension. Quelques années auparavant pourtant, Sainte-Catherine se proposait de poursuivre son service du roi « avec toute fidellité » également96 [#ftn96]. Ici aucune considération politique ou confessionnelle n’est évoquée, simplement des considérations financières. Si le service diplomatique ne peut prendre fin que par congé ou défaveur, la possibilité de changer de maître, après l’obtention d’un congé et sous réserve de permission du souverain97 [#ftn97], témoigne du caractère non exclusif et temporaire d’une loyauté, pourtant exclusive lors de l’exercice de la charge. Ces reconfigurations de la loyauté, y compris étrangères, demeurent cependant conditionnées à la qualité des relations entre le patron, ou le prince étranger, et le souverain (amitié, neutralité, hostilité, conflit). Ainsi, alors que sans charge, servir l’adversaire suscite immédiatement la suspicion et génère une surveillance, Hotman ne paraît avoir été inquiété ni par son service, au cours de la décennie 1580, auprès d’Amias Paulet, ambassadeur anglais à Paris, puis de Robert Dudley, comte de Leicester98 [#ftn98] ni par la persistance de ses liens avec l’Angleterre99 [#ftn99].
+ 
+ 
+
+# Conclusion [#tocfrom1n5]
+ 
+ 
+ 
+100 « Ne sçachant que c’est de trahison ny infidelité », BnF, fr. 16131, fol. 98, Péricard à Puisieux, (...) [#ftn100]
+ 
+ 
+34Si le contact permanent avec l’étranger amplifie les difficultés inhérentes à l’articulation des fidélités au bénéfice du service du roi, ces difficultés ne sont pas spécifiques aux agents diplomatiques français dans l’Empire ; elles sont cependant plus nombreuses. Les suspicions semblent affleurer plus aisément tandis que les déclarations d’attachement et de fidélité au souverain se répètent inlassablement, constituant autant un effet rhétorique qu’un besoin d’éviter des suspicions qu’un simple silence pourrait faire (re)surgir. Surtout, les accusations dont les agents français dans l’Empire font l’objet révèlent l’importance non seulement de la fidélité au roi mais aussi de la loyauté monarchique, par l’intermédiaire du secrétaire d’État et de la défense des intérêts de la Couronne. Dans ce cadre, les notions de fidélité, mais aussi de trahison deviennent, elles aussi, contractuelles et liées aux conditions, institutionnelles et politiques, dans lesquelles le lien entre le diplomate et son souverain se déploie. De ce fait, au-delà du caractère fluctuant de la sémantique mobilisée par les contemporains eux-mêmes, la moralité ou l’amoralité normalement associée à la fidélité, et plus encore à la trahison, apparaissent peu. À aucun moment, les qualités intrinsèques des diplomates ici étudiés ne sont remises en question ; inversement, leur capacité à représenter et à servir le roi de manière idoine l’est, qu’il s’agisse d’effectives suspicions de trahison, de mise en danger des intérêts et/ou de la réputation du roi, de conflits de loyauté ou encore d’impossibilité de renouveler la relation contractuelle de fidélité. Quelle que soit la réalité de leurs actions, tous les agents étudiés sont en effet suspectés moins pour leurs actions que pour la connaissance, voire, la représentation qui en a été donnée à un ou plusieurs tiers, révélant la prédominance de la dimension publique de la diplomatie, mobilisant les notions de réputation, de légitimité et d’honneur, incarnées dans la fidélité absolue de l’agent100 [#ftn100].
+ 
+ 
+Haut de page [#article-30748]
+ 
+ 
+
+## Notes
+ 
+1 [#bodyftn1] Bien que les termes de diplomatie et de diplomate ne soient pas utilisés dans les sources du début du xviie siècle, nous utilisons ici le terme de diplomate, par convention, afin de désigner tout type d’agent diplomatique (ambassadeur, résident, chargé d’affaire, etc.).
+ 
+2 [#bodyftn2] Dante Fedele, Naissance de la diplomatie moderne (xiiie-xviie siècle). L’ambassadeur au croisement du droit, de l’éthique et de la politique, Baden-Baden, Nomos, 2017, p. 702-703.
+ 
+3 [#bodyftn3] Parmi la bibliographie relative à la conception et expression d’une fidélité et aux liens de clientèle, voir notamment pour le xviie siècle : Sharon Kettering, Patrons, Brokers and Clients in Seventeenth-Century France, Oxford, Oxford University Press, 1986 ; Wolfgang Reinhard, Freunde und Kreaturen. « Verflechung » als Konzept zur Erforschung historischer Führungsgruppen. Römische Oligarchie um 1600, Munich, Vögel, 1979 ; Roland Mousnier, « Les fidélités et les clientèles en France aux xvie, xviie et xviiie siècles », Histoire sociale, 29, 1982, p. 35-46 ; Élie Haddad, « Noble Clienteles in France in the Sixteenth and Seventeenth Centuries : A Historiographical Approach », French History, 20, 2006, p. 76-109 ; Birgit Emich, Nicole Reinhardt, Hillard von Thiessen, Christian Wieland, « Stand und Perspektiven der Patronageforschung. Zugleich eine Antwort auf Heiko Droste », Zeitschrift für historische Forschung, 32, 2005, p. 233-265. Nous renvoyons également à l’ouvrage de Damien Fontvieille qui opère une ample recension de cette abondante bibliographie : Damien Fontvieille, Le clan Bochetel. Au service de la couronne de France xve - xviie siècle, Paris, École des chartes, 2022, p. 526-530.
+ 
+4 [#bodyftn4] La question du service soutend une grande partie de l’historiographie relative à l’État et aux institutions ; néanmoins, plus encore que la fidélité, une définition du service, de sa conception par les acteurs comme par le pouvoir royal, fait encore défaut et souligne son caractère implicite mais pour autant maîtrisé par les contemporains. Voir, pour une appréhension directe de cette notion essentielle, le récent collectif dirigé par Matthieu Gellard, Bertrand Haan et Jérémie Foa : Matthieu Gellard, Bertrand Haan, Jérémie Foa (dir.), Servir le prince, Servir la République en temps de guerres civiles, Rennes, Presses Universitaires de Rennes, 2024, dont l’introduction rappelle justement les forts liens entre service, fidélité, clientèle, patronage et amitié (ibid., p. 7). On pourra également se reporter avec profit à la synthèse d’Alicia Esteban Estringana, Servir al rey en la Monarquia de los Autrias. Meldios, fines y logros del servicio al soberano en los siglos xvi y xviii, Madrid, Silex, 2012.
+ 
+5 [#bodyftn5] Dante Fedele, Naissance de la diplomatie moderne (xiiie - xviie siècle). L’ambassadeur au croisement du droit, de l’éthique et de la politique, Baden-Baden, Nomos, 2017, p. 705.
+ 
+6 [#bodyftn6] Les cas les plus célèbres pour cette période ne concernent pas des diplomates au service du roi de France. Nicolas Lhoste, qui a vendu de nombreuses informations à l’ambassadeur espagnol auprès du roi de France, est premier commis du secrétaire d’État des Affaires étrangères : Alain Hugon, « L’affaire L’Hoste ou la tentation espagnole (1604) », Revue d’Histoire moderne et contemporaine, tome 42, no 3, 1995, p. 355-375, tandis que Girolamo Lippomano sert la République de Venise : Lucien Bély, L’art de la paix. Naissance de la diplomatie moderne, Paris, PUF, 2007, p. 95-101. Seul cas documenté, Jacques Savary de Lancosme, ambassadeur à Constantinople, est emprisonné par le sultan puis renvoyé en France, pour avoir refusé de reconnaître Henri IV comme roi de France, s’être rallié au duc de Mayenne et avoir continué à exercer sa charge d’ambassadeur, au bénéficie de la Ligue : Amélie Balayre, « La déchéance progressive de l’ambassadeur français Jacques Savary de Lancosme à Constantinople (1589-1593) », dans Amélie Balayre, Claire Le Bras, Marie-Cécile Pineau, Nathan Rousselot (dir.), Le diplomate en représentation (xvie-xxe siècle), Rennes, Presses universitaires de Rennes, 2021, p. 27-40.
+ 
+7 [#bodyftn7] Si depuis 1598, les Pays-Bas sont pleinement souverains, tout en demeurant terre d’Empire, leur indépendance a été régulièrement remise en cause par l’historiographie mais aussi par les contemporains, eu égard notamment à la présence de troupes espagnoles ainsi qu’à la forte communauté d’intérêts entre le roi d’Espagne et les Archiducs. Par ailleurs, avec la mort de l’archiduc Albert en juillet 1621, l’infante Isabelle perd son statut de souveraine et gouverne alors au nom du roi d’Espagne.
+ 
+8 [#bodyftn8] En 1583, le Palatinat se convertit au calvinisme, suivi en 1605 par le landgraviat de Hesse puis par l’électorat de Brandebourg en 1613. Ces conversions non seulement bouleversent l’équilibre confessionnel de l’Empire mais donnent force aux demandes d’un nouveau compromis religieux.
+ 
+9 [#bodyftn9] Sur la diplomatie française dans l’Empire, voir notamment Rainer Babel, La France et l’Allemagne à l’époque de la monarchie universelle des Habsbourg 1500-1648, Villeneuve d’Ascq, Septentrion, 2013 [traduction de Deutschland und Frankreich im Zeichen der habsburgischen Universalmonarchie 1500-1648, Darmstadt, Wissenschaftliche Buchgesellschaft, 2005] ; Friedrich Beiderbeck. Zwischen Religionskrieg, Reichskrise und europäischem Hegemoniekampf. Heinrich IV. von Frankreich und die protestantischen Reichsstände, Berlin, Berliner Wissenschafts-Verlag, 2005 ; Camille Desenclos, Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624), thèse de doctorat, histoire moderne, École nationale des chartes, 2014 ; Victor-Lucien Tapié, La politique étrangère de la France et le début de la guerre de Trente Ans, Paris, Ernest Leroux, 1934.
+ 
+10 [#bodyftn10] En 1606, Jacques Bongars, résident auprès des princes protestants de l’Empire, se voit menacer de rappel pour avoir mis en doute la légitimité de l’action royale contre le duc de Bouillon dont il reprend alors les discours. Nous ne développerons pas davantage cette affaire qui a été étudiée dans Camille Desenclos, « La rébellion comme outil de légitimation de la diplomatie française dans l’Empire ? », dans Matthieu Gellard, Fabrice Micallef (dir.), Huguenots, Malcontents et Ligueurs sur la scène internationale (1562-1629), Rennes, Presses universitaires de Rennes, 2022, p. 196-197.
+ 
+11 [#bodyftn11] Antoine Furetière, « Trahison », dans Dictionnaire universel contenant generalement tous les mots françois tant vieux que modernes, 3e éd., Rotterdam, Reinier Leers, 1708, t. 3, n.p.
+ 
+12 [#bodyftn12] À la suite des travaux pionniers de Lucien Bély pour l’époque moderne, l’histoire diplomatique s’intéresse désormais aux acteurs dans toute leur diversité (voir par exemple, M. Gellard, F. Micallef (dir.), Huguenots, Malcontents et Ligueurs sur la scène internationale…, op. cit.), à la figure du diplomate (Indravati Félicité (dir.), L’identité du diplomate : métier ou noble loisir ?, Paris, Classiques Garnier, 2020) mais aussi aux pratiques, formelles comme informelles (Jean-Louis Fournel, Matteo Residori (dir.), Ambassades et ambassadeurs en Europe (xve-xviie siècles), Genève, Droz, 2020). Elle inclut désormais les dimensions politiques, sociales, culturelles et économiques (Dorothée Goetze, Lena Oetzel (dir.), Early modern european Diplomacy : A Handbook, Berlin, De Gruyter, 2024). Cependant, ces travaux, dont nous n’avons ici cité que certains des plus récents, n’évoquent qu’indirectement la question de la fidélité, soit par le biais de parcours individuels donnant lieu à une transgression des commandements ou une rupture de service (Amélie Balayre, « La déchéance progressive de l’ambassadeur français Jacques Savary de Lancosme à Constantinople (1589-1593) », dans Amélie Balayre, Claire Le Bras, Marie-Cécile Pineau, Nathan Rousselot (dir.), Le diplomate en représentation (xvie -xxe siècle), Rennes, Presses universitaires de Rennes, 2021), soit par celui du clientélisme (Sébastien Schick, Des liaisons avantageuses. Ministres, liens de dépendance et diplomatie dans le Saint-Empire romain germanique (1720-1760), Paris, Éditions de la Sorbonne, 2018 ; Regina Stuber, Anuschka Tischer, « Clientele and Patronage in Early Modern Diplomacy », dans D. Goetze, L. Oetzel (dir.), Early modern european Diplomacy: A Handbook, Berlin, De Gruyter, 2024, p. 593-612).
+ 
+13 [#bodyftn13] Dante Fedele, Naissance de la diplomatie moderne (xiiie - xviie siècle). L’ambassadeur au croisement du droit, de l’éthique et de la politique, Baden-Baden, Nomos, 2017.
+ 
+14 [#bodyftn14] Ibid., p. 701.
+ 
+15 [#bodyftn15] Damien Fontvieille, Le clan Bochetel. Au service de la couronne de France (xve - xviie siècle, Paris, École des chartes, 2022, p. 352.
+ 
+16 [#bodyftn16] Comme le souligne Niels F. May, la mission de représentation de l’ambassadeur est double : à la fois incarnation du roi en l’absence de celui-ci et délégation d’une « partie de la potestas mais aussi de la dignitas du prince » pour pouvoir négocier en son nom : Niels F. May, « Le cérémonial diplomatique et les transformations du concept de représentation au xviie siècle », dans Daniel Aznar, Guillaume Hanotin, Niels F. May (dir.), À la place du roi. Vice-rois, gouverneurs et ambassadeurs dans les monarchies française et espagnole (xvie - xviiie siècle), Madrid, Casa de Velazquez, 2014, p. 38.
+ 
+17 [#bodyftn17] « L’ambassadeur est inutile, et mesme dangereux, s’il n’a pour son maistre une fidelité incorruptible », Abraham de Wicquefort, L’ambassadeur et ses fonctions, Cologne [lieu fictif], Pierre Marteau [éditeur fictif], rééd. 1715, p. 7.
+ 
+18 [#bodyftn18] Stéphane Péquignot, « Les ambassadeurs dans les miroirs des princes en Occident au Moyen Âge », dans Stefano Andretta, Stéphane Péquignot, Jean-Claude Waquet (dir.), De l’ambassadeur : Les écrits relatifs à l’ambassadeur et à l’art de négocier du Moyen Âge au début du xixe siècle, Rome, Publications de l’École française de Rome, 2015.
+ 
+19 [#bodyftn19] Comme le souligne Wicquefort, cette fidélité doit avoir été précédemment éprouvée par d’autres charges ou commissions, notamment pour faire naître la confiance réciproque indispensable à l’action diplomatique : Abraham de Wicquefort, L’ambassadeur et ses fonctions, op. cit., p. 7.
+ 
+20 [#bodyftn20] La notion de contrat constitue souvent un dispositif commode pour définir les relations entre deux individus, entre un individu et un corps ou entre deux corps, et souligner l’existence d’obligations mutuelles, notamment tacites. Naturellement, dans le cas du service au roi, aucun contrat écrit n’est établi et, contrairement aux secrétaires d’État, nul serment n’est requis de la part des agents diplomatiques. Pour autant, la relation unissant l’agent au roi (cadre induit par le service) et au secrétaire d’État (cadre induit par la charge) est conçue, perçue et représentée par les acteurs comme un contrat, ce que rappellent Matthieu Gellard, Bertrand Haan et Jérémie Foa : « la relation de service est dite et vécue comme un contrat, celle-ci doit être librement consentie et n’est jamais fixée par écrit » (« Introduction », dans Servir le prince, Servir la République en temps de guerres civiles…, op. cit., p. 8). Cette assertion souligne avec justesse, l’essentielle distinction entre la sujétion et le service. Cela est d’autant plus valable pour comprendre les liens qui peuvent se nouer entre un agent diplomatique et le secrétaire d’État. La charge diplomatique et la conception de son exercice conduisent en effet le diplomate à nouer avec ce dernier une relation, par laquelle l’un et l’autre s’engagent à servir le roi par l’intermédiaire de leur charge. Cette relation devient alors un moyen d’exécution du service du roi et rend possible toute rupture de cette loyauté contractuelle, créée par la seule obtention d’une charge diplomatique, à l'initiative de l’agent ou du secrétaire d’État (correspondance directe avec le roi, rappel, etc.) sans jamais que cela n’entraîne une rupture du service au roi.
+ 
+21 [#bodyftn21] Sharon Kettering, Patrons, Brokers and Clients in Seventeenth-Century France, Oxford, Oxford University Press, 1986, p. 85.
+ 
+22 [#bodyftn22] Voir parmi les études récentes sur ce sujet, Damien Fontvieille, Le clan Bochetel. Au service de la couronne de France (xve - xviie siècle), Paris, École des chartes, 2022.
+ 
+23 [#bodyftn23] Si Brulart de Berny est également l’oncle de Puisieux, ce dernier n’a pas encore obtenu la survivance des Affaires étrangères lors de l’envoi de Berny à Bruxelles.
+ 
+24 [#bodyftn24] Archives nationales [désormais AN], MC/ET/CV/168, cession par Henri de Lorraine, duc de Guise, des seigneuries de Chevillon et La Lande en faveur de Péricard, 16 avril 1600. Par cette cession, Péricard obtient la haute justice sur ces terres « en consideration des recommandations et singuliers services qu’il auroit faict tant à feu monseigneur le duc de Guise son pere qu’à luy » (ibid.).
+ 
+25 [#bodyftn25] Soutien de Marie de Médicis depuis la régence, la maison de Guise rejoint la coalition des Grands à l’été 1616 : Nicolas Le Roux, « Des bourgeois et des princes. Paris, 1614-1617 », Dix-septième siècle, vol. 276, no 3, 2017, p. 463-476. Dans les jours suivants, la reine-mère ne cesse de chercher le ralliement des princes, dont les Guise, par le biais de diverses gratifications, bénéfices et autres tractations : Hélène Duccini, Concini. Grandeur et misère du favori de Marie de Médicis, Paris, Albin Michel, 1991, p. 234-241. Il est fort probable que l’ambassade attribuée à Péricard ait constitué l’une des contreparties au ralliement des Guise qui reviennent à Paris dès le 24 septembre 1616, soit quelques jours après la rédaction de l’instruction de Péricard.
+ 
+26 [#bodyftn26] Pour les agents français dans l’Empire, la correspondance principale est entretenue, pour la période étudiée, avec le secrétaire d’État des Affaires étrangères. Les dépêches adressées au roi sont ponctuelles, adressées sous couvert du secrétaire d’État et surtout succinctes. Pour les années 1617-1624 par exemple, elles représentent moins de 8 % de la correspondance totale adressée par les agents au pouvoir royal : Camille Desenclos, Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624), thèse de doctorat, histoire moderne, École nationale des chartes, 2014, tome 1, p. 251. Seule exception, Jacques Bongars entretient une correspondance avec le roi et le secrétaire d’État (voir notamment BnF, fr. 15577-15780 pour la correspondance active et fr. 7229 pour la correspondance passive). S’il y a un effet indéniable de chronologie, cette correspondance suivie avec le roi, y compris dans les années 1600, fait surtout suite à la pratique amorcée par Bongars dans les années 1580 au service du roi de Navarre.
+ 
+27 [#bodyftn27] Bien que la démarche procède de la démonstration attendue de fidélité à chaque changement de secrétaire d’État, les propos de Péricard n’en révèlent pas moins la nature du lien qui doit unir tout agent diplomatique au secrétaire d’État : « j’attens l’honneur de voz commandemens en cet ambassade qui ne peut subsister avec utilité pour le service du roy que par le soin qu’il vous plaira prendre de nous faire souvent part des commandements de Sa Majesté et des vostres que j’effectueray fidelement » (Archives diplomatiques [désormais Arch. dipl.], Correspondance politique [désormais CP], Pays-Bas 5, fol. 53, Péricard à Richelieu, 7 décembre 1616).
+ 
+28 [#bodyftn28] Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (1566-1636), Genève, Droz, 2010, p. 122.
+ 
+29 [#bodyftn29] Jérémie Ferrer-Bartomeu, L’État à la lettre. Écrit politique et société administrative en France au temps des guerres de Religion (vers 1560-vers 1620), Ceyzérieu, Champ Vallon, 2022, p. 200.
+ 
+30 [#bodyftn30] BnF, Clairambault 368, fol. 81, Du Maurier à Villeroy, 22 août 1616.
+ 
+31 [#bodyftn31] Du Maurier est alors menacé par la délicate situation aux Provinces-Unies et par les nombreuses tractations opérées à la cour et ayant, notamment, conduit à la disgrâce des Brulart et à la mise à l’écart de Villeroy. Par ailleurs, en poste depuis trois années, son rappel pourrait aisément intervenir comme il en est de coutume et est même espéré par quelques aspirants à l’ambassade auprès des Provinces-Unies (Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (1566-1636), Genève, Droz, 2010, p. 122).
+ 
+32 [#bodyftn32] En juillet 1616, ordre est donné aux ambassadeurs de ne plus correspondre avec Puisieux mais uniquement avec Villeroy (BnF, Clairambault 367, fol. 293, Baugy à Villeroy, 23 juillet 1616) ; quelques semaines plus tard, Puisieux est contraint de résigner la survivance que Villeroy lui avait accordée (BnF, NAF 7125, fol. 301, lettre de provision de la charge de secrétaire d’État en faveur de Mangot, 9 août 1616). La confiance du roi est ainsi clairement retirée à Puisieux. Inversement, aucune action similaire n’est intentée contre Villeroy avec lequel rien n’interdit donc une correspondance.
+ 
+33 [#bodyftn33] Du Maurier rappelle que Jacques Aubéry, avocat du roi au parlement de Paris et lieutenant civil au Châtelet, dont « la memoire vous est pretieuse » lui est affilié (BnF, Clairambault 367, fol. 266, Du Maurier à Mangot, 16 juillet 1616). Arrière-grand-oncle de Du Maurier, Jacques Aubéry est aussi le grand-oncle par alliance de Mangot.
+ 
+34 [#bodyftn34] BnF, Clairambault 368, fol. 111, Du Maurier à Mangot, 28 août 1616.
+ 
+35 [#bodyftn35] Arch. dipl., CP, Hollande 7, fol. 466, Du Maurier à Richelieu, 16 décembre 1616 ; cité par Claire Martin, Mémoires de Benjamin Aubéry du Maurier, op. cit., p. 122.
+ 
+36 [#bodyftn36] BnF, fr. 15957, fol. 199, Du Maurier à Villeroy, 4 mai 1617.
+ 
+37 [#bodyftn37] Claire Martin, Mémoires de Benjamin Aubéry du Maurier, op. cit., p. 123.
+ 
+38 [#bodyftn38] BnF, Clairambault 368, fol.239, Baugy à Mangot, 15 septembre 1616.
+ 
+39 [#bodyftn39] Arch. dipl., CP, Allemagne 5, fol. 248, Baugy à Richelieu, 24 décembre 1616.
+ 
+40 [#bodyftn40] Alors que Baugy se présentait comme le « tres humble et obeissant serviteur » en écrivant à Villeroy, il n’est plus que le « tres humble serviteur » lors de ses premières dépêches à Mangot. Il revient à la première formule lors du retour de Villeroy et l’adapte à sa correspondance avec Puisieux : « Vostre tres humble et obligé serviteur ».
+ 
+41 [#bodyftn41] Peu prestigieuse eu égard à l’éloignement géographique et au luxe mesuré de la cour impériale, la représentation française auprès de l’empereur se voit surtout exposée au début du xviie siècle à d’importantes difficultés diplomatiques. Nommés résidents et non ambassadeurs pour ne pas devoir céder la préséance à l’ambassadeur espagnol, les représentants français disposent d’un accès limité à l’empereur et à ses ministres et pèsent assez peu dans les décisions. La faible présence de Français à la cour impériale ou de passage diminuent d’autant le champ d’action des résidents français. De fait, en décembre 1623, Robert Arnauld d’Andilly, sieur de Pomponne, refuse la charge de résident sans apparemment susciter aucun mécontentement de la part du pouvoir royal (BnF, fr. 15923, fol. 238, Baugy à Puisieux, 13 décembre 1623).
+ 
+42 [#bodyftn42] BnF, fr. 15928, fol. 83, Sainte-Catherine à Villeroy, 18 mai 1617.
+ 
+43 [#bodyftn43] Cette lettre semble avoir été envoyée à l’ensemble du corps diplomatique alors en poste. Voir pour l’Espagne BnF, fr. 16117, fol. 5, Sennecey à Louis XIII, 8 mai 1617 ; pour l’Angleterre, BnF, fr. 15988, fol. 186, Desmaretz à Villeroy, 3 mai 1617.
+ 
+44 [#bodyftn44] BnF, fr. 15928, fol. 77, Baugy à Villeroy, 13 mai 1617.
+ 
+45 [#bodyftn45] Malgré la circulation de l’information à Venise avant l’arrivée du courrier royal, la prudence n’est pas de mise chez Charles Brulart, prieur de Léon qui se fend d’une longue diatribe contre Concini et, inversement, de louanges envers Puisieux (BnF, fr. 16085, fol. 405, Léon à Puisieux, 10 mai 1617). Cette dépêche est cependant envoyée, le lendemain de la réception du courrier royal ; surtout ces déclarations doivent être mise en regard des liens familiaux étroits entre Léon et Puisieux (le père de Puisieux, Sillery, est son cousin germain).
+ 
+46 [#bodyftn46] BnF, fr. 16125, fol. 317, Péricard à Villeroy, 27 avril 1617. Seul l’ambassadeur d’Espagne reste silencieux sur le retour du précédent gouvernement et se contente de justifier l’action royale auprès du roi d’Espagne (BnF, fr. 16117, fol. 7, Sennecey à Villeroy, 8 mai 1617). Contrairement à Péricard néanmoins, Sennecey, fils d’un ancien ligueur, ne semble pas avoir été inquiété. Celui-ci a immédiatement exprimé sa fidélité au roi, tandis que ses qualités ont pu être préalablement éprouvées par Villeroy comme par Puisieux, ayant obtenu sa charge en novembre 1615.
+ 
+47 [#bodyftn47] BnF, fr. 17891, fol. 55, Péricard à Louis XIII, 3 mai 1617.
+ 
+48 [#bodyftn48] Péricard lui-même interprète cette rétrogradation comme une sanction à son égard (BnF, fr. 16125, fol. 317, Péricard à Villeroy, 27 avril 1617).
+ 
+49 [#bodyftn49] BnF, fr. 16131, fol. 176, Péricard à Puisieux, 12 octobre 1617.
+ 
+50 [#bodyftn50] L’intelligence avec l’étranger, et notamment avec des ministres des Archiducs, faisant partie des motifs d’accusation envers Concini, il convient de ne pas porter d’accusation envers les Archiducs qui, eux-mêmes, ont autorisé un certain nombre de levées afin de soutenir le roi face à la révolte des Grands. Une dissociation s’opère alors entre le soutien apporté par les Archiducs et les demandes formulées par Concini (y compris dans le cadre de son gouvernement de Normandie). Immédiatement après l’arrestation et exécution de Concini, Péricard est donc chargé de faire état de la persistance de l’amitié du roi mais aussi de remercier, au nom de ce dernier, les Archiducs, pour le soutien passé (BnF, fr. 17891, fol. 55, Péricard à Louis XIII, 3 mai 1617).
+ 
+51 [#bodyftn51] Pour l’Empire, on peut notamment penser à Urbain de Laval, seigneur de Boisdauphin, principal lieutenant du duc de Mercoeur, envoyé à plusieurs reprises dans l’Empire comme ambassadeur extraordinaire entre 1599 et 1603.
+ 
+52 [#bodyftn52] BnF, fr. 17300, fol. 216, déposition de Jean de Péricard lors de l’information faite par Pierre Michon et Jean Courtin sur la mort des duc et cardinal de Guise, 28 mars 1589, copie.
+ 
+53 [#bodyftn53] Jean-Marie Constant, Les Guise, Paris Hachette, 1984, p. 11.
+ 
+54 [#bodyftn54] BnF, fr. 16131, fol. 51, Péricard à Puisieux, 30 mai 1617.
+ 
+55 [#bodyftn55] Chapitre du procez faict à la memoire de Conchino Conchini nagueres mareschal de France et à Leonora Galigai sa vefve, s.l., s.n., [1617]. Celui-ci est reproduit dans le Mercure françois (t. 4 : 1615-1617).
+ 
+56 [#bodyftn56] Sur le procès de Concino Concini et Léonora Galigai, voir Hélène Duccini, Concini. Grandeur et misère du favori de Marie de Médicis, Paris, Albin Michel, 1991, p. 362-394 et Jean-François Dubost, « Rendre compte d’un assassinat politique : la mort du maréchal d’Ancre ou l’inverse dans l’ordre des raisons », Dix-septième siècle, vol. 276, no 3, 2017, p. 399-428.
+ 
+57 [#bodyftn57] Concini ayant été jugé coupable de crime de lèse-majesté et haute trahison, les membres de son gouvernement et plus largement ceux ayant permis la conduite de sa politique sont également suspects. Ainsi, Barbin, surintendant des finances, est arrêté en avril 1617 et banni à perpétuité l’année suivante (H. Duccini, Concini, op. cit., p. 362-363).
+ 
+58 [#bodyftn58] Sur le détail des accusations formulées à l’encontre de Concini mais aussi sur le contenu de ces pièces, voir ibid., p. 370.
+ 
+59 [#bodyftn59] Chapitre du procez, op. cit., p. 4-5. Sans exclure l’hypothèse d’une correspondance parallèle à la correspondance avec le roi et le secrétaire d’État, l’absence de copie dans le registre de Brasset (BnF, fr. 17891) de ces lettres ne constitue nullement une tentative de dissimulation, leur report étant non systématique – environ la moitié des dépêches adressées au pouvoir royal seulement.
+ 
+60 [#bodyftn60] Janna Tytgat, Ferdinand de Boisschot, een ambassadeur van de Aartshertogen te Parijs, 1617-1620, mémoire de maîtrise, histoire moderne, Université de Gand, 2009, p. 58.
+ 
+61 [#bodyftn61] BnF, fr. 16131, fol. 94, Péricard à Puisieux, 29 juin 1617.
+ 
+62 [#bodyftn62] Kevin Dekoster, Ambassadeur Jean de Péricard in Brussel (1616-1621). Een studie van de Frans-Habsburgse betrekkingen ten tijde van de aarsthertogen Albrecht en Isabella, mémoire de master, Université de Gand, 2016, p. 71.
+ 
+63 [#bodyftn63] BnF, fr. 16131, fol. 88, Péricard à Puisieux, 22 juin 1617.
+ 
+64 [#bodyftn64] Sur l’articulation entre fidélité et conscience, voir Dante Fedele, Naissance de la diplomatie moderne (xiiie -xviie siècle). L’ambassadeur au croisement du droit, de l’éthique et de la politique, Baden-Baden, Nomos, 2017, p. 741-745. Les exemples reposent néanmoins uniquement sur la mise en œuvre de commandements royaux injustes, contraires à la conscience du diplomate, et non sur l’éventuelle distorsion entre les commandements transmis par un ministre et l’intention ou l’intérêt du roi.
+ 
+65 [#bodyftn65] Cette articulation entre fidélité/obéissance et prudence/adaptation aux circonstance est d’autant plus délicate qu’elle repose sur la seule appréciation du diplomate. De fait, tout comme la fidélité et l’obéissance, la prudence constitue une qualité louée dans les traités d’art diplomatique : Dante Fedele, Naissance de la diplomatie moderne…, op. cit., p. 709-720.
+ 
+66 [#bodyftn66] BnF, fr. 16131, fol. 98, Péricard à Puisieux, 7 juillet 1617.
+ 
+67 [#bodyftn67] BnF, fr. 16131, fol. 52, Péricard à [Villeroy], 24 mai 1617.
+ 
+68 [#bodyftn68] Ernest de Bouteiller, Eugène Heppe, Correspondance politique adressée au magistrat de Strasbourg par ses agents à Metz (1594-1683), Paris, Berger-Levrault, 1882, de Flavigny à Brünbach, 4 juillet 1617, p. 157. La lettre évoque uniquement l’existence d’une accusation portée par Leonora Galigai mais n’en développe pas le contenu.
+ 
+69 [#bodyftn69] BnF, fr. 16131, fol. 100, Péricard à Puisieux, 15 juillet 1617.
+ 
+70 [#bodyftn70] BnF, fr. 16131, fol. 103, Péricard à Puisieux, 17 juillet 1617.
+ 
+71 [#bodyftn71] Luigi de Staffani (éd.), La nunziatura di Francia del cardinale Guido Bentivoglio. Lettere a Scipione Borghese, Florence, Felice Le Monnier, 1863, t. 1, p. 192 et suivantes.
+ 
+72 [#bodyftn72] Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (1566-1636), Genève, Droz, 2010, p. 129-130.
+ 
+73 [#bodyftn73] Janna Tytgat, Ferdinand de Boisschot, een ambassadeur van de Aartshertogen te Parijs, 1617-1620, mémoire de maîtrise, histoire moderne, Université de Gand, 2009, p. 58.
+ 
+74 [#bodyftn74] Lucienne van Meerbeeck (éd.), Correspondance des nonces Gesualdo, Morra, Sanseverino avec la Secrétairerie d’État pontificale (1615-1621), Bruxelles, Palais des Académies, 1937, p. 153, Gesualdo à Borghese, 15 juillet 1617.
+ 
+75 [#bodyftn75] Sur la multiplicité des liens (fidélité, clientélisme, amitié, etc.) entretenus par les ambassadeurs et leur rôle en contexte diplomatique, voir notamment Hillard von Thiessen, « Diplomatie von “type ancien”. Überlegungen zu einem Idealtypus des frühneuzeitlichen Gesandtschaftswesens », dans Hillard von Thiessen, Christian Windler, Akteure der Außenbeziehungen. Netwerke und Interkulturalität im historischen Wandel, Cologne, Böhlau, 2010, p. 471-504 ; Sébastien Schick, Des liaisons avantageuses. Ministres, liens de dépendance et diplomatie dans le Saint-Empire romain germanique (1720-1760), Paris, Éditions de la Sorbonne, 2018.
+ 
+76 [#bodyftn76] Camille Desenclos, « Diplomate huguenot ou humaniste ? Le modèle de l’agent français auprès des princes protestants de l’Empire (1589-1620) », dans Indravati Félicité (dir.), L’Identité du diplomate (Moyen Âge – XIXe siècle) : métier ou noble loisir ?, Paris, Classiques Garnier, 2020, p. 31-44.
+ 
+77 [#bodyftn77] Camille Desenclos, « Au-delà de toute diplomatie : la constitution de réseaux parallèles protestants et érudits entre France et Empire au début du xviie siècle », Revue d’histoire du protestantisme, vol. 1, no 4, 2016, p. 531-553.
+ 
+78 [#bodyftn78] Camille Desenclos, « Loyaux serviteurs ou fidèles huguenots ? Servir le roi auprès des princes protestants de l’Empire (1589-1620) », dans Matthieu Gellard, Jérémie Foa, Bertrand Haan, Servir le prince en temps de guerre civile, Rennes, Presses universitaires de Rennes, 2024, p. 193-204 : https://doi.org/10.4000/books.pur.194341.
+ 
+79 [#bodyftn79] Alison D. Anderson, On the Verge of War: International Relations and the Jülich-Kleve Succession Crises, 1609-1614, Boston, Humanities Press, 1999, voir notamment p. 181-182.
+ 
+80 [#bodyftn80] BnF, fr. 4030, fol. 283, Marie de Médicis à Hotman, 27 mai 1614.
+ 
+81 [#bodyftn81] BnF, fr. 15926, fol. 179, Hotman à Puisieux, 29 juillet 1614 ; cité par Alison D. Anderson, On the Verge of War…, op. cit., p. 182.
+ 
+82 [#bodyftn82] BnF, fr. 15926, fol. 92, Hotman à Puisieux, 26 avril 1614.
+ 
+83 [#bodyftn83] Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 158, Plessen à Hotman, 17 février 1618.
+ 
+84 [#bodyftn84] Péricard et Du Maurier s’accusent régulièrement de partialité en faveur soit des catholiques soit des protestants, sans que ces accusations ne soient prises en compte par le secrétaire d’État qui utilise cette rivalité afin de créer une forte émulation entre les deux agents (Claire Martin (éd.), Mémoires de Benjamin Aubéry du Maurier : ambassadeur protestant de Louis XIII (1566-1636), Genève, Droz, 2010, p. 129-130).
+ 
+85 [#bodyftn85] Si Philippe-Louis de Neubourg ne s’est pas converti au catholicisme, contrairement à son fils, il a obtenu, dans cette crise, le soutien de la maison de Habsbourg, tandis que l’électeur de Brandebourg constitue, traditionnellement, l’un des alliés du roi de France, a fortiori depuis l’accession au trône de Henri IV.
+ 
+86 [#bodyftn86] Ibid., p. 57.
+ 
+87 [#bodyftn87] Le fils aîné de Jean Hotman, Robert, est gentilhomme ordinaire du duc de Rohan (AN, Y 165, insinuation du contrat de mariage entre Robert de Hotman et Marie de La Taille, 9 mai 1621).
+ 
+88 [#bodyftn88] Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 142, Plessen à Hotman, 25 septembre 1617.
+ 
+89 [#bodyftn89] Arch. dipl., CP, Palatinat-Deux-Ponts 3, fol. 144, Plessen à Hotman, 25 octobre 1617.
+ 
+90 [#bodyftn90] Des quatre diplomates dans l’Empire suspectés, aucun n’obtient ensuite une nouvelle charge. D’autres facteurs que ces suspicions en sont néanmoins la cause, du moins principale. Bongars et Sainte-Catherine demandent à ne plus être en charge d’une résidence eu égard à leur âge. De même, Péricard étant âgé de 70 ans à fin de son ambassade, l’âge constitue certainement un facteur, bien que non mentionné dans les sources. Seul Hotman se voit, malgré ses demandes, privé de toute nouvelle charge.
+ 
+91 [#bodyftn91] En 1614, seuls deux postes accueillent des diplomates protestants : les Provinces-Unies avec Benjamin Aubéry du Maurier, et le Palatinat du Rhin avec Étienne de Sainte-Catherine. Progressivement, l’Angleterre et la Suisse ont en effet accueilli des diplomates français catholiques (Alexis Vuillez, Entre la Couronne et l’Évangile. Les diplomates protestants au service du roi de France (ca. 1530 – ca. 1630), thèse de doctorat, histoire moderne, Université Bourgogne Franche-Comté, 2023).
+ 
+92 [#bodyftn92] BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [décembre 1621], brouillon.
+ 
+93 [#bodyftn93] BnF, fr. 4114, fol. 219, Sainte-Catherine à Castille, [décembre 1621], brouillon. Ancien ambassadeur en Suisse, Pierre de Castille est alors contrôleur général des finances. Il est par ailleurs le gendre de Pierre Jeannin.
+ 
+94 [#bodyftn94] BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [décembre 1621], brouillon. Remplacé à sa demande en 1619 comme surintendant des finances par Henri de Schomberg, Jeannin siège toujours au Conseil et surtout demeure actif dans les affaires impériales, ses avis étant sollicités tant par le pouvoir royal que par les agents diplomatiques : Camille Desenclos, Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624), thèse de doctorat, histoire moderne, École nationale des chartes, 2014, t. 1, p. 93.
+ 
+95 [#bodyftn95] BnF, fr. 4114, fol. 216, Sainte-Catherine à La Gardie, [1626].
+ 
+96 [#bodyftn96] BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, [1621].
+ 
+97 [#bodyftn97] Cette possibilité est indirectement reconnue par Wicquefort qui comparant un ambassadeur quittant le service d’un prince, sans sa permission, à un gouverneur vendant sa place à l’ennemi, exclut de l’infidélité un changement de service, avec obtention préalable de la permission pour le faire : Abraham de Wicquefort, L’ambassadeur et ses fonctions, Cologne [lieu fictif], Pierre Marteau [éditeur fictif], rééd. 1715, p. 162.
+ 
+98 [#bodyftn98] Guillaume Posthumus Meyjes, Jean Hotman’s English Connection, Amsterdam, Koninklijke Nederlandse Akademie van Wetenschappen, 1990.
+ 
+99 [#bodyftn99] Dans un mémoire, probablement rédigé en 1617 et relatif à ses années passées au service du comte de Leicester, Hotman sollicite une gratification en récompenses de ses services, depuis 28 ou 30 ans en faveur de l’Angleterre (National Archives, SP84/79, fol. 115). Malheureusement, des investigations plus poussées n’ont pas pu être menées dans le cadre de cet article. Il semblerait néanmoins que, si la proximité entre Hotman et l’Angleterre est réelle depuis les années 1580 tout comme son appartenance à certaines clientèles anglaises, Hotman n’ait pas été au service du roi d’Angleterre, du moins depuis son entrée au service du roi de France en 1597 comme secrétaire de son oncle François de Mortefontaine, ambassadeur en Suisse, en 1597. Dans les quelques lettres adressées aux ambassadeurs anglais à Paris à la fin de la décennie 1610, Hotman propose ses services, rappelle son « ancien et fidele service » mais ne suggère nullement être alors au service du roi d’Angleterre ou de l’un de ses représentants (National Archives, SP78/68, fol. 59, Hotman à Lake, 30 mai 1618).
+ 
+100 [#bodyftn100] « Ne sçachant que c’est de trahison ny infidelité », BnF, fr. 16131, fol. 98, Péricard à Puisieux, 7 juillet 1617.
+Haut de page [#article-30748]
+ 
+ 
+
+## Pour citer cet article
+ 
+
+### Référence électronique
+ 
+ Camille Desenclos, « « Ne sçachant que c'est de trahison ny infidelité » : fidélités multiples et conflits de loyauté au sein de la diplomatie française dans le Saint-Empire (années 1590 - années 1620) », L’Atelier du Centre de recherches historiques [En ligne], 29 | 2024, mis en ligne le 03 juillet 2024, consulté le 04 octobre 2026. URL : http://journals.openedition.org/acrh/30748 ; DOI : https://doi.org/10.4000/11xj6
+Haut de page [#article-30748]
+ 
+ 
+
+## Auteur
+ 
+
+### Camille Desenclos [30753]
+ 
+ 
+ IDREF : https://idref.fr/187410100 [https://idref.fr/187410100]
+ 
+ VIAF : http://viaf.org/viaf/10153651729455782841 [http://viaf.org/viaf/10153651729455782841]
+ 
+ ISNI : https://isni.org/isni/000000046821016X [https://isni.org/isni/000000046821016X]
+ 
+ 
+L’autrice est maîtresse de conférences en histoire moderne à l’Université de Picardie Jules-Verne, membre du Centre d’histoire des sociétés, des sciences et des conflits (CHSSC, UPJV) et du Centre Jean-Mabillon (École nationale des chartes-PSL). Ses recherches portent sur la première modernité et s’articulent autour des relations entre la France et l’Empire, des pratiques quotidiennes de la diplomatie et de la cryptographie. Elle a contribué à plusieurs ouvrages collectifs dont récemment Servir le prince. Servir la République en temps de guerres civiles (dir. M. Gellard, B. Haan et J. Foa, Presses universitaires de Rennes, 2023) et Diplomatie et mobilités. Négocier l’étranger dans l’Europe moderne (XVIe-XVIIIe siècles) (dir. V. Martin et G Montègre, École française de Rome, 2024).
+
+E-Mail : camille [point] desenclos [arobase] u-picardie [point] fr
+Haut de page [#article-30748]
+ 
+ 
+
+## Droits d’auteur
+ 
+ [https://creativecommons.org/licenses/by-sa/4.0/]
+ 
+Le texte seul est utilisable sous licence CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/]. Les autres éléments (illustrations, fichiers annexes importés) sont susceptibles d’être soumis à des autorisations d’usage spécifiques.
+Haut de page [#article-30748]
+
+ 
+Sommaire [30733] - Document précédent [30735] - Document suivant [30758]
+
+ 
+ 
+ 
+
+# Navigation
+ 
+ 
+
+## Index
+ 
+ 
+Auteur [161]
+ 
+Mots-clés [166]
+ 
+ 
+ 
+ 
+
+## Numéros en texte intégral
+ 
+ 
+31 | 2025
+
+Les circonscriptions ecclésiastiques intra-diocésaines : cartographie et territoire de l’époque médiévale à nos jours [32465]
+ 
+30 | 2025
+
+Noblesse, terre, seigneuries : un bilan historiographique comparé [31931]
+ 
+29 | 2024
+
+Trahir : figures sociales de la déloyauté (XVIIe-XXe siècle) [30733]
+ 
+28 Bis | 2024
+
+L'Atelier Bis - Avec Dominique Julia [28761]
+ 
+28 | 2023
+
+L’histoire urbaine à l’épreuve des plaintes citadines (XVIIe-XXe siècles) [28406]
+ 
+27 | 2023
+
+Retour à l’horizon : historiographies du féodalisme [23229]
+ 
+26 | 2022
+
+Varia [26370]
+ 
+25 | 2022
+
+La Circulation de la parole dans les communautés religieuses (XIe-XVIIIe siècles) [26180]
+ 
+24 | 2022
+
+La formation professionnelle au Moyen Âge et à l'époque moderne: diversité et enjeux [25398]
+ 
+23 Bis | 2021
+
+L’Atelier Bis - 
+
+Hommage à Joseph Goy [23738]
+ 
+23 | 2021
+
+Les industries et l'administration de l'armement en France sous l'Occupation [23287]
+ 
+22 Bis | 2021
+
+L’Atelier Bis - Borders, Thresholds, Boundaries: A Social History of Categorizations [12036]
+ 
+22 | 2020
+
+Sous tutelle. Biens sans maître et successions vacantes dans une perspective comparative, XIIIe-XXe siècles [10893]
+ 
+21 Bis | 2020
+
+L’Atelier Bis - Frontières, seuils, limites : histoire sociale des catégorisations [10678]
+ 
+21 | 2019
+
+La Biographie revisitée. Études de cas et questions méthodologiques [9680]
+ 
+20 | 2019
+
+Varia [9594]
+ 
+19 Bis | 2018
+
+L’Atelier Bis - Les Règles de la parenté, entre histoire et anthropologie [8609]
+ 
+19 | 2018
+
+Moyen Âge et médiévalisme : les formes de la domination [8151]
+ 
+18 | 2018
+
+Experiments in Global History - a collaborative approach [8073]
+ 
+17 Bis | 2017
+
+L'Atelier Bis - Autour d'Alain Dewerpe [7955]
+ 
+17 | 2017
+
+Entre le ciel et la terre : cosmographie et savoirs à la Renaissance [7863]
+ 
+16 Bis | 2017
+
+L’Atelier Bis - Ecrire les écritures. Hommage à Daniel Fabre [7466]
+ 
+16 | 2016
+
+Histoire intellectuelle des émotions, de l’Antiquité à nos jours [6720]
+ 
+15 | 2015
+
+Sacrés liens ! Étudier les liens en Sciences sociales des Religions [6656]
+ 
+14 | 2015
+
+Autour du livre de François Hartog : Croire en l'histoire [6610]
+ 
+13 | 2015
+
+Suppliques. Lois et cas dans la normativité de l’époque moderne [6525]
+ 
+12 | 2014
+
+Vignes et vins au Moyen Âge. Pratiques sociales, économie et culture matérielle [5912]
+ 
+11 | 2013
+
+La querelle des corps. Acceptions et pratiques dans la formation des sociétés européennes [5207]
+ 
+10 | 2012
+
+L’Immaculée Conception : une croyance avant d’être un dogme, un enjeu social pour la Chrétienté [4244]
+ 
+09 | 2012
+
+Varia [4188]
+ 
+08 | 2011
+
+Varia [3468]
+ 
+07 | 2011
+
+L’historiographie aujourd’hui : défis, expériences, enjeux [2895]
+ 
+06 | 2010
+
+Faire l’anthropologie historique du Moyen Âge [1911]
+ 
+05 | 2009
+
+Les archives judiciaires en question [1412]
+ 
+04 | 2009
+
+Femmes, irréligion et dissidences religieuses (XIVe-XVIIIe siècles) [1204]
+ 
+03.2 | 2009
+
+Sources et documents : La Bible historiale [1830]
+ 
+03.1 | 2009
+
+Varia [403]
+ 
+02 | 2008
+
+Innovation, demande de sécurité et régulation étatique [433]
+ 
+01 | 2008
+
+Historiographies de la pensée politique médiévale [310]
+ 
+ 
+
+## Les compléments de l'Atelier du CRH
+ 
+ 
+ | 2025
+
+Les thèses du CRH depuis 2009 [3703]
+ 
+ | 2023
+
+Rapport d'activité 2017-2022 [28903]
+ 
+ | 2022
+
+Les Enquêtes Collectives du CRH [26164]
+ 
+ | 2017
+
+Les archives des Cahiers du CRH [26168]
+ 
+ 
+
+## Tous les numéros [246]
+ 
+ 
+ 
+
+## Présentation
+ 
+ 
+Soumettre un article à L’Atelier du Centre de recherches historiques [353]
+ 
+ 
+
+## Informations
+ 
+ 
+Contact [359]
+ 
+Mentions légales et Crédits [360]
+ 
+Politiques de publication [http://journals.openedition.org/acrh?page=informations]
+ 
+ 
+ 
+ 
+
+## Suivez-nous
+ 
+ 
+ Flux RSS [http://journals.openedition.org/acrh/backend]
+ 
+ 
+ 
+ 
+
+## Lettres d’information
+ 
+ 
+La Lettre d’OpenEdition [http://newsletter.openedition.org]
+ 
+ 
+ 
+ 
+
+## Affiliations/partenaires
+ 
+ 
+ [http://crh.ehess.fr/]
+ 
+ [https://doaj.org/toc/1760-7914]
+ 
+ [http://journals.openedition.org/]
+ 
+ 
+
+ 
+ 
+ISSN électronique 1760-7914
+ 
+Voir la notice dans le catalogue OpenEdition [https://catalogues.openedition.org/journals/3295] 
+ 
+Plan du site [http://journals.openedition.org/acrh/?page=map] – Mentions légales et Crédits [360] – Flux de syndication [http://journals.openedition.org/acrh/?page=backend]
+ 
+CGU d’OpenEdition Journals [https://journals.openedition.org/13280] – Politique de confidentialité [https://www.openedition.org/19362] – Gestion des cookies [https://www.openedition.org/37235] – Signaler un problème [https://www.openedition.org/41101]
+ 
+Nous adhérons à OpenEdition [http://journals.openedition.org/] – Édité avec Lodel [http://www.lodel.org/] – Accès réservé [http://journals.openedition.org/acrh/lodel/]
+ 
+
+                   
+
+ 
+ 
+ 
+   
+    Rechercher dans OpenEdition Search 
+Vous allez être redirigé vers OpenEdition Search
+  
+  Dans tout OpenEdition 
+ 
+   Dans L’Atelier du Centre de recherches historiques 
+ Rechercher   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+   Français  [#] 
+ 
+English [/acrh/30748?lang=en]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Partager   [#] 
+ 
+ Facebook [https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjournals.openedition.org%2F%2Facrh%2F30748&title=%C2%AB%C2%A0Ne+s%C3%A7achant+que+c%27est+de+trahison+ny+infidelit%C3%A9%C2%A0%C2%BB%C2%A0%3A+fid%C3%A9lit%C3%A9s+multiples+et+conflits+de+loyaut%C3%A9+au+sein+de+la+diplomatie+fran%C3%A7aise+dans+le+Saint-Empire+%28ann%C3%A9es+1590+-+ann%C3%A9es+1620%29] 
+ 
+ Twitter [http://twitter.com/share?text=%C2%AB%C2%A0Ne+s%C3%A7achant+que+c%27est+de+trahison+ny+infidelit%C3%A9%C2%A0%C2%BB%C2%A0%3A+fid%C3%A9lit%C3%A9s+multiples+et+conflits+de+loyaut%C3%A9+au+sein+de+la+diplomatie+fran%C3%A7aise+dans+le+Saint-Empire+%28ann%C3%A9es+1590+-+ann%C3%A9es+1620%29&url=https%3A%2F%2Fjournals.openedition.org%2F%2Facrh%2F30748&via=OpenEditionActu] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ">   [/] 
+ 
+ 
+    
+ 
+  
+ 
+ Accueil [https://journals.openedition.org] 
+ 
+ Catalogue des 676 revues [https://catalogues.openedition.org/journals] 
+ 
+   OpenEdition Search   [javascript:;] 
+ 
+ 
+  Tout OpenEdition   
+ 
+ 
+ 
+ 
+ 
+  
+ 
+
+ 
+   Français  
+ 
+English [/acrh/30748?lang=en]
+ 
+ 
+ Portail de ressources électroniques en sciences humaines et sociales 
+ OpenEdition [https://www.openedition.org] 
+ Nos plateformes 
+ OpenEdition Books [https://books.openedition.org] OpenEdition Journals [https://journals.openedition.org] Hypotheses [https://hypotheses.org] Calenda [https://calenda.org] 
+Bibliothèques et institutions
+ OpenEdition Freemium [https://www.openedition.org/14043] 
+ Nos services 
+ OpenEdition Search [https://search.openedition.org] La lettre d'OpenEdition [https://newsletter.openedition.org] 
+ Suivez-nous 
+    [https://www.facebook.com/openedition]    [https://twitter.com/OpenEditionActu]   [https://www.openedition.org/backend] 
+ 
+  
+ 
+ 
+    OpenEdition Books                      Calenda                    Hypothèses                OpenEdition Journals                         OpenEdition                            OpenEdition Search

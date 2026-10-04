@@ -1,0 +1,766 @@
+Navigation [#nav] – Plan du site [http://journals.openedition.org/trajectoires/?page=map]
+ 
+ 
+ 
+
+#  Trajectoires [http://journals.openedition.org/trajectoires] 
+ 
+ Revue de la jeune recherche franco-allemande 
+ 
+ 
+ 
+ 
+Accueil [index.html]Numéros [55]7 [1073]Perspectives [1075]Enjeux et perspectives de la repr...
+ 
+ 
+ 
+ 
+  
+    Chercher 
+  
+ 
+ 
+ 
+Sommaire [1073] - Document précédent [1077] - Document suivant [1214]
+ 
+ 
+7 | 2013
+
+La condition animale [1073]
+ 
+ 
+Perspectives
+ 
+ 
+
+# Enjeux et perspectives de la représentation diplomatique française dans le Saint-Empire au début du XVIIe siècle
+ 
+ 
+ Camille Desenclos
+ 
+ 
+https://doi.org/10.4000/trajectoires.1227 [https://doi.org/10.4000/trajectoires.1227]
+ 
+ 
+ 
+Résumé [#abstract] | Index [#entries] | Plan [#toc] | Texte [#text] | Bibliographie [#bibliography] | Notes [#notes] | Citation [#quotation] | Auteur [#authors]
+ 
+ 
+
+## Résumés
+ 
+Français [#abstract-1227-fr] Deutsch [#abstract-1227-de] 
+ 
+ 
+La présence diplomatique française dans l'Empire doit faire face à plusieurs difficultés au début du XVIIe siècle : identifier et hiérarchiser des acteurs multiples, ainsi que maîtriser un vaste ensemble de territoires. Pour faire face à ces enjeux, la diplomatie française doit s'adapter dans le choix de ses agents et même dans sa manière d'exercer. Les princes eux-mêmes deviennent de véritables relais diplomatiques en fonction de leur importance et rôle dans l'Empire ou pour la politique étrangère française. Les choix de représentation sont alors dictés par les impératifs de la politique étrangère et des zones d'action et d'influence (la cour impériale et l'axe rhénan) sont ainsi mises en évidence. C'est au sein de ces zones que les agents doivent agir, soit directement, soit par le biais de réseaux parallèles d'information constitués par leur soin.
+ 
+ 
+ 
+Die diplomatische Vertretung Frankreichs im Heiligen Römischen Reich musste verschiedene Schwierigkeiten bewältigen: die Identifizierung und Hierarchisierung der verschiedenen Akteure, sowie die Verwaltung eines weitläufigen territorialen Ensembles. Daher muss die französische Diplomatie sich in der Auswahl ihrer Repräsentanten und in deren Ausübung an diese Zielsetzung anpassen. Die Fürsten selbst werden entsprechend ihrer Rolle im Reich oder ihrer Bedeutung für die französische Außenpolitik als diplomatische Vermittler eingesetzt. Die Vertretungsentscheidungen werden durch die Imperativen der Außenpolitik diktiert. Auf diese Weise bilden sich Handlungsfelder und Einflusszonen (Kaiserhof und Rheingebiet) heraus, in denen die Akteure direkt oder über die von ihnen gebildeten parallelen Informationsnetzwerke tätig werden.
+ 
+Haut de page [#article-1227]
+ 
+ 
+
+## Entrées d’index
+ 
+ 
+
+### Mots-clés : 
+diplomatie [1228], relations extérieures [1229]
+ 
+ 
+
+### Géographique : 
+Allemagne [240], France [239]
+ 
+ 
+
+### Chronologique : 
+Saint-Empire romain germanique [9336], 17e siècle [1231]
+ 
+ 
+
+### Schlagwörter: 
+Deutschland [672], Frankreich [649], Geschichte [312], 1595-1624 [1232], Außenpolitik [1233], Diplomatie [1234]
+Haut de page [#article-1227]
+ 
+ 
+
+## Plan
+ 
+Place et spécificité de l'Empire dans le système diplomatique français [#tocto1n1]
+ 
+La diplomatie par la lettre [#tocto1n2]
+ 
+Gérer l'étendue territoriale, l'informateur comme prolongement de l'agent diplomatique [#tocto1n3]
+Haut de page [#article-1227]
+ 
+ 
+
+## Texte intégral
+ 
+PDF [./pdf/1227] Partager par e-mail [                mailto:?subject=Enjeux%20et%20perspectives%20de%20la%20repr%C3%A9sentation%20diplomatique%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20du%20XVIIe%20si%C3%A8cle&body=Enjeux%20et%20perspectives%20de%20la%20repr%C3%A9sentation%20diplomatique%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20du%20XVIIe%20si%C3%A8cle%20%0ATrajectoires%20%0Ahttp%3A%2F%2Fjournals.openedition.org%2Ftrajectoires%2F1227%20%0A%0ALa%20pr%C3%A9sence%20diplomatique%20fran%C3%A7aise%20dans%20l%27Empire%20doit%20faire%20face%20%C3%A0%20plusieurs%20difficult%C3%A9s%20au%20d%C3%A9but%20du%20XVIIe%20si%C3%A8cle%C2%A0%3A%20identifier%20et%20hi%C3%A9rarchiser%20des%20acteurs%20multiples%2C%20ainsi%20que%20ma%C3%AEtriser%20un%20vaste%20ensemble%20de%20territoires.%20Pour%20faire%20face%20%C3%A0%20ces%20enjeux%2C%20la%20diplomatie%20fran%C3%A7aise%20doit%20s%27adapter%20dans%20le%20choix%20de%20ses%20agents%20et%20m%C3%AAme%20dans%20sa%20mani%C3%A8re%20d%27exercer.%20Les%20princes%20eux-m%C3%AAmes%20deviennent%20de%20v%C3%A9ritables%20relais%20diplomatiques%20en%20fonction%20de%20leur%20importance%20et%20r%C3%B4le%20dans%20l%27Empire%20ou%20pour%20la%20politique%20%C3%A9tr...%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Camille%20Desenclos%2C%20%C2%AB%20Enjeux%20et%20perspectives%20de%20la%20repr%C3%A9sentation%20diplomatique%20fran%C3%A7aise%20dans%20le%20Saint-Empire%20au%20d%C3%A9but%20du%20XVIIe%20si%C3%A8cle%20%C2%BB%2C%20%20Trajectoires%20%5BEn%20ligne%5D%2C%207%20%7C%202013%2C%20mis%20en%20ligne%20le%2018%20d%C3%A9cembre%202013%2C%20consult%C3%A9%20le%2004%20octobre%202026.%20URL%20%3A%20http%3A%2F%2Fjournals.openedition.org%2Ftrajectoires%2F1227%20%3B%20DOI%20%3A%2010.4000%2Ftrajectoires.1227%20%0A%20%20%20%20%20%20%20%20]
+ 
+ 
+ 
+ 
+1 Reinhard, Blockmans, Genet 1996.
+ 
+2 Un numéro de la revue Trivium a été consacré entièrement à cette notion de culture politique (Trivi (...) [#ftn2]
+ 
+3 Le concept politique dépasse alors le simple cadre de l'État et de ses institutions et le regard ét (...) [#ftn3]
+ 
+ 
+1L'étude de la diplomatie a longtemps été en disgrâce au sein de l'historiographie européenne, souvent réduite à une étude institutionnelle des relations entre États dans la tradition rankéenne (Triepel, 1939). Les recherches récentes sur la construction de l'État moderne1 [#ftn1] et l'apparition, dans les années 1990, du concept de culture politique (Rohe, 1990) ont permis une nouvelle appréhension de la structure diplomatique2 [#ftn2] : structure communicative ou ensemble de productions, d'interprétations et de significations3 [#ftn3]. Témoignant de ce renouveau, les études germanophones se consacrent désormais à la seule diplomatie par le biais de méthodologies innovantes : étude au croisement de la diplomatie et de la Landesgeschichte (Matzke, 2001), approche interdisciplinaire du monde des diplomates (Droste, 2006), étude acteur-centrée mettant en valeur l'ampleur d'un réseau (Kohlndorfer-Fries, 2009 ; Thiessen, 2010).
+ 
+ 
+ 
+ 
+4 Pour preuve, la grande majorité des études commence en 1624 avec l'arrivée au pouvoir de Richelieu. (...) [#ftn4]
+ 
+ 
+2Ce renouveau historiographique reste cependant circonscrit à l'espace germanophone en ce qui concerne l'histoire du Saint-Empire. Parallèlement, les premières années du règne de Louis XIII continuent d'être ignorées par les historiens d'un côté comme de l'autre du Rhin. La politique étrangère de la France, sous la houlette de Pierre Brûlart, marquis de Puisieux et secrétaire d'État des Affaires étrangères (1617-1624), est considérée comme terne ou inexistante depuis plus d'un siècle4 [#ftn4]. L'enjeu d'une étude de la représentation diplomatique de la France dans l'Empire au début du XVIIe siècle est donc double : combler cette lacune et poursuivre le renouveau historiographique allemand à l'échelle française. Au-delà de l'étude classique de la diplomatie, il s'agit d'étudier la politique extérieure et ses moyens afin de retrouver le sens de l'action diplomatique française dans le contexte troublé des premières années de la guerre de Trente Ans. La première étape d'une telle étude consiste à comprendre le système de représentations sur lequel la politique extérieure de la France se fonde.
+ 
+ 
+ 
+ 
+5 Voir Jean-François Noël qui offre une bonne synthèse de l'histoire et de la constitution du Saint-E (...) [#ftn5]
+ 
+6 Pays-Bas et Lorraine exceptés, l'Empire couvre approximativement l'ensemble des territoires actuels (...) [#ftn6]
+ 
+ 
+3Par essence, le Saint-Empire est un territoire complexe car morcelé et sans souveraineté unifiée. Il demeure, au début du XVIIe siècle, un ensemble de nature féodale5 [#ftn5], constitué de principautés pour lesquelles l'empereur donne l'investiture. Au sein de celles-ci, divers degrés d'appartenance doivent être distingués : les pays patrimoniaux de l'empereur sur lesquels il exerce une pleine souveraineté (Autriche intérieure et extérieure), les principautés et villes souveraines dont il est le suzerain, les principautés dont il partage la suzeraineté avec un autre souverain (Pays-Bas espagnols et Lorraine). Loin des États centralisés habituels, l'Empire représente un véritable enjeu pour la diplomatie française : identifier et hiérarchiser des acteurs multiples et protéiformes, maîtriser un territoire vaste et non unifié6 [#ftn6]. 
+ 
+ 
+ 
+ 
+7 L'étude de la représentation de l'Empire en France au début du XVIIe siècle nécessiterait une étude (...) [#ftn7]
+ 
+8 Guido Braun cite à ce sujet l'abbé Courtalon – « Les Alemans nous reprochent, avec raison, notre ig (...) [#ftn8]
+ 
+ 
+4L'exercice diplomatique nécessite une connaissance approfondie des pays concernés afin d'en comprendre les enjeux et y adapter sa politique étrangère7 [#ftn7]. Pourtant, l'opinion commune veut que la France n'ait pas été capable, à l'époque moderne, de comprendre l'Empire et son fonctionnement8 [#ftn8]. L'étude de la représentation française dans l'Empire témoigne d'une réelle volonté du roi et de son gouvernement de maîtriser un tel territoire et d'y étendre son influence. Une véritable adaptation aux spécificités de l'Empire peut s'observer au sein du système diplomatique français : établissement de correspondances directes avec les autres souverains ou recours à des informateurs.
+ 
+ 
+
+# Place et spécificité de l'Empire dans le système diplomatique français [#tocfrom1n1]
+ 
+ 
+ 
+9 Si des ambassades extraordinaires envoyées pour une négociation précise et ponctuelle (alliance pol (...) [#ftn9]
+ 
+10 Cette dernière résidence n'est cependant pas fixe. Le prince objet de la résidence (prince palatin, (...) [#ftn10]
+ 
+11 Respectivement 42 000 livres par an pour celui de Rome et 18 000 pour celui de Venise. 
+ 
+12 En 1612, les résidents auprès de l'empereur et des princes allemands reçoivent respectivement 6 000 (...) [#ftn12]
+ 
+13 Si un ambassadeur écrit également des dépêches autographes, même en disposant d'un secrétaire, cell (...) [#ftn13]
+ 
+14 L'agent diplomatique n'est pas gratifié du même titre selon l'importance du souverain ou plus large (...) [#ftn14]
+ 
+ 
+5Le nombre de représentations diplomatiques permanentes françaises est encore faible au début du XVIIe siècle9 [#ftn9] avec douze représentants en 1610. L'Empire fait l'objet d'une représentation numériquement équivalente à celle en Italie avec deux représentants – auprès de l'empereur et des princes protestants10 [#ftn10] –, pourtant leur nature et prestige diffèrent. Les représentants auprès du pape et à Venise bénéficient du titre d'ambassadeur et font partie des agents jouissant des gages les plus confortables11 [#ftn11]. Les représentants dans l'Empire, au contraire, sont qualifiés de simples résidents et reçoivent des gages parmi les moins élevés12 [#ftn12], témoignage sinon du caractère moins fastueux des cours impériales, du moins de l'importance moindre accordée à ces représentations en terme de politique étrangère. De fait, les résidences diplomatiques dans l'Empire sont parées de peu de lustre, avec une suite réduite. Si aucune description de ces suites n'a été retrouvée, le caractère systématiquement autographe des dépêches témoigne a minima de l'absence d'un secrétaire d'ambassade13 [#ftn13], véritable assistant de l'agent. L'envoi de résidents et non d'ambassadeurs14 [#ftn14] ne relève cependant pas d'une volonté française mais impériale. Accordant la préséance à l'Espagne aux dépens de la France, reléguée à la seconde place, l'empereur porte atteinte au prestige royal de la France personnifié par l'agent diplomatique. Envoyer un résident, et non un ambassadeur, permet de ne pas s'exposer à une subordination à l'Espagne dans le cérémonial diplomatique.
+ 
+ 
+ 
+ 
+15 L'établissement d'une résidence française auprès de l'empereur peut ainsi être interprétée comme un (...) [#ftn15]
+ 
+ 
+6Le choix des lieux de résidence constitue une véritable difficulté et indique clairement l'orientation prise par la politique étrangère. Si huit princes sont prédominants dans l'Empire – l'empereur, les six autres électeurs et le duc de Bavière –, huit représentations ne peuvent pas être entretenues, notamment pour des raisons de coûts. Surtout, la France n'a aucun intérêt à entretenir des relations avec des princes sans que cela ne serve ses intérêts politiques et diplomatiques15 [#ftn15].
+ 
+ 
+ 
+ 
+16 Cette représentation n'en est pas moins éphémère. Il n'est plus trace en 1632 d'agent diplomatique (...) [#ftn16]
+ 
+ 
+7Les résidences auprès des princes protestants témoignent de cette activité politique. Une première résidence (1595-1610) est mise en place pour mettre en place une alliance, une seconde (1609-1614) pour défendre les intérêts protestants dans la crise de succession de Clèves et enfin une troisième (1612-1620) pour renforcer les liens avec l'électeur palatin, chef de file de l'Union évangélique. De la même manière, la représentation mise en place en Bavière en 1624 apparaît comme la conclusion logique du rapprochement amorcé dès 1622 afin de constituer un tiers parti catholique face à la maison de Habsbourg16 [#ftn16]. 
+ 
+ 
+ 
+ 
+17 Guillaume Ancel puis Nicolas de Baugy se succèdent entre 1589 et 1623, exerçant respectivement leur (...) [#ftn17]
+ 
+18 Bien que l'électorat du Brandebourg ne se trouve pas sur l'axe rhénan, les prétentions de l'électeu (...) [#ftn18]
+ 
+19 Par sa proximité avec la France, mais également avec des territoires espagnols, notamment des Pays- (...) [#ftn19]
+ 
+ 
+8Cette adaptation aux circonstances entraîne une certaine instabilité dans les représentations. La résidence auprès de l'empereur, au contraire, ne semble pas souffrir, officiellement, des relations difficiles entre Bourbon et Habsbourg. La longévité des résidents à leur poste17 [#ftn17] offre même un gage supplémentaire de stabilité. Les résidences auprès des princes protestants, au contraire, se déroulent à chaque fois auprès de princes différents : les princes unis, les duc Neubourg et électeur de Brandebourg18 [#ftn18], l'électeur palatin, puis le comte de Hanau. Malgré cette disparité, toutes se concentrent autour de l'axe rhénan, témoignage de l'importance de cette région pour la politique étrangère française19 [#ftn19].
+ 
+ 
+
+# La diplomatie par la lettre [#tocfrom1n2]
+ 
+ 
+ 
+20 Électorat ecclésiastique le plus riche et le plus influent, il fait l'objet à chaque nouvel électeu (...) [#ftn20]
+ 
+ 
+9L'agent diplomatique seul ne peut pas faire face à l'immensité géographique et politique de l'Empire. Aussi, plutôt que d'entretenir une représentation diplomatique, trop coûteuse, auprès de chaque prince, des correspondances directes sont établies avec eux. Loin de la correspondance officielle, irrégulière et fortement formalisée, elles témoignent d'un véritable échange entre un souverain étranger et le roi, ou son secrétaire d'État. Le prince évoque la situation de son État et de ses alentours. Pour autant, ce n'est pas un agent diplomatique. Sa charge principale n'est pas d'informer la France, encore moins d'exécuter sa politique étrangère. Ces correspondances doivent davantage être perçues comme le signe d'une relation privilégiée entre les princes et la France. Par l'établissement d'une relation de confiance, cette dernière tente alors d'influer sur leur politique. L'intérêt des princes allemands est double : avoir un protecteur contre des voisins ambitieux et bénéficier d'une rétribution financière pour leur « affection ». Si une amitié entre la Hesse et la France existe réellement, le landgrave Maurice de Hesse, comme l'électeur de Cologne20 [#ftn20], n'en demeure pas moins pensionné par la France (36 000 livres par an). La France s'attache ainsi plus sûrement les services et l'affection de ces princes, désormais redevables à son égard. 
+ 
+ 
+ 
+ 
+21 L'empereur, roi de Bohême et donc électeur, ainsi que l'électeur palatin bénéficient déjà d'une rés (...) [#ftn21]
+ 
+22 Trois dépêches pour l'électeur de Saxe (BnF, fr. 15928, fol. 371-372, Dresde, 10 avril 1618 ; fr. 1 (...) [#ftn22]
+ 
+23 L'électeur de Brandebourg demeure le moins influent des sept électeurs en raison de l'écartèlement (...) [#ftn23]
+ 
+ 
+10Si le landgrave correspond directement avec le roi, la correspondance de l'électeur de Cologne, Ferdinand de Bavière, s'adresse quant à elle à Jean de Péricard, résident français aux Pays-Bas. La correspondance directe avec le roi est limitée aux affaires importantes tandis que l'échange, plus quotidien, d'informations est laissé à Péricard, afin de ne pas engorger le secrétariat d'État aux Affaires étrangères en charge de l'ensemble de la correspondance diplomatique. Sur cette base, il peut œuvrer à l'amitié entre la France et Ferdinand de Bavière. L'électeur de Cologne est le seul prince de l'Empire à bénéficier d'un tel traitement. La France n'entretient aucune relation suivie avec les quatre autres électeurs21 [#ftn21] ainsi écartés de sa politique étrangère. Dans les fonds diplomatiques, on ne trouve, pour la période 1617-1624, que quelques dépêches officielles pour les électeurs de Saxe et Brandebourg22 [#ftn22]. La rareté de celles-ci témoigne du caractère épisodique des relations entre ces deux électeurs et la France : demandes d'obtention de chiens de chasse, remerciements pour des offices de condoléances, .... De telles relations trouvent leur explication dans le relatif éloignement de l'électeur de Saxe et la faiblesse politique de l'électeur de Brandebourg23 [#ftn23]. Aucun de ces deux acteurs n'a d'intérêt commun avec la France. L'absence de toute correspondance avec eux tient alors de la rationalisation de l'activité diplomatique, davantage tournée vers les zones frontalières ou des acteurs à dimension européenne.
+ 
+ 
+ 
+ 
+24 Deux dépêches pour l'électeur de Mayence (BnF, fr. 15928, fol. 239-240, Aschaffenbourg, 2 novembre (...) [#ftn24]
+ 
+25 L'archichancelier est en charge de la convocation de la diète impériale, lui conférant une certaine (...) [#ftn25]
+ 
+26 BnF, fr. 15929, fol. 191-192, Kessel à Puisieux, Coblence, 28 avril 1619.
+ 
+ 
+11La correspondance n'est pourtant guère plus fréquente avec l'électeur de Mayence, bien que géographiquement plus proche de la France24 [#ftn24]. Les dépêches de l'électeur de Mayence restent de pure politesse. L'absence de toute politique diplomatique de la part de l'électeur, davantage tourné vers les affaires internes à l'Empire avec son rôle d'archichancelier25 [#ftn25], explique ces relations assez distendues. La correspondance avec l'électeur de Trêves, au contraire, témoigne de relations au caractère politique plus prononcé : promulgation de défenses de faire des levées militaires contraires au service du roi ou désir d'assister le roi pour apporter la concorde dans l'Empire. La forme revêt un caractère moins officiel, témoignant de rapports plus fréquents, facilités, comme pour l'électeur de Cologne, par l'établissement d'une correspondance indirecte. Un ministre de l'électeur, Jean-Baptiste de Kessel, fait office de relais entre les deux souverains. L'électeur s'en remet à lui pour informer le secrétaire d'État de certains éléments sans passer par une correspondance officielle plus lourde. Aussi Kessel dispose-t-il du titre de « conseiller et secretaire ez affaires d'Allemagne »26 [#ftn26] et est-il gratifié d'appointements par la France.
+ 
+ 
+
+# Gérer l'étendue territoriale, l'informateur comme prolongement de l'agent diplomatique [#tocfrom1n3]
+ 
+12Cette toile épistolaire constitue un appui solide à la diplomatie française pour étendre son influence sur l'ensemble du territoire impérial. Cependant, le caractère formel de telles relations les cantonne à un registre de cour insuffisant pour diffuser la communication politique et collecter les informations nécessaires à son élaboration. Aussi les agents diplomatiques mettent-ils en place des réseaux d'information plus larges et plus complets.
+ 
+ 
+ 
+27 Un chartrier contient essentiellement des cartulaires, terriers et autres actes relatifs à la propr (...) [#ftn27]
+ 
+28 Le règlement du 23 septembre 1628 tend à modifier cette conception pour les papiers des secrétaires (...) [#ftn28]
+ 
+ 
+13L'appréhension de ces réseaux est une véritable gageure pour l'historien, la grande majorité des archives des agents diplomatiques n'ayant pas été conservée. Il n'y a aucune obligation, jusqu'au milieu du XVIIe siècle, pour les agents diplomatiques, pas plus que pour les secrétaires d'État, de conserver leurs papiers et de les verser dans les archives royales. Dans quelques rares cas, ces papiers ont été conservés selon des logiques archivistiques diverses (papiers personnels, collections d'érudits, ...). Pour le reste, ce sont les premiers papiers détruits ou vendus par les familles au profit des titres ou actes, voire de chartriers27 [#ftn27], permettant de justifier une situation28 [#ftn28].
+ 
+ 
+ 
+ 
+29 Kolndorfer-Fries 2009.
+ 
+30 Bibliothèque de la société d'histoire du protestantisme français, Ms 10 V-VII ; Arch. MAEE, Corresp (...) [#ftn30]
+ 
+31 BnF, fr. 4113-4121.
+ 
+32 Jean de La Blanque (lieutenant général des armées du roi de Pologne en Suède), Benjamin Buwinckhaus (...) [#ftn32]
+ 
+ 
+14Surtout, afin de protéger ses sources, l'agent les couvre du sceau de l'anonymat, sauf si elles sont publiques (imprimés, déclaration d'un ministre, …), auquel cas elles sont mentionnées librement dans sa correspondance. Aussi, seul le réseau officiel de l'agent diplomatique peut être reconstitué avec certitude. Pour le reste, nous ne pouvons que deviner son ampleur, hormis dans trois cas précis : Jacques Bongars, résident auprès des princes protestants (1595-1610)29 [#ftn29], Jean Hotman, résident à Düsseldorf (1609-1614)30 [#ftn30] et Étienne de Sainte-Catherine, résident auprès de l'électeur palatin (1612-1620)31 [#ftn31], dont une grande partie de la correspondance a été conservée. L'étude de la correspondance de Sainte-Catherine permet de reconstituer un réseau d'une grande ampleur32 [#ftn32], reprenant les relations établies dans le cadre de sa résidence auprès de l'électeur palatin. Trois correspondances différentes s'entremêlent au sein de ces papiers : les correspondances entretenues après sa résidence, celles entretenues pendant sa résidence à des fins diplomatiques et celles entretenues à des fins personnelles. Il est parfois difficile de faire la distinction entre amitié réelle et simple politesse politique. Certes l'ampleur d'un réseau dépend de la personnalité de l'agent et nécessite de bonnes relations avec ses informateurs. Mais où placer la limite entre bonnes relations et réelle amitié ? Car si la première correspondance est conduite à des fins informationnelles, dans la seconde l'information diplomatique est une composante parmi d'autres de la dépêche (nouvelles personnelles ou familiales, échanges culturels, ...). 
+ 
+ 
+ 
+ 
+33 Le rôle de Hainhofer est double dans le système diplomatique français et mériterait que l'on s'y at (...) [#ftn33]
+ 
+ 
+15La correspondance de Baugy n'a pas fait l'objet d'une conservation semblable, cependant il est probable, en raison de la longueur de sa résidence (21 ans), qu'il ait établi un réseau similaire pour le reste de l'Empire. Seule information conservée sur ce réseau, l'utilisation par la France d'un informateur pensionné à Augsbourg, Philipp Hainhofer, mais par l'intermédiaire de Péricard33 [#ftn33]. L'ensemble du territoire impérial est ainsi couvert par les réseaux des agents, fournissant à la France des points d'appui et d'influence. 
+ 
+ 
+ 
+ 
+34 « Lesditz sieurs en prendront lumiere plus particuliere à mesure qu'il escherra des sieurs de Baugy (...) [#ftn34]
+ 
+ 
+16La solidité de ces réseaux se trouve confortée par l'établissement d'une correspondance directe entre les agents qui permet de transmettre plus rapidement certaines informations sur la situation en France mais aussi d'apporter des compléments d'information sur les événements impériaux. Aussi le secrétaire d'État encourage-t-il ces relations34 [#ftn34]. Elles le déchargent d'une partie du travail d'information, favorisent la collecte et centralisation et de l'information et permettent un meilleur ancrage dans le territoire impérial.
+ 
+ 
+ 
+ 
+35 La non-réutilisation de ce réseau tient surtout à l'absence d'un résident remplaçant Sainte-Catheri (...) [#ftn35]
+ 
+ 
+17Si les réseaux d'agents tendent à compenser la faiblesse numérique de la représentation permanente, leur force tient non au prestige de la diplomatie française mais davantage à la personnalité des différents agents. L'aura politique de Sainte-Catherine, ainsi que sa confession, lui permettent de se faire apprécier des ministres qu'il côtoie et d'établir des relations quasi personnelles. De fait, après son départ, son réseau tombe en déshérence35 [#ftn35] ce qui semble empêcher l'établissement d'une diplomatie française forte dans l'Empire. Pour autant, de telles relations – Sainte-Catherine correspond avec toute la partie protestante et lettrée de l'Empire – ne peuvent que contribuer au prestige diplomatique de la France dans l'Empire.
+ 
+ 
+18Contrairement à la croyance habituelle, en partie entretenue par l'éparpillement des sources et de nombreuses lacunes historiographiques, l'Empire fait l'objet d'une représentation stable et continue pendant le premier quart du XVIIe siècle. L'étude des réseaux et de la communication politique inhérente permet de mettre en valeur un véritable système diplomatique mis en place afin de servir aux mieux les intérêts français et disposant déjà de fondements solides qui permettront ensuite le développement de la diplomatie ambitieuse du cardinal de Richelieu. Tout est mis en place pour favoriser la prise d'information et l'extension de l'influence française sur l'ensemble du territoire impérial. Cette maîtrise du territoire et des enjeux de l'Empire passe non par une couverture diplomatique totale mais par la définition de zones d'influence prioritaires – l'axe rhénan et la cour impériale –, principales destinataires de la communication politique française. Si la politique française paraît alors peu ambitieuse, ce n'est pas en raison d'un quelconque déficit de représentation, mais de ses objectifs, davantage tournés vers l'information, voire l'influence, que vers l'intervention.
+ 
+Haut de page [#article-1227]
+ 
+ 
+
+## Bibliographie
+ 
+ 
+Arch. MAEE, Correspondance politique, Palatinat-Deux-Ponts 3-4 : correspondance entre Plessen et Hotman (1613-1621).
+ 
+Bibl. Institut, Godefroy 268-269 et 491 : dépêches adressées au roi par les princes allemands (1362-1674).
+ 
+Bibl. de la société d'histoire du protestantisme français, ms 10 : papiers de Jean Hotman de Villiers.
+ 
+BnF, fr. 4113-4122 : papiers personnels d'Étienne de Sainte-Catherine (1613-1628).
+ 
+BnF, fr. 15920-15933 : dépêches et mémoires des résidents auprès de l'empereur et en Allemagne (1606-1658).
+ 
+Bély, Lucien (1996) : « L'invention de la diplomatie », in : L'invention de la diplomatie. Paris (PUF), p. 11-23.
+ 
+Braun, Guido (2010) : La connaissance du Saint-Empire en France du baroque aux Lumières 1643-1756. Munich (Oldenbourg).
+ 
+Droste, Heiko (2006) : Im Dienst der Krone : schwedische Diplomaten im 17. Jahrhundert. Berlin (Lit).
+ 
+Hotman de Villiers, Jean (1603) : L'ambassadeur. Paris (s.n.).
+ 
+Kohlndorfer-Fries, Ruth (2009) : Diplomatie und Gelehrtenrepublik: die Kontakte des französischen Gesandten Jacques Bongars (1554-1612). Tübingen (Niemeyer).
+ 
+Malettke, Klaus (2001) : Les relations entre la France et le Saint-Empire au XVIIe siècle. Paris (H. Champion).
+ 
+Matzke, Judith (2011) : Gesandtschaftswesen und diplomatischer Dienst Sachsens 1694-1763. Leipzig (Leipziger Universitätsverlag).
+ 
+Noël, Jean-François (1986) : Le Saint-Empire. Paris (PUF).
+ 
+Reinhard, Wolfgang, Wim Blockmans et Jean-Philippe Genet (1996) : Les élites du pouvoir et la construction de l'État en Europe. Paris (PUF).
+ 
+Rohe, Karl (1990) : « Politische Kultur und ihre Analyse : Probleme und Perspektiven der politischen Kulturforschung », in : Historische Zeitschrift, 250, p. 321-346.
+ 
+Stollberg-Rilinger, Barbara (2009) : Das Heilige Römische Reich Deutscher Nation : vom Ende des Mittelalters bis 1806. Munich (C.H. Beck).
+ 
+Tapié, Victor-Lucien (1934) : La politique étrangère de la France et le début de la guerre de Trente Ans (1616-1621). Paris (Leroux).
+ 
+Thiessen, Hillard von (2010) : Diplomatie und Patronage : die spanisch-römischen Beziehungen 1605-1621 in akteurszentrierter Perspektive. Epfendorf/Neckar (Bibliotheca Academica).
+ 
+Triepel, Heinrich (1939) : « Die auswärtige Politik der Privatpersonen », Zeitschrift für auslaändisches und öffentliches Recht und Völkerrecht, 9, p. 1-30.
+ 
+Trivium, 2 (2008) : « Culture politique et communication symbolique » http://trivium.revues.org/793 [http://trivium.revues.org/793].
+ 
+Trivium, 14 (2013) : « Le Saint-Empire à l'époque moderne » http://trivium.revues.org/4503 [http://trivium.revues.org/4503].
+ 
+Haut de page [#article-1227]
+ 
+ 
+
+## Notes
+ 
+1 [#bodyftn1] Reinhard, Blockmans, Genet 1996.
+ 
+2 [#bodyftn2] Un numéro de la revue Trivium a été consacré entièrement à cette notion de culture politique (Trivium 2).
+ 
+3 [#bodyftn3] Le concept politique dépasse alors le simple cadre de l'État et de ses institutions et le regard étendu à des groupes sociaux comme possibles acteurs politiques.
+ 
+4 [#bodyftn4] Pour preuve, la grande majorité des études commence en 1624 avec l'arrivée au pouvoir de Richelieu. Hormis l'étude de Victor-Lucien Tapié (1934), déjà ancienne et qui s'arrête en 1621, aucune étude d'ampleur n'a été menée sur cette période.
+ 
+5 [#bodyftn5] Voir Jean-François Noël qui offre une bonne synthèse de l'histoire et de la constitution du Saint-Empire (Noël 1986) et du côté allemand Barbara Stollberg-Rilinger (Stollberg-Rilinger, 2009). Enfin, plus récemment, la revue Trivium qui vient de publier un numéro consacré uniquement au Saint-Empire à l'époque moderne offre un regard plus précis sur certains aspects constitutifs de l'Empire (Trivium 14).
+ 
+6 [#bodyftn6] Pays-Bas et Lorraine exceptés, l'Empire couvre approximativement l'ensemble des territoires actuels de l'Allemagne, l'Autriche et la République tchèque ainsi qu'une partie de la Pologne. Bien que toujours rattachés juridiquement à l'Empire, les Provinces-Unies, la Suisse ainsi que les territoires impériaux italiens ont été exclus de cette étude, ne se considérant plus eux-mêmes, au début du XVIIe siècle, comme membres de l'Empire mais comme États à par entière.
+ 
+7 [#bodyftn7] L'étude de la représentation de l'Empire en France au début du XVIIe siècle nécessiterait une étude en elle-même : compréhension du territoire et du système politique par les diplomates et gouvernants, par les théoriciens politiques, mais également par les cartographes. Voir notamment sur le sujet Braun, 2010.
+ 
+8 [#bodyftn8] Guido Braun cite à ce sujet l'abbé Courtalon – « Les Alemans nous reprochent, avec raison, notre ignorance sur un pays qu'il nous est important de connoître » (Atlas élémentaire où l'on voit sur des cartes et des tableaux relatifs à l'objet l'etat actuel de la Constitution politique de l'Empire d'Allemagne, Paris, 1774) – avant de mettre en valeur l'existence d'une connaissance approfondie de l'Empire dès le XVIIe siècle (Braun, 2010 : 15-18).
+ 
+9 [#bodyftn9] Si des ambassades extraordinaires envoyées pour une négociation précise et ponctuelle (alliance politique ou matrimoniale, traité de paix, offices de conjouissance ou de condoléance, ...) existent depuis la création d'entités politiques distinctes, la première accréditation d'envoyés permanents italiens dans une puissance extérieure, autre que la péninsule italienne, est à dater de 1461. Il faut attendre le règne de Louis XII mais surtout celui de François Ier pour voir la pratique reprise par la France.
+ 
+10 [#bodyftn10] Cette dernière résidence n'est cependant pas fixe. Le prince objet de la résidence (prince palatin, comte de Hanau, …) est choisi en fonction des circonstances et des nécessités diplomatiques. Si cette résidence est désignée sous une appellation fixe (auprès des princes protestants), elle ne représente pas moins des réalités multiples.
+ 
+11 [#bodyftn11] Respectivement 42 000 livres par an pour celui de Rome et 18 000 pour celui de Venise. 
+ 
+12 [#bodyftn12] En 1612, les résidents auprès de l'empereur et des princes allemands reçoivent respectivement 6 000 et 3 600 livres par an.
+ 
+13 [#bodyftn13] Si un ambassadeur écrit également des dépêches autographes, même en disposant d'un secrétaire, celles-ci restent épisodiques et dédiées à des affaires annexes ou personnelles. La rédaction quotidienne des dépêches est systématiquement dévolue au secrétaire lorsqu'il y en a un.
+ 
+14 [#bodyftn14] L'agent diplomatique n'est pas gratifié du même titre selon l'importance du souverain ou plus largement de l'État auprès duquel il est envoyé (Bély, 1996). Aussi une hiérarchie se forme-t-elle au sein des agents : ambassadeur – de loin le titre le plus prestigieux –, résident, envoyé puis chargé d'affaires.
+ 
+15 [#bodyftn15] L'établissement d'une résidence française auprès de l'empereur peut ainsi être interprétée comme une volonté par la France de s'informer au plus près et de tenter de maîtriser les volontés hégémoniques des Habsbourg d'Autriche et leur conjonction d'intérêts avec la branche aînée d'Espagne.
+ 
+16 [#bodyftn16] Cette représentation n'en est pas moins éphémère. Il n'est plus trace en 1632 d'agent diplomatique en Bavière dans les états des gages d'ambassadeurs.
+ 
+17 [#bodyftn17] Guillaume Ancel puis Nicolas de Baugy se succèdent entre 1589 et 1623, exerçant respectivement leur charge pendant 13 et 21 ans.
+ 
+18 [#bodyftn18] Bien que l'électorat du Brandebourg ne se trouve pas sur l'axe rhénan, les prétentions de l'électeur sur les duchés de Clèves et Juliers entraînent ce dernier à se rapprocher et à résider à Düsseldorf pendant toute la durée du conflit. C'est dans ce cadre uniquement qu'une résidence française est établie auprès de lui ainsi qu'auprès du duc de Neubourg.
+ 
+19 [#bodyftn19] Par sa proximité avec la France, mais également avec des territoires espagnols, notamment des Pays-Bas, le contrôle de l'axe rhénan (direct ou par le biais d'influences) représente un enjeu crucial pour les deux États. La présence de quatre des sept électeurs dans cette même région lui confère également un intérêt politique certain.
+ 
+Bien que n'étant pas à la tête du parti protestant à la Diète – l'électeur de Saxe assure cette fonction –, l'électeur palatin par son importance au sein de l'Union évangélique bénéficie d'une aura politique plus large, dépassant les frontières de l'Empire.
+ 
+20 [#bodyftn20] Électorat ecclésiastique le plus riche et le plus influent, il fait l'objet à chaque nouvel électeur d'une véritable lutte d'influence entre la France et l'Espagne, comme en témoignent les diverses offres de pensions offertes à François de Lorraine dès lors qu'il est pressenti comme probable successeur de Ferdinand de Bavière comme archevêque, et électeur, de Cologne. Une telle pension permet à la France de disposer d'un appui solide et puissant sur l'axe rhénan.
+ 
+21 [#bodyftn21] L'empereur, roi de Bohême et donc électeur, ainsi que l'électeur palatin bénéficient déjà d'une résidence permanente.
+ 
+22 [#bodyftn22] Trois dépêches pour l'électeur de Saxe (BnF, fr. 15928, fol. 371-372, Dresde, 10 avril 1618 ; fr. 15929, fol. 126-127, Dresde, 20 mars 1619 ; Bibl. Institut, Godefroy 269, fol. 144-145, Torgau, 1 juillet 1623) et trois autres pour l'électeur de Brandebourg (Bibl. Institut, Godefroy 268, fol. 247-248, Heilbronn, 7 juin 1619 ; BnF, fr. 15929, fol. 348-349, Cologne, 12 août 1619 ; Bibl. Institut, Godefroy 269, fol. 106-107, Jägersburg, 13 août 1622).
+ 
+23 [#bodyftn23] L'électeur de Brandebourg demeure le moins influent des sept électeurs en raison de l'écartèlement de ses territoires (duchés de Clèves et Juliers, duché de Prusse et marche de Brandebourg). La faiblesse de ses possessions l'oblige à une politique prudente fondée sur des alliances avec d'autres princes protestants, notamment l'électeur palatin.
+ 
+24 [#bodyftn24] Deux dépêches pour l'électeur de Mayence (BnF, fr. 15928, fol. 239-240, Aschaffenbourg, 2 novembre 1617 ; Bibl. Institut, Godefroy 269, fol. 258-259, Bruxelles, 4 septembre 1623) et quatre autres pour l'électeur de Trèves (BnF, fr. 15928, fol. 19-20, Coblence, 5 février 1617 ; BnF, fr. 15929, fol. 189-190, Coblence, 28 avril 1619 et fol. 381-382, Francfort, 10 septembre 1619 ; Bibl. Institut, Godefroy 268, fol. 249, Francfort, 12 août 1619).
+ 
+25 [#bodyftn25] L'archichancelier est en charge de la convocation de la diète impériale, lui conférant une certaine primauté sur les autres électeurs, et à la tête de la chancellerie impériale aulique, garante d'une administration uniforme sur l'ensemble de l'Empire.
+ 
+26 [#bodyftn26] BnF, fr. 15929, fol. 191-192, Kessel à Puisieux, Coblence, 28 avril 1619.
+ 
+27 [#bodyftn27] Un chartrier contient essentiellement des cartulaires, terriers et autres actes relatifs à la propriété foncière. Pour la plupart des familles, il sert à prouver l'acquisition de biens, terres et titres.
+ 
+28 [#bodyftn28] Le règlement du 23 septembre 1628 tend à modifier cette conception pour les papiers des secrétaires, mais il faut attendre 1660 pour voir une conservation systématique des papiers diplomatiques générés par le gouvernement.
+ 
+29 [#bodyftn29] Kolndorfer-Fries 2009.
+ 
+30 [#bodyftn30] Bibliothèque de la société d'histoire du protestantisme français, Ms 10 V-VII ; Arch. MAEE, Correspondance politique, Palatinat-Deux-Ponts 3-4 : correspondance entre Plessen et Hotman (1613-1621).
+ 
+31 [#bodyftn31] BnF, fr. 4113-4121.
+ 
+32 [#bodyftn32] Jean de La Blanque (lieutenant général des armées du roi de Pologne en Suède), Benjamin Buwinckhausen de Walmerode (seigneur au service du duc de Wurtemberg), Wolrad von Plessen (conseiller et ministre de l'électeur palatin), Borstel (agent diplomatique palatin en France), André Pavel (agent diplomatique palatin), Philémon Clasquin (membre de la cour de Wurtemberg) et Georges-Michel de Lingelsheim (conseiller de l'électeur palatin) pour citer uniquement les correspondants les plus fréquents.
+ 
+33 [#bodyftn33] Le rôle de Hainhofer est double dans le système diplomatique français et mériterait que l'on s'y attache davantage. Outre son rôle d'informateur, il ré-achemine tous les paquets diplomatiques venant de Vienne ou d'Italie vers Bruxelles afin que Péricard les transmette en suite au secrétaire d'État.
+ 
+34 [#bodyftn34] « Lesditz sieurs en prendront lumiere plus particuliere à mesure qu'il escherra des sieurs de Baugy et de Saincte Catherine residentz en Allemagne pour les services du roy de la constitution d'icelles et de leurs presentes inclinations affin de mieux conduire les conseilz et intentions de Sa Majesté avec plus de reputation pour elle et de fruict pour ses amis. » (Instruction donnée à l'ambassade extraordinaire du duc d'Angoulême, 8 avril 1620 : BnF, 3972 : fol. 3-23).
+ 
+35 [#bodyftn35] La non-réutilisation de ce réseau tient surtout à l'absence d'un résident remplaçant Sainte-Catherine.
+Haut de page [#article-1227]
+ 
+ 
+
+## Pour citer cet article
+ 
+
+### Référence électronique
+ 
+ Camille Desenclos, « Enjeux et perspectives de la représentation diplomatique française dans le Saint-Empire au début du XVIIe siècle », Trajectoires [En ligne], 7 | 2013, mis en ligne le 18 décembre 2013, consulté le 04 octobre 2026. URL : http://journals.openedition.org/trajectoires/1227 ; DOI : https://doi.org/10.4000/trajectoires.1227
+Haut de page [#article-1227]
+ 
+ 
+
+## Auteur
+ 
+
+### Camille Desenclos [1235]
+ 
+ 
+ IDREF : https://idref.fr/187410100 [https://idref.fr/187410100]
+ 
+ VIAF : http://viaf.org/viaf/10153651729455782841 [http://viaf.org/viaf/10153651729455782841]
+ 
+ ISNI : https://isni.org/isni/000000046821016X [https://isni.org/isni/000000046821016X]
+ 
+ 
+Doctorante en histoire moderne, École nationale des chartes / Paris-IV-Sorbonne – EA 3624 (Centre Jean-Mabillon), camille.desenclos@enc.sorbonne.fr [mailto:camille.desenclos@enc.sorbonne.fr]
+ 
+
+#### Articles du même auteur
+ 
+ 
+ 
+Les mots du pouvoir : la communication politique de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624) [1701]  [Texte intégral] 
+ 
+Thèse de doctorat en histoire moderne, sous la direction d’Olivier Poncet, École nationale des chartes / Université Paris-Sorbonne, soutenue le 6 décembre 2014
+ 
+Paru dans Trajectoires, 9 | 2015 [1518]
+ 
+ 
+Haut de page [#article-1227]
+ 
+ 
+
+## Droits d’auteur
+ 
+ [https://creativecommons.org/licenses/by-nc-sa/4.0/]
+ 
+Le texte seul est utilisable sous licence CC BY-NC-SA 4.0 [https://creativecommons.org/licenses/by-nc-sa/4.0/]. Les autres éléments (illustrations, fichiers annexes importés) sont susceptibles d’être soumis à des autorisations d’usage spécifiques.
+Haut de page [#article-1227]
+
+ 
+Sommaire [1073] - Document précédent [1077] - Document suivant [1214]
+
+ 
+ 
+ 
+
+# Navigation
+ 
+ 
+
+## Index
+ 
+ 
+Auteurs [33]
+ 
+Mots-clés [38]
+ 
+Géographique [40]
+ 
+Chronologique [41]
+ 
+ 
+ 
+ 
+
+## Numéros en texte intégral
+ 
+ 
+19 | 2026
+
+Contexte(s) : conceptions et usages de la notion de contexte dans les pratiques d’interprétation et de traduction [12912]
+ 
+18 | 2025
+
+L’image face au langage [10892]
+ 
+17 | 2024
+
+État(s) d’exception en transformation [9949]
+ 
+16 | 2023
+
+Écrire l'exil [8404]
+ 
+15 | 2022
+
+Les rapports de pouvoir en littérature [7162]
+ 
+14 | 2021
+
+Queering German Studies [5609]
+ 
+13 | 2020
+
+Intrus [4586]
+ 
+Hors série n°4 | 2020
+
+Politique de la non-identité [3660]
+ 
+12 | 2019
+
+La nature mise en scène [2675]
+ 
+11 | 2018
+
+Non ! Nein ! Manifestations et traductions du refus [2449]
+ 
+Hors série 3 | 2017
+
+Pratiques de frontière [2338]
+ 
+Hors série 2 | 2017
+
+Comtes et abbayes dans le monde franc [2178]
+ 
+10 | 2016
+
+Excès et sobriété [1969]
+ 
+Hors série 1 | 2016
+
+Identités en mouvement [1832]
+ 
+9 | 2015
+
+Mensonge et manipulation [1518]
+ 
+8 | 2014
+
+Figures d’autorité [1278]
+ 
+7 | 2013
+
+La condition animale [1073]
+ 
+6 | 2012
+
+Penser le (non-)travail [868]
+ 
+5 | 2011
+
+Repenser le conflit [661]
+ 
+4 | 2010
+
+Postkolonial [473]
+ 
+3 | 2009
+
+Mondes en narration [60]
+ 
+2 | 2008
+
+Frontières en question [59]
+ 
+1 | 2007
+
+Masculin - féminin [58]
+ 
+ 
+
+## Tous les numéros [55]
+ 
+ 
+ 
+
+## La revue
+ 
+ 
+Présentation [5526]
+ 
+Rédaction [166]
+ 
+Comité scientifique [168]
+ 
+Procédure de sélection et d’évaluation des contributions [5552]
+ 
+Conseils aux auteur.e.s et protocole rédactionnel [472]
+ 
+ 
+
+## Appel à contributions
+ 
+ 
+Appels en cours [5531]
+ 
+Appels clos [5534]
+ 
+ 
+
+## Informations
+ 
+ 
+Contacts [169]
+ 
+Mentions légales et crédits [437]
+ 
+Politiques de publication [http://journals.openedition.org/trajectoires?page=informations]
+ 
+ 
+ 
+ 
+
+## Suivez-nous
+ 
+ 
+ Flux RSS [http://journals.openedition.org/trajectoires/backend]
+ 
+ 
+ 
+ 
+
+## Lettres d’information
+ 
+ 
+La Lettre d’OpenEdition [http://newsletter.openedition.org]
+ 
+ 
+ 
+ 
+
+## Affiliations/partenaires
+ 
+ 
+ [http://www.ciera.fr]
+ 
+ [https://doaj.org/toc/1961-9057]
+ 
+ [http://journals.openedition.org/]
+ 
+ 
+
+ 
+ 
+ISSN électronique 1961-9057
+ 
+Voir la notice dans le catalogue OpenEdition [https://catalogues.openedition.org/journals/5646] 
+ 
+Plan du site [http://journals.openedition.org/trajectoires/?page=map] – Contacts [169] – Mentions légales et crédits [437] – Flux de syndication [http://journals.openedition.org/trajectoires/?page=backend]
+ 
+CGU d’OpenEdition Journals [https://journals.openedition.org/13280] – Politique de confidentialité [https://www.openedition.org/19362] – Gestion des cookies [https://www.openedition.org/37235] – Signaler un problème [https://www.openedition.org/41101]
+ 
+Nous adhérons à OpenEdition [http://journals.openedition.org/] – Édité avec Lodel [http://www.lodel.org/] – Accès réservé [http://journals.openedition.org/trajectoires/lodel/]
+ 
+
+                    
+
+ 
+ 
+ 
+   
+    Rechercher dans OpenEdition Search 
+Vous allez être redirigé vers OpenEdition Search
+  
+  Dans tout OpenEdition 
+ 
+   Dans Trajectoires 
+ Rechercher   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+   Français  [#] 
+ 
+Deutsch [/trajectoires/1227?lang=de]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Partager   [#] 
+ 
+ Facebook [https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjournals.openedition.org%2F%2Ftrajectoires%2F1227&title=Enjeux+et+perspectives+de+la+repr%C3%A9sentation+diplomatique+fran%C3%A7aise+dans+le+Saint-Empire+au+d%C3%A9but+du+XVII%3Csup%3Ee%3C%2Fsup%3E+si%C3%A8cle] 
+ 
+ Twitter [http://twitter.com/share?text=Enjeux+et+perspectives+de+la+repr%C3%A9sentation+diplomatique+fran%C3%A7aise+dans+le+Saint-Empire+au+d%C3%A9but+du+XVII%3Csup%3Ee%3C%2Fsup%3E+si%C3%A8cle&url=https%3A%2F%2Fjournals.openedition.org%2F%2Ftrajectoires%2F1227&via=OpenEditionActu] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ">   [/] 
+ 
+ 
+    
+ 
+  
+ 
+ Accueil [https://journals.openedition.org] 
+ 
+ Catalogue des 676 revues [https://catalogues.openedition.org/journals] 
+ 
+   OpenEdition Search   [javascript:;] 
+ 
+ 
+  Tout OpenEdition   
+ 
+ 
+ 
+ 
+ 
+  
+ 
+
+ 
+   Français  
+ 
+Deutsch [/trajectoires/1227?lang=de]
+ 
+ 
+ Portail de ressources électroniques en sciences humaines et sociales 
+ OpenEdition [https://www.openedition.org] 
+ Nos plateformes 
+ OpenEdition Books [https://books.openedition.org] OpenEdition Journals [https://journals.openedition.org] Hypotheses [https://hypotheses.org] Calenda [https://calenda.org] 
+Bibliothèques et institutions
+ OpenEdition Freemium [https://www.openedition.org/14043] 
+ Nos services 
+ OpenEdition Search [https://search.openedition.org] La lettre d'OpenEdition [https://newsletter.openedition.org] 
+ Suivez-nous 
+    [https://www.facebook.com/openedition]    [https://twitter.com/OpenEditionActu]   [https://www.openedition.org/backend] 
+ 
+  
+ 
+ 
+    OpenEdition Books                      Calenda                    Hypothèses                OpenEdition Journals                         OpenEdition                            OpenEdition Search

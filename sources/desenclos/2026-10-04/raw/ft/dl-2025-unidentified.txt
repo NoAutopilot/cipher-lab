@@ -1,0 +1,629 @@
+    Cryptanalytic and historical challenges with unidentified encrypted
+                  documents from the early modern era
+             Camille Desenclos                                                George Lasry
+      Université de Picardie Jules Verne,                                 The DECRYPT Project
+    CHSSC / Université de Lorraine, CNRS,                                george.lasry@gmail.com
+                 Inria, LORIA
+       camille.desenclos@u-picardie.fr
+
+Abstract                                                       all the documents together because of their similar
+                                                               ciphers. In both cases, not only are the sender, the
+     In most cases, historical encrypted documents             recipient, and the language identified by this
+     include some parts in cleartext, such as                  means, but also the date and the nature of the
+     headers, dates, signatures, or addresses, which           information (diplomatic, military, …) can be
+     allows the origin, date, and language of these            predicted. Those are valuable for cryptanalysis as
+     documents to be established. An attached
+                                                               they indicate the vocabulary and names we can
+     decrypted text, similar documents (same
+     encryption, homogeneity of date or origin) in
+                                                               reasonably expect.
+     the same volume or box, or the catalog
+     description may assist in that process.                       Things become more challenging when the
+     However, in a few cases, none of these are                encrypted document does not provide any such
+     available, posing several challenges both from            information and cannot be matched with other
+     cryptanalytic and historical perspectives.                encrypted documents. As some logic was
+     Based on three 16th-century case studies, this            probably involved in building up the volume or
+     paper aims to discuss a multidisciplinary                 the box (same sender or recipient, same date
+     method to proceed from an unidentified                    range, same territorial area, same holder), it is
+     encrypted document to a workable
+                                                               tempting to assume that the documents (encrypted
+     transcription –       decipherment          and
+                                                               or not) are related, especially when they seem to
+     identification.
+                                                               be homogeneous (same topic, same date, …).
+1     Introduction                                             However, it is possible that letters belonging to
+                                                               the same correspondence were dispersed and/or
+Performing both a complete decipherment and an                 inserted into the wrong volume(s) or box(es).
+accurate historical analysis of a text requires basic          While dealing with unidentified encrypted letters,
+identification information: who is writing? To                 the global content of a volume or a box can serve
+whom? When? Such information can be missing                    as a hint, but not as a foundation for cryptanalysis.
+in encrypted documents as well as in clear ones.
+With clear texts, the content can help determine                   These challenges, both for cryptanalysis and
+the origin of the documents. It is the other way               historical analysis, are common to every
+with encrypted texts: the origin is crucial to                 encrypted document, regardless of its origin, date,
+reconstruct the content (especially the names that             or content. This paper proposes a method, or at
+are encrypted with a nomenclature).                            least some potential solutions, to overcome them,
+                                                               from three 16th-century case studies. As
+Many encrypted documents from the early                        centralized archival practices were yet
+modern era are letters: the first words, courtesy              underdeveloped (especially in 16th-century
+formulas, dates, and/or signatures are thus                    France), Renaissance documents can present
+cleartext, as is the last page, which typically                additional and specific challenges: they are often
+contains the address and sometimes the sender's                scattered between boxes or even archives, and the
+name, the sending and/or reception dates. Each of              losses (missing letters within a correspondence,
+these cleartext segments offers the required                   missing decrypted texts) are numerous. In
+identification information. In a few other cases,              addition, the content of the documents may be less
+the encrypted document does not provide any                    intelligible, especially while cryptanalyzing: non-
+identification information, but it is preserved                standardized spelling, titles rather than names for
+alongside other encrypted documents (already                   people’s designation, …
+decrypted and/or identified), allowing us to link
+
+
+                   Proceedings of the 8th International Conference on Historical Cryptology, pages 41-51
+                                            Poznań, Poland, 16-18 June, 2025
+2     Presentation of the case studies                          de Colbert 470, the connection with Castelnau
+                                                                and Mary Stuart could have been guessed: every
+The three encrypted text sets have been chosen                  document in the volume is related to him and
+according to their representativeness for                       mainly focuses on Mary Stuart; furthermore,
+Renaissance encrypted documents: scattered                      numerous letters were written by her. For the
+letters, scattered pages, and an isolated letter. All           letters within the two other volumes (fr. 2988,
+three of them are preserved at the Bibliothèque                 fr. 20506), as each letter is fully encrypted (even
+nationale de France (BnF) and were produced                     the address), nothing could help connect them
+during the 16th century. Each case also represents              with Mary Stuart or Castelnau.1 Lastly, according
+a different stage of the cryptanalysis process:                 to the catalog (the description has been updated
+cryptanalysis and identification are completed,                 since then), the encrypted letters in volume
+cryptanalysis is completed but identification is                fr. 2988 (on which Lasry et al. started working)
+incomplete, and ongoing cryptanalysis and                       contained letters unrelated to Mary Stuart or
+identification.                                                 England/Scotland, but rather related to Italy and
+                                                                written at the end of the 1520s.2
+2.1    Mary Stuart’s            scattered      letters
+       (1578-1584)                                              2.2    Duprat’s encrypted reports (1521)
+Several papers have recently been published on                  As for Mary Stuart’s letters, the second case
+Mary Stuart’s encrypted letters, which were found               consists of scattered letters but in three closer
+at the BnF (Lasry/Biermann/Tomokiyo 2023;                       volumes. They are preserved at the BnF: fr. 2961
+Biermann/Tomokiyo/Lasry 2023). As the                           (24 pages, three text sets), fr. 3029 (42 pages,
+cryptanalytic work has been completed and                       eight text sets), fr. 3092 (six pages, three text
+published, we do not intend, in this paper, to                  sets). These texts are currently being analyzed by
+uncover new elements but to examine the                         the authors (publication forthcoming), but they
+methodology that has led to the identification of               can already be identified as reports from the
+the letters and see how much it can be replicated.              French embassy (composed by Antoine Duprat,
+                                                                Jacques de Chabannes, Jean de Selve, and Robert
+    Before cryptanalysis, none of these letters had             Gedoin) at the French-English conference in
+been identified except for one. It turned out, after            Calais in 1521.3 With one exception,4 these texts
+cryptanalysis, that they had been written by Mary               are fully encrypted and are deprived of any
+Stuart (Queen of Scots) between 1578 and 1584                   address (See Appendix 1). In one encrypted
+and were addressed to the French ambassador to                  document (fr. 3029, fol. 134), a mention has been
+Elizabeth I (Queen of England), Michel de                       added on the top of the first folio: “Lettre en
+Castelnau, seigneur de La Mauvissière. In total,                chiffre adressée au roy” (Letter in cipher
+57 letters are scattered within four volumes at the             addressed to the King). However, while this
+BnF: Français (fr.) 2988 (26 letters), fr. 3158 (1              suggests the encrypted text may also be in French,
+letter), fr. 20506 (28 letters), Cinq-Cents de                  this does not help much, as we do not know which
+Colbert 470 (2 letters). Only the letter in volume              French king this is about. Regardless of this
+fr. 3158, which has some parts in cipher and the                mention, the texts may be encrypted reports
+rest in cleartext, had been identified as from Mary             attached to letters. However, these reports are not
+Stuart before the work of Lasry et al.: Castelnau’s             preserved in a way that reflects their initial form.
+name and the date were written in cleartext, and                Following cryptanalysis, we have been able to
+an additional mention on the top margin identified              locate historical decryptions (from the early 16th
+Mary Stuart as the sender. For volume Cinq-Cents
+1
+  There are a few remaining seals that display the royal        documented by both sides (French/English). The
+arms of Scotland, but their analysis would have                 journal of Jean Barillon, Duprat’s secretary, in which
+required heraldic knowledge (which is not often                 some of the ambassador’s letters were copied, is now
+mastered by codebreakers or even historians).                   preserved at the BnF (NAF 6777) and was published in
+2
+  Three reports, written in Italian, were mentioning            the 19th century (Barillon 1897-1898).
+                                                                4
+Mary Stuart in volume fr. 2988. As the majority of                Fol. 105 (fr. 3029) contains cleartext segments. The
+documents and especially the other encrypted letters            Latin text does not offer any precise element for
+were related to Italy, the odds were in favor of 1520s          identification (no date, no name, no event). It is the
+Italy and not of 1570s Scotland.                                only Latin text; the reports had all been written in
+3
+  See about the Calais conference, Russell 1971. As             French.
+Russell points out, the conference has been well
+
+
+                                                           42
+century) of some of the reports, allowing us to               3     Deciphering unidentified encrypted
+determine that these 14 texts do not form 14                        letters: challenges and methods
+reports. These plaintext copies helped to
+distinguish nine reports, one of which was                    There are three different approaches to accessing
+scattered across two volumes, and two of which                the content of early modern encrypted documents
+were incomplete (the missing parts of these two               (which have not been decrypted yet), whether or
+encrypted reports have not yet been found). As for            not they have already been identified:
+the rest, no plaintext copies matching our                        • Finding the original cipher key and
+decipherments have been found. It has                                 associating it with the encrypted
+nevertheless been possible to distinguish four                        documents
+other reports, presumably complete, while two                     • Recovering the key based on available
+other sets have yet to be investigated but                            decrypted text
+presumably form at least three separate reports.                  • Reconstructing the key via cryptanalytic
+Not only are the complete set of Duprat’s                             techniques.
+encrypted reports scattered between three
+volumes, but their pages are filed in different               3.1    Finding the original cipher key in the
+volumes, which prevents a full understanding of                      archives
+the content when deciphering them. Finally,                   The first two approaches can be implemented
+although the content of the three volumes                     without cryptanalysis expertise, but they require
+suggested that the encrypted documents could be               archival knowledge. Keys and encrypted letters
+diplomatic letters written in the 1510s or the                are not systematically preserved in the same
+1520s, no other documents in the volumes were                 volume/box       (or    even    in     the    same
+related to the Calais conference. Before the advent           library/archives). If the archival situation varies
+of cryptanalysis, nothing could have led to                   from country to country, from archives to
+identifying those reports as having been produced             archives, researchers may face four situations:
+by the French embassy in Calais in 1521.                           1. Encrypted letters and cipher key are
+                                                                       preserved in the same volume/box or
+2.3    Fr. 6632 isolated document (1580s)
+                                                                       group of volumes/boxes5
+Although they are scattered in various volumes                     2. The cipher key is preserved along with
+and sometimes fragmented, Mary Stuart’s letters                        other keys6
+and Duprat’s reports each offer numerous                           3. The cipher key is preserved alone in an
+encrypted pages, which helps a lot for                                 unrelated volume or box7
+cryptanalysis. The third and last case study                       4. The cipher key has been lost or
+addresses the opposite challenge: a unique                             destroyed.
+specimen. Volume fr. 6632 (BnF) contains a two-
+page text (possibly a letter) that does not present              Scenario 1 is the easiest one. As soon as a
+any identification element and is the only                    cipher key is preserved in a volume or box (or a
+encrypted text of the volume (See Appendix 2).                homogeneous set of volumes or boxes), a
+As in the previous examples, the other letters and            comparison with the encrypted letter(s) can be
+the catalog description may offer some guidance.              performed. This is done first by comparing the
+Volumes fr. 6628 to 6632 contain letters, mostly              ciphertext characters and secondly by attempting
+sent to King Henri III of France by Queen Mother              to decrypt the letter using the cipher key. We can
+Catherine de Medici and others. However, the                  know whether the cipher key matches the
+many letter authors in these volumes do not help              encrypted letters in a few minutes. In contrast, we
+to formulate any hypotheses, except for the date              cannot state the loss of a cipher key (Situation 4)
+(probably in the 1580s). At the current stage of the          before conducting extensive archival work.
+working process, this encrypted text has not been
+precisely identified.
+
+5                                                             7
+  See for instance, BnF, fr. 4030. The volume contains          See for instance, BnF, fr. 3349. The volume contains
+both the original cipher key and the encrypted letters        an unidentified cipher key (probably from the 1580s),
+from Villeroy to Hotman (1609-1612).                          along with letters from Henri III and Catherine
+6
+   Volume fr. 3995 (BnF) contains 68 cipher keys              de Medici but none of them is encrypted.
+(1580-1595) that were, mainly, used by the Duke of
+Nevers.
+
+
+                                                         43
+   As for Scenarios 2 and 3, Renaissance cipher                to match and, because of the newly deciphered
+keys were not systematically labeled by their                  content, we can focus on cipher keys (and other
+users. The name of the users (mainly the                       encrypted texts) relevant to a specific date and
+recipient’s name) and/or the date may have been                use. A copy of the cipher key that was used by the
+written on the verso.8 However, many cipher keys               French ambassadors in Calais, for instance, still
+remain unidentified or, at the very least, are not             exists: Jean Barillon, Duprat’s secretary, has
+sufficiently identified (i.e., lacking a date or               copied the key in his “journal” (BnF, NAF 6777),
+name). As a result, it may be impossible to                    which is a record of the conference (copies of the
+determine the origin of cipher keys without                    diplomatic instructions, of the key, of some
+matching them to encrypted letters. This can be a              letters). Because of its nature, this journal is not
+vicious circle: encrypted letters are crucial to               preserved alongside or near the encrypted reports
+identify cipher keys, but cipher keys are crucial to           (which are not preserved with the other letters
+decrypt letters. Moreover, the catalogs often do               from the ambassadors). Matching the encrypted
+not list all the documents in the volume/box,                  reports with the copy of the cipher key was
+regardless of whether they can be identified.                  possible only after cryptanalysis, as this copy (not
+Although the precision of catalog descriptions                 listed in the library catalog) had already been
+varies from archives to archives and even from                 identified and mentioned in Desenclos 2021 as a
+collection to collection, we often have to deal with           copy of the key used by the French ambassadors
+descriptions such as “several cipher keys”,9 with              in Calais.13 Similarly, Kopal and Waldispühl, who
+incorrect descriptions,10 or with descriptions that            worked on a previously unidentified letter from
+do not mention the cryptographic nature of the                 Emperor Maximilian II (1575), were able to find
+documents.11                                                   the original cipher key (and two other encrypted
+                                                               letters) in the DECODE database, only after
+   Linking a cipher key to its encrypted letters               having      cryptanalyzed      the     first   letter
+would require reviewing all the collections of                 (Kopal/Waldispühl 2022).
+several libraries and archives to ensure that we
+have browsed every box and volume that may                     3.2    Recovering the cipher key from
+contain a cipher key, regardless of the description                   available decrypted text
+provided by the catalogs.12 Secondly, as the
+encrypted letters are not identified, it is impossible         The same issue arises with the second approach
+to exclude any cipher key based on criteria such               (recovering the key based on available decrypted
+as the date, the user, the territorial area, or the            text) as several configurations can be observed,
+language: we would need to compare each cipher                 depending on whether the decrypted text has been
+key to the encrypted letters manually. It is both              copied on the original document (margin, between
+time-consuming and ineffective. In contrast,                   lines) or another folio:
+                                                                   • Encrypted letters are preserved in several
+cryptanalysis can help find the original cipher key.
+Matching letters and original cipher keys is much                       but related volumes (groups of
+easier when the key, or part of it, has been                            manuscripts or boxes dedicated to the
+reconstructed: it no longer requires trying to                          same negotiation, the same person, or the
+decrypt the first lines of the encrypted document                       same time range), and the decrypted text
+with each key whose ciphertext characters seem                          has been copied on the original letters or
+                                                                        on separate folios that can be linked to the
+8
+  See for example, BnF, fr. 6204, fol. 8: “chiffre avec        nationales (national archives), the Archives
+M. d’Usson, 14 septembre 1701” (cipher with Mr                 diplomatiques (diplomatic archives) or the Service
+d’Usson, 14 September 1701).                                   historique de la Défense (military archives), but one
+9
+   The BnF catalog suggests that volume NAF 8431               can also find isolated keys in local or private archives
+contains “diplomatic ciphers”. Without inspecting the          or in another library.
+                                                               13
+volume, we cannot know how many cipher keys and                    Another cipher key has been found in volume
+whose key the volume really contains.                          fr. 2961 (BnF). It does not contain the nomenclature,
+10
+   According to the catalog, volume fr. 3362 (fol. 57)         but only the alphabet symbols. This key could have
+would contain “a cipher”. However, it is not a cipher          been easily matched to the encrypted reports: it is held
+key but part of an encrypted document.                         before one encrypted report. However, encrypted
+11
+    Volume fr. 7129 contains 3 cipher keys; none is            letters in volume fr. 2961 have been found only after
+mentioned in the catalog.                                      the first stages of cryptanalysis have been performed
+12
+   For French early modern encrypted documents, the            on the reports in volumes fr. 3029 and 3092.
+keys can be found mainly at the BnF, the Archives
+
+
+                                                          44
+         encrypted letters (mentions on top or on               origin of the documents and then investigate
+         the back folio, decrypted text which                   nearby volumes from a similar origin, rather than
+         immediately follows the encrypted letter,              similar themes. All three volumes containing
+         …).                                                    Duprat’s reports belong to the former collection
+     •   Encrypted letters are scattered between                of Philippe de Béthune, part of which was
+         volumes of different origins, and the                  organized by reigns (Solente 2001). As the
+         decrypted text has been copied on the                  content of volume fr. 3029 belongs to the sub-
+         original letters                                       collection related to Francis I’s reign, we could
+     •   The decrypted text has been copied onto                simply look into Béthune’s volumes that belong
+         another folio and preserved in a different             to the same sub-collection. However, in the sub-
+         volume from the letters, or lost or                    collection related to Francis I’s reign, there are
+         destroyed over the centuries.                          more than 170 volumes. Other encrypted reports
+                                                                have certainly been found in volumes that belong
+   Decrypted texts were preserved, or at least                  to this sub-collection (fr. 2961 and fr. 3092).
+have been identified, only for Duprat’s reports                 However, we cannot be absolutely sure that
+(BnF, fr. 2966-2967). However, the connection                   Duprat’s reports had not already been scattered
+with the encrypted reports could not have been                  before the constitution of Béthune’s collection
+made as there were no elements available to match               and preserved in distinct collections or even
+a report to its relevant decrypted text: the                    libraries. In fact, one of the decrypted texts does
+decrypted texts are contained in another volume,                not match any encrypted reports and suggests that
+and even if the decrypted texts are partially                   at least one report is missing. Even by
+identified (sender and, sometimes, recipient), the              investigating the volumes only based on their
+encrypted reports were not. Only recovering the                 origin, the archival investigation work remains
+content via cryptanalysis has made this                         highly time-consuming and represents a
+connection possible.                                            significant investment for a few unidentified texts.
+
+   Although it is one of the hardest configurations                 In Mary Stuart’s case, the pre-existing
+(unidentified encrypted letters and a separate                  identification of the letter in volume fr. 3158, the
+decrypted text), Duprat’s case enhances the two                 credible identification of Castelnau as the
+main requirements for recovering a cipher key                   recipient or intermediary of the letters in volume
+(without cryptanalysis): a decrypted text that                  Cinq-Cents de Colbert 470, and the similarities
+exists and that can be linked to the unidentified               between all the encrypted letters (e.g., “K” at the
+encrypted document(s). Matching encrypted and                   beginning and in the addresses) could, in theory,
+decrypted texts together (as matching encrypted                 have led to identifying all these letters as Mary
+texts and cipher keys), whether to find relevant                Stuart’s. That would have required prior
+decrypted texts or enlarge the set of texts                     knowledge of the existence of these four text sets
+encrypted with the same cipher, can only be based               with similar graphical ciphertext characters. Yet,
+on spot checks or an exhaustive inventory of all                they are scattered in very distinct volumes: two of
+encrypted texts. The first method cannot be                     them were not supposed to contain Mary Stuart’s
+performed when the texts are not identified, and                letters, and all four belong to different collections.
+the effort needed for the second method might be                Volumes fr. 2988 and fr. 3158 come from
+prohibitive: matching documents requires both                   Béthune’s collection,14 volume fr. 20506 from
+finding other similarly-looking encrypted                       Gaignières’s collection and volume Cinq Cents de
+documents and reconstructing each cipher key                    Colbert 470 from Colbert’s collection. Even if
+manually from these documents.                                  work similar to the work done for Duprat’s case
+                                                                (going through all the letters from the same
+   A third approach could be to look at close                   collection) had been done, it would have been
+volumes or boxes (same territorial area, same                   unsuccessful. Matching all four volumes was
+period, same writers), but it can be hard to                    made possible only after successful cryptanalysis.
+perform without any slight identification element.              According to Lasry/Biermann/Tomokiyo 2023,
+To overcome this, we can try to determine the                   the familiarity with the ciphertext characters in
+
+14
+  Volume fr. 2988 was part of the ensemble related to           Stuart was Francis II’s wife, the encrypted letters in fr.
+Francis I’s reign, while volume fr. 3158 was part of the        3158 were not written during Francis II’s reign (nor
+ensemble related to Francis II’s reign. Although Mary           Francis I’s).
+
+
+                                                           45
+volume fr. 2988 made possible a match with                         1. Computerized cryptanalysis to identify
+volume fr. 20506, on which Tomokiyo was                               the meaning of most ciphertext characters
+working for another purpose (to add new                               representing individual letters of the
+collections to Cryptiana).15 While this was                           alphabet – the homophones in the
+partially by luck (looking at this volume at this                     common case of homophonic ciphers.
+particular time), this highlights the benefits of                  2. Identifying the meaning of the remaining
+systematic surveys but also their limitation:                         ciphertext      characters     representing
+Tomokiyo reconstructs keys but works only on                          individual letters of the alphabet and
+documents that are digitized and put online by the                    those representing doubled letters, nulls,
+archives and libraries (part of the collections                       or requiring an action (e.g., to delete the
+only); the DECODE database is not limited to                          previous character). This phase is
+digitized documents but depends on the                                typically performed manually, based on
+contributors intakes (Heder/Megyesi 2022);                            the partial results obtained in Stage 1, by
+Desenclos is conducting a systematic survey at the                    analyzing all instances of the given
+BnF (Desenclos 2021), but it has not been yet                         ciphertext     characters.    The       more
+published. For Mary Stuart’s letters, identifying                     ciphertext material is available, the higher
+Castelnau as a possible recipient of the encrypted                    the chance those characters will be
+letters made the search feasible by inspecting only                   identified in their majority and
+volumes that may contain letters from and to                          accurately. Also, by examining which
+Castelnau (Lasry, Biermann, and Tomokiyo                              deciphered sequences are plausible and
+2023). While some documents' history can be                           which are not, it is possible to determine
+retraced, this is not always the case. As Mary                        which ciphertext characters are likely part
+Stuart’s letters were addressed to Castelnau, they                    of the nomenclature.16
+should have been (at least at first) preserved along               3. Identifying the meaning of nomenclature
+with his papers. The fate of Castelnau’s papers is                    elements representing common words,
+unclear, and although a part of them has been                         prepositions, or parts of words. This is
+preserved as an ensemble (fr. 3158), the other part                   also performed by examining the various
+has been scattered throughout history. Castelnau’s                    instances of those elements in their
+papers may have been integrated into                                  textual and sometimes historical context.
+Montmorency’s papers (through marriage and                         4. Identifying nomenclature elements that
+patronage), from which Philippe de Béthune,                           represent proper names. Identifying the
+François-Roger de Gaignières, and Jean-Baptiste                       text and its historical context is critical at
+Colbert have built up their own collection. No                        this stage (see Section 4).
+matter which thread is pulled, there is no way
+(except for a tedious, exhaustive inventory of                These four stages are the same, regardless of
+thousands of volumes) to match documents,                     whether the document has been identified.
+whose consistency and identification are often                However, the absence of any identification
+lost for centuries. Analyzing a volume                        element (date, nature, context) makes
+composition cannot be considered a solid way to               cryptanalysis harder, even impossible in some
+identify a document, but rather a hint.                       cases. Identifying the meaning of some
+                                                              nomenclature elements, either names (Stage 4) or
+3.3    Reconstructing     the   key               via         infrequently used words (Stage 3), relies on prior
+       cryptanalytic techniques                               knowledge of the context; without it,
+                                                              cryptanalysis will remain incomplete. Identifying,
+For unidentified encrypted texts, their                       in Stages 1 and 2, the ciphertext characters for the
+decipherment through cryptanalysis is often the               letters of the alphabet (homophones) and frequent
+best, or even the only way to identify the text, to           nomenclature words (Stage 3), in contrast, will
+enable finding other encrypted texts (with the                generally still be feasible given enough ciphertext,
+same key) and, of course, to access their content.            but may require testing more hypotheses, notably
+Deciphering historical encrypted documents                    for two reasons: both the language and the cipher
+typically consists of four stages:
+
+
+15                                                            16
+   Cryptiana is a website that aims to identify and              This also allows for determining the structure of
+reconstruct historical ciphers from archives documents        nomenclature symbols, such as the addition of certain
+in (https://cryptiana.web.fc2.com/code/crypto.htm).           diacritics, or specific ranges of numerical codes.
+
+
+                                                         46
+features are completely unknown.17 Cryptanalysis                “Lettre en chiffre adressée au roy”,18 in the top
+software and algorithms rely on language                        margin of one of the encrypted texts (fr. 3029,
+statistics computed from a corpus of the original               fol. 134), we rightfully expected the original
+language. Even for encrypted letters with the                   language to be Middle French. Computerized
+slightest identification, language can be                       cryptanalysis easily recovered the ciphertext
+determined or, at the very least, narrowed down to              characters assigned to individual letters of the
+a few possibilities. Assuming the wrong language                alphabet; then, six characters representing nulls
+will cause cryptanalysis algorithms to fail. For                and four nomenclature elements were also
+Mary Stuart’s case, as shown in Lasry/                          recovered with manual work.19 In contrast, when
+Biermann/Tomokiyo 2023, a wrong initial                         the cipher is homophonic and/or uses an important
+assumption based on the catalog and the content                 nomenclature, more hypotheses must be
+of the first studied volume (fr. 2988) – that the               formulated, making cryptanalysis harder as these
+letters were originally in Italian – resulted in the            stages are seldom sequential, and the process is
+project being significantly delayed. If the                     mainly iterative. When deciphering Mary Stuart’s
+language is unknown and cannot be inferred from                 letters, as shown in Lasry/Biermann/Tomokiyo
+other clues or if the first assumption does not give            2023, the special ciphertext characters (to delete
+any conclusive result, all possible languages (and              or repeat the last ciphertext character) and the
+their territorial variations) but also all possible             structure of the nomenclature elements – five
+types of ciphers (transposition, homophonic                     different meanings for a single ciphertext
+substitution, polyalphabetic substitution, …) and               character based on adding diacritics – were hard
+all possible structures of ciphers must be tested for           to identify. Some of the diacritics were first
+successful cryptanalysis while they are usually                 assumed to be individual ciphertext characters.
+guessed from the date, the nature and the author                Only after they identified the origin of the letters
+of the document. A French cipher from the 1580s                 were Lasry et al. able to locate examples of related
+is more likely to be homophonic, with 2-4                       cipher keys in archives, similar in structure and
+homophones per alphabet letter, to utilize nulls,               contents to the one used in the collection they
+and to feature a nomenclature that incorporates                 analyzed,20 and then to confirm several
+both names and common words. In contrast, a                     cryptanalytic hypotheses. Even at this stage, the
+French cipher from the 1520s may be                             knowledge of the cryptographic practices (in a
+monoalphabetic or have a low number of                          specific area, at a specific time) is fundamental for
+homophones and a small nomenclature (mostly                     cryptanalysis, and unidentified texts deprive the
+names). Both structures can be observed in the                  codebreaker(s) of essential elements for success.
+fr. 6632 letter (homophonic cipher with at two to
+four homophones per letter of the alphabet) and in                 Those challenges are compounded when the
+Duprat’s reports (monoalphabetic substitution,                  cipher is complex (e.g., a large number of
+twelve nomenclature elements, and five nulls).                  homophones) and/or if the ciphertext is short. For
+                                                                the third case study (fr. 6632), we have only
+   French Renaissance ciphers were less complex                 obtained partial and tentative results, given the
+and had fewer features, so the cryptanalysis of                 short length of the text (1,100 ciphertext
+earlier encrypted texts was usually easier. With                characters) and the high number of distinct
+Duprat’s reports, given the small number of                     ciphertext characters (120). Based on this and the
+distinct ciphertext characters (about 35), it was               dates of the other letters in the volume (France,
+hypothesized that the cipher could be a simple                  1580s), we hypothesized that this cipher was
+monoalphabetic substitution cipher with a few                   homophonic with many homophones per letter
+additional elements, such as names (small                       and included at least a few tens of nomenclature
+nomenclature) and nulls. Based on the mention                   elements. Computerized cryptanalysis (Stage 1)
+
+17                                                              20
+    In the only other documented example of                        Lasry et al. have found two ciphers, one used
+unidentified deciphered documents we have found                 between Mary Stuart and Guillaume de L’Aubespine,
+(Kopal/Waldispühl 2022), the authors had also to base           baron de Châteauneuf, Castelnau’s successor as French
+on assumptions about language, date and cipher type to          ambassador in England, and another preserved along
+process cryptanalysis.                                          Castelnau’s papers. Both share similar features
+18
+   Letter in cipher, addressed to the King.                     (diacritics, similar nomenclature vocabularies). Their
+19
+   Only six of the twelve nomenclature elements are             finding helped Lasry et al. to confirm several
+used in the encrypted reports we have identified so far.        cryptanalysis hypotheses (Lasry/Biermann/Tomokiyo
+                                                                2023).
+
+
+                                                           47
+was challenging due to the cipher complexity and            as well as feminine adjectives, and names spelled
+the short ciphertext, and it required multiple tests        in full, such as Walsingham (Elizabeth I’s
+with various parameters, leaving many illegible             principal secretary and her spymaster) or Spain.
+gaps, as expected, because several ciphertext               Similarly, with Duprat’s reports, the main clues
+characters were wrongly assumed to be                       came from names spelled out in full before
+homophones. In Stage 2, all the homophones                  encryption. Due to the small size of nomenclature,
+could be interpreted, corrected, and distinguished          most of the names were spelled and encrypted in
+from nomenclature elements (which could not be              full (Fitzwilliam, bishop of Durham, Duke of
+interpreted at this stage), resulting in additional         Albany, …) and helped a lot to identify the
+legible segments. Here, the transcription of the            documents as French reports produced during
+first six lines after Stage 2 (the homophones               negotiations with England. This has been
+corrected at this stage are marked in bold, and             confirmed by mentions of discussions between “le
+nomenclature codes with a question mark):                   chancelier” (the chancellor, here Antoine Duprat)
+    “Madame dair aiant eu ? ?modité en une                  and “le cardinal” (the cardinal, here Cardinal
+    feste ? se feit chés elle, entra ? ? en propos          Thomas Wolsey) in the context of concurrent
+    ? ? ? tres pregnantes raisons ? ? persuad?              discussions with ambassadors from various places
+    ? ? veoir ? ? ?ntendre au marriage sur ? ?              (Hungary, Venice, ...). All those pointed toward
+    ses plaintes ? ? gran?s protestations de sa”            the negotiations that took place between July and
+    Stage 3 was tedious and yielded incomplete              November 1521 in Calais.
+results, while Stage 4 could not be performed due
+to the short ciphertext and the lack of historical              It may come as a surprise to see so many names
+context. About ten ciphertext characters could not          not being encrypted with nomenclature elements.
+be identified, including some likely to represent           In Duprat’s reports, the reason was the simplicity
+proper names:                                               of the cipher: French ciphers in the early 1520s
+    “Madame, Dair aiant eu la commodité en                  were not as advanced as Italian or Spanish ones,
+    une feste que se feit ches elle, entra bien ?           and here, the cipher was designed for a time-
+    en propos avec ? avec tres pregnantes                   limited use in a not-too-far-away embassy. The
+    raisons pour luy persuader et de veoir ? et             needs, in terms of security, were not the same. In
+    d'entendre au mariage sur ? ? ses plaintes              other cases, such as Mary Stuart’s or even the
+    et les grandes protestations de sa“                     letter from volume fr. 6632, that is not surprising
+                                                            either, and these are no exception. Not all names
+4    Identifying unidentified encrypted                     were intended to be encrypted through a
+     letters: challenges and methods                        nomenclature (infrequently-mentioned names,
+                                                            people who burst into the political scene after the
+For Stages 3 and 4, in particular, knowing the              cipher key was created, etc.). Moreover,
+historical context and identifying the document             encrypting names using homophone elements
+are crucial. Although that depends on the size of           after fully spelling them out limited the frequency
+the nomenclature and the length of the encrypted            of nomenclature elements assigned to important
+document, cryptanalysis can fuel a virtuous circle:         names. For 21st-century codebreakers, having
+reconstructing the plaintext, even without names,           names encrypted in full facilitates the
+can enable the identification of the encrypted              identification of the origin and context of the text,
+document; this identification can, in turn, help            further assisting in the decipherment process.
+identify the words and names (nomenclature); a              Certainly, such encryption practices also helped
+more complete decipherment can improve the                  early modern codebreakers, but only in recovering
+identification of the document, and so on.                  names. When the letters were intercepted and
+                                                            deciphered, the (approximate) date of the letter
+    Even if the names have not been deciphered              and its probable origin were already known: the
+yet, the first stages of decipherment may offer             codebreaker knew when and where the letter had
+several levers for identifying the document, such           been intercepted. He could easily guess the
+as names spelled and encrypted in full, or                  language, nature, and features of the cipher, as
+references to an event or a person. As described in         well as some frequently used words and names.
+Lasry/Biermann/Tomokiyo 2023, Mary Stuart’s                 The decipherment of unidentified documents
+letters were identified as such based on clues in           through codebreaking highlights the gap between
+the deciphered text. There were mentions of a son           early modern codebreakers and 21st-century
+(“mon fils”), of being in captivity (“ma liberté”),         cryptanalysis. The latter is disadvantaged because
+
+
+                                                       48
+the knowledge of the writing context has been                 a letter. Letters begin with the addressee's name,
+lost, making identifying common words and                     or at least with an adapted term (‘Mr.
+names more complex, if not impossible. For                    Chancellor’), which allows either identifying the
+example, with our third case study (fr. 6632), it is          addressee or formulating some hypotheses. These
+quite possible that an early modern codebreaker               can be confirmed by the document's content
+would have been able to identify the parties of the           and/or by additional documents. The cleartext
+marriage mentioned in the text, whether or not the            letters from the French embassy in Calais, for
+marriage negotiations were public (rumors,                    example, were mostly addressed to Francis I or
+intelligence, etc.). Conversely, it is impossible, at         Florimont Robertet (who was then in charge of
+our times, to identify those names without any                Foreign Affairs); it is easy to assume that reports
+other supporting element. Cryptanalysis may                   were also addressed to one of them; but nothing in
+initiate a virtuous circle, but can also lead to a            the report gives a clue about the precise addressee
+dead end. With the fr. 6632 letter, the challenge is          (no words such as “Your Majesty” or “Sir”).
+increased by the frequent use of distinct                     Except when the addressee's name is written at the
+nomenclature elements for names. The                          beginning of the letter, identifying the addressee
+reconstructed text segments are short and                     can be particularly complex if the sender is not
+insufficiently explicit about the people or events            identified. In the case of fr. 6632 letter, the first
+mentioned. Here lies a second challenge that 21st-            word of the letter (“Madame”) could indicate that
+century researchers face: many elements are                   the sender was addressing a woman (possibly
+implicit in historical documents, whether or not              Catherine de Medici, given the other documents
+they are encrypted. People are never mentioned by             in the volume), but the text could also begin
+their full names but only by shortened names,                 without addressing anyone. “Madame Dair” – the
+which can apply to several people from the same               first two words of the text – could be one of the
+bloodline (e.g., the Duke of Albany), or by one of            text's subjects rather than the addressee.
+their titles (the cardinal, the Grand Squire, etc.).
+These made immediate sense to early modern                        Even if it is often easy to determine the time
+people and can make sense to 21st-century                     range of a document, it can be harder to determine
+historians when the date is available. Without                a more precise date (day, month, and year). Given
+additional information, these shortened names                 the nature of the cipher (number of homophones,
+and titles can remain insufficient to enable the              type of ciphertext characters, ...) and the content
+identification of a document.                                 of the document, it may be possible to identify, at
+                                                              least, the decade in which it was written. Although
+In many cases, nevertheless, it is possible to                we have been able to date Duprat’s reports to 1521
+identify, at least partially, the sender and recipient        (the date of the embassy), no precise date (day and
+and the date. In Mary Stuart’s letters                        month) has yet been established for the encrypted
+(Lasry/Biermann/Tomokiyo 2023), the date and                  reports. Doing so will require reading every
+the recipient's name were encrypted and have                  unencrypted letter in related volumes to establish
+been recovered via cryptanalysis. In Duprat's                 a daily or, at least, weekly chronology of the
+reports, no identification elements were written,             embassy. This work may be successful, but, for
+even in cipher. As a first step, only assumptions             now, we have only been able to provide
+can be made about the sender, recipient, or date.             approximate dates (e.g., between 2 October and
+Although the sender is the most essential element,            10 October) for some reports.
+two difficulties may arise: the letter's content may
+not be sufficient to identify the source; there may              Even a partial or hypothetical identification
+be several senders. The letters of the French                 may enable further work to be carried out:
+embassy in Calais were written and sent either on             research in the archives can be conducted, as the
+behalf of the four ambassadors (joint signature) or           new identification elements may help limit the
+by only one ambassador (single signature). The                investigation's scope. Nevertheless, challenges
+phrase ‘moy chancellier’ (I, chancellor) might                similar to those outlined in sections 3.1 and 3.2
+suggest that only Duprat wrote some letters;                  may persist, depending on the varying accuracy of
+however, the same phrase is also found in                     catalogs and on the information elements that
+unencrypted letters sent by the whole embassy.                remain missing. Although researchers may get
+                                                              stuck at this stage due to a lack of new
+   Identifying the addressee can sometimes be                 identification elements, the deciphering, then the
+easier when the encrypted document appears to be              identification, even partial, of the document and,
+
+
+                                                         49
+possibly, the discovery of additional sources               nomenclature, for instance, depends on the
+(letters, encrypted or not, produced by the same            document's      identification    and     historical
+sender and recipient, cipher key, decrypted texts)          knowledge of the context. With unidentified
+can lead to valuable results, particularly with             documents, even if it is easier to describe the
+recovering nomenclature elements. In the same               cryptanalysis process as distinct stages, it looks
+way that the linguistic context enables the                 more like an iterative process: multiple tests are
+identification of certain common words (by                  made based on hypotheses, cryptanalysis leads to
+reconstructing the meaning of the sentence), the            better identification, which leads to better
+historical context enables the identification of            cryptanalysis… This representation of the process
+remaining ciphertext characters, whether they               as iterative highlights the benefits of continuous
+represent common words (“army,” “peace,” etc.)              collaboration between codebreakers and
+or proper names (people and places). Even before            historians: historical and cryptanalytic inputs are
+linking it to the cipher key copied by Jean                 relevant and essential throughout the entire
+Barillon, the identification of Duprat's letters had        process, not just at the beginning (cryptanalytic
+enabled the identification of four nomenclature             techniques) or at the end (historical knowledge).
+elements. Only two causes can prevent the
+nomenclature       from       being     completely          Funding
+reconstructed: the frequency of the ciphertext
+                                                            The Swedish Research Council has supported the
+characters is too low, and they cannot be
+                                                            work of one author, grant 2018-06074,
+attributed with certainty to a word or name; the
+                                                            DECRYPT – Decryption of Historical
+encrypted text is too short and contains numerous
+                                                            Manuscripts.
+nomenclature elements.
+                                                            6. References
+5. Conclusion
+                                                            Barillon, J., 1897-1899. Journal de Jean Barillon,
+Regardless of their date or origin, unidentified              secrétaire du chancelier Duprat, 1515-1521, ed.
+encrypted documents are less prevalent than                   Pierre de Vaissière, 2 vol.
+identified ones. Researchers often do not address
+them, and these documents pose multiple                     Biermann, N., Tomokiyo, S., and Lasry, G., 2023.
+                                                              What encryption errors can reveal: cross-cipher
+historical, archival, and cryptanalytic challenges.
+                                                              errors in Mary Queen of Scots’ letters. Proceedings
+Being deprived of any identification element                  of the 7th International Conference on Historical
+complicates every step of the document analysis,              Cryptology HistoCrypt2024, 17-26.
+especially for early encrypted documents. When
+facing an encrypted document, the first reaction is         Desenclos, C., 2021. Écrire le secret quotidien.
+                                                              Pratiques de la cryptographie au sein de la
+to search for the original cipher key, or encrypted
+                                                              diplomatie française (XVIe-premier XVIIe siècle).
+and possibly decrypted texts. This is most often              Spies, Espionage, and Secret Diplomacy in the
+not feasible with unidentified documents,                     Early Modern Period, 85–103.
+requiring exhaustive and time-consuming work in
+archives and libraries or a fair amount of luck. Our        Lasry, G., Biermann, N., and Tomokiyo, S., 2023.
+                                                              Deciphering Mary Stuart’s lost letters from 1578-
+three case studies suggest that cryptanalysis may
+                                                              1584. Crypotologia, 47, 101-202.
+be the most effective way to achieve, quicker and
+better, the identification (and analysis) of early          Héder, M., Megyesi, B., 2022. The DECODE
+modern documents, even though cryptanalysis                   Database of Historical Ciphers and Keys: Version
+itself faces additional challenges as neither the             2. Proceedings of the 5th International Conference
+language, the historical context, nor the cipher              on Historical Cryptology HistoCrypt2022, 111-114.
+type is known a priori. However, cryptanalysis              Kopal, N., Waldispühl, M., 2022. Deciphering three
+can enable the identification of the document                 diplomatic letters sent by Maximilian II in 1575.
+thanks to the deciphered content.                             Cryptologia, 46, 103-127.
+While the three cases have varying success                  Russel, J. G., 1971. The Search for Universal Peace:
+(depending not only on the absence of                         the Conferences at Calais and Bruges in 1521.
+identification but also on the size of the encrypted          Historical Research, 44, 162.
+texts), they all emphasize the dual nature of               Solente, S., 1980-2001. Les manuscrits des Béthune à
+codebreaking for early modern documents: it does              la Bibliothèque nationale.
+not rely only on cryptanalytic techniques but also
+on historical understanding. Reconstructing the
+
+
+                                                       50
+7. Appendix
+7.1. End of a scattered Duprat’s report (BnF, fr. 3092, fol. 101 ©Gallica-BnF)
+
+
+
+
+7.2. First page of the fr. 6632 letter (BnF, fr. 6632, fol. 39 ©BnF)
+
+
+
+
+                                                       51
+

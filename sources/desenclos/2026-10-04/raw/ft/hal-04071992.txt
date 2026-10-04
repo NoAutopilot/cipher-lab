@@ -1,0 +1,480 @@
+       Diplomate, huguenot ou humaniste ? Le modèle de l’agent
+          français auprès des princes protestants de l’Empire
+                              (1589–1620)
+                                                Camille Desenclos
+
+
+
+      To cite this version:
+     Camille Desenclos. Diplomate, huguenot ou humaniste ? Le modèle de l’agent français auprès des princes
+     protestants de l’Empire (1589–1620). Indravati Félicité (dir.). L’Identité du diplomate (Moyen Âge-XIXe siècle).
+     Métier ou noble loisir ?, Classiques Garnier, pp.31-44, 2020, 978-2-40610-464-3. ⟨hal-04071992⟩
+
+
+
+
+                                        HAL Id: hal-04071992
+                      https://u-picardie.hal.science/hal-04071992v1
+                                           Submitted on 15 Oct 2024
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+                                              HAL Authorization
+                                   Diplomate, huguenot ou humaniste ?
+     Le modèle de l'agent français auprès des princes protestants de l'Empire (1589-1620)
+
+
+                                                                                               Camille Desenclos
+                                                                                    Université de Haute-Alsace
+
+
+
+
+      Territoire politique complexe, le Saint-Empire confronte la diplomatie française à de
+nombreux enjeux depuis l'accession au trône de Henri IV et la conversion progressive au calvinisme
+de nombreux potentats impériaux1. L'émergence de nouveaux centres de pouvoir, dont la confession
+rejoint les inclinations premières du roi, jointe au besoin de s'attacher durablement l'amitié de ces
+potentats, oblige la diplomatie française à repenser les modalités de sa présence diplomatique
+auprès de ces territoires qui, par leur dynamique politique et institutionnelle particulière,
+questionnent le modèle, encore jeune, des représentations permanentes, avant tout adapté aux
+grandes Cours européennes2. La présence permanente auprès des princes protestants, officialisée en
+1589 3 , disparaît cependant dès 1620. Entre ces deux dates, se seront succédé quatre agents –
+Philippe Canaye, seigneur de Fresnes (1589-1593) ; Jacques Bongars (1593-1611) ; Jean Hotman,
+seigneur de Villiers-Saint-Paul (1609-1614) ; Étienne de Sainte-Catherine (1612-1620) – dont le
+statut variable révèle le difficile mariage entre les besoins diplomatiques particuliers créés par
+l'Empire et la structure diplomatique permanente. Plus encore, les fortes similitudes dans leurs
+qualités, parcours et réseaux, pourtant éloignés de ceux des autres agents diplomatiques français, ne
+manquent pas d'interpeller. Tous sont calvinistes, membres actifs de la République des Lettres et
+ont accompli l'intégralité de leurs missions diplomatiques, à une exception près, dans des territoires
+protestants, proches ou membres de l'Empire. S'il y eut quelques agents, ouvertement, protestants,
+lettrés ou ayant exercé au sein d'un seul territoire, la conjonction de ces qualités suggère l'existence
+d'un modèle recherché, ou du moins encouragé, par la diplomatie française pour répondre aux
+enjeux spécifiques que les princes protestants de l'Empire, devenus indispensables à la politique
+
+
+1        À la suite du Palatinat, redevenu calviniste en 1583, le landgrave de Hesse, en 1605 puis l'électeur de
+Brandebourg, en 1613, choisissent de se convertir, modifiant durablement l'équilibre confessionnel de l'Empire.
+2        Si la pratique des représentations permanentes s'est développée au cours du XVIe siècle, elle demeure
+exceptionnelle pour et auprès des « petits princes » (Lucien Bély, L'art de la paix en Europe : naissance de la
+diplomatie moderne XVIe -XVIIIe siècle, Paris, PUF, 2007, p. 298).
+3        Alors que les princes protestants de l'Empire faisaient essentiellement l'objet de missions extraordinaires,
+l'instruction délivrée au duc de Bouillon en octobre 1590 fait état de la volonté royale de maintenir un ambassadeur,
+permanent, dans l'Empire (Bibliothèque Nationale de France [désormais « BnF »], Cinq Cent Colbert 31, fol. 125) Voir
+également, Friedrich Beiderbeck, Zwischen Religionskrieg, Reichskrise und europäischem Hegemoniekampf : Heinrich
+IV. von Frankreich und die protestantischen Reichsstände, Berlin, Berliner Wissenschafts-Verlag, 2005, p. 86.
+
+                                                         1
+étrangère du roi, lui opposent.
+
+
+       Un statut institutionnel particulier
+       La nature composite de l'Empire constitue un véritable défi pour les diplomaties.
+L'établissement d'une résidence diplomatique suppose l'existence d'un centre politique identifié et
+stable, ce que l'Empire, à l'exception des Cours de Vienne et de Bruxelles, ne paraît fournir au
+tournant du XVIIe siècle. De fait, alors que les envois diplomatiques se font toujours à destination
+d'un État, Canaye, Bongars et Hotman sont envoyés vers plusieurs potentats afin de n'en privilégier
+un par rapport à l'autre. Il faut attendre 1612 pour que Sainte-Catherine soit envoyé vers le seul
+électeur palatin, alors à la tête de l'Union évangélique. S'appuyant sur l'activité diplomatique dense
+déployée par Henri de Navarre dans les années 1580, les premières résidences constituent une
+parfaite combinaison politique entre l'itinérance de l'extraordinaire et la permanence de l'ordinaire :
+elles confortent les princes protestants dans leur soutien au roi en illustrant la volonté royale de
+maintenir des liens forts, sans pour autant les institutionnaliser et devoir s'en justifier auprès des
+potentats catholiques. Surtout, elles permettent de s'adapter aisément aux besoins et circonstances
+évolutives des affaires tant impériales que françaises. Bongars ainsi ne reçoit pas moins de six
+instructions lors de ses deux décennies au service du roi4. Si des instructions multiples peuvent être
+provoquées par un retour temporaire en France ou un événement d'importance, leurs fréquence et
+contenu révèlent le statut conféré par la diplomatie française à Bongars : celle d'un agent
+extraordinaire que l'affectation systématique à l'Empire transforma, de fait, en résident permanent5.
+Alors que Bongars a œuvré, par ses séjours répétés, à la normalisation d'une présence et action
+diplomatique auprès des princes protestants, le statut de Jean Hotman est plus flou. Aucune
+instruction officielle n'a apparemment été émise ; seule une simple dépêche, annotée par Hotman
+comme « Mon instruction quand je vins en Juliers »6 , lui fut transmise. Dans cette dépêche, le
+secrétaire d'État des Affaires étrangères le charge de s'informer de l'état dans lequel se trouvent les
+affaires des Provinces-Unies et des duchés de Clèves et Juliers, ainsi que d'éventuelles menées
+diplomatiques étrangères. Hotman n'est initialement chargé d'aucune négociation ou office de
+représentation, uniquement d'une mission d'information. La raison en est simple : il n'est envoyé
+
+
+
+4       BnF, Manuscrits français [désormais « fr. »] 16201, fol. 415-422, 3 décembre 1593 ; fr. 7126, fol. 51-53,
+29 septembre 1594 ; fr. 7126, fol. 47-49, 2 février 1595 ; fr. 16201, fol. 106, 2 février 1599 ; fr. 16201, fol. 174-198,
+1609 ; fr. 16201, fol. 215-227, novembre 1609.
+5       L'instruction délivrée en 1599 est à cet égard représentative. Avant toute autre mission contextuelle, elle justifie
+le renvoi dans l'Empire de Bongars, qualifié d'« agent ordinaire », pour « continuer le soing qu'il a eu jusques à present
+de la conduitte [des affaires] » (BnF, fr. 16201, fol. 106).
+6       BnF, fr. 4030, fol. 7, Villeroy à Hotman, 14 juin 1609.
+
+                                                             2
+dans l'Empire pour le service du roi, mais par le duc de Bouillon 7 . La diplomatie française a
+simplement pris avantage, sur la suggestion de Hotman, de son séjour dans l'Empire pour disposer
+d'une source d'information supplémentaire 8 . Très rapidement cependant, le pouvoir royal paraît
+considérer Hotman comme un agent diplomatique et le charge de représenter de sa part discours et
+informations auprès des princes protestants, mais « comme de vous mesme »9. Sans être fréquente,
+une telle pratique est régulièrement mise en œuvre afin d'accroître, à coût et engagement moindres,
+points d'information et d'influence. Contrairement à la pratique courante cependant, le séjour de
+Hotman s'inscrit dans la durée, même si les conditions et temporalité du glissement d'un service
+ponctuel à un service diplomatique demeurent peu claires. En septembre 1611, Hotman est
+officiellement recommandé aux sieurs de La Vieuville et de Sèlves, envoyés à Aix-la-Chapelle,
+comme « agent residant à Dusseldorf » 10 . L'adjonction de « agent » et « residant » révèle ici la
+profonde polysémie, volontairement entretenue, du terme « résident » dont l'utilisation dans les
+terminologie et hiérarchie diplomatiques n'est encore entièrement fixée11. Hotman n'est pas un agent
+diplomatique mais un serviteur du roi, séjournant pour un temps indéterminé, résidant, donc, dans
+l'Empire. Ni informateur car maintenu à Düsseldorf par la seule volonté royale 12 , ni agent
+diplomatique officiellement appointé, Hotman sert simplement les intérêts du roi à l'étranger,
+jusqu'à devenir, tant par la pratique que par la longueur de son séjour, résident permanent13.
+Si les dénominations diplomatiques fluctuantes ne sont pas liées à Hotman ou à l'Empire mais sont
+la conséquence d'une diplomatie encore jeune dans ses institutions et pratiques, l'origine de sa
+présence dans l'Empire et les modalités de son maintien le différencient des autres représentants
+permanents. Plus que des résidents permanents, Canaye, Bongars et Hotman ont été des agents
+extraordinaires que les circonstances internationales et amitiés particulières ont maintenus auprès
+des princes protestants de l'Empire, réunissant les cadres traditionnels des diplomaties ordinaire et
+extraordinaire. Sont donc attendues d'eux les qualités traditionnellement attribuées aux diplomates
+mais également des compétences, aussi rares que spécifiques, pour faire face aux enjeux tant de leur
+
+7        BnF, fr. 16201, fol. 212, Instruction délivrée à Badouere, août 1609.
+8        BnF, fr. 4030, fol. 256, Villeroy à Hotman, 4 juin 1609.
+9        BnF, fr. 4030, fol. 20, Villeroy à Hotman, 6 septembre 1609. L'expression est soudainement chiffrée, suggérant
+un maintien volontaire du statut ambigu de Hotman.
+10       BnF, fr. 16201, fol. 331, 10 septembre 1611.
+11       Jean Hotman, dans son traité, met en valeur la difficulté de définir avec précision une fonction qui n'a pas
+encore réellement de nom, « legatus » demeurant beaucoup plus vague qu'« ambassadeur » (Jean Hotman,
+L'ambassadeur, s.l., 1603, p. 2). Voir également Camille Desenclos, Les mots du pouvoir : la communication politique
+de la France dans le Saint-Empire au début de la guerre de Trente Ans (1617-1624), thèse de doctorat, École nationale
+des chartes, 2014, t. 1, p. 106-107 ; Ruth Kohlndorfer-Fries, Diplomatie und Gelehrtenrepublik : die Kontakte des
+französische Gesandten Jacques Bongars (1554-1612), Tübingen, Niemeyer, 2009, p. 34-37.
+12       Ses dépêches, tout comme les commandements qui lui sont régulièrement adressés, le distinguent par ailleurs du
+simple informateur.
+13       Le passeport délivré en 1611 à la femme de Hotman pour lui permettre de le rejoindre à Düsseldorf ancre
+officiellement son séjour dans la durée (BnF, fr. 4030, fol. 4, 18 avril 1611).
+
+                                                          3
+charge que des territoires vers lesquels ils sont envoyés.
+
+
+
+       Une professionnalisation par la spécialisation
+
+       Déterminer les qualités requises pour la pratique diplomatique au tournant du XVIIe siècle est
+une véritable gageure. Le secrétariat d'État des Affaires étrangères est peu disert sur sa propre
+conception de l'exercice diplomatique : aucun mémoire dressant le portrait, théorique ou pratique,
+bon ou mauvais, de l'agent diplomatique n'a été conservé et les dépêches sont presque
+exclusivement dédiées à la mise en œuvre de la politique étrangère. Les missions à mener sont
+décrites, mais jamais les raisons du recrutement, les compétences ou connaissances à mobiliser.
+Seules les instructions et lettres de créance fournissent quelques rares éléments, difficiles
+d'interprétation en raison de leur caractère public et donc nécessairement laudatif. Le pouvoir royal
+s'y fend parfois de quelques mots pour justifier le choix d'un agent. À la fidélité ou affection portée
+au service du roi, s'ajoute régulièrement l'expérience, sans néanmoins que les modalités de son
+acquisition ne soient précisées 14 . S'il n'est spécifique à l'Empire, ce dernier critère souligne la
+primauté progressivement accordée à une efficacité et qualité de service immédiates.
+Les qualités du « parfait ambassadeur » 15 cependant demeurent bien connues grâce au traité de
+Hotman, L'ambassadeur, qui, bien que théorique, s'appuie amplement sur l'expérience de son auteur
+et celle de ses contemporains pour se parer d'un certain réalisme. Outre sa noblesse, l'ambassadeur
+doit être pourvu de toutes les vertus attribuées aux princes afin de les représenter dignement et leur
+faire honneur. Il doit être un homme bien né, doté d'une belle apparence, bon rhéteur, doté de
+connaissances en histoire et politique. Il doit donc avoir voyagé et exercé au préalable des charges
+d'État. À ce titre, les agents français envoyés auprès des princes protestants16 correspondent à ce
+modèle à la fois idéal et réel17. Si rien ne les destinait à entrer en diplomatie, n'appartenant pas au
+vivier des serviteurs du roi à l'étranger, ils en reprennent le parcours en assistant un diplomate afin
+d'acquérir, en l'absence de toute formation théorique aux fonctions diplomatiques, les compétences
+
+14      Bibliothèque Municipale d’Orléans [désormais « BM Orléans »], Ms 486, n.f., lettre de créance à l'intention de
+Bongars, 7 mai 1600.
+15      Hillard von Thiessen, « Diplomatie vom type ancien. Überlegungen zu einem Idealtypus des frühneuzeitlichen
+Gesandtschaftswesen », dans : Hillard von Thiessen, Christian Windler (dir.), Akteure der Außenbeziehungen :
+Netzwerke und Interkulturalität im historischen Wandel, Cologne, Böhlau, 2010, p. 471-503.
+16      Sainte-Catherine demeure l'agent le plus méconnu. Nous ignorons tout ou presque de son origine sociale, de sa
+formation et plus largement de sa vie privée. Seule une mention d'un procès à Bâle entre 1623 et 1624 (BnF, fr. 4122,
+fol. 121, Lingelsheim à Sainte-Catherine, Strasbourg, 27 novembre 1623) suggère l'existence d'attaches en Suisse,
+fréquentes dans la communauté huguenote qui s'y réfugie dans la seconde moitié du XVIe siècle.
+17      Seule la qualité de leur naissance pourrait être mise en doute. La noblesse des Hotman n'est reconnue que par
+arrêt en 1615, sur de faux fondements par ailleurs (Robert Descimon, « La réconciliation des Hotman protestans et
+catholiques (des années 1580 aux années 1630) », dans : Thierry Wanegfflen (dir.), De Michel de L'Hospital à l'édit de
+Nantes : politique et religion face aux Églises, Clermont-Ferrand, 2002, p. 529-562), tandis que la noblesse de Bongars
+date d'une génération seulement (Ruth Kohndorfer-Fries, Diplomatie und Gelehrtenrepublik…, op. cit., p. 20).
+
+                                                          4
+requises. Cette première expérience surtout inclut déjà l'Empire et l'Europe protestante : Bongars
+assiste Jacques de Ségur-Pardaillan, envoyé en 1585 auprès des princes protestants européens18 ;
+Hotman accompagne Robert Dudley, comte de Leicester, aux Pays-Bas19 avant, en 1597, d'assister
+comme secrétaire son oncle François de Mortefontaine, ambassadeur en Suisse20. Seules exceptions,
+Canaye assiste François de Noailles lors de son ambassade au Levant en 157221 et Sainte-Catherine
+paraît avoir été envoyé seul en Suède en 1605 22 , probablement en raison de l'importance
+diplomatique moindre accordée à cet envoi. Pour sa seconde mission à l'inverse, il accompagne en
+1607 le Président Jeannin aux Provinces-Unies23. Tous enfin ont accompli, avant leur entrée au
+service du roi, un Grand Tour ou de nombreux voyages en Europe24.
+
+
+       Hotman opère, dans son traité, une véritable synthèse de trois modèles, anciens ou en
+devenir – le noble diplomate, le diplomate lettré et le diplomate de métier –25 dont la retranscription,
+sans que cela ne soit un hasard, s'observe parmi les agents français envoyés dans l'Empire. Non
+seulement Hotman se réfère à Bongars comme exemple de parfait diplomate26, mais il cherche alors
+à obtenir une charge royale et met donc, incidemment, ses propres qualités en valeur. Ce modèle ne
+saurait donc être considéré comme représentatif de l'idéal recherché et mis en application par la
+diplomatie française, tout au plus comme une déclinaison, humaniste et pragmatique, d'un idéal
+générique, mais présentant des innovations notoires. Hotman y met notamment en exergue le besoin
+d'adaptation des agents aux territoires étrangers vers lesquels ils sont envoyés tant par la
+confession27, la maîtrise des langues étrangères28 que l' ampleur du réseau d'informateurs29.
+
+
+18        Ibid., p. 48-52.
+19        Fernand Schickler, « Hotman et son temps », Bulletin de la société d'histoire du protestantisme français, t. 17,
+1868, p. 102-103 ; Mona Garloff, Irenik, Gelehrsamkeit und Politik : Jean Hotman und der europäische
+Religionskonflikt um 1600, Göttingen, Vandehoeck & Ruprecht, 2014 p. 50.
+20        Ibid., p. 57.
+21        Sylvio de Franceschi, « La diplomatie henricienne et les ambitions françaises de suprématie temporelle sur la
+république chrétienne », Histoire, économie et société, t. 23-4, 2004, p. 560.
+22        Madeleine Haehl, Les affaires étrangères au temps de Richelieu : le secrétariat d'État, les agents diplomatiques
+(1624-1642), Bruxelles, Peter Lang, 2006, p. 281n.
+23        BnF, Pièces Originales 2746 ; cité par Sven Adolf, Relation du royaume de Suède par Monsieur de Sainte-
+Catherine, Göteborg, 1980, p. 10.
+24        Béatrice Nicollier-De Weck, Hubert Languet (1518-1581) : un réseau politique international de Mélanchton à
+Guillaume d'Orange, Genève, Droz, 1995, p. 199-200 ; Ruth Kohlndorfer-Fries, Diplomatie und Gelehrtenrepublik…,
+op. cit., p. 27-30 ; Mona Garloff, Irenik, Gelehrsamkeit und Politik…, op. cit., p. 49-57.
+25        Souvent désigné comme « diplomate savant », ce modèle ne saurait être confondu avec le diplomate lettré ou
+humaniste du XVIe siècle dont les rapports au pouvoir étaient plus distants, notamment en raison d'une imbrication plus
+étroite entre les réseaux de la République des Lettres et le réseau européen du pouvoir (Ruth Konhldorfer-Fries, « Le
+réseau politico-savant du diplomate Jacques Bongars (1554-1612) », dans : Marc Fumaroli (dir.), Les premiers siècles
+de la République européenne des Lettres, Paris, Alain Baudry, 2005, p. 324).
+26        Mona Garloff, Irenik, Gelehrsamkeit und Politik…, op. cit., p. 57-58.
+27        Jean Hotman, L'ambassadeur…, op. cit., p. 7-9 et p. 50.
+28        Ibid., p. 16.
+29        Ibid., p. 63-64.
+
+                                                            5
+Placer un catholique intransigeant auprès d'alliés protestants serait mal perçu : il importe de
+maintenir une relation de confiance et d'amitié avec les princes protestants, plus encore après la
+conversion au catholicisme de Henri IV. L'envoi d'agents, déjà connus de ces derniers et partageant
+leur confession, est sinon nécessaire, du moins souhaitée par les princes eux-mêmes30 et facilitée
+par l'avènement de Henri IV. De fait, les quatre agents français appartiennent tous à la communauté
+huguenote et ne s'en cachent guère. Si l'Empire constitue un des rares territoires vers lesquels des
+huguenots peuvent être envoyés, la confession fait ici office de critère de recrutement par le pouvoir
+royal.
+Au-delà de cet atout confessionnel, d'autres compétences spécifiques, notamment linguistiques, ont
+certainement favorisé leur entrée au service du roi. Bongars fait ainsi ses débuts comme
+« secrétaire-interprète », révélant une rare compétence à la fin du XVIe siècle : la maîtrise de
+l'allemand, langue encore associée aux reîtres voire aux peuples barbares31. Si le français et le latin
+sont les principales langues employées lors des interactions, orales ou écrites, avec les princes
+protestants ou leurs conseillers, l'allemand demeure indispensable pour collecter des informations et
+nouer durablement des relations. Résultant certainement de leurs années universitaires32, de leurs
+voyages ou plus largement d'un arrière-plan familial et amical favorable, cette connaissance dépasse
+le seul cadre linguistique et laisse entrapercevoir une véritable culture germanophone, voire
+germanophile, atout essentiel pour une intégration rapide dans les sociétés impériales. Celle-ci étant
+fort peu partagée dans le royaume de France, il n'est guère étonnant de voir émerger un nouveau
+type d'agent, hors des catégories nobiliaires et politiques traditionnelles. Non seulement ces qualités
+permettent d'assurer une représentation positive du roi de France, la personnalité des agents
+répondant en tout point aux attentes et habitus des princes protestants ; mais, par leur connaissance
+préalable du territoire impérial, ceux-ci comprennent parfaitement les enjeux complexes de l'Empire
+et peuvent servir efficacement les intérêts du roi de France.
+Cette efficacité est enfin facilitée par leur appartenance préalable à la République des Lettres,
+laquelle a, par ailleurs, favorisé le développement des qualités précitées (vaste horizon culturel et
+linguistique, expérience de l'étranger...). Au-delà de leur activité érudite (traductions, éditions,
+publications propres), tous entretiennent une intense correspondance à travers l'Europe. Davantage
+qu'un diplomate lettré, c'est un humaniste bien informé, et disposant de points de contacts dans
+l'Empire, qui est ici recherché par la diplomatie française. Avant leur envoi dans l'Empire, tous
+
+30      BnF, fr. 4122, fol. 53-54, Lingelsheim à Sainte-Catherine, 11 mars 1621.
+31      Paul Lévy, La langue allemande en France : pénétration et diffusion des origines à nos jours, Paris, IAC, 1950,
+p. 87-88.
+32      Canaye a étudié le droit à Heidelberg (Sylvio de Franceschi, « La diplomatie henricienne ... », art. cit., p. 560),
+Bongars à Heidelberg, Marbourg et Strasbourg (Ruth Kohlndorfer-Fries, Diplomatie und Gelehrtenrepublik…, op. cit.,
+p. 21).
+
+                                                            6
+étaient déjà insérés dans un réseau épistolaire international et jouissaient d'une certaine proximité
+avec certains membres des sociétés protestantes rhénanes, à l'image de Canaye qui rencontre
+Joachim Camerarius au début des années 1570 lors de son passage par Francfort avant d'aller en
+Italie 33 . De même, Sainte-Catherine correspond déjà en avril 1611, soit avant le début de sa
+résidence auprès de l'électeur palatin, avec Benjamin Buwinckhausen, conseiller du duc de
+Wurtemberg. Ce dernier surtout n'hésite pas à s'adresser à Sainte-Catherine comme son « beau et
+parfait amy »34. Si la formule est nécessairement emphatique, elle n'en traduit pas moins le caractère
+complexe de ces correspondances caractéristiques de la République des Lettres au début du
+XVIIe siècle : amicales, mais aussi confessionnelles, érudites et politiques, sans que l'un ne prenne
+
+nécessairement le pas sur l'autre ou ne s'en dissocie clairement. Pour la diplomatie française
+néanmoins, la participation d'un nombre important de conseillers et membres influents des États
+protestants à ce réseau épistolaire informel et polycentrique constitue un atout indiscutable par
+l'accès privilégié à l'information que de semblables relations octroient. Leurs mentions dans la
+correspondance avec le pouvoir royal cependant demeurent ponctuelles. Sans la conservation
+exceptionnelle d'une partie de la correspondance personnelle des agents français35, l'ampleur de leur
+insertion dans les sociétés impériales protestantes et plus largement l'intense activité épistolaire
+déployée n'auraient pu être devinées. Seuls les principaux conseillers politiques sont mentionnés,
+sans qu'il ne soit possible de déterminer la nature exacte de cette mention ou les modalités de
+collecte de l'information, amicales ou strictement diplomatiques. Si une porosité ascendante, de la
+République des Lettres à la structure diplomatique, semble s'opérer sur le plan informationnel36, il
+conviendra de déterminer, par le croisement futur des informations contenues dans les
+correspondances diplomatiques et personnelles, l'existence d'autres formes de porosité, volontaires
+ou involontaires, au profit ou au détriment de la diplomatie française.
+
+
+       Un métier temporaire
+       Contrairement à leur activité continue, parallèle ou connexe, au sein de la République des
+Lettres, le service diplomatique s'inscrit dans une durée toute relative pour Bongars, Hotman et
+Sainte-Catherine et pose inévitablement la question d'une éventuelle professionnalisation. Par son
+intense activité épistolaire, l'ampleur de ses compétences et la durée de son service à l'étranger (plus
+de 25 ans), Bongars pourrait légitiment être considéré comme diplomate de métier. À cet égard, son
+
+
+33     Béatrice Nicollier-de Weck, Hubert Languet…, op. cit., p. 200.
+34      BnF, fr. 4117, fol. 43, Buwinckhausen à Sainte-Catherine, 20 avril 1611.
+35      Camille Desenclos, « Au-delà de toute diplomatie : la constitution de réseaux parallèles protestants et érudits
+entre France et Empire au début du XVIIe siècle », Revue d'histoire du protestantisme, 4 (2016), p. 533-536.
+36      Ibid., p. 543-546.
+
+                                                            7
+long plaidoyer en février 1610 pour obtenir congé, résume parfaitement, au-delà de son caractère
+singulier, sa conception du service du roi et de son parcours diplomatique :
+
+       Je me suys tousjours cogneu fort mal propre au service des grands princes. Aussy, Monsieur, ne m'y suys-je
+       jamais ingeré. Je n'y suys point entré de propos deliberé. Les vents et les vagues de nos malheureuses guerres
+       m'y ont porté comme en une fascheuse mer. J'ay desiré et tasché plusieurs fois de m'en retirer et l'ay sollicité
+       mesmes apres la fureur de nos tempestes passées, voyant plusieurs personnes mieux faites à ce mestier que moy
+       […]. Mais n'ayant jamais cherché en servant le roy que le service du roy, j'ay sceu, Monsieur, qu'il m'estoit
+       aucunement permis de suyvre la liberté de mon naturel. Le roy, ny vous, Monsieur, ne l'avez jamais trouvé
+       mauvais37.
+
+Plutôt que diplomate de métier, Bongars paraît se considérer comme un serviteur du roi s'étant
+efforcé de réussir dans la condition qui lui a été attribuée en mettant à disposition, sur un temps long,
+ses compétences au service de son souverain. Bongars cependant n'évoque sa charge, mais un
+« mestier » dont il reprend l'acception large du début du XVIIe siècle, adaptée à la pratique
+diplomatique, entre art, habileté, savoir-faire et profession 38 , tout en la précisant. L'association
+commune de la diplomatie à l'art de négocier demeure mais cette dernière tend désormais à
+s'inscrire dans un cadre d'exercice précis, le service du roi à l'étranger39, associé à des compétences
+identifiées, spécifiques et partagées, sinon par une profession, par plusieurs serviteurs et sujets du
+roi. Pour autant, l'activité diplomatique n'est, en aucun cas, considérée comme exclusive et
+permanente ou comme une simple occupation. Ce sont autant ses compétences et talents particuliers
+que les besoins diplomatiques qui ont maintenu aussi longtemps Bongars dans l'Empire, faisant de
+lui ce qui se rapproche le plus, au début du XVIIe siècle, du diplomate de métier. Cette permanence
+dans l'exercice diplomatique demeure néanmoins rare, témoignant d'une conception non encore
+cloisonnée, ou entièrement spécialisée, du service du roi dans laquelle le service à l'étranger
+constitue souvent un préalable à l'obtention de charges plus prestigieuses. Canaye est ainsi nommé
+en 1594 président de la chambre de l'édit de Castres avant d'être envoyé, en 1601, après s'être
+converti au catholicisme, comme ambassadeur auprès de la République de Venise. À l'inverse,
+Sainte-Catherine, plus encore Hotman, sollicitent, sans succès, de nouvelles charges 40 . Leur
+confession, le contexte de leur retour en France (après la conclusion des doubles mariages avec
+
+37       BnF, fr. 15922, fol. 56, Bongars à Villeroy, 12 février 1610.
+38      Le Thresor de la langue françoyse (1606) définit le terme « mestier » en recourant aux termes latins « ars »,
+« artificium » (p. 407), que l'on pourrait traduire comme : talent, savoir-faire, habileté, art et par extension ce à quoi
+s'applique le talent ou le savoir-faire, soit la profession, l'art ou la science (Félix Gaffiot, Dictionnaire latin-français,
+Paris, Hachette, 1934, p. 165).
+39      Par là, Bongars mobilise également l'étymologie même du mot « mestier » (« ministerium ») : « fonction de
+serviteur, service, fonction ».
+40       Les « carrières » diplomatiques ne sont encore la norme, 40 % des agents diplomatiques au début du XVIIe siècle
+n'exercent qu'une seule charge à l'étranger (Claire Martin, Mémoires de Benjamin Aubéry du Maurier (1566-1636),
+Genève, Droz, 2010, p. 54).
+
+                                                             8
+l'Espagne pour Hotman, pendant de nouvelles rebellions huguenotes pour Sainte-Catherine) et leur
+proximité avec certains conseillers impériaux, devenus persona non grata après 1620, ont
+inévitablement freiné leur maintien et progression au sein de l'appareil d'État41. Outre des missions
+ponctuelles dans les territoires scandinaves ou cantons helvétiques, seule l'ambassade auprès des
+Provinces-Unies peut désormais leur être confiée, tandis que les charges octroyées à des protestants
+sous Henri IV sont progressivement transférées à des catholiques. Sans pouvoir être considérée
+comme la reconnaissance de leurs premiers services, la résidence auprès des princes protestants
+constitue désormais une voie sans retour. En aucun cas, la présence d'agents protestants au sein de
+l'appareil diplomatique n'a été la traduction d'une quelconque sécularisation de celui-ci, mais
+davantage d'une mise en adéquation avec la politique étrangère
+
+Hotman et Sainte-Catherine, pourtant véritables experts des territoires impériaux, ne sont pas
+sollicités par le pouvoir royal après leur retour en France, ne serait-ce que pour des avis ou des
+informations ponctuelles. Seul Sainte-Catherine continue à fournir pendant quelques mois les avis
+de Heidelberg avant de s'interrompre42. Si l'évolution de la politique étrangère française jointe à des
+suspicions de partialité, voire de tentatives de prise d'influence, à l'égard de Hotman43, a motivé le
+refus du pouvoir royal de confier d'autres charges, politiques ou diplomatiques, à Hotman et Sainte-
+Catherine, la réaction des agents révèle une conception similaire de l'exercice diplomatique, non
+tant lié à un souverain qu'à la mise en œuvre, plus ou moins temporaire, de compétences et
+connaissances adaptées à une politique donnée. Sainte-Catherine sollicite régulièrement le
+secrétaire d'État des Affaires étrangères, mais également le roi de Suède et le duc de Wurtemberg.
+Bien que s'estimant trop âgé pour être envoyé de nouveau comme agent diplomatique dans
+l'Empire44, il cherche à se maintenir au service d'un prince. Jamais cependant la nature exacte de ce
+service n'est mentionnée, au seul profit de l'« entretenement » recherché par Sainte-Catherine45. Ce
+dernier semble davantage en quête d'une charge d'informateur46, plus conforme à son âge, suggérant
+en filigrane que la résidence diplomatique peut être considérée comme activité à temps plein, mais
+non nécessairement définitive selon une forme de mobilité dans le service. Au-delà de l'attachement
+non exclusif à un prince, les arguments employés par Sainte-Catherine révèlent toute l'ambiguïté de
+
+41      Ibid., p. 55-67.
+42      Hormis quelques lettres, souvent non datées et sous forme de brouillons (BnF, fr. 4114 ; fr. 4121), aucune trace
+d'une correspondance entre Sainte-Catherine, après son retour en France, et le pouvoir royal n'a été retrouvée à ce jour.
+De même, aucune transmission d'informations au pouvoir royal n'est mentionnée dans ses autres correspondances.
+43      Hotman est accusé de partialité dans l'exercice de sa charge par le duc de Neubourg (BnF, fr. 15926, fol. 92,
+Hotman à Puisieux, 26 avril 1614). Si cela ne constitue pas le motif officiel de son retour en France, cela y a, selon toute
+probabilité, grandement contribué. Voir Camille Desenclos, « Au-delà de toute diplomatie... », art. cit., p. 548-551.
+44      BnF, fr. 4114, fol. 199, Sainte-Catherine à Puisieux, 14 avril 1624.
+45      BnF, fr. 4114, fol. 218, Sainte-Catherine à Puisieux, s.d..
+46      Sainte-Catherine propose notamment d'informer le roi de Suède des affaires françaises en échange d'une
+pension (BnF, fr. 4114, fol. 216, Sainte-Catherine à La Gardie, s.d.).
+
+                                                             9
+sa conception de l'exercice diplomatique. Il s'agit pour lui de trouver une place mieux payée mais
+aussi plus stable. Le délicat équilibre entre profession et occupation demeure, sans que cela ne
+doive être considéré comme le résultat d'une quelconque confusion chez Sainte-Catherine. Être
+diplomate n'est pas encore un métier mais plus tout à fait une occupation, encore moins un « noble
+loisir ».
+
+
+
+       Davantage que des diplomates de métier, s'agit-il donc d'érudits devenus serviteurs du roi et
+dont les connaissances et compétences sont mises à profit, parfois accrues, lorsque le besoin s'en
+ressent, par la diplomatie française. Cette absence, volontairement entretenue, de structure
+diplomatique fixe fait naître une véritable spécificité, entre poursuite du modèle du diplomate lettré
+et pré-professionnalisation47. Si le modèle du « diplomate savant » est souvent associé à Bongars, il
+ne retranscrit que partiellement la complexité des services et personnalités des agents français
+auprès des princes protestants de l'Empire. Certes, ce modèle n'est pas un pur produit de la
+diplomatie française mais de l'humanisme tardif. Bien que présent dans toute l'Europe, il ne devient
+pas la norme au sein de la diplomatie française. Quelles que soient les évolutions structurelles de la
+diplomatie européenne et de la République des Lettres favorisant l'émergence d'un « diplomate
+savant » 48 , celui-ci demeure dépendant d'un territoire – les zones d'influence politique de la
+République des Lettres sont loin de recouvrir l'ensemble de l'Europe diplomatique – mais surtout
+d'une politique étrangère favorable, ou du moins prenant en compte, les princes protestants. Seule la
+conjonction de ces deux facteurs, jointe à la politisation de la République des Lettres, confère à ces
+diplomates savants une plus-value, par une efficacité accrue dans des territoires où la recomposition
+des pouvoirs paraît permanente, les conflits incessants et la structuration diplomatique délicate. La
+spécialisation de l'appareil diplomatique, par le recours à de semblables personnalités, est d'autant
+plus aisée que seules négociations de terrain et intenses missions d'information sont attendues d'eux,
+bien loin des traditionnelles missions de représentation du roi, pour lesquelles l'appartenance à la
+société de cour demeure indispensable, et que ces charges auprès de Cours réputées peu raffinées,
+impliquant voyages incessants, faibles gages et reconnaissance limitée, n'attirent guère les serviteurs
+
+47       Bongars est régulièrement considéré comme l'archétype du diplomate savant dont l'idéal humaniste aurait
+favorisé une professionnalisation de la pratique politique (Hillard von Thiessen, « Diplomatie vom type ancien... », art.
+cit., p. 495). Si l'arrière-plan humaniste a évidemment joué un rôle, la diplomatie française n'est pas un observateur
+passif de cette évolution mais un acteur à part entière comme en témoigne la spécialisation, bien que plus progressive,
+des fonctions inférieures tant dans la pratique diplomatique que dans certains territoires.
+48       Ruth Kohldorfer-Fries, « Le réseau politico-savant... », art. cit., p. 324 et p. 332. Ruth Kohlndorfer-Fries
+minimise cependant la structuration de la diplomatie européenne. Si elle n'est pas encore professionnalisée, elle est
+désormais institutionnalisée sous sa forme permanente, en France comme dans d'autres États européens. Le modèle du
+diplomate savant ne supplée donc pas tant une absence de structuration qu'une volonté de limiter la structuration dans
+certains territoires.
+
+                                                          10
+habituels du roi à l'étranger.
+
+Si au regard de l'efficacité attendue les fonctions des quatre agents dans l'Empire sont bien loin de
+l'occupation temporaire, elles n'en constituent pas moins un métier. À l'inverse, leur spécialisation
+nimbe leur activité diplomatique d'un véritable professionnalisme et les rapproche, autant que les
+circonstances le permettent, d'un diplomate, sinon de métier, du moins d'expérience. Répondant en
+tout point aux besoins contextuels et structurels de la diplomatie française, cette double
+appartenance, au service du roi et à la société européenne protestante, est recherchée et entretenue
+par la diplomatie française qui la juge idoine pour défendre et faire valoir les intérêts français auprès
+des princes protestants. À partir des années 1620 cependant, avec la déroute de l'Union évangélique,
+les territoires protestants rhénans ne présentent plus le même intérêt. Une présence permanente,
+quelle que soit sa forme, n'est plus nécessaire. Si leur durée limitée ne permet pas de parler de
+professionnalisation, les résidences auprès des princes protestants de l'Empire ont néanmoins offert
+un premier, bref, exemple de pré-spécialisation par la sélection de profils adaptés aux territoires
+concernés.
+
+
+
+
+                                                   11
+

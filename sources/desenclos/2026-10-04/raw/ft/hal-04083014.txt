@@ -1,0 +1,701 @@
+      Deciphering Charles Quint (A diplomatic letter from 1547)
+            Cécile Pierrot, Camille Desenclos, Pierrick Gaudry, Paul Zimmermann
+
+
+
+      To cite this version:
+     Cécile Pierrot, Camille Desenclos, Pierrick Gaudry, Paul Zimmermann. Deciphering Charles Quint (A diplo-
+     matic letter from 1547). 6th International Conference on Historical Cryptology, HistoCrypt, Jun 2023, Munich,
+     Germany. pp.148-158, ⟨10.3384/ecp195704⟩. ⟨hal-04083014⟩
+
+
+
+
+                                        HAL Id: hal-04083014
+                              https://hal.science/hal-04083014v1
+                                           Submitted on 26 Apr 2023
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+           Distributed under a Creative Commons CC BY 4.0 - Attribution - International License
+                                 Deciphering Charles Quint
+                               (A diplomatic letter from 1547)
+                   Cécile Pierrot                              Camille Desenclos
+                Université de Lorraine                  Université de Picardie Jules-Verne
+                CNRS, Inria, LORIA                         Centre d’histoire des sociétés,
+               F-54000 Nancy, France                        des sciences et des conflits
+             cecile.pierrot@inria.fr                         F-80025 Amiens Cedex 1
+                                                       camille.desenclos@u-picardie.fr
+
+                  Pierrick Gaudry                                Paul Zimmermann
+               Université de Lorraine                          Université de Lorraine
+                CNRS, Inria, LORIA                               CNRS, Inria, LORIA
+               F-54000 Nancy, France                            F-54000 Nancy, France
+            pierrick.gaudry@loria.fr                         paul.zimmermann@inria.fr
+
+                    Abstract                           force attacks were hopeless and cleverer methods
+                                                       were unsuccessful. This initial failure reveals the
+    An unknown and almost fully encrypted              mutual benefits for cryptographers and historians
+    letter written in 1547 by Emperor                  to work together in order to uncover the content
+    Charles V to his ambassador at the French          of an almost fully encrypted letter and, above all,
+    Court, Jean de Saint-Mauris, was identi-           to better understand the encryption methods, first
+    fied in a public library, the Bibliothèque        by working from scratch, then by comparing with
+    Stanislas (Nancy, France). As no decryp-           other deciphered letters and finally by merging
+    tion of this letter was previously published       with former partially recovered keys.
+    or even known, a team of cryptographers
+    and historians gathered together to study
+    the letter and its encryption system. First,
+                                                       2     General context
+    multiple approaches and methods were
+                                                       2.1    The story of the project
+    tested in order to decipher the letter
+    without any other specimen. Then, the              The existence of an encrypted letter of Charles V,
+    letter has now been inserted within the            which had not yet been deciphered, was known in
+    whole correspondence between Charles               literary and cultural circles in the city of Nancy,
+    and Saint-Mauris, and the key has been             but this letter was neither properly identified nor
+    consolidated thanks to previous key                yet digitized. Two years passed between the first
+    reconstructions. Finally, the decryption           mention of this letter by some acquaintances of
+    effort enabled us to uncover the content of        C. Pierrot, and the moment when she was able
+    the letter and investigate more deeply both        to see it and start working on it, thanks to a
+    cryptanalysis challenges and encryption            word-of-mouth game to find the letter that even-
+    methods.                                           tually worked. A mixed team of experts, first
+                                                       cryptographic researchers and then historians, was
+1   Introduction                                       formed.
+What is required to decipher an encrypted letter          Now openly available online, the letter consists
+which was composed five centuries ago? Mod-            of two folios: three pages of text and an address on
+ern cryptographic knowledge would normally be          the last page. The first lines and the last two para-
+more than sufficient to decipher a 3-page letter.      graphs on the first page as well as the last lines
+That was the first guess while discovering, in a       of the third page (date and signatures) are cleart-
+public library, the Bibliothèque Stanislas (Nancy,    ext. As for many letters produced at that time by
+France), an isolated encrypted letter that was writ-   the Imperial chancellery or by the Imperial cabinet
+ten on 22nd February 1547 by Emperor Charles V         (Stix, 1934-1936), the letter was written in French.
+to Jean de Saint-Mauris, his ambassador at the         The bulk of the document (two and a half pages)
+French Court. But, due to too many symbols, brute      is ciphertext. We counted 1767 symbols taken
+from a set of 125 different ones1 of various types:                 mainly been preserved in the state archives that
+Latin characters, mathematical symbols and so on.                   match the main location of the recipients 4 . It
+Cleartext allowed a quick identification of the let-                can thus be found in Vienna for the letters to
+ter, written by Emperor Charles V to his ambas-                     Charles and Granvelle (OeStA-HHStA, Fr 10-
+sador at the French Court, Jean de Saint-Mauris.                    16)5 , in Brussels for the letters to Maria of Austria
+Sent to Francis I in 1544 as permanent ambas-                       (AGR Audience 420; AGR Audience 1672) and
+sador, Saint-Mauris was related, by his wife, to                    in Simancas for the letters to Infante Philip and
+Antoine Perrenot de Granvelle, Charles’ state sec-                  Los Cobos6 . Within this active correspondence,
+retary and main counsellor in the Holy Roman                        the two previous letters of Saint-Mauris to Charles
+Empire, and both were from Franche-Comté. This                     have been identified: 11th February 1547 (copy)
+provided a substantial leverage for the decipher-                   (BM Besançon, Granvelle 40)7 and 6th February
+ment process.                                                       1547 (Archives nationales, K1487)8 .
+                                                                       On the other hand, the passive correspondence
+2.2    An isolated letter in a French public                        was often kept by the ambassador with his private
+       library                                                      papers. Saint-Mauris’ passive correspondence is
+Although the letter meets the usual patterns of en-                 no exception. One part is preserved at the pub-
+crypted letters from the mid-16th century (diplo-                   lic library in Besançon (BM Besançon, Granvelle
+matic context, cleartext and ciphertext on the same                 40; BM Besançon, Granvelle 70) but it concerns
+page, alphabetical and numerical symbols, etc),                     mainly the year 1545. Further letters, especially
+its preservation history led us to adapt and ques-                  from Charles, are probably lost or scattered across
+tion the traditional approach to such letters. This                 Europe without global identification9 . But if the
+letter wasn’t hitherto properly identified, although                preservation of some letters in Besançon makes
+Saint-Mauris is well known to early modern his-                     sense (Saint-Mauris’ correspondence is preserved
+torians, in particular because of his broad and                     along with the Granvelle collection), the existence
+extensive correspondence in which he reported                       of a single letter in Nancy is much more surpris-
+on the complex relationship with Francis I (Cas-                    ing. After some research, the letter would belong
+san, 1878; Potter, 2013), either to Charles and
+Granvelle, to Maria of Austria (governor of the                     (Besançon, Madrid).
+                                                                        4 Recipients do not always match the expected archival
+Lower Countries and Charles’ sister), or to Infante                 collections. Some letters to Maria of Austria are for instance
+Philip (Charles’ son) and the state secretary for                   preserved in Vienna.
+                                                                        5 Seven letters to Charles and Granvelle, and especially
+Spain, Francisco de Los Cobos y Molina. Not
+                                                                    a copy of a letter written in February 1547 can be found in
+only was it misidentified (the date especially was                  Besançon (France) with Granvelle’s papers (BM Besançon,
+wrong in the library catalog2 ) but it had no rea-                  Granvelle 40, fol.139, letter to Charles V, 11th February
+son to be kept in Nancy. Indeed, despite first                      1547). Another isolated encrypted letter from Saint-Mauris
+                                                                    to Granvelle (1548) has been identified in the National library
+attempts of channeling the preservation of state                    of Spain (Madrid) (BNE, 7913).
+papers in Simancas (Spain) from 1540, Saint-                            6 Part of Simancas archives are accessible as microfilms
+
+Mauris’ letters, as many other diplomatic ones,                     at the French National archives (Paris) (AN, K1485-1488).
+                                                                    One can found Saint-Mauris’ active correspondence to Spain,
+match two common preservation patterns, depend-                     some minutes from Infante Philip as well as some copies of
+ing on whether the correspondence is active (the                    letters from Saint-Mauris to Charles.
+                                                                        7 Due to the long transmission delays, Charles hadn’t yet
+ambassador is the one sending a letter) or passive
+                                                                    received this last letter on 22nd February 1547. He acknowl-
+(the ambassador is the recipient).                                  edged the reception of two letters only: 26th January and 6th
+   The active correspondence of Saint-Mauris3 has                   February 1547.
+                                                                        8 The letter in Simancas / Paris is however a copy made by
+   1 All the symbol counts are approximate since some sym-
+                                                                    the Spanish state secretary. Only plaintext and cleartext are
+bols aren’t always well formed and thus look very similar, see      hence transcribed
+Appendix, Fig. 3.                                                       9 Maxim Hoffman, PhD student in Ghent University,
+   2 ”1546” is written at the end of the letter. However, at that
+                                                                    pointed us to Charles’ minutes which would be kept in Brus-
+time, several dating systems could be used and the year could       sels. Thus, a minute of the 22nd February letter would
+begin at Easter and not on January 1st. According to today’s        still exist. Unfortunately if a verification couldn’t be carried
+dating system, the letter was written in 1547.                      out for this contribution, the authors will conduct some re-
+   3 Unfortunately it hasn’t yet been possible to check every       searches in the Archives générales du royaume in May 2023
+part of this correspondence; it may thus have some deficien-        in order both to compare their decipherment with the minute
+cies in the following presentation. Only the letters (or their      (if still existing) (AGR Misc 95-96) and to expand their cor-
+copies) that are kept in Paris, Besançon and Madrid have been      pus of encrypted letters from and to Saint-Mauris (AGR Au-
+studied for now either directly or thanks to their digitization     dience 420; AGR Audience 1672).
+to the collections since the 19th century. The li-                months later, Francis, duke of Orleans, died. Al-
+brary archives unfortunately do not keep tracks of                though the process was obviously more complex
+the date or terms of its acquisition. One hypothesis              and non-linear, Francis’ intentions moved back
+can be formulated: part of the passive correspon-                 to war, at least against Charles: he secretly re-
+dence would have been scattered early, one letter                 connected with the Schmalkaldic League (Potter,
+bought by an erudite and then given to or bought                  1977) and did not push back the offer of a de-
+by the library. That is consistent with the incom-                fensive alliance against the Emperor, which Henry
+plete preservation of the passive correspondence                  VIII was also supposed to join. At the same time,
+for years 1546-154710 but confirming this hypoth-                 the French King did some military preparations.
+esis (and the loss of the other letters) will require
+                                                                     At the end of 1546 and beginning of 1547, un-
+further enquiries about Saint-Mauris’ succession.
+                                                                  certainties were numerous on both sides and the
+2.3    Historical context                                         Imperial presence in Milan and the French one
+                                                                  in Piedmont still fed tensions. Charles’ situation
+When Charles wrote his letter on 22nd February                    in the Empire certainly became better: in January
+1547, the main European sovereigns were sup-                      1547, Ülrich von Württemberg came to an agree-
+posed to be at peace, while Emperor Charles V                     ment with him and the cities of Ulm and Frankfurt
+was dealing with a political and religious conflict               submitted themselves (Potter, 2011). However,
+within the Empire, the Schmalkaldic War11 . Nev-                  Francis’ intentions were still alarming Charles,
+ertheless, between Francis and Charles, and de-                   who suspected them as either resuming war in
+spite the peace treaty of Crépy (1544), war and                  Italy or supporting Charles’ opponents (League of
+mistrusts were not really over. The treaty provided               Schmalkalde, Ottoman Empire). Indeed, under-
+the dispositions of former peaces and planned a                   cover but separate negotiations took place between
+marriage between Francis’ first son (Francis, duke                France, England and the Schmalkaldic League in
+of Orléans) and Charles’s daughter, Maria (or Fer-               order to conclude an alliance, even though ten-
+dinand’s daughter, Anna) while Francis commit-                    sions remained between England and France, be-
+ted to support Charles against the Schmalkaldic                   cause of Boulogne but most of all because of Scot-
+League. But one year later, Francis had not yet                   land. In January 1547, an agreement between
+fulfilled his obligations and his armies were still               Henry VIII and the League was almost concluded
+in Piedmont and Savoy (Babel, 2013). Moreover,                    while the negotiations about the conditions of the
+after Charles claimed the restitution of Hesdin or                French financial loans (towards the League) were
+at last Thérouanne (North of France) that Francis                still ongoing (Pariset, 1981).
+denied, both sovereigns armed again in Italy (Mi-
+lanese and Piedmont) (Nawrocki, 2015). Further-                      However, on 28th January, Henry VIII died: Ed-
+more, in June 1546 Francis concluded the peace                    ward VI, his only legitimate (but very young) son,
+of Ardres with Henry VIII (England would keep                     ascended the throne. The negotiations seemed
+Boulogne (North of France) until France paid the                  jeopardized as the new King and his ministers ex-
+amount of 2 millions écus) (Potter, 2011) and two                pressed their unwillingness to support the Schmal-
+                                                                  kaldic League (Nawrocki, 2015). French mili-
+  10 At this stage, apart from the copies of letters which are
+                                                                  tary preparations on the other hand were contin-
+preserved in Brussels, only one other letter from Charles to
+Saint-Mauris has been identified for the first months of 1547     uing, and after being presented in late 1546 as a
+(until Francis’ death in late March): David Potter (Potter,       defensive preparation either against the Emperor
+1977) refers to a letter from 19th January 1547 which has
+been edited from a Viennese copy (von Druffel, 1878, p.39-
+                                                                  (when talking with English ministers) or against
+45).                                                              the King of England (when talking with Imperial
+   11 Since 1542, several German Lutheran cities and princes
+                                                                  ministers), they were by then a defensive prepa-
+whose religion was prohibited had been revolting against
+Charles and gathering in a League (the Schmalkaldic League)
+                                                                  ration for a new war that Charles V would de-
+conducted by John Frederick, elector of Saxony, and Philip I,     clare in Italy as soon as he had brought back the
+landgrave of Hesse. Thanks to the treaty of Crépy which          Empire under his authority (Potter, 2011). Fran-
+momentarily interrupted the Italian Wars, Charles launched a
+military and political campaign against the League. He used       cis’ motives remained ambiguous for foreign in-
+the invasion of the duchy of Brunswick-Wolfenbüttel in 1542      formants and ambassadors like Saint-Mauris who
+by John Frederick and Philip as an excuse; he banished them       suspected either preparations against the Emperor
+and convinced Maurice, duke of Saxony and John Frederick’s
+cousin, to join him in exchange of his cousin’s lands and elec-   or preparations against the new King of England,
+toral dignity.                                                    with whom negotiations about Boulogne were still
+ongoing in order to obtain a confirmation of the          mations of our observations and intuitions. First
+treaty of Ardres and an early return of the city.         we analyzed the frequency of each symbol, and
+                                                          sequences of two or three symbols. The most fre-
+3     Decryption methods                                  quent symbols are12 huit (8.3%), plus (7.8%),
+3.1    Names and statistics                               and stop (6.2%). The most frequent bigrams
+                                                          are huit stop (2.2%), mont huit (1.7%), and
+As no other letter from Charles or Saint-Mauris           huit plus (1.3%). The most frequent trigrams
+was preserved in Nancy, it was first decided to           are plus stop aire (0.39%), huit stop dxpt
+work on it as a single letter in order to test the ci-    (0.39%), and gege mont huit (0.39%). Since
+pher and its strength. The first step was to name         we have 125 symbols and only 24 letters in the
+each of the 125 different symbols (see Fig. 1).           French alphabet13 it is clear that a plaintext let-
+These names were useful to identify several oc-           ter can be encrypted by different symbols. This
+currences of a particular symbol, distinguish fam-        is a classical trick in Renaissance cryptography to
+ilies of similar ones, and record our observations        avoid easy frequency analysis. We thus tried to
+(statistics, patterns...). Later, it was also necessary   find sets of symbols whose cumulative frequency
+for a computer treatment of the ciphertext. Our           would match the frequency of a given letter in
+                                                          Moyen Français (Fig. 2). For instance, given that
+                                                          dxpt has a frequency of 3.1%, we could have
+                                                          the set plus, stop, dxpt representing the let-
+                                                          ter ’e’, with a cumulative frequency of 7.8 + 6.2 +
+                                                          3.1 = 17.1, which is near the frequency 17.2 of
+                                                          ’e’. Alas this led to a dead end, and likewise for
+                                                          bigrams and trigrams.
+
+                                                             e        s      u/v      n      a       t       i      r
+                                                            17.2     8.1     8.1     7.4    7.2     7.2     6.6    6.2
+                                                             o        l       c       d     m        p       q      g
+                                                            5.7      5.5     3.3     3.3    2.9     2.6     1.6    1.4
+
+                                                          Figure 2: Frequency of letters in Moyen Français
+                                                          (in percent). These statistics come from an anal-
+                                                          ysis of Rabelais’ novel, Pantagruel, published in
+                                                          1532.
+
+
+                                                          3.2   Looking for words and patterns
+Figure 1: A sample of symbols and their names.
+The symbols stop, plus and mont are simple                We then searched for repetitions: the same
+symbols, whereas vset s, zero, and zero p are             sequence of symbols appearing at least twice in
+complex symbols.                                          different parts of the ciphertext. We found such
+                                                          a repetition of 11 consecutive symbols (vset s
+first observation was that among those 125 sym-           huit stop uhuh bebe zero p mont aire
+bols, 50 were “simple” ones, and 75 were “com-            aine huit stop), another one of 10 symbols,
+plex” ones, i.e., there is at least one occurrence        one of 8 symbols, one of 7 symbols and other
+in the ciphertext of this symbol with a dot or a          shorter ones. With the hope that these repetitions
+hyphen around it (examples are shown in Fig. 1).          of ciphertext symbols correspond to full words
+Among the 75 complex symbols, there were only             in the plaintext, we tried to make them match
+17 “root” symbols (without any dot or hyphen),            with words in Moyen Français. We efficiently
+for example aire. Among the 50 simple symbols,            restricted the search with the following remark.
+we noticed that 8 symbols appeared only once.             For the above repetition of 11 symbols, since the
+   After re-encoding the ciphertext as a list of          frequency of say huit is 8.3% in the ciphertext,
+strings in the Python computer language, we ran             12 We used our names here.
+
+small programs to get quick and reliable confir-            13 The characters ’i’ and ’j’ are the same, as for ’u’ and ’v’.
+it may be an ’e’ , ’s’, ’u/v’, or ’n’ in the plaintext      At the end we had several hypotheses that ap-
+according to Fig. 2 (a small margin of error is          peared to be right. Basic statistics led us very
+allowed, but, for instance if it corresponds to ’c’,     quickly to decide that no symbol (or even pair or
+then the frequency of ’c’ exceeds the expected           triplet of symbols) was there to represent a space,
+3.3%). At one point we thought that the 8-symbol         which was correct. Basic statistics again gave pos-
+repetition could correspond to royaumes (King-           sible values for the most common symbols, for in-
+doms in English) and the 7-symbol one to écuries        stance we thought that huit was either ’e’, ’u’, ’s’
+(stables in English), but this promising idea also       or ’n’ (which was correct, huit is an ’n’). Look-
+led to a dead end. Yet, looking at our repetitions       ing at words told us that plus encoded ’s’; and
+and thinking they were likely to be words, we            nearly repetitions combined to statistics led us to
+noted that plus was very often at the end of             conclude that diff, zigv, zigo were the same
+words that existed also without it. We concluded         letter and encoded one of ’e’, ’s’, ’u’, ’n’, ’a’, ’t’,
+that plus was likely to be a symbol for the letter       ’i’, ’r’, ’o’, or ’l’ (which was correct, they are ’u’).
+’s’.                                                     Similarly we thought that alph and ccat encoded
+   Not only did we search for exact repetitions          the same letter (which was correct, they both en-
+but we kept in mind that one letter in the plain-        code ’i’), and that ptpt and mont encoded the
+text probably had several symbols to encipher            same letter (which was correct, they are both ’e’).
+it. For this reason we looked at near repeti-               Other hypotheses were wrong and led to a dead
+tions, that are repetitions of sequences of sym-         end. As we will see later, the main trick of Saint-
+bols that are exactly equal except for one inner         Mauris’ cipher consists in hiding vowels, and for
+position where they are allowed to have differ-          this reason our guesses concerning vowels were
+ent symbols. For instance, we found the sequence         hazardous, while it would have worked for other
+of 10 symbols (ecro s, ofof, huit a, uhuh,               ciphers from that time which equally encrypted
+plus, aire, cero, wewe, mont, plus) and                  vowels and consonants. For instance, we thought
+later (ecro s, ofof, huit a, uhuh, plus,                 that stop, bebe, dxpt and ptpt encoded a vowel,
+aire, cero, wewe, ptpt, plus). We con-                   which was partially wrong, since the first two are
+clude that mont and ptpt were likely to represent        respectively ’t’ and ’r’ but the last two are respec-
+the same letter.                                         tively ’a’ and ’e’. Similarly, hidden vowels and al-
+                                                         most systematic bigrams were the reason why we
+   Moreover we noted that the symbol zede p
+                                                         were misled about zede p, thinking is was a ’q’
+was always followed by the same symbol, namely
+                                                         instead of ’qu’. Finally we looked for repetitions
+gamm. We thought that zede p could encode ’q’
+                                                         of several symbols with an extra symbol inter-
+(their frequencies are 0.6% and 1.6%) and gamm
+                                                         spersed in order to identify nulls, but this was un-
+could encode ’u’ (frequencies 2.3% and 6.5%),
+                                                         successful because nulls were not frequent enough
+since in French the letter ’q’ is almost always fol-
+                                                         in the ciphertext, and we were not aware of it with
+lowed by ’u’. A similar search for the letter ’x’
+                                                         a single document. For instance we thought that
+was indecisive.
+                                                         aire might be a null but this was wrong.
+   Another interesting idea was to try to split
+the 120 symbols between vowels and consonants.
+                                                         3.3   Increasing the amount of data
+With 125 symbols, there can theoretically be 2125
+possible partitions between vowels and conso-            We were puzzled with several unexplained obser-
+nants. However, assuming a word has at most 3            vations: why did families of symbols that were
+consecutive vowels (as in oiseau) and 3 consecu-         graphically rotations to each other exhibit similar
+tive consonants (as in prendre), it is possible to re-   behaviour? How could we see repetitions of 11
+strict the number of possible partitions. In the 11-     symbols when the writer surely had two or more
+symbol repetition above, assuming huit, stop,            choices for each letter to be encrypted? At this
+and uhuh are vowels, the next symbol bebe is nec-        point, the study of other encrypted letters from
+essarily a consonant. If we only consider the 14         and/or to Saint-Mauris was needed to corroborate
+most frequent symbols, yielding 214 = 16384 sub-         hypotheses. For practical convenience (the letters
+partitions, we find only two possible partitions of      were digitized), the choice was made to work on
+the full 125 symbols. Unfortunately, this also led       the letters which were preserved in Besançon (BM
+to a dead end.                                           Besançon, Granvelle 70). Some of them, espe-
+Figure 3: The reconstructed cipher key. Some symbols in the nomenclator can only be guessed from the
+historical context: they are indicated by a green asterisk in the table.
+
+
+cially the ones written by Charles and Granvelle                reconstruction of the nomenclator was quite easy
+(even though two years earlier) were encrypted                  and questions the complementary security that it
+with almost the same cipher and deciphered in the               is supposed to grant. The context of the letter, as
+margin. This was sufficient to start the reconstruc-            well as the similarity between two symbols which
+tion of the cipher key (Fig. 3) and decipher the                encrypted kings, enabled us to identify two kings
+main part of the letter.                                        (in addition to the French King who was several
+   Saint-Mauris’ cipher perfectly matches the Re-               times mentioned): the English King was associ-
+naissance cryptographic practices, especially for               ated to a recent death, and the Bohemian King to
+European diplomacies. It relies on homophonic                   the Empire and to Charles’ family. The last sym-
+substitution and a nomenclator. As for every ho-                bol, which encrypted Gabriel de Guzman, abbot
+mophonic substitution, each plaintext letter can be             of Longpont, was harder to uncover. Its decryp-
+represented by one (consonant) or two (vowel) ci-               tion was made possible by Saint-Mauris’ letter on
+phertext symbols. However, it goes further. Each                6th February, in which he mentioned his negoti-
+consonant, if followed by a vowel, can also be en-              ation15 . For this case, it would save little in case
+crypted by an extra complex symbol. In this case,               of an interception but reminds the main purpose of
+the complex symbol is associated with a diacrit-                encryption: delaying the reading of the letter (if it
+ical mark: dot at the bottom for ’a’; dot on top                was intercepted) and not fully preventing it.
+for ’i’; hyphen at the bottom for ’o’; dot on the
+left for ’u’. If there is no diacritical mark, it means
+that the symbol should be deciphered as consonant
+followed by ’e’. In addition, a ciphertext symbol
+exists for each repeated consonant (for instance a
+                                                                structed the key but not the nomenclator (Stix, 1934-1936;
+’3’ for ’cc’).                                                  Tomokiyo, 2022) or they have not made it accessible (Potter,
+   The letters in Besançon helped a lot for the                2013). As we primarily worked on the 22nd February letter
+value of the usual ciphertext symbols, much less                and used other letters only to pursue the global understanding
+                                                                of the core key, the nomenclator in this paper is incomplete
+for the nomenclator. Some ciphertext symbols re-                and presents only the part of it which is used in the letter in
+mained a mystery. Four symbols did not appear                   Nancy.
+                                                                   15 We have been able to consult the copy of this letter (AN,
+in the letters in Besançon, but were crucial for un-
+                                                                K1485-1488) only. The original encrypted letter, which we
+derstanding the letter in Nancy14 . Surprisingly, the           have not yet identified, and/or the minute of the 22nd Febru-
+                                                                ary letter would confirm the attribution of this symbol to
+  14 Three historians or cryptographers had previously recon-   Longpont.
+3.4    A very structured key.                                       and ’r’ form another family. The observations we
+Deciphering16 the letter revealed both some pat-                    made about similar behaviours (’:’ and ’..’ ), (’=’
+terns in the creation of the key itself and specific                and ’||’) or the complex symbol family represent-
+rules to use it. This structure is double-edged                     ing ’b’, ’c’, ’d’, and ’f’ are well explained by this
+for the cryptanalyst. On the one hand, hidden                       structure. That tempers the cryptographic abilities
+vowels make usual statistics and methods fail, but                  of those who conceived the ciphers. Certainly the
+on the other hand, any attack becomes easier as                     global patterns (homophonic substitution, vowel
+soon as the adversary is familiar with the Imperial                 indicators, etc) were suggested and designed by
+cryptographic patterns. Although Charles’ ciphers                   cryptographers. The daily conception of ciphers
+are nowadays little known, contemporary enemy                       however was the work of a secretary who was less
+cryptographers knew much better their common                        concerned by the strength of the cipher (finding
+patterns and, several years later, Philip II himself                various symbols without any consistency between
+acknowledged their low security and recurring de-                   them) than by the need to quickly conceive mul-
+cryptions.                                                          tiple ciphers. The pattern relies here on rotation
+                                                                    (as in some Hungarian ciphers (Lang, 2018)) as
+Hidden vowels. Saint-Mauris’ key uses a clever                      it relies, in some other ciphers, on alphabetical
+trick that explains both the failure of our first                   or numerical order. Indeed, Saint-Mauris’ cipher
+hypotheses and the unexplained observations we                      presents also a numerical pattern for pairs (’5’ for
+made: when they are following a consonant and                       ’ee’, ’6’ for ’ff’ and so on). That truly questions
+form thus a bigram, the vowels are somehow hid-                     its strength.
+den as diacritics. To encrypt a message the rules
+are the following. If you have to write a consonant                 3.5   Merging keys
+followed by a vowel then use the complex sym-                       Finally, we compared the key to previous re-
+bol for the consonant and add around it the corre-                  constructions we were able to access.             The
+sponding hyphen or dot for the following vowel.                     first one (Stix, 1934-1936) was conducted by
+If you write a consonant not followed by a vowel                    Franz Stix within a general study of Charles’
+or a vowel not following a consonant, just use one                  cryptographic practices from the Vienna archives
+of its simple symbols. Always use the correspond-                   (OeStA-HHStA, Fr 10-16). The second one
+ing symbol for a pair of identical letters, and often               (Tomokiyo, 2022) relied on a single letter which
+the nomenclator if it exists. Nulls are not very fre-               Satoshi Tomokiyo found in Madrid (BNE, 7913).
+quent, except to hide important words and names,                    Results were convergent but the comparison al-
+at least in this letter. Because of these rules, bi-                lowed us to understand better some aspects of the
+grams always consisted of a pair consonant-vowel                    ciphering process and question once again the se-
+but no symbol existed for (even frequent) bigrams                   curity that the cipher granted to the letter. Stix re-
+of the form vowel-consonant (as ’un’ or ’en’ in                     produced the main part of the key: symbols for
+French).                                                            letters, bigrams (all the bigrams are developed and
+Rotation of symbols. With the reconstructed                         not presented, as in our reconstructed key, as com-
+key in hand, we see a startling structure that be-                  plex symbols and vowel indicators), and repeated
+trays how the table was created. Symbols have                       consonants17 but neither the null symbols, the ci-
+been assigned in alphabetical order, and rotations                  phertext symbol for ’com/con’, nor the nomencla-
+were done to create new symbols, without mixing                     tor. On the other hand, the first key reconstructed
+up these symbols. For example, the simple sym-                      by S. Tomokiyo presented only a subset of sim-
+bols for ’a’, ’b’, ’c’, and ’d’ are identical up to rota-           ple and complex symbols. The null symbols were
+tion, as are those for ’e’ and ’f’; ’i’ and ’l’; ’t’ and            also reconstructed but not the ciphertext symbols
+’u’ ; ’y’ and ’z’. The symbols for ’n’, ’o’, ’p’, ’q’               for ’et’ and ’com/con’ nor the nomenclator. All
+                                                                    the identified symbols in the three tables were very
+   16 In order to facilitate the understanding of the encryp-
+                                                                    similar, even though the writing frequently dif-
+tion processes, we have separated simple symbols, complex
+symbols and vowel indicators for the presentation of the re-        fered. In fact, it was only when comparing with
+constructed cipher key. Nevertheless, according to the usual        the other reconstructions that we were able to con-
+presentation of Renaissance ciphers, one can assume that the
+plaintext bigrams were developed (ba, be, bi, bo, bu, ca, ce,         17 For the repeated consonants, the key reconstructed by
+ci, ...). The key might thus be structured in 3 parts: the simple   Stix revealed the symbol for ’pp’ and ’rr’ for instance, but
+symbols (with the nulls), the bigrams and the nomenclator.          not for ’ee’.
+firm that the repeated consonants symbols were            comparatively more frequent than in the other cor-
+numbers, even in increasing order. For instance           respondences we have worked on. Further re-
+’ll’, ’mm’ and ’nn’ are encrypted with 10, 12 and         search could help to determine whether these ci-
+13 while ’rr’ and ’ss’ correspond to 15 and 16. Fi-       phering errors are specific to that letter or if they
+nally, at first sight the nulls that Tomokiyo iden-       were common in Charles’ encrypted correspon-
+tified are quite different from ours, but most of         dence, but also to define the type of errors (writ-
+them are digit numbers too. There could even be a         ings, cross-contamination from other keys and so
+rule that any number larger than or equal to 20 is a      on). This investigation as well as the reconstruc-
+null. For instance the first three symbols of Fig. 3      tion of the whole nomenclator should help to ques-
+might be particular spelling for 26, 24 and 20. In        tion the quality of the Imperial ciphers as well as
+our case, another null symbol is formed from 4            the ciphering mastering of its secretaries.
+dots. This is consistent with what we found in
+Besançon, where more than one dot around a sym-          4 Results
+bol automatically cancels it out.
+                                                          The deciphering enabled us to uncover the content
+    The comparison with the works of Stix and
+                                                          of the letter (mainly about Charles’ concerns to-
+Tomokiyo highlighted differences and develop-
+                                                          wards Francis) and also Charles’ encryption meth-
+ments in some symbols, such as the complex sym-
+                                                          ods in the mid-16th century.
+bol for ’s’. In the reconstruction of F. Stix it looked
+like a letter ’s’ with a small circle attached on the     4.1   Content of the letter
+top right part. In S. Tomokiyo’s table, this struc-
+ture was still visible, but one might not interpret       In a first part, Charles reaffirmed his concern about
+it this way if not aware of the other table. In this      Francis’ intentions while he was gathering his mil-
+letter, however, the complex symbol for ’s’ some-         itary forces in the Empire against the Schmalka-
+times became almost flat and was hard to distin-          ldic League. These concerns were earlier made
+guish with the symbol for ’z’. These variants of ’s’      public by Saint-Mauris at the French Court while
+are shown in Fig. 4, and we chose to let the ambi-        Charles had several times expressed, during au-
+guity between ’s’ and ’z’ be visible in Fig. 3. This      diences with Jacques Mesnage, the French am-
+example however highlights one of the issues of           bassador at the Imperial Court, his good will to-
+deciphering early modern letters: characters can          wards Francis and had exhorted him to peace
+be written in different ways even when they are           but without clearing away the French doubts18 .
+the same (bad writing, different secretaries, cipher      Saint-Mauris was thus encouraged not to openly
+evolution and so on).                                     express Charles’ mistrust or relaunch the nego-
+                                                          tiations (probably about Hesdin and/or ”demili-
+                                                          tarisation” of Northern Italy). On the contrary,
+                                                          Charles ordered him to discover the French in-
+                                                          tentions towards England following Henry VIII’s
+Figure 4: Variants of the complex symbol for ’s’.         death. Saint-Mauris however seemed to remain in
+From left to right: Symbols for ’se’ and ’so’ in the      the dark about the French intentions towards both
+22nd February letter; symbol for ’se’ in Stix’ key;       Boulogne and a general alliance with England,
+symbol for ’se’ in Tomokiyo’s key.                        the Schmalkaldic League, and even Venice (Pot-
+                                                          ter, 2013). As this letter shows, Saint-Mauris was
+   Finally, there are several ways to interpret the       still fishing. This concern about maintaining peace
+various writing styles for the ciphertext symbols         is finally expressed one more time at the end of the
+that occurred in the letters, and which have conse-       first page: Charles immediately accepted the pro-
+quently been passed on to the three reconstructed         posal of Claude d’Annebault, Francis’ main coun-
+keys. It could be that the writer was requested to        sellor and previous governor of Piedmont, to keep
+cipher quickly or because he was not mastering the        running the cooperation and mutual surveillance
+process well. In both cases, that underlines the dif-     of the Milano-Piedmontese border. By countering
+ficulties of manual ciphering. In fact, in addition       the French diplomatic and military maneuvers, the
+to the bad writing of some symbols, many cipher-            18 Two letters from Mesnage to Francis, written on 16th
+ing errors can be pointed out in the letter. They         January and 20th January 1547 testified those speeches (Ri-
+never prevent the complete understanding but are          bier, 1666, p. 591-593 and p. 595-600).
+letter reveals part of Charles’ foreign policy. It is            4.2   Cryptography under Charles V’s reign
+hardly surprising that his concerns were encrypted
+                                                                 Imperial cryptographic practices have suffered
+while his public demonstration of goodwill by ac-
+                                                                 from a bad reputation, because of both insufficient
+cepting Annebault’s proposal was written in clear-
+                                                                 historical knowledge 20 and the comparison with
+text.
+                                                                 Philip II’s ciphers. Nevertheless, Saint-Mauris’
+   In a second part, Charles reported a disturbing               cipher isn’t less complex than other European ci-
+rumor: Piero Strozzi, who belonged to an Ital-                   phers at the same time. French diplomacy for ex-
+ian banker family and served Francis both with                   ample already used in the 1530’s two or three ci-
+his financial and military abilities, was planning               phertext symbols for each plaintext letter (Desen-
+to assassinate him. Strozzi was indeed sent to the               clos, 2021). In the 1540’s, Charles’ brother Ferdi-
+Schmalkaldic League to bring them the French fi-                 nand, as King of Hungary, used ciphers with two
+nancial subsidies and was suspected of taking ad-                or three ciphertext symbols with his ambassadors
+vantage of his journey for much more dangerous                   (Lang, 2018). In Saint-Mauris’ key, the complex
+matters. However, Charles acknowledged that the                  symbols act as a second set for plaintext letters
+French King would have refused to support such                   as do the vowel indicators. It thus presents two
+an assassination project. The fear may originate                 ciphertext symbols for consonants and three for
+from the dubious status of Strozzi’s missions in the             vowels. Moreover, as for many other European
+Empire. They were mostly managed directly in the                 ciphers, Saint-Mauris’ cipher offers complemen-
+Empire by Jean Sturm, and Strozzi made frequent                  tary encryption processes: null ciphertext sym-
+journeys back and forth, including in Italy, in or-              bols, ciphertext characters for each repeated plain-
+der to elaborate the French loans (Potter, 1977;                 text consonant, nomenclator.
+Pariset, 1981). When replying on 6th March 1547                     The diacritical marks for vowels seem to be spe-
+(OeStA-HHStA, Fr 10-16; Potter, 2013), Saint-                    cific to Imperial ciphers, to the authors’ current
+Mauris confirmed that it was only a rumor.                       knowledge. Those vowel indicators could offer
+   The last part of the letter outlines the state of the         the encrypted letter extra strength. As our deci-
+Schmalkaldic war. Charles mentioned his upcom-                   phering attempts show, vowel indicators prevent
+ing journey to Frankfurt in order to confer with                 (or at least slow) any cryptanalysis by frequency
+his brother Ferdinand, King of Bohemia and King                  analysis. But Charles’ encrypted letters were reg-
+of Romans, about the operation led by Maurice,                   ularly deciphered by enemies who discovered this
+duke of Saxony, against John Frederick, elector                  main pattern of his ciphers. On this basis, Charles’
+of Saxony and one of the leaders of the Schmal-                  ciphers lost their strength: unlike bigrams (using a
+kaldic League. Nevertheless, if the military sit-                different ciphertext symbol each time), using the
+uation was improving for Charles, there arose in                 same diacritical mark for each vowel again made
+Prague a revolt which was immediately reported                   possible frequency analysis. On that perspective,
+by Jacques Mesnage19 . In response, Charles en-                  Saint-Mauris’ cipher could be considered as less
+couraged Saint-Mauris to minimize the scale of                   strong than other European ciphers, but it reminds
+the revolt as well as the night flight of Ferdinand              us also of the value of the Imperial ciphers in the
+of Tyrol, Charles’ nephew, by transforming it into               history of cryptography, especially for the under-
+a simple hasty departure to join his father, Ferdi-              standing of Spanish cryptography under the reign
+nand, King of Bohemia, and the fight against the                 of Philip II.
+Elector of Saxony. In fact, on 22nd February 1547,                  This use both of bigrams and diacritical marks
+the revolt was not yet over: Ferdinand, King of                  indeed was not new. Since 1527, it can be ob-
+Bohemia, was still negotiating with the States of                served within several ciphers such as the one used
+Bohemia, and also with those of Moravia and Sile-                between Iñigo Mendoza, ambassador at the French
+sia, who had joined the first ones.                              Court, and Charles V. Since then, those diacrit-
+                                                                   20 The correspondences both from Charles V and from
+                                                                 Granvelle have been broadly studied and, sometimes, edited.
+  19 His diplomatic papers can be found at the French na-        But the cryptographic practices are only quickly men-
+tional library (Paris) (BnF, 17889-17890). For preservation      tioned: their existence are acknowledged, sometimes the
+motives, the letters are not accessible anymore. Some of his     kind of cryptographic symbols described (see for instance
+letters have been edited but not the one to which Saint-Mauris   (Berthomeu Masia, 2006)) but the keys are rarely transcribed
+referred (Ribier, 1666).                                         or even studied.
+ical marks were regularly used by Imperial ci-           Lana Martysheva who were involved in making
+phers (Tomokiyo, 2019). They can be observed             this collaboration possible, the three anonymous
+until 1555 (Tomokiyo, 2022). This vowel encryp-          referees, and Richard Brent who helped to im-
+tion process can be considered at the ancestor of        prove our written English.
+encrypted bigrams and trigrams under Philip II’s
+reign. Indeed, Spanish ciphers after 1556 still used
+diacritical marks for vowels in the exact same way       References
+(the same diacritical mark for each vowel what-         [AGR Audience 420] Archives générales du royaume.
+ever the consonant is) (Devos, 1950), but they pro-        Audience 420. Correspondence between the Impe-
+                                                           rial agents at the French Court and the Holy Roman
+gressively moved from vowel indicators to proper
+                                                           Empire, 1535-1563.
+bigrams and trigrams (two consonants and one
+vowel such as ’cha’, ’che’, etc): each bigram and       [AGR Audience 1672] Archives générales du royaume.
+trigram was now encrypted by a different cipher-           Audience 1672/2/E. Correspondence between the
+                                                           Imperial agents in France and the Low Countries,
+text character. Certainly, they often matched to in-       16th century.
+creasing numbers (e.g. 10 for ”ba”, 11 for ”be”,
+...) but vowels could no longer be spotted easily.      [AGR Misc 95-96] Archives générales du royaume.
+                                                           Manuscrits divers 95-96. Correspondence from
+5   Conclusion and perspectives                            Charles V and Maria of Hongria to Jean de Saint-
+                                                           Mauris, copies.
+Deciphering this letter may have taught little about    [AN, K1485-1488] Archives nationales, ”Fonds de
+the relationship between Charles and Francis. As           Simancas”. K1485 to K1488. Correspondence
+a large part of Saint-Mauris’ correspondence had           between the Imperial agents in France and Spain,
+already been studied, the uncovered content only           1544-1548.
+confirms current historical knowledge. The main         [Babel, 2013] Rainer Babel. 2013. La France et
+value of this work lies in understanding the cryp-         l’Allemagne à l’époque de la monarchie universelle
+tographical approach of the letter. When decipher-         des Habsbourg, 1500-1648. Presses Universitaires
+ing, how to deal with an isolated letter, encryp-          du Septentrion, Villeneuve d’Ascq.
+tion patterns which aren’t well known or docu-          [Berthomeu Masia, 2006] Maria José Bertomeu Masia.
+mented, and with inconsistent writings? This work          2006. Cartas de un espia de Carlos V. La corre-
+led us to question both the ciphering and decipher-        spondancia de Jeronima Bucchia con Antonio Per-
+                                                           renot de Granvela. M. Rieger, Munich.
+ing process. By working only on one specimen,
+then by reinserting it in a larger sample, and fi-      [BM Besançon, Granvelle 40] Bibliothèque   munic-
+nally by merging with other similar keys, crypto-          ipale de Besançon.    Granvelle 40.    fol. 139,
+graphic patterns have been highlighted. The de-            Letter from Jean de Saint-Mauris to Charles V,
+                                                           6th February 1547.       https://memoirevive.
+cryption of this letter nevertheless is the beginning      besancon.fr/ark:/48565/th72lvsb095f/
+and not the end of a general study of Charles’             6dc4e84d-9393-4e5c-9172-e1360a268aaf.
+cryptographical practices. In the future, thanks
+                                                        [BM Besançon, Granvelle 70] Bibliothèque   mu-
+to the corpus enlargement (Vienna and Bruxelles
+                                                           nicipale de Besançon. Granvelle 70. Lettres
+mainly), the authors aim to investigate both the           et papiers de l’ambassade de Jean de Saint-
+cryptographic adaptations to Charles’s diplomacy           Mauris, 1544-1576.       https://memoirevive.
+network (Saint-Mauris wrote with the same cipher           besancon.fr/ark:/48565/t43hg0sk92jl/
+to Charles, Granvelle, Maria of Austria, Infante           72919b8a-dacd-44a5-a220-a6987a0378d9.
+Philip and Los Cobos, but they may have adapta-         [BM Nancy, letter] Bibliothèque Stanislas de Nancy.
+tions, especially in the nulls and nomenclator) and        Letter from Charles Quint to Jean de Saint-Mauris,
+the exact process of manual ciphering (misuse of           22nd February 1547.          https://galeries.
+                                                           limedia.fr/ark:/31124/dct0sbwx8vmhspk0.
+complex symbols, ciphering errors, bad writings,
+nomenclator evolutions and so on). Thereby, the         [BNE, 7913] Biblioteca     nacional   de    España.
+authors hope to consolidate the cipher key from            MSS/7913/127. Letter from Jean de Saint Mauris to
+Fig. 3 and contribute to a better knowledge of Re-         Granvelle, 5th July 1548.
+naissance cryptographic practices.                      [BnF, 17889-17890] Bibliothèque nationale de France.
+                                                           Manuscrits français 17889 to 17890. Ambassade
+Acknowledgements. The authors thank Sophie                 de Jacques Mesnage auprès de Charles Quint, 1544-
+Toulouze, Anne Canteaut, Olivier Canteaut, and             1546.
+[Cassan, 1878] Auguste Cassan. 1878. La mort de              [Stix, 1934-1936] Franz Stix.      1934/1936.      Die
+   François Ier et l’avènement de Henri II d’après les        Geheimschriftenschlüssel der Kabinettskanzlei des
+   dépêches secrètes de l’ambassadeur impérial Jean de       Kaisers. Nachrichten aus der Mittleren und Neueren
+   Saint-Mauris. Mémoires de la société d’émulation          Geschichte, 1/2:207–226/61–70.
+   du Doubs, pages 422–454.
+                                                             [Tomokiyo, 2019] Satoshi Tomokiyo. 2019. Trac-
+[Desenclos, 2021] Camille Desenclos. 2021. Écrire le           ing the origin of vowel indicators in Spanish ci-
+   secret quotidien. Pratiques de la cryptographie au           phers. http://cryptiana.web.fc2.com/code/
+   sein de la diplomatie française (XVIe -premier XVIIe        vowel.htm, retrieved 2023-04-19.
+   siècle). In G. Braun and S. Lachenicht, editors,
+   Spies, espionnage and secret diplomacy in the early       [Tomokiyo, 2022] Satoshi Tomokiyo.   2022.    Ci-
+   modern period, pages 85–103. Kohlhammer.                     phers during the reign of emperor Charles V.
+                                                                http://cryptiana.web.fc2.com/code/
+[Devos, 1950] Jean-Pierre Devos. 1950. Les chiffres             spanish2.htm#SEC14B, retrieved 2023-04-19.
+   de Philippe II (1555-1598) et du despacho universal
+   durant le XVIIe siècle. Palais des Académies, Brux-
+   elles.
+[von Druffel, 1878] August von Druffel. 1878. Briefe
+    und Acten zur Geschichte des sechszehnten Jahrhun-
+    derts. M. Rieger, Munich.
+[Kopal and Waldispühl, 2022] Nils Kopal and Michelle
+   Waldispühl. 2022. Deciphering three diplomatic
+   letters sent by Maximilian II in 1575. Cryptologia,
+   46/2:103/127.
+[Lang, 2018] Benedek Lang. 2018. Real Life Cryptol-
+   ogy. Ciphers and Secrets in Early Modern Hungary.
+   Amsterdam University Press B.V., Amsterdam.
+[Nawrocki, 2015] François Nawrocki. 2015. L’amiral
+   Claude d’Annebault, conseiller favori de François
+   Ier . Classiques Garnier, Paris.
+[OeStA-HHStA, Fr 10-16] Österreichisches      Staat-
+   sarchiv / Haus Hof und Staatsarchiv. Frankreich,
+   Berichte 10 to 16. Imperial diplomatic correspon-
+   dence to France, 1542-1548.
+[Pariset, 1981] Jean-Daniel Pariset. 1981. Les relations
+    entre la France et l’Allemagne au milieu du XVIe
+    siècle. Librairie Istra, Strasbourg.
+[Pariset, 1982] Jean-Daniel Pariset. 1982. La France et
+    les princes allemands. Documents et commentaires
+    (1545-1557). Francia, 10:229–301.
+[Potter, 1977] David Potter. 1977. Foreign Policy in
+    the Age of the Reformation: French Involvement in
+    the Schmalkaldic War, 1544-1547. The Historical
+    Journal, 20/3:525/544.
+[Potter, 2011] David Potter. 2011. Henry VIII and
+    Francis I. The Final Conflict, 1540-1547. Brill, Lei-
+    den.
+[Potter, 2013] David Potter. 2013. La fin du règne
+    de François Ier et l’avènement d’Henri II d’après
+    les dépêches de Jean de Saint-Mauris. https://
+    cour-de-france.fr/article2749.html.
+[Ribier, 1666] Guillaume Ribier. 1666. Lettres et
+    mémoires d’Estat des roys, princes, ambassadeurs et
+    autres ministres sous les regnes de François premier,
+    Henry III et François II, tome premier. François
+    Clouzier, Paris.
+Appendix: The Decrypted Letter                         content de mourir moyennant que aussi [nous]
+                                                       mourissions, et que le dit sieur roy luy auroit re-
+(We put the decrypted part in italics.)                spondu qu’il ne s’estoit jamais meslé de telles
+                                                       praticques, et qu’encores ne le vouldroit y faire et
+                  L’empereur et roy                    que ledit Strossy fit ce qu’il vouldroit. Lequel au-
+         Chier et feal                                 roit depuis encores dit aillieurs qu’il s’en iroit au-
+Nous avons receu voz deux lettres des XXVIe            dit camp des rebelles et trouveroit moyen d’entrer
+du passé et VIe du present et par icelles entendu     au nostre soubz quelque couleur que ce fut et mec-
+bien amplement tous occourans en ce coustel là        troit sa volonté à execution quoiqu’il en deust ad-
+et mesmes la responce que vous a fait le roy sur       venir. Et pour ce que vouldrions bien que cecy se
+ce que luy avyons fait remonstrer par vous par         puist en aucune manière veriffier pour avoir occa-
+vous [sic] et puisque luy ny ses ministres ne se       sion de faire apprehender ledit Strossy et nous en
+sont extendus davantaige quant à la plus estroicte    pouvoir justifier en ce coustel là, sera bien que re-
+amyté et moyens d’icelle, sinon qu’il seroit bon      gardez tous moyen possibles pour si faire se peult
+remectre la negociation à l’abbé de Longpont, il     scavoir si ledit Strossy auroit tenu audit roy les
+sera bien laisser la chose ainsi sans en faire plus    susdictz propoz ou encores aillieurs. Et cecy vous
+de mention jusques l’on voye s’ilz retourneront        recommandons nous affectueuzement.
+à en parler et en feront plus d’instance, et pro-        En oultre nous sumes deliberé partir d’icy dans
+poseront aucuns moyens où l’on puisse prendre         cincq ou six jours et tirer contre Francfort pour
+quelque fondement dont nous advertirez. Et nos-        estre là à propos de tous affaires et pouvoir
+tre dicte seur vous tenant tousjours cependant ès     tinir meillieur correspondence avec le roy de Bo-
+mesmes termes qu’avez jusques à maintenant sans       heme en l’emprinse de Saxe de laquelle somes
+en riens vous eslargir davantaige en sunvant [sic]     actendant nouvelles du succes. Et pour ce que
+ce que vous avons tousjours escript. Et sera bien      l’ambassadeur Mesnaige auroit par adventure es-
+que nous advertissez de ce qu’aurez pu assentir de     cript par delà et fait grant cas de l’emotion de
+leu[r] intention depuii qu’ils auront sceu le tres-    Praghe. Et aussi que Monsieur l’Archiduc nos-
+pas [du] roy d’Angleterre et z’ilz n’etendent rien     tre nepveu s’estoit une nuict party secretement
+s[e] mouvoir en ce coustel là et si soubz ceste       vous advisons que quant à ladicte emotion elle est
+couleur ils se font plus grant amas de gens ensem-     cessee et a esté seulement une assemblee de peu-
+ble de toutes aultres particularitez. Et quant à ce   ple sans qu’il en soit ensuy aultre chose. Et quant
+que l’admiral vous a dit que pour entretenir bonne     à nostre dit nepveu ayant entendu que son pere
+voisinance et eviter tous scrupules, il seroit bon     delaberoit soy trouver en la dicte emprise contre
+que l’on observa du coustel de Piedmont ce que         le jadis electeur, et doubtant que ne luy eussions
+faisoient le feu marquis del Gasto et luy d’advertir   voulsu permectre d’y aller s’estoit desrobé pour
+l’ung l’aultre quant aucunes garnisons se augmen-      soy y trouver mais il rev[i]ent le mesme jour et
+toient ou changeoient d’ung lieu à aultre, vous luy   ainsi en pourrez respondre si vous en es[t] parlé.
+pourrez dire que le trouvons bon et ferons escrire     À tous chiers et feal Dieu vous ait en sa saincte
+au sieur Don Fernande que à l’advenir il en use       garde. De Ulme le XXIIe de fevrier 1546.
+ainsi et que de leur coustel ilz facent de semblable                                                 Charles
+à leur gouverneur audit Piedmont. Ledit Don Fer-                                                       Bave
+nande nous a envoyé le memoire cy joinct dont
+pourrez parler comme aurrez l’opportunité.
+    Au surplus l’on nous a adverty que estant
+dernierement le roy ou coustel de Bresse, aulcuns
+gentilz hommes ytaliens suyvans le sieur Oracio,
+eulx monstrans affectionnez à nous, auroyent dit
+qu’ilz se covoyent certainement que Pierre Strossy
+en partant dernierement de France et lors qu’il
+vint au camp des rebelles dit entre aultres choses
+au roy que s’il vouloit qu’il entreprendroit de nous
+tuer et qu’il n’en demandoit aulcune recompense
+ny se soucioyt d’estre apres prins, car il estoit
+

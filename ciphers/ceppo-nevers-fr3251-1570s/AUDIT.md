@@ -1106,3 +1106,5 @@ passC L04.39 (the open item in "For the orchestrator (VERIFY-CEPPO-WP, f.87)"): 
 waist (R-8 -> S80 a, as blind reconciler D read); key control still rank 1/201, power 19-20/20, but the judge drops
 -1.655 -> -1.657, so gate (iii) fails and S65 (et) stays, graded M (was H). Reading text unchanged; f.87 S 138 / M 62 / U 4.
 SO-CEPPO-F87 prompt unaffected (letters identical). Details: NOTES.md "A1B-CEPPO-87".
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

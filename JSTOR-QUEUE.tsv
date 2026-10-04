@@ -193,3 +193,8 @@ ciphers/hessen-daenemark-1672	"Aus Berichten des hessischen Sekretärs Lincker"	
 ciphers/sachsstaatsarchiv-manteuffel-1712	"Manteuffel" AND "Flemming" AND 1712 AND ("reine d'Angleterre" OR Stettin) AND (Chiffre OR dechiffriert OR cipher)	2026-10-03	queued	
 ciphers/sachsstaatsarchiv-manteuffel-1712	"Manteuffel" AND "Krauske" AND (Acta Borussica OR Behördenorganisation)	2026-10-03	queued	
 ciphers/sachsstaatsarchiv-manteuffel-1712	"ne donne contentement" AND "reine d'Angleterre"	2026-10-03	queued	
+sources/desenclos	"Écrire le secret quotidien" AND Desenclos	2026-10-04	queued	
+sources/desenclos	"Transposer pour mieux transporter" AND chiffrement	2026-10-04	queued	
+sources/desenclos	"L'espionnage espagnol dans la France des guerres de Religion"	2026-10-04	queued	
+sources/desenclos	Desenclos AND ("Espagnol 144" OR "fr. 3251" OR "fr. 2980" OR "fr. 20140" OR "Dupuy 452" OR "Dupuy 468" OR "fr. 3416" OR "fr. 3621" OR "Clairambault 349" OR "fr. 5160")	2026-10-04	queued	
+ciphers/espagnol142-mercy-1648	Desenclos AND (Mercy OR "Espagnol 144") AND 1648	2026-10-04	queued	

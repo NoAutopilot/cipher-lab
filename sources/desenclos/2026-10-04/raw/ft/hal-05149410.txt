@@ -1,0 +1,109 @@
+         Déchiffrement d’une lettre de François Ier à Christophe
+                        Richer (21 janvier 1547)
+                       Camille Desenclos, Paul Zimmermann, Ioana Ionescu
+
+
+
+      To cite this version:
+     Camille Desenclos, Paul Zimmermann, Ioana Ionescu. Déchiffrement d’une lettre de François Ier à Christophe
+     Richer (21 janvier 1547). 2025. ⟨hal-05149410⟩
+
+
+
+
+                                        HAL Id: hal-05149410
+                              https://hal.science/hal-05149410v1
+                                            Submitted on 8 Jul 2025
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+Distributed under a Creative Commons CC BY-NC-SA 4.0 - Attribution - Non-commercial use - ShareAlike -
+                                       International License
+                                           François Ier à Christophe Richer
+                                         1547, 21 janvier. – Villers-Cotterêts.
+
+
+Original chiffré. Archives diplomatiques, Acquisitions extraordinaires 12.52, fol. 142-145.
+
+Table de chiffrement. Bibliothèque nationale de France, Nouvelles acquisitions françaises 8431,
+fol. 182.
+
+Cette lettre a fait l’objet d’un premier décryptage, non identifié (date, auteur) mais joint à la lettre lors
+de son acquisition par les Archives diplomatiques en 1992. Bien que relativement concluant, ce
+décryptage était incomplet, plusieurs mots et noms propres n’ayant pu faire que l’objet d’hypothèses.
+Un second travail de décryptage, mené en février 2025, par Ioana Ionescu sous la supervision de Paul
+Zimmermann (Université de Lorraine, CNRS, Inria, LORIA) a permis de préciser certains éléments et
+de mettre en lumière les nombreuses erreurs de chiffrement opérées dans la dépêche originale.
+L’identification de la table originale de chiffrement par Camille Desenclos (Université de Lorraine,
+CNRS, Inria, LORIA / Université de Picardie Jules-Verne) a rendu possible l’identification des noms
+propres ainsi que la validation du second décryptage.
+
+N.B. Les parties chiffrées sont transcrites en italique, et ce sans corriger les erreurs qui ont pu être
+commises lors du chiffrement initial de la dépêche. Les différences avec le premier décryptage
+(conservé avec la lettre) ont été reportées en note uniquement lorsqu’elles modifiaient le sens.
+
+
+        Monsieur Richer,
+
+Depuis la depesche que je vous ay faicte par Langlar et oultre tous les propos que je vous tins a vostre
+partement du faict d’entre le roy de Dannemarch et les Escossois touchant le mariage, j’ay eu continuels
+advertissemens des grans preparatifs que le roy d’Angleterre faict par mer et par terre pour courir sus
+ausdicts Escossois au prochain temps nouveau et depuis deux jours eu1 lettres du sieur de La Garde et
+de mon ambassadeur qui sont en Angleterre comme la guerre est arrestee et conclutte [sic] entre les
+Anglois pour invahir ledit pais d’Escosse des le mois d’avril si tant est que le roy d’Angleterre puisse
+avoir certaine asseuramce duddit roy de Dannemarch ce qu’il se promect obtenir facillement et
+davantage l’induire et persuader d[e] telle sorte qu’il l’assistera, aydera et favorisera à ladite entreprise
+d’Escosse de maniere qu’il semble que mme 2 [sic] deppende entierement de la disposition en quoy ledit
+Anglois trouvera en cella ledit roy de Dannemarch sur lequel je vous puis asseurer qu’il faict son entier
+fondement pour ladite expedition et dit on qu’il a depesché gens expres devers ledit roy de
+Dannemarch pour cest effeyt et encores que ce soit chose a quoy je ne puisse aiseement croire que ledit
+roy de Dannemarch se laisse facillement conduire si esse [sic] que posr [sic] estre de l’importance dont
+elle est et que je ne vouldrois pour riens veoir advenir pour plusieurs raisons que vous scaurés assés
+cosiderer je vous en ay bien voullu advertir vous priant mettre tote 3 la peine et dilligence que vous
+pourrez pour entendre s’il een [sic] sera quelque chose et pour rompre ce coup employer les moyens
+que vous pourrez luy remonstrant tres bien le danger que cella traine4 et que par adventure ceulx qui le
+recherchent d[e] cella le font plus par intelligence d’aultruy que autrement et pour le mettre en despense
+et d’autant le tenir plus foible pour apres plus facillement en son dommage ies 5 [sic] choses qu’ils ont
+pieca machinees a l’encontre de luy lesquelles ne sont pas si secrettes comme ils le pensent ayec toutes
+
+1   Identifié comme « en » dans le premier décryptage. La table de chiffrement originale confirme notre lecture « eu ».
+2   Erreur de chiffrement. Le premier décryptage propose « tout », ce que ne confirme pas la table de chiffrement originale.
+    L’hypothèse d’un oubli du « e » intermédiaire est peu probable, « mm » étant chiffré par un caractère chiffrant le
+    redoublement (« mm »). Il n’est donc pas possible de corriger l’erreur de chiffrement.
+3   Erreur de chiffrement, comprendre « toute ». Le « u » est bien omis dans le chiffrement.
+4   Le premier décryptage propose: « cela entraine ». Si cela peut correspondre au sens, le texte chiffré contient bien « cella
+    traine ».
+5   Erreur de chiffrement, comprendre « les ».
+les autres persuasioes6 dont vous vous pourrés adviser de facon que cella n’advienne poinct mais au
+contraire faire tout ce que vous pourrez pour le persuader et conduire s’il est possible aux choses
+contenues en vostre instruction m’advertissant le plus souvent qu’il vous sera possible de la volunté en
+laquelle il sera et comme vous le trouverrez disposé et n’y aura que bien que quant vous pourrez vous
+ee [sic]7 advertissiez mon ambassadeur qui est en Escosse affin que l’on ne leur puisse poinct donner
+d’allarme faulse de ce costé la.
+Pryant Dieu, Monsieur Richer qu’il vous ayt en sa garde. Escript à Villiers Costeretz le XXIe jour de
+janvier M VC XLVI.
+
+                                                                                                   [Signé] FRANÇOYS
+
+                                                                                           [Signé] DE L’AUBESPINE
+
+
+
+Transcription établie par Ioana Ionescu, Paul Zimmermann et Camille Desenclos en février 2025.
+
+
+
+
+6   Le premier décryptage propose « persuasions ». Si cela correspond au sens, nous reproduisons ici l’erreur initiale de
+    chiffrement.
+7   Erreur de chiffrement, comprendre probablement « en ».
+

@@ -1,0 +1,379 @@
+          Édition d’une lettre chiffrée de Charles Quint à Jean de
+                            Saint-Mauris (1547)
+            Camille Desenclos, Cécile Pierrot, Pierrick Gaudry, Paul Zimmermann
+
+
+
+      To cite this version:
+     Camille Desenclos, Cécile Pierrot, Pierrick Gaudry, Paul Zimmermann. Édition d’une lettre chiffrée de Charles
+     Quint à Jean de Saint-Mauris (1547). 2025, ⟨10.3384/ecp195704⟩. ⟨hal-05269981v2⟩
+
+
+
+
+                                        HAL Id: hal-05269981
+                              https://hal.science/hal-05269981v2
+                                           Submitted on 26 Sep 2025
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+  Distributed under a Creative Commons CC BY-SA 4.0 - Attribution - ShareAlike - International License
+Édition d’une lettre chiffrée de Charles Quint à Jean
+       de Saint-Mauris (Ulm, 22 février 1547)
+                      Camille Desenclos
+          Université de Picardie Jules Verne, CHSSC /
+          Université de Lorraine, CNRS, Inria, Loria
+
+
+                         Cécile Pierrot
+           Université de Lorraine, CNRS, Inria, Loria
+
+                       Pierrick Gaudry
+           Université de Lorraine, CNRS, Inria, Loria
+
+
+                      Paul Zimmermann
+           Université de Lorraine, CNRS, Inria, Loria
+
+
+
+
+                               1
+                                             C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+1     Présentation
+    Ambassadeur de l’empereur auprès du roi de France (1544-1549), Jean de Saint-Mauris a entretenu une
+intense correspondance avec Charles Quint mais aussi avec Marie de Hongrie, Philippe d’Espagne, Ferdi-
+nand d’Autriche, Nicolas Perrenot de Granvelle, Francisco de Los Cobos ou encore Louis van Schore. Tan-
+dis que sa correspondance active (lettres envoyées) est désormais conservée à Vienne 1 , Bruxelles 2 , Simancas 3 ,
+Besançon 4 et Madrid 5 , la conservation de sa correspondance passive (lettres reçues) est beaucoup plus lacu-
+naire 6 . Les manques peuvent cependant être comblés grâce à la conservation des minutes des lettres adressées
+par Charles Quint et Marie de Hongrie 7 et d’une copie ultérieure, mais partielle, d’une partie de ces lettres 8 .
+Bien que la lettre conservée à la Bibliothèque municipale de Nancy fasse partie d’un ensemble beaucoup
+plus large, elle n’en demeure pas moins isolée, aucune autre lettre adressée à Jean de Saint-Mauris n’y étant
+conservée. Par ailleurs, les raisons de sa présence à Nancy demeurent inconnues, les archives de la biblio-
+thèque ne permettant pas de retracer les modalités de son entrée dans les collections, probablement au cours
+du xixe siècle.
+
+
+2      Chiffrement
+    Suite à l’identification de cette lettre à la Bibliothèque municipale de Nancy, une cryptanalyse a été opérée
+en 2022 9 . La table de chiffrement obtenue a ensuite été confrontée aux reconstitutions préexistantes qui se
+     1. Österreichisches Staatsarchiv – Haus-, Hof- und Staatsarchiv [OeStA-HHStA], Frankreich, Diplomatische Korrespon-
+denz 10-17 : lettres et copies de lettres échangées entre Saint-Mauris et Charles Quint, Marie de Hongrie, Ferdinand d’Autriche,
+Nicolas Perrenot de Granvelle, Louis van Schore.
+    2. Archives générales du royaume [AGR], Audience 133, 420, 433/2, 646/3 et 1672/2 : lettres ou copies de lettres échangées
+entre Saint-Mauris, Marie de Hongrie, Charles Quint, Louis van Schore.
+    3. Une partie des fonds de l’Archivio general de Simancas est conservée, sous forme de microfilms, aux Archives nationales
+(France) suite à la saisie opérée par Napoléon Ier en 1809 et la restitution des originaux par la France en 1941. Parmi ceux-ci se trouve
+une partie de la correspondance active de Saint-Mauris (lettres et copies de lettres adressées à Philippe d’Espagne et Francisco de
+Los Cobos). Dans le cadre de ce travail d’édition, il n’a pas été possible de se rendre à Simancas ; seuls les microfilms (Archives
+nationales, K 1485-1488) ont été consultés.
+    4. Bibliothèque municipale de Besançon [BM Besançon], Granvelle 40 et 70 : lettres et copies de lettres échangées entre Saint-
+Mauris et, entre autres, Charles Quint, Marie de Hongrie, Ferdinand d’Autriche, Philippe d’Espagne, Nicolas Perrenot de Gran-
+velle, Francisco de Los Cobos.
+    5. Biblioteca nacional de España, MSS/7913/127 : lettre de Nicolas Perrenot de Granvelle à Saint-Mauris (1548).
+    6. Voir notamment, BM Besançon, Granvelle 70.
+    7. OeStA-HHStA, Frankreich, Diplomatische Korrespondenz 10 et 14 ; AGR, Audience 1672/2.
+    8. AGR, Manuscrits divers 95.
+    9. Sur les premières étapes de ce travail, voir Cécile Pierrot, Camille Desenclos, Pierrick Gaudry et Paul Zimmermann, « De-
+ciphering Charles Quint (A diplomatic letter from 1547) », dans Proceedings of the 6th International Conference on Historical Cryp-
+tography HistoCrypt2023, dir. C. Dahlke et M. Göggerle, 2023, p. 148-159 [https://doi.org/10.3384/ecp195704]. Depuis
+la parution de cette contribution, plusieurs éléments ont été corrigés dans le déchiffrement de la lettre ; ils sont reportés dans la
+
+
+
+2
+                                               C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+sont révélées incomplètes 1 . Dans un second temps, le déchiffrement a été validé par collation avec la minute
+de la lettre conservée à Vienne 2 et la copie partielle conservée à Bruxelles 3 .
+     La table de chiffrement employée par Charles Quint pour cette lettre 4 repose sur une substitution ho-
+mophonique élaborée. Chaque lettre de l’alphabet dispose d’un (consonnes) ou deux (voyelles) caractères
+cryptographiques; à cela s’ajoute un caractère distinct pour chaque bigramme (ba, be, bi, bo, bu) ou tri-
+gramme dans le cas de la lettre « q » (qua, que, qui, quo, quu). Bien que représentés individuellement dans
+la table originale, le choix a été fait, dans la reconstitution de la table 5 , de ne pas reporter chaque bigramme
+mais de faire ressortir la logique d’élaboration des caractères cryptographiques : chaque consonne formant
+le début d’un bigramme est représentée par un même caractère, qualifié de « symbole complexe » et dis-
+tinct du « symbole simple » (alphabet). Ce symbole complexe est associé à un signe diacritique représentant
+une voyelle (point en dessous du caractère pour le « a », point au dessus du caractère pour le « i », tiret en
+dessous du caractère pour le « o », point à gauche du caractère pour le « u »). Voyelle la plus fréquente, le
+« e » est omis : l’usage du symbole complexe seul équivaut donc à la consonne suivie d’un « e ». Plusieurs
+autres dispositifs viennent compléter la table de chiffrement : un caractère cryptographique est attribué à
+présente édition.
+      1. Dans deux cas, le nomenclateur n’a pas été reconstitué (Franz Stix, « Die Geheimschriftenschlüssel der Kabinetts-
+kanzlei des Kaisers », Nachrichten aus der Mittleren und Neueren Geschichte, 1 (1934), p. 207-226 et 2 (1936), p. 61-70 ;
+Satoshi Tomokiyo, « Ciphers during the reign of emperor Charles V », Cryptiana, 2022 [http://cryptiana.web.
+fc2.com/code/spanish2.htm#SEC14B]). Dans un autre cas, la table s’avère inaccessible (David Potter, « La fin du
+règne de François Ier et l’avènement d’Henri II d’après les dépêches de Jean de Saint-Mauris », CourdeFrance, 2013 [https:
+//cour-de-france.fr/histoire-et-fonction/histoire-et-fonctionnement/histoire-et-evolution/
+etudes-modernes/article/la-fin-du-regne-de-francois-ier-et-l-avenement-d-henri-ii-d]).                                                    Une
+récente reconstitution a été opérée par Eva Pich-Ponce. Plus complète (alphabet, bigrammes, nomenclateur), cette reconstitution
+s’appuie sur les seules lettres conservées à Besançon ; le nomenclateur est donc incomplet (Eva Pich-Ponce, « La cifra secreta de
+Carlos V y la subida al trono de Maria Tudor », Çédille. Revista de estudios franceses, 24 (2023), p. 429-448). Il convient enfin
+de signaler une dernière reconstitution, probablement effectuée par un archiviste, et conservée à Vienne (OeStA-HHStA, Fran-
+kreich, Diplomatische Korrespondenz 14, dossier n° 3, n.f.) ; comme les deux premières reconstitutions, elle omet le nomenclateur
+ainsi que les nulles.
+     2. OeStA, Frankreich, Diplomatische Korrespondenz 14, dossier n° 6, fol. 22-23.
+     3. AGR, Manuscrits divers 95, p. 318-320. Compte tenu du caractère partiel de cette copie, celle-ci n’a pas pu faire l’objet d’une
+collation, raison de son absence dans l’édition qui suit.
+     4. Un des exemplaires originaux de la table de chiffrement est conservé aux Archives générales de Simancas (EST, LEG,
+1,1,1,119 : https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/destacados/2022/
+clave-carta-cifrada-bib-stanislas-nancy.html).
+     5. Pour la reconstitution effectuée par les auteurs, voir Figure 1. Celle-ci est également accessible sur le site du projet Back in
+Time [https://backintime.inria.fr/]. Il s’agit d’une version établie à partir de la lettre de Nancy et consolidée à l’aide des
+lettres conservées à la Bibliothèque municipale de Besançon ainsi que d’un échantillon de lettres conservées à Bruxelles et à Vienne,
+soit un ensemble de 80 lettres. Pour autant, la table demeure incomplète, révélant en creux les caractères les plus fréquemment uti-
+lisés et, inversement, les caractères les moins utilisés en raison soit de leur rareté (ex : le bigramme "bb") soit de leur faible utilisation
+par le scripteur (noms ou mots chiffrés lettre à lettre plutôt que par l’intermédiaire du nomenclateur). Un travail statistique est
+actuellement mené par les auteurs sur l’ensemble de la correspondance chiffrée à l’aide de cette table afin d’estimer plus finement
+l’implémentation réelle de la table dans les lettres (utilisation du nomenclateur notamment).
+
+
+3
+                                              C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+chaque lettre redoublée (bb, cc, dd, etc.) 1 ; un nomenclateur permet de chiffrer, avec un seul caractère, les
+noms propres les plus fréquents (l’empereur, le pape, le roi de France, etc.), mais également certains mots et
+expressions d’usage 2 . Enfin, des caractères nuls ou annulants viennent complexifier le processus de crypta-
+nalyse : les premiers sont dépourvus de valeur, les seconds permettent d’annuler tout caractère contenu entre
+eux, tandis que l’ajout de deux points sur ou sous un caractère permet de l’annuler, procédé commode en cas
+d’erreur de chiffrement.
+     Comme toutes les tables de chiffrement de l’époque moderne, celle-ci n’a pas été créée pour cette seule
+lettre et est employée dans la majeure partie des lettres échangées entre Charles Quint et Jean de Saint-Mauris.
+Plus encore, elle est mobilisée par quinze épistoliers entre 1542 et 1555 dans le cadre de trois principaux usages :
+la correspondance des ambassadeurs impériaux auprès du roi de France (1542-1549), la correspondance des
+ambassadeurs impériaux auprès du roi (puis de la reine) d’Angleterre (1543-1555) 3 , la correspondance politique
+et familiale des Habsbourg (1542-1549) 4 . Jean de Saint-Mauris utilise ainsi la même table que son prédéces-
+seur, Nicolas de Gilley, sieur de Marnol 5 ; son successeur, Simon Renard, l’utilise également quelques mois
+avant de changer de table de chiffrement en septembre 1549 6 . Employée sur un temps long, cette table l’est
+aussi avec des correspondants variés, tous acteurs de la politique étrangère impériale. Outre Charles Quint,
+Saint-Mauris recourt à cette table pour sa correspondance avec Marie de Hongrie, Ferdinand d’Autriche,
+Philippe d’Espagne, Nicolas Perrenot de Granvelle, Louis van Schore, Francisco de Los Cobos, Éléonore
+de Habsbourg ainsi qu’avec les conseils privés de l’empereur et des Pays-Bas. Il ne s’agit pas pour autant de
+     1. La table conservée à Simancas confirme qu’un caractère cryptographique dédié existait pour chaque lettre redoublée, à
+l’exception des redoublements suivants (car non susceptibles d’être employés) : aa, kk, oo, qq, xx, yy, zz.
+     2. Dans la lettre ici éditée, seuls quatre noms sont chiffrés à l’aide du nomenclateur : le roi d’Angleterre, le roi de Bohême, le roi
+de France, la reine douairière de Hongrie. Il faut y ajouter deux abréviations (« et », « con/com ») que nous incluons au nomen-
+clateur, alors qu’ils figurent au sein l’alphabet dans la table conservée à Simancas. Celle-ci présente au demeurant un nomenclateur
+bien plus ample : 88 noms, mots courants et expressions (par exemple, « nous vous requerons ») disposent d’une représentation
+cryptographique. Pour la grande majorité, cette représentation prend la forme d’un symbole ; 18 noms cependant sont représentés
+par le biais d’un jargon : « Madame d’Estampes » (Anne de Pisseleu, duchesse d’Étampes et maîtresse de François Ier) peut ainsi
+être chiffrée « Aquila ».
+     3. L’utilisation de cette table dans le cadre de l’ambassade impériale auprès du roi d’Angleterre a été documentée par Franz Stix
+(« Die Geheimschriftenschlüssel der Kabinettskanzlei », art. cit., p. 225) et par Eva Pich-Ponce (« La cifra secreta de Carlos V »,
+art. cit.).
+     4. Franz Stix (« Die Geheimschriftenschlüssel der Kabinettskanzlei », art. cit., p. 225) a identifié un usage de cette table pour
+les correspondances suivantes : Ferdinand d’Autriche – Charles Quint (1542-1549), Marie de Hongrie – Charles Quint (1546). Nous
+avons également pu identifier un usage de cette table en 1544 pour la correspondance entre Marie de Hongrie et Charles Quint
+(OeStA-HHStA, Belgien PA 39), ainsi que pour la correspondance entre Marie de Hongrie et François Bonvalot en 1546 (BM Be-
+sançon, Granvelle 3). Des recherches complémentaires sur l’usage de la table entre Marie de Hongrie et Charles Quint sont actuel-
+lement menées par les auteurs.
+     5. Voir par exemple, OeStA-HHStA, Frankreich, Diplomatische Korrespondenz 10, dossier n° 2, fol. 56, lettre chiffrée de
+Marnol à Charles Quint, 15 juillet 1542.
+     6. Voir par exemple la première lettre adressée par Renard à Charles Quint : OeStA-HHStA, Frankreich, Diplomatische Kor-
+respondenz 17, dossier n° 8, fol. 1, 24 avril 1549. Pour le changement de chiffre, voir ibid., dossier n° 12, fol. 9, lettre chiffrée de
+Renard à Charles Quint, 10 septembre 1549.
+
+
+4
+                                             C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+la seule table de chiffrement en possession de l’ambassadeur impérial; une partie de sa correspondance avec
+certains des acteurs pré-cités (Charles Quint, Marie de Hongrie, Éléonore de Habsbourg, Antoine Perrenot
+de Granvelle) s’avère chiffrée par l’intermédiaire d’une autre table 1 . De fait, tandis que la première table (celle
+en usage dans la lettre faisant l’objet de la présente édition) est employée dans les correspondances mises par
+écrit et chiffrées par son secrétaire, la seconde table, bien plus sommaire (substitution mono-alphabétique),
+est réservée aux dépêches rédigées par Saint-Mauris lui-même.
+
+
+
+3     Notes éditoriales
+     Les normes éditoriales suivies pour cette édition sont celles édictées par Bernard Barbiche pour les textes
+de l’époque moderne 2 . Les variantes orthographiques ainsi que les ratures présentes dans la minute (B) n’ont
+pas été retranscrites en note. Les passages chiffrés sont transcrits en italique.
+
+
+
+4      Édition
+A. Original chiffré. Bibliothèque municipale de Nancy, non coté.
+
+B. Minute. Österreichisches Staatsarchiv – Haus-, Hof- und Staatsarchiv, Frankreich, Diplomatische Kor-
+respondenz 14, dossier n° 6, fol. 22-23 3 .
+
+                                                        L’empereur et roy
+
+    Chier et feal
+
+    1. Deux reconstitutions de cette table ont pu être identifiées. La première date probablement de la constitution des manuscrits
+Granvelle (BM Besançon, Granvelle 4, fol. 1v) ; la seconde a été réalisée par Franz Stix (« Die Geheimschriftenschlüssel der Kabi-
+nettskanzlei », art. cit., p. 209). Ce dernier n’a cependant identifié que deux correspondances pour lesquelles la table est employée :
+François Bonvalot – Charles Quint, Saint-Mauris – Charles Quint. En dehors de Jean de Saint-Mauris (qui l’emploie avec 5 cor-
+respondants), celle-ci est pourtant également en possession d’Antoine Perrenot de Granvelle qui s’en sert dans sa correspondance
+avec son père et son frère Jérôme (voir notamment BM Besançon, Granvelle 4, 40 et 70).
+    2. Bernard Barbiche, Conseils pour l’édition des textes de l’époque moderne (xvie-xviiie siècle) [http://theleme.enc.
+sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes].
+    3. Les passages à chiffrer sont indiqués par une mention en marge dans la minute ; ils correspondent aux passages effectivement
+chiffrés dans la lettre ensuite envoyée à Saint-Mauris.
+
+
+
+
+5
+                                            C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+Nous avons receu voz deux lettres des xxvie du passe 1 et vie du present 2 et par icelles entendu bien am-
+plement tous occourans en ce coustel la et mesmes la responce que vous a fait le roy de France sur ce que luy
+avyons fait remonstrer par vous a . Et puisque luy ny ses ministres ne se sont extendus davantaige quant a la plus
+estroicte amyté et moyens d’icelle, sinon qu’il seroit bon remectre la negociation a la royne de Hongrie b 3 , il sera
+bien laisser la chose ainsi sans en faire plus de mention jusques l’on voye s’ilz retourneront a en parler et en feront
+plus d’instance, et proposeront aucuns moyens ou l’on puisse prendre quelque fondement dont nous advertirez et
+nostredicte seur, vous tenant tousjours cependant es mesmes termes qu’avez jusques a maintenant sans en riens
+vous eslargir davantaige en suyvant c ce que vous avons tousjours escript. Et sera bien que nous advertissez de d
+ce qu’aurez pu assentir 4 de leu[r] e intention depuii [sic] qu’ils auront sceu le trespas [du] f roy d’Angleterre 5
+et s’ilz n’entendent riens mouvoir en ce coustel la et si soubz ceste couleur 6 ils se font plus grant amas de gens
+ensemble de toutes aultres particularitez.
+Et quant a ce que l’admiral 7 vous a dit que pour entretenir bonne voisinance et eviter tous scrupules, il seroit
+bon que l’on observa du coustel de Piedmont 8 ce que faisoient le feu marquis del Gasto 9 et luy d’advertir
+l’ung l’aultre quant aucunes garnisons se augmentoient ou changeoient d’ung lieu a aultre, vous luy pourrez
+dire que le trouvons bon et ferons escrire au sieur Don Fernande 10 que a l’advenir il en use ainsi et que de
+     1. Les archives impériales conservent une lettre datée du 25 janvier 1547, et non du 26 janvier 1547 (OeStA-HHStA, Frankreich,
+Diplomatische Korrespondenz 14, dossier n° 1, fol. 124-133).
+    2. L’original de cette lettre peut être trouvé à Vienne (OeStA-HHStA, Frankreich, Diplomatische Korrespondenz 14, dossier
+n° 2, fol. 15-26).
+     3. Marie de Hongrie (1505-1558), gouvernante des Pays-Bas (1531-1555) et sœur de Charles Quint. À la suite de sa tante, Margue-
+rite d’Autriche, gouvernante des Pays-Bas avant elle, Marie de Hongrie joue un rôle majeur dans la diplomatie de Charles Quint,
+et plus encore dans les relations avec François Ier.
+    4. Assentir : connaître.
+     5. Henri VIII d’Angleterre (1491/1509-1547) meurt le 28 janvier 1547. Monte alors sur le trône d’Angleterre sous le nom
+d’Édouard VI, son fils âgé de 9 ans. Depuis juin 1546 et le traité d’Ardres, la France et l’Angleterre sont de nouveau en paix et
+ont amorcé une politique de rapprochement, dans l’objectif d’aboutir à une alliance défensive. Ce rapprochement permet à Fran-
+çois Ier d’inciter Henri VIII à soutenir la ligue de Smalkalde contre Charles Quint.
+    6. Sous cette couleur : sous ce prétexte.
+    7. Claude d’Annebault (1494-1552), maréchal et amiral de France, principal conseiller de François Ier. Il a été gouverneur du
+Piémont de 1539 à 1543.
+    8. Le traité de Crépy, conclu en septembre 1544, entre François Ier et Charles Quint permet, entre autres, au roi de France de
+conserver le Piémont tandis que, inversement, il renonce au duché de Milan.
+    9. Alfonso de Ávalos (1502-1546), marquis del Vasto, a été gouverneur du duché de Milan jusqu’à sa mort.
+   10. Ferdinand Ier de Gonzague (1507-1557), condottiere au service de Charles Quint, est alors gouverneur du duché de Milan.
+
+    a. A. répétition de « par vous » (en clair puis chiffré). Répétition non présente dans B.
+   b. A. royne de Hongrie | B. royne d’Hongrie madame nostre seure
+    c. Caractère mal formé dans A avec confusion possible entre « n » et « y » ; déchiffrement confirmé par B.
+   d. A. advertissez de | B. escripvez
+    e. A. Le bord extérieur de la lettre est abîmé, occultant cette dernière lettre. Celle-ci est bien présente dans B.
+    f. A. Caractère cryptographique peu lisible en raison de la dégradation du bord extérieur de la lettre ; déchiffrement confirmé
+par B.
+
+
+6
+                                             C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+leur coustel ilz facent de semblable a leur gouverneur audit Piedmont 1 . Ledit Don Fernande nous a envoyé
+le memoire cy joinct 2 dont pourrez parler comme aurrez a l’opportunité.
+Au surplus l’on nous a adverty que estant dernierement le roy de France ou coustel de Bresse 3 , aulcuns gentilz-
+hommes ytaliens suyvans le sieur Oracio 4 , eulx monstrans affectionnez a nous, auroyent dit qu’ilz scavoyent
+certainement que Pierre Strossy 5 en partant dernierement de France et lorsqu’il vint au camp des rebelles dit
+entre aultres choses au roy que s’il vouloit qu’il entreprendroit de nous tuer et qu’il n’en demandoit aulcune
+recompense ny se soucioyt d’estre apres prins, car il estoit content de mourir moyennant que aussi mourissions,
+et que ledit sieur roy luy auroit respondu qu’il ne s’estoit jamais meslé de telles praticques, et que encores ne le
+vouldroit y faire et que ledit Strossy ﬁt ce qu’il vouldroit. Lequel auroit depuis encores dit aillieurs qu’il s’en iroit
+audit camp des rebelles et trouveroit moyen d’entrer au nostre soubz quelque couleur que ce fut et mectroit sa vo-
+lonte a execution quoiqu’il en deust advenir. Et pour ce que vouldrions bien que cecy se puist en aucune maniere
+veriﬃer pour avoir occasion de faire apprehender ledit Strossy et nous en pouvoir justiﬁer en ce coustel la, sera
+bien que regardez tous moyen [sic] possibles pour si faire se peult scavoir si ledit Strossy auroit tenu audit roy de
+France les susdictz propoz ou encores aillieurs 6 . Et cecy vous recommandons nous affectueuzement.
+En oultre nous sumes 7 deliberé partir d’icy dans cincq ou six jours et tirer contre Francfort pour estre la a pro-
+pos de tous affaires et pouvoir tinir [sic] meillieur correspondence avec le roy des Romains b 8 en l’emprinse 9
+de Saxe 10 de laquelle somes actendant nouvelles du succes 11 . Et pour ce que l’ambassadeur Mesnaige 12 auroit
+     1. Jean Caraccioli (1580-1550), prince de Melfi et maréchal de France. Depuis 1545, il est gouverneur du Piémont.
+    2. Malheureusement un tel mémoire n’est pas conservé au sein des collections de la Bibliothèque municipale de Nancy. On
+n’en trouve pas non plus trace dans les collections bisontines qui abritent la correspondance passive de Saint-Mauris.
+     3. Depuis 1533, le duché de Savoie, dont fait partie la Bresse mais aussi le Piémont, est occupé par les armées du roi de France.
+    4. Horace Farnèse (1532-1553), petit-fils du pape Paul III et frère d’Octave Farnèse, duc de Parme. Depuis 1543, il séjourne à la
+cour de France.
+     5. Pierre Strozzi (1510-1558), condottiere au service de François Ier, est alors chargé par le roi de France d’apporter des subsides
+aux confédérés de la ligue de Smalkalde pour les soutenir dans leur conflit contre Charles Quint.
+    6. Dans sa lettre en réponse, datée du 6 mars 1547 (OeStA-HHStA, Frankreich, Diplomatische Korrespondenz 14, dossier
+n° 3, fol. 1-4), Saint-Mauris confirme qu’il s’agit d’une rumeur, que rien ne vient étayer.
+    7. Erreur de chiffrement, lire somes [sommes].
+    8. Ferdinand d’Autriche (1503-1564), frère de Charles Quint. Il est en 1526 élu roi de Bohême et de Hongrie. Il est aussi depuis
+1531 roi des Romains. Il succèdera à Charles Quint comme empereur en 1558 sous le nom de Ferdinand Ier.
+    9. Emprinse : entreprise.
+   10. Maurice de Saxe (1521-1553). Dans le cadre de la guerre de la ligue de Smalkalde, menée notamment par son cousin l’électeur
+Jean-Frédéric de Saxe, Maurice de Saxe a rejoint le camp de l’empereur en 1546 en échange de la promesse, tenue quelques mois
+après cette lettre, d’obtenir la dignité électorale, dont était titulaire son cousin.
+    11. Suite à l’échec en juillet 1546 de la négociation entre Charles Quint et les confédérés de la ligue de Smalkalde, l’empereur
+amorce une opération militaire d’envergure contre les principaux chefs de la ligue, Philippe de Hesse et Jean-Frédéric de Saxe. Il
+est notamment appuyé du roi de Bohême et de Maurice de Saxe. Cette opération militaire aboutira, en avril 1547, à la victoire
+impériale de Mühlberg.
+   12. Jacques Mesnage, sieur de Cagny, ambassadeur du roi de France auprès de l’empereur (1544-1548). Ses papiers (brouillons de
+
+    a. A. aurrez | B. verrez
+    b. A. le roy des Romains | B. le roy des Romains monsieur nostre frere
+
+
+7
+                                             C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+par adventure escript par dela et fait grant cas de l’emotion de Praghe 1 et aussi que monsieur l’archiduc nostre
+nepveu 2 s’estoit une nuict party secretement, vous advisons que quant a ladicte emotion elle est cessee et a esté
+seulement une assemblee de peuple sans qu’il en soit ensuy aultre chose. Et quant a nostre dit nepveu ayant
+entendu que le roy de Boheme a son pere delaberoit soy trouver en ladicte emprinse contre le jadis electeur 3 , et
+doubtant que ne luy eussions voulsu permectre d’y aller, s’estoit desrobé pour soy y trouver mais il revint b le
+mesme jour et ainsi en pourrez respondre si vous en est c parlé.
+A tous chiers et feal Dieu vous ait en sa saincte garde d . De Ulme le xxiie de fevrier 1546 4 .
+
+                                                                                                                [Signé] Charles
+                                                                                                                    [Signé] Bave 5
+
+[Adresse au dos] A nostre chier feal conseillier maistre aux requestes ordinaires de nostre hostel et ambassa-
+deur en France le sieur de Saint Moris.
+
+
+
+
+dépêches, lettres à lui adressées par le pouvoir royal, etc.) sont conservés à la Bibliothèque nationale de France (Manuscrits français
+17889-17890).
+    1. En janvier 1547, Prague se soulève après que Ferdinand d’Autriche a demandé aux États de Bohême d’apporter leur contri-
+bution financière aux armées impériales dans le cadre du conflit opposant Charles Quint à la ligue de Smalkalde. Lors de l’écriture
+de cette lettre, Ferdinand est toujours en conflit avec les États de Bohême qui, comme les États de Silésie et de Moravie, ont refusé
+d’apporter la contribution demandée
+    2. Ferdinand de Tyrol (1529-1595), deuxième fils de Ferdinand d’Autriche. Comme son père, Ferdinand de Tyrol réside en
+grande partie en Bohême, dont il sera fait gouverneur en avril 1547.
+    3. Jean-Frédéric de Saxe (1503-1554) a été mis au ban de l’Empire en 1546.
+    4. Le style de Pâques a encore cours au sein de la chancellerie impériale. La lettre est donc datée, selon notre comput actuel,
+du 22 février 1547.
+    5. Josse Bave, secrétaire ordinaire de l’empereur.
+
+    a. A. le roy de Boheme | B. le roy
+   b. A. La diacritique indiquant le « i » se confond avec le caractère chiffrant la consonne. Déchiffrement confirmé par B.
+    c. A. Caractère cryptographique peu lisible en raison de la dégradation du bord extérieur de la lettre ; déchiffrement confirmé
+par B.
+   d. B. La formule de politesse est abrégée (« A tous & »).
+
+
+8
+                                   C. Desenclos, C. Pierrot, P. Gaudry, P. Zimmermann - Septembre 2025
+
+A     Annexe
+
+
+
+
+Figure 1 – Reconstitution de la table de chiffrement utilisée entre Jean de Saint-Mauris et Charles Quint.
+
+
+
+
+9
+

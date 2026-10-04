@@ -1297,3 +1297,5 @@ What would let a verifier set N5: a sentence from him of the shape "I know of no
 Cardinal of Lorraine of 27 Jan 1557 (fr.20140 ff.35-36) before yours; my 2026 reconstruction used ff.16, 24 and 30". He built
 the key and knows the Danzay literature (he already cites Ryabov), so a plain statement from him is the specialist confirmation
 rule 10 means. The owner looks for it in the thread and pastes it here verbatim.
+
+Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).

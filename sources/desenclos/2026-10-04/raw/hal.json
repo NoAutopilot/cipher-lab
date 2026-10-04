@@ -1,0 +1,267 @@
+{
+  "response":{
+    "numFound":30,
+    "start":0,
+    "numFoundExact":true,
+    "docs":[{
+      "openAccess_bool":true,
+      "title_s":["Enjeux et perspectives de la représentation diplomatique française dans le Saint-Empire au début du XVIIe siècle"],
+      "journalTitle_s":"Trajectoires - Travaux des jeunes chercheurs du CIERA",
+      "halId_s":"hal-04712145",
+      "uri_s":"https://hal.science/hal-04712145v1",
+      "docType_s":"ART",
+      "doiId_s":"10.4000/trajectoires.1227",
+      "producedDateY_i":2013
+    },{
+      "openAccess_bool":false,
+      "title_s":["Diple, propositions pour la convergence de schémas XML/TEI dédiés à l'édition de sources diplomatiques"],
+      "halId_s":"hal-01317540",
+      "uri_s":"https://hal.science/hal-01317540v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Digital Diplomatics : the computer as a tool for the diplomatist ?",
+      "producedDateY_i":2014
+    },{
+      "openAccess_bool":false,
+      "title_s":["Assurer la communication politique à l'étranger au début du XVIIe siècle : enjeux et stratégies linguistiques"],
+      "conferenceTitle_s":"139e congrès des sociétés historiques et scientifiques « Langages et communication »",
+      "halId_s":"hal-01313576",
+      "uri_s":"https://hal.science/hal-01313576v1",
+      "docType_s":"COMM",
+      "producedDateY_i":2014
+    },{
+      "openAccess_bool":false,
+      "title_s":["La négociation conjointe ou le désespoir d'une diplomatie malmenée : l'échec des menées franco-anglaises dans l'Empire au début de la guerre de Trente Ans (1620-1622)"],
+      "journalTitle_s":"Anglophonia, French Journal of English Studies",
+      "halId_s":"hal-01313549",
+      "uri_s":"https://hal.science/hal-01313549v1",
+      "docType_s":"ART",
+      "producedDateY_i":2015
+    },{
+      "openAccess_bool":true,
+      "title_s":["Au-delà de toute diplomatie : la constitution de réseaux parallèles protestants et érudits entre France et Empire au début du XVIIe siècle"],
+      "journalTitle_s":"Revue d'histoire du protestantisme",
+      "halId_s":"hal-04712132",
+      "uri_s":"https://hal.science/hal-04712132v1",
+      "docType_s":"ART",
+      "producedDateY_i":2016,
+      "fileMain_s":"https://hal.science/hal-04712132/document"
+    },{
+      "openAccess_bool":false,
+      "title_s":["Early modern correspondences: a new challenge for digital scholarly editions"],
+      "halId_s":"hal-04746029",
+      "uri_s":"https://hal.science/hal-04746029v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Digital Scholarly Editing: theories and practices",
+      "producedDateY_i":2016
+    },{
+      "openAccess_bool":false,
+      "title_s":["Transposer pour mieux transporter : le chiffrement dans les correspondances diplomatiques du premier XVIIe siècle"],
+      "halId_s":"hal-04071048",
+      "uri_s":"https://enc.hal.science/hal-04071048v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Matière à écrire. Les échanges de correspondance du XVIe au XIXe siècle",
+      "doiId_s":"10.3917/puv.bru.2017.01.0125",
+      "producedDateY_i":2017
+    },{
+      "openAccess_bool":true,
+      "title_s":["Unsealing the Secret: Rebuilding the Renaissance French Cryptographic Sources (1530-1630)"],
+      "conferenceTitle_s":"1st International Conference on Historical Cryptology HistoCrypt 2018",
+      "halId_s":"hal-04712231",
+      "uri_s":"https://hal.science/hal-04712231v1",
+      "docType_s":"COMM",
+      "producedDateY_i":2018,
+      "fileMain_s":"https://hal.science/hal-04712231/document"
+    },{
+      "openAccess_bool":true,
+      "title_s":["Réactions d’épidémie"],
+      "journalTitle_s":"Revue du Rhin Supérieur",
+      "halId_s":"hal-04072028",
+      "uri_s":"https://u-picardie.hal.science/hal-04072028v1",
+      "docType_s":"ISSUE",
+      "doiId_s":"10.57086/rrs.125",
+      "producedDateY_i":2020
+    },{
+      "openAccess_bool":true,
+      "title_s":["Diplomate, huguenot ou humaniste ? Le modèle de l'agent français auprès des princes protestants de l'Empire (1589–1620)"],
+      "halId_s":"hal-04071992",
+      "uri_s":"https://u-picardie.hal.science/hal-04071992v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"L’Identité du diplomate (Moyen Âge-XIXe siècle). Métier ou noble loisir ?",
+      "producedDateY_i":2020,
+      "fileMain_s":"https://u-picardie.hal.science/hal-04071992/document"
+    },{
+      "openAccess_bool":false,
+      "title_s":["L’espionnage espagnol dans la France des guerres de Religion (1562-1598)"],
+      "halId_s":"hal-04991370",
+      "uri_s":"https://univ-montpellier3-paul-valery.hal.science/hal-04991370v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Spies, Espionage and Secret Diplomacy in the Early Modern Period",
+      "doiId_s":"10.17433/978-3-17-038939-7",
+      "producedDateY_i":2021
+    },{
+      "openAccess_bool":true,
+      "title_s":["Frontières et espaces transfrontaliers, une approche environnementale"],
+      "journalTitle_s":"Revue du Rhin Supérieur",
+      "halId_s":"hal-04072033",
+      "uri_s":"https://u-picardie.hal.science/hal-04072033v1",
+      "docType_s":"ISSUE",
+      "doiId_s":"10.57086/rrs.173",
+      "producedDateY_i":2021
+    },{
+      "openAccess_bool":true,
+      "title_s":["Women's Place in Diplomacy through the French Diplomatic Correspondences (Early 17th Century)"],
+      "halId_s":"hal-04071983",
+      "uri_s":"https://u-picardie.hal.science/hal-04071983v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Gender and Diplomacy: Women and Men in European Embassies from the 15th to the 18th Century",
+      "producedDateY_i":2021,
+      "fileMain_s":"https://u-picardie.hal.science/hal-04071983/document"
+    },{
+      "openAccess_bool":true,
+      "title_s":["Le premier essor de la cryptographie en France (1510-1630)"],
+      "halId_s":"hal-04071043",
+      "uri_s":"https://enc.hal.science/hal-04071043v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Histoire mondiale du renseignement. 2, De la Renaissance à la Révolution (XVe-XVIIIe siècles)",
+      "producedDateY_i":2021,
+      "fileMain_s":"https://enc.hal.science/hal-04071043/document"
+    },{
+      "openAccess_bool":false,
+      "title_s":["Le monde de l’imprimé en Europe occidentale (vers 1470-vers 1680)"],
+      "halId_s":"hal-04071039",
+      "uri_s":"https://enc.hal.science/hal-04071039v1",
+      "docType_s":"OUV",
+      "producedDateY_i":2021
+    },{
+      "openAccess_bool":false,
+      "title_s":["Écrire le secret quotidien. Pratiques de la cryptographie au sein de la diplomatie française (XVIe - premier XVIIe siècle)"],
+      "halId_s":"hal-04071047",
+      "uri_s":"https://enc.hal.science/hal-04071047v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Spies, Espionage and Secret Diplomacy in the Early Modern Period",
+      "producedDateY_i":2021
+    },{
+      "openAccess_bool":false,
+      "title_s":["Francés de Álava : Aux origines du Grand-espion du Roi Catholique"],
+      "halId_s":"hal-04991373",
+      "uri_s":"https://univ-montpellier3-paul-valery.hal.science/hal-04991373v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Spies, Espionage and Secret Diplomacy in the Early Modern Period",
+      "doiId_s":"10.17433/978-3-17-038939-7",
+      "producedDateY_i":2021
+    },{
+      "openAccess_bool":false,
+      "title_s":["Devoir d’obéissance ou raison d’État : l’ambivalence de la littérature politique française face à la révolte de Bohême (1618-1623)"],
+      "halId_s":"hal-04071042",
+      "uri_s":"https://enc.hal.science/hal-04071042v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Séditions et révoltes dans la réflexion politique de l’Europe moderne",
+      "producedDateY_i":2022
+    },{
+      "openAccess_bool":false,
+      "title_s":["La construction de l’État monarchique en France (1370-1715)"],
+      "journalTitle_s":"Bulletin de l'Association des historiens modernistes des universités françaises (1978-2022)",
+      "halId_s":"hal-04071034",
+      "uri_s":"https://enc.hal.science/hal-04071034v1",
+      "docType_s":"ISSUE",
+      "producedDateY_i":2022
+    },{
+      "openAccess_bool":true,
+      "title_s":["La rébellion comme outil de légitimation de la diplomatie française dans l'Empire (années 1590 - années 1620)"],
+      "halId_s":"hal-04746059",
+      "uri_s":"https://hal.science/hal-04746059v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Diplomaties rebelles: Huguenots, Malcontents et Ligueurs sur la scène internationale (1562-1629)",
+      "producedDateY_i":2022,
+      "fileMain_s":"https://hal.science/hal-04746059/document"
+    },{
+      "openAccess_bool":true,
+      "title_s":["Loyaux serviteurs ou fidèles huguenots ? Servir le roi auprès des princes protestants de l'Empire (1589-1620)"],
+      "halId_s":"hal-04746081",
+      "uri_s":"https://hal.science/hal-04746081v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Servir le prince en temps de guerre civile dans l’Europe des XVIe et XVIIe siècles",
+      "doiId_s":"10.4000/books.pur.194341",
+      "producedDateY_i":2023
+    },{
+      "openAccess_bool":true,
+      "title_s":["Deciphering Charles Quint (A diplomatic letter from 1547)"],
+      "conferenceTitle_s":"6th International Conference on Historical Cryptology, HistoCrypt",
+      "halId_s":"hal-04083014",
+      "uri_s":"https://hal.science/hal-04083014v1",
+      "docType_s":"COMM",
+      "doiId_s":"10.3384/ecp195704",
+      "producedDateY_i":2023,
+      "fileMain_s":"https://hal.science/hal-04083014/document"
+    },{
+      "openAccess_bool":false,
+      "title_s":["Accueillir, expulser ou ségréguer ? Les modes de gouvernement des populations juives d’Italie à l’époque moderne (fin XVe-milieu du XVIIIe s.)"],
+      "halId_s":"hal-04049886",
+      "uri_s":"https://hal.science/hal-04049886v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Communautés et mobilités en Méditerranée : de la fin du XVe siècle au milieu du XVIIIe siècle",
+      "producedDateY_i":2023
+    },{
+      "openAccess_bool":true,
+      "title_s":["« Ne sçachant que c'est de trahison ny infidelité » : fidélités multiples et conflits de loyauté au sein de la diplomatie française dans le Saint-Empire (années 1590 - années 1620)"],
+      "journalTitle_s":"L'Atelier du Centre de recherches historiques",
+      "halId_s":"hal-04712115",
+      "uri_s":"https://hal.science/hal-04712115v1",
+      "docType_s":"ART",
+      "doiId_s":"10.4000/11xj6",
+      "producedDateY_i":2024
+    },{
+      "openAccess_bool":true,
+      "title_s":["Une diplomatie de proximité"],
+      "halId_s":"hal-05023007",
+      "uri_s":"https://u-picardie.hal.science/hal-05023007v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Diplomatie et mobilités",
+      "doiId_s":"10.4000/12zgc",
+      "producedDateY_i":2024
+    },{
+      "openAccess_bool":false,
+      "title_s":["Sprachwahl und Sprachgebrauch im diplomatischen Alltag : Ringen um Souveränität ? Frankreich und das Heilige Römische Reich (1560er-1650er Jahre)"],
+      "halId_s":"hal-04712198",
+      "uri_s":"https://hal.science/hal-04712198v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Die Sprachen der Frühen Neuzeit. Europäische und globale Perspektiven",
+      "producedDateY_i":2024
+    },{
+      "openAccess_bool":false,
+      "title_s":["Sprachwahl und Sprachgebrauch im diplomatischen Alltag: Ringen um Souveränität? Frankreich und das Heilige Römische Reich (1510er–1620er Jahre)"],
+      "halId_s":"hal-05023681",
+      "uri_s":"https://u-picardie.hal.science/hal-05023681v1",
+      "docType_s":"COUV",
+      "bookTitle_s":"Die Sprachen der Frühen Neuzeit",
+      "doiId_s":"10.7788/9783412530839.175",
+      "producedDateY_i":2024
+    },{
+      "openAccess_bool":true,
+      "title_s":["Édition d'une lettre chiffrée de Charles Quint à Jean de Saint-Mauris (1547)","Edition of an encrypted letter from Charles V to Jean de Saint-Mauris (1547)"],
+      "halId_s":"hal-05269981",
+      "uri_s":"https://hal.science/hal-05269981v2",
+      "docType_s":"OTHER",
+      "doiId_s":"10.3384/ecp195704",
+      "producedDateY_i":2025,
+      "fileMain_s":"https://hal.science/hal-05269981/document"
+    },{
+      "openAccess_bool":true,
+      "title_s":["Déchiffrement d'une lettre de François Ier à Christophe Richer (21 janvier 1547)"],
+      "halId_s":"hal-05149410",
+      "uri_s":"https://hal.science/hal-05149410v1",
+      "docType_s":"OTHER",
+      "producedDateY_i":2025,
+      "fileMain_s":"https://hal.science/hal-05149410/document"
+    },{
+      "openAccess_bool":true,
+      "title_s":["The BACK IN TIME Project : A User-Centred Platform for Encrypted Historical Documents"],
+      "conferenceTitle_s":"HistoCrypt 2026 - 9th HistoCrypt conference",
+      "halId_s":"hal-05727769",
+      "uri_s":"https://hal.science/hal-05727769v1",
+      "docType_s":"COMM",
+      "producedDateY_i":2026,
+      "fileMain_s":"https://hal.science/hal-05727769/document"
+    }]
+  }
+}

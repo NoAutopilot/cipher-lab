@@ -1,0 +1,16 @@
+target	searched_for	regex	files_searched	raw_matches	match_files	first_context
+espagnol142-mercy-1648	shelfmark, recipient, place, names, sender, date	Espagnol ?14[234]|Esp\. ?14[234]|Mercy|Barneton|Saint-?Ibal|Burgsdorf|L[ée]opold[- ]Guillaume|Leopold Wilhelm|juin 1648|June 1648	19	0		
+ceppo-nevers-fr3251-1570s	shelfmark, sender	\b3251\b|Ceppo	19	0		
+nevers-birago-fr3251-1572	shelfmark, sender, place	\b3251\b|Birago|Saluces|Saluzzo	19	0		
+fr3416-nevers-fils-1589	shelfmark, recipient	\b3416\b|Rethelois|Rethel	19	1	dl-1592.txt	g the correspondence between the King and the Duke Aisne rive, from Soissons to Rethel. However, out as well as the dissemination of digit ciphers in of concern that 
+fr3621-dinteville-1592	shelfmark, sender, place	\b3621\b|Dinteville|Langres	19	0		
+fr2980-gramont	shelfmark, sender, recipient	\b2980\b|Gramont|Grammont|Villandry|[ée]v[êe]que de Tarbes|Tarbes	19	0		
+fr20140-danzay-1557	shelfmark, sender, place, recipient	\b20140\b|Danzay|Dan[cç]ay|Dantzai|Copenhag|cardinal de Lorraine	19	0		
+dupuy452-carpi-1520	shelfmark, sender	Dupuy 452|Carpi|Raince	19	0		
+dupuy468-anhalt	shelfmark, names, date	Dupuy 468|L[uü]nebo?urg|Moltzan|1518	19	10	hal-04071043.txt,hal-04071992.txt,hal-04712132.txt,oe_trajectoires_1227.txt,oe_trajectoires_1701.txt	ettres échangées entre François Ier et ses ambassadeurs à Londres (août-octobre 1518) », dans Bibliothèque de l’École des chartes, 112 (1954), pp. 118). 4 Bernard C
+clair349-este-guise-1556	shelfmark, names	Clairambault ?349|\bEste\b|Ferrare|Guise.{0,40}1556	19	2	hal-04083014.txt,oe_caliban_2926.txt	emotion elle est couleur ils se font plus grant amas de gens ensem- cessee et a esté seulement une assemblee de peu- ble de toutes aultres particularitez. Et quant
+clair1067-brienne-poland-1646	shelfmark, recipient	Clairambault ?1067|Brienne	19	0		
+clair1108-duvergier	shelfmark, sender	Clairambault ?1108|Duvergier|Du Vergier	19	0		
+fr15575-syllabic-1592-95	shelfmark, design	\b1557[56]\b|syllab	19	2	hal-04712132.txt	uctions 58, d'éditions59 et de publications propres comme L'ambassadeur60 ou le Syllabus aliquot synodorum et colloquiorum, véritable bibliographie contemporaine61. L
+fr4715-f61-mayenne-1592	shelfmark, sender	\b4715\b|Mayenne.{0,60}1592	19	0		
+fr5160-letellier-1653	shelfmark, sender	\b5160\b|Le ?Tellier	19	0		
