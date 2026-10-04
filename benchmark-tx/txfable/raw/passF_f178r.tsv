@@ -1,0 +1,79 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T45		M	line start; b-like: o with stem rising at upper right
+L01	2	T33		H	two verticals on baseline
+L01	3	T45		M	b-like: o with rising stem
+L01	4	T83		H	ae-like crossed pair
+L01	5	T19		H	pi
+L01	6	T89	T26	M	percent-like: small open c above, slant stroke, b-loop below
+L01	7	T49		M	open-topped 4
+L01	8	X_NEW	T63	L	right-pointing chevron, like 7 or >
+L01	9	T78		H	reversed-C bracket plus cross
+L01	10	T56	T63	M	Y shape with stem, no crossbar seen
+L01	11	T86		H	H with tilted crossbar
+L01	12	T51		M	t with curved foot
+L01	13	T19		H	pi (overlap s1/s2 counted once)
+L01	14	T58		H	B
+L01	15	T53		H	infinity
+L01	16	T96		H	looped l/e with tick above
+L01	17	T70		H	triangle
+L01	18	T25		H	lambda with hooked foot
+L01	19	T19		H	pi
+L01	20	T83		H	ae-like crossed pair
+L01	21	T60		H	hash
+L01	22	T37		H	theta with horizontal bar
+L01	23	T33		L	two verticals, only top visible, cut at crop bottom (s2 right / s3 left)
+L01	24	?		L	round-topped mark cut off at crop bottom under prose word strepito; line continues beyond crop
+L02	1	T60		H	line start; hash
+L02	2	T45		M	b-like with tick above
+L02	3	T98	T45	H	phi, stem through circle top and bottom
+L02	4	T25		H	lambda
+L02	5	T90		H	cross on top of circle
+L02	6	T97		M	8-shape with bar through lower loop
+L02	7	T45		M	b-like
+L02	8	T65		H	circle on stem with bar below (female-sign-like)
+L02	9	T86		H	H tilted
+L02	10	T76		H	g/9
+L02	11	T36	T18	M	circle on descending stem
+L02	12	T45		M	b-like
+L02	13	T37		H	theta barred (overlap s1/s2 counted once)
+L02	14	T36	T18	H	circle on descending stem, no bar
+L02	15	T56	T81	M	x/y-like with closed loop at right
+L02	16	T37		H	theta barred
+L02	17	T33		H	two verticals on baseline
+L02	18	T45		M	b-like, tall stem
+L02	19	T70		H	triangle with small tail
+L02	20	T60		H	hash
+L02	21	T90		M	cross on circle, lower part cut (s2 right / s3 left)
+L02	22	T80		M	D, lower part cut
+L02	23	X_EQ		L	two short parallel horizontal strokes, lower part cut at crop bottom
+L02	24	?		L	single vertical stroke, cut at crop bottom
+L02	25	T83		L	ae-like, only top visible, cut
+L02	26	T36	T88	L	round bowl top, cut at crop bottom; line continues beyond crop
+L03	1	T83		H	line start; ae-like crossed pair
+L03	2	T45		M	o with short stroke above
+L03	3	T37		H	theta barred
+L03	4	T11		M	8 with dot above followed by s/5-shape, read as one pair; could be two marks (8 + X_S)
+L03	5	T51		M	t with curved foot
+L03	6	T37		H	theta barred
+L03	7	T92		H	omega
+L03	8	T55		H	F with double bar
+L03	9	T95	T65	M	p-bowl on stem with two crossbars below
+L03	10	T19		H	pi (overlap s1/s2 counted once)
+L03	11	T85		H	plus
+L03	12	T76		H	g/9
+L03	13	T63		H	v
+L03	14	T37		H	theta barred
+L03	15	T83		H	ae-like
+L03	16	T92		H	omega
+L03	17	T45		M	o with detached stroke above
+L03	18	T60		H	hash
+L03	19	T45		M	o with detached stroke above
+L03	20	T85		H	plus
+L03	21	T46		H	86 pair
+L03	22	T90		M	cross on top of hooked bowl, lower part cut
+L03	23	T53	T64	L	infinity or m, top only, cut
+L03	24	T19		L	pi, top only, cut
+L03	25	T80		L	D, top only, cut
+L03	26	T53		L	infinity, top only, cut
+L03	27	T53		L	infinity, top only, cut
+L03	28	?		L	further marks visible only as tops at crop bottom; line continues beyond crop

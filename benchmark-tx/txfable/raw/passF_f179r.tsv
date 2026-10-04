@@ -1,0 +1,91 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T92		H	line start; omega
+L01	2	T45		M	b-like: o with stem rising
+L01	3	T58		H	B
+L01	4	T92		H	omega
+L01	5	T45		M	b-like
+L01	6	T56	T81	M	x/y-like with closed loop descending at right
+L01	7	T85		H	plus
+L01	8	T33		H	two verticals on baseline
+L01	9	T86		H	H tilted
+L01	10	T57		H	diamond with tail
+L01	11	T45		M	b-like
+L01	12	T37		H	theta barred
+L01	13	T24		H	epsilon/3-shape
+L01	14	T85		H	plus
+L01	15	T83		H	ae-like (overlap s1/s2 counted once)
+L01	16	T45		M	b-like, tall stem
+L01	17	T83		H	ae-like
+L01	18	T45		M	b-like
+L01	19	T53		H	infinity
+L01	20	T83		H	ae-like
+L01	21	T45		M	b-like
+L01	22	T60		H	hash (overlap s2/s3 counted once)
+L01	23	T36	T18	H	circle on descending stem
+L01	24	T64		H	m
+L01	25	T96		H	looped l/e with tick above
+L01	26	T37		H	theta barred
+L01	27	T51		M	t
+L01	28	T86		H	H tilted
+L01	29	T76		H	g/9
+L01	30	T65		H	circle on stem with bar below
+L01	31	T19		H	pi; line end
+L02	1	T92		H	line start; omega
+L02	2	T19		H	pi
+L02	3	T90		H	cross on top of circle
+L02	4	T83		H	ae-like
+L02	5	T85		H	plus
+L02	6	T88		H	plain o
+L02	7	T33		H	two verticals on baseline
+L02	8	T24		H	epsilon/3-shape
+L02	9	T92		H	omega
+L02	10	T53		H	infinity
+L02	11	T37		H	theta barred
+L02	12	T70		H	triangle
+L02	13	T45		M	o with detached stroke above
+L02	14	T60		H	hash
+L02	15	T53		H	infinity (overlap s1/s2 counted once)
+L02	16	T86		H	H tilted
+L02	17	T58		H	B
+L02	18	T37		H	theta barred
+L02	19	T33		H	two verticals on baseline
+L02	20	T63		H	v
+L02	21	T37		H	theta barred
+L02	22	T83		H	ae-like
+L02	23	T45		M	b-like with small tick right of stem
+L02	24	T25		H	lambda
+L02	25	T90		H	cross on top of circle
+L02	26	T80		H	D (overlap s2/s3 counted once)
+L02	27	T33		H	two verticals on baseline
+L02	28	T65		H	circle on stem with bar below
+L02	29	T19		H	pi
+L02	30	T92		H	omega
+L02	31	T53		H	infinity; line end
+L03	1	T19		H	line start; pi
+L03	2	T98	T45	H	phi, stem through circle
+L03	3	T81		H	x
+L03	4	T83		H	ae-like
+L03	5	T80		H	D
+L03	6	T70		H	triangle
+L03	7	T85		H	plus
+L03	8	T83		H	ae-like
+L03	9	T92		H	omega
+L03	10	T45		M	b-like
+L03	11	T76		H	g/9
+L03	12	T45		M	b-like with stem
+L03	13	T89	T26	M	percent-like: small q/c above, b-loop below
+L03	14	T85		H	plus
+L03	15	T58		H	B (overlap s1/s2 counted once)
+L03	16	T53		H	infinity
+L03	17	T83		H	ae-like
+L03	18	T96		H	looped l/e with tick above
+L03	19	T51		M	t
+L03	20	T86		H	H tilted
+L03	21	T60		H	hash
+L03	22	T53		H	infinity (overlap s2/s3 counted once)
+L03	23	T80		H	D, heavy ink
+L03	24	T84		M	inverted triangle with horizontal bar; struck through by a line
+L03	25	X_NEW	T57	L	small square with a dot inside; struck through
+L03	26	T70	T84	L	upright triangle with stem above; struck through
+L03	27	T54		M	R-like; struck through
+L03	28	X_NEW		L	lone dot after struck passage, possibly punctuation; line end
