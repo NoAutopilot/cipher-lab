@@ -1,0 +1,31 @@
+# id, value, cx, cy(row), w, description
+R={1:31,2:52,3:74,4:93}
+cells=[
+("a1","a",7,1,"curled d / reversed 6 (∂)"),("a2","a",5,2,"9"),("a3","a",7,3,"lambda λ"),
+("b1","b",30,1,"z / 2"),("b2","b",30,2,"h with descending tail (ɧ); same shape as c2"),("b3","b",38,3,"V"),
+("c1","c",52,1,"z / 2 (same as b1)"),("c2","c",52,2,"h with descending tail (same as b2)"),
+("d1","d",75,1,"e crossed by t-bar (ɛ with stroke; resembles 'de' and 'le' signs)"),("d2","d",74,2,"9 with long tail (q)"),("d3","d",75,3,"H"),
+("e1","e",98,1,"p with loop (ρ)"),("e2","e",98,2,"cursive e"),("e3","e",98,3,"sigma σ"),("e4","e",98,4,"6 / b"),
+("f1","f",118,1,"pi with bar (ϖ)"),("f2","f",118,2,"t with comma (ɛ,)"),("f3","f",118,3,"upsilon ʊ"),
+("g1","g",145,1,"long s with small o above"),
+("h1","h",163,1,"f"),
+("i1","i",187,1,"v"),("i2","i",187,2,"triangle Δ"),("i3","i",187,3,"3"),("i4","i",187,4,"cursive N"),
+("l1","l",212,1,"x followed by o (xo)"),("l2","l",212,2,"x-o with extra stroke (%o)"),("l3","l",210,3,"struck s / beta-like (ß)"),
+("m1","m",236,1,"pi π"),("m2","m",236,2,"phi φ"),("m3","m",236,3,"f-g ligature"),
+("n1","n",258,1,"dots with bar (÷)"),("n2","n",252,2,"beta β"),("n3","n",258,4,"rotated T (⊢)"),
+("o1","o",280,1,"8"),("o2","o",280,2,"1"),
+("p1","p",302,1,"3 with stroke (ʒ)"),("p2","p",302,2,"11"),
+("q1","q",323,1,"8 crossed by bar"),
+("r1","r",346,1,"circle with cross ⊕"),("r2","r",345,2,"6 (circled in source; resembles 'le')"),("r3","r",345,4,"q with tail"),
+("s1","s",368,1,"g / 3 with descender"),("s2","s",366,2,"1 with hook (ſ1)"),("s3","s",368,3,"star ✱"),("s4","s",368,4,"double pi (ϖϖ)"),
+("t1","t",391,1,"x with loop"),("t2","t",391,2,"v with loop (ʋ)"),("t3","t",392,4,"x with tail (ϰ)"),
+("u1","u",416,1,"7 with loop (q)"),("u2","u",416,2,"c"),("u3","u",414,3,"double d (∂∂)"),
+("x1","x",436,1,"t with o / cross over o (±)"),
+("y1","y",461,1,"c with tail (ɕ)"),
+("N1","<null>",528,1,"curl ʅ"),("N2","<null>",528,2,"E"),("N3","<null>",528,3,"29"),
+("w_de","de",12,5,"te ligature (circled; resembles d1)"),("w_car","car",55,5,"cursive M/W"),("w_est","est",100,5,"s f (sf)"),
+("w_la","la",190,5,"oo with bar above (ꝏ)"),("w_le","le",230,5,"ɛ with t-bar (circled; resembles d1)"),("w_mais","mais",285,5,"three dots (...)"),
+("w_pour","pour",330,5,"d o (∂o)"),("w_que","que",368,5,"s long-s (sʃ)"),("w_qui","qui",410,5,"p with superscript o (pᵒ)"),
+("w_quel","quel",455,5,"oo struck through"),("w_votre","votre",510,5,"t f o (tfo)"),
+]
+R[5]=152
