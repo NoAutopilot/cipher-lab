@@ -1496,3 +1496,68 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
 - [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; next instrument: hand-placed per-position crops)
 Verdict: keep going: 13 internal gaps; cheapest next: ink 54 col-u-row-3 relabel with hand-placed per-position crops (PREREG-N7VIV54R rule), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
+
+## VIV-BREMOND (4 Oct 2026, 18:39-18:5x UTC, account-3 worker): d'Ars 1884 print check for 5 and 7 Sept 1572 and 10 Oct 1573
+Brief: .claude/briefs/runs/2026-10-04-acct3-viv-bremond.md (lead: Ribera 2007 note 18, "Ibid., de Madrid, le 5 septembre 1572 ; BNF, Fr., 16104 ;
+cité par G. de ...", ROOM 18:18). A print check, not a decode; novelty not classified.
+- Book: Guillaume de Bremond d'Ars, *Jean de Vivonne, sa vie et ses ambassades* (Paris, 1884) = IA lepredemadamede00dargoog, already in sources.tsv
+  and on disk (sources/ia-fulltext/print-check/lepredemadamede00dargoog_djvu.txt.gz, 20,802 OCR lines). No network request was made by this job.
+- Date search (regex over the OCR, OCR-tolerant spellings of septembre/octobre and of 1572/1573): d'Ars cites Saint-Gouard letters of 7 Aug, 9, 12,
+  "IS" [12/15/18?], 18 and 19 Sept 1572 and 18 Oct 1573 (plus one whose day the OCR lost, below). **No citation of a 5 Sept 1572, 7 Sept 1572 or
+  10 Oct 1573 letter was found.** The only "7 septembre" in the 1572 chapter is narrative (p.44, "Dans la soirée du samedi 7 septembre, un courrier
+  fit son entrée ... dans Madrid": the St Bartholomew news), cited to Saint-Gouard to Charles IX, 9 Sept 1572, fr.16104.
+- Every Saint-Gouard quotation in the St Bartholomew pages (pp.43-47) is from letters written after the courier's arrival on the evening of 7 Sept.
+  The one footnote whose day is lost (p.44) quotes, OCR exactly: "La nonvclle iIdr ivéaement du jour S.iînt-Biirthàleoiy est arrivée en r li(>ii un
+  Fini CatliuliijUi; pur nn LiitUTicr rli-pe«cliP pur ilon Dic[>o, la nurJy an ioir nepùnme Hr ce luoys..." (worker's reading of the OCR: "La nouvelle
+  de l'événement du jour Saint-Barthélemy est arrivée ... au Roi Catholique par un courrier dépêché par don Diego, le samedy au soir septiesme de ce
+  moys"), cited "Saint-Gouard à Charles IX, [day lost] septembre 1572, fr.16105 (par erreur, cette lettre est avec celles de 1573)". It reports the
+  7 Sept evening in the past and sits in fr.16105, so it is not ink 53 (5 Sept, fr.16104 ff.170-171) or ink 54 (7 Sept, fr.16104 f.173).
+  The p.45 quotations ("Et ne pourront dire que j'y soye allé ...", "il se prit à rire ...") are cited to 12 Sept 1572 (fr.16105), p.46 to "IS" Sept.
+- Script comparison (tx/bremond_kmer.py; letters only, accents stripped, u=v, i=j=y): shared k-mers between each decode and d'Ars, with Gachard II
+  and Catherine IV as unrelated background of the same period and language:
+
+| decode | letters | d'Ars 10-mers | Gachard II 10-mers | Catherine IV 10-mers | d'Ars 12-mers | d'Ars 15-mers |
+|---|---|---|---|---|---|---|
+| ink 53 (piece53_L_decode.txt) | 4,181 | 9 | 48 | 51 | 2 ("contradiction") | 0 |
+| ink 54 (piece54_decode_L.txt) | 1,759 | 6 | 15 | 8 | 2 ("reunegrandea") | 0 |
+| ink 63 (piece63_decode.txt) | 14,480 | 38 | 126 | 133 | 1 ("aireentendre") | 0 |
+
+  Text sizes: d'Ars 608,134 letters, Gachard II 1,206,922, Catherine IV 1,475,373; per letter of book text d'Ars sits at or below the background
+  (ink 53: 1.5e-5 vs 4.0e-5 / 3.5e-5). No 15-mer of any decode is in d'Ars. Limit: no matched positive control was run (a quoted cipher passage
+  at our decodes' noise level), so this says "no overlap found at k>=12 beyond generic words", not that a short quote is impossible.
+- print_check.py, offline, sources.tsv + d'Ars, on the union of the folder's phrase files (phrases_bremond.txt, 38 phrases; print-check-bremond.tsv,
+  requests: none): d'Ars hits only "plus grande et plus" (1), "sur les frontieres" (1), "toutes choses" (2), each in unrelated passages (Poland
+  election, mathematics lessons). 70 d'Ars rows "no hits".
+- Where it was not found: d'Ars 1884 (OCR, whole volume). Not searched: Gallica texteBrut of another d'Ars copy (OCR could differ), Ribera 2007 in
+  full, Flament 1996. Ribera's "G. de ..." is not confirmed to be d'Ars for the 5 Sept letter.
+
+## Remaining gaps (VIV-BREMOND refresh, 4 Oct 2026; supersedes the N7-VIV54R list above, all its other lines kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53
+ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
+N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; Flament, L'ambassade du marquis de Saint-Gouard en Espagne 1572-1574 (1996, OCLC 988579745) and Ribera (2007) unread (d'Ars 1884 checked by VIV-BREMOND: no citation of 10 Oct 1573, no decode overlap above background), fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: a LOCAL-QUEUE row for Flament and Ribera on 10 Oct 1573 (interlibrary or the owner's browser), ~$1
+- tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
+- ink 63 key questions (y, single o, c, V, e, 2, r) - blocker: not-attempted; context table done (N7-VIV63G, tx/viv63g_keyctx.tsv): the 4-gram fill is right on only 5/9 held-out codes at this N and biased to i/l, so only y->l (alignment + fill agree), V->n and e as an "m(m)" sign in "co_tandeur" stand as weak proposals; next: read cells h, l, m, n of Tomokiyo's key image (henryiii_Vivonne1.png) for a y-like l homophone, a V-like n and an e-like m/mm sign, then a PREREG'd key-change step with the wrong-key control, ~$1.5
+- ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
+- ink 53 audit (depth re-check) - blocker: not-attempted; AUDIT 2 (VIV53-A1) set N3 / D1; the N7-VIV53L re-decode passes b2 + wrong-key again (PREREG-N7VIV53L) but no repair-free stretch reaches ~42 letters (longest 20); next: verifier session (account 3) on reading_piece53_L.tsv, ~$5
+- ink 53 residual label questions - blocker: not-attempted; 82 split tiles left UNSETTLED by the 2-of-3 rule and 270 one-reader gaps never re-read (tx/lookalike53L/*/focus.tsv), the ': :'-as-null alternative, and "rauldhoit" (f.171r L15, where French wants "pourroit") unresolved (N7-VIV53L); next: owner's sign sorter on the focus files, or a window re-read of the gap tiles (tx/viv53L_windows.py extended to gaps), ~$2
+- ink 54 clean reading - blocker: not-attempted; window look-alike pass done (residual 0.134), true-error audit a non-test, no stretch near ~42 letters (N7-VIV54L); next: owner's sign sorter on tx/lookalike54/*_focus.tsv (275 questions) or a window-instrument audit (lookalike_pass.py audit + viv53L_windows.py audit), ~$1.5
+- ink 54 key question "to z" (qae) - blocker: not-attempted; key cell added (key.tsv Zu -> u, col u row 3, N7-VIV54R) but the pre-registered per-position window judge was a NON-TEST (3/18 after-"to" positions SIGMA at H/M vs >= 7 required; ticks off, no per-sign stroke notes), so no position is relabelled and the reading has not moved; next: per-position crops cut at hand-marked x (not pos/len estimates) for the 169 z/x/R/3/2 positions, or the owner's sign sorter with Zu as a pile, then the same PREREG decision rule, ~$1.5
+- ink 54 audit (depth re-check) - blocker: not-attempted; b2 + wrong-key PASS on the re-decode (PREREG-N7VIV54L); next: verifier session (account 3), ~$5
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+- Ribera 2007 note 18 "cité par G. de ..." for the 5 Sept 1572 letter (fr.16104) - blocker: waiting-on LOCAL-QUEUE L50 (Ribera full text; not cloud-reachable beyond a Google Books API snippet); d'Ars 1884 does not cite a 5 Sept 1572 letter in its OCR (VIV-BREMOND), so the 'G. de ...' is either another author or a d'Ars citation the OCR lost; next: read note 18 in full with the 5 Sept 1572 L50 row
+## Escalation (4 Oct 2026, VIV-BREMOND; from the N7-VIV54R list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars, Catherine IV-V, Groen IV read; d'Ars re-checked by date and by k-mer/phrase overlap against inks 53, 54, 63 (VIV-BREMOND); Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; next instrument: hand-placed per-position crops)
+Verdict: keep going: 13 internal gaps (+1 waiting-on); cheapest next: ink 54 col-u-row-3 relabel with hand-placed per-position crops (PREREG-N7VIV54R rule), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
