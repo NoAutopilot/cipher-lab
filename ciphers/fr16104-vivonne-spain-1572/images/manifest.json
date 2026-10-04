@@ -168,5 +168,17 @@
    },
    "date": "04 Oct 2026"
   }
+ ],
+ "manual_crops": [
+  {
+   "file": "fr16105_c107_f104_head.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f107/pct:52,2,46,32/1600,/0/default.jpg",
+   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffr\u00e9 de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
+  },
+  {
+   "file": "fr16105_c112_f108v_end_norm.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f112/pct:2,2,49,96/1000,/0/default.jpg",
+   "what": "fr.16105 f.108v, lower part, ImageMagick -crop 1000x600+0+780 -normalize: last lines of the decipherment ending '... de ses necessitez', no closing or date (N4-VIV2, 4 Oct 2026)"
+  }
  ]
 }
