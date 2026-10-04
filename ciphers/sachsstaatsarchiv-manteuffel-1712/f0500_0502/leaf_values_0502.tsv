@@ -1,0 +1,20 @@
+# RUN5-MANT4 4 Oct 2026: frame 0502 per-leaf gate HELD (PREREG-MANT4); every value here is M and nothing entered key.tsv (rule 3 per-unit merge clause).
+run	codes	class	gloss_value	grade	key_tsv	note
+F2-1	284 253 322 114 90 75 123 278 612 84	multi	ete force a l'accepter	M	284=comte (C); 90=c|ch (M); 84=sch (C)	run-level only, no per-code split
+F2-2	289 655 253 156 515 282 237 408 579	multi	execute aupres de leur Roy	M	156=Hoym (C)	run-level only, no per-code split
+F2-3	592 272 181 99	multi	Stenbock	M	181=Menzikoff (C); 99=s|ss|sa (M)	run-level only, no per-code split
+F2-4	310 198 404 612 106 555 123 480 410 237 434	multi	faciliter quelque accommodement	M	310=Dresden (C); 198=Stanislas (C)	run-level only, no per-code split
+F2-5	864	single	Roy de Prusse	M	864=le Roi de Prusse (C)	
+F2-6	253 406 233 560 403 539 340 156 143 611 330	multi	expres eluder le plus grand avantage	M	156=Hoym (C)	run-level only, no per-code split
+F2-7	864	single	R. de Prusse	M	864=le Roi de Prusse (C)	
+F2-8	357	single	Ilgen	M	-	
+F2-9	611 648 90 247	multi	maybock a dit	M	90=c|ch (M)	run-level only, no per-code split
+F2-10	548 757 585 564 389	multi	que le Roy de Pol. feroit	M	-	run-level only, no per-code split
+F2-11	630 253 84 109 558 109 77 549 444 821 402	multi	eut quelqu'un qui luy	M	84=sch (C); 109=ss (C); 109=ss (C); 77=d (C)	run-level only, no per-code split
+F2-12	936	single	La Butte	M	-	
+F2-13	714 431 73 612 237 715 199 612 89	multi	un merite de deux cotez	M	73=s|z (M); 89=tz|z|s (M)	run-level only, no per-code split
+F2-14	592 285 375	multi	Stein	M	-	run-level only, no per-code split
+F2-15	277 584 447 237 560	multi	lexander	M	-	run-level only, no per-code split
+F2-16	185 825	multi	du Roy de Suede	M	-	run-level only, no per-code split
+F2-17	31 66 21 35 7 33 15 9 50 28 39 22 14	multi	ma negociation	M	31=m (C); 66=a (C); 21=n (C); 35=e (C); 7=g (C); 33=o (C); 15=c (M); 9=i (C); 50=a (C); 28=t (C); 39=i (C); 22=o|a (M); 14=n (C)	run-level only, no per-code split
+F2-18	110 34 9 2 30 35 51 6 120 46 59 10 25 24 6 16 39 9 35 5 46 29 10 20000	multi	la lune suede a quoi je vise	M	110=la (C); 34=p (C); 9=i (C); 2=e (C); 30=c (M); 35=e (C); 51=s|sa (M); 6=u (C); 120=d (C); 46=i (C); 59=t (C); 10=e (C); 25=a (C); 24=q (C); 6=u (C); 16=o|ou|ous (M); 39=i (C); 9=i (C); 35=e (C); 5=v (C); 46=i (C); 29=s (C); 10=e (C)	run-level only, no per-code split

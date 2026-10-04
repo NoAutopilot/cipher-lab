@@ -1,0 +1,25 @@
+# RUN5-MANT4 4 Oct 2026: worker reconciliation of passes A/B on 2x zooms of the native frames (scratch). digits_grade M = a group the passes split on or both misread, settled from the zoom (or from the witness where the zoom is ambiguous). gloss_grade: C clear on the zoom, M a letter or the name uncertain.
+run	frame	crops	codes	gloss	gloss_grade	digits_M	note
+F0-1	0500	L01	840 865	Prince Royal	C	865	both passes 865; RUN4-MANT3 eye read 805 (copy), f.409r 865
+F0-2	0500	L02	403 1056 974 65 143 348 401 108	le Prince d'Anhalt	C	1056	both passes split '105 6'; zoom one group '105b' (b-shaped 6), f.409r 1056
+F0-3	0500	L03+L04	344 225 213	gagne celuy cy	C		gloss over 344.225; 213 wraps to next line
+F0-4	0500	L05+L06	867 134 384 272 155 583 586 351 77 449 612 353 548 863 69 102	le feldt marechal agit en aussi honnete homme que Ilgen en	C	272 449 548	passes '2 72' (zoom '2.72' with a pen lift; 272 as f.409r and 0502 L03); 449 (y-shaped 9, B; A 444); 548 (A; B 549); 863.69.102 unglossed wrap, kept in the run (prereg: maximal run); then clear 'jeanf..'
+F0-5	0500	L06	371 463 569 403 539 237 601 551 504 109 83	il nous rendra le plus de services qu'il peut	C	569	A 569, B 589; zoom '5b9'
+F2-1	0502	L01	284 253 322 114 90 75 123 278 612 84	ete force a l'accepter	C	84	A 81 B 84; zoom '8u' = 84; passes read 'Mr forel'/'a l'aucpler'; zoom 'ete force ... a l'accepter'
+F2-2	0502	L02	289 655 253 156 515 282 237 408 579	execute aupres de leur Roy	M	408 579	both passes 403/574; zoom '40y'?/'57y': y-shaped 8/9 -> 408 (f.409v 408), 579; first gloss word M
+F2-3	0502	L03	592 272 181 99	Stenbock	C		
+F2-4	0502	L04	310 198 404 612 106 555 123 480 410 237 434	faciliter quelque accommodement	C		f.409v 416 for 410 (passes agree 410)
+F2-5	0502	L05	864	Roy de Prusse	C		passes 'Roy de Suede?'/'Royal Empr?'; zoom 'Roy de Pruss.'
+F2-6	0502	L06+L07	253 406 233 560 403 539 340 156 143 611 330	expres eluder le plus grand avantage	C	253 156	passes 283 (blot over first digit; f.409v 253); A 186 B 156, zoom 156
+F2-7	0502	L07	864	R. de Prusse	C		passes 'R. de Suede'; zoom 'R. de Pruss.'
+F2-8	0502	L08	357	Ilgen	C		passes Hyen?/Ulyen?; zoom 'Ilgen'
+F2-9	0502	L09	611 648 90 247	maybock a dit	M		name unread (A 'Mr?bock', B 'Hautoch', RUN4 'Mattab?'); 'a dit' C
+F2-10	0502	L10	548 757 585 564 389	que le Roy de Pol. feroit	C	757	A 757 B 754; digits not settled on the zoom; f.409v 757
+F2-11	0502	L11+L12	630 253 84 109 558 109 77 549 444 821 402	eut quelqu'un qui luy	C	630	630 written over another digit (both passes note it); 821.402 at the next line start continues the run (passes made it a separate unglossed run); f.409v 680 253 87 108 ... 414
+F2-12	0502	L12	936	La Butte	M		passes la Bute?/La Brute?
+F2-13	0502	L12+L13	714 431 73 612 237 715 199 612 89	un merite de deux cotez	C	199	A 1914 B 194; zoom '1y1y' (unclear: 199 or 1919); f.409v 99; passes split 612.89 off by a space only
+F2-14	0502	L14	592 285 375	Stein	M	375	passes 315; f.409v 375; gloss passes Hetin?/Helvic?, zoom 'Stein..' faint
+F2-15	0502	L14	277 584 447 237 560	lexander	M		inserted run 'par ...' above the line; gloss A Lexander?, B Leander?
+F2-16	0502	L15	185 825	du Roy de Suede	C		
+F2-17	0502	L16+L17	31 66 21 35 7 33 15 9 50 28 39 22 14	ma negociation	C	66 9 39 22 14	letter-range (Krauske); passes 62/1/73 and stop at the margin; zoom '6?','y','3y','22'; '14.' starts the next line (passes took it as a paragraph number); digits M
+F2-18	0502	L17+L18	110 34 9 2 30 35 51 6 120 46 59 10 25 24 6 16 39 9 35 5 46 29 10 20000	la lune suede a quoi je vise	M	9 2	letter-range; passes '42', zoom '34.y.2' = 34 9 2; L18 first group passes 39 (RUN4 29); gloss small, M

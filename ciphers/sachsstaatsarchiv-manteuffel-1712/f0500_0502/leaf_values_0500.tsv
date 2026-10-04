@@ -1,0 +1,7 @@
+# RUN5-MANT4 4 Oct 2026: frame 0500 per-leaf gate HELD (PREREG-MANT4); every value here is M and nothing entered key.tsv (rule 3 per-unit merge clause).
+run	codes	class	gloss_value	grade	key_tsv	note
+F0-1	840 865	multi	Prince Royal	M	865=le Prince Royal (M)	run-level only, no per-code split
+F0-2	403 1056 974 65 143 348 401 108	multi	le Prince d'Anhalt	M	65=b (M); 401=o (C)	run-level only, no per-code split
+F0-3	344 225 213	multi	gagne celuy cy	M	-	run-level only, no per-code split
+F0-4	867 134 384 272 155 583 586 351 77 449 612 353 548 863 69 102	multi	le feldt marechal agit en aussi honnete homme que Ilgen en	M	155=Flemming (C); 77=d (C); 69=w (C); 102=s|ss|ess (M)	run-level only, no per-code split
+F0-5	371 463 569 403 539 237 601 551 504 109 83	multi	il nous rendra le plus de services qu'il peut	M	371=il (M); 109=ss (C); 83=sch (C)	run-level only, no per-code split
