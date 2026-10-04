@@ -1,0 +1,58 @@
+line	col	A	B	flagged	crop
+L01	3	o	0		
+L01	9	dia	p		
+L01	17	o	0		
+L02	11	4	qb		
+L02	16	+	-		
+L03	14	l	e		
+L03	28	7	NEW:small-curl-with-long-bar	A	
+L04	1	-	th		
+L04	8	o	0		
+L04	17	iib	iii		
+L04	18	rot	K		
+L04	25	NEW:flat-bar-blob	NEW:ink-blob-dash		
+L05	11	iib	sqc	A	
+L05	23	-	/		
+L06	10	8	rot		
+L06	23	iib	sqc	A	
+L07	26	S	tz	A	
+L09	1	PLAIN:I	-		
+L09	2	PLAIN:uil	PLAIN:Juil		
+L09	6	e	ee		
+L09	13	o	0		
+L10	10	dia	th	B	
+L11	9	8	rot		
+L11	28	q	p	A	
+L12	1	NEW:flat-bar-blob	NEW:small-curl-with-long-bar		
+L12	9	rot	K		
+L12	11	l	c		
+L12	20	l	c		
+L13	1	rot	tz	A	
+L14	13	iib	sqc		
+L14	15	+	p		
+L14	27	rot	K		
+L15	8	iib	sqc		
+L15	28	w	z	B	
+L16	1	l	f	B	
+L16	10	e	c		
+L17	5	9	ls	AB	
+L17	18	PLAIN:tour	PLAIN:toute		
+L18	16	rot	K		
+L18	22	z	ee	B	
+L18	28	eloop	L		
+L19	16	-	+		
+L20	5	NEW:filled-blob	dia	B	
+L20	6	iib	sqc	A	
+L20	26	q	S	B	
+L21	15	w	wb	B	
+L22	24	x	-		
+L22	25	e	K		
+L23	18	iib	sqc	A	
+L24	20	eloop	K		
+L24	24	PLAIN:tour	PLAIN:toute		
+L25	8	x	-		
+L25	9	e	rot		
+L26	6	rot	K		
+L26	23	z	dia	B	
+L26	26	-	PLAIN:mons		
+L26	27	PLAIN:monsr	rc		

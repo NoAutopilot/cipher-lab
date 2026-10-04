@@ -1,0 +1,28 @@
+# NEAR3-C1TX-c187R, 4 Oct 2026: tx/c187R_rec.tsv (ss split to s s, PLAIN kept upper-case) decoded under the CURRENT key.tsv for information only.
+# Ungraded, NOT a reading (brief step 5): the key was annealed on c185R+c186R only; this leaf is not in it. Unkeyed signs (NEW_*, vdash if absent) = [sign].
+c187R_L01	e e i n a u o i r c i r o i i i s n i s e a i s t r e i r o n i i
+c187R_L02	s o u i a t i i g r a u t e s c u y e l e l i i l i i e r i
+c187R_L03	i i c a s s e r i e s o s s i c s e r s a u l l o i s t o n e
+c187R_L04	s t i d e e s i n i e l o u i c i e f o u i s o u [NEW_c187R_1] o o a
+c187R_L05	i i c o u s c e u l x i i c i i u a t i o u [/] n e p e r e e c
+c187R_L06	t a u t a p r o c r e r i i l u i e e c e u l x i i l a
+c187R_L07	s i e u n e e s i c e u i i e s l r a u l f n i l e o r s
+c187R_L08	e t o u t g r o s s i s p e n s s i o u s i i l u i e n e
+c187R_L09	JUIL 23 c s y a i i i i e n t r o i s i s e n c a i i s c o u u e
+c187R_L10	r t i e u e o r e s u u e a u l t r i e s e o t i o u
+c187R_L11	p l u s p r o c r a i u e l i c y e e l a i i r u i e r i
+c187R_L12	t u p a i s i i f u s s o r c e u o r s o r c [/] l a e e l
+c187R_L13	f i i i u u o i c i r i o u l t r e l a c o u s t u n i
+c187R_L14	i i s a u l l o i s e e x i c u c e i i i u u i d t f i a u
+c187R_L15	t n i c e u l x r e s o l u n e a c d o r i i c u e u i r
+c187R_L16	s o r c e r r a n p c o u c o u r t e i i i i t e c e r o i m
+c187R_L17	r o y u i e t u e r t o u s i e s TOUTE e a u l t r e s
+c187R_L18	i r a n l i e r s e t i e u s f e u t i i c r o u u e c
+c187R_L19	e i a c r o i r e e e i e s d o n s e i l u e u r e l a n e
+c187R_L20	m c e u [NEW_c187R_blot] x i i l e u r c o n s e i l e t o u t i i e
+c187R_L21	c a u s e i i l e u r e a r i n i l e u e n e u s s e u t
+c187R_L22	e o e u g u i e r e s e e i l e e u r e a r c [NEW_c187R_2] e n e e
+c187R_L23	e l a e e s n e u u i c t c e u l x i i c i i u i l e d e
+c187R_L24	i i l o u l r e s e i s o u t l o l e c i e s TOUTE i i u
+c187R_L25	u o i e u t c [NEW_c187R_2] a s c u n t u e r s o u r o s t i y e
+c187R_L26	s i l e s [NEW_c187R_2] o s t e l i e r s u e u s s e u t i i MONSR

@@ -1,0 +1,17 @@
+line	col	A	B	flagged	crop	both_conf
+L02	31	q	q	A		A:M/B:H
+L04	24	S	S	A		A:M/B:H
+L06	3	S	S	A		A:M/B:H
+L06	16	S	S	A		A:M/B:H
+L07	16	9	9	A		A:M/B:H
+L08	28	f	f	B		A:H/B:M
+L08	29	rc	rc	A		A:M/B:H
+L09	5	th	th	B		A:H/B:M
+L10	2	z	z	A		A:M/B:H
+L13	5	a	a	B		A:H/B:M
+L19	17	d	d	AB		A:M/B:M
+L22	28	rc	rc	AB		A:M/B:M
+L24	15	z	z	B		A:H/B:M
+L24	27	a	a	B		A:H/B:M
+L25	10	qb	qb	B		A:H/B:M
+L25	27	ee	ee	B		A:H/B:M
