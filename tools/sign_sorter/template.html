@@ -79,6 +79,15 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .t .badge{position:absolute;top:1px;right:1px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
 .t.fq .badge{background:var(--accent);color:#fff}
+.t .badge.ok{cursor:pointer;min-width:24px;height:24px;border-radius:12px;font-size:14px;line-height:24px;top:0;right:0;box-shadow:0 0 0 2px var(--surface)}
+.t .badge.ok:hover{background:var(--ok)}
+.t.kept{border:2px solid var(--ok)}
+.t.kept .badge{background:var(--ok);color:#fff}
+.pile.dropover{outline:3px solid var(--accent);outline-offset:2px;background:var(--accent-soft)}
+#trayTiles .t{touch-action:pan-x}
+.tapmode{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:8px;font-size:.9rem}
+#ctxBigW{display:flex;justify-content:center;background:var(--tile);border-radius:6px;padding:8px}
+#ctxBig{width:auto;height:min(42vh,320px);max-width:100%;object-fit:contain;image-rendering:auto}
 .pile.new{border-style:dashed}
 #focus{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
 .ftitle{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0}
@@ -129,7 +138,10 @@ canvas{display:block;max-width:none;height:auto}
 .fly{position:fixed;z-index:40;pointer-events:none;background:var(--tile);border-radius:4px;transition:transform .32s ease-in,opacity .32s ease-in;object-fit:contain}
 /* step 2 */
 #s2[hidden],#s1[hidden],#s2Empty[hidden],#s2Work[hidden]{display:none}
-.s2top{position:sticky;top:var(--bar0,60px);z-index:4;background:var(--bg);display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.s2stick{position:sticky;top:var(--bar0,60px);z-index:4;background:var(--bg);padding-bottom:8px;border-bottom:1px solid var(--line);box-shadow:0 6px 10px -8px rgba(0,0,0,.35)}
+.s2top{display:flex;gap:12px;align-items:flex-start;padding:8px 0}
+.s2stick .cv{max-height:22vh;overflow:auto}
+@media (max-width:640px){.s2stick .row button{padding:4px 7px;font-size:.8rem}.s2stick .hint{margin:2px 0}}
 .bigt{width:104px;height:104px;flex:0 0 auto;background:var(--tile);border:2px solid var(--accent);border-radius:6px;display:grid;place-items:center;
   touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
 .bigt img{max-width:96px;max-height:96px;pointer-events:none;-webkit-user-drag:none}
@@ -143,6 +155,7 @@ canvas{display:block;max-width:none;height:auto}
 .card .smp{display:flex;flex-wrap:wrap;gap:4px}
 .card .smp img{width:var(--csz,60px);height:var(--csz,60px);object-fit:contain;background:var(--tile);border-radius:3px;border:2px solid transparent;cursor:zoom-in;-webkit-user-drag:none}
 .card .smp img:hover{border-color:var(--accent)}
+.card .smp img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .card .put{font-size:.75rem;color:var(--accent);font-weight:600}
 .card.home{border-style:dashed}
 .card.over{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
@@ -174,7 +187,8 @@ body.traypad #offer{bottom:100px}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger. Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign up from the tray onto the pile it belongs in.</p>
+    <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
       <label for="size">Tile size <input id="size" type="range" min="40" max="110" value="64"></label>
@@ -189,9 +203,10 @@ body.traypad #offer{bottom:100px}
   </section>
   <section id="s2" hidden aria-label="Step 2: place the taken-out signs">
     <h2 class="ftitle">Put each taken-out sign where it belongs</h2>
-    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger; from there you can move any of its tiles.</p>
+    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger. <b>Drag a small picture</b> onto another pile to move that tile (on a phone: press it a moment, then drag).</p>
     <div id="s2Empty" class="donebox" hidden><strong>Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
     <div id="s2Work" hidden>
+      <div class="s2stick" id="s2Stick">
       <div class="s2top">
         <div class="bigt" id="s2Tile" role="img" aria-label="The sign to place"><img id="s2Img" alt=""></div>
         <div class="s2info"><strong id="s2T"></strong><p class="hint" id="s2Pos"></p><p id="s2Q" hidden></p>
@@ -200,6 +215,7 @@ body.traypad #offer{bottom:100px}
       <div class="cv"><canvas id="s2C"></canvas></div>
       <div class="row" style="margin-top:10px"><button type="button" id="s2New">None of these: new sign</button><button type="button" id="s2Mark">Not a letter</button>
         <button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button><button type="button" id="s2Home">Put back where it was</button></div>
+      </div>
       <p class="hint" id="s2Msg" aria-live="polite"></p>
       <div class="cards" id="cards" aria-label="Piles: tap one to put the sign there"></div>
     </div>
@@ -212,6 +228,7 @@ body.traypad #offer{bottom:100px}
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
     <div class="row top"><strong id="ctxT"></strong><button type="button" id="ctxX" class="x" aria-label="Close">&times; Close</button></div>
     <p id="ctxQ" hidden></p>
+    <div id="ctxBigW"><img id="ctxBig" alt=""></div>
     <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
@@ -374,9 +391,14 @@ function tileEl(sid, pid, cls){
   b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
-  const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : '';
-  if (mark){ const g = document.createElement('span'); g.className = 'badge'; g.textContent = mark; g.setAttribute('aria-hidden', 'true'); b.append(g); }
-  attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid));
+  const kept = !fq && focusQ[sid] && checked[sid] && checked[sid] === pid && !cls.includes('out');
+  if (kept) b.classList.add('kept');
+  const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : kept ? '✓' : '';
+  if (mark){ const g = document.createElement('span'); g.className = 'badge'; g.textContent = mark; g.setAttribute('aria-hidden', 'true'); b.append(g);
+    if (fq || kept){ g.classList.add('ok'); g.removeAttribute('aria-hidden'); g.setAttribute('role', 'button');
+      g.title = fq ? 'Looks right: approve it in ' + pid : 'Approved. Tap to undo the approval';
+      g.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); approveTile(sid, pid, !fq); }); } }
+  attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid));
   return b;
 }
 
@@ -391,7 +413,7 @@ function pileEl(p, piles){
   chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
   const big = btn('View larger', false, () => { const m = p.members.concat(aside); if (m.length) showCtx(m[0], p.id); });
   big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
-  ph.append(nm, ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id);
+  ph.append(nm, ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
     near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
@@ -420,6 +442,14 @@ function pileEl(p, piles){
   el.append(acts);
   return el;
 }
+function approveTile(sid, pid, undoIt){
+  const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
+  if (undoIt) delete checked[sid]; else checked[sid] = pid; saveCheck(sid); hideOffer();
+  note_(undoIt ? 'Took back the approval of ' + sid + '.' : 'Approved ' + sid + ' in pile ' + pid + '.'); render();
+}
+let tapMode = 'out'; try { if (localStorage.getItem('sorterTapMode') === 'look') tapMode = 'look'; } catch (e) {}
+function setTapMode(m){ tapMode = m; try { localStorage.setItem('sorterTapMode', m); } catch (e) {}
+  $('modeOut').classList.toggle('on', m === 'out'); $('modeLook').classList.toggle('on', m === 'look'); }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
 // ---- step 1: take out / put back
@@ -457,7 +487,28 @@ function renderTray(){
     b.title = sid + ' (from ' + homeOf[sid] + '): tap to put it back'; b.setAttribute('aria-label', 'Put ' + sid + ' back in pile ' + homeOf[sid]);
     const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
     attachPress(b, () => putBack(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'taken out'));
+    trayDrag(b, sid);
     w.append(b); });
+}
+// drag a taken-out sign from the tray up onto a pile (step 1); a sideways swipe still scrolls the tray
+function trayDrag(b, sid){
+  let d = null;
+  const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
+  const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover'); if (p) p.classList.add('dropover'); d.over = p; } };
+  const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 110;
+    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4)); else if (d.y > bot && d.y < window.innerHeight - 92) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));
+    mark(); d.raf = requestAnimationFrame(loop); };
+  b.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0, id: e.pointerId}; try { b.setPointerCapture(e.pointerId); } catch (er) {} });
+  b.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on){ const dx = d.x - d.sx, dy = d.y - d.sy; if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)){ d = null; return; }
+      if (dy < -8 && Math.abs(dy) >= Math.abs(dx)){ d.on = true;
+        const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); } }
+    if (d && d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } });
+  const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
+    const p = drop && pileAt(e.clientX, e.clientY); if (!p) return; const to = p.dataset.pile;
+    remember([sid]); setDest(sid, to); note_('Put ' + sid + ' in pile ' + to + '.'); render(); offerCluster([sid], to); };
+  b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
 }
 
 // ---- step 2: place the taken-out signs
@@ -473,6 +524,7 @@ function setStep(n){
   if (n === 1) window.scrollTo(0, s1Scroll);
   else window.scrollTo(0, Math.max(0, $('s2').getBoundingClientRect().top + scrollY - document.querySelector('.bar').offsetHeight - 6));
 }
+$('modeOut').onclick = () => setTapMode('out'); $('modeLook').onclick = () => setTapMode('look'); setTapMode(tapMode);
 $('tab1').onclick = () => setStep(1); $('tab2').onclick = () => setStep(2); $('trayGo').onclick = () => setStep(2); $('s2Back').onclick = () => setStep(1);
 // tile likeness: a 16x16 ink vector per tile (computed in the browser once), pile = mean of its tiles; cosine similarity
 const vecs = {}; let vecPromise = null, vecDone = false;
@@ -520,11 +572,33 @@ function renderS2(){
     const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.id === homeOf[sid] ? ' · where it came from' : p.isNew ? ' · new pile' : '');
     const smp = document.createElement('span'); smp.className = 'smp';
     p.members.slice().sort((a, b) => (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.src = imgSrc(m); im.draggable = false;
-      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; smp.append(im); });
+      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; picDrag(im, m); smp.append(im); });
     const put = document.createElement('span'); put.className = 'put'; put.textContent = 'Tap here to put the sign in ' + p.id;
     c.append(h, n, smp, put); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
     c.onclick = () => place(p.id);
     cards.append(c); });
+}
+// drag a small picture from one pile card onto another: moves that tile (mouse: just drag; touch: press 1/4 s, then drag)
+function picDrag(im, sid){
+  let d = null;
+  const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
+  const start = () => { d.on = true; clearTimeout(d.t); try { im.setPointerCapture(d.id); } catch (er) {}
+    const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
+  const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; }
+    const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pileOf(sid)) c.classList.add('over'); d.over = c; } };
+  const loop = () => { if (!d) return; const top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 40;
+    if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
+  im.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
+    if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
+  im.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on){ const far = Math.hypot(d.x - d.sx, d.y - d.sy) > 8; if (far){ if (d.mouse) start(); else { clearTimeout(d.t); d = null; } } return; } e.preventDefault(); });
+  im.addEventListener('touchmove', e => { if (d && d.on) e.preventDefault(); }, {passive: false});
+  const end = (e, drop) => { if (!d) return; const dd = d; d = null; clearTimeout(dd.t); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('over');
+    const c = drop && cardAt(e.clientX, e.clientY); if (!c || c.dataset.pile === pileOf(sid)) return; const to = c.dataset.pile;
+    remember([sid]); setDest(sid, to); $('s2Msg').textContent = 'Moved ' + sid + ' to pile ' + to + '.'; render(); offerCluster([sid], to); };
+  im.addEventListener('pointerup', e => end(e, true)); im.addEventListener('pointercancel', e => end(e, false));
+  im.addEventListener('contextmenu', e => e.preventDefault());
 }
 function place(to){
   const sid = s2Cur; if (!sid) return;
@@ -545,7 +619,7 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
 (function(){
   const tile = $('s2Tile'); let drag = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
-  const loop = () => { if (!drag) return; const y = drag.y, top = barBottom() + 40, bot = window.innerHeight - 50;
+  const loop = () => { if (!drag) return; const y = drag.y, top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 50;
     if (y > bot) window.scrollBy(0, Math.min(24, (y - bot) / 2 + 4)); else if (y < top) window.scrollBy(0, -Math.min(24, (top - y) / 2 + 4));
     mark(); drag.raf = requestAnimationFrame(loop); };
   const mark = () => { const c = cardAt(drag.x, drag.y); if (c !== drag.over){ if (drag.over) drag.over.classList.remove('over'); if (c) c.classList.add('over'); drag.over = c; } };
@@ -719,6 +793,7 @@ function showCtx(sid, pid, keepList, list, listName){
   if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
     $('ctxMsg').textContent = ''; }
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
+  $('ctxBig').src = imgSrc(sid); $('ctxBig').alt = 'Tile ' + sid + ', enlarged';
   const i = ctxList.indexOf(sid);
   $('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
   $('ctxPrev').disabled = i <= 0; $('ctxNext').disabled = i >= ctxList.length - 1;
