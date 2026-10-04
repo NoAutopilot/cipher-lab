@@ -1,0 +1,192 @@
+<title>Cipher Lab Desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: four lanes side by side on desktop, stacked on phones; cards drag between lanes or move with tap buttons. */
+:root{
+  --bg:#f3f5f2; --lane:#e8ece7; --card:#ffffff; --fg:#1c231f; --muted:#5b6861; --line:#d3dad4;
+  --accent:#2f6b55; --accent-soft:#dcebe3; --warn:#94570f; --warn-soft:#f4e7d3; --drop:#c9e2d6;
+  --t-sort:#2f6b55; --t-email:#3d5a9e; --t-send:#7a4f9a; --t-order:#94570f; --t-runner:#4f6f78; --t-decide:#a23e48;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#131816; --lane:#1a201d; --card:#222a26; --fg:#e3eae6; --muted:#9aa7a0; --line:#323d37;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --warn:#e2ae66; --warn-soft:#33281a; --drop:#24453a;
+  --t-sort:#7cc4a6; --t-email:#93aef0; --t-send:#c7a2e6; --t-order:#e2ae66; --t-runner:#9cc0c9; --t-decide:#ef8f98; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131816; --lane:#1a201d; --card:#222a26; --fg:#e3eae6; --muted:#9aa7a0; --line:#323d37;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --warn:#e2ae66; --warn-soft:#33281a; --drop:#24453a;
+  --t-sort:#7cc4a6; --t-email:#93aef0; --t-send:#c7a2e6; --t-order:#e2ae66; --t-runner:#9cc0c9; --t-decide:#ef8f98; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.45 var(--body)}
+.wrap{padding-inline:16px;padding-block:20px 48px;display:grid;gap:16px;max-width:1400px;margin:0 auto}
+header{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px}
+h1{font:600 clamp(1.5rem,4vw,2rem)/1.1 var(--display);margin:0}
+.sub{color:var(--muted);margin:2px 0 0;font-size:.92rem}
+.status{font:500 .78rem var(--mono);color:var(--muted)}
+button{font:600 .85rem var(--body);color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
+@media (max-width:900px){.board{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.board{grid-template-columns:minmax(0,1fr)}}
+.lane{background:var(--lane);border-radius:12px;padding:10px;display:grid;gap:8px;min-height:120px;min-width:0}
+.lane.over{background:var(--drop)}
+.lane h2{display:flex;justify-content:space-between;align-items:center;font:600 .78rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 4px 2px}
+.lane h2 span{font:500 .75rem var(--mono);letter-spacing:0}
+.cards{display:grid;gap:8px;min-height:40px}
+.empty{color:var(--muted);font-size:.85rem;padding:10px 6px;text-align:center;border:1px dashed var(--line);border-radius:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:10px 11px;display:grid;gap:5px;cursor:grab;min-width:0;border-left:4px solid var(--tag,var(--line))}
+.card.dragging{opacity:.45}
+.card .top{display:flex;gap:8px;align-items:baseline;justify-content:space-between}
+.card .title{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.card .mins{font:500 .72rem var(--mono);color:var(--muted);white-space:nowrap}
+.card .tag{font:500 .7rem var(--mono);color:var(--tag);text-transform:lowercase}
+.card .detail{color:var(--muted);font-size:.88rem;overflow-wrap:anywhere}
+.card a.go{color:var(--accent);font-weight:600;font-size:.88rem}
+.card .controls{display:none;flex-wrap:wrap;gap:6px;padding-top:4px;border-top:1px solid var(--line);margin-top:2px}
+.card.open .controls{display:flex}
+.card .controls button{padding:4px 8px;font-size:.8rem}
+.card .controls .del{color:var(--t-decide)}
+[data-t="sort"]{--tag:var(--t-sort)}[data-t="email"]{--tag:var(--t-email)}[data-t="send"]{--tag:var(--t-send)}
+[data-t="order"]{--tag:var(--t-order)}[data-t="runner"]{--tag:var(--t-runner)}[data-t="decide"]{--tag:var(--t-decide)}
+form.add{display:none;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+form.add.show{display:grid}
+form.add label{display:grid;gap:3px;font-size:.8rem;color:var(--muted)}
+form.add .wide{grid-column:1/-1}
+form.add input,form.add select,form.add textarea{font:400 .95rem var(--body);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:6px 8px;min-width:0}
+@media (max-width:560px){form.add{grid-template-columns:minmax(0,1fr)}}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font:500 .74rem var(--mono);color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--tag);margin-right:5px;vertical-align:-1px}
+.note{color:var(--muted);font-size:.85rem;margin:0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Cipher Lab Desk</h1>
+      <p class="sub">Everything that needs a person. Drag cards between lanes, or tap a card for move buttons.</p>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <span class="status" id="status">Connecting…</span>
+      <button id="addBtn" type="button">Add card</button>
+    </div>
+  </header>
+
+  <form class="add" id="addForm">
+    <label class="wide">Title<input id="f-title" required maxlength="120"></label>
+    <label class="wide">Details<textarea id="f-detail" rows="2" maxlength="600"></textarea></label>
+    <label>Link (optional)<input id="f-link" type="url" placeholder="https://"></label>
+    <label>Kind<select id="f-tag"><option value="sort">sort</option><option value="email">email</option><option value="send">send</option><option value="order">order</option><option value="runner">runner</option><option value="decide">decide</option></select></label>
+    <div class="wide" style="display:flex;gap:8px"><button class="primary" type="submit">Add to To do</button><button type="button" id="cancelAdd">Cancel</button></div>
+  </form>
+
+  <div class="legend">
+    <span data-t="sort"><i></i>sort signs</span><span data-t="email"><i></i>email</span><span data-t="send"><i></i>send / queue</span>
+    <span data-t="order"><i></i>copy order (paid)</span><span data-t="runner"><i></i>your machine</span><span data-t="decide"><i></i>decide</span>
+  </div>
+
+  <div class="board" id="board"></div>
+  <p class="note">Cards live in this page's own store, so they follow you across devices and Claude can read and add them.</p>
+</div>
+
+<script>
+const LANES=[["todo","To do"],["doing","Doing"],["waiting","Waiting on others"],["done","Done"]];
+let db=null, cards=[], openId=null, dragId=null;
+const $=s=>document.querySelector(s);
+const status=t=>{$("#status").textContent=t};
+
+function laneCards(l){return cards.filter(c=>(c.lane||"todo")===l).sort((a,b)=>(a.order??0)-(b.order??0))}
+
+function render(){
+  const board=$("#board"); board.textContent="";
+  for(const [key,label] of LANES){
+    const lane=document.createElement("section"); lane.className="lane"; lane.dataset.lane=key;
+    const list=laneCards(key);
+    const h=document.createElement("h2"); h.textContent=label; const n=document.createElement("span"); n.textContent=list.length; h.append(n); lane.append(h);
+    const box=document.createElement("div"); box.className="cards";
+    if(!list.length){const e=document.createElement("div"); e.className="empty"; e.textContent=db?"Drop a card here":"Cards load from the store…"; box.append(e)}
+    list.forEach((c,i)=>box.append(cardEl(c,i,list.length)));
+    lane.append(box);
+    lane.addEventListener("dragover",e=>{e.preventDefault();lane.classList.add("over")});
+    lane.addEventListener("dragleave",()=>lane.classList.remove("over"));
+    lane.addEventListener("drop",e=>{e.preventDefault();lane.classList.remove("over");if(!dragId)return;
+      const after=[...box.querySelectorAll(".card")].find(el=>e.clientY<el.getBoundingClientRect().top+el.offsetHeight/2);
+      placeCard(dragId,key,after?after.dataset.id:null);dragId=null});
+    board.append(lane);
+  }
+}
+
+function cardEl(c,i,len){
+  const el=document.createElement("article"); el.className="card"+(openId===c.id?" open":""); el.draggable=true; el.dataset.id=c.id; el.dataset.t=c.tag||"sort"; el.tabIndex=0;
+  const top=document.createElement("div"); top.className="top";
+  const t=document.createElement("span"); t.className="title"; t.textContent=c.title||"(untitled)";
+  top.append(t);
+  if(c.mins){const m=document.createElement("span"); m.className="mins"; m.textContent=c.mins; top.append(m)}
+  el.append(top);
+  const tag=document.createElement("span"); tag.className="tag"; tag.textContent=(c.tag||"sort")+(c.rank?" · #"+c.rank:""); el.append(tag);
+  if(c.detail){const d=document.createElement("div"); d.className="detail"; d.textContent=c.detail; el.append(d)}
+  if(c.link){const a=document.createElement("a"); a.className="go"; a.href=c.link; a.target="_blank"; a.rel="noopener"; a.textContent=(c.linkLabel||"Open")+" ↗"; a.addEventListener("click",e=>e.stopPropagation()); el.append(a)}
+  const ctl=document.createElement("div"); ctl.className="controls";
+  for(const [key,label] of LANES){ if(key!==(c.lane||"todo")){const b=document.createElement("button"); b.type="button"; b.textContent="→ "+label; b.onclick=e=>{e.stopPropagation();placeCard(c.id,key,null)}; ctl.append(b)} }
+  if(i>0){const b=document.createElement("button"); b.type="button"; b.textContent="↑ Up"; b.onclick=e=>{e.stopPropagation();nudge(c,-1)}; ctl.append(b)}
+  if(i<len-1){const b=document.createElement("button"); b.type="button"; b.textContent="↓ Down"; b.onclick=e=>{e.stopPropagation();nudge(c,1)}; ctl.append(b)}
+  const del=document.createElement("button"); del.type="button"; del.className="del";
+  del.textContent=c._confirm?"Tap again to delete":"Delete";
+  del.onclick=e=>{e.stopPropagation(); if(!c._confirm){c._confirm=true;render();setTimeout(()=>{c._confirm=false;render()},3000)} else removeCard(c.id)};
+  ctl.append(del); el.append(ctl);
+  el.addEventListener("click",()=>{openId=openId===c.id?null:c.id;render()});
+  el.addEventListener("keydown",e=>{if(e.key==="Enter"){openId=openId===c.id?null:c.id;render()}});
+  el.addEventListener("dragstart",e=>{dragId=c.id;el.classList.add("dragging");try{e.dataTransfer.setData("text/plain",c.id)}catch(_){}});
+  el.addEventListener("dragend",()=>el.classList.remove("dragging"));
+  return el;
+}
+
+async function write(id,patch){
+  if(!db){status("Not saved: store unavailable");return}
+  try{await db.collection("cards").doc(id).update(patch);status("Saved")}
+  catch(e){status(e&&e.code==="invalid_argument"?"Read-only: you can't change this board":"Not saved, try again")}
+}
+
+function placeCard(id,lane,beforeId){
+  const c=cards.find(x=>x.id===id); if(!c)return;
+  const list=laneCards(lane).filter(x=>x.id!==id);
+  let idx=beforeId?list.findIndex(x=>x.id===beforeId):list.length; if(idx<0)idx=list.length;
+  const prev=list[idx-1], next=list[idx];
+  let order = prev&&next ? ((prev.order??0)+(next.order??0))/2 : prev ? (prev.order??0)+10 : next ? (next.order??0)-10 : 10;
+  c.lane=lane; c.order=order; if(lane==="done")openId=null; render();
+  write(id,{lane,order,movedAt:new Date().toISOString()});
+}
+function nudge(c,dir){
+  const list=laneCards(c.lane||"todo"); const i=list.findIndex(x=>x.id===c.id); const j=i+dir; if(j<0||j>=list.length)return;
+  const other=list[j]; const a=c.order??0, b=other.order??0;
+  c.order=b; other.order=a===b?b-dir:a; render();
+  write(c.id,{order:c.order}); write(other.id,{order:other.order});
+}
+async function removeCard(id){
+  cards=cards.filter(c=>c.id!==id); openId=null; render();
+  if(!db)return; try{await db.collection("cards").doc(id).delete();status("Deleted")}catch(e){status("Not deleted, try again")}
+}
+
+$("#addBtn").onclick=()=>{$("#addForm").classList.toggle("show");$("#f-title").focus()};
+$("#cancelAdd").onclick=()=>$("#addForm").classList.remove("show");
+$("#addForm").addEventListener("submit",async e=>{
+  e.preventDefault(); if(!db){status("Store unavailable");return}
+  const todo=laneCards("todo"); const order=todo.length?Math.min(...todo.map(c=>c.order??0))-10:10;
+  const data={title:$("#f-title").value.trim(),detail:$("#f-detail").value.trim(),link:$("#f-link").value.trim(),tag:$("#f-tag").value,lane:"todo",order,addedBy:"owner",addedAt:new Date().toISOString()};
+  if(!data.title)return;
+  try{await db.collection("cards").add(data); e.target.reset(); $("#addForm").classList.remove("show"); status("Added")}catch(_){status("Not added, try again")}
+});
+
+render();
+(async()=>{
+  try{ db = window.claude ? await window.claude.use("db") : null }catch(_){db=null}
+  if(!db){status("Store unavailable in this view");return}
+  status("Live");
+  db.collection("cards").onSnapshot(snap=>{
+    const keep=new Map(cards.map(c=>[c.id,c._confirm]));
+    cards=snap.docs.map(d=>({id:d.id,...d.data(),_confirm:keep.get(d.id)||false}));
+    render();
+  },()=>status("Lost connection to the store; reload to retry"));
+})();
+</script>
