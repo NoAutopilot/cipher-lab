@@ -37,3 +37,15 @@ Arm B is reported beside A, never in place of it: B "helps" only if B PASSes and
 no threshold on the difference is claimed, and B never enters key86.tsv from this test alone.
 Grades: decoded letters that align identically to the copy are C (known plaintext), the rest M; key-source H only
 in the sense of the published table. No parameter changes after the first run.
+
+## Addendum kp86c (RUN4-PIS1, 4 Oct 2026; written and pushed before the kp86b result was read and before any f.245r re-pass)
+After the four kp86b passes had returned, both f.245r readers reported crops showing neighbouring lines. On the image:
+the --follow-slope tracker put line 3 into both f245r_L03_s1 and f245r_L04_s1 and cut L06 across two lines (a crop error
+by this worker, not a reader error); f.244v crops were checked the same way and are sound. kp86b is still run and
+reported exactly as registered above. Addendum kp86c: f.245r is re-cut from the same cached source with fixed-y bands
+and no slope tracking (`python3 tools/iiif_lines.py --image images/src_ark_12148_btv1b9060906j_f502_800_1080_2960_1300.jpg
+--out images --prefix f245rB --debug --max-width 1600 --overlap 100 --centres 222,392,548,703,851,1021,1169`; montage
+checked by eye, each crop holds its own line), two new blind passes of f245rB (same brief, new readers), reconciled
+with the same rules together with the unchanged f.244v passes; kp86b.py is re-run unchanged except --tokens/--extra
+pointing at the kp86c files and its output renamed kp86b/kp86c_result.json; --err = the new combined err_2reader.
+Same gate, same two arms. kp86c replaces nothing in kp86b; both are reported.

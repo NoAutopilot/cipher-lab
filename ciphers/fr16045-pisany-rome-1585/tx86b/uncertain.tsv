@@ -1,0 +1,9 @@
+line	col	A	B	flagged	crop	both_conf
+f244v_L00	3	T45	T45	B		A:H/B:M
+f244v_L01	17	T37	T37	A		A:M/B:H
+f244v_L03	5	T45	T45	B		A:H/B:M
+f244v_L06	1	T18	T18	B		A:H/B:M
+f245r_L01	9	T32	T32	B		A:H/B:M
+f245r_L01	18	T34	T34	B		A:H/B:M
+f245r_L02	23	T34	T34	B		A:H/B:M
+f245r_L04	21	T58	T58	B		A:H/B:M
