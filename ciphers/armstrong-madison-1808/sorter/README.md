@@ -1,5 +1,7 @@
 # Armstrong 1808 mark sorter (ARM-SORTER, 4 Oct 2026, account 3)
 
+Published 4 Oct 2026 16:3x UTC by the account-3 orchestrator: https://claude.ai/artifact/PhfGzg5sxwChK1XMG49UYC (private, db; board card arm-marks-sort). Orchestrator spot check before publishing: 36 of 40 random tiles hold one mark; run_all ok incl. the page.
+
 The owner settles the shorthand marks of Armstrong to Madison, Paris, 20 Feb 1808 (NARA M34 roll 14) by eye, the way
 the Birago piles were settled. The numeral groups are manuscript-checked (ARM-TR/ARM-TR2) and are **not on the page**.
 
