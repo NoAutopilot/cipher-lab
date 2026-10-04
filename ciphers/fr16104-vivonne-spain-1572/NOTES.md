@@ -281,3 +281,63 @@ has no decipherment located; unflagged cipher letters unmeasured.
 Verdict: keep going: 4 internal gaps; cheapest next: fr.16104 ff.157-159v transcribed against tx/SIGNS.md and decoded with key.tsv, ~$12
 
 Gate output (N5-VIVK, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 4 internal gap(s), 1 step(s) untried`
+
+## N5-VIV5S (4 Oct 2026, LANE-NEAR5 worker, account 2): premise check on the 5 Sept 1572 letter -- a clerk decipherment exists (ff.162r-163r); stopped at step 0
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near5-wave1.md "N5-VIV5S", step 0 ("If one exists, stop after recording it ... the test becomes
+a known-plaintext check like N5-VIVK and is a separate brief"). No crops, no transcription, no decode, no subagent calls, no PREREG.
+
+**Found: "dechiffré de la precedente", dated 5 Sept 1572, on f.162r (canvas 176, right page), two leaves after the letter.**
+- f.162r head (native crop images/c176_f162r_head.jpg, region 4000,150,4100,700 of canvas 176, manifest.json "premise_n5viv5s"):
+  later docket top left "5 Septemb / 1572"; heading in the clerk's hand "dechiffré de la precedente"; old ink piece number "51" before
+  the stamped folio "162" top right. The letter ff.157-159v is Gachard's L, i.e. old ink piece 50 if N4-VIV2's rule (Gachard's roman
+  numeral = the old ink number) holds here too; the decipherment is the next piece, 51. The next leaf, f.164 (canvas 178), carries
+  "52" and is a separate full-cipher letter "du S^r de S^t gouard a la Reyne", docket "5 Septembre 1572".
+- f.161v (canvas 176, left page) is the letter's address leaf, endorsed in the margin "... S^t Goard au Roy / 5 septembre 1572";
+  ff.160-161 (canvases 174-175) carry the letter's end (f.159v: last ~17 cipher lines, the closing "De Madril ce v^me jo[ur] de
+  sept[em]b[re] 1572" and signature, N4-VIV) and a blank leaf with the seal trace.
+- Decipherment text, by eye at 1200 px plus the native head crop (not transcribed): plain French in a widely spaced clerk's hand on f.162r
+  (~26 lines), f.162v (~26 lines) and f.163r (~25 lines, three paragraphs, ending about two-thirds down the page). Opening: "Je fus
+  conduit en ceste audience pour les soubçons de leurs depportemens et preparatifs, et aussi de la bonne continuance d'iceluy qu'ils ont
+  pour les advertissements ..." -- it continues the account of the 27 August audience that Gachard's L summarises from the plain
+  part (Gachard II p.592-593, quoted passages all plain French: "Nonobstant cela ... l'audience ... pour le vingt-septiesme du passé",
+  Longueville, the duc d'Alve's suspicion, the troop routed near Mons). Names legible on f.162r-163r at 1200 px: "M. l'Admiral",
+  "la Religion nouvelle", "Flandres", "le duc d'Alve", "Millan", "Don Joan d'Austria", "la Hollande", "Amsterdam", "Utrecht", "Grenade",
+  "S^t Hieronyme", "l'Escurial".
+- So Gachard's flag on L, "(En partie chiffrée, sans le déchiffrement.)", is not borne out on the leaves: the letter's period decipherment
+  is filed as the next piece. Gachard's next numbered entries after L are the 12 Sept letter (numeral lost in the OCR) and LV-LVI
+  (19 Sept, "avec le déchiffrement"); he gives no entry for piece 51. The 5 Sept 1572 cipher block is therefore **not an unread text**:
+  the step that remains is a known-plaintext check of key.tsv on it, as N5-VIVK did for 4 June 1573 (separate brief, per step 0).
+- **Open question for that brief (observation, not measured):** the decipherment looks short for the cipher block. By eye it is ~2.5
+  pages of a large hand (~75 lines), while N4-VIV estimated 150-175 cipher lines for ff.157r (lower third)-159v; in fr.16105 the ratio
+  ran the other way (~9.5 decipherment pages for ~5.5 cipher pages, N5-VIVK: 9,554 plaintext letters for ~5,700 cipher signs). Either
+  N4-VIV's line estimate is high (the block may hold more plain French than the thumbnails showed), or the decipherment covers only
+  part of the cipher block (a second "dechiffré" leaf elsewhere, or part left undeciphered). First step of the next brief: count the
+  cipher lines on canvases 170-173 and the decipherment's letters, then align the decipherment's first and last sentences to cipher
+  lines with key.tsv before transcribing everything.
+
+Requests: gallica.bnf.fr 8 (7 x 1200 px openings, canvases 174-180, all viewed but 179-180; 1 native region of canvas 176), all >= 2.5 s apart,
+all HTTP 200; archive.org 1 (Gachard II djvu.txt, labibliothquen02gachuoft, for entry L and its neighbours). Subagent calls: 0. Cost: see the
+lane ledger. Canvases 179-180 (ff.164v-165, the 5 Sept letter to the Queen) were fetched but not needed once f.162 was found.
+Suggestion (not done, Usage 7): the 5 Sept 1572 letter to the Queen, f.164 (old piece 52, full cipher), needs its own decipherment check
+(Gachard's entry for it, if any, and the leaves after it).
+
+## Remaining gaps (N5-VIV5S refresh, 4 Oct 2026)
+Read so far: 27 of at least 28 flagged cipher letters carry a period decipherment on the leaves (Gachard's 26 "avec" plus the 5 Sept 1572 letter,
+whose decipherment ff.162r-163r N5-VIV5S found despite Gachard's "sans"); ink 40 (fr.16105 ff.100-103r) checked against its decipherment with
+Tomokiyo's published key (held-out PASS, N5-VIVK); ink 38 (ff.92r-95v) is its twin copy; unflagged cipher letters unmeasured.
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; decipherment found at step 0 (N5-VIV5S), so the job is a known-plaintext check, not a reading; next: count cipher lines (c170-173) vs decipherment length, then crops + two blind passes per page against tx/SIGNS.md, decipherment read twice, key.tsv decode aligned as in tx/vivk_test.py, ~$15
+- fr.16104 f.164 letter to the Queen, 5 Sept 1572 (old piece 52, full cipher) - blocker: not-attempted; seen at 1200 px only (N5-VIV5S); next: Gachard II entry for it and the leaves after f.165 for a "dechiffré", ~$1
+- Transcription labels S, y, b, V, c, 2 - blocker: not-attempted; the four M codes and the unmapped labels come from the passes' inventory, not the key; next: one look-alike pass (tools/lookalike_pass.py) on f.102v/f.103r crops for those labels, then re-run tx/key_support.py, ~$3
+- Missing duplicate-band lines (up to 5 lines, the DUP rows) - blocker: not-attempted; the slope-tracked bands fitted the same line twice; next: re-cut those bands with --centres from the debug overlays, one pass each, ~$2
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Unflagged cipher letters and letters lacking a clerk's leaf - blocker: not-attempted; Gachard's flags cover only the letters he analysed and his "sans" flag on L proved wrong; next: one 1200 px pass over fr.16104/16105 with a per-letter table (cipher yes/no, old piece number, "dechiffré" leaf), ~$3
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N5-VIV5S)
+- [x] siblings: ink 38 located (N4-VIV3); ink 40 vs ink 41 aligned (N5-VIVK); 5 Sept 1572 decipherment (piece 51, ff.162r-163r) found (N5-VIV5S); fr.16106 f.207+ Longlée pool is scout row P2-B
+- [x] clear-pages: decipherments ff.104-108v (fr.16105) and ff.162r-163r (fr.16104) are on the leaves
+- [x] known-keys: Tomokiyo's 1572-74 key on disk (key_tomokiyo.tsv, key.tsv) and held-out PASS against the period decipherment (N5-VIVK, 0.545 vs null p95 0.362)
+- [x] print: Gachard II, d'Ars, Catherine IV-V, Groen IV read (see top); Gachard II entry L re-read for N5-VIV5S
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes; slope diagnostic 0 of 30); a published key exists
+- [x] image-check: canvases 95-101, 105-106, 109-112 (fr.16105) and 170-178 (fr.16104) viewed; f.104r illegible (N4-VIV3)
+- [ ] retry: fr.16104 ff.157-159v with key.tsv against its decipherment ff.162r-163r (known-plaintext check, separate brief)
+Verdict: keep going: 5 internal gaps; cheapest next: Gachard II entry and following leaves for the f.164 letter to the Queen, ~$1
