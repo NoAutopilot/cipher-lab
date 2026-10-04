@@ -1413,3 +1413,25 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further single-seed pooled anneal is not a different instrument
 Verdict: keep going: 3 internal gaps; cheapest next: rule 7 re-derivation, ~$3
+
+## RUN3-C1161R7 (4 Oct 2026)
+Fresh rule-7 re-derivation (account 1, LANE-RUN3) from the spec, key.tsv and ciphertext.tsv only: spec stream is the
+merged 3389-sign stream (token-identical to ciphertext.tsv minus clear words); `tools/decode_key.py` regenerates
+reading.txt and reading_tokens.tsv byte-identically (C 353, S 1697, M 1325, U 33; 0 H); `--check` exit 0. SAME, not
+sent back. Details: RD7-2026-10-04-run3.md; regenerated copies in rederive/run3_reading*.
+
+## Remaining gaps (RUN3-C1161R7, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv with two-instrument grades: C 353, S 1697, M 1325, U 33 tokens; 0 H. Rule-7 re-derivation done (SAME, RD7-2026-10-04-run3.md).
+- 28 M-graded key signs (7, th, z, p, o, phi, ls, iib, eloop, 6r, 8, K ...) - blocker: not-attempted; the two instruments disagree on them and seed 3 agrees with key.tsv on 7, th, z where seed 1 does not; next: a pre-registered multi-seed consensus instrument 2 (seeds 1-10 on the four leaves, majority letter per sign) with the same shuffled-order control, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (RUN3-C1161R7, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.594 (shuffled max 0.312); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument agreement PASS (0.624 vs shuffled max 0.351) graded 15 signs S; next: multi-seed consensus instrument for the 28 M signs
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further single-seed pooled anneal is not a different instrument
+Verdict: keep going: 2 internal gaps; cheapest next: multi-seed consensus instrument for the 28 M signs, ~$3
