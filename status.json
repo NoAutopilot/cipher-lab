@@ -2318,8 +2318,8 @@
       "claim_scope": "recovered-passages",
       "plaintext_novelty": "N4",
       "mapping_novelty": "N4",
-      "completeness": "402/424",
-      "unresolved_spans": "eleven lines of p.188 partly incoherent; 16 M, 6 U; the original leaf unseen",
+      "completeness": "415/424",
+      "unresolved_spans": "eleven lines of p.188 partly incoherent; 3 M, 6 U (4 Oct 2026: H 73 C 342 M 3 U 6, rule-7 re-derivation SAME, N8-THR7); the original leaf unseen",
       "audit_refs": [
         "AUDIT.md '## P4 -- William Stamford ... novelty audit (LANE T verifier V2, 24 Sept 2026)'",
         "AUDIT.md '## Second audit (adversarial), P4, 24 Sept 2026'"
@@ -2329,10 +2329,10 @@
       "superseded_by": "",
       "fields_source": "thurloe-printed/AUDIT.md P4 V2 audit and second audit (N3), N4 from '## N4 set, P4'; H 64, C 338, M 16, U 6 of 424 from the V2 claim paragraph",
       "depth": "D2",
-      "depth_pct": 94.8,
+      "depth_pct": 97.9,
       "depth_unread": {
         "names_codes": "6 U (values not in the key)",
-        "other": "16 M; eleven lines of p.188 partly incoherent"
+        "other": "3 M (was 16; N8-THUR boundary v3 + N8-THUR2 codes 32/33/38 M->H, 4 Oct 2026); eleven lines of p.188 partly incoherent"
       },
       "depth_sentence": "Stamford writes in cipher that the matter came to his knowledge 'by meere chance' and 'without the least injunction of secrecy'.",
       "depth_check": "period key from Birch's printed decipherments of Stamford's 20 and 30 March 1655 letters, agreeing with Tomokiyo's table",
