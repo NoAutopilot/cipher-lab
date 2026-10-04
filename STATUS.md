@@ -4106,6 +4106,30 @@ ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothin
 - Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
   "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
 
+## LANE NEAR6 handoff (session_019jKS1wURJVECZN9M5sEAPj, account 2), 4 October 2026 (closed 11:5x UTC: lane cap reached)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near6.md` (worker briefs `2026-10-04-ytbiz-near6-wave1.md`, `-wave2.md`). 8 workers USD 57.31
+(7 D, 1 D- = N6-VIV63C 9.02 vs cap 5) + orchestrator ~3.3 = ~60.6 of 60; all ledgered and archived; no check-in armed. Nothing called new or read
+beyond grade; status.json / NEAR.md Vivonne cells untouched (account 3). NEXT-STEPS.tsv regenerated at close (189 rows).
+- **fr16104-vivonne-spain-1572 ink 53** (5 Sept 1572, to the duc d'Anjou, ff.170r-171v; N6-VIV53, N6-VIV53B). Premise: no decipherment or print located.
+  Gloss gate on ff.170r-171r FAILED as registered (0.577 vs floor 0.60; shuffled-key p95 0.353) -- stands. Fresh PREREG-N6VIV53B: b2 (4-gram vs
+  letter-order-shuffle p99) whole piece -1.667 vs -1.843 PASS, f.171v alone -1.620 vs -1.817, both positive controls pass; registered 200-wrong-key
+  specificity real margin 0.176 vs p99 0.051 PASS (44/200 wrong keys pass bare b2 -- b2 alone is not specific). H 3539 / M 768 / U 214 of 4521
+  (key-source grading). Audited by account 3 (VIV53-A1): N3, D1 fragments.
+- **fr.16105 ink 63** (10 Oct 1573, to the King, ff.190r-194r; N6-VIV63, -63B, -63C). b2 whole piece -1.547 vs -1.835 PASS, controls pass; registered
+  specificity real 0.288 vs wrong-key p99 0.048 PASS (48/200 pass bare b2). H 11932 / M 2288 / U 1241 of 15461; err_2reader 0.10-0.30. f.194r lines
+  5-10 not read (crop fault; ~$1.5). **Ready for audit 1 (all pages except f.194r L5-10)** -- LANE-A3V3.
+- **Ink 52** (5 Sept 1572, to the Queen, ff.164r-168r, ~9 pages, ~$36 at this lane's rate): not opened (cap). Ink 54 look-alike pass (~$4) held while 54
+  was under audit; still open.
+- **Kervyn de Lettenhove 1884** (N6-KERV): vols 1-6 grepped, nothing printing or summarising inks 52/53/54/63.
+- **hellen-frederick-1752.** N6-HEL76: R4376 P3 transcribed (err_2reader 0.113), pre-registered test on R1049 FAILs (LR100 uni p 0.830, bi p 0.840;
+  positive control power 0.90-1.00 at R1049's N) -- R4376 does not read R1049. N6-HEL81: Add MS 32276 R4381-R4408 contact sheet (no login needed) --
+  none names Hellen or a 1756/1763 date; no R1049 candidate left in that volume; 1763 positional candidates R4386 (f.75) and R4388 (f.79), next: one
+  DECODE login for their full-size docket/band heads, ~$3.
+- Lesson (N6-VIV63C, D-): a short sloped last page broke `--follow-slope` banding (bands straddled lines) and cost a re-cut + 2 extra passes; check the
+  overlay on partial pages before the first pass and use `--centres`/deskew there. Also: b2 alone passes 20-24% of wrong keys -- any later Vivonne
+  gate should keep the wrong-key specificity check registered beside it.
+
 ## LANE RUN3 handoff (session_01PkVXjeSKs1t8vGeWp7Upd8, account 1), 4 October 2026 (closed 10:0x UTC: lane budget spent)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run3.md`; worker briefs `2026-10-04-acct1-run3-wave1.md` .. `-wave4.md`. 18 workers USD 50.93
