@@ -2,6 +2,9 @@
 # LONGLEE-SORTER (4 Oct 2026): build the f.101v sign-sorter page.  usage (repo root): bash ciphers/fr16106-vivonne-longlee-1579/sorter/build.sh OUTDIR
 # No network: reads the Gallica native region already on disk (images/src_ark_12148_btv1b9009661v_f107_550_550_3800_5350.jpg).
 set -euo pipefail
+# SORTER-PAGEVIEW (4 Oct 2026): --region adds the "Whole page" larger view and writes <out stem>_region.jpg beside the page
+# (publish it with the page as a supporting file). Rebuilding re-runs recut.py, which rewrites signs.tsv: re-run
+# tools/sorter_apply_recuts.py afterwards if recuts were applied (SORTER-NUDGE).
 O=$1; T=ciphers/fr16106-vivonne-longlee-1579; mkdir -p "$O"
 # LL-RECUT (4 Oct 2026): deskewed strips, one tile per sign cut from its own ink (recut.py -> tools/sorter_recut.py, as Pisany;
 # the v2 cut is signs_v2.tsv, made by build_inputs.py, kept for the record and no longer run here).
@@ -17,4 +20,5 @@ python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labe
   --title "Longlee 1580 Sign Sorter" \
   --lede "BnF fr.16107 f.101v (Gallica canvas 107), Saint-Gouard to the King, Madrid, 2 March 1580: 1,834 tiles from 33 straightened cipher lines, one sign per tile. Piles start from two blind machine readers who agreed on only 42% of signs: a plain name is a sign both read the same, a/c a split, +1r a sign only one reader saw; lines 30-33 had no reader row, so their tiles start by shape. SMALL holds dots and specks. Pile names are shape labels, not letters. Merge piles that are one sign, split piles that mix two, move single tiles, set aside non-signs and bad cuts." \
   --thumb 80 --tile-quality 60 --page-scale 0.5 --page-quality 50 \
+  --region $T/sorter/region.json \
   --out "$O/longlee_f101v_sorter.html" --data-out "$O/longlee_f101v_data.json"

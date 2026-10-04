@@ -11,7 +11,7 @@ lines 1-29) take that column's pile (same names as v2); every other tile -- and 
 belongs to alone -- starts in the pile its shape cluster mostly holds, and the most frequent of those are the focus box.
 
   python3 ciphers/fr16106-vivonne-longlee-1579/sorter/recut.py [--debug DIR]
-  writes sorter/pages/f101v_L<nn>.jpg (deskewed), signs.tsv, labels.tsv, focus.tsv, fit_recut.tsv, clusters.tsv
+  writes sorter/pages/f101v_L<nn>.jpg (deskewed), signs.tsv, labels.tsv, focus.tsv, fit_recut.tsv, clusters.tsv, region.json
   (the v2 cut is kept for the record as signs_v2.tsv / labels_v2.tsv / focus_v2.tsv; its x/y refer to the v2 sloped pages/)
 """
 import argparse, csv, shutil, sys
@@ -63,7 +63,8 @@ def main():
     pages = [f'f101v_L{k:02d}' for k in range(1, n + 1)]
     cols = [[pile(*c) for c in draft[f'c107_L{k:02d}']] if k <= MAPPED else [] for k in range(1, n + 1)]
     fb = ['one-reader' if k <= MAPPED else 'foot-unplaced' for k in range(1, n + 1)]
-    sr.run(grey, TR, pages, cols, [v2[p] for p in pages], S, P, CFG, fallback=fb, debug=a.debug)
+    sr.run(grey, TR, pages, cols, [v2[p] for p in pages], S, P, CFG, fallback=fb, debug=a.debug,
+           region_image=str((T / 'images' / bi.man[0]['source_file']).relative_to(S.parents[2])))   # region.json (SORTER-PAGEVIEW)
 
 
 if __name__ == '__main__':

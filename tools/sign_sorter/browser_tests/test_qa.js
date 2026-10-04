@@ -20,6 +20,8 @@ async function open(b, vp, opts) {
 }
 const focusSids = page => page.evaluate(() => [...document.querySelectorAll('#focusTiles > div')].map(d => d.dataset.sid));
 const bracketVisible = (page, cid = 'ctxC') => page.evaluate(cid => { const c = document.getElementById(cid), cv = c.parentElement, sid = cid === 'ctxC' ? ctxSid : s2Cur, it = itemBySid[sid], [x, , w] = it.b.map(v => v * (DATA.pageScale || 1));
+  if (c.dataset.view === 'page'){ const m = c._map, [bx, by, bw, bh] = it.b, mx = (bx + bw / 2 - m.x0) * m.s / m.k, my = (regY(it.p, bx + bw / 2, by + bh / 2) - m.y0) * m.s / m.k;   // "Whole page" view (SORTER-PAGEVIEW)
+    return mx >= cv.scrollLeft && mx <= cv.scrollLeft + cv.clientWidth && my >= 0 && my <= c.getBoundingClientRect().height; }
   const im = pageImgs[it.p], x0 = Math.max(0, x - 180), x1 = Math.min(im.naturalWidth, x + w + 180), css = c.getBoundingClientRect().width;
   const mid = ((x - x0) + w / 2) * css / (x1 - x0); return mid >= cv.scrollLeft && mid <= cv.scrollLeft + cv.clientWidth; }, cid);
 // a pile with enough tiles to work on, not settled, from the original piles

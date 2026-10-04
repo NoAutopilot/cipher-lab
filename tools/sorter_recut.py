@@ -27,7 +27,8 @@ is the same, the target supplies its region image, line traces, reader columns a
    CLEAR px takes that column's pile. Every other tile goes to the pile its shape cluster (k-means on 32x32 bitmaps + aspect
    and height, NCLU clusters) mostly holds among the clear tiles, and is a focus candidate. Focus (<= NFOCUS): those, ranked
    by cluster size (frequent shapes first), at most PER_CLU per cluster.
-Writes out_dir/signs.tsv, labels.tsv, clusters.tsv, focus.tsv, fit_recut.tsv. Offline test: tools/tests/test_sorter_recut.py.
+Writes out_dir/signs.tsv, labels.tsv, clusters.tsv, focus.tsv, fit_recut.tsv, and region.json (SORTER-PAGEVIEW, 4 Oct
+2026: each line's trace, so tools/sign_sorter.py --region can show a tile on the original page region; write_region()). Offline test: tools/tests/test_sorter_recut.py.
 """
 import csv
 from collections import Counter, defaultdict
@@ -163,13 +164,39 @@ def bitmap(a):
     return np.array(Image.fromarray((pad * 255).astype(np.uint8)).resize((32, 32), Image.BILINEAR), float) / 255
 
 
-def run(grey, traces, pages, cols, centres, out_dir, pages_dir, cfg, fallback=None, debug=None, focus_word='shape'):
+REGION_STEP = 8   # region.json samples each line's centre trace every REGION_STEP px of x
+
+
+def write_region(out_dir, grey, cfg, used, region_image=None):
+    """SORTER-PAGEVIEW (4 Oct 2026): region.json, so the sorter can show a tile on the ORIGINAL page region (continuous, no
+    trimmed strips) with its box drawn there. A strip-page pixel (x, y) of line <page> is region pixel
+    (x, round(trace(x)) - half + y): the shear moves columns vertically only, so a tile box [x, y, w, h] is a parallelogram
+    on the region whose left and right edges stay vertical. trace is sampled every `step` px (last sample at x = W - 1);
+    the page interpolates linearly, which is within 1 px of the deskew's own rounding at 8 px steps."""
+    import json
+    H, W = grey.shape; xs = list(range(0, W, REGION_STEP)) + ([W - 1] if (W - 1) % REGION_STEP else [])
+    doc = {'W': W, 'H': H, 'half': cfg.half, 'pitch': cfg.pitch, 'step': REGION_STEP, 'image': region_image,
+           'lines': {p: [int(round(tr[x])) for x in xs] for p, tr in used}}
+    with open(Path(out_dir) / 'region.json', 'w') as o: json.dump(doc, o, separators=(',', ':'))
+    return doc
+
+
+def region_y(doc, page, x, y):
+    """Region row of strip-page pixel (x, y) of line `page` (the inverse of the shear; region.json's own interpolation)."""
+    t = doc['lines'][page]; st = doc['step']; i = min(int(x // st), len(t) - 2); x0 = i * st
+    x1 = doc['W'] - 1 if i + 1 == len(t) - 1 else (i + 1) * st
+    f = (x - x0) / max(1, x1 - x0)
+    return t[i] + f * (t[i + 1] - t[i]) - doc['half'] + y
+
+
+def run(grey, traces, pages, cols, centres, out_dir, pages_dir, cfg, fallback=None, debug=None, focus_word='shape',
+        region_image=None):
     from sklearn.cluster import KMeans
     out_dir, pages_dir = Path(out_dir), Path(pages_dir); pages_dir.mkdir(parents=True, exist_ok=True)
     fallback = fallback or ['one-reader'] * len(pages)
-    tiles, stats, bms = [], [], []
+    tiles, stats, bms, used = [], [], [], []
     for page, tr, cl, cx, fb in zip(pages, traces, cols, centres, fallback):
-        tr = recentre(grey, tr, cfg); strip = deskew(grey, tr, cfg); boxes, wmed = segment(strip, cfg)
+        tr = recentre(grey, tr, cfg); strip = deskew(grey, tr, cfg); boxes, wmed = segment(strip, cfg); used.append((page, tr))
         off = cfg.pitch - cfg.half
         Image.fromarray(strip[off:off + 2 * cfg.half + 1]).save(pages_dir / f'{page}.jpg', quality=cfg.jpeg)
         cx = list(cx)[:len(cl)]
@@ -223,6 +250,7 @@ def run(grey, traces, pages, cols, centres, out_dir, pages_dir, cfg, fallback=No
         with open(out_dir / name, 'w') as o:
             o.write('\t'.join(keys) + '\n'); o.writelines('\t'.join(str(r[k]) for k in keys) + '\n' for r in rows)
     w('signs.tsv', tiles, ['sid', 'page', 'x', 'y', 'w', 'h'])
+    write_region(out_dir, grey, cfg, used, region_image)
     w('labels.tsv', tiles, ['sid', 'sign', 'family'])
     w('clusters.tsv', tiles, ['sid', 'cluster', 'col', 'dx'])
     with open(out_dir / 'focus.tsv', 'w') as o: o.writelines(f'{s}\t{q}\n' for s, q in focus)

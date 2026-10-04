@@ -37,6 +37,9 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
               --rank-lattice also takes these files (or with no file named, uses them): candidates k1..k3 ('_' dropped),
               weights s1..s3 renormalised, lattice line = <page>_<line>, and the tile id is the box id.
   --atlas     the family atlas labels.json the decisions are meant for (shown on the page and kept in the data).
+  --region    region.json (tools/sorter_recut.py, SORTER-PAGEVIEW 4 Oct 2026): the larger view opens on the ORIGINAL page
+              region around the tile, its (sheared) box drawn there, "Whole page" by default with a "Line strips" toggle.
+              The image goes beside --out as <stem>_region.jpg: publish it with the page (Artifact files), or --region-embed.
   --refs      TSV with a sid column (BIR87-SORTER, 4 Oct 2026): tiles the person already sorted on an earlier page, put in
               --labels under the pile the person chose and shown with a green check as examples for sorting new tiles
               into the person's own piles. Since 4 Oct 2026 (owner: "give me a way to fix, I might make mistakes") they
@@ -360,6 +363,34 @@ def mark_refs(data, sids):
     return n
 
 
+def add_region(data, region_p, out, long_side=4000, quality=60, embed=False):
+    """SORTER-PAGEVIEW (4 Oct 2026; owner on Longlee f101v_L32_49: "can we just show the full graphic?"): DATA.region for the
+    larger view's "Whole page" mode. region.json (tools/sorter_recut.py write_region) gives each line's centre trace on the
+    region; a strip-page box [x, y, w, h] is drawn on the region as the parallelogram x..x+w, trace(x) - half + y.. (+h).
+    The region image (autocontrast like the pages, downscaled to long_side) is written beside the page as
+    <out stem>_region.jpg (src = its file name, published as a supporting file) or embedded (b64)."""
+    from PIL import Image, ImageOps
+    doc = json.load(open(region_p)); root = os.path.dirname(HERE)
+    path = doc['image'] if os.path.isabs(doc['image']) else os.path.join(root, doc['image'])
+    im = ImageOps.autocontrast(Image.open(path).convert('L'), cutoff=1)
+    if (im.width, im.height) != (doc['W'], doc['H']):
+        raise SystemExit(f"region image {im.size} is not region.json's {doc['W']}x{doc['H']}")
+    sc = min(1.0, long_side / max(im.width, im.height))
+    if sc < 1: im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
+    used = {it['p'] for p in data['piles'] for it in p['items']}
+    reg = {k: doc[k] for k in ('W', 'H', 'half', 'pitch', 'step')}
+    reg.update(scale=im.width / doc['W'], lines={k: v for k, v in doc['lines'].items() if k in used})
+    buf = io.BytesIO(); im.save(buf, 'JPEG', quality=quality, optimize=True)
+    if embed:
+        reg['b64'] = base64.b64encode(buf.getvalue()).decode()
+    else:
+        name = os.path.splitext(os.path.basename(out))[0] + '_region.jpg'
+        open(os.path.join(os.path.dirname(os.path.abspath(out)), name), 'wb').write(buf.getvalue()); reg['src'] = name
+    data['region'] = reg
+    print(f"region {im.width}x{im.height} ({len(buf.getvalue()) // 1024} KB, {'embedded' if embed else reg.get('src')}), "
+          f"{len(reg['lines'])} lines", file=sys.stderr)
+
+
 def render(data, title, lede):
     t = open(TEMPLATE).read()
     esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -382,6 +413,12 @@ def main(argv=None):
     ap.add_argument('--tile-quality', type=int, help='store tiles as greyscale JPEG at this quality (default: PNG); for large letters')
     ap.add_argument('--page-scale', type=float, default=1.0, help='scale the embedded context page images (boxes are scaled in the page)')
     ap.add_argument('--page-quality', type=int, default=82, help='JPEG quality of the embedded context page images')
+    ap.add_argument('--region', help='region.json from tools/sorter_recut.py: the larger view shows the tile on the original page '
+                    'region (continuous, its sheared box drawn on it), default on, toggle back to line strips')
+    ap.add_argument('--region-long', type=int, default=4000, help='downscale the region image to this long side (px, default 4000)')
+    ap.add_argument('--region-quality', type=int, default=60, help='JPEG quality of the region image (default 60)')
+    ap.add_argument('--region-embed', action='store_true', help='embed the region image in the page instead of writing '
+                    '<out stem>_region.jpg beside it (a supporting file to publish with the page)')
     ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
     ap.add_argument('--focus-note', default='')
     ap.add_argument('--refs', help='TSV with a sid column: tiles the person already sorted, shown with a check as examples (correctable)')
@@ -441,6 +478,8 @@ def main(argv=None):
         data['rankNote'] = a.rank_note or ('Scored by ' + ('the decode lattice: expected letters changed if the tile flips'
                                            if (a.rank or a.rank_lattice) else
                                            'look-alike confusion x tiles flipped (a triage order, not a reading)'))
+    if a.region:
+        add_region(data, a.region, a.out, a.region_long, a.region_quality, a.region_embed)
     if a.data_out:
         json.dump({k: v for k, v in data.items() if not k.startswith('_')}, open(a.data_out, 'w'))
     html = render(data, a.title, a.lede)

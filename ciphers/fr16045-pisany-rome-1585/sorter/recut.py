@@ -6,7 +6,7 @@ build_inputs.py fitted ink-profile blobs to the readers' column COUNT; and the l
 context strip showed the line above. tighten_tiles.py trimmed only vertically. This script replaces both for the page.
 
   python3 ciphers/fr16045-pisany-rome-1585/sorter/recut.py [--debug DIR]
-  writes sorter/pages/f75_L<nn>.jpg (deskewed), signs.tsv, labels.tsv, focus.tsv, fit_recut.tsv, clusters.tsv
+  writes sorter/pages/f75_L<nn>.jpg (deskewed), signs.tsv, labels.tsv, focus.tsv, fit_recut.tsv, clusters.tsv, region.json
   (the v2 cut is kept for the record as signs_v2.tsv / signs_tight_v2.tsv / labels_v2.tsv / focus_v2.tsv)
 
 1. Deskew. Per line, build_inputs.traces() gives the line centre y(x) on the Gallica region already on disk. Each column x
@@ -69,7 +69,8 @@ def main():
 
     grey = np.array(bi.src); TR = bi.traces(); pages = [f'f75_L{n:02d}' for n in range(1, len(TR) + 1)]
     cols = [[pile(*c) for c in draft[f'L{n:02d}']] for n in range(1, len(TR) + 1)]
-    sr.run(grey, TR, pages, cols, [v2[p] for p in pages], S, P, CFG, debug=a.debug)
+    sr.run(grey, TR, pages, cols, [v2[p] for p in pages], S, P, CFG, debug=a.debug,
+           region_image=str((T / 'images' / bi.SRC).relative_to(S.parents[2])))   # region.json (SORTER-PAGEVIEW)
 
 
 if __name__ == '__main__':

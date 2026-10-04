@@ -76,3 +76,13 @@ Apply: `ArtifactData list` recuts with the other collections; `tools/sign_sorter
 --tiles sorter/tiles` re-crops those tiles (old crop kept as `<id>.orig.jpg`) and updates signs.tsv. `build.sh` re-runs
 `recut.py`, which rewrites signs.tsv: run sorter_apply_recuts.py again after any rebuild (it is idempotent and skips, exit
 2, a row whose old box no longer matches).
+
+## Whole page view (SORTER-PAGEVIEW, 4 Oct 2026)
+
+Owner on Longlee f101v_L32_49: the larger view's neighbour lines were trimmed slices with separators that cut ascenders and
+descenders. `recut.py` now also writes `region.json` (each line's centre trace on the Gallica region) and `build.sh` passes
+`--region`: the larger view opens on the original region around the tile, continuous, about three lines above and below at
+zoom 3, the tile's box drawn as it sits on the page ("Whole page"; "Line strips" switches back). Fix the cut works on the page
+image and still saves strip pixels, so `tools/sorter_apply_recuts.py` is unchanged. `build.sh` writes
+`<out stem>_region.jpg` beside the HTML (long side 4000 px); publish it with the page as a supporting file of the same name.
+

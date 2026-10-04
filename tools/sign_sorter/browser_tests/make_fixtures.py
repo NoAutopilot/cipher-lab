@@ -5,7 +5,8 @@
 
 Writes OUT_DIR/plain.html (two pages, piles X / X-DOT / Y in family X and Z in family Z, 8 "Check these first" tiles on
 both pages, so test_qa.js has a cross-page step) and OUT_DIR/cluster.html (the same plus --auto-clusters and a
---rank-confusion box, which test_cluster_rank.js needs) and OUT_DIR/refs.html (plain + --refs, for test_refs.js). Shapes are drawn with PIL; no real manuscript is used."""
+--rank-confusion box, which test_cluster_rank.js needs) and OUT_DIR/refs.html (plain + --refs, for test_refs.js) and OUT_DIR/region.html (SORTER-PAGEVIEW: a sloped three-line region cut by
+tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for test_pageview.js). Shapes are drawn with PIL; no real manuscript is used."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -38,3 +39,21 @@ subprocess.run(base + ['--out', str(out / 'plain.html')], check=True)
 (out / 'refs.tsv').write_text('sid\np1_01\np1_07\np2_03\n')   # two X, one Y: earlier-pick tiles with a green check, correctable (test_refs.js)
 subprocess.run(base + ['--refs', str(out / 'refs.tsv'), '--out', str(out / 'refs.html')], check=True)
 subprocess.run(base + ['--auto-clusters', '2', '--rank-confusion', str(out / 'confusion.tsv'), '--out', str(out / 'cluster.html')], check=True)
+
+# region.html (SORTER-PAGEVIEW, 4 Oct 2026): three sloped lines on one region image, recut into deskewed strips, "Whole page" view
+sys.path.insert(0, str(ROOT / 'tools')); import numpy as np, sorter_recut as sr
+RW, RH, RP, SL = 1300, 520, 120, 0.06
+reg = Image.new('L', (RW, RH), 245); g = ImageDraw.Draw(reg); rows = ['X Y Z X X-DOT Y X Z X Y X Z X Y X Z X Y X Z X Y X X'.split()[:22]] * 3
+traces, cols, cents = [], [], []
+for n, row in enumerate(rows):
+    base = 110 + n * RP; xs = []
+    for i, sg in enumerate(row):
+        x = 40 + 56 * i; shapes[sg](g, x, int(base + SL * x) - 15); xs.append(x + 10)
+    traces.append(np.array([base + SL * x for x in range(RW)], float)); cols.append([(sg, 'Z' if sg == 'Z' else 'X') for sg in row]); cents.append(xs)
+g.line((0, 300, RW, 300 + SL * RW), fill=120, width=1)   # a long ruled stroke between lines 2 and 3 (shows on the page, not in a strip)
+rd = out / 'region'; rd.mkdir(exist_ok=True); reg.save(rd / 'region.png')
+sr.run(np.array(reg), traces, ['r_L01', 'r_L02', 'r_L03'], cols, cents, rd, rd / 'pages', sr.Cfg(pitch=RP, half=60, nclu=4, clear=20),
+       region_image=str(rd / 'region.png'))
+subprocess.run([sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(rd / 'signs.tsv'), '--labels', str(rd / 'labels.tsv'),
+                '--pages', str(rd / 'pages'), '--region', str(rd / 'region.json'), '--title', 'Fixture region sorter', '--lede', 'Synthetic region.',
+                '--out', str(out / 'region.html')], check=True)

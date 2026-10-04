@@ -12,6 +12,7 @@ run() { name=$1; shift; log=$(cd "$HERE" && timeout 600 node "$@" 2>&1); rc=$?
 for t in test_bad test_ctx test_ctx2 test_focus test_mobile_ctx test_sorter test_undo test_s1_extras test_s2_sticky test_s2_picdrag test_s2_pilemerge test_recut; do run $t $t.js "$OUT/plain.html" "$OUT/$t.png"; done
 run test_cluster_rank test_cluster_rank.js "$OUT/cluster.html" "$OUT/test_cluster_rank.png"
 run test_refs test_refs.js "$OUT/refs.html" "$OUT/test_refs.png"
+run test_pageview test_pageview.js "$OUT/region.html" "$OUT/test_pageview"
 run test_qa test_qa.js "$OUT/plain.html" "$OUT/dump"
 [ -n "$EXTRA" ] && run "test_qa ($EXTRA)" test_qa.js "$EXTRA"
 exit $fail
