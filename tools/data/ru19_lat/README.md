@@ -36,3 +36,20 @@ only). The paired-consonant list and the choice of which vowels trigger softness
 own hypothesis about how a period cipher-maker might have rendered Russian softness in the Latin alphabet,
 not a scholarly transliteration standard -- see the job brief and `ciphers/kaliningrad-2015/HYPOTHESES.md`
 for why these four and not others.
+
+## Held-out calibration (4 Oct 2026, RUN4-KAL, CLAUDE.md rule 3 fold-count paragraph)
+
+Same 8 book groups and command as `tools/data/ru19_soft` (A2P4-KAL5): each scheme rebuilt per group with
+`tools/translit_ru.py --scheme <s> <group dir> <out>`, then `python3 tools/judge_plaintext.py --holdout <8 folds> --N N`
+(a-z fold), 200 windows per fold. Logs: holdout_s3p_N1066.log, holdout_s1_N1066.log, holdout_s1s_N978.log, holdout_s3_N1066.log.
+
+| check | blended FN | per-fold spread | held-out p05 / p01 / min |
+|---|---|---|---|
+| s3p, N 1066 | 22.0% | 8.0-35.5% (4.4x) | -0.920 / -0.995 / -1.282 |
+| s1, N 1066 | 22.5% | 7.0-39.0% (5.6x) | -0.921 / -0.989 / -1.284 |
+| s1s, N 978 | 17.4% | 8.0-32.5% (4.1x) | -0.931 / -1.003 / -1.252 |
+| s3, N 1066 | 17.0% | 9.0-31.5% (3.5x) | -0.866 / -0.925 / -1.095 |
+
+**Reading.** One source (8 folds of one translation) and a 3.5-5.6x spread: a FAIL/PASS against the in-model real_p05
+is **of unknown reliability**; the Historical-books fold is the hardest in every scheme. Use the held-out distribution
+(p01 about -1.0, minimum about -1.1 to -1.3 at N about 1000) as the fairer gate. Per-fold table: ciphers/kaliningrad-2015/HYPOTHESES.md "RUN4-KAL result".

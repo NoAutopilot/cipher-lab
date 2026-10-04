@@ -1,0 +1,9 @@
+file=s3_1pent.txt.gz	letters=627483	real_p05=-0.829	fn=38	n=200	fn_pct=19.0	held_p05=-0.894	held_min=-0.988
+file=s3_2hist.txt.gz	letters=845005	real_p05=-0.826	fn=63	n=200	fn_pct=31.5	held_p05=-0.934	held_min=-1.095
+file=s3_3poet.txt.gz	letters=351211	real_p05=-0.832	fn=34	n=200	fn_pct=17.0	held_p05=-0.869	held_min=-0.921
+file=s3_4majp.txt.gz	letters=548904	real_p05=-0.835	fn=19	n=200	fn_pct=9.5	held_p05=-0.851	held_min=-0.91
+file=s3_5minp.txt.gz	letters=119527	real_p05=-0.831	fn=18	n=200	fn_pct=9.0	held_p05=-0.851	held_min=-0.88
+file=s3_6gosp.txt.gz	letters=430032	real_p05=-0.833	fn=29	n=200	fn_pct=14.5	held_p05=-0.853	held_min=-0.905
+file=s3_7epis.txt.gz	letters=303722	real_p05=-0.832	fn=42	n=200	fn_pct=21.0	held_p05=-0.856	held_min=-0.896
+file=s3_8deut.txt.gz	letters=587985	real_p05=-0.832	fn=29	n=200	fn_pct=14.5	held_p05=-0.85	held_min=-1.059
+N=1066 samples=200 folds=8 blended_fn=17.0% spread=9.0-31.5% held_out_p05=-0.866 p01=-0.925 min=-1.095

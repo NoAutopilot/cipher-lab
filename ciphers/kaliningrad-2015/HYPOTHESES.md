@@ -677,3 +677,24 @@ relabelled "judge cannot decide" **on the real_p05 gate**. (2) On the held-out d
 the held-out minimum stays a FAIL on that gate (much nearer the shuffle null than any held-out Russian); between held-out
 min and p01 is "judge cannot decide"; above held-out p01 would be a PASS on that gate (worth a verifier, nothing more).
 The logged null_p99 is reported beside each. No anneal, no new solve, no hosts.
+
+### RUN4-KAL result (4 Oct 2026; pre-registration commit f766765b before any score)
+
+Logs `tools/data/ru19_lat/holdout_<scheme>_N<N>.log`; folds rebuilt in scratch by the pre-registered command (78 books,
+group sizes 5/12/5/5/12/5/22/12). FN = held-out window at or below the in-model real_p05.
+
+| unit (corpus, N) | per fold FN pct (Pent, Hist, Poet, MajP, MinP, Gosp, Epis, Deut) | blended | spread | held-out p05 / p01 / min | logged score | logged null_p99 | score - null_p99 | score - held min |
+|---|---|---|---|---|---|---|---|---|
+| s3p, N 1066 (GOLD-KAL2 S3') | 23.5, 35.5, 25.0, 14.0, 8.0, 21.5, 23.0, 25.5 | 22.0% | 8.0-35.5 (4.4x) | -0.920 / -0.995 / -1.282 | -1.706 | -2.106 | +0.40 | -0.42 |
+| s1, N 1066 (GOLD-KAL2 S1) | 24.0, 39.0, 25.0, 13.5, 7.0, 24.0, 25.0, 22.5 | 22.5% | 7.0-39.0 (5.6x) | -0.921 / -0.989 / -1.284 | -1.729 | -2.103 | +0.37 | -0.45 |
+| s1s, N 978 (GOLD-KAL4 2-ru-s1s-A) | 16.5, 32.5, 24.0, 8.0, 8.0, 14.0, 18.5, 17.5 | 17.4% | 8.0-32.5 (4.1x) | -0.931 / -1.003 / -1.252 | -1.652 | -2.078 | +0.43 | -0.40 |
+| s3, N 1066 (GOLD-KAL4 2-ru-s3-B) | 19.0, 31.5, 17.0, 9.5, 9.0, 14.5, 21.0, 14.5 | 17.0% | 9.0-31.5 (3.5x) | -0.866 / -0.925 / -1.095 | -1.934 | -2.125 | +0.19 | -0.84 |
+
+Reading by the pre-registered rules: (1) every unit has blended FN 17-23% and a 3.5-5.6x per-fold spread on one source,
+so the ru19_lat real_p05 gate is **of unknown reliability**; all four logged Russian FAILs are relabelled **"judge cannot
+decide" on the real_p05 gate**. (2) On the held-out distribution as gate, every logged score lies 0.40-0.84 below the
+lowest of 1,600 held-out real windows, so all four **stay FAIL on that gate** -- none falls in the min-to-p01 band, so
+none is "judge cannot decide" in the sense the brief asked about. Each sits nearer the shuffled null's p99 (0.19-0.43
+above it) than the held-out minimum. Net: the calibration changes the gate's label, not the size of the miss; the four
+GOLD-KAL2/4 Russian units remain negatives in substance (held-out gate), with the real_p05 wording corrected. Rows
+619, 620, 628, 629 above carry the logged real_p05 FAILs and are read with this correction.

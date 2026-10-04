@@ -484,3 +484,21 @@ the size of the miss.
 real_p05; the ru19_lat corpora behind GOLD-KAL2/GOLD-KAL4's Russian FAILs are uncalibrated the same way (same `--holdout`
 run, ~$1). The S3' unit stays untested (control 0.723); the different instrument named by A2P4-KAL4 (paired soft/hard
 move set or two-stage solve, ~$6) is unchanged. Verdict: keep going (no outside blocker).
+
+## RUN4-KAL, ru19_lat judge calibration, 4 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-04-acct1-run4-wave2.md` "RUN4-KAL" (LANE-RUN4, account 1). Script only, no anneal, no
+hosts; A2P4-KAL5's `--holdout` method on the four ru19_lat schemes, pre-registration commit f766765b before any score.
+Leave-one-book-group-out FN on the in-model real_p05 gate: **s3p N 1066 22.0% (folds 8.0-35.5%); s1 N 1066 22.5%
+(7.0-39.0%); s1s N 978 17.4% (8.0-32.5%); s3 N 1066 17.0% (9.0-31.5%)**, one source. Tables in HYPOTHESES.md "RUN4-KAL
+result" and tools/data/ru19_lat/README.md.
+
+**Correction to GOLD-KAL2/GOLD-KAL4.** The four Russian FAILs (S3' -1.706, S1 -1.729, 2-ru-s1s-A -1.652, 2-ru-s3-B
+-1.934) are relabelled **"judge cannot decide" on the real_p05 gate** (unknown reliability, rule 3). On the held-out
+distribution as gate all four stay **FAIL**: each lies 0.40-0.84 below the lowest of 1,600 held-out real windows
+(minimum -1.095 to -1.284) and only 0.19-0.43 above the shuffled null's p99. No logged Russian FAIL is "judge cannot
+decide" on the held-out gate; the miss is real in size, only the gate's label changed. Status stays `open`; nothing
+here is a reading.
+
+**Next steps.** Unchanged from A2P4-KAL5: the S3' soft unit (control 0.723) needs a different instrument (paired
+soft/hard move set or two-stage solve, ~$6); further Russian FAILs are reported against the held-out distribution.
