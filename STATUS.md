@@ -4264,3 +4264,27 @@ check-in armed. Nothing promoted; no status.json/NEAR.md/QUEUE.md change.
   0/3; the fr17/fr16 vocabulary holds iii.. so word cover drives free signs to i): word cover retired for this target, key unchanged. Next:
   leave-one-leaf-out held 4-gram anneal with planted controls (~$3).
 
+
+## LANE PIS1 handoff (session_01JSBwmQEuSz9ucJAbRALV9W, account 1), 4 October 2026 (closed 18:3x UTC: lane budget nearly spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-pis1.md`; worker briefs `2026-10-04-acct1-pis1-wave1.md` .. `-wave3.md`. 6 workers USD 44.04
+(INV 6.39 D, 302 10.19 D, 275V 12.99 D, 247 8.72 D, KEY 2.77 X, KEY2 2.98 D), orchestrator ~7.5 (get_session 7.04 at 18:31); all archived, no check-in armed. Nothing promoted;
+no status.json/NEAR.md/QUEUE.md/AUDIT.md change. Sonnet per-line readers throughout (TX-FABLE FAIL 15:58).
+- **Inventory (PIS1-INV, NOTES "## Inventory (PIS1-INV)").** After f.121 every cipher passage in fr.16045 sits in a letter with a Colbert 16 pt II
+  copy: 9 Sept 1586 (f.228-234, ~78 lines, left-margin glosses f.228v/231v/233v, Colbert pp.13-34), 17 Sept first (done), **17 Sept second
+  (f.246r-f.247r ~60 lines, Colbert pp.52-55, plus a period decipherment on f.248r-v "dechiffre de la precedente")**, 4 Nov (f.276-279 ~76 lines +
+  dense versos, pp.110-~136), 24 Mar 1587 (f.301v, f.302v). fr.16046 starts 4 Jan 1588 (no 1587). So the uncopied cipher (lane job 3) is only the
+  1585 letters ff.50-121 (Tomokiyo's 1585 table; f.75 NON-TEST, on account 3's owner sorter) and 18 June 1588 (fr.16046 f.179; no copy, no table
+  tested): job 3 was not run -- nothing licensed to decode with key86.
+- **Known-answer pages this lane (all PASS vs the Colbert copy, control 5/5 at the measured err_2reader, Tomokiyo key86 arm A):** f.302v (24 Mar
+  1587, kp87b, 0.590 vs p99 0.389/0.464, err 0.335, C 227 M 146; margin gloss vs copy 0.944), f.275v L1-16 (4 Nov 1586, kp86f, 0.622 vs 0.419/0.482,
+  err 0.181, C 355 M 219), f.247r (17 Sept second, kp86g, A 0.639 / B 0.664 above both p99s, err 0.268, C 236 M 122; Colbert vs f.248 decipherment
+  0.986). With RUN3-RUN5: f.244r, f.244v, f.245r, f.275r, f.301v. **For account 3:** eight pages of four letters are now known-answer PASS
+  against period clear copies (two with a second period witness) -- verifier/audit decision; these are confirmations of the published key on
+  period-copied text, not decipherments of unread text.
+- **key86 cells (PIS1-KEY, PIS1-KEY2).** Held-out remap {T45 u, T47 f, T57 n} fitted on the 17 Sept pages: joint gate FAIL (G3 on f.301v: a
+  degenerate remap also beats arm A), key86.tsv unchanged. T31 shape relabel: f.244r 0.677 -> 0.695; f.275r 0.647 -> 0.657 (blind A 0.631 -> 0.639), above both p99s on both pages = SUPPORTED, but key86 T31 stays m and T31 tokens stay M (f.275r blind B and control not run, ~$0.5). Witnesses only (HYPOTHESES.md):
+  T57 n, T47 f, T40 s 5/7 (kp87b), T31 o5 e4 m3 (kp86f). PIS1-KEY was archived mid-write by this orchestrator (its error; ledger row X).
+- **Next (NOTES Remaining gaps, PIS1-247 list):** f.246r + f.246v (~50 lines, two witnesses, crop commands in NOTES) ~$36 at the per-line rate;
+  f.275v block B lines 12-15 ~$3.5; f.276-279 and the 9 Sept letter (margin glosses) per page ~$9-13; Brienne 354-356 for June 1588 (catalogue
+  first, ~$1). Cost per dense page with an Opus worker + Sonnet per-line readers: USD 8.7-13.
