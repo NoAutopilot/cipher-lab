@@ -225,3 +225,49 @@ Verdict: keep going: 4 internal gaps; cheapest next: native look at unclear-glos
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Gloss presence at 1500 px + Dupuy 521 date index (LANE-RUN1 RUN1-NX, account 1, 4 Oct 2026, from 00:48 UTC)
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run1-wave1.md` RUN1-NX. No known-answer retry (rule 3 third-attempt clause), no transcription, no decode.
+Intake gate (00:48 UTC): `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Step 1, gloss presence** (`letters_coverage.tsv`, new column `gloss_1500px_RUN1NX`; existing columns untouched). The 31 C/P canvases of
+the letters whose cover was unclear, '?' or open were fetched once at IIIF `full/1500,` (31 requests) and read by this worker, two
+pages per look; c275's faint "interlinear" lines got one native-resolution region (`pct:10,22,85,14`, 1800 px). No Sonnet call was
+needed (brief allowed 2). Per letter:
+
+| canvases | 400 px cover (FT-D) | 1500 px (this pass) |
+|---|---|---|
+| 231-232 | unclear | absent on c231; **c232 is not cipher**: a blank verso showing c231 through the paper |
+| 245-246 | unclear | absent; clear text = the c464 letter (8 March 1573 to the King): an enciphered pair, both unglossed |
+| 268 | unclear | **present** (running margin text beside both cipher blocks) |
+| 275-276 | interlinear? | absent: the faint lines are verso show-through (native region) |
+| 287-289 | sheet + interlinear? | partial: interlinear words over some signs on ~9 of ~67 lines (plus sheet c291-292) |
+| 330 | unclear | absent |
+| 358-361 | unclear (copy) | absent; heading "Coppie de la despesche du 8me d'aoust avec ung postscripta du xviii et ung autre du xx du mois 1572" |
+| 409-410 | open | open: 3-4 interlinear words on ~3 lines, no running gloss |
+| 464 | open | absent; pair with c245-246 |
+| 472-473 | open | absent (margin note beside a clear line only) |
+| 510-516 | open | absent on all 7; **heading c510 "7 Juillet 1574 Pera"** (the day FT-D could not read) |
+| 520-521 | margin? | **present** on c520 (running margin column); c521's faint cipher-like lines look like c520 show-through (uncertain) |
+| 560-561 | margin? | **present** on both |
+
+Open-sign estimate (est_signs column, rough): letters with no gloss and no sheet now sum to ~23,600 signs (c231 ~1,500 + 245-246
+1,000 + 275-276 2,200 + 330 700 + 358-361 4,500 + 409-410 2,200 + 464 800 + 472-473 1,000 + 510-516 9,750); glossed after all: 268,
+520(-521), 560-561 (~3,300). FT-D's "~14,000 open + ~9,500 unclear" becomes ~23,600 open (c232 dropped), of which c245-246/c464 are
+an enciphered same-text pair.
+
+**c510-516 is not wholly open.** c516 carries a clear lead-in followed by cipher: "Sire quelques jours avant recevoir vre depesche du
+xv(?)me d'Avril j'avois entendu ce qu'il plaist a vre Mag^te me mander" + cipher (image: canvas 516, `pct:5,8,90,25`). Charrière,
+*Négociations dans le Levant* III (IA `ngociationsdel03charuoft`, djvu text lines ~41266-41285, between the page heads 553 and 556), prints from the evêque
+d'Acqs's "dépêche du 7 juillet 1574" (sources "Corr. de Turquie, ms. Mortemart, Brienne, etc.", line 41473): "Quelques jours avant
+recevoir vostre dépesche javois entendu ce qu'il plaist à V. M. me commander des conspirations faictes contre sa personne et son
+estat, lesquelles les ministres de vos voisins avoient bien faict sonner en autre façon par deçà; mais j'en ay esclaircy ledit bassa
+selon la vérité de vos commandemens ..." -- the clear words on the leaf match the printed sentence's opening (the leaf has "mander"
+where the print has "commander"), so the cipher after "mander" is very probably the printed continuation from "des conspirations".
+A second excerpt of the same despatch is printed at lines ~41016-41060 (pp.551-552) ("Quant à l'opposition que V. M. me commande faire aux
+recherches qu'aucuns princes et estats d'Italie font ..."), and a 7 July 1574 letter to Catherine de Médicis at lines ~41512-41540 (pp.556-558).
+Not tested here (no decode in this brief): the printed text is a crib candidate for c516 and for whatever part of c510-515 the
+excerpts cover; the copy the print rests on may be a decipherment, abridged or re-worded.
+
+(Step 2, Dupuy 521 date index, in progress at 01:2x UTC; section continues below when done.)

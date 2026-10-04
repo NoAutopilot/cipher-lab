@@ -1,40 +1,41 @@
 # Cipher letters in fr.16142 ff.104-278 and where their plaintext already sits, from survey.tsv (FT-D, 3 Oct 2026, 400 px reading; dates as legible at 400 px, '?' = digit unread).
 # cover: margin = period marginal decipherment beside the cipher; sheet = 'Dechiffré de la precedente' on the following leaves; dup = enciphered duplicate of a glossed/deciphered original; open = no decipherment seen on the leaves.
 # est_signs = cipher pages x ~1,500 signs per full page (half for P), a rough figure: c262's 13 crop lines carry ~35-45 signs each; not counted.
-canvases	letter	cover	est_signs
-225-226	Acqs to the King, 2 Dec 1571	margin	2200
-231-232	"Relation d'une bataille" (1571)	unclear (no margin text seen at 400 px)	3000
-245-246	Acqs to the King, March 1572	unclear	1000
-257-266	Acqs to the King, April 1572	margin	11000
-268	Acqs, April 1572 (6 lines)	unclear	300
-275-276	Acqs to Anjou, 25 April 1572	interlinear? (faint lines)	2200
-287-289	Acqs to the King, May 1572	sheet c291-292	2000
-297-303	Acqs to the King, 10 June 1572	margin	8000
-306-311	Duplicata of 10 June 1572	dup	7000
-318-324	Acqs to the King, 9 July 1572	margin	9000
-330	Acqs to the Queen, 9 July 1572	unclear	700
-334-340	Duplicata of 9 July 1572	dup	8500
-346-351	Acqs [to Anjou?], July 1572	margin	7000
-354-355	Duplicata of 9 July, to Anjou	dup	2200
-358-361	Coppie de la depesche, Aug 1572	unclear (copy; original not located)	4500
-362-364	Duplicata of 25 Aug 1572	sheet c366-369	2500
-371	Acqs to Anjou, 25 Aug 1572	margin	1000
-375	Duplicata of 25 Aug, to Anjou	dup (c371)	1200
-383-384	Acqs to the King, 3/4 Sept 1572	sheet c387-388	2200
-389-392	Acqs to Anjou, Sept 1572	sheet c393-395	4500
-409-410	Acqs to the King, 6? Sept 1572	open (no sheet seen c411-413)	2200
-417-422	Acqs to the Queen / Anjou, Nov 1572	margin	3000
-425-426	Acqs to the King, Nov 1572	margin	1000
-434-435	Acqs, Nov 1572	margin	1000
-454-455	Acqs to the Queen, March 1573	sheet c458	1500
-460-461	Duplicata, March 1573	dup / sheet c458	3000
-464	Acqs to the King, 4 March 1573 (lower half)	open (no sheet seen)	800
-472-473	Acqs to the Queen, March 1573 + postscript	open (no sheet seen)	1000
-476-477	Acqs to Anjou, March 1573	sheet c480-483	2200
-484-486	Duplicata of the Anjou letter	dup	3700
-488-490	Acqs to the Queen, April 1573	sheet c492-494	3700
-510-516	Noailles to the King, July 1574 (day unread)	open (no sheet; Charrière III prints clear excerpts of Acqs's letters of 7 and 16 July 1574 from other copies, unmatched)	9750
-520-521	Gilles de Noailles to the King, Oct 1574	margin? (notes beside cipher)	1500
-540-542	Gilles de Noailles to the King, March 1576	sheet c544	3700
-546-547	Gilles de Noailles to the King, April 1576	sheet c550	2500
-560-561	Gilles de Noailles, May 1577	margin? (notes beside cipher)	1500
+# gloss_1500px_RUN1NX (RUN1-NX, LANE-RUN1, 4 Oct 2026 00:50-00:56 UTC): the 31 C/P pages in letters whose cover was unclear/?/open, re-read at 1500 px (IIIF full/1500,), c275 also as a native-resolution region; blank = not re-read.
+canvases	letter	cover	est_signs	gloss_1500px_RUN1NX
+225-226	Acqs to the King, 2 Dec 1571	margin	2200	
+231-232	"Relation d'une bataille" (1571)	unclear (no margin text seen at 400 px)	3000	c231 absent (cipher with clear words inline, no margin/interlinear); c232 is not a cipher page: blank verso showing c231 through the paper (survey C is show-through). Gloss lines 0/~30
+245-246	Acqs to the King, March 1572	unclear	1000	absent: c245 ~27 cipher lines, c246 4 cipher lines; c245 margin note beside a clear line only ("de pollongne...", a summary, not a gloss). Gloss lines 0/~31. Clear text = same letter as c464 (8 March 1573 to the King, "Quant Vre Mageste aura entendu que la paix des Venitiens..."): an enciphered pair, both unglossed
+257-266	Acqs to the King, April 1572	margin	11000	
+268	Acqs, April 1572 (6 lines)	unclear	300	present (margin): running small-hand margin text beside the cipher blocks at top (~8 lines) and mid-page (~10 lines); 1500 px judgement
+275-276	Acqs to Anjou, 25 April 1572	interlinear? (faint lines)	2200	absent: c275 faint lines between cipher rows are verso show-through (native-region check pct:10,22,85,14 at 1800 px); c276 ~10 cipher lines, no gloss. Gloss lines 0/~45
+287-289	Acqs to the King, May 1572	sheet c291-292	2000	partial (interlinear): c287 small words written above some cipher signs on ~4 of ~14 lines; c288 the same on ~5 of ~45 lines; c289 8 cipher lines, none. Plus sheet c291-292
+297-303	Acqs to the King, 10 June 1572	margin	8000	
+306-311	Duplicata of 10 June 1572	dup	7000	
+318-324	Acqs to the King, 9 July 1572	margin	9000	
+330	Acqs to the Queen, 9 July 1572	unclear	700	absent: ~17 cipher lines, no gloss (left-edge text is a docket on the neighbouring leaf)
+334-340	Duplicata of 9 July 1572	dup	8500	
+346-351	Acqs [to Anjou?], July 1572	margin	7000	
+354-355	Duplicata of 9 July, to Anjou	dup	2200	
+358-361	Coppie de la depesche, Aug 1572	unclear (copy; original not located)	4500	absent: "Coppie de la despesche du 8me d'aoust avec ung postscripta du xviii et ung autre du xx du mois 1572" (heading read at 1500 px); c358 ~30, c359 ~37, c360 ~12, c361 ~15 cipher lines, no margin or interlinear gloss
+362-364	Duplicata of 25 Aug 1572	sheet c366-369	2500	
+371	Acqs to Anjou, 25 Aug 1572	margin	1000	
+375	Duplicata of 25 Aug, to Anjou	dup (c371)	1200	
+383-384	Acqs to the King, 3/4 Sept 1572	sheet c387-388	2200	
+389-392	Acqs to Anjou, Sept 1572	sheet c393-395	4500	
+409-410	Acqs to the King, 6? Sept 1572	open (no sheet seen c411-413)	2200	partial (few interlinear words): c409 ~40 cipher lines, 3-4 small words above signs on ~3 lines (e.g. near lines 30-33), no running gloss; c410 ~12 lines, none
+417-422	Acqs to the Queen / Anjou, Nov 1572	margin	3000	
+425-426	Acqs to the King, Nov 1572	margin	1000	
+434-435	Acqs, Nov 1572	margin	1000	
+454-455	Acqs to the Queen, March 1573	sheet c458	1500	
+460-461	Duplicata, March 1573	dup / sheet c458	3000	
+464	Acqs to the King, 4 March 1573 (lower half)	open (no sheet seen)	800	absent: ~30 cipher lines, no gloss; heading "8 Mars 1573 Pera"; enciphered pair with c245-246 (same clear text)
+472-473	Acqs to the Queen, March 1573 + postscript	open (no sheet seen)	1000	absent: c472 ~17, c473 ~10 cipher lines; heading "8 Mars 1573 Pera"; margin "pour le faict de pollongne" beside a clear line only
+476-477	Acqs to Anjou, March 1573	sheet c480-483	2200	
+484-486	Duplicata of the Anjou letter	dup	3700	
+488-490	Acqs to the Queen, April 1573	sheet c492-494	3700	
+510-516	Noailles to the King, July 1574 (day unread)	open (no sheet; Charrière III prints clear excerpts of Acqs's letters of 7 and 16 July 1574 from other copies, unmatched)	9750	absent on all 7 canvases (c510-516 at 1500 px, no margin, no interlinear). Heading c510 "7 Juillet 1574 Pera" (day now read); subscription c516 "... le vij(?)e de Juillet 1574". c516 clear lead-in "Sire quelques jours avant recevoir vre depesche du xv(?)me d'Avril j'avois entendu ce quel plaist a vre Magte me mander" + cipher = Charriere III's printed excerpt of the 7 July 1574 despatch ("...ce qu'il plaist a V. M. me commander des conspirations faictes contre sa personne...", ms. Mortemart, Brienne): a printed clear text for at least this passage
+520-521	Gilles de Noailles to the King, Oct 1574	margin? (notes beside cipher)	1500	present (margin): c520 (26 Oct 1574, Gilles) running margin decipherment beside the cipher blocks, left column ~45 lines; c521 ink cipher not confirmed: its ~15 faint cipher-like lines look like show-through of c520 (1500 px; uncertain)
+540-542	Gilles de Noailles to the King, March 1576	sheet c544	3700	
+546-547	Gilles de Noailles to the King, April 1576	sheet c550	2500	
+560-561	Gilles de Noailles, May 1577	margin? (notes beside cipher)	1500	present (margin): c560 (20 May 1577) and c561 running margin text beside every cipher block
