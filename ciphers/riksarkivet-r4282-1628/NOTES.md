@@ -1330,3 +1330,19 @@ about the cipher (rule 10).
 Next (desk, ~5 min): screenshot pp. 115, 194 and 229 (the three 1628 letters to Camerarius) -- R4284 is labelled "Legat ...
 till L. Camerarius bref for 1628", so a printed 1628 Oxenstierna-Camerarius letter mentioning a cipher, a key or the phrases
 above would be the first link between R4282 and a known correspondence.
+Follow-up, same day (owner's screenshots of pp. 115, 194, 229, 516 and index p. 803; read by the account-3 orchestrator):
+- Index p. 803: "Camerarius, Ludvig, svenskt hofråd, resident och 1629 ambassadör i Haag: 115, 116, 194-196, 229-232, 516-519".
+- no. 96 (14 Apr 1628, p. 115): a recommendation for Simeon van Beaumont (Swedish headnote). No cipher matter seen on the page shown.
+- no. 143 (25 July 1628, p. 194), headnote "Om korrespondensen mellan A. O. och Camerarius": Oxenstierna writes that Camerarius's
+  letters reached him "satis frequentes hac hyeme et aestate" and that he had his secretary list them ("Numerum literarum tuarum
+  ... jussi amanuensem meum ... consignare atque ad te mittere"). Topics: the war in Prussia, the Polish diet debating peace,
+  Danzig shipping, the Elector of Brandenburg, the siege of Stralsund (Wallenstein), Denmark.
+- no. 165 (17 Sept 1628, p. 229): Stralsund's relief, Wallenstein, Denmark's peace hopes, A. O.'s return to Prussia.
+- no. 402 (6 June 1629, p. 516): the Prussian campaign and the States General.
+Reading (interpretation, not a test): Camerarius wrote to Oxenstierna often in winter-summer 1628, so an unsigned 1628 Latin
+cipher letter bundled with Camerarius material (R4284 "till L. Camerarius bref for 1628") may be one of Camerarius's own
+letters TO Oxenstierna, or a draft of Oxenstierna's to him. These printed letters give topic words for a crib list (Stralsund,
+Wallenstein/Fridlandus, Dantiscum, Polonia, Brandenburg, Dania, Hollandia/Ordines) -- a hypothesis for a pre-registered crib test,
+not evidence. Next (desk, ~5 min): Riksarkivet AO search (sok.riksarkivet.se/oxenstierna), Efternamn = Camerarius, Datum 1628:
+list each 1628 letter Camerarius -> AO (date, place, Innehåll), to see whether any is described as in cipher or matches R4282's
+date. 'dubitatur'/'chiffer' counts in AOSB I:4 still to confirm.
