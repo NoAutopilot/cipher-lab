@@ -1678,3 +1678,51 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further seed sweep of the same anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: leave-one-leaf-out held 4-gram anneal with planted controls, ~$3
+
+## SCORE-NC2 (account-3 worker, 4 Oct 2026, 14:42-15:0x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-04-acct3-score-nc2.md`; PREREG addendum `tx/PREREG_reanneal_nc2.md` and the script change
+pushed before any run (3a2e2efa). One change from RUN5-C1161RA: `--norm nc2`, the Lasry, Biermann and Tomokiyo 2023 App. A score
+(n-gram log-likelihood divided by sum N_c^2), now a shared option of `tools/homophonic_anneal.py` (`ngram_term`, test
+`tools/tests/test_homophonic_nc2.py`), used by both stages of `two/reanneal.py --norm nc2`. W re-derived by the same held-out
+formula: 5.47771 (`two/ra_nc2/calib.tsv`; norm=none had 5.50926). Outputs `two/ra_nc2/`; `two/ra/` untouched.
+
+**Headroom:** the same planted control at norm=none read 0/3 (two/ra/ctl_gate.txt) -- no ceiling problem.
+**Planted control under nc2: 0/3 recovered -> NON-TEST, target arm not run** (`two/ra_nc2/ctl_gate.txt`, `ctl_signs.tsv`).
+
+| planted | true | votes (10 seeds) | consensus >= 7 | planted e vs best alternative: dJ / null p95 |
+|---|---|---|---|---|
+| a | u | u4 c1 t1 s1 n1 d1 b1 | none | -0.854 / -0.324 (e rejected) |
+| p | c | c4 m3 d2 s1 | none | -0.962 / -0.484 (e rejected) |
+| d | n | t3 n2 u2 s2 x1 | none | -0.593 / -0.095 (e rejected) |
+
+What changed and what did not: nc2 removed the degenerate basin (at norm=none every free sign went to i in 9-10/10 seeds and all
+10 seeds' stage-1 keys were identical; under nc2 no free sign piles on i, stage-1 scores differ by seed, 27187.8-28144.9).
+The wrong planted value e is now rejected beyond the null for all three, and the true letter is the modal vote for a (u 4/10)
+and p (c 4/10), but no planted sign reaches the pre-registered 7/10 consensus, so none is "recovered". Of the 29 free signs only
+`4` reaches consensus (o 9/10 = its key.tsv value, clears its null) and `L` (g 8/10) and `l` (f 7/10) reach it at a value
+different from key.tsv; with the control failed these are not proposals (rule 3: a control below its gate licenses no target
+reading), so **nothing is proposed for key.tsv** and no grade moves. Per the PREREG no W, seed or recipe tuning follows.
+
+Rule 3 bookkeeping: this was one attempt of a different objective (not a re-weighting); it failed differently from C1161RA
+(dispersion instead of collapse), which is the shape that says the joint free-sign problem at this N (3375 signs, 32 free
+signs incl. the 3 planted C) is under-determined by a 4-gram objective however it is normalised, not that the
+normalisation was wrong. Logged as [retired] for the joint re-anneal (instrument: 4-gram + word cover, none or nc2).
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none. Subagent
+calls: 0.
+
+## Remaining gaps (SCORE-NC2, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Gloss-and-judge value test (RUN4-C1161GJ) no sign passes; word-cover value test (RUN5-C1161WC) NON-TEST; joint M-sign re-anneal with word cover (RUN5-C1161RA) NON-TEST 0/3; the same with nc2 normalisation (SCORE-NC2) NON-TEST 0/3 (no collapse, no consensus).
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S, qb - blocker: not-attempted; joint re-anneal retired under both norms (29-32 free signs too many for a 4-gram objective at N=3375); next: a held 4-gram anneal under leave-one-leaf-out streams (6 streams, consensus across leaves instead of seeds) with the same planted a/p/d control first, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (SCORE-NC2, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624), 10-seed consensus PASS (0.334 vs 0.122); per-sign gloss/judge undecided (RUN4-C1161GJ); word-cover instrument retired; joint re-anneal retired under norm none and nc2 (RUN5-C1161RA, SCORE-NC2: planted controls 0/3 both); next: leave-one-leaf-out held 4-gram anneal with planted controls first, as in Remaining gaps
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further seed sweep or W/threshold change of the same anneal is not a different instrument
+Verdict: keep going: 2 internal gaps; cheapest next: leave-one-leaf-out held 4-gram anneal with planted controls, ~$3
