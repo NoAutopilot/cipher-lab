@@ -38,6 +38,7 @@ li.done{opacity:.6}
 li.done .t{text-decoration:line-through;color:var(--done)}
 li.wait .t::after{content:" · not ready yet";font-weight:400;color:var(--warn);font-size:.85rem}
 input:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.note{color:var(--muted);font-size:.88rem;margin:0}
 footer{color:var(--muted);font-size:.85rem}
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
@@ -45,7 +46,7 @@ footer{color:var(--muted);font-size:.85rem}
 <div class="wrap">
 <header>
   <h1>Your sprint, 4 October</h1>
-  <p class="sub">Everything that needs a person, in order. Ticks stay on this device. Updated 6:30 pm PDT, 3 Oct.</p>
+  <p class="sub">Everything that needs a person, in order. Ticks stay on this device. Updated 6:45 pm PDT, 3 Oct.</p>
   <div class="meter"><span id="count">0 of 0</span><div class="bar"><i id="fill"></i></div></div>
 </header>
 
@@ -62,18 +63,37 @@ footer{color:var(--muted);font-size:.85rem}
 </section>
 
 <section>
-  <h2>Sort signs <span class="tag">moves readings forward</span></h2>
+  <h2>Sort signs <span class="tag">ranked by what each one unlocks</span></h2>
   <ol>
-    <li id="r-bir"><input type="checkbox" id="c-bir" aria-labelledby="t-bir"><span class="t" id="t-bir">Birago 1572, round 2<span class="min">10 min</span></span>
-      <span class="d">Your first sort helped f.144. Finish the rest: <a href="https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s">open sorter</a> (ASKS 118).</span></li>
-    <li id="r-arm"><input type="checkbox" id="c-arm" aria-labelledby="t-arm"><span class="t" id="t-arm">Armstrong to Madison 1808 shorthand<span class="min">15 min</span></span>
-      <span class="d">Tomokiyo's target. <a href="https://claude.ai/artifact/R9GrLoF1ajudygVjo4d17N">open sorter</a> (ASKS 128).</span></li>
-    <li id="r-sav"><input type="checkbox" id="c-sav" aria-labelledby="t-sav"><span class="t" id="t-sav">Savary de Lancosme 1587<span class="min">15 min</span></span>
-      <span class="d">The one unread letter, 7,113 signs. Start with "Check these first". <a href="https://claude.ai/artifact/FDkHh2hqX826r9fdxwXFAF">open sorter</a> (ASKS 137).</span></li>
-    <li id="r-jm"><input type="checkbox" id="c-jm" aria-labelledby="t-jm"><span class="t" id="t-jm">Juan Manuel 1522<span class="min">15 min</span></span>
-      <span class="d">28 unread letters to Charles V; the machines can't agree on this handwriting. <a href="https://claude.ai/artifact/YC3XqFjy3UbbbmGdF6Kkp9">open sorter</a> (ASKS 138).</span></li>
-    <li id="r-more"><input type="checkbox" id="c-more" aria-labelledby="t-more"><span class="t" id="t-more">Smaller sorters, any order<span class="min">5 min each</span></span>
-      <span class="d"><a href="https://claude.ai/artifact/6MT1CLAbNx3iTMpa1yzSCJ">MLH 1976</a> · <a href="https://claude.ai/artifact/RxURcDEas5VU11B95kVoJo">Dinteville f.23r</a> · <a href="https://claude.ai/artifact/U2VPJbNVAm5S5u4ThNTbU1">Florence 1430</a> · <a href="https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL">Sicily 1503</a> · <a href="https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb">Revol 1593</a></span></li>
+    <li id="r-bir"><input type="checkbox" id="c-bir" aria-labelledby="t-bir"><span class="t" id="t-bir">1. Birago 1572 conflicts<span class="min">10 min</span></span>
+      <span class="d">24 tiles two readers split on. Your choices decide sign grades across three letters already partly read, two of them audited. Biggest gain per minute. ASKS 118. <a href="https://claude.ai/artifact/DHiLGFWiqrHxQYzLrFNh6s">open sorter</a></span></li>
+    <li id="r-jm"><input type="checkbox" id="c-jm" aria-labelledby="t-jm"><span class="t" id="t-jm">2. Juan Manuel 1522<span class="min">20 min</span></span>
+      <span class="d">28 unread letters to Charles V (about 19,000 signs). Tomokiyo's code table fits; the machines can't agree on the letters, so your piles unlock the alphabet test. ASKS 138. <a href="https://claude.ai/artifact/YC3XqFjy3UbbbmGdF6Kkp9">open sorter</a></span></li>
+    <li id="r-arm"><input type="checkbox" id="c-arm" aria-labelledby="t-arm"><span class="t" id="t-arm">3. Armstrong to Madison 1808<span class="min">20 min</span></span>
+      <span class="d">Tomokiyo's own request. 997 shorthand marks in 36 guessed piles; rename a pile to his number if you recognise it. ASKS 128. <a href="https://claude.ai/artifact/R9GrLoF1ajudygVjo4d17N">open sorter</a></span></li>
+    <li id="r-din"><input type="checkbox" id="c-din" aria-labelledby="t-din"><span class="t" id="t-din">4. Dinteville 1592 slip<span class="min">5 min</span></span>
+      <span class="d">Just the 21 tiles in "Check these first". The slip carries a period Italian decipherment, so settled signs feed key values into a counted Dinteville reading. ASKS 112. <a href="https://claude.ai/artifact/RxURcDEas5VU11B95kVoJo">open sorter</a></span></li>
+    <li id="r-rev"><input type="checkbox" id="c-rev" aria-labelledby="t-rev"><span class="t" id="t-rev">5. Nevers to Revol 1593<span class="min">15 min</span></span>
+      <span class="d">1,018 tiles. Four blocked Nevers-Revol letters share this copyist; no machine pass can go further until his alphabet is settled. ASKS 102. <a href="https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb">open sorter</a></span></li>
+    <li id="r-sav"><input type="checkbox" id="c-sav" aria-labelledby="t-sav"><span class="t" id="t-sav">6. Savary de Lancosme 1587<span class="min">25 min</span></span>
+      <span class="d">One unread letter, 7,113 signs in 120 over-split piles; many will merge. Start with "Check these first". ASKS 137. <a href="https://claude.ai/artifact/FDkHh2hqX826r9fdxwXFAF">open sorter</a></span></li>
+    <li id="r-deb"><input type="checkbox" id="c-deb" aria-labelledby="t-deb"><span class="t" id="t-deb">7. Debosnys<span class="min">when you have a long stretch</span></span>
+      <span class="d">Your own sorter. 1,264 signs; nothing moves on Debosnys until the alphabet is settled. <a href="https://claude.ai/artifact/3HcBvFdR7EJ17VFy8uE7sM">open sorter</a></span></li>
+    <li id="r-flo"><input type="checkbox" id="c-flo" aria-labelledby="t-flo"><span class="t" id="t-flo">8. Florence 1430<span class="min">5 min</span></span>
+      <span class="d">15 tiles to check. Settled labels let us line the cipher up with its clear copy. ASKS 107. <a href="https://claude.ai/artifact/U2VPJbNVAm5S5u4ThNTbU1">open sorter</a></span></li>
+    <li id="r-sic"><input type="checkbox" id="c-sic" aria-labelledby="t-sic"><span class="t" id="t-sic">9. Sicily 1503<span class="min">15 min</span></span>
+      <span class="d">1,937 tiles; start with the 40 in "Check these first". ASKS 104. <a href="https://claude.ai/artifact/92bH8f981H2M95JNM3PVBL">open sorter</a></span></li>
+    <li id="r-mlh"><input type="checkbox" id="c-mlh" aria-labelledby="t-mlh"><span class="t" id="t-mlh">10. MLH cryptogram 1976<span class="min">2 min</span></span>
+      <span class="d">3 tiles. Small puzzle, low stakes. ASKS 119. <a href="https://claude.ai/artifact/6MT1CLAbNx3iTMpa1yzSCJ">open sorter</a></span></li>
+  </ol>
+  <p class="note">Two older Birago pages (f.117r, the first Birago 1572 sorter) are folded into number 1; skip them.</p>
+</section>
+
+<section>
+  <h2>Quotes <span class="tag">pricing replies</span></h2>
+  <ol>
+    <li id="r-quotes"><input type="checkbox" id="c-quotes" aria-labelledby="t-quotes"><span class="t" id="t-quotes">Collect the reproduction quotes<span class="min">5 min</span></span>
+      <span class="d">Account 1 is reading the project mailbox for replies tonight and will fill the quote sheet (<code>outreach/QUOTES.md</code>) with prices and a pay / wait / decline suggestion per item. Replies that went to your personal inbox (the BnF ones you sent yourself): forward them to the project mailbox, or paste them to me in chat.</span></li>
   </ol>
 </section>
 
