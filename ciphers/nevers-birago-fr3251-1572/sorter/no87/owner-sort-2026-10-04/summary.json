@@ -1,0 +1,27 @@
+{
+ "tiles": 248,
+ "by_status": {
+  "kept": 217,
+  "moved": 21,
+  "merged": 0,
+  "not-letter": 1,
+  "aside": 0,
+  "bad-cut": 9
+ },
+ "signs_before": 14,
+ "signs_after": 15,
+ "confirmed_piles": [],
+ "not_letter_piles": [
+  "NOT-LETTER"
+ ],
+ "merges": {},
+ "new_piles": [
+  "BAD-CUT",
+  "NOT-LETTER",
+  "T19-d",
+  "T60-d",
+  "T60-e",
+  "T83-b",
+  "T85-b"
+ ]
+}
