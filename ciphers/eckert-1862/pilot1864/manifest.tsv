@@ -1,0 +1,4 @@
+file	ledger	object	pages	pages_with_text	url	sha256	fetched
+vol18.json	mssEC 18	10074	414	402	https://hdl.huntington.org/digital/bl/dmwebservices/index.php?q=dmQuery/p16003coll11/callid^mssEC%2018^exact^and/title!transc!telnum!callid/title/1024/1/0/0/0/0/0/0/json	cb162574c494dea9a8589154e9f4ae8f20eeb619633d749682ab9840e38f200d	04 Oct 2026
+vol19.json	mssEC 19	9302	416	405	https://hdl.huntington.org/digital/bl/dmwebservices/index.php?q=dmQuery/p16003coll11/callid^mssEC%2019^exact^and/title!transc!telnum!callid/title/1024/1/0/0/0/0/0/0/json	be11447f415e174afe4130c558e856c6cfe8d8f32c296ba9dc9151fb6dc666b2	04 Oct 2026
+vol15.json	mssEC 15	5126	173	162	https://hdl.huntington.org/digital/bl/dmwebservices/index.php?q=dmQuery/p16003coll11/callid^mssEC%2015^exact^and/title!transc!telnum!callid/title/1024/1/0/0/0/0/0/0/json	6050e057ed4b2760d38ce4d99c6614b2561802f510634fb47ff649c1bf69fe57	04 Oct 2026

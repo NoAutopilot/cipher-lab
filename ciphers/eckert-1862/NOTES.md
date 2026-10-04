@@ -867,3 +867,44 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 3 internal gaps; cheapest next: pilot one 1864 sent ledger (mssEC 18 or 19) against Cipher No. 1 (mssEC 41-46) at grade H, ~$6
+
+## GAPS206-eckert-1862 (4 Oct 2026, STALE4 for account 4, account 1 worker): 1864 sent-ledger pilot, text route
+
+- Premise: gap 3's image pilot was already done in the sibling folder ciphers/eckert-1864 (19-20 Sept 2026: mssEC 41 =
+  Cipher No. 1 transcribed into key.md, 20 mssEC 19 entries read at H 298, C 8). This job ran what was not done: the text
+  route (volunteer transcriptions of whole 1864 ledgers through that key, no new image reading) and the never-opened
+  parallel volume mssEC 18 (object 10074). Pre-registered in PREREG-GAPS206.md, pushed (commit e774327e) before the fetch;
+  its "clock read 01:52" line was typed, not read (rule 6) -- the commit order is the record: prereg 01:5x, data after.
+- Data: three CONTENTdm dmQuery calls (mssEC 18, 19, 15; pilot1864/manifest.tsv with sha256; texts not committed, the
+  volunteers' work). Script pilot1864/pilot.py (`--check` exits 1 if results.tsv/pages.tsv are stale); results in
+  pilot1864/results.tsv. Statistic S = Cipher No. 1 code words (minus the 1000 commonest English words) per 100 tokens.
+- S1 gate (positive control first): mssEC 19 (pages >= 21) median S 18.49 vs mssEC 15 (1862 null) p95 12.37 -- PASS.
+- S2 known answer: the keyed meanings of eckert-1864's 20 image-reconciled entries recovered from the volunteer text of
+  the same pointer: recall 0.975 (309/317) vs mismatched-page control mean 0.200, p95 0.262 -- PASS. (Lenient by
+  design: a whole page against one entry; the control carries the same leniency.)
+- S3 target: mssEC 18 median S 17.50 > N p95 12.37 -- in the Cipher No. 1 vocabulary; 313/400 pages above the null p95
+  (mssEC 19: 306/381); weakest stretches pages 301-325 (10/25) and 376-400 (12/25), likely the 1865 tail or the other
+  (No. 2 / old) vocabularies, not checked.
+- S4 duplicate test: only 24 of 400 mssEC 18 pages share >= 3 distinct word 5-grams with any mssEC 19 page (threshold 3
+  = max(3, 1862 null p99 1 + 1); null pages over threshold 1/158). mssEC 18 is not a copy of mssEC 19: about 376 pages
+  of 1864-65 sent entries that the 20-entry pilot never touched, readable through the same key.
+- Not done: no entry of mssEC 18 decoded or graded (measurement only; the volunteer text is unreconciled, so any reading
+  from it is conditional on the transcription, rule 2). 0 vision, 0 subagents. Requests: hdl.huntington.org 3.
+- Suggestion (not done, brief scope): the mssEC 18 decode belongs with the key in ciphers/eckert-1864; a lane may prefer
+  to log it there.
+
+## Remaining gaps (finish-or-blocker pass, GAPS206, 4 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: the 1864 ledgers (gap 3) are the cheaper route to more readable entries; for mssEC 15 itself, a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; text route validated 4 Oct 2026 (GAPS206: volunteer text recall 0.975 vs control p95 0.262; mssEC 18 in Cipher No. 1 vocabulary, 376 of 400 pages not duplicated in mssEC 19); next: decode mssEC 18's volunteer text page by page with ciphers/eckert-1864/decode.py's key, list entries whose code words are all keyed, and print-check them against OR ser. I vols. 32-46 by date, ~$3
+
+## Escalation (GAPS206, 4 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206, 24/400 pages twinned in mssEC 19)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route, text route validated (GAPS206); next: mssEC 18 decode, ~$3
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; page 4979 done (GAPS187)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); residue regenerated (GAPS197)
+- [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 3 internal gaps; cheapest next: decode mssEC 18's volunteer text with the Cipher No. 1 key and print-check the fully keyed entries against OR ser. I vols. 32-46, ~$3

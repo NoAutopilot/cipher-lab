@@ -1,0 +1,43 @@
+S	T	pages=400	median=17.50	p05=7.83	p95=27.86
+S	R	pages=381	median=18.49	p05=7.94	p95=27.56
+S	N	pages=158	median=5.11	p05=1.02	p95=12.37
+S1	gate	R_median=18.49	N_p95=12.37	PASS
+S2e	E1	ptr=8908	shared=11	ref=12
+S2e	E2	ptr=8908	shared=15	ref=15
+S2e	E3	ptr=8908	shared=12	ref=12
+S2e	E4	ptr=8941	shared=13	ref=14
+S2e	E5	ptr=8941	shared=20	ref=20
+S2e	E6	ptr=8950	shared=14	ref=14
+S2e	E7	ptr=8960	shared=23	ref=23
+S2e	E8	ptr=8960	shared=19	ref=20
+S2e	E9	ptr=8970	shared=13	ref=14
+S2e	E10	ptr=8970	shared=17	ref=17
+S2e	E11	ptr=8981	shared=12	ref=12
+S2e	E12	ptr=9035	shared=10	ref=11
+S2e	E13	ptr=9035	shared=10	ref=10
+S2e	E14	ptr=9035	shared=17	ref=18
+S2e	E15	ptr=9070	shared=12	ref=13
+S2e	E16	ptr=9070	shared=9	ref=9
+S2e	E17	ptr=9107	shared=24	ref=24
+S2e	E18	ptr=9107	shared=21	ref=22
+S2e	E19	ptr=9138	shared=28	ref=28
+S2e	E20	ptr=9138	shared=9	ref=9
+S2	known_answer	recall=0.975 (309/317)	ctrl_mean=0.200	ctrl_p95=0.262	PASS
+S3	target	T_median=17.50	N_p95=12.37	IN No.1 vocabulary	T_above=313/400	R_above=306/381
+S3s	T pages 1-25	above=19/25	median=16.11
+S3s	T pages 26-50	above=17/25	median=17.50
+S3s	T pages 51-75	above=21/25	median=21.43
+S3s	T pages 76-100	above=20/25	median=18.92
+S3s	T pages 101-125	above=24/25	median=20.00
+S3s	T pages 126-150	above=25/25	median=20.50
+S3s	T pages 151-175	above=18/25	median=18.13
+S3s	T pages 176-200	above=20/25	median=18.31
+S3s	T pages 201-225	above=23/25	median=21.08
+S3s	T pages 226-250	above=24/25	median=20.81
+S3s	T pages 251-275	above=23/25	median=17.18
+S3s	T pages 276-300	above=19/25	median=17.24
+S3s	T pages 301-325	above=10/25	median=11.11
+S3s	T pages 326-350	above=20/25	median=17.35
+S3s	T pages 351-375	above=18/25	median=15.71
+S3s	T pages 376-400	above=12/25	median=12.10
+S4	duplicate	null_p99=1	threshold=3	T_pages_with_R_twin=24/400	N_pages_over=1/158
