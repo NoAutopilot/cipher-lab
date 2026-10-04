@@ -529,3 +529,32 @@ Verdict: keep going: 5 internal gaps; cheapest next: line-read instrument with i
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Sign-sorter page c510-516 (LANE-NEAR4 N4-NXS, account 2, 4 Oct 2026, 04:17-04:5x UTC)
+Built one sign-sorter page from RUN2-NXATL's atlas (committed cluster ids) and the RUN2-NXTA/NXTB reader splits: 9,863 tiles,
+120 piles = 120 atlas clusters, 86 "Check these first" tiles, 13.9 MB with the size options this job added to
+`tools/sign_sorter.py` (92 MB at the defaults). Not committed (the folder is 24 MB): `sorter/build.sh WORKDIR` rebuilds it
+(7 Gallica requests) and `sorter/README.md` gives the build, the checks and the publish/apply commands. No decode, no reading.
+
+## Remaining gaps (N4-NXS, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters); sorter page buildable, not yet published or sorted; 0 open leaves decoded
+- Glyph naming / cluster impurity (~40% from c262 purity 0.593) too high for the stream aligner - blocker: waiting-on the account-3 orchestrator publishing `sorter/build.sh`'s page and the owner's sort (ROOM 4 Oct 2026, N4-NXS done line); next: `tools/sign_sorter_apply.py --clusters run2/nxatl/clusters.tsv --atlas-labels run2/nxatl/labels_clusterid.json`, then re-run `nxaln.py target` unchanged on the settled labels, ~$1
+- c510-516 alignment by line reads (instrument 2: train c510, held-out c516 + c515 L01-L20) not run - blocker: not-attempted; RUN2-NXALN ran the atlas first by the brief's rule; next: same pipeline with a 40%-noise 41-symbol and design control first, ~$2
+- c511 not transcribed by readers (segmented only, run2/nxatl) - blocker: not-attempted; next: two passes against settled sorter labels once they exist, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; not in this brief; next: one native look per pair at the clear lead-in words, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not in this brief; next: grep Charrière III and the Lepanto relations for its clear opening, ~$1
+
+## Escalation (N4-NXS, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed (RUN2-NXDUP) and aligned whole to c510-516 (RUN2-NXALN, non-test at the atlas's noise)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); c510-516 native line bands with --follow-slope, overlays checked (RUN2-NXATL)
+- [ ] retry: the same pre-registered alignment on settled sorter labels (impurity <= ~25%), or on the line reads with their own control; planned step: re-run `run2/nxaln/nxaln.py` after the sorter pass (page: `sorter/build.sh`)
+Verdict: keep going: 4 internal gaps (1 waiting on the sort); cheapest next: line-read instrument with its control, ~$2, or text-check the date-only Dupuy matches, ~$1
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (N4-NXS):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+```
