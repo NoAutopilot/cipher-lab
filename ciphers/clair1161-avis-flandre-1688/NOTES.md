@@ -1874,7 +1874,7 @@ one hypothesis, joint G against the shuffled-key joint G null) is the honest nex
 Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
 Subagent calls: 0.
 
-## C1161-JOINT9 (account-3 worker, 4 Oct 2026, 17:55-18:1x UTC by date -u)
+## C1161-JOINT9 (account-3 worker, 4 Oct 2026, 17:55-17:59 UTC by date -u)
 Brief `.claude/briefs/runs/2026-10-04-acct3-c1161-joint9.md`. Pre-registration `tx/PREREG_joint9.md` and script `two/joint9.py`
 pushed before any score (06c01d13). Disk only, no subagents, no network. Output `two/joint9.tsv`.
 
