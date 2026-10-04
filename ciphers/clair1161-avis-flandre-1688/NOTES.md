@@ -1769,3 +1769,25 @@ sign whose value flips when one leaf is dropped is leaf-driven), so it runs **as
 cover: the two components diagnosed as the failure are removed, not re-tuned), pre-registered in
 `tx/PREREG_reanneal_lolo.md`, planted control first. A fewer-free-signs design is not the right instrument: D4 says the
 free count is not the limit, and holding more M values at key.tsv would hold values D3 says the objective does not keep.
+
+## C1161-LOLO step 2: stage-1-only held 4-gram anneal under leave-one-leaf-out streams (4 Oct 2026, 15:36-16:0x UTC by date -u)
+Pre-registration `tx/PREREG_reanneal_lolo.md` (97351e1b, pushed before any run). Instrument: `two/reanneal.py`'s stage 1
+alone (fr17 4-gram, norm none, 32 restarts, 40000 iters, seed 1), no word-cover stage, no nc2; the 6 C + 14 agreed S signs
+held (the earlier PREREG's prose says 13 S, its list has 14; the list is what the code holds), the 29 M/4/S signs free;
+six streams, each the full stream minus one leaf/block (N 2623-3155); consensus = the same letter in >= 5 of 6 streams;
+dL4 over the full stream against a 50-context shuffled-value null; outputs `two/lolo/lolo_*`, `key_lolo_*`. A one-token
+sign that lives only on the dropped leaf has no entry in that stream's key: it keeps its key.tsv value for full-stream
+scoring and casts no vote (the first launch crashed on this at 15:38, fixed before any scoring; two saved keys reused).
+
+**Planted control a/p/d (freed with the 29, started at e): 3/3 recovered -> GATE PASS** (`two/lolo/lolo_ctl_gate.txt`).
+
+| planted | true | consensus | leaves | dL4 (true vs e over K*) | null p95 |
+|---|---|---|---|---|---|
+| a | u | u | 6/6 | 0.1318 | 0.0744 |
+| p | c | c | 6/6 | 0.0711 | 0.0332 |
+| d | n | n | 6/6 | 0.0775 | 0.0426 |
+
+Headroom (rule 3, as pre-registered): this is a licence gate, and its blind baseline for this instrument was already 3/3 on
+the full stream (step 1, D5); the pass says the held 4-gram anneal recovers known C values in this context with 50% of
+tokens free, which the same-design synthetic (D4, 32/32) predicted. It does not say the free signs' values are right.
+Control-arm free signs (`two/lolo/lolo_ctl_signs.tsv`, 32 free): 22-24 of them differ from key.tsv in every stream.
