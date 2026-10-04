@@ -1112,3 +1112,27 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: cryptanalytic key-rebuild of codes 1-800 against the R4369-decoded context with its own held-out control, ~$10
+
+## Remaining gaps (LANE-NEAR5 refresh, 4 Oct 2026)
+Status unchanged: `partial`. R4372 (f.48) as a source for codes 1-800 stands as a control-backed negative (N4-HEL6 Part B: S_B -0.794
+vs permuted-R4372 p 0.310 and size-matched R4370 p 0.460-0.555, power 1.00 at J=186); R4370 (f.46) likewise (READ2-HEL2, NEAR3-HEL4).
+Both period tables are retired as instruments for codes 1-800 (rule 3 third-attempt clause: READ2-HEL2, NEAR3-HEL4 LR100, N4-HEL6 context
+check, same family of test on the same tables); no further family run against either. New material that would reopen the period-key route:
+a Hellen table carrying codes 1-800 of the R4369 series (the post-1756 Add MS 32276 records R4381-R4408 not yet opened, a Hellen key or
+decipherment in the NA Fagel series beyond inv. 5177, or a recipient-side Prussian copy of the 1751-52 table), or an R1953-series letter
+with its own clerk decipherment.
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; the period-table route is retired (R4370, R4372, above); the one untried instrument is cryptanalytic, a key-rebuild of 1-800 with its own control; next: context-fit anneal against the R4369-decoded neighbours with N4-HEL6's Part B statistic as objective and its held-out R4369 control as gate, Fagel 5177 clear pages as matched corpus, ~$10
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500, no holder) not yet tested; next: transcribe R4376 P3 and test on R1049 with a pre-registered gate and matched control (R4372 not used: retired above), ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370 nor R4372 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (LANE-NEAR5 refresh, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); no ciphertext of those letters survives, so they are context only, not a crib for R1953 itself
+- [x] known-keys: R4369 transcribed and tested, reads R1953; R4370 and R4372 retired for codes 1-800 after three tests of the same family (READ2-HEL2, NEAR3-HEL4, N4-HEL6)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, a different instrument from the retired tables, needs its own control); N4-HEL6's Part B statistic with its held-out R4369 positive control is a ready objective and gate
+- [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: cryptanalytic key-rebuild of codes 1-800 against the R4369-decoded context with its own held-out control, ~$10
