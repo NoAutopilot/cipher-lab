@@ -3381,7 +3381,7 @@ Counts 19 / 2 / 1 / 6, unchanged.
 
 ### Orchestrator note (28 Sept 2026, 12:15 Pacific [19:15 UTC]): a new counted reading, Birago to Nevers 1570; Gallica refusing images
 
-Counts 19 / 2 / 1 / 6: recovered-passage documents up from 18, the first new count since 26 Sept. VERIFY-CEPPO-2 (adversarial, 4.78) held the Birago-Nevers reading in part: BnF fr.3251 f.11r, Lodovico Birago to the Duke of Nevers, Saluzzo, 14 Sept 1570, read in word fragments with Tomokiyo's printed Ceppo-Nevers key; N3 upheld after a wider search in Italian, French and the BnF catalogues; 0 of 2,000 chance decodes give two words; endorsed: presidente, mandato; curare, estitucio(ne); chuni, ochi, Sauoia; the two I-graded signs are not endorsed. status.json and NEAR.md set; TOMO-BIRAGO drafts the note to Tomokiyo (his key). HARVEST-C (3.13) found the volume's other Birago letters clean at intake, but Gallica answered 403 "not authorized" on the images from 18:3x UTC (info.json 503 "maintenance"); the f.61 runner hit the same on fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre. Dechiffrement de cette lettre", a new key-hunt lead). Retry after 00:00 UTC. **Blocker line, f.61:** unchanged: the 59 two-way choices and 28 unread; new route fr.2751 f.116 when Gallica serves again.
+Counts 19 / 2 / 1 / 6: recovered-passage documents up from 18, the first new count since 26 Sept. VERIFY-CEPPO-2 (adversarial, 4.78) held the Birago-Nevers reading in part: BnF fr.3251 f.11r, Lodovico Birago to the Duke of Nevers, Saluzzo, 14 Sept 1570, read in word fragments with Tomokiyo's printed Ceppo-Nevers key; N3 upheld after a wider search in Italian, French and the BnF catalogues; 0 of 2,000 chance decodes give two words; endorsed: presidente, mandato; curare, estitucio(ne); chuni, ochi, Sauoia; the two I-graded signs are not endorsed. [DEPTH-REGRADE, 4 Oct 2026: f.11r is D1, class without a reading; not counted.] status.json and NEAR.md set; TOMO-BIRAGO drafts the note to Tomokiyo (his key). HARVEST-C (3.13) found the volume's other Birago letters clean at intake, but Gallica answered 403 "not authorized" on the images from 18:3x UTC (info.json 503 "maintenance"); the f.61 runner hit the same on fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre. Dechiffrement de cette lettre", a new key-hunt lead). Retry after 00:00 UTC. **Blocker line, f.61:** unchanged: the 59 two-way choices and 28 unread; new route fr.2751 f.116 when Gallica serves again.
 
 ### Orchestrator note (28 Sept 2026, 11:18 Pacific [18:18 UTC]): Birago-Nevers holds its first audit; Armstrong requests cleared; f.61 steady
 
@@ -3925,7 +3925,7 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/
 
 Closed 04:1x UTC. 16 workers 41.70 (all D) + orchestrator 10.72 = 52.42 of 60. No check-in armed.
 
-**Counts (two audits at N3+, rule-7 passed):** hellen-frederick-1752 R1953 (N3 x2, key period, H 152 S 304 of 846; N4 gate = GStA PK I. HA Rep. 96 Nr. 38 G-H, not digitised -> archive request) and birago-fr3252-1571-72 f.117r no.77 (N3 -> N4, key published Tomokiyo 1572, S 190/279, French passages on Carmagnola; rule-7 SAME).
+**Counts (two audits at N3+, rule-7 passed):** hellen-frederick-1752 R1953 (N3 x2, key period, H 152 S 304 of 846; N4 gate = GStA PK I. HA Rep. 96 Nr. 38 G-H, not digitised -> archive request) and birago-fr3252-1571-72 f.117r no.77 (N3 -> N4, key published Tomokiyo 1572, S 190/279, French passages on Carmagnola; rule-7 SAME). [DEPTH-REGRADE, 4 Oct 2026: both D1 -- class without a reading, fragments read; not counted as unique solves under rule 4a.]
 **Audited, not counted:** N0 confirmed by second audits -- nevers-birago no.87/f.152r/f.162, royalist 1646 f.10, Clinton 2894, Morillo 5186; first audits N0 -- NV-01 Gonzague, fr3252 f.36, Paget 1714; janssens leaf 188 N1 (Collet 1910 prints part); f.47r N3 / f.144r N4 / f.168 N4 are search classes without a reading (claim-scope ruling, AUDIT 3 / AUDIT 13).
 **Open items for the parent / next lane:** (1) status.json result entries for hellen R1953 and f.117r; (2) f.144v carries an untranscribed ~24-sign no.73 cipher run (unit, ~2); (3) Morillo: 4 key signs print-aligned = `ours` (AUDIT 2, not applied to status.json); (4) Clinton earliest print Brymner 1888, credit in status.json/CONTRIBUTIONS if cited; (5) no.87: [turino] where clerk sheet has catholici, [quello] where ggio -- found, not applied; (6) Paget metadata: writer Pierre Paget, French acting consul at Genoa/Cagliari, not Lord Paget (NOTES/PROGRESS name); (7) f.117r spec ciphertext pointer stale (277 vs 279 rows); (8) Paget gibbs_codes vs key.tsv disagree on 8 codes (u/v), next key pass; (9) owner decision pending: reading-depth scale D0-D4 beside the N-class (unique solve = N3+ and D2+), proposed in chat 4 Oct; (10) research/TRANSCRIPTION-PRACTICE-2026-10-04.md top-5 transcription additions, not yet in TRANSCRIPTION.md build plan.
 
@@ -3960,3 +3960,15 @@ grade; both near rows stay `partial`.
   committed src_* files once (reverted); (2) iiif_lines level bands lose sloped lines' right halves (c188L) -- a slope option on the shared
   tool would help (Usage 8); (3) parallel jobs on one target wrote to reports/<JOB>.md, not NOTES.md, and the lane folded them: no
   rebase conflicts.
+
+## DEPTH-REGRADE (account 3 verifier, 4 Oct 2026)
+
+Rule 4a re-grade of every counted status.json result (23 legacy + hellen R1953 + birago fr.3252 f.117r = 25), session
+session_015eezFKYThEoRKoeamyhxSD. Unique solves (N3+ and D2+): 23 legacy before (ungraded), **16 after**: D4 1 (Eckert E4/E5), D3 2
+(WVO 57, WVO 126), D2 13. Below D2 -- class without a reading, not counted (D1, "fragments read"): ceppo-nevers fr.3251 f.11r, f.21v,
+f.87; nevers-birago fr.3251 f.139v (no.71); birago-fr3252 f.117r; fr3621-dinteville f.130r; fr3416-nevers-fils f.35r;
+sachsstaatsarchiv-manteuffel f.410; hellen-frederick R1953. The last two entries had non-standard claim_scope values; set to
+recovered-passages per the brief (old value kept in `claim_scope_was`). Per-item %, check and sentence: each folder's AUDIT.md
+"## Depth (DEPTH-REGRADE, 4 Oct 2026)" and status.json `depth*` fields. D3 was withheld wherever unread stretches are ordinary
+text rather than names/codes (Gramont f.29r 94%, Thurloe P4 95%, Linhares 88%, Gramont f.30 85%, no.86 83%) and for Mercy (92%:
+no external check and no authentication distance on file).

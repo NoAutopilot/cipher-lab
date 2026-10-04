@@ -967,3 +967,8 @@ vol. 3 pp.274-276 prints both (BHO re-read 28 Sept 2026). Class **N0** unchanged
 13 March "W. S." letter, Birch's margin Vol. xxiv pp.73/76): the curator found no 13 March Stamford letter; the
 reply does not bear on P4's N4, whose "not excluded: a contemporary decipherment in MS Rawl. A. 24" caveat stands
 until old pp.73-76 of A. 24/1 are seen. See NOTES.md s.26.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **Bodleian MS Rawl. A. 24 (Stamford to Thurloe's office, Calais, 13 Mar 1655; printed with i**: **D2** (Partially decrypted; outward "partially deciphered (about 95%)"), 94.8% (H 64 + C 338 of 424; D3 withheld: partly incoherent lines on p.188). Check: period key from Birch's printed decipherments of Stamford's 20 and 30 March 1655 letters, agreeing with Tomokiyo's table. Sentence: "Stamford writes in cipher that the matter came to his knowledge 'by meere chance' and 'without the least injunction of secrecy'."

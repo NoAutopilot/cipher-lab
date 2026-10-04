@@ -1108,3 +1108,10 @@ waist (R-8 -> S80 a, as blind reconciler D read); key control still rank 1/201, 
 SO-CEPPO-F87 prompt unaffected (letters identical). Details: NOTES.md "A1B-CEPPO-87".
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF fr.3251 f.11r (Gallica btv1b9060248g canvas 12), no.6, Birago to Nevers, Saluzzo, 14 S**: **D1** (Non-decrypted; outward "fragments read"), 39.3% (S 53 of 135). Check: published key rank 1 of 201 (statistical only); word fragments, no clause. Class without a reading: not counted as a unique solve.
+- **BnF fr.3251 f.21v (no.11), Birago to Nevers, 12 Oct 1570**: **D1** (Non-decrypted; outward "fragments read"), 58.1% (S 155 of 267). Check: published key rank 1 of 201; endorsed passages are phrases ('ceder uiuendo et seruend[o]'), no clause above AD on file. Class without a reading: not counted as a unique solve.
+- **BnF fr.3251 f.87 (no.45), Birago to Nevers, 9 May 1571**: **D1** (Non-decrypted; outward "fragments read"), 58.5% (S 120 of 205). Check: published key rank 1 of 201; two short endorsed passages with M letters. Class without a reading: not counted as a unique solve.

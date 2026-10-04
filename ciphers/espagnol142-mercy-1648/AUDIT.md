@@ -478,3 +478,8 @@ as is; its prompt file `second-opinions/PROMPT-chatgpt.md`, which does quote the
 block and the current reading.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF Espagnol 144 f.22r-v (Gallica btv1b10035717h, canvases 58-59), instruction to Mercy, B**: **D2** (Partially decrypted; outward "partially deciphered (about 92%)"), 92.2% (S 488 of 529 in the current reading.txt (audited S 496 of 522)). Check: matched control (anneal beats it by 167-181 points) and shuffled-stream controls; rule-7 byte-identical; no external check and no AD computed on file, so D3 withheld. Sentence: "The instruction tells Mercy to go and see the Elector of Brandenburg and his High Chamberlain, for whom letters of credence are being sent to him."

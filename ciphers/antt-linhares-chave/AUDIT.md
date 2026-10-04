@@ -469,3 +469,8 @@ Propagation trail, 3 Oct 2026 (A1B-LIN-REDERIV): the rule 7 fresh re-derivation 
 ran from the spec and the key alone and matches reading.txt and reading_tokens.tsv on all 26 tokens (0 differences);
 decode_key.py --check exit 0; judge PASS -1.024 vs real_p05 -1.122. Verdict PASS. No N-class change. Details: NOTES.md
 "Rule 7 re-derivation (A1B-LIN-REDERIV, 3 Oct 2026)".
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **ANTT PT/TT/CLNH/0086/11 m0002 (Linhares letter fragment)**: **D2** (Partially decrypted; outward "partially deciphered (about 88%)"), 88.5% (H 23 of 26 (reading.txt header, 3 Oct revision); D3 withheld: the residue is ordinary words, not names/codes, and line 3 does not read). Check: period key sheet's worked example matched to Vieyra 1809 (H); pt18 judge PASS with control; fresh re-derivation 24/26. Sentence: "The surviving page of the Linhares letter says that something is to be kept secret even from the ministry ('he segredo ate para o ministerio')."

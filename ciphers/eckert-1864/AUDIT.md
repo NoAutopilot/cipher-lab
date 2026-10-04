@@ -1069,3 +1069,8 @@ Open-index pass: present (24 Sept owner's run; 25 Sept cloud re-run, 3 of 4 answ
 
 **Verdict: gate 2 closed** for E4 and E5 (as V5 found; nothing new landed for this target in PR 21). Classes unchanged: **E4 N4,
 E5 N4**. Reply: the Huntington note of 24 Sept 2026 (outreach/huntington-eckert-blathwayt.md) has no reply on file; nothing moves.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **Huntington mssEC 19 p.49, E4 (Fox to Butler, 21 Apr 1864)**: **D4** (Decrypted; outward "deciphered"), 100.0% (code words E4 H 11, E5 H 20; plain words are clear, ungraded). Check: period cipher book mssEC 41 (H) for every code word; second ledger copy mssEC 25 pp.77/79; blind second reader (96% token agreement) and decode.py --check. Sentence: "Fox asks Butler to block the channel at Roanoke Island against the ram, and Meigs tells Butler that 4,000 men rather than three regiments are here for Fort Monroe, with 1,000 cavalry horses at the depot."

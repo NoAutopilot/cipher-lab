@@ -609,3 +609,8 @@ Blathwayt to 1717; Goulding and Nelson; McCully 1962; Altbauer 1980; Murray 1974
 
 **Verdict: gate 2 closed** for BLA 186 and BLA 191(a) (and 184). Classes unchanged (**N4**; see "N4 set"). Reply: the Huntington
 note of 24 Sept 2026 has no reply on file; nothing moves.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **Huntington mssBLA 186 (Madrid, 13 Sept 1728, two cipher lines)**: **D2** (Partially decrypted; outward "partially deciphered (about 75%)"), 75.0% (C 129 of 172 across BLA 184, 186, 191(a)). Check: key of 395 groups from the run's contemporary decipherments (C), leave-one-item-out 0.68-0.91. Sentence: "In BLA 191(a) the writer complains that Mr Keene ('monsieur ken ne') likes him but has no orders concerning him, and asks to be sent some order."

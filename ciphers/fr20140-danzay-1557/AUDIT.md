@@ -1299,3 +1299,8 @@ the key and knows the Danzay literature (he already cites Ryabov), so a plain st
 rule 10 means. The owner looks for it in the thread and pastes it here verbatim.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF fr.20140 f.35r-36r, Danzay to the Cardinal of Lorraine, 27 Jan 1557**: **D2** (Partially decrypted; outward "partially deciphered (about 77%)"), 77.4% (H 509 of 638 (f.35) + 37 of 67 (f.36r) = 546 of 705). Check: published key (Tomokiyo 2026) applied, H grade. Sentence: "Danzay's cipher speaks of the King of Denmark and of a promise that they would willingly employ themselves ('a promis qu'ils s'en ploieroient'), and it names the chancellor."

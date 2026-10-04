@@ -179,3 +179,8 @@ for the f.409v codes above Krauske's table.
 Requests: archive.org 2, www.googleapis.com 4, books.google.com 23 (search-inside JSON, 1.6-1.7 s apart, a few empty
 responses, no challenge page), openlibrary.org 1, catalog.hathitrust.org 5, data.htrc.illinois.edu 3, api.openalex.org 1,
 api.core.ac.uk 3, brill.com 1 (202), boris.unibe.ch 1 (Anubis), library.oapen.org 1 (refused).
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 f.410 lower block (frame 0511), P.S. o**: **D1** (Non-decrypted; outward "fragments read"), 66.7% (C 144 of 216). Check: Krauske 1893 table (17/17 with period glosses on f.468); f.410 decode gives fragments ('les Schvedois la paix', 'ne donne contentement'); fr18 judge FAIL. Class without a reading: not counted as a unique solve.

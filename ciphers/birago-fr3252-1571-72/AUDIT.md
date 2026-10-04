@@ -206,3 +206,8 @@ decipherment located"; any quotation of f.117r presented as a continuous sentenc
 - Over-claim check: NOTES.md, PROGRESS.tsv rows f.117/f.47 and NEAR.md row 30 grepped for new/first/unread/unpublished/solved/cracked:
   none about the text. PROGRESS audit-2 cells set to x for f.117 and f.47 from this section, with the claim scope in the note.
 - SECOND-OPINIONS-QUEUE: row SO-BIR3252-117-47 already covers both items (AUDIT 2); no new row.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF fr.3252 f.117r (no.77): Lodovico Birago to the duc de Nevers, 13 March 1572**: **D1** (Non-decrypted; outward "fragments read"), 68.1% (S 190 of 279). Check: published key; S-only stretches at most about a word ('tention', 'facile', 'auoriser ces'), no clause above AD; judge FAIL. Class without a reading: not counted as a unique solve.

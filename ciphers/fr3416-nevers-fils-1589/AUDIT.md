@@ -328,3 +328,8 @@ nomenclator row H). Token grades on f.35r are now H 75 / M 27 of 102; the safe s
 No decoded letter and no score changed (the code word is not a letter token). SO-NV02-F35's prompt carries the change. Class N4 unchanged.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF fr.3416 f.35r, the duc de Nevers to his son (Charles, duc de Rethelois), c. late 1589**: **D1** (Non-decrypted; outward "fragments read"), 73.5% (H 75 of 102 figure tokens). Check: period key sheet fr.3995 f.51r (H) but the figure runs read as isolated syllables/words ('s.es.auoir'), no stretch above AD. Class without a reading: not counted as a unique solve.

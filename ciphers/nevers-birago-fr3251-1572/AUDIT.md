@@ -1252,3 +1252,10 @@ search and the live Tomokiyo check here; internal/unpublished work (Bourdeau's "
 - Over-claim check: PROGRESS.tsv rows "Birago 1572 f.144" / "f.168" and NEAR.md row 42 grepped: no over-claim. PROGRESS audit-2 cells
   set to x from this section, with "not counted" in the note so that the C column is not set from the N4 alone.
 - SECOND-OPINIONS-QUEUE: SO-NEVBIR-144-168 exists (AUDIT 12); no new row.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **BnF fr.3251 f.139v (no.71), Birago to Nevers, 7 Feb 1572**: **D1** (Non-decrypted; outward "fragments read"), 72.0% (S 116 of 161). Check: published key rank 1 of 201 (z 3.6, power 10/20); gloss gives phrases only ('d'andarsi a consultare et cercar'); judge FAIL. Class without a reading: not counted as a unique solve.
+- **BnF fr.3251 ff.174r-175v (no.86), Birago to Nevers, 27 Aug 1572**: **D2** (Partially decrypted; outward "partially deciphered (about 83%)"), 82.9% (S 629 of 759; D3 withheld: most lines do not read through). Check: published 1572 key (Tomokiyo), calibrated against the period decipherment of no.87 (84% letter agreement); rank 1 of 201 at five seeds; judge FAIL. Sentence: "Birago names the Huguenots, Carmagnola and the Baron des Adrets, and fears that by doing service he may earn the ill favour of others."
+- **BnF fr.3251 ff.184r-185v (no.90), Birago to Nevers, 2 Oct 1572**: **D2** (Partially decrypted; outward "partially deciphered (about 76%)"), 75.6% (S 730 of 966). Check: published 1572 key (Tomokiyo), calibrated against the period decipherment of no.87 (84%); rank 1 of 201 at five seeds; judge FAIL. Sentence: "Birago writes of a negotiation with a count, of articles sent, of a stronghold held in favour of the Huguenots, and that confusions and difficulties will always follow, to the prejudice of the service."

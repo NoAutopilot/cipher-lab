@@ -1323,3 +1323,9 @@ sign is M (173 or 113)." Novelty is not in scope; p5_spot5 is **not classed** he
    this value.
 
 Requests: none (crops on disk). Subagents: none.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **KHA A 3, 895/I (WVO 5797), Nassau brothers to Orange, 22 Oct 1573**: **D2** (Partially decrypted; outward "partially deciphered (about 11%)"), 11.1% (6 of 54 non-null cipher tokens of 5797 H/C/S (axmerge3/v2/reading_5797_full_tokens.tsv); the claim is two names in a printed letter). Check: code values 161 and 153 H from the period 5550 interlinear gloss, each reading in two contexts (5550 and 5797); rule-7 re-derivations byte-identical (AUDIT V8/A2). Sentence: "In the blanks Groen left in WVO 5797 the brothers name the Landgrave beside the Duke of Saxony (p.5, code 161) and the Elector Palatine as the one who 'helt sich wol und thut in warheit viel' (p.7, code 153)."
+- **WVO 4610 (Lodewijk van Nassau to Orange, 1573-74)**: **D2** (Partially decrypted; outward "partially deciphered (about 63%)"), 62.6% (C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%)). Check: key aligned from the period decipherments of WVO 4613 and 4615 (C); key_full v3 0 regressions on those controls. Sentence: "WVO 4610 opens 'il fault que on pardonne' in connection with a dispatch sent by messenger 'ce lundy', and later speaks of 'la rechute'."

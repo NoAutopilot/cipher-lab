@@ -379,3 +379,8 @@ it (the reading did not change, so no propagation is owed under rule 10's revisi
   R1953 (if it did not change); paired with any surviving cipher originals of Sept-Dec 1752 (KHA A31-1148; DECODE inv. 196
   records), they are known plaintext for codes 1-800. Worth a check of DECODE's listing for KHA inv. 196 records dated Sept-Dec
   1752 (on disk in `sources/decode/`), ~$1.
+
+## Depth (DEPTH-REGRADE, 4 Oct 2026)
+
+Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
+- **DECODE R1953 (KHA Prins Willem V inv. 196, now A31-1148): W. B. von der Hellen to Frederic**: **D1** (Non-decrypted; outward "fragments read"), 53.9% (H 152 + S 304 of 846). Check: period key sheet R4369 (152 H) + control-backed attribution (304 S); AUDIT 1: 'No continuous sentence of the letter can be given'. Class without a reading: not counted as a unique solve.
