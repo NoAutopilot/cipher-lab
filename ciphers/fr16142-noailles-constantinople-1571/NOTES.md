@@ -329,3 +329,44 @@ Verdict: keep going: 4 internal gaps; cheapest next: text-check the date-only Du
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Dupuy 521 221R-226R clear text transcribed (LANE-RUN2 RUN2-NXDUP, account 1, 4 Oct 2026, from 02:47 UTC)
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md` RUN2-NXDUP. Full report: `run2/nxdup/REPORT.md`. No decode, no alignment.
+Intake gate (02:47 UTC): `partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+The clear copy of the 7 July 1574 letter to the King (c510-516) is now on disk: Dupuy 521 221R.03 ("Sire.") to 226R.23 ("des Vignes
+de Pera les Constantinople ce vj Juillet 1574"), 11 pages, 277 line crops (`iiif_lines --follow-slope`), two blind Sonnet passes
+per page (22 calls) reconciled by this worker against the page images: `run2/nxdup/dupuy221_226_diplomatic.txt` and
+`dupuy221_226_norm.txt` (2,088 words, 9,425 letters; rule-3 normalisation, u/v and i/j as written), regenerated and `--check`ed by
+`run2/nxdup/build_texts.py`. err_2reader 0.218 raw / 0.129 loose (per page 0.096-0.197 loose); each pass vs the reconciled text
+0.184 / 0.202 -- the passes share errors, so the two-reader figure understates reader error; err_true not measured (no benchmark
+for this hand). 21 tokens left [?].
+For the wave-2 alignment (RUN2-NXALN): the copy ends "... vous succedent mal &c." straight into the date -- a copyist's
+truncation mark, so the cipher original may run past the copy's end (**possible omission at the tail**); a dittography at
+223L.14-15 is marked `{DITTO}` and dropped from the normalised text; the c516 clear lead-in is 226R.03-.06, so c516's cipher
+corresponds to 226R.07-.21 and c510-515 to 221R.03-226R.02; 225L.09-.13 is the passage Charrière III pp.551-552 prints.
+Requests: gallica.bnf.fr 7. Subagent calls 22 (Sonnet).
+
+## Remaining gaps (RUN2-NXDUP, 4 Oct 2026)
+Read so far: 351 of 353 canvases surveyed at 400 px, 31 open/unclear C/P pages re-read at 1500 px; Dupuy 521 indexed whole (259 openings); 21 of 24 in-range cipher letters matched to a Dupuy copy (2 by text); Dupuy 221R-226R clear text transcribed (2 passes + reconciliation, 9,425 letters); c262 transcribed 4 times, gate failed twice; 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (readers split 31% on the same crops) - blocker: not-attempted; in progress in LANE-RUN2 wave 1 (RUN2-NXATL atlas, RUN2-NXTA/NXTB blind passes); next: sorter labels then the wave-2 gate, ~$6
+- c510-516 known-plaintext pair with Dupuy 521 221R-226R not yet aligned - blocker: not-attempted; the clear side is now done (RUN2-NXDUP); next: RUN2-NXALN pre-registered held-out alignment gate (interlinear_align + gibbs_align) once the c510/c511/c515/c516 passes land, ~$8
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; outside this brief; next: one native look per pair at the clear lead-in words on the fr.16142 leaf vs the Dupuy opening, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not named in this brief; next: grep Charrière III and the Lepanto relations in print for its clear opening "Le gain de ceste grande bataille advenue en saison incommode", ~$1
+
+## Escalation (RUN2-NXDUP, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); c245-246/c464 a further same-text pair (RUN1-NX)
+- [x] clear-pages: Dupuy 521 indexed and aligned by date (RUN1-NX); Dupuy 221R-226R transcribed in full, two passes + reconciliation (RUN2-NXDUP)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read for the June-July 1574 excerpts
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut with --follow-slope (NX-RECUT); 31 open/unclear pages re-read at 1500 px (RUN1-NX)
+- [ ] retry: known-answer alignment of c510-516 against the Dupuy clear text with settled glyph labels; planned step: RUN2-NXALN (wave 2)
+Verdict: keep going: 4 internal gaps; cheapest next: text-check the date-only Dupuy matches, ~$1; the c510-516 alignment (RUN2-NXALN) waits on the wave-1 cipher passes
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXDUP):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

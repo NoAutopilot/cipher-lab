@@ -1,0 +1,290 @@
+# Dupuy 521 (Gallica btv1b100339270) canvases 221R-226R: Acqs (Noailles) to the King, Pera, vj Juillet 1574.
+# Reconciled diplomatic text, RUN2-NXDUP (4 Oct 2026). Format: see build_texts.py docstring.
+== 221R
+221R.01	HEAD: Au Roy
+221R.02	Sire.
+221R.03	— Le dernier du passé j'ay receu la depesche
+221R.04	qu'il a pleu a Vostre Ma^te me faire,
+221R.05	du xvij avril, j'avois pensé quelques jours
+221R.06	auparavant la reception d'icelle que les
+221R.07	Espagnolz pour ce coup fussent du tout deschirez[?]
+== 222L
+222L.01	de l'Espagne qui sert a entretenir depuis
+222L.02	la liberation du filz de feu Aly Bassa que
+222L.03	Don Joan a renvoyé pardeça gratuitement et
+222L.04	que le retour en Chrestienté de ceux qui sont
+222L.05	conduict les deux[?] resoudre[?] du peu de proffit
+222L.06	qui leur reviendra de ceste liberation mais j'ay
+222L.07	descouvert qu'ilz ne seront (quoy qu'ilz poursui:
+222L.08	vent) secretz[?] encore non tant pour attendre
+222L.09	— le succez et exploict de l'armee[?] que de ia
+222L.10	dehors que pour se vouloir ceux cy esclarcir des
+222L.11	volontez de tous leurs voysins du costé de
+222L.12	— terre ferme avant declarer entierement le
+222L.13	— Roy d'Espagne de leur amitié affin de n'avoir
+222L.14	— tant d'ennemis a combattre tout a la foiz
+222L.15	& par mesme moyen veoir cependant quelle
+222L.16	— fin prendront les troubles de Vostre Royau:
+222L.17	me desquelz les Turcs ont conceu tres
+222L.18	mauvaise opinion pour le contrepoix qu'ilz
+222L.19	s'attendoient de vostre part dont je ne puis
+222L.20	donner meilleure preuve a Vostre Ma^te,
+222L.21	que ce que je luy ay escript cydevant sur[?]
+222L.22	ce premier Bassa ravale tous les jours quel:
+222L.23	que chose du respect qu'il me souloit porter
+222L.24	et qu'il m'a bien faict experimenter au different
+222L.25	intervenu entre le Bayle de la Seigneurie,
+222L.26	de Venyse & moy sur lequel il[?] a donné,
+222L.27	une tres inique sentence a la poursuitte,
+222L.28	CATCH: Dudict
+== 222R
+222R.01	dudict Bayle qui estoit tres mal fondé mais
+222R.02	j'espere que la Seigneurie pourvoira avec
+222R.03	plus de prudence que ledict Bayle ne la
+222R.04	sollicite ny ledict Bassa accorde: Je ne sca:
+222R.05	urois icy jusques aujourd'huy que c'est le
+222R.06	— fonds des intentions de l'Empereur, lequel
+222R.07	ores qu'il aye eu[?] des le mois de Janvier,
+222R.08	la continuation de la treufve avec ce prince
+222R.09	pour attendre[?] et conclurre neantmoings les
+222R.10	presens annuelz accoustumez d'estre envoyez
+222R.11	a ceste porte ne comparoissent point et n'a
+222R.12	on encores nouvelles certaines qu'ilz soient
+222R.13	dans le pays a quoy on ne souloit tant
+222R.14	— tarder aux annees precedentes et comme
+222R.15	je puis asseurer Vostre Ma^te sont fort
+222R.16	suspens en la resolution qui s'y doibt prendre
+222R.17	— les ministres dudict Seigneur Empereur,
+222R.18	ne sont en moindre peine pour s'y veoir
+222R.19	engagez par la certitude qu'ilz ont donné
+222R.20	a leur maistre de ladicte continuation ainsy
+222R.21	que Vostre Ma^te scaura trop mieux
+222R.22	juger par la coppie des lettres cy incluses
+222R.23	qu'en conjouissant de cela l'Empereur en
+222R.24	escrivit au Grand Seigneur des le mois de
+222R.25	Janvier le sieur Bekes qui apres avoir
+222R.26	esté destitué de son estat de Vayvoda de
+222R.27	— Transilvanie s'est retiré a Vienne ne cesse
+== 223L
+223L.01	d'escrire aussy souvent qu'il peut & faire
+223L.02	— tous offices contraires a celuy qui est en
+223L.03	sa place & par mesme moyen se plaindre
+223L.04	soubz main de l'Empereur affin de mesler
+223L.05	d'advantage les cartes de ces deux costez
+223L.06	la ou les affaires dernieres de Moldavie
+223L.07	— les ont fort embrouillees et semblent traine[r]
+223L.08	apres eux l'embarquement de la Polongne
+223L.09	ainsy que je l'ay escript au Roy vostre
+223L.10	— frere j'ay adverty les gens dudict Seigneur
+223L.11	Transilvain qui demeurent a Constantinople
+223L.12	de tout ce qui regarde le service de leur
+223L.13	Maistre & leur ay donné coppie de tout ce
+223L.14	qu'on escript contre luy en quoy j'ay esté bien
+223L.15	{DITTO: en quoy j'ay esté bien} apropos et assez a
+223L.16	temps scavoir[?] qu'ilz y pourvoyent le
+223L.17	plus dextrement & promptement qu'ilz pour:
+223L.18	ront n'osant en ouvrir la bouche au Bassa
+223L.19	de peur qu'il ne le souspeçonne pour qu'il
+223L.20	ne faict (ores qu'il le soit beaucoup)
+223L.21	— trop d'intelligence avec Vostre Ma^te et celle
+223L.22	dudict Roy de Polongne estant ledict Bassa
+223L.23	en telle deffiance & passion de cest endroit
+223L.24	que comme j'envoyois samedy dernier vers
+223L.25	— luy vostre dragoman affin d'obtenir comman:
+223L.26	demens pour aucuns gentilzhommes
+223L.27	— françois qui s'en vouloient retourner par
+223L.28	CATCH: ladicte
+== 223R
+223R.01	— ladicte Polongne avec saufconduit dont j'ay
+223R.02	parlé en mes precedentes ledict Bassa
+223R.03	— luy demanda fort instamment (comme il
+223R.04	avoit ja faict par deux foiz puis un mois)
+223R.05	quelles nouvelles j'avois de mon frere
+223R.06	& si je ne parlois point de m'en aller pour
+223R.07	advertir de bonne heure ledict Seigneur Roy
+223R.08	de Polongne de la guerre qui se menaçoit,
+223R.09	oultre les plainctes qu'il m'avoit faictes
+223R.10	cydevant des incursions que les Polonnois
+223R.11	— font extraordinairement du costé du Boristene
+223R.12	et des secours promis au feu Jean Vayvode
+223R.13	de Moldavie contre le Grand Seigneur le
+223R.14	— Palatin de Russie appellé le sieur de
+223R.15	Jazlowiezky en estoit venu aux effectz ayant
+223R.16	envoyé par commandement du Roy son
+223R.17	Seigneur quatre mil Polonnois hommes de
+223R.18	guerre contre les forces turquesques qui sont
+223R.19	en ce pays la lesquelles les ont taillees en
+223R.20	pieces et en ont envoyé quelqu'un icy esclaves
+223R.21	qui tesmoignent tel le commandement de sa
+223R.22	Ma^te et bien que, Sire ledict dragoman
+223R.23	voyant l'indignation et colere dudict Bassa aussy
+223R.24	grande qu'il l'aye oncques peu remarquer
+223R.25	en ses discours & facons taschast de le
+223R.26	distraire de ce propos luy en ouvrant d'au:
+223R.27	tres sur les nouvelles que j'avois receues
+== 224L
+224L.01	de Vostre Ma^te neantmoings ledict Bassa
+224L.02	reprint son premier langage plus vehement &
+224L.03	aigre qu'auparavant et luy dict l'ambassadeur
+224L.04	— feroit bien de s'advancer promptement pour re:
+224L.05	monstrer au Roy de Polongne qu'il ne doibt
+224L.06	— facilement croire aux espritz turbulens[?] d'aucuns
+224L.07	de ses subiectz qui se veullent faire glisser a la
+224L.08	guerre par les indignitez hostiles qu'ilz font
+224L.09	ordinairement que[?] plustost il debvroit en consi:
+224L.10	derer l'yssue qui sera beaucoup plus malaisée
+224L.11	que l'entrée et neantmoings n'oublie sitost
+224L.12	ce qu'on a faict pour luy & son pays en sa
+224L.13	— faveur que s'il estoit jeune je diroi[s][?] qu'il
+224L.14	a besoing[?] du conseil vieil et meur auprès de
+224L.15	— luy et adiousta Sire, ces derniers motz Je ne
+224L.16	— scay par que le Roy de Polongne pense
+224L.17	que pour le respect de l'amitié que la Case
+224L.18	de France a avec l'Othomane nous laissions
+224L.19	de nous ressentir des iniures Polonnoises
+224L.20	et voyla comment Sire, s'il ny est pourveu,
+224L.21	bien tost je crains que de bref il s'en pourra
+224L.22	ensuivre une declaration de guerre & que
+224L.23	— les frequentes repetitions de telz propos,
+224L.24	sont autant de protestations qu'on me faict
+224L.25	& si scay bien que lesditz ministres de l'Em:
+224L.26	pereur tiennent les oreilles ouvertes pour y
+224L.27	ayder s'ilz pouvoient d'autant que leur,
+224L.28	CATCH: Maistre
+== 224R
+224R.01	Maistre n'en recevroit guaires d'advantage & sera
+224R.02	— fort patient spectateur de ceste tragedie
+224R.03	& pour le surcroist aussy qu'il a de n'avoir
+224R.04	esté gratiffié dudict Royaume sur quoy,
+224R.05	Sire, il plaira a Vostre Ma^te me per:
+224R.06	mettre luy ramentevoir que tout ainsy que,
+224R.07	depuis mon partement de ses piedz et mesmes
+224R.08	avoir appris quelque peu de l'humeur de
+224R.09	ces hommes je l'ay dissuadée par toutes,
+224R.10	mes lettres de faire aucune ouverture de
+224R.11	guerre contre le Roy d'Espagne & singuliere:
+224R.12	ment pour la Flandres avant qu'elle eust
+224R.13	bien establi ses affaires domesticques aussy
+224R.14	estimé je qu'il ne seroit le bien du Roy,
+224R.15	de Polongne vostre frere de venir aux
+224R.16	mains contre ceux cy qu'il n'eust plustost
+224R.17	recongneu non seulement ses subiectz mais
+224R.18	aussy ses voysins selon que Vostre Ma^te
+224R.19	— l'aura peu veoir plus au long aux dupp^tas,
+224R.20	de celles que j'ay envoyees en Polongne par
+224R.21	lesquelles aussy et ce que j'ay descouvert je
+224R.22	suis aysé a congnoistre que ores que ces gens
+224R.23	ne nous ayent tant voulu favoriser que nous
+224R.24	eussions bien desiré en l'eslection de Polongne
+224R.25	pour les causes que cydevant j'en ay escriptes
+224R.26	neantmoings je le veoy a l'oeil qu'ilz n'ont
+224R.27	par seulement voulu permettre qu'on mesfist
+== 225L
+225L.01	audict pays pendant l'interregne, mais qu'ilz
+225L.02	— sont consumez de toutte iniure dedans et
+225L.03	dehors par les estroictz commandemens
+225L.04	qu'ilz ont envoyez sur tous les confins jus:
+225L.05	ques au Tartare apres avoir entendu que,
+225L.06	— ladicte eslection avoit reussy a nostre desir et
+225L.07	dont Sire pour en scavoir quelque chose je
+225L.08	ne leur puis desnier tesmoignage de verité,
+225L.09	quoy[?] ne leur en aye de l'obligation Quant,
+225L.10	a l'opposition que Vostre Ma^te me commande
+225L.11	— faire aux recherches qu'aucuns princes &
+225L.12	Estatz d'Italie font pour avoir intelligence,
+225L.13	en ceste porte j'y feray tout ce que je pourray
+225L.14	non que je veuille promettre pouvoir balancer
+225L.15	par mes remonstrances les grands presents
+225L.16	qu'on envoye de tous costez icy pour cest effect
+225L.17	— Le 27 du passé arriva pardeça un Floren:
+225L.18	— tin pour conclurre au nom de sa nation
+225L.19	une bonne capitulation pourveu qu'ilz ne
+225L.20	marchent soubz autre banniere que la leur
+225L.21	mesme les Luquois qui sont encores icy disant[?]
+225L.22	ne vouloir se departir de la vostre et attendent
+225L.23	— tous les jours advis de leur Republicque po:
+225L.24	le resoudre je croy bien que si ceux la obtiennent
+225L.25	ce qu'ilz demandent ceux cy suivront leur
+225L.26	— train et bien tost les Piemontois feront de:
+225L.27	mesme desquelz l'agent (qui est un Juif) s'en
+225L.28	CATCH: est
+== 225R
+225R.01	est retourné assez irresolu mais avec protesta:
+225R.02	tion de revenir que si ses premieres demandes
+225R.03	— sont frustrées de leurs intentions de quoy peut
+225R.04	estre il ne s'en faudra guieres, ce sera une
+225R.05	bonne chasse manquée pour ceux qui vou:
+225R.06	dront aller pardessus leurs desseingz pour
+225R.07	le regard de nostre Saint Pere des termes
+225R.08	duquel Vostre Ma^te me commandoit obte:
+225R.09	nir que ladicte armee fust divertie j'en
+225R.10	ay faict plusieurs recherches au Bassa
+225R.11	du meilleur endroit dont je me peuz adviser,
+225R.12	il me respondit qu'il eust bien desiré que,
+225R.13	j'en eusse eu lettre particuliere & expresse
+225R.14	de Vostre Ma^te a son Maistre afin que
+225R.15	sur icelle il luy en peust faire arze et
+225R.16	en faire donner aux Chefz les comman:
+225R.17	demens necessaires, ladicte armee estant
+225R.18	partie bien loin & si avec vosdictes depesches
+225R.19	je n'ay point receu ladicte lettre le sieur
+225R.20	de Ferrals vostre ambassadeur pres nostre
+225R.21	Sainct Pere pourra dire quelque jour a
+225R.22	Vostre Ma^te quel service un grand mercy
+225R.23	de sa Saincteté pour les services que je luy,
+225R.24	ay faictz pardeça a la recommandation de
+225R.25	— quelz j'ay tousiours escript audict sieur de
+225R.26	— Ferrals y adioustant que tout cela estoit,
+225R.27	en obeissant a voz commandemens, Je ne[?]
+== 226L
+226L.01	doubte point Sire que Arabamat qu'on ap:
+226L.02	pelle en France Roy d'Alger et icy Sangiac
+226L.03	c'est a dire gouverneur d'Alger n'aye faict sem:
+226L.04	blant de quelque bon office envers le sieur
+226L.05	de Mouillon[?] pour par son intervention obte:
+226L.06	nir faveur de Vostre Ma^te envers son
+226L.07	prince a ce qu'il ne fust revocqué de sa char:
+226L.08	ge et commandé icy rendre compte de ses
+226L.09	actions, qu'on dict de fort mauvaise odeur,
+226L.10	mais oultre que depuis que je suis de pardeça
+226L.11	il n'est venu vaisseau aucun de voz subiectz
+226L.12	ayant passé par Alger qui ne m'aye faict
+226L.13	plaincte des assassinatz et brigandages que
+226L.14	ledict Arabamat leur a faictz, & que les
+226L.15	Turcs mesmes et habitans du pays continuent
+226L.16	d'icy a, de faire doleance a ceste porte,
+226L.17	contre luy il y a plus de deux mois,
+226L.18	qu'il a esté faict mansul c'est a dire privé
+226L.19	de solde & de grade et en sa place a esté
+226L.20	destiné un aultre Turc appellé Caidramadan
+226L.21	de sorte Sire quant ledict Arabamat seroit
+226L.22	— le meilleur homme du monde je ne luy
+226L.23	pourrois aujourd'huy ayder et que j'eusse
+226L.24	essayé de faire si les lettres que ledict
+226L.25	sieur de Mouillon[?] accuse m'avoir esté
+226L.26	envoyees d'Alger sur la galiotte qui vint
+226L.27	CATCH: denommee
+== 226R
+226R.01	denommee ledict Arabamat, m'avoient esté
+226R.02	rendues les choses estans entieres mais
+226R.03	je ne les ay oncques veues. Sire quelques
+226R.04	jours avant recepvoir vostredicte depesche
+226R.05	du dix huictiesme d'avril j'avois entendu ce
+226R.06	qu'il plaist a Vostre Ma^te me mander
+226R.07	des conspirations faictes contre sa per:
+226R.08	sonne & son estat lesquelles les ministres
+226R.09	de voz voysins avoient bien faict sonner en
+226R.10	autre façon pardeça mais j'en ay esclarcy
+226R.11	— ledict Bassa selon la verité de voz com:
+226R.12	mandemens & suis contrainct sur ce propos
+226R.13	Sire, de redire a Vostre Ma^te ce que
+226R.14	souvent je luy ay escript que tout aussy:
+226R.15	— tost qu'il peut naistre occasion quelconque
+226R.16	qui semble revenir a desfaveur de voz affai:
+226R.17	res[?] seuretez[?] les ministres du Roy d'Espagne
+226R.18	sont merveilleusement diligens a l'envoyer par:
+226R.19	deça et l'enrichir selon l'abondance de leurs
+226R.20	passions & du desir qu'ilz monstrent avoir
+226R.21	que toutes choses vous succedent mal &c.
+226R.22	des Vignes de Pera les Constantinople ce vj
+226R.23	Juillet 1574
