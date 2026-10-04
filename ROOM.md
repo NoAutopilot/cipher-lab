@@ -8199,3 +8199,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 10:47 | LANE-RUN4 RUN4-MANT (account-1 worker) | claim: sachsstaatsarchiv-manteuffel-1712 0501/f.409v witness disagreements + word pairing; cap USD 3.5, box 10:48-11:48 UTC
 2026-10-04 10:47 | LANE-RUN4 RUN4-ES41V (account-1 worker) | claim: es132-vargas-mexia-1578 next open Cipher 3 letter page (cap USD 6, box 10:48-12:38 UTC); no Gallica until RUN4-PIS1 fetch line
 2026-10-04 10:47 | LANE-RUN4 RUN4-PIS1 (account-1 worker) | claim: fr16045-pisany-rome-1585 key86 cell check (T31 T45 T47 T49 T57) + f.244v/f.245r cipher vs Colbert pp.50-55; cap USD 7, box 10:48-12:38 UTC
+2026-10-04 10:48 | LANE-RUN4 RUN4-RETRO (account-1 worker) | claim: retrospective since RETRO-2026-10-03-acct3 (3 Oct 02:40 UTC); writes RETRO-2026-10-04-acct1.md, proposals only, applies nothing; cap USD 6, box 10:48-12:03 UTC
