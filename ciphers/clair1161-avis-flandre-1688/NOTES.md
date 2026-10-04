@@ -1968,3 +1968,17 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test, and a lookalike pass on th/z/S/4, as in Remaining gaps
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
 Verdict: keep going: 3 internal gaps; cheapest next: key-constrained lookalike pass on th/z/S/4 against the native crops, ~$3
+
+## Desk runner 4 Oct 2026 (DESK-LAND, account-3 worker; JSTOR rows J22-J25)
+
+Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md. The four JSTOR rows queued on 4 Oct 2026 are
+answered in JSTOR-QUEUE.tsv:
+
+| row | query | hits | relevant |
+|---|---|---|---|
+| J22 | Noailles Dax Villars 1570 chiffre Flandre | 9 | no -- indexes and bibliographies (top: Pannier, Table alphabétique 1852-1902, Bulletin SHPF 1902) |
+| J23 | "Clairambault 1161" chiffre OR chiffrés | 0 | -- |
+| J24 | "quant au fet de la religion en ce royaulme" | 0 | -- |
+| J25 | "Advis de Flandres" 1570 | 0 | -- |
+
+Search results, not a novelty verdict (rule 10); for the verifier to carry into AUDIT.md. No gap or escalation line changes.

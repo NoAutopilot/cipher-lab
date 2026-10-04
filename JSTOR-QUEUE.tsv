@@ -180,14 +180,14 @@ ciphers/fr3621-dinteville-1592	Dinteville AND Nevers AND 1592 AND (chiffre OR ci
 ciphers/fr3621-dinteville-1592	Dinteville AND Langres AND "juillet 1592" AND (chiffre OR cipher OR Nevers)	2026-10-03	queued	
 ciphers/fr3621-dinteville-1592	"la pouldre que j'y ai envoie" OR "s'il s'eschauffera plus" OR "remarche sur Chateauvilain"	2026-10-03	queued	
 ciphers/fr3621-dinteville-1592	"2 millions d'or d'Espaigne" OR "45 mulets chargés" OR "prendre le chemin de Vesoul"	2026-10-03	queued	
-ciphers/thurloe-printed	"Sams" AND Thurloe AND (cipher OR cypher OR decipher) AND (Bodleian OR Clarendon)	2026-10-03	queued	
-ciphers/thurloe-printed	"Clarendon MS 94" OR "MS. Clarendon 94" OR "Clarendon MS. 94"	2026-10-03	queued	
-ciphers/thurloe-printed	"His desire of a correspondence"	2026-10-03	queued	
-ciphers/thurloe-printed	"Unsolved cipher in Thurloe"	2026-10-03	queued	
-ciphers/fr15575-syllabic-1592-95	"Ernest" AND "Fuentes" AND 1595 AND (cipher OR chiffre OR cifra)	2026-10-03	queued	
-ciphers/fr15575-syllabic-1592-95	"Castel Rodrigo" AND 1594 AND (cipher OR chiffre OR cifra) AND Flandes	2026-10-03	queued	
-ciphers/fr15575-syllabic-1592-95	"de buena gana como por"	2026-10-03	queued	
-ciphers/fr15575-syllabic-1592-95	"apercibido para ir a la frontera"	2026-10-03	queued	
+ciphers/thurloe-printed	"Sams" AND Thurloe AND (cipher OR cypher OR decipher) AND (Bodleian OR Clarendon)	2026-10-03	answered	26 (no relevant hit); DESK-2026-10-04
+ciphers/thurloe-printed	"Clarendon MS 94" OR "MS. Clarendon 94" OR "Clarendon MS. 94"	2026-10-03	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/thurloe-printed	"His desire of a correspondence"	2026-10-03	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/thurloe-printed	"Unsolved cipher in Thurloe"	2026-10-03	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr15575-syllabic-1592-95	"Ernest" AND "Fuentes" AND 1595 AND (cipher OR chiffre OR cifra)	2026-10-03	answered	84 (no relevant hit); DESK-2026-10-04
+ciphers/fr15575-syllabic-1592-95	"Castel Rodrigo" AND 1594 AND (cipher OR chiffre OR cifra) AND Flandes	2026-10-03	answered	1 (no relevant hit); DESK-2026-10-04
+ciphers/fr15575-syllabic-1592-95	"de buena gana como por"	2026-10-03	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr15575-syllabic-1592-95	"apercibido para ir a la frontera"	2026-10-03	answered	0 (no relevant hit); DESK-2026-10-04
 ciphers/hessen-daenemark-1672	("Lincker" OR "Lyncker" OR "Linker") AND (Vultejus OR Hessen-Kassel) AND (1672 OR Dänemark OR Hamburg) AND (Chiffre OR cipher OR chiffriert)	2026-10-03	queued	
 ciphers/hessen-daenemark-1672	"Aus Berichten des hessischen Sekretärs Lincker"	2026-10-03	queued	
 ciphers/sachsstaatsarchiv-manteuffel-1712	"Manteuffel" AND "Flemming" AND 1712 AND ("reine d'Angleterre" OR Stettin) AND (Chiffre OR dechiffriert OR cipher)	2026-10-03	queued	
@@ -221,26 +221,26 @@ ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("aprile 1571" OR "avr
 ciphers/birago-fr3252-1571-72	("Birago" OR "Birague") AND ("mars 1572" OR "marzo 1572") AND ("Carmagnola" OR "Carmagnole") AND (cipher OR cifra OR chiffre)	2026-10-04	queued	
 ciphers/birago-fr3252-1571-72	"intention de convenir" AND ("Birague" OR "Saluces")	2026-10-04	queued	
 ciphers/birago-fr3252-1571-72	"parlandone il signor" AND ("Birago" OR "Saluzzo")	2026-10-04	queued	
-ciphers/clairambault1225-paget-1714	"Paget" AND ("Gênes" OR "Genoa" OR "Cagliari") AND 1714 AND (chiffre OR cipher OR consul)	2026-10-04	queued	
-ciphers/clairambault1225-paget-1714	"Paget" AND ("princesse de Parme" OR "Farnese") AND (consul OR chiffre)	2026-10-04	queued	
-ciphers/clairambault1225-paget-1714	"a toujours esté de genie Allemand"	2026-10-04	queued	
-ciphers/clairambault1225-paget-1714	"le Prince Antoine de Parme" "35 ans"	2026-10-04	queued	
+ciphers/clairambault1225-paget-1714	"Paget" AND ("Gênes" OR "Genoa" OR "Cagliari") AND 1714 AND (chiffre OR cipher OR consul)	2026-10-04	answered	169 (no relevant hit); DESK-2026-10-04
+ciphers/clairambault1225-paget-1714	"Paget" AND ("princesse de Parme" OR "Farnese") AND (consul OR chiffre)	2026-10-04	answered	58 (no relevant hit); DESK-2026-10-04
+ciphers/clairambault1225-paget-1714	"a toujours esté de genie Allemand"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/clairambault1225-paget-1714	"le Prince Antoine de Parme" "35 ans"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
 ciphers/birago-fr3252-1571-72	"favoriser ces affaires"	2026-10-04	queued	
-ciphers/clair1161-avis-flandre-1688	Noailles Dax Villars 1570 chiffre Flandre	2026-10-04	queued	
-ciphers/clair1161-avis-flandre-1688	"Clairambault 1161" chiffre OR chiffrés	2026-10-04	queued	
-ciphers/clair1161-avis-flandre-1688	"quant au fet de la religion en ce royaulme"	2026-10-04	queued	
-ciphers/clair1161-avis-flandre-1688	"Advis de Flandres" 1570	2026-10-04	queued	
+ciphers/clair1161-avis-flandre-1688	Noailles Dax Villars 1570 chiffre Flandre	2026-10-04	answered	9 (no relevant hit); DESK-2026-10-04
+ciphers/clair1161-avis-flandre-1688	"Clairambault 1161" chiffre OR chiffrés	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/clair1161-avis-flandre-1688	"quant au fet de la religion en ce royaulme"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/clair1161-avis-flandre-1688	"Advis de Flandres" 1570	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
 ciphers/es132-vargas-mexia-1578	"Vargas Mexia" 1578 (cifra OR cipher OR chiffre OR "en chiffre")	2026-10-04	queued	
 ciphers/es132-vargas-mexia-1578	"Vargas Mexia" "Espagnol 132"	2026-10-04	queued	
 ciphers/es132-vargas-mexia-1578	"lo que toca a la navegacion de las Indias"	2026-10-04	queued	
 ciphers/es132-vargas-mexia-1578	"el de Alanzon y el de Bearne"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND 1572 AND (chiffre OR cipher OR déchiffrement)	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"Vivonne" AND "Charles IX" AND "septembre 1572"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"tousiours ont doubte"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"toute diligence de faire" "Saint-Gouard"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND "duc d'Anjou" AND "septembre 1572"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"monarque taciturne et impénétrable"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"de contradiction il ne pourroit doubter"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND "Charles IX" AND "octobre 1573"	2026-10-04	queued	
-ciphers/fr16104-vivonne-spain-1572	"par doulceur d'un pardon general"	2026-10-04	queued	
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND 1572 AND (chiffre OR cipher OR déchiffrement)	2026-10-04	answered	7 (yes: https://www.jstor.org/stable/40937194 Revue Historique 1884 digest of Bremond d Ars); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"Vivonne" AND "Charles IX" AND "septembre 1572"	2026-10-04	answered	1 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"tousiours ont doubte"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"toute diligence de faire" "Saint-Gouard"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND "duc d'Anjou" AND "septembre 1572"	2026-10-04	answered	3 (yes: https://www.jstor.org/stable/40937194 Revue Historique 1884 digest of Bremond d Ars); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"monarque taciturne et impénétrable"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"de contradiction il ne pourroit doubter"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND "Charles IX" AND "octobre 1573"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
+ciphers/fr16104-vivonne-spain-1572	"par doulceur d'un pardon general"	2026-10-04	answered	0 (no relevant hit); DESK-2026-10-04
 methods/mary-stuart-lasry-2023	"Deciphering Mary Stuart's lost letters from 1578-1584" (Lasry, Biermann, Tomokiyo, Cryptologia 2023, doi 10.1080/01611194.2022.2160677): READ the methods section and report exactly how the symbols were transcribed and how transcription errors were found and corrected (per-sign error rates, tools, passes, whether partial decipherment was used to fix readings); quote the relevant sentences with page numbers. tandfonline blocks the cloud.	2026-10-04	answered	owner supplied the PDF 4 Oct 2026; read in full by the account-3 orchestrator: research/MARY-STUART-METHOD-2026-10-04.md

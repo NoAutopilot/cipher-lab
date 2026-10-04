@@ -2719,3 +2719,41 @@ Verdict: keep going: 1 internal gap (the P3/P10 open codes); cheapest next: a P3
 ## Depth re-check, P4 (THUR-P4-DEPTH, 4 Oct 2026)
 
 4 Oct 2026, THUR-P4-DEPTH (account 3 verifier): P4 depth re-checked, **D2 kept**. The p.188 incoherence (lines 53-61, 144 of 424 numerals) is in Birch's print itself, which interleaves 29 non-numeral tokens ("am." x7, never beside a numeral in the siblings) -- not our key or transcription; cause (compositor-set signs vs Stamford's own faulty cipher, which his clear text admits) needs the MS Rawl. A. 24 leaf. Readable cipher corroborated by the 30 March decipherment's restatement. AUDIT.md "Depth re-check, P4".
+
+## Desk runner 4 Oct 2026 (DESK-LAND, account-3 worker; LOCAL-QUEUE L45, JSTOR rows J10-J13)
+
+Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md (L45 section and J10-J13).
+
+- **MS. Clarendon 94, catalogue record** (https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/172506):
+  "Sixteen ciphers used in the Clarendon State Papers on the royalist side, Written in the 17th century"; File; 28 leaves;
+  on paper; 14 3/8 x 9 3/8 in.; Madan, Summary Catalogue III no. 16180. No scope note, no viewer link; the MARCO
+  collection page (Clarendon State Papers) reads "NOT AVAILABLE ONLINE". `tools/lq_answer_check.py --row L45`: both
+  ladder rungs present, a genuine not-digitised verdict.
+- No mention of Eric Sams in the record ("Eric Sams" = 1 unrelated hit, MS. Eng. c. 8360, letters 1974-2002). No item for
+  "W. S." / Stamford / Calais 13 March 1655 ("Stamford" 1654-55: two unrelated hits); the March 1655 papers are described
+  only at volume level (Calendar ii nos. 1987-2120 / iii nos. 1-87, Aug 1654-Mar 1655).
+- So MS. Clarendon 94 is itself a volume of seventeenth-century cipher keys (royalist side), with which Sams's 1973
+  solutions were filed (Moore 1977). Whether a Stamford key or the Sams notes on P4 are in it is unknown until imaged;
+  Stamford wrote *to* Thurloe, so the royalist keys may not include his. Reproduction request written: REQUEST.md, ASKS
+  row 139 (backlog, never blocking).
+- JSTOR (J10-J13, JSTOR-QUEUE.tsv answered): "Sams" AND Thurloe AND cipher AND (Bodleian OR Clarendon) 26 hits, none
+  relevant (indexes, directories); "MS. Clarendon 94" variants 0; "His desire of a correspondence" 0; "Unsolved cipher in
+  Thurloe" 0. Search results, not a novelty verdict (rule 10).
+- Gap change: "contemporary decipherment of P4" moves from waiting-on L45 to waiting-on ASKS row 139.
+
+## Remaining gaps (DESK-LAND refresh, 4 Oct 2026; supersedes the N8-THUR2 list above)
+Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4's remaining 3 M tokens are code 1 'i' (x3, one printed vote) - blocker: no-key-material; not in Tomokiyo's table (it starts at 2, GAPS148, N8-THUR2) and no other sibling occurrence on disk
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on ASKS row 139 (Bodleian reproduction of MS. Clarendon 94 and the Sams notes, REQUEST.md); L45 answered 4 Oct 2026 (record read, "NOT AVAILABLE ONLINE"); ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (DESK-LAND refresh, 4 Oct 2026; from the N8-THUR2 list)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92.3-92.8% after the running-head fix (s.16; A3V2-THUR275)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148); 32/33/38 regraded M -> H against it under a pre-registered rule (N8-THUR2, 4 Oct 2026); conflict on 27 (not in P4); no entry for 143/70/1
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); running-head numeral 275 dropped via JUNK_LINE and key regenerated, P4 reading unchanged (A3V2-THUR275, 4 Oct 2026)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); all five sibling cipher pages and both printed decipherments read from the page image (A3V2-THURBT, N8-THUR, 4 Oct 2026)
+- [x] retry: one-vote boundary test v3-full on the image-read siblings PASSed its pre-registered gate (K 68.8% / 83.6%, W 0%); 67 and 153 M -> C, 84 re-read "although" at M (N8-THUR, 4 Oct 2026)
+Verdict: keep going: 1 internal gap (the P3/P10 open codes); cheapest next: a P3-postscript cross-check against the P5-P7 key for codes the postscript shares with them, ~$1 (the rule-7 re-derivation N8-THR7 is done, SAME; status.json depth_pct 97.9 entered by account 3, 4 Oct 2026)

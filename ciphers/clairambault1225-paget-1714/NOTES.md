@@ -1302,3 +1302,18 @@ Read so far: token level H 50, S 77, M 365, I 7, U 6 of 505 (firm 127), tools/de
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
 - [x] retry: tools/decode_key.py --check exit 0 after A3V3-PAGR: H 50 S 77 M 365 I 7 U 6; rule-7 re-derivation by A3V3-PG7 (531b5754d, RD7-2026-10-04-a3v3.md) SAME 505/505, state unchanged at 17:58 UTC (RD7-PAGR)
 Verdict: keep going: 1 internal gaps; cheapest next: a multi-seed settle7 rule for the seed-path-dependent 126/86 rulings (pre-registered, then rule-7 again), ~$2
+
+## Desk runner 4 Oct 2026 (DESK-LAND, account-3 worker; JSTOR rows J18-J21)
+
+Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md. The four JSTOR rows AUDIT 1 queued on 4 Oct 2026
+(AUDIT.md line ~142) are answered in JSTOR-QUEUE.tsv:
+
+| row | query | hits | relevant |
+|---|---|---|---|
+| J18 | "Paget" AND ("Gênes" OR "Genoa" OR "Cagliari") AND 1714 AND (chiffre OR cipher OR consul) | 169 | no -- reference works and directories (top: Dictionary of World Biography 2016) |
+| J19 | "Paget" AND ("princesse de Parme" OR "Farnese") AND (consul OR chiffre) | 58 | no -- periodical digests (top: Revue Historique 1896 "Recueils périodiques"), no Paget/Genoa match shown |
+| J20 | "a toujours esté de genie Allemand" | 0 | -- |
+| J21 | "le Prince Antoine de Parme" "35 ans" | 0 | -- |
+
+Search results, not a novelty verdict (rule 10); for the verifier to carry into AUDIT.md's JSTOR line. No gap or escalation line
+changes (the print step was already [x]).

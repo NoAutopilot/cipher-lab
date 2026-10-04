@@ -576,3 +576,71 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [ ] image-check: f.228 L05-L08 gloss by per-band calls + multi-view vote (different instrument from the two one-call passes)
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 4 internal gaps; cheapest next: f.228 L05-L08 gloss re-read by per-band anchored calls + --views vote under a pre-registered addendum (~$4.5); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)
+
+## Desk runner 4 Oct 2026 (DESK-LAND, account-3 worker; LOCAL-QUEUE L47, JSTOR rows J14-J17)
+
+Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md (L47), Google Books FYAgAQAAMAAJ, search
+inside "5 janvier 1595", p.278 read from the page image (accents to be checked):
+
+> "811. Bruxelles, 5 janvier 1595. -- Ernest à Philippe II. Refus de Fuentès de se charger du commandement de l'armée de
+> France, si on ne lui donne pas l'autorité d'un capitaine général ne relevant que du Roi. C'est un contretemps très
+> malheureux. Il faut chercher un autre officier convenant à cette mission. Les mutins de Sichem se sont déclarés prêts à
+> se soumettre, si l'on prenait avec eux un arrangement favorable. Ernest soupçonne que leurs intentions ne sont pas
+> telles qu'ils les ont dépeintes à Belgiojoso. S'ils ne voulaient pas accepter de justes conditions, on ne perdrait rien
+> à les déclarer ennemis du Roi et à se faire quitte de ce qu'on leur doit. Le retard apporté à l'arrivée des provisions
+> empêche de prévenir les inconvénients qui menacent d'éclater. Menaces des mutins de Dunkerque et de La Capelle. Exposé
+> de tous les besoins des divers éléments de l'armée. Impossibilité de faire des levées en Allemagne. Prière instante au
+> Roi d'envoyer des renforts espagnols et italiens. Estado, liasse 609, fol. 86 (espagnol, original). Manuscrits divers,
+> tome 28, fol. 183."
+
+No "chiffre", "déchiffré" or "en chiffres" in the entry. p.277 holds entries 807-810 (no 5 Jan entry); pp.282 and 329
+not opened. Only one Ernest letter of 5 Jan 1595 is calendared here.
+
+**Content check against what the folder has read of the 5 Jan 1595 letter (fr.15576 f.2).** Nothing of f.2 is decoded
+(NV05D: the 3-digit system is not key no.54, P1 FAIL K = 0.000). The only content on disk is NV05D's rough, unchecked
+look at the period interlined gloss over body lines L01-L04 (s. "fr.15576 f.2 premise test", "What the gloss says"):
+"... con el conde de Fuentes / se quedaua apercibido para ir a la frontera ... / Francia a tomar a su cargo ... /
+inmouible por esto ...". Compared by eye, topic by topic:
+
+| no.811 topic | f.2 gloss L01-L04 (NV05D look) |
+|---|---|
+| Fuentes refuses command of the army of France without captain-general authority | **matches**: Fuentes, "frontera", "Francia a tomar a su cargo", "inmouible por esto" (immovable on this) |
+| another officer must be sought | not seen (L01-L04 only) |
+| Sichem mutineers, Belgiojoso | not seen |
+| provisions late | not seen |
+| Dunkerque and La Capelle mutineers | not seen |
+| army's needs; no levies possible in Germany; Spanish and Italian reinforcements | not seen |
+
+So the opening of f.2's gloss matches the opening topic of Lefèvre no.811, in the same order the summary gives it; the
+rest of the summary covers lines nobody has read yet (L05 onward, the 5-line top block). A content check on a rough
+look, not a reading and not a grade change: no token on f.2 is graded. It strengthens the identification of f.2 as (a
+copy of) Ernest's 5 Jan 1595 letter, and the summary's sequence of topics (Sichem, Belgiojoso, Dunkerque, La Capelle,
+Allemagne) is a list of names to look for in the gloss when f.2 is aligned (named next step, ~$9). New: the Simancas
+original is named, AGS Estado leg. 609 fol. 86 (Spanish, original), plus a copy in "Manuscrits divers, tome 28,
+fol. 183" (Lefèvre's own source series; holding not identified here).
+
+JSTOR (J14-J17, JSTOR-QUEUE.tsv answered): "Ernest" AND "Fuentes" AND 1595 AND cipher 84 hits, none relevant (top hit an
+Isis bibliography; Giblin, Collectanea Hibernica 1958 names "Fuentes and Ernest", not ciphers); "Castel Rodrigo" AND 1594
+AND cipher AND Flandes 1 (Danvila 1889, moriscos, unrelated); "de buena gana como por" 0; "apercibido para ir a la
+frontera" 0. Search results, not a novelty verdict (rule 10).
+
+
+## Remaining gaps (DESK-LAND refresh, 4 Oct 2026; supersedes the N8-NV05B list above, all its other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (S 0.674 vs p99 0.233), L05-L08 gate FAIL (S 0.439 vs p99 0.204, floor 0.60), pooled 0.549 ungated; f.233 and fr.15576 f.2 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, "espagnol, original" per Lefèvre IV no.811; L47 answered 4 Oct 2026) - blocker: not-attempted; it may be the clear or deciphered text of fr.15576 f.2 (a crib for the alignment); PARES is dead from the cloud; next: a LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 (if digitised) or the Manuscrits divers t.28 fol.183 copy Lefèvre also cites, ~owner minutes
+- f.228 L05-L08 gloss re-read - blocker: not-attempted; the registered FAIL rests on a thin reconciled gloss (GB dropped L07); next: per-band gloss calls (one line each, anchored) + `--views` pad/s125/contrast vote via reconcile_passes.py --vote, pre-registered addendum, ~$4.5
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- target decode fr.15576 f.2 - blocker: not-attempted; a 3-digit system outside no.54 with a period interlined decipherment; next: gloss (2 passes) + ~25 cipher lines aligned with tools/interlinear_align.py (grade C), ~$9
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; next: after the L05-L08 gloss instrument is settled, 4-line batches at 5 units (~$7.5) each; f.233 the same
+
+## Escalation (DESK-LAND refresh, 4 Oct 2026; from the N8-NV05B list)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch -- now named, AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811, L47); planned: desk row for its image
+- [ ] known-keys: fr.3995 no.54 syllabary control-checked (NV05C fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL at the floor, > null); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, 4 Oct 2026, DESK-LAND; summary only, no cipher mention); van Durme 1964 entry seen as snippet only (same content: Fuentes refusal)
+- [n/a] key-rebuild: the period key sheet exists and reads the target leaf far above its null
+- [ ] image-check: f.228 L05-L08 gloss by per-band calls + multi-view vote (different instrument from the two one-call passes)
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 5 internal gaps; cheapest next: f.228 L05-L08 gloss re-read by per-band anchored calls + --views vote under a pre-registered addendum (~$4.5); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9); the Simancas Estado 609 fol.86 desk row is an owner-minutes step that can run alongside

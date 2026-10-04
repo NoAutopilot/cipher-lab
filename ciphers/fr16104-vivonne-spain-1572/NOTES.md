@@ -1561,3 +1561,74 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
 - [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; next instrument: hand-placed per-position crops)
 Verdict: keep going: 13 internal gaps (+1 waiting-on); cheapest next: ink 54 col-u-row-3 relabel with hand-placed per-position crops (PREREG-N7VIV54R rule), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
+
+## Desk runner 4 Oct 2026 (DESK-LAND, account-3 worker; LOCAL-QUEUE L50, L51, L52, JSTOR rows J1-J9)
+
+Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md. Note: VIV-BREMOND earlier today searched d'Ars's
+1884 **book** (*Jean de Vivonne, sa vie et ses ambassades*, IA lepredemadamede00dargoog); L51 is a different text by the same
+author, the **article** G. de Bremond d'Ars, "La Saint-Barthélemy et l'Espagne d'après la correspondance de Jean de Vivonne de
+Saint-Gouard", *Revue des questions historiques* 35 (1884), pp.386-412 (IA RevueDesQuestionsHistoriquesA18T35, from n391).
+VIV-BREMOND's "no 5 Sept 1572 citation" holds for the book only.
+
+**L51 (RQH article).** Volumes listed p.387 n.1 (fr.16104 = Jan-Dec 1572, 16105 = 1573, 16106-16108). The 5 Sept 1572 letter is
+cited: p.395 n.4 "Saint-Gouard à Charles IX, 5 septembre 1572. Ms. Bibl. nat., F. fr. 16104", with Philip II's words as reported:
+« Vous remercierez Sa Majesté de ma part, mais vous la prierez aussi de choisir des gens sûrs à cause des inconvénients qui résultent
+du mauvais choix des gardeurs de frontières ». Other citations: 12 Sept 1572 (bound in fr.16105 by error) pp.396-401, 403; 19 Sept
+1572 (fr.16104) pp.402, 403, 406; 18 Oct 1572 pp.402, 404; 16 July 1572 to Anjou p.393 n.4 ("impénétrable le taciturne monarque").
+No 1573 citation; no mention of cipher or decipherment.
+
+**Is the quoted passage in the clear text or the cipher block of the 5 Sept letter (ink 50, ff.157r-159v)?** In the clear text.
+Gachard II (cached sources/ia-fulltext/print-check/labibliothquen02gachuoft_djvu.txt.gz, entry L, pp.592-594, OCR lines
+~17483-17570) prints the audience of 27 August from the letter's plain part, and its last paragraph is Philip's answer: "... et quant
+à l'ordre que Vostre Majesté veult mectre sur ses frontières de crainte des événements futurs, qu'il l'approuve et trouve très-bon,
+mais qu'il est bien besoing aussy d'y employer gens fidelles et non suspectz à ce qui a apporté l'occasion à tant de misères ...".
+d'Ars's sentence is a modernised paraphrase of that plain passage (thanks, "gens sûrs" = "gens fidelles et non suspectz", the
+frontier guards), not a quotation of the cipher. So d'Ars had **no** reading of the cipher block, and the passage is **not** a crib.
+Also, the brief's premise is out of date: the cipher block ff.157r-159v is not unread -- its clerk decipherment, piece 51, ff.162r-163r
+"dechiffré de la precedente", was found by N5-VIV5S (4 Oct 2026); what remains there is a known-plaintext check (gap list below,
+unchanged). Ribera 2007 note 18 "cité par G. de ..." for the 5 Sept 1572 letter: consistent with this RQH article (d'Ars cites
+exactly that letter and shelfmark); the Ribera gap is closed as answered.
+
+**L50 (Ribera 2007, Google Books 7p3mENOa3U0C).** Snippet view only: "monarque taciturne et impénétrable" on p.335 (running head
+only shown); "Saint-Gouard" 20 pages (pp.326, 519, 521 shown). Note 139 and any citation of the 5/7 Sept 1572 or 10 Oct 1573
+letters not visible.
+
+**L52 (Flament 1996).** SUDOC 201366568: maîtrise, Lille 3, 1996, 158 p., dir. Labourdette; held Lille, Bib. G. Lefebvre (HARTIS),
+cote D 1996 3, "Non disponible pour le PEB" -- not lendable; no digitised copy. WorldCat stopped at a bot check (not attempted).
+
+**JSTOR J1-J9 (JSTOR-QUEUE.tsv answered).** One relevant item, twice (J1, J5): "Recueils périodiques et sociétés savantes",
+*Revue Historique* 25/1 (1884), pp.192-224, https://www.jstor.org/stable/40937194 -- a digest of the same RQH article (d'Ars "pense
+et montre ... que Saint-Gouard ne connaissait nullement le prétendu plan arrêté par la cour d'un massacre général"); not opened, no
+cipher content. All other rows: no relevant hit (J2 1 unrelated; J3, J4, J6-J9 0). Search results, not a novelty verdict (rule 10).
+
+
+## Remaining gaps (DESK-LAND refresh, 4 Oct 2026; supersedes the VIV-BREMOND list above, all its other lines kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53
+ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
+N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; d'Ars 1884 book (VIV-BREMOND) and d'Ars's RQH 35 (1884) article pp.386-412 (L51, DESK-LAND) both checked: neither cites 10 Oct 1573; Ribera 2007 seen as Google Books snippets only (L50: note 139 not visible); fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: Ribera 2007 in full through the owner's interlibrary loan (ILL-SWEEP batch), reading note 139 and every 1573 Saint-Gouard citation, ~owner minutes + $0.5 to land
+- Flament 1996 (L'ambassade du marquis de Saint-Gouard en Espagne, maîtrise Lille 3, 158 p.) - blocker: needs-physical-access; only copy located Lille, Bib. G. Lefebvre, cote D 1996 3, "Non disponible pour le PEB" (SUDOC 201366568, L52, 4 Oct 2026); no digitised copy
+- tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
+- ink 63 key questions (y, single o, c, V, e, 2, r) - blocker: not-attempted; context table done (N7-VIV63G, tx/viv63g_keyctx.tsv): the 4-gram fill is right on only 5/9 held-out codes at this N and biased to i/l, so only y->l (alignment + fill agree), V->n and e as an "m(m)" sign in "co_tandeur" stand as weak proposals; next: read cells h, l, m, n of Tomokiyo's key image (henryiii_Vivonne1.png) for a y-like l homophone, a V-like n and an e-like m/mm sign, then a PREREG'd key-change step with the wrong-key control, ~$1.5
+- ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
+- ink 53 audit (depth re-check) - blocker: not-attempted; AUDIT 2 (VIV53-A1) set N3 / D1; the N7-VIV53L re-decode passes b2 + wrong-key again (PREREG-N7VIV53L) but no repair-free stretch reaches ~42 letters (longest 20); next: verifier session (account 3) on reading_piece53_L.tsv, ~$5
+- ink 53 residual label questions - blocker: not-attempted; 82 split tiles left UNSETTLED by the 2-of-3 rule and 270 one-reader gaps never re-read (tx/lookalike53L/*/focus.tsv), the ': :'-as-null alternative, and "rauldhoit" (f.171r L15, where French wants "pourroit") unresolved (N7-VIV53L); next: owner's sign sorter on the focus files, or a window re-read of the gap tiles (tx/viv53L_windows.py extended to gaps), ~$2
+- ink 54 clean reading - blocker: not-attempted; window look-alike pass done (residual 0.134), true-error audit a non-test, no stretch near ~42 letters (N7-VIV54L); next: owner's sign sorter on tx/lookalike54/*_focus.tsv (275 questions) or a window-instrument audit (lookalike_pass.py audit + viv53L_windows.py audit), ~$1.5
+- ink 54 key question "to z" (qae) - blocker: not-attempted; key cell added (key.tsv Zu -> u, col u row 3, N7-VIV54R) but the pre-registered per-position window judge was a NON-TEST (3/18 after-"to" positions SIGMA at H/M vs >= 7 required; ticks off, no per-sign stroke notes), so no position is relabelled and the reading has not moved; next: per-position crops cut at hand-marked x (not pos/len estimates) for the 169 z/x/R/3/2 positions, or the owner's sign sorter with Zu as a pile, then the same PREREG decision rule, ~$1.5
+- ink 54 audit (depth re-check) - blocker: not-attempted; b2 + wrong-key PASS on the re-decode (PREREG-N7VIV54L); next: verifier session (account 3), ~$5
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, DESK-LAND; from the VIV-BREMOND list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars (book 1884 and RQH 35 article, L51), Catherine IV-V, Groen IV read; Ribera 2007 snippets (L50); d'Ars re-checked by date and by k-mer/phrase overlap against inks 53, 54, 63 (VIV-BREMOND); Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; next instrument: hand-placed per-position crops)
+Verdict: keep going: 13 internal gaps (Ribera note 18 answered by L51; Flament not lendable); cheapest next: ink 54 col-u-row-3 relabel with hand-placed per-position crops (PREREG-N7VIV54R rule), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
