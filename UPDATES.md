@@ -278,3 +278,11 @@ The tile dialog's zoom slider only resized the bitmap inside a fixed +-180 px wi
 screen width, so zooming out could never show more of the line. Now the slider sets how much of the line is shown around the sign
 (1 = widest, 8 = close-up) and the picture always fills the dialog's width. test_qa.js checks both directions (zoom in makes the sign
 larger, zoom out shows more of the line or the whole line) and that a late page image never paints another tile (by sid, not geometry).
+
+**4 Oct 2026, ~04:3x UTC (account 3, LANE-A3V orchestrator; owner approved in chat).** Reading depth beside the N-class: a unique
+solve is now N3+ AND D2+ (CLAUDE.md rule 4a, verifier template step 3a, README metric). D0 letters only, D1 scattered words, D2 at
+least one passage that says something (verifier writes one true sentence), D3 >=80% firm with an external check, D4 whole piece with
+a non-statistical external check and a rule-7 re-derivation. Gate: `tools/depth_check.py` (status.json `depth` fields; counted
+results from 4 Oct on must carry a depth; 23 legacy counted results listed ungraded until the re-grade job DEPTH-REGRADE lands).
+Evidence: research/DECIPHERMENT-STANDARDS-2026-10-04.md (DECODE statuses, Copiale/Z340/Lasry acceptance, Shannon/Shapiro
+authentication distance, TEI). Trigger: LANE-A3V found three N3-N4 classes with no text behind them (Birago f.47r, f.144r, f.168).

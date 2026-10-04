@@ -171,6 +171,16 @@ session and every subagent, cloud or local.
    correspondence (brothers to Willem vs Willem to brothers), then 5801's own gloss cut across even that. A code with
    conflicting H support is graded M in any letter whose direction or date does not match the supporting witness, and
    the conflict is logged in HYPOTHESES.md with the witnesses, never resolved by the more frequent value alone.
+4a. **Depth, beside the N-class (owner, 4 Oct 2026).** A unique solve is N3+ **and** D2+. The verifier sets depth per
+   item: D0 a key ranks first, nothing reads; D1 scattered words, no stretch above the authentication distance (about
+   1.5 x unicity, every liberty counted) and no code value reading in two contexts; D2 at least one such clause and one
+   true, specific sentence about the content written by the verifier; D3 >=80% of cipher tokens H/C/S, gaps mostly
+   names/codes, plus an external check or AD + a matched control; D4 every cipher-letter token H/C/S, residue only listed
+   name/code groups, a non-statistical external check and a fresh rule-7 re-derivation. Outward words: D1 "fragments
+   read", D2 "partially deciphered (about N%)", D3 "largely deciphered (about N%)", D4 "deciphered" ("; N name codes
+   unidentified"); "key identified" only for a period or published key. Depth is lowered on any revision.
+   `tools/depth_check.py` is the gate (status.json fields `depth`, `depth_pct`, `depth_sentence`, `depth_check`,
+   `decode_status`); evidence in research/DECIPHERMENT-STANDARDS-2026-10-04.md.
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
    `found-solved`, `blocked`, `offline-only`. Nothing else.
    Near solves (25 Sept 2026, UPDATES.md): a target where a solver beat its matched control by a reproducible margin, or
@@ -451,6 +461,8 @@ VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states i
    as searched or unreachable, with what was searched.
 3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
    decipherment (yes/no), evidence quality, confidence, one safe sentence, one unsafe sentence.
+3a. Depth per item (rule 4a): % of cipher tokens H/C/S, unread name/code vs other, D0-D4 with the check used and, for
+   D2+, one true sentence about the content; write it beside the N-class in AUDIT.md and status.json.
 4. Postmortem: name the failure, the files and sentences that over-claim, and correct them. If the reading itself
    was revised after this AUDIT.md (or an earlier one) was written, carry the revision into AUDIT.md and into any
    `SECOND-OPINIONS-QUEUE.tsv` row already filed for this target before writing the safe sentence (25 Sept 2026,

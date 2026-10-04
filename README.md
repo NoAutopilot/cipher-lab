@@ -7,7 +7,7 @@ S. Tomokiyo's site Cryptiana.
 ## What counts as a result
 
 **The metric, restated by the owner on 23 September 2026: the number of unique solves.** A unique solve is a
-reading a separate verifier has classed N3 or better (CLAUDE.md rule 10). Nothing else is sacred: language, period,
+reading a separate verifier has classed N3 or better (CLAUDE.md rule 10) and graded depth D2 or better -- at least one passage that says something, not isolated letters or words (rule 4a, owner 4 Oct 2026; `tools/depth_check.py`). Nothing else is sacred: language, period,
 holder and historical weight only matter as far as they change how many such readings the project produces. In
 practice that makes recovery the lane that scales and cryptanalysis the exception. Corrected the same night: the
 public DECODE catalogue is already worked daily by dbourdeau/cyphersolver, so the lane is the catalogues DECODE does not
