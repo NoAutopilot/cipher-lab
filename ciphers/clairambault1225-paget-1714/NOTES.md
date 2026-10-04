@@ -1280,3 +1280,25 @@ Read so far: token level H 50, S 77, M 365, I 7, U 6 of 505 (firm 127), tools/de
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
 - [x] retry: tools/decode_key.py --check exit 0 after A3V3-PAGR: H 50 S 77 M 365 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: rule-7 re-derivation of the A3V3-PAGR state (rule-7 owed after A3V3-PAGR), ~$2
+
+## RD7-PAGR (4 Oct 2026, 17:56-18:0x UTC): rule-7 for the A3V3-PAGR state already done
+The brief asked for a rule-7 re-derivation of the A3V3-PAGR state. A3V3-PG7 had already done one (531b5754d, 07:36 UTC,
+RD7-2026-10-04-a3v3.md): SAME 505/505 at H 50 S 77 M 365 I 7 U 6. It had not updated the Verdict above, which still read
+"rule-7 owed". No folder commit since 531b5754d; `tools/decode_key.py --check` exit 0 at 17:58 UTC with the same counts. No
+second run was made (deterministic chain, unchanged state). Note: RD7-2026-10-04-pagr.md.
+
+## Remaining gaps (RD7-PAGR, 4 Oct 2026)
+Read so far: token level H 50, S 77, M 365, I 7, U 6 of 505 (firm 127), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 365 M tokens (mostly single-attestation codes; settle7 rulings 46 S / 32 M on 15 codes; PAGA's eye readings 77 ce, 84 cette, 34 e, 38 i untested by the firm-neighbour pin, align/pin_pagr.txt known-answer FAIL 11 pinned) - blocker: open-codes; three instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS; the pin, PREREG_pagr.md FAIL) and the per-token pass done; rule-7 re-derivation of the A3V3-PAGR state done (A3V3-PG7, SAME 505/505); next: a multi-seed settle7 rule (the 126/86 rulings are seed-path dependent, PG7 reproduced he 5/10, dame 6/10), pre-registered, then rule-7 again, ~$2
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (RD7-PAGR, 4 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS; per-token settle7 rulings on 15 codes 46 S / 32 M after the P23 gloss fix; firm-neighbour pin (A3V3-PAGR) known-answer FAIL, no ruling; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
+- [x] retry: tools/decode_key.py --check exit 0 after A3V3-PAGR: H 50 S 77 M 365 I 7 U 6; rule-7 re-derivation by A3V3-PG7 (531b5754d, RD7-2026-10-04-a3v3.md) SAME 505/505, state unchanged at 17:58 UTC (RD7-PAGR)
+Verdict: keep going: 1 internal gaps; cheapest next: a multi-seed settle7 rule for the seed-path-dependent 126/86 rulings (pre-registered, then rule-7 again), ~$2
