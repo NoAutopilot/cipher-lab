@@ -296,3 +296,19 @@ Step named in the Premise check: be-api full-text search inside *The Consolidate
 Next step: retry be-api (Actes de Nimègue 1680, Dumont *Corps diplomatique* t.VII pt.1) in a later session; ~6 requests.
 While waiting: grep the Bakeš thesis full text (theses.cz file download) for "1677"/"Nääs"/"fullmakt".
 Verdict: open unchanged; keep going on the recipient-side print check (CTS 15 negative by snippets, two editions unsearched).
+
+## be-api retry, Actes de Nimègue 1680 + Dumont VII.1 (RUN1-KARL, 4 Oct 2026)
+
+Identifiers from archive.org advancedsearch (2 requests): `bub_gb_z5RUDBNGrqkC` (Actes et memoires des negotiations de la paix de
+Nimegue, 1680, Google-Books scan, catalogued "Tome premier quatrieme. Partie 2"; the 1680 scans are numerous, only this one searched) and
+`corpsuniverseldi71dumo` (Dumont, Corps universel diplomatique t.VII part 1, 1726). Method: be-api fts, `identifier=` filter, snippets only,
+no page numbers (page_num is not a locator), no vision. Both OCR long-s noisy ("Suéde", "Sc" for "&").
+- Positive controls (both volumes answer): Actes 1680: "Suede" 1 hit, "Oxenstierna" 1 hit ("Neomagi, die 1[?] Mardi 1679 ... Benedict. Oxenstierna, J. Paulin
+  Olivenkrans"), "plein pouvoir" 1, "Plenipotentiariis" 1 (Latin full-power wording, Legatis Extraordinariis ac Plenipotentiariis). Dumont VII.1:
+  "Suede" 1, "plein pouvoir" 1, "Plenipotentiariis" 1, "Carolus Dei gratia" 1 (Charles II of Britain instruments).
+- Target phrases, 0 hits in both: "Naes", "Naas", "Nesae", "6 May 1677". Actes 1680 also 0 for "Carolus Dei gratia". Dumont VII.1 also 0 for "Oxenstierna".
+- Reading: not found in these two volumes by snippet search, conditional on OCR and on one scan of the 1680 Actes (other scans, other tomes, the
+  1697 third edition and Dumont VII.2 unsearched). The Swedish full power could sit under other spelling ("Nääs" / "Nesen").
+- Requests: archive.org advancedsearch 2, be-api.us.archive.org 18 (no failures). Vision 0, subagents 0. Status stays `open`.
+Next (one line): same terms on the other 1680/1697 Actes scans and Dumont VII.2; Bakeš thesis grep still pending.
+Verdict: open unchanged; keep going (recipient-side print check: CTS 15, Actes 1680 scan z5RU..., Dumont VII.1 all negative by snippet).
