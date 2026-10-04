@@ -50,3 +50,24 @@ filled 1763 Hellen table that fits R1045-R1048/R1060/R1061 (code range, French, 
 test as the next step; do not transcribe in this job. Output `key_search/R4386-R4388.tsv` (same columns as R4381-R4408.tsv), NOTES "N7-HELDK",
 gaps refresh + gaps_check OK. The codes 1-800 gap is NOT this job (R4370/R4372 retired under rule 3; its named next step is the Fagel 5177
 phrase corpus). Report what was found and where it was not found. Scrub the account name from anything saved.
+
+## Wave 2 (added 12:3x UTC by LANE-NEAR7; VIV63-A1 done 12:22, AUDIT 3 written; N7-HELDK done 12:24)
+
+### N7-VIV63G -- ink 63: f.194r lines 5-10 + the key-questions context table (Opus; cap USD 5; box 75 min)
+Units: f.194r L5-10 re-cut deskewed (`--centres`/deskew, check the overlay BEFORE any pass: N6-VIV63C lesson), 2 blind passes + 1 reconciliation
+(~1.5); then NOTES' named step "ink 63 key questions": a code-context table of y, single o, c, V, e, 2, r against ink 40's decipherment alignment
+(tx/key_support.py) and the ink 63 reads -- proposals only, key.tsv untouched (a key change is a separate graded step), ~3. Coordinate with
+N7-VIV53L/N7-VIV54L (same folder): pull --rebase before shared edits. reading_piece63.tsv regenerated with `--check` to include L5-10. AUDIT 3
+was written before this change: add a dated "Revision after AUDIT 3 (N7-VIV63G)" note under AUDIT 3 stating exactly what changed (lines, token
+counts, H/M/U) without altering the class or depth, and carry it into the SO-VIV63 row of SECOND-OPINIONS-QUEUE.tsv (rule 10 propagation).
+b2 + specificity re-run on the whole piece under PREREG-N6VIV63B's rule (addendum PREREG-N7VIV63G.md first). Also fix the stale "ink 53 audit 1
+not-attempted" line in the last Remaining gaps (VIV53-A1 done 11:21). Report what was found and where it was not found.
+
+### N7-HELBC -- hellen-frederick-1752: pre-registered blank-cell test of R4388 on the 1763 letters (Opus; cap USD 4; box 60 min)
+NOTES N7-HELDK named it: R4388 (f.79, codes 2001-3900, names c.1762-63) fits 26-35% of 1763 tokens but 11/28 sampled tokens land on blank cells
+(base ~32%; the true-key precedent R4369/R1953 ~3%). One DECODE login (images to scratch only, never committed; scrub the account name).
+PREREG-N7HELBC (in NOTES or key_search/) pushed before counting: which cells are read (only the cells the ~180 distinct 1763 codes need, one
+blind pass + a second blind pass on the same cells), the statistic (share of the 1763 tokens in R4388's range landing on blank cells, plus, if
+cells carry meanings, the LR100 uni/bi test as READ2-HEL2), the null (blank share at random code positions in the same range; and the R4369/R1953
+precedent as positive control subsampled to the same N), the pass rule. Verdict: candidate for a full transcription (~$12) or retired. Do not
+transcribe the whole table. gaps refresh + gaps_check OK; NEAR row Evidence/Last-touched + near_check.
