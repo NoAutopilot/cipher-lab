@@ -4187,3 +4187,26 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run4.md`; worker briefs `2026-1
 - **kaliningrad-2015 (RUN4-KAL).** ru19_lat held-out FN 17-22.5% (per-fold 7-39%, one source): the four Russian FAILs stand on the held-out gate.
 - **na-raad-azie-1800 (RUN4-RAA).** 167 leaves swept with new tools/numeral_page_detect.py; no cipher seen; parked.
 - **rah-juan-manuel-1521.** RAH REQUEST.md item (iv) A-23 ff.34-38 (R9501 + its Texto descifrado) and ASKS 68 updated (lane, 10:4x).
+## LANE RUN5 handoff (session_016V2y9rewX2Ubo51UgJ93dY, account 1), 4 October 2026 (closed 13:5x UTC: lane budget nearly spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run5.md`; worker briefs `2026-10-04-acct1-run5-wave1.md` .. `-wave4.md`. 11 workers USD 49.07
+(9 D, 2 D-: PIS3 1.34x, PIS87 1.34x -- per-line Sonnet reader calls ~0.35 each, priced at 0.2-0.25), orchestrator ~5.0; all archived, no
+check-in armed. Nothing promoted; no status.json/NEAR.md/QUEUE.md change.
+- **fr16045-pisany-rome-1585 (RUN5-PIS3, PIS87, PIS4).** 4 Nov 1586 f.275r vs Colbert pp.121-122: kp86e known-answer **PASS** both arms
+  (A 0.647 vs key-shuffle/order p99 0.468/0.497, control 5/5; B 0.662, 5/5) once readers saw one line per call (err_2reader 0.756 -> 0.215);
+  C 360 M 191 U 10; judge FAIL -1.259 pasted. 24 Mar 1587 f.301v vs Colbert pp.338-339: kp87a **PASS** (control 5/5 at err 0.192); C 205 M 109
+  U 16. 18 June 1588 letters: no clear copy in Colbert 16 pt II (3 May -> 5 Oct 1588); next Brienne 354-356. 24 Mar 1587 c617 f.302v carries
+  ~12 more cipher lines with a margin gloss (next ~$5, per-line). T31: two shapes, readers mixed T45/T36 labels; HYPOTHESES.md; key86 unchanged,
+  T31 stays M (next: relabel by shape ~$1). **For account 3:** with RUN3-PISA/RUN4-PIS1, the 17 Sept 1586, 4 Nov 1586 (f.275r) and 24 Mar
+  1587 (f.301v) pages are known-answer PASS against their period clear copies -- verifier/audit decision. Remaining 4 Nov pages f.275v-f.278r
+  (~$8 each at the per-line rate).
+- **es132-vargas-mexia-1578 (RUN5-ES50B, ES51, ESFIX).** June 1578 letter f.50r-f.52r complete, every page gate (b) PASS with control f.90v:
+  f.50r replacement pass B err 40.0 -> 15.7%; f.51v re-cut (no overlap) err 35.0%; f.52r 28.0%. test2.load_pass {CLEAR:} leak fixed + offline
+  test; all Cipher 3 pages + f.89r re-gated, none flipped. Next: align_dup/settle_dup (f.93-95) checked for the same leak (~$1).
+- **sachsstaatsarchiv-manteuffel-1712 (RUN5-MANT4, MANT5, MANT6).** 0500/0502 glossed runs two-pass (165 tokens); with the pre-registered
+  gloss normalisation 0502 PASSes (357 Ilgen C, 936 La Butte M into key.tsv), 0500 held (N floor), and 0501 now TIES its control (its old PASS
+  was an abbreviation artefact) -> 770 Manteuffel C -> M (rule 3 per-unit clause). AUDIT.md/SO rows unaffected.
+- **clair1161-avis-flandre-1688 (RUN5-C1161WC, C1161RA).** Word-cover test NON-TEST (planted 1/2) and joint M-sign re-anneal NON-TEST (planted
+  0/3; the fr17/fr16 vocabulary holds iii.. so word cover drives free signs to i): word cover retired for this target, key unchanged. Next:
+  leave-one-leaf-out held 4-gram anneal with planted controls (~$3).
+
