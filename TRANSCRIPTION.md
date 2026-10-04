@@ -97,5 +97,8 @@ no.87 stops being held-out if that job names clusters from the no.87 sheet -- it
 | TX-ATLAS-B72 | One atlas for every Birago 1572 letter (nos.71-90, f.117) with glyph_atlas; clusters named from the no.87 clerk sheet; top-k classify | err_true on no.87 held-out vs line reads |
 | TX-DECODE | tools/key_decode_lattice.py: key-constrained decode over top-k, controls built in | f.117/f.144/f.168 re-tested; known-answer check on no.87 |
 | TX-SORTER | sorter ranks tiles by value, decisions propagate per cluster across the family | one Birago session of <=20 tiles moves a letter's test |
+| TX-VIEWS | multi-view voting: iiif_lines --views + reconcile over N passes with vote share and error correlation (research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1, owner approved 4 Oct) | no.87 paired fixed > broken vs current 2-pass reconcile |
+| TX-AGREEAUDIT | lookalike_pass audit of signs both readers agreed on, 5% planted-error control (research #2) | catches >= 80% planted; flags known agreed-but-wrong no.87 signs |
+| TX-ALTS | a/b? alternatives kept into the decode lattice, reconcile --keep-alts (research #3) | truth-in-lattice above 27/97 on no.87; lattice err_true paired gain |
 
 Results land here (the "Today" column) as they come.
