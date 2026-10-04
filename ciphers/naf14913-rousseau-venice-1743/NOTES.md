@@ -1521,3 +1521,22 @@ Checks (FT4aa, 3 Oct 2026): gaps_check exit 0 (OK keep-going, 5 internal gaps, 0
 Checks (FT4ab, 3 Oct 2026): gaps_check exit 0 (OK keep-going, 5 internal gaps, 0 untried); decode_key --check exit 0 (tokens 62: C 24, I 1, M 37). Status stays partial.
 Checks (GAPS210, 4 Oct 2026): gaps_check exit 0 (OK keep-going, 5 internal gaps, 0 untried); decode_key --check exit 0 (reading up to date). Status stays partial.
 Checks (A3V2-ROUS, 4 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 6 internal gap(s), 0 step(s) untried", exit 0; `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` -> "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0; `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 24, I 1, M 37 / reading up to date", exit 0 (key.tsv and reading untouched). Status stays partial.
+
+## A3V3-SOU44-naf14913-rousseau-venice-1743 (4 Oct 2026, account 3 worker for LANE-A3V3)
+
+Souchon 1915 (Gallica bpt6k935116v), ALTO endpoint `RequestDigitalElement?O=bpt6k935116v&E=ALTO&Deb=<view>`, views 357 and 358
+(printed pp.267 and 268, view = page + 90), OCR text read directly, 2 requests, 2 s apart.
+- **N° 2044 (the f.197r letter, corner 2044, "21 Xbre 1743"): p.268, a bare date line.** OCR: "N° 2044. Lettre du même, 21 décembre
+  1743. — N° 2045. Lettre du même, 28 décembre 1743. L'envoyé lucquois va partir sans avoir réussi dans sa mission." The regest
+  after 2045 belongs to 2045 (28 Dec), not 2044; the regest before it (p.267-268, "14 décembre 1743. La République de Lucques a
+  envoyé ...") belongs to the 14 Dec letter (N° 2043). No quotation, no regest, no "chiffre" mark, no anchor phrase for f.197v-198r.
+- **N° 2031 (f.165r, "21 7bre 1743"): p.267, a bare date line**, re-checked: "N° 2031. Lettre du même, 21 septembre 1743." Same as
+  A3V2-ROUS2. Neighbouring lines (2030, 2032) carry no text bearing on the passages either.
+- **Consequence:** no printed plain side exists for either ciphered passage (ff.165r-v, 168 groups; ff.197v-198r, 296 groups), so no
+  group can be covered by a C-grade plain text from Souchon; the registered gate stays a non-test on both and was not run.
+  Correction of an earlier line: the f.197 letter is now identified in Souchon (N° 2044), but as a date line only (A3V2-ROUS2 had
+  "not identified").
+Not found in: Souchon 1915 pp.267-268 at N° 2031 and N° 2044 (ALTO text, 4 Oct 2026). Rule 10: a search result, no novelty class.
+Next (unchanged, needs new material): a plain side only from the recipient's archive copy (Montaigu's own deciphered file) or an
+unprinted Lorenzi/Rousseau slip outside ff.1r-392v; ask-row candidate, not queued by this worker.
+Checks (A3V3-SOU44, 4 Oct 2026): gaps_check run below.
