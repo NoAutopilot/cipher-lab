@@ -8202,3 +8202,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 10:48 | LANE-RUN4 RUN4-RETRO (account-1 worker) | claim: retrospective since RETRO-2026-10-03-acct3 (3 Oct 02:40 UTC); writes RETRO-2026-10-04-acct1.md, proposals only, applies nothing; cap USD 6, box 10:48-12:03 UTC
 2026-10-04 10:48 | LANE-RUN4 RUN4-MOR (account-1 worker) | claim: moray-wood-1568 R8345 P4 full-size (1 DECODE login) + refsheet L2/L3 anchor + M-box widening options; cap USD 1.5, box 10:49-11:24 UTC
 2026-10-04 10:48 | LANE-RUN4 RUN4-C1161AU (account-1 worker) | claim: clair1161-avis-flandre-1688 AUDIT propagation of 7=i M->S grade change (verifier hat; cap USD 1.5; box 10:49-11:19 UTC)
+2026-10-04 10:50 | N6-HEL81 (account 2 worker, for LANE-NEAR6) | claim: hellen-frederick-1752 N6-HEL81 contact sheet Add MS 32276 R4381-R4408; box ends 11:50 UTC
