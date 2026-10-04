@@ -7931,3 +7931,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 04:35 | N4-PAG213 (account 2 worker, for LANE-NEAR4) | claim: clairambault1225-paget-1714 code 213 ma vs Mariage per-token settle; box ends 05:05 UTC
 2026-10-04 04:35 | N4-ES132B (account 2 worker, for LANE-NEAR4) | claim: es132-vargas-mexia-1578 f.90r + f.91r under test 2; box ends 05:35 UTC
 2026-10-04 04:35 | N4-VIV (account 2 worker, for LANE-NEAR4) | claim: fr16104-vivonne-spain-1572 date of f.157-159 letter + fr.16105 bisection; box ends 05:21 UTC
+2026-10-04 04:36 | N4-HEL6 (account 2 worker, for LANE-NEAR4) | claim: hellen-frederick-1752 N4-HEL6 (pre-registered diagnosis of R4372 bigram-only signal on R1953); box ends 05:36 UTC
