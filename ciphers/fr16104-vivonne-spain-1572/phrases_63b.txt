@@ -1,0 +1,7 @@
+# N6-VIV63B: decoded phrases from ink 63 ff.192r-193r (10 Oct 1573) under key.tsv; gaps ('_') and look-alike letters bridged as noted (weak keys)
+service et la reputation
+ung gentilhomme anglois
+seigneurs anglois en flandres
+tres grandes intelligences
+ung tres bon
+toutes choses
