@@ -1,0 +1,42 @@
+label	key86	tokens	aligned_clear_letters	share_key86	stream_unseeded	status
+T01	a	8	a:6 n:1	0.86	n	confirmed
+T02	b	2	b:2	1.00	e	confirmed
+T03	c	6	c:4	1.00	e	confirmed
+T04	d	2	d:2	1.00	e	confirmed
+T05	e	6	e:6	1.00	e	confirmed
+T09	i	16	i:15 l:1	0.94	s	confirmed
+T10	l	5	l:5	1.00	s	confirmed
+T11	m	1	m:1	1.00	t	thin
+T12	n	19	n:17	1.00	i	confirmed
+T13	o	1	o:1	1.00	i	thin
+T14	p	13	p:11 o:1 d:1	0.85	i	confirmed
+T16	r	18	r:16 i:2	0.89	e	confirmed
+T17	s	27	s:23 r:1 c:1 t:1	0.88	e	confirmed
+T18	t	37	t:21 o:5 s:3 n:1	0.70	e	confirmed
+T19	u	3	u:3	1.00	e	confirmed
+T21	y	1			l	thin
+T23	a	17	a:11 c:3 r:1	0.73	a	confirmed
+T25	d	13	d:11 b:1	0.92	t	confirmed
+T26	e	34	e:30 y:1 z:1 u:1	0.91	u	confirmed
+T29	i	3	i:2	1.00	i	confirmed
+T30	l	14	l:9 r:1 i:1 s:1	0.75	n	confirmed
+T31	m	11	o:6 u:1	0.00	e	disagrees
+T33	o	4	o:2 g:1 s:1	0.50	g	confirmed
+T35	r	16	r:9 c:4 h:2	0.60	i	confirmed
+T36	s	2	u:1	0.00	f	thin
+T37	t	8	t:6 p:1 d:1	0.75	u	confirmed
+T38	u	2	u:2	1.00	p	confirmed
+T40	a	2	u:1	0.00	n	thin
+T41	e	25	e:22	1.00	s	confirmed
+T43	i	22	i:14 t:3	0.82	e	confirmed
+T44	l	11	l:5 m:4 d:1 f:1	0.45	e	confirmed
+T45	o	11	u:5 o:3 e:2	0.30	l	disagrees
+T46	u	12	u:10	1.00	q	confirmed
+T47	m	5	f:3 e:1 g:1	0.00	e	disagrees
+T49	s	5	y:2 s:2 i:1	0.40	u	disagrees
+T50	t	2	s:1	0.00	h	thin
+T55	faict	1	i:1 g:1		o	word/null
+T56	faire	1	a:1 s:1 e:1		p	word/null
+T57	la	10	n:5 c:2 a:1 t:1 l:1		e	word/null
+T58	le	7	l:4 e:4 i:1 o:1 y:1 r:1		p	word/null
+T62	que	7	q:7 u:7 e:6		i	word/null

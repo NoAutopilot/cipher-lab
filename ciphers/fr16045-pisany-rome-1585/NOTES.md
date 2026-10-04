@@ -89,3 +89,64 @@ Gallica btv1b100341061, IIIF full/800-1000 px per canvas, one request each, >= 2
 Other headings seen: c423 p.12 "A la Royne mere du Roy, dudict jour" (closing the 26 Aug letter, p.1-12); c472 p.107 "A la Royne, mere de sa Maieste, dudit jour". Pages viewed without a heading: c419, c421, c424, c428, c432, c433, c436, c442, c447, c466, c473, c478, c550 (p.262), c562 (p.286, funeral oration for Cardinal d'Este, so about Jan 1587), c592 (p.346).
 Pairs list (cipher folio -> clear copy): f.228-234 -> Colbert pp.13-34; f.240-245 -> pp.34-~51; f.246-247 -> pp.51-55 (inferred); f.272-280 -> pp.110 ff.; f.297-303 -> pp.324 ff. Not yet checked: whether the cipher passages of these letters fall inside the copied text unchanged (the copy is a fair copy, so cipher passages should appear in clear, but nothing here confirms it); the start pages of the five originals were clear or blank (PIS-M), so their cipher lines have not been located.
 Known-plaintext next step: the 17 Sept 1586 (f.240-245 vs pp.34-55) and 4 Nov 1586 (f.272-280 vs pp.110 ff.) pairs are dated exactly; locate the cipher lines in fr.16045 (about 10-16 canvases, view once at 800 px), crop them with tools/iiif_lines.py, transcribe (2 blind passes + reconciliation per page), then align with tools/interlinear_align.py against the clear copy; about USD 4 for one letter, and it would test Tomokiyo's 1586 table (Vivonne5) as a known-answer check. Not run (outside this brief).
+
+## Known-answer test kp86: 17 Sept 1586, f.244r vs Colbert 16 pt II pp.49-50 (RUN3-PISA, 4 Oct 2026, 09:25-09:4x UTC)
+- Leaves: fr.16045 c486-c503 viewed once at 800 px (18 Gallica requests). Folio offset changes here: canvas = 2 x folio + 12
+  (c488 = f.238 "9 Septembre 1586", c492 = f.240 "17 septembre 1586", c500 = f.244), not PIS-M's 2 x folio + 6, so the RUN3-PISD
+  canvas guesses c486-c496 for f.240-245 sit 6 canvases early. Cipher blocks of the 17 Sept letter: c500 (f.244r, 9 lines), c501
+  (f.244v, about 15 lines, with a left-margin clerk note and a few interlinear letters), c502 (f.245r, about 10 lines); c492-c499
+  clear. f.244r L04 carries small interlinear letters above the cipher (a partial period gloss, unread here).
+- Table: henryiii_Vivonne5.png is captioned "Vivonne's Cipher (1586-1587)" in the image itself, so it is the 1586 table without
+  inference. Cut into 73 value-blind cells by tx86/keycells86.py -> tx86/SIGNSHEET86.png; values key86.tsv (published: Tomokiyo).
+- Crops: `python3 tools/iiif_lines.py --ark btv1b9060906j --canvas 500 --region 600,2680,2960,1460 --out ciphers/fr16045-pisany-rome-1585/images --prefix f244r --debug --max-width 1600 --overlap 100 --centres 80,230,390,560,690,860,1020,1180,1330 --follow-slope 400 --only-lines 1,2,3,4,5,6,7,8`
+  (18 crops; L09 s2 jumped to L08 under the slope tracker, so L09 was re-cut from the cached source with `--image src_..._f500_600_2680_2960_1460.jpg --region 0,1150,2960,310 --centres 60,190`, band 2 copied to f244r_L09_s1/s2; the manifest.json entry for L09 still names the first cut's box). 2 Gallica requests (info.json + region).
+- Clear copy: Colbert 16 pt II c443 p.49 "le ruinant de reputation ..." to c444 p.50 "... s'il les abandonnoit" (c442 pp.46-47 read to
+  locate it; 3 Gallica requests), kp86/colbert_p49_50.txt. The copy's spelling and wording are not the cipher's: the cipher reads
+  "decredit avecque les princes" where the copy has "de credit tant avec les Huguenots du Royaume qu'avec les Princes" (the copyist
+  expands or the cipher omits), matching Tomokiyo's specimen reading at that point.
+- PREREG kp86/PREREG_kp86.md pushed (75e2f3b0) before the passes ran. Passes: two blind Sonnet passes (tx86/PASS_BRIEF86.md):
+  A 434 tokens (52 `?`), B 410 (0 `?`); tools/reconcile_passes.py agree 317/443 = 71.6%, **err_2reader 0.284** (`/` tokens
+  counted). Reconciliation by fixed shape rules, not sign-by-sign (tx86/reconcile86.py, committed e5464e71 before any decode;
+  the reconciler had read the clear copy, so the rules were kept shape-only, and the blind passes are scored separately):
+  317 agreed, 35 A-? -> B label, 17 kept `?`, 25 one-reader-only labels, 15 by the four pair rules, 34 B's label.
+- **Result (kp86/kp86.py -> kp86_result.json): PASS.** Reconciled 410 key tokens (33 dropped): nw_score 0.677 vs key-shuffle p99
+  0.352 (mean 0.287) and order-shuffle p99 0.425 (mean 0.395). Blind pass A alone 0.687 (p99 0.366 / 0.454), pass B alone 0.702
+  (0.350 / 0.434): the PASS does not depend on the reconciliation. Positive control (the copy enciphered with key86 at e=0.284):
+  5/5 seeds pass (0.557-0.637 vs own p99s 0.303-0.311 / 0.366-0.387). Tomokiyo's 1586-87 table reads f.244r in sequence with the
+  period clear copy: a known-answer confirmation of the published table on this page, and the transcription error at 0.284 is
+  low enough for it.
+- Reading: reading_f244r_M.txt / reading_f244r_tokens.tsv by `tools/decode_key.py . --ciphertext tx86/ciphertext_f244r.tsv --key key86.tsv --reading reading_f244r_M.txt --tokens reading_f244r_tokens.tsv`; `--check` "reading up to date".
+  The tool marks 410 tokens H (= a published-key sign was read) and 33 U; under rule 4 these are: key from a published source
+  (Tomokiyo), plaintext of the page attested by the period clear copy -- about 304 decoded letters (0.677 x 449) align identically
+  with the copy (C where they agree), the rest M. 0 S. Not an independent decipherment: Tomokiyo already printed this passage
+  (henryiii.htm, the f.244 specimen) and Anticona 2012-13 p.105 per Tomokiyo.
+- Label -> letter map: kp86/anchored_map.py (key86-anchored alignment, so agreement is known-answer, not independent recovery):
+  41 labels used; 26 confirmed against the copy, 4 disagree (T31 key m reads o:6; T45 key o reads u:5 o:3; T47 key m reads f:3;
+  T49 key s reads y:2 s:2), 6 thin (<2 aligned letters), 5 word signs (T57 "la" aligns n:5 c:2 -- a candidate correction or a
+  mis-labelled sign; T62 "que" q7 u7 e6 confirmed). The unseeded `tools/interlinear_align.py stream` run (--band 80 --step 80
+  --first 80 --iters 5; kp86/stream_key.tsv) agrees with key86 on 3 of 36 letter cells: the flat-start learner does not converge at
+  N=410 (untested-by-this-tool at this length, not a negative on the table).
+- Sorter input: sorter/known_answer_hints.tsv -- the clear copy separates the 3-forms (T23 = a vs hooked T03 = c, both confirmed);
+  the plain 6 reads one letter (i, 15/16); the q/9 forms are too thin on this page; the x-forms are not separated (T31/T45
+  likely a transcription confusion). Shape-level hints only: the 1586 table is a different key from the 1585 sheet the sorter
+  pages use.
+- Requests: Gallica 25 (18 page views + 1 info.json + 1 region + 3 Colbert canvases + 2 earlier contact views), all 200, >= 2 s apart.
+
+## Remaining gaps (RUN3-PISA, 4 Oct 2026)
+Read so far: 1 of 16 letters partly (f.244r, 9 cipher lines, known-answer PASS with Tomokiyo's 1586 table); f.75 (1585) transcribed, NON-TEST.
+- 1585 letters (9) - blocker: not-attempted; test 1 NON-TEST at err 0.43; next: owner sorter page for the f.75 crops (focus groups as before, plus sorter/known_answer_hints.tsv), then test1.py unchanged, ~$1
+- 17 Sept 1586 f.244v + f.245r cipher (c501, c502, about 25 lines) against Colbert pp.50-55 - blocker: not-attempted; outside this brief; next: same pipeline as kp86 (iiif_lines crops, 2 blind passes + rules reconciliation, decode with key86, nw_score vs the copy), ~$4
+- 4 Nov 1586 (f.272-280) and 24 Mar 1587 (f.297-303) vs Colbert pp.110 ff. / pp.324 ff. - blocker: not-attempted; canvases now c556-c572 and c606-c618 under the new offset (re-check by folio number first); next: view, crop, decode with key86, ~$4 each
+- key86 cell corrections (T31, T45, T47, T49, T57) - blocker: not-attempted; outside this brief; next: eye check of those tokens on the f.244r crops against the anchored letters, then re-run kp86.py on a corrected key as a separate pre-registered test, ~$1
+- 18 June 1588 letters (fr.16046 ff.165, 179) not located in Colbert 16 pt II - blocker: not-attempted; outside this brief; next: read headings on Colbert c812-c840, <= 8 requests, ~$0.5
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud, no LOCAL-QUEUE row filed yet; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (RUN3-PISA, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II clear copy paired with f.244r and used as known plaintext (kp86 PASS)
+- [x] clear-pages: clear pages c492-c499 of the 17 Sept letter identified; cipher blocks located on c500-c502
+- [x] known-keys: Tomokiyo 1586 table PASSes on f.244r; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: key86 cell corrections from the anchored map (step above)
+- [x] image-check: f.244r native crops cut and checked
+- [ ] retry: test1.py on sorter-settled 1585 labels; kp86 pipeline on f.244v/f.245r and the 4 Nov 1586 letter
+Verdict: keep going: 7 internal gaps; cheapest next: key86 cell eye check ~$1; most valuable next: the rest of the 17 Sept 1586 cipher and the 4 Nov 1586 letter with key86 against the Colbert copy, ~$4 each

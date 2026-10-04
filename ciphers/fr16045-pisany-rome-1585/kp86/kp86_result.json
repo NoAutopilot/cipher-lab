@@ -1,0 +1,84 @@
+{
+ "clear_letters": 455,
+ "err": 0.284,
+ "tx86/ciphertext_f244r.tsv": {
+  "tokens": 410,
+  "dropped": 33,
+  "decoded_letters": 449,
+  "score": 0.6771,
+  "keyshuffle_p99": 0.3517,
+  "keyshuffle_mean": 0.287,
+  "order_p99": 0.4254,
+  "order_mean": 0.3947,
+  "above_both": true
+ },
+ "tx86/passA.tsv": {
+  "tokens": 366,
+  "dropped": 68,
+  "decoded_letters": 412,
+  "score": 0.6869,
+  "keyshuffle_p99": 0.3664,
+  "keyshuffle_mean": 0.3018,
+  "order_p99": 0.4539,
+  "order_mean": 0.4131,
+  "above_both": true
+ },
+ "tx86/passB.tsv": {
+  "tokens": 394,
+  "dropped": 16,
+  "decoded_letters": 433,
+  "score": 0.7021,
+  "keyshuffle_p99": 0.35,
+  "keyshuffle_mean": 0.292,
+  "order_p99": 0.4342,
+  "order_mean": 0.3983,
+  "above_both": true
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 454,
+    "score": 0.6027,
+    "keyshuffle_p99": 0.3105,
+    "order_p99": 0.3689,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 454,
+    "score": 0.6219,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3763,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 454,
+    "score": 0.6369,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3869,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 454,
+    "score": 0.5912,
+    "keyshuffle_p99": 0.3086,
+    "order_p99": 0.3767,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 454,
+    "score": 0.5572,
+    "keyshuffle_p99": 0.303,
+    "order_p99": 0.3656,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "verdict": "PASS"
+}
