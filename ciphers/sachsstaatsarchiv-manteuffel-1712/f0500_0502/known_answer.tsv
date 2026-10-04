@@ -1,0 +1,11 @@
+# RUN4-MANT3 4 Oct 2026, prereg rule 6: codes already in key.tsv falling inside a run glossed on the copy, scored against that gloss. No clear-vs-cipher pair exists, so this is the only known-answer check available. Run-level glosses: agreement means the key value is consistent with the gloss wording at that position, not a per-code split.
+code	key_value	key_grade	where	gloss	verdict
+864	le Roi de Prusse	C	0502 (=f409v_L20)	Roy de Prusse	agree
+864	le Roi de Prusse	C	0502 (=f409v_M1)	R. de Prusse	agree
+865	le Prince Royal	M	0500 (=f409r para2, written 805 on the copy)	Prince Royal over 840.865	agree (run-level; 2nd gloss attestation; 805/865 again)
+371	il	M	0500 (=f409r para3)	'il nous rendra ...' begins over 371, first code of 371.463.509...	consistent (run-level; not a second pair -- rule 4, no per-code split from a multi-code gloss)
+31 66 21 35 7 33 15 9 50 28 39 22 14	Krauske letters (m . . . g o c i a t i o n)	C/M	0502 (=f409v_L33-L34)	ma negociation	agree (letter-range; the key-constrained reading GAPS177 already gives)
+110 ... 16	Krauske letters	C/M	0502 (=f409v_L34-L35)	la lune suede a quoi je vise	agree (as GAPS177's decode)
+284	comte	C (Krauske)	0502 (=f409v_L15, first code)	ete force a l'accepter	conflict at run level (nomenclator-range run; Krauske's table does not read these runs, RUN4-MANT/GAPS195 logged)
+310	Dresden	C (Krauske)	0502 (=f409v_L19, first code)	faciliter quelque accommodement	conflict at run level (as above)
+155	Flemming	C (Krauske)	0500 (=f409r para3, 5th code)	le feldt marechal agit en aussi honnete homme...	conflict at run level (as above)

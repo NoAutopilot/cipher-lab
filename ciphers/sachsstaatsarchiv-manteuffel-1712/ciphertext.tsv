@@ -2,6 +2,7 @@
 # NOT a transcription of either leaf: excerpts as listed in frame_inventory.tsv (0510 groups are fragments, '...' elided; 0580 groups listed, order not checked).
 # 694-08_0580 rows replaced 3 Oct 2026 (GAPS154) by the reconciled two-pass transcription of f.468 (f468/passes.tsv), one line per group; conf med where both passes agree, low on the long group's split elements and on 9/39.
 # f409v_L13 tok4 648->646 and tok5 87->84 settled 4 Oct 2026 (RUN4-MANT) from both images: f.409v's own digit shapes (6 as in 716/406; this hand's crossed 4 as in 406/402) and frame 0501's parallel copy of the same sentence (553.716.417.646.84.406.108). 84 kept conf low: Krauske 84=sch sits inside a run 0501's gloss shows is not Krauske's table. L13 tok11 287 kept: 0501 has 281, a real copying variant, not settled. 'bir' (L11 etc.) kept as written; 0501 has 612 at the L11 slot (f0501/witness_f409v.tsv).
+# f409v_L23 tok7 320->330 and L28 tok5 589->584 settled 4 Oct 2026 (RUN4-MANT3) from both images: f.409v's own crop (f409v_crops L23/L28, re-read at zoom) and frame 0502's parallel copy (253.406.233.560.403.539.340.156.143.611.330; par 277.584.447.237.560); conf low->med. Neither code is in key.tsv.
 line	pos	sign	conf
 694-08_0580_g01	1	191	med
 694-08_0580_g02	1	187	med
@@ -338,7 +339,7 @@ line	pos	sign	conf
 694-08_0511_f409v_L23	4	156	med
 694-08_0511_f409v_L23	5	143	med
 694-08_0511_f409v_L23	6	611	med
-694-08_0511_f409v_L23	7	320	low
+694-08_0511_f409v_L23	7	330	med
 694-08_0511_f409v_M1	1	864	low
 694-08_0511_f409v_M1	2	357	low
 694-08_0511_f409v_L24	1	611	med
@@ -375,7 +376,7 @@ line	pos	sign	conf
 694-08_0511_f409v_L28	2	285	med
 694-08_0511_f409v_L28	3	375	med
 694-08_0511_f409v_L28	4	277	med
-694-08_0511_f409v_L28	5	589	low
+694-08_0511_f409v_L28	5	584	med
 694-08_0511_f409v_L29	1	447	med
 694-08_0511_f409v_L29	2	237	med
 694-08_0511_f409v_L29	3	560	med

@@ -1,0 +1,23 @@
+# RUN4-MANT3 4 Oct 2026. Code runs cipher in both witnesses, group-for-group. 612 = 'bir' counted as agree (RUN4-MANT). Single worker eye reading at native resolution; a disagreement may be a reading error on either side (digit pairs 3/8, 4/9, 0/6, 1/7 in this hand).
+run	copy_frame	copy_codes	orig_leaf_line	orig_codes	n	agree	variants	gloss_on_copy
+R1	0500	840 805	f409r para2	840 865	2	1	805/865 (copy 805, low)	Prince Royal (run)
+R2	0500	403 1056 974 65 143 348 401 108	f409r para2	403 1056 974 65 143 340 401 108	8	7	348/340 (f.409r crop ambiguous)	le Prince d'Anhalt (run)
+R3	0500	344 225 213	f409r para2	344 225 213	3	3		gagne celuy cy (over 344.225)
+R4	0500	867 134 384 272 155 583 586 351 77 449 612 353 548 863 69 102 jeanf 371 463 509 403 539 237 601 551 504 109 83	f409r para3	867 134 389 272 155 583 586 351 77 449 612 353 548 868 69 101 jeanf 371 463 569 403 539 237 601 551 509 109 83	27	22	384/389 863/868 102/101 509/569 504/509	le feldt marechal agit en aussi honnete homme que Ilgen en (over 867..548); il nous rendra le plus de services qu'il peut (over 371..83)
+R5	0502	284 253 322 114 90 75 123 278 612 84	f409v_L15	284 253 322 14 90 20 123 278 bir 87	10	7	114/14 75/20(70?) 84/87	ete force a l'accepter
+R6	0502	289 655 253 156 515 282 237 408 579	f409v_L16	289 655 253 156 575 282 237 408 579	9	8	515/575	execute? aupres de leur Roy
+R7	0502	592 272 181 99	f409v_L17	592 272 181 99	4	4		Stenbock
+R8	0502	310 198 404 612 106 555 123 480 416 237 434	f409v_L19	310 198 404 bir 106 555 123 480 416 237 434	11	11		faciliter quelque accommodement
+R9	0502	864	f409v_L20	864	1	1		Roy de Prusse
+R10	0502	253 406 233 560 403 539 340 156 143 611 330	f409v_L22-L23	253 406 233 560 403 529 340 156 143 611 330	11	10	539/529 (f.409v low)	expres eluder le plus grand avantage
+R11	0502	864 357	f409v_M1	864 357	2	2		R. de Prusse; Ilgen
+R12	0502	611 648 90 247 548 757 585 564 389	f409v_L24-L25	611 648 90 247 548 757 585 564 384	9	8	389/384	Mattab? a dit; que le Roy de Pol[ogne] seroit
+R13	0502	630 253 84 104 558 109 77 549 414 821 402	f409v_L25-L26	680 253 87 108 558 109 77 549 414 821 402	11	7	630/680 84/87 104/108 (+1 read 558 both)	eut quelqu'un qui luy
+R14	0502	936	f409v_L26	936	1	1		La Butte?
+R15	0502	714 431 73 612 237 715 199 612 89	f409v_L27	714 431 73 bir 237 715 99 bir 89	9	8	199/99	un merite de deux cotes
+R16	0502	592 285 375	f409v_L28	592 285 375	3	3		Stein..
+R17	0502	277 584 447 237 560	f409v_L28-L29	277 584 447 237 560	5	5	f.409v reconciled had 589:low; settled 584	Lysander? (one word)
+R18	0502	185 825	f409v_M2	185 825	2	2		du Roy de Suede
+R19	0502	31 66 21 35 7 33 15 9 50 28 39 22 14	f409v_L33-L34	31 66 21 35 7 33 15 9 50 28 39 22 14	13	13		ma negociation
+R20	0502	110 34 9 2 30 35 51 6 120 46 59 10 25	f409v_L34	110 34 9 2 30 35 51 6 120 46 59 10 25	13	13		la lune suede a quoi je vise (over R20-R21)
+R21	0502	24 6 16 39 9 35 5 46 29 10 20000	f409v_L35	24 6 16 29 9 35 5 46 29 10 20000	11	10	39/29
