@@ -1191,3 +1191,64 @@ work is not excluded. Any quotation of f.144r "text" is unsafe.
    `decode_apply.json` is BIR-APPLY's (exit 0). A rule-7 fresh re-derivation of f.168 is still owed before any stage-9 move.
 4. **Second opinions.** Rule 10 requires a SECOND-OPINIONS-QUEUE row at N3 or better; one row SO-NEVBIR-144-168 covers both
    items (`second-opinions/PROMPT-chatgpt-f144r-f168.md`), framed as a print search, since there is no reading to judge.
+
+# AUDIT 13 (A3V-V2BIR, 4 Oct 2026): f.144r (no.73) and f.168 (no.85) -- second audits and claim scope
+
+Verifier: worker A3V-V2BIR (account 3, for LANE-A3V), brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave3.md`. Separate from every
+solver of these letters, from A3V-VNB1 (AUDIT 12), A3V-RD7 and A3V-RD168. Clock 03:34 UTC at start by `date -u`. Nothing decoded;
+key, ciphertexts and readings untouched; the sorter not touched. Earlier sections untouched.
+
+## 1. Extract (checked against the token files)
+
+- f.168: `harvest/tx_decode/eye/apply/reading_f168_apply_tokens.tsv` re-rendered per token (S lower, M CAPITALS, U ·):
+  `cheisisafaCuaNUatomoltoconloRialteHE / sopRaGpafti·solERn· / guantoilpRoce / dEREsi··sii·tanto·astidiisaamE / maDa·osaELfefUi·iilifoG··m`
+  (S 92 M 20 U 10 of 122, as AUDIT 12 states).
+- f.144r: S 39 M 32 U 19 of 90 (`reading_f144r_owner.txt`, A3V-RD7 SAME), every word sign M; AUDIT 12's rendering checked.
+
+## 2. Search, extending AUDIT 12 (4 Oct 2026)
+
+| family | searched by this verifier | result |
+|---|---|---|
+| (b) Gomberville 1665 **by date** | Gallica ContentSearch P1 `bpt6k6435941k` / P2 `bpt6k9738856z`: quoted "27 Mars", "29 Iuillet", "Mars 1572", "1572"; controls: quoted "1572" answers "Aoust 1572" and "Septembre 1572", quoted "Avril 1571" answers 6 hits | **No piece dated 27 March or 29 July 1572 in either part**; the only 1572 dates are August/September (AUDIT 12 had "Mars 1572"/"Iuillet 1572" 0/0 without a date control; the control now shows the search does answer dated strings) |
+| (e) phrase search on f.168's S words | `tools/print_check.py` (scratch target) on "quanto il procedere suo", "molto con lo" (ia-global, gbooks, openalex, crossref; IA 502 and GB 503 retried once) | "quanto il procedere suo": IA 3 / GB 7 items, all *Nuntiaturberichte aus Deutschland* (papal nuncios), unrelated; "molto con lo": hundreds of unrelated texts. Non-discriminating, as AUDIT 12 predicted; logged as a method limit |
+| (f) Tomokiyo | live nevers.htm fetched (HTTP 200), Birago lines identical to the 1 Oct mirror: "f.144 (no.73) Saluzzo, 27 March 1572", "f.168 (no.85) Saluzzo, 29 July 1572", no "(with decipherment)"; unsolved.htm l.227-228 (mirror): the fr.3251 letters "can be deciphered by using keys reconstructed from already deciphered materials" -- a statement of method, no plaintext | no published decipherment of no.73 or no.85 |
+| (g) Birago studies | OpenAlex 6 queries and CrossRef 2 (listed in `../birago-fr3252-1571-72/AUDIT.md` AUDIT 3; Guinand 2021 ends 1559) | nothing on these letters |
+| JSTOR | AUDIT 12 queued both families (1 family-(i) row with marzo/luglio 1572, 2 bare phrase rows from the clear prose) | not repeated |
+
+Requests: shared with AUDIT 3 of `../birago-fr3252-1571-72` (one session; totals there). Subagents 0.
+
+## 3. Rule-7 gate for f.168
+
+`RD7-2026-10-04-f168.md` (A3V-RD168, 4 Oct 2026, on origin/main d3f2920f): **SAME**, 122/122 tokens identical in value and grade,
+0 differences against 20 M-graded tokens; `decode_key.py --check` exit 0. f.168's reading is reproducible from key and ciphertext.
+
+## 4. Verdict and claim scope
+
+| item | AUDIT 12 | this audit | key source | claim scope |
+|---|---|---|---|---|
+| no.73, f.144r run (90 signs) | N4 | **N4 confirmed** (as a search class) | published (Tomokiyo; T42=m ours) | **class without a reading -- not counted** |
+| no.85, f.168r + f.168v (122 tokens) | N4 | **N4 confirmed** (as a search class) | published (Tomokiyo; T42=m ours) | **class without a reading -- not counted** |
+
+**f.144r.** The S letters are isolated letters and syllables; every word sign is M; nothing can be quoted. Not a reading.
+
+**f.168.** Harder case, ruled conservatively. The S letters do form a few Italian words ("molto con lo", "quanto il proce[dere]" with
+one M letter, "tanto", "sopra"), so this is more than isolated letters; but they are function words with no clause, no name and no
+content a reader could cite as what the letter says, and the judge FAILs (-1.15 vs -0.992). "molto con lo" and "quanto il proce" also
+find hundreds of unrelated prints, which shows how little they carry. It does not count as recovered passages under README's metric now;
+it would on the first clause that reads at S (for example if the f.168v run's "...procedere suo" context, already visible in the clear
+text on the crop, is matched by more cipher).
+
+**N4 is a statement about the search, not about a reading.** Both classes stand on the coverage AUDIT 12 logged plus the dated 1665
+search and the live Tomokiyo check here; internal/unpublished work (Bourdeau's "read in part") not excluded; not N5.
+
+**Safe sentence (both).** AUDIT 12's, unchanged, with one addition: "... neither fragment yet counts as a reading of the letter."
+**Unsafe.** Counting either letter as a unique solve; quoting f.168's words as the letter's content; "first decipherment".
+
+## 5. Postmortem
+
+- AUDIT 12's 1665 date searches had no date control; the control run here shows they answer, so its 0/0 stands as a real search result.
+- AUDIT 12's f.144v finding (a second, untranscribed cipher run of no.73) is endorsed as seen in its log; not re-checked by eye here. The
+  f.144r class does not cover it.
+- Over-claim check: PROGRESS.tsv rows "Birago 1572 f.144" / "f.168" and NEAR.md row 42 grepped: no over-claim. PROGRESS audit-2 cells
+  set to x from this section, with "not counted" in the note so that the C column is not set from the N4 alone.
+- SECOND-OPINIONS-QUEUE: SO-NEVBIR-144-168 exists (AUDIT 12); no new row.

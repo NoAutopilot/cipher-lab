@@ -131,3 +131,78 @@ read" (6 of 771 signs).
 - Queues: `SECOND-OPINIONS-QUEUE.tsv` row SO-BIR3252-117-47 (f.117r and f.47r, N3; prompt `second-opinions/PROMPT-chatgpt-f117-f47.md`);
   none for no.24 (N0). `JSTOR-QUEUE.tsv` 4 rows as above. PROGRESS.tsv audit-1 column set to x on the f.117, f.36 and f.47 rows from
   this section. `phrases.txt` added (the eight phrases of family (e)).
+
+# AUDIT 3 (A3V-V2BIR, 4 Oct 2026): fr.3252 no.77 (f.117r) and no.30 (f.47r) -- second audits and claim scope
+
+Verifier: worker A3V-V2BIR (account 3, for LANE-A3V), brief `.claude/briefs/runs/2026-10-04-acct3-a3v-wave3.md`. A session separate
+from every solver of these letters and from A3V-VB3252 (AUDIT 2) and VERIFY-CEPPO-WP (AUDIT 1); I do not protect their conclusions.
+Clock 03:34 UTC at start by `date -u`. Nothing decoded; key, ciphertext and readings untouched. AUDIT 1 and AUDIT 2 are untouched.
+
+## 1. Extract (checked against the files, not copied from AUDIT 2)
+
+- f.117r: `../nevers-birago-fr3251-1572/harvest/tx_decode/eye/apply/reading_f117_apply_tokens.tsv` (BIR-APPLY, 3 Oct; header "tokens
+  279: H 0, C 0, S 190, M 63, I 0, U 26") -- counts agree with AUDIT 2. Re-rendered per token here (S lower case, M CAPITALS, U ·):
+  `···mguiLam·uElgueNTURINOpseNua·aRde / LAENiNtentionDEconueniBauNS·· / pouRSuoiRLEgoueRne·entde··?pi·r / ceguiSestpeRso·eguiseReNdRoit /
+  ·Susfacileets·inDeLE·eRtou·Es·es / sioNsdestRe·LusenEsREiLEsEeieeC / guec·deuaNtinuouSsu·SiNda·SeB / et·auoRisercesta·aiResiLeneETt /
+  ·esoingetsiSuoussEmbLietantguiS / ReusiSE·QUELLOG·`. The M letters are mostly n, r, l, s and the word codes; the key writes u for v and
+  g for q throughout (Tomokiyo's 1572 table), so "ceguisest" is "ce qui s'est".
+- f.47r: S 6 of 771, all six the letter o (VERIFY-CEPPO-WP); M 751, U 13.
+
+## 2. Search, extending AUDIT 2 (4 Oct 2026)
+
+| family | searched by this verifier | result |
+|---|---|---|
+| (b) recipient's edition **by date** | Gomberville, *Mémoires de Monsieur le duc de Nevers* (1665), Gallica ContentSearch, P1 `bpt6k6435941k`, P2 `bpt6k9738856z`, quoted date strings: "1572", "Mars 1572", "13 Mars", "27 Mars", "29 Iuillet", "Avril 1571", "26 Avril", "5 Avril", plus Lodouic/Ludouic. Positive controls: quoted "Avril 1571" answers 6 hits in P1, quoted "1572" answers "Aoust 1572" (P1 PAG_209, P2 PAG_66) and "Septembre 1572" (P1 PAG_630) | **No dated piece of March 1572 or of 5/26 April 1571 in either part.** P1's "Avril 1571" hits (PAG_576-588) are the English marriage negotiation ("A Westminster le 9 Avril 1571"); the 1572 hits are August/September items and the St Bartholomew. Lodouic/Ludouic hits are Nevers himself and Count Louis of Nassau, never Lodovico Birago. Confirms AUDIT 2's name search by an independent route |
+| (e) phrase search on S runs not used by AUDIT 2 | `tools/print_check.py` (scratch target, `--only ia-global,gbooks,openalex,crossref`) on "qui se rendroit", "et si vous semble", "ce qui s'est", "plus facile", "Birago Carmagnola Torino 1572"; the IA 502s and GB 503s retried once | Only unrelated texts (1790 *L'Amérique indépendante*, Foedera, Mazarinade bibliographies, 19th-c. Italian gazetteers for the Birago/Carmagnola query). The short French phrases are common and do not discriminate; that is a limit of the method on this text, logged, not a negative |
+| (f) Tomokiyo | live `https://cryptiana.web.fc2.com/code/nevers.htm` fetched 4 Oct (HTTP 200) and diffed against the 1 Oct mirror on every Birago line: identical; whole mirror (`sources/cryptiana/`) grepped for 3252/Birago | **fr.3252 appears nowhere on Tomokiyo's pages**; nevers.htm lists only fr.3251's Birago letters; unsolved.htm l.227-228 lists the fr.3251 group as decipherable "by using keys reconstructed from already deciphered materials" (no text given) |
+| (g) Italian/French Birago studies | OpenAlex (keyed): "Birague Saluces" (8), "Ludovico Birago" (84, top 8), "marchesato di Saluzzo 1572" (19), "Carmagnola 1572 Birago" (1), "Birago governatore Saluzzo" (5), "Birague gouverneur marquisat" (8); CrossRef bibliographic "Ludovic de Birague Saluces 1572", "Lodovico Birago marchesato Saluzzo Nevers" | Nothing on these letters. Closest: J. Guinand, "« Des gens de cervelle et de service ». Les capitaines italiens au service du roi de France au Piémont (1551-1559)", *Histoire, économie & société* 2021/4, doi 10.3917/hes.214.0046 -- abstract read (OpenAlex), period ends 1559, before these letters; the Cairn page answered 403, full text not read |
+| JSTOR | AUDIT 2 queued 4 rows; its two family-(ii) rows AND a name with the phrase. Added 1 bare-phrase row: "favoriser ces affaires" (no name, no cipher keyword) | queued; does not block the class |
+
+Requests (this section): gallica.bnf.fr 34 (ContentSearch, shared with AUDIT 13 of the sister folder), be-api.us.archive.org 10,
+www.googleapis.com 10, api.openalex.org 14, api.crossref.org 9, cryptiana.web.fc2.com 2, shs.cairn.info 1 (403). Subagents 0.
+
+## 3. Verdict and claim scope
+
+| item | AUDIT 2 | this audit | key source | claim scope |
+|---|---|---|---|---|
+| no.77, f.117r | N3 | **N4 (raised)** | published (Tomokiyo 1572); transcription corrections ours | **counts as recovered passages** (fragmentary; judge FAIL) |
+| no.30, f.47r | N3 | **N3 confirmed** | published (Tomokiyo Ceppo-Nevers) | **class without a reading -- not counted** |
+
+**f.117r, why N4.** The principal print and project pages are now covered for this letter: the recipient's 1665 edition searched by
+name (AUDIT 2) and by date (here) with answering controls; the BnF printed catalogue (1874, AUDIT 2: "avec chiffre" only); Tomokiyo's
+pages live and mirrored (fr.3252 absent); both solver repositories (AUDIT 2: a Bourdeau candidate row, no reading); open indexes.
+That is the same coverage on which AUDIT2-NEVBIR and AUDIT 12 of `../nevers-birago-fr3251-1572` gave N4 to the sister 1572 letters
+read with the same key. Internal or unpublished work is not excluded (Bourdeau's sweep lists the volume as a candidate); Turin and Paris
+archival copies and HathiTrust full text were not searched. Not N5.
+
+**f.117r claim scope.** The firm letters read as French a reader can quote, though each phrase carries some M letters (in brackets)
+and the word division is ours: "[in]tention [de] conueni[r]" (L02), "pou[rs]uoi[r] [le] goue[r]ne[m]ent" (L03), "ce gui [s]est"
+(= ce qui s'est) and "e gui se [r]e[n]d[r]oit" (L04), "facile" (L05), "d'est[r]e" (L06), "deua[n]t [n]ous" (L07), "[f]auo[r]iser ces
+[af]fai[r]es" (L08), "[et] si [u]ous s[e]mb[l]e ... tant gui[s]" (L09). S letters alone still give "tention", "conueni", "ce gui", "facile",
+"auoriser ces", "tant gui". This is a fragmentary reading of passages, not of the whole letter, and it FAILs the language judge
+(-1.224 vs real_p05 -0.899, AUDIT 2): it counts as a reading at N4 for the metric, and must always be described as fragments.
+
+**f.47r claim scope.** Six isolated o's in 771 signs: no word, no phrase. The class is a search result about an unread letter; it is
+not a reading and is not counted as a unique solve. I do not raise it: raising a novelty class on a text that does not exist would
+only invite its misuse.
+
+**Rule 7 for f.117r.** No fresh-session re-derivation of the f.117r reading is on file (A3V-RD7 did f.144r, A3V-RD168 f.168). BIR-APPLY's
+`decode_key.py --check` on `decode_apply.json` covers all three jobs and was exit 0 in A3V-RD168's run today (RD7-2026-10-04-f168.md
+step 2), so the committed f.117r reading is not stale; a fresh-instance re-derivation is still owed before any stage-9 move. Found, not
+applied.
+
+**Safe sentences.**
+- f.117r: "Under Satoshi Tomokiyo's published 1572 Nevers-Birago key, about two thirds of the 279 cipher signs of Lodovico Birago's letter
+  of 13 March 1572 (BnF fr.3252 f.117r) read at grade S, giving French fragments ('intention de convenir', 'poursuivre le gouvernement',
+  'favoriser ces affaires'); the text still fails a language judge. No prior decipherment located (search log in AUDIT.md, 4 Oct 2026)."
+- f.47r: unchanged from AUDIT 2.
+
+**Unsafe sentences.** "We read Birago's letter of 13 March 1572" (fragments only, judge FAIL); "first decipherment" without "no prior
+decipherment located"; any quotation of f.117r presented as a continuous sentence; any statement that f.47r is read or counts.
+
+## 4. Postmortem
+
+- AUDIT 2's family (ii) JSTOR rows were not bare (each ANDs a name); one bare row added.
+- Over-claim check: NOTES.md, PROGRESS.tsv rows f.117/f.47 and NEAR.md row 30 grepped for new/first/unread/unpublished/solved/cracked:
+  none about the text. PROGRESS audit-2 cells set to x for f.117 and f.47 from this section, with the claim scope in the note.
+- SECOND-OPINIONS-QUEUE: row SO-BIR3252-117-47 already covers both items (AUDIT 2); no new row.
