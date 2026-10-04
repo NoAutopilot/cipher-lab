@@ -65,3 +65,8 @@ Arm A PASS (0.622 vs p99 0.419 / 0.482, control 5/5 at err 0.181). T31 (table m)
 gap 2 (kp86f/t31_witness.tsv): still split, a fifth page where the table's m is not the majority. All T31 tokens M.
 Arm B (T31->o, T45->u, T47->f, T57->n) above A by 0.009 (reconciled), 0.010 / 0.006 (blind A / B): the same small margin as
 on the other pages; not a held-out test (that is PIS1-KEY's). key86.tsv unchanged.
+
+## kp86g witness (PIS1-247, 4 Oct 2026): f.247r (second 17 Sept 1586 letter)
+Arm A PASS (0.639 vs p99 0.431 / 0.494, control 5/5 at err 0.268). T31 (table m): 7 tokens, aligned o 2, m 2, a 1, s 1, gap 1
+(kp86g/t31_witness.tsv): still split; all T31 tokens M. Arm B above A by 0.025 (reconciled), 0.010 / 0.026 (blind A / B): the
+same small margin as on the other pages; not a held-out test (PIS1-KEY's). key86.tsv unchanged.

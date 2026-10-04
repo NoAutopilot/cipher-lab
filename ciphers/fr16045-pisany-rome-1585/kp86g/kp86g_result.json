@@ -1,0 +1,174 @@
+{
+ "clear_letters": 802,
+ "err": 0.268,
+ "remap_B": {
+  "T31": "o",
+  "T45": "u",
+  "T47": "f",
+  "T57": "n"
+ },
+ "arm_A": {
+  "tx86g/ciphertext_f247r.tsv": {
+   "tokens": 361,
+   "dropped": 4,
+   "decoded_letters": 462,
+   "score": 0.6385,
+   "keyshuffle_p99": 0.4312,
+   "keyshuffle_mean": 0.3852,
+   "order_p99": 0.4935,
+   "order_mean": 0.4424,
+   "above_both": true
+  },
+  "tx86g/passA.tsv": {
+   "tokens": 352,
+   "dropped": 3,
+   "decoded_letters": 464,
+   "score": 0.6315,
+   "keyshuffle_p99": 0.432,
+   "keyshuffle_mean": 0.3867,
+   "order_p99": 0.5043,
+   "order_mean": 0.4451,
+   "above_both": true
+  },
+  "tx86g/passB.tsv": {
+   "tokens": 350,
+   "dropped": 4,
+   "decoded_letters": 449,
+   "score": 0.6481,
+   "keyshuffle_p99": 0.4355,
+   "keyshuffle_mean": 0.3881,
+   "order_p99": 0.4967,
+   "order_mean": 0.4447,
+   "above_both": true
+  },
+  "positive_control": {
+   "seeds": [
+    {
+     "seed": 0,
+     "N": 462,
+     "score": 0.6167,
+     "keyshuffle_p99": 0.4003,
+     "order_p99": 0.4551,
+     "pass": true
+    },
+    {
+     "seed": 1,
+     "N": 462,
+     "score": 0.6446,
+     "keyshuffle_p99": 0.3979,
+     "order_p99": 0.4572,
+     "pass": true
+    },
+    {
+     "seed": 2,
+     "N": 462,
+     "score": 0.6346,
+     "keyshuffle_p99": 0.3981,
+     "order_p99": 0.4424,
+     "pass": true
+    },
+    {
+     "seed": 3,
+     "N": 462,
+     "score": 0.5983,
+     "keyshuffle_p99": 0.3941,
+     "order_p99": 0.4484,
+     "pass": true
+    },
+    {
+     "seed": 4,
+     "N": 462,
+     "score": 0.5825,
+     "keyshuffle_p99": 0.3976,
+     "order_p99": 0.454,
+     "pass": true
+    }
+   ],
+   "passed": 5,
+   "pass": true
+  },
+  "verdict": "PASS"
+ },
+ "arm_B": {
+  "tx86g/ciphertext_f247r.tsv": {
+   "tokens": 361,
+   "dropped": 4,
+   "decoded_letters": 455,
+   "score": 0.6637,
+   "keyshuffle_p99": 0.4325,
+   "keyshuffle_mean": 0.3844,
+   "order_p99": 0.4923,
+   "order_mean": 0.4446,
+   "above_both": true
+  },
+  "tx86g/passA.tsv": {
+   "tokens": 352,
+   "dropped": 3,
+   "decoded_letters": 457,
+   "score": 0.6411,
+   "keyshuffle_p99": 0.434,
+   "keyshuffle_mean": 0.3862,
+   "order_p99": 0.4946,
+   "order_mean": 0.4457,
+   "above_both": true
+  },
+  "tx86g/passB.tsv": {
+   "tokens": 350,
+   "dropped": 4,
+   "decoded_letters": 442,
+   "score": 0.6742,
+   "keyshuffle_p99": 0.4362,
+   "keyshuffle_mean": 0.388,
+   "order_p99": 0.4955,
+   "order_mean": 0.4456,
+   "above_both": true
+  },
+  "positive_control": {
+   "seeds": [
+    {
+     "seed": 0,
+     "N": 455,
+     "score": 0.6336,
+     "keyshuffle_p99": 0.3983,
+     "order_p99": 0.4589,
+     "pass": true
+    },
+    {
+     "seed": 1,
+     "N": 455,
+     "score": 0.6515,
+     "keyshuffle_p99": 0.3989,
+     "order_p99": 0.4538,
+     "pass": true
+    },
+    {
+     "seed": 2,
+     "N": 455,
+     "score": 0.63,
+     "keyshuffle_p99": 0.4008,
+     "order_p99": 0.4477,
+     "pass": true
+    },
+    {
+     "seed": 3,
+     "N": 455,
+     "score": 0.6099,
+     "keyshuffle_p99": 0.3954,
+     "order_p99": 0.4566,
+     "pass": true
+    },
+    {
+     "seed": 4,
+     "N": 455,
+     "score": 0.5824,
+     "keyshuffle_p99": 0.4062,
+     "order_p99": 0.4536,
+     "pass": true
+    }
+   ],
+   "passed": 5,
+   "pass": true
+  },
+  "verdict": "PASS"
+ }
+}
