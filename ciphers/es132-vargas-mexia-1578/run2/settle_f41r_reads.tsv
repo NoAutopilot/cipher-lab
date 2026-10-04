@@ -1,0 +1,77 @@
+id	choice	tokens	conf
+I01	1		high
+I02	2		high
+I03	2		low
+I04	2		low
+I05	other	22@rmark	low
+I06	2		high
+I07	other	6ρ	low
+I08	1		low
+I09	2		low
+I10	1		high
+I11	1		low
+I12	2		high
+I13	1		low
+I14	1		low
+I15	1		low
+I16	other	24. 24+@dots	low
+I17	1		high
+I18	2		low
+I19	2		high
+I20	2		high
+I21	1		high
+I22	2		high
+I23	1		high
+I24	1		low
+I25	2		high
+I26	2		high
+I27	2		high
+I28	other	21@rmark	low
+I29	2		low
+I30	2		low
+I31	other	24.	low
+I32	2		low
+I33	2		low
+I34	2		high
+I35	1		low
+I36	2		low
+I37	1		high
+I38	other	13+@bar	low
+I39	1		high
+I40	2		high
+I41	2		high
+I42	1		low
+I43	other	20+ 22+	low
+I44	2		low
+I45	2		low
+I46	1		low
+I47	2		low
+I48	2		low
+I49	1		low
+I50	1		low
+I51	1		low
+I52	2		high
+I53	2		high
+I54	1		high
+I55	1		low
+I56	1		low
+I57	2		high
+I58	1		high
+I59	1		low
+I60	2		low
+I61	2		low
+I62	2		low
+I63	1		low
+I64	other	16.@hat 24.	high
+I65	other	7ρ@rmark	low
+I66	1		low
+I67	2		low
+I68	1		low
+I69	2		high
+I70	2		high
+I71	1		low
+I72	2		high
+I73	1		low
+I74	2		high
+I75	2		low
+I76	1		low
