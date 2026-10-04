@@ -270,4 +270,62 @@ recherches qu'aucuns princes et estats d'Italie font ..."), and a 7 July 1574 le
 Not tested here (no decode in this brief): the printed text is a crib candidate for c516 and for whatever part of c510-515 the
 excerpts cover; the copy the print rests on may be a decipherment, abridged or re-worded.
 
-(Step 2, Dupuy 521 date index, in progress at 01:2x UTC; section continues below when done.)
+**Step 2, Dupuy 521 date index** (`dupuy521_dates.tsv`, `dupuy521_align.tsv`). Gallica OCR does not exist for this manuscript (a
+17th-c. fair copy; the AEM notice cc88656k lists no items), so the route was the IIIF images: 259 canvases (each an opening) fetched
+once at `full/1000,` and read by two blind Sonnet subagent passes (canvases 1-128 and 129-259), each writing every piece start,
+heading and date line; 475 rows. Spot-checked by this worker on canvases 36, 76, 221 and 226. Dupuy 521 runs 24 May 1571 (the
+instructions) to 25 Sept 1574 in date order, with the King's, Queen's and Sultan's letters interleaved; Acqs writes from Venice
+(Jul 1571-Jan 1572), Pera (Mar 1572-Sept 1574) and Branza by Ragusa (Nov 1572-Jan 1573).
+
+Alignment to fr.16142 (`dupuy521_align.tsv`): of the 24 fr.16142 cipher letters dated within Dupuy's range, 21 have a Dupuy piece of
+the same date and addressee; 2 are confirmed by text, the rest by date only:
+- **c510-516 (7 July 1574, to the King) = Dupuy 521 canvases 221R-226R (ff.~111-112 by the leaf numbers on the images), text-confirmed
+  at both ends.** Dupuy 221R: "Au Roy / Sire, Le dernier du passé j'ay receu la depesche qu'il a pleu a Vostre Majesté me faire du
+  xvij avril, j'avois pensé quelques jours auparavant la reception d'icelle que ..." -- word for word the clear lead-in on c510
+  before its cipher starts, continued in clear. Dupuy 226R: "Sire quelques jours avant recevoir vostre depesche du dix huictiesme
+  d'avril j'avois entendu qu'il plaist a Vostre Majesté me mander des conspirations faictes contre sa personne ..." -- the c516 lead-in
+  and Charrière's excerpt; ends "... de Pera lez Constantinople ce vj Juillet 1574" (fr.16142's heading has 7). About 5 openings
+  (~10 pages) of clear text against ~6.5 cipher pages: likely the whole letter, possibly abridged (the volume calls itself
+  "Extraits"); not compared line by line.
+- **c275-276 (25 April 1572, to Anjou) = Dupuy 36R-37L, text-confirmed.** Dupuy 36R "Monseigneur, Encores que ma venue en ce pays
+  nayt esté moins agreable aux Turcs pour me veoir arriver bien tost apres la perte de leur armée de mer, que ..." = c275's clear
+  lead-in before the cipher.
+- Date-only matches for the other open letters: c330 (8 July 1572, Queen) = 64R-65L; c358-361 (Aug 1572 copy + PS 18/20 Aug) =
+  71L-73R; c409-410 (6 Sept 1572) = 76L-77L (opening consistent); c245-246 + c464 (8 March 1573, King) = 121R-122L; c472-473 (8 March
+  1573 + PS 12 March, Queen) = 122L-123R.
+- No Dupuy piece found: c231-232 ("Relation d'une bataille", 1571) and c225-226 (2 Dec 1571, glossed anyway); c520 onward is after
+  Dupuy's range.
+
+**What this changes.** The CS-4 question "is c510-516 really open?" is answered: it is not -- its plaintext (as Dupuy's copyist has
+it) sits in Dupuy 521, and Charrière III prints parts of it. Of the ~23,600 signs left without a gloss or sheet on the leaves (step
+1), all but c231 (~1,500) now have a date-matched clear copy in Dupuy 521, two of them text-confirmed. The target's open part shrinks
+to the "Relation d'une bataille" and to whatever Dupuy abridged. For the key, c510-516 + Dupuy 221R-226R is a ~9,750-sign
+known-plaintext pair on leaves no reader has seen before -- the "new material" rule 3's third-attempt clause asked for (NX-RECUT),
+usable once the glyph inventory is settled. Not done here (no transcription, no decode in this brief).
+
+Requests: gallica.bnf.fr 296 (31 fr.16142 pages at 1500 px, 2 native regions c275/c516, 1 Dupuy manifest, 2 trial + 259 Dupuy
+openings at 1000 px, 1 extra trial fetch of c258 at 600 px), all HTTP 200, 1.6-2 s apart; archivesetmanuscrits.bnf.fr 1 (notice
+cc88656k); archive.org 1 (Charrière III djvu text). Calls: 2 Sonnet subagents (Dupuy index), 0 for step 1.
+
+## Remaining gaps (RUN1-NX, 4 Oct 2026)
+Read so far: 351 of 353 canvases surveyed at 400 px, 31 open/unclear C/P pages re-read at 1500 px; Dupuy 521 indexed whole (259 openings); 21 of 24 in-range cipher letters matched to a Dupuy copy (2 by text); c262 transcribed 4 times, gate failed twice; 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (readers split 31% on the same crops) - blocker: not-attempted; every known-answer use (c262 gloss, c510-516 vs Dupuy) waits on it (rule 3 third-attempt clause, NX-RECUT); next: glyph_atlas exemplars per table row from c262 + c510 into the sign sorter for the person to settle, then blind passes against the settled labels, ~$6
+- c510-516 known-plaintext pair with Dupuy 521 221R-226R not yet used - blocker: not-attempted; outside this brief (no transcription); next: two passes transcribing Dupuy 221R-226R clear text (10 pages, crops per page), then a pre-registered known-answer gate on c510's first cipher lines once the sorter labels exist, ~$4
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; outside this brief's index scope; next: one native look per pair at the clear lead-in words on the fr.16142 leaf vs the Dupuy opening, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not named in this brief; next: grep Charrière III and the Lepanto relations in print for its clear opening "Le gain de ceste grande bataille advenue en saison incommode", ~$1
+
+## Escalation (RUN1-NX, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); c245-246/c464 found to be a further same-text pair (RUN1-NX)
+- [x] clear-pages: Dupuy 521 indexed and aligned by date (dupuy521_align.tsv); c510-516 and c275-276 text-confirmed; Charrière III 7 July 1574 excerpts located
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read for the June-July 1574 excerpts
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut with --follow-slope (NX-RECUT); 31 open/unclear pages re-read at 1500 px (RUN1-NX)
+- [ ] retry: known-answer with settled glyph labels (sign sorter), on c262 or on c510 against Dupuy 221R; planned step: glyph_atlas + sorter sheet
+Verdict: keep going: 4 internal gaps; cheapest next: text-check the date-only Dupuy matches, ~$1; the known-answer retry needs the sorter first
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN1-NX):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

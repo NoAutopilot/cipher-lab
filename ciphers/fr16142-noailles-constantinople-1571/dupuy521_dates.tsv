@@ -1,0 +1,478 @@
+# BnF Dupuy 521 (Gallica ark:/12148/btv1b100339270, 259 canvases = openings, L/R = left/right page), 17th-c. fair copy 'Extraits de la correspondance de François de Noailles' (May 1571-Sept 1574): every piece start, heading and date line, one row each; continuous-prose openings omitted.
+# Read from IIIF full/1000, images (259 requests, 4 Oct 2026 00:53-01:15 UTC) by two blind Sonnet subagent passes (canvases 1-128, 129-259), RUN1-NX (LANE-RUN1, account 1). Day numbers marked medium/low may be off by a few days; spot-checked by eye: canvases 36, 221, 226, 76 (see NOTES.md). Grade: an index, not a transcription.
+canvas	side	kind	text_as_written	date_iso	sender_to	confidence
+4	R	heading	Depesches de Mre Francois de Noailles evesque d'Acqs escrites pendant son ambassade a la porte du grand Seigneur, au Roy, avec les responses de sa Mte, depuis le mois de Mai 1571 jusques a la fin de l'annee 1574		Acqs<->King	high
+5	R	heading	Extraict du Registre des Despesches recues et envoyees au voyage et legation de Messire Francois de Noailles Evesque d'Acqs ... (despesche a Gaillon le ...e de may, congé a Paris le ...e dud. mois, mil cinq cens soixante et unze)	1571-05-?		medium
+5	R	start	Instructions donnees audit Sr d'Acqs en ladicte charge et ambassade	1571-05-?	King->Acqs	medium
+7	R	date	... vingtquatriesme jour de may mil cinq cens soixante et unze (end of instructions; place Gaillon?)	1571-05-24	King->Acqs	low
+7	R	heading	Lettre du Roy a la Seigneurie de Venise presentee par Monsieur d'Acqs le neufiesme septembre 1571	1571-09-09	King->Venice	medium
+7	R	start	Tres chers et grands amys alliez et confederez	 	King->Venice	high
+8	R	date	... vingtsixiesme? jour de May mil cinq cens soixante et unze, Signé Charles et plus bas Fizes	1571-05-26	King->Venice	low
+8	R	heading	Autre Lre du Roy a ladicte Seigneurie presentee par Monsieur du Ferrier son ambassade		King->Venice	medium
+8	R	start	Tres chers et grands amys	 	King->Venice	medium
+9	R	date	... a Fontainebleau le vingtsixiesme Juillet mil cinq cens soixante et unze (end of letter to Venice)	1571-07-26	King->Venice	medium
+9	R	heading	Lettre du Roy au grand Seigneur portee et presentee par mondit sieur d'Acqs le vingttroisiesme Mars 1572	1572-03-23	King->Sultan	medium
+9	R	start	Tres haut, tres excellent, tres puissant, tres magnanime et invincible Prince, le grand Empereur des Musulmans Sultan Selim Han	 	King->Sultan	high
+10	R	date	... le vingtquatriesme? de May mil cinq cens soixante et unze, Signé Charles (end of letter to Sultan; place read Boulogne/Gaillon?)	1571-05-24	King->Sultan	low
+11	L	heading	Lettre du Roy au premier Bassa portee et presentee par Monsieur d'Acqs le vingtsixiesme Mars mil cinq cens soixante douze	1572-03-26	King->Pasha	medium
+11	L	start	Illustre et magnifique Seigneur	 	King->Pasha(Mehmed Sokollu)	high
+11	R	date	... le vingttroisiesme? jour de May mil cinq cens soixante et unze, Signé Charles; a Illustre et magnifique Seigneur Mehemet premier Bassa du grand Seigneur	1571-05-2?	King->Pasha	low
+12	L	start	Au Roy / Sire,	 	Acqs->King	high
+13	R	date	De Venise? le vingtsixiesme Juillet mil cinq cens soixante et unze. Signé Noailles evesque d'Acqs	1571-07-26	Acqs->King	medium
+13	R	start	A Mons. de Sauve Conseiller du Roy, Secretaire d'Estat et de ses finances / Monsieur,	 	Acqs->Sauve	high
+16	L	date	De Venise? le huictiesme d'Aoust mil cinq cens soixante et unze. Signé Noailles (end of letter to Sauve)	1571-08-08	Acqs->Sauve	low
+16	L	start	Au Roy / Sire, J'ay receu celle que Vre Ambassadeur de Venise m'a escripte...	 	Acqs->King	high
+16	R	date	De Venise? le seiziesme? d'Aoust mil cinq cens soixante et unze. Signé Noailles Evesque d'Acqs	1571-08-16	Acqs->King	low
+16	R	start	Au Roy / Sire, Je n'ay encore d'un moys ...	 	Acqs->King	high
+18	L	date	Signé Noailles Evesque d'Acqs. A Venise le sixiesme jour de Septembre mil cinq cens soixante et unze	1571-09-06	Acqs->King	medium
+18	L	start	Au Roy / Sire, Le septiesme de ce moys, je donnay a Vre Majesté mon arrivée a Venise...	 	Acqs->King	high
+22	R	date	De Venise le vingtquatriesme Septembre mil cinq cens soixante et unze. Vostre ... Noailles	1571-09-24	Acqs->King	medium
+23	L	start	Au Roy / Sire, Il ne m'est possible jusques a present de hasarder mon voyage...	 	Acqs->King	high
+24	R	date	De Venise le vingtdeuxiesme octobre ... Vostre ... Noailles	1571-10-22	Acqs->King	medium
+24	R	start	Au Roy / Sire, Je vous ay cy devant escript qui estoit ... 	 	Acqs->King	high
+27	L	date	De Venise ce troisiesme Novembre mil cinq cens soixante et unze. Signé Noailles	1571-11-03	Acqs->King	medium
+27	R	start	Monseigneur, Vous cognoissez par vos Estats comme en peu d'heures le monde s'est bien changé en ce pays...	 	Acqs->Monseigneur (Anjou?)	medium
+28	L	date	De Venise ce quatriesme? Novembre mil cinq cens soixante et unze. Signé Noailles	1571-11-04	Acqs->Monseigneur	low
+28	R	start	Au Roy / Sire, Je ne doubte point que la despesche portee par Milan n'ayt faict voir a Vostre Majesté...	 	Acqs->King	high
+31	R	date	De Padoue le quatorziesme Novembre mil cinq cens soixante et unze. Signé Noailles	1571-11-14	Acqs->King	medium
+31	R	start	Au Roy / Sire, Vostre Majesté entendra par la despesche que luy fait presentement son Ambassadeur...	 	Acqs->King	high
+32	R	date	De Venise le trentiesme de Novembre mil cinq cens soixante et unze	1571-11-30	Acqs->King	medium
+33	L	start	Au Roy / (no Sire) On commence a tenir pour chose presque asseuree que l'Empereur entrera en la ligue...	 	Acqs->King	medium
+35	L	date	... le vingtquatriesme Janvier mil cinq cens soixante et douze (place illegible, De Venise?)	1572-01-24	Acqs->King	low
+35	L	start	Au Roy / Sire, Ayant trouvé ceste commodité d'escrire a Vostre Majesté par la voye de l'Ambassadeur de Venise...	 	Acqs->King	high
+35	R	date	De Constantinople ce ...tiesme de Mars? mil cinq cens soixante et douze. Signé Noailles	1572-03-?	Acqs->King	low
+36	L	start	Au Roy / Sire, Apres mon partement de Venise j'ay escript a Vostre Majesté...	 	Acqs->King	high
+36	R	date	De Constantinople ce vingtcinquiesme Avril mil cinq cens soixante et douze. Signé Noailles Evesque d'Acqs	1572-04-25	Acqs->King	medium
+36	R	start	A Monseigneur / Monseigneur, Je ne doubte que ma venue en ce pays n'aye este ...	 	Acqs->Monseigneur (Anjou?)	medium
+37	L	date	De Constantinople ce vingtcinquiesme d'Avril mil cinq cens soixante et douze. Signé Noailles Evesque d'Acqs	1572-04-25	Acqs->Monseigneur	medium
+37	L	heading	Discours	 	Acqs->King	high
+37	L	start	Sire, J'ay veu vos predecesseurs ont este hereditaire(s)...	 	Acqs->King	medium
+47	R	start	Sire, Je ne vous fais pas icy de doubte ... (may be same discourse; new "Sire" opener)	 	Acqs->King	low
+48	R	heading	Du Roy? (flourished; may read Au Roy)	 	King->Acqs?	low
+48	R	start	Monsieur de Jacques? (d'Acqs?), j'ay sceu que vous... (answer)	 	King->Acqs	low
+48	R	date	A Amboise le dixiesme jour de Janvier mil cinq cens soixante et douze	1572-01-10	King->Acqs	medium
+48	R	start	Au Roy / Sire, J'ay bien au long escript a Vostre Majesté par le Sieur de la Turquie...	 	Acqs->King	high
+51	L	date	De Constantinople ce huictiesme de May mil cinq cens soixante et douze	1572-05-08	Acqs->King	medium
+51	L	start	Sire, Si ceux de Hongrie ... (short new piece after date)	 	Acqs->King	low
+51	L	heading	Du Roy	 	King->Acqs	medium
+51	L	start	Monsieur d'Acqs, par les dernieres lettres du dixneufiesme Decembre j'ay entendu comme vous estiez arrive a Zara...	 	King->Acqs	medium
+52	R	date	A Amboise le dixneufiesme de Janvier mil cinq cens soixante et douze	1572-01-19	King->Acqs	medium
+52	R	heading	Au Roy	 	Acqs->King	high
+52	R	start	Sire, J'ay escript a Vostre Majesté le vingthuitiesme Mars, vingtcinquiesme Avril et huictiesme May...	 	Acqs->King	high
+59	L	date	De la Vigne de Pera lez Constantinople ce dixiesme? jour de Juing mil cinq cens soixante et douze. Signé de Noailles Evesque d'Acqs	1572-06-10	Acqs->King	medium
+59	L	heading	D'une Lettre a Mons. de Sauve	 	Acqs->Sauve	high
+59	L	start	Aussi tres humblement j'ay entendu ... la conqueste de Callais	 	Acqs->Sauve	medium
+60	R	date	De la Vigne de Pera lez Constantinople ce dixiesme? de Juing mil cinq cens soixante et douze	1572-06-10	Acqs->Sauve	low
+60	R	heading	Au Roy	 	Acqs->King	medium
+60	R	start	Sire, ... le Bassa m'a faict plusieurs fois de vous persuader...	 	Acqs->King	high
+64	L	date	De la Vigne de Pera lez Constantinople ce huictiesme Juillet mil cinq cens soixante et douze. Noailles E. d'Acqs	1572-07-08	Acqs->King	medium
+64	R	start	Sire, outre la response que le grand Seigneur fait presentement a la lettre que Vostre Majesté luy avoit escripte par le sieur de Bevinguy... (no heading; may be postscript/new letter)	 	Acqs->King	low
+64	R	heading	La Royne	 	Acqs->Queen	high
+64	R	start	Madame, Vos Majestés attendront de ...	 	Acqs->Queen	high
+65	L	date	De la Vigne de Pera le 8 Juillet 1572 (end of Queen letter, written 8 Juillet 1572)	1572-07-08	Acqs->Queen	medium
+65	R	heading	A Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+65	R	start	Monseigneur, Hier arriva le Chaoux qui estoit allé a Boulongue (Poland news)...	 	Acqs->Monseigneur (Anjou?)	high
+66	L	date	De la Vigne de Pera le huictiesme Juillet mil cinq cens soixante et douze. Noailles	1572-07-08	Acqs->Monseigneur	medium
+66	L	heading	Au Roy	 	Acqs->King	high
+66	L	start	Sire, C'est pour vous advertir comme ayant esté aux dangers de libre ...	 	Acqs->King	high
+67	L	date	De ...tiesme (May or Juillet?) mil cinq cens soixante et douze	1572-0?-??	Acqs->King	low
+67	L	heading	Au Roy	 	Acqs->King	high
+67	L	start	Sire, Le huictiesme de ce moys je donnay bien au long a Vostre Majesté par le Sieur de Bevinguy...	 	Acqs->King	high
+68	L	date	De la Vigne de Pera lez Constantinople le dixiesme? Juillet mil cinq cens soixante et douze. Signé de Noailles Evesque d'Acqs	1572-07-10	Acqs->King	low
+68	R	start	Sire, Apres avoir escript les deux lettres, j'ay receu les deux Vostres escriptes a Chambord le vingtiesme?...	 	Acqs->King	medium
+70	L	start	Monseigneur, J'ay veu qu'il a pleu au Roy de m'escrire de l'onziesme de May pour ce qui vous touche... (end of previous: Signé Noailles Evesque d'Acqs, no date)	 	Acqs->Monseigneur	medium
+71	L	date	De la Vigne de Pera lez Constantinople ce dernier Juillet mil cinq cens soixante et douze	1572-07-31	Acqs->Monseigneur	medium
+71	L	heading	Au Roy	 	Acqs->King	high
+71	L	start	Sire, Le dixiesme? du moys passé je vous fis une despesche accusant la reception...	 	Acqs->King	high
+72	R	start	Sire, Ce jourd'huy ...ziesme d'Aoust, le Sieur Ambassadeur d'Ungrie et le Baron d'Vaguinade (Poland/Moldavia news)	1572-08-?	Acqs->King	low
+73	L	date	De la Vigne de Pera lez Constantinople le dixhuictiesme Aoust mil cinq cens soixante et douze. Signé Noailles	1572-08-18	Acqs->King	medium
+73	L	heading	(Une) autre lettre du vingtcinquiesme Aoust dudit sieur d'Acqs escripte au Roy en ces termes	1572-08-25	Acqs->King	medium
+73	L	date	De la Vigne de Pera le vingtcinquiesme Aoust mil cinq cens soixante et douze	1572-08-25	Acqs->King	medium
+73	R	heading	Post Scripta du vingtiesme a la depesche du dixhuictiesme Aoust 1572	1572-08-20	Acqs->King	medium
+73	R	start	Sire, Le vingtiesme de ce moys le Bassa me fit sçavoir la teneur de l'azyle que j'avois fait au grand Seigneur...	1572-08-20	Acqs->King	high
+74	L	start	Sire, Depuis ma lettre escripte le Dragoman du grand Seigneur m'a dit de la part du Bassa...	 	Acqs->King	low
+74	R	heading	Au Roy	 	Acqs->King	high
+74	R	start	Sire, Voyant la longueur dont on use a me respondre sur ceste affaire que j'avois faict au grand Seigneur...	 	Acqs->King	high
+75	L	date	De la Vigne de Pera lez Constantinople le vingtseptiesme Septembre mil cinq cens soixante et douze	1572-09-27	Acqs->King	medium
+75	R	heading	Du quatriesme Septembre mil cinq cens soixante et douze	1572-09-04	Acqs->King	medium
+75	R	start	Sire, J'ay soubstenu ... despesche de l'Ambassadeur de Poulongue...	1572-09-04	Acqs->King	high
+76	L	date	(end: Signé Noailles Evesque d'Acqs, no date given)		Acqs->King	medium
+76	L	heading	Autre Lre au Roy du sixiesme Septembre mil cinq cens soixante et douze	1572-09-06	Acqs->King	medium
+76	L	start	Sire, Hier j'escrivis a Vostre Majesté et Monseigneur la resolution que l'avoit rendue le Bassa...	1572-09-06	Acqs->King	high
+77	L	date	De la Vigne de Pera lez Constantinople le cinquiesme jour de Septembre mil cinq cens soixante et douze. Signé Noailles	1572-09-05	Acqs->King	medium
+77	L	heading	Monseigneur. Du Deuxiesme jour de Septembre 1572	1572-09-02	Acqs->Monseigneur (Anjou?)	high
+77	L	start	Monseigneur, Hier l'Ambassadeur ... (de Poulongue)	1572-09-02	Acqs->Monseigneur (Anjou?)	high
+79	L	date	(inline reference: le huictiesme de Juillet dernier - not a letter date)			
+79	L	heading	Du Roy	 	King->Acqs	high
+79	L	start	Monsieur d'Acqs, Je vous donne advis que mon Cousin le Marquis de Mayenne se retourne d'Italie...	 	King->Acqs	high
+79	R	date	... le troisiesme Aoust mil cinq cens soixante et douze (place illegible)	1572-08-03	King->Acqs	medium
+79	R	heading	Du Roy	 	King->Acqs	high
+79	R	start	Monsieur d'Acqs, J'ay bien sceu ce que vous m'avez escript par vostre longue lettre...	 	King->Acqs	high
+82	L	date	... ce vingtquatriesme jour d'Aoust mil cinq cens soixante et douze	1572-08-24	King->Acqs	medium
+82	L	heading	Du Roy	 	King->Acqs	high
+82	L	start	Monsieur d'Acqs, Je vous advertis que Sigismond Roy de Poulongue estant decede...	 	King->Acqs	high
+83	L	date	... le sixiesme jour de Septembre mil cinq cens soixante et douze	1572-09-06	King->Acqs	medium
+83	L	heading	Du Roy (catchword at foot)	 	King->Acqs	medium
+83	R	heading	Du Roy	 	King->Acqs	high
+83	R	start	Monsieur d'Acqs, Je suis bien aise que vous teniez tousjours le Bassa en devotion...	 	King->Acqs	high
+83	R	date	... ce septiesme Septembre mil cinq cens soixante et douze	1572-09-07	King->Acqs	medium
+83	R	heading	Au Roy	 	Acqs->King	medium
+83	R	start	Sire, Suivant ce que j'escrivis a Vostre Majesté par ma lettre du sixiesme Septembre...	 	Acqs->King	high
+85	R	date	De Branza lez Raguze ce ...iesme (dixneufiesme?) Novembre mil cinq cens soixante et douze. Signé Noailles Evesque d'Acqs	1572-11-19	Acqs->King	low
+85	R	heading	Post Scripta du 28 Novembre 1572	1572-11-28	Acqs->King	high
+85	R	start	Sire, Depuis la presente escripte j'ay receu...	1572-11-28	Acqs->King	high
+86	L	heading	La Royne	 	Acqs->Queen	high
+86	L	start	Madame, Par la lettre que j'escrivis au Roy et a Monseigneur vos Majestes cognoistront qua mon partement de Constantinople...	 	Acqs->Queen	high
+88	L	date	De Branza lez Raguze ce ...iesme (dixneufiesme?) Novembre mil cinq cens soixante et douze. Signé de Noailles Evesque d'Acqs	1572-11-19	Acqs->Queen	low
+88	L	start	Madame, Ayant par ... (new piece, no heading)	 	Acqs->Queen	low
+89	L	heading	Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+89	L	start	Monseigneur, Je vous advertis le huictiesme ...	 	Acqs->Monseigneur (Anjou?)	high
+91	L	date	De Branza lez Raguze ce dixneufiesme Novembre mil cinq cens soixante et douze. Signé Noailles Evesque d'Acqs	1572-11-19	Acqs->Monseigneur	medium
+91	L	heading	Monseigneur	 	Acqs->Monseigneur	high
+91	L	start	Monseigneur, Du dixhuictiesme de ce moys la despesche de mon Cousin Monsieur de Montagnac present porteur...	 	Acqs->Monseigneur	high
+94	R	date	Du port de Branza lez Raguze ce vingthuictiesme jour de Novembre mil cinq cens soixante et douze. Signé Noailles Evesque d'Acqs	1572-11-28	Acqs->Monseigneur	medium
+94	R	heading	Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+94	R	start	Monseigneur, Ce de vous que mande ... miserable et perilleux voyage...	 	Acqs->Monseigneur (Anjou?)	medium
+95	L	date	Du port de Branza lez Raguze ce vingtneufiesme de Novembre mil cinq cens soixante et douze. Signé de Noailles Evesque d'Acqs	1572-11-29	Acqs->Monseigneur	medium
+95	L	heading	Du Roy (catchword at foot)	 	King->Acqs?	low
+95	R	heading	Au Roy par le Grand Seigneur. Portee par le sieur de Montagnac Conseiller au Parlement de Bourdeaux le xxix de Novembre 1572	1572-11-29	Sultan->King	high
+95	R	start	Al piu stimato Signore di tutti i grandi Signori Christiani... (Italian text)	 	Sultan->King	high
+97	R	date	Scritta in Constantinopoli in ultimo della luna di Rabul (Rabi' al-akhir?) anno 980 del nostro Profeta (Hijri); Traduta per Hurem Begh... Dragomano	1572-09-??	Sultan->King	low
+97	R	heading	Au Roy par le premier Bassa	 	Pasha(Sokollu)->King	high
+97	R	start	Al piu stimato Signore di tutti i grandi Signori Christiani... (Italian)	 	Pasha->King	high
+98	R	date	Scritta ... della luna di Gemazilevel (Jumada I) nell'anno 980 ... che sono circa a li 12 di Settembre 1572; Traduta per Hurem Begh	1572-09-12	Pasha->King	medium
+99	L	heading	A Monsieur de Sauve	 	Acqs->Sauve	high
+99	L	start	Monsieur, Hier bien tard je receus deux despesches du sieur de present dit Milan...	 	Acqs->Sauve	high
+99	R	date	... de Raguze le ...  Janvier mil cinq cens soixante et treize (end of letter to Sauve; day split across page)	1573-01-??	Acqs->Sauve	low
+99	R	heading	Extraict des Despesches du sieur de present dit Milan escriptes a Constantinople les douziesme et dixseptiesme octobre et dixiesme novembre mil cinq cens soixante et douze receues par mesme porteur a Raguze le sixiesme Janvier mil cinq cens soixante et treize	1573-01-06	Milan->Acqs	medium
+99	R	start	Que le Bassa ayant este adverty par les Raguzois...	 	Milan->Acqs	medium
+102	R	heading	Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+102	R	start	Monseigneur, J'ay un merveilleux regret qu'il faille que... ung cousin d'Acqs a Ragueze cinq sepmaines apres... Montagnac	 	Acqs->Monseigneur (Anjou?)	high
+105	L	date	De Ragueze le treizieme Janvier mil cinq cens soixante et treize	1573-01-13	Acqs->Monseigneur	medium
+105	L	heading	Du Roy	 	King->Acqs	high
+105	L	start	Monsieur d'Acqs, Par vostre despesche du huictiesme de Juillet j'ay entendu l'approche... le premier Bassa...	 	King->Acqs	high
+106	L	date	... le vingthuictiesme de Septembre mil cinq cens soixante et douze. Signé Charles	1572-09-28	King->Acqs	medium
+106	L	heading	Du Roy (catchword at foot)	 	King->	low
+106	R	heading	Du Roy a Monsieur du Ferrier	 	King->du Ferrier	high
+106	R	start	Monsieur du Ferrier, Le Sieur ... la Seigneurie de Venise avoit ...	 	King->du Ferrier	high
+108	R	date	... le vingthuictiesme jour de Septembre mil cinq cens soixante et douze	1572-09-28	King->du Ferrier	medium
+108	R	heading	De Monsieur du Ferrier	 	du Ferrier->Acqs	high
+108	R	start	Monsieur, Je viens de recevoir vostre despesche pour vous et l'autre pour moy...	 	du Ferrier->Acqs	high
+109	L	date	De Venise ce vingthuictiesme Octobre mil cinq cens soixante et douze (end of du Ferrier's letter)	1572-10-28	du Ferrier->Acqs	medium
+109	L	heading	Du Roy	 	King->Acqs	high
+109	L	start	Monsieur d'Acqs, Combien que je sois certain que vous avez... (ligue; Spanish)	 	King->Acqs	high
+112	R	date	... ce ...iesme Novembre mil cinq cens soixante et douze (end of King's letter)	1572-11-??	King->Acqs	low
+112	R	start	J'ay receu vostre despesche du 6 Aoust et vostre petite lettre du vingtcinquiesme dudit moys... (no heading; sender King?)	 	King->Acqs?	low
+113	L	start	Monsieur d'Acqs, Vous entendrez dudit Sieur de Bevinguy ce que je luy ay commande de vous dire de la part du Roy... (no heading seen; probable King->Acqs)	 	King->Acqs	low
+113	R	date	... Signé Charles (end of King's letter; no date visible)		King->Acqs	low
+113	R	heading	Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+113	R	start	Monseigneur, Le Sieur de Bevinguy m'est venu trouver aujourd'huy...	 	Acqs->Monseigneur (Anjou?)	high
+114	L	date	De Raguze? le vingtsixiesme Janvier mil cinq cens soixante et treze. Signé Noailles Evesque d'Acqs	1573-01-26	Acqs->Monseigneur	medium
+114	L	heading	La Royne	 	Acqs->Queen	high
+114	L	start	Madame, J'ay envoye par le Sieur Massiot que vos m'avez mandé...	 	Acqs->Queen	high
+115	L	date	... le vingthuictiesme Janvier mil cinq cens soixante et treze. Signé Noailles Evesque d'Acqs	1573-01-28	Acqs->Queen	medium
+115	R	heading	A Monsieur de Sauve	 	Acqs->Sauve	high
+115	R	start	Monsieur, Ceste lettre vous servira s'il vous plaist de scheffonnier pour vous.. (sic) ...	 	Acqs->Sauve	high
+117	R	date	... le vingthuictiesme Janvier mil cinq cens soixante et treze (end of letter to Sauve; place read Rassiloges?)	1573-01-28	Acqs->Sauve	low
+117	R	heading	Du Roy (flourished; possibly Au Roy)	 	King->du Ferrier?	low
+117	R	start	Depuis le partement de Bevinguy qui est allé trouver l'Evesque d'Acqs avec ample memoire et instruction... (no salutation; speaks of Acqs in 3rd person)	 	King->du Ferrier?	low
+119	R	date	Faict a ... le dixseptiesme jour de Decembre mil cinq cens soixante et douze. Signé Charles et au dessous Brulart	1572-12-17	King->du Ferrier?	medium
+119	R	heading	La Royne	 	Acqs->Queen	high
+119	R	start	Madame, Par les despesches que le Sieur de ... a jusques icy faictes a Vos Majestes...	 	Acqs->Queen	high
+121	R	date	De la Vigne de Pera lez Constantinople ce sixiesme jour de Mars mil cinq cens soixante et treze. Signé de Noailles Evesque d'Acqs	1573-03-06	Acqs->Queen	medium
+121	R	heading	Au Roy (flourished, may read Du Roy)	 	Acqs->King	medium
+121	R	start	Sire, Quand Vostre Majesté aura entendu que la paix des Venitiens a esté conclue...	 	Acqs->King	high
+122	L	date	De la Vigne de Pera lez Constantinople ce huictiesme jour de Mars mil cinq cens soixante et treze	1573-03-08	Acqs->King	medium
+122	R	start	Sire, Je me suis bandé a rechercher le Bassa ... (no heading; letter or postscript)	 	Acqs->King	medium
+123	L	date	Signé Noailles Evesque d'Acqs (no date)		Acqs->King	medium
+123	R	heading	Post Scripta a la Royne. Du douziesme de Mars 1573	1573-03-12	Acqs->Queen	high
+123	R	start	Madame, Je crois que Vostre Majesté sera quelque jour amplement informee...	1573-03-12	Acqs->Queen	high
+124	L	date	Signé Noailles Evesque d'Acqs (end of postscript, no date)		Acqs->Queen	medium
+124	L	heading	Monseigneur	 	Acqs->Monseigneur (Anjou?)	high
+124	L	start	Monseigneur, Vous verrez par la lettre que j'escris au Roy ce qui suit de la paix des Venitiens...	 	Acqs->Monseigneur (Anjou?)	high
+126	L	date	De la Vigne de Pera ce huictiesme Mars mil cinq cens soixante et treze	1573-03-08	Acqs->Monseigneur	medium
+126	L	start	Monseigneur, Je croy qu'il n'y a rien qui ait tant prevenu la paix que la crainte... (new Monseigneur piece, no flourished heading; ends with Post Scripta catchword)	 	Acqs->Monseigneur (Anjou?)	medium
+126	R	heading	Post Scripta du douziesme Mars 1573	1573-03-12	Acqs->Monseigneur	high
+126	R	start	Monseigneur, Je viens presentement de chez le Bassa ou j'ay faict tous mes efforts... Signé Noailles Evesque d'Acqs	1573-03-12	Acqs->Monseigneur (Anjou?)	high
+127	L	heading	Au Roy (flourished; may read Du Roy)	 	Acqs->King	medium
+127	L	start	Sire, Par ma despesche du ...e et huictiesme de ce moys Vostre Majesté avoit entendu la response du Bassa sur le fait de Poloigne...	 	Acqs->King	high
+129	L	date	De Pera le vingthuictiesme Mars mil cinq cens soixante treize (end of preceding letter)	1573-03-28	Acqs->King	high
+129	L	start	Sire, Depuis le partement de Maillac Bassa...	1573-03-?	Acqs->King	medium
+129	R	start	Monseigneur (ornate heading; Vous avez este congneu de moy le desir de Maillac...)		Acqs->?	medium
+130	R	date	De Pera ce Vingtneufiesme Mars? mil cinq cens soixante et treize	1573-03-29	Acqs->?	medium
+130	R	start	Monseigneur, Des mon arrivee je vous diz que le Boydan a envoye ung Chaoux...		Acqs->?	medium
+131	L	start	Monseigneur, Voulant clore ceste lettre de Vienne dintelli...		Acqs->?	medium
+131	R	heading	A la Royne		Acqs->Queen	high
+131	R	start	Madame, Jusques aujourd huy je ne me retrouve de plus fresche lettre de voz Majestez que celle du treize et dixsept Decembre		Acqs->Queen	high
+131	R	ref	du treize et dixsept Decembre (lettres received)		Acqs->Queen	medium
+133	L	date	De Pera ce Vingtuniesme Avril mil cinq cens soixante et treize. Signe de Noailles Evesque d'Acqs	1573-04-21	Acqs->Queen	high
+133	L	heading	Du Roy	1573-01-19	King->Acqs	medium
+133	L	start	Monsieur d'Acqs, j'ay veu par vos deux despesches du sixiesme de Novembre...	1573-01-19	King->Acqs	medium
+133	L	ref	despesches du sixiesme de Novembre (1572)	1572-11-06	King->Acqs	medium
+135	L	date	pour le tirer de peine. De Paris? le dixneufiesme Janvier mil cinq cens soixante treize. Signe Charles	1573-01-19	King->Acqs	medium
+135	L	heading	Au/Du Roy (ornate)		Acqs->King	medium
+135	L	start	Sire, le vingtuniesme du passe j'ay receu vostre despesche du dixhuictiesme Janvier...		Acqs->King	medium
+135	L	ref	vostre despesche du dixhuictiesme Janvier	1573-01-18	King->Acqs	medium
+135	R	ref	le huictiesme Juillet (body; Sieur de Bourguigny)			low
+136	R	date	De Pera ce Dixhuictiesme? May mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-05-?	Acqs->King	medium
+136	R	start	Sire, J'ay mande lettre... (Sire a bon one pratique)		Acqs->King	medium
+137	R	heading	La Royne		Acqs->Queen	high
+137	R	start	Madame, Oultre ce que je scriz au Roy des occurrances de deca		Acqs->Queen	high
+138	R	date	De Pera lez Constantinople ce Dixseptiesme jour de May mil cinq cens soixante treize. Signe de Noailles Evesque d'Acqs	1573-05-17	Acqs->Queen	high
+138	R	ref	Sieur de Montagnac a porte ... le moys de Decembre			low
+139	L	heading	Du Roy		King->Acqs	high
+139	L	start	Monsieur d'Acqs, je vous diz que le Seigneur de Chevigny? ...		King->Acqs	medium
+140	R	date	A [Paris?] le sixiesme jour de Febvrier mil cinq cens soixante treize (signed Charles, continues 141L)	1573-02-06	King->Acqs	medium
+141	L	date	treize, Signe Charles (end of date line begun 140R)	1573-02-06	King->Acqs	medium
+141	L	heading	Du Roy		King->Acqs	high
+141	L	start	Il y a quelque temps que le Prince de Transilvanie fit entendre a sa Majeste...		King->Acqs	medium
+142	L	date	Faict a Saint Germain en Laye le vingtuniesme? Febvrier mil cinq cens soixante et treize. Signe Charles et au dessoubz de Neufville	1573-02-2?	King->Acqs	medium
+142	L	heading	Du Roy (bottom of page, heading for following letter)		King->Acqs	medium
+142	R	heading	Du Roy		King->Acqs	high
+142	R	start	Monsieur d'Acqs, Je me resjouis et sentz que Soyez de present arrive a Constantinople...		King->Acqs	medium
+143	R	date	A Fontainebleau le Dixhuictiesme jour de Mars mil cinq cens soixante treize. Signe Charles et au dessoubz de Neufville	1573-03-18	King->Acqs	medium
+143	R	heading	Du Roy (bottom of page, heading for next letter)		King->Acqs	high
+144	L	heading	Du Roy (ornate; Au Roy?)		Acqs->King	medium
+144	L	start	Sire, J'estois aujourd'huy a Vostre Majeste... (Bassa, Pologne)		Acqs->King	high
+144	L	ref	vingtquatriesme? Febvrier et dixhuictiesme Mars (body, Bassa's talk)			low
+145	R	date	De Pera lez Constantinople le quatriesme? (quatorziesme?) jour de Juing mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-06-?	Acqs->King	medium
+145	R	heading	Monseigneur (ornate, doubled)		Acqs->?	high
+145	R	start	Monseigneur, Il m'a este facile de recongnoistre au discours du lieutenant du Bassa...		Acqs->?	medium
+146	R	date	De Pera lez Constantinople le Quatriesme? (Quatorziesme?) jour de Juing mil cinq cens soixante treize. Noailles	1573-06-?	Acqs->?	medium
+146	R	heading	Du Roy		Acqs->King	high
+146	R	start	Sire, Tous Venitiens ayant veu la franchise de Sinavits? donnee par Vostre Majeste...		Acqs->King	medium
+147	L	date	De Pera le dixhuictiesme Juing mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-06-18	Acqs->King	high
+147	L	heading	Du Roy		King->Acqs	high
+147	L	start	Monsieur d'Acqs, J'attends en singuliere devotion ce que vous aurez negocie... (mentions Milan, lettre du dixsixiesme? Janvier)		King->Acqs	medium
+147	L	ref	lettre du ... dixsixiesme? jour de Janvier (Nuncio of Milan)			low
+148	L	date	A Fontainebleau le huictiesme d'Avril mil cinq cens soixante et treize. Signe Charles	1573-04-08	King->Acqs	medium
+148	L	heading	Du Roy (bottom of page)		King->Acqs	medium
+148	R	heading	Du Roy		Acqs->King	high
+148	R	start	Sire, Ayant la confirmation du prosperes succes... (lundy de Pasques)		Acqs->King	medium
+150	L	ref	vingtvoisiesme? du passe (body, Sieur Renier)			low
+150	R	date	De Pera lez Constantinople le Seiziesme? (Sixiesme?) jour de Juillet mil cinq cens soixante & treize. Signe Vostre ... Noailles Evesque d'Acqs	1573-07-16	Acqs->King	medium
+150	R	heading	A la Royne		Acqs->Queen	high
+150	R	start	Madame, Vous sçaurez que le grand Seigneur et son premier Bassa font presentement au Roy et a Vostre Majeste quelles obligations...		Acqs->Queen	medium
+151	L	date	De Pera lez Constantinople ce Seiziesme? (Sixiesme?) jour de Juillet mil [151R:] cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-07-16	Acqs->Queen	medium
+151	R	heading	Du Roy de Polongne (Au Roy de Pologne)		Acqs->Henri King of Poland	high
+151	R	start	Sire, Je n'ay eu ce heur de dire premierement a donner la nouvelle a Vostre Majeste de son election au royaume de Polongne		Acqs->Henri (King of Poland)	high
+153	R	date	De Pera lez Constantinople ce Seizeme Juillet mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-07-16	Acqs->Henri (King of Poland)	medium
+153	R	start	Sire, Je prie Dieu vous sauver la brave? et bien tost faire veoir aux Francois... (short separate note)		Acqs->King	medium
+153	R	heading	Du Roy		Acqs->King	high
+153	R	start	Sire, Le sixiesme de ce moys le Secretaire Massiot partit de ceste ville... (Bassa, Don Juan d'Autriche)		Acqs->King	medium
+153	R	ref	Le sixiesme de ce moys (Massiot departed), month probably July	1573-07-06	Acqs->King	low
+157	R	date	De Pera lez Constantinople le Vingtsixiesme Juillet mil cinq cens soixante et treize. Vostre ... Evesque d'Acqs	1573-07-26	Acqs->King	high
+157	R	heading	Du Roy		Acqs->King	high
+157	R	start	Sire, Je vous envoye l'intention du duplicata de la despesche que je fis a Vostre Majeste le Vingtsixiesme Juillet...		Acqs->King	high
+157	R	ref	despesche ... le Vingtsixiesme Juillet	1573-07-26	Acqs->King	high
+161	R	date	De Pera lez Constantinople le Troisiesme d'Aoust mil cinq cens soixante et treize	1573-08-03	Acqs->King	high
+162	L	heading	Du Roy		Acqs->King	high
+162	L	start	Sire, Depuis mon dernier despesche du Vingtsixieme Juillet, troisieme et septieme du passe, Le Baron de Vinguenade est arrive...		Acqs->King	high
+162	L	ref	despesche du Vingtsixieme Juillet, troisieme et septieme du passe (26 Jul, 3 and 7 Aug 1573)	1573-07-26	Acqs->King	medium
+164	L	date	De Pera lez Constantinople ce quatorziesme? (quatriesme?) Septembre mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-09-14	Acqs->King	medium
+164	L	heading	La Royne (bottom of page)		Acqs->Queen	high
+164	R	heading	La Royne		Acqs->Queen	high
+164	R	start	Madame, J'escrivis au Roy ce que j'ay recouvre du pratique espagnolle de mer... despesches du Vingtsixieme Juillet, trois et septieme du passe		Acqs->Queen	high
+164	R	ref	despesches du Vingtsixieme Juillet, trois et septieme du passe	1573-07-26	Acqs->Queen	medium
+165	R	date	De Pera lez Constantinople ce quatorziesme? Septembre mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-09-14	Acqs->Queen	medium
+165	R	heading	La Royne		Acqs->Queen	high
+165	R	start	Madame, Sumairement ce que je souviens de ... venant au Roy (Palatin de Sandomir? Juillet)		Acqs->Queen	medium
+166	L	date	De Pera le Treiziesme Septembre mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-09-13	Acqs->Queen	medium
+166	L	heading	Du Roy (bottom of page)		Acqs->King	medium
+166	R	heading	Du Roy		Acqs->King	high
+166	R	start	Sire, J'escrivis a Vostre Majeste le quatorziesme et douziesme de ce moys...		Acqs->King	medium
+166	R	ref	le quatorziesme et douziesme de ce moys (Sept?)			low
+168	L	date	De Pera lez Constantinople le trentiesme Septembre mil cinq cens soixante et treize. Noailles Evesque d'Acqs	1573-09-30	Acqs->King	medium
+168	L	heading	Instruction (ornate)		King->Acqs	high
+168	L	start	Instruction. Le Sieur de Montagnac conseiller du Roy en sa Cour de parlement de Bordeaux... envoye vers le Roy esleu de Polongne son frere / Sieur Dacqs	1573-07-24	King->Acqs (via Montagnac)	medium
+168	R	start	Premierement ledit Sieur Dacqs sera tenu de la part du Roy de faire entendre au grand Seigneur... (article 1 of Instruction)			medium
+171	R	date	Faict a Saint Germain en Laye le Vingtquatriesme Juillet mil cinq cens soixante et treize. Signe Charles et au dessoubz de Neufville	1573-07-24	King->Acqs	high
+171	R	start	Le Roy desire au Roy entendre bien l'avertissement et l'estat de la sante du grand Seigneur... (final article/paragraph of Instruction)		King->Acqs	low
+172	L	heading	Du Roy		Acqs->King	high
+172	L	start	Sire, Et si vous donner advis a Vostre Majeste de l'arrivee du Sieur de Montagnac mon cousin, lequel m'a rendu sa despesche du Douziesme de ce moys	1573-10-12	Acqs->King	high
+172	L	ref	sa despesche du Douziesme de ce moys (Oct 1573)	1573-10-12	King->Acqs	medium
+173	R	date	De Pera lez Constantinople le quinzieme octobre mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-10-15	Acqs->King	high
+173	R	heading	Du Roy au grand Seigneur		King->Sultan (copy in Acqs's despatch)	high
+173	R	start	Tres hault, tres excellent, tres puissant Prince, Magnanime, Empereur des Musulmans Sultan Selim...		King->Sultan	high
+174	L	date	Escript a Sainct Germain en Laye le Vingtquatre jour de Juillet mil cinq cens soixante & treize. Signe Vostre bon & parfait amy Charles, contresigne de Neufville	1573-07-24	King->Sultan	high
+174	L	heading	Du Roy (bottom of page)		King->Bassa	medium
+174	R	heading	Du Roy au premier Bassa		King->Mehmed Pasha (first Bassa)	high
+174	R	start	Illustre et magnifique Seigneur, Nous... salut/ prealablement au grand Empereur des Musulmans Sultan Selim		King->first Pasha	high
+175	L	date	Escript a Sainct Germain en Laye le Vingtquatriesme Juillet mil cinq cens soixante & treize. Signe Charles et plus bas de Neufville	1573-07-24	King->first Pasha	high
+175	L	heading	Du Roy de Polongne au grand Seigneur		Henri (King of Poland)->Sultan	high
+175	L	start	Tres hault, tres excellent et tres puissant Prince... augmentz de vos grandeurs et haultesse...		Henri->Sultan	high
+175	R	date	[Escript a Saint Germain en Laye] le Vingtquatriesme Juillet mil cinq cens soixante & treize. Signe Vostre bon et parfait amy Henry et au dessoubs Sauraud	1573-07-24	Henri->Sultan	medium
+176	L	heading	Du Roy		Acqs->King	high
+176	L	start	Sire, Le 9? de ce moys ... le Bassa avec huict? galeres... (Vluchali, galleres, Moree)		Acqs->King	medium
+176	R	date	De Pera lez Constantinople le Cinquiesme Novembre mil cinq cens soixante & treize	1573-11-05	Acqs->King	high
+176	R	start	Sire, Depuis ceste lettre escripte j'ay appris que les Ambassadeurs de l'Empereur Conclurent la prolongation de leur trefve...		Acqs->King	medium
+177	R	heading	Post scripta du huictiesme Novembre mil cinq cens soixante & treize	1573-11-08	Acqs->King	high
+177	R	start	Sire, Je oubliois a dire a Vostre Majeste que le territoire de Cousin..(Vluchali, Bassa de Zoaly)	1573-11-08	Acqs->King	medium
+178	L	heading	La Royne		Acqs->Queen	high
+178	L	start	Madame, Dimanche dernier premier de ce moys l'Ambassadeur et Baylle des Venitiens ont este a l'audience du grand Seigneur	1573-11-01	Acqs->Queen	high
+178	L	ref	Dimanche dernier premier de ce moys (1 Nov 1573)	1573-11-01	Acqs->Queen	high
+179	R	date	De Pera lez Constantinople le Cinquiesme Novembre mil cinq cens soixante et treize. Signe Noailles Evesque d'Acqs	1573-11-05	Acqs->Queen	high
+179	R	heading	Du Roy		King->Acqs	high
+179	R	start	Monsieur d'Acqs, Combien que par vos despesches du Sixiesme de Juillet que m'a apportees le Secretaire Massiot...		King->Acqs	high
+179	R	ref	vos despesches du Sixiesme de Juillet (apportees par Massiot)	1573-07-06	Acqs->King	medium
+180	R	date	[Faict a ...] le Douziesme Septembre mil cinq cens soixante & treize (end of King's letter to Acqs)	1573-09-12	King->Acqs	medium
+180	R	heading	Du Roy au grand Seigneur		King->Sultan (copy)	high
+180	R	start	Tres hault, tres excellent, tres puissant Prince Magnanime Empereur des Musulmans...		King->Sultan	high
+181	R	date	[A Paris? Sainct Germain?] ce 17e (dix septiesme) jour de Septembre mil cinq cens soixante & treize. Signe Charles	1573-09-17	King->Sultan	medium
+181	R	heading	Du Roy		Acqs->King	high
+181	R	start	Sire, Le Dixneufiesme de ce moys j'ay receu la lettre qu'il a pleu a Vostre Majeste m'escrire du 7e de Septembre...		Acqs->King	high
+181	R	ref	lettre du 7e? de Septembre; lettre de Vostre Majeste du dixneufiesme de Septembre (received 19th of this month, Nov 1573)	1573-09-19	King->Acqs	medium
+182	R	date	De Pera lez Constantinople ce xxvj Novembre 1573. Signe Noailles E. d'Acqs	1573-11-26	Acqs->King	high
+182	R	heading	Post scripta du xxviij Novembre 1573	1573-11-28	Acqs->King	high
+182	R	start	Sire, J'ay cydevant escript a Vostre Majeste qu'Amorat Rais et Virgilio... Don Juan Ali Bassa attendroient le retour de... 	1573-11-28	Acqs->King	medium
+183	R	heading	Post scripta du xxix Novembre	1573-11-29	Acqs->King	high
+183	R	start	Sire, Je continuerai que je fus hors l'audiance de Mehemet? Bassa les Ambassadeurs de l'Empereur...	1573-11-29	Acqs->King	medium
+184	L	heading	A la Royne		Acqs->Queen	high
+184	L	start	Madame, Par ma derniere du cinquiesme de ce moys je rendois compte a vos Majestez du retour de la grande flotte de ce Seigneur conduite par Piali Bassa	1573-11-05	Acqs->Queen	high
+184	L	ref	ma derniere du cinquiesme de ce moys (Nov 1573)	1573-11-05	Acqs->Queen	high
+184	R	date	De Pera lez Constantinople ce vingthuict jour de Novembre 1573. Signe Noailles E. d'Acqs	1573-11-28	Acqs->Queen	high
+184	R	heading	Au Roy		Acqs->King	high
+184	R	start	Sire, Je croy qu'il souviendra a Vostre Majeste comme je luy ay cydevant escript que le premier Bassa avoit a ma requeste faict appeller les Ambassadeurs de l'Empereur		Acqs->King	high
+185	L	date	Du 17? (xj?) de Decembre [1573]. Ainsy signe Noailles E. d'Acqs	1573-12-??	Acqs->King	low
+185	L	heading	A la Royne		Acqs->Queen	high
+185	L	start	Madame, Je vous diray que ceux qui continuent par voye... publiquent que ce Seigneur aura cette annee trente galleres...		Acqs->Queen	medium
+186	L	date	[De Pera] lez Constantinople ce xx?/xvij? Decembre 1573 (end of Queen letter)	1573-12-??	Acqs->Queen	low
+186	L	heading	Au Roy de Polongne		Acqs->Henri (King of Poland)	high
+186	L	start	Sire, Encores que le sauf conduict demande par Vostre Majeste fust amplement contenu aux lettres du grand Seigneur portees par Massiol...		Acqs->Henri (King of Poland)	high
+187	L	date	De Pera lez Constantinople ce xvij (xbij) de Decembre 1573. Signe Noailles	1573-12-17	Acqs->Henri (King of Poland)	medium
+187	L	heading	Du Roy		King->Acqs	high
+187	L	start	Monsieur d'Acqs, Avant mon partement de Villiers Costerets pour m'acheminer au voyage de Metz?, je vous ay envoye le Secretaire Massiol...		King->Acqs	medium
+187	R	ref	vos lettres des troisieme d'aoust et quatre Septembre (received by Massiol)	1573-08-03	Acqs->King	low
+188	R	date	Escript a Vitry le Francois le quinzieme jour de Novembre 1573. Signe Charles et au dessoubz Fizes	1573-11-15	King->Acqs	high
+188	R	heading	Au Roy de Polongne		Acqs->Henri (King of Poland)	high
+188	R	start	Sire, Le vingtdeux du moys passe je receuz vostre lettre du vingtcinq d'Octobre...		Acqs->Henri (King of Poland)	high
+188	R	ref	vostre lettre du vingtcinq d'Octobre (received 22nd of the past month)	1573-10-25	Henri->Acqs	medium
+189	L	date	De Pera lez Constantinople ce quatorze Febvrier 1574. Signe de Noailles E. d'Acqs	1574-02-14	Acqs->Henri (King of Poland)	high
+189	L	start	Sire, Mercredy dernier dispeche de ce moys les Venitiens affirment et accordent... capitulation... Zemonico, Zara		Acqs->King	medium
+190	L	start	Sire, Le meilleur autorite qui se trouve en la religion des Turcs est de prendre tout ce qu'ils peuvent... (short piece)		Acqs->King	medium
+190	L	heading	Au Roy		Acqs->King	high
+190	L	start	Sire, Je fis le moys passe deux despesches a Vostre Majeste touchant la pratique Espagnolle...		Acqs->King	high
+191	R	date	[De Pera] ... des Seigneurs de Pera ce xvij (xbij) Febvrier 1574	1574-02-17	Acqs->King	medium
+191	R	start	Sire, Je craignois que ceste paix francaise... l'affaire de l'Empereur la prolongation de sa treve ancienne...		Acqs->King	medium
+192	L	start	Sire, Il n'y a article en l'Alcoran que les Turcs observent plus exactement que de prendre tout ce qu'ils peuvent (short piece)		Acqs->King	medium
+192	L	heading	A la Royne		Acqs->Queen	high
+192	L	start	Madame, Monsieur le prince de Toscane...		Acqs->Queen	medium
+193	L	heading	Au Roy		Acqs->King	high
+193	L	start	Sire, Depuis le partement du Sieur de Bourguigny qui fut le vingt? du passe j'ay escript a Vostre Majeste du douziesme de ce moys		Acqs->King	high
+193	L	ref	escript a Vostre Majeste du douziesme de ce moys (month unclear)			low
+193	R	heading	A la Reine		Acqs->Queen	high
+193	R	start	Madame, Je commence a sentir que les pratiques des Florentins ont este de Tommaso? avec les Baylz de Venitiens...		Acqs->Queen	medium
+194	R	heading	A Monsieur de Savoye		Acqs->Duke of Savoy	high
+194	R	start	Monsieur, Je vous donne advis que lundy vingtiesme de ce moys deux heures avant soleil leve le feu se print aux maisons pres... de l'arsenal de Toppana	1574-03-20	Acqs->Savoy	high
+194	R	ref	lundy vingtiesme de ce moys (March 1574, fire at Tophane arsenal)	1574-03-20	Acqs->Savoy	medium
+195	L	date	... des Seigneurs de Pera lez Constantinople ce 24 mars 1574	1574-03-24	Acqs->Savoy	high
+195	L	heading	Du Roy		King->Acqs	high
+195	L	start	Monsieur d'Acqs, Par le memoire qui fut baille au Sieur de Montaguac... Je vous depesche a ceste devise	1574-03-?	King->Acqs	medium
+198	L	date	[Faict] de Villiers Costerets le cinq(uiesme)? jour d'Octobre 1573	1573-10-05	King->Acqs	medium
+198	L	start	Depuis ceste lettre escripte j'ay sceu qu'un gentilhomme polonois nomme Pantoski... (postscript to the King's letter)		King->Acqs	medium
+198	R	date	[end of postscript] ... en Polongne. Signe Charles (no date on this line)		King->Acqs	medium
+198	R	heading	Du Roy		King->Acqs	high
+198	R	start	Monsieur d'Acqs, Depuis ma derniere nous avons receu lettre de Polongne portant que le grand Seigneur et le premier Bassa ont escript lettres aux Estats de Polongne		King->Acqs	high
+199	R	date	Villiers Costerets le 15 octobre 1573. Signe Charles (and below Fizes?)	1573-10-15	King->Acqs	medium
+199	R	heading	A la Royne		Acqs->Queen	high
+199	R	start	Madame, Combien que j'aye jusques icy par plusieurs depesches pensay avoir assez declare a Vostre Majeste		Acqs->Queen	high
+201	R	date	[De Pera lez Constantinople] ce iiij jour de May 1574. Signe de Noailles Evesque d'Acqs	1574-05-04	Acqs->Queen	medium
+201	R	heading	Post scripta du huit de May	1574-05-08	Acqs->Queen	high
+201	R	start	Madame, Jusques aujourd'huy je n'ay eu aucunes nouvelles de mon frere... (Moldavia, new voivode)	1574-05-08	Acqs->Queen	high
+202	L	heading	Au Roy		Acqs->King	high
+202	L	start	Sire, Je vous ay cydevant donne advis comme l'arrivee de deux espions... l'armee de Don Juan	1574-05-??	Acqs->King	high
+203	R	date	[De Pera lez Constantinople] ce 19 jour de May 1574. Signe de Noailles E. d'Acqs	1574-05-19	Acqs->King	medium
+203	R	heading	Au Roy de Polongne		Acqs->Henri (King of Poland)	high
+203	R	start	Sire, Je vous feray entendre ... Michalosky secretaire du Seigneur Albert Lasky palatin de Siradie		Acqs->Henri (King of Poland)	high
+204	L	ref	Samedy dernier 15e de ce moys (May 1574)	1574-05-15	Acqs->Henri (King of Poland)	low
+204	R	date	[des Seigneurs de Pera lez Constantinople] le trentiesme May mil cinq cens soixante quatorze. Signe de Noailles Evesque d'Acqs	1574-05-30	Acqs->Henri (King of Poland)	high
+205	L	heading	Au Roy		Acqs->King	high
+205	L	start	Sire, Je vous ay escript le partement de l'armee du grand Seigneur hors de ce port... le vingtquatre du moys de May		Acqs->King	high
+205	L	ref	le vingtquatre du moys de May (departure of the fleet)	1574-05-24	Acqs->King	medium
+206	L	date	[des Seigneurs de Pera lez Constantinople] le quatre Juin 1574	1574-06-04	Acqs->King	high
+206	L	start	Sire, Le particulier denombrement de toute l'armee que le Sieur de Hore? consiste en deux cens seize? voiles... (fleet count)	1574-06-04	Acqs->King	medium
+206	R	heading	A la Royne		Acqs->Queen	high
+206	R	start	Madame, La presente guerre qui se faict en la Moldavie pour le nouveau Vayvoda que les Seigneurs a voulu establir...	1574-06-04	Acqs->Queen	high
+206	R	date	[des Seigneurs de Pera] ce quatre Juin 1574	1574-06-04	Acqs->Queen	high
+207	L	heading	A Monsieur du Ferrier		Acqs->Du Ferrier (Venice)	high
+207	L	start	Monsieur, Je vous fais ceste lettre pour vous advertir que depuis quatre jours est passe... le Clarissime Hypolito Bayto de la Serenissime Seigneurie... Bratiol		Acqs->Du Ferrier	medium
+207	L	ref	au moys de Mars 1572 (my arrival, Bratiol/Quadrio)	1572-03-??	Acqs->Du Ferrier	medium
+215	L	date	[des Seigneurs de Pera lez Constantinople] ce Troisiesme? de Juin 1574 (end of letter to Du Ferrier)	1574-06-03	Acqs->Du Ferrier	medium
+215	L	start	Monsieur, Je prie sur ma vie et mon honneur qu'il n'y a rien en ce discours que la pure verite... Signe Noailles E. d'Acqs (short closing note)		Acqs->Du Ferrier	medium
+215	R	heading	Au Roy de Polongne		Acqs->Henri (King of Poland)	high
+215	R	start	Sire, Il y a quelque temps que j'ay sceu de bon endroit que des le commencement de la guerre de Moldavie...		Acqs->Henri (King of Poland)	high
+217	L	date	[des Seigneurs] de Pera lez Constantinople ce viij Juin 1574	1574-06-08	Acqs->Henri (King of Poland)	medium
+217	R	heading	Au Roy de Polongne		Acqs->Henri (King of Poland)	high
+217	L	start	Sire, Le huictiesme de ce moys j'ay escrit a Vostre Majeste... (Au Roy de Polongne heading is at bottom of 217L)	1574-06-?	Acqs->Henri (King of Poland)	high
+217	L	ref	Le huictiesme de ce moys (June 1574; previous despatch)	1574-06-08	Acqs->Henri (King of Poland)	medium
+218	L	date	[des Seigneurs de] Pera lez Constantinople ce xxij jour de Juin 1574	1574-06-22	Acqs->Henri (King of Poland)	medium
+218	L	heading	Du Roy		King->Acqs	high
+218	L	start	Monsieur d'Acqs, Le Sieur de Bourguigny est arrive devers moy avec Vostre despesche du dix sept? ... j'avois auparavant receu la vostre du dixhuict Janvier	1574-04-18	King->Acqs	high
+220	R	date	[du Chasteau de] Vincennes le Dixhuictiesme jour d'Avril 1574. Signe Charles et au dessoubz Fizes	1574-04-18	King->Acqs	high
+220	R	heading	De Mons de Merillon au Roy		Merillon->King (copy)	high
+220	R	start	Sire, Par ma derniere depesche du troisiesme de Mars... un vaisseau venant de Barbarie ou se sont chevaux barbares quatre femmes deux lyons		Merillon->King	high
+221	R	date	[de] Vostre ville de Marseille le x(?) mars 1574	1574-03-10	Merillon->King	medium
+221	R	heading	Au Roy		Acqs->King	high
+221	R	start	Sire, Le dernier du passe j'ay receu la despesche qu'il a pleu a Vostre Majeste me faire du xvij Avril; j'avois ecrit quelques jours auparavant...	1574-06-??	Acqs->King	high
+221	R	ref	despesche ... du xvij Avril (Vincennes 18 April per 220R, Acqs reads xvij)	1574-04-17	King->Acqs	low
+226	R	start	Sire, Quelques jours avant recevoir vostre despesche du dix huictiesme d'Avril j'avois entendu qu'il plaist a Vostre Majeste me mander des conspirations faictes contre sa personne [paragraph inside Au Roy letter begun 221R; no new heading; letter dated 6/7 Juillet 1574 at foot of 226R]	1574-07-06	Acqs->King	high
+226	R	date	[des Seigneurs] de Pera lez Constantinople ce vj (or vij) Juillet 1574 (end of Au Roy letter begun 221R)	1574-07-06	Acqs->King	medium
+226	R	heading	A la Royne		Acqs->Queen	high
+226	R	start	Madame, Je faiz ceste lettre a ... (Queen)		Acqs->Queen	medium
+228	L	date	[des Seigneurs] de Pera lez Constantinople ce vj (vij?) Juillet 1574 (end of Queen letter begun 226R)	1574-07-06	Acqs->Queen	medium
+228	L	heading	Au Roy		Acqs->King	high
+228	L	start	Sire, Par ma derniere depesche j'ay escript a Vostre Majeste les instruments et couriers dont le premier Bassa avoit pourveu pour... Vostre Dragoman		Acqs->King	high
+230	L	start	Sire, Par madite depesche dernier j'ay escript a Vostre Majeste les practiques que les Princes et Estats d'Italie font pour... (no heading; new paragraph/despatch within Au Roy)		Acqs->King	medium
+230	R	start	Sire, Tout ce que je puis dire de nouveau des occurrences de deca a Vostre Majeste est que le Dixseptiesme? dudit passa l'armee...(no heading)		Acqs->King	medium
+231	L	date	[des Seigneurs] de Pera lez Constantinople ce xvj (xbj) de Juillet 1574	1574-07-16	Acqs->King	medium
+231	L	heading	Instruction donnee a Monsr de L'Isle en sa charge et Ambassade de Levant		King->de l'Isle	high
+231	L	start	Le Roy considerant le temps que l'Evesque d'Acqs conseiller en son conseil prive a employe pour son service en la charge d'Ambassade...	1574-?	King->de L'Isle (instruction)	high
+234	L	date	[Faict a Sainct Germain en Laye?] Le dernier jour de Janvier 1574. Signe Charles et au dessoubz Fizes (end of Instruction/King's despatch)	1574-01-31	King->Acqs/de L'Isle	medium
+234	L	heading	Au Roy (bottom of page, catchword for next)		Acqs->King	high
+234	R	heading	Au Roy		Acqs->King	high
+234	R	start	Sire, Depuis ma derniere depesche a Vostre Majeste les mauvaises impressions de ceux qui contre la Polongne ont tellement continue... Christoforo Armenien		Acqs->King (Henri III, K. of France)	high
+235	R	date	[des Seigneurs de Pera lez] Constantinople ce Cinquiesme Aoust 1574 (end of Au Roy letter begun 234R)	1574-08-05	Acqs->King	high
+235	R	heading	Au Roy		Acqs->King	high
+235	R	start	Sire, Combien que je n'aye encores receu aucunes lettres de France faisant mention du retour de Vostre Majeste de Polongne...	1574-08-??	Acqs->King	high
+237	L	date	[des Seigneurs de Pera lez Constantinople] ce xvij jour de Septembre 1574 (xbij; end of Au Roy letter begun 235R)	1574-09-17	Acqs->King	high
+237	L	start	Sire, Des Chaouls... apres qu'on a sceu que Vostre Majeste a faict son retour de Polongne (short Sire paragraph, ends with "Sit tantum pax in diebus nostris")	1574-09-?	Acqs->King	medium
+237	R	heading	Post scripta du xxv de Septembre 1574	1574-09-25	Acqs->King	high
+237	R	start	Sire, Je escrivois a Vostre Majeste... qu'apres son election j'ay escript a l'Ambassadeur qu'il avoit en Polongne	1574-09-25	Acqs->King	high
+238	L	heading	A la Royne		Acqs->Queen (Catherine de Medici)	high
+238	L	start	Madame, Depuis nostre depesche du quinziesme Juillet et onziesme du passe nous avons faict... (Queen; mentions Bourguigny, Philippopoli)	1574-09-??	Acqs->Queen	high
+238	L	ref	nostre depesche du quinziesme Juillet et onziesme du passe	1574-07-15	Acqs->Queen	medium
+239	R	ref	le vingtdeuxiesme du moys d'aoust passe	1574-08-22	Acqs->Queen	low
+240	R	start	Madame, La depesche que nous fismes a Vostre Majeste apres la reception de mondit frere estoit du deuxieme de ce moys... (ornate M, new paragraph inside Queen despatch, no heading)	1574-09-?	Acqs->Queen	medium
+240	R	ref	du deuxieme de ce moys (Sept 1574)	1574-09-02	Acqs->Queen	low
+241	L	date	[des Seigneurs] de Pera lez Constantinople ce xvij jour de Septembre 1574 (end of letter(s) begun 238L; xbij)	1574-09-17	Acqs->Queen	medium
+241	L	date	[des Seigneurs de Pera] lez Constantinople ce xvij jour de Septembre 1574 (end of Sire letter 237L-241L? appears on 241L)	1574-09-17	Acqs->Queen	medium
+241	R	heading	A la Royne		Acqs->Queen	high
+241	R	start	Madame, Je faictz ceste seconde lettre a Vostre Majeste pour luy dire qu'il y a eu... pour la reception de mon frere et nous a... (Queen)	1574-09-17	Acqs->Queen	medium
+242	L	start	Madame, Je viens d'apprendre a ceste heure que l'Espagnol et les Florentins qui sont icy depuis quinze moys... (ornate M, no heading)	1574-09-?	Acqs->Queen	medium
+245	L	date	[des Seigneurs de Pera] lez Constantinople ce xvij (xbij) Septembre 1574 (end of letter; "le suppliant &c.")	1574-09-17	Acqs->Sultan?/Queen	medium
+245	L	heading	De la Royne Regente au grand Seigneur (copy of Queen-Regent's letter to Sultan)		Catherine de Medici->Sultan Selim	high
+245	L	start	Tres hault, tres excellent, tres puissant, tres magnanime et invincible Prince le grand Empereur des Musulmans Sultan Selim Han...		Catherine->Sultan	high
+245	R	date	Escript au Chasteau Royal de Vincennes le premier jour de Juin 1574. Signe Vostre bonne parfaicte amye Catherine et au dessoubz Fizes	1574-06-01	Catherine->Sultan	high
+245	R	heading	De la Royne		Queen->Acqs	high
+245	R	start	Monsieur d'Acqs, Vous aurez entendu la maladie du feu Roy Monsieur mon filz, lequel congnoissant la fin que Dieu vouloit l'appeller a soy a ordonne de sa derniere volonte	1574-06-?	Catherine->Acqs	high
+246	R	date	Escrit au Chasteau de Vincennes le premier jour de Juin 1574 (end of Queen-Regent's letter begun 245R)	1574-06-01	Catherine->Acqs	high
+246	R	start	Monsieur d'Acqs, la maladie du Roy Monsieur mon filz a este une grosse fievre continue causee d'une inflammation de poulmons...		Catherine->Acqs	high
+247	L	heading	De La Royne		Queen->Acqs	high
+247	L	start	Monsieur d'Acqs, J'accusay la reception de vostre depesche du quatriesme May...		Catherine->Acqs	high
+247	L	ref	vostre depesche du quatriesme May	1574-05-04	Acqs->Catherine	high
+248	L	date	[de Paris? Pavie?] le 27 Juin 1574 (end of Queen's letter)	1574-06-27	Catherine->Acqs	medium
+248	L	start	Monsieur d'Acqs, Je croy que vous aurez entendu... Sieur de Bourguigny... nouvelle de la mort du feu Roy Monsieur mon fils	1574-06-27	Catherine->Acqs	high
+248	R	date	Signe Catherine et au dessoubz de Neufville (date line precedes: end of letter begun 248L; no further date)	1574-06-?	Catherine->Acqs	medium
+248	R	heading	A la Royne		Acqs->Queen	high
+248	R	start	Madame, Depuis nostre depesche du xvij de ce moys a le jour propre apres nostre pacquet party nous retrouvasmes... Maistre Seigneur Venise	1574-09-17	Acqs->Queen	high
+248	R	ref	nostre depesche du xvij de ce moys (17 Sept 1574)	1574-09-17	Acqs->Queen	medium
+249	R	date	[des Seigneurs de Pera] lez Constantinople ce xxv jour de Septembre 1574. Vostre tres humble et tres obeissant subject et serviteur Noailles E. d'Acqs [and] b. de Noailles	1574-09-25	Acqs->Queen	high
+249	R	heading	A Monsieur de Serrals?		Acqs->Serrals (?) 	medium
+249	R	start	Monsieur, Quand on aura entendu que la paix des Venitiens avec les Turcs... huit jours apres mon arrivee j'ay ou ne sceu...		Acqs/Noailles->Serrals?	medium
+252	R	date	[des Seigneurs de Pera lez Constantinople] ce vingtiesme? jour de Mars 1573 (end of preceding letter)	1573-03-2?	Acqs->?	low
+252	R	start	Monsr, Il y a si longtemps que je suis sur l'expectation de vous ... (ornate M; short letter, no heading)	1573-03-?	Acqs->?	medium
+252	R	heading	A Monsieur de Valence		Acqs->Valence (Jean de Monluc, bp of Valence)	high
+252	R	start	Monsieur, Je croy que vous aurez sceu Longtemps a... mon departement de ce lieu pour retourner en France (long letter)	1573-03-?	Acqs->Valence	high
+258	L	date	[des Seigneurs de Pera lez] Constantinople ce xxiiij jour de Mars 1573 (end of Valence letter begun 252R)	1573-03-24	Acqs->Valence	medium
+258	L	start	Monsieur, Pour accumuler les raisons que j'ay de croire que ceux-cy ne doivent rien moins qu'un prospere succes a vostre legation... (short note, ornate M, no heading)	1573-03-24	Acqs->Valence	medium
+258	L	start	Monsieur, J'espere en Dieu et en vostre prudence... Vostre bien humble frere cousin et serviteur Noailles E. d'Acqs (closing note)	1573-03-?	Acqs->Valence	medium
