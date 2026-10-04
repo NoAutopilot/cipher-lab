@@ -100,6 +100,17 @@
    "file_size": "1226x1884",
    "file_sha1": "b1e5de1bcd2f59f5b34e58faca20798b6d71fa2b",
    "content": "f.33v: continuation of the f.33r Descifrado (top, to 'de estos particulares'); pasted slip at the foot = the Descifrado of the f.32r-v numeral block ('No siento que hayan batido ... todo se pierde'); fetched GAPS203, 3 Oct 2026"
+  },
+  {
+   "record_id": 2242,
+   "idImagen": 10089847,
+   "url": "https://bibliotecadigital.rah.es/es/catalogo_imagenes/imagen_id.do?idImagen=10089847",
+   "native_size": "2476x3299",
+   "native_bytes": 770910,
+   "native_sha1": "ec72d05987edcf03b736c01563874a8b2b0e73d2",
+   "file": null,
+   "fetched": "2026-10-04 (GAPS209, STALE4 account-1 worker)",
+   "content": "f.35: pencil folder divider only -- 'c)', '35', 'Francisco Warleta', 'Marzo-Oct. 1816'; lower half blank; no ink text, no cipher. Not committed (folder at the 30 MB line; re-fetch by URL, sha1 above)."
   }
  ]
 }
