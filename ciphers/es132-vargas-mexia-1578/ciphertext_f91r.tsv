@@ -1,0 +1,11 @@
+# BnF Espagnol 132 f.91r (Gallica btv1b10032556x canvas 88, right page, region 3650,860,2650,1020), 7 bands (2 paragraphs).
+# Philip II to Juan de Vargas Mexia, Madrid, 19 Sept 1578 (letter f.89r-91r, dated "De Madrid a xix de Sept.e MDLXXVIII" below), Cp.30.
+# Two blind Sonnet passes (passes/f91r_passA/B.tsv, shape notation run2/pass_prompt_f91r.md), normalised by test2.load_pass,
+# reconciled by run2/reconcile_f91r.py (N4-ES132B, 4 Oct 2026) from the crops and overlay. ? = not settled by eye.
+L01	10@n 6+ 15+ 29σ 10 y 10 22+ 15ρ@n 23σ 23. 12⊣? 25σ 3 22. 6. {V}
+L02	23+@r 6. 15+ 15σ 7.@n 7 10 6.@l 6σ 6+ 22+ 23. 18@s 6σ 6. 15ρ 28 6.
+L03	15ρ 21. 16+@s 23. 12+ 25σ 3 22. 6. 12+ 29.@r /
+L04	25ρ@s 16. 15. y 22. 13@s 5+@n 6ρ 92 6. 15ρ 21. 16+ 21 3 22. 6.@s 4@n 24
+L05	6σ 4@n 6ρ 6. 15ρ 10@n 6+ 16σ 4@n 24ρ@s y 35. 24 23σ 18 17 6. 6_. 8. 10@r 17.
+L06	y 10 6ρ@n 23+@n 7ρ 6. 15. 28 25+ 6. 15ρ 21. 25σ 3 22. 6.@s 7ρ@n 25.
+L07	17σ@r 10@l 81 4@n 28 85@s 6. {Ram} 15ρ 23. 23σ 11+? 3 17ρ 25+ 11+ /

@@ -1,0 +1,13 @@
+line	op	A_pos	A	B
+L01	replace	9	12ρ@n	15ρ@n
+L01	replace	12	12+	121
+L02	replace	14	65	6σ
+L02	replace	16	12ρ	15ρ
+L03	replace	1	12ρ	15ρ
+L04	replace	1	12ρ@s	25ρ@s
+L04	replace	11	12ρ	15ρ
+L05	replace	1	65	6σ
+L05	replace	5	12ρ	15ρ
+L06	replace	11	12ρ	15ρ
+L07	replace	9	12ρ	15ρ
+L07	replace	12	11+	121
