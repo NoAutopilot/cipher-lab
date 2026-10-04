@@ -1,0 +1,5 @@
+slot	0501	f409v_as_transcribed	settled	how	confidence
+R_L02 tok2 / f409v_L11 tok5	612	bir	same group (612 in 0501); f.409v writes it with a letter-like ductus 'bir', recurring 5x on f.409v (L11 L15 L19 L27x2); kept as written in ciphertext.tsv	worker zoom of 0501 R_L02 and f409v L11/L27 (2x, scratch), RUN4-MANT 4 Oct 2026	I (cross-witness; not a reading)
+R_L03 tok5 / f409v_L13 tok5	84	87 (low)	84 in both	f.409v's crossed 4 (as in its 406, 402, 485) + 0501 zoom; ciphertext.tsv updated, conf kept low	med (digit); value doubtful (Krauske 84=sch inside a non-Krauske run)
+R_L04 tok4 / f409v_L13 tok11	281	287	NOT settled: real copying variant	0501 last digit a plain stroke; f.409v last digit has the top bar and descender of its 7 (as in 417)	both kept as written
+R_L03 tok4 / f409v_L13 tok4	646	648 (low)	646 in both	f.409v final digit is its 6 (as in 716, 406), not 8; ciphertext.tsv updated, conf med	med

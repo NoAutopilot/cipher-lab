@@ -1,6 +1,7 @@
 # Code groups eye-read by A2-SAX2 (3 Oct 2026) from 694/08 frames 0510 (f.409) and 0580 (f.468), grade M, at 1600 px;
 # NOT a transcription of either leaf: excerpts as listed in frame_inventory.tsv (0510 groups are fragments, '...' elided; 0580 groups listed, order not checked).
 # 694-08_0580 rows replaced 3 Oct 2026 (GAPS154) by the reconciled two-pass transcription of f.468 (f468/passes.tsv), one line per group; conf med where both passes agree, low on the long group's split elements and on 9/39.
+# f409v_L13 tok4 648->646 and tok5 87->84 settled 4 Oct 2026 (RUN4-MANT) from both images: f.409v's own digit shapes (6 as in 716/406; this hand's crossed 4 as in 406/402) and frame 0501's parallel copy of the same sentence (553.716.417.646.84.406.108). 84 kept conf low: Krauske 84=sch sits inside a run 0501's gloss shows is not Krauske's table. L13 tok11 287 kept: 0501 has 281, a real copying variant, not settled. 'bir' (L11 etc.) kept as written; 0501 has 612 at the L11 slot (f0501/witness_f409v.tsv).
 line	pos	sign	conf
 694-08_0580_g01	1	191	med
 694-08_0580_g02	1	187	med
@@ -278,8 +279,8 @@ line	pos	sign	conf
 694-08_0511_f409v_L13	1	553	low
 694-08_0511_f409v_L13	2	716	med
 694-08_0511_f409v_L13	3	417	med
-694-08_0511_f409v_L13	4	648	low
-694-08_0511_f409v_L13	5	87	low
+694-08_0511_f409v_L13	4	646	med
+694-08_0511_f409v_L13	5	84	low
 694-08_0511_f409v_L13	6	406	med
 694-08_0511_f409v_L13	7	108	med
 694-08_0511_f409v_L13	8	515	med

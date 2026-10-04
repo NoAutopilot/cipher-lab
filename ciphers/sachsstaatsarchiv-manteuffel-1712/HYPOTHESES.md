@@ -20,3 +20,9 @@ Witness letters are from one direction only (Manteuffel to Flemming, 694/08, Nov
 Codes merged into key.tsv from this leaf (all new to it, none in Krauske's table): 98 Ilgen C, 107 Schonborn C, 754 le Roi
 de Pologne C, 864 le Roi de Prusse C, 877 Bartholdi M, 879 Hannovre C -- single-code glosses only, licensed by the per-leaf
 gate (PREREG-GAPS195, f423_0528/shuffle_control.tsv). Multi-code chunks were not merged (0/15 consistent, below the shuffle).
+
+### Word-level pairing, multi-code class (RUN4-MANT, 4 Oct 2026)
+
+| date | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 4 Oct 2026 RUN4-MANT | whole-word code pairing on frame 0501's glossed multi-code runs (C3 C4 C7 C9[4 codes] C10 C12), PREREG-MANT-WORD (90d63000) | control: gloss-string permutation across runs, 200 draws seed 409: S_word mean 0.274, p95 0.500 | target: S_word 1/4 = 0.250 (at most 1 of 115/402/515/612 consistent under any cut; best cut: 402 'la') | HELD, below the shuffle mean; nothing into key.tsv. 515 is consistent as the chunk 'pr' (RUN3-MANT) but not as a word (Pr / propose): codes in this range are sub-word units, so a whole-word instrument cannot read them. Multi-code class: letter-chunk alignment (interlinear_align.py) failed on 0528 and tied on 0501; whole-word pairing, a different instrument, also fails on 0501. Both instruments are spent on the glossed material in hand; the next step needs new material (more glossed duplicates of these passages) or a sub-word instrument with a stated control, not a re-run. |
