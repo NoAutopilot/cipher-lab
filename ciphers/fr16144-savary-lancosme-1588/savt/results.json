@@ -1,0 +1,68 @@
+{
+ "G_len": 930,
+ "tokens_c380": 932,
+ "tokens_l6_22": 717,
+ "D_full_len": 1098,
+ "D_late_len": 825,
+ "wild_rate_full": 0.32604735883424407,
+ "target": {
+  "S_loc": 31.0,
+  "S_semi_l6_22": 0.4055045871559633
+ },
+ "N1_shuffled_table": {
+  "S_loc": {
+   "mean": 13.92,
+   "p95": 17.0,
+   "max": 20.0,
+   "min": 10.0,
+   "n": 200
+  },
+  "S_semi": {
+   "mean": 0.2922,
+   "p95": 0.3194,
+   "max": 0.3491,
+   "min": 0.249,
+   "n": 200
+  }
+ },
+ "N2_pile_label_shuffle": {
+  "S_loc": {
+   "mean": 14.17,
+   "p95": 17.0,
+   "max": 20.0,
+   "min": 12.0,
+   "n": 200
+  },
+  "S_semi": {
+   "mean": 0.2858,
+   "p95": 0.3088,
+   "max": 0.3143,
+   "min": 0.259,
+   "n": 200
+  }
+ },
+ "P_positive": {
+  "S_loc": {
+   "mean": 730.35,
+   "p95": 775.25,
+   "max": 818.0,
+   "min": 628.0,
+   "n": 20
+  },
+  "S_semi": {
+   "mean": 0.7207,
+   "p95": 0.7479,
+   "max": 0.7518,
+   "min": 0.6756,
+   "n": 20
+  }
+ },
+ "gate": {
+  "S_loc": true,
+  "S_semi": true
+ },
+ "P_passes": {
+  "S_loc": true,
+  "S_semi": true
+ }
+}

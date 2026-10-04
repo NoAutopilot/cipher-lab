@@ -39,3 +39,10 @@ lost in the gutter; my partial read of gloss lines 1-18 is in savt/gloss_c380_pa
   scoring), because the start of G inside D is not known to the line. The pre-registered semi-global S is also reported, on D
   restricted to cipher lines 6-22 (the first full line beside which "malice" stands on the leaf). Same nulls, same gate
   (target > max of 200 draws of each null), same positive control (built from G at the length of the D used).
+
+## Amendment 2 (06:40 UTC; written after the seed gate result was seen, before any recovery/held-out run)
+Seed gate result is in savt/results.json. The held-out split in the original text (fit lines 1-11, test 12-22) cannot run:
+lines 1-5 have no G (amendment 1). Replaced by: fit (hard-EM, rule as registered) on cipher lines 6-14 aligned semi-globally
+to G; test on lines 15-22 (semi-global against the whole G) with (a) the recovered table, (b) the seed table, (c) N1 = 200
+value-shuffles of the recovered table. Held-out PASS iff (a) > max(c) and (a) > (b). Word-sign and 'double' piles keep their
+seed values (EM only re-assigns single-letter and unmapped piles), so the recovery cannot invent word signs.
