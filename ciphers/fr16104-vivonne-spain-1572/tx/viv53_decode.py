@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""N6-VIV53: decode fr.16104 ff.170r-171r (ink 53, 5 Sept 1572, to the duc d'Anjou) with key.tsv and grade every token (rule 4, 7).
+"""N6-VIV53 (+N6-VIV53B f.171v): decode fr.16104 ff.170r-171v (ink 53, 5 Sept 1572, to the duc d'Anjou) with key.tsv and grade every token (rule 4, 7).
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv53_decode.py [--check]
 
@@ -15,7 +15,8 @@ T = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import viv54_decode as vd  # noqa: E402
 
-PAGES = ('f170r', 'f170v', 'f171r')
+PAGES_N6VIV53 = ('f170r', 'f170v', 'f171r')  # the pages of the registered gloss gate (tx/viv53_test.py), frozen
+PAGES = PAGES_N6VIV53 + ('f171v',)  # N6-VIV53B added f.171v (PREREG-N6VIV53B.md)
 
 
 def build():

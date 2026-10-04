@@ -36,7 +36,7 @@ def main():
     k = {c: v for c, (v, g) in vd.key().items()}
     codes = sorted(k)
     lines = []
-    for page in v53.PAGES:
+    for page in v53.PAGES_N6VIV53:
         for line, seq in sorted(vd.page_tokens(page).items()):
             lines.append((page, line, [c for c, _ in seq]))
     gl = [ln.rstrip('\n').split('\t') for ln in open(os.path.join(HERE, 'glosses53.tsv'), encoding='utf-8')][1:]
