@@ -298,7 +298,7 @@ transcription, not readings.
 Requests per host: de-crypt.org 7 (one login), raw.githubusercontent.com 1. Subagent calls: 4 (Opus 5.5, one page each) +
 this worker's reconciliation. Not run (brief): any key test. Cost: see the lane ledger.
 
-## Next step (costed, refreshed 4 Oct 2026, A3V2-SANGTX)
+## Next step (costed, refreshed 4 Oct 2026, A3V2-SANGTX; steps (1)-(2) done by A3V3-SANGP below, see Remaining gaps for the current next step)
 
 Key test, in this order, no transcription work left: (1) `tools/design_prior.py` on 232 tokens / 77 signs / 12-157 with
 clear anchors; (2) Potocka key coverage on `ciphertext.tsv` (Bourdeau's `key-potocka.json`, 46 entries 14-78: by range it
@@ -317,18 +317,59 @@ on Fable for (1)+(2) with the corpus build.
 - ASKS 125 (copy order): names the wrong letter (refuted, A3V2-SANGCS); re-word to 16 March 1714 Dukla / teka 290/6 or withdraw.
 - Parallel, owner-side only: a szukajwarchiwach search "Mniszech Dunin" from a desk browser for the 1714.03.16 row.
 
-## Remaining gaps (A3V2-SANGTX, 4 Oct 2026)
-Read so far: 0 of 232 cipher tokens read; 232 of 232 transcribed (ciphertext.tsv, err_2reader 0.000, 231/232 with Bourdeau)
-- R7524 all 232 cipher tokens - blocker: not-attempted; transcription complete (this section), no key test run yet, Bourdeau's negative is control-failed (inconclusive); next: design_prior + Potocka-key trial decode with a matched homophonic control at N=232/77 signs, Polish corpus build first, ~$6
-- Identity of the archive record for the copy order (ASKS 125) - blocker: waiting-on ASKS 125 re-wording by the lane/owner; the 1714.05.02 record is a different letter (refuted, A3V2-SANGCS), nothing here depends on it; next: lane edits ASKS 125, ~$0
-- Teka 290 neighbours (plik 1-5, 7+) for a filed key or decipherment - blocker: needs-physical-access; the teka has no scans per the archive's own record and its online unit listing is behind Incapsula for the cloud browser (A3V2-SANGCS, 3 requests), so only an owner-side szukajwarchiwach search or the reading room can list the neighbours; next: LOCAL-QUEUE row or owner desk search, ~$0 here
+## Key test 1: language, corpus, design prior, Potocka key, homophonic family (A3V3-SANGP, 4 Oct 2026, 06:13-06:2x UTC)
 
-## Escalation (4 Oct 2026, refreshed A3V2-SANGTX)
+**Result: the Potocka key does not read R7524 (control-backed negative); homophonic annealing at N=232/K=77 is a
+non-test (CONTROL BELOW GATE). Nothing read: H 0 C 0 S 0 M 0 I 0.** Status stays `open`.
+
+(1) Language. The 22 [PLAIN] anchors are Polish syntax with Latin phrases (*Spraktykowały*, *czyni*, *niemogę*,
+*Przesyłam posty*, *iest*, *correspondencye*; *praetextu consilij*, *generaliter unanimi voto*, *Rempublicam*,
+*tractantur*), so the cipher is most likely Polish (as Bourdeau's R7526 postscript in the sister key) with Latin
+words possible. Built `tools/data/pl18` (5 IA files, 1683-c.1790 memoir/letter prose, about 2.27M folded letters;
+README, MANIFEST, build.py) and wired it as `"pl18"` in the judge. Leave-one-file-out FN at N=232: blended 42.2%,
+per fold 11.0/27.0/80.5/74.0/18.5% (pl19 for comparison: 91.5%, 78.5-98.0%) -- a p05-gate verdict against pl18 is of
+unknown reliability (rule 3); the tests below compare against controls scored through the same model instead.
+
+(2) `tools/design_prior.py potocka/r7524_tokens.txt` (232 tokens, 77 signs, 205 references at this N), pasted:
+```
+multi-sign (homophonic/nomenclator/syllabary) d=0.13 envelope=0.34 null_p05=0.36 -> plausible
+letter-for-letter      d=0.68 envelope=1.17 null_p05=1.06 -> plausible
+mixed (partial table)  d=1.50 envelope=3.8 null_p05=1.73 -> plausible
+code                   d=2.18 envelope=3.78 null_p05=2.89 -> plausible
+shuffled-input false-positive rate: 0.075
+fine family ranking (advisory, not calibrated): syllabary=0.15; nomenclator=0.23; homophonic=0.48; alphabet substitution=0.68; mixed=1.50; code numbers=2.18
+nearest keys: hellen-frederick-1752 key_comb_LR100 [syllabary] d=0.11; huntington-blathwayt-madrid-1728 [syllabary] d=0.13; fr7129-villeroy-bongars-1604 key_f275_v3 [nomenclator] d=0.15
+```
+Multi-sign class nearest by a wide margin; with 28 three-digit signs (100-157) a nomenclator/syllabary layer beside a
+letter alphabet is the first design to test, not a plain homophonic alphabet.
+
+(3) Potocka key trial (`potocka/potocka_trial.py`, `--check` passes; key fetched once from raw.githubusercontent.com,
+Bourdeau, CC BY 4.0, used as data, no code copied). Statistic: mean log10 4-gram probability over the decode's
+key-covered runs. Target -2.257 (132/232 covered, 13 four-grams); key-right control (held-out Otwinowski text
+enciphered with the same key at the target's own covered positions) mean -0.90, p05 -1.18 to -1.29 over seeds 1-3;
+key-wrong control mean -2.12 to -2.16; shuffled-target null mean -2.16 to -2.21, p95 -1.78 to -1.88. The control reads,
+the target does not, and the target is no better than its own shuffle: **the Potocka key is not R7524's key**. Table in
+HYPOTHESES.md H1. Target decode (gaps as ·) in `potocka/target_decode.txt`; it is noise (*qq*, *xaa*, *bb*), not a reading.
+
+(4) `tools/family_run.py --family homophonic` N=232 K=77 pl18, seeds 1-3: control recovery 0.159/0.009/0.060, mean
+0.076 < gate 0.6, target not run (HYPOTHESES.md table row). Bourdeau's own control read 21.1%. A blind homophonic
+anneal has no power at this length; this is a non-test, not a negative.
+
+Requests per host: archive.org 23 (advancedsearch 9, metadata 7, _djvu.txt downloads 7), pl.wikisource.org 5 (API
+search; two returned non-JSON, abandoned for IA), raw.githubusercontent.com 2. Subagent calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (A3V3-SANGP, 4 Oct 2026)
+Read so far: 0 of 232 cipher tokens read; 232 of 232 transcribed (ciphertext.tsv, err_2reader 0.000, 231/232 with Bourdeau)
+- R7524 all 232 cipher tokens - blocker: not-attempted; the Potocka key is excluded (control-backed, HYPOTHESES.md H1) and blind homophonic annealing is a non-test at N=232/K=77 (CONTROL BELOW GATE, H2); next: crib-assisted nomenclator/homophonic run seeded with the repeats (15.20 x8, 22.118.82.36.31.81 x3) and the clear-anchor context, control matched on the same crib count, ~$6
+- A sister letter in the same key (to lengthen N past the control's power line) - blocker: needs-physical-access; teka 290 neighbours and Dunin's Kórnik papers (BK 417, microfilm only) are not online (A3V2-SANGCS); next: owner desk search of szukajwarchiwach for Mniszech letters 1713-1715 in the Sanguszko archive, ~$0 here
+- Identity of the archive record for the copy order (ASKS 125) - blocker: waiting-on ASKS 125 re-wording by the lane/owner; the 1714.05.02 record is a different letter (refuted, A3V2-SANGCS), nothing here depends on it; next: lane edits ASKS 125, ~$0
+
+## Escalation (4 Oct 2026, refreshed A3V3-SANGP)
 - [x] siblings: Bourdeau's potocka1714 folder read in full (4 Oct 2026); R7515, R7460, R7461 do not fit per his check; R7523/R7525 are different letters.
 - [x] clear-pages: P1 clear lines and P3 clear leaves seen at native resolution (A3V2-SANG); the clear anchors inside the cipher lines transcribed as [PLAIN] tokens (A3V2-SANGTX).
-- [x] known-keys: Bourdeau checked the three Sanguszko key records; Potocka key covers 132/232 tokens by range only and is excluded by its own author; its trial decode on our transcription is the next step.
+- [x] known-keys: Potocka key trial-decoded with key-right/key-wrong controls and shuffled null: control-backed negative (A3V3-SANGP, HYPOTHESES.md H1); Sanguszko key records excluded by Bourdeau.
 - [x] print: check-solved re-run with the leaf's date and place, six sources, no edition or decipherment (A3V2-SANGCS, 4 Oct 2026).
-- [ ] key-rebuild: transcription done (A3V2-SANGTX); planned step: design_prior, then the Potocka trial decode and a homophonic family run with the matched control (next step above).
+- [ ] key-rebuild: design_prior run (multi-sign nearest, nomenclator/syllabary layer likely, A3V3-SANGP); blind homophonic is a non-test at this N; next: crib-assisted run with a crib-matched control.
 - [x] image-check: DECODE full-size served, 4 Oct 2026 (A3V2-SANG), three 300-dpi JPEGs, cipher legible; transcribed at 300 dpi (A3V2-SANGTX).
-- [ ] retry: a homophonic attack with a control matched on 232 tokens and 77 signs, crib-assisted variant planned (next step above).
-Verdict: keep going: 1 internal gap (key test, ~$6) plus 2 outside blockers that hold nothing up; cheapest next: design_prior + Potocka trial decode with matched control, ~$6
+- [ ] retry: crib-assisted nomenclator/homophonic attack (repeats + clear-anchor context) with a control matched on N, K and crib count, pl18 corpus.
+Verdict: keep going: 1 internal gap (crib-assisted key rebuild, ~$6) plus 2 outside blockers; cheapest next: crib-assisted run with matched control, ~$6

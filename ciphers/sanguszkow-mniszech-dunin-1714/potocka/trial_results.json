@@ -1,0 +1,27 @@
+{
+ "N": 232,
+ "covered": 132,
+ "covered_signs": 32,
+ "signs": 77,
+ "target_score": -2.257,
+ "target_4grams": 13,
+ "controlA_key_right": {
+  "mean": -0.8983,
+  "p05": -1.2319,
+  "min": -1.5939,
+  "signs_mean": 69.4
+ },
+ "controlB_key_wrong": {
+  "mean": -2.1565,
+  "p95": -1.73
+ },
+ "null_shuffled_target": {
+  "mean": -2.163,
+  "p95": -1.7841
+ },
+ "S": 200,
+ "seed": 1,
+ "held_out": "bc.wbp.lodz.pl.Pamietniki_do_panowania_Augusta_II_91967.txt.gz",
+ "A_beats_B_share": 1.0,
+ "verdict": "key does not read R7524 (control-backed)"
+}

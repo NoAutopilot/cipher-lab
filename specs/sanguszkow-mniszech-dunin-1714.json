@@ -1,0 +1,62 @@
+{
+ "slug": "sanguszkow-mniszech-dunin-1714",
+ "name": "Mniszech to Jakub Dunin, Dukla 16 March 1714, Archiwum Sanguszkow teka 290/6 (DECODE R7524)",
+ "date": "1714",
+ "language_candidates": [
+  "pl"
+ ],
+ "ciphertext": "110 36 31 157 31 33 81 15 20 125 38 97 79 15 20 128 42 17 15 130 107 101 22 118 82 36 31 81 17 68 87 97 135 38 35 15 20 141 94 130 25 153 110 109 127 30 31 39 85 15 20 135 27 16 124 31 81 15 20 12 19 19 118 141 52 21 12 133 153 46 39 135 15 20 28 30 157 31 39 94 15 20 36 31 157 31 33 81 15 20 144 76 144 16 39 33 36 146 31 24 104 110 31 92 36 56 107 101 22 118 82 36 31 81 17 68 35 33 128 15 51 30 118 33 27 28 28 119 31 125 107 33 120 17 54 60 26 53 33 12 30 95 131 102 26 31 29 139 61 102 107 26 22 118 82 36 31 81 39 65 16 104 15 12 86 133 39 65 42 102 134 76 68 28 120 136 132 146 31 39 92 152 66 26 31 49 94 31 76 38 39 107 102 25 144 76 144 56 81 77 36 31 81 25 12 110 56 14 26 27 17 33 50 26 105 42 12 87 12 76 58 101 15 39 81 39 76 58 101 22 76 25",
+ "ciphertext_source": "ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv (A3V2-SANGTX, 4 Oct 2026, two blind passes + reconciliation, 231/232 with Bourdeau), [PLAIN] words dropped; same as potocka/r7524_tokens.txt",
+ "alphabet": "numerals 12-157, 77 distinct signs, 232 tokens",
+ "constraints": {
+  "clear_anchors": "Polish with Latin phrases (praetextu consilii, Congressow, generaliter unanimi voto, Rempublicam, czyni, niemoge, Przesylam)",
+  "repeats": "15.20 x8; 22.118.82.36.31.81 x3"
+ },
+ "cheap_tests_in_order": [
+  "1. Potocka key (Bourdeau) trial decode with key-right/key-wrong controls and shuffled null (A3V3-SANGP)",
+  "2. homophonic family_run at N=232 K=77, pl18 (A3V3-SANGP)",
+  "3. crib-assisted homophonic (repeats + clear anchors)"
+ ],
+ "matched_control": "N=232, K=77, pl18 corpus, homophonic",
+ "judge": {
+  "language": "pl18",
+  "letters_min": 100,
+  "control_samples": 200
+ },
+ "written": "4 Oct 2026 by A3V3-SANGP (account 3)",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "4 Oct 2026",
+   "by": "A3V3-SANGP",
+   "method": "Bourdeau's key-potocka.json applied to the 232 tokens (132 covered); statistic: mean log10 4-gram prob (pl18 minus Otwinowski) over covered runs; control A key-right (held-out Otwinowski text enciphered with the key at the target's own covered positions), control B key-wrong, shuffled-target null; S=200, seeds 1-3",
+   "target": -2.257,
+   "controlA_mean_p05": [
+    -0.898,
+    -1.232
+   ],
+   "controlB_mean_p95": [
+    -2.157,
+    -1.73
+   ],
+   "null_mean_p95": [
+    -2.163,
+    -1.784
+   ],
+   "verdict": "Potocka key does not read R7524 (control-backed negative); script ciphers/sanguszkow-mniszech-dunin-1714/potocka/potocka_trial.py --check"
+  },
+  {
+   "test": 2,
+   "date": "4 Oct 2026",
+   "by": "A3V3-SANGP",
+   "method": "tools/family_run.py --family homophonic, N=232 K=77, pl18, seeds 1-3, restarts 8",
+   "control_mean": 0.076,
+   "control_range": [
+    0.009,
+    0.159
+   ],
+   "target": "not run",
+   "verdict": "CONTROL BELOW GATE (0.6): homophonic annealing has no power at N=232/K=77; non-test, not a negative"
+  }
+ ]
+}

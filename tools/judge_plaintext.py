@@ -93,6 +93,15 @@ LANG_CORPORA = {
     "nl18": [DATA / "nl18" / f for f in ("beschryvingvangu01hart.txt.gz", "beschryvingvangu02hart.txt.gz",
              "bub_gb_mGdCAAAAcAAJ.txt.gz", "bataviaindeszelf02amst.txt.gz", "beschryvingvanh00esch.txt.gz",
              "reizennaaceilon00roosgoog.txt.gz", "verzamelingvanst01vand.txt.gz")],
+    # pl18 (4 Oct 2026, A3V3-SANGP, account 3): Polish memoir/letter prose of 1683-c.1790 in 19th-c. editions --
+    # Otwinowski's Pamietniki do panowania Augusta II (1838), Pasek's Pamietniki (1860), Jan III's Listy (1823),
+    # Ojczyste spominki I (1845), Kitowicz's Pamietniki (1882); Polish diacritics pre-folded to a-z at build
+    # (tools/data/pl18/build.py), French/Latin lines dropped -- for sanguszkow-mniszech-dunin-1714 (1714), which pl19
+    # (19th-20th-c. fiction) does not era-match. Leave-one-file-out FN 42.2% blended at N=232, spread 11.0-80.5% (pl19:
+    # 91.5%, 78.5-98.0%): a FAIL/PASS against the p05 gate is of unknown reliability; read tools/data/pl18/README.md.
+    "pl18": [DATA / "pl18" / f"{i}.txt.gz" for i in ("bc.wbp.lodz.pl.Pamietniki_do_panowania_Augusta_II_91967",
+             "bc.radom.pl.11-359", "bc.wbp.lodz.pl.Listy_Jana_III_Krola_Polskiego_a_96549", "ojczystespomink01johngoog",
+             "pamitnikiksakit01kitogoog")],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
     # fr18 (25 Sept 2026, LANE ZX2 ZX2-FR18): French diplomatic/official prose c.1680-1790 -- Torcy's and
