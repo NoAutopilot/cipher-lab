@@ -99,61 +99,66 @@ def fit(segs, n):
     return segs
 
 
-draft = defaultdict(list)
-for r in csv.DictReader(open(T / 'tx' / 'ciphertext_draft.tsv'), delimiter='\t'):
-    a, alt = r['sign'] or '?', r['alt'] if r['alt'][-1:] != ':' else r['alt'] + '?'
-    if r['why'] == 'agree':
-        draft[r['line']].append(('agree', a, a))
-    else:
-        who, other = alt.split(':', 1); other = other or '?'
-        A, B = (a, other) if who == 'B' else (other, a)
-        draft[r['line']].append(('gap' if r['why'] == 'gap' else 'differ', A, B))
-pairs = Counter((A, B) for ln, v in draft.items() if int(ln[-2:]) <= 29 for k, A, B in v if k == 'differ')
-ones = Counter((A if A != '-' else B) for ln, v in draft.items() if int(ln[-2:]) <= 29 for k, A, B in v if k == 'gap')
-signs, labels, cand = [], [], defaultdict(list)
-stats = []
-TR = traces()
-MAPPED = 29      # VIV-T bands 1-29 sit on lines 1-29 here (centres within 15 px); bands 30-32 straddle lines 30-33
-for n, tr in enumerate(TR, 1):
-    page = f'f101v_L{n:02d}'; line = f'c107_L{n:02d}'
-    y0 = max(0, int(tr.min() - .75 * PITCH)); y1 = min(H, int(tr.max() + .75 * PITCH))
-    src.crop((0, y0, W, y1)).save(P / f'{page}.jpg', quality=82)
-    ty = np.arange(H)[:, None]; cen = tr[None, :]
-    core = ink & (np.abs(ty - cen) < .42 * PITCH); zone = ink & (np.abs(ty - cen) < .62 * PITCH)
-    bl = blobs(core)
-    if n <= MAPPED:
-        cols = draft[line]; boxes = fit(bl, len(cols))
-    else:             # no reader row belongs to this line alone: tiles are the blobs as found, in one pile
-        wmed = np.median([g['w'] for g in signs]); n_est = max(len(bl), round(sum(b - a + 1 for a, b in bl) / wmed))
-        boxes = fit(bl, n_est); cols = [('foot', '', '')] * n_est
-    stats.append((page, len(bl), len(cols) if n <= MAPPED else ''))
-    for k, ((kind, A, B), (x0, x1)) in enumerate(zip(cols, boxes), 1):
-        sid = f'{page}_{k:02d}'
-        ys = np.where(zone[:, x0:x1 + 1].sum(1) > 0)[0]
-        ty0, ty1 = (int(ys.min()), int(ys.max())) if len(ys) else (y0, y1 - 1)
-        signs.append(dict(sid=sid, page=page, x=x0, y=ty0 - y0, w=x1 - x0 + 1, h=ty1 - ty0 + 1))
-        if kind == 'foot':
-            lab = fam = 'foot-unplaced'
-        elif kind == 'agree':
-            lab, fam = (A if A not in ('', '?') else 'UNREAD'), A
-        elif kind == 'differ':
-            lab = f'{A}/{B}' if pairs[(A, B)] >= MINPAIR else 'split-rare'; fam = A
-            cand[(A, B)].append(sid)
+def main():
+    draft = defaultdict(list)
+    for r in csv.DictReader(open(T / 'tx' / 'ciphertext_draft.tsv'), delimiter='\t'):
+        a, alt = r['sign'] or '?', r['alt'] if r['alt'][-1:] != ':' else r['alt'] + '?'
+        if r['why'] == 'agree':
+            draft[r['line']].append(('agree', a, a))
         else:
-            one = A if A != '-' else B; lab = f'{one}+1r' if ones[one] >= MINPAIR else 'one-reader'; fam = one
-        fam = fam if fam not in ('', '?', '-') else 'UNREAD'
-        labels.append(dict(sid=sid, sign=lab.replace('?', 'UNREAD') if lab != 'split-rare' else lab, family=fam))
-focus = []
-for (A, B), c in pairs.most_common(NFOCUS_PAIRS):
-    sids = cand[(A, B)]; step = max(1, len(sids) // PER_PAIR)
-    for sid in sids[::step][:PER_PAIR]:
-        focus.append((sid, f'{sid.split("_", 1)[1]}: reader A {A}, reader B {B} (x{c} on the page); which, or another sign?'))
-for name, rows in (('signs.tsv', signs), ('labels.tsv', labels)):
-    with open(S / name, 'w', newline='') as o:
-        w = csv.DictWriter(o, fieldnames=list(rows[0]), delimiter='\t'); w.writeheader(); w.writerows(rows)
-with open(S / 'focus.tsv', 'w') as o:
-    for sid, q in focus[:40]:
-        o.write(f'{sid}\t{q}\n')
-with open(S / 'fit.tsv', 'w') as o:
-    o.write('page\tblobs\tcolumns\n'); o.writelines(f'{p}\t{b}\t{c}\n' for p, b, c in stats)
-print(len(signs), 'tiles;', len(stats), 'pages;', len(set(l['sign'] for l in labels)), 'piles;', len(focus[:40]), 'focus tiles')
+            who, other = alt.split(':', 1); other = other or '?'
+            A, B = (a, other) if who == 'B' else (other, a)
+            draft[r['line']].append(('gap' if r['why'] == 'gap' else 'differ', A, B))
+    pairs = Counter((A, B) for ln, v in draft.items() if int(ln[-2:]) <= 29 for k, A, B in v if k == 'differ')
+    ones = Counter((A if A != '-' else B) for ln, v in draft.items() if int(ln[-2:]) <= 29 for k, A, B in v if k == 'gap')
+    signs, labels, cand = [], [], defaultdict(list)
+    stats = []
+    TR = traces()
+    MAPPED = 29      # VIV-T bands 1-29 sit on lines 1-29 here (centres within 15 px); bands 30-32 straddle lines 30-33
+    for n, tr in enumerate(TR, 1):
+        page = f'f101v_L{n:02d}'; line = f'c107_L{n:02d}'
+        y0 = max(0, int(tr.min() - .75 * PITCH)); y1 = min(H, int(tr.max() + .75 * PITCH))
+        src.crop((0, y0, W, y1)).save(P / f'{page}.jpg', quality=82)
+        ty = np.arange(H)[:, None]; cen = tr[None, :]
+        core = ink & (np.abs(ty - cen) < .42 * PITCH); zone = ink & (np.abs(ty - cen) < .62 * PITCH)
+        bl = blobs(core)
+        if n <= MAPPED:
+            cols = draft[line]; boxes = fit(bl, len(cols))
+        else:             # no reader row belongs to this line alone: tiles are the blobs as found, in one pile
+            wmed = np.median([g['w'] for g in signs]); n_est = max(len(bl), round(sum(b - a + 1 for a, b in bl) / wmed))
+            boxes = fit(bl, n_est); cols = [('foot', '', '')] * n_est
+        stats.append((page, len(bl), len(cols) if n <= MAPPED else ''))
+        for k, ((kind, A, B), (x0, x1)) in enumerate(zip(cols, boxes), 1):
+            sid = f'{page}_{k:02d}'
+            ys = np.where(zone[:, x0:x1 + 1].sum(1) > 0)[0]
+            ty0, ty1 = (int(ys.min()), int(ys.max())) if len(ys) else (y0, y1 - 1)
+            signs.append(dict(sid=sid, page=page, x=x0, y=ty0 - y0, w=x1 - x0 + 1, h=ty1 - ty0 + 1))
+            if kind == 'foot':
+                lab = fam = 'foot-unplaced'
+            elif kind == 'agree':
+                lab, fam = (A if A not in ('', '?') else 'UNREAD'), A
+            elif kind == 'differ':
+                lab = f'{A}/{B}' if pairs[(A, B)] >= MINPAIR else 'split-rare'; fam = A
+                cand[(A, B)].append(sid)
+            else:
+                one = A if A != '-' else B; lab = f'{one}+1r' if ones[one] >= MINPAIR else 'one-reader'; fam = one
+            fam = fam if fam not in ('', '?', '-') else 'UNREAD'
+            labels.append(dict(sid=sid, sign=lab.replace('?', 'UNREAD') if lab != 'split-rare' else lab, family=fam))
+    focus = []
+    for (A, B), c in pairs.most_common(NFOCUS_PAIRS):
+        sids = cand[(A, B)]; step = max(1, len(sids) // PER_PAIR)
+        for sid in sids[::step][:PER_PAIR]:
+            focus.append((sid, f'{sid.split("_", 1)[1]}: reader A {A}, reader B {B} (x{c} on the page); which, or another sign?'))
+    for name, rows in (('signs.tsv', signs), ('labels.tsv', labels)):
+        with open(S / name, 'w', newline='') as o:
+            w = csv.DictWriter(o, fieldnames=list(rows[0]), delimiter='\t'); w.writeheader(); w.writerows(rows)
+    with open(S / 'focus.tsv', 'w') as o:
+        for sid, q in focus[:40]:
+            o.write(f'{sid}\t{q}\n')
+    with open(S / 'fit.tsv', 'w') as o:
+        o.write('page\tblobs\tcolumns\n'); o.writelines(f'{p}\t{b}\t{c}\n' for p, b, c in stats)
+    print(len(signs), 'tiles;', len(stats), 'pages;', len(set(l['sign'] for l in labels)), 'piles;', len(focus[:40]), 'focus tiles')
+
+
+if __name__ == '__main__':
+    main()

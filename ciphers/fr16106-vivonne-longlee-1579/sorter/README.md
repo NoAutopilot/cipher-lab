@@ -33,3 +33,28 @@ How the piles were made (`build_inputs.py` docstring has the detail):
 Apply after the owner's pass: `ArtifactData list` for piles/moves/newpiles, then
 `python3 tools/sign_sorter_apply.py --labels sorter/labels.tsv --db DIR --out sorter/settled_labels.tsv --summary sorter/summary.json`
 (from this folder). Then the settled labels become the inventory for a machine pass on f.101v-103v (NOTES.md "Remaining gaps").
+
+## v3 re-cut (LL-RECUT, 4 Oct 2026): one tile = one sign, straight lines
+
+Owner, on the v2 page (the Pisany complaint): tiles straddled two signs or cut one in half, because v2 fitted ink-profile
+blobs to the readers' column COUNT, and the sloping lines put the wrong line in the context strip. `recut.py` replaces
+`build_inputs.py` in `build.sh`, using the Pisany method now shared as `tools/sorter_recut.py` (Pisany's `recut.py` and
+`small_pile.py` call it too and reproduce their committed outputs byte for byte; `build_inputs.py` here now runs only as a
+script, its `traces()` imported, outputs unchanged):
+- **Deskew.** Each strip is sheared along `build_inputs.traces()`, re-centred per 300 px window on the strip's own ink, so
+  `pages/f101v_L<nn>.jpg` (245 px tall, full region width) is one straight line and the lines above/below are the right ones.
+- **Tiles from each sign's own ink** (components owned by the line, x-overlapping strokes joined, wide groups split at ink
+  minima; over-splits a little on purpose). **1,834 tiles, 44-64 per line**, vs the readers' 37-53 columns on lines 1-29
+  (`fit_recut.tsv`); v2 had 1,493 tiles fitted to the column count from 33-46 ink blobs per line (`fit.tsv`).
+- **Starting piles, value-blind**: tiles aligned in x order (DP) to the reader columns, positioned at the v2 tile centres;
+  1,258 tiles within 30 px of a column take its pile (same names as v2). The other 576 (and every tile of lines 30-33, which
+  have no reader row) start in the pile their shape cluster (k-means, 100 clusters, `clusters.tsv`) most often holds, a
+  named pile preferred over `split-rare`/`one-reader` when it holds 3+ and 20%+ of the cluster. Caveat: the column
+  positions are the v2 approximations and the readers agree on 42%, so "aligned" is a starting guess, not a check.
+- **SMALL** (`small_pile.py`): 185 tiles under 18 px tall or under 60 ink px (dots, specks, a few real small signs) in one
+  pile, out of the focus box. **Focus**: 30 (`focus30.tsv`, one-line captions), unaligned tiles, most frequent shapes first.
+- Build: 70 piles, 1,834 tiles, 168 provisional clusters, 2.8 MB page. `run_all.sh` with the page: 13/14 suites ok; test_qa fails only "no page errors", on the synthetic fixture as well as this page, from ERR_CERT_AUTHORITY_INVALID (Google Fonts through the container proxy; certutil absent here), as on Pisany: environment, not the page.
+- Spot check (40 random tiles, seed 20261004, montage by eye): 31 hold exactly one sign, 7 are specks (dots, a fragment;
+  most already in SMALL), 2 are bad (a loop of the line above joined to a small o; half an x with a stroke below).
+- The v2 cut is kept for the record: `signs_v2.tsv`, `labels_v2.tsv`, `focus_v2.tsv` (x/y refer to the v2 sloped `pages/`,
+  in git history before this commit). No owner moves were made on v2, so nothing to carry over.

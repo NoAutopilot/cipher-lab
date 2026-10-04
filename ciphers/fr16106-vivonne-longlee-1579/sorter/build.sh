@@ -3,11 +3,18 @@
 # No network: reads the Gallica native region already on disk (images/src_ark_12148_btv1b9009661v_f107_550_550_3800_5350.jpg).
 set -euo pipefail
 O=$1; T=ciphers/fr16106-vivonne-longlee-1579; mkdir -p "$O"
-python3 $T/sorter/build_inputs.py
-python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labels.tsv --pages $T/sorter/pages \
-  --focus $T/sorter/focus.tsv --auto-clusters 4 \
-  --focus-note "Where the two blind machine readers split most often (reader A / reader B). Tiles were cut from an ink profile and fitted to the readers' column count, so a tile can be one or two positions off its label: open the context view." \
+# LL-RECUT (4 Oct 2026): deskewed strips, one tile per sign cut from its own ink (recut.py -> tools/sorter_recut.py, as Pisany;
+# the v2 cut is signs_v2.tsv, made by build_inputs.py, kept for the record and no longer run here).
+python3 $T/sorter/recut.py
+python3 $T/sorter/small_pile.py
+python3 -c "import sys;L=open(sys.argv[1]).read().split(chr(10));o=[]
+for l in [x for x in L if x][:30]:
+  sid,cap=l.split(chr(9),1); o.append(sid+chr(9)+cap.split(';')[0].split(':',1)[-1].strip()+'. Right pile, another sign, or a bad cut?')
+open(sys.argv[2],'w').write(chr(10).join(o)+chr(10))" $T/sorter/focus.tsv $T/sorter/focus30.tsv   # 30 most useful, one-line captions (owner: efficient)
+python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labels_small.tsv --pages $T/sorter/pages \
+  --focus $T/sorter/focus30.tsv --auto-clusters 4 \
+  --focus-note "Tiles the machine readers did not line up with, most frequent shapes first. Each started in the pile its shape most often sits in." \
   --title "Longlee 1580 Sign Sorter" \
-  --lede "BnF fr.16107 f.101v (Gallica canvas 107), Saint-Gouard to the King, Madrid, 2 March 1580: 1,493 tiles from 33 cipher lines. Piles start from two blind machine readers who agreed on only 42% of signs: a plain name is a sign both read the same, a/c is a split, +1r a sign only one reader saw; lines 30-33 are unplaced. Pile names are shape labels, not letters. Merge piles that are one sign, split piles that mix two, move single tiles, set aside non-signs and bad cuts." \
+  --lede "BnF fr.16107 f.101v (Gallica canvas 107), Saint-Gouard to the King, Madrid, 2 March 1580: 1,834 tiles from 33 straightened cipher lines, one sign per tile. Piles start from two blind machine readers who agreed on only 42% of signs: a plain name is a sign both read the same, a/c a split, +1r a sign only one reader saw; lines 30-33 had no reader row, so their tiles start by shape. SMALL holds dots and specks. Pile names are shape labels, not letters. Merge piles that are one sign, split piles that mix two, move single tiles, set aside non-signs and bad cuts." \
   --thumb 80 --tile-quality 60 --page-scale 0.5 --page-quality 50 \
   --out "$O/longlee_f101v_sorter.html" --data-out "$O/longlee_f101v_data.json"
