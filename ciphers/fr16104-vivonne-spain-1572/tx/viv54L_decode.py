@@ -8,6 +8,8 @@ and one-pass gap of N5-VIV54 is a tile, settled at 2-of-3 or left UNSETTLED with
 Rules (PREREG (i)): L2 = the reconcile output; L1 = two consecutive ':' tokens -> one ':' (key ':' = c), flag = either flag; then
 "o o" -> "oo" as tx/viv54_decode.py. Grades: H = agreed / N5 label rule / look-alike 2-of-3, AND key.tsv grade C; M = key grade M or
 UNSETTLED or a flagged token merged; U = not in key.tsv. key.tsv, tx/viv54_decode.py and reading_piece54.tsv are not touched.
+N7-VIV54R overlay (PREREG-N7VIV54R.md): tx/lookalike54/viv54R_relabel.tsv (page, passage, pos, label, conf) replaces a passD label
+before L1 (label Zu = Tomokiyo col u row 3, key.tsv Zu -> u); conf M flags the token. Absent file = N7-VIV54L's sequence unchanged.
 Writes reading_piece54_L.tsv; --check exits 1 if stale. --before returns the committed N5-VIV54 sequence with only L1 applied (diagnostic).
 """
 import csv, os, sys
@@ -41,13 +43,22 @@ def collapse(seq):
     return res
 
 
+def overlay():
+    p = os.path.join(LA, 'viv54R_relabel.tsv')
+    return {(r['page'], r['passage'], r['pos']): (r['label'], r['conf'] == 'M') for r in _read(p)} if os.path.exists(p) else {}
+
+
 def page_seqs(page):
+    ov = overlay()
     tiles = {(t['passage'], t['pos']) for t in _read(os.path.join(LA, f'viv54L_{page}_tiles.tsv'))}
     rows = {}
     for r in _read(os.path.join(LA, f'viv54L_{page}_passD.tsv')):
         k = (r['passage'], r['pos'])
         flag = k in tiles and r['note'] == 'lookalike UNSETTLED'
-        rows.setdefault(r['passage'], []).append((r['sign_id'], flag))
+        lab = r['sign_id']
+        if (page, r['passage'], r['pos']) in ov:
+            lab, f2 = ov[(page, r['passage'], r['pos'])]; flag = flag or f2
+        rows.setdefault(r['passage'], []).append((lab, flag))
     return {ln: collapse(seq) for ln, seq in rows.items()}
 
 
