@@ -8,7 +8,8 @@
 3. Positive control (power at matched N): key built from R1050 alone, applied to R1051's own codes, and the
    same statistic subsampled to the target's covered-token count.
 Usage: python3 test_sibling.py [--seed 1]   (writes test_sibling_output.txt)
-       python3 test_sibling.py --key KEY.tsv --out OUT.txt [--seed 1]   (any key; see run_key, READ2-HEL 3 Oct 2026)"""
+       python3 test_sibling.py --key KEY.tsv --out OUT.txt [--seed 1] [--oov-floor]   (any key; see run_key, READ2-HEL 3 Oct 2026;
+       --oov-floor scores an out-of-vocabulary left word at the unseen floor in the bigram stat, N6-HEL76 4 Oct 2026; default off)"""
 import re, os, sys, gzip, glob, math, random, collections
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(HERE)
 ROOT = os.path.dirname(os.path.dirname(T))
@@ -108,14 +109,14 @@ def synth_stream(key, rng, n_words=60000):
         else: out.append('x'); i += 1
     return out
 
-def run_key(keypath, outpath, seed, n=200):
+def run_key(keypath, outpath, seed, n=200, oov_floor=False):
     """--key mode (READ2-HEL, 3 Oct 2026): test any key TSV (code, meaning, ...) on every ciphertext_R*.txt.
     (a) value shuffle x n on the unigram stat and on the bigram stat; (b) token-ORDER shuffle x n of the target on the
     bigram stat (the unigram stat cannot move under an order shuffle, so (b) is not run on it); (c) positive control:
     contiguous windows of real fr18 prose encoded with this key, at the target's covered count, power = share of 200
     windows reaching p<=0.05 against 50 value shuffles (unigram, windows at the covered count) and 50 order shuffles
     (bigram, windows holding the target's own number of adjacent covered pairs)."""
-    rng = random.Random(seed); lp = unigram(); pmi = bigram(); out = []
+    rng = random.Random(seed); lp = unigram(); pmi = bigram(oov_floor=oov_floor); out = []
     key = {c: v for c, v in load_key(keypath).items() if v.strip()}
     nums = sorted(int(re.sub(r'\D', '', c)) for c in key if re.search(r'\d', c))
     out.append(f'key {os.path.relpath(keypath, T)}: {len(key)} codes with a meaning, range {nums[0]}-{nums[-1]}')
@@ -164,7 +165,7 @@ if __name__ == '__main__':
     if '--key' in sys.argv:
         a = sys.argv
         run_key(os.path.abspath(a[a.index('--key') + 1]), os.path.abspath(a[a.index('--out') + 1]),
-                int(a[a.index('--seed') + 1]) if '--seed' in a else 1)
+                int(a[a.index('--seed') + 1]) if '--seed' in a else 1, oov_floor='--oov-floor' in a)
         sys.exit(0)
     seed = int(sys.argv[sys.argv.index('--seed') + 1]) if '--seed' in sys.argv else 1
     rng = random.Random(seed); lp = unigram(); out = []
