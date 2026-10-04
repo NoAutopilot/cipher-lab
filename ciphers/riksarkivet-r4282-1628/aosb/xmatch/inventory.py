@@ -39,6 +39,7 @@ for d in sorted(glob.glob(os.path.join(REPO, 'ciphers/*/'))):
 with open(os.path.join(H, 'inventory.tsv'), 'w') as o:
     o.write('folder\tfile\ttokens\tnumeric\ttwo_digit\tin_12_91\tcodes_3_4\ta_kw\tyears\tb_1620_40\tc_numeric\n')
     for r in rows: o.write('\t'.join(map(str, r)) + '\n')
-sel = [r for r in rows if r[7] or r[9] or r[10]]
-print(len(rows), 'files;', len(sel), 'flagged')
-for r in sel: print('\t'.join(map(str, r)))
+if __name__ == '__main__':
+  sel = [r for r in rows if r[7] or r[9] or r[10]]
+  print(len(rows), 'files;', len(sel), 'flagged')
+  for r in sel: print('\t'.join(map(str, r)))

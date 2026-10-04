@@ -479,3 +479,8 @@ Florence ASF records -- the H18 seam between the first session's pages 1-57 and 
 key records DECODE listed on 2 Oct 2026 (N/A 6,351, Decrypted 19, Non-decrypted 4 -- the N/A total unchanged since
 28 Sept). 5 listing requests this session, 1.6 s apart, no login. Dutch-holder screen for 1595-1615 in
 `ciphers/oldenbarnevelt-brederode-1605/decode_keys_1600s.tsv`.
+
+## KEY1629-XMATCH (4 Oct 2026, account 3)
+21 login-free RecordsView pages (R1193, R4104, R4118-4120, R4130, R4131, R4138, R4298-4301, R4303, R4305, R4313, R4315, R4334,
+R5037-5040), 1.6 s apart, all HTTP 200, IS_LOGGEDIN false, saved in key1629-xmatch-2026-10-04/ with summary.txt (dates,
+languages, "Additional Information" text). Purpose and result: ciphers/riksarkivet-r4282-1628/NOTES.md "KEY1629-XMATCH".
