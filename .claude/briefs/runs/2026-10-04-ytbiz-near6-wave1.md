@@ -51,3 +51,18 @@ on archive.org (advancedsearch, no login), fetch the djvu.txt once to scratch (n
 "5 septembre", "10 octobre 1573", "chiffre", "dechiffr". Write a short NOTES section "N6-KERV" (identifier, hits with page/leaf context,
 whether any passage prints or summarises inks 52, 53, 54 or 63 -- quote <= 2 lines each), and add the volume to sources.tsv if it bears on
 a piece. Do not touch the piece jobs' files. Report what was found and where it was not found.
+
+## N6-HEL76 -- hellen-frederick-1752: transcribe R4376 P3 (f.56, 1754, codes 1-500) and test it on R1049 (7 Sept 1756) (Opus + Sonnet subagents; cap USD 8; box 90 min)
+NEAR5 handoff open item (no owner input). Read NOTES.md sections "NEAR3-HEL3" (R4376 facts: P1 docket 1754, P2 blank form, P3 filled French
+table 1-500 with "zero" nulls, "la Haye", "pays bas", no holder), "NEAR3-HEL4" (the R4372 recipe this job copies), "N4-HEL6" and "N5-HEL7"
+(statistic, OOV floor fix), and the LANE-NEAR5 gaps refresh (R4372 retired for R1049 by rule 3 -- do not use it as a candidate).
+Intake gate rc=0 pasted by LANE-NEAR6 at 10:1x UTC is for Vivonne only: run `python3 tools/intake_gate_check.py hellen-frederick-1752` yourself
+and paste it; nonzero = stop.
+Method: exactly NEAR3-HEL4's steps 1-5 (its brief: `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave2.md` "NEAR3-HEL4") with R4376 P3 in place
+of R4372 P2/P3 and R1049 in place of R1953: PREREG (`key_r4376/PREREG.md`) pushed before any test, with the matched control drawn from R1049's
+own 1-500 token count (subsample the positive control to that N, CLAUDE.md rule 3 last paragraph); one DECODE browser login, P3 full size into
+the scratchpad (sha1 recorded), never committed; column crops via `tools/iiif_lines.py --image`, command pasted; 1 page x (2 blind Sonnet
+passes + 1 reconciliation) = 3 units at ~USD 1.3; key_r4376/key.tsv + README conventions; run the tests; paste outputs. If the DECODE
+full-size image is refused (role gate, see the CLAUDE.md host table), stop and log the blocker -- do not transcribe a thumbnail.
+NOTES "N6-HEL76", HYPOTHESES.md row (target and control side by side), NEAR.md row Evidence/Last-touched if it bears, near_check, gaps
+refresh + gaps_check OK line. Report what was found and where it was not found; do not classify novelty.
