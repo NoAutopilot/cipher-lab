@@ -564,3 +564,39 @@ $ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 186 --region 1250,133
 **Units, stated before the first subagent call:** 4 pages x (2 blind Sonnet passes + 1 reconciliation) = 12 units at ~USD 1.3 = ~15.6, plus
 the gloss look -- over 80% of the USD 15 cap (N5-VIV54 ran ~4 per page all in). So **3 pages are read: f.170r, f.170v, f.171r** (9 units,
 ~11.7, where the interlinear words are); f.171v (18 lines, ~USD 4) is left as a named gap with its crops cut and committed to the manifest.
+## N6-VIV63 (4 Oct 2026, LANE-NEAR6 worker, account 2): fr.16105 ink 63 (10 Oct 1573, to the King, ff.190r-194r) read with key.tsv
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near6-wave1.md "N6-VIV63". Started 10:15 UTC, box to 14:14 UTC. Section in progress.
+
+**Step 0, premise (10:17 UTC).** Gachard II (labibliothquen02gachuoft djvu.txt, on disk) LXIII, "Au roi. Madrid, 10 octobre 1573 (En partie
+chiffrée, sans le déchiffrement)", pp.435-436: his summary covers only the plain part (audience of 22 Sept, passport for the King of Poland,
+St Michel audience, Çayas on the 4th); no plaintext of the cipher. Gachard I (labibliothque01gach): no "Gouard" at all. La Ferrière,
+Catherine IV (lettresdecatheri04cathuoft): no letter to Saint-Gouard after 10 Oct 1573 and no note naming a 10 Oct letter (Oct-Dec 1573
+entries go to Danzay, Tavannes, Damville, Bellièvre, de Thou, Rambouillet). Neighbouring leaves: N5-VIVTAB viewed fr.16105 c192-c248: no
+decipherment of 63 to the end of the volume. N6-KERV (this lane, same hour): Kervyn has no passage dated 10 Oct 1573. Not checked: a
+decipherment filed in another volume (fr.16106 holds one such stray, Gachard vol. III XLIV). No printed plaintext located; proceed.
+
+**Layout (c195-c199 at 1600 px, 10:18 UTC).** f.190r = c195 right (stamped "190"); f.190v/f.191r = c196 (stamped "191"); f.191v/f.192r = c197;
+f.192v/f.193r = c198; f.193v/f.194r = c199 (stamped "194"). Offset for these leaves: canvas c shows f.(c-6)v left | f.(c-5)r right (N5-VIVK's
+c-4/c-3 near f.100 no longer holds). f.190r opens with a plain line ("en ce faict ce que j'en asseureray de v^re mag^te ...") and plain words are
+mixed into the first cipher lines ("hardiment avec dilligence ... Il non"); "Il non" recurs inside the cipher on f.190v and f.191v (as on ink 54).
+f.194r: ~21 cipher lines, then plain ("... v^re mag^te auroit eu quatre jours plustost son courrier ...", the bodies of the late Emperor, the
+Empress, Queens Mary and Eleanor carried to the Escorial), closing "de Madrid ce x^me d'octobre 1573". 8 full pages of 34-36 lines + 21 lines
+= about 300 cipher lines, denser than ink 54 (25 lines/page). No interlinear words seen at 1600 px on any of the five openings (gate b applies).
+
+**Crops** (debug overlays checked: one band per written line; f.190r's right edge narrowed to exclude the next leaf's margin strip; f.190v and
+f.191v re-cut higher after the first cut missed the top lines; crops not committed (24 MB), manifest committed, regenerate with these commands):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 195 --region 4850,650,2720,4650 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c195_f190r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  region 2720x4650, 35 lines, 35 bands x 2 segments; pitch 116; wrote 70 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 196 --region 1250,800,2880,4400 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c196_f190v --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  region 2880x4400, 34 lines, 34 bands x 2 segments; pitch 120; wrote 68 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 196 --region 5020,540,2760,4400 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c196_f191r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  region 2760x4400, 36 lines, 36 bands x 2 segments; pitch 112; wrote 72 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 197 --region 1250,520,2880,4500 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c197_f191v --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  region 2880x4500, 35 lines, 35 bands x 2 segments; pitch 114; wrote 70 crops
+```
+**Units, stated before the first subagent call (10:21 UTC).** 8.5 pages x 3 units (2 blind Sonnet passes + 1 reconciliation) x ~USD 1.3-1.5 =
+~USD 35-38 > the USD 30 cap (80% = 24), and these pages carry ~35 lines against ink 54's ~25, so per pass ~1.4x ink 54's. Plan: **4 pages
+(f.190r, f.190v, f.191r, f.191v) = 8 Sonnet passes + 4 reconciliations = 12 units, ~USD 17-20 with this worker's own share**, then decode what is
+done; ff.192r-194r (4.5 pages) go to Remaining gaps with their cost. Reconciliation = tools/reconcile_passes.py + tx/reconcile_vivk.py's label
+rules (+ RULES54) + this worker's eye on listed splits only.
