@@ -1,0 +1,31 @@
+{
+ "label": "target owner + {'k014': 'k077'}",
+ "n_train": 6218,
+ "n_held": 3682,
+ "n_letters": 9166,
+ "train_end_letter": 5733,
+ "held_letters": 3433,
+ "t_train_s": 11.3,
+ "acc": 0.6298,
+ "null_a": {
+  "n": 200,
+  "mean": 0.3536,
+  "p99": 0.38
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.3954,
+  "gate": 0.4063,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 200,
+  "mean": 0.3835,
+  "p99": 0.3971
+ },
+ "gate_pass": true,
+ "extra": {
+  "k014": "k077"
+ },
+ "n_symbols": 115
+}

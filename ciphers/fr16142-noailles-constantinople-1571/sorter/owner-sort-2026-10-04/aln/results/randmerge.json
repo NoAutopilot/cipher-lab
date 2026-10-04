@@ -1,0 +1,102 @@
+[
+ {
+  "set": 0,
+  "acc": 0.3753,
+  "n_symbols": 110
+ },
+ {
+  "set": 1,
+  "acc": 0.3628,
+  "n_symbols": 108
+ },
+ {
+  "set": 2,
+  "acc": 0.3495,
+  "n_symbols": 110
+ },
+ {
+  "set": 3,
+  "acc": 0.3743,
+  "n_symbols": 110
+ },
+ {
+  "set": 4,
+  "acc": 0.384,
+  "n_symbols": 109
+ },
+ {
+  "set": 5,
+  "acc": 0.3683,
+  "n_symbols": 109
+ },
+ {
+  "set": 6,
+  "acc": 0.3444,
+  "n_symbols": 110
+ },
+ {
+  "set": 7,
+  "acc": 0.5339,
+  "n_symbols": 110
+ },
+ {
+  "set": 8,
+  "acc": 0.3726,
+  "n_symbols": 110
+ },
+ {
+  "set": 9,
+  "acc": 0.3726,
+  "n_symbols": 108
+ },
+ {
+  "set": 10,
+  "acc": 0.3504,
+  "n_symbols": 109
+ },
+ {
+  "set": 11,
+  "acc": 0.5182,
+  "n_symbols": 110
+ },
+ {
+  "set": 12,
+  "acc": 0.3506,
+  "n_symbols": 109
+ },
+ {
+  "set": 13,
+  "acc": 0.3724,
+  "n_symbols": 110
+ },
+ {
+  "set": 14,
+  "acc": 0.3786,
+  "n_symbols": 108
+ },
+ {
+  "set": 15,
+  "acc": 0.3743,
+  "n_symbols": 111
+ },
+ {
+  "set": 16,
+  "acc": 0.3745,
+  "n_symbols": 111
+ },
+ {
+  "set": 17,
+  "acc": 0.3914,
+  "n_symbols": 109
+ },
+ {
+  "set": 18,
+  "acc": 0.3664,
+  "n_symbols": 109
+ },
+ {
+  "set": 19,
+  "acc": 0.3672,
+  "n_symbols": 108
+ }
+]

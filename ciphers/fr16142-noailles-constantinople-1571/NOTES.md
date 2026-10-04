@@ -623,3 +623,62 @@ Verdict: keep going: 4 internal gaps; cheapest next: re-run nxaln.py on the sett
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## NOX-ALN (4 Oct 2026)
+Account-3 worker for the account-3 orchestrator, 08:55-09:3x UTC; brief `.claude/briefs/runs/2026-10-04-acct3-nox-aln.md`. Pre-registered
+in `sorter/owner-sort-2026-10-04/aln/PREREG.md` (commit d6bb89b5, 08:56 UTC, before any run). Script `aln/nox_aln.py` imports
+`run2/nxaln/nxaln.py` unchanged; `python3 aln/nox_aln.py check` exits 0. No reading is claimed; every learned value stays grade M.
+
+**Pre-registered result.** RUN2-NXALN's atlas instrument re-run unchanged on the owner's settled labels (116 symbols: 108 piles plus
+8 one-tile ghosts, see deviation): held-out accuracy **0.355** vs null (a) shuffled key p99 0.360, (b) shuffled-text max 0.361 (40),
+(c) wrong text p99 0.360 -> **FAIL** (before the sort: 0.363, also FAIL). The licensing design control at the post-sort pile count
+(108 piles, 40% impurity) now **passes 3 of 3 seeds** (0.544 / 0.451 / 0.552 vs nulls <= 0.444; at 120 piles it passed 1 of 3), so on
+the pre-registered rule this FAIL is control-backed at 40% noise -- though seed 1 clears by 0.007 and the control's noise is uniform
+random relabelling, not the real hash-family confusion. Random-merge control (20 sets of 18 size-matched merges, owner's moves and bad
+cuts kept): owner delta -0.007 (0.363 -> 0.355); random deltas mean +0.021; 4 of 20 random sets at or below the owner.
+Two-reader numbers (quoted from NOX-OWNERSORT `nox/impurity.tsv`, same labels): err_2reader unchanged by a sort (41.8% c510, 46-57%
+c515/c516); pile impurity vs reader-agreed signs before -> after 0.690 -> 0.688 (P1), 0.163 -> 0.170 (P2); 0 of 200 random 18-merge
+sets do as well as the owner.
+
+**Exploratory finding (not pre-registered; from the random-merge control).** Two random sets (7, 11) scored 0.534 / 0.518, far above
+their own nulls (shuffled key p99 0.387 / 0.385, wrong text 0.396 / 0.394; `aln/results/diag_rand.json`); their train paths end at
+letter ~5,734 (6,218 tiles: 1.08 tiles per letter, the c262 ratio 1.05) where every failing run ends at ~6,100-6,370 (drift). The only
+merge both share is **k014 -> k077**. Owner labels + that one merge, full pipeline unchanged (`aln/full_pair.py k014 k077`): held-out
+**0.630** vs (a) p99 0.380, (b) max 0.406 (40 shuffled-text retrainings), (c) p99 0.397 -> **passes all three nulls**. The atlas
+clusters before the sort + the same merge do not lock on (0.369, path end 6,138): the owner's sort is part of it. Read: the aligner
+locks onto Dupuy 221R-226R when the inventory falls in the right basin; the failing runs are a search failure, not only noise. Caveats:
+post hoc (found among 20 + 1 tries, so not a licensed pass); c262 provisional names call k014 i2 and k077 o1/e2, different letters, so
+the merge may be wrong as a sign identity even if it unlocks the search. Every value stays grade M. Files: `aln/results/`.
+
+**Step 3, for the owner** (`aln/next_targets.tsv`, `aln/targets.json` with sids): piles 1 **k014 + k077** (are they one sign? decides
+whether the lock-on is a real merge), 2 **k065** (score 77: reader agreed signs r1 19 / o1/e2 13; 163 of 236 aligned tiles off its modal
+letter), 3 **k000** (score 18.6: o1/e2 24 / r1 5); k060's doubtful merge drops to 4th (score 15.4) and keeps its 5 tiles among the 40.
+Tiles: NOX-OWNERSORT's 40 reader-conflict tiles re-ranked (chosen piles first, then by pile score).
+
+Deviation: 39 tiles absent from settled_labels.tsv kept their atlas cluster as pre-registered; 8 of them sit in merged-away piles, so
+the after-sort run carries 8 one-tile ghost symbols (116 not 108). 8 of 9,900 tiles cannot move the 0.005 gap; not re-run.
+
+## Remaining gaps (NOX-ALN, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner locks onto Dupuy 221R-226R on owner labels + k014->k077 (held-out 0.630, all nulls passed, exploratory); 0 open leaves decoded
+- Lock-on is post hoc: k014->k077 found from the random-merge control - blocker: not-attempted; next: pre-register and run the confirmation (fresh seeds for the nulls, design control at the same pile count, plus 10 other single merges as a specificity control), ~$1.5; and the owner's look at k014 vs k077 on the page
+- Key from the locked-on alignment not extracted or graded - blocker: not-attempted; next: after confirmation, key_learned from `aln/results/full_pair_k014_k077_counts.tsv` vs key.tsv (Tomokiyo) agreement, then decode a leaf not aligned to Dupuy, ~$2
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; next: one native look per pair, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (NOX-ALN, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; on owner labels + k014->k077 the alignment locks on (exploratory)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles (checked by NOX-OWNERSORT, re-aligned by NOX-ALN)
+- [ ] retry: pre-registered confirmation of the k014->k077 lock-on with a specificity control; planned step: `aln/full_pair.py` under a new PREREG
+Verdict: keep going: 6 internal gaps; cheapest next: pre-registered confirmation of the lock-on, ~$1.5
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (NOX-ALN):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

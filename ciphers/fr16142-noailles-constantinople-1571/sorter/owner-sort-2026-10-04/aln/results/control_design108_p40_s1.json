@@ -1,0 +1,27 @@
+{
+ "label": "control design 108 piles p=0.4 seed=1",
+ "n_train": 5387,
+ "n_held": 3190,
+ "n_letters": 9169,
+ "train_end_letter": 5702,
+ "held_letters": 3467,
+ "t_train_s": 9.3,
+ "acc": 0.4508,
+ "null_a": {
+  "n": 50,
+  "mean": 0.4269,
+  "p99": 0.4412
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.4279,
+  "gate": 0.4442,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 50,
+  "mean": 0.4144,
+  "p99": 0.432
+ },
+ "gate_pass": true
+}

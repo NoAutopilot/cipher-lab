@@ -1,0 +1,28 @@
+{
+ "label": "target atlas after owner sort",
+ "n_train": 6218,
+ "n_held": 3682,
+ "n_letters": 9166,
+ "train_end_letter": 6366,
+ "held_letters": 2800,
+ "t_train_s": 12.0,
+ "acc": 0.3555,
+ "null_a": {
+  "n": 200,
+  "mean": 0.3508,
+  "p99": 0.3604
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.3539,
+  "gate": 0.3609,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 200,
+  "mean": 0.3473,
+  "p99": 0.3604
+ },
+ "gate_pass": false,
+ "n_symbols": 116
+}
