@@ -1,0 +1,21 @@
+# RUN2-NXTB pass B after recon_rules.py (rule-touched tokens carry ?)
+c515_L01	f1? a2 b1 o1/e2 n2? o1/e2 i2? l2 W:le o1/e2 e3 o1/e2 n1 c2 o1/e2 o1/e2 i2? o1/e2 t2 c2 ?{b-hook} i2? o1/e2 n2? o1/e2 p1 m1 o1/e2 f1?
+c515_L02	d1? c2 o1/e2 i2? s1 m1 e3 i2? l2 n2? o1/e2 o1/e2 m1 s1 p1 o1/e2 o1/e2 n1 c2 i2? t2 X:Lhook? l1 o1/e2 r1 s1 t2 b1 i2? o1/e2 n1
+c515_L03	t1 s1 p1 e3 e1 f2? i2? o1/e2 n1? o1/e2 r1 s1 f1? o1/e2 m1 n1? f1? W:le t2 e3 o1/e2 o1/e2 t2 i2? c1 n1? l1 i1 m1 e3 ?{curl}
+c515_L04	s2? o1/e2 ?{Y-serif} p1 o1/e2 m1 s1 f1? m1 t1 ?{2-bar} ?{B} a1 s1 o1/e2 n1 ?{M-flourish} d1? ?{2-hook} f1? i2? p1 i2? n1 f2? s1 o1/e2 e3 i2? ?{n-tick} o1/e2 W:le
+c515_L05	i2? l2 l1 o1/e2 n1? o1/e2 n1 o2? o1/e2 o1/e2 t2 ?{curl-z} d1? o1/e2 z1? o1/e2 ?{>} ?{>} o1/e2 n1 ?{L-flourish} ?{e-bar} o1/e2 n1 a1 o1/e2 e3 d1? r1 l2 s1
+c515_L06	?{n-tick} ?{2} o1/e2 ?{w} z1? W:le f1? ?{n-tick} o1/e2 n2? m1 i1? e3? ?{perp} n1 t1 m1 o1/e2 o1/e2 a1 f1? n1 o1/e2 n1? m1 s1 f1? a2 i2? e3 o1/e2 f1? N4
+c515_L07	l1 a1 f1? o1/e2 ?{m-bar} ?{ff-curl} a1 p1 o1/e2 m1 s1 i2? N2 b1 i2? o1/e2 n2? n2? l1 o1/e2 i2? n1 ?{r} m1 ?{cross-x} s1 i2? a1 o1/e2 o1/e2 f2? f1?
+c515_L08	?{omega-curl} o1/e2 s1 f1? o1/e2 f1? t1 o2? o1/e2 s1 ?{n-tick} ?{2} o1/e2 f1? i2? o1/e2 o1/e2 n1 a2 n1? o2? o1/e2 i2? n1 t1? o1/e2 m1 c1 o1/e2 ?{omega-curl}
+c515_L09	l1 a2 f1? o1/e2 W:le ?{t-bar} e3 o1/e2 W:le W:le t1 ?{v} o1/e2 e3 o1/e2 o1/e2 a1 l2 ?{w} ?{2-bar} ?{I-t} o2? o1/e2 m1 f1? ?{H} s1 a1 i1
+c515_L10	a1 ?{t-bar} o2? o1/e2 e3 m1 o2? o1/e2 o1/e2 e3 o1/e2 a1 b1 i2? e3 o1/e2 f2? l2 l2 f2? i2? o1/e2 o1/e2 e3 a1 ?{2-bar} ?{B} f2? l2 W:le n2? o1/e2
+c515_L11	o1/e2 X:2+? a3 o1/e2 ?{omega-tail} n1 ?{cross} e2? o1/e2 a2 n1 c2 X:Yhook? o1/e2 o1/e2 c1 ?{q-tail} W:de? s2? a1 ?{7-slash} a1 i1 n1 t2 o1/e2 a3 ?{5}
+c515_L12	?{ts-hook} ?{F-u} ?{7-box} ?{Y-stem} o1/e2 o1/e2 r1? X:2+? c1 o1/e2 ?{7-slash} o2? X:2+? ?{6-tail} l1 r1? ?{q-tail} a1 ?{q-tail} ?{w-hook} a2 i1 ?{7-box} ?{hash-7} W:de? c1 a2 a3 l1 a2
+c515_L13	o1/e2 e3? p1 o1/e2 t2 a1 a3 i1 o1/e2 n1 W:de? s2? o2? l2 z1? ?{d-loop} ?{d-loop} t2 o1/e2 r1? s2? X:2+? ?{phi} r1? e3 ?{7-slash} o1/e2 s2? ?{cross-H} o1/e2 i1
+c515_L14	p1 t2 a3 r1? ?{7-box} ?{T-bar} W:de? ?{w-hook} o1/e2 o1/e2 e3 a2 l1 ?{w} ?{q-tail} a1 a1 c2 X:2+? o1/e2 r1? s2? t2 o1/e2 e3 o2? ?{theta-bar} ?{cross-H} o1/e2 l1 a2
+c515_L15	?{fs-tail} o1/e2 X:2+? a3 o1/e2 n2? o1/e2 b1? o1/e2 X:2+? s2? ?{7-box} a2 n1 a3 a3 a1 ?{omega-tail} n1 o1/e2 z1? ?{cross-H} o1/e2 X:Yhook? e3? a2 n1 W:de? e3? ?{2-0} z1?
+c515_L16	?{X-tail} ?{oo-bar} ?{d-loop} ?{6} ?{to} X:2+? o1/e2 n2? e3? c2 o1/e2 r1? b1? t2 ?{6-tail} ?{E} o1/e2 i1 n1 ?{5-cross} s2? X:2+? e3 o1/e2 o2? ?{a3-d} o1/e2 a2 b1?
+c515_L17	a1 X:Yhook? a2 t2 ?{ay-tail} r1? o1/e2 n1 a1 p1 ?{E} o1/e2 l2 ?{F-u} o1/e2 ?{2-tail} n1 ?{w} o1/e2 a2 n1 c1 ?{6-tail} W:le b1? a1 o1/e2 e2? e3
+c515_L18	?{S-a3} a3 X:2+? ?{cross-H} ?{q-tail} s2? a1 n1 e2? i1 a2 c1 ?{cross-H} o1/e2 t2 a1 c2 X:2+? e3 o1/e2 e2? o1/e2 r1? ?{omega-tail} o1/e2 e3 n1 e3? ?{omega-tail} e3
+c515_L19	c2 a2 o1/e2 e2? o1/e2 e3 e3? a2 ?{q-tail} t2 ?{S-hook-long} s2? o1/e2 X:Yhook? b1? ?{theta-bar} l2 a2 n2? t2 W:de? o2? l2 o2? ?{ts-hook} o1/e2 ?{w-hook} ?{7} i1 c1 o1/e2
+c515_L20	o1/e2 n1 r1? o1/e2 e3 ?{7-box} ?{F-u} ?{T-bar} W:de? X:Yhook? o1/e2 r1? X:2+? l2 l1 ?{7} o1/e2 n1 ?{ts-hook} ?{phi-cross} s2? o1/e2 n1 X:2+? n1 t2 o1/e2 e3 r1? o1/e2

@@ -13,7 +13,7 @@ for r in dr:
         lab, gr = f"{d['A'] or '-'}|{d['B'] or '-'}", 'M'
     else:
         lab = r['sign'].rstrip('?'); gr = 'H' if (r['confidence'] == 'H' and not r['sign'].endswith('?')) else 'M'
-    g[gr] += 1; rows.append(('c516', r['line'], r['position'], lab, gr))
+    g[gr] += 1; rows.append((r['line'].split('_')[0][:4], r['line'], r['position'], lab, gr))
 out = 'leaf\tline\tpos\tlabel\tgrade\n' + ''.join('\t'.join(x) + '\n' for x in rows)
 if '--check' in sys.argv:
     sys.exit(0 if open('reconciled.tsv').read() == out else 'reconciled.tsv is stale')

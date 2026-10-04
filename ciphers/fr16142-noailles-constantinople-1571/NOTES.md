@@ -368,6 +368,46 @@ Verdict: keep going: 4 internal gaps; cheapest next: text-check the date-only Du
 `python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXDUP):
 ```
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+## Two blind passes of c516 + c515 L01-L20 (LANE-RUN2 RUN2-NXTB, account 1, 4 Oct 2026, 02:46-03:00 UTC)
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md` RUN2-NXTB. Intake gate re-run 02:46 UTC: `fr16142-noailles-constantinople-1571:
+partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. No decode, no alignment, key.tsv untouched.
+Full report: `run2/nxtb/REPORT.md`. c516's cipher is 18 lines (3 above the clear lead-in, 15 below; ~520 signs, not ~1,200);
+c515 is 40 cipher lines (~1,250 signs at ~31/line). Crops for all 58 lines in `run2/nxtb/crops/` (`regen.sh`).
+
+| leaf | signs (A/B) | err_2reader raw | after `recon_rules.py` |
+|---|---|---|---|
+| c516 | 515/504 | 57.0% | 27.8% (rules fitted on this leaf) |
+| c515 L01-L20 | 608/610 | 46.1% | 45.4% (rules frozen before the passes ran: held out) |
+
+The rules that took c516 from 57% to 28% bought c515 under one point: the readers describe the same unnamed shapes in new words
+on each leaf, so reconciling by rule over descriptions does not transfer. Every reader on both leaves failed to name the same three
+shapes against Tomokiyo's table (the 2-with-a-cross, the swash zp, the hash family #/H-hash/triple bar); `focus.tsv` ranks the split
+pairs for the sign sorter. This is a third leaf (after c262) where table-image naming by Sonnet readers splits 28-57%: the glyph
+inventory, not the cutting, is the limit (the rule 3 third-attempt situation NX-RECUT logged for c262, now seen on new material).
+`reconciled.tsv` keeps both readings where they split (grade M); H only where both blind passes agree untouched (c516 169, c515 279).
+
+## Remaining gaps (RUN2-NXTB, 4 Oct 2026)
+Read so far: 351 of 353 canvases surveyed at 400 px, 31 open/unclear C/P pages re-read at 1500 px; Dupuy 521 indexed whole; c262 transcribed 4 times, gate failed twice; c516 cipher (18 lines) and c515 L01-L20 read by two blind passes each (err_2reader 57% / 46% raw); 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (readers split 28-57% on c262, c516, c515) - blocker: not-attempted; every known-answer use waits on it; next: owner sorts focus.tsv pairs (run2/nxtb/focus.tsv, c515/focus.tsv) with RUN2-NXATL's cluster sheets in the sign sorter, then blind passes against the settled labels, ~$6
+- c515 L21-L40 not read by any pass - blocker: not-attempted; stopped at cap (USD 6.9 of 10 after the L01-L20 group); next: 2 passes x 2 calls on the existing crops after the sorter labels exist, ~$4
+- c510-516 known-plaintext pair with Dupuy 521 221R-226R not yet used - blocker: not-attempted; wave 2 (RUN2-NXALN) by design; next: alignment with its pre-registered gate once NXDUP's clear text and settled labels exist, ~$4
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; outside this brief; next: one native look per pair at the clear lead-in words, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; outside this brief; next: grep Charrière III and the Lepanto relations in print for its clear opening, ~$1
+
+## Escalation (RUN2-NXTB, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); c245-246/c464 a further same-text pair (RUN1-NX)
+- [x] clear-pages: Dupuy 521 indexed and aligned by date; c510-516 and c275-276 text-confirmed; Charrière III 7 July 1574 excerpts located
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read for the June-July 1574 excerpts
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); 31 pages at 1500 px (RUN1-NX); c516 + c515 cut with --follow-slope, one line hand-sheared off an ink smear (RUN2-NXTB)
+- [ ] retry: known-answer with settled glyph labels (sign sorter), on c262 or c510-516 against Dupuy 221R-226R; planned step: sorter on focus.tsv + RUN2-NXATL clusters
+Verdict: keep going: 5 internal gaps; cheapest next: text-check the date-only Dupuy matches, ~$1; every transcription step now waits on the sorter, not on more machine passes
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXTB):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 5 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 

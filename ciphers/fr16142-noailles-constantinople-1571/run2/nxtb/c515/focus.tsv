@@ -1,0 +1,128 @@
+sign_a	sign_b	columns_split	example_line_col	note
+X:2+	i2	18	c515_L01:7	two table labels
+?{2p-loop}	n1	15	c515_L11:6	unnamed shape vs table label
+?{flag-4}	f1	13	c515_L01:1	unnamed shape vs table label
+?{2f}	n1	13	c515_L01:13	unnamed shape vs table label
+X:2+	n1	11	c515_L11:2	two table labels
+?{Y-fork}	s1	10	c515_L02:28	unnamed shape vs table label
+m1	s1	9	c515_L01:27	two table labels
+i1	l1	7	c515_L11:24	two table labels
+o2	o?{epsilon}	6	c515_L05:8	two table labels
+?{q-bar}	?{q-tail}	6	c515_L11:18	unnamed shape vs table label
+W:de	t1	5	c515_L03:1	two table labels
+l1	m1	5	c515_L12:16	two table labels
+?{box-bar}	o2	5	c515_L13:13	unnamed shape vs table label
+?{triangle}	l2	5	c515_L13:14	unnamed shape vs table label
+?{cross-H}	?{plus-H}	5	c515_L13:29	unnamed shape vs table label
+-	m1	4	c515_L02:7	one reader skipped or added a sign (segmentation)
+?{omega-p}	?{omega-tail}	4	c515_L11:5	unnamed shape vs table label
+?{box-open}	e2	4	c515_L11:8	unnamed shape vs table label
+n1	n2	3	c515_L01:5	two table labels
+a1	d1	3	c515_L02:1	two table labels
+-	?{Y-fork}	3	c515_L02:16	one reader skipped or added a sign (segmentation)
+?{w-flat}	?{w-hook}	3	c515_L12:21	unnamed shape vs table label
+n1	p1	3	c515_L13:3	two table labels
+-	X:2+	2	c515_L02:4	one reader skipped or added a sign (segmentation)
+?{Y-fork}	i2	2	c515_L02:5	unnamed shape vs table label
+o1/e2	r1	2	c515_L02:27	two table labels
+?{S-2f}	n1	2	c515_L03:16	unnamed shape vs table label
+?{9-hook}	c1	2	c515_L03:25	unnamed shape vs table label
+?{B-hook}	?{B}	2	c515_L04:13	unnamed shape vs table label
+-	n1	2	c515_L04:17	one reader skipped or added a sign (segmentation)
+?{n-tick}	o1/e2	2	c515_L04:31	unnamed shape vs table label
+?{q}	n1	2	c515_L05:5	unnamed shape vs table label
+?{A-hook}	n2	2	c515_L07:17	unnamed shape vs table label
+?{omega-curl}	u1	2	c515_L08:1	unnamed shape vs table label
+?{t-bar}	t2	2	c515_L09:6	unnamed shape vs table label
+?{7-box}	?{box-stem}	2	c515_L12:3	unnamed shape vs table label
+?{d-loop}	?{script-d}	2	c515_L13:16	unnamed shape vs table label
+?{omega-small}	z1	2	c515_L15:21	unnamed shape vs table label
+?{E}	?{epsilon}	2	c515_L16:17	unnamed shape vs table label
+-	?{2p-loop}	2	c515_L17:18	one reader skipped or added a sign (segmentation)
+?{7-bar}	?{7}	2	c515_L19:28	unnamed shape vs table label
+-	i2	1	c515_L01:17	one reader skipped or added a sign (segmentation)
+X:2+	o1/e2	1	c515_L01:18	two table labels
+?{L-flag}	X:Lhook	1	c515_L02:24	unnamed shape vs table label
+d1	e1	1	c515_L03:5	two table labels
+?{7}	f1	1	c515_L03:17	unnamed shape vs table label
+?{curl}	t2	1	c515_L03:31	unnamed shape vs table label
+?{y-hook}	s2	1	c515_L04:1	unnamed shape vs table label
+?{X-bar}	?{Y-serif}	1	c515_L04:3	unnamed shape vs table label
+-	?{M-flourish}	1	c515_L04:18	one reader skipped or added a sign (segmentation)
+-	d1	1	c515_L04:19	one reader skipped or added a sign (segmentation)
+?{2-hook}	?{2f}	1	c515_L04:20	unnamed shape vs table label
+?{M-hook}	f1	1	c515_L04:21	unnamed shape vs table label
+a1	i2	1	c515_L04:22	two table labels
+?{7}	p1	1	c515_L04:23	unnamed shape vs table label
+?{Z-hook}	?{curl-z}	1	c515_L05:12	unnamed shape vs table label
+?{>}	?{C-hook}	1	c515_L05:17	unnamed shape vs table label
+?{>}	?{y-hook}	1	c515_L05:18	unnamed shape vs table label
+?{L-flag}	?{L-flourish}	1	c515_L05:21	unnamed shape vs table label
+?{e-bar}	?{t-bar}	1	c515_L05:22	unnamed shape vs table label
+?{H}	r1	1	c515_L05:29	unnamed shape vs table label
+?{2-hook}	?{2}	1	c515_L06:2	unnamed shape vs table label
+?{2-bar}	?{w}	1	c515_L06:4	unnamed shape vs table label
+-	f1	1	c515_L06:7	one reader skipped or added a sign (segmentation)
+?{flag-4}	?{n-tick}	1	c515_L06:8	unnamed shape vs table label
+-	n2	1	c515_L06:10	one reader skipped or added a sign (segmentation)
+m1	o1/e2	1	c515_L06:11	two table labels
+?{y-hook}	i1	1	c515_L06:12	unnamed shape vs table label
+e3	s1	1	c515_L06:13	two table labels
+?{perp}	a2	1	c515_L06:14	unnamed shape vs table label
+?{9-hook}	m1	1	c515_L06:25	unnamed shape vs table label
+?{6}	N4	1	c515_L06:34	unnamed shape vs table label
+?{ff-curl}	?{ff-hook}	1	c515_L07:6	unnamed shape vs table label
+N2	X:2+o	1	c515_L07:13	two table labels
+?{r-flag}	?{r}	1	c515_L07:23	unnamed shape vs table label
+?{X-script}	?{cross-x}	1	c515_L07:25	unnamed shape vs table label
+?{n-tick}	r1	1	c515_L08:11	unnamed shape vs table label
+?{2-bar}	?{2}	1	c515_L08:12	unnamed shape vs table label
+?{box-flag}	f1	1	c515_L08:14	unnamed shape vs table label
+?{alpha-open}	t1	1	c515_L08:25	unnamed shape vs table label
+?{F-bar}	W:le	1	c515_L09:10	unnamed shape vs table label
+?{v-bar}	?{v}	1	c515_L09:12	unnamed shape vs table label
+?{w}	z1	1	c515_L09:19	unnamed shape vs table label
+?{I-t}	?{It-script}	1	c515_L09:21	unnamed shape vs table label
+?{H-3bar}	?{H}	1	c515_L09:26	unnamed shape vs table label
+?{A-script}	a1	1	c515_L10:1	unnamed shape vs table label
+?{y-hook}	n2	1	c515_L10:31	unnamed shape vs table label
+?{cross}	?{plus-stem}	1	c515_L11:7	unnamed shape vs table label
+-	?{plus-bar}	1	c515_L11:15	one reader skipped or added a sign (segmentation)
+?{7-bar}	?{7-slash}	1	c515_L11:22	unnamed shape vs table label
+?{5-hook}	?{5}	1	c515_L11:29	unnamed shape vs table label
+?{Y-stem}	s2	1	c515_L12:4	unnamed shape vs table label
+-	?{7-bar}	1	c515_L12:11	one reader skipped or added a sign (segmentation)
+?{7-slash}	?{box-bar}	1	c515_L12:12	unnamed shape vs table label
+n1	o2	1	c515_L12:13	two table labels
+?{delta-tail}	X:2+	1	c515_L12:14	unnamed shape vs table label
+?{6-tail}	m1	1	c515_L12:15	unnamed shape vs table label
+?{alpha-a}	a3	1	c515_L12:29	unnamed shape vs table label
+?{phi-q}	?{phi}	1	c515_L13:23	unnamed shape vs table label
+?{7-box}	?{7-slash}	1	c515_L13:26	unnamed shape vs table label
+?{omega-small}	?{w}	1	c515_L14:14	unnamed shape vs table label
+?{theta-bars}	?{theta-bar}	1	c515_L14:27	unnamed shape vs table label
+?{fs-tail}	?{ts-hook}	1	c515_L15:1	unnamed shape vs table label
+?{S-hook2}	e3	1	c515_L15:25	unnamed shape vs table label
+-	?{S-hook2}	1	c515_L15:29	one reader skipped or added a sign (segmentation)
+e3	n1	1	c515_L15:30	two table labels
+?{2-0}	b1	1	c515_L15:31	unnamed shape vs table label
+?{X-tail}	t1	1	c515_L16:1	unnamed shape vs table label
+?{omega-bar}	?{oo-bar}	1	c515_L16:2	unnamed shape vs table label
+?{6-hook}	?{6}	1	c515_L16:4	unnamed shape vs table label
+?{plus-o}	?{to}	1	c515_L16:5	unnamed shape vs table label
+-	?{delta-tail}	1	c515_L16:15	one reader skipped or added a sign (segmentation)
+?{6-tail}	?{tilde-epsilon}	1	c515_L16:16	unnamed shape vs table label
+?{5-cross}	t2	1	c515_L16:21	unnamed shape vs table label
+?{a3-d}	?{alpha-d}	1	c515_L16:27	unnamed shape vs table label
+?{ay-loop}	?{ay-tail}	1	c515_L17:5	unnamed shape vs table label
+-	?{2-tail}	1	c515_L17:16	one reader skipped or added a sign (segmentation)
+?{w-flat}	?{w}	1	c515_L17:19	unnamed shape vs table label
+?{6-tail}	?{delta-tail}	1	c515_L17:24	unnamed shape vs table label
+-	?{box-open}	1	c515_L17:29	one reader skipped or added a sign (segmentation)
+e2	o1/e2	1	c515_L17:30	two table labels
+?{S-a3}	e3	1	c515_L18:1	unnamed shape vs table label
+?{S-loop-2}	e3	1	c515_L19:7	unnamed shape vs table label
+?{S-hook-long}	?{omega-p}	1	c515_L19:11	unnamed shape vs table label
+?{theta-bar}	b1	1	c515_L19:16	unnamed shape vs table label
+?{ts-hook}	?{vS-hook}	1	c515_L19:25	unnamed shape vs table label
+?{phi-cross}	?{plus-stem}	1	c515_L20:20	unnamed shape vs table label
