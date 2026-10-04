@@ -69,3 +69,10 @@ computer's guess, not an owner decision -- only `moved` rows, and `kept` rows li
 
 The owner's piles are a third reader, not ground truth (`../owner-sort-2026-10-04/README.md`); a split must still be
 tested before any key value rides on it.
+
+## Earlier picks are correctable (4 Oct 2026, owner's ask)
+
+The green-check tiles (your picks from the 4 Oct sort) now move like any tile: tap to take out, place, drag, Undo. A move
+on one is a correction to the earlier sort. After export, run `python3 ciphers/nevers-birago-fr3251-1572/sorter/no87/ref_corrections.py DIR`
+(DIR = the db export) to append them to `../owner-sort-2026-10-04/corrections.tsv`; apply corrections on top of
+`settled_labels.tsv` before any use. One correction was recorded by hand before this (f144r_L04.1_07 out of T86).

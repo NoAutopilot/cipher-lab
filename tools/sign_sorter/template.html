@@ -397,10 +397,10 @@ function tileEl(sid, pid, cls){
   b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
-  if (it.r){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier, shown as an example of this pile; it stays here. Tap or hold: see it larger.';
-    b.setAttribute('aria-label', sid + ': your earlier example for this pile, tap to see larger');
+  if (it.r && !cls.includes('in')){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier (✓), shown as an example of this pile. If it does not belong, tap to take it out, like any tile. Hold: see it larger.';
+    b.setAttribute('aria-label', sid + ': your earlier pick for this pile, tap to take out, hold to see larger');
     const g = document.createElement('span'); g.className = 'badge'; g.textContent = '✓'; g.setAttribute('aria-hidden', 'true'); b.append(g);
-    attachPress(b, () => showCtx(sid, pid), () => showCtx(sid, pid)); return b; }
+    attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid)); return b; }
   const kept = !fq && focusQ[sid] && checked[sid] && checked[sid] === pid && !cls.includes('out');
   if (kept) b.classList.add('kept');
   const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : kept ? '✓' : '';
@@ -465,7 +465,6 @@ function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'b
 
 // ---- step 1: take out / put back
 function setDest(sid, to){
-  if (itemBySid[sid] && itemBySid[sid].r) return;   // a locked reference tile never moves
   if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
   if (to === 'OUT') outAt[sid] = Date.now();
   const hs = state[homeOf[sid]];
@@ -606,7 +605,7 @@ function renderS2(){
     const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.id === homeOf[sid] ? ' · where it came from' : p.isNew ? ' · new pile' : '');
     const smp = document.createElement('span'); smp.className = 'smp';
     p.members.slice().sort((a, b) => (itemBySid[b].r ? 1 : 0) - (itemBySid[a].r ? 1 : 0) || (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.src = imgSrc(m); im.draggable = false;
-      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; if (!itemBySid[m].r) picDrag(im, m); smp.append(im); });
+      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; picDrag(im, m); smp.append(im); });
     const put = document.createElement('span'); put.className = 'put'; put.textContent = 'Tap here to put the sign in ' + p.id;
     h.title = 'Drag this name onto another pile to merge the whole pile into it'; h.classList.add('grab'); cardDrag(h, p.id);
     c.append(h, n, smp, put); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
@@ -891,8 +890,7 @@ function showCtx(sid, pid, keepList, list, listName){
   const kb = $('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'OUT' || SPECIAL.has(cur);
   kb.textContent = checked[sid] && checked[sid] === cur ? '✓ Kept in ' + cur : 'Right pile: keep it in ' + cur;
   $('ctxOut').hidden = cur === 'OUT';
-  const rf = !!it.r; ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = rf; });
-  if (rf){ kb.hidden = true; $('ctxOut').hidden = true; }
+  ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = false; });   // the person's earlier picks (--refs) can be corrected too (owner, 4 Oct 2026)
   $('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.' + (it.r ? ' You sorted this one earlier: it is an example of the pile and stays where it is.' : '');
   updateUndo();
   $('ctx').hidden = false; drawCtx();

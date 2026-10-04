@@ -35,6 +35,6 @@ focus = ['p1_02', 'p1_05', 'p1_09', 'p2_02', 'p2_06', 'p2_09', 'p1_12', 'p2_12',
 base = [sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(out / 'signs.tsv'), '--labels', str(out / 'labels.tsv'),
         '--pages', str(out / 'pages'), '--focus', str(out / 'focus.tsv'), '--title', 'Fixture sorter', '--lede', 'Synthetic test page.']
 subprocess.run(base + ['--out', str(out / 'plain.html')], check=True)
-(out / 'refs.tsv').write_text('sid\np1_01\np1_07\np2_03\n')   # two X, one Y: locked reference tiles (test_refs.js)
+(out / 'refs.tsv').write_text('sid\np1_01\np1_07\np2_03\n')   # two X, one Y: earlier-pick tiles with a green check, correctable (test_refs.js)
 subprocess.run(base + ['--refs', str(out / 'refs.tsv'), '--out', str(out / 'refs.html')], check=True)
 subprocess.run(base + ['--auto-clusters', '2', '--rank-confusion', str(out / 'confusion.tsv'), '--out', str(out / 'cluster.html')], check=True)
