@@ -71,6 +71,31 @@ def main():
     assert len(held) == 12 and all(r['cluster_code'] == '_held' for r in held)
     assert all(r['cluster_code'] != '_held' for r in K if r not in held)
 
+    # atlas --from-truth (TX-SHEET, 4 Oct 2026): 10 secure X tiles + 1 B tile + one unknown sid; --per 4 --spread.
+    # X gets a 4-tile hand row drawn only from the truth rows; B (1 < --min-secure 2) and Z (none) are print-only;
+    # --exclude-leaf p1 empties every row; the canonical grid is cut in sorted code order.
+    tr = os.path.join(d, 'truth.tsv')
+    xs_ids = sorted(marked)[:10]
+    with open(tr, 'w') as f:
+        f.write('sid\tcode\tgrade\n' + ''.join(f'{s}\tX\tS\n' for s in xs_ids)
+                + f'{sorted(set(r["sid"] for r in S) - marked)[0]}\tB\tS\nnope_99_999\tX\tS\n')
+    canon = np.full((110, 330), 255, np.uint8)
+    cv2.imwrite(os.path.join(d, 'canon.png'), canon)
+    sd = os.path.join(d, 'sheet'); os.makedirs(sd)
+    out = run('atlas', '--out', d, '--from-truth', tr, '--per', '4', '--spread', '--codes', 'X,B,Z',
+              '--canonical', os.path.join(d, 'canon.png'), '--grid', '110x110x9', '--sheet-dir', sd, '--rows-per-sheet', '2')
+    T = {r['code']: r for r in csv.DictReader(open(os.path.join(sd, 'sheet_truth.tsv')), delimiter='\t')}
+    assert list(T) == ['X', 'B', 'Z'], T
+    assert T['X']['shown'] == 'hand' and T['X']['n_secure'] == '10', T['X']
+    ex = T['X']['exemplars'].split(',')
+    assert len(ex) == 4 == len(set(ex)) and set(ex) <= set(xs_ids), ex
+    assert T['B']['shown'] == T['Z']['shown'] == 'print-only' and T['Z']['n_secure'] == '0'
+    assert "'unknown sid': 1" in out, out
+    assert sorted(os.listdir(sd)) == ['sheet_truth.tsv', 'sheet_truth_01.png', 'sheet_truth_02.png']
+    run('atlas', '--out', d, '--from-truth', tr, '--per', '4', '--exclude-leaf', 'p1', '--sheet-dir', sd, '--codes', 'X,B')
+    T = {r['code']: r for r in csv.DictReader(open(os.path.join(sd, 'sheet_truth.tsv')), delimiter='\t')}
+    assert T['X']['n_secure'] == '0' and T['X']['shown'] == 'print-only', T
+
     # --exclude-page: a second, UNLABELLED copy of the page (page p9) classified against p1's labels.
     # Default kNN lets p9's own boxes (all '_' since unlabelled) vote for each other; --exclude-page must not.
     import shutil
