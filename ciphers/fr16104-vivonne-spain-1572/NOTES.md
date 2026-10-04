@@ -761,3 +761,26 @@ U 646 of 6,866 tokens (N6-VIV63). Pieces with no decipherment located: fr.16105 
 Verdict: keep going: 10 internal gaps; cheapest next: ink 63 key questions (y, single o, c, V, 2) as a context table, ~$3, then ink 63 ff.192r-194r, ~$10
 
 Gate output (N6-VIV63, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 10 internal gap(s), 1 step(s) untried`; `tx/viv63_decode.py --check`: reading_piece63.tsv + rec files up to date; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date
+
+## N6-VIV63B (4 Oct 2026, LANE-NEAR6 worker, account 2): fr.16105 ink 63, the remaining cipher pages from f.192r
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near6-wave2.md "N6-VIV63B". Started 10:50 UTC, box to 12:52 UTC. Continues "N6-VIV63" exactly.
+
+**Units, stated before the first subagent call (10:54 UTC).** Remaining: f.192r, f.192v, f.193r, f.193v (~35-37 lines each) + f.194r (21 cipher
+lines) = ~4.6 pages. Rate from the ledger's nearest rows (N6-VIV53: 3 pages for 9.14 all in; N6-VIV63: 4 pages for 13.25) = ~USD 3.0-3.3 per
+page (2 blind Sonnet passes + 1 reconciliation by script + this worker's eye). 80% of the USD 12 cap = 9.6 -> **3 pages: f.192r, f.192v,
+f.193r = 6 Sonnet passes + 3 reconciliations = 9 units, ~USD 9-10 all in**; f.193v and f.194r go to Remaining gaps (~USD 5). If the third
+page would start past 80% of the box (12:28 UTC), stop at two.
+
+**Crops** (debug overlays checked; f.193r re-cut from y=500 after the first cut at y=620 clipped line 1; c197 answered HTTP 500 once, one
+retry after a pause succeeded; crops not committed, manifest committed):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 197 --region 5000,700,2920,4250 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c197_f192r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  36 bands x 2 segments; wrote 72 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 198 --region 1200,700,2900,4250 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c198_f192v --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  36 bands x 2 segments; wrote 72 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 198 --region 4880,500,3050,4220 --out ciphers/fr16104-vivonne-spain-1572/images/p63 --prefix c198_f193r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  37 bands x 2 segments; wrote 74 crops
+```
+Layout seen at 1600 px (c197-c199): f.192r opens with the plain "Il" then cipher to the foot; f.192v and f.193r full cipher pages, f.193r has
+"Il non" in ordinary script inside L19 and L21 (as on ff.190v/191v); f.193v full cipher; f.194r ~21 cipher lines then the plain close (as N6-VIV63
+described). No interlinear words on c197-c199 at 1600 px.
