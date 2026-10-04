@@ -404,3 +404,14 @@ re-derived with fresh seeds (AUDIT.md section 1). Corrections to the sections ab
   remains open.
 - NV05E's "Diagnosis: the gloss read, not the key" is an untested explanation until the pre-registered gloss re-read
   runs; the registered FAIL stands.
+
+## f.228 L01-L04 gloss re-read and re-score (N8-NV05, account-2 worker for LANE-NEAR8, 4 Oct 2026 16:16-17:0x UTC)
+
+Pre-registration addendum `f228/PREREG-ADDENDUM-N8.md` (commit 2417b709) pushed before any read. Gloss crops (run before
+the first read; debug overlay `f228/images/gloss/f228g_lines_debug.jpg` checked: the L01 gloss "...tarde como..." start,
+cut at the old region's top edge, is inside; each band holds its gloss line above the bold cipher line):
+
+    $ python3 tools/iiif_lines.py --ark btv1b90637788 --canvas 235 --region 5250,640,3700,640 \
+        --out ciphers/fr15575-syllabic-1592-95/f228/images/gloss --prefix f228g --centres 125,268,395,522 \
+        --lines-per-crop 1 --max-width 1900 --overlap 150 --top-margin 60 --bottom-margin 60 --debug
+    ... (fetched): region 3700x640, 4 lines, 4 bands x 3 segments ... wrote 12 crops
