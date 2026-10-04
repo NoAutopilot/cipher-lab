@@ -1,0 +1,1459 @@
+line	position	sign	confidence	alt	why
+c107_L01	1	D	M	B:A	differ
+c107_L01	2	a	M	B:c	differ
+c107_L01	3	T	H		agree
+c107_L01	4	a	M	B:c	differ
+c107_L01	5	q	H		agree
+c107_L01	6	a	M	B:c	differ
+c107_L01	7	1	H		agree
+c107_L01	8	SS	H		agree
+c107_L01	9	z	H		agree
+c107_L01	10	x	H		agree
+c107_L01	11	1	M	B:-	gap
+c107_L01	12	o	H		agree
+c107_L01	13	R	H		agree
+c107_L01	14	SS	H		agree
+c107_L01	15	x	H		agree
+c107_L01	16	1	H		agree
+c107_L01	17	R	H		agree
+c107_L01	18	SS	H		agree
+c107_L01	19	x	H		agree
+c107_L01	20	E	H		agree
+c107_L01	21	y	M	B:R	differ
+c107_L01	22	a	M	B:c	differ
+c107_L01	23	=	H		agree
+c107_L01	24	:	M	B:-	gap
+c107_L01	25	1	M	B:-	gap
+c107_L01	26	R	H		agree
+c107_L01	27	1	H		agree
+c107_L01	28	t	M	B:-	gap
+c107_L01	29	t	H		agree
+c107_L01	30	a	M	B:d	differ
+c107_L01	31		M	B:c	differ
+c107_L01	32	7	H		agree
+c107_L01	33	x	H		agree
+c107_L01	34	d	M	A:-	gap
+c107_L01	35	b	M	B:d	differ
+c107_L01	36	o	M	B:c	differ
+c107_L01	37	a	M	B:c	differ
+c107_L01	38	D	M	B:A	differ
+c107_L01	39	x	H		agree
+c107_L01	40	s	H		agree
+c107_L01	41		M	B:-	gap
+c107_L01	42	H	M	B:-	gap
+c107_L01	43		M	B:k	differ
+c107_L01	44	a	M	B:c	differ
+c107_L01	45	P	M	B:c	differ
+c107_L01	46	a	M	B:c	differ
+c107_L02	1	c	H		agree
+c107_L02	2	s	M	B:c	differ
+c107_L02	3	:	H		agree
+c107_L02	4	x	H		agree
+c107_L02	5	=	H		agree
+c107_L02	6	E	M	A:-	gap
+c107_L02	7	t	M	B:c	differ
+c107_L02	8	o	H		agree
+c107_L02	9	x	H		agree
+c107_L02	10	T	H		agree
+c107_L02	11	x	H		agree
+c107_L02	12	H	H		agree
+c107_L02	13	o	H		agree
+c107_L02	14	o	H		agree
+c107_L02	15	x	H		agree
+c107_L02	16	=	H		agree
+c107_L02	17	x	H		agree
+c107_L02	18	1	M	B:-	gap
+c107_L02	19	R	H		agree
+c107_L02	20	x	H		agree
+c107_L02	21	R	M	A:-	gap
+c107_L02	22	1	H		agree
+c107_L02	23	t	M	B:-	gap
+c107_L02	24	z	H		agree
+c107_L02	25	d	M	A:-	gap
+c107_L02	26	x	M	A:-	gap
+c107_L02	27	q	M	A:-	gap
+c107_L02	28	c	H		agree
+c107_L02	29	x	M	B:z	differ
+c107_L02	30	SS	H		agree
+c107_L02	31	:	H		agree
+c107_L02	32	x	H		agree
+c107_L02	33	S	M	B:c	differ
+c107_L02	34	z	H		agree
+c107_L02	35	SS	H		agree
+c107_L02	36	1	M	B:-	gap
+c107_L02	37	R	H		agree
+c107_L02	38	c	M	A:-	gap
+c107_L02	39	a	M	B:c	differ
+c107_L02	40	y	H		agree
+c107_L02	41	t	M	B:d	differ
+c107_L02	42	H	M	B:d	differ
+c107_L02	43	q	H		agree
+c107_L02	44	e	M	B:c	differ
+c107_L02	45	s	M	B:c	differ
+c107_L02	46	8	M	B:d	differ
+c107_L02	47	z	H		agree
+c107_L02	48		M	B:-	gap
+c107_L02	49		M	B:c	differ
+c107_L03	1	c	M	A:-	gap
+c107_L03	2	z	M	B:T	differ
+c107_L03	3	1	M	B:d	differ
+c107_L03	4	t	H		agree
+c107_L03	5	z	H		agree
+c107_L03	6	a	M	B:R	differ
+c107_L03	7	=	H		agree
+c107_L03	8	R	M	B:-	gap
+c107_L03	9	t	M	B:c	differ
+c107_L03	10	T	M	B:A	differ
+c107_L03	11	x	M	B:c	differ
+c107_L03	12	x	M	B:q	differ
+c107_L03	13	1	M	B:d	differ
+c107_L03	14	t	H		agree
+c107_L03	15	a	M	B:T	differ
+c107_L03	16	:	M	B:z	differ
+c107_L03	17	s	M	B:c	differ
+c107_L03	18	a	M	B::	differ
+c107_L03	19	t	M	B:7	differ
+c107_L03	20	a	M	B:x	differ
+c107_L03	21	a	M	B:c	differ
+c107_L03	22	1	M	B:P	differ
+c107_L03	23	c	H		agree
+c107_L03	24	x	H		agree
+c107_L03	25	=	H		agree
+c107_L03	26	x	H		agree
+c107_L03	27	1	M	B:-	gap
+c107_L03	28	R	H		agree
+c107_L03	29	F	H		agree
+c107_L03	30	z	H		agree
+c107_L03	31	s	H		agree
+c107_L03	32	S	M	B:-	gap
+c107_L03	33	q	H		agree
+c107_L03	34	t	M	B:d	differ
+c107_L03	35	E	H		agree
+c107_L03	36	R	H		agree
+c107_L03	37	H	H		agree
+c107_L03	38	=	H		agree
+c107_L03	39	R	H		agree
+c107_L03	40	1	H		agree
+c107_L03	41	z	H		agree
+c107_L03	42	SS	H		agree
+c107_L03	43	x	H		agree
+c107_L03	44	z	M	B:3	differ
+c107_L03	45	SS	H		agree
+c107_L03	46	7	H		agree
+c107_L03	47	t	M	B:d	differ
+c107_L03	48	1	H		agree
+c107_L04	1	c	H		agree
+c107_L04	2	z	H		agree
+c107_L04	3	o	H		agree
+c107_L04	4	o	H		agree
+c107_L04	5	x	H		agree
+c107_L04	6	1	M	B:-	gap
+c107_L04	7	R	H		agree
+c107_L04	8	E	H		agree
+c107_L04	9	a	M	B:c	differ
+c107_L04	10	1	H		agree
+c107_L04	11	SS	H		agree
+c107_L04	12	e	M	B:c	differ
+c107_L04	13	c	H		agree
+c107_L04	14	T	M	B:P	differ
+c107_L04	15	D	M	B:A	differ
+c107_L04	16	a	M	B:c	differ
+c107_L04	17	=	H		agree
+c107_L04	18	R	H		agree
+c107_L04	19	t	H		agree
+c107_L04	20	R	H		agree
+c107_L04	21	t	M	B:c	differ
+c107_L04	22	z	H		agree
+c107_L04	23	E	H		agree
+c107_L04	24	x	H		agree
+c107_L04	25	b	M	B:-	gap
+c107_L04	26	b	M	B:c	differ
+c107_L04	27	x	H		agree
+c107_L04	28	1	H		agree
+c107_L04	29	R	H		agree
+c107_L04	30	7	H		agree
+c107_L04	31	x	H		agree
+c107_L04	32	d	H		agree
+c107_L04	33	R	H		agree
+c107_L04	34	c	M	A:-	gap
+c107_L04	35	b	M	B:c	differ
+c107_L04	36	q	H		agree
+c107_L04	37	o	H		agree
+c107_L04	38	o	H		agree
+c107_L04	39	x	H		agree
+c107_L04	40	c	H		agree
+c107_L04	41	7	H		agree
+c107_L04	42	c	M	A:-	gap
+c107_L04	43	a	M	B:d	differ
+c107_L04	44	b	M	B:o	differ
+c107_L04	45	=	H		agree
+c107_L04	46	t	M	B:-	gap
+c107_L04	47	q	M	B:d	differ
+c107_L05	1	x	H		agree
+c107_L05	2	c	H		agree
+c107_L05	3	z	H		agree
+c107_L05	4	a	M	B:c	differ
+c107_L05	5	q	H		agree
+c107_L05	6	t	M	B:-	gap
+c107_L05	7	e	M	B:d	differ
+c107_L05	8	c	H		agree
+c107_L05	9	z	H		agree
+c107_L05	10	1	H		agree
+c107_L05	11	c	M	B:6	differ
+c107_L05	12	SS	H		agree
+c107_L05	13	1	H		agree
+c107_L05	14	t	M	B:d	differ
+c107_L05	15	s	H		agree
+c107_L05	16	x	H		agree
+c107_L05	17		M	B:7	differ
+c107_L05	18	x	H		agree
+c107_L05	19	R	H		agree
+c107_L05	20	c	H		agree
+c107_L05	21	H	H		agree
+c107_L05	22	x	H		agree
+c107_L05	23	H	H		agree
+c107_L05	24	E	H		agree
+c107_L05	25	x	H		agree
+c107_L05	26	c	H		agree
+c107_L05	27	b	M	B:d	differ
+c107_L05	28	o	H		agree
+c107_L05	29	E	H		agree
+c107_L05	30	x	H		agree
+c107_L05	31	s	M	B:c	differ
+c107_L05	32	x	H		agree
+c107_L05	33	1	H		agree
+c107_L05	34	R	H		agree
+c107_L05	35	H	H		agree
+c107_L05	36	z	H		agree
+c107_L05	37	:	H		agree
+c107_L05	38	x	H		agree
+c107_L05	39	1	M	B:-	gap
+c107_L05	40	R	H		agree
+c107_L05	41	y	H		agree
+c107_L05	42	=	H		agree
+c107_L05	43	t	M	B:d	differ
+c107_L06	1	q	H		agree
+c107_L06	2	D	M	B:A	differ
+c107_L06	3	a	M	B:c	differ
+c107_L06	4	t	H		agree
+c107_L06	5	d	M	A:-	gap
+c107_L06	6	s	H		agree
+c107_L06	7	x	H		agree
+c107_L06	8	1	M	B:-	gap
+c107_L06	9	R	H		agree
+c107_L06	10	a	M	B:c	differ
+c107_L06	11	=	H		agree
+c107_L06	12	x	H		agree
+c107_L06	13	1	M	B:-	gap
+c107_L06	14	R	H		agree
+c107_L06	15	6	H		agree
+c107_L06	16	D	M	B:A	differ
+c107_L06	17	x	H		agree
+c107_L06	18	s	H		agree
+c107_L06	19	z	M	A:-	gap
+c107_L06	20	t	M	A:-	gap
+c107_L06	21	z	H		agree
+c107_L06	22	a	M	B:c	differ
+c107_L06	23	=	H		agree
+c107_L06	24	t	H		agree
+c107_L06	25	y	M	B:-	gap
+c107_L06	26	s	M	B:z	differ
+c107_L06	27	c	H		agree
+c107_L06	28	y	H		agree
+c107_L06	29	x	H		agree
+c107_L06	30	t	H		agree
+c107_L06	31	R	H		agree
+c107_L06	32	c	H		agree
+c107_L06	33	7	H		agree
+c107_L06	34	t	M	B:d	differ
+c107_L06	35	z	H		agree
+c107_L06	36	b	M	B:d	differ
+c107_L06	37	o	H		agree
+c107_L06	38	x	H		agree
+c107_L06	39	o	H		agree
+c107_L06	40	=	M	A:-	gap
+c107_L06	41	T	H		agree
+c107_L06	42	=	M	B:-	gap
+c107_L06	43	t	H		agree
+c107_L06	44	T	M	A:-	gap
+c107_L06	45	1	H		agree
+c107_L06	46	R	H		agree
+c107_L06	47	:	H		agree
+c107_L06	48	x	H		agree
+c107_L06	49	1	H		agree
+c107_L06	50	6	H		agree
+c107_L07	1	x	M	B:c	differ
+c107_L07	2	c	H		agree
+c107_L07	3	a	H		agree
+c107_L07	4	R	M	A:-	gap
+c107_L07	5	c	H		agree
+c107_L07	6	8	M	B:-	gap
+c107_L07	7	s	M	B:-	gap
+c107_L07	8	:	H		agree
+c107_L07	9	c	H		agree
+c107_L07	10	x	H		agree
+c107_L07	11	c	M	A:-	gap
+c107_L07	12	b	M	B:c	differ
+c107_L07	13	E	H		agree
+c107_L07	14	x	H		agree
+c107_L07	15	c	H		agree
+c107_L07	16	1	H		agree
+c107_L07	17	:	H		agree
+c107_L07	18	x	H		agree
+c107_L07	19	7	H		agree
+c107_L07	20	x	H		agree
+c107_L07	21	7	H		agree
+c107_L07	22	t	H		agree
+c107_L07	23	c	H		agree
+c107_L07	24	R	H		agree
+c107_L07	25	SS	H		agree
+c107_L07	26	x	H		agree
+c107_L07	27	a	M	B:-	gap
+c107_L07	28	D	M	B:A	differ
+c107_L07	29	a	M	B:c	differ
+c107_L07	30	b	M	B:d	differ
+c107_L07	31	o	H		agree
+c107_L07	32	y	H		agree
+c107_L07	33	t	M	A:-	gap
+c107_L07	34	x	H		agree
+c107_L07	35	c	H		agree
+c107_L07	36	b	M	B:d	differ
+c107_L07	37	o	H		agree
+c107_L07	38	x	M	B:-	gap
+c107_L07	39	H	H		agree
+c107_L07	40	t	H		agree
+c107_L07	41	z	H		agree
+c107_L07	42	SS	H		agree
+c107_L07	43	y	H		agree
+c107_L07	44	t	H		agree
+c107_L07	45	e	M	B:c	differ
+c107_L07	46	c	H		agree
+c107_L07	47	E	H		agree
+c107_L07	48	SS	H		agree
+c107_L08	1	o	H		agree
+c107_L08	2	o	H		agree
+c107_L08	3	x	H		agree
+c107_L08	4	1	M	B:-	gap
+c107_L08	5	R	H		agree
+c107_L08	6	q	H		agree
+c107_L08	7	a	M	B:c	differ
+c107_L08	8	z	H		agree
+c107_L08	9	c	H		agree
+c107_L08	10	SS	H		agree
+c107_L08	11	=	H		agree
+c107_L08	12	t	M	B:1	differ
+c107_L08	13	t	M	B:c	differ
+c107_L08	14	y	M	B:d	differ
+c107_L08	15	t	H		agree
+c107_L08	16	c	M	A:-	gap
+c107_L08	17	a	M	B:c	differ
+c107_L08	18	z	H		agree
+c107_L08	19	c	H		agree
+c107_L08	20	z	H		agree
+c107_L08	21	c	M	A:-	gap
+c107_L08	22	x	M	A:-	gap
+c107_L08	23	1	M	B:T	differ
+c107_L08	24	R	H		agree
+c107_L08	25	6	H		agree
+c107_L08	26	a	M	B:-	gap
+c107_L08	27	1	M	B:c	differ
+c107_L08	28	R	H		agree
+c107_L08	29	a	M	B:c	differ
+c107_L08	30	6	H		agree
+c107_L08	31	R	H		agree
+c107_L08	32	H	H		agree
+c107_L08	33	x	H		agree
+c107_L08	34	1	M	B:T	differ
+c107_L08	35	:	H		agree
+c107_L08	36	d	M	A:-	gap
+c107_L08	37	b	M	B:o	differ
+c107_L08	38	D	M	B:A	differ
+c107_L08	39	z	H		agree
+c107_L08	40	s	H		agree
+c107_L08	41	S	M	B:-	gap
+c107_L08	42	b	H		agree
+c107_L08	43	o	H		agree
+c107_L08	44	q	H		agree
+c107_L08	45	t	M	B:d	differ
+c107_L08	46	E	H		agree
+c107_L08	47	R	H		agree
+c107_L09	1	z	M	B:-	gap
+c107_L09	2	c	M	B:H	differ
+c107_L09	3	a	M	B:x	differ
+c107_L09	4	1	M	B:T	differ
+c107_L09	5	R	M	B:7	differ
+c107_L09	6	6	M	B:x	differ
+c107_L09	7	a	M	B:z	differ
+c107_L09	8	1	M	B:7	differ
+c107_L09	9	R	M	B:x	differ
+c107_L09	10	a	M	B:c	differ
+c107_L09	11	6	M	B:o	differ
+c107_L09	12	R	H		agree
+c107_L09	13	H	M	B:-	gap
+c107_L09	14	x	M	B:-	gap
+c107_L09	15	1	M	B:-	gap
+c107_L09	16	:	M	B:-	gap
+c107_L09	17	b	M	B:SS	differ
+c107_L09	18	D	M	B:d	differ
+c107_L09	19	z	H		agree
+c107_L09	20	SS	M	A:-	gap
+c107_L09	21	S	M	B:R	differ
+c107_L09	22	b	M	B:c	differ
+c107_L09	23	o	M	B:d	differ
+c107_L09	24	q	M	B:c	differ
+c107_L09	25	t	M	B:d	differ
+c107_L09	26	E	M	B:T	differ
+c107_L09	27	R	H		agree
+c107_L09	28	c	M	A:-	gap
+c107_L09	29		M	B:x	differ
+c107_L09	30	1	M	B:P	differ
+c107_L09	31	R	M	B:x	differ
+c107_L09	32	c	H		agree
+c107_L09	33	x	M	B:d	differ
+c107_L09	34	b	M	B:d	differ
+c107_L09	35	o	H		agree
+c107_L09	36	E	H		agree
+c107_L09	37	=	H		agree
+c107_L09	38	z	H		agree
+c107_L09	39	6	H		agree
+c107_L09	40	x	H		agree
+c107_L09	41	a	M	B:y	differ
+c107_L09	42	=	H		agree
+c107_L09	43	1	M	B:-	gap
+c107_L09	44	R	H		agree
+c107_L09	45	x	H		agree
+c107_L09	46	d	H		agree
+c107_L09	47	x	H		agree
+c107_L09	48	P	M	B:H	differ
+c107_L09	49	x	H		agree
+c107_L09	50	=	H		agree
+c107_L09	51	R	H		agree
+c107_L09	52	c	H		agree
+c107_L09	53	SS	H		agree
+c107_L10	1	H	M	B:-	gap
+c107_L10	2	z	H		agree
+c107_L10	3	x	H		agree
+c107_L10	4	R	H		agree
+c107_L10	5	1	H		agree
+c107_L10	6	t	M	B:-	gap
+c107_L10	7	a	M	B:-	gap
+c107_L10	8	b	M	B:c	differ
+c107_L10	9	1	M	B:c	differ
+c107_L10	10	R	H		agree
+c107_L10	11	=	H		agree
+c107_L10	12	E	H		agree
+c107_L10	13	q	M	A:-	gap
+c107_L10	14	c	H		agree
+c107_L10	15	a	M	B:-	gap
+c107_L10	16	q	H		agree
+c107_L10	17	a	M	B:c	differ
+c107_L10	18	:	H		agree
+c107_L10	19	=	H		agree
+c107_L10	20	x	H		agree
+c107_L10	21	E	H		agree
+c107_L10	22	R	H		agree
+c107_L10	23	H	H		agree
+c107_L10	24	z	H		agree
+c107_L10	25	x	H		agree
+c107_L10	26	:	H		agree
+c107_L10	27	x	H		agree
+c107_L10	28	7	H		agree
+c107_L10	29	x	H		agree
+c107_L10	30	P	H		agree
+c107_L10	31	7	H		agree
+c107_L10	32	x	H		agree
+c107_L10	33	R	H		agree
+c107_L10	34	q	H		agree
+c107_L10	35	x	H		agree
+c107_L10	36	c	H		agree
+c107_L10	37	R	H		agree
+c107_L10	38	1	M	B:T	differ
+c107_L10	39	a	M	B:c	differ
+c107_L10	40	z	H		agree
+c107_L10	41	H	H		agree
+c107_L11	1	x	H		agree
+c107_L11	2	:	H		agree
+c107_L11	3	x	H		agree
+c107_L11	4	7	H		agree
+c107_L11	5	x	H		agree
+c107_L11	6	R	H		agree
+c107_L11	7	7	H		agree
+c107_L11	8	t	M	B:d	differ
+c107_L11	9	e	M	B:c	differ
+c107_L11	10	x	M	B:c	differ
+c107_L11	11	c	H		agree
+c107_L11	12	R	H		agree
+c107_L11	13	H	H		agree
+c107_L11	14	x	H		agree
+c107_L11	15	D	M	B:A	differ
+c107_L11	16	a	M	B:c	differ
+c107_L11	17	1	H		agree
+c107_L11	18	x	H		agree
+c107_L11	19	=	H		agree
+c107_L11	20	a	M	B:c	differ
+c107_L11	21	:	H		agree
+c107_L11	22	SS	H		agree
+c107_L11	23	T	M	A:-	gap
+c107_L11	24	c	M	A:-	gap
+c107_L11	25	x	M	A:-	gap
+c107_L11	26	R	M	A:-	gap
+c107_L11	27	d	M	A:-	gap
+c107_L11	28	1	M	B:=	differ
+c107_L11	29	a	M	B:d	differ
+c107_L11	30	b	M	B:c	differ
+c107_L11	31	1	M	B:z	differ
+c107_L11	32	x	M	B:T	differ
+c107_L11	33	1	M	B:d	differ
+c107_L11	34	t	M	B:z	differ
+c107_L11	35	a	M	B:R	differ
+c107_L11	36		M	B:c	differ
+c107_L11	37	z	H		agree
+c107_L11	38	1	M	B:c	differ
+c107_L11	39	a	M	B:z	differ
+c107_L11	40	6	M	B:t	differ
+c107_L11	41		M	B:c	differ
+c107_L12	1	SS	H		agree
+c107_L12	2	a	M	B:c	differ
+c107_L12	3	z	H		agree
+c107_L12	4	t	H		agree
+c107_L12	5	H	M	B:A	differ
+c107_L12	6	x	H		agree
+c107_L12	7	T	H		agree
+c107_L12	8	x	M	B:-	gap
+c107_L12	9	t	M	B:-	gap
+c107_L12	10	a	M	B:-	gap
+c107_L12	11	SS	M	B:-	gap
+c107_L12	12	a	M	B:c	differ
+c107_L12	13	z	H		agree
+c107_L12	14	D	M	B:H	differ
+c107_L12	15	x	M	B:d	differ
+c107_L12	16	=	H		agree
+c107_L12	17	R	H		agree
+c107_L12	18	H	H		agree
+c107_L12	19	x	H		agree
+c107_L12	20	c	H		agree
+c107_L12	21	t	M	B:d	differ
+c107_L12	22	c	H		agree
+c107_L12	23	t	M	B:d	differ
+c107_L12	24	E	H		agree
+c107_L12	25	a	M	B:-	gap
+c107_L12	26	R	H		agree
+c107_L12	27	H	H		agree
+c107_L12	28	x	H		agree
+c107_L12	29	o	H		agree
+c107_L12	30	o	H		agree
+c107_L12	31	x	H		agree
+c107_L12	32	o	H		agree
+c107_L12	33	o	H		agree
+c107_L12	34	z	H		agree
+c107_L12	35	d	H		agree
+c107_L12	36	1	M	B:-	gap
+c107_L12	37	R	H		agree
+c107_L12	38	D	M	B:A	differ
+c107_L12	39	H	H		agree
+c107_L12	40	x	H		agree
+c107_L12	41	1	H		agree
+c107_L12	42	6	H		agree
+c107_L12	43	x	H		agree
+c107_L12	44	:	H		agree
+c107_L12	45	x	H		agree
+c107_L12	46	SS	H		agree
+c107_L12	47	z	H		agree
+c107_L12	48	E	H		agree
+c107_L13	1		M	B:-	gap
+c107_L13	2	R	M	B:c	differ
+c107_L13	3	x	H		agree
+c107_L13	4	4	H		agree
+c107_L13	5	SS	H		agree
+c107_L13	6	t	M	B:d	differ
+c107_L13	7	=	H		agree
+c107_L13	8	1	M	B:-	gap
+c107_L13	9	H	H		agree
+c107_L13	10	7	H		agree
+c107_L13	11	x	H		agree
+c107_L13	12	s	M	B:-	gap
+c107_L13	13	T	H		agree
+c107_L13	14	x	M	B:-	gap
+c107_L13	15	H	M	B:-	gap
+c107_L13	16	t	M	B:-	gap
+c107_L13	17	R	M	B:-	gap
+c107_L13	18	x	M	B:P	differ
+c107_L13	19	9	M	B:q	differ
+c107_L13	20	x	H		agree
+c107_L13	21	b	M	B:-	gap
+c107_L13	22	e	M	B:c	differ
+c107_L13	23	s	M	B:c	differ
+c107_L13	24	:	H		agree
+c107_L13	25	y	H		agree
+c107_L13	26	D	M	B:A	differ
+c107_L13	27	a	M	B:c	differ
+c107_L13	28	:	H		agree
+c107_L13	29	x	H		agree
+c107_L13	30	q	H		agree
+c107_L13	31	x	H		agree
+c107_L13	32	c	H		agree
+c107_L13	33	1	M	B:-	gap
+c107_L13	34	R	H		agree
+c107_L13	35	7	H		agree
+c107_L13	36	R	M	B:c	differ
+c107_L13	37	x	H		agree
+c107_L13	38	o	H		agree
+c107_L13	39	o	H		agree
+c107_L13	40	x	H		agree
+c107_L13	41	6	H		agree
+c107_L13	42	x	H		agree
+c107_L13	43	7	H		agree
+c107_L13	44	t	M	B:d	differ
+c107_L13	45	=	H		agree
+c107_L13	46	z	H		agree
+c107_L14	1	D	M	B:A	differ
+c107_L14	2	x	H		agree
+c107_L14	3	4	H		agree
+c107_L14	4	P	H		agree
+c107_L14	5	x	H		agree
+c107_L14	6	z	M	B:-	gap
+c107_L14	7	R	H		agree
+c107_L14	8	q	H		agree
+c107_L14	9	SS	H		agree
+c107_L14	10	T	H		agree
+c107_L14	11	7	H		agree
+c107_L14	12	x	H		agree
+c107_L14	13	c	H		agree
+c107_L14	14	SS	H		agree
+c107_L14	15	x	H		agree
+c107_L14	16	SS	M	A:-	gap
+c107_L14	17	x	H		agree
+c107_L14	18	5	M	B:-	gap
+c107_L14	19	1	M	B:s	differ
+c107_L14	20	R	H		agree
+c107_L14	21	k	M	A:-	gap
+c107_L14	22	H	H		agree
+c107_L14	23	a	M	B:-	gap
+c107_L14	24	s	M	B:c	differ
+c107_L14	25	c	H		agree
+c107_L14	26	a	M	B:c	differ
+c107_L14	27	:	H		agree
+c107_L14	28	x	H		agree
+c107_L14	29	=	H		agree
+c107_L14	30	E	H		agree
+c107_L14	31	x	M	B:c	differ
+c107_L14	32	:	H		agree
+c107_L14	33	z	H		agree
+c107_L14	34	R	H		agree
+c107_L14	35	6	H		agree
+c107_L14	36	SS	H		agree
+c107_L14	37	z	M	B:3	differ
+c107_L14	38	SS	H		agree
+c107_L14	39	7	H		agree
+c107_L14	40	E	H		agree
+c107_L14	41	t	M	B:d	differ
+c107_L14	42	q	H		agree
+c107_L15	1	z	H		agree
+c107_L15	2	x	H		agree
+c107_L15	3	1	M	B:t	differ
+c107_L15	4	R	H		agree
+c107_L15	5	q	H		agree
+c107_L15	6	4	M	B:d	differ
+c107_L15	7	=	H		agree
+c107_L15	8	q	M	A:-	gap
+c107_L15	9	c	H		agree
+c107_L15	10	e	M	B:-	gap
+c107_L15	11	s	M	B:-	gap
+c107_L15	12	z	M	B:c	differ
+c107_L15	13	R	H		agree
+c107_L15	14	P	H		agree
+c107_L15	15	A	M	A:-	gap
+c107_L15	16	c	M	A:-	gap
+c107_L15	17	c	M	A:-	gap
+c107_L15	18	D	M	B:R	differ
+c107_L15	19	E	M	B:R	differ
+c107_L15	20	s	M	B:H	differ
+c107_L15	21	x	H		agree
+c107_L15	22	=	M	A:-	gap
+c107_L15	23	R	M	B:c	differ
+c107_L15	24	1	M	B:SS	differ
+c107_L15	25	E	H		agree
+c107_L15	26	a	M	B:c	differ
+c107_L15	27	R	H		agree
+c107_L15	28	T	H		agree
+c107_L15	29	t	M	B:d	differ
+c107_L15	30	E	H		agree
+c107_L15	31	c	H		agree
+c107_L15	32	R	H		agree
+c107_L15	33	H	H		agree
+c107_L15	34	x	H		agree
+c107_L15	35	e	M	B:-	gap
+c107_L15	36	s	M	B:c	differ
+c107_L15	37	t	M	B:d	differ
+c107_L15	38	=	H		agree
+c107_L15	39	R	H		agree
+c107_L15	40	7	H		agree
+c107_L15	41	t	M	B:d	differ
+c107_L16	1		M	B:-	gap
+c107_L16	2	1	M	B:c	differ
+c107_L16	3	R	H		agree
+c107_L16	4	=	M	A:-	gap
+c107_L16	5	H	M	B:E	differ
+c107_L16	6	x	M	B:z	differ
+c107_L16	7	4	H		agree
+c107_L16	8	d	M	A:-	gap
+c107_L16	9	=	H		agree
+c107_L16	10	R	M	A:-	gap
+c107_L16	11	c	H		agree
+c107_L16	12	o	M	A:-	gap
+c107_L16	13	SS	M	B:d	differ
+c107_L16	14	E	M	B:=	differ
+c107_L16	15	a	M	B:x	differ
+c107_L16	16	R	H		agree
+c107_L16	17	S	M	B:-	gap
+c107_L16	18	T	M	B:x	differ
+c107_L16	19	t	M	B:P	differ
+c107_L16	20	E	M	B:x	differ
+c107_L16	21	c	H		agree
+c107_L16	22	R	H		agree
+c107_L16	23	H	H		agree
+c107_L16	24	x	M	B:-	gap
+c107_L16	25	e	M	B:-	gap
+c107_L16	26	s	M	B:-	gap
+c107_L16	27	t	H		agree
+c107_L16	28	z	M	A:-	gap
+c107_L16	29	=	M	B:SS	differ
+c107_L16	30	R	M	B::	differ
+c107_L16	31	7	M	B:x	differ
+c107_L16	32	1	M	B:q	differ
+c107_L16	33	R	M	B:A	differ
+c107_L16	34	=	H		agree
+c107_L16	35	E	M	B:-	gap
+c107_L16	36	z	M	B:-	gap
+c107_L16	37	4	M	B:R	differ
+c107_L16	38	s	M	B:c	differ
+c107_L16	39	z	M	B:#	differ
+c107_L16	40	:	M	B:x	differ
+c107_L16	41	R	H		agree
+c107_L16	42	=	M	B:7	differ
+c107_L16	43	R	M	B:e	differ
+c107_L16	44	x	H		agree
+c107_L16	45	R	M	B:-	gap
+c107_L16	46		M	B:SS	differ
+c107_L17	1	o	M	B:-	gap
+c107_L17	2	7	M	B:-	gap
+c107_L17	3	x	H		agree
+c107_L17	4	T	M	A:-	gap
+c107_L17	5	P	M	B:6	differ
+c107_L17	6	x	H		agree
+c107_L17	7	c	M	B:-	gap
+c107_L17	8	R	H		agree
+c107_L17	9	H	M	B:-	gap
+c107_L17	10	t	M	B:-	gap
+c107_L17	11	z	M	B:c	differ
+c107_L17	12	SS	H		agree
+c107_L17	13	:	M	B:-	gap
+c107_L17	14	x	M	B:-	gap
+c107_L17	15	q	M	B:c	differ
+c107_L17	16	4	M	B:z	differ
+c107_L17	17	=	M	B:c	differ
+c107_L17	18	R	H		agree
+c107_L17	19	c	H		agree
+c107_L17	20	#	M	B:-	gap
+c107_L17	21	x	M	B:-	gap
+c107_L17	22	R	M	B:z	differ
+c107_L17	23	7	M	B:c	differ
+c107_L17	24	E	H		agree
+c107_L17	25	x	H		agree
+c107_L17	26	SS	M	B:-	gap
+c107_L17	27	x	M	B:R	differ
+c107_L17	28	1	M	B:c	differ
+c107_L17	29	6	M	B:d	differ
+c107_L17	30	x	M	B:T	differ
+c107_L17	31	R	M	B:q	differ
+c107_L17	32	c	H		agree
+c107_L17	33	SS	M	B:d	differ
+c107_L17	34	a	M	B:d	differ
+c107_L17	35	z	H		agree
+c107_L17	36	c	H		agree
+c107_L17	37	R	H		agree
+c107_L17	38	a	M	B:-	gap
+c107_L17	39	z	M	B:H	differ
+c107_L17	40	E	H		agree
+c107_L17	41	x	H		agree
+c107_L17	42	c	M	A:-	gap
+c107_L17	43	=	M	A:-	gap
+c107_L17	44	d	M	A:-	gap
+c107_L17	45	R	M	A:-	gap
+c107_L17	46	z	H		agree
+c107_L17	47	E	M	B:SS	differ
+c107_L17	48	x	M	B:2	differ
+c107_L18	1	x	M	B:o	differ
+c107_L18	2	z	M	B:o	differ
+c107_L18	3	t	M	B:x	differ
+c107_L18	4	z	M	B:A	differ
+c107_L18	5	E	H		agree
+c107_L18	6	x	M	B:-	gap
+c107_L18	7	c	H		agree
+c107_L18	8	a	M	B:-	gap
+c107_L18	9	b	M	B:-	gap
+c107_L18	10	o	M	B:-	gap
+c107_L18	11	z	M	B:-	gap
+c107_L18	12	c	M	B:q	differ
+c107_L18	13	R	H		agree
+c107_L18	14	H	H		agree
+c107_L18	15	E	H		agree
+c107_L18	16	c	M	A:-	gap
+c107_L18	17	x	M	B:T	differ
+c107_L18	18	a	M	B:o	differ
+c107_L18	19	=	M	B:o	differ
+c107_L18	20	t	M	B:d	differ
+c107_L18	21	R	M	B:d	differ
+c107_L18	22	z	H		agree
+c107_L18	23	SS	M	B:-	gap
+c107_L18	24	2	M	B:d	differ
+c107_L18	25	o	H		agree
+c107_L18	26	A	M	A:-	gap
+c107_L18	27	o	M	B:7	differ
+c107_L18	28	x	H		agree
+c107_L18	29	q	M	A:-	gap
+c107_L18	30	D	M	B:R	differ
+c107_L18	31	E	M	B:A	differ
+c107_L18	32	x	H		agree
+c107_L18	33	c	M	B:-	gap
+c107_L18	34	R	H		agree
+c107_L18	35	H	H		agree
+c107_L18	36	E	M	B:z	differ
+c107_L18	37	a	M	B:x	differ
+c107_L18	38	1	H		agree
+c107_L18	39	o	H		agree
+c107_L18	40	o	H		agree
+c107_L18	41	x	M	A:-	gap
+c107_L18	42	R	M	A:-	gap
+c107_L18	43	d	M	B:q	differ
+c107_L18	44	t	M	B:c	differ
+c107_L18	45	y	M	B:z	differ
+c107_L19	1	z	M	B:-	gap
+c107_L19	2	t	M	B:c	differ
+c107_L19	3	z	H		agree
+c107_L19	4	S	M	B:E	differ
+c107_L19	5	b	M	B:x	differ
+c107_L19	6	o	M	B:q	differ
+c107_L19	7	D	M	B:T	differ
+c107_L19	8	7	M	B::	differ
+c107_L19	9	x	H		agree
+c107_L19	10	=	M	A:-	gap
+c107_L19	11	c	M	B:d	differ
+c107_L19	12	R	H		agree
+c107_L19	13	D	M	B:-	gap
+c107_L19	14	x	M	B:q	differ
+c107_L19	15	R	H		agree
+c107_L19	16	H	H		agree
+c107_L19	17	z	M	B:E	differ
+c107_L19	18	x	H		agree
+c107_L19	19	1	M	B:-	gap
+c107_L19	20	o	M	B:-	gap
+c107_L19	21	o	M	B:-	gap
+c107_L19	22	x	M	B:R	differ
+c107_L19	23	R	H		agree
+c107_L19	24	c	H		agree
+c107_L19	25	=	M	B:-	gap
+c107_L19	26	z	M	B:-	gap
+c107_L19	27	a	M	B:-	gap
+c107_L19	28	z	M	B:R	differ
+c107_L19	29	E	M	B:H	differ
+c107_L19	30	x	H		agree
+c107_L19	31	q	M	A:-	gap
+c107_L19	32	R	H		agree
+c107_L19	33	H	M	A:-	gap
+c107_L19	34	x	H		agree
+c107_L19	35	c	M	A:-	gap
+c107_L19	36	A	M	A:-	gap
+c107_L19	37	=	H		agree
+c107_L19	38	t	M	B:-	gap
+c107_L19	39	R	H		agree
+c107_L19	40	q	M	A:-	gap
+c107_L19	41	c	H		agree
+c107_L19	42	R	M	B:-	gap
+c107_L19	43	H	M	B:-	gap
+c107_L19	44	E	M	B:q	differ
+c107_L20	1	c	M	A:-	gap
+c107_L20	2	1	M	A:-	gap
+c107_L20	3	SS	M	A:-	gap
+c107_L20	4	6	M	A:-	gap
+c107_L20	5	d	M	A:-	gap
+c107_L20	6	t	M	A:-	gap
+c107_L20	7	d	M	A:-	gap
+c107_L20	8	o	M	A:-	gap
+c107_L20	9	a	M	B:7	differ
+c107_L20	10	z	M	B:x	differ
+c107_L20	11	E	H		agree
+c107_L20	12	x	M	B:R	differ
+c107_L20	13	c	M	B:H	differ
+c107_L20	14	x	H		agree
+c107_L20	15	:	M	B:A	differ
+c107_L20	16	x	H		agree
+c107_L20	17	=	M	B:-	gap
+c107_L20	18	t	M	B:x	differ
+c107_L20	19	R	H		agree
+c107_L20	20	s	M	A:-	gap
+c107_L20	21	c	H		agree
+c107_L20	22	R	M	B:-	gap
+c107_L20	23	H	M	B:c	differ
+c107_L20	24	E	H		agree
+c107_L20	25	x	H		agree
+c107_L20	26	q	M	A:-	gap
+c107_L20	27	R	H		agree
+c107_L20	28	7	M	A:-	gap
+c107_L20	29	c	M	A:-	gap
+c107_L20	30	c	M	A:-	gap
+c107_L20	31	A	M	A:-	gap
+c107_L20	32	a	M	B:d	differ
+c107_L20	33	R	M	B:o	differ
+c107_L20	34	:	H		agree
+c107_L20	35	R	M	B:x	differ
+c107_L20	36	H	H		agree
+c107_L20	37	x	H		agree
+c107_L20	38	c	M	B:-	gap
+c107_L20	39	e	M	B:-	gap
+c107_L20	40	s	M	B:-	gap
+c107_L20	41	D	M	B:d	differ
+c107_L20	42	=	M	B:x	differ
+c107_L20	43	R	H		agree
+c107_L20	44	q	M	B:-	gap
+c107_L20	45	a	M	B:H	differ
+c107_L20	46	q	M	B:c	differ
+c107_L21	1	a	M	B:-	gap
+c107_L21	2	1	M	B:-	gap
+c107_L21	3	SS	M	B:-	gap
+c107_L21	4	6	M	B:E	differ
+c107_L21	5	t	M	B::	differ
+c107_L21	6	t	M	B:x	differ
+c107_L21	7	b	M	B:c	differ
+c107_L21	8	o	M	B:c	differ
+c107_L21	9	7	M	B:=	differ
+c107_L21	10	x	H		agree
+c107_L21	11	E	M	B:6	differ
+c107_L21	12	R	H		agree
+c107_L21	13	H	M	B:-	gap
+c107_L21	14	x	H		agree
+c107_L21	15	D	M	B:d	differ
+c107_L21	16	x	H		agree
+c107_L21	17	A	M	A:-	gap
+c107_L21	18	1	M	B:x	differ
+c107_L21	19	x	H		agree
+c107_L21	20	R	H		agree
+c107_L21	21	s	H		agree
+c107_L21	22	a	M	B:-	gap
+c107_L21	23	E	M	B:-	gap
+c107_L21	24	x	M	B:q	differ
+c107_L21	25	c	H		agree
+c107_L21	26	R	H		agree
+c107_L21	27	t	M	A:-	gap
+c107_L21	28	c	M	A:-	gap
+c107_L21	29	7	H		agree
+c107_L21	30	x	M	A:-	gap
+c107_L21	31	R	M	B:A	differ
+c107_L21	32	a	M	B:c	differ
+c107_L21	33	D	M	B:R	differ
+c107_L21	34	b	M	B:A	differ
+c107_L21	35	o	M	B:=	differ
+c107_L21	36	:	M	B:R	differ
+c107_L21	37	x	M	B:q	differ
+c107_L21	38	H	H		agree
+c107_L21	39	x	M	B:-	gap
+c107_L21	40	d	M	B:-	gap
+c107_L21	41	x	M	B:c	differ
+c107_L21	42	R	M	B:z	differ
+c107_L21	43	H	M	B:q	differ
+c107_L21	44	a	M	B:t	differ
+c107_L22	1	z	M	A:-	gap
+c107_L22	2	E	M	B:SS	differ
+c107_L22	3	:	M	B:q	differ
+c107_L22	4	x	H		agree
+c107_L22	5	E	M	A:-	gap
+c107_L22	6	e	M	B:d	differ
+c107_L22	7	s	M	B:o	differ
+c107_L22	8	a	M	B::	differ
+c107_L22	9	=	M	B:E	differ
+c107_L22	10	x	H		agree
+c107_L22	11	6	M	B:-	gap
+c107_L22	12	R	M	B:q	differ
+c107_L22	13	x	M	B:b	differ
+c107_L22	14	d	H		agree
+c107_L22	15	x	M	B:-	gap
+c107_L22	16	D	M	B:-	gap
+c107_L22	17	x	M	B:A	differ
+c107_L22	18	x	H		agree
+c107_L22	19	R	H		agree
+c107_L22	20	t	M	A:-	gap
+c107_L22	21	s	M	B:c	differ
+c107_L22	22	c	H		agree
+c107_L22	23	b	M	A:-	gap
+c107_L22	24	y	M	A:-	gap
+c107_L22	25	a	M	B:=	differ
+c107_L22	26	R	M	B:z	differ
+c107_L22	27	t	M	B:c	differ
+c107_L22	28	E	M	B:c	differ
+c107_L22	29	a	M	B:SS	differ
+c107_L22	30	:	H		agree
+c107_L22	31	e	M	B:-	gap
+c107_L22	32	x	H		agree
+c107_L22	33	R	M	A:-	gap
+c107_L22	34	c	M	A:-	gap
+c107_L22	35	c	M	A:-	gap
+c107_L22	36	c	H		agree
+c107_L22	37	R	M	A:-	gap
+c107_L22	38	a	M	B:d	differ
+c107_L22	39	R	H		agree
+c107_L22	40	d	M	A:-	gap
+c107_L22	41	7	M	A:-	gap
+c107_L22	42	a	M	B:x	differ
+c107_L22	43	q	M	B:R	differ
+c107_L23	1	z	M	B:o	differ
+c107_L23	2	s	M	B:o	differ
+c107_L23	3	S	M	B:x	differ
+c107_L23	4	c	M	B:R	differ
+c107_L23	5	a	H		agree
+c107_L23	6	R	M	B:-	gap
+c107_L23	7	b	M	B:=	differ
+c107_L23	8	q	M	B:x	differ
+c107_L23	9	t	M	B:A	differ
+c107_L23	10	a	M	B:R	differ
+c107_L23	11	e	H		agree
+c107_L23	12	=	M	B:-	gap
+c107_L23	13	z	M	B:-	gap
+c107_L23	14	c	H		agree
+c107_L23	15	b	M	B:1	differ
+c107_L23	16	o	M	B:H	differ
+c107_L23	17	D	M	B:E	differ
+c107_L23	18	x	H		agree
+c107_L23	19	t	M	B:-	gap
+c107_L23	20	t	M	B:R	differ
+c107_L23	21	z	M	B:E	differ
+c107_L23	22	b	M	B:x	differ
+c107_L23	23	R	H		agree
+c107_L23	24	t	M	A:-	gap
+c107_L23	25	a	M	B:x	differ
+c107_L23	26	b	M	B:T	differ
+c107_L23	27	=	M	B:x	differ
+c107_L23	28	z	H		agree
+c107_L23	29	c	M	B:x	differ
+c107_L23	30	a	M	B:o	differ
+c107_L23	31	SS	M	B:R	differ
+c107_L23	32	:	M	B:7	differ
+c107_L23	33	x	H		agree
+c107_L23	34	e	M	A:-	gap
+c107_L23	35	R	H		agree
+c107_L23	36	c	M	B:-	gap
+c107_L23	37	a	M	B:-	gap
+c107_L23	38	d	M	B:SS	differ
+c107_L23	39	R	M	B:t	differ
+c107_L23	40	b	M	B:z	differ
+c107_L23	41	o	M	B:s	differ
+c107_L23	42	7	M	B:SS	differ
+c107_L23	43	x	M	B:2	differ
+c107_L23	44	R	H		agree
+c107_L24	1	e	M	A:-	gap
+c107_L24	2	x	M	A:-	gap
+c107_L24	3	z	M	A:-	gap
+c107_L24	4	o	M	B:d	differ
+c107_L24	5	o	H		agree
+c107_L24	6	x	M	B:H	differ
+c107_L24	7	R	M	B:1	differ
+c107_L24	8	a	M	B:x	differ
+c107_L24	9	=	H		agree
+c107_L24	10	E	M	A:-	gap
+c107_L24	11	x	M	B:c	differ
+c107_L24	12	D	M	B:H	differ
+c107_L24	13	R	H		agree
+c107_L24	14	c	M	B:-	gap
+c107_L24	15	a	M	B:e	differ
+c107_L24	16	t	H		agree
+c107_L24	17	#	M	B:-	gap
+c107_L24	18	E	M	B:c	differ
+c107_L24	19	E	M	B:d	differ
+c107_L24	20	x	H		agree
+c107_L24	21	R	M	B:t	differ
+c107_L24	22	E	H		agree
+c107_L24	23	d	M	A:-	gap
+c107_L24	24	o	M	A:-	gap
+c107_L24	25	x	M	B:z	differ
+c107_L24	26	t	M	B:q	differ
+c107_L24	27	x	H		agree
+c107_L24	28	7	M	B:1	differ
+c107_L24	29	x	H		agree
+c107_L24	30	e	M	B:z	differ
+c107_L24	31	R	H		agree
+c107_L24	32	x	H		agree
+c107_L24	33	6	M	A:-	gap
+c107_L24	34	t	M	B:SS	differ
+c107_L24	35	7	H		agree
+c107_L24	36	x	M	A:-	gap
+c107_L24	37	z	M	B:1	differ
+c107_L24	38	R	H		agree
+c107_L24	39	H	M	A:-	gap
+c107_L24	40	x	H		agree
+c107_L24	41	1	M	A:-	gap
+c107_L25	1	o	M	A:-	gap
+c107_L25	2	o	M	A:-	gap
+c107_L25	3	d	M	A:-	gap
+c107_L25	4	y	M	A:-	gap
+c107_L25	5	c	M	B:A	differ
+c107_L25	6	x	H		agree
+c107_L25	7	z	M	B:R	differ
+c107_L25	8	b	M	B::	differ
+c107_L25	9	o	M	B:z	differ
+c107_L25	10	H	M	B:6	differ
+c107_L25	11	1	M	B:SS	differ
+c107_L25	12	x	H		agree
+c107_L25	13	s	M	A:-	gap
+c107_L25	14	=	M	B:R	differ
+c107_L25	15	E	M	B:H	differ
+c107_L25	16	a	M	B:R	differ
+c107_L25	17	H	H		agree
+c107_L25	18	c	M	A:-	gap
+c107_L25	19	s	M	A:-	gap
+c107_L25	20	R	M	A:-	gap
+c107_L25	21	R	H		agree
+c107_L25	22	c	H		agree
+c107_L25	23	t	M	B::	differ
+c107_L25	24	d	M	B:x	differ
+c107_L25	25	d	M	B:=	differ
+c107_L25	26	b	M	B:E	differ
+c107_L25	27	a	M	B:c	differ
+c107_L25	28	t	M	B:H	differ
+c107_L25	29	a	M	B:E	differ
+c107_L25	30	b	M	B:d	differ
+c107_L25	31	o	H		agree
+c107_L25	32	z	M	B:-	gap
+c107_L25	33	c	H		agree
+c107_L25	34	x	M	B:-	gap
+c107_L25	35	1	M	B:-	gap
+c107_L25	36	x	M	B:-	gap
+c107_L25	37	z	H		agree
+c107_L25	38	R	M	B:-	gap
+c107_L25	39	x	M	B:-	gap
+c107_L25	40	6	H		agree
+c107_L25	41	SS	M	B:-	gap
+c107_L25	42	T	M	B:-	gap
+c107_L25	43	x	M	B:-	gap
+c107_L25	44	1	M	B:-	gap
+c107_L25	45	R	H		agree
+c107_L25	46	H	H		agree
+c107_L25	47	x	H		agree
+c107_L25	48	q	M	A:-	gap
+c107_L25	49	=	M	A:-	gap
+c107_L25	50	1	M	B:E	differ
+c107_L26	1	R	M	A:-	gap
+c107_L26	2	A	M	A:-	gap
+c107_L26	3	o	M	B:c	differ
+c107_L26	4	o	M	B:x	differ
+c107_L26	5	x	H		agree
+c107_L26	6	z	M	B:R	differ
+c107_L26	7	D	M	B:1	differ
+c107_L26	8	x	H		agree
+c107_L26	9	R	M	B:x	differ
+c107_L26	10	:	H		agree
+c107_L26	11	z	M	B:x	differ
+c107_L26	12	b	M	B:y	differ
+c107_L26	13	SS	M	B:7	differ
+c107_L26	14	x	H		agree
+c107_L26	15	7	M	A:-	gap
+c107_L26	16	d	M	A:-	gap
+c107_L26	17	c	M	A:-	gap
+c107_L26	18	s	M	B:R	differ
+c107_L26	19	R	H		agree
+c107_L26	20	H	M	B:z	differ
+c107_L26	21	H	M	B:x	differ
+c107_L26	22	E	H		agree
+c107_L26	23	c	M	A:-	gap
+c107_L26	24	a	M	B:R	differ
+c107_L26	25	z	M	B:t	differ
+c107_L26	26	b	M	B:R	differ
+c107_L26	27	R	H		agree
+c107_L26	28	H	M	B:E	differ
+c107_L26	29	x	H		agree
+c107_L26	30	e	M	A:-	gap
+c107_L26	31	a	M	B:c	differ
+c107_L26	32	=	H		agree
+c107_L26	33	t	M	A:-	gap
+c107_L26	34	z	M	A:-	gap
+c107_L26	35	x	M	B:E	differ
+c107_L26	36	6	M	B::	differ
+c107_L26	37	R	M	B:d	differ
+c107_L27	1	c	M	A:-	gap
+c107_L27	2	x	M	A:-	gap
+c107_L27	3	R	M	B:t	differ
+c107_L27	4	H	M	B:x	differ
+c107_L27	5	a	M	B:7	differ
+c107_L27	6	s	M	B:d	differ
+c107_L27	7	s	H		agree
+c107_L27	8	R	H		agree
+c107_L27	9	a	M	B:q	differ
+c107_L27	10	:	M	B:H	differ
+c107_L27	11	x	H		agree
+c107_L27	12	=	M	B:-	gap
+c107_L27	13	E	M	B:1	differ
+c107_L27	14	a	M	B:R	differ
+c107_L27	15	H	H		agree
+c107_L27	16	E	M	B:-	gap
+c107_L27	17	b	M	B:-	gap
+c107_L27	18	o	M	B:-	gap
+c107_L27	19	a	M	B:-	gap
+c107_L27	20	z	H		agree
+c107_L27	21	b	M	B:-	gap
+c107_L27	22	R	H		agree
+c107_L27	23	H	M	B:R	differ
+c107_L27	24	x	H		agree
+c107_L27	25	T	M	A:-	gap
+c107_L27	26	q	M	A:-	gap
+c107_L27	27	c	H		agree
+c107_L27	28	=	M	B:-	gap
+c107_L27	29	E	H		agree
+c107_L27	30	R	H		agree
+c107_L27	31	SS	M	A:-	gap
+c107_L27	32	z	M	A:-	gap
+c107_L27	33	7	M	A:-	gap
+c107_L27	34	a	M	B:d	differ
+c107_L27	35	a	M	B:R	differ
+c107_L27	36	x	M	B:z	differ
+c107_L27	37	R	H		agree
+c107_L27	38	1	M	B:z	differ
+c107_L27	39	x	H		agree
+c107_L27	40	:	M	B:E	differ
+c107_L27	41	x	H		agree
+c107_L27	42	R	M	A:-	gap
+c107_L27	43	y	M	B:E	differ
+c107_L27	44	7	M	B:t	differ
+c107_L27	45	x	H		agree
+c107_L27	46	7	M	B:-	gap
+c107_L27	47	t	M	B:1	differ
+c107_L28	1	o	M	A:-	gap
+c107_L28	2	o	M	A:-	gap
+c107_L28	3	x	M	A:-	gap
+c107_L28	4	7	M	A:-	gap
+c107_L28	5	x	H		agree
+c107_L28	6	P	M	A:-	gap
+c107_L28	7	7	H		agree
+c107_L28	8	t	M	B:x	differ
+c107_L28	9	b	M	B:e	differ
+c107_L28	10	R	H		agree
+c107_L28	11	z	M	B:SS	differ
+c107_L28	12	R	M	B:t	differ
+c107_L28	13	z	H		agree
+c107_L28	14	E	M	B:SS	differ
+c107_L28	15	x	M	B:q	differ
+c107_L28	16	c	H		agree
+c107_L28	17	a	M	B:-	gap
+c107_L28	18	y	M	B:-	gap
+c107_L28	19	R	H		agree
+c107_L28	20	E	M	B:-	gap
+c107_L28	21	x	H		agree
+c107_L28	22	c	M	B:-	gap
+c107_L28	23	a	M	B:-	gap
+c107_L28	24	=	M	B:-	gap
+c107_L28	25	t	M	B:-	gap
+c107_L28	26	y	M	B:e	differ
+c107_L28	27	E	M	B:x	differ
+c107_L28	28	:	H		agree
+c107_L28	29	t	M	B:-	gap
+c107_L28	30	c	H		agree
+c107_L28	31	a	M	B:H	differ
+c107_L28	32	1	M	B:E	differ
+c107_L28	33	x	H		agree
+c107_L28	34	7	M	B:-	gap
+c107_L28	35	t	M	B:d	differ
+c107_L28	36	s	M	B:o	differ
+c107_L28	37	R	M	B:T	differ
+c107_L28	38	q	M	B:d	differ
+c107_L28	39	H	H		agree
+c107_L28	40	x	H		agree
+c107_L28	41	R	M	B:o	differ
+c107_L28	42	1	M	B:x	differ
+c107_L28	43	H	M	B:y	differ
+c107_L28	44	z	M	B:c	differ
+c107_L29	1	z	M	B:-	gap
+c107_L29	2	R	M	B:t	differ
+c107_L29	3	x	M	B:o	differ
+c107_L29	4	1	H		agree
+c107_L29	5	SS	M	A:-	gap
+c107_L29	6	A	M	A:-	gap
+c107_L29	7	q	M	B:d	differ
+c107_L29	8	a	M	B:=	differ
+c107_L29	9	E	M	B:x	differ
+c107_L29	10	R	H		agree
+c107_L29	11	SS	H		agree
+c107_L29	12	z	H		agree
+c107_L29	13	7	M	B:SS	differ
+c107_L29	14	b	M	B:H	differ
+c107_L29	15	o	M	B:x	differ
+c107_L29	16	R	H		agree
+c107_L29	17	1	M	A:-	gap
+c107_L29	18	z	M	B:T	differ
+c107_L29	19	x	H		agree
+c107_L29	20	E	H		agree
+c107_L29	21	o	M	A:-	gap
+c107_L29	22	d	M	A:-	gap
+c107_L29	23	x	H		agree
+c107_L29	24	R	H		agree
+c107_L29	25	E	M	B:-	gap
+c107_L29	26	1	M	B:-	gap
+c107_L29	27	x	H		agree
+c107_L29	28	1	M	B:R	differ
+c107_L29	29	SS	M	B:E	differ
+c107_L29	30	7	M	B:o	differ
+c107_L29	31	x	H		agree
+c107_L29	32	o	M	B:-	gap
+c107_L29	33	o	M	B:R	differ
+c107_L29	34	x	H		agree
+c107_L29	35	T	M	A:-	gap
+c107_L29	36	7	M	B:R	differ
+c107_L29	37	x	H		agree
+c107_L29	38	P	M	B:SS	differ
+c107_L29	39	7	M	B:R	differ
+c107_L29	40	x	H		agree
+c107_L29	41	c	M	B:T	differ
+c107_L29	42	R	M	B:1	differ
+c107_L29	43	SS	H		agree
+c107_L29	44	t	H		agree
+c107_L29	45	=	M	A:-	gap
+c107_L29	46	R	M	A:-	gap
+c107_L29	47	z	M	B:H	differ
+c107_L30	1	o	M	A:-	gap
+c107_L30	2	t	M	B:o	differ
+c107_L30	3	z	M	B:x	differ
+c107_L30	4	SS	M	B:R	differ
+c107_L30	5	q	M	B:o	differ
+c107_L30	6	a	M	B:7	differ
+c107_L30	7	s	M	B:o	differ
+c107_L30	8	c	H		agree
+c107_L30	9	x	M	B:z	differ
+c107_L30	10	a	M	B:R	differ
+c107_L30	11	e	M	B:E	differ
+c107_L30	12	x	M	B:c	differ
+c107_L30	13	:	M	B:o	differ
+c107_L30	14	a	M	B:SS	differ
+c107_L30	15	H	M	B:A	differ
+c107_L30	16	E	M	B:SS	differ
+c107_L30	17	x	M	B:z	differ
+c107_L30	18	b	M	B:t	differ
+c107_L30	19	o	H		agree
+c107_L30	20	1	M	B:-	gap
+c107_L30	21	t	M	B:-	gap
+c107_L30	22	H	M	B:T	differ
+c107_L30	23	o	H		agree
+c107_L30	24	x	M	B:o	differ
+c107_L30	25	z	H		agree
+c107_L30	26	a	M	B:-	gap
+c107_L30	27	t	M	B:x	differ
+c107_L30	28	SS	M	B:o	differ
+c107_L30	29	D	M	B:R	differ
+c107_L30	30	t	H		agree
+c107_L30	31	=	M	B:-	gap
+c107_L30	32	x	M	B:-	gap
+c107_L30	33	R	H		agree
+c107_L30	34	SS	M	B:A	differ
+c107_L30	35	z	H		agree
+c107_L30	36	6	M	A:-	gap
+c107_L30	37	SS	M	B:y	differ
+c107_L30	38	#	M	B:x	differ
+c107_L31	1	s	M	A:-	gap
+c107_L31	2	x	M	A:-	gap
+c107_L31	3	x	H		agree
+c107_L31	4	R	M	B:H	differ
+c107_L31	5	t	M	B:E	differ
+c107_L31	6	c	H		agree
+c107_L31	7	SS	M	B:-	gap
+c107_L31	8	t	M	B:-	gap
+c107_L31	9	t	M	B:-	gap
+c107_L31	10	x	M	B:z	differ
+c107_L31	11	1	M	B:6	differ
+c107_L31	12	R	H		agree
+c107_L31	13	H	M	A:-	gap
+c107_L31	14	x	H		agree
+c107_L31	15	R	M	B:c	differ
+c107_L31	16	d	M	B:=	differ
+c107_L31	17	x	H		agree
+c107_L31	18	E	M	B:-	gap
+c107_L31	19	a	M	B:-	gap
+c107_L31	20	e	M	B:-	gap
+c107_L31	21	o	M	B:-	gap
+c107_L31	22	a	M	B:-	gap
+c107_L31	23	d	M	B:6	differ
+c107_L31	24	R	H		agree
+c107_L31	25	x	M	B:-	gap
+c107_L31	26	1	M	B:A	differ
+c107_L31	27	x	H		agree
+c107_L31	28	#	M	B:o	differ
+c107_L31	29	R	M	B:o	differ
+c107_L31	30	=	M	B:z	differ
+c107_L31	31	t	M	B:6	differ
+c107_L31	32	SS	H		agree
+c107_L31	33	H	M	A:-	gap
+c107_L31	34	R	M	B:x	differ
+c107_L31	35	d	H		agree
+c107_L31	36	x	M	B:-	gap
+c107_L31	37	1	M	B:6	differ
+c107_L31	38	R	M	B:d	differ
+c107_L31	39	x	H		agree
+c107_L31	40	1	M	B:-	gap
+c107_L31	41	R	M	B:-	gap
+c107_L31	42	H	H		agree
+c107_L31	43	x	M	B:-	gap
+c107_L31	44	1	M	B:c	differ
+c107_L31	45	R	M	B:E	differ
+c107_L31	46	t	M	B::	differ
+c107_L31	47	z	M	B:x	differ
+c107_L31	48	o	M	B:d	differ
+c107_L31	49	o	H		agree
+c107_L31	50	x	M	B:-	gap
+c107_L31	51	7	M	B:-	gap
+c107_L31	52	x	M	B:R	differ
+c107_L31	53	1	M	B:q	differ
+c107_L31	54	c	M	B:9	differ
+c107_L32	1	a	M	B:-	gap
+c107_L32	2	R	M	B:-	gap
+c107_L32	3	SS	M	B:x	differ
+c107_L32	4	z	M	B:T	differ
+c107_L32	5	z	M	B:o	differ
+c107_L32	6	t	H		agree
+c107_L32	7	e	M	A:-	gap
+c107_L32	8	z	M	B:s	differ
+c107_L32	9	1	H		agree
+c107_L32	10	b	M	B:-	gap
+c107_L32	11	o	M	B:-	gap
+c107_L32	12	z	M	B:s	differ
+c107_L32	13	c	M	B:H	differ
+c107_L32	14	a	M	B:1	differ
+c107_L32	15	R	M	B:t	differ
+c107_L32	16	z	M	B:s	differ
+c107_L32	17	b	M	B:e	differ
+c107_L32	18	R	M	B:s	differ
+c107_L32	19	H	M	B:t	differ
+c107_L32	20	x	H		agree
+c107_L32	21	1	M	B:-	gap
+c107_L32	22	R	H		agree
+c107_L32	23	4	M	B:-	gap
+c107_L32	24	z	M	B:-	gap
+c107_L32	25	6	M	B:-	gap
+c107_L32	26	c	M	B:R	differ
+c107_L32	27	1	M	B:x	differ
+c107_L32	28	x	H		agree
+c107_L32	29	1	M	B:t	differ
+c107_L32	30	R	H		agree
+c107_L32	31	6	M	B:A	differ
+c107_L32	32	a	M	B:R	differ
+c107_L32	33	H	H		agree
+c107_L32	34	E	H		agree
+c107_L32	35	a	M	B:-	gap
+c107_L32	36	z	M	B:-	gap
+c107_L32	37	6	M	B:x	differ
+c107_L32	38	R	H		agree
+c107_L32	39	H	M	B:y	differ
+c107_L32	40	x	H		agree
+c107_L32	41	a	M	B:-	gap
+c107_L32	42	=	M	B:t	differ
+c107_L32	43	x	H		agree
+c107_L32	44	T	M	A:-	gap
+c107_L32	45	SS	M	A:-	gap
+c107_L32	46		M	A:-	gap
+c107_L32	47	6	M	B:x	differ
+c107_L32	48	R	H		agree
+c107_L32	49	o	M	A:-	gap
+c107_L32	50	SS	M	A:-	gap
