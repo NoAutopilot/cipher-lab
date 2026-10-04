@@ -1,0 +1,5 @@
+q	question	owner_answer	meaning
+q1	T60-c same sign as T65?	different	T60-c is its own sign (owner), not T65
+q2	X_NEW-l same sign as T19?	same	merge X_NEW-l into T19 (owner said so twice)
+q3	f168_V02_29: T81-d or T54?	T81-d	owner keeps it in T81-d (looped R), against the blind check's T54
+q4	f144r_L06_01: T42-b or T90?	T42-b	owner keeps T42-b; and f117_L01_20 (first T90 tile shown) also belongs with T42-b; rest of T90 a separate sign
