@@ -1,0 +1,10 @@
+sign	A	B	block_tokens	dG	dOcc	null_p95_dG	gloss_half	dJ_alone	judge_alone	verdict
+K	f	s	2	0.0000	1	0.0294	fail	0.02135	ok	fail
+iib	l	d	1	0.0000	0	0.0353	fail	-0.00310	worse	fail
+l	s	f	1	0.0059	1	0.0000	hold	-0.00919	worse	fail
+ls	e	m	2	0.0000	0	0.0000	fail	-0.00521	worse	fail
+o	n	m	5	0.0118	0	0.0118	fail	-0.01512	worse	fail
+rot	r	h	1	0.0059	1	0.0000	hold	-0.00239	worse	fail
+spiralG	h	n	0	0.0000	0	0.0000	no evidence	-0.00046	worse	fail
+to	m	s	2	-0.0176	0	0.0176	fail	0.00177	ok	fail
+x	s	f	1	0.0000	0	0.0000	fail	-0.00581	worse	fail

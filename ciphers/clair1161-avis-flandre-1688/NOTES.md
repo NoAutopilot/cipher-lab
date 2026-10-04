@@ -1841,3 +1841,52 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps; and a lookalike pass on th/z/S/4 for the error gap, as in Remaining gaps
 - [n/a] retry: a further seed sweep or W/threshold change of the same anneal is not a different instrument
 Verdict: keep going: 3 internal gaps; cheapest next: gloss match + fr16 judge of the nine C1161-LOLO proposals against key.tsv, ~$2
+
+## C1161-GLOSS9 (account-3 worker, 4 Oct 2026, 17:07-17:1x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-04-acct3-c1161-gloss9.md`. Pre-registration `tx/PREREG_gloss9.md` and script `two/gloss9.py`
+pushed before any score (769ff65a). Disk only, no subagents. Instrument: RUN4-C1161GJ's G (c186R block vs its period gloss,
+key.tsv 0.612) and J (fr16 judge, relative only; key.tsv -1.233), 50 shuffled-order anneal keys as the null. Outputs
+`two/gloss9_gate.tsv`, `two/gloss9.tsv`.
+
+| sign | A -> B | c186R tokens | dG / null p95 | dOcc | gloss half | dJ alone | verdict |
+|---|---|---|---|---|---|---|---|
+| K | f -> s | 2 | 0.000 / 0.029 | +1 | fail | +0.0214 | fail |
+| iib | l -> d | 1 | 0.000 / 0.035 | 0 | fail | -0.0031 | fail |
+| l | s -> f | 1 | +0.006 / 0.000 | +1 | holds | -0.0092 | fail (judge worse) |
+| ls | e -> m | 2 | 0.000 / 0.000 | 0 | fail | -0.0052 | fail |
+| o | n -> m | 5 | +0.012 / 0.012 | 0 | fail (= null) | -0.0151 | fail |
+| rot | r -> h | 1 | +0.006 / 0.000 | +1 | holds | -0.0024 | fail (judge worse) |
+| spiralG | h -> n | 0 | -- | -- | no evidence | -0.0005 | no evidence |
+| to | m -> s | 2 | -0.018 / 0.018 | 0 | fail | +0.0018 | fail |
+| x | s -> f | 1 | 0.000 / 0.000 | 0 | fail | -0.0058 | fail |
+
+**0 of 9 pass; key.tsv unchanged** (`tools/decode_key.py --check`: reading up to date, C 353, S 1908, M 1114, U 33). No grade
+moves, so no AUDIT propagation, re-derivation or depth change is owed. Rule 3: eight of the nine have 0-2 tokens in the glossed
+block, where one letter is ~0.006 of G; the gloss half holds for l and rot on a single token each, which is no evidence either
+way at this gloss length, and spiralG never occurs in glossed text. The nine stay M proposals.
+
+Information only (not gated, not pre-registered as a gate): all nine together raise G 0.612 -> 0.647 (+6 letters of 170) and
+the judge +0.0053, while the same nine swaps in the 50 shuffled-order keys lower it (mean -0.055, p95 -0.038). So as a set the
+nine fit the real context better than a shuffled one on both instruments, even though no single value clears its own gate; six
+of the nine single swaps lower the judge, so the joint gain lives in the interactions. A pre-registered joint gate (the nine as
+one hypothesis, joint G against the shuffled-key joint G null) is the honest next test of that, not a per-sign re-run.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
+Subagent calls: 0.
+
+## Remaining gaps (C1161-GLOSS9, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Per-sign gloss/judge of the nine C1161-LOLO proposals: 0/9 pass (C1161-GLOSS9); joint nine beat the shuffled-key null on the judge (info only).
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S - blocker: not-attempted; the per-sign gloss test cannot move a sign with 0-5 glossed tokens (C1161-GLOSS9, RUN4-C1161GJ); next: a pre-registered joint test of the nine C1161-LOLO proposals as one hypothesis (joint dG and dJ vs the 50-key shuffled joint null), ~$1
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; transcription error above the two-reader figure, a wrong held value, or a design element; next: a key-constrained lookalike pass on the highest-token free signs (th 208, z 189, S 275, 4 224) against the native crops, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-GLOSS9, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: stage-1 leave-one-leaf-out anneal GATE PASS 3/3 with nine M proposals (C1161-LOLO); per-sign gloss+judge 0/9 (C1161-GLOSS9); next: pre-registered joint test of the nine, as in Remaining gaps
+- [ ] image-check: seven provisional new shapes; next: sorter or split test, and a lookalike pass on th/z/S/4, as in Remaining gaps
+- [n/a] retry: a further per-sign gloss run of the same nine is not a different instrument
+Verdict: keep going: 3 internal gaps; cheapest next: pre-registered joint gloss+judge test of the nine C1161-LOLO proposals, ~$1
