@@ -3445,10 +3445,10 @@
     },
     {
       "target": "clair1161-avis-flandre-1688",
-      "title": "Clairambault 1161 Avis de Flandre: blind homophonic key decodes the c186R block to the leaf's own period gloss at 0.594 vs shuffled-order anneals max 0.312 (20 seeds) and fr16 windows p95 0.335; gloss-seeded repair c185R judge -1.128 vs shuffled-gloss -1.177..-1.243, still FAIL (real_p05 -0.949); C 97 / S 675 / M 152 / U 15",
-      "next": "transcribe c186L, c187L/R, c188L (~$6/leaf) and re-anneal pooled; q/ls and S split test (~$3); rule 7 re-derivation",
-      "lane": "LANE-READ2 (account 2)",
-      "touched": "4 Oct 2026 00:2x"
+      "title": "Clairambault 1161 Avis de Flandre: 3391 signs on six leaves; key fitted on two leaves reads the four unseen leaves above shuffled-key and shuffled-order controls (fr16 -1.268 vs -1.425 / -1.581, NEAR3-C1POOL); block-gloss match 0.612 vs shuffled max 0.265; judge FAIL (real_p05 -0.910); pooled re-anneal FAIL its c185R gate; C 360 / S 2670 / M 343 / U 37",
+      "next": "update the spec stream and brief a rule-7 re-derivation (~$0.5 + $3); key_crossmatch.py vs KEY-OFFICES.tsv (~$2); two fresh blind passes on c188L slope crops (~$4)",
+      "lane": "LANE-NEAR3 (account 2)",
+      "touched": "4 Oct 2026 02:4x"
     }
   ]
 }

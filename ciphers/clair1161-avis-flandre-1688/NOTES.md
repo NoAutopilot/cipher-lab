@@ -1132,3 +1132,104 @@ run; no third pass.
 **Next step for the pooled job.** Before merging, re-read L15/L16 and the 119 M-graded signs against the slope crops,
 or run two fresh blind passes on the slope crops (2 Sonnet calls at about the per-pass rate of this job), so that
 err_2reader measures reading rather than framing.
+
+## NEAR3-C1POOL (4 Oct 2026)
+
+Account 2 worker for LANE-NEAR3, brief `.claude/briefs/runs/2026-10-04-ytbiz-near3-wave3.md`. Box 02:07-03:17 UTC (container
+clock). Disk only for the statistics; 2 Gallica requests for the regen check of step 5. No subagent calls. Pre-registration
+`tx/PREREG_pool.md`, commit 5329826a, pushed before any statistic. Script `pool/pool.py`; rows `pool/heldout.tsv`,
+`pool/anneal.tsv`; keys `pool/key_*.tsv`.
+
+**Material.** `pool/new_leaves.tsv` = the four TX reports' reconciled files, as transcribed: c186L 246, c187L 718, c187R 744,
+c188L 759 = 2467 cipher signs. Notation only: `ss` written as two `s` rows (the c185R/c186R convention), `PLAIN:x` as
+`[PLAIN:x]`, and the two leaf-local `NEW1` labels renamed `NEW_c186L_1` (v with long bar) and `NEW_c187L_1` (open arc), since
+the reports describe different shapes. Every NEW* stays its own sign. No marginal gloss on any of the four leaves, so
+`tools/interlinear_align.py` stays [retired] for this block.
+
+**(a) Held-out test of the current key.tsv** (built on c185R + c186R only). Statistic: the fr16 judge model's language score
+and word cover. Controls: (i) key.tsv on each leaf's order-shuffled signs, 20 seeds (p95 = 19th of 20); (ii) the 20
+shuffled-ciphertext anneal keys `glossctl/key_shuf1..20.tsv` on the unshuffled leaves. Unkeyed NEW* -> '?' in every arm.
+
+| set | signs (unkeyed) | real score | (i) p95 | (ii) max | real cover | (i) p95 | (ii) max | gate | judge |
+|---|---|---|---|---|---|---|---|---|---|
+| **pooled, 4 leaves** | 2467 (18) | **-1.268** | -1.581 | -1.425 | **0.897** | 0.816 | 0.863 | **PASS** | FAIL, real_p05 -0.910 |
+| pooled, no c188L | 1708 (9) | -1.274 | -1.585 | -1.425 | 0.892 | 0.816 | 0.875 | PASS | FAIL, real_p05 -0.927 |
+| c186L | 246 (3) | -1.310 | -1.562 | -1.350 | 0.918 | 0.819 | 0.926 | FAIL (cover) | FAIL |
+| c187L | 718 (1) | -1.304 | -1.599 | -1.409 | 0.873 | 0.802 | 0.887 | FAIL (cover) | FAIL |
+| c187R | 744 (5) | -1.233 | -1.547 | -1.404 | 0.903 | 0.836 | 0.884 | PASS | FAIL |
+| c188L | 759 (9) | -1.254 | -1.550 | -1.358 | 0.908 | 0.840 | 0.884 | PASS | FAIL |
+
+**Pre-registered outcome (a): PASS** on the all-four figure, and also without c188L. A key fitted on c185R + c186R reads the
+four leaves it never saw better than the same key on shuffled order and better than any of 20 keys annealed on shuffled
+ciphertext. The judge itself still FAILs every set (no real_p05 is met). c188L's figure carries its err_2reader 0.181; c187R
+may carry the same slope framing (flagged in the c188L report, not re-transcribed here).
+
+**Merge.** `ciphertext.tsv` gained the 2489 new rows (same columns): 3436 rows, 3391 cipher signs, 57 types. `tx/stream_all.txt`
+regenerated (3391 tokens). `specs/clair1161-avis-flandre-1688.json` NOT edited: its stream stays the 924 signs, because
+glossctl.py and split/split.py assert or shuffle that stream; the lane updates it before the next rule-7 re-derivation.
+
+**(b) Pooled re-anneal** (homophonic_anneal restarts 32, iters 40000, fr16 order 3, 6 C signs held, q/ls and S merged; one
+timing anneal 113 s, so restarts stayed 32).
+
+| arm | seed / shuffle | anneal score | gloss match (c186R block) | c185R judge | c185R+c186R judge |
+|---|---|---|---|---|---|
+| real | 1 | -8760.8 | 0.565 | -1.219 | -1.199 |
+| **real (best)** | **2** | **-8711.2** | **0.612** | **-1.225** | **-1.213** |
+| real | 3 | -8735.9 | 0.582 | -1.217 | -1.204 |
+| real | 4 | -8720.7 | 0.624 | -1.222 | -1.206 |
+| real | 5 | -8711.2 | 0.612 | -1.225 | -1.213 |
+| shuffled 1 (best of seeds 1-2) | s2 | -10167.4 | 0.212 | - | - |
+| shuffled 2 | s1 | -10176.6 | 0.171 | - | - |
+| shuffled 3 | s2 | -10157.0 | **0.265** (max) | - | - |
+| shuffled 4 | s2 | -10149.1 | 0.188 | - | - |
+| shuffled 5 | s1 | -10155.5 | 0.229 | - | - |
+
+Current key.tsv (reference, NOTES.md READ2-C1161B): gloss 0.612, c185R -1.128, c185R+c186R -1.136. All 15 anneals ran
+(02:12-02:43 UTC), each about 111 s.
+
+**Pre-registered outcome (b): FAIL.** Condition (2) fails in every real seed: the best-score key (seeds 2 and 5 reach the
+same optimum, -8711.2) gives c185R -1.225 (needed >= -1.128) and c185R+c186R -1.213 (needed >= -1.136). Condition (1) holds: real gloss 0.612 against a shuffle max of 0.265 (5 shuffles, 2 seeds each). Pooling
+the new leaves pulls the anneal to a key that reads the original two leaves worse than the key fitted on them alone, while the
+gloss match stays where it was (0.612, against 0.612 for the strict-repair key).
+
+**key.tsv not changed.** The reading is regenerated for the merged ciphertext under the old key (new leaves' tokens S where
+keyed, M where the token conf is M, U for NEW*): `python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688` ->
+`ciphertext.tsv: tokens 3410: C 360, M 343, S 2670, U 37`; `--check` -> "reading up to date", exit 0. Judge on the full
+3391-sign decode under the old key (`pool/full_decode_oldkey.txt`):
+```
+FAIL language: score=-1.232, null_p99=-1.753, real_p05=-0.934, real_median=-0.823, mode=both, N=3373
+ok   words: cover=0.899, min=0.5, real_text_median_cover=0.959
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The reading changed (ciphertext merged), so the lane briefs a rule-7 re-derivation; not done here.
+
+**Reports folded.** `reports/NEAR3-C1RD.md`, `-C1LOOSE`, `-C1SPLIT`, `-C1TX-c186L/c187L/c187R/c188L` appended above verbatim
+(checked by substring match against NOTES.md before deletion), then `reports/` deleted in the final commit.
+
+**Folder size.** Tracked files were 29.3 MB, over the 29 MB line. `images_manifest_full.tsv` (378 files, sha1, source URL,
+cited_by, status) written; the 72 c186R crop entries in `images/manifest.json` that had an empty `source_url` now carry the f186
+region URL; `images/src_..._f186_4450_100_3150_4650.jpg` (regen byte-identical, sha1 checked) and
+`images/src_..._f187_3800_1300_3400_4650.jpg` (same URL regenerates with different JPEG entropy coding, 2512638 vs 2512838 bytes;
+the original stays in git history) deleted. Tracked size now about 24.6 MB.
+
+Requests: gallica.bnf.fr 2 (regen check, descriptive UA, 2 s apart). Subagent calls: 0. Report what was found and where it was
+not found: no outside source searched; novelty not classified. Cost: see the lane ledger.
+
+## Remaining gaps (NEAR3-C1POOL, 4 Oct 2026)
+Read so far: 3391 cipher signs transcribed, every cipher leaf and block IMG-GALLICA1 names (c185R 704, c186R block 220, c186L 246, c187L 718, c187R 744, c188L 759; the earlier ~2,500 estimate was low), decoded under the unchanged key.tsv: C 360, S 2670, M 343, U 37 tokens; 0 H.
+- the key beyond the 6 C signs - blocker: not-attempted; the pooled re-anneal (seeds 1-5, 6 C held) FAILed its c185R judge gate (-1.225 vs -1.128); no glossed material on the four new leaves, so gloss-alignment instruments stay retired; next: tools/key_crossmatch.py against KEY-OFFICES.tsv for c.1570 French chancery keys, ~$2
+- c188L framing errors (err_2reader 0.181) - blocker: not-attempted; slope framing, tx/c188L_focus.tsv 8 rows; next: two fresh blind passes on the committed slope crops, then reconcile, ~$4
+- c187R slope check - blocker: not-attempted; c188L's report flags the same line slope on c187R; next: compare c187R level vs slope-following crops on 3 lines, ~$1
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 18 unkeyed occurrences; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+- spec stream - blocker: not-attempted; specs/clair1161-avis-flandre-1688.json still carries the 924-sign stream; next: lane updates the spec before the rule-7 re-derivation, ~$0.5
+
+## Escalation (NEAR3-C1POOL, 4 Oct 2026)
+- [x] siblings: c186L, c187L, c187R, c188L transcribed (2467 signs) and merged; held-out test of the old key PASSes on them (pooled -1.268 vs controls max -1.425 / p95 -1.581; cover 0.897 vs 0.863 / 0.816)
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.594, above shuffled-order anneals (max 0.312, 20 seeds) and fr16 windows (p95 0.335)
+- [ ] known-keys: no key on file matched yet; next: run tools/key_crossmatch.py against KEY-OFFICES.tsv for 1570 French chancery keys
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: gloss-alignment instruments retired for this block by rule 3 third-attempt clause: strict repair (READ2-C1161B), loose repair (NEAR3-C1LOOSE), interlinear_align.py (READ2-C1161 tool_shelf, control at chance); pooled re-anneal FAILed its own gate (NEAR3-C1POOL)
+- [ ] image-check: c188L framing and c187R slope unsettled, seven provisional new shapes; next: two fresh blind passes on c188L slope crops
+- [n/a] retry: pooled re-anneal ran five seeds; a sixth seed of the same recipe is not a different instrument
+Verdict: keep going: 5 internal gaps; cheapest next: spec stream update, ~$0.5
