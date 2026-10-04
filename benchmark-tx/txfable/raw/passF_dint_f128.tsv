@@ -1,0 +1,48 @@
+line	seg	order	gloss	signs	note
+L02	s2	1	CLEAR:et		
+L02	s2	2	ma	z v y a	a sits midway between ma and dict
+L02	s2	3	dict	p 3 L 3	gloss written d'ict; last sign a cursive 3/yogh shape, could be z
+L03	s1	1	auuers	II 4 a c y p w m	II and 4 sit left of the gloss start (about 30 px gap); m sits in the gap before bn; gloss could read anuers
+L03	s1	2	bn	0 a #	gloss abbreviated: b, two small dots, n (bien?)
+L03	s1	3	daffendre	1 . sq 0 0 f 3 c 1 .	gloss ff could be tt; the leading 1 . sits between bn and daffendre
+L03	s1	4	a	4	
+L03	s1	5	gehnes	9 . 1 . f 4 0 0' #	final gloss letter a long s with cross stroke (could be f), h could be u; the # sits at the gloss edge before deux
+L03	s1	6	deux	0 m sq z	
+L03	s1	7	mcliome	p 4 + L y f sq 3	gloss minims unclear (nicliome / milione?); the 3 lies in the gap between mcliome and dor
+L03	s1	8	dor	y w	gloss underlined
+L03	s2	9	despaigne	# 0 sq 0' v 1 9 4 0	gloss written d.ssp-aigie with flourish, vowel after d not clear; # 0 sit in the gap after dor
+L03	s2	10	CLEAR:Il		
+L03	s2	11	CLEAR:ha		
+L03	s2	12	CLEAR:laisse		accent over final e
+L03	s2	13	-	y #	no gloss directly above
+L03	s2	14	a	v .	trailing dot at line end
+L04	s1	1	bestinuoy	-:- 0 0' 4 f # y 4	gloss: b + looped letter then stinuo + yogh-like final (y/z); division sign at line start; last sign a cursive r-like 4
+L04	s1	2	quarante	a a v w 4 f v'	gloss letters after r unclear, could be read quardite; second a could be c
+L04	s1	3	onq	0 # 1	last gloss letter q or g
+L04	s1	4	+	f a	f sits between onq and the + mark
+L04	s1	5	|	z	
+L04	s1	6	malcty	m 4 0 v' sq	gloss letters after mal unclear (c-t-y / e-t-z)
+L04	s1	7	Jauoys	# T v w 9 1 . sq	gloss first letter J/Z-like, final yogh-like flourish; sq sits in the gap before qui
+L04	s1	8	qui	a m 1 #	a m sit between Jauoys and qui
+L04	s1	9	doibt	y x m 0 f	
+L04	s2	10	emel	m NEW:looped-h v c	first gloss letter c/e; first sign n-like with z-tail (two minims); second sign an h-like stroke with loop
+L04	s2	11	peultre	v L c # Z	Z: large looped z/eszett shape with a cross stroke, sits midway between peultre and dam
+L04	s2	12	dam	f sq m	gloss could be daun
+L04	s2	13	Hoin	w y x sq	gloss could be ttoin; w sits between dam and Hoin
+L04	s2	14	-	NEW:dash	horizontal stroke at line end, probably a filler
+L05	s1	1	Jours	1 Z m w	1 sits left of the gloss start; Z large looped z shape with cross stroke
+L05	s1	2	+	0'	
+L05	s1	3	+	0 v	a dot between the two + marks
+L05	s1	4	|	0'	
+L05	s1	5	prendre	w . 1 . f 3 c 0 4	p of prendre with abbreviation stroke; w sits under the | / prendre boundary; 4 sits between prendre and le
+L05	s1	6	le	1 . #	# sits between le and eschoz
+L05	s1	7	eschoz	T 1 z x f #	gloss first letter e/c, final yogh-like (z/y); the last # sits between eschoz and de
+L05	s1	8	de	1 . m	
+L05	s1	9	+	0 0' y	
+L05	s1	10	bessounapana	a f v 1 4 4 0 a a . 1 .	gloss possibly two words (bessou napana), p with crossed descender; first 4 is a triangle with a + written directly beneath it; second 4 cursive
+L05	s1	11	que	# 0 f v'	que with abbreviation stroke
+L05	s2	12	vne	# T 1	
+L05	s2	13	eguaue	m v a sq 3	gloss uncertain (eguane / eschaue)
+L05	s2	14	de	1 . 0'	
+L05	s2	15	sorte	# y c m 1 .	m plain, no z-tail seen, partly under an ink blot; final dot doubled (colon-like)
+L05	s2	16	CLEAR:Cmana		large C with loop, then minims; reading uncertain
