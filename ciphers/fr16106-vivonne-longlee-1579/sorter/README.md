@@ -22,7 +22,7 @@ How the piles were made (`build_inputs.py` docstring has the detail):
   (pass A vs pass B, `tools/reconcile_passes.py`); per-line blob vs column counts are in `fit.tsv` (within -13..+3).
   Pile `x` = both readers read x; `a/c` = A read a, B read c (pairs seen 4+ times; rarer splits in `split-rare`);
   `c+1r` = only one reader saw a sign there (4+ times; rarer in `one-reader`). A pile's family is reader A's label.
-- **Lines 30-33:** no reader row belongs to one of them alone, so their 171 tiles sit in `foot-unplaced`.
+- **Lines 30-33:** no reader row belongs to one of them alone, so their 177 tiles sit in `foot-unplaced`.
 - Tiles are **approximate**: a tile can be one or two positions off the column its label came from (touching signs,
   readers who took signs from neighbouring lines). Use the context view; a bad cut goes to BAD-CUT, not a pile.
 - `--auto-clusters 4` adds provisional shape clusters inside each pile (k-means on the tiles, no atlas yet).
