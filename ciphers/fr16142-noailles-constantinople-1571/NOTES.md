@@ -682,3 +682,58 @@ Verdict: keep going: 6 internal gaps; cheapest next: pre-registered confirmation
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## NOX-CONFIRM (4 Oct 2026)
+Account-3 worker for the account-3 orchestrator, 09:43-10:1x UTC; brief `.claude/briefs/runs/2026-10-04-acct3-nox-confirm.md`.
+Pre-registered in `sorter/owner-sort-2026-10-04/aln/PREREG-CONFIRM.md` (commit b4c42a98, 09:44 UTC, before any run). Script
+`aln/confirm.py` (imports `nox_aln.py` and `run2/nxaln/nxaln.py` unchanged); results `aln/results/confirm_*.json`,
+`confirm_summary.json`. Requests 0, subagents 0.
+
+**Verdict: FAIL (not confirmed as specific to k014->k077).** Arm 1 passes, Arm 2 fails.
+- Arm 1, fresh seeds (owner labels + k014->k077, nulls a/c 200, b 40 max): held-out acc 0.630 at every seed (the train
+  alignment is deterministic, so this is the rule-7 reproduction of NOX-ALN's 0.6298; only the nulls are re-drawn). Seed 20261005:
+  a p99 0.375, b max 0.407, c p99 0.396; 20261006: 0.376 / 0.404 / 0.399; 20261007: 0.378 / 0.404 / 0.394 -> locks on 3/3.
+- Arm 2, specificity (20 nearest single merges in place of k014->k077, nulls a/c 200, b 10 max): **8 of 20 lock on** (gate: at
+  most 1). Six of them clear 0.50: k014->k017 0.628, k017->k077 0.626, k014->k048 0.598, k014->k010 0.594, k014->k031 0.544,
+  k108->k077 0.528; two pass marginally: k109->k077 0.390, k014->k078 0.382. Seven pass a and c alone. The other 12 sit at
+  0.353-0.401, at their nulls.
+
+**What it means, in plain words.** The k014->k077 merge is not special: changing the inventory by one merge in several different
+ways, most of them involving k014 or k077, puts the aligner in the same state. All six high-scoring runs end their train path at
+letter 5,732-5,735, the same as the target, while the failing runs end around 6,100. So there is a stable alignment of c510-513
+against Dupuy 521 221R-226R that scores 0.53-0.63 on held-out c514-516 against nulls near 0.40. The search reaches it only when
+the inventory is perturbed near k014/k077. That supports NOX-ALN's reading that the earlier failures were a search failure, but it
+gives **no evidence that k014 and k077 are one sign**. This job licenses nothing beyond NOX-ALN: no position map and no
+candidate values are promoted, every value stays grade M, and no reading is claimed. Because the run FAILed, the brief's
+PASS-only listing (what the lock-on licenses, the position map) is not written.
+
+One-line suggestion (not done, outside the brief): pre-register a basin test. Do the six high-scoring runs learn the same key on the
+same piles (pairwise agreement of `decode(counts)` vs a matched null)? If they do, the basin is a real property of the stream, not
+of any one merge, and its common key is the thing to grade; ~$1.
+
+## Remaining gaps (NOX-CONFIRM, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner locks onto Dupuy 221R-226R on owner labels + k014->k077 (held-out 0.630, all nulls passed, exploratory); 0 open leaves decoded
+- Lock-on basin not characterised: NOX-CONFIRM found it is not specific to k014->k077 (8/20 nearest single merges also lock on, 6 at 0.53-0.63, same path end ~5,734) - blocker: not-attempted; next: pre-registered basin test (do the six locked runs learn one common key vs a matched null?), ~$1; and the owner's look at k014 vs k077 (and k017) on the page
+- Key from the locked-on alignment not extracted or graded - blocker: not-attempted; next: after the basin test, key_learned from `aln/results/full_pair_k014_k077_counts.tsv` vs key.tsv (Tomokiyo) agreement, then decode a leaf not aligned to Dupuy, ~$2
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; next: one native look per pair, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (NOX-CONFIRM, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [ ] basin test: do the locked-on runs share one key (pre-registered, vs matched null); planned step: `aln/confirm.py` results + a new PREREG
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; on owner labels + k014->k077 the alignment locks on (exploratory)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles (checked by NOX-OWNERSORT, re-aligned by NOX-ALN)
+- [x] retry: pre-registered confirmation of k014->k077 (NOX-CONFIRM): fresh seeds 3/3 lock on, specificity 8/20 alternatives also lock on -> FAIL as a specific merge
+Verdict: keep going: 6 internal gaps; cheapest next: pre-registered basin test of the locked-on runs, ~$1
+
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (NOX-CONFIRM):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

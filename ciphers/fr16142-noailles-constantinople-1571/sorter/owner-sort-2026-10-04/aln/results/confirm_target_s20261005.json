@@ -1,0 +1,32 @@
+{
+ "label": "confirm k014->k077 seed 20261005",
+ "n_train": 6218,
+ "n_held": 3682,
+ "n_letters": 9166,
+ "train_end_letter": 5733,
+ "held_letters": 3433,
+ "t_train_s": 9.5,
+ "acc": 0.6298,
+ "null_a": {
+  "n": 200,
+  "mean": 0.354,
+  "p99": 0.3751
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.3957,
+  "gate": 0.4071,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 200,
+  "mean": 0.384,
+  "p99": 0.3963
+ },
+ "gate_pass": true,
+ "extra": {
+  "k014": "k077"
+ },
+ "seed": 20261005,
+ "n_symbols": 115
+}

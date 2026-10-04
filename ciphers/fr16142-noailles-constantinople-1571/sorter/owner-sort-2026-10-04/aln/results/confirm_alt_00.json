@@ -1,0 +1,33 @@
+{
+ "label": "alt 0 k014->k078",
+ "n_train": 6218,
+ "n_held": 3682,
+ "n_letters": 9166,
+ "train_end_letter": 6115,
+ "held_letters": 3051,
+ "t_train_s": 10.8,
+ "acc": 0.3824,
+ "null_a": {
+  "n": 200,
+  "mean": 0.3677,
+  "p99": 0.3772
+ },
+ "null_b": {
+  "n": 10,
+  "mean": 0.3721,
+  "gate": 0.3762,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 200,
+  "mean": 0.3725,
+  "p99": 0.3824
+ },
+ "gate_pass": true,
+ "extra": {
+  "k014": "k078"
+ },
+ "seed": 20261004,
+ "n_symbols": 115,
+ "i": 0
+}
