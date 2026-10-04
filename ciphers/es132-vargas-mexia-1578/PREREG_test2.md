@@ -51,3 +51,19 @@ line with difflib on tokens. err_true not measurable (no benchmark item of this 
 Key-decoded tokens M; codes >= 38 / cursive word codes / unreadable U, except values attested C in this folder
 ([Bul] embaxador, [Dul] Escocia, [Val] hasta, [ho] consideracion by position) -- those are listed, still not H. No H.
 No novelty wording (rule 10).
+
+## Amendment 1 (N4-ES132, LANE-NEAR4, account 2, 4 Oct 2026, written ~04:23 UTC before any f.119v-upper or f.120r crop or decode)
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave1.md` job N4-ES132. Pages: f.119v upper (canvas 117 left, the 12-line paragraph
+above test 0's crop, page key `f119vU`, already in `test2.py` PAGES) and **f.120r** (canvas 117 right, two cipher paragraphs, about 10
+lines, before the clear dating line "De Madrid a xv de Octubre ..."; page key `f120r`, added to `test2.py` PAGES with lines L01-L29,
+no other change to test2.py). Statistic, nulls, seeds, gate (b), calibration rule (< 250 key letters -> f.90v prefix), err_2reader and
+grading: exactly as above, unchanged.
+Scope check: `cabinet_noir_map.tsv` row 119 `cn_read = no`; fresh depth-5 clone of el-descifrador/cabinet-noir 4 Oct 2026 ~04:20 UTC:
+last commit still 47b6db9 (2 Oct 2026), es132-vargas-mexia/ has no f119/f120 folder (only f113, f123 match the pattern).
+Overlap clause: f.120r's first paragraph follows the f.119v lower paragraph that Teulet prints (15 Oct 1578, test 0's known answer). If
+the decode shows that f.120r continues Teulet's printed paragraph, the overlapping lines are scored under (a) exactly as PREREG_test1.md
+(a) (S_a, key shuffles + wrong-Teulet windows, gate on blind passes) and excluded from (b); this worker does not read Teulet's text
+before the blind passes and the f.120r reconciliation are done, and any f.120r line found to be printed is reconciled only by A/B
+agreement, disagreements kept as pass A's token marked '?' (test 1's rule for f.90v's Teulet lines).
+Units: 2 blind Sonnet passes per page (crop paths only, never the key, Teulet or any reading) + 1 reconciliation by this worker = 3 units
+per page, ~USD 2.5 per page (test 2's rate); cap USD 6, box ends 05:27 UTC; f.120r is not started if it would cross 80% of either.

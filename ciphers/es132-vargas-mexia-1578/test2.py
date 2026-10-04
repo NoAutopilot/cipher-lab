@@ -28,6 +28,7 @@ PAGES = {
     'f89r': dict(lines=['L%02d' % i for i in range(1, 24)]),
     'f89v': dict(lines=['L%02d' % i for i in range(1, 41)]),
     'f119vU': dict(lines=['L%02d' % i for i in range(1, 30)]),
+    'f120r': dict(lines=['L%02d' % i for i in range(1, 30)]),  # amendment 1 (N4-ES132, 4 Oct 2026)
 }
 DROPPED = {'marks': 0, 'clear': 0}
 
