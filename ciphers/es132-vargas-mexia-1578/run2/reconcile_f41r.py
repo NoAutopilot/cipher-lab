@@ -17,7 +17,8 @@ import sys, re, difflib
 from pathlib import Path
 HERE = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(HERE))
 from test2 import load_pass
-A, B = load_pass(HERE / 'passes/f41r_passA.tsv'), load_pass(HERE / 'passes/f41r_passB.tsv')
+PAGE = sys.argv[sys.argv.index('--page') + 1] if '--page' in sys.argv else 'f41r'  # --page f41v (RUN3-ES41): same rules, same hand
+A, B = load_pass(HERE / f'passes/{PAGE}_passA.tsv'), load_pass(HERE / f'passes/{PAGE}_passB.tsv')
 q = lambda ts: [t if t.endswith('?') else t + '?' for t in ts]
 base = lambda t: re.sub(r'[@?].*$', '', t.rstrip('?'))
 marks = lambda t: ''.join(re.findall(r'@\w', t))
@@ -55,14 +56,16 @@ for ln in sorted(set(A) | set(B)):
                           ' '.join(t.rstrip('?') for t in b[j1:j2]) or '-'))
             r += q(a[i1:i2]); tally['default'] = tally.get('default', 0) + max(i2 - i1, j2 - j1)
     out.append(ln + '\t' + ' '.join(r))
-hdr = ['# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, right page, region 3500,1300,3150,3800), 30 bands = 30 lines.',
+HDR1 = {'f41r': '# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, right page, region 3500,1300,3150,3800), 30 bands = 30 lines.',
+        'f41v': '# BnF Espagnol 132 f.41v (Gallica btv1b10032556x canvas 39, left page, region 650,850,2700,4300, --centres), 31 bands = 31 lines.'}
+hdr = [HDR1[PAGE],
        '# Philip II to Juan de Vargas Mexia, Madrid, 29 April 1578 (Tomokiyo TOC no.21), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.',
-       '# Two blind Sonnet passes (passes/f41r_passA/B.tsv, notation run2/pass_prompt_f41r.md), normalised by test2.load_pass,',
+       f'# Two blind Sonnet passes (passes/{PAGE}_passA/B.tsv, notation run2/pass_prompt_{PAGE}.md), normalised by test2.load_pass,',
        '# reconciled by run2/reconcile_f41r.py (ES132-C3, 4 Oct 2026) by shape rules R1-R7. ? = not settled by eye. rules: ' +
        ' '.join(f'{k}={v}' for k, v in sorted(tally.items()))]
-(HERE / 'run2/f41r_units.tsv').write_text('line\tstart\tlen\tA\tB\n' + ''.join('\t'.join(map(str, u)) + '\n' for u in units),
+(HERE / f'run2/{PAGE}_units.tsv').write_text('line\tstart\tlen\tA\tB\n' + ''.join('\t'.join(map(str, u)) + '\n' for u in units),
                                          encoding='utf-8')
-(HERE / 'run2/f41r_firm.tsv').write_text('line\tidx\ttoken\n' + ''.join('\t'.join(map(str, f)) + '\n' for f in firm), encoding='utf-8')
-(HERE / 'ciphertext_f41r_pre.tsv').write_text('\n'.join(hdr + out) + '\n', encoding='utf-8')
+(HERE / f'run2/{PAGE}_firm.tsv').write_text('line\tidx\ttoken\n' + ''.join('\t'.join(map(str, f)) + '\n' for f in firm), encoding='utf-8')
+(HERE / (f'ciphertext_{PAGE}_pre.tsv' if PAGE == 'f41r' else f'ciphertext_{PAGE}.tsv')).write_text('\n'.join(hdr + out) + '\n', encoding='utf-8')
 print(len(out), 'lines;', sum(len(l.split('\t')[1].split()) for l in out), 'tokens;',
       sum(t.endswith('?') for l in out for t in l.split('\t')[1].split()), 'flagged ?;', tally)
