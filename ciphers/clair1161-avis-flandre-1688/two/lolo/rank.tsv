@@ -1,0 +1,25 @@
+norm	key	L4	cover	J	free32_differ_from_key.tsv	apd
+none	key.tsv	-2.79629	0.91793	2.26080	0	a=u p=c d=n
+none	key.tsv+apd=e	-3.03182	0.86133	1.71349	3	a=e p=e d=e
+none	ctl_s1	-2.68627	0.97511	2.68588	23	a=u p=i d=n
+none	ctl_s2	-2.63351	0.99022	2.82188	30	a=i p=i d=i
+none	ctl_s3	-2.63172	0.99022	2.82367	30	a=i p=i d=i
+none	ctl_s4	-2.70833	0.98193	2.70136	24	a=u p=i d=n
+none	ctl_s5	-2.63325	0.99022	2.82214	30	a=i p=i d=i
+none	ctl_s6	-2.70833	0.98193	2.70136	24	a=u p=i d=n
+none	ctl_s7	-2.63172	0.99022	2.82367	30	a=i p=i d=i
+none	ctl_s8	-2.70833	0.98193	2.70136	24	a=u p=i d=n
+none	ctl_s9	-2.70833	0.98193	2.70136	24	a=u p=i d=n
+none	ctl_s10	-2.63172	0.99022	2.82367	30	a=i p=i d=i
+nc2	key.tsv	6.71039	0.91793	11.73852	0	a=u p=c d=n
+nc2	key.tsv+apd=e	5.18283	0.86133	9.90097	3	a=e p=e d=e
+nc2	ctl_s1	8.30197	0.84089	12.90812	25	a=c p=d d=n
+nc2	ctl_s2	8.18967	0.82963	12.73414	27	a=u p=c d=t
+nc2	ctl_s3	8.12748	0.82963	12.67195	27	a=t p=m d=x
+nc2	ctl_s4	8.08570	0.79348	12.43216	24	a=u p=c d=n
+nc2	ctl_s5	8.05742	0.78993	12.38441	31	a=s p=m d=t
+nc2	ctl_s6	8.35565	0.87526	13.15006	23	a=u p=c d=u
+nc2	ctl_s7	8.13498	0.83467	12.70704	23	a=n p=m d=s
+nc2	ctl_s8	8.20529	0.82815	12.74165	25	a=d p=c d=s
+nc2	ctl_s9	8.08065	0.82578	12.60402	30	a=b p=d d=t
+nc2	ctl_s10	8.34161	0.81422	12.80169	25	a=u p=s d=u
