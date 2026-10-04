@@ -384,21 +384,59 @@ no network. R5005 digits are Bourdeau's transcription (dbourdeau/cyphersolver, M
   advance; no third tuning of the objective), not a negative about the cipher. Files: `anneal_control_v1.json`,
   `anneal_control.json`, HYPOTHESES.md rows GAPS202 a/b.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026)
-Read so far: 1,643 digits transcribed (R5006 whole, 692; R5007 whole cipher body, 951 = 603 left + 348 right, GAPS190/196) of about 2,500-3,000 on R5006-R5008; R5007 p.1 holds no cipher (GAPS190); 0 tokens read
-- R5008 p.1-2 transcription - blocker: not-attempted; scans reachable through DECODE (GAPS173/175/179/190/196); next: check each R5008 page for cipher on an overview first (R5007 p.1 had none), then one cipher page per worker as GAPS190/196 (1 login, iiif_lines crops, 2 blind Opus passes per half-page + 1 reconcile), ~$4-6 a page, about $10 for R5008
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); the letter-4-gram syllabary annealer is retired at this N (GAPS202: matched control 0.032 then 0.000 token accuracy vs gate 0.60, both times the annealer out-scored the control's own true key, target not run); next: a different instrument -- a crib-anchored search on R5008's known sentence frame (Bourdeau, What would move it item 3) once R5008 is transcribed, or a word-segmentation objective with its own control first, ~$3; rerun `crib_test.py` on R5008 once transcribed
+## GAPS208-zeschau-seebach-1841 (4 Oct 2026, account-1 worker for account 4, STALE4)
+
+Step run: the Remaining-gaps line "R5008 p.1-2 transcription": overview of every R5008 page, then transcription. The whole
+R5008 cipher turned out to be 5 lines, so the job transcribed all of it as one unit (the size of GAPS196's).
+
+- Image: one DECODE browser login (`tools/decode_browser_login.js 5008 <scratch> --guess-fullsize --delay 2000`, 4 Oct 2026
+  02:05 UTC). DECODE carries 2 images for R5008: `IMG_R5008_I28871_P1.jpg` sha1 86e6105b60fe and `IMG_R5008_I28871_P2.jpg`
+  sha1 17a51f08bf33, both 7214x5412, both matching the GAPS173 table. Scans and crops stay in the session scratchpad,
+  out of git; nothing image-derived is committed by this job.
+- Overview (2 vision calls, 20% downscales). **P1** (one page): "No. 17", "Dresden, am 26. October 1843", a docket "f 22 Oct /
+  4 Nbr" (not read further), the salutation, about 12 lines of clear German, then **2 cipher lines** at the foot; red
+  archival note bottom left. **P2** (spread): the **left page** opens with **3 cipher lines**, the third running into clear
+  German ("habe ich die Ehre ..."), then the closing, Zeschau's signature, "Nachschrift" and the address to Seebach at
+  St Petersburg; the **right page** is a clear-text P.S. ("N.S.", "Ut in literis", signature) with **no cipher**. So
+  R5008 holds 5 cipher lines in all, as Bourdeau's target table says; DECODE's "3 pages" is P1 + the P2 spread.
+- Crops (scratchpad): `tools/iiif_lines.py --image <scratch>/IMG_R5008_I28871_P1.jpg --region 2850,3480,2000,420 --prefix
+  r5008p1 --debug` gave 2 lines, pitch 235; `--image <scratch>/IMG_R5008_I28871_P2.jpg --region 1700,1460,2000,720 --prefix
+  r5008p2l --debug` gave 3 lines, pitch 237. Both overlays checked in one combined vision call.
+- Two blind Opus subagent passes over the 5 crops (2 calls): A read whole lines by eye, B cut overlapping thirds at 2x and
+  joined them; neither saw the other's folder. `tools/reconcile_passes.py passA passB --split-chars`: **agreement 260/260 =
+  100.0%** (err_2reader 0.0%), 0 disagreements. 5 digits were flagged M by one pass only; one zoom montage (1 vision call)
+  kept the agreed digit each time, and all 5 stay M: P1 L01 pos 13 `4` (alt 9), pos 31 `1` (alt 7, under the brown stain),
+  pos 32 `6` (alt 0, stain), P1 L02 pos 50 `8` (alt 3, open top), P2l L01 pos 44 `1` (alt 7). err_true is not measurable
+  (no BENCHMARK-TX item for this hand); two-reader agreement is not accuracy.
+- Result: **260 digits**, lines 58/55/54/54/39, **H 255 / M 5**, in `transcription/r5008_ciphertext.txt` and `.tsv` (same
+  columns as R5006/R5007). P1 holds 113 digits (odd), so if the cipher runs in pairs one pair crosses to P2; not checked,
+  no pairing committed. Raw passes and agreement in `transcription/passes/r5008_*`.
+- Pencil: the 3 P2-left lines carry small pencil ticks above the digits (none on P1, which has only large faint pencil
+  loops). Pass A logged 42, pass B 41; positions agree within one digit for every tick (exact 13/19, 5/16, 5/7 by line),
+  in `transcription/passes/r5008_pass{A,B}_ticks.tsv`. One mark (L02 after about pos 20) is shaped like a small "2"/"r".
+  Graded M at most and not interpreted: they may be a reader's segmentation marks, which is a question for the key-rebuild
+  step, not this one.
+- No reading, no crib test, 0 tokens graded beyond the digits themselves.
+
+Requests: de-crypt.org 1 login + 1 RecordsView + 2 thumbnails + 2 full-size = about 6, 2 s apart. No other host.
+Vision: 4 by this session (2 overviews, overlay, uncertain montage) plus 2 Opus subagent passes.
+Suggestion (not done, rule 7 of Workers): rerun `crib_test.py` with an `r5008` target (R5008 is German, 260 digits, so
+power must be re-checked at this N first), and read the P2-left ticks against the pair phase.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026)
+Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); the letter-4-gram syllabary annealer is retired at this N (GAPS202: matched control 0.032 then 0.000 token accuracy vs gate 0.60, both times the annealer out-scored the control's own true key, target not run); next: a different instrument -- a crib-anchored search on R5008's known sentence frame (Bourdeau, What would move it item 3; R5008 now transcribed, GAPS208, and its P2-left pencil ticks logged), or a word-segmentation objective with its own control first, ~$3; rerun `crib_test.py` on R5008 (power check at N=260 first), ~$1
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
-- [ ] siblings: R5005 is on disk (Bourdeau), R5006 done (GAPS175/179), R5007 whole cipher body done (GAPS190 left, GAPS196 right, 951 digits); R5008 still to transcribe, one page per worker
+- [x] siblings: R5005 is on disk (Bourdeau), R5006 done (GAPS175/179), R5007 whole cipher body done (GAPS190/196, 951 digits), R5008 whole cipher done (GAPS208, 260 digits, 2-reader agreement 100%)
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; the letter-4-gram annealer failed its matched control twice (GAPS202, 0.032 / 0.000 vs gate 0.60, retired for that instrument); next a different instrument: crib-anchored search on R5008's sentence frame after R5008 is transcribed
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; the letter-4-gram annealer failed its matched control twice (GAPS202, 0.032 / 0.000 vs gate 0.60, retired for that instrument); next a different instrument: crib-anchored search on R5008's sentence frame (R5008 transcribed, GAPS208)
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps (GAPS202's 4-gram syllabary annealer failed its matched control twice, 0.032 then 0.000 vs gate 0.60, target not run -- a non-test, not a negative); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: transcribe R5008 (overview first, then one cipher page per worker), ~$10, which also feeds the crib-anchored key search on its known sentence frame
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram syllabary annealer failed its matched control twice, 0.032 then 0.000 vs gate 0.60, target not run -- a non-test, not a negative); all R5006-R5008 cipher now transcribed (1,903 digits, GAPS208 closed R5008); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: rerun crib_test.py on R5008 (~$1), then the crib-anchored key search on R5008's sentence frame with its own control first, ~$3
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 
