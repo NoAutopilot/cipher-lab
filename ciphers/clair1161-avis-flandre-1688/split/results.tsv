@@ -1,0 +1,14 @@
+utc	run	seed	K	anneal_score	gloss_match	c185R_judge	time	note
+2026-10-04 01:20	merged	1	49	-2281.4	0.5941	-1.155	55s	-
+2026-10-04 01:21	qls	1	50	-2360.7	0.3059	-1.217	55s	9 moved
+2026-10-04 01:22	S	1	50	-2278.6	0.5824	-1.143	56s	7 moved
+2026-10-04 01:23	placebo-qls1	1	50	-2396.8	0.2471	-1.222	55s	sign w: 9 of 19 c185R occurrences -> w_P
+2026-10-04 01:24	placebo-qls2	2	50	-2380.7	0.1647	-1.215	53s	sign o: 9 of 19 c185R occurrences -> o_P
+2026-10-04 01:25	placebo-qls3	3	50	-2329.9	0.4353	-1.157	55s	sign e: 9 of 16 c185R occurrences -> e_P
+2026-10-04 01:26	placebo-qls4	4	50	-2272.2	0.5824	-1.157	55s	sign 9: 9 of 16 c185R occurrences -> 9_P
+2026-10-04 01:26	placebo-qls5	5	50	-2330.4	0.2588	-1.169	54s	sign p: 9 of 25 c185R occurrences -> p_P
+2026-10-04 01:27	placebo-S1	1	50	-2343.8	0.1118	-1.186	53s	sign +: 7 of 18 c186R occurrences -> +_P
+2026-10-04 01:28	placebo-S2	2	50	-2314.9	0.3176	-1.2	55s	sign 7: 7 of 14 c186R occurrences -> 7_P
+2026-10-04 01:29	placebo-S3	3	50	-2368.1	0.2000	-1.186	53s	sign 4: 7 of 12 c186R occurrences -> 4_P
+2026-10-04 01:30	placebo-S4	4	50	-2322.6	0.1765	-1.228	54s	sign th: 7 of 12 c186R occurrences -> th_P
+2026-10-04 01:31	placebo-S5	5	50	-2324.3	0.2706	-1.183	54s	sign qb: 7 of 14 c186R occurrences -> qb_P
