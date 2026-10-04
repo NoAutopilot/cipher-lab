@@ -8128,3 +8128,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 08:46 | RUN3-COST (account-1 worker) | claim: costabili-modena-1491 Ulaszlo-series (Fraknoi/Nyary) + Vestigia print-check, cap USD 2.5, box 45 min
 2026-10-04 08:47 | worker RUN3-C1161R7 | claim: clair1161-avis-flandre-1688 rule-7 fresh re-derivation (LANE-RUN3)
 2026-10-04 08:47 | RUN3-ECK62 worker (acct1 LANE-RUN3) | claim eckert-1862: possessive option + collision guard in shared decode, re-run ec18.py, book assignment if cap allows
+2026-10-04 08:47 | LANE-RUN3 RUN3-RJM (account-1 worker) | claim: rah-juan-manuel-1521 CSP Spain II date map (BHO pp.384-470), cap USD 2, box 40 min
