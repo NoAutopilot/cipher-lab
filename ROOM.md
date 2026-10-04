@@ -8229,3 +8229,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 11:15 | LANE-RUN4 RUN4-ES50 (account-1 worker) | claim: es132-vargas-mexia-1578 f.50r/f.51r (rest of the June 1578 letter) + f.90v control, cap USD 6, box 110 min (11:1x UTC start)
 2026-10-04 11:15 | LANE-RUN4 RUN4-RAPPLY (account-1 worker) | claim: apply RETRO-2026-10-04-acct1 P1 (tool part), P2, P3, P5; cap USD 4, box 50 min
 2026-10-04 11:15 | LANE-RUN4 RUN4-RAA (account-1 worker) | claim: na-raad-azie-1800 thumbnail sweep NA 2.01.27.03 invnr 207+144 (167 leaves); NA hosts only; cap USD 2.5, box 11:16-12:06 UTC
+2026-10-04 11:16 | LANE-RUN4 RUN4-MANT3 (account-1 worker) | claim: sachsstaatsarchiv-manteuffel-1712 clear-vs-cipher diff of 0500/0502 vs f.409r/f.410 (PREREG-MANT3); cap USD 3, box 11:17-12:02 UTC
