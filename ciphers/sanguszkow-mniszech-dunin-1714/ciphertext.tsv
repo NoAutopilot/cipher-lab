@@ -1,0 +1,255 @@
+line	pos	sign	conf	alt	why
+p1_L01	1	110	H		both readers H
+p1_L01	2	36	H	30	agreed, reader conf A:M/B:M; reconciled from the image (alt 30 rejected)
+p1_L01	3	31	H		both readers H
+p1_L01	4	157	H		both readers H
+p1_L01	5	31	H		both readers H
+p1_L01	6	33	H		both readers H
+p1_L01	7	81	H		both readers H
+p1_L01	8	15	H		both readers H
+p1_L01	9	20	H		both readers H
+p1_L01	10	125	H		both readers H
+p1_L01	11	38	H		both readers H
+p1_L01	12	97	H		both readers H
+p1_L01	13	79	H	19	agreed, reader conf A:M/B:M; reconciled from the image (alt 19 rejected)
+p1_L01	14	15	H		both readers H
+p1_L01	15	20	H		both readers H
+p1_L01	16	128	H		both readers H
+p1_L01	17	42	H		both readers H
+p1_L01	18	17	H		both readers H
+p1_L01	19	15	H		both readers H
+p1_L01	20	130	H		both readers H
+p1_L02	1	107	H		both readers H
+p1_L02	2	101	H		both readers H
+p1_L02	3	22	H		both readers H
+p1_L02	4	118	H		both readers H
+p1_L02	5	82	H		both readers H
+p1_L02	6	36	H	30	agreed, reader conf A:M/B:M; reconciled from the image (alt 30 rejected)
+p1_L02	7	31	H		both readers H
+p1_L02	8	81	H		both readers H
+p1_L02	9	17	H		both readers H
+p1_L02	10	68	H		both readers H
+p1_L02	11	[PLAIN:Spraktykowały]	M	A:spraktykowaty/B:sprahtykowady	clear word; reconciler's reading from the image, readers' spellings in alt
+p1_L02	12	87	H		both readers H
+p1_L02	13	97	H		both readers H
+p1_L02	14	135	H		both readers H
+p1_L02	15	38	H		both readers H
+p1_L03	1	35	H		both readers H
+p1_L03	2	15	H		both readers H
+p1_L03	3	20	H		both readers H
+p1_L03	4	141	H		both readers H
+p1_L03	5	94	H		both readers H
+p1_L03	6	130	H		both readers H
+p1_L03	7	25	H	23	agreed, reader conf A:M/B:H; reconciled from the image (alt 23 rejected)
+p1_L03	8	153	H		both readers H
+p1_L03	9	110	H		both readers H
+p1_L03	10	109	H		both readers H
+p1_L03	11	127	H		both readers H
+p1_L03	12	30	M	36	reconciler from the image, two-line crop images/p1_L03_pos12_tall.jpg: the stroke above the digit is the descender loop of the 'y' in the clear word of the line above (p1_L02 Spraktykowaly), continuous with it; the digit itself is a closed oval like the 30 at p1_L05 pos 6. Both blind readers read 36 (A:M, B:H); Bourdeau reads 30. Graded M.
+p1_L03	13	31	H		both readers H
+p1_L03	14	39	H		both readers H
+p1_L03	15	85	H		both readers H
+p1_L03	16	15	H		both readers H
+p1_L03	17	20	H		both readers H
+p1_L03	18	135	H		both readers H
+p1_L03	19	[PLAIN:pretex]	H		clear word, both readers
+p1_L04	1	[PLAIN:tu]	H		clear word, both readers
+p1_L04	2	[PLAIN:consilij]	H		clear word, both readers
+p1_L04	3	27	H		both readers H
+p1_L04	4	16	H		both readers H
+p1_L04	5	124	H		both readers H
+p1_L04	6	31	H		both readers H
+p1_L04	7	81	H		both readers H
+p1_L04	8	15	H		both readers H
+p1_L04	9	20	H		both readers H
+p1_L04	10	12	H		both readers H
+p1_L04	11	19	H		both readers H
+p1_L04	12	19	H		both readers H
+p1_L04	13	118	H		both readers H
+p1_L04	14	141	H		both readers H
+p1_L04	15	52	H		both readers H
+p1_L04	16	21	H		both readers H
+p1_L04	17	12	H		both readers H
+p1_L04	18	133	H		both readers H
+p1_L04	19	153	H		both readers H
+p1_L04	20	46	H	40	agreed, reader conf A:H/B:M; reconciled from the image (alt 40 rejected)
+p1_L05	1	39	H		both readers H
+p1_L05	2	135	H		both readers H
+p1_L05	3	15	H		both readers H
+p1_L05	4	20	H		both readers H
+p1_L05	5	28	H		both readers H
+p1_L05	6	30	H	36	agreed, reader conf A:H/B:M; reconciled from the image (alt 36 rejected)
+p1_L05	7	157	H		both readers H
+p1_L05	8	31	H		both readers H
+p1_L05	9	39	H		both readers H
+p1_L05	10	94	H		both readers H
+p1_L05	11	15	H		both readers H
+p1_L05	12	20	H		both readers H
+p1_L05	13	[PLAIN:congressow]	H		clear word, both readers
+p1_L05	14	36	H	30	agreed, reader conf A:M/B:H; reconciled from the image (alt 30 rejected)
+p1_L05	15	31	H		both readers H
+p1_L05	16	157	H		both readers H
+p1_L05	17	31	H		both readers H
+p1_L05	18	33	H		both readers H
+p1_L05	19	81	H		both readers H
+p1_L06	1	15	H		both readers H
+p1_L06	2	20	H		both readers H
+p1_L06	3	[PLAIN:generaliter]	H		clear word, both readers
+p1_L06	4	144	H		both readers H
+p1_L06	5	76	H	70	agreed, reader conf A:M/B:M; reconciled from the image (alt 70 rejected)
+p1_L06	6	144	H		both readers H
+p1_L06	7	16	H		both readers H
+p1_L06	8	39	H		both readers H
+p1_L06	9	33	H		both readers H
+p1_L06	10	36	H	30	agreed, reader conf A:M/B:H; reconciled from the image (alt 30 rejected)
+p1_L06	11	[PLAIN:unanimi]	H		clear word, both readers
+p1_L06	12	[PLAIN:voto]	H		clear word, both readers
+p1_L06	13	146	H		both readers H
+p1_L06	14	31	H		both readers H
+p1_L06	15	24	H		both readers H
+p1_L07	1	104	H		both readers H
+p1_L07	2	110	H		both readers H
+p1_L07	3	31	H		both readers H
+p1_L07	4	92	H		both readers H
+p1_L07	5	36	H	30	agreed, reader conf A:M/B:H; reconciled from the image (alt 30 rejected)
+p1_L07	6	56	H		both readers H
+p1_L07	7	107	H		both readers H
+p1_L07	8	101	H		both readers H
+p1_L07	9	22	H		both readers H
+p1_L07	10	118	H		both readers H
+p1_L07	11	82	H		both readers H
+p1_L07	12	36	H	30	agreed, reader conf A:M/B:H; reconciled from the image (alt 30 rejected)
+p1_L07	13	31	H		both readers H
+p1_L07	14	81	H		both readers H
+p1_L07	15	17	H		both readers H
+p1_L07	16	68	H		both readers H
+p1_L07	17	35	H		both readers H
+p1_L07	18	33	H		both readers H
+p1_L07	19	128	H		both readers H
+p1_L07	20	15	H		both readers H
+p1_L08	1	51	H		both readers H
+p1_L08	2	30	H		both readers H
+p1_L08	3	118	H		both readers H
+p1_L08	4	33	H		both readers H
+p1_L08	5	27	H	22	agreed, reader conf A:H/B:M; reconciled from the image (alt 22 rejected)
+p1_L08	6	28	H		both readers H
+p1_L08	7	28	H		both readers H
+p1_L08	8	119	H		both readers H
+p1_L08	9	31	H		both readers H
+p1_L08	10	125	H		both readers H
+p1_L08	11	107	H		both readers H
+p1_L08	12	33	H		both readers H
+p1_L08	13	120	H		both readers H
+p1_L08	14	17	H		both readers H
+p1_L08	15	[PLAIN:et]	H		clear word, both readers
+p1_L08	16	54	H		both readers H
+p1_L08	17	60	H	66	agreed, reader conf A:M/B:M; reconciled from the image (alt 66 rejected)
+p1_L08	18	26	H		both readers H
+p1_L08	19	53	H		both readers H
+p1_L08	20	33	H		both readers H
+p1_L09	1	12	H		both readers H
+p1_L09	2	30	H		both readers H
+p1_L09	3	95	H		both readers H
+p1_L09	4	131	H		both readers H
+p1_L09	5	102	H		both readers H
+p1_L09	6	26	H		both readers H
+p1_L09	7	31	H		both readers H
+p1_L09	8	[PLAIN:Rempublicam]	H		clear word, both readers
+p1_L09	9	29	H		both readers H
+p1_L09	10	139	H		both readers H
+p1_L09	11	61	H	81	agreed, reader conf A:M/B:H; reconciled from the image (alt 81 rejected)
+p1_L09	12	102	H		both readers H
+p1_L09	13	[PLAIN:czyni]	M		clear word, both readers
+p1_L09	14	107	H		both readers H
+p1_L09	15	26	H		both readers H
+p1_L10	1	22	H		both readers H
+p1_L10	2	118	H		both readers H
+p1_L10	3	82	H		both readers H
+p1_L10	4	36	H	30	agreed, reader conf A:M/B:M; reconciled from the image (alt 30 rejected)
+p1_L10	5	31	H		both readers H
+p1_L10	6	81	H		both readers H
+p1_L10	7	39	H		both readers H
+p1_L10	8	65	H		both readers H
+p1_L10	9	16	H		both readers H
+p1_L10	10	104	H		both readers H
+p1_L10	11	15	H		both readers H
+p1_L10	12	[PLAIN:niemogę]	M	A:niemozy/B:niemoze	clear word; reconciler's reading from the image, readers' spellings in alt
+p1_L10	13	12	H		both readers H
+p1_L10	14	86	H		both readers H
+p1_L10	15	133	H		both readers H
+p1_L10	16	39	H		both readers H
+p1_L10	17	65	H		both readers H
+p1_L10	18	42	H		both readers H
+p1_L10	19	102	H		both readers H
+p1_L11	1	134	H		both readers H
+p1_L11	2	76	H	70	agreed, reader conf A:M/B:M; reconciled from the image (alt 70 rejected)
+p1_L11	3	68	H		both readers H
+p1_L11	4	[PLAIN:Consilij]	H		clear word, both readers
+p1_L11	5	28	H		both readers H
+p1_L11	6	120	H		both readers H
+p1_L11	7	136	H		both readers H
+p1_L11	8	132	H		both readers H
+p1_L11	9	146	H		both readers H
+p1_L11	10	31	H		both readers H
+p1_L11	11	39	H		both readers H
+p1_L11	12	92	H		both readers H
+p1_L11	13	[PLAIN:iest]	H		clear word, both readers
+p1_L11	14	[PLAIN:plus]	H		clear word, both readers
+p1_L11	15	[PLAIN:qm]	M	A:gm/B:yu	clear word; reconciler's reading from the image, readers' spellings in alt
+p3l_L01	1	152	H		both readers H
+p3l_L01	2	66	H	60	agreed, reader conf A:M/B:M; reconciled from the image (alt 60 rejected)
+p3l_L01	3	26	H	20	agreed, reader conf A:H/B:M; reconciled from the image (alt 20 rejected)
+p3l_L01	4	31	H		both readers H
+p3l_L01	5	49	H		both readers H
+p3l_L01	6	94	H		both readers H
+p3l_L01	7	31	H		both readers H
+p3l_L01	8	76	H	70	agreed, reader conf A:H/B:M; reconciled from the image (alt 70 rejected)
+p3l_L01	9	38	H		both readers H
+p3l_L01	10	39	H		both readers H
+p3l_L01	11	107	H		both readers H
+p3l_L01	12	102	H		both readers H
+p3l_L01	13	25	H		both readers H
+p3l_L01	14	144	H		both readers H
+p3l_L01	15	76	H	70	agreed, reader conf A:H/B:M; reconciled from the image (alt 70 rejected)
+p3l_L01	16	144	H		both readers H
+p3l_L01	17	56	H		both readers H
+p3l_L02	1	81	H		both readers H
+p3l_L02	2	77	H		both readers H
+p3l_L02	3	36	H	30	agreed by both readers (A:H/B:M); reconciler from the two-line crop images/p3l_L02_pos3_tall.jpg: the tail rises from the oval's top right exactly as the 6s of p3l_L01 '66.26' above, nothing descends from the line above. Bourdeau reads 30 (his transcription, third reader, not ground truth).
+p3l_L02	4	31	H		both readers H
+p3l_L02	5	81	H		both readers H
+p3l_L02	6	25	H		both readers H
+p3l_L02	7	[PLAIN:correspondencye]	M		clear word, both readers
+p3l_L02	8	12	H		both readers H
+p3l_L02	9	110	H		both readers H
+p3l_L02	10	56	H		both readers H
+p3l_L02	11	14	H		both readers H
+p3l_L02	12	26	H	20	agreed, reader conf A:H/B:M; reconciled from the image (alt 20 rejected)
+p3l_L02	13	27	H		both readers H
+p3l_L02	14	17	H		both readers H
+p3l_L02	15	33	H		both readers H
+p3l_L03	1	50	H		both readers H
+p3l_L03	2	26	H	20	agreed, reader conf A:H/B:M; reconciled from the image (alt 20 rejected)
+p3l_L03	3	105	H	103	agreed, reader conf A:M/B:H; reconciled from the image (alt 103 rejected)
+p3l_L03	4	42	H		both readers H
+p3l_L03	5	12	H		both readers H
+p3l_L03	6	87	H	81	agreed, reader conf A:M/B:M; reconciled from the image (alt 81 rejected)
+p3l_L03	7	12	H		both readers H
+p3l_L03	8	76	H		both readers H
+p3l_L03	9	58	H	38	agreed, reader conf A:M/B:H; reconciled from the image (alt 38 rejected)
+p3l_L03	10	101	H		both readers H
+p3l_L03	11	15	H	13	agreed, reader conf A:M/B:M; reconciled from the image (alt 13 rejected)
+p3l_L03	12	39	H		both readers H
+p3l_L03	13	81	H		both readers H
+p3l_L03	14	39	H		both readers H
+p3l_L03	15	76	H		both readers H
+p3l_L03	16	58	H	38	agreed, reader conf A:M/B:H; reconciled from the image (alt 38 rejected)
+p3l_L03	17	101	H		both readers H
+p3l_L03	18	22	H		both readers H
+p3l_L03	19	76	H		both readers H
+p3l_L03	20	25	H		both readers H
+p3l_L04	1	[PLAIN:tractantur]	H		clear word, both readers
+p3l_L04	2	[PLAIN:Przesyłam]	M	A:Dnesity/B:Inesty	clear word; reconciler's reading from the image, readers' spellings in alt
+p3l_L04	3	[PLAIN:posty]	M	A:posity/B:posty	clear word; reconciler's reading from the image, readers' spellings in alt
+p3l_L04	4	[PLAIN:doniosłym]	M	A:doniosłym/B:doniosłem	clear word; reconciler's reading from the image, readers' spellings in alt
+p3l_L04	5	[PLAIN:WMM]	L	A:WMM/B:WMMci	clear word; reconciler's reading from the image, readers' spellings in alt

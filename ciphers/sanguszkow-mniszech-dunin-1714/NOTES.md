@@ -231,36 +231,104 @@ reports. No Polish or Saxon documentary edition prints a Mniszech-to-Dunin lette
 **Not found.**
 Result: no find; the item stays calibration-free and `open`; a solver may be briefed (intake gate output at the end).
 
-## Next step (costed, refreshed 4 Oct 2026)
+## Transcription of R7524 (A3V2-SANGTX, 4 Oct 2026, 05:39-05:5x UTC)
 
-Crop transcription of P1 and P3-left per TRANSCRIPTION.md (two blind passes + one reconciliation, 5 vision calls, cap
-USD 7, box 60 min; A3V2-SANG's section above), with Bourdeau's `r7524-cipher.txt` (CC BY 4.0, cited) as a third,
-independent reader for the disagreement list -- never as a pass of ours. Then `tools/design_prior.py`, a spec
-(`specs/sanguszkow-mniszech-dunin-1714.json`, Polish corpus check: tools/data has no 18th-century Polish corpus, so
-building one is the V6-PTCORP shape, about 12 min) and a homophonic family run with a control matched on 232 tokens
-and 77 signs (rule 3; Bourdeau's own control at this N read 21.1%, so expect a CONTROL BELOW GATE and plan the pooled
-or crib-assisted variant before spending).
+**Result: `ciphertext.tsv`, 232 cipher tokens on 14 lines (P1 11 lines, P3-left 3 lines), 77 distinct signs, numerals
+12-157, 49 two-digit and 28 three-digit signs, 30 hapaxes; 22 clear-word tokens carried as `[PLAIN:...]`. Nothing is
+read: this is a transcription, H 0 C 0 S 0 M 0 I 0 as a reading.** Status stays `open`.
+
+Method (TRANSCRIPTION.md, LLM line reading as the fallback for a numeral cipher). Images: one DECODE browser login
+(`decode_browser_login.js 7524 <scratch> --guess-fullsize --max-files 8 --delay 1800`, 05:40 UTC, `loggedIn: true`, 7
+requests to de-crypt.org: record page, 3 thumbnails, 3 full-size), the three full-size JPEGs byte-identical to A3V2-SANG's
+(same sha256, table above); scratchpad only, not committed. Container: `certutil` absent again (third container in one
+morning); `libnss3-tools` installed and the proxy CA added before the login. Crop step, pasted:
+`python3 tools/iiif_lines.py --image <P1> --region 170,1560,2050,1340 --prefix p1 --out ciphers/sanguszkow-mniszech-dunin-1714/images --debug`
+-> "11 lines, 11 bands x 1 segments; pitch 112 distance 78 prominence 118.0; centres 60 167 276 396 513 628 740 849 959 1066 1179";
+`... --image <P3> --region 360,870,1780,480 --prefix p3l ...` -> "4 lines ... pitch 121 ... centres 72 186 303 427". Overlays
+(`images/p1_lines_debug.jpg`, `images/p3l_lines_debug.jpg`) checked: every band edge falls in whitespace, no line split or
+merged; a first P1 cut at width 1960 clipped the last group of lines 4 and 6 and was re-cut at 2050 (under the 2500 px limit).
+The 12th P1 line is the lone clear word "actum" at the right margin (not cut; clear). Crops: 15 line images, 1.2 MB, committed
+with manifest.json entries (folder 1.6 MB, far under 30 MB).
+
+Passes: four Opus 5.5 subagent calls, one page per call, crops only (`passes/INSTRUCTIONS.md`; no access to the other pass,
+to Bourdeau's file or to this folder), long format with H/M/L and an `alt` column: `passes/p1_A.tsv`, `p1_B.tsv` (197 rows
+each), `p3l_A.tsv`, `p3l_B.tsv` (57 rows each). `tools/reconcile_passes.py` per page (`reconcile/p1_*.tsv`, `p3l_*.tsv`):
+
+| page | signs A | signs B | agree | disagreement columns | agreed-H | agreed-uncertain (M/L in either pass) | err_2reader |
+|---|---|---|---|---|---|---|---|
+| P1 (11 lines) | 181 | 181 | 181/181 = 100.0% | 0 | 164 | 17 | 0/181 = 0.000 |
+| P3-left (3 lines) | 51 | 51 | 51/51 = 100.0% | 0 | 39 | 12 | 0/51 = 0.000 |
+| both | 232 | 232 | 232/232 = 100.0% | 0 | 203 | 29 | 0/232 = 0.000 |
+
+err_true not measurable: no BENCHMARK-TX.tsv item of this hand or key (an 18th-century Polish numeral hand); err_2reader
+0.000 is agreement, not accuracy (LESSONS.md "Look-alike pass"), and the reconciliation below found one agreed-wrong sign.
+Reconciliation (this worker, the fifth call: all 14 cipher-line crops read, every one of the 29 agreed-uncertain positions
+settled from the image): 28 of 29 confirmed as both readers wrote them (the 6s carry the hand's thin upward tail, the 0s are
+plain ovals, the 7s a crossbar, the alternatives 30/70/20/60/38/13/103/81 rejected), graded H with the readers' confidences
+and the rejected alternative in `why`. One agreed sign changed: **p1_L03 pos 12, both readers 36 -> reconciled 30 (M)**: a
+two-line crop (`images/p1_L03_pos12_tall.jpg`) shows the stroke above the digit is the descender loop of the "y" in the clear
+word of the line above ("Spraktykowały", p1_L02), continuous with it; the digit is a closed oval like the 30 at p1_L05 pos 6.
+This is the TX-AGREEAUDIT shape (two readers agreeing on a wrong sign for the same reason, here an interfering descender),
+caught only because the third reader disagreed there -- see the Bourdeau diff. Clear words where the readers' spellings
+differ (p1_L02 "Spraktykowały", p1_L10 "niemogę", p1_L11 "qm" = quam, p3l_L04 "Przesyłam posty doniosłym WMM") carry the
+reconciler's reading at M/L with both spellings in `alt`; they are clear text, not cipher, and nothing depends on them.
+Final grades in `ciphertext.tsv`: 231 cipher tokens H, 1 M (p1_L03 pos 12).
+
+**Diff against Bourdeau's `targets/potocka1714/r7524-cipher.txt`** (D. Bourdeau, cyphersolver, text CC BY 4.0, code MIT;
+fetched once from raw.githubusercontent.com on 4 Oct 2026, 942 bytes; converted to our line ids in
+`reconcile/bourdeau_r7524_long.tsv`, 232 cipher tokens, 77 signs, 12-157 -- his counts match ours exactly; a third reader,
+not ground truth). `tools/reconcile_passes.py ciphertext.tsv bourdeau_r7524_long.tsv`: **231/232 = 99.6% agreement**, one
+disagreement (`reconcile/bourdeau_disagreements.tsv`):
+
+| position | ours | Bourdeau | image (reconciler) |
+|---|---|---|---|
+| p3l_L02 pos 3 (his line 13, token 3) | 36 (H; A:H, B:M) | 30 | `images/p3l_L02_pos3_tall.jpg`: the tail rises from the oval's top right exactly as the 6s of "66.26" on the line above; nothing descends from above. Stays 36. |
+| p1_L03 pos 12 (his line 3, token 12) | 30 (M; both blind readers 36) | 30 | settled for 30 by the two-line crop (above); the only token where the image overruled both blind readers |
+
+Before the reconciler's look the blind-agreed transcription differed from his at two positions (both 36 vs 30: the 6/0
+look-alike under a descender); after it, one. The comparison tile `images/bourdeau_diff_36v30.jpg` shows both positions
+beside an agreed 36, 30 and 60. Bourdeau's clear-word anchors differ from ours at p1_L02 ("Starosty horodly" vs our
+"Spraktykowały") -- clear text, outside the cipher, not settled here.
+
+Sign inventory (for the key test, no reading): most frequent 31 (18), 15 (12), 39 (10), 81 (9), 36/33/20 (8 each), 12/76
+(7), 26 (6), 17/107/118 (5); the pair "15.20" recurs 8 times on P1 (lines 1, 1, 3, 3, 4, 5, 5, 6), "22.118.82.36.31.81" three
+times (lines 2, 7, 10), "36.31.157.31.33.81" twice (lines 1, 5), "144.76.144" twice (p1_L06, p3l_L01). Observations of the
+transcription, not readings.
+
+Requests per host: de-crypt.org 7 (one login), raw.githubusercontent.com 1. Subagent calls: 4 (Opus 5.5, one page each) +
+this worker's reconciliation. Not run (brief): any key test. Cost: see the lane ledger.
+
+## Next step (costed, refreshed 4 Oct 2026, A3V2-SANGTX)
+
+Key test, in this order, no transcription work left: (1) `tools/design_prior.py` on 232 tokens / 77 signs / 12-157 with
+clear anchors; (2) Potocka key coverage on `ciphertext.tsv` (Bourdeau's `key-potocka.json`, 46 entries 14-78: by range it
+touches 132/232 tokens and 32/77 signs, A3V2-SANGCS) read as a trial decode with a matched homophonic control at N=232,
+77 signs (rule 3; `tools/family_run.py --family homophonic` after a spec `specs/sanguszkow-mniszech-dunin-1714.json`; a
+Polish 18th-century corpus is still missing from tools/data, the V6-PTCORP shape, about 12 min); expect CONTROL BELOW GATE
+at this N (Bourdeau's own control read 21.1%) and then the crib-assisted variant (the repeated "15.20", "22.118.82.36.31.81"
+strings and the clear anchors "praetextu consilii", "Congressow", "unanimi voto") before spending on annealing. About USD 6
+on Fable for (1)+(2) with the corpus build.
 
 ## While waiting
 
 - Nothing is waiting on anyone: the image is in hand (re-fetch: one DECODE login, A3V2-SANG's command above), the
-  check-solved verdict is `open` with the full-text searches named on line 2, and the next step (crop transcription)
-  depends on nobody.
-- ASKS 125 (copy order): names the wrong letter (refuted above); re-word to 16 March 1714 Dukla / teka 290/6 or withdraw.
+  check-solved verdict is `open`, the transcription is committed (`ciphertext.tsv`, A3V2-SANGTX), and the next step
+  (key test) depends on nobody.
+- ASKS 125 (copy order): names the wrong letter (refuted, A3V2-SANGCS); re-word to 16 March 1714 Dukla / teka 290/6 or withdraw.
 - Parallel, owner-side only: a szukajwarchiwach search "Mniszech Dunin" from a desk browser for the 1714.03.16 row.
 
-## Remaining gaps (A3V2-SANGCS, 4 Oct 2026)
-Read so far: 0 of 232 cipher tokens (full-size images in hand since 4 Oct 2026; nothing transcribed or read)
-- R7524 all 232 cipher tokens - blocker: not-attempted; images in hand, check-solved `open` (this section), no transcription pass run yet; next: crop transcription P1 + P3-left, 2 blind passes + 1 reconciliation, ~$7
-- Identity of the archive record for the copy order (ASKS 125) - blocker: waiting-on ASKS 125 re-wording by the lane/owner; the 1714.05.02 record is a different letter (refuted above), nothing here depends on it; next: lane edits ASKS 125, ~$0
-- Teka 290 neighbours (plik 1-5, 7+) for a filed key or decipherment - blocker: needs-physical-access; the teka has no scans per the archive's own record and its online unit listing is behind Incapsula for the cloud browser (3 requests this pass), so only an owner-side szukajwarchiwach search or the reading room can list the neighbours; next: LOCAL-QUEUE row or owner desk search, ~$0 here
+## Remaining gaps (A3V2-SANGTX, 4 Oct 2026)
+Read so far: 0 of 232 cipher tokens read; 232 of 232 transcribed (ciphertext.tsv, err_2reader 0.000, 231/232 with Bourdeau)
+- R7524 all 232 cipher tokens - blocker: not-attempted; transcription complete (this section), no key test run yet, Bourdeau's negative is control-failed (inconclusive); next: design_prior + Potocka-key trial decode with a matched homophonic control at N=232/77 signs, Polish corpus build first, ~$6
+- Identity of the archive record for the copy order (ASKS 125) - blocker: waiting-on ASKS 125 re-wording by the lane/owner; the 1714.05.02 record is a different letter (refuted, A3V2-SANGCS), nothing here depends on it; next: lane edits ASKS 125, ~$0
+- Teka 290 neighbours (plik 1-5, 7+) for a filed key or decipherment - blocker: needs-physical-access; the teka has no scans per the archive's own record and its online unit listing is behind Incapsula for the cloud browser (A3V2-SANGCS, 3 requests), so only an owner-side szukajwarchiwach search or the reading room can list the neighbours; next: LOCAL-QUEUE row or owner desk search, ~$0 here
 
-## Escalation (4 Oct 2026, refreshed A3V2-SANGCS)
+## Escalation (4 Oct 2026, refreshed A3V2-SANGTX)
 - [x] siblings: Bourdeau's potocka1714 folder read in full (4 Oct 2026); R7515, R7460, R7461 do not fit per his check; R7523/R7525 are different letters.
-- [x] clear-pages: P1 clear lines and P3 clear leaves seen at native resolution (A3V2-SANG, 4 Oct 2026); not transcribed.
-- [x] known-keys: Bourdeau checked the three Sanguszko key records; Potocka key covers 132/232 tokens by range only and is excluded by its own author.
-- [x] print: check-solved re-run with the leaf's date and place, six sources, no edition or decipherment (this section, 4 Oct 2026).
-- [ ] key-rebuild: after the crop transcription (gap 1).
-- [x] image-check: DECODE full-size served, 4 Oct 2026 (A3V2-SANG), three 300-dpi JPEGs, cipher legible.
-- [ ] retry: after the transcription, a homophonic attack with a control matched on 232 tokens and 77 signs.
-Verdict: keep going: 1 internal gap (transcription, ~$7) plus 2 outside blockers that hold nothing up; cheapest next: crop transcription ~$7
+- [x] clear-pages: P1 clear lines and P3 clear leaves seen at native resolution (A3V2-SANG); the clear anchors inside the cipher lines transcribed as [PLAIN] tokens (A3V2-SANGTX).
+- [x] known-keys: Bourdeau checked the three Sanguszko key records; Potocka key covers 132/232 tokens by range only and is excluded by its own author; its trial decode on our transcription is the next step.
+- [x] print: check-solved re-run with the leaf's date and place, six sources, no edition or decipherment (A3V2-SANGCS, 4 Oct 2026).
+- [ ] key-rebuild: transcription done (A3V2-SANGTX); planned step: design_prior, then the Potocka trial decode and a homophonic family run with the matched control (next step above).
+- [x] image-check: DECODE full-size served, 4 Oct 2026 (A3V2-SANG), three 300-dpi JPEGs, cipher legible; transcribed at 300 dpi (A3V2-SANGTX).
+- [ ] retry: a homophonic attack with a control matched on 232 tokens and 77 signs, crib-assisted variant planned (next step above).
+Verdict: keep going: 1 internal gap (key test, ~$6) plus 2 outside blockers that hold nothing up; cheapest next: design_prior + Potocka trial decode with matched control, ~$6

@@ -1,0 +1,13 @@
+line	col	A	B	flagged	crop	both_conf
+p3l_L01	2	66	66	AB	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L01.jpg	A:M/B:M
+p3l_L01	3	26	26	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L01.jpg	A:H/B:M
+p3l_L01	8	76	76	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L01.jpg	A:H/B:M
+p3l_L01	15	76	76	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L01.jpg	A:H/B:M
+p3l_L02	3	36	36	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L02.jpg	A:H/B:M
+p3l_L02	11	26	26	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L02.jpg	A:H/B:M
+p3l_L03	2	26	26	B	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:H/B:M
+p3l_L03	3	105	105	A	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:M/B:H
+p3l_L03	6	87	87	AB	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:M/B:M
+p3l_L03	9	58	58	A	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:M/B:H
+p3l_L03	11	15	15	AB	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:M/B:M
+p3l_L03	16	58	58	A	ciphers/sanguszkow-mniszech-dunin-1714/images/p3l_L03.jpg	A:M/B:H
