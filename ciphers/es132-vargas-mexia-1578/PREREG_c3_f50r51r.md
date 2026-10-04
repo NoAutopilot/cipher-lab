@@ -1,4 +1,4 @@
-# PREREG Cipher 3 pool, page 4 -- es132-vargas-mexia-1578 f.51r (RUN4-ES50, LANE-RUN4 account 1, 4 Oct 2026, written 11:27 UTC by `date -u`, before any f.51r pass or decode)
+# PREREG Cipher 3 pool, page 4 -- es132-vargas-mexia-1578 f.51r (RUN4-ES50, LANE-RUN4 account 1, 4 Oct 2026, written 11:26 UTC by `date -u`, before any f.51r pass or decode)
 
 Brief: `.claude/briefs/runs/2026-10-04-acct1-run4-wave3.md` section RUN4-ES50 (f.50r / f.51r, rest of the June 1578 letter; one page if two
 would cross 80% of the USD 6 cap: 3 units x ~USD 1.5 per page = ~4.5 per page, so **one page**). Statistic, nulls, gate, positive control
