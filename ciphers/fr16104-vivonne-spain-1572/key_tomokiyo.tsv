@@ -1,0 +1,31 @@
+code	meaning	source_image	note
+s	a	henryiii_Vivonne1.png	col a row 1 "s"
+P	a	henryiii_Vivonne1.png	col a row 2 pi-sign; Tomokiyo col m row 1 has a similar "II": label P read as a (ambiguity noted)
+z	a	henryiii_Vivonne1.png	col a row 3 flat z
+S	b	henryiii_Vivonne1.png	col b long s
+:	c	henryiii_Vivonne1.png	col c two dots
+A	c	henryiii_Vivonne1.png	col c row 5 capital A
+h	d	henryiii_Vivonne1.png	col d row 1
+k	d	henryiii_Vivonne1.png	col d row 2
+3	d	henryiii_Vivonne1.png	col d row 3 round-topped 3 (row 4 is a 3/z-like sign with flourish, not separately labelled)
+m	e	henryiii_Vivonne1.png	col e row 1
+7	e	henryiii_Vivonne1.png	col e row 2
+4	g	henryiii_Vivonne1.png	col g row 3
+y	h	henryiii_Vivonne1.png	col h row 1
+tz	i	henryiii_Vivonne1.png	col i row 1 "t3" join
+f	l	henryiii_Vivonne1.png	col l row 1
+6	l	henryiii_Vivonne1.png	col l row 2 (a circled 6 also stands in col p; label 6 read as l)
+j	l	henryiii_Vivonne1.png	col l row 5
+p	n	henryiii_Vivonne1.png	col n row 1
+n	t	henryiii_Vivonne1.png	col t row 2
+d	o	henryiii_Vivonne1.png	col o row 1 (round d / delta)
+to	q	henryiii_Vivonne1.png	col q row 1
+@	q	henryiii_Vivonne1.png	col q row 5 looped sign; Tomokiyo col z row 1 is a circled a: label @ read as q (ambiguity noted)
+g	r	henryiii_Vivonne1.png	col r row 1
+L	r	henryiii_Vivonne1.png	col r row 2
+x	s	henryiii_Vivonne1.png	col s row 1
+#	t	henryiii_Vivonne1.png	col t row 1
+R	t	henryiii_Vivonne1.png	col t row 3 "rt"-like sign
+oo	u	henryiii_Vivonne1.png	col u row 1 "oo" (passes write o o; collapsed to oo before decoding, PREREG)
+a	u	henryiii_Vivonne1.png	col u row 2
+b	z	henryiii_Vivonne1.png	col z row 2
