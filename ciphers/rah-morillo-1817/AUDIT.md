@@ -150,3 +150,93 @@ the letter was deciphered on the leaf in 1820 and its text has been in print sin
 verifier does not touch status.json).
 
 Pointer (3 Oct 2026, GAPS2-rah-morillo-1817, NOTES.md section of that name): the two print-vs-eye disagreements handed to the solver lane above were image-checked on native crops with a fresh blind read: the leaf reads "no se mueben" (not "reciben"), and the r2g2 gloss reads bari-nit-?-s, with no "Caimital". No reading token changed (C 90 / M 7 / U 0); class N0 and key `period` unchanged.
+
+---
+
+# AUDIT 2 (A3V-VN0, 4 Oct 2026): item 3 (RAH 9/7666 leg. 23 ff.420-420v, record 5186), second audit of the N0 class
+
+Verifier A3V-VN0, account 3, for LANE-A3V, 4 Oct 2026 (clock read 03:13 UTC start, `date -u`). Brief
+`.claude/briefs/runs/2026-10-04-acct3-a3v-wave2.md` section A3V-VN0. A session separate from the solvers (LANE NX
+NX-MOR..NX-MOR4; GAPS, GAPS2, GAPS203, account 4) and from audit 1 (V9-MOR); it does not protect either. No decoding, no
+key, ciphertext or reading change. Touches only this file and PROGRESS.tsv (GAPS209 ran 02:05-02:13 today, done).
+
+**Claim under audit:** audit 1 (V9-MOR) plus its revision pointer: N0, key `period`, text known (*Portuguesa en Carabobo*,
+2021, p.37 n.100); `key_5186.tsv` C 90 / M 7 / U 0 of 97 after the 2021 print fold-in.
+
+## 1. The cited print, opened
+
+archive.org `portuguesa-en-carabobo` -- the djvu file is `Portuguesa en Carabobo_djvu.txt` (the identifier-named
+`portuguesa-en-carabobo_djvu.txt` answers 404; found via the item's file list), 1 request, scratchpad, not committed. IA
+metadata: Wilfredo Bolívar, Armando González Segovia, Aleyda Anzola, date 2021, uploaded 24 May 2025. Lines 2021-2025 and
+footnote 100 (lines 2036-2037), quoted as served:
+
+> "... en carta cifrada le escribe Herrera: "Nada hay por aquí de particular, los enemigos del Apure no se reciben.
+> Romerito pasó el río [Apure] por Caimital con sólo tres oficiales. Dijo venía de Guayana buscando a Bolívar, seguro para
+> Trujillo"." -- n.100: "Oficio de José María Herrera a Morillo, fechado en Guanare el 7 de noviembre de 1820 - BDRAHE;
+> Ib., Signatura: Sig. 9/7666, leg. 23, f), ff. 420-420v. Se ha corregido la ortografía."
+
+Same letter by date, place, sender, shelfmark and folios: **audit 1's N0 basis is real.** Positions compared by this
+verifier, group by group, `reading_5186.txt` against the print (orthography modernised by the print, as its note says):
+
+| # | group | ours | print | agree |
+|---|---|---|---|---|
+| 1 | r1g1 | romerito | Romerito | yes |
+| 2 | r1g2-g3 | paso el | pasó el [río Apure] | yes; the print adds "río" without brackets -- no cipher group carries it |
+| 3 | r2g2 | barinrtas (M x2) | Caimital | **no** (GAPS2's blind gloss read bari-nit-?-s; no C/m/l under the group) |
+| 4 | r2g4 | solo | sólo | yes |
+| 5 | r3g1-g2 | tres oficiales | tres oficiales | yes |
+| 6 | r3g3-g4 | dijo benia | Dijo venía | yes (b/v spelling) |
+| 7 | r4g2 | guayana | Guayana | yes (r4g2 pos 0 and 3 are M; the print is their only C source) |
+| 8 | r4g3-g5, r5g1 | buscando a bo livar | buscando a Bolívar | yes |
+| 9 | r5g2 | srguro (M at pos 1) | seguro | yes on the word; the sign says r |
+| 10 | r5g3-r6g1 | para tru jillo | para Trujillo | yes |
+
+9 of 10 agree on the word; 1 (r2g2) disagrees, already M and image-checked by GAPS2. The print is not independent of the
+leaf for the 7 positions where `key_5186.tsv` takes its value from it (signs 10, 26, 28 and the three readings of 22):
+those agree with the print by construction, which is what grade C from known plaintext means, not a confirmation.
+
+## 2. Earliest print (credit)
+
+be-api fts, global: `"buscando a Bolívar, seguro para Trujillo"` 1 item, `"Romerito pasó el río"` 1 item -- both
+`portuguesa-en-carabobo`; `"con sólo tres oficiales"` 10 items, the other nine unrelated (1824 newspapers, Gómez de
+Arteche, a Guatemalan gazette, etc.). Google Books (key, `country=US`): `"seguro para Trujillo" Romerito` returned 1 total
+with unrelated loose items (first call 503 "service temporarily unavailable", one retry after a pause). OpenAlex
+`search=Portuguesa en Carabobo`: 616 loose hits, none this book in the top 5. Audit 1's Rodríguez Villa (4 vols), Stoan,
+Blanco y Azpurúa, O'Leary, Lecuna, RAH OAI record (no publication note, with record 1306 as positive control) and Contreras
+1988 searches are accepted, not repeated. **Earliest print located: 2021**, as audit 1 says. No earlier article by the same
+authors carrying the passage was found (searched: the three phrases above; not searched: Venezuelan regional journals off
+the open indexes).
+
+## 3. Rule 7 spot check
+
+`python3 tools/decode_key.py ciphers/rah-morillo-1817 --check`: "ciphertext_5186.tsv: tokens 97: C 90, M 7 /
+ciphertext_2242.tsv: tokens 240: C 237, M 3 / reading up to date", exit 0. Matches the committed counts.
+
+## 4. Key-source field
+
+Audit 1 labels the key `period`. Checked against `key_5186.tsv`'s `source` column: 17 of 21 key rows rest on the leaf's
+interlinear gloss (`gloss` or `gloss+print`); **4 rows are `print` only** -- 26=v, 10=g, 28=j (C) and 22=l|y|ll (M) --
+aligned by us (GAPS, 2 Oct) to the 2021 print's plaintext. Those four are a plain-copy alignment, i.e. `ours` by CLAUDE.md
+rule 10's definition, on a published plaintext with no published key. **Found, not applied (status.json is the parent's):**
+key = `period` (17 signs from the leaf's own decipherment) with 4 signs `ours` aligned to the 2021 print; the whole-item
+label stays `period`, since every group carries the period gloss and the print only supplies letters the gloss renders
+illegibly. `text: known`.
+
+## 5. Verdict
+
+**Item 3: N0 confirmed.** Prior plaintext: yes, 2021 (*Portuguesa en Carabobo*, p.37 n.100; earliest located). Prior
+decipherment: yes, the period interlinear one on f.420r. Evidence quality: high (print opened, 10 positions compared, 9
+agree). Confidence: high. Key source: `period`, with 4 print-aligned signs `ours` (section 4).
+
+Safe sentence (audit 1's, count updated as its pointer already says): "Item 3 (Herrera to Morillo, Guanare, 7 Nov 1820,
+RAH 9/7666 ff.420-420v) carries its own period interlinear decipherment, and its plaintext was printed in 2021 (Bolívar,
+González Segovia and Anzola, *Portuguesa en Carabobo*, p.37, n.100); we rebuilt the letter key from that period
+decipherment, with four signs aligned to the 2021 print, and regenerate the reading mechanically (C 90 / M 7 / U 0 of 97
+tokens). N0, key period, text known."
+
+Unsafe sentence: "The 2021 print gives Herrera's letter exactly as written" -- it modernises spelling, adds "río", and
+gives "Caimital" and "no se reciben" where the leaf reads otherwise (GAPS2, 3 Oct).
+
+Postmortem: no over-claim found in the folder's files, NEAR.md (no row) or PROGRESS.tsv; the only slip is that audit 1's
+revision pointer left the key-source field undifferentiated after the print fold-in (section 4). JSTOR: audit 1 queued 4
+rows in both families; none added. N0 queues no SECOND-OPINIONS row. PROGRESS.tsv audit-2 column set to x from this verdict.

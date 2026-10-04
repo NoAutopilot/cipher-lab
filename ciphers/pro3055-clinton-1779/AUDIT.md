@@ -311,3 +311,96 @@ striking; the added sources are recorded there).
 Credit: decipherments by Clinton's headquarters (1780); calendared by D. Brymner (1888), the HMC (1906) and K.G. Davies
 (DAR vol. 16); key book identified by A.C. Leighton and S.M. Matyas (1985); reel locations and cell extracts by
 S. Tomokiyo (Cryptiana).
+
+---
+
+# AUDIT 4 (A3V-VN0, 4 Oct 2026): item 2894 (PRO 30/55/24/76), second audit of the N0 class
+
+Verifier A3V-VN0, account 3, for LANE-A3V, 4 Oct 2026 (clock read 03:13 UTC start, `date -u`). Brief
+`.claude/briefs/runs/2026-10-04-acct3-a3v-wave2.md` section A3V-VN0. A session separate from the solvers (GAPS, GAPS2-4,
+account 4) and from audit 1 (VERIFY-CLINTON-2894, account 2); it does not protect either. No decoding, no key or reading
+change.
+
+**Claim under audit:** audit 1's verdict: N0, period decipherment (reel p.186, H 116 M 3) printed 1920, *Military and
+Naval Forces of Canada* vol. III, Illustrative Document 170, p.158; key `period`; earliest citation 1920.
+
+## 1. The cited print, opened
+
+archive.org `vol1t3historyoforganiz01quebuoft` `_djvu.txt` (1 request, scratchpad, not committed), djvu lines 54470-54480,
+between the page headers "Illustrative Documents 157" and "... 159", so p.158 as audit 1 says. Quoted (OCR as served):
+
+> "(170) PUBLIC ARCHIVES OF CANADA. HALDIMAND PAPERS. Series B, Vol. 147, p. 183. / I have received your dispatches of
+> Novr & January & I Kave received Information from the Minister of the 3d May. Monsieur Ternay is supposed to have
+> sailed about the 3d May with seven ships oif the line & from 20 to 25 Transports &c., having on board five Thousand two
+> hundred land Forces ..."
+
+Ten positions compared by this verifier against `passes/p186_reading.txt`:
+
+| # | ours | 1920 print | agree |
+|---|---|---|---|
+| 1 | dispatches of Novr & January | dispatches of Novr & January | yes |
+| 2 | Ministers | Minister | variant (audit 1 noted; M-level, not a reading error) |
+| 3 | Terney[M] | Ternay | variant, already M |
+| 4 | seven ships of the line | seven ships oif [OCR] the line | yes |
+| 5 | 20 to 25 Transports | 20 to 25 Transports | yes |
+| 6 | five Thousand two hundred land Forces | same | yes |
+| 7 | stil supposed to be Canada | still supposed to be Canada | yes (spelling) |
+| 8 | Rhode Island, a[M] division | rhode Island a division | yes |
+| 9 | Marquis de Fayette by Connecticut Rivers and No 4[M] | Marquis de layette [OCR] by Connecticut River and No. 4 | yes, "Rivers"/"River" variant |
+| 10 | the other by the river Saint Laurence | tne [OCR] river saint Lawrence | yes (spelling) |
+
+7 of 10 identical, 3 spelling/number variants already flagged by audit 1; no position contradicts the reading. **Audit 1's
+N0 basis is real.** One citation detail audit 1 did not carry: the print heads the document "Series B, Vol. 147, p. 183"
+(the B.147 page of the cipher copy), while our files locate the decipherment on reel p.186; same document, the print
+cites the cipher leaf.
+
+## 2. Earliest print (credit)
+
+| source | what it prints | date |
+|---|---|---|
+| Brymner, *Report on Canadian Archives* 1887 (Ottawa 1888), Haldimand Collection calendar, B.147 -- archive.org `reportoncanadian1887publuoft` djvu lines 102882-102888 (page between headers 645 and 647, so p.646; OCR "546"); second scan `cihm_57145` found by be-api fts | "Clinton to the same. Letter in cypher. 184 / Explanation of part follows. M. Ternay had sailed about the 3rd May with 7 ships of the line, from 20 to 25 transports, with 5,200 land forces, their destination supposed to be Canada. The French fleet, he believes, will assemble at Rhode Island, a division under La Fayette will proceed by Connecticut River and No. 4 across the lake to St. John's; the other by the River St. Lawrence. 186" | **1888, earliest print located** (close calendar paraphrase of the whole deciphered body, citing the cipher at p.184 and the decipherment at p.186) |
+| HMC, *Report on American Manuscripts in the Royal Institution* (1904-09) / TNA Discovery scopeContent | paraphrase of the Kew copy, plus the clause | 1904-09 (audit 1) |
+| *Military and Naval Forces of Canada* vol. III, doc. 170, p.158 | verbatim decipherment | 1920 (audit 1) |
+
+**Correction to audit 1 (found, applied here as a pointer only):** audit 1's "Prior plaintext: yes, 1920 print (earliest
+citation found)" holds for a verbatim print; the content was first printed as Brymner's 1888 calendar paraphrase, which
+gives every fact of the body and says outright that it is the explanation of a letter in cypher. Class unchanged.
+
+## 3. Searches (4 Oct 2026)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical calendar | Brymner 1888 djvu (above) | hit, earliest print (paraphrase) |
+| (b)(c) editions | 1920 vol. III djvu (above); be-api fts global: `"supposed to have sailed about the 3d May"` 2 items, `"Ternay is supposed to have sailed"` 2, `"Terney is supposed"` 0, `"Connecticut River and No. 4"` 4 | the 2 items are the two scans of the 1920 volume (`vol1t3historyoforganiz01quebuoft`, `31761118534445`); the 4 add Brymner (`cihm_57145`) and an unrelated Massachusetts forester's report. Davies, *Documents of the American Revolution* (lending items are in be-api's index) gave no hit |
+| (d) holding archive | audit 1's TNA Discovery record accepted, not re-fetched | -- |
+| (e) Google Books | key, `country=US`: `"Ternay is supposed to have sailed"` 197 loose, none this letter in the top 8 | no hit |
+| (f) solver repos, blogs | audit 1's clones and Cryptiana check accepted (2 days old; no new commits searched) | -- |
+| (g) scholarship / JSTOR | audit 1 queued no JSTOR row for 2894; 2 rows appended to `JSTOR-QUEUE.tsv` today: family (i) Clinton AND Haldimand AND July 1780 AND cipher/cypher AND Ternay; family (ii) the bare phrase "supposed to have sailed about the 3d May" | queued; cannot change N0 |
+
+Requests: archive.org 5 (djvu 2, metadata 3), be-api.us.archive.org 5, www.googleapis.com 1; 1.5 s apart. Subagents: 0.
+
+## 4. Rule 7 spot check
+
+`tools/decode_key.py ciphers/pro3055-clinton-1779 --check` does not apply (no `decode.json`/`ciphertext.tsv`; the folder's
+reading is built by its own scripts). Run instead: `passes/build_p186.py --check` "OK tokens 119: H 116, M 3", exit 0;
+`passes/check_2894_key.py --check` and `passes/title_1778_check.py --check` regenerate identically, exit 0. Reproduces.
+
+## 5. Verdict
+
+**Item 2894: N0 confirmed.** Prior plaintext: yes -- earliest Brymner 1888 (calendar paraphrase, p.646), verbatim 1920
+(doc. 170, p.158). Prior decipherment: yes, the period one (1780) on reel p.186, which both prints use. Evidence quality:
+high (print opened, 10 positions compared). Confidence: high. **Key source: `period`** confirmed -- the cells are rebuilt
+by us from the period decipherment against the 1778 Army List of the time; the key book was identified by Leighton & Matyas
+(1985) and a cell table published by Tomokiyo (79/81 agreement), both credited, which does not make the key `ours`.
+`text: known`. The clause's N0 (audit 1) is not re-examined here beyond noting that Brymner 1888 does not carry it.
+
+Safe sentence: audit 1's, with the print history extended: "... the period decipherment, calendared by Brymner in 1888
+(Report on Canadian Archives 1887, p.646) and printed in full in 1920 (Military and Naval Forces of Canada, vol. III,
+doc. 170) ..."
+
+Unsafe sentence: "The decipherment was first published in 1920."
+
+Postmortem: audit 1 searched Brymner for 3868 and 2380 (its own later sections) but credited 2894's earliest print to
+1920; a phrase run of the decoded body through be-api fts (which indexes the Brymner microform) finds the 1888 calendar in
+one query. No over-claiming sentence in the folder's files found: none calls the 2894 text new; NOTES.md already treats it
+as known. PROGRESS.tsv audit-2 column set to x from this verdict. N0 queues no SECOND-OPINIONS row.
