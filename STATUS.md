@@ -3888,17 +3888,20 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-a3v.md`; waves `.claude/briefs/
 
 | Job | Target | Session | Cap | State | Result |
 |---|---|---|---|---|---|
-| A3V-VHEL2 | hellen-frederick-1752 2nd audit | session_01Txvz2B47v4EHrahXPZarYn | 8 | live | |
+| A3V-VHEL2 | hellen-frederick-1752 2nd audit | session_01Txvz2B47v4EHrahXPZarYn | 8 | D 6.22 | **N3 confirmed -- two audits at N3, counts** (key period); N4 gate = GStA PK Rep. 96 Nr. 38 G-H |
 | A3V-RD7 | Paget + f.144r rule-7 re-derivation | session_01DM7CSHigiBSinMKs5L7M7C | 4 | D 2.27 | both SAME (505/505, 90/90) |
 | A3V-VNB2 | nevers-birago no.87/f.152/f.162 2nd audits | session_01HCG9SYM4H99NPGv7vU5cVS | 5 | D 3.33 | N0 x3 confirmed; 2 no.87 misaligns found, not applied |
 | A3V-VJAN | na-janssens-java-1811 1st audit | session_01DdRcBhPsoSzVpkJ24H7sq2 | 6 | D 4.07 | leaf 188 N1 (Collet 1910 prints part), key period |
 | A3V-VROY2 | intercepted-royalist-1646 2nd audit | session_013TmdA7AJpd7GBMmJc8XT79 | 4 | D 3.47 | N0 confirmed (Aymeloglu 731/735) |
-| A3V-VN0 | Clinton 2894 + Morillo 5186 2nd audits | session_01C2gggDbnrg8qLqdMXvjpB2 | 5 | live | |
-| A3V-VNV01 | fr3993-gonzague NV-01 1st audit | session_019B19W8kdEmHPcGDFLmS6hz | 4 | live | |
-| A3V-VB3252 | birago-fr3252 f.117/f.36/f.47 1st audits | session_01MqnTqaTqzkB7mNfaktutj9 | 6 | live | |
-| A3V-VNB1 | nevers-birago f.144r + f.168 1st audits | session_01QisaxebCm3yNQwrK79hYXE | 5 | live | |
+| A3V-VN0 | Clinton 2894 + Morillo 5186 2nd audits | session_01C2gggDbnrg8qLqdMXvjpB2 | 5 | D 2.93 | N0 x2; Clinton earliest print Brymner 1888 |
+| A3V-VNV01 | fr3993-gonzague NV-01 1st audit | session_019B19W8kdEmHPcGDFLmS6hz | 4 | D 1.63 | N0 (leaf's own decipherment) |
+| A3V-VB3252 | birago-fr3252 f.117/f.36/f.47 1st audits | session_01MqnTqaTqzkB7mNfaktutj9 | 6 | D 4.88 | f.36 N0; f.117r N3; f.47r N3 (6 S letters, no text) |
+| A3V-VNB1 | nevers-birago f.144r + f.168 1st audits | session_01QisaxebCm3yNQwrK79hYXE | 5 | D 3.71 | f.144r N4 (nil as text), f.168 N4; f.144v untranscribed run found |
+| A3V-VPAG | clairambault1225-paget-1714 1st audit | session_013Wg9wEwLFyx36vVUCvih4U | 6 | live | |
+| A3V-V2BIR | f.117r/f.168/f.144r/f.47r 2nd audits + claim scope | session_01PRtvLuJkLtZ9oKybGgPXGa | 6 | live | |
+| A3V-RD168 | f.168 rule-7 re-derivation | session_01H5uHwYAjrzLgQwC9jSH2zR | 3 | live | |
 
-Open: A3V-VPAG (Paget 1st audit, wave 2) when a slot frees. Workers ledgered 13.14 at 03:1x. Research note for the owner: research/TRANSCRIPTION-PRACTICE-2026-10-04.md.
+Open: wave 3 live (VPAG, V2BIR, RD168). Workers ledgered 32.51 at 03:3x. For the parent: hellen R1953 now has two N3 audits -- status.json result entry (key period, claim_scope recovered-passages, 456/846). f.144v ~24-sign run untranscribed (a unit). Morillo 4 key signs `ours` (AUDIT 2, not applied to status.json). Research note for the owner: research/TRANSCRIPTION-PRACTICE-2026-10-04.md.
 
 ## LANE NEAR3 handoff (session_01Au8dSL1TXFoCk5P5opEMVv, account 2), 4 October 2026 (closed 03:0x UTC: budget spent)
 
