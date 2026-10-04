@@ -1,0 +1,346 @@
+[
+ {
+  "id": "grants",
+  "title": "Submit the AI for Science grant (review Mon 5 Oct)",
+  "detail": "The six grant drafts are in the private repo; the Anthropic AI for Science form (credits) is reviewed Monday 5 Oct. Add your name and details to the drafted fields and submit; NCIS membership is next. Tomorrow's review is the only deadline on this list.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/grants-applications.md",
+  "linkLabel": "Grant plan",
+  "mins": 30,
+  "tag": "send",
+  "rank": 1,
+  "asks": []
+ },
+ {
+  "id": "bl-chase",
+  "title": "British Library: chase 2 orders, ask Brochado folios",
+  "detail": "Two BL orders from 23 Sept (Mornington key D623/41, Courten diary key) have had no reply for 11 days: one chase email. Same message: ask the folio numbers of the 22 and 29 Oct 1713 letters in Add MS 20819 (Brochado, a near-solve row).",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 12, 13, 108",
+  "mins": 15,
+  "tag": "email",
+  "rank": 2,
+  "asks": [
+   108,
+   12,
+   13
+  ]
+ },
+ {
+  "id": "rah-form",
+  "title": "Fill and send the RAH copy request form",
+  "detail": "The Real Academia de la Historia replied 28 Sept with its request form; it is pre-filled, only your personal fields and signature are missing. Add the one-line Sicily 1503 key item (ASKS 105) first. Unblocks six Salazar letters with a crib.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/rah-salazar-copy-order.md",
+  "linkLabel": "RAH draft",
+  "mins": 15,
+  "tag": "send",
+  "rank": 3,
+  "asks": [
+   68,
+   105
+  ]
+ },
+ {
+  "id": "mercy-gh",
+  "title": "Post the Mercy follow-up on Bourdeau's issue 16",
+  "detail": "Fact-checked comment for the near-solve Mercy 1648 reading, adding the blind re-read result to the issue you opened on 1 Oct. Paste and post from your GitHub account. The Aymeloglu issue draft still needs its own check first.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/bourdeau-issue-mercy-reply.md",
+  "linkLabel": "Comment draft",
+  "mins": 3,
+  "tag": "send",
+  "rank": 4,
+  "asks": []
+ },
+ {
+  "id": "academia",
+  "title": "Read one academia.edu paper (Ferdinand 1478)",
+  "detail": "The runner was stopped by academia.edu's bot check. Log in, open Tomokiyo 2018 'Spanish Ciphers before Accession of King Ferdinand', and say whether its cipher table was built from MSS/20211 item 123 or 126. Yes means the target is already solved.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 45",
+  "mins": 10,
+  "tag": "runner",
+  "rank": 5,
+  "asks": [
+   45
+  ]
+ },
+ {
+  "id": "kha",
+  "title": "Send the Royal House Archive request (Hessen 1567)",
+  "detail": "Checked 3 Oct. Asks the Koninklijk Huisarchief for scans of A 11/XIV B/15-43, where the cipher of Willem van Hessen's 1567 letter sits; no image exists online. The same archive holds the WVO 4502/5808/7205 originals (ASKS 75, route still to look up).",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/kha-hessen-1567-request.md",
+  "linkLabel": "KHA draft",
+  "mins": 10,
+  "tag": "email",
+  "rank": 6,
+  "asks": [
+   31,
+   75
+  ]
+ },
+ {
+  "id": "deb-museum",
+  "title": "Send the Debosnys museum letter (papers + scan)",
+  "detail": "Checked, not sent. Asks the Adirondack History Museum for a high-resolution scan of the four cryptograms and his papers. The public images are the limit (16-18% sign error); a scan is the one step that moves it. Reply in the museum's 28 Sept thread.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/debosnys-museum-papers.md",
+  "linkLabel": "Museum draft",
+  "mins": 5,
+  "tag": "email",
+  "rank": 7,
+  "asks": [
+   100
+  ]
+ },
+ {
+  "id": "tna-batch",
+  "title": "TNA: one page-copy order for every target",
+  "detail": "All TNA orders in one basket: the 12-item batch (incl. Whitworth's clause), the SP 87 paired decipherments, SP 78 France, SP 90/87 runs, Roe 1638, the censorship manual pages and SP 52/15 for Moray. About £160-250. The Wroth card is part of this.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/tna-page-copy-batch.md",
+  "linkLabel": "Batch draft",
+  "mins": 30,
+  "tag": "order",
+  "rank": 8,
+  "asks": [
+   73,
+   7,
+   14,
+   15,
+   16,
+   57,
+   106,
+   126,
+   103
+  ]
+ },
+ {
+  "id": "bnf-add",
+  "title": "Add 2 items to the BnF reproduction order",
+  "detail": "Before paying the BnF quote, add the fr.3642 key leaf (reads both Marie de Medicis 1610 passages) and Clairambault 577 p.521 and p.741 (two 1647 letters whose keys are already printed, so a reading follows images directly).",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 43, 94",
+  "mins": 5,
+  "tag": "order",
+  "rank": 9,
+  "asks": [
+   43,
+   94
+  ]
+ },
+ {
+  "id": "jstor-waive",
+  "title": "Decide: waive the JSTOR check for 7 audited readings?",
+  "detail": "Seven readings (Gramont, Danzay, Lodewijk, Saxony x2, Blathwayt, Eckert) passed every search except queued JSTOR rows, which hold back two outreach emails. Either the runner does them or you waive them; the Gramont waiver is drafted.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/gramont-jstor-waive.md",
+  "linkLabel": "Waiver draft",
+  "mins": 5,
+  "tag": "decide",
+  "rank": 10,
+  "asks": [
+   17,
+   32,
+   33,
+   36,
+   37,
+   39,
+   40,
+   41,
+   44
+  ]
+ },
+ {
+  "id": "glosses",
+  "title": "Read 4 faint period glosses (Mayenne 1593)",
+  "detail": "The 1593 decipherer's own notes on BnF fr.3983 ff.106r, 108r, 108v, 211r are too faint for model readers. Contact sheets with numbered strips are ready; write what you can read per strip. Gives the key's missing signs at period grade.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr4715-f61-mayenne-1592/images/person_pack/",
+  "linkLabel": "Contact sheets",
+  "mins": 30,
+  "tag": "sort",
+  "rank": 11,
+  "asks": [
+   88,
+   89,
+   93,
+   99
+  ]
+ },
+ {
+  "id": "arm-lookup",
+  "title": "Armstrong 1808: two 5-minute browser look-ups",
+  "detail": "Both sites block the cloud: (1) the LOC finding aid for the Erving papers, paste the container list; (2) the Monroe Papers catalogue (guest sign-in): where are Armstrong's 1805 letters to Monroe, one partly in their private cipher.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 83, 97",
+  "mins": 10,
+  "tag": "runner",
+  "rank": 12,
+  "asks": [
+   83,
+   97
+  ]
+ },
+ {
+  "id": "arm-emails",
+  "title": "Armstrong 1808: send 4 checked library emails",
+  "detail": "Fact-checked 28 Sept: NYHS, FDR Library, NYPL and Bowdoin, each asking for any 1804-1810 Armstrong item in cipher or a key. Tomokiyo recommended this target. NYPL first (the one named private cipher), Bowdoin last.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/armstrong-keyhunt-nypl.md",
+  "linkLabel": "NYPL draft",
+  "mins": 15,
+  "tag": "email",
+  "rank": 13,
+  "asks": [
+   84,
+   85,
+   95,
+   96
+  ]
+ },
+ {
+  "id": "vieuville",
+  "title": "Settle 165 clear words in a Montholon letter",
+  "detail": "Two machine rounds left 165 words in 98 slots of BnF fr.4715 f.67r (mostly clear French, 1590) unsettled. Fill the person column of the sheet. Feeds the Vieuville pool, a near-solve row.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 114",
+  "mins": 30,
+  "tag": "sort",
+  "rank": 14,
+  "asks": [
+   114
+  ]
+ },
+ {
+  "id": "wellington",
+  "title": "Ask 3 libraries which dictionary Wellington used",
+  "detail": "Three short emails (text in the row) to Toronto, Harvard and Trinity College Dublin, which hold the last candidate pocket dictionaries. A match turns 57 code groups already read into a period key. Fees, if any, about USD 0-60.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 101",
+  "mins": 5,
+  "tag": "email",
+  "rank": 15,
+  "asks": [
+   101
+  ]
+ },
+ {
+  "id": "eye-checks",
+  "title": "Two short eye checks (Nevers, Vienna c.1600)",
+  "detail": "(1) 5 min: are fr.4712 f.10r and f.13r in the same hand? Crops named in ASKS 113. (2) 10 min: read the German or Latin of 5 glossed lines in the Vienna R1411 crops; 176 decoded numbers wait on it for their language test.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 113, 120",
+  "mins": 15,
+  "tag": "sort",
+  "rank": 16,
+  "asks": [
+   113,
+   120
+  ]
+ },
+ {
+  "id": "deb-archives",
+  "title": "Send 3 Debosnys archive emails",
+  "detail": "Checked 1 Oct, not sent: Essex County clerk, Historical Society of Pennsylvania, UAlbany (execution records, his papers). Two more drafts (surrogate court, state archives) failed the check on the address and stay held.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/outreach/debosnys-essex-clerk.md",
+  "linkLabel": "Clerk draft",
+  "mins": 10,
+  "tag": "email",
+  "rank": 17,
+  "asks": []
+ },
+ {
+  "id": "ia-reads",
+  "title": "Read pages in 2 Internet Archive loans",
+  "detail": "Loan pages are scrambled for scripts, so a person reads them: (1) HMC Supplementary Report 1932 pp.70-74 (Hamilton 1650: is a cipher passage printed deciphered?); (2) Powell's Elgar memoir (1947 printing): does it quote the July 1897 letter that sent the Dorabella cipher?",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 18, 50",
+  "mins": 30,
+  "tag": "runner",
+  "rank": 18,
+  "asks": [
+   18,
+   50
+  ]
+ },
+ {
+  "id": "farnsworth",
+  "title": "Read Farnsworth's Debosnys book on Everand",
+  "detail": "Search The Adirondack Enigma (2010) for trunk, cipher, cryptogram, Portuguese, autobiography; screenshot only those pages and any cryptogram. Checks what the book says that our public sources lack.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 98",
+  "mins": 30,
+  "tag": "runner",
+  "rank": 19,
+  "asks": [
+   98
+  ]
+ },
+ {
+  "id": "lope",
+  "title": "Request the Lope Hurtado 1522 chapter",
+  "detail": "A 2024 chapter on exactly this cipher (Bertomeu Masia, Salamanca) is not open online. Use the repository's request-a-copy link; an author email is drafted in the target's REQUEST.md.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ciphers/lope-hurtado-1522/REQUEST.md",
+  "linkLabel": "Request text",
+  "mins": 5,
+  "tag": "email",
+  "rank": 20,
+  "asks": [
+   74
+  ]
+ },
+ {
+  "id": "danzay",
+  "title": "Decide: order or waive the Daussy chapter (Danzay)",
+  "detail": "The last open gap for Danzay f.35 is a 2001 chapter that no loan service lends to this account. Order it by library loan, or waive it and keep the current audit class.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 26",
+  "mins": 2,
+  "tag": "decide",
+  "rank": 21,
+  "asks": [
+   26
+  ]
+ },
+ {
+  "id": "arm-leads",
+  "title": "Armstrong 1808: five slower archive leads",
+  "detail": "Optional: Yale MS 857 scans, LOC Brant Box 37, the Livingston reel guide, the 1797 Wouves table (needs an ECCO login) and the French diplomatic archives for 1808. Do after the four emails.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 77, 80, 86, 90, 91, 127",
+  "mins": 45,
+  "tag": "order",
+  "rank": 22,
+  "asks": [
+   91,
+   77,
+   80,
+   86,
+   90,
+   127
+  ]
+ },
+ {
+  "id": "setup",
+  "title": "Answer 4 setup questions (repo, keys, certificate)",
+  "detail": "(1) GitHub Pages on /docs for a public board? (2) Add teammates as collaborators? (3) Trust the Spanish FNMT root certificate so Spanish archives load? (4) Which service are the AWS and Google Cloud keys for? Unused until you say.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "linkLabel": "ASKS 8, 9, 28, 62",
+  "mins": 5,
+  "tag": "decide",
+  "rank": 23,
+  "asks": [
+   8,
+   9,
+   28,
+   62
+  ]
+ },
+ {
+  "id": "fiddle",
+  "title": "Sufi fiddle: 6 signs + a Jawi reader?",
+  "detail": "5 minutes in the sign sorter on the 6 unsettled signs; and if you know a reader of Jawi (Malay in Arabic script), forward the figure. Every machine route is spent.",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ciphers/sufi-fiddle/fig1-tx/focus.tsv",
+  "linkLabel": "Focus list",
+  "mins": 5,
+  "tag": "sort",
+  "rank": 24,
+  "asks": [
+   115
+  ]
+ }
+]

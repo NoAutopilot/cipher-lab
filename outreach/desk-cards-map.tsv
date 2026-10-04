@@ -1,0 +1,10 @@
+asks_rows	belongs_inside_board_card	note
+4 6 46 56 58 60 64	sendq	S1-S6 quote requests (Stair, BL, Heinsius, BL batch, Clements, AGR Mercy, Dresden)
+35 38 49 65 78 81	quotes	BnF/Arsenal devis batch already requested 27 Sept; prices are in the owner's own inbox
+116 117 125 129 130 131 132 133 135 136	copies	non-TNA archive copy orders (134 is TNA: moved to new card tna-batch)
+121	tna	Wroth; also listed inside new card tna-batch so one TNA basket is placed
+122	fbs	Francis Bacon Society
+40 41 76 + LOCAL-QUEUE 34 queued rows + JSTOR-QUEUE 66 queued rows	local	runner queues; card jstor-waive is the separate decision to waive instead
+102 104 107 112 118 119 128 137 138	s-rev s-sic s-flo s-din s-birago s-mlh s-arm s-sav s-jm	one sorter per row
+111 123 124	(none: agent first)	fr3993-villeroy: f.3994 f.131/134 check (~USD 1), Institut draft and a sorter must be built before the owner has anything to do
+103 (NRS email part)	(none: agent first)	outreach/nras-moray-donibristle-cipher.md still needs its gate-7 check; the SP 52/15 part is in card tna-batch

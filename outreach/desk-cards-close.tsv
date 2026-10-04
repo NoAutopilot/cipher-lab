@@ -1,0 +1,10 @@
+asks_row	why_it_can_close	evidence_file
+54	The Clairambault 1161 cipher leaves were found on Gallica on 3 Oct 2026 (canvases c185-c188) and are being transcribed now, so no BnF question is needed	ciphers/clair1161-avis-flandre-1688/NOTES.md (## IMG-GALLICA1)
+79	fr4715-montholon-1589 moved to found-solved; a new capture of f.81 no longer unblocks anything (drop it from the BnF devis batch row 13 if the quote is not yet paid)	ciphers/fr4715-montholon-1589/NOTES.md
+61	Pointer to OUTBOX.md, replaced by the desk board (artifact GNMEYAR5C1ZeBHvJ9bXYxm, 4 Oct 2026) and outreach/desk-cards-2026-10-04.json	ROOM.md 2026-10-04 01:42 orchestrator line
+67	The owner's part (send the Huygens reply) was done 26 Sept 2026; now waiting on her answer, not on the owner (status should be waiting)	outreach/huygens-reply-2026-09-26.md (status: sent 26 Sept 2026)
+72	Debosnys museum email was sent 26 Sept 2026 (thread 1a0defa3b687c1b2); the Clements form is SEND-QUEUE S1, covered by board card sendq	outreach/debosnys-museum.md; SEND-QUEUE.tsv S1
+92	Superseded by the Armstrong shorthand sign sorter (ASKS 128, board card s-arm), which carries the same 997 marks	ASKS.md row 92 update 3 Oct 2026 (H74); board card s-arm
+100	The hi-res draft it names was superseded 1 Oct 2026 by outreach/debosnys-museum-papers.md (gate-7 checked); the ask lives on as new card deb-museum	outreach/debosnys-museum-hires.md (status: SUPERSEDED)
+109	Informational only; account 2 is active again (LANE-NEAR3 lines in ROOM.md 4 Oct 2026 01:34-01:53 UTC)	ROOM.md
+47	Europeana, DPLA and CORE keys are set and answer HTTP 200; APE dropped 25 Sept; only the optional DDB key is left and it blocks nothing	ASKS.md row 47; KEYS.md
