@@ -549,7 +549,11 @@
       "holder": "Agents",
       "next": "period decipherment over 501/505 tokens found on the images (NEXT-PAG, 2 Oct); key 21 codes (12 C, 9 M), held-out 0.649 vs shuffle p95 0.378; next: decode.json + decode_key --check (~$3), then web/blog intake check",
       "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
-      "kind": "recovery"
+      "kind": "recovery",
+      "depth": "D1",
+      "depth_pct": 25.5,
+      "decode_status": "Non-decrypted",
+      "novelty": "N0"
     },
     {
       "name": "debosnys-1883",
@@ -1602,7 +1606,16 @@
       "title": "Paget from Genoa, 1714: first cryptanalytic attempt negative with a matched control",
       "grade": "negative with controls",
       "line": "Both Paget letters (Clairambault 1225 ff.60-66) are transcribed: 500 cipher tokens, 122 codes, one key. A crib attack from the four interlinear glosses failed against its control; one more attempt is allowed before the target closes.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clairambault1225-paget-1714"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clairambault1225-paget-1714",
+      "depth": "D1",
+      "depth_pct": 25.5,
+      "depth_sentence": "In the 28 Aug 1714 letter the glossed cipher passages describe the Princess of Parma (born October 1692), her mother the Duchess, aged 44 while the Duke is 36, and Prince Antoine de Parme, unmarried (period gloss on the leaf; not our reading).",
+      "depth_check": "longest H/C/S run 3 (L1) / 4 (L2) syllable groups, below the authentication distance; firm 129/505 (L1 42/97, L2 87/408); A3V3-PAGA 4 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "novelty": "N0",
+      "key": "period",
+      "text": "known",
+      "verifier_note": "A3V3-PAGA 4 Oct 2026: stale row -- since NEXT-PAG (2 Oct) the leaves are known to carry a period interlinear decipherment over 501/505 tokens; N0, D1 (AUDIT.md 'AUDIT 1 refresh'); title and line to be replaced by the parent"
     },
     {
       "date": "25 Sept 2026",
