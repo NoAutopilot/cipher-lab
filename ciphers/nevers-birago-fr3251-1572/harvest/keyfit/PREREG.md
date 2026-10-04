@@ -1,4 +1,4 @@
-# BIR-KEYFIT pre-registration (4 Oct 2026, written ~07:55 UTC before any fit, control or score is run)
+# BIR-KEYFIT pre-registration (4 Oct 2026, written ~07:47 UTC (commit 23dca7e5) before any fit, control or score is run)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-bir-keyfit.md`. Script `keyfit.py` beside this file (disk only, 0 requests, 0 vision calls).
 

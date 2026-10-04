@@ -1,0 +1,20 @@
+{
+ "matched": {
+  "recovered": [
+   6,
+   8,
+   6
+  ],
+  "mean": 6.666666666666667
+ },
+ "full": {
+  "recovered": [
+   8,
+   10,
+   7
+  ],
+  "mean": 8.333333333333334
+ },
+ "target_len": 357,
+ "PASS": false
+}

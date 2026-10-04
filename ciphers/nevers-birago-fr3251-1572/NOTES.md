@@ -2437,3 +2437,16 @@ disk (same public Gallica regions as the sorter; 0 requests -- the brief's iiif_
 Report of what was found and where it was not found; novelty not classified (rule 10).
 Next (one line, not done): test the tile-to-position mapping on the 98 owner-right tiles (do their positions carry the moved sign in the
 blind passA/passB lines?) before any key-value question, ~USD 2.
+
+## BIR-KEYFIT (4 Oct 2026, account-3 worker): constrained key refit -- untested-by-this-tool (known-answer control below gate)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir-keyfit.md`; files `harvest/keyfit/` (PREREG.md at 23dca7e5 before any run, keyfit.py,
+RESULTS.md, control_no87.tsv/json). Disk only, 0 requests. Question: BIR-ADJ sided with the owner on 98/108 disputed tiles yet decodes
+with those labels score worse -- is the 1572 key's value wrong for some signs? Pre-registered refit: owner-right labels + the 4 review
+answers, clerk-C-agreeing values fixed, only touched non-C signs and owner new piles free, 4-gram coordinate ascent, f117+f144r fit /
+f168 held out and the reverse, shuffled-label and shuffled-value nulls. Known-answer control first on no.87, 10 known letter values
+blanked, at the fit side's length (357 letters): recovered 6, 8, 6 of 10 (mean 6.67 < gate 8) -> stopped, no target fit run. At full
+no.87 length (920) 8, 10, 7 (8.33). Signs with >= 10 occurrences come back 14/15; signs under 10 only 6/15 -- and the target's free signs
+are almost all under 10. Found: the LM refit cannot test the key-value hypothesis at this N. Not found: any value change; nothing applied,
+key.tsv unchanged. Next: the clerk-sheet alignment on no.87 relabelled with the owner's piles (needs an owner pass on no.87's tiles in the
+sorter; then `tools/interlinear_align.py`, ~$2) -- period plain text, not an LM, as the second instrument.
