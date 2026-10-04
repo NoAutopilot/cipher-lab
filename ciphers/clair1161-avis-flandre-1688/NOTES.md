@@ -1579,3 +1579,46 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further seed sweep of the same anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: word-cover value test of the M and contested S signs, ~$2
+
+## RUN5-C1161WC (4 Oct 2026)
+Account 1 worker for LANE-RUN5, brief `.claude/briefs/runs/2026-10-04-acct1-run5-wave1.md`. Disk only, no network, no subagent
+calls. Pre-registration `tx/PREREG_wordcover.md` (pushed 974a85d3 before any score, headroom included); script
+`two/wordcover.py` (pushed 09363dce before scoring); outputs `two/wordcover_headroom.tsv`, `two/wordcover.tsv`,
+`two/wordcover_gate.tsv`. Statistic: fraction of the 3375 decoded letters covered by non-overlapping words (len >= 3,
+freq >= 3) of the fr17 + fr16 vocabulary (24,173 words), dynamic programme over the unsegmented decode.
+
+**Rule 3 headroom check: passed (not at ceiling).** key.tsv decode C0 **0.918**; its 200 order shuffles mean **0.787**
+(p99 0.804); held-out genuine fr17 text (Mazarin, letters 300000-303375, vocabulary built without that file) 0.972 vs its
+letter shuffles 0.643. The statistic separates real French from noise at this N, and the decode sits between the two.
+
+**Planted-value control: FAILED on one of two -> NON-TEST (pre-registered: both must recover).**
+
+| planted | true value | argmax of 26 | true value's rank | gain D (argmax - planted) | order-shuffle p99 | 50-key p95 | result |
+|---|---|---|---|---|---|---|---|
+| `a` = e | u (C, 98 tokens) | **u** | 1 | 0.0382 | 0.0273 | 0.0174 | recovered (all four clauses) |
+| `p` = e | c (C, 112 tokens) | i | 5 (tied with r; i 0.9289, u 0.9256, l 0.9230, t 0.9185, c 0.9179) | 0.0207 | 0.0290 | 0.0251 | **NOT recovered** |
+
+Word cover prefers i, u, l and t over the gloss-confirmed `p` = c (a C-graded value, every aligned gloss occurrence
+agrees): with about a third of the decode's tokens on M signs, short common words (les, ont, qui ...) made from vowel and
+liquid letters out-score the right consonant. Per the pre-registration **the 30 target signs (27 M + 4, S, qb) were not
+scored**, nothing changes in key.tsv (no value, no grade), and the reading is unchanged (`tools/decode_key.py --check`
+below). This is a non-test of the instrument at this decode quality, not evidence about any sign's value.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
+Subagent calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (RUN5-C1161WC, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Gloss-and-judge value test (RUN4-C1161GJ) no sign passes; word-cover value test (RUN5-C1161WC) NON-TEST, planted control p=c not recovered.
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S, qb - blocker: not-attempted; per-sign word cover failed its planted control (RUN5-C1161WC), per-sign gloss/judge undecided (RUN4-C1161GJ); next: a joint instrument -- re-anneal only the M signs with the C and agreed S signs held, objective fr17 4-gram + word cover, pre-registered with the same planted controls (p=e, a=e) required to recover first, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (RUN5-C1161WC, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624), 10-seed consensus PASS (0.334 vs 0.122); per-sign gloss/judge undecided (RUN4-C1161GJ); per-sign word cover NON-TEST, planted control p=c not recovered (RUN5-C1161WC); next: joint M-sign re-anneal with C/S held and planted controls first, as in Remaining gaps
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further seed sweep of the same anneal is not a different instrument
+Verdict: keep going: 2 internal gaps; cheapest next: joint M-sign re-anneal with C/S held and planted controls, ~$3

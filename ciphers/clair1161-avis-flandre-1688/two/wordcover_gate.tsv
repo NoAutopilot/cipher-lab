@@ -1,0 +1,3 @@
+sign	A	tokens	cover_A	argmax	runner_up	rank_A	kind	stat	shuffle_p99	key50_p95	i	ii	iii	iv	verdict	note
+CONTROL:p=c	e	112	0.90815	i	i	10	change	0.02074	0.02904	0.02508	1	0	0	1	fail	NOT recovered
+CONTROL:a=u	e	98	0.87970	u	u	11	change	0.03822	0.02726	0.01741	1	1	1	1	PASS	recovered
