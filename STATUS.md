@@ -4081,3 +4081,27 @@ Nothing promoted, no status.json/NEAR.md/QUEUE.md change (account 3 promotes). G
   M 95 codes 35. Candidate for account 3's promotion decision / a verifier.
 - For account 3: two sorter sheets to build and publish (Vivonne fr.16107 c107-c109 crops; Pisany f.75 crops) -- no ASKS row filed here
   since a row needs the published page link.
+
+## LANE NEAR5 handoff (session_012hS4hPgLzzQfHLW7vuq5KC, account 2), 4 October 2026 (closed 09:3x UTC: jobs 1-3 done, backlog not opened)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near5.md` (worker briefs `2026-10-04-ytbiz-near5-wave1.md`). 5 workers USD 38.81 (all D,
+ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothing called new or read beyond grade; every target stays `partial`.
+- **fr16104-vivonne-spain-1572.** (1) N5-VIVK: Tomokiyo's published 1572-74 key PASSes a pre-registered held-out test against the clerk decipherment
+  of the 4 June 1573 letter (fr.16105 f.103r: 0.545 vs shuffled-key p95 0.340, shuffled-order p95 0.362); the flat-start stream_align learner FAILs
+  (0.434 vs 0.428/0.448; 2/30 codes) -> untested-by-this-tool, key-rebuild [retired]. key.tsv = Tomokiyo values, 26 C / 4 M (S, y, b, A listed).
+  (2) N5-VIV5S: the 5 Sept 1572 letter (Gachard "sans") HAS a clerk decipherment, fr.16104 ff.162r-163r (piece 51) -- stopped before reading.
+  (3) N5-VIVTAB: piece_table.tsv (76 rows, partial sweep: Gallica slow); cipher pieces with NO decipherment located: fr.16105 ink 63 (10 Oct 1573,
+  ~340 lines), fr.16104 inks 52 (Queen, ~270), 53 (Anjou, ~100), 54 (King, ~50). (4) N5-VIV54: piece 54 read with key.tsv, 1,990 tokens
+  H 1475 M 318 U 197; gloss gate (8 interlinear words) 0.609 vs null p95 0.354 PASS by a thin margin over its 0.60 floor; fr16 judge is NOT a gate
+  here (the f.103r positive control itself FAILs, -1.714 vs p05 -0.927); err_2reader 0.19-0.22; French stretches by eye, much still salad.
+  **Ready for audit 1** (LANE-A3V3, account 3 orchestrator relayed 08:52). Caution for the verifier: the H count is key-source grading, not
+  legibility -- set depth from what reads. Next (not run): transcription quality on 54 (look-alike pass on the S/y/b/A labels, ~$3) before
+  pieces 53/52/63 (~$13 / ~$35 / ~$45 at the same per-pass rate); the rest of the leaf sweep (fr.16104 c1-169, c192-324; fr.16105 c1-94, c113-191).
+- **clairambault1225-paget-1714.** Handed to LANE-A3V3 for audit 1 with the 10 H->M tokens (ROOM 06:13).
+- **hellen-frederick-1752.** Gaps refreshed: R4370/R4372 retired for codes 1-800 with the reopening material named. N5-HEL7 context key-rebuild:
+  matched control (R4369 801+ blanked) recovers 0.030 vs gate 0.20 -> CONTROL BELOW GATE, target not run, untestable-by-this-instrument at
+  this N; OOV-floor fix to test_sibling.pmi_from with an offline test. Cheapest next: R4376 P3 on R1049, ~$8.
+- **Backlog (job 4):** not opened. NEXT-STEPS.tsv's S-band runnable rows were claimed by other lanes or worked overnight by LANE-RUN1 (stale rows:
+  ra-karlxi, na-raad-azie, fr16144) -- regenerate NEXT-STEPS.tsv before the next lane reads it.
+- Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
+  "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
