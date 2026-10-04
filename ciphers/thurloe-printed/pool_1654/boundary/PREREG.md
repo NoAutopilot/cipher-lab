@@ -122,3 +122,12 @@ procedure or gate changes; the djvu-OCR instrument stays retired. What is new is
   PASS: a target's CONFIRM licenses lifting its key entry from M to S (one vote + a gated control), nothing more; REFUTE
   licenses dropping the entry; INCONCLUSIVE leaves it M. FAIL: non-test, no grade or key change, and this instrument is
   closed for these entries ("untestable by this method at this N", rule 3 third-attempt clause) -- no further page exists.
+- **Erratum, written after the run (N8-THUR, 4 Oct 2026, 16:4x UTC), logged openly.** The addendum's bullet above restated the
+  CONFIRM outcome as "M to S". That contradicts the binding outcome rules ("What each outcome does", v1), which v3 and this
+  addendum both declare unchanged: CONFIRM -> **C** (the meaning is known plaintext bounded by independently keyed context in
+  Birch's printed decipherment, which is rule 4's C, not a cryptanalytic S), REFUTE (gap) -> the bounded gap at **M**. The
+  binding v1 rules were applied (`decode_stamford.py` BOUNDARY_C / BOUNDARY_M). A verifier who reads the addendum's "S" as the
+  registered outcome should grade 67 and 153 S instead; either way P4's H/C/S share is the same (95.8%).
+- Result (results_tx_full.tsv, `--skip --tx --txplain --check`): K 55/80 = 68.8% verdicts, K CONFIRM 46/55 = 83.6%, W 0/52:
+  **gate PASS**. New-only (pp.274/277/279): K 17/29 = 58.6%, CONFIRM 15/17 = 88.2%, W 0/19. Targets: 67 CONFIRM (p275_L02,
+  edit 0) + 3 INCONCLUSIVE (p.274), 153 CONFIRM (p278_L46, edit 0), 84 REFUTE-gap (p274_L39, gap "although", edit 11).

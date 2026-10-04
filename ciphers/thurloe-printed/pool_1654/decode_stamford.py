@@ -30,6 +30,12 @@ HERE = Path(__file__).resolve().parent
 IMAGE_TSV = HERE.parent / "P4" / "image_transcription.tsv"
 TOMOKIYO_H = {12: "e", 25: "e"}
 MIN_VOTES, MIN_SHARE = 3, 0.7
+# boundary test v3-full (boundary/PREREG.md v1 outcome rules, applied by N8-THUR, 4 Oct 2026, after the gate PASSed on
+# boundary/results_tx_full.tsv: K 55/80 verdicts, K CONFIRM 46/55 = 83.6%, W false-CONFIRM 0/52):
+# CONFIRM -> C (meaning bounded on both sides by independently keyed context in the printed decipherment);
+# REFUTE (gap) -> meaning replaced by the bounded gap, kept at M (the replacement was not the hypothesis under test)
+BOUNDARY_C = {67: "p275_L02 CONFIRM edit 0", 153: "p278_L46 CONFIRM edit 0"}
+BOUNDARY_M = {84: ("although", "p274_L39 REFUTE-gap, bounded gap 'although'")}
 ITERS = 4
 
 
@@ -195,6 +201,12 @@ def generate():
                        A.plain_words(A.clean_lines(lines, *sp["plain"])))
     als, votes = A.iterate([pairs["P5_P6"], pairs["P7"]], iters=ITERS)
     rows = build_key(votes, codes_of(als))
+    for v, why in BOUNDARY_C.items():
+        x, n, t, _g, allr = rows[v]
+        rows[v] = (x, n, t, "C", f"{allr}; boundary {why}")
+    for v, (x, why) in BOUNDARY_M.items():
+        _x, n, t, _g, allr = rows[v]
+        rows[v] = (x, n, t, "M", f"{allr}; boundary {why}")
     (al56,), v56 = A.iterate([pairs["P5_P6"]], iters=ITERS)
     (al7,), v7 = A.iterate([pairs["P7"]], iters=ITERS)
     ctl = ["direction\tletter_tokens\tright\twrong\tvalue_not_in_key\tshare_right_of_all\tshare_right_of_keyed\tunkeyed_values",

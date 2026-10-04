@@ -41,18 +41,18 @@ value	meaning	votes	total	share	grade	all_readings
 47	r	1	1	1.00	M	r:1
 62	army	1	1	1.00	M	army:1
 65	colonel	1	2	0.50	M	colonel:1 col:1
-67	england	1	1	1.00	M	england:1
+67	england	1	1	1.00	C	england:1; boundary p275_L02 CONFIRM edit 0
 81	which	3	4	0.75	C	which:3 whichthelordprotestor:1
 82	as	1	1	1.00	M	as:1
 83	with	4	5	0.80	C	with:4 one:1
-84	noticeofandalthough	1	1	1.00	M	noticeofandalthough:1
+84	although	1	1	1.00	M	noticeofandalthough:1; boundary p274_L39 REFUTE-gap, bounded gap 'although'
 85	have	3	3	1.00	C	have:3
 87	i	1	1	1.00	M	i:1
 126	correspondence	1	1	1.00	M	correspondence:1
 127	dillatisfied	1	1	1.00	M	dillatisfied:1
 130	generalrising	4	4	1.00	C	generalrising:4
 136	geralrising	1	1	1.00	M	geralrising:1
-153	thecavaliers	1	1	1.00	M	thecavaliers:1
+153	thecavaliers	1	1	1.00	C	thecavaliers:1; boundary p278_L46 CONFIRM edit 0
 158	designs	2	3	0.67	C	designs:2 design:1
 159	design	1	2	0.50	M	design:1 hull:1
 171	the	1	1	1.00	M	the:1

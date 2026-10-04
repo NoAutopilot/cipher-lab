@@ -972,3 +972,15 @@ until old pp.73-76 of A. 24/1 are seen. See NOTES.md s.26.
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **Bodleian MS Rawl. A. 24 (Stamford to Thurloe's office, Calais, 13 Mar 1655; printed with i**: **D2** (Partially decrypted; outward "partially deciphered (about 95%)"), 94.8% (H 64 + C 338 of 424; D3 withheld: partly incoherent lines on p.188). Check: period key from Birch's printed decipherments of Stamford's 20 and 30 March 1655 letters, agreeing with Tomokiyo's table. Sentence: "Stamford writes in cipher that the matter came to his knowledge 'by meere chance' and 'without the least injunction of secrecy'."
+
+## Revision after AUDIT (N8-THUR, 4 Oct 2026; rule 10 propagation)
+
+P4 (Bodleian MS Rawl. A. 24, Stamford, Calais, 13 Mar 1655): per-token grades revised by the pre-registered one-vote boundary
+test (`pool_1654/boundary/PREREG.md` v1 outcome rules, v3 addendum; gate PASS on `boundary/results_tx_full.tsv`: K 55/80 =
+68.8% reach a verdict, K CONFIRM 46/55 = 83.6%, W false-CONFIRM 0/52), with every cipher page and both printed decipherments
+of the sibling letters P5+P6 / P7 read from the page image. Key entries 67 (england) and 153 (thecavaliers) M -> C; 84
+(not in P4) re-read "although" at M. P4 now **H 64, C 342, S 0, M 12, U 6 of 424** (was C 338, M 16); 95.8% H/C (was 94.8%).
+**No letter of the reading changed** (`reading_P4.txt` differs only in the four `?` marks and line wrapping); the cross-letter
+control is unchanged (92.8% / 92.8%). Every count "C 338, M 16" quoted above (s.2 safe sentence, depth row) is superseded by
+these counts; the N-class and its safe sentence otherwise stand. Not re-verified by a verifier session (rule 7's fresh
+re-derivation is the lane's to schedule). See NOTES.md "N8-THUR".

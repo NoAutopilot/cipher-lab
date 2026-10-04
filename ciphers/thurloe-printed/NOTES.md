@@ -2587,3 +2587,67 @@ crops: p274_L09-L60 (52), p277_L46-L52 (7 crops, 8 printed lines), p279_L02-L13 
 3 pages x 2 blind Sonnet passes = 6, plain 2 paragraphs x 1 Sonnet read = 2: **8 subagent calls at ~USD 0.5 each (line crops,
 8-52 lines per call)** + 5 worker units (3 reconciliations, 2 plain checks) at ~USD 0.4 = ~USD 6 of the USD 9 cap; the job stops
 before any unit that would cross 80% of the cap or the box.
+
+**Transcription** (`pool_1654/boundary/tx/`, Sonnet, line crops only, 8 calls as planned). Cipher pages, two blind passes each,
+reconciled by the worker against the crops: p.274 (1010 tokens, 545 numerals) passes differ on 5 clear-word tokens, settled from
+the crops (L18 "thean", L20 "fixe", L21 "efeared of disatisfying", L25 "showld"; in three of them both passes were wrong); p.277
+(158 tokens) and p.279 (196 tokens) passes **byte-identical** -- and the worker's line-by-line check of p.277 against the crops
+found **both passes wrong on the same three numerals** of L50a (printed "6. 36. 16. 28. 36.", both "6. 30. 10. 28. 30."),
+corrected in `p277.tsv`. Agreement is not accuracy (Usage 6, LESSONS "Look-alike pass"): checked against the crops by the worker,
+p.274 30 of 52 lines (every numeral exact), p.277 all 8 lines (3 numeral errors, fixed), p.279 all 7 numeral lines (exact).
+err_2reader on the new pages 5/1364 = 0.4%; true error found in checked lines of the agreed text >= 6 tokens (3 numerals, 3 clear
+words), all fixed; unchecked p.274 lines (22) may carry the same kind of shared misread. Plain side (one read per paragraph +
+check): P5+P6 999 tokens, P7 988 tokens; the worker's check of 11 lines found 4 long-s misreads (p276_L16 "lending" -> "sending",
+p279_L19 "mult" -> "must", L22 "lay" -> "say", L31 "alluring" -> "assuring"), fixed in `plainP5.tsv`/`plainP7.tsv`; the rest of
+the plain side is a single read. `boundary_test.py` extended in place (`--txall`, `--txplain`, `tx/pages_full.tsv`,
+`tx/plain_pages.tsv`; no private copy), and `load_key` now scores any key entry carrying a "; boundary" note in its pre-test state (first reading, grade M), so the test's committed results do not go stale when its own outcome is written into the key; `--check` exits 0 for v1, v2, v3, `--txall` and `--txplain`.
+
+**Result** (`python3 pool_1654/boundary/boundary_test.py --skip --tx --txplain`, `results_tx_full.tsv`; `--check` exit 0):
+
+| run | cipher side | plain side | K verdicts / 80 (gate >= 60%) | K CONFIRM (gate >= 80%) | W false-CONFIRM (gate <= 10%) | gate |
+|---|---|---|---|---|---|---|
+| v3 (A3V2-THURBT) | image pp.275/278, OCR rest | OCR | 48 (60.0%) | 38/48 = 79.2% | 0/47 | FAIL by one |
+| descriptive: `--txall` | image, all five pages | OCR | 55 (68.8%) | 45/55 = 81.8% | 0/52 | (pass, not the registered run) |
+| **v3-full (registered)** | **image, all five pages** | **image** | **55 (68.8%)** | **46/55 = 83.6%** | **0/52 = 0.0%** | **PASS** |
+| v3-full, new pages 274/277/279 only (descriptive) | | | 17/29 (58.6%) | 15/17 = 88.2% | 0/19 | -- |
+| v3-full, old pages 275/278 only (descriptive) | | | 38/51 (74.5%) | 31/38 = 81.6% | 0/33 | -- |
+
+Target and control side by side: K CONFIRM 83.6% vs W false-CONFIRM 0.0% (a control that can and does differ, PREREG v1).
+The cipher-side transcription of the three new pages moved coverage 60.0 -> 68.8% and CONFIRM 79.2 -> 81.8%; the plain-side
+image read added one more CONFIRM (153's: OCR "sliould" -> "should"). Read with the history the addendum wrote down before the
+run: this is a second look at a gate that failed by one occurrence, the K/W sample is re-drawn from the new stream, and the
+new-only split (88.2% CONFIRM, 0% W) carries the change, not the redraw alone. It is not a fourth tuning: no knob moved.
+
+Targets (the PREREG v1 outcome rules applied, see the PREREG erratum on "S" vs "C"):
+- **67 england**: CONFIRM at p275_L02 (left "ihadbeenin", gap "england", right "abowtthese", edit 0); the page image shows 67
+  three more times on p.274 (L20, L44, L60), all INCONCLUSIVE (edit band / context not located), none REFUTE -> **M -> C**.
+- **153 thecavaliers**: CONFIRM at p278_L46 (edit 0, the plain side now read from the image) -> **M -> C**.
+- **84**: REFUTE-gap at p274_L39 (bounded gap "although", stored "noticeofandalthough") -> meaning "although" at **M** (not P4).
+
+**Key and P4** (`decode_stamford.py` BOUNDARY_C / BOUNDARY_M, `--check` exit 0): key_stamford.tsv 67 C, 153 C, 84 although M;
+control_stamford.tsv unchanged (92.8% / 92.8% of keyed). `reading_P4.txt`: **H 64, C 342, S 0, M 12, U 6 of 424** (was C 338,
+M 16); no letter changed (the four `?` marks go, lines re-wrap). Revision carried into AUDIT.md ("Revision after AUDIT") and the
+SO-THURLOE-P4 row (rule 10 propagation). Flag for the lane: status.json / depth_pct (94.8 -> 95.8) not edited by this worker;
+a rule-7 fresh re-derivation is the lane's to schedule. Images: the five new leaves are not committed (re-fetch URLs in
+images/manifest.json); the cited crops are; folder 21 MB.
+
+Requests: iiif.archive.org 10 (5 x 302 + 5 x 200 on -L, one leaf at a time, >= 2 s apart). Subagent calls: 8 Sonnet (6 cipher
+passes, 2 plain reads), line crops only; worker units: 3 reconciliations + 2 plain checks. No novelty class (rule 10). Cost: see
+the lane ledger.
+
+## Remaining gaps (N8-THUR, 4 Oct 2026)
+Read so far: P4 406 of 424 sign tokens at H or C (95.8%), 12 M, 6 U (reading_P4.txt, N8-THUR); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4's remaining 12 M tokens are low-vote letter values, not codes: 1 'i' (x3, 1 vote), 32 'x' (x1), 33 'w' (x6), 38 'q' (x2) - blocker: not-attempted; Tomokiyo's published Stamford table agrees on 32, 33 and 38 (GAPS148), so 9 of the 12 could carry his key as a second witness; next: a key-source regrade of 32/33/38 against sources/cryptiana (published key, credited; rule 4 conflict check), ~$1
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (N8-THUR, 4 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92.3-92.8% after the running-head fix (s.16; A3V2-THUR275)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): agrees on 32/33/38/47, conflict on 27 (not in P4), no entry for 143/70/1/67/153
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); running-head numeral 275 dropped via JUNK_LINE and key regenerated, P4 reading unchanged (A3V2-THUR275, 4 Oct 2026)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); all five sibling cipher pages and both printed decipherments read from the page image (A3V2-THURBT, N8-THUR, 4 Oct 2026)
+- [x] retry: one-vote boundary test v3-full on the image-read siblings PASSed its pre-registered gate (K 68.8% / 83.6%, W 0%); 67 and 153 M -> C, 84 re-read "although" at M (N8-THUR, 4 Oct 2026)
+Verdict: keep going: 2 internal gaps (the 32/33/38 regrade against Tomokiyo's table, the P3/P10 open codes); cheapest next: the 32/33/38 key-source regrade, ~$1; also owed by the lane: a rule-7 fresh re-derivation of reading_P4.txt and the status.json depth_pct update (94.8 -> 95.8)
