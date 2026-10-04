@@ -1,0 +1,19 @@
+unit	occ_target	ceppo_cell	grade	ceppo_value	gain_vs_unread	gain_vs_current	null_mean	null_p99	null_spread	verdict
+X_8	7	C48	H	et	-0.0013		-0.0038	-0.0005	0.0074	FAIL
+X_SQ	10	C04	L	a	-0.0053		-0.0049	-0.0015	0.0075	secondary: below
+X_TRI	2	C45	L	u	-0.0005		-0.0001	0.0006	0.0015	secondary: below
+X_AE	16	C46	M	u	-0.0153		-0.0124	0.0090	0.0302	FAIL
+X_T3	7	C35	H	r	-0.0043		-0.0049	-0.0023	0.0050	FAIL
+X_MA	5	C10	M	e	-0.0036		-0.0029	-0.0012	0.0039	FAIL
+X_CC	7	C03	M	a	-0.0038		-0.0036	0.0033	0.0135	FAIL
+X_BB	4	C05	L	c	-0.0051		-0.0036	-0.0008	0.0087	secondary: below
+X_PCT	3	C25	M	n	-0.0064		-0.0054	-0.0000	0.0113	FAIL
+X_EQ	11	C09	H	d	-0.0017		-0.0018	-0.0002	0.0035	FAIL
+X_A	2	C26	L	n	-0.0020		-0.0020	-0.0004	0.0031	secondary: below
+TILE:f144r_L04.2_03	1	C08	M	d	-0.0030		-0.0014	-0.0004	0.0026	FAIL
+TILE:f144r_L04.1_10	1	C40	M	s	0.0004		0.0006	0.0012	0.0008	FAIL
+TILE:f144r_L03_03	1	C39	M	s	0.0006		-0.0000	0.0006	0.0024	FAIL
+T95	11	C39	M	s	-0.0162	0.0000 (current s)	-0.0119	-0.0070	0.0092	FAIL
+TILE:f144r_L05_20	1	C35	L	r	-0.0044		-0.0043	-0.0036	0.0027	secondary: below
+TILE:f144r_L06_02	1	C38	L	s	-0.0024		-0.0019	-0.0007	0.0031	secondary: below
+TILE:f144r_L03_02	1	C04	L	a	-0.0001		-0.0001	0.0003	0.0011	secondary: below

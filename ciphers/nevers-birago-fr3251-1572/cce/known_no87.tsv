@@ -1,0 +1,11 @@
+sign	occ	sheet_value	ceppo_cell	grade	ceppo_value	match
+X_8	R03.4	m	C48	H	et	no
+X_EQ	L14.17	f	C09	H	d	no
+X_EQ	L17.29	n	C09	H	d	no
+X_CE	f178v tile 1	s	C41	M	s	yes
+X_CE	f178v tile 2	s	C41	M	s	yes
+X_CE	f178v tile 3	s	C41	M	s	yes
+X_CE	f178v tile 4	s	C41	M	s	yes
+X_CE	f178v tile 5	s	C41	M	s	yes
+X_CE	f178v tile 6	s	C41	M	s	yes
+X_CE	f178v tile 7	s	C41	M	s	yes

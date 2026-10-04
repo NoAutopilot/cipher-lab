@@ -2450,3 +2450,13 @@ no.87 length (920) 8, 10, 7 (8.33). Signs with >= 10 occurrences come back 14/15
 are almost all under 10. Found: the LM refit cannot test the key-value hypothesis at this N. Not found: any value change; nothing applied,
 key.tsv unchanged. Next: the clerk-sheet alignment on no.87 relabelled with the owner's piles (needs an owner pass on no.87's tiles in the
 sorter; then `tools/interlinear_align.py`, ~$2) -- period plain text, not an LM, as the second instrument.
+
+## BIR-CCE: cross-cipher contamination test against the Ceppo-Nevers key (4 Oct 2026, account 3)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir-cce.md`. **Caveat: same-day use of both keys by one clerk is NOT established
+here.** One value-blind Sonnet vision read mapped 1572 off-sheet/conflict shapes to Ceppo-Nevers table cells
+(`cce/glyph_map.tsv`, pushed before any value lookup). The rule was then pre-registered (`cce/PREREG.md`) and scored by
+`cce/score_cce.py`. Result: **no unit passes.** All 11 primary units FAIL their shuffled-cell null p99. The no.87 known-answer
+check gives 7/10 against a null p95 of 7 (all 7 matches are X_CE -> a Ceppo s cell, the clerk's s). That is not above
+chance, so the negative is weak (no working positive control). Untested-by-this-tool at this N, not refuted. No key, exception,
+reading or count changes; status stays `partial`. Details: `cce/RESULTS.md`. Disk only, 0 requests.
