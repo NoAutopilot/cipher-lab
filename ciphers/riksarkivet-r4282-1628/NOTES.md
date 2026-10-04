@@ -1361,3 +1361,6 @@ resolution, to be re-read: "17, 12, 65, 24, 50, 30, 60. λ. H. II. 1775, 959, 13
 R4282 (letters, Greek signs, digits). Hypothesis to test, not evidence: same chancery key family. Needed: legible screenshots
 of pp. 341-342 (all footnotes) and p. 715 (owner, desk); then a pre-registered crossmatch of the printed pairs against
 R4284/R4282 (tools/ crossmatch, control first).
+- Riksarkivet AO search (owner, 4 Oct 2026 ~20:1x UTC): Efternamn = Camerarius, Datum 1628-1628 = 0 hits (the surname alone
+  gives 97, first rows 1625-1626). The database holds no 1628 Camerarius -> AO letter, despite AO's 25 July 1628 note that they
+  came "satis frequentes"; search result only.
