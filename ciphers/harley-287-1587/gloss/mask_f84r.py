@@ -13,6 +13,7 @@ ap.add_argument('--win', type=int, default=35); ap.add_argument('--dark', type=i
 a = ap.parse_args()
 m = json.load(open(os.path.join(D, 'manifest.json')))
 ents = [x for v in m.values() for x in (v if isinstance(v, list) else [v]) if isinstance(x, dict) and 'box' in x]
+BLANK = {'f84rM_L10_s2.jpg'}
 REGION_Y, CENTRES = 500, [369, 647, 921, 1218, 1460, 1775, 1994, 2290, 2570, 2887, 3202, 3490, 3936, 4164, 4410]
 for e in ents:
     p = os.path.join(D, e['crop']); im = np.array(Image.open(p).convert('L')).astype(float)
@@ -23,6 +24,8 @@ for e in ents:
     peak = lo + int(np.argmax(np.convolve(ink[lo:hi], np.ones(25) / 25, 'same')))
     keep = (max(0, peak - a.top), min(im.shape[0], peak + a.bot))
     im[:keep[0]] = 255; im[keep[1]:] = 255
+    if e['crop'] in BLANK:  # no cipher in the crop, only the next line's gloss (blanked after the passes, see NOTES.md)
+        im[:] = 255
     Image.fromarray(im.astype('uint8')).save(p, quality=92)
     e['masked_rows'] = {'keep': list(keep), 'peak': peak, 'rule': f'peak-{a.top}..peak+{a.bot}, rest white (gloss/mask_f84r.py)'}
 json.dump(m, open(os.path.join(D, 'manifest.json'), 'w'), indent=1)

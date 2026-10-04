@@ -1,0 +1,16 @@
+page	band	cipher	notes
+f84r	L01	A T 7 A / U : # A w 7 V A / + V U : G T A : A + y / G d p V I T 8 7 / U H A 7 y / A T V 7 7	approximate; s2 starts "+ y", overlap with s1 final + taken as the same sign; barred t shapes read as T; s2 word 2 partly clipped
+f84r	L02	D U G 7 A / U A A 7 # D U # G 7 / D d 7 / A T 7 w 7 / A T 7 w 7 A m U D / T d l 7 / d H / U # y G d z D	approximate; s2 begins with the overlap of the last s1 word "A T 7 w 7"; bottoms of signs clipped
+f84r	L03	A : 8 8 7 A / I # / A T 7 / G y 7 U A / 8 U : A 7 A 7 / A T 7 y H z y 7 / A 7 I # G 7 / w 7	overlap "A 7" at s1 end/s2 start counted once; a few signs clipped at lower edge
+f84r	L04	G : A y / G z / H y z G / T 7 # 8 7 / U # D A T U / T U A + y G / A 7 U / I A / w 7 y 7 / 8 d # : 7 # I 7 # A	s1/s2 overlap not firmly matched; word boundaries uncertain
+f84r	L05	A T U A w 7 / l y 7 A 7 # D I # G / 8 : # k I y k / G 7 # A / 7 I A T y / A z / 8 d : 7 y / d y	"(" and ")" marks near the line not coded; overlap "k" counted once
+f84r	L06	A z / 8 U l U I A / U # D / A T 7 y / A d / l y 7 A / 7 A / A T 7 I G / y 7 A z l : A 7 l y	approximate; overlap "7 A" counted once
+f84r	L07	w T 7 A T 7 y / A T 7 y / w I l / G z # D 7 A 8 7 / 8 7 # D / A z / A T 7 / A T y 7 7 / l z y # A 7 A	overlap "8 7" counted once; one stroke above the band on word 4 of s2
+f84r	L08	l y z l z : # D I D . / w T I 8 T / + 7 I # G 7	leading part of s1 is a long run, word breaks uncertain; "." after D is a plain dot, not coded
+f84r	L09	G 7 / y 7 H : A 7 D / T 7 y / G U I 7 A A X 7 / D U y / w I A T / T z # y z y / + y 7 U k 7 / z H / U # D / w 7 / y 7 A G y 7 / T z G 7	s1/s2 overlap approximate; a heavy dash stroke after the last sign (not coded) and a trailing dot
+f84r	L10	U A 8 U : z I y	only s1 has cipher, about 7 signs, all in the middle of the line. s2 is NOT blank: it shows plain Elizabethan script reading roughly "proofe of the sufficiency", which is not cipher and is not coded
+f84r	L11	w T 7 A T 7 y / A T 7 G / w I l / G 7 U l D / - 7 . l y / G 8 # z I 8 # G / l y z H 7 / z H / A T y / H z / l H z y l	partly clipped; the second half of s2 mixes with the overlap, so word breaks are uncertain
+f84r	L12	z H / A T 7 / 8 : k 7 A / 8 z G G I A A I z # / U A / U A / 7 / T 7 A I y 7 A T	overlap partly matched; the dots between words are plain dots
+f84r	L13	G y U : # A / A 7 A A U A I z # / z H / U y G 7 A / H z y / A T 7 / A G l 7 / z H / A T 7	s1/s2 overlap approximate
+f84r	L14	A y 7 U A y / U # D / A w 7 # y / D D U y 7 A / U H / U H A 7 y / U # D / G 7 U l D : A	one or two tall strokes above the band are clipped
+f84r	L15	T z # z y U + l 7 / A 7 8 : y I A G / H z y / z : y / l 7 y A z # A	overlap "z : y" counted once

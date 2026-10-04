@@ -11,6 +11,9 @@ Statistic: key consistency = sum over signs with n>=2 of (count of its majority 
 The control can differ from the target on both: re-pairing changes which letters sit over which signs.
 
     python3 run_align.py [--check]     # --check: exit 1 if the committed key_f84_f90.tsv / control.tsv are stale
+RUN1-HAR (4 Oct 2026): --pairs FILE (default gloss_pairs.tsv), --page f84r (keep only that page's rows) and --suffix S
+(write control{S}.tsv, key{S}.tsv, align{S}.tsv instead of the committed A2-HAR7 names), for the gloss-masked control
+(PREREG_masked.md). With none of the three the run is identical to A2-HAR7's.
 """
 import csv, os, random, subprocess, sys, tempfile
 from collections import Counter, defaultdict
@@ -29,10 +32,15 @@ SIGNS_TSV = {'U': 'a', 'A': 'sta', '+': 'b', '8': 'c', 'D': 'd', 'T': 'dt', '7':
 ALIGN_ARGS = ['--code-prefix', '@', '--wildcard', '?', '--null-cost', '-1.5', '--keep-fs']
 
 
+def opt(name, default=None):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+
+
 def load():
-    with open(PAIRS, encoding='utf-8') as f:
+    with open(opt('--pairs', PAIRS), encoding='utf-8') as f:
         rows = [r for r in csv.DictReader(f, delimiter='\t') if r['gloss'] not in ('', '-')]
-    return rows
+    page = opt('--page')
+    return [r for r in rows if r['page'] == page] if page else rows
 
 
 UNK = [0]
@@ -119,6 +127,10 @@ def main():
         aligntxt = f.read()
     files = {'control.tsv': '\n'.join(out) + '\n', 'key_f84_f90.tsv': '\n'.join(keylines) + '\n',
              'align_f84_f90.tsv': aligntxt}
+    suf = opt('--suffix')
+    if suf:
+        files = {'control%s.tsv' % suf: files['control.tsv'], 'key%s.tsv' % suf: files['key_f84_f90.tsv'],
+                 'align%s.tsv' % suf: files['align_f84_f90.tsv']}
     if '--check' in sys.argv:
         stale = [n for n, t in files.items() if open(os.path.join(HERE, n), encoding='utf-8').read() != t]
         print('stale: %s' % stale if stale else 'check ok')

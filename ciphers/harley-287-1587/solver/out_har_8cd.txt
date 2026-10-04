@@ -1,0 +1,260 @@
+== f80L1: ...hoping theym [Xn Ah7 [◻] lUn87A] for what chaunces so ever you bestowe...
+   Xn             read[H]   exact: in(38141)
+                            near:  i(36535,1)  it(28726,1)  is(17054,1)  on(11859,1)  if(7603,1)
+   Ah7            read[H]   exact: the(116500)  she(14076)
+                            near:  he(24686,1)  they(8823,1)  are(6596,1)  them(6242,1)
+   [◻]            code sign
+   lUn87A         read[I]   exact: lances(41)  lancet(3)
+                            near:  lance(45,1)  landed(43,1)  lands(38,1)  glances(34,1)
+== f80L2: ...yt will [#cA +7 wLlA Ah7 hc:7n IA Xd+c:87] ) and me...
+   #cA            read[H]   exact: not(17628)  meet(731)  ma(183)  mate(113)  nose(105)  mass(88)
+   +7             read[M]   exact: be(20157)
+                            near:  he(24686,1)  by(12242,1)  me(9527,1)  been(7085,1)  we(6111,1)
+   wLlA           read[I]   exact: wet(81)  wept(49)  wells(6)  weeps(3)
+                            near:  well(3496,1)  went(1692,1)  felt(1184,1)
+   Ah7            read[H]   exact: the(116500)  she(14076)
+                            near:  he(24686,1)  they(8823,1)  are(6596,1)  them(6242,1)
+   hc:7n          read[H]   exact: haven(65)
+                            near:  have(13821,1)  even(1741,1)  heaven(251,1)  seven(232,1)  happen(215,1)
+   IA             read[H]   exact: a(43797)  it(28726)  as(19687)  is(17054)  at(13689)  ya(2)
+                            near:  a(43797,1)
+   Xd+c:87        unread    exact: -
+                            near:  deuce(14,2)
+== f80L3: ...touching [HcAVUGL] yt ys honorable for 7...
+   HcAVUGL        read[M]   exact: -
+                            near:  passage(163,2)  cottage(125,2)  message(87,2)  courage(75,2)  forge(69,2)  outrage(14,2)
+== f80L3b: ...yt ys honorable for 7 [AcdD7p#cI Ah7y A:VAI Ac Ah7A AcVm7A] as usuall...
+   AcdD7p#cI      unread    exact: -
+                            near:  saddened(5,2)
+   Ah7y           read[H]   exact: they(8823)  there(7436)  sheer(9)
+                            near:  the(116500,1)  her(22905,1)  she(14076,1)  there(7436,1)
+   A:VAI          unread    exact: -
+                            near:  array(24,1)  tray(24,1)  spray(23,1)  stray(19,1)  surety(19,1)  surry(9,1)
+   Ac             read[H]   exact: to(72275)  a(43797)  so(9848)  see(2808)  te(38)  sa(4)
+                            near:  the(116500,1)
+   Ah7A           read[H]   exact: these(2537)  sheet(42)
+                            near:  the(116500,1)  that(31956,1)  she(14076,1)  this(10705,1)  they(8823,1)
+   AcVm7A         read[H]   exact: armes(2)
+                            near:  terms(523,1)  series(38,1)  torment(18,1)  serves(17,1)  termed(15,1)  sores(4,1)
+== f80L4: ...in all [AVmATA] in numbers, that at the...
+   AVmATA         read[H]   exact: armada(11)  armata(5)
+                            near:  treats(12,1)  trusts(12,1)  armado(9,1)  arrests(4,1)
+== f80L4b: ...that at the [AVmAT dH -V7D7] which was the 20 and the...
+   AVmAT          read[M]   exact: -
+                            near:  arms(515,1)  trust(309,1)  treat(161,1)  armed(34,1)  tread(34,1)  arrest(14,1)
+   dH             read[H]   exact: of(71764)
+                            near:  on(11859,1)  or(8155,1)  if(7603,1)  do(5347,1)  oh(1081,1)
+   -V7D7          read[I]   exact: bred(89)
+                            near:  bride(110,1)  bred(89,1)  breeze(31,1)  breda(6,1)  breeds(6,1)
+== f80L4c: ...which was the 20 and the [A:-I78A] ther wer...
+   A:-I78A        read[H]   exact: subject(880)
+                            near:  subjects(177,1)  abject(6,1)  object(478,2)  suspect(86,2)  subjected(13,2)
+== f80L5: ...Dunkergh: 22 is so [HcVwUVD7] yn the...
+   HcVwUVD7       read[H]   exact: forward(389)
+                            near:  forward(389,1)  forwards(29,1)  forwarded(7,1)  forbade(13,2)  forwardness(4,2)
+== f80L5b: ...yn the [cAAIcn] that he promised Q: to...
+   cAAIcn         read[M]   exact: an(6377)  etienne(2)
+                            near:  occasion(407,1)  action(236,1)  passion(186,1)  nation(160,1)  easier(71,1)  eaten(45,1)
+== f80L5c: ...that he promised Q: to [A7nd Ac-D:XL] 27 to begin the...
+   A7nd           read[M]   exact: send(454)  tend(53)
+                            near:  and(71443,1)  endd(1628,1)  seen(1100,1)  sent(792,1)
+   Ac-D:XL        unread    exact: -
+                            near:  subdue(12,2)  seduce(4,2)
+== f80L5d: ...27 to begin the [dp7##I#G dH Ah7 -Tcw7A] : w[hich] myght bee to the...
+   dp7##I#G       read[M]   exact: opening(137)
+                            near:  opening(137,1)  spending(31,2)  denying(30,2)  spinning(21,2)  depending(20,2)  dreaming(20,2)
+   dH             read[H]   exact: of(71764)
+                            near:  on(11859,1)  or(8155,1)  if(7603,1)  do(5347,1)  oh(1081,1)
+   Ah7            read[H]   exact: the(116500)  she(14076)
+                            near:  he(24686,1)  they(8823,1)  are(6596,1)  them(6242,1)
+   -Tcw7A         unread    exact: -
+== f80L5e: ...myght bee to the [Ac## GcH AcVIw7] ...
+   Ac##           unread    exact: an(6377)  some(4487)  am(3307)  soon(1975)  same(1930)  seen(1100)
+                            near:  some(4487,1)  soon(1975,1)  same(1930,1)  seen(1100,1)  town(1046,1)  sent(792,1)
+   GcH            unread    exact: gaff(2)
+                            near:  of(71764,1)  good(4251,1)  go(2297,1)  get(1015,1)  got(1003,1)
+   AcVIw7         unread    exact: -
+                            near:  terrace(24,1)
+== f80L6: ...that a [-VcAh] about 15 who promised the mayor...
+   -VcAh          read[I]   exact: broth(11)
+                            near:  both(1350,1)  fresh(204,1)  breath(153,1)  broad(153,1)  break(140,1)
+== f80L6b: ...promised the mayor [VzL###AlccA] a...
+   VzL###AlccA    unread    exact: -
+== f80L6c: ...the mayor ... a [h:7n] to open...
+   h:7n           read[M]   exact: -
+                            near:  even(1741,1)  queen(467,1)  haven(65,1)  hue(30,1)  oven(9,1)  hen(7,1)
+== f81L1: ...22 hath a [?7AI?V Ac V7ATcVn] from theym yf he be not more...
+   ?7AI?V         read[M]   exact: dear(1841)  hear(837)  near(574)  bear(424)  desire(423)  year(376)
+                            near:  better(1545,1)  letter(1133,1)  desire(423,1)  hester(413,1)  meeting(339,1)  getting(283,1)
+   Ac             read[M]   exact: to(72275)  a(43797)  so(9848)  see(2808)  te(38)  sa(4)
+                            near:  the(116500,1)
+   V7ATcVn        read[M]   exact: -
+                            near:  restore(37,1)  reader(34,1)  western(33,1)  readers(7,1)  better(1545,2)  letter(1133,2)
+== f81L2: ...yf he be not more [VGAAVcIn??] ther ys great want...
+   VGAAVcIn??     read[I]   exact: -
+                            near:  restrained(41,1)  restraints(15,1)  restraint(38,2)  restraining(25,2)  strained(19,2)  restrains(2,2)
+== f92L1: ...4 sent by the [pd?:XlcA] are...
+   pd?:XlcA       read[I]   exact: -
+                            near:  postiles(3,1)  popular(92,2)  polite(63,2)  devices(21,2)  devils(20,2)  provides(12,2)
+== f92L2: ...are [I7GIA dp IXpp7#] and...
+   I7GIA          unread    exact: -
+                            near:  legat(55,1)  begat(4,1)  regis(2,1)
+   dp             unread    exact: op(35)
+                            near:  of(71764,1)  on(11859,1)  or(8155,1)  do(5347,1)  up(4129,1)
+   IXpp7#         unread    exact: -
+== f92L2b: ...and [8-l:Vd Icn AcH] sent by...
+   8-l:Vd         unread    exact: -
+   Icn            unread    exact: an(6377)  jane(756)  yon(11)
+                            near:  in(38141,1)  you(20591,1)  on(11859,1)  been(7085,1)  an(6377,1)
+   AcH            unread    exact: safe(207)
+                            near:  to(72275,1)  of(71764,1)  so(9848,1)  see(2808,1)  say(2749,1)  soon(1975,1)
+== f92L3: ...imprisoned in [-V+dG7A] it is reported that they have...
+   -V+dG7A        read[M]   exact: -
+                            near:  bridges(40,1)  bruges(147,2)  bridge(37,2)  ridges(4,2)  brookes(3,2)  bragges(2,2)
+== f92L3b: ...it is reported that they have [8hcVX] ...
+   8hcVX          read[M]   exact: cheery(20)  chary(4)
+                            near:  carry(238,1)  harry(196,1)  charm(90,1)  cheer(35,1)
+== f92L4: ... [TcAA?n l7XA l+HAT nUnA] of words of...
+   TcAA?n         read[I]   exact: dawn(24)  detain(13)  damn(13)  tan(8)  dan(8)  dean(7)
+                            near:  reason(713,1)  weston(440,1)  death(429,1)  taste(227,1)  total(111,1)
+   l7XA           unread    exact: -
+                            near:  this(10705,1)  let(1389,1)  left(1080,1)  less(1027,1)  tea(192,1)  legs(165,1)
+   l+HAT          unread    exact: -
+   nUnA           unread    exact: -
+                            near:  want(937,1)  hans(125,1)  ans(22,1)  ant(17,1)  gant(10,1)  nat(10,1)
+== f92L4b: ...of words of [l7AAALVA] whereupon...
+   l7AAALVA       read[M]   exact: letters(643)
+                            near:  letters(643,1)  tatters(4,1)  platters(2,1)  letter(1133,2)  latter(407,2)  matters(313,2)
+== f92L5: ...to have been determined and appointed [cn pc?n cz +lcAA] ...
+   cn             unread    exact: on(11859)  an(6377)  en(84)
+                            near:  of(71764,1)  and(71443,1)  a(43797,1)
+   pc?n           unread    exact: pain(241)  pen(70)  pan(23)  pawn(5)
+                            near:  been(7085,1)  own(2805,1)  down(2453,1)  soon(1975,1)
+   cz             unread    exact: -
+                            near:  to(72275,1)  of(71764,1)  a(43797,1)  as(19687,1)  at(13689,1)  on(11859,1)
+   +lcAA          unread    exact: bless(122)  blast(28)  blot(15)  blest(10)  blots(2)
+                            near:  last(1875,1)  less(1027,1)
+== f92L6: ... [-? ApLcA n7V w+Ap::Xcl] ...
+   -?             unread    exact: be(20157)  by(12242)  bk(16)  bo(3)
+                            near:  to(72275,1)  of(71764,1)
+   ApLcA          unread    exact: appease(12)  apes(3)
+                            near:  speak(831,1)  appear(313,1)  spent(177,1)  appears(172,1)  seat(161,1)  sweet(161,1)
+   n7V            unread    exact: ner(15)
+                            near:  her(22905,1)  new(1383,1)  nor(978,1)  near(574,1)  need(466,1)
+   w+Ap::Xcl      unread    exact: -
+== f92L7: ...That day was [Al7VLAT8: A+c 7n cnhI7nA cH nLwpcVA] ...
+   Al7VLAT8:      unread    exact: -
+   A+c            unread    exact: abbe(4)
+                            near:  the(116500,1)  to(72275,1)  be(20157,1)  she(14076,1)  so(9848,1)
+   7n             unread    exact: en(84)
+                            near:  in(38141,1)  on(11859,1)  been(7085,1)  an(6377,1)  endd(1628,1)
+   cnhI7nA        read[M]   exact: -
+                            near:  ancient(131,1)  ensigns(14,2)  athens(11,2)  achaeans(10,2)  ancients(7,2)  aliens(6,2)
+   cH             read[H]   exact: of(71764)
+                            near:  a(43797,1)  as(19687,1)  at(13689,1)  on(11859,1)  all(10312,1)
+   nLwpcVA        read[M]   exact: newport(37)
+                            near:  neuport(3,1)  report(181,2)  depart(64,2)  nieuport(24,2)  keepers(9,2)
+== f92L8: ... [HdVwVT nXcH :7VA IA Ac Ap77l V?XAT] ...
+   HdVwVT         read[M]   exact: -
+                            near:  forward(389,1)
+   nXcH           unread    exact: -
+   :7VA           unread    exact: verse(17)
+                            near:  very(5684,1)  hers(126,1)  vent(17,1)  verse(17,1)  vere(12,1)  vest(9,1)
+   IA             read[M]   exact: a(43797)  it(28726)  as(19687)  is(17054)  at(13689)  ya(2)
+                            near:  a(43797,1)
+   Ac             read[H]   exact: to(72275)  a(43797)  so(9848)  see(2808)  te(38)  sa(4)
+                            near:  the(116500,1)
+   Ap77l          unread    exact: spell(47)
+                            near:  sleep(219,1)  spent(177,1)  sweet(161,1)  steel(93,1)  speed(69,1)  appeal(62,1)
+   V?XAT          unread    exact: -
+                            near:  rest(629,1)  read(509,1)  road(207,1)  raised(164,1)  raise(129,1)  royal(91,1)
+== f92L9: ... [8clA7In -cX8L] is also...
+   8clA7In        read[M]   exact: -
+                            near:  captain(529,1)  detain(13,1)  capstan(12,1)  cetacean(3,1)  colleyn(2,1)  certain(821,2)
+   -cX8L          unread    exact: -
+                            near:  voice(606,1)  beside(124,1)  bride(110,1)  baize(8,1)  bodice(3,1)
+== f92L9b: ...is also [In lVIAcn LcVA -VIdGLA] the cause whereof is not knowen...
+   In             read[M]   exact: in(38141)  an(6377)
+                            near:  and(71443,1)  a(43797,1)  i(36535,1)  it(28726,1)
+   lVIAcn         read[M]   exact: prison(93)  triton(3)
+                            near:  written(405,1)  risen(45,1)  poison(36,1)  arisen(28,1)
+   LcVA           unread    exact: ears(119)  era(8)  eart(7)
+                            near:  part(1377,1)  heart(1008,1)  years(872,1)  sort(795,1)
+   -VIdGLA        read[M]   exact: bridges(40)
+                            near:  bridge(37,1)  ridges(4,1)  bragges(2,1)  brides(2,1)  bright(219,2)
+== f92L10: ...Of late ther are come to [AA7n lIX] from...
+   AA7n           unread    exact: seen(1100)  ten(320)
+                            near:  then(3710,1)  seen(1100,1)  taken(900,1)  ten(320,1)  step(229,1)  allen(139,1)
+   lIX            unread    exact: pay(490)  lay(482)  li(27)  ty(3)
+                            near:  may(4616,1)  say(2749,1)  way(2172,1)  day(2098,1)
+== f92L10b: ...from [IVILAh nc-l7 pcn] ...
+   IVILAh         read[M]   exact: -
+                            near:  irish(16,1)  aries(3,1)  carrieth(3,1)
+   nc-l7          read[I]   exact: noble(162)
+                            near:  table(665,1)  able(597,1)  unable(120,1)  enable(57,1)  needle(52,1)
+   pcn            read[I]   exact: pen(70)  pan(23)
+                            near:  on(11859,1)  been(7085,1)  an(6377,1)  upon(3715,1)
+== f96L1: ... [AhT TVllLcH w7?Ap:: Vp?+c pUAATD -X] yn B[...] works overthrown...
+   AhT            read[H]   exact: -
+                            near:  the(116500,1)  and(71443,1)  that(31956,1)  she(14076,1)  at(13689,1)  set(905,1)
+   TVllLcH        unread    exact: -
+   w7?Ap::        unread    exact: -
+   Vp?+c          unread    exact: -
+                            near:  robe(39,1)
+   pUAATD         read[M]   exact: -
+                            near:  passed(620,1)  patted(14,1)  pasted(3,1)
+   -X             read[I]   exact: by(12242)
+                            near:  i(36535,1)  be(20157,1)  my(11294,1)  boy(663,1)  bit(216,1)
+== f96L2: ... [wIAhcn HVTn8L A?V:?cA] of they commanding...
+   wIAhcn         read[M]   exact: -
+                            near:  within(841,1)  wished(426,1)  wishes(199,1)  withal(45,1)  washed(37,1)  wither(6,1)
+   HVTn8L         read[M]   exact: -
+                            near:  france(76,1)
+   A?V:?cA        read[I]   exact: serves(17)
+                            near:  street(337,1)  servant(236,1)  bruges(147,1)  thrust(77,1)  throat(72,1)  services(62,1)
+== f96L3: ...informed you of [Vcl7V] and of his...
+   Vcl7V          read[I]   exact: roper(2)  roller(2)
+                            near:  better(1545,1)  letter(1133,1)  rather(1122,1)  matter(835,1)
+== f96L3b: ...and of his [A?V::7nA Ihcn lV7XAA] a doctor in...
+   A?V::7nA       read[M]   exact: -
+                            near:  agreement(296,2)  servant(236,2)  prevent(165,2)  argument(94,2)  prudent(49,2)  torment(18,2)
+   Ihcn           unread    exact: -
+                            near:  when(6170,1)  than(4484,1)  then(3710,1)  ahab(517,1)  iron(278,1)  allen(139,1)
+   lV7XAA         read[M]   exact: -
+                            near:  treat(161,1)  press(80,1)  traits(16,1)  treats(12,1)  prest(6,1)  prests(2,1)
+== f96L3c: ...a doctor in [AV7AA7p] and a...
+   AV7AA7p        unread    exact: -
+                            near:  treated(90,1)  arrested(31,1)  tresses(4,1)  treaty(497,2)  greater(373,2)  seated(186,2)
+== f96L4: ...caried [cH lLAAALVA HcV AhT l7cll wU::8T] and that shortly...
+   cH             read[H]   exact: of(71764)
+                            near:  a(43797,1)  as(19687,1)  at(13689,1)  on(11859,1)  all(10312,1)
+   lLAAALVA       read[M]   exact: letters(643)
+                            near:  letters(643,1)  tatters(4,1)  platters(2,1)  letter(1133,2)  latter(407,2)  matters(313,2)
+   HcV            read[H]   exact: for(18229)  far(1126)
+                            near:  her(22905,1)  or(8155,1)  poor(1152,1)  feel(993,1)
+   AhT            read[M]   exact: -
+                            near:  the(116500,1)  and(71443,1)  that(31956,1)  she(14076,1)  at(13689,1)  set(905,1)
+   l7cll          read[M]   exact: people(1744)  let(1389)  tell(1297)  leap(29)  peep(25)  pet(20)
+                            near:  people(1744,1)  tell(1297,1)  least(757,1)  pearl(277,1)  tall(133,1)
+   wU::8T         unread    exact: -
+== f96L8: ...that he had [wVLAAATn AnAAT7nG l7nc] is fully...
+   wVLAAATn       read[I]   exact: -
+   AnAAT7nG       unread    exact: -
+                            near:  stating(25,2)  staten(13,2)  tasting(7,2)  toasting(5,2)
+   l7nc           unread    exact: ten(320)  pen(70)
+                            near:  ten(320,1)  tone(318,1)  line(289,1)  tea(192,1)  lane(90,1)  pen(70,1)
+
+# counts (target)
+unread: 45 groups; any exact candidate 19; exact or near 34
+read by Bourdeau: 64 groups; any exact candidate 45; exact or near 63
+# null control (unread groups, signs shuffled, 10 reps): 450 strings; any exact 138 (0.307); exact or near 336 (0.747)
+# known-answer control, Cobham clear words length-matched, 0% sign error: 135 words; true word rank-1 exact 120 (0.889); true word in exact or near list 132 (0.978)
+# known-answer control, Cobham clear words length-matched, 10% sign error: 135 words; true word rank-1 exact 90 (0.667); true word in exact or near list 126 (0.933)
+# known-answer control, Cobham clear words length-matched, 20% sign error: 135 words; true word rank-1 exact 54 (0.400); true word in exact or near list 106 (0.785)
+# unread groups of 1-4 signs: 21; target any exact 16 (0.762); shuffled null any exact 0.572 (200 reps)
+# unread groups of 5-+ signs: 24; target any exact 3 (0.125); shuffled null any exact 0.116 (200 reps)
+# known-answer, 5+ signs, 0% sign error: any exact 0.958; true word rank-1 0.877 (n=480)
+# known-answer, 5+ signs, 10% sign error: any exact 0.540; true word rank-1 0.469 (n=480)
+# known-answer, 5+ signs, 20% sign error: any exact 0.360; true word rank-1 0.258 (n=480)
+# known-answer, 5+ signs, 30% sign error: any exact 0.244; true word rank-1 0.127 (n=480)
+# known-answer, 5+ signs, 40% sign error: any exact 0.125; true word rank-1 0.050 (n=480)

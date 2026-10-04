@@ -203,7 +203,7 @@ Read so far: unmeasured for the target as a whole: this folder holds no transcri
 - [ ] key-rebuild: Done by Bourdeau: the harley287 key was built by hand from clear-text cribs; for cobham1588, solve.py (word candidate sets, CSP 1588 word list, up to 2 edits) was run with loop 1 on f.88 only (cobham1588/NOTES.md l.175-190, Escalation). Done 2 Oct 2026 (NEXT-HAR): solve.py on the third-pass f.80r-81r, f.92r 1-10 and f.96v strings with the loop-1 values and -=b: 0 of 45 unread groups read; 5+ sign groups hit at the shuffled-null rate (0.125 vs 0.114) against a known-answer control of 0.877 rank-1 clean, 0.065 at 40 % sign error, so the bottleneck is the transcription or the sign values, not the word list. Done 2 Oct 2026 (A2-HAR4): rerun with A2-HAR3's reported constraints 8 in {c,d} and chi(X) = y: 0 of 45 unread groups changed (12 contain X or 8); 5+ sign groups 0.125 vs null 0.116, control 0.898 rank-1 clean; X = y is a non-test because solve.norm folds y into i. A third value-only pass is not proposed (rule 3); the next solve.py run waits on a sign-by-sign transcription. Not tried: a joint search over all runs with tools/homophonic_anneal.py, fixing the values from signs.tsv, after the R8491/R8494 glosses. tools/data has no Elizabethan English corpus (en16_repo is Thurloe, 1650s), so one would have to be built first (rule 3 era lesson). That search needs a matched control, and any negative from it is conditional on Bourdeau's transcription (rule 2), ~$5
 - [ ] image-check: this project has never seen a Harley 287 image; the folder holds no images and no transcription. Bourdeau read from DECODE full-resolution crops but kept no glyph-level transcription of ff.70r-72v, and f.96r/f.97r have none in runs.txt. Full-size DECODE access has been open to the project account since 28 Sept 2026 (ASKS 42). Planned: a two-pass sign-by-sign transcription of ff.70r-72v (~$22) and of f.96r/96v/97r (~$11), plus the line-G eye-check on f.39v (~$1.5), all from one login, with images kept in the scratchpad only Update A2-HAR6 (3 Oct 2026): R8491 f.84r and R8494 f.90r pair crops are now in images/f84r, images/f90r (the glossed leaves, not the unread ones); the unread leaves still have none. A2-HAR7 (3 Oct 2026): f.90r recut per run (images/f90r_runs), both glossed leaves transcribed in two blind passes and reconciled (gloss/gloss_pairs.tsv).
 - [ ] retry: Bourdeau's word-by-word full-resolution re-reading was done once for ff.80r, 81r, 92r and 96v and up to three times for f.88. Evidence: first pass; second pass at commit a3159f02; third pass at commit dcf0b032 (reading_ff80_92_96_full.md). His Escalation line "[ ] retry: not done" is out of date for that re-read. No gate was set, so rule 3's third-attempt clause does not retire it formally, but a fourth word-by-word re-read of f.88 is not proposed. What is untried is a different instrument: a blind sign-by-sign two-pass transcription (tools/reconcile_passes.py) and a rerun of solve.py with the key extended by the sibling glosses. Planned: rerun every unread run that way once the R8491/R8494 glosses and the transcriptions are in, then regrade
-Verdict: keep going: 10 internal gaps; cheapest next: rerun solver/run_nexthar.py with the one value the f.84r/f.90r glosses add (8 = c/d; A2-HAR7, 3 Oct 2026, gloss/key_f84_f90.tsv, consistency 0.819 vs nulls max 0.305) on the f.80r-81r, f.92r and f.96v strings, no vision, ~$0.5; then the gloss-masked cipher-only pass of f.84r (~$3) and the per-leaf sign transcriptions already listed above.
+Verdict: keep going: 10 internal gaps; 8 = c/d rerun and the gloss-masked f.84r control done (RUN1-HAR, 4 Oct 2026: no token changed; G1 PASS, G2 FAIL, so 8 = d and the values the masked read did not reproduce are graded M); cheapest next: a two-pass blind sign-by-sign transcription of f.88r (R8492) from DECODE full-size crops, one login, crop step pasted, scored against the gloss-confirmed core values only (#,+,7,8=c,A,D,G,H,U,z,d,y), ~$4.
 
 ## Web and blog check (GF-A2-2, 2 Oct 2026)
 
@@ -467,3 +467,95 @@ Brief: .claude/briefs/runs/2026-10-03-acct2-a2-har7.md (LANE-A2PUSH2, account 2)
   result at the time; the script was revised in a6442f53 (A2-HAR6) and run by A2-HAR7 (587ad9a2), so the orphan is
   resolved. Nothing left to re-run under this role.
 - May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
+
+## Step RUN1-HAR, 4 Oct 2026: 8 = c/d solver rerun, and the gloss-masked f.84r known-answer control
+
+Brief: .claude/briefs/runs/2026-10-04-acct1-run1-wave2.md (LANE-RUN1, account 1). Intake gate, pasted before the work:
+
+    $ python3 tools/intake_gate_check.py harley-287-1587
+    harley-287-1587: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+    exit 0
+
+**1. Solver rerun with 8 = c/d (no vision).** `solver/run_nexthar.py` gained `--set SIGN=LETTERS`. With no option the
+output is unchanged (`--check` ok). `python3 solver/run_nexthar.py --set 8=cd --out solver/out_har_8cd.txt` (`--check` ok):
+- No token changed. The exact candidate lists of all 109 groups are identical to `out_nexthar.txt`.
+- Counts are unchanged: unread 19/45 any exact and 34/45 exact or near; read 45/64 and 63/64.
+- Only three near lists change, and no rank-1:
+  - `lUn87A` (read[I] "lances") gains landed/lands.
+  - `8clA7In` (read[M]) gains detain.
+  - unread `-cX8L` gains beside/bride. Its exact list is still empty.
+- Regression check: every H token Bourdeau read keeps its exact candidates and its rank-1, so the key still reproduces
+  them.
+- Controls move only within noise:
+  - Null: 0.307 vs 0.304.
+  - Known-answer rank-1 at 0/10/20 % sign error: 0.889/0.667/0.400 vs 0.896/0.681/0.415.
+  - 5+ signs, target vs null: 0.125 vs null 0.116.
+- Token grades unchanged: H 0, C 0, S 0, M 0, I 0 changed.
+
+**2. Gloss-masked, cipher-only pass of f.84r (known-answer control).** Pre-registered in `gloss/PREREG_masked.md`
+(commit 8933b99a), before either pass ran.
+- **Crops.** No DECODE login was needed: the committed f.84r crops are native resolution. I pasted them back at their
+  manifest boxes into a page canvas (scratchpad), then:
+
+      python3 tools/iiif_lines.py --image <scratchpad>/f84r_canvas.png --region 1950,500,4700,4600 \
+        --centres 369,647,921,1218,1460,1775,1994,2290,2570,2887,3202,3490,3936,4164,4410 --lines-per-crop 1 \
+        --max-width 2450 --overlap 120 --follow-slope 400 --slope-local --out images/f84r_masked --prefix f84rM
+      python3 gloss/mask_f84r.py     # rows outside [peak-78, peak+36] painted white
+
+  - The cipher centres for L06-L09 were corrected by eye: A2-HAR6's list paired gloss/cipher centres off by one there.
+  - `--follow-slope` was needed because the lines drift up to 70 px across the leaf.
+- **Deviation from the pre-registration.** It says L10_s2 (no cipher, gloss only) was blanked. It was not blanked
+  until after the passes ran. Both readers saw L11's gloss words "proofe of the sufficiency" on that crop. Both said
+  so, and both coded no cipher from it.
+  - The leak touches one band (L11).
+  - The sensitivity run below excludes L11. The crop is now blank.
+- **Two blind Sonnet passes.**
+  - Prompt: `gloss/PASS_PROMPT_masked.md`.
+  - Replies are kept unchanged in `gloss/passA_masked.tsv` and `gloss/passB_masked.tsv`.
+- **Mechanical reconciliation, no eye arbitration.** `gloss/reconcile_masked.py` (`--check`) writes
+  `gloss_pairs_masked.tsv`. I did not arbitrate by eye because I had already read the gloss pairs.
+- **err_2reader (masked) = 292 / 686 = 0.426**, against the gloss-in-view passes' 117/814 = 0.144. This is agreement
+  between two runs of one model, not accuracy. Most of the gap is not sign-shape reading:
+  - Pass B slipped bands from L06 to L09: its L07-L09 rows hold the next line's signs. Those four bands carry 180 of
+    the 292 disagreements.
+  - B wrote the two-dot sign as two tokens ": :".
+  - B wrote ":" for the dot+stroke sign w, and X for the barred x G.
+- **Scores.** Statistic, nulls and seeds are as in `gloss/run_align.py` (new `--pairs/--page/--suffix` options; the
+  default run is unchanged, `--check` ok). f.84r only:
+
+      gloss-in-view (gloss_pairs.tsv, f84r rows)   S_v 0.827  C_v 0.947 (19 signs n>=3)   control_f84r_view.tsv
+      masked (gloss_pairs_masked.tsv)              S_m 0.672  C_m 0.875 (16 signs n>=3)   control_f84r_masked.tsv
+      masked nulls: pair-shuffled max 0.257 (mean 0.232), letter-shuffled max 0.241 (mean 0.222)
+      sensitivity, not pre-registered (drop B's slipped bands L06-L09 and the leaked L11): masked 0.689 vs view 0.805
+
+- **Gate.**
+  - **G1 PASS:** 0.672 > 0.257, so the masked read can read.
+  - **G2 FAIL:** S_m 0.672 < S_v - 0.10 = 0.727. C_m 0.875 does clear C_v - 0.15 = 0.797. The sensitivity gap is also
+    over 0.10 (0.116).
+  - Per the pre-registration this shows a drop of that size, from projection or masking cost. At this err_2reader the
+    two cannot be separated.
+- **What the masked read reproduces (`gloss/key_f84r_masked.tsv`).** These values stand on both reads, grade C:
+  - # n, + b, 7 e, 8 c, A t/s, D d, G g, H f, U a, z o, d o, y r/y.
+  - The pass sign coded T by both masked readers ("crossed caret") reads h 16/19. That is the sign the gloss-in-view
+    passes named p (h 35/40), so it is a naming difference, not a new value. It also costs C_m one concordance point
+    against Bourdeau's T = d/t.
+- **What it does not reproduce.** These drop to grade M under the pre-registered rule until a further unmasked read
+  supports them:
+  - **8 = d** (gloss-in-view 3-6 occurrences; masked 0 of 9, where 8 reads c 6, o 2, u 1). This supports A2-HAR7's own
+    suspicion that the readers took the D ∞ sign for 8 in "dyuyne"/"desiren". So 8 = d is no longer carried into
+    solver runs, and step 1's 8 = c/d run is moot: nothing changed anyway.
+  - I = i (masked 5/16).
+  - : = u (3/8).
+  - l (masked 4/12, l/p merged).
+  - w, k, X, c and V = r: the masked readers coded V mostly as y, and w as ":" (pass B), so these have n<3 under their
+    own codes.
+- Token grades: no ciphertext token of an unread leaf was read (H 0, C 0, S 0, M 0, I 0). No reading changed, so no
+  judge was run.
+- Credit: the sign code, the signs.tsv values and solve.py are D. Bourdeau's (github.com/dbourdeau/cyphersolver, code MIT,
+  text CC BY 4.0).
+- Work done: 0 host requests (no DECODE login); 2 Sonnet vision passes; reconciliation mechanical; my own image checks
+  were limited to mask verification at half size.
+- Suggestion (one line, not done): a masked pass whose prompt fixes the band count per crop and the ":"/w and T naming
+  would separate projection from masking cost.
+
+gaps_check (RUN1-HAR, 4 Oct 2026): `OK keep-going harley-287-1587: keep going: 10 internal gap(s), 5 step(s) untried`.

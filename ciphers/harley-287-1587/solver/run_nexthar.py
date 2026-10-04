@@ -7,6 +7,7 @@ plus '-' = b, and the rule-3 controls:
            20 % per-sign substitution error: rate at which the true word is the solver's rank-1 exact candidate, and
            rate at which it is anywhere in its exact or near list.
     python3 run_nexthar.py [--control-text FILE] [--out out_nexthar.txt] [--check]
+--set SIGN=LETTERS overrides a value set (RUN1-HAR: --set 8=cd --out out_har_8cd.txt).
 --check exits 1 if out_nexthar.txt differs from a fresh run (rule 7).
 """
 import argparse, collections, io, os, random, re, sys, contextlib
@@ -133,7 +134,12 @@ def main():
     ap.add_argument('--control-text', default=os.path.join(HERE, 'control_cobham_clear.txt'))
     ap.add_argument('--out', default=os.path.join(HERE, 'out_nexthar.txt'))
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--set', action='append', default=[], metavar='SIGN=LETTERS',
+                    help="override a sign's value set, e.g. --set 8=cd (RUN1-HAR, 4 Oct 2026: gloss/key_f84_f90.tsv)")
     a = ap.parse_args()
+    for kv in a.set:
+        sg, ls = kv.split('=', 1)
+        solve.SETS[sg] = ls
     d = solve.load(); lex = [(v[1], v[0]) for v in d.values() if v[1]]
     runs = parse(a.runs)
     lines, st = target(runs, d, lex)
