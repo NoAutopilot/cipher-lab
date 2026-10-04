@@ -2670,3 +2670,18 @@ Verdict: keep going: 2 internal gaps (the 32/33/38 regrade against Tomokiyo's ta
 - Expected outcome if all three agree: P4 H 64 -> 73, M 12 -> 3, C 342 and U 6 unchanged, no letter of the reading changes.
 - Checks after: `python3 pool_1654/decode_stamford.py --check` exit 0; AUDIT.md revision note and SO-THURLOE-P4 row carry the new counts
   (rule 10 propagation). Not done here: the rule-7 fresh re-derivation (separate session N8-THR7), status.json (flagged to the lane).
+
+## N8-THR7 -- rule-7 fresh re-derivation of reading_P4.txt (4 Oct 2026, 17:09-17:2x UTC by date -u, account 2, for LANE-NEAR8)
+- Derived from commit d82c5e43 (pool_1654 last changed 72444fb3, N8-THUR; N8-THUR2's PREREG 3774a327 had landed but no key or script
+  change of its, so this is the pre-regrade key). Session had read only decode_stamford.py's own code and docstring before the diff
+  (no NOTES.md, AUDIT.md or reading_P4.txt; no spec exists for P4 -- `specs/` has none for thurloe-printed's Stamford pool).
+- Method: a clean git worktree at d82c5e43, `key_stamford.tsv`, `control_stamford.tsv` and `reading_P4.txt` deleted, then
+  `python3 pool_1654/decode_stamford.py` (regenerates key from the P5+P6/P7 printed-decipherment alignment, then decodes P4) and
+  `--check` (exit 0). Regenerated cross-letter control: P5_P6 -> P7 0.923 (768/832), P7 -> P5_P6 0.925 (621/671).
+- Diff against the committed files (`cmp`): reading_P4.txt, key_stamford.tsv and control_stamford.tsv all byte-identical.
+  Differing tokens 0 of 424 sign tokens, against 12 M-graded tokens (H 64, C 342, M 12, U 6) -- within rule 7's bound; the reading is
+  not sent back.
+- Limit: this re-derivation re-runs the same script on the same inputs (djvu OCR + ../P4/image_transcription.tsv); it confirms the
+  committed reading is reproducible and current, not that the transcription or the alignment is right.
+- Flag (not done here): status.json depth_pct for thurloe-printed 94.8 -> 95.8 (406/424 H+C, N8-THUR's own counts, reproduced here);
+  N8-THUR2's regrade, if it lands, moves H/M (64/12 -> 73/3 expected) without changing any letter, so H+C share is unchanged.
