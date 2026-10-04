@@ -1,0 +1,24 @@
+pair	line	pos_in_line_tokens	rec_sign	split_symbol	evidence
+qls	c185R_L07	9	q	qL	pass A S, pass B ls (disagreements.tsv col 9)
+qls	c185R_L07	20	q	qL	pass A q, pass B ls
+qls	c185R_L11	24	q	qL	pass A q, pass B ls
+qls	c185R_L16	30	q	qL	pass A q, pass B ls
+qls	c185R_L18	23	q	qL	pass A q, pass B ls
+qls	c185R_L19	9	q	qL	pass A q, pass B ls
+qls	c185R_L21	10	q	qL	pass A q, pass B ls (disagreements col 11, column offset 1)
+qls	c185R_L21	30	q	qL	pass A p, pass B ls (disagreements col 31, column offset 1)
+qls	c185R_L22	24	q	qL	pass A q, pass B ls
+S	c186R_L02	-	S	S	eye (NEAR3-C1SPLIT crop look 1): looped g-like, after ee
+S	c186R_L03	-	S	S5	eye: open 5-like, after o
+S	c186R_L04	1st	S	S5	eye: open 5-like, qb S p
+S	c186R_L04	2nd	S	S5	eye: open 5-like, qb S 4
+S	c186R_L05	-	S	S5	eye: open 5-like, w S 7 7
+S	c186R_L06	1st	S	S	eye: looped g-like, sd S +
+S	c186R_L06	2nd	S	S	eye: looped g-like, qb S 4
+S	c186R_L06	3rd	S	S5	eye: open 5-like, + S e
+S	c186R_L07	1st	S	S	eye: looped g-like, 4 S l
+S	c186R_L07	2nd	S	S	eye (M, a stroke above, nearer the looped form): 3 S z
+S	c186R_L07	3rd	S	S5	eye: open 5-like, phi S +
+S	c186R_L08	1st	S	S	eye: looped g-like, qb S 7 7
+S	c186R_L08	2nd	S	S5	eye: open 5-like, wb S th
+S	c186R_L08	3rd	S	S	eye: looped g-like, qb S z
