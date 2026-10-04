@@ -1,0 +1,11 @@
+line	col	A	B	flagged	crop	both_conf
+L01	29	rc	rc	B		A:H/B:M
+L05	9	sqc	sqc	B		A:H/B:M
+L09	17	sqc	sqc	B		A:H/B:M
+L10	28	rc	rc	B		A:H/B:M
+L11	20	sqc	sqc	B		A:H/B:M
+L12	26	rc	rc	B		A:H/B:M
+L14	26	PLAIN:curou	PLAIN:curou	AB		A:M/B:M
+L18	18	sqc	sqc	B		A:H/B:M
+L24	14	sqc	sqc	B		A:H/B:M
+L24	27	ee	ee	A		A:M/B:H

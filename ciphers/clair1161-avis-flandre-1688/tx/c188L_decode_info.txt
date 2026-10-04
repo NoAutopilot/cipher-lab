@@ -1,0 +1,29 @@
+# NEAR3-C1TX-c188L, 4 Oct 2026: tx/c188L_rec.tsv (ss split to s s, PLAIN dropped) decoded under the CURRENT key.tsv for information only.
+# Ungraded, NOT a reading (brief step 5): the key was annealed on c185R+c186R only; this leaf is not in it; no control run. Command: tools/decode_key.py . --ciphertext <rec as long tsv> --key key.tsv. NEW_c188L_* are not in the key ([..]).
+c188L_L01	a s f e [NEW_c188L_1] p o r t c i n c e r o i n [NEW_c188L_1] i i [NEW_c188L_2] u o a e u t e
+c188L_L02	i r e f e c o u r u c e p a u o l i s e c p a r l i
+c188L_L03	s u r p l u s i i s f a i i t a u t c i i c i i d o i f
+c188L_L04	u i l e i i i p a c o u o o a u o y t i i i i l i i i r e
+c188L_L05	e n t r e u l x i i [NEW_c188L_3] u e r t o u s l e i i r a n l i e
+c188L_L06	r s e e t a i i c a u s e e e l e s d o c c o n s e i l
+c188L_L07	i e r s i i c e d o r o i e r o y u i f e n c o r i s
+c188L_L08	t o u s i u t i n s i i c i i t e l e i c r o s e f e
+c188L_L09	s o u t a s s e n i l e c i i u x e i [NEW_c188L_3] r o i s p o y
+c188L_L10	i i e n e i n a n c r e i i r u i e r e i c e r o i a e
+c188L_L11	a s s i s t i a c r a s c u u i i i u x e i [NEW_c188L_3] r o i s r e u
+c188L_L12	r e s l u e i t a u t i n l o n u e l o r l r i a e
+c188L_L13	p a r e i l e d e s e s n o t i o u s e t s e i n r o i e u t
+c188L_L14	r o p a r c i a p r e s e e i n a s f e u r e l l a
+c188L_L15	p e r s o u n e e i a t i i l u i e i i s f i e u s
+c188L_L16	p a r i i c a e i p o l e i c e l p l u s i e u r s
+c188L_L17	a u l t r e s s e n i l a [NEW_c188L_2] u e s c f p o s e s e f e n
+c188L_L18	p u t a n e u i i i u a u t i u l x a u i i r u i e r e
+c188L_L19	c o u s e i l o o [NEW_c188L_1] t i u l r e u t u u l r o e n i i i
+c188L_L20	i e l e i a p e p a r a n c i i e e e l p a s s a p u i l i
+c188L_L21	e e n e n t i i u a u t t o u t i e e o u i i e t l a i o i
+c188L_L22	a i a u t l e s n a i u s l i e i s e i e u i s a i l e
+c188L_L23	c o u u e r t i i p e u r i i s t r i c o n g u e u e i
+c188L_L24	n e u t e [NEW_c188L_3] o u s c e u l x e t l o u t u e u e e c e y
+c188L_L25	t o i i l i r e e e l e e l e n t i l r o e n i i i q u a
+c188L_L26	i t i e i a u l t r i l r a u t s e i l u e u r i i c e p a i
+c188L_L27	e t o d c r o i r e a u u g c r a s d u n o o i e n a u r
