@@ -259,8 +259,8 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9729.85	2	34.3	409	target	54	yacht	Period	H	punct	NOTSCORED	
 9729.85	2	34.3	409	target	61	Yawl	Signed	H	sig	NOTSCORED	
 9729.85	2	34.3	409	target	62	Lady	H W Halleck	H	word	AGREE	
-9798.182	2	37.2	382	target	0	Julia	4 PM (time word)	H	time	UNFIXED	his present front particularly from richmond without attacking forti fications the enemy
-9798.182	2	37.2	382	target	1	Morgan	19 (numeral)	H	numeral	UNFIXED	his present front particularly from richmond without attacking forti fications the enemy
+9798.182	2	37.2	382	target	0	Julia	4 PM (time word)	H	time	UNFIXED	from his present front particularly from richmond without attacking forti fications the
+9798.182	2	37.2	382	target	1	Morgan	19 (numeral)	H	numeral	UNFIXED	from his present front particularly from richmond without attacking forti fications the
 9798.182	2	37.2	382	target	3	Chart	Lieut Gen U.S. Grant	H	word	AGREE	
 9798.182	2	37.2	382	target	4	tulip	Period	H	punct	NOTSCORED	
 9798.182	2	37.2	382	target	8	opinion	Field	H	word	COLLISION	the opinion

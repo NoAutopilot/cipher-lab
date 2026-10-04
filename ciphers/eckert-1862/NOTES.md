@@ -1133,7 +1133,8 @@ Rules pre-registered and pushed before any number was computed: `ec18/PREREG-ECK
   (book 1: 6/22 vs 5/22; book 2: 13/87 vs 10/87), i.e. they behave like noise, not like read code. Meanings in print: book 1
   0.670 -> 0.673 (control 0.380 -> 0.381); book 2 0.716 -> 0.737 (control 0.414 -> 0.425). Fully keyed: book 1 28 entries,
   H 370 C 2 -> H 369 C 2 (the 9765.139 whack token now plain); book 2 17 entries, H 253 C 8 I 7 unchanged. OR matches 14 and
-  12 unchanged (9885.368 now shares 12 5-grams, was 7, since "summit Point" is left as written).
+  12 unchanged (9885.368 now shares 12 5-grams, was 7, since "summit Point" is left as written); ec18_align.py re-written for that
+  matches.tsv change: align_tokens.tsv/align_entries.tsv regenerated, align_summary.tsv unchanged, `--check` current).
   The 9 collisions, before -> after: whack, summit, subject, opinion, passed, John now left as written; white, animals, Hotel
   still read [Report], [Monroe], [Weldon]; persons (numeral, out of scope by construction) still [5]. Dodge (by inspection):
   guarded in 9951.514 (rule B), not in 9947.505 or 10020.609. Data conflicts unchanged (rule 4, logged, not settled): Lehigh
