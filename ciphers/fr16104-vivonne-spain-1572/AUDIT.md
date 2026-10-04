@@ -210,3 +210,129 @@ Key: **published** (S. Tomokiyo, credited). Text: unknown.
   for 5-19 Sept 1572; D2 needs a cleaner transcription (tools/lookalike_pass.py on 4/+/p, a/u, z/3, S/d and the ': :' pair
   as one sign, NOTES.md's named step, ~$3) and then a clause above about 42 letters without repairs.
 - Second opinion: row SO-VIV53 queued (second-opinions/PROMPT-chatgpt-viv53.md).
+
+## AUDIT 3 -- ink piece 63, its audit 1 (VIV63-A1, account-3 verifier, 4 Oct 2026, session_01Cv98BirL9D1NvmfTJXv59m)
+
+Item: ink piece 63, BnF fr.16105 ff.187r-194r (Gallica btv1b9009663p, canvases 192-199; cipher ff.190r-194r, canvases 195-199;
+address leaf f.194v). Jean de Vivonne, sr de Saint-Gouard, to **Charles IX** (heading "du S^r de S^t Gourd au Roy", f.187r; docket
+"10 Octobre 1573 Madrid"; plain text addresses "v^re mag^te" on f.190r L01 and f.194r; Gachard II LXIII "Au roi"). Plain ff.187r-189v
+(audiences of 22 Sept and St Michel, the passport for the King of Poland, Çayas), cipher from the head of f.190r to f.194r line ~20,
+plain close "de Madrid ce x^me d'octobre 1573". Gachard flags it "(En partie chiffrée, sans le déchiffrement)".
+Reading under audit: N6-VIV63, N6-VIV63B, N6-VIV63C (PREREGs cb382868, 1d9a6dd0, 36de39f5; transcription frozen 65ee9708), two blind
+Sonnet passes per page + script reconciliation, decoded with key.tsv (S. Tomokiyo's published 1572-74 key; held out on ink 40 vs its
+clerk decipherment 41, N5-VIVK PASS). f.194r lines 5-10 unread (crop fault). Claim under audit (brief): "no clerk decipherment of this
+letter located; the reading is new text." This verifier is not the solver and decoded no new material.
+
+### 0. Premise: is a decipherment of ink 63 filed elsewhere, and who is the recipient?
+- **Recipient: the King**, from four independent marks (f.187r heading, docket, "v^re mag^te" in the plain text, Gachard's "Au roi").
+  Inside the cipher no address style was found under the key (no "maieste"/"sire" string beyond one chance "sire"); grade inferred
+  from the plain marks, which are on the same leaves and in the same hand.
+- **Same volume, before the letter (new this audit):** fr.16105 canvases c113-c191 (the stretch N5-VIVTAB did not view) fetched once at
+  700 px (79 requests + 4 retries) and read on ten contact sheets, then the heads of every decipherment leaf at 1400 px (8 requests).
+  Each decipherment sits immediately after its cipher piece and is headed "dechifré de la precedente", with dockets **18 Juin, 9
+  Juillet, 17 Juillet, 13 Aoust (two leaves), 18 Aoust, 12 Septembre 1573** (c120, c134, c146, c162, c163, c172, c183; c150 is a
+  pasted slip in the July run, docket not read). None is dated October 1573 and none stands without a cipher piece before it. With
+  N5-VIVTAB's c192-c248, **fr.16105 is now viewed from c95 to its end**; c1-c94 (Jan-May 1573) remain unviewed.
+- **fr.16106:** Gachard's vol. III entries begin with I-II (3 Feb 1574, cipher + decipherment), so no 1573 decipherment heads the
+  volume; his one stray there is XLIV (decipherment of a letter to the Queen of 7 Sept 1574). His vol. III list skips many pieces
+  (XIV-XX, XXX, XXXVIII-XL, XLIII, XLV-XLVI, XLIX-LIII, LVIII ff.), so a stray among those is **not excluded** (not viewed).
+- **Gachard's print of the next letter (LXVII-LXVIII, 20 Oct 1573, deciphered)** shares the topics the ink 63 decode suggests (the
+  grand commandeur, Flanders, the duc d'Albe) but none of its distinctive decoded strings: "pardon general", "vigilant et curieux",
+  "trois marchands", "genevois", "Constantin", "Poulogne", "extraordinaire et non usitée" all 0 in Gachard II's text, except "pardon
+  général" in other letters (8 June and 13 Dec 1573, 1570 Brussels). A recurring topic, not a print of 63.
+- Conclusion: **no decipherment of ink 63 located**; the leaves carry no interlinear gloss (N6-VIV63, N6-VIV63C at 1600 px). Not N0,
+  not N1, on the evidence available.
+
+### 1. Extract
+- Plaintext as read: 15,461 tokens; **H 11,932 (77.2%)**, M 2,288, U 1,241; no C, no S. H = both readers agree (or a label rule
+  settled it) AND the code is grade C in key.tsv: key-source grading, not legibility, not a period decipherment.
+- Readable stretches (solvers' word division, by eye, not a gate): f.190r L04 "-ction de [P]oulougne et", L08 "[ce]ste conjuncture",
+  L10 "toute ext[r]aordi[n]aire et [n]on usitée"; f.190v L05 "...[d]u [pr]i[n]ce d'Orange" (decoded "dutadorange"), L33-34 and f.191r
+  L01, L05, f.194r L15 "co_tandeur" x5 [commandeur]; f.191r L02 "[F]landres et a[p]res [p]lu[s]ieurs", L11 "dangier"; f.191v L01
+  "trois [m]archand[s] ...", L19 "[n]o[m]bre de cheuaulx ... artilerie et", L26-27 "les troubles ou [p]ar [d]oulceur d'un [p]ard[o]n
+  genera[l] et bien a[mp]le"; f.193v L01 "vigilant et curieux", L09 "...sont tres h[u]mble(s) et tres a[ff]ection-"; f.194r L11 "toute
+  diligence", L17 "bien [t]ost en [F]landres".
+- Solvers' search log: Gachard I-II (LXIII summary of the plain part only), La Ferrière Catherine IV, Kervyn I-VI (N6-KERV: nothing
+  dated 10 Oct 1573), print_check on phrases_63.txt, phrases_63b.txt, phrases_63c.txt (pc63, pc63b, pc63c: generic or unrelated hits).
+
+### 2. Rule-7 re-derivation and gate checks (run by this verifier before grading)
+- `python3 tx/viv63_decode.py --check` -> "reading_piece63.tsv + rec files up to date" (exit 0).
+- `python3 tx/viv63c_test.py` re-run in full (4 min 43 s, seed 20260967, 200 draws): tx/viv63c_result.json regenerated
+  **byte-identical** (git shows no diff): (i) new pages -1.602 vs letter-shuffle p99 -1.820 PASS; (ii) whole piece -1.547 vs p99
+  -1.835 PASS; C1 f.103r and C2 ink 54 pass b2 with headroom; specificity real margin 0.288 vs 200-wrong-key p99 0.048 (max 0.078)
+  PASS; 48/200 wrong keys pass bare b2.
+- Rule 3 weighed: (i) b2's control can fail differently from the target (it shuffles letter order; b2 measures order) -- a real test.
+  (ii) **b2 alone is not key-specific here**: 24% of wrong keys pass it, rising with length (10% at 6k letters, 19.5% at 12.9k, 24% at
+  14.2k); only the specificity margin separates Tomokiyo's key (about 3.7x the best of 200 wrong keys). (iii) the (i) controls are
+  shorter than the target (1,770/1,793 vs 2,408 letters), disclosed by the solver -- the conservative direction. (iv) the fr16 judge
+  cannot gate on this hand (it FAILs the known-good f.103r control). (v) no gloss on this piece, so no position-anchored check exists.
+  Verdict on the key: Tomokiyo's key reads this letter (specificity PASS; decoded names consistent with the plain part and the month:
+  "[P]oulougne" x3 beside the plain passport narrative, "commandeur" x5 and "Flandres" x5 while the grand commandeur Requesens
+  was waiting to take up the Netherlands (sworn 29 Nov 1573, Kervyn III; Saint-Gouard's printed 20 Oct letter is on the same subject)). The transcription (err_2reader 0.10-0.30 per page) leaves most lines as letter salad.
+
+### 3. Independent search (4 Oct 2026, 12:07-12:20 UTC). Reused from AUDITs 1-2 where the family is the same: solver repositories
+and blogs (CS-5), Douais I-III (Fourquevaux's embassy ended 1572), Gachard *Correspondance de Philippe II* II-III, La Ferrière *La
+Saint-Barthélemy*, Forneron II, Baumgarten 1895, RQH 35 (1884; covers 1572), Gossart I -- not re-fetched.
+| family | what was searched (this audit) | result |
+|---|---|---|
+| (a) canonical series | Gachard II (on disk, whole text): LXIII prints a summary of the plain part only; LXVII-LXVIII (20 Oct 1573) printed in part, different letter; "Déchiffrement d'..." entries: only vol. III XLIV (7 Sept 1574); phrase grep as in step 0 | no print of 63's cipher |
+| (b) sender/recipient | d'Ars, *Jean de Vivonne* (1884, on disk + Google Books snippet): cites "Saint-Gouard à Charles IX, 10 octobre 1573, F. fr. 16105" for a paraphrase of the passport negotiation (= the plain part, as Gachard's summary); the quotation that follows ("Je sçay qu'ilz s'estoient promiz, sur les avertissemens que l'on leur a donné d'icy, que non seullement il ne sortiroit jamoys de France ...") is attributed in the garbled OCR footnote to Charles IX's letter of 10 Dec 1573 ("ibid."), which Gachard LXXIII summarises on the same safe-conduct; its 6-gram overlap with the ink 63 decode (2.8 per 10k letters) equals the ink 53 decode's (2.9), i.e. chance. d'Ars greps: no "pardon", "genevois", "vigilant", "commandeur" (1573) | plain part paraphrased; cipher part not printed |
+| (b') recipient side | La Ferrière, Catherine IV (solver, N6-VIV63): no letter answering 10 Oct 1573; Groen van Prinsterer IV (IA archivesoucorre03housgoog, whole djvu text, 1 request): no 10 Oct 1573 letter (prints Saint-Gouard 9 and 17 July, 3 Nov 1573) | not found |
+| (c) documentary editions / secondary | Kervyn III (on disk, every "Gouard" hit with 1573/commandeur read): Saint-Gouard letters cited for 1573 are 22 Feb, 10 Mar, 6 Apr, 8 June, 9/17/30 July, 13/18 Aug, 20 Oct, 3 Nov; the "grand commandeur ... l'empereur" quotation is from 19 Aug 1574; Google Books: Clauzel (1913) and Forneron (1881) octobre 1573 hits cite other letters (16 Mar 1573; fo 73 Dec 1573); *Bulletin hispanique* (1970) cites the 20 Oct 1573 dispatch on the grand commandeur's health | not found |
+| (c') monograph | **Francis Flament, *L'ambassade du marquis de Saint-Gouard en Espagne de son arrivée à Madrid, en janvier 1572, à la mort de Charles IX, le 30 mai 1574* (1996, 158 pp., OCLC 988579745; listed in *Revue du Nord* 1997, likely a Lille mémoire)** -- covers exactly this embassy; Google Books NO_PAGES; **not read** | **unreachable; could summarise this letter** |
+| (d) holding archive | BnF records for fr.16104-06 (catalogue only, as AUDIT 1); the leaves themselves: fr.16105 c95-c248 viewed (this audit + N5-VIVTAB), no decipherment of 63 | not found |
+| (e) full text | IA FTS: "Saint-Gouard" "10 octobre 1573" (3 hits: Kervyn III x2 notes for other dates, Moréri on an unrelated Saint-Gouard family), "vigilant et curieux" Gouard 0, "pardon general/général et bien ample" 0, "trois marchands genevois" 1 (unrelated Swiss record), "extraordinaire et non usitée" 9 (all Petitot's *Mémoires*, Castelnau on an English audience, unrelated), "10 octobre 1573" passeport Pologne Espagne 12 (unrelated); Google Books "Saint-Gouard" "10 octobre 1573" (503 once; then 4 hits: d'Ars x3, Gachard), "pardon général et bien ample" (relevance list, Granvelle -- no quoted match), "vigilant et curieux" Saint-Gouard 0; print_check (solvers) as above; HathiTrust full text unreachable from the cloud | not found |
+| (f) solver repos / blogs | CS-5 (3 Oct 2026), not re-run | not found |
+| (g) scholarship | OpenAlex "Saint-Gouard ambassade Espagne" (12: the BnF manuscript records), "Saint-Gouard 1573 Pologne passeport" 0, "Vivonne Saint-Gouard chiffre" 1 (Catherine de Médicis rhetoric, 2022, unrelated); S2 5 (Saint-Sulpice embassy and others, unrelated); CrossRef noise; HAL "Saint-Gouard" 0; Persée not reached; JSTOR: 2 rows queued (families i and ii) | not found |
+Unreachable / not done: **Flament (1996)**; Ribera (2007) in full; *Lettres de Henri III* I (the King of Poland's own letters, Oct 1573,
+snippets only in AUDIT 2); fr.16105 c1-c94 and the fr.16106 pieces Gachard skips (not viewed); AGS Estado K / Arch. nat. K 1530-1531
+(possible Spanish intercepts); HathiTrust full text; Persée; JSTOR (queued).
+Requests: gallica.bnf.fr 92 (79 + 4 retries at 700 px, 8 docket regions at 1400 px, 1 manifest; >= 1.5 s apart, 4 HTTP 500 and 1
+empty reply on the first pass, each retried once after 3 s); archive.org 2 (Groen IV djvu, Gachard II metadata); be-api 13 (FTS); googleapis 15; openalex 3;
+crossref 2; HAL 1; semanticscholar 1.
+
+### 4. Classification (step 3 of the template)
+**ink 63 (fr.16105 ff.190r-194r, cipher part of Saint-Gouard to Charles IX, Madrid, 10 Oct 1573): N3** (plaintext and mapping). No
+prior plaintext, summary or decipherment of the cipher part located; Gachard (vol. II, 1875-77) and d'Ars (1884) summarise and paraphrase only the
+plain part (the passport for the King of Poland), and Gachard flags the piece "sans le déchiffrement"; no decipherment leaf for it in
+fr.16105 from c95 to the end. Not N4: Flament (1996), a 158-page study of exactly this embassy from January 1572 to May 1574, was not
+read, nor Ribera (2007) in full, nor fr.16105 c1-c94 and the unanalysed fr.16106 pieces. Evidence quality: moderate (date greps and
+phrase searches on OCR; a leaf-by-leaf look at the same volume). Confidence: medium.
+Key: **published** (S. Tomokiyo, credited). Text: unknown.
+- Safe sentence: "Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of the cipher part of Saint-Gouard's letter to
+  Charles IX of 10 October 1573 (BnF fr.16105 ff.190r-194r), which Gachard (vol. II, 1875-77) listed as having no decipherment; the decoded words
+  include the King of Poland, the prince of Orange, the commandeur, Flanders and a general pardon. No printed plaintext or separate
+  decipherment of the cipher part was located in the editions searched."
+- Unsafe sentences: "the reading is new text" / "first decipherment of the 10 October 1573 letter" / "previously unread" (rule 10;
+  Flament 1996 not read) / "the letter was unread" (its plain part is summarised by Gachard and paraphrased by d'Ars) / "Saint-Gouard
+  reports that ..." followed by any decoded clause (no clause reaches the authentication distance; step 4a).
+
+### 4a. Depth (rule 4a)
+- Tokens: H 11,932 of 15,461 (77.2%); unread: names/codes -- not identified (U 1,241 are labels outside key.tsv: c, V, single o, e, 2,
+  r, l, Z, t; key.tsv carries no nomenclator; the consistent unread code inside "co_tandeur" x5 may be a key gap for m or a
+  nomenclator sign, a key question for the solver); other -- M 2,288; f.194r lines 5-10 not transcribed.
+- **D1, "fragments read".** The longest all-H run in reading_piece63.tsv is 32 decoded letters (f.191r L11 "raioantentenddredraauroat
+  dangier"), and it is not clean French; every recognisable stretch needs repairs: "vigilant et curieux" is 17 clean letters; "toute
+  extraordinaire et non usitée" 30 decoded letters with two gaps and one h/r repair; "les troubles ou par doulceur d'un pardon general et
+  bien ample" about 55 letters with four gaps and four h/l, a/m repairs. Against French simple-substitution unicity about 28 letters and
+  an authentication distance about 42 (higher for this homophonic key), no clause clears it without liberties. No code value is tested
+  in two contexts (letter key). The verifier cannot write one true, specific sentence about what the cipher part says: the words
+  (Poland, Orange, the commandeur, Flanders, a general pardon, three merchants, horses and artillery) fit the month but are a
+  vocabulary, not a statement. The 24% wrong-key b2 pass rate also weighs against reading more into b2.
+  depth_check: key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + b2 order gate (whole piece and new pages) and 200-wrong-key
+  specificity (PREREG-N6VIV63C, re-run byte-identical here) + decoded names consistent with the plain part and the date (this audit,
+  inferred); no gloss, no content check.
+- Outward words: "fragments read". Not counted as a unique solve (N3 but D1). The longest and best-gated of the three Vivonne pieces
+  audited, still below D2.
+
+### 5. Postmortem
+- Failure named: the brief's claim sentence ("the reading is new text") uses rule-10 wording and overstates twice: there is no
+  continuous reading, and the letter is not unknown (its plain part is in Gachard and d'Ars). Corrected here. NOTES.md N6-VIV63/63B/63C
+  say "Novelty not classified" and call the French stretches "interpretation, not a gate" -- no over-claim found there.
+- The identity questions the brief raised are settled as far as the cloud reaches: recipient the King; no decipherment of 63 in
+  fr.16105 c95-c248; fr.16105 c1-c94 and fr.16106's unanalysed pieces remain open (low prior: the volume files decipherments
+  directly after their cipher, and the one stray Gachard records is of 1574).
+- Next steps that would move this item: N4 needs Flament (1996) (a LOCAL-QUEUE or interlibrary row; OCLC 988579745) and Ribera (2007)
+  read for 10 Oct 1573, ~$1 of runner time; D2 needs the solvers' named steps (the "co_tandeur" / y / single-o key questions and a
+  lookalike pass on r/z, 2/z, c/e, 6/b with overlap dedup, ~$7) and then a clause above about 42 letters without repairs.
+- Second opinion: row SO-VIV63 queued (second-opinions/PROMPT-chatgpt-viv63.md).

@@ -3486,6 +3486,35 @@
       "depth_by": "session_01Vap6PnSM2j7fVXirX6Dtd2",
       "depth_date": "4 Oct 2026",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "4 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N3",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16104-vivonne-spain-1572",
+      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 3 -- ink piece 63, its audit 1 (VIV63-A1, account 3)",
+      "document_id": "BnF fr.16105 ff.190r-194r (ink 63, cipher part of ff.187r-194r): Jean de Vivonne, sr de Saint-Gouard, to Charles IX, Madrid, 10 Oct 1573",
+      "title": "Saint-Gouard to Charles IX, 10 Oct 1573 (BnF fr.16105 ff.190r-194r): French fragments of the cipher part read under Tomokiyo's published 1572-74 key",
+      "grade": "N3 (one audit), key published (S. Tomokiyo, credited). 15,461 tokens: H 11932, M 2288, U 1241 (f.194r lines 5-10 unread); b2 order gate PASS (whole piece -1.547 vs p99 -1.835; new pages -1.602 vs -1.820) and wrong-key specificity PASS (0.288 vs p99 0.048; 48/200 wrong keys pass b2 alone); no gloss; judge not a gate; rule-7 --check up to date, viv63c_test.py re-run byte-identical. Not N4: Flament (1996), a study of this embassy 1572-74, unread.",
+      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of the cipher part of Saint-Gouard's letter to Charles IX of 10 October 1573 (BnF fr.16105 ff.190r-194r), which Gachard listed as having no decipherment; the decoded words include the King of Poland, the prince of Orange, the commandeur, Flanders and a general pardon. No printed plaintext or separate decipherment of the cipher part was located in the editions searched.",
+      "text": "unknown",
+      "depth": "D1",
+      "depth_pct": 77.2,
+      "depth_unread": {
+        "names_codes": "not identified (1,241 U labels outside key.tsv; no nomenclator in key.tsv)",
+        "other": "2,288 M; f.194r lines 5-10 not transcribed"
+      },
+      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + b2 order gate and 200-wrong-key specificity (PREREG-N6VIV63C, re-run byte-identical by VIV63-A1) + decoded names consistent with the plain part and the date (inferred); no gloss, no content check",
+      "depth_note": "H 11932 of 15461; longest all-H run 32 letters and not clean French; best stretches ('toute extraordinaire et non usitee', 'les troubles ou par doulceur d'un pardon general et bien ample') need gaps and repairs; below the ~42-letter authentication distance",
+      "depth_by": "session_01Cv98BirL9D1NvmfTJXv59m",
+      "depth_date": "4 Oct 2026",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
