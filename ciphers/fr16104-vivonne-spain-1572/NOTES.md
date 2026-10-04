@@ -1373,3 +1373,65 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
 - [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit and key question (lookalike pass done, N7-VIV54L)
 Verdict: keep going: 13 internal gaps; cheapest next: ink 54 key question on the key image, ~$0.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
+
+## N7-VIV54Q (4 Oct 2026, LANE-NEAR7 worker, account 2): ink 54 key question "to z" = "qae", checked against the key image
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near7-wave1.md "N7-VIV54Q". Claimed 13:18 UTC, box to 13:58 UTC. Disk only: 0 Gallica, 0 cryptiana
+requests (the key image sources/cryptiana/web/henryiii_Vivonne1.png and the native f.173r-v line crops c187_f173r_* / c188_f173v_* were on disk;
+the crops are native, 1600 px windows of the 3750 px region). 0 subagent calls; read by this worker's own eye.
+
+**Key image (Tomokiyo, henryiii_Vivonne1.png, 543 x 213 px).** Column u has four entries, not the two key_tomokiyo.tsv/key.tsv record: row 1 "oo",
+row 2 "a", **row 3 a Σ-shaped sign** (top bar, upright stem bending back, bottom bar; no diagonal), row 4 a k-like sign with an arrow to a circled
+variant. Column a row 3 is the flat z (diagonal stroke), which key.tsv maps z -> a. Column q has "to" (row 1) and the looped @ (row 5). Below the
+table, the codeword row gives "Espagnaols / quel? / que / votre majeste"; its "que" entry is a single two-part sign, not "to" + a letter sign.
+
+**The crops (native, autocontrast only).** Montage tx/viv54Q/to_sign_evidence.jpg (key cells col a and col u at top; then f.173r L11, L14, L17, L20,
+L05-end, f.173v L12 x2; then two ordinary z's for comparison, f.173r L14 pos 4 and L07 "tz z a"). In all 7 "to"+sign occurrences in the montage, the
+sign after "to" is the same Σ/I shape as col u row 3: two horizontal bars joined by a near-upright stem. The ordinary z's on the same lines are
+different glyphs: a crossed z (L14) and a 2-shaped z with a diagonal (L07). Also seen in the line stacks (not in the montage): f.173v L04 (both
+"to"s), L14 and L17 carry the same shape after "to". Those include positions the passes labelled R (f.173v L12 "to R m" at the line start) and x (L04 "to x P").
+f.173r L10 and f.173v L02 "to z tz" look 3-like (ʒ) at this scale; not settled.
+
+**Contexts in the committed transcriptions (all 18 pages, *_rec.tsv):** the label after "to" is z 57 times, x 23, 2 23, a 12, then a tail. On
+f.173r-v: "to z m" 8 (que), "to z tz" 4 (decoded "qai", French "qui"), "to z P" 1; f.173v also "to R" 3, "to x" 1. Reading "u" in that slot gives
+que/qui throughout; the stated z -> a and x -> s give "qae"/"qai"/"qs". This is a context fact, not the evidence: the evidence is the glyph shape matched to a
+key cell. The 2-of-3 rule could not reach it because no reader ever wrote a separate label for it (N7-VIV54L).
+
+**Answer to the key question (grade of the evidence: the key cell is H, read from the published key; the per-position identification is by eye,
+7 positions in the montage).** The "z" after "to" in ink 54 is not the col-a flat z but the col-u row-3 sign, = u. key.tsv is **not changed**: key.tsv maps
+transcription labels, and no label in the transcription isolates this glyph (z, R and x each merge it with their own cells). Changing z -> u
+would be wrong for the other ~120 aligned z's (ink 40: z -> a 77). Changing it only after "to" would be a context rule. Either way that is settling a
+label by what decodes better (PREREG-N7VIV54L (i)), so reading_piece54_L.tsv is unchanged and nothing moved. Next step (gaps list): a pre-registered
+new label for col u row 3, relabelled position by position from the native crops (not by context), then re-decode with --check. That
+would remove one letter repair from every que/qui (about 13 on ink 54; the "to z"/"to x" contexts on inks 53/63 need the same per-position check
+first). Also noted: key_tomokiyo.tsv and tx/SIGNS.md omit col u rows 3-4 and col q's codeword "que" sign. Adding them is part of that step, not done here.
+Report what was found and where it was not found; no novelty classified. Requests: none. Subagent calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (N7-VIV54Q refresh, 4 Oct 2026; supersedes the N7-VIV63G list above, all its other lines kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53
+ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
+N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; Flament, L'ambassade du marquis de Saint-Gouard en Espagne 1572-1574 (1996, OCLC 988579745) and Ribera (2007) unread, fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: a LOCAL-QUEUE row for Flament and Ribera on 10 Oct 1573 (interlibrary or the owner's browser), ~$1
+- tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
+- ink 63 key questions (y, single o, c, V, e, 2, r) - blocker: not-attempted; context table done (N7-VIV63G, tx/viv63g_keyctx.tsv): the 4-gram fill is right on only 5/9 held-out codes at this N and biased to i/l, so only y->l (alignment + fill agree), V->n and e as an "m(m)" sign in "co_tandeur" stand as weak proposals; next: read cells h, l, m, n of Tomokiyo's key image (henryiii_Vivonne1.png) for a y-like l homophone, a V-like n and an e-like m/mm sign, then a PREREG'd key-change step with the wrong-key control, ~$1.5
+- ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
+- ink 53 audit (depth re-check) - blocker: not-attempted; AUDIT 2 (VIV53-A1) set N3 / D1; the N7-VIV53L re-decode passes b2 + wrong-key again (PREREG-N7VIV53L) but no repair-free stretch reaches ~42 letters (longest 20); next: verifier session (account 3) on reading_piece53_L.tsv, ~$5
+- ink 53 residual label questions - blocker: not-attempted; 82 split tiles left UNSETTLED by the 2-of-3 rule and 270 one-reader gaps never re-read (tx/lookalike53L/*/focus.tsv), the ': :'-as-null alternative, and "rauldhoit" (f.171r L15, where French wants "pourroit") unresolved (N7-VIV53L); next: owner's sign sorter on the focus files, or a window re-read of the gap tiles (tx/viv53L_windows.py extended to gaps), ~$2
+- ink 54 clean reading - blocker: not-attempted; window look-alike pass done (residual 0.134), true-error audit a non-test, no stretch near ~42 letters (N7-VIV54L); next: owner's sign sorter on tx/lookalike54/*_focus.tsv (275 questions) or a window-instrument audit (lookalike_pass.py audit + viv53L_windows.py audit), ~$1.5
+- ink 54 key question "to z" (qae) - blocker: not-attempted; the key image answers it at the cell (N7-VIV54Q: the sign after "to" is Tomokiyo col u row 3, a Σ/I shape, = u; readers merged it into label z, or R/x), but no transcription label isolates it, so the reading has not moved; next: PREREG a new label (e.g. "Z_u", key.tsv grade H, col u row 3) and relabel only positions where the glyph is checked by eye on native crops (13 "to"+sign on f.173r-v, then the 57 "to z" / 23 "to x" contexts on the other 15 pages), regenerate reading_piece54_L/53_L/63 with --check, ~$1.5
+- ink 54 audit (depth re-check) - blocker: not-attempted; b2 + wrong-key PASS on the re-decode (PREREG-N7VIV54L); next: verifier session (account 3), ~$5
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N7-VIV54Q; from the N7-VIV63G list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars, Catherine IV-V, Groen IV read; Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q)
+Verdict: keep going: 13 internal gaps; cheapest next: ink 54 col-u-row-3 relabel (PREREG, per-position by eye), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
