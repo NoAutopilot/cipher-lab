@@ -1,4 +1,5 @@
-partial
+found-solved
+Potter, A Knight of Malta at the Court of Elizabeth I (Camden 5th ser. 45, 2014), introduction footnotes on de Seure's Lisbon despatches, read by this worker (Cambridge Core PDF + Google Books snippet QtbeBgAAQBAJ): fr. 3151 fo. 84-87 is cited 'in cipher, with decipher' and a deciphered sentence is printed (SEURE-WEB section below).
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. Ribier's *Lettres et
@@ -528,3 +529,99 @@ Read so far: 0 tokens read (0 H, 0 C); 63 positions of f75L lines 5/9/15 two-rea
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85, no material quality gain on item 43's leaves
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gaps; cheapest next: reconcile f81R readers A/B (or sorter pass) to err < ~0.24, then re-run kp/nom_test.py unchanged, ~$3
+
+## Web and blog check (SEURE-WEB, account 3, 4 Oct 2026, 18:16-18:2x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-seure-web.md`. Per .claude/briefs/check-solved.md "Open web and blog comment
+threads". Every query and hit:
+
+(a) Plain web searches (WebSearch, 4 Oct 2026):
+1. `chevalier de Seure Lisbonne 1558 lettres Henri II de Fresne chiffre` -- hits: Biblissima record for BnF Français 3151;
+   **Potter (ed.), *A Knight of Malta at the Court of Elizabeth I: the correspondence of Michel de Seure, French ambassador,
+   1560-1561*, Camden Fifth Series 45 (Cambridge, 2014)**, introduction PDF on Cambridge Core; CiNii/MIT bookstore records
+   of the same; Cambridge "Appendix III: the subsequent career of Michel de Seure". Opened (below).
+2. `"fr. 3151" BnF chiffre OR cipher OR déchiffrement` -- no hit about this item (HistoCrypt Henri IV/Nevers digit cipher,
+   ARCSI bulletin; generic pages).
+3. `"Anthoine Galuan" OR "Antoine Galvão" courrier portugais Seure 1558` (distinctive clear-text phrase, f85R line 1-2) --
+   only the explorer António Galvão (d. 1557); nothing on this letter.
+4. `Seure ambassadeur Portugal 1558 lettres chiffrées Henri II Bibliothèque nationale français 3151` (folder title) --
+   same Potter/Biblissima hits, plus a Huygens WVO PDF and a Folger record (catalogue entries for Potter 2014).
+5. `"oster à vostre enemy" OR "oster a vostre ennemy" Seure` (phrase from Potter's footnote) -- no web hit.
+6. `Serrão "Michel de Seure, embaixador francês em Portugal" duas cartas epistolário` -- CSIC *Culture & History* article
+   citing Serrão 1969 on Seure's embassy; Potter again. Serrão's article itself not reached.
+7. `Falgairolle "chevalier de Seure" ambassadeur de France en Portugal` -- Online Books Page (Falgairolle), Potter, Droz HCL
+   article; no online copy of Falgairolle 1896.
+
+(b) Blog site searches (WebSearch with allowed_domains): `Seure 1558 Lisbon cipher Henri II` on scienceblogs.de
+(Cipherbrain), cryptiana.blogspot.com, cryptiana.web.fc2.com, ciphermysteries.com -- two hits, neither about Seure (Cipher
+Mysteries "Fifteenth century cryptography", 2016; Cipherbrain "A cipher device used by king Henry II", 17 July 2018, about
+the Écouen cipher book). `"fr. 3151" OR "français 3151" OR "Seure" cipher` on the same blogs + dbourdeau.github.io,
+github.com, de-crypt.org -- only Bourdeau's site and forks of his repository. No comment thread found on any blog
+mentioning Seure, fr. 3151 nos. 39-44, or a decipherment. Local mirror sources/cryptiana/ re-grepped (`3151`, `de Seure`,
+`chevalier de seure`): only `seurete` false positives in bazeries3.htm and cross-reference rows in keys/IMAGE-QUEUE.tsv.
+
+(c) Hits opened:
+- **Potter 2014, introduction** (Cambridge Core PDF, read via WebFetch; curl got an HTML challenge page). Two
+  footnotes cite this recueil: "De Seure to Henri II, Lisbon, 12 October 1558, BnF, fr. 3151, fos 84-87, passage in
+  cipher on fo. 85r-v" and **"De Seure to Henri II, 12 December 1559 [sic], BnF, fr. 3151, fo. 84-87, in cipher, with
+  decipher: 'il seroit aisé d'oster à vostre enemy ce grant soullaigement qu'il a de ce monde de delà, ou pour myeulx
+  dire, tout le nerf et tout le moyen qu'il a desormais de maintenir la guerre contre vous.'"** Both checked word for word
+  against the Google Books API snippets of the same volume (`QtbeBgAAQBAJ`, queries `"Seure" "3151"` and `"in cipher, with
+  decipher" Seure`; key + country=US), so these are not summariser artefacts. The same apparatus says Luis de Matos
+  (*Les Portugais en France au XVIe siècle*, Coimbra 1952) did not find de Seure's late-1558 originals in fr. 3151, and that
+  they "appeared in" J. V. Serrão, 'Michel de Seure, embaixador francês em Portugal (1557-1559): duas cartas para o seu
+  epistolário', *Arquivos do Centro Cultural Português* 1 (1969), 455-458; and that E. Falgairolle, *Le Chevalier de Seure,
+  ambassadeur de France en Portugal au XVIe siècle* (Paris, 1896) printed letters from Portugal found at St Petersburg (one
+  of 30 Jan 1559, pp. 15-29).
+- Falgairolle, *Jean Nicot ... sa correspondance diplomatique inédite* (1897), archive.org `jeannicotambassa00nico`, full
+  djvu text grepped for `Seure`, `3151`, `chiffr`, `décembre 1558`: Seure only as Nicot's predecessor; its index says Seure's
+  own correspondence was published in *Le chevalier de Seure* (1896). No fr. 3151 letter printed there.
+- Falgairolle 1896 itself: archive.org advancedsearch (creator Falgairolle, 7 items, not among them), Gallica SRU (not
+  digitised; the SRU did list a different manuscript, btv1b525105423, "Dépêches originales du chevalier DE SEURE et du Sr DE
+  NICOT" 1559-1561), Google Books `6P4RYAAACAAJ` NO_PAGES. **Not opened.** Serrão 1969: not opened (no online copy found).
+- *Knowledge Exchanges Between Portugal and Europe* (2025, Google Books `DnGLEQAAQBAJ`, snippet only): names "Seure: BNF,
+  Français 3151 and 15871. Français 6638 contains copies of the letters held today in Saint Petersburg".
+
+DECODE: local snapshots in sources/decode/ (10 TSVs, latest 2 Oct 2026) grepped for `3151` and `Seure`: no record.
+Solver repositories, fresh shallow clones 4 Oct 2026: dbourdeau/cyphersolver (head 3 Oct 2026) README row for catalogue item 10
+still reads "Seure's six Lisbon letters (~2,000 signs, homophonic) left open", and `research/gallica_sweep/bnf_candidates.txt`
+lists nos. 39-44 as "Lettre, avec chiffre"; no decipherment. aaymeloglu/unsolved-ciphers (head 27 Sept 2026): no hit
+(`seure` only as an Old French word in forster-1644 lexicon files).
+
+Requests: WebSearch 9; WebFetch cambridge.org 5 (one 503 on assets.cambridge.org excerpt); curl cambridge.org 1 (HTML
+challenge), assets.cambridge.org 1 (connection reset); googleapis.com/books 6; archive.org 3; gallica.bnf.fr SRU 3;
+openlibrary.org 1; github.com 2 clones. No 429.
+
+## Premise check (SEURE-WEB, account 3, 4 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md says "no decipherment on the leaves" (Bourdeau, quoted) and "Not found ... any key or
+decipherment on these leaves" (GAPS102); SEURE-KP/N8-SEU treated item 44's clear prose as a *possible* plaintext of item 43's
+cipher. **Found, against those statements:** Potter 2014 (above) describes fr. 3151 fo. 84-87, the 12 Dec 1558 letter, as
+"in cipher, with decipher" and prints a deciphered sentence. Where the decipher sits (interlinear, margin, or item 44's clear
+prose being a deciphered copy of item 43) was not seen by this worker; folio 84-87 vs canvas f81-f87 is not pinned (manifest
+labels are all NP).
+(b) Other solvers' working files: Bourdeau's guiche1551 notes and README (no attempt, no decipherment); Aymeloglu: nothing.
+Not found.
+(c) Physical neighbours: no new image fetched (brief: no decoding; the decipher's location is the next step). Earlier
+workers viewed f72-f88 at 500px and native crops of f81R, f83L/R, f85R, f87R; none reported an interlinear decipher.
+Not resolved by this pass.
+(d) Recipient's/receiving side: Potter 2014 (the English embassy edition, which surveys the Portugal embassy), Matos 1952,
+Serrão 1969 (Portuguese side), Falgairolle 1896. Found: Potter's quoted decipher; Serrão 1969 reportedly prints de Seure's
+fr. 3151 late-1558 despatches (not opened).
+
+## Verdict (SEURE-WEB, 4 Oct 2026)
+
+**found-solved**, for the 12 Dec 1558 letter at least: an editor (Potter 2014, Camden 5th ser. 45) cites fr. 3151 fo. 84-87
+as "in cipher, with decipher" and prints the deciphered plaintext of one passage; Serrão 1969 is cited as printing de
+Seure's late-1558 fr. 3151 despatches. Scope caveat: the 27 Dec letters (items 40/41) are not named in these footnotes, and
+this worker has not seen the decipher on the leaves. Who did not know (README): **F0** for the 12 Dec letter -- the specialist
+edition links this manuscript to its decipher; the list keeper (Bourdeau's catalogue item 10, "left open"; his notes "no
+decipherment on the leaves") and this repository did not. Contribution left to hand on: a correction to Bourdeau's catalogue
+item 10 citing Potter 2014. Any key we rebuild from the decipher is `period`, not `ours`; any reading of these letters is N0/N1
+territory for a verifier (rule 10), not a novelty. Prior KP/N8 tests stand as written (they tested an alignment, not novelty).
+Suggested next steps (one line each, not done): locate the decipher on the leaves (native view of the canvases holding fos
+84-87, ~$1); get Serrão 1969 pp. 455-458 and Falgairolle 1896 (LOCAL-QUEUE / owner); check items 40/41 (27 Dec) against the
+same decipher's key before any further cryptanalysis.
+
+Intake gate after this pass (pasted, 4 Oct 2026): `python3 tools/intake_gate_check.py fr3151-seure-1558` ->
+`fr3151-seure-1558: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
