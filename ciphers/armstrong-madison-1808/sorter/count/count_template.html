@@ -1,0 +1,164 @@
+<title>Armstrong 1808 Mark Count</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Spectral:wght@500&display=swap">
+<style>
+/* Layout: one column of passage cards, the manuscript strip wide on the left, the count control on the right; stacks on a phone. */
+:root{
+  --bg:#eef0f2; --panel:#ffffff; --ink:#1d2430; --muted:#5b6474; --line:#d5dae1;
+  --accent:#1f5f8b; --accent-ink:#ffffff; --done:#2f7a4f; --unsure:#8a6a12; --mark:#d64020;
+  --display:"Spectral", Georgia, serif; --body:"IBM Plex Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#13171d; --panel:#1b2129; --ink:#e6e9ee; --muted:#9aa3b2; --line:#2c3440;
+  --accent:#6aa9d6; --accent-ink:#0d1520; --done:#5cbf86; --unsure:#d7b04a; --mark:#ef6a4a; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#13171d; --panel:#1b2129; --ink:#e6e9ee; --muted:#9aa3b2; --line:#2c3440;
+  --accent:#6aa9d6; --accent-ink:#0d1520; --done:#5cbf86; --unsure:#d7b04a; --mark:#ef6a4a; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:16px;padding-block:20px 60px}
+h1{font:500 1.7rem/1.2 var(--display);margin:0 0 .3rem;text-wrap:balance}
+.lede{color:var(--muted);max-width:68ch;margin:0 0 1rem}
+.how{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:.9rem;margin-bottom:1rem}
+.how b{color:var(--ink);font-weight:600}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding-block:10px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.meter{flex:1 1 220px;height:8px;background:var(--line);border-radius:4px;overflow:hidden;min-width:0}
+.meter i{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
+.save{font-size:.85rem;color:var(--muted)} .save.err{color:var(--mark)}
+#prog{font:500 .95rem var(--mono);font-variant-numeric:tabular-nums}
+h2{font:600 .8rem var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:26px 0 10px}
+.cards{display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:14px;align-items:start}
+.card.answered{border-color:var(--done)}
+.card:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.head{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-bottom:8px}
+.pid{font:500 .9rem var(--mono)}
+.where{color:var(--muted);font-size:.9rem}
+.where em{font-style:normal;font-family:var(--mono);color:var(--ink)}
+.strips{display:grid;gap:8px;min-width:0}
+.strip{overflow-x:auto;border-radius:4px;background:#fff;border:1px solid var(--line);cursor:zoom-in}
+.strip img{display:block;max-width:100%;height:auto}
+.strip.big{cursor:zoom-out} .strip.big img{max-width:none;width:220%}
+.ctl{display:grid;gap:10px}
+.lab{font-size:.85rem;color:var(--muted)}
+.step{display:flex;align-items:center;gap:6px}
+.step button{width:44px;height:44px;font:600 1.3rem var(--body);border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer}
+.step input{width:72px;height:44px;text-align:center;font:500 1.4rem var(--mono);font-variant-numeric:tabular-nums;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 .85rem var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--unsure);border-color:var(--unsure);color:var(--accent-ink)}
+.note{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font:inherit;font-size:.9rem;background:var(--panel);color:var(--ink)}
+.state{font-size:.85rem;font-weight:600}
+.state.ok{color:var(--done)} .state.uns{color:var(--unsure)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+@media (max-width:760px){ .card{grid-template-columns:1fr} }
+@media (prefers-reduced-motion:reduce){ .meter i{transition:none} }
+</style>
+
+<div class="wrap">
+  <h1>Armstrong to Madison, 20 February 1808: how many marks?</h1>
+  <p class="lede">Each card is one stretch of shorthand marks between two numbers, shown in place on the manuscript (NARA M34, roll 14). The stretch is boxed in red. Count the separate marks inside the box. You don't need to say what they are.</p>
+  <div class="how"><span><b>Count</b> every separate mark in the red box, including small ticks and dots that are clearly ink.</span><span><b>Tap the picture</b> to zoom in; tap again to zoom out.</span><span><b>Can't tell</b> is a real answer: use it when two marks might be one.</span></div>
+  <div class="bar"><span id="prog">0 of 0 counted</span><div class="meter" aria-hidden="true"><i id="meterFill"></i></div><span class="save" id="save">Connecting&#8230;</span></div>
+  <h2 id="hDisp">Where our two transcriptions disagree</h2>
+  <div class="cards" id="disp"></div>
+  <h2 id="hAgree">Where they agree: a quick confirm</h2>
+  <div class="cards" id="agree"></div>
+</div>
+
+<script>
+const CARDS = /*DATA*/[];
+const $ = id => document.getElementById(id);
+const answers = {};            // id -> {count, unsure, note}
+let col = null;
+const LS = 'armCount:v1';
+function loadLocal(){ try { Object.assign(answers, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) {} }
+function saveLocal(){ try { localStorage.setItem(LS, JSON.stringify(answers)); } catch (e) {} }
+function stamp(){ return new Date().toISOString(); }
+const pending = {};
+function persist(id){
+  saveLocal(); const a = answers[id];
+  if (!col){ return; }
+  clearTimeout(pending[id]);
+  pending[id] = setTimeout(() => {
+    $('save').textContent = 'Saving\u2026'; $('save').className = 'save';
+    col.doc(id).set({passage: id, count: a.count == null ? null : a.count, unsure: !!a.unsure, note: a.note || '', updated: stamp()})
+      .then(() => { $('save').textContent = 'All answers saved'; })
+      .catch(err => { $('save').textContent = 'Not saved (' + (err && err.message || 'store unavailable') + '). Your answers are kept in this browser; reload to retry.'; $('save').className = 'save err'; });
+  }, 350);
+}
+function refresh(){
+  const n = CARDS.filter(c => answers[c.id] && (answers[c.id].count != null || answers[c.id].unsure)).length;
+  $('prog').textContent = n + ' of ' + CARDS.length + ' counted';
+  $('meterFill').style.width = (100 * n / CARDS.length) + '%';
+  CARDS.forEach(c => { const el = document.querySelector('[data-id="' + c.id + '"]'); if (el) paint(el, c.id); });
+}
+function paint(el, id){
+  const a = answers[id] || {};
+  el.querySelector('input[type=number]').value = a.count == null ? '' : a.count;
+  el.querySelector('.chip').setAttribute('aria-pressed', a.unsure ? 'true' : 'false');
+  const note = el.querySelector('.note'); if (document.activeElement !== note) note.value = a.note || '';
+  const st = el.querySelector('.state');
+  if (a.unsure){ st.textContent = "Marked: can't tell" + (a.count != null ? ' (best guess ' + a.count + ')' : ''); st.className = 'state uns'; }
+  else if (a.count != null){ st.textContent = 'Counted: ' + a.count; st.className = 'state ok'; }
+  else { st.textContent = 'Not counted yet'; st.className = 'state'; }
+  el.classList.toggle('answered', a.count != null || !!a.unsure);
+}
+function set(id, patch){ answers[id] = Object.assign({count: null, unsure: false, note: ''}, answers[id] || {}, patch); persist(id); refresh(); }
+function card(c){
+  const el = document.createElement('section'); el.className = 'card'; el.dataset.id = c.id;
+  const left = document.createElement('div'); left.style.minWidth = '0';
+  const head = document.createElement('div'); head.className = 'head';
+  const pid = document.createElement('span'); pid.className = 'pid'; pid.textContent = c.id + ' \u00b7 page ' + c.page;
+  const wh = document.createElement('span'); wh.className = 'where';
+  const parts = c.where.split(' _ ');
+  if (parts.length === 2){ wh.append('between '); const a = document.createElement('em'); a.textContent = parts[0]; wh.append(a, ' and '); const b = document.createElement('em'); b.textContent = parts[1]; wh.append(b); }
+  else wh.textContent = c.where;
+  head.append(pid, wh);
+  const strips = document.createElement('div'); strips.className = 'strips';
+  c.imgs.forEach((src, i) => { const s = document.createElement('div'); s.className = 'strip'; s.tabIndex = 0; s.setAttribute('role', 'button');
+    s.setAttribute('aria-label', 'Manuscript strip ' + (i + 1) + ' of ' + c.imgs.length + ' for ' + c.id + '; activate to zoom');
+    const im = document.createElement('img'); im.src = src; im.alt = 'Manuscript strip with the marks boxed in red'; s.append(im);
+    const z = () => s.classList.toggle('big'); s.addEventListener('click', z); s.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); z(); } });
+    strips.append(s); });
+  if (c.imgs.length > 1){ const n = document.createElement('div'); n.className = 'lab'; n.textContent = 'This stretch runs over ' + c.imgs.length + ' lines: count the red boxes together.'; strips.append(n); }
+  left.append(head, strips);
+  const ctl = document.createElement('div'); ctl.className = 'ctl';
+  const lab = document.createElement('label'); lab.className = 'lab'; lab.htmlFor = 'n_' + c.id; lab.textContent = 'Marks in the red box' + (c.imgs.length > 1 ? 'es' : '');
+  const step = document.createElement('div'); step.className = 'step';
+  const minus = document.createElement('button'); minus.type = 'button'; minus.textContent = '\u2212'; minus.setAttribute('aria-label', 'One fewer');
+  const inp = document.createElement('input'); inp.type = 'number'; inp.min = '0'; inp.max = '99'; inp.inputMode = 'numeric'; inp.id = 'n_' + c.id;
+  const plus = document.createElement('button'); plus.type = 'button'; plus.textContent = '+'; plus.setAttribute('aria-label', 'One more');
+  const cur = () => (answers[c.id] && answers[c.id].count != null) ? answers[c.id].count : null;
+  minus.onclick = () => set(c.id, {count: Math.max(0, (cur() == null ? 1 : cur()) - 1)});
+  plus.onclick = () => set(c.id, {count: (cur() == null ? 0 : cur()) + 1});
+  inp.addEventListener('change', () => { const v = inp.value === '' ? null : Math.max(0, Math.min(99, parseInt(inp.value, 10) || 0)); set(c.id, {count: v}); });
+  step.append(minus, inp, plus);
+  const row = document.createElement('div'); row.className = 'row';
+  const uns = document.createElement('button'); uns.type = 'button'; uns.className = 'chip'; uns.textContent = "Can't tell"; uns.setAttribute('aria-pressed', 'false');
+  uns.onclick = () => set(c.id, {unsure: !(answers[c.id] && answers[c.id].unsure)});
+  row.append(uns);
+  const note = document.createElement('input'); note.type = 'text'; note.className = 'note'; note.id = 'note_' + c.id; note.placeholder = 'Note (optional): e.g. "4th mark may be two"';
+  note.setAttribute('aria-label', 'Note for ' + c.id);
+  note.addEventListener('change', () => set(c.id, {note: note.value.slice(0, 300)}));
+  const st = document.createElement('div'); st.className = 'state'; st.setAttribute('aria-live', 'polite');
+  ctl.append(lab, step, row, note, st);
+  el.append(left, ctl); paint(el, c.id); return el;
+}
+loadLocal();
+const disp = CARDS.filter(c => c.disputed), agree = CARDS.filter(c => !c.disputed);
+disp.forEach(c => $('disp').append(card(c))); agree.forEach(c => $('agree').append(card(c)));
+$('hDisp').textContent = 'Where our two transcriptions disagree (' + disp.length + ')';
+$('hAgree').textContent = 'Where they agree: a quick confirm (' + agree.length + ')';
+refresh();
+(async () => {
+  let db = null; try { db = await window.claude?.use?.('db'); } catch (e) { db = null; }
+  if (!db){ $('save').textContent = 'Saving in this browser only'; return; }
+  col = db.collection('counts');
+  $('save').textContent = 'Connected. Answers save as you go.';
+  Object.keys(answers).forEach(persist);   // answers given before the store connected
+  col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.passage || pending[d.passage + ':typing']) return;
+      if (ch.type === 'removed') delete answers[d.passage]; else answers[d.passage] = {count: d.count == null ? null : d.count, unsure: !!d.unsure, note: d.note || ''}; });
+    saveLocal(); refresh(); },
+    err => { $('save').textContent = 'Could not load saved answers: ' + (err && err.message || 'unknown error') + '. Reload the page.'; $('save').className = 'save err'; });
+})();
+</script>
