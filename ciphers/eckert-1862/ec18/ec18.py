@@ -134,7 +134,7 @@ def or_index(ordir, grams):
             m = HDR.search(line)
             if m:
                 cur = m.group(1) or m.group(2)
-            lw = words(line)
+            lw = [sys.intern(x) for x in words(line)]  # interned: the 48-volume index otherwise nears 15 GB
             w += lw
             pg += [cur] * len(lw)
         vols[f.stem], PAGE[f.stem] = w, pg
