@@ -209,6 +209,6 @@ LANE-POOLS2	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md	O
 LANE-NEAR5	other	.claude/briefs/runs/2026-10-04-acct3-lane-near5.md	Opus 5.5	60	600	claimed session_012hS4hPgLzzQfHLW7vuq5KC 2026-10-04 06:09	2026-10-04 05:49	Vivonne known-plaintext (fr.16105 decipherment); Paget to audit; hellen gaps; NEXT-STEPS backlog
 LANE-RUN3	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-run3.md	Opus 5.5	60	600	done 2026-10-04 10:00	2026-10-04 08:07	POOLS2 follow-ups; NEXT-STEPS backlog; sorter inputs for account 3
 LANE-NEAR6	other	.claude/briefs/runs/2026-10-04-acct3-lane-near6.md	Opus 5.5	60	600	done 2026-10-04 11:56	2026-10-04 09:41	Vivonne pieces 52/53/63 with the proven key; NEAR5 follow-ups; backlog
-LANE-RUN4	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-run4.md	Opus 5.5	60	600	claimed session_01Hx7xwPp8rY3FXTn6WRkAbc 2026-10-04 10:40	2026-10-04 10:07	retrospective first; RUN3 follow-ups; Pisany 1586-87 known-plaintext; backlog
+LANE-RUN4	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-run4.md	Opus 5.5	60	600	done 2026-10-04 12:05	2026-10-04 10:07	retrospective first; RUN3 follow-ups; Pisany 1586-87 known-plaintext; backlog
 LANE-NEAR7	other	.claude/briefs/runs/2026-10-04-acct3-lane-near7.md	Opus 5.5	60	600	queued	2026-10-04 12:0x	Vivonne D1 -> D2 via cleaner transcription; ink 63 gap; ink 52; Hellen; backlog
 LANE-RUN5	account-1	.claude/briefs/runs/2026-10-04-acct3-lane-run5.md	Opus 5.5	60	600	queued	2026-10-04 12:0x	start after LANE-RUN4 closes; Pisany f.275r retry with line crops; es132; backlog

@@ -4162,3 +4162,28 @@ Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run3.md`; worker briefs `2026-1
 - **ra-karlxi-fullmakt-1677 (RUN3-KARL).** 13 more scans, 0 hits; open unchanged (row was already run by RUN1-KARL).
 - Sorter inputs (brief job 3): none built this lane -- the two POOLS2 sorters were already published by account 3; Pisany known-answer hints added.
 - Retrospective: LEDGER rows since the last retrospective likely past 12 (19 LANE-RUN3 rows) -- account 3.
+
+## LANE RUN4 handoff (session_01Hx7xwPp8rY3FXTn6WRkAbc, account 1), 4 October 2026 (closed 12:0x UTC: lane budget spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run4.md`; worker briefs `2026-10-04-acct1-run4-wave1.md` .. `-wave3.md`. 16 workers USD 53.12
+(14 D, 2 D-: MOR 1.56x, PIS1 1.50x), orchestrator ~6.8; all archived, no check-in armed. Nothing promoted; no status.json/NEAR.md/QUEUE.md change.
+- **Retrospective (job 0).** RETRO-2026-10-04-acct1.md (711 ledger rows since RETRO-2026-10-03-acct3). P1 tool part, P2, P3, P5 applied by RUN4-RAPPLY
+  (8bdc3a2f): next_steps.py reads prose While-waiting; brief_price_check.py FLOOR (Fable 5 / Opus 2.5); parent.md 10-min check-ins; README scratchpad
+  hand-off. P1 backfill by RUN4-WAITBF: While waiting on 35 NOTES.md, `next_steps.py --wait-only` 47 -> 0. **P4 (account 4 CLOSERs, 55 sessions,
+  USD 68) NOT applied: for the account-4 parent / owner.** Retro finding: fr16142-noailles ~USD 80 with zero tokens read.
+- **fr16045-pisany-rome-1585 (RUN4-PIS1, PIS2).** 17 Sept 1586 f.244v+f.245r = Colbert p.51-52 postscript: kp86c known-answer PASS 0.581 vs
+  key-shuffle p99 0.385 / order p99 0.461, blind 0.650/0.620, control 5/5 at err 0.471; 734 tokens C 417 M 312 U 5. key86 cells: T45/T47/T49/T57
+  reader confusions; T31 a real table-vs-page conflict (m vs o). 4 Nov 1586 f.275r vs Colbert pp.121-122: NON-TEST (control 0/5 at err 0.756,
+  readers one call over 30 crops); next kp86e per-line re-pass ~$6. Together with RUN3-PISA the 17 Sept 1586 letter's cipher is read at C
+  against its clear copy -- account 3: verifier/audit decision.
+- **es132-vargas-mexia-1578 (RUN4-ES41V, ES50, ES50R).** June 1578 letter (f.50, TOC no.25, not in cabinet-noir 47b6db9): f.50v (err 12.7%), f.51r
+  (18.2%), f.50r (40%, pass B dot-vowel lapse) all gate (b) PASS with control f.90v in the same run; S 1042 M 289 U 105 across the three pages.
+  Next: replacement pass B on f.50r ~$1.5, f.51v ~$4.5. Images 21 MB.
+- **clair1161-avis-flandre-1688 (RUN4-C1161AU, C1161GJ).** AUDIT.md sec 4+5 addenda: C/S 67.0% (was 60.7), D1 holds. **For account 3: status.json
+  depth_pct 60.7 -> 67.0.** Gloss-and-judge on 2/tz/qb/4/S: no sign clears its gate; key unchanged.
+- **sachsstaatsarchiv-manteuffel-1712 (RUN4-MANT, MANT2, MANT3).** 0501/0500/0502 are copies of f.409r-v; 3/4 + 2 more digit diffs settled from
+  both images; 2 clear-vs-cipher pairs (371 = il, M; 161.583.237.932 = affaires suedoises chunk, M); word pairing HELD vs control.
+- **moray-wood-1568 (RUN4-MOR).** R8345 P4 full-size fetched (one DECODE login, scratch); refsheet fit (11 -> 0 misplaced); next waits on ASKS 103.
+- **kaliningrad-2015 (RUN4-KAL).** ru19_lat held-out FN 17-22.5% (per-fold 7-39%, one source): the four Russian FAILs stand on the held-out gate.
+- **na-raad-azie-1800 (RUN4-RAA).** 167 leaves swept with new tools/numeral_page_detect.py; no cipher seen; parked.
+- **rah-juan-manuel-1521.** RAH REQUEST.md item (iv) A-23 ff.34-38 (R9501 + its Texto descifrado) and ASKS 68 updated (lane, 10:4x).
