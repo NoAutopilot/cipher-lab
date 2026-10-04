@@ -67,3 +67,25 @@ Verdict: keep going: 3 internal gaps; cheapest next: Tomokiyo key PNG fetch, ~$0
 intake_gate_check.py: `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
 gaps_check.py: `OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 4 step(s) untried` (exit 0).
 next_steps.py --wait-only | grep baluze167: no line.
+
+## RUN1-BAL (account 1 worker, LANE-RUN1), 4 Oct 2026, 01:23 UTC on
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run1-wave2.md` job RUN1-BAL. No transcription, no decode, no novelty class.
+Intake gate re-run 01:23 UTC: `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+### 1. Tomokiyo's key table (fetched)
+`images/louisxiii_davaux.png` from https://cryptiana.web.fc2.com/code/louisxiii_davaux.png, 4 Oct 2026 01:24 UTC, 116,128 bytes,
+sha1 c5f2c086..., one request (manifest: images/manifest.json). Credit: Satoshi Tomokiyo, Cryptiana, louisxiii.htm. Design as the
+table shows it: a-z each with 1-4 homophone signs (letter-like squiggles); numerals 1-98 plain = syllables (ba..vu) and common words
+(86 avec ... 98 fait); 2-73 with a double-dot mark = words (guerre, general, il, ...); 1-99 with an overbar = names/titles (le Roy,
+Pape, l'Empereur, ... Saluius, Bavier, france); a separate 1-63 column of place names (Italie, Espagne, sued, Vestphalie, le duc De,
+Coulogne). A syllabic nomenclator: numerals + diacritic class + letter homophones.
+
+### 2. Baluze 171 catalogue record (read)
+BnF Archives et manuscrits, https://archivesetmanuscrits.bnf.fr/ark:/12148/cc34098s/ca19857868 (read 4 Oct 2026 01:2x UTC, plain curl,
+2 requests including the parent cc34098s record). Availability, quoted: "Version numérisée : Consulter le document numérisé
+[https://gallica.bnf.fr/ark:/12148/btv1b90014126]"; "Numérisation effectuée à partir d'un document de substitution" (scanned from
+the microfilm, "MF 10609", matrix "R 128863"); "En raison de son état de conservation, la consultation de ce document est soumise à
+autorisation, sur demande motivée." So Baluze 171 IS online: Gallica ark btv1b90014126 (464 canvases, all labelled NP). The scout's
+"no Gallica ark found" is superseded. Parent record cc34098s (Baluze 167-172): "Papiers de Claude DE MESMES, comte D'AVAUX ...
+Principalement, nombreuses lettres originales de la Cour, particulièrement de Léon Bouthillier, comte de Chavigni, à d'Avaux".

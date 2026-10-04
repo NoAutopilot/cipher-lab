@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "file": "louisxiii_davaux.png",
+      "url": "https://cryptiana.web.fc2.com/code/louisxiii_davaux.png",
+      "fetched": "2026-10-04 01:24 UTC",
+      "bytes": 116128,
+      "sha1": "c5f2c086da847ac7b1338364451d1638e542e063",
+      "credit": "Satoshi Tomokiyo, Cryptiana, louisxiii.htm section \"D'Avaux's Cipher (1637-1641) (DE=16')\": his reconstructed key table, reproduced for reference with credit; not our work",
+      "note": "863x673 PNG: letters a-z with homophone signs; 1-98 syllables/words plain; 2-73 with double-dot mark (words); 1-99 with overbar (names); 1-63 names column. Fetched by RUN1-BAL, one request."
+    }
+  ],
+  "survey_images": "Gallica IIIF reduced views (450 px; 800 px for Baluze 170 openings) used for survey.tsv are not committed; re-fetch from https://gallica.bnf.fr/iiif/ark:/12148/<ark>/f<canvas>/full/450,/0/native.jpg using the canvas column of survey.tsv"
+}
