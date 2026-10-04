@@ -1,0 +1,4 @@
+token	expansion	source_of_rule
+r	roy	0502 C7 "R. de Prusse" beside C5 "Roy de Prusse" (same code 864); period abbreviation R. = Roy
+pr	prince	0501 C3/C6 "Pr Royal" beside 0500 C1 "prince royal" (code 865 key.tsv Prince Royal); Pr = Prince
+pol	pologne	0502 C10 "roy de pol"; period abbreviation Pol. = Pologne
