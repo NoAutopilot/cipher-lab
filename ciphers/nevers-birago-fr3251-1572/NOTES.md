@@ -2393,3 +2393,28 @@ rule; and the f178r crops cut each line's tail at the bottom edge (the reader re
 crop and lost L03 after pos 24), which inflates N's error on f178r. Cost of the vision step: 2 Sonnet calls.
 Next (one line, not done): if retried, read a/b? on both passes (A and B) of a whole letter so both readers' errors carry
 alternatives, with f178r re-cut (`tools/iiif_lines.py --debug`, taller region for the slope); same gates.
+
+## BIR-OWNERSORT (4 Oct 2026, account-3 worker): the owner's complete sign sort folded in as a third reader
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir-ownersort.md`. Input `sorter/owner-sort-2026-10-04/` (488 tiles on f.117r, f.144r, f.168;
+203 moved, 52 -> 105 piles). Prereg `harvest/ownersort/PREREG.md` (3f1fc54d, before any score); record `harvest/ownersort/RESULTS.md`; script
+`harvest/ownersort/ownersort.py`. Disk only: 0 requests, 0 vision calls, 0 subagents. One post-prereg code fix (kept tiles had been
+counted as picks; the prereg says no change), both runs kept, both FAIL every leaf.
+- Three readers (`three_reader.tsv`, `agreement_by_sign.tsv`): 480 tiles; A=B 0.79, A=owner 0.66, B=owner 0.63, all three 0.56. At 109 of
+  the 157 moved tiles where both blind readers agreed, the owner chose something else. On the 7 f.168 T24/T83 focus tiles the owner chose
+  T83 at none (T24 x3 incl. one split, T85 x2, T60-c, T90).
+- Split test (rule 3, matched random re-split control; power control first): power 0.04-0.18 at pile sizes 1-5 (at its own false-positive
+  rate). All 57 new piles: 36 untestable at this N (owner-only distinctions, flagged), 21 owner-only (off-sheet or empty parent); 0 supported
+  distinctions, 0 data-backed merges. Four new piles mix start piles of different key values (T60-c 11, X_NEW-l 9, T66-b 6, T60-b 5).
+- Re-decode gate (BIR-OWNER rule): f.117r b -1.365 vs a -1.215 (control p95 -1.315, rank 58) FAIL; f.168 -1.628 vs -1.149 (p95 -1.253,
+  rank 201/201) FAIL; f.144r -1.450 vs -1.418 (p95 -1.403, rank 21) FAIL; pooled FAIL. **Nothing applied; no reading moved** (0 words gained
+  or lost; grades unchanged: f.117r H0 C0 S190 M63 U26, f.168 H0 C0 S92 M20 U10, f.144r H0 C0 S39 M32 U19). decode_key.py --check exit 0 on
+  decode.json, eye/apply/decode_apply.json and eye/open/sorter/decode_owner144.json. Judge on the owner texts FAIL (f.144r -1.45, f.168
+  -1.628, f.117r -1.365; RESULTS.md). Depth (rule 4a) unchanged, D1 at most on these leaves; no H or C, cryptanalytic result only.
+- Flag for the orchestrator: the committed f.144r reading (`decode_owner144.json`, BIR-OWNER) applies the owner's PARTIAL save, which passed
+  its gate on 3 Oct; the owner's completed sort FAILs the same gate on f.144r. Whether to revert f.144r to the BIR-OPEN-144 reading is the
+  orchestrator's call; not changed here.
+- Recut (`harvest/ownersort/recut.tsv`): 3 bad-cut (f117 L01.21, f144r L05.13, f168 V02.7), 5 aside (f117 L03.27, L05.27, L06.23,
+  f144r L03.8, f168 V01.1), each with its tools/iiif_lines.py command; no value guessed.
+Report of what was found and where it was not found; novelty not classified (rule 10).
+Next (one line, not done): the owner's piles do not track key values here; the sorter's remaining use is the 8 recut tiles and the T83
+off-sheet question on no.90 (f185r), not a further sort of these three leaves.
