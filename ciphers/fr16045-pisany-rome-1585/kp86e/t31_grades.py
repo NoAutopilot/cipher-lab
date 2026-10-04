@@ -61,7 +61,8 @@ if '--grade' in sys.argv:
     grade = []
     for i, t in enumerate(toks):
         idx = [n for n, o in enumerate(owner) if o == i]
-        grade.append('U' if not idx else 'C' if all(n in ok for n in idx) else 'M')
+        g = 'U' if not idx else 'C' if all(n in ok for n in idx) else 'M'
+        grade.append('M' if t == 'T31' and g == 'C' else g)   # HYPOTHESES.md: T31 held at M (data conflict)
     with open(os.path.join(H, 'grades_f275r.tsv'), 'w') as f:
         f.write('line\tpos\tsign\tvalue\tgrade\n')
         for (l, p), t, g in zip(where, toks, grade):

@@ -329,3 +329,60 @@ Read so far: 17 Sept 1586 (f.244r, f.244v, f.245r) and 24 Mar 1587 (f.301v) PASS
 - [x] image-check: f.301v native crops cut and checked
 - [ ] retry: per-line pipeline on the remaining 1586-87 cipher pages; Brienne for June 1588
 Verdict: keep going: 6 internal gaps; cheapest next: arm B on f.301v (disk only) ~$0.5; most valuable next: per-line pipeline on f.275v-f.278r (4 Nov 1586) ~$8 per page
+
+## Known-answer test kp86e: f.275r per-line re-pass (RUN5-PIS3, 4 Oct 2026, 12:46-13:3x UTC)
+- Second attempt at the f.275r test with a **different instrument** (rule 3): one reader call per line, so a reader cannot
+  drift across lines (kp86d's one-call readers: err_2reader 0.756, NON-TEST). PREREG kp86e/PREREG_kp86e.md pushed
+  (cb2393b0) before any pass; kp86d/kp86d.py run unchanged through the wrapper kp86e/kp86e.py.
+- Crops re-cut from the cached native source on disk (0 Gallica requests), prefix f275rL:
+  `python3 tools/iiif_lines.py --image ciphers/fr16045-pisany-rome-1585/images/src_ark_12148_btv1b9060906j_f562_900_2600_2850_2520.jpg --out ciphers/fr16045-pisany-rome-1585/images --prefix f275rL --debug --max-width 1600 --overlap 100 --centres 114,274,441,616,762,934,1101,1277,1446,1607,1821,1978,2124,2263,2425 --follow-slope 400 --slope-local --slope-margin 20 --only-lines 2,3,4,5,6,7,9,10,11,12,13,14,15`
+  then L01 and L08 fixed-y (`--only-lines 1,8`, no slope; their slope fits had jumped to the next line). A montage of all
+  30 crops was checked by eye: each crop's middle row holds its own line.
+- Passes: 2 blind Sonnet readers x 15 lines = 30 subagent calls (tx86e/PASS_BRIEF86e.md; replies verbatim in
+  tx86e/lines/), no re-asks needed. reconcile_passes.py (default out-dir tx86e; the PREREG's `--out` is the tool's
+  `--out-dir`): A 606 signs, B 605, **agree 489/623 = 78.5%, err_2reader 0.215** (kp86d 0.756). kp86d/reconcile_d.py
+  unchanged: 489 agreed, 2 A-? -> B, 35 one-reader-only, 5 pair rule, 92 B's label -> tx86e/ciphertext_f275r.tsv.
+- **Result (kp86e/kp86e_result.json, --err 0.215): PASS, both arms.**
+  Arm A (key86 as published): reconciled 554 tokens, nw_score **0.647** vs key-shuffle p99 0.468 (mean 0.411) and order
+  p99 0.497 (mean 0.449); blind A 0.631 (p99 0.468 / 0.488), blind B 0.659 (0.466 / 0.492). Positive control at e=0.215:
+  5/5 seeds (0.655-0.739 vs own p99s <= 0.458 / 0.462). Arm B (PIS1 remap): 0.662 (0.468 / 0.500), blind A 0.650, blind B
+  0.674; control 5/5 (0.674-0.747). B above A by 0.014 / 0.020 / 0.015: reported beside A, nothing enters key86.tsv.
+  The kp86d target scores were already above both nulls; what changed is that the control now passes at the measured error.
+- Reading: reading_f275r_M.txt / reading_f275r_tokens.tsv regenerated from tx86e by `python3 tools/decode_key.py
+  ciphers/fr16045-pisany-rome-1585 --ciphertext tx86e/ciphertext_f275r.tsv --key key86.tsv --reading reading_f275r_M.txt
+  --tokens reading_f275r_tokens.tsv`; `--check` "reading up to date" (tool: 554 H = published-key sign read, 69 U incl.
+  `/` and `?`). Rule-4 grades (kp86e/t31_grades.py --grade -> kp86e/grades_f275r.tsv): of 561 sign tokens **C 360**
+  (every decoded letter aligns identically with the period copy; licensed by the arm-A PASS), **M 191**, U 10; 0 S, 0 I,
+  H only in the sense of the published table. All 13 T31 tokens are M (one would have been C, aligned to the "m" of
+  "Luxembourg", which is clear on the page: an alignment artefact). 464 of 717 decoded letters identical with the copy.
+  The plaintext is the period clear copy's (Colbert 16 pt II pp.121-122, on Gallica) and the key is Tomokiyo's; this is a
+  known-answer confirmation of the published table on f.275r, not a decipherment.
+- Judge (rule 7): `python3 tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file ciphers/fr16045-pisany-rome-1585/reading_f275r_M.txt`
+  -> `FAIL language: score=-1.259, null_p99=-1.696, real_p05=-0.936, real_median=-0.814, mode=both, N=774` /
+  `ok words: cover=0.859` / `FAIL`. The decode sits between noise and real prose, as expected for a reading with 191 M
+  tokens and 1-for-1 letter output. The known-answer gate is the test here, not the judge.
+- T31 data conflict (rule 4) logged in HYPOTHESES.md with witnesses (kp86e/t31_witness.tsv). On f.244r the T31 places
+  align to o (6 of 11; Tomokiyo's own specimen reading agrees); on f.275r the readers' T31 tokens align mostly to s (6 of
+  13). key86 is unchanged (m), and T31 is M everywhere.
+- Requests: 0 Gallica, 0 other hosts. Subagent calls: 30 Sonnet.
+
+## Remaining gaps (RUN5-PIS3, 4 Oct 2026; merges RUN5-PIS87's list)
+Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r (kp86e, err 0.215, C 360 / M 191); 24 Mar 1587 f.301v (kp87a, RUN5-PIS87, C 205 / M 109): all known-answer PASS with Tomokiyo's 1586-87 table against the Colbert clear copy; f.75 (1585) NON-TEST.
+- 4 Nov 1586 remaining cipher f.275v-f.278r and the f.278v head (c563-c569, about 7 dense pages) vs Colbert pp.122 ff. - blocker: not-attempted; outside this brief; the per-line reader shape works (kp86e, kp87a); next: same pipeline page by page, one reader call per line (copy pages c480-c483 to locate), ~$8 per dense page at ~0.35 per call
+- key86 T31 cell (table m; f.244r page o; f.275r readers' T31 mostly s) - blocker: not-attempted; outside this brief; next: image comparison of the T31-labelled tokens on f.244r vs f.275r (kp86e/t31_witness.tsv) against the table cell, then the period interlinear letters over f.244v/f.245r T31 tokens, ~$1
+- key86 cell corrections (T45, T47, T49, T57) - blocker: not-attempted; arm B beats arm A on f.244v/f.245r and f.275r by 0.008-0.020, not a separate test; next: pre-registered held-out test (fit on the 17 Sept pages, test on f.275r and f.301v, disk only), ~$1
+- 24 Mar 1587, unviewed leaves c607-c608, c610-c611, c613, c617 - blocker: not-attempted; next: 700 px contact views (6 requests) for more cipher in this letter, ~$0.5
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II (jumps from 3 May to 5 Oct 1588, RUN5-PIS87); next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: re-read f.75 with the per-line reader shape, then test1.py unchanged, ~$5
+- 17 Sept 1586 second letter (f.246-247) and 8 Sept 1586 (f.228-234) vs Colbert - blocker: not-attempted; outside this brief; next: same per-line pipeline, ~$8 per dense page
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (RUN5-PIS3, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II clear copies paired with f.244r, f.244v/f.245r, f.275r and f.301v
+- [x] clear-pages: clear pages of the 17 Sept, 4 Nov 1586 and 24 Mar 1587 letters mapped
+- [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.275r, f.301v; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: T31 cell (HYPOTHESES.md) and the T45/T47/T49/T57 remap, held-out test not yet run
+- [x] image-check: f.275r re-cut one line per band, montage checked
+- [ ] retry: per-line pipeline on f.275v-f.278r, f.75 and the other 1586-87 letters; Brienne for June 1588
+Verdict: keep going: 9 internal gaps; cheapest next: T31 image comparison ~$1; most valuable next: the remaining 4 Nov 1586 pages with the per-line reader shape, ~$8 per page
