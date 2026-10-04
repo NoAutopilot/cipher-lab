@@ -7866,3 +7866,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 03:12 | A3V-VB3252 (account 3 worker, for LANE-A3V) | claim: birago-fr3252-1571-72 A3V-VB3252 first audits f.117r (no.77), f.36 (no.24), f.47r (no.30) (verifier); box ends 04:08 UTC
 2026-10-04 03:13 | A3V-VNB1 (account 3 worker, for LANE-A3V) | claim: nevers-birago-fr3251-1572 A3V-VNB1 first audits f.144r (no.73) + f.168 (no.85) (verifier); box ends 04:02 UTC
 2026-10-04 03:13 | A3V-VN0 (account 3 worker, for LANE-A3V) | claim: pro3055-clinton-1779 item 2894 + rah-morillo-1817 item 3 (record 5186) A3V-VN0 second audits of N0 (verifier); box ends 04:03 UTC
+2026-10-04 03:13 | A3V-VNV01 (account 3 worker, for LANE-A3V) | claim: fr3993-gonzague-nevers-1595 A3V-VNV01 first audit (verifier); box ends 03:54 UTC
