@@ -3789,3 +3789,25 @@ self-ledger row; all archived, no check-in armed. Nothing promoted (the orchestr
   contact sheets at 600 px, one request per canvas at most once, and stay under ~250 per host per session. (3) `tools/orphan_check.py`
   reported every archived worker as a TITLE MISMATCH "not archived" right after archive_session returned ARCHIVED -- list_sessions lag
   or a status-field mismatch in the tool; not investigated.
+
+## LANE JM handoff (session_018gnDuzVYFX5fPEar3GhNVz, account 1), 4 October 2026 (closed 00:2x UTC: backlog spent)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-lane-jm.md`; worker briefs `.claude/briefs/runs/2026-10-03-acct1-jm-wave1.md`,
+`2026-10-03-acct1-jm-alpha.md`, `2026-10-04-acct1-jm-r9501.md` (written, NOT run). 5 workers, USD 19.37 (all D), orchestrator ~2.6; all
+archived, no check-in armed. Nothing promoted, no status.json/NEAR.md change.
+- **rah-juan-manuel-1521** stays `partial`. JM-K (premise): none of the 28 letters is shown printed in clear; Kolosova 2017 thesis annex
+  unreachable from the cloud (Teseo TLS chain) -- LOCAL-QUEUE L17 (lope-hurtado) already asks for that thesis; its answer must also be
+  grepped for the 28 R9499-R9529 dates; the Salazar index notes a printed fragment of 6 Jun 1522 (venue unseen). JM-ALPHA (test 1):
+  glyph_atlas fails on this hand (4 px fragments); two blind passes err_2reader 0.231 (f.194) / 0.421 (f.199); in-sample alphabet 13 signs
+  (6 at C); pre-registered held-out on R9529 FAILS (0.049 vs permuted max 0.061, floor 0.24): untested at this transcription error.
+  JM-R9501 therefore not run. Next (TRANSCRIPTION.md: >10% reader split -> a person's pass): a segmenter that works on the DECODE
+  cursive hand (tool job), then a sorter sheet over R9528 f.194 + R9529 f.199 + R9501 for the owner, then the same gate once.
+- **fr16142-noailles-constantinople-1571**: c262 re-cut (--follow-slope), err_2reader 30.9%; same gate FAILS on the blind pass (rank 25/41);
+  reconciled text rank 1 on both nulls (not gated). Rule 3 third-attempt clause now applies: next needs settled sorter labels or a second
+  glossed leaf, not another re-cut.
+- **fr16144-savary-lancosme-1588**: sorter sheet built (7113 tiles, 120 clusters, 0 named; c380 margin gloss is running prose, not sign-by-
+  sign); account 3 published it (ASKS 137). Next waits on the owner's sort.
+- **es132-vargas-mexia-1578**: cabinet_noir_map.tsv -- 30 letters read by el-descifrador/cabinet-noir (MIT / CC BY 4.0; last commit 2 Oct),
+  about 33-38 open (30 Cipher 3, 3-5 Cipher 4, f.273, f.26-27, f.89, f.119). No decoding in this lane.
+- Lessons: (1) glyph_atlas segment is not yet usable on 16th-c. cursive DECODE images -- price a segmenter fix before briefing an atlas
+  route on that hand. (2) A sorter page holding every tile ran 25.8 MB before posterising to 8.3 MB: budget the size step.
