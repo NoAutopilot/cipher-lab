@@ -4056,3 +4056,28 @@ ledgered) + orchestrator ~6.5 = ~55 of ~60. All archived; no check-in armed. Not
   key PNGs -> key.tsv (~3) + f.95v cipher (2 passes + recon) decoded against f.108v with a shuffled-key control, ~$8; whole block ~$34.
 - Brief lessons: (1) chain per-token ruling jobs on one target and run one rule-7 re-derivation after the last, not one per job; (2) a crossmatch
   stat over the gate needs an eye read before a lead (N4-XM: 0/445).
+
+## LANE POOLS2 handoff (session_01PgaUpXkg7BsMmu53s4rhfh, account 1), 4 October 2026 (closed 08:0x UTC: backlog spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md` (LANE-POOLS2); worker briefs `2026-10-04-acct1-pools2-cs.md`,
+`-wave2.md`, `-es132c3.md`, `-vivt.md`, `-pist.md`. 10 workers USD 29.26 (9 D, 1 D-), orchestrator 6.22; all archived, no check-in armed.
+Nothing promoted, no status.json/NEAR.md/QUEUE.md change (account 3 promotes). Gallica was serialized to one LANE-POOLS2 worker at a time.
+- **throckmorton-add4136-1559 -- found-solved** at letter level: 19 of 20 DECODE letters printed in Forbes 1740-41 (10 phrase+date, 9
+  phrase); R3026 open, <500 signs. Pool FAIL.
+- **costabili-modena-1491 -- partial, pool FAIL**: one DECODE login (full size served, scratch only); R1164 = R1163; R1095-97 no cipher;
+  every 1491 letter carries a period decipherment (slips/interlinear/clear copy), ~100 open signs. Named next: interlinear key rebuild
+  (grade C), not a pool job.
+- **fr16106-vivonne-longlee-1579 -- partial, pool PASS on point estimate**: Longlée 1583-90 printed in Mousset 1912 (table pp.lviii-lix =
+  published key); Vivonne 1579-82 ~225 dense cipher canvases, ~90 without a clerk copy (interval reaches 0). Spec written. First test
+  (VIV-T, pair fr.16107 f.101v-103v / clerk copy f.105r-106v, 2 Mar 1580): held-out 0.370 vs p99 0.396/0.385, **NON-TEST** at
+  err_2reader 0.576 (synthetic at that error passes 0/5). Next: owner sign-sorter sheet on c107 crops, then re-run on the whole letter.
+- **fr16045-pisany-rome-1585 -- partial, pool PASS on point estimate**: ~7,000 open signs in the nine 1585 letters (f.75 ~2,700, f.121
+  ~1,750, f.63 ~1,300); Mélanges de Colbert 16 pt II clear copy matches only 26 Aug 1586 so far. Spec written; Tomokiyo
+  henryiii_Vivonne4.png settled as the 1585 table (IMAGE-QUEUE rows 198-199 captions are shifted). First test (PIS-T, f.75): judge
+  -1.625 vs key-shuffle p99 -1.337, **NON-TEST** at err_2reader 0.430 (positive control 0/5 at that error; fr16 fold spread 11.0/71.5/1.5).
+  Next: owner sign-sorter for the 4 confusable groups (S15/S40/S13/S61, S10/S41/S02, S36/S42/S23, S46/S48/S25), then re-run.
+- **es132-vargas-mexia-1578 Cipher 3 pool**: f.41r (29 Apr 1578, not cabinet-noir, CN still 47b6db9) Cp.30 decode **PASS** its
+  pre-registered S_b gate (-1.266 vs p99 -1.483 / -1.832; positive control f.90v PASS same run); 526 groups, err_2reader 0.306, S 393
+  M 95 codes 35. Candidate for account 3's promotion decision / a verifier.
+- For account 3: two sorter sheets to build and publish (Vivonne fr.16107 c107-c109 crops; Pisany f.75 crops) -- no ASKS row filed here
+  since a row needs the published page link.
