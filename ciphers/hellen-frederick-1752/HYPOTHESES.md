@@ -78,3 +78,22 @@ Keys restricted to codes 1-800 (R1953: 349 numeric tokens there). Script: siblin
 Secondary rows: no other letter clears 0.0125 on both statistics under any R4370 key. Result: **fail** on every attribution (target vs
 control above); R4370's 801-1000 shares 70 codes with R4369, 0 with the same meaning (rival series). R4369's row above stands.
 
+
+## NEAR3-HEL4 (4 Oct 2026): R4372 (f.48) as codes 1-800 on R1953
+Pre-registration: key_r4372/PREREG.md (453a570a, before the images were fetched). Pass = uni value-shuffle p and bi order-shuffle p both <= 0.0125, power >= 0.8.
+Keys restricted to codes 1-800. Script: sibling_michell/test_sibling.py --key, seed 1, 200 shuffles each.
+
+| R4372 key on R1953 | covered | uni real | uni shuffle mean / p95 | uni p | pairs | bi real | bi val-shuffle mean | bi val p | bi order-shuffle mean / p95 | bi order p | power uni / bi | verdict |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| L | 147 | -10.164 | -10.038 / -9.331 | 0.625 | 19 | -0.444 | -0.787 | 0.050 | -0.698 / -0.443 | 0.055 | 1.00 / 1.00 | fail |
+| R0 | 63 | -10.512 | -10.263 / -9.444 | 0.670 | 4 | -0.602 | -0.857 | 0.300 | -0.800 / -0.301 | 0.278 | 1.00 / 0.97 | fail |
+| R100 | 69 | -9.825 | -10.323 / -9.590 | 0.165 | 5 | -0.963 | -0.829 | 0.820 | -0.948 / -0.332 | 0.410 | 1.00 / 0.98 | fail |
+| LR100 | 191 | -10.035 | -10.137 / -9.628 | 0.375 | 42 | -0.525 | -0.796 | 0.025 | -0.784 / -0.626 | 0.010 | 1.00 / 1.00 | fail (bi passes, uni does not) |
+| LR100 seed 2 | 191 | -10.035 | -10.196 / -9.677 | 0.295 | 42 | -0.525 | -0.794 | 0.010 | -0.786 / -0.626 | 0.000 | 1.00 / 1.00 | fail |
+| full 1-1000 (rival, outside k) | 195 | -10.041 | -10.234 / -9.682 | 0.290 | 45 | -0.570 | -0.795 | 0.050 | -0.810 / -0.680 | 0.000 | 1.00 / 1.00 | fail |
+
+Combined (PREREG item 6, reported not gated -- R4369's half passes alone, so this control cannot fail differently):
+comb_L uni -7.767 vs -9.439, comb_R0 -7.430 vs -9.376, comb_R100 -7.376 vs -9.370, comb_LR100 -7.889 vs -9.516 (all p 0.000, bi order p 0.000);
+R4369 LR100 alone -7.017. Adding any R4372 half lowers the uni real by 0.36-0.87: the 1-800 half reads worse than the 801+ half.
+Secondary rows (not gated): R1049 (1756) LR100 uni p 0.010 with bi order p 0.310, full uni p 0.005 / bi 0.205 -- one statistic only, 35 secondary tests; nothing else under 0.0125.
+Result: **fail** on every attribution. Unlike R4370 (bi order p 0.595), R4372 LR100's bigram statistic sits at or under the gate on both seeds.

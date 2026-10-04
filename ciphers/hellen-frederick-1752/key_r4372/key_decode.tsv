@@ -1,0 +1,399 @@
+code	value	grade	source
+2	zero	H	R4372 left entry
+4	ne	H	R4372 left entry
+7	zero	H	R4372 left entry
+8	zero	H	R4372 left entry
+9	huit	H	R4372 left entry
+13	public	H	R4372 left entry
+14	zero	H	R4372 left entry
+16	uni.	H	R4372 left entry
+20	ze?te?	H	R4372 left entry
+21	objet	H	R4372 left entry
+23	zero	H	R4372 left entry
+24	prusse	H	R4372 left entry
+25	vo	H	R4372 left entry
+30	fra	H	R4372 left entry
+32	octobre	H	R4372 left entry
+35	a ete	H	R4372 left entry
+36	juste?	H	R4372 left entry
+37	je viens de	H	R4372 left entry
+39	bon	H	R4372 left entry
+42	que	H	R4372 left entry
+43	consequen	H	R4372 left entry
+44	ux	H	R4372 left entry
+47	zero	H	R4372 left entry
+49	zero	H	R4372 left entry
+50	zero	H	R4372 left entry
+55	vo	H	R4372 left entry
+63	eux	H	R4372 left entry
+64	suppos	H	R4372 left entry
+70	te.	H	R4372 left entry
+71	ois	H	R4372 left entry
+73	attend	H	R4372 left entry
+74	van	H	R4372 left entry
+76	deliber	H	R4372 left entry
+77	fra	H	R4372 left entry
+78	contenu	H	R4372 left entry
+88	in	H	R4372 left entry
+90	l	H	R4372 left entry
+92	sur	H	R4372 left entry
+101	ren	S	R4372 right entry of row 1, attributed +100
+102	querelle	H	R4372 left entry
+103	mu	S	R4372 right entry of row 3, attributed +100
+104	zero	H	R4372 left entry
+106	repond	S	R4372 right entry of row 6, attributed +100
+107	cha	S	R4372 right entry of row 7, attributed +100
+108	selon	S	R4372 right entry of row 8, attributed +100
+109	vo	S	R4372 right entry of row 9, attributed +100
+110	resolution	M	R4372 right entry of row 10, attributed +100
+112	faloit	S	R4372 right entry of row 12, attributed +100
+113	jeu	H	R4372 left entry
+114	quitter	H	R4372 left entry
+116	ostentation?	H	R4372 left entry
+118	commerce	H	R4372 left entry
+119	zero	H	R4372 left entry
+120	appro...	S	R4372 right entry of row 20, attributed +100
+122	dent	H	R4372 left entry
+123	par	S	R4372 right entry of row 23, attributed +100
+125	inform	M	R4372 right entry of row 25, attributed +100
+126	aucun	H	R4372 left entry
+127	sus	M	R4372 left entry
+128	opinion	S	R4372 right entry of row 28, attributed +100
+129	zero	H	R4372 left entry
+130	fassiez	H	R4372 left entry
+131	reine	H	R4372 left entry
+133	zero	H	R4372 left entry
+134	gra	H	R4372 left entry
+135	viend	S	R4372 right entry of row 35, attributed +100
+138	insinu	S	R4372 right entry of row 38, attributed +100
+142	ro	H	R4372 left entry
+143	con,	H	R4372 left entry
+144	? averti	H	R4372 left entry
+146	dela	S	R4372 right entry of row 46, attributed +100
+147	vigueurs	S	R4372 right entry of row 47, attributed +100
+148	rem	S	R4372 right entry of row 48, attributed +100
+150	int.	S	R4372 right entry of row 50, attributed +100
+152	tir	S	R4372 right entry of row 52, attributed +100
+154	moyennant	S	R4372 right entry of row 54, attributed +100
+155	teme.	H	R4372 left entry
+156	favori	H	R4372 left entry
+157	attend	S	R4372 right entry of row 57, attributed +100
+161	Hom?	S	R4372 right entry of row 61, attributed +100
+162	accepte	H	R4372 left entry
+163	m'y	S	R4372 right entry of row 63, attributed +100
+164	consist	S	R4372 right entry of row 64, attributed +100
+165	succes	S	R4372 right entry of row 65, attributed +100
+166	voi.	S	R4372 right entry of row 66, attributed +100
+167	aurai	S	R4372 right entry of row 67, attributed +100
+169	et	H	R4372 left entry
+172	ez	S	R4372 right entry of row 72, attributed +100
+173	address.	S	R4372 right entry of row 73, attributed +100
+174	avis	S	R4372 right entry of row 74, attributed +100
+175	expres	H	R4372 left entry
+176	vivre	S	R4372 right entry of row 76, attributed +100
+178	tous	S	R4372 right entry of row 78, attributed +100
+179	fert	M	R4372 right entry of row 79, attributed +100
+182	de...	S	R4372 right entry of row 82, attributed +100
+184	traite	S	R4372 right entry of row 84, attributed +100
+185	Baron	S	R4372 right entry of row 85, attributed +100
+186	une	S	R4372 right entry of row 86, attributed +100
+187	fer	H	R4372 left entry
+188	jusques a | jusqu'a	S	R4372 right entry of row 88, attributed +100
+192	resulter	S	R4372 right entry of row 92, attributed +100
+193	tenu	H	R4372 left entry
+194	avez	S	R4372 right entry of row 94, attributed +100
+196	non plus aussi	M	R4372 right entry of row 96, attributed +100
+197	Italie	S	R4372 right entry of row 97, attributed +100
+198	mo	H	R4372 left entry
+199	30	S	R4372 right entry of row 99, attributed +100
+200	consent	S	R4372 right entry of row 100, attributed +100
+202	ter..	H	R4372 left entry
+203	empire	S	R4372 right entry of row 103, attributed +100
+205	consider	S	R4372 right entry of row 105, attributed +100
+206	pendant	S	R4372 right entry of row 106, attributed +100
+207	ent	S	R4372 right entry of row 107, attributed +100
+208	tion	H	R4372 left entry
+209	anime	H	R4372 left entry
+210	afin	H	R4372 left entry
+212	harmonie, intellig.	M	R4372 left entry
+213	conven	S	R4372 right entry of row 113, attributed +100
+218	du	H	R4372 left entry
+219	feroit	S	R4372 right entry of row 119, attributed +100
+220	cote	S	R4372 right entry of row 120, attributed +100
+221	fa	H	R4372 left entry
+224	?, vou	S	R4372 right entry of row 124, attributed +100
+225	scrupul	H	R4372 left entry
+226	fin alors	H	R4372 left entry
+228	ront	S	R4372 right entry of row 128, attributed +100
+229	affe..	S	R4372 right entry of row 129, attributed +100
+231	major	H	R4372 left entry
+234	ke	S	R4372 right entry of row 134, attributed +100
+235	meme	S	R4372 right entry of row 135, attributed +100
+236	vos	S	R4372 right entry of row 136, attributed +100
+238	ren	H	R4372 left entry
+239	off...	H	R4372 left entry
+240	engage	S	R4372 right entry of row 140, attributed +100
+242	li	S	R4372 right entry of row 142, attributed +100
+243	ment	S	R4372 right entry of row 143, attributed +100
+244	toucher	H	R4372 left entry
+246	n	S	R4372 right entry of row 146, attributed +100
+248	ai, avois	M	R4372 right entry of row 148, attributed +100
+249	bel	S	R4372 right entry of row 149, attributed +100
+250	ant	H	R4372 left entry
+252	d tout	H	R4372 left entry
+254	appliqu	H	R4372 left entry
+255	dans	H	R4372 left entry
+257	d	H	R4372 left entry
+260	bon	S	R4372 right entry of row 160, attributed +100
+261	ete	S	R4372 right entry of row 161, attributed +100
+262	juste	H	R4372 left entry
+263	certitude	H	R4372 left entry
+264	mettre	S	R4372 right entry of row 164, attributed +100
+266	co	S	R4372 right entry of row 166, attributed +100
+267	lan	S	R4372 right entry of row 167, attributed +100
+268	trouvent	S	R4372 right entry of row 168, attributed +100
+269	po	S	R4372 right entry of row 169, attributed +100
+270	argent	H	R4372 left entry
+273	cent	S	R4372 right entry of row 173, attributed +100
+274	vou	S	R4372 right entry of row 174, attributed +100
+276	fier	S	R4372 right entry of row 176, attributed +100
+277	dernier	S	R4372 right entry of row 177, attributed +100
+279	des	S	R4372 right entry of row 179, attributed +100
+281	vingt?	H	R4372 left entry
+282	feu	H	R4372 left entry
+284	wi	S	R4372 right entry of row 184, attributed +100
+285	des	H	R4372 left entry
+286	agre	S	R4372 right entry of row 186, attributed +100
+287	devant	H	R4372 left entry
+292	comme	S	R4372 right entry of row 192, attributed +100
+293	pais	S	R4372 right entry of row 193, attributed +100
+294	leu	S	R4372 right entry of row 194, attributed +100
+295	trop	H	R4372 left entry
+296	Berlin	S	R4372 right entry of row 196, attributed +100
+297	comment	H	R4372 left entry
+298	entend	S	R4372 right entry of row 198, attributed +100
+299	d/c	S	R4372 right entry of row 199, attributed +100
+300	aura	S	R4372 right entry of row 200, attributed +100
+304	appro..	H	R4372 left entry
+305	difficulté	S	R4372 right entry of row 205, attributed +100
+306	gens	S	R4372 right entry of row 206, attributed +100
+307	cent.	S	R4372 right entry of row 207, attributed +100
+308	avec	H	R4372 left entry
+309	dif	S	R4372 right entry of row 209, attributed +100
+310	gloire	S	R4372 right entry of row 210, attributed +100
+312	lieu	S	R4372 right entry of row 212, attributed +100
+313	c'est	H	R4372 left entry
+314	donc	M	R4372 right entry of row 214, attributed +100
+315	zero.	H	R4372 left entry
+316	ef	S	R4372 right entry of row 216, attributed +100
+317	ed	H	R4372 left entry
+319	laisse	H	R4372 left entry
+322	justice	S	R4372 right entry of row 222, attributed +100
+326	pen	S	R4372 right entry of row 226, attributed +100
+327	ai aurois	H	R4372 left entry
+328	voi	H	R4372 left entry
+329	jugera apropos	H	R4372 left entry
+331	satisfa	S	R4372 right entry of row 231, attributed +100
+332	autre	S	R4372 right entry of row 232, attributed +100
+334	lesquels	H	R4372 left entry
+336	font	S	R4372 right entry of row 236, attributed +100
+337	preparatif	H	R4372 left entry
+338	ajust	S	R4372 right entry of row 238, attributed +100
+339	Saxons	S	R4372 right entry of row 239, attributed +100
+341	e	H	R4372 left entry
+344	flu	S	R4372 right entry of row 244, attributed +100
+345	beaucoup	H	R4372 left entry
+346	envers	S	R4372 right entry of row 246, attributed +100
+347	façon	S	R4372 right entry of row 247, attributed +100
+348	er	S	R4372 right entry of row 248, attributed +100
+349	compl.	M	R4372 right entry of row 249, attributed +100
+350	age	S	R4372 right entry of row 250, attributed +100
+351	pi	H	R4372 left entry
+352	elle	S	R4372 right entry of row 252, attributed +100
+355	le Rt de Suede	M	R4372 left entry
+358	me...	S	R4372 right entry of row 258, attributed +100
+361	passe	S	R4372 right entry of row 261, attributed +100
+364	merit,	H	R4372 left entry
+368	pli	H	R4372 left entry
+369	em	S	R4372 right entry of row 269, attributed +100
+371	gro..	S	R4372 right entry of row 271, attributed +100
+372	devoir	S	R4372 right entry of row 272, attributed +100
+373	le.....	S	R4372 right entry of row 273, attributed +100
+374	natur	S	R4372 right entry of row 274, attributed +100
+376	pen	S	R4372 right entry of row 276, attributed +100
+378	flatt	H	R4372 left entry
+380	concert	S	R4372 right entry of row 280, attributed +100
+381	dis?	M	R4372 left entry
+382	vous	H	R4372 left entry
+384	ga	M	R4372 right entry of row 284, attributed +100
+388	pas	H	R4372 left entry
+389	le	S	R4372 right entry of row 289, attributed +100
+393	pre	H	R4372 left entry
+394	zero	S	R4372 right entry of row 294, attributed +100
+396	ri	S	R4372 right entry of row 296, attributed +100
+399	fondement	H	R4372 left entry
+400	lui	H	R4372 left entry
+401	zero.	S	R4372 right entry of row 301, attributed +100
+402	char	M	R4372 right entry of row 302, attributed +100
+403	zero	H	R4372 left entry
+404	ma	M	R4372 left entry
+405	zero	H	R4372 left entry
+407	sera	S	R4372 right entry of row 307, attributed +100
+408	ner	S	R4372 right entry of row 308, attributed +100
+409	parler	H	R4372 left entry
+410	personne	S	R4372 right entry of row 310, attributed +100
+411	zero	H	R4372 left entry
+412	ex	S	R4372 right entry of row 312, attributed +100
+413	g	S	R4372 right entry of row 313, attributed +100
+414	mon	H	R4372 left entry
+415	nom	S	R4372 right entry of row 315, attributed +100
+416	zero	S	R4372 right entry of row 316, attributed +100
+417	cro	H	R4372 left entry
+418	vre	S	R4372 right entry of row 318, attributed +100
+419	gni	S	R4372 right entry of row 319, attributed +100
+421	nord	S	R4372 right entry of row 321, attributed +100
+422	peuple	S	R4372 right entry of row 322, attributed +100
+423	+	M	R4372 right entry of row 323, attributed +100
+424	seulem.	M	R4372 right entry of row 324, attributed +100
+426	espagne	S	R4372 right entry of row 326, attributed +100
+427	confi	M	R4372 right entry of row 327, attributed +100
+428	Sardaigne.	H	R4372 left entry
+429	Imperatrice	H	R4372 left entry
+430	+	H	R4372 left entry
+431	aux	S	R4372 right entry of row 331, attributed +100
+433	moi	H	R4372 left entry
+438	mais	S	R4372 right entry of row 338, attributed +100
+439	savoir?	H	R4372 left entry
+440	?fusse	H	R4372 left entry
+441	ve?	S	R4372 right entry of row 341, attributed +100
+442	entier	H	R4372 left entry
+445	bord	H	R4372 left entry
+447	sa	H	R4372 left entry
+448	an...	S	R4372 right entry of row 348, attributed +100
+449	oeu	S	R4372 right entry of row 349, attributed +100
+451	point	S	R4372 right entry of row 351, attributed +100
+453	sign.	S	R4372 right entry of row 353, attributed +100
+454	zero	S	R4372 right entry of row 354, attributed +100
+455	gazette	S	R4372 right entry of row 355, attributed +100
+456	zero	S	R4372 right entry of row 356, attributed +100
+457	a	S	R4372 right entry of row 357, attributed +100
+458	es	S	R4372 right entry of row 358, attributed +100
+460	positi...	S	R4372 right entry of row 360, attributed +100
+461	soin	S	R4372 right entry of row 361, attributed +100
+462	la	S	R4372 right entry of row 362, attributed +100
+463	deguiser, cacher	S	R4372 right entry of row 363, attributed +100
+464	dont	H	R4372 left entry
+465	voit, vroit	H	R4372 left entry
+466	devroit	S	R4372 right entry of row 366, attributed +100
+468	cantonne	H	R4372 left entry
+469	sire	S	R4372 right entry of row 369, attributed +100
+470	gir	S	R4372 right entry of row 370, attributed +100
+472	consta	S	R4372 right entry of row 372, attributed +100
+473	op	S	R4372 right entry of row 373, attributed +100
+474	electeur d'Hanvre	S	R4372 right entry of row 374, attributed +100
+475	eclaircir	H	R4372 left entry
+476	Britanique	S	R4372 right entry of row 376, attributed +100
+478	etabli	S	R4372 right entry of row 378, attributed +100
+482	environ, port	H	R4372 left entry
+483	ent?	H	R4372 left entry
+484	aient	H	R4372 left entry
+485	plus	H	R4372 left entry
+487	gri	H	R4372 left entry
+488	zero	S	R4372 right entry of row 388, attributed +100
+489	grand	S	R4372 right entry of row 389, attributed +100
+490	les	H	R4372 left entry
+492	presque	S	R4372 right entry of row 392, attributed +100
+493	zero	S	R4372 right entry of row 393, attributed +100
+494	choisir	S	R4372 right entry of row 394, attributed +100
+496	certia	M	R4372 right entry of row 396, attributed +100
+498	ants	S	R4372 right entry of row 398, attributed +100
+499	zero	S	R4372 right entry of row 399, attributed +100
+501	au	H	R4372 left entry
+502	m	M	R4372 left entry
+504	ad	H	R4372 left entry
+505	nation	H	R4372 left entry
+506	gue	M	R4372 left entry
+508	senateur	H	R4372 left entry
+512	ay?	H	R4372 left entry
+513	dresde	H	R4372 left entry
+514	+ neglige	H	R4372 left entry
+516	agir	H	R4372 left entry
+517	pou	H	R4372 left entry
+518	ser	H	R4372 left entry
+521	brunsvic	M	R4372 left entry
+524	fait	H	R4372 left entry
+527	tent	H	R4372 left entry
+529	comte.	H	R4372 left entry
+530	expli	H	R4372 left entry
+531	commod	H	R4372 left entry
+539	connu	H	R4372 left entry
+540	esperanc	H	R4372 left entry
+542	ait	H	R4372 left entry
+549	tour.	H	R4372 left entry
+550	precis	M	R4372 left entry
+558	al	H	R4372 left entry
+562	prekend?	H	R4372 left entry
+565	le Duc de	H	R4372 left entry
+569	em	M	R4372 right entry of row 469, attributed +100
+574	ajout	H	R4372 left entry
+577	gros	H	R4372 left entry
+580	extrem	H	R4372 left entry
+582	consist	H	R4372 left entry
+587	avantage	H	R4372 left entry
+590	demarche	H	R4372 left entry
+591	avez	H	R4372 left entry
+592	vi	H	R4372 left entry
+593	deux	H	R4372 left entry
+594	hu	H	R4372 left entry
+596	nulle	H	R4372 left entry
+597	pris	H	R4372 left entry
+599	di	H	R4372 left entry
+701	ver	H	R4372 left entry
+703	avoit	H	R4372 left entry
+707	projet,	H	R4372 left entry
+709	J.n. +	H	R4372 left entry
+712	croy	M	R4372 left entry
+714	ap	H	R4372 left entry
+716	or	H	R4372 left entry
+720	vra	H	R4372 left entry
+721	avoit	M	R4372 left entry
+722	hollande	H	R4372 left entry
+723	voudra, oit	H	R4372 left entry
+724	allie	M	R4372 left entry
+725	dire	H	R4372 left entry
+727	contre	H	R4372 left entry
+730	fo	H	R4372 left entry
+733	cu	H	R4372 left entry
+734	double	H	R4372 left entry
+740	cer	H	R4372 left entry
+742	puis	H	R4372 left entry
+743	en	H	R4372 left entry
+744	2e chancelier	H	R4372 left entry
+745	disposition	H	R4372 left entry
+746	hont.	H	R4372 left entry
+749	che..	H	R4372 left entry
+750	votre	H	R4372 left entry
+753	n..	H	R4372 left entry
+756	vaisseau	H	R4372 left entry
+758	etoit, est	H	R4372 left entry
+760	l'argent	H	R4372 left entry
+761	oblige	H	R4372 left entry
+762	sou	H	R4372 left entry
+763	dre du	H	R4372 left entry
+766	offre,	H	R4372 left entry
+768	us	H	R4372 left entry
+769	at	H	R4372 left entry
+773	soutenir	H	R4372 left entry
+774	ami	H	R4372 left entry
+776	iu	H	R4372 left entry
+781	s	H	R4372 left entry
+783	z, a	H	R4372 left entry
+787	voisin	H	R4372 left entry
+788	qu	H	R4372 left entry
+789	/a number/plusieurs	H	R4372 left entry
+792	allegu/oppos	H	R4372 left entry
+793	juste	H	R4372 left entry
+794	suis	H	R4372 left entry
+796	vont	H	R4372 left entry
+798	con	H	R4372 left entry
+799	subsiste	M	R4372 left entry

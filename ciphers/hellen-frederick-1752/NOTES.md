@@ -881,3 +881,76 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369 and R4370 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: transcribe R4372 (f.48) P2-P3 and run the pre-registered --key test on R1953 codes 1-800, ~$12
+
+## NEAR3-HEL4 (4 Oct 2026): R4372 (f.48) transcribed and tested as codes 1-800 on R1953 (account 2 worker for LANE-NEAR3)
+
+Step run: NEAR3-HEL3's named next step. **Pre-registration** `key_r4372/PREREG.md` (commit 453a570a) was pushed before the images
+were fetched: READ2-HEL2's statistics, controls, four attributions and pass rule unchanged, plus a combined test (R4372 1-800 + R4369
+LR100 801+), declared *reported, not gated*: R4369's half already passes on R1953 alone, so a combined key passes whatever the 1-800
+half holds and its control cannot fail differently (rule 3).
+**Route:** `tools/decode_browser_login.js 4372 <scratchpad> --delay 1700 --max-files 2 --fetch <P2,P3 filesrv URLs>`; both sha1s match
+`images/decode/manifest.json` (d6de7162..., 4871a1f6...). Two logins, not one: my first call passed `--max-files 0`, which caps
+explicit `--fetch` URLs too, so it saved only RecordsView; the second fetched both pages. Images stay in the scratchpad (not
+public domain); the account name is in no file. Requests: de-crypt.org about 10 (2 x login page, submit, landing, RecordsView; 2 images), 1.7 s apart, no challenge; no other host.
+
+**What the sheet is.** The same printed form as R4369/R4370. P2 = codes 1-500 in five blocks of 100, well filled (left entries plus
+right entries ending in a dash, about half a row low, as on R4369). P3 = 501-1000: 501-600 and 701-800 carry left entries only;
+601-700 is empty; 801-900 has 868 "pli" and two right entries (840 "grandes -", 900 "observ -"); 901-1000 (cut by the page edge) is
+empty. A modern pencil folio "49" sits at the top of 801-900. Many entries are "zero" (nulls; 24 codes).
+**Transcription.** Crops: `python3 tools/iiif_lines.py --image <P2|P3 file> --out <scratchpad>/crops --region <x>,250,<w>,5070
+--centres 540,1570,2570,3590,4560 --prefix P<p>_c<block> --debug`, once per block (P2 x/w 230/820, 1005/800, 1755/800, 2505/800,
+3270/729; P3 500/800, 1255/800, 2010/800, 2770/800, 3530/398): 50 crops of 20 rows each, cut at the printed form's 20-row gaps,
+before any subagent call. Four blind Sonnet passes (2 per page, the second in reverse block order) saw only that page's 25 crop
+paths. Code-keyed diff (letters only): **err_2reader P2 0.052 (20/386 cells), P3 0.113 (11/97)**, 0.064 overall. I settled the
+disputes from one strip montage of the R1953-relevant rows (273 R, 276, 302/303 R, 502, 703, 744, 764, plus 16 and 521); the rest
+take one pass's reading at grade M. `key_r4372/key.tsv`: 400 rows, 477 cells, **H 445 / M 32**. err_true not measurable (no
+benchmark item of this hand). Conventions are stated in `key_r4372/README.md`.
+**Gate A (range):** R4372 carries 1-1000 but 801+ holds only 868 (left) and 940/1000 (R100). Two codes shared with R4369 (868 pli
+vs pour; 940 grandes vs S.M.), both different: the full key was also tested as a rival (outside k), per PREREG.
+**Gate B (coverage):** best attribution LR100 covers 191 R1953 tokens (L 147, R0 63, R100 69); gate 113 met.
+
+**Test** (`sibling_michell/test_sibling.py --key key_r4372/key_<X>.tsv`, seed 1; full table in HYPOTHESES.md). Pass = uni p and bi
+order p both <= 0.0125, power >= 0.8.
+
+| R4372 key on R1953 (1-800) | covered | uni real / shuffle mean | uni p | bi real / order-shuffle mean | bi order p | power uni / bi | verdict |
+|---|---|---|---|---|---|---|---|
+| L | 147 | -10.164 / -10.038 | 0.625 | -0.444 / -0.698 | 0.055 | 1.00 / 1.00 | fail |
+| R0 | 63 | -10.512 / -10.263 | 0.670 | -0.602 / -0.800 | 0.278 | 1.00 / 0.97 | fail |
+| R100 | 69 | -9.825 / -10.323 | 0.165 | -0.963 / -0.948 | 0.410 | 1.00 / 0.98 | fail |
+| LR100 | 191 | -10.035 / -10.137 | 0.375 | -0.525 / -0.784 | 0.010 | 1.00 / 1.00 | fail (uni) |
+| LR100 seed 2 | 191 | -10.035 / -10.196 | 0.295 | -0.525 / -0.786 | 0.000 | 1.00 / 1.00 | fail (uni) |
+| full 1-1000 (rival) | 195 | -10.041 / -10.234 | 0.290 | -0.570 / -0.810 | 0.000 | 1.00 / 1.00 | fail (uni) |
+| *for scale: R4369 LR100 on its own codes* | 470 | -7.017 / -9.157 | 0.000 | -0.361 / -0.694 | 0.000 | 1.00 / 1.00 | pass (READ2-HEL) |
+
+**Combined (reported, not gated):** comb_LR100 covers 661 tokens (79.1%), uni -7.889 vs -9.516, p 0.000 -- but R4369 alone reads
+-7.017, so adding R4372's half lowers the score by 0.87 (by 0.36-0.75 for the other attributions): the added tokens read worse than
+R4369's own. Secondary rows (not gated): R1049 (1756) under LR100 uni p 0.010 with bi order p 0.310 -- one statistic of 35
+secondary tests; no other letter under 0.0125.
+**Diagnostic (not pre-registered, not a gate):** 15 of the 191 covered tokens are "zero" (code 405 ten times), which the word
+statistic scores as a rare word; with the zero codes removed LR100 reads uni -9.704 vs -9.950, p 0.245 (bi order p 0.010) -- still
+far from a pass, so the nulls do not explain the failure.
+
+**Result.** At power 1.00 the unigram statistic fails for every attribution: **R4372 does not read R1953's codes 1-800 the way R4369
+reads 801+** (pre-registered fail). One thing differs from R4370: R4372 LR100's order-sensitive bigram statistic sits at or under
+the gate on both seeds (0.010, 0.000; R4370 0.595), on 42 adjacent pairs. A key that is wrong word-by-word should not raise junction
+PMI over the order shuffle; a key that is right should raise both statistics. This is a mixed result, not a pass; it is not used to
+grade anything. No combined key or reading was built (PREREG item 7); **R4369's reading stands unchanged** (H 152 / S 304 / M 16 /
+U 374). Calls: 4 Sonnet subagent passes; my own reads: 2 page overviews, 2 crop checks, 1 reconciliation montage. Report what was
+found and where it was not found: R1953's codes 1-800 have no reading from R4369, R4370 or R4372.
+
+## Remaining gaps (NEAR3-HEL4, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; R4370 and R4372 both fail the pre-registered test (READ2-HEL2, NEAR3-HEL4), R4372 with a bigram-only signal; next: a pre-registered diagnosis of R4372's bigram signal (which pairs carry it, a per-code check of whether R4372 values fit the R4369-decoded context on either side) before any cryptanalytic key-rebuild of 1-800 with its own control, ~$5
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500 with "la Haye", no holder) not yet tested; R4372 LR100 gave R1049 a uni-only p 0.010 (secondary, not gated); next: transcribe R4376 P3 and test on R1049 with R4372 as a pre-registered second candidate, ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370 nor R4372 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (NEAR3-HEL4, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [n/a] clear-pages: no clear passage of R1953 is known on disk to serve as a crib
+- [x] known-keys: R4369 transcribed and tested, reads R1953; R4370 and R4372 transcribed and tested, neither reads codes 1-800
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, needs its own control); first diagnose R4372's bigram-only signal
+- [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: pre-registered diagnosis of R4372's bigram-only signal on R1953, ~$5
