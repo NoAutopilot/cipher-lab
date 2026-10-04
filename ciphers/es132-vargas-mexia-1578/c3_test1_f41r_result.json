@@ -1,0 +1,94 @@
+{
+ "page": "f41r",
+ "prereg": "PREREG_c3_test1.md",
+ "positive_control_f90v_unprinted": {
+  "passA": {
+   "letters": 318,
+   "S_b": -1.064,
+   "order_p99": -1.419,
+   "order_median": -1.514,
+   "key_p99": -1.837,
+   "gate_b": true,
+   "judge_null_p99": -1.947,
+   "judge_real_p05": -0.792,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 320,
+   "S_b": -1.112,
+   "order_p99": -1.418,
+   "order_median": -1.528,
+   "key_p99": -1.797,
+   "gate_b": true,
+   "judge_null_p99": -1.938,
+   "judge_real_p05": -0.781,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 322,
+   "S_b": -1.048,
+   "order_p99": -1.396,
+   "order_median": -1.517,
+   "key_p99": -1.801,
+   "gate_b": true,
+   "judge_null_p99": -1.941,
+   "judge_real_p05": -0.794,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "target": {
+  "err_2reader": "163/533",
+  "err_2reader_frac": 0.306,
+  "passA": {
+   "letters": 909,
+   "S_b": -1.375,
+   "order_p99": -1.533,
+   "order_median": -1.6,
+   "key_p99": -1.838,
+   "gate_b": true,
+   "judge_null_p99": -2.004,
+   "judge_real_p05": -0.776,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 924,
+   "S_b": -1.388,
+   "order_p99": -1.548,
+   "order_median": -1.623,
+   "key_p99": -1.839,
+   "gate_b": true,
+   "judge_null_p99": -1.999,
+   "judge_real_p05": -0.767,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 973,
+   "S_b": -1.266,
+   "order_p99": -1.483,
+   "order_median": -1.542,
+   "key_p99": -1.832,
+   "gate_b": true,
+   "judge_null_p99": -2.005,
+   "judge_real_p05": -0.772,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "grades_reconciled": {
+  "H": 0,
+  "C": 0,
+  "S": 393,
+  "M": 95,
+  "I": 0,
+  "U": 35
+ },
+ "dropped_shape_tokens": {
+  "marks": 17,
+  "clear": 2
+ }
+}

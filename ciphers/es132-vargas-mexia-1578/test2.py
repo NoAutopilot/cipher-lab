@@ -15,6 +15,11 @@ L05: tilde over 17σ = @m, small r-shaped mark over 24. = @r):
 Then passnorm.py (unchanged). {CLEAR:...} tokens are dropped. err_2reader = token disagreement between passes A and B after
 normalisation, per line difflib alignment, (A-only + B-only + substituted) / max(len A, len B) summed.
 Writes test2_result.json and reading_<page>.txt; --check exits 1 if stale.
+
+--page f41r (ES132-C3, 4 Oct 2026, PREREG_c3_test1.md): Cipher 3 pool test 1 on one open letter page. Scores that page's passes A/B and
+reconciled text (all lines) with the same score(), and in the same run the positive control (test 1's f.90v unprinted L01-L09, L27,
+passes A/B + reconciled); grades S where gate (b) passes on both blind passes and the control's reconciled text, else M.
+Writes c3_test1_<page>_result.json and reading_<page>.txt only (test2_result.json untouched); --check as above.
 """
 import sys, json, gzip, random, re, difflib
 from pathlib import Path
@@ -114,7 +119,50 @@ def gate_a(page, cfg, key, shuf, corpus):
     return out
 
 
+C3_PAGES = {'f41r': ['L%02d' % i for i in range(1, 41)]}
+F90V_UNPRINTED = ['L%02d' % i for i in range(1, 10)] + ['L27']
+
+
+def main_page(page):
+    key = load_key()
+    rng = random.Random(1578)
+    shuf = [shuffled(key, rng) for _ in range(200)]
+    model = jp.NgramModel([gzip.open(p, 'rt', encoding='utf-8').read() for p in ES16])
+    res = {'page': page, 'prereg': 'PREREG_c3_test1.md'}
+    ctl = res['positive_control_f90v_unprinted'] = {}
+    t1 = lambda f: {k: norm_line(' '.join(v)).split() for k, v in load_lines(HERE / f).items()}  # test 1's loader (its notation)
+    for name, L in (('passA', t1('passes/f90v_passA.tsv')), ('passB', t1('passes/f90v_passB.tsv')),
+                    ('reconciled', load_lines(HERE / 'ciphertext_f90v.tsv'))):
+        ctl[name] = score([t for ln in F90V_UNPRINTED if ln in L for t in L[ln]], key, shuf, model, random.Random(1578))
+    lines = C3_PAGES[page]
+    A, B = load_pass(HERE / f'passes/{page}_passA.tsv'), load_pass(HERE / f'passes/{page}_passB.tsv')
+    pr_ = HERE / f'ciphertext_{page}.tsv'
+    R = load_lines(pr_) if pr_.exists() else {}
+    d, n = err2(A, B); r = res['target'] = {'err_2reader': f'{d}/{n}', 'err_2reader_frac': round(d / max(1, n), 3)}
+    for name, L in (('passA', A), ('passB', B), ('reconciled', R)):
+        if L: r[name] = score([t for ln in lines if ln in L for t in L[ln]], key, shuf, model, random.Random(1578))
+    outs = {}
+    if R:
+        ok = all(r[x]['gate_b'] for x in ('passA', 'passB')) and ctl['reconciled']['gate_b']
+        toks = [t for ln in lines if ln in R for t in R[ln]]
+        kinds = [dec_tok(t, key)[1] for t in toks]
+        key_q = sum(k == 'key' and t.endswith('?') for t, k in zip(toks, kinds))
+        nkey = sum(k == 'key' for k in kinds)
+        res['grades_reconciled'] = dict(H=0, C=0, S=(nkey - key_q) if ok else 0, M=key_q if ok else nkey, I=0,
+                                        U=sum(k in ('code', 'bad') for k in kinds))
+        outs[f'reading_{page}.txt'] = reading(R, key, sorted(set(R) & set(lines)))
+    res['dropped_shape_tokens'] = dict(DROPPED)
+    outs[f'c3_test1_{page}_result.json'] = json.dumps(res, indent=1) + '\n'
+    if '--check' in sys.argv:
+        stale = [f for f, s in outs.items() if not (HERE / f).exists() or (HERE / f).read_text(encoding='utf-8') != s]
+        print('stale:' if stale else 'OK: committed outputs match', *stale); sys.exit(1 if stale else 0)
+    for f, s in outs.items(): (HERE / f).write_text(s, encoding='utf-8')
+    print(outs[f'c3_test1_{page}_result.json'])
+
+
 def main():
+    if '--page' in sys.argv:
+        return main_page(sys.argv[sys.argv.index('--page') + 1])
     key = load_key()
     rng = random.Random(1578)
     shuf = [shuffled(key, rng) for _ in range(200)]

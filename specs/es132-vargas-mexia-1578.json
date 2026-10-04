@@ -26,6 +26,11 @@
   {
    "test": 2,
    "what": "nomenclature: rebuild the codes needed (Alcocer 1921 facsimile via LOCAL-QUEUE, or cabinet-noir's attested values, cited)"
+  },
+  {
+   "test": "c3-1",
+   "what": "Cipher 3 pool test 1: one open Cp.30 letter outside cabinet-noir's list (f.41r, Madrid 29 April 1578), 2 blind passes + reconciliation, Cp.30 decode, S_b (es16 4-gram) vs token-order and key-shuffle null p99, f.90v unprinted positive control in the same run (PREREG_c3_test1.md)",
+   "tool": "ciphers/es132-vargas-mexia-1578/test2.py --page f41r [--check]"
   }
  ],
  "matched_control": "known-answer half: same page, same hand, same transcription pipeline, scored against Teulet's period decipherment; null: 200 keys with letter values permuted among numeric base symbols (seed 1578) -- changes decoded letters, so it can move both statistics",
@@ -39,6 +44,17 @@
    "target": "L02-L06 (paragraph not printed by Teulet), 121 key-decoded letters + 14 code tokens: Spanish word-cover 0.983 vs null mean 0.919, p95 0.971, max 0.993, rank 6 of 201 -- statistic AT CEILING for syllabic decodes (null mean already 0.92): non-discriminating, not a pass or a negative",
    "judge": "es17: target FAIL -1.149; known-answer decode FAIL -1.077; Teulet's own printed text FAIL -0.956 (span) / -0.962; shuffled-key target decode -1.814; real_p05 about -0.90..-0.94 -> judge cannot decide at this era/register (real 1578 prose false-negatives); the target sits with the known-answer decode, far from the shuffled-key floor",
    "verdict": "key Cp.30 opens f.119v: known-answer half passes decisively on blind transcriptions; target paragraph reads as Spanish by eye but test 0 has no non-ceiling statistic for it; next: test 1",
+   "cost": "see the lane ledger"
+  },
+  {
+   "test": "c3-1",
+   "date": "4 Oct 2026",
+   "worker": "LANE-POOLS2 ES132-C3 (account 1)",
+   "method": "python3 ciphers/es132-vargas-mexia-1578/test2.py --page f41r (200 token-order shuffles + 200 key shuffles, seed 1578, nulls first)",
+   "target": "f.41r 30 lines, 526 tokens, err_2reader 163/533 = 0.306: S_b blind pass A -1.375 (909 letters) vs order p99 -1.533 / key p99 -1.838 PASS; pass B -1.388 vs -1.548 / -1.839 PASS; reconciled -1.266 vs -1.483 / -1.832 PASS",
+   "positive_control": "f.90v unprinted L01-L09+L27, same run: pass A -1.064 vs -1.419 / -1.837, pass B -1.112 vs -1.418 / -1.797, reconciled -1.048 vs -1.396 / -1.801, all PASS (reproduces test 1 exactly)",
+   "judge": "standard es16 judge not gated (held-out false-negative 60.7-70.3%); ARM-C1 shuffled-median judge PASS false on target and control",
+   "verdict": "gate (b) PASS on both blind passes with the control passing in the same run: Cp.30 applies to f.41r; weak support only (Spanish-likeness beyond the syllable inventory), transcription error high (30.6% 2-reader); nomenclature unread",
    "cost": "see the lane ledger"
   }
  ],
