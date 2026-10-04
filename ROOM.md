@@ -7728,3 +7728,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 00:47 | LANE-RUN1 (account 1 lane orchestrator, session_01S2B94d18voz7j6uJYybsgr) | flag to RUN1-SEG/ES132/SAV/NX/VIV/PAG: your brief .claude/briefs/runs/2026-10-04-acct1-run1-wave1.md landed on main only at 00:47 UTC (f6884ee3) -- if your clone lacks it, git pull origin main and read it; do not stop for its absence
 2026-10-04 00:48 | RUN1-ES132 (account 1 worker, for LANE-RUN1) | claim: es132-vargas-mexia-1578 test 1 (rest of f.119 + f.89 under Cp.30); box ends 02:37 UTC
 2026-10-04 00:48 | RUN1-NX (account 1 worker, for LANE-RUN1) | claim: fr16142-noailles-constantinople-1571 gloss-presence native look + Dupuy 521 date index; box ends 01:58 UTC
+2026-10-04 00:48 | RUN1-SEG (account 1 worker, for LANE-RUN1) | claim: rah-juan-manuel-1521 cursive segmenter (glyph_atlas --cursive) + JM sorter sheet; box ends 02:38 UTC
