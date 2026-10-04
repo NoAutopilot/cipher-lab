@@ -341,3 +341,84 @@ Tomokiyo's published key (held-out PASS, N5-VIVK); ink 38 (ff.92r-95v) is its tw
 - [x] image-check: canvases 95-101, 105-106, 109-112 (fr.16105) and 170-178 (fr.16104) viewed; f.104r illegible (N4-VIV3)
 - [ ] retry: fr.16104 ff.157-159v with key.tsv against its decipherment ff.162r-163r (known-plaintext check, separate brief)
 Verdict: keep going: 5 internal gaps; cheapest next: Gachard II entry and following leaves for the f.164 letter to the Queen, ~$1
+
+## N5-VIVTAB (4 Oct 2026, LANE-NEAR5 worker, account 2): per-piece table of fr.16104/16105 -- which cipher pieces lack a clerk decipherment
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near5-wave1.md "N5-VIVTAB". No transcription, no decode, no subagent calls. Output: `piece_table.tsv`
+(76 rows: Gachard's entry headers for both volumes, plus every piece seen on the leaves by this and earlier workers).
+
+**Scope actually covered (not the full pass the brief asked for).** Gallica's IIIF answered at 60-118 s per 1200 px image from 07:48 to about
+08:04 UTC (two dropped connections), so the planned 266-image sweep (every second canvas of both volumes) was stopped after 2 requests and replaced
+by targeted openings; when the server sped up (1-10 s) the tail of fr.16105 was swept. Viewed at 1200 px by this worker: fr.16104 c182, c184,
+c186, c187, c188 (= c189, a second capture of the same opening), c190, c191; fr.16105 c192, c194-c200, c202, c204, then c206-c248 every second
+canvas (read on contact sheets of six). **Not viewed: fr.16104 c1-c169 and c192-c324 (except the single canvases earlier workers list), fr.16105
+c1-c94 and c113-c191 (except N4-VIV's bisection canvases).** Gachard's printed headers stand in for those stretches only where he gives an entry.
+
+**From Gachard II (IA labibliothquen02gachuoft djvu.txt, entry headers pp.362-454, grepped and read by eye):** vol. I (= fr.16104) is ink pieces
+I-CI, vol. II (= fr.16105) I-LXXIII (his own count; the leaves run to 77). Gachard analyses about 37 pieces of vol. I and 29 of vol. II and gives
+cipher pieces a double number when the decipherment follows (his own rule, stated for the 1581-82 volume of the same series). His "sans le
+déchiffrement" flags in these two volumes: **L (5 Sept 1572), XXXVIII (4 June 1573) and LXIII (10 Oct 1573)**; the 3 Oct 2026 count of "2" missed
+LXIII (OCR "cliiffrée ... décliijlremenl"). Not in these volumes but noted: vol. III (fr.16106) XLIV is a "Déchiffrement d'une lettre à la reine,
+du 7 septembre 1574" printed without its cipher piece (the reverse case).
+
+**Found on the leaves:**
+- **fr.16105 ink 63, 10 Oct 1573, to the King (Gachard LXIII, "sans"): no decipherment.** f.187r (canvas 192) docket "10 Octobre 1573 Madrid",
+  heading "du S^r de S^t Gourd au Roy"; ff.187r-189v plain French (the passport asked for the King of Poland, Çayas, the audience of S^t Michel --
+  Gachard's summary); cipher from the head of f.190r to about line 20 of f.194r, then a few plain lines and the closing "de Madrid ce x^me jour
+  d'octobre 1573", signed (canvases 195-199). About 8.5 dense pages of cipher, ~340 lines by eye (estimate, not counted). No interlinear gloss
+  seen. f.194v is its address leaf; the next pieces are 64 (f.195r, a short plain letter of the same day to the King), 65 (f.197r, plain, to the
+  Queen), 66 (f.199r, a Spanish letter of the marqués de Mondéjar, Perpignan, 12 Oct), 67 (20 Oct, cipher) with its own decipherment 68 ("dechiffré
+  de la precedente", opening "Sire, Encores que ...", the same as 67's). No piece from 64 to the end of the volume (77, c248) is a decipherment of 63.
+  Gachard's flag is borne out here, unlike his flag on L.
+- **fr.16104 ink 52, 53 and 54: three cipher pieces with no decipherment piece next to them, none analysed by Gachard** (his entries jump from
+  L to LV-LVI):
+  - 52, 5 Sept 1572, to the Queen, full cipher ff.164r-168r (canvases 178-182; c182 = ff.167v-168r full cipher), address leaf f.169v endorsed
+    "5 Septembre 1572". About 9 pages, ~270 lines est. (c179 and c181 not viewed).
+  - 53, 5 Sept 1572, "du S^r de S^t gouard au Duc d'Anjou", f.170r: six plain lines then cipher; f.171v ~22 cipher lines, then "de Madril ce
+    v^me de Sept 1572", signed; f.172r address leaf. ff.170v-171r (c185) not viewed; ~100 lines est. if they are cipher.
+  - 54, 7 Sept 1572 (docket and closing "vij^e de Sept 1572"), "du S^r de S^t gouard au Roy", f.173r: three plain lines then cipher to f.173v
+    (~50 lines est.), signed; f.174 address leaf endorsed 7 Sept 1572. **A few cipher groups on f.173r-v carry small interlinear words** (not
+    read at 1200 px): a partial period gloss, to be read at native resolution before this piece is treated as unread.
+  - Then ink 55 (f.175r, 19 Sept 1572, Gachard LV-LVI "avec"). RUN1-VIV2's "c190 = f.179" is f.175 (stamped folio read at c190 right).
+  So the 5-7 Sept 1572 group is four cipher letters (50, 52, 53, 54) and one decipherment (51, of 50). Whether any of 52-54 has a decipherment
+  filed elsewhere (as fr.16106's XLIV shows can happen) was not checked.
+- fr.16105 tail confirmed as Gachard implies: 70 -> 71 "dechiffré de la precedente" (4 Nov 1573); 74 (13 Dec) and 75 (Dec, full cipher) -> 76
+  "dechiffré de la precedente". Whether 76 covers both 74 and 75 (twin copies, as 38/40) was not checked.
+
+**Result: cipher pieces in fr.16104/16105 with no decipherment leaf located (each a candidate for a later read with key.tsv):**
+| volume | ink | date | to | cipher folios (canvases) | est. cipher lines | note |
+|---|---|---|---|---|---|---|
+| fr.16105 | 63 | 10 Oct 1573 | King | f.190r-194r (195-199) | ~340 | Gachard LXIII "sans"; no decipherment to the end of the volume |
+| fr.16104 | 52 | 5 Sept 1572 | Queen | ff.164r-168r (178-182) | ~270 | not in Gachard |
+| fr.16104 | 53 | 5 Sept 1572 | duc d'Anjou | ff.170r-171v (184-186) | ~100 | not in Gachard; c185 unseen |
+| fr.16104 | 54 | 7 Sept 1572 | King | f.173r-v (187-188) | ~50 | not in Gachard; a few interlinear words |
+| fr.16105 | 38 | 4 June 1573 | King | ff.92r-95v (95-99) | ~250-280 | twin of 40, whose decipherment 41 exists (N4-VIV3, N5-VIVK) |
+Line counts are estimates by eye at 1200 px, not counts. The unviewed stretches (above) may hold more.
+
+Requests: gallica.bnf.fr 47 (2 dropped by the stopped sweep; 4 endpoint/timing tests including .lowres/.medres; 40 by the targeted queue,
+39 x 200 + 1 dropped connection; 1 retry of c196, 200), one at a time, >= 2 s apart; archive.org 1 (Gachard II djvu.txt). Vision reads: 18
+(single openings and contact sheets). Subagent calls: 0. Cost: see the lane ledger. Committed evidence sheets (downscaled 700 px):
+images/n5vivtab_fr16104_c184-190_sheet.jpg (c184, c187, c188, c190), images/n5vivtab_fr16105_c192-202_sheet.jpg (c192, c196, c199, c202).
+
+## Remaining gaps (N5-VIVTAB refresh, 4 Oct 2026)
+Read so far: of the cipher pieces seen on the leaves, these carry a period decipherment: 40 (by 41), 43 (44), 67 (68), 70 (71), 74/75 (76) in
+fr.16105 and 50 (51) in fr.16104, plus Gachard's double-numbered "avec" entries; ink 40 checked against 41 with Tomokiyo's key (held-out PASS,
+N5-VIVK). Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- fr.16105 ink 63 (10 Oct 1573) cipher block ff.190r-194r - blocker: not-attempted; no decipherment in the volume (N5-VIVTAB), Tomokiyo's key checked on ink 40; next: crops + two blind passes per page against tx/SIGNS.md, decode with key.tsv, judge fr16, ~$15-20 (8.5 pages)
+- fr.16104 inks 52, 53, 54 (5 and 7 Sept 1572) - blocker: not-attempted; no decipherment piece beside them (N5-VIVTAB); next: native crop of f.173r-v's interlinear words (piece 54) and a look at c179/c181/c185, then the smallest (54, ~50 lines) read with key.tsv as the first test, ~$1 to inspect, ~$6 to read 54
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: count cipher lines (c170-173) vs decipherment length, then crops + two blind passes against tx/SIGNS.md, key.tsv decode aligned as in tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table (fr.16104 c1-c169, c192-c324; fr.16105 c1-c94, c113-c191) - blocker: not-attempted; Gallica answered at ~90 s per image for part of this job; next: the same pass at 1200 px every second canvas, contact sheets of six, when the server answers in seconds, ~$3
+- Transcription labels S, y, b, V, c, 2 - blocker: not-attempted; the four M codes and the unmapped labels come from the passes' inventory, not the key; next: one look-alike pass (tools/lookalike_pass.py) on f.102v/f.103r crops, then re-run tx/key_support.py, ~$3
+- Missing duplicate-band lines (up to 5 lines, the DUP rows) - blocker: not-attempted; the slope-tracked bands fitted the same line twice; next: re-cut those bands with --centres from the debug overlays, one pass each, ~$2
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (4 Oct 2026, N5-VIVTAB)
+- [x] siblings: ink 38 located (N4-VIV3); ink 40 vs 41 aligned (N5-VIVK); 5 Sept 1572 decipherment 51 found (N5-VIV5S); per-piece table built for the stretches viewed, 4 undeciphered cipher pieces located (N5-VIVTAB)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves
+- [x] known-keys: Tomokiyo's 1572-74 key on disk (key_tomokiyo.tsv, key.tsv) and held-out PASS against the period decipherment (N5-VIVK, 0.545 vs null p95 0.362)
+- [x] print: Gachard II, d'Ars, Catherine IV-V, Groen IV read (see top); Gachard II entry headers for vols I-II tabulated (N5-VIVTAB)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes; slope diagnostic 0 of 30); a published key exists
+- [x] image-check: fr.16105 c95-101, 105-106, 109-112, 192-248; fr.16104 c170-191 viewed at 1200 px; f.104r illegible (N4-VIV3)
+- [ ] retry: fr.16104 ink 54 (~50 lines, 7 Sept 1572) and fr.16105 ink 63 (~340 lines, 10 Oct 1573) read with key.tsv; no decipherment located for either
+Verdict: keep going: 6 internal gaps; cheapest next: native crop of fr.16104 f.173r-v (ink 54) interlinear words, then read ink 54 with key.tsv, ~$1 + ~$6
+
+Gate output (N5-VIVTAB, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 6 internal gap(s), 1 step(s) untried`

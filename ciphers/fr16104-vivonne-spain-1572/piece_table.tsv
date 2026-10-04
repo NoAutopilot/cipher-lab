@@ -1,0 +1,76 @@
+# N5-VIVTAB, 4 Oct 2026. One row per old ink piece number known for fr.16104 (Gachard vol. I = pieces I-CI, 1572) and fr.16105 (vol. II = pieces I-LXXIII, 1573).
+# Sources: gachard = Gachard, La Bibliotheque nationale a Paris II (1875) pp.362ff, IA labibliothquen02gachuoft djvu.txt, entry headers grepped (OCR; numerals garbled in places, read by eye);
+# leaf = seen on a Gallica opening (worker named in note). cipher: full/partial/none/? ; dechiffre_leaf: canvas/folio of the clerk's decipherment, "same-number" when Gachard gives the piece a double number with "avec le dechiffrement", none-seen, or ?.
+# Gachard's own rule (vol. for 1581-82, same series): "les lettres en chiffres qui sont suivies de leur dechiffrement ont un numero double". Pieces Gachard does not list were not analysed by him: their cipher status is unknown unless a leaf row says otherwise.
+volume	piece	canvas	folio	docket_date	addressee	cipher	dechiffre_leaf	source	note
+fr.16104	21-22			21 May 1572	King	full	same-number	gachard	En chiffres, avec le dechiffrement
+fr.16104	26-27			31 May 1572	King	?	same-number?	gachard	double number, no flag in Gachard
+fr.16104	31-32			22 June 1572	King	?	same-number?	gachard	double number, no flag
+fr.16104	34-35			1 July 1572	King	partial	same-number	gachard	En partie chiffree, avec
+fr.16104	37			16 July 1572	King	full	?	gachard	OCR "XXXVII. XLII" garbled; En chiffres, avec
+fr.16104	38-39			16 July 1572	duc d'Anjou	full	same-number	gachard	En chiffres, avec
+fr.16104	41-42			22 July 1572	King	partial	same-number	gachard	OCR "XLL LI"; Chiffree en partie, avec
+fr.16104	43-44			30 July 1572	King	full	same-number	gachard	En chiffres, avec
+fr.16104	50			5 Sept 1572	King	partial	c176 f.162r (piece 51)	gachard	Gachard: sans le dechiffrement -- wrong; N5-VIV5S found piece 51 "dechiffre de la precedente"; cipher ff.157r-159v c170-173
+fr.16104	55-56			19 Sept 1572	King	full	same-number	gachard	En chiffres, avec; leaf c190 f.179 plain with cipher in last 3 lines (RUN1-VIV2)
+fr.16104	57-58			19 Sept 1572	Queen	full	same-number	gachard	En chiffres, avec
+fr.16104	59-60			19 Sept 1572	duc d'Anjou	full	same-number	gachard	En chiffres, avec
+fr.16104	61-62			23 Sept 1572	King	?	same-number?	gachard	double number, no flag
+fr.16104	71			18 Oct 1572	King	none?	none	gachard	single number, no cipher flag
+fr.16104	77-78			7 Nov 1572	King	?	same-number?	gachard	double number, no flag
+fr.16104	82-83			15 Nov 1572	King	full	same-number	gachard	En chiffres, avec
+fr.16104	88-89			22 Nov 1572	King	full?	same-number?	gachard	flag cut by OCR footnote ("En chif-")
+fr.16104	90-91			22 Nov 1572	Queen	full	same-number	gachard	En chiffres, avec
+fr.16104	96-97			17 Dec 1572	King	full	same-number	gachard	En chiffres, avec
+fr.16104	100-101			23 Dec 1572	King	full	same-number	gachard	En chiffres, avec
+fr.16104	4			14 Mar 1572	King	none?	none	gachard	single number, no flag
+fr.16104	7			14 Apr 1572	King	none?	none	gachard	single number, no flag
+fr.16104	24			31 May 1572	Queen	none?	none	gachard	single number, no flag
+fr.16105	1-2			6 Jan 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	7-8			4 Feb 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	9			4 Feb 1573	Queen	none?	none	gachard	single number, no flag
+fr.16105	12-13			22 Feb 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	15-16			10 Mar 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	20-21			18 Mar 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	22-23			30 Mar 1573	King	?	same-number?	gachard	double number, no flag
+fr.16105	29			25 Apr 1573	King	none?	none	gachard	autograph, single number
+fr.16105	31			17 May 1573	King	none?	none	gachard	single number, no flag
+fr.16105	38			4 June 1573	King	partial	none-seen (twin copy: piece 41)	gachard	Gachard sans; cipher ff.92r-95v c95-99 (N4-VIV3); plaintext = piece 41 via twin copy 40
+fr.16105	40-41			4/8 June 1573	King	partial (almost full)	c107-112 ff.104r-108v	gachard	Gachard XL-XLI "8 juin", duplicate of 4 June; cipher ff.100-103r c103-107; key check N5-VIVK
+fr.16105	45			8 June 1573	Queen	none?	none	gachard	single number; leaf f.109 plain (N4-VIV)
+fr.16105	46-47			9 July 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	49-50			17 July 1573	King	full	same-number	gachard	En chiffres, avec
+fr.16105	54-55			15 Aug 1573	King	full	same-number	gachard	Tres-longue lettre en chiffres, avec
+fr.16105	61			20 Sept 1573	King	none?	none	gachard	single number, no flag
+fr.16105	63			10 Oct 1573	King	partial	none (leaves: N5-VIVTAB)	gachard	Gachard: En partie chiffree, sans le dechiffrement -- borne out on the leaves (N5-VIVTAB)
+fr.16105	70-71			5 Nov 1573	King	?	same-number?	gachard	double number, no flag
+fr.16105	74-76			13 Dec 1573	King	full	same-number	gachard	En chiffres, avec (triple number)
+fr.16104	50	170-173	157r-159v	5 Sept 1572	King	partial	c176 f.162r	leaf	N4-VIV, N5-VIV5S
+fr.16104	51	176	162r-163r	5 Sept 1572	King	decipherment	-	leaf	"dechiffre de la precedente" (N5-VIV5S)
+fr.16105	40	102-107	99r-103v	4 June 1573	King	partial	c107 f.104r	leaf	N4-VIV, N4-VIV2
+fr.16105	41	107-112	104r-108v	8 June 1573	King	decipherment	-	leaf	"dechiffre de la precedente" (N4-VIV2)
+fr.16105	42	112	109r	8 June 1573	Queen	none	-	leaf	N4-VIV
+fr.16105	43	114-116	111r-113	18 June 1573	King	full (gloss on first lines)	c120 f.117r (44)	leaf	N4-VIV bisection; ink 43/44 from N4-VIV2
+fr.16105	44	120	117r	18 June 1573	King	decipherment	-	leaf	"dechiffre de la precedente"
+fr.16105	45/46	126	123r	18 June 1573	Queen	?	?	leaf	N4-VIV bisection
+fr.16105	?	130-131	126v-128	?	?	full	?	leaf	signed full-cipher letter (N4-VIV)
+fr.16105	?	150	147r	30 July 1573	?	decipherment	-	leaf	"dechiffre de la precedente" (N4-VIV)
+fr.16104	52	178-182	164r-168r	5 Sept 1572	Queen	full	none-seen	leaf	N5-VIV5S c178 head + RUN1-VIV2 c180 + N5-VIVTAB c182 (ff.167v-168r full cipher); address leaf f.169v (c184 left, endorsed 5 Sept 1572); not in Gachard; ~9 cipher pages, ~270 lines est. (c179, c181 not viewed)
+fr.16104	53	184-186	170r-171v	5 Sept 1572	duc d'Anjou	partial (mostly)	none-seen	leaf	N5-VIVTAB: f.170r heading "du Sr de St gouard au Duc d'Anjou", 6 plain lines then cipher; f.171v ~22 cipher lines then closing "de Madril ce v^me de Sept 1572", signed; f.172r address leaf; ff.170v-171r (c185) not viewed; ~100 lines est. if those pages are cipher; not in Gachard
+fr.16104	54	187-188	173r-173v	7 Sept 1572	King	partial (mostly)	none-seen	leaf	N5-VIVTAB: f.173r heading "du Sr de St gouard au Roy", docket 7 Septembre 1572, 3 plain lines then cipher; a few cipher groups carry small interlinear words (not read); f.173v ~25 cipher lines, closing "vij^e de Sept 1572", signed; f.174r/174v address leaf endorsed 7 Sept 1572; ~50 lines est.; not in Gachard. c188 and c189 are two captures of the same opening
+fr.16104	55	190-191	175r-176r+	19 Sept 1572	King	partial	same-number (56)	leaf	N5-VIVTAB: f.175r ink 55 plain then cipher; ff.175v-176r full cipher; Gachard LV-LVI avec (RUN1-VIV2's "c190 = f.179" corrected to f.175)
+fr.16105	63	192-199	187r-194r	10 Oct 1573	King	partial	none	leaf	N5-VIVTAB: f.187r ink 63 docket "10 Octobre 1573 Madrid"; ff.187r-189v plain (c192, c194, c195 left); cipher from the head of f.190r to ~line 20 of f.194r (c195 right-c199 right), ~8.5 pages, ~340 lines est.; closing "de Madrid ce x^me jour d'octobre 1573", signed; f.194v address leaf (c200 left); no interlinear gloss seen
+fr.16105	64	200	195r	10 Oct 1573	King	none	-	leaf	N5-VIVTAB: short plain letter (passport for the King of Poland)
+fr.16105	65	202	197r	10 Oct 1573	Queen	none	-	leaf	N5-VIVTAB: plain
+fr.16105	66	204	199r	12 Oct 1573	(marques de Mondejar to Philip II)	none	-	leaf	N5-VIVTAB: Spanish letter/copy, Perpignan
+fr.16105	67	206-208	201r-203r	20 Oct 1573	King	partial (mostly)	c210 f.205r (68)	leaf	N5-VIVTAB: plain head then cipher; not in Gachard
+fr.16105	68	210-212	205r-207+	20 Oct 1573	King	decipherment	-	leaf	"dechiffre de la precedente"; opening "Sire, Encores que ..." matches 67
+fr.16105	69	214	209r	3/4 Nov 1573	Queen	none	-	leaf	N5-VIVTAB: short plain
+fr.16105	70	216-218	211r-213r	4/5 Nov 1573	King	partial (mostly)	c220 f.215r (71)	leaf	N5-VIVTAB; Gachard LXX-LXXI
+fr.16105	71	220-222	215r-217+	4 Nov 1573	King	decipherment	-	leaf	"dechiffre de la precedente"
+fr.16105	72	224	219r	6 Dec 1573	(King to Saint-Gouard)	none	-	leaf	minute
+fr.16105	73	226-228	221r-223	10 Dec 1573	(King to Saint-Gouard)	none	-	leaf	minute
+fr.16105	74	230-232	224r-226v	13 Dec 1573	King	partial (mostly)	c238 f.233r (76)?	leaf	N5-VIVTAB; Gachard LXXIV-LXXVI triple number; f.227r cipher with plain postscript
+fr.16105	75	234-236	229r-231+	Dec 1573	King	full	c238 f.233r (76)	leaf	N5-VIVTAB; second cipher piece before the decipherment; whether 76 covers 74 and 75 (a twin copy, as 38/40) not checked
+fr.16105	76	238-240	233r-235+	Dec 1573	King	decipherment	-	leaf	"dechiffre de la precedente"
+fr.16105	77	242-246	236-241	?	(translation from Spanish)	none	-	leaf	plain "Traduction de l'espagnol ..."; c248 end of volume
