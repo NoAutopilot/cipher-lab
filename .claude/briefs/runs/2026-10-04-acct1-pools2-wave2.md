@@ -36,3 +36,13 @@ Model Sonnet. Cap USD 5, box 50 min. **Started only when no other LANE-POOLS2 wo
    once, >= 2 s apart). Table: letter, folio, cipher pages, decipherment leaf (y/n, folio), est. signs (3-line sample x lines).
 4. Replace the Pool bar line with a measured PASS|FAIL; if PASS name the cheapest first test (the in-volume decipherments make a
    grade-C key by `tools/interlinear_align.py` the obvious one). Gaps/Escalation, gaps_check, intake gate pasted. Stop.
+
+## PIS-M -- fr16045-pisany-rome-1585: measure the 1585 residual and match the Colbert copy (added 06:2x UTC)
+Model Sonnet. Cap USD 5, box 50 min. **Started only when no other LANE-POOLS2 worker is on Gallica.** Read
+`ciphers/fr16045-pisany-rome-1585/NOTES.md` (CS-3). Never write to `ciphers/fr3983-pisany-nevers-1593`.
+1. For each of the 16 letters (9 of 1585 in fr.16045, 7 of 1586-88): canvas, cipher pages, period decipherment on/near the leaf
+   (y/n), est. signs from a 3-line sample x lines (contact sheets at 600 px; <= 60 Gallica requests, each canvas once, >= 2 s apart).
+2. Match the 1586-88 letters to Mélanges de Colbert 16 pt II (btv1b100341061) by date and opening words: a matched clear copy makes
+   that letter found-solved (period clear copy), not open.
+3. Replace the Pool bar line with a measured PASS|FAIL; if PASS, name the first test (Tomokiyo's Vivonne/Pisany table on one 1585
+   page vs a shuffled-key control, or interlinear_align.py on a Colbert-matched letter). Gaps/Escalation, gaps_check, intake gate. Stop.
