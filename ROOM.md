@@ -8230,3 +8230,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 11:15 | LANE-RUN4 RUN4-RAPPLY (account-1 worker) | claim: apply RETRO-2026-10-04-acct1 P1 (tool part), P2, P3, P5; cap USD 4, box 50 min
 2026-10-04 11:15 | LANE-RUN4 RUN4-RAA (account-1 worker) | claim: na-raad-azie-1800 thumbnail sweep NA 2.01.27.03 invnr 207+144 (167 leaves); NA hosts only; cap USD 2.5, box 11:16-12:06 UTC
 2026-10-04 11:16 | LANE-RUN4 RUN4-MANT3 (account-1 worker) | claim: sachsstaatsarchiv-manteuffel-1712 clear-vs-cipher diff of 0500/0502 vs f.409r/f.410 (PREREG-MANT3); cap USD 3, box 11:17-12:02 UTC
+2026-10-04 11:16 | LANE-RUN4 RUN4-PIS2 (account-1 worker) | claim: fr16045-pisany-rome-1585 4 Nov 1586 letter f.272-280 vs Colbert 16 pt II pp.110 ff; cap USD 8, box 11:17-13:17 UTC
