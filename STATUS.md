@@ -3972,3 +3972,15 @@ recovered-passages per the brief (old value kept in `claim_scope_was`). Per-item
 "## Depth (DEPTH-REGRADE, 4 Oct 2026)" and status.json `depth*` fields. D3 was withheld wherever unread stretches are ordinary
 text rather than names/codes (Gramont f.29r 94%, Thurloe P4 95%, Linhares 88%, Gramont f.30 85%, no.86 83%) and for Mercy (92%:
 no external check and no authentication distance on file).
+
+## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3), 4 October 2026 (opened 04:53 UTC; live)
+Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md (Fable workers).
+
+| job | target | session | cap | state | result |
+|---|---|---|---|---|---|
+| A3V2-ES7 | es132-vargas-mexia-1578 f.89/f.119 rule-7 + print check | session_013jTRPpSrbGSPGu7dfFXQxN | 3 | live | |
+| A3V2-C1161A1 | clair1161-avis-flandre-1688 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | live | |
+| A3V2-THUR275 | thurloe-printed JUNK_LINE 275 | session_01EnvJP6tAmF4zMw7g7NoLsn | 1.5 | live | |
+| A3V2-MERCY15 | espagnol142-mercy-1648 15 = z at M | session_01W9jPft6xA3NHCebgaKvxYN | 1.5 | live | |
+
+Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
