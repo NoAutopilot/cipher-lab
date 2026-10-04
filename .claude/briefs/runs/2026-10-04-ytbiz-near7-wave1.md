@@ -98,3 +98,14 @@ NOTES N7-HELBC named it: R4386 (f.75, alphabetical one-part 1201-2200, names 176
 PREREG-N7HELBC's rule (statistic, null, control subsampled to N=121, pass rule) as PREREG-N7HEL86 before reading; one DECODE login, images to
 scratch only, scrub the account name; 2 blind Sonnet passes over the target + null cells only + reconciliation. Verdict candidate/retired; gaps
 refresh + gaps_check OK; NEAR row Evidence/Last-touched + near_check.
+
+## Wave 5 (added 13:4x UTC by LANE-NEAR7)
+
+### N7-VIV54R -- ink 54: the col-u row-3 sign as its own label, relabel from native crops, re-decode (Opus; cap USD 2.5; box 45 min; disk only)
+N7-VIV54Q (NOTES, tx/viv54Q/to_sign_evidence.jpg): the sign after "to" (13 in ink 54, read z/R/x by the passes) is Tomokiyo's column-u row-3
+Sigma/I-shaped entry, which key_tomokiyo/key.tsv omits. Push PREREG-N7VIV54R.md BEFORE any relabel: the new label name, the key cell it takes
+(column u row 3 as read from henryiii_Vivonne1.png -- H only if the image shows it plainly, else M), the shape criterion that decides each
+position (judged from native crops against the key-image sign and the ordinary z on the same line, decoded text never shown), and that every
+position in ink 54 is judged, not only those after "to". Then relabel, add the cell to key.tsv only under that grade (note it for inks 53/63,
+which you do not relabel), regenerate reading_piece54_L via viv54L_decode.py --check, re-run b2 + specificity under PREREG-N6VIV53B's rule, and
+re-list the three longest repair-free stretches with liberties counted. All other decodes' --check must still pass. NOTES "N7-VIV54R", gaps refresh.
