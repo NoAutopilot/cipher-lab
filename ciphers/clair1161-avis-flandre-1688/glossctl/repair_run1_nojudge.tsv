@@ -1,0 +1,5 @@
+utc	gloss	fixed_signs	fixed_differs_from_keytsv	anneal_score	block_vs_real_gloss	time	judge_c185R
+2026-10-04 00:13	real	6	0	-2278.5	0.6118	42s	
+2026-10-04 00:14	shuf1	3	3	-2388.9	0.2765	42s	
+2026-10-04 00:14	shuf2	3	2	-2345.8	0.1824	41s	
+2026-10-04 00:15	shuf3	2	2	-2310.3	0.5059	40s	

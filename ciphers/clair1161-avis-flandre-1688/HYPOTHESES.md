@@ -2,6 +2,8 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+**Gloss-match controls (READ2-C1161B, 4 Oct 2026, prereg 252c32a8, glossctl/results.tsv).** Target: key.tsv decodes the c186R block to the period gloss at 0.594. Control (a), same homophonic recipe on token-order-shuffled ciphertext, 20 seeds: max 0.312. Control (b), real decode vs 200 fr16 windows: p95 0.335. PASS. Gloss-seeded repair (glossctl/repair.tsv): c185R judge -1.128 vs shuffled-gloss repairs -1.177/-1.210/-1.243, still FAIL (real_p05 -0.949).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

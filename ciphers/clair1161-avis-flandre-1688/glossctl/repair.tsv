@@ -1,0 +1,5 @@
+utc	gloss	fixed_signs	fixed_differs_from_keytsv	anneal_score	block_vs_real_gloss	time	judge_c185R
+2026-10-04 00:16	real	6	0	-2278.5	0.6118	45s	FAIL language -1.128 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.912
+2026-10-04 00:17	shuf1	3	3	-2388.9	0.2765	46s	FAIL language -1.243 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.936
+2026-10-04 00:17	shuf2	3	2	-2345.8	0.1824	45s	FAIL language -1.177 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.916
+2026-10-04 00:18	shuf3	2	2	-2310.3	0.5059	44s	FAIL language -1.21 (null_p99 -1.7, real_p05 -0.949, N 704); words cover 0.891

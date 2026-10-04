@@ -58,7 +58,7 @@ def main():
     with open(os.path.join(HERE, f"repair_{a.gloss}_key.tsv"), "w") as f:
         f.write("sign\tvalue\tfixed\n" + "".join(f"{s}\t{v}\t{'C' if s in fixed else 'S'}\n" for s, v in sorted(k2.items())))
     j = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "judge_plaintext.py"), spec_path, "--file", out, "--json"],
-                       capture_output=True, text=True).stdout
+                       capture_output=True, text=True, cwd=ROOT).stdout
     try:
         c = json.loads(j)["checks"]; L, W = c["language"], c["words"]
         js = (f"{'PASS' if L['pass'] else 'FAIL'} language {L['score']} (null_p99 {L['null_p99']}, real_p05 {L['real_p05']}, "

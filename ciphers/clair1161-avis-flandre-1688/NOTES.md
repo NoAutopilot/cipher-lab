@@ -563,3 +563,86 @@ Read so far: 924 of an estimated ~2,500 cipher signs transcribed (c185R 704, c18
 - [ ] image-check: q/ls and S splits unsettled; next: split test as in Remaining gaps
 - [n/a] retry: first anneal already read above its matched control
 Verdict: keep going: 3 internal gaps; cheapest next: split test of q/ls and S, ~$3
+
+## READ2-C1161B (3-4 Oct 2026, account 2 worker for LANE-READ2)
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-read2-c1161b.md`. Claim 23:57 UTC 3 Oct; disk only, no network, no subagent
+calls. Pre-registration `tx/PREREG_glossctl.md` (commit 252c32a8, pushed before any control ran). Scripts:
+`glossctl/glossctl.py` (statistic and controls; rows in `glossctl/results.tsv`), `glossctl/repair.py` (step 2; rows in
+`glossctl/repair.tsv`). Both anneal steps ran serially, one at a time.
+
+**Statistic re-implemented.** READ2-C1161's gloss-match script was not committed. Re-implemented as stated (difflib
+matching blocks, autojunk off, block decode vs gloss letters of `align/pairs_c186R_v0.tsv`): the real key reads
+**0.594** (101 of 170 gloss letters; READ2-C1161 reported 0.593 over "172"; the 2-letter denominator difference was not
+traced). 0.594 was fixed as the target value before the controls.
+
+**Step 1: harder controls. PASS (both required).**
+
+| | value |
+|---|---|
+| target: real key.tsv, c186R block vs gloss | **0.594** |
+| (a) same recipe (homophonic, anneal seed 1, restarts 32, fr16 3 files, N=924 K=49) on token-ORDER-shuffled ciphertext, shuffle seeds 1-20; each key applied to the UNshuffled block | max **0.312** (seed 13), mean 0.215, range 0.135-0.312 |
+| (b) real key's block decode vs 200 random 170-letter windows of the same fr16 corpus (seed 1) | p95 **0.335**, mean 0.235, max 0.382 |
+
+Shuffle seeds 1 and 2 reproduce READ2-C1161's two shuffled-target anneal scores exactly (-2539.2, -2546.6), so the recipe
+is the same. A French-fluent key with no information about sign order matches the gloss at most at 0.312. A
+correct-order decode matches unrelated French text at most at 0.382. The real key's 0.594 is above both. On this
+evidence the block-gloss agreement is not explained by LM fluency or by generic French overlap. 
+The anneal key carries sign-order information that the period gloss confirms.
+
+**Step 2: gloss-seeded key repair (rule fixed in the pre-registration).** A global edit-distance alignment of the 220
+block signs to the 170 gloss letters. A sign is fixed (grade C) when all its aligned occurrences carry one letter and it
+has >= 2 of them, or 1 if the sign occurs only in the block. Then the full 924-sign stream is re-annealed with those
+signs held (homophonic_anneal seed 1, restarts 32, fr16 order 3). Control: the same procedure with the gloss letters
+shuffled within the gloss (3 shuffles).
+
+| run | signs fixed | anneal score | block vs real gloss | c185R judge (fr16) |
+|---|---|---|---|---|
+| unrepaired key.tsv (READ2-C1161) | 0 | -2281.4 | 0.594 | FAIL language -1.155, cover 0.913 |
+| **real gloss** | 6 (a=u, d=n, e=p, ee=y, p=c, sd=g; all six already had these values in key.tsv) | -2278.5 | 0.612 | FAIL language **-1.128**, cover 0.912 |
+| shuffled gloss 1 | 3 | -2388.9 | 0.277 | FAIL -1.243, cover 0.936 |
+| shuffled gloss 2 | 3 | -2345.8 | 0.182 | FAIL -1.177, cover 0.916 |
+| shuffled gloss 3 | 2 | -2310.3 | 0.506 | FAIL -1.210, cover 0.891 |
+
+c185R judge thresholds: null_p99 -1.70, real_p05 -0.949 (N=704). The real-gloss repair beats every shuffled-gloss repair
+and the unrepaired key on the c185R judge. That meets the pre-registered "better" criterion, but the margin is small
+(+0.027 over the unrepaired key) and the judge still FAILs. The strict fixing rule kept only 6 signs. All six agreed with
+the blind key already, so the repair confirms them at grade C rather than correcting them. Holding them moved 10 free
+signs: 8 l->d, K u->f, L b->n, c f->s, iib d->l, l r->s, phi s->l, tz l->e, vdash d->t, x a->s. A looser rule (majority
+letter, >= 3 occurrences) was not run: it was not pre-registered. It is the next step below.
+
+**Key and reading regenerated.** `key.tsv` = the real-gloss repair key (6 signs C with source the c186R gloss, 10 signs S
+re-annealed with the old value in the source cell, the rest unchanged S). `python3 tools/decode_key.py
+ciphers/clair1161-avis-flandre-1688` -> `reading.txt`, `reading_tokens.tsv`; `--check` exit 0 ("reading up to date").
+Tokens 939: **C 97, S 675, M 152, U 15** (C = occurrences of the 6 gloss-confirmed signs on both leaves; U = the '/'
+marks). Judge on the full 924-sign decode (`glossctl/repaired_full_decode.txt`):
+```
+FAIL language: score=-1.136, null_p99=-1.72, real_p05=-0.924, real_median=-0.816, mode=both, N=924
+ok   words: cover=0.905, min=0.5, real_text_median_cover=0.958
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(READ2-C1161's unrepaired key: -1.151 on the same 924.) The C grade covers 6 signs' values only. The gloss is read with
+M lines and a cut left edge, so its own reading limits these.
+
+NEAR.md row and status.json `near` entry added (rule 5). `python3 tools/near_check.py` exits 2 on one WARNING only, for
+another target (blitz-ciphers, 48h window), and reports nothing for this row.
+
+Report what was found and where it was not found: this pass searched no outside source; novelty is not classified here.
+
+## Remaining gaps (READ2-C1161B, 4 Oct 2026)
+Read so far: 924 of an estimated ~2,500 cipher signs transcribed (c185R 704, c186R block 220), decoded under the gloss-repaired anneal key: C 97, S 675, M 152, U 15 tokens; 0 H.
+- c186L, c187L, c187R, c188L (about 100 lines) - blocker: not-attempted; regions in "IMG-GALLICA1" above, cut with --bottom-margin 75; next: fetch + 2 blind passes + reconciliation per leaf, then re-anneal the pooled text with the 6 C signs held, ~$6 per leaf
+- the key beyond 6 C signs - blocker: not-attempted; the strict all-agree rule fixed only 6 signs (READ2-C1161B step 2); next: a pre-registered looser rule (majority gloss letter, >= 3 aligned occurrences) with the same shuffled-gloss control, ~$5
+- look-alike pairs q/ls and the two S shapes - blocker: not-attempted; passes split them, reconciled by eye only; next: split them in the ciphertext and test which split raises the anneal score and the gloss match, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+- rule 7 re-derivation - blocker: not-attempted; reading changed this pass; next: a fresh session re-derives from the spec and key.tsv with tools/decode_key.py --check, ~$3
+
+## Escalation (READ2-C1161B, 4 Oct 2026)
+- [ ] siblings: the four other cipher leaves of the same "Avis" (c186L, c187L/R, c188L) untranscribed; next: transcribe and pool
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.594, above shuffled-order anneals (max 0.312, 20 seeds) and fr16 windows (p95 0.335)
+- [ ] known-keys: no key on file matched yet; next: run tools/key_crossmatch.py against KEY-OFFICES.tsv for 1570 French chancery keys
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: gloss-seeded repair ran with the strict rule (6 C signs, c185R judge -1.128 vs shuffled-gloss -1.177 to -1.243); next: looser pre-registered rule
+- [ ] image-check: q/ls and S splits unsettled; next: split test as in Remaining gaps
+- [n/a] retry: anneal already reads above its matched control and both gloss controls
+Verdict: keep going: 4 internal gaps; cheapest next: rule 7 re-derivation, ~$3

@@ -3442,6 +3442,13 @@
       "next": "codes 1-800: R4370 transcription + --key test (~$12); rule 7 fresh-session re-derivation; R1953 image check",
       "lane": "LANE-READ2 (account 2)",
       "touched": "3 Oct 2026 23:3x"
+    },
+    {
+      "target": "clair1161-avis-flandre-1688",
+      "title": "Clairambault 1161 Avis de Flandre: blind homophonic key decodes the c186R block to the leaf's own period gloss at 0.594 vs shuffled-order anneals max 0.312 (20 seeds) and fr16 windows p95 0.335; gloss-seeded repair c185R judge -1.128 vs shuffled-gloss -1.177..-1.243, still FAIL (real_p05 -0.949); C 97 / S 675 / M 152 / U 15",
+      "next": "transcribe c186L, c187L/R, c188L (~$6/leaf) and re-anneal pooled; q/ls and S split test (~$3); rule 7 re-derivation",
+      "lane": "LANE-READ2 (account 2)",
+      "touched": "4 Oct 2026 00:2x"
     }
   ]
 }
