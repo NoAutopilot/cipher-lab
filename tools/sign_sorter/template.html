@@ -175,6 +175,15 @@ body.traypad #offer{bottom:100px}
 #offer .t{--sz:40px}
 @media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
   .pile{scroll-margin-top:var(--barh,70px)} .bigt{width:88px;height:88px} .bigt img{max-width:80px;max-height:80px} #trayGo{padding:8px 8px}}
+/* Fix the cut (owner, 4 Oct 2026): the larger view's bracket box becomes editable */
+.cv.editing canvas{touch-action:none;cursor:crosshair}
+#fixBox[hidden]{display:none}
+#fixBox{display:grid;gap:8px;border:1px dashed var(--accent);border-radius:6px;padding:8px 10px;background:var(--accent-soft)}
+#fixBox .nudges{display:flex;flex-wrap:wrap;gap:6px 14px}
+#fixBox .nudges span{display:inline-flex;gap:4px;align-items:center;font-size:.82rem}
+#fixBox .nudges button{min-width:40px;min-height:36px;font-size:1rem;padding:2px 8px}
+#fixSave{font-weight:600;background:var(--accent);color:#fff;border-color:var(--accent)}
+.t .rcb{position:absolute;left:1px;bottom:1px;font:600 9px/13px var(--f-body);background:var(--accent);color:#fff;border-radius:3px;padding:0 3px;pointer-events:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -235,7 +244,19 @@ body.traypad #offer{bottom:100px}
     <p id="ctxQ" hidden></p>
     <div id="ctxBigW"><img id="ctxBig" alt=""></div>
     <div class="row"><span class="hint" id="ctxS"></span></div>
-    <div class="cv"><canvas id="ctxC"></canvas></div>
+    <div class="cv" id="ctxCv"><canvas id="ctxC"></canvas></div>
+    <div class="row"><button type="button" id="ctxFix" aria-pressed="false">Fix the cut</button><span class="hint" id="fixState"></span></div>
+    <div id="fixBox" hidden role="group" aria-label="Fix the cut">
+      <p class="hint" style="margin:0">Drag an edge of the box, or drag inside it to move the whole box. On a phone, the arrows move one edge 2 pixels a tap.
+        One tile is one box (no "split here"): if the box holds two signs, fit it to the first sign and mark the second with "Bad cut" as now.</p>
+      <div class="nudges">
+        <span>Left edge <button type="button" id="fixLm" aria-label="Left edge further left">&#9664;</button><button type="button" id="fixLp" aria-label="Left edge further right">&#9654;</button></span>
+        <span>Right edge <button type="button" id="fixRm" aria-label="Right edge further left">&#9664;</button><button type="button" id="fixRp" aria-label="Right edge further right">&#9654;</button></span>
+        <span>Top <button type="button" id="fixTm" aria-label="Top edge up">&#9650;</button><button type="button" id="fixTp" aria-label="Top edge down">&#9660;</button></span>
+        <span>Bottom <button type="button" id="fixBm" aria-label="Bottom edge up">&#9650;</button><button type="button" id="fixBp" aria-label="Bottom edge down">&#9660;</button></span>
+      </div>
+      <div class="row"><button type="button" id="fixSave">Save cut</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
+    </div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label>
       <label class="hint" for="ctxNb"><input id="ctxNb" type="checkbox" checked> Lines above and below</label></div>
@@ -262,8 +283,11 @@ basePiles.forEach(p => p.items.forEach(it => { if (it.c){ clusterOf[it.sid] = it
 const clusterDec = {};   // cluster id -> {to, from_sid, n}   (saved in db collection 'clusters')
 let ccol = null;
 const focusQ = Object.fromEntries((DATA.focus || []).map(f => [f.sid, f.q]));
+const recuts = {};       // sid -> {x, y, w, h, old: [x, y, w, h], at}: a box the person fixed ("Fix the cut"; db collection 'recuts')
+let fix = null;          // while "Fix the cut" is on: {sid, box: [x, y, w, h] being edited, anchor: the box the view is centred on}
+const recutImg = {};     // sid -> data URL of the tile redrawn from its line at the fixed box
 const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
-let col = null, mcol = null, ncol = null, kcol = null;
+let col = null, mcol = null, ncol = null, kcol = null, rcol = null;
 const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that are not signs
 // Fixed display order: families and piles keep the order they had when the page was built (a move never reshuffles the
 // page); families and piles holding a "Check these first" tile come first.
@@ -277,7 +301,8 @@ const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_'
 const domKey = id => id.replace(/[^a-z0-9-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
 const $ = id => document.getElementById(id);
-const imgSrc = sid => 'data:' + (DATA.tileMime || 'image/png') + ';base64,' + itemBySid[sid].img;
+const imgSrc = sid => recutImg[sid] || 'data:' + (DATA.tileMime || 'image/png') + ';base64,' + itemBySid[sid].img;
+const boxOf = sid => recuts[sid] ? [recuts[sid].x, recuts[sid].y, recuts[sid].w, recuts[sid].h] : itemBySid[sid].b;   // source (line-image) pixels
 
 // New piles are named by the page (owner: "I don't want to add names"): the pile the tile came from plus -b, -c, ...
 function nextPileName(from){
@@ -397,6 +422,7 @@ function tileEl(sid, pid, cls){
   b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
+  if (recuts[sid]){ const r = document.createElement('span'); r.className = 'rcb'; r.textContent = 'recut'; b.append(r); b.title += ' Its cut was fixed by hand.'; }
   if (it.r && !cls.includes('in')){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier (✓), shown as an example of this pile. If it does not belong, tap to take it out, like any tile. Hold: see it larger.';
     b.setAttribute('aria-label', sid + ': your earlier pick for this pile, tap to take out, hold to see larger');
     const g = document.createElement('span'); g.className = 'badge'; g.textContent = '✓'; g.setAttribute('aria-hidden', 'true'); b.append(g);
@@ -712,9 +738,10 @@ function undo(){
   last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; if (prev === 'OUT' && !outAt[sid]) outAt[sid] = Date.now(); saveMove(sid); });
   if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
   (last.checks || []).forEach(([sid, prev]) => { if (prev) checked[sid] = prev; else delete checked[sid]; saveCheck(sid); });
+  if (last.recut){ const [sid, prev] = last.recut; setRecut(sid, prev); saveRecut(sid); }
   if (last.length === 1 && moves[last[0][0]] === 'OUT') s2Cur = last[0][0];   // step 2: the undone sign is shown again
   updateUndo();
-  note_(last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
+  note_(last.recut ? 'Undid the fixed cut of ' + last.recut[0] + '.' : last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
   if (step === 2) $('s2Msg').textContent = 'Undid the last step.';
   render();
   return last;
@@ -816,7 +843,10 @@ function saveCluster(c){
              : ccol.doc(key(c)).delete(); }); }
 function saveCheck(sid){
   track('k/' + sid, () => checked[sid] ? kcol.doc(key(sid)).set({sid, pile: checked[sid], updated: stamp()}) : kcol.doc(key(sid)).delete()); }
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt})); } catch(e){} }
+function saveRecut(sid){
+  track('r/' + sid, () => { const r = recuts[sid];
+    return r ? rcol.doc(key(sid)).set({sid, page: itemBySid[sid].p, x: r.x, y: r.y, w: r.w, h: r.h, old: r.old.slice(), at: r.at}) : rcol.doc(key(sid)).delete(); }); }
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt, recuts})); } catch(e){} }
 
 // ---- the larger view: a tile on its line
 let ctxSid = null, ctxPid = null;
@@ -830,15 +860,19 @@ function nbPages(p){ const m = /^(.*_L)(\d+)$/.exec(p); if (!m) return [null, nu
   const name = k => m[1] + String(k).padStart(w, '0'); const a = name(n - 1), b = name(n + 1);
   return [DATA.pages[a] ? a : null, DATA.pages[b] ? b : null]; }
 function drawLine(sid, c, z, alive){
-  const it = itemBySid[sid]; const ps = DATA.pageScale || 1; const [x, y, w, h] = it.b.map(v => v * ps); const im = pageImg(it.p);
-  const nbOn = !$('ctxNb') || $('ctxNb').checked; const [pa, pb] = nbOn && c.id === 'ctxC' ? nbPages(it.p) : [null, null];
+  const it = itemBySid[sid]; const ps = DATA.pageScale || 1; const im = pageImg(it.p);
+  const ed = c.id === 'ctxC' && fix && fix.sid === sid ? fix : null;   // "Fix the cut": the window stays put while the box moves
+  const [x, y, w, h] = (ed ? ed.anchor : boxOf(sid)).map(v => v * ps);
+  const nbOn = !ed && (!$('ctxNb') || $('ctxNb').checked); const [pa, pb] = nbOn && c.id === 'ctxC' ? nbPages(it.p) : [null, null];
   const ia = pa ? pageImg(pa) : null, ib = pb ? pageImg(pb) : null;
   const draw = () => {
     if (!alive()) return;
     if ([im, ia, ib].some(q => q && !(q.complete && q.naturalWidth))) return;
     // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
     // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
-    const halfW = Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1))), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
+    // editing a cut: a close-up (the sign some 50 px wide on a phone), still widened or narrowed by the zoom slider
+    const halfW = ed ? Math.round((w / 2 + Math.max(w * 1.5, h * 2, 40 * ps)) * Math.pow(1.4, 3 - z)) : Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1)));
+    const padY = ed ? Math.round(h * 1.5) + 10 : Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
     const py = (ia || ib) ? Math.round(h * 0.35) + 4 : padY;   // with neighbour lines shown, keep this strip to its own line
@@ -859,7 +893,15 @@ function drawLine(sid, c, z, alive){
     g.translate(0, ha);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;
-    const bx = (x - x0) * s, by = (y - y0) * s, bw = w * s, bh = h * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
+    c._map = {x0, y0, s, k, ha, ps, iw: im.naturalWidth / ps, ih: im.naturalHeight / ps};   // canvas <-> source pixels, for the cut editor
+    const [ex, ey, ew, eh] = (ed ? ed.box : boxOf(sid)).map(v => v * ps);
+    const bx = (ex - x0) * s, by = (ey - y0) * s, bw = ew * s, bh = eh * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
+    if (ed){   // the whole box with a handle on each edge, white under black, no padding: what is inside is the tile
+      [['#ffffff', 5 * k, []], ['#b3261e', 2 * k, [6 * k, 4 * k]]].forEach(([col, lw, dash]) => { g.strokeStyle = col; g.lineWidth = lw; g.setLineDash(dash); g.strokeRect(bx, by, bw, bh); });
+      g.setLineDash([]); const hs = 5 * k;
+      [[bx, by + bh / 2], [bx + bw, by + bh / 2], [bx + bw / 2, by], [bx + bw / 2, by + bh]].forEach(([hx, hy]) => {
+        g.fillStyle = '#ffffff'; g.fillRect(hx - hs - k, hy - hs - k, 2 * hs + 2 * k, 2 * hs + 2 * k); g.fillStyle = '#b3261e'; g.fillRect(hx - hs, hy - hs, 2 * hs, 2 * hs); });
+      return; }
     [['#ffffff', 6 * k], ['#000000', 3 * k]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
       [[bx - pad, by - pad, 1, 1], [bx + bw + pad, by - pad, -1, 1], [bx - pad, by + bh + pad, 1, -1], [bx + bw + pad, by + bh + pad, -1, -1]]
         .forEach(([cx, cy, sx, sy]) => { g.moveTo(cx + sx * L, cy); g.lineTo(cx, cy); g.lineTo(cx, cy + sy * L); });
@@ -869,11 +911,92 @@ function drawLine(sid, c, z, alive){
   [im, ia, ib].forEach(q => { if (q && !(q.complete && q.naturalWidth)) q.addEventListener('load', draw, {once: true}); }); draw();
 }
 function drawCtx(){ const sid = ctxSid; drawLine(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
+
+// ---- Fix the cut (owner, 4 Oct 2026, on Longlee tile f101v_L03_04: "I can nudge the 'bad cut' to be good cuts"). In the larger
+// view the bracket box becomes a box to drag (an edge, or the whole box; mouse and touch) or to nudge 2 source pixels a tap.
+// Saved in db collection 'recuts' (doc id = tile id) in the source line-image pixels of it.b; the tile keeps its pile, gets a
+// "recut" badge, and its thumbnail is redrawn from the line at the new box. One tile = one box: no "split here".
+const NUDGE = 2, MINB = 3;
+function makeRecutImg(sid){
+  const it = itemBySid[sid], r = recuts[sid]; if (!r) return Promise.resolve();
+  const im = pageImg(it.p);
+  return (im.complete && im.naturalWidth ? Promise.resolve() : im.decode().catch(() => {})).then(() => {
+    if (recuts[sid] !== r || !im.naturalWidth) return;
+    const ps = DATA.pageScale || 1, top = Math.max(10, Math.round(.9 * r.h)), bot = Math.max(6, Math.round(.35 * r.h)), side = 5;   // sign_sorter.py's margins
+    const x0 = Math.max(0, r.x - side) * ps, y0 = Math.max(0, r.y - top) * ps;
+    const x1 = Math.min(im.naturalWidth, (r.x + r.w + side) * ps), y1 = Math.min(im.naturalHeight, (r.y + r.h + bot) * ps);
+    const T = 96, k = T / Math.max(x1 - x0, y1 - y0, 1), cv = document.createElement('canvas');
+    cv.width = Math.max(1, Math.round((x1 - x0) * k)); cv.height = Math.max(1, Math.round((y1 - y0) * k));
+    const g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height); g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, cv.width, cv.height);
+    recutImg[sid] = cv.toDataURL('image/png'); delete vecs[sid]; rerenderSoon(); });
+}
+let rrT = 0;
+function rerenderSoon(){ clearTimeout(rrT); rrT = setTimeout(() => { render(); if (!$('ctx').hidden && ctxSid) $('ctxBig').src = imgSrc(ctxSid); }, 30); }
+function setRecut(sid, r){ if (r) recuts[sid] = r; else delete recuts[sid]; delete recutImg[sid]; if (r) makeRecutImg(sid); else rerenderSoon(); }
+function fixUi(on){
+  $('fixBox').hidden = !on; $('ctxFix').textContent = on ? 'Stop fixing (no save)' : 'Fix the cut'; $('ctxFix').setAttribute('aria-pressed', on);
+  $('ctxCv').classList.toggle('editing', on); if (on){ $('ctxPrev').disabled = true; $('ctxNext').disabled = true; }
+  $('fixReset').hidden = !(on && recuts[ctxSid]); fixInfo();
+}
+function fixInfo(){ const sid = ctxSid; if (!sid) return; const b = fix ? fix.box : boxOf(sid), o = itemBySid[sid].b;
+  $('fixState').textContent = fix ? 'Box ' + b[2] + ' × ' + b[3] + ' px at ' + b[0] + ', ' + b[1] + (recuts[sid] || b.join() !== o.join() ? ' (first cut ' + o[2] + ' × ' + o[3] + ' at ' + o[0] + ', ' + o[1] + ')' : '')
+    : recuts[sid] ? 'This tile’s cut was fixed by hand.' : ''; }
+function fixStart(){ if (!ctxSid) return; const b = boxOf(ctxSid).slice(); fix = {sid: ctxSid, box: b.slice(), anchor: b}; hideOffer(); fixUi(true); drawCtx(); }
+function fixStop(){ fix = null; fixUi(false); }
+function fixSetEdges(l, t, r, b){ const m = $('ctxC')._map, W = m ? Math.floor(m.iw) : 1e9, H = m ? Math.floor(m.ih) : 1e9;
+  l = Math.round(l); t = Math.round(t); r = Math.round(r); b = Math.round(b);
+  l = Math.max(0, l); t = Math.max(0, t); r = Math.min(W, r); b = Math.min(H, b);
+  if (r - l < MINB){ if (fix.box[0] !== l) l = r - MINB; else r = l + MINB; }
+  if (b - t < MINB){ if (fix.box[1] !== t) t = b - MINB; else b = t + MINB; }
+  fix.box = [l, t, r - l, b - t]; fixInfo(); drawCtx(); }
+function fixNudge(edge, d){ if (!fix) return; const [x, y, w, h] = fix.box; const e = {l: x, t: y, r: x + w, b: y + h}; e[edge] += d * NUDGE; fixSetEdges(e.l, e.t, e.r, e.b); }
+[['L', 'l'], ['R', 'r'], ['T', 't'], ['B', 'b']].forEach(([n, edge]) => { $('fix' + n + 'm').onclick = () => fixNudge(edge, -1); $('fix' + n + 'p').onclick = () => fixNudge(edge, 1); });
+$('ctxFix').onclick = () => { if (fix){ fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); } else fixStart(); };
+$('fixCancel').onclick = () => { fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); };
+$('fixReset').onclick = () => { if (fix){ const o = itemBySid[fix.sid].b; fixSetEdges(o[0], o[1], o[0] + o[2], o[1] + o[3]); } };
+$('fixSave').onclick = () => {
+  if (!fix) return; const sid = fix.sid, b = fix.box.slice(), o = itemBySid[sid].b; fixStop();
+  if (b.join() === boxOf(sid).join()){ $('ctxMsg').textContent = 'The cut is unchanged.'; showCtx(sid, pileOf(sid), true); return; }
+  const e = []; e.recut = [sid, recuts[sid] ? {...recuts[sid]} : null]; history.push(e); if (history.length > 200) history.shift(); updateUndo();
+  setRecut(sid, b.join() === o.join() ? null : {x: b[0], y: b[1], w: b[2], h: b[3], old: o.slice(), at: stamp()}); saveRecut(sid);
+  const m = $('ctxMsg'); m.textContent = (recuts[sid] ? 'Saved the new cut of ' + sid + '.' : 'Back to the first cut of ' + sid + '.') + ' It stays in its pile; Undo takes it back. ';
+  if (moves[sid] === 'BAD-CUT'){ const u = document.createElement('button'); u.type = 'button'; u.id = 'ctxPutBack'; u.textContent = 'Put it back in ' + homeOf[sid];
+    u.onclick = () => { remember([sid]); setDest(sid, homeOf[sid]); render(); showCtx(sid, homeOf[sid], true); $('ctxMsg').textContent = 'Put ' + sid + ' back in pile ' + homeOf[sid] + '.'; };
+    m.append(u); }
+  showCtx(sid, pileOf(sid), true);
+};
+(function(){   // drag an edge or the whole box on the line canvas (pointer events: mouse, pen and touch; no page scroll while editing)
+  const c = $('ctxC'); let d = null;
+  const at = e => { const m = c._map, r = c.getBoundingClientRect(); const px = (e.clientX - r.left) * m.k, py = (e.clientY - r.top) * m.k;
+    return [(m.x0 + px / m.s) / m.ps, (m.y0 + (py - m.ha) / m.s) / m.ps]; };
+  const hit = e => { if (!fix || !c._map) return ''; const [sx, sy] = at(e), [x, y, w, h] = fix.box, m = c._map, tol = 12 * m.k / m.s / m.ps;
+    const inY = sy > y - tol && sy < y + h + tol, inX = sx > x - tol && sx < x + w + tol; let h_ = '';
+    // an edge is grabbed from outside up to tol, from inside only up to a quarter of the box, so the middle always moves the box
+    const tx = Math.min(tol, w / 4), ty = Math.min(tol, h / 4);
+    const nl = sx > x - tol && sx < x + tx, nr = sx > x + w - tx && sx < x + w + tol, nt = sy > y - tol && sy < y + ty, nb = sy > y + h - ty && sy < y + h + tol;
+    if (inY && (nl || nr)) h_ += nl && (!nr || Math.abs(sx - x) <= Math.abs(sx - x - w)) ? 'l' : 'r';
+    if (inX && (nt || nb)) h_ += nt && (!nb || Math.abs(sy - y) <= Math.abs(sy - y - h)) ? 't' : 'b';
+    if (!h_ && sx > x && sx < x + w && sy > y && sy < y + h) h_ = 'move';
+    return h_; };
+  const cursor = h => h === 'move' ? 'move' : h === 'l' || h === 'r' ? 'ew-resize' : h === 't' || h === 'b' ? 'ns-resize' : h === 'lt' || h === 'rb' ? 'nwse-resize' : h ? 'nesw-resize' : 'crosshair';
+  c.addEventListener('pointerdown', e => { if (!fix || e.button > 0) return; const h = hit(e); if (!h) return; e.preventDefault();
+    try { c.setPointerCapture(e.pointerId); } catch (er) {} d = {h, p: at(e), box: fix.box.slice()}; });
+  c.addEventListener('pointermove', e => { if (!fix) return; if (!d){ if (e.pointerType === 'mouse') c.style.cursor = cursor(hit(e)); return; }
+    e.preventDefault(); const [sx, sy] = at(e), dx = sx - d.p[0], dy = sy - d.p[1], [x, y, w, h] = d.box;
+    if (d.h === 'move'){ const m = c._map; const nx = Math.max(0, Math.min(Math.floor(m.iw) - w, x + dx)), ny = Math.max(0, Math.min(Math.floor(m.ih) - h, y + dy));
+      fixSetEdges(nx, ny, nx + w, ny + h); return; }
+    fixSetEdges(d.h.includes('l') ? x + dx : x, d.h.includes('t') ? y + dy : y, d.h.includes('r') ? x + w + dx : x + w, d.h.includes('b') ? y + h + dy : y + h); });
+  const end = () => { d = null; };
+  c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
+  c.addEventListener('touchstart', e => { if (fix) e.preventDefault(); }, {passive: false});
+  c.addEventListener('touchmove', e => { if (fix) e.preventDefault(); }, {passive: false});
+})();
 let ctxList = [];
 let ctxListName = 'in this pile';
 function showCtx(sid, pid, keepList, list, listName){
   if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
     $('ctxMsg').textContent = ''; }
+  if (fix && fix.sid !== sid) fixStop();
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
   $('ctxBig').src = imgSrc(sid); $('ctxBig').alt = 'Tile ' + sid + ', enlarged';
   const i = ctxList.indexOf(sid);
@@ -892,10 +1015,10 @@ function showCtx(sid, pid, keepList, list, listName){
   $('ctxOut').hidden = cur === 'OUT';
   ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = false; });   // the person's earlier picks (--refs) can be corrected too (owner, 4 Oct 2026)
   $('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + '. The brackets mark this tile; its neighbours on the line are shown either side.' + (it.r ? ' You sorted this one earlier: it is an example of the pile and stays where it is.' : '');
-  updateUndo();
+  updateUndo(); fixUi(!!fix);
   $('ctx').hidden = false; drawCtx();
 }
-function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
+function ctxStep(d){ if (fix) return; const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
 function ctxAdvance(sid){
   const i = ctxList.indexOf(sid);
   if (i >= 0 && i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, pileOf(s2), true); }
@@ -921,8 +1044,8 @@ $('ctxOut').onclick = () => ctxMove('OUT');
 $('ctxPrev').onclick = () => ctxStep(-1);
 $('undo').onclick = undo;
 $('order').onchange = render;
-$('ctxUndo').onclick = () => { const last = undo(); if (!last) return;
-  const one = last.length === 1 ? last[0][0] : last.checks ? last.checks[0][0] : null;
+$('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!last) return;
+  const one = last.length === 1 ? last[0][0] : last.recut ? last.recut[0] : last.checks ? last.checks[0][0] : null;
   if (one && ctxList.includes(one)){ $('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
   else { $('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
 $('ctxNext').onclick = () => ctxStep(1);
@@ -932,7 +1055,7 @@ $('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };  
 $('ctxNewB').onclick = () => ctxMove(makePile(pileOf(ctxSid)));
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
-const closeCtx = () => { $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
+const closeCtx = () => { if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
 $('ctxClose').onclick = closeCtx;
 $('ctxX').onclick = closeCtx;
 $('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
@@ -995,14 +1118,14 @@ updateUndo();
   const el = saveEl();
   if (!db){
     // no store: keep choices in this browser; what the person did before this answer wins over the stored copy
-    const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}};
+    const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}, recuts: {...recuts}};
     const touched = Object.keys(writers);
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); } } catch(e){}
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); Object.assign(recuts, v.recuts || {}); } } catch(e){}
     touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
-      const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked]}[k];
+      const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked], r: [recuts, mine.recuts]}[k];
       if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
-    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); render(); return; }
-  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked');
+    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); render(); Object.keys(recuts).forEach(s => { if (itemBySid[s]) makeRecutImg(s); else delete recuts[s]; }); return; }
+  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked'); rcol = db.collection('recuts');
   dbMode = 'db';
   const held = Object.keys(writers);
   el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
@@ -1019,5 +1142,7 @@ updateUndo();
   listen(ncol, d => d.id && 'n/' + d.id, (t, d) => { if (t === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
   listen(ccol, d => d.cluster && 'c/' + d.cluster, (t, d) => { if (t === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; return false; });
   listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; });
+  listen(rcol, d => d.sid && itemBySid[d.sid] && 'r/' + d.sid, (t, d) => { const ok = t !== 'removed' && [d.x, d.y, d.w, d.h].every(Number.isFinite);
+    setRecut(d.sid, ok ? {x: d.x, y: d.y, w: d.w, h: d.h, old: Array.isArray(d.old) ? d.old.slice() : itemBySid[d.sid].b.slice(), at: d.at || ''} : null); });
 })();
 </script>

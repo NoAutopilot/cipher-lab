@@ -58,3 +58,18 @@ script, its `traces()` imported, outputs unchanged):
   most already in SMALL), 2 are bad (a loop of the line above joined to a small o; half an x with a stroke below).
 - The v2 cut is kept for the record: `signs_v2.tsv`, `labels_v2.tsv`, `focus_v2.tsv` (x/y refer to the v2 sloped `pages/`,
   in git history before this commit). No owner moves were made on v2, so nothing to carry over.
+
+## Fix the cut (SORTER-NUDGE, 4 Oct 2026)
+
+Owner, on tile f101v_L03_04 (Longlee, pile split-rare): "If you give me the ability, I can nudge the 'bad cut' to be good
+cuts." In the larger view (hold a tile), **Fix the cut** makes the box editable: drag an edge or the whole box (mouse or
+touch; the page does not scroll while you drag), or use the arrow buttons (2 source pixels a tap, for phones). **Save cut**
+stores the box in db collection `recuts` (doc id = tile id: sid, page, x y w h in this folder's `pages/` pixels, old box,
+at); **Cancel** leaves the cut as it was; Undo takes a saved cut back. The tile keeps its pile, shows a "recut" badge and
+its thumbnail is redrawn at the new box. A tile already in BAD-CUT, once recut, offers "Put it back in <home pile>" (one
+tap). There is no "split here": for a box holding two signs, fit it to the first and mark the second "Bad cut" as now.
+Apply: `ArtifactData list` recuts with the other collections; `tools/sign_sorter_apply.py` writes `recuts.tsv` beside its
+`--out`; `python3 tools/sorter_apply_recuts.py --recuts sorter/recuts.tsv --signs sorter/signs.tsv --pages sorter/pages
+--tiles sorter/tiles` re-crops those tiles (old crop kept as `<id>.orig.jpg`) and updates signs.tsv. `build.sh` re-runs
+`recut.py`, which rewrites signs.tsv: run sorter_apply_recuts.py again after any rebuild (it is idempotent and skips, exit
+2, a row whose old box no longer matches).

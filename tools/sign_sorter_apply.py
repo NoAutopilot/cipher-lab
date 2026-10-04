@@ -35,6 +35,10 @@ glyph_atlas atlas/classify run picks them up:
   - aside and bad-cut tiles are listed under "sorter_review" (not relabelled), and each run appends one
     "sorter_log" entry (UTC time, --source, counts). Provisional clusters ("<pile>~<n>", from sign_sorter.py
     --auto-clusters) are page-local and are never written to an atlas.
+Fixed cuts ("Fix the cut", 4 Oct 2026, SORTER-NUDGE): DIR/recuts/*.json ({sid, page, x, y, w, h, old, at}, source
+line-image pixels) are written to recuts.tsv beside --out (or --recuts-out): tile, page, old_x old_y old_w old_h, new_x
+new_y new_w new_h, at. A recut tile keeps its pile and status here; tools/sorter_apply_recuts.py re-crops it and updates
+signs.tsv. No recuts saved: no file is written.
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -147,6 +151,22 @@ def write_atlas(L, rows, piles, moves, cluster_docs, cluster_of, source=''):
     return entry
 
 
+RECUT_COLS = ['tile', 'page', 'old_x', 'old_y', 'old_w', 'old_h', 'new_x', 'new_y', 'new_w', 'new_h', 'at']
+
+
+def recut_rows(docs):
+    """db 'recuts' documents -> recuts.tsv rows (sorted by tile); a doc without a full new box is dropped."""
+    out = []
+    for d in docs:
+        new = [d.get(k) for k in ('x', 'y', 'w', 'h')]
+        if not d.get('sid') or not all(isinstance(v, (int, float)) for v in new):
+            continue
+        old = list(d.get('old') or [''] * 4)[:4]
+        out.append([d['sid'], d.get('page', '')] + [int(round(v)) if isinstance(v, (int, float)) else '' for v in old]
+                   + [int(round(v)) for v in new] + [d.get('at', '')])
+    return sorted(out)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--labels'); ap.add_argument('--db', required=True)
@@ -156,6 +176,7 @@ def main(argv=None):
     ap.add_argument('--atlas-labels', help='family atlas labels.json to write the decisions into (needs --clusters)')
     ap.add_argument('--atlas-out', help='write the updated atlas labels here instead of in place')
     ap.add_argument('--source', default='', help='one line for the atlas sorter_log (which page, which letter)')
+    ap.add_argument('--recuts-out', help='where to write the fixed cuts (default: recuts.tsv beside --out; only when any were saved)')
     a = ap.parse_args(argv)
     if a.atlas_labels and not a.clusters:
         ap.error('--atlas-labels needs --clusters (which tile is in which atlas cluster)')
@@ -181,9 +202,15 @@ def main(argv=None):
         json.dump(L, open(a.atlas_out or a.atlas_labels, 'w'), indent=1, ensure_ascii=False)
     with open(a.out, 'w', newline='') as f:
         w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status']); w.writerows(rows)
+    rc = recut_rows(load(a.db, 'recuts'))
+    if rc:
+        rp = a.recuts_out or os.path.join(os.path.dirname(os.path.abspath(a.out)), 'recuts.tsv')
+        with open(rp, 'w', newline='') as f:
+            w = csv.writer(f, delimiter='\t'); w.writerow(RECUT_COLS); w.writerows(rc)
+        summary['recuts'] = len(rc)
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'by_status', 'signs_before', 'signs_after', 'atlas') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts') if k in summary}))
 
 
 if __name__ == '__main__':
