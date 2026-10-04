@@ -1,0 +1,8 @@
+frame	sha256_16	class	glossed	code_range	extent	crops_present	note (eye reads by Opus vision subagents, grade M; no transcription)
+0151	5d23bd211f07ceed	code groups present	y	letter range (spelled runs, codes to 120) plus name codes 150 207 257	light-moderate, all 4 quarters	L1 L2 R1 R2	glosses over names (Alefeld 66, Schonb. 74, Knip. 81.21, le Gr. Chancelier 207, le Roy de Pol. ...)
+0241	167949d6b388fca9	code groups present	n	letter range (one run 110.5.9.44.120.35.51.28.10.24.599.21; 599 uncertain)	light, one line	L1	R1 R2 L2 prose only
+0291	3d032c135ac6646d	code groups present	y	letter range plus 193 257 585 636; 1000 recurs (separator or null?)	heavy, all 4 quarters	L1 L2 R1 R2	glosses: la Paix, la Courlande, Olaw et Brieg, la Couronne hereditaire, renoncer
+0351	4fa50dcac904eabc	absent	n/a	-	none	-	letter "a Gallaune ce 25 Sept. 1712"; one underlined single 722 with note "si je ne me trompe", not a run; GAPS201 "?" not confirmed
+0391	3638d7c8d433c8a7	code groups present	n (one possible partial gloss)	letter range runs (33.41.16.60.170; 55.6.12.44.39.21.40.60.16.67.7) plus single 217 227 257 266	light-moderate, right page	R1 R2	letter head "13 oct. 1712"; L1 L2 prose
+0501	b27f0809877381af	code groups present	y	nomenclator range (403-867: 515.579.139.115.612.452.156.867...; 553.716.417.646.84.406.108; single 770 = Manteuffel, 73 = Ilgen, 865)	moderate-heavy, left top and right foot	L1 R2	glosses: le Comte Wartensleben, proposer la paix, generaux suedois, feldmarschal qui la debite
+0528	0d6bfbd24ca98de1	positive control (R2 crop in each call)	y	nomenclator range (to 901)	4+ lines	R2	read correctly in both calls (737.864...901; le Roy de Prusse, contre la France): neither call void
