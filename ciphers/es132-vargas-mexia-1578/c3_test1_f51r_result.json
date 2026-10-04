@@ -1,0 +1,94 @@
+{
+ "page": "f51r",
+ "prereg": "PREREG_c3_test1.md",
+ "positive_control_f90v_unprinted": {
+  "passA": {
+   "letters": 318,
+   "S_b": -1.064,
+   "order_p99": -1.419,
+   "order_median": -1.514,
+   "key_p99": -1.837,
+   "gate_b": true,
+   "judge_null_p99": -1.947,
+   "judge_real_p05": -0.792,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 320,
+   "S_b": -1.112,
+   "order_p99": -1.418,
+   "order_median": -1.528,
+   "key_p99": -1.797,
+   "gate_b": true,
+   "judge_null_p99": -1.938,
+   "judge_real_p05": -0.781,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 322,
+   "S_b": -1.048,
+   "order_p99": -1.396,
+   "order_median": -1.517,
+   "key_p99": -1.801,
+   "gate_b": true,
+   "judge_null_p99": -1.941,
+   "judge_real_p05": -0.794,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "target": {
+  "err_2reader": "87/477",
+  "err_2reader_frac": 0.182,
+  "passA": {
+   "letters": 838,
+   "S_b": -1.198,
+   "order_p99": -1.468,
+   "order_median": -1.53,
+   "key_p99": -1.842,
+   "gate_b": true,
+   "judge_null_p99": -1.984,
+   "judge_real_p05": -0.776,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 829,
+   "S_b": -1.188,
+   "order_p99": -1.467,
+   "order_median": -1.524,
+   "key_p99": -1.82,
+   "gate_b": true,
+   "judge_null_p99": -1.984,
+   "judge_real_p05": -0.765,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 852,
+   "S_b": -1.174,
+   "order_p99": -1.463,
+   "order_median": -1.512,
+   "key_p99": -1.814,
+   "gate_b": true,
+   "judge_null_p99": -2.002,
+   "judge_real_p05": -0.773,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  }
+ },
+ "grades_reconciled": {
+  "H": 0,
+  "C": 0,
+  "S": 366,
+  "M": 65,
+  "I": 0,
+  "U": 42
+ },
+ "dropped_shape_tokens": {
+  "marks": 19,
+  "clear": 0
+ }
+}
