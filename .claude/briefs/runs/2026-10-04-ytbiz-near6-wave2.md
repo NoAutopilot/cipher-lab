@@ -31,3 +31,9 @@ whose header, date or range fits R1049 (7 Sept 1756, codes up to ~2626) or the 1
 record's pages to scratch, never committed). Output: `key_search/R4381-R4408.tsv` (record, folio, date, holder/header, code range, filled
 y/n, fits R1049/1763/none, why). No transcription in this job: name the best candidate and its cost as the next step. NOTES "N6-HEL81",
 gaps refresh + gaps_check OK line. Report what was found and where it was not found.
+
+## N6-VIV63C -- fr.16105 ink 63: the last cipher pages ff.193v-194r (Opus; cap USD 5; box 60 min) -- added 11:2x UTC
+Continue N6-VIV63B exactly (its NOTES section, PREREG-N6VIV63B.md and scripts). Push `PREREG-N6VIV63C.md` before decoding: the same b2 gate on
+the new pages alone and the whole piece, the same two controls (subsampled to the new pages' letter count for the alone test, as N6-VIV53B
+did), the same 200-wrong-key specificity rule. Regenerate reading_piece63 with --check. NOTES "N6-VIV63C", gaps refresh, ROOM done line
+("piece 63 ready for audit 1 (all pages)" if gates pass) -- the account-3 audit of piece 63 is waiting on this, so keep to the box.
