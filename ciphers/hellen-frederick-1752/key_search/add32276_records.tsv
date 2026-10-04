@@ -1,0 +1,63 @@
+record	folio	decode_date	sender	receiver	cipher_type	cipher_type_notes	pages_decode	images	seen_by
+4408	f.127	1794					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4407	f.125	1791					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4406	f.123	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4405	f.121	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4404	f.119	1789					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4403	f.117	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4402	f.115	1789					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4401	f.113	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4400	f.111	1784					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4399	f.109	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4398	f.103	1770					11		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4397	f.101	1770					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4396	f.99	1769					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4395	f.97	1769					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4394	f.95	1767					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4393	f.93	1781					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4392	f.91	1766					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4391	f.85	1765					11		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4390	f.83	1764 - 1765					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4389	f.81	1764					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4388	f.79	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4387	f.77	1764					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4386	f.75	1724 - 1844					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4385	f.73	1762					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4384	f.72	1762					1		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4383	f.70	1761					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4382	f.68	1761					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4381	f.66	1761					2		not opened (listing only, sources/decode/keys-all-2026-09-28-merged.tsv)
+4380	f.64	1752	Kniph_n (Knyphausen)	Roy de Prufse			2		FT4b: tally sheet, no meanings
+4379	f.62	1756	Roy de Prufse	Michel, Potzdam			2		IMG-DECODE1: tally sheet
+4378	f.60	1756					2		IMG-DECODE1: P2 ruled form, empty
+4377	f.58	1756	Roy de Prufse	Michel, Potzdam			2		IMG-DECODE1: 1756 Potsdam-Michel table
+4376	f.56	1754			Homophonic substitutionNomenclatures	Syllables, nulls	2	4	"P1 docket ""1754"", P2 blank ruled form, P3 filled French table 1-500 with zero nulls (entries seen include ""la Haye"", ""pays bas""); no holder; NEAR3-HEL3 contact sheet 4 Oct 2026"
+4375	f.54	1724 - 1844	Michel	Roy de Prufse	Simple substitutionNomenclatures	Syllables	2	4	P2: dense table 1-500, French (Michel -> Roy de Prusse, undated); NEAR3-HEL3 contact sheet 4 Oct 2026
+4374	f.52	1752	Michel	Roy de Prufse			2		FT4b: the Michell code, tested negative (FT4)
+4373	f.50	1751	Michel	Roy de Prufse			2		IMG-DECODE1: Michel table, sparsely filled
+4372	f.48	1724 - 1844			Simple substitutionNomenclatures	Syllables	2	4	P2+P3: SAME PRINTED FORM AND LAYOUT AS R4369 (left meaning after number, right entry right-aligned ending in a dash); French meanings; P2 codes 1-500 well filled, P3 501-800 sparser, 801-900 nearly empty; no holder on P1 (blank) or top bands; candidate first half of the Hellen key; NEAR3-HEL3 contact sheet 4 Oct 2026
+4370	f.46	1751					2		IMG-DECODE1/READ2-HEL2: code table 1-1000, tested on R1953 codes 1-800, fails at power 1.00
+4369	f.44	1751	Hellen/Ellen a la Haye	Roy de Prufse			2		IMG-DECODE1: code table with meanings, headed Hellen avec le Roy de Prusse; codes 801-1796 read R1953 (READ2-HEL)
+4368	f.42	1745 - 1746	Roy de Prufse	Mons. Andrie	Homophonic substitutionNomenclatures	Syllables	2	4	P2: dense table 1-500 with names box below, French (Roy de Prusse -> Andrie 1745-46); NEAR3-HEL3 contact sheet 4 Oct 2026
+4367	f.40	1745	Andrie		Simple substitutionNomenclatures	Syllables	2	4	P2: dense table 1-600, French (Andrie 1745); NEAR3-HEL3 contact sheet 4 Oct 2026
+4366	f.37	1744	Scholing?		Homophonic substitutionNomenclatures	Syllables	2	6	P2: list 274-584, French syllables/words (Scholing? 1744); NEAR3-HEL3 contact sheet 4 Oct 2026
+4364	f.34	1724 - 1844	Mardefeldt?		Homophonic substitution	Syllables	2	4	P2: codes 1-600, letter tallies only; NEAR3-HEL3 contact sheet 4 Oct 2026
+4363	f.36	1724 - 1844			Simple substitutionNomenclatures		2	2	P2: blank ruled form; NEAR3-HEL3 contact sheet 4 Oct 2026
+4362	f.32	1743	Mardefeldt?	l'Eveque de Lubeck?	Homophonic substitutionNomenclatures	Syllables	2	4	P2: codes 1-600, sparse German (Mardefeldt? 1743); NEAR3-HEL3 contact sheet 4 Oct 2026
+4361	f.30	1743	Mardefeldt?	Halmer?	Homophonic substitutionUnknown		2	4	P2: codes 1-600, letter tallies (m n o p q r), no meanings (Mardefeldt? 1743); NEAR3-HEL3 contact sheet 4 Oct 2026
+4360	f.28	1739	Andrie		Homophonic substitutionNomenclatures	Syllables	2	4	P2: filled table 1-600, French meanings (Andrie, London, 1739); NEAR3-HEL3 contact sheet 4 Oct 2026
+4359	f.26	1735	Mo. Borck	King of Prufsia	Simple substitutionNomenclatures	Syllables	2	4	P2: letter-indexed sparse table A-G, German (Borck 1735); NEAR3-HEL3 contact sheet 4 Oct 2026
+4358	f.24	1733	Degenfeld	King of Prufsia	Homophonic substitutionNomenclaturesUnknown	Syllables	2	4	P2: table 1000-1400, German (Degenfeld 1733); NEAR3-HEL3 contact sheet 4 Oct 2026
+4357	f.22	1732	Degenfeld	Gen. Grumbkow	Homophonic substitutionNomenclaturesUnknown	Syllables	2	4	P2: codes 1-500, mostly letter/syllable cells (Degenfeld 1732); NEAR3-HEL3 contact sheet 4 Oct 2026
+4356	f.20	1732	Degenfeld	his Court?	NomenclaturesUnknown	Syllables	2	4	P2: table 1000-1500 with letter key below, German (Degenfeld 1732); NEAR3-HEL3 contact sheet 4 Oct 2026
+4355	f.18	1732	Degenfeld	The King of Prufsia	NomenclaturesUnknown	Syllables	2	4	P2: codes 801-1200, sparse German (Degenfeld 1732); NEAR3-HEL3 contact sheet 4 Oct 2026
+4354	f.16	1732			NomenclaturesUnknown	Syllables	2	4	P2: codes 1-500, sparse German syllables, no holder (1732); NEAR3-HEL3 contact sheet 4 Oct 2026
+4353	f.14	1731	Degenfeld	The King of Prufsia	Homophonic substitutionNomenclatures	Syllables	2	4	P2: table 1000-1400 printed heads, German (Degenfeld 1731); NEAR3-HEL3 contact sheet 4 Oct 2026
+4352	f.12	1730	Degenfeld	The King of Prufsia	Homophonic substitutionNomenclatures	Syllables	2	4	P2: table 1-500, German meanings (Degenfeld 1730); NEAR3-HEL3 contact sheet 4 Oct 2026
+4351	f.10	1724 - 1844	Count Degenfeld	Gen. Grumbkow	Nomenclatures		2	4	P2: cover-name list A-R (Degenfeld-Grumbkow); NEAR3-HEL3 contact sheet 4 Oct 2026
+4348	f.9	1730	Reichenbach	Grumkow	Nomenclatures		1	2	P2: names table 1-200 (Reichenbach-Grumkow 1730); NEAR3-HEL3 contact sheet 4 Oct 2026
+4347	f.8	1729	Reichenbach	Anonymous at Berlin	Nomenclatures		2	2	"P2: short name list, Reichenbach 1729 (""Intercepted Key between Anonymous at Berlin & Reichenbach""); NEAR3-HEL3 contact sheet 4 Oct 2026"
+4346	f.6-7	1724 - 1844	Reichenbach		Nomenclatures	Syllables	2	4	P2: codes 901-1400, sparse (Reichenbach); NEAR3-HEL3 contact sheet 4 Oct 2026
+4345	f.3-4	1724 - 1844			Nomenclatures		2	4	P2: printed form 1-500, very sparse French entries, no holder; NEAR3-HEL3 contact sheet 4 Oct 2026
+4344	f.2	1722	Michel		Homophonic substitutionNomenclatures	Syllables	2	4	P2: filled code table 1-500, French meanings (Michel 1722); NEAR3-HEL3 contact sheet 4 Oct 2026
+4343	f.1	1729					1		not looked at (P2 not queued; 1729 Reichenbach nomenclature, 1 page); NEAR3-HEL3 contact sheet 4 Oct 2026

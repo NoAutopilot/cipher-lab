@@ -816,3 +816,68 @@ Diff against `reading_R1953_tokens.tsv` (opened only after the script and its ou
 - Two choices were not stated in the files this pass read and were matched to the committed reading only by trial: right-over-left on a shared code (207 tokens, committed S/M), and trailing `?` as read-but-M (990?, 1421?, two M tokens).
 
 Verdict: on the letter of the brief (every difference on an M-graded token, else SEND BACK), SEND BACK, narrowly: one U-graded token, from an unstated convention rather than a key error. Suggested fix, for the lane orchestrator: state the `~` rule, the right-over-left rule and the trailing-`?` rule in decode.json's header or README, then this reading can be accepted at 846/846. This check says "worth a verifier", never "right" (rule 10).
+
+## NEAR3-HEL3 (4 Oct 2026): DECODE key records in BL Add MS 32276 looked at for codes 1-800 (account 2 worker for LANE-NEAR3)
+
+Step run: READ2-HEL2's named next step. No transcription, test or grades in this job.
+**Step 1 (no login).** I listed every DECODE key record in BL Add MS 32276 from the login-free listing already on disk
+(`sources/decode/keys-all-2026-09-28-merged.tsv`; no refetch). There are 63 records, R4343-R4408 (ff. 1-127, 1722-1794; R4349,
+R4350, R4365 and **R4371 do not exist**). Sender and receiver come from each RecordsView page. **No record outside R4369 names
+Hellen/Ellen.** `key_search/add32276_records.tsv` has the full list, with sender, receiver, cipher type and what each sheet is.
+**Step 2 (one browser login).** `NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 4376 <scratchpad> --delay 1700
+--max-files 0 --listen <cmdfile>`. Fetched: RecordsView for R4376 and for the 25 records not yet opened (R4343-R4368 before
+f.44, plus R4372 and R4375); full-size P2 of every record that has one; P1+P3 of R4345, R4354, R4363, R4372 and R4376; and
+R4369 P2 again for comparing hands (its sha1 matches the manifest). No forbidden.png. Images stay in the scratchpad (not public
+domain). Sha1s, native sizes and URLs are in `images/decode/manifest.json` (now 32 records, 46 files).
+**Step 3 (5 contact sheets + 1 detail strip = 6 vision calls).** What each sheet is, by period:
+- 1722-1739 (R4343-R4360): Reichenbach, Degenfeld, Grumkow, Borck and Michel (1722) tables. Most have German meanings
+  (Degenfeld) or are name lists. R4344 (Michel 1722) and R4360 (Andrie, London, 1739) are filled French tables, but both are
+  named for another holder and predate Hellen by 12-29 years.
+- 1743-1746 (R4361-R4368): Mardefeldt tables (one is letter tallies only, one sparse German); R4363 is blank; R4364 is tallies
+  only; Scholing 1744; Andrie 1745 and Roy de Prusse -> Andrie 1745-46 (dense French, named for Andrie).
+- **R4372 (f.48, DECODE date "1724 - 1844", no sender or receiver).** This uses **the same printed form and the same entry
+  layout as R4369**: printed codes in blocks of 100; a LEFT meaning right after the number; a RIGHT entry right-aligned
+  against the next block's divider, ending in a dash. Nulls are written "zero". The hand looks like R4369's at strip
+  resolution (one detail strip, R4372 P2 codes ~20-29/120-130 beside R4369 P2 codes 1026-1037; e.g. 21 objet, 24 prusse,
+  122 dent, 125 quoique, 126 aucun, 128 arrangement, right entries "appro..", "par", "inform", "opinion", "cote").
+  P1 is blank (docket "48" only). P2 holds codes 1-500, well filled. P3 holds 501-800, sparser (501 au, 502 com/m, 701 ver),
+  with 801-900 and 901-1000 almost empty. **So R4372 carries meanings for codes 1-800 and stops about where R4369 begins (801).**
+  It is bound at f.48, between Hellen's f.44 and the unnamed f.46 on one side and Michel's 1751 f.50 on the other. **No header
+  names Hellen.** R4369's header ("Hellen avec le Roy de [Prusse]") sits on its own P2 top band, and R4372's P2/P3 top bands carry
+  only "200" at the top left. The attribution therefore rests on the form, the layout, the hand and the code range, not on a
+  header. Unlike R4370, its 801-900 does not clash with R4369 because it is nearly empty there.
+- R4375 (f.54, Michel -> Roy de Prusse, undated): dense French table, named for Michel.
+- R4376 (f.56, 1754): P1 is the docket "1754", P2 is a blank ruled form, and P3 is a filled French table of codes 1-500 with
+  "zero" nulls. Entries include "la Haye" and "pays bas", but no holder is named. It is worth a later look for the 1756 letter
+  (R1049), not for R1953.
+
+**Step 4 (stop: a candidate sheet).** These are the facts the transcription brief needs. Record R4372 = BL Add MS 32276 f.48
+(https://de-crypt.org/decrypt-web/RecordsView/4372). Pages: P2 (codes 1-500), 3999x5519 px,
+`https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4372_I26137_P2.jpg`, sha1 d6de7162...; P3 (codes 501-1000, filled only
+to ~800), 3928x5517 px, `...IMG_R4372_I26137_P3.jpg`, sha1 4871a1f6...; P1 is blank, 3991x5517, sha1 46e30c65... The layout is
+the same as R4369/R4370, so READ2-HEL2's column-crop recipe applies with re-measured x positions (P2 has 5 blocks, P3 has
+5 blocks). Then run `sibling_michell/test_sibling.py --key <R4372 key restricted to 1-800>` on R1953 with the L/R0/R100/LR100
+attributions pre-registered, exactly as READ2-HEL2 did. Like R4370 it is a candidate until that test passes: the matching form is
+not proof, because R4370 used the same form and failed.
+
+Requests: de-crypt.org about 64 (login page, submit, landing, RecordsView/4376, 25 RecordsView pages, 35 full-size images), 1.7 s
+apart, no challenge, one login; no other host. Subagent calls: 0. Vision calls: 6. The account name is in no file. Report what was
+found and where it was not found: no Add MS 32276 record other than R4369 names Hellen. R4343 P2 was not looked at (1729
+Reichenbach, one page). Post-1756 records R4381-R4408 were not opened (outside this job; relevant only to the 1763 letters).
+
+## Remaining gaps (NEAR3-HEL3, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (READ2-HEL2, unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; candidate sheet found, R4372 (f.48), the same form, layout and hand as R4369, codes 1-800 filled (NEAR3-HEL3); next: transcribe R4372 P2-P3 (2 blind passes + reconciliation, READ2-HEL2 recipe) and run the pre-registered --key test on R1953 codes 1-800, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500 with "la Haye", no holder) not yet tested; next: transcribe R4376 P3 and test on R1049, after the R4372 test, ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369 nor R4370 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (NEAR3-HEL3, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) tested negative as the first half (READ2-HEL2); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [n/a] clear-pages: no clear passage of R1953 is known on disk to serve as a crib
+- [ ] known-keys: R4369 transcribed and tested, reads R1953; R4372 (f.48) is the candidate first half and is not yet transcribed or tested
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, needs its own control); only if R4372 fails
+- [x] image-check: R4369 and R4370 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe R4372 (f.48) P2-P3 and run the pre-registered --key test on R1953 codes 1-800, ~$12

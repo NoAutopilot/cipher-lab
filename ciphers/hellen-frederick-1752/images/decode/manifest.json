@@ -8,7 +8,33 @@
   "https://de-crypt.org/decrypt-web/RecordsView/4373",
   "https://de-crypt.org/decrypt-web/RecordsView/4377",
   "https://de-crypt.org/decrypt-web/RecordsView/4378",
-  "https://de-crypt.org/decrypt-web/RecordsView/4379"
+  "https://de-crypt.org/decrypt-web/RecordsView/4379",
+  "https://de-crypt.org/decrypt-web/RecordsView/4343",
+  "https://de-crypt.org/decrypt-web/RecordsView/4344",
+  "https://de-crypt.org/decrypt-web/RecordsView/4345",
+  "https://de-crypt.org/decrypt-web/RecordsView/4346",
+  "https://de-crypt.org/decrypt-web/RecordsView/4347",
+  "https://de-crypt.org/decrypt-web/RecordsView/4348",
+  "https://de-crypt.org/decrypt-web/RecordsView/4351",
+  "https://de-crypt.org/decrypt-web/RecordsView/4352",
+  "https://de-crypt.org/decrypt-web/RecordsView/4353",
+  "https://de-crypt.org/decrypt-web/RecordsView/4354",
+  "https://de-crypt.org/decrypt-web/RecordsView/4355",
+  "https://de-crypt.org/decrypt-web/RecordsView/4356",
+  "https://de-crypt.org/decrypt-web/RecordsView/4357",
+  "https://de-crypt.org/decrypt-web/RecordsView/4358",
+  "https://de-crypt.org/decrypt-web/RecordsView/4359",
+  "https://de-crypt.org/decrypt-web/RecordsView/4360",
+  "https://de-crypt.org/decrypt-web/RecordsView/4361",
+  "https://de-crypt.org/decrypt-web/RecordsView/4362",
+  "https://de-crypt.org/decrypt-web/RecordsView/4363",
+  "https://de-crypt.org/decrypt-web/RecordsView/4364",
+  "https://de-crypt.org/decrypt-web/RecordsView/4366",
+  "https://de-crypt.org/decrypt-web/RecordsView/4367",
+  "https://de-crypt.org/decrypt-web/RecordsView/4368",
+  "https://de-crypt.org/decrypt-web/RecordsView/4372",
+  "https://de-crypt.org/decrypt-web/RecordsView/4375",
+  "https://de-crypt.org/decrypt-web/RecordsView/4376"
  ],
  "files": [
   {
@@ -166,6 +192,482 @@
    "sha1": "c0f13856d31c33b8333a4685e4a2b33830395600",
    "bytes": 2476104,
    "forbidden_png": false
+  },
+  {
+   "record": 4344,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4344_I26022_P2.jpg",
+   "native_px": [
+    3783,
+    5355
+   ],
+   "sha1": "0add20037fb700b6476baea71b5e3a9fd43eaffb",
+   "bytes": 2498878,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4345,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4345_I26027_P1.jpg",
+   "native_px": [
+    3305,
+    5344
+   ],
+   "sha1": "f26ad88aecbb7041046a096bafc43b5c954eb542",
+   "bytes": 1919069,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4345,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4345_I26027_P2.jpg",
+   "native_px": [
+    3339,
+    5202
+   ],
+   "sha1": "ed2e4516276773b28b9e3cec5701a8a2c874deb1",
+   "bytes": 2144392,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4345,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4345_I26027_P3.jpg",
+   "native_px": [
+    3305,
+    5206
+   ],
+   "sha1": "63cc7a3671eb00c64201bc8988a376a5cb002a7b",
+   "bytes": 2063882,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4346,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4346_I26029_P2.jpg",
+   "native_px": [
+    3338,
+    5202
+   ],
+   "sha1": "4069633054aac976aaac95414b30914e2c227e82",
+   "bytes": 2207452,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4347,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4347_I26037_P2.jpg",
+   "native_px": [
+    4074,
+    4902
+   ],
+   "sha1": "115391e50c48e344d25883ec441bf849b0b64574",
+   "bytes": 1794069,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4348,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4348_I26040_P2.jpg",
+   "native_px": [
+    2344,
+    5196
+   ],
+   "sha1": "33cd285ed9a8ed8adab72bda6cfa1ae40b9ca055",
+   "bytes": 1426537,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4351,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4351_I26044_P2.jpg",
+   "native_px": [
+    3590,
+    4762
+   ],
+   "sha1": "f1f38c48b2911a812eb4fcb81dad4b2d866398ee",
+   "bytes": 1869867,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4352,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4352_I26049_P2.jpg",
+   "native_px": [
+    4185,
+    5310
+   ],
+   "sha1": "b686c0985820e0566be747aff4fce2e4dc3c5cde",
+   "bytes": 2756207,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4353,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4353_I26050_P2.jpg",
+   "native_px": [
+    4158,
+    5310
+   ],
+   "sha1": "18c4bf0fa4d74c03727c4219df3ef0d3498aeaa9",
+   "bytes": 2945111,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4354,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4354_I26059_P1.jpg",
+   "native_px": [
+    3317,
+    5169
+   ],
+   "sha1": "ea4ef1e850b00a969614559ecb57c8398b9e3d1b",
+   "bytes": 1558238,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4354,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4354_I26059_P2.jpg",
+   "native_px": [
+    3323,
+    5175
+   ],
+   "sha1": "cffcc1a9e7ac3cf001d0decdd05278017e6d7691",
+   "bytes": 1936139,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4354,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4354_I26059_P3.jpg",
+   "native_px": [
+    3317,
+    5169
+   ],
+   "sha1": "e1c84801f4d6d3df4cbf4c09455e8c1e40454644",
+   "bytes": 1896278,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4355,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4355_I26064_P2.jpg",
+   "native_px": [
+    3289,
+    5175
+   ],
+   "sha1": "ef3edb24390d7e67276202edb4bb1b0216c4dd83",
+   "bytes": 1948098,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4356,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4356_I26069_P2.jpg",
+   "native_px": [
+    4633,
+    6022
+   ],
+   "sha1": "c60186182dd8f4a8310d544b31a93a306fce18bb",
+   "bytes": 3617298,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4357,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4357_I26070_P2.jpg",
+   "native_px": [
+    3888,
+    5282
+   ],
+   "sha1": "778f7b22e551096269b287f97352cc7c58ba8aec",
+   "bytes": 2674223,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4358,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4358_I26079_P2.jpg",
+   "native_px": [
+    3985,
+    5441
+   ],
+   "sha1": "3663e068ed3933d81cc84867ad3c3bce91b01fec",
+   "bytes": 2764830,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4359,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4359_I26084_P2.jpg",
+   "native_px": [
+    4002,
+    5784
+   ],
+   "sha1": "5b0dc867d23e3f30912ecf117535dfd219e81a55",
+   "bytes": 2237310,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4360,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4360_I26089_P2.jpg",
+   "native_px": [
+    3829,
+    5369
+   ],
+   "sha1": "ad16fd9b23a98942bc950171497ef562eb068c92",
+   "bytes": 2397214,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4361,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4361_I26094_P2.jpg",
+   "native_px": [
+    3795,
+    5107
+   ],
+   "sha1": "8d608c5da3b31c80e99b20f339407c44a5cd352d",
+   "bytes": 2154310,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4362,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4362_I26099_P2.jpg",
+   "native_px": [
+    3792,
+    5108
+   ],
+   "sha1": "3efadf12272ae18a684d0eb9c234164a489786fe",
+   "bytes": 2175917,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4363,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4363_I26105_P1.jpg",
+   "native_px": [
+    3794,
+    5108
+   ],
+   "sha1": "882182cfa92c30d4ba2798b07a5d87a9dea431cf",
+   "bytes": 2442600,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4363,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4363_I26105_P2.jpg",
+   "native_px": [
+    3798,
+    5107
+   ],
+   "sha1": "8adc4ba04619627fef5f9f8a37a603626bb82529",
+   "bytes": 1585211,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4364,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4364_I26108_P2.jpg",
+   "native_px": [
+    3825,
+    5085
+   ],
+   "sha1": "49d1896a5058860ac5680028de6c8346f0f525d3",
+   "bytes": 2150115,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4366,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4366_I26113_P2.jpg",
+   "native_px": [
+    3393,
+    5010
+   ],
+   "sha1": "2cc5e7b7670982caa3b27a8ab43d6f3ca9d36afe",
+   "bytes": 1727873,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4367,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4367_I26120_P2.jpg",
+   "native_px": [
+    4131,
+    5333
+   ],
+   "sha1": "e5232fe5244723cce1238f4aba985a49ed8cab4c",
+   "bytes": 3088830,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4368,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4368_I26125_P2.jpg",
+   "native_px": [
+    3789,
+    5855
+   ],
+   "sha1": "cc83d167874e3452a1101d3a4d267f9090a32e5d",
+   "bytes": 3093566,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4372,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4372_I26137_P1.jpg",
+   "native_px": [
+    3991,
+    5517
+   ],
+   "sha1": "46e30c65518e2d66ffccd2a6bdc3144bbe0a883f",
+   "bytes": 1833125,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4372,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4372_I26137_P2.jpg",
+   "native_px": [
+    3999,
+    5519
+   ],
+   "sha1": "d6de7162b4f020a50394c6bb4d292783a646a073",
+   "bytes": 2737106,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4372,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4372_I26137_P3.jpg",
+   "native_px": [
+    3928,
+    5517
+   ],
+   "sha1": "4871a1f6ead6f90ce7c35f00b3277c96277b37b1",
+   "bytes": 2394783,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4375,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4375_I26157_P2.jpg",
+   "native_px": [
+    4709,
+    5625
+   ],
+   "sha1": "50b9fc5440e680760a474b3a7b011463a41c0b28",
+   "bytes": 3733198,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4376,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4376_I26162_P1.jpg",
+   "native_px": [
+    4849,
+    5461
+   ],
+   "sha1": "988f641da4c82ecd225cc0551ae40465599beda9",
+   "bytes": 2212818,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4376,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4376_I26162_P2.jpg",
+   "native_px": [
+    4376,
+    5452
+   ],
+   "sha1": "1755199e597728838d95d60a085e0d44fa648304",
+   "bytes": 1930675,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
+  },
+  {
+   "record": 4376,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4376_I26162_P3.jpg",
+   "native_px": [
+    4431,
+    5451
+   ],
+   "sha1": "84ef4ad7d2ef4e0edd741330308ff83ce315e168",
+   "bytes": 3559865,
+   "forbidden_png": false,
+   "fetched_by": "NEAR3-HEL3, 4 Oct 2026"
   }
  ]
 }
