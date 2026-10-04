@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """NV05E scorer for key no.54 on fr.15575 f.228 L01-L04 (statistic, controls and gates as in PREREG.md).
 
-  python3 score_f228.py [--out score.tsv] [--check]
+  python3 score_f228.py [--gloss gloss.tsv] [--out score.tsv] [--check]
+  (N8-NV05 re-score: --gloss gloss_v2.tsv --out score_v2.tsv, PREREG-ADDENDUM-N8.md)
 
 Known-answer gate: ../control_fr3641/score_control.py's score() (imported, not re-derived) on this folder's
 ciphertext.tsv + gloss.tsv; control = values permuted among the 95 coded syllable rows, 1000 draws, seed 1.
@@ -26,8 +27,8 @@ def load_cipher():
     return lines
 
 
-def load_gloss():
-    with open(os.path.join(HERE, "gloss.tsv"), encoding="utf-8") as f:
+def load_gloss(name="gloss.tsv"):
+    with open(os.path.join(HERE, name), encoding="utf-8") as f:
         return {r["line"]: sc.norm(r["text"]) for r in csv.DictReader(f, delimiter="\t")}
 
 
@@ -37,10 +38,11 @@ def dec_string(lines, values):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--gloss", default="gloss.tsv")
     ap.add_argument("--out", default=os.path.join(HERE, "score.tsv"))
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
-    key = sc.load_key(); lines = load_cipher(); gloss = load_gloss()
+    key = sc.load_key(); lines = load_cipher(); gloss = load_gloss(a.gloss)
     real = {c: v for c, (v, _) in key.items()}
     S, m, n, L, per = sc.score(lines, gloss, real)
     codes = sorted(real); vals = [real[c] for c in codes]

@@ -415,3 +415,71 @@ cut at the old region's top edge, is inside; each band holds its gloss line abov
         --out ciphers/fr15575-syllabic-1592-95/f228/images/gloss --prefix f228g --centres 125,268,395,522 \
         --lines-per-crop 1 --max-width 1900 --overlap 150 --top-margin 60 --bottom-margin 60 --debug
     ... (fetched): region 3700x640, 4 lines, 4 bands x 3 segments ... wrote 12 crops
+
+(The addendum's header says "written ~16:25 UTC"; by `date -u` it was written 16:16-16:18 UTC. Correction noted here, the
+file is left as pushed.)
+
+**Reads.** Two blind Sonnet passes, one call each on the 12 gloss crops, neither shown the decode, pass G, NV05E's
+notes or the other pass (`f228/gloss_v2_passGA.tsv`, `f228/gloss_v2_passGB.tsv`, verbatim). Both read the same words
+on L01 and L02. On L03-L04 they split by line, not by word: GB put the L04 gloss ("...ancia que ... pudiera mudarla
+trastora por ello tan de buena gana ... por") at the end of L03, and in L04 the right end of the L03 gloss ("lo que
+buan los deach ... de gus") followed by the faint line BELOW the L04 cipher line ("mi salu[..]on manda ... por talas sus
+cartas que tenga ...", which is L05's gloss). **Reconciliation (this worker, on the crops):** line placement settled from
+the image, not from the decode: crop `f228g_L04_s1.jpg` shows "...ancia que si on misaque[..] pudiera mudarla tra[..]tora"
+directly above the bold "80.17c 73 92 16.57 90.33" (L04's cipher, passA), and "mi saluacion manda ..." under it; crop
+`f228g_L03_s3.jpg` shows "lo que buan los deach .. de gus" above "4873 4689.48 23 ca n 2394" (L03's cipher). So GA's line
+placement is right. Word disagreements were settled only where the glyph shape decided ("pudiera", "que", "mi saque");
+every other split (comeus/comers, vaya/vara, ela/le, ael/el, mandados/manidos, son/si on, trautora/trastora, ec) became
+[..], dropped by the fixed rule; no word neither pass read was added. Result `f228/gloss_v2_diplomatic.tsv` ->
+`f228/build_gloss_v2.py` (fixed rule of the addendum, `--check`) -> `f228/gloss_v2.tsv`.
+
+**Re-score** (`python3 f228/score_f228.py --gloss gloss_v2.tsv --out score_v2.tsv`, `--check`; same code path, statistic,
+control and gate; ciphertext and key unchanged, `decode_key --check` exit 0):
+
+| | NV05E (gloss G, registered) | N8-NV05 (gloss_v2, addendum) |
+|---|---|---|
+| S real key | 0.430 (37/86) | **0.674 (58/86)** |
+| value-shuffled control (1000, seed 1) | mean 0.116, p99 0.186, max 0.221; 0 >= real | mean 0.157, p99 0.233, max 0.256; 0 >= real |
+| per line L01/L02/L03/L04 | 10/20, 15/20, 4/21, 8/25 | 14/20, 16/20, 10/21, 18/25 |
+| gate (S > p99 AND S >= 0.60) | FAIL | **PASS** |
+
+The control moved with the longer gloss (p99 0.186 -> 0.233) as the addendum expected; the real S moved far more.
+Sensitivity, disclosed (not the registered number): each pass alone, through the same scorer -- GA 0.698 vs p99 0.256
+(PASS); GB 0.558 vs p99 0.279 (FAIL), its L04 scoring 5/25 because it holds L05's gloss. The PASS therefore rests on the
+line-placement settlement above, which was made from the crops' geometry. NV05E's FAIL stays on record; this PASS is
+the addendum's result, and the NV05E diagnosis ("the gloss read, not the key") is now tested and supported for L01-L04.
+Language judge unchanged (decode unchanged): -1.229, FAIL, not a test here (NV05E).
+
+**Grades** (per VERIFY-NV05; the reading is unchanged by this job): f.228 L01-L04 tokens 135: H 77, C 0, S 0, M 9, I 0,
+U 49. The reading did not change, so AUDIT.md (N0) needs no "Revision after AUDIT" note for the reading; a one-line note on
+the re-score was added there. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 4 Oct 2026).
+
+What the passes add to the gist (gloss words, H, both passes or settled): "...tarde ... por los [despachos] a la fin han
+[acabado de] llegar todos los que partieron antes que el de 7 de abril & los que vinieron por la mar con don Juan /
+...vanegas ... postram[ente] sin ... lo que [bivan] los deach[..] ... / ...ancia que ... pudiera mudarla ... por ello tan
+de buena gana ... por". The month in the gloss is read "abril" by G, GA and GB.
+
+Requests: gallica.bnf.fr 1 (native region 5250,640,3700,640 of canvas 235, fetched once by iiif_lines.py). Subagent calls:
+2 Sonnet (GA, GB). Not done: L05 onward of f.228, f.233, fr.15576 f.2, the nomenclator.
+
+Suggestion (not done): a gloss pass brief should name the bold cipher line's opening signs per crop (from passA) so the
+reader anchors on the right faint line; GB's one error was line placement.
+
+## Remaining gaps (N8-NV05, 4 Oct 2026)
+
+Read so far: f.228 L01-L04 of ~47 lines (135 tokens: H 77, M 9, U 49), scored against the leaf's own gloss, gate PASS (S 0.674 vs p99 0.233, f228/score_v2.tsv); f.233 and fr.15576 f.2 unread.
+- edition entries (Lefèvre IV p.~277, van Durme 1964, 5 Jan 1595) - blocker: waiting-on LOCAL-QUEUE.tsv row L47; books.google page view is captcha-blocked from the cloud and only API snippets came back
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; NV05B transcribed only the syllabary and header signs (key_no54.tsv); next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- target decode fr.15576 f.2 - blocker: not-attempted; NV05D P1: a 3-digit system outside no.54, with a period interlined decipherment; next: gloss (2 passes) + ~25 cipher lines transcribed and aligned with tools/interlinear_align.py (grade C), ~$9
+- fr.15575 f.228 L05-L47 and f.233 - blocker: not-attempted; the L01-L04 known-answer gate now PASSes (N8-NV05); next: f.228 L05-L08 batch = crops + 2 cipher passes + 2 gloss passes (bands anchored on the cipher line's opening signs) + 1 reconciliation = 5 units at ~$1.5, ~$7.5 per 4-line batch; f.233 the same per batch
+
+## Escalation (N8-NV05, 4 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: Simancas Estado copy of the 5 Jan 1595 dispatch, once the edition entry names the liasse
+- [ ] known-keys: fr.3995 no.54 syllabary control-checked twice (NV05C fr.3641 PASS; f.228 L01-L04 vs its own gloss PASS, N8-NV05); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [ ] print: Lefèvre IV and van Durme entries to read in full (LOCAL-QUEUE L47)
+- [n/a] key-rebuild: the period key sheet exists and now passes on the target leaf itself
+- [x] image-check: native gloss crops of f.228 L01-L04 read by two passes (N8-NV05)
+- [x] retry: the NV05E gloss FAIL was retried with a pre-registered addendum (one change, the gloss read) and PASSed
+Verdict: keep going: 3 internal gaps; cheapest next: f.228 L05-L08 batch (5 units, ~$7.5: crops, 2 cipher + 2 gloss passes, reconcile) against its own gloss; then fr.15576 f.2 gloss alignment (~$9, grade C); the no.54 nomenclator (~$6) for the code-word groups

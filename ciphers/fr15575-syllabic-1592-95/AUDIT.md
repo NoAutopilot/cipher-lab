@@ -113,3 +113,8 @@ Requests: www.googleapis.com 12 (2 volume-record lookups), archive.org 2. Scratc
 scratchpad (not committed); its numbers are in the table above.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## Note after AUDIT (N8-NV05, 4 Oct 2026)
+The f.228 L01-L04 reading (H 77, M 9, U 49) is unchanged. Its known-answer gate was re-scored under a pre-registered
+addendum (f228/PREREG-ADDENDUM-N8.md) with the leaf's gloss re-read by two blind passes: S 0.674 vs value-shuffled p99
+0.233, PASS (NV05E's registered FAIL, 0.430 vs 0.186, stays on record). Class N0 and key source `period` unchanged.
