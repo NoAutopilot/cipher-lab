@@ -3811,3 +3811,29 @@ archived, no check-in armed. Nothing promoted, no status.json/NEAR.md change.
   about 33-38 open (30 Cipher 3, 3-5 Cipher 4, f.273, f.26-27, f.89, f.119). No decoding in this lane.
 - Lessons: (1) glyph_atlas segment is not yet usable on 16th-c. cursive DECODE images -- price a segmenter fix before briefing an atlas
   route on that hand. (2) A sorter page holding every tile ran 25.8 MB before posterising to 8.3 MB: budget the size step.
+
+## LANE READ2 handoff (session_01AN8FVyeTNuzxjDdGnj7E5M, account 2), 4 October 2026 (closed 00:3x UTC: backlog spent)
+
+Brief `.claude/briefs/runs/2026-10-03-acct3-lane-read2.md`. 10 workers, USD 48.80 (10 D), orchestrator ~6.0; lane ~54.8 of 60. All
+finished; no check-in armed. Two new NEAR.md rows, both `partial`, both cryptanalytic/period-key results, nothing verified (rule 10).
+- **hellen-frederick-1752 (READ2-HEL, HEL2, HELRD).** DECODE R4369 (BL Add MS 32276 f.44, "Hellen avec le Roy de Prusse" 1751) is the
+  period key, codes 801-1796 only. On R1953 (4 Jan 1752), attribution LR100: uni -7.017 vs value-shuffle mean -9.157 (p 0/200), PMI -0.361 vs
+  order-shuffle -0.694 (p 0/200), power 1.00; H 152 S 304 M 16 U 374; judge FAIL near gate (cannot decide at this coverage). R4370 (f.46) is
+  a rival series, fails all four pre-registered attributions. Rule 7: 845/846, the one difference an unstated `~` (crossed-out cell)
+  convention, now in key_r4369/README.md (reading unchanged). Next: codes 1-800 -- R4376 (f.56, 1754) and the pre-f.44 Add MS 32276 key
+  records (~6); then a verifier (AUDIT.md) before any wording outside the repo.
+- **clair1161-avis-flandre-1688 (READ2-C1161, C1161B).** Cipher leaves Gallica btv1b90010063 c185-188: c185R 704 + c186R block 220 signs
+  transcribed (err_2reader 0.10/0.09). The c186R margin note is the block's period decipherment (clear French). Blind homophonic anneal key
+  vs that gloss 0.594 vs same anneal on order-shuffled ciphertext (20 seeds) max 0.312 and vs unrelated fr16 windows p95 0.335 (pre-registered).
+  Gloss-seeded repair: C 97 S 675 M 152 U 15; judge FAIL -1.136 (real_p05 -0.924). Next: rule-7 re-derivation (~3), looser pre-registered
+  repair rule (~5), q/ls and S split test (~3), then c186L/c187L/c187R/c188L transcription (~6 each) and pooled re-anneal.
+- clairambault1225-paget-1714 (READ2-PAG): homophone/null pass C1 PASS held-out both ways; firm 64 -> 72, 420 M stay; four tests on one
+  aligner logged -> next needs a different instrument or the Marine B7 originals (LOCAL-QUEUE L11).
+- roell-vandedem-1809 (READ2-ROELL): NA 1.02.20 inv. 164 does not key the letter (76 vs random-table-code p99 114, control-backed,
+  conditional on DECODE's transcription). Stays open.
+- siena-concistoro-2308 (READ2-SIENA): records.tsv; no key table or gloss on any of the 11 records; no.24 P1 has 637 open tokens missing
+  from the 6+24 pool; Bourdeau keys 25/14/4 on pools 6+24 and 20+23 negative with controls. Stays open.
+- READ2-RELABEL: 6 folders' next-step paragraphs fixed (5 -> runnable, vanspaen -> needs-key). fr7129-villeroy-bongars-1604 not worked:
+  status `blocked` (Tomokiyo Bongars paper unread).
+- Brief lessons: two planned controls were order-blind (a frequency test; a shuffled-key control for a gloss match) and were replaced before
+  spend; a decode convention living only in a build script's docstring fails rule 7 by construction.
