@@ -1,0 +1,108 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	X_THETA2	S69	M	before: "line start"; oval crossed by two parallel horizontal bars
+L07	2	S80		H	8 with horizontal bar through middle
+L07	3	S16		M	plain triangle, flat base, no cross stroke
+L07	4	S62		H	beta
+L07	5	X_THETA2	S69	M	oval with two horizontal bars
+L07	6	S75		H	plain cross
+L07	7	S23	S97	M	Lambda, plain legs, small dot/hook at left foot
+L07	8	S47		H	epsilon/E
+L07	9	S80		H	barred 8
+L07	10	S23	S97	M	Lambda with dot at left foot
+L07	11	S53	S54	H	loop crossed by long diagonal stroke (phi-like)
+L07	12	S17		H	cursive Z with long curled tail
+L07	13	S20		H	d
+L07	14	S47		H	epsilon
+L07	15	S80		H	barred 8
+L07	16	X_POUND	S31	M	pound/£ shape: top loop, horizontal bar through middle, base tail
+L07	17	S37	S74	M	circle with straight vertical stem up, dot above stem
+L07	18	S61		H	9/g
+L07	19	S75		H	cross
+L07	20	S16		M	plain triangle
+L07	21	S80		H	barred 8
+L07	22	X_THETA2	S69	M	oval with two horizontal bars
+L07	23	S53		H	phi-like crossed loop
+L07	24	S17		H	cursive Z with tail
+L07	25	S53	S54	M	tall crossed loop, long descender
+L07	26	S62		H	beta
+L07	27	X_NEW	S23	M	italic capital A with crossbar, dot after
+L07	28	X_POUND	S31	M	£ shape, loop with crossing bar
+L07	29	S75		H	cross
+L07	30	S47		H	epsilon with small tick above right
+L07	31	S80		H	barred 8
+L07	32	X_THETA2	S69	M	oval with two horizontal bars
+L07	33	X_NEW	S31	L	closed oval loop with long tail sweeping down-right, tick above right
+L07	34	S31	S17	M	figure 2 with base extended as dash; after: "line end"
+L08.1	1	S17		H	before: "line start"; cursive Z with tail
+L08.1	2	S20		H	d
+L08.1	3	S47		H	epsilon
+L08.1	4	S80		H	barred 8; after: "Et"
+L08.2	1	S80		H	before: "si"; barred 8, at page margin; after: "line end"
+L09	1	S23	S97	M	before: "line start"; Lambda with hook/dot at left foot
+L09	2	S95		H	small plain o
+L09	3	S57	S45	M	reversed c / open loop facing left with a dot inside
+L09	4	S53	S54	H	phi-like crossed loop with long diagonal descender
+L09	5	S80		H	barred 8
+L09	6	S23	S97	M	Lambda with dot at left foot
+L09	7	S53		H	phi-like crossed loop
+L09	8	S62		H	beta
+L09	9	S89		H	double horizontal bar
+L09	10	S17		H	cursive Z with long tail
+L09	11	S16		M	plain triangle
+L09	12	S80		H	barred 8
+L09	13	X_THETA2	S69	M	oval with two horizontal bars
+L09	14	X_POUND	S31	M	£ shape, loop with crossing bar
+L09	15	S52		H	3
+L09	16	S17		H	cursive Z with tail
+L09	17	S23	S97	M	Lambda with dot at left foot
+L09	18	S89		H	double bar
+L09	19	S17		H	cursive Z with tail
+L09	20	S47		H	epsilon
+L09	21	S52		H	3
+L09	22	X_THETA2	S69	M	oval with two horizontal bars
+L09	23	S31	S17	M	figure 2 followed by dot and short dash
+L09	24	S35		H	m with dots
+L09	25	S37	S74	M	circle with vertical stem, tick at top of stem
+L09	26	S88	S24	M	two horizontal bars crossed by near-vertical stroke
+L09	27	S10		M	figure 1 with dot after and wavy dash below right
+L09	28	S52		H	3 with angular flat top; comma follows (not counted); after: "ch'io"
+L10	1	S67		H	before: "opra"; tall long f
+L10	2	S80		H	barred 8
+L10	3	S37	S74	H	circle with vertical stem up
+L10	4	S17		H	cursive Z with tail
+L10	5	S62		H	beta
+L10	6	X_THETA2	S69	M	oval with two horizontal bars
+L10	7	S52		H	3
+L10	8	S77		H	6 with tick above left
+L10	9	S53	S80	M	8-like double loop crossed by long diagonal descender
+L10	10	S17		H	cursive Z with tail
+L10	11	S10		M	figure 1 with dot and wavy dash below right
+L10	12	S75	S73	M	thin cross at page margin, longer vertical, no dot seen; after: "line end"
+L11	1	S53	S80	M	before: "line start"; loop crossed by stroke, phi/8-like; lower part cut by crop edge
+L11	2	S34	S35	L	u-i shape with tick above; lower part cut by crop edge
+L11	3	S77		H	6 with tick above left
+L11	4	S69		H	oval with one long horizontal bar
+L11	5	S97	S23	M	lambda with curled top-left and long right leg
+L11	6	S53		M	phi-like crossed loop
+L11	7	S24	S88	M	two bars crossed by slanted stroke
+L11	8	S62		H	beta
+L11	9	S65		H	plain 8, no bar
+L11	10	S84	S40	M	cursive x with looped ends
+L11	11	S10		M	figure 1 with dot and short dash below right
+L11	12	S75		H	cross
+L11	13	X_THETA2	S69	M	oval with two horizontal bars
+L11	14	S80		H	barred 8
+L11	15	S77		H	6 with tick
+L11	16	S75		H	cross
+L11	17	S49		H	slanted bar with dot above-left and below-right
+L11	18	S95		H	plain oval o, larger
+L11	19	S97		H	lambda with left tail
+L11	20	S89		H	double bar
+L11	21	S17		H	cursive Z with tail, comma-like flick below
+L11	22	S69		H	oval with one horizontal bar
+L11	23	S17		H	cursive Z with tail
+L11	24	S37	S74	H	circle with vertical stem up
+L11	25	S47		H	epsilon
+L11	26	X_POUND	S31	M	£ shape, loop with crossing bar
+L11	27	S53		H	phi-like crossed loop with long descender
+L11	28	S80		H	barred 8; full stop before Io not counted; after: "Io"
