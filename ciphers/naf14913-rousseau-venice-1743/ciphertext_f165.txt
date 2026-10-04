@@ -1,0 +1,25 @@
+# BnF NAF 14913 ff.165r-165v (Gallica btv1b525174513 canvases 343, 344), Lorenzi to Montaigu, Florence, 21 Sept 1743 (red
+# edition number 2037 on f.165r = Souchon 1915 no. 2037, inferred from the f.206/no. 2047 pattern, not checked in print this job);
+# numeral passage after the clear words "...la negociation, dont il avoit parle, entamee entre cette" (f.165r, three lines at the foot)
+# running onto the head of f.165v (11 lines), before the clear "Je crois que M. le Mis Mari a eu ces memes avis". No slip and no
+# interlinear gloss on ff.164v-166r at native resolution (A3V2-ROUS, 4 Oct 2026) -- no plain side.
+# A3V2-ROUS (account 3) 4 Oct 2026: tools/iiif_lines.py line crops images/f165r_L01-L03, f165v_L01-L11 (two segments each,
+# 150 px overlap); two blind Opus 5.5 passes, crops only (scratch passA/passB), 168/168 first readings agree (tools/reconcile_passes.py);
+# reconciled against the crops by the worker. a|b = both passes doubtful (most likely first). Ligature rule of this hand (settled on
+# the crops, A3V2-ROUS): a 1 written after a 2 or 3 joins it as a u-shape, so "2u7" = 217 and "1 2u" = 121; the hooked 7 (as in 746,
+# 771) differs from the plain 1 (as in 121, 14). Underlined in the MS: f165r L02 311, L03 52 (stroke); f165v L01 338, L02 404, L04 311,
+# L05 311, L07 311 (twice), L10 338, L11 108.
+f165r_L01 276 52|32 501 231
+f165r_L02 605 22 739 311 14 242 405 554|354 14 713 383 767 673
+f165r_L03 335 835 548 501 209 835 548 501 63|69 242 664 52
+f165v_L01 231 361 214 594 10 52|57 208 347 22 338 121 306 810
+f165v_L02 420 268 121 63 506 404 14 168 114 501 715 825 843
+f165v_L03 22 188 601 114 567 8 454 20 367 755 721 689 437 63
+f165v_L04 655 22 362 97 424 95 360 14 771|711 311 14 746 39 20
+f165v_L05 10 664 352 63 52 605 24 311 14 473 443 412 255
+f165v_L06 217 10 21 22 52 452 265 835 834 746 164 121 172
+f165v_L07 484 311 14 465 567 755 208 197 14 468 311 14 544
+f165v_L08 10 625 695 10 742 22 521 323 180 554 14 577 326
+f165v_L09 797 108 412 255 217 697 35 840 284 52 453 606 22
+f165v_L10 163 444 776 790 567 14 52 338 66 476 180 63
+f165v_L11 797 108 46 306 301 121 728 720

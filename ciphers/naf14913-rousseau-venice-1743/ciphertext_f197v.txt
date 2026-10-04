@@ -1,0 +1,36 @@
+# BnF NAF 14913 ff.197v-198r (Gallica btv1b525174513 canvases 408, 409), Lorenzi to Montaigu, Florence, 1743-44 (clear heading
+# on f.197r not read this job); numeral passage after the clear words "...mande par sa derniere que" (f.197v, 15 lines) running onto
+# the head of f.198r (10 lines), before the clear "et j'ai d'autant plus lieu d'y ajouter foi...". No slip and no interlinear gloss
+# on ff.197r-198v at native resolution (A3V2-ROUS, 4 Oct 2026) -- no plain side.
+# A3V2-ROUS (account 3) 4 Oct 2026: tools/iiif_lines.py line crops images/f197v_L01-L15, f198r_L01-L10 (two segments each, 150 px
+# overlap); two blind Opus 5.5 passes, crops only (scratch passA/passB), f197v 171/179 and f198r 111/119 first readings agree
+# (tools/reconcile_passes.py); the 16 splits reconciled against the crops by the worker (12 of them the 2u7/3u7 ligature or the hooked 7,
+# see ciphertext_f165.txt header). a|b = unsettled (most likely first). [610] = a group struck through in the MS (not a token);
+# f198r L02 "664" is in heavier ink (overwritten); a lone "1" both passes listed between 501 and 10 was the clipped 1 of 501 at the segment edge, removed on the boundary zoom; f198r L09 "^52" = a superscript 52 with a caret between 231 and 664 (insertion
+# or correction, position M). Strokes below in the MS: f197v L02 369(?), L03 311, L04 531, L04 442, L05 311, L06 311, L11 635,
+# L14 635(tick), L14 717; f198r L04 781(?), L06 140, 717, 249, L07 369, L07 635 (underlined).
+f197v_L01 52 605 22 739 596 249 444 481 840 781 567
+f197v_L02 306 613 369 22 65 276 231 317 188 483 805 593
+f197v_L03 24 363 682 368 311 14 717 347 664 163 22 691
+f197v_L04 531 681 225 208 217 22 52 119 442 599 444 720
+f197v_L05 63 101 52 98 781 605 24 311 14 473 443|440 412 255
+f197v_L06 217 567 306 166 121 697 482 311 14 40 652 121
+f197v_L07 728 581 138 217 114 312 668 217 8 749 242 755
+f197v_L08 443 24 107 40 828 480 501 22 266 173 444 776 790
+f197v_L09 567 14 10 713 193 210 564 22 8 176 22 323 792
+f197v_L10 179 33 217 501 336 229 22 746 819 121|141 24 10 188
+f197v_L11 344 635 521 468 369 444 685 253 232 482
+f197v_L12 245 594 473 22 368 632 807 589 444 179 336
+f197v_L13 229 22 712 781 746 40 360 363 121 52 645 479
+f197v_L14 139 781 473 63 425 576 288 24 717 249 615 22
+f197v_L15 625 392 834 306 279 681 121 199 648 242 213
+f198r_L01 577 652 240 52 605 10 840 66 446 265 834 217
+f198r_L02 567 691 383 767 673 501 10 745 664 [610] 70 581
+f198r_L03 552 22 525 610 270 121 295 95 313 22 12 472|442
+f198r_L04 225 22 315 95 362 232 568 319 843 63 755
+f198r_L05 811 5 484 501 594 527|517 781 217 180 429 24 121
+f198r_L06 63 306 140 722 134 717 249 843 323 792 480
+f198r_L07 802 835 461 217 746 180 38 369 10 691 344 635
+f198r_L08 521 444 805 197 617 52 685 95 834 22 52 273
+f198r_L09 755 208 188 231 501 294 767 521 188 231 ^52 664 421
+f198r_L10 664 63 139 781 253 69 121 98 33 479 22 742

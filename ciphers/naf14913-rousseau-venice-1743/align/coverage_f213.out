@@ -1,0 +1,24 @@
+groups 84, distinct 58; registered gate: NON-TEST (no plain side: H undefined without a slip)
+C-code occurrences in passage: {'22': 3, '722': 2, '501': 1} total 6
+338/534/722: {'338': 1, '534': 0, '722': 2}
+key.tsv codes present: 16 of 50, occurrences K = 28 of 84 groups (33.3%)
+  121	s	C	x4
+  22	de	C	x3
+  306	les	M	x3
+  746	des	M	x3
+  722	ti	C	x2
+  444	en	M	x2
+  24	in	M	x2
+  501	et	C	x1
+  420	ta	M	x1
+  65	cette	M	x1
+  338	tout	M	x1
+  347	con	M	x1
+  781	e	C	x1
+  360	vi	M	x1
+  10	a	M	x1
+  834	kowitz	M	x1
+repeated codes: {'317': 3, '52': 4, '63': 2, '746': 3, '835': 2, '306': 3, '605': 2, '22': 3, '90': 2, '689': 2, '24': 2, '722': 2, '121': 4, '468': 2, '46': 2, '444': 2, '664': 2, '368': 2}
+CONTROL (a uniform 1..850, n=200): mean 4.80, p95 9, max 11, >= real 0 (p = 0.0050)
+CONTROL (b vocabulary of 288 other-passage codes (7 files), n=200): mean 14.31, p95 20, max 24, >= real 0 (p = 0.0050)
+SECONDARY (unregistered, vocabulary-level, no key change can follow): K above both p95 (K=28, p95s {'a uniform 1..850': 9, 'b vocabulary of 288 other-passage codes (7 files)': 20})

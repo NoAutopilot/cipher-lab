@@ -1,0 +1,37 @@
+groups 296, distinct 159; registered gate: NON-TEST (no plain side: H undefined without a slip)
+C-code occurrences in passage: {'22': 16, '66': 1, '279': 1, '581': 2, '722': 1, '501': 5} total 26
+338/534/722: {'338': 0, '534': 0, '722': 1}
+key.tsv codes present: 29 of 50, occurrences K = 94 of 296 groups (31.8%)
+  22	de	C	x16
+  121	s	C	x8
+  444	en	M	x6
+  24	in	M	x6
+  781	e	C	x6
+  501	et	C	x5
+  10	a	M	x5
+  306	les	M	x4
+  188	lar	M	x4
+  746	des	M	x3
+  40	pro	M	x3
+  834	kowitz	M	x3
+  581	au	C	x2
+  443	pr	M	x2
+  208	se	C	x2
+  336	sous|pr	M	x2
+  363	sion	I	x2
+  344	mee	M	x2
+  635	de m	M	x2
+  229	ince	M	x2
+  66	r	C	x1
+  279	plus	C	x1
+  722	ti	C	x1
+  776	at	M	x1
+  65	cette	M	x1
+  347	con	M	x1
+  114	ner	M	x1
+  360	vi	M	x1
+  712	lob	M	x1
+repeated codes: {'52': 7, '605': 3, '22': 16, '249': 3, '444': 6, '840': 2, '781': 6, '567': 4, '306': 4, '369': 3, '231': 3, '188': 4, '805': 2, '24': 6, '363': 2, '368': 2, '311': 3, '14': 4, '717': 3, '664': 4, '691': 3, '681': 2, '225': 2, '208': 2, '217': 8, '63': 5, '98': 2, '473': 3, '443': 2, '121': 8, '482': 2, '40': 3, '652': 2, '581': 2, '8': 2, '242': 2, '755': 3, '480': 2, '501': 5, '10': 5, '323': 2, '792': 2, '179': 2, '33': 2, '336': 2, '229': 2, '746': 3, '344': 2, '635': 2, '521': 3, '685': 2, '253': 2, '232': 2, '594': 2, '479': 2, '139': 2, '834': 3, '767': 2, '95': 3, '843': 2, '180': 2}
+CONTROL (a uniform 1..850, n=200): mean 16.85, p95 23, max 28, >= real 0 (p = 0.0050)
+CONTROL (b vocabulary of 257 other-passage codes (7 files), n=200): mean 57.28, p95 70, max 88, >= real 0 (p = 0.0050)
+SECONDARY (unregistered, vocabulary-level, no key change can follow): K above both p95 (K=94, p95s {'a uniform 1..850': 23, 'b vocabulary of 257 other-passage codes (7 files)': 70})

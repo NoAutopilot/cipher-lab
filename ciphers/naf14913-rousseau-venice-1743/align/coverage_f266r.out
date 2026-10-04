@@ -1,0 +1,28 @@
+groups 171, distinct 98; registered gate: NON-TEST (no plain side: H undefined without a slip)
+C-code occurrences in passage: {'22': 7, '66': 6, '581': 2, '722': 1, '501': 2} total 18
+338/534/722: {'338': 0, '534': 2, '722': 1}
+key.tsv codes present: 20 of 50, occurrences K = 51 of 171 groups (29.8%)
+  121	s	C	x10
+  22	de	C	x7
+  66	r	C	x6
+  188	lar	M	x3
+  581	au	C	x2
+  501	et	C	x2
+  534	ches	M	x2
+  24	in	M	x2
+  123	oient	M	x2
+  347	con	M	x2
+  10	a	M	x2
+  344	mee	M	x2
+  834	kowitz	M	x2
+  722	ti	C	x1
+  548	ve	M	x1
+  444	en	M	x1
+  303	fa	M	x1
+  271	ces	M	x1
+  114	ner	M	x1
+  40	pro	M	x1
+repeated codes: {'52': 3, '605': 2, '22': 7, '813': 2, '597': 2, '63': 5, '170': 2, '300': 2, '121': 10, '369': 3, '123': 2, '10': 2, '298': 2, '33': 3, '755': 4, '14': 3, '35': 2, '713': 3, '144': 2, '312': 2, '668': 2, '176': 2, '581': 2, '347': 2, '481': 2, '213': 2, '180': 4, '253': 3, '66': 6, '534': 2, '807': 2, '564': 2, '501': 2, '188': 3, '446': 2, '834': 2, '835': 2, '344': 2, '521': 2, '5': 2, '24': 2, '753': 2}
+CONTROL (a uniform 1..850, n=200): mean 9.54, p95 15, max 17, >= real 0 (p = 0.0050)
+CONTROL (b vocabulary of 274 other-passage codes (7 files), n=200): mean 31.15, p95 40, max 45, >= real 0 (p = 0.0050)
+SECONDARY (unregistered, vocabulary-level, no key change can follow): K above both p95 (K=51, p95s {'a uniform 1..850': 15, 'b vocabulary of 274 other-passage codes (7 files)': 40})

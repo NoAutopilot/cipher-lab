@@ -22,6 +22,18 @@ MAXLEN (fixed before scoring, FT4c): 12, since the f.217r slip has words of up t
 nomenclator word group must be able to carry one; FT4 used 9 for a slip whose longest word group was 7.
 
   python3 gate_pair.py --cipher ../ciphertext_f216v.txt --slip ../slip_f217r.txt [--n 200] [--limit 20] [--seed 1]
+
+--coverage (A3V2-ROUS, 4 Oct 2026, account 3): a passage that has NO plain side (no Rousseau slip, no interlinear gloss --
+ff.165r-165v and ff.197v-198r) cannot be scored by the registered gate at all: H needs a slip to segment, so the registered
+gate is a NON-TEST (no plain side), not a FAIL, and this mode says so first. It then reports what a cipher-only passage can
+say: occurrences of the ten C codes, of every key.tsv code, and of 338/534/722, and one unregistered secondary statistic,
+K = occurrences of key.tsv codes in the passage, against two controls that can vary on the same axis (rule 3): (a) N groups
+drawn uniformly from 1..--range (default 850, the volume's code range), (b) N groups drawn uniformly from the distinct codes
+of the other transcribed NAF 14913 passages (--vocab files), so a K above both p95 says only that key.tsv's codes are
+high-frequency codes of the same nomenclator -- consistent with the same key, never a test of its values. No key change
+can follow from this mode (NOTES.md "Pre-registered gate": values enter key.tsv only from a pair that PASSes).
+
+  python3 gate_pair.py --cipher ../ciphertext_f165.txt --coverage [--vocab ../ciphertext.txt ...] [--n 200] [--seed 1]
 """
 import argparse, itertools, os, random, re, sys, time, unicodedata
 from collections import Counter
@@ -158,15 +170,70 @@ def _job(args):
     return h, to
 
 
+def load_cipher(cipher):
+    return load(cipher, os.devnull)[0]
+
+
+def coverage(a):
+    toks = load_cipher(a.cipher)
+    cnt = Counter(toks)
+    key = {}
+    for l in open(a.key, encoding='utf-8'):
+        f = l.rstrip('\n').split('\t')
+        if f[0] == 'code' or not f[0].strip():
+            continue
+        key[f[0]] = (f[1], f[2])
+    print(f'groups {len(toks)}, distinct {len(cnt)}; registered gate: NON-TEST (no plain side: H undefined without a slip)')
+    occ = sum(cnt[c] for c in PINS)
+    print('C-code occurrences in passage:', {c: cnt[c] for c in PINS if c in cnt}, 'total', occ)
+    print('338/534/722:', {c: cnt.get(c, 0) for c in ('338', '534', '722')})
+    hits = {c: cnt[c] for c in key if c in cnt}
+    K = sum(hits.values())
+    print(f'key.tsv codes present: {len(hits)} of {len(key)}, occurrences K = {K} of {len(toks)} groups '
+          f'({100.0 * K / len(toks):.1f}%)')
+    for c in sorted(hits, key=lambda c: -hits[c]):
+        print(f'  {c}\t{key[c][0]}\t{key[c][1]}\tx{hits[c]}')
+    print('repeated codes:', {t: c for t, c in cnt.items() if c > 1})
+    rng = random.Random(a.seed)
+    vocab = set()
+    for f in a.vocab:
+        vocab |= set(load_cipher(f))
+    keyset = set(key)
+    res = {}
+    draws = [('a uniform 1..%d' % a.range, lambda: str(rng.randint(1, a.range)))]
+    if vocab:
+        vl = sorted(vocab)
+        draws.append(('b vocabulary of %d other-passage codes (%d files)' % (len(vl), len(a.vocab)), lambda: rng.choice(vl)))
+    for name, draw in draws:
+        ks = sorted(sum(1 for _ in range(len(toks)) if draw() in keyset) for _ in range(a.n))
+        p95 = ks[int(0.95 * len(ks)) - 1]
+        ge = sum(1 for k in ks if k >= K)
+        print(f'CONTROL ({name}, n={len(ks)}): mean {sum(ks)/len(ks):.2f}, p95 {p95}, max {ks[-1]}, '
+              f'>= real {ge} (p = {(ge+1)/(len(ks)+1):.4f})')
+        res[name] = p95
+    above = all(K > p for p in res.values())
+    print('SECONDARY (unregistered, vocabulary-level, no key change can follow):', 'K above both p95' if above else
+          'K not above every control p95', f'(K={K}, p95s {res})')
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--cipher', required=True)
-    ap.add_argument('--slip', required=True)
+    ap.add_argument('--slip', help='clear text of the passage (a Rousseau slip); required unless --coverage')
+    ap.add_argument('--coverage', action='store_true', help='no plain side: registered gate NON-TEST; cipher-only counts + secondary K')
+    ap.add_argument('--vocab', nargs='*', default=[], help='other transcribed passages (control b vocabulary)')
+    ap.add_argument('--range', type=int, default=850, help='code range for control (a), 1..range')
+    ap.add_argument('--key', default=os.path.join(TARGET, 'key.tsv'))
     ap.add_argument('--maxlen', type=int, default=12)
     ap.add_argument('--n', type=int, default=200)
     ap.add_argument('--limit', type=float, default=20.0, help='seconds per run (per pin set for the real pair)')
     ap.add_argument('--seed', type=int, default=1)
     a = ap.parse_args()
+    if a.coverage:
+        return coverage(a)
+    if not a.slip:
+        ap.error('--slip is required unless --coverage')
     toks, text = load(a.cipher, a.slip)
     cnt = Counter(toks)
     occ = sum(cnt[c] for c in PINS)
