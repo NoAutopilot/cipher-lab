@@ -259,3 +259,41 @@ Read so far: 0 of ~5,000 open signs (L25 only; L14 is now known glossed); Tomoki
 - [n/a] retry: no host failed (cryptiana 302s were http->https redirects)
 Verdict: keep going: 2 internal gaps; cheapest next: fr.17020 ff.372-382 inventory, ~$1; the real next step is test 0 seeded by the Tomokiyo match once the sort is done (or with the table as a hypothesis), ~$9
 gaps_check: `OK keep-going fr16144-savary-lancosme-1588: keep going: 2 internal gap(s), 1 step(s) untried`
+
+## RUN2-SAV: fr.17020 ff.372-382 (the Harlay dépouillement), 4 Oct 2026 02:46-02:5x UTC
+Brief: locate fr.17020 on Gallica, read ff.372-382, log whether a Lancosme letter of 29 Apr 1587 (or its cipher original) is
+listed. **Result: not read -- fr.17020 is not digitised.** Catalogue record first (archivesetmanuscrits, simple search
+"Français 17020", 1 hit with Cote facet): https://archivesetmanuscrits.bnf.fr/ark:/12148/cc467473/cd0e233 -- "Français 17020 •
+Harlay 498 (9) • IX Notices des mss 233-248 du fonds Saint-Germain-Harlay. 495 feuillets", within "Français 17012-17023 •
+Harlay 498 (1-12) • Dépouillement numérique des manuscrits du président Achille III de Harlay". Availability flag, quoted:
+"Document original : Français 17020 Réserver" and nothing else -- no "Version numérisée" line and no "Document de
+substitution" (microfilm). Contrast, same site and same session: fr.16171 (ark:/12148/cc462694) shows "Version numérisée :
+Consulter le document numérisé [https://gallica.bnf.fr/ark:/12148/btv1b90612889]" and "Document de substitution : MF 34550".
+Gallica SRU cross-check: `dc.title all "Dépouillement numérique Harlay"` -> 2 records only, fr.17019 (btv1b90612800, mss
+221-232) and fr.17021 (btv1b9061613z, mss 249-308); `gallica all "17020" and dc.type all "manuscrit"` -> 11 records, none
+of them fr.17020 (they are volumes whose descriptions cite their dépouillement in fr.17020, e.g. fr.16141: "Un dépouillement
+détaillé de ce volume se trouve dans le ms. français 17020, f. 367-371"). fr.16144 = Harlay 248 (4) falls in mss 233-248, so
+it is fr.17020 and not either digitised neighbour.
+Inferred, not checked (I): the series is an inventory of Harlay's own volumes, so ff.372-382 most likely itemise fr.16142-16145
+themselves (as ff.367-371 do fr.16141) rather than point to an original held elsewhere.
+**Not found / not read:** ff.372-382 (no image route). Not attempted: a reproduction order for ff.372-382 (BnF copy service --
+an owner-side step), Boucher's Lettres de Henri III 1587-88, recipient-side papers.
+Requests: gallica.bnf.fr 4 (SRU only, all 200); archivesetmanuscrits.bnf.fr 5 (home, 2 searches, 2 records, all 200),
+>= 2 s apart. No subagent calls, no images, no transcription, no decode.
+
+## Remaining gaps (finish-or-blocker pass, 4 Oct 2026, RUN2-SAV)
+Read so far: 0 of ~5,000 open signs (L25 only; L14 is known glossed); Tomokiyo's table matched to piles as proposals (25 high).
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply (publish sorter/index.html and file the ASKS row, flagged in ROOM.md 3 Oct 2026); tomokiyo_pile_match.tsv is ready as focus hints for it
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: not-attempted; test 0 needs named signs; next: table recovery by aligning the c380 margin gloss (and L14's c251-252 gloss) to segmented boxes, seeded by Tomokiyo's table as a hypothesis with the shuffled-table control, ~$9
+- the duplicata's original (fr.17020 ff.372-382 inventory) - blocker: needs-physical-access; fr.17020 is not digitised and has no microfilm substitute (catalogue record ark:/12148/cc467473/cd0e233, flag "Document original ... Réserver" only; RUN2-SAV section above); a BnF reproduction order for ff.372-382 is the owner-side route
+
+## Escalation (4 Oct 2026, RUN2-SAV)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv); L14 c251-252 seen glossed (30 Apr 1586)
+- [x] clear-pages: c380 and c251-252 margin glosses located, not transcribed
+- [x] known-keys: Tomokiyo's 1588 table fetched and matched to the 120 piles as proposals (tomokiyo_pile_match.tsv); not applied
+- [x] print: Charrière IV whole volume grepped (no 1587 letter); Boucher's Lettres de Henri III 1587-88 not read
+- [ ] key-rebuild: test 0 not run (needs named signs); next: gloss-to-box alignment seeded by Tomokiyo's table, with control, ~$9
+- [x] image-check: c370-c375, c380 native; c251-252 at 1000 px; fr.17020 catalogue record read, not digitised (RUN2-SAV)
+- [n/a] retry: no host failed
+Verdict: keep going: 1 internal gap; cheapest next: test 0 seeded by the Tomokiyo match once the sort is done (or with the table as a hypothesis), ~$9
+gaps_check (RUN2-SAV): `OK keep-going fr16144-savary-lancosme-1588: keep going: 1 internal gap(s), 1 step(s) untried`
