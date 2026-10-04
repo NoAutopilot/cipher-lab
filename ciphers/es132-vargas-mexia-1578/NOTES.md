@@ -56,7 +56,7 @@ Requests by host: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2 (one br
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, refreshed 4 Oct 2026 A3V2-ES132C4)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
-- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due** - blocker: not-attempted; the unprinted text is M only with 113 '?' tokens on the f.89 letter and no err_true measure on this hand; next: transcribe the duplicate copy f.93-96 of the 19 Sept letter (Tomokiyo TOC no.42, BnF record "En chiffre", DECODE 1980; canvases to be located with gallica_folio.py) in 2 blind passes + reconciliation and diff it token by token against f.89r-f.91r -- a duplicate ciphertext of one plaintext measures true reader error and settles the '?' tokens without eye arbitration, ~$8
+- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due**. The duplicate copy f.93r-f.95r is now transcribed and aligned (A3V3-ES9396, 4 Oct 2026, section below): 83 of the 113 '?' tokens meet an unflagged duplicate token (29 confirm, 54 proposals in `dup_settlements.tsv`, not applied) - blocker: not-attempted; next: a rule-7 job that settles the 54 proposals from the images of both copies (each proposal is a two-crop look; the A3V3-ES9396 sample showed many 'base' differences are the clerk's re-encipherment, not reader error, so a proposal is applied only where the f.89 image itself supports it), regenerates the readings and re-runs test2/RD7 --check, ~$4
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
 - About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; keys published, Gallica images answer, cabinet-noir may reach them first; next: re-check its git log, pick letters outside its list, ~$6 per 5 letters
 - 3 open Cipher 4 (Perez) letters f.87, 157, 179 (f.136/148 probably clear per the BnF record) - blocker: not-attempted; table now on disk (sources/cryptiana/web/spanish3vargas4.png, A3V2-ES132C4 4 Oct 2026) and cabinet-noir's code hypotheses cited, but cabinet-noir's own cle/ file shows it has already transcribed and partly read all three (contexts from f.87r/v, f.157r, f.179v-180r), so a reading here would likely duplicate theirs; next: re-check cabinet-noir's git log for f087/f157/f179 folders before any work, then (only if still absent) build key.tsv from the PNG and read f.87 (2 blind passes + reconciliation on line crops), ~$4
@@ -70,7 +70,7 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [x] retry: catalogue record fetched (curl + browser UA, 200; digitised, Gallica btv1b10032556x, MF 8506) and the three blog threads opened (A3V2-ES132C4, 4 Oct 2026): no reading claim found
-Verdict: keep going: 5 internal gaps; cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); next the f.93-96 duplicate transcription (~$8) to measure err_true and settle the '?' tokens
+Verdict: keep going: 5 internal gaps; cheapest next: the cabinet-noir git-log re-check before any Cipher 4 or Cipher 3 work (~$0.3), then the BL Add MS 28421 catalogue lookup for the scout (~$0.5); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings, 83/113 '?' tokens met); next the rule-7 settlement job on dup_settlements.tsv (~$4)
 
 ## While waiting
 Nothing waits on a person: the rule-7 re-derivation and print check of the f.89/f.119 letters are done (A3V2-ES7, 4 Oct 2026, RD7-2026-10-04.md); the action that depends on nobody is now the verifier audit of those readings, then the next open Cipher 3 letters outside cabinet-noir's list.
@@ -292,3 +292,66 @@ What the 30 hit rows are (`print-check.tsv`, read row by row; 3 further be-api s
 - ia-global no hits: "andamientos y pretension", "circunstancias que a esto tocan", "prohibir de veras y castigar con rigor", "se ha dado en esa villa a las predicas", "se han atrevido a introduzir", "con las palabras que me parescio convenir". Gachard and Mignet djvu texts: no hits on any phrase. OpenAlex: only "don Sancho de Leyva" (18 works about the person). CrossRef: relevance noise only. Semantic Scholar: 2 phrases answered (noise), then 429 (keyed; its 1 request/s pool), 10 phrases not searched. Google Books: "lo que toca a la navegacion de las indias" not searched (HTTP 503).
 These are search results on this date by this method, not a novelty verdict (rule 10); the verifier's families (b)-(g) are still owed. Not found: any print of the unprinted paragraphs' wording by this method.
 Requests: archive.org 3 (djvu downloads; Teulet 500), be-api.us.archive.org 27 (24 by the tool + 3 snippet calls), www.googleapis.com 12 (keyed, country=US), api.openalex.org 12 (keyed), api.semanticscholar.org 3 (keyed, 429 after 2), api.crossref.org 12; gallica.bnf.fr 0. Subagent calls: 0. No credentials printed.
+
+## Duplicate copy f.93r-f.95r (A3V3-ES9396, account 3, 4 Oct 2026, 06:12-06:2x UTC by the container clock)
+Brief: `.claude/briefs/runs/2026-10-04-acct3-a3v3-wave1.md` section A3V3-ES9396. Reading and key unchanged.
+
+**Where it is.** `tools/gallica_folio.py btv1b10032556x --anchor 86=89r --anchor 116=119r --anchor 166=169r --anchor 174=177r` (all
+labels 'NP'; fit canvas = folio - 3, residuals 0); canvases 90-93 viewed at 1200 px. The duplicate is f.93r (canvas 90 right, headed
+"El Rey" / "Juan de Vargas Mexia"), f.93v (91 left), f.94r (91 right), f.94v (92 left), f.95r (92 right, ends "De Madrid a XIX de
+Septiembre 1578" with the king's and Çayas's signatures); f.95v/f.96r carry only show-through and the seal, f.96v blank, f.92v is the
+f.89 letter's address leaf. 5 cipher pages, 113 lines. Unlike f.89r, the duplicate enciphers the clear opening: f.93r L01-L03 (about
+30 tokens) are a cipher text of f.89r L01's clear "de 26, y a los 15 deste las de cinco y seis del mismo" (a known-plaintext stretch,
+not used here).
+
+**Crops (pasted commands; overlays checked, every red centre on its line; crops kept in the session scratchpad, not committed, to keep
+images/ under 30 MB -- regenerate with the same commands; overlays and crop manifest in images/dup93/):**
+```
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 90 --region 3300,1200,3100,3600 --out <dir> --prefix f93r --follow-slope 300 --slope-margin 40 --debug   # 23 lines
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 91 --region 550,880,2750,3950 --out <dir> --prefix f93v --follow-slope 300 --slope-margin 40 --debug    # 25 lines, right edge at the gutter
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 91 --region 3450,850,2900,3900 --out <dir> --prefix f94r --follow-slope 300 --slope-margin 40 --debug   # 25 lines
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 92 --region 550,850,2750,3900 --out <dir> --prefix f94v --follow-slope 300 --slope-margin 40 --debug    # 25 lines, gutter
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 92 --region 3650,280,2800,2200 --out <dir> --prefix f95r --follow-slope 300 --slope-margin 40 --debug   # 15 lines (L15 = clear date)
+```
+**Passes.** Two blind Sonnet passes per page (10 calls; prompts `run2/pass_prompt_f9*.md` = the f.89r prompt with its tilde/rmark
+amendment folded in; `passes/f9*_passA/B.tsv`). Two-reader disagreement after `test2.load_pass` (`run2/dup_spans.py`): f.93r 45/436
+(10.3%), f.93v 54/442 (12.2%), f.94r 63/446 (14.1%), f.94v 63/428 (14.7%), f.95r 44/311 (14.1%). Reconciled by `run2/reconcile_dup.py
+<page>` with `run2/decisions_<page>.tsv` (span decisions from the overlays and crops f93r_L13_s1, f93v_L01_s1, f94r_L21_s1, made without
+looking at the f.89 tokens for the span; rules: looped tail = ρ, the small r-shaped hook = @r, a cross read as a digit = '+', and one
+declared mechanical rule <n>0ρ -> <n>ρ when <n>0 is not a Cp.30 base, 12 tokens). Output `ciphertext_f93r/f93v/f94r/f94v/f95r.tsv`:
+2,046 tokens, 159 flagged '?'.
+
+**Alignment** (`align_dup.py`, `--check` exits 1 if stale; outputs `dup_align.tsv`, `dup_settlements.tsv`, `dup_align_summary.json`).
+Needleman-Wunsch over tokens (exact 4, same decoded text 2, same number 1, else -2, gap -3), free end gaps on the f.89 side. The whole
+duplicate aligns to the whole f.89 letter, f.89r L01 tok 15 (after the clear opening) to f.91r L07 tok 14: matched span = the entire
+letter, 1,927 f.89 tokens vs 2,039 duplicate tokens; 1,836 aligned pairs, 292 one-sided (203 duplicate-only, 89 f.89-only).
+On the 1,578 pairs with neither token flagged '?':
+
+| class | n | share |
+|---|---|---|
+| same token | 1,177 | 74.6% |
+| copy variant (different token, same decoded text) | 68 | 4.3% |
+| notation (declared reading convention: dup 14/14+/14. = f.89 12+/12.; 0 = 18; Q/R cursive capitals) | 34 | 2.2% |
+| differ, marks only | 76 | 4.8% |
+| differ, vowel sign | 53 | 3.4% |
+| differ, number/word | 170 | 10.8% |
+
+Token-level disagreement 299/1,578 = 18.9% (marks excluded: 223/1,578 = 14.1%). This is NOT err_true: it sums the f.89 reading's
+errors, the duplicate reading's errors, and the clerk's own copy variants that do not decode identically token by token. The image
+sample (one window, f.89v L15 vs f.93v L19, both crops viewed): every one of its 5 'differ' pairs is supported by its own image -- f.89
+has 12(cross above) 8 where the duplicate spells 35_+ 24σ 7+@s, and 28+ where the duplicate has y 10 (same letters, split
+differently) -- i.e. clerk re-encipherment, not reader error. So the token rate is an upper bound.
+**Letter-level estimate.** Between anchor pairs (same/variant/notation), the decoded letters of both sides were compared (387 windows;
+247 skipped because a side holds a code word, a '?' or an undecodable token): 139 windows differ, 252 letter edits over 2,697 + 401
+letters = **8.1% letter disagreement (N = 3,098 letters)**, both readings and clerk spelling together; if the two readings are equally
+reliable, about **4% per reading (err_true, this hand, letter level, upper bound)**. The token-level per-reading equivalents are 9.5%
+(all) and 7.1% (number+vowel), also upper bounds. The skipped code-bearing windows are not measured.
+
+**The 113 '?' tokens** (unprinted pages f.89r, f.89v, f.90r, f.91r; all inside the matched span): 83 meet an unflagged duplicate token,
+30 do not (dup token also flagged, or a gap). Of the 83: 29 confirm the f.89 '?' token exactly; 54 differ (14 marks only, 12 vowel
+sign, 28 number/word) and are written as proposals in `dup_settlements.tsv` (plus 36 rows for f.90v, Teulet's page, marked
+'teulet-f90v'). Given the image sample above, a proposal is a pointer to two crops to compare, not a settlement: the rule-7 job applies
+one only where the f.89 image itself supports the duplicate's token.
+
+Requests: gallica.bnf.fr 11 (6 x 1200 px canvases 89-94, 5 native regions). Subagent calls: 10 Sonnet (blind passes); reconciliation
+and alignment by this worker. No credentials used. Report only; no novelty classification.

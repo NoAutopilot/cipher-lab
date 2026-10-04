@@ -1,0 +1,55 @@
+# decisions (line, A start, decision) -- A3V3-ES9396, 4 Oct 2026, from the 1600 px overlay and crops f93v_L01_s1, f94r_L21_s1 (rules: looped tail = rho; small r-shaped hook = @r; 70rho/150rho etc. = 7rho/15rho; 74/141/201/231 = 7+/14+/20+/23+ (cross read as a digit); a = {a}); unsettled spans flagged
+L01	3	B
+L01	11	B
+L02	4	B
+L02	6	A?
+L02	11	B
+L02	14	16ρ 4@n? 20+?
+L03	8	B
+L04	5	A?
+L04	11	A?
+L05	5	A?
+L05	16	B
+L06	4	A?
+L06	6	B
+L06	9	A?
+L06	12	B
+L06	14	B
+L06	17	B
+L07	9	B
+L07	14	A?
+L08	11	A?
+L08	18	B
+L09	7	B
+L10	1	
+L10	11	B
+L10	13	B
+L10	17	B
+L12	9	A?
+L12	17	B
+L13	8	B
+L13	10	A?
+L13	17	A?
+L14	1	B
+L15	5	B
+L16	1	A?
+L16	10	B
+L16	17	A?
+L18	4	A?
+L18	10	B
+L19	7	24.? 7ρ@n
+L20	1	A?
+L21	2	A?
+L21	10	B
+L21	14	A?
+L22	12	B?
+L22	15	16+@s? 7ρ@n 25.
+L23	3	B
+L23	9	B?
+L24	5	B
+L24	7	B
+L24	10	B
+L24	18	A?
+L25	3	B
+L25	10	B
+L25	18	A

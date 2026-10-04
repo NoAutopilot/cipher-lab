@@ -1,0 +1,2129 @@
+# align_dup.py (A3V3-ES9396): f89_pos f89_tok f89_text dup_pos dup_tok dup_text class
+-	-		f93r:L01:1	dρ	do	gap
+-	-		f93r:L01:2	V		gap
+-	-		f93r:L01:3	Mρ		gap
+-	-		f93r:L01:5	{B}		gap
+-	-		f93r:L01:6	10	a	gap
+-	-		f93r:L01:7	2@m	fm	gap
+-	-		f93r:L01:8	6.@l	del	gap
+-	-		f93r:L01:9	35.	pre	gap
+-	-		f93r:L01:10	23.@n	sen	gap
+-	-		f93r:L01:11	24.	te	gap
+-	-		f93r:L01:12	23.	se	gap
+-	-		f93r:L01:13	22.	re	gap
+-	-		f93r:L01:14	7σ	ci	gap
+-	-		f93r:L01:15	8σ	bi	gap
+-	-		f93r:L01:16	4	e	gap
+-	-		f93r:L01:17	22ρ@n	ron	gap
+-	-		f93r:L02:1	13.@n	ien	gap
+-	-		f93r:L02:2	24+@s	tas	gap
+-	-		f93r:L02:3	5@m		gap
+-	-		f93r:L02:4	91@s		gap
+-	-		f93r:L02:5	144+@s		gap
+-	-		f93r:L02:6	6.	de	gap
+-	-		f93r:L02:7	17.@m	nem	gap
+-	-		f93r:L02:8	19.@m	oem	gap
+-	-		f93r:L02:9	20@m	pm	gap
+-	-		f93r:L02:10	23.@m	sem	gap
+-	-		f93r:L02:11	24@m?	tm	gap
+-	-		f93r:L02:12	6.	de	gap
+-	-		f93r:L02:13	10	a	gap
+-	-		f93r:L02:14	16+@s	mas	gap
+-	-		f93r:L02:15	24ρ	to	gap
+-	-		f93r:L02:16	28	y	gap
+-	-		f93r:L02:17	6.	de	gap
+-	-		f93r:L02:18	4σ	ei	gap
+-	-		f93r:L03:1	10	a	gap
+-	-		f93r:L03:2	2@m	fm	gap
+-	-		f93r:L03:3	6σ	di	gap
+-	-		f93r:L03:4	10@s	as	gap
+-	-		f93r:L03:5	15+	la	gap
+-	-		f93r:L03:6	6.	de	gap
+-	-		f93r:L03:7	26@m	um	gap
+-	-		f93r:L03:8	y	y	gap
+-	-		f93r:L03:9	10	a	gap
+-	-		f93r:L03:10	15ρ?	lo	gap
+-	-		f93r:L03:11	5@s?		gap
+-	-		f93r:L03:12	6.	de	gap
+-	-		f93r:L03:13	24.	te	gap
+-	-		f93r:L03:14	15+?	la	gap
+-	-		f93r:L03:15	6.	de	gap
+-	-		f93r:L03:16	5@m		gap
+-	-		f93r:L03:17	y	y	gap
+-	-		f93r:L03:18	6@m	dm	gap
+-	-		f93r:L03:19	6.@l	del	gap
+f89r:L01:15	{Lum}		f93r:L03:20	{Lum}		same
+f89r:L01:16	21.	que	f93r:L04:1	21.	que	same
+f89r:L01:17	24ρ?	to	f93r:L04:2	24ρ	to	same
+f89r:L02:1	6+@s	das	f93r:L04:3	6+@s	das	same
+f89r:L02:2	7ρ@n	con	f93r:L04:4	7ρ@n	con	same
+f89r:L02:3	24σ	ti	f93r:L04:5	24σ	ti	same
+f89r:L02:4	3	e	f93r:L04:6	4	e	variant
+f89r:L02:5	17.@n?	nen	f93r:L04:7	17.@n	nen	same
+-	-		f93r:L04:8	20+@r	par	gap
+-	-		f93r:L04:9	24σ	ti	gap
+-	-		f93r:L04:10	7+	ca	gap
+f89r:L02:6	1?		f93r:L04:11	15+	la	differ-base
+f89r:L02:7	13	i	f93r:L04:12	22σ	ri	differ-base
+f89r:L02:8	6+	da	f93r:L04:13	6+	da	same
+f89r:L02:9	6.@s?	des	f93r:L04:14	6.	de	differ-mark
+f89r:L02:10	21.	que	f93r:L04:15	21.	que	same
+f89r:L02:11	2⊣	fu	f93r:L04:16	2+	fa	differ-vowel
+f89r:L02:12	3	e	f93r:L04:17	4	e	variant
+f89r:L02:13	8σ	bi	f93r:L04:18	8σ	bi	same
+f89r:L02:14	4@n	en	f93r:L04:19	4@n	en	same
+f89r:L02:15	4@s	es	f93r:L05:1	3@s	es	variant
+f89r:L02:16	31σ	cri	f93r:L05:2	31σ	cri	same
+f89r:L02:17	25σ@r	uir	f93r:L05:3	25σ@r	uir	same
+f89r:L02:18	16.	me	f93r:L05:4	16.	me	same
+f89r:L02:19	15+@s?	las	f93r:L05:5	15+@s	las	same
+f89r:L02:20	y	y	f93r:L05:6	28	y	variant
+f89r:L02:21	23.	se	f93r:L05:7	23.	se	same
+f89r:L02:22	17+@2?	na	f93r:L05:8	17+@l	nal	differ-mark
+f89r:L02:23	15+	la	f93r:L05:9	15+	la	same
+f89r:L02:24	6+	da	f93r:L05:10	6+	da	same
+-	-		f93r:L05:11	16.@n	men	gap
+f89r:L03:1	{Sim}?		f93r:L05:12	24.	te	differ-base
+f89r:L03:2	15+@s?	las	f93r:L05:13	15+?	la	differ-mark
+f89r:L03:3	21.	que	f93r:L05:14	21.	que	same
+f89r:L03:4	24ρ	to	f93r:L05:15	24ρ	to	same
+f89r:L03:5	7+@n	can	f93r:L05:16	7+@n?	can	same
+f89r:L03:6	10	a	f93r:L05:17	16@l	ml	differ-base
+f89r:L03:7	{Ja}		f93r:L05:18	{ta}?		differ-base
+f89r:L03:8	6.	de	f93r:L05:19	6.	de	same
+f89r:L03:9	10	a	f93r:L05:20	10	a	same
+f89r:L03:10	15+@n	lan	f93r:L06:1	15+@n	lan	same
+f89r:L03:11	7ρ@n	con	f93r:L06:2	7ρ@n	con	same
+f89r:L03:12	y	y	f93r:L06:3	y	y	same
+f89r:L03:13	10	a	f93r:L06:4	10	a	same
+f89r:L03:14	15+	la	f93r:L06:5	15+	la	same
+f89r:L03:15	{ril}		-	-		gap
+f89r:L03:16	21.	que	f93r:L06:6	{xil}		differ-base
+f89r:L03:17	6.	de	f93r:L06:7	6.	de	same
+f89r:L03:18	23.	se	f93r:L06:8	23.	se	same
+f89r:L03:19	68		f93r:L06:9	68		same
+f89r:L03:20	15.	le	f93r:L06:10	15.	le	same
+f89r:L03:21	12+	ha	f93r:L06:11	14	i	notation
+f89r:L03:22	y	y	f93r:L06:12	y+	ya	notation
+f89r:L03:23	6ρ?	do	f93r:L06:13	{a}		differ-base
+f89r:L04:1	10	a	f93r:L06:14	10?	a	same
+f89r:L04:2	{a}		f93r:L06:15	3@m?	em	differ-base
+f89r:L04:3	23σ@2	si	f93r:L06:16	23σ@m?	sim	differ-mark
+f89r:L04:4	24σ@r	tir	f93r:L06:17	24σ@r	tir	same
+f89r:L04:5	28	y	f93r:L06:18	28	y	same
+f89r:L04:6	7σ@r	cir	f93r:L06:19	7σ@m?	cim	differ-mark
+f89r:L04:7	7⊣	cu	f93r:L06:20	7+@n	can	differ-vowel
+f89r:L04:8	8	b	-	-		gap
+f89r:L04:9	24+@n	tan	f93r:L06:21	24+@n	tan	same
+f89r:L04:10	7σ	ci	f93r:L07:1	7σ	ci	same
+f89r:L04:11	10@s	as	f93r:L07:2	10@s	as	same
+f89r:L04:12	21.	que	f93r:L07:3	21.	que	same
+f89r:L04:13	10	a	f93r:L07:4	10	a	same
+f89r:L04:14	4@s	es	f93r:L07:5	4@s	es	same
+f89r:L04:15	24ρ	to	-	-		gap
+f89r:L04:16	24ρ	to	f93r:L07:6	24ρ	to	same
+f89r:L04:17	24ρ	to	f93r:L07:7	24ρ	to	same
+f89r:L04:18	7+@n	can	f93r:L07:8	7+@n	can	same
+f89r:L04:19	28	y	f93r:L07:9	y	y	variant
+f89r:L04:20	{Ra}		-	-		gap
+f89r:L04:21	23	s	f93r:L07:10	{vim}		differ-base
+f89r:L04:22	4+@n	ean	f93r:L07:11	{Ra}@s		differ-base
+f89r:L05:1	21.	que	f93r:L07:12	21.	que	same
+f89r:L05:2	23.	se	f93r:L07:13	23.	se	same
+f89r:L05:3	12+	ha	f93r:L07:14	12+	ha	same
+f89r:L05:4	25σ	ui	f93r:L07:15	25σ	ui	same
+f89r:L05:5	10@n	an	f93r:L07:16	10@n	an	same
+f89r:L05:6	12.	he	f93r:L07:17	14.	ie	notation
+f89r:L05:7	7ρ	co	f93r:L07:18	7ρ	co	same
+f89r:L05:8	10ρ@r?	aor	f93r:L08:1	20ρ@r	por	differ-base
+f89r:L05:9	4ρ@l	eol	f93r:L08:2	4.@l?	eel	differ-vowel
+f89r:L05:10	10@r	ar	f93r:L08:3	10@r	ar	same
+f89r:L05:11	7ρ	co	f93r:L08:4	7ρ?	co	same
+f89r:L05:12	8σ@s	bis	f93r:L08:5	8σ@s	bis	same
+f89r:L05:13	20ρ	po	f93r:L08:6	20ρ	po	same
+f89r:L05:14	6.	de	f93r:L08:7	6.	de	same
+f89r:L05:15	17+	na	f93r:L08:8	17+	na	same
+f89r:L05:16	29+	za	f93r:L08:9	29+	za	same
+f89r:L05:17	22.	re	f93r:L08:10	22.	re	same
+-	-		f93r:L08:11	28	y	gap
+f89r:L05:18	{Bul}		f93r:L08:12	{Bul}		same
+f89r:L05:19	4@s?	es	-	-		gap
+f89r:L06:1	6.	de	f93r:L08:13	6.	de	same
+f89r:L06:2	13+?	ia	f93r:L08:14	131		differ-base
+f89r:L06:3	y	y	f93r:L08:15	y	y	same
+-	-		f93r:L08:16	23+	sa	gap
+-	-		f93r:L08:17	8ρ	bo	gap
+f89r:L06:4	74+?		f93r:L08:18	28+	ya	differ-base
+f89r:L06:5	y	y	f93r:L09:1	28	y	variant
+f89r:L06:6	15ρ	lo	f93r:L09:2	15ρ	lo	same
+f89r:L06:7	21.	que	f93r:L09:3	21.	que	same
+f89r:L06:8	25ρ@s	uos	f93r:L09:4	25ρ@s	uos	same
+f89r:L06:9	12+	ha	f93r:L09:5	12+	ha	same
+f89r:L06:10	30+	bra	f93r:L09:6	30+@s	bras	differ-mark
+f89r:L06:11	24.@s	tes	f93r:L09:7	24.@s	tes	same
+f89r:L06:12	10@l	al	f93r:L09:8	16	m	differ-base
+f89r:L06:13	6σ	di	f93r:L09:9	6σ	di	same
+f89r:L06:14	28	y	f93r:L09:10	y	y	variant
+f89r:L06:15	20?	p	f93r:L09:11	10	a	differ-base
+f89r:L06:16	23σ?	si	f93r:L09:12	231		differ-base
+f89r:L06:17	16+	ma	f93r:L09:13	16+	ma	same
+f89r:L06:18	32.	dre	f93r:L09:14	32.	dre	same
+f89r:L06:19	21.	que	f93r:L09:15	21.	que	same
+f89r:L06:20	8+?	ba	-	-		gap
+f89r:L07:1	2⊣	fu	-	-		gap
+f89r:L07:2	3	e	f93r:L09:16	214?		differ-base
+f89r:L07:3	15ρ	lo	f93r:L09:17	15ρ	lo	same
+f89r:L07:4	21.	que	-	-		gap
+f89r:L07:5	7ρ@n	con	f93r:L10:1	7ρ@n	con	same
+f89r:L07:6	25.	ue	f93r:L10:2	25.	ue	same
+f89r:L07:7	17σ	ni	f93r:L10:3	17σ	ni	same
+f89r:L07:8	10	a	f93r:L10:4	10	a	same
+f89r:L07:9	28	y	f93r:L10:5	28	y	same
+f89r:L07:10	15ρ	lo	f93r:L10:6	15ρ	lo	same
+f89r:L07:11	21.	que	f93r:L10:7	21.	que	same
+f89r:L07:12	22.@s	res	f93r:L10:8	22.@s	res	same
+f89r:L07:13	20ρ@n	pon	f93r:L10:9	20ρ@n	pon	same
+f89r:L07:14	6.@n?	den	f93r:L10:10	6.@n	den	same
+f89r:L07:15	21.	que	f93r:L10:11	21.	que	same
+f89r:L07:16	24ρ	to	f93r:L10:12	24ρ	to	same
+f89r:L07:17	6ρ	do	f93r:L10:13	6ρ	do	same
+f89r:L07:18	25σ	ui	f93r:L10:14	25σ	ui	same
+f89r:L07:19	3	e	f93r:L10:15	4	e	variant
+f89r:L07:20	17.	ne	f93r:L10:16	17.	ne	same
+f89r:L08:1	10	a	f93r:L10:17	10	a	same
+f89r:L08:2	20+	pa	f93r:L10:18	20+	pa	same
+f89r:L08:3	22+@m?	ram	f93r:L10:19	22+@r	rar	differ-mark
+f89r:L08:4	4@n	en	f93r:L11:1	4@n	en	same
+-	-		f93r:L11:2	6.	de	gap
+-	-		f93r:L11:3	16ρ@s	mos	gap
+-	-		f93r:L11:4	36+	tra	gap
+-	-		f93r:L11:5	7σ	ci	gap
+f89r:L08:5	110?		f93r:L11:6	0		differ-base
+f89r:L08:6	4@s	es	f93r:L11:7	17.@s	nes	differ-base
+f89r:L08:7	4@s?	es	f93r:L11:8	3	e	differ-base
+f89r:L08:8	24.	te	f93r:L11:9	24.	te	same
+f89r:L08:9	22σ	ri	f93r:L11:10	22σ	ri	same
+f89r:L08:10	18	o	f93r:L11:11	0		notation
+f89r:L08:11	22.@s	res	f93r:L11:12	22.@s	res	same
+f89r:L08:12	y	y	f93r:L11:13	y	y	same
+f89r:L08:13	4@s	es	f93r:L11:14	4@s	es	same
+f89r:L08:14	7σ?	ci	f93r:L11:15	2+?	fa	differ-base
+f89r:L08:15	23+@s?	sas	f93r:L11:16	23+?	sa	differ-mark
+f89r:L08:16	10	a	f93r:L11:17	10	a	same
+f89r:L08:17	20+	pa	f93r:L11:18	20+	pa	same
+f89r:L08:18	22.@n?	ren	f93r:L11:19	22.@n	ren	same
+f89r:L08:19	4@r	er	-	-		gap
+f89r:L09:1	24.@s	tes	f93r:L11:20	24.@s	tes	same
+f89r:L09:2	10	a	f93r:L12:1	{a}		notation
+f89r:L09:3	36σ	tri	f93r:L12:2	36σ	tri	same
+f89r:L09:4	8⊣	bu	f93r:L12:3	8+	ba	differ-vowel
+f89r:L09:5	28.@n	yen	f93r:L12:4	28.@l	yel	differ-mark
+f89r:L09:6	6ρ	do	f93r:L12:5	6ρ	do	same
+f89r:L09:7	10	a	f93r:L12:6	10	a	same
+f89r:L09:8	13?	i	f93r:L12:7	13@l	il	differ-mark
+f89r:L09:9	20ρ	po	f93r:L12:8	20ρ	po	same
+f89r:L09:10	23σ@2	si	f93r:L12:9	23σ	si	variant
+-	-		f93r:L12:10	6@m?	dm	gap
+f89r:L09:11	88		f93r:L12:11	8σ	bi	differ-base
+f89r:L09:12	15σ	li	f93r:L12:12	15σ	li	same
+f89r:L09:13	6+	da	f93r:L12:13	6+	da	same
+f89r:L09:14	{d}		-	-		gap
+f89r:L09:15	15ρ	lo	f93r:L12:14	15ρ	lo	same
+f89r:L09:16	21.	que	f93r:L12:15	21.	que	same
+f89r:L09:17	6.	de	f93r:L12:16	6.	de	same
+f89r:L09:18	27+@r?	xar	f93r:L12:17	27+@n	xan	differ-mark
+f89r:L09:19	4.?	ee	-	-		gap
+f89r:L10:1	6.	de	f93r:L12:18	6.	de	same
+f89r:L10:2	12+	ha	f93r:L13:1	12+	ha	same
+f89r:L10:3	29.@r	zer	f93r:L13:2	29.@r	zer	same
+f89r:L10:4	23σ	si	f93r:L13:3	23σ	si	same
+f89r:L10:5	4@n	en	f93r:L13:4	4@n	en	same
+f89r:L10:6	6ρ	do	f93r:L13:5	6ρ	do	same
+f89r:L10:7	{Lo}		f93r:L13:6	6?	d	differ-base
+f89r:L10:8	3+	ea	f93r:L13:7	31+	cra	differ-base
+f89r:L10:9	22+	ra	f93r:L13:8	22+	ra	same
+f89r:L10:10	21.	que	f93r:L13:9	21.	que	same
+f89r:L10:11	23σ	si	f93r:L13:10	23σ	si	same
+f89r:L10:12	24σ	ti	f93r:L13:11	21σ	qui	differ-base
+f89r:L10:13	23σ	si	f93r:L13:12	23σ	si	same
+f89r:L10:14	3	e	f93r:L13:13	4	e	variant
+f89r:L10:15	23	s	f93r:L13:14	23.@n	sen	differ-vowel
+f89r:L10:16	35ρ	pro	f93r:L13:15	35ρ	pro	same
+f89r:L10:17	12σ	hi	f93r:L13:16	12σ	hi	same
+f89r:L10:18	8σ@r	bir	f93r:L13:17	8σ@r	bir	same
+f89r:L11:1	6.	de	f93r:L13:18	6.	de	same
+f89r:L11:2	25.	ue	f93r:L14:1	25.?	ue	same
+f89r:L11:3	22+@s	ras	f93r:L14:2	22+@s?	ras	same
+f89r:L11:4	y	y	f93r:L14:3	y	y	same
+f89r:L11:5	7+@s	cas	f93r:L14:4	7+@s	cas	same
+f89r:L11:6	24σ	ti	f93r:L14:5	24σ	ti	same
+f89r:L11:7	11+@r	gar	f93r:L14:6	11+@r	gar	same
+f89r:L11:8	7ρ@n	con	f93r:L14:7	7ρ@n	con	same
+f89r:L11:9	22σ	ri	f93r:L14:8	22σ	ri	same
+f89r:L11:10	11ρ@r	gor	f93r:L14:9	11ρ@r?	gor	same
+-	-		f93r:L14:10	10	a	gap
+f89r:L11:11	15ρ	lo	f93r:L14:11	15ρ@s	los	differ-mark
+f89r:L11:12	21.	que	f93r:L14:12	21.	que	same
+f89r:L11:13	25+	ua	f93r:L14:13	25+@n	uan	differ-mark
+f89r:L11:14	10	a	f93r:L14:14	10	a	same
+f89r:L11:15	{mil}		f93r:L14:15	{mil}		same
+f89r:L11:16	11ρ	go	f93r:L14:16	15ρ	lo	differ-base
+f89r:L11:17	20ρ	po	f93r:L14:17	20ρ	po	same
+f89r:L12:1	32σ?	dri	f93r:L14:18	32σ	dri	same
+f89r:L12:2	10@n	an	f93r:L15:1	10@n	an	same
+f89r:L12:3	12+	ha	f93r:L15:2	12+	ha	same
+f89r:L12:4	29.@r	zer	f93r:L15:3	29.@r	zer	same
+f89r:L12:5	23σ	si	f93r:L15:4	23σ@n	sin	differ-mark
+f89r:L12:6	{pam}+		f93r:L15:5	{pam+}		same
+f89r:L12:7	{qui}		f93r:L15:6	{que}		differ-base
+f89r:L12:8	28.@n	yen	f93r:L15:7	28.@n	yen	same
+f89r:L12:9	6ρ	do	f93r:L15:8	6ρ	do	same
+f89r:L12:10	{de}@n		f93r:L15:9	{de}		differ-base
+f89r:L12:11	25+@n	uan	f93r:L15:10	25+@n	uan	same
+f89r:L12:12	10	a	f93r:L15:11	10	a	same
+f89r:L12:13	15+	la	f93r:L15:12	15+	la	same
+f89r:L12:14	6.@s	des	f93r:L15:13	6.@s	des	same
+f89r:L12:15	28?	y	f93r:L15:14	26	u	differ-base
+f89r:L12:16	15+	la	f93r:L15:15	15+	la	same
+f89r:L12:17	6+	da	f93r:L15:16	6+	da	same
+f89r:L13:1	y	y	f93r:L15:17	y	y	same
+f89r:L13:2	4@n	en	f93r:L16:1	4@n	en	same
+f89r:L13:3	1@s		f93r:L16:2	3@s	es	differ-base
+f89r:L13:4	24ρ	to	f93r:L16:3	24ρ	to	same
+f89r:L13:5	12+	ha	f93r:L16:4	14	i	notation
+f89r:L13:6	25.	ue	f93r:L16:5	25.	ue	same
+f89r:L13:7	13@s	is	f93r:L16:6	13@m	im	differ-mark
+f89r:L13:8	6.	de	f93r:L16:7	6.	de	same
+f89r:L13:9	13@n	in	f93r:L16:8	13@n	in	same
+f89r:L13:10	23σ@s	sis	f93r:L16:9	23σ	si	differ-mark
+f89r:L13:11	24σ@r	tir	f93r:L16:10	24σ@r	tir	same
+f89r:L13:12	92		f93r:L16:11	92		same
+f89r:L13:13	21.	que	f93r:L16:12	21.	que	same
+f89r:L13:14	15ρ	lo	f93r:L16:13	15.@s?	les	differ-vowel
+f89r:L13:15	12+	ha	f93r:L16:14	12+	ha	same
+f89r:L13:16	30+	bra	f93r:L16:15	30+	bra	same
+f89r:L13:17	22.	re	f93r:L16:16	22.	re	same
+f89r:L13:18	6.	de	f93r:L16:17	6.@s	des	differ-mark
+f89r:L13:19	y	y	f93r:L16:18	28	y	variant
+f89r:L14:1	4@n	en	f93r:L16:19	4@n	en	same
+f89r:L14:2	21.	que	f93r:L16:20	21.	que	same
+f89r:L14:3	35ρ	pro	f93r:L17:1	35ρ	pro	same
+f89r:L14:4	7σ?	ci	f93r:L17:2	7+	ca	differ-vowel
+f89r:L14:5	22.@n	ren	f93r:L17:3	22.@n	ren	same
+f89r:L14:6	6.	de	f93r:L17:4	6.	de	same
+f89r:L14:7	22.@2	re	f93r:L17:5	22.	re	variant
+f89r:L14:8	24σ	ti	f93r:L17:6	24σ	ti	same
+f89r:L14:9	22+@r	rar	f93r:L17:7	22+@r	rar	same
+f89r:L14:10	4@l	el	f93r:L17:8	{a}@l		differ-base
+f89r:L14:11	6.	de	f93r:L17:9	6.	de	same
+f89r:L14:12	10	a	f93r:L17:10	10	a	same
+f89r:L14:13	15+	la	f93r:L17:11	25+@n	uan	differ-base
+f89r:L14:14	7ρ@n	con	f93r:L17:12	7ρ@n	con	same
+f89r:L14:15	6.	de	f93r:L17:13	6.	de	same
+f89r:L14:16	25	u	f93r:L17:14	25	u	same
+f89r:L14:17	17+	na	f93r:L17:15	17+	na	same
+f89r:L14:18	{cul}		f93r:L17:16	{cul}		same
+f89r:L15:1	24+@n	tan	f93r:L17:17	24+@n	tan	same
+f89r:L15:2	13@n	in	f93r:L17:18	13	i	differ-mark
+f89r:L15:3	13σ@s?	iis	f93r:L17:19	13+@s	ias	differ-vowel
+f89r:L15:4	24+	ta	f93r:L17:20	24+	ta	same
+f89r:L15:5	y	y	f93r:L18:1	y	y	same
+f89r:L15:6	6.	de	f93r:L18:2	6.	de	same
+f89r:L15:7	24+@n	tan	f93r:L18:3	24+@n	tan	same
+f89r:L15:8	16+@l	mal	f93r:L18:4	16+@l	mal	same
+f89r:L15:9	17ρ@l?	nol	f93r:L18:5	17ρ@l	nol	same
+f89r:L15:10	30.	bre	f93r:L18:6	30.	bre	same
+f89r:L15:11	y	y	f93r:L18:7	28	y	variant
+-	-		f93r:L18:8	10	a	gap
+-	-		f93r:L18:9	25σ	ui	gap
+f89r:L15:12	65+		f93r:L18:10	23+	sa	differ-base
+f89r:L15:13	22.	re	f93r:L18:11	22.	re	same
+f89r:L15:14	13@s?	is	f93r:L18:12	13@s	is	same
+f89r:L15:15	16.	me	f93r:L18:13	16.	me	same
+f89r:L15:16	23σ	si	f93r:L18:14	23σ	si	same
+f89r:L15:17	2⊣	fu	f93r:L18:15	2+?	fa	differ-vowel
+f89r:L15:18	3	e	f93r:L18:16	4.?	ee	differ-base
+f89r:L16:1	6.	de	f93r:L18:17	6.	de	same
+f89r:L16:2	10@l	al	f93r:L18:18	16?	m	differ-base
+f89r:L16:3	11σ?	gi	f93r:L18:19	11+@n	gan	differ-vowel
+f89r:L16:4	35ρ	pro	f93r:L19:1	35ρ	pro	same
+f89r:L16:5	25.	ue	f93r:L19:2	25.	ue	same
+f89r:L16:6	7ρ	co	f93r:L19:3	7ρ	co	same
+f89r:L16:7	15ρ	lo	f93r:L19:4	15ρ	lo	same
+f89r:L16:8	21.	que	f93r:L19:5	21.	que	same
+f89r:L16:9	15.	le	f93r:L19:6	15.	le	same
+f89r:L16:10	4@s	es	f93r:L19:7	3@s	es	variant
+f89r:L16:11	31σ	cri	f93r:L19:8	31σ	cri	same
+f89r:L16:12	25σ	ui	f93r:L19:9	2560		differ-base
+f89r:L16:13	18	o	f93r:L19:10	4.@l?	eel	differ-base
+f89r:L16:14	4@l	el	f93r:L19:11	6σ	di	differ-base
+f89r:L16:15	{qua}_		f93r:L19:12	7ρ	co	differ-base
+f89r:L16:16	6.	de	f93r:L19:13	6.	de	same
+f89r:L16:17	17+	na	f93r:L19:14	17+	na	same
+f89r:L16:18	29+	za	f93r:L19:15	29+	za	same
+f89r:L16:19	22.	re	f93r:L19:16	22.	re	same
+f89r:L16:20	4+	ea	-	-		gap
+f89r:L17:1	7ρ@n	con	f93r:L19:17	7ρ@n	con	same
+f89r:L17:2	7ρ	co	f93r:L19:18	7ρ	co	same
+f89r:L17:3	16σ?	mi	f93r:L19:19	16+	ma	differ-vowel
+f89r:L17:4	17σ	ni	f93r:L20:1	17σ	ni	same
+f89r:L17:5	7+	ca	f93r:L20:2	7+	ca	same
+f89r:L17:6	7σ	ci	f93r:L20:3	7σ	ci	same
+f89r:L17:7	18@n	on	f93r:L20:4	0@n		notation
+f89r:L17:8	y	y	f93r:L20:5	y	y	same
+f89r:L17:9	10	a	f93r:L20:6	10	a	same
+f89r:L17:10	35ρ	pro	f93r:L20:7	35ρ	pro	same
+f89r:L17:11	8+	ba	f93r:L20:8	8+	ba	same
+f89r:L17:12	7σ	ci	f93r:L20:9	7σ	ci	same
+-	-		f93r:L20:10	10@r?	ar	gap
+f89r:L17:13	18@n	on	f93r:L20:11	0@n		notation
+f89r:L17:14	6.@l	del	f93r:L20:12	6.@l	del	same
+f89r:L17:15	6σ	di	f93r:L20:13	6σ	di	same
+f89r:L17:16	21.	que	f93r:L20:14	21.	que	same
+f89r:L17:17	4@n	en	f93r:L20:15	4@n	en	same
+-	-		f93r:L20:16	8+	ba	gap
+-	-		f93r:L20:17	4	e	gap
+f89r:L17:18	79+		f93r:L20:18	17+	na	differ-base
+f89r:L17:19	{nel}		f93r:L20:19	{nel}		same
+f89r:L18:1	y	y	f93r:L20:20	y	y	same
+f89r:L18:2	25+	ua	f93r:L20:21	25+	ua	same
+f89r:L18:3	23.	se	f93r:L21:1	23.	se	same
+f89r:L18:4	11σ?	gi	f93r:L21:2	16+@n	man	differ-base
+f89r:L18:5	15ρ	lo	f93r:L21:3	15ρ	lo	same
+f89r:L18:6	12.	he	f93r:L21:4	12.	he	same
+f89r:L18:7	25ρ@s	uos	f93r:L21:5	25σ@s	uis	differ-vowel
+f89r:L18:8	24ρ	to	f93r:L21:6	24ρ	to	same
+f89r:L18:9	20ρ@r	por	f93r:L21:7	20ρ@r	por	same
+f89r:L18:10	15+	la	-	-		gap
+f89r:L18:11	{nel}		-	-		gap
+f89r:L18:12	6.	de	-	-		gap
+f89r:L18:13	15+	la	f93r:L21:8	15+	la	same
+f89r:L18:14	91		f93r:L21:9	{Jo}?		differ-base
+f89r:L18:15	21.	que	f93r:L21:10	21.	que	same
+f89r:L18:16	16.	me	f93r:L21:11	16.?	me	same
+f89r:L18:17	4@l	el	f93r:L21:12	3@l?	el	variant
+f89r:L18:18	8σ	bi	f93r:L21:13	8σ	bi	same
+f89r:L18:19	10	a	f93r:L21:14	10	a	same
+f89r:L18:20	24.@s	tes	f93r:L21:15	24.@s	tes	same
+f89r:L19:1	16+@s	mas	f93r:L21:16	16+	ma	differ-mark
+f89r:L19:2	31.	cre	f93r:L21:17	31.	cre	same
+f89r:L19:3	18	o	f93r:L21:18	0		notation
+f89r:L19:4	21.	que	f93r:L21:19	21.	que	same
+f89r:L19:5	17ρ	no	f93r:L22:1	17ρ	no	same
+f89r:L19:6	18	o	f93r:L22:2	18	o	same
+f89r:L19:7	30+	bra	f93r:L22:3	30+	bra	same
+f89r:L19:8	22σ	ri	f93r:L22:4	22σ	ri	same
+f89r:L19:9	{a}		f93r:L22:5	10	a	notation
+f89r:L19:10	15+	la	f93r:L22:6	15+	la	same
+f89r:L19:11	91		f93r:L22:7	91		same
+f89r:L19:12	15ρ	lo	f93r:L22:8	15ρ	lo	same
+f89r:L19:13	21.	que	f93r:L22:9	21.	que	same
+f89r:L19:14	17ρ	no	f93r:L22:10	17ρ	no	same
+f89r:L19:15	18	o	f93r:L22:11	18	o	same
+f89r:L19:16	30ρ	bro	f93r:L22:12	30ρ	bro	same
+f89r:L19:17	15+	la	f93r:L22:13	15+	la	same
+f89r:L19:18	35.	pre	f93r:L22:14	35.	pre	same
+f89r:L19:19	23σ?	si	f93r:L22:15	23.@n	sen	differ-vowel
+f89r:L19:20	4+?	ea	-	-		gap
+f89r:L20:1	7σ	ci	f93r:L22:16	7σ	ci	same
+f89r:L20:2	10	a	f93r:L22:17	10	a	same
+f89r:L20:3	67		f93r:L22:18	67		same
+f89r:L20:4	24ρ	to	f93r:L23:1	24ρ	to	same
+f89r:L20:5	6+	da	f93r:L23:2	6+	da	same
+f89r:L20:6	25σ	ui	f93r:L23:3	25σ	ui	same
+f89r:L20:7	10	a	f93r:L23:4	10	a	same
+f89r:L20:8	2⊣	fu	f93r:L23:5	21	q	differ-base
+f89r:L20:9	3	e	f93r:L23:6	4	e	variant
+f89r:L20:10	8σ	bi	f93r:L23:7	8σ	bi	same
+f89r:L20:11	4@n	en	f93r:L23:8	4@n	en	same
+f89r:L20:12	12+	ha	f93r:L23:9	12+	ha	same
+f89r:L20:13	29.@r	zer	f93r:L23:10	29.@r	zer	same
+f89r:L20:14	10	a	f93r:L23:11	10	a	same
+f89r:L20:15	21.	que	f93r:L23:12	21.	que	same
+f89r:L20:16	15+	la	f93r:L23:13	15+	la	same
+-	-		f93r:L23:14	{vim}		gap
+-	-		f93r:L23:15	3.?	ee	gap
+f89r:L20:17	{Ra}?		f93r:L23:16	{ra}		same
+-	-		f93r:L23:17	7@r	cr	gap
+f89r:L20:18	21?	q	f93r:L23:18	21+	qua	differ-vowel
+f89r:L20:19	17ρ	no	f93r:L23:19	17ρ	no	same
+f89r:L20:20	21.	que	-	-		gap
+f89r:L21:1	21.	que	f93v:L01:1	21.	que	same
+f89r:L21:2	6+	da	f93v:L01:2	6+	da	same
+f89r:L21:3	23.@2?	se	f93v:L01:3	23.@2	se	same
+f89r:L21:4	17+	na	f93v:L01:4	17+	na	same
+f89r:L21:5	6+	da	f93v:L01:5	6+	da	same
+f89r:L21:6	20ρ@r	por	f93v:L01:6	20ρ@r	por	same
+f89r:L21:7	35ρ	pro	f93v:L01:7	35ρ	pro	same
+f89r:L21:8	8+@r	bar	f93v:L01:8	25+@r	uar	differ-base
+f89r:L21:9	6.	de	f93v:L01:9	6.	de	same
+f89r:L21:10	38?		f93v:L01:10	38		same
+f89r:L21:11	15ρ	lo	f93v:L01:11	15ρ	lo	same
+f89r:L21:12	21.	que	f93v:L01:12	21.	que	same
+f89r:L21:13	7.@r	cer	f93v:L01:13	7.@r	cer	same
+f89r:L21:14	7+	ca	f93v:L01:14	7+	ca	same
+f89r:L21:15	6.	de	f93v:L01:15	6.	de	same
+f89r:L21:16	24ρ	to	f93v:L01:16	24ρ	to	same
+f89r:L21:17	10	a	f93v:L01:17	10	a	same
+f89r:L21:18	y	y	f93v:L01:18	y	y	same
+f89r:L21:19	4_@2?		-	-		gap
+f89r:L21:20	21.	que	f93v:L01:19	2?	f	differ-base
+f89r:L22:1	18@s	os	f93v:L02:1	18@s	os	same
+f89r:L22:2	12+	ha	f93v:L02:2	12+	ha	same
+f89r:L22:3	29.@r	zer	f93v:L02:3	29.@r	zer	same
+f89r:L22:4	23+	sa	f93v:L02:4	23+	sa	same
+f89r:L22:5	8.@r	ber	f93v:L02:5	8.@r	ber	same
+f89r:L22:6	4@s	es	f93v:L02:6	3	e	differ-base
+f89r:L22:7	21.	que	f93v:L02:7	21.	que	same
+f89r:L22:8	10	a	f93v:L02:8	10	a	same
+f89r:L22:9	12σ?	hi	f93v:L02:9	12	h	differ-vowel
+f89r:L22:10	6.	de	f93v:L02:10	6.	de	same
+-	-		f93v:L02:11	{a}		gap
+f89r:L22:11	10	a	f93v:L02:12	2	f	differ-base
+f89r:L22:12	34ρ	gro	f93v:L02:13	15ρ@s	los	differ-base
+f89r:L22:13	24ρ	to	f93v:L02:14	24ρ	to	same
+-	-		f93v:L02:15	3?	e	gap
+f89r:L22:14	16.	me	f93v:L02:16	16.	me	same
+f89r:L22:15	2⊣	fu	-	-		gap
+f89r:L22:16	3	e	f93v:L02:17	21+	qua	differ-base
+f89r:L22:17	10	a	f93v:L02:18	{a}		notation
+f89r:L22:18	12+	ha	f93v:L02:19	12+	ha	same
+f89r:L22:19	30+@s?	bras	f93v:L02:20	30+@r?	brar	differ-mark
+f89r:L23:1	16ρ@s	mos	f93v:L03:1	16ρ@s	mos	same
+f89r:L23:2	6.	de	f93v:L03:2	6.	de	same
+f89r:L23:3	23+	sa	f93v:L03:3	23+@n	san	differ-mark
+f89r:L23:4	11ρ	go	f93v:L03:4	14	i	differ-base
+f89r:L23:5	25+@r	uar	f93v:L03:5	a?	a	differ-base
+f89r:L23:6	10@l	al	f93v:L03:6	10?	a	differ-mark
+f89r:L23:7	16ρ	mo	f93v:L03:7	16ρ	mo	same
+f89r:L23:8	17.@s	nes	f93v:L03:8	17.@s	nes	same
+f89r:L23:9	24	t	f93v:L03:9	24.	te	differ-vowel
+f89r:L23:10	22σ	ri	f93v:L03:10	22σ	ri	same
+f89r:L23:11	18	o	f93v:L03:11	0		notation
+f89r:L23:12	6.	de	f93v:L03:12	6.	de	same
+f89r:L23:13	23+	sa	f93v:L03:13	23+@n	san	differ-mark
+f89r:L23:14	4@n	en	-	-		gap
+f89r:L23:15	15ρ	lo	f93v:L03:14	15ρ	lo	same
+f89r:L23:16	22.@s	res	f93v:L03:15	22.@n	ren	differ-mark
+f89r:L23:17	7σ	ci	f93v:L03:16	7σ	ci	same
+f89r:L23:18	18	o	f93v:L03:17	18	o	same
+f89v:L01:1	{Ge}@n		f93v:L03:18	5σ@n		differ-base
+f89v:L01:2	6.	de	f93v:L03:19	6.	de	same
+f89v:L01:3	28ρ	yo	f93v:L03:20	2?	f	differ-base
+f89v:L01:4	16.	me	f93v:L04:1	16.	me	same
+f89v:L01:5	12+	ha	f93v:L04:2	12+	ha	same
+f89v:L01:6	15+	la	f93v:L04:3	15+@2	la	variant
+f89v:L01:7	25+	ua	f93v:L04:4	25+	ua	same
+-	-		f93v:L04:5	y	y	gap
+f89v:L01:8	6.	de	f93v:L04:6	6.	de	same
+f89v:L01:9	16+@s	mas	f93v:L04:7	16+@s	mas	same
+f89v:L01:10	6.	de	f93v:L04:8	6.	de	same
+f89v:L01:11	12+	ha	f93v:L04:9	12+	ha	same
+f89v:L01:12	25.@r	uer	f93v:L04:10	25.@r	uer	same
+f89v:L01:13	26.	ue	f93v:L04:11	16.	me	differ-base
+f89v:L01:14	{qua}		f93v:L04:12	6σ	di	differ-base
+f89v:L01:15	6.	de	f93v:L04:13	6.	de	same
+f89v:L01:16	20+	pa	f93v:L04:14	20+	pa	same
+f89v:L01:17	15+	la	f93v:L04:15	15+	la	same
+f89v:L01:18	30+	bra	f93v:L04:16	30+	bra	same
+-	-		f93v:L04:17	15ρ	lo	gap
+f89v:L02:1	{Lum}		f93v:L04:18	{lum}		same
+f89v:L02:2	4@n	en	f93v:L05:1	4@n	en	same
+f89v:L02:3	23σ@s?	sis	f93v:L05:2	23	s	differ-vowel
+-	-		f93v:L05:3	16@s	ms	gap
+f89v:L02:4	24+@n	tan	f93v:L05:4	24+@n	tan	same
+f89v:L02:5	7σ	ci	f93v:L05:5	7σ	ci	same
+f89v:L02:6	10	a	f93v:L05:6	10	a	same
+f89v:L02:7	21.	que	f93v:L05:7	21.	que	same
+f89v:L02:8	10	a	f93v:L05:8	10	a	same
+f89v:L02:9	25ρ	uo	f93v:L05:9	25ρ@s	uos	differ-mark
+f89v:L02:10	45		f93v:L05:10	45		same
+f89v:L02:11	23.	se	f93v:L05:11	23.	se	same
+f89v:L02:12	18@s	os	f93v:L05:12	18@s	os	same
+f89v:L02:13	6σ	di	f93v:L05:13	6σ	di	same
+f89v:L02:14	27ρ	xo	f93v:L05:14	27ρ	xo	same
+f89v:L02:15	26.	ue	-	-		gap
+f89v:L02:16	65?		f93v:L05:15	16.	me	differ-base
+f89v:L02:17	18	o	f93v:L05:16	660		differ-base
+f89v:L02:18	25@n	un	f93v:L05:17	25@n	un	same
+f89v:L02:19	4@s	es	f93v:L05:18	4+	ea	differ-vowel
+f89v:L02:20	31σ	cri	f93v:L05:19	31σ	cri	same
+f89v:L03:1	7⊣	cu	f93v:L06:1	21?	q	differ-base
+f89v:L03:2	28+	ya	f93v:L06:2	28+	ya	same
+f89v:L03:3	{Jo}		f93v:L06:3	50?		differ-base
+f89v:L03:4	23.	se	f93v:L06:4	23.	se	same
+f89v:L03:5	18@s	os	f93v:L06:5	18@s	os	same
+f89v:L03:6	4@l	el	f93v:L06:6	4@l	el	same
+f89v:L03:7	8σ	bi	f93v:L06:7	8σ	bi	same
+f89v:L03:8	10	a	f93v:L06:8	10	a	same
+f89v:L03:9	22+	ra	f93v:L06:9	22+	ra	same
+-	-		f93v:L06:10	2	f	gap
+f89v:L03:10	7ρ@n	con	f93v:L06:11	7ρ@n	con	same
+f89v:L03:11	4@s	es	f93v:L06:12	4@s	es	same
+f89v:L03:12	24ρ@l	tol	f93v:L06:13	24+	ta	differ-vowel
+f89v:L03:13	{Rom}		f93v:L06:14	{Rom}		same
+f89v:L03:14	144+		f93v:L06:15	14+@s?	ias	differ-base
+f89v:L03:15	{Qul}		f93v:L06:16	{Rul}		differ-base
+f89v:L03:16	22.@s	res	f93v:L06:17	22.@s?	res	same
+f89v:L03:17	20ρ@n	pon	f93v:L07:1	6σ	di	differ-base
+f89v:L03:18	6?	d	f93v:L07:2	15.	le	differ-base
+f89v:L04:1	4@n	en	f93v:L07:3	4@n	en	same
+f89v:L04:2	7ρ@n	con	f93v:L07:4	7ρ@n	con	same
+f89v:L04:3	25σ@r	uir	f93v:L07:5	2ρ@r	for	differ-base
+f89v:L04:4	16σ	mi	f93v:L07:6	16σ	mi	same
+f89v:L04:5	6+	da	f93v:L07:7	6+	da	same
+f89v:L04:6	{d}		f93v:L07:8	{d}		same
+f89v:L04:7	6.	de	f93v:L07:9	6.	de	same
+f89v:L04:8	15ρ	lo	f93v:L07:10	15ρ	lo	same
+f89v:L04:9	21.	que	f93v:L07:11	21.	que	same
+f89v:L04:10	23.	se	f93v:L07:12	23.	se	same
+f89v:L04:11	18@s	os	f93v:L07:13	0@s		notation
+f89v:L04:12	4@s	es	f93v:L07:14	3@s	es	variant
+f89v:L04:13	31σ	cri	f93v:L07:15	31σ	cri	same
+f89v:L04:14	25σ	ui	f93v:L07:16	25σ	ui	same
+f89v:L04:15	18	o	f93v:L07:17	0		notation
+f89v:L04:16	10	a	f93v:L07:18	10	a	same
+f89v:L04:17	4@m?	em	f93v:L07:19	4+	ea	differ-vowel
+f89v:L04:18	6.	de	f93v:L07:20	6.	de	same
+-	-		f93v:L07:21	10	a	gap
+-	-		f93v:L08:1	10	a	gap
+f89v:L04:19	20?	p	f93v:L08:2	15ρ@s	los	differ-base
+f89v:L05:1	24ρ	to	f93v:L08:3	24ρ	to	same
+f89v:L05:2	21.	que	f93v:L08:4	21.	que	same
+-	-		f93v:L08:5	4@n	en	gap
+-	-		f93v:L08:6	24ρ@n	ton	gap
+f89v:L05:3	{dol}		f93v:L08:7	7.@s	ces	differ-base
+f89v:L05:4	15.	le	f93v:L08:8	15.	le	same
+f89v:L05:5	12+	ha	f93v:L08:9	12+	ha	same
+f89v:L05:6	25σ	ui	f93v:L08:10	28σ	yi	differ-base
+f89v:L05:7	10	a	f93v:L08:11	10	a	same
+f89v:L05:8	22.@s?	res	f93v:L08:12	22.@s	res	same
+f89v:L05:9	20ρ@n	pon	f93v:L08:13	20ρ@n	pon	same
+f89v:L05:10	6σ	di	f93v:L08:14	6σ	di	same
+f89v:L05:11	6ρ	do	f93v:L08:15	6ρ	do	same
+f89v:L05:12	4@s	es	f93v:L08:16	3@s	es	variant
+f89v:L05:13	10	a	f93v:L08:17	10	a	same
+f89v:L05:14	23+	sa	f93v:L08:18	23+?	sa	same
+f89v:L05:15	3.@m?	eem	f93v:L08:19	8.?	be	differ-base
+f89v:L05:16	21.	que	f93v:L09:1	21.	que	same
+f89v:L05:17	28ρ	yo	f93v:L09:2	28ρ	yo	same
+-	-		f93v:L09:3	31.	cre	gap
+-	-		f93v:L09:4	y	y	gap
+-	-		f93v:L09:5	10	a	gap
+f89v:L06:1	21.	que	f93v:L09:6	21.	que	same
+f89v:L06:2	10@l	al	f93v:L09:7	16	m	differ-base
+f89v:L06:3	6σ	di	f93v:L09:8	6σ	di	same
+f89v:L06:4	12+	ha	f93v:L09:9	12+	ha	same
+-	-		f93v:L09:10	5		gap
+f89v:L06:5	25σ	ui	f93v:L09:11	25σ	ui	same
+f89v:L06:6	10	a	f93v:L09:12	10	a	same
+f89v:L06:7	6.@s	des	f93v:L09:13	6.	de	differ-mark
+f89v:L06:8	35+	pra	f93v:L09:14	35+	pra	same
+f89v:L06:9	298		f93v:L09:15	29σ	zi	differ-base
+f89v:L06:10	6ρ	do	f93v:L09:16	6ρ	do	same
+f89v:L06:11	6.	de	f93v:L09:17	6.	de	same
+f89v:L06:12	15ρ	lo	f93v:L09:18	15ρ	lo	same
+f89v:L06:13	21.	que	f93v:L09:19	21.	que	same
+f89v:L06:14	4@l	el	f93v:L09:20	4+?	ea	differ-vowel
+f89v:L06:15	{Ja}		-	-		gap
+f89v:L06:16	23σ	si	f93v:L10:1	23+	sa	differ-vowel
+f89v:L06:17	{xal}		f93v:L10:2	{Xal}		same
+f89v:L07:1	12+	ha	f93v:L10:3	12+	ha	same
+f89v:L07:2	25σ	ui	f93v:L10:4	25σ?	ui	same
+f89v:L07:3	10	a	f93v:L10:5	10	a	same
+f89v:L07:4	12.	he	f93v:L10:6	12+	ha	differ-vowel
+f89v:L07:5	7ρ	co	f93v:L10:7	7ρ	co	same
+f89v:L07:6	6	d	f93v:L10:8	6	d	same
+f89v:L07:7	21.	que	f93v:L10:9	21.	que	same
+f89v:L07:8	4	e	f93v:L10:10	4	e	same
+f89v:L07:9	22+	ra	f93v:L10:11	22+	ra	same
+f89v:L07:10	16.	me	f93v:L10:12	16.	me	same
+f89v:L07:11	17.@s	nes	f93v:L10:13	17.@s	nes	same
+f89v:L07:12	24.@m?	tem	f93v:L10:14	24.@r	ter	differ-mark
+f89v:L07:13	16ρ	mo	f93v:L10:15	16ρ@s	mos	differ-mark
+f89v:L07:14	16ρ	mo	f93v:L10:16	36+	tra	differ-base
+f89v:L07:15	36+@r?	trar	f93v:L10:17	14+?	ia	differ-base
+f89v:L07:16	15ρ	lo	f93v:L11:1	18	o	differ-base
+f89v:L07:17	7ρ@n	con	f93v:L11:2	30+@s	bras	differ-base
+f89v:L08:1	4@s	es	f93v:L11:3	4@s	es	same
+f89v:L08:2	24σ	ti	-	-		gap
+f89v:L08:3	24.@n	ten	f93v:L11:4	24.@n	ten	same
+f89v:L08:4	6σ	di	f93v:L11:5	6σ	di	same
+f89v:L08:5	4@n	en	f93v:L11:6	4@n	en	same
+f89v:L08:6	6ρ	do	f93v:L11:7	6ρ	do	same
+f89v:L08:7	15ρ	lo	f93v:L11:8	15ρ	lo	same
+f89v:L08:8	7ρ@n	con	f93v:L11:9	7ρ@n	con	same
+f89v:L08:9	15+@s	las	f93v:L11:10	15+@s	las	same
+f89v:L08:10	20+	pa	f93v:L11:11	20+	pa	same
+f89v:L08:11	15+	la	f93v:L11:12	15+	la	same
+f89v:L08:12	30+@s?	bras	f93v:L11:13	30+?	bra	differ-mark
+f89v:L08:13	21.	que	f93v:L11:14	21.	que	same
+f89v:L08:14	16.	me	f93v:L11:15	16.	me	same
+f89v:L08:15	20+	pa	f93v:L11:16	20+	pa	same
+f89v:L08:16	22.@s?	res	f93v:L11:17	22.@s	res	same
+-	-		f93v:L12:1	4	e	gap
+f89v:L08:17	7σ	ci	f93v:L12:2	22ρ@n	ron	differ-base
+f89v:L09:1	7ρ@n	con	f93v:L12:3	7ρ@n	con	same
+f89v:L09:2	25.	ue	f93v:L12:4	25.	ue	same
+f89v:L09:3	17σ@r	nir	f93v:L12:5	17σ@r	nir	same
+f89v:L10:1	{Lo}		-	-		gap
+f89v:L10:2	15.@2	le	f93v:L13:1	15.	le	variant
+f89v:L10:3	21+	qua	f93v:L13:2	14ρ	io	differ-base
+f89v:L10:4	16ρ@s	mos	f93v:L13:3	16ρ@s	mos	same
+f89v:L10:5	6.	de	f93v:L13:4	6.	de	same
+f89v:L10:6	16+	ma	f93v:L13:5	16+	ma	same
+f89v:L10:7	13@n	in	f93v:L13:6	13@n	in	same
+f89v:L10:8	24.	te	f93v:L13:7	24.	te	same
+f89v:L10:9	17ρ@n?	non	f93v:L13:8	17ρ	no	differ-mark
+f89v:L10:10	y	y	f93v:L13:9	y	y	same
+f89v:L10:11	12+	ha	f93v:L13:10	12+	ha	same
+f89v:L10:12	25σ	ui	f93v:L13:11	25σ	ui	same
+f89v:L10:13	4@n	en	f93v:L13:12	4@n	en	same
+f89v:L10:14	6ρ	do	f93v:L13:13	6ρ	do	same
+f89v:L10:15	15.	le	f93v:L13:14	15.	le	same
+f89v:L10:16	6+	da	f93v:L13:15	6+	da	same
+f89v:L10:17	6ρ	do	-	-		gap
+f89v:L10:18	10	a	-	-		gap
+f89v:L10:19	{V}?		f93v:L13:16	{a}		differ-base
+f89v:L11:1	4@n	en	f93v:L13:17	25σ	ui	differ-base
+f89v:L11:2	7σ	ci	f93v:L14:1	7σ	ci	same
+-	-		f93v:L14:2	{a}		gap
+f89v:L11:3	10	a	f93v:L14:3	10	a	same
+f89v:L11:4	{a}		-	-		gap
+f89v:L11:5	15?	l	f93v:L14:4	25	u	differ-base
+f89v:L11:6	6@l	dl	f93v:L14:5	6.	de	differ-vowel
+f89v:L11:7	20+	pa	f93v:L14:6	20+	pa	same
+f89v:L11:8	23+@2	sa	f93v:L14:7	23+?	sa	variant
+f89v:L11:9	6ρ	do	f93v:L14:8	6ρ	do	same
+f89v:L11:10	16.	me	f93v:L14:9	16.	me	same
+f89v:L11:11	35ρ	pro	f93v:L14:10	35ρ	pro	same
+f89v:L11:12	20ρ	po	f93v:L14:11	20+	pa	differ-vowel
+f89v:L11:13	23ρ	so	f93v:L14:12	23ρ	so	same
+f89v:L11:14	15ρ	lo	f93v:L14:13	15ρ	lo	same
+f89v:L11:15	21.	que	f93v:L14:14	21.	que	same
+f89v:L11:16	36+	tra	f93v:L14:15	36+	tra	same
+-	-		f93v:L14:16	y	y	gap
+f89v:L11:17	28+	ya	f93v:L14:17	10	a	differ-base
+f89v:L12:1	{co}		f93v:L14:18	3@n	en	differ-base
+f89v:L12:2	21.	que	f93v:L14:19	{cu}		differ-base
+f89v:L12:3	7ρ@n	con	f93v:L15:1	7ρ@n	con	same
+f89v:L12:4	24.	te	f93v:L15:2	24.	te	same
+f89v:L12:5	17σ	ni	f93v:L15:3	17σ	ni	same
+f89v:L12:6	10	a	f93v:L15:4	10	a	same
+f89v:L12:7	36.@s?	tres	-	-		gap
+f89v:L12:8	20ρ@n	pon	f93v:L15:5	3	e	differ-base
+f89v:L12:9	24ρ@s	tos	f93v:L15:6	4ρ?	eo	differ-base
+f89v:L12:10	25σ	ui	f93v:L15:7	25ρ?	uo	differ-vowel
+f89v:L12:11	23σ	si	f93v:L15:8	23σ	si	same
+f89v:L12:12	24+@r	tar	f93v:L15:9	24+@r	tar	same
+f89v:L12:13	16.	me	f93v:L15:10	16.	me	same
+f89v:L12:14	7ρ@n	con	f93v:L15:11	7ρ@n	con	same
+f89v:L12:15	{pam}+@s?		f93v:L15:12	{pam}+		differ-base
+f89v:L12:16	20+	pa	f93v:L15:13	20+	pa	same
+-	-		f93v:L15:14	15+	la	gap
+-	-		f93v:L15:15	30+@s	bras	gap
+f89v:L13:1	6.	de	f93v:L15:16	6.	de	same
+-	-		f93v:L16:1	6.@l?	del	gap
+-	-		f93v:L16:2	6σ	di	gap
+-	-		f93v:L16:3	y	y	gap
+-	-		f93v:L16:4	67		gap
+-	-		f93v:L16:5	16+	ma	gap
+-	-		f93v:L16:6	32.	dre	gap
+-	-		f93v:L16:7	22.	re	gap
+-	-		f93v:L16:8	2.	fe	gap
+-	-		f93v:L16:9	22σ@r	rir	gap
+-	-		f93v:L16:10	16.	me	gap
+-	-		f93v:L16:11	{quam}		gap
+-	-		f93v:L16:12	15+?	la	gap
+-	-		f93v:L16:13	14ρ	io	gap
+-	-		f93v:L16:14	4@l	el	gap
+-	-		f93v:L16:15	6σ@s	dis	gap
+-	-		f93v:L16:16	7+@r	car	gap
+-	-		f93v:L16:17	23+	sa	gap
+f89v:L13:2	24ρ	to	f93v:L17:1	24ρ	to	same
+f89v:L13:3	6ρ	do	f93v:L17:2	6ρ	do	same
+f89v:L13:4	15ρ	lo	f93v:L17:3	15ρ	lo	same
+f89v:L13:5	21.	que	f93v:L17:4	21.	que	same
+f89v:L13:6	12+	ha	f93v:L17:5	12.?	he	differ-vowel
+f89v:L13:7	12.	he	f93v:L17:6	12.	he	same
+f89v:L13:8	7ρ	co	f93v:L17:7	7ρ	co	same
+f89v:L13:9	4@l	el	f93v:L17:8	4@l	el	same
+f89v:L13:10	6.	de	f93v:L17:9	6.	de	same
+f89v:L13:11	10	a	f93v:L17:10	{a}		notation
+f89v:L13:12	15+@n	lan	f93v:L17:11	15+@n	lan	same
+f89v:L13:13	7ρ@n	con	f93v:L17:12	7ρ@n	con	same
+f89v:L13:14	6.@s?	des	f93v:L17:13	6.@s	des	same
+f89v:L13:15	6.	de	f93v:L17:14	6.	de	same
+f89v:L13:16	23σ	si	f93v:L17:15	23+	sa	differ-vowel
+f89v:L13:17	35σ	pri	f93v:L17:16	35σ@n	prin	differ-mark
+f89v:L13:18	7σ	ci	f93v:L17:17	7σ	ci	same
+f89v:L14:1	y	y	f93v:L17:18	20σ	pi	differ-base
+f89v:L14:2	15ρ	lo	f93v:L17:19	18?	o	differ-base
+f89v:L14:3	{Xom}?		f93v:L18:1	{Xom}@s		differ-base
+f89v:L14:4	y	y	f93v:L18:2	y	y	same
+f89v:L14:5	{Ra}?		f93v:L18:3	22@s?	rs	differ-base
+f89v:L14:6	21.	que	f93v:L18:4	21.	que	same
+f89v:L14:7	12+	ha	f93v:L18:5	12+	ha	same
+f89v:L14:8	25σ	ui	f93v:L18:6	25σ?	ui	same
+f89v:L14:9	10@n	an	f93v:L18:7	10@n	an	same
+f89v:L14:10	12.	he	f93v:L18:8	12+	ha	differ-vowel
+f89v:L14:11	7ρ	co	f93v:L18:9	7ρ	co	same
+f89v:L14:12	{Rom}		f93v:L18:10	{Rom}		same
+f89v:L14:13	15.	le	f93v:L18:11	15.	le	same
+f89v:L14:14	6σ	di	f93v:L18:12	6σ	di	same
+f89v:L14:15	25.	ue	f93v:L18:13	25.@r	uer	differ-mark
+-	-		f93v:L18:14	24σ@r	tir	gap
+-	-		f93v:L18:15	6.	de	gap
+f89v:L15:1	23ρ?	so	f93v:L18:16	23+	sa	differ-vowel
+f89v:L15:2	28	y	f93v:L18:17	28	y	same
+f89v:L15:3	6+	da	-	-		gap
+f89v:L15:4	10	a	f93v:L19:1	10	a	same
+f89v:L15:5	{mil}		f93v:L19:2	{mil}		same
+f89v:L15:6	y	y	f93v:L19:3	y	y	same
+f89v:L15:7	6.	de	f93v:L19:4	6.	de	same
+f89v:L15:8	15+@s	las	f93v:L19:5	15+	la	differ-mark
+-	-		f93v:L19:6	35+	pra	gap
+f89v:L15:9	12	h	f93v:L19:7	24σ	ti	differ-base
+f89v:L15:10	8	b	f93v:L19:8	7+@s	cas	differ-base
+f89v:L15:11	21.	que	f93v:L19:9	21.	que	same
+f89v:L15:12	4_σ		f93v:L19:10	4σ	ei	differ-base
+f89v:L15:13	36+	tra	f93v:L19:11	36+	tra	same
+-	-		f93v:L19:12	y	y	gap
+f89v:L15:14	28+	ya	f93v:L19:13	10	a	differ-base
+f89v:L15:15	28	y	f93v:L19:14	28	y	same
+f89v:L15:16	21.	que	f93v:L19:15	21.	que	same
+f89v:L15:17	15.@s?	les	f93v:L19:16	15.@s	les	same
+f89v:L15:18	20?	p	f93v:L19:17	20.	pe	differ-vowel
+f89v:L16:1	25+	ua	f93v:L19:18	23+?	sa	differ-base
+f89v:L16:2	{pam}?		f93v:L20:1	{pam}		same
+f89v:L16:3	6.	de	f93v:L20:2	6.	de	same
+f89v:L16:4	17ρ	no	f93v:L20:3	17ρ	no	same
+f89v:L16:5	15ρ	lo	f93v:L20:4	15ρ	lo	same
+f89v:L16:6	12+	ha	f93v:L20:5	12+	ha	same
+f89v:L16:7	25.@r	uer	f93v:L20:6	25.@r	uer	same
+f89v:L16:8	20ρ	po	f93v:L20:7	20ρ	po	same
+f89v:L16:9	6σ	di	f93v:L20:8	6σ	di	same
+f89v:L16:10	6ρ	do	f93v:L20:9	6ρ	do	same
+f89v:L16:11	10	a	f93v:L20:10	10	a	same
+f89v:L16:12	7+	ca	f93v:L20:11	7+	ca	same
+f89v:L16:13	8+@r	bar	f93v:L20:12	8+@r	bar	same
+f89v:L16:14	7ρ?	co	f93v:L20:13	7ρ@n	con	differ-mark
+f89v:L16:15	4@l	el	f93v:L20:14	4@l	el	same
+f89v:L16:16	17σ	ni	f93v:L20:15	17σ	ni	same
+f89v:L16:17	6.	de	f93v:L20:16	6.	de	same
+f89v:L16:18	24	t	f93v:L20:17	24.	te	differ-vowel
+f89v:L17:1	15+	la	f93v:L20:18	17.	ne	differ-base
+f89v:L17:2	{ril}		f93v:L21:1	{ric}?		differ-base
+f89v:L17:3	6.	de	f93v:L21:2	6.	de	same
+f89v:L17:4	{til}		f93v:L21:3	{tic}		differ-base
+f89v:L17:5	21.	que	f93v:L21:4	21.	que	same
+f89v:L17:6	28	y	f93v:L21:5	28	y	same
+f89v:L17:7	25+	ua	f93v:L21:6	25+	ua	same
+f89v:L17:8	4@n	en	f93v:L21:7	4@n	en	same
+f89v:L17:9	23σ	si	f93v:L21:8	23+	sa	differ-vowel
+f89v:L17:10	23.	se	f93v:L21:9	23.	se	same
+f89v:L17:11	11σ	gi	-	-		gap
+f89v:L17:12	13	i	f93v:L21:10	141		differ-base
+f89v:L17:13	16σ	mi	f93v:L21:11	26σ?	ui	differ-base
+f89v:L17:14	4@n	en	f93v:L21:12	4@n	en	same
+f89v:L17:15	24ρ	to	f93v:L21:13	24ρ	to	same
+f89v:L17:16	20ρ@r	por	f93v:L21:14	20ρ@r	por	same
+f89v:L17:17	15+	la	f93v:L21:15	15+	la	same
+f89v:L17:18	2?	f	-	-		gap
+f89v:L18:1	23.	se	-	-		gap
+f89v:L18:2	11σ	gi	-	-		gap
+f89v:L18:3	22σ	ri	-	-		gap
+f89v:L18:4	6+	da	f93v:L21:16	20+	pa	differ-base
+f89v:L18:5	{d}		f93v:L22:1	85		differ-base
+f89v:L18:6	21.	que	f93v:L22:2	21.	que	same
+f89v:L18:7	6.@n	den	f93v:L22:3	6.@n	den	same
+f89v:L18:8	36ρ	tro	f93v:L22:4	36ρ	tro	same
+f89v:L18:9	6.	de	f93v:L22:5	6.	de	same
+f89v:L18:10	23σ	si	f93v:L22:6	23+	sa	differ-vowel
+f89v:L18:11	68		f93v:L22:7	68		same
+f89v:L18:12	24σ	ti	f93v:L22:8	24σ	ti	same
+f89v:L18:13	3	e	f93v:L22:9	4	e	variant
+f89v:L18:14	17.@n	nen	f93v:L22:10	17.@n	nen	same
+f89v:L18:15	6	d	f93v:L22:11	6	d	same
+f89v:L18:16	21.	que	f93v:L22:12	21.	que	same
+f89v:L18:17	23σ	si	f93v:L22:13	23σ	si	same
+-	-		f93v:L22:14	28	y	gap
+f89v:L19:1	25.	ue	f93v:L22:15	25σ	ui	differ-vowel
+f89v:L19:2	28.	ye	f93v:L22:16	4	e	differ-base
+f89v:L19:3	23.@2	se	f93v:L22:17	23.	se	variant
+f89v:L19:4	21.	que	f93v:L22:18	21.	que	same
+f89v:L19:5	20ρ	po	-	-		gap
+f89v:L19:6	32σ	dri	f93v:L23:1	32σ	dri	same
+f89v:L19:7	10@n	an	f93v:L23:2	10@n	an	same
+f89v:L19:8	23.@m	sem	f93v:L23:3	23.@m?	sem	same
+f89v:L19:9	10@l	al	f93v:L23:4	{a}@l?		differ-base
+f89v:L19:10	11σ	gi	f93v:L23:5	14+?	ia	differ-base
+f89v:L19:11	17+	na	f93v:L23:6	17+	na	same
+f89v:L19:12	8	b	f93v:L23:7	0		differ-base
+f89v:L19:13	{Rom}		f93v:L23:8	{Rom}		same
+f89v:L19:14	4@n	en	f93v:L23:9	4@n	en	same
+f89v:L19:15	6.	de	f93v:L23:10	6.	de	same
+f89v:L19:16	22.	re	f93v:L23:11	22.	re	same
+-	-		f93v:L23:12	7+@m	cam	gap
+-	-		f93v:L23:13	4@l	el	gap
+-	-		f93v:L23:14	23ρ	so	gap
+-	-		f93v:L23:15	23σ	si	gap
+-	-		f93v:L23:16	4	e	gap
+f89v:L20:1	97		f93v:L23:17	14ρ	io	differ-base
+f89v:L20:2	6.	de	f93v:L23:18	6.	de	same
+f89v:L20:3	15+@s	las	f93v:L23:19	15+@s	las	same
+f89v:L20:4	{lo}@s?		-	-		gap
+f89v:L20:5	6.	de	f93v:L23:20	6?	d	differ-vowel
+f89v:L20:6	10	a	f93v:L24:1	10	a	same
+f89v:L20:7	21.	que	f93v:L24:2	21.	que	same
+f89v:L20:8	15ρ	lo	f93v:L24:3	15ρ	lo	same
+f89v:L20:9	{gil}@s?		f93v:L24:4	{gic}?		differ-base
+f89v:L20:10	28	y	f93v:L24:5	y	y	variant
+f89v:L20:11	15ρ@s	los	f93v:L24:6	15+@s	las	differ-vowel
+f89v:L20:12	22σ	ri	f93v:L24:7	24σ	ti	differ-base
+f89v:L20:13	23σ	si	f93v:L24:8	23σ	si	same
+f89v:L20:14	3	e	f93v:L24:9	4	e	variant
+-	-		f93v:L24:10	23.	se	gap
+f89v:L20:15	3.@2	ee	f93v:L24:11	3	e	differ-vowel
+f89v:L20:16	4@l	el	f93v:L24:12	35.	pre	differ-base
+f89v:L20:17	30_.?		f93v:L24:13	10@r	ar	differ-base
+f89v:L21:1	4@n	en	f93v:L24:14	4@n	en	same
+f89v:L21:2	3	e	f93v:L24:15	3	e	same
+f89v:L21:3	15ρ@2	lo	f93v:L24:16	15ρ	lo	variant
+f89v:L21:4	12+	ha	f93v:L24:17	12+	ha	same
+f89v:L21:5	22σ	ri	f93v:L24:18	22σ	ri	same
+f89v:L21:6	10@n	an	f93v:L24:19	10?	a	differ-mark
+f89v:L21:7	24σ	ti	-	-		gap
+f89v:L21:8	23σ	si	f93v:L25:1	23+	sa	differ-vowel
+f89v:L21:9	24@s	ts	f93v:L25:2	24+	ta	differ-vowel
+f89v:L21:10	6.	de	f93v:L25:3	6.	de	same
+-	-		f93v:L25:4	16+	ma	gap
+-	-		f93v:L25:5	y	y	gap
+-	-		f93v:L25:6	8+	ba	gap
+f89v:L21:11	{quam}?		f93v:L25:7	4	e	differ-base
+f89v:L21:12	79+		f93v:L25:8	17+	na	differ-base
+f89v:L21:13	11+	ga	f93v:L25:9	14+	ia	differ-base
+f89v:L21:14	17+	na	f93v:L25:10	17+	na	same
+-	-		f93v:L25:11	1.		gap
+f89v:L22:1	{A}		f94r:L01:1	10	a	notation
+f89v:L22:2	15ρ	lo	f94r:L01:2	15ρ	lo	same
+f89v:L22:3	35σ	pri	f94r:L01:3	35σ?	pri	same
+f89v:L22:4	16.	me	f94r:L01:4	16.	me	same
+f89v:L22:5	22σ	ri	f94r:L01:5	22ρ	ro	differ-vowel
+f89v:L22:6	6.	de	f94r:L01:6	6.	de	same
+f89v:L22:7	15+	la	f94r:L01:7	15+	la	same
+f89v:L22:8	25σ	ui	f94r:L01:8	25σ	ui	same
+f89v:L22:9	23σ	si	f94r:L01:9	23σ	si	same
+f89v:L22:10	24+	ta	f94r:L01:10	24+	ta	same
+f89v:L22:11	23+	sa	f94r:L01:11	23+	sa	same
+f89v:L22:12	24σ@s	tis	f94r:L01:12	24σ@s?	tis	same
+f89v:L22:13	28?	y	f94r:L01:13	26	u	differ-base
+f89v:L22:14	29.	ze	f94r:L01:14	29.	ze	same
+f89v:L22:15	7ρ@n	con	f94r:L01:15	7ρ@n	con	same
+f89v:L22:16	10?	a	f94r:L01:16	10	a	same
+-	-		f94r:L01:17	34+	gra	gap
+f89v:L23:1	6.@s	des	f94r:L02:1	6.@s	des	same
+f89v:L23:2	7.@r	cer	f94r:L02:2	7.@m	cem	differ-mark
+-	-		f94r:L02:3	23.	se	gap
+f89v:L23:3	15ρ	lo	f94r:L02:4	15ρ	lo	same
+f89v:L23:4	10	a	f94r:L02:5	10	a	same
+f89v:L23:5	15ρ	lo	f94r:L02:6	15ρ	lo	same
+f89v:L23:6	23.	se	f94r:L02:7	23.	se	same
+f89v:L23:7	11σ@n	gin	f94r:L02:8	15+@n	lan	differ-base
+f89v:L23:8	6ρ	do	f94r:L02:9	6ρ	do	same
+f89v:L23:9	15.	le	f94r:L02:10	15.	le	same
+f89v:L23:10	6σ	di	f94r:L02:11	6σ	di	same
+f89v:L23:11	27.	xe	f94r:L02:12	27.	xe	same
+-	-		f94r:L02:13	15ρ	lo	gap
+f89v:L23:12	{lum}		f94r:L02:14	{cum}		differ-base
+f89v:L23:13	21.	que	f94r:L02:15	21.	que	same
+f89v:L23:14	12+	ha	f94r:L02:16	12+	ha	same
+f89v:L23:15	25σ	ui	f94r:L02:17	25σ	ui	same
+f89v:L23:16	10	a	f94r:L02:18	10	a	same
+-	-		f94r:L03:1	6σ	di	gap
+f89v:L24:1	10	a	f94r:L03:2	7ρ	co	differ-base
+f89v:L24:2	23+@n	san	f94r:L03:3	23+@n	san	same
+f89v:L24:3	+		-	-		gap
+f89v:L24:4	11ρ	go	-	-		gap
+f89v:L24:5	25+@m?	uam	f94r:L03:4	1+?		differ-base
+f89v:L24:6	8	b	f94r:L03:5	{ard}?		differ-base
+f89v:L24:7	21.	que	f94r:L03:6	21.	que	same
+f89v:L24:8	31.	cre	f94r:L03:7	31.	cre	same
+f89v:L24:9	28+	ya	f94r:L03:8	{ya}		differ-base
+f89v:L24:10	24ρ	to	f94r:L03:9	24ρ	to	same
+f89v:L24:11	6ρ	do	f94r:L03:10	6ρ	do	same
+f89v:L24:12	15ρ	lo	f94r:L03:11	15ρ	lo	same
+f89v:L24:13	21.	que	f94r:L03:12	21.	que	same
+f89v:L24:14	16.	me	f94r:L03:13	16.	me	same
+f89v:L24:15	12+	ha	f94r:L03:14	12+	ha	same
+f89v:L24:16	25σ	ui	f94r:L03:15	25σ	ui	same
+-	-		f94r:L03:16	{a}		gap
+-	-		f94r:L03:17	6σ	di	gap
+f89v:L25:1	{qua}		f94r:L03:18	7ρ	co	differ-base
+f89v:L25:2	6.	de	f94r:L04:1	6.	de	same
+f89v:L25:3	8?	b	f94r:L04:2	6	d	differ-base
+f89v:L25:4	6.@l	del	f94r:L04:3	6.	de	differ-mark
+f89v:L25:5	6σ	di	f94r:L04:4	6σ	di	same
+f89v:L25:6	23σ	si	f94r:L04:5	23+	sa	differ-vowel
+f89v:L25:7	10	a	f94r:L04:6	10	a	same
+f89v:L25:8	16ρ	mo	f94r:L04:7	16ρ	mo	same
+f89v:L25:9	6σ@m?	dim	-	-		gap
+f89v:L25:10	6	d	f94r:L04:8	6	d	same
+f89v:L25:11	21.	que	f94r:L04:9	21.	que	same
+f89v:L25:12	3	e	f94r:L04:10	4	e	variant
+f89v:L25:13	22+	ra	f94r:L04:11	22+	ra	same
+-	-		f94r:L04:12	17.	ne	gap
+-	-		f94r:L04:13	7.	ce	gap
+-	-		f94r:L04:14	23+	sa	gap
+-	-		f94r:L04:15	22σ	ri	gap
+f89v:L25:14	{rum}		f94r:L04:16	0		differ-base
+f89v:L25:15	21.	que	f94r:L04:17	21.	que	same
+f89v:L25:16	15ρ@s?	los	f94r:L04:18	15ρ	lo	differ-mark
+-	-		f94r:L04:19	{bel}@s		gap
+f89v:L26:1	7ρ	co	f94r:L05:1	7ρ	co	same
+f89v:L26:2	22.@s?	res	f94r:L05:2	21.@s?	ques	differ-base
+f89v:L26:3	20ρ@n	pon	f94r:L05:3	20ρ@n	pon	same
+f89v:L26:4	6σ	di	f94r:L05:4	6σ	di	same
+f89v:L26:5	3	e	f94r:L05:5	4	e	variant
+f89v:L26:6	23.@2	se	f94r:L05:6	23.@n	sen	differ-mark
+f89v:L26:7	10	a	f94r:L05:7	10	a	same
+f89v:L26:8	15+	la	f94r:L05:8	15+	la	same
+f89v:L26:9	143		f94r:L05:9	14+@s?	ias	differ-base
+f89v:L26:10	21.	que	f94r:L05:10	21.	que	same
+f89v:L26:11	16ρ@s	mos	f94r:L05:11	16ρ@s	mos	same
+f89v:L26:12	36+	tra	f94r:L05:12	36+	tra	same
+f89v:L26:13	28+	ya	f94r:L05:13	28+?	ya	same
+f89v:L26:14	12+	ha	-	-		gap
+f89v:L26:15	29σ	zi	-	-		gap
+f90r:L01:1	12+	ha	f94r:L05:14	12+	ha	same
+f90r:L01:2	29σ	zi	f94r:L05:15	29σ	zi	same
+f90r:L01:3	4@n	en	f94r:L05:16	4@n	en	same
+f90r:L01:4	{Bo}		f94r:L05:17	6ρ	do	differ-base
+f90r:L01:5	{quam}		f94r:L05:18	{quam}		same
+f90r:L01:6	28	y	f94r:L06:1	25σ	ui	differ-base
+f90r:L01:7	25+	ua	f94r:L06:2	25+	ua	same
+f90r:L01:8	{bim}		f94r:L06:3	{bim}		same
+f90r:L01:9	7ρ@n	con	f94r:L06:4	7ρ@n	con	same
+f90r:L01:10	4@l	el	f94r:L06:5	4@l	el	same
+f90r:L01:11	6.	de	f94r:L06:6	6.	de	same
+f90r:L01:12	10	a	f94r:L06:7	10	a	same
+f90r:L01:13	15+	la	f94r:L06:8	15+@n?	lan	differ-mark
+f90r:L01:14	7ρ@n	con	f94r:L06:9	7ρ@n	con	same
+f90r:L01:15	{Qum}		f94r:L06:10	{Zum}?		differ-base
+f90r:L01:16	23.	se	f94r:L06:11	23.	se	same
+-	-		f94r:L06:12	8σ@m	bim	gap
+f90r:L01:17	8ρ@l	bol	f94r:L06:13	8σ@l	bil	differ-vowel
+f90r:L02:1	25σ	ui	f94r:L06:14	25σ	ui	same
+f90r:L02:2	3	e	f94r:L06:15	4.	ee	differ-base
+f90r:L02:3	23.@2	se	f94r:L06:16	23.	se	variant
+f90r:L02:4	y	y	f94r:L06:17	y	y	same
+f90r:L02:5	{quam}		f94r:L06:18	{quam}		same
+f90r:L02:6	4	e	f94r:L07:1	4	e	same
+f90r:L02:7	27.@l	xel	f94r:L07:2	27.@l	xel	same
+f90r:L02:8	35+@m?	pram	f94r:L07:3	35+@m	pram	same
+-	-		f94r:L07:4	7+@s	cas	gap
+-	-		f94r:L07:5	24σ	ti	gap
+f90r:L02:9	94		f94r:L07:6	11ρ	go	differ-base
+f90r:L02:10	4@n	en	f94r:L07:7	4@n	en	same
+f90r:L02:11	15ρ@s?	los	f94r:L07:8	15ρ@s	los	same
+f90r:L02:12	21.	que	f94r:L07:9	21.	que	same
+f90r:L02:13	23.	se	f94r:L07:10	23.	se	same
+f90r:L02:14	10	a	f94r:L07:11	10	a	same
+f90r:L02:15	36.	tre	f94r:L07:12	36.	tre	same
+f90r:L02:16	25σ	ui	f94r:L07:13	25σ	ui	same
+f90r:L02:17	3	e	f94r:L07:14	4	e	variant
+f90r:L02:18	23.@2	se	f94r:L07:15	23.@n	sen	differ-mark
+f90r:L02:19	10.?	ae	f94r:L07:16	10	a	differ-vowel
+f90r:L03:1	13@m	im	f94r:L07:17	42?		differ-base
+f90r:L03:2	10	a	f94r:L07:18	{a}		notation
+f90r:L03:3	10	a	f94r:L08:1	10	a	same
+f90r:L03:4	21.	que	f94r:L08:2	21.	que	same
+f90r:L03:5	15ρ@s	los	f94r:L08:3	15ρ	lo	differ-mark
+f90r:L03:6	{gil}		f94r:L08:4	{gil}@s		differ-base
+f90r:L03:7	7ρ	co	f94r:L08:5	7ρ@n	con	differ-mark
+f90r:L03:8	36+	tra	f94r:L08:6	36+	tra	same
+f90r:L03:9	231		f94r:L08:7	23+	sa	differ-base
+f90r:L03:10	35ρ	pro	f94r:L08:8	35ρ	pro	same
+f90r:L03:11	12σ	hi	f94r:L08:9	12σ	hi	same
+f90r:L03:12	8σ	bi	f94r:L08:10	8σ	bi	same
+f90r:L03:13	7σ	ci	f94r:L08:11	7σ	ci	same
+f90r:L03:14	18@n	on	f94r:L08:12	18@n	on	same
+f90r:L03:15	21.	que	f94r:L08:13	21.	que	same
+f90r:L03:16	10	a	f94r:L08:14	{a}		notation
+f90r:L03:17	4@s	es	f94r:L08:15	4@s	es	same
+f90r:L03:18	24ρ	to	f94r:L08:16	24ρ	to	same
+f90r:L03:19	15.	le	f94r:L08:17	15.	le	same
+f90r:L04:1	18	o	f94r:L08:18	18	o	same
+f90r:L04:2	30_σ?		f94r:L09:1	30_σ?		same
+f90r:L04:3	11+	ga	f94r:L09:2	11+?	ga	same
+f90r:L04:4	25+	ua	f94r:L09:3	25+	ua	same
+f90r:L04:5	15+	la	f94r:L09:4	15+	la	same
+f90r:L04:6	51		f94r:L09:5	51		same
+f90r:L04:7	y	y	f94r:L09:6	y	y	same
+f90r:L04:8	15+	la	f94r:L09:7	15+	la	same
+-	-		f94r:L09:8	8+	ba	gap
+-	-		f94r:L09:9	4	e	gap
+f90r:L04:9	79+		f94r:L09:10	17+	na	differ-base
+f90r:L04:10	y	y	f94r:L09:11	28	y	variant
+f90r:L04:11	20.@r	per	f94r:L09:12	20.@r	per	same
+f90r:L04:12	2.	fe	f94r:L09:13	2.	fe	same
+f90r:L04:13	{c}		-	-		gap
+f90r:L04:14	24+	ta	f94r:L09:14	24+	ta	same
+f90r:L04:15	49		f94r:L09:15	49		same
+f90r:L04:16	21.	que	f94r:L09:16	21.	que	same
+f90r:L04:17	28ρ	yo	f94r:L09:17	28ρ	yo	same
+f90r:L04:18	15.	le	f94r:L09:18	15.	le	same
+f90r:L04:19	12.	he	f94r:L10:1	12.	he	same
+f90r:L05:1	111		-	-		gap
+f90r:L05:2	10@r	ar	f94r:L10:2	14+@r	iar	differ-base
+f90r:L05:3	6+	da	f94r:L10:3	6+	da	same
+f90r:L05:4	6ρ	do	f94r:L10:4	6ρ	do	same
+f90r:L05:5	28	y	f94r:L10:5	28	y	same
+f90r:L05:6	21.	que	f94r:L10:6	21.	que	same
+f90r:L05:7	{Rom}		f94r:L10:7	{Rem}		differ-base
+f90r:L05:8	4@s	es	f94r:L10:8	4@s	es	same
+f90r:L05:9	24ρ	to	f94r:L10:9	24ρ	to	same
+f90r:L05:10	24.	te	f94r:L10:10	24.	te	same
+f90r:L05:11	17σ	ni	f94r:L10:11	17σ	ni	same
+f90r:L05:12	10	a	f94r:L10:12	10	a	same
+f90r:L05:13	20ρ@r	por	f94r:L10:13	20ρ@r	por	same
+f90r:L05:14	23σ	si	f94r:L10:14	23σ@n	sin	differ-mark
+-	-		f94r:L10:15	6ρ?	do	gap
+-	-		f94r:L10:16	6σ?	di	gap
+f90r:L05:15	{Su}		f94r:L10:17	6+	da	differ-base
+f90r:L05:16	21.	que	f94r:L10:18	21.	que	same
+f90r:L05:17	23ρ	so	f94r:L11:1	23ρ	so	same
+f90r:L05:18	30+	bra	f94r:L11:2	30+	bra	same
+f90r:L06:1	25+	ua	f94r:L11:3	25+	ua	same
+f90r:L06:2	231		f94r:L11:4	23+	sa	differ-base
+f90r:L06:3	20ρ	po	f94r:L11:5	20ρ	po	same
+f90r:L06:4	6.@m	dem	f94r:L11:6	6.@r	der	differ-mark
+f90r:L06:5	4@n	en	f94r:L11:7	4@n	en	same
+f90r:L06:6	15+	la	f94r:L11:8	15+	la	same
+-	-		f94r:L11:9	16σ	mi	gap
+f90r:L06:7	{Lum}+		f94r:L11:10	16+	ma	differ-base
+f90r:L06:8	7ρ@n	con	f94r:L11:11	7ρ@n	con	same
+f90r:L06:9	2ρ@r	for	f94r:L11:12	2ρ@r	for	same
+f90r:L06:10	16σ	mi	f94r:L11:13	16σ	mi	same
+f90r:L06:11	6+	da	f94r:L11:14	6+	da	same
+f90r:L06:12	{d}		f94r:L11:15	{d}		same
+f90r:L06:13	4@s	es	f94r:L11:16	4	e	differ-mark
+f90r:L06:14	31σ	cri	f94r:L11:17	31σ?	cri	same
+f90r:L06:15	25ρ	uo	f94r:L11:18	28ρ?	yo	differ-base
+f90r:L06:16	6.	de	f94r:L12:1	6.	de	same
+f90r:L06:17	16σ	mi	f94r:L12:2	16σ	mi	same
+f90r:L07:1	16+	ma	f94r:L12:3	16+	ma	same
+f90r:L07:2	17ρ	no	f94r:L12:4	17ρ	no	same
+f90r:L07:3	10@l	al	f94r:L12:5	10@l	al	same
+f90r:L07:4	6σ	di	f94r:L12:6	6σ	di	same
+f90r:L07:5	y	y	f94r:L12:7	y	y	same
+f90r:L07:6	67		f94r:L12:8	6σ	di	differ-base
+f90r:L07:7	16+	ma	f94r:L12:9	16+	ma	same
+f90r:L07:8	32.	dre	f94r:L12:10	32.	dre	same
+f90r:L07:9	22.	re	f94r:L12:11	22.	re	same
+f90r:L07:10	16σ	mi	f94r:L12:12	16σ	mi	same
+f90r:L07:11	24σ	ti	f94r:L12:13	24σ	ti	same
+f90r:L07:12	4@n	en	f94r:L12:14	4@n	en	same
+f90r:L07:13	6ρ	do	f94r:L12:15	6ρ	do	same
+f90r:L07:14	16.	me	f94r:L12:16	16.	me	same
+f90r:L07:15	24ρ	to	f94r:L12:17	24ρ	to	same
+f90r:L07:16	6+	da	f94r:L12:18	6+	da	same
+f90r:L07:17	25σ	ui	f94r:L13:1	25σ	ui	same
+f90r:L07:18	10	a	f94r:L13:2	10	a	same
+f90r:L07:19	{a}		f94r:L13:3	10	a	notation
+f90r:L08:1	15ρ	lo	f94r:L13:4	15ρ	lo	same
+f90r:L08:2	21.	que	f94r:L13:5	21.	que	same
+f90r:L08:3	25ρ	uo	f94r:L13:6	25ρ@s	uos	differ-mark
+f90r:L08:4	15.@s?	les	f94r:L13:7	15.	le	differ-mark
+f90r:L08:5	12+	ha	f94r:L13:8	12+	ha	same
+f90r:L08:6	30+	bra	f94r:L13:9	30+	bra	same
+f90r:L08:7	22.	re	f94r:L13:10	22.	re	same
+f90r:L08:8	13@m?	im	f94r:L13:11	13@s?	is	differ-mark
+f90r:L08:9	6.	de	f94r:L13:12	6.	de	same
+f90r:L08:10	16σ	mi	f94r:L13:13	16σ	mi	same
+f90r:L08:11	0		f94r:L13:14	0		same
+f90r:L08:12	y	y	f94r:L13:15	y	y	same
+f90r:L08:13	4@s	es	f94r:L13:16	4@s	es	same
+f90r:L08:14	24ρ	to	f94r:L13:17	24ρ	to	same
+f90r:L08:15	10	a	f94r:L13:18	10	a	same
+f90r:L08:16	26@n	un	f94r:L13:19	26@n	un	same
+f90r:L08:17	21.	que	f94r:L14:1	21.	que	same
+f90r:L08:18	21.	que	f94r:L14:2	21.	que	same
+f90r:L08:19	6.	de	f94r:L14:3	6.	de	same
+f90r:L09:1	10	a	f94r:L14:4	10	a	same
+f90r:L09:2	8σ	bi	f94r:L14:5	8σ	bi	same
+f90r:L09:3	4@r	er	f94r:L14:6	4@r	er	same
+f90r:L09:4	24+	ta	f94r:L14:7	24+	ta	same
+f90r:L09:5	15+	la	f94r:L14:8	15+	la	same
+f90r:L09:6	20⊣	pu	f94r:L14:9	20+	pa	differ-vowel
+f90r:L09:7	4@r	er	f94r:L14:10	4@r	er	same
+f90r:L09:8	24+	ta	f94r:L14:11	24+	ta	same
+f90r:L09:9	{Qum}		f94r:L14:12	{Rum}		notation
+f90r:L09:10	25+	ua	f94r:L14:13	25+	ua	same
+f90r:L09:11	13@s	is	f94r:L14:14	13@s?	is	same
+f90r:L09:12	12+	ha	f94r:L14:15	12+	ha	same
+f90r:L09:13	29σ	zi	f94r:L14:16	29σ	zi	same
+f90r:L09:14	4@n	en	f94r:L14:17	4@n	en	same
+f90r:L09:15	6ρ	do	f94r:L14:18	6ρ	do	same
+f90r:L09:16	15ρ	lo	f94r:L15:1	15ρ	lo	same
+f90r:L09:17	{Rom}		f94r:L15:2	{xom}@s		differ-base
+f90r:L10:1	21.	que	f94r:L15:3	21.	que	same
+f90r:L10:2	23.	se	f94r:L15:4	23.	se	same
+f90r:L10:3	11⊣@n?	gun	f94r:L15:5	14+@n	ian	differ-base
+f90r:L10:4	4@l	el	f94r:L15:6	4@l	el	same
+f90r:L10:5	100		f94r:L15:7	100		same
+f90r:L10:6	6.	de	f94r:L15:8	6.	de	same
+f90r:L10:7	15+@s	las	f94r:L15:9	15+@s	las	same
+f90r:L10:8	60?		f94r:L15:10	10@s	as	differ-base
+f90r:L10:9	y	y	f94r:L15:11	y	y	same
+f90r:L10:10	4	e	f94r:L15:12	4@l?	el	differ-mark
+-	-		f94r:L15:13	24@r?	tr	gap
+-	-		f94r:L15:14	16σ	mi	gap
+f90r:L10:11	117		f94r:L15:15	17ρ	no	differ-base
+f90r:L10:12	7ρ@n	con	f94r:L15:16	7ρ@n	con	same
+f90r:L10:13	21.	que	f94r:L15:17	21.	que	same
+f90r:L10:14	10	a	f94r:L16:1	10	a	same
+f90r:L10:15	y	y	f94r:L16:2	y	y	same
+f90r:L10:16	23.	se	f94r:L16:3	23.	se	same
+f90r:L10:17	35ρ	pro	f94r:L16:4	35ρ	pro	same
+f90r:L10:18	7.	ce	f94r:L16:5	7.	ce	same
+f90r:L10:19	6σ	di	f94r:L16:6	26σ?	ui	differ-base
+f90r:L10:20	3	e	f94r:L16:7	4	e	variant
+f90r:L10:21	22.	re	f94r:L16:8	22.	re	same
+f90r:L11:1	13	i	f94r:L16:9	13+	ia	differ-vowel
+f90r:L11:2	3	e	f94r:L16:10	?		differ-base
+f90r:L11:3	11+	ga	f94r:L16:11	14+	ia	differ-base
+f90r:L11:4	22.	re	f94r:L16:12	22.	re	same
+f90r:L11:5	6.	de	f94r:L16:13	6.@s	des	differ-mark
+f90r:L11:6	7ρ@n	con	f94r:L16:14	7ρ@n	con	same
+f90r:L11:7	25.	ue	f94r:L16:15	25.	ue	same
+f90r:L11:8	17σ@m?	nim	f94r:L16:16	17σ@r	nir	differ-mark
+f90r:L11:9	10	a	f94r:L16:17	10	a	same
+f90r:L11:10	15σ	li	f94r:L16:18	15ρ	lo	differ-vowel
+f90r:L11:11	24.@r?	ter	f94r:L16:19	24@r?	tr	differ-vowel
+f90r:L11:12	7.	ce	f94r:L17:1	7.	ce	same
+f90r:L11:13	22ρ	ro	f94r:L17:2	22ρ	ro	same
+f90r:L11:14	17ρ	no	f94r:L17:3	17ρ	no	same
+f90r:L11:15	121		f94r:L17:4	12+	ha	differ-base
+f90r:L11:16	25ρ	uo	f94r:L17:5	25ρ	uo	same
+f90r:L11:17	21.	que	f94r:L17:6	21.	que	same
+f90r:L11:18	22.@s?	res	f94r:L17:7	22.@s	res	same
+f90r:L11:19	20ρ@n	pon	f94r:L17:8	20ρ@n	pon	same
+f90r:L12:1	6.@m	dem	f94r:L17:9	6.@r	der	differ-mark
+f90r:L12:2	16+@s	mas	f94r:L17:10	16+@s	mas	same
+f90r:L12:3	6.	de	f94r:L17:11	6.	de	same
+f90r:L12:4	10	a	f94r:L17:12	10	a	same
+f90r:L12:5	34+	gra	f94r:L17:13	34+	gra	same
+f90r:L12:6	6.@s	des	f94r:L17:14	6.@m?	dem	differ-mark
+f90r:L12:7	7.@r	cer	f94r:L17:15	7.@r?	cer	same
+-	-		f94r:L17:16	15.	le	gap
+f90r:L12:8	231		f94r:L17:17	23+	sa	differ-base
+f90r:L12:9	{Xum}		f94r:L18:1	{xum}		same
+f90r:L12:10	y	y	f94r:L18:2	y	y	same
+f90r:L12:11	7ρ@n	con	f94r:L18:3	7ρ@n	con	same
+-	-		f94r:L18:4	24+@n	tan	gap
+f90r:L12:12	115?		f94r:L18:5	24ρ	to	differ-base
+f90r:L12:13	23.	se	f94r:L18:6	23.	se	same
+f90r:L12:14	6.@s	des	f94r:L18:7	6.@s	des	same
+f90r:L12:15	20σ	pi	f94r:L18:8	20σ	pi	same
+f90r:L12:16	6σ	di	f94r:L18:9	6σ	di	same
+f90r:L12:17	18	o	f94r:L18:10	18	o	same
+f90r:L12:18	4@l	el	f94r:L18:11	4@l	el	same
+-	-		f94r:L18:12	6σ	di	gap
+f90r:L12:19	{qua}		f94r:L18:13	7ρ	co	differ-base
+f90r:L13:1	16+	ma	f94r:L18:14	16+	ma	same
+f90r:L13:2	13@n	in	f94r:L18:15	13@n	in	same
+f90r:L13:3	24.	te	f94r:L18:16	24.	te	same
+f90r:L13:4	17ρ@n	non	f94r:L18:17	17ρ@n	non	same
+f90r:L13:5	y	y	f94r:L19:1	y	y	same
+f90r:L13:6	10	a	f94r:L19:2	10	a	same
+-	-		f94r:L19:3	28@r?	yr	gap
+f90r:L13:7	25ρ@s?	uos	f94r:L19:4	25ρ@s?	uos	same
+f90r:L13:8	18@s	os	f94r:L19:5	18@s	os	same
+f90r:L13:9	12+	ha	f94r:L19:6	12+	ha	same
+f90r:L13:10	25.	ue	f94r:L19:7	25.	ue	same
+f90r:L13:11	16ρ	mo	f94r:L19:8	16ρ@s	mos	differ-mark
+f90r:L13:12	21.	que	f94r:L19:9	21.	que	same
+f90r:L13:13	22σ	ri	f94r:L19:10	22σ	ri	same
+f90r:L13:14	6ρ	do	f94r:L19:11	6ρ	do	same
+-	-		f94r:L19:12	10	a	gap
+-	-		f94r:L19:13	25σ	ui	gap
+f90r:L13:15	65+@m		f94r:L19:14	23+@r	sar	differ-base
+f90r:L13:16	6.	de	f94r:L19:15	6.	de	same
+f90r:L13:17	15ρ	lo	f94r:L19:16	15ρ	lo	same
+f90r:L13:18	21.	que	f94r:L19:17	21.	que	same
+f90r:L13:19	4@s?	es	-	-		gap
+f90r:L14:1	7ρ@n	con	f94r:L19:18	7ρ@n	con	same
+f90r:L14:2	4@l	el	f94r:L20:1	4@l	el	same
+f90r:L14:3	23.	se	f94r:L20:2	23.	se	same
+f90r:L14:4	20+	pa	f94r:L20:3	20+	pa	same
+f90r:L14:5	23ρ@2	so	f94r:L20:4	23ρ?	so	variant
+f90r:L14:6	{Qum}		f94r:L20:5	{Rum}		notation
+f90r:L14:7	15ρ	lo	f94r:L20:6	15ρ	lo	same
+f90r:L14:8	24	t	f94r:L20:7	24.@n?	ten	differ-vowel
+f90r:L14:9	11+	ga	f94r:L20:8	14+?	ia	differ-base
+f90r:L14:10	13@s	is	f94r:L20:9	13@s	is	same
+f90r:L14:11	4@n	en	f94r:L20:10	4@n	en	same
+f90r:L14:12	24	t	f94r:L20:11	24.@n?	ten	differ-vowel
+f90r:L14:13	6σ	di	f94r:L20:12	6σ	di	same
+f90r:L14:14	6ρ	do	f94r:L20:13	6ρ	do	same
+f90r:L14:15	y	y	f94r:L20:14	28	y	variant
+f90r:L14:16	21.	que	f94r:L20:15	21.	que	same
+f90r:L14:17	16.	me	f94r:L20:16	16.	me	same
+f90r:L14:18	12+	ha	f94r:L20:17	12+	ha	same
+f90r:L14:19	1.?		-	-		gap
+f90r:L15:1	20+	pa	f94r:L21:1	20+	pa	same
+f90r:L15:2	22.@s?	res	f94r:L21:2	22.@s	res	same
+f90r:L15:3	7σ	ci	f94r:L21:3	7σ	ci	same
+f90r:L15:4	6ρ	do	f94r:L21:4	6ρ	do	same
+f90r:L15:5	35ρ	pro	f94r:L21:5	35ρ	pro	same
+f90r:L15:6	7.	ce	f94r:L21:6	7.	ce	same
+f90r:L15:7	6.@r	der	f94r:L21:7	6.@r	der	same
+f90r:L15:8	20ρ@r	por	f94r:L21:8	20ρ@r	por	same
+f90r:L15:9	4@s	es	f94r:L21:9	4	e	differ-mark
+f90r:L15:10	24+	ta	f94r:L21:10	24+	ta	same
+f90r:L15:11	25σ	ui	f94r:L21:11	25σ	ui	same
+f90r:L15:12	10	a	f94r:L21:12	10	a	same
+f90r:L15:13	20ρ@r	por	f94r:L21:13	20ρ@r	por	same
+f90r:L15:14	15ρ	lo	f94r:L21:14	15ρ	lo	same
+f90r:L15:15	21.	que	f94r:L21:15	21.	que	same
+f90r:L15:16	13@n?	in	f94r:L21:16	13@l	il	differ-mark
+f90r:L15:17	20ρ@r	por	f94r:L21:17	20ρ@r	por	same
+f90r:L16:1	24+	ta	f94r:L21:18	24+	ta	same
+f90r:L16:2	17ρ	no	f94r:L22:1	17ρ	no	same
+f90r:L16:3	6+@r	dar	f94r:L22:2	6+@r	dar	same
+f90r:L16:4	{Vum}		f94r:L22:3	{vum}		same
+f90r:L16:5	10	a	f94r:L22:4	10	a	same
+f90r:L16:6	21.	que	f94r:L22:5	21.	que	same
+f90r:L16:7	23.	se	f94r:L22:6	23.	se	same
+f90r:L16:8	6.	de	f94r:L22:7	6.	de	same
+f90r:L16:9	27.	xe	f94r:L22:8	27.	xe	same
+f90r:L16:10	6.	de	f94r:L22:9	6.	de	same
+f90r:L16:11	4@l	el	f94r:L22:10	4@l	el	same
+f90r:L16:12	8σ	bi	f94r:L22:11	8σ	bi	same
+f90r:L16:13	10@m	am	f94r:L22:12	10@r	ar	differ-mark
+f90r:L16:14	10	a	f94r:L22:13	{a}		notation
+f90r:L16:15	16σ	mi	f94r:L22:14	16σ	mi	same
+f90r:L16:16	{Xal}		f94r:L22:15	{xal}		same
+f90r:L16:17	6.	de	f94r:L22:16	6.	de	same
+f90r:L16:18	23.@2	se	f94r:L22:17	23.?	se	variant
+f90r:L17:1	68		f94r:L22:18	68?		same
+f90r:L17:2	15+	la	f94r:L23:1	15+	la	same
+f90r:L17:3	139		f94r:L23:2	13σ	ii	differ-base
+f90r:L17:4	21.	que	f94r:L23:3	21.	que	same
+f90r:L17:5	12+	ha	f94r:L23:4	12+	ha	same
+f90r:L17:6	16.	me	f94r:L23:5	16.	me	same
+f90r:L17:7	17.@s	nes	f94r:L23:6	17.	ne	differ-mark
+f90r:L17:8	24.@m	tem	f94r:L23:7	24+?	ta	differ-vowel
+f90r:L17:9	{Rom}		f94r:L23:8	{Rom}		same
+-	-		f94r:L23:9	23+	sa	gap
+-	-		f94r:L23:10	23+@s	sas	gap
+f90r:L17:10	231		f94r:L23:11	24.@n?	ten	differ-base
+f90r:L17:11	104		f94r:L23:12	24ρ	to	differ-base
+f90r:L17:12	y	y	f94r:L23:13	28	y	variant
+f90r:L17:13	6.@l	del	f94r:L23:14	6.@l	del	same
+f90r:L17:14	{gul}		f94r:L23:15	{gul}		same
+f90r:L17:15	201		-	-		gap
+f90r:L17:16	4@s	es	f94r:L24:1	20+@s	pas	differ-base
+f90r:L17:17	23σ	si	f94r:L24:2	23σ	si	same
+f90r:L17:18	6?	d	-	-		gap
+f90r:L18:1	15.?	le	f94r:L24:3	15.	le	same
+f90r:L18:2	24+@l	tal	f94r:L24:4	24@l	tl	differ-vowel
+f90r:L18:3	24+	ta	f94r:L24:5	24+	ta	same
+f90r:L18:4	23.@2	se	f94r:L24:6	23.?	se	variant
+f90r:L18:5	13+	ia	f94r:L24:7	12+	ha	differ-base
+f90r:L18:6	15+@n	lan	f94r:L24:8	15+@n	lan	same
+f90r:L18:7	6ρ	do	f94r:L24:9	6ρ	do	same
+f90r:L18:8	23.	se	f94r:L24:10	23.	se	same
+f90r:L18:9	4@n	en	f94r:L24:11	4@n	en	same
+f90r:L18:10	15+	la	f94r:L24:12	15+	la	same
+f90r:L18:11	0		f94r:L24:13	0		same
+f90r:L18:12	y	y	f94r:L24:14	y	y	same
+f90r:L18:13	6.	de	f94r:L24:15	6.	de	same
+f90r:L18:14	15+	la	f94r:L24:16	15+	la	same
+-	-		f94r:L24:17	16+	ma	gap
+-	-		f94r:L24:18	17.	ne	gap
+f90r:L18:15	{ham}		f94r:L25:1	22+	ra	differ-base
+f90r:L18:16	21.	que	f94r:L25:2	21.	que	same
+f90r:L18:17	42		f94r:L25:3	42		same
+f90r:L19:1	23.	se	f94r:L25:4	23.	se	same
+f90r:L19:2	12+	ha	f94r:L25:5	12+	ha	same
+f90r:L19:3	15+@2	la	f94r:L25:6	15+	la	variant
+f90r:L19:4	23.	se	f94r:L25:7	23.	se	same
+f90r:L19:5	22σ	ri	f94r:L25:8	22σ	ri	same
+f90r:L19:6	10	a	f94r:L25:9	10	a	same
+f90r:L19:7	6.@l	del	f94r:L25:10	6.@l	del	same
+f90r:L19:8	13@n	in	-	-		gap
+f90r:L19:9	{Qal}		f94r:L25:11	{Zal}		differ-base
+f90r:L19:10	21.	que	f94r:L25:12	21.	que	same
+f90r:L19:11	23.	se	f94r:L25:13	23.	se	same
+f90r:L19:12	6.	de	f94r:L25:14	6.	de	same
+f90r:L19:13	27+	xa	f94r:L25:15	27+	xa	same
+f90r:L19:14	7ρ@n?	con	f94r:L25:16	7ρ@n	con	same
+f90r:L19:15	23σ	si	f94v:L01:1	23σ	si	same
+f90r:L19:16	6.	de	f94v:L01:2	6.	de	same
+f90r:L19:17	22+@r	rar	f94v:L01:3	22+@m	ram	differ-mark
+-	-		f94v:L01:4	10	a	gap
+-	-		f94v:L01:5	25σ	ui	gap
+f90r:L20:1	65+		f94v:L01:6	23+	sa	differ-base
+f90r:L20:2	22.	re	f94v:L01:7	22.	re	same
+f90r:L20:3	13@s	is	f94v:L01:8	13@s	is	same
+f90r:L20:4	16.	me	f94v:L01:9	16.	me	same
+f90r:L20:5	6.	de	f94v:L01:10	16.	me	differ-base
+f90r:L20:6	15ρ	lo	f94v:L01:11	15ρ	lo	same
+f90r:L20:7	21.	que	f94v:L01:12	21.	que	same
+f90r:L20:8	45		f94v:L01:13	45@l		differ-mark
+f90r:L20:9	20+	pa	f94v:L01:14	20+	pa	same
+f90r:L20:10	23+	sa	f94v:L01:15	23+	sa	same
+f90r:L20:11	22.	re	f94v:L01:16	22.	re	same
+f90r:L20:12	15.	le	f94v:L01:17	15.	le	same
+f90r:L20:13	11+	ga	-	-		gap
+f90r:L20:14	6ρ	do	f94v:L01:18	1?		differ-base
+f90r:L20:15	16+	ma	f94v:L02:1	16+	ma	same
+f90r:L20:16	13@n	in	f94v:L02:2	13@n	in	same
+f90r:L20:17	24.	te	f94v:L02:3	24.	te	same
+f90r:L21:1	17ρ@n	non	f94v:L02:4	17ρ@n	non	same
+f90r:L21:2	y	y	f94v:L02:5	y	y	same
+f90r:L21:3	113		f94v:L02:6	13?	i	differ-base
+f90r:L21:4	10	a	f94v:L02:7	10	a	same
+f90r:L21:5	16σ	mi	f94v:L02:8	16σ	mi	same
+f90r:L21:6	{Xal}		f94v:L02:9	{xal}		same
+f90r:L21:7	{Rom}		-	-		gap
+f90r:L21:8	21.	que	f94v:L02:10	{Rum}		differ-base
+f90r:L21:9	15ρ	lo	f94v:L02:11	15ρ	lo	same
+f90r:L21:10	23.	se	f94v:L02:12	23.	se	same
+f90r:L21:11	20+	pa	f94v:L02:13	20+	pa	same
+f90r:L21:12	16ρ	mo	f94v:L02:14	16ρ	mo	same
+f90r:L21:13	4@n	en	f94v:L02:15	4@n?	en	same
+-	-		f94v:L02:16	20+?	pa	gap
+-	-		f94v:L02:17	24σ?	ti	gap
+f90r:L21:14	1		f94v:L03:1	15+@m	lam	differ-base
+f90r:L21:15	{de}		f94v:L03:2	{de}		same
+f90r:L21:16	23.	se	f94v:L03:3	23.	se	same
+f90r:L21:17	22.	re	f94v:L03:4	22.	re	same
+f90r:L21:18	28σ	yi	f94v:L03:5	21σ	qui	differ-base
+f90r:L21:19	3	e	f94v:L03:6	4	e	variant
+-	-		f94v:L03:7	22.	re	gap
+f90r:L22:1	23σ	si	f94v:L04:1	5σ		differ-base
+f90r:L22:2	12+	ha	f94v:L04:2	12+	ha	same
+f90r:L22:3	25σ	ui	f94v:L04:3	25σ	ui	same
+f90r:L22:4	3	e	f94v:L04:4	4	e	variant
+f90r:L22:5	22.	re	f94v:L04:5	22.?	re	same
+f90r:L22:6	6.@s	des	f94v:L04:6	6.@s?	des	same
+f90r:L22:7	12+	ha	f94v:L04:7	12+	ha	same
+f90r:L22:8	25σ	ui	f94v:L04:8	25σ	ui	same
+f90r:L22:9	6ρ	do	f94v:L04:9	6ρ	do	same
+f90r:L22:10	10@l	al	f94v:L04:10	10@l	al	same
+f90r:L22:11	11⊣?	gu	f94v:L04:11	14+?	ia	differ-base
+f90r:L22:12	17+	na	f94v:L04:12	17+	na	same
+f90r:L22:13	6.	de	f94v:L04:13	6.	de	same
+f90r:L22:14	15+	la	f94v:L04:14	15+	la	same
+f90r:L22:15	91@s?		f94v:L04:15	91@s		same
+f90r:L22:16	2+@l	fal	f94v:L04:16	4@l	el	differ-base
+f90r:L22:17	23+	sa	f94v:L04:17	23+@s	sas	differ-mark
+f90r:L22:18	24.	te	f94v:L04:18	21.	que	differ-base
+f90r:L23:1	23.	se	f94v:L04:19	23?	s	differ-vowel
+f90r:L23:2	201		-	-		gap
+f90r:L23:3	30_σ?		f94v:L05:1	30_σ		same
+f90r:L23:4	7+	ca	-	-		gap
+f90r:L23:5	22ρ@n	ron	f94v:L05:2	22ρ@n	ron	same
+f90r:L23:6	4@n	en	f94v:L05:3	4@n	en	same
+f90r:L23:7	3	e	f94v:L05:4	4	e	variant
+f90r:L23:8	23+@2	sa	f94v:L05:5	23+?	sa	variant
+f90r:L23:9	25σ	ui	f94v:L05:6	25σ	ui	same
+f90r:L23:10	15+	la	f94v:L05:7	15+	la	same
+f90r:L23:11	20ρ@r	por	f94v:L05:8	20ρ@m	pom	differ-mark
+f90r:L23:12	16σ	mi	f94v:L05:9	16σ	mi	same
+f90r:L23:13	10@s	as	f94v:L05:10	10@s	as	same
+f90r:L23:14	{Rom}		f94v:L05:11	{Rom}		same
+f90r:L23:15	4@l	el	f94v:L05:12	4@l	el	same
+f90r:L23:16	6.	de	f94v:L05:13	6.	de	same
+f90r:L24:1	10	a	f94v:L05:14	10	a	same
+f90r:L24:2	15+@n?	lan	f94v:L05:15	15+	la	differ-mark
+f90r:L24:3	7ρ@n	con	f94v:L05:16	7ρ@n	con	same
+f90r:L24:4	y	y	f94v:L05:17	7@l	cl	differ-base
+f90r:L24:5	4@l	el	f94v:L05:18	4@l	el	same
+f90r:L24:6	6.	de	f94v:L05:19	6.	de	same
+f90r:L24:7	8.	be	f94v:L05:20	8?	b	differ-vowel
+f90r:L24:8	10@r	ar	-	-		gap
+f90r:L24:9	17.	ne	f94v:L06:1	17.	ne	same
+f90r:L24:10	21.	que	f94v:L06:2	21.	que	same
+f90r:L24:11	{de}		f94v:L06:3	{de}		same
+f90r:L24:12	6.	de	f94v:L06:4	3.?	ee	differ-base
+f90r:L24:13	29σ@s	zis	f94v:L06:5	29σ@s	zis	same
+f90r:L24:14	7ρ@n	con	f94v:L06:6	7ρ	co	differ-mark
+f90r:L24:15	24σ	ti	f94v:L06:7	24σ	ti	same
+f90r:L24:16	3	e	f94v:L06:8	4	e	variant
+f90r:L24:17	17.@n	nen	f94v:L06:9	17?	n	differ-vowel
+f90r:L24:18	21.	que	f94v:L06:10	21.	que	same
+f90r:L24:19	15.	le	f94v:L06:11	15.	le	same
+f90r:L25:1	18	o	f94v:L06:12	0		notation
+f90r:L25:2	33.@s?	fres	f94v:L06:13	33.	fre	differ-mark
+f90r:L25:3	7σ	ci	-	-		gap
+f90r:L25:4	10	a	f94v:L06:14	7610		differ-base
+f90r:L25:5	28ρ	yo	f94v:L06:15	28ρ	yo	same
+f90r:L25:6	2+	fa	-	-		gap
+f90r:L25:7	25ρ@r?	uor	-	-		gap
+f90r:L25:8	{Rom}		f94v:L06:16	{lal}		differ-base
+f90r:L25:9	21.	que	f94v:L06:17	{Rum}		differ-base
+f90r:L25:10	23.	se	f94v:L06:18	2?	f	differ-base
+f90r:L25:11	10	a	f94v:L07:1	10	a	same
+f90r:L25:12	20ρ	po	f94v:L07:2	20ρ	po	same
+f90r:L25:13	6.	de	f94v:L07:3	6.	de	same
+f90r:L25:14	22.@n?	ren	f94v:L07:4	22.@n	ren	same
+f90r:L25:15	6.	de	f94v:L07:5	6.	de	same
+f90r:L25:16	28+	ya	f94v:L07:6	15+	la	differ-base
+f90r:L25:17	35ρ	pro	f94v:L07:7	35ρ	pro	same
+f90r:L25:18	4@n	en	f94v:L07:8	4@n	en	same
+f90r:L25:19	7+	ca	f94v:L07:9	7+	ca	same
+f90r:L26:1	y	y	f94v:L07:10	y	y	same
+f90r:L26:2	6.	de	f94v:L07:11	6.	de	same
+f90r:L26:3	15ρ	lo	f94v:L07:12	15ρ	lo	same
+f90r:L26:4	21.	que	f94v:L07:13	21.	que	same
+f90r:L26:5	16+@s	mas	f94v:L07:14	16+@s?	mas	same
+f90r:L26:6	20⊣	pu	f94v:L07:15	20+	pa	differ-vowel
+f90r:L26:7	6σ	di	f94v:L07:16	6σ	di	same
+f90r:L26:8	3	e	f94v:L07:17	4	e	variant
+f90r:L26:9	22.@n?	ren	f94v:L07:18	22.@n	ren	same
+f90r:L26:10	4@n	en	-	-		gap
+f90r:L26:11	3	e	f94v:L07:19	4	e	variant
+f90r:L26:12	23.@2	se	-	-		gap
+f90r:L26:13	68		f94v:L08:1	68		same
+f90r:L26:14	23.	se	f94v:L08:2	23.	se	same
+f90r:L26:15	224+		f94v:L08:3	22+	ra	differ-base
+f90r:L26:16	8σ	bi	f94v:L08:4	8σ	bi	same
+f90r:L26:17	4@n	en	f94v:L08:5	4@n	en	same
+f90r:L26:18	21.	que	f94v:L08:6	21.	que	same
+f90r:L26:19	25+?	ua	f94v:L08:7	15+	la	differ-base
+f90r:L26:20	4@l?	el	f94v:L08:8	4@l	el	same
+f90r:L27:1	8σ	bi	f94v:L08:9	8σ	bi	same
+f90r:L27:2	3	e	f94v:L08:10	4	e	variant
+f90r:L27:3	13@s	is	f94v:L08:11	13@s?	is	same
+f90r:L27:4	{Rom}		-	-		gap
+f90r:L27:5	21.	que	f94v:L08:12	{Rum}		differ-base
+f90r:L27:6	23.	se	f94v:L08:13	23.	se	same
+f90r:L27:7	25.	ue	f94v:L08:14	25.	ue	same
+f90r:L27:8	10	a	f94v:L08:15	10	a	same
+f90r:L27:9	4@l	el	f94v:L08:16	4@l	el	same
+f90r:L27:10	24.	te	f94v:L08:17	24.	te	same
+f90r:L27:11	17ρ@m?	nom	f94v:L08:18	17ρ@m	nom	same
+f90r:L27:12	y	y	f94v:L08:19	y?	y	same
+f90r:L27:13	231@s		f94v:L09:1	2316@s		differ-base
+f90r:L27:14	24+@n	tan	f94v:L09:2	24+@n	tan	same
+f90r:L27:15	7σ	ci	f94v:L09:3	70		differ-base
+f90r:L27:16	10	a	f94v:L09:4	10	a	same
+f90r:L27:17	6.	de	f94v:L09:5	6.	de	same
+f90r:L27:18	15+@2	la	f94v:L09:6	15+@s	las	differ-mark
+f90v:L01:1	2⊣	fu	f94v:L10:1	21	q	differ-base
+f90v:L01:2	3	e	f94v:L10:2	4	e	variant
+-	-		f94v:L10:3	161		gap
+f90v:L01:3	{quam}		f94v:L10:4	y	y	differ-base
+f90v:L01:4	8σ	bi	f94v:L10:5	8σ	bi	same
+f90v:L01:5	4@n	en	f94v:L10:6	4@n	en	same
+-	-		f94v:L10:7	10	a	gap
+-	-		f94v:L10:8	25σ	ui	gap
+f90v:L01:6	65+@r		f94v:L10:9	23+@m	sam	differ-base
+f90v:L01:7	17ρ@s	nos	f94v:L10:10	17ρ@s	nos	same
+f90v:L01:8	6.	de	f94v:L10:11	6.	de	same
+f90v:L01:9	15ρ	lo	f94v:L10:12	15ρ	lo	same
+f90v:L01:10	21.	que	f94v:L10:13	21.	que	same
+f90v:L01:11	18@s	os	f94v:L10:14	0@s		notation
+f90v:L01:12	6σ	di	f94v:L10:15	6σ	di	same
+f90v:L01:13	27ρ	xo	f94v:L10:16	27ρ	xo	same
+f90v:L01:14	10	a	f94v:L10:17	10	a	same
+f90v:L01:15	21.	que	f94v:L10:18	21.@l	quel	differ-mark
+f90v:L01:16	6σ	di	f94v:L10:19	6σ?	di	same
+f90v:L01:17	3	e	-	-		gap
+f90v:L01:18	11.	ge	-	-		gap
+f90v:L02:1	15⊣?	lu	f94v:L11:1	151		differ-base
+f90v:L02:2	13@s	is	f94v:L11:2	13@s	is	same
+f90v:L02:3	4@s	es	f94v:L11:3	4@n	en	differ-mark
+f90v:L02:4	63+		f94v:L11:4	63		differ-vowel
+f90v:L02:5	6.	de	f94v:L11:5	6.	de	same
+f90v:L02:6	15+	la	f94v:L11:6	15+@s	las	differ-mark
+f90v:L02:7	17+	na	f94v:L11:7	17+	na	same
+f90v:L02:8	18@s	os	f94v:L11:8	0@s		notation
+f90v:L02:9	6.	de	f94v:L11:9	6.	de	same
+f90v:L02:10	13@n	in	f94v:L11:10	13@n	in	same
+f90v:L02:11	6σ	di	f94v:L11:11	6σ	di	same
+f90v:L02:12	10@s	as	f94v:L11:12	10@s	as	same
+f90v:L02:13	21.	que	f94v:L11:13	21.	que	same
+f90v:L02:14	23.	se	f94v:L11:14	23.	se	same
+f90v:L02:15	24ρ	to	f94v:L11:15	24ρ	to	same
+f90v:L02:16	16+	ma	f94v:L11:16	16+	ma	same
+f90v:L02:17	22ρ@n	ron	f94v:L11:17	22ρ@n	ron	same
+f90v:L02:18	10	a	f94v:L11:18	10	a	same
+f90v:L02:19	25?	u	f94v:L11:19	25+	ua	differ-vowel
+f90v:L03:1	23+@2	sa	f94v:L11:20	23+	sa	variant
+f90v:L03:2	15ρ@s	los	-	-		gap
+f90v:L03:3	{Jam}		f94v:L12:1	{tam}@s		differ-base
+f90v:L03:4	y	y	f94v:L12:2	y	y	same
+f90v:L03:5	6.	de	f94v:L12:3	6.	de	same
+f90v:L03:6	15+	la	f94v:L12:4	15+	la	same
+f90v:L03:7	21.	que	f94v:L12:5	21.	que	same
+f90v:L03:8	23.	se	f94v:L12:6	23.	se	same
+f90v:L03:9	10@r	ar	f94v:L12:7	10@m	am	differ-mark
+f90v:L03:10	16+	ma	f94v:L12:8	16+	ma	same
+f90v:L03:11	25+@n	uan	f94v:L12:9	25+@n?	uan	same
+f90v:L03:12	{Qom}		f94v:L12:10	{Rom}		notation
+f90v:L03:13	24ρ@r	tor	f94v:L12:11	24ρ@m	tom	differ-mark
+f90v:L03:14	17+@r	nar	f94v:L12:12	17+@m	nam	differ-mark
+f90v:L03:15	10	a	f94v:L12:13	10	a	same
+f90v:L03:16	22ρ?	ro	f94v:L12:14	22ρ	ro	same
+f90v:L03:17	8@n?	bn	f94v:L12:15	8+@m	bam	differ-vowel
+f90v:L04:1	21+	qua	f94v:L12:16	21	q	differ-vowel
+f90v:L04:2	7ρ@n	con	f94v:L12:17	7ρ@n	con	same
+f90v:L04:3	2ρ@r	for	-	-		gap
+f90v:L04:4	16.	me	-	-		gap
+f90v:L04:5	10	a	f94v:L13:1	10	a	same
+f90v:L04:6	10	a	f94v:L13:2	{a}		notation
+f90v:L04:7	21.	que	f94v:L13:3	21.	que	same
+f90v:L04:8	15ρ@2	lo	f94v:L13:4	15ρ	lo	variant
+f90v:L04:9	23.	se	f94v:L13:5	23.	se	same
+f90v:L04:10	12+	ha	f94v:L13:6	12+	ha	same
+f90v:L04:11	12.	he	f94v:L13:7	12.	he	same
+f90v:L04:12	7ρ	co	f94v:L13:8	7ρ	co	same
+f90v:L04:13	15+	la	f94v:L13:9	15+	la	same
+-	-		f94v:L13:10	35+?	pra	gap
+-	-		f94v:L13:11	25σ	ui	gap
+-	-		f94v:L13:12	23σ	si	gap
+f90v:L04:14	37+	vra	f94v:L13:13	18@n	on	differ-base
+f90v:L04:15	21.	que	f94v:L13:14	21.	que	same
+f90v:L04:16	12+	ha	f94v:L13:15	12+	ha	same
+f90v:L04:17	20	p	f94v:L13:16	20+	pa	differ-vowel
+f90v:L05:1	22.@s	res	f94v:L13:17	22.@s?	res	same
+f90v:L05:2	{6/2}		-	-		gap
+f90v:L05:3	{2/3}		-	-		gap
+f90v:L05:4	7σ	ci	f94v:L13:18	7?	c	differ-vowel
+f90v:L05:5	6ρ	do	-	-		gap
+f90v:L05:6	7ρ@n	con	f94v:L14:1	7ρ@n	con	same
+f90v:L05:7	25.	ue	f94v:L14:2	25.	ue	same
+f90v:L05:8	17σ@m	nim	f94v:L14:3	17σ@m	nim	same
+f90v:L05:9	y	y	f94v:L14:4	y	y	same
+f90v:L05:10	24.@r	ter	f94v:L14:5	24+	ta	differ-vowel
+f90v:L05:11	17.	ne	f94v:L14:6	17.	ne	same
+f90v:L05:12	13	i	f94v:L14:7	13@s	is	differ-mark
+f90v:L05:13	7⊣	cu	-	-		gap
+f90v:L05:14	y	y	-	-		gap
+f90v:L05:15	6+	da	-	-		gap
+f90v:L05:16	6ρ	do	f94v:L14:8	{mo}		differ-base
+f90v:L05:17	6.	de	f94v:L14:9	6.	de	same
+f90v:L05:18	23+	sa	f94v:L14:10	23+	sa	same
+f90v:L05:19	8.@m	bem	f94v:L14:11	8.@m	bem	same
+-	-		f94v:L14:12	24ρ	to	gap
+f90v:L06:1	6ρ	do	f94v:L14:13	6ρ	do	same
+f90v:L06:2	15ρ	lo	f94v:L14:14	15ρ	lo	same
+f90v:L06:3	6.	de	f94v:L14:15	6.	de	same
+f90v:L06:4	16+@s	mas	f94v:L14:16	16+	ma	differ-mark
+f90v:L06:5	21.	que	f94v:L14:17	21.	que	same
+f90v:L06:6	23.	se	f94v:L14:18	23.	se	same
+f90v:L06:7	20⊣	pu	-	-		gap
+f90v:L06:8	6σ	di	f94v:L15:1	6σ	di	same
+f90v:L06:9	3	e	f94v:L15:2	4	e	variant
+f90v:L06:10	22.	re	f94v:L15:3	22.	re	same
+f90v:L06:11	7.@r	cer	f94v:L15:4	7.@m	cem	differ-mark
+f90v:L06:12	7+	ca	f94v:L15:5	7+	ca	same
+f90v:L06:13	6.@s	des	f94v:L15:6	6.@s	des	same
+f90v:L06:14	24+	ta	f94v:L15:7	24+	ta	same
+f90v:L06:15	16+	ma	f94v:L15:8	16+	ma	same
+f90v:L06:16	24.	te	f94v:L15:9	24.	te	same
+f90v:L06:17	22σ?	ri	f94v:L15:10	22σ	ri	same
+-	-		f94v:L15:11	10	a	gap
+f90v:L06:18	20?	p	f94v:L15:12	y	y	differ-base
+f90v:L07:1	6.	de	f94v:L15:13	6.	de	same
+f90v:L07:2	65+@r		f94v:L15:14	65+@m		differ-mark
+f90v:L07:3	15ρ	lo	f94v:L15:15	15ρ	lo	same
+f90v:L07:4	24+@n	tan	f94v:L15:16	24+@n	tan	same
+f90v:L07:5	4@n	en	f94v:L15:17	4@n	en	same
+-	-		f94v:L15:18	20+@m	pam	gap
+-	-		f94v:L15:19	?		gap
+-	-		f94v:L16:1	71?		gap
+f90v:L07:6	1+		f94v:L16:2	15+@m	lam	differ-base
+f90v:L07:7	{de}		f94v:L16:3	{de}		same
+f90v:L07:8	42		f94v:L16:4	42		same
+f90v:L07:9	15ρ	lo	f94v:L16:5	15ρ	lo	same
+f90v:L07:10	12+	ha	f94v:L16:6	14	i	notation
+f90v:L07:11	25.	ue	f94v:L16:7	25.	ue	same
+f90v:L07:12	13@s	is	f94v:L16:8	13@s	is	same
+f90v:L07:13	12.	he	f94v:L16:9	12.	he	same
+f90v:L07:14	7ρ	co	f94v:L16:10	7ρ	co	same
+f90v:L07:15	y	y	f94v:L16:11	28	y	variant
+f90v:L07:16	10	a	f94v:L16:12	10	a	same
+f90v:L07:17	6ρ@n	don	f94v:L16:13	6ρ@n	don	same
+f90v:L07:18	6.	de	f94v:L16:14	6.	de	same
+-	-		f94v:L16:15	23.	se	gap
+f90v:L08:1	2⊣	fu	f94v:L16:16	21	q	differ-base
+f90v:L08:2	3	e	f94v:L16:17	4?	e	variant
+f90v:L08:3	4@l	el	f94v:L16:18	4@l	el	same
+f90v:L08:4	{qua}		f94v:L16:19	6σ?	di	differ-base
+f90v:L08:5	6σ	di	f94v:L17:1	6σ	di	same
+f90v:L08:6	3	e	f94v:L17:2	4	e	variant
+f90v:L08:7	11ρ	go	f94v:L17:3	14+	ia	differ-base
+f90v:L08:8	15⊣	lu	f94v:L17:4	151		differ-base
+f90v:L08:9	13@s	is	f94v:L17:5	13@s	is	same
+f90v:L08:10	28	y	f94v:L17:6	28	y	same
+f90v:L08:11	23σ	si	f94v:L17:7	23σ	si	same
+f90v:L08:12	20ρ	po	f94v:L17:8	20ρ	po	same
+f90v:L08:13	32σ	dri	f94v:L17:9	32σ	dri	same
+f90v:L08:14	10	a	f94v:L17:10	10	a	same
+f90v:L08:15	23.@r	ser	f94v:L17:11	23	s	differ-vowel
+f90v:L08:16	6.	de	f94v:L17:12	6.	de	same
+-	-		f94v:L17:13	89		gap
+f90v:L09:1	{Qom}		f94v:L17:14	{Rom}		notation
+f90v:L09:2	15ρ	lo	f94v:L17:15	15ρ	lo	same
+f90v:L09:3	21.	que	f94v:L17:16	21.	que	same
+f90v:L09:4	24ρ	to	f94v:L17:17	24?	t	differ-vowel
+f90v:L09:5	7+	ca	-	-		gap
+f90v:L09:6	10	a	f94v:L18:1	10	a	same
+f90v:L09:7	15+	la	f94v:L18:2	15+	la	same
+f90v:L09:8	17+	na	-	-		gap
+f90v:L09:9	25.	ue	-	-		gap
+f90v:L09:10	11+	ga	-	-		gap
+f90v:L09:11	7σ	ci	f94v:L18:3	{rim}		differ-base
+f90v:L09:12	18@n	on	f94v:L18:4	16?	m	differ-base
+f90v:L09:13	6.	de	f94v:L18:5	6.	de	same
+f90v:L09:14	15+	la	f94v:L18:6	15+@s	las	differ-mark
+f90v:L09:15	13@n	in	f94v:L18:7	13@n	in	same
+f90v:L09:16	6σ	di	f94v:L18:8	6σ	di	same
+f90v:L09:17	10@s	as	f94v:L18:9	10@s	as	same
+f90v:L10:1	6.	de	f94v:L18:10	.		differ-base
+f90v:L10:2	{ho}?		f94v:L19:1	{ho}		same
+f90v:L10:3	4@s	es	f94v:L19:2	4@s	es	same
+f90v:L10:4	15ρ	lo	f94v:L19:3	15ρ	lo	same
+f90v:L10:5	21.	que	f94v:L19:4	21.	que	same
+f90v:L10:6	20+	pa	f94v:L19:5	20+	pa	same
+f90v:L10:7	23+@2	sa	f94v:L19:6	23+	sa	variant
+f90v:L10:8	24.@s	tes	f94v:L19:7	24.?	te	differ-mark
+f90v:L10:9	7ρ@n?	con	f94v:L19:8	7ρ@n	con	same
+f90v:L10:10	4@l	el	f94v:L19:9	4@l	el	same
+f90v:L10:11	{Bul}		f94v:L19:10	{bul}		same
+f90v:L10:12	6.	de	f94v:L19:11	6.	de	same
+f90v:L10:13	{Dul}		f94v:L19:12	{dul}		same
+f90v:L10:14	y	y	f94v:L19:13	y	y	same
+f90v:L10:15	23.	se	f94v:L19:14	23.	se	same
+f90v:L10:16	17+	na	f94v:L19:15	17+	na	same
+f90v:L10:17	15+	la	f94v:L19:16	15+?	la	same
+f90v:L11:1	15ρ	lo	f94v:L20:1	15+?	la	differ-vowel
+f90v:L11:2	21.	que	f94v:L20:2	21.	que	same
+f90v:L11:3	10	a	f94v:L20:3	10	a	same
+f90v:L11:4	20σ@n?	pin	f94v:L20:4	20ρ@n	pon	differ-vowel
+f90v:L11:5	24+	ta	f94v:L20:5	24+	ta	same
+f90v:L11:6	13@s	is	f94v:L20:6	13@s	is	same
+f90v:L11:7	21.	que	f94v:L20:7	21.	que	same
+f90v:L11:8	23.	se	f94v:L20:8	23.	se	same
+f90v:L11:9	20ρ	po	f94v:L20:9	20ρ	po	same
+f90v:L11:10	32σ	dri	f94v:L20:10	32σ	dri	same
+f90v:L11:11	10	a	f94v:L20:11	10	a	same
+f90v:L11:12	12+	ha	f94v:L20:12	12+	ha	same
+f90v:L11:13	29.@r	zer	f94v:L20:13	29.@m	zem	differ-mark
+f90v:L11:14	4@l	el	f94v:L20:14	4@l	el	same
+f90v:L11:15	8σ	bi	f94v:L20:15	8σ	bi	same
+f90v:L11:16	10@n	an	f94v:L20:16	9@n	an	variant
+f90v:L11:17	6ρ	do	f94v:L20:17	6ρ	do	same
+f90v:L12:1	7+@s	cas	f94v:L20:18	23.	se	differ-base
+f90v:L12:2	6.	de	f94v:L21:1	6.	de	same
+f90v:L12:3	8σ@l	bil	f94v:L21:2	8σ?	bi	differ-mark
+-	-		f94v:L21:3	5@m		gap
+f90v:L12:4	25+	ua	f94v:L21:4	25+	ua	same
+f90v:L12:5	18	o	f94v:L21:5	0		notation
+f90v:L12:6	10	a	f94v:L21:6	10	a	same
+f90v:L12:7	a	a	f94v:L21:7	{a}		same
+f90v:L12:8	21.@l	quel	f94v:L21:8	21.	que	differ-mark
+f90v:L12:9	68+@s		f94v:L21:9	68		differ-vowel
+f90v:L12:10	7ρ@n?	con	f94v:L21:10	7ρ@n	con	same
+f90v:L12:11	15+	la	f94v:L21:11	15+	la	same
+f90v:L12:12	y	y	-	-		gap
+f90v:L12:13	{im}?		f94v:L21:12	{yim}		differ-base
+f90v:L12:14	y	y	f94v:L21:13	28	y	variant
+f90v:L12:15	71		f94v:L21:14	74?		differ-base
+f90v:L12:16	8σ	bi	f94v:L21:15	8σ	bi	same
+f90v:L12:17	4@r	er	f94v:L21:16	4@m	em	differ-mark
+f90v:L12:18	24+	ta	f94v:L21:17	24+	ta	same
+f90v:L12:19	21	q	f94v:L21:18	21.	que	differ-vowel
+f90v:L13:1	29σ?	zi	-	-		gap
+f90v:L13:2	y	y	f94v:L22:1	28	y	variant
+f90v:L13:3	62		f94v:L22:2	62		same
+f90v:L13:4	23.	se	f94v:L22:3	23.	se	same
+-	-		f94v:L22:4	2@m	fm	gap
+f90v:L13:5	16σ	mi	f94v:L22:5	16σ	mi	same
+f90v:L13:6	22+	ra	f94v:L22:6	22+	ra	same
+f90v:L13:7	22+	ra	f94v:L22:7	24	t	differ-base
+f90v:L13:8	28	y	f94v:L22:8	y	y	variant
+f90v:L13:9	22.	re	f94v:L22:9	22.	re	same
+f90v:L13:10	23ρ	so	f94v:L22:10	23ρ@l	sol	differ-mark
+f90v:L13:11	25.	ue	f94v:L22:11	25.	ue	same
+f90v:L13:12	22+	ra	f94v:L22:12	22+?	ra	same
+f90v:L13:13	25ρ	uo	f94v:L22:13	15ρ	lo	differ-base
+f90v:L13:14	21.	que	f94v:L22:14	21.	que	same
+f90v:L13:15	16	m	f94v:L22:15	16+@s?	mas	differ-vowel
+f90v:L14:1	25.@n	uen	f94v:L22:16	7ρ@n	con	differ-base
+f90v:L14:2	11+	ga	f94v:L22:17	25.	ue	differ-base
+f90v:L14:3	y	y	f94v:L23:1	y	y	same
+f90v:L14:4	10	a	f94v:L23:2	10	a	same
+f90v:L14:5	23⊣?	su	f94v:L23:3	23+	sa	differ-vowel
+f90v:L14:6	118+@s?		f94v:L23:4	118		differ-vowel
+f90v:L14:7	6@3?		-	-		gap
+f90v:L14:8	23.	se	f94v:L23:5	23.	se	same
+f90v:L14:9	18@s	os	f94v:L23:6	18@s	os	same
+-	-		f94v:L23:7	6@m	dm	gap
+f90v:L14:10	6+	da	f94v:L23:8	6+	da	same
+f90v:L14:11	22+	ra	f94v:L23:9	22+?	ra	same
+f90v:L14:12	65		f94v:L23:10	65		same
+f90v:L14:13	6.	de	f94v:L23:11	6.	de	same
+f90v:L14:14	15ρ	lo	f94v:L23:12	15ρ	lo	same
+f90v:L14:15	25ρ	uo	f94v:L23:13	25ρ@s	uos	differ-mark
+f90v:L14:16	y	y	f94v:L23:14	y	y	same
+f90v:L14:17	22.	re	f94v:L23:15	22.	re	same
+-	-		f94v:L23:16	13	i	gap
+-	-		f94v:L23:17	4@n	en	gap
+f90v:L15:1	36.	tre	f94v:L23:18	36.	tre	same
+f90v:L15:2	24.	te	f94v:L23:19	24?	t	differ-vowel
+f90v:L15:3	17σ	ni	-	-		gap
+f90v:L15:4	4@n	en	f94v:L24:1	4@l	el	differ-mark
+f90v:L15:5	6ρ	do	f94v:L24:2	6ρ	do	same
+f90v:L15:6	10@l	al	f94v:L24:3	10@l	al	same
+-	-		f94v:L24:4	6σ	di	gap
+f90v:L15:7	{qua}		f94v:L24:5	7ρ	co	differ-base
+f90v:L15:8	{bul}		f94v:L24:6	{bul}		same
+f90v:L15:9	7ρ@n	con	f94v:L24:7	7ρ@n	con	same
+f90v:L15:10	10	a	f94v:L24:8	10	a	same
+f90v:L15:11	23.	se	f94v:L24:9	23.	se	same
+f90v:L15:12	11⊣?	gu	f94v:L24:10	14+	ia	differ-base
+f90v:L15:13	22+@r	rar	f94v:L24:11	22+@m	ram	differ-mark
+f90v:L15:14	25.	ue	f94v:L24:12	15.	le	differ-base
+f90v:L15:15	21.	que	f94v:L24:13	21.	que	same
+f90v:L15:16	6	d	f94v:L24:14	6.	de	differ-vowel
+-	-		f94v:L24:15	16σ	mi	gap
+f90v:L16:1	0+		f94v:L24:16	0		differ-vowel
+f90v:L16:2	23.	se	f94v:L24:17	23.	se	same
+f90v:L16:3	12+	ha	-	-		gap
+f90v:L16:4	22+	ra	f94v:L24:18	14?	i	differ-base
+f90v:L16:5	4σ	ei	f94v:L25:1	4σ	ei	same
+f90v:L16:6	23.	se	f94v:L25:2	23.	se	same
+f90v:L16:7	20⊣	pu	f94v:L25:3	20+	pa	differ-vowel
+-	-		f94v:L25:4	6σ	di	gap
+f90v:L16:8	663?		f94v:L25:5	4	e	differ-base
+f90v:L16:9	22.	re	f94v:L25:6	22.	re	same
+f90v:L16:10	4@l	el	f94v:L25:7	4@n	en	differ-mark
+f90v:L16:11	72		f94v:L25:8	72		same
+f90v:L16:12	6.	de	f94v:L25:9	6.	de	same
+f90v:L16:13	23⊣?	su	f94v:L25:10	23+	sa	differ-vowel
+f90v:L16:14	67+@s		f94v:L25:11	67		differ-vowel
+f90v:L16:15	y	y	f94v:L25:12	y	y	same
+f90v:L16:16	23.	se	f94v:L25:13	23.	se	same
+-	-		f94v:L25:14	24	t	gap
+f90v:L17:1	8σ?	bi	f94v:L25:15	8σ	bi	same
+f90v:L17:2	4@n	en	f94v:L25:16	4@n	en	same
+f90v:L17:3	21.	que	f94v:L25:17	21.	que	same
+f90v:L17:4	16.	me	f94v:L25:18	16.	me	same
+f90v:L17:5	65.		-	-		gap
+f90v:L17:6	13@s	is	-	-		gap
+f90v:L17:7	23σ	si	f95r:L01:1	23σ	si	same
+f90v:L17:8	3	e	f95r:L01:2	4	e	variant
+f90v:L17:9	23.@2?	se	f95r:L01:3	23.	se	variant
+f90v:L17:10	6σ@s	dis	f95r:L01:4	6σ	di	differ-mark
+f90v:L17:11	18	o	f95r:L01:5	0		notation
+f90v:L17:12	15ρ@s	los	f95r:L01:6	15ρ@s	los	same
+f90v:L17:13	6.	de	f95r:L01:7	6.	de	same
+f90v:L17:14	11⊣?	gu	-	-		gap
+f90v:L17:15	13	i	f95r:L01:8	141		differ-base
+f90v:L17:16	23+	sa	f95r:L01:9	23+	sa	same
+-	-		f95r:L01:10	14+	ia	gap
+f90v:L18:1	29.@n	zen	f95r:L01:11	29.@n	zen	same
+f90v:L18:2	10	a	f95r:L01:12	16@l?	ml	differ-base
+f90v:L18:3	15ρ	lo	f95r:L01:13	144		differ-base
+f90v:L18:4	20ρ@r	por	f95r:L01:14	20ρ@n?	pon	differ-mark
+f90v:L18:5	4	e	f95r:L01:15	4	e	same
+f90v:L18:6	15+@2?	la	f95r:L01:16	151.		differ-base
+f90v:L18:7	28	y	f95r:L01:17	y	y	variant
+f90v:L18:8	23σ	si	f95r:L01:18	23σ	si	same
+-	-		f95r:L01:19	23.	se	gap
+f90v:L18:9	24σ	ti	f95r:L01:20	24σ	ti	same
+f90v:L18:10	3	e	f95r:L01:21	4	e	variant
+f90v:L18:11	17.	ne	f95r:L01:22	17.	ne	same
+f90v:L18:12	24ρ	to	f95r:L02:1	24σ	ti	differ-vowel
+f90v:L18:13	6+	da	f95r:L02:2	64+		differ-base
+f90v:L18:14	28σ?	yi	f95r:L02:3	28σ?	yi	same
+f90v:L18:15	10	a	f95r:L02:4	10	a	same
+-	-		f95r:L02:5	a@n?	an	gap
+f90v:L18:16	10@l	al	f95r:L02:6	14@n?	in	differ-base
+f90v:L19:1	11.	ge	f95r:L02:7	11.	ge	same
+f90v:L19:2	17.	ne	f95r:L02:8	17.	ne	same
+f90v:L19:3	22σ	ri	f95r:L02:9	22ρ	ro	differ-vowel
+f90v:L19:4	6.	de	f95r:L02:10	6.	de	same
+f90v:L19:5	{bum}		f95r:L02:11	{bum}		same
+f90v:L19:6	4@n	en	f95r:L02:12	4@n	en	same
+f90v:L19:7	10	a	f95r:L02:13	10	a	same
+f90v:L19:8	21.@l	quel	f95r:L02:14	21.	que	differ-mark
+f90v:L19:9	68+@s		f95r:L02:15	68@s		differ-vowel
+f90v:L19:10	28	y	f95r:L02:16	28	y	same
+f90v:L19:11	7ρ@n	con	f95r:L02:17	7ρ@n	con	same
+f90v:L19:12	21.	que	f95r:L02:18	21.	que	same
+f90v:L19:13	7+?	ca	f95r:L02:19	7+@s?	cas	differ-mark
+f90v:L19:14	3?	e	-	-		gap
+f90v:L19:15	28	y	f95r:L02:20	y	y	variant
+f90v:L19:16	a	a	f95r:L02:21	10	a	variant
+f90v:L19:17	21?	q	f95r:L02:22	21.	que	differ-vowel
+-	-		f95r:L03:1	26	u	gap
+f90v:L20:1	y	y	f95r:L03:2	28	y	variant
+f90v:L20:2	4@n	en	f95r:L03:3	4.@n	een	differ-vowel
+f90v:L20:3	4σ	ei	f95r:L03:4	4σ	ei	same
+f90v:L20:4	10	a	f95r:L03:5	10	a	same
+f90v:L20:5	15ρ	lo	f95r:L03:6	15ρ	lo	same
+f90v:L20:6	21.	que	f95r:L03:7	21.	que	same
+f90v:L20:7	18@s	os	f95r:L03:8	18@s	os	same
+f90v:L20:8	10	a	f95r:L03:9	10	a	same
+f90v:L20:9	20σ@n?	pin	f95r:L03:10	20@n	pn	differ-vowel
+f90v:L20:10	24ρ	to	f95r:L03:11	24ρ?	to	same
+f90v:L20:11	4@l	el	f95r:L03:12	4@l	el	same
+-	-		f95r:L03:13	6σ	di	gap
+f90v:L20:12	{qua}		f95r:L03:14	7ρ	co	differ-base
+f90v:L20:13	{Bul}		f95r:L03:15	{bull}		differ-base
+f90v:L20:14	6.	de	f95r:L03:16	6.	de	same
+f90v:L20:15	10@n?	an	f95r:L03:17	10@l	al	differ-mark
+-	-		f95r:L03:18	24ρ	to	gap
+f90v:L20:16	244?		f95r:L03:19	17	n	differ-base
+f90v:L21:1	6.	de	f95r:L03:20	6	d	differ-vowel
+-	-		f95r:L03:21	18	o	gap
+f90v:L21:2	16⊣?	mu	f95r:L03:22	6.	de	differ-base
+f90v:L21:3	10	a	f95r:L04:1	144		differ-base
+f90v:L21:4	22+@s	ras	f95r:L04:2	22+@s?	ras	same
+f90v:L21:5	15.	le	f95r:L04:3	15.	le	same
+f90v:L21:6	20ρ	po	f95r:L04:4	20ρ	po	same
+-	-		f95r:L04:5	6@m	dm	gap
+f90v:L21:7	32.	dre	f95r:L04:6	32.	dre	same
+f90v:L21:8	13@s	is	f95r:L04:7	13@s?	is	same
+f90v:L21:9	6.	de	f95r:L04:8	6.	de	same
+f90v:L21:10	29σ?	zi	f95r:L04:9	29σ@m	zim	differ-mark
+f90v:L21:11	21.	que	f95r:L04:10	21.	que	same
+f90v:L21:12	67		f95r:L04:11	67		same
+f90v:L21:13	6ρ@n	don	f95r:L04:12	s	s	differ-base
+f90v:L21:14	8.@m	bem	f95r:L04:13	8.@m	bem	same
+f90v:L21:15	17+@r	nar	f95r:L04:14	17+@m	nam	differ-mark
+f90v:L21:16	6σ	di	f95r:L04:15	6σ	di	same
+f90v:L21:17	11?	g	f95r:L04:16	17ρ	no	differ-base
+f90v:L22:1	6.	de	f95r:L04:17	6.	de	same
+f90v:L22:2	16.@n	men	f95r:L04:18	16.@l	mel	differ-mark
+f90v:L22:3	6⊣?	du	f95r:L04:19	60		differ-base
+f90v:L22:4	7+	ca	f95r:L04:20	7+	ca	same
+f90v:L22:5	4@n	en	f95r:L04:21	4@n	en	same
+f90v:L22:6	{Na}		f95r:L04:22	{na}		same
+f90v:L22:7	6.	de	f95r:L05:1	6.	de	same
+f90v:L22:8	15.	le	f95r:L05:2	15+?	la	differ-vowel
+f90v:L22:9	y?	y	f95r:L05:3	y	y	same
+f90v:L22:10	{im}?		f95r:L05:4	{im}		same
+f90v:L22:11	21.	que	f95r:L05:5	21.	que	same
+f90v:L22:12	6.	de	f95r:L05:6	6.	de	same
+f90v:L22:13	55		f95r:L05:7	55		same
+f90v:L22:14	15.	le	f95r:L05:8	15.	le	same
+f90v:L22:15	25ρ	uo	f95r:L05:9	25ρ	uo	same
+f90v:L22:16	12+	ha	f95r:L05:10	14	i	notation
+f90v:L22:17	12.	he	f95r:L05:11	12.	he	same
+-	-		f95r:L05:12	7ρ	co	gap
+f90v:L23:1	4σ	ei	f95r:L05:13	4σ	ei	same
+f90v:L23:2	12+	ha	f95r:L05:14	14	i	notation
+f90v:L23:3	20ρ	po	f95r:L05:15	20ρ	po	same
+f90v:L23:4	6σ	di	f95r:L05:16	6σ	di	same
+f90v:L23:5	6ρ	do	f95r:L05:17	6ρ	do	same
+f90v:L23:6	{zum}		f95r:L05:18	{Zum}?		same
+f90v:L23:7	21.	que	-	-		gap
+f90v:L23:8	23.	se	f95r:L05:19	23.	se	same
+f90v:L23:9	15.	le	f95r:L05:20	15.	le	same
+f90v:L23:10	6.	de	f95r:L05:21	6.	de	same
+f90v:L23:11	{dom}		f95r:L05:22	{iom}?		differ-base
+f90v:L23:12	15.	le	f95r:L06:1	15.	le	same
+f90v:L23:13	4@s	es	f95r:L06:2	4@s?	es	same
+-	-		f95r:L06:3	31σ	cri	gap
+f90v:L23:14	36?	tr	f95r:L06:4	25ρ	uo	differ-base
+f90v:L23:15	285?		f95r:L06:5	42		differ-base
+f90v:L24:1	y	y	f95r:L06:6	y	y	same
+f90v:L24:2	4@l	el	f95r:L06:7	4@l	el	same
+f90v:L24:3	8σ?	bi	f95r:L06:8	8σ	bi	same
+f90v:L24:4	18.	oe	f95r:L06:9	18	o	differ-vowel
+f90v:L24:5	10	a	f95r:L06:10	10	a	same
+f90v:L24:6	16+@n	man	f95r:L06:11	16+@n	man	same
+f90v:L24:7	6+@r	dar	f95r:L06:12	64+@m		differ-base
+f90v:L24:8	21.	que	f95r:L06:13	21.	que	same
+f90v:L24:9	10	a	f95r:L06:14	10	a	same
+f90v:L24:10	35σ	pri	f95r:L06:15	35σ	pri	same
+f90v:L24:11	3	e	f95r:L06:16	4	e	variant
+f90v:L24:12	24.	te	f95r:L06:17	24.	te	same
+f90v:L24:13	4@l	el	f95r:L06:18	4@l	el	same
+f90v:L24:14	{sem}		f95r:L06:19	{sem}		same
+-	-		f95r:L06:20	{Val}		gap
+f90v:L24:15	12+@s	has	f95r:L06:21	10	a	differ-base
+f90v:L24:16	24+	ta	f95r:L06:22	7+	ca	differ-base
+f90v:L25:1	8+@m	bam	f95r:L07:1	8+@m?	bam	same
+f90v:L25:2	15ρ	lo	f95r:L07:2	15ρ	lo	same
+f90v:L25:3	15⊣?	lu	f95r:L07:3	15ρ	lo	differ-vowel
+f90v:L25:4	16.	me	f95r:L07:4	16.	me	same
+f90v:L25:5	13ρ@r	ior	f95r:L07:5	13ρ@m	iom	differ-mark
+f90v:L25:6	y	y	f95r:L07:6	y	y	same
+f90v:L25:7	16+@s	mas	f95r:L07:7	16+	ma	differ-mark
+f90v:L25:8	35.@s	pres	f95r:L07:8	35.@s	pres	same
+f90v:L25:9	24ρ	to	f95r:L07:9	24ρ	to	same
+f90v:L25:10	21.	que	f95r:L07:10	21.	que	same
+f90v:L25:11	23.	se	f95r:L07:11	23.	se	same
+f90v:L25:12	20⊣	pu	f95r:L07:12	20+	pa	differ-vowel
+f90v:L25:13	6σ	di	f95r:L07:13	26	u	differ-base
+f90v:L25:14	3	e	f95r:L07:14	4	e	variant
+f90v:L25:15	22.	re	f95r:L07:15	22.	re	same
+f90v:L25:16	25ρ	uo	f95r:L07:16	25ρ@s	uos	differ-mark
+-	-		f95r:L07:17	15.	le	gap
+-	-		f95r:L07:18	22.	re	gap
+f90v:L26:1	16σ	mi	f95r:L07:19	16	m	differ-vowel
+-	-		f95r:L07:20	6	d	gap
+f90v:L26:2	24σ	ti	f95r:L07:21	24	t	differ-vowel
+-	-		f95r:L07:22	6	d	gap
+f90v:L26:3	22.	re	f95r:L08:1	22.	re	same
+f90v:L26:4	13@s	is	f95r:L08:2	13@s	is	same
+f90v:L26:5	16σ	mi	f95r:L08:3	16σ	mi	same
+f90v:L26:6	35_σ	pli	f95r:L08:4	35_σ	pli	same
+f90v:L26:7	3	e	f95r:L08:5	4	e	variant
+f90v:L26:8	11ρ?	go	f95r:L08:6	14ρ	io	differ-base
+f90v:L26:9	10@l	al	f95r:L08:7	10@l	al	same
+f90v:L26:10	22.	re	f95r:L08:8	22.	re	same
+f90v:L26:11	7+	ca	f95r:L08:9	7+	ca	same
+f90v:L26:12	25	u	f95r:L08:10	25	u	same
+-	-		f95r:L08:11	2@m	fm	gap
+f90v:L26:13	6ρ	do	f95r:L08:12	6ρ	do	same
+f90v:L26:14	21.	que	f95r:L08:13	21.	que	same
+f90v:L26:15	23ρ	so	f95r:L08:14	23ρ	so	same
+-	-		f95r:L08:15	15.	le	gap
+-	-		f95r:L08:16	13.	ie	gap
+f90v:L26:16	25.	ue	f95r:L09:1	y	y	differ-base
+f90v:L26:17	1?		f95r:L09:2	8+	ba	differ-base
+f90v:L27:1	{Quam}		f95r:L09:3	4	e	differ-base
+f90v:L27:2	79+		f95r:L09:4	17+	na	differ-base
+f90v:L27:3	{Ra}		f95r:L09:5	2	f	differ-base
+f90v:L27:4	12+	ha	f95r:L09:6	14	i	notation
+f90v:L27:5	25.	ue	f95r:L09:7	25.	ue	same
+f90v:L27:6	13@s	is	f95r:L09:8	13@s	is	same
+f90v:L27:7	12.	he	f95r:L09:9	12.	he	same
+f90v:L27:8	7ρ	co	f95r:L09:10	7ρ	co	same
+f90v:L27:9	4@n	en	f95r:L09:11	4@n	en	same
+f90v:L27:10	15ρ	lo	f95r:L09:12	15ρ	lo	same
+-	-		f95r:L09:13	16@m	mm	gap
+f90v:L27:11	6.@l	del	f95r:L09:14	6.@l	del	same
+f90v:L27:12	36σ?	tri	f95r:L09:15	36σ	tri	same
+f90v:L27:13	11ρ	go	f95r:L09:16	14ρ	io	differ-base
+f90v:L27:14	{Rom}		f95r:L09:17	{Rom}		same
+-	-		f95r:L09:18	4@l	el	gap
+f91r:L01:1	10@n	an	f95r:L09:19	10@n	an	same
+f91r:L01:2	6+	da	f95r:L09:20	6+	da	same
+f91r:L01:3	15+	la	f95r:L09:21	15+	la	same
+f91r:L01:4	29σ	zi	f95r:L10:1	29σ	zi	same
+f91r:L01:5	10	a	f95r:L10:2	10	a	same
+f91r:L01:6	y	y	f95r:L10:3	y	y	same
+f91r:L01:7	10	a	f95r:L10:4	10	a	same
+f91r:L01:8	22+	ra	f95r:L10:5	22+	ra	same
+f91r:L01:9	15ρ@n	lon	f95r:L10:6	16ρ@n	mon	differ-base
+f91r:L01:10	23σ	si	f95r:L10:7	23σ	si	same
+f91r:L01:11	23.	se	f95r:L10:8	23.	se	same
+f91r:L01:12	12⊣?	hu	f95r:L10:9	12+?	ha	differ-vowel
+f91r:L01:13	25σ	ui	f95r:L10:10	25σ	ui	same
+f91r:L01:14	3	e	f95r:L10:11	4	e	variant
+f91r:L01:15	22.	re	f95r:L10:12	22.	re	same
+f91r:L01:16	6.	de	f95r:L10:13	6.	de	same
+f91r:L01:17	{V}		f95r:L10:14	25	u	differ-base
+f91r:L02:1	23+@r	sar	f95r:L10:15	23+@m	sam	differ-mark
+f91r:L02:2	6.	de	f95r:L10:16	6.	de	same
+f91r:L02:3	15+	la	f95r:L10:17	15+	la	same
+f91r:L02:4	15σ	li	-	-		gap
+f91r:L02:5	7.@n	cen	-	-		gap
+f91r:L02:6	7	c	-	-		gap
+f91r:L02:7	10	a	f95r:L10:18	{dum}		differ-base
+f91r:L02:8	6.@l	del	f95r:L10:19	6.@l	del	same
+f91r:L02:9	6σ	di	f95r:L10:20	6σ	di	same
+f91r:L02:10	6+	da	f95r:L11:1	64+		differ-base
+f91r:L02:11	22+	ra	f95r:L11:2	22+	ra	same
+f91r:L02:12	23.	se	f95r:L11:3	23.	se	same
+f91r:L02:13	18@s	os	f95r:L11:4	18@s	os	same
+f91r:L02:14	6σ	di	f95r:L11:5	65		differ-base
+f91r:L02:15	6.	de	f95r:L11:6	6.	de	same
+f91r:L02:16	15ρ	lo	f95r:L11:7	15ρ	lo	same
+f91r:L02:17	28	y	f95r:L11:8	y	y	variant
+f91r:L02:18	6.	de	f95r:L11:9	6.	de	same
+f91r:L03:1	15ρ	lo	f95r:L11:10	15ρ	lo	same
+f91r:L03:2	21.	que	f95r:L11:11	21.	que	same
+f91r:L03:3	16+@s	mas	f95r:L11:12	16+	ma	differ-mark
+f91r:L03:4	23.	se	f95r:L11:13	23.@m	sem	differ-mark
+f91r:L03:5	12+	ha	f95r:L11:14	12+?	ha	same
+f91r:L03:6	25σ	ui	f95r:L11:15	25σ	ui	same
+f91r:L03:7	3	e	f95r:L11:16	4	e	variant
+f91r:L03:8	22.	re	f95r:L11:17	22.	re	same
+f91r:L03:9	6.	de	f95r:L11:18	6.	de	same
+f91r:L03:10	12+	ha	f95r:L11:19	14.?	ie	differ-base
+f91r:L03:11	29.@r	zer	f95r:L11:20	29.@m	zem	differ-mark
+f91r:L04:1	25ρ@s	uos	f95r:L12:1	{Vp}@s		differ-base
+f91r:L04:2	16.	me	f95r:L12:2	16.	me	same
+f91r:L04:3	15.	le	f95r:L12:3	15.	le	same
+f91r:L04:4	y	y	f95r:L12:4	y	y	same
+f91r:L04:5	22.	re	f95r:L12:5	22.	re	same
+f91r:L04:6	13@s	is	f95r:L12:6	13@s	is	same
+f91r:L04:7	5+@n		f95r:L12:7	6+@n	dan	differ-base
+f91r:L04:8	6ρ	do	f95r:L12:8	6ρ	do	same
+f91r:L04:9	92		f95r:L12:9	9+	aa	differ-base
+f91r:L04:10	6.	de	f95r:L12:10	6.	de	same
+f91r:L04:11	15ρ	lo	f95r:L12:11	15ρ	lo	same
+f91r:L04:12	21.	que	f95r:L12:12	21.	que	same
+f91r:L04:13	16+	ma	f95r:L12:13	16+	ma	same
+f91r:L04:14	21	q	f95r:L12:14	21	q	same
+f91r:L04:15	3	e	f95r:L12:15	4	e	variant
+f91r:L04:16	22.	re	f95r:L12:16	22.	re	same
+f91r:L04:17	6.@s	des	f95r:L12:17	6.@s?	des	same
+f91r:L04:18	4@n	en	f95r:L12:18	4.@n	een	differ-vowel
+f91r:L04:19	24	t	f95r:L12:19	7.@n	cen	differ-base
+f91r:L05:1	6σ	di	f95r:L12:20	6σ	di	same
+f91r:L05:2	4@n	en	f95r:L12:21	4@n	en	same
+f91r:L05:3	6ρ	do	f95r:L12:22	6ρ	do	same
+f91r:L05:4	6.	de	f95r:L12:23	6.	de	same
+f91r:L05:5	15ρ	lo	f95r:L13:1	15ρ?	lo	same
+f91r:L05:6	10@n	an	f95r:L13:2	10@n	an	same
+f91r:L05:7	6+	da	f95r:L13:3	6+	da	same
+f91r:L05:8	16σ	mi	f95r:L13:4	16σ	mi	same
+f91r:L05:9	4@n	en	f95r:L13:5	4@n	en	same
+f91r:L05:10	24ρ@s	tos	f95r:L13:6	24ρ@s	tos	same
+f91r:L05:11	y	y	f95r:L13:7	y	y	same
+f91r:L05:12	35.	pre	f95r:L13:8	35.	pre	same
+f91r:L05:13	24	t	f95r:L13:9	24.@n	ten	differ-vowel
+f91r:L05:14	23σ	si	f95r:L13:10	23σ?	si	same
+f91r:L05:15	18	o	f95r:L13:11	18	o	same
+f91r:L05:16	17	n	f95r:L13:12	17.	ne	differ-vowel
+f91r:L05:17	6.	de	f95r:L13:13	6.@l	del	differ-mark
+f91r:L05:18	6_.		f95r:L13:14	6.	de	differ-base
+f91r:L05:19	8.	be	f95r:L13:15	8.	be	same
+f91r:L05:20	10@r	ar	f95r:L13:16	10@m	am	differ-mark
+f91r:L05:21	17.	ne	f95r:L13:17	17.	ne	same
+f91r:L06:1	y	y	f95r:L13:18	28	y	variant
+f91r:L06:2	10	a	f95r:L13:19	10	a	same
+f91r:L06:3	6ρ@n	don	f95r:L13:20	5		differ-base
+f91r:L06:4	23+@n	san	f95r:L13:21	23+@n	san	same
+f91r:L06:5	7ρ	co	f95r:L14:1	7ρ	co	same
+f91r:L06:6	6.	de	f95r:L14:2	6.	de	same
+f91r:L06:7	15.	le	f95r:L14:3	15.	le	same
+f91r:L06:8	28	y	f95r:L14:4	y	y	variant
+f91r:L06:9	25+	ua	f95r:L14:5	25+	ua	same
+f91r:L06:10	6.	de	f95r:L14:6	7σ	ci	differ-base
+f91r:L06:11	15ρ	lo	f95r:L14:7	15ρ	lo	same
+f91r:L06:12	21.	que	f95r:L14:8	21.	que	same
+f91r:L06:13	25σ	ui	f95r:L14:9	25σ	ui	same
+f91r:L06:14	3	e	f95r:L14:10	4	e	variant
+f91r:L06:15	22.	re	f95r:L14:11	22.	re	same
+f91r:L06:16	6.@s	des	f95r:L14:12	6.	de	differ-mark
+f91r:L06:17	7ρ@n	con	f95r:L14:13	7ρ@n	con	same
+f91r:L06:18	25.	ue	f95r:L14:14	25.	ue	same
+f91r:L07:1	17σ@r	nir	f95r:L14:15	17σ@m	nim	differ-mark
+f91r:L07:2	10@l	al	f95r:L14:16	16	m	differ-base
+f91r:L07:3	81		f95r:L14:17	8σ	bi	differ-base
+f91r:L07:4	4@n	en	f95r:L14:18	4@n	en	same
+f91r:L07:5	28	y	f95r:L14:19	y	y	variant
+f91r:L07:6	85@s		f95r:L14:20	85		differ-mark
+f91r:L07:7	6.	de	f95r:L15:1	6.	de	same
+f91r:L07:8	{Ram}		f95r:L15:2	Dρ		differ-base
+f91r:L07:9	15ρ	lo	f95r:L15:3	M		differ-base
+f91r:L07:10	23.	se	f95r:L15:4	a	a	differ-base
+f91r:L07:11	23σ	si	f95r:L15:5	x	x	differ-base
+f91r:L07:12	11+?	ga	f95r:L15:6	dρ	do	differ-base
+f91r:L07:13	3	e	f95r:L15:7	Sρ		differ-base
+f91r:L07:14	17ρ	no	f95r:L15:8	1578.		differ-base

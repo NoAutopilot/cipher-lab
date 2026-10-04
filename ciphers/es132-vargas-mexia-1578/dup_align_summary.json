@@ -1,0 +1,53 @@
+{
+ "ref_tokens": 1927,
+ "dup_tokens": 2039,
+ "ref_span": [
+  "f89r:L01:15",
+  "f91r:L07:14"
+ ],
+ "classes_all": {
+  "gap": 292,
+  "same": 1261,
+  "variant": 76,
+  "differ-base": 262,
+  "differ-mark": 108,
+  "differ-vowel": 95,
+  "notation": 34
+ },
+ "classes_both_unflagged": {
+  "same": 1177,
+  "variant": 68,
+  "differ-base": 170,
+  "differ-vowel": 53,
+  "notation": 34,
+  "differ-mark": 76
+ },
+ "aligned_both_unflagged": 1578,
+ "disagree_full": 0.1895,
+ "disagree_core_base_vowel": 0.1413,
+ "disagree_base": 0.1077,
+ "err_true_per_reading_full": 0.0947,
+ "err_true_per_reading_core": 0.0707,
+ "variant_rate": 0.0431,
+ "window_check": {
+  "windows": 387,
+  "skipped": 247,
+  "text_equal": 1,
+  "text_differ": 139,
+  "chars": 401,
+  "char_edits": 252,
+  "anchor_chars": 2697,
+  "char_disagree_rate": 0.0813
+ },
+ "ref_q_in_span": 155,
+ "ref_q_in_span_unprinted": 113,
+ "settlements": {
+  "total": 119,
+  "unprinted": 83,
+  "confirm": 39,
+  "confirm_text": 1,
+  "propose_mark": 16,
+  "propose_vowel": 21,
+  "propose_base": 42
+ }
+}

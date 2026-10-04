@@ -1,0 +1,19 @@
+# BnF Espagnol 132 f95.r -- duplicate cipher copy (f.93r-f.95r) of Philip II to Juan de Vargas Mexia, Madrid, 19 Sept 1578
+# (same letter as f.89r-f.91r; Gallica btv1b10032556x canvases 90-92; regions in NOTES.md "Duplicate copy f.93-95").
+# Two blind Sonnet passes (passes/f95r_passA/B.tsv, run2/pass_prompt_f95r.md), normalised by test2.load_pass, reconciled by
+# run2/reconcile_dup.py f95r with run2/decisions_f95r.tsv (A3V3-ES9396, 4 Oct 2026). ? = not settled by eye. Clear words dropped by load_pass.
+L01	23σ 4 23. 6σ 0 15ρ@s 6. 141 23+ 14+ 29.@n 16@l? 144 20ρ@n? 4 151. y 23σ 23. 24σ 4 17.
+L02	24σ 64+ 28σ? 10 a@n? 14@n? 11. 17. 22ρ 6. {bum} 4@n 10 21. 68@s 28 7ρ@n 21. 7+@s? y 10 21.
+L03	26 28 4.@n 4σ 10 15ρ 21. 18@s 10 20@n 24ρ? 4@l 6σ 7ρ {bull} 6. 10@l 24ρ 17 6 18 6.
+L04	144 22+@s? 15. 20ρ 6@m 32. 13@s? 6. 29σ@m 21. 67 s 8.@m 17+@m 6σ 17ρ 6. 16.@l 60 7+ 4@n {na}
+L05	6. 15+? y {im} 21. 6. 55 15. 25ρ 14 12. 7ρ 4σ 14 20ρ 6σ 6ρ {Zum}? 23. 15. 6. {iom}?
+L06	15. 4@s? 31σ 25ρ 42 y 4@l 8σ 18 10 16+@n 64+@m 21. 10 35σ 4 24. 4@l {sem} {Val} 10 7+
+L07	8+@m? 15ρ 15ρ 16. 13ρ@m y 16+ 35.@s 24ρ 21. 23. 20+ 26 4 22. 25ρ@s 15. 22. 16 6 24 6
+L08	22. 13@s 16σ 35_σ 4 14ρ 10@l 22. 7+ 25 2@m 6ρ 21. 23ρ 15. 13. /
+L09	y 8+ 4 17+ 2 14 25. 13@s 12. 7ρ 4@n 15ρ 16@m 6.@l 36σ 14ρ {Rom} 4@l 10@n 6+ 15+
+L10	29σ 10 y 10 22+ 16ρ@n 23σ 23. 12+? 25σ 4 22. 6. 25 23+@m 6. 15+ {dum} 6.@l 6σ
+L11	64+ 22+ 23. 18@s 65 6. 15ρ y 6. 15ρ 21. 16+ 23.@m 12+? 25σ 4 22. 6. 14.? 29.@m /
+L12	{Vp}@s 16. 15. y 22. 13@s 6+@n 6ρ 9+ 6. 15ρ 21. 16+ 21 4 22. 6.@s? 4.@n 7.@n 6σ 4@n 6ρ 6.
+L13	15ρ? 10@n 6+ 16σ 4@n 24ρ@s y 35. 24.@n 23σ? 18 17. 6.@l 6. 8. 10@m 17. 28 10 5 23+@n
+L14	7ρ 6. 15. y 25+ 7σ 15ρ 21. 25σ 4 22. 6. 7ρ@n 25. 17σ@m 16 8σ 4@n y 85
+L15	6. Dρ M a x dρ Sρ 1578.
