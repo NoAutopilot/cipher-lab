@@ -1,6 +1,6 @@
 # PREREG: multi-seed consensus instrument 2 for the 28 M key signs (RUN3-C1161MS, 4 Oct 2026)
 
-Written about 09:15 UTC 4 Oct 2026 by RUN3-C1161MS (account 1 worker, LANE-RUN3), pushed before any new anneal runs.
+Written 09:07 UTC 4 Oct 2026 by RUN3-C1161MS (account 1 worker, LANE-RUN3), pushed before any new anneal runs.
 Script: `two/consensus.py` (written after this file). Stream, corpus and anneal recipe are those of `tx/PREREG_two_instr.md`
 (N4-C1): the four non-training leaves c186L, c187L, c187R, c188L as merged (N 2465, K 54), `homophonic_anneal.solve`, fr16 order 3,
 restarts 32, iters 40000, uni_w 1.0, nothing held. Instrument 1 = `key.tsv` at this commit (values unchanged since N4-C1).
