@@ -3973,25 +3973,31 @@ recovered-passages per the brief (old value kept in `claim_scope_was`). Per-item
 text rather than names/codes (Gramont f.29r 94%, Thurloe P4 95%, Linhares 88%, Gramont f.30 85%, no.86 83%) and for Mercy (92%:
 no external check and no authentication distance on file).
 
-## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3), 4 October 2026 (opened 04:53 UTC; live)
-Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md (Fable workers).
+## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3, depth 2), 4 October 2026 (opened 04:53 UTC; closed 05:5x UTC on seven_day allowed_warning)
+Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; waves .claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md, -wave2.md (with amendments). Fable workers.
 
-| job | target | session | cap | state | result |
+| job | target | session | cap | cost | result |
 |---|---|---|---|---|---|
-| A3V2-ES7 | es132-vargas-mexia-1578 f.89/f.119 rule-7 + print check | session_013jTRPpSrbGSPGu7dfFXQxN | 3 | done 6.27 | rule-7 SAME 2842/2842 (9 pages); print check: 2 phrase hits are other texts (Cabrera 1625, CODOIN 103), no Vargas Mexia 1578 hit |
-| A3V2-C1161A1 | clair1161-avis-flandre-1688 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | done 9.17 | N3 (key ours), D1 fragments read (C+S 60.7%, longest run 12) -> not a unique solve; no AUDIT 2 due |
-| A3V2-THUR275 | thurloe-printed JUNK_LINE 275 | session_01EnvJP6tAmF4zMw7g7NoLsn | 1.5 | done 3.68 | key 60->59 (275 dropped), control 92.3-92.8%, P4 reading byte-identical |
-| A3V2-MERCY15 | espagnol142-mercy-1648 15 = z at M | session_01W9jPft6xA3NHCebgaKvxYN | 1.5 | done 3.51 | 2 tokens changed, grades unchanged S 488 M 41; AUDIT.md + SO prompt propagated |
-| A3V2-SANG | sanguszkow-mniszech-dunin-1714 R7524 full-size re-test | session_01FgJFpdBRqoNqjBg6xGDkHj | 1.5 | done 4.19 | full-size route open (3 JPEGs, scratch only), cipher legible, leaf 16 Mar 1714 Dukla (I) |
-| A3V2-ROUS | naf14913-rousseau-venice-1743 ff.165r-v, 197v-198r | session_01PBr3sq9Kk4jT1NKJkJeP7p | 8 | done 17.49 | 168 + 296 groups transcribed; no plain side -> f.206 gate non-test; no key change; images 35 MB |
-| A3V2-ES132C4 | es132 Cipher 4 table, catalogue flag, blog threads | session_01Vs1i1ZVe4zT1x5V6ZafBb7 | 4 | done 5.24 | Tomokiyo Cipher 4 PNG on disk; cabinet-noir has transcribed f.87/157/179; catalogue 200 |
-| A3V2-ES132A1 | es132 f.89/f.119 AUDIT 1 | session_017yq89oC9evay2SUWfHvMM3 | 9 | live | |
-| A3V2-ROUS2 | naf14913 Souchon no. 2037 + images < 30 MB | session_01HWbf6HC5ZxMgHY5L1sd6WF | 5 | live | |
-| A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | done 7.42 | blocked -> open; six sources negative; Potocka key covers 132/232 tokens (count); ASKS 125 is another letter |
-| A3V2-SANGTX | sanguszkow R7524 crop transcription | session_01VmSSpLqyuVT4WRgkKTN81b | 12 | live | |
-| A3V2-THURBT | thurloe 67/153 boundary test on page images | session_01T5BLRp6zjaKHCgvCvZsYsz | 9 | live | |
+| A3V2-ES7 | es132 f.89/f.119 rule-7 + print check | session_013jTRPpSrbGSPGu7dfFXQxN | 3 | 6.27 | rule-7 SAME 2842/2842 (9 pages); 2 phrase hits are other texts |
+| A3V2-THUR275 | thurloe-printed JUNK_LINE 275 | session_01EnvJP6tAmF4zMw7g7NoLsn | 1.5 | 3.68 | key 60->59, control 92.3-92.8%, P4 unchanged |
+| A3V2-MERCY15 | espagnol142-mercy-1648 15 = z at M | session_01W9jPft6xA3NHCebgaKvxYN | 1.5 | 3.51 | 2 tokens changed, AUDIT + SO prompt propagated |
+| A3V2-SANG | sanguszkow R7524 full-size re-test | session_01FgJFpdBRqoNqjBg6xGDkHj | 1.5 | 4.19 | full-size open (3 JPEGs, scratch only) |
+| A3V2-C1161A1 | clair1161 AUDIT 1 | session_01HbAeTfYbxnFkZg4Pp6R77R | 8 | 9.17 | N3 (ours), D1 -> not a unique solve, no AUDIT 2 |
+| A3V2-ROUS | naf14913 ff.165r-v, 197v-198r | session_01PBr3sq9Kk4jT1NKJkJeP7p | 8 | 17.49 | 464 groups transcribed, no plain side -> gate non-test |
+| A3V2-ES132C4 | es132 Cipher 4 table, catalogue, blogs | session_01Vs1i1ZVe4zT1x5V6ZafBb7 | 4 | 5.24 | Tomokiyo C4 PNG on disk; cabinet-noir has f.87/157/179 |
+| A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | 7.42 | blocked -> open; ASKS 125 is another letter |
+| A3V2-ES132A1 | es132 f.89/f.119 AUDIT 1 | session_017yq89oC9evay2SUWfHvMM3 | 9 | 9.24 | printed paras N0; unprinted N3; D2 on C text only, D1 on N3 text -> not a unique solve |
+| A3V2-ROUS2 | naf14913 Souchon + images shrink | session_01HWbf6HC5ZxMgHY5L1sd6WF | 5 | 7.40 | images 29.1 MB; Souchon: no plain side (f.165r = no. 2031) |
+| A3V2-SANGTX | sanguszkow R7524 transcription | session_01VmSSpLqyuVT4WRgkKTN81b | 12 | 9.45 | 232 tokens, err_2reader 0, 231/232 vs Bourdeau |
+| A3V2-THURBT | thurloe 67/153 boundary test (images) | session_01T5BLRp6zjaKHCgvCvZsYsz | 9 | 14.83 | K 60.0% met, CONFIRM 79.2% FAIL by one -> non-test |
 
-Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
+Workers 102.86; orchestrator about 4.6 (self-ledger row). New unique solves: none (both audits landed below D2 on their new text).
+Lesson: a Fable worker session costs about 3.5 before work; price per page-pass, not per passage (ROUS 2.2x).
+Open items, cheapest first (none started): sanguszkow design_prior + Potocka trial decode with matched control N=232/77 signs after a Polish
+corpus build (~6); es132 f.93-96 duplicate cipher copy of the 19 Sept letter (err_true + the 113 ? tokens, ~8); thurloe boundary test on the
+other 3 cipher pages + decipherment paragraphs (~8; a fourth run of this test needs that new material, rule 3); naf14913 ff.290r-392v 300 px
+sweep (~3). For the parent: ASKS 125 names the wrong letter (SANGCS); DECODE host-table row is per record (R4692, R7524 served full-size);
+szukajwarchiwach Incapsula-blocks the cloud browser; Chromium NSS cert fix missing in two account-3 containers (setup script).
 
 ## LANE NEAR4 handoff (session_01LRQBWNfFKjoMQfG9LHoUuz, account 2), 4 October 2026 (closed 05:3x UTC: backlog worked, lane budget near)
 
