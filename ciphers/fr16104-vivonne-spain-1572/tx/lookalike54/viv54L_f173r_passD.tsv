@@ -1,0 +1,1119 @@
+passage	pos	sign_id	conf	note	question
+L04	1	f		passC	
+L04	2	{x-crossed}	M	lookalike 2-of-3	
+L04	3	@		passC	
+L04	4	{curl}		passC	
+L04	5	{flourish}	M	lookalike 2-of-3	
+L04	6	h		passC	
+L04	7	t		lookalike UNSETTLED	L04.7: readers -/t, look-alike t (L); which of 4, t?
+L04	8	tz		passC	
+L04	9	m		passC	
+L04	10	o		passC	
+L04	11	o		passC	
+L04	12	g		passC	
+L04	13	d		passC	
+L04	14	z		passC	
+L04	15	@		passC	
+L04	16	m		lookalike UNSETTLED	L04.16: readers m/-, look-alike m (L); which of m, n?
+L04	17	z		passC	
+L04	18	m		passC	
+L04	19	j		passC	
+L04	20	m		passC	
+L04	21	d	M	lookalike 2-of-3	
+L04	22	m		passC	
+L04	23	g		passC	
+L04	24	P		passC	
+L05	1	d		passC	
+L05	2	P		passC	
+L05	3	#		passC	
+L05	4	tz		passC	
+L05	5	p		passC	
+L05	6	P		passC	
+L05	7	r		lookalike UNSETTLED	L05.7: readers -/r, look-alike r (L); which of R, r?
+L05	8	tz		passC	
+L05	9	:		passC	
+L05	10	#		passC	
+L05	11	m		passC	
+L05	12	S		passC	
+L05	13	p		lookalike UNSETTLED	L05.13: readers p/-, look-alike p (L); which of 4, p?
+L05	14	P		passC	
+L05	15	:		passC	
+L05	16	:		passC	
+L05	17	7		passC	
+L05	18	to		passC	
+L05	19	z		passC	
+L05	20	m		passC	
+L05	21	j		passC	
+L05	22	m		lookalike UNSETTLED	L05.22: readers m/n, look-alike m (L); which of m, n?
+L05	23	s		lookalike UNSETTLED	L05.23: readers s/k, look-alike k (L); which of k, s?
+L05	24	m		passC	
+L05	25	d		passC	
+L05	26	tz		passC	
+L05	27	L		passC	
+L05	28	m		passC	
+L05	29	:		passC	
+L05	30	P		passC	
+L05	31	g		passC	
+L05	32	{curl}		lookalike UNSETTLED	L05.32: readers -/{curl}, look-alike {curl} (L); which of c, {curl}?
+L05	33	z		passC	
+L05	34	m		passC	
+L05	35	g		passC	
+L05	36	p		passC	
+L05	37	tz		passC	
+L05	38	m		passC	
+L05	39	L		passC	
+L05	40	m		passC	
+L05	41	m		passC	
+L05	42	p		passC	
+L05	43	:		passC	
+L05	44	:		passC	
+L05	45	7		passC	
+L05	46	to		passC	
+L05	47	z		passC	
+L05	48	tz		passC	
+L06	1	#		passC	
+L06	2	d		passC	
+L06	3	r		passC	
+L06	4	:		passC	
+L06	5	:		passC	
+L06	6	y		passC	
+L06	7	m		passC	
+L06	8	y		passC	
+L06	9	p		passC	
+L06	10	m		passC	
+L06	11	o		passC	
+L06	12	o		passC	
+L06	13	m		passC	
+L06	14	p		passC	
+L06	15	m		passC	
+L06	16	d		lookalike UNSETTLED	L06.16: readers -/d, look-alike d (L); which of S, d?
+L06	17	i	M	lookalike 2-of-3	
+L06	18	m		lookalike UNSETTLED	L06.18: readers m/n, look-alike m (L); which of m, n?
+L06	19	p		lookalike UNSETTLED	L06.19: readers p/#, look-alike 4 (M); which of #, 4, p?
+L06	20	#		passC	
+L06	21	z		passC	
+L06	22	m		passC	
+L06	23	f		passC	
+L06	24	m		passC	
+L06	25	p		passC	
+L06	26	6		passC	
+L06	27	tz		passC	
+L06	28	y		passC	
+L06	29	p		passC	
+L06	30	m		passC	
+L06	31	d		passC	
+L06	32	P		passC	
+L06	33	z		passC	
+L06	34	P		passC	
+L06	35	p		passC	
+L06	36	#		passC	
+L06	37	{flourish}	M	lookalike 2-of-3	
+L06	38	y		passC	
+L06	39	d		passC	
+L06	40	r		passC	
+L06	41	o		passC	
+L06	42	o		passC	
+L06	43	m		passC	
+L06	44	{a		lookalike UNSETTLED	L06.44: readers {a/-, look-alike {a (L); which of {a?
+L06	45	loop}		lookalike UNSETTLED	L06.45: readers loop}/-, look-alike loop} (L); which of loop}, {loop}?
+L06	46	a		lookalike UNSETTLED	L06.46: readers a/@, look-alike a (L); which of @, a?
+L06	47	r		passC	
+L06	48	a		passC	
+L07	1	d		passC	
+L07	2	4		lookalike UNSETTLED	L07.2: readers -/4, look-alike 4 (L); which of 4, p?
+L07	3	tz		lookalike UNSETTLED	L07.3: readers tz/3, look-alike ? (L); which of 3, ?, tz?
+L07	4	p		passC	
+L07	5	4		passC	
+L07	6	d		passC	
+L07	7	x		passC	
+L07	8	tz		passC	
+L07	9	p		passC	
+L07	10	m		passC	
+L07	11	6		passC	
+L07	12	m		passC	
+L07	13	:		passC	
+L07	14	o		passC	
+L07	15	g		passC	
+L07	16	d		passC	
+L07	17	z		passC	
+L07	18	m		passC	
+L07	19	p		passC	
+L07	20	#		passC	
+L07	21	k		passC	
+L07	22	tz		passC	
+L07	23	d		passC	
+L07	24	o		lookalike UNSETTLED	L07.24: readers -/o, look-alike o (L); which of o, p?
+L07	25	tz		passC	
+L07	26	z		passC	
+L07	27	a		passC	
+L07	28	j		passC	
+L07	29	p		passC	
+L07	30	n		lookalike UNSETTLED	L07.30: readers -/n, look-alike n (L); which of n, r?
+L07	31	L		passC	
+L07	32	i		passC	
+L07	33	to		passC	
+L07	34	z		passC	
+L07	35	m		passC	
+L07	36	d		passC	
+L07	37	tz		passC	
+L07	38	k		lookalike UNSETTLED	L07.38: readers -/k, look-alike k (L); which of h, k?
+L07	39	{u}	M	lookalike 2-of-3	
+L07	40	S	M	lookalike 2-of-3	
+L07	41	6		passC	
+L07	42	p		passC	
+L07	43	P		passC	
+L07	44	o		passC	
+L07	45	P		lookalike UNSETTLED	L07.45: readers P/r, look-alike r (L); which of P, r?
+L07	46	y		passC	
+L07	47	#		passC	
+L08	1	P		passC	
+L08	2	a		passC	
+L08	3	l		passC	
+L08	4	g		lookalike UNSETTLED	L08.4: readers g/o, look-alike ? (L); which of ?, g, o?
+L08	5	P		passC	
+L08	6	tz		passC	
+L08	7	o		lookalike UNSETTLED	L08.7: readers -/o, look-alike o (L); which of o, p?
+L08	8	:		passC	
+L08	9	#		passC	
+L08	10	3		passC	
+L08	11	a		passC	
+L08	12	3		passC	
+L08	13	tz		passC	
+L08	14	o		lookalike UNSETTLED	L08.14: readers -/o, look-alike o (L); which of o, p?
+L08	15	:		passC	
+L08	16	#		passC	
+L08	17	4		passC	
+L08	18	m		passC	
+L08	19	i		lookalike UNSETTLED	L08.19: readers -/i, look-alike i (L); which of c, i?
+L08	20	p		passC	
+L08	21	6		passC	
+L08	22	tz		passC	
+L08	23	d		passC	
+L08	24	tz		passC	
+L08	25	6		passC	
+L08	26	@		passC	
+L08	27	S		passC	
+L08	28	d		passC	
+L08	29	p		passC	
+L08	30	#		passC	
+L08	31	l	M	lookalike 2-of-3	
+L08	32	d		passC	
+L08	33	g		passC	
+L08	34	#		passC	
+L08	35	R		passC	
+L08	36	P		lookalike UNSETTLED	L08.36: readers P/-, look-alike P (L); which of P, p?
+L08	37	D	M	lookalike 2-of-3	
+L08	38	d		passC	
+L08	39	S		lookalike UNSETTLED	L08.39: readers -/S, look-alike S (L); which of S, d?
+L08	40	:		passC	
+L08	41	:		passC	
+L08	42	y		passC	
+L08	43	m		passC	
+L08	44	@		passC	
+L08	45	3		passC	
+L08	46	7		passC	
+L08	47	2		passC	
+L08	48	m		passC	
+L09	1	d		passC	
+L09	2	tz		passC	
+L09	3	L		passC	
+L09	4	:		passC	
+L09	5	y		passC	
+L09	6	p		passC	
+L09	7	m		passC	
+L09	8	o		passC	
+L09	9	o		passC	
+L09	10	g		passC	
+L09	11	d		passC	
+L09	12	P		passC	
+L09	13	#		lookalike UNSETTLED	L09.13: readers -/#, look-alike # (L); which of #, x?
+L09	14	p		passC	
+L09	15	{loop}		lookalike UNSETTLED	L09.15: readers -/{loop}, look-alike {loop} (L); which of @, {loop}?
+L09	16	6		passC	
+L09	17	P		passC	
+L09	18	r		lookalike UNSETTLED	L09.18: readers -/r, look-alike r (L); which of R, r?
+L09	19	tz		passC	
+L09	20	3		passC	
+L09	21	m		passC	
+L09	22	d		passC	
+L09	23	3		passC	
+L09	24	m		passC	
+L09	25	e		lookalike UNSETTLED	L09.25: readers e/g, look-alike g (L); which of e, g?
+L09	26	6		passC	
+L09	27	p		passC	
+L09	28	S		passC	
+L09	29	k		lookalike UNSETTLED	L09.29: readers k/h, look-alike k (L); which of h, k?
+L09	30	P		passC	
+L09	31	p		passC	
+L09	32	k		lookalike UNSETTLED	L09.32: readers -/k, look-alike k (L); which of h, k?
+L09	33	h		lookalike UNSETTLED	L09.33: readers h/y, look-alike y (L); which of h, k, y?
+L09	34	g		passC	
+L09	35	m		passC	
+L09	36	d		passC	
+L09	37	m		passC	
+L09	38	p		passC	
+L09	39	k		passC	
+L09	40	P		passC	
+L09	41	p		passC	
+L09	42	4	M	lookalike 2-of-3	
+L09	43	tz		passC	
+L09	44	m		passC	
+L09	45	L		passC	
+L09	46	X		lookalike UNSETTLED	L09.46: readers X/-, look-alike X (L); which of L, X?
+L09	47	d		lookalike UNSETTLED	L09.47: readers d/-, look-alike d (L); which of S, d?
+L09	48	r		lookalike UNSETTLED	L09.48: readers r/{x-crossed}, look-alike r (L); which of R, r, {x-crossed}?
+L10	1	m		passC	
+L10	2	j		passC	
+L10	3	m		passC	
+L10	4	d		passC	
+L10	5	S		passC	
+L10	6	d		passC	
+L10	7	p		passC	
+L10	8	#		passC	
+L10	9	tz		passC	
+L10	10	6		passC	
+L10	11	d		passC	
+L10	12	m		passC	
+L10	13	g		passC	
+L10	14	P		passC	
+L10	15	S		passC	
+L10	16	d		passC	
+L10	17	p		passC	
+L10	18	d		passC	
+L10	19	N		passC	
+L10	20	p		passC	
+L10	21	m		passC	
+L10	22	d		passC	
+L10	23	i		lookalike UNSETTLED	L10.23: readers -/i, look-alike i (L); which of c, i?
+L10	24	m		lookalike UNSETTLED	L10.24: readers m/n, look-alike m (L); which of m, n?
+L10	25	g		passC	
+L10	26	tz		passC	
+L10	27	m		passC	
+L10	28	i		lookalike UNSETTLED	L10.28: readers -/i, look-alike i (L); which of c, i?
+L10	29	#		passC	
+L10	30	P		passC	
+L10	31	r		passC	
+L10	32	p		passC	
+L10	33	#		passC	
+L10	34	m		passC	
+L10	35	p		passC	
+L10	36	:		passC	
+L10	37	:		passC	
+L10	38	7		passC	
+L10	39	to		passC	
+L10	40	z		passC	
+L10	41	tz		passC	
+L10	42	d		passC	
+L10	43	m		passC	
+L10	44	p		passC	
+L10	45	#		passC	
+L11	1	to		passC	
+L11	2	z		passC	
+L11	3	m		passC	
+L11	4	j		passC	
+L11	5	m		passC	
+L11	6	p		passC	
+L11	7	m		passC	
+L11	8	a		passC	
+L11	9	y		passC	
+L11	10	P		passC	
+L11	11	tz		passC	
+L11	12	4		passC	
+L11	13	p		passC	
+L11	14	m	M	lookalike 2-of-3	
+L11	15	S		passC	
+L11	16	tz		passC	
+L11	17	m		passC	
+L11	18	p		passC	
+L11	19	4		passC	
+L11	20	r		lookalike UNSETTLED	L11.20: readers -/r, look-alike r (L); which of R, r?
+L11	21	P		lookalike UNSETTLED	L11.21: readers P/y, look-alike P (L); which of P, r, y?
+L11	22	g		passC	
+L11	23	k		passC	
+L11	24	m		passC	
+L11	25	:		passC	
+L11	26	X		passC	
+L11	27	9		passC	
+L11	28	@		passC	
+L11	29	P		passC	
+L11	30	d		passC	
+L11	31	d		passC	
+L11	32	+	M	lookalike 2-of-3	
+L11	33	z		passC	
+L11	34	P		passC	
+L11	35	g		passC	
+L11	36	@		lookalike UNSETTLED	L11.36: readers -/@, look-alike @ (L); which of @, c?
+L11	37	m		passC	
+L11	38	x		lookalike UNSETTLED	L11.38: readers x/z, look-alike z (L); which of x, z?
+L11	39	tz		passC	
+L11	40	d		passC	
+L11	41	r		passC	
+L11	42	#		passC	
+L11	43	3		passC	
+L11	44	7		passC	
+L12	1	d		passC	
+L12	2	P		passC	
+L12	3	y		passC	
+L12	4	p		passC	
+L12	5	o		passC	
+L12	6	o		passC	
+L12	7	:		passC	
+L12	8	:		passC	
+L12	9	m		passC	
+L12	10	d		passC	
+L12	11	S		lookalike UNSETTLED	L12.11: readers -/S, look-alike S (L); which of S, d?
+L12	12	tz		lookalike UNSETTLED	L12.12: readers tz/z, look-alike tz (L); which of tz, z?
+L12	13	P		passC	
+L12	14	r		lookalike UNSETTLED	L12.14: readers r/-, look-alike r (L); which of R, r?
+L12	15	o		passC	
+L12	16	#		lookalike UNSETTLED	L12.16: readers -/#, look-alike # (L); which of #, x?
+L12	17	#		passC	
+L12	18	P		passC	
+L12	19	p		passC	
+L12	20	#		passC	
+L12	21	d		lookalike UNSETTLED	L12.21: readers d/a, look-alike a (L); which of a, d?
+L12	22	m		passC	
+L12	23	4		passC	
+L12	24	d		passC	
+L12	25	z		passC	
+L12	26	o		passC	
+L12	27	o		passC	
+L12	28	m		passC	
+L12	29	g	M	lookalike 2-of-3	
+L12	30	p		passC	
+L12	31	m		passC	
+L12	32	o		passC	
+L12	33	o		passC	
+L12	34	y	M	lookalike 2-of-3	
+L12	35	p		passC	
+L12	36	d		passC	
+L12	37	o		passC	
+L12	38	o		passC	
+L12	39	z		passC	
+L12	40	m		passC	
+L12	41	P		passC	
+L12	42	o		passC	
+L12	43	o		passC	
+L12	44	@		passC	
+L12	45	m		passC	
+L12	46	z		passC	
+L12	47	tz		passC	
+L13	1	m		passC	
+L13	2	x		passC	
+L13	3	o		lookalike UNSETTLED	L13.3: readers -/o, look-alike o (L); which of o, p?
+L13	4	#		passC	
+L13	5	P		passC	
+L13	6	r		lookalike UNSETTLED	L13.6: readers r/-, look-alike r (L); which of R, r?
+L13	7	z		passC	
+L13	8	tz		passC	
+L13	9	j		passC	
+L13	10	P		passC	
+L13	11	p		passC	
+L13	12	S		passC	
+L13	13	d		passC	
+L13	14	j		passC	
+L13	15	tz		passC	
+L13	16	:		passC	
+L13	17	:		passC	
+L13	18	tz		passC	
+L13	19	#		passC	
+L13	20	m		passC	
+L13	21	tz		passC	
+L13	22	:		passC	
+L13	23	:		passC	
+L13	24	z		passC	
+L13	25	P		passC	
+L13	26	o		passC	
+L13	27	o		passC	
+L13	28	m		passC	
+L13	29	:		passC	
+L13	30	:		passC	
+L13	31	@		passC	
+L13	32	m		passC	
+L13	33	z		passC	
+L13	34	x		lookalike UNSETTLED	L13.34: readers -/x, look-alike x (L); which of x, z?
+L13	35	m		passC	
+L13	36	d		passC	
+L13	37	#		passC	
+L13	38	d		passC	
+L13	39	z		passC	
+L13	40	#		passC	
+L13	41	m		passC	
+L13	42	tz		passC	
+L13	43	z		lookalike UNSETTLED	L13.43: readers z/x, look-alike z (L); which of x, z?
+L13	44	a		passC	
+L13	45	d		passC	
+L13	46	y		passC	
+L13	47	#		passC	
+L13	48	o		passC	
+L13	49	o		passC	
+L13	50	p		passC	
+L13	51	tz		passC	
+L14	1	#		passC	
+L14	2	m		passC	
+L14	3	@		passC	
+L14	4	m		passC	
+L14	5	z		passC	
+L14	6	m		passC	
+L14	7	6		passC	
+L14	8	to		passC	
+L14	9	z		passC	
+L14	10	m		passC	
+L14	11	S		passC	
+L14	12	h		passC	
+L14	13	S		lookalike UNSETTLED	L14.13: readers S/d, look-alike ? (L); which of ?, S, d?
+L14	14	m		passC	
+L14	15	p		passC	
+L14	16	@		passC	
+L14	17	+		lookalike UNSETTLED	L14.17: readers +/4, look-alike ? (L); which of +, 4, ??
+L14	18	#		passC	
+L14	19	3		passC	
+L14	20	m		passC	
+L14	21	a		passC	
+L14	22	g		passC	
+L14	23	tz		passC	
+L14	24	d		passC	
+L14	25	m		passC	
+L14	26	p		passC	
+L14	27	d		passC	
+L14	28	a		passC	
+L14	29	H		lookalike UNSETTLED	L14.29: readers H/-, look-alike H (L); which of H, V?
+L14	30	n		lookalike UNSETTLED	L14.30: readers n/-, look-alike n (L); which of n, r?
+L14	31	o		lookalike UNSETTLED	L14.31: readers o/-, look-alike o (L); which of o, p?
+L14	32	n		lookalike UNSETTLED	L14.32: readers n/3, look-alike ? (L); which of 3, ?, n?
+L14	33	o		passC	
+L14	34	o		passC	
+L14	35	m		passC	
+L14	36	j		passC	
+L14	37	m		passC	
+L14	38	S		passC	
+L14	39	3		passC	
+L14	40	7		passC	
+L14	41	:		passC	
+L14	42	:		passC	
+L14	43	7		passC	
+L14	44	:		passC	
+L14	45	:		passC	
+L14	46	d		passC	
+L14	47	x		passC	
+L14	48	#		passC	
+L14	49	m		passC	
+L15	1	m		lookalike UNSETTLED	L15.1: readers -/m, look-alike m (L); which of m, n?
+L15	2	x		lookalike UNSETTLED	L15.2: readers -/x, look-alike x (L); which of x, z?
+L15	3	o		lookalike UNSETTLED	L15.3: readers -/o, look-alike o (L); which of o, p?
+L15	4	#		lookalike UNSETTLED	L15.4: readers -/#, look-alike # (L); which of #, x?
+L15	5	m		passC	
+L15	6	x		lookalike UNSETTLED	L15.6: readers -/x, look-alike x (L); which of x, z?
+L15	7	g		lookalike UNSETTLED	L15.7: readers -/g, look-alike g (L); which of g, y?
+L15	8	P		lookalike UNSETTLED	L15.8: readers -/P, look-alike P (L); which of P, p?
+L15	9	tz		lookalike UNSETTLED	L15.9: readers -/tz, look-alike tz (L); which of tz, z?
+L15	10	o		lookalike UNSETTLED	L15.10: readers -/o, look-alike o (L); which of o, p?
+L15	11	o		lookalike UNSETTLED	L15.11: readers -/o, look-alike o (L); which of o, p?
+L15	12	#		passC	
+L15	13	m		lookalike UNSETTLED	L15.13: readers -/m, look-alike m (L); which of m, n?
+L15	14	x		passC	
+L15	15	S		lookalike UNSETTLED	L15.15: readers S/g, look-alike g (L); which of S, g?
+L15	16	P		passC	
+L15	17	tz		passC	
+L15	18	:		passC	
+L15	19	:		passC	
+L15	20	#		passC	
+L15	21	y		passC	
+L15	22	p		lookalike UNSETTLED	L15.22: readers p/-, look-alike p (L); which of 4, p?
+L15	23	d		passC	
+L15	24	p		passC	
+L15	25	4		passC	
+L15	26	m		passC	
+L15	27	p		passC	
+L15	28	d		passC	
+L15	29	p		passC	
+L15	30	d		passC	
+L15	31	o		passC	
+L15	32	o		passC	
+L15	33	z		passC	
+L15	34	m		passC	
+L15	35	P		passC	
+L15	36	o		passC	
+L15	37	o		passC	
+L15	38	6		passC	
+L15	39	t		passC	
+L15	40	@		lookalike UNSETTLED	L15.40: readers -/@, look-alike @ (L); which of @, c?
+L15	41	y		passC	
+L15	42	p		lookalike UNSETTLED	L15.42: readers p/-, look-alike p (L); which of 4, p?
+L15	43	d		passC	
+L15	44	p		passC	
+L15	45	z		passC	
+L15	46	tz		passC	
+L15	47	:		passC	
+L15	48	:		passC	
+L15	49	#		passC	
+L15	50	o		passC	
+L15	51	o		passC	
+L15	52	d		passC	
+L15	53	z		passC	
+L15	54	j		passC	
+L16	1	@		lookalike UNSETTLED	L16.1: readers -/@, look-alike @ (L); which of @, c?
+L16	2	tz		lookalike UNSETTLED	L16.2: readers -/tz, look-alike tz (L); which of tz, z?
+L16	3	L		passC	
+L16	4	z		lookalike UNSETTLED	L16.4: readers -/z, look-alike z (L); which of 3, z?
+L16	5	m		passC	
+L16	6	p		passC	
+L16	7	m		passC	
+L16	8	g		passC	
+L16	9	P		passC	
+L16	10	a		passC	
+L16	11	d		passC	
+L16	12	m		passC	
+L16	13	:		passC	
+L16	14	d		passC	
+L16	15	o		passC	
+L16	16	o		passC	
+L16	17	g		passC	
+L16	18	d		passC	
+L16	19	X		passC	
+L16	20	S		passC	
+L16	21	d		passC	
+L16	22	z		passC	
+L16	23	m		passC	
+L16	24	g		lookalike UNSETTLED	L16.24: readers -/g, look-alike g (L); which of g, y?
+L16	25	6		passC	
+L16	26	P		passC	
+L16	27	p		passC	
+L16	28	h		passC	
+L16	29	p		passC	
+L16	30	L	M	lookalike 2-of-3	
+L16	31	g		passC	
+L16	32	m		passC	
+L16	33	d		passC	
+L16	34	tz		passC	
+L16	35	6		passC	
+L16	36	m		passC	
+L16	37	x		passC	
+L16	38	#		passC	
+L16	39	k		passC	
+L16	40	m		passC	
+L16	41	t		lookalike UNSETTLED	L16.41: readers t/f, look-alike t (L); which of 2, f, t?
+L16	42	d		passC	
+L16	43	a		passC	
+L16	44	y		passC	
+L16	45	r		lookalike UNSETTLED	L16.45: readers -/r, look-alike r (L); which of R, r?
+L17	1	P		passC	
+L17	2	o		passC	
+L17	3	o		passC	
+L17	4	m		passC	
+L17	5	:		passC	
+L17	6	to		passC	
+L17	7	z		passC	
+L17	8	m		passC	
+L17	9	d		passC	
+L17	10	y		passC	
+L17	11	p		passC	
+L17	12	m		passC	
+L17	13	d		passC	
+L17	14	4		passC	
+L17	15	P		passC	
+L17	16	y		passC	
+L17	17	p		passC	
+L17	18	6		passC	
+L17	19	P		lookalike UNSETTLED	L17.19: readers P/r, look-alike P (L); which of P, p, r?
+L17	20	tz		passC	
+L17	21	g		passC	
+L17	22	m		passC	
+L17	23	d		passC	
+L17	24	m		passC	
+L17	25	#		passC	
+L17	26	p		passC	
+L17	27	P		passC	
+L17	28	r		lookalike UNSETTLED	L17.28: readers -/r, look-alike r (L); which of R, r?
+L17	29	a		passC	
+L17	30	tz		passC	
+L17	31	g		passC	
+L17	32	m		passC	
+L17	33	d		passC	
+L17	34	S		lookalike UNSETTLED	L17.34: readers -/S, look-alike S (L); which of S, d?
+L17	35	@		passC	
+L17	36	m		passC	
+L17	37	z		passC	
+L17	38	m		passC	
+L17	39	7		passC	
+L17	40	d		passC	
+L17	41	P		passC	
+L17	42	V	M	lookalike 2-of-3	
+L17	43	P		passC	
+L17	44	tz		passC	
+L17	45	m		lookalike UNSETTLED	L17.45: readers m/-, look-alike m (L); which of m, n?
+L17	46	a		lookalike UNSETTLED	L17.46: readers a/-, look-alike a (L); which of a, c?
+L17	47	t		lookalike UNSETTLED	L17.47: readers t/-, look-alike t (L); which of 4, t?
+L18	1	P		passC	
+L18	2	a		passC	
+L18	3	g		passC	
+L18	4	m		passC	
+L18	5	d		passC	
+L18	6	y		lookalike UNSETTLED	L18.6: readers -/y, look-alike y (L); which of g, y?
+L18	7	p		lookalike UNSETTLED	L18.7: readers -/p, look-alike p (L); which of 4, p?
+L18	8	o		lookalike UNSETTLED	L18.8: readers -/o, look-alike o (L); which of o, p?
+L18	9	o		lookalike UNSETTLED	L18.9: readers -/o, look-alike o (L); which of o, p?
+L18	10	z		lookalike UNSETTLED	L18.10: readers -/z, look-alike z (L); which of 3, z?
+L18	11	m		lookalike UNSETTLED	L18.11: readers -/m, look-alike m (L); which of m, n?
+L18	12	p		lookalike UNSETTLED	L18.12: readers -/p, look-alike p (L); which of 4, p?
+L18	13	y		passC	
+L18	14	p		passC	
+L18	15	o		passC	
+L18	16	o		passC	
+L18	17	z		passC	
+L18	18	m		passC	
+L18	19	p		passC	
+L18	20	A	M	lookalike 2-of-3	
+L18	21	P		passC	
+L18	22	3		passC	
+L18	23	p		passC	
+L18	24	d		passC	
+L18	25	tz		passC	
+L18	26	a		passC	
+L18	27	y		passC	
+L18	28	p		passC	
+L18	29	d		passC	
+L18	30	p		passC	
+L18	31	z		passC	
+L18	32	P		passC	
+L18	33	P		passC	
+L18	34	d		passC	
+L18	35	o		passC	
+L18	36	m		passC	
+L18	37	z		lookalike UNSETTLED	L18.37: readers -/z, look-alike z (L); which of 3, z?
+L18	38	o		passC	
+L18	39	z		passC	
+L18	40	g		passC	
+L18	41	m		passC	
+L18	42	@		lookalike UNSETTLED	L18.42: readers @/S, look-alike S (L); which of @, S?
+L18	43	L		passC	
+L18	44	K		lookalike UNSETTLED	L18.44: readers K/-, look-alike K (L); which of K?
+L18	45	tz	H	lookalike 2-of-3	
+L18	46	k		passC	
+L18	47	P		lookalike UNSETTLED	L18.47: readers P/tz, look-alike r (L); which of P, r, tz?
+L18	48	L		lookalike UNSETTLED	L18.48: readers L/h, look-alike L (L); which of L, h, l?
+L18	49	z		passC	
+L18	50	P		passC	
+L18	51	j		passC	
+L18	52	m		passC	
+L19	1	y		passC	
+L19	2	d		passC	
+L19	3	z		lookalike UNSETTLED	L19.3: readers z/3, look-alike 2 (L); which of 2, 3, z?
+L19	4	#	M	lookalike 2-of-3	
+L19	5	m		passC	
+L19	6	d		passC	
+L19	7	z	M	lookalike 2-of-3	
+L19	8	m		passC	
+L19	9	:		passC	
+L19	10	tz		passC	
+L19	11	m		passC	
+L19	12	k		passC	
+L19	13	S		lookalike UNSETTLED	L19.13: readers -/S, look-alike S (L); which of S, d?
+L19	14	m		passC	
+L19	15	#		passC	
+L19	16	m		passC	
+L19	17	x		passC	
+L19	18	#		passC	
+L19	19	z	M	lookalike 2-of-3	
+L19	20	m		passC	
+L19	21	d		passC	
+L19	22	o		passC	
+L19	23	o		passC	
+L19	24	g		passC	
+L19	25	m		passC	
+L19	26	y		passC	
+L19	27	7		passC	
+L19	28	f		lookalike UNSETTLED	L19.28: readers -/f, look-alike f (L); which of f, p?
+L19	29	4		passC	
+L19	30	g		passC	
+L19	31	P		passC	
+L19	32	p		passC	
+L19	33	k	M	lookalike 2-of-3	
+L19	34	z		lookalike UNSETTLED	L19.34: readers z/3, look-alike 2 (L); which of 2, 3, z?
+L19	35	P		passC	
+L19	36	tz		passC	
+L19	37	d		passC	
+L19	38	#		passC	
+L19	39	g		passC	
+L19	40	m		passC	
+L19	41	z	M	lookalike 2-of-3	
+L19	42	m		passC	
+L19	43	y		passC	
+L19	44	7		passC	
+L20	1	a		passC	
+L20	2	g		passC	
+L20	3	P		passC	
+L20	4	r		lookalike UNSETTLED	L20.4: readers r/-, look-alike r (L); which of R, r?
+L20	5	g		passC	
+L20	6	#		passC	
+L20	7	tz		passC	
+L20	8	j		passC	
+L20	9	m		passC	
+L20	10	g		passC	
+L20	11	tz		passC	
+L20	12	7		passC	
+L20	13	p		passC	
+L20	14	d		passC	
+L20	15	z		lookalike UNSETTLED	L20.15: readers z/3, look-alike 2 (L); which of 2, 3, z?
+L20	16	#	M	lookalike 2-of-3	
+L20	17	m		passC	
+L20	18	d		passC	
+L20	19	m		passC	
+L20	20	g		passC	
+L20	21	S		passC	
+L20	22	tz		passC	
+L20	23	j		passC	
+L20	24	d		passC	
+L20	25	p		passC	
+L20	26	y		passC	
+L20	27	p		lookalike UNSETTLED	L20.27: readers -/p, look-alike p (L); which of 4, p?
+L20	28	m		passC	
+L20	29	to		passC	
+L20	30	x	M	lookalike 2-of-3	
+L20	31	m		passC	
+L20	32	y		lookalike UNSETTLED	L20.32: readers -/y, look-alike y (L); which of g, y?
+L20	33	y		passC	
+L20	34	6		passC	
+L20	35	d		passC	
+L20	36	p		passC	
+L20	37	k		passC	
+L20	38	tz		passC	
+L20	39	:		passC	
+L20	40	:		passC	
+L20	41	#		passC	
+L20	42	g		passC	
+L20	43	P		passC	
+L20	44	tz		passC	
+L20	45	L		passC	
+L20	46	7		lookalike UNSETTLED	L20.46: readers -/7, look-alike 7 (L); which of 7, z?
+L21	1	#		passC	
+L21	2	d		passC	
+L21	3	o		passC	
+L21	4	o		passC	
+L21	5	#		passC	
+L21	6	m		passC	
+L21	7	z	M	lookalike 2-of-3	
+L21	8	tz		passC	
+L21	9	j		passC	
+L21	10	tz		passC	
+L21	11	4		passC	
+L21	12	m		passC	
+L21	13	p		passC	
+L21	14	:		passC	
+L21	15	:		passC	
+L21	16	7		passC	
+L21	17	k		passC	
+L21	18	m		passC	
+L21	19	e		lookalike UNSETTLED	L21.19: readers e/g, look-alike g (L); which of e, g?
+L21	20	P		passC	
+L21	21	tz		passC	
+L21	22	g		lookalike UNSETTLED	L21.22: readers -/g, look-alike g (L); which of g, y?
+L21	23	m		passC	
+L21	24	z		passC	
+L21	25	r	M	lookalike 2-of-3	
+L21	26	4		passC	
+L21	27	P	M	lookalike 2-of-3	
+L21	28	@		passC	
+L21	29	tz		passC	
+L21	30	p		passC	
+L21	31	d		passC	
+L21	32	3		passC	
+L21	33	7		passC	
+L21	34	#		passC	
+L21	35	d		passC	
+L21	36	o		passC	
+L21	37	o		passC	
+L21	38	#		passC	
+L21	39	m		passC	
+L21	40	d		passC	
+L21	41	S		lookalike UNSETTLED	L21.41: readers S/-, look-alike S (L); which of S, d?
+L21	42	d		passC	
+L21	43	g		passC	
+L21	44	#		passC	
+L21	45	m		passC	
+L21	46	d		passC	
+L22	1	z	M	lookalike 2-of-3	
+L22	2	m		passC	
+L22	3	z		passC	
+L22	4	a		passC	
+L22	5	p		passC	
+L22	6	tz		passC	
+L22	7	#		passC	
+L22	8	tz		passC	
+L22	9	d		passC	
+L22	10	p		passC	
+L22	11	S		passC	
+L22	12	S		passC	
+L22	13	m		passC	
+L22	14	y		passC	
+L22	15	p		lookalike UNSETTLED	L22.15: readers -/p, look-alike p (L); which of 4, p?
+L22	16	P		lookalike UNSETTLED	L22.16: readers P/r, look-alike r (L); which of P, r?
+L22	17	z		passC	
+L22	18	m		passC	
+L22	19	e		lookalike UNSETTLED	L22.19: readers e/g, look-alike g (L); which of e, g?
+L22	20	P		passC	
+L22	21	tz		passC	
+L22	22	:		passC	
+L22	23	:		passC	
+L22	24	#		passC	
+L22	25	m		passC	
+L22	26	p		passC	
+L22	27	d		passC	
+L22	28	m		passC	
+L22	29	g		passC	
+L22	30	a		lookalike UNSETTLED	L22.30: readers a/@, look-alike a (L); which of @, a, c?
+L22	31	y		passC	
+L22	32	o		lookalike UNSETTLED	L22.32: readers -/o, look-alike o (L); which of o, p?
+L22	33	m		passC	
+L22	34	d		passC	
+L22	35	i		passC	
+L22	36	p		passC	
+L22	37	z		passC	
+L22	38	d		passC	
+L22	39	z		passC	
+L22	40	P		passC	
+L22	41	tz		passC	
+L22	42	a		lookalike UNSETTLED	L22.42: readers -/a, look-alike a (L); which of a, c?
+L22	43	m		passC	
+L22	44	#		lookalike UNSETTLED	L22.44: readers -/#, look-alike # (L); which of #, x?
+L22	45	{x-crossed}		lookalike UNSETTLED	L22.45: readers -/{x-crossed}, look-alike {x-crossed} (L); which of r, {x-crossed}?
+L23	1	k		passC	
+L23	2	m		passC	
+L23	3	h		lookalike UNSETTLED	L23.3: readers -/h, look-alike h (L); which of h, k?
+L23	4	b	M	lookalike 2-of-3	
+L23	5	p		lookalike UNSETTLED	L23.5: readers p/S, look-alike p (L); which of S, p?
+L23	6	m		passC	
+L23	7	p		passC	
+L23	8	y		passC	
+L23	9	p		lookalike UNSETTLED	L23.9: readers -/p, look-alike p (L); which of 4, p?
+L23	10	m		passC	
+L23	11	o		passC	
+L23	12	o		passC	
+L23	13	P		passC	
+L23	14	p		passC	
+L23	15	#		passC	
+L23	16	p		passC	
+L23	17	m		passC	
+L23	18	d	H	lookalike 2-of-3	
+L23	19	m		passC	
+L23	20	g		passC	
+L23	21	P		passC	
+L23	22	y		passC	
+L23	23	p		passC	
+L23	24	d		passC	
+L23	25	p		passC	
+L23	26	4		passC	
+L23	27	m		lookalike UNSETTLED	L23.27: readers m/-, look-alike m (L); which of m, n?
+L23	28	g		lookalike UNSETTLED	L23.28: readers g/-, look-alike g (L); which of g, y?
+L23	29	P		lookalike UNSETTLED	L23.29: readers P/-, look-alike P (L); which of P, p?
+L23	30	y		lookalike UNSETTLED	L23.30: readers y/-, look-alike y (L); which of g, y?
+L23	31	p		lookalike UNSETTLED	L23.31: readers p/-, look-alike p (L); which of 4, p?
+L23	32	d		lookalike UNSETTLED	L23.32: readers d/-, look-alike d (L); which of S, d?
+L23	33	p		lookalike UNSETTLED	L23.33: readers p/-, look-alike p (L); which of 4, p?
+L23	34	V	M	lookalike 2-of-3	
+L23	35	m		passC	
+L23	36	k		passC	
+L23	37	m		passC	
+L23	38	l		passC	
+L23	39	g		passC	
+L23	40	P		passC	
+L23	41	p		passC	
+L23	42	z		lookalike UNSETTLED	L23.42: readers z/3, look-alike z (L); which of 3, z?
+L23	43	m		passC	
+L23	44	m		passC	
+L23	45	p		passC	
+L23	46	#		passC	
+L23	47	g		passC	
+L23	48	m		passC	
+L23	49	o		passC	
+L23	50	y	M	lookalike 2-of-3	
+L24	1	tz		passC	
+L24	2	d	H	lookalike 2-of-3	
+L24	3	m		passC	
+L24	4	x		passC	
+L24	5	r		passC	
+L24	6	tz		passC	
+L24	7	d		passC	
+L24	8	x		passC	
+L24	9	m		passC	
+L24	10	o		passC	
+L24	11	o		passC	
+L24	12	j		passC	
+L24	13	m		passC	
+L24	14	z		lookalike UNSETTLED	L24.14: readers z/3, look-alike 2 (L); which of 2, 3, z?
+L24	15	m		passC	
+L24	16	p		passC	
+L24	17	#		passC	
+L24	18	5		lookalike UNSETTLED	L24.18: readers 5/-, look-alike 5 (L); which of 5, s?
+L24	19	o	M	lookalike 2-of-3	
+L24	20	c	M	lookalike 2-of-3	
+L24	21	g		passC	
+L24	22	m		passC	
+L24	23	#		passC	
+L24	24	m		passC	
+L24	25	p		passC	
+L24	26	k		passC	
+L24	27	m		passC	
+L24	28	p		passC	
+L24	29	#		passC	
+L24	30	o		lookalike UNSETTLED	L24.30: readers o/@, look-alike y (M); which of @, o, y?
+L24	31	P		passC	
+L24	32	g		passC	
+L24	33	:		passC	
+L24	34	:		passC	
+L24	35	m		passC	
+L24	36	x		passC	
+L24	37	#		passC	
+L24	38	m		passC	
+L24	39	P		passC	
+L24	40	c		passC	
+L24	41	b	M	lookalike 2-of-3	
+L24	42	r		passC	
+L24	43	g		passC	
+L24	44	s		passC	
+L24	45	p		passC	
+L25	1	d		passC	
+L25	2	m		passC	
+L25	3	d		passC	
+L25	4	m		passC	
+L25	5	g		passC	
+L25	6	a		passC	
+L25	7	tz		passC	
+L25	8	L		passC	
+L25	9	P		passC	
+L25	10	5		lookalike UNSETTLED	L25.10: readers 5/g, look-alike s (L); which of 5, g, s?
+L25	11	o		passC	
+L25	12	o		passC	
+L25	13	6		passC	
+L25	14	#		passC	
+L25	15	g		passC	
+L25	16	m		passC	
+L25	17	z		passC	
+L25	18	m		passC	
+L25	19	g		passC	
+L25	20	#		lookalike UNSETTLED	L25.20: readers #/-, look-alike # (L); which of #, x?
+L25	21	o		lookalike UNSETTLED	L25.21: readers o/-, look-alike o (L); which of o, p?
+L25	22	o		lookalike UNSETTLED	L25.22: readers o/-, look-alike o (L); which of o, p?
+L25	23	5		lookalike UNSETTLED	L25.23: readers 5/-, look-alike 5 (L); which of 5, s?
+L25	24	tz	M	lookalike 2-of-3	
+L25	25	m		passC	
+L25	26	g		lookalike UNSETTLED	L25.26: readers g/-, look-alike g (L); which of g, y?
+L25	27	P		lookalike UNSETTLED	L25.27: readers P/-, look-alike P (L); which of P, p?
+L25	28	#		lookalike UNSETTLED	L25.28: readers #/-, look-alike # (L); which of #, x?
+L25	29	tz	H	lookalike 2-of-3	
+L25	30	d	M	lookalike 2-of-3	
+L25	31	p		passC	
+L25	32	tz		passC	
+L25	33	S		lookalike UNSETTLED	L25.33: readers -/S, look-alike S (L); which of S, d?
+L25	34	m		passC	
+L25	35	g		passC	
+L25	36	P		passC	
+L25	37	#		passC	
+L25	38	tz		passC	
+L25	39	d		passC	
+L25	40	p		passC	
+L25	41	S		passC	
+L25	42	p		passC	
+L25	43	m		passC	
+L25	44	d		passC	
+L25	45	P		passC	
+L25	46	d		lookalike UNSETTLED	L25.46: readers -/d, look-alike d (L); which of S, d?
+L25	47	S		lookalike UNSETTLED	L25.47: readers S/o, look-alike S (L); which of S, g, o?
+L25	48	m		passC	
+L25	49	o		passC	
+L25	50	o		passC	
+L25	51	g		passC	
+L25	52	m		passC	
+L25	53	L		passC	
+L25	54	P		passC	
+L26	1	:		passC	
+L26	2	:		passC	
+L26	3	7		passC	
+L26	4	p		passC	
+L26	5	m		passC	
+L26	6	x		passC	
+L26	7	#		passC	
+L26	8	P		passC	
+L26	9	a		passC	
+L26	10	6		passC	
+L26	11	#		passC	
+L26	12	P		passC	
+L26	13	#		passC	
+L26	14	to		passC	
+L26	15	2		passC	
+L26	16	m		passC	
+L26	17	j		passC	
+L26	18	m		passC	
+L26	19	o		passC	
+L26	20	o		passC	
+L26	21	m		passC	
+L26	22	b	M	lookalike 2-of-3	
+L26	23	P		passC	
+L26	24	o		lookalike UNSETTLED	L26.24: readers -/o, look-alike o (L); which of o, p?
+L26	25	P		passC	
+L26	26	g		passC	
+L26	27	:		passC	
+L26	28	:		passC	
+L26	29	7		passC	
+L26	30	B	M	lookalike 2-of-3	
+L26	31	p		passC	
+L26	32	tz		passC	
+L26	33	r		passC	
+L26	34	a		passC	
+L26	35	L		passC	
+L26	36	tz		passC	
+L26	37	H		lookalike UNSETTLED	L26.37: readers H/-, look-alike H (L); which of H, V?
+L26	38	n		lookalike UNSETTLED	L26.38: readers n/-, look-alike n (L); which of n, r?
+L26	39	o		lookalike UNSETTLED	L26.39: readers o/-, look-alike o (L); which of o, p?
+L26	40	o		lookalike UNSETTLED	L26.40: readers o/-, look-alike o (L); which of o, p?
+L26	41	m		lookalike UNSETTLED	L26.41: readers m/-, look-alike m (L); which of m, n?
+L27	1	o		passC	
+L27	2	o		passC	
+L27	3	:		lookalike UNSETTLED	L27.3: readers :/-, look-alike : (L); which of :, S?
+L27	4	m		passC	
+L27	5	o		passC	
+L27	6	o		passC	
+L27	7	y		passC	
+L27	8	y		lookalike UNSETTLED	L27.8: readers y/p, look-alike ? (L); which of ?, p, y?
+L27	9	m		passC	
+L27	10	d		passC	
+L27	11	#		passC	
+L27	12	P		passC	
+L27	13	#		passC	
+L27	14	z		lookalike UNSETTLED	L27.14: readers z/3, look-alike ? (L); which of 3, ?, z?
+L27	15	m		passC	
+L27	16	y		passC	
+L27	17	p		passC	
+L27	18	m		passC	
+L27	19	o		passC	
+L27	20	o		passC	
+L27	21	g		passC	
+L27	22	d		passC	
+L27	23	P		passC	
+L27	24	#		passC	
+L27	25	P		passC	
+L27	26	tz		passC	
+L27	27	g		passC	
+L27	28	m		passC	
+L27	29	d		passC	
+L27	30	m		passC	
+L27	31	#		passC	
+L27	32	y		passC	
+L27	33	o		passC	
+L27	34	m		passC	
+L27	35	a		passC	
+L27	36	y		lookalike UNSETTLED	L27.36: readers y/g, look-alike g (L); which of g, y?
+L27	37	d		passC	
+L27	38	z		passC	
+L27	39	m		passC	
+L27	40	#		lookalike UNSETTLED	L27.40: readers -/#, look-alike # (L); which of #, x?
+L27	41	#		passC	
+L27	42	p		passC	
+L27	43	tz		passC	
+L27	44	k		passC	
+L27	45	m		passC	
+L27	46	p		passC	
+L27	47	o		passC	
+L27	48	o		passC	
+L27	49	7		passC	
+L27	50	d	M	lookalike 2-of-3	

@@ -1,0 +1,87 @@
+passage	pos	label	conf	second	note
+L04	2	{x-crossed}	M	{X}	big crossed X
+L04	5	{flourish}	M		flourish sign after the curl a
+L04	21	d	M	s	round body with swash ascender after m j m
+L05	22	m	L		m after j, window ambiguous
+L05	23	k	L	s	k-like hooked stem
+L06	17	i	M	z	small i-like stroke after curled d-sign
+L06	18	m	L		m after the i
+L06	19	4	M	p	crossed-descender 4 before #
+L06	37	{flourish}	M	{swash}	tall double-stroke flourish before y
+L06	46	a	L	@	a after loop; loop+a may be @
+L07	3	?	L		faint, sign not found
+L07	39	{u}	M		u-shaped sign after k
+L07	40	S	M	g	tall curving stroke below line
+L07	45	r	L	P	r with flourish before g
+L08	4	?	L		faint, sign not found
+L08	31	l	M	S	looped l-like tall stroke
+L08	37	D	M	d	D-like swash sign after R pi
+L09	25	g	L	e	looped bowl with tail
+L09	29	k	L	h	b/k-like with hook
+L09	33	y	L	k	heavy swash sign before g
+L09	42	4	M	+	crossed-descender after p
+L09	48	r	L	R	flat-topped small final sign
+L10	24	m	L		window does not match context
+L11	14	m	M		plain m after p
+L11	21	P	L	r	pi-like or r, uncertain
+L11	32	+	M	4	cross-shaped with descender
+L11	38	z	L	x	2-like with flat top
+L12	12	tz	L	z	from neighbouring window t+z descender
+L12	21	a	L	d	small a-like after #
+L12	29	g	M	y	plain g with bowl
+L12	34	y	M	g	y with horizontal bar
+L13	43	z	L	x	flat long bar sign after tz
+L14	13	?	L		context does not match window
+L14	17	?	L		context does not match window
+L14	32	?	L		sign not found
+L15	15	g	L	S	loop with lower swash after x
+L16	30	L	M	h	tall looped l after p h p
+L16	41	t	L	2	2-like with small foot
+L17	19	P	L	p	pi-like after 6
+L17	42	V	M	N	long backslash joined to y
+L18	20	A	M	{A-flourish}	capital A with flourish
+L18	42	S	L		tall slash stroke
+L18	45	tz	H		t with z descender
+L18	47	r	L	tz	small sign after k, uncertain
+L18	48	L	L	l	loop sign Q-like l
+L19	3	2	L	3	round hook top 2-like
+L19	4	#	M	x	smudged double-crossed bar
+L19	7	z	M	3	flat-topped z with descender
+L19	19	z	M	3	flat-topped z after #
+L19	33	k	M	h	hooked k
+L19	34	2	L	3	round-hook 2-like
+L19	41	z	M	3	flat-topped z
+L20	15	2	L	3	2-like sign after d
+L20	16	#	M	x	smudged double-crossed bar
+L20	30	x	M	z	flat-topped bar sign after to
+L21	7	z	M	3	z with curled bottom
+L21	19	g	L	e	looped bowl with swash
+L21	25	r	M	P	T-like r with bar
+L21	27	P	M	p	two uprights with top bar
+L22	1	z	M	3	flat-topped z
+L22	16	r	L	P	bar-topped r-like
+L22	19	g	L	e	looped bowl with swash
+L22	30	a	L	c	small a-like
+L23	4	b	M	6	ascender with bowl and swash
+L23	5	p	L	S	tall stroke with loop top-right
+L23	18	d	H		round body curling ascender
+L23	34	V	M	4	long backslash stroke
+L23	42	z	L	3	flat-topped z
+L23	50	y	M		y with hooked descender
+L24	2	d	H		round d with ascender
+L24	14	2	L	3	2-like hooked top
+L24	19	o	M	to	small round o after 5
+L24	20	c	M	e	small open c
+L24	30	y	M	@	lead-in stroke y
+L24	41	b	M	6	tall stroke with loop
+L25	10	s	L	5	short curled s-like
+L25	24	tz	M		t with z descender
+L25	29	tz	H		t with z descender
+L25	30	d	M		round body with ascender
+L25	47	S	L	g	large swash stroke
+L26	22	b	M	6	big arch with loop
+L26	30	B	M		B-like with swash
+L27	8	?	L		faint, sign not found
+L27	14	?	L		faint, sign not found
+L27	36	g	L	y	hooked bottom
+L27	50	d	M	S	tall stroke with blob

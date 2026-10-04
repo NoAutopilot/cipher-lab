@@ -1,0 +1,75 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+viv54L_f173v	L01	25	Q	Q	@	split	split	Q,@	m o o	d o o		
+viv54L_f173v	L02	9	}	}	m	split	split	},m,{star},b	H { curl	z P d		
+viv54L_f173v	L02	24	+	+	‡	split	split	+,‡,4,p	z m +	tz m L		
+viv54L_f173v	L02	38	z	z	tz	split	split	z,tz,3,2	d x +	: : 7		
+viv54L_f173v	L02	44	x	x	a	split	split	x,a,z,#	7 p m	# to z		
+viv54L_f173v	L02	51	+	+	p	split	split	+,p,4	tz d m	#		
+viv54L_f173v	L03	11	d	d	s	split	split	d,s,S,V	o o g	to d p		
+viv54L_f173v	L03	39	+	+	t	split	split	+,t,4,p	m z m	D i x		
+viv54L_f173v	L03	40	D	D	d	split	split	D,d,#	z m +	i x +		
+viv54L_f173v	L03	41	i	i	P	split	split	i,P,c,e	m + D	x +		
+viv54L_f173v	L04	4	p	p	d	split	split	p,d,4,o	+ m P	P : :		
+viv54L_f173v	L04	12	+	+	{bar}	split	split	+,{bar},4,p	g o p	A l d		
+viv54L_f173v	L04	13	A	A	R	split	split	A,R,@,:	o p +	l d to		
+viv54L_f173v	L04	15	d	d	s	split	split	d,s,S,V	+ A l	to x P		
+viv54L_f173v	L04	33	C	C	@	split	split	C,@,c	y P d	: : P		
+viv54L_f173v	L04	43	R	R	r	split	split	R,r,n	z m to	m 6 to		
+viv54L_f173v	L04	45	6	6	b	split	split	6,b,o	to R m	to z m		
+viv54L_f173v	L05	21	}	}	{star}	split	split	},{star},b	@ { asterisk	z d p		
+viv54L_f173v	L05	29	n	n	r	split	split	n,r,R	# g m	m # k		
+viv54L_f173v	L05	44	k	k	h	split	split	k,h,f	tz L S	P p k		
+viv54L_f173v	L06	10	loop	loop	d	split	split	loop,d	p S {	} m #		
+viv54L_f173v	L06	11	}	}	b	split	split	},b,{star}	S { loop	m # m		
+viv54L_f173v	L06	29	z	z	tz	split	split	z,tz,3,2	z k t	: : #		
+viv54L_f173v	L06	40	g	g	y	split	split	g,y,e	P o P	# tz 6		
+viv54L_f173v	L07	1	R	R	@	split	split	R,@,r,n		d o 6		
+viv54L_f173v	L07	21	+	+	p	split	split	+,p,4	4 + m	# a tz		
+viv54L_f173v	L08	5	p	p	P	split	split	p,P,4,o	+ d i	+ P p		
+viv54L_f173v	L08	12	l	l	|	split	split	l,|,L,d	: : z	p d p		
+viv54L_f173v	L08	29	S	S	d	split	split	S,d,g	p d tz	tz 4 g		
+viv54L_f173v	L08	36	d	d	@	split	split	d,@,S,V	o p k	d z S		
+viv54L_f173v	L08	40	t	t	g	split	split	t,g,4,2	d z S	m : :		
+viv54L_f173v	L09	20	D	D	d	split	split	D,d,#	o p m	Q S d		
+viv54L_f173v	L09	21	Q	Q	@	split	split	Q,@	p m D	S d o		
+viv54L_f173v	L09	27	i	i	m	split	split	i,m,c,e	o o p	x d z		
+viv54L_f173v	L10	8	+	+	p	split	split	+,p,4	d m #	d + p		
+viv54L_f173v	L10	17	}	}	{star}	split	split	},{star},b	o { asterisk	m # d		
+viv54L_f173v	L10	36	a	a	6	split	split	a,6,c,o	c o b	d z m		
+viv54L_f173v	L10	46	y	y	P	split	split	y,P,g,o	d d p	m d S		
+viv54L_f173v	L10	49	S	S	@	split	split	S,@,d,g	y m d	t g d		
+viv54L_f173v	L10	50	t	t	tz	split	split	t,tz,4,2	m d S	g d m		
+viv54L_f173v	L10	51	g	g	p	split	split	g,p,y,e	d S t	d m #		
+viv54L_f173v	L11	1	+	+	p	split	split	+,p,4		d + m		
+viv54L_f173v	L11	3	+	+	p	split	split	+,p,4	+ d	m p :		
+viv54L_f173v	L11	11	+	+	4	split	split	+,4,p	y P g	m d P		
+viv54L_f173v	L11	16	o	o	6	split	split	o,6,p,y	d P 4	P g m		
+viv54L_f173v	L11	28	C	C	c	split	split	C,c,@	X | X	+ tz 6		
+viv54L_f173v	L11	36	o	o	c	split	split	o,c,p,y	J b 7	m o o		
+viv54L_f173v	L12	2	R	R	r	split	split	R,r,n	to	m c d		
+viv54L_f173v	L12	4	c	c	e	split	split	c,e,a	to R m	d y y		
+viv54L_f173v	L12	16	S	S	@	split	split	S,@,d,g	y P p	+ 4 m		
+viv54L_f173v	L12	32	P	P	tz	split	split	P,tz,p,r	6 t S	P p P		
+viv54L_f173v	L12	34	p	p	#	split	split	p,#,4,o	S P P	P tz L		
+viv54L_f173v	L12	40	H	H	{strike}	split	split	H,{strike},V,{H}	L m d	z 3 z		
+viv54L_f173v	L12	48	y	y	g	split	split	y,g,o	: P d	P tz		
+viv54L_f173v	L13	14	+	+	tz	split	split	+,tz,4,p	d d p	p # S		
+viv54L_f173v	L13	17	S	S	g	split	split	S,g,d	+ p #	# z o		
+viv54L_f173v	L13	23	8	8	@	split	split	8,@,d,2	o o 3	m x tz		
+viv54L_f173v	L14	43	b	b	6	split	split	b,6,V	y y o	P k m		
+viv54L_f173v	L15	11	+	+	4	split	split	+,4,p	: 4 tz	to tz d		
+viv54L_f173v	L15	20	t	t	@	split	split	t,@,4,2	g d s	tz 6 m		
+viv54L_f173v	L15	30	z	z	tz	split	split	z,tz,3,2	# d t	# z z		
+viv54L_f173v	L15	33	z	z	d	split	split	z,d,3,2	z # z	y x d		
+viv54L_f173v	L15	45	+	+	4	split	split	+,4,p	z m d	g P p		
+viv54L_f173v	L15	47	P	P	r	split	split	P,r,p	d + g	p k		
+viv54L_f173v	L16	5	o	o	6	split	split	o,6,p,y	P P tz	V d m		
+viv54L_f173v	L17	12	n	n	y	split	split	n,y,r,R	y d e	m to z		
+viv54L_f173v	L17	25	d	d	o	split	split	d,o,S,V	# o p	o p b		
+viv54L_f173v	L18	24	z	z	@	split	split	z,@,3,2	m p Q	y p m		
+viv54L_f173v	L19	33	:	:	j	split	split	:,j,S,r	P p :	d p #		
+viv54L_f173v	L19	40	p	p	a	split	split	p,a,4,o	g m y	m p x		
+viv54L_f173v	L19	41	m	m	@	split	split	m,@,n,{curl}m	m y p	p x L		
+viv54L_f173v	L19	42	p	p	+	split	split	p,+,4,o	y p m	x L		
+viv54L_f173v	L19	43	x	x	@	split	split	x,@,z,#	p m p	L		
+viv54L_f173v	L19	44	L	L	S	split	split	L,S,l,Z	m p x			

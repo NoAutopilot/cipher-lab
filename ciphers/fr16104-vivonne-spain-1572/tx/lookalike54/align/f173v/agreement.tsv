@@ -1,0 +1,935 @@
+passage	posA	idA	idB	status	merged
+L01	1	@	@	agree	@
+L01	2	f	f	agree	f
+L01	3	d	d	agree	d
+L01	4	+	+	agree	+
+L01	5	a	a	agree	a
+L01	6	tz	tz	agree	tz
+L01	7	m	m	agree	m
+L01	8	V		split-gap	V
+L01	9	y	y	agree	y
+L01	10	m	m	agree	m
+L01	11	d	d	agree	d
+L01	12	P	P	agree	P
+L01	13	z	z	agree	z
+L01	14	m	m	agree	m
+L01	15	g	g	agree	g
+L01	16	tz	tz	agree	tz
+L01	17	m	m	agree	m
+L01	18		p	split-gap	p
+L01	19	+	+	agree	+
+L01	20	o	o	agree	o
+L01	21	o	o	agree	o
+L01	22	m	m	agree	m
+L01	23	o	o	agree	o
+L01	24	o	o	agree	o
+L01	25	Q	@	split	Q
+L01	26	d	d	agree	d
+L01	27	o	o	agree	o
+L01	28	o	o	agree	o
+L01	29	r	r	agree	r
+L01	30	d	d	agree	d
+L01	31	tz	tz	agree	tz
+L01	32	4	4	agree	4
+L01	33	z	z	agree	z
+L01	34	m	m	agree	m
+L01	35	e	e	agree	e
+L01	36	s	s	agree	s
+L01	37	a	a	agree	a
+L01	38	d	d	agree	d
+L01	39	z	z	agree	z
+L01	40	m	m	agree	m
+L01	41	c	c	agree	c
+L01	42	a	a	agree	a
+L01	43	tz	tz	agree	tz
+L01	44	d	d	agree	d
+L01	45	f	f	agree	f
+L01	46	m	m	agree	m
+L01	47	p	p	agree	p
+L01	48	y	y	agree	y
+L02	1	+	+	agree	+
+L02	2	tz	tz	agree	tz
+L02	3	+	+	agree	+
+L02	4		d	split-gap	d
+L02	5	d	d	agree	d
+L02	6	H	H	agree	H
+L02	7	{		split-gap	{
+L02	8	curl		split-gap	curl
+L02	9	}	m	split	}
+L02	10	z	z	agree	z
+L02	11	P	P	agree	P
+L02	12	d	d	agree	d
+L02	13	+	+	agree	+
+L02	14	x	x	agree	x
+L02	15	#	#	agree	#
+L02	16	g	g	agree	g
+L02	17	m	m	agree	m
+L02	18	g	g	agree	g
+L02	19	d	d	agree	d
+L02	20	m	m	agree	m
+L02	21	z	z	agree	z
+L02	22	m	m	agree	m
+L02	23	+		split-gap	+
+L02	24	+	‡	split	+
+L02	25	tz	tz	agree	tz
+L02	26	m	m	agree	m
+L02	27	L	L	agree	L
+L02	28	P	P	agree	P
+L02	29	L	L	agree	L
+L02	30	P	P	agree	P
+L02	31	d	d	agree	d
+L02	32	tz	tz	agree	tz
+L02	33	p	p	agree	p
+L02	34	l	l	agree	l
+L02	35	d	d	agree	d
+L02	36	x	x	agree	x
+L02	37	+		split-gap	+
+L02	38	z	tz	split	z
+L02	39	:	:	agree	:
+L02	40	:	:	agree	:
+L02	41	7	7	agree	7
+L02	42	p	p	agree	p
+L02	43	m	m	agree	m
+L02	44	x	a	split	x
+L02	45	#	#	agree	#
+L02	46	to	to	agree	to
+L02	47	z	z	agree	z
+L02	48	tz	tz	agree	tz
+L02	49	d	d	agree	d
+L02	50	m	m	agree	m
+L02	51	+	p	split	+
+L02	52	#	#	agree	#
+L03	1	R	R	agree	R
+L03	2	d	d	agree	d
+L03	3	o	o	agree	o
+L03	4	o	o	agree	o
+L03	5	x	x	agree	x
+L03	6	tz	tz	agree	tz
+L03	7	d	d	agree	d
+L03	8	o	o	agree	o
+L03	9	o	o	agree	o
+L03	10	g	g	agree	g
+L03	11	d	s	split	d
+L03	12	to	to	agree	to
+L03	13	d	d	agree	d
+L03	14	p	p	agree	p
+L03	15	#	#	agree	#
+L03	16	k	k	agree	k
+L03	17	d	d	agree	d
+L03	18	o	o	agree	o
+L03	19	o	o	agree	o
+L03	20	S	S	agree	S
+L03	21	#	#	agree	#
+L03	22	m	m	agree	m
+L03	23	a	a	agree	a
+L03	24	:	:	agree	:
+L03	25	:	:	agree	:
+L03	26	m	m	agree	m
+L03	27	x	x	agree	x
+L03	28	#	#	agree	#
+L03	29	m	m	agree	m
+L03	30	P	P	agree	P
+L03	31	g	g	agree	g
+L03	32	z	z	agree	z
+L03	33	m	m	agree	m
+L03	34	m	m	agree	m
+L03	35	z	z	agree	z
+L03	36	m	m	agree	m
+L03	37	z	z	agree	z
+L03	38	m	m	agree	m
+L03	39	+	t	split	+
+L03	40	D	d	split	D
+L03	41	i	P	split	i
+L03	42	x	x	agree	x
+L03	43	+		split-gap	+
+L04	1	+	+	agree	+
+L04	2	m	m	agree	m
+L04	3	P		split-gap	P
+L04	4	p	d	split	p
+L04	5	P	P	agree	P
+L04	6	:	:	agree	:
+L04	7	:	:	agree	:
+L04	8	7	7	agree	7
+L04	9	g	g	agree	g
+L04	10	o	o	agree	o
+L04	11	p	p	agree	p
+L04	12	+	{bar}	split	+
+L04	13	A	R	split	A
+L04	14	l	l	agree	l
+L04	15	d	s	split	d
+L04	16	to	to	agree	to
+L04	17	x	x	agree	x
+L04	18	P	P	agree	P
+L04	19	a	a	agree	a
+L04	20	P	P	agree	P
+L04	21	z	z	agree	z
+L04	22	m	m	agree	m
+L04	23	to	to	agree	to
+L04	24	R	R	agree	R
+L04	25		tz	split-gap	tz
+L04	26		d	split-gap	d
+L04	27	tz	tz	agree	tz
+L04	28	d	d	agree	d
+L04	29	m	m	agree	m
+L04	30	y	y	agree	y
+L04	31	P	P	agree	P
+L04	32	d	d	agree	d
+L04	33	C	@	split	C
+L04	34	o	:	agree	:
+L04	35	o	:	agree	:
+L04	36	P	P	agree	P
+L04	37	a	a	agree	a
+L04	38	d	d	agree	d
+L04	39	m	m	agree	m
+L04	40	z	z	agree	z
+L04	41	m	m	agree	m
+L04	42	to	to	agree	to
+L04	43	R	r	split	R
+L04	44	m	m	agree	m
+L04	45	6	b	split	6
+L04	46	to	to	agree	to
+L04	47	z	z	agree	z
+L04	48	m	m	agree	m
+L05	1	+		split-gap	+
+L05	2	4	4	agree	4
+L05	3	g	g	agree	g
+L05	4	P	P	agree	P
+L05	5	p	p	agree	p
+L05	6	k	k	agree	k
+L05	7	l	l	agree	l
+L05	8	f	f	agree	f
+L05	9	d	d	agree	d
+L05	10	tz	tz	agree	tz
+L05	11	m	m	agree	m
+L05	12	x	x	agree	x
+L05	13	#	#	agree	#
+L05	14	:	:	agree	:
+L05	15	:	:	agree	:
+L05	16	m	m	agree	m
+L05	17	a	a	agree	a
+L05	18	@		split-gap	@
+L05	19	{		split-gap	{
+L05	20	asterisk		split-gap	asterisk
+L05	21	}	{star}	split	}
+L05	22	z	z	agree	z
+L05	23	d	d	agree	d
+L05	24	p	p	agree	p
+L05	25	x	x	agree	x
+L05	26	#	#	agree	#
+L05	27	g	g	agree	g
+L05	28	m	m	agree	m
+L05	29	n	r	split	n
+L05	30	m	m	agree	m
+L05	31	#	#	agree	#
+L05	32	k	k	agree	k
+L05	33	tz	tz	agree	tz
+L05	34	:	:	agree	:
+L05	35	:	:	agree	:
+L05	36	#	#	agree	#
+L05	37	P	P	agree	P
+L05	38	o	o	agree	o
+L05	39	o	o	agree	o
+L05	40	d	d	agree	d
+L05	41	tz	tz	agree	tz
+L05	42	L	L	agree	L
+L05	43	S	S	agree	S
+L05	44	k	h	split	k
+L05	45	P	P	agree	P
+L05	46	p	p	agree	p
+L05	47	k	k	agree	k
+L05	48	m	m	agree	m
+L05	49	i	i	agree	i
+L05	50	d	d	agree	d
+L05	51	+	+	agree	+
+L05	52	g	g	agree	g
+L05	53	tz	tz	agree	tz
+L06	1	z	z	agree	z
+L06	2	m	m	agree	m
+L06	3	p	p	agree	p
+L06	4		a	split-gap	a
+L06	5	g	g	agree	g
+L06	6	m	m	agree	m
+L06	7	p	p	agree	p
+L06	8	S		split-gap	S
+L06	9	{		split-gap	{
+L06	10	loop	d	split	loop
+L06	11	}	b	split	}
+L06	12	m	m	agree	m
+L06	13	#	#	agree	#
+L06	14	m	m	agree	m
+L06	15	p	p	agree	p
+L06	16	:	:	agree	:
+L06	17	:	:	agree	:
+L06	18	7	7	agree	7
+L06	19	a	a	agree	a
+L06	20	tz	tz	agree	tz
+L06	21	m	m	agree	m
+L06	22	i	i	agree	i
+L06	23	p	p	agree	p
+L06	24	o	o	agree	o
+L06	25	o	o	agree	o
+L06	26	z	z	agree	z
+L06	27	k	k	agree	k
+L06	28	t		split-gap	t
+L06	29	z	tz	split	z
+L06	30	:	:	agree	:
+L06	31	:	:	agree	:
+L06	32	#	#	agree	#
+L06	33	@	@	agree	@
+L06	34	z	z	agree	z
+L06	35	m	m	agree	m
+L06	36	d	d	agree	d
+L06	37	P	P	agree	P
+L06	38	o	o	agree	o
+L06	39	P	P	agree	P
+L06	40	g	y	split	g
+L06	41	#	#	agree	#
+L06	42	tz	tz	agree	tz
+L06	43	6	6	agree	6
+L06	44	+	+	agree	+
+L06	45	p	p	agree	p
+L06	46	P	P	agree	P
+L06	47	g	g	agree	g
+L06	48	tz	tz	agree	tz
+L06	49	m	m	agree	m
+L07	1	R	@	split	R
+L07	2	d	d	agree	d
+L07	3	o	o	agree	o
+L07	4	6	6	agree	6
+L07	5	a	a	agree	a
+L07	6	d	d	agree	d
+L07	7	o	o	agree	o
+L07	8	o	o	agree	o
+L07	9	g	g	agree	g
+L07	10	P	P	agree	P
+L07	11	z	z	agree	z
+L07	12	a	a	agree	a
+L07	13		n	split-gap	n
+L07	14	p	p	agree	p
+L07	15	o		split-gap	o
+L07	16	P	P	agree	P
+L07	17	g	g	agree	g
+L07	18	4	4	agree	4
+L07	19	+		split-gap	+
+L07	20	m	m	agree	m
+L07	21	+	p	split	+
+L07	22	#	#	agree	#
+L07	23	a	a	agree	a
+L07	24	tz	tz	agree	tz
+L07	25	7	7	agree	7
+L07	26	6	6	agree	6
+L07	27	a	a	agree	a
+L07	28	z	z	agree	z
+L07	29	P	P	agree	P
+L07	30	z	z	agree	z
+L07	31	z	z	agree	z
+L07	32	m	m	agree	m
+L07	33	p	p	agree	p
+L07	34	k	k	agree	k
+L07	35	m	m	agree	m
+L07	36	m	m	agree	m
+L07	37	x	x	agree	x
+L07	38	#	#	agree	#
+L07	39	m	m	agree	m
+L07	40	p	p	agree	p
+L07	41	#	#	agree	#
+L07	42	g	g	agree	g
+L07	43	m	m	agree	m
+L07	44	m	m	agree	m
+L07	45	p	p	agree	p
+L07	46	l	l	agree	l
+L07	47	S	S	agree	S
+L08	1	@	@	agree	@
+L08	2	+	+	agree	+
+L08	3	d	d	agree	d
+L08	4	i		split-gap	i
+L08	5	p	P	split	p
+L08	6	+	+	agree	+
+L08	7	P	P	agree	P
+L08	8	p	p	agree	p
+L08	9	:		split-gap	:
+L08	10	:	:	agree	:
+L08	11	z	z	agree	z
+L08	12	l	|	split	l
+L08	13	p	p	agree	p
+L08	14	d	d	agree	d
+L08	15	p	p	agree	p
+L08	16	:	:	agree	:
+L08	17	:	:	agree	:
+L08	18	7	7	agree	7
+L08	19	:	:	agree	:
+L08	20	:	:	agree	:
+L08	21	g	g	agree	g
+L08	22	d	d	agree	d
+L08	23	z	z	agree	z
+L08	24	m	m	agree	m
+L08	25	m	m	agree	m
+L08	26	p	p	agree	p
+L08	27	d	d	agree	d
+L08	28	tz	tz	agree	tz
+L08	29	S	d	split	S
+L08	30	tz	tz	agree	tz
+L08	31	4	4	agree	4
+L08	32	g	g	agree	g
+L08	33	o	o	agree	o
+L08	34	p	p	agree	p
+L08	35	k	k	agree	k
+L08	36	d	@	split	d
+L08	37	d	d	agree	d
+L08	38	z	z	agree	z
+L08	39	S	S	agree	S
+L08	40	t	g	split	t
+L08	41	m	m	agree	m
+L08	42	:	:	agree	:
+L08	43	:	:	agree	:
+L08	44	e	e	agree	e
+L08	45	n	n	agree	n
+L08	46	m	m	agree	m
+L08	47	y	y	agree	y
+L08	48		o	split-gap	o
+L08	49	d	d	agree	d
+L08	50	p	p	agree	p
+L08	51	z	z	agree	z
+L09	1	k	k	agree	k
+L09	2	tz	tz	agree	tz
+L09	3	:		split-gap	:
+L09	4	:	:	agree	:
+L09	5	#	#	agree	#
+L09	6	P	P	agree	P
+L09	7	tz	tz	agree	tz
+L09	8	d	d	agree	d
+L09	9	k	k	agree	k
+L09	10	z	z	agree	z
+L09	11	6	6	agree	6
+L09	12	z	z	agree	z
+L09	13	m	m	agree	m
+L09	14	p	p	agree	p
+L09	15	P	P	agree	P
+L09	16	o	o	agree	o
+L09	17	o	o	agree	o
+L09	18	p	p	agree	p
+L09	19	m	m	agree	m
+L09	20	D	d	split	D
+L09	21	Q	@	split	Q
+L09	22	S	S	agree	S
+L09	23	d	d	agree	d
+L09	24	o	o	agree	o
+L09	25	o	o	agree	o
+L09	26	p	p	agree	p
+L09	27	i	m	split	i
+L09	28	x	x	agree	x
+L09	29	d	d	agree	d
+L09	30	z	z	agree	z
+L09	31	P	P	agree	P
+L09	32	m	m	agree	m
+L09	33		|	split-gap	|
+L09	34	m	m	agree	m
+L09	35	#	#	agree	#
+L09	36	m	m	agree	m
+L09	37	x	x	agree	x
+L09	38	#	#	agree	#
+L09	39	z	z	agree	z
+L09	40	m	m	agree	m
+L09	41	o	o	agree	o
+L09	42	P	P	agree	P
+L09	43	g	g	agree	g
+L09	44	#	#	agree	#
+L09	45	tz	tz	agree	tz
+L09	46	x	x	agree	x
+L10	1	J	J	agree	J
+L10	2	tz	tz	agree	tz
+L10	3	m	m	agree	m
+L10	4	g	g	agree	g
+L10	5	d	d	agree	d
+L10	6	m	m	agree	m
+L10	7	#	#	agree	#
+L10	8	+	p	split	+
+L10	9	d	d	agree	d
+L10	10	+		split-gap	+
+L10	11	p	p	agree	p
+L10	12	z	z	agree	z
+L10	13	o	o	agree	o
+L10	14	o	o	agree	o
+L10	15	{		split-gap	{
+L10	16	asterisk		split-gap	asterisk
+L10	17	}	{star}	split	}
+L10	18	m	m	agree	m
+L10	19	#	#	agree	#
+L10	20	d	d	agree	d
+L10	21	m	m	agree	m
+L10	22	c	c	agree	c
+L10	23	d	d	agree	d
+L10	24	g	g	agree	g
+L10	25	#	#	agree	#
+L10	26	m	m	agree	m
+L10	27	c	c	agree	c
+L10	28	P	P	agree	P
+L10	29	m	m	agree	m
+L10	30	c	c	agree	c
+L10	31	P	P	agree	P
+L10	32	g	g	agree	g
+L10	33	c	c	agree	c
+L10	34	o	o	agree	o
+L10	35	b		split-gap	b
+L10	36	a	6	split	a
+L10	37	d	d	agree	d
+L10	38	z	z	agree	z
+L10	39	m	m	agree	m
+L10	40	o	o	agree	o
+L10	41	m	m	agree	m
+L10	42	g	g	agree	g
+L10	43	d	d	agree	d
+L10	44	d	d	agree	d
+L10	45	p	p	agree	p
+L10	46	y	P	split	y
+L10	47	m	m	agree	m
+L10	48	d	d	agree	d
+L10	49	S	@	split	S
+L10	50	t	tz	split	t
+L10	51	g	p	split	g
+L10	52	d	d	agree	d
+L10	53	m	m	agree	m
+L10	54	#	#	agree	#
+L11	1	+	p	split	+
+L11	2	d	d	agree	d
+L11	3	+	p	split	+
+L11	4	m	m	agree	m
+L11	5	p	p	agree	p
+L11	6	:	:	agree	:
+L11	7	:	:	agree	:
+L11	8	y	y	agree	y
+L11	9	P	P	agree	P
+L11	10	g	g	agree	g
+L11	11	+	4	split	+
+L11	12	m	m	agree	m
+L11	13	d	d	agree	d
+L11	14	P	P	agree	P
+L11	15	4	4	agree	4
+L11	16	o	6	split	o
+L11	17	P	P	agree	P
+L11	18	g	g	agree	g
+L11	19	m	m	agree	m
+L11	20	p	p	agree	p
+L11	21	#	#	agree	#
+L11	22	m	m	agree	m
+L11	23	d	d	agree	d
+L11	24		|	split-gap	|
+L11	25		X	split-gap	X
+L11	26		|	split-gap	|
+L11	27	X	X	agree	X
+L11	28	C	c	split	C
+L11	29	+	+	agree	+
+L11	30	tz	tz	agree	tz
+L11	31	6	6	agree	6
+L11	32	d	d	agree	d
+L11	33	J	J	agree	J
+L11	34	b	b	agree	b
+L11	35	7	7	agree	7
+L11	36	o	c	split	o
+L11	37	m	m	agree	m
+L11	38	o	o	agree	o
+L11	39	o	o	agree	o
+L11	40	6	6	agree	6
+L11	41	#	#	agree	#
+L11	42	z	z	agree	z
+L11	43	p	p	agree	p
+L11	44	z	z	agree	z
+L11	45	P	P	agree	P
+L11	46	z	z	agree	z
+L11	47	#	#	agree	#
+L12	1	to	to	agree	to
+L12	2	R	r	split	R
+L12	3	m	m	agree	m
+L12	4	c	e	split	c
+L12	5	d	d	agree	d
+L12	6	y	y	agree	y
+L12	7	y	y	agree	y
+L12	8	to	to	agree	to
+L12	9	z	z	agree	z
+L12	10	m	m	agree	m
+L12	11	:	:	agree	:
+L12	12	:	:	agree	:
+L12	13	y	y	agree	y
+L12	14	P	P	agree	P
+L12	15	p	p	agree	p
+L12	16	S	@	split	S
+L12	17	+	+	agree	+
+L12	18	4	4	agree	4
+L12	19	m	m	agree	m
+L12	20	z	z	agree	z
+L12	21	m	m	agree	m
+L12	22	p	p	agree	p
+L12	23	#	#	agree	#
+L12	24	P	P	agree	P
+L12	25	a	a	agree	a
+L12	26	6	6	agree	6
+L12	27	P	P	agree	P
+L12	28	a	a	agree	a
+L12	29	6	6	agree	6
+L12	30	t		split-gap	t
+L12	31	S		split-gap	S
+L12	32	P	tz	split	P
+L12	33	P	P	agree	P
+L12	34	p	#	split	p
+L12	35	P	P	agree	P
+L12	36	tz	tz	agree	tz
+L12	37	L	L	agree	L
+L12	38	m	m	agree	m
+L12	39	d	d	agree	d
+L12	40	H	{strike}	split	H
+L12	41	z	z	agree	z
+L12	42	3		split-gap	3
+L12	43	z	z	agree	z
+L12	44	m	m	agree	m
+L12	45	:	:	agree	:
+L12	46	P	P	agree	P
+L12	47	d	d	agree	d
+L12	48	y	g	split	y
+L12	49	P	P	agree	P
+L12	50	tz	tz	agree	tz
+L13	1	d	d	agree	d
+L13	2	d	d	agree	d
+L13	3	p	p	agree	p
+L13	4	tz	tz	agree	tz
+L13	5	m	m	agree	m
+L13	6	y		split-gap	y
+L13	7	y	y	agree	y
+L13	8	P	P	agree	P
+L13	9	z	z	agree	z
+L13	10	d		split-gap	d
+L13	11	d	d	agree	d
+L13	12	d	d	agree	d
+L13	13	p	p	agree	p
+L13	14	+	tz	split	+
+L13	15	p	p	agree	p
+L13	16	#		split-gap	#
+L13	17	S	g	split	S
+L13	18	#	#	agree	#
+L13	19	z	z	agree	z
+L13	20	o	o	agree	o
+L13	21	o	o	agree	o
+L13	22		3	split-gap	3
+L13	23	8	@	split	8
+L13	24	m	m	agree	m
+L13	25	x	x	agree	x
+L13	26	tz	tz	agree	tz
+L13	27	m	m	agree	m
+L13	28	x	x	agree	x
+L13	29	#	#	agree	#
+L13	30	k	k	agree	k
+L13	31	m	m	agree	m
+L13	32	:	:	agree	:
+L13	33	m	m	agree	m
+L13	34	z	z	agree	z
+L13	35	H	H	agree	H
+L13	36	n	n	agree	n
+L13	37	o	o	agree	o
+L13	38	z	z	agree	z
+L13	39	k	k	agree	k
+L13	40	m	m	agree	m
+L13	41	:	:	agree	:
+L13	42	:	:	agree	:
+L13	43	m	m	agree	m
+L13	44	f		split-gap	f
+L13	45	tz	tz	agree	tz
+L13	46	d	d	agree	d
+L13	47	o	o	agree	o
+L13	48	o	o	agree	o
+L13	49	y	y	agree	y
+L13	50	k	k	agree	k
+L13	51	y	y	agree	y
+L14	1	o	o	agree	o
+L14	2	o	o	agree	o
+L14	3	z	z	agree	z
+L14	4	x	x	agree	x
+L14	5	r	r	agree	r
+L14	6	g	g	agree	g
+L14	7	y		split-gap	y
+L14	8	y	y	agree	y
+L14	9	m	m	agree	m
+L14	10	d	d	agree	d
+L14	11	p	p	agree	p
+L14	12	m	m	agree	m
+L14	13	a	a	agree	a
+L14	14	p	p	agree	p
+L14	15	P	P	agree	P
+L14	16	k		split-gap	k
+L14	17	k	k	agree	k
+L14	18	tz	tz	agree	tz
+L14	19	k	k	agree	k
+L14	20	y	y	agree	y
+L14	21	m	m	agree	m
+L14	22	o	o	agree	o
+L14	23	o	o	agree	o
+L14	24	g	g	agree	g
+L14	25	m	m	agree	m
+L14	26	d	d	agree	d
+L14	27	p	p	agree	p
+L14	28	p	p	agree	p
+L14	29	r	r	agree	r
+L14	30	z	z	agree	z
+L14	31	P	P	agree	P
+L14	32	p	p	agree	p
+L14	33	#	#	agree	#
+L14	34	m	m	agree	m
+L14	35	x	x	agree	x
+L14	36	#	#	agree	#
+L14	37	m	m	agree	m
+L14	38	z	z	agree	z
+L14	39	P	P	agree	P
+L14	40	y		split-gap	y
+L14	41	y	y	agree	y
+L14	42	o	o	agree	o
+L14	43	b	6	split	b
+L14	44	P	P	agree	P
+L14	45	k	k	agree	k
+L14	46	m	m	agree	m
+L14	47	a	a	agree	a
+L14	48	to	to	agree	to
+L14	49	z	z	agree	z
+L14	50	P	P	agree	P
+L15	1	#	#	agree	#
+L15	2	g	g	agree	g
+L15	3	m	m	agree	m
+L15	4	d	d	agree	d
+L15	5	o	o	agree	o
+L15	6	o	o	agree	o
+L15	7	:	:	agree	:
+L15	8	:	:	agree	:
+L15	9	4	4	agree	4
+L15	10	tz	tz	agree	tz
+L15	11	+	4	split	+
+L15	12	to	to	agree	to
+L15	13	tz	tz	agree	tz
+L15	14	d	d	agree	d
+L15	15	o	o	agree	o
+L15	16	o	o	agree	o
+L15	17	g	g	agree	g
+L15	18	d		split-gap	d
+L15	19	S	s	agree	s
+L15	20	t	@	split	t
+L15	21	tz	tz	agree	tz
+L15	22	6	6	agree	6
+L15	23	m	m	agree	m
+L15	24		x	split-gap	x
+L15	25		#	split-gap	#
+L15	26	x	x	agree	x
+L15	27	#	#	agree	#
+L15	28	d	d	agree	d
+L15	29	t		split-gap	t
+L15	30	z	tz	split	z
+L15	31	#	#	agree	#
+L15	32	z	z	agree	z
+L15	33	z	d	split	z
+L15	34	y	y	agree	y
+L15	35	x	r	agree	x
+L15	36	d	d	agree	d
+L15	37	o	o	agree	o
+L15	38	o	o	agree	o
+L15	39	j	j	agree	j
+L15	40	o	o	agree	o
+L15	41	o	o	agree	o
+L15	42	z	z	agree	z
+L15	43	m	m	agree	m
+L15	44	d	d	agree	d
+L15	45	+	4	split	+
+L15	46	g	g	agree	g
+L15	47	P	r	split	P
+L15	48	p	p	agree	p
+L15	49	k	k	agree	k
+L16	1	@	@	agree	@
+L16	2	P		split-gap	P
+L16	3	P	P	agree	P
+L16	4	tz	tz	agree	tz
+L16	5	o	6	split	o
+L16	6	V	V	agree	V
+L16	7	d	d	agree	d
+L16	8	m	m	agree	m
+L16	9	g	g	agree	g
+L16	10	tz	tz	agree	tz
+L16	11	d	d	agree	d
+L16	12	tz	tz	agree	tz
+L16	13	#	#	agree	#
+L16	14	m	m	agree	m
+L16	15	#	#	agree	#
+L16	16	d	d	agree	d
+L16	17	m	m	agree	m
+L16	18	y	y	agree	y
+L16	19	m	m	agree	m
+L16	20	a	a	agree	a
+L16	21	d	d	agree	d
+L16	22	o	o	agree	o
+L16	23	o	o	agree	o
+L16	24	d	d	agree	d
+L16	25	o	o	agree	o
+L16	26	o	o	agree	o
+L16	27	d	d	agree	d
+L16	28	d	d	agree	d
+L16	29	tz	tz	agree	tz
+L16	30	#	#	agree	#
+L16	31	+		split-gap	+
+L16	32	4	4	agree	4
+L16	33	g	g	agree	g
+L16	34	P	P	agree	P
+L16	35	p	p	agree	p
+L16	36	k	k	agree	k
+L16	37	m	m	agree	m
+L16	38	z	z	agree	z
+L16	39	m	m	agree	m
+L16	40	p	p	agree	p
+L16	41	#	#	agree	#
+L16	42	m	m	agree	m
+L16	43	p	p	agree	p
+L16	44	y		split-gap	y
+L16	45	y	y	agree	y
+L16	46	o	o	agree	o
+L16	47	o	o	agree	o
+L16	48	z	z	agree	z
+L17	1	m	m	agree	m
+L17	2	#	#	agree	#
+L17	3	m	m	agree	m
+L17	4	x	x	agree	x
+L17	5	#	#	agree	#
+L17	6	d	d	agree	d
+L17	7	tz		split-gap	tz
+L17	8	tz	tz	agree	tz
+L17	9	y	y	agree	y
+L17	10	d	d	agree	d
+L17	11	e		split-gap	e
+L17	12	n	y	split	n
+L17	13	m	m	agree	m
+L17	14	to	to	agree	to
+L17	15	z	z	agree	z
+L17	16	tz	tz	agree	tz
+L17	17	P	P	agree	P
+L17	18	o	o	agree	o
+L17	19	o	o	agree	o
+L17	20	d	d	agree	d
+L17	21	tz	tz	agree	tz
+L17	22	#	#	agree	#
+L17	23	o	o	agree	o
+L17	24	p	p	agree	p
+L17	25	d	o	split	d
+L17	26	o	o	agree	o
+L17	27	p	p	agree	p
+L17	28	b		split-gap	b
+L17	29	o	o	agree	o
+L17	30	o	o	agree	o
+L17	31	g	g	agree	g
+L17	32	o		split-gap	o
+L17	33	m	m	agree	m
+L17	34	o	o	agree	o
+L17	35	o	o	agree	o
+L17	36	p	p	agree	p
+L17	37	m	m	agree	m
+L17	38	+		split-gap	+
+L17	39	4	4	agree	4
+L17	40	g	g	agree	g
+L17	41	P	P	agree	P
+L17	42	p	p	agree	p
+L17	43	k	k	agree	k
+L17	44	m	m	agree	m
+L17	45	P	P	agree	P
+L17	46	a	a	agree	a
+L17	47	tz	tz	agree	tz
+L17	48	y	y	agree	y
+L17	49	d	d	agree	d
+L17	50	#		split-gap	#
+L17	51	#	#	agree	#
+L18	1	m	m	agree	m
+L18	2	#	#	agree	#
+L18	3	m	m	agree	m
+L18	4	p	p	agree	p
+L18	5	#	#	agree	#
+L18	6	m	m	agree	m
+L18	7	p	p	agree	p
+L18	8	d	d	agree	d
+L18	9	p	p	agree	p
+L18	10	Z	Z	agree	Z
+L18	11	S	S	agree	S
+L18	12	k	k	agree	k
+L18	13	d	d	agree	d
+L18	14	tz	tz	agree	tz
+L18	15	#	#	agree	#
+L18	16	g	g	agree	g
+L18	17	d	d	agree	d
+L18	18	#	#	agree	#
+L18	19	S	S	agree	S
+L18	20	tz	tz	agree	tz
+L18	21	m	m	agree	m
+L18	22	p	p	agree	p
+L18	23	Q		split-gap	Q
+L18	24	z	@	split	z
+L18	25	y	y	agree	y
+L18	26	p		split-gap	p
+L18	27	m	m	agree	m
+L18	28	d	d	agree	d
+L18	29	P	P	agree	P
+L18	30	x	x	agree	x
+L18	31	H	H	agree	H
+L18	32	n	n	agree	n
+L18	33	o	o	agree	o
+L18	34	n	n	agree	n
+L18	35	p	p	agree	p
+L18	36	P	P	agree	P
+L18	37		r	split-gap	r
+L18	38	tz	tz	agree	tz
+L18	39	L	L	agree	L
+L18	40	m	m	agree	m
+L18	41	d	d	agree	d
+L18	42	m	m	agree	m
+L18	43	#	#	agree	#
+L18	44	m	m	agree	m
+L18	45	x	x	agree	x
+L18	46	#	#	agree	#
+L18	47	d	d	agree	d
+L19	1	tz		split-gap	tz
+L19	2	#		split-gap	#
+L19	3	4		split-gap	4
+L19	4	g		split-gap	g
+L19	5	P		split-gap	P
+L19	6	p		split-gap	p
+L19	7	k		split-gap	k
+L19	8	P		split-gap	P
+L19	9	z		split-gap	z
+L19	10	z		split-gap	z
+L19	11	z		split-gap	z
+L19	12	m		split-gap	m
+L19	13	a		split-gap	a
+L19	14	P		split-gap	P
+L19	15	tz		split-gap	tz
+L19	16	k		split-gap	k
+L19	17	X		split-gap	X
+L19	18	Z		split-gap	Z
+L19	19	m		split-gap	m
+L19	20	#		split-gap	#
+L19	21	c		split-gap	c
+L19	22	P		split-gap	P
+L19	23	g		split-gap	g
+L19	24	#		split-gap	#
+L19	25	g		split-gap	g
+L19	26	#		split-gap	#
+L19	27	+	+	agree	+
+L19	28	tz		split-gap	tz
+L19	29	d		split-gap	d
+L19	30	P		split-gap	P
+L19	31	p		split-gap	p
+L19	32	:		split-gap	:
+L19	33	:	j	split	:
+L19	34	d	d	agree	d
+L19	35	p		split-gap	p
+L19	36	#		split-gap	#
+L19	37	g		split-gap	g
+L19	38	m		split-gap	m
+L19	39	y		split-gap	y
+L19	40	p	a	split	p
+L19	41	m	@	split	m
+L19	42	p	+	split	p
+L19	43	x	@	split	x
+L19	44	L	S	split	L
+L20	1	+		split-gap	+
+L20	2	y		split-gap	y
+L20	3	R		split-gap	R
+L20	4	+		split-gap	+
+L20	5	@		split-gap	@
+L20	6	[...]	[...]	agree	[...]

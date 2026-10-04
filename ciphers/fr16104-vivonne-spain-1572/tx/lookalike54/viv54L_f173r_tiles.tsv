@@ -1,0 +1,196 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+viv54L_f173r	L04	2	{X}	{X}	{x-crossed}	split	split	{X},{x-crossed},{cross}	f	@ {curl} {flourish}		
+viv54L_f173r	L04	5	{flourish}	{flourish}	P	split	split	{flourish},P,@,H	{X} @ {curl}	h t tz		
+viv54L_f173r	L04	7	t		t	split-gap	split	t,4,2	{curl} {flourish} h	tz m o		
+viv54L_f173r	L04	16	m	m		split-gap	split	m,n,{curl}m	d z @	z m j		
+viv54L_f173r	L04	21	s	s	d	split	split	s,d,5,g	m j m	m g P		
+viv54L_f173r	L05	7	r		r	split-gap	split	r,R,n	tz p P	tz : #		
+viv54L_f173r	L05	13	p	p		split-gap	split	p,4,o	# m S	P : :		
+viv54L_f173r	L05	22	m	m	n	split	split	m,n,{curl}m	z m j	s m d		
+viv54L_f173r	L05	23	s	s	k	split	split	s,k,5,g	m j m	m d tz		
+viv54L_f173r	L05	32	{curl}		{curl}	split-gap	split	{curl},c,g	: P g	z m g		
+viv54L_f173r	L06	16	d		d	split-gap	split	d,S,V	m p m	z m p		
+viv54L_f173r	L06	17	z	z	i	split	split	z,i,3,2	p m d	m p #		
+viv54L_f173r	L06	18	m	m	n	split	split	m,n,{curl}m	m d z	p # z		
+viv54L_f173r	L06	19	p	p	#	split	split	p,#,4,o	d z m	# z m		
+viv54L_f173r	L06	37	{swash}	{swash}	{flourish}	split	split	{swash},{flourish},S,p	P p #	y d r		
+viv54L_f173r	L06	44	{a	{a		split-gap	split	{a	o o m	loop} a r		
+viv54L_f173r	L06	45	loop}	loop}		split-gap	split	loop},{loop}	o m {a	a r a		
+viv54L_f173r	L06	46	a	a	@	split	split	a,@,c,o	m {a loop}	r a		
+viv54L_f173r	L07	2	4		4	split-gap	split	4,p,+	d	tz p 4		
+viv54L_f173r	L07	3	tz	tz	3	split	split	tz,3,z	d 4	p 4 d		
+viv54L_f173r	L07	24	o		o	split-gap	split	o,p,y	k tz d	tz z a		
+viv54L_f173r	L07	30	n		n	split-gap	split	n,r,R	a j p	L i to		
+viv54L_f173r	L07	38	k		k	split-gap	split	k,h,f	m d tz	{u} S 6		
+viv54L_f173r	L07	39	{u}	{u}	a	split	split	{u},a	d tz k	S 6 p		
+viv54L_f173r	L07	40	S	S	d	split	split	S,d,g	tz k {u}	6 p P		
+viv54L_f173r	L07	45	P	P	r	split	split	P,r,p	p P o	y #		
+viv54L_f173r	L08	4	g	g	o	split	split	g,o,y,e	P a l	P tz o		
+viv54L_f173r	L08	7	o		o	split-gap	split	o,p,y	g P tz	: # 3		
+viv54L_f173r	L08	14	o		o	split-gap	split	o,p,y	a 3 tz	: # 4		
+viv54L_f173r	L08	19	i		i	split-gap	split	i,c,e	# 4 m	p 6 tz		
+viv54L_f173r	L08	31	S	S	l	split	split	S,l,d,g	d p #	d g #		
+viv54L_f173r	L08	36	P	P		split-gap	split	P,p,r	g # R	D d S		
+viv54L_f173r	L08	37	D	D	r	split	split	D,r,d,#	# R P	d S :		
+viv54L_f173r	L08	39	S		S	split-gap	split	S,d,g	P D d	: : y		
+viv54L_f173r	L09	13	#		#	split-gap	split	#,x,p	g d P	p {loop} 6		
+viv54L_f173r	L09	15	{loop}		{loop}	split-gap	split	{loop},@,6	P # p	6 P r		
+viv54L_f173r	L09	18	r		r	split-gap	split	r,R,n	{loop} 6 P	tz 3 m		
+viv54L_f173r	L09	25	e	e	g	split	split	e,g,c	d 3 m	6 p S		
+viv54L_f173r	L09	29	k	k	h	split	split	k,h,f	6 p S	P p k		
+viv54L_f173r	L09	32	k		k	split-gap	split	k,h,f	k P p	h g m		
+viv54L_f173r	L09	33	h	h	y	split	split	h,y,k,L	P p k	g m d		
+viv54L_f173r	L09	42	4	4	tz	split	split	4,tz,p,+	k P p	tz m L		
+viv54L_f173r	L09	46	X	X		split-gap	split	X,L,R	tz m L	d r		
+viv54L_f173r	L09	47	d	d		split-gap	split	d,S,V	m L X	r		
+viv54L_f173r	L09	48	r	r	{x-crossed}	split	split	r,{x-crossed},R,n	L X d			
+viv54L_f173r	L10	23	i		i	split-gap	split	i,c,e	p m d	m g tz		
+viv54L_f173r	L10	24	m	m	n	split	split	m,n,{curl}m	m d i	g tz m		
+viv54L_f173r	L10	28	i		i	split-gap	split	i,c,e	g tz m	# P r		
+viv54L_f173r	L11	14	m	m	z	split	split	m,z,n,{curl}m	tz 4 p	S tz m		
+viv54L_f173r	L11	20	r		r	split-gap	split	r,R,n	m p 4	P g k		
+viv54L_f173r	L11	21	P	P	y	split	split	P,y,p,r	p 4 r	g k m		
+viv54L_f173r	L11	32	+	+	4	split	split	+,4,p	P d d	z P g		
+viv54L_f173r	L11	36	@		@	split-gap	split	@,c,g	z P g	m x tz		
+viv54L_f173r	L11	38	x	x	z	split	split	x,z,#	g @ m	tz d r		
+viv54L_f173r	L12	11	S		S	split-gap	split	S,d,g	: m d	tz P r		
+viv54L_f173r	L12	12	tz	tz	z	split	split	tz,z,3	m d S	P r o		
+viv54L_f173r	L12	14	r	r		split-gap	split	r,R,n	S tz P	o # #		
+viv54L_f173r	L12	16	#		#	split-gap	split	#,x,p	P r o	# P p		
+viv54L_f173r	L12	21	d	d	a	split	split	d,a,S,V	P p #	m 4 d		
+viv54L_f173r	L12	29	g	g	y	split	split	g,y,e	o o m	p m o		
+viv54L_f173r	L12	34	y	y	g	split	split	y,g,o	m o o	p d o		
+viv54L_f173r	L13	3	o		o	split-gap	split	o,p,y	m x	# P r		
+viv54L_f173r	L13	6	r	r		split-gap	split	r,R,n	o # P	z tz j		
+viv54L_f173r	L13	34	x		x	split-gap	split	x,z,#	@ m z	m d #		
+viv54L_f173r	L13	43	z	z	x	split	split	z,x,3,2	# m tz	a d y		
+viv54L_f173r	L14	13	S	S	d	split	split	S,d,g	m S h	m p @		
+viv54L_f173r	L14	17	+	+	4	split	split	+,4,p	m p @	# 3 m		
+viv54L_f173r	L14	29	H	H		split-gap	split	H,V,{H}	p d a	n o n		
+viv54L_f173r	L14	30	n	n		split-gap	split	n,r,R	d a H	o n o		
+viv54L_f173r	L14	31	o	o		split-gap	split	o,p,y	a H n	n o o		
+viv54L_f173r	L14	32	n	n	3	split	split	n,3,r,R	H n o	o o m		
+viv54L_f173r	L15	1	m		m	split-gap	split	m,n,{curl}m		x o #		
+viv54L_f173r	L15	2	x		x	split-gap	split	x,z,#	m	o # m		
+viv54L_f173r	L15	3	o		o	split-gap	split	o,p,y	m x	# m x		
+viv54L_f173r	L15	4	#		#	split-gap	split	#,x,p	m x o	m x g		
+viv54L_f173r	L15	6	x		x	split-gap	split	x,z,#	o # m	g P tz		
+viv54L_f173r	L15	7	g		g	split-gap	split	g,y,e	# m x	P tz o		
+viv54L_f173r	L15	8	P		P	split-gap	split	P,p,r	m x g	tz o o		
+viv54L_f173r	L15	9	tz		tz	split-gap	split	tz,z,3	x g P	o o #		
+viv54L_f173r	L15	10	o		o	split-gap	split	o,p,y	g P tz	o # m		
+viv54L_f173r	L15	11	o		o	split-gap	split	o,p,y	P tz o	# m x		
+viv54L_f173r	L15	13	m		m	split-gap	split	m,n,{curl}m	o o #	x S P		
+viv54L_f173r	L15	15	S	S	g	split	split	S,g,d	# m x	P tz :		
+viv54L_f173r	L15	22	p	p		split-gap	split	p,4,o	: # y	d p 4		
+viv54L_f173r	L15	40	@		@	split-gap	split	@,c,g	o 6 t	y p d		
+viv54L_f173r	L15	42	p	p		split-gap	split	p,4,o	t @ y	d p z		
+viv54L_f173r	L16	1	@		@	split-gap	split	@,c,g		tz L z		
+viv54L_f173r	L16	2	tz		tz	split-gap	split	tz,z,3	@	L z m		
+viv54L_f173r	L16	4	z		z	split-gap	split	z,3,2	@ tz L	m p m		
+viv54L_f173r	L16	24	g		g	split-gap	split	g,y,e	d z m	6 P p		
+viv54L_f173r	L16	30	k	k	L	split	split	k,L,h,f	p h p	g m d		
+viv54L_f173r	L16	41	t	t	f	split	split	t,f,4,2	# k m	d a y		
+viv54L_f173r	L16	45	r		r	split-gap	split	r,R,n	d a y			
+viv54L_f173r	L17	19	P	P	r	split	split	P,r,p	y p 6	tz g m		
+viv54L_f173r	L17	28	r		r	split-gap	split	r,R,n	# p P	a tz g		
+viv54L_f173r	L17	34	S		S	split-gap	split	S,d,g	g m d	@ m z		
+viv54L_f173r	L17	42	N	N	V	split	split	N,V,n	7 d P	P tz m		
+viv54L_f173r	L17	45	m	m		split-gap	split	m,n,{curl}m	N P tz	a t		
+viv54L_f173r	L17	46	a	a		split-gap	split	a,c,o	P tz m	t		
+viv54L_f173r	L17	47	t	t		split-gap	split	t,4,2	tz m a			
+viv54L_f173r	L18	6	y		y	split-gap	split	y,g,o	g m d	p o o		
+viv54L_f173r	L18	7	p		p	split-gap	split	p,4,o	m d y	o o z		
+viv54L_f173r	L18	8	o		o	split-gap	split	o,p,y	d y p	o z m		
+viv54L_f173r	L18	9	o		o	split-gap	split	o,p,y	y p o	z m p		
+viv54L_f173r	L18	10	z		z	split-gap	split	z,3,2	p o o	m p y		
+viv54L_f173r	L18	11	m		m	split-gap	split	m,n,{curl}m	o o z	p y p		
+viv54L_f173r	L18	12	p		p	split-gap	split	p,4,o	o z m	y p o		
+viv54L_f173r	L18	20	A	A	{A-flourish}	split	split	A,{A-flourish},@,:	z m p	P 3 p		
+viv54L_f173r	L18	37	z		z	split-gap	split	z,3,2	d o m	o z g		
+viv54L_f173r	L18	42	@	@	S	split	split	@,S,c,g	z g m	L K tz		
+viv54L_f173r	L18	44	K	K		split-gap	split	K	m @ L	tz k P		
+viv54L_f173r	L18	45	tz	tz	{loop}	split	split	tz,{loop},z,3	@ L K	k P L		
+viv54L_f173r	L18	47	P	P	tz	split	split	P,tz,p,r	K tz k	L z P		
+viv54L_f173r	L18	48	L	L	h	split	split	L,h,l,Z	tz k P	z P j		
+viv54L_f173r	L19	3	z	z	3	split	split	z,3,2	y d	# m d		
+viv54L_f173r	L19	4	#	#	x	split	split	#,x,p	y d z	m d z		
+viv54L_f173r	L19	7	z	z	3	split	split	z,3,2	# m d	m : tz		
+viv54L_f173r	L19	13	S		S	split-gap	split	S,d,g	tz m k	m # m		
+viv54L_f173r	L19	19	z	z	3	split	split	z,3,2	m x #	m d o		
+viv54L_f173r	L19	28	f		f	split-gap	split	f,p,g	m y 7	4 g P		
+viv54L_f173r	L19	33	k	k	h	split	split	k,h,f	g P p	z P tz		
+viv54L_f173r	L19	34	z	z	3	split	split	z,3,2	P p k	P tz d		
+viv54L_f173r	L19	41	z	z	3	split	split	z,3,2	# g m	m y 7		
+viv54L_f173r	L20	4	r	r		split-gap	split	r,R,n	a g P	g # tz		
+viv54L_f173r	L20	15	z	z	3	split	split	z,3,2	7 p d	# m d		
+viv54L_f173r	L20	16	#	#	x	split	split	#,x,p	p d z	m d m		
+viv54L_f173r	L20	27	p		p	split-gap	split	p,4,o	d p y	m to z		
+viv54L_f173r	L20	30	z	z	x	split	split	z,x,3,2	p m to	m y y		
+viv54L_f173r	L20	32	y		y	split-gap	split	y,g,o	to z m	y 6 d		
+viv54L_f173r	L20	46	7		7	split-gap	split	7,z,2	P tz L			
+viv54L_f173r	L21	7	z	z	3	split	split	z,3,2	o # m	tz j tz		
+viv54L_f173r	L21	19	e	e	g	split	split	e,g,c	7 k m	P tz g		
+viv54L_f173r	L21	22	g		g	split-gap	split	g,y,e	e P tz	m z P		
+viv54L_f173r	L21	25	P	P	r	split	split	P,r,p	g m z	4 P @		
+viv54L_f173r	L21	27	P	P	r	split	split	P,r,p	z P 4	@ tz p		
+viv54L_f173r	L21	41	S	S		split-gap	split	S,d,g	# m d	d g #		
+viv54L_f173r	L22	1	z	z	3	split	split	z,3,2		m z a		
+viv54L_f173r	L22	15	p		p	split-gap	split	p,4,o	S m y	P z m		
+viv54L_f173r	L22	16	P	P	r	split	split	P,r,p	m y p	z m e		
+viv54L_f173r	L22	19	e	e	g	split	split	e,g,c	P z m	P tz :		
+viv54L_f173r	L22	30	a	a	@	split	split	a,@,c,o	d m g	y o m		
+viv54L_f173r	L22	32	o		o	split-gap	split	o,p,y	g a y	m d i		
+viv54L_f173r	L22	42	a		a	split-gap	split	a,c,o	z P tz	m # {x-crossed}		
+viv54L_f173r	L22	44	#		#	split-gap	split	#,x,p	tz a m	{x-crossed}		
+viv54L_f173r	L22	45	{x-crossed}		{x-crossed}	split-gap	split	{x-crossed},r,{X}	a m #			
+viv54L_f173r	L23	3	h		h	split-gap	split	h,k,L	k m	b p m		
+viv54L_f173r	L23	4	b	b	7	split	split	b,7,6,V	k m h	p m p		
+viv54L_f173r	L23	5	p	p	S	split	split	p,S,4,o	m h b	m p y		
+viv54L_f173r	L23	9	p		p	split-gap	split	p,4,o	m p y	m o o		
+viv54L_f173r	L23	18	d	d	S	split	split	d,S,V	# p m	m g P		
+viv54L_f173r	L23	27	m	m		split-gap	split	m,n,{curl}m	d p 4	g P y		
+viv54L_f173r	L23	28	g	g		split-gap	split	g,y,e	p 4 m	P y p		
+viv54L_f173r	L23	29	P	P		split-gap	split	P,p,r	4 m g	y p d		
+viv54L_f173r	L23	30	y	y		split-gap	split	y,g,o	m g P	p d p		
+viv54L_f173r	L23	31	p	p		split-gap	split	p,4,o	g P y	d p 4		
+viv54L_f173r	L23	32	d	d		split-gap	split	d,S,V	P y p	p 4 m		
+viv54L_f173r	L23	33	p	p		split-gap	split	p,4,o	y p d	4 m k		
+viv54L_f173r	L23	34	4	4	V	split	split	4,V,p,+	p d p	m k m		
+viv54L_f173r	L23	42	z	z	3	split	split	z,3,2	g P p	m m p		
+viv54L_f173r	L23	50	o	o	y	split	split	o,y,p	g m o			
+viv54L_f173r	L24	2	d	d	S	split	split	d,S,V	tz	m x r		
+viv54L_f173r	L24	14	z	z	3	split	split	z,3,2	o j m	m p #		
+viv54L_f173r	L24	18	5	5		split-gap	split	5,s,g	m p #	o c g		
+viv54L_f173r	L24	19	o	o	to	split	split	o,to,p,y	p # 5	c g m		
+viv54L_f173r	L24	20	c	c	e	split	split	c,e,a	# 5 o	g m #		
+viv54L_f173r	L24	30	o	o	@	split	split	o,@,p,y	m p #	P g :		
+viv54L_f173r	L24	41	b	b	6	split	split	b,6,V	m P c	r g s		
+viv54L_f173r	L25	10	5	5	g	split	split	5,g,s	tz L P	o o 6		
+viv54L_f173r	L25	20	#	#		split-gap	split	#,x,p	z m g	o o 5		
+viv54L_f173r	L25	21	o	o		split-gap	split	o,p,y	m g #	o 5 tz		
+viv54L_f173r	L25	22	o	o		split-gap	split	o,p,y	g # o	5 tz m		
+viv54L_f173r	L25	23	5	5		split-gap	split	5,s,g	# o o	tz m g		
+viv54L_f173r	L25	24	tz	tz	z	split	split	tz,z,3	o o 5	m g P		
+viv54L_f173r	L25	26	g	g		split-gap	split	g,y,e	5 tz m	P # tz		
+viv54L_f173r	L25	27	P	P		split-gap	split	P,p,r	tz m g	# tz d		
+viv54L_f173r	L25	28	#	#		split-gap	split	#,x,p	m g P	tz d p		
+viv54L_f173r	L25	29	tz	tz	x	split	split	tz,x,z,3	g P #	d p tz		
+viv54L_f173r	L25	30	d	d	r	split	split	d,r,S,V	P # tz	p tz S		
+viv54L_f173r	L25	33	S		S	split-gap	split	S,d,g	d p tz	m g P		
+viv54L_f173r	L25	46	d		d	split-gap	split	d,S,V	m d P	S m o		
+viv54L_f173r	L25	47	S	S	o	split	split	S,o,d,g	d P d	m o o		
+viv54L_f173r	L26	22	b	b	6	split	split	b,6,V	o o m	P o P		
+viv54L_f173r	L26	24	o		o	split-gap	split	o,p,y	m b P	P g :		
+viv54L_f173r	L26	30	B	B	3	split	split	B,3,S	: : 7	p tz r		
+viv54L_f173r	L26	37	H	H		split-gap	split	H,V,{H}	a L tz	n o o		
+viv54L_f173r	L26	38	n	n		split-gap	split	n,r,R	L tz H	o o m		
+viv54L_f173r	L26	39	o	o		split-gap	split	o,p,y	tz H n	o m		
+viv54L_f173r	L26	40	o	o		split-gap	split	o,p,y	H n o	m		
+viv54L_f173r	L26	41	m	m		split-gap	split	m,n,{curl}m	n o o			
+viv54L_f173r	L27	3	:	:		split-gap	split	:,S,r	o o	m o o		
+viv54L_f173r	L27	8	y	y	p	split	split	y,p,g,o	o o y	m d #		
+viv54L_f173r	L27	14	z	z	3	split	split	z,3,2	# P #	m y p		
+viv54L_f173r	L27	36	y	y	g	split	split	y,g,o	o m a	d z m		
+viv54L_f173r	L27	40	#		#	split-gap	split	#,x,p	d z m	# p tz		
+viv54L_f173r	L27	50	d	d	6	split	split	d,6,S,V	o o 7			

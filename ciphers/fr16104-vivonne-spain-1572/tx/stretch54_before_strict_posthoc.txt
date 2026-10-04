@@ -1,0 +1,13 @@
+reading_piece54.tsv: vocabulary 4272 words
+letters	page	offset	words	n_words	M_inside	short_words(<=2)
+35	f173r	402	oli cci te icc a a uec cqe a se o toa te iau o htu	16	3	8
+26	f173v	847	ire o et es toi tgr a nda a a aeu aid	12	16	6
+23	f173r	757	icc tra ire tou te a il ige ncc	9	2	3
+22	f173r	725	til eri en o a te o erb il o nhn	11	5	7
+21	f173r	631	o hnu a en hnu a enc adn o iuh	10	9	5
+19	f173v	305	tui elu a a a a en de es ten	10	0	7
+18	f173r	374	rne uhn o uae a uqe a ies	8	2	3
+18	f173r	304	qae le ne uha ign ebi en	7	3	3
+17	f173v	383	icc ta iod a la en a une	8	1	5
+17	f173v	344	on cce ccr oae en o ibi	7	1	3
+control (letter-order shuffles, 200): longest-stretch median 26, p99 45, max 50; real longest 35

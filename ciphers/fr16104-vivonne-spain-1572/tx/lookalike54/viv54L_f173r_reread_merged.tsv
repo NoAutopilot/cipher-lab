@@ -1,0 +1,196 @@
+passage	pos	label	conf	second	note
+L04	2	{x-crossed}	M	{X}	big crossed X
+L04	5	{flourish}	M		flourish sign after the curl a
+L04	7	t	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L04	16	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L04	21	d	M	s	round body with swash ascender after m j m
+L05	7	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L05	13	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L05	22	m	L		m after j, window ambiguous
+L05	23	k	L	s	k-like hooked stem
+L05	32	{curl}	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L06	16	d	L	S	VOID: reader reported defaulting to the shown passC label (no independent read)
+L06	17	i	M	z	small i-like stroke after curled d-sign
+L06	18	m	L		m after the i
+L06	19	4	M	p	crossed-descender 4 before #
+L06	37	{flourish}	M	{swash}	tall double-stroke flourish before y
+L06	44	{a	L		VOID: reader reported defaulting to the shown passC label (no independent read)
+L06	45	loop}	L	{loop}	VOID: reader reported defaulting to the shown passC label (no independent read)
+L06	46	a	L	@	a after loop; loop+a may be @
+L07	2	4	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L07	3	?	L		faint, sign not found
+L07	24	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L07	30	n	L	r	VOID: reader reported defaulting to the shown passC label (no independent read)
+L07	38	k	L	h	VOID: reader reported defaulting to the shown passC label (no independent read)
+L07	39	{u}	M		u-shaped sign after k
+L07	40	S	M	g	tall curving stroke below line
+L07	45	r	L	P	r with flourish before g
+L08	4	?	L		faint, sign not found
+L08	7	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L08	14	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L08	19	i	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L08	31	l	M	S	looped l-like tall stroke
+L08	36	P	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L08	37	D	M	d	D-like swash sign after R pi
+L08	39	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	13	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	15	{loop}	L	@	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	18	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	25	g	L	e	looped bowl with tail
+L09	29	k	L	h	b/k-like with hook
+L09	32	k	L	h	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	33	y	L	k	heavy swash sign before g
+L09	42	4	M	+	crossed-descender after p
+L09	46	X	L	L	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	47	d	L	S	VOID: reader reported defaulting to the shown passC label (no independent read)
+L09	48	r	L	R	flat-topped small final sign
+L10	23	i	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L10	24	m	L		window does not match context
+L10	28	i	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L11	14	m	M		plain m after p
+L11	20	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L11	21	P	L	r	pi-like or r, uncertain
+L11	32	+	M	4	cross-shaped with descender
+L11	36	@	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L11	38	z	L	x	2-like with flat top
+L12	11	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L12	12	tz	L	z	from neighbouring window t+z descender
+L12	14	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L12	16	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L12	21	a	L	d	small a-like after #
+L12	29	g	M	y	plain g with bowl
+L12	34	y	M	g	y with horizontal bar
+L13	3	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L13	6	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L13	34	x	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L13	43	z	L	x	flat long bar sign after tz
+L14	13	?	L		context does not match window
+L14	17	?	L		context does not match window
+L14	29	H	L	V	VOID: reader reported defaulting to the shown passC label (no independent read)
+L14	30	n	L	r	VOID: reader reported defaulting to the shown passC label (no independent read)
+L14	31	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L14	32	?	L		sign not found
+L15	1	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	2	x	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	3	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	4	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	6	x	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	7	g	L	y	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	8	P	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	9	tz	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	10	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	11	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	13	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	15	g	L	S	loop with lower swash after x
+L15	22	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	40	@	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L15	42	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L16	1	@	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L16	2	tz	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L16	4	z	L	3	VOID: reader reported defaulting to the shown passC label (no independent read)
+L16	24	g	L	y	VOID: reader reported defaulting to the shown passC label (no independent read)
+L16	30	L	M	h	tall looped l after p h p
+L16	41	t	L	2	2-like with small foot
+L16	45	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L17	19	P	L	p	pi-like after 6
+L17	28	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L17	34	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L17	42	V	M	N	long backslash joined to y
+L17	45	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L17	46	a	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L17	47	t	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	6	y	L	g	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	7	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	8	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	9	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	10	z	L	3	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	11	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	12	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	20	A	M	{A-flourish}	capital A with flourish
+L18	37	z	L	3	VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	42	S	L		tall slash stroke
+L18	44	K	L		VOID: reader reported defaulting to the shown passC label (no independent read)
+L18	45	tz	H		t with z descender
+L18	47	r	L	tz	small sign after k, uncertain
+L18	48	L	L	l	loop sign Q-like l
+L19	3	2	L	3	round hook top 2-like
+L19	4	#	M	x	smudged double-crossed bar
+L19	7	z	M	3	flat-topped z with descender
+L19	13	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L19	19	z	M	3	flat-topped z after #
+L19	28	f	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L19	33	k	M	h	hooked k
+L19	34	2	L	3	round-hook 2-like
+L19	41	z	M	3	flat-topped z
+L20	4	r	L	R	VOID: reader reported defaulting to the shown passC label (no independent read)
+L20	15	2	L	3	2-like sign after d
+L20	16	#	M	x	smudged double-crossed bar
+L20	27	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L20	30	x	M	z	flat-topped bar sign after to
+L20	32	y	L	g	VOID: reader reported defaulting to the shown passC label (no independent read)
+L20	46	7	L	z	VOID: reader reported defaulting to the shown passC label (no independent read)
+L21	7	z	M	3	z with curled bottom
+L21	19	g	L	e	looped bowl with swash
+L21	22	g	L	y	VOID: reader reported defaulting to the shown passC label (no independent read)
+L21	25	r	M	P	T-like r with bar
+L21	27	P	M	p	two uprights with top bar
+L21	41	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L22	1	z	M	3	flat-topped z
+L22	15	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L22	16	r	L	P	bar-topped r-like
+L22	19	g	L	e	looped bowl with swash
+L22	30	a	L	c	small a-like
+L22	32	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L22	42	a	L	c	VOID: reader reported defaulting to the shown passC label (no independent read)
+L22	44	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L22	45	{x-crossed}	L	r	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	3	h	L	k	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	4	b	M	6	ascender with bowl and swash
+L23	5	p	L	S	tall stroke with loop top-right
+L23	9	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	18	d	H		round body curling ascender
+L23	27	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	28	g	L	y	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	29	P	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	30	y	L	g	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	31	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	32	d	L	S	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	33	p	L	4	VOID: reader reported defaulting to the shown passC label (no independent read)
+L23	34	V	M	4	long backslash stroke
+L23	42	z	L	3	flat-topped z
+L23	50	y	M		y with hooked descender
+L24	2	d	H		round d with ascender
+L24	14	2	L	3	2-like hooked top
+L24	18	5	L	s	VOID: reader reported defaulting to the shown passC label (no independent read)
+L24	19	o	M	to	small round o after 5
+L24	20	c	M	e	small open c
+L24	30	y	M	@	lead-in stroke y
+L24	41	b	M	6	tall stroke with loop
+L25	10	s	L	5	short curled s-like
+L25	20	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	21	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	22	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	23	5	L	s	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	24	tz	M		t with z descender
+L25	26	g	L	y	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	27	P	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	28	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	29	tz	H		t with z descender
+L25	30	d	M		round body with ascender
+L25	33	S	L	d	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	46	d	L	S	VOID: reader reported defaulting to the shown passC label (no independent read)
+L25	47	S	L	g	large swash stroke
+L26	22	b	M	6	big arch with loop
+L26	24	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L26	30	B	M		B-like with swash
+L26	37	H	L	V	VOID: reader reported defaulting to the shown passC label (no independent read)
+L26	38	n	L	r	VOID: reader reported defaulting to the shown passC label (no independent read)
+L26	39	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L26	40	o	L	p	VOID: reader reported defaulting to the shown passC label (no independent read)
+L26	41	m	L	n	VOID: reader reported defaulting to the shown passC label (no independent read)
+L27	3	:	L	S	VOID: reader reported defaulting to the shown passC label (no independent read)
+L27	8	?	L		faint, sign not found
+L27	14	?	L		faint, sign not found
+L27	36	g	L	y	hooked bottom
+L27	40	#	L	x	VOID: reader reported defaulting to the shown passC label (no independent read)
+L27	50	d	M	S	tall stroke with blob

@@ -1,0 +1,97 @@
+{
+ "seed": "20261054L",
+ "draws": 200,
+ "C1_f103r": {
+  "letters": 1770,
+  "s": -1.7145,
+  "cover": 0.709,
+  "b1": {
+   "null_median": -2.1448,
+   "null_p99": -1.7736,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.9607,
+   "null_p99": -1.9146,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_ink53": {
+  "letters": 4307,
+  "s": -1.6666,
+  "cover": 0.771,
+  "b1": {
+   "null_median": -2.1566,
+   "null_p99": -1.7906,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8779,
+   "null_p99": -1.8459,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "after": {
+  "letters": 1759,
+  "s": -1.6361,
+  "cover": 0.796,
+  "b1": {
+   "null_median": -2.1479,
+   "null_p99": -1.8308,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8762,
+   "null_p99": -1.8121,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "c": {
+   "wrong_keys": 200,
+   "b2_passes": 23,
+   "share": 0.115,
+   "margin_median": -0.0508,
+   "margin_p95": 0.0174,
+   "margin_p99": 0.0431,
+   "margin_max": 0.0575,
+   "real_margin": 0.176,
+   "pass": true
+  }
+ },
+ "before": {
+  "letters": 1793,
+  "s": -1.658,
+  "cover": 0.795,
+  "b1": {
+   "null_median": -2.1232,
+   "null_p99": -1.7439,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8799,
+   "null_p99": -1.8294,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "c": {
+   "wrong_keys": 200,
+   "b2_passes": 18,
+   "share": 0.09,
+   "margin_median": -0.0516,
+   "margin_p95": 0.0076,
+   "margin_p99": 0.0375,
+   "margin_max": 0.0456,
+   "real_margin": 0.1714,
+   "pass": true
+  }
+ },
+ "verdict_b2": "PASS",
+ "verdict_c": "PASS",
+ "audit_ready": true
+}
