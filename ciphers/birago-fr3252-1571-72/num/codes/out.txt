@@ -1,0 +1,6 @@
+family D: types 5, occurrences 27, T=4, null mean 1.70 p95 3 p99 4 max 6, p(T>=real) 0.0445 -> no pass
+  per type (n, s): 41:8,1 21:8,1 18:4,1 10:4,0 25:3,1
+family U: types 6, occurrences 23, T=3, null mean 0.93 p95 2 p99 3 max 4, p(T>=real) 0.0495 -> no pass
+  per type (n, s): 12:5,1 10:5,1 84:4,0 14:4,1 83:3,0 53:2,0
+power control (40 cells, 5% strays, 3 planted word codes): 0/20 trials T > own null p99
+  trials: 1:T2/p99 2/occ6 2:none 3:none 4:T1/p99 1/occ4 5:none 6:none 7:none 8:T1/p99 1/occ4 9:none 10:none 11:none 12:none 13:none 14:T0/p99 1/occ3 15:none 16:none 17:none 18:none 19:T1/p99 1/occ3 20:none

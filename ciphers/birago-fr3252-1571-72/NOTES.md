@@ -1508,3 +1508,72 @@ Next: what to sort next, ranked by score gain in `.../sorter/sort_next.tsv`: f.1
 f.168 R03.6, V03.5, V03.23; f.117r gains are small (<=0.02). Also a native re-capture of the 11 bad-cut tiles. Per the README, a fourth look goes to the
 owner-only disagreements, the 11 M picks on f.117r and 9 on f.168. Sorting the new piles (T60-c holds 7 tiles across leaves: 4 from T65, 1 each from T95, T36 and T60) against the sheet
 would turn U back into values, ~$1 apply after the next save.
+
+## N8-BIRNUM (4 Oct 2026, account-2 worker for LANE-NEAR8): dotted groups and 1x/5x/8x units as nomenclator codes
+
+Brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md` (job N8-BIRNUM). Files in `num/codes/`. `PREREG.md` pushed in 433a6233 before
+any statistic. Inputs as BIRAGO-NUM (f.100r reconciliation; Bourdeau's f.119 ct2, cyphersolver `targets/birago`, MIT / CC BY 4.0). A different
+instrument from the retired anneal and the two spelled-crib tests: code reading from the context around each occurrence plus the leaf's clear text.
+
+**Units (rule-fixed).** Family D, dotted groups: 5 types with pooled count >= 2 -- 41 x8 (both letters), 21 x8, 18 x4, 10 x4, 25 x3 (27
+occurrences). Family U, 1x/5x/8x units of the 158 parse with pooled count 2-8: 12 x5, 10 x5, 84 x4, 14 x4, 83 x3, 53 x2 (23 occurrences).
+
+**Step B, cipher context** (`num/codes/codes_test.py` -> `out.txt`). Statistic T = sum over types of (largest group of identical 2-digit left or
+right flanks - 1). A name/title code after a fixed article or preposition would repeat its flanks. Null: the same counts at random positions in the
+same streams, 2000 draws.
+
+| family | T | null mean | p95 | p99 | max | p | gate (> p99) |
+|---|---|---|---|---|---|---|---|
+| D dotted groups | 4 | 1.70 | 3 | 4 | 6 | 0.045 | no pass |
+| U 1x/5x/8x units | 3 | 0.93 | 2 | 3 | 4 | 0.050 | no pass |
+
+Power control as pre-registered (synthetic it16dip, 40 cells, 5% strays, the 3 most frequent words of length >= 4 occurring >= 3 times planted as
+codes): **0/20** trials beat their own p99, but in 13 of the 20 no word qualified, so nothing was planted and that control did not match the
+target's 27 code occurrences. Post-hoc qualifier, not gating (`matched_control.py` -> `matched_control_out.txt`): the 5 most frequent words planted
+with the target's own profile (8, 8, 4, 4, 3; 13-22 code occurrences realised): **2/20 at 40 cells, 4/20 at 30 cells**. Both are below the
+pre-registered 0.5 power floor. **Step B is untested-by-this-tool at this N.** Neither family passes, and a real word code under a 30-40-cell
+homophonic table would also miss 80-90% of the time, because its flanks are spread over the homophones. The two p ~ 0.05 results are not evidence
+either way.
+
+**Step A, clear context** (f.100r clear text read by this worker from `images/c101.jpg`, 1600 px, itself M-grade). Entity rule: f.100r's clear
+text names several entities twice or more -- Monsignor di Bellagarda, la Valletta, Carmagnola, the Commissario (Battista), Sua Maestà, the Re, V.E.,
+"fraschetta" -- so no candidate set is a singleton. f.119's clear text is not on disk, so f.119-only types cannot qualify. Slot rule: all four f.100r
+clear boundaries ("harebbe a caro | 76 ÷ ...", "... 7 6 7 7 6 | Io dico la pura et mera uerità | ÷ 7 0 8 9 ...", "... 3 0 7 6 ÷ | Ho mandato ...")
+are taken by the 76 / wavy delimiter. No dotted group or 1x/5x/8x unit stands within 2 units of clear text. **No meaning is licensed. 0 tokens
+graded** (H 0, C 0, S 0, M 0). This is the outcome the PREREG stated in advance under its own rules.
+
+Observation for the record, not a test: dotted 25 is followed by 15 or 9 15 at all three of its occurrences (f.100r L03 "2. 5. 1 5", L11 "2. 5. 1
+5", f.119 "2~ 5- 9 1 5"). Dotted 41 has left flank "8 2" once in each letter. Both are inside the null's range (s = 1 per type).
+
+**Verdict: no reading; untested-by-this-tool, not a negative.** Over two letters (1,048 digits) the clear context licenses no code meaning, and the
+cipher-context flank statistic has 10-20% power. This is the fourth instrument on the Nov 1571 system without a result (anneal retired; two crib
+designs and this code reading without power). Every one of them is limited by N. The next step is new material: BIRAGO-NUM-SCOUT's f.138 (7 Feb 1572)
+check, digit shape and shared 6-mers against f.100r/f.119, to see whether it is a third letter in this key rather than in the 1572 key. Suggestion
+only, not started: read f.119's clear text (1 Gallica region + 1 Sonnet read) so that the entity rule can be applied to 41/21/25 across both
+letters. NEAR.md row unchanged: this result is on the numerical letters, not on the f.47r/f.117r near-solve evidence. Novelty not classified (rule 10).
+
+Cost and requests: disk only, 0 network requests, 0 subagent calls, 1 image read by this worker (c101.jpg, on disk). Cost: see the lane ledger.
+
+## Remaining gaps (N8-BIRNUM, 4 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 276 signs, all M/U; f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; r36_L01-L08, v36top, v36mid and r37 were read on HARVEST-D's eye grid, which the row-ink profile matched within 10-45 px there; next: one reconciliation call on their splits, disk only, ~$1.5
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1; TXD-HOLDOUT (3 Oct 2026, ../nevers-birago-fr3251-1572/harvest/tx_decode/holdout/RESULTS.md): TX-DECODE's lattice lam-4 rank 1/201 for f.117r survives the pre-registered held-out control (held-out no.87 lines choose lam 4; printed 1572 key beats all 218 same-design wrong keys, z 6.92; rank 1 at every lam 1-8, z 3.28-3.66), judge still FAIL -1.081 vs real_p05 -0.903; the wrong-key gate alone is weak (passes on 4 of 5 shuffled lattices); no reading, S at best; next: verifier pass on the 32 lam-4 changed positions against the native crops, ~$2
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); dotted groups and 1x/5x/8x units as nomenclator codes untested-by-this-tool (flank statistic, matched control power 2-4/20, N8-BIRNUM), no meaning licensed by the f.100r clear context; next: new material -- f.138 (7 Feb 1572) digit shape and 6-mer overlap against f.100r/f.119 (BIRAGO-NUM-SCOUT's suggestion; a third letter in this key raises N for every instrument above), ~$1
+- Nov 1571 key table - blocker: no-key-material; fr.3995 undated tables all viewed and the sweep is closed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3, BIRAGO-76): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also 1580s), no.75 three-figure codes with League-era names, no.48-51 symbol keys, no.76 a single-sign letter alphabet (digits 1-9 for a-i, symbols and letters for l-z, no 0) with two-figure word codes in a plain and an overlined series (BIRAGO-76); no key table in fr.3995 fits the digit-only 00-59/74-99 token set; the next instrument is new material: a Nov 1571 key in another volume of the Nevers/Birago papers (fr.3252 neighbours, fr.3251, fr.3256, fr.4712-4715 key sheets) located by a catalogue/eye sweep for "chiffre" leaves dated 1571-72
+- fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
+
+## Escalation (N8-BIRNUM, 4 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3); no.76 single-sign letters, not two-figure, crossmatch not applicable (BIRAGO-76)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 codes: clear-context code reading run (N8-BIRNUM, untested-by-this-tool at this N), next f.138 as a possible third letter
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
+Verdict: keep going: 10 internal gaps; cheapest next: f.138 digit-shape / 6-mer check as a third numerical-key letter (~$1); the Nov 1571 key table needs new material (a key sheet in another Nevers/Birago volume)
