@@ -1,0 +1,180 @@
+line	position	sign	confidence	alt	why
+f178r_L01	1	T45	H		agree
+f178r_L01	2	T33	H		agree
+f178r_L01	3	T45	H		agree
+f178r_L01	4	T83	M	B:T24	differ
+f178r_L01	5	T19	H		agree
+f178r_L01	6	T95	M	B:T98	differ
+f178r_L01	7	X_NEW	H		agree
+f178r_L01	8	X_NEW	H		agree
+f178r_L01	9	T78	H		agree
+f178r_L01	10	T63	H		agree
+f178r_L01	11	T86	H		agree
+f178r_L01	12	X_NEW	H		agree
+f178r_L01	13	T19	H		agree
+f178r_L01	14	T58	H		agree
+f178r_L01	15	T53	H		agree
+f178r_L01	16	T96	H		agree
+f178r_L01	17	T70	H		agree
+f178r_L01	18	T25	H		agree
+f178r_L01	19	T19	H		agree
+f178r_L01	20	T83	M	B:T24	differ
+f178r_L01	21	T60	H		agree
+f178r_L01	22	T80	H		agree
+f178r_L01	23	T86	H		agree
+f178r_L01	24	T83	M	B:T24	differ
+f178r_L01	25	T37	H		agree
+f178r_L01	26	T85	H		agree
+f178r_L01	27	T92	H		agree
+f178r_L01	28	X_NEW	M	A:-	gap
+f178r_L01	29	T66	H		agree
+f178r_L01	30	T83	M	B:T24	differ
+f178r_L01	31	T63	H		agree
+f178r_L01	32	T45	H		agree
+f178r_L02	1	T60	H		agree
+f178r_L02	2	T45	H		agree
+f178r_L02	3	T98	H		agree
+f178r_L02	4	T25	H		agree
+f178r_L02	5	T90	H		agree
+f178r_L02	6	T97	H		agree
+f178r_L02	7	T45	H		agree
+f178r_L02	8	T65	H		agree
+f178r_L02	9	T86	H		agree
+f178r_L02	10	T76	H		agree
+f178r_L02	11	T18	H		agree
+f178r_L02	12	T45	H		agree
+f178r_L02	13	T37	H		agree
+f178r_L02	14	T36	H		agree
+f178r_L02	15	T56	H		agree
+f178r_L02	16	T37	H		agree
+f178r_L02	17	T33	H		agree
+f178r_L02	18	T45	H		agree
+f178r_L02	19	T70	H		agree
+f178r_L02	20	T86	H		agree
+f178r_L02	21	T90	H		agree
+f178r_L02	22	T80	H		agree
+f178r_L02	23	T49	H		agree
+f178r_L02	24	T85	H		agree
+f178r_L02	25	T83	M	B:T24	differ
+f178r_L02	26	T25	H		agree
+f178r_L02	27	T53	H		agree
+f178r_L02	28	T19	H		agree
+f178r_L02	29	T83	M	B:T24	differ
+f178r_L02	30	T60	H		agree
+f178r_L02	31	T37	H		agree
+f178r_L03	1	T83	M	B:T24	differ
+f178r_L03	2	T45	H		agree
+f178r_L03	3	T37	H		agree
+f178r_L03	4	X_NEW	H		agree
+f178r_L03	5	X_S	H		agree
+f178r_L03	6	X_NEW	H		agree
+f178r_L03	7	T37	H		agree
+f178r_L03	8	T92	H		agree
+f178r_L03	9	T55	H		agree
+f178r_L03	10	T65	H		agree
+f178r_L03	11	T19	H		agree
+f178r_L03	12	T85	H		agree
+f178r_L03	13	T76	H		agree
+f178r_L03	14	T63	H		agree
+f178r_L03	15	T37	H		agree
+f178r_L03	16	T83	M	B:T24	differ
+f178r_L03	17	T92	H		agree
+f178r_L03	18	T45	H		agree
+f178r_L03	19	T60	H		agree
+f178r_L03	20	T45	H		agree
+f178r_L03	21	T85	H		agree
+f178r_L03	22	T46	H		agree
+f178r_L03	23	T90	H		agree
+f178r_L03	24	T53	H		agree
+f178r_L03	25	T19	H		agree
+f178r_L03	26	T58	H		agree
+f178r_L03	27		M	A:-	gap
+f179r_L01	1	T92	H		agree
+f179r_L01	2	T45	H		agree
+f179r_L01	3	T58	H		agree
+f179r_L01	4	T92	H		agree
+f179r_L01	5	T45	H		agree
+f179r_L01	6	T56	H		agree
+f179r_L01	7	T85	H		agree
+f179r_L01	8	T33	H		agree
+f179r_L01	9	T86	H		agree
+f179r_L01	10	T57	H		agree
+f179r_L01	11	T45	H		agree
+f179r_L01	12	T37	H		agree
+f179r_L01	13	T24	M	B:X_NEW	differ
+f179r_L01	14	T85	H		agree
+f179r_L01	15	T83	M	B:T24	differ
+f179r_L01	16	T45	H		agree
+f179r_L01	17	T83	M	B:T24	differ
+f179r_L01	18	T45	H		agree
+f179r_L01	19	T53	H		agree
+f179r_L01	20	T83	M	B:T24	differ
+f179r_L01	21	T45	H		agree
+f179r_L01	22	T60	H		agree
+f179r_L01	23	T36	H		agree
+f179r_L01	24	T64	H		agree
+f179r_L01	25	T96	H		agree
+f179r_L01	26	T37	H		agree
+f179r_L01	27	X_NEW	H		agree
+f179r_L01	28	T86	H		agree
+f179r_L01	29	T76	H		agree
+f179r_L01	30	T65	H		agree
+f179r_L01	31	T19	H		agree
+f179r_L02	1	T92	H		agree
+f179r_L02	2	T19	H		agree
+f179r_L02	3	T90	H		agree
+f179r_L02	4	T83	M	B:T24	differ
+f179r_L02	5	T85	H		agree
+f179r_L02	6	T88	H		agree
+f179r_L02	7	T33	H		agree
+f179r_L02	8	T24	M	B:X_NEW	differ
+f179r_L02	9	T92	H		agree
+f179r_L02	10	T53	H		agree
+f179r_L02	11	T37	H		agree
+f179r_L02	12	T70	H		agree
+f179r_L02	13	T45	H		agree
+f179r_L02	14	T60	H		agree
+f179r_L02	15	T53	H		agree
+f179r_L02	16	T86	H		agree
+f179r_L02	17	T58	H		agree
+f179r_L02	18	T37	H		agree
+f179r_L02	19	T33	H		agree
+f179r_L02	20	T63	H		agree
+f179r_L02	21	T37	H		agree
+f179r_L02	22	T83	M	B:T24	differ
+f179r_L02	23	T45	H		agree
+f179r_L02	24	T25	H		agree
+f179r_L02	25	T90	H		agree
+f179r_L02	26	T80	H		agree
+f179r_L02	27	T33	H		agree
+f179r_L02	28	T65	H		agree
+f179r_L02	29	T19	H		agree
+f179r_L02	30	T92	H		agree
+f179r_L02	31	T53	H		agree
+f179r_L03	1	T19	H		agree
+f179r_L03	2	T98	H		agree
+f179r_L03	3	T81	H		agree
+f179r_L03	4	T83	M	B:T24	differ
+f179r_L03	5	T80	H		agree
+f179r_L03	6	T70	H		agree
+f179r_L03	7	T85	H		agree
+f179r_L03	8	T83	M	B:T24	differ
+f179r_L03	9	T92	H		agree
+f179r_L03	10	T45	H		agree
+f179r_L03	11	T76	H		agree
+f179r_L03	12	T45	H		agree
+f179r_L03	13	T89	H		agree
+f179r_L03	14	T85	H		agree
+f179r_L03	15	T58	H		agree
+f179r_L03	16	T53	H		agree
+f179r_L03	17	T83	M	B:T24	differ
+f179r_L03	18	T96	H		agree
+f179r_L03	19	X_NEW	H		agree
+f179r_L03	20	T86	H		agree
+f179r_L03	21	T60	H		agree
+f179r_L03	22	T53	H		agree
+f179r_L03	23	T80	H		agree
+f179r_L03	24	X_NEW	H		agree
+f179r_L03	25	X_NEW	H		agree
+f179r_L03	26	X_NEW	H		agree
+f179r_L03	27	T54	H		agree
