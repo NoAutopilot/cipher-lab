@@ -3768,7 +3768,12 @@
       "title": "Clairambault 1161 Avis de Flandre, c. 1570 (Noailles bundle; slug's 1688 is the volume slot): 3389 signs, six leaves. N4-C1 (4 Oct): c188L re-passed to err_2reader 0.084; c184/c189 no continuation; two-instrument test (prereg ed52489f): a blind anneal on the four leaves key.tsv never saw agrees with key.tsv on 0.624 of tokens vs shuffled-order max 0.351 (PASS; seed 2 0.288, seed 3 0.565) -> 15 signs S, 28 M, 6 C; reading C 353 / S 1697 / M 1325 / U 33; judge FAIL -1.233 (real_p05 -0.905) while the leaf's own period gloss PASSes -0.808 (shuffles -1.86..-1.99); fr16142 Noailles-Dax key shape test 2/16 vs p99 3, NO FIT",
       "next": "rule-7 re-derivation of the merged reading (~$3, LANE-NEAR4); multi-seed consensus instrument for the 28 M signs (~$3); sorter/split test for 7 new shapes (~$3)",
       "lane": "LANE-NEAR4 (account 2)",
-      "touched": "4 Oct 2026 04:3x"
+      "touched": "4 Oct 2026 04:3x",
+      "depth": "D1",
+      "depth_pct": 60.7,
+      "decode_status": "Non-decrypted",
+      "depth_check": "period-gloss letter agreement 0.594 on one 220-sign block; fr16 judge FAIL -1.233; longest C/S run 12 tokens (AUDIT 1, A3V2-C1161A1, 4 Oct 2026)",
+      "novelty": "N3 (AUDIT 1, A3V2-C1161A1, 4 Oct 2026; key ours; rule-7 re-derivation SAME, N4-RD1161)"
     }
   ]
 }

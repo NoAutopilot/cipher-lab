@@ -1,0 +1,16 @@
+# clair1161-avis-flandre-1688 -- phrases for tools/print_check.py (A3V2-C1161A1 verifier, 4 Oct 2026)
+# (1) the item's own titles as the finding aid and the leaf give them
+Avis de Flandre chiffres
+Advis de flandres
+# (2) the c186R period marginal gloss (genuine clear text on the leaf, align/pairs_c186R_v0.tsv)
+escript et mander a la royne
+quant au fet de la religion
+religion en ce royaulme
+en grand repoz
+# (3) clauses of the decode graded C/S (reading.txt c185R L01, L06, L15, L16; c186R L05/L08; c187R L20)
+les aultres prisonniers
+entreprinse seraient par
+reportees a la cour
+ce qui sera execute
+en plus grand repos
+leur conseil et tout

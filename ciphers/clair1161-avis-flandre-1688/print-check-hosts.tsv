@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	2	ok
+api.openalex.org	13	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Avis%20de%20Flandre%20chiffres%22
+archive.org	8	ok
+be-api.us.archive.org	12	ok
+www.googleapis.com	12	ok
