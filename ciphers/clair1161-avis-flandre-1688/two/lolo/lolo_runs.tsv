@@ -1,0 +1,7 @@
+time	arm	dropped	N	score	L4_full_stream	apd	free_differ_key.tsv	time
+2026-10-04 15:40	ctl	c187L	2658	nan	-2.71219	a=u p=c d=n	22	0s
+2026-10-04 15:40	ctl	c185R	2671	nan	-2.67065	a=u p=c d=n	22	0s
+2026-10-04 15:42	ctl	c187R	2636	-7250.8	-2.68032	a=u p=c d=n	24	143s
+2026-10-04 15:42	ctl	c188L	2623	-7136.9	-2.67553	a=u p=c d=n	23	145s
+2026-10-04 15:42	ctl	c186L	3132	-8607.4	-2.66625	a=u p=c d=n	22	164s
+2026-10-04 15:42	ctl	c186R	3155	-8671.1	-2.66663	a=u p=c d=n	23	170s
