@@ -1858,3 +1858,32 @@ Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **BnF fr.2980 f.29r (no.21), Gramont to Villandry, Rome, 20 May 1530**: **D2** (Partially decrypted; outward "partially deciphered (about 94%)"), 93.8% (H 532 + S 1 of 568; D3 withheld: lines that do not read are ordinary text, not names/codes). Check: published key (Tomokiyo, Gramont 1530) applied; blind second reader's corrections. Sentence: "Gramont tells Villandry that he has given the bearer an article set apart, addressed to Villandry although it is for the King, and calls it 'le total fondement'."
 - **BnF fr.2980 f.30r-v (no.22), Gramont to Francis I, Rome, 20 May 1530**: **D2** (Partially decrypted; outward "partially deciphered (about 85%)"), 84.7% (H 1468 + S 199 of 1969; D3 withheld: unread lines are ordinary text). Check: published key (Tomokiyo) H 1468; 199 S values with a shuffled-position control; ehx = T confirmed by VERIFY-GRA. Sentence: "Writing to the King ('Sire'), Gramont reports that someone thinks the King is there 'pour faire ce qu'il vouldra et non aultre'."
+
+## Key-grade verification VER-GRACOS (account 3 verifier, 4 Oct 2026, 17:3x UTC)
+
+Independent session (not N8-GRA2/N8-GRA3). Disk only, no network. Nothing decoded and no key value changed.
+
+**ST = L at grade C (N8-GRA3, 7c3f4210): CONFIRMED.**
+- Re-ran `n8gra3/score3.py --target` with ST *removed* from key.tsv, so the code's own value cannot steer the alignment. The output matches
+  N8-GRA3's exactly: agree 0.871 on 707 keyed tokens, N1 p99 0.328, N2 p99 0.299, PASS. ST: 4 occurrences, all aligned to L, per-code
+  shuffled-print null 0.000 (200 shuffles). The null re-pairs the print, so it can differ from the target (rule 3).
+- The print context at each occurrence reads naturally with L: "selon qu'i**L**" (f.18v L01), "**L**e roi" (L03), "qu'il **L**e me dis"
+  (f.18v L23), "**L**a parole" (f.18r L01, N8-GRA2 lines). The key-decoded neighbours match the print on both sides.
+- Eye check: f18vA_L01_b shows the long-s joined to t right after the `||`, and f18vC_L16_a shows the same shape at the line's right edge.
+  Both match the reconciled ST.
+- C here means known plaintext: Le Grand III pp.455-456 prints the same letter's plaintext (rule 4), and the S value from f.30 inference
+  agrees with it.
+- Depth unchanged. ST moves S -> C, so H+C+S on f.30 stays 1667 of 1969 (84.7%), and D2 stays D2.
+- Clerical slip (not a grade, not changed): the key.tsv note says "L24", but NOTES and recon put the third f.18v occurrence at L23
+  (= f18vC_L16).
+
+**z: data conflict (rule 4), not settled. key.tsv z = A at H is kept for f.30.**
+- Witnesses for **A**: Tomokiyo's table (a row 3, z-shape; key from fr.3019 and cross-checked on fr.3071/fr.3040 per NOTES), plus the
+  f.30r-v reading itself. All 43 f.30 z tokens were checked in context, and A gives the words: f**a**ict, p**a**rolles, gr**a**nde,
+  f**a**ire, decl**a**ration (x3), l**a** ville, **a**mbassade, recomm**a**nde, p**a**r le passe, t**a**nt. R gives none of them.
+- Witnesses for **R**: fr.3040 no.6 (28 March 1530, Le Grand III pp.454-457) as read by the N8-GRA2/N8-GRA3 blind readers. Re-run:
+  20 of 23 aligned occurrences give R (+3/3 in N8-GRA2) in print contexts such as "pou**r**", "de **r**etour", "au dit heu**r**".
+- Reading: either the readers' label `z` on fr.3040 no.6 is a different, z-like R sign (the f18vC_L02_b shapes carry a top hook), or that
+  letter's table differs at this cell. The f.30 contexts rule out R on f.30. So the C value R applies only to fr.3040 no.6's
+  readers' label and must not enter key.tsv (f.30's key). Logged in HYPOTHESES.md. Next step, unchanged from NOTES: image-check of fr.3040's
+  z against the Tomokiyo/Lasry key images (~$1).
