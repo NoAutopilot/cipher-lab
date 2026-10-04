@@ -86,3 +86,127 @@ Key: **published** (S. Tomokiyo, credited). Text: unknown.
   Google Books retry, ~$1); D2 needs a cleaner transcription (lookalike pass, the ': :' pair as one sign, the a/u label
   in "qae"), NOTES.md's own named next step (~$4).
 - Second opinion: row SO-VIV54 queued (second-opinions/PROMPT-chatgpt-viv54.md).
+
+## AUDIT 2 -- ink piece 53, its audit 1 (VIV53-A1, account-3 verifier, 4 Oct 2026, session_01Vap6PnSM2j7fVXirX6Dtd2)
+
+Item: ink piece 53, BnF fr.16104 ff.170r-171v (Gallica btv1b9009609w, canvases 184-186; address leaf f.172r "Monseigneur",
+docket 5 Sept 1572). Jean de Vivonne, sr de Saint-Gouard, to the duc d'Anjou (heading "du S^r de S^t gouard au Duc d'Anjou"),
+"de Madril ce v^me de Sept^bre 1572". Seven plain lines ("Monseigneur, Comme je n'ay intention que a bien et fidellement servir
+... ce que j'ay traicté avecques le Roy catholique en l'audiance"), then 102 cipher lines (f.170r 22, f.170v 29, f.171r 30,
+f.171v 21), plain closing and signature.
+Reading under audit: N6-VIV53 + N6-VIV53B (commits 8ce9ea2b 9af8ad2d d2acd3d7 ff56211b 33bf8b49 e1018357 9d698f63), two blind
+Sonnet passes per page + script reconciliation, decoded with key.tsv (S. Tomokiyo's published 1572-74 key, held out on ink 40
+vs its clerk decipherment 41, N5-VIVK PASS). Claim under audit (brief): "no clerk decipherment of this letter located; the
+reading is new text." This verifier is not the solver and decoded no new material.
+
+### 0. Identity first: is ink 53 the 5 Sept 1572 letter of NOTES.md line 74 (Gachard's L), a duplicate, or another letter?
+**Another letter.** NOTES.md line 74 (N4-VIV) is ink 50, ff.157r-159v, to the **King**, Gachard II entry L ("sans le
+déchiffrement"), whose clerk decipherment is ink 51, ff.162r-163r ("dechiffré de la precedente", N5-VIV5S). Ink 53 is a
+separate piece three leaves on, to the **duc d'Anjou**, with its own heading, address leaf ("Monseigneur") and docket. Checks:
+- Recipient, three independent marks on the leaves (heading, address leaf, docket; N6-VIV53, N5-VIVTAB) plus one inside the
+  cipher: the same 12-sign cipher sequence `# a d x # y m P 6 # m V` occurs twice (f.171v L14 and L19; a ciphertext repeat,
+  independent of any key) and decodes under key.tsv as "[...t] vos[t]re alte-" ("uosthealte" + unread V; y graded M, read
+  h, though key.tsv's own alignment counts split it l 19 / r 18 / h 17). "Vostre altesse" is the style due to the King's brother, not to the King;
+  the string occurs in neither ink 54 nor ink 63 (both to the King) under the same key.
+- Content against decipherment 51: this verifier fetched canvases 176-177 once (3200 px, 2 requests, scratch only) and read by
+  eye the heads of f.162r, f.162v and f.163r. 51 narrates the audience: Don Diego [de Çúñiga], "M. l'Admiral", Genlis, "la
+  Religion nouvelle", Flandres, the duc de Sesa leaving for Barcelona, Don Juan of Austria recalled, the Escurial and St
+  Jerome, the Venetian ambassador, the King "plus froid ... melancolique". None of ink 53's readable stretches ("inutile de
+  negotier", "intelligence", "ministres", "frontiere", "bon chrestien s'il est bien", "bonne intention", "de contradiction",
+  "grand bien qui en adviendroit", "capitaine qu'il entend", "vostre altesse") was seen in the parts of 51 read; a fuzzy
+  best-substring search of 51's legible proper names in the 53 decode scored no better than in the ink 63 decode or a
+  letter-shuffle of 53 (scratch script; no signal). Grade: **inferred** (51 not transcribed in full; heads of three pages read).
+- Conclusion: ink 53 is not ink 50, is not a cipher copy of 50 sent to Anjou on the evidence available, and has no clerk
+  decipherment piece beside it (N5-VIVTAB, N6-VIV53: none between 52 and 55).
+- **The leaf's own interlinear words are a partial period decipherment of this letter** (rule 10, N0/N1 test): six legible
+  words or fragments over f.170v L14-L15 and f.171r L07, L19, L22, L25 ("myssent", "en quelque", "e l'Infanct", "longuement",
+  "Catixanura", "po?tent"), plus illegible ones over f.170r L03 and f.171r L08-L10; none on f.171v (N6-VIV53B). They are about
+  45 letters against about 4,300 decoded letters: a partial gloss, not a known plaintext. Not N0, not N1. The brief's "no
+  clerk decipherment located" holds only for a separate decipherment piece, as for ink 54.
+
+### 1. Extract
+- Plaintext as read: 4,521 tokens; H 3,539 (78.3%), M 768, U 214; no C, no S. H = both readers agree (or a label rule settled
+  it) AND the code is grade C in key.tsv -- key-source grading, not legibility.
+- Readable stretches (solver's word division, by eye, not a gate): f.170r L04 "...inutile a ne negotier...", L11
+  "...intelligence...", L13 "...ministres...", L16 "...intention..."; f.170v L06 "...frontiere...", L11 "...bon chrestien
+  [qu]e s[il] est bien...", L16 "...tiendra..."; f.171r L08 "...bonne intention...", L15 "de contradiction il ne
+  [p]our[r]oit doubter" (as decoded: "deccontradicctionilnerauldhoitdoubter"), L29 "...subtilite...", L30 "...grand bien
+  q[u]i en adviendroit"; f.171v L13 "...toute...contre", L14/L19 "vos[t]re alte-", L15 "...capitaine qu'il enten[d]", L16
+  "...oublier a rien".
+- Solver's search log: Gachard I-II (no 5 Sept 1572 letter to Anjou; Anjou letters 16 July and 19 Sept only), La Ferrière,
+  Catherine IV, d'Ars, Kervyn I-VI (N6-KERV), print_check on phrases_53.txt and phrases_53b.txt (generic or unrelated hits).
+
+### 2. Rule-7 re-derivation and gate checks (run by this verifier before grading)
+- `python3 tx/viv53_decode.py --check` -> "reading_piece53.tsv up to date" (exit 0).
+- `python3 tx/viv53b_test.py` re-run in full (3 min 37 s, numpy installed in the container): tx/viv53b_result.json regenerated
+  **byte-identical** (git shows no diff): C1_sub -1.695 vs p99 -1.901, C2_sub -1.673 vs -1.801, f.171v -1.620 vs -1.817,
+  C1_full -1.715 vs -1.905, C2_full -1.658 vs -1.826, whole piece -1.667 vs -1.843; all PASS; audit_ready true.
+- Rule 3 weighed: (i) the registered gloss gate on ff.170r-171r **FAILed** its floor (0.577 < 0.60) though well above its
+  shuffled-key null (p95 0.353); it stands and is the only check tied to the leaf's own period words. (ii) b2 alone is not
+  key-specific on this hand: 44/200 (22%) wrong keys pass it; the registered specificity gate passes (real margin 0.176 vs
+  wrong-key p99 0.051, max 0.077), so the published key orders this text better than any of 200 permuted keys. (iii) the
+  fr16 judge cannot gate here (it FAILs the known-good f.103r control). Verdict on the key: Tomokiyo's key reads this letter
+  (specificity PASS, ciphertext-repeat "vostre alte-" consistent with the recipient); the transcription (err_2reader 0.07-0.21
+  per page) leaves much of the text as letter salad.
+
+### 3. Independent search (4 Oct 2026, 11:10-11:19 UTC). Reused from AUDIT 1 (VIV54-A1) where the family is the same:
+(f) solver repositories and blogs (CS-5), Douais I-III, Gachard *Correspondance de Philippe II* II-III, La Ferrière *La
+Saint-Barthélemy*, Forneron II, Baumgarten 1895, OpenAlex/S2/CrossRef/HAL for "Saint-Gouard" -- not re-fetched.
+| family | what was searched (this audit) | result |
+|---|---|---|
+| (a) canonical series | Gachard II via Google Books snippet search "Saint-Gouard" "duc d'Anjou" "5 septembre 1572": his table lists Saint-Gouard to Anjou 16 July 1572 (p.384) and 19 Sept 1572 only; entry L (5 Sept) is the letter to the King | no entry for ink 53 |
+| (b) sender/recipient | IA FTS "Saint-Gouard" "duc d'Anjou" "5 septembre 1572", "Gouard" "Monsieur" "5 septembre 1572": hits are Kervyn III notes (Saint-Gouard to Anjou 19 Sept 1572), Catherine IV, Gossart; *Lettres de Henri III* I (ed. M. François, 1959; Google Books snippets only): letters from Anjou to Saint-Gouard (14 Apr, 17 July 1572), no 5 Sept 1572 letter to him found in snippets; d'Ars (snippets): Anjou letters 16 July, 19 Sept 1572 | not found |
+| (c) documentary editions / secondary | Gossart, *Espagnols et Flamands* I (IA espagnolsetflam01gossgoog, whole djvu text): 5 Sept 1572 hits are Mondoucet to the King and Philip to Monteagudo, no Saint-Gouard-Anjou letter; Kervyn (N6-KERV, plus IA FTS): Anjou letters 19 Sept 1572 only; *Revue des questions historiques* 35 (1884), "La Saint-Barthélemy et l'Espagne" (IA RevueDesQuestionsHistoriquesA18T35): djvu text **500 again** (third failure across two audits), read through IA FTS highlights: it cites Saint-Gouard to Charles IX 5 Sept 1572 (fr.16104) and to Anjou 16 July and 19 Sept 1572 (fr.16104), no 5 Sept letter to Anjou in any highlight; Ribera, *Diplomatie et espionnage* (2007; Google Books snippets): cites Saint-Gouard to Anjou 7 Nov 1572 (BNF fr.), a 5 Sept 1572 letter "BNF Fr. 16104, cité par G. de Bremond d'Ars" in an audience context (the letter to the King, inferred), and, at his note 139, a 1572 letter from Madrid in which "Saint-Gouard indique au duc d'Anjou ... que Philippe II est un monarque taciturne et impénétrable" -- **date of note 139 not reached** | not found; Ribera n.139 open |
+| (d) holding archive | BnF catalogue records as AUDIT 1; the leaves themselves (no decipherment piece between inks 52 and 55, N5-VIVTAB/N6-VIV53) | catalogue only |
+| (e) full text | IA FTS "inutile de negotier" (4 hits, all Fazy, Savoy 1703-04, unrelated), "bon chrestien s'il est bien" (0), "Saint-Gouard" "vostre altesse" (hits: 1580s letters to other princes, unrelated); Google Books "monarque taciturne et impénétrable" (Ribera only); print_check (solver) as above; HathiTrust full text unreachable from the cloud | not found |
+| (g) scholarship | OpenAlex "Saint-Gouard Anjou 1572" (4 works: Flanders 2018, Guise 2025, EHR 1887 Valois princes, Catherine thesis 2011 -- none on this letter); HAL "Saint-Gouard" 0; S2 0; CrossRef noise; JSTOR: 2 rows queued (families i and ii) | not found |
+Unreachable / not done: Ribera (2007) in full (note 139's date and source); RQH 35 (1884) in full; *Lettres de Henri III* I in
+full (snippets only; it prints Anjou's own letters, but its notes may cite the replies); Simancas / Arch. nat. K 1529-1530
+(possible Spanish intercepts); Persée; HathiTrust full text; JSTOR (queued).
+Requests: gallica.bnf.fr 4 (c176-c177 at 1600 and 3200 px, scratch only, >= 3 s apart); archive.org ~12 (FTS 9, djvu 2,
+metadata 1); googleapis 17; openalex 1; HAL 1; semanticscholar 1; crossref 1.
+
+### 4. Classification (step 3 of the template)
+**ink 53 (fr.16104 ff.170r-171v, 5 Sept 1572, to the duc d'Anjou): N3** (plaintext and mapping). No prior plaintext,
+summary or decipherment of this letter located in the families above; the leaf carries a partial period gloss (six legible
+interlinear words, about 45 letters), which the gloss gate tested (FAIL at its floor, above its null). Not N4: Ribera (2007)
+note 139 -- a 1572 Saint-Gouard letter to Anjou from Madrid, paraphrased, date not reached -- could be this letter, and the
+RQH 1884 article and *Lettres de Henri III* I were read only through search highlights and snippets. Evidence quality:
+moderate (dated catalogue greps, robust to content but not to OCR damage or undated paraphrase). Confidence: medium.
+Key: **published** (S. Tomokiyo, credited). Text: unknown.
+- Safe sentence: "Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of Saint-Gouard's cipher letter to the
+  duc d'Anjou of 5 September 1572 (BnF fr.16104 ff.170r-171v); a repeated cipher group reads 'vostre alte[sse]', the
+  style due to its addressee. No printed plaintext or separate decipherment of this letter was located in the editions
+  searched."
+- Unsafe sentences: "The reading is new text" / "first decipherment of the letter to Anjou" / "no decipherment of this letter
+  exists" (rule 10; the leaf carries a partial period gloss) / "the 5 September 1572 letter" without the recipient (ink 50,
+  to the King, is the same date and is deciphered by ink 51).
+
+### 4a. Depth (rule 4a)
+- Tokens: H 3,539 of 4,521 (78.3%); unread: names/codes -- not identified (U 214 are labels outside key.tsv: V, c, 2, e,
+  flourishes; key.tsv has no nomenclator, so V after "alte-" may be an abbreviation sign); other -- M 768.
+- **D1, "fragments read".** The longest stretches do not reach the authentication distance once liberties are counted
+  (French simple-substitution unicity about 28 letters, AD about 1.5x = about 42; higher for a homophonic key): "de
+  contradiction il ne [p]our[r]oit doubter" is 37 decoded letters but needs word division, two doubled-c collapses (the ': :'
+  pair) and four letter repairs in "rauldhoit"; "grand bien q[u]i en adviendroit" is 25 letters with one repair; "vostre
+  alte-" is a 12-sign ciphertext repeat (a strong recipient check, but short, one M, one U). No code value is tested in two
+  contexts (letter key). The verifier cannot write one true, specific sentence about what the letter says: the vocabulary
+  (negotiation said to be useless, the ministers, the frontiers, a capitaine, "bonne intention", "grand bien") is
+  suggestive, not a statement. The gloss gate FAIL and the 22% wrong-key b2 pass rate also weigh against D2.
+  depth_check: key held out on ink 40 (N5-VIVK) + b2 order gate and wrong-key specificity (N6-VIV53B, re-run byte-identical
+  here) + ciphertext repeat decoding to the addressee's style (this audit); gloss gate FAIL at floor; no external content
+  check.
+- Outward words: "fragments read". Not counted as a unique solve (N3 but D1). Stronger than ink 54 (longer French runs, a
+  key-independent repeat), still below D2.
+
+### 5. Postmortem
+- Failure named: the brief's claim sentence ("the reading is new text") uses rule-10 wording and overstates twice: there is no
+  continuous reading, and the leaf carries a partial period gloss. Corrected here. NOTES.md N6-VIV53/N6-VIV53B say "Novelty
+  not classified" and "partial period gloss"-level language -- no over-claim found there.
+- The identity question the brief raised is settled: the same-date letter in NOTES.md line 74 is ink 50 (to the King, with
+  decipherment 51); ink 53 is a different letter to Anjou. Any outward sentence must name the recipient.
+- Next steps that would move this item: N4 needs Ribera (2007) note 139 and the RQH 35 article read in full (Google Books
+  page view is blocked from the cloud; a LOCAL-QUEUE row on the owner's browser, ~$1), and *Lettres de Henri III* I's notes
+  for 5-19 Sept 1572; D2 needs a cleaner transcription (tools/lookalike_pass.py on 4/+/p, a/u, z/3, S/d and the ': :' pair
+  as one sign, NOTES.md's named step, ~$3) and then a clause above about 42 letters without repairs.
+- Second opinion: row SO-VIV53 queued (second-opinions/PROMPT-chatgpt-viv53.md).
