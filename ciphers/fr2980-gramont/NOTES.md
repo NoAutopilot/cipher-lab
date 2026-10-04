@@ -1244,21 +1244,71 @@ Requests this pass: api.digitale-sammlungen.de 13 (OCR, all 200); archivesetmanu
 gallica_folio.py, 1 info.json, 9 IIIF region/thumbnail fetches, 1 native region via iiif_lines.py; all 200), >= 1.5 s apart, no challenge.
 Subagent calls: 2 (Sonnet blind passes); reconciliation by this worker. Novelty not classified (rule 10).
 
-## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA, 4 Oct 2026)
-Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, S 199, M 239; U 63, after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
+## fr.3040 no.6 f.18v + f.19r top vs Le Grand III pp.455-456 as known plaintext: PASS; ST keyed L at C (N8-GRA3, account 2, 4 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave3.md`, job N8-GRA3. PREREG-N8-GRA3.md (addendum to PREREG-N8-GRA2; new lines, print
+segments, units, open-code rule) pushed ec93af5a before any crop was read or any score computed.
+
+**Lines and print.** f.18v (canvas 33): L01-L03 at the top (end of the f.18r block; print S1 = N8-GRA2's span, free ends), L04-L07 (the
+addendum estimated 5 lines; the block has 4) after "selon le project et desseing qu'ilz font" (print S2 = p.455 "car puisque luy qui est
+Pere" .. p.456 "depuis fait entendre"), L08-L23 after "plus proffitable pour le service du ..." (16 lines, the first mixed clear+cipher)
+and f.19r (canvas 34) L01-L02 (print S3 = p.456 "dudit Seigneur. Monsieur l'Evesque de Vvigorne" .. "pour s'en valloir de luy ailleurs").
+Print from MDZ OCR scans 461-463, long-s slips hand-fixed (`n8gra3/print_S2.txt`, `print_S3.txt`). Crops: `tools/iiif_lines.py --ark
+btv1b9059870w --canvas 33 --region 1000,270,2860,360 | 1000,1040,2900,640 | 1000,2230,2880,2200 --prefix f18vA|f18vB|f18vC` and `--canvas
+34 --region 1080,200,2700,300 --prefix f19r`, all `--follow-slope 400 --overlap 0` (f18vC band L17 is clear text, dropped). The tool's s1/s2
+segments overlap by about 1,900 px when the region is a little wider than --max-width (N8-GRA2's f.18r crops have the same overlap), so
+`n8gra3/halves.py` cut non-overlapping _a/_b halves at the emptiest column near mid-line; only those are committed (manifest marks the s1/s2
+entries uncommitted). In this job's numbering f18vC_L01-L16 = f.18v L08-L23.
+
+**Run.** 4 Sonnet blind calls (2 units x 2 passes, `n8gra3/PASS-BRIEF.md`, `passA_u1/u2.tsv`, `passB_u1/u2.tsv`); raw agreement
+730/869 = **0.840** (`splits.py`). Reconciliation (`reconcile.py`): agreements kept, reader-label aliases (a -> A2, O -> null_o, n -> n6, the
+v shape both readers saw -> v, unkeyed), two splits settled by this worker's eye without the print (HASH on f.19r L02: '#' with two bars;
+zb vs mx on f.19r L02); every other split '?' (129/869 = 0.148, unscored; the largest split class, lz vs g2 x12, left unsettled).
+Scorer `n8gra3/score3.py` (imports N8-GRA2's registered functions; three alignments, pooled).
+
+| | agree | N1 shuffled print p99 | N2 shuffled key p99 | gate |
+|---|---|---|---|---|
+| planted control, 13% error, per-block N 83/120/504, 20 seeds | 0.878 mean (min 0.857) | 0.318 | 0.274 | >= 0.468: pass |
+| **target f.18v L01-L23 + f.19r L01-L02, 707 keyed tokens** | **0.871** | 0.328 | 0.299 | >= 0.50 and > p99: **PASS** |
+
+Pooled with N8-GRA2's f.18r L01-L10 (0.838 on 308), key.tsv reads the cipher of fr.3040 no.6 against the printed plaintext at about the
+planted-control level. This is a check of key.tsv, not a reading of f.30.
+
+**Open codes (registered rule, this job + N8-GRA2 f.18r L01-L10).**
+- **ST: 4 occurrences (f.18r L01, f.18v L01, L03, L23), all aligned to L, per-code shuffled-print null 0.000; eye check on each crop: all
+  four are the long-s joined to t shape of atlas_f30add, none rejected -> key.tsv `ST L C`.** key_extension_f30.tsv already had ST = L at
+  grade S (infer_unkeyed.py, 24 Sept 2026, 18 f.30 occurrences); the known-plaintext value agrees with it. `decode.py` regenerated, f.30
+  grades now H 1468, C 18, S 16, M 230, U 237 (was C 0, U 256; f.30r L05 now reads "POVRLA"); `decode.py --check` exit 0.
+- HASH: 6 occurrences -> L, L, L, L, E, gap: not all the same, not keyed (4/6 L, like ST; a variant of the same value is possible, untested).
+- A2: 10 -> I x5, E x3, L, D: not keyed (the label may cover two shapes).
+- Mx (key '?'): 2 -> N, N, per-code null 0.04 > 0.01: listed, not keyed. BOX: 3 -> R, R, gap: not keyed. QQ 1 (gap), v 1 (M): seen once.
+- INF, TRI, B8, ev: no occurrence read in these lines.
+
+**Keyed-code conflicts (>= 2 disagreements, rule 4: listed, not changed).** **z A -> R in 20 of 23** aligned occurrences (N8-GRA2 had
+3 of 3 on f.18r): on this letter the sign the readers label z reads R almost everywhere, against Tomokiyo/Lasry's A; either z is R in this
+letter's key, or the readers' 'z' is another R sign (rs, r3) -- an image check of z against both key tables is the next step, not run.
+q E -> B x6 of 14 (q/9 reader confusion likely); dl P -> H x3 of 18; g V -> E x5 of 51 (9/g); h V -> S x2; 2 S -> L x2; 4t ET aligns
+badly because the registered normalisation drops the print's "&"; 5 C falls on gaps x7 (cedilla/c?).
+
+Requests this pass: gallica.bnf.fr 9 (3 x 1000 px canvas thumbnails, 1 info.json, 5 native-region fetches via iiif_lines.py; all 200);
+api.digitale-sammlungen.de 3 (OCR scans 461-463, all 200); >= 1.5 s apart, no challenge. Subagent calls: 4 (Sonnet blind passes);
+reconciliation and eye checks by this worker. Novelty not classified (rule 10).
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
+Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
-- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section); the hidden-sign tests there predate ehx = T in the base; a names test against the clear companion fr.3019 no.31 (A2-GRA6, 3 Oct 2026, f84_names_test.tsv) is a non-test (power control 0/3) and its post-hoc no-identity variant gives no credible name (HASH -> TREBYA only, an edge-letter bias)
+- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (HASH aligns L in 4 of 6 fr.3040 no.6 occurrences, not keyed, N8-GRA3) (f30r_top section); the hidden-sign tests there predate ehx = T in the base; a names test against the clear companion fr.3019 no.31 (A2-GRA6, 3 Oct 2026, f84_names_test.tsv) is a non-test (power control 0/3) and its post-hoc no-identity variant gives no credible name (HASH -> TREBYA only, an edge-letter bias)
 - f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: open-codes; round 3 of the hidden-sign test with ehx = T in the base accepts no sign change (A2-GRA4, 3 Oct 2026, test_f30r_top_round3.tsv) and the instrument is retired for these hypotheses (third run); the 3 losing ehx occurrences are ehx by shape on their crops
 
 ## Escalation (A2-GRA, 2 Oct 2026)
-- [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071; fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) located on Gallica (btv1b9060036k canvas 68 = f.42r, clear only) but its cipher original is in no catalogue reached (N8-GRA, 4 Oct 2026), so that pair cannot be aligned; the 28 March pair is fr.3040 f.18-19 no.6 vs Le Grand III pp.454-457 (not p.399): f.18r L01-L10 PASS 0.838 vs p99 0.347 (N8-GRA2, 4 Oct 2026), no open code reached C; f.18v and f.19r blocks unread
+- [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071; fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) located on Gallica (btv1b9060036k canvas 68 = f.42r, clear only) but its cipher original is in no catalogue reached (N8-GRA, 4 Oct 2026), so that pair cannot be aligned; the 28 March pair is fr.3040 f.18-19 no.6 vs Le Grand III pp.454-457 (not p.399): f.18r L01-L10 PASS 0.838 vs p99 0.347 (N8-GRA2, 4 Oct 2026); f.18v L01-L23 + f.19r L01-L02 PASS 0.871 vs p99 0.328, ST keyed L at C (N8-GRA3, 4 Oct 2026); f.18r L11-L26 unread
 - [x] clear-pages: no clear text of these letters known; the LP iv(3) 6244/6245 summaries are other letters (Bologna, Feb 1530, English paraphrase), cannot give C by construction and are not on disk (A2-GRA5, 3 Oct 2026, non-test); fr.3019 no.31 (Gramont, Rome 15 May 1530, in clear) read from Gallica by two blind passes (A2-GRA6, 3 Oct 2026, f84_passes.md): Italian field news (Rangone at Piacenza, the count of Gaiazzo? to the pope), no topic overlap with f.30; its 19-name list fits no open code (registered test non-test, power 0/3; post-hoc variant only HASH -> TREBYA, rejected as bias)
 - [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: siblings, read the remaining fr.3040 no.6 cipher blocks (f.18v, f.19r top, about 30 lines) against Le Grand III pp.455-457 with per-occurrence eye checks on the open codes HASH, A2, INF, TRI, ST, to give them C (N8-GRA2 showed key.tsv reads f.18r L01-L10 at 0.838 vs null p99 0.347), ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: image-check, the z sign against the Tomokiyo and Lasry key images and f.30's z occurrences, since fr.3040 no.6 aligns z to R in 23 of 26 occurrences against the key's A (N8-GRA2/N8-GRA3, 4 Oct 2026), ~$1; then siblings, fr.3040 f.18r L11-L26 (16 lines, unread) against Le Grand III pp.454-455 for more HASH/A2/Mx occurrences under PREREG-N8-GRA3, ~$3
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 

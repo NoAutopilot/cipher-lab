@@ -1,0 +1,4 @@
+# Le Grand, Histoire du divorce III, Preuves pp.455-456 (MDZ bsb10280117 scans 461-462, OCR api.digitale-sammlungen.de/ocr),
+# from after "selon le project & desseing qu'ils font" (clear on f.18v) to before "Et seroit bon" (clear on f.18v).
+# Hand-corrected OCR slips only (long s read as f: puifque, diffimule, conclufion). N8-GRA3, 4 Oct 2026.
+car puisque luy qui est Pere, trouve bon que son Maistre dissimule, il faut que ce soit par cette conclusion faite avant son partement que l'on luy ait depuis fait entendre.

@@ -102,7 +102,7 @@ f30r	L03	23	br	h	R	H
 f30r	L03	24	5	h	C	H
 f30r	L03	25	9	h	E	H
 f30r	L03	26	2	h	S	H
-f30r	L03	27	ST	m	L	S
+f30r	L03	27	ST	m	L	C
 f30r	L03	28	A2	h	E	S
 f30r	L03	30	CROSSo	l	?	U
 f30r	L03	31	r3	m	R	H
@@ -169,7 +169,7 @@ f30r	L05	13	dl	m	P	H
 f30r	L05	14	lt	h	O	H
 f30r	L05	15	g	h	V	H
 f30r	L05	16	r3	h	R	H
-f30r	L05	17	ST	m	L	S
+f30r	L05	17	ST	m	L	C
 f30r	L05	18	z	h	A	H
 f30r	L05	19	bb	l	COM	M
 f30r	L05	20	fh	h	D	H
@@ -255,7 +255,7 @@ f30r	L07	25	nr	m	N	H
 f30r	L07	26	2	h	S	H
 f30r	L07	27	9	h	E	H
 f30r	L07	28	g	h	V	H
-f30r	L07	29	ST	m	L	S
+f30r	L07	29	ST	m	L	C
 f30r	L07	30	III	h	E	S
 f30r	L07	31	2	h	S	H
 f30r	L07	32	q	h	B	S
@@ -323,7 +323,7 @@ f30r	L09	15	aq	m	Y	H
 f30r	L09	16	z	h	A	H
 f30r	L09	17	nr	h	N	H
 f30r	L09	18	m	h	T	H
-f30r	L09	19	ST	m	L	S
+f30r	L09	19	ST	m	L	C
 f30r	L09	20	dl	h	P	H
 f30r	L09	21	g2	m	G	H
 f30r	L09	22	r3	h	R	H
@@ -381,7 +381,7 @@ f30r	L10	34	z3	h	I	H
 f30r	L10	35	br	h	R	H
 f30r	L10	36	fh	h	D	H
 f30r	L10	37	9	h	E	H
-f30r	L11	0	ST	h	L	S
+f30r	L11	0	ST	h	L	C
 f30r	L11	1	9	m	E	H
 f30r	L11	2	CROSS2	m	?	U
 f30r	L11	3	E	m	B	M
@@ -411,7 +411,7 @@ f30r	L11	27	nq	l	Q	M
 f30r	L11	28	zb	m	NULL	M
 f30r	L11	29	h	h	V	H
 f30r	L11	30	9	h	E	H
-f30r	L11	31	ST	h	L	S
+f30r	L11	31	ST	h	L	C
 f30r	L11	32	bb	h	COM	H
 f30r	L11	33	g	h	V	H
 f30r	L11	34	BOX	h	E	S
@@ -425,7 +425,7 @@ f30r	L12	6	nq	l	Q	M
 f30r	L12	7	n	h	V	S
 f30r	L12	8	xr	h	I	H
 f30r	L12	9	c	h	L	H
-f30r	L12	10	ST	h	L	S
+f30r	L12	10	ST	h	L	C
 f30r	L12	11	2	h	S	H
 f30r	L12	12	aq	l	Y	M
 f30r	L12	13	ss2	h	NULL	M
@@ -566,7 +566,7 @@ f30r	L15	35	c	h	L	H
 f30r	L16	0	g	h	V	H
 f30r	L16	1	lt	h	O	H
 f30r	L16	2	n	h	V	S
-f30r	L16	3	ST	h	L	S
+f30r	L16	3	ST	h	L	C
 f30r	L16	4	fh	h	D	H
 f30r	L16	5	br	h	R	H
 f30r	L16	6	z	h	A	H
@@ -789,7 +789,7 @@ f30r	L21	36	ss2	h	NULL	M
 f30r	L22	0	[?]	l	?	U
 f30r	L22	1	9	h	E	H
 f30r	L22	2	h	h	V	H
-f30r	L22	3	ST	h	L	S
+f30r	L22	3	ST	h	L	C
 f30r	L22	4	rho	l	F	M
 f30r	L22	5	nq	m	Q	H
 f30r	L22	6	n	m	V	S
@@ -914,7 +914,7 @@ f30r	L25	18	E	m	B	M
 f30r	L25	19	c	h	L	H
 f30r	L25	20	lam	h	A	H
 f30r	L25	21	lt	l	O	M
-f30r	L25	22	ST	h	L	S
+f30r	L25	22	ST	h	L	C
 f30r	L25	23	9	h	E	H
 f30r	L25	24	2	h	S	H
 f30r	L25	25	BOX	h	E	S
@@ -1173,7 +1173,7 @@ f30r	L32	24	m	h	T	H
 f30r	L32	26	lam	h	A	H
 f30r	L32	27	ll	m	LL	H
 f30r	L32	28	sl	m	E	H
-f30r	L32	29	ST	h	L	S
+f30r	L32	29	ST	h	L	C
 f30r	L32	30	9	h	E	H
 f30r	L32	31	n6	m	N	H
 f30r	L32	32	lam	h	A	H
@@ -1245,7 +1245,7 @@ f30r	L34	25	nr	h	N	H
 f30r	L34	26	nq	m	Q	H
 f30r	L34	27	n	h	V	S
 f30r	L34	28	z3	h	I	H
-f30r	L34	29	ST	h	L	S
+f30r	L34	29	ST	h	L	C
 f30r	L34	30	9	m	E	H
 f30r	L34	31	n6	m	N	H
 f30r	L34	32	ehx	h	T	S
@@ -1264,7 +1264,7 @@ f30r	L35	8	c	h	L	H
 f30r	L35	9	q	h	B	S
 f30r	L35	10	x	h	A	H
 f30r	L35	11	r3	h	R	H
-f30r	L35	12	ST	h	L	S
+f30r	L35	12	ST	h	L	C
 f30r	L35	13	9	h	E	H
 f30r	L35	14	QQ	m	D	S
 f30r	L35	15	sl	m	E	H
@@ -1314,7 +1314,7 @@ f30v	L01	24	9	h	E	H
 f30v	L01	25	fh	h	D	H
 f30v	L01	26	sl	m	E	H
 f30v	L01	27	2	h	S	H
-f30v	L01	28	ST	h	L	S
+f30v	L01	28	ST	h	L	C
 f30v	L01	29	z3	h	I	H
 f30v	L01	30	E	m	B	M
 f30v	L01	31	sl	m	E	H
@@ -1343,7 +1343,7 @@ f30v	L02	15	Sx	m	Q	S
 f30v	L02	16	h	h	V	H
 f30v	L02	17	sl	m	E	H
 f30v	L02	18	ss2	h	NULL	M
-f30v	L02	19	ST	m	L	S
+f30v	L02	19	ST	m	L	C
 f30v	L02	20	z	h	A	H
 f30v	L02	21	fh	h	D	H
 f30v	L02	22	9	h	E	H
@@ -1534,7 +1534,7 @@ f30v	L07	20	m	h	T	H
 f30v	L07	22	nq	m	Q	H
 f30v	L07	23	n	h	V	S
 f30v	L07	24	9	h	E	H
-f30v	L07	25	ST	h	L	S
+f30v	L07	25	ST	h	L	C
 f30v	L07	26	sl	m	E	H
 f30v	L07	27	Af	m	M	H
 f30v	L07	28	xr	h	I	H
@@ -1639,7 +1639,7 @@ f30v	L10	20	fh	h	D	H
 f30v	L10	21	9	h	E	H
 f30v	L10	22	c	h	L	H
 f30v	L10	23	lam	h	A	H
-f30v	L10	24	ST	h	L	S
+f30v	L10	24	ST	h	L	C
 f30v	L10	25	xr	h	I	H
 f30v	L10	26	E	m	B	M
 f30v	L10	27	9	h	E	H
@@ -1782,7 +1782,7 @@ f30v	L15	0	h	h	V	H
 f30v	L15	1	lt	h	O	H
 f30v	L15	2	d	h	V	H
 f30v	L15	3	2	h	S	H
-f30v	L15	4	ST	h	L	S
+f30v	L15	4	ST	h	L	C
 f30v	L15	5	g	h	V	H
 f30v	L15	6	zu	m	I	H
 f30v	L15	7	lam	h	A	H

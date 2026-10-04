@@ -58,3 +58,4 @@ z7	NULL	M	z over 7 at the start of the cipher; read as a null (compare Tomokiyo'
 mx	NULL	H	Tomokiyo null (m-x)
 null_o	NULL	H	Tomokiyo null (circle with dot)
 paren	NULL	H	Tomokiyo null (bracket)
+ST	L	C	fr.3040 no.6 vs Le Grand III pp.454-456 (N8-GRA3, 4 Oct 2026): 4/4 occurrences (f.18r L01, f.18v L01, L03, L24) align to L, eye-checked long-s+t shape, shuffled-print null 0.000
