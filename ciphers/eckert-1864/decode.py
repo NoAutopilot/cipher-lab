@@ -117,11 +117,18 @@ def entry_text(lines):
     return text
 
 
-def lookup(core, key):
-    """Return (stem, ending, row) for a token, allowing the doubtful flag [?] and the endings s, es, ed, d, ing."""
+def lookup(core, key, possessive=False):
+    """Return (stem, ending, row) for a token, allowing the doubtful flag [?] and the endings s, es, ed, d, ing.
+
+    possessive=True (RUN3-ECK62, 4 Oct 2026; off by default): a core ending in "'s" that is not itself keyed is looked
+    up without it, and the ending comes back as "'s" ("Kettle's" -> Kettle, "'s"; key-no2.md Kettle = Longstreet)."""
     flag = ""
     if core.endswith("\\"):
         return core[:-1], "", None
+    if possessive and re.search(r"['\u2019]s$", core) and core.lower() not in key:
+        stem, end, row = lookup(core[:-2], key)
+        if row is not None and not end:
+            return stem, "'s", row
     if core.endswith("[?]"):
         core, flag = core[:-3], "[?]"
     low = core.lower()
@@ -133,6 +140,58 @@ def lookup(core, key):
     if low.endswith("ing") and low[:-3] + "e" in key:
         return core[:-3] + "e", "ing" + flag, key[low[:-3] + "e"]
     return core, flag, None
+
+
+class CollisionGuard:
+    """Leave a keyed word-kind token as the clerk wrote it when the clear reading is ordinary English in context
+    (RUN3-ECK62, 4 Oct 2026; pre-registered in ciphers/eckert-1862/ec18/PREREG-ECK62.md).
+
+    Built from word unigram/bigram counts of a corpus (lowercased [a-z]+ after deleting apostrophes). For code word w
+    (as written, lowercase), p / n the previous / next word as read, m1 / m2 the first / last word of the meaning:
+    rule J: w joined with its plain left and/or right neighbour forms a corpus word of >= 7 letters, count >= 2;
+    rule B: P = c(p,w) + c(w,n) >= 3 and P > 2 * (c(p,m1) + c(m2,n)).
+    Catches "bush whack hers" (J) and "the opinion of" (B); must not block a code word whose meaning reads better in
+    context ("[Washington]" for Grapes after "to"). Tests: tools/tests/test_eckert_decode.py."""
+
+    def __init__(self, texts):
+        import collections
+        self.uni, self.bi = collections.Counter(), collections.Counter()
+        for t in texts:
+            ws = re.findall(r"[a-z]+", t.lower().replace("'", "").replace("\u2019", ""))
+            self.uni.update(ws)
+            self.bi.update(zip(ws, ws[1:]))
+
+    def why(self, p, w, n, meaning, p_plain=None, n_plain=None):
+        """Return 'J', 'B' or '' for code word w between read words p and n (None = no word)."""
+        w = w.lower().replace("'", "")
+        for a, b in ((p_plain, None), (None, n_plain), (p_plain, n_plain)):
+            if a is None and b is None:
+                continue
+            j = (a or "") + w + (b or "")
+            if len(j) >= 7 and self.uni[j.lower()] >= 2:
+                return "J"
+        mw = re.findall(r"[a-z]+", re.sub(r"\(.*?\)", " ", meaning.lower()))
+        if not mw:
+            return ""
+        P = (self.bi[(p, w)] if p else 0) + (self.bi[(w, n)] if n else 0)
+        K = (self.bi[(p, mw[0])] if p else 0) + (self.bi[(mw[-1], n)] if n else 0)
+        return "B" if P >= 3 and P > 2 * K else ""
+
+
+def _read_word(token, key, possessive, first=True):
+    """The word a token reads as (lowercase): the meaning's first/last word if keyed (word kind), else the plain word;
+    None for punctuation/numeral/time/signature/brace tokens. Second value: the plain word if unkeyed, else None."""
+    core = token.strip(" .,;:'\"()").replace("\\", "")
+    if not core or core.startswith("{"):
+        return None, None
+    stem, flag, row = lookup(core, key, possessive)
+    if row is not None and row[2] not in ("blind", "line"):
+        if row[2] != "word":
+            return None, None
+        mw = re.findall(r"[a-z]+", re.sub(r"\(.*?\)", " ", row[0].lower()))
+        return (mw[0] if first else mw[-1]) if mw else None, None
+    low = re.sub(r"[^a-z]", "", core.lower())
+    return (low or None), (low or None)
 
 
 def number(values):
@@ -148,8 +207,11 @@ def number(values):
     return total + cur
 
 
-def decode_entry(text, key):
-    """Return (reading, counts). The tail (signature marker onwards) is set apart in braces."""
+def decode_entry(text, key, possessive=False, guard=None, guarded=None):
+    """Return (reading, counts). The tail (signature marker onwards) is set apart in braces.
+
+    possessive: see lookup(). guard: a CollisionGuard; a word-kind token it fires on is left as written, ungraded,
+    and (index, word, meaning, rule) is appended to the list `guarded` when one is given. Both off by default."""
     words = text.split(" ")
     out = []
     counts = {"H": 0, "C": 0, "I": 0, "M": 0}
@@ -159,7 +221,26 @@ def decode_entry(text, key):
     while i < len(words):
         w = words[i]
         core = w.strip(" .,;:'\"()")
-        stem, flag, row = lookup(core, key)
+        stem, flag, row = lookup(core, key, possessive)
+        if row is not None and row[2] == "word" and guard is not None and not signed:
+            prev = None
+            if out and not out[-1].startswith("{") and not out[-1].endswith("}"):
+                po = out[-1]
+                mm = re.findall(r"\[([^\]]*)\]", po)
+                if mm:
+                    pw = re.findall(r"[a-z]+", re.sub(r"\(.*?\)", " ", mm[-1].lower()))
+                    prev, pplain = (pw[-1] if pw else None), None
+                else:
+                    prev = re.sub(r"[^a-z]", "", po.lower()) or None
+                    pplain = prev
+            else:
+                pplain = None
+            nxt, nplain = _read_word(words[i + 1], key, possessive) if i + 1 < len(words) else (None, None)
+            rule = guard.why(prev, core, nxt, row[0], pplain, nplain)
+            if rule:
+                if guarded is not None:
+                    guarded.append((i, core, row[0], rule))
+                row = None
         if row is not None and row[2] in ("blind", "line"):
             # route indicators are never used inside an untransposed entry, and the printed words collide with
             # plain English ("must", "wait", "week", "June", "Army"): left as written, not graded

@@ -2,13 +2,24 @@
 """A3V3-ECK18 (4 Oct 2026): mssEC 18 (Huntington object 10074, 1864-65 "Ciphers Sent") volunteer text read through
 Cipher No. 1 with ciphers/eckert-1864/decode.py (imported, not copied), then print-checked against OR ser. I vols. 32-46.
 
-Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--write | --check]
+Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--possessive] [--guard DIR62] [--write | --check]
+       ec18.py DATA_DIR OR_DIR --guard-test DIR62 [--possessive]
+       ec18.py DATA_DIR OR_DIR --assign [--possessive] [--guard DIR62] [--write | --check]
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
   is stale. --book 2 (A3V3-ECK2, 4 Oct 2026) reads every entry with ciphers/eckert-1864/key-no2.md (Cipher No. 2,
 mssEC 47) instead of key.md, counts an entry fully keyed when its book is '2', and writes the same four outputs with a
 _b2 suffix (entries_b2.tsv, matches_b2.tsv, control_b2.tsv, readings_b2.md); OR_DIR then holds ser. I vols. 32-49.
+
+RUN3-ECK62 (4 Oct 2026; rules pre-registered in PREREG-ECK62.md): --possessive reads "Kettle's" as [Longstreet]'s
+(decode.py possessive=True); --guard DIR62 applies decode.CollisionGuard built from the 1862 OR volumes in DIR62
+(IA warofrebellionco0007vari, warofrebellion09..12secrrich _djvu.txt; none can print a 1864-65 telegram) and writes the
+tokens it left plain to guard{_b2}.tsv. The committed outputs are written with the flags NOTES.md names for that run;
+--check must be given the same flags. --guard-test scores the guard against A3V3-ECKC's known answer (align_tokens.tsv:
+COLLISION word tokens caught vs AGREE word tokens wrongly guarded). --assign assigns Cipher No. 1 or No. 2 to the '?'
+entries by print agreement (PREREG-ECK62 section c) with a known-answer run on the marker-assigned entries and a
+rotated-window control, writing assign.tsv and assign_summary.tsv.
 
 Entries: the volunteer text is split on blank lines; a block whose first three lines carry a clear date (month day
 year) opens an entry, a block without one continues the current entry (pages in page-number order). The header lines
@@ -160,7 +171,61 @@ def match(es, vols, pos, dates, minn=MIN):
     return res
 
 
-def book_test():
+def make_guard(argv):
+    if "--guard" in argv or "--guard-test" in argv:
+        d = argv[argv.index("--guard" if "--guard" in argv else "--guard-test") + 1]
+        return d1.CollisionGuard([f.read_text(errors="ignore") for f in sorted(Path(d).glob("*.txt"))])
+    return None
+
+
+def decode_all(es, key, pos, g):
+    """Decode every entry; sets reading, counts, guarded, text on each entry dict (in place)."""
+    for e in es:
+        text = re.sub(r"\s+", " ", " ".join(e["body"])).strip()
+        gl = []
+        reading, counts = d1.decode_entry(text, key, possessive=pos, guard=g, guarded=gl)
+        e["text"], e["reading"], e["counts"], e["guarded"] = text, reading, counts, gl
+
+
+def occ(text, i):
+    """(lowercased core, occurrence number) of word i of text.split(' ')."""
+    ws = [w.strip(" .,;:'\"()").lower() for w in text.split(" ")]
+    return ws[i], sum(1 for w in ws[:i] if w == ws[i])
+
+
+def guard_test(argv):
+    """Known answer: A3V3-ECKC's align_tokens.tsv statuses for word-kind keyed tokens (COLLISION vs AGREE)."""
+    pos, g = "--possessive" in argv, make_guard(argv)
+    es = {e["id"]: e for e in entries(argv[0])}
+    keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
+    rows = [l.split("\t") for l in (HERE / "align_tokens.tsv").read_text().splitlines()[1:]]
+    gset = {}
+    for bk in "12":
+        ids = {r[0] for r in rows if r[1] == bk}
+        sub = [es[i] for i in ids]
+        decode_all(sub, keys[bk], pos, g)
+        for e in sub:
+            gset[e["id"]] = {occ(e["text"], i): rule for i, core, m, rule in e["guarded"]}
+    seen = collections.Counter()
+    tab = collections.Counter()
+    out = ["id\tcode_word\tmeaning\tstatus\tguarded"]
+    for r in rows:
+        if r[4] != "target" or r[9] != "word":
+            continue
+        k = (r[0], r[6].lower())
+        n = seen[k]
+        seen[k] += 1
+        # possessive cores were stripped by the aligner: try both spellings
+        rule = gset[r[0]].get((r[6].lower(), n)) or gset[r[0]].get((r[6].lower() + "'s", n), "")
+        tab[(r[10], bool(rule))] += 1
+        if rule or r[10] == "COLLISION":
+            out.append(f"{r[0]}\t{r[6]}\t{r[7]}\t{r[10]}\t{rule}")
+    for st in sorted({s for s, _ in tab}):
+        out.append(f"# {st}: guarded {tab[(st, True)]} of {tab[(st, True)] + tab[(st, False)]}")
+    return out
+
+
+def main(argv):
     base = ROOT / "ciphers" / "eckert-1864"
     ok = tot = bad = 0
     for f, want in (("ciphertext.txt", "1"), ("ciphertext-no2.txt", "2")):
@@ -206,16 +271,22 @@ def agreement(pairs, vols):
 def main(argv):
     if argv and argv[0] == "--book-test":
         return book_test()
+    if "--guard-test" in argv:
+        out = guard_test(argv)
+        (HERE / "guard_test.tsv").write_text("\n".join(out) + "\n")
+        print("\n".join(l for l in out if l.startswith("#") or "COLLISION" in l or "\tB" in l or "\tJ" in l))
+        return 0
+    if "--assign" in argv:
+        return assign(argv)
     data, ordir = argv[0], argv[1]
     bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
     other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")
     kfile = ROOT / "ciphers" / "eckert-1864" / ("key-no2.md" if bk == "2" else "key.md")
     key, voc = d1.load_key(kfile), vocab()
     es = entries(data)
+    decode_all(es, key, "--possessive" in argv, make_guard(argv))
     for e in es:
-        text = re.sub(r"\s+", " ", " ".join(e["body"])).strip()
-        reading, counts = d1.decode_entry(text, key)
-        e["reading"], e["counts"] = reading, counts
+        text, reading, counts = e["text"], e["reading"], e["counts"]
         bare = re.sub(r"\[[^\]]*\]|\{[^}]*\}", " ", reading)
         e["oov"] = sum(1 for w in re.findall(r"[A-Za-z]+", bare) if w.lower() not in voc and len(w) > 1)
         e["keyed"] = sum(counts.values())
@@ -308,8 +379,15 @@ def main(argv):
         rd += [f"**{e['id']}** (Page {e['page']}, {fmt(e['date'])}; H {c['H']} C {c['C']} I {c['I']} M {c['M']}; "
                f"{'print: OR ser. I vol. ' + m[0] + ' p. ' + PAGE[m[0]][m[2]] + ' (OCR running head), ' + str(m[1]) + ' shared 5-grams' if m else 'no OR ser. I vols. ' + vr + ' match'})", "",
                e["reading"], ""]
+    gd = ["id\tword_index\tcode_word\tmeaning\trule"] + [f"{e['id']}\t{i}\t{c}\t{m}\t{r}" for e in es
+                                                              for i, c, m, r in e["guarded"]]
+    if "--possessive" in argv or "--guard" in argv:
+        ctl += [f"flags\tpossessive={'--possessive' in argv} guard={'--guard' in argv}",
+                f"guarded_tokens\t{len(gd) - 1}"]
     outs = {f"entries{sfx}.tsv": "\n".join(ent) + "\n", f"matches{sfx}.tsv": "\n".join(mt) + "\n",
             f"control{sfx}.tsv": "\n".join(ctl) + "\n", f"readings{sfx}.md": "\n".join(rd)}
+    if "--guard" in argv:
+        outs[f"guard{sfx}.tsv"] = "\n".join(gd) + "\n"
     if "--write" in argv:
         for k, v in outs.items():
             (HERE / k).write_text(v)
@@ -320,6 +398,75 @@ def main(argv):
             return 1
         print("current")
     print(outs[f"control{sfx}.tsv"])
+    return 0
+
+
+def assign(argv):
+    """PREREG-ECK62 section (c): book for '?' entries by which key's meanings occur in the entry's own print window."""
+    data, ordir = argv[0], argv[1]
+    pos, g = "--possessive" in argv, make_guard(argv)
+    keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
+    runs = {}
+    for bk in "12":
+        es = entries(data)
+        decode_all(es, keys[bk], pos, g)
+        for e in es:
+            w = words(plain_of(e["reading"]))
+            e["grams"] = {" ".join(w[i:i + 5]) for i in range(len(w) - 4)}
+            e["book"] = book(e["text"])
+        runs[bk] = {e["id"]: e for e in es}
+    ids = list(runs["1"])
+    allg = set().union(*(e["grams"] for r in runs.values() for e in r.values()))
+    vols, pos_ = or_index(ordir, allg)
+    dates = {i: runs["1"][i]["date"] for i in ids}
+    m1 = match(list(runs["1"].values()), vols, pos_, dates)
+    m2 = match(list(runs["2"].values()), vols, pos_, dates)
+    mt = {i: m1.get(i) or m2.get(i) for i in ids if m1.get(i) or m2.get(i)}
+
+    def score(i, win_id):
+        v, n, j = mt[win_id]
+        win = set(vols[v][max(0, j - 150):j + 450])
+        return tuple(sum(bool(ws & win) for ws in meaning_words(runs[bk][i]["reading"])) for bk in "12")
+
+    def decide(s):
+        return "1" if s[0] - s[1] >= 2 else "2" if s[1] - s[0] >= 2 else "?"
+    known = [i for i in ids if i in mt and runs["1"][i]["book"] in "12"]
+    unk = [i for i in ids if i in mt and runs["1"][i]["book"] == "?"]
+    kres = [(i, runs["1"][i]["book"], decide(score(i, i))) for i in known]
+    kdec = [x for x in kres if x[2] != "?"]
+    kok = sum(1 for x in kdec if x[1] == x[2])
+    kctl = [decide(score(i, w)) for i, w in zip(known, known[1:] + known[:1])]
+    ures = [(i, score(i, i)) for i in unk]
+    uctl = [decide(score(i, w)) for i, w in zip(unk, unk[1:] + unk[:1])]
+    acc = kok / max(1, len(kdec))
+    use = acc >= 0.85 and len(kdec) >= 20
+    out = ["id\tdate\tor_volume\tscore_key1\tscore_key2\tassigned"]
+    for i, s in ures:
+        d = runs["1"][i]["date"]
+        a = decide(s)
+        out.append(f"{i}\t{d[0]}-{d[1]:02d}-{d[2]:02d}\t{mt[i][0]}\t{s[0]}\t{s[1]}\t{(a + 'a') if use and a != '?' else '?'}")
+    ud = [decide(s) for _, s in ures]
+    summ = ["statistic\tvalue", f"flags\tpossessive={pos} guard={g is not None}",
+            f"unassigned_entries\t{sum(1 for i in ids if runs['1'][i]['book'] == '?')}",
+            f"unassigned_print_matched\t{len(unk)}",
+            f"known_answer_print_matched\t{len(known)}",
+            f"known_answer_decided\t{len(kdec)}", f"known_answer_right\t{kok}/{len(kdec)} = {acc:.3f}",
+            f"known_answer_decided_rotated_window\t{sum(x != '?' for x in kctl)}/{len(known)}",
+            f"known_answer_right_rotated_window\t{sum(1 for (i, b, _), c in zip(kres, kctl) if c == b)}",
+            f"gate_acc>=0.85_and_decided>=20\t{'PASS' if use else 'FAIL'}",
+            f"unassigned_decided\t{sum(x != '?' for x in ud)}/{len(unk)} (1: {ud.count('1')}, 2: {ud.count('2')})",
+            f"unassigned_decided_rotated_window\t{sum(x != '?' for x in uctl)}/{len(unk)}"]
+    outs = {"assign.tsv": "\n".join(out) + "\n", "assign_summary.tsv": "\n".join(summ) + "\n"}
+    if "--write" in argv:
+        for k, v in outs.items():
+            (HERE / k).write_text(v)
+    elif "--check" in argv:
+        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        if stale:
+            sys.stderr.write("stale: " + ", ".join(stale) + "\n")
+            return 1
+        print("current")
+    print(outs["assign_summary.tsv"])
     return 0
 
 
