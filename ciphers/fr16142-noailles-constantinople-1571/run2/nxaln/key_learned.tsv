@@ -1,0 +1,123 @@
+# RUN2-NXALN learned key, atlas instrument (train c510-c513 only). Gate: FAIL. Grade C only if gate PASS and both aligners agree.
+cluster	value	count	share	gibbs_value	aligners_agree	grade	c262_provisional
+k000	a	55	0.38	i	no	M	t2|1|1.00|
+k001	s	34	0.53		n/a	M	c1|1|1.00|
+k002	e	43	0.56	e	yes	M	o1/e2|8|0.62|m2:1 f2:1 p1:1
+k003	e	45	0.49	c	no	M	
+k004	e	72	0.56	e	yes	M	y1|1|1.00|
+k005	n	36	0.33	e	no	M	
+k006	l	70	0.67	c	no	M	
+k007	s	23	0.39	s	yes	M	
+k008	r	48	0.65	e	no	M	i2|1|1.00|
+k009	s	68	0.31	ou	no	M	c1|1|1.00|
+k010	o	51	0.37	e	no	M	i2|2|0.50|p1:1
+k011	e	34	0.53	e	yes	M	W:que|1|1.00|
+k012	s	28	0.50	n	no	M	
+k013	u	27	0.48		n/a	M	a2|2|1.00|
+k014	i	45	0.44	e	no	M	i2|6|0.50|n1:1 d1:1 a3:1
+k015	e	31	0.61	i	no	M	l2|2|0.50|u1:1
+k016	s	14	0.57	t	no	M	
+k017	i	22	0.59	r	no	M	
+k018	o	39	0.44		n/a	M	a1|2|0.50|i2:1
+k019	t	30	0.50	s	no	M	
+k020	r	18	0.33		n/a	M	r1|1|1.00|
+k021	p	24	0.62		n/a	M	x1|13|0.92|i2:1
+k022	r	24	0.33	n	no	M	e3|11|0.73|t2:2 c1:1
+k023	e	36	0.53	po	no	M	
+k024	n	23	0.48		n/a	M	o1/e2|3|0.33|g2:1 s2:1
+k025	l	24	0.83	j	no	M	
+k026	p	29	0.34	e	no	M	l2|2|1.00|
+k027	n	88	0.45	e	no	M	x1|1|1.00|
+k028	s	24	0.58	r	no	M	
+k029	o	25	0.40	s	no	M	
+k030	e	38	0.50		n/a	M	f2|2|0.50|p1:1
+k031	e	43	0.53	en	no	M	c1|4|0.75|W:le:1
+k032	d	29	0.41	t	no	M	
+k033	e	45	0.42	t	no	M	
+k034	i	38	0.42	es	no	M	p2|1|1.00|
+k035	u	68	0.41	e	no	M	s1|1|1.00|
+k036	o	25	0.32		n/a	M	m2|2|1.00|
+k037	a	60	0.43	r	no	M	
+k038	e	38	0.84		n/a	M	W:le|22|0.18|t2:3 o1/e2:2 g2:2 e3:1 W:par:1 y1:1 z1:1 r2:1 W:que:1 n1:1 a1:1 r1:1 l2:1 i2:1
+k039	e	12	0.67	e	yes	M	
+k040	o	23	0.52	ep	no	M	z1|1|1.00|
+k041	r	10	0.50	s	no	M	o1/e2|37|0.68|e3:3 x1:2 p1:1 r2:1 u1:1 y1:1 d1:1 r1:1 p2:1
+k042	e	45	0.40	t	no	M	
+k043	r	82	0.51	e	no	M	
+k044	s	74	0.35	ur	no	M	
+k045	o	18	0.44	on	no	M	f2|5|0.80|N5:1
+k046	c	28	0.32	e	no	M	W:qui|1|1.00|
+k047	u	34	0.41		n/a	M	
+k048	e	48	0.60	de	no	M	
+k049	n	17	0.76	s	no	M	
+k050	s	54	0.37	de	no	M	
+k051	l	18	0.50	qu	no	M	
+k052	r	21	0.57		n/a	M	
+k053	e	21	0.33	a	no	M	s2|3|0.67|o1/e2:1
+k054	t	14	0.36	n	no	M	
+k055	s	31	0.45	e	no	M	
+k056	l	46	0.26	l	yes	M	a2|2|1.00|
+k057	e	20	0.35	e	yes	M	e3|1|1.00|
+k058	a	19	0.58		n/a	M	
+k059	a	25	0.32	s	no	M	r2|1|1.00|
+k060	a	9	0.56		n/a	M	l2|15|0.80|n2:1 u1:1 n1:1
+k061	t	23	0.70		n/a	M	
+k062	n	11	0.55	es	no	M	t2|1|1.00|
+k063	n	27	0.41	oi	no	M	i3|2|0.50|i2:1
+k064	s	49	0.69	l	no	M	W:le|3|0.67|g2:1
+k065	t	85	0.40	e	no	M	e3|1|1.00|
+k066	e	20	0.55	l	no	M	e1|8|0.25|y1:2 t2:1 p2:1 a1:1 c1:1
+k067	e	38	0.45	i	no	M	
+k068	e	46	0.74	e	yes	M	s1|2|1.00|
+k069	c	24	0.42	e	no	M	
+k070	l	23	0.57	i	no	M	
+k071	l	36	0.47	s	no	M	e3|5|0.40|c1:1 o1/e2:1 i2:1
+k072	u	13	0.31	au	no	M	i2|13|0.69|l2:2 p1:1 o1/e2:1
+k073	n	37	0.59		n/a	M	t2|11|0.82|W:par:1 r1:1
+k074	t	69	0.46	e	no	M	p2|2|0.50|n1:1
+k075	r	26	0.38	e	no	M	
+k076	c	34	0.35	es	no	M	l2|3|1.00|
+k077	e	49	0.65	re	no	M	o1/e2|2|0.50|s2:1
+k078	a	44	0.55	m	no	M	r1|1|1.00|
+k079	i	58	0.40	d	no	M	r1|8|0.25|n1:1 m2:1 r2:1 a2:1 D1:1 i2:1
+k080	t	15	0.73	i	no	M	r1|20|0.40|o1/e2:3 D1:2 l2:2 W:le:1 a1:1 y1:1 s2:1 n2:1
+k081	a	39	0.54		n/a	M	
+k082	d	25	0.48		n/a	M	W:que|2|0.50|t2:1
+k083	i	76	0.33	is	no	M	i2|1|1.00|
+k084	n	37	0.49	e	no	M	n1|17|0.24|o1/e2:4 i2:2 r2:1 y1:1 a2:1 c1:1 r1:1 W:que:1 a1:1
+k085	e	35	0.60	e	yes	M	a3|1|1.00|
+k086	s	24	0.38	s	yes	M	y1|5|0.40|W:le:1 o1/e2:1 a3:1
+k087	l	13	0.46		n/a	M	
+k088	s	84	0.37	a	no	M	
+k089	e	39	0.44	i	no	M	
+k090	t	25	0.24	es	no	M	W:le|6|0.33|e3:1 n1:1 t2:1 l1:1
+k091	d	21	0.76	u	no	M	
+k092	u	27	0.63	c	no	M	
+k093	i	60	0.35	ur	no	M	
+k094	u	59	0.39		n/a	M	W:le|9|0.89|u1:1
+k095	e	40	0.68	e	yes	M	i2|1|1.00|
+k096	e	36	0.44	e	yes	M	e3|2|1.00|
+k097	s	46	0.24	ur	no	M	l2|2|0.50|y1:1
+k098	e	55	0.62		n/a	M	
+k099	e	40	0.53	r	no	M	n2|2|0.50|m1:1
+k100	a	21	0.33	a	yes	M	W:que|1|1.00|
+k101	c	41	0.27	de	no	M	o1/e2|5|0.40|r1:2 i2:1
+k102	u	27	0.44	i	no	M	d1|5|0.40|n1:1 h1:1 o1/e2:1
+k103	t	32	0.50	a	no	M	o2|1|1.00|
+k104	n	27	0.74	e	no	M	
+k105	u	42	0.45	s	no	M	
+k106	u	21	0.43	t	no	M	r1|8|0.88|u1:1
+k107	o	59	0.34	r	no	M	e1|2|0.50|a2:1
+k108	n	48	0.48		n/a	M	l1|1|1.00|
+k109	t	44	0.45	l	no	M	
+k110	e	62	0.37	s	no	M	
+k111	u	35	0.66	qu	no	M	c1|8|0.38|q1:1 W:ont:1 i2:1 o1/e2:1 m3:1
+k112	i	13	0.54	s	no	M	o1/e2|3|0.67|e1:1
+k113	e	20	0.40	r	no	M	u1|9|0.22|y1:2 o1/e2:2 r1:1 s1:1 u5:1
+k114	r	29	0.21	e	no	M	l2|2|0.50|l1:1
+k115	b	4	0.25		n/a	M	a1|14|0.79|x1:1 l1:1 N5:1
+k116	t	59	0.47	es	no	M	o1/e2|7|0.71|d1:1 s2:1
+k117	i	33	0.45	u	no	M	n1|22|0.41|o1/e2:6 u1:2 r1:1 c1:1 e3:1 N5:1 t2:1
+k118	u	43	0.51	e	no	M	
+k119	a	12	0.33	r	no	M	t2|1|1.00|
+# vs key.tsv via c262 provisional letter labels: agree 9, disagree 57; strong labels (support>=3, purity>=0.6): agree 1, disagree 14

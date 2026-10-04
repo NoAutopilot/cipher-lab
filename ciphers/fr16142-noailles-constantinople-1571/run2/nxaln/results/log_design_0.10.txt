@@ -1,0 +1,1 @@
+control design p=0.1 seed=0: acc 0.756 | a p99 0.406 | b max 0.446 (n=50) | c p99 0.432 | gate PASS | train 5.0s

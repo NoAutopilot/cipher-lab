@@ -1,0 +1,27 @@
+{
+ "label": "target atlas",
+ "n_train": 6222,
+ "n_held": 3682,
+ "n_letters": 9166,
+ "train_end_letter": 6333,
+ "held_letters": 2833,
+ "t_train_s": 7.8,
+ "acc": 0.3626,
+ "null_a": {
+  "n": 200,
+  "mean": 0.3578,
+  "p99": 0.3648
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.3572,
+  "gate": 0.3685,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 200,
+  "mean": 0.3545,
+  "p99": 0.3658
+ },
+ "gate_pass": false
+}

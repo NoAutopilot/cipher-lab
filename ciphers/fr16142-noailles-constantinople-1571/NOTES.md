@@ -494,3 +494,38 @@ Verdict: keep going: 5 internal gaps; cheapest next: text-check the date-only Du
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Known-plaintext alignment c510-516 vs Dupuy 221R-226R (LANE-RUN2 RUN2-NXALN, account 1, 4 Oct 2026, from 03:18 UTC)
+Pre-registered (`run2/nxaln/PREREG.md`, pushed before any alignment output; amendment 1 adds a control at Tomokiyo's key shape, ~109
+symbols). New shared option `tools/interlinear_align.py stream` (`tools/stream_align.py`, test `tools/tests/test_stream_align.py`):
+banded, anchored, progressively grown hard-EM alignment of the whole cipher stream against the whole clear copy. Atlas instrument
+(train c510-513, held-out c514-516): target held-out accuracy **0.363** vs nulls (a) shuffled key p99 0.365, (b) shuffled-text
+retraining max 0.368, (c) wrong text p99 0.366 -- **FAIL, and a non-test**: the design-matched control at the atlas's measured ~40%
+cluster impurity fails its own gate on 2 of 3 seeds (0.447 / 0.537 / 0.430 vs nulls ~0.43-0.46), while the same control passes at 25%
+(0.667) and 10% (0.756); the 41-symbol control passes at all three levels. Learned key `run2/nxaln/key_learned.tsv`, all grade M
+(aligners agree 13/98; c262 provisional labels agree 9/66). Line-read instrument not run (box/cap; brief's atlas-first rule). Details and
+the order of runs: `run2/nxaln/REPORT.md`. Rule 7: `python3 run2/nxaln/nxaln.py check` exits 0. No reading is claimed.
+
+## Remaining gaps (RUN2-NXALN, 4 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters); whole-letter alignment to Dupuy 221R-226R run on the atlas clusters, non-test at ~40% impurity; 0 open leaves decoded
+- Glyph naming / cluster impurity (~40% from c262 purity 0.593) too high for the stream aligner (design control crosses its gate between 25% and 40%) - blocker: not-attempted; RUN2-NXALN design curve; next: account 3 publishes the sorter from run2/nxatl (sheets + clusters.tsv) and the person settles the clusters, then re-run `nxaln.py target` unchanged on the settled labels, ~$2 to publish + ~$1 to re-run
+- c510-516 alignment by line reads (instrument 2: train c510, held-out c516 + c515 L01-L20) not run - blocker: not-attempted; RUN2-NXALN ran the atlas first by the brief's rule; next: same pipeline with a 40%-noise 41-symbol and design control first, ~$2
+- c511 not transcribed by readers (segmented only, run2/nxatl) - blocker: not-attempted; next: two passes against settled sorter labels once they exist, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; not in this brief; next: one native look per pair at the clear lead-in words, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not in this brief; next: grep Charrière III and the Lepanto relations for its clear opening, ~$1
+
+## Escalation (RUN2-NXALN, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed (RUN2-NXDUP) and aligned whole to c510-516 (RUN2-NXALN, non-test at the atlas's noise)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); c510-516 native line bands with --follow-slope, overlays checked (RUN2-NXATL)
+- [ ] retry: the same pre-registered alignment on settled sorter labels (impurity <= ~25%), or on the line reads with their own control; planned step: re-run `run2/nxaln/nxaln.py` after the sorter pass
+Verdict: keep going: 5 internal gaps; cheapest next: line-read instrument with its control, ~$2, or text-check the date-only Dupuy matches, ~$1
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXALN):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

@@ -1,0 +1,27 @@
+{
+ "label": "control atlas p=0.4 seed=0",
+ "n_train": 5720,
+ "n_held": 3386,
+ "n_letters": 9170,
+ "train_end_letter": 5829,
+ "held_letters": 3341,
+ "t_train_s": 6.3,
+ "acc": 0.557,
+ "null_a": {
+  "n": 50,
+  "mean": 0.3821,
+  "p99": 0.3955
+ },
+ "null_b": {
+  "n": 40,
+  "mean": 0.409,
+  "gate": 0.4203,
+  "gate_kind": "max"
+ },
+ "null_c": {
+  "n": 50,
+  "mean": 0.3923,
+  "p99": 0.4011
+ },
+ "gate_pass": true
+}
