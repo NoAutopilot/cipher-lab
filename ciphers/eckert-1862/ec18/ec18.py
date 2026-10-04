@@ -2,11 +2,13 @@
 """A3V3-ECK18 (4 Oct 2026): mssEC 18 (Huntington object 10074, 1864-65 "Ciphers Sent") volunteer text read through
 Cipher No. 1 with ciphers/eckert-1864/decode.py (imported, not copied), then print-checked against OR ser. I vols. 32-46.
 
-Usage: ec18.py DATA_DIR OR_DIR [--write | --check]
+Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--write | --check]
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
-  is stale.
+  is stale. --book 2 (A3V3-ECK2, 4 Oct 2026) reads every entry with ciphers/eckert-1864/key-no2.md (Cipher No. 2,
+mssEC 47) instead of key.md, counts an entry fully keyed when its book is '2', and writes the same four outputs with a
+_b2 suffix (entries_b2.tsv, matches_b2.tsv, control_b2.tsv, readings_b2.md); OR_DIR then holds ser. I vols. 32-49.
 
 Entries: the volunteer text is split on blank lines; a block whose first three lines carry a clear date (month day
 year) opens an entry, a block without one continues the current entry (pages in page-number order). The header lines
@@ -205,7 +207,10 @@ def main(argv):
     if argv and argv[0] == "--book-test":
         return book_test()
     data, ordir = argv[0], argv[1]
-    key, voc = d1.load_key(), vocab()
+    bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
+    other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")
+    kfile = ROOT / "ciphers" / "eckert-1864" / ("key-no2.md" if bk == "2" else "key.md")
+    key, voc = d1.load_key(kfile), vocab()
     es = entries(data)
     for e in es:
         text = re.sub(r"\s+", " ", " ".join(e["body"])).strip()
@@ -215,12 +220,14 @@ def main(argv):
         e["oov"] = sum(1 for w in re.findall(r"[A-Za-z]+", bare) if w.lower() not in voc and len(w) > 1)
         e["keyed"] = sum(counts.values())
         e["book"] = book(text)
-        e["full"] = e["book"] == "1" and e["keyed"] >= 3 and e["oov"] == 0
+        e["full"] = e["book"] == bk and e["keyed"] >= 3 and e["oov"] == 0
         w = words(plain_of(reading))
         e["grams"] = {" ".join(w[i:i + 5]) for i in range(len(w) - 4)}
     full = [e for e in es if e["full"]]
     allg = set().union(*(e["grams"] for e in es))
     vols, pos = or_index(ordir, allg)
+    nums = sorted({int(v.split(".")[0]) for v in vols})
+    vr = f"{nums[0]}-{nums[-1]}"
     real_dates = {e["id"]: e["date"] for e in full}
     real = match(full, vols, pos, real_dates)
 
@@ -242,8 +249,8 @@ def main(argv):
         aperm.append(len(match(es, vols, pos, {a: alld[b] for a, b in zip(aids, sh)})))
     # keyed meanings against the printed text of the same telegram (book-1 matched entries), and against another
     # matched entry's window (rotation by one; seed-free) as the control
-    b1 = [e for e in es if e["id"] in allreal and e["book"] == "1"]
-    b2 = [e for e in es if e["id"] in allreal and e["book"] == "2"]
+    b1 = [e for e in es if e["id"] in allreal and e["book"] == bk]
+    b2 = [e for e in es if e["id"] in allreal and e["book"] == other]
     ag = agreement([(meaning_words(e["reading"]), allreal[e["id"]]) for e in b1], vols)
     agc = agreement([(meaning_words(e["reading"]), allreal[f["id"]]) for e, f in zip(b1, b1[1:] + b1[:1])], vols)
     ag2 = agreement([(meaning_words(e["reading"]), allreal[e["id"]]) for e in b2], vols)
@@ -284,23 +291,25 @@ def main(argv):
            f"all_entries_or_matches_permuted_dates_mean\t{sum(aperm) / len(aperm):.2f}",
            f"all_entries_or_matches_by_book\t" + ", ".join(f"{b} {sum(1 for e in es if e['id'] in allreal and e['book'] == b)}"
                                                           for b in "12?"),
-           f"book1_matched_keyed_meanings_in_print\t{ag[0]}/{ag[1]} = {ag[0] / max(1, ag[1]):.3f}",
-           f"book1_control_other_entry_window\t{agc[0]}/{agc[1]} = {agc[0] / max(1, agc[1]):.3f}",
-           f"book2_entries_read_with_key_md_in_print\t{ag2[0]}/{ag2[1]} = {ag2[0] / max(1, ag2[1]):.3f}",
+           f"book{bk}_matched_keyed_meanings_in_print\t{ag[0]}/{ag[1]} = {ag[0] / max(1, ag[1]):.3f}",
+           f"book{bk}_control_other_entry_window\t{agc[0]}/{agc[1]} = {agc[0] / max(1, agc[1]):.3f}",
+           f"book{other}_entries_read_with_{kfile.stem.replace('-', '_')}_md_in_print\t{ag2[0]}/{ag2[1]} = {ag2[0] / max(1, ag2[1]):.3f}",
            f"or_volumes\t{len(vols)}", f"min_5grams\t{MIN}"]
-    rd = ["# mssEC 18: fully keyed entries read through Cipher No. 1 (A3V3-ECK18, 4 Oct 2026)", "",
+    rd = [f"# mssEC 18: fully keyed entries read through Cipher No. {bk} "
+          f"({'A3V3-ECK2' if bk == '2' else 'A3V3-ECK18'}, 4 Oct 2026)", "",
           "Derived by ec18.py from the Decoding the Civil War volunteer transcription (not reconciled against the page "
-          "image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/key.md (mssEC 41). "
-          "Brackets are key.md meanings with that row's grade; words outside brackets are as the volunteers wrote them. "
+          "image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/"
+          f"{kfile.name} ({'mssEC 47' if bk == '2' else 'mssEC 41'}). "
+          f"Brackets are {kfile.name} meanings with that row's grade; words outside brackets are as the volunteers wrote them. "
           "Not a novelty claim (rule 10).", ""]
     for e in full:
         m = real.get(e["id"])
         c = e["counts"]
         rd += [f"**{e['id']}** (Page {e['page']}, {fmt(e['date'])}; H {c['H']} C {c['C']} I {c['I']} M {c['M']}; "
-               f"{'print: OR ser. I vol. ' + m[0] + ' p. ' + PAGE[m[0]][m[2]] + ' (OCR running head), ' + str(m[1]) + ' shared 5-grams' if m else 'no OR ser. I vols. 32-46 match'})", "",
+               f"{'print: OR ser. I vol. ' + m[0] + ' p. ' + PAGE[m[0]][m[2]] + ' (OCR running head), ' + str(m[1]) + ' shared 5-grams' if m else 'no OR ser. I vols. ' + vr + ' match'})", "",
                e["reading"], ""]
-    outs = {"entries.tsv": "\n".join(ent) + "\n", "matches.tsv": "\n".join(mt) + "\n",
-            "control.tsv": "\n".join(ctl) + "\n", "readings.md": "\n".join(rd)}
+    outs = {f"entries{sfx}.tsv": "\n".join(ent) + "\n", f"matches{sfx}.tsv": "\n".join(mt) + "\n",
+            f"control{sfx}.tsv": "\n".join(ctl) + "\n", f"readings{sfx}.md": "\n".join(rd)}
     if "--write" in argv:
         for k, v in outs.items():
             (HERE / k).write_text(v)
@@ -310,7 +319,7 @@ def main(argv):
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
         print("current")
-    print(outs["control.tsv"])
+    print(outs[f"control{sfx}.tsv"])
     return 0
 
 

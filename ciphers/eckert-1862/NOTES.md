@@ -970,3 +970,65 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 9 print-matched mssEC 18 entries were not; next: image-reconcile them with the eckert-1864 method, ~$4
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 3 internal gaps; cheapest next: read mssEC 18's 168 Cipher No. 2 entries with key-no2.md through ec18.py and print-check against OR ser. I vols. 32-49, ~$3
+
+## A3V3-ECK2-eckert-1862 (4 Oct 2026, account 3 worker for LANE-A3V3): mssEC 18 book-2 entries through Cipher No. 2, OR vols. 32-49
+
+Step run: A3V3-ECK18's next step. `ec18/ec18.py` extended in place with `--book 2` (reads every entry with
+ciphers/eckert-1864/key-no2.md, mssEC 47, through the same imported decode.py; writes `entries_b2.tsv`, `matches_b2.tsv`,
+`control_b2.tsv`, `readings_b2.md`); the book-1 outputs were re-run unchanged in method against the enlarged OR set.
+Both `--check` exit 0 (book 1 and `--book 2`). Data: mssEC 18 dmQuery re-fetched once (sha256 cb162574..., matches
+pilot1864/manifest.tsv); the 41 OR files of vols. 32-46 re-fetched (all sha256 match or_volumes.tsv) plus 7 new: vols. 47
+pts 1-3, 48 pts 1-2, 49 pts 1-2 (rows added to `ec18/or_volumes.tsv`; 47.2/47.3 are the `rootrich` scans because
+warofrebellion472unit/473unit answered 503 twice; title pages read "Part II-Correspondence" / "Part III" confirm them).
+- Book 2, fully keyed (book 2, >= 3 keyed tokens, 0 oov tokens): 17 of the 168 book-2 entries, 27 Feb 1864 - 1 June 1865;
+  grades from key-no2.md's own rows: H 253 (read from mssEC 47), C 6, I 7, M 0 -- all conditional on the volunteer
+  transcription (rule 2, not image-reconciled). "0 oov" does not mean every code word is keyed: unkeyed code names that are
+  English words pass (9823.230 reads "Kettle's [Corps] and Fitz Hugh Javelin's [Cavalry] have [Fire]ed through
+  [Culpepper]" where OR 42 pt 2 p. 291 prints "Longstreet's corps and Fitzhugh Lee's cavalry have passed through Culpeper").
+- Print check by date (same matcher as A3V3-ECK18, OR ser. I vols. 32-49): 12 of 17 found, 5 not found. Found (vol. part,
+  page from the OCR running head, shared 5-grams): 9680.31 27 Feb 1864 to Grant, 32.2 p. 478 (31); 9729.85 3 May 1864 to
+  Grant, 34.3 p. 409 (17); 9798.182 19 July 1864 to Grant, 37.2 p. 382 (14); 9823.230 19 Aug 1864 to Grant, 42.2 p. 291
+  (17); 9837.257 8 Sept 1864 to Grant, 41.3 p. 71 (15); 9848.277 21 Sept 1864 to Grant, 39.2 p. 434 (22); 9898.393 18 Nov
+  1864 to Sheridan, 43.2 p. 640 (7); 9902.402 30 Nov 1864 to Sheridan, 43.2 p. 708 (9); 9910.424 8 Dec 1864 to Grant, 45.2
+  p. 75 (11); 9961.531 18 Feb 1865 to Canby, 49.1 p. 742 (15); 10010.593 17 May 1865 to Halleck, 46.3 p. 1161 (21);
+  10027.622 1 June 1865 to Canby, 48.2 p. 713 (6). Pages are OCR running heads, not checked against the page image. Not
+  found by this method in vols. 32-49: 9681.34 (3 Mar 1864, for Meade), 9701.64 (9 Apr 1864), 9781.163 (9 July 1864),
+  9831.247 (3 Sept 1864), 9845.272 (19 Sept 1864).
+- Control (rule 3; the date condition is the only thing a permutation changes, so it can fail differently): target 12 vs
+  date-permuted mean 0.75, max 2 (20 permutations, seed 18); 17-entry draw (seed 18; all 17, since < 20) 12 real vs 0
+  with dates rotated. All 671 entries read with key-no2.md: 304 real vs 3.40 permuted (book 1 121, book 2 112, ? 71) --
+  book-2 entries match print 112 times with their own key vs 88 with key.md, book-1 entries 121 with key-no2.md vs 165 with
+  key.md.
+- Meanings against print (book-2 entries with an OR match; a keyed meaning counts when a content word is in the OR window
+  of the same telegram): 1681/2349 = 0.716 with key-no2.md, against another matched entry's window 971/2349 = 0.413;
+  book-1 entries read with key-no2.md 587/2691 = 0.218 (the wrong book, below the control). Side by side with Cipher No. 1:
+  book 1 with key.md 0.669 vs 0.379 (vols. 32-49), book 2 with key.md 0.219.
+- Book 1 against vols. 47-49 (A3V3-ECK18's 19 unfound): 5 more found, all in vol. 48: 9947.505 27 Jan 1865, 48.1 p. 646
+  (6); 10002.578 1 May 1865, 48.2 p. 278 (17); 10020.609 24 May 1865, 48.2 p. 573 (15); 10026.621 1 June 1865, 48.2 p. 716
+  (21); 10027.623 2 June 1865, 48.2 p. 716 (16). Book 1 now 14 of 28 vs permuted mean 0.45 (was 9 vs 0.25 on vols. 32-46);
+  20-entry draw 8 real vs 1 rotated; all entries 326 vs 3.80. Still not found in vols. 32-49: 9730.87, 9731.89, 9812.208,
+  9855.295, 9858.300, 9866.320, 9901.399, 9908.417, 9928.458, 9939.484, 9943.494, 9948.507, 10028.625, 10031.632.
+- Judge (rule 7): `tools/judge_plaintext.py specs/eckert-1862.json --file ciphers/eckert-1862/ec18/readings_b2.md` ->
+  "FAIL language: score=-1.106, null_p99=-2.111, real_p05=-0.85, real_median=-0.811, mode=both, N=5121"; readings.md
+  (book 1, re-run) -> "FAIL language: score=-1.146, null_p99=-2.123, real_p05=-0.84, real_median=-0.81, mode=both, N=7326"
+  (bracket markup and prose in the file; the en judge is of unknown reliability, tools/data/en/README.md). Reported as FAILs.
+- Not done: no image check; no C-grade alignment of the print-matched entries against OR; the 192 unassigned entries not
+  read with either key. 0 vision, 0 subagents. Requests: hdl.huntington.org 1, archive.org 59 (41 + 7 djvu, 9 HEAD probes,
+  1 advancedsearch, 1 retry), >= 1.5 s apart.
+
+## Remaining gaps (finish-or-blocker pass, A3V3-ECK2, 4 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries at H 370 (14 in OR vols. 32-49) and 17 fully keyed Cipher No. 2 entries at H 253 C 6 I 7 (12 in OR), all from the volunteer text (A3V3-ECK18, A3V3-ECK2)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books (A3V3-ECK18, A3V3-ECK2: book 1 14/28 in OR vs 0.45 permuted, book 2 12/17 vs 0.75; meanings in print 0.669 / 0.716 vs 0.379 / 0.413); next: C-grade alignment of the 26 print-matched fully keyed entries against the OR text (or_align.py method) to separate volunteer misreadings from key-row errors, ~$3
+- 192 unassigned mssEC 18 entries (no punctuation or signature marker) - blocker: not-attempted; the book rule needs a No. 1 or No. 2 marker word and these carry none; next: assign a book by which key's meanings match print better on the 71-73 print-matched ones (ec18.py option), ~$2
+
+## Escalation (A3V3-ECK2, 4 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); mssEC 18 book-2 entries read with key-no2.md 4 Oct 2026 (A3V3-ECK2); the 192 unassigned entries not yet tried against both books; next: ec18.py book assignment by print agreement, ~$2
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; OR ser. I vols. 32-49 done for mssEC 18 (A3V3-ECK18, A3V3-ECK2)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); residue regenerated (GAPS197)
+- [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched fully keyed mssEC 18 entries were not; next: image-reconcile them with the eckert-1864 method, ~$4
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: C-grade alignment of the 26 print-matched fully keyed mssEC 18 entries against OR, ~$3
