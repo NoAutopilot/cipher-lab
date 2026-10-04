@@ -1,0 +1,4 @@
+unit	occ	value_1572	grade	gain_vs_unread	gain_vs_current	null_mean	null_p99	null_spread	verdict
+X_THETA2	15	a	M	-0.0171	-0.0334 (current r)	-0.0391	0.0163	0.1472	FAIL
+X_POUND	10	t	L	0.0113		-0.0115	0.0188	0.0894	secondary: below
+X_NEW	1	r	L	0.0009		-0.0012	0.0019	0.0102	secondary: below

@@ -1,0 +1,12 @@
+unit	occ_target	klabel	ceppo_cell	grade	ceppo_value	gain_vs_unread	gain_vs_current	null_mean	null_p99	null_spread	verdict
+T95	11	K40	C39	M	s	-0.0204	0.0000 (current s)	-0.0166	-0.0087	0.0173	FAIL
+TILE:f144r_L03_03	1	K40	C39	M	s	0.0006		-0.0001	0.0006	0.0024	FAIL
+X_8	7	K21	C48	H	et	-0.0012		-0.0034	0.0007	0.0106	FAIL
+X_A	2	K50	C26	L	n	-0.0020		-0.0016	-0.0003	0.0028	secondary: below
+X_BB	4	K06	C51	M	null	0.0005		-0.0046	0.0005	0.0131	FAIL
+X_CC	7	K30	C36	L	r	-0.0047		-0.0031	0.0033	0.0155	secondary: below
+X_EQ	11	K44	C09	H	d	-0.0016		-0.0023	-0.0002	0.0054	FAIL
+X_MA	5	K42	C10	M	e	-0.0035		-0.0035	-0.0011	0.0076	FAIL
+X_OJ	1	K35	C16	L	h	-0.0025		-0.0012	-0.0003	0.0022	secondary: below
+X_PCT	3	K45	C43	L	t	-0.0061		-0.0058	0.0000	0.0112	secondary: below
+X_T3	7	K09	C35	H	r	-0.0042		-0.0046	-0.0023	0.0074	FAIL

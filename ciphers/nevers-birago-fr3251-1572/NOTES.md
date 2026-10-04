@@ -2460,3 +2460,22 @@ here.** One value-blind Sonnet vision read mapped 1572 off-sheet/conflict shapes
 check gives 7/10 against a null p95 of 7 (all 7 matches are X_CE -> a Ceppo s cell, the clerk's s). That is not above
 chance, so the negative is weak (no working positive control). Untested-by-this-tool at this N, not refuted. No key, exception,
 reading or count changes; status stays `partial`. Details: `cce/RESULTS.md`. Disk only, 0 requests.
+
+## BIR-CCE2: second cross-cipher contamination test, Fable value-blind glyph map (4 Oct 2026, account 3)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir-cce2.md` (owner: "try it another time, but use fable"). **Caveat: same-day use
+of both keys by one clerk is NOT established here.** The Fable worker itself read all 37 sign classes (2-5 native tiles each,
+from different letters) against the 54 Ceppo-Nevers cells and the 20 1572 letter-grid strips, both header-free and under
+shuffled labels (`cce2/cut_tiles.py`, `cce2/glyph_map.tsv` pushed 4412af11 with `cce2/PREREG-2.md` before any value file
+was opened). Scored by `cce2/score_cce2.py`. **Verdict: untested-by-this-tool** (pre-registered rule): the no.87 known-answer
+control is 0/10 occurrences (null p95 7) and 0/3 signs (null p95 1) -- X_8 is m to the clerk but et in the Ceppo cell it
+resembles, X_EQ f/n but d, and X_CE now reads the i-cell, not run 1's s-cell (the omega without a descender has its
+flourish on the wrong side; the c-led cell has a y descender the ink lacks). The three H mappings (X_8 et, X_EQ d, X_T3 r)
+and T95 -> the s-cell C39 agree with run 1 under shuffled labels; 24 of 34 1572 classes map to no cell. All 7 primary target
+units FAIL their shuffled-cell null p99 anyway (tabled, not read as negative). Step 2 (the other direction): the 1570-71
+off-key signs X_THETA2/X_POUND/X_NEW read against the 1572 grid give a (M), t (L), r (L); X_THETA2 = a loses against both
+unread (-0.0171 vs p99 0.0163) and its witness value r (-0.0334). Nothing enters key.tsv or exceptions; no PASS sign, so no
+M-grade ROOM line for a verifier. The no.87 observation (none of the three glossed off-sheet signs carries its clerk value
+in the Ceppo cell of its shape) is logged M against contamination on no.87, not a rule-3 negative. Second attempt with a
+changed instrument: a third shape-map -> n-gram-gain run is not licensed (rule 3); only a no.87-independent known answer or
+more committed tokens for the 1-4-occurrence signs would be a different instrument. Details: `cce2/RESULTS.md`.
