@@ -2358,3 +2358,63 @@ Closed, not a gap: P4 block A/B line order (pp.188-189 page images), done 24 Sep
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
 - [ ] retry: V3a's one-vote M boundary test against the later Stamford letters, disk only
 Verdict: keep going: 2 internal gaps; cheapest next: V3a's one-vote M boundary test (67, 153, 84, 275) against pool_1654/tokens.tsv, disk only, ~$1
+
+## NEAR3-THUR (4 Oct 2026)
+
+Brief: LANE-NEAR3 wave 2 (`.claude/briefs/runs/2026-10-04-ytbiz-near3-wave2.md`), account 2 worker: V3a's one-vote M
+boundary test (SO-THURLOE-P4, s.21 foot) of key entries 67 england, 153 thecavaliers, 84 noticeofandalthough, 275 that,
+disk only. Intake gate: `thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6
+lines`, exit 0.
+
+**Pre-registered** (`pool_1654/boundary/PREREG.md`, pushed f81d5073 before any run): for each code's one occurrence in
+P5+P6 / P7, decode >= 10 letters of keyed context either side (the code itself removed from the key), locate both in
+Birch's printed decipherment by semi-global edit distance (<= 25% cost, unique), and compare the printed gap with the
+claimed meaning (CONFIRM edit <= 20%, REFUTE > 50%); a numeral on a page running head is REFUTE (furniture). Controls
+that can differ from the target: **K** = 80 known-answer occurrences (every C code >= 44 plus 60 sampled C/H letters
+with >= 10 votes, seed 0) with their own meanings; **W** = the same 80 with a deranged wrong meaning (seed 1). Gate:
+K verdicts >= 60% of K, K CONFIRM >= 80%, W false-CONFIRM <= 10%; otherwise non-test, no change.
+
+**Results** (`pool_1654/boundary/boundary_test.py`; `--check` regenerates `results.tsv`, `--skip --check` `results_v2.tsv`):
+
+| run | K verdicts | K CONFIRM | W verdicts | W false-CONFIRM | gate |
+|---|---|---|---|---|---|
+| v1 (pre-registered) | 26/80 = 32.5% | 23/26 = 88.5% | 22/80 | 0/22 = 0.0% | **FAIL** (coverage) |
+| v2 (one change, pre-registered after v1: skip up to 2 unreadable/unkeyed tokens per side) | 39/80 = 48.8% | 34/39 = 87.2% | 35/80 | 0/35 = 0.0% | **FAIL** (coverage) |
+
+Per code (same in v1 and v2; logged, **not acted on**, since the gate failed both times):
+
+| code | witness | verdict | evidence |
+|---|---|---|---|
+| 67 england | P5+P6 djvu 23015 | CONFIRM | keyed left "ihadbeenin", printed gap "aengland" (OCR "ia England"), right "abowtthese"; edit 1 |
+| 153 thecavaliers | P7 djvu 23297 | INCONCLUSIVE | left context not located (OCR-garbled tokens before "for if") |
+| 84 noticeofandalthough | P5+P6 djvu 22921 | INCONCLUSIVE | left "attakosand" not located; by eye the cipher reads "...of and [84] all things" against print "notice of. And although all things", i.e. 84 = although, not the 4-word chunk -- an observation, not a test result |
+| 275 that | P5+P6 djvu 23013 | REFUTE (furniture) | the line is the page running head "J O N H T H U R L O E E S Q. &c, 275" (Birch vol. 3 p. 275); `align_stamford.JUNK_LINE` matches "THURLOE\s+ESQ" but not the spaced capitals, so the page number entered the cipher stream and took one alignment vote |
+
+**What it means.** The statistic discriminates where it reaches a verdict (K 87-89% vs W 0%), but OCR-unreadable and
+unkeyed tokens near the codes leave fewer than half the known-answer occurrences testable, below the pre-registered
+60%. Per PREREG.md, two failures of the same approach mean this method is **untestable at this OCR quality** (rule 3,
+second attempt); no third tuning was run. **No key entry, grade or reading changed**: P4 stays H 64, C 338, S 0, M 16,
+U 6 of 424. The 275 running-head leak is a tokenizer fault, found by the furniture check but not licensed by the gated
+test; its fix (spaced-capital running heads in `JUNK_LINE`, regenerate key and controls, `--check`) is named below as
+its own step. 84 and 275 do not occur in P4, so neither affects the reading.
+
+`python3 pool_1654/decode_stamford.py --check`: see the done line in ROOM.md (unchanged files; run as a regression check).
+Requests: none (disk only; all hosts 0). Vision calls 0. Subagents 0. No novelty class (rule 10).
+
+## Remaining gaps (NEAR3-THUR, 4 Oct 2026)
+Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.txt; unchanged by NEAR3-THUR); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4 one-vote M entries 67 (x3) and 153 (x1) - blocker: not-attempted; boundary_test.py on djvu OCR retired after v1/v2 (K coverage 32.5%/48.8% < 60%, NEAR3-THUR); next: re-run the same pre-registered test on a page-image transcription of the P5+P6 / P7 cipher lines (archive.org collectionofstat03thur, pp. 274-280) to lift context coverage, ~$4
+- key_stamford.tsv entries 275 (running-head page number) and 84 (4-word chunk; by eye "although") - blocker: not-attempted; neither occurs in P4; next: add spaced-capital running heads to align_stamford.JUNK_LINE, regenerate key and control, decode_stamford.py --check, report control shares before/after, ~$1
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (NEAR3-THUR, 4 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92-94% (s.16)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): agrees on 32/33/38/47, conflict on 27 (not in P4), no entry for 143/70/1/67/153
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [ ] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); planned: drop the running-head numeral 275 via JUNK_LINE and regenerate
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
+- [ ] retry: one-vote boundary test, djvu-OCR instrument retired (boundary_test.py v1/v2, coverage below gate twice); planned: same test on a page-image transcription of the P5+P6 / P7 cipher lines
+Verdict: keep going: 3 internal gaps; cheapest next: JUNK_LINE running-head fix and key regeneration (275), ~$1
