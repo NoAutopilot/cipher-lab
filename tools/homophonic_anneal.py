@@ -3,6 +3,7 @@
 
   python3 tools/homophonic_anneal.py CIPHER.tsv --corpus A.txt [--corpus B.txt ...] [--order 3]
           [--restarts 8] [--iters 40000] [--skip DOT,COL] [--seed 1] [--out result.json] [--fix 70=q,33=u]
+          [--norm nc2]    divide the n-gram score by sum N_c^2 (Lasry et al. 2023 App. A; SCORE-NC2, 4 Oct 2026)
           [--alphabet ru-s3p-soft]  a plaintext alphabet other than the 24 folded Latin letters (A2P4-KAL4, 3 Oct 2026)
           [--noise 0.1]   error-tolerant solve: see anneal_noisy (LANE R6 CM2, 25 Sept 2026)
           [--robust 0.1]  bounded-loss n-gram scoring: see RobustModel (LANE R6 CM2)
@@ -165,23 +166,66 @@ class BackoffModel:
         return v
 
 
-def score(model, plain, uni_w):
+NORMS = ("none", "nc2")
+
+
+def nc2_floor(model):
+    """The n-gram log-prob floor that --norm nc2 shifts by, so every n-gram term is >= 0 (Lasry et al. 2023's F_g
+    scores are non-negative; with raw negative log-probs, dividing by sum N_c^2 would *reward* a degenerate key).
+    add-k Model/UnitModel: the exact minimum, an unseen n-gram after the most frequent context. RobustModel: its
+    bound log(q/V). Anything else: the lowest logp over the model's own cache plus a probe of unseen grams."""
+    if getattr(model, "_nc2_floor", None) is not None:
+        return model._nc2_floor
+    if hasattr(model, "k") and hasattr(model, "c") and model.c:
+        f = math.log(model.k / (max(model.c.values()) + model.k * model.V))
+    elif hasattr(model, "floor"):
+        f = math.log(model.floor)
+    else:
+        a = list(getattr(model, "alpha", ALPHA))
+        probe = ["".join(a[(i * 7 + j * 3) % len(a)] for j in range(model.order)) for i in range(len(a))]
+        f = min([model.logp(g) for g in probe] + list(getattr(model, "cache", {}).values()))
+    model._nc2_floor = f
+    model._nc2_q0 = sum(v * v for v in model.freq.values()) / sum(model.freq.values()) ** 2
+    return f
+
+
+def ngram_term(model, raw, n_grams, n, sumsq, norm="none"):
+    """The n-gram part of the score from its running pieces: raw = sum of n-gram log-probs, n_grams = their number,
+    n = text length, sumsq = sum over letters of N_c^2.
+    norm "none": raw (the original score, unchanged).
+    norm "nc2" (SCORE-NC2, 4 Oct 2026; Lasry, Biermann and Tomokiyo 2023, Cryptologia 47:2, App. A p. 195,
+    S = sum_g N_g log F_g / sum_c N_c^2): (raw - n_grams * floor) * n^2 * q0 / sumsq, with floor = nc2_floor(model)
+    and q0 = the corpus's own sum of squared letter frequencies. The n^2 * q0 factor is a constant for a given text
+    length, so the ranking is exactly the paper's; it only rescales the score so a text with corpus-like letter
+    use scores about what the shifted plain sum would, keeping anneal temperatures meaningful. A key that piles many
+    signs onto one letter raises sumsq and is penalised in proportion."""
+    if norm == "none":
+        return raw
+    if norm != "nc2":
+        raise ValueError(f"norm {norm!r}: expected one of {NORMS}")
+    fl = nc2_floor(model)
+    return (raw - n_grams * fl) * n * n * model._nc2_q0 / max(sumsq, 1)
+
+
+def score(model, plain, uni_w, norm="none"):
     o = model.order
     s = sum(model.logp(plain[i:i + o]) for i in range(len(plain) - o + 1))
     cnt = Counter(plain)
     n = len(plain)
+    s = ngram_term(model, s, max(0, n - o + 1), n, sum(c * c for c in cnt.values()), norm)
     # -N * KL(observed letter distribution || corpus distribution): penalises both wrong and over-concentrated
     # letter use (a plain multinomial term rewards decoding everything as e/n)
     u = sum(c * math.log(n * model.freq[a] / c) for a, c in cnt.items())
     return s + uni_w * u
 
 
-def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init=None):
+def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init=None, norm="none"):
     """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions.
     allowed: optional {sign: "letters"} restricting what a sign may decode to (e.g. vowel-indicator marks to "aeiou").
     init: optional {sign: letter} starting map (e.g. a known key for a different letter, LANE AX2 26 Sept 2026) --
     a non-fixed, non-allowed-restricted sign starts here instead of a corpus-frequency-weighted random letter; the
-    anneal is free to move away from it exactly as from any other starting point (this only seeds, never fixes)."""
+    anneal is free to move away from it exactly as from any other starting point (this only seeds, never fixes).
+    norm: "none" (default, unchanged) or "nc2" (ngram_term: divide by sum N_c^2, SCORE-NC2 4 Oct 2026)."""
     o = model.order
     signs = sorted(set(seq))
     letters = list(getattr(model, "alpha", ALPHA))  # a unit model (families/homophonic.py units=syl) carries its own
@@ -205,7 +249,10 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
 
     cnt = Counter(pl)
     xlx = lambda c: c * math.log(c) if c > 0 else 0.0
-    cur = score(model, "".join(pl), uni_w)
+    ng = max(0, n - o + 1)
+    raw = sum(lp("".join(pl[j:j + o])) for j in range(ng))
+    sq = sum(c * c for c in cnt.values())
+    cur = score(model, "".join(pl), uni_w, norm)
     best, bestkey = cur, dict(key)
     for it in range(iters):
         T = t0 * (1 - it / iters) + 0.02
@@ -220,9 +267,17 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
             pl[i] = new
         m = len(pos[s])
         du = m * (lf[new] - lf[old]) - (xlx(cnt[new] + m) - xlx(cnt[new]) + xlx(cnt[old] - m) - xlx(cnt[old]))
-        d = part(js) - before + uni_w * du
+        dr = part(js) - before
+        if norm == "none":
+            d = dr + uni_w * du
+        else:
+            sq2 = sq + (cnt[new] + m) ** 2 - cnt[new] ** 2 + (cnt[old] - m) ** 2 - cnt[old] ** 2
+            d = ngram_term(model, raw + dr, ng, n, sq2, norm) - ngram_term(model, raw, ng, n, sq, norm) + uni_w * du
         if d >= 0 or rng.random() < math.exp(d / T):
             key[s] = new
+            if norm != "none":
+                sq = sq2
+            raw += dr
             cnt[new] += m
             cnt[old] -= m
             cur += d
@@ -231,7 +286,7 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
         else:
             for i in pos[s]:
                 pl[i] = old
-    return score(model, "".join(bestkey[x] for x in seq), uni_w), bestkey
+    return score(model, "".join(bestkey[x] for x in seq), uni_w, norm), bestkey
 
 
 def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allowed=None, init=None, cap_mult=1.5, pos_prob=0.3,
@@ -339,17 +394,20 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
     return total, bestkey, bestfree
 
 
-def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0, init=None):
+def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0, init=None, norm="none"):
     """noise > 0 (error-tolerant, anneal_noisy): results are (score, key, free) triples instead of (score, key).
     init: optional {sign: letter} starting map, same on every restart (each restart still explores independently
-    via its own random moves; only the starting point is shared, not the search)."""
+    via its own random moves; only the starting point is shared, not the search).
+    norm: "none" or "nc2" (ngram_term); nc2 is not implemented for the noise > 0 path."""
+    if noise and norm != "none":
+        raise ValueError("norm nc2 is not implemented for the error-tolerant (noise > 0) anneal")
     rng = random.Random(seed)
     results = []
     for r in range(restarts):
         if noise:
             results.append(anneal_noisy(seq, model, iters, rng, uni_w, noise, fixed=fixed, allowed=allowed, init=init))
         else:
-            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed, init=init))
+            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed, init=init, norm=norm))
     results.sort(key=lambda x: -x[0])
     return results
 
@@ -480,6 +538,9 @@ def main():
     ap.add_argument("--skip", default="DOT,COL")
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--uni-weight", type=float, default=1.0)
+    ap.add_argument("--norm", choices=NORMS, default="none",
+                    help="n-gram score normalisation: none (default) or nc2 = divide by the sum of squared letter counts "
+                         "(Lasry et al. 2023 App. A), which penalises keys piling many signs on one letter")
     ap.add_argument("--out")
     ap.add_argument("--w-as-uu", action="store_true", help="fold w to uu in corpus and control (ciphers writing w as a doubled u sign)")
     ap.add_argument("--alphabet", default="default",
@@ -529,7 +590,7 @@ def main():
         else:
             seq, p, truth = make_control(open(a.control, encoding="utf-8").read(), a.signs, a.length, model, a.seed)
         fixed = {seq[i]: truth[seq[i]] for i in range(a.fix_first)}
-        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise)
+        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise, norm=a.norm)
         sc, key = res[0][:2]
         free = res[0][2] if a.noise else {}
         dec = "".join(free.get(i, key[x]) for i, x in enumerate(seq))
@@ -549,7 +610,7 @@ def main():
         seq = [r[si].rstrip("?") for r in rows[1:] if r[si].rstrip("?") not in skip]
         fixed = dict(kv.split("=") for kv in a.fix.split(",")) if a.fix else {}
         init = load_init_key(a.init) if a.init else None
-        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise, init=init)
+        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise, init=init, norm=a.norm)
         sc, key = res[0][:2]
         free = res[0][2] if a.noise else {}
         dec = "".join(free.get(i, key[x]) for i, x in enumerate(seq))

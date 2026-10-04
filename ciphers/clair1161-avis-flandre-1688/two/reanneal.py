@@ -5,6 +5,8 @@ Pre-registered in tx/PREREG_reanneal.md (pushed before any run). Outputs in two/
   python3 two/reanneal.py calib                  # W from held-out fr17 -> two/ra/calib.tsv
   python3 two/reanneal.py run --arm ctl|tgt --seeds 1-10 [--procs 4]   # -> two/ra/key_<arm>_sS.tsv, runs.tsv
   python3 two/reanneal.py score --arm ctl|tgt [--apply]                 # consensus + null -> two/ra/<arm>_signs.tsv
+  --norm nc2 (any mode; SCORE-NC2, 4 Oct 2026, tx/PREREG_reanneal_nc2.md): both stages score the n-gram term with
+  homophonic_anneal.ngram_term(norm="nc2") (divide by sum N_c^2); outputs go to two/ra_nc2/ instead of two/ra/.
 """
 import argparse, csv, glob, math, os, random, sys, time
 from multiprocessing import Pool
@@ -32,6 +34,9 @@ def wc():
     return w
 
 
+NORM = "none"
+
+
 def setup(arm):
     import homophonic_anneal as ha, judge_plaintext as jp
     w = wc(); w.init(w.vocab(FR17 + FR16))
@@ -42,8 +47,12 @@ def setup(arm):
 
 
 def L4(text):
-    m = G["model"]; o = m.order
-    return sum(m.logp(text[i:i + o]) for i in range(len(text) - o + 1)) / len(text)
+    from collections import Counter
+    m = G["model"]; o = m.order; n = len(text)
+    raw = sum(m.logp(text[i:i + o]) for i in range(n - o + 1))
+    if NORM == "none":
+        return raw / n
+    return G["ha"].ngram_term(m, raw, n - o + 1, n, sum(c * c for c in Counter(text).values()), NORM) / n
 
 
 def J(key):
@@ -55,7 +64,7 @@ def calib():
     import homophonic_anneal as ha, judge_plaintext as jp
     w = wc()
     w.init(w.vocab([p for p in FR17 + FR16 if p != HELD]))
-    G["model"] = ha.Model([jp.read_corpus(p) for p in FR17 if p != HELD], ORDER)
+    G["model"] = ha.Model([jp.read_corpus(p) for p in FR17 if p != HELD], ORDER); G["ha"] = ha
     g = "".join(w.words(HELD))[300000:303375]
     sh = []
     for i in range(20):
@@ -75,7 +84,7 @@ def one(args):
     fixed = {s: v for s, (v, g) in KEY.items() if s not in free}
     init = {s: PLANT[s] for s in PLANT} if arm == "ctl" else None
     t0 = time.time()
-    sc, key = ha.solve(SEQ, G["model"], RESTARTS, ITERS, seed, 1.0, fixed=fixed, init=init)[0]
+    sc, key = ha.solve(SEQ, G["model"], RESTARTS, ITERS, seed, 1.0, fixed=fixed, init=init, norm=NORM)[0]
     j0 = cur = J(key); rng = random.Random(seed); passes = 0
     for passes in range(1, 5):
         order = list(free); rng.shuffle(order); moved = False
@@ -184,7 +193,14 @@ def main():
     ap.add_argument("--arm", choices=["ctl", "tgt"], default="ctl")
     ap.add_argument("--seeds", default="1-10"); ap.add_argument("--procs", type=int, default=4)
     ap.add_argument("--apply", action="store_true")
-    a = ap.parse_args(); os.makedirs(OUT, exist_ok=True)
+    ap.add_argument("--norm", choices=["none", "nc2"], default="none")
+    a = ap.parse_args()
+    global NORM, OUT
+    NORM = a.norm
+    if NORM != "none":
+        OUT = os.path.join(HERE, "ra_" + NORM)
+        assert not a.apply, "SCORE-NC2: proposals only, nothing enters key.tsv from the nc2 arm"
+    os.makedirs(OUT, exist_ok=True)
     if a.mode == "calib": calib()
     elif a.mode == "run":
         if a.arm == "tgt":

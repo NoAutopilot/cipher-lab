@@ -2,7 +2,8 @@
 
 Control design: homophonic_anneal.make_control (K signs allotted to letters by corpus frequency, each occurrence
 drawing a homophone at random) on a plaintext window cut from the corpus and held out of the solver's model.
-Solver: homophonic_anneal.solve. params: iters (40000), order (3), uni_weight (1.0).
+Solver: homophonic_anneal.solve. params: iters (40000), order (3), uni_weight (1.0), norm (none | nc2: divide the
+n-gram score by sum N_c^2, homophonic_anneal.ngram_term; SCORE-NC2, 4 Oct 2026).
 
 profile=target (GOLD-D1, 25 Sept 2026): allot the K homophones so the control's own sign-count profile matches
 the TARGET's sorted sign counts (from params["target_msgs"], always supplied by family_run.py), not corpus
@@ -352,7 +353,7 @@ def _crib_drag(seq, model, corp, seed, restarts, params):
         fx.update(zip(r6, w))
     if b:
         fx.update(zip(r2, b))
-    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, uw, fixed=fx)
+    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, uw, fixed=fx, norm=_p(params, "norm", "none"))
     info.update({"crib6": w, "crib2": b, "stage1_top": [(round(x, 1), y) for x, y in stage1[:keep]],
                  "stage2_top": [(round(x, 1), y, z) for x, y, z in stage2[:5]], "n_pinned_tokens":
                  sum(1 for x in seq if x in fx)})
@@ -493,7 +494,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         texts = [c if re.fullmatch(r"[a-zA-Z0-9]*", c[:5000]) else encode_units(c, params) for c in corpora]
         model = _unit_model(texts, params)
         seq = [s for m in cipher_msgs for s in m]
-        res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
+        res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
         sc, key = res[0]
         _LAST_UNITS = dict(params)
         return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res],
@@ -505,7 +506,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         # H25 (28 Sept 2026): every occurrence of a wild sign is its own pseudo-sign, so the anneal gives it a
         # per-position letter under the n-gram model and the unigram KL term (ceiling 1.0 for a family sign)
         seq_w = [f"{x}#{i}" if x in wild else x for i, x in enumerate(seq)]
-        res = ha.solve(seq_w, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
+        res = ha.solve(seq_w, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
         sc, key = res[0]
         dec = "".join(key[x] for x in seq_w)
         wl = {w: dict(Counter(key[f"{w}#{i}"] for i, x in enumerate(seq) if x == w)) for w in wild if w in seq}
@@ -526,7 +527,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         print("crib=drag:", json.dumps({k: v for k, v in info.items()}, ensure_ascii=False, default=str)[:900])
         info["key"] = key
         return "".join(key[x] for x in seq), sc, info
-    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
+    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
     sc, key = res[0]
     return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
 
