@@ -3987,7 +3987,9 @@ Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; wave 1 .claude/
 | A3V2-ES132C4 | es132 Cipher 4 table, catalogue flag, blog threads | session_01Vs1i1ZVe4zT1x5V6ZafBb7 | 4 | done 5.24 | Tomokiyo Cipher 4 PNG on disk; cabinet-noir has transcribed f.87/157/179; catalogue 200 |
 | A3V2-ES132A1 | es132 f.89/f.119 AUDIT 1 | session_017yq89oC9evay2SUWfHvMM3 | 9 | live | |
 | A3V2-ROUS2 | naf14913 Souchon no. 2037 + images < 30 MB | session_01HWbf6HC5ZxMgHY5L1sd6WF | 5 | live | |
-| A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | live | |
+| A3V2-SANGCS | sanguszkow check-solved re-run | session_011GmJpbqUUiUNUHVDgJjJwU | 5 | done 7.42 | blocked -> open; six sources negative; Potocka key covers 132/232 tokens (count); ASKS 125 is another letter |
+| A3V2-SANGTX | sanguszkow R7524 crop transcription | session_01VmSSpLqyuVT4WRgkKTN81b | 12 | live | |
+| A3V2-THURBT | thurloe 67/153 boundary test on page images | session_01T5BLRp6zjaKHCgvCvZsYsz | 9 | live | |
 
 Open items: clair1161 rule-7 is LANE-NEAR4's (N4-RD1161); Paget rule-7 is LANE-NEAR4's (after N4-PAG126). Reserve listed in ROOM 04:55.
 
