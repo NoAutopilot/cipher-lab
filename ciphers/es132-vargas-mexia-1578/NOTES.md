@@ -54,6 +54,35 @@ Result: no reading claim for any Espagnol 132 letter found in any comment thread
 
 Requests by host: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2 (one browser-tool attempt failed on the cert, one curl 200); scienceblogs.de 2; cryptiana.blogspot.com 3; ciphermysteries.com 1; github.com 1 shallow clone; WebSearch 3 (all off-target). Subagent calls 0. No credentials used.
 
+## {CLEAR:} scorer fix + Cipher 3 re-gate (RUN5-ESFIX, LANE-RUN5 account 1, 4 Oct 2026, 13:21-13:3x UTC by `date -u`)
+Fix for the leak RUN5-ES51 reported above. `test2.load_pass` now cuts each `{CLEAR:...}` span whole (regex, spaces included) before the
+line is split; an unterminated span stops the run. The reconciled files carry no marker (the old loader had already normalised the clear
+words into tokens, e.g. f.50r L01 "rρ dρ V c H ... x"), so `strip_clear` cuts the reconciled line by the passes' own layout: a line both
+passes mark all-clear is dropped, a line both open with a clear span then "/" loses its tokens through the first "/"; any other layout
+or a pass disagreement stops the run. The transcriptions are untouched; `reading_<page>.txt` still renders the whole reconciled line,
+while S_b and the grades use the cut one. PREREGs, controls, seeds and the f.90v positive control unchanged (control JSON identical).
+Offline test `test_test2_clear.py`: a page with two all-clear lines and a clear-then-"/" line loads, strips and scores identically to
+the page without them (S_b -1.183, 53 letters, both), and a pass disagreement is caught. "OK".
+
+| page | run | letters old -> new | S_b old -> new | null (max order/key p99) old -> new | gate (b) |
+|---|---|---|---|---|---|
+| f.41r | A / B / rec. | 909/924/973 -> 907/922/971 | -1.375/-1.388/-1.266 -> -1.373/-1.386/-1.264 | -1.533/-1.548/-1.483 -> -1.536/-1.558/-1.475 | PASS -> PASS |
+| f.41v | A / B / rec. | no clear span: unchanged | -1.456/-1.407/-1.446 | -1.647/-1.630/-1.623 | PASS (unchanged) |
+| f.50r | A / B / rec. | 864/849/870 -> 845/830/851 | -1.219/-1.259/-1.214 -> -1.196/-1.237/-1.192 | -1.443/-1.476/-1.435 -> -1.410/-1.443/-1.412 | PASS -> PASS |
+| f.50v | A / B / rec. | no clear span: unchanged | -1.197/-1.228/-1.175 | -1.439/-1.459/-1.425 | PASS (unchanged) |
+| f.51r | A / B / rec. | no clear span: unchanged | -1.198/-1.188/-1.174 | -1.468/-1.467/-1.463 | PASS (unchanged) |
+| f.51v | A / B / rec. | no clear span: unchanged | -1.179/-1.400/-1.190 | -1.450/-1.567/-1.448 | PASS (unchanged) |
+| f.52r | A / B / rec. | 721/692/727 -> 714/685/720 | -1.372/-1.339/-1.347 -> -1.368/-1.335/-1.343 | -1.518/-1.508/-1.513 -> -1.533/-1.506/-1.524 | PASS -> PASS |
+**No gate flipped** (judge_pass FALSE before and after on every run, as before). Grades (reconciled): f.41r S 393 -> 392, U 35 -> 33
+(L01 "de Vargas Mexia" residue); f.50r S 364 -> 352, U 30 -> 26 (L01 all clear, L02 prefix); f.52r S 292 -> 288, U 15 -> 11 (L22);
+other pages unchanged. Clear lines cut: f.41r L01 prefix; f.50r L01 line, L02 prefix; f.52r L22 line.
+Same loader feeds `test2.py` (Cipher 4/Teulet pages): f.89r L01 (clear span then "/") was leaking too; re-run: A 853 -> 838 letters,
+S_b -1.203 -> -1.190; B 817 -> 803, -1.183 -> -1.168; rec. 860 -> 845, -1.109 -> -1.095; gate (b) PASS -> PASS all three; M 408 -> 397,
+U 37 -> 35; err_2reader 88/445 -> 87/432. Other test2 pages carry no clear span. f.93r-f.95r passes also carry spans but are scored by
+`align_dup.py`/`settle_dup.py`, not test2 -- not checked here (one-line follow-up: grep their loaders for the same per-token check).
+Rule 7: `test2.py --page f41r/f41v/f50r/f50v/f51r/f51v/f52r --check` and `test2.py --check` all "OK: committed outputs match".
+Requests 0, subagent calls 0. No credentials used. Report only; no novelty classification made.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, refreshed 4 Oct 2026 A3V2-ES132C4)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
 - The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r), rule-7 SAME 2842/2842 (A3V2-ES7) and print-checked; **AUDIT 1 done (A3V2-ES132A1, 4 Oct 2026, `AUDIT.md`): printed paragraphs N0 (Teulet 1860/1862, period decipherment), unprinted paragraphs N3, depth D2 on the C text only (about 11% / 16%), D1 on the N3 text; not a unique solve, AUDIT 2 not due**. The duplicate copy f.93r-f.95r is transcribed and aligned (A3V3-ES9396) and **43 of the 113 '?' tokens are settled from it** (A3V3-ES132S, 4 Oct 2026, PREREG_dupsettle.md, section below: 25 flags removed where both duplicate blind reads confirm, 18 tokens replaced by the duplicate's isolated 1:1 token; control 48/50 firm tokens unchanged); **70 '?' remain**; a fresh rule-7 re-derivation of the settled f.89 pages is owed (not done by the settling worker) - blocker: not-attempted; next: rule-7 re-derivation after A3V3-ES132S (fresh session, spec + key + test2.py/settle_dup.py --check), ~$2; then the 30 non-isolated and 10 non-agreed candidates in dup_settled.tsv by a two-crop look (f.89 crop vs duplicate crop), ~$3
@@ -733,7 +762,7 @@ Overlay checked by eye: 22 bands = 22 lines, one per band (L22 the clear line). 
 one whitespace-free token, so the clear line L22 ("del Bosq de segovia ... 1578") is split and ~7 of its letters are key-decoded into
 the score (L22 in `ciphertext_f52r.tsv` reads "B dρ sρ ±? v dρ j 1578.?"). Diagnostic, L01-L21 only: A -1.368 vs order p99 -1.533,
 B -1.335 vs -1.506, rec. -1.343 vs -1.524 -- PASS all three, so the verdict does not depend on it. f.50r's clear lines L01-L02 carry
-the same leak; a loader fix plus re-scoring every page with a clear line is a follow-up (~$1).
+the same leak; a loader fix plus re-scoring every page with a clear line is a follow-up (~$1). [Done: RUN5-ESFIX below, no gate flipped.]
 Sense by eye from `reading_f52r.txt` (not graded): L03 "he que u do a u d sar os de lo que en es to ha pa sa do", L05-06 "pa ta que es
 te ys pre ue u do / y pa ta que si tra ta re t con uos so bre la ma tl d a", L07-08 "se pa y s co a ue y s de pra ce de r que ha de sr en
 la / m d s ma fo da", L15 "pa sa a de lar te", L19-20 "en m [1?] co pe / li gro".

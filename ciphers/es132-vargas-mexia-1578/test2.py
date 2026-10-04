@@ -12,7 +12,9 @@ from test 1's f.90v crops vs its pass A on the Teulet lines (L10: bar over 4 = '
 L05: tilde over 17σ = @m, small r-shaped mark over 24. = @r):
   @hat -> @n, @bar -> @s, @acute -> @l, @tilde -> @m, @rmark -> @r, @dots -> @2 (no letter, as test 0/1);
   @cross, @other and any '?'-qualified mark -> dropped (no letter; counted in the report).
-Then passnorm.py (unchanged). {CLEAR:...} tokens are dropped. err_2reader = token disagreement between passes A and B after
+Then passnorm.py (unchanged). {CLEAR:...} spans are dropped whole, spaces included, and the matching clear part of the reconciled
+line is cut by the passes' layout (strip_clear; RUN5-ESFIX, 4 Oct 2026 -- before it, words 2+ of a multi-word span were scored).
+err_2reader = token disagreement between passes A and B after
 normalisation, per line difflib alignment, (A-only + B-only + substituted) / max(len A, len B) summed.
 Writes test2_result.json and reading_<page>.txt; --check exits 1 if stale.
 
@@ -60,14 +62,42 @@ def shape_tok(t):
     return out + q
 
 
-def load_pass(p):
+CLEAR_RE = re.compile(r'\{CLEAR:[^{}]*\}')
+
+
+def load_pass(p, clear=None):
+    """{CLEAR:...} spans (which may hold spaces) are cut out before the line is split, so no clear word reaches the score
+    (RUN5-ESFIX, 4 Oct 2026: the old per-token check dropped only the first word of a multi-word span). If `clear` is a dict,
+    each line carrying a span is recorded there as 'line' (nothing else on it) or 'prefix' (span then '/'); see strip_clear."""
     L = {}
     for l in open(p, encoding='utf-8'):
         if l.startswith('#') or not l.strip() or '\t' not in l: continue
         a, b = l.rstrip('\n').split('\t', 1)
-        toks = [x for x in (shape_tok(t) for t in b.split()) if x]
+        b2, k = CLEAR_RE.subn(' ', b)
+        if '{CLEAR' in b2: raise SystemExit(f'{p} {a}: unterminated {{CLEAR:')
+        DROPPED['clear'] += k
+        if k and clear is not None:
+            rest = b2.split()
+            clear[a.strip()] = 'line' if not rest else 'prefix' if b.lstrip().startswith('{CLEAR') and rest[0] == '/' else 'other'
+        toks = [x for x in (shape_tok(t) for t in b2.split()) if x]
         L[a.strip()] = norm_line(' '.join(toks)).split()
     return L
+
+
+def strip_clear(R, page, cA, cB):
+    """Reconciled files carry no {CLEAR} marker (the passes' clear words reached them normalised), so the clear part of a
+    reconciled line is removed by the passes' own layout: a line both passes mark all-clear is dropped; a line both passes open
+    with a clear span then '/' loses its tokens through the first '/'. Any other layout, or passes that disagree, stops the run."""
+    R = dict(R)
+    for ln in sorted(set(cA) | set(cB)):
+        kind = cA.get(ln) or cB.get(ln)
+        if cA.get(ln) != cB.get(ln) or kind not in ('line', 'prefix'):
+            raise SystemExit(f'{page} {ln}: clear-span layout A={cA.get(ln)} B={cB.get(ln)} -- not handled, settle by hand')
+        if ln not in R: continue
+        if kind == 'line': R.pop(ln); continue
+        if '/' not in R[ln]: raise SystemExit(f'{page} {ln}: passes put clear text then "/", reconciled line has no "/"')
+        R[ln] = R[ln][R[ln].index('/') + 1:]
+    return R
 
 
 def err2(A, B):
@@ -140,9 +170,12 @@ def main_page(page):
                     ('reconciled', load_lines(HERE / 'ciphertext_f90v.tsv'))):
         ctl[name] = score([t for ln in F90V_UNPRINTED if ln in L for t in L[ln]], key, shuf, model, random.Random(1578))
     lines = C3_PAGES[page]
-    A, B = load_pass(HERE / f'passes/{page}_passA.tsv'), load_pass(HERE / f'passes/{page}_passB.tsv')
+    cA, cB = {}, {}
+    A, B = load_pass(HERE / f'passes/{page}_passA.tsv', cA), load_pass(HERE / f'passes/{page}_passB.tsv', cB)
     pr_ = HERE / f'ciphertext_{page}.tsv'
-    R = load_lines(pr_) if pr_.exists() else {}
+    R0 = load_lines(pr_) if pr_.exists() else {}
+    R = strip_clear(R0, page, cA, cB)
+    if cA or cB: res['clear_lines_cut'] = dict(sorted({**cB, **cA}.items()))
     d, n = err2(A, B); r = res['target'] = {'err_2reader': f'{d}/{n}', 'err_2reader_frac': round(d / max(1, n), 3)}
     for name, L in (('passA', A), ('passB', B), ('reconciled', R)):
         if L: r[name] = score([t for ln in lines if ln in L for t in L[ln]], key, shuf, model, random.Random(1578))
@@ -155,7 +188,7 @@ def main_page(page):
         nkey = sum(k == 'key' for k in kinds)
         res['grades_reconciled'] = dict(H=0, C=0, S=(nkey - key_q) if ok else 0, M=key_q if ok else nkey, I=0,
                                         U=sum(k in ('code', 'bad') for k in kinds))
-        outs[f'reading_{page}.txt'] = reading(R, key, sorted(set(R) & set(lines)))
+        outs[f'reading_{page}.txt'] = reading(R0, key, sorted(set(R0) & set(lines)))
     res['dropped_shape_tokens'] = dict(DROPPED)
     outs[f'c3_test1_{page}_result.json'] = json.dumps(res, indent=1) + '\n'
     if '--check' in sys.argv:
@@ -176,9 +209,12 @@ def main():
     for page, cfg in PAGES.items():
         pa, pb, pr_ = (HERE / f'passes/{page}_passA.tsv', HERE / f'passes/{page}_passB.tsv', HERE / f'ciphertext_{page}.tsv')
         if not pa.exists(): continue
-        A, B = load_pass(pa), (load_pass(pb) if pb.exists() else {})
-        R = load_lines(pr_) if pr_.exists() else {}
+        cA, cB = {}, {}
+        A, B = load_pass(pa, cA), (load_pass(pb, cB) if pb.exists() else {})
+        R0 = load_lines(pr_) if pr_.exists() else {}
+        R = strip_clear(R0, page, cA, cB) if B else R0
         r = res[page] = {}
+        if cA or cB: r['clear_lines_cut'] = dict(sorted({**cB, **cA}.items()))
         if B:
             d, n = err2(A, B); r['err_2reader'] = f'{d}/{n}'; r['err_2reader_frac'] = round(d / max(1, n), 3)
         for name, L in (('passA', A), ('passB', B), ('reconciled', R)):
@@ -197,7 +233,7 @@ def main():
             kinds = [dec_tok(t, key)[1] for ln in cfg['lines'] if ln in R for t in R[ln]]
             r['grades_reconciled'] = dict(H=0, C=0, S=0, M=sum(k == 'key' for k in kinds), I=0,
                                           U=sum(k in ('code', 'bad') for k in kinds))
-            outs[f'reading_{page}.txt'] = reading(R, key, sorted(set(R) & set(cfg['lines'])))
+            outs[f'reading_{page}.txt'] = reading(R0, key, sorted(set(R0) & set(cfg['lines'])))
     corpus = norm(''.join(gzip.open(p, 'rt', encoding='utf-8').read() for p in ES16))
     for page, cfg in A_PAGES.items():
         if (HERE / f'passes/{page}_passA.tsv').exists():

@@ -39,42 +39,45 @@
    "armc1_shuffled_median_judge_pass": false
   }
  },
+ "clear_lines_cut": {
+  "L01": "prefix"
+ },
  "target": {
-  "err_2reader": "163/533",
-  "err_2reader_frac": 0.306,
+  "err_2reader": "163/530",
+  "err_2reader_frac": 0.308,
   "passA": {
-   "letters": 909,
-   "S_b": -1.375,
-   "order_p99": -1.533,
-   "order_median": -1.6,
-   "key_p99": -1.838,
+   "letters": 907,
+   "S_b": -1.373,
+   "order_p99": -1.536,
+   "order_median": -1.607,
+   "key_p99": -1.837,
    "gate_b": true,
-   "judge_null_p99": -2.004,
-   "judge_real_p05": -0.776,
+   "judge_null_p99": -2.002,
+   "judge_real_p05": -0.771,
    "judge_pass": false,
    "armc1_shuffled_median_judge_pass": false
   },
   "passB": {
-   "letters": 924,
-   "S_b": -1.388,
-   "order_p99": -1.548,
-   "order_median": -1.623,
-   "key_p99": -1.839,
+   "letters": 922,
+   "S_b": -1.386,
+   "order_p99": -1.558,
+   "order_median": -1.624,
+   "key_p99": -1.838,
    "gate_b": true,
    "judge_null_p99": -1.999,
-   "judge_real_p05": -0.767,
+   "judge_real_p05": -0.769,
    "judge_pass": false,
    "armc1_shuffled_median_judge_pass": false
   },
   "reconciled": {
-   "letters": 973,
-   "S_b": -1.266,
-   "order_p99": -1.483,
-   "order_median": -1.542,
-   "key_p99": -1.832,
+   "letters": 971,
+   "S_b": -1.264,
+   "order_p99": -1.475,
+   "order_median": -1.546,
+   "key_p99": -1.834,
    "gate_b": true,
-   "judge_null_p99": -2.005,
-   "judge_real_p05": -0.772,
+   "judge_null_p99": -2.006,
+   "judge_real_p05": -0.769,
    "judge_pass": false,
    "armc1_shuffled_median_judge_pass": false
   }
@@ -82,10 +85,10 @@
  "grades_reconciled": {
   "H": 0,
   "C": 0,
-  "S": 393,
+  "S": 392,
   "M": 95,
   "I": 0,
-  "U": 35
+  "U": 33
  },
  "dropped_shape_tokens": {
   "marks": 17,
