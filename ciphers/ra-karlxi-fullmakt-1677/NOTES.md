@@ -312,3 +312,21 @@ no page numbers (page_num is not a locator), no vision. Both OCR long-s noisy ("
 - Requests: archive.org advancedsearch 2, be-api.us.archive.org 18 (no failures). Vision 0, subagents 0. Status stays `open`.
 Next (one line): same terms on the other 1680/1697 Actes scans and Dumont VII.2; Bakeš thesis grep still pending.
 Verdict: open unchanged; keep going (recipient-side print check: CTS 15, Actes 1680 scan z5RU..., Dumont VII.1 all negative by snippet).
+
+## be-api print-check, wider scans (RUN3-KARL, 4 Oct 2026, 08:48-08:55 UTC)
+The brief's two volumes were already searched by RUN1-KARL (above); this pass ran that section's logged "Next" line. Method as before: be-api fts,
+`identifier=` filter, snippets only, no page numbers, no vision.
+- Spelling variants on the two earlier volumes (Actes 1680 `bub_gb_z5RUDBNGrqkC`, Dumont VII.1 `corpsuniverseldi71dumo`): "Nääs", "Nesen", "Nesae",
+  "Naesii", "Datum Holmiae", "Datum Nesae", "Nesse", "Neskae": 0 hits each.
+- Actes 1680, same volume, "Carolus" 1 item with 5 snippets: Swedish Latin instruments, but a different set -- "Liungby die 3. Decembres Anno 1678"
+  (Carolus, Hoghusen), "Ratificatio Suecico-Monasteriensis", a "Plenapotentia" snippet, and a Spanish declaration. None is dated Nääs 6 May 1677 or
+  addressed to the Emperor's side; read as other documents, not this one.
+- Newly searched (Naes / Naas / Nesae, 0 hits in every one): Dumont VII.2 `corpsuniverseldi72dumo`; Actes 1680 scans `bub_gb_xIgNW9gsLIkC`, `53sa5KLcpk8C`,
+  `qz747tAlFqYC`, `RFTnvif6FsYC`, `n8Arnv9Vn68C`, `eXQLNZsAnzsC`; Actes 1697 third edition `bub_gb_WWhLFL0KB0gC`, `xiS7lWlwwFMC`, `zcHCv6zpkPgC`,
+  `6AdAtw3JYYsC`, `Jf_WcZJ4qX4C`.
+- Control (Oxenstierna): hits in Dumont VII.2, RFTn, n8Ar, eXQL, 6AdA; 0 in xIgN, 53sa, qz74, WWhL, xiS7, zcHC, Jf_W. For those seven the scan answers
+  nothing for a Swedish plenipotentiary name, so their Naes/Naas zeros are weak (the scan may be another tome, or the OCR garbles the name); they are not a test.
+- Reading: no hit for the 6 May 1677 Nääs full power in 13 searched Dumont/Actes scans, conditional on OCR (long-s noise) and on tome coverage.
+  Not searched: other tomes of the 1680/1697 Actes, Dumont other volumes, Bakeš thesis grep (still pending).
+- Requests: archive.org advancedsearch 2, archive.org metadata 2, be-api.us.archive.org ~65 (no failures). Vision 0, subagents 0. Status stays `open`.
+Next (one line): Bakeš thesis grep, then Riksarkivet owner/copy route (REQUEST.md). Verdict: open unchanged; keep going.
