@@ -61,8 +61,10 @@ HDR1 = {'f41r': '# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, rig
         'f50v': '# BnF Espagnol 132 f.50v (Gallica btv1b10032556x canvas 48, left page, region 800,850,2750,3450), 27 bands = 27 lines.',  # RUN4-ES41V
         'f51r': '# BnF Espagnol 132 f.51r (Gallica btv1b10032556x canvas 48, right page, region 3450,650,3050,3700, 3 segments), 26 bands = 26 lines.',
         'f50r': '# BnF Espagnol 132 f.50r (Gallica btv1b10032556x canvas 47, right page, region 3600,1340,2850,3060, 3 segments), 24 bands = 24 lines (L01 clear, L02 clear then cipher). Pass B = RUN5-ES50B replacement (prompt run2/pass_prompt_f50r_B2.md, dot sign called out; RUN4 pass B kept as passes/f50r_passB_run4.tsv).'}  # RUN4-ES50 / RUN4-ES50R
+HDR1['f51v'] = '# BnF Espagnol 132 f.51v (Gallica btv1b10032556x canvas 49, left page, region 1050,780,2450,3560, 2 segments), 25 bands = 25 lines.'  # RUN5-ES50B
 LETTER = {'f50v': '# Philip II to Juan de Vargas Mexia, Bosque de Segovia, 7 or 14 June 1578 (Tomokiyo TOC no.25-29 group, f.50 = no.25), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.'}
 LETTER['f51r'] = LETTER['f50v'].replace('f.50 = no.25)', 'f.50 = no.25; f.51r follows f.50v)')  # RUN4-ES50
+LETTER['f51v'] = LETTER['f50v'].replace('f.50 = no.25)', 'f.50 = no.25; f.51v follows f.51r)')  # RUN5-ES50B
 LETTER['f50r'] = LETTER['f50v'].replace('f.50 = no.25)', 'f.50 = no.25; f.50r opens the letter)')  # RUN4-ES50R
 hdr = [HDR1[PAGE],
        LETTER.get(PAGE, '# Philip II to Juan de Vargas Mexia, Madrid, 29 April 1578 (Tomokiyo TOC no.21), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.'),
