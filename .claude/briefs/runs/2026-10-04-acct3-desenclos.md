@@ -35,3 +35,10 @@ Good-citizen rule; host table in CLAUDE.md; keys only via env, never printed.
 5. Do NOT write the gate-7 `checked:` line yourself (a separate session does). Push by explicit path; tools/file_shrink_guard.py on
    every pre-existing file you touched; done line with commit, per-target hit/no-hit counts, request counts per host.
 Report what was found and where it was not found; do not classify novelty beyond correcting an AUDIT.md the evidence contradicts.
+
+## Owner's direction for the Desenclos email (4 Oct 2026 00:4x UTC; supersedes step 4's content)
+The owner sends it himself. She is the expert; we are a passion project. The only purpose is to ask whether and how we could be
+helpful to her work -- an offer, not a request. Do not ask her to review or verify our reading or to search for prior decipherments.
+Short: disclosure sentence, the BnF referral, one or two sentences on what we have (transcriptions, sign-by-sign data, open repository,
+the Espagnol 144 f.22 reading in rule-10 wording with its uncertain share), then a plain offer (transcription, sign sorting, checking
+keys against letters, anything in her research we could take on). French first, English beneath. Steps 1-3 unchanged.
