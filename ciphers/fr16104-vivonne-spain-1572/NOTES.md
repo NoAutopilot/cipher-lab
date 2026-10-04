@@ -1058,3 +1058,11 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 Verdict: keep going: 12 internal gaps; cheapest next: ink 63 f.194r lines 5-10, ~$1.5, and audits 1 of inks 63 and 53 (verifier), ~$9 each
 
 Gate output (N6-VIV63C, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 12 internal gap(s), 1 step(s) untried`; `tx/viv63_decode.py --check`: reading_piece63.tsv + rec files up to date; `tx/viv54_decode.py --check` and `tx/viv53_decode.py --check`: up to date; tracked folder 28.0 MB (crops gitignored, manifests committed)
+
+## N7-VIV54L (4 Oct 2026, LANE-NEAR7 worker, account 2): ink 54 look-alike pass and pre-registered re-decode
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near7-wave1.md "N7-VIV54L". Claimed 12:17 UTC, box to 13:36 UTC. PREREG-N7VIV54L.md pushed 2293e372
+before any re-read or re-decode.
+**Units, stated before the first subagent call (12:2x UTC):** scripts (tx/viv54L_prep.py, confusion, tx/viv54L_sheet.py, packet x2, audit) run;
+3 Sonnet calls -- f.173r re-read (195 tiles, crops of the 24 lines with a tile), f.173v re-read (176 tiles, 20 lines), one audit re-read (80 agreed
+positions, 4 planted, 36 lines) -- + 1 reconciliation by this worker, ~USD 1.2 each = ~4.8 against the 4.5 cap; the audit call is the one dropped
+if the page calls overrun.
