@@ -3812,9 +3812,9 @@
       "lane": "LANE-NEAR4 (account 2)",
       "touched": "4 Oct 2026 04:3x",
       "depth": "D1",
-      "depth_pct": 60.7,
+      "depth_pct": 67.0,
       "decode_status": "Non-decrypted",
-      "depth_check": "period-gloss letter agreement 0.594 on one 220-sign block; fr16 judge FAIL -1.233; longest C/S run 12 tokens (AUDIT 1, A3V2-C1161A1, 4 Oct 2026)",
+      "depth_check": "C/S 2261/3375 = 67.0% after 7=i M->S (RUN4-C1161AU AUDIT addendum, 4 Oct 2026; D1 holds, longest C/S run 16); period-gloss letter agreement 0.594 on one 220-sign block; fr16 judge FAIL -1.233; longest C/S run 12 tokens (AUDIT 1, A3V2-C1161A1, 4 Oct 2026)",
       "novelty": "N3 (AUDIT 1, A3V2-C1161A1, 4 Oct 2026; key ours; rule-7 re-derivation SAME, N4-RD1161)"
     }
   ]
