@@ -1,0 +1,87 @@
+{
+ "clear_letters": 500,
+ "err": 0.192,
+ "arm": "A (key86.tsv as published)",
+ "arm_A": {
+  "tx87/ciphertext_f301v.tsv": {
+   "tokens": 315,
+   "dropped": 15,
+   "decoded_letters": 384,
+   "score": 0.6302,
+   "keyshuffle_p99": 0.3959,
+   "keyshuffle_mean": 0.3467,
+   "order_p99": 0.4766,
+   "order_mean": 0.4251,
+   "above_both": true
+  },
+  "tx87/passA.tsv": {
+   "tokens": 315,
+   "dropped": 10,
+   "decoded_letters": 377,
+   "score": 0.6207,
+   "keyshuffle_p99": 0.4004,
+   "keyshuffle_mean": 0.3453,
+   "order_p99": 0.4721,
+   "order_mean": 0.4208,
+   "above_both": true
+  },
+  "tx87/passB.tsv": {
+   "tokens": 306,
+   "dropped": 13,
+   "decoded_letters": 375,
+   "score": 0.6427,
+   "keyshuffle_p99": 0.4116,
+   "keyshuffle_mean": 0.352,
+   "order_p99": 0.4827,
+   "order_mean": 0.4287,
+   "above_both": true
+  },
+  "positive_control": {
+   "seeds": [
+    {
+     "seed": 0,
+     "N": 384,
+     "score": 0.7461,
+     "keyshuffle_p99": 0.3587,
+     "order_p99": 0.4473,
+     "pass": true
+    },
+    {
+     "seed": 1,
+     "N": 384,
+     "score": 0.7585,
+     "keyshuffle_p99": 0.3676,
+     "order_p99": 0.4419,
+     "pass": true
+    },
+    {
+     "seed": 2,
+     "N": 384,
+     "score": 0.7405,
+     "keyshuffle_p99": 0.3632,
+     "order_p99": 0.4363,
+     "pass": true
+    },
+    {
+     "seed": 3,
+     "N": 384,
+     "score": 0.6115,
+     "keyshuffle_p99": 0.3601,
+     "order_p99": 0.4135,
+     "pass": true
+    },
+    {
+     "seed": 4,
+     "N": 384,
+     "score": 0.6715,
+     "keyshuffle_p99": 0.3549,
+     "order_p99": 0.4298,
+     "pass": true
+    }
+   ],
+   "passed": 5,
+   "pass": true
+  },
+  "verdict": "PASS"
+ }
+}

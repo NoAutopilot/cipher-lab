@@ -279,3 +279,53 @@ Re-create scratch (not committed): contact views `curl .../btv1b9060906j/f{556..
 - [x] image-check: f.275r native crops cut and checked
 - [ ] retry: kp86e per-line passes on f.275r; then the remaining 4 Nov pages
 Verdict: keep going: 8 internal gaps; cheapest next: Colbert 1588 headings ~$0.5; most valuable next: kp86e per-line re-pass of f.275r, ~$6
+
+## 1588 headings and kp87a: 24 Mar 1587, f.301v vs Colbert 16 pt II pp.338-339 (RUN5-PIS87, 4 Oct 2026, 12:46-13:1x UTC)
+- (a) 18 June 1588 letters (fr.16046 ff.165, 179) in Colbert 16 pt II: **not in the copy.** c830 p.811 carries "May 1588 /
+  Despesche ordinaire envoyee en France le troisiesme dudit mois et an / Au Roy"; pp.812-821 (c831-c835, all viewed) run on with
+  no heading; c836 p.822 closes that dispatch with "A la Royne mere du Roy" and p.823 heads "Lettre au Roy, du Marquis de Pisany.
+  Du 5e Octobre 1588". The copy jumps from the 3 May to the 5 Oct 1588 dispatch, so neither June letter has a clear copy in this
+  volume (Brienne 354-356 not checked). 6 Gallica requests.
+- (b) 24 Mar 1587 letter: canvas = 2 x folio + 12 holds (c606 = f.297r "24 mars 1587"; c618 = f.303r, "De Rome ce xxiiii Mars
+  1587", signature). Viewed at 700 px: c606, c609, c612, c614, c615, c616, c618. Cipher seen on **f.301v (c615) only**: a
+  7-sign tail after the clear "certain" + 9 lines, ending before the clear "Il me sembla Sire"; the left margin carries a period
+  decipherment in a second hand (not used). c607-c608, c610-c611, c613, c617 not viewed. Clear copy: Colbert c588 p.338 l.12
+  "que le Prince de Parme avoit faict entendre au Roy Catholique qu'il avoit este recherche de Monsieur de Guise de l'ayder a se
+  faire maistre de Sedan et Jamets ..." to p.339 l.3 "... que l'on le pensast." (c587 pp.336-337 read to locate it):
+  kp87a/colbert_p338_339.txt.
+- Crops: `python3 tools/iiif_lines.py --ark btv1b9060906j --canvas 615 --region 1250,2950,2600,1700 --out ciphers/fr16045-pisany-rome-1585/images --prefix f301v --debug --max-width 1600 --overlap 100`
+  (10 bands, overlay checked: one line per band). PREREG kp87a/PREREG_kp87a.md pushed a94f443b before any pass.
+- Passes: two blind Sonnet readers, **one line per subagent call** (20 calls, tx87/PASS_BRIEF87.md, raw rows tx87/rowsA|rowsB):
+  A 369 signs, B 364; tools/reconcile_passes.py agree 303/375 = 80.8%, **err_2reader 0.192** (kp86d's one-call shape on f.275r:
+  0.756). kp86d/reconcile_d.py (RUN3 rules unchanged): 303 agreed, 2+2+15 rule 1-3, 53 B's label -> tx87/ciphertext_f301v.tsv.
+- **Result (kp87a/kp87a.py, kp87a_result.json, arm A = key86 as published): PASS.** Reconciled 315 key tokens, nw_score
+  **0.630** vs key-shuffle p99 0.396 (mean 0.347) / order p99 0.477 (mean 0.425); blind A alone 0.621 (0.400 / 0.472), blind B
+  alone 0.643 (0.412 / 0.483). Positive control at e=0.192: 5/5 seeds pass. Tomokiyo's 1586-87 table reads the 24 Mar 1587
+  cipher in sequence with the period clear copy (a second letter after 17 Sept 1586).
+- Reading: reading_f301v_M.txt / reading_f301v_tokens.tsv by `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585 --ciphertext tx87/ciphertext_f301v.tsv --key key86.tsv --reading reading_f301v_M.txt --tokens reading_f301v_tokens.tsv`;
+  `--check` "reading up to date" (tool: H 315 = published-key sign read, U 60). Rule-4 grades (kp87a/cgrades87.py =
+  kp86b/cgrades.py with paths changed -> kp87a/grades_f301v.tsv): **C 205, M 109, U 16** of 330 sign tokens; 242 of 384 decoded
+  letters identical to the copy; 0 S, 0 I. Key published (Tomokiyo), plaintext the period copy (on Gallica) and the leaf's own
+  margin gloss: not an independent decipherment; no claim of a new reading.
+- Cost note: the 20 per-line calls ran about 0.35 each (not 0.25), and the job crossed its USD 8 cap at the last unit; no second
+  page. Gallica: 19 requests (8 Colbert canvases, 9 fr.16045 contact views + 1 info.json, 1 native region via iiif_lines), all 200,
+  >= 2 s apart.
+
+## Remaining gaps (RUN5-PIS87, 4 Oct 2026)
+Read so far: 17 Sept 1586 (f.244r, f.244v, f.245r) and 24 Mar 1587 (f.301v) PASS with key86 against the Colbert copy; f.275r (4 Nov 1586) re-pass is RUN5-PIS3's; f.75 (1585) NON-TEST.
+- 24 Mar 1587, unviewed leaves c607-c608, c610-c611, c613, c617 - blocker: not-attempted; cap spent; next: 700 px contact views (6 requests) to see whether more cipher sits in this letter, ~$0.5
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II, which jumps from 3 May to 5 Oct 1588; next: Brienne 354-356 (d'Ars' copies) for June 1588, catalogue lookup first, ~$1
+- 4 Nov 1586 remaining cipher f.275v-f.278r and 8 Sept 1586 (f.228-234), 17 Sept second letter (f.246-247) - blocker: not-attempted; outside this brief; next: per-line pipeline as kp87a (shown at err 0.19 here), priced at ~0.35 per call, ~$8 per dense page
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: owner sorter page for the f.75 crops, then test1.py unchanged, ~$1
+- key86 cell corrections (T31, T45, T47, T49, T57) - blocker: not-attempted; RUN5-PIS3 holds the T31 conflict log; next: arm B on f.301v as a pre-registered addendum (disk only), ~$0.5
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (RUN5-PIS87, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II p.338-339 paired with f.301v (kp87a PASS); 1588 June letters absent from the copy
+- [x] clear-pages: 24 Mar 1587 clear leaves c606-c616 partly viewed, cipher located on c615
+- [x] known-keys: key86 PASSes on 24 Mar 1587 f.301v at err 0.192
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: key86 cell corrections (RUN5-PIS3's T31 log; arm B on f.301v)
+- [x] image-check: f.301v native crops cut and checked
+- [ ] retry: per-line pipeline on the remaining 1586-87 cipher pages; Brienne for June 1588
+Verdict: keep going: 6 internal gaps; cheapest next: arm B on f.301v (disk only) ~$0.5; most valuable next: per-line pipeline on f.275v-f.278r (4 Nov 1586) ~$8 per page
