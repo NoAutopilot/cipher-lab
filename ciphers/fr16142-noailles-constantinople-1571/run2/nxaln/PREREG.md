@@ -1,6 +1,6 @@
 # RUN2-NXALN pre-registration (committed before any alignment output is printed)
 
-Written 4 Oct 2026, 03:23 UTC (`date -u`), account 1 worker RUN2-NXALN for LANE-RUN2. Brief:
+Written 4 Oct 2026, 03:21 UTC (`date -u`), account 1 worker RUN2-NXALN for LANE-RUN2. Brief:
 `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md` (RUN2-NXALN). Nothing in this folder aligns or decodes anything before
 this file is pushed.
 
@@ -66,3 +66,13 @@ negative), whatever it scores; 10% and 25% are reported as the curve.
 ## Grades
 Learned values grade C only if the target passes the gate AND both aligners agree on the value; else M. Comparison with
 key.tsv (Tomokiyo, published) via `run2/nxatl/cluster_provisional_names.tsv`: agree/disagree counts only, no edit to key.tsv.
+
+## Amendment 1 (4 Oct 2026, 03:27 UTC, before the target is run; control runs at 41 symbols already started)
+Reading key.tsv's header after starting the 41-symbol controls: Tomokiyo's table has ~60 letter homophones (per-letter counts in
+key.tsv), 3 doubling marks, 14 null symbols and 33 nomenclator codes, ~110 symbols -- not the 41 labels NX-RECUT's c262 reconciler
+used. Rule 3 (Salviati lesson: match the design, not only N and symbol count) makes the 41-symbol control too easy. Added control
+**"design"**: homophone counts per letter as key.tsv (letters absent from key.tsv folded: j->i, v->u, k->c, w->u), 33 nomenclator
+codes for the 33 most frequent words of >= 2 letters, 14 null symbols at a total null rate of 6% of symbols, 3 doubling marks
+(a doubled letter written as letter + mark), then the same atlas noise (120 clusters, impurity p, insertions 8%, deletions 3%).
+**The licensing control becomes the design control at p = 0.40**; the 41-symbol runs are reported as the curve. Same statistic,
+nulls and gate.

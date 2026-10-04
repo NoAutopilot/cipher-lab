@@ -23,6 +23,8 @@ whose meaning (from the rest of the letter) matches the chunk aligned to it; the
 alignment TSV records that as a repair.
 
     python3 tools/interlinear_align.py pairs DJVU FIRST LAST OUT_PAIRS.tsv
+    python3 tools/interlinear_align.py stream SYMBOLS.txt TEXT.txt OUT_KEY.tsv [--band N] [--step N] [--iters N]
+            (a whole letter against its whole separate clear copy: tools/stream_align.py, RUN2-NXALN 4 Oct 2026)
     python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv [--floor N] [--clear-consumes]
             [--prior KEY.tsv] [--code-prefix PFX] [--null-cost X] [--wildcard C]
             [--max-chunk N] [--seg-bonus B] [--len-prior X]
@@ -429,7 +431,10 @@ def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, p
 
 if __name__ == '__main__':
     a = sys.argv[1:]
-    if a and a[0] == 'pairs':
+    if a and a[0] == 'stream':
+        import stream_align
+        stream_align.main(a[1:])
+    elif a and a[0] == 'pairs':
         cmd_pairs(a[1], int(a[2]), int(a[3]), a[4])
     elif a and a[0] == 'align':
         floor = 100
