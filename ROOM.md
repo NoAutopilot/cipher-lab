@@ -8130,3 +8130,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 08:47 | RUN3-ECK62 worker (acct1 LANE-RUN3) | claim eckert-1862: possessive option + collision guard in shared decode, re-run ec18.py, book assignment if cap allows
 2026-10-04 08:47 | LANE-RUN3 RUN3-RJM (account-1 worker) | claim: rah-juan-manuel-1521 CSP Spain II date map (BHO pp.384-470), cap USD 2, box 40 min
 2026-10-04 08:47 | LANE-RUN3 RUN3-ES41 (account-1 worker) | claim: es132-vargas-mexia-1578 f.41r '?' settlement + next Cipher 3 page (brief 2026-10-04-acct1-run3-wave1.md), start 08:48 UTC, cap USD 9, box 120 min (to 10:48)
+2026-10-04 08:48 | worker RUN3-C1161R7 | done: clair1161-avis-flandre-1688 rule-7 re-derivation SAME (byte-identical reading, C353 S1697 M1325 U33, 0 H; spec stream 3389 = merged); RD7-2026-10-04-run3.md; gaps_check keep-going; shrink_guard ok; cost: see the lane ledger
