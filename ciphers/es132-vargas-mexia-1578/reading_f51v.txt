@@ -1,25 +1,25 @@
-L01	y bol uer sa he ma ho con tra el a y da do de los q
-L02	le si ga en [423.] y ho y de l ca si mi xo y de [183]
-L03	de qui en s ua dri an en s te ca so [1.] y que en lo de l d
-L04	o gan ges se le o fre ci a tan bi e h que pi dri a con u
-L05	que de mas de lo que le a ui a ma da don xe s pon de x s
-L06	bi en per m tir yo que el xe y p di e se tra tar de
-L07	di os pa xa el cor ci er to de a que lo [1.] y h e ui en d
-L08	en t di do l [1?] e go es to do es to do pn ti s que el a d u bi
-L09	o le man de xe s pon de x a lo pro me xa que en to do l
-L10	que ml ca se le xe cres ci e se de da ho ye li gro en
-L11	co sas y [68?] por car sa y xe s y xe s pe to de a ue x s o
-L12	es to a sa her ma ho y pra c ho y pra ca do c dn sas tr er za
-L13	de a ta iar le sas de si g nos de si g nos yo le a y ma x d a f
-L14	ca di x d a co ho se de vri [1?] se de vri a a tal de mon e da ci [1?]
-L15	he ca por sa par t y en l t y en oo se [1+@n?] do de l de [184]
-L16	ges que yo hol ia x d a que el di ca que el di ca xe y en ten di e s
-L17	con la o ca si on de la ca x de la ca x ta q le [1+?] u d a frs
-L18	p to que e xa sa in ten ci o in ten ci on y a n d [1?] do por que
-L19	se po dri a me ior pa sar a d pa sar a de la te en es te ne go
-L20	y con es to s bo l ui o el di c s el di co m [128?] con ten ta
-L21	sa ti s fe co d la xe s p la xe s pa es ta i fre ci en do de
-L22	z m [128?] [814?] hos o [267?] d os c [267?] d os con sa a mo a si si b
-L23	los do p [124ρ@s?] en que me ha z que me ha z d a ha [30_] do co p
-L24	que con la o ca si on de los f on de los se con ea se a tra ba
-L25	que la a mi s ta d que el pro que el pro p so los o tras di a
+L01	y bol uer sa her [1?] da ho con e da el a y [1?] da do de los q
+L02	le si [1.@n] en e se re yo y de l ca si [1?] di xo y de [183]
+L03	de f [1?] d en s ual e u an en s te ca so [1.] y que en lo de l de
+L04	o ran ges se le o fre ci a ta bi e r que pi dri a con ue
+L05	que de [1] das de lo que le a ui a [1] da da do re s pon de r se
+L06	bi en per m tir yo que el re y f [01?] di e se e da tam de
+L07	di os pa ra el com ci em to de a que lo [1.] y ha f [5σ?] en d
+L08	en ten di do l e go es tos do pn [1] ti s que el a d ui d
+L09	o le [1?] dan de re s pon de r a lo pro me ra que en to d l
+L10	que m ca se le re cres ci e se de da ho y pe li ea en
+L11	co [231+@s?] y [68?] por car sa y re s pe to de a ue r s o
+L12	es to a [231?] her ma ho y pra q tan do cin [231@s?] q er za
+L13	de a ta iar le [231@s?] de si g nos yo le a [281?] da r [610?] f
+L14	[71?] di r [610?] [77ρ?] mo se de vr [610?] a tal de mon e da [7618?]
+L15	he ca por [231?] par t y en oo se [1@n] do de l de [184]
+L16	ges que yo hol [1?] [1+] r [610?] que el di ce re y en ten di e s
+L17	con la o ca si on de la ca r ta q le ha ui a es e
+L18	p to que e ra [231?] in ten ci on y a ni mo por que [1]
+L19	se po dri a me ior pa sam a de lan te en es te ne go c
+L20	y con es to s bo l ui o el di co [{bul}] m [1] y co ten ta
+L21	sa ti s fe co d la re s [201?] es ta i fre ci en do de [1]
+L22	zer [161?] y [814?] nos o u [7618@s?] con [231?] [101?] do [102?] [362?] [368?]
+L23	los do pn [1] tos en que me ha zi a ha [30_] do [77ρ?] co p
+L24	que con la o ca si on de los se con ea se a tra ba [1]
+L25	que la a mi s ta d que el pro [201?] so los o tras d d a
