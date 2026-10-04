@@ -27,6 +27,13 @@ class TestPossessive(unittest.TestCase):
         self.assertEqual(r, "[Longstreet]'s corps")
         self.assertEqual(c["H"], 1)
 
+    def test_possessive_numeral_terminates(self):
+        # RUN3-ECK62 bug: a possessive numeral ("persons's") matched in the main lookup but not in the numeral-run
+        # loop, which then never advanced (infinite loop on mssEC 18 book 2, "Brown's" = 1)
+        r, c = decode.decode_entry("persons's men", KEY, possessive=True)
+        self.assertEqual(r, "[5]'s men")
+        self.assertEqual(c["H"], 1)
+
     def test_curly(self):
         r, _ = decode.decode_entry("Kettle’s corps", KEY, possessive=True)
         self.assertEqual(r, "[Longstreet]'s corps")

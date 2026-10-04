@@ -251,7 +251,7 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
                 # month followed by numeral words: read the date
                 j, vals = i + 1, []
                 while j < len(words):
-                    s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key)
+                    s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key, possessive)
                     if r2 and r2[2] == "numeral":
                         vals.append(int(r2[0].split()[0]))
                         counts[r2[1]] += 1
@@ -270,7 +270,7 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
         if kind == "numeral":
             j, vals = i, []
             while j < len(words):
-                s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key)
+                s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key, possessive)
                 if r2 and r2[2] == "numeral":
                     vals.append(int(r2[0].split()[0]))
                     if j > i:
