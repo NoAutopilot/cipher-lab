@@ -2,6 +2,8 @@ blocked
 
 Status set to blocked by LANE G2, 24 Sept 2026 09:42 UTC: not digitised; REQUEST.md and ASKS row.
 
+Order placed 4 Oct 2026: BnF reproduction of Ms-6314 ff.177-183 (black-and-white PDF from microfilm, 14 pages) paid; waiting on delivery (order reference in the private record). Next: transcribe on arrival.
+
 # Instruction to the comte Jacob de Hanau, 28 October 1635 -- Bibliothèque de l'Arsenal, Ms-6314
 
 QUEUE row: M23 (sources/solver-diffs/2026-09-24-lane-g2-gallica4.tsv, "Fourth pass, 24 September 2026").
