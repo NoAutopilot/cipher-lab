@@ -598,3 +598,73 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r; 24 Mar 1587
 - [x] image-check: f.302v cut one line per band, montage checked; margin gloss read at native resolution
 - [ ] retry: per-line pipeline on f.246-247, f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
 Verdict: keep going: 10 internal gaps; cheapest next: T40 image compare ~$1; most valuable next: 17 Sept 1586 f.246-247 vs Colbert pp.52-55 and the f.248 decipherment, ~$45
+
+## Known-answer test kp86f: 4 Nov 1586, f.275v vs Colbert 16 pt II pp.122-123 (PIS1-275V, 4 Oct 2026, 16:47-17:4x UTC)
+- Page: fr.16045 f.275v = Gallica btv1b9060906j c563. Two cipher blocks: block A, 5 lines, below 4 lines in a second,
+  smaller hand at the head of the page (a period decipherment of block A: "ne me le communiquer a moy de peur que le
+  faisant entendre a V. Mate par lettres ..."), which continues in the left margin; then 4 lines of clear ("que ie ne la
+  sors qu'a demy ... ie dis au Pape"); block B, 15 lines (the first opens with the clear word "touchant"), with a long
+  left-margin decipherment in the second hand and small interlinear letters; then the clear "a laquelle elle porte toute
+  affection ...". 20 cipher lines, so per the brief the first 16 were read (A 1-5, B 1-11); B 12-15 are in Remaining gaps.
+- Clear copy: Colbert c480 (pp.122-123) read at 1400 px: it is the text already in kp86d/colbert_p121_123.txt; the f.275v
+  span is "ne le me communiquer a moy" to "seureté d'icelle" (kp86f/colbert_f275v.txt, 1047 letters; the 4 clear lines kept
+  in the scored copy and removed from the control's plaintext, as kp86d's CLEAR_IN_MS).
+- Crops (32): native region 950,950,2975,3650 (scratch), sub-images block A (120,0,2760,830) and block B (120,1440,2760,3400);
+  the auto-detector merged lines, so centres were set by eye on a 50 px grid:
+  `python3 tools/iiif_lines.py --image <scratch>/blkA_c563.jpg --out ciphers/fr16045-pisany-rome-1585/images --prefix f275vA --debug --max-width 1600 --overlap 100 --centres 95,265,410,570,725 --follow-slope 400 --slope-local --slope-margin 20`
+  `python3 tools/iiif_lines.py --image <scratch>/blkB_c563.jpg --out ciphers/fr16045-pisany-rome-1585/images --prefix f275vB --debug --max-width 1600 --overlap 100 --centres 90,265,415,590,760,930,1095,1260,1410,1570,1756 --follow-slope 400 --slope-local --slope-margin 20`
+  then block B line 5 fixed-y (`--centres ...,785,... --only-lines 5`, no slope; its band sat between two lines). Montage
+  of all 32 crops checked by eye. (images/f275vB_lines_debug.jpg is from the first run, before the line-5 re-cut.)
+- PREREG kp86f/PREREG_kp86f.md pushed (6e7a6db6) before any pass. kp86d/kp86d.py unchanged through kp86f/kp86f.py (copy
+  file and in-clear phrase redirected; kp86d's committed result restored byte for byte).
+- Passes: 2 blind Sonnet readers x 16 lines = 32 calls (tx86f/PASS_BRIEF86f.md, prompts by tx86f/make_prompt.sh, replies
+  verbatim in tx86f/lines/), no re-asks. reconcile_passes.py: A 649 signs, B 651, **agree 543/663 = 81.9%, err_2reader
+  0.181**; kp86d/reconcile_d.py unchanged: 543 agreed, 9/1/25 rules 1-3, 85 B's label -> tx86f/ciphertext_f275v.tsv.
+  The readers' lines are short of the page's sign count (about 35-45 labels for lines of about 45-55 signs), as on f.275r.
+- **Result (kp86f/kp86f_result.json, --err 0.181): PASS, both arms.** Arm A (key86 as published): reconciled 576 tokens,
+  703 decoded letters, nw_score **0.622** vs key-shuffle p99 0.419 (mean 0.370) and order p99 0.482 (mean 0.439); blind A
+  0.643 (p99 0.426 / 0.488), blind B 0.628 (0.425 / 0.488). Positive control at e=0.181: 5/5 seeds (0.716-0.781 vs own p99s
+  <= 0.461). Arm B (PIS1 remap): 0.631 (0.428 / 0.490), blind A 0.653, blind B 0.634; control 5/5 (0.704-0.775). B above A
+  by 0.009 / 0.010 / 0.006: reported beside A, nothing enters key86.tsv.
+- Reading: reading_f275v_M.txt / reading_f275v_tokens.tsv by `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585
+  --ciphertext tx86f/ciphertext_f275v.tsv --key key86.tsv --reading reading_f275v_M.txt --tokens reading_f275v_tokens.tsv`;
+  `--check` "reading up to date" (tool: 576 H = published-key sign read, 87 U incl. `/` and `?`). Rule-4 grades
+  (kp86f/grades_f275v.py = kp86e/t31_grades.py with only its paths changed, `--grade` -> kp86f/grades_f275v.tsv): of 585
+  sign tokens **C 355** (every decoded letter aligns identically with the period copy; licensed by the arm-A PASS), **M 219**,
+  U 11; 0 S, 0 I. 437 of 703 decoded letters identical with the copy. All 15 T31 tokens are M; they align o 5, e 4, m 3,
+  i 1, gap 2 (kp86f/t31_witness.tsv; HYPOTHESES.md). The plaintext is the period clear copy's (Colbert 16 pt II pp.122-123,
+  on Gallica) and the key is Tomokiyo's: a known-answer confirmation of the published table on f.275v, not a decipherment.
+- Judge (rule 7): `python3 tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file ciphers/fr16045-pisany-rome-1585/reading_f275v_M.txt`
+  -> `FAIL language: score=-1.183, null_p99=-1.731, real_p05=-0.905, real_median=-0.803, mode=both, N=751` /
+  `ok   words: cover=0.889, min=0.5, real_text_median_cover=0.959` / `FAIL`. As on f.275r (-1.259): between noise and prose,
+  expected for 1-for-1 letter output with 219 M tokens; the known-answer gate is the test here, not the judge.
+- Requests: Gallica 5 (c563 at 1000 px, c563 info.json, c563 native region; Colbert c480, c481 at 1400 px), all 200,
+  >= 2 s apart, no challenge; 0 other hosts. Subagent calls: 32 Sonnet (reconciliation by script, no model unit used).
+  Scratch (not committed): native source and Colbert views, re-fetch
+  https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f563/950,950,2975,3650/full/0/native.jpg and
+  https://gallica.bnf.fr/iiif/ark:/12148/btv1b100341061/f480/full/1400,/0/default.jpg.
+
+## Remaining gaps (PIS1-275V, 4 Oct 2026; merges PIS1-302's list)
+Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r and f.275v lines 1-16 (kp86f, err 0.181, C 355 / M 219); 24 Mar 1587 f.301v and f.302v (kp87b, err 0.335, C 227 / M 146): 7 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST. The 24 Mar 1587 letter's cipher (f.301v, f.302v) is fully tested; the inventory (PIS1-INV) locates the rest.
+- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
+- 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
+- 4 Nov 1586 f.275v block B lines 12-15 (4 lines, crops not cut; native source re-fetch https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f563/950,950,2975,3650/full/0/native.jpg covers to line 14 only, line 15 needs y to about 4700) vs Colbert p.123 to "seureté d'icelle" - blocker: not-attempted; brief cap of 16 lines per page; next: 8 Sonnet calls + kp86f.py unchanged on the full page, ~$3.5
+- 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
+- f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
+- 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
+- key86 T31 label and T45/T47/T49/T57 remap - blocker: not-attempted; running in PIS1-KEY (same wave); kp87b adds a fourth page where arm B beats A (HYPOTHESES.md "kp87b witness"); next: PIS1-KEY's report, ~$0
+- Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
+- 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
+- 18 June 1588 letters (fr.16046 ff.165, 179) - blocker: no-key-material; no clear copy in Colbert 16 pt II; next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1
+- Originals of the Dec 1586-Feb 1587 and Apr-Dec 1587 dispatches (copied in Colbert, absent from fr.16045/16046) - blocker: not-attempted; outside this brief; next: BnF finding aid search for other Pisany volumes (fr. or Cinq Cents de Colbert), ~$1
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud; next: LOCAL-QUEUE row by the lane, ~$0
+## Escalation (PIS1-275V, 4 Oct 2026)
+- [x] siblings: Colbert 16 pt II clear copies paired with f.244r, f.244v/f.245r, f.275r, f.275v, f.301v and f.302v
+- [x] clear-pages: every leaf of the 24 Mar 1587 letter viewed; 4 Nov 1586 f.275v mapped (two blocks, 20 lines)
+- [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.275r, f.275v, f.301v, f.302v; 1585 table NON-TEST on f.75
+- [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
+- [ ] key-rebuild: T31 relabel, T45/T47/T49/T57 remap (PIS1-KEY), T40 image compare
+- [x] image-check: f.275v cut one line per band (centres by eye), montage checked
+- [ ] retry: f.275v B 12-15; per-line pipeline on f.246-247, f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
+Verdict: keep going: 12 internal gaps; cheapest next: f.275v block B lines 12-15, ~$3.5; most valuable next: 17 Sept 1586 f.246-247 vs Colbert pp.52-55 and the f.248 decipherment, ~$45

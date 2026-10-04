@@ -59,3 +59,9 @@ aligned copy letters by the same band_dp as kp87b/cgrades87b.py). Witness only; 
   cgrades87b scores C are counted M in NOTES).
 Arm B (key86 + REMAP_B) scored 0.621 vs arm A 0.590 on the reconciled page (blind A 0.571 vs 0.553, blind B 0.630
 vs 0.598): B above A on a fourth page, by 0.017-0.032. Still not a held-out test (PIS1-KEY's job).
+
+## kp86f witness (PIS1-275V, 4 Oct 2026): f.275v lines 1-16
+Arm A PASS (0.622 vs p99 0.419 / 0.482, control 5/5 at err 0.181). T31 (table m): 15 tokens, aligned o 5, e 4, m 3, i 1,
+gap 2 (kp86f/t31_witness.tsv): still split, a fifth page where the table's m is not the majority. All T31 tokens M.
+Arm B (T31->o, T45->u, T47->f, T57->n) above A by 0.009 (reconciled), 0.010 / 0.006 (blind A / B): the same small margin as
+on the other pages; not a held-out test (that is PIS1-KEY's). key86.tsv unchanged.
