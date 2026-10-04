@@ -44,10 +44,10 @@ Power check: control p99 must be below null p01, else the test is a NON-TEST at 
 - A 3001-3100 strip-only S is reported, not gated.
 No threshold is changed after the cells are read.
 
-## Addendum A (12:5x UTC, after the layout look and while the blind passes run, before any pass result is seen)
+## Addendum A (12:4x UTC by date -u, after the layout look and while the blind passes run, before any pass result is seen)
 - Layout check: the full-size pages confirm N7-HELDK's attribution (P2 printed 1-600, P3 601-1000 plus the 3001-3100 strip; heads 2000 and
   310..390). No change to the cell-to-code rule. Geometry in `crop_cells.py` docstring; one 3-row band per cell, red tick on the row.
 - Many cells carry the word "zero" (a null code). Readers were asked for an extra sub-state `Z`; **Z counts as filled (F) in S**, exactly as
   registered. The share of target tokens on Z cells vs null cells is reported, not gated.
 - Reconciliation (`reconcile.py`): agreed states stand; where the passes differ or either says `?`, I settle from the crop and the reading
-  is flagged `r`. err_2reader = cells differing on blank vs non-blank (F=Z=X? no: F=Z non-blank, X separate) / cells read by both.
+  is flagged `r`. err_2reader = cells whose class differs (classes: F and Z together, B, X) / cells read by both without `?`.
