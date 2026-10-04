@@ -1115,3 +1115,44 @@ Read so far: token level H 64, S 71, M 357, I 7, U 6 of 505 (firm 135), tools/de
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
 - [x] retry: tools/decode_key.py --check exit 0 after RUN2-PAG: H 64 S 71 M 357 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 65 ("ab" over "Labbe") and the 116 g/ge neighbour conflict, ~$1
+
+## N4-PAG65 (4 Oct 2026): codes 65 and 116 settled per token
+
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave1.md` section N4-PAG65 (LANE-NEAR4, account 2). Disk only: no network request,
+no vision call, no subagent. Method: RUN2-PAG's `align/settle7.py`, extended in place (CODES/GIBBS gain 65 and 116, three DEMOTE
+entries added, RUN2-PAG's P53 demotion of 176 lifted); same S/M rule. Neither code is in gibbs_codes.tsv (not held in both letters),
+so the value used is the per-letter seed-0 Gibbs run's own chunk, the run that passed PREREG_seg2.md held-out: 65 = b (1/1, letter 1),
+116 = ge (4/4, all letter 2, share 1.00 each).
+- **65** (f61L 147, "Labbe"): 145 la (S) + 65 + 67 be (H); hard-EM's "ab" reads "laabbe", b reads "Labbe" -- the same slip as 31.
+  Key 65: ab -> b (M, single attestation); the token is S through exceptions.tsv.
+- **116**: key.tsv had g at grade C from interlinear_align 2/4. Its two g readings needed 176 = en in "genie" and 34 = ee in "agee";
+  176 = ni since RUN2-PAG (4 S tokens elsewhere). With 87 de (H) left and 176 ni right, "de genie" needs 116 = ge (f66R 284, S),
+  and RUN2-PAG's demotion of 176 at f66R 285 (made for this conflict only) is lifted (S). The other three are M: "Visage" (f66L 90,
+  245/220/214 all M around it), "agee" (f66L 368, 30 and 34 M), "Mariage" (f66R 101, pair end, but 30 a M and 213 ma (C) reads
+  against the gloss -- Gibbs gives 213 = ri there). Key 116: g (C) -> ge (M, unsettled per token).
+- **Decode** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: `ciphertext.tsv: tokens 505: H 62, I 7, M 356,
+  S 74, U 6` / `reading up to date`, exit 0. Per token (rule 4): **H 64 -> 62, C 0, S 71 -> 74, M 357 -> 356, I 7, U 6** of 505; firm 136.
+  Six tokens changed: f61L 147 ab -> b (M -> S); f66L 90 g -> ge (M); f66L 368 g -> ge (H -> M: its H rested on the vote "g", which
+  needs 34 = ee); f66R 101 g -> ge (M); f66R 284 g -> ge (H -> S); f66R 285 ni (M -> S). `align/settle7.py --check`: up to date,
+  43 S rulings in exceptions.tsv. tools/tests/test_decode_key.py: the same 3 failures as before (antt-linhares-chave,
+  rah-canada-1869), none in this folder.
+- The RUN2 state audited by A3V-VPAG and re-derived by A3V-RD117P has changed in these six tokens: a rule-7 re-derivation of the new
+  state is owed (not done here).
+- Found in passing, not settled (Usage 7): 213 = ma at grade C reads against "Mariage" (155 ma H sits before it; Gibbs gives 213 = ri).
+- Requests: none. Subagents: none.
+
+## Remaining gaps (N4-PAG65, 4 Oct 2026)
+Read so far: token level H 62, S 74, M 356, I 7, U 6 of 505 (firm 136), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 356 M tokens (mostly single-attestation codes; the 7 Gibbs/hard-EM disagreements plus 65 and 116 are settled per token, 43 S and 17 M, align/settle7_rulings.tsv) - blocker: open-codes; two instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS) and the per-token pass done; a code seen once cannot be held in both letters by either; next: the same per-token reading for 213 (ma, C, against "Mariage"), ~$1
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (N4-PAG65, 4 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS 0.521/0.681 vs p95 0.066/0.067; per-token rulings RUN2-PAG + N4-PAG65 on 9 codes: 43 S, 17 M; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: tools/decode_key.py --check exit 0 after N4-PAG65: H 62 S 74 M 356 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 213 (ma, C, against "Mariage"), ~$1

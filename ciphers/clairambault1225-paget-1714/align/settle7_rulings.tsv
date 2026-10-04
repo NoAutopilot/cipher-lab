@@ -47,9 +47,14 @@ code	value	pair	line	position	gibbs_chunk	hardEM_chunk	gloss	ruling	why
 176	ni	P02	f60R	45	ni	ni	Venise	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 176	ni	P38	f66R	12	ni	ue	quoyque ce Dernier Duc n'ait que 36	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 176	ni	P45	f66R	146	ni	iq	unique	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
-176	ni	P53	f66R	285	ni	en	a toujours este de genie Allemand	M	gloss "genie": ni needs 116 = ge, but key.tsv has 116 = g (grade C); neighbour conflict, not settled here
+176	ni	P53	f66R	285	ni	en	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 204	que	P04	f60R	78	que	ue	Labarque	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 204	que	P19	f65R	72	quon	on	de cette Princesse qu'on	M	own Gibbs chunk 'quon' is not the code value
 204	que	P38	f66R	22	que	que	quoyque ce Dernier Duc n'ait que 36	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 204	que	P40	f66R	62	que	qui	frere du Duc de Parme qui n'a que 35 ans Mais	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 204	que	P45	f66R	147	que	ue	unique	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+65	b	P12	f61L	147	b	ab	Labbe	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+116	ge	P23	f66L	90	ge	blo	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	M	gloss "Visage": 245 fa (M, single), 220 sa (M), 214 nde (M) on both sides; "ge" vs "g" + an e on 214 not pinned
+116	ge	P37	f66L	368	ge	g	agee de 44 ans	M	gloss "agee": 30 a (M) and 34 de (M) on both sides, 87 de (H) one further; "ge"+"e" vs "g"+"ee" not pinned
+116	ge	P42	f66R	101	ge	age	pour le Mariage	M	gloss "Mariage" ends the pair, but 30 a (M) on the left and 213 ma (C) reads against the gloss ("ri" by Gibbs); the e is not pinned to 116
+116	ge	P53	f66R	284	ge	g	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours

@@ -7,6 +7,10 @@ Disk only, deterministic. Writes settle7.tsv and settle7_rulings.tsv (S where th
 the gloss word admits it with firm neighbours, else M; DEMOTE lists the eye-read context demotions). --check exits 1 if either
 is stale or an S ruling is missing from ../exceptions.tsv.
     python3 settle7.py [--check]
+N4-PAG65 (4 Oct 2026) extends the same table and rule to code 65 (hard-EM 'ab' over "Labbe", single attestation) and code 116
+(key.tsv 'g', grade C, against 'ge' in "genie"/"Visage"/"agee"/"Mariage"). Neither is in gibbs_codes.tsv (not held in both
+letters): their value is the per-letter seed-0 Gibbs run's own chunk (the same run that passed PREREG_seg2.md held-out),
+65 = b (1/1, L1), 116 = ge (4/4, all L2). Same S/M rule; DEMOTE lists the three 116 tokens whose neighbours do not pin it.
 """
 import collections, csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -14,15 +18,21 @@ sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'tools'))
 import gibbs_align as ga
 import interlinear_align as ia
 
-CODES = ['31', '45', '48', '97', '148', '176', '204']
-GIBBS = {'31': 'b', '45': 'r', '48': 'u', '97': 'en', '148': 'lo', '176': 'ni', '204': 'que'}  # gibbs_codes.tsv
+CODES = ['31', '45', '48', '97', '148', '176', '204', '65', '116']
+GIBBS = {'31': 'b', '45': 'r', '48': 'u', '97': 'en', '148': 'lo', '176': 'ni', '204': 'que',  # gibbs_codes.tsv
+         '65': 'b', '116': 'ge'}  # N4-PAG65: per-letter Gibbs run's own chunk, not held in both letters
 # Context demotions read by eye from both segmentations (RUN2-PAG): the token's own Gibbs chunk equals the code value but the
 # gloss word with its firm (H/C/S) neighbours does not pin it there.
 DEMOTE = {
     ('P17', 4): 'gloss "en secret": 221 se, 32 c, 212 re, 47 t (all S) pin "secret"; en lies on 222/191/46/221/97 and Gibbs '
                 'makes four of them null to put it on 97 -- not pinned',
     ('P33', 1): 'gloss "en 2e Nopces": en could sit on 220 (unsettled, key sa) with 97 null, or on 97 -- not pinned',
-    ('P53', 13): 'gloss "genie": ni needs 116 = ge, but key.tsv has 116 = g (grade C); neighbour conflict, not settled here',
+    # ('P53', 13), 176 in "genie", was demoted here by RUN2-PAG for the 116 = g conflict; N4-PAG65 settles 116 = ge at P53 12
+    # (87 de H on the left, 176 ni on the right), so the demotion is lifted.
+    ('P23', 24): 'gloss "Visage": 245 fa (M, single), 220 sa (M), 214 nde (M) on both sides; "ge" vs "g" + an e on 214 not pinned',
+    ('P37', 1): 'gloss "agee": 30 a (M) and 34 de (M) on both sides, 87 de (H) one further; "ge"+"e" vs "g"+"ee" not pinned',
+    ('P42', 5): 'gloss "Mariage" ends the pair, but 30 a (M) on the left and 213 ma (C) reads against the gloss ("ri" by Gibbs); '
+                'the e is not pinned to 116',
 }
 L1 = {'f60R', 'f61L', 'f61R', 'f65L'}
 
