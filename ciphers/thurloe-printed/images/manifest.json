@@ -1,2743 +1,2771 @@
 {
- "fetched": "24 September 2026",
- "fetch_method": "curl, browser User-Agent, archive.org IIIF Image API (info.json for native size, then /full/1600,/0/default.jpg for reading pages and regionByPx crops at native resolution for close digit checks); leaf index found from each item's own page_numbers.json (archive.org/metadata/<id> -> files/<id>_page_numbers.json, {leafNum, pageNumber} pairs), not the OCR running-head estimate thurloe-check.tsv used",
- "requests": "collectionofstat03thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 13; collectionofstat05thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 6; all archive.org/iiif.archive.org, >=1.5s apart, one at a time",
- "rights": "public domain (1742 printed edition; Internet Archive scan), no restriction",
- "images": [
-  {
-   "file": "collectionofstat03thur_leaf0198_p188.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 198,
-   "printed_page": "188",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2365,
-    4074
-   ],
-   "bytes": 1060163,
-   "shows": "P4 (Stamford): body of the letter including 'block A' (djvu OCR 15529-15551), the OCR-column-disordered numeral passage. Full page at 1600px width."
-  },
-  {
-   "file": "collectionofstat03thur_leaf0198_p188_crop_blockA.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 198,
-   "printed_page": "188",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/0,2500,2365,900/full/0/default.jpg",
-   "region_px": [
-    0,
-    2500,
-    2365,
-    900
-   ],
-   "bytes": 461226,
-   "shows": "Native-resolution crop of P4 block A (printed lines 44-61), used to confirm every digit; see NOTES.md s.18."
-  },
-  {
-   "file": "collectionofstat03thur_leaf0625_p611.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 625,
-   "printed_page": "611",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$625/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2365,
-    4074
-   ],
-   "bytes": 830178,
-   "shows": "P9 (Blake to the protector, 4 July 1655): letter opens at bottom of this page, interlinear cipher begins (image_line 45-50)."
-  },
-  {
-   "file": "collectionofstat03thur_leaf0626_p612.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 626,
-   "printed_page": "612",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$626/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2365,
-    4074
-   ],
-   "bytes": 881199,
-   "shows": "P9 continued: the rest of the interlinear cipher (image_line 1-6) and the clear-prose resumption (image_line 7). This is the page the djvu OCR fragmented into single-letter mini-lines."
-  },
-  {
-   "file": "collectionofstat03thur_leaf0634_p620.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 634,
-   "printed_page": "620",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2365,
-    4074
-   ],
-   "bytes": 964539,
-   "shows": "P10 (Blake to the protector, 6 July 1655), whole letter and its interlinear cipher (image_line 4-15) on one page."
-  },
-  {
-   "file": "collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg",
-   "identifier": "collectionofstat03thur",
-   "leaf": 634,
-   "printed_page": "620",
-   "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/0,850,2365,350/full/0/default.jpg",
-   "region_px": [
-    0,
-    850,
-    2365,
-    350
-   ],
-   "bytes": 147793,
-   "shows": "Native-resolution crop of P10 image_line 7-12, used to confirm the ambiguous '96' token (misread as 'o6' at 1600px) and the short 'e t u r e t h e' gloss."
-  },
-  {
-   "file": "collectionofstat05thur_leaf0109_p101.jpg",
-   "identifier": "collectionofstat05thur",
-   "leaf": 109,
-   "printed_page": "101",
-   "url": "https://iiif.archive.org/iiif/collectionofstat05thur$109/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2374,
-    4047
-   ],
-   "bytes": 903474,
-   "shows": "P14 (Protector to Blake and Mountagu, 9 June 1656): the Lockhart letter (not transcribed, out of scope, flagged in NOTES.md s.18) and the start of the Blake/Mountagu letter with its interlinear cipher (image_line 44-65)."
-  },
-  {
-   "file": "collectionofstat05thur_leaf0110_p102.jpg",
-   "identifier": "collectionofstat05thur",
-   "leaf": 110,
-   "printed_page": "102",
-   "url": "https://iiif.archive.org/iiif/collectionofstat05thur$110/full/1600,/0/default.jpg",
-   "native_size_px": [
-    2374,
-    4047
-   ],
-   "bytes": 983155,
-   "shows": "P14 continued: the rest of the interlinear cipher (image_line 1-21), its end at image_line 22, and the council-attendance signature block (no cipher)."
-  }
- ],
- "iiif_lines": [
-  {
-   "crop": "p275_L01.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    333,
-    2365,
-    413
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L02.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    413,
-    2365,
-    492
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L03.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    492,
-    2365,
-    544
-   ],
-   "lines_in_crop": 1,
-   "band": 3,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L04.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    544,
-    2365,
-    596
-   ],
-   "lines_in_crop": 1,
-   "band": 4,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L05.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    596,
-    2365,
-    648
-   ],
-   "lines_in_crop": 1,
-   "band": 5,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L06.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    648,
-    2365,
-    700
-   ],
-   "lines_in_crop": 1,
-   "band": 6,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L07.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    700,
-    2365,
-    753
-   ],
-   "lines_in_crop": 1,
-   "band": 7,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L08.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    753,
-    2365,
-    805
-   ],
-   "lines_in_crop": 1,
-   "band": 8,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L09.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    805,
-    2365,
-    858
-   ],
-   "lines_in_crop": 1,
-   "band": 9,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L10.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    858,
-    2365,
-    910
-   ],
-   "lines_in_crop": 1,
-   "band": 10,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L11.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    910,
-    2365,
-    962
-   ],
-   "lines_in_crop": 1,
-   "band": 11,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L12.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    962,
-    2365,
-    1015
-   ],
-   "lines_in_crop": 1,
-   "band": 12,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L13.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1015,
-    2365,
-    1067
-   ],
-   "lines_in_crop": 1,
-   "band": 13,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L14.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1067,
-    2365,
-    1119
-   ],
-   "lines_in_crop": 1,
-   "band": 14,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L15.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1119,
-    2365,
-    1172
-   ],
-   "lines_in_crop": 1,
-   "band": 15,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L16.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1172,
-    2365,
-    1224
-   ],
-   "lines_in_crop": 1,
-   "band": 16,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L17.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1224,
-    2365,
-    1277
-   ],
-   "lines_in_crop": 1,
-   "band": 17,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L18.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1277,
-    2365,
-    1329
-   ],
-   "lines_in_crop": 1,
-   "band": 18,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L19.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1329,
-    2365,
-    1381
-   ],
-   "lines_in_crop": 1,
-   "band": 19,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L20.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1381,
-    2365,
-    1434
-   ],
-   "lines_in_crop": 1,
-   "band": 20,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L21.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1434,
-    2365,
-    1486
-   ],
-   "lines_in_crop": 1,
-   "band": 21,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L22.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1486,
-    2365,
-    1539
-   ],
-   "lines_in_crop": 1,
-   "band": 22,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L23.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1539,
-    2365,
-    1592
-   ],
-   "lines_in_crop": 1,
-   "band": 23,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L24.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1592,
-    2365,
-    1644
-   ],
-   "lines_in_crop": 1,
-   "band": 24,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L25.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1644,
-    2365,
-    1697
-   ],
-   "lines_in_crop": 1,
-   "band": 25,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L26.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1697,
-    2365,
-    1749
-   ],
-   "lines_in_crop": 1,
-   "band": 26,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L27.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1749,
-    2365,
-    1828
-   ],
-   "lines_in_crop": 1,
-   "band": 27,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L28.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1828,
-    2365,
-    1908
-   ],
-   "lines_in_crop": 1,
-   "band": 28,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L29.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    1908,
-    2365,
-    2007
-   ],
-   "lines_in_crop": 1,
-   "band": 29,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L30.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2007,
-    2365,
-    2113
-   ],
-   "lines_in_crop": 1,
-   "band": 30,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L31.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2113,
-    2365,
-    2200
-   ],
-   "lines_in_crop": 1,
-   "band": 31,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L32.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2200,
-    2365,
-    2279
-   ],
-   "lines_in_crop": 1,
-   "band": 32,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L33.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2279,
-    2365,
-    2330
-   ],
-   "lines_in_crop": 1,
-   "band": 33,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L34.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2330,
-    2365,
-    2434
-   ],
-   "lines_in_crop": 1,
-   "band": 34,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L35.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2434,
-    2365,
-    2576
-   ],
-   "lines_in_crop": 1,
-   "band": 35,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L36.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2576,
-    2365,
-    2676
-   ],
-   "lines_in_crop": 1,
-   "band": 36,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L37.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2676,
-    2365,
-    2731
-   ],
-   "lines_in_crop": 1,
-   "band": 37,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L38.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2731,
-    2365,
-    2784
-   ],
-   "lines_in_crop": 1,
-   "band": 38,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L39.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2784,
-    2365,
-    2844
-   ],
-   "lines_in_crop": 1,
-   "band": 39,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L40.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2844,
-    2365,
-    2896
-   ],
-   "lines_in_crop": 1,
-   "band": 40,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L41.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2896,
-    2365,
-    2949
-   ],
-   "lines_in_crop": 1,
-   "band": 41,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L42.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    2949,
-    2365,
-    3002
-   ],
-   "lines_in_crop": 1,
-   "band": 42,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L43.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3002,
-    2365,
-    3054
-   ],
-   "lines_in_crop": 1,
-   "band": 43,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L44.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3054,
-    2365,
-    3107
-   ],
-   "lines_in_crop": 1,
-   "band": 44,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L45.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3107,
-    2365,
-    3160
-   ],
-   "lines_in_crop": 1,
-   "band": 45,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L46.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3160,
-    2365,
-    3212
-   ],
-   "lines_in_crop": 1,
-   "band": 46,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L47.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3212,
-    2365,
-    3265
-   ],
-   "lines_in_crop": 1,
-   "band": 47,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L48.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3265,
-    2365,
-    3317
-   ],
-   "lines_in_crop": 1,
-   "band": 48,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L49.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3317,
-    2365,
-    3370
-   ],
-   "lines_in_crop": 1,
-   "band": 49,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L50.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3370,
-    2365,
-    3423
-   ],
-   "lines_in_crop": 1,
-   "band": 50,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L51.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3423,
-    2365,
-    3475
-   ],
-   "lines_in_crop": 1,
-   "band": 51,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L52.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3475,
-    2365,
-    3528
-   ],
-   "lines_in_crop": 1,
-   "band": 52,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L53.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3528,
-    2365,
-    3597
-   ],
-   "lines_in_crop": 1,
-   "band": 53,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L54.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3597,
-    2365,
-    3675
-   ],
-   "lines_in_crop": 1,
-   "band": 54,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L55.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3675,
-    2365,
-    3736
-   ],
-   "lines_in_crop": 1,
-   "band": 55,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L56.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3736,
-    2365,
-    3788
-   ],
-   "lines_in_crop": 1,
-   "band": 56,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L57.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3788,
-    2365,
-    3841
-   ],
-   "lines_in_crop": 1,
-   "band": 57,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p275_L58.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
-   "box": [
-    0,
-    3841,
-    2365,
-    3893
-   ],
-   "lines_in_crop": 1,
-   "band": 58,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 174.9
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L01.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    200,
-    2365,
-    246
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L02.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    246,
-    2365,
-    318
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L03.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    318,
-    2365,
-    396
-   ],
-   "lines_in_crop": 1,
-   "band": 3,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L04.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    396,
-    2365,
-    448
-   ],
-   "lines_in_crop": 1,
-   "band": 4,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L05.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    448,
-    2365,
-    500
-   ],
-   "lines_in_crop": 1,
-   "band": 5,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L06.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    500,
-    2365,
-    552
-   ],
-   "lines_in_crop": 1,
-   "band": 6,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L07.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    552,
-    2365,
-    605
-   ],
-   "lines_in_crop": 1,
-   "band": 7,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L08.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    605,
-    2365,
-    658
-   ],
-   "lines_in_crop": 1,
-   "band": 8,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L09.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    658,
-    2365,
-    710
-   ],
-   "lines_in_crop": 1,
-   "band": 9,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L10.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    710,
-    2365,
-    762
-   ],
-   "lines_in_crop": 1,
-   "band": 10,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L11.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    762,
-    2365,
-    814
-   ],
-   "lines_in_crop": 1,
-   "band": 11,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L12.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    814,
-    2365,
-    867
-   ],
-   "lines_in_crop": 1,
-   "band": 12,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L13.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    867,
-    2365,
-    919
-   ],
-   "lines_in_crop": 1,
-   "band": 13,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L14.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    919,
-    2365,
-    971
-   ],
-   "lines_in_crop": 1,
-   "band": 14,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L15.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    971,
-    2365,
-    1024
-   ],
-   "lines_in_crop": 1,
-   "band": 15,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L16.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1024,
-    2365,
-    1076
-   ],
-   "lines_in_crop": 1,
-   "band": 16,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L17.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1076,
-    2365,
-    1128
-   ],
-   "lines_in_crop": 1,
-   "band": 17,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L18.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1128,
-    2365,
-    1181
-   ],
-   "lines_in_crop": 1,
-   "band": 18,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L19.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1181,
-    2365,
-    1233
-   ],
-   "lines_in_crop": 1,
-   "band": 19,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L20.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1233,
-    2365,
-    1286
-   ],
-   "lines_in_crop": 1,
-   "band": 20,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L21.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1286,
-    2365,
-    1338
-   ],
-   "lines_in_crop": 1,
-   "band": 21,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L22.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1338,
-    2365,
-    1390
-   ],
-   "lines_in_crop": 1,
-   "band": 22,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L23.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1390,
-    2365,
-    1442
-   ],
-   "lines_in_crop": 1,
-   "band": 23,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L24.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1442,
-    2365,
-    1495
-   ],
-   "lines_in_crop": 1,
-   "band": 24,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L25.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1495,
-    2365,
-    1547
-   ],
-   "lines_in_crop": 1,
-   "band": 25,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L26.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1547,
-    2365,
-    1599
-   ],
-   "lines_in_crop": 1,
-   "band": 26,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L27.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1599,
-    2365,
-    1651
-   ],
-   "lines_in_crop": 1,
-   "band": 27,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L28.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1651,
-    2365,
-    1704
-   ],
-   "lines_in_crop": 1,
-   "band": 28,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L29.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1704,
-    2365,
-    1756
-   ],
-   "lines_in_crop": 1,
-   "band": 29,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L30.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1756,
-    2365,
-    1808
-   ],
-   "lines_in_crop": 1,
-   "band": 30,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L31.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1808,
-    2365,
-    1860
-   ],
-   "lines_in_crop": 1,
-   "band": 31,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L32.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1860,
-    2365,
-    1912
-   ],
-   "lines_in_crop": 1,
-   "band": 32,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L33.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1912,
-    2365,
-    1965
-   ],
-   "lines_in_crop": 1,
-   "band": 33,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L34.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    1965,
-    2365,
-    2017
-   ],
-   "lines_in_crop": 1,
-   "band": 34,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L35.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2017,
-    2365,
-    2069
-   ],
-   "lines_in_crop": 1,
-   "band": 35,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L36.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2069,
-    2365,
-    2122
-   ],
-   "lines_in_crop": 1,
-   "band": 36,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L37.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2122,
-    2365,
-    2174
-   ],
-   "lines_in_crop": 1,
-   "band": 37,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L38.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2174,
-    2365,
-    2226
-   ],
-   "lines_in_crop": 1,
-   "band": 38,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L39.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2226,
-    2365,
-    2279
-   ],
-   "lines_in_crop": 1,
-   "band": 39,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L40.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2279,
-    2365,
-    2331
-   ],
-   "lines_in_crop": 1,
-   "band": 40,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L41.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2331,
-    2365,
-    2383
-   ],
-   "lines_in_crop": 1,
-   "band": 41,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L42.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2383,
-    2365,
-    2436
-   ],
-   "lines_in_crop": 1,
-   "band": 42,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L43.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2436,
-    2365,
-    2488
-   ],
-   "lines_in_crop": 1,
-   "band": 43,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L44.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2488,
-    2365,
-    2540
-   ],
-   "lines_in_crop": 1,
-   "band": 44,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L45.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2540,
-    2365,
-    2592
-   ],
-   "lines_in_crop": 1,
-   "band": 45,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L46.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2592,
-    2365,
-    2645
-   ],
-   "lines_in_crop": 1,
-   "band": 46,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L47.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2645,
-    2365,
-    2697
-   ],
-   "lines_in_crop": 1,
-   "band": 47,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L48.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2697,
-    2365,
-    2748
-   ],
-   "lines_in_crop": 1,
-   "band": 48,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L49.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2748,
-    2365,
-    2792
-   ],
-   "lines_in_crop": 1,
-   "band": 49,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L50.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2792,
-    2365,
-    2837
-   ],
-   "lines_in_crop": 1,
-   "band": 50,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L51.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2837,
-    2365,
-    2899
-   ],
-   "lines_in_crop": 1,
-   "band": 51,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L52.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2899,
-    2365,
-    2959
-   ],
-   "lines_in_crop": 1,
-   "band": 52,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L53.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    2959,
-    2365,
-    3012
-   ],
-   "lines_in_crop": 1,
-   "band": 53,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L54.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3012,
-    2365,
-    3066
-   ],
-   "lines_in_crop": 1,
-   "band": 54,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L55.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3066,
-    2365,
-    3115
-   ],
-   "lines_in_crop": 1,
-   "band": 55,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L56.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3115,
-    2365,
-    3166
-   ],
-   "lines_in_crop": 1,
-   "band": 56,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L57.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3166,
-    2365,
-    3212
-   ],
-   "lines_in_crop": 1,
-   "band": 57,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L58.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3212,
-    2365,
-    3262
-   ],
-   "lines_in_crop": 1,
-   "band": 58,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L59.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3262,
-    2365,
-    3323
-   ],
-   "lines_in_crop": 1,
-   "band": 59,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L60.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3323,
-    2365,
-    3379
-   ],
-   "lines_in_crop": 1,
-   "band": 60,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L61.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3379,
-    2365,
-    3430
-   ],
-   "lines_in_crop": 1,
-   "band": 61,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L62.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3430,
-    2365,
-    3480
-   ],
-   "lines_in_crop": 1,
-   "band": 62,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L63.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3480,
-    2365,
-    3525
-   ],
-   "lines_in_crop": 1,
-   "band": 63,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L64.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3525,
-    2365,
-    3578
-   ],
-   "lines_in_crop": 1,
-   "band": 64,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L65.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3578,
-    2365,
-    3637
-   ],
-   "lines_in_crop": 1,
-   "band": 65,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L66.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3637,
-    2365,
-    3690
-   ],
-   "lines_in_crop": 1,
-   "band": 66,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  },
-  {
-   "crop": "p278_L67.jpg",
-   "source_url": "",
-   "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
-   "box": [
-    0,
-    3690,
-    2365,
-    3743
-   ],
-   "lines_in_crop": 1,
-   "band": 67,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 52,
-    "distance": 36,
-    "prominence": 150.6
-   },
-   "date": "04 Oct 2026"
-  }
- ]
+  "fetched": "24 September 2026",
+  "fetch_method": "curl, browser User-Agent, archive.org IIIF Image API (info.json for native size, then /full/1600,/0/default.jpg for reading pages and regionByPx crops at native resolution for close digit checks); leaf index found from each item's own page_numbers.json (archive.org/metadata/<id> -> files/<id>_page_numbers.json, {leafNum, pageNumber} pairs), not the OCR running-head estimate thurloe-check.tsv used",
+  "requests": "collectionofstat03thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 13; collectionofstat05thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 6; all archive.org/iiif.archive.org, >=1.5s apart, one at a time",
+  "rights": "public domain (1742 printed edition; Internet Archive scan), no restriction",
+  "images": [
+    {
+      "file": "collectionofstat03thur_leaf0198_p188.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 198,
+      "printed_page": "188",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 1060163,
+      "shows": "P4 (Stamford): body of the letter including 'block A' (djvu OCR 15529-15551), the OCR-column-disordered numeral passage. Full page at 1600px width."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0198_p188_crop_blockA.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 198,
+      "printed_page": "188",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/0,2500,2365,900/full/0/default.jpg",
+      "region_px": [
+        0,
+        2500,
+        2365,
+        900
+      ],
+      "bytes": 461226,
+      "shows": "Native-resolution crop of P4 block A (printed lines 44-61), used to confirm every digit; see NOTES.md s.18."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0625_p611.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 625,
+      "printed_page": "611",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$625/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 830178,
+      "shows": "P9 (Blake to the protector, 4 July 1655): letter opens at bottom of this page, interlinear cipher begins (image_line 45-50)."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0626_p612.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 626,
+      "printed_page": "612",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$626/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 881199,
+      "shows": "P9 continued: the rest of the interlinear cipher (image_line 1-6) and the clear-prose resumption (image_line 7). This is the page the djvu OCR fragmented into single-letter mini-lines."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0634_p620.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 634,
+      "printed_page": "620",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 964539,
+      "shows": "P10 (Blake to the protector, 6 July 1655), whole letter and its interlinear cipher (image_line 4-15) on one page."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 634,
+      "printed_page": "620",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/0,850,2365,350/full/0/default.jpg",
+      "region_px": [
+        0,
+        850,
+        2365,
+        350
+      ],
+      "bytes": 147793,
+      "shows": "Native-resolution crop of P10 image_line 7-12, used to confirm the ambiguous '96' token (misread as 'o6' at 1600px) and the short 'e t u r e t h e' gloss."
+    },
+    {
+      "file": "collectionofstat05thur_leaf0109_p101.jpg",
+      "identifier": "collectionofstat05thur",
+      "leaf": 109,
+      "printed_page": "101",
+      "url": "https://iiif.archive.org/iiif/collectionofstat05thur$109/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2374,
+        4047
+      ],
+      "bytes": 903474,
+      "shows": "P14 (Protector to Blake and Mountagu, 9 June 1656): the Lockhart letter (not transcribed, out of scope, flagged in NOTES.md s.18) and the start of the Blake/Mountagu letter with its interlinear cipher (image_line 44-65)."
+    },
+    {
+      "file": "collectionofstat05thur_leaf0110_p102.jpg",
+      "identifier": "collectionofstat05thur",
+      "leaf": 110,
+      "printed_page": "102",
+      "url": "https://iiif.archive.org/iiif/collectionofstat05thur$110/full/1600,/0/default.jpg",
+      "native_size_px": [
+        2374,
+        4047
+      ],
+      "bytes": 983155,
+      "shows": "P14 continued: the rest of the interlinear cipher (image_line 1-21), its end at image_line 22, and the council-attendance signature block (no cipher)."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 285,
+      "printed_page": "275",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$285/full/max/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 1889316,
+      "fetched": "4 Oct 2026 (A3V2-THURBT; leaf 288 answered 504 once, fetched on the single retry)",
+      "shows": "P5+P6 (Stamford) cipher page p.275; line crops p275_Lnn.jpg (tools/iiif_lines.py --image) under iiif_lines; transcription pool_1654/boundary/tx/p275.tsv"
+    },
+    {
+      "file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 288,
+      "printed_page": "278",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$288/full/max/0/default.jpg",
+      "native_size_px": [
+        2365,
+        4074
+      ],
+      "bytes": 1929114,
+      "fetched": "4 Oct 2026 (A3V2-THURBT; leaf 288 answered 504 once, fetched on the single retry)",
+      "shows": "P7 (Stamford) cipher page p.278; line crops p278_Lnn.jpg (tools/iiif_lines.py --image) under iiif_lines; transcription pool_1654/boundary/tx/p278.tsv"
+    }
+  ],
+  "iiif_lines": [
+    {
+      "crop": "p275_L01.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        333,
+        2365,
+        413
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L02.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        413,
+        2365,
+        492
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L03.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        492,
+        2365,
+        544
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L04.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        544,
+        2365,
+        596
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L05.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        596,
+        2365,
+        648
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L06.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        648,
+        2365,
+        700
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L07.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        700,
+        2365,
+        753
+      ],
+      "lines_in_crop": 1,
+      "band": 7,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L08.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        753,
+        2365,
+        805
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L09.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        805,
+        2365,
+        858
+      ],
+      "lines_in_crop": 1,
+      "band": 9,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L10.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        858,
+        2365,
+        910
+      ],
+      "lines_in_crop": 1,
+      "band": 10,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L11.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        910,
+        2365,
+        962
+      ],
+      "lines_in_crop": 1,
+      "band": 11,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L12.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        962,
+        2365,
+        1015
+      ],
+      "lines_in_crop": 1,
+      "band": 12,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L13.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1015,
+        2365,
+        1067
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L14.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1067,
+        2365,
+        1119
+      ],
+      "lines_in_crop": 1,
+      "band": 14,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L15.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1119,
+        2365,
+        1172
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L16.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1172,
+        2365,
+        1224
+      ],
+      "lines_in_crop": 1,
+      "band": 16,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L17.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1224,
+        2365,
+        1277
+      ],
+      "lines_in_crop": 1,
+      "band": 17,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L18.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1277,
+        2365,
+        1329
+      ],
+      "lines_in_crop": 1,
+      "band": 18,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L19.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1329,
+        2365,
+        1381
+      ],
+      "lines_in_crop": 1,
+      "band": 19,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L20.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1381,
+        2365,
+        1434
+      ],
+      "lines_in_crop": 1,
+      "band": 20,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L21.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1434,
+        2365,
+        1486
+      ],
+      "lines_in_crop": 1,
+      "band": 21,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L22.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1486,
+        2365,
+        1539
+      ],
+      "lines_in_crop": 1,
+      "band": 22,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L23.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1539,
+        2365,
+        1592
+      ],
+      "lines_in_crop": 1,
+      "band": 23,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L24.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1592,
+        2365,
+        1644
+      ],
+      "lines_in_crop": 1,
+      "band": 24,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L25.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1644,
+        2365,
+        1697
+      ],
+      "lines_in_crop": 1,
+      "band": 25,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L26.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1697,
+        2365,
+        1749
+      ],
+      "lines_in_crop": 1,
+      "band": 26,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L27.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1749,
+        2365,
+        1828
+      ],
+      "lines_in_crop": 1,
+      "band": 27,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L28.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1828,
+        2365,
+        1908
+      ],
+      "lines_in_crop": 1,
+      "band": 28,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L29.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        1908,
+        2365,
+        2007
+      ],
+      "lines_in_crop": 1,
+      "band": 29,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L30.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2007,
+        2365,
+        2113
+      ],
+      "lines_in_crop": 1,
+      "band": 30,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L31.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2113,
+        2365,
+        2200
+      ],
+      "lines_in_crop": 1,
+      "band": 31,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L32.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2200,
+        2365,
+        2279
+      ],
+      "lines_in_crop": 1,
+      "band": 32,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L33.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2279,
+        2365,
+        2330
+      ],
+      "lines_in_crop": 1,
+      "band": 33,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L34.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2330,
+        2365,
+        2434
+      ],
+      "lines_in_crop": 1,
+      "band": 34,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L35.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2434,
+        2365,
+        2576
+      ],
+      "lines_in_crop": 1,
+      "band": 35,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L36.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2576,
+        2365,
+        2676
+      ],
+      "lines_in_crop": 1,
+      "band": 36,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L37.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2676,
+        2365,
+        2731
+      ],
+      "lines_in_crop": 1,
+      "band": 37,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L38.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2731,
+        2365,
+        2784
+      ],
+      "lines_in_crop": 1,
+      "band": 38,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L39.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2784,
+        2365,
+        2844
+      ],
+      "lines_in_crop": 1,
+      "band": 39,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L40.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2844,
+        2365,
+        2896
+      ],
+      "lines_in_crop": 1,
+      "band": 40,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L41.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2896,
+        2365,
+        2949
+      ],
+      "lines_in_crop": 1,
+      "band": 41,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L42.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        2949,
+        2365,
+        3002
+      ],
+      "lines_in_crop": 1,
+      "band": 42,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L43.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3002,
+        2365,
+        3054
+      ],
+      "lines_in_crop": 1,
+      "band": 43,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L44.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3054,
+        2365,
+        3107
+      ],
+      "lines_in_crop": 1,
+      "band": 44,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L45.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3107,
+        2365,
+        3160
+      ],
+      "lines_in_crop": 1,
+      "band": 45,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L46.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3160,
+        2365,
+        3212
+      ],
+      "lines_in_crop": 1,
+      "band": 46,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L47.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3212,
+        2365,
+        3265
+      ],
+      "lines_in_crop": 1,
+      "band": 47,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L48.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3265,
+        2365,
+        3317
+      ],
+      "lines_in_crop": 1,
+      "band": 48,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L49.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3317,
+        2365,
+        3370
+      ],
+      "lines_in_crop": 1,
+      "band": 49,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L50.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3370,
+        2365,
+        3423
+      ],
+      "lines_in_crop": 1,
+      "band": 50,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L51.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3423,
+        2365,
+        3475
+      ],
+      "lines_in_crop": 1,
+      "band": 51,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L52.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3475,
+        2365,
+        3528
+      ],
+      "lines_in_crop": 1,
+      "band": 52,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L53.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3528,
+        2365,
+        3597
+      ],
+      "lines_in_crop": 1,
+      "band": 53,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L54.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3597,
+        2365,
+        3675
+      ],
+      "lines_in_crop": 1,
+      "band": 54,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L55.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3675,
+        2365,
+        3736
+      ],
+      "lines_in_crop": 1,
+      "band": 55,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L56.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3736,
+        2365,
+        3788
+      ],
+      "lines_in_crop": 1,
+      "band": 56,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L57.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3788,
+        2365,
+        3841
+      ],
+      "lines_in_crop": 1,
+      "band": 57,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p275_L58.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0285_p275.jpg",
+      "box": [
+        0,
+        3841,
+        2365,
+        3893
+      ],
+      "lines_in_crop": 1,
+      "band": 58,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 174.9
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L01.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        200,
+        2365,
+        246
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L02.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        246,
+        2365,
+        318
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L03.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        318,
+        2365,
+        396
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L04.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        396,
+        2365,
+        448
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L05.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        448,
+        2365,
+        500
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L06.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        500,
+        2365,
+        552
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L07.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        552,
+        2365,
+        605
+      ],
+      "lines_in_crop": 1,
+      "band": 7,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L08.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        605,
+        2365,
+        658
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L09.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        658,
+        2365,
+        710
+      ],
+      "lines_in_crop": 1,
+      "band": 9,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L10.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        710,
+        2365,
+        762
+      ],
+      "lines_in_crop": 1,
+      "band": 10,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L11.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        762,
+        2365,
+        814
+      ],
+      "lines_in_crop": 1,
+      "band": 11,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L12.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        814,
+        2365,
+        867
+      ],
+      "lines_in_crop": 1,
+      "band": 12,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L13.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        867,
+        2365,
+        919
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L14.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        919,
+        2365,
+        971
+      ],
+      "lines_in_crop": 1,
+      "band": 14,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L15.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        971,
+        2365,
+        1024
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L16.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1024,
+        2365,
+        1076
+      ],
+      "lines_in_crop": 1,
+      "band": 16,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L17.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1076,
+        2365,
+        1128
+      ],
+      "lines_in_crop": 1,
+      "band": 17,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L18.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1128,
+        2365,
+        1181
+      ],
+      "lines_in_crop": 1,
+      "band": 18,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L19.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1181,
+        2365,
+        1233
+      ],
+      "lines_in_crop": 1,
+      "band": 19,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L20.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1233,
+        2365,
+        1286
+      ],
+      "lines_in_crop": 1,
+      "band": 20,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L21.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1286,
+        2365,
+        1338
+      ],
+      "lines_in_crop": 1,
+      "band": 21,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L22.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1338,
+        2365,
+        1390
+      ],
+      "lines_in_crop": 1,
+      "band": 22,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L23.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1390,
+        2365,
+        1442
+      ],
+      "lines_in_crop": 1,
+      "band": 23,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L24.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1442,
+        2365,
+        1495
+      ],
+      "lines_in_crop": 1,
+      "band": 24,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L25.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1495,
+        2365,
+        1547
+      ],
+      "lines_in_crop": 1,
+      "band": 25,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L26.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1547,
+        2365,
+        1599
+      ],
+      "lines_in_crop": 1,
+      "band": 26,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L27.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1599,
+        2365,
+        1651
+      ],
+      "lines_in_crop": 1,
+      "band": 27,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L28.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1651,
+        2365,
+        1704
+      ],
+      "lines_in_crop": 1,
+      "band": 28,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L29.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1704,
+        2365,
+        1756
+      ],
+      "lines_in_crop": 1,
+      "band": 29,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L30.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1756,
+        2365,
+        1808
+      ],
+      "lines_in_crop": 1,
+      "band": 30,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L31.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1808,
+        2365,
+        1860
+      ],
+      "lines_in_crop": 1,
+      "band": 31,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L32.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1860,
+        2365,
+        1912
+      ],
+      "lines_in_crop": 1,
+      "band": 32,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L33.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1912,
+        2365,
+        1965
+      ],
+      "lines_in_crop": 1,
+      "band": 33,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L34.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        1965,
+        2365,
+        2017
+      ],
+      "lines_in_crop": 1,
+      "band": 34,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L35.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2017,
+        2365,
+        2069
+      ],
+      "lines_in_crop": 1,
+      "band": 35,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L36.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2069,
+        2365,
+        2122
+      ],
+      "lines_in_crop": 1,
+      "band": 36,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L37.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2122,
+        2365,
+        2174
+      ],
+      "lines_in_crop": 1,
+      "band": 37,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L38.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2174,
+        2365,
+        2226
+      ],
+      "lines_in_crop": 1,
+      "band": 38,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L39.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2226,
+        2365,
+        2279
+      ],
+      "lines_in_crop": 1,
+      "band": 39,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L40.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2279,
+        2365,
+        2331
+      ],
+      "lines_in_crop": 1,
+      "band": 40,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L41.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2331,
+        2365,
+        2383
+      ],
+      "lines_in_crop": 1,
+      "band": 41,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L42.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2383,
+        2365,
+        2436
+      ],
+      "lines_in_crop": 1,
+      "band": 42,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L43.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2436,
+        2365,
+        2488
+      ],
+      "lines_in_crop": 1,
+      "band": 43,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L44.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2488,
+        2365,
+        2540
+      ],
+      "lines_in_crop": 1,
+      "band": 44,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L45.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2540,
+        2365,
+        2592
+      ],
+      "lines_in_crop": 1,
+      "band": 45,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L46.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2592,
+        2365,
+        2645
+      ],
+      "lines_in_crop": 1,
+      "band": 46,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L47.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2645,
+        2365,
+        2697
+      ],
+      "lines_in_crop": 1,
+      "band": 47,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L48.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2697,
+        2365,
+        2748
+      ],
+      "lines_in_crop": 1,
+      "band": 48,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L49.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2748,
+        2365,
+        2792
+      ],
+      "lines_in_crop": 1,
+      "band": 49,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L50.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2792,
+        2365,
+        2837
+      ],
+      "lines_in_crop": 1,
+      "band": 50,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L51.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2837,
+        2365,
+        2899
+      ],
+      "lines_in_crop": 1,
+      "band": 51,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L52.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2899,
+        2365,
+        2959
+      ],
+      "lines_in_crop": 1,
+      "band": 52,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L53.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        2959,
+        2365,
+        3012
+      ],
+      "lines_in_crop": 1,
+      "band": 53,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L54.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3012,
+        2365,
+        3066
+      ],
+      "lines_in_crop": 1,
+      "band": 54,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L55.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3066,
+        2365,
+        3115
+      ],
+      "lines_in_crop": 1,
+      "band": 55,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L56.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3115,
+        2365,
+        3166
+      ],
+      "lines_in_crop": 1,
+      "band": 56,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L57.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3166,
+        2365,
+        3212
+      ],
+      "lines_in_crop": 1,
+      "band": 57,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L58.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3212,
+        2365,
+        3262
+      ],
+      "lines_in_crop": 1,
+      "band": 58,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L59.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3262,
+        2365,
+        3323
+      ],
+      "lines_in_crop": 1,
+      "band": 59,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L60.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3323,
+        2365,
+        3379
+      ],
+      "lines_in_crop": 1,
+      "band": 60,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L61.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3379,
+        2365,
+        3430
+      ],
+      "lines_in_crop": 1,
+      "band": 61,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L62.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3430,
+        2365,
+        3480
+      ],
+      "lines_in_crop": 1,
+      "band": 62,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L63.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3480,
+        2365,
+        3525
+      ],
+      "lines_in_crop": 1,
+      "band": 63,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L64.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3525,
+        2365,
+        3578
+      ],
+      "lines_in_crop": 1,
+      "band": 64,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L65.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3578,
+        2365,
+        3637
+      ],
+      "lines_in_crop": 1,
+      "band": 65,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L66.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3637,
+        2365,
+        3690
+      ],
+      "lines_in_crop": 1,
+      "band": 66,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    },
+    {
+      "crop": "p278_L67.jpg",
+      "source_url": "",
+      "source_file": "collectionofstat03thur_leaf0288_p278.jpg",
+      "box": [
+        0,
+        3690,
+        2365,
+        3743
+      ],
+      "lines_in_crop": 1,
+      "band": 67,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 150.6
+      },
+      "date": "04 Oct 2026"
+    }
+  ]
 }

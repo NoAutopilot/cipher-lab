@@ -77,8 +77,9 @@ context, line 22921) and pp.277/279 stay djvu OCR. Written down before the run: 
 the OCR's coverage problem, so the registered gate (60% of *all* K occurrences reach a verdict) is harder to pass on a
 half-transcribed stream than it would be on a full one; the per-page split printed under the gate is descriptive and
 licenses nothing.
-- Input: `tx/pages.tsv` names the pages; `tx/p275.tsv` (crops L02-L36, the letter's lines from "28. 7. 30." to "know,
-  whether you have received them or noe.") replaces djvu 23014-23062; `tx/p278.tsv` (crops L02-L67, the whole page
+- Input: `tx/pages.tsv` names the pages; `tx/p275.tsv` (crops L02-L34, the letter's lines from "28. 7. 30." to "know,
+  whether you have received them or noe."; the brief to the passes said L02-L36, but L35-L36 turned out to be the
+  decipherment's heading and first line, which stay on the plain side -- corrected at reconciliation, 05:5x UTC) replaces djvu 23014-23062; `tx/p278.tsv` (crops L02-L67, the whole page
   below the running head) replaces djvu 23250-23325. The running heads are not transcribed (they were page furniture
   in v1/v2; `A.JUNK_LINE` drops them anyway). Every other line, the plain side (djvu OCR of "The same letter
   decypherd"), MIN_CTX 10, cost 25%, window 60, uniqueness 5, the verdict thresholds, `--skip 2` (v2's rule, kept),

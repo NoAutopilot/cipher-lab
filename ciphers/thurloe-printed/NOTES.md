@@ -2482,3 +2482,89 @@ Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026)
 - [ ] retry: one-vote boundary test, djvu-OCR instrument retired (boundary_test.py v1/v2, coverage below gate twice); planned: same test on a page-image transcription of the P5+P6 / P7 cipher lines
 Verdict: keep going: 2 internal gaps; cheapest next: the one-vote boundary test (67, 153, 84) on a page-image transcription of the P5+P6 / P7 cipher lines, ~$4
+
+## A3V2-THURBT (4 Oct 2026)
+
+Brief: LANE-A3V2 wave 2 (`.claude/briefs/runs/2026-10-04-acct3-a3v2-wave2.md`, A3V2-THURBT), account 3 worker, 05:4x-06:0x
+UTC: the NEAR3-THUR gap "P4 one-vote M entries 67 (x3) and 153 (x1)" -- the same pre-registered boundary test
+(`pool_1654/boundary/boundary_test.py`, PREREG.md; no new statistic, no threshold change) on a page-image transcription
+of the cipher lines instead of djvu OCR (rule 3 third-attempt clause: the OCR instrument is retired after v1/v2; image
+transcription is a different instrument and ran once). Pre-registration: PREREG.md "v3", written and committed
+(3aa38552) before the run.
+
+**Pages.** The P5+P6 cipher lines sit on Birch pp. 274-275 and P7's on pp. 277-279 (running heads at djvu 22870,
+23013, 23099, 23173, 23249, 23326, 23403): five cipher pages. Five pages x (2 blind passes + 1 reconciliation) at the
+per-pass rate would cross 80% of the USD 9 cap, so per the brief only the two pages carrying the targets' contexts were
+transcribed: p.275 (67, first line of the letter) and p.278 (153). Leaf map from `collectionofstat03thur_page_numbers.json`:
+p.275 = leaf 285, p.278 = leaf 288. Both fetched at native 2365x4074 (`images/collectionofstat03thur_leaf0285_p275.jpg`,
+`..._leaf0288_p278.jpg`; leaf 288 answered HTTP 504 once and came on the single retry). Crop step, run and checked on the
+`--debug` overlay before any vision call (58 and 67 bands, one printed line each, pitch 52 px):
+`python3 tools/iiif_lines.py --image ciphers/thurloe-printed/images/collectionofstat03thur_leaf0285_p275.jpg --out ciphers/thurloe-printed/images --prefix p275 --debug`
+and the same for leaf 288 / `--prefix p278` (crops `images/p275_L01-L58.jpg`, `images/p278_L01-L67.jpg`, manifest entries
+under `iiif_lines`; the images folder is 16 MB).
+
+**Transcription** (`pool_1654/boundary/tx/`): two blind Opus 5.5 passes per page on the line crops only (p.275 crops
+L02-L36, p.278 crops L02-L67; never a full page), `tools/reconcile_passes.py --keep-dots --keep-plain`, then the worker's
+own read of the crops for the disagreements. p.275: 605/615 tokens agreed (98.4%), 10 disagreement columns, none a
+numeral (long-s spellings, the placement of "oblige, sir," between two crops, a footnote mark, STAMFORD's case, "lett"/"sett"
+settled "sett" from the glyph); crops L35-L36 turned out to be the decipherment's heading and first line and were dropped
+from the cipher side (letter = L02-L34, 33 lines). p.278: the two passes are byte-identical (1314/1314 tokens), which is
+agreement, not accuracy (Usage 6); the worker spot-checked the 153 line (L46) and two numeral-dense lines (L05, L60)
+against the crops, all three exact. err_2reader: p.275 1.6%, p.278 0.0% (pooled 10/1929 = 0.5%). `tx/pages.tsv` maps
+`p275.tsv` -> djvu 23014-23062 and `p278.tsv` -> djvu 23250-23325; `boundary_test.py --tx` (extended in place, no private
+copy) substitutes them in the cipher stream, everything else (plain side = djvu OCR of "The same letter decypherd",
+`--skip 2`, thresholds, seeds, gate) unchanged.
+
+**Result** (`python3 pool_1654/boundary/boundary_test.py --skip --tx`, `results_tx.tsv`; `--check` exit 0):
+
+| run | instrument | K verdicts / 80 (gate >= 60%) | K CONFIRM (gate >= 80%) | W false-CONFIRM (gate <= 10%) | gate |
+|---|---|---|---|---|---|
+| v1 (regenerated after THUR275) | djvu OCR | 25 (31.2%) | 22/25 = 88.0% | 0/21 = 0.0% | FAIL (coverage) |
+| v2 (regenerated after THUR275) | djvu OCR, `--skip 2` | 38 (47.5%) | 33/38 = 86.8% | 0/34 = 0.0% | FAIL (coverage) |
+| **v3** | **pp.275/278 page-image transcription + `--skip 2`** | **48 (60.0%)** | **38/48 = 79.2%** | **0/47 = 0.0%** | **FAIL (CONFIRM share, by one occurrence)** |
+| v3, K on the two transcribed pages (descriptive, not the gate) | | 36/53 (67.9%) | 28/36 = 77.8% | 0/32 | -- |
+| v3, K on the OCR lines | | 12/27 (44.4%) | 10/12 = 83.3% | 0/15 | -- |
+
+Coverage reached the 60% gate exactly (48/80) and W stayed at 0%, but K CONFIRM is 38/48 = 79.2% against 80%: one more
+CONFIRM (39/48 = 81.3%) would have passed. **Non-test by the registered rule: no grade or key change; key_stamford.tsv,
+decode_stamford.py and reading_P4.txt untouched; no rule-7 re-derivation is owed.** Target verdicts, seen, logged, not
+acted on: **67 CONFIRM** (p275_L02, left "ihadbeenin", gap "aengland", right "abowtthese", edit 1 -- the same verdict as
+v1/v2, now on an image-read line); **153 INCONCLUSIVE** (p278_L46, left "sonersoris" located, right "knewitishould" not
+located: the printed decipherment reads "the cavaliers knew *of* it, I should" -- Birch inserted "of" -- and the plain-side
+OCR has "sliould" for "should", together 4 edits on 13 letters, over the 25% limit); 84 INCONCLUSIVE (p.274, not
+transcribed, left not located, as before).
+
+**Where the ten K misses come from** (diagnosis, no threshold moved): 8 of the 10 K REFUTE-gap verdicts are
+single-letter keys (gap "" or one wrong letter, edit 1) on the transcribed pages -- Birch's modernised spelling on the
+plain side ("mee" -> "me", "bodi" for "body") and the plain-side OCR ("protestor" for "protector", "sliould"), not the
+cipher-side reading, which the two passes agree on; the two word-code misses (81 "which" gap "i", 83 "with" gap "") are
+the same shape. Of the 17 transcribed-page K INCONCLUSIVEs, 16 are a context not located or not unique in the OCR'd
+decipherment and 1 sits in the edit band between CONFIRM and REFUTE. Reading: the cipher side is no longer the limit
+(transcribed-page coverage 67.9% vs 44.4% on the OCR lines); the plain side's OCR and Birch's modernisation now cap the
+CONFIRM share at the gate's edge.
+
+**Not changed:** 67 stays M (x3 in P4), 153 M, 84 M; P4 H 64 C 338 S 0 M 16 U 6 of 424 unchanged. Control shares
+92.3-92.8% unchanged (no key regeneration). v1/v2's `results.tsv`/`results_v2.tsv` regenerated after THUR275's JUNK_LINE
+change (the 275 row is gone; one K occurrence at djvu 23015 lost its left context: v1 26 -> 25 verdicts, v2 48.8% -> 47.5%),
+both `--check` clean; PREREG.md records it.
+
+Requests: archive.org 2 (metadata, page_numbers.json), iiif.archive.org 3 (two leaves, one 504 + one retry), all >= 1.5 s
+apart. Vision calls: 4 Opus 5.5 subagent calls (2 per page, line crops only), 1 worker reconciliation. No novelty class
+(rule 10). Cost: see the lane ledger.
+
+## Remaining gaps (A3V2-THURBT, 4 Oct 2026)
+Read so far: P4 402 of 424 sign tokens at H or C (94.8%), 16 M, 6 U (reading_P4.txt; unchanged by this job); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4 one-vote M entries 67 (x3) and 153 (x1), and the sibling-only one-vote M entry 84 - blocker: not-attempted; boundary test v3 on a two-page image transcription FAILed its gate by one occurrence (K 48/80 = 60.0% coverage at the gate, CONFIRM 38/48 = 79.2% vs 80%, W 0/47; 67 CONFIRM, 153 and 84 INCONCLUSIVE, not acted on; A3V2-THURBT); next: the same instrument on new material -- transcribe the remaining three cipher pages (274, 277, 279; 84's context is on p.274) and the two decipherment paragraphs (pp.275-276, 279-280, the plain side whose OCR now limits the CONFIRM share), ~$8 at the per-pass rate, then re-run `--skip --tx`; no threshold change
+- A contemporary decipherment of P4 (Thurloe's office or Eric Sams's 1973 notes) - blocker: waiting-on LOCAL-QUEUE L45 (MS. Clarendon 94 catalogue record) and a Bodleian reproduction of the Sams notes; ASKS row 30's Bodleian reply (28 Sept 2026) did not locate P4's leaf
+- P3 three-line postscript (keyed, mostly M) and P10 p.620 line 10 - blocker: open-codes; P10 L10 is already printed by Powell 1937 (N0, AUDIT.md); the P3 postscript has no further sibling material on disk (s.17)
+
+## Escalation (A3V2-THURBT, 4 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford, 30 March / 3 April 1655) printed decipherments aligned, key_stamford.tsv, control 92.3-92.8% after the running-head fix (s.16; A3V2-THUR275)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared 3 Oct 2026 (GAPS148): agrees on 32/33/38/47, conflict on 27 (not in P4), no entry for 143/70/1/67/153
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py); running-head numeral 275 dropped via JUNK_LINE and key regenerated, P4 reading unchanged (A3V2-THUR275, 4 Oct 2026)
+- [x] image-check: p.188 lines 50-61 read from the page image (s.18); p.189 cipher-free apart from one sign (3 Oct 2026); pp.275 and 278 transcribed from the page image for the boundary test (A3V2-THURBT, 4 Oct 2026)
+- [ ] retry: one-vote boundary test, djvu-OCR instrument retired (v1/v2); v3 on a two-page image transcription FAILed by one occurrence (A3V2-THURBT); planned: the same test with the remaining three cipher pages and the two decipherment paragraphs transcribed from the image (new material, same instrument)
+Verdict: keep going: 2 internal gaps; cheapest next: the boundary test on the remaining three cipher pages and the two decipherment paragraphs transcribed from the image, ~$8
