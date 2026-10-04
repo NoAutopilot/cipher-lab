@@ -20,6 +20,26 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
          Scale-free: every threshold is in units of the page's median component height, so native crops and 1600 px
          reference copies can share one atlas. Writes DIR/signs.tsv, DIR/marks.tsv, DIR/bitmaps.npz (48x48, aspect
          kept), DIR/crops/<page>.png (the grey page, for exemplars) and with --debug DIR/debug_<page>.jpg.
+         --cursive (RUN1-SEG, 4 Oct 2026, rah-juan-manuel-1521 DECODE hand): for a joined 16th-c. cursive hand with
+         verso bleed-through, where the default mode returns stroke fragments (R9528 f.194: 3,240 "signs" of median
+         height 4 px). Each --page is ONE line strip (a tools/iiif_lines.py crop); a page taller than --strip-max x its
+         own x-height is first cut into bands at line_centres and each band treated as a strip. Per strip:
+         1. ghost floor: binarise at --rel, then keep a component only if its darkest pixels (the --dark-q quantile of
+            its background-normalised grey) are under --ghost; bleed-through from the verso is ink seen through paper,
+            lighter than any written stroke, so it fails this test even when the binarisation keeps it;
+            pixels of a kept component lighter than --ghost-px are dropped too (ghost ink that touches a real stroke);
+         2. x-height xh = the height of the core band, the contiguous rows round the row-profile peak (ghost-filtered
+            ink, 3-row smoothing) carrying at least --core x the peak; every threshold below is in units of xh;
+         3. ink outside the core band +- --band x xh is cleared (neighbour lines' tails clipped into the strip), and
+            components whose longer side is under --min-side x xh are dropped;
+         4. sign candidates are runs of columns carrying ink inside the core band, runs closer than --gap x xh joined
+            (flourishes above and below the x-height zone do not bridge words); a box is the run's columns over the
+            rows that carry kept ink;
+         5. a group wider than --split-w x xh (two joined code words) is split into round(width / (--piece x xh))
+            pieces at the column-ink minima nearest the equal-width cut points (+-0.35 piece).
+         Output columns are the default mode's; rh/rw/dy are in units of xh, line is the band (1 for a strip), and
+         pages.json records median_h = xh. Marks are not separated (cursive superscripts stay with their group).
+         Offline test: tools/tests/test_glyph_atlas.py (synthetic joined line with a faint mirrored ghost).
 cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log relative height and width, PCA(40),
          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
@@ -177,6 +197,125 @@ def segment_page(name, path, box, a):
     return signs, marks, grey, mh
 
 
+def _cursive_strip(name, grey, norm, ink, li, yoff, a):
+    """One line strip of a joined cursive hand -> sign-candidate boxes (see --cursive in the module docstring)."""
+    n, lab, st, _ = cv2.connectedComponentsWithStats(ink, connectivity=8)
+    keep = []
+    for i in range(1, n):
+        if st[i, 4] < 4:
+            continue
+        x, y, w, h, _ = st[i]
+        vals = norm[y:y + h, x:x + w][lab[y:y + h, x:x + w] == i]
+        if np.quantile(vals, a.dark_q) < a.ghost:
+            keep.append(i)
+    if not keep:
+        return [], 0.0
+    kept = np.isin(lab, keep) & (norm < a.ghost_px)
+    prof = kept.sum(axis=1).astype(float)
+    from scipy.ndimage import uniform_filter1d
+    prof = uniform_filter1d(prof, 3)
+    pk = int(np.argmax(prof))
+    lo = hi = pk
+    while lo > 0 and prof[lo - 1] >= a.core * prof[pk]:
+        lo -= 1
+    while hi < len(prof) - 1 and prof[hi + 1] >= a.core * prof[pk]:
+        hi += 1
+    xh = float(max(3, hi - lo + 1))
+    b0, b1 = max(0, int(lo - a.band * xh)), min(len(prof), int(hi + a.band * xh) + 1)
+    small = [i for i in keep if max(st[i, 2], st[i, 3]) < a.min_side * xh]
+    if small:
+        kept[np.isin(lab, small)] = False
+    kept[:b0] = False
+    kept[b1:] = False
+    # sign candidates are runs of columns with ink inside the core band; a gap under --gap x xh does not separate
+    col = kept[lo:hi + 1].any(axis=0)
+    runs, u = [], None
+    for x_ in range(len(col) + 1):
+        on = x_ < len(col) and col[x_]
+        if on and u is None:
+            u = x_
+        elif not on and u is not None:
+            if runs and u - runs[-1][1] < a.gap * xh:
+                runs[-1][1] = x_
+            else:
+                runs.append([u, x_])
+            u = None
+    groups = []
+    for u, v in runs:
+        rows = np.where(kept[:, u:v].any(axis=1))[0]
+        groups.append(dict(x=u, y=int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1)))
+    med = a.piece * xh
+    out = []
+    for g in groups:
+        sub = kept[g['y']:g['y'] + g['h'], g['x']:g['x'] + g['w']].astype(np.uint8)
+        if g['w'] > a.split_w * xh:
+            k = max(2, int(round(g['w'] / med)))
+            col = sub.sum(axis=0).astype(float)
+            cuts, step = [0], g['w'] / k
+            for j in range(1, k):
+                c0 = int(j * step - 0.35 * step)
+                c1 = int(j * step + 0.35 * step)
+                c0, c1 = max(cuts[-1] + 1, c0), min(g['w'] - 1, c1)
+                if c1 <= c0:
+                    continue
+                cuts.append(c0 + int(np.argmin(col[c0:c1])))
+            cuts.append(g['w'])
+            for u, v in zip(cuts, cuts[1:]):
+                piece = sub[:, u:v]
+                rows = np.where(piece.any(axis=1))[0]
+                if not len(rows):
+                    continue
+                out.append(dict(x=g['x'] + u, y=g['y'] + int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1),
+                                bm=piece[rows[0]:rows[-1] + 1]))
+        else:
+            out.append(dict(x=g['x'], y=g['y'], w=g['w'], h=g['h'], bm=sub))
+    lc = (lo + hi) / 2
+    signs = []
+    for k, c in enumerate(out):
+        signs.append(dict(sid=f'{name}_{li + 1:02d}_{k + 1:03d}', page=name, line=li + 1, pos=k + 1,
+                          x=c['x'], y=c['y'] + yoff, w=c['w'], h=c['h'], rh=c['h'] / xh, rw=c['w'] / xh,
+                          dy=(c['y'] + c['h'] / 2 - lc) / xh, marks='', bm=bitmap(c['bm'])))
+    return signs, xh
+
+
+def segment_cursive(name, path, box, a):
+    grey = np.array(Image.open(path).convert('L'))
+    if box:
+        x0, y0, x1, y1 = box
+        grey = grey[y0:y1, x0:x1]
+    k = max(15, int(min(grey.shape) / 40) | 1)
+    k = min(k, max(15, int(max(grey.shape) / 40) | 1))
+    bg = cv2.GaussianBlur(cv2.morphologyEx(grey, cv2.MORPH_CLOSE, np.ones((k, k), np.uint8)), (0, 0), k / 3)
+    norm = grey.astype(float) / np.maximum(bg.astype(float), 1)
+    ink = (norm < a.rel).astype(np.uint8)
+    bands = [(0, grey.shape[0])]
+    # a strip is at most --strip-max x-heights tall; estimate xh roughly from the darkest-ink row profile
+    dark = (norm < a.ghost).astype(np.uint8)
+    prof = dark.sum(axis=1).astype(float)
+    if prof.max() > 0:
+        n_, _, st_, _ = cv2.connectedComponentsWithStats(dark, connectivity=8)
+        hs = st_[1:, 3][st_[1:, 4] >= 4]
+        mh = float(np.median(hs[hs >= np.percentile(hs, 60)])) if len(hs) else 20.0
+        if grey.shape[0] > a.strip_max * max(mh, 3):
+            peaks, pitch = line_centres(dark, mh)
+            if len(peaks) > 1:
+                mids = [0] + [int((p + q) / 2) for p, q in zip(peaks, peaks[1:])] + [grey.shape[0]]
+                bands = list(zip(mids, mids[1:]))
+    signs, xhs = [], []
+    for li, (y0, y1) in enumerate(bands):
+        S, xh = _cursive_strip(name, grey[y0:y1], norm[y0:y1], ink[y0:y1], li, y0, a)
+        signs += S
+        if xh:
+            xhs.append(xh)
+    xh = float(np.median(xhs)) if xhs else 0.0
+    if a.debug:
+        d = cv2.cvtColor(grey, cv2.COLOR_GRAY2BGR)
+        for s_ in signs:
+            cv2.rectangle(d, (s_['x'], s_['y']), (s_['x'] + s_['w'], s_['y'] + s_['h']), (0, 0, 255), 1)
+        cv2.imwrite(os.path.join(a.out, f'debug_{name}.jpg'), d)
+    return signs, [], grey, xh
+
+
 SIGN_COLS = ['sid', 'page', 'line', 'pos', 'x', 'y', 'w', 'h', 'rh', 'rw', 'dy', 'marks']
 MARK_COLS = ['mid', 'page', 'line', 'x', 'y', 'w', 'h', 'rh', 'rw', 'sid']
 
@@ -188,7 +327,7 @@ def cmd_segment(a):
         name, rest = spec.split('=', 1)
         path, box = (rest.split('@') + [None])[:2]
         box = [int(v) for v in box.split(',')] if box else None
-        S, M, grey, mh = segment_page(name, path, box, a)
+        S, M, grey, mh = (segment_cursive if a.cursive else segment_page)(name, path, box, a)
         cv2.imwrite(os.path.join(a.out, 'crops', f'{name}.png'), grey)
         scale[name] = dict(image=path, box=box, median_h=mh)
         allS += S
@@ -495,6 +634,19 @@ def main(argv=None):
     s.add_argument('--mark-above', type=float, default=0.3, help='mark bottom must sit this x median height above the line centre (0.3)')
     s.add_argument('--min-area', type=float, default=0.12, help='drop a component whose side is under this x median height (0.12); raise on a noisy page')
     s.add_argument('--merge-vgap', type=float, default=0.6, help='merge same-line, x-overlapping components only if the vertical gap between them is under this x median height (0.6); stops distant dust specks chaining into one giant box')
+    s.add_argument('--cursive', action='store_true',
+                   help='joined cursive hand with bleed-through: one line strip per --page, ghost floor, fragments grouped '
+                        'by x-height gaps, over-wide groups split at column-ink minima (see the docstring)')
+    s.add_argument('--ghost', type=float, default=0.55, help='--cursive: a component is ink only if its --dark-q quantile is under this x local background (0.55)')
+    s.add_argument('--dark-q', type=float, default=0.1, help='--cursive: darkness quantile tested against --ghost (0.1)')
+    s.add_argument('--core', type=float, default=0.5, help='--cursive: x-height band = the rows round the row-profile peak with ink >= this x the peak (0.5)')
+    s.add_argument('--ghost-px', type=float, default=0.75, help='--cursive: a pixel of a kept component counts as ink only under this x background (0.75); clears ghost ink touching real strokes')
+    s.add_argument('--band', type=float, default=1.0, help='--cursive: ink is kept only within this x xh above and below the core band (1.0); cuts neighbour lines')
+    s.add_argument('--min-side', type=float, default=0.25, help='--cursive: drop a component whose longer side is under this x xh (0.25)')
+    s.add_argument('--gap', type=float, default=0.7, help='--cursive: column runs in the core band closer than this x xh are one sign (0.7)')
+    s.add_argument('--split-w', type=float, default=4.0, help='--cursive: split a group wider than this x xh (4.0)')
+    s.add_argument('--piece', type=float, default=2.8, help='--cursive: an over-wide group is split into round(width / (this x xh)) pieces (2.8)')
+    s.add_argument('--strip-max', type=float, default=6.0, help='--cursive: a page taller than this x the median sign height is cut into line bands first (6)')
     s.add_argument('--debug', action='store_true')
     c = sp.add_parser('cluster')
     c.add_argument('--out', required=True)

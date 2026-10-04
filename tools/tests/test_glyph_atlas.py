@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Offline test for tools/glyph_atlas.py: a synthetic page of 3 lines x 12 signs of two shapes (a box and an X, jittered in size and stroke);
 every X carries a small ring above it. Segment must find 36 signs and 18 marks, each mark attached to an X;
-cluster with k=6 must give pure clusters (over-split, merged by the labels); atlas must write two codes."""
+cluster with k=6 must give pure clusters (over-split, merged by the labels); atlas must write two codes.
+Also segment --cursive on a synthetic joined strip with a mirrored ghost (see the block near the end)."""
 import csv, json, os, subprocess, sys, tempfile
 import numpy as np, cv2
 
@@ -130,6 +131,49 @@ def main():
     some_sid = S[0]['sid']
     run('crop', '--out', d, '--sid', some_sid, '--dest', crops)
     assert os.path.exists(os.path.join(crops, f'{some_sid}.png'))
+
+    # --cursive (RUN1-SEG, 4 Oct 2026): a joined cursive-like strip, x-height 24 px. Each planted sign is 1-3 letter
+    # strokes 3 px apart (broken pen joins), signs 30+ px apart; two 3-letter words are written touching (one component,
+    # > 4 xh wide, must be split back into 2); a faint mirrored copy of the line (verso ghost) lies under it. The default
+    # mode fragments the strokes and keeps the ghost; --cursive must recover the planted count within 15%.
+    d5 = tempfile.mkdtemp()
+    strip = np.full((150, 1500), 235, np.uint8)
+    rng5 = np.random.default_rng(5)
+    x, planted, yb = 40, 0, 85          # baseline row; x-height band 61..85
+
+    def letter(im, x0, col, asc=False):     # a minim letter like n: two stems and an arch
+        cv2.line(im, (x0 + 1, yb - 22), (x0 + 1, yb), col, 3)
+        cv2.line(im, (x0 + 13, yb - 18), (x0 + 13, yb), col, 3)
+        cv2.ellipse(im, (x0 + 7, yb - 18), (6, 5), 0, 180, 360, col, 3)
+        if asc:
+            cv2.line(im, (x0 + 13, yb - 40), (x0 + 13, yb), col, 3)
+        return x0 + 17                  # 3 px gap to the next stroke
+    for k in range(14):
+        n = 1 + int(rng5.integers(0, 3))
+        for j in range(n):
+            x = letter(strip, x, 20, asc=(j == 0 and k % 3 == 0))
+        planted += 1
+        x += 30
+    for _ in range(2):                  # two touching 3-letter words: one ink run, two signs
+        for j in range(6):
+            letter(strip, x, 20)
+            cv2.line(strip, (x + 12, yb - 2), (x + 20, yb - 2), 20, 3)
+            x += 17
+        planted += 2
+        x += 30
+    ghost = cv2.flip(strip, 1)
+    strip = np.where((ghost < 100) & (strip > 200), 172, strip).astype(np.uint8)
+    p5 = os.path.join(d5, 'strip.png')
+    cv2.imwrite(p5, strip)
+    run('segment', '--page', f's1={p5}', '--out', d5)
+    n_def = len(list(csv.DictReader(open(os.path.join(d5, 'signs.tsv')), delimiter='\t')))
+    run('segment', '--cursive', '--page', f's1={p5}', '--out', d5)
+    S5 = list(csv.DictReader(open(os.path.join(d5, 'signs.tsv')), delimiter='\t'))
+    assert abs(len(S5) - planted) <= 0.15 * planted, (len(S5), planted)
+    assert abs(n_def - planted) > 0.15 * planted, (n_def, planted)   # the default mode is what --cursive fixes
+    xh = json.load(open(os.path.join(d5, 'pages.json')))['s1']['median_h']
+    assert 15 <= xh <= 32, xh
+    assert all(int(s['y']) + int(s['h']) > 61 for s in S5)        # no box made of ghost/neighbour ink alone
     print('ok')
 
 
