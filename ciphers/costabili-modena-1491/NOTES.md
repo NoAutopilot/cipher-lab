@@ -42,25 +42,52 @@ Done by the prior workers on this pool and re-read, not repeated beyond two IA q
 ## Verdict
 
 partial: R1163-1167 (24 pp) have no located print and no solver work; R1095-1097 (3 pp) are at most partly covered by one printed extract; period glosses likely on some leaves, unconfirmed. Open letters 8 of 8, est. ~4,860 open signs before any gloss is found. Depth rule 4a not applied (nothing read).
+COS-M update (4 Oct 2026): images measured -- R1164 duplicates R1163, R1095-R1097 carry no cipher (and are not no. CLXXXVIII), and every 1491 cipher passage has a period decipherment on its record except ~100 signs on R1166 P4; see "Image measurement" below. Pool bar FAIL; the next work is a key rebuild from the period decipherments, not cryptanalysis.
+
+## Image measurement (COS-M, 4 Oct 2026, 06:08-06:2x UTC)
+
+One DECODE browser login (`tools/decode_browser_login.js 1163 <scratch> --fetch-page /decrypt-web/RecordsView/{1164..1167,1095..1097} --guess-fullsize --max-files 75 --delay 1600`), logged in first time; **full size served** for every page (31 PNG images, 2592x3888, 5.9-10.0 MB each; none was the forbidden.png placeholder). Images kept in the session scratchpad only, never committed; `images_manifest.tsv` (record, file, bytes, sha1) is the re-fetch record. Every record page lists `Documents 0` (no transcription or key attached). **R1164 is a duplicate of R1163**: its four images are byte-identical (same sha1) to R1163's, and both carry shelfmark b.2/20 no.7. Pages were read on contact sheets (about 700 px per page), dates from the docket and closing lines at that scale (M where marked ?).
+
+Sign rate sample: R1167 P1, two consecutive full cipher lines counted on a 60% crop at native resolution: 36 and 39 signs (ligatured pi/r-shapes counted as one sign); a third line on R1167 P2 at contact scale about 38. Rate used: 38 signs per full cipher line, times the cipher fraction of each line estimated by eye. All figures below are measured-estimates, not counts.
+
+| DECODE | pages (images) | date (docket / closing) | cipher | period decipherment beside it | est. cipher signs | open (no decipherment) |
+|---|---|---|---|---|---|---|
+| R1163 | 4 | 12 Mar 1491 (docket); closing "xxij marcij" | y: one pasted-in slip (P2, about 12 lines, ~70% cipher) | **y**: clear slip f.7 laid over the cipher slip (P1, "De le cose de la Regina no mi posso significare altro a V.ra Ex.tia ..."); P3 shows the page with the slip lifted | ~320 | 0 |
+| R1164 | 4 | = R1163 | duplicate | duplicate | (0, duplicate) | 0 |
+| R1165 | 6 | 15 Jun 1491 (archive date card and closing "xv junij") | y: P1 about 29 lines, ~55% cipher; P5 postscript slip, about 8 lines with cipher | **y**: clear slips P3 (f.7) and P4; P3 ends "gli vogli mandar qualche odori" = P1's last line, P4 carries "25 ... Madama Biancha ... Varadino ... Cavallaro", the content of the P5 postscript | ~750 | ~0 |
+| R1166 | 4 | Jun 1491 (closing "xxi junij 1491"?) | y: P1 about 35 lines ~50%, P2 about 20 lines ~40%, P4 about 10 lines ~50% | **y, interlinear**: clear words written above the cipher groups on P1 and P2 ("a la traductione", "conclusione", "Lo Re de Hungaria" ...); P4 only partly glossed | ~1,140 | ~100 (P4 unglossed groups) |
+| R1167 | 7 | cipher letter closes "xxvj decembre 1491" (P3); clear copy "Strig. xxvj dec 1491" + postscript "Strig. 30 dec 1491, Idem Bel." | y: P1 about 31 lines ~90%, P2 about 33 lines ~95%, P3 about 7 lines, P4 postscript slip about 18 short lines ~85% | **y, parallel clear copy** P5-P6 (another hand, headed "Strigonio ... 1491 ... 30 Xbre", "Ill.ma madama mia: per un'altra mia in risposta de xxi del presente avisai ..."). Matched to the cipher by the shared opening, by clear words left in the cipher in the same order ("ma como ho dicto de sopra" P2 / P6; "significo a V.ra Ex.tia a ciò che" P3 / P6) and by the date; not aligned token by token | ~2,850 | 0 if the copy is complete (not yet aligned) |
+| R1095 | 2 | Mar 1493 (docket "1493 ... marzo"; closing "...marzo 1493") | **n** (all clear Italian, P2 address leaf) | n/a | 0 | 0 |
+| R1096 | 2 | 1493 (docket, month read as April?) | **n** (clear; P2 address) | n/a | 0 | 0 |
+| R1097 | 2 | 18 Jul 1493 (closing "18 julij 1493") | **n** (clear; P2 address) | n/a | 0 | 0 |
+
+Totals: about 5,060 cipher signs (measured-estimate) in four distinct letters (R1163 = R1164), of which about 100 have no period decipherment beside them (R1166 P4) and R1167's ~2,850 depend on its clear copy being complete. **R1095-R1097 carry no cipher at all** and none is dated 13 Feb 1493, so none is Berzeviczy no. CLXXXVIII (13 Feb 1493, to the duke): the CS-4 "possible match to print" is refuted; why DECODE files three clear 1493 letters as "Partially decrypted" graphic-sign records was not established.
+
+Consequence for the pool: this is not an open cryptanalysis pool. Every 1491 cipher passage seen has a period decipherment on the same record (slip, interlinear or full clear copy), i.e. the plaintext is known from period decipherments that Berzeviczy 1914 does not print (CS-4: no 1491 Costabili letter printed). What is left is a key-rebuild (grade C, `tools/interlinear_align.py`) and a reading of the unprinted 1491 decipherments, not an attack.
+
+Pool bar: FAIL (~100 open signs measured-estimate; ~5,060 cipher signs, all but ~100 beside a period decipherment). No spec and no first cheap test (brief step 3 is conditional on PASS).
 
 ## While waiting
 
 - Open one of R1163-1167 at 600 px contact-sheet scale in a single DECODE browser login (`tools/decode_browser_login.js`), count leaves with a clear Exemplum/interlinear gloss and measure signs per page; this depends on nobody but a login the owner's account holds (not done here, brief: no login).
 
-## Remaining gaps (CS-4, 4 Oct 2026)
-Read so far: 0 of ~4,860 estimated signs (unmeasured per page; nothing read, check-solved only)
-- R1163-1167 images (24 pp): gloss/Exemplum present, signs per page measured - blocker: not-attempted; images behind the DECODE login, never opened; next: one DECODE browser login, contact sheets of 2 records, ~$3
-- Ulászló-series editions (Fraknói, Nyáry) and Vestigia rows for Costabili 1491-93 - blocker: not-attempted; not reached in the 60-minute box; next: IA full-text plus Vestigia site search, ~$2
-- R1095-1097 against Berzeviczy no. CLXXXVIII (13 Feb 1493) - blocker: not-attempted; needs the images from the same login; next: compare the images in the same login, ~$1
+## Remaining gaps (COS-M, 4 Oct 2026)
+Read so far: 0 of ~5,060 measured-estimate cipher signs read by us; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table)
+- Key rebuild from the period decipherments (R1166 interlinear P1-P2 first, then the R1163 and R1165 slips and the R1167 clear copy) - blocker: not-attempted; images measured this job, alignment not in the brief; next: crop transcription of R1166 P1 (2 blind passes + reconciliation) and tools/interlinear_align.py, compared with decode-1168 key.tsv, ~$6
+- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align after the R1166 key exists, ~$5
+- R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; read once the rebuilt key exists; next: decode with the rebuilt key, ~$1
+- Ulaszlo-series editions (Fraknoi, Nyary) and Vestigia rows for Costabili 1491 - blocker: not-attempted; CS-4 did not reach them; next: IA full-text plus Vestigia site search for the four dated letters (12 Mar, 15 Jun, Jun, 26/30 Dec 1491), ~$2
 
 ## Escalation (4 Oct 2026)
 - [x] siblings: R1162 key/gloss and R1168 f.13 Exemplum read first (their folders), not reapplied here
-- [x] clear-pages: Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by whole-volume grep
-- [ ] known-keys: apply decode-1168 key.tsv to a sampled R1165 page with the band-shuffled control (MOD1162 method) once an image is cut
-- [x] print: Berzeviczy 1914 whole volume, no 1491 Costabili letter printed; Mátyás series ends 1490
-- [ ] key-rebuild: align a period gloss to the cipher once images show one (interlinear_align.py), after the image check
-- [ ] image-check: one DECODE login, contact sheets of R1163-1167, planned step above
-- [ ] retry: Ulászló-series and Vestigia search above, planned step
-Verdict: keep going: 3 internal gaps; cheapest next: R1095-1097 against no. CLXXXVIII in the same login, ~$1
+- [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
+- [ ] known-keys: apply decode-1168 key.tsv to R1166 P1 groups and compare with the interlinear gloss, as part of the key-rebuild step
+- [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
+- [ ] key-rebuild: interlinear_align.py on R1166 P1-P2 gloss, then the R1163/R1165 slips and R1167 copy; planned step above
+- [x] image-check: one DECODE login, all 31 images full size, per-page table above
+- [ ] retry: Ulaszlo-series and Vestigia search for the four 1491 dates, planned step above
+Verdict: keep going: 4 internal gaps; cheapest next: Ulaszlo-series and Vestigia search for the four 1491 dates, ~$2
 
-Pool bar: FAIL-PROVISIONAL (~4,860 estimated, unmeasured, upper bound; realistic 2,000-3,000 once clear text is subtracted; borderline vs >= 2,000 needed). If PASS after the image sample, cheapest first test: apply the decode-1168 key (key.tsv) to a sampled page's sign groups of R1165, matched control the band-shuffled key as in MOD1162, ~$3.
+Gate output (COS-M, 4 Oct 2026):
+    gaps_check: OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 3 step(s) untried
+    intake_gate_check: costabili-modena-1491: partial (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0)
