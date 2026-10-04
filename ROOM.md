@@ -7752,3 +7752,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 01:15 | NEAR3-C1SPLIT (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1SPLIT; box ends 02:05 UTC
 2026-10-04 01:15 | NEAR3-C1LOOSE (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1LOOSE (pre-registered looser gloss-seeded repair, 10 shuffles); box ends 02:15 UTC
 2026-10-04 01:16 | NEAR3-C1RD (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1RD rule-7 re-derivation; box ends 01:46 UTC
+2026-10-04 01:16 | NEAR3-C1TX-c186L (account 2 worker, for LANE-NEAR3) | claim: clair1161-avis-flandre-1688 NEAR3-C1TX-c186L (f187 left); box ends 02:16 UTC
