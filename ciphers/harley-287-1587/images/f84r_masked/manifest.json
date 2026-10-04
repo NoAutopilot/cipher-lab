@@ -1,0 +1,1624 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f84rM_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    714,
+    4400,
+    1020
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 380.55,
+    "b": -0.0108,
+    "peaks_kept": 12,
+    "half_height": 140,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     64,
+     178
+    ],
+    "peak": 142,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    651,
+    6650,
+    991
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 405.72,
+    "b": -0.0243,
+    "peaks_kept": 12,
+    "half_height": 140,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     48,
+     162
+    ],
+    "peak": 126,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    974,
+    4400,
+    1317
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 679.02,
+    "b": -0.02705,
+    "peaks_kept": 12,
+    "half_height": 138,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     62,
+     176
+    ],
+    "peak": 140,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    882,
+    6650,
+    1257
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 710.59,
+    "b": -0.04055,
+    "peaks_kept": 12,
+    "half_height": 138,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     59,
+     173
+    ],
+    "peak": 137,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    1252,
+    4400,
+    1583
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 941.29,
+    "b": -0.01929,
+    "peaks_kept": 12,
+    "half_height": 142,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     66,
+     180
+    ],
+    "peak": 144,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    1144,
+    6650,
+    1545
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1011.52,
+    "b": -0.04798,
+    "peaks_kept": 12,
+    "half_height": 142,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     66,
+     180
+    ],
+    "peak": 144,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    1546,
+    4400,
+    1885
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1250.8,
+    "b": -0.02812,
+    "peaks_kept": 12,
+    "half_height": 135,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     62,
+     176
+    ],
+    "peak": 140,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    1436,
+    6650,
+    1817
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1284.46,
+    "b": -0.04531,
+    "peaks_kept": 12,
+    "half_height": 135,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     59,
+     173
+    ],
+    "peak": 137,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L05_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    1781,
+    4400,
+    2138
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1499.62,
+    "b": -0.03246,
+    "peaks_kept": 11,
+    "half_height": 139,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     71,
+     185
+    ],
+    "peak": 149,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L05_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    1672,
+    6650,
+    2079
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1558.13,
+    "b": -0.05243,
+    "peaks_kept": 11,
+    "half_height": 139,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     64,
+     178
+    ],
+    "peak": 142,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L06_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    2070,
+    4400,
+    2419
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1786.61,
+    "b": -0.03411,
+    "peaks_kept": 11,
+    "half_height": 133,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     55,
+     169
+    ],
+    "peak": 133,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L06_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    2007,
+    6650,
+    2322
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 1735.47,
+    "b": -0.02025,
+    "peaks_kept": 11,
+    "half_height": 133,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     55,
+     169
+    ],
+    "peak": 133,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L07_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    2343,
+    4400,
+    2636
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2007.93,
+    "b": -0.01464,
+    "peaks_kept": 11,
+    "half_height": 129,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     54,
+     168
+    ],
+    "peak": 132,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L07_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    2256,
+    6650,
+    2611
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2071.85,
+    "b": -0.03962,
+    "peaks_kept": 11,
+    "half_height": 129,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     53,
+     167
+    ],
+    "peak": 131,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L08_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    2590,
+    4400,
+    2971
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2327.41,
+    "b": -0.03795,
+    "peaks_kept": 12,
+    "half_height": 144,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     69,
+     183
+    ],
+    "peak": 147,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L08_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    2566,
+    6650,
+    2878
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2256.07,
+    "b": -0.00979,
+    "peaks_kept": 12,
+    "half_height": 144,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     62,
+     176
+    ],
+    "peak": 140,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L09_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    2853,
+    4400,
+    3233
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2584.18,
+    "b": -0.03339,
+    "peaks_kept": 12,
+    "half_height": 149,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     66,
+     180
+    ],
+    "peak": 144,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L09_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    2845,
+    6650,
+    3152
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2486.13,
+    "b": 0.00379,
+    "peaks_kept": 12,
+    "half_height": 149,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     86,
+     200
+    ],
+    "peak": 164,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L10_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    3140,
+    4400,
+    3684
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2798.43,
+    "b": 0.09321,
+    "peaks_kept": 11,
+    "half_height": 158,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     57,
+     171
+    ],
+    "peak": 135,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L10_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    3376,
+    6650,
+    3773
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 2959.68,
+    "b": 0.03318,
+    "peaks_kept": 11,
+    "half_height": 158,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     74,
+     188
+    ],
+    "peak": 152,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L11_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    3542,
+    4400,
+    3903
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3252.05,
+    "b": -0.02402,
+    "peaks_kept": 12,
+    "half_height": 151,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     72,
+     186
+    ],
+    "peak": 150,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L11_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    3477,
+    6650,
+    3856
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3276.61,
+    "b": -0.03155,
+    "peaks_kept": 12,
+    "half_height": 151,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     82,
+     196
+    ],
+    "peak": 160,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L12_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    3795,
+    4400,
+    4218
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3535.89,
+    "b": -0.02339,
+    "peaks_kept": 12,
+    "half_height": 183,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     101,
+     215
+    ],
+    "peak": 179,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L12_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    3724,
+    6650,
+    4164
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3550.17,
+    "b": -0.03041,
+    "peaks_kept": 12,
+    "half_height": 183,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     124,
+     238
+    ],
+    "peak": 202,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L13_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    4252,
+    4400,
+    4620
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3952.7,
+    "b": -0.01295,
+    "peaks_kept": 12,
+    "half_height": 168,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     100,
+     214
+    ],
+    "peak": 178,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L13_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    4220,
+    6650,
+    4585
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 3945.26,
+    "b": -0.01216,
+    "peaks_kept": 12,
+    "half_height": 168,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     88,
+     202
+    ],
+    "peak": 166,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L14_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    4550,
+    4400,
+    4788
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 4168.01,
+    "b": 0.00093,
+    "peaks_kept": 10,
+    "half_height": 118,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     40,
+     154
+    ],
+    "peak": 118,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L14_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    4507,
+    6650,
+    4794
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 4223.68,
+    "b": -0.02079,
+    "peaks_kept": 10,
+    "half_height": 118,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     54,
+     168
+    ],
+    "peak": 132,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L15_s1.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    1950,
+    4783,
+    4400,
+    5054
+   ],
+   "lines_in_crop": 1,
+   "band": 15,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 4422.93,
+    "b": -0.00321,
+    "peaks_kept": 11,
+    "half_height": 132,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     55,
+     169
+    ],
+    "peak": 133,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  },
+  {
+   "crop": "f84rM_L15_s2.jpg",
+   "source_url": "",
+   "source_file": "f84r_canvas.png",
+   "box": [
+    4200,
+    4713,
+    6650,
+    5050
+   ],
+   "lines_in_crop": 1,
+   "band": 15,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 400 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     369,
+     647,
+     921,
+     1218,
+     1460,
+     1775,
+     1994,
+     2290,
+     2570,
+     2887,
+     3202,
+     3490,
+     3936,
+     4164,
+     4410
+    ]
+   },
+   "date": "04 Oct 2026",
+   "slope_fit": {
+    "a": 4486.27,
+    "b": -0.02993,
+    "peaks_kept": 11,
+    "half_height": 132,
+    "win": 400,
+    "local": true
+   },
+   "masked_rows": {
+    "keep": [
+     77,
+     191
+    ],
+    "peak": 155,
+    "rule": "peak-78..peak+36, rest white (gloss/mask_f84r.py)"
+   }
+  }
+ ]
+}
