@@ -1,0 +1,92 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T45		M	line start; b with small loop foot
+L01	2	T33		H	double-bar T shape
+L01	3	T45		M	
+L01	4	T83		M	ae ligature look
+L01	5	T19		H	pi
+L01	6	T18	T95	L	p with slash
+L01	7	X_NEW		L	digit-4 shape
+L01	8	X_NEW		L	7/angle shape
+L01	9	T78		H	bar-plus
+L01	10	T63	T56	M	v/gamma
+L01	11	T60	T86	M	hash
+L01	12	X_NEW		M	lowercase t
+L01	13	T19		H	
+L01	14	T58		H	
+L01	15	T53		H	
+L01	16	T96		H	
+L01	17	T70		H	
+L01	18	T25		H	
+L01	19	T19		H	
+L01	20	T83		M	
+L01	21	T60	T86	M	
+L01	22	T60	T86	L	hash read from L02 s2 top fragment
+L01	23	T80	T92	L	D partial
+L01	24	T60	T86	L	
+L01	25	T83		L	
+L01	26	T37		M	theta with bar
+L01	27	T85		M	
+L01	28	T92		M	
+L01	29	T95	T49	L	p with bar
+L01	30	T83		M	
+L01	31	T63		M	
+L01	32	T45		M	line end; unclear
+L02	1	T60		M	line start; hash
+L02	2	T45		M	
+L02	3	T98		M	
+L02	4	T25		H	
+L02	5	T90		M	
+L02	6	T97		M	
+L02	7	T45		M	
+L02	8	T65		M	
+L02	9	T60	T86	M	
+L02	10	T76		H	
+L02	11	T18	T36	M	
+L02	12	T45		M	
+L02	13	T37		H	
+L02	14	T36		M	
+L02	15	T52	T56	L	k-like swirl
+L02	16	T37		H	
+L02	17	T33		H	
+L02	18	T45		M	
+L02	19	T70		H	
+L02	20	T60		M	
+L02	21	T90		M	
+L02	22	T80		L	partial, cut by crop edge
+L02	23	?		L	gap, unreadable
+L02	24	T80		L	from L03 s3 top fragment
+L02	25	X_NEW		L	4-like with bar
+L02	26	T85		L	
+L02	27	T83		L	
+L02	28	T25		L	
+L02	29	T53		L	
+L02	30	T19		L	
+L02	31	T83		L	
+L02	32	T60		L	
+L02	33	T37		L	line end; fragment
+L03	1	T83		M	line start
+L03	2	T45		M	
+L03	3	T37		H	
+L03	4	X_NEW		M	digit 8
+L03	5	X_S		M	long s
+L03	6	X_NEW		M	t
+L03	7	T37		H	
+L03	8	T92		H	
+L03	9	T55		M	
+L03	10	T49	T66	L	p with cross
+L03	11	T19		H	
+L03	12	T85		H	
+L03	13	T76		H	
+L03	14	T63		H	
+L03	15	T37		H	
+L03	16	T83		H	
+L03	17	T92		H	
+L03	18	T45		H	
+L03	19	T60		H	
+L03	20	T45		H	
+L03	21	T85		H	
+L03	22	T46	X_NEW	M	digits 8 6 close
+L03	23	T90	T84	L	cross over b
+L03	24	T53		H	
+L03	25	T19		H	
+L03	26	T58		L	partial at crop bottom; line end cut

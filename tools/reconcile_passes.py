@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Align two or three blind transcription passes line by line and hand the reconciler only the disagreements.
+"""Align two or more blind transcription passes line by line and hand the reconciler only the disagreements.
 
   python3 tools/reconcile_passes.py passA.tsv passB.tsv [passC.tsv] [--out-dir DIR] [--crops DIR]
           [--method nw|difflib] [--halves] [--line-sub PAT REPL] [--split-chars] [--keep-dots] [--keep-plain] [--rows]
-          [--sign-map FILE]
+          [--sign-map FILE] [--vote] [--err-truth TRUTH.tsv]
 
 Lesson answered (LEDGER.md, 23-24 Sept 2026): every reconciler (Raince, Gramont, Paleologue) spent its first dollars
 recomputing the same alignment before it could look at a single disagreement. Scripts read, models judge: this does
@@ -52,7 +52,20 @@ Outputs in --out-dir (default: the folder of the first pass), nothing else is wr
 Prints the per-line table with --rows, always the overall figure and an agreed-H / agreed-uncertain / disagree
 line. Exit 0 (a bad confidence label exits non-zero before any output is written).
 
-Test: python3 tools/tests/test_reconcile_passes.py (Gramont f.30 passes reproduce reconcile_f30.py's 1195/2010; the
+N passes and voting (TX-VIEWS, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1, #10): any number of passes
+(two or more; more than three are named A, B, C, D ... in the outputs), typically one blind read per view written by
+tools/iiif_lines.py --views. --vote also writes vote.tsv (line, pos, sign, vote_share, votes, n_passes): per aligned
+column the plurality sign, emitted only when more passes have a sign there than a gap (a gap is a vote for "no sign"),
+a sign tie going to the earliest pass; vote_share = passes reading the emitted sign / all passes, so a 3-of-5 sign reads
+0.60. vote.tsv is in tools/tx_bench.py's format. The star alignment is on pass A, so put the strongest plain read first.
+--err-truth TRUTH.tsv (a benchmark truth file: line, pos, ref_sign, truth, status) scores every pass (and the vote) per
+scored truth position with tools/tx_bench.py's position_errors and writes err_corr.tsv, one row per pair of passes:
+errors of each, errors shared, shared with the SAME wrong sign, phi (the correlation of the two 0/1 error indicators
+over the positions both cover) and repeat = shared / errors of the first; low phi marks the pass pairs whose errors
+cancel in a vote (arXiv 2509.09722: the least-correlated views helped most). Without a truth file no correlation is
+reported: agreement with the consensus is not accuracy (LESSONS.md "Look-alike pass").
+
+Test: python3 tools/tests/test_reconcile_passes.py (N-pass vote and err_corr: tools/tests/test_reconcile_vote.py) (Gramont f.30 passes reproduce reconcile_f30.py's 1195/2010; the
 Danzay f.36 passes against the reconciled line reproduce the reconciler's 9/25 and 13/25; medium/m/unknown-label
 and an agreed M/M sign landing in uncertain.tsv are covered by the REC-CONF cases).
 """
@@ -198,9 +211,61 @@ def columns(seqs, method):
     return out
 
 
+CORR_HEAD = ['pass_i', 'pass_j', 'positions', 'err_i', 'err_j', 'both', 'same_wrong', 'phi', 'repeat_i_in_j']
+
+
+def err_corr(a, P, names, vote_rows=None):
+    """Pairwise error correlation of the passes (and the vote) on the scored positions of a benchmark truth file."""
+    import math
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import tx_bench
+    truth = tx_bench.read_tsv(a.err_truth)
+    seqs = {n_: {ln: [x[0] for x in v] for ln, v in p.items()} for n_, p in zip(names, P)}
+    if vote_rows is not None:
+        vl = collections.OrderedDict()
+        for ln, _, sg, *_ in vote_rows:
+            vl.setdefault(ln, []).append(sg)
+        seqs['vote'] = vl
+    errs, reads = {}, {}
+    for n_, lines in seqs.items():
+        errs[n_] = tx_bench.position_errors(truth, lines)
+        # the sign each pass put on each truth position (for "same wrong sign")
+        by_line = collections.defaultdict(list)
+        for r in truth:
+            by_line[r['line']].append(r)
+        rd_ = {}
+        for ln, rows in by_line.items():
+            if ln not in lines:
+                continue
+            rows.sort(key=lambda r: float(r['pos']))
+            ts = [set(filter(None, r['truth'].split('|'))) for r in rows]
+            for ri, osg in tx_bench.align([r['ref_sign'] for r in rows], ts, lines[ln]):
+                if ri is not None:
+                    rd_[(ln, rows[ri]['pos'])] = osg
+        reads[n_] = rd_
+    out, keys = [], list(seqs)
+    for i, p in enumerate(keys):
+        e = errs[p]
+        print(f"err_truth {p} ({a.passes[i] if i < len(a.passes) else 'vote'}): {sum(e.values())}/{len(e)} scored positions wrong")
+    for i, p in enumerate(keys):
+        for q in keys[i + 1:]:
+            common = sorted(set(errs[p]) & set(errs[q]))
+            x = [errs[p][k] for k in common]; y = [errs[q][k] for k in common]
+            n = len(common); ex, ey = sum(x), sum(y)
+            both = sum(1 for u, v in zip(x, y) if u and v)
+            same = sum(1 for k in common if errs[p][k] and errs[q][k] and reads[p].get(k) == reads[q].get(k))
+            den = math.sqrt(ex * (n - ex) * ey * (n - ey)) if n else 0
+            phi = (n * both - ex * ey) / den if den else float('nan')
+            out.append([p, q, n, ex, ey, both, same, round(phi, 3), round(both / ex, 3) if ex else float('nan')])
+    print('err_corr (pass_i pass_j positions err_i err_j both same_wrong phi repeat_i_in_j):')
+    for r in out:
+        print('  ' + '\t'.join(map(str, r)))
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('passes', nargs='+', help='two or three pass files; the first is the reference')
+    ap.add_argument('passes', nargs='+', help='two or more pass files; the first is the reference')
     ap.add_argument('--out-dir'); ap.add_argument('--crops', help='folder of line crops, matched by line id prefix')
     ap.add_argument('--method', choices=('nw', 'difflib'), default='nw')
     ap.add_argument('--halves', action='store_true'); ap.add_argument('--split-chars', action='store_true')
@@ -213,15 +278,20 @@ def main(argv=None):
     ap.add_argument('--no-write', action='store_true', help='print only (used by the test)')
     ap.add_argument('--sign-map', dest='sign_map_file',
                      help='TSV pass_reading<TAB>canonical[...]; substitutes each raw pass token before alignment')
+    ap.add_argument('--vote', action='store_true', help='also write vote.tsv: plurality sign and vote share per column')
+    ap.add_argument('--err-truth', help='benchmark truth TSV: write err_corr.tsv (pairwise error correlation of passes)')
     a = ap.parse_args(argv)
     a.flag = set(a.flag_conf.split(','))
     a.sign_map = load_sign_map(a.sign_map_file) if a.sign_map_file else {}
-    if not 2 <= len(a.passes) <= 3:
-        ap.error('give two or three pass files')
+    if len(a.passes) < 2:
+        ap.error('give two or more pass files')
+    if len(a.passes) > 26:
+        ap.error('at most 26 passes')
     loaded = [load_pass(p, a) for p in a.passes]
     P = [d for d, _ in loaded]
     any_gloss = any(hg for _, hg in loaded)
-    names = 'ABC'[:len(P)]
+    names = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[:len(P)]
+    votes = []
     lines = list(P[0]) + [l for p in P[1:] for l in p if l not in P[0]]
     lines = list(dict.fromkeys(lines))
     crops = sorted(os.listdir(a.crops)) if a.crops and os.path.isdir(a.crops) else []
@@ -243,6 +313,13 @@ def main(argv=None):
         for k, c in enumerate(cols, 1):
             signs = [x[0] if x else '-' for x in c]
             levels = [x[1] if x else None for x in c]
+            if a.vote:
+                pres = [s_ for s_ in signs if s_ != '-']
+                if len(pres) > len(signs) - len(pres):
+                    cnt = collections.Counter(pres)
+                    top = max(cnt.values())
+                    vs = next(s_ for s_ in signs if s_ != '-' and cnt[s_] == top)
+                    votes.append([ln, vs, top, len(signs)])
             flagged = [n_ for n_, lv in zip(names, levels) if lv in a.flag]
             present = [s for s in signs if s != '-']
             same = len(set(signs)) == 1
@@ -288,8 +365,20 @@ def main(argv=None):
         gshare = tot_gloss_agree / tot_gloss_cols if tot_gloss_cols else 1
         print(f"gloss agreement (aligned columns where every pass wrote a gloss): "
               f"{tot_gloss_agree}/{tot_gloss_cols} = {gshare:.1%}")
+    vote_rows, pos_by_line = [], collections.Counter()
+    for ln, vs, top, n_ in votes:
+        pos_by_line[ln] += 1
+        vote_rows.append([ln, str(pos_by_line[ln]), vs, f'{top / n_:.2f}', str(top), str(n_)])
+    if a.vote:
+        low = sum(1 for r in vote_rows if int(r[4]) * 2 <= int(r[5]))
+        print(f"vote: {len(vote_rows)} signs from {len(P)} passes; mean vote share "
+              f"{(sum(float(r[3]) for r in vote_rows) / len(vote_rows)) if vote_rows else 0:.3f}; "
+              f"{low} signs at or below half the passes")
+    corr_rows = []
+    if a.err_truth:
+        corr_rows = err_corr(a, P, names, vote_rows if a.vote else None)
     if a.no_write:
-        return dict(agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft, uncertain=uncertain,
+        return dict(votes=vote_rows, err_corr=corr_rows, agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft, uncertain=uncertain,
                      agreed_h=agreed_h, gloss_agree=tot_gloss_agree, gloss_cols=tot_gloss_cols)
     out = a.out_dir or os.path.dirname(os.path.abspath(a.passes[0]))
     os.makedirs(out, exist_ok=True)
@@ -303,8 +392,12 @@ def main(argv=None):
     w('ciphertext_draft.tsv', draft_head, draft)
     w('agreement.tsv', ['line'] + [f'signs_{n_}' for n_ in names] + ['agree', 'columns', 'share'],
       [[ln] + [str(x) for x in ns] + [str(ag), str(n), f'{ag / n:.3f}' if n else '1.000'] for ln, ns, ag, n in agr_rows])
-    print('wrote', ', '.join(os.path.join(out, f)
-          for f in ('disagreements.tsv', 'uncertain.tsv', 'ciphertext_draft.tsv', 'agreement.tsv')))
+    written = ['disagreements.tsv', 'uncertain.tsv', 'ciphertext_draft.tsv', 'agreement.tsv']
+    if a.vote:
+        w('vote.tsv', ['line', 'pos', 'sign', 'vote_share', 'votes', 'n_passes'], vote_rows); written.append('vote.tsv')
+    if a.err_truth:
+        w('err_corr.tsv', CORR_HEAD, [[str(x) for x in r] for r in corr_rows]); written.append('err_corr.tsv')
+    print('wrote', ', '.join(os.path.join(out, f) for f in written))
     return 0
 
 

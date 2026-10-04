@@ -25,6 +25,12 @@ error already in the reference transcription; err_true is therefore a lower boun
 truth-set member alike, so a reader that was given a coarser label inventory than the reconciler (one label for two
 glyphs the reconciler later split) is scored on glyph identity, not on notation (CLAUDE.md rule 3, PX-BRODEC). Report
 the mapped and unmapped scores side by side (TXB2, 3 Oct 2026).
+--paired BASE.tsv (TX-VIEWS, 4 Oct 2026): also score BASE and compare each OUTPUT with it position by position on the same
+scored truth signs: fixed = wrong (or deleted) in BASE and right in OUTPUT, broken = the reverse, with a two-sided exact
+sign test p on fixed vs broken (insertions are not position-level and are left out of the paired count; they stay in
+err_true). A change is adopted on the paired count, never on two overlapping Wilson intervals
+(research/TRANSCRIPTION-PRACTICE-2026-10-04.md, Top 5 preamble). position_errors() is the shared per-position scorer
+(tools/reconcile_passes.py --err-truth uses it for pairwise error correlation).
 Exit 0 always on a clean score; exit 2 on bad input.
 """
 import argparse, csv, json, math, os, sys
@@ -135,6 +141,43 @@ def score_item(truth_rows, out_lines):
     return res
 
 
+def position_errors(truth_rows, out_lines):
+    """{(line, pos): True if wrong or deleted} over the scored truth positions of lines the output covers."""
+    by_line = defaultdict(list)
+    for r in truth_rows:
+        by_line[r['line']].append(r)
+    errs = {}
+    for ln, rows in by_line.items():
+        if ln not in out_lines:
+            continue
+        rows.sort(key=lambda r: float(r['pos']))
+        ref = [r['ref_sign'] for r in rows]
+        ts = [set(filter(None, r['truth'].split('|'))) for r in rows]
+        for ri, osg in align(ref, ts, out_lines[ln]):
+            if ri is None or rows[ri]['status'] != 'scored':
+                continue
+            errs[(ln, rows[ri]['pos'])] = osg is None or osg not in ts[ri]
+    return errs
+
+
+def sign_test(fixed, broken):
+    """Two-sided exact binomial sign test p for fixed vs broken (p = 0.5)."""
+    n, k = fixed + broken, min(fixed, broken)
+    if n == 0:
+        return 1.0
+    tail = sum(math.comb(n, i) for i in range(k + 1)) / 2 ** n
+    return min(1.0, 2 * tail)
+
+
+def paired(truth_rows, base_lines, out_lines):
+    eb, eo = position_errors(truth_rows, base_lines), position_errors(truth_rows, out_lines)
+    common = set(eb) & set(eo)
+    fixed = sum(1 for k in common if eb[k] and not eo[k])
+    broken = sum(1 for k in common if not eb[k] and eo[k])
+    return dict(n=len(common), fixed=fixed, broken=broken, p=round(sign_test(fixed, broken), 4),
+                base_wrong=sum(eb[k] for k in common), out_wrong=sum(eo[k] for k in common))
+
+
 def summarise(res):
     k = res['wrong'] + res['deleted'] + res['inserted']
     n = res['scored']
@@ -151,7 +194,32 @@ def main(argv=None):
     ap.add_argument('--top', type=int, default=8)
     ap.add_argument('--json', action='store_true')
     ap.add_argument('--label-map', help='TSV from/to: rename labels in output, reference and truth before scoring')
+    ap.add_argument('--paired', metavar='BASE.tsv', help='paired fixed/broken count of each OUTPUT against BASE (sign test)')
     a = ap.parse_args(argv)
+    if a.paired:
+        rc = 0
+        for o in a.outputs:
+            rc |= main([x for x in (argv or sys.argv[1:]) if x not in a.outputs and x != a.paired and x != '--paired']
+                       + [o]) or 0
+            base_lines, out_lines = load_output([a.paired], a.line_prefix), load_output([o], a.line_prefix)
+            lm = load_label_map(a.label_map) if a.label_map else None
+            if lm:
+                base_lines = {k: [lm.get(x, x) for x in v] for k, v in base_lines.items()}
+                out_lines = {k: [lm.get(x, x) for x in v] for k, v in out_lines.items()}
+            base = os.path.dirname(os.path.abspath(a.bench))
+            for item in read_tsv(a.bench):
+                if a.item and item['item'] not in a.item:
+                    continue
+                truth = read_tsv(os.path.join(base, item['truth']))
+                if lm:
+                    truth = map_truth(truth, lm)
+                if not any(r['line'] in out_lines for r in truth):
+                    continue
+                pr = paired(truth, base_lines, out_lines)
+                print('paired %s vs %s on %s: %d common scored signs; base wrong %d, output wrong %d; fixed %d, broken %d; '
+                      'sign test p = %.4f' % (os.path.basename(o), os.path.basename(a.paired), item['item'], pr['n'],
+                                              pr['base_wrong'], pr['out_wrong'], pr['fixed'], pr['broken'], pr['p']))
+        return rc
     if not os.path.exists(a.bench):
         print('tx_bench: no bench file %s' % a.bench, file=sys.stderr); return 2
     base = os.path.dirname(os.path.abspath(a.bench))
