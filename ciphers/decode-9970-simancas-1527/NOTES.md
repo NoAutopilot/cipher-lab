@@ -172,3 +172,7 @@ no cipher (section above). Next action that depends on nobody: report the catalo
 imaged is a catalogue correction, and the 1527 letter is a separate search. Two things remain: a search for the letter's own
 location (Galende 1994 p. 163, Simancas Estado leg. 1563 neighbouring folios via PARES when reachable), and a read of
 "Antonio Fucar" at full size if a later worker needs the date.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: locate the 1527 letter itself -- read Galende 1994 p.163 (on disk in a dbourdeau/cyphersolver clone, esp318/lit/galende1994.txt) for its Simancas Estado leg. 1563 citation, then grep Aymeloglu's cached PARES sweep (catalogue/pares-*.jsonl; PARES itself is dead from the cloud) for the neighbouring folios; ~$1 (estimate). The image blocker is already cleared (IMG-DECODE1).

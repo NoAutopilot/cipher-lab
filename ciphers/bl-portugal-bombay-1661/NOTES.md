@@ -106,3 +106,7 @@ Found: contemporary and modern decipherments recorded in the holding catalogue. 
 ## Request counts (CS-A2-D)
 
 archive.org 5 (2 advancedsearch, 2 djvu downloads, 1 search), googleapis books 4 + books.google.com 2 (302 then 429, stopped), catalog.hathitrust.org 1, data.htrc.illinois.edu 1, openlibrary.org 1, searcharchives.bl.uk 1, github.com 2 clones, WebSearch 7.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: continue the DigitArq sweep of ANTT PT/TT/LMP/0001 (Sande's embassy, 592 images, 8.4% sampled by PP-01, no cipher leaf isolated; Premise check (c) names a Portuguese-side copy with decipherment as plausible, not checked) for cipher leaves, with tools/digitarq_fetch.py thumbnails (>= 3 s, <= 150 requests) and tools/numeral_page_detect.py; ~$2 (estimate). Prestage 1925 page text stays the owner-browser step.

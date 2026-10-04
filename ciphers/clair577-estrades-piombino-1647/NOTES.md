@@ -50,3 +50,7 @@ images) and its siblings 9431 (Clair 574, Brasset) and 9432 (Clair 580, Mme d'Es
 and the re-fetch command are in `ciphers/clair571-estrades-1645/keys_decode/manifest.json` and in that folder's NOTES.md
 section "DECODE key records 9430 / 9431 / 9432". This folder's own leaf (Clair 577, see REQUEST.md / NOTES above) has still not
 been seen, so nothing has been applied to it.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+Nothing depends on anyone: the ciphertext (Clairambault 577 p.521) is not digitised and waits on ASKS row 94 / this folder's REQUEST.md (or a person asking Tomokiyo or Lasry for their image); Saint-Leger/Lemaire and Cheruel's Mazarin vols 2-3 are already searched.

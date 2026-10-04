@@ -590,3 +590,7 @@ Comment threads: no hit is a blog post about these letters, so there was no rele
 - (d) **Recipient-side editions.** Found, already known: the recipient is Walsingham, whose side is CSP Scotland vi (Boyd 1910), already used (AUDIT.md section 10; NEXT-BOW snippets). The Scottish side holds no recipient for an English ambassador's report. Nothing new.
 
 Requests this pass: searcharchives.bl.uk 1 (via WebFetch); github.com 2 (shallow clones, shared with the other two targets).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the known-keys rung this folder's Verdict names as cheapest -- Tomokiyo's Walsingham-Wotton 1585 reconstruction (elizabeth.htm images) tried against the code layer (85, 0100 and the M codes) plus one TNA Discovery API search, ~$2. LOCAL-QUEUE L44 and the BL reproduction (gap 6) stay the outside blockers.

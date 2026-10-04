@@ -146,3 +146,7 @@ sender-and-recipient edition and is the unread blocker. For 1560-64 (Farnese to 
 
 Searches/requests this worker: searcharchives.bl.uk 2; archive.org (advancedsearch 5, djvu downloads 27, fts 3); googleapis books 4; catalog.hathitrust.org 2;
 openlibrary 1; github.com clone 2; dspace.ut.ee 1; WebSearch 10.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the cloud half of the stated next step -- look for a full-view copy of Cardauns 1909 (Nuntiaturberichte 1. Abt. Bd. 5) under a different title (an IA or Google Books 'bub_gb_' scan not indexed by 'Nuntiaturberichte'; Google Books API with country=US), then phrase-search the 8716 incipits quoted above; ~$1 (estimate). The HathiTrust/Staatsbibliothek copy stays the owner-runner fallback.

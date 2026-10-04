@@ -72,3 +72,7 @@ DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and lat
 - (d) not found/unreachable: the Spanish-side literature on the Carafa-Stigliano marriage (Sabbioneta/Gonzaga) was not opened; a search of Simancas/Sabbioneta studies for Este dispatches is the next step.
 
 Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the step this folder's own pass (d) names -- a full-text search (archive.org be-api/advancedsearch, Google Books API with key and country=US) of the Spanish-side literature on the Carafa-Stigliano marriage (Sabbioneta/Gonzaga studies, Simancas) for Belmesseri's Este dispatches of 1627-28 and any printed decipherment of their cipher; one Sonnet worker, ~$1.5 (estimate). The image itself stays an archive request.

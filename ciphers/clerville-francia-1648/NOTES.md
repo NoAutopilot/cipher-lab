@@ -78,3 +78,7 @@ Verdict: blocked. No solution, key, plaintext or documented attempt was found in
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the step this folder's own pass (d) names -- a Gallica (SRU/ContentSearch) and archive.org full-text search of the 27 April 1648 date with the Este envoy's names in the French-side editions (Cheruel's Lettres du cardinal Mazarin, Recueil des instructions), ~$1 (estimate).

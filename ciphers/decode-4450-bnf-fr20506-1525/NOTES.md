@@ -657,3 +657,7 @@ are search results, not a novelty verdict.
 Next step for this target: the blocker stays Bourdeau's "no-key-material". New material could come from an inquiry to
 ASV Vercelli, Fondo Arborio di Gattinara, asking whether the chancellor's papers hold cipher tables for 1527-29
 (owner-side, an outreach draft). The cheaper desk-side option is the optional f.2/f.4 initial-letter test above (~$3).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: the optional f.2/f.4 initial-letter test this folder names as its cheaper desk-side option (~$3); the Vercelli (Fondo Arborio di Gattinara) inquiry stays owner-side outreach.

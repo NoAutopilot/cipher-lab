@@ -239,3 +239,7 @@ Solver repositories, shallow clones 3 Oct 2026, grep only: dbourdeau/cyphersolve
 (c) Physical neighbours (interlinear decipherment on the leaf, facing page, slip): unreachable -- no image of /123 or /126 openable (DECODE full-size blocked, bdh.bne.es 403, catalogo.bne.es JS/400).
 (d) Recipient/sender-side editions: unreachable beyond the above -- Galende Diaz (read earlier by another worker) names /56 and /73 only; Spanish documentary editions of Ferdinand-John II correspondence not opened this pass (no full-text route found).
 Verdict stays blocked; the unblocking step is unchanged (ASKS row 45, or a BNE record/image route). Requests this pass: WebSearch 8, WebFetch 3 (cryptiana.blogspot.com, google search), web.archive.org 2, cryptiana.web.fc2.com 1, catalogo.bne.es 1, github.com 2 clones.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: one DECODE browser login (tools/decode_browser_login.js with --guess-fullsize, the A2-HDK route that served R4692's full-size image on 2 Oct 2026) to re-test whether R1172 (/123) and the Decrypted sibling R1180 (/126) serve full-size images or plaintext documents; image to scratch, never committed; ~$1 (estimate). ASKS row 45 (Tomokiyo 2018 body) stays the outside blocker for the key.

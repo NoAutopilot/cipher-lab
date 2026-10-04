@@ -593,3 +593,7 @@ images are not reachable from the cloud (IIIF dead since 2023), so this is an ow
 extract matches a despatch it is a crib (grade C) for the un-glossed 1816 set. Not in this folder or in Bourdeau's before
 this pass (grep 'Heytesbury', '41525', 2 Oct 2026). No Neapolitan or Italian documentary edition of Circello's
 incoming despatches was located (Treccani DBI biography only, Bourdeau; searches 1-3 above).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026)
+
+- Action that depends on nobody: draft the two requests the Remaining gaps name but nobody has written (no REQUEST.md in this folder, no ASKS row, checked 4 Oct 2026): a REQUEST.md and ASKS.md row for BL Add MS 41525 f.38 (the 1816-17 Castelcicala-Circello clear-text extracts, Premise check (d)) and one to ASNa (Esteri busta 2337, the Segreteria cipher holdings) asking whether the 1816-23 codebook or decipher copies survive; ~$2. Sending is the owner's.
