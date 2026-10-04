@@ -1346,3 +1346,18 @@ Wallenstein/Fridlandus, Dantiscum, Polonia, Brandenburg, Dania, Hollandia/Ordine
 not evidence. Next (desk, ~5 min): Riksarkivet AO search (sok.riksarkivet.se/oxenstierna), Efternamn = Camerarius, Datum 1628:
 list each 1628 letter Camerarius -> AO (date, place, Innehåll), to see whether any is described as in cipher or matches R4282's
 date. 'dubitatur'/'chiffer' counts in AOSB I:4 still to confirm.
+
+### Lead: AOSB I:4 prints Oxenstierna cipher passages WITH their cipher numbers (owner's screenshot, 4 Oct 2026 ~20:0x UTC)
+Index p. 804: "Chiffer (»cyphrer«) i bref, 341, 342, 715." Letter no. 231, Oxenstierna to Paul Strasburg (Swedish envoy to
+Transylvania), Elbing 24 Jan 1629, p. 341: the words between asterisks are printed in clear (e.g. "*Quas nunc cum Principis
+Transylvaniae Legato dedisti*", "*ipsum Legatum convenire non liceat*", "*Quae scribis mihi de statu rerum, consiliis et
+intentione Turcae, Moschi, Tartari*", "*et quantocius ad Regem meum referam*", "*habiturus sis prima opportunitate*"), and
+footnote 2 says: "De inom asterisker inneslutna orden äro i originalet skrifna med chiffer, som där ej är upplöst, men hvartill
+klaven finnes i Riksarkivet:" followed by the cipher as printed, footnote by footnote (start of fn 2 as seen at screenshot
+resolution, to be re-read: "17, 12, 65, 24, 50, 30, 60. λ. H. II. 1775, 959, 13, 37, 21, 62, 65, 18, 70, Q, O, 39, 12, 58, 68,
+62, 38, 78, ..."). So: (a) a 1629 Oxenstierna chancery cipher -- two-digit numbers mixed with Greek/Latin letter signs and
+3-4-digit codes -- printed beside its plaintext (known-plaintext pairs, period key: the editors cite the key in Riksarkivet);
+(b) its shape (two-digit homophones + letter signs + large codes) is close to both R4284 (numeric homophonic, 108 values) and
+R4282 (letters, Greek signs, digits). Hypothesis to test, not evidence: same chancery key family. Needed: legible screenshots
+of pp. 341-342 (all footnotes) and p. 715 (owner, desk); then a pre-registered crossmatch of the printed pairs against
+R4284/R4282 (tools/ crossmatch, control first).
