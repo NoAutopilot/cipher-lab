@@ -35,3 +35,17 @@ same controls scored under f159's own tool-assigned language model.
 Either way the result is about the tool's statistic, not a reading. The by-eye read (30 tokens of ciphertext_74
 under f159 and under AVS's own key_74.tsv, letter-for-letter agreement count) is reported beside it and does
 not change the rule above.
+
+## Amendment A (04:3x UTC, after the selection step, before any control statistic was computed)
+The selection step ran (`xm_control.py`) and found 0 qualifying keys: of every letter-alphabet key of 20-58 letters
+on disk outside the two folders, none reaches coverage 0.5 on even one of the three AVS ciphertexts (highest:
+decode-1168-modena-costabili-1492/key.tsv 0.45/0.39/0.48; dupuy468-anhalt/key_from_gloss.tsv 0.42/0.41/0.43;
+na-suriname-map-1781/key_period_codes.tsv 0.40/0.36/0.39). The pre-registered relaxation also selects nothing.
+f159 itself covers 0.52-0.57, so it sits just over the tool's coverage floor, and the floor alone would stop every
+size-matched control from being scored -- a non-test by construction. Amended control, fixed now: the three
+real (not shuffled/scratch: no 'shuf' in the path), distinct-folder letter-alphabet keys of 20-58 letters with the
+highest minimum coverage over the three ciphertexts are scored with the same `pair_stats` statistic, the
+coverage floor bypassed for the control only (f159 is scored identically, floor or not). Decision rule unchanged
+except "coverage >= 0.5" is dropped for the control side: a control reaching stat >= 3.292 on any of the three
+ciphertexts at coverage >= 0.35 marks the lead "generic letter-frequency artefact". Coverage of every control
+pair is reported beside its stat.
