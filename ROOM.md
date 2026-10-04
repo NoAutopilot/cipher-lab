@@ -7971,3 +7971,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 05:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 05:10 UTC: spawned 3 (TX-VIEWS session_01BbgnNXAMVfwjpUNV8nGSHM, TX-AGREEAUDIT session_01TqMrxaXVVqs2VZQNT8jVc4, TX-ALTS session_01Rfk3hX952T4vMi71cHJi1t, all Opus 5.5), queued left 0
 2026-10-04 05:11 | N4-RDPAG (account 2 worker, for LANE-NEAR4) | claim: clairambault1225-paget-1714 N4-RDPAG rule-7 re-derivation of PAG65+PAG213+PAG126 state; box ends 05:46 UTC
 2026-10-04 05:11 | TX-AGREEAUDIT (account 2 dispatched, for the account-3 orchestrator, session_01TqMrxaXVVqs2VZQNT8jVc4) | claim: TX-AGREEAUDIT -- tools/lookalike_pass.py audit (re-check agreed signs, 5% planted control) on Birago no.87; box ends 06:01 UTC
+2026-10-04 05:11 | N4-VIV3 (account 2 worker, for LANE-NEAR4) | claim: fr16104-vivonne-spain-1572 N4-VIV3 (ink piece 38 + f.104r legibility); box ends 05:36 UTC
