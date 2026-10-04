@@ -1,0 +1,9 @@
+cell	key86	fitted	fit_F_A	fit_F_fitted	held	armA	single_cell	joint	degenerate	gate_joint	cell_pass
+T45	o	u	1.2581	1.31	f275r	0.6471	0.6471	0.6558	0.6431	False	False
+T45	o	u	1.2581	1.31	f301v	0.6302	0.6328	0.6631	0.6444	False	False
+T47	m	f	1.2581	1.31	f275r	0.6471	0.6471	0.6558	0.6431	False	False
+T47	m	f	1.2581	1.31	f301v	0.6302	0.6328	0.6631	0.6444	False	False
+T49	s	s	1.2581	1.31	f275r	0.6471		0.6558	0.6431	False	False
+T49	s	s	1.2581	1.31	f301v	0.6302		0.6631	0.6444	False	False
+T57	la	n	1.2581	1.31	f275r	0.6471	0.6544	0.6558	0.6431	False	False
+T57	la	n	1.2581	1.31	f301v	0.6302	0.6578	0.6631	0.6444	False	False

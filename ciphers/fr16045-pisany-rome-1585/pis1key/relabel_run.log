@@ -1,3 +1,10 @@
 tx86/ciphertext_f244r.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6771, 'keyshuffle_p99': 0.3517, 'order_p99': 0.4254, 'above_both': True}
 tx86/passA.tsv {'tokens': 366, 'dropped': 52, 'decoded_letters': 412, 'score': 0.6869, 'keyshuffle_p99': 0.3664, 'order_p99': 0.4539, 'above_both': True}
 tx86/passB.tsv {'tokens': 394, 'dropped': 0, 'decoded_letters': 433, 'score': 0.7021, 'keyshuffle_p99': 0.35, 'order_p99': 0.4342, 'above_both': True}
+pis1key/tx_relabel/tx86_ciphertext_f244r.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6949, 'keyshuffle_p99': 0.3509, 'order_p99': 0.4321, 'above_both': True}
+pis1key/tx_relabel/tx86_passA.tsv {'tokens': 366, 'dropped': 52, 'decoded_letters': 412, 'score': 0.6942, 'keyshuffle_p99': 0.3664, 'order_p99': 0.4563, 'above_both': True}
+pis1key/tx_relabel/tx86_passB.tsv {'tokens': 394, 'dropped': 0, 'decoded_letters': 433, 'score': 0.7206, 'keyshuffle_p99': 0.3507, 'order_p99': 0.4365, 'above_both': True}
+f244r control 5 /5
+tx86e/ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 717, 'score': 0.6471, 'keyshuffle_p99': 0.4678, 'order_p99': 0.4965, 'above_both': True}
+tx86e/passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0.6308, 'keyshuffle_p99': 0.468, 'order_p99': 0.488, 'above_both': True}
+tx86e/passB.tsv {'tokens': 540, 'dropped': 7, 'decoded_letters': 695, 'score': 0.659, 'keyshuffle_p99': 0.4661, 'order_p99': 0.4921, 'above_both': True}

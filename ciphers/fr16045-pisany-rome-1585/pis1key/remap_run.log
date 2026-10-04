@@ -1,1 +1,6 @@
 fitted remap {'T45': 'u', 'T47': 'f', 'T57': 'n'} F 1.3099952153607721
+tx86e/ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 706, 'score': 0.6558, 'keyshuffle_p99': 0.4665, 'order_p99': 0.4958, 'above_both': True}
+f275r {'armA': 0.6471, 'degenerate': 0.6431, 'old_armB_noT31': 0.6558, 'single_cell': {'T45': 0.6471, 'T47': 0.6471, 'T57': 0.6544}, 'random_remap_gain': {'mean': -0.0027, 'p95': 0.0016, 'max': 0.0044}, 'fitted': {'tokens': 554, 'dropped': 7, 'decoded_letters': 706, 'score': 0.6558, 'keyshuffle_p99': 0.4665, 'order_p99': 0.4958, 'above_both': True}, 'G1': True, 'G2': True, 'G3': True, 'G4': True}
+tx87/ciphertext_f301v.tsv {'tokens': 315, 'dropped': 15, 'decoded_letters': 374, 'score': 0.6631, 'keyshuffle_p99': 0.3955, 'order_p99': 0.4786, 'above_both': True}
+f301v {'armA': 0.6302, 'degenerate': 0.6444, 'old_armB_noT31': 0.6631, 'single_cell': {'T45': 0.6328, 'T47': 0.6328, 'T57': 0.6578}, 'random_remap_gain': {'mean': 0.0103, 'p95': 0.0169, 'max': 0.0329}, 'fitted': {'tokens': 315, 'dropped': 15, 'decoded_letters': 374, 'score': 0.6631, 'keyshuffle_p99': 0.3955, 'order_p99': 0.4786, 'above_both': True}, 'G1': True, 'G2': True, 'G3': False, 'G4': True}
+gate_joint False cell_pass {'T45': False, 'T47': False, 'T57': False}

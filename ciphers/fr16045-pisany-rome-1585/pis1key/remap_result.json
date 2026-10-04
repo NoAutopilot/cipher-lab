@@ -1,0 +1,225 @@
+{
+ "fit_log": [
+  {
+   "start": "key86",
+   "F": 1.2581
+  },
+  {
+   "round": 0,
+   "cell": "T45",
+   "value": "u",
+   "F": 1.2693
+  },
+  {
+   "round": 0,
+   "cell": "T47",
+   "value": "f",
+   "F": 1.2759
+  },
+  {
+   "round": 0,
+   "cell": "T49",
+   "value": "s",
+   "F": 1.2759
+  },
+  {
+   "round": 0,
+   "cell": "T57",
+   "value": "n",
+   "F": 1.31
+  },
+  {
+   "round": 1,
+   "cell": "T45",
+   "value": "u",
+   "F": 1.31
+  },
+  {
+   "round": 1,
+   "cell": "T47",
+   "value": "f",
+   "F": 1.31
+  },
+  {
+   "round": 1,
+   "cell": "T49",
+   "value": "s",
+   "F": 1.31
+  },
+  {
+   "round": 1,
+   "cell": "T57",
+   "value": "n",
+   "F": 1.31
+  }
+ ],
+ "fitted_remap": {
+  "T45": "u",
+  "T47": "f",
+  "T57": "n"
+ },
+ "fit_F_armA": 1.2581,
+ "fit_F_fitted": 1.31,
+ "degenerate_remap": {
+  "T45": "e",
+  "T47": "e",
+  "T49": "e",
+  "T57": "e"
+ },
+ "held": {
+  "f275r": {
+   "armA": 0.6471,
+   "degenerate": 0.6431,
+   "old_armB_noT31": 0.6558,
+   "single_cell": {
+    "T45": 0.6471,
+    "T47": 0.6471,
+    "T57": 0.6544
+   },
+   "random_remap_gain": {
+    "mean": -0.0027,
+    "p95": 0.0016,
+    "max": 0.0044
+   },
+   "fitted": {
+    "tokens": 554,
+    "dropped": 7,
+    "decoded_letters": 706,
+    "score": 0.6558,
+    "keyshuffle_p99": 0.4665,
+    "order_p99": 0.4958,
+    "above_both": true
+   },
+   "control": {
+    "seeds": [
+     {
+      "seed": 0,
+      "N": 706,
+      "score": 0.6644,
+      "keyshuffle_p99": 0.4556,
+      "order_p99": 0.4595,
+      "pass": true
+     },
+     {
+      "seed": 1,
+      "N": 706,
+      "score": 0.7434,
+      "keyshuffle_p99": 0.4518,
+      "order_p99": 0.4642,
+      "pass": true
+     },
+     {
+      "seed": 2,
+      "N": 706,
+      "score": 0.6804,
+      "keyshuffle_p99": 0.4505,
+      "order_p99": 0.4564,
+      "pass": true
+     },
+     {
+      "seed": 3,
+      "N": 706,
+      "score": 0.6716,
+      "keyshuffle_p99": 0.4514,
+      "order_p99": 0.4576,
+      "pass": true
+     },
+     {
+      "seed": 4,
+      "N": 706,
+      "score": 0.6846,
+      "keyshuffle_p99": 0.4524,
+      "order_p99": 0.4587,
+      "pass": true
+     }
+    ],
+    "passed": 5,
+    "pass": true
+   },
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "G4": true
+  },
+  "f301v": {
+   "armA": 0.6302,
+   "degenerate": 0.6444,
+   "old_armB_noT31": 0.6631,
+   "single_cell": {
+    "T45": 0.6328,
+    "T47": 0.6328,
+    "T57": 0.6578
+   },
+   "random_remap_gain": {
+    "mean": 0.0103,
+    "p95": 0.0169,
+    "max": 0.0329
+   },
+   "fitted": {
+    "tokens": 315,
+    "dropped": 15,
+    "decoded_letters": 374,
+    "score": 0.6631,
+    "keyshuffle_p99": 0.3955,
+    "order_p99": 0.4786,
+    "above_both": true
+   },
+   "control": {
+    "seeds": [
+     {
+      "seed": 0,
+      "N": 374,
+      "score": 0.7281,
+      "keyshuffle_p99": 0.363,
+      "order_p99": 0.4401,
+      "pass": true
+     },
+     {
+      "seed": 1,
+      "N": 374,
+      "score": 0.7624,
+      "keyshuffle_p99": 0.3597,
+      "order_p99": 0.44,
+      "pass": true
+     },
+     {
+      "seed": 2,
+      "N": 374,
+      "score": 0.7277,
+      "keyshuffle_p99": 0.3673,
+      "order_p99": 0.4371,
+      "pass": true
+     },
+     {
+      "seed": 3,
+      "N": 374,
+      "score": 0.6195,
+      "keyshuffle_p99": 0.3621,
+      "order_p99": 0.4283,
+      "pass": true
+     },
+     {
+      "seed": 4,
+      "N": 374,
+      "score": 0.6716,
+      "keyshuffle_p99": 0.3591,
+      "order_p99": 0.4365,
+      "pass": true
+     }
+    ],
+    "passed": 5,
+    "pass": true
+   },
+   "G1": true,
+   "G2": true,
+   "G3": false,
+   "G4": true
+  }
+ },
+ "gate_joint": false,
+ "cell_pass": {
+  "T45": false,
+  "T47": false,
+  "T57": false
+ }
+}
