@@ -1,0 +1,161 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S42		H	plain x; before: line start
+L01	2	S75		H	plus
+L01	3	S77		H	6 with tick above
+L01	4	S80	S65	M	8 with bar across top
+L01	5	S65	S80	M	8, open at bottom
+L01	6	S97		H	lambda
+L01	7	S67		H	long f
+L01	8	S56		H	plus with 3
+L01	9	S89		H	double bar
+L01	10	S80		H	barred 8
+L01	11	S55	S94	M	loop on stem with crossbar
+L01	12	S52		H	3
+L01	13	S16		H	triangle delta
+L01	14	S75		H	plus
+L01	15	S30	S49	M	slash between two dots
+L01	16	S55	S94	M	loop on stem with crossbar
+L01	17	S35		H	m with dot
+L01	18	S89		H	double bar
+L01	19	S75		H	plus
+L01	20	X_POUND		H	looped L crossed, pound-like
+L01	21	S53		H	phi, slanted loop
+L01	22	S47		H	epsilon
+L01	23	S53		H	phi
+L01	24	S88	S24	M	double bar with slash
+L01	25	S62		H	beta
+L01	26	S89		H	double bar
+L01	27	S80		H	barred 8
+L01	28	S52		H	3
+L01	29	S77	S50	M	6, no tick seen
+L01	30	S35		H	m with colon
+L01	31	S52		H	3
+L01	32	S65	S80	M	8
+L01	33	S52		H	3
+L01	34	S53		H	phi
+L01	35	S66		H	2 with dot
+L01	36	S93	S22	M	w
+L01	37	S16		H	delta with dot after
+L01	38	S56		H	plus with 3
+L01	39	S75		H	plus at crop edge; after: line end
+L02.1	1	S47		H	epsilon; before: line start
+L02.1	2	S57		H	reversed c
+L02.1	3	S88	S24	M	double bar with slash
+L02.1	4	S23		H	inverted v with tick
+L02.1	5	S75		H	plus
+L02.1	6	S89		H	double bar
+L02.1	7	S66	S17	M	z with colon after
+L02.1	8	X_POUND		H	looped L crossed, pound-like
+L02.1	9	S62		H	beta
+L02.1	10	S56		H	plus with 3
+L02.1	11	S88	S24	M	double bar with slash, at s2 start; after: quello
+L02.2	1	S61		H	g with tail; before: essi
+L02.2	2	S80		H	barred 8; after: line end
+L03	1	S56		H	plus with 3; before: line start
+L03	2	S97		H	lambda
+L03	3	S23		H	inverted v
+L03	4	S55	S94	M	loop on stem with crossbar
+L03	5	S75		H	plus with serifs
+L03	6	S17		H	z with long tail
+L03	7	S30	S49	M	slash between two dots
+L03	8	S53		H	phi
+L03	9	S75		H	plus
+L03	10	S30	S49	M	slash between two dots
+L03	11	S37	S74	M	b with loop
+L03	12	S93	S22	M	w
+L03	13	S62		H	beta
+L03	14	S30	S49	M	slash between two dots
+L03	15	S75		H	plus
+L03	16	S77		H	6 with tick above
+L03	17	S62		H	beta
+L03	18	S57		M	reversed c, larger
+L03	19	S88	S24	M	double bar with slash
+L03	20	S80		H	barred 8
+L03	21	S20	S45	M	small d or alpha
+L03	22	S47		H	epsilon
+L03	23	S75		H	plus
+L03	24	S10	S71	M	angular L with dot
+L03	25	S53		H	phi
+L03	26	S80		H	barred 8
+L03	27	S37	S74	M	b with loop
+L03	28	S80		H	barred 8
+L03	29	S56		H	plus with 3
+L03	30	S17		H	z with long tail
+L03	31	S37	S74	M	b with loop
+L03	32	S97		H	lambda
+L03	33	S55	S94	M	loop on stem with crossbar
+L03	34	S80		H	barred 8
+L03	35	S89		H	double bar
+L03	36	S93	S22	M	w
+L03	37	S25		M	n with tick
+L03	38	S47		H	epsilon
+L03	39	S80		H	barred 8; after: line end
+L04	1	S37	S74	M	b with loop; before: persone
+L04	2	S56		H	plus with 3
+L04	3	S75		H	plus
+L04	4	S89		H	double bar
+L04	5	S62		H	beta
+L04	6	S42		H	plain x
+L04	7	S52		H	3
+L04	8	S23		H	inverted v
+L04	9	S75		H	plus
+L04	10	S10	S71	M	angular L with dot
+L04	11	S17		M	z, small mark above
+L04	12	S16		H	delta
+L04	13	S75		H	plus
+L04	14	S56		H	plus with 3
+L04	15	S10	S71	M	angular L with dot
+L04	16	S47		H	epsilon
+L04	17	S80		H	barred 8
+L04	18	S89		H	double bar; after: line end
+L05	1	S37	S74	M	b with loop; before: line start
+L05	2	S17		H	z with long tail
+L05	3	S62		H	beta
+L05	4	S84	X_NEW	M	x crossed by horizontal bar
+L05	5	S16		H	delta
+L05	6	S62		H	beta
+L05	7	S10	S71	M	angular L with dot
+L05	8	S75		H	plus
+L05	9	S56		H	plus with 3
+L05	10	X_POUND		H	looped L crossed, pound-like
+L05	11	S93	S22	M	w
+L05	12	S77		H	6 with tick above
+L05	13	S32	S56	M	r-like hook with 3
+L05	14	S66		H	2 with dot above
+L05	15	S75		H	plus
+L05	16	S89		H	double bar
+L05	17	S52		H	3
+L05	18	S56		H	plus with 3
+L05	19	S47		H	epsilon
+L05	20	S17		H	z with long tail
+L05	21	S47		H	epsilon
+L05	22	S75		H	plus
+L05	23	S23		H	inverted v
+L05	24	S89		H	double bar
+L05	25	S62		H	beta
+L05	26	S52		H	3
+L05	27	S53		H	phi
+L05	28	S10	S71	M	angular L with dot
+L05	29	S75		H	plus
+L05	30	S56		H	plus with 3
+L05	31	S47		H	epsilon
+L05	32	S75		H	plus
+L05	33	S23		H	inverted v
+L05	34	S89		H	double bar; after: line end
+L06.1	1	S17		H	z with long tail; before: line start
+L06.1	2	S62		H	beta; after: Pero
+L06.2	1	S65		H	plain 8; before: di
+L06.2	2	S47		H	epsilon
+L06.2	3	S97		H	lambda
+L06.2	4	S23		H	inverted v
+L06.2	5	S95	S13	M	lone small o
+L06.2	6	S80		H	barred 8
+L06.2	7	S56		H	plus with 3
+L06.2	8	S31		M	looped e with tail
+L06.2	9	S17		H	z with long tail
+L06.2	10	S16		H	delta
+L06.2	11	S62		H	beta
+L06.2	12	S60	X_THETA2	L	oval crossed by heavy bar, maybe two
+L06.2	13	S80		H	barred 8
+L06.2	14	S62		H	beta
+L06.2	15	S60	X_THETA2	L	crossed oval cut by crop edge; after: line end
