@@ -1525,3 +1525,57 @@ AUDIT.md propagation of the sign-7 regrade (rule 10): sections 4 and 5 carry dat
 C/S run 16 and non-French; rule 7 SAME per RD7-2026-10-04-run3b.md); the section 3 safe sentence now reads "about 67%". Depth stays
 D1. status.json `depth_pct` 60.7 -> 67.0 handed to the status.json owner. No SECOND-OPINIONS-QUEUE.tsv row exists for this target.
 The remaining gaps and escalation are unchanged from RUN3-C1161R7B above.
+
+## RUN4-C1161GJ (4 Oct 2026)
+Account 1 worker for LANE-RUN4, brief `.claude/briefs/runs/2026-10-04-acct1-run4-wave2.md`. Disk only, no network, no subagent
+calls. Pre-registration `tx/PREREG_glossjudge.md` (pushed 743c1b02 before any score); script `two/glossjudge.py` (pushed
+69d7f2e3 before scoring); outputs `two/glossjudge.tsv` (26-letter and 50-key null rows) and `two/glossjudge_gate.tsv`.
+
+**Test.** Per sign, value A (key.tsv) vs B (10-seed consensus letter), each sign alone with the rest of key.tsv fixed. G = the
+glossctl gloss match on the c186R block (key.tsv now reads **0.612**, 104/170; READ2-C1161B's 0.594 was an earlier key). J = the
+fr16 judge's 4-gram language score on the 3375-letter decode (reproduces `two/full_decode.txt`; key.tsv -1.233), read only as a
+relative score because the gloss itself PASSes the judge and the decode FAILs (rule 3, ZX-DEC349). Nulls: the 50 shuffled-order
+anneal keys of RUN3-C1161MS (same A->B swap; can differ because the neighbouring letters change, so a gain that is only unigram
+frequency shows in the null too) and the sign set to each of a-z. Gate: V beats W on both G and J, beats the shuffled-key p95 on
+both, and ranks top 2 of 26 on both; a sign with fewer than 3 c186R tokens cannot pass the G half.
+
+| sign | A (key) | B (consensus) | c186R tokens | dG (B-A) / null p95 | dJ (B-A) / null p95 | best of 26 (G / J) | verdict |
+|---|---|---|---|---|---|---|---|
+| 2  | r (M) | t | 1  | 0.000 / 0.000 | +0.0007 / 0.0025 | z / l | neither; G untestable at 1 token |
+| tz | e (M) | l | 3  | 0.000 / 0.029 | +0.0048 / 0.0146 | c / **l** | neither |
+| qb | a (S) | e | 14 | **-0.071** / (A-B: 0.094) | **-0.009** / (A-B: -0.001) | **a** / **a** | A fails only clause ii on G (0.071 < 0.094) |
+| 4  | o (S) | e | 12 | -0.059 / (A-B: 0.129) | +0.0077 / 0.0713 | **o** / **e** | split: gloss favours o, judge e |
+| S  | u (S) | n | 14 | 0.000 / 0.082 | **+0.033** / 0.057 | n (tie, dG 0) / **n** | neither; J favours n, below null |
+
+**Gate: no sign passes either way.** Per the pre-registration nothing changes in key.tsv: no value, no grade. `tools/decode_key.py
+--check` exit 0 ("reading up to date", C 353, S 1908, M 1114, U 33). The reading is unchanged, so no rule-7 re-derivation or AUDIT
+propagation is owed by this pass.
+- Contested S signs, named here as pre-registered: **`4` (o) and `S` (u) are "contested (single-seed S, gloss/judge undecided)"**:
+  for `4` the gloss's best letter is the key's o and the judge's best is the consensus e; for `S` the judge's best letter of 26 is
+  the consensus n (+0.033, the largest gain of the five) and the gloss is indifferent, but the gain sits under the shuffled-key p95.
+  **`qb` = a** is the best letter of 26 on both statistics and beats the consensus e on both, missing only the shuffled-key p95 on
+  G (0.071 vs 0.094): evidence for the key value, not enough to clear the gate.
+- Information only (not gated): all five B at once: G 0.612 -> 0.412, J -1.233 -> -1.197 -- the judge prefers the consensus set,
+  the period gloss strongly prefers key.tsv. The two instruments pull opposite ways on qb and 4, which is why the gloss (a period
+  plaintext) and not the corpus n-gram score should decide where they disagree.
+- The shuffled-key null on G is wide (p95 0.03-0.13 on a 170-letter gloss): a 12-14-token sign moves difflib's block alignment by
+  several letters even in a garbage context, so the gloss half needs a sign with more c186R tokens, or more glossed text, to pass.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none. Subagent
+calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (RUN4-C1161GJ, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Gloss-and-judge value test of 2, tz, qb, 4, S run (no sign passes; key unchanged).
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4 and S - blocker: not-attempted; gloss-and-judge test (RUN4-C1161GJ) undecided for 2/tz/4/S, the gloss is too short to move a sign with under ~15 block tokens past its shuffled-key null; next: a word-level instrument (French word cover of the full decode per candidate letter, same 50-key and 26-letter nulls, pre-registered), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (RUN4-C1161GJ, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624), 10-seed consensus PASS (0.334 vs 0.122), gloss-and-judge value test of the contrary letters undecided (RUN4-C1161GJ); next: word-cover instrument for the M and contested S signs
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further seed sweep of the same anneal is not a different instrument
+Verdict: keep going: 2 internal gaps; cheapest next: word-cover value test of the M and contested S signs, ~$2
