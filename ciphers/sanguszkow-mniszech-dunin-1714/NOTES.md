@@ -46,7 +46,7 @@ letter from the same correspondent pair and year rather than the exact DECODE R7
 pass (would need the detail page, which is currently unreachable, or a direct teka-number search, which the
 site's search box does not appear to index).
 
-## Verdict: `blocked` (image route)
+## Verdict: `blocked` (image route; superseded 4 Oct 2026: image in hand, status held at `blocked` by the intake gate until a check-solved re-run names the edition read -- see the A3V2-SANG section below)
 
 No online scan located for the specific 1714 Mniszech-to-Dunin item found in this archive's own catalogue, and
 its own record explicitly says so ("No scans / photos"). Per this brief's Part A instruction ("No image = row
@@ -87,25 +87,71 @@ Sources: Bourdeau's targets/potocka1714/NOTES.md (fetched once from raw.githubus
 - **Found / not found:** found: his written statement that R7524 is a separate unread system and that his control failed; DECODE metadata above. Not found: a sign list or numeral range for R7524, any key or plaintext, any shared-sign claim. No size larger than the thumbnail was fetched.
 - Cost: 1 vision call (thumbnail P1), 4 DECODE requests, 1 raw.githubusercontent request, 0 subagents.
 
+## DECODE R7524 full-size images: served (A3V2-SANG, 4 Oct 2026)
+
+One browser login (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 7524 <scratch dir> --guess-fullsize
+--max-files 8 --delay 1800`, 05:02 UTC, `loggedIn: true`, 7 requests to de-crypt.org: record page, 3 thumbnails,
+3 full-size) served all three full-size images for record 7524 as real JPEGs, not the `forbidden.png` placeholder
+(sha1 035489a0... absent). Second record after 4692 (A2-HDK, 2 Oct 2026) where the full-size route is open; the
+"account-wide blocked" line in the CLAUDE.md host table is per record, not per account. Images stay out of git
+(scratchpad only; re-fetch with the same command, one login).
+
+| file | bytes | pixels | dpi | sha256 |
+|---|---|---|---|---|
+| IMG_R7524_I33989_P1.jpg | 1,756,542 | 2241 x 3324 | 300 | b4dbe872a97207850e137c91bcf57a9038091177ebb8a90baa8bac37b394ac87 |
+| IMG_R7524_I33989_P2.jpg | 1,528,670 | 2233 x 3324 | 300 | e80567dba3af3d075b439f4def1f021d5fe793d8567c82ef16a831bf0d549e93 |
+| IMG_R7524_I33989_P3.jpg | 3,495,701 | 4219 x 3333 | 300 | db6de4c8d746add7c56c92db6e6330bd2f4b5e2db7a8b54a8cd79a23ab3416f2 |
+
+One look at each page (quarter-scale views plus three native crops; no transcription, nothing graded, H 0 C 0 S 0 M 0 I 0):
+- **P1** (recto): heading at top right reads "16. Marty. 1714. / w Dukli." (inferred from the image, one look: 16 March
+  1714, at Dukla); salutation "Monseigneur" with an archivist's pencil note; about seven lines of Polish clear, then
+  about 13 lines mixing cipher groups with clear Polish/Latin words (e.g. "praetextu consilii", "Congressow",
+  "generaliter", "unanimi voto", "Rempublicam", "memoriey", "Consilii"), closing "ut plus quam actum."
+- **P2** (verso of P1): no cipher; bleed-through only, plus a pencil note "Pana Mnisz[cha]".
+- **P3** (two-leaf spread): left leaf opens with three lines of cipher groups then clear Polish ("tractentur. Przesyłam
+  ... "), continuing into clear Polish on the right leaf with the signature and a postscript; folio number "29" in pencil.
+- **Cipher legibility:** fully legible at native resolution. Two- and three-digit groups separated by points, dark ink,
+  no cuts, no fading; e.g. P1 first cipher line "110.36.31.157.31.33.81.15.20. 125.38.97.79.15.20. 128.42.17.15.130."
+  and P3 left "152.66.26.31.49.94.31.76. 38. 39.107.102.25. 144.76.144.56." as seen on the crops (one look, not a
+  transcription; the transcription pass re-reads every digit blind). The numeral range seen at a glance is about
+  12-157, consistent with Bourdeau's ~75 distinct signs and "separate numerical system" (his count, not ours).
+- **Date conflict with the catalogue match:** the szukajwarchiwach record matched on 24 Sept 2026
+  (29/637/0/1.3/9908/9) is dated "miejsce nieczytelne, 1714.05.02"; this leaf is headed 16 March 1714 at Dukla. The
+  earlier caveat stands and is now sharper: that record is probably a different Mniszech-to-Dunin letter, and
+  ASKS 125's copy order names the wrong item unless the archive is asked for the 16 March 1714 letter (teka 290/6).
+
+Container note: the Chromium NSS certificate fix the setup script is supposed to apply (CLAUDE.md access playbook 2)
+had not run in this container (first attempt: ERR_CERT_AUTHORITY_INVALID before the login page; no login spent);
+applied by hand (`certutil -N -f /dev/null` then `-A`), then the login worked first time.
+
 ## Next step (costed)
 
-An image of the 1714 letter is the only thing that moves this: owner-side copy order to Archiwum Narodowe w Krakowie for the Mniszech-to-Dunin 1714 item (reference 29/637/0/1.3/9908/9, ASKS 125), then one crop-based transcription per TRANSCRIPTION.md. Until then no cheap step is untried: Bourdeau's folder and the DECODE metadata are now read. If the DECODE full-size route opens for R7524 (re-test with `--guess-fullsize`, as A2-HDK did for record 4692, ~USD 1), that replaces the order.
+Crop transcription of the two cipher leaves (P1 and P3-left) per TRANSCRIPTION.md: `python3 tools/iiif_lines.py
+--image <P1 file> --out ciphers/sanguszkow-mniszech-dunin-1714/images` (and P3-left as a region), check the debug
+overlay, then two blind passes on the line crops only and one reconciliation (`tools/reconcile_passes.py`): 2 pages
+x 2 passes + 1 reconciliation = 5 vision calls at about USD 1.2-1.5 per call, cap USD 7, box 60 min. Before any
+cryptanalysis (CLAUDE.md pipeline 2, intake gate): a check-solved re-run that reads the letter's date, place and
+clear-text phrases against the Polish editions and the Sanguszko inventory, now that the leaf can be read.
+Then the retry: a homophonic attack with a control matched on 232 tokens and ~75 signs (rule 3), design prior from
+`tools/design_prior.py` first.
 
 ## While waiting
 
-- Re-test DECODE R7524 full-size images with one browser login (decode_browser_login.js, `--guess-fullsize`); depends on nobody (~USD 1). Bourdeau's local images came through DECODE's image manager, so the route may be open.
+- Nothing is waiting on anyone: the image is in hand (re-fetch: one DECODE login, command above).
+- ASKS 125 (copy order): re-word to the 16 March 1714 Dukla letter or withdraw; it no longer blocks anything.
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
-Read so far: 0 of 232 cipher tokens (no image beyond 200-px thumbnails; nothing read)
-- R7524 all 232 cipher tokens - blocker: not-attempted; DECODE full-size route untried for this record, Bourdeau's local images came through DECODE's image manager; next: one browser login with --guess-fullsize, ~$1
-- Copy of the 1714 letter from the archive - blocker: waiting-on ASKS 125; the archive record says "No scans / photos", so only a copy order to Archiwum Narodowe w Krakowie supplies one
+## Remaining gaps (A3V2-SANG, 4 Oct 2026)
+Read so far: 0 of 232 cipher tokens (full-size images in hand since 4 Oct 2026; nothing transcribed or read)
+- R7524 all 232 cipher tokens - blocker: not-attempted; full-size images only arrived this pass (table above), no transcription pass run yet; next: crop transcription P1 + P3-left, 2 blind passes + 1 reconciliation, ~$7
+- Check-solved against Polish editions with the leaf's own date and phrases (16 March 1714, Dukla) - blocker: not-attempted; the 24 Sept and 3 Oct check-solved passes had no leaf to read, so no edition was searched by date or phrase (intake gate, status line stays blocked until this runs); next: check-solved re-run naming the edition read, ~$3
+- Identity of the archive record (2 May vs 16 March 1714) - blocker: not-attempted; the heading read on P1 (above) disagrees with the matched record's date, so ASKS 125 may name the wrong letter; next: szukajwarchiwach search for the 16 March 1714 Dukla letter, ~$1
 
-## Escalation (3 Oct 2026)
+## Escalation (4 Oct 2026)
 - [x] siblings: Bourdeau's potocka1714 folder read (3 Oct 2026); R7515, R7460, R7461 do not fit per his check.
-- [n/a] clear-pages: the one clear leaf seen carries no cipher; cipher leaves unseen.
+- [x] clear-pages: P1 clear lines and P3 clear leaves seen at native resolution (4 Oct 2026); not transcribed.
 - [x] known-keys: Bourdeau checked the three Sanguszko key records; none fits.
-- [x] print: no edition or decipherment located (solver diffs 2-3 Oct 2026).
-- [ ] key-rebuild: needs an image first; planned step is a crop transcription after the full-size re-test.
-- [ ] image-check: DECODE full-size re-test with one login, ~$1.
-- [ ] retry: after a full-size image, a stronger homophonic attack with a control matched on 232 tokens and ~75 signs.
-Verdict: keep going: 1 internal gaps; cheapest next: DECODE full-size re-test, ~$1
+- [x] print: no edition or decipherment located (solver diffs 2-3 Oct 2026); re-run with the leaf's date owed (gap 2).
+- [ ] key-rebuild: after the crop transcription (gap 1).
+- [x] image-check: DECODE full-size served, 4 Oct 2026 (A3V2-SANG), three 300-dpi JPEGs, cipher legible.
+- [ ] retry: after the transcription, a homophonic attack with a control matched on 232 tokens and ~75 signs.
+Verdict: keep going: 3 internal gaps; cheapest next: szukajwarchiwach re-search ~$1, then crop transcription ~$7
