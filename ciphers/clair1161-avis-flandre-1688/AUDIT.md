@@ -174,3 +174,11 @@ exactly the 211 sign-7 tokens differ, grade M -> S only. Rule 7 holds for the cu
 - Named for the next step (not actioned here): Lauer t. II's entry for Clairambault 1161 (owner's browser; may carry a
   date or sender); the Gallica manuscript btv1b100339270 (Noailles-Dax correspondence 1571-74) as a possible source of
   the same hand or key; the 28 M signs (N4-C1's multi-seed instrument). None of these changes the class; the first could.
+
+**Addendum, 4 Oct 2026 18:1x UTC (C1161-JOINT9, propagation under rule 10; not a re-audit).** The reading changed after
+this AUDIT.md: nine key values moved M -> S with new letters (K f->s, iib l->d, l s->f, ls e->m, o n->m, rot r->h, spiralG
+h->n, to m->s, x s->f) after a pre-registered joint test PASS (tx/PREREG_joint9.md; dG +0.0353 vs random-value null p95
++0.0059, dJ +0.0053 vs p95 +0.0032). Counts now C 353, S 2070, M 952, U 33; C/S 71.8%; judge on reading.txt FAIL -1.303.
+The rule-7 SAME verdicts in section 5 apply to the pre-JOINT9 reading only; a fresh re-derivation is owed. No N-class or
+depth is changed here (the verifier sets depth; nothing in this change reaches D2's clause requirement on its own). No
+SECOND-OPINIONS-QUEUE.tsv row exists for this target, so none to update.

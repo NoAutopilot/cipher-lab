@@ -40,7 +40,7 @@ def cover(t):
         b[i] = m
     return b[n] / n if n else 0.0
 
-real = {r["sign"]: r["value"] for r in csv.DictReader(open(os.path.join(T, "key.tsv")), delimiter="\t")}
+real = {r["sign"]: r["value"] for r in csv.DictReader(open(os.path.join(HERE, "key_pre_joint9.tsv")), delimiter="\t")}
 allt = [r["sign"] for r in csv.DictReader(open(os.path.join(T, "ciphertext.tsv")), delimiter="\t") if r["sign"] != "/"]
 def dec(k, toks): return "".join(k.get(t, "") for t in toks)
 def w(k, s, v): k2 = dict(k); k2[s] = v; return k2

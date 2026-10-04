@@ -11,7 +11,7 @@ import judge_plaintext as jp
 from glossctl import block_tokens, gloss_letters, stat
 
 PROP = [("K", "s"), ("iib", "d"), ("l", "f"), ("ls", "m"), ("o", "m"), ("rot", "h"), ("spiralG", "n"), ("to", "s"), ("x", "f")]
-real = {r["sign"]: r["value"] for r in csv.DictReader(open(os.path.join(T, "key.tsv")), delimiter="\t")}
+real = {r["sign"]: r["value"] for r in csv.DictReader(open(os.path.join(HERE, "key_pre_joint9.tsv")), delimiter="\t")}
 allt = [r["sign"] for r in csv.DictReader(open(os.path.join(T, "ciphertext.tsv")), delimiter="\t") if r["sign"] != "/"]
 blk, g = block_tokens(), gloss_letters()
 spec = json.load(open(os.path.join(ROOT, "specs", "clair1161-avis-flandre-1688.json")))

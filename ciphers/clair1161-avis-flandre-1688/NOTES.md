@@ -1874,6 +1874,58 @@ one hypothesis, joint G against the shuffled-key joint G null) is the honest nex
 Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
 Subagent calls: 0.
 
+## C1161-JOINT9 (account-3 worker, 4 Oct 2026, 17:55-18:1x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-04-acct3-c1161-joint9.md`. Pre-registration `tx/PREREG_joint9.md` and script `two/joint9.py`
+pushed before any score (06c01d13). Disk only, no subagents, no network. Output `two/joint9.tsv`.
+
+The nine C1161-LOLO proposals as one hypothesis (key.tsv + K s, iib d, l f, ls m, o m, rot h, spiralG n, to s, x f), against 50
+random joint keys (the same nine signs, each value drawn from key.tsv's value frequencies, seeds 1-50):
+
+| statistic | real | null mean | null p95 | null max | real > p95 |
+|---|---|---|---|---|---|
+| dG (c186R gloss letter agreement) | +0.0353 (0.612 -> 0.647) | -0.0128 | +0.0059 | +0.0118 | yes (0/50 null >= real) |
+| dJ (fr16 judge, 3375-letter decode) | +0.00530 | -0.03355 | +0.00318 | +0.01067 | yes (2/50 null >= real) |
+
+**PASS as registered.** The nine enter key.tsv at grade S (witnesses in each row's source: LOLO anneal + this joint test).
+`tools/decode_key.py --check`: reading up to date, tokens 3408: C 353, S 2070, M 952, U 33 (was S 1908, M 1114). C/S
+2423/3375 = 71.8% (was 67.0%); longest C/S run 19 tokens (was 16). Judge on reading.txt, pasted:
+```
+FAIL language: score=-1.303, null_p99=-1.751, real_p05=-0.913, real_median=-0.823, mode=both, N=3913
+ok   words: cover=0.869, min=0.5, real_text_median_cover=0.957
+FAIL - clair1161-avis-flandre-1688 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(the pre-JOINT9 reading scores -1.300, cover 0.878 through the same command: the whole-reading judge with separators moved
+slightly the other way from the letters-only dJ the test used; reported, not re-tested.)
+
+What the PASS means and does not: the null is random letters on those nine signs, which any anneal-chosen value set is expected
+to beat on the judge, and the real numbers were already known from C1161-GLOSS9 (info only); the gloss half carries 15 block
+tokens for eight signs and none for spiralG. So the nine fit the gloss and the judge better than random values, jointly; no
+single value is shown right (GLOSS9 0/9 per sign stays true). Grade S is per the brief; a verifier may hold any of them at M.
+The prereg's "14 tokens" was a miscount; the script counts 15. Pre-change key kept as `two/key_pre_joint9.tsv`;
+two/gloss9.py, glossjudge.py, wordcover.py and joint9.py now read it, so each still regenerates its committed output
+(they assert the pre-change full_decode.txt). Rule 7: the reading changed, so a fresh re-derivation is owed before stage 9.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none.
+Subagent calls: 0.
+
+## Remaining gaps (C1161-JOINT9, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 2070, M 952, U 33 tokens; 0 H. Nine C1161-LOLO values entered at S after the joint test PASS (C1161-JOINT9); per sign 0/9 (C1161-GLOSS9) still stands.
+- 18 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz ...) and the contested S signs 4, S - blocker: not-attempted; no further proposal on file for them (C1161-LOLO gave confirmations only for th, z, 4); next: a key-constrained lookalike pass on th/z/S/4 (below) before any new anneal, ~$3
+- rule-7 re-derivation of the JOINT9 reading - blocker: not-attempted; key.tsv changed 9 values; next: fresh-session re-derivation from spec + key.tsv + ciphertext.tsv with tools/decode_key.py --check, ~$1
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; transcription error above the two-reader figure, a wrong held value, or a design element; next: a key-constrained lookalike pass on the highest-token free signs (th 208, z 189, S 275, 4 224) against the native crops, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-JOINT9, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under the current key.tsv (0.612 before JOINT9); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.303)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [x] key-rebuild: nine C1161-LOLO proposals entered at S after the pre-registered joint test PASS (C1161-JOINT9); remaining M signs have no proposal, next instrument is the lookalike pass under image-check
+- [ ] image-check: seven provisional new shapes; next: sorter or split test, and a lookalike pass on th/z/S/4, as in Remaining gaps
+- [ ] retry: rule-7 re-derivation of the changed reading, as in Remaining gaps
+Verdict: keep going: internal gaps open; cheapest next: fresh-session rule-7 re-derivation of the JOINT9 reading, ~$1
+
 ## Remaining gaps (C1161-GLOSS9, 4 Oct 2026)
 Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Per-sign gloss/judge of the nine C1161-LOLO proposals: 0/9 pass (C1161-GLOSS9); joint nine beat the shuffled-key null on the judge (info only).
 - 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S - blocker: not-attempted; the per-sign gloss test cannot move a sign with 0-5 glossed tokens (C1161-GLOSS9, RUN4-C1161GJ); next: a pre-registered joint test of the nine C1161-LOLO proposals as one hypothesis (joint dG and dJ vs the 50-key shuffled joint null), ~$1
