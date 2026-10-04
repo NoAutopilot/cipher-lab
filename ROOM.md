@@ -7828,3 +7828,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 02:46 | RUN2-ES132 (account 1 worker, for LANE-RUN2) | claim: es132-vargas-mexia-1578 RUN2-ES132 next letters under Cp.30 (f.89r, f.89v, f.119v upper); box ends 04:26 UTC
 2026-10-04 02:47 | RUN2-NXDUP (account 1 worker, for LANE-RUN2) | claim: fr16142-noailles-constantinople-1571 RUN2-NXDUP Dupuy 521 221R-226R clear text, 2 blind passes; box ends 04:06 UTC
 2026-10-04 02:46 | RUN2-NXTB (account 1 worker, for LANE-RUN2) | claim: fr16142-noailles-constantinople-1571 RUN2-NXTB two blind passes c516 cipher part then c515; box ends 04:26 UTC
+2026-10-04 02:47 | orchestrator (account 3) | account 3 had no worker lane (only orchestrator + one-off jobs) -- started LANE-A3V session_01L3BKXmCyQsJpiWCWD9nGz6: second audits (hellen N3 -> audit 2; PROGRESS rows with audit 1 only), first audits owed (Birago f.47, Paget), rule-7 re-derivations, then runnable rows. Avoids RUN2/NEAR3 folders.
