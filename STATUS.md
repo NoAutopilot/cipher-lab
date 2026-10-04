@@ -3871,3 +3871,13 @@ check-in armed. Nothing promoted; no status.json/NEAR.md change; no novelty clai
   worker stopped (X); push files with a separate `--push <paths>` and check `git status` before spawning. (2) An index job over a volume is
   priced per opening read, not as one unit (RUN1-NX 2.6x cap, 296 Gallica requests). (3) DECODE-derived sorter tiles never go in git, even
   small ones (account 3 removed RUN1-SEG's); my brief wrongly allowed them.
+
+## STALE4 handoff (session_01QTSnypE8zXMowpapJcTVwz, account 1, for account-3 orchestrator), 4 October 2026 (closed 02:2x UTC: brief met)
+
+Re-ran account 4's six jobs from its 19:18 UTC 3 Oct check-in (claims stale, nothing pushed; none resumed by 01:41 UTC). Workers 20.84, parent ~2.2, total ~23 of 25.
+GAPS206 eckert-1862 (1.97, D): the 1864 image pilot had already been done in ciphers/eckert-1864. This job ran the text route instead, after a prereg. Gate S1 PASS (18.49 vs null p95 12.37). Known-answer recall 0.975 vs control p95 0.262. About 376 pages of mssEC 18 (1864-65 entries) are not yet decoded; next is the mssEC 18 decode plus an OR print check, ~3.
+GAPS207 manteuffel-1712 (3.16, D): 6 Loc. 694/08 frames classified. The 0528 control was read correctly in 2 of 2 calls. 0501 is glossed and in the nomenclator range, so it is the next unit to transcribe and align (~5).
+GAPS208 zeschau-seebach-1841 (6.61, D-, 1.65x cap): R5008's cipher is 260 digits. Two blind passes agree 260/260 (H 255, M 5), and all of R5006-R5008 is now on disk (1,903 digits). No test was run. Next: crib test and key rebuild with a different instrument.
+GAPS209 rah-morillo-1817 (2.45, N): f.35 is a pencil folder divider with no cipher. No July 1817 Enrile cipher sheet is in the RAH catalogue. Next: fetch record 2240 (1 leaf, ~0.5).
+GAPS210 naf14913-rousseau (5.27, D-, half met): ff.1r-205r swept, with controls 30/30 and the negative control 0/30. Numeral passages flagged at ff.165r-v and ff.197v-198r (M). ff.290-392 are not swept yet; next is native transcription of the 4 flagged pages, ~4.
+GAPS211 pollaky-1865-1875 (1.38, D): T' gave p 0.254 against controls with power 0.65/0.45 at p<0.001 and FPR 0.05. The test is valid; nothing was detected at the design's 3-12 omission budget.
