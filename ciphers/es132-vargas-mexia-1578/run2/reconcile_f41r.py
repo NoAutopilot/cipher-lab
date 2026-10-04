@@ -10,6 +10,8 @@ Rules, settled from crops f41r_L02 and L07 (s1+s2 at 2400 px) and the f.89-f.91 
  R6 A '15+' vs B '158+' -> 15+ (B read the cross as 8+)
  R7 the same token with a mark or dot seen by one reader only -> the marked/dotted reading, flagged '?'
  Default: pass A's token(s), flagged '?' (not settled by eye; inserted/deleted tokens likewise flagged).
+Output since RUN3-ES41 (4 Oct 2026): ciphertext_f41r_pre.tsv (this stream) + run2/f41r_units.tsv (one row per default unit: line, start
+index in the line's stream, token count there, A tokens, B tokens); settle_f41r.py applies PREREG_f41r_settle.md to write ciphertext_f41r.tsv.
 """
 import sys, re, difflib
 from pathlib import Path
@@ -34,17 +36,23 @@ def settle(a, b):
     return a0 + '?', 'default'
 
 
-out, tally = [], {}
+out, tally, units, firm = [], {}, [], []
 for ln in sorted(set(A) | set(B)):
     a, b = A.get(ln, []), B.get(ln, [])
     sm = difflib.SequenceMatcher(None, [t.rstrip('?') for t in a], [t.rstrip('?') for t in b], autojunk=False)
     r = []
     for op, i1, i2, j1, j2 in sm.get_opcodes():
-        if op == 'equal': r += a[i1:i2]; continue
+        if op == 'equal':
+            firm += [(ln, len(r) + k, t) for k, t in enumerate(a[i1:i2]) if not t.endswith('?')]
+            r += a[i1:i2]; continue
         if op == 'replace' and i2 - i1 == j2 - j1:
             for x, y in zip(a[i1:i2], b[j1:j2]):
-                t, rule = settle(x, y); r.append(t); tally[rule] = tally.get(rule, 0) + 1
+                t, rule = settle(x, y); tally[rule] = tally.get(rule, 0) + 1
+                if rule == 'default': units.append((ln, len(r), 1, x.rstrip('?'), y.rstrip('?')))
+                r.append(t)
         else:
+            units.append((ln, len(r), i2 - i1, ' '.join(t.rstrip('?') for t in a[i1:i2]) or '-',
+                          ' '.join(t.rstrip('?') for t in b[j1:j2]) or '-'))
             r += q(a[i1:i2]); tally['default'] = tally.get('default', 0) + max(i2 - i1, j2 - j1)
     out.append(ln + '\t' + ' '.join(r))
 hdr = ['# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, right page, region 3500,1300,3150,3800), 30 bands = 30 lines.',
@@ -52,6 +60,9 @@ hdr = ['# BnF Espagnol 132 f.41r (Gallica btv1b10032556x canvas 38, right page, 
        '# Two blind Sonnet passes (passes/f41r_passA/B.tsv, notation run2/pass_prompt_f41r.md), normalised by test2.load_pass,',
        '# reconciled by run2/reconcile_f41r.py (ES132-C3, 4 Oct 2026) by shape rules R1-R7. ? = not settled by eye. rules: ' +
        ' '.join(f'{k}={v}' for k, v in sorted(tally.items()))]
-(HERE / 'ciphertext_f41r.tsv').write_text('\n'.join(hdr + out) + '\n', encoding='utf-8')
+(HERE / 'run2/f41r_units.tsv').write_text('line\tstart\tlen\tA\tB\n' + ''.join('\t'.join(map(str, u)) + '\n' for u in units),
+                                         encoding='utf-8')
+(HERE / 'run2/f41r_firm.tsv').write_text('line\tidx\ttoken\n' + ''.join('\t'.join(map(str, f)) + '\n' for f in firm), encoding='utf-8')
+(HERE / 'ciphertext_f41r_pre.tsv').write_text('\n'.join(hdr + out) + '\n', encoding='utf-8')
 print(len(out), 'lines;', sum(len(l.split('\t')[1].split()) for l in out), 'tokens;',
       sum(t.endswith('?') for l in out for t in l.split('\t')[1].split()), 'flagged ?;', tally)
