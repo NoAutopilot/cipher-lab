@@ -4,7 +4,8 @@
 set -euo pipefail
 O=$1; T=ciphers/fr16045-pisany-rome-1585; mkdir -p "$O"
 python3 $T/sorter/build_inputs.py
-python3 tools/sign_sorter.py --signs $T/sorter/signs.tsv --labels $T/sorter/labels.tsv --pages $T/sorter/pages \
+python3 $T/sorter/tighten_tiles.py
+python3 tools/sign_sorter.py --signs $T/sorter/signs_tight.tsv --labels $T/sorter/labels.tsv --pages $T/sorter/pages \
   --focus $T/sorter/focus.tsv --auto-clusters 4 \
   --focus-note "Where the two blind machine readers split, the four look-alike groups both named first (S15/S40/S13/S61, S10/S41/S02, S36/S42/S23, S46/S48/S25). Tiles were cut from an ink profile and fitted to the readers' column count, so a tile can be one or two positions off its label: open the context view. The lines slope steeply down to the right." \
   --title "Pisany 1585 Sign Sorter" \

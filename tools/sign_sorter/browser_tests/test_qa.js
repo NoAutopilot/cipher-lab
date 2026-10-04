@@ -180,7 +180,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     const c0 = await page.locator('.card').nth(1).getAttribute('data-pile'), w0 = waiting[0];
     const peek = page.locator('.card').nth(1).locator('.smp img').first();
     if (await peek.count()){ await peek.click(); await page.waitForTimeout(150);
-      ok(tag + ': tapping a small picture opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => pileOf(s), w0)) !== c0);
+      ok(tag + ': tapping a small picture opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => moves[s], w0)) === 'OUT');   // still waiting to be placed (its home pile can be the card itself)
       await page.click('#ctxX'); await page.waitForTimeout(100); }
     await page.locator('.card').nth(1).locator('.cid').click(); await page.waitForTimeout(100);
     ok(tag + ': tapping a pile card places the sign there', await page.evaluate(s => pileOf(s), w0) === c0 && (await page.evaluate(() => s2Cur)) === waiting[1]);
