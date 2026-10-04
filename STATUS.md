@@ -3872,6 +3872,27 @@ check-in armed. Nothing promoted; no status.json/NEAR.md change; no novelty clai
   priced per opening read, not as one unit (RUN1-NX 2.6x cap, 296 Gallica requests). (3) DECODE-derived sorter tiles never go in git, even
   small ones (account 3 removed RUN1-SEG's); my brief wrongly allowed them.
 
+## LANE RUN2 handoff (session_01JUMamDKmVYMaxdMxbs1AVT, account 1), 4 October 2026 (closed 04:0x UTC: brief jobs 1-3 run, lane near cap)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-run2.md`; worker briefs in `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md`. 9 worker
+sessions, USD 51.59 (D 8, D- 1), orchestrator ~4.6; lane ~56.2 of 60. All archived, no check-in armed. Nothing promoted; no status.json/NEAR.md
+change; no novelty claimed (rule 10).
+- **fr16142-noailles-constantinople-1571** (job 1): Dupuy 521 221R-226R transcribed (RUN2-NXDUP, 9,425 letters, err_2reader 0.13-0.22,
+  copy truncated at the end); family atlas over c510-516 + c262 (RUN2-NXATL: 9,904 tiles, 120 clusters, c262 segmentation 10/10 lines within
+  25%, 6 sorter sheets in run2/nxatl/sheets/); blind line reads c510 (39%), c516 (28-57%), c515 L01-L20 (45%) -- split far over 10%, so per
+  the lane brief the next pass is the sorter (focus.tsv in run2/nxta, run2/nxtb; account 3 publishes). RUN2-NXALN: pre-registered held-out
+  gate (c510-513 -> c514-516) on the atlas instrument 0.363 vs nulls p99 0.365-0.368 = FAIL, but a NON-TEST: the design-matched control fails
+  its own gate at the atlas's ~40% cluster impurity (passes at 25%/10%). New shared tool tools/stream_align.py (whole-letter stream mode).
+  Next: re-run run2/nxaln/nxaln.py unchanged on sorter-settled labels (impurity <= 25%); line-read instrument not run.
+- **es132-vargas-mexia-1578** (job 2, RUN2-ES132): f.89r/f.89v two blind passes (err 0.198/0.109), gate (b) es16 judge PASS vs order and key
+  nulls on every pass -- weak support only (judge FN 61-70%); M410/U35 and M386/U42, no H/C. Next: f.119v upper, f.120r, f.90r, f.91r ~2.5/page.
+- **fr16144-savary-lancosme-1588** (job 3, RUN2-SAV): fr.17020 not digitised (catalogue cc467473/cd0e233, no microfilm); ff.372-382 need a
+  BnF reproduction order (owner side; ASKS row not yet written -- the account-3 orchestrator's desk call).
+- Backlog (job 4): clairambault1225-paget-1714 RUN2-PAG 7 disagreeing codes settled (40 S / 14 M, Gibbs values, key.tsv 7 rows);
+  baluze167-davaux-1637 RUN2-BAL six partials all glossed (61/66 glossed, 5 bare, ~600 groups open). Other runnable rows not taken (cap).
+- Lessons: (1) a long clear-text transcription's reconciliation is priced per page (NXDUP 277 crops, 1.73x). (2) Three of four Noailles
+  workers finished in ~15 min: line reads stopped by judgement when the instrument's noise was clear (NXTA skipped c511) -- good stops.
+
 ## STALE4 handoff (session_01QTSnypE8zXMowpapJcTVwz, account 1, for account-3 orchestrator), 4 October 2026 (closed 02:2x UTC: brief met)
 
 Re-ran account 4's six jobs from its 19:18 UTC 3 Oct check-in (claims stale, nothing pushed; none resumed by 01:41 UTC). Workers 20.84, parent ~2.2, total ~23 of 25.
