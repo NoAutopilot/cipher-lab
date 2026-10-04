@@ -1300,3 +1300,64 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: one DECODE login for the full-size dockets and band heads of R4386 and R4388 (1763 candidates by binding position), ~$3
+
+## N7-HELDK (4 Oct 2026): full-size dockets and band heads of R4386 (f.75) and R4388 (f.79) for the 1763 letters (account 2 worker for LANE-NEAR7)
+
+Step run: N6-HEL81's named next. Intake gate (pasted by LANE-NEAR7, rc=0): `hellen-frederick-1752: partial (line 1) -- edition/page or
+full-text-search citation found within 6 lines`. One DECODE browser login (`tools/decode_browser_login.js 4386 OUT --guess-fullsize
+--fetch-page .../RecordsView/4388`): **full-size images served for both records** (8 pages, no forbidden.png). Not committed (BL images,
+"not in the public domain"); kept in the session scratchpad only. Sha1 / native px:
+R4386 P1-P4 117a5047a84081843ee234cee7c8c670d654ae7e, a9b8eda30c52775f81b3392186e20437042abc3f, cde8d04b66b59dda8cf830039c281bf28043a965,
+7bc04b644e0eb59147295b6d1e0ac14fbba2e18b (3936-4083 x 5352-5361); R4388 P1-P4 3c99e61e2e8f79517a1a71ff060d0866f6d1a8b8,
+6a7ab114baf8078a39646768bf51f98f1da1a590, 2f05358d1b3e7f0eff06252aba6f2e14c045a3a0, c7f4857fbe520c1bd533f25989ab869d38626bf9
+(3736-3802 x 5262-5268). No transcription, no grades, no key test (brief). Result per record: `key_search/R4386-R4388.tsv`.
+
+**What was found (one reader, by eye).**
+- Neither record has a legible docket: R4386 P1 is the blank ruled back of the form with one faint, illegible two-word line; R4388 P1
+  and P4 are blank. No holder, no date, no "Hellen" or "La Haye" docket on either.
+- Both are filled French tables on the usual printed 1-1000 form, re-numbered by handwritten hundreds heads above each column, so the
+  codes are four-digit, as the 1763 letters are.
+- **R4388 = codes 2001-3900**: words right of the printed numbers read 2001-3000 (heads 2000, 210, ..., 290), words left of them read
+  3101-3900 (heads 310, ..., 390), and a pasted strip carries 3001-3100. Scrambled (two-part) order. Names in cells: Lord Bute, le Duc de
+  New[castle], Mr Pitt, Grenville, l'Opposition, la Haye, le Roi d'Angl., l'Imp. de Russie, le Roi de Dann., Ministere Autrich., Stockholm,
+  Varsovie, Pologne, Versailles, Silesie -- a set that points to about 1762-63 (inference from names; no date on the sheet).
+- **R4386 = about codes 1201-2200** (heads 120-190 over columns 3-10, 200 and 210 over columns 1-2, column 2 written 1101-1200; the head
+  placement is not fully clear from one read). One-part, alphabetical (a ... n), with letter strings beside many printed numbers
+  (e.g. "403-acfmpu", "910-abcdeg..."). Names: Bedford Duc, Conway, Choiseul, le Chev. Macartney, le Chev. Mitchel, le Sr Pitt, Temple,
+  le Stadhouder, Yorke Gen., Winchelsea, Dutch Min. "Chev. Macartney" (knighted 1764) and Conway point to 1764 or later (inference).
+
+**Fit to the 1763 letters (R1045-R1048, R1060, R1061).** Token share by band (pool of six letters, from ciphertext_R*.txt): 1-1200
+55-63%, 1201-2000 6-13%, 2001-3000 13-21%, 3001-3100 1-3%, 3101-3900 9-10%. R4388's range covers the letters' upper codes (26-35% of
+tokens); R4386 covers only the 1201-2000 band and by its names probably postdates 5 Jul 1763. **Indication against R4388 (not a test):**
+on the 3001-3100 strip, which one read sees with about 32 of 100 cells blank (3003, 3005, 3006, 3011, 3012, 3017, 3018, 3020, 3022, 3026,
+3027, 3029, 3033, 3035, 3037, 3038, 3042, 3051, 3056, 3057, 3060, 3061, 3064, 3066, 3067, 3071-3073, 3076, 3083, 3093, 3096), 11 of the 28
+1763 tokens in that range (7 of 18 distinct codes: 3005 x2, 3011, 3035, 3037 x4, 3057, 3066, 3067) fall on blank cells -- about the
+random base rate, against about 3% empty-cell tokens for the true-key precedent (R4369 on R1953: 14 of about 486 in-range tokens). That is
+one reader, N=28, and no registered gate, so it is logged as an indication, not a negative (rule 3).
+
+**Where it was not found:** no Hellen/La Haye holder or 1763 date on R4386 or R4388 at full size (dockets, band heads, P1/P4).
+
+**Next (not run, priced):** the cheapest discriminating step is a pre-registered **blank-cell test** of R4388 for the 1763 pool: read
+filled/blank (not the words) for only the distinct 2001-3900 codes the six letters use (about 180 cells, `tools/iiif_lines.py --image`
+column crops, two blind Sonnet passes + one reconciliation = 3 units, ~USD 4), gate registered before reading: a true key puts <=10% of
+tokens on blank cells (R4369/R1953 precedent ~3%), a random key the sheet's base rate (~30%); control = the same count over value-shuffled
+codes. Only if it passes: transcribe R4388 in full (about 1900 cells, ~USD 12) and run `decode_key.py --key` with the value-shuffle
+control. R4386 is not worth a test before a 1763 dating or a pass on R4388. Requests: de-crypt.org 18 (1 login + RecordsView 4386, 4388,
+8 thumbnails, 8 full-size), 1.7 s apart, no challenge. Subagent calls: 0.
+
+## Remaining gaps (N7-HELDK, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); the context-fit anneal over fr18 bigrams is untestable at this N (N5-HEL7); next: transcribe Fagel 5177's clear Hellen pages (scans 5-93, two blind passes + reconciliation) as a writer- and week-matched phrase corpus, then a pre-registered phrase-crib placement in the R4369-decoded gaps with its own held-out control, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), the 1756 sheets R4377-R4379 are tallies/empty or Michel's, and no record in R4381-R4408 is dated 1756 or names Hellen (N6-HEL81); no further Add MS 32276 record remains unopened
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: not-attempted; R4388 (f.79) is a filled French table for codes 2001-3900 with c.1762-63 names but no holder or date, and its 3001-3100 strip puts 11 of 28 1763 tokens on blank cells (indication, one reader); R4386 is alphabetical 1201-2200, probably 1764+ (N7-HELDK); next: pre-registered blank-cell test of R4388 on the ~180 distinct 2001-3900 codes the 1763 pool uses, two blind passes + reconciliation with a value-shuffle control, ~$4
+
+## Escalation (N7-HELDK, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all Add MS 32276 records looked at, up to f.56 (NEAR3-HEL3), R4381-R4408 by metadata and thumbnails (N6-HEL81), R4386 and R4388 at full size (N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); context only, not a crib for R1953 itself
+- [ ] known-keys: R4369 reads R1953; R4370 and R4372 retired for codes 1-800; R4376 fails on R1049 (N6-HEL76); R4388 (2001-3900, c.1762-63 names) not yet tested on the 1763 letters, blank-cell test first (N7-HELDK)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: the fr18-bigram context-fit anneal is untestable at this N (N5-HEL7); untried instrument: phrase-crib placement from a transcribed Fagel 5177 writer-matched corpus, with its own held-out control
+- [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: pre-registered blank-cell test of R4388 (codes 2001-3900) on the 1763 pool, ~$4
