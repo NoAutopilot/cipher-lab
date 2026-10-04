@@ -1,6 +1,6 @@
 # No.87 mini sign sorter: the owner's own piles (BIR87-SORTER, 4 Oct 2026)
 
-Built, not published (the account-3 orchestrator builds and publishes, capabilities {"db": {}}). Purpose: BIR-KEYFIT's
+Published 4 Oct 2026 12:4x UTC by the account-3 orchestrator: https://claude.ai/artifact/RLiTdKMG6BRhoja1yEQY5Y (private, capabilities {"db": {}}; board card bir-no87-sort). Purpose: BIR-KEYFIT's
 named next step (`../../harvest/keyfit/RESULTS.md`, "Next"): put the no.87 tiles (f.178r, f.178v, f.179r) into the
 owner's OWN piles from the 4 Oct sort (`../owner-sort-2026-10-04/settled_labels.tsv`, 105 piles over f.117/f.144r/f.168),
 so the clerk-sheet alignment can give one C value per owner pile. No sign values appear on the page or in its inputs.
