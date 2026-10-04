@@ -1,0 +1,172 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "c173_date_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    740,
+    4744,
+    3140,
+    4814
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    1640,
+    4744,
+    4040,
+    4814
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    740,
+    4814,
+    3140,
+    4895
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    1640,
+    4814,
+    4040,
+    4895
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    740,
+    4895,
+    3140,
+    4972
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    1640,
+    4895,
+    4040,
+    4972
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L04_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    740,
+    4972,
+    3140,
+    5038
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  },
+  {
+   "crop": "c173_date_L04_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f173/740,4375,3300,920/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009609w_f173_740_4375_3300_920.jpg",
+   "box": [
+    1640,
+    4972,
+    4040,
+    5038
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 85,
+    "distance": 59,
+    "prominence": 155.4
+   },
+   "date": "04 Oct 2026"
+  }
+ ]
+}
