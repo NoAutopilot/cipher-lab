@@ -64,3 +64,32 @@ Everything else -- MIN_CTX 10, cost 25%, window 60, uniqueness 5, verdict thresh
 seeds), the gate (K verdicts >= 60%, K CONFIRM >= 80%, W false-CONFIRM <= 10%) and the outcome rules -- is unchanged.
 v2 writes `results_v2.tsv`. If v2 also fails its gate, the boundary test is logged "untestable by this method at
 this OCR quality" (rule 3, second attempt at an unchanged approach) and no third tuning is run.
+
+## v3 pre-registration: page-image transcription (A3V2-THURBT, 4 Oct 2026, written 05:5x UTC before `--tx` was run)
+Rule 3 third-attempt clause: the djvu-OCR instrument is retired (v1 32.5%, v2 48.8% K coverage, both below the 60%
+gate). v3 changes the *instrument*, not the test: the cipher lines of the pages carrying the 67 and 153 contexts are
+read from the archive.org page images (collectionofstat03thur leaves 285 = p.275 and 288 = p.278, native 2365x4074,
+cut into line crops with `tools/iiif_lines.py --image`), transcribed by two blind Opus passes per page, reconciled
+with `tools/reconcile_passes.py` and the worker's own read of the crops (an unresolved token is written `?`). Only two
+of the five cipher pages (274, 275, 277, 278, 279) are transcribed: five pages at three vision calls each would cross
+80% of the job's USD 9 cap, so per the brief only the pages carrying the targets' contexts are read; p.274 (84's
+context, line 22921) and pp.277/279 stay djvu OCR. Written down before the run: a K occurrence on an OCR page keeps
+the OCR's coverage problem, so the registered gate (60% of *all* K occurrences reach a verdict) is harder to pass on a
+half-transcribed stream than it would be on a full one; the per-page split printed under the gate is descriptive and
+licenses nothing.
+- Input: `tx/pages.tsv` names the pages; `tx/p275.tsv` (crops L02-L36, the letter's lines from "28. 7. 30." to "know,
+  whether you have received them or noe.") replaces djvu 23014-23062; `tx/p278.tsv` (crops L02-L67, the whole page
+  below the running head) replaces djvu 23250-23325. The running heads are not transcribed (they were page furniture
+  in v1/v2; `A.JUNK_LINE` drops them anyway). Every other line, the plain side (djvu OCR of "The same letter
+  decypherd"), MIN_CTX 10, cost 25%, window 60, uniqueness 5, the verdict thresholds, `--skip 2` (v2's rule, kept),
+  the K/W sampling procedure (seeds 0 and 1; the sampled set is re-drawn from the new unit stream, since the
+  population of keyed letter occurrences changes with the instrument), the gate (K verdicts >= 60%, K CONFIRM >= 80%,
+  W false-CONFIRM <= 10%) and the outcome rules are unchanged. v3 writes `results_tx.tsv`.
+- Targets: 67 (p.275 line 1 of the letter, djvu 23015) and 153 (p.278, djvu 23297), the two the brief names; 84 (p.274,
+  djvu 22921, not transcribed) is reported as it falls but was not the object of this run; 275 is gone from the key
+  (A3V2-THUR275) and from the targets.
+- If the gate FAILs: non-test, no grade or key change; the row is logged "untestable by this method on a two-page
+  transcription", and the only further step this file allows is the same test on the remaining three pages (new
+  material for the same instrument), not another knob.
+- v1/v2 regenerated 4 Oct 2026 after A3V2-THUR275's JUNK_LINE change (the 275 target row is gone, one K occurrence at
+  djvu 23015 lost its left context: v1 K 26 -> 25 verdicts, v2 48.8% -> 47.5%); both `--check` clean again.

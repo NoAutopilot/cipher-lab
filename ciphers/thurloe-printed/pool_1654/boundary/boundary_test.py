@@ -4,6 +4,10 @@
     python3 boundary_test.py            # writes results.tsv and prints the summary
     python3 boundary_test.py --check    # exits 1 if the committed results.tsv is stale
     python3 boundary_test.py --skip     # v2: results_v2.tsv (skip up to 2 unreadable tokens per side)
+    python3 boundary_test.py --skip --tx  # v3 (A3V2-THURBT, 4 Oct 2026): results_tx.tsv; the cipher lines of the
+                                        # pages listed in tx/pages.tsv are read from the page-image transcription
+                                        # tx/<page>.tsv (label TAB text, one printed line each) instead of the djvu
+                                        # OCR; every other line, the plain side, the statistic and the gate unchanged
 
 For each occurrence of a code in the P5+P6 / P7 cipher paragraphs: decode the keyed context either side
 (with the code under test removed from the key), locate both contexts in Birch's printed decipherment by
@@ -24,6 +28,27 @@ TARGETS = [67, 153, 84, 275]
 FURNITURE = re.compile(r"STATE\s+PAPERS|THURLOE|J\s+O\s+N\s+H")
 MIN_CTX, MAX_COST, WINDOW, UNIQ = 10, 0.25, 60, 5
 SKIP = 2 if "--skip" in sys.argv else 0  # v2 (PREREG.md): skip up to 2 unreadable/unkeyed tokens per side
+TX = "--tx" in sys.argv  # v3: page-image transcription for the pages in tx/pages.tsv (PREREG.md v3 section)
+
+
+def load_tx():
+    """tx/pages.tsv: page, djvu_from, djvu_to, file -> {djvu_from: (djvu_to, [(label, text), ...])}.
+    The transcribed lines replace djvu lines djvu_from..djvu_to (inclusive) in the cipher stream."""
+    out = {}
+    if not TX:
+        return out
+    for ln in (HERE / "tx/pages.tsv").read_text().splitlines()[1:]:
+        if not ln.strip() or ln.startswith("#"):
+            continue
+        page, a, b, f = ln.split("\t")[:4]
+        rows = []
+        for t in (HERE / "tx" / f).read_text().splitlines():
+            if not t.strip() or t.startswith("#"):
+                continue
+            label, text = t.split("\t", 1)
+            rows.append((label, text))
+        out[int(a)] = (int(b), rows)
+    return out
 
 
 def norm(s):
@@ -39,18 +64,29 @@ def load_key():
     return key
 
 
-def units_by_line(lines, a, b):
-    """(djvu_line, unit, raw_line) in reading order; junk lines are kept so the furniture check can see them."""
+def units_by_line(lines, a, b, tx=None):
+    """(djvu_line, unit, raw_line) in reading order; junk lines are kept so the furniture check can see them.
+    tx (v3): {djvu_from: (djvu_to, [(label, text)])} -- those djvu lines are replaced by the transcribed lines,
+    whose "line number" is the transcription label (p275_L02 ...); the same junk filters apply to both."""
     out = []
-    for no in range(a, b + 1):
-        raw = lines[no - 1]
-        if A.JUNK_LINE.search(raw):
-            continue
-        ln = raw
-        for rx in A.JUNK_SUB:
-            ln = rx.sub(" ", ln)
-        for u in A.tokenize([ln]):
-            out.append((no, u, raw))
+    tx = tx or {}
+    no = a
+    while no <= b:
+        if no in tx:
+            to, rows = tx[no]
+            src = [(lab, text) for lab, text in rows]
+            no = to + 1
+        else:
+            src = [(no, lines[no - 1])]
+            no += 1
+        for label, raw in src:
+            if A.JUNK_LINE.search(raw):
+                continue
+            ln = raw
+            for rx in A.JUNK_SUB:
+                ln = rx.sub(" ", ln)
+            for u in A.tokenize([ln]):
+                out.append((label, u, raw))
     return out
 
 
@@ -146,11 +182,12 @@ def test(units, i, meaning, key, skip, plain):
 def run():
     lines = A.djvu_lines()
     key = load_key()
+    tx = load_tx()
     letters = {}
     for name in ("P5_P6", "P7"):
         sp = A.SPANS[name]
         plain = norm(" ".join(A.plain_words(A.clean_lines(lines, *sp["plain"]))))
-        letters[name] = (units_by_line(lines, *sp["cipher"]), plain)
+        letters[name] = (units_by_line(lines, *sp["cipher"], tx=tx), plain)
     occ = [(name, i, u[1]) for name, (us, _p) in letters.items() for i, (_n, u, _r) in enumerate(us) if u[0] == "N"]
     rows = []
 
@@ -192,6 +229,14 @@ def summary(rows):
     gate = (len(kv) >= 0.6 * len(k) and sum(r[5] == "CONFIRM" for r in kv) >= 0.8 * len(kv)
             and sum(r[5] == "CONFIRM" for r in wv) <= 0.1 * len(wv))
     out.append("gate: " + ("PASS" if gate else "FAIL (non-test, no change)"))
+    if TX:  # descriptive split (not the gate): occurrences on transcribed pages vs on OCR lines
+        for lab, sel in (("transcribed pages", lambda r: not r[2].isdigit()), ("OCR lines", lambda r: r[2].isdigit())):
+            for g in ("K", "W"):
+                rs = [r for r in rows if r[0] == g and sel(r)]
+                ver = [r for r in rs if r[5] != "INCONCLUSIVE"]
+                conf = sum(r[5] == "CONFIRM" for r in ver)
+                out.append(f"  {g} on {lab}: {len(rs)} occurrences, {len(ver)} verdicts "
+                           f"({100*len(ver)/max(1,len(rs)):.1f}%), CONFIRM {conf}/{len(ver)} = {100*conf/max(1,len(ver)):.1f}%")
     for r in rows:
         if r[0] == "target":
             out.append(f"target {r[3]} ({r[1]} djvu {r[2]}) claimed '{r[4]}': {r[5]}; left '{r[6]}' gap '{r[8]}' "
@@ -203,7 +248,7 @@ def main():
     rows = run()
     tsv = "\n".join(["group\tletter\tdjvu_line\tcode\tmeaning\tverdict\tleft\tright\tgap\tnote"]
                     + ["\t".join(r) for r in rows]) + "\n"
-    f = HERE / ("results_v2.tsv" if SKIP else "results.tsv")
+    f = HERE / ("results_tx.tsv" if TX else "results_v2.tsv" if SKIP else "results.tsv")
     if "--check" in sys.argv:
         if not f.exists() or f.read_text() != tsv:
             print("stale:", f.name)

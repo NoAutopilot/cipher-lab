@@ -1,6 +1,5 @@
 group	letter	djvu_line	code	meaning	verdict	left	right	gap	note
 target	P5_P6	22921	84	noticeosandalthough	INCONCLUSIVE	attakosand	alltiingssume		left not located
-target	P5_P6	23013	275	that	REFUTE-furniture				J  O  N  H     T  H  U  R  L  O  E    E  S  Q.  &c,  275
 target	P5_P6	23015	67	england	CONFIRM	ihadbeenin	abowtthese	aengland	edit 1
 target	P7	23297	153	thecaualiers	INCONCLUSIVE		knewieiihould		context too short
 K	P5_P6	22894	158	designs	CONFIRM	considerthatin	omkthisnat	designs	edit 0
@@ -41,7 +40,7 @@ K	P5_P6	23019	12	e	INCONCLUSIVE		rhebeingon		context too short
 K	P5_P6	22930	41	n	CONFIRM	leastbesorelo	donbeedisa	n	edit 0
 K	P5_P6	22919	40	o	INCONCLUSIVE	busineslew	uldbeemupon		right not located
 K	P7	23310	35	t	INCONCLUSIVE	shouldbeknowne			context too short
-K	P5_P6	23015	25	e	CONFIRM	thatihadbe	ninengland	e	edit 0
+K	P5_P6	23015	25	e	INCONCLUSIVE		ninengland		context too short
 K	P7	23294	3	l	INCONCLUSIVE		seandcolonel		context too short
 K	P7	23337	28	i	INCONCLUSIVE	therebeani	nteearmiparliament		right not located
 K	P7	23306	19	a	CONFIRM	tomlkemide	cewiththelordprotector	a	edit 0
@@ -121,7 +120,7 @@ W	P5_P6	23019	12	k	INCONCLUSIVE		rhebeingon		context too short
 W	P5_P6	22930	41	i	REFUTE-gap	leastbesorelo	donbeedisa	n	edit 1
 W	P5_P6	22919	40	s	INCONCLUSIVE	busineslew	uldbeemupon		right not located
 W	P7	23310	35	l	INCONCLUSIVE	shouldbeknowne			context too short
-W	P5_P6	23015	25	a	REFUTE-gap	thatihadbe	ninengland	e	edit 1
+W	P5_P6	23015	25	a	INCONCLUSIVE		ninengland		context too short
 W	P7	23294	3	r	INCONCLUSIVE		seandcolonel		context too short
 W	P7	23337	28	d	INCONCLUSIVE	therebeani	nteearmiparliament		right not located
 W	P7	23306	19	h	REFUTE-gap	tomlkemide	cewiththelordprotector	a	edit 1
