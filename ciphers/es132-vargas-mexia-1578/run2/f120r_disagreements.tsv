@@ -1,0 +1,14 @@
+line	op	A_pos	A	B
+L01	replace	6	0	0@s
+L02	replace	9	24.@n	24
+L02	replace	15	17+@n	17+
+L03	replace	1	{xom}+	{Xom}+
+L04	replace	5	20+	20⊣
+L05	replace	3	20+	20⊣
+L05	replace	14	33+	33⊣
+L07	replace	9	17+	17⊣
+L07	replace	18	20+	20⊣
+L08	replace	6	179?	17?
+L08	replace	11	29	29@s
+L08	replace	14	15+@2@s 7+	15+@2 7+@s
+L08	replace	18	15+@2 ?	15+ /

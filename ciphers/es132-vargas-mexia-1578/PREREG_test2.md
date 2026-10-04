@@ -52,7 +52,7 @@ Key-decoded tokens M; codes >= 38 / cursive word codes / unreadable U, except va
 ([Bul] embaxador, [Dul] Escocia, [Val] hasta, [ho] consideracion by position) -- those are listed, still not H. No H.
 No novelty wording (rule 10).
 
-## Amendment 1 (N4-ES132, LANE-NEAR4, account 2, 4 Oct 2026, written ~04:23 UTC before any f.119v-upper or f.120r crop or decode)
+## Amendment 1 (N4-ES132, LANE-NEAR4, account 2, 4 Oct 2026, written 04:19 UTC by date -u before any f.119v-upper or f.120r crop or decode)
 Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave1.md` job N4-ES132. Pages: f.119v upper (canvas 117 left, the 12-line paragraph
 above test 0's crop, page key `f119vU`, already in `test2.py` PAGES) and **f.120r** (canvas 117 right, two cipher paragraphs, about 10
 lines, before the clear dating line "De Madrid a xv de Octubre ..."; page key `f120r`, added to `test2.py` PAGES with lines L01-L29,

@@ -1,0 +1,12 @@
+# BnF Espagnol 132 f.120r (Gallica btv1b10032556x canvas 117, right page, region 3600,1000,2600,1390), 8 bands (2 paragraphs).
+# Philip II to Juan de Vargas Mexia, Madrid, 15 Oct 1578 (letter f.119r-120r, dated "De Madrid a xv de Octubre" below), Cp.30.
+# Two blind Sonnet passes (passes/f120r_passA/B.tsv, shape notation run2/pass_prompt_f120r.md), normalised by test2.load_pass,
+# reconciled by run2/reconcile_f120r.py (N4-ES132, 4 Oct 2026) from the crops and overlay. ? = not settled by eye.
+L01	6. 15ρ@2 y 4@n 21. 0? 28 10 21. 118@s 12+ 37σ 10@n 6. 23.@r 25σ@m 28
+L02	4σ@s 23 23. 12+ 37σ 10@n 6. 23σ@s 24.@n? 24+@m y 21. 101@s 11+ 17+@n? 15ρ 85 4@s
+L03	{xom}+? 15.@s y 95 23 4@n 10 21.@l 68@s 28 4@l 8σ 10 22. 13@s 5σ 6. 24ρ {Ge} {Zum}
+L04	115@s 16. 13ρ@m 23. 20+? 3 6+ 16σ 22+@m y 22. 23ρ@l 25.@m 15ρ 21. 7ρ@n 25.@n 11+ /
+L05	67 23. 20⊣ 3 6. 24. 17.@m 20ρ 7+ {gal} 6. 23+ 7+@m 33⊣ 24ρ 6. 15+ {Ra}@s
+L06	21. 23. 12+ 29.@n 23ρ 30. 15ρ 6. 15+@s 20σ 22+ 24. 22σ 10@s 24ρ 6+
+L07	25σ 10 15+@s y 22. 13@s 7ρ@n 24σ 17⊣ 10@n 6ρ 23σ 21σ 3 22+ 21@s 17ρ 20⊣
+L08	3 6+@n 6. 29σ@m 21. 17? 23. 12+ 29. 7+ 29@s 23σ 6. 15+@2@s 7+@s? 29 6. 15+@2@s? /

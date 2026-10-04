@@ -1,0 +1,16 @@
+# BnF Espagnol 132 f.119v upper paragraph (Gallica btv1b10032556x canvas 117, left page, region 900,1020,2500,1780), 12 bands.
+# Philip II to Juan de Vargas Mexia, Madrid, 15 Oct 1578 (letter f.119r-120r), Cp.30. Not printed by Teulet (his paragraph is f.119v lower). Right edge at the binding.
+# Two blind Sonnet passes (passes/f119vU_passA/B.tsv, shape notation run2/pass_prompt_f119vU.md), normalised by test2.load_pass,
+# reconciled by run2/reconcile_f119vU.py (N4-ES132, 4 Oct 2026) from the crops and overlay. ? = not settled by eye.
+L01	12. 25σ@s 24ρ 15ρ 21. 4 79 25σ 15. 22ρ y 18@s 7ρ 16⊣? 17σ 7ρ 20ρ@m y? ?
+L02	6σ? 44? 15. 4@l 88 18 10@l {Ja} 6. 10 15+@n 23ρ@n y 67 4@s 24. y 15ρ y ?
+L03	{Na} 23 24σ 3 17.@n 10 20+@2 22.@n 7σ 10 6. 8σ 4@n 15+ 98 6. 21. 4@l 23. 4@l
+L04	4@n 6. 7ρ@n 4 {qua} 23. {Xal} 4@s {quam} 25. 22σ 23σ 16σ y 20ρ@m 3
+L05	67 17ρ 15. 14 25. 13@s 6 6+ 10 4@n 24.@n? 6. 21. 28 15ρ 4@n 24σ 4@n 6+
+L06	23σ 17ρ 21. 15ρ 31. 18 {de} {Vol} 24σ 25σ 10 25. 12+ 25. 13. 6@s
+L07	24+@m 4@n 21. 35ρ 7⊣ 22. 4@l 58 21σ 24+@n 6ρ 15. 6. 25.@s 22+@s 24ρ 6+@s
+L08	{de} 6 6ρ 6. 21. 6. 23. 68 15. 25+@n 20⊣ 4@s {Zom} 4@s 24ρ 17σ@n 11⊣@n?
+L09	22ρ 6. 4@s 7⊣ 23+ 24σ 3 18. 21. 23. 10 23⊣ 26@2 7σ 4@n 24. y 6?
+L10	22. 13@s 6. 15ρ 21. 18@s 22@s 20ρ@n 6σ 3 22. y 4@n 21. 14 20+ 22+ ?
+L11	15+ {bum} 21. 4@l {Ja} 6. 11⊣? 13 23+ 12+ 36+ y 60 7ρ 4@l {qua}
+L12	10 15+@n 7ρ@n y 6. 15ρ 21.@l 26+@s 12? 25σ 3 22. 4@n 4@s 24. 1 /
