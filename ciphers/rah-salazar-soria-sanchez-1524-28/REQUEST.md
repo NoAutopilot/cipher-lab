@@ -73,6 +73,12 @@ image, whether or not the target rows above are ever imaged):
 | A-37, ff.430-434 | 5541/5542 | Marino Caracciolo → Charles V | 16 Jun 1526 | Milan | **Crib** — interlinear period decipherment already in the Índice ("descifrados entre líneas"). Attests Ko.8 as a period key on an image. |
 | (same legajo, inv. 6191) | 6191 | Alonso Sánchez → Charles V | — | — | **Crib** — "Texto descifrado de las cartas 6188 y 6189" (same correspondent/legajo). Attests Ko.9 on an image, independent of the group (i) rows. |
 
+**(iv) Added 4 Oct 2026 (LANE-RUN4, from RUN3-RJM2) -- A-23 (= RAH sig. 9/23), ff.34-38, for `ciphers/rah-juan-manuel-1521`.**
+Índice nos. 2937-2938: ff.34-36 a cipher letter of Juan Manuel to Charles V, Rome, 7 Mar 1522 (DECODE R9501; CSP Spain II no.393,
+"Contemporary deciphering"), and ff.37-38 "Texto descifrado del documento anterior", its period decipherment. The pair is a known-answer
+test of the Juan Manuel key on R9501. Not found on bibliotecadigital.rah.es (RUN3-RJM2, 4 Oct 2026; a search result, not a digitisation
+verdict). Add to the reproduction form at the quote stage if the order goes ahead; five folios, same collection.
+
 ## Suggested action
 
 One email or letter to the RAH library citing the printed Índice's own inventory numbers above (not DECODE
