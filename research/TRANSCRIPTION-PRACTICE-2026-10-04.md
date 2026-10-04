@@ -171,7 +171,7 @@ Opened:
 - cryptool.org Mary Stuart post
 
 Not reached:
-- Lasry, Biermann and Tomokiyo, "Deciphering Mary Stuart's lost letters from 1578-1584", Cryptologia 2023
+- (Read later, 4 Oct 2026: research/MARY-STUART-METHOD-2026-10-04.md.) Lasry, Biermann and Tomokiyo, "Deciphering Mary Stuart's lost letters from 1578-1584", Cryptologia 2023
   (doi 10.1080/01611194.2022.2160677): tandfonline answered 403 to WebFetch and to one curl. Its transcription
   method is therefore **not** described here. The CrypTool post says only that it took simulated annealing "as
   well as a lot of manual work". The usual description of their method, transcribing symbols and correcting the
