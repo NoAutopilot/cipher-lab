@@ -439,7 +439,12 @@ def assign(argv):
     ures = [(i, score(i, i)) for i in unk]
     uctl = [decide(score(i, w)) for i, w in zip(unk, unk[1:] + unk[:1])]
     acc = kok / max(1, len(kdec))
-    use = acc >= 0.85 and len(kdec) >= 20
+    ud0 = sum(decide(s) != "?" for _, s in ures)
+    uc0 = sum(x != "?" for x in uctl)
+    # PREREG-ECK62 (c): not used when the rotated-window control decides nearly as often as the real windows;
+    # "near" fixed at 09:46 UTC 4 Oct 2026, after the first run (41 vs 38): control decided > half the real count
+    ctl_ok = uc0 <= 0.5 * ud0
+    use = acc >= 0.85 and len(kdec) >= 20 and ctl_ok
     out = ["id\tdate\tor_volume\tscore_key1\tscore_key2\tassigned"]
     for i, s in ures:
         d = runs["1"][i]["date"]
@@ -455,7 +460,9 @@ def assign(argv):
             f"known_answer_right_rotated_window\t{sum(1 for (i, b, _), c in zip(kres, kctl) if c == b)}",
             f"gate_acc>=0.85_and_decided>=20\t{'PASS' if use else 'FAIL'}",
             f"unassigned_decided\t{sum(x != '?' for x in ud)}/{len(unk)} (1: {ud.count('1')}, 2: {ud.count('2')})",
-            f"unassigned_decided_rotated_window\t{sum(x != '?' for x in uctl)}/{len(unk)}"]
+            f"unassigned_decided_rotated_window\t{sum(x != '?' for x in uctl)}/{len(unk)}",
+            f"gate_control_decided<=half_real\t{'PASS' if ctl_ok else 'FAIL'}",
+            f"assignment_used\t{'yes' if use else 'no'}"]
     outs = {"assign.tsv": "\n".join(out) + "\n", "assign_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, v in outs.items():

@@ -1105,3 +1105,66 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched fully keyed mssEC 18 entries were not; first the 9 collisions and the Lehigh (9947.505, 10020.609) and weigh (9965.539) conflicts; next: image-reconcile those entries with the eckert-1864 method, ~$4
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: decode.py possessive option and collision guard, then re-run ec18.py, ~$2
+
+## RUN3-ECK62-eckert-1862 (4 Oct 2026, account 1 worker for LANE-RUN3): possessive option, collision guard, book assignment
+
+Rules pre-registered and pushed before any number was computed: `ec18/PREREG-ECK62.md` (commit 580c34e6, 08:5x UTC).
+- (a) Shared code, no private copy: `ciphers/eckert-1864/decode.py` gains `lookup(..., possessive=True)` ("Kettle's" ->
+  [Longstreet]'s) and `CollisionGuard` (rule J: the code word joined to a plain neighbour makes a corpus word of >= 7
+  letters, count >= 2; rule B: bigram support for the clear word P >= 3 and P > 2x the support for the meaning). Both are off
+  by default; eckert-1864 `decode.py --check` and `decode_no2.py --check` stay current. Offline test
+  `tools/tests/test_eckert_decode.py` (9 tests, including what the guard must NOT block: a meaning that fits the context
+  better, numerals, options off). Bug found in the run and fixed: a possessive numeral ("Brown's" = 1 in Cipher No. 2) sent
+  the numeral-run loop into an infinite loop; the loop now uses the same lookup (test added). Guard corpus: OR ser. I
+  1862 volumes, IA `warofrebellionco0007vari`, `warofrebellion09secrrich`, `1warofrebellion10secrrich`,
+  `2warofrebellion10secrrich`, `1warofrebellion11secrrich`, `3warofrebellion11secrrich`, `1warofrebellion12secrrich`,
+  `3warofrebellion12secrrich` (`_djvu.txt`, not committed). Deviation from the PREREG text: it named
+  `warofrebellion10/11/12secrrich`, which do not exist on IA (error pages, 146 KB); the corpus used is the part-numbered
+  identifiers for the same 1862 volumes (vols. 7, 9-12) the folder already uses in print/. None can print a 1864-65 telegram.
+- Guard known answer (`ec18.py --guard-test`, `ec18/guard_test.tsv`; A3V3-ECKC's align_tokens.tsv statuses): COLLISION
+  word tokens caught 6 of 9 (whack J, John J, summit B, subject B, opinion B, passed B; missed: white, animals, Hotel);
+  AGREE word tokens wrongly guarded 0 of 198 (CONFLICT 0/4, PARTIAL 0/6, UNFIXED 0/38). Pre-registered gate (FP <= 5% of
+  AGREE) passed, so the committed ec18 outputs now use `--possessive --guard DIR62`. Caveat: the rule was written after
+  seeing the A3V3-ECKC collision examples, so 6/9 is not an out-of-sample figure; the 0/198 FP is the binding number.
+- (b) ec18.py re-run, both books (`ec18.py DATA OR --possessive --guard DIR62 --check` and the same with `--book 2`, both
+  current; flags are recorded in control*.tsv). Guarded tokens over all 671 entries: 182 with key.md, 440 with key-no2.md
+  (listed in `ec18/guard.tsv`, `ec18/guard_b2.tsv`). Out-of-sample check on the print-matched entries (not in the known-answer
+  set): the meanings the guard removed occur in their own telegram's print about as often as in an unrelated telegram's window
+  (book 1: 6/22 vs 5/22; book 2: 13/87 vs 10/87), i.e. they behave like noise, not like read code. Meanings in print: book 1
+  0.670 -> 0.673 (control 0.380 -> 0.381); book 2 0.716 -> 0.737 (control 0.414 -> 0.425). Fully keyed: book 1 28 entries,
+  H 370 C 2 -> H 369 C 2 (the 9765.139 whack token now plain); book 2 17 entries, H 253 C 8 I 7 unchanged. OR matches 14 and
+  12 unchanged (9885.368 now shares 12 5-grams, was 7, since "summit Point" is left as written).
+  The 9 collisions, before -> after: whack, summit, subject, opinion, passed, John now left as written; white, animals, Hotel
+  still read [Report], [Monroe], [Weldon]; persons (numeral, out of scope by construction) still [5]. Dodge (by inspection):
+  guarded in 9951.514 (rule B), not in 9947.505 or 10020.609. Data conflicts unchanged (rule 4, logged, not settled): Lehigh
+  (9947.505 "general Canby", 10020.609 "can be") and weigh (9965.539 "on the way") are not guarded; they need the image.
+- (c) Book assignment for the 192 '?' entries (`ec18.py --assign`, `ec18/assign.tsv`, `ec18/assign_summary.tsv`): 78 are
+  print-matched. Known answer on the 287 print-matched entries whose book the markers fix: 257/267 decided right (0.963),
+  accuracy gate passed. The pre-registered control fails: scored against an unrelated telegram's window, the rule still
+  decides 38/78 '?' entries (41/78 with the real window) and gets 188 of the known-answer entries right. So the rule tells
+  the books apart by which key gives Official-Records-like meanings in general, not by agreement with the entry's own
+  telegram. Under PREREG (c) the assignment is therefore not used: assign.tsv keeps the scores and every '?' entry stays
+  '?'. The numeric "near" threshold (control decided count > half the real count) was fixed after the first run (09:46 UTC),
+  but at 38 vs 41 the result is the same under any reasonable threshold. Next instrument (named, not run): a print-free
+  assignment (meaning words against a general OR vocabulary, scored on the marker-known entries as the known answer, with a
+  shuffled-key control) -- pre-register before running.
+- Grades: no H added or changed except the one whack token removed; H only where mssEC 41 / mssEC 47 gives the value.
+  0 vision, 0 subagents. Requests: hdl.huntington.org 1 (vol18 dmQuery, sha256 matches), archive.org 61 (48 OR 32-49
+  djvu, all sha256 match or_volumes.tsv; 5 + 6 + 2 error-page fetches for the 1862 corpus), >= 1.6 s apart.
+
+## Remaining gaps (finish-or-blocker pass, RUN3-ECK62, 4 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, now read with the possessive option and collision guard (RUN3-ECK62); the 26 print-matched ones aligned to OR (A3V3-ECKC)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books, aligned to OR, possessive and guard applied (RUN3-ECK62: 6/9 collisions removed, 0/198 false guards); white, animals, Hotel and the Lehigh / weigh conflicts stay open; next: image-reconcile those entries (9765.139, 9911.425, 10010.593, 9947.505, 10020.609, 9965.539) with the eckert-1864 method, ~$4
+- 192 unassigned mssEC 18 entries (no punctuation or signature marker) - blocker: not-attempted; print-agreement assignment failed its pre-registered control 4 Oct 2026 (RUN3-ECK62: 41/78 decided vs 38/78 on an unrelated window), so it is retired for this hypothesis; next: a print-free assignment by general OR vocabulary with a shuffled-key control, pre-registered, ~$2
+
+## Escalation (RUN3-ECK62, 4 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 192 '?' mssEC 18 entries: print-agreement assignment retired 4 Oct 2026 (RUN3-ECK62, control failed); next: print-free assignment, ~$2
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; OR ser. I vols. 32-49 done for mssEC 18 (A3V3-ECK18, A3V3-ECK2); the 26 matches aligned word by word (A3V3-ECKC)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched mssEC 18 entries were not; first the 3 unguarded collisions (white, animals, Hotel) and the Lehigh / weigh conflicts; next: image-reconcile with the eckert-1864 method, ~$4
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: print-free book assignment for the 192 '?' mssEC 18 entries (pre-registered, shuffled-key control), ~$2; then the image check of the six collision/conflict entries, ~$4
