@@ -71,3 +71,16 @@ blind pass + a second blind pass on the same cells), the statistic (share of the
 cells carry meanings, the LR100 uni/bi test as READ2-HEL2), the null (blank share at random code positions in the same range; and the R4369/R1953
 precedent as positive control subsampled to the same N), the pass rule. Verdict: candidate for a full transcription (~$12) or retired. Do not
 transcribe the whole table. gaps refresh + gaps_check OK; NEAR row Evidence/Last-touched + near_check.
+
+## Wave 3 (added 12:5x UTC by LANE-NEAR7)
+
+### N7-LKTOOL -- tools/lookalike_pass.py: the per-tile window re-read as a shared subcommand (Opus; cap USD 4; box 60 min; no network)
+Lesson (N7-VIV53L, N7-VIV54L, 4 Oct 2026): the tool's `packet` and `audit` prompts (id-only candidate sheet + whole line crops, passC sequence
+shown) drew 7/7 Sonnet re-reads that echoed passC -- voided, about half of both jobs' spend. The working instrument was private
+(ciphers/fr16104-vivonne-spain-1572/tx/viv53L_windows.py and viv54L_windows.py): per-tile windows cut at the estimated x on the stitched line, 6 per
+montage, candidates in alphabetical order, the passC label hidden. Usage 8 / 8a: promote it into the shared tool as a `windows` subcommand
+(options for the stitched-line x estimate and montage size; output the same <run>_tiles.tsv shape `reconcile` reads), with an offline test in
+tools/tests/ (synthetic crops). Add to `packet`'s and `audit`'s --help and the prompt file a warning that the passC-visible prompt is echo-prone,
+with an `--hide-passc` option if cheap. Leave the two private scripts in place (their output is cited) with a header line pointing at the tool,
+as interlinear_align did. Update SYSTEM.md's row for the tool and TRANSCRIPTION.md's look-alike line in one sentence. Run tools/tests for the tool
++ system_map_check + file_shrink_guard. Do not re-run any Vivonne read. Report what changed.
