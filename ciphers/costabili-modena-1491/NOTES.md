@@ -151,22 +151,62 @@ line-crop pass: group-level crops (one cipher group plus the gloss directly abov
 the wrong line), or the owner's sign sorter for the q shapes. Subagent calls 4 (+1 empty call stopped at launch); reconciliation 1 unit
 (3 crop views + 1 grid view). Requests: de-crypt.org 1 login + record page + 8 files (1.8 s apart), no challenge.
 
-## Remaining gaps (COS-M, 4 Oct 2026; item 4 closed by RUN3-COST)
-Read so far: 0 of ~5,060 measured-estimate cipher signs read by us; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table)
-- Key rebuild from the period decipherments: R1166 P1-P2 at M (RUN3-COSK P1 15 pairs, RUN3-COSK2 P2 15 pairs, both reconciled sets pass the shuffle control; 14 of 16 sign values agree with decode-1168) - blocker: not-attempted at C; two blind line-crop passes with the convention still fail the pre-registered gate (pass B 0.328 vs 0.430) because readers cannot fix the target line; next: group-level crops (cipher group + gloss above, cut by the reconciler) and 2 blind passes on P1-P2, ~$4; then the R1163/R1165 slips and the R1167 clear copy
-- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align after the R1166 key exists, ~$5
-- R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; read once the rebuilt key exists; next: decode with the rebuilt key, ~$1
-- Vestigia page-image map of 2950/2955/2977 to R1163/R1165/R1166 (print search itself done, RUN3-COST, no printed text found) - blocker: not-attempted; images public on vestigia.hu, not opened this job; next: open the 8-10 images of 2955 and 2977 and compare with R1165/R1166 leaves, ~$1
+Result (16:4x-17:0x UTC). Both blind passes returned 32 rows each (`align/n8cos_passA.tsv`; `align/n8cos_passB_raw.tsv` in the reader's reverse
+order). Group separators `|` (a formatting delimiter the line-crop passes did not use) removed before scoring -> `align/n8cos_pass{A,B}_norm.tsv`;
+nothing else changed. `python3 ciphers/costabili-modena-1491/align/run_align.py <scratch>/run align/n8cos_passA_norm.tsv align/n8cos_passB_norm.tsv`
+(pairs, alignment and key per pass copied to `align/n8cos_{pairs,align,key}_pass{A,B}.tsv`):
 
-## Escalation (4 Oct 2026)
+| input | pairs | real agree | shuffle mean | shuffle p95 | gate (>= p95 + 0.20 and >= 0.430) |
+|---|---|---|---|---|---|
+| pass A (blind, group crops) | 17 | 0.575 | 0.211 | 0.244 | **PASS** (0.444 / 0.430) |
+| pass B (blind, group crops) | 18 | 0.459 | 0.192 | 0.219 | **PASS** (0.419 / 0.430) |
+| for comparison, RUN3-COSK2 line crops pass B | 10 | 0.328 | 0.147 | 0.230 | FAIL |
+
+err_2reader (A vs B, the 26 crops read at equal length): 26 of 197 signs differ, 0.132; 0.105 without the 6 z/o splits (pass A wrote no `Z` at all,
+merging dash+z into z; pass B wrote o for several lead-in loops). Pass B's margin over the 0.430 floor is small (0.029).
+Grading per the PREREG rule (both passes over gate, same value in both pass keys, >= 2 agreeing occurrences each) -> `align/key_r1166p12_n8cos.tsv`:
+**C (10 signs)**: + a (8/11, 6/11), T d (3/3, 3/3), a i (6/9, 6/14), b o (9/9, 8/13), c p (6/6, 2/4), d r (8/14, 8/10), g l (2/5, 5/8), o e (6/11,
+4/20), y n (10/13, 10/16), z o (6/13, 5/7). **M**: q (the C rule is met mechanically for c, 7/14 and 7/20, but u runs 5/14 and 6/20 in the same
+passes; the label q covers at least two shapes (RUN3-COSK, decode-1168), so this worker holds it at M, value u -- a downgrade, never an upgrade); TT
+(passes split n / f, the f from the long-s gloss "fua" under --keep-fs; stays M at s); 8, L, 4, Z, .x. (one occurrence or not read). Against
+decode-1168 key.tsv: the 10 C values agree with it on 9 (+, T, a, b, c, d, g, o, y) and differ on z (1168 t at M; here bare z = o, the t being the Z
+sign, as RUN3-COSK/COSK2 found). No reconciliation unit was spent (the gate passed on the blind passes; a reconciliation licenses M at most).
+`decode_key.py --check`: not applicable -- this folder has no ciphertext/decode.json yet (no target text transcribed for decode); nothing in
+decode-1168's key.tsv was touched (not this job's folder). VERIFIER WANTED for the C grades (a session other than this one re-runs run_align on the
+committed pass files and checks the q downgrade). P4 decode not run: P4's unglossed groups are not transcribed, so the >= 80% C coverage test
+cannot be computed yet (next step below).
+Instrument note (rule 3): this is the different instrument RUN3-COSK2 named, not a third line-crop tuning; it moved both passes over gate where both
+line-crop attempts had pass B under it.
+Subagent calls 2 (Sonnet, blind). Requests: de-crypt.org 1 login + record page + 8 files (1.8 s apart), no challenge.
+
+## Vestigia image map 2977/2955 (N8-COS, 4 Oct 2026, 16:5x UTC)
+
+`www.vestigia.hu/documents/2977` and `/2955` (2 page requests) list their files: 2977 has 4 MNL scans `HU_MNL_OL_X_10891_DF_295935_0001-0004`
+plus 4 photographs `1427719185*.jpg`; 2955 has 3 MNL scans `..._DF_295914_0001-0003` plus 6 photographs `1427391191*.jpg` (4 web images fetched, 2 s
+apart, scratch only). On a contact sheet at 400 px, **R1166 P1 (DECODE) is the same photograph as Vestigia 2977 image 1 (MNL DF 295935_0001) and
+1427719185.jpg**: same archive date card "1491 ev 06 ho 21 nap", "Ambasciatori 2", same leaf, same lighting. So R1166 = Vestigia 2977 = b.2/20
+no.16, **21 Jun 1491** (the date card settles the closing "xxi junij 1491?" that COS-M marked uncertain); the MNL DL-DF number 295935 is a second
+reference for the same letter. 2955's page 1 carries the card "1491 06 15", "Ambasciatori 2" and a mostly cipher text, matching COS-M's R1165
+(archive date card 15 Jun 1491, P1 ~55% cipher) and 2955's 6-photograph count matches R1165's 6 images; R1165's own image was not re-fetched this
+job, so R1165 = 2955 (MNL DF 295914) is a strong match by card, date and page count, not an image-to-image comparison.
+Requests: www.vestigia.hu 2 pages + 4 images, no 429/403.
+
+## Remaining gaps (refreshed N8-COS, 4 Oct 2026)
+Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 10 sign values at C (N8-COS), the rest M
+- Key rebuild from the period decipherments: R1166 P1-P2 at C for 10 signs (N8-COS group crops, both blind passes over the gate); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; only R1166 P1-P2 have been through group crops so far; next: VERIFIER re-run of the committed N8-COS pass files, then group-level crops of the R1163 and R1165 cipher slips against their clear slips for the remaining signs and a q-shape split (owner's sign sorter or group crops of q tokens), ~$4
+- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
+- R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; P4 groups not yet transcribed; next: group crops + 2 blind passes of P4 (~$2.5), then decode only if >= 80% of its signs have a C value (PREREG-N8-COS)
+- Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
+
+## Escalation (4 Oct 2026, refreshed N8-COS)
 - [x] siblings: R1162 key/gloss and R1168 f.13 Exemplum read first (their folders), not reapplied here
 - [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
-- [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 P1 rebuild (RUN3-COSK: 12 agree, 2 disagree as label collisions, 1 new)
+- [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 rebuild (N8-COS C values: 9 agree, z differs as a label collision)
 - [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
-- [ ] key-rebuild: R1166 P1-P2 at M (RUN3-COSK, RUN3-COSK2); line-crop blind passes retired for the C grade (rule 3, two attempts); group-level crops untried, then the R1163/R1165 slips and R1167 copy
-- [x] image-check: one DECODE login, all 31 images full size, per-page table above
+- [ ] key-rebuild: R1166 P1-P2 at C for 10 signs (N8-COS group crops; line-crop passes retired for C after RUN3-COSK/COSK2); remaining signs, R1163/R1165 slips and the R1167 copy untried with group crops
+- [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: Vestigia image map for 2955/2977 (~$1), then group-level crops and 2 blind passes on R1166 P1-P2 for the C grade (~$4)
+Verdict: keep going: 4 internal gaps; cheapest next: VERIFIER re-run of N8-COS (~$1), then group crops of R1166 P4 (~$2.5) and of the R1163/R1165 slips (~$4)
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
@@ -185,3 +225,4 @@ reconciled readings, but the readers get no value, gloss text or key.
 Units stated before the first call: 2 blind Sonnet reader calls (pass A page order, pass B reverse; each over all 32 group crops, total crop area
 below one page of line crops) + 1 reconciliation by this worker = 3 units at ~USD 1.2 each (~3.6 of the 6 cap); the Vestigia 2955/2977 image map (~1)
 only after, if the cap allows.
+    gaps_check (N8-COS, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
