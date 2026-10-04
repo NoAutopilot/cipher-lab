@@ -14,23 +14,31 @@
  },
  "targets": {
   "all": {
-   "unresolved": 108,
-   "untestable (empty strip)": 1
+   "owner right": 98,
+   "both plausible": 9,
+   "untestable (empty strip)": 1,
+   "machines right": 1
   },
   "f117": {
-   "unresolved": 30
+   "owner right": 24,
+   "both plausible": 6
   },
   "f144r": {
-   "unresolved": 26,
+   "owner right": 25,
+   "both plausible": 1,
    "untestable (empty strip)": 1
   },
   "f168": {
-   "unresolved": 52
+   "owner right": 49,
+   "both plausible": 2,
+   "machines right": 1
   }
  },
  "target_grades": {
-  "reconciled": 108,
+  "reconciled": 3,
+  "agreed": 78,
+  "agreed-low": 27,
   "": 1
  },
- "splits": 108
+ "splits": 3
 }

@@ -2418,3 +2418,22 @@ counted as picks; the prereg says no change), both runs kept, both FAIL every le
 Report of what was found and where it was not found; novelty not classified (rule 10).
 Next (one line, not done): the owner's piles do not track key values here; the sorter's remaining use is the 8 recut tiles and the T83
 off-sheet question on no.90 (f185r), not a further sort of these three leaves.
+
+## BIR-ADJ (4 Oct 2026, account-3 worker): value-blind image adjudication of the 109 owner-vs-two-machines tiles
+Brief `.claude/briefs/runs/2026-10-04-acct3-bir-adjudicate.md`. Prereg `harvest/ownersort/adj/PREREG_adj.md` + item key (cf40cb6a, before any
+image read); record `harvest/ownersort/adj/RESULTS_adj.md`. Instrument: per tile a composite (tile on its line, two neighbours each side,
+red box) and two unlabelled six-tile reference strips (machine pile, owner pile; order shuffled); no names or values shown. Line strips on
+disk (same public Gallica regions as the sorter; 0 requests -- the brief's iiif_lines.py recut was not needed). 29 subagent calls.
+- Known-answer control (30 all-agree tiles, true vs nearest look-alike pile): 30/30 both passes (gate 24) -- licensed, at ceiling.
+- Targets (108 testable; t014 untestable): owner right 98 (f.117r 24, f.144r 25, f.168 49), machines right 1 (f.168), both plausible 9,
+  neither 0. Grades: agreed 78, agreed-low 27, reconciled 3. No strip-position or same-leaf context bias found. The 98 are candidate
+  corrections at M only (`adj/owner_right.tsv`). Sheet-pile moves: 84 of 84 owner right; owner-made new piles: 14 of 24 (the owner strip there is the owner's own visual cluster).
+- Gate with only the owner-right moves (`ownersort.py --new-piles-unknown --only-sids`, new option, outputs `harvest/ownersort/v3_adj/`):
+  f.117r -1.284 vs base -1.215 (p95 -1.217, rank 101) FAIL; f.168 -1.565 vs -1.149 (rank 201/201) FAIL; f.144r -1.459 vs -1.418 (p95
+  -1.379, rank 37) FAIL; pooled FAIL. f.144r passed only with the full v2 sort (rank 5).
+- Reading of the two together: the owner's eye is right about shape on nearly every disputed tile; the 1572 key-sheet value attached to
+  those piles still makes every text worse. The conflict is between sign shape and key value (key inventory or tile-to-position mapping),
+  not between the owner and the machines. Nothing applied; no reading moved; grades and depth unchanged; decode files untouched.
+Report of what was found and where it was not found; novelty not classified (rule 10).
+Next (one line, not done): test the tile-to-position mapping on the 98 owner-right tiles (do their positions carry the moved sign in the
+blind passA/passB lines?) before any key-value question, ~USD 2.
