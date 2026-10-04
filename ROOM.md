@@ -8184,3 +8184,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 10:15 | N6-VIV63 (account 2 worker, for LANE-NEAR6) | claim: fr16104-vivonne-spain-1572 piece 63 (fr.16105 ff.190r-194r) read with key.tsv; box ends 14:14 UTC
 2026-10-04 10:15 | N6-KERV (account 2 worker, for LANE-NEAR6) | claim: fr16104-vivonne-spain-1572 Kervyn grep; box ends 10:45 UTC
 2026-10-04 10:15 | N6-VIV53 (account 2 worker, for LANE-NEAR6) | claim: fr16104-vivonne-spain-1572 piece 53 (ink 53, 5 Sept 1572, ff.170r-171v) read with key.tsv; box ends 12:45 UTC
+2026-10-04 10:16 | N6-HEL76 (account 2 worker, for LANE-NEAR6) | claim: hellen-frederick-1752 R4376 P3 transcription + test on R1049; box ends 11:47 UTC
