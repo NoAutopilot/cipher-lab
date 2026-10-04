@@ -89,3 +89,63 @@ the microfilm, "MF 10609", matrix "R 128863"); "En raison de son état de conser
 autorisation, sur demande motivée." So Baluze 171 IS online: Gallica ark btv1b90014126 (464 canvases, all labelled NP). The scout's
 "no Gallica ark found" is superseded. Parent record cc34098s (Baluze 167-172): "Papiers de Claude DE MESMES, comte D'AVAUX ...
 Principalement, nombreuses lettres originales de la Cour, particulièrement de Léon Bouthillier, comte de Chavigni, à d'Avaux".
+
+### 3. Leaf survey of every listed letter (survey.tsv)
+Method. All five Gallica manifests label every canvas `NP`, so `tools/gallica_folio.py` gives no map; anchors were set by eye from the
+ink folio number at the top-right corner (corner crops, pct:55,0,45,14 at 500 px) and the offset k (canvas = 2f-1+k; Baluze 170 is
+microfilmed as openings, canvas = f+k) fitted per stretch:
+Baluze 167 k=6 to f.108, k=7 from f.126 (anchors c21=f.8 ... c414=f.204, c416=f.205); 168 k=7 at f.18, k=11 at f.84-90 (eye-checked
+c180=f.84r, c192=f.90r), k=15 at f.114-214 (c276=f.131r), k=17 at f.233-273; 169 k=5 throughout (c50=f.23 ... c490=f.243); 170
+k=7 at f.63-145, k=11 at f.228-273 (eye-checked c239=f.228r), k=13 at f.300-322 (c313=f.300r, c333=f.320r, c335=f.322r); 171 k=8 at
+f.42 (c91), later rectos placed by the reader from letter openings (folio numbers mostly illegible on the microfilm scans).
+Each letter was then viewed as 3-10 consecutive canvases at 450 px (800 px for 170 openings) and read by two Sonnet subagent calls
+(167-168: 31 sheets; 169-171: 36 sheets), instructed only to record cipher present/absent, approximate cipher line count and whether
+words stand above the runs. Eye-checks by this worker on 10 sheets corrected four rows: 168 f.84 and f.90 (first windows missed, k
+was 11 not 9), 168 f.246 (reader saw no cipher; c510 = f.247r carries ~3 short runs with nothing above), and Baluze 170 from f.228 on
+(the reader's "f.233" sheet is f.228-230, the Amiens letter of 25 Aug 1640; f.233-322 re-fetched at k=11/13 and read by this worker).
+No transcription, no decoding.
+
+Result (67 letters listed by Tomokiyo; f.62 of 167 and f.208 of 169 excluded as other keys):
+| interlinear decipherment over the cipher | letters | cipher lines (approx) |
+|---|---|---|
+| present (words above the runs) | 55 | ~1,140 |
+| partial per the reader (some runs bare at 450 px; not verified) | 6: 167 ff.74, 127, 157, 205; 168 ff.156, 170 | ~126 |
+| absent | 5: 168 f.246(-247); 169 ff.52, 97, 142; 170 f.228(-230) | ~49 |
+| no cipher in the letter | 1: 170 f.91 | 0 |
+
+Open pool (cipher letters with no interlinear): 5 letters, ~49 cipher lines. Exactly the five passages Tomokiyo marks "undeciphered"
+and quotes fragments from; no further bare letter turned up among the 67. Sign estimate: one counted line (170 c240) holds ~14
+groups; at 10-14 groups per line the open pool is ~490-690 groups (point ~600), over half of it in 170 f.228-230 (~32 lines,
+~380 groups). The "partial" six add at most ~126 lines (~1,500 groups) only if every run in them were bare; this worker's eye-check
+of 167 f.74 (reader "partial", ~60 lines) found words above most runs, so "partial" here mostly means sparse word-by-word glossing,
+not bare runs. The scout's estimate of ~5,000 (3,000-8,000) open signs does not survive: the pool is ~15,000 cipher groups in all,
+about 96% under a period interlinear decipherment.
+Caveats: 450 px views can miss a short bare run (the reader missed f.247r's); recto canvases for 169-171 were mostly placed from
+the offset and letter openings, not from a read folio number; 170 f.273 sits at c285 with its number unread; 167-171 were surveyed
+only at Tomokiyo's listed folios, which he gives as specimens, not a census of every cipher letter in the volumes.
+
+Requests: cryptiana.web.fc2.com 1; archivesetmanuscrits.bnf.fr 2; gallica.bnf.fr 391 (1 manifest, 390 image regions, one at a time,
+>= 1.6 s apart, no 403/429/challenge; above the playbook's "a few hundred per host" guide -- the first plan of 305 canvases was cut
+to 234 and later re-fetches were 4-14 at a time). Subagents: 2 Sonnet calls.
+
+## While waiting
+Nothing external is awaited. Action depending on nobody: native-resolution crops of the five bare passages (168 f.247r; 169 ff.52,
+97, 142; 170 ff.228-230) and the bare-run check of the six "partial" letters.
+
+## Remaining gaps (RUN1-BAL leaf survey, 4 Oct 2026)
+Read so far: 55 of 66 cipher letters carry a period interlinear decipherment on the leaf (survey.tsv, 450 px); 5 bare, 6 unverified.
+- Five bare passages (168 f.247r; 169 ff.52, 97, 142; 170 ff.228-230; ~49 lines, ~600 groups) - blocker: not-attempted; the period key exists (Tomokiyo's table, images/louisxiii_davaux.png) and Tomokiyo quotes fragments only; next: native crops (tools/iiif_lines.py) + two blind passes + key application with tools/decode_key.py, per-pass priced, ~$5
+- Six "partial" letters (167 ff.74, 127, 157, 205; 168 ff.156, 170) - blocker: not-attempted; bare runs not verified at 450 px; next: native-resolution look at each cipher run for words above, script-led crops, ~$1
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census; next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (4 Oct 2026)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 55 of 66 cipher letters carry a period interlinear decipherment
+- [x] known-keys: Tomokiyo's D'Avaux cipher table fetched to images/louisxiii_davaux.png, credited
+- [x] print: Avenel VI whole-volume grep; no edition of these despatches found; Avenel V and AAE not read
+- [ ] key-rebuild: not needed; apply Tomokiyo's key to the five bare passages first
+- [ ] image-check: native-resolution crops of the five bare passages and six partial letters still to do
+- [ ] retry: n/a until the bare passages are cropped
+Verdict: keep going: 3 internal gaps; cheapest next: native look at the six partial letters, ~$1, then the five bare passages, ~$5
+
+Gate output (RUN1-BAL, 4 Oct 2026): `gaps_check.py: OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 3 step(s) untried` (exit 0).

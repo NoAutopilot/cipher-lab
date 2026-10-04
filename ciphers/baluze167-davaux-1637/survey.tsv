@@ -1,0 +1,68 @@
+vol	target_folio	canvases_viewed	recto_canvas	letter_start_seen	cipher	cipher_canvases	cipher_lines_approx	interlinear	note
+167	69	143-145	143	yes	yes	143,144,145	~50	present	Memoire; dense runs, most with words above; letter continues past sheet
+167	74	153-155	153	yes	yes	153,154,155	~60	partial	Memoire; many runs, glosses sparse and uneven; some runs bare
+167	82	169-171	169	yes	yes	169,170,171	~20	present	Memoire; cipher mostly p.170-171, glosses above most runs
+167	90	185-187	185	yes	yes	187	~12	present	Addition au Memoire; cipher only on 187, glossed; 185-186 clear
+167	127	260-262	260	yes	yes	260,261,262	~33	partial	Memoire; glosses on many runs, several runs on 261 look bare
+167	143	292-294	292	yes	yes	293	~4	present	Memoire; only a few cipher lines on 293, glossed above
+167	157	320-322	320	yes	yes	320	~4	partial	Memoire; few cipher lines on 320; only some words above; 321 margin marks
+167	205	416-418	416	yes	yes	417,418	~13	partial	Memoire; 418 cipher glossed in places; last line of 417 looks bare
+168	26	58-62	58	yes	yes	58,59,60	~30	present	Letter ends 60 (Feb 1638, margin cipher on 60); 61 address; 62 other letter
+168	84	179-181 (re-fetch)	180	yes	yes	180	~18	present	RUN1-BAL eye-check: first window (c176-178) was f.82 (Chavigny 28 Mar 1638, clear); f.84r=c180, letter ends c181 (1? Apr 1638), runs glossed
+168	90	191-194 (re-fetch)	192	yes	yes	192	~3	present	RUN1-BAL eye-check: first window missed; f.90r=c192 (k=11), 3 cipher lines glossed; letter continues c193-194 clear
+168	131	276-278	276	yes	yes	276,277,278	~33	present	Monsieur; cipher heavy 277-278, glossed; letter continues past sheet (CS-6 also saw it)
+168	149	312-314	312	yes	yes	312,313,314	~30	present	Cipher 313-314 glossed; letter continues
+168	156	326-328	326	yes	yes	326	~10	partial	Cipher only on 326, some runs glossed (names), others bare
+168	158	330-332	330	yes	yes	330,331,332	~40	present	Glosses above nearly all runs; heavy cipher
+168	166	346-348	346	yes	yes	346,347,348	~60	present	Very dense cipher, glosses above most runs
+168	170	354-356	354	yes	yes	354,355,356	~6	partial	Sparse cipher; few glosses; hard to judge at this resolution
+168	198	410-412	410	yes	yes	411,412	~22	present	Cipher end of 411 and most of 412; glossed; letter ends 412
+168	208	430-432	430	yes	yes	430,431,432	~43	present	Glosses above most runs; letter continues past sheet
+168	212	438-440	438	yes	yes	438,439,440	~70	present	Very dense cipher, glosses on most; letter ends 440
+168	215	444-448	444	yes	yes	445,446,447	~31	present	Letter ends 447
+168	233	482-484	482	yes	yes	483,484	~32	present	Memoire; cipher 483-484 glossed; continues past sheet
+168	244	504-506	504	yes	yes	504,505	~12	present	Cipher on 504 and top of 505, glossed; letter ends 506
+168	246	508-510	508	yes	yes	510	~3	absent	Duplicata; reader saw no cipher; RUN1-BAL eye-check: c510 (f.247r) carries ~3 short numeral runs mid-text with no interlinear (matches Tomokiyo "undeciphered")
+168	265	546-548	546	yes	yes	546	~3	present	Short cipher block at top of 546, glossed
+168	274	564-568	564	yes	yes	564,565,566	~21	present	Letter ends 567
+168	283	582-586	582	yes	yes	584,585,586	~32	present	Cipher 584-586 glossed; continues past sheet
+168	289	594-598	594	yes	yes	597,598	~30	present	Cipher 597-598, glossed
+168	297	610-614	610	yes	yes	610,611,612	~32	present	Letter ends 613
+168	301	618-622	618	yes	yes	619,620	~10	present	Letter ends 620
+168	304	624-628	624	yes	yes	624,625,627	~26	present	Letter ends 628; glosses on most runs
+169	2	8-17	8	yes	yes	11,15,16	~38	present	Letter on ff.2-6 (bound 5,6,3,4,2) surveyed as one; dense gloss on 15-16, 11 sparser
+169	46	96-98	96	yes	yes	96,97,98	~25	present	Gloss over most runs; letter probably continues past 98
+169	52	108-110	108	yes	yes	110	~3	absent	La Barde; short runs near foot of 110, nothing above (matches Tomokiyo "undeciphered")
+169	80	164-166	164	yes	yes	164,165,166	~50	present	Memoire au Sr Davaux; gloss on nearly all runs
+169	97	198-200	198	yes	yes	200	~3	absent	Chavigny; short run on 200, no gloss (matches Tomokiyo "undeciphered")
+169	107	218-220	218	yes	yes	218,219	~3	present	Sparse short runs with tiny words above
+169	112	228-230	228	yes	yes	229,230	~13	present	Gloss on 229 and top of 230; last single run on 230 may lack gloss
+169	129	262-264	262	yes	yes	262	~6	present	Last short run on 262 uncertain; letter ends 264 (Nov 1639)
+169	142	288-290	288	yes	yes	288	~8	absent	Chavigny, Lyon Oct 1639; block of runs, nothing above (matches Tomokiyo "undeciphered")
+169	144	292-294	292	yes	yes	293	~8	present	Sparse words above runs
+169	169	342-344	342	yes	yes	342,343	~11	present	Gloss sparse but present
+169	184	372-374	372	yes	yes	372,373,374	~18	present	Gloss over most runs
+169	191	386-388	386	yes	yes	386,387,388	~26	present	Heavy cipher, gloss over most
+169	204	412-414	412	yes	yes	413	~4	present	Letter ends 413 (Paris Feb 1639)
+169	218	440-442	440	yes	yes	441	~9	present	Letter ends 442 (Jan 1639)
+169	230	464-466	464	yes	yes	464,465,466	~28	present	Dense gloss; letter end not seen
+169	255	514-516	514	yes	yes	515,516	~5	present	Ends 516 (Paris dernier Dec 1639)
+170	63	69-71	69/70 (number unclear)	unclear	yes	69,70,71	~17	present	Start not on sheet; heavy gloss on 71; ends 71 (Paris 9 Mars)
+170	91	97-99	98	yes	no	none	0	n/a	Letter plain, ends 99 (Ruel dernier Mars 1640); cipher on 97 belongs to previous letter
+170	124	130-132	131	yes	yes	131,132	~13	present	Gloss over most runs
+170	130	136-138	137	yes	yes	137,138	~5	present	Ends 138 (Soissons May 1640)
+170	138	144-146	145	yes	yes	145	~2	present	Ends 146 (Blerancourt? May 1640)
+170	145	151-153	152	yes	yes	153	~17	present	Dense gloss on 153; end not seen
+170	228	239-241	239 (eye-checked: f.228r)	yes	yes	239,240,241	~32	absent	RUN1-BAL eye-check: reader's "f.233" sheet is f.228-230 (k=11); Chavigny, Amiens 25 Aout 1640; clean blocks, nothing above (matches Tomokiyo, DECODE R2761 f.228-230)
+170	233	244-245 (re-fetch)	244 (eye-checked)	yes	yes	244,245	~7	present	RUN1-BAL: Amiens 2 Sept 1640; small words above runs at 700 px
+170	239	250-251 (re-fetch)	251 (eye-checked)	yes	yes	251	~15	present	RUN1-BAL: dense block on f.239r, words above
+170	258	269-270 (re-fetch)	270 (eye-checked)	yes	yes	270	~12	present	RUN1-BAL: f.258r, words above most runs
+170	273	284-285 (re-fetch)	285 (number not read)	yes	yes	285	~8	present	RUN1-BAL: letter start on c285 right page, folio 273/274 not certain; words above
+170	300	313-314 (re-fetch)	313 (eye-checked)	yes	yes	314	~14	present	RUN1-BAL: Ruel 22 Dec 1640; cipher on f.301r, glossed (k=13 here)
+170	320	333-334 (re-fetch)	333 (eye-checked)	yes	yes	334	~25	present	RUN1-BAL: dense cipher f.320v-321r, glossed
+170	322	335-336 (re-fetch)	335 (eye-checked)	yes	yes	336	~8	present	RUN1-BAL: Paris Dec 1640; cipher on f.322v/323r, glossed
+171	25	56-60	56	unclear	yes	56	~3	present	Letter starts on a previous leaf; ends 56 (Ruel 26 Jan 1641)
+171	61	128-132	129	yes	yes	130,131	~9	present	Gloss sparse; some runs may lack it; ends 132 (Ruel Mars 1641)
+171	141	288-292	291	yes	yes	291,292	~26	present	Dense gloss on 292
+171	158	322-326	325	yes	yes	325,326	~40	present	Gloss on most runs; last lines of 326 uncertain
+171	173	352-356	355	yes	yes	355	~13	present	Ends 356 (Peronne 6 Juillet 1641)
