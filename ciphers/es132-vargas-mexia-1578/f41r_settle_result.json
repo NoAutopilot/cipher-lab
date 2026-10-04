@@ -1,0 +1,27 @@
+{
+ "prereg": "PREREG_f41r_settle.md",
+ "control": {
+  "firm_high": 17,
+  "decoy_high": 0,
+  "firm_low": 3,
+  "decoy_low": 0,
+  "other": 0,
+  "missing": 0,
+  "n": 20
+ },
+ "control_gate": "FAIL",
+ "applied": false,
+ "units": 56,
+ "tally": {
+  "S1": 11,
+  "S2": 36,
+  "S3": 9,
+  "side_A": 23,
+  "side_B": 24,
+  "side_other": 9
+ },
+ "tokens_pre": 526,
+ "tokens_after": 526,
+ "flagged_pre": 105,
+ "flagged_after": 105
+}

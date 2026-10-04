@@ -2,6 +2,7 @@
 # Philip II to Juan de Vargas Mexia, Madrid, 29 April 1578 (Tomokiyo TOC no.21), Cp.30 (Vargas Mexia Cipher 3). Not read by cabinet-noir.
 # Two blind Sonnet passes (passes/f41r_passA/B.tsv, notation run2/pass_prompt_f41r.md), normalised by test2.load_pass,
 # reconciled by run2/reconcile_f41r.py (ES132-C3, 4 Oct 2026) by shape rules R1-R7. ? = not settled by eye. rules: R1=14 R2=16 R3=11 R4=5 R5=3 R6=1 R7=32 default=81
+# Default-flag settlement RUN3-ES41 (4 Oct 2026, PREREG_f41r_settle.md, settle_f41r.py): NOT applied (control FAIL 17/20 firm-high, 0/20 decoy-high); stream = _pre
 L01	dρ V Mρ / 20ρ 25 17+ 7+ 24+ 28+ 3@s 36+ 6. 13 6. 35.
 L02	13 24+ 11. 78@s 24ρ? 15+ 21. 6σ 3 32ρ? 78@s 13+ 30.? 15+? 21.? 16ρ?
 L03	6. 11 258 13+ 18@s 12+? 258? 6σ? 6.? 77? 7? 7+ 6. 15+ 3 35. 13+? 6. y@n

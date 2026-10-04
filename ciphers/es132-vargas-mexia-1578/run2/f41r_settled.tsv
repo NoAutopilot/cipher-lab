@@ -1,0 +1,57 @@
+id	unit	line	start	A	B	choice	conf	result	rule
+I66	U03	L02	12	30. 15+ 21. 16ρ	158+ 11. 1655	1	low	30.? 15+? 21.? 16ρ?	S2
+I49	U02	L02	9	32ρ	31σ	1	low	32ρ?	S2
+I13	U01	L02	4	24ρ	249ρ	1	low	24ρ?	S2
+I32	U05	L03	16	13+	23+	2	low	23+?	S2
+I67	U04	L03	5	12+ 258 6σ 6. 77 7	64+ 2586 68. 77ρ 7.@r	2	low	64+? 2586? 68.? 77ρ? 7.@r?	S2
+I65	U08	L04	8	77@r	7@m	other	low	7ρ@rmark?	S3
+I16	U07	L04	1	15+ 24. 12+	24 24+	other	low	24.? 24+@dots?	S3
+I08	U06	L04	0	-	11+	1	low	11+?	S2
+I37	U14	L05	17	-	11@s	1	high	11@s	S1
+I15	U13	L05	15	15	7ρ@s	1	low	7ρ@s?	S2
+I18	U12	L05	11	14+	11+	2	low	11+?	S2
+I04	U11	L05	8	14+	11+	2	low	11+?	S2
+I10	U10	L05	7	7@r	7+@r	1	high	7+@r	S1
+I14	U09	L05	3	12.	22.	1	low	22.?	S2
+I45	U16	L06	7	36_	358_	2	low	358_?	S2
+I62	U15	L06	0	70@n	7ρ@n	2	low	7ρ@n?	S2
+I75	U18	L07	7	13	13σ	2	low	13σ?	S2
+I56	U17	L07	4	25ρ	257ρ	1	low	25ρ?	S2
+I76	U22	L08	16	12ρ	11+	1	low	12ρ?	S2
+I09	U21	L08	15	20@r	10@r	2	low	20@r?	S2
+I61	U20	L08	14	20ρ	10ρ	2	low	10ρ?	S2
+I33	U19	L08	4	71@r	7@r	2	low	71@r?	S2
+I58	U24	L09	18	7	7+	1	high	7+	S1
+I29	U23	L09	15	88	88_	2	low	88?	S2
+I07	U26	L10	15	6σ	6+	other	low	6ρ?	S3
+I64	U25	L10	2	24.	16.@n 24	other	high	16.@hat? 24.?	S3
+I48	U27	L11	16	21σ	24σ	2	low	24σ?	S2
+I38	U29	L12	9	12+@s	11+@r	other	low	13+@bar?	S3
+I46	U28	L12	1	238	23σ	1	low	23σ?	S2
+I01	U31	L13	11	24+ 6σ 3 21.	11.	1	high	24+ 6σ 3 21.	S1
+I41	U30	L13	10	-	3@s 24+ 6ρ	2	high		S1
+I69	U32	L14	10	29σ@r	29@r	2	high	29σ@r	S1
+I36	U33	L16	7	24σ	249	2	low	24σ?	S2
+I22	U35	L17	11	16ρ 3	16ρ@s 3_ 22. y 13+ 10	2	high	16ρ@s 3_ 22. y 13+ 10	S1
+I59	U34	L17	2	10	10ρ	1	low	10ρ?	S2
+I35	U37	L18	6	ρ5	25	1	low	ρ5?	S2
+I71	U36	L18	5	15@s	15ρ@s	1	low	15@s?	S2
+I05	U39	L19	16	12@r	7@r	other	low	22@rmark?	S3
+I47	U38	L19	5	22.	224.	2	low	224.?	S2
+I31	U41	L21	14	14.	24	other	low	24.?	S3
+I43	U40	L21	6	20+ 24 3	24+ 224	other	low	20+? 22+?	S3
+I30	U42	L22	6	12ρ@n	13ρ@n	2	low	13ρ@n?	S2
+I60	U43	L23	11	33ρ	35ρ	2	low	35ρ?	S2
+I74	U46	L24	16	-	6+@s	2	high	6+@s	S1
+I03	U45	L24	8	23+	29+	2	low	23+?	S2
+I54	U44	L24	7	22	22+	1	high	22+	S1
+I72	U47	L25	1	20.	28.	2	high	20.	S1
+I50	U49	L26	11	12+@r	13+@r	1	low	12+@r?	S2
+I51	U48	L26	7	25	258	1	low	258?	S2
+I63	U51	L28	16	{n}	11	1	low	{n}?	S2
+I24	U50	L28	11	22+@2	224	1	low	22+@2?	S2
+I73	U53	L29	3	7	13	1	low	7?	S2
+I02	U52	L29	1	16ρ	16σ	2	high	16ρ	S1
+I44	U56	L30	15	6 6+ 6	6σ 8	2	low	6? 6+? 6?	S2
+I55	U55	L30	13	21+	11+	1	low	21+?	S2
+I28	U54	L30	11	21	11@r	other	low	21@rmark?	S3
