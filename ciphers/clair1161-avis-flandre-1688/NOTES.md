@@ -1726,3 +1726,45 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further seed sweep or W/threshold change of the same anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: leave-one-leaf-out held 4-gram anneal with planted controls, ~$3
+
+## C1161-LOLO step 1: diagnosis of the 0/3 planted control (account-3 Fable worker, 4 Oct 2026, 15:22-15:4x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-04-acct3-c1161-lolo.md`. Disk only, no network, no subagents. Script `two/lolo_diag.py`
+(reuses `two/reanneal.py`'s stream, model, W and vocabulary unchanged); outputs `two/lolo/`. Question: why did the joint
+re-anneal's planted a/p/d control read 0/3 under both norm none (RUN5-C1161RA) and nc2 (SCORE-NC2) -- too many free signs,
+a flat objective, the search, or the planted design?
+
+**Answer: none of the four. The anneal and the design are fine; the two additions to the anneal (the word-cover stage and
+the nc2 normalisation) each destroyed the signal in a different way, and the real stream's optimum is not key.tsv.**
+
+| # | test (two/lolo/) | result |
+|---|---|---|
+| D1 rank.tsv | 4-gram-only score per letter (L4) of key.tsv (a/p/d at truth) vs the 20 final control keys | every control key outscores key.tsv: norm none -2.63..-2.71 vs -2.796; nc2 8.06-8.36 vs 6.71. The objective does not rank key.tsv first; the final keys differ from key.tsv on 23-31 of 32 free signs |
+| D2 cond.tsv | each free sign's key.tsv letter ranked among 26 with every other sign at key.tsv | plain 4-gram: a, p, d rank 1 of 26 (identifiable in the true context), 9 of 27 M signs rank 1, 8 rank 2, K (f) 18, to (m) 12, eloop (c) 11. Adding the cover term (J): p drops to rank 4 behind i even in the true context -- word cover breaks p by itself. nc2: 6/ls/rc/tz (all e) rank 26, a (u) 18: the sum N_c^2 term scores letter balance (the decode has e 17.9%, i 15.3%, u 11.0%, m 0.2%, b 0%), not context |
+| D3 ascent.tsv | coordinate ascent from key.tsv (truth start) | key.tsv is a local optimum of none of the four objectives: 21-27 of 32 free signs drift in <= 4 passes. Plain 4-gram keeps a=u p=c d=n while 21 others drift; J moves p to i; nc2 drifts signs onto k, z, w, v, j, x (rare letters lower sum N_c^2) |
+| D4 synth.tsv | **same-design synthetic control**: held-out fr17 text (the W-calibration passage), N=3375, one synthetic sign per key.tsv sign, the same homophone sets and per-sign token shares, letters the design lacks (b k w z after fold) one extra held sign each, the same 19 held / 32 free (a/p/d planted at e), stage 1 only (fr17 4-gram, 32 restarts, 40000 iters), 3 seeds | **32/32 free signs right, 100% of letters, planted 3/3, on all three seeds** (identical score -5834.0: one basin = the truth). 50% of tokens free is not too many for a 4-gram anneal at this N on French of this design |
+| D5 stage1.tsv | the PREREG's stage 1 alone on the **real** control arm, seed 1 (reanneal.py never saved this key; score -9268.7 reproduces runs.tsv) | **planted 3/3 recovered: a=u p=c d=n.** 20 of the 29 free M/S signs move away from key.tsv (ls e>m, o n>m, L n>d, iib l>d, vdash t>d, S u>n ...); L4 -2.666 |
+| D6 noise.tsv | error bracket (rule 3, SALV-DIAG shape): L4 of genuine French at N=3375 with a share q of signs misread | q=0 -1.72, 5% -2.12, 8.4% -2.36, 10% -2.44, 14.6% -2.67, 20% -2.97, shuffled -3.58. The anneal's optimum on the real stream (-2.63/-2.67) scores like French with about 14% of signs misread; key.tsv (-2.80) like 17%; the measured two-reader error is 0.084-0.10 (c188L, c185R) |
+
+Reading. (1) The 0/3 at norm none was stage 2: the cover term prefers i for p even in the true context (D2) and the
+i-run vocabulary then collapsed 5 of 10 seeds (C1161RA's own finding); stage 1 had already recovered 3/3 (D5). (2) The 0/3
+under nc2 was the normalisation: at this free share the 1/sum N_c^2 factor rewards moving tokens onto rare letters (D2, D3),
+so the planted e's were rejected (SCORE-NC2's "e rejected" rows) but no letter won. (3) The "single basin / seed consensus
+carries no information" worry that named the leave-one-leaf-out step is the signature of a working solver, not a defect:
+the synthetic's three seeds also share one basin, and it is the truth. (4) What remains is not a search problem: the plain
+4-gram optimum on the real stream moves 20 of 29 free signs off key.tsv (D5) and still scores like French at ~14% misread
+(D6), with the 19 C/S signs held. key.tsv's M values came from a noise-0.10 fr16 order-3/4 blind anneal of one seed
+(key.tsv source column), which the two-instrument and 10-seed consensus tests graded as a family, not per sign; D1-D3 say the
+order-4 fr17 objective does not endorse them, and the truth-start drift (D3) says they are not a stable reading under it.
+Which of key.tsv and the anneal optimum is nearer the text cannot be told from the stream alone: neither reaches French at
+the measured error, so a share of the gap is the transcription (two-reader agreement is not accuracy, LESSONS "Look-alike
+pass"), the held values, or the design (the decode has no b, 0.9% d, 0.2% m against French b~1%, d~3.7%, m~3%: six letters
+nearly absent, and the free signs the anneal moves go to m, d, b).
+
+Decision for step 2. The named next step (a held 4-gram anneal under leave-one-leaf-out streams) is not ruled out by the
+diagnosis -- it is stage 1 alone, which D4 and D5 show is a working instrument on this design and recovers the planted signs
+on the real stream -- but its stated purpose (restoring variance for a consensus) is: the 6 leaf streams share 78-93% of
+their tokens with the full stream and will sit in the same basin. What the leaf streams can add is per-sign stability (a
+sign whose value flips when one leaf is dropped is leaf-driven), so it runs **as a stage-1-only instrument** (norm none, no
+cover: the two components diagnosed as the failure are removed, not re-tuned), pre-registered in
+`tx/PREREG_reanneal_lolo.md`, planted control first. A fewer-free-signs design is not the right instrument: D4 says the
+free count is not the limit, and holding more M values at key.tsv would hold values D3 says the objective does not keep.

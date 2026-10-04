@@ -6,6 +6,9 @@ both norms? Disk only. Reuses two/reanneal.py's objective (same stream, model, W
   python3 two/lolo_diag.py cond            # D2: each free sign's key.tsv letter ranked among 26 given key.tsv context -> cond.tsv
   python3 two/lolo_diag.py ascent          # D3: coordinate ascent from key.tsv (truth-start): what drifts -> ascent.tsv
   python3 two/lolo_diag.py synth --norm none|nc2 --seeds 1-3 [--free all|top8]   # D4: same-design synthetic control -> synth.tsv
+  python3 two/lolo_diag.py stage1|blind --norm none --seeds 1   # D5 stage 1 alone on the real control arm; D7 nothing held
+  python3 two/lolo_diag.py noise                                # D6 error bracket
+  python3 two/lolo_diag.py lolo_run --arm ctl|tgt; lolo_score --arm ctl|tgt   # step 2, tx/PREREG_reanneal_lolo.md
 """
 import argparse, csv, os, random, sys, time
 from collections import Counter
@@ -152,15 +155,147 @@ def stage1(norm, seed):
     if not os.path.exists(p): open(p, "w").write("norm\tseed\tscore\tL4\tapd\tdiffer_of_32\tmoved_free\ttime\n")
     open(p, "a").write("\t".join(map(str, row)) + "\n"); print("\t".join(map(str, row)))
 
+def noise():
+    """D6: error bracket (rule 3, SALV-DIAG shape): the 4-gram score per letter that genuine French of this length reaches
+    when a share q of signs is misread (random other letter), vs the real stream under key.tsv and under the anneal's optimum."""
+    import wordcover as w
+    use("none")
+    g = "".join(w.words(ra.HELD))[300000:300000 + len(ra.SEQ)]
+    rows = []
+    for q in (0.0, 0.05, 0.084, 0.10, 0.146, 0.20, 0.30, 0.50, 1.0):
+        vals = []
+        for seed in range(5):
+            rng = random.Random(seed); t = list(g)
+            for i in range(len(t)):
+                if rng.random() < q: t[i] = rng.choice(L.replace(t[i], ""))
+            vals.append(ra.L4("".join(t)))
+        rows.append([q, f"{sum(vals)/5:.4f}", f"{min(vals):.4f}", f"{max(vals):.4f}"])
+    hdr = "misread_share\tL4_mean\tmin\tmax\n"
+    open(os.path.join(OUT, "noise.tsv"), "w").write(hdr + "".join("\t".join(map(str, r)) + "\n" for r in rows))
+    print(hdr + "".join("\t".join(map(str, r)) + "\n" for r in rows))
+
+
+def blind(norm, seed):
+    """D7: nothing held -- the order-4 anneal on the real stream with all 49 signs free. What 4-gram score does the stream
+    reach under ANY homophonic key, and how many of key.tsv's 19 held C/S signs does the blind optimum agree with?"""
+    import homophonic_anneal as ha
+    use(norm)
+    t0 = time.time()
+    sc, key = ha.solve(ra.SEQ, ra.G["model"], ra.RESTARTS, ra.ITERS, seed, 1.0, norm=norm)[0]
+    with open(os.path.join(OUT, f"blind_{norm}_s{seed}.tsv"), "w") as f:
+        f.write("sign\tvalue\n" + "".join(f"{s}\t{key[s]}\n" for s in sorted(key)))
+    held = [s for s in TRUE if s not in FREE32]
+    row = [norm, seed, f"{sc:.1f}", f"{l4only(key):.5f}", f"{sum(1 for s in held if key[s]==TRUE[s])}/{len(held)}",
+           " ".join(f"{s}:{TRUE[s]}>{key[s]}" for s in held if key[s] != TRUE[s]),
+           f"{sum(1 for s in FREE32 if key[s]==TRUE[s])}/32", f"{time.time()-t0:.0f}s"]
+    p = os.path.join(OUT, "blind.tsv")
+    if not os.path.exists(p): open(p, "w").write("norm\tseed\tscore\tL4\theld19_agree_key.tsv\theld_disagree\tfree32_agree\ttime\n")
+    open(p, "a").write("\t".join(map(str, row)) + "\n"); print("\t".join(map(str, row)))
+
+
+LEAVES = ("c185R", "c186R", "c186L", "c187L", "c187R", "c188L")
+NLOLO = 5
+
+
+def leaf_stream(drop):
+    import two_instr as ti
+    return [r["sign"] for r in ti.rows() if ti.is_cipher(r["sign"]) and r["sign"] in ra.KEY and r["line"][:5] != drop]
+
+
+def lolo_one(args):
+    """Step 2 (tx/PREREG_reanneal_lolo.md): stage 1 only, norm none, one leaf dropped, seed 1."""
+    arm, drop = args
+    import homophonic_anneal as ha
+    use("none")
+    free = ra.FREE + (list(ra.PLANT) if arm == "ctl" else [])
+    fixed = {s: v for s, v in TRUE.items() if s not in free}
+    init = dict(ra.PLANT) if arm == "ctl" else None
+    seq = leaf_stream(drop); t0 = time.time()
+    sc, key = ha.solve(seq, ra.G["model"], ra.RESTARTS, ra.ITERS, 1, 1.0, fixed=fixed, init=init, norm="none")[0]
+    with open(os.path.join(OUT, f"key_lolo_{arm}_{drop}.tsv"), "w") as f:
+        f.write("sign\tvalue\n" + "".join(f"{s}\t{key[s]}\n" for s in sorted(key)))
+    return [time.strftime("%Y-%m-%d %H:%M", time.gmtime()), arm, drop, len(seq), f"{sc:.1f}", f"{l4only(key):.5f}",
+            " ".join(f"{s}={key[s]}" for s in ra.PLANT), sum(1 for s in free if key[s] != TRUE[s]), f"{time.time()-t0:.0f}s"]
+
+
+def lolo_run(arm, procs):
+    if arm == "tgt":
+        assert "GATE PASS" in open(os.path.join(OUT, "lolo_ctl_gate.txt")).read(), "control gate not passed"
+    p = os.path.join(OUT, "lolo_runs.tsv")
+    if not os.path.exists(p): open(p, "w").write("time\tarm\tdropped\tN\tscore\tL4_full_stream\tapd\tfree_differ_key.tsv\ttime\n")
+    with Pool(procs) as pool:
+        for row in pool.imap_unordered(lolo_one, [(arm, d) for d in LEAVES]):
+            open(p, "a").write("\t".join(map(str, row)) + "\n"); print("\t".join(map(str, row)), flush=True)
+
+
+def lolo_null(args):
+    kstar, free, s, A, B, i = args
+    if "model" not in ra.G: use("none")
+    oth = [x for x in free if x != s]; vals = [kstar[x] for x in oth]; random.Random(i).shuffle(vals)
+    k = dict(kstar); k.update(zip(oth, vals)); k[s] = B; jb = l4only(k); k[s] = A
+    return jb - l4only(k)
+
+
+def lolo_score(arm, procs):
+    use("none")
+    free = ra.FREE + (list(ra.PLANT) if arm == "ctl" else [])
+    keys = [dict(r.split("\t") for r in open(os.path.join(OUT, f"key_lolo_{arm}_{d}.tsv")).read().splitlines()[1:]) for d in LEAVES]
+    cons = {}
+    for s in free:
+        c = Counter(k[s] for k in keys); v, n = c.most_common(1)[0]; cons[s] = (v if n >= NLOLO else None, n, dict(c))
+    kstar = dict(keys[0]); kstar.update({s: c[0] for s, c in cons.items() if c[0]})
+    cnt = Counter(ra.SEQ); plan = []; jobs = []
+    for s in free:
+        A = ra.PLANT[s] if (arm == "ctl" and s in ra.PLANT) else TRUE[s]; B = cons[s][0]; k = dict(kstar)
+        if B and B != A:
+            k[s] = B; jb = l4only(k); k[s] = A; d = jb - l4only(k); kind, alt = "change", B
+        else:
+            k[s] = A; ja = l4only(k); best = None
+            for v in L:
+                if v == A: continue
+                k[s] = v; x = l4only(k)
+                if best is None or x > best[0]: best = (x, v)
+            d = ja - best[0]; kind, alt = "confirm", best[1]
+        plan.append((s, A, B, kind, alt, d)); jobs += [(kstar, free, s, A, alt, i) for i in range(1, 51)]
+    with Pool(procs) as pool:
+        res = pool.map(lolo_null, jobs, chunksize=10)
+    rows = []
+    for n_, (s, A, B, kind, alt, d) in enumerate(plan):
+        nl = sorted(res[n_ * 50:(n_ + 1) * 50])
+        p95 = nl[47] if kind == "change" else sorted(-x for x in nl)[47]; ok = d > 0 and d > p95
+        if arm == "ctl":
+            dec = (("recovered" if (B == TRUE[s] and ok) else "NOT recovered") if s in ra.PLANT else "-")
+        else:
+            dec = (f"proposal M: {A}->{B}" if kind == "change" and ok else
+                   "key.tsv value is the leaf-stable optimum" if kind == "confirm" and B == A and ok else "no proposal")
+        top = sorted(cons[s][2].items(), key=lambda x: -x[1])
+        rows.append([s, cnt.get(s, 0), A, "C(planted)" if (arm == "ctl" and s in ra.PLANT) else ra.KEY[s][1], B or "-", cons[s][1],
+                     " ".join(f"{a}{b}" for a, b in top), kind, alt, f"{d:.5f}", f"{p95:.5f}", int(ok), dec])
+    hdr = "sign\ttokens\tA\tgrade\tconsensus\tleaves_agree\tvotes\tkind\tvs\tdL4\tnull_p95\tclears\tdecision\n"
+    open(os.path.join(OUT, f"lolo_{arm}_signs.tsv"), "w").write(hdr + "".join("\t".join(map(str, r)) + "\n" for r in rows))
+    print(hdr + "".join("\t".join(map(str, r)) + "\n" for r in rows))
+    if arm == "ctl":
+        rec = sum(1 for r in rows if r[-1] == "recovered")
+        msg = f"LOLO planted control: {rec}/3 recovered -> " + ("GATE PASS" if rec >= 2 else "NON-TEST (target not run)")
+        open(os.path.join(OUT, "lolo_ctl_gate.txt"), "w").write(msg + "\n"); print(msg)
+
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["rank", "cond", "ascent", "synth", "stage1"])
+    ap.add_argument("mode", choices=["rank", "cond", "ascent", "synth", "stage1", "noise", "blind", "lolo_run", "lolo_score"])
+    ap.add_argument("--arm", choices=["ctl", "tgt"], default="ctl")
     ap.add_argument("--norm", default="none"); ap.add_argument("--seeds", default="1-3")
     ap.add_argument("--free", default="all", choices=["all", "top8"]); ap.add_argument("--procs", type=int, default=4)
     a = ap.parse_args()
     if a.mode == "synth":
         lo, hi = map(int, a.seeds.split("-")); synth(a.norm, range(lo, hi + 1), a.free, a.procs)
+    elif a.mode == "lolo_run":
+        lolo_run(a.arm, a.procs)
+    elif a.mode == "lolo_score":
+        lolo_score(a.arm, a.procs)
+    elif a.mode == "blind":
+        blind(a.norm, int(a.seeds.split("-")[0]))
     elif a.mode == "stage1":
         stage1(a.norm, int(a.seeds.split("-")[0]))
     else:

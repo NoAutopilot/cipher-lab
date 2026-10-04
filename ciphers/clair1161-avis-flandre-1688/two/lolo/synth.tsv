@@ -1,0 +1,4 @@
+norm	free	seed	N	n_free	score	free_signs_right	free_tokens_right	letters_right	planted	wrong_signs	time
+none	all	2	3375	32	-5834.0	32	1774/1774	1.000	a=u(ok) p=c(ok) d=n(ok)		187s
+none	all	3	3375	32	-5834.0	32	1767/1767	1.000	a=u(ok) p=c(ok) d=n(ok)		188s
+none	all	1	3375	32	-5834.0	32	1762/1762	1.000	a=u(ok) p=c(ok) d=n(ok)		188s
