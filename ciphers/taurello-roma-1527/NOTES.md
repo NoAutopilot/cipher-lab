@@ -109,3 +109,30 @@ Next: Sanuto Diarii full-text search for Taurello/Vetralla on archive.org (be-ap
 
 Verdict: blocked (standing; Sanuto/Pastor/Gayangos unread). Robert 1902 does not print or mention the letter, Taurello or Vetralla (2 scans, OCR grep). This is a search result for the log,
 not a statement that nothing exists elsewhere; no image, key or decipherment has surfaced.
+
+## NEAR3-TAUR (4 Oct 2026, 01:35-02:0x UTC)
+
+Intake gate: `intake_gate_check.py taurello-roma-1527` -> "blocked (line 3) -- already terminal, nothing to gate", exit 0. This job is the edition read.
+
+Identifiers: advancedsearch (metadata only) lists 51 Google scans `idiariidimarinoNNsanugoog` of Sanuto, *I Diarii* (F. Visentini). NN is the Google scan number,
+not the volume number, and the metadata carries no volume field. Volume mapped from the OCR title page and running heads:
+- `idiariidimarino19sanugoog` = TOMO XLV, "I Maggio MDXXVII - XXX Agosto MDXXVII": covers the window (24 June 1527).
+- `idiariidimarino05sanugoog` = TOMO XLII, "I Luglio MDXXVI - XXX Settembre MDXXVI" (checked via its djvu.txt, one download).
+- Vol. 46: NOT mapped to an identifier (scans 22 and 01 carry MDXXVII index/heading hits, not opened). Vol. 46 is outside the 24 June window by its date range as far as the XLV heading shows; the gap is logged, not closed.
+
+Queries (be-api fts, one id per call, 1.6 s apart), run per id over scan numbers 00-55 for Taurello / Torello / Vetralla / Borbon / Orange, plus "24 zugno":
+| Term, vol. XLV (id 19) | hits | what |
+|---|---|---|
+| Taurello | 0 | |
+| Torello | 0 | |
+| Vetralla | 1 (doc-level; 4 snippets) | camp letters from Vetralla 4 and 8 Zugno 1527 (Carlo Nuvolone; "l'Agnello"; Urbano to the duchess) and the index entry (pp. 284-285): not the Este-Rome letter |
+| "Pietro Antonio" | 1 | index entries (a captain, a constable of Lazise): no Taurello |
+| Oranges (Orange spelling in the text) | 1 | election of the Prince of Orange as captain general of the army at Borgo; Orange at Siena: context, not the letter |
+| "24 zugno" | 1 | Bohemia diet on St John Baptist's day: unrelated |
+| Borbon (positive control) | 1 in 19 | the control hits in volumes 01, 02, 07, 08, 13, 19, 27-30, ... but 0 in scan 45; a fts total is 1 per document, not a count |
+Control reading: the control term and the Orange/Vetralla terms read in vol. XLV, so the search covers the right text. Limit: fts total is document-level (0 or 1), the OCR is Google's, and a miss is a result for this scan only.
+One hit worth the record: vol. XLII (id 05, 1526) names a "Taurello (Torello), messo dell'Imperatore al papa" (index p. 571; text: Ferrara orator Lodovico's intercepted cipher letters from Granada, 5 July 1526, "el zonzer di Herera li el di Taurello vien in Italia"). This is the imperial envoy of 1526, one year before the 24 June 1527 Este letter; whether he is the same person as Pietr'Antonio Taurello is not established here. Other volumes with Torello/Taurello hits (02, 08, 11, 18, 24, 26, 27, 30, 35, 45, 47, 53, 54, 05) were not opened (Torello is also a common word).
+Pastor, Geschichte der Paepste IV.2 Anhang: no identifier located in this job; not searched.
+
+Result: in Sanuto vol. XLV the term Taurello is absent and the letter is not printed or reported in the snippets read; Vetralla appears only in other correspondents' June camp letters. No change to the check-solved verdict: `blocked` stands (Pastor, Gayangos, Boletin RAH, vol. 46 mapping unread). Next: map vol. 46's identifier (scan 22 or 01 heads), read vol. XLII's Taurello passage (id 05, line 41313 of its djvu) to see whether it ties him to Pietro Antonio.
+Requests: archive.org advancedsearch 2, metadata 6, download 1; be-api fts about 400 (over the usual few hundred; all 1.6 s apart, one at a time). No subagent calls.
