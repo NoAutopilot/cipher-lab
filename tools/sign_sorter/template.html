@@ -232,7 +232,8 @@ body.traypad #offer{bottom:100px}
     <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
-      <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label></div>
+      <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label>
+      <label class="hint" for="ctxNb"><input id="ctxNb" type="checkbox" checked> Lines above and below</label></div>
     <div class="row"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
       <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
@@ -760,21 +761,39 @@ const pageImgs = {};
 function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
 // draw a tile's line into canvas c; alive() says whether that tile is still the one wanted (a late page image must not
 // paint over the tile now shown). Phone: zoom 3 fits the line to the width and the zoom scales from there.
+// Neighbour lines (owner, 4 Oct 2026: a sign written over the line below must be visible): when a page is one line crop named
+// <leaf>_L<n> and the crops of lines n-1 / n+1 are on the page, they are drawn above and below at the same x window.
+function nbPages(p){ const m = /^(.*_L)(\d+)$/.exec(p); if (!m) return [null, null]; const n = +m[2], w = m[2].length;
+  const name = k => m[1] + String(k).padStart(w, '0'); const a = name(n - 1), b = name(n + 1);
+  return [DATA.pages[a] ? a : null, DATA.pages[b] ? b : null]; }
 function drawLine(sid, c, z, alive){
   const it = itemBySid[sid]; const ps = DATA.pageScale || 1; const [x, y, w, h] = it.b.map(v => v * ps); const im = pageImg(it.p);
+  const nbOn = !$('ctxNb') || $('ctxNb').checked; const [pa, pb] = nbOn && c.id === 'ctxC' ? nbPages(it.p) : [null, null];
+  const ia = pa ? pageImg(pa) : null, ib = pb ? pageImg(pb) : null;
   const draw = () => {
     if (!alive()) return;
+    if ([im, ia, ib].some(q => q && !(q.complete && q.naturalWidth))) return;
     // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
     // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
     const halfW = Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1))), padY = Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
-    const y0 = Math.max(0, y - padY), y1 = Math.min(im.naturalHeight, y + h + padY);
+    const py = (ia || ib) ? Math.round(h * 0.35) + 4 : padY;   // with neighbour lines shown, keep this strip to its own line
+    const y0 = Math.max(0, y - py), y1 = Math.min(im.naturalHeight, y + h + py);
     const cv = c.parentElement;
     const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
-    c.width = Math.round((x1 - x0) * s); c.height = Math.round((y1 - y0) * s); c.style.width = cssW + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : '';
-    const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, c.width, c.height);
+    // a line crop overlaps its neighbours, so only the middle band of each neighbour crop (its own line) is drawn
+    const band = q => [Math.round(q.naturalHeight * 0.22), Math.round(q.naturalHeight * 0.78)];
+    const ha = ia ? Math.round((band(ia)[1] - band(ia)[0]) * s) : 0, hb = ib ? Math.round((band(ib)[1] - band(ib)[0]) * s) : 0, hm = Math.round((y1 - y0) * s);
+    c.width = Math.round((x1 - x0) * s); c.height = ha + hm + hb; c.style.width = cssW + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : '';
+    const g = c.getContext('2d'); g.imageSmoothingEnabled = true;
+    const strip = (q, top, hh) => { const qx1 = Math.min(q.naturalWidth, x1), [b0, b1] = band(q); if (qx1 > x0) g.drawImage(q, x0, b0, qx1 - x0, b1 - b0, 0, top, (qx1 - x0) * s, hh); };
+    if (ia){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, ha); strip(ia, 0, ha); }
+    g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, ha, c.width, hm);
+    if (ib){ g.fillStyle = '#f4f1ea'; g.fillRect(0, ha + hm, c.width, hb); strip(ib, ha + hm, hb); }
+    if (ia || ib){ g.fillStyle = 'rgba(138,59,18,.55)'; if (ia) g.fillRect(0, ha - 1, c.width, 2); if (ib) g.fillRect(0, ha + hm - 1, c.width, 2); }
+    g.translate(0, ha);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;
     const bx = (x - x0) * s, by = (y - y0) * s, bw = w * s, bh = h * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
@@ -784,7 +803,7 @@ function drawLine(sid, c, z, alive){
       g.stroke(); });
     cv.scrollLeft = Math.max(0, (bx + bw / 2) / k - cv.clientWidth / 2);   // keep the bracketed sign in view at any zoom
   };
-  if (im.complete && im.naturalWidth) draw(); else im.addEventListener('load', draw, {once: true});
+  [im, ia, ib].forEach(q => { if (q && !(q.complete && q.naturalWidth)) q.addEventListener('load', draw, {once: true}); }); draw();
 }
 function drawCtx(){ const sid = ctxSid; drawLine(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
 let ctxList = [];
@@ -854,7 +873,7 @@ $('ctxClose').onclick = closeCtx;
 $('ctxX').onclick = closeCtx;
 $('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
 document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!$('offer').hidden) hideOffer(); else closeCtx(); } });
-$('ctxZ').oninput = drawCtx;
+$('ctxZ').oninput = drawCtx; $('ctxNb').onchange = drawCtx;
 [0, 1, 2].forEach(n => $('ink' + n).onclick = () => {
   document.body.classList.remove('ink1', 'ink2'); if (n) document.body.classList.add('ink' + n);
   [0, 1, 2].forEach(k => { const b = $('ink' + k); b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });
