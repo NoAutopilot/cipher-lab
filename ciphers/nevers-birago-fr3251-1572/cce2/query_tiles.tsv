@@ -1,0 +1,116 @@
+qid	group	letter	passage	pos_or_sid	method
+X_4#1	X_4	no71	L03	7	blobfit
+X_4#2	X_4	no71	L03	14	blobfit
+X_4#3	X_4	no86	f174r_L03	10	blobfit
+X_4#4	X_4	no86	f174r_L03	11	blobfit
+X_4#5	X_4	no90	f184v_L01	2	blobfit
+X_7#1	X_7	no71	L03	15	blobfit
+X_7#2	X_7	no71	L04	29	blobfit
+X_7#3	X_7	no90	f184v_L01	3	blobfit
+X_7#4	X_7	no87	R01	8	blobfit
+X_8#1	X_8	no86	f174v_L13	17	blobfit
+X_8#2	X_8	no86	f174v_L13	18	blobfit
+X_8#3	X_8	no90	f185r_L02	28	blobfit
+X_8#4	X_8	no87	R03	4	blobfit
+X_A#1	X_A	no86	f174v_L20	24	blobfit
+X_A#2	X_A	no90	f184r_L03	5	blobfit
+X_A#3	X_A	no87	L12	23	blobfit
+X_AE#1	X_AE	no90	f184v_L02	4	blobfit
+X_AE#2	X_AE	no90	f184v_L02	14	blobfit
+X_AE#3	X_AE	no90	f184v_L03	10	blobfit
+X_AE#4	X_AE	no90	f184v_L04	14	blobfit
+X_AE#5	X_AE	no90	f185r_L01	11	blobfit
+X_BB#1	X_BB	no90	f184v_L02	9	blobfit
+X_BB#2	X_BB	no90	f184v_L03	22	blobfit
+X_CC#1	X_CC	no86	f174v_L02	14	blobfit
+X_CC#2	X_CC	no86	f174v_L03	21	blobfit
+X_CC#3	X_CC	no86	f174v_L06	11	blobfit
+X_CC#4	X_CC	no86	f174v_L07	26	blobfit
+X_CC#5	X_CC	no86	f174v_L08	19	blobfit
+X_CE#1	X_CE	no87	L01	23	blobfit
+X_CE#2	X_CE	no87	L03	4	blobfit
+X_CE#3	X_CE	no87	L04	4	blobfit
+X_CE#4	X_CE	no87	L05	25	blobfit
+X_CE#5	X_CE	no87	L07	29	blobfit
+X_EQ#1	X_EQ	no71	L02	31	blobfit
+X_EQ#2	X_EQ	no86	f174v_L14	14	blobfit
+X_EQ#3	X_EQ	no86	f174v_L22	22	blobfit
+X_EQ#4	X_EQ	no90	f184r_L09	11	blobfit
+X_EQ#5	X_EQ	no87	L14	17	blobfit
+X_H#1	X_H	no90	f185r_L07	20	blobfit
+X_K#1	X_K	no86	f174v_L20	26	blobfit
+X_K#2	X_K	no86	f174v_L22	12	blobfit
+X_K#3	X_K	no90	f184v_L01	6	blobfit
+X_K#4	X_K	no90	f185r_L08	7	blobfit
+X_K#5	X_K	no87	L05	17	blobfit
+X_MA#1	X_MA	no90	f184v_L02	6	blobfit
+X_MA#2	X_MA	no90	f185r_L02	20	blobfit
+X_MA#3	X_MA	no90	f185r_L03	20	blobfit
+X_MA#4	X_MA	no90	f185r_L05	3	blobfit
+X_OJ#1	X_OJ	no90	f185r_L07	9	blobfit
+X_PCT#1	X_PCT	no90	f184v_L02	23	blobfit
+X_PCT#2	X_PCT	no90	f184v_L03	18	blobfit
+X_PCT#3	X_PCT	no90	f185r_L07	28	blobfit
+X_S#1	X_S	no86	f174r_L04	2	blobfit
+X_S#2	X_S	no90	f184r_L08	3	blobfit
+X_S#3	X_S	no87	R03	5	blobfit
+X_S#4	X_S	no87	L22	22	blobfit
+X_SQ#1	X_SQ	no71	L02	3	blobfit
+X_SQ#2	X_SQ	no86	f174v_L16	10	blobfit
+X_SQ#3	X_SQ	no86	f174v_L22	23	blobfit
+X_SQ#4	X_SQ	no87	V03	25	blobfit
+X_STAR#1	X_STAR	no86	f174r_L01	1	blobfit
+X_STAR#2	X_STAR	no86	f174v_L18	1	blobfit
+X_STAR#3	X_STAR	no90	f185r_L05	1	blobfit
+X_STAR#4	X_STAR	no87	L20	1	blobfit
+X_T#1	X_T	no86	f174v_L13	7	blobfit
+X_T#2	X_T	no86	f174v_L15	26	blobfit
+X_T#3	X_T	no90	f184v_L02	2	blobfit
+X_T#4	X_T	no90	f184v_L03	3	blobfit
+X_T#5	X_T	no87	R01	12	blobfit
+X_T3#1	X_T3	no86	f174v_L03	11	blobfit
+X_T3#2	X_T3	no86	f174v_L03	19	blobfit
+X_T3#3	X_T3	no86	f174v_L07	7	blobfit
+X_T3#4	X_T3	no86	f174v_L09	8	blobfit
+X_T3#5	X_T3	no86	f174v_L09	27	blobfit
+X_TRI#1	X_TRI	no90	f184v_L04	2	blobfit
+X_TRI#2	X_TRI	no90	f185r_L08	14	blobfit
+X_TRI#3	X_TRI	no87	V03	26	blobfit
+T42#1	T42	sorter	f144r_L05	f144r_L05_20	sorter box
+T42-b#1	T42-b	sorter	f144r_L06	f144r_L06_01	sorter box
+T42-b#2	T42-b	sorter	f144r_L06	f144r_L06_02	sorter box
+T50#1	T50	sorter	f144r_L05	f144r_L05_17	sorter box
+T95#1	T95	sorter	f144r_L04	f144r_L04.2_03	sorter box
+T95#2	T95	sorter	f168r_L03	f168_R03_16	sorter box
+T95#3	T95	sorter	f168r_L02	f168_R02_09	sorter box
+T95#4	T95	sorter	f168v_L03	f168_V03_09	sorter box
+T95-b#1	T95-b	sorter	f144r_L04	f144r_L04.2_05	sorter box
+X_NEW#1	X_NEW	sorter	f144r_L03	f144r_L03_02	sorter box
+X_NEW#2	X_NEW	sorter	f144r_L04	f144r_L04.2_04	sorter box
+X_NEW#3	X_NEW	sorter	f168v_L03	f168_V03_24	sorter box
+X_NEW-c#1	X_NEW-c	sorter	f144r_L04	f144r_L04.1_09	sorter box
+X_NEW-c#2	X_NEW-c	sorter	f144r_L04	f144r_L04.1_10	sorter box
+X_NEW-d#1	X_NEW-d	sorter	f144r_L03	f144r_L03_03	sorter box
+X_NEW-j#1	X_NEW-j	sorter	f168v_L03	f168_V03_25	sorter box
+X_NEW-l#1	X_NEW-l	sorter	f144r_L04	f144r_L04.2_07	sorter box
+X_NEW-l#2	X_NEW-l	sorter	f144r_L05	f144r_L05_11	sorter box
+X_NEW-l#3	X_NEW-l	sorter	f168r_L02	f168_R02_19	sorter box
+X_NEW-l#4	X_NEW-l	sorter	f168r_L02	f168_R02_18	sorter box
+X_NEW-o#1	X_NEW-o	sorter	f168v_L03	f168_V03_05	sorter box
+X_NEW-p#1	X_NEW-p	sorter	f144r_L04	f144r_L04.2_12	sorter box
+X_NEW-q#1	X_NEW-q	sorter	f144r_L03	f144r_L03_01	sorter box
+X_NEW-r#1	X_NEW-r	sorter	f144r_L05	f144r_L05_14	sorter box
+CEPPO-X_NEW#1	CEPPO-X_NEW	f21v	L09	3	blobfit
+CEPPO-X_NEW#2	CEPPO-X_NEW	f21v	L09	27	blobfit
+CEPPO-X_NEW#3	CEPPO-X_NEW	f35	L01	2	blobfit
+CEPPO-X_NEW#4	CEPPO-X_NEW	f87	L01	22	blobfit
+CEPPO-X_NEW#5	CEPPO-X_NEW	f87	L01	23	blobfit
+CEPPO-X_POUND#1	CEPPO-X_POUND	f21v	L01	20	blobfit
+CEPPO-X_POUND#2	CEPPO-X_POUND	f21v	L02	8	blobfit
+CEPPO-X_POUND#3	CEPPO-X_POUND	f35	L01	36	blobfit
+CEPPO-X_POUND#4	CEPPO-X_POUND	f35	L02	19	blobfit
+CEPPO-X_POUND#5	CEPPO-X_POUND	f87	L02	1	blobfit
+CEPPO-X_THETA2#1	CEPPO-X_THETA2	f21v	L06	14	blobfit
+CEPPO-X_THETA2#2	CEPPO-X_THETA2	f21v	L07	1	blobfit
+CEPPO-X_THETA2#3	CEPPO-X_THETA2	f87	L01	11	blobfit
+CEPPO-X_THETA2#4	CEPPO-X_THETA2	f87	L02	6	blobfit
