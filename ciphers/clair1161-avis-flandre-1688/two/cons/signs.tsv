@@ -1,0 +1,50 @@
+sign	tokens	value	grade	real_cons	real_n	real_top	shuf_agree_n6	decision
++	282	e	S	e	10	e	1	info: consensus agrees
+2	10	r	M	t	6	t	0	stays M (consensus reads 't')
+3	71	e	S	-	5	o	1	info: consensus none
+4	224	o	S	e	6	e	0	info: consensus e
+6	26	e	M	-	3	n	0	stays M (no consensus)
+6r	36	i	M	-	3	d	0	stays M (no consensus)
+7	219	i	M	i	7	i	0	M->S
+8	31	d	M	-	3	c	0	stays M (no consensus)
+9	44	s	S	s	6	s	0	info: consensus agrees
+K	28	f	M	-	3	l	0	stays M (no consensus)
+L	7	n	M	-	4	a	0	stays M (no consensus)
+S	275	u	S	n	6	n	0	info: consensus n
+Sorn	1	h	M	-	0	-	0	stays M (absent from four leaves)
+a	98	u	C	-	4	u	0	-
+blot	1	q	M	-	0	-	0	stays M (absent from four leaves)
+box	23	a	S	-	4	a	0	info: consensus none
+c	4	s	M	-	5	n	0	stays M (no consensus)
+d	57	n	C	n	6	n	0	-
+dia	11	i	M	-	3	d	0	stays M (no consensus)
+e	78	p	C	-	4	p	0	-
+ee	26	y	C	-	5	s	0	-
+eloop	36	c	M	-	5	i	0	stays M (no consensus)
+f	10	n	S	-	2	u	0	info: consensus none
+iib	36	l	M	-	4	i	0	stays M (no consensus)
+iii	68	e	S	-	3	e	0	info: consensus none
+l	12	s	M	-	4	f	0	stays M (no consensus)
+ls	40	e	M	-	4	d	0	stays M (no consensus)
+o	77	n	M	-	4	u	0	stays M (no consensus)
+p	112	c	C	-	4	s	0	-
+phi	49	l	M	-	4	s	0	stays M (no consensus)
+psi	9	r	M	-	3	y	0	stays M (no consensus)
+q	141	i	S	-	4	i	0	info: consensus none
+qb	187	a	S	e	8	e	0	info: consensus e
+rc	17	e	M	-	2	r	0	stays M (no consensus)
+rot	16	r	M	-	5	d	0	stays M (no consensus)
+s	82	e	S	-	4	i	1	info: consensus none
+sd	12	g	C	-	5	i	0	-
+spiralG	1	h	M	-	0	-	0	stays M (absent from four leaves)
+sqc	18	x	M	-	3	l	0	stays M (no consensus)
+th	208	s	M	-	5	s	0	stays M (no consensus)
+to	6	m	M	-	3	y	0	stays M (no consensus)
+tri	3	q	S	-	5	g	0	info: consensus none
+tz	20	e	M	l	6	l	0	stays M (consensus reads 'l')
+vdash	8	t	M	-	2	c	0	stays M (no consensus)
+w	113	i	S	i	6	i	0	info: consensus agrees
+wb	140	l	S	l	6	l	0	info: consensus agrees
+x	11	s	M	-	4	f	0	stays M (no consensus)
+y	202	r	S	r	6	r	0	info: consensus agrees
+z	189	t	M	-	5	t	0	stays M (no consensus)

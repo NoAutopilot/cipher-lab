@@ -1435,3 +1435,66 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further single-seed pooled anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: multi-seed consensus instrument for the 28 M signs, ~$3
+
+## RUN3-C1161MS (4 Oct 2026)
+Account 1 worker for LANE-RUN3, brief `.claude/briefs/runs/2026-10-04-acct1-run3-wave2.md`. Claim 09:06 UTC. Pre-registration
+`tx/PREREG_consensus.md` (pushed 00c7cec4 before any anneal); script `two/consensus.py` (pushed e1427a95 before scoring); outputs
+`two/cons/` (60 keys, `anneal.tsv`, `consensus.tsv`, `signs.tsv`). Disk only, no network, no subagent calls.
+
+**Instrument.** N4-C1's instrument 2 recipe (four non-training leaves, N 2465, K 54, fr16 order 3, restarts 32, iters 40000), seeds
+1-10; per sign the majority letter, kept as the consensus letter only at n >= 6 of 10. Control: the same 10-seed consensus on each of
+the five order-shuffled four-leaf streams (50 anneals). Statistic A_cons = token share (six-leaf stream, C signs out) whose consensus
+letter equals key.tsv; no consensus counts as disagreement. Why the control can differ: shuffling keeps every sign's frequency but
+destroys the order the anneal's n-gram model reads, so control letters agree only as far as frequency rank explains and its seeds
+need not agree with each other (it did move: 0.000-0.122). Anneals 09:08-09:26 UTC, four at a time, about 70 s each.
+Determinism: fresh seed 1 reproduces `two/key_real_s1.tsv` exactly; seeds 2 and 3 reproduce N4-C1's scores (-6626.0, -6300.9).
+
+| consensus (10 seeds, n >= 6) | A_cons tokens | A_cons types |
+|---|---|---|
+| **real** | **0.334** | 0.140 (6/43) |
+| shuffled 1 / 2 / 3 / 4 / 5 | 0.000 / 0.000 / 0.024 / 0.122 / 0.000 | 0.000 / 0.000 / 0.023 / 0.047 / 0.000 |
+
+**Gate: PASS**, 0.334 vs shuffled max 0.122 -- but a much weaker instrument than its single-seed form (0.624): the ten real seeds
+spread over anneal scores -6300.9 to -6626.0 and reach a strict majority on only 13 of 43 keyed non-C signs.
+
+**Per-sign result for the 28 M signs** (full table `two/cons/signs.tsv`):
+- **M -> S: 1 sign, `7` = i** (219 tokens; real consensus i 7/10; 0/5 shuffled controls give i at n >= 6). This is the sign N4-C1
+  noted seed 3 agreed on.
+- Consensus contradicts key.tsv: `2` (key r, consensus t 6/10, 10 tokens), `tz` (key e, consensus l 6/10, 20 tokens). Stay M; values
+  not changed (pre-registered).
+- No consensus (top letter below 6/10): the other 23 present signs, incl. `th` (top s 5/10 = key), `z` (top t 5/10 = key), `rot`,
+  `eloop`, `ls`, `o`, `phi`, `iib`, `6r`, `8`, `K`. `th` and `z` miss the threshold by one seed. Absent from the four leaves:
+  `Sorn`, `blot`, `spiralG`.
+
+**Information only, not acted on (pre-registered): the consensus contradicts three current S signs.**
+- `qb` (key a, 187 tokens): consensus e, 8/10.
+- `4` (key o, 224 tokens): consensus e, 6/10.
+- `S` (key u, 275 tokens): consensus n, 6/10.
+- These three S grades rest on seed 1 alone (N4-C1's pre-registered rule), and seed 1 sits in a minority basin on them. Of the 15 S
+  signs the consensus agrees on 5 (+, 9, w, wb, y), contradicts 3, and has no majority on 7 (3, box, f, iii, q, s, tri). Treat those
+  S grades as single-seed S: a reviewer should not read them as stronger than that.
+
+**Grades applied** (`python3 two/consensus.py score --apply`): key.tsv S 16, M 27, C 6. `tools/decode_key.py`: tokens 3408: C 353,
+S 1908, M 1114, U 33 (was S 1697, M 1325). **No letter value changed**; reading.txt differs only in its grade-count header line, and
+reading_tokens.tsv only in the grade column of the `7` tokens. `--check`: "reading up to date", exit 0. Because the grades changed,
+a rule-7 re-derivation of the regraded reading is owed (letters are unchanged, so it is a grade check, ~$1).
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none. Subagent calls:
+0. Cost: see the lane ledger.
+
+## Remaining gaps (RUN3-C1161MS, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Multi-seed consensus run (PASS 0.334 vs 0.122; 1 sign M->S).
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K ...; 2 and tz with a contrary consensus) - blocker: not-attempted; the 10-seed consensus reaches a majority on too few signs; next: a gloss-and-judge value test of the contrary/near-majority letters (2=t, tz=l, and qb=e, 4=e, S=n for the contested S signs) scored by c186R gloss match and the fr16 judge against shuffled-key nulls, ~$3
+- rule 7 re-derivation of the regraded reading - blocker: not-attempted; grades changed this pass (letters unchanged); next: a fresh session re-derives with tools/decode_key.py --check from spec and key.tsv, ~$1
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (RUN3-C1161MS, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.594 (shuffled max 0.312); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624) and 10-seed consensus PASS (0.334 vs 0.122) grade 16 signs S; next: gloss-and-judge value test of the contrary consensus letters
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further seed sweep of the same anneal is not a different instrument
+Verdict: keep going: 3 internal gaps; cheapest next: rule 7 re-derivation of the regraded reading, ~$1

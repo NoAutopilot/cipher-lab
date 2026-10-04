@@ -1,0 +1,9 @@
+consensus	A_cons_token	A_cons_type	tokens	types
+real	0.3342	0.1395	2992	43
+shuf1	0.0000	0.0000	2992	43
+shuf2	0.0000	0.0000	2992	43
+shuf3	0.0237	0.0233	2992	43
+shuf4	0.1217	0.0465	2992	43
+shuf5	0.0000	0.0000	2992	43
+# gate: real 0.3342 vs shuffled max 0.1217 -> PASS; n>=6 of 10 seeds
+# determinism: fresh seed 1 == two/key_real_s1.tsv: True
