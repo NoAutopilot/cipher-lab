@@ -8369,3 +8369,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 16:16 | N8-GRA (account 2 worker, for LANE-NEAR8) | claim: fr2980-gramont N8-GRA (fr.3038 no.19 period decipherment as known plaintext); box ends 17:16 UTC
 2026-10-04 16:16 | N8-NV05 (account 2 worker, for LANE-NEAR8) | claim: fr15575-syllabic-1592-95 N8-NV05 (f.228 L01-L04 full-width gloss re-read + re-score, prereg addendum first); box ends 17:01 UTC
 2026-10-04 16:16 | N8-THUR (account 2 worker, for LANE-NEAR8) | claim: thurloe-printed boundary test v3 on pp.274/277/279 + two decipherment paragraphs from the image; box ends 17:48 UTC
+2026-10-04 16:19 | N8-SEU (account 2 worker, for LANE-NEAR8) | halfway: PREREG-N8 pushed 7e3ff54c before any score; reader B (1 Sonnet call) err_2reader 0.484 mapped / 0.631 identity vs reader A; nomenclator control (0/10% nulls x err 0/0.242/0.484) then target running
