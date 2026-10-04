@@ -11,6 +11,9 @@ N4-PAG65 (4 Oct 2026) extends the same table and rule to code 65 (hard-EM 'ab' o
 (key.tsv 'g', grade C, against 'ge' in "genie"/"Visage"/"agee"/"Mariage"). Neither is in gibbs_codes.tsv (not held in both
 letters): their value is the per-letter seed-0 Gibbs run's own chunk (the same run that passed PREREG_seg2.md held-out),
 65 = b (1/1, L1), 116 = ge (4/4, all L2). Same S/M rule; DEMOTE lists the three 116 tokens whose neighbours do not pin it.
+N4-PAG213 (4 Oct 2026) adds code 213 (key.tsv 'ma', grade C from interlinear_align 2/4, against "Mariage"): per-letter seed-0 Gibbs
+chunk ri (4/4, all L2, share 1.00; pooled run ri 4/4); 155 ma (H) sits before it in "Mari", "marie", "Mariage". Same S/M rule; DEMOTE
+lists the three 213 tokens whose far side is not pinned by a firm neighbour or a gloss word boundary.
 """
 import collections, csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -18,9 +21,10 @@ sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'tools'))
 import gibbs_align as ga
 import interlinear_align as ia
 
-CODES = ['31', '45', '48', '97', '148', '176', '204', '65', '116']
+CODES = ['31', '45', '48', '97', '148', '176', '204', '65', '116', '213']
 GIBBS = {'31': 'b', '45': 'r', '48': 'u', '97': 'en', '148': 'lo', '176': 'ni', '204': 'que',  # gibbs_codes.tsv
-         '65': 'b', '116': 'ge'}  # N4-PAG65: per-letter Gibbs run's own chunk, not held in both letters
+         '65': 'b', '116': 'ge',  # N4-PAG65: per-letter Gibbs run's own chunk, not held in both letters
+         '213': 'ri'}  # N4-PAG213: same, 4/4 in letter 2
 # Context demotions read by eye from both segmentations (RUN2-PAG): the token's own Gibbs chunk equals the code value but the
 # gloss word with its firm (H/C/S) neighbours does not pin it there.
 DEMOTE = {
@@ -31,8 +35,14 @@ DEMOTE = {
     # (87 de H on the left, 176 ni on the right), so the demotion is lifted.
     ('P23', 24): 'gloss "Visage": 245 fa (M, single), 220 sa (M), 214 nde (M) on both sides; "ge" vs "g" + an e on 214 not pinned',
     ('P37', 1): 'gloss "agee": 30 a (M) and 34 de (M) on both sides, 87 de (H) one further; "ge"+"e" vs "g"+"ee" not pinned',
-    ('P42', 5): 'gloss "Mariage" ends the pair, but 30 a (M) on the left and 213 ma (C) reads against the gloss ("ri" by Gibbs); '
-                'the e is not pinned to 116',
+    ('P42', 5): 'gloss "Mariage" ends the pair; 213 = ri since N4-PAG213 (155 ma H, 213 ri), but 30 a (M) on the left leaves '
+                '"age" split a/ge vs ag/e -- the e is not pinned to 116',
+    # N4-PAG213: 213 = ri. f66L 276 (P32 "son Mari epousa") is S: 155 ma (H) on the left, the gloss word ends at "Mari".
+    ('P26', 2): 'gloss "d\'Esprit": 47 t (S) and 52 et (H) pin the right end, but 96 d (M) and 43 e (M; Gibbs p) on the left '
+                'leave "ri" vs "pri" not pinned',
+    ('P41', 4): 'gloss "marie": 155 ma (H) on the left, but "rie" lies on 213 + 34 (M, 17 values) before 52 et (H); ri/e vs '
+                'rie/0 not pinned',
+    ('P42', 3): 'gloss "Mariage": 155 ma (H) on the left, but 30 a (M) and 116 ge (M) on the right; ri/a vs ria/0 not pinned',
 }
 L1 = {'f60R', 'f61L', 'f61R', 'f65L'}
 

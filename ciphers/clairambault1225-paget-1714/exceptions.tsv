@@ -60,3 +60,4 @@ f66R	147	que	S	RUN2-PAG ruling: code 204, own Gibbs chunk = held-out-passed valu
 f61L	147	b	S	N4-PAG65 ruling: code 65, own Gibbs chunk = per-letter run value, gloss "Labbe" admits it between 145 la (S) and 67 be (H) (align/settle7_rulings.tsv)
 f66R	284	ge	S	N4-PAG65 ruling: code 116, own Gibbs chunk = per-letter run value, gloss "genie" admits it between 87 de (H) and 176 ni (align/settle7_rulings.tsv)
 f66R	285	ni	S	N4-PAG65 ruling: code 176, RUN2-PAG demotion lifted once 116 = ge is settled at f66R 284, gloss "genie" admits it (align/settle7_rulings.tsv)
+f66L	276	ri	S	N4-PAG213 ruling: code 213, own Gibbs chunk = per-letter run value, gloss "son Mari epousa" admits it after 155 ma (H) with the word ending at "Mari" (align/settle7_rulings.tsv)

@@ -56,5 +56,9 @@ code	value	pair	line	position	gibbs_chunk	hardEM_chunk	gloss	ruling	why
 65	b	P12	f61L	147	b	ab	Labbe	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 116	ge	P23	f66L	90	ge	blo	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	M	gloss "Visage": 245 fa (M, single), 220 sa (M), 214 nde (M) on both sides; "ge" vs "g" + an e on 214 not pinned
 116	ge	P37	f66L	368	ge	g	agee de 44 ans	M	gloss "agee": 30 a (M) and 34 de (M) on both sides, 87 de (H) one further; "ge"+"e" vs "g"+"ee" not pinned
-116	ge	P42	f66R	101	ge	age	pour le Mariage	M	gloss "Mariage" ends the pair, but 30 a (M) on the left and 213 ma (C) reads against the gloss ("ri" by Gibbs); the e is not pinned to 116
+116	ge	P42	f66R	101	ge	age	pour le Mariage	M	gloss "Mariage" ends the pair; 213 = ri since N4-PAG213 (155 ma H, 213 ri), but 30 a (M) on the left leaves "age" split a/ge vs ag/e -- the e is not pinned to 116
 116	ge	P53	f66R	284	ge	g	a toujours este de genie Allemand	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+213	ri	P26	f66L	134	ri	s	d'Esprit et un air	M	gloss "d'Esprit": 47 t (S) and 52 et (H) pin the right end, but 96 d (M) and 43 e (M; Gibbs p) on the left leave "ri" vs "pri" not pinned
+213	ri	P32	f66L	276	ri	ri	M le Duc de Parme son Mari epousa	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+213	ri	P41	f66R	84	ri	ma	Il n'est pas marie et n'a	M	gloss "marie": 155 ma (H) on the left, but "rie" lies on 213 + 34 (M, 17 values) before 52 et (H); ri/e vs rie/0 not pinned
+213	ri	P42	f66R	99	ri	ma	pour le Mariage	M	gloss "Mariage": 155 ma (H) on the left, but 30 a (M) and 116 ge (M) on the right; ri/a vs ria/0 not pinned

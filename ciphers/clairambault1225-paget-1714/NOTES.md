@@ -1141,18 +1141,40 @@ so the value used is the per-letter seed-0 Gibbs run's own chunk, the run that p
 - Found in passing, not settled (Usage 7): 213 = ma at grade C reads against "Mariage" (155 ma H sits before it; Gibbs gives 213 = ri).
 - Requests: none. Subagents: none.
 
-## Remaining gaps (N4-PAG65, 4 Oct 2026)
-Read so far: token level H 62, S 74, M 356, I 7, U 6 of 505 (firm 136), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
-- Code-level values for the 356 M tokens (mostly single-attestation codes; the 7 Gibbs/hard-EM disagreements plus 65 and 116 are settled per token, 43 S and 17 M, align/settle7_rulings.tsv) - blocker: open-codes; two instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS) and the per-token pass done; a code seen once cannot be held in both letters by either; next: the same per-token reading for 213 (ma, C, against "Mariage"), ~$1
+## N4-PAG213 (4 Oct 2026): code 213 settled per token
+
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave2.md` section N4-PAG213 (LANE-NEAR4, account 2). Disk only: no network request,
+no vision call, no subagent. Method: `align/settle7.py` extended in place (CODES/GIBBS gain 213; three DEMOTE entries; the 116 "Mariage"
+demotion's reason rewritten, ruling unchanged); same S/M rule as RUN2-PAG and N4-PAG65.
+- **213**: key.tsv had ma at grade C from interlinear_align 2/4 (others ri:1, s:1). Those two ma readings put 155 on "pas"/"le", although
+  155 = ma is H (4/7); with 155 = ma, 213 = ma reads "mama". The per-letter seed-0 Gibbs run (the run that passed PREREG_seg2.md held-out)
+  gives 213 = ri at all four occurrences (all letter 2, share 1.00; the pooled run also 4/4), with 155 = ma before it in "Mari", "marie" and
+  "Mariage". Key 213: ma (C) -> ri (M, unsettled per token; not held in both letters).
+- Per token: f66L 276 "son Mari epousa" S (155 ma H on the left, the gloss word ends at "Mari"); f66L 134 "d'Esprit" M (right end pinned
+  by 47 t S and 52 et H, left 96/43 both M, "ri" vs "pri" open); f66R 84 "marie" M ("rie" over 213 + 34, 34 M with 17 values); f66R 99
+  "Mariage" M (30 a and 116 ge both M on the right).
+- **Decode** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: `ciphertext.tsv: tokens 505: H 60, I 7, M 357,
+  S 75, U 6` / `reading up to date`, exit 0. Per token (rule 4): **H 62 -> 60, C 0, S 74 -> 75, M 356 -> 357, I 7, U 6** of 505; firm 135.
+  Four tokens changed value ma -> ri: f66L 134 (M), f66L 276 (M -> S), f66R 84 (H -> M), f66R 99 (H -> M). `align/settle7.py --check`:
+  up to date, 44 S rulings in exceptions.tsv; rulings now 10 codes, 44 S, 20 M.
+- A rule-7 re-derivation of the new state (N4-PAG65's six tokens plus these four) is owed (not done here).
+- Same C-vs-gloss shape, listed, not settled (Usage 7): the per-letter Gibbs run's chunk differs from the key's C value at 126 ch (Gibbs
+  he 3/3), 84 ce (ette 2, cet 1, ato 1), 86 da (dame 2, de 1), 77 q (ceq/p/quoi), 158 mo (mils 1, mo 1); C codes where Gibbs agrees: 135 je,
+  174 na, 205 qui. 126 is the cleanest next (one value at every occurrence, like 213).
+- Requests: none. Subagents: none.
+
+## Remaining gaps (N4-PAG213, 4 Oct 2026)
+Read so far: token level H 60, S 75, M 357, I 7, U 6 of 505 (firm 135), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 357 M tokens (mostly single-attestation codes; the 7 Gibbs/hard-EM disagreements plus 65, 116 and 213 are settled per token, 44 S and 20 M, align/settle7_rulings.tsv) - blocker: open-codes; two instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS) and the per-token pass done; a code seen once cannot be held in both letters by either; next: the same per-token reading for the C codes where the per-letter Gibbs chunk differs (126 ch/he first, then 84, 86, 77, 158), ~$1
 - f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
 - f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
 
-## Escalation (N4-PAG65, 4 Oct 2026)
+## Escalation (N4-PAG213, 4 Oct 2026)
 - [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
 - [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
 - [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
 - [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
-- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS 0.521/0.681 vs p95 0.066/0.067; per-token rulings RUN2-PAG + N4-PAG65 on 9 codes: 43 S, 17 M; key.tsv 111 codes
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS 0.521/0.681 vs p95 0.066/0.067; per-token rulings RUN2-PAG + N4-PAG65 + N4-PAG213 on 10 codes: 44 S, 20 M; key.tsv 111 codes
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
-- [x] retry: tools/decode_key.py --check exit 0 after N4-PAG65: H 62 S 74 M 356 I 7 U 6
-Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 213 (ma, C, against "Mariage"), ~$1
+- [x] retry: tools/decode_key.py --check exit 0 after N4-PAG213: H 60 S 75 M 357 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 126 (ch, C; per-letter Gibbs he 3/3), then 84, 86, 77, 158, ~$1
