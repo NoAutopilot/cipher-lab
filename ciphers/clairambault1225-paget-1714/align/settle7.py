@@ -14,6 +14,11 @@ letters): their value is the per-letter seed-0 Gibbs run's own chunk (the same r
 N4-PAG213 (4 Oct 2026) adds code 213 (key.tsv 'ma', grade C from interlinear_align 2/4, against "Mariage"): per-letter seed-0 Gibbs
 chunk ri (4/4, all L2, share 1.00; pooled run ri 4/4); 155 ma (H) sits before it in "Mari", "marie", "Mariage". Same S/M rule; DEMOTE
 lists the three 213 tokens whose far side is not pinned by a firm neighbour or a gloss word boundary.
+N4-PAG126 (4 Oct 2026) adds the C codes whose per-letter seed-0 Gibbs chunk differs from the key's C value, in the order listed by
+N4-PAG213: 126 (key ch; Gibbs he 3/3, share 1.00, pooled 3/3), 86 (key da; Gibbs dame 2/3 in "Madame", de under the abbreviation
+"Made"), 84 (key ce; Gibbs cet/ette/ette/ato, no single value), 77 (key q; Gibbs ceq/p/quoi, no single value), 158 (key mo; Gibbs
+mo 0.96 under "modeste", mils 0.29 in a drifted pair). For 84 and 77 no Gibbs value exists, so GIBBS carries the key's value and
+every token falls to M by the rule; DEMOTE lists the two 126 tokens whose right end is not pinned.
 """
 import collections, csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -21,10 +26,12 @@ sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'tools'))
 import gibbs_align as ga
 import interlinear_align as ia
 
-CODES = ['31', '45', '48', '97', '148', '176', '204', '65', '116', '213']
+CODES = ['31', '45', '48', '97', '148', '176', '204', '65', '116', '213', '126', '86', '84', '77', '158']
 GIBBS = {'31': 'b', '45': 'r', '48': 'u', '97': 'en', '148': 'lo', '176': 'ni', '204': 'que',  # gibbs_codes.tsv
          '65': 'b', '116': 'ge',  # N4-PAG65: per-letter Gibbs run's own chunk, not held in both letters
-         '213': 'ri'}  # N4-PAG213: same, 4/4 in letter 2
+         '213': 'ri',  # N4-PAG213: same, 4/4 in letter 2
+         '126': 'he', '86': 'dame', '158': 'mo',  # N4-PAG126: per-letter Gibbs run's own chunk (126 3/3, 86 2/3, 158 1/2)
+         '84': 'ce', '77': 'q'}  # N4-PAG126: no single Gibbs value; key value kept, every token M by the rule
 # Context demotions read by eye from both segmentations (RUN2-PAG): the token's own Gibbs chunk equals the code value but the
 # gloss word with its firm (H/C/S) neighbours does not pin it there.
 DEMOTE = {
@@ -40,6 +47,10 @@ DEMOTE = {
     # N4-PAG213: 213 = ri. f66L 276 (P32 "son Mari epousa") is S: 155 ma (H) on the left, the gloss word ends at "Mari".
     ('P26', 2): 'gloss "d\'Esprit": 47 t (S) and 52 et (H) pin the right end, but 96 d (M) and 43 e (M; Gibbs p) on the left '
                 'leave "ri" vs "pri" not pinned',
+    # N4-PAG126: 126 = he. f66L 10 (P22 "achevera") is S: 32 c (S) on the left, 244 ve (H) on the right pin "he" exactly.
+    ('P28', 5): 'gloss "Duchesse": 90 du (H) and 32 c (S) pin the left end, but 46 s (M, 37 occurrences, es 3) before 221 se (S) '
+                'leaves he/s vs h/es not pinned',
+    ('P52', 5): 'gloss "Duchesse": same as P28 -- 32 c (S) on the left, 46 s (M) then 221 se (S); he/s vs h/es not pinned',
     ('P41', 4): 'gloss "marie": 155 ma (H) on the left, but "rie" lies on 213 + 34 (M, 17 values) before 52 et (H); ri/e vs '
                 'rie/0 not pinned',
     ('P42', 3): 'gloss "Mariage": 155 ma (H) on the left, but 30 a (M) and 116 ge (M) on the right; ri/a vs ria/0 not pinned',

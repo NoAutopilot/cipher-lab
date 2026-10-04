@@ -61,3 +61,7 @@ f61L	147	b	S	N4-PAG65 ruling: code 65, own Gibbs chunk = per-letter run value, g
 f66R	284	ge	S	N4-PAG65 ruling: code 116, own Gibbs chunk = per-letter run value, gloss "genie" admits it between 87 de (H) and 176 ni (align/settle7_rulings.tsv)
 f66R	285	ni	S	N4-PAG65 ruling: code 176, RUN2-PAG demotion lifted once 116 = ge is settled at f66R 284, gloss "genie" admits it (align/settle7_rulings.tsv)
 f66L	276	ri	S	N4-PAG213 ruling: code 213, own Gibbs chunk = per-letter run value, gloss "son Mari epousa" admits it after 155 ma (H) with the word ending at "Mari" (align/settle7_rulings.tsv)
+f66L	10	he	S	N4-PAG126 ruling: code 126, own Gibbs chunk = per-letter run value, gloss "achevera" admits it between 32 c (S) and 244 ve (H) (align/settle7_rulings.tsv)
+f66L	182	dame	S	N4-PAG126 ruling: code 86, own Gibbs chunk = per-letter run value, gloss "Madame" admits it between 155 ma (H) and 145 la (S) (align/settle7_rulings.tsv)
+f66R	251	dame	S	N4-PAG126 ruling: code 86, own Gibbs chunk = per-letter run value, gloss "Madame" admits it between 155 ma (H) and 145 la (S) (align/settle7_rulings.tsv)
+f66L	143	mo	S	N4-PAG126 ruling: code 158, own Gibbs chunk = code value, gloss "modeste" admits it at the word start before 87 de (H) (align/settle7_rulings.tsv)

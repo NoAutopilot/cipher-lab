@@ -62,3 +62,18 @@ code	value	pair	line	position	gibbs_chunk	hardEM_chunk	gloss	ruling	why
 213	ri	P32	f66L	276	ri	ri	M le Duc de Parme son Mari epousa	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
 213	ri	P41	f66R	84	ri	ma	Il n'est pas marie et n'a	M	gloss "marie": 155 ma (H) on the left, but "rie" lies on 213 + 34 (M, 17 values) before 52 et (H); ri/e vs rie/0 not pinned
 213	ri	P42	f66R	99	ri	ma	pour le Mariage	M	gloss "Mariage": 155 ma (H) on the left, but 30 a (M) and 116 ge (M) on the right; ri/a vs ria/0 not pinned
+126	he	P22	f66L	10	he	e	Elle achevera sa 22e annee le 25 Octobre prochain	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+126	he	P28	f66L	186	he	ch	Madame la Duchesse sa Mere qui l'a toujours tenue sous les yeux	M	gloss "Duchesse": 90 du (H) and 32 c (S) pin the left end, but 46 s (M, 37 occurrences, es 3) before 221 se (S) leaves he/s vs h/es not pinned
+126	he	P52	f66R	255	he	ch	Madame la Duchesse qui en de la Maison	M	gloss "Duchesse": same as P28 -- 32 c (S) on the left, 46 s (M) then 221 se (S); he/s vs h/es not pinned
+86	dame	P28	f66L	182	dame	da	Madame la Duchesse sa Mere qui l'a toujours tenue sous les yeux	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+86	dame	P52	f66R	251	dame	da	Madame la Duchesse qui en de la Maison	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours
+86	dame	P56	f66R	338	de	de	Made sa Mere	M	own Gibbs chunk 'de' is not the code value
+84	ce	P15	f61R	34	cet	ce	a la vente de cette isle	M	own Gibbs chunk 'cet' is not the code value
+84	ce	P19	f65R	68	ette	pri	de cette Princesse qu'on	M	own Gibbs chunk 'ette' is not the code value
+84	ce	P31	f66L	257	ette	ce	cette mere	M	own Gibbs chunk 'ette' is not the code value
+84	ce	P53	f66R	272	ato	a	a toujours este de genie Allemand	M	own Gibbs chunk 'ato' is not the code value
+77	q	P16	f65L	43	ceq	q	penetrer ce qui	M	own Gibbs chunk 'ceq' is not the code value
+77	q	P33	f66L	292	p	ces	en 2e Nopces le Prince Francois Farnese	M	own Gibbs chunk 'p' is not the code value
+77	q	P38	f66R	9	quoi	q	quoyque ce Dernier Duc n'ait que 36	M	own Gibbs chunk 'quoi' is not the code value
+158	mo	P23	f66L	48	mils	mo	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	M	own Gibbs chunk 'mils' is not the code value
+158	mo	P27	f66L	143	mo	mo	modeste	S	own Gibbs chunk = code value; gloss word admits it with firm neighbours

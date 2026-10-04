@@ -1178,3 +1178,45 @@ Read so far: token level H 60, S 75, M 357, I 7, U 6 of 505 (firm 135), tools/de
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
 - [x] retry: tools/decode_key.py --check exit 0 after N4-PAG213: H 60 S 75 M 357 I 7 U 6
 Verdict: keep going: 1 internal gaps; cheapest next: the same per-token reading for code 126 (ch, C; per-letter Gibbs he 3/3), then 84, 86, 77, 158, ~$1
+
+## N4-PAG126 (4 Oct 2026): codes 126, 86, 84, 77, 158 per token
+
+Brief: `.claude/briefs/runs/2026-10-04-ytbiz-near4-wave3.md` section N4-PAG126 (LANE-NEAR4, account 2). Disk only: no network request,
+no vision call, no subagent. Method: `align/settle7.py` extended in place (CODES/GIBBS gain the five codes; two DEMOTE entries for 126);
+same S/M rule as RUN2-PAG, N4-PAG65 and N4-PAG213 (S only where the token's own per-letter seed-0 Gibbs chunk equals the code value and
+the gloss word admits it with firm H/C/S neighbours; else M).
+- **126**: key ch (C) -> he (M). Gibbs he 3/3 (share 1.00, pooled 3/3, all letter 2). With 32 = c (S) the old value read "ducchsse"
+  under "Duchesse". f66L 10 "achevera" **S** (32 c S left, 244 ve H right pin "he" exactly); f66L 186 and f66R 255 "Duchesse" M (32 c S
+  left, but 46 s M before 221 se S: he/s vs h/es not pinned).
+- **86**: key da (C) -> dame (M). Gibbs dame under "Madame" at f66L 182 and f66R 251, both **S** (155 ma H left, 145 la S right; the
+  old da needed 145 = me against 145 = la S). f66R 338 under the abbreviation "Made" (period short form of Madame): Gibbs de, M.
+- **84**: key ce (C) -> ce (M). Gibbs cet / ette / ette / ato, never ce: no token has two instruments agreeing, all four M. Eye note,
+  not an instrument: under "cette mere" (f66L 257, 156 me + 212 re after it) and "cette isle" (f61R 34, 38 + 46 + 146 le after it) the
+  whole word "cette" would sit on 84; listed, not applied.
+- **77**: key q (C) -> q (M). Gibbs ceq / p / quoi (shares 0.39-0.60), never q: all three M.
+- **158**: key mo (C) -> mo (M). f66L 143 "modeste" **S** (Gibbs mo 0.96; word start, 87 de H after); f66L 48 "meme mois" M (Gibbs
+  mils, share 0.29, the pair has drifted).
+- **Decode** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: `ciphertext.tsv: tokens 505: H 50, I 7, M 363,
+  S 79, U 6` / `reading up to date`, exit 0. Per token (rule 4): **H 60 -> 50, C 0, S 75 -> 79, M 357 -> 363, I 7, U 6** of 505; firm
+  129 (was 135). **12 tokens changed**: 6 values (126 ch -> he x3, 86 da -> dame x3) and grades H -> M 7, H -> S 3, M -> S 1 (f66R 338
+  value only, M stays M). `align/settle7.py --check`: up to date, 48 S rulings in exceptions.tsv; rulings now 15 codes, 48 S, 31 M.
+- The fall in H is the two-instrument standard applied, not a lost reading: the five codes were C on interlinear_align alone.
+- A rule-7 re-derivation of the state after N4-PAG65 + N4-PAG213 + N4-PAG126 is owed (LANE-NEAR4 briefs it; not done here).
+- C codes left where Gibbs agrees with the key: 135 je, 174 na, 205 qui (N4-PAG213 list); no other C-vs-Gibbs conflict was listed.
+- Requests: none. Subagents: none.
+
+## Remaining gaps (N4-PAG126, 4 Oct 2026)
+Read so far: token level H 50, S 79, M 363, I 7, U 6 of 505 (firm 129), tools/decode_key.py --check 4 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 363 M tokens (mostly single-attestation codes; the 7 Gibbs/hard-EM disagreements plus 65, 116, 213, 126, 86, 84, 77, 158 are settled per token, 48 S and 31 M, align/settle7_rulings.tsv) - blocker: open-codes; two instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS) and the per-token pass done on every listed C-vs-Gibbs code; a code seen once cannot be held in both letters by either; next: rule-7 re-derivation of the N4-PAG65/213/126 state (LANE-NEAR4), then audit, ~$2
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (N4-PAG126, 4 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS 0.521/0.681 vs p95 0.066/0.067; per-token rulings RUN2-PAG + N4-PAG65 + N4-PAG213 + N4-PAG126 on 15 codes: 48 S, 31 M; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk
+- [x] retry: tools/decode_key.py --check exit 0 after N4-PAG126: H 50 S 79 M 363 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: rule-7 re-derivation of the N4-PAG65 + N4-PAG213 + N4-PAG126 state (LANE-NEAR4 briefs it), ~$2

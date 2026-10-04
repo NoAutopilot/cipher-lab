@@ -76,7 +76,7 @@ f61R	30	48	H	u	S
 f61R	31	97	H	en	S
 f61R	32	223	M	te	M
 f61R	33	87	H	de	H
-f61R	34	84	H	ce	H
+f61R	34	84	H	ce	M
 f61R	35	38	H	a	M
 f61R	36	46	H	s	M
 f61R	37	146	H	le	S
@@ -85,7 +85,7 @@ f65L	39	175	H	ne	S
 f65L	40	47	H	t	M
 f65L	41	212	H	re	M
 f65L	42	45	H	r	S
-f65L	43	77	H	q	H
+f65L	43	77	H	q	M
 f65L	44	20	H	ui	M
 f65L	48	222	H	?	U
 f65L	49	191	H	e	M
@@ -138,7 +138,7 @@ f66L	4	41	H	ce	M
 f66L	7	99	H	le	M
 f66L	8	56	H	l	M
 f66L	9	32	H	c	M
-f66L	10	126	H	ch	M
+f66L	10	126	H	he	S
 f66L	11	244	H	ve	M
 f66L	12	211	H	at	M
 f66L	13	220	H	sa	M
@@ -164,7 +164,7 @@ f66L	44	175	H	ne	S
 f66L	45	34	H	de	M
 f66L	46	146	H	le	M
 f66L	47	165	H	me	M
-f66L	48	158	H	mo	H
+f66L	48	158	H	mo	M
 f66L	49	38	H	a	M
 f66L	50	46	H	s	M
 f66L	51	95	H	e	M
@@ -217,7 +217,7 @@ f66L	138	41	H	ce	M
 f66L	139	56	H	l	M
 f66L	140	38	H	a	M
 f66L	141	45	H	r	S
-f66L	143	158	H	mo	H
+f66L	143	158	H	mo	S
 f66L	144	87	H	de	H
 f66L	145	46	H	s	M
 f66L	149	233	M	te	M
@@ -226,11 +226,11 @@ f66L	170	4	H	?	U
 f66L	171	19	H	?	U
 f66L	172	600	M	?	U
 f66L	181	155	H	ma	H
-f66L	182	86	H	da	H
+f66L	182	86	H	dame	S
 f66L	183	145	H	la	M
 f66L	184	90	H	du	M
 f66L	185	32	H	c	M
-f66L	186	126	H	ch	H
+f66L	186	126	H	he	M
 f66L	187	46	H	s	M
 f66L	188	221	H	se	S
 f66L	189	20	H	sa	M
@@ -262,7 +262,7 @@ f66L	235	34	H	de	M
 f66L	236	90	H	du	M
 f66L	237	76	H	at	M
 f66L	238	240	H	ion	H
-f66L	257	84	H	ce	H
+f66L	257	84	H	ce	M
 f66L	258	156	H	me	M
 f66L	259	212	H	re	M
 f66L	266	161	H	m	M
@@ -332,7 +332,7 @@ f66L	371	44	H	44	I
 f66L	372	30	H	a	M
 f66L	373	41	H	ce	M
 f66L	374	46	H	s	M
-f66R	9	77	H	q	H
+f66R	9	77	H	q	M
 f66R	10	87	H	de	M
 f66R	11	45	H	r	M
 f66R	12	176	H	ni	S
@@ -454,11 +454,11 @@ f66R	237	30	H	a	M
 f66R	238	147	H	li	H
 f66R	239	233	H	te	H
 f66R	250	155	H	ma	H
-f66R	251	86	H	da	H
+f66R	251	86	H	dame	S
 f66R	252	145	H	la	M
 f66R	253	90	H	du	M
 f66R	254	32	H	c	M
-f66R	255	126	H	ch	H
+f66R	255	126	H	he	M
 f66R	256	46	H	s	M
 f66R	257	221	H	se	S
 f66R	258	205	H	qui	H
@@ -500,7 +500,7 @@ f66R	322	32	H	c	S
 f66R	326	146	H	le	S
 f66R	327	46	H	s	M
 f66R	337	155	H	ma	H
-f66R	338	86	H	da	M
+f66R	338	86	H	dame	M
 f66R	339	220	H	sa	M
 f66R	340	168	H	me	M
 f66R	341	34	H	de	M
