@@ -1,0 +1,16 @@
+# es132-vargas-mexia-1578 phrases.txt -- distinctive decoded phrases from the paragraphs Teulet does NOT print (A3V2-ES7, 4 Oct 2026).
+# Spelling as decoded (Cp.30 syllabic; u/v, i/j folded by print_check.py), joined into words by this worker; grade M (no H/C on these lines).
+# Positive control (printed by Teulet vol.5 p.167, 15 Oct 1578, f.119v lower = test 0's known answer):
+no conviene determinarnos sin mucho fundamento
+# Unprinted paragraphs:
+don Sancho de Leyva
+andamientos y pretension
+el de Alanzon y el de Bearne
+circunstancias que a esto tocan
+prohibir de veras y castigar con rigor
+tan injusta y de tan mal nombre
+se ha dado en esa villa a las predicas
+se han atrevido a introduzir
+sobre lo de las piraterias
+lo que toca a la navegacion de las indias
+con las palabras que me parescio convenir

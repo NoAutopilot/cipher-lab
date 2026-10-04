@@ -37,7 +37,7 @@ Quote (cabinet-noir README, es132-vargas-mexia): "30 premières lectures avec cl
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
-- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r; N4-ES132B 4 Oct 2026 closed f.90r and f.91r), but graded M only, with 31+2 '?' tokens on f.90r/f.91r and no second-instrument check - blocker: not-attempted; rule 7 needs a fresh session, not the transcribing worker; next: a rule-7 re-derivation of test2.py's readings by a fresh session, then a print check of the decoded phrases (tools/print_check.py phrases.txt: "don Sancho de Leyva", "andamientos y pretension", Bearne/Alençon), ~$2
+- The two Teulet letters' unprinted text is through gate (b) on every page (f.89 letter: f.89r, f.89v, f.90r, f.90v, f.91r; f.119 letter: f.119r, f.119v, f.120r; N4-ES132B 4 Oct 2026 closed f.90r and f.91r), rule-7 re-derived SAME 2842/2842 by a fresh session and print-checked (A3V2-ES7, 4 Oct 2026: 12 phrases, no hit names these letters, Teulet control found), but graded M only, with 31+2 '?' tokens on f.90r/f.91r, no second-instrument check and no verifier class - blocker: not-attempted; a verifier is a separate session (rule 10); next: AUDIT 1 (verifier brief template, N-class and depth per rule 4a; the lane decides whether it is due at M-only), ~$8
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
 - About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; keys published, Gallica images answer, cabinet-noir may reach them first; next: re-check its git log, pick letters outside its list, ~$6 per 5 letters
 - 3-5 open Cipher 4 (Perez) letters f.87, 157, 179, 136?, 148? - blocker: not-attempted; Cipher 4 table is Tomokiyo's PNG not on disk (IMAGE-QUEUE spanish3vargas*.png); next: fetch the PNGs or use cabinet-noir cle/cipher4_codes_perez.tsv, ~$1
@@ -52,10 +52,10 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [ ] retry: catalogue record 403 and blog threads are the planned retries
-Verdict: keep going: 6 internal gaps; cheapest next: rule-7 re-derivation of the two Teulet letters' test2 readings and a print check of their decoded phrases, ~$2 (f.90r and f.91r done by N4-ES132B, 4 Oct 2026: the f.89 and f.119 letters are through a gate on every page)
+Verdict: keep going: 6 internal gaps; cheapest next: the holding-catalogue record retry (browser tool, ~$0.2) and the blog threads (~$0.3); for the two Teulet letters, a verifier AUDIT 1 (~$8) now that the rule-7 re-derivation (SAME 2842/2842) and the print check are on file (A3V2-ES7, 4 Oct 2026)
 
 ## While waiting
-Nothing waits on a person: the action that depends on nobody is the rule-7 re-derivation and print check of the f.89/f.119 letters' readings (above); after that, the next open Cipher 3 letters outside cabinet-noir's list.
+Nothing waits on a person: the rule-7 re-derivation and print check of the f.89/f.119 letters are done (A3V2-ES7, 4 Oct 2026, RD7-2026-10-04.md); the action that depends on nobody is now the verifier audit of those readings, then the next open Cipher 3 letters outside cabinet-noir's list.
 
 ## Requests by host (CS-1)
 gallica.bnf.fr 4 images; archive.org 6 advancedsearch + 4 djvu downloads; github.com 3 shallow clones (2 solver repos earlier + cabinet-noir; one WebFetch); de-crypt.org 1 browser login + 12 fetches; WebSearch 9; archivesetmanuscrits.bnf.fr 1 (403, not retried). No credentials printed. Report only; no novelty classification made.
@@ -244,3 +244,33 @@ Grades (rule 4, reconciled): f.90r H 0, C 0, S 0, M 429, I 0, U 65. f.91r H 0, C
 Readings: `reading_f90r.txt`, `reading_f91r.txt`. Sense, not graded, by eye (Spanish): f.90r L08-L10 "lo que uoles habra ... y esto aunque quede abierta la puerta ... que segun el [100] de las ... con que ay se procediere", L13-L16 "y a uos os hauemo querido [..] de lo que es con el se passo ... lo tengais entendido y que me ha parescido proceder por esta uia por lo que importa no dar [{Vum}] a que se dexe de ...", L22-L25 "si hauieredes hauido alguna de las [..] falsa[s] ... en esa uilla ... el de Alanzon y el de Bearne que dezis contienen que le offrescia yo fauor ... que se apoderen de ..."; f.91r L01-L03 "... si se huuiere de [V]sar de la licencia ... y de lo que mas se huuiere de hazer", L04-L07 "... de lo que mas entendieredes de los andamientos y pretension de [..] Bearne, y a don Sancho de Leyua de lo que uieredes conuenir ...". Reported as found; not searched in print in this job beyond Teulet vol.5 (Teulet prints only f.90v's paragraph of this letter).
 Consequence for the letter: the f.89 letter (19 Sept 1578, f.89r-f.91r) now has every page through gate (a) or (b): f.89r, f.89v (test 2), f.90r (this job), f.90v (test 1: Teulet lines (a), the rest (b)), f.91r (this job). With N4-ES132, both Teulet "Déchiffr. officiel" letters (f.89 and f.119) are through on every page.
 Requests: gallica.bnf.fr 8 (2 x 1200 px canvases, 2 info.json, 4 native regions incl. two re-cuts), >= 2 s apart; github.com 1 shallow clone. Subagent calls: 4 Sonnet (blind passes). No credentials used.
+
+## RD7 + print check (4 Oct 2026)
+Worker A3V2-ES7 (account 3, for LANE-A3V2; brief `.claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md`), 04:56-05:0x UTC by `date -u`. A fresh session: nothing in this folder had been seen before, and NOTES.md, `reading_*.txt` and `test*_result.json` were not opened until the re-derivation was done.
+**Rule 7 (full write-up: `RD7-2026-10-04.md`).** The folder was copied to the scratchpad without NOTES.md, the readings and the result JSONs; `test0.py`, `test1.py`, `test2.py` were run there from `key.tsv` and the committed `ciphertext_*.tsv` alone, then `--check` on each in the real folder (all three: `OK: committed outputs match`, exit 0). Token-by-token diff of the fresh readings against the committed ones, per line:
+| page | tokens | identical | differing | M (committed) | U (committed) | verdict |
+|---|---|---|---|---|---|---|
+| f.89r | 445 | 445 | 0 | 410 | 35 | SAME |
+| f.89v | 428 | 428 | 0 | 386 | 42 | SAME |
+| f.90r | 494 | 494 | 0 | 429 | 65 | SAME |
+| f.90v | 453 | 453 | 0 | 405 | 48 | SAME |
+| f.91r | 120 | 120 | 0 | 113 | 7 | SAME |
+| f.119r | 363 | 363 | 0 | 330 | 33 | SAME |
+| f.119v upper | 212 | 212 | 0 | 187 | 25 | SAME |
+| f.119v lower | 184 | 184 | 0 | 160 | 24 | SAME |
+| f.120r | 143 | 143 | 0 | 129 | 14 | SAME |
+**rule-7 SAME 2842 of 2842**; every page differs by 0 tokens against an M count of 113-429, so none goes back. The three result JSONs and `reading_known.txt`/`reading_target.txt` are byte-identical as well. (The M column counts every key-decoded token; on the Teulet-printed lines the agreeing tokens are C in the result JSONs.) This says the committed readings are what the committed key and transcriptions produce; it says nothing about transcription accuracy (err_2reader 9.8-18.4% per page), the nomenclature (U) or novelty (rule 10).
+**Print check.** `phrases.txt`: one positive control printed by Teulet ("no conviene determinarnos sin mucho fundamento", f.119v lower) and 11 phrases from the unprinted paragraphs, joined into words by this worker from the M-graded syllables. `sources.tsv`: IA relationspolitiq05teul (Teulet vol.5), labibliothque01gach (Gachard 1875), antonioperezetph00mign (Mignet 1846). `python3 tools/print_check.py ciphers/es132-vargas-mexia-1578 --max-requests 150`, 04:59-05:0x UTC, summary pasted:
+```
+12 phrases, 3 listed sources: 96 rows, 30 with hits -> ciphers/es132-vargas-mexia-1578/print-check.tsv
+requests: archive.org 3, be-api.us.archive.org 24, www.googleapis.com 12, api.openalex.org 12, api.semanticscholar.org 3, api.crossref.org 12
+  api.semanticscholar.org: blocked: HTTP 429 on .../graph/v1/paper/search?...query="andamientos y pretension"
+```
+What the 30 hit rows are (`print-check.tsv`, read row by row; 3 further be-api snippet calls by this worker):
+- Control: "no conviene determinarnos sin mucho fundamento" found in Teulet (ia-global relationspoliti04teulgoog; Google Books 7 copies of Relations politiques 1862). The listed Teulet djvu itself answered HTTP 500 on archive.org/download (as on 3-4 Oct), so the ia-global route is what found it.
+- "el de Alanzon y el de Bearne": 1 IA item + 2 Google Books copies, Cabrera de Cordoba, Don Filipe el prudente (1625): narrative prose ("El de Alanzon, y el de Bearne estuvieron ... a lo menos mirados"), not a letter text.
+- "tan injusta y de tan mal nombre": 9 IA items + 30 Google Books, all CODOIN/Semanario erudito copies of one passage ("una novedad tan injusta y de tan mal nombre y estimacion, como seria dexar ...", CODOIN vol. 103 Correspondencia de los principes de Alemania): a stock chancery phrase in another document, not this letter.
+- "sobre lo de las piraterias" (Bibliografia militar de Espana 1876; "Anos 1568-1571" 1952), "lo que toca a la navegacion de las indias" (CODOIN, 7 items), "don Sancho de Leyva" (362 items: a person's name), "circunstancias que a esto tocan" / "se ha dado en esa villa a las predicas" / "se han atrevido a introduzir" / "prohibir de veras y castigar con rigor" (Google Books only, 13-351 volumes each, common phrases): none names Vargas Mexia, Espagnol 132 or a 1578 letter in its snippet or title.
+- ia-global no hits: "andamientos y pretension", "circunstancias que a esto tocan", "prohibir de veras y castigar con rigor", "se ha dado en esa villa a las predicas", "se han atrevido a introduzir", "con las palabras que me parescio convenir". Gachard and Mignet djvu texts: no hits on any phrase. OpenAlex: only "don Sancho de Leyva" (18 works about the person). CrossRef: relevance noise only. Semantic Scholar: 2 phrases answered (noise), then 429 (keyed; its 1 request/s pool), 10 phrases not searched. Google Books: "lo que toca a la navegacion de las indias" not searched (HTTP 503).
+These are search results on this date by this method, not a novelty verdict (rule 10); the verifier's families (b)-(g) are still owed. Not found: any print of the unprinted paragraphs' wording by this method.
+Requests: archive.org 3 (djvu downloads; Teulet 500), be-api.us.archive.org 27 (24 by the tool + 3 snippet calls), www.googleapis.com 12 (keyed, country=US), api.openalex.org 12 (keyed), api.semanticscholar.org 3 (keyed, 429 after 2), api.crossref.org 12; gallica.bnf.fr 0. Subagent calls: 0. No credentials printed.
