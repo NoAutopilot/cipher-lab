@@ -448,3 +448,49 @@ Verdict: keep going: 5 internal gaps; cheapest next: text-check the date-only Du
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 5 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Family atlas c510-516 + c262 (LANE-RUN2 RUN2-NXATL, account 1, 4 Oct 2026, from 02:46 UTC)
+
+Full report: `run2/nxatl/REPORT.md`. No decode, no Dupuy alignment, no key.tsv on c510-516 (wave 2 stays blind).
+- Native f510-f516 fetched once (7 Gallica requests); lines cut with `tools/iiif_lines.py --follow-slope 300` and `--centres`
+  from each block's left 600 px (output in `run2/nxatl/iiif_lines_out.txt`; overlays checked, one row per band).
+- Clear text: c510 L01-L04 + the first 22 tiles of L05 ("Jours au paravant La reception d'icelle que"): cipher starts c510 L05.
+  c516 has no clear lead-in: L04-L05 are a clear passage inside the cipher, L20-L23 the clear closing and subscription
+  ("vj^e de Juillet 1574"); L19 may end in a short clear tail (kept, flagged M).
+- `tools/glyph_atlas.py segment` per strip + one-line/overlap/intrusion filter; sizes in leaf units. **Segmentation check on c262:
+  403 tiles vs 384 reconciled signs (1.05), every line within 25% (0.84-1.14)** -- in-sample (the filter was chosen on c262).
+- **Count of c510-516: 253 cipher lines, 9,904 tiles, ~9,440 signs at c262's tile/sign ratio** (FT-D estimated 9,750).
+  Per leaf in `run2/nxatl/sign_counts.tsv`.
+- Cluster k=120 (over-split), marks k=24; `classify --topk 3` with cluster ids as labels (kNN = own cluster 90.9%).
+  `run2/nxatl/sequences.tsv` = every tile in reading order with cluster and top-3 cluster ids -- the second instrument for
+  RUN2-NXALN (no reader names a sign).
+- Provisional names from c262 tile positions (hard-EM NW alignment to `witness/c262rc_recon.tsv`, grade M):
+  74 of 120 clusters named, 17 with support >= 3 and purity >= 0.6; weighted purity 0.593 vs 0.311-0.356 with cluster ids
+  shuffled (20 seeds; descriptive, not a gate). `run2/nxatl/cluster_provisional_names.tsv`.
+- Exemplar sheets (sorter-ready): `run2/nxatl/sheets/atlas_k*.jpg`, 20 clusters x 12 exemplars per image.
+- Rule 7: `bash run2/nxatl/regen.sh WORK --check` (exact against `source_manifest.json` sha1s; Gallica re-encoded c513/c514
+  on a second fetch, so a refetch runs a 1% tile-count check -- c513 1,625 -> 1,621, the rest identical).
+
+## Remaining gaps (RUN2-NXATL, 4 Oct 2026)
+Read so far: c510-516 segmented whole (253 cipher lines, 9,904 tiles in 120 clusters); c262 block aligned to its reconciled labels; 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (c262 split 31%, c510 39% per RUN2-NXTA) - blocker: not-attempted; atlas and exemplar sheets now exist (RUN2-NXATL); next: account 3 publishes the sorter from run2/nxatl (sheets + clusters.tsv) with run2/nxta/focus.tsv and the person settles the clusters, then blind passes against settled labels, ~$2 to publish
+- c510-516 known-plaintext pair with Dupuy 521 221R-226R not yet used - blocker: not-attempted; wave 2 (RUN2-NXALN) after RUN2-NXDUP's clear text; next: pre-registered alignment of run2/nxatl/sequences.tsv (cluster ids) and the wave-1 blind passes to the Dupuy text, ~$5
+- c511 not transcribed by readers (segmented only, run2/nxatl) - blocker: not-attempted; RUN2-NXTA judged the table-image pass not worth a second leaf at ~40% error; next: two passes against settled sorter labels once they exist, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; not in this brief; next: one native look per pair at the clear lead-in words, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; not in this brief; next: grep Charrière III and the Lepanto relations for its clear opening, ~$1
+
+## Escalation (RUN2-NXATL, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] clear-pages: Dupuy 521 indexed and aligned by date; c510-516 text-confirmed against Dupuy 221R-226R (RUN1-NX)
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); c510-516 native line bands with --follow-slope, overlays checked (RUN2-NXATL)
+- [ ] retry: known-answer with settled glyph labels or cluster ids on c510 against Dupuy 221R; planned step: RUN2-NXALN (wave 2)
+Verdict: keep going: 5 internal gaps; cheapest next: text-check the date-only Dupuy matches, ~$1; the c510-516 alignment is wave 2
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXATL):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
