@@ -86,7 +86,11 @@ async function hold(page, locator, ms = 650) {   // press and hold, then let go
   await touchOrMouse(page, 'down', x, y); await page.waitForTimeout(ms); await touchOrMouse(page, 'up', x, y); await page.waitForTimeout(150);
 }
 async function drag(page, from, to) {            // drag one element onto another, in small steps
-  await to.evaluate(e => e.scrollIntoView({ block: 'center' })); await page.waitForTimeout(150);   // not under a sticky header
+  await to.evaluate(e => e.scrollIntoView({ block: 'center' })); await page.waitForTimeout(150);
+  await to.evaluate(e => { for (let i = 0; i < 20; i++) {   // centred may still sit under a frozen header (phone step 2): scroll until the centre is the element's own
+    const r = e.getBoundingClientRect(), h = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+    if (!h || e.contains(h)) return; window.scrollBy(0, -60); } });
+  await page.waitForTimeout(100);
   const a = await from.boundingBox(), b = await to.boundingBox();
   const x0 = a.x + a.width / 2, y0 = a.y + a.height / 2, x1 = b.x + b.width / 2, y1 = b.y + b.height / 2;
   await touchOrMouse(page, 'down', x0, y0);

@@ -616,7 +616,7 @@ function cardDrag(h, pid){
     const g = document.createElement('div'); g.className = 'ghost pileghost'; g.textContent = pid + ' (' + membersOf(pid).length + ')'; document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 40) + 'px'; d.ghost.style.top = (d.y - 20) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pid) c.classList.add('over'); d.over = c; } };
-  const loop = () => { if (!d) return; const top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 40;
+  const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
   h.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
     if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
@@ -644,7 +644,7 @@ function picDrag(im, sid){
     const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pileOf(sid)) c.classList.add('over'); d.over = c; } };
-  const loop = () => { if (!d) return; const top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 40;
+  const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
   im.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
     if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
@@ -677,7 +677,7 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
 (function(){
   const tile = $('s2Tile'); let drag = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
-  const loop = () => { if (!drag) return; const y = drag.y, top = Math.max(barBottom(), $('s2Stick').getBoundingClientRect().bottom) + 8, bot = window.innerHeight - 50;
+  const loop = () => { if (!drag) return; const y = drag.y, top = barBottom() + 24, bot = window.innerHeight - 50;
     if (y > bot) window.scrollBy(0, Math.min(24, (y - bot) / 2 + 4)); else if (y < top) window.scrollBy(0, -Math.min(24, (top - y) / 2 + 4));
     mark(); drag.raf = requestAnimationFrame(loop); };
   const mark = () => { const c = cardAt(drag.x, drag.y); if (c !== drag.over){ if (drag.over) drag.over.classList.remove('over'); if (c) c.classList.add('over'); drag.over = c; } };
