@@ -518,3 +518,16 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53 (and 38, whose
 Verdict: keep going: 7 internal gaps; cheapest next: Kervyn (1884) grep, ~$1, then a lookalike pass on ink 54, ~$4
 
 Gate output (N5-VIV54, 4 Oct 2026): `OK keep-going fr16104-vivonne-spain-1572: keep going: 7 internal gap(s), 1 step(s) untried`; `tx/viv54_decode.py --check`: reading_piece54.tsv up to date
+
+## N6-KERV (4 Oct 2026, 10:3x UTC): Kervyn de Lettenhove, Les Huguenots et les Gueux, grep
+
+Route: archive.org advancedsearch (title + creator) listed 16 items; the six-volume set `leshuguenotsetle01kerv` .. `leshuguenotsetle06kerv` (1883-85) was fetched once as `_djvu.txt` to scratch (not committed), 6 downloads + 1 search = 7 requests to archive.org, >= 2 s apart. Greps: "Gouard", "Saint-Gouard", "déchiffr", "chiffr", "5/7/8/9/10 septembre 1572", "10 octobre 1573" (and 8-11 octobre 1573), "Vivonne", "16104". Hits by volume ("Gouard" lines): v1 0, v2 31, v3 81, v4 11, v5 2, v6 21. The Google Books hit for "saint gouard septembre 1572 chiffre" is accounted for: it is the Saint-Gouard material in v3 ch. 1, "Après la Saint-Barthélemy" (leaf context lines 350-450 of the v3 djvu text).
+
+Found:
+- Kervyn quotes and cites Saint-Gouard letters dated 2 Sept 1572 (v3, note on Huguenot risings), 12 Sept 1572 (cited "Gachard, La Bibl. Nat. de Paris, t. II, p. 395"), 19 Sept 1572 (to Catherine, to the duc d'Anjou, and to the king; also "Groen, Suppl. p. 127"), then 15 Nov and 17 Nov 1572, 6 Jan, 22 Feb, 10 Mar (Gachard II p. 419), 6 Apr, 8 Jun, 9/17/30 Jul, 13/18 Aug, 20 Oct, 3 Nov 1573, and 1574 letters. Quote (v3, ch. 1): "il y joignit une lettre pour le duc d'Anjou où il glorifiait sa main et sa tête" (19 Sept 1572, to Anjou).
+- He cites printed or archive copies (Gachard II, Groen, Arch. Nat. K. series, Simancas), not fr.16104 or any BnF fonds-français shelfmark; "Vivonne" and "16104" do not occur in the volumes' text as grepped.
+- "chiffr" hits in v2-v6 concern other correspondents (Walsingham, Dale, Mansfeld, Marnix, d'Esquerdes, Espinosa); none is a Saint-Gouard cipher passage and none summarises a decipherment of a Saint-Gouard letter.
+
+Not found: no passage in Kervyn's text dated 5 Sept or 7 Sept 1572 from Saint-Gouard (ink 53's date is 5 Sept; the nearest cited letters are 2 and 12 Sept), none dated 10 Oct 1573 (ink 63; nearest are 20 Oct and 3 Nov 1573), and nothing that prints or summarises inks 52, 53, 54 or 63 as a decipherment. Limits: OCR of one edition only; a variant date or a paraphrase without a date would not be caught by these greps; the volumes' index pages were not read. This is a search result for the log, not a novelty verdict (rule 10).
+
+Follow-up (one line, not run): the 19 Sept 1572 and 12 Sept 1572 letters Kervyn cites are in Gachard II (already on file, `labibliothquen02gachuoft`) at p. 395 ff.; a page check there is the cheaper route to what Kervyn's 12 Sept note rests on.
