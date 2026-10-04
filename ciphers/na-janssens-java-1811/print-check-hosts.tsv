@@ -1,6 +1,6 @@
 host	requests	status
 api.crossref.org	2	ok
-api.openalex.org	18	ok
-api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22a%20deux%20cent%20lieues%20de%20Batavia%22
-be-api.us.archive.org	17	ok
-www.googleapis.com	17	ok
+api.openalex.org	9	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22l%27ancien%20Gouverneur%20G%C3%A9n%C3%A9ral%20l%27%C3%A9tat%20des%22
+be-api.us.archive.org	8	ok
+www.googleapis.com	8	ok

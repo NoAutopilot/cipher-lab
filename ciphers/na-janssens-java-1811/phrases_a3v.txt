@@ -1,0 +1,9 @@
+# A3V-VJAN (verifier, 4 Oct 2026): runs from the leaf 188 reading (reading.txt), C-graded tokens only, spelling folded to standard French
+l'ancien Gouverneur Général l'état des
+les ressources sont épuisées
+l'armée n'a pillé
+le débarquer des
+de leur mal si j'en ai
+l'ancien Gouverneur Général par
+des vaisseaux tous les
+peuvent sauver l'Isle de Java

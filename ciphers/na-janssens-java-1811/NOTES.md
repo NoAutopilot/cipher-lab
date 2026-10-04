@@ -1117,7 +1117,7 @@ footnotes a Janssens dispatch as "... 1811, no 2" -- a French work citing the nu
 may quote No.1 -- not on archive.org (advancedsearch creator/title 0) nor found on Gallica (SRU title query, 1 request),
 and books.google.com page view is blocked from the cloud (CLAUDE.md hosts table): **unreachable**, named in the gaps
 section as the print step's next action (a LOCAL-QUEUE row); and *Archipel* (1971) citing Janssens material in AN AF IV
-1722, the Paris side already queued as LOCAL-QUEUE L31 (gap 4, waiting). The De Jonge *Opkomst* series ends before 1811
+1722, the Paris side already queued as LOCAL-QUEUE L31 (gap 4, waiting). The De Jonge *Opkomst* series ends before 1811 [A3V-VJAN correction, 4 Oct 2026: wrong -- Opkomst deel XIII (1888, ed. Van Deventer) prints Janssens' letters of 16 and 21 June, 29 Aug and 5 Oct 1811 and quotes the No.4 and No.5 cipher dispatches; see AUDIT.md]
 (Van Deventer's 1891 volume is its continuation, read above). Rule 10: these are search results, not a novelty verdict.
 
 **Verdict: no decipherment or print of leaf 188 found by (a)-(d); clear to run the clear-pages step.** Requests this
@@ -1890,3 +1890,13 @@ agreement, one digit fixed -- and can be marked [x] citing `split188_passA.tsv`/
 `corrections.tsv`. PROGRESS.tsv row "Janssens Java" still reads 86/163 and should read 88/163 (C 63 M 25 U 75,
 source this file); left for GAPS2 or the parent so two workers do not write the same row in the same hour. The
 leaf-198-vs-199/200 digit cross-check named in the same Escalation row is untouched.
+
+## Verifier audit (A3V-VJAN, 4 Oct 2026)
+
+AUDIT.md section 1: leaf 188 classed **N1**, key source period. O. Collet, *L'île de Java sous la domination française*
+(Paris 1910), pp. c.407-408 (Google Books API snippet, ids -BCyBiSVklAC / uz1BAQAAMAAJ) quotes "une lettre chiffrée du 22
+juin" of Janssens: "L'ancien gouverneur général présentera les choses bien différemment ... Il part, chargé de trésors et
+de la malédiction" -- leaf 188 lines 1 and 10-11. So No.1 is the cipher letter of 22 June 1811 and part of its plaintext
+is in print; the premise check's "no decipherment or print of leaf 188 found" is superseded. Van Deventer, Opkomst XIII
+(1888), pp. CXXIX and CXXXIII n.2, quotes No.4 and No.5. Crib values suggested by Collet's text for unkeyed codes are in
+AUDIT.md section 4 ("found, not applied"); the next solver step is the full Collet page (LOCAL-QUEUE L35).
