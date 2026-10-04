@@ -27,7 +27,8 @@ def use(norm):
 
 
 def l4only(key):
-    return ra.L4("".join(key[s] for s in ra.SEQ))
+    # a sign absent from a leaf stream (e.g. a one-token sign on the dropped leaf) keeps its key.tsv value for scoring
+    return ra.L4("".join(key.get(s, TRUE[s]) for s in ra.SEQ))
 
 
 def rank():
@@ -211,11 +212,15 @@ def lolo_one(args):
     fixed = {s: v for s, v in TRUE.items() if s not in free}
     init = dict(ra.PLANT) if arm == "ctl" else None
     seq = leaf_stream(drop); t0 = time.time()
-    sc, key = ha.solve(seq, ra.G["model"], ra.RESTARTS, ra.ITERS, 1, 1.0, fixed=fixed, init=init, norm="none")[0]
-    with open(os.path.join(OUT, f"key_lolo_{arm}_{drop}.tsv"), "w") as f:
-        f.write("sign\tvalue\n" + "".join(f"{s}\t{key[s]}\n" for s in sorted(key)))
+    kp = os.path.join(OUT, f"key_lolo_{arm}_{drop}.tsv")
+    if os.path.exists(kp):  # saved by a run that crashed in its scoring line (15:38 UTC KeyError, fixed in l4only); reuse
+        key = dict(r.split("\t") for r in open(kp).read().splitlines()[1:]); sc = float("nan")
+    else:
+        sc, key = ha.solve(seq, ra.G["model"], ra.RESTARTS, ra.ITERS, 1, 1.0, fixed=fixed, init=init, norm="none")[0]
+        with open(kp, "w") as f:
+            f.write("sign\tvalue\n" + "".join(f"{s}\t{key[s]}\n" for s in sorted(key)))
     return [time.strftime("%Y-%m-%d %H:%M", time.gmtime()), arm, drop, len(seq), f"{sc:.1f}", f"{l4only(key):.5f}",
-            " ".join(f"{s}={key[s]}" for s in ra.PLANT), sum(1 for s in free if key[s] != TRUE[s]), f"{time.time()-t0:.0f}s"]
+            " ".join(f"{s}={key.get(s, '-')}" for s in ra.PLANT), sum(1 for s in free if key.get(s, TRUE[s]) != TRUE[s]), f"{time.time()-t0:.0f}s"]
 
 
 def lolo_run(arm, procs):
@@ -242,8 +247,8 @@ def lolo_score(arm, procs):
     keys = [dict(r.split("\t") for r in open(os.path.join(OUT, f"key_lolo_{arm}_{d}.tsv")).read().splitlines()[1:]) for d in LEAVES]
     cons = {}
     for s in free:
-        c = Counter(k[s] for k in keys); v, n = c.most_common(1)[0]; cons[s] = (v if n >= NLOLO else None, n, dict(c))
-    kstar = dict(keys[0]); kstar.update({s: c[0] for s, c in cons.items() if c[0]})
+        c = Counter(k[s] for k in keys if s in k); v, n = c.most_common(1)[0]; cons[s] = (v if n >= NLOLO else None, n, dict(c))
+    kstar = dict(TRUE); kstar.update(keys[0]); kstar.update({s: c[0] for s, c in cons.items() if c[0]})
     cnt = Counter(ra.SEQ); plan = []; jobs = []
     for s in free:
         A = ra.PLANT[s] if (arm == "ctl" and s in ra.PLANT) else TRUE[s]; B = cons[s][0]; k = dict(kstar)

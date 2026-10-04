@@ -1744,6 +1744,7 @@ the nc2 normalisation) each destroyed the signal in a different way, and the rea
 | D4 synth.tsv | **same-design synthetic control**: held-out fr17 text (the W-calibration passage), N=3375, one synthetic sign per key.tsv sign, the same homophone sets and per-sign token shares, letters the design lacks (b k w z after fold) one extra held sign each, the same 19 held / 32 free (a/p/d planted at e), stage 1 only (fr17 4-gram, 32 restarts, 40000 iters), 3 seeds | **32/32 free signs right, 100% of letters, planted 3/3, on all three seeds** (identical score -5834.0: one basin = the truth). 50% of tokens free is not too many for a 4-gram anneal at this N on French of this design |
 | D5 stage1.tsv | the PREREG's stage 1 alone on the **real** control arm, seed 1 (reanneal.py never saved this key; score -9268.7 reproduces runs.tsv) | **planted 3/3 recovered: a=u p=c d=n.** 20 of the 29 free M/S signs move away from key.tsv (ls e>m, o n>m, L n>d, iib l>d, vdash t>d, S u>n ...); L4 -2.666 |
 | D6 noise.tsv | error bracket (rule 3, SALV-DIAG shape): L4 of genuine French at N=3375 with a share q of signs misread | q=0 -1.72, 5% -2.12, 8.4% -2.36, 10% -2.44, 14.6% -2.67, 20% -2.97, shuffled -3.58. The anneal's optimum on the real stream (-2.63/-2.67) scores like French with about 14% of signs misread; key.tsv (-2.80) like 17%; the measured two-reader error is 0.084-0.10 (c188L, c185R) |
+| D7 blind.tsv | nothing held: the order-4 anneal on the real stream with all 49 signs free, seed 1 | L4 -2.797 -- no better than key.tsv (-2.796) and worse than the held anneal (-2.67); agrees with key.tsv on 3 of the 17 control-arm held signs and 6 of 32 free. A different, equally poor basin: the held C/S values *help* the objective, and no homophonic key found brings the stream near French |
 
 Reading. (1) The 0/3 at norm none was stage 2: the cover term prefers i for p even in the true context (D2) and the
 i-run vocabulary then collapsed 5 of 10 seeds (C1161RA's own finding); stage 1 had already recovered 3/3 (D5). (2) The 0/3
@@ -1752,7 +1753,7 @@ so the planted e's were rejected (SCORE-NC2's "e rejected" rows) but no letter w
 carries no information" worry that named the leave-one-leaf-out step is the signature of a working solver, not a defect:
 the synthetic's three seeds also share one basin, and it is the truth. (4) What remains is not a search problem: the plain
 4-gram optimum on the real stream moves 20 of 29 free signs off key.tsv (D5) and still scores like French at ~14% misread
-(D6), with the 19 C/S signs held. key.tsv's M values came from a noise-0.10 fr16 order-3/4 blind anneal of one seed
+(D6), with the C/S signs held (D7: held beats blind by 0.13 per letter). key.tsv's M values came from a noise-0.10 fr16 order-3/4 blind anneal of one seed
 (key.tsv source column), which the two-instrument and 10-seed consensus tests graded as a family, not per sign; D1-D3 say the
 order-4 fr17 objective does not endorse them, and the truth-start drift (D3) says they are not a stable reading under it.
 Which of key.tsv and the anneal optimum is nearer the text cannot be told from the stream alone: neither reaches French at
