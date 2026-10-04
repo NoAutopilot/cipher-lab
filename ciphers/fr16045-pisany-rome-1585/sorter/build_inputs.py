@@ -108,60 +108,66 @@ def norm(x):
     return x.rstrip('?')
 
 
-draft = defaultdict(list)
-for r in csv.DictReader(open(T / 'tx' / 'ciphertext_draft.tsv'), delimiter='\t'):
-    a = norm(r['sign']) or 'UNREAD'
-    if r['why'] == 'agree':
-        draft[r['line']].append(('agree', a, a))
-    else:
-        who, other = r['alt'].split(':', 1); other = norm(other) or 'UNREAD'
-        A, B = (a, other) if who == 'B' else (other, a)
-        draft[r['line']].append(('gap' if r['why'] == 'gap' else 'differ', A, B))
-pairs = Counter((A, B) for v in draft.values() for k, A, B in v if k == 'differ')
-ones = Counter((A if A != '-' else B) for v in draft.values() for k, A, B in v if k == 'gap')
-signs, labels, cand, stats = [], [], defaultdict(list), []
-for n, tr in enumerate(traces(), 1):
-    page = f'f75_L{n:02d}'; line = f'L{n:02d}'
-    y0 = max(0, int(tr.min() - .75 * PITCH)); y1 = min(H, int(tr.max() + .75 * PITCH))
-    src.crop((0, y0, W, y1)).save(P / f'{page}.jpg', quality=82)
-    ty = np.arange(H)[:, None]; cen = tr[None, :]
-    core = ink & (np.abs(ty - cen) < .40 * PITCH); zone = ink & (np.abs(ty - cen) < .60 * PITCH)
-    bl = blobs(core); cols = draft[line]; boxes = fit(bl, len(cols), smooth(core.sum(0), 5))
-    stats.append((page, len(bl), len(cols)))
-    for k, ((kind, A, B), (x0, x1)) in enumerate(zip(cols, boxes), 1):
-        sid = f'{page}_{k:02d}'
-        ys = np.where(zone[:, x0:x1 + 1].sum(1) > 0)[0]
-        ty0, ty1 = (int(ys.min()), int(ys.max())) if len(ys) else (y0, y1 - 1)
-        signs.append(dict(sid=sid, page=page, x=x0, y=ty0 - y0, w=x1 - x0 + 1, h=ty1 - ty0 + 1))
-        if kind == 'agree':
-            lab = fam = A
-        elif kind == 'differ':
-            lab = f'{A}/{B}' if pairs[(A, B)] >= MINPAIR else 'split-rare'; fam = A
-            cand[(A, B)].append(sid)
+def main():
+    global signs, labels
+    draft = defaultdict(list)
+    for r in csv.DictReader(open(T / 'tx' / 'ciphertext_draft.tsv'), delimiter='\t'):
+        a = norm(r['sign']) or 'UNREAD'
+        if r['why'] == 'agree':
+            draft[r['line']].append(('agree', a, a))
         else:
-            one = A if A != '-' else B; lab = f'{one}+1r' if ones[one] >= MINPAIR else 'one-reader'; fam = one
-        labels.append(dict(sid=sid, sign=lab, family=fam))
+            who, other = r['alt'].split(':', 1); other = norm(other) or 'UNREAD'
+            A, B = (a, other) if who == 'B' else (other, a)
+            draft[r['line']].append(('gap' if r['why'] == 'gap' else 'differ', A, B))
+    pairs = Counter((A, B) for v in draft.values() for k, A, B in v if k == 'differ')
+    ones = Counter((A if A != '-' else B) for v in draft.values() for k, A, B in v if k == 'gap')
+    signs, labels, cand, stats = [], [], defaultdict(list), []
+    for n, tr in enumerate(traces(), 1):
+        page = f'f75_L{n:02d}'; line = f'L{n:02d}'
+        y0 = max(0, int(tr.min() - .75 * PITCH)); y1 = min(H, int(tr.max() + .75 * PITCH))
+        src.crop((0, y0, W, y1)).save(P / f'{page}.jpg', quality=82)
+        ty = np.arange(H)[:, None]; cen = tr[None, :]
+        core = ink & (np.abs(ty - cen) < .40 * PITCH); zone = ink & (np.abs(ty - cen) < .60 * PITCH)
+        bl = blobs(core); cols = draft[line]; boxes = fit(bl, len(cols), smooth(core.sum(0), 5))
+        stats.append((page, len(bl), len(cols)))
+        for k, ((kind, A, B), (x0, x1)) in enumerate(zip(cols, boxes), 1):
+            sid = f'{page}_{k:02d}'
+            ys = np.where(zone[:, x0:x1 + 1].sum(1) > 0)[0]
+            ty0, ty1 = (int(ys.min()), int(ys.max())) if len(ys) else (y0, y1 - 1)
+            signs.append(dict(sid=sid, page=page, x=x0, y=ty0 - y0, w=x1 - x0 + 1, h=ty1 - ty0 + 1))
+            if kind == 'agree':
+                lab = fam = A
+            elif kind == 'differ':
+                lab = f'{A}/{B}' if pairs[(A, B)] >= MINPAIR else 'split-rare'; fam = A
+                cand[(A, B)].append(sid)
+            else:
+                one = A if A != '-' else B; lab = f'{one}+1r' if ones[one] >= MINPAIR else 'one-reader'; fam = one
+            labels.append(dict(sid=sid, sign=lab, family=fam))
 
 
-def ingroup(p):
-    return any(p[0] in g and p[1] in g for g in GROUPS)
+    def ingroup(p):
+        return any(p[0] in g and p[1] in g for g in GROUPS)
 
 
-order = sorted(pairs, key=lambda p: (not ingroup(p), -pairs[p]))
-focus = []
-for A, B in order:
-    sids = cand[(A, B)]; step = max(1, len(sids) // PER_PAIR)
-    for sid in sids[::step][:PER_PAIR]:
-        tag = ' (confusable group named by both readers)' if ingroup((A, B)) else ''
-        focus.append((sid, f'{sid.split("_", 1)[1]}: reader A {A}, reader B {B} (x{pairs[(A, B)]} on the page){tag}; which, or another sign?'))
-    if len(focus) >= NFOCUS:
-        break
-for name, rows in (('signs.tsv', signs), ('labels.tsv', labels)):
-    with open(S / name, 'w', newline='') as o:
-        w = csv.DictWriter(o, fieldnames=list(rows[0]), delimiter='\t'); w.writeheader(); w.writerows(rows)
-with open(S / 'focus.tsv', 'w') as o:
-    for sid, q in focus[:NFOCUS]:
-        o.write(f'{sid}\t{q}\n')
-with open(S / 'fit.tsv', 'w') as o:
-    o.write('page\tblobs\tcolumns\n'); o.writelines(f'{p}\t{b}\t{c}\n' for p, b, c in stats)
-print(len(signs), 'tiles;', len(stats), 'pages;', len(set(l['sign'] for l in labels)), 'piles;', len(focus[:NFOCUS]), 'focus tiles')
+    order = sorted(pairs, key=lambda p: (not ingroup(p), -pairs[p]))
+    focus = []
+    for A, B in order:
+        sids = cand[(A, B)]; step = max(1, len(sids) // PER_PAIR)
+        for sid in sids[::step][:PER_PAIR]:
+            tag = ' (confusable group named by both readers)' if ingroup((A, B)) else ''
+            focus.append((sid, f'{sid.split("_", 1)[1]}: reader A {A}, reader B {B} (x{pairs[(A, B)]} on the page){tag}; which, or another sign?'))
+        if len(focus) >= NFOCUS:
+            break
+    for name, rows in (('signs.tsv', signs), ('labels.tsv', labels)):
+        with open(S / name, 'w', newline='') as o:
+            w = csv.DictWriter(o, fieldnames=list(rows[0]), delimiter='\t'); w.writeheader(); w.writerows(rows)
+    with open(S / 'focus.tsv', 'w') as o:
+        for sid, q in focus[:NFOCUS]:
+            o.write(f'{sid}\t{q}\n')
+    with open(S / 'fit.tsv', 'w') as o:
+        o.write('page\tblobs\tcolumns\n'); o.writelines(f'{p}\t{b}\t{c}\n' for p, b, c in stats)
+    print(len(signs), 'tiles;', len(stats), 'pages;', len(set(l['sign'] for l in labels)), 'piles;', len(focus[:NFOCUS]), 'focus tiles')
+
+
+if __name__ == '__main__':
+    main()

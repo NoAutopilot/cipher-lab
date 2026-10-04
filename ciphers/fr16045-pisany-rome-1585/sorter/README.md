@@ -40,3 +40,24 @@ the other most frequent splits (S48/S21 x25, S64/S20 x13, ...).
 Apply after the owner's pass: `ArtifactData list` for piles/moves/newpiles, then
 `python3 tools/sign_sorter_apply.py --labels sorter/labels.tsv --db DIR --out sorter/settled_labels.tsv --summary sorter/summary.json`
 (from this folder). Then re-run `test1.py` unchanged on the settled f.75 transcription (NOTES.md "Remaining gaps", 1585 letters row).
+
+## v3 re-cut (PIS-RECUT, 4 Oct 2026): one tile = one sign, straight lines
+
+Owner, on the v2 page: many tiles straddled two signs or cut one in half (f75_L08_02 = looped l + b), because v2 fitted
+ink-profile blobs to the readers' column COUNT; and the sloping lines put the line above in the context strip. `recut.py`
+(docstring has the method) replaces `build_inputs.py` + `tighten_tiles.py` in `build.sh`:
+- **Deskew.** Each line strip is sheared along `build_inputs.traces()`, re-centred per 300 px window on the strip's own
+  row-ink peak (the v2 trace sat ~50 px high on L08), so `pages/f75_L<nn>.jpg` (241 px tall, full region width) is one
+  straight line and the context view's lines above/below are the right ones.
+- **Tiles from the sign's own ink**: connected components owned by the line, x-overlapping strokes joined (pairwise),
+  groups wider than 1.45 x the line's median sign width split at column-ink minima. Over-splits a little on purpose
+  (dots stay their own tile). 1,290 tiles, 44-72 per line, vs the readers' 46-55 columns (`fit_recut.tsv`); v2 had
+  1,115 tiles fitted to the column count from 16-41 ink blobs (`fit.tsv`).
+- **Starting piles, value-blind**: tiles and reader columns (positioned at the v2 tile centres) aligned in x order by DP;
+  1,067 tiles within 30 px of a column take that column's pile (same names as v2). The other 223 start in the pile
+  their shape cluster (k-means, 60 clusters over the page, `clusters.tsv`) mostly holds; the focus box (40) is those,
+  most frequent shapes first, at most two per shape.
+- Spot check (20 random tiles, seed 20261004, eye on the overlay): 17/20 hold exactly one sign (one half sign, one
+  half X, one d+3 pair). Build: 59 piles, 1,290 tiles, 2.0 MB page; sorter browser tests run on it.
+- The v2 cut is kept for the record: `signs_v2.tsv`, `signs_tight_v2.tsv`, `labels_v2.tsv`, `focus_v2.tsv` (their x/y refer
+  to the v2 sloped `pages/`, in git history before this commit). No owner moves were made on v2, so nothing to carry over.
