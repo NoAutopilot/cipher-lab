@@ -1,0 +1,1287 @@
+passage	pos	sign_id	conf	note
+f170v_L01	1	{curl}		passC
+f170v_L01	2	d		passC
+f170v_L01	3	y		passC
+f170v_L01	4	#		passC
+f170v_L01	5	tz		passC
+f170v_L01	6	P		passC
+f170v_L01	7	tz		passC
+f170v_L01	8	m		passC
+f170v_L01	9	L		passC
+f170v_L01	10	tz		passC
+f170v_L01	11	6		passC
+f170v_L01	12	m		passC
+f170v_L01	13	x		passC
+f170v_L01	14	#		passC
+f170v_L01	15	#		passC
+f170v_L01	16	d		passC
+f170v_L01	17	P		lookalike UNSETTLED
+f170v_L01	18	#		passC
+f170v_L01	19	:		passC
+f170v_L01	20	m		passC
+f170v_L01	21	y		passC
+f170v_L01	22	#		passC
+f170v_L01	23	P		passC
+f170v_L01	24	tz		passC
+f170v_L01	25	p		passC
+f170v_L01	26	P		passC
+f170v_L01	27	#		passC
+f170v_L01	28	P		passC
+f170v_L01	29	tz		passC
+f170v_L01	30	p		passC
+f170v_L01	31	{AF}		lookalike UNSETTLED
+f170v_L01	32	o		passC
+f170v_L01	33	p		passC
+f170v_L01	34	m		passC
+f170v_L01	35	o		passC
+f170v_L01	36	P		passC
+f170v_L01	37	y		passC
+f170v_L01	38	#		passC
+f170v_L01	39	d		passC
+f170v_L01	40	tz		passC
+f170v_L01	41	m		passC
+f170v_L01	42	p		passC
+f170v_L01	43	#		passC
+f170v_L01	44	tz		passC
+f170v_L01	45	P		passC
+f170v_L01	46	2		lookalike UNSETTLED
+f170v_L01	47	P		passC
+f170v_L01	48	tz		passC
+f170v_L01	49	d		passC
+f170v_L01	50	S	M	lookalike 2-of-3
+f170v_L01	51	P	H	lookalike 2-of-3
+f170v_L02	1	m		passC
+f170v_L02	2	x		passC
+f170v_L02	3	#		passC
+f170v_L02	4	y		passC
+f170v_L02	5	m		passC
+f170v_L02	6	P		passC
+f170v_L02	7	V		passC
+f170v_L02	8	m		passC
+f170v_L02	9	@		passC
+f170v_L02	10	{curl}	M	lookalike 2-of-3
+f170v_L02	11	d		passC
+f170v_L02	12	y		passC
+f170v_L02	13	#		passC
+f170v_L02	14	@		passC
+f170v_L02	15	d	M	lookalike 2-of-3
+f170v_L02	16	:	M	lookalike 2-of-3
+f170v_L02	17	:		passC
+f170v_L02	18	d		passC
+f170v_L02	19	P	H	lookalike 2-of-3
+f170v_L02	20	S		passC
+f170v_L02	21	P		passC
+f170v_L02	22	#		passC
+f170v_L02	23	y		passC
+f170v_L02	24	m		passC
+f170v_L02	25	#		passC
+f170v_L02	26	d		passC
+f170v_L02	27	r		passC
+f170v_L02	28	#		passC
+f170v_L02	29	m		passC
+f170v_L02	30	x		passC
+f170v_L02	31	V		passC
+f170v_L02	32	y		passC
+f170v_L02	33	m		passC
+f170v_L02	34	x		passC
+f170v_L02	35	{curl}	M	lookalike 2-of-3
+f170v_L02	36	d		passC
+f170v_L02	37	y		passC
+f170v_L02	38	:		passC
+f170v_L02	39	:		passC
+f170v_L02	40	m		passC
+f170v_L02	41	d		passC
+f170v_L02	42	z		passC
+f170v_L02	43	o		passC
+f170v_L02	44	o		passC
+f170v_L02	45	k		passC
+f170v_L02	46	o		passC
+f170v_L02	47	o		passC
+f170v_L02	48	:		passC
+f170v_L03	1	3		passC
+f170v_L03	2	P		passC
+f170v_L03	3	V		passC
+f170v_L03	4	y		passC
+f170v_L03	5	o		passC
+f170v_L03	6	o		passC
+f170v_L03	7	m		passC
+f170v_L03	8	:		passC
+f170v_L03	9	:		passC
+f170v_L03	10	7		passC
+f170v_L03	11	z	M	lookalike 2-of-3
+f170v_L03	12	P		passC
+f170v_L03	13	m		passC
+f170v_L03	14	y		passC
+f170v_L03	15	tz		passC
+f170v_L03	16	#		passC
+f170v_L03	17	d		passC
+f170v_L03	18	tz		passC
+f170v_L03	19	#		passC
+f170v_L03	20	x		passC
+f170v_L03	21	z		passC
+f170v_L03	22	z		passC
+f170v_L03	23	R		passC
+f170v_L03	24	@		passC
+f170v_L03	25	V		passC
+f170v_L03	26	#		passC
+f170v_L03	27	g	M	lookalike 2-of-3
+f170v_L03	28	m		passC
+f170v_L03	29	x		passC
+f170v_L03	30	S		passC
+f170v_L03	31	tz		passC
+f170v_L03	32	m		passC
+f170v_L03	33	p		passC
+f170v_L03	34	a		passC
+f170v_L03	35	r		lookalike UNSETTLED
+f170v_L03	36	y		passC
+f170v_L03	37	d		passC
+f170v_L03	38	p		passC
+f170v_L03	39	m		passC
+f170v_L03	40	p		passC
+f170v_L03	41	k		passC
+f170v_L03	42	a		passC
+f170v_L03	43	g	H	lookalike 2-of-3
+f170v_L03	44	P		passC
+f170v_L03	45	x		passC
+f170v_L04	1	o		passC
+f170v_L04	2	o		passC
+f170v_L04	3	m		passC
+f170v_L04	4	o		passC
+f170v_L04	5	o		passC
+f170v_L04	6	y		passC
+f170v_L04	7	p		passC
+f170v_L04	8	m		passC
+f170v_L04	9	d		passC
+f170v_L04	10	V	M	lookalike 2-of-3
+f170v_L04	11	o		passC
+f170v_L04	12	o		passC
+f170v_L04	13	S	H	lookalike 2-of-3
+f170v_L04	14	:		passC
+f170v_L04	15	:		passC
+f170v_L04	16	d		passC
+f170v_L04	17	t		passC
+f170v_L04	18	tz		passC
+f170v_L04	19	3		passC
+f170v_L04	20	P	H	lookalike 2-of-3
+f170v_L04	21	o		passC
+f170v_L04	22	o		passC
+f170v_L04	23	d		passC
+f170v_L04	24	tz		passC
+f170v_L04	25	#		passC
+f170v_L04	26	2		lookalike UNSETTLED
+f170v_L04	27	d		passC
+f170v_L04	28	p		passC
+f170v_L04	29	x		passC
+f170v_L04	30	#		passC
+f170v_L04	31	g		passC
+f170v_L04	32	m		passC
+f170v_L04	33	@		passC
+f170v_L04	34	m		passC
+f170v_L04	35	#		passC
+f170v_L04	36	y		passC
+f170v_L04	37	p		passC
+f170v_L04	38	m		passC
+f170v_L04	39	d		passC
+f170v_L04	40	#		passC
+f170v_L04	41	m		passC
+f170v_L04	42	y		passC
+f170v_L04	43	z		passC
+f170v_L04	44	P		passC
+f170v_L04	45	m		passC
+f170v_L05	1	z	M	lookalike 2-of-3
+f170v_L05	2	d		passC
+f170v_L05	3	p		passC
+f170v_L05	4	#		passC
+f170v_L05	5	tz		passC
+f170v_L05	6	6		passC
+f170v_L05	7	P		passC
+f170v_L05	8	o		passC
+f170v_L05	9	o		passC
+f170v_L05	10	d		passC
+f170v_L05	11	tz		passC
+f170v_L05	12	#		passC
+f170v_L05	13	a		passC
+f170v_L05	14	@		passC
+f170v_L05	15	m		passC
+f170v_L05	16	P		passC
+f170v_L05	17	d		passC
+f170v_L05	18	m		passC
+f170v_L05	19	:		passC
+f170v_L05	20	:		passC
+f170v_L05	21	d		passC
+f170v_L05	22	e		passC
+f170v_L05	23	n		passC
+f170v_L05	24	m		passC
+f170v_L05	25	p		passC
+f170v_L05	26	:		passC
+f170v_L05	27	:		passC
+f170v_L05	28	m		passC
+f170v_L05	29	2		lookalike UNSETTLED
+f170v_L05	30	m		passC
+f170v_L05	31	p		passC
+f170v_L05	32	#		passC
+f170v_L05	33	z		passC
+f170v_L05	34	m		passC
+f170v_L05	35	d		passC
+f170v_L05	36	#		passC
+f170v_L05	37	g		passC
+f170v_L05	38	d		passC
+f170v_L05	39	o		passC
+f170v_L05	40	o		passC
+f170v_L05	41	S		passC
+f170v_L05	42	6		passC
+f170v_L05	43	m		passC
+f170v_L05	44	d		passC
+f170v_L06	1	S	M	lookalike 2-of-3
+f170v_L06	2	P		passC
+f170v_L06	3	y		passC
+f170v_L06	4	4	M	lookalike 2-of-3
+f170v_L06	5	z		passC
+f170v_L06	6	m		passC
+f170v_L06	7	p		passC
+f170v_L06	8	#		passC
+f170v_L06	9	y	M	lookalike 2-of-3
+f170v_L06	10	p		passC
+f170v_L06	11	m		passC
+f170v_L06	12	L		passC
+f170v_L06	13	d		passC
+f170v_L06	14	z		passC
+f170v_L06	15	S	M	lookalike 2-of-3
+f170v_L06	16	o		passC
+f170v_L06	17	o		passC
+f170v_L06	18	g		passC
+f170v_L06	19	x		passC
+f170v_L06	20	P		passC
+f170v_L06	21	e		passC
+f170v_L06	22	g		passC
+f170v_L06	23	d		passC
+f170v_L06	24	p		passC
+f170v_L06	25	#		passC
+f170v_L06	26	tz		passC
+f170v_L06	27	m		passC
+f170v_L06	28	g		passC
+f170v_L06	29	m		passC
+f170v_L06	30	c		passC
+f170v_L06	31	l		passC
+f170v_L06	32	m		passC
+f170v_L06	33	x		passC
+f170v_L06	34	o		passC
+f170v_L06	35	m		passC
+f170v_L06	36	x		passC
+f170v_L06	37	:		passC
+f170v_L06	38	:		passC
+f170v_L06	39	y		passC
+f170v_L06	40	m		passC
+f170v_L06	41	L		passC
+f170v_L06	42	:		passC
+f170v_L06	43	:		passC
+f170v_L06	44	m		passC
+f170v_L06	45	a		passC
+f170v_L07	1	z		passC
+f170v_L07	2	m		passC
+f170v_L07	3	S		lookalike UNSETTLED
+f170v_L07	4	m		passC
+f170v_L07	5	x		passC
+f170v_L07	6	d		passC
+f170v_L07	7	a		passC
+f170v_L07	8	S		passC
+f170v_L07	9	tz		passC
+f170v_L07	10	m		passC
+f170v_L07	11	:		passC
+f170v_L07	12	:		passC
+f170v_L07	13	#		passC
+f170v_L07	14	@		passC
+f170v_L07	15	d		passC
+f170v_L07	16	o		passC
+f170v_L07	17	o		passC
+f170v_L07	18	P		passC
+f170v_L07	19	o		passC
+f170v_L07	20	o		passC
+f170v_L07	21	6		passC
+f170v_L07	22	#		passC
+f170v_L07	23	y		passC
+f170v_L07	24	m		passC
+f170v_L07	25	a		passC
+f170v_L07	26	x		passC
+f170v_L07	27	c	M	lookalike 2-of-3
+f170v_L07	28	m		passC
+f170v_L07	29	o		passC
+f170v_L07	30	o		passC
+f170v_L07	31	tz		passC
+f170v_L07	32	:		passC
+f170v_L07	33	o		passC
+f170v_L07	34	P		passC
+f170v_L07	35	g		passC
+f170v_L07	36	:		passC
+f170v_L07	37	:		passC
+f170v_L07	38	7		passC
+f170v_L07	39	L		passC
+f170v_L07	40	:		passC
+f170v_L07	41	:		passC
+f170v_L07	42	y		passC
+f170v_L07	43	m		passC
+f170v_L07	44	x		passC
+f170v_L07	45	P		passC
+f170v_L07	46	tz		passC
+f170v_L07	47	p		passC
+f170v_L08	1	o		passC
+f170v_L08	2	o		passC
+f170v_L08	3	d		passC
+f170v_L08	4	r	M	lookalike 2-of-3
+f170v_L08	5	6		passC
+f170v_L08	6	z		passC
+f170v_L08	7	g		passC
+f170v_L08	8	d		passC
+f170v_L08	9	tz		passC
+f170v_L08	10	m		passC
+f170v_L08	11	p		passC
+f170v_L08	12	#		passC
+f170v_L08	13	V		lookalike UNSETTLED
+f170v_L08	14	P		passC
+f170v_L08	15	p	M	lookalike 2-of-3
+f170v_L08	16	m		passC
+f170v_L08	17	L		passC
+f170v_L08	18	P		passC
+f170v_L08	19	a		passC
+f170v_L08	20	y		passC
+f170v_L08	21	y		lookalike UNSETTLED
+f170v_L08	22	to	M	lookalike 2-of-3
+f170v_L08	23	o		passC
+f170v_L08	24	P	H	lookalike 2-of-3
+f170v_L08	25	tz		passC
+f170v_L08	26	d		passC
+f170v_L08	27	S		passC
+f170v_L08	28	P		passC
+f170v_L08	29	@		passC
+f170v_L08	30	m		passC
+f170v_L08	31	p		passC
+f170v_L08	32	g		passC
+f170v_L08	33	P		passC
+f170v_L08	34	o		passC
+f170v_L08	35	o		passC
+f170v_L08	36	m		passC
+f170v_L08	37	a		passC
+f170v_L08	38	g		passC
+f170v_L08	39	z		passC
+f170v_L08	40	m		passC
+f170v_L08	41	d		passC
+f170v_L09	1	g		passC
+f170v_L09	2	m		passC
+f170v_L09	3	S		passC
+f170v_L09	4	m		passC
+f170v_L09	5	y		passC
+f170v_L09	6	j	M	lookalike 2-of-3
+f170v_L09	7	m		passC
+f170v_L09	8	L		passC
+f170v_L09	9	z		passC
+f170v_L09	10	P		passC
+f170v_L09	11	tz		passC
+f170v_L09	12	S	M	lookalike 2-of-3
+f170v_L09	13	a		passC
+f170v_L09	14	P		passC
+f170v_L09	15	z		passC
+f170v_L09	16	z		passC
+f170v_L09	17	m		passC
+f170v_L09	18	p		passC
+f170v_L09	19	#		passC
+f170v_L09	20	y	M	lookalike 2-of-3
+f170v_L09	21	p		passC
+f170v_L09	22	m		passC
+f170v_L09	23	{star}	H	lookalike 2-of-3
+f170v_L09	24	m		passC
+f170v_L09	25	#		passC
+f170v_L09	26	y		passC
+f170v_L09	27	p		passC
+f170v_L09	28	m		passC
+f170v_L09	29	S		passC
+f170v_L09	30	tz	H	lookalike 2-of-3
+f170v_L09	31	m		passC
+f170v_L09	32	p		passC
+f170v_L09	33	z	M	lookalike 2-of-3
+f170v_L09	34	m		passC
+f170v_L09	35	p		passC
+f170v_L09	36	S		passC
+f170v_L09	37	z		lookalike UNSETTLED
+f170v_L09	38	m		passC
+f170v_L09	39	x	M	lookalike 2-of-3
+f170v_L10	1	P		passC
+f170v_L10	2	#		passC
+f170v_L10	3	P		passC
+f170v_L10	4	tz		passC
+f170v_L10	5	g		passC
+f170v_L10	6	m		passC
+f170v_L10	7	d		passC
+f170v_L10	8	tz		passC
+f170v_L10	9	6		passC
+f170v_L10	10	P		passC
+f170v_L10	11	o		passC
+f170v_L10	12	o		passC
+f170v_L10	13	d		passC
+f170v_L10	14	tz		passC
+f170v_L10	15	#		passC
+f170v_L10	16	y	M	lookalike 2-of-3
+f170v_L10	17	p		passC
+f170v_L10	18	m		passC
+f170v_L10	19	#		passC
+f170v_L10	20	d		passC
+f170v_L10	21	x		passC
+f170v_L10	22	#		passC
+f170v_L10	23	z	M	lookalike 2-of-3
+f170v_L10	24	tz		passC
+f170v_L10	25	D		passC
+f170v_L10	26	p	M	lookalike 2-of-3
+f170v_L10	27	tz		passC
+f170v_L10	28	2		lookalike UNSETTLED
+f170v_L10	29	o		passC
+f170v_L10	30	o		passC
+f170v_L10	31	j	H	lookalike 2-of-3
+f170v_L10	32	m		passC
+f170v_L10	33	g		passC
+f170v_L10	34	P		passC
+f170v_L10	35	tz		passC
+f170v_L10	36	d		passC
+f170v_L10	37	r		passC
+f170v_L10	38	p		passC
+f170v_L10	39	t		passC
+f170v_L10	40	:		passC
+f170v_L10	41	:		passC
+f170v_L10	42	d		passC
+f170v_L10	43	e		passC
+f170v_L10	44	n		passC
+f170v_L11	1	m		passC
+f170v_L11	2	S		passC
+f170v_L11	3	8	M	lookalike 2-of-3
+f170v_L11	4	p		passC
+f170v_L11	5	:		passC
+f170v_L11	6	:		passC
+f170v_L11	7	y		passC
+f170v_L11	8	g		passC
+f170v_L11	9	m		passC
+f170v_L11	10	x		passC
+f170v_L11	11	#		passC
+f170v_L11	12	tz		passC
+f170v_L11	13	m		passC
+f170v_L11	14	p		passC
+f170v_L11	15	@		passC
+f170v_L11	16	m		passC
+f170v_L11	17	x		passC
+f170v_L11	18	tz		passC
+f170v_L11	19	m		passC
+f170v_L11	20	x		passC
+f170v_L11	21	#		passC
+f170v_L11	22	S		passC
+f170v_L11	23	tz		passC
+f170v_L11	24	m		passC
+f170v_L11	25	p		passC
+f170v_L11	26	c	M	lookalike 2-of-3
+f170v_L11	27	l		passC
+f170v_L11	28	P		passC
+f170v_L11	29	P		passC
+f170v_L11	30	6		passC
+f170v_L11	31	o		passC
+f170v_L11	32	o		passC
+f170v_L11	33	d		passC
+f170v_L11	34	z		passC
+f170v_L11	35	j	H	lookalike 2-of-3
+f170v_L11	36	P		passC
+f170v_L11	37	2		lookalike UNSETTLED
+f170v_L11	38	d		passC
+f170v_L11	39	p		passC
+f170v_L11	40	d		passC
+f170v_L11	41	m		passC
+f170v_L11	42	tz		passC
+f170v_L12	1	f		passC
+f170v_L12	2	p		passC
+f170v_L12	3	m		passC
+f170v_L12	4	o		passC
+f170v_L12	5	o		passC
+f170v_L12	6	g		passC
+f170v_L12	7	f		passC
+f170v_L12	8	:		passC
+f170v_L12	9	:		passC
+f170v_L12	10	d		passC
+f170v_L12	11	e		passC
+f170v_L12	12	n		passC
+f170v_L12	13	m		passC
+f170v_L12	14	tz		passC
+f170v_L12	15	P		passC
+f170v_L12	16	x	M	lookalike 2-of-3
+f170v_L12	17	o		passC
+f170v_L12	18	o		passC
+f170v_L12	19	d		passC
+f170v_L12	20	z		passC
+f170v_L12	21	j	H	lookalike 2-of-3
+f170v_L12	22	o		passC
+f170v_L12	23	o		passC
+f170v_L12	24	P		passC
+f170v_L12	25	c	M	lookalike 2-of-3
+f170v_L12	26	P		passC
+f170v_L12	27	tz	M	lookalike 2-of-3
+f170v_L12	28	S		lookalike UNSETTLED
+f170v_L12	29	x		passC
+f170v_L12	30	m		passC
+f170v_L12	31	L		passC
+f170v_L12	32	m		passC
+f170v_L12	33	p		passC
+f170v_L12	34	:		passC
+f170v_L12	35	:		passC
+f170v_L12	36	7	H	lookalike 2-of-3
+f170v_L12	37	o	M	lookalike 2-of-3
+f170v_L12	38	P		passC
+f170v_L12	39	tz		passC
+f170v_L12	40	:		passC
+f170v_L12	41	#		passC
+f170v_L12	42	z		passC
+f170v_L12	43	:		passC
+f170v_L12	44	:		passC
+f170v_L12	45	m		passC
+f170v_L12	46	j	H	lookalike 2-of-3
+f170v_L12	47	m		passC
+f170v_L13	1	g		passC
+f170v_L13	2	tz		passC
+f170v_L13	3	p		passC
+f170v_L13	4	S		passC
+f170v_L13	5	o	M	lookalike 2-of-3
+f170v_L13	6	p		passC
+f170v_L13	7	m		passC
+f170v_L13	8	:		passC
+f170v_L13	9	:		passC
+f170v_L13	10	g		passC
+f170v_L13	11	m		passC
+f170v_L13	12	o		passC
+f170v_L13	13	o		passC
+f170v_L13	14	V		lookalike UNSETTLED
+f170v_L13	15	m		passC
+f170v_L13	16	p		passC
+f170v_L13	17	#		passC
+f170v_L13	18	tz		passC
+f170v_L13	19	z		lookalike UNSETTLED
+f170v_L13	20	z		passC
+f170v_L13	21	m		passC
+f170v_L13	22	a		passC
+f170v_L13	23	x		passC
+f170v_L13	24	#		passC
+f170v_L13	25	@		passC
+f170v_L13	26	m		passC
+f170v_L13	27	x	M	lookalike 2-of-3
+f170v_L13	28	m		passC
+f170v_L13	29	6		passC
+f170v_L13	30	to		passC
+f170v_L13	31	x	M	lookalike 2-of-3
+f170v_L13	32	m		passC
+f170v_L13	33	d		passC
+f170v_L13	34	a		passC
+f170v_L13	35	S	M	lookalike 2-of-3
+f170v_L13	36	S		passC
+f170v_L13	37	tz		passC
+f170v_L13	38	d		passC
+f170v_L13	39	p		passC
+f170v_L13	40	to		passC
+f170v_L13	41	x		passC
+f170v_L13	42	tz		passC
+f170v_L14	1	g		passC
+f170v_L14	2	m		passC
+f170v_L14	3	p		passC
+f170v_L14	4	k		passC
+f170v_L14	5	tz		passC
+f170v_L14	6	x		passC
+f170v_L14	7	#		passC
+f170v_L14	8	d		passC
+f170v_L14	9	x		passC
+f170v_L14	10	S		passC
+f170v_L14	11	:		passC
+f170v_L14	12	d		passC
+f170v_L14	13	p		passC
+f170v_L14	14	a		passC
+f170v_L14	15	#		passC
+f170v_L14	16	m		passC
+f170v_L14	17	6		passC
+f170v_L14	18	@		passC
+f170v_L14	19	m		passC
+f170v_L14	20	o		passC
+f170v_L14	21	o		passC
+f170v_L14	22	m		passC
+f170v_L14	23	p		passC
+f170v_L14	24	m		passC
+f170v_L14	25	2		lookalike UNSETTLED
+f170v_L14	26	m		passC
+f170v_L14	27	p		passC
+f170v_L14	28	#		passC
+f170v_L14	29	@		passC
+f170v_L14	30	o		passC
+f170v_L14	31	o		passC
+f170v_L14	32	d		passC
+f170v_L14	33	x		passC
+f170v_L14	34	S		passC
+f170v_L14	35	z		passC
+f170v_L14	36	tz		passC
+f170v_L14	37	y	M	lookalike 2-of-3
+f170v_L14	38	m		passC
+f170v_L14	39	p		passC
+f170v_L14	40	#		passC
+f170v_L15	1	m		passC
+f170v_L15	2	p		passC
+f170v_L15	3	S	M	lookalike 2-of-3
+f170v_L15	4	to		passC
+f170v_L15	5	x		passC
+f170v_L15	6	m		passC
+f170v_L15	7	6		passC
+f170v_L15	8	to		passC
+f170v_L15	9	x		passC
+f170v_L15	10	m		passC
+f170v_L15	11	c	M	lookalike 2-of-3
+f170v_L15	12	m		passC
+f170v_L15	13	o		passC
+f170v_L15	14	o	H	lookalike 2-of-3
+f170v_L15	15	g		passC
+f170v_L15	16	m		passC
+f170v_L15	17	#		passC
+f170v_L15	18	a		passC
+f170v_L15	19	a		passC
+f170v_L15	20	d		passC
+f170v_L15	21	r		passC
+f170v_L15	22	S		lookalike UNSETTLED
+f170v_L15	23	:	H	lookalike 2-of-3
+f170v_L15	24	:		passC
+f170v_L15	25	d		passC
+f170v_L15	26	x		passC
+f170v_L15	27	6	H	lookalike 2-of-3
+f170v_L15	28	6		passC
+f170v_L15	29	o		passC
+f170v_L15	30	o		passC
+f170v_L15	31	d		passC
+f170v_L15	32	S		passC
+f170v_L15	33	tz		passC
+f170v_L15	34	m		passC
+f170v_L15	35	@		passC
+f170v_L15	36	P		passC
+f170v_L15	37	r		passC
+f170v_L15	38	o		passC
+f170v_L15	39	o		passC
+f170v_L15	40	z	M	lookalike 2-of-3
+f170v_L15	41	m		passC
+f170v_L15	42	a		passC
+f170v_L15	43	m		passC
+f170v_L15	44	p		passC
+f170v_L15	45	#		passC
+f170v_L16	1	P		passC
+f170v_L16	2	o		passC
+f170v_L16	3	o		passC
+f170v_L16	4	m		passC
+f170v_L16	5	:		passC
+f170v_L16	6	:		passC
+f170v_L16	7	to		passC
+f170v_L16	8	x		passC
+f170v_L16	9	m		passC
+f170v_L16	10	d		passC
+f170v_L16	11	z	M	lookalike 2-of-3
+f170v_L16	12	m		passC
+f170v_L16	13	d		passC
+f170v_L16	14	m		passC
+f170v_L16	15	t		passC
+f170v_L16	16	p		passC
+f170v_L16	17	:		passC
+f170v_L16	18	:		passC
+f170v_L16	19	a		passC
+f170v_L16	20	d		passC
+f170v_L16	21	m		passC
+f170v_L16	22	x		passC
+f170v_L16	23	tz		passC
+f170v_L16	24	m		passC
+f170v_L16	25	#		passC
+f170v_L16	26	tz		passC
+f170v_L16	27	m		passC
+f170v_L16	28	p		passC
+f170v_L16	29	k		passC
+f170v_L16	30	g		passC
+f170v_L16	31	P		passC
+f170v_L16	32	z		passC
+f170v_L16	33	m		passC
+f170v_L16	34	p		passC
+f170v_L16	35	:		passC
+f170v_L16	36	:		passC
+f170v_L16	37	m		passC
+f170v_L16	38	j	M	lookalike 2-of-3
+f170v_L16	39	P		passC
+f170v_L16	40	S		passC
+f170v_L16	41	y		passC
+f170v_L16	42	m		passC
+f170v_L16	43	d		passC
+f170v_L17	1	z	M	lookalike 2-of-3
+f170v_L17	2	m		passC
+f170v_L17	3	o		passC
+f170v_L17	4	o		passC
+f170v_L17	5	6		passC
+f170v_L17	6	to	M	lookalike 2-of-3
+f170v_L17	7	2		lookalike UNSETTLED
+f170v_L17	8	d		passC
+f170v_L17	9	z		passC
+f170v_L17	10	m		passC
+f170v_L17	11	p		passC
+f170v_L17	12	S	M	lookalike 2-of-3
+f170v_L17	13	to		passC
+f170v_L17	14	x		passC
+f170v_L17	15	tz		passC
+f170v_L17	16	m		passC
+f170v_L17	17	x		passC
+f170v_L17	18	#		passC
+f170v_L17	19	z	M	lookalike 2-of-3
+f170v_L17	20	m		passC
+f170v_L17	21	p		passC
+f170v_L17	22	p		passC
+f170v_L17	23	m		passC
+f170v_L17	24	y		passC
+f170v_L17	25	p	M	lookalike 2-of-3
+f170v_L17	26	m		passC
+f170v_L17	27	o		passC
+f170v_L17	28	o		passC
+f170v_L17	29	g		passC
+f170v_L17	30	3	M	lookalike 2-of-3
+f170v_L17	31	d		passC
+f170v_L17	32	o		passC
+f170v_L17	33	o		passC
+f170v_L17	34	p		passC
+f170v_L17	35	m		passC
+f170v_L17	36	L		passC
+f170v_L17	37	P		lookalike UNSETTLED
+f170v_L17	38	m		passC
+f170v_L17	39	p		passC
+f170v_L17	40	d		passC
+f170v_L17	41	m		passC
+f170v_L17	42	L		passC
+f170v_L18	1	a		passC
+f170v_L18	2	P		passC
+f170v_L18	3	z		passC
+f170v_L18	4	m		passC
+f170v_L18	5	@		passC
+f170v_L18	6	to		passC
+f170v_L18	7	x		passC
+f170v_L18	8	m		passC
+f170v_L18	9	6		passC
+f170v_L18	10	to		passC
+f170v_L18	11	x		passC
+f170v_L18	12	m		passC
+f170v_L18	13	a	M	lookalike 2-of-3
+f170v_L18	14	P		passC
+f170v_L18	15	g		passC
+f170v_L18	16	#		passC
+f170v_L18	17	S		passC
+f170v_L18	18	d		passC
+f170v_L18	19	m		passC
+f170v_L18	20	x		passC
+f170v_L18	21	m		passC
+f170v_L18	22	p		passC
+f170v_L18	23	#		passC
+f170v_L18	24	g		passC
+f170v_L18	25	m		passC
+f170v_L18	26	c	M	lookalike 2-of-3
+f170v_L18	27	g		passC
+f170v_L18	28	tz		passC
+f170v_L18	29	d		passC
+f170v_L18	30	m		passC
+f170v_L18	31	d		passC
+f170v_L18	32	S		passC
+f170v_L18	33	m		passC
+f170v_L18	34	#		passC
+f170v_L18	35	2		lookalike UNSETTLED
+f170v_L18	36	d		passC
+f170v_L18	37	tz		passC
+f170v_L18	38	p		passC
+f170v_L18	39	4	M	lookalike 2-of-3
+f170v_L18	40	d		passC
+f170v_L18	41	z	M	lookalike 2-of-3
+f170v_L18	42	m		passC
+f170v_L19	1	c	M	lookalike 2-of-3
+f170v_L19	2	m		passC
+f170v_L19	3	o		passC
+f170v_L19	4	o		passC
+f170v_L19	5	g		passC
+f170v_L19	6	S		passC
+f170v_L19	7	tz		passC
+f170v_L19	8	6		passC
+f170v_L19	9	@		passC
+f170v_L19	10	d		passC
+f170v_L19	11	m		passC
+f170v_L19	12	y		passC
+f170v_L19	13	y	M	lookalike 2-of-3
+f170v_L19	14	m		passC
+f170v_L19	15	o		passC
+f170v_L19	16	o		passC
+f170v_L19	17	d		passC
+f170v_L19	18	x		passC
+f170v_L19	19	j	H	lookalike 2-of-3
+f170v_L19	20	z	M	lookalike 2-of-3
+f170v_L19	21	g		passC
+f170v_L19	22	d		passC
+f170v_L19	23	tz		passC
+f170v_L19	24	m		passC
+f170v_L19	25	p	H	lookalike 2-of-3
+f170v_L19	26	#		passC
+f170v_L19	27	:		passC
+f170v_L19	28	:		passC
+f170v_L19	29	g		passC
+f170v_L19	30	d		passC
+f170v_L19	31	z		passC
+f170v_L19	32	g		passC
+f170v_L19	33	m		passC
+f170v_L19	34	5		passC
+f170v_L19	35	0	M	lookalike 2-of-3
+f170v_L19	36	d		passC
+f170v_L19	37	m		passC
+f170v_L19	38	p		passC
+f170v_L19	39	a		passC
+f170v_L19	40	g		passC
+f170v_L19	41	tz		passC
+f170v_L20	1	m		passC
+f170v_L20	2	p		passC
+f170v_L20	3	#		passC
+f170v_L20	4	P		passC
+f170v_L20	5	o		passC
+f170v_L20	6	o		passC
+f170v_L20	7	d		passC
+f170v_L20	8	x		passC
+f170v_L20	9	d		passC
+f170v_L20	10	S		passC
+f170v_L20	11	tz		passC
+f170v_L20	12	m		passC
+f170v_L20	13	tz		passC
+f170v_L20	14	L		passC
+f170v_L20	15	P		passC
+f170v_L20	16	z		passC
+f170v_L20	17	#		passC
+f170v_L20	18	d		passC
+f170v_L20	19	o		passC
+f170v_L20	20	o		passC
+f170v_L20	21	x		passC
+f170v_L20	22	tz		passC
+f170v_L20	23	d		passC
+f170v_L20	24	z	M	lookalike 2-of-3
+f170v_L20	25	g		passC
+f170v_L20	26	d		passC
+f170v_L20	27	P		passC
+f170v_L20	28	o		passC
+f170v_L20	29	o		passC
+f170v_L20	30	c		passC
+f170v_L20	31	m		passC
+f170v_L20	32	g		passC
+f170v_L20	33	P		passC
+f170v_L20	34	o		passC
+f170v_L20	35	o		passC
+f170v_L20	36	m		passC
+f170v_L20	37	:		passC
+f170v_L20	38	:		passC
+f170v_L20	39	to		passC
+f170v_L20	40	x		passC
+f170v_L20	41	m		passC
+f170v_L20	42	d		passC
+f170v_L21	1	m		passC
+f170v_L21	2	o		passC
+f170v_L21	3	o		passC
+f170v_L21	4	6		passC
+f170v_L21	5	to		passC
+f170v_L21	6	p		passC
+f170v_L21	7	P		passC
+f170v_L21	8	y		passC
+f170v_L21	9	#		passC
+f170v_L21	10	m		passC
+f170v_L21	11	L		passC
+f170v_L21	12	P		passC
+f170v_L21	13	p		passC
+f170v_L21	14	#		passC
+f170v_L21	15	r	M	lookalike 2-of-3
+f170v_L21	16	d		passC
+f170v_L21	17	o		passC
+f170v_L21	18	o		passC
+f170v_L21	19	#		passC
+f170v_L21	20	m		passC
+f170v_L21	21	a		passC
+f170v_L21	22	x		passC
+f170v_L21	23	{curl}	M	lookalike 2-of-3
+f170v_L21	24	d		passC
+f170v_L21	25	tz		passC
+f170v_L21	26	S	M	lookalike 2-of-3
+f170v_L21	27	f	M	lookalike 2-of-3
+f170v_L21	28	tz		passC
+f170v_L21	29	m		passC
+f170v_L21	30	p		passC
+f170v_L21	31	m		passC
+f170v_L21	32	#		passC
+f170v_L21	33	z	M	lookalike 2-of-3
+f170v_L21	34	tz		passC
+f170v_L21	35	S	M	lookalike 2-of-3
+f170v_L21	36	tz		passC
+f170v_L21	37	3		passC
+f170v_L21	38	a		passC
+f170v_L21	39	6		passC
+f170v_L21	40	P		passC
+f170v_L21	41	p		passC
+f170v_L21	42	#		passC
+f170v_L22	1	P		passC
+f170v_L22	2	o		passC
+f170v_L22	3	o		passC
+f170v_L22	4	#		passC
+f170v_L22	5	P		passC
+f170v_L22	6	p		passC
+f170v_L22	7	#		passC
+f170v_L22	8	a		passC
+f170v_L22	9	tz		passC
+f170v_L22	10	m		passC
+f170v_L22	11	o		passC
+f170v_L22	12	o		passC
+f170v_L22	13	m		passC
+f170v_L22	14	6		passC
+f170v_L22	15	o		passC
+f170v_L22	16	P		passC
+f170v_L22	17	z		passC
+f170v_L22	18	y		passC
+f170v_L22	19	p	M	lookalike 2-of-3
+f170v_L22	20	m		passC
+f170v_L22	21	d		passC
+f170v_L22	22	m		passC
+f170v_L22	23	g		passC
+f170v_L22	24	o		passC
+f170v_L22	25	o		passC
+f170v_L22	26	tz		passC
+f170v_L22	27	:		passC
+f170v_L22	28	:		passC
+f170v_L22	29	7		passC
+f170v_L22	30	z	M	lookalike 2-of-3
+f170v_L22	31	o		passC
+f170v_L22	32	o		passC
+f170v_L22	33	L		passC
+f170v_L22	34	d		passC
+f170v_L22	35	z		passC
+f170v_L22	36	m		passC
+f170v_L22	37	#		passC
+f170v_L22	38	S	M	lookalike 2-of-3
+f170v_L22	39	d		passC
+f170v_L22	40	p		passC
+f170v_L22	41	P		passC
+f170v_L22	42	a		passC
+f170v_L22	43	tz		passC
+f170v_L22	44	y		passC
+f170v_L23	1	d		passC
+f170v_L23	2	g	M	lookalike 2-of-3
+f170v_L23	3	tz		passC
+f170v_L23	4	#		passC
+f170v_L23	5	m		passC
+f170v_L23	6	y	M	lookalike 2-of-3
+f170v_L23	7	p		passC
+f170v_L23	8	m		passC
+f170v_L23	9	2		lookalike UNSETTLED
+f170v_L23	10	m		passC
+f170v_L23	11	c	M	lookalike 2-of-3
+f170v_L23	12	m		passC
+f170v_L23	13	g		passC
+f170v_L23	14	2		lookalike UNSETTLED
+f170v_L23	15	m		passC
+f170v_L23	16	:		passC
+f170v_L23	17	:		passC
+f170v_L23	18	#		passC
+f170v_L23	19	y		passC
+f170v_L23	20	m		passC
+f170v_L23	21	Z		passC
+f170v_L23	22	S	M	lookalike 2-of-3
+f170v_L23	23	d		passC
+f170v_L23	24	y	M	lookalike 2-of-3
+f170v_L23	25	p		passC
+f170v_L23	26	k		passC
+f170v_L23	27	d		passC
+f170v_L23	28	tz		passC
+f170v_L23	29	6		passC
+f170v_L23	30	@		passC
+f170v_L23	31	S	M	lookalike 2-of-3
+f170v_L23	32	d		passC
+f170v_L23	33	p		passC
+f170v_L23	34	#		passC
+f170v_L23	35	m		passC
+f170v_L23	36	to		passC
+f170v_L23	37	#		passC
+f170v_L23	38	y		passC
+f170v_L23	39	m		passC
+f170v_L23	40	d		passC
+f170v_L24	1	z		passC
+f170v_L24	2	m		passC
+f170v_L24	3	z		passC
+f170v_L24	4	m		passC
+f170v_L24	5	p		passC
+f170v_L24	6	#		passC
+f170v_L24	7	m		passC
+f170v_L24	8	p		passC
+f170v_L24	9	c		lookalike UNSETTLED
+f170v_L24	10	P		passC
+f170v_L24	11	tz		passC
+f170v_L24	12	m		passC
+f170v_L24	13	P		passC
+f170v_L24	14	z		passC
+f170v_L24	15	m		passC
+f170v_L24	16	z		passC
+f170v_L24	17	#		passC
+f170v_L24	18	p	M	lookalike 2-of-3
+f170v_L24	19	m		passC
+f170v_L24	20	z		passC
+f170v_L24	21	m		passC
+f170v_L24	22	y	M	lookalike 2-of-3
+f170v_L24	23	p		passC
+f170v_L24	24	r		passC
+f170v_L24	25	m		passC
+f170v_L24	26	o		passC
+f170v_L24	27	o		passC
+f170v_L24	28	g		passC
+f170v_L24	29	f		passC
+f170v_L24	30	S		passC
+f170v_L24	31	P		passC
+f170v_L24	32	P		passC
+f170v_L24	33	#		passC
+f170v_L24	34	P		passC
+f170v_L24	35	tz		passC
+f170v_L24	36	L		passC
+f170v_L24	37	m		passC
+f170v_L24	38	d		passC
+f170v_L24	39	z		passC
+f170v_L24	40	m		passC
+f170v_L24	41	z		passC
+f170v_L24	42	m		passC
+f170v_L24	43	g		passC
+f170v_L24	44	P		passC
+f170v_L24	45	d		passC
+f170v_L24	46	P		passC
+f170v_L24	47	p		passC
+f170v_L24	48	k		passC
+f170v_L24	49	g		passC
+f170v_L24	50	m		passC
+f170v_L24	51	x		passC
+f170v_L24	52	o		passC
+f170v_L24	53	o		passC
+f170v_L24	54	d		passC
+f170v_L24	55	z		passC
+f170v_L24	56	P		passC
+f170v_L25	1	p		passC
+f170v_L25	2	#		passC
+f170v_L25	3	to		passC
+f170v_L25	4	x		passC
+f170v_L25	5	m		passC
+f170v_L25	6	j	H	lookalike 2-of-3
+f170v_L25	7	m		passC
+f170v_L25	8	d		passC
+f170v_L25	9	P		passC
+f170v_L25	10	k		passC
+f170v_L25	11	o		passC
+f170v_L25	12	o		passC
+f170v_L25	13	P		passC
+f170v_L25	14	p		passC
+f170v_L25	15	:		passC
+f170v_L25	16	:		passC
+f170v_L25	17	m		passC
+f170v_L25	18	p		passC
+f170v_L25	19	#		passC
+f170v_L25	20	a		passC
+f170v_L25	21	m		passC
+f170v_L25	22	p		passC
+f170v_L25	23	#		passC
+f170v_L25	24	a		passC
+f170v_L25	25	m		passC
+f170v_L25	26	o		passC
+f170v_L25	27	o		passC
+f170v_L25	28	c		passC
+f170v_L25	29	l		passC
+f170v_L25	30	:		passC
+f170v_L25	31	:		passC
+f170v_L25	32	m		passC
+f170v_L25	33	x		passC
+f170v_L25	34	#		passC
+f170v_L25	35	z	M	lookalike 2-of-3
+f170v_L25	36	m		passC
+f170v_L25	37	#	M	lookalike 2-of-3
+f170v_L25	38	P		passC
+f170v_L25	39	tz		passC
+f170v_L25	40	:		passC
+f170v_L25	41	:		passC
+f170v_L25	42	#		passC
+f170v_L25	43	m		passC
+f170v_L25	44	tz		passC
+f170v_L25	45	6		passC
+f170v_L25	46	@		passC
+f170v_L26	1	{curl}	M	lookalike 2-of-3
+f170v_L26	2	d		passC
+f170v_L26	3	p		passC
+f170v_L26	4	#		passC
+f170v_L26	5	:		passC
+f170v_L26	6	:		passC
+f170v_L26	7	d		passC
+f170v_L26	8	x		passC
+f170v_L26	9	6		passC
+f170v_L26	10	tz		passC
+f170v_L26	11	L		passC
+f170v_L26	12	y	M	lookalike 2-of-3
+f170v_L26	13	m		passC
+f170v_L26	14	S		passC
+f170v_L26	15	g		passC
+f170v_L26	16	a		passC
+f170v_L26	17	tz		passC
+f170v_L26	18	:		passC
+f170v_L26	19	:		passC
+f170v_L26	20	#		passC
+f170v_L26	21	m		passC
+f170v_L26	22	tz	H	lookalike 2-of-3
+f170v_L26	23	:		passC
+f170v_L26	24	:		passC
+f170v_L26	25	#		passC
+f170v_L26	26	m		passC
+f170v_L26	27	#		passC
+f170v_L26	28	a		passC
+f170v_L26	29	P		passC
+f170v_L26	30	y		passC
+f170v_L26	31	#		passC
+f170v_L26	32	tz		passC
+f170v_L26	33	:		passC
+f170v_L26	34	:		passC
+f170v_L26	35	a		passC
+f170v_L26	36	j	H	lookalike 2-of-3
+f170v_L26	37	tz		passC
+f170v_L26	38	m		passC
+f170v_L26	39	g		passC
+f170v_L26	40	m		passC
+f170v_L26	41	z		passC
+f170v_L26	42	m		passC
+f170v_L26	43	p		passC
+f170v_L26	44	#		passC
+f170v_L26	45	2	M	lookalike 2-of-3
+f170v_L26	46	7		passC
+f170v_L27	1	{curl}		passC
+f170v_L27	2	y	M	lookalike 2-of-3
+f170v_L27	3	m		passC
+f170v_L27	4	g		passC
+f170v_L27	5	d		passC
+f170v_L27	6	p		passC
+f170v_L27	7	#		passC
+f170v_L27	8	z	M	lookalike 2-of-3
+f170v_L27	9	tz		passC
+f170v_L27	10	z		passC
+f170v_L27	11	L		passC
+f170v_L27	12	m		passC
+f170v_L27	13	a		passC
+f170v_L27	14	y	M	lookalike 2-of-3
+f170v_L27	15	P		passC
+f170v_L27	16	#		passC
+f170v_L27	17	g		passC
+f170v_L27	18	tz		passC
+f170v_L27	19	m		passC
+f170v_L27	20	p		passC
+f170v_L27	21	:		passC
+f170v_L27	22	:		passC
+f170v_L27	23	7		passC
+f170v_L27	24	z		passC
+f170v_L27	25	m		passC
+f170v_L27	26	p		passC
+f170v_L27	27	:		passC
+f170v_L27	28	:		passC
+f170v_L27	29	7		passC
+f170v_L27	30	a		passC
+f170v_L27	31	X	M	lookalike 2-of-3
+f170v_L27	32	P		passC
+f170v_L27	33	a	M	lookalike 2-of-3
+f170v_L27	34	g		passC
+f170v_L27	35	tz		passC
+f170v_L27	36	p		passC
+f170v_L27	37	d		passC
+f170v_L27	38	m		passC
+f170v_L27	39	d		passC
+f170v_L27	40	a		passC
+f170v_L27	41	g		passC
+f170v_L27	42	P		passC
+f170v_L27	43	d		passC
+f170v_L27	44	z		passC
+f170v_L27	45	m		passC
+f170v_L27	46	p		passC
+f170v_L28	1	:		passC
+f170v_L28	2	:		passC
+f170v_L28	3	7		passC
+f170v_L28	4	a		passC
+f170v_L28	5	tz		passC
+f170v_L28	6	m		passC
+f170v_L28	7	r		passC
+f170v_L28	8	y	M	lookalike 2-of-3
+f170v_L28	9	#		passC
+f170v_L28	10	a		passC
+f170v_L28	11	z		passC
+f170v_L28	12	P		passC
+f170v_L28	13	d		passC
+f170v_L28	14	r		lookalike UNSETTLED
+f170v_L28	15	m		passC
+f170v_L28	16	o		passC
+f170v_L28	17	o		passC
+f170v_L28	18	g		passC
+f170v_L28	19	m		passC
+f170v_L28	20	z		passC
+f170v_L28	21	m		passC
+f170v_L28	22	y		passC
+f170v_L28	23	P		passC
+f170v_L28	24	r	M	lookalike 2-of-3
+f170v_L28	25	:		lookalike UNSETTLED
+f170v_L28	26	S	M	lookalike 2-of-3
+f170v_L28	27	P		lookalike UNSETTLED
+f170v_L28	28	o	H	lookalike 2-of-3
+f170v_L28	29	o	H	lookalike 2-of-3
+f170v_L28	30	p	H	lookalike 2-of-3
+f170v_L28	31	m		passC
+f170v_L28	32	o		passC
+f170v_L28	33	o		passC
+f170v_L28	34	d		passC
+f170v_L28	35	7		passC
+f170v_L28	36	2		passC
+f170v_L28	37	p		passC
+f170v_L28	38	#	H	lookalike 2-of-3
+f170v_L28	39	m		passC
+f170v_L28	40	z		passC
+f170v_L28	41	o		passC
+f170v_L28	42	o		passC
+f170v_L28	43	L		passC
+f170v_L28	44	d	H	lookalike 2-of-3
+f170v_L28	45	z	M	lookalike 2-of-3
+f170v_L29	1	m		passC
+f170v_L29	2	#		passC
+f170v_L29	3	y	M	lookalike 2-of-3
+f170v_L29	4	p	M	lookalike 2-of-3
+f170v_L29	5	o		passC
+f170v_L29	6	o		passC
+f170v_L29	7	z		passC
+f170v_L29	8	P		passC
+f170v_L29	9	z		passC
+f170v_L29	10	P		passC
+f170v_L29	11	p		passC
+f170v_L29	12	#		passC
+f170v_L29	13	a		passC
+f170v_L29	14	P	H	lookalike 2-of-3
+f170v_L29	15	y		passC
+f170v_L29	16	#		passC
+f170v_L29	17	tz		passC
+f170v_L29	18	:		passC
+f170v_L29	19	:		passC
+f170v_L29	20	o		passC
+f170v_L29	21	o		passC
+f170v_L29	22	j	M	lookalike 2-of-3
+f170v_L29	23	tz		passC
+f170v_L29	24	m		passC
+f170v_L29	25	g		passC
+f170v_L29	26	m		passC
+f170v_L29	27	g		passC
+f170v_L29	28	m		passC
+f170v_L29	29	2	M	lookalike 2-of-3
+f170v_L29	30	m		passC
+f170v_L29	31	p		passC
+f170v_L29	32	#		passC
+f170v_L29	33	y		passC
+f170v_L29	34	m		passC
+f170v_L29	35	o		passC
+f170v_L29	36	g		passC
+f170v_L29	37	m		passC
+f170v_L29	38	d		passC
+f170v_L29	39	m		passC
+f170v_L29	40	p		passC
+f170v_L29	41	#		passC
+f170v_L29	42	m		passC
+f170v_L29	43	y	M	lookalike 2-of-3
+f170v_L29	44	p		passC
+f170v_L29	45	m		passC
+f170v_L29	46	x		passC

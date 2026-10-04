@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	2	ok
+api.openalex.org	2	ok
+api.semanticscholar.org	2	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22de%20contradiction%20il%20ne%22
+be-api.us.archive.org	2	ok
+www.googleapis.com	2	ok

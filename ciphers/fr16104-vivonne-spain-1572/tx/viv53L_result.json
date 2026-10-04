@@ -1,0 +1,138 @@
+{
+ "seed": "20261053L",
+ "draws": 200,
+ "C1_full": {
+  "letters": 1770,
+  "s": -1.7145,
+  "cover": 0.709,
+  "b1": {
+   "null_median": -2.1264,
+   "null_p99": -1.8126,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.9608,
+   "null_p99": -1.8905,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_full": {
+  "letters": 1793,
+  "s": -1.658,
+  "cover": 0.795,
+  "b1": {
+   "null_median": -2.1249,
+   "null_p99": -1.793,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8752,
+   "null_p99": -1.8273,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "whole": {
+  "letters": 4181,
+  "s": -1.6065,
+  "cover": 0.782,
+  "b1": {
+   "null_median": -2.1478,
+   "null_p99": -1.7659,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.869,
+   "null_p99": -1.8308,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "verdict_b_ii": "PASS",
+ "per_page": {
+  "f170r": {
+   "letters": 938,
+   "s": -1.6317,
+   "cover": 0.777,
+   "b1": {
+    "null_median": -2.1251,
+    "null_p99": -1.731,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.9143,
+    "null_p99": -1.8336,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f170v": {
+   "letters": 1132,
+   "s": -1.6154,
+   "cover": 0.786,
+   "b1": {
+    "null_median": -2.1335,
+    "null_p99": -1.7599,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.858,
+    "null_p99": -1.7898,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f171r": {
+   "letters": 1266,
+   "s": -1.5674,
+   "cover": 0.776,
+   "b1": {
+    "null_median": -2.1198,
+    "null_p99": -1.7744,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8531,
+    "null_p99": -1.7947,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f171v": {
+   "letters": 845,
+   "s": -1.622,
+   "cover": 0.795,
+   "b1": {
+    "null_median": -2.1344,
+    "null_p99": -1.7078,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8529,
+    "null_p99": -1.795,
+    "pass": true,
+    "headroom_ok": true
+   }
+  }
+ },
+ "c": {
+  "wrong_keys": 200,
+  "b2_passes": 34,
+  "share": 0.17,
+  "margin_median": -0.0338,
+  "margin_p95": 0.0207,
+  "margin_p99": 0.0627,
+  "margin_max": 0.0914,
+  "real_margin": 0.2243,
+  "pass": true
+ },
+ "audit_ready": true
+}

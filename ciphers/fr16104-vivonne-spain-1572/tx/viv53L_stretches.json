@@ -1,0 +1,146 @@
+{
+ "vocab": 10325,
+ "stretches": [
+  {
+   "page": "f171r",
+   "lines": "L22-L24",
+   "letters": 90,
+   "decoded": "natiranoieesuaignolenecherchantuungrorturotecteureturhheohheuerauaangierouiaaentenauuhneoo",
+   "words": "nat ir an oi ee su a ig no le ne ch er ch a nt vu ng ro rt ur ot ec te ur et ur hh eo hh eu er au a a ng je ro ui a ae nt en au uh ne oo",
+   "n_words": 47,
+   "uv_ij": 2,
+   "M": 7,
+   "K": 0,
+   "J": 3,
+   "line_ends": 2
+  },
+  {
+   "page": "f171r",
+   "lines": "L08-L10",
+   "letters": 81,
+   "decoded": "ltrebouneintentionarceanqntueurtraioeanthneorinoetoeaesdartanthnaraeeuhnouchiahni",
+   "words": "lt re bo un ei nt en ti on ar ce an qn tue ur tr ai oe an th ne ori no et oe a es da rt an th na ra ee uh no uc hi ah ni",
+   "n_words": 40,
+   "uv_ij": 0,
+   "M": 7,
+   "K": 1,
+   "J": 2,
+   "line_ends": 2
+  },
+  {
+   "page": "f170r",
+   "lines": "L20-L21",
+   "letters": 66,
+   "decoded": "oeureciuiterauantuarceaoaenesteulustostaennaictuarhheaoaenaueoaite",
+   "words": "oe ur ec iv it er au an tu ar ce ao a en es te ul us to st ae nn a ic tu ar hh ea oa en au eo ai te",
+   "n_words": 34,
+   "uv_ij": 1,
+   "M": 10,
+   "K": 5,
+   "J": 3,
+   "line_ends": 1
+  },
+  {
+   "page": "f171r",
+   "lines": "L06-L08",
+   "letters": 64,
+   "decoded": "aeuioaeulqiourobacaoaiecroauhnaneceoitehneurraictulustostraireua",
+   "words": "a eu io ae ul qi our ob ac ao ai ec ro a uh nan ec eo it eh ne ur ra ic tu lu st os tr a ir eu a",
+   "n_words": 33,
+   "uv_ij": 0,
+   "M": 4,
+   "K": 3,
+   "J": 3,
+   "line_ends": 2
+  },
+  {
+   "page": "f171v",
+   "lines": "L07-L09",
+   "letters": 59,
+   "decoded": "heocaoeraendlandheouagceuenbioeuaaeetlalicelonahttenuaesnau",
+   "words": "he oc ao er a en dl a nd he ou ag ce ven bi oe va a ee tl al ic el on a ht te nu ae sn au",
+   "n_words": 31,
+   "uv_ij": 2,
+   "M": 9,
+   "K": 7,
+   "J": 2,
+   "line_ends": 2
+  },
+  {
+   "page": "f171v",
+   "lines": "L16-L17",
+   "letters": 56,
+   "decoded": "esedennaoublierarieniaaesteaduertauungaesregiaenttaeceul",
+   "words": "ese de nn a ou bl ier ar je ni a a es te ad ue rt a vu ng a es re gi a en tt ae ce ul",
+   "n_words": 30,
+   "uv_ij": 2,
+   "M": 3,
+   "K": 1,
+   "J": 1,
+   "line_ends": 1
+  },
+  {
+   "page": "f171r",
+   "lines": "L17-L18",
+   "letters": 55,
+   "decoded": "entenceteauoouocantbienuoesenoeaioneueurudentaoeurerheu",
+   "words": "ent en ce te a vo ou oc a nt bi en vo es en oe ai on eu eu ru de nt a oe ur er heu",
+   "n_words": 28,
+   "uv_ij": 2,
+   "M": 5,
+   "K": 2,
+   "J": 1,
+   "line_ends": 1
+  },
+  {
+   "page": "f171r",
+   "lines": "L19-L20",
+   "letters": 53,
+   "decoded": "rroitautantiderorceouhhuaetoerenberaeclcosteuraoeurer",
+   "words": "rr oit a ut an ti de ro rc eo uh hu ae to er en be ra ec lc os te ur a oe ur er",
+   "n_words": 27,
+   "uv_ij": 0,
+   "M": 5,
+   "K": 2,
+   "J": 3,
+   "line_ends": 1
+  },
+  {
+   "page": "f171r",
+   "lines": "L03-L04",
+   "letters": 53,
+   "decoded": "ehnareaaehnahegueetouiurelentheuhioeureaieheetdictlog",
+   "words": "eh na re a a eh na he gue et ou iv re le nt he uh io eu re a je he et di ct log",
+   "n_words": 27,
+   "uv_ij": 2,
+   "M": 9,
+   "K": 1,
+   "J": 1,
+   "line_ends": 1
+  },
+  {
+   "page": "f170r",
+   "lines": "L10-L11",
+   "letters": 50,
+   "decoded": "tuehouadequhhetoutceraiooitauecqaeointeligencedeoa",
+   "words": "tu eh ou a de qu hh et ou tc er ai oo it avecq a eo in te li ge nc ed eo a",
+   "n_words": 25,
+   "uv_ij": 1,
+   "M": 3,
+   "K": 5,
+   "J": 3,
+   "line_ends": 1
+  }
+ ],
+ "null": {
+  "draws": 200,
+  "top1_median": 98,
+  "top1_p99": 194,
+  "top3mean_median": 86.0,
+  "top3mean_p99": 125.0
+ },
+ "real": {
+  "top1": 90,
+  "top3mean": 79.0
+ }
+}

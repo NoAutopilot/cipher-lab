@@ -1,0 +1,146 @@
+passage	pos	label	conf	second	note
+f170v_L01	17	P	H		two uprights with top bar, pi shape
+f170v_L01	31	{AF}	M	{cross}	small hook/arrow stroke left of o, not a tall stroke
+f170v_L01	46	2	M	3	round loop top, diagonal, curled foot
+f170v_L01	50	S	M	d	tall slanted stroke with small blob foot
+f170v_L01	51	P	H		pi shape before the bar
+f170v_L02	10	{curl}	M	g	small top loop with long S-shaped looped descender
+f170v_L02	15	d	M	c	curl-left L-like body with tall flicked ascender
+f170v_L02	16	:	M		single dot on the line
+f170v_L02	19	P	H		II with flat double top bar
+f170v_L02	35	{curl}	M	g	looped top with S-shaped tail descender
+f170v_L03	11	z	M	2	flat-topped Z with looped foot
+f170v_L03	27	g	M	y	hooked-descender g after hash
+f170v_L03	35	r	L	y	small hooked mark between a and swash; could not separate
+f170v_L03	43	g	H		bowl with hooked descender
+f170v_L04	10	V	M	d	tall stroke with hook at top and blob foot
+f170v_L04	13	S	H		thick bold slanted ſ stroke
+f170v_L04	20	P	H		pi shape
+f170v_L04	26	2	M	3	small round-top loop, flat middle, curl foot
+f170v_L05	1	z	M	3	flat bar top, big looped foot
+f170v_L05	29	2	M	3	round hooked top, diagonal, small tail
+f170v_L06	1	S	M	V	tall straight stroke with small blob foot
+f170v_L06	4	4	M	+	crossed vertical with top hook and curled foot
+f170v_L06	9	y	M		swash with lead-in stroke and ball foot
+f170v_L06	15	S	M	V	tall stroke with blob foot and arc flourish above
+f170v_L07	3	S	M	d	tall thin stroke with small curl foot
+f170v_L07	27	c	M	a	open bowl stroke before m
+f170v_L08	4	r	M	2	small r-like with flat base
+f170v_L08	13	X_NEW	L	@	tiny c-like hook before pi; no candidate fits well
+f170v_L08	15	p	M	r	loop bowl of swash sign after pi
+f170v_L08	21	y	M	r	swash with ball foot after a
+f170v_L08	22	to	M	t	t-like stem joined to closed o loop
+f170v_L08	24	P	H		pi shape
+f170v_L09	6	j	M	7	hooked descender with dot, curved
+f170v_L09	12	S	M	d	tall stroke with blob foot
+f170v_L09	20	y	M		swash with lead-in and ball
+f170v_L09	23	{star}	H		multi-armed asterisk/star
+f170v_L09	30	tz	H		t with z-like descender
+f170v_L09	33	z	M	3	flat bar top, diagonal, curled foot
+f170v_L09	37	z	L	w	tiny stroke at start of m-group; could not separate
+f170v_L09	39	x	M		x-like swash before end bar
+f170v_L10	16	y	M		swash with lead-in stroke
+f170v_L10	23	z	M	3	flat bar top, curled foot
+f170v_L10	26	p	M	{swash}	loop bowl after big swash
+f170v_L10	28	2	M	3	round hooked top, flat bar, curl
+f170v_L10	31	j	H		hooked descender with dot
+f170v_L11	3	8	M	d	small closed loop with dot after S stroke
+f170v_L11	26	c	M		small open c-stroke before L
+f170v_L11	35	j	H		hooked descender with accent dot
+f170v_L11	37	2	M	z	loop top, flat bar tail
+f170v_L12	16	x	M	z	small crossed loop sign after pi
+f170v_L12	21	j	H		hooked descender with accent
+f170v_L12	25	c	M	a	small open hook before pi
+f170v_L12	27	tz	M	z	loop descender under pi
+f170v_L12	28	S	L	y	f-like stem with crossbar and hook; f not offered
+f170v_L12	36	7	H	j	diagonal 7 stroke
+f170v_L12	37	o	M	c	small round loop with swash tail
+f170v_L12	46	j	H		hooked descender with dot
+f170v_L13	5	o	M	to	closed o loop after hook stroke
+f170v_L13	14	V	M	y	long backslash stroke into hook and loop
+f170v_L13	19	z	L	3	flourish tail of preceding sign then small z; unsure
+f170v_L13	27	x	M	z	crossed x between m signs
+f170v_L13	31	x	M	z	crossed x after to
+f170v_L13	35	S	M	A	small s-shaped stroke after capital A
+f170v_L14	25	2	M	z	loop top, flat tail between m signs
+f170v_L14	37	y	M	D	hook with ball, lead-in diagonal from above
+f170v_L15	3	S	M	d	thin vertical stroke before to
+f170v_L15	11	c	M	u	small hook before m
+f170v_L15	14	o	H		round closed o
+f170v_L15	22	S	M	d	tall stroke with blob foot
+f170v_L15	23	:	H		single dot
+f170v_L15	27	6	H		6 with long loop
+f170v_L15	40	z	M	3	flat bar top, curled foot
+f170v_L16	11	z	M	3	flat bar top, looped foot
+f170v_L16	38	j	M	7	hooked descender with top curl and dot
+f170v_L17	1	z	M	3	big looped foot, flat bar top
+f170v_L17	6	to	M	tz	t stem with crossbar and small closed loop
+f170v_L17	7	2	M	3	loop top, flat bar, tail
+f170v_L17	12	S	M	d	tall stem with small round foot
+f170v_L17	19	z	M	3	flat bar top, looped foot
+f170v_L17	25	p	M	y	loop bowl after swash
+f170v_L17	30	3	M	z	round-topped with curled foot like tz tail
+f170v_L17	37	P	M	r	pi-like top bar with right hook
+f170v_L18	13	a	M	c	small a-like loop before pi
+f170v_L18	26	c	M	u	small open hook before g
+f170v_L18	35	2	M	3	loop top, flat bar, curl
+f170v_L18	39	4	M	p	4 with crossed stem
+f170v_L18	41	z	M	3	flat top bar, looped foot
+f170v_L19	1	c	M	a	small open c hook at line start
+f170v_L19	13	y	M	r	swash with lead-in stroke
+f170v_L19	19	j	H		hooked descender with dot above
+f170v_L19	20	z	M	3	flat bar top with dot above, curled foot
+f170v_L19	25	p	H		p with crossed stem
+f170v_L19	35	0	M	to	closed o loop after hook
+f170v_L20	24	z	M	2	small flat-topped z, curl
+f170v_L21	15	r	M		r-like with hook loop
+f170v_L21	23	{curl}	M	g	top loop with dot, S-shaped tail
+f170v_L21	26	S	M	d	tall stroke with blob foot
+f170v_L21	27	f	M	g	hook stem with crossbar and looped foot
+f170v_L21	33	z	M	3	flat bar top, curl foot
+f170v_L21	35	S	M	d	long backslash stroke into hook with ball
+f170v_L22	19	p	M	y	loop bowl after swash
+f170v_L22	30	z	M	3	flat top, looped foot
+f170v_L22	38	S	M	d	tall stroke with blob foot
+f170v_L23	2	g	M	y	hooked descender g
+f170v_L23	6	y	M		swash with lead-in stroke
+f170v_L23	9	2	M	3	loop top, flat tail
+f170v_L23	11	c	M	a	small open hook
+f170v_L23	14	2	M	3	loop top, flat tail
+f170v_L23	22	S	M	d	tall stroke with blob after big Z
+f170v_L23	24	y	M		swash with lead-in stroke
+f170v_L23	31	S	M	d	tall stroke with blob foot after a-curl
+f170v_L24	9	c	M	a	small open hook before pi
+f170v_L24	18	p	M	tz	thick p stem before m z m
+f170v_L24	22	y	M		swash with lead-in stroke
+f170v_L25	6	j	H		hooked descender with dot
+f170v_L25	35	z	M	3	flat bar top, looped foot
+f170v_L25	37	#	M	P	two long uprights joined at top with loop
+f170v_L26	1	{curl}	M	g	small loop with swash lead-in
+f170v_L26	12	y	M		swash with lead-in stroke
+f170v_L26	22	tz	H		t with z-like descender
+f170v_L26	36	j	H		hooked descender with dot
+f170v_L26	45	2	M	3	round loop top, small hook
+f170v_L27	2	y	M		swash with lead-in and ball
+f170v_L27	8	z	M	3	flat top small, curl foot
+f170v_L27	14	y	M		swash with lead-in stroke
+f170v_L27	31	X	M	{X-cross}	large X with long arms and horizontal swash
+f170v_L27	33	a	M	r	small a-like hook after pi
+f170v_L28	8	y	M	r	swash with lead-in stroke
+f170v_L28	14	r	M	S	loop end of the big swash
+f170v_L28	24	r	M	y	bowl of swash sign
+f170v_L28	25	#	L	:	pi shape, two uprights top bar; P not offered
+f170v_L28	26	S	M		tall thick stroke with top hook
+f170v_L28	27	X_NEW	L	p	d-like round body with 3-like hook on top; none of # P p r fits
+f170v_L28	28	o	H		round closed o
+f170v_L28	29	o	H		round closed o
+f170v_L28	30	p	H		p with descender
+f170v_L28	38	#	H		double-crossed hash
+f170v_L28	44	d	H		round body with ascender curling back
+f170v_L28	45	z	M		small flat-topped z with flourish before bar
+f170v_L29	3	y	M		swash with lead-in stroke
+f170v_L29	4	p	M		bowl after swash
+f170v_L29	14	P	H		pi with top bar
+f170v_L29	22	j	M	7	hooked descender with dot above
+f170v_L29	29	2	M	3	loop top, flat tail
+f170v_L29	43	y	M		swash with lead-in stroke
