@@ -3086,6 +3086,24 @@
         "AUDIT.md VERIFY-MANT",
         "AUDIT.md Second adversarial audit (AUDIT2-MANT)"
       ]
+    },
+    {
+      "date": "4 Oct 2026",
+      "kind": "recovery",
+      "key": "period",
+      "novelty": "N3",
+      "claim_scope": "partial reading (codes 801-1796)",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hellen-frederick-1752",
+      "fields_source": "hellen-frederick-1752/AUDIT.md: VHEL (N3, LANE-NEAR3) and A3V-VHEL2 second adversarial audit (N3 confirmed, LANE-A3V)",
+      "document_id": "DECODE R1953 (KHA Prins Willem V inv. 196, now A31-1148): W. B. von der Hellen to Frederick II, The Hague, 4 Jan 1752; key BL Add MS 32276 f.44 (DECODE R4369)",
+      "title": "Hellen to Frederick II, The Hague, 4 Jan 1752: intercepted despatch read in part with a 1751 period key sheet (BL Add MS 32276 f.44)",
+      "grade": "N3 (two audits), key period. 846 tokens: H 152, S 304, M 16, U 374; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846.",
+      "line": "Using a period key sheet in the British Library (Add MS 32276 f.44, DECODE R4369), values assigned to 456 of 846 code groups of Hellen's 4 Jan 1752 despatch; no printed plaintext or period decipherment located in the searched editions; the Berlin file GStA PK I. HA Rep. 96 Nr. 38 G-H was not read.",
+      "text": "unknown"
     }
   ],
   "lanes": [
