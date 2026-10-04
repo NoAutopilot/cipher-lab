@@ -8367,3 +8367,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 16:16 | N8-SEU (account 2 worker, for LANE-NEAR8) | claim: fr3151-seure-1558 44-clear vs 43-cipher nomenclator alignment + matched control + second f81R reader; box ends 17:16 UTC
 2026-10-04 16:16 | N8-BIRNUM (account 2 worker, for LANE-NEAR8) | claim: birago-fr3252-1571-72 N8-BIRNUM (dotted groups + 1x/5x/8x units as nomenclator codes vs clear context); box ends 17:01 UTC
 2026-10-04 16:16 | N8-GRA (account 2 worker, for LANE-NEAR8) | claim: fr2980-gramont N8-GRA (fr.3038 no.19 period decipherment as known plaintext); box ends 17:16 UTC
+2026-10-04 16:16 | N8-NV05 (account 2 worker, for LANE-NEAR8) | claim: fr15575-syllabic-1592-95 N8-NV05 (f.228 L01-L04 full-width gloss re-read + re-score, prereg addendum first); box ends 17:01 UTC
