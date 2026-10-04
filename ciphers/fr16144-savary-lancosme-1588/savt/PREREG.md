@@ -1,4 +1,4 @@
-# A3V3-SAVT pre-registration (written 4 Oct 2026 ~06:50 UTC, before the gloss is transcribed and before any alignment is run)
+# A3V3-SAVT pre-registration (written 4 Oct 2026 06:37 UTC (committed 09a6eff4), before the gloss is transcribed and before any alignment is run)
 
 Target: c380 (f.187r), 22 cipher lines, 932 segmented signs (SV-SORT `sorter/inputs/labels.tsv`, piles k000-k119).
 Seed table: `sorter/tomokiyo_pile_match.tsv` (RUN1-SAV, by-eye proposals; piles with confidence none -> '?').
