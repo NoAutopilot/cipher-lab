@@ -1136,3 +1136,55 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: cryptanalytic key-rebuild of codes 1-800 against the R4369-decoded context with its own held-out control, ~$10
+
+## N5-HEL7 (4 Oct 2026): context-fit key-rebuild of codes 1-800, control first (account 2 worker for LANE-NEAR5)
+
+Step run: the LANE-NEAR5 refresh's cheapest next. A different instrument from the retired period tables (R4370, R4372 not used):
+cryptanalytic, grade S at best. **Pre-registration** `key_rebuild/PREREG-HEL7.md` (commit e72d62c7) pushed before any run. Disk only:
+no requests, no subagent or vision calls.
+
+**Tool fix first.** `sibling_michell/test_sibling.py` now has `fr18_counts()`, `pmi_from(u, b, oov_floor)` and `bigram(oov_floor=False)`;
+with `oov_floor=True` an out-of-vocabulary left word scores at the unseen floor log(0.3) = -1.204 (N4-HEL6's tool note). The default is
+unchanged, so earlier outputs reproduce (`key_r4372/diag.py --check`: up to date). Offline test `key_rebuild/test_oov.py`: OK.
+
+**Instrument.** `key_rebuild/rebuild.py` (`--check` exits 0): Gibbs anneal assigning one word from the fr18 top 800 types to each free
+code. 80 sweeps at T 1.5 -> 0.05, then 5 greedy sweeps, seeds 1-3. The objective sums junction scores over every adjacent pair that
+touches a free code, against the R4369 H/S context (452 tokens with a word). Arm P: Part B PMI with the OOV floor. Arm L: log conditional
+bigram probability. Target: 349 tokens, 201 codes, profile 1:133 2:38 3:10 4:9 5+:11.
+
+**Control (rule 3; matched).** The 182 codes 801+ with an H/S word token in R1953 were blanked one tenth at a time (10 folds), with the
+201 target codes free as in the target run. This keeps the context density at the target's. Recovery was weighted to the target's
+occurrence profile (R_w) and compared with a shuffled-assignment baseline (200 permutations per fold). The PREREG said 183 codes; one has
+no word value, so 182. Ceiling: 129 of 182 (0.71) of the true values are a single word in V.
+
+| arm | seed | control R_w | shuffled baseline | unweighted | token-weighted | gate (R_w >= 0.20 and >= 3x baseline) |
+|---|---|---|---|---|---|---|
+| P (PMI) | 1 / 2 / 3 | 0.011 / 0.008 / 0.011 | 0.0015 / 0.0007 / 0.0011 | 0.011 / 0.005 / 0.011 | 0.020 / 0.002 / 0.020 | mean 0.010 vs 0.20: **FAIL** |
+| L (log cond.) | 1 / 2 / 3 | 0.034 / 0.023 / 0.033 | 0.0060 / 0.0062 / 0.0053 | 0.049 / 0.027 / 0.038 | 0.104 / 0.055 / 0.069 | mean 0.030 vs 0.20: **FAIL** |
+
+What the control does recover is function words only: une, le, de, les, l, d, n, il, ce (arm L), and une, le (arm P). These are 1 to 9 of
+182 codes against a ceiling of 129. Both arms miss the 0.20 floor by a factor of 7 or more. Each is above 3x its own shuffled baseline,
+but that is not enough on its own. **Per PREREG 4: no target run, no candidate values, no reading change** (`target_candidates.tsv` is
+header-only). Verdict: **untestable by this instrument (context-fit anneal over fr18 top-800 bigrams) at this N.** This is not a
+negative about codes 1-800. **R4369's reading stands unchanged** (H 152 / S 304 / M 16 / U 374). Report what was found and where it
+was not found: no values for codes 1-800 were found, because the instrument cannot recover known values at this context density.
+Reading outside the pre-registration, not gated: a bigram context model over a single letter cannot place content words. Either more
+text of the same code is needed (a sibling letter in the R4369 series) or a writer-matched source of whole phrases is needed (Fagel 5177
+transcribed, for phrase cribs) before a key-rebuild has a chance.
+
+## Remaining gaps (N5-HEL7, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); the context-fit anneal over fr18 bigrams is untestable at this N (N5-HEL7: control R_w 0.010 / 0.030 against a 0.20 gate, ceiling 0.71); next: transcribe Fagel 5177's clear Hellen pages (scans 5-93, two blind passes + reconciliation) as a writer- and week-matched phrase corpus, then a pre-registered phrase-crib placement in the R4369-decoded gaps with its own held-out control, ~$12
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500, no holder) not yet tested; next: transcribe R4376 P3 and test on R1049 with a pre-registered gate and matched control (R4372 not used: retired), ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370 nor R4372 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (N5-HEL7, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); no ciphertext of those letters survives, so they are context only, not a crib for R1953 itself
+- [x] known-keys: R4369 transcribed and tested, reads R1953; R4370 and R4372 retired for codes 1-800 after three tests of the same family (READ2-HEL2, NEAR3-HEL4, N4-HEL6)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: the fr18-bigram context-fit anneal was tried with its control first and is untestable at this N (N5-HEL7, control R_w 0.010 / 0.030 vs gate 0.20); untried instrument: phrase-crib placement from a transcribed Fagel 5177 writer-matched corpus, with its own held-out control
+- [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe R4376 P3 and test it on R1049 with a matched control, ~$8

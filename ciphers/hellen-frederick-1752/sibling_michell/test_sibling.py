@@ -55,18 +55,27 @@ def run(name, key, toks, lp, rng, out, n=200):
     out.append(f'{name}\tN_tokens={len(toks)}\tcovered={ncov} ({ncov/len(toks):.1%})\treal={real:.3f}\tshuffle_mean={mean:.3f}\tshuffle_p95={sh[int(.95*n)-1]:.3f}\tp={p:.3f}')
     return real, ncov, p
 
-def bigram():
-    """fr18 word bigram and unigram counts, for the order-sensitive statistic (READ2-HEL, 3 Oct 2026)."""
+def fr18_counts():
     u = collections.Counter(); b = collections.Counter()
     for f in sorted(glob.glob(os.path.join(ROOT, 'tools/data/fr18/*.txt.gz'))):
         ws = re.findall(r"[a-zàâçéèêëîïôûùüÿœ]+", gzip.open(f, 'rt', encoding='utf-8', errors='ignore').read().lower())
         u.update(ws); b.update(zip(ws, ws[1:]))
+    return u, b
+
+def pmi_from(u, b, oov_floor=False):
+    """oov_floor=True (N5-HEL7, 4 Oct 2026): an out-of-vocabulary LEFT word scores at the unseen-pair floor log(0.3), not 0
+    (N4-HEL6's tool note). Default False keeps every output committed before 4 Oct 2026 reproducible."""
     tot = sum(u.values())
     def pmi(a, c):  # log P(c|a)/P(c), interpolated with the unigram so unseen pairs score about 0 - small
         pc = (u.get(c, 0) + 0.5) / tot
-        pca = 0.7 * b.get((a, c), 0) / u[a] + 0.3 * pc if u.get(a) else pc
-        return math.log(pca / pc)
+        if not u.get(a): return math.log(0.3) if oov_floor else 0.0
+        return math.log((0.7 * b.get((a, c), 0) / u[a] + 0.3 * pc) / pc)
     return pmi
+
+def bigram(oov_floor=False):
+    """fr18 word bigram and unigram counts, for the order-sensitive statistic (READ2-HEL, 3 Oct 2026)."""
+    u, b = fr18_counts()
+    return pmi_from(u, b, oov_floor)
 
 def words(v):
     return re.findall(r"[a-zàâçéèêëîïôûùüÿœ]+", v.lower().split('|')[0])

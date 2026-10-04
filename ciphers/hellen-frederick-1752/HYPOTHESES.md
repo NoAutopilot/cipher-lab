@@ -110,3 +110,13 @@ Script key_r4372/diag.py (seeds 1, 2; `--check`), output diag_output.txt / diag_
 
 Result: control-backed negative for R4372 as codes 1-800 on the context test; the bigram signal is one high-PMI pair plus the share of
 pairs whose left word is outside fr18 (pmi() returns 0 there, above the -1.204 floor): 40.5% in the real order vs 25.2% under shuffle.
+
+## N5-HEL7 (4 Oct 2026, account 2, for LANE-NEAR5): context-fit key-rebuild of codes 1-800 (PREREG key_rebuild/PREREG-HEL7.md, e72d62c7)
+Script key_rebuild/rebuild.py (`--check`), output rebuild_output.txt; seeds 1-3; V = fr18 top 800 words; 201 target codes / 349 tokens.
+
+| family | target | control (R4369 801+ codes blanked by fold, profile-weighted exact recovery R_w) | baseline (shuffled assignment) | gate | verdict |
+|---|---|---|---|---|---|
+| anneal, arm P (junction PMI, OOV floor) | not run | 0.011 / 0.008 / 0.011 (mean 0.010; ceiling 0.71) | 0.0011 | R_w >= 0.20 and >= 3x baseline | CONTROL BELOW GATE |
+| anneal, arm L (log conditional bigram) | not run | 0.034 / 0.023 / 0.033 (mean 0.030; ceiling 0.71) | 0.0058 | same | CONTROL BELOW GATE |
+
+Result: untestable by this instrument (context-fit anneal over fr18 top-800 bigrams) at this N; not a negative about codes 1-800.

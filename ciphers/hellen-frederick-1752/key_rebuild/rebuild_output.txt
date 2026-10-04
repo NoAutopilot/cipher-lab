@@ -1,0 +1,22 @@
+# N5-HEL7 rebuild (PREREG-HEL7.md). Target: 349 tokens, 201 codes, profile 1:133 2:38 3:10 4:9 5:11 (5 = 5+). Known context tokens: 452. V = fr18 top 800.
+# Control pool: 182 codes 801+ with an H/S token; ceiling (true value one word in V): 129/182
+## arm P: control
+seed	R_w	baseline_w	unweighted	token_weighted	per-bin r_n (1/2/3/4/5+)
+1	0.011	0.0015	0.011	0.020	1/79 0/38 0/30 0/10 1/25
+  recovered: 1155=une(x1), 1273=le(x8)
+2	0.008	0.0007	0.005	0.002	1/79 0/38 0/30 0/10 0/25
+  recovered: 1155=une(x1)
+3	0.011	0.0011	0.011	0.020	1/79 0/38 0/30 0/10 1/25
+  recovered: 1155=une(x1), 1273=le(x8)
+arm P control: mean R_w 0.010 vs mean baseline 0.0011 (3x = 0.0033); gate R_w>=0.20 and >=3x baseline: FAIL
+## arm L: control
+seed	R_w	baseline_w	unweighted	token_weighted	per-bin r_n (1/2/3/4/5+)
+1	0.034	0.0060	0.049	0.104	2/79 1/38 1/30 0/10 5/25
+  recovered: 953=l(x6), 998=d(x3), 999=de(x7), 1020=les(x9), 1155=une(x1), 1273=le(x8), 1375=n(x1), 1402=ce(x2), 1514=de(x10)
+2	0.023	0.0062	0.027	0.055	2/79 0/38 0/30 0/10 3/25
+  recovered: 953=l(x6), 999=de(x7), 1019=il(x1), 1375=n(x1), 1514=de(x10)
+3	0.033	0.0053	0.038	0.069	3/79 0/38 1/30 0/10 3/25
+  recovered: 998=d(x3), 999=de(x7), 1019=il(x1), 1155=une(x1), 1273=le(x8), 1375=n(x1), 1514=de(x10)
+arm L control: mean R_w 0.030 vs mean baseline 0.0058 (3x = 0.0175); gate R_w>=0.20 and >=3x baseline: FAIL
+## arm P: CONTROL BELOW GATE -- target not run (PREREG 4)
+## arm L: CONTROL BELOW GATE -- target not run (PREREG 4)
