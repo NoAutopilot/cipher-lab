@@ -182,3 +182,43 @@ h->n, to m->s, x s->f) after a pre-registered joint test PASS (tx/PREREG_joint9.
 The rule-7 SAME verdicts in section 5 apply to the pre-JOINT9 reading only; a fresh re-derivation is owed. No N-class or
 depth is changed here (the verifier sets depth; nothing in this change reaches D2's clause requirement on its own). No
 SECOND-OPINIONS-QUEUE.tsv row exists for this target, so none to update.
+
+## 7. VER-C1161J: audit of C1161-JOINT9 (account-3 verifier, 4 Oct 2026, 18:17-18:3x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-ver-c1161j.md`. Pre-registration `tx/PREREG_verc1161j.md` (0230021b4, pushed
+before any score); script `two/verc1161j.py`, output `two/verc1161j.tsv`. Disk only, 0 requests, 0 subagents.
+
+**1. Rule-3 audit of the JOINT9 null.** Was the gloss used in choosing the nine? No: the LOLO anneal (two/reanneal.py stage 1)
+reads only the cipher stream and the fr17 4-gram model, and the leave-c186R-out stream (`two/lolo/key_lolo_tgt_c186R.tsv`,
+which never saw the glossed block's tokens) carries all nine values, so G is out-of-sample for the choice. But JOINT9's
+random-value null was not selection-matched, and its J half is circular: the nine were chosen to maximise French 4-gram fit,
+and the fr16 judge measures French n-gram fit, so dJ > 0 is expected whether or not the values are right. The remaining
+confound for G is generic: moving 227 tokens off e/n/s onto m/d/f/h could raise agreement with any French text. Two nulls:
+
+| null | real dG | null mean | null p95 | null max | verdict |
+|---|---|---|---|---|---|
+| T2 content-specificity: the nine's dG against 200 fr16 windows of the gloss's length | +0.0353 | -0.0096 | +0.0824 | +0.1706 | **FAIL** |
+| T3 selection-matched: best-of-2000 random a-z nine-tuples by fr17 L4, 50 draws | +0.0353 | -0.0193 | +0.0059 | +0.0118 | pass |
+
+T3's selection is close to the anneal's in strength (selected dL4 mean +0.0266, max +0.0367 vs the real nine's +0.0388), and
+under it dJ reaches +0.0023 mean, +0.0207 max -- the real +0.0053 is inside that range, confirming dJ carries no evidence.
+T2 says the statistic itself is the limit: at 170 gloss letters, changing these 15 block tokens swings difflib agreement with an
+arbitrary French window by up to +0.17, so +0.035 on the real gloss is not distinguishable from what the same nine do to
+unrelated French. **As registered: S does not stand; the nine go back to M.** Their values stay as the working reading
+(the leaf-stable 4-gram optimum, reproduced by the c186R-held-out stream, and above the T3 null), at grade M, stated in
+each key.tsv row's source. Instrument note for the next brief: G's per-change dG needs a window null before any gate on
+it; a gloss of 170 letters cannot license a change of 15 tokens.
+
+**2. Rule 7.** Fresh re-derivation of the post-JOINT9 reading (decode_key.py from a scratch copy of ciphertext.tsv + key.tsv,
+no exceptions.tsv/decode.json in the folder): reading.txt and reading_tokens.tsv byte-identical, `--check` exit 0,
+`tokens 3408: C 353, M 952, S 2070, U 33` -- **SAME**. After this audit's regrade the letters are unchanged and only nine
+signs' grades move S -> M: `tokens 3408: C 353, M 1114, S 1908, U 33`, `--check` exit 0.
+
+**3. Depth (rule 4a).** C/S 2261/3375 = **67.0%** (JOINT9's 71.8% withdrawn). Longest C/S run 16 tokens, below the
+authentication distance for a 49-sign homophonic key; no code value reads in two contexts at S or better; judge FAIL. The D2
+clause does not hold; **D1 kept** (fragments read). status.json depth_pct 67.0 and depth_check updated; `tools/depth_check.py`
+exit 0.
+
+**4. Corrections.** key.tsv: nine rows S -> M with the reason. status.json: depth_pct 71.8 -> 67.0, depth_check rewritten.
+NOTES.md: VER-C1161J section, Remaining gaps and Escalation superseding JOINT9's. HYPOTHESES.md: row appended. Section 5's
+JOINT9 addendum ("C/S 71.8%") is superseded by this section. No N-class changes; no SECOND-OPINIONS-QUEUE.tsv row exists.

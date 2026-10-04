@@ -3870,9 +3870,9 @@
       "lane": "LANE-NEAR4 (account 2)",
       "touched": "4 Oct 2026 04:3x",
       "depth": "D1",
-      "depth_pct": 71.8,
+      "depth_pct": 67.0,
       "decode_status": "Non-decrypted",
-      "depth_check": "C/S 2423/3375 = 71.8% after the nine C1161-LOLO values entered at S (C1161-JOINT9 joint test PASS, 4 Oct 2026; D1 holds pending verifier, longest C/S run 19, rule-7 re-derivation owed); period-gloss letter agreement 0.647 on one 220-sign block; fr16 judge FAIL -1.303 on reading.txt",
+      "depth_check": "C/S 2261/3375 = 67.0%: VER-C1161J (4 Oct 2026) returned the nine C1161-LOLO values to M (content-specificity null FAIL: dG +0.0353 vs fr16-window p95 +0.0824); D1 kept, longest C/S run 16, rule-7 re-derivation SAME; period-gloss letter agreement 0.647 on one 220-sign block (not above its window null for the nine); fr16 judge FAIL",
       "novelty": "N3 (AUDIT 1, A3V2-C1161A1, 4 Oct 2026; key ours; rule-7 re-derivation SAME, N4-RD1161)"
     }
   ]

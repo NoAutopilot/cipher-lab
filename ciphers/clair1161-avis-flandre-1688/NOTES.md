@@ -1942,3 +1942,29 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test, and a lookalike pass on th/z/S/4, as in Remaining gaps
 - [n/a] retry: a further per-sign gloss run of the same nine is not a different instrument
 Verdict: keep going: 3 internal gaps; cheapest next: pre-registered joint gloss+judge test of the nine C1161-LOLO proposals, ~$1
+
+## VER-C1161J (account-3 verifier, 4 Oct 2026, 18:17-18:3x UTC by date -u)
+Audit of C1161-JOINT9 (AUDIT.md section 7). Pre-registration `tx/PREREG_verc1161j.md` before any score; `two/verc1161j.py`.
+The gloss was never an input of the LOLO anneal, and the c186R-held-out stream gives the same nine values, so G is
+out-of-sample for the choice; but dJ is circular (the anneal maximises French 4-gram fit, the judge measures it) and the G gain
+is not content-specific: the nine raise agreement with 200 random fr16 windows of the gloss's length by up to +0.17 (p95 +0.0824)
+against +0.0353 on the gloss (T2 FAIL); a best-of-2000 L4-selected null is beaten (p95 +0.0059, pass). As registered, the nine go
+back to **M** (values kept as working reading). Rule 7 of the JOINT9 reading: SAME. Counts now C 353, S 1908, M 1114, U 33; C/S
+67.0%; depth D1 kept. Report what was found and where not found: no outside source searched; novelty not classified.
+
+## Remaining gaps (VER-C1161J, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. The nine C1161-LOLO values are the working reading at M (VER-C1161J: joint gloss gain not above a fr16-window null).
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; the c186R gloss (170 letters) cannot license a per-sign or nine-sign change (window null p95 +0.08); next: a key-constrained lookalike pass on th/z/S/4 against the native crops before any new anneal, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; transcription error above the two-reader figure, a wrong held value, or a design element; next: the same lookalike pass on the highest-token free signs (th 208, z 189, S 275, 4 224), ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (VER-C1161J, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; the nine's gain over the pre-JOINT9 key (+0.035) is inside a fr16-window null (p95 +0.082, VER-C1161J); the gloss PASSes the fr16 judge (-0.808), the decode FAILs
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material
+- [ ] image-check: seven provisional new shapes; next: sorter or split test, and a lookalike pass on th/z/S/4, as in Remaining gaps
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: key-constrained lookalike pass on th/z/S/4 against the native crops, ~$3
