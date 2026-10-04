@@ -14,7 +14,7 @@ Merci beaucoup pour votre réponse et pour l'indication de Mme Camille Desenclos
 
 Pour répondre à votre question : non, ce travail n'a aucun lien avec la société CipherLab. « Cipher Lab » est seulement le nom que j'ai donné à mon projet de recherche personnel, non commercial et sans financement ; il n'est rattaché à aucune entreprise. Comme indiqué dans mon premier message, c'est moi qui dirige le projet et qui écris ; les lectures, les recherches de sources et les vérifications sont faites par des agents d'intelligence artificielle (modèles Claude), dans un dépôt ouvert où chaque étape est journalisée.
 
-Je vais écrire à Mme Desenclos, dont les travaux sur la cryptographie diplomatique française portent justement sur ces fonds ; nous allons aussi vérifier ses publications pour le folio 22 d'Espagnol 144 et les autres pièces de vos collections sur lesquelles nous travaillons.
+Je vais écrire à Mme Desenclos, dont les travaux sur la cryptographie diplomatique française portent justement sur ces fonds, pour lui demander si notre travail peut lui être utile et comment nous pourrions l'aider.
 
 Je vous remercie encore de votre aide.
 
@@ -28,7 +28,7 @@ Thank you very much for your reply and for pointing me to Dr Camille Desenclos.
 
 To answer your question: no, this work has no connection with the company CipherLab. "Cipher Lab" is only the name I gave my personal research project, which is non-commercial and unfunded; it is not attached to any company. As my first message said, I direct the project and write; the readings, source searches and checks are done by AI agents (Claude models) in an open repository where every step is logged.
 
-I will write to Dr Desenclos, whose work on French diplomatic cryptography concerns exactly these collections; we will also check her publications for Espagnol 144 f.22 and the other items from your collections we are working on.
+I will write to Dr Desenclos, whose work on French diplomatic cryptography concerns exactly these collections, to ask whether our work could be of use to her and how we might help.
 
 Thank you again for your help.
 
