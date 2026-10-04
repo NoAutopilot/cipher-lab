@@ -1,0 +1,18 @@
+sign	value	grade	p1_reconciled_RUN3-COSK	p2_reconciled_RUN3-COSK2	decode-1168	vs_1168	note
++	a	M	yes	13/13	a (C)	agree	
+4	b	M	yes	-	b (M)	agree	P1 only
+8	m	M	yes	-	m (M)	agree	P1 only
+L	h	M	yes	-	-	new	P1 only (honore)
+T	d	M	yes	4/4	d (C)	agree	
+TT	s	M	yes	4/4	s (C)	agree	
+Z	t	M	yes	5/6	~ t (C)	agree	dash+z; 1168 wrote it ~
+a	i	M	yes	1/1	i (C)	agree	
+b	o	M	yes	3/3	o (C)	agree	
+c	p	M	c/4 split	4/4	p (M)	agree	P2 settles c = p (per, patria, patre, nepote); P1 "c" readings were q-shapes
+d	r	M	yes	6/6	r (C)	agree	
+g	l	M	yes	5/5	l (C)	agree	
+o	e	M	yes	5/5	e (M)	agree	
+q	u	M	u/c/e	6/7 (c 1, in traducta)	e (C)	disagree	label covers >=2 shapes (u; c in traducta)
+y	n	M	yes	1/1	n (C)	agree	
+z	o	M	yes	2/2 (loro)	t (M)	disagree	bare z = o; 1168's t is the Z sign
+x	il S. Re	M	-	gloss only	-	new	word code (gloss "il S. Re" over .x.), not aligned
