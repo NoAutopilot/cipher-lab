@@ -1,0 +1,15 @@
+id	code_word	meaning	status	guarded
+9765.139	whack	Towards	COLLISION	J
+9765.139	white	Report	COLLISION	
+9885.368	summit	Impregnable	COLLISION	B
+9911.425	animals	Monroe	COLLISION	
+9729.85	subject	Protect	COLLISION	B
+9798.182	opinion	Field	COLLISION	B
+9823.230	passed	Fire	COLLISION	B
+9848.277	John	Imboden	COLLISION	J
+10010.593	Hotel	Weldon	COLLISION	
+# AGREE: guarded 0 of 198
+# COLLISION: guarded 6 of 9
+# CONFLICT: guarded 0 of 4
+# PARTIAL: guarded 0 of 6
+# UNFIXED: guarded 0 of 38

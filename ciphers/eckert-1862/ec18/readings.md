@@ -6,9 +6,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 [Washington] {date: Feb 7} {time: 12.30} For [Maj Genl U.S. Grant] [Nashville] There has been no [Movement] on [Mobile] unless made by [Maj Gen W. T. Sherman]  {tail: [signed] [General in Chief] Smith}
 
-**9730.87** (Page 64, 1864-05-04; H 30 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
+**9730.87** (Page 64, 1864-05-04; H 31 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
-[Washington] {time: 2.30 PM} {date: May 4} For [Maj Gen B. F. Butler] [.] [Maj Genl U.S. Grant]'s [Army] has [Cross (-ed, -ing)]ed the [Rapidan] {date: May 4}  {tail: [signed] [General-in-Chief] [.] Here is Judah's message From Germ ana [Ford (-ed, -ing)] For Inland [Washington] [.] The [Cross (-ed, -ing)]ing of [Rapidan] effected [.] [48] hours now will demonstrate whether the [Enemy] intends giving [Battle] this side of [Richmond] [.] [Telegraph (-ed, -ing)] Know that we have [Cross (-ed, -ing)]ed the [Rapidan] [signed] [Maj Genl U.S. Grant] Chinamen}
+[Washington] {time: 2.30 PM} {date: May 4} For [Maj Gen B. F. Butler] [.] [Maj Genl U.S. Grant]'s [Army] has [Cross (-ed, -ing)]ed the [Rapidan] {date: May 4}  {tail: [signed] [General-in-Chief] [.] Here is [Maj Genl U.S. Grant]'s message From Germ ana [Ford (-ed, -ing)] For Inland [Washington] [.] The [Cross (-ed, -ing)]ing of [Rapidan] effected [.] [48] hours now will demonstrate whether the [Enemy] intends giving [Battle] this side of [Richmond] [.] [Telegraph (-ed, -ing)] Know that we have [Cross (-ed, -ing)]ed the [Rapidan] [signed] [Maj Genl U.S. Grant] Chinamen}
 
 **9731.89** (Page 65, 1864-05-05; H 9 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -18,9 +18,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 2.30 PM} [25] May for [Maj Gen Fredk Steele] [.] a body of [General-in-Chief]'s have [Left] [Kansas] for [General-in-Chief] Territory under a military escort [.] Please send an escort to meet them on the [Kansas] border  {tail: [signed] [General-in-Chief] confident}
 
-**9765.139** (Page 99, 1864-06-24; H 8 C 0 I 0 M 0; print: OR ser. I vol. 34.4 p. 536 (OCR running head), 10 shared 5-grams)
+**9765.139** (Page 99, 1864-06-24; H 7 C 0 I 0 M 0; print: OR ser. I vol. 34.4 p. 536 (OCR running head), 10 shared 5-grams)
 
-{time: 8.30 PM} for [Maj Gen W. S. Rosecrans] [St Louis] Complaints is made to me that [General] Brown does not do his best to suppress bush [Towards] hers Please ascertain and [Report] to me  {tail: [signed] [President U.S.]}
+{time: 8.30 PM} for [Maj Gen W. S. Rosecrans] [St Louis] Complaints is made to me that [General] Brown does not do his best to suppress bush whack hers Please ascertain and [Report] to me  {tail: [signed] [President U.S.]}
 
 **9812.208** (Page 146, 1864-08-05; H 15 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -50,9 +50,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 [Washington] {time: 12} [Maj Gen Geo. H. Thomas] ---- [Maj Genl U.S. Grant] has ordered [Maj Gen W. S. Rosecrans] to send you [Reinforcements] to [East] port but it by no means [Follow (-ed, -ing)]'s that he will do so ---- as I shall be absent from [Washington] [3] or [4] days please [Communicate (-ed, -ing)] with [Maj Gen W. S. Rosecrans]  {tail: [signed] [General-in-Chief] End}
 
-**9885.368** (Page 219, 1864-11-02; H 14 C 0 I 0 M 0; print: OR ser. I vol. 43.2 p. 528 (OCR running head), 7 shared 5-grams)
+**9885.368** (Page 219, 1864-11-02; H 13 C 0 I 0 M 0; print: OR ser. I vol. 43.2 p. 528 (OCR running head), 12 shared 5-grams)
 
-[Winchester] {time: 10 AM} [2] For [Brigadier General] Stevenson [Harpers Ferry] [.] I will at once send a [Brigade] of [Cavalry] to [Impregnable] [Point] and to cover the working party on the [Road] out from Hall town Please inform the [Engineer] in charge  {tail: [signed] [P. H. Sheriden] End}
+[Winchester] {time: 10 AM} [2] For [Brigadier General] Stevenson [Harpers Ferry] [.] I will at once send a [Brigade] of [Cavalry] to summit [Point] and to cover the working party on the [Road] out from Hall town Please inform the [Engineer] in charge  {tail: [signed] [P. H. Sheriden] End}
 
 **9901.399** (Page 235, 1864-11-29; H 11 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
