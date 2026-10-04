@@ -531,3 +531,36 @@ Found:
 Not found: no passage in Kervyn's text dated 5 Sept or 7 Sept 1572 from Saint-Gouard (ink 53's date is 5 Sept; the nearest cited letters are 2 and 12 Sept), none dated 10 Oct 1573 (ink 63; nearest are 20 Oct and 3 Nov 1573), and nothing that prints or summarises inks 52, 53, 54 or 63 as a decipherment. Limits: OCR of one edition only; a variant date or a paraphrase without a date would not be caught by these greps; the volumes' index pages were not read. This is a search result for the log, not a novelty verdict (rule 10).
 
 Follow-up (one line, not run): the 19 Sept 1572 and 12 Sept 1572 letters Kervyn cites are in Gachard II (already on file, `labibliothquen02gachuoft`) at p. 395 ff.; a page check there is the cheaper route to what Kervyn's 12 Sept note rests on.
+
+## N6-VIV53 (4 Oct 2026, LANE-NEAR6 worker, account 2): ink piece 53 (5 Sept 1572, to the duc d'Anjou, fr.16104 ff.170r-171v) read with key.tsv
+Brief: .claude/briefs/runs/2026-10-04-ytbiz-near6-wave1.md "N6-VIV53". Started 10:15 UTC, box to 12:45 UTC (80% at 12:15).
+
+**Step 0, premise (10:20 UTC).** Gachard II (sources/ia-fulltext/print-check/labibliothquen02gachuoft_djvu.txt.gz, whole-volume grep): his
+table lists Saint-Gouard letters to the duc d'Anjou of 16 July 1572 (p.384) and 19 Sept 1572 (p.402) only; no 5 Sept 1572 letter to Anjou.
+Gachard I (labibliothque01gach): no "septembre 1572" / Gouard-Anjou hit. La Ferrière, Catherine IV: no reply or note naming a 5 Sept letter
+to Anjou. d'Ars (lepredemadamede00dargoog): cites Saint-Gouard to Anjou 16 July and 19 Sept 1572, not 5 Sept. Leaves: c184 = f.169v (address
+leaf of 52, endorsed "5 septembre 1572") | f.170r; c185 = ff.170v-171r, both full cipher; c186 = f.171v (cipher, closing "de Madril ce v^me
+de Sept^bre 1572", signed) | f.172r (address leaf "Monseigneur", docket 5 Sept 1572); c187 = f.172v | f.173r (ink 54). No "dechiffré" leaf
+between 53 and 54, none found for 53 (N5-VIVTAB saw none from 52 to 55). No decipherment or printed plaintext of 53 located. Proceed.
+
+**Layout (c184-c186 at 1600 px).** f.170r: docket "5 Septembre 1572", heading "du S^r de S^t gouard au Duc d'Anjou", old ink "53"; seven plain
+lines ("Monseigneur, Comme je n'ay intention que a bien et fidellement servir ... ce que j'ay traicté avecques le Roy catholique en l'audiance
+..."), then cipher from "Jntenon:" (L01) to the foot, 22 lines; f.170v 29 cipher lines; f.171r 30 cipher lines; f.171v 18 cipher lines then the
+plain closing. 99 cipher lines in all (N5-VIVTAB's ~100 est.). **Interlinear words** above some groups on f.170r (L03), f.170v (L14-L15) and
+f.171r (L07, L09, L10, L19, L23, L25 at least) -- gate (a) applies.
+
+**Crops** (debug overlays checked; f.171r's slope fits crossed between L18-L19 and L23-L26 because of the glosses, and the detector merged
+the "smp#" line into its neighbours, so f.171r was re-cut as fixed bands with centres set by eye from the first run's fits, +15/+40 px margins):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 184 --region 4700,2000,3150,2950 --out ciphers/fr16104-vivonne-spain-1572/images/p53 --prefix c184_f170r --follow-slope 400 --distance 90 --max-width 1600 --overlap 150 --debug
+  22 lines, 22 bands x 3 segments; wrote 66 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 185 --region 1300,880,2900,4050 --out ciphers/fr16104-vivonne-spain-1572/images/p53 --prefix c185_f170v --follow-slope 400 --distance 80 --max-width 1600 --overlap 150 --debug
+  29 lines, 29 bands x 2 segments; wrote 58 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 185 --region 4620,850,3100,4000 --out ciphers/fr16104-vivonne-spain-1572/images/p53 --prefix c185_f171r --centres 195,311,429,547,666,790,925,1059,1190,1313,1452,1586,1714,1854,1984,2117,2241,2355,2469,2636,2760,2895,3023,3140,3260,3400,3541,3673,3807,3927 --top-margin 15 --bottom-margin 40 --max-width 1600 --overlap 150 --debug
+  30 lines, 30 bands x 3 segments; wrote 90 crops
+$ python3 tools/iiif_lines.py --ark btv1b9009609w --canvas 186 --region 1250,1330,2950,2300 --out ciphers/fr16104-vivonne-spain-1572/images/p53 --prefix c186_f171v --follow-slope 400 --distance 80 --max-width 1600 --overlap 150 --debug
+  18 lines, 18 bands x 2 segments; wrote 36 crops
+```
+**Units, stated before the first subagent call:** 4 pages x (2 blind Sonnet passes + 1 reconciliation) = 12 units at ~USD 1.3 = ~15.6, plus
+the gloss look -- over 80% of the USD 15 cap (N5-VIV54 ran ~4 per page all in). So **3 pages are read: f.170r, f.170v, f.171r** (9 units,
+~11.7, where the interlinear words are); f.171v (18 lines, ~USD 4) is left as a named gap with its crops cut and committed to the manifest.
