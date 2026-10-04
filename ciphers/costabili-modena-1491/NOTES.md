@@ -81,9 +81,45 @@ Question: is any of Costabili's four dated 1491 letters (12 Mar R1163; 15 Jun R1
 
 Requests: archive.org advancedsearch 10, be-api 17, raw.githubusercontent 1, www.vestigia.hu 40 (home, api/search x2, document redirect, route probe, app.js, 33 documents); no 429/403. Subagents 0.
 
+## R1166 P1 key rebuild from the interlinear (RUN3-COSK, 4 Oct 2026, 09:07-09:2x UTC)
+
+Images: one DECODE browser login (`tools/decode_browser_login.js 1166 <scratch> --guess-fullsize --max-files 10 --delay 1800`),
+4 full-size pages to the scratchpad only; P1/P2 sha1 match `images_manifest.tsv` (7ea51a6f..., 2560751b...). Nothing committed.
+Crops (Usage 6, the command): `python3 tools/iiif_lines.py --image IMG_R1166_I5853_P1.png --out <scratch>/crops --region
+330,1150,2120,2450 --centres 150,255,360,455,560,645,760,860,950,1045,1135,1235,1340,1430,1630,1710,1820,1910,2090,2180 --prefix p1
+--lines-per-crop 1 --top-margin 105 --bottom-margin 40 --debug` -> 20 crops 2120x~245 (automatic detection found 0 lines on the dark
+mount, hence `--centres`, picked from a 50-px grid view).
+Pre-registration committed first: `align/PREREG-RUN3-COSK.md` (fd703449). Passes: two blind Sonnet calls over the 20 crops (B in
+reverse order), labels from the decode-1168 list -> `align/r1166p1_passA.tsv` (61 rows, 18 glossed), `align/r1166p1_passB.tsv` (42
+rows, 31 glossed). Alignment `align/run_align.py` (shared `tools/interlinear_align.py align --code-prefix @ --keep-fs`, decode-1168's
+filter and statistic), gloss-shuffle control, 20 seeds (the pairing shuffle can change consistency, so the control can fail differently):
+
+| input | pairs | real agree | shuffle mean | shuffle p95 | gate (p95 + 0.20) |
+|---|---|---|---|---|---|
+| pass A (blind) | 8 | 0.382 | 0.112 | 0.182 | PASS |
+| pass B (blind) | 14 | 0.272 | 0.193 | 0.243 | FAIL |
+| reconciled (this worker, by eye, 15 pairs) | 15 | 0.864 | 0.253 | 0.321 | PASS |
+
+Why B failed: it took clear-text lines ("et le promesse non sono attese", "li Principali Baroni ...") as glosses, and both passes
+wrote the lead-in dash as a separate sign `~`. **Reconciliation finding:** on P1 a dash before a sign is a lead-in stroke, not a
+sign, except in the combination dash+z, which is t; a bare z is o. Read that way the glosses fit letter for letter: "tradurla" =
+`~z d + T q d g +`, "honore" = `L z y b d o`, "conveneria" = `q b y q o y o d a +`, "Le nocie" = `g o y z q a o`, "tuti Li termini
+sono" = `~z q ~z a | g a | ~z q d 8 a y a | TT b y b`, "non" = `y b y`, "nanti la recu[peratione]" = `y + y ~z a g + d o q q`
+(`align/r1166p1_reconciled.tsv`, `~z` written `Z`; alignment `align/r1166p1_reconciled_align.tsv`).
+
+Key (`align/key_r1166p1.tsv`): + a, 4 b, 8 m, L h, T d, TT s, ~z t, a i, b o, d r, g l, o e, q u (5/11; c 4, e 2), y n, z o.
+**Grade M throughout**: the pre-registered C rule needs both blind passes over gate and pass B failed; the reconciled set is
+this worker's reading with the glosses in view, so its control pass licenses M, not C (no upgrade after the fact).
+Against decode-1168 `key.tsv`: **agree 12** (+, 4, 8, T, TT, ~z=~, a, b, d, g, o, y), **disagree 2** (q: 1168 e, here u/c/e -- the
+label q covers at least three shapes, as 1168 suspected; z: 1168 t (M), here bare z = o and ~z = t, which resolves 1168's t/o
+split as two signs under one label), **new 1** (L = h). Same cipher family on both letters (1491 R1166, 1492 R1168).
+Not done: P1 groups beyond the 15 checked pairs (".f." with "a sua Mta" and ".x." look like word codes; "conclusione", "a proposito
+del Monsignore figliolo suo", "cum pegiore satisfactione" spans not aligned), P2, P4. Subagent calls 2; reconciliation 1 unit
+(10 crop/grid views). Requests: de-crypt.org 1 login + record page + 8 files (1.8 s apart), no challenge.
+
 ## Remaining gaps (COS-M, 4 Oct 2026; item 4 closed by RUN3-COST)
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table)
-- Key rebuild from the period decipherments (R1166 interlinear P1-P2 first, then the R1163 and R1165 slips and the R1167 clear copy) - blocker: not-attempted; images measured this job, alignment not in the brief; next: crop transcription of R1166 P1 (2 blind passes + reconciliation) and tools/interlinear_align.py, compared with decode-1168 key.tsv, ~$6
+- Key rebuild from the period decipherments: R1166 P1 started (RUN3-COSK: 15 sign values at M from 15 eye-checked pairs, control passed; 12 agree with decode-1168) - blocker: not-attempted for the rest; the C grade needs a blind pass that clears the gate, so re-run two blind passes with the settled convention (dash = lead-in stroke, ~z = t, z = o; q split into its shapes) over the 20 crops plus P2, then the R1163/R1165 slips and the R1167 clear copy; next: 2 blind passes + reconciliation on P1-P2 with the convention in the brief, ~$5
 - R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align after the R1166 key exists, ~$5
 - R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; read once the rebuilt key exists; next: decode with the rebuilt key, ~$1
 - Vestigia page-image map of 2950/2955/2977 to R1163/R1165/R1166 (print search itself done, RUN3-COST, no printed text found) - blocker: not-attempted; images public on vestigia.hu, not opened this job; next: open the 8-10 images of 2955 and 2977 and compare with R1165/R1166 leaves, ~$1
@@ -91,12 +127,12 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us; ~4,960 of th
 ## Escalation (4 Oct 2026)
 - [x] siblings: R1162 key/gloss and R1168 f.13 Exemplum read first (their folders), not reapplied here
 - [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
-- [ ] known-keys: apply decode-1168 key.tsv to R1166 P1 groups and compare with the interlinear gloss, as part of the key-rebuild step
+- [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 P1 rebuild (RUN3-COSK: 12 agree, 2 disagree as label collisions, 1 new)
 - [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
 - [ ] key-rebuild: interlinear_align.py on R1166 P1-P2 gloss, then the R1163/R1165 slips and R1167 copy; planned step above
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: Vestigia image map for 2955/2977 (~$1), then key rebuild from R1166 P1-P2 interlinear (~$6)
+Verdict: keep going: 4 internal gaps; cheapest next: Vestigia image map for 2955/2977 (~$1), then the blind re-pass of R1166 P1-P2 with the settled sign convention (~$5)
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check: OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 3 step(s) untried

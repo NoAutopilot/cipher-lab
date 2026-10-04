@@ -1,0 +1,16 @@
+sign	value	grade	n	agree	others	decode1168	compare
++	a	M	6	6		a (C)	agree
+4	b	M	1	1		b (M)	agree
+8	m	M	1	1		m (M)	agree
+L	h	M	1	1		-	new
+T	d	M	3	3		d (C)	agree
+TT	s	M	1	1		s (C)	agree
+Z	t	M	5	5		t (C)	agree
+a	i	M	8	8		i (C)	agree
+b	o	M	7	7		o (C)	agree
+d	r	M	6	6		r (C)	agree
+g	l	M	6	6		l (C)	agree
+o	e	M	10	9	a:1	e (M)	agree
+q	u	M	11	5	c:4,e:2	e (C)	disagree
+y	n	M	13	13		n (C)	agree
+z	o	M	2	2		t (M)	disagree
