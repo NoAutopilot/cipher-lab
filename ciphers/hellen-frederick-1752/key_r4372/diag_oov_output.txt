@@ -1,0 +1,2 @@
+seed 1: real 42 pairs, share scoring 0 (OOV left word) 0.405 vs order-shuffle mean 0.252 | OOV->floor: real -1.012 vs shuffle mean -1.101, p 0.115 | OOV->floor and pairs with pmi>=3 dropped: real -1.116 vs -1.112, p 0.505
+seed 2: real 42 pairs, share scoring 0 (OOV left word) 0.405 vs order-shuffle mean 0.264 | OOV->floor: real -1.012 vs shuffle mean -1.107, p 0.105 | OOV->floor and pairs with pmi>=3 dropped: real -1.116 vs -1.117, p 0.415

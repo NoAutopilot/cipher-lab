@@ -97,3 +97,16 @@ comb_L uni -7.767 vs -9.439, comb_R0 -7.430 vs -9.376, comb_R100 -7.376 vs -9.37
 R4369 LR100 alone -7.017. Adding any R4372 half lowers the uni real by 0.36-0.87: the 1-800 half reads worse than the 801+ half.
 Secondary rows (not gated): R1049 (1756) LR100 uni p 0.010 with bi order p 0.310, full uni p 0.005 / bi 0.205 -- one statistic only, 35 secondary tests; nothing else under 0.0125.
 Result: **fail** on every attribution. Unlike R4370 (bi order p 0.595), R4372 LR100's bigram statistic sits at or under the gate on both seeds.
+
+## N4-HEL6 (4 Oct 2026, account 2, for LANE-NEAR4): diagnosis of R4372 LR100's bigram-only signal (PREREG key_r4372/PREREG_diag.md, f5dd973f)
+Script key_r4372/diag.py (seeds 1, 2; `--check`), output diag_output.txt / diag_output_seed2.txt; not pre-registered follow-up diag_oov.py.
+
+| test | target | control | p | power | verdict |
+|---|---|---|---|---|---|
+| Part A: pairs carrying bi excess (42 pairs) | k* = 1: dropping "mon peuple" (414-422, pmi 3.24) raises bi order p 0.005 -> 0.030 | order shuffle mean -0.797 | -- | -- | artefact rule (k*<=3, one tag m1-m4 on all) did not fire: the pair carries no tag |
+| Part B: junctions with R4369 H/S neighbours (93 codes, 139 tokens, J=186) seed 1 | S_B -0.794 | (i) R4372 permuted mean -0.814 / p99 -0.658; (ii) R4370 size-matched mean -0.794 / p99 -0.636 | 0.310 / 0.460 | 1.00 (R4369 held-out, J=186) | **FAIL** |
+| Part B seed 2 | -0.794 | (i) -0.817 / -0.679; (ii) -0.787 / -0.611 | 0.310 / 0.555 | 1.00 | **FAIL** |
+| not pre-registered: OOV pairs set to the floor | -1.012 | order shuffle -1.101 | 0.115 (seed 2 0.105) | -- | signal gone; with "mon peuple" also dropped p 0.505 |
+
+Result: control-backed negative for R4372 as codes 1-800 on the context test; the bigram signal is one high-PMI pair plus the share of
+pairs whose left word is outside fr18 (pmi() returns 0 there, above the -1.204 floor): 40.5% in the real order vs 25.2% under shuffle.

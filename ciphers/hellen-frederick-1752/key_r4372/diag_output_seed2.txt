@@ -1,0 +1,64 @@
+# Part A: R4372 key_LR100 on R1953, seed 2
+bi real -0.525 on 42 pairs; order-shuffle mean -0.790; order p 0.000
+pos	x	y	v(x)	v(y)	junction	pmi	excess	tags
+686	414	422	mon	peuple	mon|peuple	3.242	+4.032	-
+425	268	255	trouvent	dans	trouvent|dans	2.401	+3.191	-
+117	453	593	sign.	deux	sign|deux	0.000	+0.790	-
+195	514	454	+ neglige	zero	neglige|zero	0.000	+0.790	m2
+254	43	405	consequen	zero	consequen|zero	0.000	+0.790	m2
+255	405	299	zero	d/c	zero|d	0.000	+0.790	m2
+314	8	440	zero	?fusse	zero|fusse	0.000	+0.790	m2
+325	513	24	dresde	prusse	dresde|prusse	0.000	+0.790	-
+388	540	580	esperanc	extrem	esperanc|extrem	0.000	+0.790	-
+458	133	440	zero	?fusse	zero|fusse	0.000	+0.790	m2
+459	440	730	?fusse	fo	fusse|fo	0.000	+0.790	-
+479	405	208	zero	tion	zero|tion	0.000	+0.790	m2
+540	540	774	esperanc	ami	esperanc|ami	0.000	+0.790	m1
+589	540	774	esperanc	ami	esperanc|ami	0.000	+0.790	m1
+617	147	439	vigueurs	savoir?	vigueurs|savoir	0.000	+0.790	-
+737	540	376	esperanc	pen	esperanc|pen	0.000	+0.790	-
+758	147	376	vigueurs	pen	vigueurs|pen	0.000	+0.790	-
+785	43	414	consequen	mon	consequen|mon	0.000	+0.790	-
+805	540	122	esperanc	dent	esperanc|dent	0.000	+0.790	-
+90	413	703	g	avoit	g|avoit	-1.204	-0.414	-
+130	462	394	la	zero	la|zero	-1.204	-0.414	m2
+152	414	369	mon	em	mon|em	-1.204	-0.414	-
+192	255	485	dans	plus	dans|plus	-1.204	-0.414	-
+256	299	487	d/c	gri	c|gri	-1.204	-0.414	-
+273	593	351	deux	pi	deux|pi	-1.204	-0.414	-
+290	794	203	suis	empire	suis|empire	-1.204	-0.414	-
+302	35	458	a ete	es	ete|es	-1.204	-0.414	-
+317	376	487	pen	gri	pen|gri	-1.204	-0.414	-
+439	202	454	ter..	zero	ter|zero	-1.204	-0.414	m2
+620	282	492	feu	presque	feu|presque	-1.204	-0.414	m1
+633	399	312	fondement	lieu	fondement|lieu	-1.204	-0.414	-
+672	587	296	avantage	Berlin	avantage|berlin	-1.204	-0.414	-
+687	422	255	peuple	dans	peuple|dans	-1.204	-0.414	-
+724	794	364	suis	merit,	suis|merit	-1.204	-0.414	-
+748	415	796	nom	vont	nom|vont	-1.204	-0.414	-
+749	796	540	vont	esperanc	vont|esperanc	-1.204	-0.414	-
+757	332	147	autre	vigueurs	autre|vigueurs	-1.204	-0.414	-
+761	487	282	gri	feu	gri|feu	-1.204	-0.414	-
+762	282	492	feu	presque	feu|presque	-1.204	-0.414	m1
+781	203	492	empire	presque	empire|presque	-1.204	-0.414	-
+782	492	268	presque	trouvent	presque|trouvent	-1.204	-0.414	-
+809	346	405	envers	zero	envers|zero	-1.204	-0.414	m2
+leave-out curve (k pairs dropped: real / order p): 0:-0.525/p0.000 1:-0.617/p0.050 2:-0.692/p0.155 3:-0.710/p0.200 4:-0.729/p0.260 5:-0.748/p0.335 6:-0.769/p0.410 7:-0.791/p0.510 8:-0.814/p0.565 9:-0.839/p0.635 10:-0.865/p0.770
+k* = 1; tags of the first k* pairs: ['-']; artefact rule fired: no
+repeated code pairs among the 42: 540-774 x2, 282-492 x2
+# Part B: junctions of R4372-decoded tokens (codes 1-800, zero excluded) with R4369 H/S neighbours
+units: 93 codes, 139 tokens, J = 186 junctions
+S_B real -0.794 | (i) R4372 permuted: mean -0.817, p99 -0.679, p 0.310 | (ii) R4370 size-matched: mean -0.787, p99 -0.611, p 0.555
+positive control: R4369 own values, 502 junctions available (full-pool real -0.349); subsampled to J=186: power (p<=0.01 vs 50 permutations) 1.00
+gate (seed 2): FAIL
+per-code (s_c, n junctions, per-code (i) p), sorted by p:
+  118	commerce	s_c 0.636	n 2	p 0.005  <- candidate (n>=2, p<=0.05)
+  42	que	s_c 0.259	n 2	p 0.005  <- candidate (n>=2, p<=0.05)
+  592	vi	s_c 1.860	n 1	p 0.015
+  142	ro	s_c 0.854	n 3	p 0.020  <- candidate (n>=2, p<=0.05)
+  238	ren	s_c 0.758	n 2	p 0.025  <- candidate (n>=2, p<=0.05)
+  255	dans	s_c 0.244	n 3	p 0.040  <- candidate (n>=2, p<=0.05)
+  414	mon	s_c -0.570	n 4	p 0.045  <- candidate (n>=2, p<=0.05)
+  308	avec	s_c -0.301	n 3	p 0.060
+  35	a ete	s_c -0.423	n 1	p 0.095
+per-code candidates (n>=2, p<=0.05): 6 of 93 codes; expected by chance about 2.8

@@ -1051,3 +1051,64 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: pre-registered diagnosis of R4372's bigram-only signal on R1953, ~$5
+
+## N4-HEL6 (4 Oct 2026): pre-registered diagnosis of R4372's bigram-only signal on R1953 (account 2 worker for LANE-NEAR4)
+
+Step run: N4-HEL5's cheapest next. **Pre-registration** `key_r4372/PREREG_diag.md` (commit f5dd973f) was pushed before anything
+was computed. Script `key_r4372/diag.py` (seeds 1 and 2, `--check` exits 0); the model, `words()` and `pmi()` are imported unchanged
+from `sibling_michell/test_sibling.py`, and Part A reproduces NEAR3-HEL4's LR100 row (bi -0.525 on 42 pairs). Disk only: no
+requests, no subagent or vision calls.
+
+**Part A: which pairs carry the signal.** Order-shuffle mean -0.797, real -0.525 (order p 0.005 seed 1, 0.000 seed 2). Two pairs
+are above the shuffle mean by more than the generic +0.797: "mon|peuple" (codes 414-422, PMI 3.24) and "trouvent|dans" (268-255,
+2.40). Seventeen pairs score exactly 0, because one of their words is outside the fr18 vocabulary ("zero" seven times, "esperanc",
+"consequen", "vigueurs", "sign."). The other 23 sit at the unseen-pair floor of -1.204. **Leave-out curve:** dropping "mon peuple"
+alone raises order p to 0.030, and dropping both raises it to 0.140, so **k\* = 1**. The pre-registered artefact rule needs every
+pair up to k\* to carry one mechanism tag: m1 repeated pair, m2 null, m3 doubled code, m4 function-word collocation. "mon peuple"
+carries none of these, so **the rule did not fire**. Two repeated pairs exist, 540-774 "esperanc ami" x2 and 282-492 "feu presque"
+x2, but they do not carry the excess.
+
+**Part B: the gated context test.** It scores each R4372-decoded token (codes 1-800, nulls excluded) against the R4369 H/S words
+on either side of it, so none of its junctions are in Part A's statistic. 93 codes, 139 tokens, J = 186 junctions.
+
+| seed | S_B real | (i) R4372 values permuted: mean / p99 / p | (ii) R4370 values, size-matched: mean / p99 / p | power (R4369 held out at J=186) | gate |
+|---|---|---|---|---|---|
+| 1 | -0.794 | -0.814 / -0.658 / 0.310 | -0.794 / -0.636 / 0.460 | 1.00 | **FAIL** |
+| 2 | -0.794 | -0.817 / -0.679 / 0.310 | -0.787 / -0.611 / 0.555 | 1.00 | **FAIL** |
+
+The positive control is R4369's own 801+ values, each held out and scored against its H/S neighbours the same way. Over its full
+pool of 502 junctions it reads -0.349, and subsampled to 186 it reaches p <= 0.01 in 200 of 200 draws. So at this N the test finds
+a right key, and **R4372's values sit at the level of a permuted R4372 and of another 1751 French table (R4370)**. Per-code: 6 of
+93 codes reach p <= 0.05 with n >= 2 junctions, against about 2.8 expected by chance. The gate failed, so PREREG B5 names none of
+them as candidate values and grades nothing.
+
+**Mechanism (not pre-registered, `key_r4372/diag_oov.py`, `diag_oov_output.txt`).** `pmi()` returns 0 when the left word is not in
+fr18. That is above both the floor and the shuffle mean, so an abbreviated or null value scores better than a real French word
+that has no attested continuation. In R1953's real order, 40.5% of the 42 covered pairs have an out-of-vocabulary word, against
+25.2% (seed 2: 26.4%) under the order shuffle. Codes 405 "zero", 540 "esperanc" and 43 "consequen" sit next to other 1-800 tokens
+more often than chance would place them. This is a property of where those codes stand in the ciphertext, whatever R4372 says
+they mean. With those pairs set to the floor, the order p rises to 0.115 (seed 2: 0.105). With "mon peuple" also dropped, it is
+0.505. **Verdict, by PREREG B5:** "R4372's values do not fit the R4369-decoded context beyond chance" (a control-backed negative,
+target and controls side by side above, power 1.00). The bigram signal is not supported by the context check. Read outside the
+pre-registration, it is one high-PMI pair plus the out-of-vocabulary scoring of clustered codes. It is not partial real values.
+R4372 is retired as a source for codes 1-800, and **R4369's reading stands unchanged** (H 152 / S 304 / M 16 / U 374).
+Tool note (Usage 7, not run): `test_sibling.py`'s `pmi()` should score an out-of-vocabulary left word at the unseen floor, not
+at 0, before its bigram statistic gates anything else. R4369's own pass rests on its unigram p 0.000, which this does not touch.
+Report what was found and where it was not found: no real codes 1-800 values were found in R4372 by the context check.
+
+## Remaining gaps (N4-HEL6, 4 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; R4370 and R4372 both fail the pre-registered test, and R4372's bigram-only signal is now diagnosed as one pair plus out-of-vocabulary scoring, with the context check at p 0.31-0.56 at power 1.00 (N4-HEL6); next: a cryptanalytic key-rebuild of 1-800 with its own control (context-fit anneal against the R4369-decoded neighbours, the Part B statistic as the objective and its held-out R4369 control as the gate), with the Fagel 5177 clear pages (scans 5-93) as a writer- and week-matched corpus, ~$10
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: not-attempted; R4376 (f.56, docket 1754, French table 1-500 with "la Haye", no holder) not yet tested; R4372 LR100 gave R1049 a uni-only p 0.010 (secondary, not gated); next: transcribe R4376 P3 and test on R1049 with R4372 as a pre-registered second candidate, ~$8
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; neither R4369, R4370 nor R4372 reads them, and no 1763 Hellen table has been found among the Add MS 32276 records looked at (post-1756 records R4381-R4408 not yet opened)
+
+## Escalation (N4-HEL6, 4 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half (READ2-HEL2, NEAR3-HEL4, N4-HEL6 context check); all 25 unopened Add MS 32276 records up to f.56 looked at (NEAR3-HEL3)
+- [x] clear-pages: Fagel 5177's clear copies of Hellen's Oct-Dec 1751 letters looked at (N4-HEL5); no ciphertext of those letters survives in 5177, DECODE or the Fagel series, so they are context only, not a crib for R1953 itself
+- [x] known-keys: R4369 transcribed and tested, reads R1953; R4370 and R4372 transcribed and tested, neither reads codes 1-800; R4372's bigram signal diagnosed (N4-HEL6)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: infer values for codes 1-800 from context in the R4369-decoded spans (cryptanalytic, needs its own control); N4-HEL6's Part B statistic with its held-out R4369 positive control (power 1.00 at J=186) is a ready objective and gate; the 5177 clear pages are the matched corpus
+- [x] image-check: R4369, R4370 and R4372 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
+Verdict: keep going: 3 internal gaps; cheapest next: cryptanalytic key-rebuild of codes 1-800 against the R4369-decoded context with its own held-out control, ~$10
