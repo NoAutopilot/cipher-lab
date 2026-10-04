@@ -8107,3 +8107,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 07:45 | LONGLEE-SORTER (account 3 worker) | claim: fr16106-vivonne-longlee-1579 owner sign-sorter inputs (signs/labels/focus/pages line crops) for fr.16107 c107-c109 cipher; cap 6, box 07:45-08:45 UTC
 2026-10-04 07:45 | BIR-KEYFIT (account 3 worker) | claim: nevers-birago-fr3251-1572 BIR-KEYFIT constrained key refit on owner-right labels, known-answer control on no.87 first; cap 10, box 07:46-09:16 UTC
 2026-10-04 07:47 | N5-VIVTAB (account 2 worker, for LANE-NEAR5) | claim: fr16104-vivonne-spain-1572 N5-VIVTAB per-letter piece table of fr.16104/16105; box ends 08:47 UTC
+2026-10-04 07:47 | N5-HEL7 (account 2 worker, for LANE-NEAR5) | claim: hellen-frederick-1752 key-rebuild of codes 1-800 by context, control first; box ends 09:17 UTC
