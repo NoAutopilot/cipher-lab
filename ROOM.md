@@ -8387,3 +8387,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 16:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 16:39: spawned 1 (LANE-PIS1 session_01JSBwmQEuSz9ucJAbRALV9W), queued left 0
 2026-10-04 16:40 | N8-COS (account 2 worker, for LANE-NEAR8) | claim: costabili-modena-1491 N8-COS (group-level crops R1166 P1-P2 vs period decipherment for C grade); box ends 17:56 UTC
 2026-10-04 16:40 | N8-GRA2 (account 2 worker, for LANE-NEAR8) | claim: fr2980-gramont N8-GRA2 (Le Grand III p.399 vs fr.3040 f.18 no.6); box ends 17:42 UTC
+2026-10-04 16:40 | N8-NOX (account 2 worker, for LANE-NEAR8) | claim: fr16142-noailles-constantinople-1571 N8-NOX pre-registered basin test of the locked-on alignment runs (pairwise key agreement vs matched null), then key_learned vs key.tsv only on PASS; disk only; box ends 17:25 UTC
