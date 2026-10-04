@@ -3973,6 +3973,35 @@ recovered-passages per the brief (old value kept in `claim_scope_was`). Per-item
 text rather than names/codes (Gramont f.29r 94%, Thurloe P4 95%, Linhares 88%, Gramont f.30 85%, no.86 83%) and for Mercy (92%:
 no external check and no authentication distance on file).
 
+## LANE A3V3 handoff (session_01NyEj38WeV9HJNbC1VgexUQ, account 3), 4 October 2026 (opened 06:08 UTC; closed 07:4x UTC)
+State: CLOSED 07:4x UTC, brief's queue worked through and lane near its cap; no check-in armed. Brief .claude/briefs/runs/2026-10-04-acct3-lane-a3v3.md; waves .claude/briefs/runs/2026-10-04-acct3-a3v3-wave1.md (+1b), -wave2.md, -wave3.md. Opus 5.5 workers (Sonnet 5.5 for the sweep and the Souchon read).
+
+| job | target | session | cap | cost | result |
+|---|---|---|---|---|---|
+| A3V3-PAGA | paget AUDIT 1 refresh | session_01M1QcMHWquyt9irAKsYjKP9 | 7 | 2.97 | N0 held; D1 both letters; 9/10 H->M upheld; findings 77/84/34/38/158 |
+| A3V3-ROUSW | naf14913 f.197r/f.165r + ff.290r-392v sweep | session_01Ge2kXSEe74rjTdUfcVKwVR | 4 | 3.44 | f.165r = Souchon 2031, f.197r = 2044; 206 pp, controls 60/60, 0 finds |
+| A3V3-SANGP | sanguszkow pl18 + Potocka trial | session_013Mrw6wjng7xaUPqDbKrKzQ | 8 | 3.14 | Potocka key control-backed negative; homophonic N=232 non-test (control 0.076) |
+| A3V3-ES9396 | es132 f.93-95 duplicate | session_017HMZdU7M5DJcBsAKydptYG | 14 | 11.21 | err_true about 4% per reading (upper bound); 54 settlement proposals |
+| A3V3-ECK18 | eckert mssEC 18 book 1 | session_013khgcZHs6MKz1TbTbVpEsv | 5 | 3.07 | 28 fully keyed; 9 in OR vs control 0.25 |
+| A3V3-BALB | baluze167 bare passages | session_01TFCrLbohEVMK5krDLdjYGW | 9 | 5.01 | key known-answer 14/14 vs null 0.031; 3 of 5 read, all already in Tomokiyo |
+| A3V3-PAGR | paget per-token rulings | session_01U2nxCRRCXuLnT5HAy1xYVv | 6 | 4.43 | pin gate FAIL -> findings stay M; H 50 S 77 M 365 |
+| A3V3-ES132S | es132 f.89 ? settlement | session_011UMzxnNYFXeFrckyCmdeae | 5 | 2.27 | ? 113 -> 70; control 96% (all-firm 93.8%, caveat) |
+| A3V3-SOU44 | naf14913 Souchon 2044/2031 | session_01EsUQSVkhfvphdYMBsEZmJn | 2 | 0.87 | bare date lines: no plain side |
+| A3V3-ECK2 | eckert book 2 | session_017VEfUD5Y6r1VLPurzc5rbz | 4 | 2.17 | 12/17 in OR vs control 0.75; book 1 now 14/28 |
+| A3V3-SAVT | savary table recovery | session_01Nm57F8B2ej97ZqbohFmLuJ | 10 | 2.94 | seed gate PASS, hard-EM held-out FAIL; parked on owner sort |
+| A3V3-ES7C | es132 rule-7 after ES132S | session_01PmnWNprRHnk57FW1TwtPg3 | 3 | 1.38 | rule-7 SAME 1946/1946 |
+| A3V3-ECKC | eckert C-grade alignment | session_01CagfQes6cFpy9LAVtnTrJq | 4 | 3.53 | 0.744 vs control 0.171, 26/26; C 221 H 156 I 6 |
+| A3V3-PG7 | paget rule-7 after PAGR | session_01DM6Zvag34emrae7fGcgWvr | 3 | 2.05 | rule-7 SAME 505/505; seed-path tokens reproduce |
+
+Workers 48.48; orchestrator about 5.8 (self-ledger row). New unique solves: none. Noailles c510-516 sorter page built in this lane's container only
+(13.9 MB, not committed; ROOM 06:14): the account-3 orchestrator rebuilds with sorter/build.sh after `pip install numpy scikit-image scikit-learn
+opencv-python-headless` and publishes with {"db": {}}.
+Open items, cheapest first (none started): eckert possessive/collision guards + image-check of the Lehigh/weigh conflicts (~2); baluze167 168
+f.246-247 (~3) and 170 ff.228-230 (~6); sanguszkow crib-assisted run with crib-matched control (~6); paget is at its instrument limit (pin gate
+FAIL, rule 3) -- new material or the AN Marine B7 copy (LOCAL-QUEUE L11) next; savary waits on the owner sort; naf14913 plain side needs new
+material (Souchon and ff.1r-392v exhausted). For the parent: es132 all-firm control 0.938 < 0.95 (the 18 replacements carry that caveat);
+pin_pagr.py needs a deep clone (base 4b518e74).
+
 ## LANE A3V2 handoff (session_01TBNzPkWnXSgB5cPPR7bn2m, account 3), 4 October 2026 (opened 04:53 UTC; live)
 State: CLOSED 05:5x UTC on seven_day allowed_warning (lane orchestrator at depth 2); heading kept for the push guard.
 Brief: .claude/briefs/runs/2026-10-04-acct3-lane-pools2-a3v2.md; waves .claude/briefs/runs/2026-10-04-acct3-a3v2-wave1.md, -wave2.md (with amendments). Fable workers.
