@@ -12,3 +12,14 @@ not committed (not public domain); `../images/decode/manifest.json` has their UR
   `python3 tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 [--check]`.
 - `judge_calib.py` -> `judge_calib_output.txt`: the judge run on true decodes at this key's coverage.
 See NOTES.md "READ2-HEL" and HYPOTHESES.md.
+
+## Decoding conventions (stated 4 Oct 2026 by LANE-READ2 after the READ2-HELRD rule-7 re-derivation)
+
+READ2-HELRD re-derived R1953 from the spec and key alone: 845/846 tokens agreed. The one difference (token 355, code 1023) and two
+trial-matched choices come from conventions that were only in `build_keys.py`'s docstring. They are:
+1. A cell whose text starts with `~` is crossed out on the sheet and is NOT used (code 1023's left cell `~satisfa` -> U).
+2. A right-hand entry belongs to code+100 (the LR100 attribution chosen by the control-backed test, grade S); where a left cell and a
+   right entry land on the same code, the right entry is used.
+3. A trailing `?` on a ciphertext token (e.g. `990?`) is read as usual but graded M; an inner `?` (a doubtful digit, e.g. `128?3`) is unkeyed (U).
+With these three rules a spec-plus-key reader reproduces the committed reading 846/846 (READ2-HELRD's own statement). The reading
+itself is unchanged; `tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check` still passes.
