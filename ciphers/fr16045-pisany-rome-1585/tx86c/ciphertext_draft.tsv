@@ -1,0 +1,749 @@
+line	position	sign	confidence	alt	why
+f244v_L00	1	T18	H		agree
+f244v_L00	2	T33	H		agree
+f244v_L00	3	T45	M		agree-flagged
+f244v_L00	4	T41	H		agree
+f244v_L00	5	T23	H		agree
+f244v_L00	6	T20	M	B:-	gap
+f244v_L00	7	T40	M	B:-	gap
+f244v_L00	8	T58	M	B:T24	differ
+f244v_L00	9	T18	M	B:T17	differ
+f244v_L00	10	T49	M	B:T37	differ
+f244v_L01	1	T33	H		agree
+f244v_L01	2	/	H		agree
+f244v_L01	3	T21	M	B:-	gap
+f244v_L01	4	T44	H		agree
+f244v_L01	5	T30	M	B:-	gap
+f244v_L01	6	T64	M	B:T28	differ
+f244v_L01	7	T46	H		agree
+f244v_L01	8	T26	H		agree
+f244v_L01	9	T12	H		agree
+f244v_L01	10	T46	H		agree
+f244v_L01	11	T37	H		agree
+f244v_L01	12	T16	M	B:T17	differ
+f244v_L01	13	T33	H		agree
+f244v_L01	14	T11	M	B:T24	differ
+f244v_L01	15	T35	H		agree
+f244v_L01	16	T58	H		agree
+f244v_L01	17	T37	M		agree-flagged
+f244v_L01	18	T30	H		agree
+f244v_L01	19	T11	M	B:T42	differ
+f244v_L01	20	T01	H		agree
+f244v_L01	21	T13	M	B:T73	differ
+f244v_L01	22	/	H		agree
+f244v_L01	23	T38	M	B:T19	differ
+f244v_L01	24	T33	H		agree
+f244v_L01	25	T46	H		agree
+f244v_L01	26	T44	H		agree
+f244v_L01	27	T45	M	A:-	gap
+f244v_L01	28	T29	M	A:-	gap
+f244v_L01	29	T17	M	A:-	gap
+f244v_L01	30	/	M	A:-	gap
+f244v_L01	31	T25	M	A:-	gap
+f244v_L01	32	T26	M	A:-	gap
+f244v_L01	33	T30	M	B:T36	differ
+f244v_L02	1	T25	H		agree
+f244v_L02	2	T09	H		agree
+f244v_L02	3	T44	H		agree
+f244v_L02	4	T30	M	B:-	gap
+f244v_L02	5	T43	H		agree
+f244v_L02	6	T34	M	B:T14	differ
+f244v_L02	7	T26	H		agree
+f244v_L02	8	T12	H		agree
+f244v_L02	9	T57	M	A:-	gap
+f244v_L02	10	T48	M	B:T41	differ
+f244v_L02	11	T38	M	B:T19	differ
+f244v_L02	12	T26	H		agree
+f244v_L02	13	T35	H		agree
+f244v_L02	14	T46	H		agree
+f244v_L02	15	/	H		agree
+f244v_L02	16	T65	M	B:-	gap
+f244v_L02	17	T32	M	B:T28	differ
+f244v_L02	18	/	M	B:T11	differ
+f244v_L02	19	T53	M	B:T52	differ
+f244v_L02	20	T10	H		agree
+f244v_L02	21	T46	H		agree
+f244v_L02	22	T49	M	B:T58	differ
+f244v_L02	23	T13	M	B:T73	differ
+f244v_L02	24	T33	M	B:T18	differ
+f244v_L02	25	T16	M	B:T01	differ
+f244v_L02	26	T26	H		agree
+f244v_L02	27	T17	M	A:-	gap
+f244v_L02	28	T01	H		agree
+f244v_L02	29	T45	M	A:-	gap
+f244v_L02	30	T29	M	A:-	gap
+f244v_L02	31	T17	M	A:-	gap
+f244v_L02	32	T62	M	A:-	gap
+f244v_L02	33	T23	M	A:-	gap
+f244v_L02	34	T49	M	A:-	gap
+f244v_L03	1	?[diamond]	M	B:T18	differ
+f244v_L03	2	T41	H		agree
+f244v_L03	3	T12	H		agree
+f244v_L03	4	T26	H		agree
+f244v_L03	5	T45	M		agree-flagged
+f244v_L03	6	T05	H		agree
+f244v_L03	7	T64	M	B:T28	differ
+f244v_L03	8	T46	H		agree
+f244v_L03	9	T17	M	A:-	gap
+f244v_L03	10	T46	H		agree
+f244v_L03	11	T16	M	B:-	gap
+f244v_L03	12	T13	M	B:T17	differ
+f244v_L03	13	T29	M	B:T73	differ
+f244v_L03	14	T26	H		agree
+f244v_L03	15	T25	H		agree
+f244v_L03	16	/	H		agree
+f244v_L03	17	T26	H		agree
+f244v_L03	18	T37	H		agree
+f244v_L03	19	T23	H		agree
+f244v_L03	20	T46	H		agree
+f244v_L03	21	T13	M	B:T73	differ
+f244v_L03	22	T50	M	B:T36	differ
+f244v_L03	23	T29	H		agree
+f244v_L03	24	T17	H		agree
+f244v_L03	25	T35	H		agree
+f244v_L03	26	T18	H		agree
+f244v_L03	27	T25	H		agree
+f244v_L03	28	T54	M	A:-	gap
+f244v_L03	29	T26	M	A:-	gap
+f244v_L03	30	T01	M	A:-	gap
+f244v_L03	31	T58	M	A:-	gap
+f244v_L03	32	T26	M	A:-	gap
+f244v_L03	33	T23	M	A:-	gap
+f244v_L03	34	T46	M	A:-	gap
+f244v_L03	35	T43	M	A:-	gap
+f244v_L03	36	T26	M	A:-	gap
+f244v_L03	37	T41	M	A:-	gap
+f244v_L03	38	/	M	A:-	gap
+f244v_L03	39	T26	M	A:-	gap
+f244v_L03	40	T18	M	A:-	gap
+f244v_L03	41	T64	M	B:T25	differ
+f244v_L04	1	T04	H		agree
+f244v_L04	2	T50	M	B:T45	differ
+f244v_L04	3	T16	M	B:T34	differ
+f244v_L04	4	T26	H		agree
+f244v_L04	5	T35	H		agree
+f244v_L04	6	T23	M	B:T20	differ
+f244v_L04	7	T02	H		agree
+f244v_L04	8	T09	M	B:T35	differ
+f244v_L04	9	T26	H		agree
+f244v_L04	10	T57	H		agree
+f244v_L04	11	T20	M	A:-	gap
+f244v_L04	12	T70	M	B:T45	differ
+f244v_L04	13	T18	H		agree
+f244v_L04	14	T48	M	B:T09	differ
+f244v_L04	15	T02	M	B:T23	differ
+f244v_L04	16	T46	H		agree
+f244v_L04	17	T30	H		agree
+f244v_L04	18	T43	H		agree
+f244v_L04	19	T26	H		agree
+f244v_L04	20	T16	M	B:T17	differ
+f244v_L04	21	T02	M	B:T03	differ
+f244v_L04	22	T45	H		agree
+f244v_L04	23	T42	M	A:-	gap
+f244v_L04	24	T44	M	B:T43	differ
+f244v_L04	25	T37	M	B:T26	differ
+f244v_L04	26	T01	H		agree
+f244v_L04	27	T65	M	B:-	gap
+f244v_L05	1	T37	M	B:T43	differ
+f244v_L05	2	T50	M	B:T36	differ
+f244v_L05	3	T46	H		agree
+f244v_L05	4	T18	H		agree
+f244v_L05	5	T23	M	B:T20	differ
+f244v_L05	6	T10	H		agree
+f244v_L05	7	T46	H		agree
+f244v_L05	8	T49	M	B:T58	differ
+f244v_L05	9	/	H		agree
+f244v_L05	10	T26	H		agree
+f244v_L05	11	T43	M	A:-	gap
+f244v_L05	12	T37	M	B:T03	differ
+f244v_L05	13	T02	M	B:T17	differ
+f244v_L05	14	T45	H		agree
+f244v_L05	15	T49	M	B:T58	differ
+f244v_L05	16	T17	H		agree
+f244v_L05	17	T10	H		agree
+f244v_L05	18	T31	H		agree
+f244v_L05	19	T46	H		agree
+f244v_L05	20	T29	M	A:-	gap
+f244v_L05	21	T09	H		agree
+f244v_L05	22	T48	M	B:-	gap
+f244v_L05	23	T35	H		agree
+f244v_L05	24	T58	M	A:-	gap
+f244v_L05	25	T17	M	A:-	gap
+f244v_L05	26	T37	M	A:-	gap
+f244v_L05	27	T01	M	A:-	gap
+f244v_L05	28	T58	M	A:-	gap
+f244v_L05	29	T26	M	A:-	gap
+f244v_L05	30	T64	M	A:-	gap
+f244v_L05	31	T04	M	A:-	gap
+f244v_L05	32	T43	M	A:-	gap
+f244v_L05	33	T44	M	A:-	gap
+f244v_L05	34	T09	M	A:-	gap
+f244v_L06	1	T18	M		agree-flagged
+f244v_L06	2	T04	H		agree
+f244v_L06	3	T50	M	B:T45	differ
+f244v_L06	4	T16	M	B:T34	differ
+f244v_L06	5	T26	H		agree
+f244v_L06	6	T35	H		agree
+f244v_L06	7	T23	M	B:T20	differ
+f244v_L06	8	T45	M	B:T19	differ
+f244v_L06	9	T43	H		agree
+f244v_L06	10	T17	H		agree
+f244v_L06	11	T23	H		agree
+f244v_L06	12	T72	H		agree
+f244v_L06	13	T25	H		agree
+f244v_L06	14	T26	H		agree
+f244v_L06	15	T10	H		agree
+f244v_L06	16	T01	H		agree
+f244v_L06	17	T38	M	B:T40	differ
+f244v_L06	18	T01	H		agree
+f244v_L06	19	T44	H		agree
+f244v_L06	20	T30	M	B:-	gap
+f244v_L06	21	T26	H		agree
+f244v_L06	22	T18	H		agree
+f244v_L06	23	T26	H		agree
+f244v_L06	24	T41	H		agree
+f244v_L06	25	T37	H		agree
+f244v_L06	26	T26	H		agree
+f244v_L06	27	T12	H		agree
+f244v_L06	28	T31	M	B:-	gap
+f244v_L06	29	T33	M	B:T36	differ
+f244v_L06	30	T50	M	B:T45	differ
+f244v_L06	31	T57	H		agree
+f244v_L06	32	T01	H		agree
+f244v_L06	33	T02	M	B:T39	differ
+f244v_L06	34	T17	H		agree
+f244v_L06	35	T05	H		agree
+f244v_L06	36	T12	H		agree
+f244v_L06	37	T02	M	B:T03	differ
+f244v_L06	38	T35	M	B:T05	differ
+f244v_L06	39	T01	H		agree
+f244v_L06	40	T72	H		agree
+f244v_L06	41	T25	M	B:-	gap
+f244v_L07	1	T33	M	B:T18	differ
+f244v_L07	2	T26	H		agree
+f244v_L07	3	T01	H		agree
+f244v_L07	4	T02	M	B:T03	differ
+f244v_L07	5	T26	H		agree
+f244v_L07	6	T17	H		agree
+f244v_L07	7	T30	H		agree
+f244v_L07	8	T13	M	B:T19	differ
+f244v_L07	9	T16	M	B:T17	differ
+f244v_L07	10	T41	H		agree
+f244v_L07	11	T16	M	B:T34	differ
+f244v_L07	12	T26	H		agree
+f244v_L07	13	T02	M	B:T03	differ
+f244v_L07	14	T37	M	B:T43	differ
+f244v_L07	15	T26	H		agree
+f244v_L07	16	T57	H		agree
+f244v_L07	17	T33	M	B:-	gap
+f244v_L07	18	T30	M	B:T18	differ
+f244v_L07	19	T23	H		agree
+f244v_L07	20	T35	H		agree
+f244v_L07	21	T25	H		agree
+f244v_L07	22	T26	H		agree
+f244v_L07	23	T23	H		agree
+f244v_L07	24	T35	H		agree
+f244v_L07	25	T41	H		agree
+f244v_L07	26	T17	H		agree
+f244v_L07	27	T33	M	B:T18	differ
+f244v_L07	28	T50	M	B:T45	differ
+f244v_L07	29	T46	H		agree
+f244v_L07	30	T02	M	B:T03	differ
+f244v_L07	31	T35	H		agree
+f244v_L07	32	T05	H		agree
+f244v_L07	33	T58	H		agree
+f244v_L07	34	/	H		agree
+f244v_L07	35	T09	M	B:T42	differ
+f244v_L07	36	T01	H		agree
+f244v_L07	37	T35	H		agree
+f244v_L07	38	T17	H		agree
+f244v_L07	39	T50	M	B:T36	differ
+f244v_L07	40	T01	H		agree
+f244v_L08	1	T33	M	B:T18	differ
+f244v_L08	2	T23	H		agree
+f244v_L08	3	T44	H		agree
+f244v_L08	4	T30	M	B:-	gap
+f244v_L08	5	T46	H		agree
+f244v_L08	6	T02	M	B:T01	differ
+f244v_L08	7	T26	H		agree
+f244v_L08	8	T17	H		agree
+f244v_L08	9	T57	H		agree
+f244v_L08	10	T26	H		agree
+f244v_L08	11	T46	H		agree
+f244v_L08	12	T41	H		agree
+f244v_L08	13	T47	H		agree
+f244v_L08	14	T43	H		agree
+f244v_L08	15	T01	H		agree
+f244v_L08	16	T12	H		agree
+f244v_L08	17	T33	M	B:T18	differ
+f244v_L08	18	T37	H		agree
+f244v_L08	19	T35	H		agree
+f244v_L08	20	T31	M	B:T45	differ
+f244v_L08	21	T13	M	B:T19	differ
+f244v_L08	22	T33	M	B:T18	differ
+f244v_L08	23	T46	H		agree
+f244v_L08	24	T25	H		agree
+f244v_L08	25	T38	M	B:-	gap
+f244v_L08	26	T33	M	B:T40	differ
+f244v_L08	27	T50	M	B:T18	differ
+f244v_L08	28	T45	H		agree
+f244v_L08	29	T19	M	A:-	gap
+f244v_L08	30	T41	M	B:T37	differ
+f244v_L08	31	T13	M	B:T19	differ
+f244v_L08	32	T33	M	B:T18	differ
+f244v_L08	33	T09	M	B:T29	differ
+f244v_L08	34	T12	H		agree
+f244v_L08	35	T37	H		agree
+f244v_L08	36	T21	M	B:T49	differ
+f244v_L08	37	T30	H		agree
+f244v_L08	38	T33	M	B:T18	differ
+f244v_L08	39	T12	H		agree
+f244v_L08	40	T04	M	B:-	gap
+f244v_L09	1	T23	H		agree
+f244v_L09	2	T31	H		agree
+f244v_L09	3	T26	H		agree
+f244v_L09	4	T12	H		agree
+f244v_L09	5	T37	H		agree
+f244v_L09	6	T01	H		agree
+f244v_L09	7	T17	H		agree
+f244v_L09	8	T33	M	B:T18	differ
+f244v_L09	9	T45	H		agree
+f244v_L09	10	T33	M	B:T18	differ
+f244v_L09	11	T44	H		agree
+f244v_L09	12	T30	M	B:-	gap
+f244v_L09	13	T50	M	B:T45	differ
+f244v_L09	14	T57	H		agree
+f244v_L09	15	T33	M	B:T18	differ
+f244v_L09	16	T09	M	B:T34	differ
+f244v_L09	17	T26	H		agree
+f244v_L09	18	T35	H		agree
+f244v_L09	19	T17	H		agree
+f244v_L09	20	T62	H		agree
+f244v_L09	21	T30	H		agree
+f244v_L09	22	T62	H		agree
+f244v_L09	23	T35	H		agree
+f244v_L09	24	T11	M	B:T08	differ
+f244v_L09	25	T33	M	B:T18	differ
+f244v_L09	26	T50	M	B:T36	differ
+f244v_L09	27	T26	H		agree
+f244v_L09	28	T17	H		agree
+f244v_L09	29	T43	H		agree
+f244v_L09	30	T09	M	B:T36	differ
+f244v_L09	31	T26	H		agree
+f244v_L09	32	T17	H		agree
+f244v_L09	33	T02	H		agree
+f244v_L09	34	T33	M	B:T18	differ
+f244v_L09	35	T12	H		agree
+f244v_L09	36	T17	H		agree
+f244v_L09	37	T40	M	A:-	gap
+f244v_L09	38	T38	M	B:T18	differ
+f244v_L09	39	T09	M	B:T29	differ
+f244v_L10	1	T04	M	B:T58	differ
+f244v_L10	2	T16	M	B:T17	differ
+f244v_L10	3	T26	H		agree
+f244v_L10	4	T35	H		agree
+f244v_L10	5	T18	M	A:-	gap
+f244v_L10	6	T33	H		agree
+f244v_L10	7	T18	M	B:-	gap
+f244v_L10	8	T50	M	B:T45	differ
+f244v_L10	9	T09	M	B:T29	differ
+f244v_L10	10	T49	H		agree
+f244v_L10	11	T36	M	A:-	gap
+f244v_L10	12	T50	M	B:T29	differ
+f244v_L10	13	T05	H		agree
+f244v_L10	14	T41	H		agree
+f244v_L10	15	T12	H		agree
+f244v_L10	16	T18	H		agree
+f244v_L10	17	T41	H		agree
+f244v_L10	18	T23	H		agree
+f244v_L10	19	T12	H		agree
+f244v_L10	20	T18	H		agree
+f244v_L10	21	T13	M	B:T19	differ
+f244v_L10	22	T26	H		agree
+f244v_L10	23	T45	H		agree
+f244v_L10	24	T36	M	A:-	gap
+f244v_L10	25	T50	M	B:T18	differ
+f244v_L10	26	T33	M	B:T18	differ
+f244v_L10	27	T43	H		agree
+f244v_L11	1	T23	H		agree
+f244v_L11	2	T57	H		agree
+f244v_L11	3	T17	M	B:T40	differ
+f244v_L11	4	T41	H		agree
+f244v_L11	5	T16	M	B:T24	differ
+f244v_L11	6	T09	M	B:T29	differ
+f244v_L11	7	T18	H		agree
+f244v_L11	8	T41	H		agree
+f244v_L11	9	T62	H		agree
+f244v_L11	10	T18	H		agree
+f244v_L11	11	T33	M	B:-	gap
+f244v_L11	12	T45	H		agree
+f244v_L11	13	T17	H		agree
+f244v_L11	14	T58	H		agree
+f244v_L11	15	T17	H		agree
+f244v_L11	16	T02	H		agree
+f244v_L11	17	T33	M	B:T18	differ
+f244v_L11	18	T12	H		agree
+f244v_L11	19	T17	H		agree
+f244v_L11	20	T50	M	B:T36	differ
+f244v_L11	21	T26	H		agree
+f244v_L11	22	T35	H		agree
+f244v_L11	23	T45	H		agree
+f244v_L11	24	T09	M	B:T29	differ
+f244v_L11	25	T37	H		agree
+f244v_L11	26	T26	H		agree
+f244v_L11	27	T45	H		agree
+f244v_L11	28	T35	H		agree
+f244v_L11	29	T17	H		agree
+f244v_L11	30	T25	H		agree
+f244v_L11	31	T26	H		agree
+f244v_L11	32	T64	M	B:T01	differ
+f244v_L11	33	T50	M	B:T36	differ
+f244v_L11	34	T57	H		agree
+f244v_L12	1	T41	H		agree
+f244v_L12	2	T16	M	B:T17	differ
+f244v_L12	3	T50	M	B:T45	differ
+f244v_L12	4	T57	H		agree
+f244v_L12	5	T18	H		agree
+f244v_L12	6	T04	H		agree
+f244v_L12	7	T64	M	B:T28	differ
+f244v_L12	8	T16	M	B:T24	differ
+f244v_L12	9	T26	H		agree
+f244v_L12	10	T01	H		agree
+f244v_L12	11	T10	H		agree
+f244v_L12	12	T26	H		agree
+f244v_L12	13	T16	M	B:T24	differ
+f244v_L12	14	T18	H		agree
+f244v_L12	15	T41	H		agree
+f244v_L12	16	T26	H		agree
+f244v_L12	17	T37	H		agree
+f244v_L12	18	T25	H		agree
+f244v_L12	19	T41	H		agree
+f244v_L12	20	T57	M	B:T04	differ
+f244v_L12	21	T46	H		agree
+f244v_L12	22	T05	H		agree
+f244v_L12	23	T26	H		agree
+f244v_L12	24	T17	H		agree
+f244v_L12	25	T16	M	B:T24	differ
+f244v_L12	26	T09	M	B:T29	differ
+f244v_L12	27	T50	M	B:T36	differ
+f244v_L12	28	T26	H		agree
+f244v_L12	29	T16	M	B:T24	differ
+f244v_L12	30	T35	H		agree
+f244v_L12	31	T26	H		agree
+f244v_L12	32	T17	M	A:-	gap
+f244v_L12	33	T18	H		agree
+f245r_L01	1	T31	H		agree
+f245r_L01	2	T26	H		agree
+f245r_L01	3	T35	M	B:T57	differ
+f245r_L01	4	T16	H		agree
+f245r_L01	5	T17	M	A:-	gap
+f245r_L01	6	T18	H		agree
+f245r_L01	7	T49	H		agree
+f245r_L01	8	T16	H		agree
+f245r_L01	9	T10	H		agree
+f245r_L01	10	T32	M		agree-flagged
+f245r_L01	11	T49	H		agree
+f245r_L01	12	T23	H		agree
+f245r_L01	13	T14	M	A:-	gap
+f245r_L01	14	T45	H		agree
+f245r_L01	15	T35	H		agree
+f245r_L01	16	T50	H		agree
+f245r_L01	17	T05	H		agree
+f245r_L01	18	T04	H		agree
+f245r_L01	19	T09	H		agree
+f245r_L01	20	T07	M	B:?[diamond]	differ
+f245r_L01	21	T12	H		agree
+f245r_L01	22	T43	H		agree
+f245r_L01	23	T43	H		agree
+f245r_L01	24	T26	H		agree
+f245r_L01	25	T12	H		agree
+f245r_L01	26	T26	H		agree
+f245r_L01	27	/	H		agree
+f245r_L01	28	T13	M	B:T14	differ
+f245r_L01	29	T35	H		agree
+f245r_L01	30	T18	H		agree
+f245r_L01	31	T42	H		agree
+f245r_L01	32	T50	H		agree
+f245r_L01	33	T35	H		agree
+f245r_L01	34	T18	H		agree
+f245r_L01	35	T01	M	B:-	gap
+f245r_L01	36	T53	H		agree
+f245r_L01	37	T17	H		agree
+f245r_L01	38	T26	M	A:-	gap
+f245r_L01	39	T36	M	B:T50	differ
+f245r_L02	1	T23	H		agree
+f245r_L02	2	T19	M		agree-flagged
+f245r_L02	3	T17	M	B:T56	differ
+f245r_L02	4	T16	M	B:T40	differ
+f245r_L02	5	T62	H		agree
+f245r_L02	6	T72	M	B:?[triangledown]	differ
+f245r_L02	7	T70	M		agree-flagged
+f245r_L02	8	T10	H		agree
+f245r_L02	9	T23	H		agree
+f245r_L02	10	T21	M	B:T49	differ
+f245r_L02	11	T43	H		agree
+f245r_L02	12	T18	H		agree
+f245r_L02	13	T12	H		agree
+f245r_L02	14	T17	H		agree
+f245r_L02	15	T04	H		agree
+f245r_L02	16	T01	H		agree
+f245r_L02	17	T17	H		agree
+f245r_L02	18	T40	H		agree
+f245r_L02	19	T12	H		agree
+f245r_L02	20	T37	M	B:T43	differ
+f245r_L02	21	T23	H		agree
+f245r_L02	22	T42	M	B:-	gap
+f245r_L02	23	T07	M	B:?[diamond]	differ
+f245r_L02	24	T41	H		agree
+f245r_L02	25	T25	H		agree
+f245r_L02	26	T26	H		agree
+f245r_L02	27	/	H		agree
+f245r_L02	28	T03	H		agree
+f245r_L02	29	T64	H		agree
+f245r_L02	30	T26	H		agree
+f245r_L02	31	T04	M	B:T08	differ
+f245r_L02	32	/	H		agree
+f245r_L02	33	T23	H		agree
+f245r_L02	34	T17	M	B:T70	differ
+f245r_L02	35	T26	H		agree
+f245r_L02	36	T35	M	B:T57	differ
+f245r_L02	37	T21	H		agree
+f245r_L02	38	T18	H		agree
+f245r_L02	39	T13	M	B:T14	differ
+f245r_L02	40	T46	M	B:T29	differ
+f245r_L02	41	T43	H		agree
+f245r_L02	42	T17	H		agree
+f245r_L02	43	T62	H		agree
+f245r_L02	44	/	H		agree
+f245r_L03	1	T26	H		agree
+f245r_L03	2	T30	H		agree
+f245r_L03	3	T58	H		agree
+f245r_L03	4	T44	H		agree
+f245r_L03	5	T17	H		agree
+f245r_L03	6	T43	H		agree
+f245r_L03	7	T23	H		agree
+f245r_L03	8	T17	M	B:T13	differ
+f245r_L03	9	T01	H		agree
+f245r_L03	10	T12	H		agree
+f245r_L03	11	T18	H		agree
+f245r_L03	12	T62	H		agree
+f245r_L03	13	T03	H		agree
+f245r_L03	14	T26	H		agree
+f245r_L03	15	T62	H		agree
+f245r_L03	16	T46	M	B:T35	differ
+f245r_L03	17	T41	H		agree
+f245r_L03	18	T41	H		agree
+f245r_L03	19	T62	M	B:T26	differ
+f245r_L03	20	T21	M	B:T42	differ
+f245r_L03	21	T64	H		agree
+f245r_L03	22	T01	H		agree
+f245r_L03	23	T12	H		agree
+f245r_L03	24	T18	H		agree
+f245r_L03	25	T13	M	B:T14	differ
+f245r_L03	26	T35	H		agree
+f245r_L03	27	T64	H		agree
+f245r_L03	28	T23	H		agree
+f245r_L03	29	T70	H		agree
+f245r_L03	30	T37	M	B:T43	differ
+f245r_L03	31	T43	H		agree
+f245r_L03	32	T16	H		agree
+f245r_L03	33	T01	H		agree
+f245r_L03	34	T03	H		agree
+f245r_L03	35	T64	H		agree
+f245r_L03	36	T26	H		agree
+f245r_L03	37	T42	H		agree
+f245r_L03	38	T41	M	B:-	gap
+f245r_L03	39	T35	H		agree
+f245r_L03	40	T57	M	A:-	gap
+f245r_L03	41	T18	H		agree
+f245r_L04	1	T58	H		agree
+f245r_L04	2	T17	H		agree
+f245r_L04	3	T18	M	A:-	gap
+f245r_L04	4	T18	H		agree
+f245r_L04	5	T42	M	B:T05	differ
+f245r_L04	6	T26	H		agree
+f245r_L04	7	T46	M	B:T17	differ
+f245r_L04	8	T16	H		agree
+f245r_L04	9	T17	H		agree
+f245r_L04	10	T10	H		agree
+f245r_L04	11	T01	H		agree
+f245r_L04	12	T43	M	A:-	gap
+f245r_L04	13	T37	M	B:T43	differ
+f245r_L04	14	T42	M	B:T05	differ
+f245r_L04	15	T12	H		agree
+f245r_L04	16	T46	M	B:T50	differ
+f245r_L04	17	T35	H		agree
+f245r_L04	18	T18	H		agree
+f245r_L04	19	T09	H		agree
+f245r_L04	20	T57	M	B:T32	differ
+f245r_L04	21	T26	H		agree
+f245r_L04	22	T37	M	B:-	gap
+f245r_L04	23	T58	M	B:-	gap
+f245r_L04	24	T41	M	B:T43	differ
+f245r_L04	25	T58	H		agree
+f245r_L04	26	T03	H		agree
+f245r_L04	27	T18	H		agree
+f245r_L04	28	T21	M	B:-	gap
+f245r_L04	29	T37	M	B:T43	differ
+f245r_L04	30	T26	H		agree
+f245r_L04	31	/	M	A:-	gap
+f245r_L04	32	T04	M	B:T25	differ
+f245r_L04	33	T41	H		agree
+f245r_L04	34	/	M	A:-	gap
+f245r_L04	35	T17	M	A:-	gap
+f245r_L04	36	T01	M	A:-	gap
+f245r_L04	37	T63	M	A:-	gap
+f245r_L04	38	T12	M	A:-	gap
+f245r_L04	39	T26	H		agree
+f245r_L04	40	T16	M	A:-	gap
+f245r_L04	41	T04	M	A:-	gap
+f245r_L04	42	T25	M	B:T18	differ
+f245r_L04	43	T27	M	B:T43	differ
+f245r_L04	44	T33	M	B:T30	differ
+f245r_L05	1	T44	M	A:-	gap
+f245r_L05	2	T41	M	A:-	gap
+f245r_L05	3	T17	M	A:-	gap
+f245r_L05	4	T49	M	B:T23	differ
+f245r_L05	5	T45	H		agree
+f245r_L05	6	T41	M	B:-	gap
+f245r_L05	7	T12	H		agree
+f245r_L05	8	T18	H		agree
+f245r_L05	9	T23	H		agree
+f245r_L05	10	T50	M	A:-	gap
+f245r_L05	11	T46	M	B:T17	differ
+f245r_L05	12	T18	H		agree
+f245r_L05	13	T42	M	B:T63	differ
+f245r_L05	14	T16	M	B:T49	differ
+f245r_L05	15	T58	M	B:T63	differ
+f245r_L05	16	T17	H		agree
+f245r_L05	17	T13	M	B:T14	differ
+f245r_L05	18	T16	H		agree
+f245r_L05	19	T43	H		agree
+f245r_L05	20	T12	H		agree
+f245r_L05	21	T35	H		agree
+f245r_L05	22	T09	H		agree
+f245r_L05	23	T18	M	B:T26	differ
+f245r_L05	24	T01	H		agree
+f245r_L05	25	T44	M	B:-	gap
+f245r_L05	26	T41	M	B:-	gap
+f245r_L05	27	T17	M	B:-	gap
+f245r_L05	28	T25	M	B:-	gap
+f245r_L05	29	T26	M	B:-	gap
+f245r_L05	30	T03	M	B:T49	differ
+f245r_L05	31	T64	M	B:T30	differ
+f245r_L05	32	T41	H		agree
+f245r_L05	33	T04	M	B:-	gap
+f245r_L05	34	T17	H		agree
+f245r_L05	35	T26	M	B:-	gap
+f245r_L05	36	T18	M	B:-	gap
+f245r_L05	37	T55	M	B:-	gap
+f245r_L06	1	T03	M	B:-	gap
+f245r_L06	2	T16	M	B:-	gap
+f245r_L06	3	T18	M	B:-	gap
+f245r_L06	4	T43	M	B:-	gap
+f245r_L06	5	T18	M	B:-	gap
+f245r_L06	6	T45	M	B:-	gap
+f245r_L06	7	T12	M	B:-	gap
+f245r_L06	8	T12	M	B:-	gap
+f245r_L06	9	T62	M	B:-	gap
+f245r_L06	10	T58	M	B:-	gap
+f245r_L06	11	T70	M	B:-	gap
+f245r_L06	12	T37	M	B:-	gap
+f245r_L06	13	T26	M	B:-	gap
+f245r_L06	14	T21	M	B:-	gap
+f245r_L06	15	T41	M	B:-	gap
+f245r_L06	16	T12	M	B:-	gap
+f245r_L06	17	T43	M	B:-	gap
+f245r_L06	18	T04	M	B:-	gap
+f245r_L06	19	T26	M	B:-	gap
+f245r_L06	20	T03	H		agree
+f245r_L06	21	T41	M	B:T35	differ
+f245r_L06	22	T17	M	B:T01	differ
+f245r_L06	23	T25	M	B:T35	differ
+f245r_L06	24	T03	M	B:?[diamond]	differ
+f245r_L06	25	T41	H		agree
+f245r_L06	26	T17	H		agree
+f245r_L06	27	T25	H		agree
+f245r_L06	28	T41	M	B:-	gap
+f245r_L06	29	T45	M	B:-	gap
+f245r_L06	30	T49	M	B:T26	differ
+f245r_L06	31	T03	H		agree
+f245r_L06	32	T01	M	B:-	gap
+f245r_L06	33	T09	M	B:-	gap
+f245r_L06	34	T37	M	B:-	gap
+f245r_L06	35	T23	M	B:-	gap
+f245r_L06	36	T43	M	B:-	gap
+f245r_L06	37	T57	M	B:T64	differ
+f245r_L06	38	T41	H		agree
+f245r_L06	39	T40	M	B:-	gap
+f245r_L06	40	T64	M	B:T04	differ
+f245r_L06	41	T17	H		agree
+f245r_L06	42	T26	M	A:-	gap
+f245r_L06	43	T18	M	A:-	gap
+f245r_L06	44	T43	M	B:T55	differ
+f245r_L07	1	T03	M	A:-	gap
+f245r_L07	2	T63	M	A:-	gap
+f245r_L07	3	T18	M	A:-	gap
+f245r_L07	4	T43	M	A:-	gap
+f245r_L07	5	T41	M	A:-	gap
+f245r_L07	6	T45	M	A:-	gap
+f245r_L07	7	T12	M	A:-	gap
+f245r_L07	8	T62	M	A:-	gap
+f245r_L07	9	T58	M	A:-	gap
+f245r_L07	10	T70	M	A:-	gap
+f245r_L07	11	T43	M	A:-	gap
+f245r_L07	12	T26	M	A:-	gap
+f245r_L07	13	T18	H		agree
+f245r_L07	14	T41	M	A:-	gap
+f245r_L07	15	T12	M	A:-	gap
+f245r_L07	16	T43	M	A:-	gap
+f245r_L07	17	T04	M	A:-	gap
+f245r_L07	18	T26	H		agree
+f245r_L07	19	T03	M	A:-	gap
+f245r_L07	20	T41	M	A:-	gap
+f245r_L07	21	T17	M	A:-	gap
+f245r_L07	22	T25	M	A:-	gap
+f245r_L07	23	T03	M	A:-	gap
+f245r_L07	24	T41	M	A:-	gap
+f245r_L07	25	T17	M	A:-	gap
+f245r_L07	26	T25	M	A:-	gap
+f245r_L07	27	T41	M	A:-	gap
+f245r_L07	28	T45	M	A:-	gap
+f245r_L07	29	T49	M	A:-	gap
+f245r_L07	30	T03	M	A:-	gap
+f245r_L07	31	T01	M	A:-	gap
+f245r_L07	32	T01	M	A:-	gap
+f245r_L07	33	T09	M	A:-	gap
+f245r_L07	34	T41	M	A:-	gap
+f245r_L07	35	T23	M	A:-	gap
+f245r_L07	36	T43	M	A:-	gap
+f245r_L07	37	T35	M	B:T32	differ
+f245r_L07	38	T41	H		agree
+f245r_L07	39	T40	M	A:-	gap
+f245r_L07	40	T64	M	A:-	gap
+f245r_L07	41	T17	M	A:-	gap
+f245r_L07	42	T43	M	A:-	gap
+f245r_L07	43	T26	M	A:-	gap
+f245r_L07	44	T18	H		agree
+f245r_L07	45	T26	M	A:-	gap
+f245r_L07	46	T62	M	B:T40	differ
+f245r_L07	47	T13	M	B:T18	differ
+f245r_L07	48	T26	H		agree
+f245r_L07	49	T16	M	B:-	gap
+f245r_L07	50	T70	M	B:T63	differ
+f245r_L07	51	T18	H		agree
+f245r_L07	52	T18	H		agree
+f245r_L07	53	T26	H		agree
+f245r_L07	54	T57	M	B:T32	differ
+f245r_L07	55	T26	H		agree
+f245r_L07	56	T12	H		agree
+f245r_L07	57	T70	M	B:T18	differ
+f245r_L07	58	T23	H		agree
+f245r_L07	59	T35	H		agree
+f245r_L07	60	T26	M	A:-	gap
+f245r_L07	61	T04	M	B:T35	differ
+f245r_L07	62	T26	H		agree
+f245r_L07	63	T16	M	B:T17	differ
+f245r_L07	64	T09	H		agree
+f245r_L07	65	T41	H		agree
+f245r_L07	66	T57	M	B:T32	differ

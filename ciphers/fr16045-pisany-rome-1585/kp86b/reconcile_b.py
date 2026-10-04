@@ -2,8 +2,8 @@
 """kp86b reconciliation (PREREG_kp86b.md): the RUN3 shape rules of tx86/reconcile86.py, unchanged, applied to
 tx86b/ciphertext_draft.tsv + tx86b/disagreements.tsv (from tools/reconcile_passes.py on tx86b/passA.tsv passB.tsv)
 -> tx86b/ciphertext_f244v_f245r.tsv. No sign-by-sign judgement."""
-import csv, os
-H = os.path.dirname(os.path.abspath(__file__)); X = os.path.join(os.path.dirname(H), 'tx86b')
+import csv, os, sys
+H = os.path.dirname(os.path.abspath(__file__)); X = os.path.join(os.path.dirname(H), sys.argv[1] if len(sys.argv) > 1 else 'tx86b')  # kp86c: tx86c
 PAIR = {frozenset(('T37', 'T43')): 'T43', frozenset(('T48', 'T09')): 'T09', frozenset(('T30', 'T44')): 'T44',
         frozenset(('T45', 'T31')): 'T31'}
 rows = list(csv.DictReader(open(os.path.join(X, 'ciphertext_draft.tsv')), delimiter='\t'))

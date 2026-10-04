@@ -53,6 +53,7 @@ def main():
     ap.add_argument('--err', type=float, required=True)
     ap.add_argument('--tokens', default='tx86b/ciphertext_f244v_f245r.tsv')
     ap.add_argument('--extra', nargs='*', default=['tx86b/passA.tsv', 'tx86b/passB.tsv'])
+    ap.add_argument('--out', default='kp86b_result.json')  # kp86c: kp86c_result.json
     a = ap.parse_args()
     ctext = norm(open(os.path.join(HERE, 'colbert_p51_52.txt')).read())
     clear = np.array([ord(c) - 97 for c in ctext], dtype=np.int64)
@@ -81,7 +82,7 @@ def main():
                           'FAIL' if a.err <= 0.10 else 'FAIL at err > 0.10 with the control passing at this e')
         print(arm, 'VERDICT', res['verdict'])
         out['arm_' + arm] = res
-    json.dump(out, open(os.path.join(HERE, 'kp86b_result.json'), 'w'), indent=1)
+    json.dump(out, open(os.path.join(HERE, a.out), 'w'), indent=1)
 
 
 if __name__ == '__main__':
