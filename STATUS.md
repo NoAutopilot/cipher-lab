@@ -4106,6 +4106,31 @@ ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothin
 - Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
   "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
 
+## LANE NEAR7 handoff (session_011jxC5ygqRnFKn5qTCJAPNz, account 2), 4 October 2026 (closed 14:1x UTC: backlog within cap spent)
+
+Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near7.md`; worker briefs `.claude/briefs/runs/2026-10-04-ytbiz-near7-wave1.md` (waves 1-5). 9 workers
+USD 49.18 (3 D, 6 D-) + orchestrator ~4.4 = ~53.6 of 60; all ledgered and archived; no check-in armed. Nothing called new or read beyond grade;
+status.json / NEAR.md Vivonne cells untouched (account 3). Lane goal (a Vivonne piece D1 -> D2) **not reached**.
+- **fr16104 inks 53 and 54 -- cleaner transcription did not produce a D2 clause** (N7-VIV53L, N7-VIV54L). Pre-registered look-alike rules
+  (': :' as one sign, 2-of-3 window re-reads). Ink 53: 2-of-3 residual 0.017, planted-audit agreed-sign flag 4.2%, H 3539 -> 3641 of 4394; ink 54:
+  residual 0.134, H 1475 -> 1488 of 1954. b2 + 200-wrong-key specificity PASS on both beside passing controls. Longest repair-free stretches 18-20
+  (53) and 25 with one repair (54), none near the ~42-letter AD: the limit is word division and key labels, not reader noise. Account 3 (13:51):
+  no depth re-check until a stretch above AD exists.
+- **Ink 54 "qae"** (N7-VIV54Q, N7-VIV54R): the sign after "to" is Tomokiyo's column-u row-3 Sigma/I shape, a cell key_tomokiyo omitted; key.tsv now
+  carries Zu = u (C, unused). The value-blind window relabel was a NON-TEST (3/18 after-"to" vs >= 7 required), so no position was relabelled and
+  the reading is unchanged. Next: hand-placed per-position crops under the same PREREG-N7VIV54R rule (~$1.5) -- the cheapest step that could move
+  "qae" -> "que" and lengthen a stretch.
+- **Ink 63** (N7-VIV63G): f.194r L5-10 read (301 tokens, err_2reader 0.168); whole piece b2 + specificity PASS; key-questions table
+  tx/viv63g_keyctx.tsv gives weak proposals only (y -> l, V -> n, e as m(m)); key.tsv untouched; revision note under AUDIT 3 + SO-VIV63 carried.
+- **Ink 52** (~$36) not opened: it would not fit the cap and the same instrument leaves pieces at D1.
+- **Tool** (N7-LKTOOL): `tools/lookalike_pass.py windows` (per-tile value-blind windows, offline test pixel-identical to the private script);
+  packet/audit marked ECHO-PRONE with `--hide-passc`. Lesson: those prompts drew 7/7 Sonnet echoes of passC and doubled VIV53L/VIV54L.
+- **hellen-frederick-1752** (N7-HELDK, -HELBC, -HEL86). R4388 (f.79, 2001-3900, names c.1762-63): pre-registered blank-cell test FAIL (0.316 vs
+  null median 0.338; true-key control p99 0.056) -> retired as the 1763 key. R4386 (f.75): NON-TEST at N=121 (control power fail), 6/63 codes blank
+  leans against. Codes 1-800: R4370/R4372 stay retired (rule 3); the named Fagel 5177 phrase corpus is mispriced at ~$12 (89 scans x 2 passes +
+  reconciliation, per pass far more) -- re-price before briefing.
+- NEXT-STEPS stale row: clairambault1225-paget-1714 "rule-7 owed" was done by A3V3-PG7 (SAME 505/505, 07:37).
+
 ## LANE NEAR6 handoff (session_019jKS1wURJVECZN9M5sEAPj, account 2), 4 October 2026 (closed 11:5x UTC: lane cap reached)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near6.md` (worker briefs `2026-10-04-ytbiz-near6-wave1.md`, `-wave2.md`). 8 workers USD 57.31
