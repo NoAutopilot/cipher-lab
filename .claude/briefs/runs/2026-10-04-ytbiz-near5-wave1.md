@@ -44,3 +44,29 @@ Steps.
    fail: log the numbers in HYPOTHESES.md as a known-plaintext test, name the next step, stop.
 NOTES "N5-VIVK" section, Remaining gaps / Escalation refresh, gaps_check OK line. Report what was found and where it was not found;
 do not classify novelty. Gallica requests one at a time, >= 2 s apart; count requests per host.
+
+## N5-VIV5S -- fr16104-vivonne-spain-1572 wave 2: the 5 Sept 1572 cipher block (fr.16104 ff.157-159v) read with key.tsv (Opus; cap USD 22; box 150 min)
+Written 06:5x UTC after N5-VIVK (ROOM 06:47, dea9b614): Tomokiyo's 1572-74 key PASSed the pre-registered held-out test against the clerk
+decipherment (Arm B 0.545 vs nulls p95 0.340/0.362); key.tsv = Tomokiyo values, 26 C / 4 M (S, y, b, A listed, not settled). Read NOTES
+"N4-VIV" and "N5-VIVK" first, and reuse N5-VIVK's tx/SIGNS.md labels, crop settings and scripts (no private copies of shared tools).
+Material: fr.16104 = ark btv1b9009609w; the letter (Gachard L, 5 Sept 1572, "en partie chiffree, sans le dechiffrement") runs f.157r-159v,
+canvases 170 (right page f.157r) - 173 (left page f.159v); plain French first, then cipher (N4-VIV: about 150-175 cipher lines, est.).
+Units: cipher pages x (2 blind Sonnet passes + 1 reconciliation) at ~USD 1.5 per call -- count the cipher pages from the 1600 px openings
+first and state units x rate in NOTES before the first subagent call; stop before a unit that would cross 80% of cap or box.
+0. Premise (cheap, before transcription): the same volume can file a decipherment out of place (Tomokiyo, Mousset p.xlviii). Look at
+   canvases 174-180 and any "dechiffre de la precedente" leaf dated Sept 1572 within c.150-200 at 1200 px (<= 8 requests) and say whether a
+   clerk decipherment of this letter exists. If one exists, stop after recording it (the letter is then not unread; the test becomes a
+   known-plaintext check like N5-VIVK and is a separate brief).
+1. Crops (tools/iiif_lines.py, command + output pasted), two blind passes per page, reconcile_passes.py, reconciliation from crops,
+   err_2reader per page.
+2. PREREG-N5VIV5S.md pushed before decoding: decode with key.tsv (tools/decode_key.py via decode.json, or N5-VIVK's decode script extended
+   -- reproducible, rule 7 --check); judge `tools/judge_plaintext.py` with an fr16 spec (check corpus era per rule 3; state it) on the
+   decode vs (i) the same transcription under 200 shuffled keys (key.tsv values permuted across codes) and (ii) the N5-VIVK held-out f.103r
+   decode as a positive control of the same hand and key; pass rule stated before running.
+3. Grade per token (rule 4): key source `published` (Tomokiyo), values checked against known plaintext in N5-VIVK; say which grade you use
+   for C-supported values on unread text and why; M for the 4 M codes and for tokens on lines with reader splits left unsettled. Give counts.
+4. `tools/print_check.py` on 5-10 distinctive decoded phrases (Gachard II's entry L summary and quotes are the obvious overlap: report which
+   decoded passages Gachard summarises or quotes). Report what was found and where it was not found; do not classify novelty.
+5. NOTES "N5-VIV5S", reading file + script, Remaining gaps / Escalation refresh, gaps_check OK line; status.json untouched (orchestrator).
+   ROOM done line for LANE-NEAR5 with the judge numbers beside the controls; if the judge passes, add "fr16104-vivonne-spain-1572 ready for
+   audit 1" in the same line.
