@@ -47,4 +47,4 @@ as for AOSB I:4).
 
 ## Requests
 
-HathiTrust Bibliographic API 50 (>=1.6 s apart); HTRC EF API 20 (19 + 1 retry, all HTTP 500); Open Library search 14. No subagents.
+HathiTrust Bibliographic API 47 (>=1.6 s apart); HTRC EF API 20 (19 + 1 retry, all HTTP 500); Open Library search 11. No subagents.
