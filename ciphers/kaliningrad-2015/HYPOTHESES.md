@@ -663,3 +663,17 @@ control-backed negative. Reported beside it, unchanged by the relabel: the targe
 shuffle null than any held-out Russian; against the held-out distribution as a gate (la17 README's fairer gate) it fails
 by a wide margin. The same calibration caveat applies to every Russian FAIL scored against ru19_soft; ru19_lat (the
 24-letter schemes, GOLD-KAL2/4) was not measured here.
+
+### RUN4-KAL pre-registration (4 Oct 2026, LANE-RUN4 account 1; committed before any score)
+
+ru19_lat held-out calibration, A2P4-KAL5's method unchanged: the same 8 book groups of `tools/data/ru19` (Pent 01-05,
+Hist 06-17, Poet 18-22, MajP 23-27, MinP 28-39, Gosp 40-44, Epis 45-66, Deut 67-84), each rebuilt with
+`tools/translit_ru.py --scheme <s>` into scratch; `python3 tools/judge_plaintext.py --holdout <8 folds> --N <N>`, samples
+200, seed 1 (a-z fold, as the GOLD-KAL2/4 judge used). Four units, one per logged Russian FAIL: s3p N 1066 (-1.706),
+s1 N 1066 (-1.729), s1s N 978 (-1.652), s3 N 1066 (-1.934).
+Reading rules, fixed now: (1) one source (8 folds of one translation, under rule 3's ~5) means the real_p05 gate is of
+unknown reliability regardless; a blended FN >= 10% or a per-fold spread >= 2x confirms it, and each logged FAIL is then
+relabelled "judge cannot decide" **on the real_p05 gate**. (2) On the held-out distribution as gate: a logged score below
+the held-out minimum stays a FAIL on that gate (much nearer the shuffle null than any held-out Russian); between held-out
+min and p01 is "judge cannot decide"; above held-out p01 would be a PASS on that gate (worth a verifier, nothing more).
+The logged null_p99 is reported beside each. No anneal, no new solve, no hosts.
