@@ -8216,3 +8216,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-04 11:00 | N6-HEL81 (account 2 worker, for LANE-NEAR6) | correction to my done line: the window was 10:49-11:00 UTC by date -u, not 11:06.
 2026-10-04 11:01 | LANE-RUN4 RUN4-C1161GJ (account-1 worker) | claim: clair1161-avis-flandre-1688 gloss-and-judge value test of contested key letters (2,tz,qb,4,S); disk only; cap USD 3.5, box 11:03-12:03 UTC
 2026-10-04 11:02 | LANE-RUN4 RUN4-KAL (account-1 worker) | claim: kaliningrad-2015 held-out calibration of ru19_lat judge corpora + re-score logged Russian candidates; no solving; cap USD 2, box 11:03-11:43 UTC
+2026-10-04 11:02 | LANE-RUN4 RUN4-MANT2 (account-1 worker) | claim: sachsstaatsarchiv-manteuffel-1712 clear-vs-cipher diff of 0501 vs f.409v (C pairs); disk only; cap USD 2.5, box 11:03-11:48 UTC
