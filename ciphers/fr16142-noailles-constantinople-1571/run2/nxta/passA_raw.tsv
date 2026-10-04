@@ -1,0 +1,37 @@
+L00	W:le W:par? W:faire ?{+s} g1? o1/e2 c1 o1/e2 i3 n1 p1
+L01	f2 o1/e2 r1 W:par? s1 W:ent b1 r1 o2 b1 W:de g1? a3 c1 i3 n1 W:par? W:de W:le s1 p1 e3 o1/e2 a1 n2 c1 o1/e2 W:qui? W:le W:par? a3
+L02	o1/e2 n1 t2 o1/e2 e3 a3 o1/e2 n2 r1 W:par? W:de p2 r1 ?{2-cross} W:par? l1 a2 l1 ?{2-cross} b1 o1/e2 s2 a2 t2 ?{2-cross} o1/e2 n1 b1 i3 n1
+L03	f2 i1 l1 z1? W:de a3 l1 ?{q-cross} p2 a1 s1 W:par? a2 o2 b1 o1/e2 m2 p1 ?{2-cross} o1/e2 a2 n2 a3 o1/e2 e3 n1 i3 n1 o1/e2 ?{q-cross} e1
+L04	?{box-cross} W:de c1 a2 g2? o1/e2 a1 t2 r1 ?{2-cross} a3 o1/e2 m1? W:ent ?{Y} o2 W:le o1/e2 c1? t2 o1/e2 r1 s2 e3 n2 g1? ?{2-bar} o1/e2 c1? s1
+L05	a3 i1 o1/e2 n2 a3 e1 W:de g1? o1/e2 r1 l2 ?{Y} W:qui? l1 n1 g1? o1/e2 n1 b1 r1 ?{2-cross} a3 W:le W:par? b1 o1/e2 r1 s1 t2
+L06	o1/e2 e3 s1 o1/e2 r1 ?{2-bar} s2 e1 b1 r1 p2 e3 i3 n1 W:de p2 o1/e2 ?{phi} m2 f1 p1 t2 W:qui? W:le r1 s2 o1/e2 c1? i3 n1 i1 W:ent
+L07	W:de g1? o1/e2 t2 e3 l1 ?{2-cross} o1/e2 e3 o1/e2 a1 l1 ?{2-cross} t2 e1 m2 a1 i1 W:par? ?{boxed-loop} W:de g1? o1/e2 r1 i3 n1 e3 s2 t2 W:qui? l1 z1?
+L08	n1 e1 s1 o1/e2 o1/e2 n1 ?{ay} r1 o1/e2 ?{q-cross} W:qui? l1 z1? p2 o1/e2 r1 o1/e2 s1 i3 n1 i1 r1 W:ent l1 ?{2-cross} g1? o1/e2 n2 t2 i1
+L09	e3 W:par? o1/e2 n2 c1 o1/e2 s2 o1/e2 W:par? n1 o1/e2 n2 t2 a2 n1 a3 ?{+s} ?{alpha-box} t2 a3 a2 n2 ?{2-bar} s2 e1 W:le s1 r1 c1 g1?
+L10	o1/e2 W:par? ?{Y} o1/e2 ?{Y} p1 l1 o1/e2 i1 g1? t2 ?{omega} W:de l1 W:qui? ?{f-hook} ?{f-hook} p1 a1 W:de ?{2-bar} o1/e2 o1/e2 W:par? o2 ?{+s} s1 e1
+L11	i3 n1 o1/e2 r1 l2 ?{phi} ?{2-cross} s2 g1? o1/e2 r1 l2 ?{Y} c1 ?{q-cross} o1/e2 s1 g1? l1 a2 o1/e2 c1 i1 s2 W:de W:par? i3 n1 o1/e2 l2 r1 n1 t2
+L12	o1/e2 W:par? W:de t2 o1/e2 r1 W:par? W:le r1 s2 W:par? i3 n1 o1/e2 ?{2-cross} s1 i1 n1 W:par? b1 r1 g1? o1/e2 s1 t2 e1 W:de t2 o1/e2 s2 o1/e2 e1
+L13	?{z-bar} o1/e2 o1/e2 m1 e1 a3 o1/e2 a2 n1 a3 o1/e2 s2? ?{T-cross} l1 o1/e2 ?{hook} o1/e2 e1 o1/e2 n1 t2 i1 o1/e2 ?{hook} m1 m1 n1? ?{cross-stem} W:de W:le o1/e2 ?{hook}
+L14	a3 m2 i1 t2 p1 e1 a3 ?{z-bar} i1 n1 W:de n1 a2 o1/e2 o1/e2 i1 ?{hook} t2 a2 n1 a3 W:de n1 n2 o1/e2 m2 i1 ?{T-slant} a3 ?{plus-bar} o1/e2
+L15	m2 b1 a1 a3 o1/e2 e1 t2 o1/e2 o1/e2 a3 a3 l1 a2 ?{z-bar} o1/e2 i1 p1 ?{T-slant} ?{Y} W:roy? m2 o1/e2 ?{T-slant} m1 o1/e2 m2 o1/e2 c1 o1/e2 n1 e1
+L16	?{omega-hook} n1 o1/e2 p1 ?{hook} ?{plus-bar} o1/e2 ?{epsilon} o1/e2 n1 c2 a2 n2 t2 ?{pi} l2 W:le ?{z-bar} i1 n1 ?{epsilon} o1/e2 a2 n1 c2 o1/e2 n1 W:le ?{T-slant}
+L17	t2 o1/e2 ?{phi} r? b1 W:le ?{T-slant} W:de ?{z-bar} W:roy a3 r? m1 e1 W:de ?{T-slant} ?{pi} l2 ?{epsilon} W:le ?{T-slant} t2 o1/e2 o1/e2 ?{plus-bar} ?{g} ?{epsilon} n1 ?{plus-bar} o1/e2 n1
+L18	c1 o1/e2 n1 t2 o1/e2 m1 s2 m2 a1 r? n1 a2 i1 s2 e1 o1/e2 p1 ?{epsilon} i1 n1 i1 o1/e2 n1 ?{plus-bar} W:le ?{plus-bar} o1/e2 n1 t2
+L19	o1/e2 p1 ?{epsilon} i1 n1 i1 o1/e2 n1 ?{plus-bar} W:le o1/e2 o1/e2 p1 ?{phi} p1 s2 g1 l1 ?{w} s2 a1 t2 a3 o1/e2 n1 c2 o1/e2 p1 ?{plus-bar} W:de ?{z-bar} ?{cross-stem} c2 n1 ?{plus-bar} e1
+L20	a1 o1/e2 ?{epsilon} r? i1 ?{T-slant} c2 o1/e2 n1 a1 o1/e2 ?{hook} m2 o1/e2 i1 l1 l2 o1/e2 r? ?{hook} e1 ?{epsilon} o1/e2 m1 r? n1 e1 a3 ?{z-bar} B
+L21	s2 i1 n1 o1/e2 n2 ?{pi} ?{plus-bar} o1/e2 W:le ?{pi} p1 e1 l1 o1/e2 ?{phi} a3 a3 ?{phi} o1/e2 ?{T-slant} c1 o1/e2 i1 p1 t2 ?{plus-bar} ?{phi} W:de r? ?{z-bar} a3
+L22	g1 ?{ff} ?{pi} ?{plus-bar} o1/e2 ?{epsilon} o1/e2 m1 m2 i1 o1/e2 ?{hook} ?{epsilon} a1 s2 ?{T-slant} a2 a2 o1/e2 a1 r? a2 W:le t2 o1/e2 r? ?{T-slant} W:le ?{T-slant} p1 ?{phi}
+L23	r? o1/e2 ?{T-slant} ?{pi} l2 ?{pi} ?{plus-bar} ?{z-bar} o1/e2 s2 o1/e2 b1 r? o1/e2 m1 ?{T-slant} p1 p1 m1 c1 t2 g1 l1 m2 o1/e2 s2 o1/e2 r? l2 ?{phi} i1 a3
+L24	?{epsilon} o1/e2 o1/e2 t2 m1 ?{hook} ?{plus-bar} o1/e2 g1 l1 m2 a1 b1 p1 o1/e2 n1 ?{plus-bar} ?{omega-hook} o1/e2 s2 p1 o1/e2 ?{hook} i1 m2 o1/e2 n1 a3 o1/e2 ?{hook} a3 ?{omega-hook}
+L25	d1 p1 n1? f1 o1/e2 e3 i2 u1 a3 p1 u1 t2 o1/e2 ?{triple hash} o2? o1/e2 u1 u1 m1? u1 t2 e3 o1/e2 W:le ?{alpha-b ligature} W:de l1 a2 W:par? o1/e2 i1
+L26	g2? u1 o1/e2 r1 e3 i1 m1? W:de o2 m1? a3 m2 o1/e2 o3? W:le W:les? r1 b1 p1 o1/e2 c1 t2 d1 r1 W:que? l2 W:de? a1 m2 p1 W:le m1? W:ent
+L27	?{triple hash} m1? p1 ?{triple hash} m1? W:les? o1/e2 u1 t2 e1 a3? ?{2-with-bar} W:qui? o1/e2 ?{B} W:par W:le W:qui? m2 p1 m1? u1 o1/e2 W:qui? d1 r1 ?{alpha-with-tail} r1 a1 t2 e3
+L28	i1 o1/e2 W:les? m1? o1/e2 b1 o1/e2 W:qui? m2 o1/e2 i1 W:qui? p2 a1 W:les? W:qui? o1/e2 a3? o3? a2 u1 t2 W:de p1 r1 i1 W:qui? d1 o1/e2 u1 n2 e1
+L29	W:les? r1 e3 p1 ?{small n-bar} o1/e2 l2 l1 r1 o3? u1? n2 o1/e2 t2 ?{triple hash} m1? W:les? p1 u1 i1 W:que? W:les? o1/e2 u1 t2 o1/e2 n2 c1 e1 ?{q-loop} l1 a2?
+L30	p2 ?{phi-loop} r1 ?{triple hash} W:les? u1? i1 t2 e1 d1 r1 W:qui? ?{alpha-b ligature} ?{Γ-bar} ?{double S} o1/e2 i1 t2 a2 r1 W:les? W:qui? i1 m2 a1 l1 ?{cup-bar} o1/e2 u1 W:de W:que?
+L31	?{2-with-bar} ?{B} a1 r1 e3 i2 W:les? p1 l1 l2 r1 o3? p2 l1 a2 i1 W:les? t2 u1? o1/e2 o1/e2 W:par m2 o1/e2 W:qui? W:qui? o1/e2 W:qui? W:le t2 e3 o1/e2 W:qui?
+L32	W:les? r1 ?{triple hash} ?{alpha-with-tail} r1 o1/e2 o3? i4 o1/e2 W:les? p1 o1/e2 e3 e1? W:que? l2 a2 W:le p2 ?{phi-loop} r1 ?{triple hash} u1? ?{triple hash} p1 e3 ?{triple hash} a2 a3 r1 o1/e2 W:qui?
+L33	?{4-with-bars} W:de p2 ?{triple hash} r1 W:de u1 c1 e1 W:que? ?{trident-bar} ?{alpha-b ligature} u1 o1/e2 l1 a2 W:les? o1/e2 l2 i1 c1 p1 t2 e1 u1 o3? ?{trident-bar} p2 a2 W:les? W:qui? a1
+L34	?{alpha-b ligature} ?{small cross-bar} c1 ?{phi-loop} ?{triple hash} W:de ?{oo-bar} N8 e1 W:ent p1 l2 ?{small-w} u1 o1/e2 W:les? W:que? a2 r1 ?{2-cross-loop} p1 c1 o3? i4 r1 W:qui? W:que? W:qui? ?{alpha-b ligature} u1?
+L35	i1 o1/e2 r1 e3 x1 ?{2-with-bar} r1 o3? W:que? n2 ?{double S} W:le ?{cup-bar} ?{triple hash} u1 x1 ?{small-w} W:de W:qui? p1 u1 t2 o1/e2 u1 a3 i1 o1/e2 u1 W:qui? W:de
+L36	l1 ?{cup-bar} W:le W:que? l1 o1/e2 e3 o1/e2 W:qui? ?{Γ-bar} l1 a3? i1 t2 ?{small cross-bar} ?{triple hash} m1? u1 W:de W:qui? W:le m2 o1/e2 p1 W:qui? W:de i4 a1 n2

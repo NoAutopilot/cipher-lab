@@ -1,0 +1,37 @@
+L00	W:le W:par? W:faire ?{t-s} N1? o1/e2 b2 o1/e2 ?{omega-tail} p1
+L01	?{angular-cup} o1/e2 ?{H-bar} W:par? ?{psi-circle} n1 d1 ?{H-bar} ?{box-theta} W:de N1? ?{alpha-flat} e3 ?{omega-tail} W:par? W:de W:le W:les p1 e3 o1/e2 a1 ?{A-bar} b2 o1/e2 ?{step} W:le W:par? a3
+L02	o1/e2 ?{2-tail} t2 o1/e2 e3 a3 o1/e2 ?{A-bar} ?{H-bar} W:par? W:de ?{epsilon} ?{H-bar} ?{2-cross} W:par? l1 l1 a2 l1 ?{2-cross} b1 o1/e2 ?{curl} a2 t2 ?{2-cross} o1/e2 ?{2-tail} d1 ?{omega-tail}
+L03	?{angular-cup} i1 l1 ?{ten} W:de ?{alpha-circle} l1 ?{q-cross} ?{epsilon} a1 W:les W:par? a2 W:que b1 o1/e2 o1/e2 ?{U-hook} p1 ?{2-cross} o1/e2 a2 ?{A-bar} ?{alpha-circle} o1/e2 e3 ?{2-tail} ?{omega-tail} o1/e2 ?{q-cross} e1
+L04	?{box-cross} W:de b2 a2 ?{box-flat} o1/e2 a1 t2 ?{H-bar} ?{2-cross} a3 o1/e2 ?{S-flat} n1 ?{Y-bar} W:que W:le o1/e2 e3 t2 o1/e2 ?{H-bar} ?{curl} e3 ?{A-bar} N1? ?{x-hook} o1/e2 e3 W:les
+L05	a3 i1 o1/e2 ?{A-bar} a3 e1 W:de N1? o1/e2 ?{H-bar} ?{triangle} ?{Y-bar} ?{step} l1 ?{2-tail} N1? o1/e2 ?{2-tail} b1 ?{H-bar} ?{2-cross} a3 W:le W:par? d1 o1/e2 ?{H-bar} W:les t2
+L06	o1/e2 e3 ?{Y-bar} o1/e2 ?{H-bar} x1 ?{curl} e1 d1 ?{H-bar} ?{epsilon} e3 ?{omega-tail} W:de ?{epsilon} o1/e2 b2 o1/e2 ?{psi-circle} ?{angular-cup} ?{7} p1 t2 ?{step} W:le ?{H-bar} ?{curl} o1/e2 e3 ?{omega-tail} i1 n1
+L07	W:de N1? o1/e2 t2 e3 l1 ?{2-cross} o1/e2 e3 o1/e2 a1 l1 ?{2-cross} t2 e1 ?{U-hook} a1 a1 i1 W:par? ?{box-lantern} W:de N1? o1/e2 ?{H-bar} ?{omega-tail} e3 ?{curl} t2 ?{step} l1 ?{ten}
+L08	?{2-tail} e1 ?{psi-bar} o1/e2 o1/e2 ?{2-tail} ?{ay-script} ?{H-bar} o1/e2 ?{q-cross} ?{step} l1 ?{ten} ?{epsilon} o1/e2 o1/e2 ?{H-bar} o1/e2 ?{psi-bar} ?{omega-tail} i1 ?{H-bar} n1 l1 ?{2-cross} N1? o1/e2 ?{A-bar} t2 i1
+L09	e3 W:par? o1/e2 ?{A-bar} b2 o1/e2 ?{curl} o1/e2 W:par? ?{2-tail} o1/e2 ?{A-bar} t2 a2 ?{2-tail} o1 a3 ?{t-s} ?{alpha-circle} t2 a3 a2 ?{A-bar} x1 ?{curl} e1 W:le ?{psi-bar} ?{H-bar} b2 N1?
+L10	o1/e2 W:par? ?{Y-bar} o1/e2 ?{Y-bar} p1 l1 o1/e2 i1 N1? t2 ?{w-curl} W:de l1 ?{m-underline} ?{m-underline} ?{step} ?{ff} p1 a1 W:de ?{2-hook} o1/e2 o1/e2 W:par? W:que ?{t-s} ?{psi-bar} e1
+L11	?{omega-tail} o1/e2 ?{H-bar} ?{triangle} ?{phi} ?{2-cross} ?{curl} N1? o1/e2 ?{H-bar} ?{triangle} ?{Y-bar} b2 ?{q-cross} o1/e2 ?{psi-bar} ?{psi-bar} N1? l1 a2 o1/e2 b2 i1 ?{curl} W:de W:par? ?{omega-tail} o1/e2 ?{triangle} ?{H-bar} ?{2-tail} t2
+L12	o1/e2 W:par? W:de t2 o1/e2 ?{H-bar} W:par? W:le ?{H-bar} ?{curl} W:par? ?{omega-tail} o1/e2 p1 ?{psi-bar} ?{psi-bar} i1 ?{2-tail} W:par? ?{theta-bar} ?{H-bar} N1? o1/e2 ?{Y-bar} t2 e1 W:de t2 o1/e2 ?{curl} o1/e2 e1
+L13	?{2-like} o2 o2 m1 d1 a3 n2 r1 a2 n1 a3 o1/e2 s1 N1 l1 r1 r2 o2 d1 o1/e2 n1 t2 i1 o1/e2 r2 e3 m1 ?{2} N2 D1 W:de W:le r1 r2
+L14	a3 m2 i1 t2 p1 e1 a3 ?{2-like} i1 n1 W:de n1 a2 o1/e2 o2 i1 r2 t2 a2 n1 a3 W:de n1 n2 o1/e2 m2 i1 W:ont? a3 N1 o1/e2
+L15	m2 b1 a1 a3 o2 d1 t2 o1/e2 o1/e2 a3 a3 l1 a2 ?{2-like} o1/e2 i1 W:ont? ?{Y-hook} W:par m2 o1/e2 W:ont? m1 o2 m2 o1/e2 z1 o1/e2 n1 e1
+L16	i4 n1? o1/e2 p1? r2 N1 o2 p2 o1/e2 n1 x1 a2 n2 t2 W:que l2 W:le ?{2-like} i1 n1 p2 o2 a2 n1 x1 o2 ?{hook} n1? W:le W:ont?
+L17	t2 o2 q2 r1 b1 W:le W:ont? W:de ?{2-like} W:roy? a3 r1 m1 d1 W:de W:ont? W:que l2 ?{w} W:le W:ont? t2 r1 o2 N1 ?{g-loop} ?{w} ?{hook} n1 N1 o1/e2 n1
+L18	c1 N1 i4 n1? t2 o2 e3 ?{Y-hook} m2 a1 r1 i4 n1? a2 i1 ?{Y-hook} d1 o1/e2 p1 p2 i1 n1 i1 o1/e2 n1 ?{T-hook} W:le N1 o1/e2 n1 t2
+L19	o2 e3 p1 q2 p1? ?{Y-hook} h1 l1 ?{w} s2 a1 t2 a3 N1 n1 x1 o1/e2 p1 N2 W:de ?{2-like} W:par t2 x1 n1 p1 d1
+L20	n2 o1/e2 p2 r1 i1 W:ont? x1 o2 n1 n2 o1/e2 r2 m2 o1/e2 i1 l1 l2 o1/e2 r1 r2 d1 p2 o2 e3 r1 i4 n1 d1 a3 ?{2-like} ?{B}
+L21	s2 i1 n1 o1/e2 n2 W:que N1 o1/e2 W:le W:que p1 d1 l1 r1 z1 a3 z1 o1/e2 W:ont? c1 o2 i1 p1 t2 N1 z1 W:de r1 a2 n1 a3
+L22	g1 e3 e3 W:que N1 o1/e2 p2 o2 e3 m2 i1 o1/e2 r2 p2 a1 s2 W:ont? a2 o2 a1 r1 a2 W:le t2 o2 r1 W:ont? W:le W:ont? p1 q2
+L23	r1 o2 W:ont? W:que l2 W:que N1 ?{2-like} o1/e2 ?{Y-hook} o1/e2 b1 r1 o2 e3 W:ont? p1 e3 c1 t2 g1 l1 m2 o1/e2 ?{Y-hook} o2 r1 l2 q2 i1 a3
+L24	p2 o2 o2 t2 e3 r2 N1 o1/e2 g1 l1 m2 a1 b1 p1 o1/e2 n1 n1? o1/e2 s2 p1 o1/e2 r2 i1 m2 o1/e2 n1 a3 o1/e2 r2 a3 n1?
+L25	d1 ?{2-cross} ?{2-loop} f1 o1/e2 r2? i2? n1 a3 p1 n1 t2 o1/e2 ?{triple-hash} r1 o1/e2 n1 ?{swash-n} e3? n1 t2 r2? o1/e2 W:le ?{loop-ligature} W:de l1 a2 W:que? o1/e2 i1
+L26	g2 n1 o1/e2 r1 r2? i1 e3? W:de o2? e3? a3 s1 o1/e2 o3? W:le s2 r1 b1 ?{2-cross} o1/e2 c1 t2 d1 r1 o2 l2 ?{diamond-8} a1 s1 p1 W:le e3? N2?
+L27	?{triple-hash} e3? p1 ?{triple-hash} e3? s2 o1/e2 n1 t2 ?{delta-flag} ?{loop-ligature} ?{2-bar} W:que? o1/e2 ?{B} W:par W:le W:que? s1 ?{2-cross} e3? n1 o1/e2 W:que? d1 r1 ?{ay-loop} r1 a1 t2 r2?
+L28	i1 o1/e2 s2 e3? o1/e2 b1 r1 W:que? s1 o1/e2? i1 W:que? p2 a1 s2 W:que? o1/e2 ?{loop-ligature} o3? a2 n1 t2 W:de p1 r1 i1 W:que? d1 o1/e2 n1 n2 ?{delta-flag}
+L29	s2 o1/e2 r2? ?{2-cross} ?{n-tick} o1/e2 l2 l1 r1 o3? ?{swash-n} n2 o1/e2 t2 ?{triple-hash} e3? s2 ?{2-cross} n1 i1 o2 s2? o1/e2 n1 t2 o1/e2 n2 c1 ?{delta-flag} ?{phi} l1 ?{1-bar}
+L30	p2 ?{phi} r1 ?{triple-hash} s2 ?{swash-n} i1 t2 ?{delta-flag} d1 r1 W:que? ?{loop-ligature} W:qui? e3 o1/e2 i1 t2 a2 r1 s2 W:que? i1 s1 a1 l1 f2? o1/e2 n1 W:de o2
+L31	?{2-bar} ?{B} a1 r1 r2? a2? s2 ?{2-cross} l1 l2 r1 o3? p2 l1 a2 i1 s2 t2 ?{swash-n} o1/e2 r1 W:par s1 o1/e2 W:que? W:que? o1/e2 W:que? W:le t2 r2? o1/e2 W:que?
+L32	s2 r1 ?{triple-hash} ?{ay-loop} r1 o1/e2? o3? i4? o1/e2 s2 p1 o1/e2 r2? ?{curl-S} o2 l2 a2 W:sieur p2 ?{phi} r1 ?{triple-hash} ?{swash-n} ?{triple-hash} ?{2-cross} r2? ?{triple-hash} a2 a3 r1 o1/e2 ?{n-tick}
+L33	?{4-bars} ?{diamond-8} p2 ?{triple-hash} r1 W:de ?{swash-n} c1 ?{delta-flag} o2 ?{psi-bar} ?{loop-ligature} ?{swash-n} o1/e2 l1 a2 s2 o1/e2 l2 i1 c1 ?{2-cross} t2 ?{delta-flag} ?{swash-n} o3? ?{psi-bar} p2 a2 s2 W:que? a1
+L34	?{loop-ligature} ?{plus-n} c1 ?{phi} ?{triple-hash} W:de ?{oo-dash} N8 N4 N2 ?{2-cross} l2 z1? n1 o1/e2 s2 ?{n-tick} a2 r1 ?{2-cross-o} ?{2-cross} c1 o3? i4? r1 W:que? o2 W:que? ?{loop-ligature} ?{swash-n}
+L35	i1 o1/e2 r1 r2? x1 ?{2-bar} r1 o3? o2 n2 e3 W:le f2? ?{triple-hash} ?{swash-n} x1 z1? W:de W:que? ?{2-cross} n1 t2 o1/e2 n1 a3 i1 o1/e2 n1 W:que? W:de
+L36	l1 ?{u-flag} W:le o2 l1 ?{triple-hash} r2? o1/e2 W:que? W:qui? l1 ?{alpha-A} i1 t2 ?{plus-n} ?{triple-hash} e3? ?{swash-n} W:de W:que? W:le s1 o1/e2 ?{2-cross} W:que? W:de i4? a1 n2

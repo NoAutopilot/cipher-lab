@@ -1,0 +1,19 @@
+# RUN2-NXTA family rulings for c510 (A_label, B_label -> reconciled), ruled from the c510 images L01, L02, L12, L20 and Tomokiyo's table
+# before any audit line was read. Glyph basis: tall H with two crossbars = o2 (table o row 2); triple-stroke hash = r1; plain # = o1/e2;
+# A-with-cross = n2; X = x1; delta-6 = e1; loop-S = e3; omega-hook-with-tail = u1; 9 = c1 (no b2 in the table); Y = s1 (not W:les).
+r1	o2	o2
+r	o2	o2
+r	r1	o2
+o1/e2	o2	o1/e2
+m1	e3	e3
+u1	n1	n1
+n1	u1	u1
+a1	n2	n2
+c2	x1	x1
+e1	d1	e1
+c1	b2	c1
+s1	W:les	s1
+W:les	s2	s2
+m2	s1	m2
+o2	W:que	o2
+W:que	o2	o2

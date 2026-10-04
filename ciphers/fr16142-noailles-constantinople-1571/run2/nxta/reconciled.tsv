@@ -1,0 +1,1157 @@
+leaf	line	pos	label	grade	A	B	how
+c510	L00	1	W:le	H	W:le	W:le	agree
+c510	L00	2	W:par	M	W:par	W:par	agree-low-conf
+c510	L00	3	W:faire	H	W:faire	W:faire	agree
+c510	L00	4	?	M			agree-low-conf
+c510	L00	5	g1	M	g1	N1	take-A
+c510	L00	6	o1/e2	H	o1/e2	o1/e2	agree
+c510	L00	7	c1	M	c1	b2	family-rule
+c510	L00	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L00	9	i3	M	i3		one-reader
+c510	L00	10	u1	M	n1	u1	family-rule
+c510	L00	11	p1	H	p1	p1	agree
+c510	L01	1	f2	M	f2	f2	agree-low-conf
+c510	L01	2	o1/e2	H	o1/e2	o1/e2	agree
+c510	L01	3	o2	M	r1	o2	family-rule
+c510	L01	4	W:par	M	W:par	W:par	agree-low-conf
+c510	L01	5	s1	M	s1		one-reader
+c510	L01	6	W:ent	M	W:ent		one-reader
+c510	L01	7	b1	M	b1	n1	take-A
+c510	L01	8	r1	M	r1	d1	take-A
+c510	L01	9	o2	M	o2	o2	agree-low-conf
+c510	L01	10	b1	M	b1		one-reader
+c510	L01	11	W:de	H	W:de	W:de	agree
+c510	L01	12	g1	M	g1		one-reader
+c510	L01	13	a3	M	a3	N1	take-A
+c510	L01	14	c1	M	c1		one-reader
+c510	L01	15	i3	M	i3	e3	take-A
+c510	L01	16	u1	M	n1	u1	family-rule
+c510	L01	17	W:par	M	W:par	W:par	agree-low-conf
+c510	L01	18	W:de	H	W:de	W:de	agree
+c510	L01	19	W:le	H	W:le	W:le	agree
+c510	L01	20	s1	M	s1	W:les	family-rule
+c510	L01	21	p1	H	p1	p1	agree
+c510	L01	22	e3	H	e3	e3	agree
+c510	L01	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L01	24	a1	H	a1	a1	agree
+c510	L01	25	n2	M	n2	n2	agree-low-conf
+c510	L01	26	c1	M	c1	b2	family-rule
+c510	L01	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L01	28	W:qui	M	W:qui		one-reader
+c510	L01	29	W:le	H	W:le	W:le	agree
+c510	L01	30	W:par	M	W:par	W:par	agree-low-conf
+c510	L01	31	a3	H	a3	a3	agree
+c510	L02	1	o1/e2	H	o1/e2	o1/e2	agree
+c510	L02	2	n1	M	n1	n1	agree-low-conf
+c510	L02	3	t2	H	t2	t2	agree
+c510	L02	4	o1/e2	H	o1/e2	o1/e2	agree
+c510	L02	5	e3	H	e3	e3	agree
+c510	L02	6	a3	H	a3	a3	agree
+c510	L02	7	o1/e2	H	o1/e2	o1/e2	agree
+c510	L02	8	n2	M	n2	n2	agree-low-conf
+c510	L02	9	o2	M	r1	o2	family-rule
+c510	L02	10	W:par	M	W:par	W:par	agree-low-conf
+c510	L02	11	W:de	H	W:de	W:de	agree
+c510	L02	12	p2	M	p2	p2	agree-low-conf
+c510	L02	13	o2	M	r1	o2	family-rule
+c510	L02	14	i2	M	i2	i2	agree-low-conf
+c510	L02	15	W:par	M	W:par	W:par	agree-low-conf
+c510	L02	16	l1	M		l1	one-reader
+c510	L02	17	l1	H	l1	l1	agree
+c510	L02	18	a2	H	a2	a2	agree
+c510	L02	19	l1	H	l1	l1	agree
+c510	L02	20	i2	M	i2	i2	agree-low-conf
+c510	L02	21	b1	H	b1	b1	agree
+c510	L02	22	o1/e2	H	o1/e2	o1/e2	agree
+c510	L02	23	s2	M	s2		one-reader
+c510	L02	24	a2	H	a2	a2	agree
+c510	L02	25	t2	H	t2	t2	agree
+c510	L02	26	i2	M	i2	i2	agree-low-conf
+c510	L02	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L02	28	n1	M	n1	n1	agree-low-conf
+c510	L02	29	b1	M	b1		one-reader
+c510	L02	30	i3	M	i3	d1	take-A
+c510	L02	31	u1	M	n1	u1	family-rule
+c510	L03	1	f2	M	f2	f2	agree-low-conf
+c510	L03	2	i1	H	i1	i1	agree
+c510	L03	3	l1	H	l1	l1	agree
+c510	L03	4	z1	M	z1	z1	agree-low-conf
+c510	L03	5	W:de	H	W:de	W:de	agree
+c510	L03	6	a3	M	a3		one-reader
+c510	L03	7	l1	H	l1	l1	agree
+c510	L03	8	y1	M	y1	y1	agree-low-conf
+c510	L03	9	p2	M	p2	p2	agree-low-conf
+c510	L03	10	a1	H	a1	a1	agree
+c510	L03	11	s1	M	s1	W:les	family-rule
+c510	L03	12	W:par	M	W:par	W:par	agree-low-conf
+c510	L03	13	a2	H	a2	a2	agree
+c510	L03	14	o2	M	o2	W:que	family-rule
+c510	L03	15	b1	H	b1	b1	agree
+c510	L03	16	o1/e2	M		o1/e2	one-reader
+c510	L03	17	o1/e2	H	o1/e2	o1/e2	agree
+c510	L03	18	m2	M	m2		one-reader
+c510	L03	19	p1	H	p1	p1	agree
+c510	L03	20	i2	M	i2	i2	agree-low-conf
+c510	L03	21	o1/e2	H	o1/e2	o1/e2	agree
+c510	L03	22	a2	H	a2	a2	agree
+c510	L03	23	n2	M	n2	n2	agree-low-conf
+c510	L03	24	a3	M	a3		one-reader
+c510	L03	25	o1/e2	H	o1/e2	o1/e2	agree
+c510	L03	26	e3	H	e3	e3	agree
+c510	L03	27	n1	M	n1	n1	agree-low-conf
+c510	L03	28	i3	M	i3		one-reader
+c510	L03	29	u1	M	n1	u1	family-rule
+c510	L03	30	o1/e2	H	o1/e2	o1/e2	agree
+c510	L03	31	y1	M	y1	y1	agree-low-conf
+c510	L03	32	e1	H	e1	e1	agree
+c510	L04	1	?	M			agree-low-conf
+c510	L04	2	W:de	H	W:de	W:de	agree
+c510	L04	3	c1	M	c1	b2	family-rule
+c510	L04	4	a2	H	a2	a2	agree
+c510	L04	5	g2	M	g2		one-reader
+c510	L04	6	o1/e2	H	o1/e2	o1/e2	agree
+c510	L04	7	a1	H	a1	a1	agree
+c510	L04	8	t2	H	t2	t2	agree
+c510	L04	9	o2	M	r1	o2	family-rule
+c510	L04	10	i2	M	i2	i2	agree-low-conf
+c510	L04	11	a3	H	a3	a3	agree
+c510	L04	12	o1/e2	H	o1/e2	o1/e2	agree
+c510	L04	13	m1	M	m1		one-reader
+c510	L04	14	W:ent	M	W:ent	n1	take-A
+c510	L04	15	s1	M	s1		one-reader
+c510	L04	16	o2	M	o2	W:que	family-rule
+c510	L04	17	W:le	H	W:le	W:le	agree
+c510	L04	18	o1/e2	H	o1/e2	o1/e2	agree
+c510	L04	19	c1	M	c1	e3	take-A
+c510	L04	20	t2	H	t2	t2	agree
+c510	L04	21	o1/e2	H	o1/e2	o1/e2	agree
+c510	L04	22	o2	M	r1	o2	family-rule
+c510	L04	23	s2	M	s2		one-reader
+c510	L04	24	e3	H	e3	e3	agree
+c510	L04	25	n2	M	n2	n2	agree-low-conf
+c510	L04	26	g1	M	g1	N1	take-A
+c510	L04	27	?	M			agree-low-conf
+c510	L04	28	o1/e2	H	o1/e2	o1/e2	agree
+c510	L04	29	c1	M	c1	e3	take-A
+c510	L04	30	s1	M	s1	W:les	family-rule
+c510	L05	1	a3	H	a3	a3	agree
+c510	L05	2	i1	H	i1	i1	agree
+c510	L05	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L05	4	n2	M	n2	n2	agree-low-conf
+c510	L05	5	a3	H	a3	a3	agree
+c510	L05	6	e1	H	e1	e1	agree
+c510	L05	7	W:de	H	W:de	W:de	agree
+c510	L05	8	g1	M	g1	N1	take-A
+c510	L05	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L05	10	o2	M	r1	o2	family-rule
+c510	L05	11	l2	M	l2	l2	agree-low-conf
+c510	L05	12	s1	M	s1		one-reader
+c510	L05	13	W:qui	M	W:qui		one-reader
+c510	L05	14	l1	H	l1	l1	agree
+c510	L05	15	n1	M	n1	n1	agree-low-conf
+c510	L05	16	g1	M	g1	N1	take-A
+c510	L05	17	o1/e2	H	o1/e2	o1/e2	agree
+c510	L05	18	n1	M	n1	n1	agree-low-conf
+c510	L05	19	b1	H	b1	b1	agree
+c510	L05	20	o2	M	r1	o2	family-rule
+c510	L05	21	i2	M	i2	i2	agree-low-conf
+c510	L05	22	a3	H	a3	a3	agree
+c510	L05	23	W:le	H	W:le	W:le	agree
+c510	L05	24	W:par	M	W:par	W:par	agree-low-conf
+c510	L05	25	b1	M	b1	d1	take-A
+c510	L05	26	o1/e2	H	o1/e2	o1/e2	agree
+c510	L05	27	o2	M	r1	o2	family-rule
+c510	L05	28	s1	M	s1	W:les	family-rule
+c510	L05	29	t2	H	t2	t2	agree
+c510	L06	1	o1/e2	H	o1/e2	o1/e2	agree
+c510	L06	2	e3	H	e3	e3	agree
+c510	L06	3	s1	M	s1		one-reader
+c510	L06	4	o1/e2	H	o1/e2	o1/e2	agree
+c510	L06	5	o2	M		o2	one-reader
+c510	L06	6	r1	M	r1	x1	take-A
+c510	L06	7	?	M			agree-low-conf
+c510	L06	8	s2	M	s2		one-reader
+c510	L06	9	e1	H	e1	e1	agree
+c510	L06	10	b1	M	b1	d1	take-A
+c510	L06	11	o2	M	r1	o2	family-rule
+c510	L06	12	p2	M	p2	p2	agree-low-conf
+c510	L06	13	e3	H	e3	e3	agree
+c510	L06	14	i3	M	i3		one-reader
+c510	L06	15	u1	M	n1	u1	family-rule
+c510	L06	16	W:de	H	W:de	W:de	agree
+c510	L06	17	p2	M	p2	p2	agree-low-conf
+c510	L06	18	o1/e2	M		o1/e2	one-reader
+c510	L06	19	b2	M		b2	one-reader
+c510	L06	20	o1/e2	H	o1/e2	o1/e2	agree
+c510	L06	21	o3	M	o3		one-reader
+c510	L06	22	m2	M	m2	f2	take-A
+c510	L06	23	f1	M	f1	f1	agree-low-conf
+c510	L06	24	p1	H	p1	p1	agree
+c510	L06	25	t2	H	t2	t2	agree
+c510	L06	26	W:qui	M	W:qui		one-reader
+c510	L06	27	W:le	H	W:le	W:le	agree
+c510	L06	28	o2	M	r1	o2	family-rule
+c510	L06	29	s2	M	s2		one-reader
+c510	L06	30	o1/e2	H	o1/e2	o1/e2	agree
+c510	L06	31	c1	M	c1		one-reader
+c510	L06	32	i3	M	i3	e3	take-A
+c510	L06	33	u1	M	n1	u1	family-rule
+c510	L06	34	i1	H	i1	i1	agree
+c510	L06	35	W:ent	M	W:ent	n1	take-A
+c510	L07	1	W:de	H	W:de	W:de	agree
+c510	L07	2	g1	M	g1	N1	take-A
+c510	L07	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L07	4	t2	H	t2	t2	agree
+c510	L07	5	e3	H	e3	e3	agree
+c510	L07	6	l1	H	l1	l1	agree
+c510	L07	7	i2	M	i2	i2	agree-low-conf
+c510	L07	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L07	9	e3	H	e3	e3	agree
+c510	L07	10	o1/e2	H	o1/e2	o1/e2	agree
+c510	L07	11	a1	H	a1	a1	agree
+c510	L07	12	l1	H	l1	l1	agree
+c510	L07	13	i2	M	i2	i2	agree-low-conf
+c510	L07	14	t2	H	t2	t2	agree
+c510	L07	15	e1	H	e1	e1	agree
+c510	L07	16	?	M			one-reader
+c510	L07	17	m2	M	m2	a1	take-A
+c510	L07	18	a1	H	a1	a1	agree
+c510	L07	19	i1	H	i1	i1	agree
+c510	L07	20	W:par	M	W:par	W:par	agree-low-conf
+c510	L07	21	?	M			agree-low-conf
+c510	L07	22	W:de	H	W:de	W:de	agree
+c510	L07	23	g1	M	g1	N1	take-A
+c510	L07	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L07	25	r1	M	r1		one-reader
+c510	L07	26	i3	M	i3	o2	take-A
+c510	L07	27	u1	M	n1	u1	family-rule
+c510	L07	28	e3	H	e3	e3	agree
+c510	L07	29	s2	M	s2		one-reader
+c510	L07	30	t2	H	t2	t2	agree
+c510	L07	31	W:qui	M	W:qui		one-reader
+c510	L07	32	l1	H	l1	l1	agree
+c510	L07	33	z1	M	z1	z1	agree-low-conf
+c510	L08	1	n1	M	n1	n1	agree-low-conf
+c510	L08	2	e1	H	e1	e1	agree
+c510	L08	3	s1	M	s1		one-reader
+c510	L08	4	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	5	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	6	n1	M	n1	n1	agree-low-conf
+c510	L08	7	?	M			agree-low-conf
+c510	L08	8	o2	M	r1	o2	family-rule
+c510	L08	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	10	y1	M	y1	y1	agree-low-conf
+c510	L08	11	W:qui	M	W:qui		one-reader
+c510	L08	12	l1	H	l1	l1	agree
+c510	L08	13	z1	M	z1	z1	agree-low-conf
+c510	L08	14	p2	M	p2	p2	agree-low-conf
+c510	L08	15	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	16	r1	M	r1		one-reader
+c510	L08	17	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	18	o2	M		o2	one-reader
+c510	L08	19	s1	M	s1	o1/e2	take-A
+c510	L08	20	i3	M	i3		one-reader
+c510	L08	21	u1	M	n1	u1	family-rule
+c510	L08	22	i1	H	i1	i1	agree
+c510	L08	23	o2	M	r1	o2	family-rule
+c510	L08	24	W:ent	M	W:ent	n1	take-A
+c510	L08	25	l1	H	l1	l1	agree
+c510	L08	26	i2	M	i2	i2	agree-low-conf
+c510	L08	27	g1	M	g1	N1	take-A
+c510	L08	28	o1/e2	H	o1/e2	o1/e2	agree
+c510	L08	29	n2	M	n2	n2	agree-low-conf
+c510	L08	30	t2	H	t2	t2	agree
+c510	L08	31	i1	H	i1	i1	agree
+c510	L09	1	e3	H	e3	e3	agree
+c510	L09	2	W:par	M	W:par	W:par	agree-low-conf
+c510	L09	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L09	4	n2	M	n2	n2	agree-low-conf
+c510	L09	5	c1	M	c1	b2	family-rule
+c510	L09	6	o1/e2	H	o1/e2	o1/e2	agree
+c510	L09	7	s2	M	s2		one-reader
+c510	L09	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L09	9	W:par	M	W:par	W:par	agree-low-conf
+c510	L09	10	n1	M	n1	n1	agree-low-conf
+c510	L09	11	o1/e2	H	o1/e2	o1/e2	agree
+c510	L09	12	n2	M	n2	n2	agree-low-conf
+c510	L09	13	t2	H	t2	t2	agree
+c510	L09	14	a2	H	a2	a2	agree
+c510	L09	15	n1	M	n1	n1	agree-low-conf
+c510	L09	16	o1	M		o1	one-reader
+c510	L09	17	a3	H	a3	a3	agree
+c510	L09	18	?	M			agree-low-conf
+c510	L09	19	?	M			agree-low-conf
+c510	L09	20	t2	H	t2	t2	agree
+c510	L09	21	a3	H	a3	a3	agree
+c510	L09	22	a2	H	a2	a2	agree
+c510	L09	23	n2	M	n2	n2	agree-low-conf
+c510	L09	24	x1	M		x1	one-reader
+c510	L09	25	?	M			agree-low-conf
+c510	L09	26	s2	M	s2		one-reader
+c510	L09	27	e1	H	e1	e1	agree
+c510	L09	28	W:le	H	W:le	W:le	agree
+c510	L09	29	s1	M	s1		one-reader
+c510	L09	30	o2	M	r1	o2	family-rule
+c510	L09	31	c1	M	c1	b2	family-rule
+c510	L09	32	g1	M	g1	N1	take-A
+c510	L10	1	o1/e2	H	o1/e2	o1/e2	agree
+c510	L10	2	W:par	M	W:par	W:par	agree-low-conf
+c510	L10	3	s1	M	s1		one-reader
+c510	L10	4	o1/e2	H	o1/e2	o1/e2	agree
+c510	L10	5	s1	M	s1		one-reader
+c510	L10	6	p1	H	p1	p1	agree
+c510	L10	7	l1	H	l1	l1	agree
+c510	L10	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L10	9	i1	H	i1	i1	agree
+c510	L10	10	g1	M	g1	N1	take-A
+c510	L10	11	t2	H	t2	t2	agree
+c510	L10	12	?	M			agree-low-conf
+c510	L10	13	W:de	H	W:de	W:de	agree
+c510	L10	14	l1	H	l1	l1	agree
+c510	L10	15	?	M			one-reader
+c510	L10	16	W:qui	M	W:qui		one-reader
+c510	L10	17	?	M			agree-low-conf
+c510	L10	18	?	M			agree-low-conf
+c510	L10	19	p1	H	p1	p1	agree
+c510	L10	20	a1	H	a1	a1	agree
+c510	L10	21	W:de	H	W:de	W:de	agree
+c510	L10	22	?	M			agree-low-conf
+c510	L10	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L10	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L10	25	W:par	M	W:par	W:par	agree-low-conf
+c510	L10	26	o2	M	o2	W:que	family-rule
+c510	L10	27	?	M			agree-low-conf
+c510	L10	28	s1	M	s1		one-reader
+c510	L10	29	e1	H	e1	e1	agree
+c510	L11	1	i3	M	i3		one-reader
+c510	L11	2	u1	M	n1	u1	family-rule
+c510	L11	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L11	4	o2	M	r1	o2	family-rule
+c510	L11	5	l2	M	l2	l2	agree-low-conf
+c510	L11	6	o3	M	o3	o3	agree-low-conf
+c510	L11	7	i2	M	i2	i2	agree-low-conf
+c510	L11	8	s2	M	s2		one-reader
+c510	L11	9	g1	M	g1	N1	take-A
+c510	L11	10	o1/e2	H	o1/e2	o1/e2	agree
+c510	L11	11	o2	M	r1	o2	family-rule
+c510	L11	12	l2	M	l2	l2	agree-low-conf
+c510	L11	13	s1	M	s1		one-reader
+c510	L11	14	c1	M	c1	b2	family-rule
+c510	L11	15	y1	M	y1	y1	agree-low-conf
+c510	L11	16	o1/e2	H	o1/e2	o1/e2	agree
+c510	L11	17	?	M			one-reader
+c510	L11	18	s1	M	s1		one-reader
+c510	L11	19	g1	M	g1	N1	take-A
+c510	L11	20	l1	H	l1	l1	agree
+c510	L11	21	a2	H	a2	a2	agree
+c510	L11	22	o1/e2	H	o1/e2	o1/e2	agree
+c510	L11	23	c1	M	c1	b2	family-rule
+c510	L11	24	i1	H	i1	i1	agree
+c510	L11	25	s2	M	s2		one-reader
+c510	L11	26	W:de	H	W:de	W:de	agree
+c510	L11	27	W:par	M	W:par	W:par	agree-low-conf
+c510	L11	28	i3	M	i3		one-reader
+c510	L11	29	u1	M	n1	u1	family-rule
+c510	L11	30	o1/e2	H	o1/e2	o1/e2	agree
+c510	L11	31	l2	M	l2	l2	agree-low-conf
+c510	L11	32	o2	M	r1	o2	family-rule
+c510	L11	33	n1	M	n1	n1	agree-low-conf
+c510	L11	34	t2	H	t2	t2	agree
+c510	L12	1	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	2	W:par	M	W:par	W:par	agree-low-conf
+c510	L12	3	W:de	H	W:de	W:de	agree
+c510	L12	4	t2	H	t2	t2	agree
+c510	L12	5	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	6	o2	M	r1	o2	family-rule
+c510	L12	7	W:par	M	W:par	W:par	agree-low-conf
+c510	L12	8	W:le	H	W:le	W:le	agree
+c510	L12	9	o2	M	r1	o2	family-rule
+c510	L12	10	s2	M	s2		one-reader
+c510	L12	11	W:par	M	W:par	W:par	agree-low-conf
+c510	L12	12	i3	M	i3		one-reader
+c510	L12	13	u1	M	n1	u1	family-rule
+c510	L12	14	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	15	p1	M		p1	one-reader
+c510	L12	16	i2	M	i2		one-reader
+c510	L12	17	s1	M	s1		one-reader
+c510	L12	18	i1	H	i1	i1	agree
+c510	L12	19	n1	M	n1	n1	agree-low-conf
+c510	L12	20	W:par	M	W:par	W:par	agree-low-conf
+c510	L12	21	b1	M	b1	b1	agree-low-conf
+c510	L12	22	o2	M	r1	o2	family-rule
+c510	L12	23	g1	M	g1	N1	take-A
+c510	L12	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	25	s1	M	s1		one-reader
+c510	L12	26	t2	H	t2	t2	agree
+c510	L12	27	e1	H	e1	e1	agree
+c510	L12	28	W:de	H	W:de	W:de	agree
+c510	L12	29	t2	H	t2	t2	agree
+c510	L12	30	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	31	s2	M	s2		one-reader
+c510	L12	32	o1/e2	H	o1/e2	o1/e2	agree
+c510	L12	33	e1	H	e1	e1	agree
+c510	L13	1	?	M			agree-low-conf
+c510	L13	2	o1/e2	M	o1/e2	o2	family-rule
+c510	L13	3	o1/e2	M	o1/e2	o2	family-rule
+c510	L13	4	m1	H	m1	m1	agree
+c510	L13	5	e1	M	e1	d1	family-rule
+c510	L13	6	a3	H	a3	a3	agree
+c510	L13	7	n2	M		n2	one-reader
+c510	L13	8	o1/e2	M	o1/e2	r1	take-A
+c510	L13	9	a2	H	a2	a2	agree
+c510	L13	10	n1	H	n1	n1	agree
+c510	L13	11	a3	H	a3	a3	agree
+c510	L13	12	o1/e2	H	o1/e2	o1/e2	agree
+c510	L13	13	s2	M	s2	s1	take-A
+c510	L13	14	N1	M		N1	one-reader
+c510	L13	15	l1	H	l1	l1	agree
+c510	L13	16	o1/e2	M	o1/e2	r1	take-A
+c510	L13	17	r2	M		r2	one-reader
+c510	L13	18	o1/e2	M	o1/e2	o2	family-rule
+c510	L13	19	e1	M	e1	d1	family-rule
+c510	L13	20	o1/e2	H	o1/e2	o1/e2	agree
+c510	L13	21	n1	H	n1	n1	agree
+c510	L13	22	t2	H	t2	t2	agree
+c510	L13	23	i1	H	i1	i1	agree
+c510	L13	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L13	25	r2	M		r2	one-reader
+c510	L13	26	e3	M	m1	e3	family-rule
+c510	L13	27	m1	H	m1	m1	agree
+c510	L13	28	n1	M	n1		one-reader
+c510	L13	29	?	M			agree-low-conf
+c510	L13	30	N2	M		N2	one-reader
+c510	L13	31	D1	M		D1	one-reader
+c510	L13	32	W:de	H	W:de	W:de	agree
+c510	L13	33	W:le	H	W:le	W:le	agree
+c510	L13	34	o1/e2	M	o1/e2	r1	take-A
+c510	L13	35	r2	M		r2	one-reader
+c510	L14	1	a3	H	a3	a3	agree
+c510	L14	2	m2	H	m2	m2	agree
+c510	L14	3	i1	H	i1	i1	agree
+c510	L14	4	t2	H	t2	t2	agree
+c510	L14	5	p1	H	p1	p1	agree
+c510	L14	6	e1	H	e1	e1	agree
+c510	L14	7	a3	H	a3	a3	agree
+c510	L14	8	?	M			agree-low-conf
+c510	L14	9	i1	H	i1	i1	agree
+c510	L14	10	n1	H	n1	n1	agree
+c510	L14	11	W:de	H	W:de	W:de	agree
+c510	L14	12	n1	H	n1	n1	agree
+c510	L14	13	a2	H	a2	a2	agree
+c510	L14	14	o1/e2	H	o1/e2	o1/e2	agree
+c510	L14	15	o1/e2	M	o1/e2	o2	family-rule
+c510	L14	16	i1	H	i1	i1	agree
+c510	L14	17	r2	M		r2	one-reader
+c510	L14	18	t2	H	t2	t2	agree
+c510	L14	19	a2	H	a2	a2	agree
+c510	L14	20	n1	H	n1	n1	agree
+c510	L14	21	a3	H	a3	a3	agree
+c510	L14	22	W:de	H	W:de	W:de	agree
+c510	L14	23	n1	H	n1	n1	agree
+c510	L14	24	n2	H	n2	n2	agree
+c510	L14	25	o1/e2	H	o1/e2	o1/e2	agree
+c510	L14	26	m2	H	m2	m2	agree
+c510	L14	27	i1	H	i1	i1	agree
+c510	L14	28	W:ont	M		W:ont	one-reader
+c510	L14	29	a3	H	a3	a3	agree
+c510	L14	30	N1	M		N1	one-reader
+c510	L14	31	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	1	m2	H	m2	m2	agree
+c510	L15	2	b1	H	b1	b1	agree
+c510	L15	3	a1	H	a1	a1	agree
+c510	L15	4	a3	H	a3	a3	agree
+c510	L15	5	o1/e2	M	o1/e2	o2	family-rule
+c510	L15	6	e1	M	e1	d1	family-rule
+c510	L15	7	t2	H	t2	t2	agree
+c510	L15	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	10	a3	H	a3	a3	agree
+c510	L15	11	a3	H	a3	a3	agree
+c510	L15	12	l1	H	l1	l1	agree
+c510	L15	13	a2	H	a2	a2	agree
+c510	L15	14	?	M			agree-low-conf
+c510	L15	15	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	16	i1	H	i1	i1	agree
+c510	L15	17	p1	M	p1	W:ont	take-A
+c510	L15	18	?	M			agree-low-conf
+c510	L15	19	s1	M	s1		one-reader
+c510	L15	20	W:roy	M	W:roy	W:par	take-A
+c510	L15	21	m2	H	m2	m2	agree
+c510	L15	22	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	23	W:ont	M		W:ont	one-reader
+c510	L15	24	m1	H	m1	m1	agree
+c510	L15	25	o1/e2	M	o1/e2	o2	family-rule
+c510	L15	26	m2	H	m2	m2	agree
+c510	L15	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	28	c1	M	c1	z1	take-A
+c510	L15	29	o1/e2	H	o1/e2	o1/e2	agree
+c510	L15	30	n1	H	n1	n1	agree
+c510	L15	31	e1	H	e1	e1	agree
+c510	L16	1	u1	M	u1	i4	take-A
+c510	L16	2	n1	M	n1	n1	agree-low-conf
+c510	L16	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L16	4	p1	M	p1	p1	agree-low-conf
+c510	L16	5	r2	M		r2	one-reader
+c510	L16	6	N1	M		N1	one-reader
+c510	L16	7	o1/e2	M	o1/e2	o2	family-rule
+c510	L16	8	p2	M	p2	p2	agree-low-conf
+c510	L16	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L16	10	n1	H	n1	n1	agree
+c510	L16	11	x1	M	c2	x1	family-rule
+c510	L16	12	a2	H	a2	a2	agree
+c510	L16	13	n2	H	n2	n2	agree
+c510	L16	14	t2	H	t2	t2	agree
+c510	L16	15	o2	M	o2	W:que	family-rule
+c510	L16	16	l2	H	l2	l2	agree
+c510	L16	17	W:le	H	W:le	W:le	agree
+c510	L16	18	?	M			agree-low-conf
+c510	L16	19	i1	H	i1	i1	agree
+c510	L16	20	n1	H	n1	n1	agree
+c510	L16	21	p2	M	p2	p2	agree-low-conf
+c510	L16	22	o1/e2	M	o1/e2	o2	family-rule
+c510	L16	23	a2	H	a2	a2	agree
+c510	L16	24	n1	H	n1	n1	agree
+c510	L16	25	x1	M		x1	one-reader
+c510	L16	26	c2	M	c2	o2	take-A
+c510	L16	27	o1/e2	M	o1/e2		one-reader
+c510	L16	28	n1	M	n1	n1	agree-low-conf
+c510	L16	29	W:le	H	W:le	W:le	agree
+c510	L16	30	W:ont	M		W:ont	one-reader
+c510	L17	1	t2	H	t2	t2	agree
+c510	L17	2	o1/e2	M	o1/e2	o2	family-rule
+c510	L17	3	o3	M	o3	q2	take-A
+c510	L17	4	o2	M	r	r1	family-rule
+c510	L17	5	b1	H	b1	b1	agree
+c510	L17	6	W:le	H	W:le	W:le	agree
+c510	L17	7	W:ont	M		W:ont	one-reader
+c510	L17	8	W:de	H	W:de	W:de	agree
+c510	L17	9	?	M			agree-low-conf
+c510	L17	10	W:roy	M	W:roy	W:roy	agree-low-conf
+c510	L17	11	a3	H	a3	a3	agree
+c510	L17	12	o2	M	r	r1	family-rule
+c510	L17	13	m1	H	m1	m1	agree
+c510	L17	14	e1	M	e1	d1	family-rule
+c510	L17	15	W:de	H	W:de	W:de	agree
+c510	L17	16	W:ont	M		W:ont	one-reader
+c510	L17	17	o2	M	o2	W:que	family-rule
+c510	L17	18	l2	H	l2	l2	agree
+c510	L17	19	p2	M	p2		one-reader
+c510	L17	20	W:le	H	W:le	W:le	agree
+c510	L17	21	W:ont	M		W:ont	one-reader
+c510	L17	22	t2	H	t2	t2	agree
+c510	L17	23	r1	M		r1	one-reader
+c510	L17	24	o1/e2	M	o1/e2	o2	family-rule
+c510	L17	25	o1/e2	M	o1/e2	N1	take-A
+c510	L17	26	?	M			agree-low-conf
+c510	L17	27	?	M			agree-low-conf
+c510	L17	28	p2	M	p2		one-reader
+c510	L17	29	n1	H	n1	n1	agree
+c510	L17	30	N1	M		N1	one-reader
+c510	L17	31	o1/e2	H	o1/e2	o1/e2	agree
+c510	L17	32	n1	H	n1	n1	agree
+c510	L18	1	c1	H	c1	c1	agree
+c510	L18	2	N1	M		N1	one-reader
+c510	L18	3	o1/e2	M	o1/e2	i4	take-A
+c510	L18	4	n1	M	n1	n1	agree-low-conf
+c510	L18	5	t2	H	t2	t2	agree
+c510	L18	6	o1/e2	M	o1/e2	o2	family-rule
+c510	L18	7	e3	M	m1	e3	family-rule
+c510	L18	8	s2	M	s2		one-reader
+c510	L18	9	m2	H	m2	m2	agree
+c510	L18	10	a1	H	a1	a1	agree
+c510	L18	11	r1	M		r1	one-reader
+c510	L18	12	r	M	r	i4	take-A
+c510	L18	13	n1	M	n1	n1	agree-low-conf
+c510	L18	14	a2	H	a2	a2	agree
+c510	L18	15	i1	H	i1	i1	agree
+c510	L18	16	s2	M	s2		one-reader
+c510	L18	17	e1	M	e1	d1	family-rule
+c510	L18	18	o1/e2	H	o1/e2	o1/e2	agree
+c510	L18	19	p1	H	p1	p1	agree
+c510	L18	20	p2	M	p2	p2	agree-low-conf
+c510	L18	21	i1	H	i1	i1	agree
+c510	L18	22	n1	H	n1	n1	agree
+c510	L18	23	i1	H	i1	i1	agree
+c510	L18	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L18	25	n1	H	n1	n1	agree
+c510	L18	26	?	M			agree-low-conf
+c510	L18	27	W:le	H	W:le	W:le	agree
+c510	L18	28	N1	M		N1	one-reader
+c510	L18	29	o1/e2	H	o1/e2	o1/e2	agree
+c510	L18	30	n1	H	n1	n1	agree
+c510	L18	31	t2	H	t2	t2	agree
+c510	L19	1	o1/e2	M	o1/e2		one-reader
+c510	L19	2	p1	M	p1		one-reader
+c510	L19	3	p2	M	p2		one-reader
+c510	L19	4	i1	M	i1		one-reader
+c510	L19	5	n1	M	n1		one-reader
+c510	L19	6	i1	M	i1		one-reader
+c510	L19	7	o1/e2	M	o1/e2		one-reader
+c510	L19	8	n1	M	n1		one-reader
+c510	L19	9	?	M			one-reader
+c510	L19	10	W:le	M	W:le		one-reader
+c510	L19	11	o1/e2	M	o1/e2	o2	family-rule
+c510	L19	12	o1/e2	M	o1/e2	e3	take-A
+c510	L19	13	p1	H	p1	p1	agree
+c510	L19	14	o3	M	o3	q2	take-A
+c510	L19	15	p1	M	p1	p1	agree-low-conf
+c510	L19	16	s2	M	s2		one-reader
+c510	L19	17	g1	M	g1	h1	take-A
+c510	L19	18	l1	H	l1	l1	agree
+c510	L19	19	?	M			agree-low-conf
+c510	L19	20	s2	H	s2	s2	agree
+c510	L19	21	a1	H	a1	a1	agree
+c510	L19	22	t2	H	t2	t2	agree
+c510	L19	23	a3	H	a3	a3	agree
+c510	L19	24	o1/e2	M	o1/e2	N1	take-A
+c510	L19	25	n1	H	n1	n1	agree
+c510	L19	26	x1	M	c2	x1	family-rule
+c510	L19	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L19	28	p1	H	p1	p1	agree
+c510	L19	29	N2	M		N2	one-reader
+c510	L19	30	W:de	H	W:de	W:de	agree
+c510	L19	31	?	M			agree-low-conf
+c510	L19	32	W:par	M		W:par	one-reader
+c510	L19	33	t2	M		t2	one-reader
+c510	L19	34	x1	M	c2	x1	family-rule
+c510	L19	35	n1	H	n1	n1	agree
+c510	L19	36	p1	M		p1	one-reader
+c510	L19	37	e1	M	e1	d1	family-rule
+c510	L20	1	n2	M	a1	n2	family-rule
+c510	L20	2	o1/e2	H	o1/e2	o1/e2	agree
+c510	L20	3	p2	M	p2	p2	agree-low-conf
+c510	L20	4	o2	M	r	r1	family-rule
+c510	L20	5	i1	H	i1	i1	agree
+c510	L20	6	W:ont	M		W:ont	one-reader
+c510	L20	7	x1	M	c2	x1	family-rule
+c510	L20	8	o1/e2	M	o1/e2	o2	family-rule
+c510	L20	9	n1	H	n1	n1	agree
+c510	L20	10	n2	M	a1	n2	family-rule
+c510	L20	11	o1/e2	H	o1/e2	o1/e2	agree
+c510	L20	12	r2	M		r2	one-reader
+c510	L20	13	m2	H	m2	m2	agree
+c510	L20	14	o1/e2	H	o1/e2	o1/e2	agree
+c510	L20	15	i1	H	i1	i1	agree
+c510	L20	16	l1	H	l1	l1	agree
+c510	L20	17	l2	H	l2	l2	agree
+c510	L20	18	o1/e2	H	o1/e2	o1/e2	agree
+c510	L20	19	o2	M	r	r1	family-rule
+c510	L20	20	r2	M		r2	one-reader
+c510	L20	21	e1	M	e1	d1	family-rule
+c510	L20	22	p2	M	p2	p2	agree-low-conf
+c510	L20	23	o2	M		o2	one-reader
+c510	L20	24	o1/e2	M	o1/e2	e3	take-A
+c510	L20	25	m1	M	m1	r1	take-A
+c510	L20	26	r	M	r	i4	take-A
+c510	L20	27	n1	H	n1	n1	agree
+c510	L20	28	e1	M	e1	d1	family-rule
+c510	L20	29	a3	H	a3	a3	agree
+c510	L20	30	?	M			agree-low-conf
+c510	L20	31	B	M	B		one-reader
+c510	L21	1	s2	H	s2	s2	agree
+c510	L21	2	i1	H	i1	i1	agree
+c510	L21	3	n1	H	n1	n1	agree
+c510	L21	4	o1/e2	H	o1/e2	o1/e2	agree
+c510	L21	5	n2	H	n2	n2	agree
+c510	L21	6	o2	M	o2	W:que	family-rule
+c510	L21	7	N1	M		N1	one-reader
+c510	L21	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L21	9	W:le	H	W:le	W:le	agree
+c510	L21	10	o2	M	o2	W:que	family-rule
+c510	L21	11	p1	H	p1	p1	agree
+c510	L21	12	e1	M	e1	d1	family-rule
+c510	L21	13	l1	H	l1	l1	agree
+c510	L21	14	o1/e2	M	o1/e2		one-reader
+c510	L21	15	o3	M	o3	r1	take-A
+c510	L21	16	a3	M	a3	z1	take-A
+c510	L21	17	a3	H	a3	a3	agree
+c510	L21	18	o3	M	o3	z1	take-A
+c510	L21	19	o1/e2	H	o1/e2	o1/e2	agree
+c510	L21	20	W:ont	M		W:ont	one-reader
+c510	L21	21	c1	H	c1	c1	agree
+c510	L21	22	o1/e2	M	o1/e2	o2	family-rule
+c510	L21	23	i1	H	i1	i1	agree
+c510	L21	24	p1	H	p1	p1	agree
+c510	L21	25	t2	H	t2	t2	agree
+c510	L21	26	N1	M		N1	one-reader
+c510	L21	27	o3	M	o3	z1	take-A
+c510	L21	28	W:de	H	W:de	W:de	agree
+c510	L21	29	r1	M		r1	one-reader
+c510	L21	30	r	M	r	a2	take-A
+c510	L21	31	n1	M		n1	one-reader
+c510	L21	32	a3	H	a3	a3	agree
+c510	L22	1	g1	H	g1	g1	agree
+c510	L22	2	e3	M		e3	one-reader
+c510	L22	3	e3	M		e3	one-reader
+c510	L22	4	o2	M	o2	W:que	family-rule
+c510	L22	5	N1	M		N1	one-reader
+c510	L22	6	o1/e2	H	o1/e2	o1/e2	agree
+c510	L22	7	p2	M	p2	p2	agree-low-conf
+c510	L22	8	o1/e2	M	o1/e2	o2	family-rule
+c510	L22	9	e3	M	m1	e3	family-rule
+c510	L22	10	m2	H	m2	m2	agree
+c510	L22	11	i1	H	i1	i1	agree
+c510	L22	12	o1/e2	H	o1/e2	o1/e2	agree
+c510	L22	13	r2	M		r2	one-reader
+c510	L22	14	p2	M	p2	p2	agree-low-conf
+c510	L22	15	a1	H	a1	a1	agree
+c510	L22	16	s2	H	s2	s2	agree
+c510	L22	17	?	M			one-reader
+c510	L22	18	a2	M	a2	W:ont	take-A
+c510	L22	19	a2	H	a2	a2	agree
+c510	L22	20	o1/e2	M	o1/e2	o2	family-rule
+c510	L22	21	a1	H	a1	a1	agree
+c510	L22	22	o2	M	r	r1	family-rule
+c510	L22	23	a2	H	a2	a2	agree
+c510	L22	24	W:le	H	W:le	W:le	agree
+c510	L22	25	t2	H	t2	t2	agree
+c510	L22	26	o1/e2	M	o1/e2	o2	family-rule
+c510	L22	27	o2	M	r	r1	family-rule
+c510	L22	28	W:ont	M		W:ont	one-reader
+c510	L22	29	W:le	H	W:le	W:le	agree
+c510	L22	30	W:ont	M		W:ont	one-reader
+c510	L22	31	p1	H	p1	p1	agree
+c510	L22	32	o3	M	o3	q2	take-A
+c510	L23	1	o2	M	r	r1	family-rule
+c510	L23	2	o1/e2	M	o1/e2	o2	family-rule
+c510	L23	3	W:ont	M		W:ont	one-reader
+c510	L23	4	o2	M	o2	W:que	family-rule
+c510	L23	5	l2	H	l2	l2	agree
+c510	L23	6	o2	M	o2	W:que	family-rule
+c510	L23	7	N1	M		N1	one-reader
+c510	L23	8	?	M			agree-low-conf
+c510	L23	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L23	10	s2	M	s2		one-reader
+c510	L23	11	o1/e2	H	o1/e2	o1/e2	agree
+c510	L23	12	b1	H	b1	b1	agree
+c510	L23	13	r	M	r		one-reader
+c510	L23	14	o1/e2	M	o1/e2	r1	take-A
+c510	L23	15	m1	M	m1	o2	take-A
+c510	L23	16	e3	M		e3	one-reader
+c510	L23	17	p1	M	p1	W:ont	take-A
+c510	L23	18	p1	H	p1	p1	agree
+c510	L23	19	e3	M	m1	e3	family-rule
+c510	L23	20	c1	H	c1	c1	agree
+c510	L23	21	t2	H	t2	t2	agree
+c510	L23	22	g1	H	g1	g1	agree
+c510	L23	23	l1	H	l1	l1	agree
+c510	L23	24	m2	H	m2	m2	agree
+c510	L23	25	o1/e2	H	o1/e2	o1/e2	agree
+c510	L23	26	s2	M	s2		one-reader
+c510	L23	27	o1/e2	M	o1/e2	o2	family-rule
+c510	L23	28	o2	M	r	r1	family-rule
+c510	L23	29	l2	H	l2	l2	agree
+c510	L23	30	o3	M	o3	q2	take-A
+c510	L23	31	i1	H	i1	i1	agree
+c510	L23	32	a3	H	a3	a3	agree
+c510	L24	1	p2	M	p2	p2	agree-low-conf
+c510	L24	2	o1/e2	M	o1/e2	o2	family-rule
+c510	L24	3	o1/e2	M	o1/e2	o2	family-rule
+c510	L24	4	t2	H	t2	t2	agree
+c510	L24	5	e3	M	m1	e3	family-rule
+c510	L24	6	r2	M		r2	one-reader
+c510	L24	7	N1	M		N1	one-reader
+c510	L24	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	9	g1	H	g1	g1	agree
+c510	L24	10	l1	H	l1	l1	agree
+c510	L24	11	m2	H	m2	m2	agree
+c510	L24	12	a1	H	a1	a1	agree
+c510	L24	13	b1	H	b1	b1	agree
+c510	L24	14	p1	H	p1	p1	agree
+c510	L24	15	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	16	n1	H	n1	n1	agree
+c510	L24	17	?	M			one-reader
+c510	L24	18	n1	M	u1	n1	family-rule
+c510	L24	19	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	20	s2	H	s2	s2	agree
+c510	L24	21	p1	H	p1	p1	agree
+c510	L24	22	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	23	r2	M		r2	one-reader
+c510	L24	24	i1	H	i1	i1	agree
+c510	L24	25	m2	H	m2	m2	agree
+c510	L24	26	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	27	n1	H	n1	n1	agree
+c510	L24	28	a3	H	a3	a3	agree
+c510	L24	29	o1/e2	H	o1/e2	o1/e2	agree
+c510	L24	30	r2	M		r2	one-reader
+c510	L24	31	a3	H	a3	a3	agree
+c510	L24	32	n1	M	u1	n1	family-rule
+c510	L25	1	d1	H	d1	d1	agree
+c510	L25	2	p1	M	p1	i2	take-A
+c510	L25	3	n1	M	n1		one-reader
+c510	L25	4	f1	H	f1	f1	agree
+c510	L25	5	o1/e2	H	o1/e2	o1/e2	agree
+c510	L25	6	e3	M	e3	r2	take-A
+c510	L25	7	i2	M	i2	i2	agree-low-conf
+c510	L25	8	n1	M	u1	n1	family-rule
+c510	L25	9	a3	H	a3	a3	agree
+c510	L25	10	p1	H	p1	p1	agree
+c510	L25	11	n1	M	u1	n1	family-rule
+c510	L25	12	t2	H	t2	t2	agree
+c510	L25	13	o1/e2	H	o1/e2	o1/e2	agree
+c510	L25	14	r1	M	r1	r1	agree-low-conf
+c510	L25	15	o2	M	o2	r1	take-A
+c510	L25	16	o1/e2	H	o1/e2	o1/e2	agree
+c510	L25	17	n1	M	u1	n1	family-rule
+c510	L25	18	u1	M	u1		one-reader
+c510	L25	19	e3	M	m1	e3	family-rule
+c510	L25	20	n1	M	u1	n1	family-rule
+c510	L25	21	t2	H	t2	t2	agree
+c510	L25	22	e3	M	e3	r2	take-A
+c510	L25	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L25	24	W:le	H	W:le	W:le	agree
+c510	L25	25	?	M			agree-low-conf
+c510	L25	26	W:de	H	W:de	W:de	agree
+c510	L25	27	l1	H	l1	l1	agree
+c510	L25	28	a2	H	a2	a2	agree
+c510	L25	29	W:par	M	W:par	W:que	take-A
+c510	L25	30	o1/e2	H	o1/e2	o1/e2	agree
+c510	L25	31	i1	H	i1	i1	agree
+c510	L26	1	g2	M	g2	g2	agree-low-conf
+c510	L26	2	n1	M	u1	n1	family-rule
+c510	L26	3	o1/e2	H	o1/e2	o1/e2	agree
+c510	L26	4	r1	H	r1	r1	agree
+c510	L26	5	e3	M	e3	r2	take-A
+c510	L26	6	i1	H	i1	i1	agree
+c510	L26	7	e3	M	m1	e3	family-rule
+c510	L26	8	W:de	H	W:de	W:de	agree
+c510	L26	9	o2	M	o2	o2	agree-low-conf
+c510	L26	10	e3	M	m1	e3	family-rule
+c510	L26	11	a3	H	a3	a3	agree
+c510	L26	12	m2	M	m2	s1	family-rule
+c510	L26	13	o1/e2	H	o1/e2	o1/e2	agree
+c510	L26	14	o3	M	o3	o3	agree-low-conf
+c510	L26	15	W:le	H	W:le	W:le	agree
+c510	L26	16	s2	M	W:les	s2	family-rule
+c510	L26	17	r1	H	r1	r1	agree
+c510	L26	18	b1	H	b1	b1	agree
+c510	L26	19	p1	M	p1	i2	take-A
+c510	L26	20	o1/e2	H	o1/e2	o1/e2	agree
+c510	L26	21	c1	H	c1	c1	agree
+c510	L26	22	t2	H	t2	t2	agree
+c510	L26	23	d1	H	d1	d1	agree
+c510	L26	24	r1	H	r1	r1	agree
+c510	L26	25	o2	M	W:que	o2	family-rule
+c510	L26	26	l2	H	l2	l2	agree
+c510	L26	27	W:de	M	W:de		one-reader
+c510	L26	28	a1	H	a1	a1	agree
+c510	L26	29	m2	M	m2	s1	family-rule
+c510	L26	30	p1	H	p1	p1	agree
+c510	L26	31	W:le	H	W:le	W:le	agree
+c510	L26	32	e3	M	m1	e3	family-rule
+c510	L26	33	W:ent	M	W:ent	N2	take-A
+c510	L27	1	r1	M	r1	r1	agree-low-conf
+c510	L27	2	e3	M	m1	e3	family-rule
+c510	L27	3	p1	H	p1	p1	agree
+c510	L27	4	r1	M	r1	r1	agree-low-conf
+c510	L27	5	e3	M	m1	e3	family-rule
+c510	L27	6	s2	M	W:les	s2	family-rule
+c510	L27	7	o1/e2	H	o1/e2	o1/e2	agree
+c510	L27	8	n1	M	u1	n1	family-rule
+c510	L27	9	t2	H	t2	t2	agree
+c510	L27	10	e1	M	e1		one-reader
+c510	L27	11	a3	M	a3		one-reader
+c510	L27	12	?	M			agree-low-conf
+c510	L27	13	W:qui	M	W:qui	W:que	take-A
+c510	L27	14	o1/e2	H	o1/e2	o1/e2	agree
+c510	L27	15	?	M			agree-low-conf
+c510	L27	16	W:par	H	W:par	W:par	agree
+c510	L27	17	W:le	H	W:le	W:le	agree
+c510	L27	18	W:qui	M	W:qui	W:que	take-A
+c510	L27	19	m2	M	m2	s1	family-rule
+c510	L27	20	p1	M	p1	i2	take-A
+c510	L27	21	e3	M	m1	e3	family-rule
+c510	L27	22	n1	M	u1	n1	family-rule
+c510	L27	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L27	24	W:qui	M	W:qui	W:que	take-A
+c510	L27	25	d1	H	d1	d1	agree
+c510	L27	26	r1	H	r1	r1	agree
+c510	L27	27	?	M			agree-low-conf
+c510	L27	28	r1	H	r1	r1	agree
+c510	L27	29	a1	H	a1	a1	agree
+c510	L27	30	t2	H	t2	t2	agree
+c510	L27	31	e3	M	e3	r2	take-A
+c510	L28	1	i1	H	i1	i1	agree
+c510	L28	2	o1/e2	H	o1/e2	o1/e2	agree
+c510	L28	3	s2	M	W:les	s2	family-rule
+c510	L28	4	e3	M	m1	e3	family-rule
+c510	L28	5	o1/e2	H	o1/e2	o1/e2	agree
+c510	L28	6	b1	H	b1	b1	agree
+c510	L28	7	o1/e2	M	o1/e2	r1	take-A
+c510	L28	8	W:qui	M	W:qui	W:que	take-A
+c510	L28	9	m2	M	m2	s1	family-rule
+c510	L28	10	o1/e2	M	o1/e2	o1/e2	agree-low-conf
+c510	L28	11	i1	H	i1	i1	agree
+c510	L28	12	W:qui	M	W:qui	W:que	take-A
+c510	L28	13	p2	H	p2	p2	agree
+c510	L28	14	a1	H	a1	a1	agree
+c510	L28	15	s2	M	W:les	s2	family-rule
+c510	L28	16	W:qui	M	W:qui	W:que	take-A
+c510	L28	17	o1/e2	H	o1/e2	o1/e2	agree
+c510	L28	18	a3	M	a3		one-reader
+c510	L28	19	o3	M	o3	o3	agree-low-conf
+c510	L28	20	a2	H	a2	a2	agree
+c510	L28	21	n1	M	u1	n1	family-rule
+c510	L28	22	t2	H	t2	t2	agree
+c510	L28	23	W:de	H	W:de	W:de	agree
+c510	L28	24	p1	H	p1	p1	agree
+c510	L28	25	r1	H	r1	r1	agree
+c510	L28	26	i1	H	i1	i1	agree
+c510	L28	27	W:qui	M	W:qui	W:que	take-A
+c510	L28	28	d1	H	d1	d1	agree
+c510	L28	29	o1/e2	H	o1/e2	o1/e2	agree
+c510	L28	30	n1	M	u1	n1	family-rule
+c510	L28	31	n2	H	n2	n2	agree
+c510	L28	32	e1	M	e1		one-reader
+c510	L29	1	s2	M	W:les	s2	family-rule
+c510	L29	2	r1	M	r1	o1/e2	take-A
+c510	L29	3	e3	M	e3	r2	take-A
+c510	L29	4	p1	M	p1	i2	take-A
+c510	L29	5	?	M			agree-low-conf
+c510	L29	6	o1/e2	H	o1/e2	o1/e2	agree
+c510	L29	7	l2	H	l2	l2	agree
+c510	L29	8	l1	H	l1	l1	agree
+c510	L29	9	r1	H	r1	r1	agree
+c510	L29	10	o3	M	o3	o3	agree-low-conf
+c510	L29	11	u1	M	u1		one-reader
+c510	L29	12	n2	H	n2	n2	agree
+c510	L29	13	o1/e2	H	o1/e2	o1/e2	agree
+c510	L29	14	t2	H	t2	t2	agree
+c510	L29	15	r1	M	r1	r1	agree-low-conf
+c510	L29	16	e3	M	m1	e3	family-rule
+c510	L29	17	s2	M	W:les	s2	family-rule
+c510	L29	18	p1	M	p1	i2	take-A
+c510	L29	19	n1	M	u1	n1	family-rule
+c510	L29	20	i1	H	i1	i1	agree
+c510	L29	21	o2	M	W:que	o2	family-rule
+c510	L29	22	s2	M	W:les	s2	family-rule
+c510	L29	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L29	24	n1	M	u1	n1	family-rule
+c510	L29	25	t2	H	t2	t2	agree
+c510	L29	26	o1/e2	H	o1/e2	o1/e2	agree
+c510	L29	27	n2	H	n2	n2	agree
+c510	L29	28	c1	H	c1	c1	agree
+c510	L29	29	e1	M	e1		one-reader
+c510	L29	30	?	M			agree-low-conf
+c510	L29	31	o3	M		o3	one-reader
+c510	L29	32	l1	H	l1	l1	agree
+c510	L29	33	a2	M	a2		one-reader
+c510	L30	1	p2	H	p2	p2	agree
+c510	L30	2	o3	M		o3	one-reader
+c510	L30	3	r1	H	r1	r1	agree
+c510	L30	4	r1	M	r1	r1	agree-low-conf
+c510	L30	5	s2	M	W:les	s2	family-rule
+c510	L30	6	u1	M	u1		one-reader
+c510	L30	7	i1	H	i1	i1	agree
+c510	L30	8	t2	H	t2	t2	agree
+c510	L30	9	e1	M	e1		one-reader
+c510	L30	10	d1	H	d1	d1	agree
+c510	L30	11	r1	H	r1	r1	agree
+c510	L30	12	W:qui	M	W:qui	W:que	take-A
+c510	L30	13	?	M			agree-low-conf
+c510	L30	14	W:qui	M		W:qui	one-reader
+c510	L30	15	e3	M		e3	one-reader
+c510	L30	16	o1/e2	H	o1/e2	o1/e2	agree
+c510	L30	17	i1	H	i1	i1	agree
+c510	L30	18	t2	H	t2	t2	agree
+c510	L30	19	a2	H	a2	a2	agree
+c510	L30	20	r1	H	r1	r1	agree
+c510	L30	21	s2	M	W:les	s2	family-rule
+c510	L30	22	W:qui	M	W:qui	W:que	take-A
+c510	L30	23	i1	H	i1	i1	agree
+c510	L30	24	m2	M	m2	s1	family-rule
+c510	L30	25	a1	H	a1	a1	agree
+c510	L30	26	l1	H	l1	l1	agree
+c510	L30	27	f2	M		f2	one-reader
+c510	L30	28	o1/e2	H	o1/e2	o1/e2	agree
+c510	L30	29	n1	M	u1	n1	family-rule
+c510	L30	30	W:de	H	W:de	W:de	agree
+c510	L30	31	o2	M	W:que	o2	family-rule
+c510	L31	1	?	M			agree-low-conf
+c510	L31	2	?	M			agree-low-conf
+c510	L31	3	a1	H	a1	a1	agree
+c510	L31	4	r1	H	r1	r1	agree
+c510	L31	5	e3	M	e3	r2	take-A
+c510	L31	6	i2	M	i2	a2	take-A
+c510	L31	7	s2	M	W:les	s2	family-rule
+c510	L31	8	p1	M	p1	i2	take-A
+c510	L31	9	l1	H	l1	l1	agree
+c510	L31	10	l2	H	l2	l2	agree
+c510	L31	11	r1	H	r1	r1	agree
+c510	L31	12	o3	M	o3	o3	agree-low-conf
+c510	L31	13	p2	H	p2	p2	agree
+c510	L31	14	l1	H	l1	l1	agree
+c510	L31	15	a2	H	a2	a2	agree
+c510	L31	16	i1	H	i1	i1	agree
+c510	L31	17	s2	M	W:les	s2	family-rule
+c510	L31	18	t2	H	t2	t2	agree
+c510	L31	19	u1	M	u1		one-reader
+c510	L31	20	o1/e2	H	o1/e2	o1/e2	agree
+c510	L31	21	o1/e2	M	o1/e2	r1	take-A
+c510	L31	22	W:par	H	W:par	W:par	agree
+c510	L31	23	m2	M	m2	s1	family-rule
+c510	L31	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L31	25	W:qui	M	W:qui	W:que	take-A
+c510	L31	26	W:qui	M	W:qui	W:que	take-A
+c510	L31	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L31	28	W:qui	M	W:qui	W:que	take-A
+c510	L31	29	W:le	H	W:le	W:le	agree
+c510	L31	30	t2	H	t2	t2	agree
+c510	L31	31	e3	M	e3	r2	take-A
+c510	L31	32	o1/e2	H	o1/e2	o1/e2	agree
+c510	L31	33	W:qui	M	W:qui	W:que	take-A
+c510	L32	1	s2	M	W:les	s2	family-rule
+c510	L32	2	r1	H	r1	r1	agree
+c510	L32	3	r1	M	r1	r1	agree-low-conf
+c510	L32	4	?	M			agree-low-conf
+c510	L32	5	r1	H	r1	r1	agree
+c510	L32	6	o1/e2	M	o1/e2	o1/e2	agree-low-conf
+c510	L32	7	o3	M	o3	o3	agree-low-conf
+c510	L32	8	i4	M	i4	i4	agree-low-conf
+c510	L32	9	o1/e2	H	o1/e2	o1/e2	agree
+c510	L32	10	s2	M	W:les	s2	family-rule
+c510	L32	11	p1	H	p1	p1	agree
+c510	L32	12	o1/e2	H	o1/e2	o1/e2	agree
+c510	L32	13	e3	M	e3	r2	take-A
+c510	L32	14	e1	M	e1		one-reader
+c510	L32	15	o2	M	W:que	o2	family-rule
+c510	L32	16	l2	H	l2	l2	agree
+c510	L32	17	a2	H	a2	a2	agree
+c510	L32	18	W:le	M	W:le	W:sieur	take-A
+c510	L32	19	p2	H	p2	p2	agree
+c510	L32	20	o3	M		o3	one-reader
+c510	L32	21	r1	H	r1	r1	agree
+c510	L32	22	r1	M	r1	r1	agree-low-conf
+c510	L32	23	u1	M	u1		one-reader
+c510	L32	24	r1	M	r1	r1	agree-low-conf
+c510	L32	25	p1	M	p1	i2	take-A
+c510	L32	26	e3	M	e3	r2	take-A
+c510	L32	27	r1	M	r1	r1	agree-low-conf
+c510	L32	28	a2	H	a2	a2	agree
+c510	L32	29	a3	H	a3	a3	agree
+c510	L32	30	r1	H	r1	r1	agree
+c510	L32	31	o1/e2	H	o1/e2	o1/e2	agree
+c510	L32	32	W:qui	M	W:qui		one-reader
+c510	L33	1	?	M			agree-low-conf
+c510	L33	2	W:de	M	W:de		one-reader
+c510	L33	3	p2	H	p2	p2	agree
+c510	L33	4	r1	M	r1	r1	agree-low-conf
+c510	L33	5	r1	H	r1	r1	agree
+c510	L33	6	W:de	H	W:de	W:de	agree
+c510	L33	7	u1	M	u1		one-reader
+c510	L33	8	c1	H	c1	c1	agree
+c510	L33	9	e1	M	e1		one-reader
+c510	L33	10	o2	M	W:que	o2	family-rule
+c510	L33	11	?	M			agree-low-conf
+c510	L33	12	?	M			agree-low-conf
+c510	L33	13	u1	M	u1		one-reader
+c510	L33	14	o1/e2	H	o1/e2	o1/e2	agree
+c510	L33	15	l1	H	l1	l1	agree
+c510	L33	16	a2	H	a2	a2	agree
+c510	L33	17	s2	M	W:les	s2	family-rule
+c510	L33	18	o1/e2	H	o1/e2	o1/e2	agree
+c510	L33	19	l2	H	l2	l2	agree
+c510	L33	20	i1	H	i1	i1	agree
+c510	L33	21	c1	H	c1	c1	agree
+c510	L33	22	p1	M	p1	i2	take-A
+c510	L33	23	t2	H	t2	t2	agree
+c510	L33	24	e1	M	e1		one-reader
+c510	L33	25	u1	M	u1		one-reader
+c510	L33	26	o3	M	o3	o3	agree-low-conf
+c510	L33	27	?	M			agree-low-conf
+c510	L33	28	p2	H	p2	p2	agree
+c510	L33	29	a2	H	a2	a2	agree
+c510	L33	30	s2	M	W:les	s2	family-rule
+c510	L33	31	W:qui	M	W:qui	W:que	take-A
+c510	L33	32	a1	H	a1	a1	agree
+c510	L34	1	?	M			agree-low-conf
+c510	L34	2	?	M			agree-low-conf
+c510	L34	3	c1	H	c1	c1	agree
+c510	L34	4	o3	M		o3	one-reader
+c510	L34	5	r1	M	r1	r1	agree-low-conf
+c510	L34	6	W:de	H	W:de	W:de	agree
+c510	L34	7	?	M			agree-low-conf
+c510	L34	8	N8	H	N8	N8	agree
+c510	L34	9	e1	M	e1	N4	take-A
+c510	L34	10	W:ent	M	W:ent	N2	take-A
+c510	L34	11	p1	M	p1	i2	take-A
+c510	L34	12	l2	H	l2	l2	agree
+c510	L34	13	z1	M		z1	one-reader
+c510	L34	14	n1	M	u1	n1	family-rule
+c510	L34	15	o1/e2	H	o1/e2	o1/e2	agree
+c510	L34	16	s2	M	W:les	s2	family-rule
+c510	L34	17	W:que	M	W:que		one-reader
+c510	L34	18	a2	H	a2	a2	agree
+c510	L34	19	r1	H	r1	r1	agree
+c510	L34	20	i2	M	i2	i2	agree-low-conf
+c510	L34	21	p1	M	p1	i2	take-A
+c510	L34	22	c1	H	c1	c1	agree
+c510	L34	23	o3	M	o3	o3	agree-low-conf
+c510	L34	24	i4	M	i4	i4	agree-low-conf
+c510	L34	25	r1	H	r1	r1	agree
+c510	L34	26	W:qui	M	W:qui		one-reader
+c510	L34	27	W:que	M	W:que	W:que	agree-low-conf
+c510	L34	28	o2	M		o2	one-reader
+c510	L34	29	W:qui	M	W:qui	W:que	take-A
+c510	L34	30	?	M			agree-low-conf
+c510	L34	31	u1	M	u1		one-reader
+c510	L35	1	i1	H	i1	i1	agree
+c510	L35	2	o1/e2	H	o1/e2	o1/e2	agree
+c510	L35	3	r1	H	r1	r1	agree
+c510	L35	4	e3	M	e3	r2	take-A
+c510	L35	5	x1	H	x1	x1	agree
+c510	L35	6	?	M			agree-low-conf
+c510	L35	7	r1	H	r1	r1	agree
+c510	L35	8	o3	M	o3	o3	agree-low-conf
+c510	L35	9	o2	M	W:que	o2	family-rule
+c510	L35	10	n2	H	n2	n2	agree
+c510	L35	11	e3	M		e3	one-reader
+c510	L35	12	W:le	H	W:le	W:le	agree
+c510	L35	13	f2	M		f2	one-reader
+c510	L35	14	r1	M	r1	r1	agree-low-conf
+c510	L35	15	u1	M	u1		one-reader
+c510	L35	16	x1	H	x1	x1	agree
+c510	L35	17	z1	M		z1	one-reader
+c510	L35	18	W:de	H	W:de	W:de	agree
+c510	L35	19	W:qui	M	W:qui	W:que	take-A
+c510	L35	20	p1	M	p1	i2	take-A
+c510	L35	21	n1	M	u1	n1	family-rule
+c510	L35	22	t2	H	t2	t2	agree
+c510	L35	23	o1/e2	H	o1/e2	o1/e2	agree
+c510	L35	24	n1	M	u1	n1	family-rule
+c510	L35	25	a3	H	a3	a3	agree
+c510	L35	26	i1	H	i1	i1	agree
+c510	L35	27	o1/e2	H	o1/e2	o1/e2	agree
+c510	L35	28	n1	M	u1	n1	family-rule
+c510	L35	29	W:qui	M	W:qui	W:que	take-A
+c510	L35	30	W:de	H	W:de	W:de	agree
+c510	L36	1	l1	H	l1	l1	agree
+c510	L36	2	?	M			agree-low-conf
+c510	L36	3	W:le	H	W:le	W:le	agree
+c510	L36	4	o2	M	W:que	o2	family-rule
+c510	L36	5	l1	H	l1	l1	agree
+c510	L36	6	o1/e2	M	o1/e2	r1	take-A
+c510	L36	7	e3	M	e3	r2	take-A
+c510	L36	8	o1/e2	H	o1/e2	o1/e2	agree
+c510	L36	9	W:que	M		W:que	one-reader
+c510	L36	10	W:qui	M	W:qui	W:qui	agree-low-conf
+c510	L36	11	?	M			one-reader
+c510	L36	12	l1	H	l1	l1	agree
+c510	L36	13	a3	M	a3		one-reader
+c510	L36	14	i1	H	i1	i1	agree
+c510	L36	15	t2	H	t2	t2	agree
+c510	L36	16	?	M			agree-low-conf
+c510	L36	17	r1	M	r1	r1	agree-low-conf
+c510	L36	18	e3	M	m1	e3	family-rule
+c510	L36	19	u1	M	u1		one-reader
+c510	L36	20	W:de	H	W:de	W:de	agree
+c510	L36	21	W:qui	M	W:qui	W:que	take-A
+c510	L36	22	W:le	H	W:le	W:le	agree
+c510	L36	23	m2	M	m2	s1	family-rule
+c510	L36	24	o1/e2	H	o1/e2	o1/e2	agree
+c510	L36	25	p1	M	p1	i2	take-A
+c510	L36	26	W:qui	M	W:qui	W:que	take-A
+c510	L36	27	W:de	H	W:de	W:de	agree
+c510	L36	28	i4	M	i4	i4	agree-low-conf
+c510	L36	29	a1	H	a1	a1	agree
+c510	L36	30	n2	H	n2	n2	agree

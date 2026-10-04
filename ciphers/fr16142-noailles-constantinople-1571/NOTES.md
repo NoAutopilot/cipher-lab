@@ -370,3 +370,41 @@ Verdict: keep going: 4 internal gaps; cheapest next: text-check the date-only Du
 OK keep-going fr16142-noailles-constantinople-1571: keep going: 4 internal gap(s), 1 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## c510 two blind passes (LANE-RUN2 RUN2-NXTA, account 1, 4 Oct 2026, from 02:46 UTC)
+
+Brief: `.claude/briefs/runs/2026-10-04-acct1-run2-wave1.md` RUN2-NXTA; full report `run2/nxta/REPORT.md`. No decode, no alignment.
+Intake gate (02:46 UTC): `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+c510 done in full (37 cipher lines, L00 = cipher tail of manuscript line 4 + L01-L36); c511 not started (0 lines). Native c510 crops
+(`run2/nxta/regen.sh`), 2 blind Sonnet passes x 3 line groups, reconciled by family rules (`run2/nxta/reconciled.tsv`, `rebuild.sh --check`).
+First real sign count for c510: A 1130, B 1123, reconciled 1156 (FT-D estimated ~1,500 per full page).
+**err_2reader 41.8% raw, 39.1% after mapping the readers' free descriptions to table labels**; reconciled H 538 / M 618. Audit by this
+worker on 2 lines not used to set the rules (L06, L30): reconciled text 0.409 sign error, H-graded signs 0.25 wrong (one more reader, not
+a benchmark; err_true not measurable). The splits are glyph-naming families (focus.tsv: hash # / H-with-bars / ###; Y vs W:les vs s2; the
+box-on-bar nomenclator signs; n1/u1; e3/r2/m1), some with both readers agreeing on the wrong label. c511 was not read: the same instrument
+would add the same ~40% noise; the atlas (RUN2-NXATL) and sorter labels are the next instrument. No sorter sheet was cut here; `focus.tsv`
+is the sign-pair list for one.
+
+## Remaining gaps (RUN2-NXTA, 4 Oct 2026)
+Read so far: 351 of 353 canvases surveyed at 400 px, 31 open/unclear C/P pages re-read at 1500 px; Dupuy 521 indexed whole; 21 of 24 in-range cipher letters matched to a Dupuy copy (2 by text); c262 transcribed 4 times, gate failed twice; c510 transcribed twice + reconciled (1156 signs, audit err ~0.41); 0 open leaves decoded
+- Glyph naming against Tomokiyo's table unsettled (c262 split 31%, c510 split 39% after the label convention, audit ~41%) - blocker: not-attempted; every known-answer use waits on it; next: RUN2-NXATL atlas exemplar sheets + run2/nxta/focus.tsv into the sign sorter for the person to settle, then re-label passes A/B of c510 against the settled labels, ~$6
+- c510-516 known-plaintext pair with Dupuy 521 221R-226R not yet used - blocker: not-attempted; wave 2 (RUN2-NXALN) by the lane's plan; next: pre-registered alignment of c510 (reconciled.tsv, or atlas cluster ids) against the Dupuy 221R text, ~$4
+- c511 not transcribed - blocker: not-attempted; same instrument judged not worth a second leaf at ~40% error (RUN2-NXTA); next: two passes against settled sorter labels once they exist, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; outside this transcription brief; next: one native look per pair at the clear lead-in words vs the Dupuy opening, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; outside this transcription brief; next: grep Charrière III and Lepanto relations in print for its clear opening, ~$1
+
+## Escalation (RUN2-NXTA, 4 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); c245-246/c464 a further same-text pair (RUN1-NX)
+- [x] clear-pages: Dupuy 521 indexed and aligned by date (dupuy521_align.tsv); c510-516 and c275-276 text-confirmed
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read for the June-July 1574 excerpts
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut (NX-RECUT); c510 cut at native with --follow-slope, overlay checked (RUN2-NXTA)
+- [ ] retry: known-answer with settled glyph labels (sign sorter), on c262 or c510 against Dupuy 221R; planned step: atlas + focus.tsv into the sorter
+Verdict: keep going: 5 internal gaps; cheapest next: text-check the date-only Dupuy matches, ~$1; the known-answer retry needs the sorter first
+
+`python3 tools/gaps_check.py fr16142-noailles-constantinople-1571` (RUN2-NXTA):
+```
+OK keep-going fr16142-noailles-constantinople-1571: keep going: 5 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

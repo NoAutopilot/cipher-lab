@@ -1,0 +1,10 @@
+family	glyphs (as seen on c510)	candidate labels	split_columns	example positions (line#col in disagreements.tsv)	note
+hash family	plain small # (two strokes) / tall H with two crossbars / triple-stroke ### 	o1/e2 | o2 | r1	57	c510_L13#2 c510_L13#3 c510_L13#18 c510_L01#3 c510_L02#9 c510_L02#13	both readers call ### 'o1/e2' and the tall H 'r1' (L06, L30 audit); the table puts H-with-bars at o2 and ### at r1
+Y family	Y on a stem / cup on a stem / nomenclator 'les'	s1 | s2 | W:les	28	c510_L26#16 c510_L27#6 c510_L28#3 c510_L01#20 c510_L03#11 c510_L04#30	readers alternate W:les and s2 for the plain Y (s1) on the same line
+box-on-bar nomenclator	box hanging under a bar with a stem down / bar then hook up / open box	W:par | W:qui | W:que | W:le ('Fu')	36	c510_L27#13 c510_L27#18 c510_L27#24 c510_L03#14 c510_L04#16 c510_L10#26	NX-RECUT ruled 'box hanging from the top bar' = W:le; on c510 'Fu' (F with a cup) and the boxed-bar sign both occur and the readers name them W:le and W:par/W:qui inconsistently
+hooked 2 family	2 with a stem and curl / omega head with a curled tail	n1 | u1	29	c510_L00#10 c510_L01#16 c510_L02#31	per-instance split, ~29 columns
+loop family	loop-S / e-loop with long tail / s-hook	e3 | r2 | m1	26	c510_L13#26 c510_L18#7 c510_L22#9 c510_L25#6 c510_L25#22 c510_L26#5	A often calls the e-loop s2 or e3
+delta/theta	delta-like 6 / theta with tail	e1 | d1	9	c510_L13#5 c510_L13#19 c510_L15#6	audit L20: delta = e1
+4 family	4 / 2 with a cross	p1 | i2	12	c510_L25#2 c510_L26#19 c510_L27#20	both shapes occur on the page (L01 '4', L02 '2+'); per-instance
+cross-with-tick	+ followed by a short stroke	g1 | N1 (null 'tu')	12	c510_L00#5 c510_L04#26 c510_L05#8	not in the table as drawn; provisional
+crossed A	A with a crossbar / caret ^	n2 | a1	2	c510_L20#1 c510_L20#10	audit L20: A-with-cross = n2

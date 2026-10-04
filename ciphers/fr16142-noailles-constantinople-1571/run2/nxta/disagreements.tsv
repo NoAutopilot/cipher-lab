@@ -1,0 +1,453 @@
+line	col	A	B	flagged	crop
+c510_L00	5	g1	N1	AB	
+c510_L00	7	c1	b2		
+c510_L00	9	i3	-		
+c510_L00	10	n1	u1	B	
+c510_L01	3	r1	o2	B	
+c510_L01	5	s1	-		
+c510_L01	6	W:ent		B	
+c510_L01	7	b1	n1		
+c510_L01	8	r1	d1		
+c510_L01	10	b1		B	
+c510_L01	12	g1	-	A	
+c510_L01	13	a3	N1	B	
+c510_L01	14	c1		B	
+c510_L01	15	i3	e3		
+c510_L01	16	n1	u1	B	
+c510_L01	20	s1	W:les		
+c510_L01	26	c1	b2		
+c510_L01	28	W:qui		AB	
+c510_L02	9	r1	o2	B	
+c510_L02	13	r1	o2	B	
+c510_L02	16	-	l1		
+c510_L02	23	s2		B	
+c510_L02	29	b1	-		
+c510_L02	30	i3	d1		
+c510_L02	31	n1	u1	B	
+c510_L03	6	a3		B	
+c510_L03	11	s1	W:les		
+c510_L03	14	o2	W:que		
+c510_L03	16	-	o1/e2		
+c510_L03	18	m2		B	
+c510_L03	24	a3		B	
+c510_L03	28	i3	-		
+c510_L03	29	n1	u1	B	
+c510_L04	3	c1	b2		
+c510_L04	5	g2		AB	
+c510_L04	9	r1	o2	B	
+c510_L04	13	m1		AB	
+c510_L04	14	W:ent	n1		
+c510_L04	15	s1		AB	
+c510_L04	16	o2	W:que		
+c510_L04	19	c1	e3	A	
+c510_L04	22	r1	o2	B	
+c510_L04	23	s2		B	
+c510_L04	26	g1	N1	AB	
+c510_L04	29	c1	e3	A	
+c510_L04	30	s1	W:les		
+c510_L05	8	g1	N1	AB	
+c510_L05	10	r1	o2	B	
+c510_L05	12	s1		AB	
+c510_L05	13	W:qui		AB	
+c510_L05	16	g1	N1	AB	
+c510_L05	20	r1	o2	B	
+c510_L05	25	b1	d1		
+c510_L05	27	r1	o2	B	
+c510_L05	28	s1	W:les		
+c510_L06	3	s1		B	
+c510_L06	5	-	o2	B	
+c510_L06	6	r1	x1		
+c510_L06	8	s2	-		
+c510_L06	10	b1	d1		
+c510_L06	11	r1	o2	B	
+c510_L06	14	i3	-		
+c510_L06	15	n1	u1	B	
+c510_L06	18	-	o1/e2		
+c510_L06	19	-	b2		
+c510_L06	21	o3		AB	
+c510_L06	22	m2	f2	B	
+c510_L06	26	W:qui		AB	
+c510_L06	28	r1	o2	B	
+c510_L06	29	s2		B	
+c510_L06	31	c1	-	A	
+c510_L06	32	i3	e3		
+c510_L06	33	n1	u1	B	
+c510_L06	35	W:ent	n1		
+c510_L07	2	g1	N1	AB	
+c510_L07	16	-		B	
+c510_L07	17	m2	a1		
+c510_L07	23	g1	N1	AB	
+c510_L07	25	r1	-		
+c510_L07	26	i3	o2	B	
+c510_L07	27	n1	u1	B	
+c510_L07	29	s2		B	
+c510_L07	31	W:qui		AB	
+c510_L08	3	s1		B	
+c510_L08	8	r1	o2	B	
+c510_L08	11	W:qui		AB	
+c510_L08	16	r1	-		
+c510_L08	18	-	o2	B	
+c510_L08	19	s1	o1/e2		
+c510_L08	20	i3		B	
+c510_L08	21	n1	u1	B	
+c510_L08	23	r1	o2	B	
+c510_L08	24	W:ent	n1		
+c510_L08	27	g1	N1	AB	
+c510_L09	5	c1	b2		
+c510_L09	7	s2		B	
+c510_L09	16	-	o1		
+c510_L09	24	-	x1		
+c510_L09	26	s2	-		
+c510_L09	29	s1		B	
+c510_L09	30	r1	o2	B	
+c510_L09	31	c1	b2		
+c510_L09	32	g1	N1	AB	
+c510_L10	3	s1		AB	
+c510_L10	5	s1		AB	
+c510_L10	10	g1	N1	AB	
+c510_L10	15	-		B	
+c510_L10	16	W:qui		AB	
+c510_L10	26	o2	W:que		
+c510_L10	28	s1		B	
+c510_L11	1	i3	-		
+c510_L11	2	n1	u1	B	
+c510_L11	4	r1	o2	B	
+c510_L11	8	s2		B	
+c510_L11	9	g1	N1	AB	
+c510_L11	11	r1	o2	B	
+c510_L11	13	s1		AB	
+c510_L11	14	c1	b2		
+c510_L11	17	-		B	
+c510_L11	18	s1		B	
+c510_L11	19	g1	N1	AB	
+c510_L11	23	c1	b2		
+c510_L11	25	s2		B	
+c510_L11	28	i3	-		
+c510_L11	29	n1	u1	B	
+c510_L11	32	r1	o2	B	
+c510_L12	6	r1	o2	B	
+c510_L12	9	r1	o2	B	
+c510_L12	10	s2		B	
+c510_L12	12	i3	-		
+c510_L12	13	n1	u1	B	
+c510_L12	15	-	p1		
+c510_L12	16	i2		AB	
+c510_L12	17	s1		B	
+c510_L12	22	r1	o2	B	
+c510_L12	23	g1	N1	AB	
+c510_L12	25	s1		B	
+c510_L12	31	s2		B	
+c510_L13	2	o1/e2	o2		
+c510_L13	3	o1/e2	o2		
+c510_L13	5	e1	d1		
+c510_L13	7	-	n2		
+c510_L13	8	o1/e2	r1		
+c510_L13	13	s2	s1	A	
+c510_L13	14		N1	A	
+c510_L13	16	o1/e2	r1		
+c510_L13	17		r2	A	
+c510_L13	18	o1/e2	o2		
+c510_L13	19	e1	d1		
+c510_L13	25		r2	A	
+c510_L13	26	m1	e3		
+c510_L13	28	n1	-	A	
+c510_L13	30	-	N2		
+c510_L13	31	-	D1		
+c510_L13	34	o1/e2	r1		
+c510_L13	35		r2	A	
+c510_L14	15	o1/e2	o2		
+c510_L14	17		r2	A	
+c510_L14	28		W:ont	AB	
+c510_L14	30		N1	A	
+c510_L15	5	o1/e2	o2		
+c510_L15	6	e1	d1		
+c510_L15	17	p1	W:ont	B	
+c510_L15	19	s1	-	A	
+c510_L15	20	W:roy	W:par	A	
+c510_L15	23		W:ont	AB	
+c510_L15	25	o1/e2	o2		
+c510_L15	28	c1	z1		
+c510_L16	1	u1	i4	A	
+c510_L16	5		r2	A	
+c510_L16	6		N1	A	
+c510_L16	7	o1/e2	o2		
+c510_L16	11	c2	x1		
+c510_L16	15	o2	W:que	A	
+c510_L16	22	o1/e2	o2		
+c510_L16	25	-	x1		
+c510_L16	26	c2	o2		
+c510_L16	27	o1/e2		B	
+c510_L16	30		W:ont	AB	
+c510_L17	2	o1/e2	o2		
+c510_L17	3	o3	q2	A	
+c510_L17	4	r	r1	A	
+c510_L17	7		W:ont	AB	
+c510_L17	12	r	r1	A	
+c510_L17	14	e1	d1		
+c510_L17	16		W:ont	AB	
+c510_L17	17	o2	W:que	A	
+c510_L17	19	p2		AB	
+c510_L17	21		W:ont	AB	
+c510_L17	23	-	r1		
+c510_L17	24	o1/e2	o2		
+c510_L17	25	o1/e2	N1		
+c510_L17	28	p2		AB	
+c510_L17	30		N1	A	
+c510_L18	2	-	N1		
+c510_L18	3	o1/e2	i4		
+c510_L18	6	o1/e2	o2		
+c510_L18	7	m1	e3		
+c510_L18	8	s2		B	
+c510_L18	11	-	r1		
+c510_L18	12	r	i4	A	
+c510_L18	16	s2		B	
+c510_L18	17	e1	d1		
+c510_L18	28		N1	A	
+c510_L19	1	o1/e2	-		
+c510_L19	2	p1	-		
+c510_L19	3	p2	-	A	
+c510_L19	4	i1	-		
+c510_L19	5	n1	-		
+c510_L19	6	i1	-		
+c510_L19	7	o1/e2	-		
+c510_L19	8	n1	-		
+c510_L19	9		-	A	
+c510_L19	10	W:le	-		
+c510_L19	11	o1/e2	o2		
+c510_L19	12	o1/e2	e3		
+c510_L19	14	o3	q2	A	
+c510_L19	16	s2		B	
+c510_L19	17	g1	h1		
+c510_L19	24	o1/e2	N1		
+c510_L19	26	c2	x1		
+c510_L19	29		N2	A	
+c510_L19	32	-	W:par		
+c510_L19	33		t2	A	
+c510_L19	34	c2	x1		
+c510_L19	36		p1	A	
+c510_L19	37	e1	d1		
+c510_L20	1	a1	n2		
+c510_L20	4	r	r1	A	
+c510_L20	6		W:ont	AB	
+c510_L20	7	c2	x1		
+c510_L20	8	o1/e2	o2		
+c510_L20	10	a1	n2		
+c510_L20	12		r2	A	
+c510_L20	19	r	r1	A	
+c510_L20	20		r2	A	
+c510_L20	21	e1	d1		
+c510_L20	23	-	o2		
+c510_L20	24	o1/e2	e3		
+c510_L20	25	m1	r1		
+c510_L20	26	r	i4	A	
+c510_L20	28	e1	d1		
+c510_L20	31	B		B	
+c510_L21	6	o2	W:que	A	
+c510_L21	7		N1	A	
+c510_L21	10	o2	W:que	A	
+c510_L21	12	e1	d1		
+c510_L21	14	o1/e2	-		
+c510_L21	15	o3	r1	A	
+c510_L21	16	a3	z1		
+c510_L21	18	o3	z1	A	
+c510_L21	20		W:ont	AB	
+c510_L21	22	o1/e2	o2		
+c510_L21	26		N1	A	
+c510_L21	27	o3	z1	A	
+c510_L21	29	-	r1		
+c510_L21	30	r	a2	A	
+c510_L21	31		n1	A	
+c510_L22	2	-	e3		
+c510_L22	3		e3	A	
+c510_L22	4	o2	W:que	A	
+c510_L22	5		N1	A	
+c510_L22	8	o1/e2	o2		
+c510_L22	9	m1	e3		
+c510_L22	13		r2	A	
+c510_L22	17		-	A	
+c510_L22	18	a2	W:ont	B	
+c510_L22	20	o1/e2	o2		
+c510_L22	22	r	r1	A	
+c510_L22	26	o1/e2	o2		
+c510_L22	27	r	r1	A	
+c510_L22	28		W:ont	AB	
+c510_L22	30		W:ont	AB	
+c510_L22	32	o3	q2	A	
+c510_L23	1	r	r1	A	
+c510_L23	2	o1/e2	o2		
+c510_L23	3		W:ont	AB	
+c510_L23	4	o2	W:que	A	
+c510_L23	6	o2	W:que	A	
+c510_L23	7		N1	A	
+c510_L23	10	s2		B	
+c510_L23	13	r	-	A	
+c510_L23	14	o1/e2	r1		
+c510_L23	15	m1	o2		
+c510_L23	16		e3	A	
+c510_L23	17	p1	W:ont	B	
+c510_L23	19	m1	e3		
+c510_L23	26	s2		B	
+c510_L23	27	o1/e2	o2		
+c510_L23	28	r	r1	A	
+c510_L23	30	o3	q2	A	
+c510_L24	2	o1/e2	o2		
+c510_L24	3	o1/e2	o2		
+c510_L24	5	m1	e3		
+c510_L24	6		r2	A	
+c510_L24	7		N1	A	
+c510_L24	17		-	A	
+c510_L24	18	u1	n1	AB	
+c510_L24	23		r2	A	
+c510_L24	30		r2	A	
+c510_L24	32	u1	n1	AB	
+c510_L25	2	p1	i2	B	
+c510_L25	3	n1		AB	
+c510_L25	6	e3	r2	B	
+c510_L25	8	u1	n1		
+c510_L25	11	u1	n1		
+c510_L25	15	o2	r1	A	
+c510_L25	17	u1	n1		
+c510_L25	18	u1		B	
+c510_L25	19	m1	e3	AB	
+c510_L25	20	u1	n1		
+c510_L25	22	e3	r2	B	
+c510_L25	29	W:par	W:que	AB	
+c510_L26	2	u1	n1		
+c510_L26	5	e3	r2	B	
+c510_L26	7	m1	e3	AB	
+c510_L26	10	m1	e3	AB	
+c510_L26	12	m2	s1		
+c510_L26	16	W:les	s2	A	
+c510_L26	19	p1	i2	B	
+c510_L26	25	W:que	o2	A	
+c510_L26	27	W:de		AB	
+c510_L26	29	m2	s1		
+c510_L26	32	m1	e3	AB	
+c510_L26	33	W:ent	N2	B	
+c510_L27	2	m1	e3	AB	
+c510_L27	5	m1	e3	AB	
+c510_L27	6	W:les	s2	A	
+c510_L27	8	u1	n1		
+c510_L27	10	e1		B	
+c510_L27	11	a3		AB	
+c510_L27	13	W:qui	W:que	AB	
+c510_L27	18	W:qui	W:que	AB	
+c510_L27	19	m2	s1		
+c510_L27	20	p1	i2	B	
+c510_L27	21	m1	e3	AB	
+c510_L27	22	u1	n1		
+c510_L27	24	W:qui	W:que	AB	
+c510_L27	31	e3	r2	B	
+c510_L28	3	W:les	s2	A	
+c510_L28	4	m1	e3	AB	
+c510_L28	7	o1/e2	r1		
+c510_L28	8	W:qui	W:que	AB	
+c510_L28	9	m2	s1		
+c510_L28	12	W:qui	W:que	AB	
+c510_L28	15	W:les	s2	A	
+c510_L28	16	W:qui	W:que	AB	
+c510_L28	18	a3		AB	
+c510_L28	21	u1	n1		
+c510_L28	27	W:qui	W:que	AB	
+c510_L28	30	u1	n1		
+c510_L28	32	e1		B	
+c510_L29	1	W:les	s2	A	
+c510_L29	2	r1	o1/e2		
+c510_L29	3	e3	r2	B	
+c510_L29	4	p1	i2	B	
+c510_L29	11	u1		AB	
+c510_L29	16	m1	e3	AB	
+c510_L29	17	W:les	s2	A	
+c510_L29	18	p1	i2	B	
+c510_L29	19	u1	n1		
+c510_L29	21	W:que	o2	A	
+c510_L29	22	W:les	s2	AB	
+c510_L29	24	u1	n1		
+c510_L29	29	e1	-		
+c510_L29	31	-	o3	B	
+c510_L29	33	a2		AB	
+c510_L30	2		o3	AB	
+c510_L30	5	W:les	s2	A	
+c510_L30	6	u1		AB	
+c510_L30	9	e1		B	
+c510_L30	12	W:qui	W:que	AB	
+c510_L30	14		W:qui	AB	
+c510_L30	15		e3	A	
+c510_L30	21	W:les	s2	A	
+c510_L30	22	W:qui	W:que	AB	
+c510_L30	24	m2	s1		
+c510_L30	27		f2	AB	
+c510_L30	29	u1	n1		
+c510_L30	31	W:que	o2	A	
+c510_L31	5	e3	r2	B	
+c510_L31	6	i2	a2	B	
+c510_L31	7	W:les	s2	A	
+c510_L31	8	p1	i2	B	
+c510_L31	17	W:les	s2	A	
+c510_L31	19	u1		AB	
+c510_L31	21	o1/e2	r1		
+c510_L31	23	m2	s1		
+c510_L31	25	W:qui	W:que	AB	
+c510_L31	26	W:qui	W:que	AB	
+c510_L31	28	W:qui	W:que	AB	
+c510_L31	31	e3	r2	B	
+c510_L31	33	W:qui	W:que	AB	
+c510_L32	1	W:les	s2	A	
+c510_L32	10	W:les	s2	A	
+c510_L32	13	e3	r2	B	
+c510_L32	14	e1		AB	
+c510_L32	15	W:que	o2	A	
+c510_L32	18	W:le	W:sieur		
+c510_L32	20		o3	AB	
+c510_L32	23	u1		AB	
+c510_L32	25	p1	i2	B	
+c510_L32	26	e3	r2	B	
+c510_L32	32	W:qui		AB	
+c510_L33	2	W:de		B	
+c510_L33	7	u1		B	
+c510_L33	9	e1		B	
+c510_L33	10	W:que	o2	A	
+c510_L33	13	u1		B	
+c510_L33	17	W:les	s2	A	
+c510_L33	22	p1	i2	B	
+c510_L33	24	e1		B	
+c510_L33	25	u1		B	
+c510_L33	30	W:les	s2	A	
+c510_L33	31	W:qui	W:que	AB	
+c510_L34	4		o3	AB	
+c510_L34	9	e1	N4		
+c510_L34	10	W:ent	N2		
+c510_L34	11	p1	i2	B	
+c510_L34	13		z1	AB	
+c510_L34	14	u1	n1		
+c510_L34	16	W:les	s2	A	
+c510_L34	17	W:que		AB	
+c510_L34	21	p1	i2	B	
+c510_L34	26	W:qui	-	A	
+c510_L34	28	-	o2		
+c510_L34	29	W:qui	W:que	AB	
+c510_L34	31	u1		AB	
+c510_L35	4	e3	r2	B	
+c510_L35	9	W:que	o2	A	
+c510_L35	11		e3	A	
+c510_L35	13		f2	AB	
+c510_L35	15	u1		B	
+c510_L35	17		z1	AB	
+c510_L35	19	W:qui	W:que	AB	
+c510_L35	20	p1	i2	B	
+c510_L35	21	u1	n1		
+c510_L35	24	u1	n1		
+c510_L35	28	u1	n1		
+c510_L35	29	W:qui	W:que	AB	
+c510_L36	4	W:que	o2	A	
+c510_L36	6	o1/e2	r1	B	
+c510_L36	7	e3	r2	B	
+c510_L36	9	-	W:que	B	
+c510_L36	11		-	A	
+c510_L36	13	a3		AB	
+c510_L36	18	m1	e3	AB	
+c510_L36	19	u1		B	
+c510_L36	21	W:qui	W:que	AB	
+c510_L36	23	m2	s1		
+c510_L36	25	p1	i2	B	
+c510_L36	26	W:qui	W:que	AB	
