@@ -124,7 +124,7 @@ def score(arm, apply, procs):
     kstar = dict(keys[0]); kstar.update({s: c[0] for s, c in cons.items() if c[0]})
     cnt = Counter(SEQ); rows = []; jobs = []; plan = []
     for s in G["free"]:
-        A = PLANT[s] if arm == "ctl" else KEY[s][0]; B = cons[s][0]
+        A = PLANT[s] if (arm == "ctl" and s in PLANT) else KEY[s][0]; B = cons[s][0]  # bugfix 13:19: non-planted free signs use key.tsv
         k = dict(kstar)
         if B and B != A:
             k[s] = B; jb = J(k); k[s] = A; d = jb - J(k); kind, alt = "change", B

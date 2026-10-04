@@ -1,0 +1,33 @@
+sign	tokens	A	grade	consensus	n	votes	kind	vs	dJ	null_p95	clears	decision
+2	10	r	M	-	5	n5 i5	confirm	n	-0.00862	0.00713	0	-
+6	26	e	M	i	10	i10	change	i	0.00622	0.02657	0	-
+6r	36	i	M	i	10	i10	confirm	l	0.00769	0.02090	0	-
+8	31	d	M	i	9	i9 l1	change	i	0.00416	0.09799	0	-
+K	28	f	M	-	6	i6 l4	confirm	l	-0.04869	-0.02707	0	-
+L	7	n	M	l	10	l10	change	l	0.00118	0.00936	0	-
+Sorn	1	h	M	s	10	s10	change	s	0.00133	0.00599	0	-
+blot	1	q	M	-	5	o5 n4 q1	confirm	n	-0.00314	0.00080	0	-
+c	4	s	M	-	6	i6 l4	confirm	i	-0.00966	-0.00117	0	-
+dia	11	i	M	i	10	i10	confirm	l	0.00437	0.01567	0	-
+eloop	36	c	M	i	10	i10	change	i	0.04728	0.06638	0	-
+iib	36	l	M	i	10	i10	change	i	0.00887	0.04232	0	-
+l	12	s	M	i	10	i10	change	i	0.00689	0.02119	0	-
+ls	40	e	M	i	10	i10	change	i	0.04239	0.07244	0	-
+o	77	n	M	i	10	i10	change	i	0.02823	0.06974	0	-
+phi	49	l	M	-	5	i5 s4 t1	confirm	s	-0.01739	0.02623	0	-
+psi	9	r	M	-	5	r5 i5	confirm	s	0.00197	0.01157	0	-
+rc	17	e	M	-	5	s5 i5	confirm	l	-0.01626	-0.00247	0	-
+rot	16	r	M	-	6	i6 r4	confirm	i	0.00470	-0.00010	1	-
+spiralG	1	h	M	-	5	n5 u5	confirm	u	-0.00773	-0.00102	0	-
+sqc	18	x	M	-	6	i6 l4	confirm	i	-0.01996	-0.02938	0	-
+th	208	s	M	-	5	s5 i5	confirm	i	0.01171	-0.02282	1	-
+to	6	m	M	-	5	r5 i4 l1	confirm	r	-0.00655	-0.00073	0	-
+tz	20	e	M	l	10	l10	change	l	0.01243	0.01808	0	-
+vdash	8	t	M	-	5	e5 i5	confirm	i	-0.00267	-0.00046	0	-
+x	11	s	M	i	10	i10	change	i	0.00537	0.01712	0	-
+z	189	t	M	i	9	i9 t1	change	i	0.00175	0.21678	0	-
+4	224	o	S	-	5	e5 i5	confirm	e	-0.03248	-0.02823	0	-
+S	275	u	S	-	5	u5 i5	confirm	i	0.00734	-0.01266	1	-
+a	98	e	C(planted)	-	5	u5 i5	confirm	u	-0.13529	-0.07879	0	NOT recovered
+p	112	e	C(planted)	i	10	i10	change	i	0.14467	0.16558	0	NOT recovered
+d	57	e	C(planted)	-	5	n5 i5	confirm	n	-0.10381	-0.04920	0	NOT recovered

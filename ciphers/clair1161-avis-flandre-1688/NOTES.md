@@ -1622,3 +1622,59 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
 - [n/a] retry: a further seed sweep of the same anneal is not a different instrument
 Verdict: keep going: 2 internal gaps; cheapest next: joint M-sign re-anneal with C/S held and planted controls, ~$3
+
+## RUN5-C1161RA (4 Oct 2026)
+Account 1 worker for LANE-RUN5, brief `.claude/briefs/runs/2026-10-04-acct1-run5-wave2.md`. Disk only, no network, no subagent
+calls. Pre-registration `tx/PREREG_reanneal.md` + script `two/reanneal.py` (pushed 9d85bc83 before any run); W calibration
+`two/ra/calib.tsv` (e0f2d0ac, before any control number); outputs `two/ra/` (10 control keys, `runs.tsv`, `ctl_signs.tsv`,
+`ctl_gate.txt`). One code fix after the anneals and before any scoring: `score` raised KeyError on the non-planted free signs of the
+control arm (A must fall back to key.tsv for them); a one-line fix, recipe/W/seeds untouched.
+
+**Instrument.** Six-leaf stream (3375 keyed tokens), 6 C + 13 agreed S signs held, 29 signs free (27 M + 4, S). Stage 1
+`homophonic_anneal.solve` (fr17, order 4, restarts 32, iters 40000, held signs fixed); stage 2 coordinate ascent on
+J = 4-gram log-prob per letter + W x word cover (RUN5-C1161WC's fr17+fr16 vocabulary), W = 5.509 by the pre-registered
+held-out formula (Mazarin fr17: L real -1.820 vs shuffled -3.624, cover 0.972 vs 0.644). Consensus >= 7/10 seeds plus a
+50-context shuffled-value null per sign.
+
+**Planted control (a=u, p=c, d=n freed, planted at e): 0/3 recovered -> NON-TEST; the target arm was not run** (pre-registered:
+>= 2/3 needed). key.tsv unchanged (no value, no grade); `tools/decode_key.py --check`: "reading up to date" (C 353, S 1908,
+M 1114, U 33).
+
+| planted | true | consensus (10 seeds) | votes | result |
+|---|---|---|---|---|
+| a | u | none | u5 i5 | NOT recovered |
+| p | c | i (10/10) | i10 | NOT recovered (wrong letter) |
+| d | n | none | n5 i5 | NOT recovered |
+
+**Why it failed (diagnosed after the gate, not acted on).** Stage 1 converged to the same key on all 10 seeds (score -9268.7,
+J 2.3045): with 19 signs held the 4-gram anneal has one basin, so seed diversity came only from stage 2's sign order. Stage 2 then
+hit its 4-pass limit on every seed, and on 5 seeds (2, 3, 5, 7, 10; J 2.822-2.824 vs 2.686-2.701 on the others) it pushed
+**every** free sign, planted ones included, to 'i'. The fr17+fr16 vocabulary contains 'iii', 'iiii', 'iiiii', 'iiiiii', 'iiiiiii'
+(roman numerals / OCR debris, freq >= 3), so runs of i are "words" and the cover term at W = 5.5 outweighs the 4-gram loss. The
+5 non-degenerate seeds read a=u, d=n (right) and p=i (wrong; RUN5-C1161WC's control also put p at i). Full per-sign rows for the
+29 free signs (control arm only) are in `two/ra/ctl_signs.tsv`; they are a degenerate instrument's output and say nothing
+about any sign's value.
+
+This is the second NON-TEST of a word-cover-weighted instrument on this key (RUN5-C1161WC per-sign, RUN5-C1161RA joint), both
+failing their planted controls toward i: logged in Escalation (key-rebuild line) as retired for word cover with this vocabulary (rule 3,
+third-attempt clause applied early because the cause is identified: the vocabulary, not the setting). A different
+instrument, not a reweighting, is what the remaining gap names.
+
+Report what was found and where it was not found: no outside source searched; novelty not classified. Requests: none. Subagent
+calls: 0. Cost: see the lane ledger.
+
+## Remaining gaps (RUN5-C1161RA, 4 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. Gloss-and-judge value test (RUN4-C1161GJ) no sign passes; word-cover value test (RUN5-C1161WC) NON-TEST; joint M-sign re-anneal with word cover (RUN5-C1161RA) NON-TEST, planted control 0/3 (vocabulary admits i-runs).
+- 27 M-graded key signs (th, z, rot, eloop, ls, o, phi, iib, 6r, 8, K, 2, tz ...) and the contested S signs 4, S, qb - blocker: not-attempted; word-cover instruments retired (two NON-TESTs, i-run vocabulary); the held 4-gram anneal has a single basin (all 10 seeds identical), so seed consensus carries no information; next: a held 4-gram anneal under leave-one-leaf-out streams (6 streams, consensus across leaves instead of seeds) with the same planted a/p/d control first, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (RUN5-C1161RA, 4 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches the blind key at 0.612 under the current key.tsv (shuffled max 0.312 at 0.594); the gloss itself PASSes the fr16 judge (-0.808), the decode FAILs (-1.233)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); no other Noailles/Dax key on disk or in KEY-OFFICES.tsv
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [ ] key-rebuild: two-instrument PASS (0.624), 10-seed consensus PASS (0.334 vs 0.122); per-sign gloss/judge undecided (RUN4-C1161GJ); word-cover instrument retired (fr17+fr16 vocabulary, per-sign RUN5-C1161WC and joint re-anneal RUN5-C1161RA both NON-TEST on planted controls); next: leave-one-leaf-out held 4-gram anneal with planted controls first, as in Remaining gaps
+- [ ] image-check: seven provisional new shapes; next: sorter or split test as in Remaining gaps
+- [n/a] retry: a further seed sweep of the same anneal is not a different instrument
+Verdict: keep going: 2 internal gaps; cheapest next: leave-one-leaf-out held 4-gram anneal with planted controls, ~$3
