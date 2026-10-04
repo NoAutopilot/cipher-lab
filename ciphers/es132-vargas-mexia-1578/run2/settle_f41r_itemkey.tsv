@@ -1,0 +1,77 @@
+id	kind	ref	line	start	len	option1	option2
+I01	unit	U31	L13	11	4	24+ 6σ 3 21.	11.
+I02	unit	U52	L29	1	1	16σ	16ρ
+I03	unit	U45	L24	8	1	29+	23+
+I04	unit	U11	L05	8	1	14+	11+
+I05	unit	U39	L19	16	1	12@r	7@r
+I06	decoy	D19	L28	4	1	12.	22.
+I07	unit	U26	L10	15	1	6σ	6+
+I08	unit	U06	L04	0	0	11+	-
+I09	unit	U21	L08	15	1	10@r	20@r
+I10	unit	U10	L05	7	1	7+@r	7@r
+I11	decoy	D04	L09	9	1	24ρ	249ρ
+I12	decoy	D13	L20	0	1	5+	5
+I13	unit	U01	L02	4	1	24ρ	249ρ
+I14	unit	U09	L05	3	1	22.	12.
+I15	unit	U13	L05	15	1	7ρ@s	15
+I16	unit	U07	L04	1	3	15+ 24. 12+	24 24+
+I17	decoy	D03	L09	5	1	25.	25+
+I18	unit	U12	L05	11	1	14+	11+
+I19	decoy	D07	L13	18	1	15@s	15+@s
+I20	decoy	D17	L27	5	1	6ρ	6σ
+I21	decoy	D12	L17	1	1	7σ	7ρ
+I22	unit	U35	L17	11	2	16ρ 3	16ρ@s 3_ 22. y 13+ 10
+I23	decoy	D15	L20	3	1	16σ	16ρ
+I24	unit	U50	L28	11	1	22+@2	224
+I25	decoy	D10	L15	6	1	3+@l	3@l
+I26	decoy	D06	L13	3	1	20	10
+I27	decoy	D08	L14	4	1	18+	18
+I28	unit	U54	L30	11	1	11@r	21
+I29	unit	U23	L09	15	1	88_	88
+I30	unit	U42	L22	6	1	12ρ@n	13ρ@n
+I31	unit	U41	L21	14	1	24	14.
+I32	unit	U05	L03	16	1	13+	23+
+I33	unit	U19	L08	4	1	7@r	71@r
+I34	decoy	D20	L30	6	1	16	16+
+I35	unit	U37	L18	6	1	ρ5	25
+I36	unit	U33	L16	7	1	249	24σ
+I37	unit	U14	L05	17	0	11@s	-
+I38	unit	U29	L12	9	1	12+@s	11+@r
+I39	decoy	D02	L01	13	1	13	23
+I40	decoy	D09	L15	2	1	17ρ	17σ
+I41	unit	U30	L13	10	0	3@s 24+ 6ρ	-
+I42	decoy	D16	L22	2	1	13σ	23σ
+I43	unit	U40	L21	6	3	24+ 224	20+ 24 3
+I44	unit	U56	L30	15	3	6σ 8	6 6+ 6
+I45	unit	U16	L06	7	1	36_	358_
+I46	unit	U28	L12	1	1	23σ	238
+I47	unit	U38	L19	5	1	22.	224.
+I48	unit	U27	L11	16	1	21σ	24σ
+I49	unit	U02	L02	9	1	32ρ	31σ
+I50	unit	U49	L26	11	1	12+@r	13+@r
+I51	unit	U48	L26	7	1	258	25
+I52	decoy	D05	L10	6	1	25+	25.
+I53	decoy	D14	L20	2	1	3+@l	3@l
+I54	unit	U44	L24	7	1	22+	22
+I55	unit	U55	L30	13	1	21+	11+
+I56	unit	U17	L07	4	1	25ρ	257ρ
+I57	decoy	D01	L01	8	1	249+	24+
+I58	unit	U24	L09	18	1	7+	7
+I59	unit	U34	L17	2	1	10ρ	10
+I60	unit	U43	L23	11	1	33ρ	35ρ
+I61	unit	U20	L08	14	1	20ρ	10ρ
+I62	unit	U15	L06	0	1	70@n	7ρ@n
+I63	unit	U51	L28	16	1	{n}	11
+I64	unit	U25	L10	2	1	16.@n 24	24.
+I65	unit	U08	L04	8	1	77@r	7@m
+I66	unit	U03	L02	12	4	30. 15+ 21. 16ρ	158+ 11. 1655
+I67	unit	U04	L03	5	6	12+ 258 6σ 6. 77 7	64+ 2586 68. 77ρ 7.@r
+I68	decoy	D18	L28	1	1	13ρ	23ρ
+I69	unit	U32	L14	10	1	29@r	29σ@r
+I70	decoy	D11	L16	11	1	12.	22.
+I71	unit	U36	L18	5	1	15@s	15ρ@s
+I72	unit	U47	L25	1	1	28.	20.
+I73	unit	U53	L29	3	1	7	13
+I74	unit	U46	L24	16	0	-	6+@s
+I75	unit	U18	L07	7	1	13	13σ
+I76	unit	U22	L08	16	1	12ρ	11+

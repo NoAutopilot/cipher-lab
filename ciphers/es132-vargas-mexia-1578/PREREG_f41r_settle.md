@@ -35,3 +35,7 @@ If the control FAILS: nothing is applied (ciphertext_f41r.tsv = the _pre stream)
 before (committed c3_test1_f41r_result.json, copied to c3_test1_f41r_result_pre.json) and after reported side by side. Grades per
 PREREG_c3_test1.md (S where page gate passes on both blind passes and the control passes, '?' tokens M, codes U). The blind passes' S_b
 cannot change (they are not touched); only the reconciled row and the grade counts move.
+
+## Clarification before any read (08:5x UTC, same session)
+The firm-token population for the decoys is restricted to tokens beginning with a digit (the first build drew the plain letter 'y',
+which is not a numeral group and has no look-alike substitution in this list). No crop had been read for settlement when this was changed.

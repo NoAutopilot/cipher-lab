@@ -1,0 +1,77 @@
+id	line	crops	before	after	option1	option2
+I01	L13	images/f41r_L13_s2.jpg	y 6. 3	13. 12+ 15+@n	24+ 6σ 3 21.	11.
+I02	L29	images/f41r_L29_s1.jpg	7ρ	10 7 16.	16σ	16ρ
+I03	L24	images/f41r_L24_s1.jpg images/f41r_L24_s2.jpg	161 7+@s 22	17.@s 3@n 6.	29+	23+
+I04	L05	images/f41r_L05_s1.jpg images/f41r_L05_s2.jpg	13. 3@n 7@r	13 6. 14+	14+	11+
+I05	L19	images/f41r_L19_s2.jpg	7ρ@s 22. 8.	6.	12@r	7@r
+I06	L28	images/f41r_L28_s1.jpg	13ρ 30. 15+	y 17+ 6.	12.	22.
+I07	L10	images/f41r_L10_s2.jpg	12+ 258 3@n	16ρ@s 6. 25.	6σ	6+
+I08	L04	images/f41r_L04_s1.jpg	(line edge)	14+ 15+ 24.	11+	(nothing)
+I09	L08	images/f41r_L08_s2.jpg	3@s 24ρ 20ρ	12ρ	10@r	20@r
+I10	L05	images/f41r_L05_s1.jpg images/f41r_L05_s2.jpg	17+ 13. 3@n	14+ 13 6.	7+@r	7@r
+I11	L09	images/f41r_L09_s1.jpg images/f41r_L09_s2.jpg	17+ 24@s 3@n	6ρ 3 15ρ	24ρ	249ρ
+I12	L20	images/f41r_L20_s1.jpg	(line edge)	y 3@l 16σ	5+	5
+I13	L02	images/f41r_L02_s1.jpg	24+ 11. 78@s	15+ 21. 6σ	24ρ	249ρ
+I14	L05	images/f41r_L05_s1.jpg	21. 6. 15ρ	17+ 13. 3@n	22.	12.
+I15	L05	images/f41r_L05_s2.jpg	y 15ρ 21.	15.	7ρ@s	15
+I16	L04	images/f41r_L04_s1.jpg	14+	y 13 y	15+ 24. 12+	24 24+
+I17	L09	images/f41r_L09_s1.jpg	18@s 11ρ 25@r	17+ 24@s 3@n	25.	25+
+I18	L05	images/f41r_L05_s2.jpg	14+ 13 6.	y 15ρ 21.	14+	11+
+I19	L13	images/f41r_L13_s2.jpg	13. 12+ 15+@n	/	15@s	15+@s
+I20	L27	images/f41r_L27_s1.jpg	10@r 22. 16.	18 6. 15ρ	6ρ	6σ
+I21	L17	images/f41r_L17_s1.jpg	33+@n	10 y 16σ	7σ	7ρ
+I22	L17	images/f41r_L17_s2.jpg	13+@r 24+ 13.	(line edge)	16ρ 3	16ρ@s 3_ 22. y 13+ 10
+I23	L20	images/f41r_L20_s1.jpg	5 y 3@l	5 161 3@l	16σ	16ρ
+I24	L28	images/f41r_L28_s2.jpg	y@n 34+ 24.	6. 16+@n 7ρ	22+@2	224
+I25	L15	images/f41r_L15_s1.jpg	10 20+ 24	22. 16. 6σ	3+@l	3@l
+I26	L13	images/f41r_L13_s1.jpg	6. 33+@n 7σ	y 33+@n 6.	20	10
+I27	L14	images/f41r_L14_s1.jpg	17+@s y 15+	36+@s 258 17ρ	18+	18
+I28	L30	images/f41r_L30_s2.jpg	5 20ρ@r 15+	6. 21+ 15	11@r	21
+I29	L09	images/f41r_L09_s2.jpg	15ρ 16⊣ y	3@n y 7	88_	88
+I30	L22	images/f41r_L22_s1.jpg images/f41r_L22_s2.jpg	13. 13@n 24+	15ρ@s 36. 10	12ρ@n	13ρ@n
+I31	L21	images/f41r_L21_s2.jpg	6. 24+ 16+	22σ 10	24	14.
+I32	L03	images/f41r_L03_s2.jpg	15+ 3 35.	6. y@n	13+	23+
+I33	L08	images/f41r_L08_s1.jpg	24+@n 20+@r 24σ	15+@r 16.@n 24.	7@r	71@r
+I34	L30	images/f41r_L30_s1.jpg	y 20ρ 7+@s	17ρ 5 20ρ@r	16	16+
+I35	L18	images/f41r_L18_s1.jpg	y 21. 15@s	17ρ@s 7ρ@n 7.@r	ρ5	25
+I36	L16	images/f41r_L16_s1.jpg	24 3@l 7ρ@s	11ρ 6. 15ρ@s	249	24σ
+I37	L05	images/f41r_L05_s2.jpg	21. 15 15.	(line edge)	11@s	(nothing)
+I38	L12	images/f41r_L12_s1.jpg images/f41r_L12_s2.jpg	18 36+ 7ρ	25. 17σ 6ρ	12+@s	11+@r
+I39	L01	images/f41r_L01_s2.jpg	3@s 36+ 6.	6. 35.	13	23
+I40	L15	images/f41r_L15_s1.jpg	7ρ@n 25	10 20+ 24	17ρ	17σ
+I41	L13	images/f41r_L13_s1.jpg images/f41r_L13_s2.jpg	5 y 6.	3 24+ 6σ	3@s 24+ 6ρ	(nothing)
+I42	L22	images/f41r_L22_s1.jpg	28 10	13. 13@n 24+	13σ	23σ
+I43	L21	images/f41r_L21_s1.jpg images/f41r_L21_s2.jpg	20. 22. 2	36+ 24+@r 6.	24+ 224	20+ 24 3
+I44	L30	images/f41r_L30_s2.jpg	6. 21+ 15	(line edge)	6σ 8	6 6+ 6
+I45	L06	images/f41r_L06_s1.jpg images/f41r_L06_s2.jpg	y 15+@s 22.	7+@s 21. 6.	36_	358_
+I46	L12	images/f41r_L12_s1.jpg	22.	6. y 3@n	23σ	238
+I47	L19	images/f41r_L19_s1.jpg	y 6. 25.	10 7+@s 24σ	22.	224.
+I48	L11	images/f41r_L11_s2.jpg	10 21. 10	(line edge)	21σ	24σ
+I49	L02	images/f41r_L02_s1.jpg images/f41r_L02_s2.jpg	21. 6σ 3	78@s 13+ 30.	32ρ	31σ
+I50	L26	images/f41r_L26_s2.jpg	17ρ 10 20+	3@n 21. 3	12+@r	13+@r
+I51	L26	images/f41r_L26_s1.jpg images/f41r_L26_s2.jpg	6ρ 3 15ρ@2	17ρ 10 20+	258	25
+I52	L10	images/f41r_L10_s1.jpg	/ y 12+	y@s 6. 13+	25+	25.
+I53	L20	images/f41r_L20_s1.jpg	5 y	16σ 5 161	3+@l	3@l
+I54	L24	images/f41r_L24_s1.jpg images/f41r_L24_s2.jpg	7ρ@n 161 7+@s	23+ 17.@s 3@n	22+	22
+I55	L30	images/f41r_L30_s2.jpg	15+ 21 6.	15 6 6+	21+	11+
+I56	L07	images/f41r_L07_s1.jpg	18 36+ 12	y 12+ 13	25ρ	257ρ
+I57	L01	images/f41r_L01_s1.jpg images/f41r_L01_s2.jpg	25 17+ 7+	28+ 3@s 36+	249+	24+
+I58	L09	images/f41r_L09_s2.jpg	88 3@n y	(line edge)	7+	7
+I59	L17	images/f41r_L17_s1.jpg	33+@n 7σ	y 16σ 18@s	10ρ	10
+I60	L23	images/f41r_L23_s2.jpg	24ρ@r 17ρ 10	20ρ 17.@r 15+	33ρ	35ρ
+I61	L08	images/f41r_L08_s2.jpg	3@n 3@s 24ρ	20@r 12ρ	20ρ	10ρ
+I62	L06	images/f41r_L06_s1.jpg	(line edge)	6σ 5 24.	70@n	7ρ@n
+I63	L28	images/f41r_L28_s2.jpg	16+@n 7ρ 161	(line edge)	{n}	11
+I64	L10	images/f41r_L10_s1.jpg	3@r 6+	/ y 12+	16.@n 24	24.
+I65	L04	images/f41r_L04_s1.jpg images/f41r_L04_s2.jpg	13 y 16.	24@n 24+ 22σ	77@r	7@m
+I66	L02	images/f41r_L02_s2.jpg	32ρ 78@s 13+	(line edge)	30. 15+ 21. 16ρ	158+ 11. 1655
+I67	L03	images/f41r_L03_s1.jpg images/f41r_L03_s2.jpg	258 13+ 18@s	7+ 6. 15+	12+ 258 6σ 6. 77 7	64+ 2586 68. 77ρ 7.@r
+I68	L28	images/f41r_L28_s1.jpg	6+@r	30. 15+ 22.	13ρ	23ρ
+I69	L14	images/f41r_L14_s1.jpg images/f41r_L14_s2.jpg	17ρ 10 6.	3 3 8+	29@r	29σ@r
+I70	L16	images/f41r_L16_s2.jpg	11ρ 6. 15ρ@s	8. 6. 5	12.	22.
+I71	L18	images/f41r_L18_s1.jpg	7ρ y 21.	ρ5 17ρ@s 7ρ@n	15@s	15ρ@s
+I72	L25	images/f41r_L25_s1.jpg	10	13+ 10 6σ	28.	20.
+I73	L29	images/f41r_L29_s1.jpg	7ρ 16ρ 10	16. 24+ 6ρ	7	13
+I74	L24	images/f41r_L24_s2.jpg	7+ 6+@s 24ρ	(line edge)	(nothing)	6+@s
+I75	L07	images/f41r_L07_s1.jpg	25ρ y 12+	6ρ 16⊣ y	13	13σ
+I76	L08	images/f41r_L08_s2.jpg	24ρ 20ρ 20@r	(line edge)	12ρ	11+
