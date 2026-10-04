@@ -37,7 +37,7 @@ Quote (cabinet-noir README, es132-vargas-mexia): "30 premières lectures avec cl
 
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026)
 Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-noir + 1 Tomokiyo), about 44%, counted from the TOC and cabinet-noir's README; 2 more have a clear copy on the leaf.
-- f.89 letter pages f.89r, f.89v, f.90r, f.91r and f.119 letter pages f.119v upper, f.120r decode with Cp.30 - blocker: not-attempted; test 1 (4 Oct 2026) did f.90v (Teulet's 19 Sept paragraph located there, L10-L26) and f.119r; next: same pipeline per page (crops, 2 blind passes, blind arbitration, test1.py), ~$2 per page
+- f.89 letter pages f.90r, f.91r and f.119 letter pages f.119v upper, f.120r decode with Cp.30 - blocker: not-attempted; test 1 did f.90v and f.119r, test 2 (RUN2-ES132, 4 Oct 2026) did f.89r and f.89v (gate (b) PASS on both blind passes); next: same pipeline per page (test2.py shape-notation passes, run2/reconcile_*.py), ~$2.5 per page
 - Cp.30 nomenclature (cursive word codes, numbers >= 38: 14 of 75 tokens in the unprinted paragraph) - blocker: not-attempted; not on disk; next: Alcocer 1921 facsimile (Cervantes Virtual: cloud-blocked, LOCAL-QUEUE row) or cabinet-noir attested values cited, ~$1
 - About 30 open Cipher 3 letters (list in the table), about 16,000 groups - blocker: not-attempted; keys published, Gallica images answer, cabinet-noir may reach them first; next: re-check its git log, pick letters outside its list, ~$6 per 5 letters
 - 3-5 open Cipher 4 (Perez) letters f.87, 157, 179, 136?, 148? - blocker: not-attempted; Cipher 4 table is Tomokiyo's PNG not on disk (IMAGE-QUEUE spanish3vargas*.png); next: fetch the PNGs or use cabinet-noir cle/cipher4_codes_perez.tsv, ~$1
@@ -52,10 +52,10 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [ ] retry: catalogue record 403 and blog threads are the planned retries
-Verdict: keep going: 6 internal gaps; cheapest next: the remaining pages of the f.89 and f.119 letters with the test 1 pipeline, ~$2 per page
+Verdict: keep going: 6 internal gaps; cheapest next: f.119v upper, f.120r, f.90r, f.91r with the test 2 pipeline, ~$2.5 per page
 
 ## While waiting
-Nothing waits on a person: the action that depends on nobody is the remaining pages of the f.89 and f.119 letters (test 1 pipeline) above.
+Nothing waits on a person: the action that depends on nobody is the remaining pages of the f.89 and f.119 letters (test 2 pipeline) above.
 
 ## Requests by host (CS-1)
 gallica.bnf.fr 4 images; archive.org 6 advancedsearch + 4 djvu downloads; github.com 3 shallow clones (2 solver repos earlier + cabinet-noir; one WebFetch); de-crypt.org 1 browser login + 12 fetches; WebSearch 9; archivesetmanuscrits.bnf.fr 1 (403, not retried). No credentials printed. Report only; no novelty classification made.
@@ -147,3 +147,34 @@ Grades (rule 4, reconciled text, `test1_result.json` grades_reconciled): f.90v H
 Readings: `reading_f90v.txt`, `reading_f119r.txt` (bracketed = unread code). Sense, not graded, by eye: f.90v L09 "lo que toca a la naue-ga-cion de las indias", L27 "... haueis hecho en lo del trigo"; f.119r L10-L20 "me pesa del principio que dezis se ha dado en esa villa a las predicas ... y resistir a esta tempestad ... que el [Rey?] hiziese rostro y severo en los que se han atrevido a introduzir una tan grave ... con la [code] que la materia requiere". Reported as found; not searched in print in this job beyond Teulet vol.5 (not in Teulet: these lines are outside both printed paragraphs).
 Not done (pacing, Usage 7): f.89r, f.89v, f.90r, f.91r, f.119v upper paragraph, f.120r; the spec's `cheap_test_done` (specs/ is outside this job's write scope: suggestion for the lane orchestrator to copy the table above).
 Requests: archive.org 3 (1 download 500, 1 metadata, 1 datanode djvu); gallica.bnf.fr 11 (7 x 1000 px canvases, 2 info.json, 2 native regions). No credentials used. Subagent calls: 5 Sonnet (4 blind passes + 1 arbitration).
+
+## Test 2 (LANE-RUN2 RUN2-ES132, account 1, 4 Oct 2026, 02:46-02:5x UTC by the container clock)
+Gate: `python3 tools/intake_gate_check.py es132-vargas-mexia-1578` -> "es132-vargas-mexia-1578: partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0.
+Scope: `cabinet_noir_map.tsv` rows 89/119 `cn_read = no`; fresh cabinet-noir clone 4 Oct 2026 ~02:48 UTC: last commit still 47b6db9 (2 Oct), no f.89/f.119 folder. Nothing dropped. `PREREG_test2.md` committed (57afba26) and `test2.py` committed (797275bb) before any f.89r/f.89v decode.
+Pages done: **f.89r** (canvas 86 right, 23 lines: clear opening + cipher) and **f.89v** (canvas 87 left, 26 bands, three paragraphs). Neither is printed by Teulet, so only gate (b) ran. f.119v upper not started (pacing, below).
+Crops (pasted):
+```
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 86 --region 3450,1580,2950,3200 --out ciphers/es132-vargas-mexia-1578/images --prefix f89r --follow-slope 300 --slope-margin 40 --debug
+ -> 23 bands x 2 segments, pitch 135; wrote 46 crops
+python3 tools/iiif_lines.py --ark btv1b10032556x --canvas 87 --region 520,880,2720,3980 --out ciphers/es132-vargas-mexia-1578/images --prefix f89v --follow-slope 300 --slope-margin 40 --debug
+ -> 26 bands x 2 segments, pitch 132; wrote 52 crops (first run with h=3850 clipped the last line; re-cut, first run's files deleted)
+```
+Both overlays checked by eye; no duplicated band; f.89v's right edge is the gutter (last characters of some lines may be in the binding).
+Notation change from test 1: blind passes wrote above-marks by SHAPE (`run2/pass_prompt_f89r.md`, `_f89v.md`), mapped by `test2.py` before decode: hat->@n, bar->@s, acute->@l, tilde->@m, small r-shaped mark->@r, two dots->@2, from test 1's f.90v Teulet lines (L10: bar 4 = "es", hat 7ρ = "con", acute 4 = "el"; L05 tilde 17σ@m, r-mark 24.@r). The f.89r passes first got one shape "@tilde" for both ~ and the r-mark; the split was sent to both passes mid-run (logged in the prompt file); pass B then used @rmark throughout, so f.89r's @m/@r may be under-separated. cross-above and other marks are dropped (no letter).
+err_2reader (token level, after normalisation): **f.89r 88/445 = 19.8%**; **f.89v 47/433 = 10.9%**. err_true not measurable (no benchmark item of this hand).
+Reconciliation (`run2/reconcile_f89r.py`, `run2/reconcile_f89v.py`; disagreement lists `run2/*_disagreements.tsv`): this worker, from the crops/overlays by shape; no printed text exists for these lines and the key was not consulted per span. Systematic: looped e-tail = ρ (pass A wrote σ), "2ι3" = 2⊣ 3, "1ı" without top bar = 11. Spans not settled by eye kept and flagged '?': 44 tokens on f.89r, 36 on f.89v.
+
+Results (`python3 test2.py`; `--check` exits 1 if stale; `test2_result.json`). Nulls first in each run.
+| page | text | key letters | S_b | order-shuffle p99 | key-shuffle p99 | gate (b) |
+|---|---|---|---|---|---|---|
+| f.89r | blind pass A | 853 | -1.203 | -1.439 | -1.870 | PASS |
+| f.89r | blind pass B | 817 | -1.183 | -1.396 | -1.831 | PASS |
+| f.89r | reconciled | 863 | -1.116 | -1.436 | -1.854 | PASS |
+| f.89v | blind pass A | 810 | -1.205 | -1.422 | -1.848 | PASS |
+| f.89v | blind pass B | 820 | -1.177 | -1.404 | -1.853 | PASS |
+| f.89v | reconciled | 820 | -1.176 | -1.412 | -1.855 | PASS |
+All pages are over 250 key letters, so the pre-registered f.90v-prefix calibration was not triggered; test 1's f.90v known-answer lines (504 letters) remain the power demonstration. ARM-C1: the median order-shuffled decode fails the standard judge on every page and pass (not voided); the standard judge also fails every real decode (judge_real_p05 about -0.77) -- es16 held-out false negative 60.7-70.3%, one volume, 5 folds: judge PASS/FAIL says nothing here. Gate (b) PASS = weak support that the key-applied text is Spanish-like beyond its own syllable inventory, nothing more.
+Grades (rule 4, reconciled): f.89r H 0, C 0, S 0, M 410, I 0, U 35; f.89v H 0, C 0, S 0, M 386, I 0, U 42. No H or C: key-applied, cryptanalytic result only. No nomenclature value assigned.
+Readings: `reading_f89r.txt`, `reading_f89v.txt`. Sense, not graded, by eye: f.89r L01-L03 "... [cartas] todas contienen [cal?]idades que fue bien escriuirmelas, y señaladas las que tocan a [{Ja}] de Alanzon ..." (Alençon), L10-L11 "... prohibir de ueras y castigar con rigor lo que ...", L17 "con comunicacion y aprobacion del ...", L18 "lo que me embiastes", L22-L23 "os hazer saber ... al monesterio"; f.89v L08-L09 "con las palabras que me parescio conuenir", L13 "todo lo que ha hecho el de Alanzon", L22-L23 "lo primero de la uisita satisfazer ... lo segundo le dixe". Reported as found; not searched in print in this job beyond Teulet vol.5 (Teulet prints only f.90v's paragraph of this letter).
+Not done (pacing: session cost not visible to this worker; two pages = 4 Sonnet passes + 2 reconciliations, estimated near the 80% line of the USD 8 cap): f.119v upper, f.120r, f.90r, f.91r.
+Requests: gallica.bnf.fr 6 (2 x 1000 px canvases, 1 info.json, 3 native regions incl. one re-cut); github.com 1 shallow clone. Subagent calls: 4 Sonnet (blind passes). No credentials used.

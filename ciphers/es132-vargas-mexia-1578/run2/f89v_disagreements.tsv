@@ -1,0 +1,46 @@
+line	op	A_pos	A	B
+L02	replace	1	{lum}	{Lum}
+L02	replace	3	23σ	23σ@s
+L02	replace	16	65	68
+L03	replace	1	7σ	7ρ
+L03	replace	15	{Rul} 22	{Qul} 22.@s
+L04	replace	17	4@m	4
+L04	replace	19	20.	20
+L05	replace	8	22	22.@s
+L05	replace	15	3.@m	8.@m
+L07	replace	12	24.@m	24.@r
+L07	replace	15	36+@r	3 6+@r
+L07	insert	18		18?
+L08	replace	9	15+@s	25+@s
+L08	replace	12	30+@s	30+
+L08	replace	16	22	22.@s
+L10	replace	9	17ρ@n	15ρ@n
+L11	replace	5	15	25
+L12	replace	7	36	36.@s
+L12	replace	15	{pam}+_	{pam}+@s
+L13	replace	14	6	6.@s
+L14	replace	3	{xom}@s	{Xom}
+L14	replace	5	{Ra}@s	{Ra}
+L14	delete	16	2?	
+L15	replace	1	23ρ	23σ
+L15	replace	12	4_σ	4σ
+L15	replace	17	15	15.@s
+L16	replace	2	{pam}_	{pam}
+L16	replace	14	7ρ@n	7ρ
+L17	replace	11	14σ	11σ
+L18	replace	2	14σ	11σ
+L19	replace	10	14σ	11σ
+L20	replace	4	{lo}	{lo}@s
+L20	replace	9	{gil}	{gil}@s
+L20	replace	12	25σ	22σ
+L20	replace	17	30.	30_.
+L21	replace	11	{quam}_	{quam}
+L21	replace	13	14+	11+
+L22	replace	13	28	26
+L23	replace	12	{lum}	{Sum}
+L24	replace	3	?	+
+L24	replace	5	25+@m	25+@r
+L25	replace	3	8	0
+L25	replace	9	6σ@m	6σ@r
+L25	replace	16	15ρ	15ρ@s
+L26	replace	2	22	22.@s

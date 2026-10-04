@@ -1,0 +1,102 @@
+{
+ "f89r": {
+  "err_2reader": "88/445",
+  "err_2reader_frac": 0.198,
+  "passA": {
+   "letters": 853,
+   "S_b": -1.203,
+   "order_p99": -1.439,
+   "order_median": -1.51,
+   "key_p99": -1.87,
+   "gate_b": true,
+   "judge_null_p99": -1.992,
+   "judge_real_p05": -0.772,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 817,
+   "S_b": -1.183,
+   "order_p99": -1.396,
+   "order_median": -1.469,
+   "key_p99": -1.831,
+   "gate_b": true,
+   "judge_null_p99": -1.991,
+   "judge_real_p05": -0.771,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 863,
+   "S_b": -1.116,
+   "order_p99": -1.436,
+   "order_median": -1.493,
+   "key_p99": -1.854,
+   "gate_b": true,
+   "judge_null_p99": -1.998,
+   "judge_real_p05": -0.771,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "grades_reconciled": {
+   "H": 0,
+   "C": 0,
+   "S": 0,
+   "M": 410,
+   "I": 0,
+   "U": 35
+  }
+ },
+ "f89v": {
+  "err_2reader": "47/433",
+  "err_2reader_frac": 0.109,
+  "passA": {
+   "letters": 810,
+   "S_b": -1.205,
+   "order_p99": -1.422,
+   "order_median": -1.487,
+   "key_p99": -1.848,
+   "gate_b": true,
+   "judge_null_p99": -1.991,
+   "judge_real_p05": -0.782,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "passB": {
+   "letters": 820,
+   "S_b": -1.177,
+   "order_p99": -1.404,
+   "order_median": -1.468,
+   "key_p99": -1.853,
+   "gate_b": true,
+   "judge_null_p99": -1.999,
+   "judge_real_p05": -0.774,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "reconciled": {
+   "letters": 820,
+   "S_b": -1.176,
+   "order_p99": -1.412,
+   "order_median": -1.47,
+   "key_p99": -1.855,
+   "gate_b": true,
+   "judge_null_p99": -1.999,
+   "judge_real_p05": -0.774,
+   "judge_pass": false,
+   "armc1_shuffled_median_judge_pass": false
+  },
+  "grades_reconciled": {
+   "H": 0,
+   "C": 0,
+   "S": 0,
+   "M": 386,
+   "I": 0,
+   "U": 42
+  }
+ },
+ "dropped_shape_tokens": {
+  "marks": 70,
+  "clear": 2
+ }
+}
