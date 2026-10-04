@@ -779,4 +779,4 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp8
 - [ ] key-rebuild: T31 relabel SUPPORTED in aggregate (per-token crop check open); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15; f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: f.275v block B lines 12-15, ~$3.5; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 15 internal gaps; cheapest next: f.275v block B lines 12-15, ~$3.5; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
