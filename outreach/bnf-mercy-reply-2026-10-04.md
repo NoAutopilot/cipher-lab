@@ -1,4 +1,4 @@
-status: drafted (orchestrator account 3, 4 Oct 2026 00:3x UTC); not sent. Gate 7 check pending (separate session).
+status: mailbox-draft 4 Oct 2026 04:3x UTC (Gmail draft in the BnF thread of the project mailbox, placed by the account-3 orchestrator; the owner reviews and sends; the no-company sentence is the owner's to confirm). Was: drafted (orchestrator account 3, 4 Oct 2026 00:3x UTC); not sent. Gate 7 check pending (separate session).
 to: reply in the owner's own thread with the BnF Département des Manuscrits (the reply of 3-4 Oct 2026 from the head of the Service des manuscrits modernes et contemporains, answering the owner's 1 Oct 2026 message on Espagnol 144 f.22, outreach/bnf-mercy-reading.md). Send from the owner's own account, in that thread (outreach/README.md rule 8).
 prior_contact: yes -- the owner's 1 Oct 2026 message (CONTRIBUTIONS.md row of 28 Sept 2026, Espagnol 144 f.22) and its reply received 3-4 Oct 2026.
 subject: (reply in thread; keep the existing subject)
