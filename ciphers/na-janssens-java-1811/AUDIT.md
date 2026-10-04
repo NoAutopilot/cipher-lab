@@ -1,6 +1,6 @@
 # AUDIT 1 (A3V-VJAN, 4 Oct 2026): leaf 188, dispatch No.1 "Numero Un. Triplicata"
 
-Verifier: A3V-VJAN (account 3 worker for LANE-A3V, Opus), run 02:53-03:1x UTC 4 Oct 2026 (clock read). Brief
+Verifier: A3V-VJAN (account 3 worker for LANE-A3V, Opus), run 02:53-03:02 UTC 4 Oct 2026 (clock read). Brief
 `.claude/briefs/runs/2026-10-04-acct3-a3v-wave1.md`, job A3V-VJAN. A session separate from every solver of this target
 (VX-CS05, VX-RD02/02B/02C, GAPS..GAPS17, SPLIT); no earlier AUDIT.md existed. Nothing decoded; key.tsv, ciphertext and
 reading not touched.
