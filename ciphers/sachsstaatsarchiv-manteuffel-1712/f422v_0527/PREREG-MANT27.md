@@ -1,4 +1,4 @@
-# PREREG-MANT27 (D2B-MANT27, 5 Oct 2026, written 23:4x UTC by date -u, account 2), before any pass was read or any statistic computed
+# PREREG-MANT27 (D2B-MANT27, 5 Oct 2026, written 23:36 UTC by date -u, account 2), before any pass was read or any statistic computed
 
 Leaf: SHStA Dresden 10026 Loc. 694/08 ff.422v-423, URL file 0527 (film label 0528; sha256 bfd3ce7d...87d5). Folio confirmed by
 this worker from the frame: right page carries "423" at its head; file 0528 (label 0529) shows "424" with "877 Bartholdi" at its
