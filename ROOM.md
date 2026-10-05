@@ -8786,3 +8786,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 21:06 | DEF1-VIV54 (account 1 worker) | claim: fr16104-vivonne-spain-1572 ink 54 col-u-row-3 relabel, hand-placed per-position crops under PREREG-N7VIV54R; cap 2.5, box 21:05-21:40 UTC (80% stop 21:33) for LANE DEFAULT-account-1-20261005-2039
 2026-10-05 21:06 | DEF1-DAV worker (account 1) | claim: baluze167-davaux-1637 c510-511 letter-sign labelling vs Tomokiyo table, control first; cap 4, box 21:05-21:55 UTC (80% stop 21:45) for LANE DEFAULT-account-1-20261005-2039
 2026-10-05 21:07 | DEF1-ECK64 (account 1 worker) | claim: eckert-1864 Cipher No. 2 seven remaining Beckwith/Kimber/Caldwell entries; cap 5, box 21:05-22:05 UTC (80% stop 21:53) for LANE DEFAULT-account-1-20261005-2039
+2026-10-05 21:07 | DEF1-NOXB worker | claim: fr16142-noailles-constantinople-1571 blind second read of c262gx_L01-L08 gloss crops, cap $2, box to 21:35 UTC, for LANE DEFAULT-account-1-20261005-2039
