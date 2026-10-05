@@ -359,3 +359,9 @@ Reference staff answered the 5 Oct enquiry (ticket in the project mailbox): imag
 **free** (up to 100 images per patron per year); they will submit the duplication request themselves once the owner registers in
 Aeon (aeon.clements.umich.edu). Next: owner registers, then sends the reply draft placed in Gmail ("registered"). Images expected
 after that; the cipher letter (64:14) is the target, 64:15 the language control.
+
+## Clements images received (5 Oct 2026, 19:40 UTC)
+Clements Library sent "Clinton vol 64 fols. 14-15.pdf" (8.9 MB) by Hightail share link to the project mailbox, free,
+after Aeon registration. The cloud browser could not complete the Hightail download (3 attempts: the download button
+did not respond headless; stopped per the good-citizen rule). Owner downloads it once and puts it in the private repo
+(destaing-gerard-1779/). Next: transcription + key test from the received scan.
