@@ -1,0 +1,14 @@
+You are a blind transcriber of a 1637-1638 French diplomatic letter partly written in a cipher (BnF Baluze). Do NOT decode, do NOT guess meanings, do NOT read any words written small ABOVE the cipher (ignore interlinear writing entirely).
+
+Reference key table: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/louisxiii_davaux.png (Tomokiyo). Study its top-left block carefully: the row of letters "a b c d e f g h i l m n o p q r s t u x y z" with 1-4 handwritten letter-substitute signs under each letter. Before transcribing, open and look at it closely (you may view it more than once).
+
+Crops (one manuscript line each; s1/s2 are left/right halves sharing ~150 px overlap -- do not double-count tokens in the overlap), in /home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/ :
+FILES
+
+Transcribe every cipher token in reading order. Token forms:
+- number with an acute/apostrophe-like stroke above: 72'   ; two dots above: 22:   ; bar over: 16=   ; no mark: 16
+- a handwritten letter-substitute sign (not a number, not ordinary French): you MUST label it L:x where x is the letter in the table whose listed signs it most resembles (forced choice, never L:?). If two letters are equally close write L:x|y with the better first.
+- ordinary French words in clear between cipher runs: one brace item, e.g. {Sa Ma.te trouve bon que}
+Trailing ? marks an uncertain token.
+
+Write ONLY a TSV to OUTFILE with header `line	tokens`, one row per crop line (row name = crop file stem without _s1/_s2), tokens separated by single spaces. Then reply with that TSV and one sentence on the hardest signs. No other commentary.
