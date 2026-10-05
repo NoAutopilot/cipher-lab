@@ -318,11 +318,36 @@ inventory record, availability flag, and whether the register holds the 30 April
 Requests: francearchives.gouv.fr 2 (curl, JS redirect), siv.archives-nationales.culture.gouv.fr 1 (302); browser 0;
 DECODE 0 (not needed: KEY-OFFICES/KEY-DESIGN gave the one period candidate). Vision calls 0.
 
+## DEST-COLLATE, 5 Oct 2026 22:33-22:4x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA)
+
+Brief .claude/briefs/runs/2026-10-05-acct3-dest-collate.md. Material: private repo destaing-gerard-1779/Clinton_vol_64_fols_14-15.pdf,
+pages 2 (copy A), 5 (copy B) and 7 (copy C), extracted with `pdftoppm -r 200` (1654x2447, 1654x2562, 1654x2621) to the
+scratchpad; nothing image-like committed here. Line centres from the ink profile of a central strip; crops by
+`tools/iiif_lines.py --image <page> --out <scratch>/{A,B,C} --region ... --centres ...` (22 / 33 / 21 crops, every text line,
+the readers marking clear-text lines CLEAR). Two blind Sonnet passes per copy (6 calls), numbers only.
+
+**Result: `collation.tsv` (pos, ciphertext.txt, A, B, C, agreed, note), 216 code groups. 215 agree in all three copies and
+ciphertext.txt; 1 is unsettled; 0 corrections to ciphertext.txt.**
+- Copy C: both passes = ciphertext.txt on all 216 groups, no disagreement.
+- Copy A: both passes = ciphertext.txt on 214. At pos 59 and 130 both read 370/407, and the image gives 378/487: this hand's
+  8 is an open loop that looks like a 0 with a stroke (compare "380" in the same line).
+- Copy B: the passes lost one whole line (pos 96-107). This copy's lines slope up to the right, and the crop centres
+  849/939 straddled it; read from the image as 235 450 507 72 367 492 346 382 401 41 410 400, identical to ciphertext.txt. Nine
+  more pass disagreements (pos 23, 57, 71, 85, 114, 130, 139, 158, 198) were settled from the image in favour of
+  ciphertext.txt: the same open 8, a 2 and a 5 at the page edge, one pass slip.
+- **Unsettled, pos 7 (copy B):** ciphertext.txt, A and C read 152. In B the middle digit is closer to a 3 than to this
+  copyist's 5, and both B passes read 132. Possibly a copyist variant in B; recorded as "152|132" and not settled by
+  majority. ciphertext.txt keeps 152, which is A = C.
+
+Transcription status: the ciphertext as transcribed (Bourdeau, via ciphertext.txt) is confirmed against all three
+British copies; the measured per-group disagreement among the copies is 1/216. Copyist slips found: none certain (pos 7 in
+B possible). The image-check gap is closed. No decoding was done; no novelty words (rule 10). Requests: 0 network (disk only).
+Cost: see the lane ledger (6 Sonnet calls + 1 reconciliation unit).
+
 ## Remaining gaps (FT4-destaing-gerard-1779, 3 Oct 2026)
-Read so far: 0 of 216 code tokens (no key, no reading)
+Read so far: 0 of 216 code tokens (no key, no reading); transcription confirmed on three British copies (collation.tsv, 215/216, DEST-COLLATE 5 Oct 2026)
 - whole code text (216 tokens) - blocker: no-key-material; no French navy/AE key of 1778-80 on file, and the Luzerne 1781 key has chance-level overlap (FT4 above); the decipherment copy (AAE Corr. pol. Etats-Unis Supt.1) and the sender's register (AN Marine B4 168) are offline
 - sender's register copy in clear - blocker: waiting-on LOCAL-QUEUE L42 (AN Marine B4 168 catalogue record); francearchives JS-redirects the cloud, FT4 above
-- Clements image and 64:15 neighbour - blocker: waiting-on SEND-QUEUE S1 (Clements Library copy, REQUEST.md); clements.umich.edu 403s the cloud, ZX2-EST
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: Meng and Clements finding aid swept (ZX2-EST, 25 Sept); none found; Doniol iv numeral sweep blocked by IA HTTP 500
@@ -330,7 +355,7 @@ Read so far: 0 of 216 code tokens (no key, no reading)
 - [x] known-keys: Marbois codes A-D (ZX2-EST) and Luzerne 1781 key (FT4) both at chance overlap
 - [x] print: Doniol iv, Meng, HMC American MSS i-ii, Stopford-Sackville ii, Continental Congress index (GF4-BATCH13)
 - [n/a] key-rebuild: 216 tokens of a ~600-entry code with no crib that reaches any code
-- [ ] image-check: no image on disk; planned step the Clements copy (REQUEST.md, SEND-QUEUE S1)
+- [x] image-check: Clements scan of Clinton 64:14 (three British copies) collated against ciphertext.txt, 215/216 agree, 1 unsettled (pos 7 in copy B), 0 corrections (DEST-COLLATE, 5 Oct 2026)
 - [n/a] retry: no earlier step failed on transport other than the Doniol djvu download
 Verdict: keep going: 0 internal gaps; cheapest next: page read of AN Marine B4 168 once LOCAL-QUEUE L42 answers, ~$2
 
