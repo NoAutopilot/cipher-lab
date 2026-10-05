@@ -1,0 +1,18 @@
+label	fr3281_letters	basis	value_seen_before_prereg
+6r	b	both passes: 6 with r-hook	no
+iii	p	both: iii crossed by bar	yes (two/tomokiyo.tsv)
+4	q	both: digit 4	yes
+7	i	both: digit 7	yes
+9	m	A 9 / B cursive g open tail	yes
+3	d	both: digit 3	yes
+S	g,u	both: hooked/cursive S	no
+y	f	both: cursive y	yes
+z	o	both: z	yes
+x	l	both: x	yes
+2	n	A 2-like / B reversed 2	no
+L	c	both: cursive capital L	no
+K	g	both: capital R (labels_v2 K = ornate R/K)	no
+f	z	both: f	yes
+a	d	both: small a	no
+o	e	both: o with tail	no
+iib	a,s	both: crossed double stroke	no

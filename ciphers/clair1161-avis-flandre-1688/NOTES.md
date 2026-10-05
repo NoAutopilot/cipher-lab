@@ -2027,3 +2027,48 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: th/z/S/4 split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); next: planted agreed-token audit on th/z/S/4, and the sorter for the 29 unsettled tiles and seven new shapes, as in Remaining gaps
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
 Verdict: keep going: 3 internal gaps; cheapest next: planted agreed-token audit (lookalike_pass.py audit + windows --items) on th/z/S/4, ~$3
+## D2-C1161PRU: fr.3281 f.4 Des Pruneaux key, shape test (account-1 worker for LANE-D2PUSH, 5 Oct 2026, 18:48-19:0x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-c1161pru.md`. Intake gate, pasted before work:
+`clair1161-avis-flandre-1688: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+- **Located.** Tomokiyo (cyphersolver mirror `research/gallica_sweep/src/henryiii.txt`, shallow clone 5 Oct 2026): "Chiffre envoye en
+  Flandres a monseigneur Des Pruneaux" (f.4); Des Pruneaux represented Alençon before the States General from 1578; two homophones
+  per letter, double-letter signs, code words. Gallica SRU `dc.source all "Français 3281"` -> ark:/12148/btv1b9060310c; catalogue
+  record http://archivesetmanuscrits.bnf.fr/ark:/12148/cc49738j; SRU dc: "domaine public", "Numérisation effectuée à partir d'un
+  document de substitution" (microfilm, two-page openings, 173 canvases, no folio labels). Contents note item 3 = « Chiffre envoyé
+  en Flandres à monseigneur Des Pruneaux ». Key sheet = canvas 5, right page; folio "4" read on the leaf (pru/images/fr3281c5_L01_s2.jpg).
+- **Crops** (pasted): `python3 tools/iiif_lines.py --ark btv1b9060310c --canvas 5 --region 4400,250,3950,5300 --out
+  ciphers/clair1161-avis-flandre-1688/pru/images --prefix fr3281c5 --debug` (19 lines, 38 crops) and, for the alphabet block,
+  `python3 tools/iiif_lines.py --image .../src_ark_12148_btv1b9060310c_f5_4400_250_3950_5300.jpg --region 0,330,3950,800
+  --lines-per-crop 9 --out ciphers/clair1161-avis-flandre-1688/pru/images --prefix fr3281c5alpha --max-width 1400 --overlap 100` (3 crops).
+- **Transcription.** 24 columns (a b c d e f g h i k l m n o p q r s t u x y z &), two cipher symbols each. Pass A (this worker) and
+  pass B (Sonnet subagent, blind, the 3 alphabet crops only) in `pru/sheet_f4.tsv`; reconciliation kept a shape only where both
+  passes describe it the same way (17 cells, `pru/cells.tsv`); dropped on disagreement: f/r/t "6"/"θ" shapes, q row 2 (p vs f),
+  p row 2 (8 vs e), o row 2, n/z row 2 "d" (no bar across the ascender, labels_v2 d needs one). The code-word list below "Nulles"
+  was not transcribed (a word code has no counterpart in the 1161 sign inventory's shape test).
+- **Test** (pru/PREREG_pruneaux.md, pushed 7e07995e9 before scoring; `python3 pru/shape_test.py`, output `pru/shape_test.out`):
+  **2/17** labels carry the sheet's letter in key.tsv (7 = i, S = u). Permutation null over key.tsv's values on the same 17 labels
+  (10,000, seed 1): mean 0.88, p99 4, P(null >= 2) = 0.217. **Gate: NO FIT.** Instrument 2 not scored (not gated).
+- Caveats: the worker had seen several key.tsv values (two/tomokiyo.tsv) before the PREREG, flagged per cell in cells.tsv; both hits
+  are on cells whose shape is unambiguous in both passes. The sheet is c. 1578-79; the 1161 item's date is unsettled. The shared
+  shape stock is real (6r is a sign both alphabets carry, as are 7, 4, 3, x, a, z, L, iii-with-bar), but the values do not match:
+  6r = b on the sheet, i in key.tsv. A shared office stock with re-assigned values, not the same key.
+- Not tested: the different "Pruneaux-Aranger" cipher in the same volume (ff.120-140, Oct-Dec 1579, per Tomokiyo, rebuilt from
+  decipherments on separate sheets); Gallica requests this job 14 (SRU 1, manifest 1, info.json 1, thumbnails 9 incl. 1 reset, 2 region fetches).
+- Images kept: the folio-number crop and the 3 alphabet crops only (pru/images, 0.6 MB); the region source and other line crops are re-made by the first iiif_lines command above (folder stays under 30 MB).
+
+## Remaining gaps (D2-C1161PRU, 5 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged by this job; no grade moved).
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; neither known key on file fits (fr16142 2/16, fr.3281 f.4 2/17, both NO FIT); the th/z/S/4 split-tile look-alike pass found 10 relabels but FAILed its gate (D2-C1161LA); next: planted agreed-token audit (lookalike_pass.py audit + windows --items) on th/z/S/4, ~$3
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; transcription error above the two-reader figure, a wrong held value, or a design element; agreed-but-wrong signs are invisible to the look-alike pass (D2-C1161LA); next: the same planted agreed-token audit, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (D2-C1161PRU, 5 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; the nine's gain over the pre-JOINT9 key (+0.035) is inside a fr16-window null (p95 +0.082, VER-C1161J); the gloss PASSes the fr16 judge (-0.808), the decode FAILs
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key 2/16 vs p99 3 (N4-C1 4) and BnF fr.3281 f.4 Des Pruneaux Flanders key 2/17 vs p99 4 (D2-C1161PRU), both NO FIT; the fr.3281 Pruneaux-Aranger cipher (1579) not tested, a later key of a different design
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material
+- [ ] image-check: th/z/S/4 split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); next: planted agreed-token audit on th/z/S/4, and the sorter for the 29 unsettled tiles and seven new shapes
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: planted agreed-token audit (lookalike_pass.py audit + windows --items) on th/z/S/4, ~$3
