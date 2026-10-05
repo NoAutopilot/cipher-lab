@@ -340,6 +340,14 @@ Not graded per rule 4: there is no cipher-token reading. This report finds and g
 decipherment on the leaf only; no novelty is classified (rule 10). Fig. 4 (published) vs a period-derived key: not
 compared (step 4 not reached).
 
+## FER1478-READ2, 5 Oct 2026 (account-1 worker for account 3, brief .claude/briefs/runs/2026-10-05-acct3-fer1478-read2.md)
+
+Stopped at step 1 (19:42-19:45 UTC by date -u), nothing read. The new screenshots (images-123-shots/set1-1..6.png) are only
+in the private repository, and this session could not reach it: its GitHub access covered only the public repository; a
+clone and an add_repo request for the private one were both refused by the session's permission policy. No crop, pass,
+key or reading was made; the images were never on this container. Next: rerun the same brief from a session whose
+GitHub scope already includes the private repository (or the owner allows it for this account's sessions), ~$10.
+
 ## Remaining gaps (finish-or-blocker pass, 5 Oct 2026)
 Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two unreconciled passes (15 lines, about 50% agreed spans)
 - cipher block sign transcription (22 lines, ~1,000 signs) - blocker: illegible; the only image on hand is 120 ppi (p-000.jpg and the same JPEG in the BNE PDF), and 4 blind passes rated it near-noise; next: a full-resolution BNE image of item 123 (bdh0000186627, 403 from the cloud, so owner desk download) or first check whether sibling item 126 (now in the private repo) is legible at its own resolution, ~$6 to transcribe once a legible image is in hand
