@@ -36,3 +36,21 @@ with counts, no values. Rule:
   an alignment job is written as the next step with its price (not run now).
 - **different**: < 60% of tokens take an existing label. Then f.23r is not a key source for v'/0'/NEW.
 - **undecided**: anything between.
+
+## Unit 1 re-look at native resolution (D2-DIN0, account 1, 5 Oct 2026, written 18:50 UTC before any new crop is viewed)
+
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-din0.md` (a). Same question and **the same decision rule as unit 1 above,
+unchanged** (merged: >= 5 of 7 conflicting located AND >= 4 of them carry f.130's 0' mark AND <= 1 located e-reading `0`
+carries it; one sign: <= 1 of the located conflicting marked, rest like the e-readings; undecided: anything else).
+Only the instrument changes: DIN-3623 viewed a 2400 px composite that the viewer downscales (~0.65x); this look uses
+native-resolution sub-crops cut from the cached native region with
+`python3 tools/iiif_lines.py --image ciphers/fr3621-dinteville-1592/images/src_ark_12148_btv1b52524472n_f265_200_1800_3700_560.jpg --out ciphers/fr3621-dinteville-1592/look/din0 --prefix f128n --centres 263,367,471 --lines-per-crop 1 --max-width 700 --overlap 120 --mask-neighbours --debug`
+(no network), laid out two segments per row with ImageMagick, no rescaling, one sheet per line (L03, L04, L05 of f.128 =
+din0 L01, L02, L03), viewed once by this worker in one pass. Each of the 7 conflicting positions is located by its
+neighbouring signs from firm/conflicts.tsv; each e-reading `0` seen on the same sheets is recorded too.
+Pre-declared tie-break, so that the call is mechanical: a zero counts as "marked" only if a stroke rises from the zero
+and curls over or crosses above it (f.130's 0'); a plain round zero, a zero with a ligature tail joining the next sign
+at mid-height, or an ink blot counts as plain; an occurrence that cannot be told apart from its neighbours counts as not
+located. Disclosure: I have read DIN-3623's per-occurrence result (3 stemmed: L05.1:7, :28, :55; 4 plain).
+If (a) gives merged (>= 5 of 7 settled as one class with the rule met), step (b) re-runs the per-occurrence check for
+rows 0, sq, m with the conflicts re-classed `transcription`; otherwise (b) and (c) are not run.
