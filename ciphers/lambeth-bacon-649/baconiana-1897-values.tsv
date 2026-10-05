@@ -1,0 +1,18 @@
+# Printed cipher values in C. M. P. [Pott], "Numbers Ten and Eleven", Baconiana vol. V n.s. no. 17, Jan 1897, pp.24-26,
+# checked against the page images (IA 1897-vol-v-new-series-no-17-20, PDF pp.28-30 = leaves n27-n29) by D2-BACON, 5 Oct 2026.
+# Grade: reported (Pott's own decipherment, unverified against the MS; not a key from a period source). mark: dot/dash above, none.
+value	mark	plain	context_as_printed	page	image_check	ocr_note
+8	dot	a	"the letter a ... has the symbol 8 with a dot above"	24	confirmed	-
+13	none	a	"also 13 without dot"	24	confirmed	pdftotext ']3'
+8	dash	à (prep.)	"8 with a dash above is also a, but ... the French preposition à"; second à of "à ici, et à Twicnam Parc"	24	confirmed	-
+5	dot	à	first à of "à ici, et à Twicnam Parc"	24	confirmed	not in the 3 Oct NOTES list
+74 81	dash (on 81)	il a	"81 with dash above [= a, 3 sg. of avoir]; thus 74 81 = 'il a.'"	24	74 (not 71): the 4 has the same form as the 4 of the running head '24', which OCR also reads as '21'; a mid-height dot between 7 and 4, read as part of the 4 (M)	NOTES 3 Oct had 71
+25 11	long mark over each pair	name (Pott: F. B. / Francis Bacon)	"25 11 praises us over and over again"; "has promised to give orders for the safe passage of a 'Mr. Bacoun Gordon'"; "desires very expressly that all shall be managed with the utmost possible discretion, secrecy, and diligence"	24-25	confirmed	pdftotext '25 Ilf'; identification is Pott's Baconian reading
+2	dot	f	"chifare", "defense", "indefatigable" (first words with f)	25	confirmed	-
+22	not stated	f	"fus", "fait"; first f of "affaire"	25	confirmed	-
+18	not stated	f	"favoriser", "fugitif", "confident" (with 2, 22); second f of "affaire"	25	confirmed	-
+10	not stated	v/u	"vos", "quelque", "jusque", "massure" (10 and 25 for v and u; split not stated)	25	confirmed	-
+25	not stated	v/u	same as 10	25	confirmed	-
+11	not stated (11 "without the line above" is glossed separately as 0)	B	in "Mr. Bacoun Gordon"	25	confirmed	-
+11	no line above	0 = a cipher (null?)	"Number 11 -- without the line above, it signifies O = a cipher"	25	confirmed	ambiguous wording; Pott's gloss
+xxi.	-	name (Pott: Francis Bacon)	printed as roman 'xxi.' inside the French paragraph, p.26; cipher form not given	26	confirmed	-
