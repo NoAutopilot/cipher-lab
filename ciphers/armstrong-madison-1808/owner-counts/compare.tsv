@@ -1,0 +1,28 @@
+stretch	where	A_ms	B_glyphs	owner	A_eq_B	verdict	consensus	owner_note
+p1a	1480 _ 35	1	1	1	yes	3-agree	1	
+p1b	240 _ 384	5	5	5	yes	3-agree	5	
+p1c	98 _ 388	8	8	8	yes	3-agree	8	
+p1d	38 _ 1141 (ms: superscript ^ on 38, not a mark)	0	1	1	no	2-of-3 (B+owner)	1	
+p1x	56 _ 200 (flourish before 200; neither source counts it)	0	0		yes	owner-no-count	0	think this is a number 4200
+p1e	61 45 _ 48 1360 (holds the group 13; ms also reads a closing '31?')	22	32	35	no	3-way split		
+p1f	28 14 _ 44 176	35	39	39	no	2-of-3 (B+owner)	39	
+p1g	1170 1842 _ 41 1250	8	10	9	no	3-way split		
+p1h	17 _ 1210	3	3	3	yes	3-agree	3	counted symbol cut off by box on left
+p2a	18 1801 _ 78 1364	20	25	25	no	2-of-3 (B+owner)	25	included the < before 78, outside the box (said in chat)
+p2b	101 421 _ 17 86	5	8	8	no	2-of-3 (B+owner)	8	
+p2c	1017 18 _ 1248 1430	6	5	5	no	2-of-3 (B+owner)	5	Counted the symbol on the right that's cut by the border
+p2d	1267 18 1 _ 45 147	1	1	1	yes	3-agree	1	
+p2e	147 1158 _ 48 1240	13	14	12	no	3-way split		
+p2f	17 1894 _ 13 230	8	8	8	yes	3-agree	8	
+p2g	230 481 _ 1110 1267	5	6	6	no	2-of-3 (B+owner)	6	
+p2h	364 17 _ 1480 1762	1	1	1	yes	3-agree	1	
+p2i	230 1540 _ 1161 14	5	6	7	no	3-way split		
+p3a	1480 760 _ 47 570	5	5	5	yes	3-agree	5	
+p3b	1254 1 _ 58 620	3	4	3	no	2-of-3 (A+owner)	3	
+p3c	460 365 _ 17 561	6	8	7	no	3-way split		counted cut off S on the right
+p3d	14 740 _ 67 780 (ms reads a numeral 3 inside: '740 * 3 * * * *')	12	20	21	no	3-way split		box cut off the first mark after 740; included it
+p3e	780 1364 _ 1170 1841	2	2	2	yes	3-agree	2	
+p3f	1870 5 _ 160 240	9	9	9	yes	3-agree	9	
+p3g	1107 1764 _ 1472 21	9	9	9	yes	3-agree	9	
+p3h	1208 141 _ 1130 164	25	27	27	no	2-of-3 (B+owner)	27	
+p4a	page 4 line 4 head _ 5 (glyphs.tsv stops at page 3)	1	0	1	no	2-of-3 (A+owner)	1	

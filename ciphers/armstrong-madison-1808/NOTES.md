@@ -4067,3 +4067,28 @@ Five composites sent to the owner: top = three Armstrong mark lines (images/shor
 one system's alphabet plate, labelled A-E without the system's name to avoid bias. Key (not shown to the owner): A = Weston 1727,
 B = Byrom 1796, C = Gurney 1752 (specimen page), D = Mavor 1792, E = Macaulay 1747. Owner answers (same/maybe/no per letter) are a
 human family-likeness judgement, one reader, not a match; recorded below when given.
+
+## SLANT-CROP pre-registration (5 Oct 2026 04:53 UTC, account-3 worker, brief .claude/briefs/runs/2026-10-05-acct3-slant-crop.md)
+
+Written before any reader call. Step 0 is done: `owner-counts/compare.tsv` (owner = third reader, not truth): of 27 stretches,
+11 agree three ways, 9 have 2-of-3 support (7 glyphs+owner, 2 ms+owner), 6 split three ways, 1 (p1x) has no owner count.
+The 15 stretches where ms and glyphs disagree are the test units (`slant/units.tsv`, with the 2-of-3 consensus where one exists:
+p1d 1, p1f 39, p2a 25, p2b 8, p2c 5, p2g 6, p3b 3, p3h 27, p4a 1).
+
+**Conditions.** OLD = the reader crops already on disk (`images/crops_0030`, `crops_0031L`, `crops_0031R`, `crops_0033`: axis-aligned
+`tools/iiif_lines.py` bands). NEW = the same frames, the same regions and detection parameters (reproduced exactly: band boxes match
+the old manifests), cut with `--deskew --mask-neighbours` (`slant/crops/`, manifest there; fitted slopes 0.006-0.052, i.e. 12-102 px
+drift over a line against a pitch of 125-140). Same region in both, so both miss what the old regions miss (page-1 line heads at
+x<250, page-2 line ends at x>1900): this tests the two flags, not the region.
+
+**Reads.** One Sonnet subagent per (condition, pass): 2 conditions x 2 blind passes = 4 calls, each reading the 15 units (22 line
+crops), identical prompt text, crops copied to neutral folders (set names assigned by a seeded coin, seed 20261005) so the reader
+cannot tell old from new; pass 2 takes the units in reverse order. Per unit the reader gives the number of shorthand marks between
+the two bounding numeral groups (a numeral is never a mark) and the marks left to right in a few words each. Priced per call: about
+22 small crops each, ~USD 0.5-1 per call, 4 calls (+ my reconciliation as one more unit, Usage 6).
+
+**Metric.** Per unit, agreement = 1 - |c1 - c2| / max(c1, c2) (1 when both are 0) between the two passes of one condition; the
+condition's score = mean over the 15 units x 100. Also reported, not gated: exact-count share, and the mean |count - consensus|
+on the 9 consensus units.
+**Gate.** PASS iff NEW score >= OLD score + 5 points AND no consensus unit loses a mark, where "loses" = max(NEW passes) < consensus
+<= max(OLD passes). FAIL otherwise: logged in HYPOTHESES.md with both numbers, flags stay off. One run, no re-tuning after the reads.

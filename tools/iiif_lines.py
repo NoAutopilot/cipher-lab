@@ -51,6 +51,13 @@ Steps:
      follows that fit end to end (band height unchanged, plus --slope-margin px above and below). The fit (a, b, peaks
      kept) goes into each manifest entry. --slope-local refits each segment to the peaks within one window of it, for a
      line that curves (f.81r L03: flat for the first segment, then descending). Off by default: without it the cut is exactly as before.
+  --deskew [WIN] (SLANT-CROP, 5 Oct 2026): the --follow-slope fit, but the region is ROTATED about the line's centre so the
+     line is level before the cut (marks keep their shape; a shear distorts it). Armstrong 1808 owner count page: 5 of 27
+     axis-aligned boxes clipped an end mark and several took in numerals from the next line.
+  --mask-neighbours [--mask-margin PX] [--mask-keep 0.5]: cut each crop PX taller above and below (default 0.4 x pitch)
+     and white out (paper colour) each 8-connected ink component (pixels darker than --ink) with less than KEEP of its
+     pixels inside the line band. Neighbour-line ink and bleed go; a mark of this line that reaches past the band edge is
+     kept whole instead of clipped. Pixels are only removed, never added; the manifest records removed/kept counts.
   --views N|LIST [--views-of CROP ...] (TX-VIEWS, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1, #10, #14):
      write altered views of every crop for multi-view voting, OUT/views/<view>/<crop name>, one manifest entry each under
      "iiif_lines_views". N takes the first N of the default order pad,s125,warp,s080,contrast; LIST names them. pad = the
@@ -238,6 +245,94 @@ def sheared_strip(img, sx0, sx1, a, b, half):
                          fillcolor=255 if img.mode == 'L' else (255, 255, 255))
 
 
+def deskewed_strip(img, sx0, sx1, a, b, half):
+    """--deskew: rotate the region about the line's centre point (x mid-segment, y = a + b*x) by atan(b), so the
+    fitted line is horizontal, then cut columns sx0..sx1 and rows centre +/- half. A rotation, not a shear: marks keep
+    their own shape and slant, which a sheared strip distorts in proportion to the slope."""
+    cx = (sx0 + sx1) / 2
+    cy = a + b * cx
+    fill = 255 if img.mode == 'L' else (255, 255, 255)
+    pad = int(abs(b) * (sx1 - sx0) / 2) + half + 4
+    y0, y1 = int(cy) - pad, int(cy) + pad
+    win = img.crop((sx0 - pad, y0, sx1 + pad, y1))      # PIL pads out-of-image areas with black; fill below
+    if win.mode != 'L':
+        win = win.convert('RGB')
+    inside = Image.new('L', win.size, 0)
+    ImageDraw.Draw(inside).rectangle([max(0, -(sx0 - pad)), max(0, -y0), min(win.width, img.width - (sx0 - pad)) - 1,
+                                      min(win.height, img.height - y0) - 1], fill=255)
+    bg = Image.new(win.mode, win.size, fill)
+    win = Image.composite(win, bg, inside)
+    deg = float(np.degrees(np.arctan(b)))
+    rot = win.rotate(deg, center=(cx - (sx0 - pad), cy - y0), resample=Image.BICUBIC, fillcolor=fill)
+    top = int(round(cy - y0)) - half
+    return rot.crop((pad, top, pad + (sx1 - sx0), top + 2 * half)), deg
+
+
+def label_components(mask):
+    """8-connected components of a boolean array, by run-length union-find (numpy, no scipy). Returns (labels, n):
+    int32 array the shape of mask, 0 = background, 1..n = components."""
+    h, w = mask.shape
+    runs = []                                            # (row, x0, x1 exclusive)
+    row_runs = []
+    for y in range(h):
+        r = mask[y]
+        if not r.any():
+            row_runs.append([]); continue
+        d = np.diff(np.concatenate(([0], r.view(np.int8), [0])))
+        st, en = np.where(d == 1)[0], np.where(d == -1)[0]
+        ids = []
+        for s_, e_ in zip(st, en):
+            ids.append(len(runs)); runs.append((y, int(s_), int(e_)))
+        row_runs.append(ids)
+    parent = list(range(len(runs)))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]; i = parent[i]
+        return i
+    for y in range(1, h):
+        prev, cur = row_runs[y - 1], row_runs[y]
+        i = j = 0
+        while i < len(prev) and j < len(cur):
+            _, ps, pe = runs[prev[i]]; _, cs, ce = runs[cur[j]]
+            if ps <= ce and pe >= cs:                    # overlap incl. diagonal touch (8-connectivity)
+                ra, rb = find(prev[i]), find(cur[j])
+                if ra != rb:
+                    parent[ra] = rb
+            if pe < ce:
+                i += 1
+            else:
+                j += 1
+    lab = np.zeros((h, w), np.int32)
+    ids = {}
+    for k, (y, s_, e_) in enumerate(runs):
+        root = find(k)
+        lab[y, s_:e_] = ids.setdefault(root, len(ids) + 1)
+    return lab, len(ids)
+
+
+def mask_neighbours(crop, band_top, band_bot, ink, keep=0.5):
+    """--mask-neighbours: white out (paper colour) every ink component of the crop whose share of pixels inside rows
+    band_top..band_bot is below KEEP -- ink belonging to the line above or below that the crop's margin took in.
+    A component mostly inside the band is kept whole, including the parts that reach into the margin (a tall mark of
+    this line is not clipped). Returns (crop, components removed, components kept)."""
+    rgb = crop.convert('RGB')
+    arr = np.asarray(rgb).copy()
+    gray = np.asarray(rgb.convert('L'))
+    m = gray < ink
+    lab, n = label_components(m)
+    if not n:
+        return rgb, 0, 0
+    total = np.bincount(lab.ravel(), minlength=n + 1)
+    inside = np.bincount(lab[max(0, band_top):max(0, band_bot)].ravel(), minlength=n + 1)
+    drop = np.where((total > 0) & (inside < keep * total))[0]
+    drop = drop[drop > 0]
+    if len(drop):
+        paper = np.median(arr[~m], axis=0) if (~m).any() else np.array([255, 255, 255])
+        arr[np.isin(lab, drop)] = paper.astype(np.uint8)
+    return Image.fromarray(arr), int(len(drop)), int(n - len(drop))
+
+
 def group_pieces(gray, top, bot, x0, x1, ink, gap, core=0.55, minw=4):
     """Split one line band into ink pieces by the column profile of its core rows (the middle `core` share of the
     band, so neighbours' ascenders/descenders do not bridge gaps): a run of >= gap blank columns ends a piece."""
@@ -421,6 +516,16 @@ def main(argv=None):
     ap.add_argument('--slope-local', action='store_true',
                     help='with --follow-slope, fit each segment to the peaks within one window of it (a curving line)')
     ap.add_argument('--slope-margin', type=int, default=0, help='extra px above and below a --follow-slope strip')
+    ap.add_argument('--deskew', type=int, nargs='?', const=200, metavar='WIN',
+                    help='track each line through WIN-px windows (default 200), fit its slope and ROTATE the region so '
+                         'the line is level before cutting (SLANT-CROP, 5 Oct 2026); exclusive with --follow-slope')
+    ap.add_argument('--mask-neighbours', action='store_true',
+                    help='cut each crop --mask-margin px taller above and below and white out every ink component that '
+                         'lies mostly (share inside < --mask-keep) outside the line band: neighbour-line ink goes, '
+                         'this line\'s tall marks stay whole (SLANT-CROP, 5 Oct 2026)')
+    ap.add_argument('--mask-margin', type=int, help='with --mask-neighbours: extra px above and below (default 0.4 x pitch)')
+    ap.add_argument('--mask-keep', type=float, default=0.5, help='with --mask-neighbours: share of a component that must '
+                                                                  'lie inside the band for it to be kept (default 0.5)')
     ap.add_argument('--only-lines', help='comma list of band numbers to write crops for (default: all)')
     ap.add_argument('--centres', help='comma list of line centres (region y px) given by eye, skipping detection: for a '
                                       'short block whose ink profile the autocorrelation misreads (GAPS4-nevers-birago, 2 Oct 2026: '
@@ -442,6 +547,8 @@ def main(argv=None):
         mp = update_views_manifest(a.out, ve)
         print(f'  wrote {len(ve)} views ({",".join(views)}) of {len(a.views_of)} crops under {a.out}/views and {mp}')
         return dict(views=ve)
+    if a.deskew and a.follow_slope:
+        ap.error('--deskew and --follow-slope are alternatives (rotate vs shear); give one')
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
     os.makedirs(a.out, exist_ok=True)
@@ -486,37 +593,54 @@ def main(argv=None):
     only = {int(x) for x in a.only_lines.split(',')} if a.only_lines else None
     pitch = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
     fits = {}
-    rgbc = rgb.convert('RGB') if a.follow_slope else None
+    slope_win = a.follow_slope or a.deskew
+    rgbc = rgb.convert('RGB') if slope_win else None
+    mm = (a.mask_margin if a.mask_margin is not None else int(0.4 * pitch)) if a.mask_neighbours else 0
     for bi, (top, bot, nl) in enumerate(bb, 1):
         if only and bi not in only:
             continue
-        if a.follow_slope:
+        if slope_win:
             c = centres[(bi - 1) * a.lines_per_crop:(bi - 1) * a.lines_per_crop + nl]
-            fa, fb, pts = track_line(gray, sum(c) / len(c), pitch, x0, x1, a.follow_slope, a.ink)
+            fa, fb, pts = track_line(gray, sum(c) / len(c), pitch, x0, x1, slope_win, a.ink)
             half = (bot - top) // 2 + a.slope_margin
-            fits[bi] = dict(a=round(fa, 2), b=round(fb, 5), peaks_kept=len(pts), half_height=half, win=a.follow_slope,
+            fits[bi] = dict(a=round(fa, 2), b=round(fb, 5), peaks_kept=len(pts), half_height=half, win=slope_win,
                             peaks=pts, local=a.slope_local)
             print(f'  band L{bi:02d}: slope fit y = {fa:.1f} + {fb:.5f}*x ({len(pts)} window peaks kept); '
                   f'drift over the region {fb * (x1 - x0):+.0f} px (pitch {pitch})')
         for si, (sx0, sx1) in enumerate(segs, 1):
             name = f'{prefix}_L{bi:02d}' + (f'_s{si}' if len(segs) > 1 else '') + '.jpg'
-            if a.follow_slope:
+            extra = {}
+            if slope_win:
                 f = dict(fits[bi])
                 if a.slope_local:
-                    la, lb = local_fit(f['peaks'], sx0, sx1, a.follow_slope, f['a'], f['b'])
+                    la, lb = local_fit(f['peaks'], sx0, sx1, slope_win, f['a'], f['b'])
                     f.update(a=round(la, 2), b=round(lb, 5))
-                crop = sheared_strip(rgbc, sx0, sx1, f['a'], f['b'], f['half_height'])
-                ytop0, ytop1 = f['a'] + f['b'] * sx0 - f['half_height'], f['a'] + f['b'] * sx1 - f['half_height']
-                box = [rx + sx0, ry + int(min(ytop0, ytop1)), rx + sx1, ry + int(max(ytop0, ytop1)) + 2 * f['half_height']]
-                method = f'tools/iiif_lines.py row ink profile, --follow-slope {a.follow_slope} (sheared strip)'
+                hh = f['half_height'] + mm
+                if a.deskew:
+                    crop, deg = deskewed_strip(rgbc, sx0, sx1, f['a'], f['b'], hh)
+                    extra['deskew_deg'] = round(deg, 3)
+                    method = f'tools/iiif_lines.py row ink profile, --deskew {a.deskew} (rotated)'
+                else:
+                    crop = sheared_strip(rgbc, sx0, sx1, f['a'], f['b'], hh)
+                    method = f'tools/iiif_lines.py row ink profile, --follow-slope {a.follow_slope} (sheared strip)'
+                ytop0, ytop1 = f['a'] + f['b'] * sx0 - hh, f['a'] + f['b'] * sx1 - hh
+                box = [rx + sx0, ry + int(min(ytop0, ytop1)), rx + sx1, ry + int(max(ytop0, ytop1)) + 2 * hh]
+                band_rows = (mm, mm + 2 * f['half_height'])
             else:
-                crop, box = rgb.crop((sx0, top, sx1, bot)), [rx + sx0, ry + top, rx + sx1, ry + bot]
+                ct, cb = max(0, top - mm), min(im.height, bot + mm)
+                crop, box = rgb.crop((sx0, ct, sx1, cb)), [rx + sx0, ry + ct, rx + sx1, ry + cb]
                 method = 'tools/iiif_lines.py row ink profile'
+                band_rows = (top - ct, bot - ct)
+            if a.mask_neighbours:
+                crop, ndrop, nkeep = mask_neighbours(crop, band_rows[0], band_rows[1], a.ink, a.mask_keep)
+                extra['mask'] = dict(margin=mm, keep=a.mask_keep, band_rows=list(band_rows), removed=ndrop, kept=nkeep)
+                method += f', --mask-neighbours (margin {mm})'
             crop.convert('RGB').save(os.path.join(a.out, name), quality=a.quality)
             e = dict(crop=name, source_url=url, source_file=os.path.basename(src), box=box, lines_in_crop=nl, band=bi,
                      segment=si, method=method, params=params, date=date)
-            if a.follow_slope:
+            if slope_win:
                 e['slope_fit'] = {k: v for k, v in f.items() if k != 'peaks'}
+            e.update(extra)
             entries.append(e)
     if a.groups:
         want = {int(x) for x in a.group_lines.split(',')} if a.group_lines else None

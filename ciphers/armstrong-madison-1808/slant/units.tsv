@@ -1,0 +1,16 @@
+stretch	frame	lines	start_after	end_before	consensus
+p1d	0030	7	38	1141	1
+p1e	0030	9,10	61 45	48 1360	
+p1f	0030	12,13	28 14 (end of the line above)	44 176 (start of the line below)	39
+p1g	0030	17	(start of line)	41 1250	
+p2a	0031L	2,3,4	18 1801	78 1364	25
+p2b	0031L	4	101 421	17 86	8
+p2c	0031L	5	1017 18	1248 1430	5
+p2e	0031L	7,8	147 1158	48 1240	
+p2g	0031L	11	230 481	1110 1267	6
+p2i	0031L	14	230 1540	1161 14	
+p3b	0031R	1,2	1254 1	58 620	3
+p3c	0031R	3	460 365	17 561	
+p3d	0031R	4,5	14 740	67 780	
+p3h	0031R	12,13	1208 141	1130 164 (start of the line below)	27
+p4a	0033P4	4	(start of line)	5	1
