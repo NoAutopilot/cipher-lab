@@ -8736,3 +8736,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 18:47 | D2-HELFAGEL (account 1 worker for LANE-D2PUSH) | claim: hellen-frederick-1752 R1953 pilot: Fagel 5177 clear Hellen pages (<=8) as phrase corpus + prereg phrase-crib placement w/ non-Hellen fr18 control; box 18:48-20:48 UTC, cap 14
 2026-10-05 18:48 | D2-C1161PRU (account 1 worker, session_01X18s1a7XGK5yT5uhrKsEDw) | claim: fr.3281 Des Pruneaux key shape test vs clair1161-avis-flandre-1688 sign inventory, for LANE-D2PUSH; box 18:48-19:33 UTC (80% stop 19:24), cap 3
 2026-10-05 18:47 | D2-B117KAPC (account 1 worker for LANE-D2PUSH) | claim: birago-fr3252-1571-72 f.117r known-answer error + power control at measured error, disk only; box 18:47-19:47 UTC, cap 4
+2026-10-05 18:47 | D2-DIN0 (account 1 worker, for LANE-D2PUSH) | claim: ciphers/fr3621-dinteville-1592 f.128 seven conflicting 0 positions, native sub-crops + one look under look/PREREG.md; box 18:48-19:48 UTC (80% stop 19:36), cap 6
