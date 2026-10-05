@@ -1,0 +1,16 @@
+crop	posA	posB	A	B	new
+p1_u02	0	0	z	o	W
+p1_u03	0	0	d		g
+p1_u03	0	0		d	g
+p1_u07	1	1	z	o	W
+p1_u07	5	5	z	o	W
+p1_u11	1	1	z	o	W
+p1_u12	2	2	z	o	W
+p1_u15	6	6	z	o	W
+p1_u18	0	0	d		g
+p1_u19	4	3	z	o	W
+p1_u20	2	2	z	o	W
+p1_u21	3	3	z	o	W
+p2_u02	0	0	z	o	W
+p2_u09	2	2	z	o	W
+p2_u15	7	7	z	o	W

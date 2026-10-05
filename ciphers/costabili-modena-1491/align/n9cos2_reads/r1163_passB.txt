@@ -1,0 +1,20 @@
+# pass B (bottom-up), as returned.
+CIPHER
+c63_L09.jpg	<bon> <ch> <pnd> | TT g | g a | T a + | TT c o d + y Z a + | T g | TT + T o q z o | q b b +
+c63_L08.jpg	<resta> | TT + W a 4 7 + q W + | <pde> <ch> <ristor> <li> <hauia> <fatto>
+c63_L07.jpg	y b | 8 9 g W b | TT c o b b | y b q o | T o | y g + c b g a | + T y q o | g . y o y
+c63_L06.jpg	<by-o> <tomio> <pm> <gro> <ch> <del> | g | g + | g 1 3 | T o | g | y b y | q o y g
+c63_L05.jpg	<g> <f> <bame> <f.> | T g | g a | o 8 g g a | <non> <resto> | TT g y q a t | TT q TT c a z a
+c63_L04.jpg	<ma> <p> <no> <ch> <anchor> | c q 4 g a q + z q | g g | q b b g | T o | TT q o
+c63_L03.jpg	T T | x | g | g | <fch> <h> <obserm> | TT 7 y z b | TT o | g a | L o | c d b 8 g b o
+c63_L02.jpg	x | <f> <rd> <ch> <g.> | TT z + | 7 H c o q z + y g o | g + | g a z b d y + z +
+c63_L01.jpg	<Dele> <coss> | T o | c | <non> <m> <posso> <significare> <alno> <al> <pur> <[?]>
+CLEAR
+k63_L09.jpg	de qualche cosa
+k63_L08.jpg	Satisfacta p la requiesta li haueua facto bench pur se li dia
+k63_L07.jpg	Veneno multo spesso noue: Da napoli anche soa mta no resta
+k63_L06.jpg	tanto piu quanto dil Re de hungaria li Baroni de sua mta no
+k63_L05.jpg	sue z p hauere sua mta de li emuli no resta senza suspitione
+k63_L04.jpg	quanto se li ha promesso ma p non essere anchora publicate le cose
+k63_L03.jpg	mta sta expectante la ritornata del Re de hungaria ... se li obseru
+k63_L02.jpg	De le cose de la Regina no m posso significare altro a vra ex. seno ch sua

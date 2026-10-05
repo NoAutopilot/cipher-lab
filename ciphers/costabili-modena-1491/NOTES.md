@@ -191,9 +191,9 @@ reference for the same letter. 2955's page 1 carries the card "1491 06 15", "Amb
 job, so R1165 = 2955 (MNL DF 295914) is a strong match by card, date and page count, not an image-to-image comparison.
 Requests: www.vestigia.hu 2 pages + 4 images, no 429/403.
 
-## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, 5 Oct 2026)
-Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 10 sign values at C (N8-COS), the rest M
-- Key rebuild from the period decipherments: R1166 P1-P2 at C for 10 signs (N8-COS group crops, both blind passes over the gate); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; only R1166 P1-P2 have been through group crops so far; VERIFIER re-run done (N9-COSV, 5 Oct 2026, AUDIT.md: 10 C confirmed, z and o only with the dash+open-loop 'Ω' shape kept apart -- it reads t and was filed as z/o); next: a group-crop re-pass with Ω as its own label and the p1_u03/p1_u18 boxes widened left, then group-level crops of the R1163 and R1165 cipher slips against their clear slips for the remaining signs and a q-shape split (owner's sign sorter or group crops of q tokens), ~$4
+## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, N9-COS2, 5 Oct 2026)
+Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M
+- Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; and a q-shape split (owner's sign sorter or group crops of q tokens), ~$2
 - R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
 - R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; P4 groups not yet transcribed; next: group crops + 2 blind passes of P4 (~$2.5), then decode only if >= 80% of its signs have a C value (PREREG-N8-COS)
 - Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
@@ -203,10 +203,10 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running 
 - [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
 - [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 rebuild (N8-COS C values: 9 agree, z differs as a label collision)
 - [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
-- [ ] key-rebuild: R1166 P1-P2 at C for 10 signs (N8-COS group crops; line-crop passes retired for C after RUN3-COSK/COSK2); remaining signs, R1163/R1165 slips and the R1167 copy untried with group crops
+- [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; R1167 copy untried
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: group crops of R1166 P4 with Ω as its own label (~$2.5) and of the R1163/R1165 slips (~$4)
+Verdict: keep going: 4 internal gaps; cheapest next: group crops of R1166 P4 with W as its own label (~$2.5), then short-span boxes of the R1163/R1165 slips (~$3)
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
@@ -227,3 +227,54 @@ below one page of line crops) + 1 reconciliation by this worker = 3 units at ~US
 only after, if the cap allows.
     gaps_check (N8-COS, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
     gaps_check (N9-COSV, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
+    gaps_check (N9-COS2, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
+
+## Third shape W + R1163/R1165 slips (N9-COS2, 5 Oct 2026, 05:38-05:5x UTC by date -u)
+
+Account 2 worker for LANE-NEAR9. PREREG first: `align/PREREG-N9-COS2.md` (d2fd89bd, pushed before any fetch, crop or score). Statistic, filter,
+null, gate and C rule unchanged from PREREG-N8-COS (no knob change). One DECODE browser login (05:4x UTC, `tools/decode_browser_login.js 1163
+<scratch> --fetch <5 filesrv URLs> --max-files 5 --delay 1800`): R1166 P1, R1163 P1-P2, R1165 P4-P5, all sha1 = `images_manifest.tsv`, scratch
+only, nothing committed. Label list now on disk: `align/labels.tsv` (decode-1168 labels + `W` = dash running into an open loop, N9-COSV's "Ω").
+
+**Step 1 (re-score of the committed N8-COS passes, no new read).** `align/n9cos2_relabel.py` (mechanical rule fixed in the prereg: W wherever
+pass A reads z and pass B reads o at the same difflib-aligned position; 12 tokens in 11 crops, log `align/n9cos2_relabel_log.tsv`) + the
+p1_u03/p1_u18 crops re-cut 60 px wider left (`align/n9cos2_boxes_fix.tsv`): on both wider crops this worker sees the looped-descender g as the
+first sign (the box error N9-COSV found), so that token is g in both passes (3 edits). Then `align/run_align.py` on `align/n9cos2_pass{A,B}_W.tsv`:
+
+| pass | pairs | real | shuffle mean | shuffle p95 | gate | N8-COS (same pass, before) |
+|---|---|---|---|---|---|---|
+| A | 17 | 0.614 | 0.213 | 0.260 | PASS | 0.575 vs p95 0.244 |
+| B | 18 | 0.521 | 0.191 | 0.233 | PASS | 0.459 vs p95 0.219 |
+
+Both reals rise and the shuffle p95s barely move (a relabel that only removed a collision should do exactly that). Per-sign C rule: the ten
+N8-COS C values all still meet it (counts in `align/key_n9cos2.tsv`); **W = t** meets it (pass A t 3/5 in p1_u02, p2_u02, p2_u09; pass B t 3/4
+in p1_u02, p1_u20, p2_u09; the other W occurrences align to d in p2_u15 "padre", v, n) -> **C, 11 signs at C**. W agrees with decode-1168's `~` = t
+(C) there. Known under-count: a W that both passes wrote as z or both as o is still under that label (the rule cannot see it). q stays M (c 7/14,
+8/20 against u 5/14, 6/20: still two shapes under one label), TT M (A n, B f).
+
+**Step 2 (R1163 P2 cipher slip vs P1 clear slip; R1165 P5 postscript slip lines 5-10 vs P4 clear slip).** Crops: `python3 tools/iiif_lines.py
+--image IMG_R1163_I5840_P2.png --region 540,1530,1720,960 --out c63 --prefix c63 --ink 90 --prominence 30 --groups 30 --group-ink 70 --debug`
+(9 lines; the `--groups` blank-run histograms were not bimodal, the tool's own warning, so the readers got the line crops and marked group
+boundaries, the prereg's fallback); clear slip `--image IMG_R1163_I5839_P1.png --region 520,1540,1580,920 --prefix k63` (L02-L09; L01 is the slip's
+top edge); R1165 P5 region 1400,920,2080,1000 rotated -2.4 degrees to level its sloping lines (scratch `p5_level.png`), then `--image p5_level.png
+--prefix c65 --ink 90 --prominence 20` (L05-L10); P4 `--region 1140,1120,2360,600 --prefix k65` (L01-L05). 4 blind Sonnet calls (A top-down,
+B bottom-up per slip), outputs as returned in `align/n9cos2_reads/` (pass B R1165 and pass A R1163 returned clear-crop labels out of file
+order; R1165 B relabelled to page order, labels only, stated in the file; R1163 A lacks the clear slip's first line, left as returned). Pairs by
+`align/n9cos2_slip_pairs.py` (anchors = clear words in both slips, signs vs letters between anchors) -> `align/n9cos2_pairs_pass{A,B}.tsv`, then
+the unchanged `align/run_align.py`, pooled over both slips:
+
+| pass | anchors (R1163 / R1165) | span pairs | pairs past the 0.8-1.25 filter | real | shuffle p95 | verdict |
+|---|---|---|---|---|---|---|
+| A | 8 / 8 | 9 | 2 | 0.095 | 0.095 | non-test (< 4 pairs, prereg) |
+| B | 13 / 10 | 10 | 4 | 0.250 | 0.250 | FAIL (ties p95; below 0.430 floor) |
+
+No new value at C from the slips. Why: the clear words left in the cipher slips are few and read loosely (abbreviations, "resta"/"resto"), so
+most spans between anchors run over several lines with sign and letter counts far apart; the ratio filter drops them. This is the instrument's
+limit at anchor-span granularity on these two slips, not a test of the key. Reconciliation note (this worker, glosses in view, licenses M at most,
+no key change): pass B's surviving span "quanto se li ha promesso" against `TT 7 y z b | TT o | g a | L o | c d b 8 g b o` reads under the
+committed C values as ? ? n o o / s? e / l i / h e / p r o m l o e, i.e. the groups follow the clear words one by one (TT o = "se", g a = "li",
+c d b 8 ... = "promesso"), which is what a short-span re-pass would need to pair them.
+Units: 4 Sonnet reader calls + this worker's reconciliation (the planned 6 less the 2 not needed once both slips failed the filter); 0 calls in
+step 1. Requests: de-crypt.org 1 login + 5 image fetches (1.8 s apart). Cost: see the lane ledger.
+Suggested next (not run): short-span boxes on the slips cut at each clear word and at line ends (pairs of one to three groups), then the same
+two passes; and P4 group crops with W as its own label.

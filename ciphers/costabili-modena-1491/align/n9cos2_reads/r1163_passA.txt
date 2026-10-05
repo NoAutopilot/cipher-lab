@@ -1,0 +1,21 @@
+# pass A (top-down), as returned. Its clear crop k63_L02 was read as the "m^ta sta expectante" line and k63_L09 as [?]: the slip's first
+# clear line ("De le cose de la Regina ...", in pass B) is missing from this pass; left as returned (no line added by this worker).
+CIPHER
+c63_L01.jpg	<De> <le> <cose> | T o | - c* <non> <m> <posso> <significar> <altro> <al> <pnr> [?]
+c63_L02.jpg	x | f* n d | b* b* | g | . | TT Z + | o H c o q Z + y 8* W | g + | g a Z b d y + Z +
+c63_L03.jpg	T T | x | g TT | f* h <et> <observ> | TT* o y Z b | TT W | g a | L W | c d b 8 g b o
+c63_L04.jpg	<mn> <p> <no> <cen> <anchor> | c q 4 g a q + Z q | g q | q b b q | T T | TT q o
+c63_L05.jpg	g f <bone> g . | T q | g a | W 8 g g a <non> <resta> | TT q y q a t | TT q TT c a Z a
+c63_L06.jpg	b y W | <tomio> <pm> <gro> <ch> <dal> | g | g T + | g 1 3 | T o | f | y b y | q W y q
+c63_L07.jpg	y b | 8 q 7 g Z b | TT c W o b b | y b q W | T o | y q + c b g a | + y q W o | g . | y o y
+c63_L08.jpg	<resta> | TT + Z a H 7 + q Z + | <pde> <chr> <resto> <li> <hauia> <facto>
+c63_L09.jpg	<bon> <ch> <pnd> | TT q | g a | T a + | TT c W o d + y Z a + | T q | TT + o q Z o | q b b +
+CLEAR
+k63_L02.jpg	m^ta sta expectante la ritornata del Re de hungaria (?) ch se li observ
+k63_L03.jpg	quanto se li ha promesso, ma p non essere anchora publicate le cose
+k63_L04.jpg	sue z p hauere sua m^ta de li emuli nõ resta senza suspitione
+k63_L05.jpg	tanto piu quanto del Re de hungaria, li Baromi, de sua m^ta no
+k63_L06.jpg	Verieno multo spesso noue: Da napoli anch sua m^ta nõ resta
+k63_L07.jpg	Satisfactia p la recmiesta li hauena facto: benech pur se li dia
+k63_L08.jpg	de qualche cosa [?] [?] speranza
+k63_L09.jpg	[?]

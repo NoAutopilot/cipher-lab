@@ -1,0 +1,24 @@
+label	shape (as given to readers; N9-COS2, 5 Oct 2026)	source
++	cross, plus-sign	decode-1168 list
+T	tau: a horizontal bar on one stem	decode-1168 list
+TT	pi: a horizontal bar on two stems	decode-1168 list
+a	like a Latin a	decode-1168 list
+b	like a Latin b (tall stem, closed bowl at the foot)	decode-1168 list
+c	like a Latin c	decode-1168 list
+d	like a Latin d (bowl with a stem rising above it)	decode-1168 list
+g	bowl with a long descender ending in a loop, like a g or a figure 8 with a tail	decode-1168 list
+o	small closed round loop, often entered by a horizontal lead-in dash (write o; the dash is not a sign)	decode-1168 list
+q	bowl with a straight descender, like a Latin q	decode-1168 list
+y	like a Latin y	decode-1168 list
+z	zigzag z, like a 2 or a z	decode-1168 list
+Z	horizontal dash running into a zigzag z (dash+z)	RUN3-COSK2 convention
+W	horizontal dash running into an OPEN loop (open at the bottom or side, like a small omega or an n bent round), not a closed o and not a zigzag z	N9-COSV "Ω", added N9-COS2
+L	like a capital L	decode-1168 list
+u	like a Latin u	decode-1168 list
+v	like a Latin v	decode-1168 list
+x	like a Latin x (often between dots, .x.)	decode-1168 list
+4	like the digit 4	decode-1168 list
+7	like the digit 7	decode-1168 list
+8	like the digit 8	decode-1168 list
+9	like the digit 9	decode-1168 list
+?	a sign that fits none of the above (describe it in a note)	reader convention

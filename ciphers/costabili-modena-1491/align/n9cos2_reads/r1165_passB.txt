@@ -1,0 +1,15 @@
+# pass B (bottom-up). Clear-crop labels as returned were not in file order (contents of L01-L04 returned under L02-L05 and L05 under L01);
+# relabelled here to page order by this worker (labels only, no word changed): returned label -> file in brackets.  Original labels: L05<-L04 text, L04<-L03, L03<-L02, L02<-L01, L01<-L05.
+CIPHER
+c65_L10.jpg	<una> <de> <quelle> <da> | TT q d a b q | T + | c b a | : <et> <tutti> <dui> <mi> <siomi> <ge>
+c65_L09.jpg	<ay> | y b g o | TT q b | c q d | q o d g* + | T o | c d o TT o y T a | : <ou>*
+c65_L08.jpg	y + y Z* a | q L* o | g b | q c a TT q b c b | q + d + T a y b | g + | TT c b TT + b q
+c65_L07.jpg	T + g ? | g* a + y q z + | T q | q + y o a g o d z | : <de> <quelle> <da> | TT q d a g a +
+c65_L06.jpg	<una> <parte> <de> <quelle> <al> <signor> . <25> . | c + b o W b | <a> <la> <signora> | 8 +
+c65_L05.jpg	<amor> <suo> <sr> <sforza> <ibane>* | q y + | o g* + z d + | g a W q d + | 7 | <dudm>*
+CLEAR
+k65_L04.jpg	de quelle li scripse dapoi et nun dui [?] mi qual mando p uno
+k65_L03.jpg	vararduno la sposasse i nome suo per verba de presenti en uno
+k65_L02.jpg	Madama biancha de Cancelluro de quelle li scrimia nanti ch lo epo
+k65_L01.jpg	una altra lra p dicta ma pur de quelle dol pro. 25. passato ala pro
+k65_L05.jpg	suo Cavallaro .
