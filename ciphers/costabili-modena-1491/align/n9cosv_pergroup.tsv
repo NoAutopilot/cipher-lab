@@ -1,0 +1,104 @@
+sign	value	crop	gloss_A	signs_A	chunks_A	gloss_B	signs_B	chunks_B	A_agree	B_agree	both
++	a	p1_u02	tradueta	z d + T q d g +	a a	traduxla	o d + T q q g +	a a	2	2	Y
++	a	p1_u11	era primo	+ z b .f. q 9 8 c o u a		ob no era primo	+ o b .f. q q 8 c o v a	b	0	0	
++	a	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	i	0	0	
++	a	p1_u21	prevento	c + d z a z o d	r	puertro cs fu fua	c + d o a o o		0	0	
++	a	p2_u01	Con... de sua mano	b d + z g z		b de fua m	q a y z + o .f.	u	0	0	
++	a	p2_u02	tradutta	z d + T q q z	a	trasmeda	o d + T q q		1	0	
++	a	p2_u04	da L	T + g	a	dal	T + g	a	1	1	Y
++	a	p2_u07	Compagnie	q z y c d + o y a +	a e	Compagnis	q z y c o + o y a +	a s	1	1	Y
++	a	p2_u09	patrir	c + z d a +	a r	patrir	c + o d a +	a r	1	1	Y
++	a	p2_u13	sua	TT q +	a	fua	TT q +	a	1	1	Y
++	a	p2_u15	suo padre	z d TT q b c + z d o	a	uo padro	z d TT q b c + o d o		1	0	
+T	d	p1_u02	tradueta	z d + T q d g +	d	traduxla	o d + T q q g +	d	1	1	Y
+T	d	p1_u16	de lo Case	o T o g o q b b q TT q		de la Cage fut	o T o g o q b b q TT q	d	0	1	
+T	d	p2_u02	tradutta	z d + T q q z	d	trasmeda	o d + T q q		1	0	
+T	d	p2_u04	da L	T + g	d	dal	T + g	d	1	1	Y
+a	i	p1_u03	Le nocie	d o y z q a o	i	Le nocie	d o y z q a o	i	1	1	Y
+a	i	p1_u05	conmeria	q b y q o y o d a	i	comunerria	q b y q o y o d a	i	1	1	Y
+a	i	p1_u11	era primo	+ z b .f. q 9 8 c o u a		ob no era primo	+ o b .f. q q 8 c o v a	o	0	0	
+a	i	p1_u13	conclusione	q b y q q b y q d g q TT a	e	conclusione	q b y q q b y q d g q TT a	e	0	0	
+a	i	p1_u18	La nocu	d o y b q a	u	La nocu	g o y b q a	u	0	0	
+a	i	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	i n i	0	2	
+a	i	p1_u21	prevento	c + d z a z o d	e	puertro cs fu fua	c + d o a o o		0	0	
+a	i	p2_u01	Con... de sua mano	b d + z g z		b de fua m	q a y z + o .f.	d	0	0	
+a	i	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	i i	contigho Lord.	g b y TT a g u a z g z d z	t h	2	0	
+a	i	p2_u07	Compagnie	q z y c d + o y a +	i	Compagnis	q z y c o + o y a +	i	1	1	Y
+a	i	p2_u09	patrir	c + z d a +	i	patrir	c + o d a +	i	1	1	Y
+a	i	p2_u16	fino nepon	TT q b y L o c b a o		fino nepon	TT q b y L o c b a o	o	0	0	
+b	o	p1_u04	honorv	L z y b d o	o	honore	L z y b d o	o	1	1	Y
+b	o	p1_u05	conmeria	q b y q o y o d a	o	comunerria	q b y q o y o d a	o	1	1	Y
+b	o	p1_u11	era primo	+ z b .f. q 9 8 c o u a		ob no era primo	+ o b .f. q q 8 c o v a	o	0	1	
+b	o	p1_u13	conclusione	q b y q q b y q d g q TT a	o 	conclusione	q b y q q b y q d g q TT a	o 	1	1	Y
+b	o	p1_u16	de lo Case	o T o g o q b b q TT q		de la Cage fut	o T o g o q b b q TT q	a g	0	0	
+b	o	p1_u17	non	y b y	o	non	y b y	o	1	1	Y
+b	o	p1_u18	La nocu	d o y b q a	o	La nocu	g o y b q a	o	1	1	Y
+b	o	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	o s	0	1	
+b	o	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	o	contigho Lord.	g b y TT a g u a z g z d z	o	1	1	Y
+b	o	p2_u15	suo padre	z d TT q b c + z d o	o	uo padro	z d TT q b c + o d o		1	0	
+b	o	p2_u16	fino nepon	TT q b y L o c b a o	o o	fino nepon	TT q b y L o c b a o	i p	2	0	
+c	p	p1_u11	era primo	+ z b .f. q 9 8 c o u a		ob no era primo	+ o b .f. q q 8 c o v a	r	0	0	
+c	p	p1_u21	prevento	c + d z a z o d	p	puertro cs fu fua	c + d o a o o		1	0	
+c	p	p2_u07	Compagnie	q z y c d + o y a +	p	Compagnis	q z y c o + o y a +	p	1	1	Y
+c	p	p2_u09	patrir	c + z d a +	p	patrir	c + o d a +	p	1	1	Y
+c	p	p2_u10	per sua	c o d .f. 8	p	por fua m	c o d .f.		1	0	
+c	p	p2_u15	suo padre	z d TT q b c + z d o	p	uo padro	z d TT q b c + o d o		1	0	
+c	p	p2_u16	fino nepon	TT q b y L o c b a o	p	fino nepon	TT q b y L o c b a o	e	1	0	
+d	r	p1_u02	tradueta	z d + T q d g +	r e	traduxla	o d + T q q g +	r	1	1	Y
+d	r	p1_u03	Le nocie	d o y z q a o	l	Le nocie	d o y z q a o	l	0	0	
+d	r	p1_u04	honorv	L z y b d o	r	honore	L z y b d o	r	1	1	Y
+d	r	p1_u05	conmeria	q b y q o y o d a	r	comunerria	q b y q o y o d a	r	1	1	Y
+d	r	p1_u13	conclusione	q b y q q b y q d g q TT a	s	conclusione	q b y q q b y q d g q TT a	s	0	0	
+d	r	p1_u18	La nocu	d o y b q a	l	La nocu	g o y b q a		0	0	
+d	r	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	r r	0	2	
+d	r	p1_u21	prevento	c + d z a z o d	e o	puertro cs fu fua	c + d o a o o		0	0	
+d	r	p2_u02	tradutta	z d + T q q z	r	trasmeda	o d + T q q		1	0	
+d	r	p2_u03	S. Re	q L o d x		55L s.Ri	q L o d .x.	r	0	1	
+d	r	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	r	contigho Lord.	g b y TT a g u a z g z d z	r	1	1	Y
+d	r	p2_u07	Compagnie	q z y c d + o y a +		Compagnis	q z y c o + o y a +		0	0	
+d	r	p2_u09	patrir	c + z d a +	r	patrir	c + o d a +	r	1	1	Y
+d	r	p2_u10	per sua	c o d .f. 8	r	por fua m	c o d .f.		1	0	
+d	r	p2_u15	suo padre	z d TT q b c + z d o	 r	uo padro	z d TT q b c + o d o		1	0	
+g	l	p1_u02	tradueta	z d + T q d g +	t	traduxla	o d + T q q g +	l	0	1	
+g	l	p1_u13	conclusione	q b y q q b y q d g q TT a	i	conclusione	q b y q q b y q d g q TT a	i	0	0	
+g	l	p1_u16	de lo Case	o T o g o q b b q TT q		de la Cage fut	o T o g o q b b q TT q	l	0	1	
+g	l	p1_u18	La nocu	d o y b q a		La nocu	g o y b q a	l	0	1	
+g	l	p2_u04	da L	T + g	l	dal	T + g	l	1	1	Y
+g	l	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	g l	contigho Lord.	g b y TT a g u a z g z d z	c i l	1	1	Y
+o	e	p1_u02	tradueta	z d + T q d g +		traduxla	o d + T q q g +	t	0	0	
+o	e	p1_u03	Le nocie	d o y z q a o	e e	Le nocie	d o y z q a o	e e	2	2	Y
+o	e	p1_u04	honorv	L z y b d o	v	honore	L z y b d o	e	0	1	
+o	e	p1_u05	conmeria	q b y q o y o d a	 e	comunerria	q b y q o y o d a	n r	1	0	
+o	e	p1_u11	era primo	+ z b .f. q 9 8 c o u a		ob no era primo	+ o b .f. q q 8 c o v a	n i	0	0	
+o	e	p1_u16	de lo Case	o T o g o q b b q TT q		de la Cage fut	o T o g o q b b q TT q	 e a	0	1	
+o	e	p1_u18	La nocu	d o y b q a	a	La nocu	g o y b q a	a	0	0	
+o	e	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	t c s	0	0	
+o	e	p1_u21	prevento	c + d z a z o d	t	puertro cs fu fua	c + d o a o o		0	0	
+o	e	p2_u01	Con... de sua mano	b d + z g z		b de fua m	q a y z + o .f.	a	0	0	
+o	e	p2_u03	S. Re	q L o d x		55L s.Ri	q L o d .x.	s	0	0	
+o	e	p2_u07	Compagnie	q z y c d + o y a +	g	Compagnis	q z y c o + o y a +	 g	0	0	
+o	e	p2_u09	patrir	c + z d a +		patrir	c + o d a +	t	0	0	
+o	e	p2_u10	per sua	c o d .f. 8	e	por fua m	c o d .f.		1	0	
+o	e	p2_u15	suo padre	z d TT q b c + z d o	e	uo padro	z d TT q b c + o d o		1	0	
+o	e	p2_u16	fino nepon	TT q b y L o c b a o	e n	fino nepon	TT q b y L o c b a o	n n	1	0	
+y	n	p1_u03	Le nocie	d o y z q a o	n	Le nocie	d o y z q a o	n	1	1	Y
+y	n	p1_u04	honorv	L z y b d o	n	honore	L z y b d o	n	1	1	Y
+y	n	p1_u05	conmeria	q b y q o y o d a	n m	comunerria	q b y q o y o d a	m e	1	0	
+y	n	p1_u13	conclusione	q b y q q b y q d g q TT a	n l	conclusione	q b y q q b y q d g q TT a	n l	1	1	Y
+y	n	p1_u17	non	y b y	n n	non	y b y	n n	2	2	Y
+y	n	p1_u18	La nocu	d o y b q a	n	La nocu	g o y b q a	n	1	1	Y
+y	n	p1_u20	ritrouar in necessitan	d a z d b q + a y y o q o b a		ritrou in necessitan	d a o d b q + a y y o q o b a	n e	0	1	
+y	n	p2_u01	Con... de sua mano	b d + z g z		b de fua m	q a y z + o .f.	e	0	0	
+y	n	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	n	contigho Lord.	g b y TT a g u a z g z d z	n	1	1	Y
+y	n	p2_u07	Compagnie	q z y c d + o y a +	m n	Compagnis	q z y c o + o y a +	m n	1	1	Y
+y	n	p2_u16	fino nepon	TT q b y L o c b a o	n	fino nepon	TT q b y L o c b a o	n	1	1	Y
+z	o	p1_u02	tradueta	z d + T q d g +	t	traduxla	o d + T q q g +		0	0	
+z	o	p1_u03	Le nocie	d o y z q a o	o	Le nocie	d o y z q a o	o	1	1	Y
+z	o	p1_u04	honorv	L z y b d o	o	honore	L z y b d o	o	1	1	Y
+z	o	p1_u21	prevento	c + d z a z o d	v n	puertro cs fu fua	c + d o a o o		0	0	
+z	o	p2_u01	Con... de sua mano	b d + z g z		b de fua m	q a y z + o .f.	f	0	0	
+z	o	p2_u02	tradutta	z d + T q q z	t t	trasmeda	o d + T q q		0	0	
+z	o	p2_u05	Contiglio Loro	q b y TT a g u a z g z d z	o o o	contigho Lord.	g b y TT a g u a z g z d z	o o d	3	2	Y
+z	o	p2_u07	Compagnie	q z y c d + o y a +	o	Compagnis	q z y c o + o y a +	o	1	1	Y
+z	o	p2_u09	patrir	c + z d a +	t	patrir	c + o d a +		0	0	
+z	o	p2_u15	suo padre	z d TT q b c + z d o	 d	uo padro	z d TT q b c + o d o		0	0	

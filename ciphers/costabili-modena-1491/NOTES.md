@@ -191,9 +191,9 @@ reference for the same letter. 2955's page 1 carries the card "1491 06 15", "Amb
 job, so R1165 = 2955 (MNL DF 295914) is a strong match by card, date and page count, not an image-to-image comparison.
 Requests: www.vestigia.hu 2 pages + 4 images, no 429/403.
 
-## Remaining gaps (refreshed N8-COS, 4 Oct 2026)
+## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, 5 Oct 2026)
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 10 sign values at C (N8-COS), the rest M
-- Key rebuild from the period decipherments: R1166 P1-P2 at C for 10 signs (N8-COS group crops, both blind passes over the gate); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; only R1166 P1-P2 have been through group crops so far; next: VERIFIER re-run of the committed N8-COS pass files, then group-level crops of the R1163 and R1165 cipher slips against their clear slips for the remaining signs and a q-shape split (owner's sign sorter or group crops of q tokens), ~$4
+- Key rebuild from the period decipherments: R1166 P1-P2 at C for 10 signs (N8-COS group crops, both blind passes over the gate); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; only R1166 P1-P2 have been through group crops so far; VERIFIER re-run done (N9-COSV, 5 Oct 2026, AUDIT.md: 10 C confirmed, z and o only with the dash+open-loop 'Ω' shape kept apart -- it reads t and was filed as z/o); next: a group-crop re-pass with Ω as its own label and the p1_u03/p1_u18 boxes widened left, then group-level crops of the R1163 and R1165 cipher slips against their clear slips for the remaining signs and a q-shape split (owner's sign sorter or group crops of q tokens), ~$4
 - R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
 - R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; P4 groups not yet transcribed; next: group crops + 2 blind passes of P4 (~$2.5), then decode only if >= 80% of its signs have a C value (PREREG-N8-COS)
 - Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
@@ -206,7 +206,7 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running 
 - [ ] key-rebuild: R1166 P1-P2 at C for 10 signs (N8-COS group crops; line-crop passes retired for C after RUN3-COSK/COSK2); remaining signs, R1163/R1165 slips and the R1167 copy untried with group crops
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: VERIFIER re-run of N8-COS (~$1), then group crops of R1166 P4 (~$2.5) and of the R1163/R1165 slips (~$4)
+Verdict: keep going: 4 internal gaps; cheapest next: group crops of R1166 P4 with Ω as its own label (~$2.5) and of the R1163/R1165 slips (~$4)
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
@@ -226,3 +226,4 @@ Units stated before the first call: 2 blind Sonnet reader calls (pass A page ord
 below one page of line crops) + 1 reconciliation by this worker = 3 units at ~USD 1.2 each (~3.6 of the 6 cap); the Vestigia 2955/2977 image map (~1)
 only after, if the cap allows.
     gaps_check (N8-COS, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
+    gaps_check (N9-COSV, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
