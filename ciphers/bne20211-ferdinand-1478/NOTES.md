@@ -273,12 +273,12 @@ are clear ("...De Trugillo a quatro de Dezienbre de lxxviij"), signed "Yo el Rey
 That makes 126 a key source in its own right (grade C, period). Next, after FER1478-READ on item 123: a 126 job aligns
 the interlinear decipherment to the cipher, builds the period key, merges with 123's key under rule 3's per-unit gate.
 
-## Sign pool on hand: 8 of Tomokiyo's 9 source letters (5 Oct 2026 03:5x UTC, account-3 orchestrator)
+## Sign pool on hand: all 9 of Tomokiyo's source letters (5 Oct 2026 03:5x UTC, account-3 orchestrator)
 
 The owner downloaded six more BNE MSS/20211 items from bdh.bne.es; all in the private repository
 (bne20211-ferdinand-1478/images-<item>/): 94 (Madrigal 30 Apr 1476), 105 (Medina del Campo 6 Jul 1477), 114 (Madrid 9 Apr
 1478, Tomokiyo's main source), 115 and 116 (Madrid 18 Apr 1478; folio numbers read from the leaf), 128 (Trujillo 22 Jan
-1479). Only 109 (1477) is missing. Thumbnail look only, not a reading: each mixes clear text with a cipher block of
+1479). 109 (dated "Dic. 22" 1477 on the leaf) followed the same night, so all nine are on hand. Thumbnail look only, not a reading: each mixes clear text with a cipher block of
 numerals + letter signs; 115 shows faint interlinear writing above its cipher lines like 126, and 128 has marginal notes
 beside its cipher lines (decipherment or not: unchecked). Rule 3 / selection: this is a one-sender, one-key pool (letters to
 John II, 1476-79) with a published key and at least two period decipherments (123 below the cipher, 126 interlinear).
