@@ -1896,5 +1896,5 @@ Full-text search, all items (full view + search-only), babel.hathitrust.org/cgi/
 - Gramont Villandry 1530 (all words, not a phrase): 3,171 results, too broad to read; top hits are F. Decrue de Stoutz, *Anne de
   Montmorency ... à la cour, aux armées et au conseil du roi François Ier* (1885, full view, several copies). Not opened.
 Caveat: the phrases are in our reading's spelling; a printed edition that modernised or re-spelled them would not match an exact
-phrase. Search result only, not a novelty verdict (rule 10). Next if wanted: full-text check of Decrue 1885 (likely also on
-archive.org) for 20 May 1530 / Villandry / "chiffre" (~$1, worker).
+phrase. Search result only, not a novelty verdict (rule 10). Decrue was already searched by the print-check pass (section above: no
+citation of these items), so the top hit adds nothing new.
