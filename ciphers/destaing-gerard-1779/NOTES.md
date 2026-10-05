@@ -352,3 +352,10 @@ that depends on nobody:
 - S: build a period French dictionary headword list in tools/data (named by DES-PART U4), so the one-part band test in
   `tools/freq.py --onepart-dict` can run at headword resolution rather than fr18 word types. Script work, no person needed.
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L42 answer (PR 67) bounced by tools/lq_answer_check.py (missing holding-catalogue rung: catalogue_ladders.tsv has no Archives nationales/FranceArchives row); row back to queued, answer not landed.
+
+## Clements Library reply, 5 Oct 2026 16:19 UTC (logged 5 Oct 2026 17:02 UTC)
+
+Reference staff answered the 5 Oct enquiry (ticket in the project mailbox): images of Clinton Papers vol. 64:14 and 64:15 are
+**free** (up to 100 images per patron per year); they will submit the duplication request themselves once the owner registers in
+Aeon (aeon.clements.umich.edu). Next: owner registers, then sends the reply draft placed in Gmail ("registered"). Images expected
+after that; the cipher letter (64:14) is the target, 64:15 the language control.
