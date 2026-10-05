@@ -1,13 +1,16 @@
 # c262 margin gloss, reconciled by FT-D (Opus) from gloss_passA.tsv and its own read of the same crops + the page overlay, 3 Oct 2026.
 # Words the worker could not settle are left as pass A had them. Grade of every gloss word: H-source (period decipherment), reading M.
-L01	bruslent s'aller promptement ou
-L02	par mer et par terre, bien ne
-L03	bien d'ung empesche tant
-L04	le bestial de gens de guerre de
-L05	bonne nation / pendant le temps
-L06	que la faim se trouva du coste
+# DEF1-NOXG (5 Oct 2026): L01-L06 and L08 corrected from this worker's own read of native crops images/c262gx_L01..L08.jpg
+# (tools/iiif_lines.py --region 470,2130,1000,800 on the native canvas 262); L07, L09-L13 unchanged. 'vre' expanded to
+# 'vostre' (L05), 'vo9' to 'vous' (L02). [res] in L01 sits under an ink blot: print-supported only (Charriere III p.258), grade C at most.
+L01	veullent s'aller promener en fland[res]
+L02	par mer et par terre, vous ne
+L03	vouldrez empescher lantienne
+L04	liberte des gens de guerre de
+L05	vostre nation / pendant le temps
+L06	que la farce se jouera du coste
 L07	de dela il ne faudra pas
-L08	sendormir de ca. Car la partie
+L08	sendormir de deca. Car la partie
 L09	est forte / Il est vray que jay trouve
 L10	ces gens icy si comblez de biens
 L11	et de mal / Cest adire de richesses

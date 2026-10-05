@@ -97,3 +97,6 @@ D0 with no N3 claim, so they fall under "not counted D0/D1" and raise no flag:
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
 No SECOND-OPINIONS-QUEUE.tsv row: both items are N0 (a row is filed only at N3 or better).
+
+## Revision after AUDIT
+- DEF1-NOXG (5 Oct 2026): gloss.tsv L01-L06, L08 corrected from native crops of the c262 gloss (three of VER1-NOX's four print differences were gloss misreads; at L08 the leaf differs from Charrière p.258); RUN6-NOXREAD re-run PASS R 0.3506 (was 0.309), test-0 gates now pass -- NOTES.md "DEF1-NOXG".

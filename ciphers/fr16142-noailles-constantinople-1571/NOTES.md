@@ -1059,3 +1059,105 @@ transcribed before" (rule 10); (2) the c262 passage (gloss.tsv L01-L13) is print
 letter "Constantinople, 25 avril 1572" (from p.252), and differs from gloss.tsv at L01 "bruslent" (print "veullent"), L04 "le bestial"
 ("l'antienne liberté"), L06 "la faim se trouva" ("la farce se jouera"), L08 "sendormir de ca" ("s'endorme de deçà"). One-line
 suggestion (not done): re-read the c262 gloss against Charrière III p.258 before any further c262 gate.
+
+## DEF1-NOXG: c262 gloss re-read against the leaf and Charrière III p.258 (5 Oct 2026, 20:46-21:0x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md` DEF1-NOXG (LANE DEFAULT-account-1-20261005-2039). Follows VER1-NOX's
+correction note above. Requests: archive.org 1 (`ngociationsdel03charuoft_djvu.txt`), gallica 0 (native canvas 262 already on disk). Subagents 0.
+
+**Print.** Charrière, *Négociations de la France dans le Levant* III, IA `ngociationsdel03charuoft`, printed p.258 (djvu text lines ~19310-19330;
+letter of the évêque d'Acqs, Constantinople 25 April 1572, from p.252): "...voz huguenotz ou aultres veullent s'aller promener en Flandres par mer et
+par terre, vous ne vouldrez empescher l'antienne liberté des gens de guerre de vostre nation. Pendant le temps que la farce se jouera du costé de
+delà, il ne faudra pas qu'il s'endorme de deçà, car la partie est forte. Il est vray que j'ay trouvé ces gens-icy si comblés de bien et de mal,
+c'est-à-dire de richesses et de volupté en toutes sortes, qu'il semble qu'on leur feroit plaisir..." (OCR normalised by eye).
+
+**Crop step** (mandatory, run before any read; source = native canvas 262 on disk, 4981x7160):
+```
+python3 tools/iiif_lines.py --image ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg --region 470,2130,1000,800 --centres 56,150,246,340,436,530,630,726 --follow-slope 300 --slope-margin 15 --max-width 2400 --prefix c262gx --out ciphers/fr16142-noailles-constantinople-1571/images --debug
+```
+8 crops `images/c262gx_L01..L08.jpg` (1000 x 124-126 px, one gloss line each, overlay `c262gx_lines_debug.jpg` checked by eye). The old
+`c262gl_*` crops (FT-D) are the same lines at 1060 px; the new ones are cut on the line slope.
+
+**Read.** One read of each crop by this worker (no subagent). Not blind to the print: per the brief's order the Charrière text and VER1-NOX's
+four differences were read first; blind to every decode (no decode was printed before gloss.tsv was rewritten). Normalised (rule 3, PX-BRODEC):
+lower case, accents and apostrophes dropped, 'vre' -> vostre, 'vo9' -> vous.
+
+| gloss line | leaf reads (DEF1-NOXG) | Charrière III p.258 | gloss.tsv had (FT-D) | decision |
+|---|---|---|---|---|
+| L01 w1 (VER1-NOX spot 1) | veullent | veullent | bruslent | corrected from leaf |
+| L01 w3-5 | promener en fland[res] (end under an ink blot) | promener en flandres | promptement ou | corrected from leaf; "res" print-only, grade C at most, bracketed |
+| L02 w6 | vous (v + o + -us mark) | vous | bien | corrected from leaf |
+| L03 | vouldrez empescher lantienne | vouldrez empescher lantienne | bien d'ung empesche tant | corrected from leaf |
+| L04 w1-2 (spot 2) | liberte des | (lantienne) liberte des | le bestial de | corrected from leaf ("l'antienne" ends L03, "liberté" opens L04) |
+| L05 w1 | vre (= vostre) | vostre | bonne | corrected from leaf, abbreviation expanded |
+| L06 w3-6 (spot 3) | farce se jouera | farce se jouera | faim se trouva | corrected from leaf |
+| L08 w1-3 (spot 4) | sendormir de deca | quil sendorme de deca | sendormir de ca | leaf keeps gloss.tsv's "sendormir" against the print's "s'endorme"; leaf has no "qu'il"; "de deca" (second word d-e-c-a, the e unclear) replaces "de ca" |
+| L07, L09-L13 | not re-cut (L07 matches print on the overview) | | unchanged | unchanged |
+
+So of VER1-NOX's four differences, three (L01, L04, L06) were gloss.tsv misreads and the leaf agrees with the print; at L08 the leaf
+differs from the print (infinitive "s'endormir", no "qu'il"): Charrière's text is not a letter-for-letter copy of this gloss, so the
+print cannot stand in for the leaf here. Independent check from the cipher side (not used to decide any word): Tomokiyo's key on NX-RECUT's
+reconciled c262 signs decodes line 1 as "ueupllentleallerpremcnerenflandre..." (witness/results_rc_recon_e.json), i.e. "veullent s'aller
+promener en Flandre". Grades: gloss words H-source (period decipherment), reading M, as before; the bracketed "res" C (print only).
+
+**Gate re-run (RUN6-NOXREAD, as registered in PREREG-NOXREAD.md, no new thresholds).** `aln/noxread.py score`, then `check` exits 0.
+
+| | old gloss (315 letters) | corrected gloss (329 letters) |
+|---|---|---|
+| R, basin key on reader signs | 0.3090 | **0.3506** |
+| (a) shuffled key p99 | 0.2404 | 0.2413 |
+| (b) letter order p99 | 0.2518 | 0.2496 |
+| (c) shuffled Dupuy max | 0.2003 | 0.2665 |
+| (d) non-locking p99 / max | 0.2833 / 0.3090 | 0.2581 / 0.2749 |
+| Tomokiyo key, same stream (reference) | 0.4548 | 0.5215 |
+| verdict | PASS (thin on d) | **PASS** (R above all 924 non-locking subsets) |
+
+Both the target R and the published-key reference rise together while the nulls stay put: what a corrected reference text looks like,
+not threshold-shopping.
+
+**Other scripts that read gloss.tsv, re-scored so their rule-7 checks stay green** (scripts unchanged; each `check` exits 0 after):
+`scripts/test0.py` (all ten `witness/results_*.json`), `aln/decode262.py`, `aln/noxalign.py`. Old -> new, same registered rules:
+
+| run | old | new | registered verdict old -> new |
+|---|---|---|---|
+| FT-D gate pass B (e = o), real / key-max / gloss-order-max (rank) | 0.2799 / 0.218 / 0.2988 (6) | 0.3250 / 0.2193 / 0.3144 (1) | FAIL -> **PASS** (witness/gate_passB.txt) |
+| NX-RECUT gate pass D, e | 0.1928 / 0.2342 / 0.2590 | 0.3324 / 0.2757 / 0.2865 | |
+| NX-RECUT gate pass D, o | 0.1736 / 0.2507 / 0.2231 | 0.2811 / 0.2541 / 0.2649 | FAIL -> **PASS**, thin on o (0.016 over gloss-order max) (witness/gate_recut.txt) |
+| pass A e / o | 0.3177 / 0.3307 | 0.3606 / 0.3453 | (exploratory) |
+| pass C e / o | 0.4176 / 0.3846 | 0.4663 / 0.4474 | (reported) |
+| reconciled e / o | 0.4548 / 0.3973 | 0.5215 / 0.4812 | (reported) |
+| RUN6-NOXDEC atlas tiles R (ceiling) | 0.1838 (0.2199) | 0.1913 (0.2389) | FAIL -> FAIL |
+| RUN6-NOXALIGN S (g p99, k p99) | 0 (0, 0) | 2 (0, 0; g max 1) | FAIL -> PASS, very thin: 2 of 41 labels (l2, r1, both where basin = Tomokiyo) |
+
+Consequence, stated narrowly: the known-answer gates of test 0 failed partly because the reference gloss was misread at 7 of 13 lines; on the
+leaf-corrected gloss the published key plus a blind Sonnet glyph pass (B on FT-D's crops, D on the re-cut) carries the gloss's sequence above
+both nulls at both '#' resolutions. That lifts the gate's own condition ("no target leaf is scored" until it passes); nothing was scored on
+c510-516 here (not in this brief). These flips rest on this worker's single, print-aware read of eight gloss lines; a second read of
+c262gx_L01..L08 by a session that has not seen the print would make them firmer.
+Cost: no subagents; 9 image reads by this worker.
+
+## Remaining gaps (DEF1-NOXG, 5 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); c262 gloss L01-L08 re-read on native crops (DEF1-NOXG), known-answer gates of test 0 now pass on it; 0 open leaves decoded
+- c262 gloss L09-L13 not re-read on native crops (overview suggests L13 "quon" where gloss.tsv has "quil") - blocker: not-attempted; next: cut L09-L13 with the same command (--centres extended), one read, re-run the scripts listed above, ~$0.5
+- Second, print-blind read of the eight c262gx crops (the gate flips rest on one print-aware read) - blocker: not-attempted; next: one Sonnet pass on images/c262gx_L01..L08.jpg with no print or gloss shown, diff against gloss.tsv, ~$0.5
+- Test 0's gate now passes: score an unglossed target block with Tomokiyo's key under the same test0 rule - blocker: not-attempted; next: two blind passes on a c510-516 line set against the settled labels + Dupuy 221R-226R as reference, ~$5
+- Per-token alignment with denser anchors (basin decode S 2 of 41, thin) not run - blocker: not-attempted; next: same masked procedure anchored on a hybrid decode or gap <= 5, pre-registered with nulls g/k, ~$1
+- Bridge from atlas piles to key.tsv covers only 17 piles - blocker: not-attempted; next: place c262 tiles under the owner's labels so more piles carry a key.tsv value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- c472-473 8 March Queen letter body not located in Dupuy 122-124 - blocker: not-attempted; next: check Dupuy 133L-134, ~$0.3
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (DEF1-NOXG, 5 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1913 on the corrected gloss, still under nulls), instrument atlas-tile stream + test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; corrected gloss 0.3506 vs p99 0.2413/0.2496/max 0.2665/0.2581)
+- [ ] per-token alignment: masked per-label alignment PASS by the letter on the corrected gloss (S 2 vs p99 0/0, g max 1), too thin to use; denser-anchor variant untried
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; on the leaf-corrected gloss the registered gate passes (pass B, pass D)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L08 native crops (DEF1-NOXG); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read
+Verdict: keep going: 9 internal gaps; cheapest next: print-blind second read of the c262gx gloss crops, ~$0.5
