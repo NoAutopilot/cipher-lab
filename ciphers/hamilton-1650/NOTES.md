@@ -302,3 +302,11 @@ Germany, Mar = Sweden, Ross/Rose = France, Rothes earl of = "duc de Ferroit", R 
 "probably cypher": Iron Smiths (65), Jasper Jennings (68), Marre Martins (66), Swordis (67), Woollen Drapers (65); "Cypher,
 letters in" 40, 41, 67. That is a Scottish cover-name code of Hamilton's German/Swedish years (Oxenstierna, Elector Palatine,
 Patrick Ruthven: c. 1631-32), not the 1650 numeric nomenclator. Lead logged for the Swedish targets (riksarkivet-r4282-1628).
+pp.40-41 page read (5 Oct 2026 04:07 UTC, owner): the cover-name code belongs to **Eleazar Borthwick's letters to Hamilton from Sweden, 1637**
+(Gothenburg 3 Apr; Stockholm 3 Jul 1637), not 1631-32. Cover names glossed by the editor in brackets (Chamberlan [chancelar],
+Innermeith [Riven], Angus [England], R.R. [parliament], Mar [Sweden], Binnei [Elector], Rose [France], Laudian [Germany],
+Clydesdaill [the Palatinate], Mers [Pool]) and, on p.41, a **numeric letter cipher with the editor's bracketed solutions**:
+"55, 60, 47, 63, 48, 61 [Traquair] and 75, 43, 64, 40, 27 [Lenox]", "73, 41, 37, 60 [Mour]", "87, 75, 36, 56, 51, 41, 90 [Fltwod]",
+"195 [the King]", "200 [the Estates General]", "137 [the King of France]", "195 [the King of England]", "140 [the Duke ...]",
+"183" unglossed. Not a target of ours and not 1650; a printed partial key of a 1637 Scottish letter cipher (candidate for the
+scout queue, not opened as a target). Screenshots private (pp20-21, pp40-41, pp194-195).

@@ -1481,6 +1481,6 @@ For this target: no 1628 Camerarius letter is in either volume. The letter-268 a
 HMC Supplementary Report on the Hamilton MSS (1932; archive.org supplementaryrep0000grea, owner's search-inside) indexes a
 cover-name code printed on pp.40-41: "Chamberlan, cypher for Oxenstierna", "Mar, cypher for Sweden" (p.50), "Angus, cypher for
 England", "Laudian, cypher for Germany", "Ross, cypher for France", "Binnie, lord, cypher for Elector Palatine", "Innermeith,
-lord, cypher for Patrick Ruthven". Probably Hamilton's 1631-32 expedition to Gustav Adolf (date not yet seen; pp.40-41 unread).
+lord, cypher for Patrick Ruthven". Page read the same night: Eleazar Borthwick to Hamilton from Gothenburg and Stockholm, Apr-Jul 1637 (see hamilton-1650 NOTES.md).
 A cover-name list, not a numeric key, so unlikely to read the 1628 Camerarius cipher directly; recorded as context for the
 Swedish targets. Next if wanted: pp.40-41 page read (owner loan, 2 min).
