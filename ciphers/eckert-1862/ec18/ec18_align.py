@@ -6,6 +6,8 @@ token C where the print fixes it, and list key-vs-print disagreements (rule 4: a
 Usage: ec18_align.py DATA_DIR OR_DIR [--rows align_free_rows.tsv] [--write | --check]
   --rows (D2-ECK62M, 5 Oct 2026): align the rows ec18.py --print-q wrote (print-free 1f/2f dated matches and the '?'
   entries the print decided), anchors given; writes align_free_{tokens,entries,summary}.tsv; 1f/2f non-AGREE tokens S.
+  D2-ECK62R (5 Oct 2026): the output suffix comes from the rows file name (align_flip_rows.tsv -> align_flip_*.tsv);
+  a source 'flip-*' row (book flipped against the alignment's evidence) caps non-AGREE tokens at S like print-free.
   DATA_DIR/vol18.json and OR_DIR/<vol>.txt exactly as for ec18.py (not committed; URLs and sha256 in
   ../pilot1864/manifest.tsv and or_volumes.tsv; only the 16 volumes named in the two matches files are needed).
   --write rewrites align_tokens.tsv, align_entries.tsv and align_summary.tsv; --check exits 1 if any is stale.
@@ -212,8 +214,9 @@ def main(argv):
             "2": d1.load_key(ec18.ROOT / "ciphers/eckert-1864/key-no2.md")}
     rows, src, sfx = [], {}, ""
     if "--rows" in argv:  # D2-ECK62M: align_free_rows.tsv from ec18.py --print-q (anchor given, no context probe)
-        sfx = "_free"
-        for line in (HERE / argv[argv.index("--rows") + 1]).read_text().splitlines()[1:]:
+        rf = argv[argv.index("--rows") + 1]  # align_<X>_rows.tsv -> align_<X>_*.tsv (D2-ECK62R: _flip, _flipctl)
+        sfx = "_" + rf.split("_")[1]
+        for line in (HERE / rf).read_text().splitlines()[1:]:
             i, bk, how, date, v, pg, j, n = line.split("\t")
             rows.append((bk, i, date, v, pg, int(j)))
             src[i] = how
@@ -250,7 +253,7 @@ def main(argv):
         for k, (cw, mean, gr, kind, status, pr) in enumerate(res):
             if kind in ("word", "time", "month-free", "numeral", "punct", "sig"):
                 # a print-free book (1f/2f) is grade S: its non-AGREE key-row tokens are capped at S
-                g["C" if status == "AGREE" else "S" if src.get(i) == "print-free" and gr in ("H", "C") else gr] += 1
+                g["C" if status == "AGREE" else "S" if (src.get(i) == "print-free" or src.get(i, "").startswith("flip-")) and gr in ("H", "C") else gr] += 1
             if kind != "plain" or status == "CONFLICT":
                 tok_out.append(f"{i}\t{bk}\t{v}\t{pg}\ttarget\t{k}\t{cw}\t{mean or ''}\t{gr or ''}\t"
                                f"{'plain-replaced' if kind == 'plain' else kind}\t{status}\t{pr}")
