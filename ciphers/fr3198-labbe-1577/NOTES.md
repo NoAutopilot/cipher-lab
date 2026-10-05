@@ -145,7 +145,7 @@ No decoding, no images viewed. Requests: gallica.bnf.fr 2 (SRU 1, manifest 1), b
 Next (agent, ~USD 1.5): fetch the BnF archivesetmanuscrits record for fr.4695 (item list: does "no.51" = a piece number, with folio range and
 5 Feb 1577 date) to give --anchor canvas=folio pairs; then view the candidate leaf at native resolution via tools/iiif_lines.py. Status stays `blocked`.
 
-## D2-F3198 (5 Oct 2026, 23:02-23:08 UTC by date -u) -- fr.4695 no.51 located; it announces the cipher, but the key sheet is not bound with it
+## D2-F3198 (5 Oct 2026, 23:02-23:06 UTC by date -u) -- fr.4695 no.51 located; it announces the cipher, but the key sheet is not bound with it
 
 Step 1 (Tomokiyo on disk) had already run (RUN6-LABBE, 0 hits); not repeated.
 Step 2, catalogue: the Gallica manifest's Relation field gives the BnF record, https://archivesetmanuscrits.bnf.fr/ark:/12148/cc57745v
