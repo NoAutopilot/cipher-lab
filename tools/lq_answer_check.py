@@ -67,6 +67,11 @@ This checks the shape of the citation (a negative claim backed by a catalogue UR
 quoted flag), not that the URL is real or the quote is accurate -- that is still the landing
 worker's and the verifier's job, the same limit tools/intake_gate_check.py states for its own
 citation check.
+
+Ladder hosts (5 Oct 2026, SYS1-SF): tokens in a holding_catalogue cell that are repository file
+names (NOTES.md, key.tsv, ...) are not hosts and are dropped, so a LOCAL-QUEUE row citing a
+NOTES.md is not matched to whichever institution's cell also names one. Must NOT drop a real
+host (francearchives.gouv.fr, marco.ox.ac.uk, siv.archives-nationales.culture.gouv.fr).
 """
 import argparse
 import csv
@@ -133,7 +138,20 @@ def ladder_hosts_for_institution(rows, institution):
             hosts.add(_host_of(url))
         for token in re.findall(r'[a-z0-9.-]+\.[a-z]{2,}(?:/\S*)?', cell, re.IGNORECASE):
             hosts.add(token.split("/")[0].lower())
-    return {h for h in hosts if h}
+    return {h for h in hosts if h and not _is_filename(h)}
+
+
+# A repository file name in a ladder cell ("NOTES.md", "key.tsv") matches the bare-domain token
+# regex above but is not a host. Left in, it made institution_for_row match any LOCAL-QUEUE row
+# whose text cites a NOTES.md to the HStAM row (whose holding_catalogue cell names a NOTES.md),
+# so L42 (Archives nationales) resolved to HStAM Marburg and was checked against the wrong hosts
+# (SYS1-SF, 5 Oct 2026). Real hosts never end in these suffixes; .md is Moldova's ccTLD but no
+# ladder institution uses it.
+FILE_SUFFIXES = (".md", ".tsv", ".py", ".txt", ".json", ".csv", ".js", ".sh", ".html", ".pdf", ".jpg", ".png")
+
+
+def _is_filename(token):
+    return token.lower().endswith(FILE_SUFFIXES)
 
 
 def all_ladder_holding_hosts(rows):

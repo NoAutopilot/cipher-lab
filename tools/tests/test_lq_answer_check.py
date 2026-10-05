@@ -16,7 +16,8 @@ holding-catalogue host" rather than refusing to match; (7) kind awareness (the L
 26 Sept 2026): the real L20 shape (ia-reader, no ladder rungs at all) must PASS, the L19 shape
 must still FAIL under kind=browser-check, a kind outside the page-read set (bare 'hathitrust',
 catalogue-lookup, no kind) still requires both rungs, and --row/--kind plumbing (kind_for_row,
-the CLI's --row-driven lookup, and a --kind override) all resolve correctly.
+the CLI's --row-driven lookup, and a --kind override) all resolve correctly; (8) the Archives
+nationales / FranceArchives ladder row (5 Oct 2026) and the filename-not-host filter.
 
 Run: python3 tools/tests/test_lq_answer_check.py
 """
@@ -213,6 +214,43 @@ with tempfile.TemporaryDirectory() as tmp:
             report("CLI --kind override passes an L19-shaped negative anyway", rc == 0)
         finally:
             os.unlink(tf_path)
+    finally:
+        lq.LOCAL_QUEUE_PATH = real_path
+
+# --- 8. Archives nationales / FranceArchives row (SYS1-SF, 5 Oct 2026; PR 67 L11/L42 bounce) ----
+an = "Archives nationales (France) / FranceArchives"
+an_hosts = lq.ladder_hosts_for_institution(REAL_LADDER, an)
+report("AN ladder row resolves francearchives.gouv.fr and siv host",
+       {"francearchives.gouv.fr", "siv.archives-nationales.culture.gouv.fr"} <= an_hosts, an_hosts)
+all_hosts = lq.all_ladder_holding_hosts(REAL_LADDER)
+report("no ladder host is a repository file name (NOTES.md etc.)",
+       not any(lq._is_filename(h) for h in all_hosts), sorted(h for h in all_hosts if lq._is_filename(h)))
+report("filename filter must NOT drop real hosts",
+       not any(lq._is_filename(h) for h in ("francearchives.gouv.fr", "marco.ox.ac.uk",
+                                            "siv.archives-nationales.culture.gouv.fr")))
+L11_SHAPE = (
+    "row: L11\nkind: catalogue-lookup\n\nHolding catalogue: Archives nationales, read through "
+    "FranceArchives. MAR/B/7/22 fol. 143v: https://francearchives.gouv.fr/fr/facomponent/"
+    "ba97faa8872285afa8d4b804708af6f78b5663e2\n- 8 Apr 1714: not found.\n- Digitisation: every hit "
+    "is under the facet \"Documents non numérisés\"; no viewer link on the records opened.\n"
+)
+code, msg = lq.check(L11_SHAPE, REAL_LADDER, institution=an, kind="catalogue-lookup")
+report("L11 shape (francearchives facomponent URL + 'no viewer link') passes under AN", code == 0, msg)
+L11_BARE = "row: L11\nkind: catalogue-lookup\n\nSearched FranceArchives for Pierre Paget 1714: not found.\n"
+code, msg = lq.check(L11_BARE, REAL_LADDER, institution=an, kind="catalogue-lookup")
+report("bare FranceArchives negative (no record URL, no flag) still fails", code == 1, msg)
+with tempfile.TemporaryDirectory() as tmp:
+    fq = os.path.join(tmp, "LOCAL-QUEUE.tsv")
+    with open(fq, "w", encoding="utf-8") as f:
+        f.write("id\tkind\ttarget\tinstruction\tstatus\tresult\n")
+        f.write("L42\tcatalogue-record\tciphers/destaing-gerard-1779\tFT4 (NOTES.md section). Archives "
+                "nationales Marine B4 168: from the cloud francearchives.gouv.fr answered with a JS "
+                "redirect.\tqueued\t\n")
+    real_path = lq.LOCAL_QUEUE_PATH
+    lq.LOCAL_QUEUE_PATH = fq
+    try:
+        inst = lq.institution_for_row("L42", REAL_LADDER)
+        report("row citing NOTES.md + francearchives matches AN, not HStAM", inst == an, inst)
     finally:
         lq.LOCAL_QUEUE_PATH = real_path
 
