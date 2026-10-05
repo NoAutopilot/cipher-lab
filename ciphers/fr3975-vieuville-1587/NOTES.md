@@ -103,3 +103,12 @@ The one action that depends on nobody: run `tools/print_check.py` phrase queries
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against IA, Google Books and OpenAlex, ~$0.5; the colour scan stays a copy order (REQUEST.md). Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Print check (D2-VIEU, 5 Oct 2026)
+
+`tools/print_check.py` on phrases.txt (4 phrases, no listed sources; ia-global, Google Books, OpenAlex, Semantic Scholar, CrossRef; 4 requests per host, all ok, no 429). A search result, not a novelty verdict (rule 10).
+- "eschevins et maire de ville", "messieurs les eschevins et maire de ville": IA full text no hits; OpenAlex no hits; Google Books 333/330 volumes (generic municipal phrase, top hits Louis XI et les villes, Corps universel diplomatique, society bulletins), S2/CrossRef keyword noise. None examined for the letter.
+- "St Aignen": IA 47 items, Google Books 343 volumes, S2/CrossRef: all unrelated (spelling matches noise). Not usable as a phrase.
+- "Saint Aignan 30 septembre 1587 Nevers La Vieuville": IA, OpenAlex, S2 no hits; Google Books 2 volumes, both *Catalogue général des manuscrits français* (1881; HQo4AQAAMAAJ, JUgMAQAAMAAJ) -- the BnF catalogue, the likely home of the fr.3975 entry, not opened or read for page here; CrossRef returned an unrelated Saint-Aignan duc entry.
+- Not found by this method: any printed text or decipherment of the 30 Sept 1587 letter. Not searched: page-level reading of the two catalogue volumes, Nevers/Vieuville printed correspondence editions, Gomberville 1665 (Bourdeau's negative stands, not re-run). Output: print-check.tsv, print-check-hosts.tsv.
+Status unchanged (`blocked`, colour scan).
